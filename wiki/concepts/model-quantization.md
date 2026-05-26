@@ -2,7 +2,7 @@
 title: "Model Quantization"
 type: concept
 created: 2026-04-25
-updated: 2026-05-04
+updated: 2026-05-26
 tags:
   - concept
   - quantization
@@ -30,43 +30,43 @@ related:
 
 # Model Quantization
 
-> モデル量子化は、ニューラルネットワークのパラメータを低精度で表現することで、メモリ使用量を削減し推論速度を向上させる手法。LLMの実用化に不可欠な基盤技術。
+> Model quantization is a technique that reduces memory usage and improves inference speed by representing neural network parameters at lower precision. It is an essential foundational technology for the practical deployment of LLMs.
 
 ## Why This Matters
 
-量子化がなければ、最新のLLM（70B〜500Bパラメータ）を実用的なハードウェアで実行することは不可能。たとえば70BモデルはFP16（2バイト/パラメータ）で140GBのVRAMが必要 — H100（80GB）にすら収まらない。INT4（0.5バイト/パラメータ）なら35GBに削減され、1台のコンシューマーGPU（RTX 4090: 24GB）でも動作可能になる。
+Without quantization, running modern LLMs (70B to 500B parameters) on practical hardware would be impossible. For example, a 70B model at FP16 (2 bytes/parameter) requires 140GB of VRAM — it won't fit even on an H100 (80GB). At INT4 (0.5 bytes/parameter), this drops to 35GB, making it feasible even on a single consumer GPU (RTX 4090: 24GB).
 
 ## 1. Numerical Representation Fundamentals (IEEE-754)
 
-浮動小数点数は3つの要素で構成される（IEEE-754標準）:
+Floating-point numbers consist of three components (IEEE-754 standard):
 
-| 成分 | 役割 | 例: FP32 |
-|------|------|----------|
-| **Sign** (符号) | 正/負 | 1 bit |
-| **Exponent** (指数) | 値の**範囲**を決定 | 8 bits |
-| **Fraction/Mantissa** (仮数) | 値の**精度**（隣接値間の距離）を決定 | 23 bits |
+| Component | Role | Example: FP32 |
+|-----------|------|---------------|
+| **Sign** | Positive/negative | 1 bit |
+| **Exponent** | Determines the **range** of values | 8 bits |
+| **Fraction/Mantissa** | Determines the **precision** (distance between adjacent values) | 23 bits |
 
 **Key Distinction:**
-- **Dynamic Range** → Exponentによって決まる（表現可能な値の区間）
-- **Precision** → Fractionによって決まる（隣接する2つの値の間隔）
+- **Dynamic Range** → Determined by Exponent (interval of representable values)
+- **Precision** → Determined by Fraction (gap between two adjacent values)
 
 ### Common Data Types
 
-| 型 | Bits | Exponent | Fraction | 特徴 |
-|----|------|----------|----------|------|
-| FP32 | 32 | 8 | 23 | 基準精度、トレーニング可能 |
-| FP16 | 16 | 5 | 10 | 範囲が狭い（±65K） |
-| BF16 | 16 | 8 | 7 | FP32と**同じ範囲**、精度は低い |
-| FP8 (E4M3) | 8 | 4 | 3 | ±448、**H100 Transformer Engine** |
-| FP8 (E5M2) | 8 | 5 | 2 | ±57344、E4M3より広範囲 |
-| INT8 | 8 | — | — | 256値の整数マッピング |
-| NF4 | 4 | — | — | 正規分布重みに最適化（QLoRA） |
+| Type | Bits | Exponent | Fraction | Characteristics |
+|------|------|----------|----------|-----------------|
+| FP32 | 32 | 8 | 23 | Baseline precision, trainable |
+| FP16 | 16 | 5 | 10 | Narrow range (±65K) |
+| BF16 | 16 | 8 | 7 | **Same range** as FP32, lower precision |
+| FP8 (E4M3) | 8 | 4 | 3 | ±448, **H100 Transformer Engine** |
+| FP8 (E5M2) | 8 | 5 | 2 | ±57344, wider range than E4M3 |
+| INT8 | 8 | — | — | Integer mapping with 256 values |
+| NF4 | 4 | — | — | Optimized for normal-distributed weights (QLoRA) |
 
-> BF16はDeep Learningの"黄金比"：FP32と同じ範囲を維持しながらメモリを半分に削減できる。
+> BF16 is the "golden ratio" of Deep Learning: it maintains the same range as FP32 while halving memory usage.
 
 ## 2. Quantization Fundamentals
 
-量子化は高精度値（FP32）を低精度値（INT8/INT4など）に写像する処理。
+Quantization maps high-precision values (FP32) to lower-precision values (INT8/INT4, etc.).
 
 ### Memory Formula
 ```
@@ -76,238 +76,239 @@ Memory (GB) ≈ (Number of Parameters × Number of Bits) / 8
 ### Linear Mapping Methods
 
 #### Symmetric Quantization (Absmax)
-ゼロを中心に対称な範囲に写像:
-- **Scale:** $s = \frac{2^{b-1} - 1}{\alpha}$（α = 最大絶対値）
+Maps values to a range symmetric around zero:
+- **Scale:** $s = \frac{2^{b-1} - 1}{\alpha}$ (α = max absolute value)
 - **Quantize:** $x_{quant} = \text{round}(s \cdot x)$
 - **Dequantize:** $x_{dequant} = x_{quant} / s$
-- シンプルだが、分布が非対称な場合は非効率
+- Simple but inefficient for asymmetric distributions
 
 #### Asymmetric Quantization (Zero-point)
-最小/最大を量子化範囲全体に写像。ゼロ中心ではない:
+Maps min/max to the full quantization range, not centered on zero:
 - **Scale:** $s = \frac{\beta - \alpha}{2^{b} - 1}$
 - **Zero-point:** $z = -\text{round}(s \cdot \alpha) - 2^{b-1}$
-- より柔軟だが、Zero-pointの計算と保持が必要
+- More flexible, but requires zero-point calculation and storage
 
 ### Clipping & Calibration
 
-**Clipping:** 動的範囲を人為的に制限（例: [-5, 5]）して、大多数の値の精度を向上させる代わりに外れ値を切り捨てる。
+**Clipping:** Artificially limits the dynamic range (e.g., [-5, 5]) to improve precision for the majority of values at the cost of truncating outliers.
 
-**Calibration**（最適な範囲を選択するプロセス）:
-| 手法 | 仕組み | 特徴 |
-|------|--------|------|
-| **MSE** (最小二乗誤差) | 元の値と量子化値の差を最小化 | 理論的に最適、計算コスト中 |
-| **Percentile** | α/βをパーセンタイルで設定 | シンプル、外れ値の影響を受けにくい |
-| **KL-divergence** | 分布のエントロピーを最大化 | 最も正確だが高コスト |
-| **Min/Max** | 全範囲をそのまま使用 | 外れ値1つで精度が激減 |
+**Calibration** (the process of selecting optimal ranges):
+
+| Method | Mechanism | Characteristics |
+|--------|-----------|-----------------|
+| **MSE** (Mean Squared Error) | Minimizes difference between original and quantized values | Theoretically optimal, moderate compute cost |
+| **Percentile** | Sets α/β by percentile | Simple, robust to outliers |
+| **KL-divergence** | Maximizes distribution entropy | Most accurate but high cost |
+| **Min/Max** | Uses full range as-is | A single outlier can tank precision |
 
 ### Accumulation Data Types
-演算中の精度損失を防ぐため、各データ型には対応する**アキュムレーション型**が存在する:
+To prevent precision loss during computation, each data type has a corresponding **accumulation type**:
 
-| データ型 | アキュムレーション型 | 理由 |
-|:---------|:-------------------|:-----|
-| float16 | float16 | 同じ型で十分な範囲 |
-| bfloat16 | float32 | 積算で指数がオーバーフローしうる |
-| int16 | int32 | 例: 127+127=254 > int8 範囲 |
-| int8 | int32 | 2つのint8最大値の和でint8を超過 |
+| Data Type | Accumulation Type | Reason |
+|:----------|:------------------|:-------|
+| float16 | float16 | Same type has sufficient range |
+| bfloat16 | float32 | Exponent can overflow during accumulation |
+| int16 | int32 | e.g., 127+127=254 > int8 range |
+| int8 | int32 | Sum of two int8 max values exceeds int8 |
 
-例: A=127, B=127（int8最大値）の場合、C = A + B = 254となりint8の範囲（-128〜127）を超えるため、int32のアキュムレーションが必要。
+Example: A=127, B=127 (int8 max values), C = A + B = 254 exceeds int8 range (-128 to 127), requiring int32 accumulation.
 
 ### Granularity: Per-tensor vs Per-channel
-量子化の粒度は精度とメモリのトレードオフを決める:
+Quantization granularity determines the trade-off between precision and memory:
 
-| 粒度 | (S, Z)ペア数 | 精度 | メモリ |
-|:----|:------------|:-----|:------|
-| **Per-tensor** | テンソル全体で1組 | 低い（外れ値に弱い） | 最小 |
-| **Per-channel** | 次元ごとに1組（例: 4Dテンソルのチャネル軸） | 高い | 中程度 |
-| **Vector-wise (LLM.int8)** | 行ごと + 列ごとに1組ずつ | 高い（外れ値にロバスト） | より高い |
+| Granularity | (S, Z) pairs | Precision | Memory |
+|:------------|:-------------|:----------|:-------|
+| **Per-tensor** | 1 pair for entire tensor | Low (vulnerable to outliers) | Minimal |
+| **Per-channel** | 1 pair per dimension (e.g., channel axis of 4D tensor) | High | Moderate |
+| **Vector-wise (LLM.int8)** | 1 pair per row + per column | High (robust to outliers) | Higher |
 
-Per-channelはPer-tensorより精度が高いが、スケール因子の数が増えるためメモリオーバーヘッドが発生する。LLM.int8()のベクトル単位量子化は、各行と各列に独立したスケールを持つ特殊ケース。
+Per-channel offers higher precision than per-tensor, but incurs more memory overhead due to the increased number of scale factors. LLM.int8() vector-wise quantization is a special case with independent scales for each row and each column.
 
 ## 3. Precision Formats Overview
 
-| Format | Bits/Param | 70B Model | 品質 | 推論速度 | 主な用途 |
-|--------|-----------|-----------|------|---------|---------|
-| FP32 | 32 (4 bytes) | 280 GB | 基準 | 低速 | トレーニングのみ |
-| FP16/BF16 | 16 (2 bytes) | 140 GB | ほぼ無損失 | 中速 | トレーニング/推論 |
-| FP8 (E4M3/E5M2) | 8 (1 byte) | 70 GB | 無視できる | 高速 | H100/B200推論 |
-| INT8 | 8 (1 byte) | 70 GB | 最小限 | 高速 | 汎用推論 |
-| INT4 (GPTQ/AWQ) | 4 (0.5 bytes) | 35 GB | 小（1-2%） | 最速 | ローカル推論 |
-| NF4 (QLoRA) | 4 (0.5 bytes) | 35 GB | 小 | 最速 | LoRA学習 |
-| FP4 (MXFP4) | 4 (0.5 bytes) | 35 GB | 非常に小 | 最速 | 次世代H/W |
-| 2-bit (TSM) | 2 (0.25 bytes) | 17.5 GB | 中程度 | — | 研究段階 |
-| **1.58-bit (BitNet)** | ~1.58 (0.2 bytes) | **~14 GB** | 中（研究段階） | **加算のみ** | **研究段階** |
+| Format | Bits/Param | 70B Model | Quality | Inference Speed | Primary Use |
+|--------|-----------|-----------|---------|-----------------|-------------|
+| FP32 | 32 (4 bytes) | 280 GB | Baseline | Slow | Training only |
+| FP16/BF16 | 16 (2 bytes) | 140 GB | Nearly lossless | Medium | Training/Inference |
+| FP8 (E4M3/E5M2) | 8 (1 byte) | 70 GB | Negligible | Fast | H100/B200 inference |
+| INT8 | 8 (1 byte) | 70 GB | Minimal | Fast | General inference |
+| INT4 (GPTQ/AWQ) | 4 (0.5 bytes) | 35 GB | Small (1-2%) | Fastest | Local inference |
+| NF4 (QLoRA) | 4 (0.5 bytes) | 35 GB | Small | Fastest | LoRA training |
+| FP4 (MXFP4) | 4 (0.5 bytes) | 35 GB | Very small | Fastest | Next-gen hardware |
+| 2-bit (TSM) | 2 (0.25 bytes) | 17.5 GB | Moderate | — | Research stage |
+| **1.58-bit (BitNet)** | ~1.58 (0.2 bytes) | **~14 GB** | Moderate (research) | **Add only** | **Research stage** |
 
 ## 4. Main Quantization Methods
 
-### Weight-only Quantization (推論専用)
+### Weight-only Quantization (Inference Only)
 
 #### GPTQ (GPU-focused, Frantar et al. 2023)
-- **方式:** 逆ヘッセ行列（Inverse-Hessian）を用いて各重みの「重要度」を定量化
-- **プロセス:** 行ごとに量子化 → 量子化誤差を**未量子化の残りの重みに再分配**
-  - 「負債を隣に回す」ことでモデル全体の性能を維持
-- GPU推論に最適化、バッチ推論で高スループット
+- **Method:** Uses inverse Hessian matrix to quantify each weight's "importance"
+- **Process:** Quantizes row by row → redistributes quantization error to **remaining unquantized weights**
+  - "Passing the debt to neighbors" maintains overall model performance
+- Optimized for GPU inference, high throughput with batch inference
 
 #### AWQ (Activation-aware Weight Quantization, 2023)
-- **方式:** アクティベーションの重要チャネルを特定し、そのチャネルの重みを保護
-- GPTQより小モデルで高精度、GPTQより高速な量子化処理
+- **Method:** Identifies important activation channels and protects their weights
+- Higher accuracy than GPTQ on smaller models, faster quantization process than GPTQ
 
 #### GGUF (llama.cpp, CPU/GPU Offloading)
-- **方式:** ブロック単位量子化（"super blocks" + "sub blocks"が独自のスケール因子を持つ）
-- VRAM不足時に特定レイヤーをCPUにオフロード可能
-- Q2_K〜Q8_0の多段階品質選択
+- **Method:** Block-wise quantization ("super blocks" + "sub blocks" each with their own scale factor)
+- Can offload specific layers to CPU when VRAM is insufficient
+- Q2_K to Q8_0 multi-level quality selection
 
 #### RTN (Round-To-Nearest)
-- 最も単純な丸め方式。精度劣化が最も大きい。
-- ベースライン比較用
+- Simplest rounding method. Largest precision degradation.
+- Used for baseline comparison
 
 ### Weight+Activation Quantization
 
-| 手法 | 仕組み | 特徴 |
-|------|--------|------|
-| **FP8 Inference** | H100 Transformer Engine + FP8 GEMM | ネイティブH/Wサポート |
-| **INT8 SmoothQuant** | アクティベーションの外れ値をスムージング | 外れ値問題を軽減 |
-| **KV Cache INT8/FP8** | Long contextでのKV Cacheメモリ削減 | アテンション分布がスパースなので耐性が高い |
+| Method | Mechanism | Characteristics |
+|--------|-----------|-----------------|
+| **FP8 Inference** | H100 Transformer Engine + FP8 GEMM | Native hardware support |
+| **INT8 SmoothQuant** | Smooths activation outliers | Mitigates outlier problem |
+| **KV Cache INT8/FP8** | Reduces KV Cache memory for long contexts | Robust due to sparse attention distribution |
 
 ## 5. LLM.int8() and the Outlier Problem (Dettmers, 2022)
 
 ### The Challenge
-標準的なInt8量子化は、**6.7Bパラメータ以上のモデル**で破綻する。理由は「創発的アウトライヤー特徴量」（emergent outlier features）。
+Standard Int8 quantization breaks down for **models with 6.7B+ parameters**. The reason: "emergent outlier features."
 
 ### How Quantization Normally Works
-1. ベクトル内の最大絶対値を発見
-2. その値で正規化
-3. ターゲット型の範囲にスケーリング
-4. 丸め
+1. Find the maximum absolute value in a vector
+2. Normalize by that value
+3. Scale to the target type's range
+4. Round
 
-**Outlier Problem:** >6.7Bのモデルでは特定の隠れ次元に極端に大きな値（-60〜-95）が発生し、99.9%の小さな値（-0.1〜0.5）が一緒に量子化されて情報が消失する。
+**Outlier Problem:** In models >6.7B, certain hidden dimensions develop extremely large values (-60 to -95), causing 99.9% of small values (-0.1 to 0.5) to be quantized together and lose information.
 
 ### LLM.int8() Solution
-2つの同時技術でゼロ劣化を達成:
+Achieves zero degradation through two simultaneous techniques:
 
 #### 1. Vector-wise Quantization
-テンソル全体に1つのスケール定数を使う代わりに、行列積の**各行と各列に独立したスケール定数**を使用。
+Instead of a single scale constant for the entire tensor, uses **independent scale constants for each row and each column** of the matrix product.
 
 #### 2. Mixed Precision Decomposition
-アウトライヤーは**ごく一部の次元に体系的に集中**していることを利用:
-1. **分離**: アウトライヤーを含む次元を抽出 → 高精度（FP16）で行列積を計算
-2. **量子化**: 残りの99.9%の値をInt8で処理
-3. **結合**: 両方の出力をマージして完全な性能を回復
+Exploits the fact that outliers are **systematically concentrated in only a few dimensions**:
+1. **Separate**: Extract dimensions containing outliers → compute matrix product at high precision (FP16)
+2. **Quantize**: Process the remaining 99.9% of values with Int8
+3. **Combine**: Merge both outputs to restore full performance
 
 ```
 Input Hidden States
-├── Outlier Dimensions (FP16 matmul) → 少数の次元
-└── Normal Dimensions (INT8 matmul)  → 99.9%の値
+├── Outlier Dimensions (FP16 matmul) → Few dimensions
+└── Normal Dimensions (INT8 matmul)  → 99.9% of values
         ↓
 Combined Output (zero degradation)
 ```
 
 ### The 6.7B Phase Shift
 
-Dettmersの定義: *"ある特性の緩やかな変化が、突然フェーズシフトを起こして基質の性質を変える現象"*
+Dettmers' definition: *"A phenomenon where a gradual change in one characteristic suddenly causes a phase shift that changes the nature of the substrate."*
 
-| 特性 | 6.7B未満 | 6.7B以上 |
-|:-----|:---------|:---------|
-| **アウトライヤーの協調** | 確率的/不整合 | **100%の層が同一次元を使用** |
-| **アウトライヤーの大きさ** | 小（〜15） | 大（60〜95+） |
-| **影響を受ける系列** | 一部 | **75%の系列が影響** |
-| **Attention** | 分散型 | 高スパース/離散的 |
-| **FFNの刈り込み耐性** | ~30%削除可能 | **<5%** |
-| **量子化** | 標準Int8でOK | 混合精度（LLM.int8）が必要 |
+| Characteristic | Below 6.7B | Above 6.7B |
+|:---------------|:-----------|:-----------|
+| **Outlier coordination** | Stochastic/inconsistent | **100% of layers use the same dimensions** |
+| **Outlier magnitude** | Small (~15) | Large (60-95+) |
+| **Sequences affected** | Some | **75% of sequences affected** |
+| **Attention** | Distributed | Highly sparse/discrete |
+| **FFN pruning tolerance** | ~30% removable | **<5%** |
+| **Quantization** | Standard Int8 works | Mixed precision (LLM.int8) required |
 
 ### Two Streams Theory
-Dettmersは、アウトライヤーが2つの処理ストリームを管理していると理論化:
-1. **Input Explanation** — データを説明する特徴量の学習
-2. **Feature Removal** — アウトライヤー次元を使ってノイズや文脈と無関係な特徴量を「消音」
+Dettmers theorizes that outliers manage two processing streams:
+1. **Input Explanation** — Learning features that explain the data
+2. **Feature Removal** — Using outlier dimensions to "mute" noise or context-irrelevant features
 
-> 大きな値（-60〜-95）を特定の次元に保持することで、小さな重みと掛け合わせて非線形関数（Softmax/ReLU）後に他の特徴量を実質的にゼロにできる。
+> By maintaining large values (-60 to -95) in specific dimensions, they can be multiplied by small weights to effectively zero out other features after non-linear functions (Softmax/ReLU).
 
 ### Research Implications
-- **<6.7Bの研究は>6.7Bに一般化できない**
-- 創発はパラメータ数ではなく**perplexity**に対して指数関数的に従う
-- 小型モデル（125M〜1.3B）のperplexity曲線から175B+モデルの挙動を予測可能
+- **Research on <6.7B models does not generalize to >6.7B models**
+- Emergence follows perplexity, not parameter count, exponentially
+- The perplexity curve of small models (125M-1.3B) can predict behavior of 175B+ models
 
 > "There are two types of transformers and you should not generalize from one to the other." — Tim Dettmers
 
 ## 6. Post-Training Quantization (PTQ)
 
-トレーニング完了後にモデルを量子化。
+Quantization performed after training is complete.
 
 ### Weights vs Activations
 
 | | Weights | Activations |
 |--|---------|-------------|
-| **性質** | 静的、既知 | 入力によって変動 |
-| **量子化** | 容易（分布が安定） | 困難（分布が動的） |
-| **キャリブレーション** | 不要 | キャリブレーションデータセットが必要 |
+| **Nature** | Static, known | Varies with input |
+| **Quantization** | Easy (stable distribution) | Difficult (dynamic distribution) |
+| **Calibration** | Not required | Requires calibration dataset |
 
 #### Dynamic Quantization
-- 推論時に各層のスケール因子を計算
-- 精度が高いが**低速**（オーバーヘッド大）
+- Computes scale factors for each layer at inference time
+- Higher accuracy but **slower** (significant overhead)
 
 #### Static Quantization
-- キャリブレーションデータセットで事前にスケール因子を計算
-- **高速**だが、訓練データの分布を代表するデータセットが必要
+- Pre-computes scale factors using a calibration dataset
+- **Faster** but requires a dataset representative of training data distribution
 
 ### GPTQ (GPU-focused)
-- 逆ヘッセ行列で重みの「重要度」を定量化
-- 行ごとに量子化 → 誤差を未量子化の重みに再分配
-- 高バッチスループット、GPU推論に最適
+- Uses inverse Hessian matrix to quantify weight "importance"
+- Quantizes row by row, redistributes error to unquantized weights
+- High batch throughput, optimized for GPU inference
 
 ### GGUF (CPU/GPU Offloading)
-- ブロック単位量子化（スーパーブロック + サブブロック）
-- CPUオフロード対応、VRAM制限のある環境で柔軟
+- Block-wise quantization (super blocks + sub blocks)
+- Supports CPU offloading, flexible for VRAM-constrained environments
 
 ## 7. Quantization-Aware Training (QAT)
 
-トレーニングプロセスに量子化を統合する手法。
+A technique that integrates quantization into the training process.
 
 ### How It Works
-**"Fake Quants"** — フォワードパス中に低ビットに量子化して即座にFP32に戻す。バックワードパスはFP32のまま（量子化は非微分可能のためSTE（Straight-Through Estimator）を使用）。
+**"Fake Quants"** — During forward pass, quantizes to lower bits then immediately restores to FP32. Backward pass stays at FP32 (using STE — Straight-Through Estimator — since quantization is non-differentiable).
 
 ### Wide Minima Theory
-- **PTQ**: FP32では低損失だが、低精度（INT4）では高損失になりうる
-- **QAT**: 低精度の損失ランドスケープで**「広い谷」（wide minima）**を発見
-  - 広い谷 = 量子化誤差に対してロバスト
+- **PTQ**: May have low loss at FP32 but high loss at low precision (INT4)
+- **QAT**: Finds **"wide minima"** in the low-precision loss landscape
+  - Wide minima = robust to quantization error
 
 > QAT is like training with weighted clothes — when you remove them (quantize), you still perform well because you trained under those constraints.
 
 ### QAT vs PTQ
 
-| 基準 | PTQ | QAT |
-|------|-----|-----|
-| **コスト** | 数分〜数時間（キャリブレーションのみ） | トレーニング時間の2-3倍増加 |
-| **INT4精度** | 良好 | **優れている**（特に小モデル） |
-| **BI4精度** | 不可 | 必須 |
-| **トレーニングデータ** | 数百サンプル | 全トレーニングセット |
+| Criterion | PTQ | QAT |
+|-----------|-----|-----|
+| **Cost** | Minutes to hours (calibration only) | 2-3x increase over training time |
+| **INT4 accuracy** | Good | **Superior** (especially small models) |
+| **BI4 accuracy** | Not possible | Required |
+| **Training data** | Hundreds of samples | Full training set |
 
 ## 8. The Frontier: 1-bit and 1.58-bit LLMs
 
 ### BitNet (1-bit, Wang et al. 2023)
-標準のLinear層を**BitLinear**に置き換え:
-- **Weights:** `Signum`関数で {-1, +1} に量子化
-- **Activations:** INT8のまま行列積を計算
-- **Scaling:** 重みの平均絶対値（β）+ 活性化の最大絶対値（α）で復元
+Replaces standard Linear layers with **BitLinear**:
+- **Weights:** Quantized to {-1, +1} using `Signum` function
+- **Activations:** Matrix product computed at INT8
+- **Scaling:** Restored using mean absolute weight value (β) + max absolute activation value (α)
 
 ### BitNet b1.58 (Ternary Weights, 2024)
-重みに **0** を追加 → **{-1, 0, +1}**:
-- **Feature Filtering:** 重み=0で特定の特徴量を無視可能
-- **計算効率の革命:** 行列積が**加算と減算のみ**で完了（乗算不要）
-- **量子化方式:** `absmean`量子化（平均絶対値を基準に3値化）
+Adds **0** to the weights → **{-1, 0, +1}**:
+- **Feature Filtering:** Weights=0 can ignore specific features
+- **Computational revolution:** Matrix products **only use addition and subtraction** (no multiplication)
+- **Quantization method:** `absmean` quantization (ternarizes based on mean absolute value)
 
 ```
-Traditional FP16 matmul: y = w₁x₁ + w₂x₂ + ... + wₙxₙ  (乗算+加算)
-BitNet b1.58 matmul:     y = ±x₁ ± x₂ ... ± xₙ           (加算/減算のみ)
+Traditional FP16 matmul: y = w₁x₁ + w₂x₂ + ... + wₙxₙ  (multiply + add)
+BitNet b1.58 matmul:     y = ±x₁ ± x₂ ... ± xₙ           (add/subtract only)
 ```
 
 ### Potential Impact
-- 推論時の**消費電力が90%以上削減**される可能性
-- 専用H/Wが登場すれば、CPUでも高速推論が可能に
-- 小型デバイス（モバイル、IoT）へのLLM搭載が現実的に
+- Could reduce inference **power consumption by 90%+**
+- With dedicated hardware, high-speed inference on CPU becomes feasible
+- Brings LLMs to small devices (mobile, IoT)
 
 ### Current Limitations
-- 現時点では研究段階（大規模実証は限定的）
-- 同等のFP4/INT4モデルと比較して品質にギャップあり
-- トレーニングが不安定（特に50B+スケール）
+- Currently at research stage (limited large-scale validation)
+- Quality gap compared to equivalent FP4/INT4 models
+- Training instability (especially at 50B+ scale)
 
 ## 9. Practical Tradeoff Analysis
 
@@ -320,67 +321,67 @@ INT8           | 81.7% | 70 GB
 INT4 AWQ       | 81.2% | 35 GB
 NF4            | 80.9% | 35 GB
 ```
-(近似値、実際のモデルと評価方法で変動)
+(Approximate values, vary by actual model and evaluation method)
 
 ### When to Use What
 
-| 要件 | 推奨手法 |
-|------|---------|
-| 最高の品質 | FP16/BF16（十分なVRAMあり） |
-| 本番サーバーの効率重視 | FP8（H100/B200） |
-| コスト重視のサーバー | INT8 + KV Cache INT8 |
-| ローカル推論（24GB GPU） | INT4 AWQ / GGUF Q4_K_M |
-| VRAM極限（CPU併用） | GGUF + CPU Offloading |
-| トレーニング後量子化 | GPTQ（GPU） / GGUF（汎用） |
-| 最高の量子化精度 | QAT（ただしコスト高） |
+| Requirement | Recommended Method |
+|-------------|-------------------|
+| Highest quality | FP16/BF16 (sufficient VRAM) |
+| Production server efficiency | FP8 (H100/B200) |
+| Cost-conscious server | INT8 + KV Cache INT8 |
+| Local inference (24GB GPU) | INT4 AWQ / GGUF Q4_K_M |
+| VRAM extreme (with CPU) | GGUF + CPU Offloading |
+| Post-training quantization | GPTQ (GPU) / GGUF (general) |
+| Best quantization accuracy | QAT (though costly) |
 | Long context (128K+) | FP16/INT8 + KV Cache FP8 |
 
 ### PTQ Method Selection
 
-| 環境 | 推奨方式 | 理由 |
-|------|---------|------|
-| GPUのみ（十分なVRAM） | GPTQ / AWQ | 高スループット、バッチ推論 |
-| VRAM不足（CPU補助） | GGUF | ブロック単位量子化 + オフロード |
-| GPUなし（CPU/Apple Silicon） | GGUF Q4_K_M以上 | llama.cpp最適化 |
+| Environment | Recommended Method | Reason |
+|-------------|-------------------|--------|
+| GPU only (sufficient VRAM) | GPTQ / AWQ | High throughput, batch inference |
+| VRAM constrained (CPU assist) | GGUF | Block-wise quantization + offloading |
+| No GPU (CPU/Apple Silicon) | GGUF Q4_K_M or higher | llama.cpp optimized |
 
 ## 10. KV Cache Quantization
 
 - vLLM TurboQuant: 2-bit KV Cache → 4x capacity, < 1% quality loss
-- KV Cacheは重みより量子化に対する耐性が高い（アテンション分布がスパース）
-- FP8 KV Cache: ほぼ無損失で2倍のKV Cache容量
+- KV Cache is more tolerant to quantization than weights (attention distribution is sparse)
+- FP8 KV Cache: Nearly lossless, 2x KV Cache capacity
 
 ## 11. Energy Efficiency & Practical Workflow
 
 ### Energy Efficiency: Counterintuitive Findings
-量子化は常に省エネになるとは限らない。Optimumの実測データ:
+Quantization does not always save energy. Optimum's empirical data:
 
-| 条件 | エネルギー変動 | 原因 |
-|:-----|:-------------|:-----|
-| 大モデル (>=5B) + NF4 | **メモリ節約 + 効率維持** | 量子化の利得がオーバーヘッドを上回る |
-| 小モデル (<3B) + NF4 | **25-56% 増加** | 復元（dequantization）オーバーヘッドが支配的 |
-| Mixed INT8 (threshold=6.0) vs FP16 | **17-33% 増加** | 混合精度の分岐コスト |
-| バッチサイズ 1→64 | **96%削減**（全量子化方式で） | メモリ帯域幅の利用効率向上 |
+| Condition | Energy Variation | Cause |
+|:----------|:-----------------|:------|
+| Large models (>=5B) + NF4 | **Memory savings + efficiency maintained** | Quantization gains outweigh overhead |
+| Small models (<3B) + NF4 | **25-56% increase** | Dequantization overhead dominates |
+| Mixed INT8 (threshold=6.0) vs FP16 | **17-33% increase** | Mixed precision branching cost |
+| Batch size 1→64 | **96% reduction** (across all quantization methods) | Improved memory bandwidth utilization |
 
-**実務的含意:** 小モデルの場合、NF4量子化よりバッチサイズ最適化の方が効果的。エネルギー削減の第一選択肢は「バッチ処理の最適化」であり、その次に量子化形式の選択を検討すべき。
+**Practical implication:** For small models, batch size optimization is more effective than NF4 quantization. The primary option for energy reduction should be "batch processing optimization," followed by quantization format selection.
 
 ### Practical Implementation Workflow (Optimum)
-HF Optimumが推奨する6ステップ実装フロー:
+HF Optimum's recommended 6-step implementation flow:
 
-1. **演算子の特定**: 計算集約的な演算（Linear投影、MatMul）を特定
-2. **Dynamic Quantization試行**: 実行時範囲計算。設定が簡単、精度が十分なら終了
-3. **Static Quantization試行**: Observersをモデルに適用。キャリブレーションデータが必要
-4. **キャリブレーション**: 手法を選び、代表データ（~200サンプル）で範囲を決定
-5. **変換**: float32演算子をint8版に置き換え
-6. **評価**: 精度不足ならQAT（Quantization Aware Training）へ移行
+1. **Identify operators**: Identify compute-intensive operations (Linear projections, MatMul)
+2. **Try Dynamic Quantization**: Runtime range computation. Easy to set up, done if accuracy is sufficient
+3. **Try Static Quantization**: Apply Observers to model. Requires calibration data
+4. **Calibration**: Choose method, determine range with representative data (~200 samples)
+5. **Conversion**: Replace float32 operators with int8 versions
+6. **Evaluate**: If accuracy insufficient, move to QAT (Quantization Aware Training)
 
 ```python
-# Optimumで利用可能なツール
-from optimum.onnxruntime import ORTQuantizer  # ONNXモデル
-from optimum.intel import (                   # Intel HW最適化
+# Tools available in Optimum
+from optimum.onnxruntime import ORTQuantizer  # ONNX models
+from optimum.intel import (                   # Intel HW optimization
     IntelQuantizer, IntelModelForQuantization
 )
-from optimum.gptq import GPTQQuantizer         # LLM用GPTQ量子化
-from optimum.fx import FxQuantizer             # PyTorchグラフモード量子化
+from optimum.gptq import GPTQQuantizer         # GPTQ quantization for LLMs
+from optimum.fx import FxQuantizer             # PyTorch graph-mode quantization
 ```
 
 ## Related Pages

@@ -5,7 +5,7 @@ aliases:
   - agent-memory-systems-comparison
   - harness-memory-comparison
 created: 2026-05-17
-updated: 2026-05-17
+updated: 2026-05-26
 tags:
   - concept
   - memory-systems
@@ -24,168 +24,168 @@ sources:
 
 # Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes
 
-4つの主要コーディングエージェントハーネスにおけるメモリ（記憶）システムのアーキテクチャ比較。全ハーネスが **Markdownファイルベース** のメモリ戦略を取っている点が最も重要な共通項だが、検索方式・埋め込み戦略・コンテキスト保持のアプローチは大きく異なる。
+An architectural comparison of memory systems across four major coding agent harnesses. While all harnesses share the **Markdown file-based memory strategy** as their most important commonality, their approaches to retrieval, embedding strategy, and context retention differ significantly.
 
 ---
 
-## 共通項: ファイルファースト哲学
+## Common Ground: File-First Philosophy
 
-4ハーネスすべてが「**ファイルこそが唯一の真実源（source of truth）**」という設計哲学を共有している:
+All four harnesses share the design philosophy that **"files are the sole source of truth":**
 
-| ハーネス | プライマリストレージ | 読み取り可能？ | バージョン管理可能？ |
-|---|---|---|---|
-| **OpenClaw** | `memory/*.md`, `MEMORY.md`, `sessions/*.md` | ✅ 人間可読Markdown | ✅ git管理可能 |
-| **Claude Code** | `CLAUDE.md`, `MEMORY.md`, `.claude/rules/*.md`, auto-memory dir | ✅ 人間可読Markdown | ✅ git管理可能 |
-| **Codex CLI** | `~/.codex/memories/*.md`, `AGENTS.md` | ✅ 人間可読Markdown | ✅ AGENTS.mdのみgit共有可能 |
-| **Hermes Agent** | `~/.hermes/MEMORY.md`, `USER.md`, `SOUL.md`, SQLite DB + JSONL | ✅ 人間可読Markdown + SQLite | ✅ git管理可能 |
+| Harness | Primary Storage | Human-readable? | Version-controllable? |
+|---------|----------------|-----------------|----------------------|
+| **OpenClaw** | `memory/*.md`, `MEMORY.md`, `sessions/*.md` | ✅ Human-readable Markdown | ✅ git-manageable |
+| **Claude Code** | `CLAUDE.md`, `MEMORY.md`, `.claude/rules/*.md`, auto-memory dir | ✅ Human-readable Markdown | ✅ git-manageable |
+| **Codex CLI** | `~/.codex/memories/*.md`, `AGENTS.md` | ✅ Human-readable Markdown | ✅ Only AGENTS.md git-shareable |
+| **Hermes Agent** | `~/.hermes/MEMORY.md`, `USER.md`, `SOUL.md`, SQLite DB + JSONL | ✅ Human-readable Markdown + SQLite | ✅ git-manageable |
 
-この共通哲学は **AIエージェントメモリの「Bitter Lesson」的収束** を示唆する — 複雑な検索アーキテクチャより、シンプルで人間可読・監査可能なファイルの方が長期的に勝つ。
+This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent memory — simple, human-readable, auditable files win over complex retrieval architectures in the long run.
 
-**特筆**: Hermesはさらに一歩進んで **SOUL.md**（エージェントのペルソナ・行動指針）をシステムプロンプトのslot #1として分離し、メモリとアイデンティティを明確に区別している。
-
----
-
-## アーキテクチャ比較
-
-### メモリ階層
-
-| 階層 | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
-|---|---|---|---|---|
-| **静的指示** | なし（system promptで代替） | `CLAUDE.md` (Global → Project → `.claude/rules/*.md`) | `AGENTS.md` (Global → Project walk → Override, 最大32KiB) | `SOUL.md`（slot #1、ペルソナ・行動指針） |
-| **永続メモリ** | `MEMORY.md`（プライベートセッションのみ） | `MEMORY.md`（常時読み込み） + auto-memory dir | `~/.codex/memories/MEMORY.md` | `MEMORY.md` (2,200 chars max) + `USER.md` (1,375 chars max) — **frozen snapshot** at session start |
-| **日次/一時メモリ** | `memory/YYYY-MM-DD.md`（今日+昨日読み込み） | なし（セッション内コンテキストのみ） | `rollout_summaries/<slug>.md`（セッションごと） | なし（bounded snapshot モデルのため日次ログ分離不要） |
-| **会話履歴** | `sessions/YYYY-MM-DD-<slug>.md`（全文検索・インデックス可） | CLAUDE.md経由で間接参照 | `memory_summary.md`（要約のみ） | SQLite FTS5 + JSONL（全文検索・要約・取得可能） |
-| **外部メモリ** | ❌ | ❌ | ❌ | ✅ **8 pluggable providers**（Honcho等）、1つのみ同時アクティブ |
-| **手続き的記憶** | ❌ | ❌ | ✅ `skills/<name>/SKILL.md`（Codexスキル別メモリ） | ✅ **Self-Evolving Skills**（`~/.hermes/skills/`、自動生成 + Curator保守） |
-
-### 検索・リコール方式
-
-| 方式 | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
-|---|---|---|---|---|
-| **ベクトル検索** | ✅ sqlite-vec + コサイン類似度 | ❌ | ❌ | ❌ |
-| **全文検索** | ✅ SQLite FTS5 (BM25) | ❌（ファイル直接読み込み） | ✅ `grep` ベース（MEMORY.mdをgrep） | ✅ SQLite FTS5（全会話履歴の全文検索） |
-| **ハイブリッド** | ✅ BM25 + ベクトル（70:30重み付け） | ❌ | ❌ | ❌ |
-| **リコール方法** | `memory_search` ツール（~700文字スニペット + 関連度スコア） | ファイル全体読み込み | `memory_summary.md` 全体読み込み → 必要に応じて `grep` | **session_search** ツール（SQLite FTS5 → LLM要約） + MEMORY.md は全セッション注入 |
-| **Progressive Disclosure** | ❌ スニペットベース | ❌ ファイル全体読み込み | ❌ ファイル全体読み込み | ✅ **3レベル**（名前のみ → 全文 → 参照ファイル） |
-
-**最大の差異**: OpenClawだけがベクトル検索を実装。HermesとOpenClawはFTS5全文検索を共有するが、Hermesは会話履歴検索に特化し、OpenClawはメモリファイル+セッションのハイブリッド検索。
-
-### 埋め込み戦略
-
-| 項目 | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
-|---|---|---|---|---|
-| **埋め込み使用** | ✅ あり（検索用） | ❌ なし | ❌ なし | ❌ なし（FTS5のみ） |
-| **プロバイダー** | Local → OpenAI → Gemini 自動フォールバック | N/A | N/A | N/A（外部providerでカバー可） |
-| **キャッシュ** | ✅ SHA-256ハッシュベース | N/A | N/A | N/A |
-| **バッチ最適化** | ✅ OpenAI/Gemini Batch API（50%コスト削減） | N/A | N/A | N/A |
-
-### メモリ生成・更新
-
-| 項目 | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
-|---|---|---|---|---|
-| **生成タイミング** | Pre-compaction flush（自動） + ユーザー指示 | ユーザー指示 / CLAUDE.md手動更新 | 非同期バックグラウンド（~6時間のアイドル後） | **Agent-driven**: 複雑タスク完了時（5+ tool calls）、エラー突破時、ユーザー修正時 |
-| **生成モデル** | 実行中のエージェントモデル | 実行中のエージェントモデル | 専用の抽出モデル + 統合モデル（独立設定可） | 実行中のエージェントモデル |
-| **自動要約** | ✅ コンパクション時に自動発動 | ❌ 手動指示のみ | ✅ セッション要約 → 定期的統合 | ✅ **~80% capacityで自動consolidate**（関連事実を密に統合） |
-| **上限・プルーニング** | 制限なし（ファイルシステム容量依存） | 制限なし（ファイルシステム容量依存） | 256ロールアウト上限 / 30日未使用→削除 | **容量制限**（MEMORY.md 2,200 chars / USER.md 1,375 chars）+ **Curator**（30日stale/90日archive） |
-| **機密情報除去** | ❌ | ❌ | ✅ 組み込みクレデンシャルスクラビング | ❌ |
-| **外部検証** | ❌ | ❌ | ❌ | ✅ **GEPA**（オフライン最適化パイプライン、PR経由） |
-
-### コンテキスト保持・コンパクション
-
-| 項目 | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
-|---|---|---|---|---|
-| **コンパクション前フラッシュ** | ✅ 自動（~80%コンテキスト使用時、サイレントターン） | ❌（5層コンパクションパイプラインだが事前フラッシュなし） | ❌（非同期生成のため直接関係なし） | ✅ **Pre-compression memory flush**（コンテキスト圧縮前にメモリフラッシュ） |
-| **コンパクション方式** | Markdown要約を `memory/` に追記 | 5層パイプライン（段階的要約） | 抽出→統合の2フェーズパイプライン | Bounded snapshot + FTS5検索（圧縮時はメモリフラッシュ後、新たなスキル生成・メモリ更新トリガー） |
-| **コンテキスト注入** | 今日+昨日の日次ログ + 検索結果 | CLAUDE.md + MEMORY.md を毎セッション注入 | `memory_summary.md` を毎セッション注入（トークン切り詰め） | MEMORY.md + USER.md frozen snapshot（**prefix cache最適化** — 全メモリバイトが最初のプロンプト内） |
+**Notable**: Hermes goes a step further by separating **SOUL.md** (agent persona and behavioral guidelines) as system prompt slot #1, clearly distinguishing memory from identity.
 
 ---
 
-## 選択ガイド: どのメモリシステムを選ぶべきか
+## Architecture Comparison
 
-### OpenClaw が最適なケース
+### Memory Hierarchy
 
-- **長期稼働エージェント**: 日次ログ + セッション履歴の自動蓄積で数ヶ月のプロジェクトに最適
-- **高度な検索が必要**: ベクトル検索で概念マッチ、BM25で正確な用語検索
-- **オフライン要件**: Local埋め込みプロバイダーで完全オフライン動作
-- **マルチエージェント**: Per-agent isolation でエージェント間のメモリ汚染防止
+| Layer | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
+|-------|----------|-------------|-----------|--------------|
+| **Static instructions** | None (replaced by system prompt) | `CLAUDE.md` (Global → Project → `.claude/rules/*.md`) | `AGENTS.md` (Global → Project walk → Override, max 32KiB) | `SOUL.md` (slot #1, persona & behavioral guidelines) |
+| **Persistent memory** | `MEMORY.md` (private sessions only) | `MEMORY.md` (always loaded) + auto-memory dir | `~/.codex/memories/MEMORY.md` | `MEMORY.md` (2,200 chars max) + `USER.md` (1,375 chars max) — **frozen snapshot** at session start |
+| **Daily/temporal memory** | `memory/YYYY-MM-DD.md` (today + yesterday loaded) | None (session-only context) | `rollout_summaries/<slug>.md` (per session) | None (bounded snapshot model eliminates need for daily log separation) |
+| **Conversation history** | `sessions/YYYY-MM-DD-<slug>.md` (full-text searchable, indexable) | Indirectly via CLAUDE.md | `memory_summary.md` (summary only) | SQLite FTS5 + JSONL (full-text search, summarization, retrieval) |
+| **External memory** | ❌ | ❌ | ❌ | ✅ **8 pluggable providers** (Honcho etc.), only 1 active at a time |
+| **Procedural memory** | ❌ | ❌ | ✅ `skills/<name>/SKILL.md` (Codex per-skill memory) | ✅ **Self-Evolving Skills** (`~/.hermes/skills/`, auto-generated + Curator-maintained) |
 
-### Claude Code が最適なケース
+### Retrieval & Recall Methods
 
-- **チーム開発**: CLAUDE.mdをgit管理し、チーム全体でメモリ共有
-- **シンプルさ重視**: ファイル直接読み込みで複雑な検索インフラ不要
-- **セッション単位の作業**: 長期間より単一タスクの集中実行に向く
-- **エンタープライズ管理**: Managed Agentsのライフサイクル管理と統合
+| Method | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
+|--------|----------|-------------|-----------|--------------|
+| **Vector search** | ✅ sqlite-vec + cosine similarity | ❌ | ❌ | ❌ |
+| **Full-text search** | ✅ SQLite FTS5 (BM25) | ❌ (direct file loading) | ✅ `grep`-based (grep MEMORY.md) | ✅ SQLite FTS5 (full conversation history search) |
+| **Hybrid search** | ✅ BM25 + vector (70:30 weighting) | ❌ | ❌ | ❌ |
+| **Recall method** | `memory_search` tool (~700 char snippets + relevance scores) | Full file loading | Full `memory_summary.md` load → `grep` as needed | **session_search** tool (SQLite FTS5 → LLM summary) + MEMORY.md injected every session |
+| **Progressive Disclosure** | ❌ snippet-based | ❌ full file load | ❌ full file load | ✅ **3-level** (name only → full content → reference files) |
 
-### Codex CLI が最適なケース
+**Biggest difference**: Only OpenClaw implements vector search. Hermes and OpenClaw share FTS5 full-text search, but Hermes specializes in conversation history search while OpenClaw uses hybrid search across memory files + sessions.
 
-- **自動化されたメモリ管理**: 非同期生成で「設定したら忘れる」運用
-- **スキルベースの記憶**: スキルごとに独立したメモリファイル
-- **コスト管理**: レート制限認識、使用量に応じた統合抑制
-- **プライバシー重視**: 組み込みクレデンシャルスクラビング + Geographic制約
+### Embedding Strategy
 
-### Hermes Agent が最適なケース
+| Item | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
+|------|----------|-------------|-----------|--------------|
+| **Uses embeddings** | ✅ Yes (for search) | ❌ No | ❌ No | ❌ No (FTS5 only) |
+| **Provider** | Local → OpenAI → Gemini auto-fallback | N/A | N/A | N/A (can be covered by external providers) |
+| **Cache** | ✅ SHA-256 hash based | N/A | N/A | N/A |
+| **Batch optimization** | ✅ OpenAI/Gemini Batch API (50% cost reduction) | N/A | N/A | N/A |
 
-- **自己進化するエージェント**: 使用するほど技能（skills）と記憶が蓄積し、賢くなる閉ループ学習
-- **Prefix Cache最適化が必要**: Bounded snapshot（MEMORY.md + USER.md）により全メモリが最初のプロンプトに収まり、キャッシュ効率が最大化
-- **手続き的知識の蓄積**: 複雑なタスクから自動的にskillsを生成し、再利用する反復ワークフロー
-- **Curatorによる自律メンテナンス**: 30日未使用→stale、90日→archiveの自動棚卸し
-- **マルチプロファイル分離**: profileごとに完全分離されたメモリ・スキル・設定
+### Memory Generation & Updates
 
----
+| Item | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
+|------|----------|-------------|-----------|--------------|
+| **Generation timing** | Pre-compaction flush (auto) + user instruction | User instruction / manual CLAUDE.md update | Async background (~6 hours idle) | **Agent-driven**: After complex tasks (5+ tool calls), error breakthroughs, user corrections |
+| **Generation model** | Running agent model | Running agent model | Dedicated extraction model + integration model (independently configurable) | Running agent model |
+| **Auto-summary** | ✅ Triggered automatically during compaction | ❌ Manual instruction only | ✅ Session summary → periodic integration | ✅ **Auto-consolidation at ~80% capacity** (densely integrates related facts) |
+| **Limits & pruning** | Unlimited (filesystem capacity dependent) | Unlimited (filesystem capacity dependent) | 256 rollout limit / 30 days unused → deleted | **Capacity limited** (MEMORY.md 2,200 chars / USER.md 1,375 chars) + **Curator** (30 days stale / 90 days archive) |
+| **Sensitive info removal** | ❌ | ❌ | ✅ Built-in credential scrubbing | ❌ |
+| **External verification** | ❌ | ❌ | ❌ | ✅ **GEPA** (offline optimization pipeline, via PR) |
 
-## 設計思想の対比
+### Context Retention & Compaction
 
-| 軸 | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
-|---|---|---|---|---|
-| **哲学** | 「ファイルが真実、検索が知性」 — ハイブリッド検索で記憶を活用 | 「シンプルさが力」 — 余計なインフラを排し、モデルの知性に任せる | 「自動化が鍵」 — 人間が設定し、エージェントが自律管理 | 「使用するほど賢くなる」 — Capability Accumulation System、閉ループ学習 |
-| **複雑さ** | 高（ベクトルDB + FTS + プロバイダー管理） | 低（ファイルシステムのみ） | 中（非同期パイプライン + 専用モデル） | 中（3-Tier + Curator + GEPA、ただしユーザーからは透過的） |
-| **運用負荷** | 中（SQLite管理必要） | 低（ファイル編集のみ） | 低（自動化、上限・プルーニングあり） | 低（Curator自動メンテ + GEPA自動最適化） |
-| **スケーラビリティ** | 高い（検索で大規模メモリに対応） | 限定的（ファイル全体読み込みに依存） | 中（256ロールアウト上限、定期的プルーニング） | **Bounded**: 意図的に制限（2,200 chars）— スケールより精度重視 |
-| **移植性** | 高い（Markdownファイル + SQLite） | 高い（Markdownファイルのみ） | 中（`~/.codex/` に依存、クロスマシン同期なし） | 高い（Markdown + SQLite + JSONL、ただしモデル依存性あり） |
-| **Prefix Cache効率** | 中（検索結果がターンごとに変動） | 低（ファイル全体読み込みが変動要因） | 低（毎セッション要約再生成） | **最高** — 全メモリバイトが最初のプロンプト内、キャッシュヒット率最大化 |
-
----
-
-## メモリアーキテクチャ分類（Bustamante）
-
-Nicolas Bustamante（Microsoft）による3タイプ分類に4ハーネスを当てはめると:
-
-| アーキテクチャ型 | ハーネス | 特徴 |
-|---|---|---|
-| **Bounded Snapshot** | **Hermes Agent** | セッション開始時にメモリ凍結、prefix cache最適化、容量制限付き |
-| **Typed Live Writes** | **Claude Code** | セッション中に型付きMarkdownを直接書き込み、age-aware reminder |
-| **Two-Phase Async Pipeline** | **Codex CLI** | 抽出（小モデル）→ 統合（大モデル）の非同期2段階 |
-| **Hybrid Search + Flush** | **OpenClaw** | 上記3タイプのどれにも完全には当てはまらない — ハイブリッド検索 + Pre-Compaction Flushの独自路線 |
+| Item | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
+|------|----------|-------------|-----------|--------------|
+| **Pre-compaction flush** | ✅ Auto (~80% context usage, silent turn) | ❌ (5-layer compaction pipeline but no pre-flush) | ❌ (not directly relevant due to async generation) | ✅ **Pre-compression memory flush** (flushes memory before context compression) |
+| **Compaction method** | Appends Markdown summary to `memory/` | 5-layer pipeline (gradual summarization) | Extraction → integration 2-phase pipeline | Bounded snapshot + FTS5 search (triggers new skill generation and memory update after compression) |
+| **Context injection** | Today + yesterday daily logs + search results | CLAUDE.md + MEMORY.md injected every session | `memory_summary.md` injected every session (token truncated) | MEMORY.md + USER.md frozen snapshot (**prefix cache optimized** — all memory bytes in the initial prompt) |
 
 ---
 
-## 共通の限界
+## Selection Guide: Which Memory System to Choose
 
-4ハーネスすべてに共通する制約:
+### Best for OpenClaw
 
-1. **クロスファイルコンテキストの欠如**: 複数ファイルにまたがる概念は明示的なクロスリファレンスがないと接続されない
-2. **埋め込みドリフト**: プロバイダー変更時に再インデックスが必要（OpenClawは追跡機構あり、他はN/A）
-3. **ストレージ増大**: 長期間使用でファイル数・インデックスサイズが線形増加（Hermesはbounded designで緩和）
-4. **マルチマシン同期**: いずれも組み込みのクロスマシン同期機構を持たない（Codexは明示的に「なし」と表明）
-5. **モデル依存性**: Bustamanteの指摘 — 「モデルはハーネス上でポストトレーニングされる」ため、メモリの振る舞いはハーネス間で移植不可
+- **Long-running agents**: Daily logs + session history auto-accumulation ideal for multi-month projects
+- **Advanced search needed**: Vector search for concept matching, BM25 for precise term search
+- **Offline requirements**: Local embedding provider enables fully offline operation
+- **Multi-agent**: Per-agent isolation prevents cross-agent memory contamination
+
+### Best for Claude Code
+
+- **Team development**: Git-managed CLAUDE.md enables team-wide memory sharing
+- **Simplicity focused**: Direct file loading requires no complex search infrastructure
+- **Session-based work**: Better suited for focused single-task execution than long-term projects
+- **Enterprise management**: Integration with Managed Agents lifecycle management
+
+### Best for Codex CLI
+
+- **Automated memory management**: Async generation enables "set and forget" operation
+- **Skill-based memory**: Independent memory files per skill
+- **Cost management**: Rate-limit aware, usage-based integration suppression
+- **Privacy focused**: Built-in credential scrubbing + geographic constraints
+
+### Best for Hermes Agent
+
+- **Self-evolving agent**: Closed-loop learning where skills and memory accumulate with use
+- **Prefix cache optimization needed**: Bounded snapshot (MEMORY.md + USER.md) ensures all memory fits in the initial prompt, maximizing cache efficiency
+- **Procedural knowledge accumulation**: Recurring workflow that auto-generates skills from complex tasks for reuse
+- **Curator-driven autonomous maintenance**: Auto-inventory with 30-day stale / 90-day archive
+- **Multi-profile isolation**: Completely separated memory, skills, and config per profile
+
+---
+
+## Design Philosophy Comparison
+
+| Axis | OpenClaw | Claude Code | Codex CLI | Hermes Agent |
+|------|----------|-------------|-----------|--------------|
+| **Philosophy** | "Files are truth, search is intelligence" — leverages memory through hybrid search | "Simplicity is power" — removes unnecessary infrastructure, trusts model intelligence | "Automation is key" — humans set up, agents manage autonomously | "Smarter with use" — Capability Accumulation System, closed-loop learning |
+| **Complexity** | High (vector DB + FTS + provider management) | Low (filesystem only) | Medium (async pipeline + dedicated models) | Medium (3-Tier + Curator + GEPA, but transparent to users) |
+| **Operational burden** | Medium (SQLite management needed) | Low (file editing only) | Low (automated, with limits and pruning) | Low (Curator auto-maintenance + GEPA auto-optimization) |
+| **Scalability** | High (search handles large memory) | Limited (depends on full file loading) | Medium (256 rollout limit, periodic pruning) | **Bounded**: Intentionally limited (2,200 chars) — precision over scale |
+| **Portability** | High (Markdown files + SQLite) | High (Markdown files only) | Medium (depends on `~/.codex/`, no cross-machine sync) | High (Markdown + SQLite + JSONL, though model-dependent) |
+| **Prefix Cache efficiency** | Medium (search results vary per turn) | Low (full file load introduces variability) | Low (summary regenerated every session) | **Highest** — all memory bytes in initial prompt, maximum cache hit rate |
+
+---
+
+## Memory Architecture Classification (Bustamante)
+
+Mapping Nicolas Bustamante's (Microsoft) 3-type classification to the four harnesses:
+
+| Architecture Type | Harness | Characteristics |
+|------------------|---------|-----------------|
+| **Bounded Snapshot** | **Hermes Agent** | Memory frozen at session start, prefix cache optimized, capacity-limited |
+| **Typed Live Writes** | **Claude Code** | Directly writes typed Markdown during session, age-aware reminders |
+| **Two-Phase Async Pipeline** | **Codex CLI** | Async 2-phase: extraction (small model) → integration (large model) |
+| **Hybrid Search + Flush** | **OpenClaw** | Doesn't fully fit any of the above 3 types — hybrid search + Pre-Compaction Flush unique path |
+
+---
+
+## Common Limitations
+
+Constraints shared by all four harnesses:
+
+1. **Lack of cross-file context**: Concepts spanning multiple files are not connected without explicit cross-references
+2. **Embedding drift**: Provider changes require reindexing (OpenClaw has tracking mechanism, others N/A)
+3. **Storage growth**: Long-term use leads to linear increase in file count and index size (Hermes mitigates with bounded design)
+4. **Multi-machine sync**: None have built-in cross-machine sync mechanisms (Codex explicitly states "none")
+5. **Model dependence**: Bustamante notes — "models are post-trained on their harness," making memory behavior non-portable between harnesses
 
 ---
 
 ## Related
 
-- [[entities/openclaw]] — OpenClaw entity page（Memory System セクションあり）
+- [[entities/openclaw]] — OpenClaw entity page (with Memory System section)
 - [[entities/claude-code]] — Claude Code entity page
-- [[entities/claude-code--architecture]] — Claude Code 5層アーキテクチャ詳細
+- [[entities/claude-code--architecture]] — Claude Code 5-layer architecture details
 - [[entities/hermes-agent]] — Hermes Agent entity page
-- [[concepts/hermes-agent]] — Hermes Agent 3-Tier Memory System 詳細
-- [[concepts/hermes-agent-architecture]] — Hermes Agent アーキテクチャ（Prompt Assembly, Persistent State）
-- [[concepts/claude-perfect-memory]] — Claude Codeのファイルベースメモリ設計哲学
-- [[concepts/agent-memory-engineering]] — Nicolas Bustamante 3タイプ分類
-- [[raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli]] — Codex CLI メモリ詳細
-- [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] — OpenClaw メモリ詳細
-- [[raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering]] — Bustamante一次ソース
-- [[concepts/ai-memory-systems]] — ChatGPT vs Claude vs Cognition メモリ比較
-- [[concepts/context-compaction]] — コンテキストコンパクション概念
-- [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — AIメモリシステム全体像
-- [[concepts/agent-harness-comparison]] — 9ハーネス総合比較
-- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes vs OpenClaw アーキテクチャ比較
+- [[concepts/hermes-agent]] — Hermes Agent 3-Tier Memory System details
+- [[concepts/hermes-agent-architecture]] — Hermes Agent architecture (Prompt Assembly, Persistent State)
+- [[concepts/claude-perfect-memory]] — Claude Code file-based memory design philosophy
+- [[concepts/agent-memory-engineering]] — Nicolas Bustamante's 3-type classification
+- [[raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli]] — Codex CLI memory details
+- [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] — OpenClaw memory details
+- [[raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering]] — Bustamante primary source
+- [[concepts/ai-memory-systems]] — ChatGPT vs Claude vs Cognition memory comparison
+- [[concepts/context-compaction]] — Context compaction concept
+- [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — AI memory systems overview
+- [[concepts/agent-harness-comparison]] — 9-harness comprehensive comparison
+- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes vs OpenClaw architecture comparison

@@ -3,7 +3,7 @@ title: "AI Agent Memory Middleware — Storage Infrastructure for Agentic AI"
 type: concept
 status: complete
 created: 2026-04-15
-updated: 2026-04-30
+updated: 2026-05-26
 sources:
   - "https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html"
   - "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-s3-files/"
@@ -20,260 +20,260 @@ related: [memory-systems-design-patterns, claude-memory, chatgpt-memory-bitter-l
 
 # AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 
-AIエージェントが状態を永続化し、セッション間でコンテキストを共有し、複数エージェントパイプラインで協調するための**ストレージインフラストラクチャ**の横断分析。
+A cross-cutting analysis of **storage infrastructure** for AI agents to persist state, share context across sessions, and coordinate across multi-agent pipelines.
 
-## 1. 問題定義：エージェントメモリの3層モデル
+## 1. Problem Definition: The 3-Layer Model of Agent Memory
 
-AIエージェントのメモリシステムは、**どのレイヤーで状態を保持するか**によって設計が分かれる：
+AI agent memory systems differ in **which layer holds state**:
 
-| レイヤー | 役割 | 代表技術 | 特性 |
-|----------|------|----------|------|
-| **L1: In-Context** | 推論中の作業メモリ | Context Window, Prompt Cache | 揮発性、トークン制限あり |
-| **L2: Local File** | セッション永続化 | CLAUDE.md, .agent/, SKILL.md | ステートレス再現性、Git統合 |
-| **L3: Cloud Storage** | マルチエージェント共有 | S3 Files, Tigris, LLMFS | 耐久性、スケーラビリティ、POSIX互換 |
+| Layer | Role | Representative Technology | Characteristics |
+|-------|------|--------------------------|-----------------|
+| **L1: In-Context** | Working memory during inference | Context Window, Prompt Cache | Volatile, token-limited |
+| **L2: Local File** | Session persistence | CLAUDE.md, .agent/, SKILL.md | Stateless reproducibility, Git integration |
+| **L3: Cloud Storage** | Multi-agent sharing | S3 Files, Tigris, LLMFS | Durability, scalability, POSIX compatibility |
 
-既存のwikiはL1-L2を重点的にカバーしているが、**L3クラウドストレージ層**の技術が不足していた。本ページはL3を補完する。
+Existing wiki content covers L1-L2 in depth, but **L3 cloud storage layer** technology was lacking. This page fills the L3 gap.
 
-## 2. S3 Files — オブジェクトストレージのファイルシステム化
+## 2. S3 Files — Filesystem-Level Object Storage
 
-### 2.1 核心イノベーション
+### 2.1 Core Innovation
 
 > *"Files are an operating system construct... incredibly rich as a way of representing data... used as a way of communicating across threads, processes, and applications. Objects on the other hand come with a relatively focused and narrow set of semantics... The boundary itself was the feature we needed to build."*
 > — Andy Warfield, S3 Team VP (All Things Distributed, 2026-04)
 
-S3 Filesは、従来の「S3 = オブジェクトストレージ」「EFS = ファイルシステム」という二分法を解消し、**Stage and Commitモデル**で両者のセマンティクスを統合した：
+S3 Files eliminates the traditional binary of "S3 = object storage" vs "EFS = file system," integrating both semantics through a **Stage and Commit model**:
 
-| 次元 | オブジェクト(S3) | ファイル(EFS層) | S3 Filesの解決 |
-|------|-----------------|-----------------|----------------|
-| **変更単位** | 全体PUT | 部分書き込み | EFSでバッチ → S3へ一括コミット |
-| **一貫性** | バージョニング | POSIX原子性 | マウントレベルでPOSIX、S3はsource of truth |
-| **パフォーマンス** | 並列GET | メタデータ局所性 | <128KBは即時hydrate、大ファイルはread-bypass |
-| **アクセス制御** | IAMポリシー | POSIX権限 | マウントPOSIX + IAMデータ境界 |
+| Dimension | Objects (S3) | Files (EFS Layer) | S3 Files Solution |
+|-----------|--------------|-------------------|-------------------|
+| **Change unit** | Full PUT | Partial writes | Batch on EFS → bulk commit to S3 |
+| **Consistency** | Versioning | POSIX atomicity | POSIX at mount level, S3 as source of truth |
+| **Performance** | Parallel GET | Metadata locality | Instant hydrate for <128KB, read-bypass for large files |
+| **Access control** | IAM policies | POSIX permissions | Mount POSIX + IAM data boundaries |
 
-### 2.2 AIエージェントへの直接的価値
+### 2.2 Direct Value for AI Agents
 
-VentureBeatの分析が指摘する通り、S3 Filesは**エージェント固有の問題**を解決する：
+As VentureBeat's analysis notes, S3 Files solves **agent-specific problems**:
 
-1. **セッション状態の消失防止**
+1. **Preventing session state loss**
    > "As agents compacted their context windows, the record of what had been downloaded locally was often lost. 'I would find myself having to remind the agent that the data was available locally,' Warfield said."
    
-   S3 Filesにより、エージェントがファイルシステムとして直接S3にアクセスできるため、「ダウンロードしたかどうか」の状態管理が不要になる。
+   S3 Files eliminates the need to manage "whether it was downloaded" state by allowing agents direct filesystem access to S3.
 
-2. **マルチエージェント共有ワークスペース**
+2. **Multi-agent shared workspace**
    > "Thousands of compute resources can connect to the same S3 file system simultaneously."
    
-   複数のエージェントが同じバケットをマウントし、サブディレクトリで作業領域を分離しつつ、共有成果物（評価結果、中間アーティファクト）をファイルシステム規約でやり取りできる。
+   Multiple agents can mount the same bucket, separate work areas via subdirectories, and exchange shared artifacts (evaluation results, intermediate artifacts) through filesystem conventions.
 
-3. **レガシーツールのそのまま利用**
-   AIエージェントは`ls`, `cat`, `grep`, `find`などのUnixツールや、`pandas.read_csv()`, `open()`などのファイルI/Oをデフォルトで使用する。S3 Filesはコード変更なくこれらのツールをS3データに対して動作させる。
+3. **Direct use of legacy tools**
+   AI agents default to Unix tools like `ls`, `cat`, `grep`, `find` and file I/O like `pandas.read_csv()`, `open()`. S3 Files makes these tools work against S3 data without code changes.
 
-### 2.3 技術的トレードオフ
+### 2.3 Technical Trade-offs
 
-| 項目 | 詳細 |
-|------|------|
-| **バッキングシステム** | Amazon EFS（NFSセマンティクス提供） |
-| **レイジーハイドレーション** | 初回アクセスでメタデータインポート、<128KBは即時取得 |
-| **コミットウィンドウ** | 約60秒間隔でEFS→S3へ一括PUT |
-| **競合解決** | S3がsource of truth、FS版は`lost+found`へ移動 + CloudWatchメトリクス |
-| **エビクション** | 30日以上非アクティブなデータはFSビューから削除（S3には保持） |
-| **リードバイパス** | 大量の連続読み取りはNFSを経由せずS3へ直接並列GET（3GB/s/クライアント） |
-| **リネームコスト** | S3にネイティブリネームなし。ディレクトリリネームは配下全オブジェクトのcopy+delete |
+| Item | Details |
+|------|---------|
+| **Backing system** | Amazon EFS (providing NFS semantics) |
+| **Lazy hydration** | Metadata import on first access, <128KB fetched instantly |
+| **Commit window** | Bulk PUT to S3 from EFS, approximately every 60 seconds |
+| **Conflict resolution** | S3 as source of truth, FS version moved to `lost+found` + CloudWatch metrics |
+| **Eviction** | Inactive data for 30+ days removed from FS view (retained in S3) |
+| **Read-bypass** | Large sequential reads go directly to S3 via parallel GET (3GB/s/client), bypassing NFS |
+| **Rename cost** | No native S3 rename. Directory rename requires copy+delete of all underlying objects |
 
-## 3. 代替・補完技術エコシステム
+## 3. Alternative & Complementary Technology Ecosystem
 
-### 3.1 Tigris — グローバル分散S3互換ストレージ
+### 3.1 Tigris — Globally Distributed S3-Compatible Storage
 
-TigrisはS3 Filesとは異なるアプローチでエージェントメモリ問題に対処：
+Tigris takes a different approach to the agent memory problem:
 
-| 機能 | S3 Files | Tigris |
-|------|----------|--------|
-| **地理的分散** | リージョン内 | グローバルエッジ自動レプリケーション |
-| **エグレス料金** | 標準AWS料金 | ゼロエグレス |
-| **POSIX互換** | ネイティブ（EFS経由） | TigrisFS（FUSEベース） |
-| **エージェントメモリ用例** | 共有ワークスペース | メモリアーティファクトのグローバル永続化 |
-| **フォーク機能** | なし | バケットフォークで評価用データ分離 |
+| Feature | S3 Files | Tigris |
+|---------|----------|--------|
+| **Geographic distribution** | Within region | Global edge auto-replication |
+| **Egress pricing** | Standard AWS rates | Zero egress |
+| **POSIX compatible** | Native (via EFS) | TigrisFS (FUSE-based) |
+| **Agent memory use case** | Shared workspace | Global persistence of memory artifacts |
+| **Fork capability** | None | Bucket fork for evaluation data isolation |
 
-Tigrisのドキュメントは明示的に「AIエージェントはステートフルで分散していて、従来のWebサービスとは異なる書き込みパターンを持つ」と指摘している。
+Tigris documentation explicitly notes that "AI agents are stateful and distributed, with write patterns different from traditional web services."
 
-### 3.2 LLMFS — ファイルシステム比喩によるLLMメモリ
+### 3.2 LLMFS — Filesystem Metaphor for LLM Memory
 
-[LLMFS](https://github.com/viditraj/llmfs)は、OSのメモリ管理メタファーをLLMエージェントに適用：
+[LLMFS](https://github.com/viditraj/llmfs) applies the OS memory management metaphor to LLM agents:
 
 ```
-RAM (Context Window)     →  揮発性、高速、トークン制限あり
-Disk/Swap (LLMFS)        →  永続的、検索可能、無制限スケール
-Virtual Address (MQL)    →  メモリパス（/session/turns/42）
-MMU (ContextManager)     →  自動ページイン/アウト
+RAM (Context Window)     →  Volatile, fast, token-limited
+Disk/Swap (LLMFS)        →  Persistent, searchable, unlimited scale
+Virtual Address (MQL)    →  Memory path (/session/turns/42)
+MMU (ContextManager)     →  Auto page-in/page-out
 ```
 
-LLMFSの特徴：
-- **Memory Query Language (MQL)**: ファイルシステムパス風のクエリ言語
-- **メモリ層**: short_term（TTL 60分）、knowledge（永続）、episodic（セッション）
-- **ナレッジグラフ**: メモリ間の意味的リンク
-- **MCPサーバー**: Claude CodeなどMCP対応エージェントと直接統合
-- **FUSEマウント**: オプションでローカルファイルシステムとして公開
+LLMFS features:
+- **Memory Query Language (MQL)**: Filesystem-path-like query language
+- **Memory layers**: short_term (TTL 60 min), knowledge (persistent), episodic (session)
+- **Knowledge graph**: Semantic links between memories
+- **MCP server**: Direct integration with MCP-compatible agents like Claude Code
+- **FUSE mount**: Optional exposure as local filesystem
 
-### 3.3 Cognee — ナレッジグラフベースのエージェントメモリ
+### 3.3 Cognee — Knowledge-Graph-Based Agent Memory
 
-CogneeはS3/Tigrisバケットをバックエンドとして使用し、エージェントのメモリを構造化：
-- `add()` → 生コンテンツ取り込み
-- `cognify()` → チャンキング、埋め込み生成、エンティティ抽出、ナレッジグラフ構築
-- `search()` → ベクトル検索 + グラフトラバーサル
+Cognee uses S3/Tigris buckets as backend to structure agent memory:
+- `add()` → Ingests raw content
+- `cognify()` → Chunking, embedding generation, entity extraction, knowledge graph construction
+- `search()` → Vector search + graph traversal
 
-### 3.4 Mintlify ChromaFS — ベクトルDB上の仮想ファイルシステム
+### 3.4 Mintlify ChromaFS — Virtual Filesystem on Vector DB
 
-[Mintlify](https://www.mintlify.com/blog/how-we-built-a-virtual-filesystem-for-our-assistant)は、**「エージェントに必要なのは実際のファイルシステムではなく、その錯覚である」**という原則に基づき、ChromaFSを開発した。
+[Mintlify](https://www.mintlify.com/blog/how-we-built-a-virtual-filesystem-for-our-assistant) developed ChromaFS based on the principle that **"agents don't need a real filesystem, they need the illusion of one."**
 
 > *"Agents are converging on filesystems as their primary interface because `grep`, `cat`, `ls`, and `find` are all an agent needs."*
 > — Mintlify Engineering Blog, 2026
 
-#### 核心イノベーション：2段階フィルタリングパイプライン
+#### Core Innovation: 2-Stage Filtering Pipeline
 
-ChromaFSは既存のChromaベクトルDBを「ファイルシステム」として抽象化し、エージェントのUNIXコマンドをDBクエリに変換する：
+ChromaFS abstracts the existing Chroma vector DB as a "filesystem," converting agent Unix commands into DB queries:
 
 ```
-エージェント: grep -ri "access_token" --include="*.md"
+Agent: grep -ri "access_token" --include="*.md"
      ↓
 ChromaFS: $contains "access_token" + metadata filter
      ↓
-Coarse Filter (Chroma DB) → 候補ファイル特定 (3/6件)
+Coarse Filter (Chroma DB) → Identify candidate files (3/6)
      ↓
-bulkPrefetch → 一致チャンクをRedisにキャッシュ
+bulkPrefetch → Cache matching chunks in Redis
      ↓
-Fine Filter (in-memory regex via just-bash) → 結果返却 (ms単位)
+Fine Filter (in-memory regex via just-bash) → Return results (ms level)
 ```
 
-#### パフォーマンス比較
+#### Performance Comparison
 
-| 指標 | 従来サンドボックス | ChromaFS |
-|------|-------------------|----------|
-| **P90ブート時間** | ~46秒 | **~100ミリ秒** |
-| **1会話あたりコスト** | ~$0.0137 | **~$0**（既存DB再利用） |
-| **スケーラビリティ** | micro-VM数に依存 | DBスループット依存 |
-| **RBAC** | Linuxパーミッション | DBメタデータフィルタリング |
+| Metric | Traditional Sandbox | ChromaFS |
+|--------|--------------------|----------|
+| **P90 boot time** | ~46 seconds | **~100 milliseconds** |
+| **Cost per conversation** | ~$0.0137 | **~$0** (reuses existing DB) |
+| **Scalability** | Depends on micro-VM count | Depends on DB throughput |
+| **RBAC** | Linux permissions | DB metadata filtering |
 
-#### 設計パターンの意味
+#### Design Pattern Implications
 
-ChromaFSは以下の重要な設計原則を示している：
+ChromaFS demonstrates several important design principles:
 
-1. **「仮想」ファイルシステム**: エージェントはUnixツール（grep, cat, ls, find）のインターフェースを必要とするが、実際のPOSIXファイルシステムは不要
-2. **既存インフラの再利用**: 専用サンドボックス（Daytona等）ではなく、既存のChroma DBを抽象化
-3. **リードオンリー保証**: 全書き込み操作を`EROFS`エラーで拒否 → セッション汚染防止、クリーンアップ不要
-4. **レイジーローディング**: 大ファイル（OpenAPI仕様書等）はポインタのみ登録、`cat`時にフェッチ
-5. **RBACの単純化**: Linuxのchmod/ユーザーグループ管理ではなく、DBフィルタリングでアクセス制御
+1. **"Virtual" filesystem**: Agents need the interface of Unix tools (grep, cat, ls, find), but not an actual POSIX filesystem
+2. **Reuse existing infrastructure**: Abstracts existing Chroma DB instead of dedicated sandboxes (Daytona, etc.)
+3. **Read-only guarantee**: Rejects all write operations with `EROFS` error → prevents session contamination, no cleanup needed
+4. **Lazy loading**: Large files (OpenAPI specs, etc.) register only pointers, fetch on `cat`
+5. **Simplified RBAC**: Access control through DB filtering rather than Linux chmod/user group management
 
-#### スケール実績
+#### Scale Results
 
-- **月85万会話**（従来アプローチなら$70k+/年のコンピューティングコスト）
-- **日3万+会話**（数百ユーザー向けドキュメントアシスタント）
-- 全Mintlifyドキュメントサイトで稼働中
+- **850K conversations/month** ($70K+/year computing cost under traditional approach)
+- **30K+ conversations/day** (documentation assistant for hundreds of users)
+- Running across all Mintlify documentation sites
 
-## 4. 統合アーキテクチャ：L1-L3の連携
+## 4. Integrated Architecture: L1-L3 Coordination
 
-AIエージェントの完全なメモリスタック：
+Complete agent memory stack:
 
 ```
 ┌─────────────────────────────────────────────────┐
-│  L1: In-Context (推論)                           │
+│  L1: In-Context (Inference)                      │
 │  - Context Window (128K-2M tokens)               │
 │  - Prompt Cache (Anthropic, OpenAI)              │
-│  - 揮発性、高コスト/トークン                       │
+│  - Volatile, high cost/token                     │
 ├─────────────────────────────────────────────────┤
-│  L2: Local File (セッション永続化)                 │
+│  L2: Local File (Session Persistence)            │
 │  - CLAUDE.md / AGENTS.md / SKILL.md              │
-│  - .agent/ ディレクトリ                           │
-│  - Git history (バージョン管理)                    │
-│  - ステートレス再現性                             │
+│  - .agent/ directory                             │
+│  - Git history (version control)                 │
+│  - Stateless reproducibility                     │
 ├─────────────────────────────────────────────────┤
-│  L3: Cloud Storage (マルチエージェント共有)        │
+│  L3: Cloud Storage (Multi-Agent Sharing)         │
 │  - S3 Files (POSIX mount, stage-and-commit)      │
-│  - Tigris (グローバル分散, zero-egress)          │
+│  - Tigris (global distribution, zero-egress)    │
 │  - LLMFS (MQL, knowledge graph, FUSE)           │
 │  - Cognee (vector + graph memory)               │
-│  - 耐久性、スケール、エージェント間協調            │
+│  - Durability, scale, inter-agent coordination   │
 └─────────────────────────────────────────────────┘
 ```
 
-### 4.1 データフロー例：マルチエージェント評価パイプライン
+### 4.1 Data Flow Example: Multi-Agent Evaluation Pipeline
 
-1. **エージェントA**（リサーチ）: S3 Filesマウントバケットの`/research/raw/`に収集データを配置
-2. **エージェントB**（分析）: 同じバケットの`/research/processed/`から読み取り、LLMFSにメモリとして登録
-3. **エージェントC**（評価）: Tigrisフォークで評価用データセットを分離、結果をS3 Filesの`/evals/results/`に書き込み
-4. **エージェントD**（デプロイ）: 評価結果を読み取り、CLAUDE.mdを更新して開発規約に反映
+1. **Agent A** (Research): Places collected data in S3 Files-mounted bucket at `/research/raw/`
+2. **Agent B** (Analysis): Reads from same bucket at `/research/processed/`, registers as memory in LLMFS
+3. **Agent C** (Evaluation): Isolates evaluation dataset via Tigris fork, writes results to S3 Files at `/evals/results/`
+4. **Agent D** (Deploy): Reads evaluation results, updates CLAUDE.md to reflect development conventions
 
-## 5. 設計選択ガイド
+## 5. Design Selection Guide
 
-| ユースケース | 推奨ストレージ | 理由 |
-|-------------|---------------|------|
-| 単一エージェントの開発セッション | L2 (CLAUDE.md + Git) | 透明性、バージョン管理、再現性 |
-| 複数エージェントの共有ワークスペース | L3 (S3 Files) | POSIX互換、同時アクセス、stage-and-commit |
-| グローバル分散エージェントメモリ | L3 (Tigris) | ゼロエグレス、エッジキャッシング、フォーク機能 |
-| 構造化ナレッジ永続化 | L3 (LLMFS/Cognee) | クエリ言語、ナレッジグラフ、MCP統合 |
-| 大規模データセットのストリーミング | L3 (S3 Files read-bypass) | 3GB/s/クライアント、並列GET最適化 |
+| Use Case | Recommended Storage | Reason |
+|----------|-------------------|--------|
+| Single agent development session | L2 (CLAUDE.md + Git) | Transparency, version control, reproducibility |
+| Multi-agent shared workspace | L3 (S3 Files) | POSIX compatible, concurrent access, stage-and-commit |
+| Globally distributed agent memory | L3 (Tigris) | Zero egress, edge caching, fork capability |
+| Structured knowledge persistence | L3 (LLMFS/Cognee) | Query language, knowledge graph, MCP integration |
+| Large dataset streaming | L3 (S3 Files read-bypass) | 3GB/s/client, parallel GET optimization |
 
-## 6. 既存Memoryページとの接続
+## 6. Connections to Existing Memory Pages
 
-本ページは以下の既存コンセプトと補完関係にある：
+This page complements existing concepts:
 
-- **[memory-systems-design-patterns](memory-systems-design-patterns.md)**: L2ローカルファイルベースの設計パターン（Anthropic vs OpenAI vs Cognition）
-- **[claude-memory](claude-memory.md)**: CLAUDE.mdとファイルシステムの活用
-- **[chatgpt-memory-bitter-lesson](chatgpt-memory-bitter-lesson.md)**: ステートレスvsステートフルの議論
-- **[db9-fs-sql-pattern](db9-fs-sql-pattern.md)**: L3層の**ローカル統合アプローチ**。PostgreSQL内でファイルとSQLメタデータを一元化。単一エージェント〜小規模チーム向け。
-- **[zero-disk-architecture](zero-disk-architecture.md)**: L3層の**完全分離アプローチ**。S3を直接バックエンドとし、計算をステートレスにオフロード。大規模DBベンダー向け。
+- **[memory-systems-design-patterns](memory-systems-design-patterns.md)**: L2 local file-based design patterns (Anthropic vs OpenAI vs Cognition)
+- **[claude-memory](claude-memory.md)**: Usage of CLAUDE.md and filesystem
+- **[chatgpt-memory-bitter-lesson](chatgpt-memory-bitter-lesson.md)**: Stateless vs stateful debate
+- **[db9-fs-sql-pattern](db9-fs-sql-pattern.md)**: L3 layer's **local integration approach**. Centralizes files and SQL metadata within PostgreSQL. For single agents to small teams.
+- **[zero-disk-architecture](zero-disk-architecture.md)**: L3 layer's **full separation approach**. Uses S3 as direct backend, offloading computation statelessly. For large-scale DB vendors.
 
-S3 Filesは「Bitter Lesson」の原則（計算量を活用する一般的方法が勝つ）をストレージレイヤーで体現している：カスタムデータベースを構築するのではなく、既存のS3+EFSインフラを組み合わせ、境界を明示的にすることでスケーラビリティを実現する。
+S3 Files embodies the "Bitter Lesson" principle (general methods leveraging computation win) at the storage layer: rather than building custom databases, combine existing S3+EFS infrastructure and explicitly define boundaries to achieve scalability.
 
 ## Databricks Memory Scaling & MemAlign (April 2026)
 
-Databricks Engineering Blogが提唱する**Memory Scaling** — AIエージェント設計の新しい軸。
+**Memory Scaling** — a new axis for AI agent design, proposed by the Databricks Engineering Blog.
 
 ### Core Concept
 
-エージェントの性能向上を3つの軸で分類:
+Classifying agent performance improvement across three axes:
 
-| 軸 | メカニズム | 限界 |
-|---|---|---|
-| **Parametric Scaling** | モデル重みの更新 | 計算コスト高、壊滅的忘却 |
-| **Inference-Time Scaling** | Chain-of-thought推論 | コンテキストウィンドウ制限、「過思考」 |
-| **Memory Scaling** | 外部メモリ蓄積による性能向上 | メモリ品質管理、鮮度維持 |
+| Axis | Mechanism | Limitations |
+|------|-----------|-------------|
+| **Parametric Scaling** | Model weight updates | High compute cost, catastrophic forgetting |
+| **Inference-Time Scaling** | Chain-of-thought reasoning | Context window limits, "overthinking" |
+| **Memory Scaling** | Performance improvement through external memory accumulation | Memory quality management, freshness maintenance |
 
 > "The bottleneck is no longer reasoning capacity, but grounding the agent in the correct information: giving the model what it needs for the task at hand."
 
 ### Memory Taxonomy
 
-| 型 | 説明 |
-|---|---|
-| **Episodic** | 過去相互作用の生記録（ログ、ツール呼び出し軌跡） |
-| **Semantic** | 相互作用から抽出された一般化されたスキル・事実 |
-| **Personal** | 特定ユーザーの好み・プライベートワークフロー |
-| **Organizational** | 共有知識（命名規則、ビジネスルール、スキーマ） |
+| Type | Description |
+|------|-------------|
+| **Episodic** | Raw records of past interactions (logs, tool call traces) |
+| **Semantic** | Generalized skills and facts extracted from interactions |
+| **Personal** | Specific user preferences and private workflows |
+| **Organizational** | Shared knowledge (naming conventions, business rules, schemas) |
 
 ### MemAlign Framework
 
-DatabricksのMemAlignはepisodic memoryをsemantic rulesに蒸留:
+Databricks' MemAlign distills episodic memory into semantic rules:
 
-- **Labeled Data**: 精度がほぼ0%から70%へ上昇。専門家作成ベースラインを~5%上回る。推論ステップが~20から~5へ削減
-- **Unlabeled User Logs**: LLM judgeで生ログをフィルタリング。わずか62ログ記録で専門家ベースライン(33%)を突破。50%超の精度に到達
+- **Labeled Data**: Accuracy rises from near 0% to 70%. Exceeds expert-created baseline by ~5%. Inference steps reduced from ~20 to ~5
+- **Unlabeled User Logs**: Filters raw logs with LLM judge. Breaks expert baseline (33%) with just 62 log records. Reaches >50% accuracy
 
 > **Takeaway:** Uncurated interactions can substitute for costly hand-engineered domain instructions.
 
 ### Infrastructure Requirements
 
-1. **Scalable Storage**: Serverless PostgreSQL（Lakebase/Neon）— 構造化クエリ、全文検索、ベクトル類似検索をサポート
-2. **Memory Management**: Bootstrapping（既存ドキュメント取り込み）、Distillation（生ログをパターンに圧縮）、Consolidation（重複削除、競合解決）
-3. **Security & Governance**: IDベースアクセス制御、監査用の-lineage追跡
+1. **Scalable Storage**: Serverless PostgreSQL (Lakebase/Neon) — supporting structured queries, full-text search, vector similarity search
+2. **Memory Management**: Bootstrapping (ingesting existing documents), Distillation (compressing raw logs into patterns), Consolidation (deduplication, conflict resolution)
+3. **Security & Governance**: ID-based access control, lineage tracking for auditing
 
 ### Challenges
 
-- **Quality Degradation**: エージェントが自身のエラーを引用し、間違いが再発する
-- **Staleness**: 古いスキーマや名称変更されたエンティティに依存
-- **Discovery Gap**: エージェントがメモリ存在を認識できず、冗長な探索に陥る
+- **Quality Degradation**: Agents cite their own errors, propagating mistakes
+- **Staleness**: Relying on outdated schemas or renamed entities
+- **Discovery Gap**: Agents unaware of memory existence, falling into redundant exploration
 
 ### The Agent as Memory
 
-将来的にはエージェントのIDがモデル重みではなくメモリで定義される:
+In the future, agent identity may be defined by memory rather than model weights:
 
-- **Swappable Reasoning Engines**: LLMはコモディティ化。状態は永続ストアに存在
+- **Swappable Reasoning Engines**: LLMs become commoditized. State lives in persistent stores
 - **Competitive Advantage**: "The differentiator for enterprise agents will increasingly be what memory they have accumulated rather than which model they call"
 - **Key Insight**: "A smaller model with a rich memory store can outperform a larger model with less memory"
 
@@ -288,82 +288,82 @@ DatabricksのMemAlignはepisodic memoryをsemantic rulesに蒸留:
 
 ## Storage Architecture Spectrum for AI Agents
 
-エージェントの永続ストレージ設計は、**「分離 vs 統合」**のスペクトル上で位置付けられる：
+Agent persistent storage design is positioned on a **"separation vs integration"** spectrum:
 
-| アーキテクチャ | アプローチ | 規模 | 対象ユーザー |
-|---|---|---|---|
-| **[[concepts/zero-disk-architecture]]** | 完全分離 (S3 = バックエンド) | 大規模 | DBベンダー、大規模テック企業 |
-| **S3 Files / Tigris** | 統合インターフェース (クラウド) | 中規模 | マルチエージェントチーム |
-| **[[concepts/db9-fs-sql-pattern]]** | 統合データベース (ローカル) | 小規模 | 単一エージェント、個人開発者 |
-| **L2 (CLAUDE.md + Git)** | ローカルファイル | 最小 | 個人セッション |
-| **OPFS** | ブラウザプライベートストレージ | Webエージェント | ブラウザベースAIエージェント |
+| Architecture | Approach | Scale | Target Users |
+|--------------|----------|-------|-------------|
+| **[[concepts/zero-disk-architecture]]** | Full separation (S3 = backend) | Large | DB vendors, large-scale tech companies |
+| **S3 Files / Tigris** | Integrated interface (cloud) | Medium | Multi-agent teams |
+| **[[concepts/db9-fs-sql-pattern]]** | Integrated database (local) | Small | Single agents, individual developers |
+| **L2 (CLAUDE.md + Git)** | Local files | Minimal | Individual sessions |
+| **OPFS** | Browser private storage | Web agents | Browser-based AI agents |
 
-### 選択基準
+### Selection Criteria
 
-- **チーム規模**: 1人 → L2/db9、数人 → db9/Tigris、数十人 → S3 Files
-- **データ量**: MB単位 → db9、GB単位 → S3 Files/Tigris、TB以上 → Zero Disk
-- **複雑性許容**: 低い → db9/L2、高い → S3 Files/Zero Disk
-- **可用性要件**: 低 → db9、高 → S3 Files/Tigris、最大 → Zero Disk
+- **Team size**: 1 person → L2/db9, few people → db9/Tigris, dozens → S3 Files
+- **Data volume**: MB range → db9, GB range → S3 Files/Tigris, TB+ → Zero Disk
+- **Complexity tolerance**: Low → db9/L2, High → S3 Files/Zero Disk
+- **Availability requirements**: Low → db9, High → S3 Files/Tigris, Maximum → Zero Disk
 
-### db9とZero Diskの根本的な違い
+### Fundamental Difference Between db9 and Zero Disk
 
-| 次元 | db9 | Zero Disk |
-|---|---|---|
-| **哲学** | 計算+データを1つに | 計算とデータを完全に分離 |
-| **バックエンド** | PostgreSQL (ローカル) | S3 (クラウド) |
-| **ファイル処理** | fs9拡張 (SQLから直接) | Stage-and-Commit (EFS経由) |
-| **スケーリング** | 垂直スケール | 水平スケール（無限） |
-| **運用コスト** | 低い（1つのDB） | 高い（分散システム） |
-| **エージェント適合性** | 単一エージェントのRAGパイプライン | マルチエージェントの共有ワークスペース |
+| Dimension | db9 | Zero Disk |
+|-----------|-----|-----------|
+| **Philosophy** | Compute + data together | Compute and data fully separated |
+| **Backend** | PostgreSQL (local) | S3 (cloud) |
+| **File handling** | fs9 extension (direct from SQL) | Stage-and-Commit (via EFS) |
+| **Scaling** | Vertical scaling | Horizontal scaling (infinite) |
+| **Operational cost** | Low (single DB) | High (distributed system) |
+| **Agent suitability** | Single agent RAG pipeline | Multi-agent shared workspace |
 
-## OPFS — ブラウザプライベートファイルシステム
+## OPFS — Origin Private File System
 
-**Origin Private File System (OPFS)** は、Web APIの一部としてブラウザ内に隔離された高性能ストレージ領域を提供する。2023年3月から広く利用可能。
+**Origin Private File System (OPFS)** provides isolated high-performance storage within the browser as part of the Web API. Widely available since March 2023.
 
-### 核心イノベーション
+### Core Innovation
 
-OPFSは**ブラウザベースのエージェント**にとって重要なストレージレイヤー：
+OPFS is a critical storage layer for **browser-based agents**:
 
-| 特徴 | 説明 |
-|---|---|
-| **プライバシー** | オリジンに隔離。ユーザーの通常のファイルマネージャに表示されない |
-| **高性能** | 従来のFile System Access APIより高速。セキュリティチェックのオーバーヘッドが排除されている |
-| **同期アクセス** | Web Worker内で同期的に読み書き可能（Promiseオーバーヘッドなし） |
-| **バイトレベルアクセス** | SQLiteデータベースなどの大規模更新に最適 |
+| Feature | Description |
+|---------|-------------|
+| **Privacy** | Isolated by origin. Not visible in the user's normal file manager |
+| **High performance** | Faster than the traditional File System Access API. Eliminates security check overhead |
+| **Sync access** | Synchronous read/write within Web Workers (no Promise overhead) |
+| **Byte-level access** | Ideal for large updates like SQLite databases |
 
-### AIエージェントへの適用
+### Application to AI Agents
 
-OPFSは以下のエージェントパターンで有用：
+OPFS is useful for the following agent patterns:
 
-1. **ブラウザ内エージェント**: Webブラウザ上で動作するAIエージェントがセッション状態を永続化
-2. **SQLite + OPFS**: ブラウザ内で動作する軽量データベース（例: SQLite WASM）のバックエンドストレージ
-3. **キャッシュストレージ**: エージェントの推論結果や中間データをブラウザ内に保持
-4. **プライバシー保護**: ユーザーデータがブラウザ外に漏れないため、機密性の高いエージェントワークフローに適合
+1. **In-browser agents**: AI agents running in the web browser persist session state
+2. **SQLite + OPFS**: Backend storage for lightweight databases running in the browser (e.g., SQLite WASM)
+3. **Cache storage**: Agent inference results and intermediate data retained in the browser
+4. **Privacy protection**: User data doesn't leak outside the browser, suitable for sensitive agent workflows
 
-### OPFS API例
+### OPFS API Example
 
 ```javascript
-// OPFSルートディレクトリ取得
+// Get OPFS root directory
 const opfsRoot = await navigator.storage.getDirectory();
 
-// ファイル作成・取得
+// Create/get a file
 const fileHandle = await opfsRoot.getFileHandle("agent-state.json", { create: true });
 
-// Web Workerでの同期アクセス
+// Synchronous access in Web Worker
 const accessHandle = await fileHandle.createSyncAccessHandle();
 accessHandle.write(encoder.encode(data), { at: offset });
 accessHandle.flush();
 ```
 
-### OPFSと他のストレージレイヤーの関係
+### Relationship Between OPFS and Other Storage Layers
 
-| 次元 | OPFS | S3 Files | db9 |
-|---|---|---|---|
-| **ロケーション** | ブラウザ内 | AWSクラウド | ローカル/サーバー |
-| **スコープ** | オリジン単位 | アカウント単位 | PostgreSQLインスタンス |
-| **永続性** | サイトデータ削除で消去 | 99.999999999% | DB依存 |
-| **アクセス** | Web API (JS) | POSIX/S3 API | SQL |
-| **エージェント型** | ブラウザ内エージェント | クラウドエージェント | ローカルエージェント |
+| Dimension | OPFS | S3 Files | db9 |
+|-----------|------|----------|-----|
+| **Location** | Within browser | AWS cloud | Local/server |
+| **Scope** | Per origin | Per account | PostgreSQL instance |
+| **Persistence** | Cleared on site data deletion | 99.999999999% | DB-dependent |
+| **Access** | Web API (JS) | POSIX/S3 API | SQL |
+| **Agent type** | In-browser agents | Cloud agents | Local agents |
 
 ## Sources
 

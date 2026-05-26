@@ -1,7 +1,7 @@
 ---
 title: "Claude Certified Architect — 5 Domain Knowledge"
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-26
 type: concept
 tags:
   - claude-code
@@ -29,259 +29,260 @@ related:
 
 # Claude Certified Architect — 5 Domain Knowledge
 
-Claude Certified Architect (Foundations) 認定試験の全5ドメインの知識体系。試験はパートナー限定だが、この知識は production-grade な Claude アプリケーション開発に直結する。合格点 720/1000。**決定論的ソリューションを確率論的ソリューションより常に優先**する傾向がある。
+Knowledge system for all 5 domains of the Claude Certified Architect (Foundations) certification exam. While the exam is limited to partners, this knowledge directly applies to production-grade Claude application development. Passing score: 720/1000. **Tends to prioritize deterministic solutions over probabilistic ones.**
 
-6つの主要シナリオで出題: Customer Support Resolution Agent, Code Generation with Claude Code, Multi-Agent Research System, Developer Productivity Tools, Claude Code for CI/CD, Structured Data Extraction。
+Exam scenarios: Customer Support Resolution Agent, Code Generation with Claude Code, Multi-Agent Research System, Developer Productivity Tools, Claude Code for CI/CD, Structured Data Extraction.
 
 ## Domain 1: Agentic Architecture & Orchestration (27%)
 
-### 1.1 Agentic Loop — stop_reason メカニクス
+### 1.1 Agentic Loop — stop_reason Mechanics
 
-エージェントループの完全なライフサイクル:
+Complete lifecycle of the agent loop:
 
 ```
-Messages API にリクエスト送信
-  → stop_reason フィールドを検査
-    → "tool_use": ツール実行 → 結果を会話履歴に追加 → 再度送信
-    → "end_turn": エージェント完了 → 最終レスポンスを提示
+Send request to Messages API
+  → Inspect stop_reason field
+    → "tool_use": Execute tool → add result to conversation history → resend
+    → "end_turn": Agent complete → present final response
 ```
 
-**3つのアンチパターン（試験で即排除すべき）**:
-1. **自然言語による終了判定**: assistant が「I'm done」と言ったかチェック → 曖昧で信頼できない。`stop_reason` フィールドが唯一の正しい手段。
-2. **任意のイテレーション上限**: 「10ループで停止」 → 有用な作業を切断するか、不要なイテレーションを実行。モデルが `stop_reason` で完了をシグナル。
-3. **テキスト内容チェック**: `response.content[0].type == "text"` → モデルは tool_use ブロックと同時にテキストを返すことができる。
+**3 Anti-patterns (should be immediately eliminated in the exam):**
+1. **Natural language termination detection**: Checking if the assistant says "I'm done" → ambiguous and unreliable. The `stop_reason` field is the only correct method.
+2. **Arbitrary iteration limit**: "Stop after 10 loops" → either cuts off useful work or runs unnecessary iterations. The model signals completion via `stop_reason`.
+3. **Text content checking**: `response.content[0].type == "text"` → models can return text simultaneously with tool_use blocks.
 
-**モデル駆動 vs 事前設定**: 試験は柔軟性のためにモデル駆動アプローチを好むが、**クリティカルなビジネスロジックにはプログラム的強制**（1.4参照）。
+**Model-driven vs Pre-configured**: The exam favors model-driven approaches for flexibility, but **programmatic enforcement for critical business logic** (see 1.4).
 
 ### 1.2 Multi-Agent Orchestration — Hub-and-Spoke
 
-コーディネーター中心のハブ＆スポークアーキテクチャ:
+Coordinator-centric hub-and-spoke architecture:
 
-- **コーディネーター**: タスク分解、サブエージェント選択、コンテキスト受け渡し、結果集約、エラー処理、情報ルーティング
-- **サブエージェント**: 特化タスクのスポーク。**互いに直接通信しない**。全通信はコーディネーター経由。
+- **Coordinator**: Task decomposition, sub-agent selection, context passing, result aggregation, error handling, information routing
+- **Sub-agents**: Specialized task spokes. **Do not communicate directly with each other.** All communication is through the coordinator.
 
-**隔離の原則（最も誤解されている概念）**:
-- サブエージェントはコーディネーターの会話履歴を**自動継承しない**
-- サブエージェントは起動間で**メモリを共有しない**
-- 必要な情報はすべて明示的にプロンプトで渡す必要がある
+**Isolation principle (the most misunderstood concept):**
+- Sub-agents **do not automatically inherit** the coordinator's conversation history
+- Sub-agents **do not share memory** between invocations
+- All necessary information must be explicitly passed in the prompt
 
-**狭い分解の失敗（試験固有の問題）**: コーディネーターが「AIのクリエイティブ産業への影響」を視覚芸術のみに分解し、音楽・執筆・映画を完全に見落とす。根本原因はコーディネーターの分解であり、下流エージェントではない。**試験は失敗をその発生源まで追跡することを期待**。
+**Narrow decomposition failure (exam-specific problem)**: The coordinator decomposes "AI's impact on creative industries" into only visual arts, completely overlooking music, writing, and film. Root cause is the coordinator's decomposition, not the downstream agents. **The exam expects you to trace failures to their source.**
 
 ### 1.3 Subagent Invocation — Task Tool & Context Passing
 
-**Task ツール**: コーディネーターからサブエージェントを生成するメカニズム。コーディネーターの `allowedTools` に `"Task"` が含まれている必要がある。各サブエージェントは `AgentDefinition` (description, system prompt, tool restrictions) を持つ。
+**Task Tool**: The mechanism for spawning sub-agents from the coordinator. The coordinator must have `"Task"` included in its `allowedTools`. Each sub-agent has an `AgentDefinition` (description, system prompt, tool restrictions).
 
-**コンテキスト受け渡しの原則**:
-- 先行エージェントの完全な発見結果を直接サブエージェントのプロンプトに含める
-- コンテンツとメタデータ（ソースURL、ドキュメント名、ページ番号）を分離した構造化データ形式を使用
-- 段階的な手順指示ではなく、**研究目標と品質基準**を指定（サブエージェントの適応性を可能にする）
+**Context passing principles:**
+- Include the complete discovery results from preceding agents directly in the sub-agent's prompt
+- Use structured data formats with separated content and metadata (source URL, document name, page number)
+- Specify **research goals and quality standards** rather than step-by-step procedural instructions (enabling sub-agent adaptability)
 
-**並列生成**: 単一のコーディネーターレスポンスで複数の Task ツール呼び出しを発行し、サブエージェントを並列生成。順次呼び出しより高速。
+**Parallel generation**: Issue multiple Task tool calls in a single coordinator response for parallel sub-agent generation. Faster than sequential calls.
 
-**fork_session**: 共有分析ベースラインから独立したブランチを作成。分岐後は各フォークが独立して動作（例: 同じコードベース分析から2つのテスト戦略を比較）。
+**fork_session**: Creates independent branches from a shared analysis baseline. After branching, each fork operates independently (e.g., comparing two testing strategies from the same codebase analysis).
 
-### 1.4 Workflow Enforcement — プログラム的強制 vs プロンプト
+### 1.4 Workflow Enforcement — Programmatic vs Prompt
 
-**強制スペクトラム**:
-| 手法 | 信頼性 | 使用場面 |
-|------|--------|---------|
-| プロンプトベースの指示 | ほとんどの場合動作。非ゼロの失敗率 | 低リスク（フォーマット設定、スタイルガイドライン） |
-| プログラム的強制（Hooks/Gates） | 毎回動作 | **金融・セキュリティ・コンプライアンス** |
+**Enforcement Spectrum:**
 
-**試験の決定ルール**: 結果が**金融・セキュリティ・コンプライアンスに関わる**場合 → プログラム的強制を使用。試験は高リスクシナリオでプロンプトベースの解決策を提示してくる → **拒否せよ**。
+| Method | Reliability | When to Use |
+|--------|------------|-------------|
+| Prompt-based instructions | Works most of the time. Non-zero failure rate | Low risk (formatting, style guidelines) |
+| Programmatic enforcement (Hooks/Gates) | Works every time | **Finance, Security, Compliance** |
 
-**構造化ハンドオフプロトコル**: 人間エージェントへのエスカレーション時:
-- 顧客ID、会話サマリー、根本原因分析、返金額（該当する場合）、推奨アクション
-- 人間エージェントは会話トランスクリプトにアクセス**できない** → ハンドオフサマリーは自己完結型である必要がある
+**Exam decision rule**: If the outcome involves **finance, security, or compliance** → use programmatic enforcement. When the exam presents prompt-based solutions for high-risk scenarios → **reject them**.
 
-**模擬問題例**: カスタマーサポートエージェントが8%のケースで口座所有権確認なしに返金処理。選択肢: A) プログラム的前提条件ゲート, B) 強化システムプロンプト, C) few-shot例, D) ルーティング分類器。**正解はA**。B/C/Dは不十分。
+**Structured handoff protocol**: When escalating to a human agent:
+- Customer ID, conversation summary, root cause analysis, refund amount (if applicable), recommended actions
+- Human agents **cannot access** conversation transcripts → handoff summary must be self-contained
+
+**Sample problem**: A customer support agent processes refunds without account ownership verification in 8% of cases. Options: A) Programmatic precondition gate, B) Enhanced system prompt, C) Few-shot examples, D) Routing classifier. **Correct answer is A.** B/C/D are insufficient.
 
 ### 1.5 Agent SDK Hooks
 
-**PostToolUse フック**: ツール実行後、モデルが処理する前に結果をインターセプト。
-- ユースケース: 異なるMCPツールからの異種データ形式の正規化（Unixタイムスタンプ→ISO 8601、数値ステータスコード→人間可読文字列）
-- モデルはツールに関係なくクリーンで一貫したデータを受け取る
+**PostToolUse Hook**: Intercepts tool results after execution, before the model processes them.
+- Use cases: Normalizing heterogeneous data formats from different MCP tools (Unix timestamps → ISO 8601, numeric status codes → human-readable strings)
+- The model receives clean, consistent data regardless of the tool
 
-**ツール呼び出しインターセプションフック**: 実行前の送信ツール呼び出しをインターセプト。
-- ユースケース: $500超の返金をブロックし人間エスカレーションにリダイレクト
-- ユースケース: コンプライアンスルールの強制（特定操作にマネージャー承認を要求）
+**Tool Call Interception Hook**: Intercepts outgoing tool calls before execution.
+- Use cases: Blocking refunds over $500 and redirecting to human escalation
+- Use cases: Enforcing compliance rules (requiring manager approval for specific operations)
 
-**決定フレームワーク**:
-- Hooks = 決定論的保証。100%遵守が必要なビジネスルールに使用。
-- Prompts = 確率的ガイダンス。設定やソフトルールに使用。
-- 単一の失敗でビジネスが金銭的損失や法的リスクを被る場合 → hooks を使用。
+**Decision framework:**
+- Hooks = deterministic guarantees. Use for business rules requiring 100% compliance.
+- Prompts = probabilistic guidance. Use for configuration and soft rules.
+- If a single failure causes financial loss or legal risk → use hooks.
 
 ### 1.6 Task Decomposition — Sequential vs Adaptive
 
-| パターン | 説明 | 最適な場面 | 利点 | 制限 |
-|---------|------|-----------|------|------|
-| **固定順次パイプライン** | 事前決定された順次ステップ | コードレビュー、ドキュメント処理 | 一貫性、信頼性 | 予期せぬ発見に適応不可 |
-| **動的適応分解** | 各ステップの発見に基づいてサブタスク生成 | オープンエンドな調査タスク | 問題に適応 | 予測可能性が低い |
+| Pattern | Description | Best For | Advantages | Limitations |
+|---------|-------------|----------|------------|-------------|
+| **Fixed Sequential Pipeline** | Pre-determined sequential steps | Code review, document processing | Consistency, reliability | Cannot adapt to unexpected findings |
+| **Dynamic Adaptive Decomposition** | Sub-task generation based on each step's findings | Open-ended research tasks | Adapts to the problem | Lower predictability |
 
-**注意希釈問題**: 単一パスで多数のファイルを処理すると深さが不均一に。
-- 修正: **ファイルごとのローカル分析パス + クロスファイル統合パス**に分割
-- 14ファイルのコードレビューで一部のファイルの明らかなバグを見逃し、同じパターンを別ファイルでは承認・拒否が一貫しない → 原因は単一パスレビューでの注意希釈
+**Attention dilution problem**: Processing many files in a single pass results in uneven depth.
+- Fix: Split into **per-file local analysis pass + cross-file integration pass**
+- Missing obvious bugs in some files during a 14-file code review, while inconsistently accepting/rejecting the same pattern in other files → cause is attention dilution in single-pass review
 
 ### 1.7 Session State & Resumption
 
-| 方法 | 使用タイミング |
-|------|--------------|
-| `--resume <session-name>` | 事前コンテキストがほぼ有効、ファイルに大きな変更なし |
-| `fork_session` | 共有分析ポイントから異なるアプローチを探索 |
-| サマリー注入での新規開始 | ツール結果が古い、ファイルが変更された、長いセッションでコンテキストが劣化 |
+| Method | When to Use |
+|--------|-------------|
+| `--resume <session-name>` | Previous context is mostly valid, no major file changes |
+| `fork_session` | Exploring different approaches from a shared analysis point |
+| New start with summary injection | Tool results are stale, files have changed, long session with degraded context |
 
-**古いコンテキスト問題**: コード修正後に再開する場合、**特定のファイル変更についてエージェントに通知**し、ターゲットを絞った再分析を行う。すべてを再探索させる必要はない。古いツール結果での再開より、サマリー注入での新規開始の方が信頼性が高い。
+**Stale context problem**: When resuming after code modifications, **notify the agent about specific file changes** and perform targeted re-analysis. No need to have it re-explore everything. Starting fresh with summary injection is more reliable than resuming with stale tool results.
 
 ## Domain 2: Tool Design & MCP Integration (18%)
 
-### ツール説明の重要性
+### Importance of Tool Descriptions
 
-ツール説明は Claude がツール選択に使用する**主要なメカニズム**。説明が曖昧または重複していると、選択が信頼できなくなる。
+Tool descriptions are the **primary mechanism** Claude uses for tool selection. If descriptions are vague or overlapping, selection becomes unreliable.
 
-- サンプル問題: `get_customer` と `lookup_order` の説明がほぼ同一で常に誤ルーティング → 修正は better descriptions（few-shot例でも、ルーティング分類器でも、ツール統合でもない）
-- 18個のツールを与えると選択信頼性が低下 → 各サブエージェントの役割に関連する4〜5個のツールにスコープ
+- Sample problem: `get_customer` and `lookup_order` have nearly identical descriptions and constantly mis-route → fix is better descriptions (not few-shot examples, not routing classifiers, not tool consolidation)
+- Giving 18 tools reduces selection reliability → scope to 4-5 tools relevant to each sub-agent's role
 
-### tool_choice オプション
+### tool_choice Options
 
-| オプション | 動作 | 使用タイミング |
-|-----------|------|--------------|
-| `"auto"` | モデルがテキストを返す可能性あり | デフォルト。ツール呼び出しが必須でない場合 |
-| `"any"` | ツール呼び出し必須、モデルが選択 | 何らかのツール使用が必要だが、どれかはモデルに任せる場合 |
-| 強制選択 | 特定のツールの呼び出し必須 | 特定のツール実行が確実に必要な場合 |
+| Option | Behavior | When to Use |
+|--------|----------|-------------|
+| `"auto"` | Model may return text | Default. When tool calls are not required |
+| `"any"` | Tool call required, model chooses | When some tool use is needed but which one is up to the model |
+| Force selection | Must call a specific tool | When a specific tool execution is absolutely required |
 
 ## Domain 3: Claude Code Configuration & Workflows (20%)
 
-### CLAUDE.md 階層（3レベル）
+### CLAUDE.md Hierarchy (3 Levels)
 
-| レベル | 場所 | 特性 |
-|--------|------|------|
-| ユーザーレベル | `~/.claude/CLAUDE.md` | バージョン管理されない、共有されない |
-| プロジェクトレベル | `.claude/CLAUDE.md` | バージョン管理、チーム共有 |
-| ディレクトリレベル | サブディレクトリ内のファイル | ディレクトリバインド |
+| Level | Location | Characteristics |
+|-------|----------|-----------------|
+| User-level | `~/.claude/CLAUDE.md` | Not version-controlled, not shared |
+| Project-level | `.claude/CLAUDE.md` | Version-controlled, team-shared |
+| Directory-level | Files within subdirectories | Directory-bound |
 
-**試験の罠**: チームメンバーがユーザーレベル設定に含まれているため指示を見逃す（バージョン管理されず、共有されない）。
+**Exam trap**: Team members miss instructions because they're in user-level settings (not version-controlled, not shared).
 
-### パス固有ルール（最重要概念）
+### Path-Specific Rules (Most Important Concept)
 
-`.claude/rules/` に YAML frontmatter の glob パターン（例: `**/*.test.tsx`）を持つルールファイル。コードベース全体に規約を適用。ディレクトリレベルの CLAUDE.md ではこれができない（ディレクトリバインド）。
+Rule files in `.claude/rules/` with YAML frontmatter glob patterns (e.g., `**/*.test.tsx`). Apply conventions across the entire codebase. Directory-level CLAUDE.md cannot do this (directory-bound).
 
 ### Plan Mode vs Direct Execution
 
 | Plan Mode | Direct Execution |
 |-----------|-----------------|
-| モノリス再構築、マルチファイル移行、アーキテクチャ決定 | 単一ファイルバグ修正、1つの検証チェック、明確なスコープ |
+| Monolith restructuring, multi-file migration, architecture decisions | Single-file bug fix, one validation check, clear scope |
 
-### その他の重要概念
-- **context: fork** in skill frontmatter（冗長な出力を隔離）
-- **`-p` フラグ**: 非インタラクティブ CI/CD
-- **独立したレビューインスタンス**: 同じセッションでの自己レビューより多くの問題を捕捉
+### Other Important Concepts
+- **context: fork** in skill frontmatter (isolates verbose output)
+- **`-p` flag**: Non-interactive CI/CD
+- **Independent review instance**: Catches more issues than self-review in same session
 
 ## Domain 4: Prompt Engineering & Structured Output (20%)
 
-### 核心原則: Be Explicit
+### Core Principle: Be Explicit
 
-「保守的に」では精度は改善しない。「高信頼度の発見のみ報告」では偽陽性は減らない。
-**機能するもの**: 各重大度レベルの具体的なコード例付きで、報告すべき問題とスキップすべき問題を正確に定義する。
+"Be conservative" does not improve accuracy. "Only report high-confidence findings" does not reduce false positives.
+**What works**: Precisely define what to report and what to skip, with concrete code examples for each severity level.
 
-### Few-Shot Examples（最高レバレッジのテクニック）
+### Few-Shot Examples (Highest Leverage Technique)
 
-2〜4個のターゲット例。曖昧なケース処理を示し、**なぜそのアクションが選択肢より選ばれたかの推論**を含める。
+2-4 targeted examples. Show edge case handling, include **reasoning for why the chosen action was selected over alternatives**.
 
 ### tool_use with JSON Schemas
 
-- 構文エラーは排除されるが、**意味的エラーは排除されない**
-- スキーマ設計のベストプラクティス:
-  - ソースデータが存在しない可能性がある場合は **nullable フィールド**（捏造値を防止）
-  - **"unclear" enum 値**
-  - **"other" + detail 文字列**
+- Syntax errors are eliminated, but **semantic errors are not**
+- Schema design best practices:
+  - **Nullable fields** when source data may not exist (prevents fabricated values)
+  - **"unclear" enum values**
+  - **"other" + detail string**
 
 ### Message Batches API
 
-- 50% コスト削減、最大24時間処理、レイテンシ SLA なし、マルチターンツール呼び出し不可
-- 夜間レポートに Batch、ブロッキングなプレマージチェックに Synchronous
+- 50% cost reduction, up to 24-hour processing, no latency SLA, no multi-turn tool calls
+- Use Batch for nightly reports, Synchronous for blocking pre-merge checks
 
 ## Domain 5: Context Management & Reliability (15%)
 
-### 5.1 Context Preservation — Progressive Summarisation Trap
+### 5.1 Context Preservation — Progressive Summarization Trap
 
-会話履歴の凝縮は**数値、日付、パーセンテージ、顧客期待**を曖昧なサマリーに圧縮する:
-- 「顧客が3月3日の注文 #8891 の $247.83 の返金を希望」→「顧客が最近の注文の返金を希望」
-- **修正**: トランザクションファクトを永続的な「case facts」ブロックに抽出。すべてのプロンプトに含める。**決してサマライズしない**。
+Condensing conversation history compresses **numbers, dates, percentages, and customer expectations** into vague summaries:
+- "Customer wants a refund of $247.83 for order #8891 from March 3rd" → "Customer wants a refund for a recent order"
+- **Fix**: Extract transactional facts into a persistent "case facts" block. Include in every prompt. **Never summarize it.**
 
-### 「Lost in the Middle」効果
+### "Lost in the Middle" Effect
 
-モデルは長い入力の**先頭と末尾**を確実に処理するが、中間に埋もれた発見は見逃される可能性がある。
-- **修正**: キー発見サマリーを先頭に配置。明示的なセクションヘッダーを使用。
+Models reliably process the **beginning and end** of long inputs, but may miss findings buried in the middle.
+- **Fix**: Place key findings summary at the top. Use explicit section headers.
 
-### ツール結果のトリミング
+### Tool Result Trimming
 
-注文検索が40以上のフィールドを返す。必要なのは5つ。
-- コンテキストに追加する**前**に冗長な結果を関連フィールドのみにトリミング
-- 蓄積された無関係なデータによるトークン予算枯渇を防止
+An order search returns 40+ fields. Only 5 are needed.
+- Trim redundant results to only relevant fields **before** adding to context
+- Prevents token budget exhaustion from accumulated irrelevant data
 
 ### 5.2 Escalation Triggers
 
-**3つの有効なエスカレーショントリガー**:
+**3 Valid Escalation Triggers:**
 
-| トリガー | アクション |
-|---------|-----------|
-| 顧客が明示的に人間を要求 | 即座に応じる。先に解決を試みない |
-| ポリシー例外またはギャップ | 文書化されたポリシーの範囲外（例: 自社サイトのみ対象のポリシーに対する競合他社の価格マッチング） |
-| 意味のある進展ができない | エージェントが解決を進められない |
+| Trigger | Action |
+|---------|--------|
+| Customer explicitly requests a human | Respond immediately. Do not try to resolve first |
+| Policy exception or gap | Outside documented policy scope (e.g., competitor price matching against a policy covering only own site) |
+| Inability to make meaningful progress | Agent cannot move resolution forward |
 
-**2つの信頼できないトリガー**（試験が誘惑してくる）:
-1. **感情分析ベースのエスカレーション**: フラストレーションはケースの複雑さと相関しない
-2. **自己報告の信頼度スコア**: モデルは難しいケースで誤って自信過剰、簡単なケースで不確かになりがち
+**2 Unreliable Triggers** (the exam will tempt you with these):
+1. **Sentiment analysis-based escalation**: Frustration does not correlate with case complexity
+2. **Self-reported confidence scores**: Models tend to be overconfident on hard cases and uncertain on easy ones
 
 ### 5.3 Structured Error Propagation
 
-エラー時に渡すべき情報:
-- 失敗タイプ（transient, validation, business, permission）
-- 試行内容（特定のクエリ、使用パラメータ）
-- 失敗前に収集した部分結果
-- 潜在的な代替アプローチ
+Information to pass during errors:
+- Failure type (transient, validation, business, permission)
+- What was attempted (specific queries, parameters used)
+- Partial results collected before failure
+- Potential alternative approaches
 
-**2つのアンチパターン**:
-1. **サイレント抑制**: 空の結果を成功として返す。回復不能。
-2. **ワークフロー終了**: 単一障害でパイプライン全体を強制終了。部分結果を破棄。
+**2 Anti-patterns:**
+1. **Silent suppression**: Returning empty results as success. Non-recoverable.
+2. **Workflow termination**: Forcing entire pipeline shutdown on single failure. Discarding partial results.
 
-**アクセス失敗 vs 有効な空結果**: アクセス失敗（再試行検討）≠ 有効な空結果（それが答え。再試行不要）。
+**Access failure vs Valid empty result**: Access failure (consider retry) ≠ Valid empty result (that is the answer, no retry needed).
 
 ### 5.4 Codebase Exploration & Context Degradation
 
-長時間セッションでのコンテキスト劣化: モデルが以前に発見した特定のクラスではなく「典型的なパターン」を参照し始める。
+Context degradation over long sessions: The model begins referencing "typical patterns" rather than specific classes previously discovered.
 
-**緩和戦略**:
-- **スクラッチパッドファイル**: キー発見をファイルに書き込み、後続の質問で参照
-- **サブエージェント委譲**: 特定の調査にサブエージェントを生成、メインエージェントは高レベル調整を維持
-- **サマリー注入**: 1つのフェーズの発見をサマライズしてから次のフェーズのサブエージェントを生成
-- **/compact**: 冗長な発見出力でコンテキストがいっぱいになった時に使用
+**Mitigation strategies:**
+- **Scratchpad files**: Write key findings to a file, reference in subsequent questions
+- **Sub-agent delegation**: Spawn sub-agents for specific investigations, main agent maintains high-level coordination
+- **Summary injection**: Summarize one phase's findings before spawning the next phase's sub-agent
+- **/compact**: Use when context is full of verbose discovery output
 
-**クラッシュリカバリ**: 各エージェントが構造化状態を既知のファイルロケーション（マニフェスト）にエクスポート。再開時にコーディネーターがマニフェストをロードしエージェントプロンプトに注入。
+**Crash recovery**: Each agent exports structured state to a known file location (manifest). On resumption, the coordinator loads the manifest and injects it into the agent prompt.
 
 ### 5.5 Human Review & Confidence Calibration
 
-**集約メトリクスの罠**: 全体で97%の精度は、特定のドキュメントタイプで40%のエラー率を隠している可能性がある。自動化前に**ドキュメントタイプとフィールドセグメント別**に精度を常に検証。
+**Aggregate metrics trap**: 97% overall accuracy may hide a 40% error rate on specific document types. Always verify accuracy **by document type and field segment** before automation.
 
-**層化ランダムサンプリング**: 高信頼度抽出を継続的検証のためにサンプリング。見過ごされがちな新規エラーパターンを検出。
+**Stratified random sampling**: Sample high-confidence extractions for continuous verification. Detects new error patterns that are easily overlooked.
 
-**フィールドレベル信頼度キャリブレーション**:
-- モデルがフィールドごとに信頼度を出力
-- ラベル付き検証セット（グラウンドトゥルースデータ）を使用してしきい値を較正
-- 低信頼度フィールドを人間レビューにルーティング
-- 限られたレビュアーキャパシティを最も不確実性の高い項目に優先配分
+**Field-level confidence calibration:**
+- Model outputs confidence per field
+- Calibrate thresholds using a labeled validation set (ground truth data)
+- Route low-confidence fields to human review
+- Prioritize limited reviewer capacity toward the highest-uncertainty items
 
 ### 5.6 Information Provenance
 
-**構造化クレーム-ソースマッピング**:
-各発見: クレーム + ソースURL + ドキュメント名 + 関連抜粋 + 公開日
-下流エージェントは合成を通じてこれらのマッピングを保持・マージする。これがないと、サマライゼーション中に属性が消滅する。
+**Structured Claim-Source Mapping:**
+Each finding: claim + source URL + document name + relevant excerpt + publication date
+Downstream agents must preserve and merge these mappings through synthesis. Without this, attribution disappears during summarization.
 
-**競合処理**: 2つの信頼できるソースが異なる統計を報告 → 恣意的に1つを選択しない。両方の値とソース属性を注釈。消費者に判断を委ねる。
+**Conflict handling**: Two reliable sources report different statistics → do not arbitrarily choose one. Annotate with both values and source attributes. Let the consumer decide.
 
-**時間的認識**: 構造化出力に公開/データ収集日を要求。異なる日付が異なる数値を説明する（矛盾ではない）。
+**Temporal awareness**: Require publication/data collection dates in structured output. Different dates explain different numbers (not a contradiction).
 
-**コンテンツ適切レンダリング**: 財務データ→テーブル、ニュース→散文、技術的発見→構造化リスト。すべてを単一の均一フォーマットに平坦化しない。
+**Content-appropriate rendering**: Financial data → tables, news → prose, technical findings → structured lists. Do not flatten everything into a single uniform format.
 
 ## Reference Links from the Article
 

@@ -4,7 +4,7 @@ type: concept
 aliases:
   - vibe-coding
 created: 2026-04-12
-updated: 2026-05-03
+updated: 2026-05-26
 tags:
   - concept
   - agentic-engineering
@@ -17,45 +17,45 @@ sources:
 
 # Vibe Coding
 
-Simon Willisonが定義する、**「コードに一切注目せずにLLMでコードを書く」開発スタイル**。
+A development style defined by Simon Willison as **"coding where you pay no attention to the code at all, using an LLM to write code."**
 
-## 定義
+## Definition
 
 > *"I think of vibe coding using its original definition of coding where you pay no attention to the code at all, which today is often associated with non-programmers using LLMs to write code."*
 
-## Agentic Engineering との対比
+## Comparison with Agentic Engineering
 
-| 次元 | Vibe Coding | Agentic Engineering |
-|------|-------------|---------------------|
-| ユーザー | 非プログラマー | プロフェッショナルエンジニア |
-| 関与度 | コードを一切見ない | 既存知識をエージェントで増幅 |
-| テスト | 省略されがち | 必須（Red/Green TDD） |
-| 目的 | 動くコードを素早く作る | 品質と速度の両立 |
-| 認知負債 | 高くなる傾向 | 意図的に低減 |
+| Dimension | Vibe Coding | Agentic Engineering |
+|-----------|-------------|---------------------|
+| User | Non-programmers | Professional engineers |
+| Engagement | Never looks at code | Amplifies existing knowledge with agents |
+| Testing | Often skipped | Required (Red/Green TDD) |
+| Goal | Make working code quickly | Balance quality and speed |
+| Cognitive debt | Tends to be high | Intentionally reduced |
 
-## Vibe Coding の課題
+## Challenges of Vibe Coding
 
-### 認知負債（Cognitive Debt）
+### Cognitive Debt
 > "When we lose track of how code written by our agents works we take on cognitive debt."
 
-自分で書いているが、内容を理解していないコードが蓄積すると、将来的な機能追加や保守が困難になる。
+When code we wrote but don't understand accumulates, future feature additions and maintenance become difficult.
 
-### 解決策
-- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — エージェントにコード解説を生成させる
-- [[concepts/interactive-explanations]] — 対話的アニメーションでアルゴリズムを理解
-- [[concepts/agentic-manual-testing]] — 実行して動作確認
+### Solutions
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Have the agent generate code explanations
+- [[concepts/interactive-explanations]] — Understand algorithms through interactive animations
+- [[concepts/agentic-manual-testing]] — Execute and verify behavior
 
-## Vibe Coding の価値
+## The Value of Vibe Coding
 
-Simon自身もVibe Codingを否定しているわけではない。むしろ、**~40分のVibe Codingのおもちゃプロジェクトでも、新しいエコシステムを探索する機会になる**と評価。
+Simon himself does not deny the value of Vibe Coding. Rather, he notes that **even a ~40 minute vibe coding toy project can become an opportunity to explore new ecosystems.**
 
 > "Even a ~40 minute vibe coded toy project can become an opportunity to explore new ecosystems and pick up some interesting new tricks."
 
-## 実践事例
+## Practical Cases
 
-### Xe Iaso: Sponsor PanelをVibe Codingで構築（2026年3月）
+### Xe Iaso: Building a Sponsor Panel with Vibe Coding (March 2026)
 
-### Karpathy: MenuGen（2025年4月） — The Original Vibe Coding Case Study
+### Karpathy: MenuGen (April 2025) — The Original Vibe Coding Case Study
 
 Karpathy's own **MenuGen** (menugen.app) is the project that coined the term "vibe coding." 100% built via Cursor + Claude 3.7 -- Karpathy provided high-level direction without writing code directly. A production app with Clerk auth, Stripe payments, OpenAI OCR, and Replicate image generation.
 
@@ -79,180 +79,180 @@ Karpathy's own **MenuGen** (menugen.app) is the project that coined the term "vi
 
 > Source: [[entities/karpathy-writings]] | Raw: raw/articles/2025-04-27_karpathy-vibe-coding-menugen.md
 
-[Xe Iaso](https://xeiaso.net/blog/2026/vibe-coding-sponsor-panel/)がカンファレンス用のsponsor panelをClaude Codeでvibe codingした体験記から、実践的知見が得られる。本プロジェクトは手術前の「最後にどうしても出したい」という切迫感から生まれた。
+[Xe Iaso](https://xeiaso.net/blog/2026/vibe-coding-sponsor-panel/)'s experience report on building a conference sponsor panel with Claude Code using vibe coding provides practical insights. This project was born from the urgency of "I really want to ship this before surgery."
 
-#### 背景: GraphQLの沼
+#### Background: The GraphQL Swamp
 
-GoとGraphQLの組み合わせは相性が悪く、Xeは以前から「GoとGraphQLは水と油」と評していた。`shurcooL/graphql`ライブラリは構造体タグによるリフレクションベースのクエリ生成を必要とし、コード生成ツールは大量のボイラープレートを生み出す。GitHubがGraphQLエクスプローラーを削除したことで状況はさらに悪化し、対話的なスキーマ探索が不可能になった。従来はこの「GraphQLの沼」で毎回挫折していた。
+Go and GraphQL don't go well together, and Xe had long described "Go and GraphQL are like oil and water." The `shurcooL/graphql` library requires struct-tag-based reflection query generation, and code generation tools produce massive boilerplate. GitHub's removal of the GraphQL Explorer made things worse, making interactive schema exploration impossible. Previously, this "GraphQL swamp" had derailed every attempt.
 
-#### ワークフロー
+#### Workflow
 
-1. **ダミーデータからスタート** — 実際のJSON構造が決まる前に、モックアップでUIレイアウトを高速プロトタイピング
-2. **Skills-as-Contextパターン** — 要件をスキル（指示）として書き出し、エージェントがそれらを組み立ててコード生成
-3. **イテレーティブな精緻化** — 動作確認ごとにフィードバック→修正のサイクルで1日で本番相当に到達
-4. **実データに置き換え** — プロトタイプが安定したら、実際のsponsorデータに差し替え
+1. **Start with dummy data** — Rapid UI prototyping with mockups before actual JSON structure is decided
+2. **Skills-as-Context pattern** — Write requirements as skills (instructions), and the agent assembles them to generate code
+3. **Iterative refinement** — Feedback → fix cycle with each verification, reaching production quality in one day
+4. **Replace with real data** — Once prototype stabilizes, swap in actual sponsor data
 
-#### Skillsの具体的内容
+#### Specific Skill Content
 
-Xeは4つのエージェントスキル（`.claude/skills/`に保存）を用意し、Claude Codeのコンテキストに読み込ませた:
+Xe prepared four agent skills (stored in `.claude/skills/`) and loaded them into Claude Code's context:
 
-| スキル | 内容 |
-|--------|------|
-| `templ-syntax` | GoのHTMLテンプレートライブラリTemplの構文（式、条件分岐、ループ） |
-| `templ-components` | 再利用可能なコンポーネントパターン（props, children, composition） |
-| `templ-htmx` | TemplとHTMXの組み合わせに関する注意点（属性レンダリング、イベント処理） |
-| `templ-http` | Templを`net/http`ハンドラに正しく組み込む方法（ルーティング、データ受け渡し、リクエストライフサイクル） |
+| Skill | Content |
+|-------|---------|
+| `templ-syntax` | Go HTML template library Templ syntax (expressions, conditionals, loops) |
+| `templ-components` | Reusable component patterns (props, children, composition) |
+| `templ-htmx` | Notes on combining Templ with HTMX (attribute rendering, event handling) |
+| `templ-http` | How to properly integrate Templ into `net/http` handlers (routing, data passing, request lifecycle) |
 
-TemplはLLMの学習データにほとんど含まれていないライブラリであり、スキルなしでは幻覚だらけのコードが生成されていた。スキルを読み込ませたことで、生成されたTemplコードのほとんどが**初回コンパイルで通過**する品質になった。
+Templ is a library rarely included in LLM training data; without skills, it generated code full of hallucinations. Loading the skills resulted in most generated Templ code **compiling on the first pass**.
 
 > *"Think of it like giving someone a cookbook instead of asking them to invent recipes from first principles."*
 
-#### 並行作業のパターン
+#### Parallel Work Pattern
 
-エージェントチームがコード生成を進める一方で、Xeは以下を並行して実施:
-- GitHub Developer SettingsでOAuth認証情報のプロビジョニング
-- Neon PostgreSQLデータベースの作成
-- Tigrisバケット（スポンサーロゴ保存用）のセットアップ
-- エージェントが認証情報を必要とするたびに即座に提供
+While the agent team proceeded with code generation, Xe worked in parallel on:
+- Provisioning OAuth credentials in GitHub Developer Settings
+- Creating a Neon PostgreSQL database
+- Setting up a Tigris bucket (for sponsor logo storage)
+- Providing credentials to the agent immediately when needed
 
-**Ops作業とコード生成を並列化**することで、待ち時間ゼロの開発フローを実現した。
+**By parallelizing ops work and code generation**, Xe achieved a zero-wait-time development flow.
 
-#### 技術スタック
+#### Tech Stack
 
-| コンポーネント | 採用技術 | 理由 |
-|---------------|---------|------|
-| バックエンド | Go | 既存知識とサイト基盤 |
-| HTMLレンダリング | Templ | `html/template`の制約を回避 |
-| インタラクション | HTMX | シンプルなページにReactは不要 |
-| データベース | PostgreSQL (Neon) | マネージドで運用負荷ゼロ |
-| 認証 | GitHub OAuth | スポンサーAPIとの統合 |
-| スポンサーデータ | GitHub Sponsors GraphQL API | 直接連携 |
-| 画像ストレージ | Tigris | プラグアンドプレイ |
+| Component | Technology | Reason |
+|-----------|-----------|--------|
+| Backend | Go | Existing knowledge and site foundation |
+| HTML Rendering | Templ | Avoids `html/template` constraints |
+| Interactions | HTMX | Simple pages don't need React |
+| Database | PostgreSQL (Neon) | Managed, zero ops overhead |
+| Authentication | GitHub OAuth | Integration with sponsor API |
+| Sponsor Data | GitHub Sponsors GraphQL API | Direct integration |
+| Image Storage | Tigris | Plug and play |
 
-#### 結果
+#### Results
 
-- 従来1週間かかる「足場作り」が**1日で完了**
-- GraphQLコードは生クエリ文字列＋手動JSONパースという「コードレビューに出せない」品質だが、**動く**
-- 「美しいが未公開」より「醜くても公開」を選ぶトレードオフ — 手術前の納品が最優先
-- スポンサーパネルは `sponsors.xeiaso.net` で実働中
+- Traditional "scaffolding" that would take a week was **completed in one day**
+- GraphQL code uses raw query strings + manual JSON parsing — quality "not ready for code review," but **it works**
+- Trade-off: "Beautiful but unpublished" vs "Ugly but published" — pre-surgery delivery was the priority
+- Sponsor panel is live at `sponsors.xeiaso.net`
 
-#### 限界と課題
+#### Limitations and Challenges
 
-- **Orgスポンサーシップは未対応**: 組織スポンサーのスキーマが個人と異なり、別途認証フローが必要
-- **コード品質**: JSONパースが生で、変数名も機能的だが魅力に欠け、エラーコンテキストが不足している箇所もある
-- **セキュリティクリティカルなシステムには不向き**: 一行ごとの監査が必要なものはvibe codingの対象外
-- **6ヶ月後には書き直す予定**: まずは存在することが重要
+- **Org sponsorships not supported**: Org sponsor schema differs from individual, requiring separate auth flow
+- **Code quality**: Raw JSON parsing, functional but uninspired variable names, and some spots lacking error context
+- **Not suitable for security-critical systems**: Not a target for vibe coding when line-by-line audit is needed
+- **Planned rewrite in 6 months**: First, it's important that it exists
 
-#### 教訓
+#### Lessons
 
-- **Skills as code**: 人間は指示（スキル）を書き、エージェントがコードを書く役割分担が効果的。特に学習データに少ないライブラリでは必須
-- **モックアップ→実データの移行**はvibe codingに適したパターン
-- **スコープを限定する**ほど成功率が上がる（特定のUIコンポーネントに集中）
-- **Ops作業とコード生成の並列化**で待ち時間を排除できる
-- 従来の「正しい方法」で何度も挫折したプロジェクトこそ、vibe codingの最大の適用対象
+- **Skills as code**: The division of labor — humans write instructions (skills), agents write code — is effective, especially essential for libraries underrepresented in training data
+- **Mockup → real data migration** is a pattern well-suited to vibe coding
+- **Narrower scope** yields higher success rates (focus on specific UI components)
+- **Parallel ops + code generation** eliminates wait time
+- Projects repeatedly derailed by "correct methods" are prime candidates for vibe coding
 
-### Tim Sh: セルフホスティングでVibe Codingアプリを運用（2026年4月）
+### Tim Sh: Self-hosting a Vibe Coded App (April 2026)
 
-[Tim Sh](https://timsh.org/why-you-should-self-host/)は、5年間で50以上のサービスをデプロイした経験から、vibe codingで作ったアプリのセルフホスティングを推奨している。特に、予算が少なくバックアップのないインディー開発者やvibecoderに適した運用モデルとして提示されている。
+[Tim Sh](https://timsh.org/why-you-should-self-host/) recommends self-hosting vibe-coded apps, drawing on 5 years of deploying 50+ services. This is presented as a suitable operational model especially for indie developers and vibecoders with limited budgets and no backups.
 
-#### 従来のクラウドPaaSの問題点
+#### Problems with Traditional Cloud PaaS
 
-| 問題 | 詳細 |
-|------|------|
-| **従量課金の予測不能性** | 無料/低額で始められるが、トラフィック増加とともに突然高額な請求が発生（"Serverless Horrors"参照） |
-| **抽象化レベルの高さ** | PaaSは「レベル50」の抽象化 — 内部で何が起きているか理解できず、問題発生時のデバッグが困難 |
-| **スケーラビリティの過剰供給** | 大多数のアプリは「1K→1Mユーザー」のスケーリングが必要なく、固定サーバーで十分 |
+| Problem | Details |
+|---------|---------|
+| **Unpredictable usage-based billing** | Starts free/cheap but suddenly expensive with traffic spikes (see "Serverless Horrors") |
+| **High abstraction level** | PaaS is "level 50" abstraction — can't understand what's happening inside, hard to debug when problems arise |
+| **Over-provisioned scalability** | Most apps don't need "1K→1M user" scaling; a fixed server is sufficient |
 
-#### 推奨セットアップ: Coolify + Hetzner VPS
+#### Recommended Setup: Coolify + Hetzner VPS
 
-| 要素 | 詳細 |
-|------|------|
-| **サーバー** | Hetzner VPS（€8/月: 3 vCPU, 4GB RAM, 80GB SSD） |
-| **PaaSレイヤー** | Coolify（オープンソースのセルフホストPaaS） |
-| **デプロイ** | Docker Composeベース、GitHub連携による自動デプロイ |
-| **ネットワーク** | 自動リバースプロキシ（Traefik）+ Let's Encrypt SSL |
-| **通知** | Telegram通知（デプロイ・エラー時の lifesaver） |
+| Element | Details |
+|---------|---------|
+| **Server** | Hetzner VPS (€8/month: 3 vCPU, 4GB RAM, 80GB SSD) |
+| **PaaS Layer** | Coolify (open-source self-hosted PaaS) |
+| **Deploy** | Docker Compose-based, auto-deploy via GitHub integration |
+| **Network** | Automatic reverse proxy (Traefik) + Let's Encrypt SSL |
+| **Notifications** | Telegram notifications (lifesaver for deploy/error alerts) |
 
-Hetznerの€8/月プランは、同等スペックのDigital Ocean（〜$30/月）の約**3.5倍のコスト差**がある。
+Hetzner's €8/month plan offers roughly **3.5x cost difference** compared to Digital Ocean's equivalent spec (~$30/month).
 
-#### Vibe Coderにとっての意義
+#### Significance for Vibe Coders
 
-- **ローカルのvibecodedアプリ → 本番公開**が15分で完了: `localhost:8080` → `https://sub.domain.com`
-- LLMにDocker Composeを生成させるだけでデプロイ可能（Cursor/Claude Codeに頼む）
-- 従量課金ではないため、トラフィックがゼロでも課金が発生しない
-- 「抽象化の自由」: Coolifyの1クリックデプロイ（PaaS相当）から、生のDocker Compose、さらには単一Pythonスクリプト＋systemd timerまで、好きな抽象化レベルを選べる
-- 月間ランチ代以下のコストで運用可能
+- **Local vibecoded app → production** in 15 minutes: `localhost:8080` → `https://sub.domain.com`
+- Deployable just by having the LLM generate Docker Compose (ask Cursor/Claude Code)
+- No usage-based billing — no charges when traffic is zero
+- "Freedom of abstraction": Choose your preferred abstraction level — from Coolify's one-click deploy (PaaS equivalent), to raw Docker Compose, to a single Python script + systemd timer
+- Operable at less than the cost of a monthly lunch
 
 > *"You have your own (vibecoded) app and a very cheap server, and you get from localhost:8080 to https://sub.domain.com in 15 minutes. It feels great."*
 
-#### 適したユーザー像
+#### Suitable User Profiles
 
-- **Vibecoder / インディー開発者**: 予算ゼロから始めて、自分で運用したい
-- **スタートアップCTO**: 会社のツールやインフラを低コストでセットアップしたい
-- **但し、爆発的成長が確実なアプリ**（ユーザー数10倍/日）には従来のサーバーレスが適している場合もある
+- **Vibecoder / Indie developer**: Starting from zero budget, wants to operate on their own
+- **Startup CTO**: Wants to set up company tools and infrastructure at low cost
+- **However**, apps with guaranteed explosive growth (10x users/day) may still be better suited to traditional serverless
 
-## Tim O'Reilly の視点: CHOP パラダイムと歴史的文脈
+## Tim O'Reilly's Perspective: CHOP Paradigm and Historical Context
 
-Tim O'Reilly（O'Reilly Media 創業者）は2025年2月の記事「[The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/)」で、[[entities/tim-oreilly|Vibe Coding]]を**プログラミング抽象化の長い歴史の最新波**として位置づけた。
+Tim O'Reilly (O'Reilly Media founder) positioned [[entities/tim-oreilly|Vibe Coding]] in his February 2025 article "[The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/)" as the latest wave in the long history of programming abstraction.
 
 > Source: [raw/articles/2025-02-04_oreilly-end-of-programming.md](2025-02-04_oreilly-end-of-programming.md)
 
-### 抽象化の歴史的進化
+### Historical Evolution of Abstraction
 
-| 時代 | 抽象化レベル | 結果 |
-|------|-------------|------|
-| 黎明期 | 機械語 → アセンブリ | ハードウェアエンジニアの需要減少 |
-| 高水準言語 | Fortran, COBOL, C, Java | プログラマー増加、需要拡大 |
-| OS革命 | ハードウェアドライバ → API | アプリケーション開発に集中 |
-| Web & Cloud | Stripe, Google Maps API | 「インターネットOS」の誕生 |
-| AI時代 (CHOP) | 自然言語 → コード | プログラマー = デジタル同僚の管理者 |
+| Era | Abstraction Level | Result |
+|-----|-------------------|--------|
+| Early days | Machine code → Assembly | Reduced demand for hardware engineers |
+| High-level languages | Fortran, COBOL, C, Java | More programmers, expanding demand |
+| OS revolution | Hardware drivers → API | Focus on application development |
+| Web & Cloud | Stripe, Google Maps API | Birth of the "Internet OS" |
+| AI era (CHOP) | Natural language → Code | Programmers = managers of digital coworkers |
 
 ### CHOP (Chat-Oriented Programming)
 
-O'Reilly は現在のパラダイムを **CHOP (Chat-Oriented Programming)** と命名。自然言語プロンプトがコード記述に代わる主要インターフェースとなる。
+O'Reilly named the current paradigm **CHOP (Chat-Oriented Programming)**. Natural language prompts become the primary interface, replacing code writing.
 
 > *"The human programmers are their managers. There are now hundreds of thousands of programmers doing this kind of supervisory work. They are already living in a world where the job is creating and managing digital co-workers."*
 
-### Jevons Paradox とプログラミング需要の拡大
+### Jevons Paradox and Expanding Programming Demand
 
-O'Reilly は経済学者 William Jevons のパラドックスを引用 — 石炭効率が向上すると石炭消費が増加したように、AI がプログラミングを効率化すればするほど、ソフトウェアへの需要は**減少ではなく増加**すると主張。
+O'Reilly cites economist William Jevons' paradox — just as coal efficiency increased coal consumption, making programming more efficient with AI will **increase, not decrease**, demand for software.
 
 ### The 70% Problem (Addy Osmani)
 
-[[entities/addy-osmani]] が O'Reilly の記事で紹介した概念。AI はプロジェクトの最初の70%（足場作り、ドキュメント生成）を処理できるが、残りの30%は「ハードに得られたエンジニアリングの叡智」を必要とし、これを怠ると「ハウス・オブ・カードコード」が現実のプレッシャーで崩壊する。
+[[entities/addy-osmani]] introduced this concept in O'Reilly's article. AI can handle the first 70% of a project (scaffolding, documentation generation), but the remaining 30% requires "hard-won engineering wisdom" — neglecting this causes the "house of cards code" to collapse under real-world pressure.
 
-| フェーズ | AI の役割 | 人間の役割 |
-|---------|-----------|-----------|
-| 最初の70% | 足場作り、ドキュメント、プロトタイピング | 方向性の指示、要件定義 |
-| 最後の30% | 限定的（エッジケース対応は困難） | エンジニアリング判断、アーキテクチャ決定、品質保証 |
+| Phase | AI's Role | Human's Role |
+|-------|-----------|--------------|
+| First 70% | Scaffolding, documentation, prototyping | Direction setting, requirements definition |
+| Final 30% | Limited (edge cases are difficult) | Engineering judgment, architecture decisions, quality assurance |
 
-### エージェントエンジニアという新たな役割
+### A New Role: Agent Engineer
 
-O'Reilly は、AI エージェントにビジネスポリシーやプロセスをエンコードすることに特化した **Agent Engineer** という新たな専門職の出現を予見。これは React 開発者がフロントエンドアーキテクチャに特化したのと類似の構図。
+O'Reilly foresees the emergence of a new specialization: the **Agent Engineer**, focused on encoding business policies and processes into AI agents. This parallels how React developers specialized in frontend architecture.
 
-### エージェントインフラストラクチャプロトコルの必要性
+### Need for Agent Infrastructure Protocols
 
-O'Reilly は、エージェントのための標準化されたプロトコル（ウェブにおける HTTPS に相当）の創出を提唱:
-1. 特定のエージェント/ユーザーへのアクションの帰属
-2. エージェント間相互作用の設計
-3. 有害なアクションの検出と修復
+O'Reilly advocates for standardized protocols for agents (analogous to HTTPS for the web):
+1. Attribution of actions to specific agents/users
+2. Design of inter-agent interactions
+3. Detection and remediation of harmful actions
 
-これは後に MCP（Model Context Protocol）、ACP（Agent Communication Protocol）、A2A などの標準として具現化されることになる先駆的枠組み。
+This was a pioneering framework that later materialized as standards like MCP (Model Context Protocol), ACP (Agent Communication Protocol), and A2A.
 
-> *"Computer science is about systematic thinking, not writing code."* — Mehran Sahami, Stanford CS Chair（O'Reilly 記事より引用）
+> *"Computer science is about systematic thinking, not writing code."* — Mehran Sahami, Stanford CS Chair (quoted in O'Reilly article)
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agentic-engineering]] — 対照的な開発スタイル
-- [[concepts/cognitive-debt]] — Vibe Codingの主要リスク
-- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 認知負債を返済する手法
-- [[concepts/claude-code-tips]] — Claude Codeのセットアップガイド
-- [[concepts/self-hosting-ai-development]] — Vibe codingアプリのセルフホスティング
-- [[concepts/mcp]] — エージェント間通信プロトコル（O'Reillyが先駆的に提唱したプロトコル標準化の具現化）
+- [[concepts/agentic-engineering]] — Contrasting development style
+- [[concepts/cognitive-debt]] — Major risk of Vibe Coding
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Method for repaying cognitive debt
+- [[concepts/claude-code-tips]] — Claude Code setup guide
+- [[concepts/self-hosting-ai-development]] — Self-hosting vibe-coded apps
+- [[concepts/mcp]] — Inter-agent communication protocol (materialization of O'Reilly's protocol standardization vision)
 
-## 参照
+## References
 
-- [[entities/simon-willison]] — Vibe Coding vs Agentic Engineeringの提唱者
-- [[entities/xeiaso-net]] — Xe Iaso（実践例の著者）
-- [[entities/tim-oreilly]] — CHOPパラダイムの提唱者、プログラミング抽象化の歴史的文脈
-- [[entities/addy-osmani]] — The 70% Problem、コンダクター→オーケストレーターフレームワーク
+- [[entities/simon-willison]] — Proponent of Vibe Coding vs Agentic Engineering
+- [[entities/xeiaso-net]] — Xe Iaso (author of practical case study)
+- [[entities/tim-oreilly]] — Proponent of the CHOP paradigm, historical context of programming abstraction
+- [[entities/addy-osmani]] — The 70% Problem, Conductor → Orchestrator framework

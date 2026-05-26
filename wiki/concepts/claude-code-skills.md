@@ -1,7 +1,7 @@
 ---
-title: "Claude Code Skills — 機序と役割パターン"
+title: "Claude Code Skills — Mechanism and Role Patterns"
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-26
 type: concept
 tags:
   - claude-code
@@ -22,292 +22,292 @@ related:
 status: active
 ---
 
-# Claude Code Skills — 機序と役割パターン
+# Claude Code Skills — Mechanism and Role Patterns
 
-Claude Code TeamのThariq Shihipar（[[entities/thariq-shihipar]]）がAnthropic社内で数百のSkillsを運用して得た実践知に基づく、Skillsの**機序**（仕組み）の本質と、**9つの役割パターン**への分類。
+Based on practical knowledge gained by Claude Code Team member Thariq Shihipar ([[entities/thariq-shihipar]]) from operating hundreds of Skills within Anthropic — the essence of Skills' **mechanism** and their classification into **9 role patterns**.
 
 > "Skills have become one of the most used extension points in Claude Code. They're flexible, easy to make, and simple to distribute."
 
-## 機序（Mechanism）：Skillsの本質
+## Mechanism: The Essence of Skills
 
-### Skills ≠ Markdownファイル
+### Skills ≠ Markdown Files
 
-最も重要な誤解の解消。Skillsは単なる`.md`ファイルではない:
+The most important misconception to clear up. Skills are not just `.md` files:
 
-- **フォルダである**: スクリプト、アセット、データ、設定ファイルを含むディレクトリ構造
-- **エージェントが発見・探索・操作できる**: Claudeが必要に応じてファイルを読み取り、スクリプトを実行し、データを参照する
-- **動的Hooksの登録**: PreToolUse/PostToolUseフックにより、Skill呼び出し時に限定された行動制約を課せる
+- **They are folders**: Directory structures containing scripts, assets, data, and configuration files
+- **Agent-discoverable, explorable, and operable**: Claude reads files, executes scripts, and references data as needed
+- **Dynamic Hook registration**: PreToolUse/PostToolUse hooks enable scoped behavioral constraints activated during Skill invocation
 
-### ファイルシステム = コンテキストエンジニアリングの媒体
+### Filesystem = Medium for Context Engineering
 
 ```
 skill-name/
-├── SKILL.md              # 必須: YAML frontmatter + 指示本体
-├── references/           # オプション: 詳細リファレンス（progressive disclosure）
-│   └── api.md            # → 必要なときだけClaudeが読み取り
-├── scripts/              # オプション: 実行可能コード
-│   └── fetch_data.py     # → Claudeが実行、結果だけコンテキストに取り込む
-├── assets/               # オプション: テンプレート・画像など
-│   └── template.md       # → 出力フォーマットの雛形
-└── config.json           # オプション: セットアップ状態の永続化
+├── SKILL.md              # Required: YAML frontmatter + body instructions
+├── references/           # Optional: Detailed references (progressive disclosure)
+│   └── api.md            # → Claude reads only when needed
+├── scripts/              # Optional: Executable code
+│   └── fetch_data.py     # → Claude executes, only the result enters context
+├── assets/               # Optional: Templates, images, etc.
+│   └── template.md       # → Output format template
+└── config.json           # Optional: Setup state persistence
 ```
 
-**Progressive Disclosure（段階的開示）**:
-1. **L1**: `name` + `description` → セッション開始時に全Skill一覧として常時注入
-2. **L2**: `SKILL.md`本文 → 関連タスク時にClaudeが自力で読み取り
-3. **L3+**: `references/`以下のファイル → 必要に応じてClaudeが判断して読み取り
+**Progressive Disclosure**:
+1. **L1**: `name` + `description` → Always injected at session start as the full Skill list
+2. **L2**: `SKILL.md` body → Claude reads autonomously when relevant tasks arise
+3. **L3+**: Files under `references/` → Claude judges and reads as needed
 
 > "Tell Claude what files are in your skill, and it will read them at appropriate times."
 
-### コード実行による決定論的操作
+### Deterministic Operations through Code Execution
 
-Scriptsフォルダ内のコードは、トークン生成より決定論的で効率的:
-- ソート・データ処理・フォーム抽出など、コード実行の方が正確
-- Claudeはスクリプト自体をコンテキストに読み込まず、実行結果だけを受け取る
-- 一貫性・再現性の保証
+Code in the `scripts/` folder is more deterministic and efficient than token generation:
+- Sorting, data processing, form extraction — code execution is more accurate
+- Claude reads only the execution result, not the script itself, into context
+- Guarantees consistency and reproducibility
 
-### オンデマンドHooks
+### On-Demand Hooks
 
-Skill呼び出し時にのみ発動し、セッション中継続する動的行動制約:
+Dynamic behavioral constraints that activate only during Skill invocation and persist for the session:
 
-| Hook | 機能 | ユースケース |
-|------|------|-------------|
-| `/careful` | `rm -rf`, `DROP TABLE`, `force-push`, `kubectl delete`をブロック | 本番環境操作時のみ有効化（常時ONは煩わしい） |
-| `/freeze` | 特定ディレクトリ外のEdit/Writeをブロック | 「ログを追加したいのに無関係な箇所を"修正"してしまう」デバッグ時 |
+| Hook | Function | Use Case |
+|------|----------|----------|
+| `/careful` | Blocks `rm -rf`, `DROP TABLE`, `force-push`, `kubectl delete` | Only activate during production operations (always-on is annoying) |
+| `/freeze` | Blocks Edit/Write outside specific directories | Debugging when "trying to add a log but it 'fixes' unrelated places" |
 
-### メモリとデータ永続化
+### Memory and Data Persistence
 
-Skillsは自己の状態をファイルシステムに保存可能:
-- **append-onlyログ**: `standups.log`に過去の投稿履歴 → 次回実行時に差分把握
-- **JSON/SQLite**: 構造化データの保存
-- **`${CLAUDE_PLUGIN_DATA}`**: Skillアップグレード時も消えない安定ストレージパス
+Skills can save their own state to the filesystem:
+- **append-only logs**: `standups.log` stores past post history → enables delta detection on next execution
+- **JSON/SQLite**: Structured data storage
+- **`${CLAUDE_PLUGIN_DATA}`**: Stable storage path that survives Skill upgrades
 
-## 役割パターン（9 Types of Skills）
+## Role Patterns (9 Types of Skills)
 
-Anthropic社内の全Skillをカタログ化した結果、9つの再利用パターンに収束。各Skillは1つの型にきれいに収まるのが理想で、複数にまたがるものは混乱を招く。
+After cataloging all Skills within Anthropic, they converged into 9 reusable patterns. Ideally each Skill fits cleanly into one type — straddling multiple types causes confusion.
 
-### Type 1: Library & API Reference（ライブラリ・API参照）
+### Type 1: Library & API Reference
 
-**目的**: 特定ライブラリ・CLI・SDKの正しい使い方をClaudeに教える。
+**Purpose**: Teach Claude the correct usage of specific libraries, CLIs, and SDKs.
 
-**特徴**:
-- 内部ライブラリのエッジケース・フットガン集
-- リファレンスコードスニペット
-- Claudeが間違えやすいポイントのGotchasセクション
+**Characteristics**:
+- Edge cases and footguns of internal libraries
+- Reference code snippets
+- Gotchas sections highlighting points where Claude tends to err
 
-**例**:
-- `billing-lib` — 社内課金ライブラリのエッジケース・落とし穴
-- `internal-platform-cli` — 社内CLIの全サブコマンドと使用タイミング
-- `frontend-design` — デザインシステムに沿ったUI生成
+**Examples**:
+- `billing-lib` — Edge cases and pitfalls of internal billing library
+- `internal-platform-cli` — All subcommands of internal CLI and when to use them
+- `frontend-design` — UI generation adhering to design system
 
-### Type 2: Product Verification（製品検証）
+### Type 2: Product Verification
 
-**目的**: コードが正しく動作しているかの検証方法を定義。
+**Purpose**: Define verification methods to ensure code works correctly.
 
-**特徴**:
-- Playwright/tmux等の外部ツールと連携
-- プログラムによる状態アサーション
-- 「エンジニアが1週間かけて検証Skillを磨く価値がある」最重要Skillタイプの1つ
-- 動画出力による検証結果の可視化も有効
+**Characteristics**:
+- Integrates with external tools like Playwright/tmux
+- Programmatic state assertions
+- One of the most important Skill types — "worth an engineer spending a week refining a verification Skill"
+- Visualizing verification results through video output is also effective
 
-**例**:
-- `signup-flow-driver` — サインアップ→メール認証→オンボーディングをヘッドレスブラウザで実行、各ステップで状態アサーション
-- `checkout-verifier` — Stripeテストカードで決済UIを操作、請求書が正しい状態かを検証
-- `tmux-cli-driver` — TTYが必要な対話型CLIのテスト
+**Examples**:
+- `signup-flow-driver` — Runs signup → email verification → onboarding in a headless browser, asserting state at each step
+- `checkout-verifier` — Operates payment UI with Stripe test cards, verifies invoice correctness
+- `tmux-cli-driver` — Testing of interactive CLIs requiring TTY
 
-### Type 3: Data Fetching & Analysis（データ取得・分析）
+### Type 3: Data Fetching & Analysis
 
-**目的**: データスタック・監視スタックへの接続と分析ワークフローを提供。
+**Purpose**: Provide connections to data stacks and monitoring stacks with analysis workflows.
 
-**特徴**:
-- 認証情報・ダッシュボードID・クエリパターンを含む
-- 複雑なジョインや集計の定型パターンをカプセル化
+**Characteristics**:
+- Includes credentials, dashboard IDs, and query patterns
+- Encapsulates boilerplate patterns for complex joins and aggregations
 
-**例**:
-- `funnel-query` — 「サインアップ→アクティベーション→課金」のイベント結合方法と正規化user_idテーブル
-- `cohort-compare` — 2コホートのリテンション/コンバージョン比較、統計的有意差フラグ
-- `grafana` — データソースUID、クラスタ名、問題→ダッシュボード対応表
+**Examples**:
+- `funnel-query` — Event joining method for "signup → activation → billing" with normalized user_id table
+- `cohort-compare` — 2-cohort retention/conversion comparison with statistical significance flags
+- `grafana` — Data source UIDs, cluster names, issue → dashboard mapping table
 
-### Type 4: Business Process & Team Automation（業務プロセス・チーム自動化）
+### Type 4: Business Process & Team Automation
 
-**目的**: 繰り返しワークフローを1コマンドに集約。
+**Purpose**: Consolidate repetitive workflows into a single command.
 
-**特徴**:
-- 比較的シンプルな指示だが、他SkillやMCPへの依存あり
-- **過去実行結果のログ保存**が一貫性維持の鍵 — Claudeが自身の履歴を読み取り差分を把握
-- チケットシステム・Slack・GitHub間の連携を定型化
+**Characteristics**:
+- Relatively simple instructions but depends on other Skills or MCP
+- **Logging of past execution results** is key to consistency — Claude reads its own history and detects deltas
+- Standardizes integration between ticket systems, Slack, and GitHub
 
-**例**:
-- `standup-post` — チケットトラッカー + GitHub + Slack履歴からデイリースタンドアップを自動生成
-- `create-<ticket>-ticket` — スキーマ強制（有効なenum値・必須フィールド）+ 作成後フロー（レビュワー通知・Slackリンク）
-- `weekly-recap` — マージ済PR + クローズチケット + デプロイ → 整形レポート
+**Examples**:
+- `standup-post` — Auto-generates daily standup from ticket tracker + GitHub + Slack history
+- `create-<ticket>-ticket` — Schema enforcement (valid enum values, required fields) + post-creation flow (reviewer notification, Slack link)
+- `weekly-recap` — Merged PRs + closed tickets + deployments → formatted report
 
-### Type 5: Code Scaffolding & Templates（コードスキャフォールディング）
+### Type 5: Code Scaffolding & Templates
 
-**目的**: フレームワーク固有のボイラープレート生成。
+**Purpose**: Generate framework-specific boilerplate.
 
-**特徴**:
-- 自然言語の要件を含む足場生成（コードだけでは表現できない）
-- スクリプトとの合成で柔軟性向上
+**Characteristics**:
+- Scaffold generation including natural language requirements (things that can't be expressed in code alone)
+- Increased flexibility through composition with scripts
 
-**例**:
-- `new-<framework>-workflow` — アノテーション付きの新規サービス/ハンドラ生成
-- `new-migration` — マイグレーションファイルのテンプレート + 共通の落とし穴
-- `create-app` — 認証・ログ・デプロイ設定がプリワイヤされた新規アプリ
+**Examples**:
+- `new-<framework>-workflow` — New service/handler generation with annotations
+- `new-migration` — Migration file template + common pitfalls
+- `create-app` — New app with pre-wired auth, logging, deployment config
 
-### Type 6: Code Quality & Review（コード品質・レビュー）
+### Type 6: Code Quality & Review
 
-**目的**: 組織のコード品質基準の強制とレビュー支援。
+**Purpose**: Enforce organizational code quality standards and support reviews.
 
-**特徴**:
-- 決定論的スクリプト/ツールで堅牢性を最大化
-- HooksやGitHub Actionでの自動実行にも適する
-- Claudeがデフォルトで苦手なコードスタイルの強制
+**Characteristics**:
+- Maximize robustness through deterministic scripts/tools
+- Suitable for auto-execution with Hooks or GitHub Actions
+- Enforces code styles Claude defaults to being bad at
 
-**例**:
-- `adversarial-review` — フレッシュなサブエージェントが批判的レビュー→修正実施→指摘が瑣末になるまで繰り返し
-- `code-style` — Claudeがデフォルトで苦手なコードスタイルの強制
-- `testing-practices` — テストの書き方・何をテストすべきかの指示
+**Examples**:
+- `adversarial-review` — Fresh subagent performs critical review → fixes implemented → repeat until criticism becomes trivial
+- `code-style` — Enforces code styles Claude defaults to being bad at
+- `testing-practices` — Instructions on how to write tests and what to test
 
-### Type 7: CI/CD & Deployment（CI/CD・デプロイ）
+### Type 7: CI/CD & Deployment
 
-**目的**: コードの取得・プッシュ・デプロイの自動化。
+**Purpose**: Automate code checkout, push, and deployment.
 
-**特徴**:
-- 他Skillと連携してデータ収集することも
-- 段階的ロールアウト、自動ロールバック、コンフリクト解決
+**Characteristics**:
+- Can also collect data by integrating with other Skills
+- Gradual rollout, automatic rollback, conflict resolution
 
-**例**:
-- `babysit-pr` — PR監視→フレーキーCI再試行→マージコンフリクト解決→自動マージ
-- `deploy-<service>` — ビルド→スモークテスト→段階的トラフィックロールアウト+エラーレート比較→自動ロールバック
-- `cherry-pick-prod` — 分離worktree→チェリーピック→コンフリクト解決→テンプレート付きPR
+**Examples**:
+- `babysit-pr` — PR monitoring → flaky CI retry → merge conflict resolution → auto-merge
+- `deploy-<service>` — Build → smoke test → gradual traffic rollout + error rate comparison → auto-rollback
+- `cherry-pick-prod` — Isolated worktree → cherry-pick → conflict resolution → PR with template
 
-### Type 8: Runbooks（ラン�ック）
+### Type 8: Runbooks
 
-**目的**: 症状（Slack通知・アラート・エラーシグネチャ）からマルチツール調査を経て構造化レポートを生成。
+**Purpose**: From symptoms (Slack notifications, alerts, error signatures) through multi-tool investigation to structured report generation.
 
-**特徴**:
-- 症状→ツール→クエリパターンの対応表
-- オンコールフローの定型化
+**Characteristics**:
+- Symptom → tool → query pattern mapping table
+- Standardized on-call workflows
 
-**例**:
-- `<service>-debugging` — 症状→ツール→クエリパターンの対応表（高トラフィックサービス用）
-- `oncall-runner` — アラート取得→通常の容疑者チェック→所見整形
-- `log-correlator` — リクエストIDから全関連システムのログを横断取得
+**Examples**:
+- `<service>-debugging` — Symptom → tool → query pattern mapping table (for high-traffic services)
+- `oncall-runner` — Alert acquisition → usual suspects check → findings formatting
+- `log-correlator` — Cross-system log retrieval via request ID
 
-### Type 9: Infrastructure Operations（インフラ運用）
+### Type 9: Infrastructure Operations
 
-**目的**: 破壊的操作を含むルーチンメンテナンスのガードレール付き自動化。
+**Purpose**: Guardrailed automation for routine maintenance including destructive operations.
 
-**特徴**:
-- オーファンリソースの安全な特定と段階的クリーンアップ
-- コスト調査の定型クエリパターン
-- エンジニアがベストプラクティスに従いやすくする
+**Characteristics**:
+- Safe identification and gradual cleanup of orphan resources
+- Standardized query patterns for cost investigation
+- Makes it easier for engineers to follow best practices
 
-**例**:
-- `<resource>-orphans` — 孤立Pod/Volumeの検出→Slack通知→浸透期間→ユーザー確認→連鎖クリーンアップ
-- `dependency-management` — 組織の依存関係承認ワークフロー
-- `cost-investigation` — 「ストレージ/エグレス料金が急騰した理由」の調査クエリパターン
+**Examples**:
+- `<resource>-orphans` — Detection of orphaned Pods/Volumes → Slack notification → soak period → user confirmation → cascading cleanup
+- `dependency-management` — Organizational dependency approval workflow
+- `cost-investigation` — Investigation query patterns for "why storage/egress costs spiked"
 
-## 9パターンの全体像
+## Overview of 9 Patterns
 
-| # | 型 | 焦点 | 自動化度 | 外部依存 | メモリ利用 |
-|---|-----|------|---------|---------|-----------|
-| 1 | Library & API Reference | 知識注入 | 低 | 低（静的ファイル） | 不要 |
-| 2 | Product Verification | 品質保証 | 高 | 高（Playwright/tmux） | 中（動画出力） |
-| 3 | Data Fetching & Analysis | データ接続 | 中 | 高（認証・DB） | 中（クエリ結果） |
-| 4 | Business Process | ワークフロー | 高 | 高（チケット・Slack・GitHub） | 高（ログ履歴） |
-| 5 | Code Scaffolding | コード生成 | 中 | 中（フレームワーク） | 不要 |
-| 6 | Code Quality & Review | 品質強制 | 中〜高 | 低（静的解析） | 低 |
-| 7 | CI/CD & Deployment | デプロイ自動化 | 高 | 中（CI/Git） | 中（デプロイ履歴） |
-| 8 | Runbooks | 障害対応 | 中 | 高（監視・ログ） | 中（調査レポート） |
-| 9 | Infrastructure Operations | インフラ保守 | 中 | 中（クラウドAPI） | 高（クリーンアップ履歴） |
+| # | Type | Focus | Automation Level | External Dependencies | Memory Usage |
+|---|------|------|-----------------|----------------------|-------------|
+| 1 | Library & API Reference | Knowledge injection | Low | Low (static files) | Not needed |
+| 2 | Product Verification | Quality assurance | High | High (Playwright/tmux) | Medium (video output) |
+| 3 | Data Fetching & Analysis | Data connectivity | Medium | High (credentials, DB) | Medium (query results) |
+| 4 | Business Process | Workflow automation | High | High (tickets, Slack, GitHub) | High (log history) |
+| 5 | Code Scaffolding | Code generation | Medium | Medium (frameworks) | Not needed |
+| 6 | Code Quality & Review | Quality enforcement | Medium-High | Low (static analysis) | Low |
+| 7 | CI/CD & Deployment | Deployment automation | High | Medium (CI/Git) | Medium (deploy history) |
+| 8 | Runbooks | Incident response | Medium | High (monitoring, logs) | Medium (investigation reports) |
+| 9 | Infrastructure Operations | Infrastructure maintenance | Medium | Medium (cloud API) | High (cleanup history) |
 
-## 設計原則（Tips for Making Skills）
+## Design Principles (Tips for Making Skills)
 
-### 1. 自明なことを書かない（Don't State the Obvious）
+### 1. Don't State the Obvious
 
-Claude Codeはコードベースをよく知っており、Claudeはコーディングのデフォルト意見を持っている。Skillは**Claudeを通常の思考パターンから押し出す情報**に集中する。
+Claude Code knows the codebase well, and Claude has default opinions about coding. Skills should focus on **information that pushes Claude out of its normal thought patterns**.
 
 > "The frontend design skill was built by iterating with customers on improving Claude's design taste, avoiding classic patterns like the Inter font and purple gradients."
 
-### 2. Gotchasセクションが最も高シグナル
+### 2. Gotchas Sections Have the Highest Signal
 
-「Claudeが実際に遭遇した失敗ポイント」を蓄積したGotchasセクションが、Skillの情報価値の大部分を占める。**時間をかけて継続的に更新する**のが理想。
+The Gotchas section, which accumulates "failure points Claude has actually encountered," accounts for most of a Skill's information value. Ideally, **invest time to continuously update it**.
 
-### 3. ファイルシステムによるProgressive Disclosure
+### 3. Progressive Disclosure via Filesystem
 
 > "A skill is a folder, not just a markdown file."
 
-- 詳細な関数シグネチャを `references/api.md` に分離 → 必要なときだけClaudeが読み取る
-- 出力がMarkdownならテンプレートを `assets/` に配置 → コピーして使用
-- Claudeに「どんなファイルがあるか」を伝えれば、適切なタイミングで読み取る
+- Separate detailed function signatures into `references/api.md` → Claude reads only when needed
+- If output is Markdown, place template in `assets/` → Claude copies and uses it
+- Tell Claude "what files exist" and it will read them at appropriate times
 
-### 4. Claudeをレールに嵌めすぎない（Avoid Railroading）
+### 4. Don't Over-Railroad Claude
 
-Skillsは再利用性が高いため、**指示を具体的にしすぎない**。Claudeに必要な情報を与えるが、状況に応じて適応する柔軟性を残す。
+Skills have high reusability, so **don't make instructions too specific**. Give Claude the information it needs, but leave flexibility to adapt to the situation.
 
-### 5. セットアップ設計（Think through the Setup）
+### 5. Think Through the Setup
 
-ユーザー固有の設定が必要なSkill（例: Slackのどのチャンネルに投稿するか）は、`config.json`に保存するパターンが有効:
-- 未設定ならClaudeがユーザーに質問
-- 設定後は再利用
+For Skills requiring user-specific configuration (e.g., which Slack channel to post to), the pattern of saving to `config.json` is effective:
+- If not set, Claude asks the user
+- Once set, it's reused
 
-### 6. Descriptionフィールドはモデル向け
+### 6. Description Field is for the Model
 
-Claude Codeは起動時に全Skillのdescription一覧を構築し、「このリクエストに使えるSkillはあるか」をスキャンする。つまり description は**要約ではなく、トリガー条件の記述**。
+Claude Code builds a list of all Skill descriptions at startup and scans "is there a Skill for this request?" So the description is **not a summary, but a description of trigger conditions**.
 
-### 7. メモリとデータ永続化
+### 7. Memory and Data Persistence
 
-- `standups.log`に過去の全投稿をappend → 次回実行時に差分把握
-- `${CLAUDE_PLUGIN_DATA}` はSkillアップグレード時も消えない安定パス
-- シンプルなログファイルからSQLiteまで、複雑さは任意
+- Append all past posts to `standups.log` → detect deltas on next execution
+- `${CLAUDE_PLUGIN_DATA}` is a stable path that survives Skill upgrades
+- Complexity is optional — from simple log files to SQLite
 
-### 8. スクリプト提供とコード生成
+### 8. Providing Scripts and Code Generation
 
 > "One of the most powerful tools you can give Claude is code."
 
-- データ取得のヘルパー関数群を提供 → Claudeはそれらを合成して高度な分析を実行
-- 「火曜日に何が起きた？」というプロンプトに対し、Claudeがその場でスクリプトを生成・実行
+- Provide helper function groups for data fetching → Claude composes them for advanced analysis
+- For a prompt like "What happened on Tuesday?", Claude generates and executes a script on the fly
 
-### 9. オンデマンドHooks
+### 9. On-Demand Hooks
 
-常時ONだと煩わしいが、時には極めて有用な制約:
-- `/careful` — 本番環境操作時のみ危険コマンドをブロック
-- `/freeze` — デバッグ中、特定ディレクトリ外の編集をブロック
+Annoying when always-on, but occasionally extremely useful constraints:
+- `/careful` — Blocks dangerous commands during production operations
+- `/freeze` — Blocks edits outside specific directories during debugging
 
-## 配布パターン（Distributing Skills）
+## Distribution Patterns
 
-| 方法 | 適する規模 | トレードオフ |
-|------|-----------|-------------|
-| **リポジトリチェックイン** (`./.claude/skills/`) | 小規模チーム・少数リポジトリ | Skillが増えると全員のコンテキストを圧迫 |
-| **Pluginマーケットプレイス** | 大規模組織 | 各開発者が必要なSkillだけインストール可能 |
+| Method | Suitable Scale | Trade-off |
+|--------|---------------|-----------|
+| **Repo check-in** (`./.claude/skills/`) | Small teams, few repos | More Skills compress everyone's context |
+| **Plugin Marketplace** | Large organizations | Each developer installs only needed Skills |
 
-### マーケットプレイス運用
+### Marketplace Operations
 
-- **中央集権的な選定チームは置かない**: 最も有用なSkillを有機的に発見
-- **Sandbox→トラクション→PR→マーケットプレイス**: まずGitHubのsandboxフォルダにアップロードしSlack等で共有。十分なトラクションが得られたらマーケットプレイスへのPR
-- **キュレーションは必須**: 質の低い重複Skillが容易に作れてしまうため、リリース前の審査プロセスが重要
+- **No centralized selection team**: Organically discover the most useful Skills
+- **Sandbox → Traction → PR → Marketplace**: First upload to GitHub sandbox folder, share on Slack etc. Once sufficient traction gained, submit PR to marketplace
+- **Curration is mandatory**: Low-quality duplicate Skills can easily be created, making pre-release review process important
 
-### Skillsの合成（Composing Skills）
+### Composing Skills
 
-依存関係のネイティブ管理はまだないが、他のSkillを名前で参照すればモデルがインストール済みSkillを呼び出す:
-- 「CSV生成Skill」が「ファイルアップロードSkill」を参照
-- モデルが自律的に連鎖実行
+Native dependency management doesn't exist yet, but referencing other Skills by name lets the model call installed ones:
+- "CSV generation Skill" references "file upload Skill"
+- Model autonomously chains execution
 
-### Skillsの計測
+### Measuring Skills
 
-PreToolUseフックでSkill使用状況をログ:
-- 人気Skillの発見
-- 期待より発動が少ない（undertriggering）Skillの特定
+Use PreToolUse hooks to log Skill usage:
+- Discover popular Skills
+- Identify undertriggering Skills (activated less than expected)
 
 ## See Also
 
-- [[concepts/agent-skills-overview]] — Agent Skills 概念クラスターマップ（親ページ）
-- [[concepts/agent-skills]] — Agent Skills オープン標準（Anthropic Engineering）
-- [[concepts/skill-architecture-patterns]] — Self-Authored vs Governed（Hermes Agent vs OpenClaw）
-- [[concepts/agent-harness]] — Agent Harness全体像
+- [[concepts/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
+- [[concepts/agent-skills]] — Agent Skills open standard (Anthropic Engineering)
+- [[concepts/skill-architecture-patterns]] — Self-Authored vs Governed (Hermes Agent vs OpenClaw)
+- [[concepts/agent-harness]] — Agent Harness overview
 - [[concepts/mcp]] — Model Context Protocol
-- [[concepts/claude-code-best-practices]] — Claude Code運用のベストプラクティス
-- [[entities/thariq-shihipar]] — 著者
-- [[concepts/skill-graph]] — Skill Graphアーキテクチャ
+- [[concepts/claude-code-best-practices]] — Claude Code operational best practices
+- [[entities/thariq-shihipar]] — Author
+- [[concepts/skill-graph]] — Skill Graph architecture

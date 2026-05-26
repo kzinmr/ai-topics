@@ -1,6 +1,26 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] translate | JP→EN batch — 8 files
+
+### Files Translated
+- wiki/concepts/_index.md — Complete concept index
+- wiki/concepts/claude-certified-architect-domains.md — Claude Certified Architect 5 domains
+- wiki/concepts/ai-agent-memory-middleware.md — AI Agent Memory Middleware
+- wiki/concepts/llm-patterns-eugene-yan.md — LLM Patterns (Eugene Yan)
+- wiki/concepts/claude-code-skills.md — Claude Code Skills
+- wiki/concepts/model-quantization.md — Model Quantization
+- wiki/concepts/harness-engineering/agentic-workflows/vibe-coding.md — Vibe Coding
+- wiki/comparisons/agent-memory-systems-comparison.md — Agent Memory Systems Comparison
+
+### Stats
+- Total JP chars removed: ~30,217
+- Remaining JP files: 357
+- Remaining JP chars: 283,234
+- Updated all 'updated:' dates to 2026-05-26
+
+---
+
 ## [2026-05-26] update | wiki/index.md Japanese→English Phase 1 complete
 
 Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lines translated, Chinese proper nouns romanized. Verified zero Japanese characters remaining.
