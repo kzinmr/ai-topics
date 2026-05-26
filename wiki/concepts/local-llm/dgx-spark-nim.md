@@ -2,7 +2,7 @@
 title: "DGX Spark (Local LLM Server)"
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-05-26
 tags:
   - local-llm
   - hardware
@@ -28,7 +28,7 @@ sources:
 
 # DGX Spark: Local LLM Server & NemoClaw Setup
 
-**NVIDIA DGX Spark** (Grace Blackwell GB10 Superchip) は、デスクトップサイズのパーソナルAIスーパーコンピュータ。128GBの統一メモリ（CPU/GPU共有）を持ち、最大200Bパラメータのモデル（405Bは2台構成）をローカルで実行可能。
+**NVIDIA DGX Spark** (Grace Blackwell GB10 Superchip) is a desktop-sized personal AI supercomputer. With 128GB of unified memory (CPU/GPU shared), it can run models up to 200B parameters locally (405B in a dual-Spark configuration).
 
 ---
 
@@ -49,13 +49,13 @@ sources:
 | **Form Factor** | 150 × 150 × 50.5 mm, 1.2 kg (2.6 lbs) |
 
 ### Spark Stacking (Clustering)
-2台のDGX SparkをQSFPケーブル（ConnectX-7, 200 Gbps）で接続し、分散推論が可能。RoCE（RDMA over Converged Ethernet）経由でMPI + NCCL v2.28.3による並列推論を実行。
+Two DGX Spark units can be connected via QSFP cable (ConnectX-7, 200 Gbps) for distributed inference. Parallel inference runs via MPI + NCCL v2.28.3 over RoCE (RDMA over Converged Ethernet).
 
 ---
 
 ## NIM (NVIDIA Inference Microservice) Setup
 
-NVIDIA NIMは、DGX Spark上でGPU推論サービスを提供するコンテナ型マイクロサービス。
+NVIDIA NIM is a containerized microservice that provides GPU inference services on the DGX Spark.
 
 ### Prerequisites
 
@@ -122,7 +122,7 @@ curl -X POST http://localhost:8000/v1/chat/completions \
 
 ## NemoClaw Setup on DGX Spark
 
-**NemoClaw**は、OpenClawエージェントをNVIDIA OpenShellランタイム内でセキュアに実行するためのオープンソースリファレンススタック。Landlock + seccomp + netnsによるサンドボックス化、ネットワークポリシー制御、ルーティング済み推論を提供。
+**NemoClaw** is an open-source reference stack for securely running OpenClaw agents within the NVIDIA OpenShell runtime. It provides sandboxing via Landlock + seccomp + netns, network policy control, and routed inference.
 
 ### Prerequisites for NemoClaw
 
@@ -142,7 +142,7 @@ curl -X POST http://localhost:8000/v1/chat/completions \
 curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash
 ```
 
-インストーラーはガイド付きウィザードを実行し、OpenShellゲートウェイの作成、推論プロバイダーの登録、サンドボックスイメージのビルド、セキュリティポリシーの適用を自動的に行う。
+The installer runs a guided wizard that automatically creates an OpenShell gateway, registers inference providers, builds sandbox images, and applies security policies.
 
 ### Post-Install Summary
 
@@ -172,15 +172,15 @@ openclaw agent --agent main --local -m "hello" --session-id test
 
 ### Inference Routing (Local NIM + NemoClaw)
 
-NemoClawのonboardウィザードでは、推論プロバイダーとして **NVIDIA Endpoints**（クラウドAPI）、**OpenAI**、**Anthropic**、**Google Gemini**、および互換OpenAI/Anthropicエンドポイントを選択可能。
+NemoClaw's onboard wizard allows selecting inference providers including **NVIDIA Endpoints** (cloud API), **OpenAI**, **Anthropic**, **Google Gemini**, and compatible OpenAI/Anthropic endpoints.
 
-DGX Spark上のローカルNIMをNemoClawの推論バックエンドとして使用する場合、カスタムOpenAI互換エンドポイントとしてローカルの`http://localhost:8000/v1/`を指定できる。
+To use the local NIM on DGX Spark as NemoClaw's inference backend, specify the local `http://localhost:8000/v1/` as a custom OpenAI-compatible endpoint.
 
 ---
 
 ## Distributed Agent Architecture: exe.dev + DGX Spark
 
-Hermes Agentをexe.dev（クラウドVM）で実行し、DGX Sparkを**推論エンジン兼セキュア実行環境**として利用する分散アーキテクチャ。
+A distributed architecture where Hermes Agent runs on exe.dev (cloud VM) and uses DGX Spark as an **inference engine and secure execution environment**.
 
 ### Architecture Diagram
 
@@ -218,19 +218,19 @@ Hermes Agentをexe.dev（クラウドVM）で実行し、DGX Sparkを**推論エ
 
 | Aspect | Advantage |
 |--------|-----------|
-| **Security** | NemoClawサンドボックス内でエージェントが実行。ファイルシステムは`/sandbox`と`/tmp`に制限。ネットワークアクセスはポリシー制御 |
-| **Privacy** | 推論データが外部クラウドに流出しない。ローカルNIMで完結 |
-| **Performance** | 273 GB/sメモリーバンド幅による低レイテンシー推論（Llama 3.1 8B: ~45 tok/s） |
-| **Cost** | 初期投資 ~$8,000。月間電気代 ~$50。6-12ヶ月でクラウドAPI利用と比較してブレークイーブン |
-| **Flexibility** | Hermes Agentはクラウド側でオーケストレーション・メモリ管理・マルチプラットフォーム連携を担当 |
+| **Security** | Agents run inside NemoClaw sandbox. Filesystem restricted to `/sandbox` and `/tmp`. Network access is policy-controlled |
+| **Privacy** | Inference data never leaks to external cloud. Self-contained on local NIM |
+| **Performance** | Low-latency inference via 273 GB/s memory bandwidth (Llama 3.1 8B: ~45 tok/s) |
+| **Cost** | Initial investment ~$8,000. Monthly electricity ~$50. Breaks even in 6-12 months vs cloud API usage |
+| **Flexibility** | Hermes Agent handles orchestration, memory management, and multi-platform coordination on the cloud side |
 
 ### Setup Flow
 
-1. **DGX Spark側**: NIMをDockerで起動（`docker run -p 8000:8000 ...`）
-2. **DGX Spark側**: NemoClawをインストール（`curl ... nemoclaw.sh | bash`）
-3. **exe.dev側**: Hermes Agentのconfig.yamlで推論プロバイダーをDGX Sparkのエンドポイントに設定
-4. **exe.dev側**: NemoClawサンドボックス内のOpenClawとHermes Agentを連携（ネットワークポリシーで相互アクセスを許可）
-5. **両側**: SSHトンネルまたはTailscaleでセキュア接続を確立
+1. **DGX Spark side**: Launch NIM in Docker (`docker run -p 8000:8000 ...`)
+2. **DGX Spark side**: Install NemoClaw (`curl ... nemoclaw.sh | bash`)
+3. **exe.dev side**: Set inference provider to DGX Spark endpoint in Hermes Agent's config.yaml
+4. **exe.dev side**: Connect OpenClaw inside NemoClaw sandbox with Hermes Agent (allow mutual access via network policies)
+5. **Both sides**: Establish secure connection via SSH tunnel or Tailscale
 
 ### Remote Access via SSH Tunneling
 
@@ -246,7 +246,7 @@ curl http://localhost:8000/v1/chat/completions \
 
 ### NemoClaw Network Policy for External Access
 
-DGX Spark上のNemoClawサンドボックスから外部（exe.dev）へのアクセスを許可するため、ネットワークポリシーにエンドポイントを追加:
+To allow NemoClaw sandbox on DGX Spark to access external services (exe.dev), add the endpoint to the network policy:
 
 ```bash
 nemoclaw my-assistant policy add --endpoint https://api.exe.dev

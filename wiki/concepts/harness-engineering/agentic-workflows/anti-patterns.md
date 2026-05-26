@@ -5,7 +5,7 @@ aliases:
   - anti-patterns
   - agentic-anti-patterns
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-26
 tags:
   - concept
   - agentic-engineering
@@ -16,78 +16,78 @@ sources:
 
 # Anti-patterns in Agentic Engineering
 
-Simon Willisonが警告する**コーディングエージェント使用時のアンチパターン**。特に「レビューされていないコードを他者に押し付ける」行為は深刻な問題。
+**Anti-patterns in coding agent usage** as warned by Simon Willison. The act of "inflicting unreviewed code" on others is a particularly serious problem.
 
-## 最大のアンチパターン: Unreviewed Code Infliction
+## The Biggest Anti-pattern: Unreviewed Code Infliction
 
 > "Don't file pull requests with code you haven't reviewed yourself."
 
-エージェントが生成した数百〜数千行のコードを**自分で検証せずにPRに出す**行為。これは実質的に「実際の作業を他者に委譲している」に等しい。
+Submitting PRs with hundreds to thousands of lines of agent-generated code **without reviewing them yourself**. This is effectively "delegating the actual work to others."
 
-### 問題の本質
-- レビュアーがエージェントの代わりに検証作業を強いられる
-- 開発者としての付加価値がゼロになる
-- チームの信頼とモラルを損なう
+### Core of the Problem
+- Reviewers are forced to do the verification work on behalf of the agent
+- Developer's added value becomes zero
+- Damages team trust and morale
 
-## 良いPRの条件
+## Characteristics of a Good PR
 
-Willisonが定義する**良いアジェンティックエンジニアリングのPR**の特徴:
+Features of **good agentic engineering PRs** as defined by Willison:
 
-### 1. 動作確実性
+### 1. Confidence in Correctness
 > "The code works, and you are confident that it works."
 
-- コードが実際に動作することを自分で確認
-- 自信を持って「動きます」と言える状態
+- Verify the code actually works yourself
+- Be in a state where you can confidently say "it works"
 
-### 2. 適切な変更サイズ
+### 2. Appropriate Change Size
 > "Several small PRs beats one big one."
 
-- 小さな変更に分割
-- レビュアーの認知負荷を考慮
-- エージェントにGit操作を任せて分割コミット
+- Break into small changes
+- Consider reviewer cognitive load
+- Delegate Git operations to the agent for granular commits
 
-### 3. 十分な文脈提供
+### 3. Sufficient Context
 > "Agents write convincing looking pull request descriptions. You need to review these too!"
 
-- 変更の高レベルな目的を説明
-- 関連するIssueや仕様書へのリンク
-- エージェントが書いたPR説明文も自分で検証
+- Explain the high-level purpose of the change
+- Link to related issues or specifications
+- Also verify the PR description written by the agent
 
-### 4. 検証証拠の提示
+### 4. Verification Evidence
 > "Notes on how you manually tested it, comments on specific implementation choices or even screenshots and video of the feature working go a long way."
 
-- 手動テストの方法と結果
-- 特定の実装選択に関するコメント
-- 動作確認のスクリーンショットや動画
+- Manual testing methods and results
+- Comments on specific implementation choices
+- Screenshots or videos of the feature working
 
-## 認知負債との関係
+## Relationship to Cognitive Debt
 
-アンチパターンは即座に**認知負債**を蓄積させる:
-- 理解していないコードがマージされる
-- 将来の保守・修正が困難になる
-- チーム全体の生産性が低下する
+Anti-patterns immediately accumulate **cognitive debt**:
+- Code that nobody understands gets merged
+- Future maintenance and fixes become difficult
+- Overall team productivity declines
 
-## 予防策
+## Prevention
 
-### 開発者の責任
-1. **必ず自分でコードを読む** - エージェントの出力を盲信しない
-2. **テストを実行する** - 動作確認を省略しない
-3. **小さな変更にする** - 一度に大量のコードを変更しない
-4. **文脈を記録する** - なぜこの変更が必要か説明する
+### Developer Responsibilities
+1. **Always read the code yourself** — Don't blindly trust agent output
+2. **Run tests** — Never skip verification
+3. **Make small changes** — Don't change large amounts of code at once
+4. **Document context** — Explain why the change is needed
 
-### レビュアーの権利
-- 検証されていないコードのレビューを拒否する権利
-- 動作確認の証拠を要求する権利
-- 小さく分割されたPRを要求する権利
+### Reviewer Rights
+- Right to refuse reviewing unverified code
+- Right to demand verification evidence
+- Right to demand small, well-segmented PRs
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/cognitive-debt]] — 未検証コードの蓄積が認知負債になる
-- [[concepts/red-green-tdd]] — テスト駆動で品質を確保するアンチパターン回避策
-- [[concepts/agentic-manual-testing]] — 手動テストの重要性
-- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — 小さなコミットに分割する技術
+- [[concepts/cognitive-debt]] — Accumulation of unverified code becomes cognitive debt
+- [[concepts/red-green-tdd]] — TDD as an anti-pattern avoidance strategy
+- [[concepts/agentic-manual-testing]] — Importance of manual testing
+- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Techniques for small atomic commits
 
-## 参照
+## References
 
-- [[entities/simon-willison]] — 概念提唱者
+- [[entities/simon-willison]] — Originator of the concept
 - [Anti-patterns: things to avoid](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/)

@@ -6,7 +6,7 @@ aliases:
   - knowledge-hoarding
   - knowledge-repository
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-26
 tags:
   - concept
   - agentic-engineering
@@ -18,77 +18,77 @@ sources:
 
 # Hoard Things You Know How to Do
 
-Simon Willisonが提唱する**知識の貯蔵と再利用**の概念。エージェント時代において、個人が「どのように行うか知っているか」を記録・蓄積することが強力な武器になる。
+The concept of **hoarding and reusing knowledge** as proposed by Simon Willison. In the agent era, recording and accumulating what you "know how to do" becomes a powerful weapon.
 
-## 核心原則
+## Core Principle
 
 > "Hoard things you know how to do. The more you know how to do, the more you can recombine into new solutions."
 
-開発者が**具体的な実装方法**を知識として蓄積することで、エージェントに指示する際の精度と速度が向上する。
+By accumulating **concrete implementation methods** as knowledge, developers improve the precision and speed of giving instructions to agents.
 
-## 知識の種類
+## Types of Knowledge
 
-### 1. 実装パターン
-- 特定の技術スタックでのベストプラクティス
-- よくある問題の解決方法
-- ライブラリ/APIの使用方法
+### 1. Implementation Patterns
+- Best practices for specific tech stacks
+- Solutions to common problems
+- Library/API usage
 
-### 2. 設定・環境構築
-- 開発環境のセットアップ手順
-- ツールの最適設定
-- デプロイメントパイプライン
+### 2. Configuration & Environment Setup
+- Development environment setup procedures
+- Optimal tool configurations
+- Deployment pipelines
 
-### 3. デバッグ手法
-- 特定のエラーのトラブルシューティング
-- パフォーマンス最適化のテクニック
-- セキュリティ脆弱性の見つけ方
+### 3. Debugging Techniques
+- Troubleshooting specific errors
+- Performance optimization techniques
+- Finding security vulnerabilities
 
-## エージェント時代での価値
+## Value in the Agent Era
 
-### なぜ「知っていること」を貯蔵するのか
+### Why Hoard "Things You Know"
 
-1. **指示の精度向上**
-   - エージェントに対して具体的で正確な指示が出せる
-   - 「あの方法で」という暗黙知が明示的になる
+1. **Improved Instruction Precision**
+   - Give specific, accurate instructions to agents
+   - Tacit knowledge ("that way") becomes explicit
 
-2. **品質判断能力**
-   - エージェントの出力が正しいか判断できる
-   - 認知負債を回避できる（[[concepts/anti-patterns]]参照）
+2. **Quality Judgment**
+   - Can judge whether agent output is correct
+   - Avoid cognitive debt (see [[concepts/anti-patterns]])
 
-3. **再組み合わせの力**
-   - 異なる知識を組み合わせて新しい解決策を創造
-   - エージェントが単独では到達できない洞察
+3. **Power of Recombination**
+   - Combine different knowledge to create new solutions
+   - Insights that agents alone cannot reach
 
-## 実践方法
+## Practical Methods
 
-### 知識の記録
-- **ブログ記事**: 学んだことを文章化
-- **コードスニペット**: 再利用可能なコード片
-- **設定ファイル**: 環境設定のテンプレート
-- **チェックリスト**: 品質保証のための項目
+### Recording Knowledge
+- **Blog posts**: Document what you've learned
+- **Code snippets**: Reusable code fragments
+- **Config files**: Environment setup templates
+- **Checklists**: QA items
 
-### 知識の整理
-- タグ付けとカテゴリ分類
-- 検索可能な形式での保存
-- 定期的な更新と削除（陳腐化した知識）
+### Organizing Knowledge
+- Tagging and categorization
+- Storing in searchable formats
+- Regular updates and deletion of stale knowledge
 
-## Willisonの実践例
+## Willison's Practice
 
-Willison自身が多様なプロジェクト（Datasette、sqlite-utils、llmなど）で培った知識を:
-- ブログ記事として公開
-- GitHubリポジトリでコードとして保存
-- ツールとして実装・共有
+Willison uses knowledge cultivated across diverse projects (Datasette, sqlite-utils, llm, etc.):
+- Published as blog posts
+- Saved as code in GitHub repositories
+- Implemented and shared as tools
 
-これらが彼の**アジェンティックエンジニアリングの基盤**になっている。
+These form the **foundation of his agentic engineering** practice.
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/cognitive-debt]] — 知識がない状態でコードをマージすると負債になる
-- [[concepts/anti-patterns]] — 知識不足がアンチパターンを生む
-- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — 知識が複利的に成長するサイクル
-- [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] — 知識がプロンプトの質を決定する
+- [[concepts/cognitive-debt]] — Merging code without understanding creates debt
+- [[concepts/anti-patterns]] — Knowledge gaps breed anti-patterns
+- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — The compounding knowledge growth cycle
+- [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] — Knowledge determines prompt quality
 
-## 参照
+## References
 
-- [[entities/simon-willison]] — 概念提唱者
+- [[entities/simon-willison]] — Originator of the concept
 - [Hoard things you know how to do](https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know/)

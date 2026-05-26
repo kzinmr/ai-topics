@@ -7,7 +7,7 @@ aliases:
   - egress-proxy
   - secret-injection
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-26
 tags:
   - concept
   - architecture
@@ -20,85 +20,85 @@ sources:
 
 # Agent Security Patterns
 
-エージェントが外部システムと安全に相互作用するための**セキュリティ制御パターン**。OpenAI Responses APIのコンテナ環境で実装されている。
+**Security control patterns** for agents to interact safely with external systems. Implemented in the container environment of OpenAI's Responses API.
 
-## 3層のセキュリティ
+## Three Layers of Security
 
-### 1. サイドカーエグレスプロキシ
+### 1. Sidecar Egress Proxy
 
 ```
 ┌─────────────────────────────────────────────┐
 │  Agent Container                            │
 │  ┌─────────────┐    ┌──────────────────┐    │
-│  │   モデル/    │ →  │  Sidecar Egress  │ →  外部API/インターネット
-│  │  シェルコマンド│    │     Proxy        │    │
+│  │   Model/     │ →  │  Sidecar Egress  │ →  External API/Internet
+│   │   Shell Cmd   │    │     Proxy        │    │
 │  └─────────────┘    └──────────────────┘    │
 │                          │                   │
-│                    ポリシー適用               │
-│                    - ドメイン許可リスト        │
-│                    - アクセス制御             │
-│                    - トラフィック観測         │
+│                    Policy Application         │
+│                    - Domain allowlist         │
+│                    - Access control           │
+│                    - Traffic observation      │
 └─────────────────────────────────────────────┘
 ```
 
-- **すべての**アウトバウンドリクエストが centralized policy layer を通過
-- ドメインベースの許可リストでアクセス制御
-- トラフィックの完全な観測性
+- **All** outbound requests pass through a centralized policy layer
+- Access control via domain-based allowlists
+- Full traffic observability
 
-### 2. ドメインスコープシークレットインジェクション
+### 2. Domain-Scoped Secret Injection
 
-| 場所 | 見えるもの |
+| Location | Sees |
 |------|-----------|
-| **モデル/コンテナ** | プレースホルダー（例: `{{API_KEY}}`） |
-| **エグレスプロキシ** | 実際のシークレット値（許可ドメインにのみ適用） |
+| **Model/Container** | Placeholder (e.g., `{{API_KEY}}`) |
+| **Egress Proxy** | Actual secret value (applied only to permitted domains) |
 
 ```python
-# モデルが使用するプロンプト内
+# Model prompt template
 prompt = "Call the API at https://api.example.com with key: {{API_KEY}}"
 
-# エグレスプロキシが実行時に置換
+# Egress proxy replaces at runtime
 actual_request = "Authorization: Bearer sk-actual-secret-value"
 ```
 
-**利点**:
-- シークレットがモデルコンテキストに露出しない
-- 意図しないデータ流出を防止
-- 許可された宛先にのみ適用
+**Benefits**:
+- Secrets are never exposed in model context
+- Prevents unintended data leakage
+- Only applied to permitted destinations
 
-### 3. ネットワークポリシー
+### 3. Network Policies
 
-- **許可リストベース**: 明示的に許可されたドメインのみアクセス可能
-- **最小権限の原則**: 必要な外部アクセスのみを許可
-- **観測可能性**: すべてのトラフィックを監視・記録
+- **Allowlist-based**: Only explicitly permitted domains accessible
+- **Principle of least privilege**: Only essential external access allowed
+- **Observability**: All traffic monitored and logged
 
-## セキュリティリスクと対策
+## Security Risks and Countermeasures
 
-| リスク | 対策 |
+| Risk | Countermeasure |
 |--------|------|
-| シークレット漏洩 | ドメインスコープインジェクション |
-| 意図しない外部アクセス | エグレスプロキシ + 許可リスト |
-| データ流出 | トラフィック観測 + ポリシー適用 |
-| 内部システムへのアクセス | ネットワーク分離 |
+| Secret leakage | Domain-scoped injection |
+| Unintended external access | Egress proxy + allowlist |
+| Data exfiltration | Traffic observation + policy enforcement |
+| Internal system access | Network isolation |
 
-## 設計哲学
+## Design Philosophy
 
 > "At the same time, giving containers unrestricted internet access can be risky: it can expose information to external websites, unintentionally touch sensitive internal or third-party systems, or make credential leaks and data exfiltration harder to guard against."
 
-OpenAIは「制限されたネットワークアクセス」をデフォルトとし、必要な外部アクセスのみを明示的に許可するアプローチを採用。
+OpenAI adopts "restricted network access" as the default, explicitly permitting only essential external access.
 
-## ベストプラクティス
+## Best Practices
 
-1. **最小権限**: 必要なドメインのみ許可リストに追加
-2. **シークレット分離**: プレースホルダー使用、直接埋め込み禁止
-3. **監視**: すべてのエグレストラフィックを記録
-4. **段階的公開**: 開発→テスト→本番でポリシーを厳格化
+1. **Least privilege**: Only add necessary domains to allowlist
+2. **Secret isolation**: Use placeholders, never embed directly
+3. **Monitoring**: Log all egress traffic
+4. **Progressive exposure**: Tighten policies from dev → test → production
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering/system-architecture/container-context]] — セキュリティ制御が適用される実行環境
-- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — セキュアなコマンド実行
--  — セキュリティ機能を提供する基盤API
-## 参照
+- [[concepts/harness-engineering/system-architecture/container-context]] — Execution environment where security controls are applied
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — Secure command execution
+- [[openai-responses-api-code-execution]] — Foundation API providing security features
+## References
 
 - [OpenAI: Equipping the Responses API with a computer environment](https://openai.com/index/equip-responses-api-computer-environment/)
 - [[entities/openai]] — OpenAI

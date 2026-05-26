@@ -2,7 +2,7 @@
 title: "AIエージェントのアウトカムベース価格モデル"
 type: concept
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-26
 tags:
   - pricing
   - business-model
@@ -17,46 +17,46 @@ related:
   - concepts/enterprise-ai
 ---
 
-# AIエージェントのアウトカムベース価格モデル
+# Outcome-Based Pricing for AI Agents
 
-## 定義
+## Definition
 
-アウトカムベース価格（Outcome-Based Pricing）とは、AI Agentの利用に対して「座席数」や「ライセンス数」ではなく、**実際に達成された成果**に基づいて課金する価格モデルである。AI Agentが人間の代わりに作業を実行する時代において、人間の座席数に紐づく従来のSaaS課金は意味を失いつつある。
+Outcome-Based Pricing is a pricing model that charges based on **actual results achieved** rather than "seats" or "licenses" for AI Agent usage. In an era where AI Agents perform work on behalf of humans, traditional SaaS billing tied to human seat counts is becoming obsolete.
 
-## 従来モデルからの転換
+## Shift from Traditional Models
 
-| 旧モデル | 新モデル |
+| Old Model | New Model |
 |----------|----------|
-| 座席・ログイン単位 | アクション単位 |
-| 画面操作単位 | 解決ケース単位 |
-| ユーザーライセンス | 完了ワークフロー単位 |
-| 固定定額 | 自動化意思決定単位 |
-| — | 削減工数単位 |
-| — | 基本プラットフォーム料金＋従量課金 |
-| — | 基本SaaS料金＋Agent成果報酬 |
+| Per-seat / per-login | Per-action |
+| Per-screen-operation | Per-resolved-case |
+| User license | Per-completed-workflow |
+| Fixed flat-rate | Per-automated-decision |
+| — | Per-labor-hour-saved |
+| — | Base platform fee + usage-based charges |
+| — | Base SaaS fee + Agent success fee |
 
-## 業界事例
+## Industry Examples
 
-- **[[Zendesk]]**: CX業界で初めてAI Agent向けアウトカムベース価格を導入。自律的に解決されたケース件数に応じて課金する。
-- **[[Salesforce Agentforce]]**: Flex Credits、会話ベース課金、ユーザーライセンスなど複数の価格モデルを併用。
-- **[[Bain]]分析**: SaaS企業がAgentic AI時代を生き残るには、ログイン数ではなく成果に基づく価格設定が不可欠と指摘。
+- **[[Zendesk]]**: First in the CX industry to introduce outcome-based pricing for AI Agents. Charges based on autonomously resolved case counts.
+- **[[Salesforce Agentforce]]**: Combines multiple pricing models including Flex Credits, conversation-based billing, and user licenses.
+- **[[Bain]] analysis**: Finds that outcome-based pricing (not per-login) is essential for SaaS companies to survive the Agentic AI era.
 
-## インプリケーション
+## Implications
 
-- **収益が実際のビジネス価値と直結**：顧客の成功がベンダーの収益に直接結びつく構造になる。
-- **堅牢な評価基盤が必須**：成果を正確に計測・検証するインフラが必要。[[agent-evaluation]]や[[observability]]が中核要素となる。
-- **SaaSベンダーのインセンティブが顧客成功と一致**：座席数を増やす動機から、成果を最大化する動機へ転換。
-- **成果の監査・検証の仕組みが必要**：何をもって「解決」「完了」とするかの定義と第三者検証が求められる。
+- **Revenue directly tied to actual business value**: Customer success directly drives vendor revenue.
+- **Robust evaluation infrastructure is essential**: Infrastructure for accurately measuring and verifying outcomes is required. [[agent-evaluation]] and [[observability]] become core components.
+- **SaaS vendor incentives align with customer success**: Shift from motivation to increase seat count to motivation to maximize outcomes.
+- **Mechanisms for auditing and verifying outcomes are needed**: Requires defining what constitutes "resolved" or "completed" and third-party verification.
 
-## リスク
+## Risks
 
-- **収益予測の困難化**：従来の経常収益モデルに比べ、変動性が高く予測が難しい。
-- **高度な課金・計測システムが必要**：複雑な成果定義とリアルタイム計測に対応する[[billing]]インフラが求められる。
-- **成果定義をめぐる紛争リスク**：「解決済み」「完了」の定義をめぐってベンダーと顧客の間で対立が生じる可能性がある。
+- **Revenue forecasting becomes harder**: Higher volatility and more difficult to predict compared to traditional recurring revenue models.
+- **Sophisticated billing and measurement systems required**: [[billing]] infrastructure must handle complex outcome definitions and real-time measurement.
+- **Dispute risk over outcome definitions**: Conflicts may arise between vendors and customers over the definitions of "resolved" and "completed."
 
-## 関連ページ
+## Related Pages
 
-- [[saas-agent-era]] — AI Agent時代のSaaSの構造変化
-- [[service-as-software]] — ソフトウェアからサービス提供への進化
-- [[enterprise-ai]] — エンタープライズAI導入の全体像
-- [[agent-evaluation]] — Agentの評価基盤設計
+- [[saas-agent-era]] — Structural changes in SaaS during the AI Agent era
+- [[service-as-software]] — Evolution from software to service delivery
+- [[enterprise-ai]] — Overview of enterprise AI adoption
+- [[agent-evaluation]] — Agent evaluation infrastructure design
