@@ -23,67 +23,67 @@ related:
 
 # Infrastructure Noise in Agentic Coding Evals
 
-エージェント型コーディングベンチマークにおいて、**インフラ設定の差異だけでスコアが有意に変動する**現象の定量分析。リソース割り当て・時間制限・クラスタ状態といった「隠れた変数」が、モデル能力の測定を歪める。
+Quantitative analysis of how **infrastructure configuration differences alone can cause significant score variation** in agentic coding benchmarks. "Hidden variables" like resource allocation, time limits, and cluster state distort the measurement of model capability.
 
-## 核心的発見
+## Key Findings
 
-> Terminal-Bench 2.0で、最もリソース制約の厳しい設定と無制限設定の間で **6ppの差**（p < 0.01）。
+> On Terminal-Bench 2.0, a **6pp difference** (p < 0.01) between the most resource-constrained and unconstrained settings.
 
-リーダーボードの上位差はしばしば2-3ppであり、インフラ設定の差異がそれを上回る。
+Leaderboard gaps at the top are often 2-3pp, meaning infrastructure configuration differences can exceed them.
 
-## 実験設定
+## Experimental Setup
 
-Terminal-Bench 2.0を6段階のリソース設定で実行:
-- **1x**: タスク指定値 = 保証割り当て = ハード上限（厳格強制）
-- **3x**: 3倍のヘッドルーム
-- **Uncapped**: 完全無制限
+Terminal-Bench 2.0 run across 6 resource configurations:
+- **1x**: Task-specified value = guaranteed allocation = hard cap (strict enforcement)
+- **3x**: 3x headroom
+- **Uncapped**: No limits
 
-同一モデル（Claude）、同一ハーネス、同一タスクセットで比較。
+Comparison with identical model (Claude), same harness, same task set.
 
-## 結果
+## Results
 
-| 設定 | インフラエラー率 | 成功率 | 有意性 |
+| Config | Infra Error Rate | Success Rate | Significance |
 |------|---------------|--------|--------|
-| 1x（厳格） | 5.8% | baseline | — |
-| 3x | 2.1% | noise内 (+1.5pp) | p=0.40 |
+| 1x (strict) | 5.8% | baseline | — |
+| 3x | 2.1% | within noise (+1.5pp) | p=0.40 |
 | Uncapped | 0.5% | **+6pp** | p<0.01 |
 
-### 2つのフェーズ
+### Two Phases
 
-**Phase 1 (1x〜3x)**: インフラ信頼性の改善
-- 一時的なリソーススパイクによる誤OOM-Killを防止
-- スコアはノイズ範囲内（p=0.40）→ 評価を「容易に」はしていない
+**Phase 1 (1x to 3x)**: Infrastructure reliability improvement
+- Prevents false OOM-Kills from temporary resource spikes
+- Score within noise range (p=0.40) → does not make eval "easier"
 
-**Phase 2 (3x〜無制限)**: 評価の性質変化
-- インフラエラー1.6pp減に対し成功率4pp増
-- 大規模依存関係の pull、高負荷サブプロセス、メモリ集約テストが可能に
-- 制約の緩い設定は「効率的戦略」より「リソースを活用できる戦略」を有利にする
+**Phase 2 (3x to unlimited)**: Change in evaluation nature
+- 1.6pp reduction in infrastructure errors vs 4pp increase in success rate
+- Enables large dependency pulls, high-load subprocesses, memory-intensive tests
+- Looser constraints favor "resource-utilizing strategies" over "efficient strategies"
 
-## SWE-bench での再現
+## SWE-bench Reproduction
 
-227タスク×10サンプルでRAM 1x〜5x:
-- 同方向の効果、規模は小さい（+1.54pp at 5x）
-- SWE-benchタスクはリソース集約度が低いため
+227 tasks × 10 samples with RAM 1x to 5x:
+- Same direction effect, smaller magnitude (+1.54pp at 5x)
+- Because SWE-bench tasks are less resource-intensive
 
-## 他の隠れた変数
+## Other Hidden Variables
 
-- **時刻**: APIレイテンシがトラフィックパターンで変動 → 合格率も変動（未定量化）
-- **並列度**: 同時実行数
-- **Egress帯域幅**: ネットワーク速度
-- **ハードウェアスペック**: CPU・ディスクI/O
+- **Time of day**: API latency varies with traffic patterns → pass rates also vary (unquantified)
+- **Concurrency**: Simultaneous execution count
+- **Egress bandwidth**: Network speed
+- **Hardware specs**: CPU, disk I/O
 
-> 「エージェント型評価は構造的にエンドツーエンドのシステムテストであり、システムのどのコンポーネントも交絡因子になり得る」
+> "Agentic evaluation is structurally an end-to-end system test, and any component of the system can be a confounding factor"
 
-## 推奨事項
+## Recommendations
 
-### 評価実行者向け
-- 保証割り当てとハード上限の**両方**をタスクごとに指定（単一値ではない）
-- 上限をfloorのノイズ範囲内に校正（Terminal-Bench 2.0なら3x推奨）
-- 複数時刻・複数日での実行でノイズ平均化
+### For evaluation runners
+- Specify **both** guaranteed allocation and hard cap per task (not a single value)
+- Calibrate the cap within the floor's noise range (3x recommended for Terminal-Bench 2.0)
+- Average out noise by running across multiple times and days
 
-### ベンチマーク消費者向け
-- **3pp未満のリーダーボード差は懐疑的に**（構成未公開なら特に）
-- 単純な二項信頼区間（1-2pp）＋インフラ交絡（〜6pp）= 実効的不確実性は表示以上
+### For benchmark consumers
+- **Be skeptical of leaderboard gaps under 3pp** (especially if configuration is unpublished)
+- Simple binomial confidence interval (1-2pp) + infrastructure confounding (~6pp) = effective uncertainty exceeds what's shown
 
 ## See Also
 

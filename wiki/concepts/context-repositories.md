@@ -22,68 +22,68 @@ related:
 
 # Context Repositories (Git-based Agent Memory)
 
-Context Repositories（コンテキストリポジトリ）は、Lettaが提唱する**Gitベースのエージェントメモリ管理**アーキテクチャ。エージェントのコンテキストをローカルファイルシステムに保存し、Gitでバージョン管理することで、プログラム可能なメモリ操作とマルチサブエージェントの並行作業を可能にする。
+Context Repositories are a **Git-based agent memory management** architecture proposed by Letta. By storing agent context on the local filesystem and versioning it with Git, they enable programmable memory operations and concurrent multi-subagent work.
 
-## 背景
+## Background
 
-従来のエージェントメモリ（MemGPT、メモリツール）の限界:
-- エージェントがメモリ操作に**専用ツール**を使う必要がある → 表現力が制限される
-- 複数サブエージェントの**同時メモリ書き込み**に非対応
-- バージョン管理不在 → 巻き戻し不可
+Limitations of traditional agent memory (MemGPT, memory tools):
+- Agents must use **specialized tools** for memory operations → limited expressiveness
+- No support for **concurrent memory writes** by multiple sub-agents
+- No version control → no rollback capability
 
-## アーキテクチャ
+## Architecture
 
-### 基本原則
+### Basic Principles
 
 ```
-メモリ = ローカルファイルシステム上のファイル
-操作 = ターミナルコマンド + スクリプト（bash, Python）
-バージョン管理 = Git
+Memory = files on the local filesystem
+Operations = terminal commands + scripts (bash, Python)
+Version control = Git
 ```
 
-Unix哲学に従い、エージェントは標準ツール（`grep`, `find`, `cat`, `for` loops）でメモリを操作できる。
+Following Unix philosophy, agents can manipulate memory with standard tools (`grep`, `find`, `cat`, `for` loops).
 
-### プログレッシブ開示 (Progressive Disclosure)
+### Progressive Disclosure
 
 ```
 context-repo/
-├── system/           ← 常にシステムプロンプトに全読み込み
+├── system/           ← Always fully loaded into system prompt
 │   ├── identity.md
 │   └── rules.md
-├── memory/           ← ファイルツリー構造のみプロンプトに表示
-│   ├── user-prefs.md  (frontmatter: description="ユーザー設定")
-│   └── project-x.md   (frontmatter: description="Project Xの学び")
+├── memory/           ← Only file tree structure shown in prompt
+│   ├── user-prefs.md  (frontmatter: description="User preferences")
+│   └── project-x.md   (frontmatter: description="Project X learnings")
 ```
 
-- ファイル階層とファイル名が**ナビゲーションシグナル**として機能
-- 各ファイルのYAML frontmatterに**説明文**
-- `system/` ディレクトリ内のファイルのみ全読み込み
-- エージェント自身がファイルの移動・整理を管理
+- File hierarchy and filenames serve as **navigation signals**
+- Each file's YAML frontmatter contains a **description**
+- Only files in `system/` directory are fully loaded
+- Agents manage their own file organization and movement
 
-### マルチエージェントメモリスワーム
+### Multi-Agent Memory Swarm
 
-- 各サブエージェントに**独立したGitワークツリー**
-- 並行してメモリ処理 → Gitマージで解決
-- 分割統治: 複数サブエージェントが異なる側面から学習
-- 例: `/init` ツールがClaude Code/Codexの履歴から学習
+- **Independent Git worktrees** for each sub-agent
+- Concurrent memory processing → resolved via Git merge
+- Divide and conquer: multiple sub-agents learn from different perspectives
+- Example: `/init` tool learns from Claude Code/Codex history
 
-## 比較: Context Repositories vs 従来手法
+## Comparison: Context Repositories vs Traditional Approaches
 
-| 側面 | Context Repositories | 従来メモリツール | 仮想ファイルシステム |
+| Aspect | Context Repositories | Traditional Memory Tools | Virtual File System |
 |------|---------------------|-----------------|-------------------|
-| 操作手段 | ターミナル + スクリプト | 専用ツール呼び出し | FS操作ツール |
-| 並行性 | Gitマージ | 非対応 | 非対応 |
-| バージョン管理 | ✅ Gitコミット | ❌ | ❌ |
-| プログレッシブ開示 | ファイル階層 + frontmatter | ツール依存 | ディレクトリ構造のみ |
-| プログラム可能性 | 全スクリプト言語 | ツールの範囲内 | ファイル操作の範囲内 |
+| Operation | Terminal + Scripts | Specialized tool calls | FS operation tools |
+| Concurrency | Git merge | Not supported | Not supported |
+| Version control | ✅ Git commit | ❌ | ❌ |
+| Progressive disclosure | File hierarchy + frontmatter | Tool-dependent | Directory structure only |
+| Programmability | All scripting languages | Within tool scope | Within file operation scope |
 
-## 応用
+## Applications
 
-- **トークン空間学習 (Token-Space Learning)**: 過去のエージェント軌跡を再処理して抽象化
-- **継続的学習**: セッションを超えて知識を蓄積
-- **チームメモリ**: 複数開発者のエージェントが知識を共有
+- **Token-Space Learning**: Reprocess and abstract past agent trajectories
+- **Continuous Learning**: Accumulate knowledge across sessions
+- **Team Memory**: Multiple developers' agents share knowledge
 
-## 参照
+## References
 
 - [Introducing Context Repositories — Letta Blog](https://www.letta.com/blog/context-repositories) (2026-02-12)
 - [Effective Context Engineering for AI Agents — Anthropic](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)

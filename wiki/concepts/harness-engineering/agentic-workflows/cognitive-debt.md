@@ -17,81 +17,81 @@ sources:
 
 # Cognitive Debt
 
-AIエージェントが生成したコードの動作理解を失うことで蓄積する**認知的負債**。技術的負債の認知版。[[concepts/vibe-coding]]によって加速度的に増加する。
+**Cognitive debt** accumulates when we lose understanding of how AI-agent-generated code works. It is the cognitive counterpart to technical debt, and is accelerated by [[concepts/vibe-coding]].
 
-## 定義
+## Definition
 
 > "When we lose track of how code written by our agents works we take on cognitive debt."
 
-## 技術的負債との比較
+## Comparison with Technical Debt
 
-| | 技術的負債 | 認知負債 |
+| | Technical Debt | Cognitive Debt |
 |--|-----------|---------|
-| 対象 | コード構造 | 開発者の理解度 |
-| 原因 | 妥協した設計 | エージェント生成コードのブラックボックス化 |
-| 影響 | 保守性低下 | 新機能計画の困難化 |
-| 返済方法 | リファクタリング | 対話的解説・ウォークスルー |
-| 可視化 | コードメトリクス | **Linear Walkthrough** |
+| Object | Code structure | Developer understanding |
+| Cause | Compromised design | Black-boxing of agent-generated code |
+| Impact | Reduced maintainability | Difficulty planning new features |
+| Repayment | Refactoring | Interactive explanations and walkthroughs |
+| Visualization | Code metrics | **Linear Walkthrough** |
 
-## なぜ問題か
+## Why It Matters
 
 > "If the core of our application becomes a black box that we don't fully understand we can no longer confidently reason about it, which makes planning new features harder and eventually slows our progress in the same way that accumulated technical debt does."
 
-Willisonは認知負債を**Vibe Codingの最大の問題**と位置付けている。Vibe Codingでは開発者が「自然言語で依頼→エージェントがコード生成→即デプロイ」のサイクルで作業するため、コードの詳細な動作を理解しないまま累積していく。
+Willison identifies cognitive debt as **the biggest problem with Vibe Coding**. In Vibe Coding, developers work in a cycle of "request in natural language → agent generates code → immediate deploy," accumulating code without understanding its detailed behavior.
 
 > "The problem with vibe-coding is that it leads to cognitive debt."
 
-## 認知負債のメカニズム
+## Cognitive Debt Mechanism
 
-1. **プロンプトで依頼** → エージェントがコード生成
-2. **コードをレビューせずにテスト実行** → 動いているからOK
-3. **次に機能追加時** → 既存コードの動作がわからない
-4. **新しいプロンプトで修正依頼** → さらに理解不能なコードが追加
-5. **ループ継続** → コアアプリケーションがブラックボックス化
+1. **Request via prompt** → agent generates code
+2. **Test without reviewing** → it works, so it's OK
+3. **Next feature addition** → don't understand existing code
+4. **Request fix with new prompt** → even more incomprehensible code added
+5. **Loop continues** → core application becomes a black box
 
-### Vibe CodingとAgentic Engineeringの対比
+### Vibe Coding vs Agentic Engineering
 
 | | Vibe Coding | Agentic Engineering |
 |--|------------|-------------------|
-| 速度 | 最速 | 中程度 |
-| 認知負債 | **高く累積** | 管理・返済 |
-| テスト | なし or 最小限 | 体系的 |
-| 品質 | 低（長期的） | 高 |
-| 持続性 | 短期的 | 長期的 |
+| Speed | Fastest | Moderate |
+| Cognitive debt | **Accumulates heavily** | Managed and repaid |
+| Testing | None or minimal | Systematic |
+| Quality | Low (long-term) | High |
+| Sustainability | Short-term | Long-term |
 
 > "The key distinction between vibe-coding and agentic engineering: vibe coding produces speed at the cost of cognitive debt, agentic engineering manages that debt."
 
-## 返済方法
+## Repayment Methods
 
-### 1. [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 構造化コード解説
-Willisonが自作したCLIツールで、コードの処理フローをツリー表示し、どの関数がどのパスで呼ばれるかを**視覚的に理解可能**にする。
+### 1. [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Structured code explanation
+A CLI tool Willison built himself that displays code processing flow as a tree, making it **visually understandable** which functions are called through which paths.
 
 ```
 $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 ```
 
-### 2. [[concepts/interactive-explanations]] — 対話的アニメーション
-ブラウザ上でコードの動作をステップ実行し、変数の変化をリアルタイムで可視化する。
+### 2. [[concepts/interactive-explanations]] — Interactive animations
+Step through code execution in the browser, visualizing variable changes in real-time.
 
-### 3. [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — 実行による動作確認
-[[concepts/harness-engineering/agentic-workflows/rodney]]等のCLIブラウザツールで実際にUIをテストし、エージェントが生成した機能が本当に動くかを検証。
+### 3. [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — Verification through execution
+Test the actual UI using CLI browser tools like [[concepts/harness-engineering/agentic-workflows/rodney]] to verify that agent-generated features actually work.
 
-### 4. [[concepts/showboat]] — テストの記録と共有
-検証結果をMarkdownドキュメントとして保存し、チーム全員が確認できるようにする。
+### 4. [[concepts/showboat]] — Recording and sharing tests
+Save verification results as Markdown documents so the entire team can review.
 
-## 返済サイクル
+## Repayment Cycle
 
-認知負債の返済は**一度きりではない**。Agentic Engineeringでは継続的な返済サイクルが必要:
+Cognitive debt repayment is **not a one-time event**. Agentic Engineering requires a continuous repayment cycle:
 
 ```
-コード生成 → テスト → Linear Walkthroughで理解 → 
-  不明点を対話的解説で深掘り → 検証結果をShowboatで記録 → 
-    次のコード生成
+Code generation → Test → Understand via Linear Walkthrough → 
+  Deep-dive unclear points with interactive explanations → Record verification in Showboat → 
+    Next code generation
 ```
 
-## 参照
-- [[entities/simon-willison]] — 概念提唱者
-- [[concepts/vibe-coding]] — 認知負債の主要発生源
-- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 主要な返済ツール
-- [[concepts/interactive-explanations]] — 対話的理解ツール
-- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — 検証ツール
+## References
+- [[entities/simon-willison]] — Originator of the concept
+- [[concepts/vibe-coding]] — Primary source of cognitive debt
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Primary repayment tool
+- [[concepts/interactive-explanations]] — Interactive understanding tool
+- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — Verification tool

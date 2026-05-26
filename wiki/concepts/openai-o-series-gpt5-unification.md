@@ -1,5 +1,5 @@
 ---
-title: "OpenAI o-series → GPT-5 統合 (2024-2025)"
+title: "OpenAI o-series → GPT-5 Unification (2024-2025)"
 created: 2026-05-13
 updated: 2026-05-13
 type: concept
@@ -9,47 +9,47 @@ sources: ["https://openai.com/index/introducing-gpt-5/", "https://x.com/sama/sta
 ---
 
 
-# OpenAI o-series → GPT-5 統合 (2024-2025)
+# OpenAI o-series → GPT-5 Unification (2024-2025)
 
-2024年9月に始まったOpenAIの推論特化型「oシリーズ」モデルラインは、2025年2月のSam Altmanによるロードマップ転換を経て、2025年8月の**GPT-5**でGPTシリーズに統合された。o3はスタンドアロンモデルとしてキャンセルされ、GPT-5の「Thinking」モードとして吸収された。
+OpenAI's reasoning-specialized "o-series" model line, which began in September 2024, underwent a roadmap shift by Sam Altman in February 2025 and was unified into the GPT series with **GPT-5** in August 2025. o3 was canceled as a standalone model and absorbed as GPT-5's "Thinking" mode.
 
-## フェーズ別タイムライン
+## Timeline by Phase
 
-### Phase 1: oシリーズ誕生 (2024年9月〜12月)
+### Phase 1: o-series Launch (Sep-Dec 2024)
 
-| 日付 | イベント |
+| Date | Event |
 |------|----------|
-| **Sep 12, 2024** | **o1-preview & o1-mini** リリース — 初の「推論モデル」。大規模RLで内部CoTを生成（コード名「Strawberry」） |
-| **Dec 5, 2024** | **o1 正式版** リリース — 34%エラー削減、画像入力対応 |
-| **Dec 20, 2024** | **o3 & o3-mini** 発表 — 12 Days of OpenAI でプレビュー（o2 skip はO2商標回避のため） |
+| **Sep 12, 2024** | **o1-preview & o1-mini** released — first "reasoning models." Generate internal CoT via large-scale RL (codename "Strawberry") |
+| **Dec 5, 2024** | **o1 full release** — 34% error reduction, image input support |
+| **Dec 20, 2024** | **o3 & o3-mini** announced — previewed during 12 Days of OpenAI (o2 skipped to avoid O2 trademark) |
 
-### Phase 2: 拡大と路線転換 (2025年1月〜4月)
+### Phase 2: Expansion and Pivot (Jan-Apr 2025)
 
-| 日付 | イベント |
+| Date | Event |
 |------|----------|
-| **Jan 31, 2025** | **o3-mini** リリース — 無料ユーザーに初の推論モデル提供 |
-| **Feb 2, 2025** | **Deep Research** ローンチ — o3ベースのエージェント機能 |
-| **🔴 Feb 12, 2025** | **ロードマップ転換**: Sam Altman が GPT-5 統合を発表。o3 スタンドアロン出荷キャンセル |
-| **Feb 27, 2025** | **GPT-4.5 (Orion)** — 「最後のnon-chain-of-thoughtモデル」 |
-| **Apr 16, 2025** | **o3 & o4-mini** フルリリース — 自律的ツール使用、マルチモーダル推論、画像思考対応 |
+| **Jan 31, 2025** | **o3-mini** released — first reasoning model available to free users |
+| **Feb 2, 2025** | **Deep Research** launched — o3-based agent capabilities |
+| **🔴 Feb 12, 2025** | **Roadmap pivot**: Sam Altman announces GPT-5 unification. o3 standalone shipment canceled |
+| **Feb 27, 2025** | **GPT-4.5 (Orion)** — "The last non-chain-of-thought model" |
+| **Apr 16, 2025** | **o3 & o4-mini** full release — autonomous tool use, multimodal reasoning, image thinking |
 
-### Phase 3: 吸収と統合 (2025年6月〜8月)
+### Phase 3: Absorption and Unification (Jun-Aug 2025)
 
-| 日付 | イベント |
+| Date | Event |
 |------|----------|
-| **Jun 10, 2025** | **o3-pro** リリース — 最終のスタンドアロンoシリーズ |
-| **Aug 6, 2025** | **GPT-OSS** — Apache 2.0ライセンスのオープンウェイト推論モデル (120B) |
-| **🔴 Aug 7, 2025** | **GPT-5 ローンチ** — GPT + oシリーズ統合完了。o3 はChatGPTモデルピッカーから削除 |
-| **Aug 12, 2025** | o3 部分的復活 — ユーザー反発を受け「追加モデルを表示」トグルで復活 |
+| **Jun 10, 2025** | **o3-pro** released — final standalone o-series model |
+| **Aug 6, 2025** | **GPT-OSS** — Apache 2.0 licensed open-weight reasoning model (120B) |
+| **🔴 Aug 7, 2025** | **GPT-5 launch** — GPT + o-series unification complete. o3 removed from ChatGPT model picker |
+| **Aug 12, 2025** | o3 partial revival — restored via "Show additional models" toggle after user backlash |
 
-### Phase 4: 急速なGPT-5.x イテレーション
+### Phase 4: Rapid GPT-5.x Iteration
 
-| 日付 | イベント |
+| Date | Event |
 |------|----------|
-| **Sep 30, 2025** | **GPT-5.1** — 設定可能な推論努力レベル |
-| **Dec 11, 2025** | **GPT-5.2** — プロフェッショナル向け最上位モデル |
+| **Sep 30, 2025** | **GPT-5.1** — Configurable reasoning effort levels |
+| **Dec 11, 2025** | **GPT-5.2** — Top-tier professional model |
 
-## Sam Altman の声明 (Feb 12, 2025)
+## Sam Altman's Statement (Feb 12, 2025)
 
 > *"A top goal for us is to unify o-series models and GPT-series models by creating systems that can use all our tools, know when to think for a long time or not, and generally be useful for a very wide range of tasks."*
 >
@@ -57,28 +57,28 @@ sources: ["https://openai.com/index/introducing-gpt-5/", "https://x.com/sama/sta
 >
 > *"We hate the model picker... We want AI to 'just work' for you; we realize how complicated our model and product offerings have gotten."*
 
-## GPT-5 アーキテクチャ
+## GPT-5 Architecture
 
-GPT-5は**3コンポーネント統合システム**:
+GPT-5 is a **3-component unified system**:
 
-1. **GPT-5 Main** — 高速・効率的な応答（GPT-4o/4.5系譜）
-2. **GPT-5 Thinking** — 深い推論が必要な場合（o3/o3-pro系譜、内部CoT）
-3. **リアルタイムルーター** — 会話タイプ・複雑さ・ツール必要性・ユーザー意図に基づき、どのバックエンドを使うか自動判断
+1. **GPT-5 Main** — Fast, efficient responses (GPT-4o/4.5 lineage)
+2. **GPT-5 Thinking** — When deep reasoning is needed (o3/o3-pro lineage, internal CoT)
+3. **Real-time Router** — Automatically determines which backend to use based on conversation type, complexity, tool requirements, and user intent
 
-## 統合の戦略的理由
+## Strategic Rationale for Unification
 
-- モデルピッカーが複雑化しすぎていた（Pro ユーザーは最大10種類のモデル選択肢）
-- **DeepSeek R1** (Jan 2025) の登場でオープン推論モデルとの競争が激化
-- 「AIは "just work" すべき」という製品哲学の転換
+- The model picker had become overly complex (Pro users faced up to 10 model choices)
+- **DeepSeek R1** (Jan 2025) intensified competition with open reasoning models
+- A product philosophy shift toward "AI should just work"
 
-## oシリーズの現在のステータス
+## Current Status of o-series
 
-- ChatGPT 無料/Plus: GPT-5システムに統合（o3 は隠しトグルで利用可能）
-- API: o3, o3-mini, o3-pro, o4-mini は引き続き提供
-- Azure OpenAI ドキュメント: GPT-5シリーズと並んでoシリーズを「推論モデル」として記載
+- ChatGPT Free/Plus: Integrated into GPT-5 system (o3 available via hidden toggle)
+- API: o3, o3-mini, o3-pro, o4-mini continue to be available
+- Azure OpenAI documentation: o-series listed as "reasoning models" alongside GPT-5 series
 
-## 関連概念
+## Related Concepts
 
-- [[rlvr]] — o1/o3の基盤となったRL訓練パラダイム
-- [[grpo]] — o3で使用されたRL最適化アルゴリズム
-- [[deepseek-r1]] — 統合を加速させた競合オープンモデル
+- [[rlvr]] — RL training paradigm that underpinned o1/o3
+- [[grpo]] — RL optimization algorithm used in o3
+- [[deepseek-r1]] — Competing open model that accelerated unification
