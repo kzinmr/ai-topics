@@ -16,309 +16,309 @@ sources:
 
 # Learning LLMs in 2025
 
-> **Yoav Goldberg**（著名NLP研究者、著書『Neural Network Methods for NLP』）によるLLM学習のための**精選カリキュラム集**。Transformerの仕組みと基本的なML/DLを知っている学習者が、**MLアルゴリズム以外のLLMの側面**（アーキテクチャ、データ、アライメント、評価、安全性、人間中心設計）を深く学ぶためのアカデミックリソースを厳選している。
+> **Yoav Goldberg** (renowned NLP researcher, author of *Neural Network Methods for NLP*) has curated a **selective curriculum collection** for learning LLMs. Targeted at learners who already understand Transformer internals and basic ML/DL, this guide carefully selects academic resources for deeply studying **LLM aspects beyond ML algorithms** (architecture, data, alignment, evaluation, safety, human-centered design).
 >
-> これは概念そのものではなく、**メタ知識／知識マップ**であり、学習の羅針盤として機能する。
+> This is not a concept per se, but **meta-knowledge / a knowledge map** — it functions as a learning compass.
 
 ---
 
-## ガイドの特徴
+## Guide Characteristics
 
-Yoav のガイドは以下の点でユニーク：
+Yoav's guide is unique in the following ways:
 
-1. **非MLアルゴリズム重視** — 最適化やRLの教科書は多いが、LLMの「それ以外の面白い部分」を集めた唯一のガイド
-2. **アカデミック厳選** — MIT/Stanford/Princeton/CMU/Berkeley/JHU/NYUなどのトップ大学のコースのみ
-3. **学習者前提** — Transformerと基本ML/DLは既知としてスタート（中級〜上級者向け）
-4. **Yoav Goldbergの信頼性** — NLP分野の第一人者による品質担保
-
----
-
-## 📚 リソース評価一覧
-
-各リソースについて、**品質**（Yoavの推薦という前提で＋α評価）、**アクセス性**（教材本文に無料でアクセスできるか）、**関連性**（カバーするLLM領域）、**新鮮度**を総合評価。
-
-凡例: 🟢 優れている／🔵 良好／🟡 一部制限あり／⚪ 要検討
+1. **Non-ML Algorithm Focus** — While there are many textbooks on optimization and RL, this is the only guide collecting "the other interesting parts" of LLMs
+2. **Academic Curation** — Only courses from top universities such as MIT/Stanford/Princeton/CMU/Berkeley/JHU/NYU
+3. **Learner Prerequisites** — Starts from the assumption that Transformers and basic ML/DL are already known (intermediate to advanced learners)
+4. **Yoav Goldberg's Credibility** — Quality assurance from a leading figure in NLP
 
 ---
 
-### 📖 コース（フル）
+## 📚 Resource Evaluation List
 
-#### 1. David Chiang — Theory of Neural Networks（ノートルダム大, 2024秋）
+Each resource is comprehensively evaluated on **quality** (beyond Yoav's recommendation), **accessibility** (whether course materials are freely accessible), **relevance** (which LLM areas it covers), and **freshness**.
 
-| 項目 | 評価 | 備考 |
+Legend: 🟢 Excellent / 🔵 Good / 🟡 Partial limitations / ⚪ Needs consideration
+
+---
+
+### 📖 Courses (Full)
+
+#### 1. David Chiang — Theory of Neural Networks (Notre Dame, Fall 2024)
+
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🔵 高い | 形式的／理論寄り。「本に近い」とYoav自身が認める。Transformersの章は充実。 |
-| **アクセス性** | 🟢 完全公開 | 全スケジュール、課題、プロジェクトがサイトに公開。Notre Dameの制限なし。 |
-| **関連性** | ⚪ 部分的 | LLM特化ではない。Transformerを**ニューラルネットの理論**として捉える。オートマトン・チューリングマシン・論理との関係が主題。 |
-| **新鮮度** | 🟢 2024 | 2024年最新、State-space modelsのセクションもあり。 |
-| **形式** | 講義＋課題＋プログラミングプロジェクト | 理論重視で実装はやや少なめ。 |
-| **おすすめ度** | ⚪ **特定の志向向け** | 理論計算機科学とニューラルネットの接点に興味がある人に。LLMの「作り方」より「原理」を知りたい人向け。 |
+| **Quality** | 🔵 High | Formal/theory-oriented. "Almost like a book," as Yoav himself acknowledges. Strong Transformers chapter. |
+| **Accessibility** | 🟢 Fully public | Full schedule, assignments, projects published on site. No Notre Dame restrictions. |
+| **Relevance** | ⚪ Partial | Not LLM-specific. Approaches Transformers as **neural network theory**. Main themes: automata, Turing machines, and logic connections. |
+| **Freshness** | 🟢 2024 | Latest 2024 content, including state-space models section. |
+| **Format** | Lectures + assignments + programming projects | Theory-heavy, somewhat less implementation. |
+| **Recommendation** | ⚪ **For specific interests** | For those interested in the intersection of theoretical CS and neural networks. Better for understanding "principles" rather than "how to build" LLMs. |
 
-> **総評:** LLMを学びたい人が最初に取るべきコースではない。しかしTransformerの**理論的限界**（回路計算量、一階述語論理との関係）を深く理解したい研究志向の学習者には貴重。
+> **Overall Assessment:** Not a course to take first when learning LLMs. However, valuable for research-oriented learners who want to deeply understand Transformers' **theoretical limits** (circuit complexity, relationship to first-order predicate logic).
 
 ---
 
-#### 2. Chenyan Xiong & Daphne Ipolito — Large Language Models: Methods and Applications（CMU, 2024秋→2026春）
+#### 2. Chenyan Xiong & Daphne Ippolito — Large Language Models: Methods and Applications (CMU, Fall 2024→Spring 2026)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 高い | CMU LTIの正式コース。2026年春版に更新済み。割り当て・プロジェクト完備。 |
-| **アクセス性** | 🟢 完全公開 | [cmu-llms.org/schedule/](https://cmu-llms.org/schedule/)で全スケジュール、読書リスト、課題概要が公開。 |
-| **関連性** | 🟢 幅広い | プロンプト→ファインチューニング→RAG→対話→評価→Code→マルチモーダル→安全性→デプロイまで、**LLM応用全般**。 |
-| **新鮮度** | 🟢 2026 | 2026年春版、最新トピック含む。 |
-| **形式** | 講義＋3課題＋最終プロジェクト | 理論と実践のバランス良好。 |
-| **おすすめ度** | 🟢 **初心者〜中級に最適** | LLMを「使う側」として包括的に学びたい人に最もバランスの良いコース。Yoavのガイドの中で最も入門しやすい。 |
+| **Quality** | 🟢 High | Official CMU LTI course. Updated to Spring 2026 edition. Full assignments and projects. |
+| **Accessibility** | 🟢 Fully public | Full schedule, reading lists, assignment outlines at [cmu-llms.org/schedule/](https://cmu-llms.org/schedule/). |
+| **Relevance** | 🟢 Broad | Prompting→Fine-tuning→RAG→Dialogue→Evaluation→Code→Multimodal→Safety→Deployment — **comprehensive LLM applications**. |
+| **Freshness** | 🟢 2026 | Spring 2026 edition, includes latest topics. |
+| **Format** | Lectures + 3 assignments + final project | Good balance of theory and practice. |
+| **Recommendation** | 🟢 **Best for beginners to intermediate** | The most balanced course for those wanting comprehensive learning as an LLM "user." The most accessible entry point in Yoav's guide. |
 
-> **総評:** このガイドの中で最も「全部入り」でバランスの取れたコース。プロンプトからマルチエージェント、安全性まで幅広い。Yoav自身は「Nice collection of topics」と軽く評価するが、実際には**多くの学習者にとって最初に取り組むべきコース**。
+> **Overall Assessment:** The most "all-inclusive" and balanced course in this guide. Covers everything from prompting to multi-agent and safety. While Yoav lightly rates it as "Nice collection of topics," it is actually **the first course most learners should take**.
 
 ---
 
-#### 3. Danqi Chen & Sanjeev Arora — Deep Dive into Large Language Models（Princeton, 2024秋）
+#### 3. Danqi Chen & Sanjeev Arora — Deep Dive into Large Language Models (Princeton, Fall 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 非常に高い | Chen（コンテキスト長・知識編集）+ Arora（理論）の豪華コンビ。論文単位の深掘り。 |
-| **アクセス性** | 🟢 完全公開 | [princeton-cos597r.github.io](https://princeton-cos597r.github.io/) フル公開。議論形式の授業。 |
-| **関連性** | 🟢 広く深い | 事前学習→スケーリング則→データキュレーション→Instruction Tuning→RLHF/DPO→Alignment→推論時計算→長文脈→蒸留→RAG→マルチモーダル→ハードウェア（FlashAttention）まで。 |
-| **新鮮度** | 🔵 2024秋 | 2024年としては十分新しいが、GRPO・RFT・DeepSeek-R1等の2025年以降の進展は含まず。 |
-| **形式** | ディスカッション＋Debate Panel＋最終プロジェクト | 論文精読＋批判的議論が中心。受動的学習には不向き。 |
-| **おすすめ度** | 🟢 **研究志向の中級者に最適** | LLMを「作る・評価する」側として深く理解したい人向け。論文消化力が必要。 |
+| **Quality** | 🟢 Very High | Dream team of Chen (context length, knowledge editing) + Arora (theory). Paper-by-paper deep dives. |
+| **Accessibility** | 🟢 Fully public | [princeton-cos597r.github.io](https://princeton-cos597r.github.io/) Fully public. Discussion-based format. |
+| **Relevance** | 🟢 Broad and deep | Pre-training→Scaling laws→Data curation→Instruction Tuning→RLHF/DPO→Alignment→Inference-time compute→Long context→Distillation→RAG→Multimodal→Hardware (FlashAttention). |
+| **Freshness** | 🔵 Fall 2024 | Sufficiently new for 2024, but doesn't include post-2025 advances like GRPO, RFT, DeepSeek-R1. |
+| **Format** | Discussion + Debate Panel + Final Project | Centered on paper close reading + critical discussion. Not suitable for passive learning. |
+| **Recommendation** | 🟢 **Best for research-oriented intermediate learners** | For those wanting deep understanding of "building and evaluating" LLMs. Requires paper digestion ability. |
 
-> **総評:** カバレッジの広さと深さのバランスが最も優れたコースの一つ。**Scribe制（講義ノートを学生が執筆）** により教材の質が高い。しかし論文ベースのディスカッション形式なので、**ただ読むだけでは十分な価値を得られない**。学習グループで取り組むと効果的。
+> **Overall Assessment:** One of the best-balanced courses for breadth and depth. The **Scribe system (students write lecture notes)** ensures high-quality materials. However, since it's paper-based discussion format, **just reading won't give you full value**. Best tackled in a learning group.
 
 ---
 
-#### 4. Diyi Yang — Human Centered LLMs（Stanford CS329X, 2025秋）
+#### 4. Diyi Yang — Human Centered LLMs (Stanford CS329X, Fall 2025)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 高い | Stanford公式コース。HCI（Human-Computer Interaction）とNLPの接点。 |
-| **アクセス性** | 🟢 完全公開 | [web.stanford.edu/class/cs329x/](https://web.stanford.edu/class/cs329x/) フル公開。 |
-| **関連性** | 🟢 独自の視点 | アライメント・個人化・人間-AIインタラクション・カルチャーバイアス・プライバシー・AIコンパニオン。**LLMを人間の視点から**捉える。 |
-| **新鮮度** | 🟢 2025秋 | 最新の研究を含む。 |
-| **形式** | 講義＋3課題＋最終プロジェクト | 人間中心のテーマに沿った構成。 |
-| **おすすめ度** | 🟢 **HCI/プロダクト志向の学習者に** | 「LLMの性能」ではなく「LLMと人間の関係」を理解したい人に最適。エンジニアよりPM・研究者向け。 |
+| **Quality** | 🟢 High | Official Stanford course. Intersection of HCI (Human-Computer Interaction) and NLP. |
+| **Accessibility** | 🟢 Fully public | [web.stanford.edu/class/cs329x/](https://web.stanford.edu/class/cs329x/) Fully public. |
+| **Relevance** | 🟢 Unique perspective | Alignment, personalization, human-AI interaction, cultural bias, privacy, AI companions. Views **LLMs from a human perspective**. |
+| **Freshness** | 🟢 Fall 2025 | Includes latest research. |
+| **Format** | Lectures + 3 assignments + final project | Organized around human-centered themes. |
+| **Recommendation** | 🟢 **For HCI/product-oriented learners** | Best for understanding "the relationship between LLMs and humans" rather than "LLM performance." More for PMs and researchers than engineers. |
 
-> **総評:** Yoavのガイドの中で唯一のHCI/人間中心視点。**「LLMは動くけど、人間はどう関わる？」** という問いに取り組む。アライメント・個人化・バイアス・プライバシーを技術的かつ人間中心的にカバー。エンジニアリングとは別の視点が必要な人に。
+> **Overall Assessment:** The only HCI/human-centered perspective in Yoav's guide. Addresses the question of **"LLMs work, but how do humans engage?"** Covers alignment, personalization, bias, and privacy from both technical and human-centered angles. For those needing a non-engineering perspective.
 
 ---
 
-#### 5. Dawn Song & Dan Hendrycks — Understanding LLMs: Foundations and Safety（UC Berkeley, 2024春）
+#### 5. Dawn Song & Dan Hendrycks — Understanding LLMs: Foundations and Safety (UC Berkeley, Spring 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 非常に高い | 豪華ゲストスピーカー（Łukasz Kaiser/OpenAI, Yuandong Tian/Meta, Nicholas Carlini/Google DeepMind, Max Tegmark/MIT 他）。 |
-| **アクセス性** | 🟢 完全公開＋動画あり | [rdi.berkeley.edu/understanding_llms/s24](https://rdi.berkeley.edu/understanding_llms/s24)に加え、**YouTubeプレイリスト**で全講義公開。 |
-| **関連性** | 🟢 基礎＋安全性 | LLM基礎（スケーリング則、Transformerの仕組み）＋安全性（モデル編集、RepE、記憶抽出、敵対的攻撃、形式的検証）。 |
-| **新鮮度** | 🟡 2024春 | 2024年前期。安全性の議論はやや古くなりつつある（Mythos時代の安全性議論は2024から大きく進展）。 |
-| **形式** | ゲスト講義＋Lab＋プロジェクト | 各回の専門家による講義。深さにばらつきあり（ゲスト依存）。 |
-| **おすすめ度** | 🟢 **安全性に特化したい人に最高** | LLM安全性を学ぶ現存する最良のコースの一つ。YouTube動画ですべて視聴可能。ただし2024年開始のため、最近の安全性議論（Reward Hacking, Eval Hack, Agent Safety等）はカバーされていない。 |
+| **Quality** | 🟢 Very High | Stellar guest speakers (Łukasz Kaiser/OpenAI, Yuandong Tian/Meta, Nicholas Carlini/Google DeepMind, Max Tegmark/MIT, etc.). |
+| **Accessibility** | 🟢 Fully public + video | [rdi.berkeley.edu/understanding_llms/s24](https://rdi.berkeley.edu/understanding_llms/s24) plus **YouTube playlist** with all lectures. |
+| **Relevance** | 🟢 Foundations + Safety | LLM foundations (scaling laws, Transformer internals) + Safety (model editing, RepE, memory extraction, adversarial attacks, formal verification). |
+| **Freshness** | 🟡 Spring 2024 | Early 2024. Safety discussions slightly dated (Mythos-era safety discourse has advanced significantly since 2024). |
+| **Format** | Guest lectures + Lab + Project | Each session by domain experts. Depth varies (guest-dependent). |
+| **Recommendation** | 🟢 **Best for safety specialization** | One of the best existing courses for learning LLM safety. All viewable via YouTube. However, starting from 2024, recent safety discussions (Reward Hacking, Eval Hack, Agent Safety, etc.) are not covered. |
 
-> **総評:** **LLM安全性に特化したユニークなコース。** Hendrycks（CAIS）とSong（Berkeley）の両輪が効いている。YouTubeで全講義が無料公開されているのが最大の強み。ただし2024年前期時点の内容で、2025-26年の安全性の進展（Claude MythosのRed Teaming報告、Reward Hacking等）は含まれない。
+> **Overall Assessment:** **A unique course specializing in LLM safety.** The dual leadership of Hendrycks (CAIS) and Song (Berkeley) is effective. The biggest strength: all lectures freely available on YouTube. However, content is from early 2024 and doesn't include 2025-26 safety advances (Claude Mythos Red Teaming reports, Reward Hacking, etc.).
 
 ---
 
-#### 6. Graham Neubig — Advanced NLP（CMU, 2024秋）
+#### 6. Graham Neubig — Advanced NLP (CMU, Fall 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🔵 高い | NeubigはNLP教育の名手（著書『Neural Machine Translation』、講義ビデオ多数）。 |
-| **アクセス性** | 🟡 **限定的** | [Scheduleページ](https://www.phontron.com/class/anlp-fall2024/schedule/)が「Schedule will be posted soon」のまま。教材の多くはNeubigのYouTubeチャンネル等で個別公開だが、本コースの体系的な教材としてのアクセスは困難。 |
-| **関連性** | 🔵 広いがLLM特化ではない | 伝統的NLPトピックも含む。LLM部分（アーキテクチャ、評価、解釈性など）は良いが、テーマ全体の一部。 |
-| **新鮮度** | 🔵 2024秋 | 適切。 |
-| **形式** | 講義＋課題＋プロジェクト | 標準的コース形式。 |
-| **おすすめ度** | ⚪ **Yoavのガイドとしては優先度低** | Neubigの教材は素晴らしいが、本コースの教材へのアクセスが限定的。NeubigのYouTube講義や他の公開リソースを個別に探す方が効率的。 |
+| **Quality** | 🔵 High | Neubig is an NLP education master (author of *Neural Machine Translation*, numerous lecture videos). |
+| **Accessibility** | 🟡 **Limited** | [Schedule page](https://www.phontron.com/class/anlp-fall2024/schedule/) still shows "Schedule will be posted soon." Many materials are individually available on Neubig's YouTube channel, but systematic access as course materials is difficult. |
+| **Relevance** | 🔵 Broad but not LLM-specific | Includes traditional NLP topics. LLM parts (architecture, evaluation, interpretability) are good but only a subset of overall themes. |
+| **Freshness** | 🔵 Fall 2024 | Appropriate. |
+| **Format** | Lectures + assignments + projects | Standard course format. |
+| **Recommendation** | ⚪ **Low priority within Yoav's guide** | Neubig's materials are excellent, but access to this specific course's materials is limited. More efficient to individually search for Neubig's YouTube lectures and other public resources. |
 
-> **総評:** NeubigのNLP教育への貢献は絶大だが、本コースの教材がスケジュールページから実質アクセスできない点が致命的。Yoavのガイドの趣旨（「アカデミック教材への直接アクセス」）からは外れるため、**このガイド内での優先度は低い**。
+> **Overall Assessment:** Neubig's contribution to NLP education is immense, but the practical inaccessibility of this course's materials from the schedule page is critical. It deviates from Yoav's guide's intent ("direct access to academic materials"), so **priority is low within this guide**.
 
 ---
 
-#### 7. Daniel Khashabi — Self-supervised Models（JHU, 2024春）
+#### 7. Daniel Khashabi — Self-supervised Models (JHU, Spring 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🔵 良好 | JHU公式コース。週次課題7回＋クイズ2回＋最終プロジェクト。PyTorch実装中心。 |
-| **アクセス性** | 🟢 完全公開 | [self-supervised.cs.jhu.edu/sp2024/](https://self-supervised.cs.jhu.edu/sp2024/) 全課題概要公開。 |
-| **関連性** | 🔵 基礎〜中級 | アサインメント5（ファインチューニング/プロンプト）、6（プロンプト工学/ICL/RAG）、7（アライメント）がLLM関連。Yoavの指摘通り#12以降が本番。 |
-| **新鮮度** | 🟡 2024春 | 2024年前期。自己教師あり学習の基礎が中心。 |
-| **形式** | 講義＋7課題＋最終プロジェクト | 課題の質は高い。PyTorch実装重視。 |
-| **おすすめ度** | ⚪ **初学者向け** | 「Transformerすらまだ不安」というレベルには良いが、Yoavのガイドの想定読者（Transformers既知）には基礎が過剰。**既に実装経験がある学習者には冗長**。 |
+| **Quality** | 🔵 Good | Official JHU course. 7 weekly assignments + 2 quizzes + final project. PyTorch implementation-focused. |
+| **Accessibility** | 🟢 Fully public | [self-supervised.cs.jhu.edu/sp2024/](https://self-supervised.cs.jhu.edu/sp2024/) All assignment outlines public. |
+| **Relevance** | 🔵 Basic to intermediate | Assignments 5 (fine-tuning/prompting), 6 (prompt engineering/ICL/RAG), 7 (alignment) are LLM-related. As Yoav notes, it really starts at #12. |
+| **Freshness** | 🟡 Spring 2024 | Early 2024. Centered on self-supervised learning fundamentals. |
+| **Format** | Lectures + 7 assignments + final project | High assignment quality. PyTorch implementation emphasis. |
+| **Recommendation** | ⚪ **For beginners** | Good for those still unsure about Transformers, but basic material is excessive for Yoav's intended audience (assumes Transformers knowledge). **Redundant for learners with implementation experience**. |
 
-> **総評:** ガイドの中で最も「基礎より」のコース。Yoav自身「#12以降を見よ」と注釈を入れている通り、前半はLLM学習者には既知の内容。自己教師あり学習そのものを学びたい（NLP基礎を固めたい）人には良い選択肢。
+> **Overall Assessment:** The most "fundamentals-oriented" course in the guide. As Yoav notes "look at #12 onwards," the first half is already known to LLM learners. A good choice for those wanting to learn self-supervised learning itself (solidify NLP fundamentals).
 
 ---
 
-#### 8. Tatsunori Hashimoto & Percy Liang — Language Models from Scratch（Stanford, 2025春）
+#### 8. Tatsunori Hashimoto & Percy Liang — Language Models from Scratch (Stanford, Spring 2025)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 **最高級** | Hashimoto（安全性・評価）+ Liang（基盤モデル全般）のStanford最強コンビ。**5課題すべてGitHub公開**。 |
-| **アクセス性** | 🟢 **非常に高い** | [stanford-cs336.github.io/spring2025/](https://stanford-cs336.github.io/spring2025/) で全課題、スケジュール公開。課題コードもGitHub公開。GPU費用ガイド付き。 |
-| **関連性** | 🟢 **深い実践的理解** | Tokenizer実装→Transformer一からの実装→Triton FlashAttention2→Scaling Law→Common Crawl処理→SFT+RL（数学推論）。本当に**ゼロからLLMを作る**。 |
-| **新鮮度** | 🟢 **2025春で最新** | Triton kernel実装、Common Crawl処理まで含む。2025年で最も実践的なLLM構築コース。 |
-| **形式** | **実装のみ5課題（講義なし？）** | 講義は補助的で、**5つの大規模実装課題が主役**。普通の「講義を聞く」コースではない。 |
-| **おすすめ度** | 🟢 **本気でLLMを作りたい人に最高** | 「LLMをブラックボックスとして使う」のではなく、「LLMのすべての構成要素を自分で実装したい」人にこの上ないリソース。ただし**非常に重い**（5 units, order of magnitude more code than typical AI classes）。 |
+| **Quality** | 🟢 **Top-tier** | Stanford's strongest combo: Hashimoto (safety/evaluation) + Liang (foundation models overall). **All 5 assignments on GitHub**. |
+| **Accessibility** | 🟢 **Very high** | [stanford-cs336.github.io/spring2025/](https://stanford-cs336.github.io/spring2025/) All assignments, schedule public. Assignment code on GitHub. GPU cost guide included. |
+| **Relevance** | 🟢 **Deep practical understanding** | Tokenizer implementation→Transformer from scratch→Triton FlashAttention2→Scaling Law→Common Crawl processing→SFT+RL (math reasoning). Truly **building LLMs from zero**. |
+| **Freshness** | 🟢 **Latest (Spring 2025)** | Includes Triton kernel implementation, Common Crawl processing. The most practical LLM building course of 2025. |
+| **Format** | **Implementation-only (5 assignments, no lectures?)** | Lectures are supplementary; **5 large-scale implementation assignments are the star**. Not a typical "listen to lectures" course. |
+| **Recommendation** | 🟢 **Best for those serious about building LLMs** | An unparalleled resource for those who want to "implement every component of an LLM themselves" rather than "using LLMs as black boxes." However, it is **very heavy** (5 units, order of magnitude more code than typical AI classes). |
 
-> **総評:** Yoavのガイドの中で最も「実装寄り」のコース。Yoav自ら「技術/MLクラスだが、LLM訓練のニッチな詳細をカバーしているので入れた」と注釈している。**GPU時間がかかる**（RunPod H100 $1.99-2.99/h推奨）が、その価値は十分ある。CS336を完走すれば、LLMの内部動作を手に取るように理解できる。
+> **Overall Assessment:** The most "implementation-oriented" course in Yoav's guide. Yoav himself notes he "included it because it covers niche details of LLM training even though it's a technical/ML class." **GPU time is significant** (RunPod H100 at $1.99-2.99/hr recommended), but well worth it. After completing CS336, you'll understand LLM internals like the back of your hand.
 
 ---
 
-#### 9. Yejin Choi — NLP: LLM Edition（UW, 2024冬）
+#### 9. Yejin Choi — NLP: LLM Edition (UW, Winter 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 高い | Choi（推論・常識知識・創造性のスペシャリスト）の独自視点。 |
-| **アクセス性** | 🟢 完全公開 | Notionページで全スケジュール公開。課題はGoogle Drive/Colabで公開。 |
-| **関連性** | 🔵 限定的（後半） | Yoavの指摘通り、5週目以降（デコーディング・アライメント・安全性・創造性）がLLM独自の話題。前半はNLP基礎。 |
-| **新鮮度** | 🟡 2024冬 | 2024年1-3月。やや古い。 |
-| **形式** | 講義＋4課題＋最終プロジェクト | 標準的。課題の質は高い。 |
-| **おすすめ度** | 🔵 **Choiの視点を求める人に** | **創造性・推論・常識知識**に関するChoiの独自の視点は他では得られない。ただし前半は既知の内容が多いので、5週目以降を重点的に。 |
+| **Quality** | 🟢 High | Choi's unique perspective (specialist in reasoning, commonsense knowledge, creativity). |
+| **Accessibility** | 🟢 Fully public | Full schedule on Notion page. Assignments on Google Drive/Colab. |
+| **Relevance** | 🔵 Limited (latter half) | As Yoav notes, Week 5 onwards (decoding, alignment, safety, creativity) is LLM-specific. First half is NLP fundamentals. |
+| **Freshness** | 🟡 Winter 2024 | Jan-Mar 2024. Somewhat dated. |
+| **Format** | Lectures + 4 assignments + final project | Standard. High assignment quality. |
+| **Recommendation** | 🔵 **For those seeking Choi's perspective** | Choi's unique perspective on **creativity, reasoning, and commonsense knowledge** is unavailable elsewhere. However, first half is mostly known content — focus on Week 5 onwards. |
 
-> **総評:** Choiの**創造性と推論**に関する視点が目玉。Week 5以降のデコーディング戦略、アライメント、創造性のセクションは他コースではあまりカバーされないユニークな内容。しかし2024年冬時点の内容で、2025年以降の進展（推論時計算の拡張、RLM等）は含まれない。
+> **Overall Assessment:** Choi's perspective on **creativity and reasoning** is the highlight. Week 5 onwards on decoding strategies, alignment, and creativity sections cover unique content not found in other courses. However, content is from Winter 2024 and doesn't include post-2025 advances (inference-time compute scaling, RLM, etc.).
 
 ---
 
-#### 10. Tal Linzen — Natural Language Understanding（NYU, 2025春）
+#### 10. Tal Linzen — Natural Language Understanding (NYU, Spring 2025)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🔵 高い | Linzen（言語学×深層学習の第一人者）。 |
-| **アクセス性** | 🟡 **Google Docs要アクセス申請** | シラバスがGoogle Docsで公開されているが「Request edit access」ダイアログが表示される。教材への直接アクセスは限定的。 |
-| **関連性** | 🔵 **評価・解釈性・言語学的観点** | 「LLMを作る」ではなく「LLMを評価する」ことに特化。言語的視点からの評価、解釈可能性、ヒューリスティクス、人間との比較。 |
-| **新鮮度** | 🟢 2025春 | 最新。 |
-| **形式** | 講義＋課題 | コース全体の詳しい構成はシラバスへのアクセスが必要。 |
-| **おすすめ度** | ⚪ **言語学バックグラウンドを持つ人に** | LLMを**言語学的に評価・批評**する視点を得たい人向け。エンジニアリング志向の学習者にはオーバースペック。教材アクセスにも壁がある。 |
+| **Quality** | 🔵 High | Linzen (leading figure in linguistics × deep learning). |
+| **Accessibility** | 🟡 **Google Docs requires access request** | Syllabus published on Google Docs but shows "Request edit access" dialog. Direct access to materials is limited. |
+| **Relevance** | 🔵 **Evaluation, interpretability, linguistic perspective** | Specializes in "evaluating LLMs" rather than "building LLMs." Linguistic evaluation, interpretability, heuristics, human comparison. |
+| **Freshness** | 🟢 Spring 2025 | Latest. |
+| **Format** | Lectures + assignments | Detailed course structure requires syllabus access. |
+| **Recommendation** | ⚪ **For those with linguistics background** | For those wanting a **linguistic evaluation/critique** perspective on LLMs. Overspec for engineering-oriented learners. Also has access barriers to materials. |
 
-> **総評:** このガイドの中で最も「言語学」よりのコース。LLMの「作り方」ではなく「評価の仕方」を深く知りたい人に。Linzenの視点は貴重だが、**教材アクセスが限定的**な点と、言語学のバックグラウンドを前提とする点から、多くの学習者には優先度が低い。
+> **Overall Assessment:** The most "linguistics-oriented" course in this guide. For those wanting deep knowledge of "how to evaluate" rather than "how to build" LLMs. Linzen's perspective is valuable, but **limited material access** and linguistics background prerequisites make this low priority for most learners.
 
 ---
 
-### 📋 セミナー／読書会
+### 📋 Seminars / Reading Groups
 
-#### 11. Robin Jia — Science of Large Language Models（USC, 2024秋）
+#### 11. Robin Jia — Science of Large Language Models (USC, Fall 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 高い | ユニークな「ロールシステム」（Proposer/Archaeologist/Reviewer/Visionary等）で論文を多角的に分析。 |
-| **アクセス性** | 🟢 完全公開 | [robinjia.github.io](https://robinjia.github.io/classes/fall2024-csci699.html) で全スケジュール、論文リスト公開。 |
-| **関連性** | 🟢 **読み進め方が秀逸** | Yoav曰く「いい感じのプログレッションで整理された読書リスト。セミナーでなくクラスだったらよかったのに。」内部動作→ブラックボックス→外部要因の3ユニットで構成。 |
-| **新鮮度** | 🔵 2024秋 | 適切。 |
-| **形式** | 学生発表＋役割演技 | 能動的参加が前提。独学では読み物リストとして活用。 |
-| **おすすめ度** | 🟢 **論文精読の道標として** | **読書リストの質と構成が際立つ。** クラスとしての参加はできないが、論文リストに沿って独学で読み進めるだけで大きな価値がある。内部・外部・外部要因の3分類は学習のフレームワークとして秀逸。 |
+| **Quality** | 🟢 High | Unique "role system" (Proposer/Archaeologist/Reviewer/Visionary, etc.) for multi-angle paper analysis. |
+| **Accessibility** | 🟢 Fully public | [robinjia.github.io](https://robinjia.github.io/classes/fall2024-csci699.html) Full schedule, paper list. |
+| **Relevance** | 🟢 **Excellent reading progression** | As Yoav says: "A reading list organized with nice progression. Wish it were a class instead of a seminar." Three units: Internals → Black-box → External Factors. |
+| **Freshness** | 🔵 Fall 2024 | Appropriate. |
+| **Format** | Student presentations + role-playing | Requires active participation. For self-study, use as a reading list. |
+| **Recommendation** | 🟢 **As a paper reading guide** | **The quality and structure of the reading list stands out.** Even though you can't participate as a class, reading through the paper list alone has great value. The three-category framework (Internal/External/External Factors) is an excellent learning framework. |
 
-> **総評:** **セミナー形式だが読書リスト自体が非常に貴重。** Unit 0（Transformer復習）→ Unit 1（内部動作：状態追跡、知識編集、メカニスティック解釈性）→ Unit 2（ブラックボックス：ICL、忠実性、スケーリング則）→ Unit 3（外部要因：データ、ファインチューニング、トークナイゼーション）の構成は、LLMを科学するための格好のロードマップ。
+> **Overall Assessment:** **While it's a seminar format, the reading list itself is extremely valuable.** Unit 0 (Transformer Review) → Unit 1 (Internals: state tracking, knowledge editing, mechanistic interpretability) → Unit 2 (Black-box: ICL, faithfulness, scaling laws) → Unit 3 (External Factors: data, fine-tuning, tokenization) — an excellent roadmap for doing science on LLMs.
 
 ---
 
-#### 12. Danqi Chen — Understanding Large Language Models（Princeton, 2022秋）
+#### 12. Danqi Chen — Understanding Large Language Models (Princeton, Fall 2022)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 高い（歴史的に） | 2022年当時としては最先端。GPT-3、T5、InstructGPT、Chinchilla等をカバー。 |
-| **アクセス性** | 🟢 完全公開 | アーカイブとしてアクセス可能。 |
-| **関連性** | 🟡 **2022年時点で停止** | Yoav自身「2025年版を見たい」とコメント。GPT-4登場前、Llama登場前、RLHF/DPO初期の内容。 |
-| **新鮮度** | ⚪ **2022で古い** | 3年以上前。2022年以降のLLM進展（Llama 3, ChatGPT, Claude 3+, DeepSeek, R1, GRPO等）を全くカバーしない。 |
-| **形式** | セミナー（学生発表形式） | 2022年版COS597G。 |
-| **おすすめ度** | ⚪ **歴史的理解として** | 2022年当時のLLM理解を追体験したい歴史的な興味向け。2026年のLLM学習の出発点としては古すぎる。 |
+| **Quality** | 🟢 High (historically) | Cutting-edge for 2022. Covered GPT-3, T5, InstructGPT, Chinchilla, etc. |
+| **Accessibility** | 🟢 Fully public | Accessible as archive. |
+| **Relevance** | 🟡 **Frozen at 2022** | Yoav himself comments "wish there was a 2025 version." Content from before GPT-4, before Llama, early RLHF/DPO era. |
+| **Freshness** | ⚪ **Dated (2022)** | 3+ years old. Completely misses post-2022 LLM advances (Llama 3, ChatGPT, Claude 3+, DeepSeek, R1, GRPO, etc.). |
+| **Format** | Seminar (student presentation format) | 2022 edition COS597G. |
+| **Recommendation** | ⚪ **For historical understanding** | Historical interest for re-experiencing 2022 LLM understanding. Too old as a 2026 LLM learning starting point. |
 
-> **総評:** 歴史的文脈としては興味深いが、Yoav自身も「2025年版を見たい」と認める通り、**2026年にこれをメインで学ぶのは推奨できない**。同じDanqi Chenの2024年版（#3 COS597R）を代わりに取るべき。
+> **Overall Assessment:** Interesting as historical context, but as Yoav himself admits wanting "a 2025 version," **cannot be recommended as a primary learning resource in 2026**. Take Danqi Chen's 2024 edition (#3 COS597R) instead.
 
 ---
 
-#### 13. Michael Hahn — Aligning Language Models with Human Preferences（Saarland, 2024夏）
+#### 13. Michael Hahn — Aligning Language Models with Human Preferences (Saarland, Summer 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 高い | アライメントにフォーカスした専門セミナー。RLHF/DPO/Constitutional AIを深掘り。 |
-| **アクセス性** | 🟢 完全公開 | [lacoco-lab.github.io](https://lacoco-lab.github.io/courses/alignment-2024/) で全スケジュール、論文リスト公開。 |
-| **関連性** | 🔵 **アライメント特化** | RLHF/PPO/DPO/Constitutional AI/自己アライメント/安全性失敗/敵対的攻撃。範囲は限定されるが深い。 |
-| **新鮮度** | 🔵 2024夏 | 適切。24年夏のためDPO/Constitutional AI等の主要手法はカバー。GRPO等は含まれず。 |
-| **形式** | セミナー（発表＋論文） | 学生発表＋ファイナルペーパー。独学では論文リストとして。 |
-| **おすすめ度** | 🟢 **アライメントに特化したい人向け** | アライメント手法を体系的に学びたい人に格好の論文リスト。RLHF→DPOの進化、Constitutional AI、Sleeper Agentsまで。範囲は限定的だが深い。 |
+| **Quality** | 🟢 High | Specialized seminar focused on alignment. Deep dive into RLHF/DPO/Constitutional AI. |
+| **Accessibility** | 🟢 Fully public | [lacoco-lab.github.io](https://lacoco-lab.github.io/courses/alignment-2024/) Full schedule, paper list. |
+| **Relevance** | 🔵 **Alignment-specific** | RLHF/PPO/DPO/Constitutional AI/self-alignment/safety failures/adversarial attacks. Scope-limited but deep. |
+| **Freshness** | 🔵 Summer 2024 | Appropriate. Covers major methods like DPO/Constitutional AI (summer 2024). Doesn't include GRPO. |
+| **Format** | Seminar (presentations + papers) | Student presentations + final paper. For self-study, use as paper list. |
+| **Recommendation** | 🟢 **For alignment specialization** | An excellent paper list for systematic learning of alignment methods. Covers RLHF→DPO evolution, Constitutional AI, through Sleeper Agents. Scope-limited but deep. |
 
-> **総評:** アライメント（RLHF/DPO/安全性）に**特化**したセミナー。範囲は限定されるが、その分深い。アライメント周辺の論文を系統立てて消化したい人に、希少なリソース。
+> **Overall Assessment:** A seminar **specializing** in alignment (RLHF/DPO/safety). Scope is limited but correspondingly deep. A rare resource for systematically digesting alignment papers.
 
 ---
 
-#### 14. Tal Linzen — Language Models: Cognitive Plausibility and Sample Efficiency（NYU, 2024秋）
+#### 14. Tal Linzen — Language Models: Cognitive Plausibility and Sample Efficiency (NYU, Fall 2024)
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🔵 高い（ニッチ分野） | 言語モデルを**認知科学・心理言語学**の視点から評価。 |
-| **アクセス性** | 🟡 **Google Docs要アクセス申請** | シラバスがGoogle Docsで公開されているが、#10同様アクセスに壁がある。 |
-| **関連性** | ⚪ **ニッチ** | 「LLMの認知的可能性」— 人間の言語処理とLLMの比較。エンジニアリングではなく認知科学。 |
-| **新鮮度** | 🔵 2024秋 | 適切。 |
-| **形式** | セミナー | 読書会形式。 |
-| **おすすめ度** | ⚪ **言語学・認知科学背景のある人向け** | LLMエンジニアにはほぼ不要。研究として「人間はどう言語を処理するか vs LLMはどう処理するか」に興味がある認知科学者向け。 |
+| **Quality** | 🔵 High (niche area) | Evaluates language models from **cognitive science/psycholinguistics** perspective. |
+| **Accessibility** | 🟡 **Google Docs requires access request** | Syllabus on Google Docs with access barriers, same as #10. |
+| **Relevance** | ⚪ **Niche** | "Cognitive plausibility of LLMs" — comparing human language processing with LLMs. Cognitive science, not engineering. |
+| **Freshness** | 🔵 Fall 2024 | Appropriate. |
+| **Format** | Seminar | Reading group format. |
+| **Recommendation** | ⚪ **For those with linguistics/cognitive science background** | Nearly unnecessary for LLM engineers. For cognitive scientists interested in "how do humans process language vs. how do LLMs process language." |
 
-> **総評:** 非常にニッチ。LLMの**認知科学としての評価**に興味がある人向け。Yoavのガイドの中でも最も専門性が高く、一般のLLM学習者には推奨しづらい。
+> **Overall Assessment:** Extremely niche. For those interested in **evaluating LLMs as cognitive science**. The most specialized in Yoav's guide; hard to recommend for general LLM learners.
 
 ---
 
-### 🎥 ビデオ講演
+### 🎥 Video Lectures
 
-#### 15. Stanford CS25 — Transformers 招待講演
+#### 15. Stanford CS25 — Transformers Invited Talks
 
-| 項目 | 評価 | 備考 |
+| Item | Rating | Notes |
 |------|------|------|
-| **品質** | 🟢 高い | Karpathy（Transformer解説）、Hinton（階層表現）、Jason Wei（Chain-of-Thought）、Jim Fan（NVIDIAエージェント）、Nathan Lambert（アライメント）、Douwe Kiela（RAG）など豪華スピーカー。 |
-| **アクセス性** | 🟢 **最高** | YouTubeプレイリストで全講義無料公開。サイトからリンク。 |
-| **関連性** | 🔵 補完的 | 各回が特定トピックにフォーカス。体系的な学習には不向きだが、特定分野の第一人者の話を聞くには最適。 |
-| **新鮮度** | 🟢 V6まで継続中 | 継続的に更新。 |
-| **形式** | 招待講義（YouTube） | 各回60-90分。受動的視聴でOK。 |
-| **おすすめ度** | 🟢 **どの学習者にも補完的に推奨** | 「本を読む合間に一流研究者の話を聞く」のに最適。体系的な教材ではないのでメインにはできないが、学習モチベーション維持と俯瞰的視点の獲得に役立つ。 |
+| **Quality** | 🟢 High | Stellar speakers including Karpathy (Transformer explanation), Hinton (hierarchical representations), Jason Wei (Chain-of-Thought), Jim Fan (NVIDIA agents), Nathan Lambert (alignment), Douwe Kiela (RAG). |
+| **Accessibility** | 🟢 **Best** | All lectures free on YouTube playlists. Linked from site. |
+| **Relevance** | 🔵 Complementary | Each session focused on specific topics. Not suitable for systematic learning, but best for hearing leading domain experts. |
+| **Freshness** | 🟢 Ongoing through V6 | Continuously updated. |
+| **Format** | Invited lectures (YouTube) | 60-90 min each. Passive viewing OK. |
+| **Recommendation** | 🟢 **Recommended as complementary for all learners** | Best for "listening to top researchers between reading books." Not systematic enough as main material, but useful for maintaining motivation and gaining overview perspectives. |
 
-> **総評:** **補完的な価値が最も高いリソース。** CS25の講演は各回が独立しており、気になるトピックの回だけ視聴できる。KarpathyのTransformer入門回は特に有名。コースの合間の「息抜き」としても、特定テーマの深掘りとしても使える。
+> **Overall Assessment:** **The resource with highest complementary value.** CS25 lectures are independent sessions — you can watch only the topics that interest you. Karpathy's Transformer introduction session is especially famous. Use as "breathers" between courses or as deep-dives into specific themes.
 
 ---
 
-## 🏆 おすすめ優先順位
+## 🏆 Recommended Priorities
 
-学習者のタイプ別に、取り組むべき順序を提案する：
+Suggested order by learner type:
 
-### 🅰️ 「LLMを実践的に使いたい」エンジニア
+### 🅰️ "I want to use LLMs practically" — Engineers
 
 ```
-1. #2 CMU LLMs: Methods and Applications (2026) — 🟢 全般の俯瞰
-2. #8 Stanford CS336 Language Models from Scratch — 🟢 実装で深く理解
-3. 並行して #15 CS25 Videos — 🟢 息抜きに一流研究者の話
-4. #11 Robin Jia 読書リスト — 🟢 ある程度理解が進んだら論文消化
+1. #2 CMU LLMs: Methods and Applications (2026) — 🟢 Overview of everything
+2. #8 Stanford CS336 Language Models from Scratch — 🟢 Deep understanding through implementation
+3. Parallel: #15 CS25 Videos — 🟢 Top researcher talks as breathers
+4. #11 Robin Jia Reading List — 🟢 Paper digestion once understanding progresses
 ↓
-→ この4つでLLMの「実践的理解」は十分
+→ These 4 provide sufficient "practical understanding" of LLMs
 ```
 
-### 🅱️ 「LLMを研究したい」アカデミック志向
+### 🅱️ "I want to research LLMs" — Academic-Oriented
 
 ```
-1. #3 Princeton Deep Dive (#8は実装補完として) — 🟢 論文ベースの深い理解
-2. #5 Berkeley Foundations and Safety — 🟢 安全性の基礎
-3. #13 Hahn Alignment Seminar — 🟢 アライメント特化
-4. #1 Chiang Theory — 🟢 理論的限界の理解（オプション）
+1. #3 Princeton Deep Dive (#8 as implementation supplement) — 🟢 Paper-based deep understanding
+2. #5 Berkeley Foundations and Safety — 🟢 Safety fundamentals
+3. #13 Hahn Alignment Seminar — 🟢 Alignment specialization
+4. #1 Chiang Theory — 🟢 Understanding theoretical limits (optional)
 ↓
-→ 論文執筆に必要な深さをカバー
+→ Covers the depth needed for paper writing
 ```
 
-### 🅲 「LLMと人間の関係を考えたい」HCI/プロダクト志向
+### 🅲 "I want to think about LLMs and humans" — HCI/Product-Oriented
 
 ```
-1. #2 CMU LLMs: Methods and Applications — 🟢 全般の俯瞰
-2. #4 Stanford Human-Centered LLMs — 🟢 HCI視点
-3. #5 Berkeley Safety — 🟢 安全性と倫理
-4. #9 Yejin Choi — 🟢 創造性と推論（Week 5以降）
+1. #2 CMU LLMs: Methods and Applications — 🟢 Overview of everything
+2. #4 Stanford Human-Centered LLMs — 🟢 HCI perspective
+3. #5 Berkeley Safety — 🟢 Safety and ethics
+4. #9 Yejin Choi — 🟢 Creativity and reasoning (Week 5 onwards)
 ↓
-→ 人間中心設計・プロダクト・政策に関わる人に
+→ For those involved in human-centered design, products, and policy
 ```
 
 ---
 
-## 🔗 関連Wikiページ
+## 🔗 Related Wiki Pages
 
-- [[concepts/llm-course-roadmap]] — Maxime LabonneのLLM CourseをWiki概念にマッピングした類似知識マップ
-- [[entities/yoav-goldberg]] — 本ガイドの作成者
-- [[entities/andrej-karpathy]] — CS25でTransformer入門講義（#15）
-- [[concepts/llm-core]] — LLM基礎概念
-- [[concepts/agent-engineering-guide-2026]] — もう一つのLLM/AIエージェント学習ガイド
+- [[concepts/llm-course-roadmap]] — Similar knowledge map mapping Maxime Labonne's LLM Course to wiki concepts
+- [[entities/yoav-goldberg]] — Creator of this guide
+- [[entities/andrej-karpathy]] — CS25 Transformer introduction lecture (#15)
+- [[concepts/llm-core]] — LLM foundational concepts
+- [[concepts/agent-engineering-guide-2026]] — Another LLM/AI agent learning guide
 
 ---
 
-> **このページはメタ知識（知識マップ）です。** Yoav Goldberg のガイドが参照している各コースの教材を評価し、学習優先順位を提案するものです。各リソースの実際の内容はリンク先を直接参照してください。
+> **This page is meta-knowledge (a knowledge map).** It evaluates the course materials referenced by Yoav Goldberg's guide and proposes learning priorities. For the actual content of each resource, please refer directly to the linked sources.

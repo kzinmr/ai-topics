@@ -1,5 +1,5 @@
 ---
-title: "Proprietary Context — AI時代の組織ガバナンスとDiamond型組織図"
+title: "Proprietary Context — Organizational Governance and the Diamond Org Chart in the AI Era"
 type: concept
 aliases:
   - ai-org-governance
@@ -20,141 +20,141 @@ depth_tracking:
 sources: []
 ---
 
-# Proprietary Context — AI時代の組織ガバナンス
+# Proprietary Context — Organizational Governance in the AI Era
 
-## 概要
+## Overview
 
-AIが実行レイヤーを代替する時代において、企業の競争優位は**「何をどのように判断するか」という独自の文脈(context)**に収斂する。McKinseyのAgentic Organizationフレームワーク、ReworkedのDiamond Org Chart議論、そしてAgile Leadership Dayの実践的組織図モデルを統合する。
+In an era where AI replaces the execution layer, a company's competitive advantage converges to **proprietary context — "what to decide and how to decide it."** This integrates McKinsey's Agentic Organization framework, Reworked's Diamond Org Chart discussion, and Agile Leadership Day's practical org chart models.
 
-## Proprietary Context Layer: 最後のモート
+## Proprietary Context Layer: The Last Moat
 
-McKinseyが指摘する核心:
+McKinsey's core insight:
 
-> *AI飽和市場において、競合が真似できないのは自社固有の判断基準・文化・市場知見を構造化しエージェントに供給する能力。*
+> *In an AI-saturated market, what competitors cannot imitate is the ability to structure and feed your company's unique decision criteria, culture, and market knowledge to agents.*
 
-### コンテキスト層の構成要素
+### Components of the Context Layer
 
-| 要素 | 説明 | 例 |
+| Element | Description | Example |
 |------|------|-----|
-| **Decision Frameworks** | 会社が意思決定を行う際の判断基準とプロセス | 優先度マトリクス、エスカレーションルール |
-| **Market Playbooks** | 業界固有の知見とベストプラクティス | 顧客セグメント分析、価格戦略テンプレート |
-| **Cultural Norms** | 組織の価値観、行動規範、暗黙の了解 | 「失敗を許容する」文化、透明性の原則 |
-| **Institutional Memory** | 過去の成功/失敗から得られた教訓 | Post-mortemデータベース、ケーススタディ |
+| **Decision Frameworks** | Decision criteria and processes the company uses | Priority matrices, escalation rules |
+| **Market Playbooks** | Industry-specific knowledge and best practices | Customer segment analysis, pricing strategy templates |
+| **Cultural Norms** | Organizational values, behavioral norms, tacit understandings | "Failure-tolerant" culture, transparency principles |
+| **Institutional Memory** | Lessons learned from past successes/failures | Post-mortem databases, case studies |
 
-### AIへのコンテキスト供給戦略
+### Context Supply Strategy for AI
 
-1. **構造化**: エージェントがリアルタイムにアクセス・行動できる形式で文書を整理
-2. **ローカル保持**: コンテキストを自社インフラに保持。クエリ時にモデルに投入（永続的手渡しではない）
-3. **アクセス制御**: 機密情報は段階的に開需。Agent Mission Control Dashboardで一元管理
-4. **将来の資産化**: コンテキスト層はライセンス可能、あるいはAI飽和市場における唯一の防衛可能資産
+1. **Structure**: Organize documents in formats agents can access and act on in real time
+2. **Local Retention**: Keep context on your own infrastructure. Feed to models at query time (not a permanent hand-off)
+3. **Access Control**: Gradually disclose sensitive information. Centralized management via Agent Mission Control Dashboard
+4. **Future Monetization**: The context layer is licensable, or the only defensible asset in an AI-saturated market
 
-## McKinseyのAgentic Organization: 5つの柱
+## McKinsey's Agentic Organization: 5 Pillars
 
-McKinseyは2025年9月、AI時代の組織運営モデルとして以下の5柱を提唱:
+McKinsey proposed the following 5 pillars in September 2025 as the organizational operating model for the AI era:
 
 ### 1. Business Model — AI-Native Hyperpersonalization
-- 消費者は低コストAIパーソナルアシスタントを使用。企業エージェントと24/7交渉
-- AI-Firstワークフロー: 人間は**「ループの上」**で戦略的監視
-- 限界コストは計算コストに収斂
+- Consumers use low-cost AI personal assistants. Negotiate with enterprise agents 24/7
+- AI-First workflows: Humans are **"above the loop"** for strategic oversight
+- Marginal cost converges to compute cost
 
 ### 2. Operating Model — Outcome-Aligned Agentic Teams
-- 機能サイロを廃止。2–5名の多機能人間チームが50–100の専門AIエージェントを監督
-- 組織図 → **ワークチャート**(タスク/成果の交換ベース)
-- エージェントネットワークは社外境界を越えて拡張
+- Abolish functional silos. 2–5 cross-functional human teams supervise 50–100 specialized AI agents
+- Org chart → **Work chart** (task/outcome exchange-based)
+- Agent networks extend beyond company boundaries
 
 ### 3. Governance — Real-Time & Embedded
-- 定期的レビューから継続的、データ駆動の監視へ移行
-- **Agentic Budgeting**: AIによる予測、シナリオプランニング、リアルタイムレポート
-- **エージェント間ガードレール**: 批評家、ガードレール、コンプライアンスエージェントをワークフローに埋め込み
-- **ガバナンス能力がAIスケールのボトルネック**になる
+- Shift from periodic reviews to continuous, data-driven monitoring
+- **Agentic Budgeting**: AI-powered forecasting, scenario planning, real-time reporting
+- **Inter-agent guardrails**: Embed critics, guardrails, compliance agents into workflows
+- **Governance capability becomes the bottleneck for AI scale**
 
 ### 4. Workforce, People & Culture
-| 役割 | 説明 |
+| Role | Description |
 |------|------|
-| **AI-Augmented Frontline Workers** | 人間インタラクションに注力。システムナビゲーションは最小化 |
-| **T-Shaped Experts** | 深い専門家で、ワークフロー再設計、エッジケース処理、品質保証 |
-| **M-Shaped Supervisors** | 幅広い一般教養を持ち、AIに精通。ドメイン横断的にハイブリッドチームをオーケストレーション |
+| **AI-Augmented Frontline Workers** | Focus on human interaction. Minimize system navigation |
+| **T-Shaped Experts** | Deep specialists for workflow redesign, edge case handling, quality assurance |
+| **M-Shaped Supervisors** | Broad generalists, AI-literate. Orchestrate hybrid teams across domains |
 
-- 文化は接着剤と羅針盤。短期的効率追求が長期的目的・アイデンティティを侵食しないよう防止
+- Culture is the glue and compass. Prevents short-term efficiency pursuit from eroding long-term purpose/identity
 
 ### 5. Technology & Data Architecture
-- **Agentic AI Mesh**: IT/データ作成の民主化。ビジネスサイド従業員がAI監視下でソフトウェア資産を構築
-- **エージェント間プロトコル**: 重いミドルウェア/APIを代替。レガシーシステム、クラウド、物理デバイス間でシームレス統合
-- **ダイナミックソーシング**: ベンダーロックイン回避。エージェントロジック/データを基盤ベンダーから分離
+- **Agentic AI Mesh**: Democratize IT/data creation. Business-side employees build software assets under AI supervision
+- **Inter-agent protocols**: Replace heavy middleware/APIs. Seamless integration across legacy systems, cloud, physical devices
+- **Dynamic Sourcing**: Avoid vendor lock-in. Separate agent logic/data from underlying vendors
 
-## Flatten Your Structure: 組織構造の最適化
+## Flatten Your Structure: Organizational Structure Optimization
 
-### 除去すべき要素
-- スパンブレーカー (Span-breakers: 管理レイヤーを artificially 狭くする職位)
-- 冗長な報告レイヤー
-- タイトル駆動の管理
-- 競合するアカウンタビリティ
+### Elements to Remove
+- Span-breakers (positions that artificially narrow management layers)
+- Redundant reporting layers
+- Title-driven management
+- Competing accountabilities
 
-### 設計原則
-- 戦略と顧客成果に直接整合
-- オペレーショナル透明性とリアルタイムフィードバック
-- AI-Native企業は既に高速。伝統的企業は買収後の統合失敗リスクを回避すべく迅速に平坦化
+### Design Principles
+- Direct alignment with strategy and customer outcomes
+- Operational transparency and real-time feedback
+- AI-Native companies are already fast. Traditional companies must flatten quickly to avoid post-acquisition integration failure risks
 
 ## AI Capability Trajectory
 
-McKinseyのデータ:
-- AIが確実に完了できるタスクの長さは、2019年以降**約7ヶ月ごとに倍増**
-- 2024年以降は**約4ヶ月ごとに倍増** (現在約2時間)
-- **2027年までに4日間の無人作業を完了できる可能性**
+McKinsey data:
+- Length of tasks AI can reliably complete has been **doubling roughly every 7 months** since 2019
+- Since 2024: **doubling roughly every 4 months** (currently ~2 hours)
+- **Potentially capable of completing 4-day unattended work by 2027**
 
-この加速は、組織設計の再構築を待ってはくれない。
+This acceleration won't wait for organizational redesign.
 
 ## Reworked: Humans & AI Agents — The Org Chart of Tomorrow
 
-2026年2月、Reworkedが**Diamond（ダイアモンド）型の組織図**を提案した:
+In February 2026, Reworked proposed the **Diamond-shaped org chart**:
 
-### Diamond Org Chartの階層
+### Diamond Org Chart Layers
 
-| レイヤー | 役割 | 説明 |
+| Layer | Role | Description |
 |---------|------|------|
-| **トップ（尖点）** | エグゼクティブリーダー | 戦略的意思決定。AI出力の監視。倫理的判断。 |
-| **上部** | プロジェクトリーダー/スーパーIC | 複数エージェントチームを横断的に管理。 |
-| **中央（最大幅）** | AIエージェント + 人間エキスパート | 日常的な実行はエージェント。人間はエッジケース、品質保証、関係構築。 |
-| **下部** | ジュニアメンバー/新人 | 学習フェーズ。エージェントを監督しつつスキルを吸収。 |
-| **底辺（尖点）** | 顧客/エンドユーザー | 最終的な価値受容者。エージェントとの直接インタラクションも増加。 |
+| **Top (point)** | Executive leaders | Strategic decision-making. AI output monitoring. Ethical judgment. |
+| **Upper** | Project leaders/Super ICs | Cross-functional management of multiple agent teams. |
+| **Middle (widest)** | AI agents + Human experts | Routine execution by agents. Humans handle edge cases, QA, relationship building. |
+| **Lower** | Junior members/New hires | Learning phase. Supervise agents while absorbing skills. |
+| **Bottom (point)** | Customers/End users | Ultimate value recipients. Direct interaction with agents also increasing. |
 
-### Diamond型の意味
-- 従来のピラミッド型（トップが小さくボトムが大きい）と**逆転**
-- 中央のAI+エキスパート層が最も厚く、組織の主力として機能
-- 意思決定は分散化され、エグゼクティブは**監視・方向性設定**に集中
+### Implications of the Diamond Shape
+- **Reversed** from the traditional pyramid (small top, large bottom)
+- The middle AI+Expert layer is thickest, functioning as the organization's main force
+- Decision-making is decentralized; executives focus on **oversight and direction-setting**
 
 ## Agile Leadership Day: Agentic AI Workforce Org Chart
 
-2026年のAgile Leadership Day Indiaでは、より具体的な実装モデルが提示された:
+At Agile Leadership Day India 2026, a more concrete implementation model was presented:
 
-### 新しい組織構造の要素
-1. **AI-Augmented Workforce**: AIエージェントと人間のハイブリッドチーム
-2. **Agent Orchestration Layer**: エージェントの割り当て、優先順位付け、監視を行う中間層
-3. **Human-in-the-Loop Control**: 重要判断には人間の承認が必要。完全自律ではない
-4. **Continuous Learning Loop**: エージェントの出力を定期的に評価・改善
+### Elements of the New Organizational Structure
+1. **AI-Augmented Workforce**: Hybrid teams of AI agents and humans
+2. **Agent Orchestration Layer**: Middle layer for agent assignment, prioritization, and monitoring
+3. **Human-in-the-Loop Control**: Human approval required for critical decisions. Not fully autonomous
+4. **Continuous Learning Loop**: Periodic evaluation and improvement of agent outputs
 
-### 実装上の課題
-- エージェント間の依存関係管理
-- 責任の所在の明確化（誰が最終的にアカウンタブルか）
-- 人間の役割の再定義（監督者から**成果責任者**へ）
+### Implementation Challenges
+- Managing inter-agent dependencies
+- Clarifying accountability (who is ultimately accountable)
+- Redefining human roles (from supervisor to **outcome owner**)
 
-## 行動指針: CEO/リーダー向けチェックリスト
+## Action Guide: CEO/Leader Checklist
 
-| 優先度 | アクション |
+| Priority | Action |
 |--------|-----------|
-| **構造** | 報告ラインの監査 → スパンブレーカーの削除 → 戦略/顧客成果への直接整合 |
-| **コンテキスト** | 意思決定フレームワーク、市場プレイブック、文化規範の文書化 → エージェント摂取用に構造化 → ローカル保存、アクセス制御 |
-| **ガードレール** | 高速非同期実行と定期監視のバランス → 近視眼防止 → 共有意識の維持 |
+| **Structure** | Audit reporting lines → Remove span-breakers → Direct alignment to strategy/customer outcomes |
+| **Context** | Document decision frameworks, market playbooks, cultural norms → Structure for agent ingestion → Local storage, access control |
+| **Guardrails** | Balance fast async execution and periodic monitoring → Prevent myopia → Maintain shared awareness |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
-- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
--  — 開発者のAI活用ワークフロー
-- [[concepts/harness-engineering]] — エージェントの制御・構焦化
-- [[concepts/multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
+- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — From Block hierarchy to intelligence
+- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder and Super IC
+-  — Developer AI-utilization workflows
+- [[concepts/harness-engineering]] — Agent control and focusing
+- [[concepts/multi-agent-autonomy-scale]] — Large-scale multi-agent autonomy and scale
 
-## ソース
+## Sources
 
 - [McKinsey: The Agentic Organization (Sep 2025)](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era)
 - [Reworked: Humans and AI Agents — Planning the Org Chart of Tomorrow (Feb 2026)](https://www.reworked.co/employee-experience/humans-and-ai-agents-planning-the-org-chart-of-tomorrow/)

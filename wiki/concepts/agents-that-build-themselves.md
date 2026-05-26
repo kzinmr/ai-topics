@@ -17,30 +17,30 @@ aliases: [self-extending-agents, self-building-agents, self-writing-tools, softw
 
 # Agents That Build Themselves
 
-**自己拡張エージェント** — エージェントが自身のツールを書き、それをホットリロードし、実行時に能力を拡張していくパラダイム。Hugo Bowne-Anderson と Ivan Leo（ex-Manus, Google DeepMind）による2026年2月のワークショップで体系化された。
+**Self-extending agents** — a paradigm where agents write their own tools, hot-reload them, and extend their capabilities at runtime. Systematized in a February 2026 workshop by Hugo Bowne-Anderson and Ivan Leo (ex-Manus, Google DeepMind).
 
-> *"ソフトウェアがソフトウェアを構築する。エージェントが自分のハーネスを改造する。"*
+> *"Software building software. Agents modifying their own harness."*
 
 ## Core Concept
 
-従来のエージェント開発では、開発者がツールを定義し、エージェントはそれを使うだけだった。**Agents That Build Themselves** はこれを逆転させる：
+Conventionally in agent development, developers define tools and agents just use them. **Agents That Build Themselves** reverses this:
 
 ```
 User: "I need a tool that generates files with Notion-style timestamps"
-  → Agent reads agent_tools.py（自身のツール定義ファイル）
+  → Agent reads agent_tools.py (its own tool definition file)
   → Agent writes a new tool class (NotionFileCreator) following the factory pattern
   → Runtime detects file modification via st_mtime
   → importlib.reload() — new tool is registered instantly
   → Agent calls the tool IT JUST WROTE to complete the request
 ```
 
-このループは **双方向** に働く：エージェントはツールを**作成**できるだけでなく、**削除**もできる。ワークショップではエージェントが自身の bash ツールをコードから削除し、ランタイムがそれを検知してレジストリから除去するデモも行われた。
+This loop works **bidirectionally**: agents can **delete** tools as well as create them. The workshop demoed an agent removing its own bash tool from code, with the runtime detecting and removing it from the registry.
 
 ## The Three Enablers
 
-### 1. Factory Pattern（ツールファクトリー）
+### 1. Factory Pattern (Tool Factory)
 
-ツール定義をクラスとして分離し、実行ロジックとスキーマ生成を切り離す：
+Separate tool definitions as classes, decoupling execution logic from schema generation:
 
 ```python
 class AgentTool(BaseModel):
@@ -61,17 +61,17 @@ class ReadFile(AgentTool):
         return ToolResult(output=content)
 ```
 
-**利点**:
-- 新しいツール = 新しいクラスを `agent_tools.py` に追加するだけ
-- Pydantic が型ヒントから自動で function calling スキーマを生成
-- `execute()` メソッドは LLM なしで独立してテスト可能
-- ランタイムとエージェントループは**一切変更不要**
+**Benefits**:
+- New tool = just add a new class to `agent_tools.py`
+- Pydantic auto-generates function calling schema from type hints
+- `execute()` method is independently testable without an LLM
+- Runtime and agent loop are **never changed**
 
 > *"All you need to implement a new tool is define the parameters you want. These are automatically converted into a schema. And you can test your execute function independently of your model being called."* — Ivan Leo
 
-### 2. Hot Reload（ホットリロード）
+### 2. Hot Reload
 
-標準的な Python ランタイムはモジュールを一度だけロードする。エージェントが新しいツールを書いても、サーバー再起動が必要になる。ホットリロードがこれを解決する：
+Standard Python runtimes load modules once. An agent writing new tools would require a server restart. Hot reload solves this:
 
 ```python
 class AgentRuntime:
@@ -87,13 +87,13 @@ class AgentRuntime:
             self._tools_mtime = current_mtime
 ```
 
-`get_tools()` または `execute_tool()` が呼ばれる**毎回**、ファイルの変更をチェック。変更があれば `importlib.reload()` で新しいツールを即座に登録する。
+Every time `get_tools()` or `execute_tool()` is called, checks for file changes. If changed, `importlib.reload()` instantly registers new tools.
 
 > *"Because our tools are defined in another file we can just check when the file was last modified. All the tools — they're not concrete things. They're just definitions."*
 
-### 3. Hooks Architecture（フックシステム）
+### 3. Hooks Architecture (Hook System)
 
-自己拡張を実用的にするには、エージェントのアクションに対して副作用を合成可能にする必要がある：
+Making self-extension practical requires composable side effects for agent actions:
 
 ```python
 class Agent:
@@ -109,19 +109,19 @@ class Agent:
             await handler(**kwargs)
 ```
 
-- **Telegram 連携**もフックの一種 — `on_model_response` に Telegram 送信ハンドラを登録するだけで、コアループは一切変更不要
-- **Pretty output** — Rich ライブラリを使った構文ハイライトやビジュアル diff もフックで実装
-- **Logging/observability** — Logfire への記録もフックとして追加
+- **Telegram integration** is just a hook — register a Telegram send handler on `on_model_response`, zero changes to the core loop
+- **Pretty output** — Rich library syntax highlighting and visual diffs implemented as hooks
+- **Logging/observability** — Logfire recording added as a hook
 
 > *"Literally all we had to do to get the Telegram bot working wasn't any complex functionality — just define on_model_response and on_tool_result Telegram hooks. Everything works out of the box because you have very good primitives."*
 
-## Memory: Markdown Compaction（Markdownメモリ圧縮）
+## Memory: Markdown Compaction
 
-自己拡張エージェントが長期運用で有用であり続けるには、メモリが必要。OpenClaw のアプローチは**ベクトルDBも埋め込みも使わない**：
+For self-extending agents to remain useful long-term, they need memory. OpenClaw's approach uses **neither vector DBs nor embeddings**:
 
-1. 会話が閾値を超えたら、別の LLM コールで要約
-2. タイムスタンプ付き Markdown ファイルとして `memory/` フォルダに追記
-3. エージェントは起動時や必要に応じてこのファイルを読み返す
+1. When conversation exceeds a threshold, summarize with a separate LLM call
+2. Append to a timestamped Markdown file in the `memory/` folder
+3. Agent reads this file back at startup or as needed
 
 > *"People are so surprised that something simple like appending summaries to a markdown file works so well for memories. A lot of the love that OpenClaw has is just because the model can see the raw chats and the model can see the summaries."*
 
@@ -165,20 +165,20 @@ class Agent:
 └─────────────────────────────────────────────────┘
 ```
 
-## Progressive Disclosure（段階的開示）
+## Progressive Disclosure
 
-自己拡張の裏にある重要な設計原則：**ツールが多いほど高性能とは限らない**。
+A key design principle behind self-extension: **more tools is not always better**.
 
 > *"Imagine if someone gave you 200 tools to choose from every time you had to make a decision. You wouldn't even be able to finish reading all of the tools before you had to give a response."* — Hugo Bowne-Anderson
 
-Pi/OpenClaw の哲学：4つの基本ツール（read/write/edit/bash）から始め、必要に応じてエージェント自身がツールを追加していく。これにより：
-- コンテキストウィンドウの圧迫を避ける
-- モデルが「ツール選択の麻痺」に陥らない
-- 必要になった時にだけ能力を拡張する
+Pi/OpenClaw philosophy: Start with 4 basic tools (read/write/edit/bash); let the agent add tools as needed. This:
+- Avoids overwhelming the context window
+- Prevents the model from "tool selection paralysis"
+- Only extends capabilities when needed
 
 ## Safety: Runaway Loop Prevention
 
-自己拡張エージェントのリスクとして、ツール呼び出しの無限ループがある。OpenClaw の対策：
+Self-extending agent risk: infinite tool-call loops. OpenClaw's mitigation:
 
 ```python
 # Per-turn tool-call budget
@@ -202,25 +202,25 @@ calls_since_user_message = 0
 | Deployment | CLI / RPC / SDK | Modal sandbox | Modal sandbox |
 | Self-extension | Skills/packages | Skills + MCP | Agent writes own tool classes |
 
-このワークショップは **PiとOpenClawの設計思想を Pure Python で再構築** したもの。TypeScript や npm の依存なしに、同じ原則を実装できることを示している。
+This workshop is a **Pure Python reconstruction of Pi and OpenClaw's design philosophy**. It shows the same principles can be implemented without TypeScript or npm dependencies.
 
 ## Key Insights
 
-1. **ツールをクラスにするだけで、エージェントは自分でツールを書ける** — ファクトリーパターンはシンプルだが、自己拡張の扉を開く
-2. **`execute()` は初日から async に** — 実世界のエージェントはネットワークI/O待ちが大半を占める
-3. **フックがエージェントを合成可能にする** — Telegram連携もロギングも、コアループに一切手を加えずに追加できる
-4. **Markdown追記で十分なメモリになる** — ベクトルDBや埋め込みは不要
-5. **モデルへの「共感」が設計を変える** — 200個のツールを一度に渡すのではなく、段階的に開示する
+1. **Just making tools into classes lets agents write their own tools** — The factory pattern is simple but opens the door to self-extension
+2. **Make `execute()` async from day one** — Real-world agents spend most of their time waiting on network I/O
+3. **Hooks make agents composable** — Telegram integration, logging, all added without touching the core loop
+4. **Markdown appending is sufficient memory** — No vector DBs or embeddings needed
+5. **"Empathy" for the model changes design** — Don't give 200 tools at once; disclose progressively
 
 ## Armin Ronacher's Perspective: Agents Built for Agents Building Agents
 
-Armin Ronacher（Flask作者、[[entities/pi|Pi]] の主要ユーザー・推進者）による Pi の設計哲学の解説（[2026年1月](https://lucumr.pocoo.org/2026/1/31/pi/)）は、Hugo+Ivan のワークショップが実装した原則の**前提となる世界観**を提示している：
+Armin Ronacher (Flask creator, major Pi user/advocate) explains Pi's design philosophy ([January 2026](https://lucumr.pocoo.org/2026/1/31/pi/)), providing the **worldview that is the premise** for the principles Hugo+Ivan's workshop implemented:
 
 > *"Agents Built for Agents Building Agents — software that is malleable like clay. The agent maintains its own functionality."*
 
-### Session Trees（セッションツリー）
+### Session Trees
 
-Pi のセッションは**ツリー構造**を持ち、ブランチとナビゲーションが可能：
+Pi sessions have a **tree structure** with branching and navigation:
 
 ```
 Main session (building feature X)
@@ -229,41 +229,41 @@ Main session (building feature X)
   └── Branch: code review context (fresh, isolated)
 ```
 
-- サイドクエストのためにメインセッションのコンテキストを**浪費しない**
-- ツール修正後、メインセッションに戻ると Pi がブランチでの変更を要約
-- Hugo+Ivan の `RunState` 分離とは異なるアプローチだが、同じ「コンテキスト汚染の防止」という目標
+- Side-quests don't **waste** the main session's context
+- After tool fix, returning to main session, Pi summarizes the branch's changes
+- Different approach from Hugo+Ivan's `RunState` separation, but same goal: "preventing context pollution"
 
-### Extension State in Sessions（セッション内拡張状態）
+### Extension State in Sessions
 
-Pi の AI SDK は、モデルメッセージに加えて**カスタムメッセージ**をセッションファイルに保持する：
+Pi's AI SDK retains **custom messages** in session files in addition to model messages:
 
-- 拡張機能が状態を永続化（モデルには送信されない）
-- 複数プロバイダ間のセッション可搬性を維持（特定プロバイダの機能に依存しない）
-- Hugo+Ivan の `AgentContext`（外部依存注入）と `RunState`（可変状態）の分離に通じる設計
+- Extensions persist state (not sent to the model)
+- Maintain session portability across multiple providers (no dependency on specific provider features)
+- Design analogous to Hugo+Ivan's separation of `AgentContext` (external dependency injection) and `RunState` (mutable state)
 
 ### No MCP — By Philosophy, Not Laziness
 
 > *"Pi's entire idea is that if you want the agent to do something that it doesn't do yet, you don't go and download an extension or a skill. You ask the agent to extend itself."*
 
-- MCP は意図的な**非搭載** — 怠惰ではなく哲学
-- エージェントが自分でツールを書くことを**祝福**する設計
-- ダウンロードした拡張ではなく、エージェントに「あの拡張を見て、こう変更して」と指示する
+- MCP is intentionally **not supported** — it's philosophy, not laziness
+- Design that **celebrates** agents writing their own tools
+- Instead of downloaded extensions, tell the agent "look at that extension and modify it like this"
 
 ### Software Building Software — The Lived Experience
 
 > *"None of this was written by me, it was created by the agent to my specifications. I told Pi to make an extension and it did. There is no MCP, there are no community skills, nothing. They are hand-crafted by my clanker."*
 
-Armin の全拡張（ブラウザ自動化、コードレビュー、TODO管理、コミットメッセージ整形）は**エージェント自身が作成**したもの。この「ソフトウェアがソフトウェアを構築する」体験が、Pi への没頭を生んだ。
+All of Armin's extensions (browser automation, code review, TODO management, commit message formatting) were **created by the agent itself**. This "software building software" experience is what drove immersion in Pi.
 
 ### The Pipeline: Write → Reload → Test → Loop
 
-Pi のホットリロードは Hugo+Ivan の `importlib.reload()` と同じパターンだが、**テスト駆動**の要素が加わる：
+Pi's hot reload is the same pattern as Hugo+Ivan's `importlib.reload()`, but adds a **test-driven** element:
 
 ```
 Agent writes extension code → hot reload → agent tests it → fails → rewrites → reloads → passes
 ```
 
-これにより、エージェントが「動くまで繰り返す」自律的な改善ループが成立する。Hugo+Ivan のワークショップ（Step 5のフック + Step 6のエージェントループ）と補完的。
+This establishes an autonomous improvement loop of "iterate until it works." Complementary to Hugo+Ivan's workshop (Step 5 hooks + Step 6 agent loop).
 
 ## References
 

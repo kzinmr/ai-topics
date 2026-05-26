@@ -22,96 +22,96 @@ sources:
 
 # DeepSeek-V4
 
-DeepSeek-V4は、**100万トークン（1M）コンテキスト**の超高効率処理を実現したMixture-of-Experts（MoE）モデルシリーズ。DeepSeek-AIが2026年4月に発表。[[concepts/deepseek-v3|V3]]アーキテクチャを基盤に、**Hybrid Attention、Manifold-Constrained Hyper-Connections（mHC）、Muon Optimizer**など複数の革新的技術を導入し、1Mコンテキストでの推論コストをV3.2比で**3.7〜10倍削減**。
+DeepSeek-V4 is a Mixture-of-Experts (MoE) model series achieving ultra-efficient processing with a **1 million token (1M) context**. Announced by DeepSeek-AI in April 2026. Built on the [[concepts/deepseek-v3|V3]] architecture, it introduces multiple revolutionary technologies including **Hybrid Attention, Manifold-Constrained Hyper-Connections (mHC), and Muon Optimizer**, reducing inference costs at 1M context by **3.7–10×** compared to V3.2.
 
-## モデルラインナップ
+## Model Lineup
 
-| モデル | 総パラメータ | 活性化パラメータ | コンテキスト | ライセンス |
+| Model | Total Parameters | Active Parameters | Context | License |
 |--------|-------------|-----------------|-------------|-----------|
 | **V4-Pro** | 1.6T | 49B | 1M tokens | MIT |
 | **V4-Flash** | 284B | 13B | 1M tokens | MIT |
 | **V4-Pro-Max** | 1.6T+ | 49B+ (reasoning) | 1M tokens | MIT |
 
-## アーキテクチャ革新
+## Architectural Innovations
 
-### Hybrid Attention: 3層のハイブリッドアテンション
+### Hybrid Attention: 3-Layer Hybrid Attention
 
-従来の自己注意機構は系列長に対して二次計算量 $O(n^2)$ を持つ。1Mコンテキストではこれが致命的なボトルネックとなる。V4は3つの補完的アテンションをインターリーブしてこの問題を解決：
+Conventional self-attention has $O(n^2)$ quadratic complexity relative to sequence length. At 1M context, this becomes a fatal bottleneck. V4 solves this by interleaving three complementary attention mechanisms:
 
-| レイヤー | 方式 | 圧縮率 | アテンション | 役割 |
+| Layer | Method | Compression Ratio | Attention | Role |
 |---------|------|--------|-------------|------|
-| **CSA** (Compressed Sparse Attention) | KVキャッシュ圧縮 + Top-k疎Attention | m=4 | DeepSeek Sparse Attention (DSA) | 長距離依存の効率的捕捉 |
-| **HCA** (Heavily Compressed Attention) | 超圧縮（最大128x）+ 密Attention | m'=最大128 | Dense | グローバルコンテキストの粗粒度把握 |
-| **SWA** (Sliding Window Attention) | 局所ウィンドウ | 窓サイズ=128 | Dense | 局所的な細粒度依存関係の保存 |
+| **CSA** (Compressed Sparse Attention) | KV cache compression + Top-k sparse attention | m=4 | DeepSeek Sparse Attention (DSA) | Efficient capture of long-range dependencies |
+| **HCA** (Heavily Compressed Attention) | Ultra-compressed (up to 128x) + dense attention | m'=up to 128 | Dense | Coarse-grained global context awareness |
+| **SWA** (Sliding Window Attention) | Local window | window size=128 | Dense | Preservation of local fine-grained dependencies |
 
-**アーキテクチャ上の特徴**:
-- CSAはクエリが圧縮KVの上位kエントリのみに注目 → 計算量を大幅削減
-- HCAは極端な圧縮によりグローバルな文脈を低コストで保持
-- SWAは局所パターン（隣接トークン間の文法・構文など）を逃さない
-- 3層の出力はゲーティング機構で統合（詳細は非公開）
+**Architectural characteristics**:
+- CSA has queries attending only to top-k entries of compressed KV → dramatically reduces computation
+- HCA maintains global context at low cost through extreme compression
+- SWA ensures local patterns (grammar/syntax between adjacent tokens, etc.) are not missed
+- Outputs of the 3 layers are integrated via a gating mechanism (details undisclosed)
 
 ### Manifold-Constrained Hyper-Connections (mHC)
 
-従来の残差結合（Residual Connection）を拡張し、残差マッピングを**二重確率行列（doubly stochastic matrices）**の多様体上に制約。
+Extends conventional residual connections by constraining the residual mapping onto the manifold of **doubly stochastic matrices**.
 
 $$x_{l+1} = x_l + f_\theta(x_l) \quad \rightarrow \quad x_{l+1} = M(x_l) \cdot f_\theta(x_l)$$
 
-ここで $M(x_l)$ は二重確率行列（各行・各列の和が1、全要素 ≥ 0）。
+Where $M(x_l)$ is a doubly stochastic matrix (each row and column sums to 1, all elements $\geq$ 0).
 
-- **スペクトルノルム ≤ 1**: 順伝播・逆伝播の数値的安定性が飛躍的に向上
-- **効果**: 1Mコンテキストのような超深層・長系列での勾配消失/爆発を抑制
-- V3の補助損失なし負荷分散と同様、訓練安定性を損なわずにモデル深度を拡張可能
+- **Spectral norm $\leq$ 1**: Dramatically improves numerical stability in forward and backward propagation
+- **Effect**: Suppresses vanishing/exploding gradients in ultra-deep, long-sequence scenarios like 1M context
+- Like V3's auxiliary-loss-free load balancing, enables extending model depth without compromising training stability
 
 ### Muon Optimizer
 
-大部分のモジュールでAdamWを**Muon**に置換。
+Replaces AdamW with **Muon** in most modules.
 
-- **Hybrid Newton-Schulz Iterations**: 直交化のための数値手法。行列の直交性を反復的に改善
-- **効果**: AdamW比で収束が高速化、訓練安定性が向上
-- **適用範囲**: Attention投影行列、MLP重みなど主要モジュール。MoEルーティングなど一部はAdamWを継続使用
+- **Hybrid Newton-Schulz Iterations**: Numerical method for orthogonalization. Iteratively improves matrix orthogonality
+- **Effect**: Faster convergence and improved training stability compared to AdamW
+- **Scope**: Major modules such as attention projection matrices, MLP weights. Some areas like MoE routing continue using AdamW
 
-## 訓練インフラ
+## Training Infrastructure
 
-### データセット
+### Dataset
 
-**32T+トークン**の多様な高品質データで事前学習。V3（14.8T）の2倍以上のデータ規模。
+Pretrained on **32T+ tokens** of diverse, high-quality data. More than double V3's data scale (14.8T).
 
-### 訓練安定化技術
+### Training Stabilization Techniques
 
-**Anticipatory Routing（予測的ルーティング）**:
-- MoEのルーティング更新をバックボーン更新から分離
-- ルーティングインデックスを履歴パラメータ $\theta_{t-\Delta t}$ で計算
-- **目的**: ルーティングの急激な変化による損失スパイクを防止
-- V3の「ゼロロールバック」安定性をさらに強化
+**Anticipatory Routing**:
+- Decouples MoE routing updates from backbone updates
+- Computes routing indices using historical parameters $\theta_{t-\Delta t}$
+- **Purpose**: Prevent loss spikes from abrupt routing changes
+- Further strengthens V3's "zero rollback" stability
 
 **SwiGLU Clamping**:
-- SwiGLU活性化関数の線形成分を $[-10, 10]$ にクランプ
-- 活性化の極端な外れ値を抑制し、FP8/FP4低精度訓練の安定性を確保
+- Clamps the linear component of the SwiGLU activation function to $[-10, 10]$
+- Suppresses extreme activation outliers, ensuring stability for FP8/FP4 low-precision training
 
-### MegaMoE: 細粒度Expert Parallelism
+### MegaMoE: Fine-Grained Expert Parallelism
 
-V4の最大のシステム革新の一つ。
+One of V4's biggest system innovations.
 
-- **通信と計算の融合**: all-to-all通信を単一のパイプライン化カーネルに統合
-- **帯域効率**: 「1 GBpsのインターコネクト帯域が6.1 TFLOP/sの計算を隠蔽するのに十分」
-- H800 GPUのインターコネクト制約（~400 GBps NVLink）を最大限活用
+- **Fusion of communication and computation**: Unifies all-to-all communication into a single pipelined kernel
+- **Bandwidth efficiency**: "1 GBps of interconnect bandwidth is sufficient to hide 6.1 TFLOP/s of computation"
+- Maximally leverages H800 GPU interconnect constraints (~400 GBps NVLink)
 
 ### TileLang DSL
 
-カスタムカーネル開発のためのドメイン特化言語。
+A domain-specific language for custom kernel development.
 
-| 機能 | 効果 |
+| Feature | Effect |
 |------|------|
-| **Host Codegen** | CPU側オーケストレーションのオーバーヘッドを数百μs → <1μsに削減 |
-| **Deterministic Kernels** | 非決定的atomic操作を回避し、訓練と推論でビット単位の再現性を保証 |
-| **Fused Kernels** | 複数操作を単一カーネルに融合し、HBM読み書きを最小化 |
+| **Host Codegen** | Reduces CPU-side orchestration overhead from hundreds of μs → <1μs |
+| **Deterministic Kernels** | Avoids non-deterministic atomic operations, guaranteeing bit-level reproducibility between training and inference |
+| **Fused Kernels** | Fuses multiple operations into a single kernel, minimizing HBM reads/writes |
 
-## 効率性: V3.2との比較（1Mコンテキスト時）
+## Efficiency: Comparison with V3.2 (at 1M Context)
 
-| 指標 | V4-Pro vs V3.2 | V4-Flash vs V3.2 |
+| Metric | V4-Pro vs V3.2 | V4-Flash vs V3.2 |
 |------|---------------|-----------------|
-| **トークンあたりFLOPs** | 27%（**3.7x削減**） | 10%（**10x削減**） |
-| **KVキャッシュサイズ** | 10%（**10x削減**） | 7%（**14x削減**） |
+| **FLOPs per token** | 27% (**3.7× reduction**) | 10% (**10× reduction**) |
+| **KV cache size** | 10% (**10× reduction**) | 7% (**14× reduction**) |
 
 ### KV-Cache Reduction: 2% of Baseline
 
@@ -125,89 +125,88 @@ DeepSeek V4 compressed attention achieves **KV-cache at just 2%** of naive atten
 
 A model needing 1TB KV-cache with standard attention needs only ~20GB — enabling single-node inference.
 
+> At 1M context, V4-Pro's FLOPs are approximately 1/4 of V3.2's, and KV cache is 1/10. This is due to the synergistic effect of Hybrid Attention and mHC.
 
-> 1MコンテキストでV4-ProのFLOPsはV3.2の約1/4、KVキャッシュは1/10。これはHybrid AttentionとmHCの相乗効果による。
+## Post-Training
 
-## ポストトレーニング
-
-### 2段階パイプライン
+### 2-Stage Pipeline
 
 ```
 Specialist Training → On-Policy Distillation (OPD)
 ```
 
-**Stage 1: Specialist Training（専門家訓練）**
-- 数学・コード・エージェントの各ドメインで個別の専門家モデルを訓練
-- 手法: SFT + [[concepts/grpo|GRPO]]
-- 各専門家は特定ドメインで極限まで最適化
+**Stage 1: Specialist Training**
+- Trains individual specialist models in each domain: math, code, agents
+- Method: SFT + [[concepts/grpo|GRPO]]
+- Each specialist is optimized to the limit in a specific domain
 
 **Stage 2: On-Policy Distillation (OPD)**
-- 複数の教師専門家の**全語彙ロジット分布**から単一の生徒モデルが学習
-- 従来の蒸留（離散出力のみ）より情報損失が少ない
-- 複数ドメインの能力を単一モデルに統合
+- A single student model learns from the **full vocabulary logit distributions** of multiple teacher specialists
+- Less information loss than conventional distillation (discrete outputs only)
+- Integrates multi-domain capabilities into a single model
 
-### エージェント機能
+### Agent Features
 
-**Interleaved Thinking（インターリーブド推論）**:
-- V3.2まで：推論トレースはツール呼び出し境界でリセット
-- V4：ユーザーメッセージ境界を越えて推論トレースを保持・継続
-- 複数ツール呼び出しを含む複雑なエージェントタスクで性能向上
+**Interleaved Thinking**:
+- V3.2 and earlier: reasoning trace reset at tool call boundaries
+- V4: Maintains and continues reasoning trace across user message boundaries
+- Improves performance on complex agent tasks involving multiple tool calls
 
 **Quick Instruction**:
-- `<|action|>` や `<|query|>` の特殊トークンで補助タスク（Web検索意図検出など）を処理
-- 別の小型モデルを必要としない → レイテンシ削減
+- Processes auxiliary tasks (e.g., web search intent detection) via special tokens like `<|action|>` or `<|query|>`
+- No separate small model needed → latency reduction
 
-### FP4 QAT（量子化アウェア訓練）
+### FP4 QAT (Quantization-Aware Training)
 
-| 適用箇所 | 目的 |
+| Application Area | Purpose |
 |---------|------|
-| MoEエキスパート重み | メモリトラフィック削減（FP16比75%減） |
-| CSAインデクサーパス | インデックス計算の高速化 |
+| MoE expert weights | Memory traffic reduction (75% reduction vs FP16) |
+| CSA indexer path | Accelerate index computation |
 
-FP4はFP8のさらに半分のビット幅。ただし活性化はFP8/BF16を維持し、重みのみFP4化するハイブリッド戦略。
+FP4 has half the bit width of FP8. However, activations remain FP8/BF16, with only weights quantized to FP4 — a hybrid strategy.
 
-## ベンチマーク
+## Benchmarks
 
-### 推論・コーディング
+### Reasoning & Coding
 
-| Benchmark | V4-Pro-Max | 比較対象 |
+| Benchmark | V4-Pro-Max | Comparison |
 |-----------|-----------|---------|
-| **Codeforces** | **3206 rating**（人間23位相当） | — |
-| Code Agents (内部R&D) | 67% pass rate | Claude Opus 4.5: 70% |
-| 数学・推論 | GPT-5.2, Gemini-3.0-Proに匹敵以上 | — |
+| **Codeforces** | **3206 rating** (equivalent to human rank ~23) | — |
+| Code Agents (internal R&D) | 67% pass rate | Claude Opus 4.5: 70% |
+| Math/Reasoning | Comparable or superior to GPT-5.2, Gemini-3.0-Pro | — |
 
-### 知識・言語
+### Knowledge & Language
 
-| Benchmark | V4-Pro-Max | 比較 |
+| Benchmark | V4-Pro-Max | Comparison |
 |-----------|-----------|------|
-| SimpleQA | 57.9% | オープンモデル最高 |
+| SimpleQA | 57.9% | Best open model |
 | Chinese-SimpleQA | 84.4% | — |
-| 中国語機能作文 | 62.7% win rate | vs Gemini-3.1-Pro |
+| Chinese Functional Writing | 62.7% win rate | vs Gemini-3.1-Pro |
 
-### 実タスク
+### Real Tasks
 
-| タスク | V4-Pro-Max | 比較 |
+| Task | V4-Pro-Max | Comparison |
 |--------|-----------|------|
-| 高度専門職30タスク | **63% non-loss rate** | vs Claude Opus 4.6 |
-| 長文コンテキスト | Gemini-3.1-Pro超え | 学術ベンチマーク |
+| 30 Advanced Professional Tasks | **63% non-loss rate** | vs Claude Opus 4.6 |
+| Long-Context | Surpasses Gemini-3.1-Pro | Academic benchmarks |
 
-## V3からの進化サマリー
+## Evolution Summary from V3
 
-| 次元 | DeepSeek-V3 (Dec 2024) | DeepSeek-V4 (Apr 2026) |
+| Dimension | DeepSeek-V3 (Dec 2024) | DeepSeek-V4 (Apr 2026) |
 |------|----------------------|----------------------|
-| **最大パラメータ** | 671B / 37B active | 1.6T / 49B active |
-| **コンテキスト** | 128K | **1M** |
-| **アテンション** | MLA | **Hybrid Attention (CSA+HCA+SWA)** |
-| **残差結合** | 標準Residual | **mHC (多様体制約)** |
-| **Optimizer** | AdamW | **Muon (+ AdamW一部)** |
-| **データ規模** | 14.8T tokens | **32T+ tokens** |
-| **訓練安定化** | Aux-Loss-Free | Anticipatory Routing + SwiGLU Clamping |
-| **Expert Parallelism** | 標準 | **MegaMoE** |
-| **カーネル開発** | CUDA手書き | **TileLang DSL** |
-| **ポストトレーニング** | SFT + GRPO + R1蒸留 | **Specialist Training + OPD** |
-| **量子化** | FP8 | **FP4 QAT (重みのみ)** |
-| **エージェント** | — | Interleaved Thinking, Quick Instruction |
-| **コード** | Codeforces 1134 | **Codeforces 3206** |
+| **Max Parameters** | 671B / 37B active | 1.6T / 49B active |
+| **Context** | 128K | **1M** |
+| **Attention** | MLA | **Hybrid Attention (CSA+HCA+SWA)** |
+| **Residual Connections** | Standard Residual | **mHC (manifold-constrained)** |
+| **Optimizer** | AdamW | **Muon (+ AdamW partially)** |
+| **Data Scale** | 14.8T tokens | **32T+ tokens** |
+| **Training Stabilization** | Aux-Loss-Free | Anticipatory Routing + SwiGLU Clamping |
+| **Expert Parallelism** | Standard | **MegaMoE** |
+| **Kernel Development** | CUDA hand-written | **TileLang DSL** |
+| **Post-Training** | SFT + GRPO + R1 distillation | **Specialist Training + OPD** |
+| **Quantization** | FP8 | **FP4 QAT (weights only)** |
+| **Agents** | — | Interleaved Thinking, Quick Instruction |
+| **Code** | Codeforces 1134 | **Codeforces 3206** |
 
 ## Serving DeepSeek-V4 (Together AI, May 2026)
 
@@ -241,41 +240,40 @@ The same V4 weights need different serving configurations for different workload
 
 ## Community Reception & Independent Benchmarks (HN)
 
-Hacker NewsでのV4公開議論 ([thread](https://news.ycombinator.com/item?id=47884971)) から抽出された重要知見：
+Key findings extracted from the V4 launch discussion on Hacker News ([thread](https://news.ycombinator.com/item?id=47884971)):
 
-### コミュニティベンチマーク
+### Community Benchmarks
 
-| Benchmark | V4-Pro-Max | 文脈 |
+| Benchmark | V4-Pro-Max | Context |
 |-----------|-----------|------|
-| **SWE-bench Verified** | **80.6%** | 初のオープンウェイトモデルで80%超え |
-| PhD-level数学 | 高評価 | 確率論・統計・ランダム行列理論でGeminiより厳密な証明 |
-| システム設計・リファクタリング | Claude 3.5 Opusに匹敵 | — |
-| カスタマーサポート (Flash) | Gemini-3-Flash同等以上 | Qwen 3.5超え、かつ安価 |
-| ホワイトカラータスク | V4-Pro ≥ Claude 3.5 Sonnet | ただしOpus 4.6 (Thinking有効) には及ばず |
+| **SWE-bench Verified** | **80.6%** | First open-weight model to exceed 80% |
+| PhD-level math | Highly rated | More rigorous proofs than Gemini in probability theory, statistics, random matrix theory |
+| System design/refactoring | Comparable to Claude 3.5 Opus | — |
+| Customer support (Flash) | Equivalent or better than Gemini-3-Flash | Surpasses Qwen 3.5, and cheaper |
+| White-collar tasks | V4-Pro ≥ Claude 3.5 Sonnet | But falls short of Opus 4.6 (Thinking enabled) |
 
-### ローカル推論
+### Local Inference
 
-- **V4-Flash**: ネイティブ重み ~154GB → **Mac Studio M3 Ultra (512GB RAM)** で実行可能
-- **V4-Pro**: フル精度 ~800GB、大規模量子化 ~400GB+ → データセンター級VRAMが必要
-- MITライセンス、オープンウェイト → 制限なしの自由な展開が可能
+- **V4-Flash**: Native weights ~154GB → runnable on **Mac Studio M3 Ultra (512GB RAM)**
+- **V4-Pro**: Full precision ~800GB, heavily quantized ~400GB+ → requires data-center-grade VRAM
+- MIT license, open weights → unrestricted free deployment possible
 
-### 開発者体験
+### Developer Experience
 
-| 項目 | 評価 |
+| Item | Evaluation |
 |------|------|
-| ドキュメント | 「no-BS」と高評価 |
-| エージェント統合 | Aider, Claude Code, Zedで動作 |
-| API制限 | JSON Schema・Batch API未対応 |
-| 安定性 | ローンチ時に「429 Overload」多発 |
+| Documentation | Praised as "no-BS" |
+| Agent Integration | Works with Aider, Claude Code, Zed |
+| API Limitations | No JSON Schema or Batch API support |
+| Stability | Frequent "429 Overload" at launch |
 
-### 地政学的側面
+### Geopolitical Aspects
 
-- **検閲**: 中国ホストAPIは政治的トピック（天安門事件、台湾など）で検閲。ただし**ローカル版・量子化版では制限回避可能**との報告
-- **「hard refusal」選好**: 一部ユーザーは中国モデルの「明確な拒否」を、西洋モデルの「説教臭い回避（moralizing/white-washing）」より好む
-- **ダンピング戦略**: 市場シェア獲得のための超低価格戦略と分析する声
-- **制裁の実効性への疑問**: 米国の半導体輸出規制下でもフロンティア級AIの構築が可能であることを実証
-- **「欧州オプション」**: Mistral・Kyutaiが低コスト中国モデルと高性能米国モデルの狭間で板挟み
-
+- **Censorship**: China-hosted API censors political topics (Tiananmen Square, Taiwan, etc.). However, reports indicate that **local/quantized versions can bypass restrictions**
+- **Preference for "hard refusal"**: Some users prefer Chinese models' "explicit refusal" over Western models' "moralizing/white-washing"
+- **Dumping strategy**: Analyzed by some as an ultra-low-price strategy to capture market share
+- **Questions about sanctions effectiveness**: Demonstrates that frontier-grade AI can be built even under US semiconductor export controls
+- **"European option"**: Mistral/Kyutai caught between low-cost Chinese models and high-performance US models
 
 ## Pricing: Permanent 75% Cut (May 2026)
 
@@ -292,28 +290,28 @@ This pricing move is directly connected to [[concepts/model-labs-to-agent-labs]]
 
 **See also**: [[concepts/model-labs-to-agent-labs]] for the industry context of model economics deflation.
 
-## 歴史的意義
+## Historical Significance
 
-DeepSeek-V4は以下の点でマイルストーン的成果：
+DeepSeek-V4 is a milestone achievement in the following respects:
 
-1. **1Mコンテキストの実用化**: Hybrid Attentionにより、100万トークン長の処理を実用的なコストで実現
-2. **効率革命**: V3.2比でFLOPs 3.7-10x削減、KVキャッシュ10-14x削減 → 長文推論の経済性を根本から変革
-3. **mHC**: 残差結合に多様体制約を導入する新しい正則化パラダイム
-4. **MegaMoE + TileLang**: ハードウェア限界を克服するシステムソフトウェア革新
-5. **On-Policy Distillation**: 複数専門家の全ロジット分布から学習する新しい蒸留パラダイム
-6. **Agent-Native Design**: Interleaved Thinking、Quick Instruction — 最初からエージェント用途を想定した初のDeepSeekモデル
-7. **SWE-bench 80.6%**: オープンウェイトモデルとして初めて80%の壁を突破。コーディングエージェント性能の民主化における画期的到達点
+1. **Practical 1M context**: Hybrid Attention enables processing million-token-length sequences at practical cost
+2. **Efficiency revolution**: 3.7-10× FLOPs reduction, 10-14× KV cache reduction vs V3.2 → fundamentally transforms the economics of long-context inference
+3. **mHC**: A new regularization paradigm introducing manifold constraints to residual connections
+4. **MegaMoE + TileLang**: System software innovations overcoming hardware limitations
+5. **On-Policy Distillation**: A new distillation paradigm learning from full logit distributions of multiple specialists
+6. **Agent-Native Design**: Interleaved Thinking, Quick Instruction — the first DeepSeek model designed from the start for agent use cases
+7. **SWE-bench 80.6%**: First open-weight model to break the 80% barrier. A landmark achievement in democratizing coding agent performance
 
-## 関連項目
+## Related Pages
 
-- [[entities/deepseek]] — DeepSeek企業概要
-- [[concepts/deepseek-v3]] — 前世代アーキテクチャ
-- [[concepts/deepseek-v3-2]] — 直前世代（DSA、スケーラブルRL、エージェント合成）
-- [[concepts/deepseek-r1]] — 推論特化モデル（GRPOの起源）
-- [[concepts/grpo]] — ポストトレーニングで使用されるRLアルゴリズム
-- [[concepts/mixture-of-experts]] — MoEアーキテクチャ一般
-- [[long-context]] — 長文コンテキスト処理技術
-- [[concepts/speculative-decoding]] — 投機的デコーディング
-- [[fp4]] — 4ビット量子化
-- [[tilelang]] — カーネル開発DSL
-- [[concepts/inference]] — 推論効率化技術
+- [[entities/deepseek]] — DeepSeek company overview
+- [[concepts/deepseek-v3]] — Previous generation architecture
+- [[concepts/deepseek-v3-2]] — Immediate predecessor (DSA, scalable RL, agent synthesis)
+- [[concepts/deepseek-r1]] — Reasoning-specialized model (origin of GRPO)
+- [[concepts/grpo]] — RL algorithm used in post-training
+- [[concepts/mixture-of-experts]] — MoE architecture in general
+- [[long-context]] — Long-context processing techniques
+- [[concepts/speculative-decoding]] — Speculative decoding
+- [[fp4]] — 4-bit quantization
+- [[tilelang]] — Kernel development DSL
+- [[concepts/inference]] — Inference optimization techniques

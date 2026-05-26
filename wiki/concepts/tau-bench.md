@@ -23,231 +23,231 @@ related:
 
 # τ-bench
 
-> τ-bench（Tool-Agent-User Interaction Benchmark）は、Sierra AI Research が開発した AI エージェント評価のためのベンチマークスイート。単なるタスク成功率の測定を超え、**複数ターン対話**・**ドメインポリシー遵守**・**信頼性（pass^k）** の三次元でエージェントを総合評価する。2024年6月の初版公開から2026年3月の τ³-Bench まで急速に拡張され、業界標準のデファクト評価基盤として定着した。
+> τ-bench (Tool-Agent-User Interaction Benchmark) is a benchmark suite for AI agent evaluation developed by Sierra AI Research. Going beyond simple task success rate measurement, it comprehensively evaluates agents across three dimensions: **multi-turn dialogue**, **domain policy compliance**, and **reliability (pass^k)**. From its initial release in June 2024 to τ³-Bench in March 2026, it rapidly expanded and established itself as the de facto industry-standard evaluation infrastructure.
 
-## 目次
+## Contents
 
-1. [τ-bench の評価哲学](#τ-bench-の評価哲学)
-2. [アーキテクチャ](#アーキテクチャ)
-3. [初版 τ-bench（2024年6月）](#初版-τ-bench2024年6月)
-4. [主要な数値](#主要な数値)
-5. [エコシステムの進化](#エコシステムの進化)
-6. [産業インパクト](#産業インパクト)
-7. [Shunyu Yao の評価哲学との接続](#shunyu-yao-の評価哲学との接続)
-8. [関連ページ](#関連ページ)
+1. [τ-bench Evaluation Philosophy](#τ-bench-evaluation-philosophy)
+2. [Architecture](#architecture)
+3. [Initial τ-bench (June 2024)](#initial-τ-bench-june-2024)
+4. [Key Metrics](#key-metrics)
+5. [Ecosystem Evolution](#ecosystem-evolution)
+6. [Industry Impact](#industry-impact)
+7. [Connection to Shunyu Yao's Evaluation Philosophy](#connection-to-shunyu-yaos-evaluation-philosophy)
+8. [Related Pages](#related-pages)
 
-## τ-bench の評価哲学
+## τ-bench Evaluation Philosophy
 
-τ-bench の設計思想は、「現実世界にデプロイ可能な AI エージェントを評価するには、単一ターンの質問応答やツール呼び出しの正確さだけでは不十分である」という洞察に基づいている。τ-bench が重視する3つの評価軸：
+τ-bench's design philosophy is based on the insight that "evaluating agents deployable in the real world requires more than single-turn Q&A accuracy or tool calling precision." τ-bench emphasizes three evaluation axes:
 
-### 1. マルチターン対話（Tool-Agent-User Interaction）
+### 1. Multi-Turn Dialogue (Tool-Agent-User Interaction)
 
-エージェントは LM がシミュレートするユーザーとの複数ターンにわたる対話を通じてタスクを遂行する。ユーザーは指示書（user instruction）に基づき多様な発話を生成し、エージェントはその都度適切に応答・ツール操作を行う必要がある。単純な Q&A では検出できない対話管理能力（文脈維持、質問の言い換えへの対応、あいまいな要求の明確化など）が評価対象となる。
+Agents perform tasks through multi-turn dialogues with users simulated by LMs. Users generate diverse utterances based on user instructions, and agents must respond appropriately and perform tool operations each time. Dialogue management capabilities undetectable in simple Q&A (context maintenance, handling paraphrased questions, clarifying ambiguous requests, etc.) are evaluated.
 
-### 2. ドメインポリシー遵守（Policy Following）
+### 2. Domain Policy Compliance (Policy Following)
 
-各ドメインには現実世界の業務ルールを模したポリシー文書が付属する。航空券の変更手数料規則、返品可能期間、特定商品カテゴリの例外規定など。エージェントはポリシーに違反せずにタスクを遂行しなければならず、「ポリシーを守りつつ顧客満足度を最大化する」という現実的なジレンマが組み込まれている。
+Each domain comes with policy documents simulating real-world business rules. Airline ticket change fee regulations, return-eligible periods, exception provisions for specific product categories, etc. Agents must complete tasks without violating policies, incorporating the realistic dilemma of "maximizing customer satisfaction while adhering to policies."
 
-### 3. 信頼性評価 — pass^k メトリクス
+### 3. Reliability Evaluation — pass^k Metric
 
-τ-bench 最大の革新の一つ。同一タスクを k 回の独立試行で実行し、**全試行で成功する確率**を pass^k として測定する。単発の pass@1 では隠れてしまう「一貫性のなさ」を可視化し、実運用における信頼性を定量評価する。
+One of τ-bench's greatest innovations. The same task is executed over k independent trials, and the **probability of succeeding in all trials** is measured as pass^k. This visualizes "inconsistency" hidden by single pass@1 measurements and quantitatively evaluates operational reliability.
 
-> 「state-of-the-art な function calling エージェント（GPT-4o など）でも、タスク成功率は 50% 未満であり、一貫性に著しく欠ける（retail での pass^8 < 25%）」
-> — τ-bench 論文 Abstract
+> "Even state-of-the-art function calling agents (such as GPT-4o) achieve task success rates below 50% and lack consistency significantly (pass^8 < 25% on retail)"
+> — τ-bench paper Abstract
 
-## アーキテクチャ
+## Architecture
 
-τ-bench の評価フレームワークは以下の4つのモジュールから構成される：
+τ-bench's evaluation framework consists of four modules:
 
-| モジュール | 内容 | 役割 |
+| Module | Content | Role |
 |-----------|------|------|
-| **DB（データベース）** | ドメインの永続状態（予約情報、在庫、顧客データなど） | タスクの正解状態との比較による自動評価 |
-| **API** | ドメイン固有のツール群（検索、予約変更、返品処理など） | エージェントの操作対象 |
-| **Policy Document** | 業務ルールを記述した自然言語文書 | エージェントが遵守すべき制約の定義 |
-| **User Instruction** | LM模擬ユーザーへの指示書（目標・制約・性格） | 多様なユーザー挙動の生成 |
+| **DB (Database)** | Domain persistent state (reservation info, inventory, customer data, etc.) | Automatic evaluation via comparison with ground-truth task states |
+| **API** | Domain-specific tools (search, reservation changes, return processing, etc.) | Agent's operational targets |
+| **Policy Document** | Natural language documents describing business rules | Definition of constraints agents must follow |
+| **User Instruction** | Instructions to LM-simulated users (goals, constraints, personality) | Generation of diverse user behaviors |
 
-### 評価方式：DB 状態比較
+### Evaluation Method: DB State Comparison
 
-タスク完了時のデータベース状態と事前定義された正解状態を比較することで、自動かつ忠実な評価を実現。人間の評価者を介さずにスケーラブルな評価が可能でありながら、結果の信頼性も担保される。この設計は、後続の τ²-bench や τ³-Bench にも一貫して継承されている。
+Automatic and faithful evaluation is achieved by comparing the database state at task completion with predefined ground-truth states. This enables scalable evaluation without human evaluators while maintaining result reliability. This design has been consistently inherited by subsequent τ²-bench and τ³-Bench.
 
-## 初版 τ-bench（2024年6月）
+## Initial τ-bench (June 2024)
 
-### 基本情報
+### Basic Information
 
-- **論文**: "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains"
-- **著者**: Shunyu Yao, Noah Shinn, Pedram Razavi, Karthik Narasimhan
-- **発表**: arXiv 2024年6月17日 / ICLR 2025 採択
-- **所属**: Sierra AI Research（当時）
+- **Paper**: "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains"
+- **Authors**: Shunyu Yao, Noah Shinn, Pedram Razavi, Karthik Narasimhan
+- **Published**: arXiv June 17, 2024 / Accepted at ICLR 2025
+- **Affiliation**: Sierra AI Research (at the time)
 
-### 初期ドメイン
+### Initial Domains
 
-| ドメイン | タスク内容 | 特徴 |
+| Domain | Task Content | Characteristics |
 |---------|-----------|------|
-| **τ-airline** | 航空券の予約変更・キャンセル | 複雑な予約API + 航空会社ポリシー（変更手数料、アップグレード規則、キャンセル規定） |
-| **τ-retail** | オンラインショッピングの返品・交換 | 在庫管理API + 返品ポリシー（返品期限、商品カテゴリ別ルール、返金方法の選択肢） |
+| **τ-airline** | Flight reservation changes and cancellations | Complex reservation API + airline policies (change fees, upgrade rules, cancellation provisions) |
+| **τ-retail** | Online shopping returns and exchanges | Inventory management API + return policies (return deadlines, product category rules, refund method options) |
 
-### 設計上の特徴
+### Design Features
 
-1. **LM シミュレートユーザー**: 指示書に基づいて多様なユーザー発話を生成。同一タスクでもユーザーの振る舞いにバリエーションが生まれ、過適合を防ぐ
-2. **データベース状態比較評価**: 会話終了時の DB 状態と正解状態を比較し、効率的かつ忠実な自動評価を実現
-3. **pass^k メトリクス**: k 回の独立試行すべてで成功する確率を測定し、エージェントの信頼性を評価
-4. **モジュラーフレームワーク**: DB、API、ポリシー文書、ユーザー指示書を分離し、新ドメイン追加を容易に
+1. **LM-Simulated Users**: Diverse user utterances generated based on instructions. User behavior variations across the same task prevent overfitting
+2. **Database State Comparison Evaluation**: Efficient and faithful automatic evaluation by comparing DB state at conversation end with ground truth
+3. **pass^k Metric**: Measuring probability of success across k independent trials to evaluate agent reliability
+4. **Modular Framework**: Separating DB, API, policy documents, and user instructions for easy new domain addition
 
-## 主要な数値
+## Key Metrics
 
-### 初版 τ-bench スコア（2024年）
+### Initial τ-bench Scores (2024)
 
-| モデル | τ-airline pass@1 | τ-retail pass@1 | τ-retail pass^8 |
+| Model | τ-airline pass@1 | τ-retail pass@1 | τ-retail pass^8 |
 |--------|-----------------|-----------------|-----------------|
 | GPT-4o | < 50% | < 50% | < 25% |
-| GPT-4 Turbo | データ未公表 | データ未公表 | データ未公表 |
-| Claude 3.5 Sonnet | データ未公表 | データ未公表 | データ未公表 |
+| GPT-4 Turbo | Data undisclosed | Data undisclosed | Data undisclosed |
+| Claude 3.5 Sonnet | Data undisclosed | Data undisclosed | Data undisclosed |
 
-> **核心的発見**: state-of-the-art function calling エージェントでも単独タスク成功率は 50% を下回り、信頼性（複数試行での一貫性）はさらに低い。エージェントの一貫性のなさが最大の課題として浮き彫りになった。
+> **Core finding**: Even state-of-the-art function calling agents achieve single-task success rates below 50%, with reliability (consistency across multiple trials) even lower. Agent inconsistency emerged as the greatest challenge.
 
-### τ²-bench スコア（2025年6月）
+### τ²-bench Scores (June 2025)
 
-| モード | 特徴 | 性能変化 |
+| Mode | Characteristics | Performance Change |
 |--------|------|---------|
-| **Solo mode** | エージェントが全ての操作を単独実行（従来型） | ベースライン |
-| **Interactive mode** | エージェントがユーザーをガイドしつつ協調操作 | Solo → Interactive への移行で**最大 -25pt の成功率低下** |
+| **Solo mode** | Agent performs all operations alone (traditional) | Baseline |
+| **Interactive mode** | Agent guides user while coordinating operations | Solo → Interactive transition shows **max -25pt success rate drop** |
 
-- GPT-4.1 / o4-mini 等の最先端 LLM でも、協調タスクの管理能力に限界
-- エラー分析の分離により、推論エラーとコミュニケーション/調整エラーの区別が可能に
+- Even cutting-edge LLMs like GPT-4.1 / o4-mini have limits in managing collaborative tasks
+- Error analysis separation enables distinguishing reasoning errors from communication/coordination errors
 
-### τ³-Bench スコア（2026年3月）
+### τ³-Bench Scores (March 2026)
 
-#### τ-Knowledge（τ-Banking, 698文書）
+#### τ-Knowledge (τ-Banking, 698 documents)
 
-| 条件 | pass^1 | 示唆 |
+| Condition | pass^1 | Implication |
 |------|--------|------|
-| GPT-5.2 with high reasoning（通常） | **約 25.5%** | 検索＋推論の複合難易度が極めて高い |
-| GPT-5.2 with high reasoning（必要文書を直接提供） | **約 40%** | 検索だけでなく理解・推論自体もボトルネック |
+| GPT-5.2 with high reasoning (normal) | **~25.5%** | Combined search+reasoning difficulty is extremely high |
+| GPT-5.2 with high reasoning (necessary documents directly provided) | **~40%** | Beyond search, understanding and reasoning itself is also a bottleneck |
 
-- 検索方式による性能差：
-  - **ターミナル型探索**: 高精度だが低速
-  - **埋め込み検索**: 高速だが精度低下
+- Performance differences by search method:
+  - **Terminal-type exploration**: High precision but slow
+  - **Embedding search**: Fast but precision drops
 
-#### τ-Voice（278タスク、フルデュプレックス音声）
+#### τ-Voice (278 tasks, full-duplex audio)
 
-| エージェント種別 / 条件 | 成功率 | 備考 |
+| Agent Type / Condition | Success Rate | Notes |
 |------------------------|--------|------|
-| GPT-5 reasoning（テキスト） | **85%** | テキストでの上限性能 |
-| 音声エージェント（クリーン条件） | **31–51%** | 理想的な音響環境 |
-| 音声エージェント（現実的条件：ノイズ＋多様なアクセント） | **26–38%** | 実運用想定 |
+| GPT-5 reasoning (text) | **85%** | Upper bound performance in text |
+| Voice agent (clean conditions) | **31–51%** | Ideal acoustic environment |
+| Voice agent (realistic conditions: noise + diverse accents) | **26–38%** | Production-assumed conditions |
 
-- **テキスト能力の 30–45% しか維持できていない**
-- 失敗の **79–90% はエージェントの振る舞いに起因**（ASR エラーではない）
-- フルデュプレックス（同時双方向）での割り込み処理、バックチャネリング、ターンテイキングが主要課題
+- **Only 30–45% of text capability is maintained**
+- **79–90% of failures are due to agent behavior** (not ASR errors)
+- Full-duplex (simultaneous bidirectional) interruption handling, back-channeling, and turn-taking are primary challenges
 
-## エコシステムの進化
+## Ecosystem Evolution
 
-τ-bench は2024年から2026年にかけて、以下の3世代にわたって急速に拡張された：
+τ-bench rapidly expanded across three generations from 2024 to 2026:
 
-| 世代 | 名称 | 公開時期 | ドメイン | 制御モデル | 新たな評価軸 | 論文 | 会議 |
+| Generation | Name | Release Date | Domains | Control Model | New Evaluation Axes | Paper | Conference |
 |------|------|---------|---------|-----------|-------------|------|------|
-| **1st** | **τ-bench** | 2024年6月 | τ-airline, τ-retail | シングルコントロール（エージェントのみがツール操作） | マルチターン対話、ポリシー遵守、pass^k | [2406.12045](https://arxiv.org/abs/2406.12045) | ICLR 2025 |
-| **2nd** | **τ²-bench** | 2025年6月 | Telecom | デュアルコントロール（エージェント＋ユーザーがツール操作） | 協調操作、Dec-POMDP モデル、コミュニケーション品質 | [2506.07982](https://arxiv.org/abs/2506.07982) | 審査中 |
-| **3rd** | **τ³-Bench** | 2026年3月 | τ-Knowledge（τ-Banking: 698文書）, τ-Voice（278タスク） | 知識検索＋ツール / フルデュプレックス音声 | 非構造化知識ナビゲーション、音声対話品質 | [2603.04370](https://arxiv.org/abs/2603.04370) / [2603.13686](https://arxiv.org/abs/2603.13686) | プレプリント |
+| **1st** | **τ-bench** | June 2024 | τ-airline, τ-retail | Single control (agent only operates tools) | Multi-turn dialogue, policy compliance, pass^k | [2406.12045](https://arxiv.org/abs/2406.12045) | ICLR 2025 |
+| **2nd** | **τ²-bench** | June 2025 | Telecom | Dual control (agent + user operate tools) | Collaborative operation, Dec-POMDP model, communication quality | [2506.07982](https://arxiv.org/abs/2506.07982) | Under review |
+| **3rd** | **τ³-Bench** | March 2026 | τ-Knowledge (τ-Banking: 698 docs), τ-Voice (278 tasks) | Knowledge search + tools / Full-duplex audio | Unstructured knowledge navigation, voice dialogue quality | [2603.04370](https://arxiv.org/abs/2603.04370) / [2603.13686](https://arxiv.org/abs/2603.13686) | Preprint |
 
-### 第1世代：τ-bench — 基盤の確立
+### 1st Generation: τ-bench — Establishing the Foundation
 
-シングルコントロール（エージェントのみがツールを操作）での評価基盤。航空券予約とオンライン小売という2つのドメインで、マルチターン対話・ポリシー遵守・pass^k 信頼性評価の基本パラダイムを確立。ICLR 2025 に採択され、学術的承認を得た。
+Evaluation infrastructure with single control (agent only operates tools). Established the basic paradigm of multi-turn dialogue, policy compliance, and pass^k reliability evaluation across two domains (airline reservations and online retail). Accepted at ICLR 2025, gaining academic recognition.
 
-### 第2世代：τ²-bench — デュアルコントロールへの拡張
+### 2nd Generation: τ²-bench — Extension to Dual Control
 
-エージェントとユーザーの両方がツールを使って共有環境を操作する「デュアルコントロール」環境を導入。Telecom ドメインで、Dec-POMDP（分散部分観測マルコフ決定過程）としてモデル化。以下の革新的要素を追加：
+Introduced "dual control" environments where both agents and users operate tools on a shared environment. Modeled as Dec-POMDP (Decentralized Partially Observable Markov Decision Process) in the Telecom domain. Added these innovative elements:
 
-- **Compositional task generator**: 原子的コンポーネントから多様な検証可能タスクを自動生成
-- **環境結合型ユーザーシミュレータ**: ツールと観測可能状態に制約された、より忠実度の高いシミュレーション
-- **Solo mode vs Interactive mode の比較**: 協調のオーバーヘッドを定量化
-- **エラー分析の分離**: 推論の失敗とコミュニケーションの失敗を区別
+- **Compositional task generator**: Automatically generates diverse verifiable tasks from atomic components
+- **Environment-coupled user simulator**: Higher-fidelity simulation constrained by tools and observable state
+- **Solo mode vs Interactive mode comparison**: Quantifying collaboration overhead
+- **Error analysis separation**: Distinguishing reasoning failures from communication failures
 
-Solo から Interactive への移行で最大 25 ポイントの成功率低下が観測され、協調的マルチエージェント環境におけるエージェント能力の限界が明らかになった。
+A maximum 25-point success rate drop was observed transitioning from Solo to Interactive, revealing agent capability limits in collaborative multi-agent environments.
 
-### 第3世代：τ³-Bench — 知識と音声の二正面展開
+### 3rd Generation: τ³-Bench — Two-Front Deployment: Knowledge and Voice
 
-τ³-Bench は2つの新ドメインを同時に導入し、τ-bench エコシステムの評価範囲を大幅に拡大した：
+τ³-Bench simultaneously introduced two new domains, dramatically expanding τ-bench ecosystem's evaluation scope:
 
-#### τ-Knowledge（τ-Banking）
+#### τ-Knowledge (τ-Banking)
 
-- **698文書、21製品カテゴリ、約195Kトークン**の非構造化知識ベース
-- structured-to-unstructured 生成パイプラインにより、知識の整合性とタスクの検証可能性を保証
-- ツール（口座更新など）は文書内でのみ参照され、エージェントが自力で発見する必要がある
-- 対応検索手法: Dense retrieval, Sparse retrieval, Long-context, Filesystem-based exploration, ハイブリッド
+- **698 documents, 21 product categories, ~195K tokens** of unstructured knowledge base
+- Structured-to-unstructured generation pipeline ensures knowledge consistency and task verifiability
+- Tools (account updates, etc.) are only referenced within documents — agents must discover them independently
+- Supported search methods: Dense retrieval, Sparse retrieval, Long-context, Filesystem-based exploration, Hybrid
 
 #### τ-Voice
 
-- **278タスク**のフルデュプレックス音声対話評価
-- テキストエージェントとの直接比較により、音声モダリティの純粋な影響を定量化
-- ユーザーシミュレータは多様なアクセント、現実的な音響環境、豊かなターンテイキング動態を再現
-- ウォールクロック時間から切り離された設計により、最強 LLM をシミュレータに使用可能 → ASR ではなくエージェント自体がボトルネックであることを証明
+- **278 tasks** of full-duplex voice dialogue evaluation
+- Direct comparison with text agents quantifies pure voice modality impact
+- User simulator reproduces diverse accents, realistic acoustic environments, and rich turn-taking dynamics
+- Wall-clock-decoupled design enables using strongest LLMs as simulators → proves agents themselves (not ASR) are the bottleneck
 
-## 産業インパクト
+## Industry Impact
 
-τ-bench エコシステムは学術界を超えて、産業界の AI エージェント評価に広範な影響を与えている：
+The τ-bench ecosystem has had widespread influence on industrial AI agent evaluation beyond academia:
 
-### 1. 派生ベンチマークの触媒
+### 1. Catalyst for Derived Benchmarks
 
-- **MedAgentBench**: τ-bench のアーキテクチャを医療ドメインに応用。患者対話・電子カルテ操作・診療ガイドライン遵守を評価
-- **LAM（Large Action Model）Simulator**: τ-bench の LM シミュレートユーザー方式を大規模アクションモデル評価に転用
+- **MedAgentBench**: Applied τ-bench architecture to the medical domain. Evaluates patient dialogue, EHR operations, and clinical guideline compliance
+- **LAM (Large Action Model) Simulator**: Adapted τ-bench's LM-simulated user approach for large action model evaluation
 
-### 2. AI ラボでの標準採用
+### 2. Standard Adoption at AI Labs
 
-主要 AI ラボ（OpenAI, Anthropic, Google DeepMind, Meta など）で、τ-bench および τ²-bench が内部エージェント評価の標準ツールとして採用されている。特に pass^k メトリクスは、エージェントの「信頼性」を定量化する指標として、研究報告や製品リリースの共通言語となった。
+Major AI labs (OpenAI, Anthropic, Google DeepMind, Meta, etc.) have adopted τ-bench and τ²-bench as standard tools for internal agent evaluation. In particular, the pass^k metric has become common language in research reports and product releases as an indicator quantifying agent "reliability."
 
-### 3. デファクトスタンダードとしての確立
+### 3. Establishment as De Facto Standard
 
-τ-bench シリーズは、エージェント評価において以下の点でデファクトスタンダードの地位を確立した：
+The τ-bench series has established de facto standard status in agent evaluation on these points:
 
-- **マルチターン対話評価の標準形式**: 単一ターン評価から複数ターン評価への業界シフトを主導
-- **pass^k の普及**: 「成功率」から「信頼性」への評価パラダイム転換
-- **モジュラーアーキテクチャの模範**: DB+API+Policy+User の分離設計が後続ベンチマークのテンプレートに
-- **音声評価の先駆**: τ-Voice はテキストエージェントと音声エージェントの直接比較を初めて可能にした
+- **Standard format for multi-turn dialogue evaluation**: Led the industry shift from single-turn to multi-turn evaluation
+- **pass^k proliferation**: Paradigm shift from "success rate" to "reliability" in evaluation
+- **Modular architecture as template**: DB+API+Policy+User separation design became template for subsequent benchmarks
+- **Voice evaluation pioneer**: τ-Voice enabled direct comparison between text and voice agents for the first time
 
-### 4. Sierra AI Research の評価基盤
+### 4. Sierra AI Research's Evaluation Foundation
 
-τ-bench は Sierra AI 自身の製品開発サイクルに組み込まれており、実際のカスタマーサービス AI エージェントの性能保証・回帰テストに活用されている。研究と実践が直接接続された稀有な事例。
+τ-bench is embedded in Sierra AI's own product development cycle, used for performance assurance and regression testing of actual customer service AI agents. A rare instance of research and practice being directly connected.
 
-## Shunyu Yao の評価哲学との接続
+## Connection to Shunyu Yao's Evaluation Philosophy
 
-τ-bench は Shunyu Yao（姚顺雨）の研究思想の集大成であり、特に2025年のブログ記事「**The Second Half**」で表明された評価哲学と深く共鳴する。
+τ-bench is the culmination of Shunyu Yao's research philosophy, deeply resonating with the evaluation philosophy expressed especially in his 2025 blog post "**The Second Half**."
 
-### 「The Second Half」の核心命題
+### Core Thesis of "The Second Half"
 
-> 「AI の後半戦は、問題を解くことから問題を定義することへと焦点が移行する。この新しい時代において、**評価は訓練よりも重要になる**。」
+> "The second half of AI shifts focus from solving problems to defining problems. In this new era, **evaluation becomes more important than training.**"
 > — Shunyu Yao, "The Second Half" (2025)
 
-Yao は RL（強化学習）の3要素（アルゴリズム・環境・事前知識）のうち、「環境」が最も重要だと論じる。τ-bench はこの思想の体現であり、エージェントのアルゴリズム改良ではなく、**環境（評価基盤）の設計**を通じてエージェント能力の本質的理解を追求する。
+Yao argues that among RL's three elements (algorithm, environment, prior knowledge), "environment" is most important. τ-bench embodies this philosophy, pursuing essential understanding of agent capabilities not through algorithm improvement but through **environment (evaluation infrastructure) design**.
 
-### τ-bench が体現する Yao の評価哲学
+### Yao's Evaluation Philosophy Embodied in τ-bench
 
-| Yao の原則 | τ-bench での具体化 |
+| Yao's Principle | τ-bench Manifestation |
 |-----------|-------------------|
-| 「環境こそが RL の最重要要素」 | モジュラーな DB+API+Policy+User 構造で、現実的な環境を精密にモデル化 |
-| 「推論は環境に影響を与えない奇妙なアクション」 | エージェントの内部推論は直接評価せず、DB状態変化という外的指標で評価 |
-| 「評価 > 訓練」 | pass^k・DB状態比較・Dec-POMDP モデルなど、評価の解像度を極限まで高める設計 |
-| 「問題定義が問題解決より重要」 | 各ドメインのポリシー文書・タスク設計が、エージェントの真の課題を定義 |
-| 「RL はついに汎化した」 | τ-bench のエコシステム拡張（単一制御→二重制御→知識+音声）は、RL 評価の汎化可能性を示す |
+| "Environment is RL's most important element" | Modular DB+API+Policy+User structure precisely models realistic environments |
+| "Reasoning is a strange action that doesn't affect the environment" | Doesn't directly evaluate agent internal reasoning; evaluates via external indicators of DB state changes |
+| "Evaluation > Training" | Design maximizing evaluation resolution: pass^k, DB state comparison, Dec-POMDP models |
+| "Problem definition is more important than problem solving" | Policy documents and task designs for each domain define the agent's true challenges |
+| "RL has finally generalized" | τ-bench ecosystem expansion (single control→dual control→knowledge+voice) demonstrates RL evaluation generalizability |
 
-### SWE-bench から τ-bench への連続性
+### Continuity from SWE-bench to τ-bench
 
-Yao の研究軌跡を俯瞰すると、SWE-bench（実世界の GitHub Issue 解決能力評価）から τ-bench（実世界の対話型ツール操作評価）への展開には明確な一貫性がある：
+Viewing Yao's research trajectory holistically reveals clear consistency in the expansion from SWE-bench (real-world GitHub issue resolution evaluation) to τ-bench (real-world dialogue-based tool operation evaluation):
 
-1. **SWE-bench**: 「コード生成」から「実世界のソフトウェア課題解決」へ評価を拡張
-2. **τ-bench**: 「ツール呼び出し」から「ポリシー遵守・対話管理・信頼性」へ評価を拡張
+1. **SWE-bench**: Expanded evaluation from "code generation" to "real-world software problem solving"
+2. **τ-bench**: Expanded evaluation from "tool calling" to "policy compliance, dialogue management, reliability"
 
-両者に共通するのは「ベンチマークの解像度を上げることで、AI の真の能力限界を可視化する」という方法論である。この方法論は Yao が Princeton 時代から一貫して追求してきたものであり、τ-bench エコシステムはその到達点の一つと言える。
+Common to both is the methodology of "visualizing AI's true capability limits by increasing benchmark resolution." This methodology has been consistently pursued since Yao's Princeton days, and the τ-bench ecosystem can be considered one of its culmination points.
 
-## 関連ページ
+## Related Pages
 
-- [[entities/shunyu-yao]] — τ-bench の生みの親。ReAct, SWE-bench, "The Second Half" を含む全業績
-- [[concepts/tau-squared-bench]] — τ²-bench: デュアルコントロール評価の詳細
-- [[concepts/tau-knowledge]] — τ-Knowledge: 非構造化知識ナビゲーション評価の詳細
-- [[concepts/tau-voice]] — τ-Voice: フルデュプレックス音声エージェント評価の詳細
-- [[concepts/pass-k-metric]] — pass^k メトリクスの詳細解説
-- [[concepts/swe-bench]] — Yao のもう一つの代表ベンチマーク
+- [[entities/shunyu-yao]] — τ-bench's creator. All achievements including ReAct, SWE-bench, "The Second Half"
+- [[concepts/tau-squared-bench]] — τ²-bench: Dual control evaluation details
+- [[concepts/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation evaluation details
+- [[concepts/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation details
+- [[concepts/pass-k-metric]] — pass^k metric detailed explanation
+- [[concepts/swe-bench]] — Yao's other representative benchmark
 
 ---
 
-*最終更新: 2026-05-08 / τ-bench v1–v3 エコシステム包括*
+*Last updated: 2026-05-08 / τ-bench v1–v3 ecosystem comprehensive*

@@ -22,120 +22,120 @@ sources:
 
 # τ²-bench
 
-**τ²-bench**（タウ・スクエアード・ベンチ）は、τ-bench の「シングルコントロール」前提を打ち破り、エージェントとユーザーの**両方がツールを用いて共有環境を操作する「デュアルコントロール」環境**を導入したベンチマークである。2025年6月、Victor Barres、Honghua Dong、Soham Ray、Xujie Si、Karthik Narasimhan によって発表された。
+**τ²-bench** (tau-squared-bench) breaks the "single control" assumption of τ-bench, introducing a **"dual-control" environment where both the agent and the user can manipulate a shared environment using tools**. Published June 2025 by Victor Barres, Honghua Dong, Soham Ray, Xujie Si, and Karthik Narasimhan.
 
-> 論文: [arXiv:2506.07982](https://arxiv.org/abs/2506.07982) "τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment"
+> Paper: [arXiv:2506.07982](https://arxiv.org/abs/2506.07982) "τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment"
 
-## 背景：シングルコントロールの限界
+## Background: Limits of Single Control
 
-τ-bench を含む既存の会話型エージェントベンチマークは、すべて**シングルコントロール環境**を前提としていた。エージェントがツールを使って世界を操作し、ユーザーは受動的な情報提供者に留まる。しかし、実世界の**テクニカルサポート**では状況が根本的に異なる：
+Existing conversational agent benchmarks, including τ-bench, all assumed a **single-control environment**. The agent manipulates the world with tools while the user remains a passive information provider. But in real-world **technical support**, the situation is fundamentally different:
 
-> エージェントはユーザーのアカウントを確認したりバックエンドのフラグをリセットしたりできるが、ユーザーは**自分のスマートフォンを再起動**し、**設定を変更**し、**画面上の状態を確認**する必要がある。タスクの成功は**両者が協調して行動すること**にかかっている。
+> The agent can check account info or reset backend flags, but the user must **restart their smartphone**, **change settings**, and **check on-screen status**. Task success depends on **both parties acting in coordination**.
 
-τ²-bench はこの**共有された行為主体性（shared agency）**を評価するために設計された。
+τ²-bench is designed to evaluate this **shared agency**.
 
-## 技術的基盤：Dec-POMDP としての定式化
+## Technical Foundation: Formulation as Dec-POMDP
 
-τ²-bench の Telecom ドメインは **Dec-POMDP（分散部分観測マルコフ決定過程）**としてモデル化されている。
+τ²-bench's Telecom domain is modeled as a **Dec-POMDP (Decentralized Partially Observable Markov Decision Process)**.
 
-| 要素 | 内容 |
+| Element | Content |
 |------|------|
-| **共有状態** | データベース（顧客情報、デバイス状態、ネットワーク設定） |
-| **エージェント観測** | 自らのツールの出力、ユーザーとの会話 |
-| **ユーザー観測** | 自らのデバイス状態（ツールの出力）、エージェントとの会話 |
-| **エージェント行動** | バックエンド操作（get_customer, toggle_network_feature 等） |
-| **ユーザー行動** | デバイス操作（toggle_airplane_mode, check_data_status 等） |
+| **Shared State** | Database (customer info, device state, network settings) |
+| **Agent Observation** | Output of own tools, conversation with user |
+| **User Observation** | Own device state (tool output), conversation with agent |
+| **Agent Actions** | Backend operations (get_customer, toggle_network_feature, etc.) |
+| **User Actions** | Device operations (toggle_airplane_mode, check_data_status, etc.) |
 
-この定式化により、エージェントは**不完全な情報**のもとでユーザーの行動を**明示的にモデル化**し、適切なタイミングで正確なガイダンスを提供する必要がある。
+This formulation requires the agent to **explicitly model user behavior** under **incomplete information** and provide accurate guidance at the right timing.
 
-## Telecom ドメイン
+## Telecom Domain
 
-τ²-bench の Telecom ドメインは、実世界のテクニカルサポートシナリオから構築されている：
+τ²-bench's Telecom domain is built from real-world technical support scenarios:
 
-- **データ接続の修復** — モバイルデータが遅い/機能しない問題のトラブルシューティング
-- **MMS問題の解決** — マルチメディアメッセージングの設定とトラブルシューティング
-- **ネットワークモード切替** — 4G/5G/Wi-Fi 間の切替と設定
-- **デバイス設定確認** — 機内モード、データ有効化、APN設定の確認と変更
+- **Data connection repair** — Troubleshooting slow/non-functional mobile data
+- **MMS issue resolution** — Multimedia messaging configuration and troubleshooting
+- **Network mode switching** — Switching between 4G/5G/Wi-Fi and configuration
+- **Device setting verification** — Checking and changing airplane mode, data enablement, APN settings
 
-各タスクでは、エージェントは Telecom ポリシー文書に従い、ユーザーに指示を出し、ユーザーからのフィードバックを待ち、それに基づいて戦略を更新する必要がある。
+In each task, the agent must follow Telecom policy documents, issue instructions to the user, wait for user feedback, and update strategy accordingly.
 
-## 2つの動作モード
+## Two Operating Modes
 
-| モード | エージェントの役割 | ユーザーの役割 |
+| Mode | Agent Role | User Role |
 |--------|-------------------|---------------|
-| **Solo** | 全操作を代理実行（従来型） | 受動的情報提供 |
-| **Interactive** | バックエンド操作 + ユーザーガイダンス | デバイス操作の実行者 |
+| **Solo** | Proxy-executes all operations (traditional) | Passive information provider |
+| **Interactive** | Backend operations + user guidance | Executor of device operations |
 
-### Interactive モードの複雑さ
+### Complexity of Interactive Mode
 
-Interactive モードでは、エージェントは単に「正しい指示を出す」だけでは不十分である：
+In Interactive mode, simply "issuing correct instructions" is insufficient:
 
-1. **ユーザーの認知負荷をモデル化**する必要がある — 一度に多すぎる指示を出すと混乱を招く
-2. **ユーザーのコンテキストを追跡**する必要がある — ユーザーが今どの画面を見ているか、何を理解しているか
-3. **指示の正確さとタイミング**が重要 — 誤った指示や早すぎる/遅すぎる指示はタスク失敗に直結する
+1. Must **model the user's cognitive load** — too many instructions at once causes confusion
+2. Must **track the user's context** — what screen the user is looking at, what they understand
+3. **Instruction accuracy and timing** are critical — wrong instructions or too early/late directly cause task failure
 
-> 論文から：「効果的なコラボレーションは自明ではない。エージェントは正確で理解可能な指示を発行するだけでなく、ユーザーのコンテキストと認知負荷をモデル化しなければならない。」
+> From the paper: "Effective collaboration is non-trivial. Agents must not only issue precise, understandable instructions, but also model the user's context and cognitive load."
 
-## 主要な実験結果
+## Key Experimental Results
 
-### Solo → Interactive の性能低下
+### Solo → Interactive Performance Drop
 
-| モデル | Solo モード | Interactive モード | 低下幅 |
+| Model | Solo Mode | Interactive Mode | Drop |
 |--------|------------|-------------------|--------|
-| GPT-4.1 | 高 | 最大 -25pt | 顕著 |
-| o4-mini | 高 | 最大 -25pt | 顕著 |
+| GPT-4.1 | High | Max -25pt | Significant |
+| o4-mini | High | Max -25pt | Significant |
 
-この劇的な低下は、**デュアルコントロール環境が導入する困難さの勾配**の急峻さを示している。
+This dramatic drop shows the steepness of the **difficulty gradient introduced by the dual-control environment**.
 
-### エラー分析：推論 vs コミュニケーション
+### Error Analysis: Reasoning vs Communication
 
-τ²-bench の重要な貢献の1つは、エラーの**原因を分離**できること：
+One of τ²-bench's key contributions is the ability to **isolate error causes**:
 
-| エラータイプ | 内容 | 例 |
+| Error Type | Content | Example |
 |-------------|------|-----|
-| **推論エラー** | 問題解決ロジックの誤り | 誤ったトラブルシューティング手順の選択 |
-| **コミュニケーション/調整エラー** | ユーザーへの指示の誤り・不明確さ | 曖昧な指示、誤った順序での指示、ユーザー状態の誤解 |
+| **Reasoning Error** | Incorrect problem-solving logic | Wrong troubleshooting procedure selection |
+| **Communication/Coordination Error** | Incorrect/unclear user instructions | Ambiguous instructions, wrong order of instructions, misunderstanding user state |
 
-この分離により、**何がボトルネックなのか**が明確になる。
+This separation clarifies **what the bottleneck is**.
 
-## 技術的革新
+## Technical Innovations
 
 ### 1. Compositional Task Generator
 
-原子的コンポーネントから**プログラム的に多様な検証可能タスク**を生成する仕組み。これにより：
+A mechanism for **programmatically generating diverse verifiable tasks** from atomic components. This enables:
 
-- ドメイン全体の**カバレッジ**を保証
-- 複雑さの**制御された段階的増加**が可能
-- タスクの**検証可能性**を数学的に保証
+- Guaranteed **coverage** of the entire domain
+- **Controlled gradual increase** in complexity
+- Mathematically guaranteed task **verifiability**
 
-### 2. 環境結合型ユーザーシミュレータ
+### 2. Environment-Coupled User Simulator
 
-従来の LM ベースユーザーシミュレータと異なり、τ²-bench のユーザーシミュレータは**ツールと観測可能状態に制約**されている：
+Unlike conventional LM-based user simulators, τ²-bench's user simulator is **constrained by tools and observable state**:
 
-- ユーザーは**自分のデバイス状態**に基づいた行動しか取れない
-- ツールの出力がユーザーの**次の発話**を制約する
-- これによりシミュレーションの**忠実度**が大幅に向上
+- Users can only act based on **their own device state**
+- Tool output constrains the user's **next utterance**
+- This dramatically improves simulation **fidelity**
 
-## τ-bench ファミリーにおける位置づけ
+## Position in the τ-bench Family
 
-| 次元 | τ-bench | **τ²-bench** | τ³-Bench |
+| Dimension | τ-bench | **τ²-bench** | τ³-Bench |
 |------|---------|-------------|----------|
-| 公開 | 2024年6月 | **2025年6月** | 2026年3月 |
-| 制御モデル | シングル | **デュアル** | デュアル + 音声 |
-| 主要ドメイン | Airline, Retail | **Telecom** | Banking, Voice |
-| コア課題 | 対話 + ツール | **対話 + ツール + 協調** | 知識検索 + 音声対話 |
-| 代表的数値 | GPT-4o <50% | **Solo→Interactive -25pt** | 25.5% / 26-38% |
+| Released | June 2024 | **June 2025** | March 2026 |
+| Control Model | Single | **Dual** | Dual + Voice |
+| Main Domains | Airline, Retail | **Telecom** | Banking, Voice |
+| Core Challenge | Dialogue + Tools | **Dialogue + Tools + Coordination** | Knowledge Retrieval + Voice Dialogue |
+| Representative Numbers | GPT-4o <50% | **Solo→Interactive -25pt** | 25.5% / 26-38% |
 
-## 実践的含意
+## Practical Implications
 
-1. **協調は本質的に困難** — Solo から Interactive への移行で最大25ポイントの低下は、協調自体が高度な認知能力を要求することを示す
-2. **テクニカルサポートの自動化は未熟** — 最先端モデルでも、ユーザーを適切にガイドしながら問題を解決することは依然として困難
-3. **ユーザーモデリングの重要性** — ユーザーの認知状態を正確にモデル化できるアーキテクチャが必要
+1. **Coordination is intrinsically hard** — Up to 25-point drop from Solo to Interactive shows coordination itself demands high-level cognitive abilities
+2. **Technical support automation is immature** — Even state-of-the-art models still struggle to solve problems while properly guiding users
+3. **User modeling is critical** — Architectures that can accurately model user cognitive state are needed
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/tau-bench]] — τ-bench エコシステム全体の概要
-- [[concepts/tau-knowledge]] — 非構造化知識ベースでの評価
-- [[concepts/tau-voice]] — フルデュプレックス音声エージェント評価
-- [[concepts/pass-k-metric]] — 信頼性評価指標
-- [[entities/shunyu-yao]] — τ-bench オリジナル著者
+- [[concepts/tau-bench]] — τ-bench ecosystem overview
+- [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
+- [[concepts/tau-voice]] — Full-duplex voice agent evaluation
+- [[concepts/pass-k-metric]] — Reliability evaluation metric
+- [[entities/shunyu-yao]] — τ-bench original author

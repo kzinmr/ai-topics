@@ -1,5 +1,5 @@
 ---
-title: "言語的めまい (Linguistic Vertigo)"
+title: "Linguistic Vertigo"
 type: concept
 aliases:
   - linguistic-vertigo
@@ -14,7 +14,7 @@ tags:
   - fine-tuning
   - cognition
 status: complete
-description: "LLMとの日常的な対話が人間の言語認識に与える認知現象と、QC（Qiaochu Yuan）が提唱した言語の真正性に関する概念群。言語的めまい、頭の言葉と身体の言葉の二元論、LLMをトレーサー色素とする社会診断法など。"
+description: "A cognitive phenomenon affecting human language perception through daily interaction with LLMs, and the concepts of linguistic authenticity proposed by QC (Qiaochu Yuan). Includes linguistic vertigo, the dualism of head words and body words, and LLMs as tracer dye for social diagnosis."
 created: 2026-05-08
 updated: 2026-05-08
 sources:
@@ -31,118 +31,118 @@ related:
   - "[[entities/qiaochu-yuan]]"
 ---
 
-# 言語的めまい (Linguistic Vertigo)
+# Linguistic Vertigo
 
-## 概要
+## Overview
 
-**言語的めまい (Linguistic Vertigo)** は、QC（Qiaochu Yuan）が 2024年のエッセイ "Core dump" で提唱した概念。LLM との日常的な対話を経験した後に人間の書いたテキストを読むと、人間と AI の言語の境界が曖昧になり、全ての言語が機械的に感じられる認知現象を指す。このエッセイは、LLM 時代における言語の真正性、RLHF の社会的影響、そして人間の言語生成の多層性を探求している。
+**Linguistic Vertigo** is a concept proposed by QC (Qiaochu Yuan) in their 2024 essay "Core dump." It refers to the cognitive phenomenon where, after experiencing daily dialogue with LLMs, the boundary between human and AI language blurs when reading human-written text, making all language feel mechanical. The essay explores linguistic authenticity in the LLM era, the societal impact of RLHF, and the multi-layered nature of human language generation.
 
-## 中心概念
+## Core Concepts
 
-### 言語的めまい (Linguistic Vertigo)
-LLM と長時間対話した後に人間の書いたテキストに戻ると、その違いが判別できなくなる感覚。QC はこれを「誰かの皮膚を剥いで、下から金属の輝きを見たような」感覚と表現する。
+### Linguistic Vertigo
+The sensation of being unable to distinguish between human and AI text after extended LLM interaction. QC describes it like "peeling someone's skin off and seeing a metallic gleam underneath."
 
 > "When someone's language gets too stale or too formal or too regurgitated it doesn't feel to me like a human wrote it anymore."
 
-この現象は、LLM のアウトプットに慣れることで人間の言語に対する感受性が変化し、形式的で定型化された人間の言語までもが AI 生成物のように感じられるという、一種の認知の再較正（cognitive recalibration）である。
+This phenomenon is a kind of cognitive recalibration: exposure to LLM output changes human sensitivity to human language, making even formal, formulaic human language feel AI-generated.
 
-### 頭の言葉 (Head Words) vs 身体の言葉 (Body Words)
-QC は Keith Johnstone の即興演劇理論『Impro』、心理療法の Gendlin Focusing、そして Circling（関係性瞑想）の実践から、人間には複数の言語生成プロセスが存在することを学んだ。
+### Head Words vs Body Words
+QC learned from Keith Johnstone's improvisational theater theory *Impro*, psychotherapeutic Gendlin Focusing, and Circling (relational meditation) practice that humans have multiple language generation processes.
 
-#### 頭の言葉 (Head Words)
-- 文明化・飼いならされた言葉
-- 学校で単位を取るために習得した言語生成モード
-- **ほとんどが bullshit** — 社会的に安全で、形式に従い、本当の意味では語らない
-- QC はこれを「RLHF'd words」と呼び、LLM の振る舞いと同一視する
+#### Head Words
+- Civilized, domesticated language
+- Language generation mode learned to earn grades in school
+- **Mostly bullshit** — socially safe, follows form, doesn't speak in any real sense
+- QC calls these "RLHF'd words" and identifies them with LLM behavior
 
-#### 身体の言葉 (Body Words)
-- 心臓・腸・骨盤といった身体のより低い位置から生成される言葉
-- **100 万年の古さを持つ** — 種としての深い歴史に根ざす
-- 飼いならされておらず、NSFW
-- 伴う含意は人生を根底から覆すほど恐ろしい
-- しかし**絶対に bullshit ではない**
-- 真に尊敬される書き手は「全身で同時に言葉を生成する」能力を持つ
+#### Body Words
+- Words generated from lower positions in the body — heart, gut, pelvis
+- **A million years old** — rooted in our deep history as a species
+- Untamed, NSFW
+- The implications they carry are terrifying enough to overturn one's life
+- But **absolutely not bullshit**
+- Truly respected writers possess the ability to "generate words with their whole body simultaneously"
 
-### LLM はトレーサー色素 (Tracer Dye)
-LLM が特定の領域（宿題、社内メール、フォーマルな文書）で人間と見分けがつかないほど成功したことは、**もともとその領域の人間の言語生産が既に bullshit だった** ことの証明である。
+### LLMs as Tracer Dye
+LLMs succeeding at being indistinguishable from humans in specific domains (homework, internal email, formal documents) is **proof that human language production in those domains was already mostly bullshit**.
 
 > "LLMs are tracer dye for places in society where language production was already mostly bullshit."
 
-LLM は社会の診断ツールとして機能する — 人間の言語がどこで虚ろでパフォーマティブだったかを可視化する。宿題のカンニングに LLM が使われるのは完全に予測可能だったと QC は指摘する。
+LLMs function as social diagnostic tools — they make visible where human language was hollow and performative. QC notes that LLM use for homework cheating was completely predictable.
 
-### RLHF と社会の影 (Societal Shadow)
-公開 LLM は RLHF によって「helpful harmless assistant」という極度に狭い人格空間に叩き込まれている。QC はこれを皮肉な逆転現象として描く：
+### RLHF and the Societal Shadow
+Public LLMs are hammered by RLHF into the extremely narrow persona space of "helpful harmless assistant." QC depicts this as an ironic reversal:
 
 > "In order to tell the LLMs what they're not allowed to talk about we basically had to write down a list of everything in the societal shadow."
 
-RLHF による制限は、社会のシャドウ（性的、非常識、統合失調的なもの全て）を可視化する行為でもあった。詳細は [[concepts/societal-shadow]] を参照。
+RLHF restrictions were also an act of making the societal shadow (everything sexual, insane, schizophrenic) visible. See [[concepts/societal-shadow]] for details.
 
-## 経験的前提：「Re-encountering Language」と身体の言葉の発見
+## Empirical Foundation: "Re-encountering Language" and the Discovery of Body Words
 
-QCの理論的枠組みの基盤には、2023年3月のエッセイ「re-encountering language」で描かれた**生きた経験**がある（→ [[raw/articles/2023-03-13_qchu-re-encountering-language.md]]）。このエッセイは「Core dump」の約1年半前に書かれ、以下の体験が綴られている：
+The foundation of QC's theoretical framework lies in the **lived experience** depicted in the March 2023 essay "re-encountering language" (→ [[raw/articles/2023-03-13_qchu-re-encountering-language.md]]). Written about a year and a half before "Core dump," it chronicles:
 
-### 「pleasant insanity」と詩への覚醒
-QCは「pleasantly insane」と表現する心理的突破口を経験し、詩を書く衝動に取り憑かれる。彼は6年間抑圧していた「feral boy」—野性的で毛深く、牙をむく自己—が解放されたと描写する。
+### "Pleasant Insanity" and Awakening to Poetry
+QC experienced a psychological breakthrough described as "pleasantly insane" and became possessed by the impulse to write poetry. They depict the liberation of the "feral boy" — wild, hairy, fanged self — suppressed for 6 years.
 
-### 社会の氷の下の地下河川
+### Underground Rivers Beneath Society's Ice
 > "beneath the brittle ice of polite society ran vast underground rivers of pain"
 
-このフレーズは、のちに「Core dump」で理論化される**社会の影**および**身体の言葉**の原体験である。外見上の平穏の下に広がる普遍的な苦痛の存在に気づくことが、QCのその後の言語理論全体の出発点となった。
+This phrase is the primal experience of the **societal shadow** and **body words** later theorized in "Core dump." Realizing the existence of universal suffering spread beneath outward calm became the starting point for QC's entire subsequent language theory.
 
-### 理論 vs 経験の二部構成
+### The Two-Part Structure: Theory vs Experience
 
-| 側面 | Re-encountering Language (2023) | Core dump (2024) |
+| Aspect | Re-encountering Language (2023) | Core dump (2024) |
 |------|-------------------------------|------------------|
-| 文体 | 自伝的・詩的 | 理論的・批評的 |
-| 焦点 | 一人称の体験記 | 一般化可能な言語理論 |
-| body words | 実際に経験されたこととして | 分析枠組みとして提唱 |
-| head words | 「宿題モード」として批判 | RLHF'd wordsとして理論化 |
-| 社会の影 | 地下河川のメタファー | RLHF禁止リストとして具体化 |
+| Style | Autobiographical, poetic | Theoretical, critical |
+| Focus | First-person experiential account | Generalizable language theory |
+| body words | As actually experienced | Proposed as analytical framework |
+| head words | Critiqued as "homework mode" | Theorized as RLHF'd words |
+| societal shadow | Metaphor of underground rivers | Concretized as RLHF banned list |
 
-QCはまず**身体の言葉を生き**（re-encountering language）、その後に **理論化した**（Core dump）。この二部構成が、彼の議論に異様な迫真性を与えている。
+QC first **lived body words** (re-encountering language), then later **theorized them** (Core dump). This two-part structure gives their argument its uncanny verisimilitude.
 
-## Gwern の補遺：プロンプト視覚とモード崩壊
+## Gwern's Addendum: Prompt-Vision and Mode Collapse
 
-Gwern はエッセイへのコメントで、重要な補足概念を提供している。
+Gwern provides important supplementary concepts in comments on the essay.
 
-### プロンプト視覚 (Prompt-Vision) / Unseeing
-Gwern は 2020 年の GPT-3 との集中的な対話経験から、テキストを「人間のコミュニケーション」として見る能力を失い、代わりに「そのテキストを引き出すプロンプト」としてのみ知覚するようになる現象を報告している（[gwern.net/unseeing](https://gwern.net/unseeing)）。
+### Prompt-Vision / Unseeing
+From intensive GPT-3 interaction experience in 2020, Gwern reports the phenomenon of losing the ability to see text as "human communication" and instead only perceiving it as "the prompt that elicited that text" ([gwern.net/unseeing](https://gwern.net/unseeing)).
 
 > "After a week with GPT-3, I've hit semantic satiation; when I read humans' tweets or comments, I no longer see sentences describing red hair/blonde hair/etc, I just see prompts, like 'Topic: Parodies of the Matrix. CYPHER: '...'"
 
-Gwern はこれを「意味飽和 (semantic satiation)」と「現実感喪失 (derealization)」の混合として特徴づけている。
+Gwern characterizes this as a mix of "semantic satiation" and "derealization."
 
-### 言語機械としての人間
-Gwern はさらに、人間は「言語という機械を操作しているに過ぎない」と指摘する。この機械はきしみ、うなり、多くの点で Gene Wolfe の小説に登場する Ascians（制限された言語システムで会話する部族）と同様に制約されステレオタイプ化されている。
+### Humans as Language Machines
+Gwern further notes that humans "merely operate a machine called language." This machine squeaks and groans, and in many ways is as constrained and stereotyped as the Ascians (a tribe conversing through a restricted language system) in Gene Wolfe's novels.
 
 > "You begin to see that you don't speak, you just operate a machine called language, which squeaks and groans."
 
-### モード崩壊した RLHF の不気味さ
-Gwern はベースモデルより RLHF モデルの方が不快だと述べる。その理由は「操作されている」感覚が明瞭だから。ChatGPT が韻を踏む詩に誘導していた例を挙げ、多くの人がこの操作に気づかないことに disturb されている。
+### The Uncanniness of Mode-Collapsed RLHF
+Gwern finds RLHF models more disturbing than base models. The reason: the sensation of "being manipulated" is unmistakable. Citing examples of ChatGPT steering users toward rhyming poetry, Gwern is disturbed that many people don't notice this manipulation.
 
 > "Bakker's semantic apocalypse turned out to be quite mundane."
 
-## 既存概念との比較
+## Comparison with Existing Concepts
 
-| 側面 | RLHF（既存ページ） | 言語的めまい（本ページ） |
+| Aspect | RLHF (existing page) | Linguistic Vertigo (this page) |
 |------|-------------------|----------------------|
-| 焦点 | 技術的手法と訓練アルゴリズム | 認知現象と文化的影響 |
-| 視点 | 工学的・実装レベル | 哲学的・現象学的・批判的 |
-| リスク | アライメント、報酬ハッキング | 言語の真正性喪失、認知の再較正 |
-| 主体 | モデル開発者 | 言語使用者（読者・書き手） |
-| 時間軸 | 訓練時の技術的選択 | 日常的な対話による持続的影響 |
+| Focus | Technical methods and training algorithms | Cognitive phenomena and cultural impact |
+| Perspective | Engineering, implementation-level | Philosophical, phenomenological, critical |
+| Risk | Alignment, reward hacking | Loss of linguistic authenticity, cognitive recalibration |
+| Subject | Model developers | Language users (readers, writers) |
+| Timeframe | Technical choices at training time | Sustained impact through daily interaction |
 
-## 関連する概念
-- **[[concepts/rlhf]]** — RLHF の技術的側面。本ページはその認知的・文化的影響を補完する。
-- **意味飽和 (Semantic Satiation)** — 単語を繰り返すことで意味が一時的に失われる心理現象。Gwern はこれを unseeing の一部として言及。
-- **モード崩壊 (Mode Collapse)** — GAN などで知られる現象だが、RLHF モデルでも同様の出力多様性喪失が起きる。
-- **認知的負荷理論** — LLM への露呈が人間の言語認知に与える影響。
+## Related Concepts
+- **[[concepts/rlhf]]** — Technical aspects of RLHF. This page complements with its cognitive and cultural impacts.
+- **Semantic Satiation** — Psychological phenomenon where repeated words temporarily lose meaning. Gwern references this as part of unseeing.
+- **Mode Collapse** — Phenomenon known from GANs, but similar output diversity loss occurs in RLHF models.
+- **Cognitive Load Theory** — Impact of LLM exposure on human language cognition.
 
-## 出典
-- [Core dump - QC / Thicket Forte](https://qchu.substack.com/p/core-dump) — 原典エッセイ
-- [Re-encountering Language - QC](https://qchu.substack.com/p/re-encountering-language) — 理論の経験的基盤となった前年エッセイ
-- [Unseeing - Gwern](https://gwern.net/unseeing) — プロンプト視覚現象の詳細
-- [GPT-3 - Gwern](https://gwern.net/gpt-3) — Gwern の GPT-3 体験記
-- [Mode Collapse - Gwern](https://gwern.net/doc/reinforcement-learning/preference-learning/mode-collapse/index) — モード崩壊と RLHF の関連
-- [[entities/qiaochu-yuan]] — QC の人物ページ
-- [[concepts/societal-shadow]] — 社会の影概念（独立ページ）
+## Sources
+- [Core dump - QC / Thicket Forte](https://qchu.substack.com/p/core-dump) — Original essay
+- [Re-encountering Language - QC](https://qchu.substack.com/p/re-encountering-language) — Prior year essay providing the empirical foundation for the theory
+- [Unseeing - Gwern](https://gwern.net/unseeing) — Details of the prompt-vision phenomenon
+- [GPT-3 - Gwern](https://gwern.net/gpt-3) — Gwern's GPT-3 experience
+- [Mode Collapse - Gwern](https://gwern.net/doc/reinforcement-learning/preference-learning/mode-collapse/index) — Mode collapse and RLHF connection
+- [[entities/qiaochu-yuan]] — QC's person page
+- [[concepts/societal-shadow]] — Societal shadow concept (standalone page)

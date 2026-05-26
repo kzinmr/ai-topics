@@ -1,7 +1,7 @@
 ---
 title: "DSPy.RLM"
 type: concept
-description: "Recursive Language Model — 大規模コンテキストをsandobx Python REPLでプログラム的に探索するDSPyモジュール"
+description: "Recursive Language Model — DSPy module for programmatic exploration of large contexts via a sandboxed Python REPL"
 category: concepts
 sub_category: AI Agent Architectures
 tags:
@@ -33,64 +33,64 @@ sources:
 
 ## TL;DR
 
-RLMは、LLMが**sandbox済みPython REPL**を通じて大規模コンテキストをプログラム的に探索できるDSPyモジュール。コンテキストを直接プロンプトに詰めるのではなく、「変数空間」（REPL内のデータ）と「トークン空間」（LLMが処理する内容）を分離し、モデルが本当に必要时才動的にコンテキストをロードする。
+RLM is a DSPy module that allows LLMs to **programmatically explore large contexts through a sandboxed Python REPL**. Instead of stuffing context directly into prompts, it separates "variable space" (data in the REPL) from "token space" (what the LLM processes), allowing the model to dynamically load context only when truly needed.
 
 > *"Most people misunderstand RLMs to be about LLMs invoking themselves. The deeper insight is LLMs interacting with their own prompts as objects."*
 > — Omar Khattab
 
-## コア概念
+## Core Concepts
 
-### 問題: Context Rot
+### Problem: Context Rot
 
-コンテキストが大きくなるにつれLLM性能が低下する現象（**context rot**）。従来の方法は全コンテキストをプロンプトに押し込むが、RLMは**選択的読み込み（selective reading）**で解決する。
+The phenomenon where LLM performance degrades as context grows larger (**context rot**). Traditional approaches push all context into the prompt, but RLM solves this through **selective reading**.
 
-### アーキテクチャ: REPLループ
+### Architecture: REPL Loop
 
-RLMは以下の反復ループで動作する：
+RLM operates through the following iterative loop:
 
 ```
-1. LLMはコンテキストの概要メタデータを受け取る（フルコンテキストではない）
-2. LLMがPythonコードを書いてデータを探索（検索、フィルタ、集約）
-3. コードがsandboxedインタープリタで実行され、LLMに出力が表示される
-4. llm_query(prompt)でサブLLMを呼び出し、セマンティック分析可能
-5. SUBMIT(output)で最終回答を返して終了
+1. LLM receives context overview metadata (not the full context)
+2. LLM writes Python code to explore data (search, filter, aggregate)
+3. Code executes in a sandboxed interpreter, output shown to LLM
+4. llm_query(prompt) invokes sub-LLM for semantic analysis
+5. SUBMIT(output) returns the final answer and terminates
 ```
 
-### 変数空間 vs トークン空間
+### Variable Space vs Token Space
 
-| 空間 | 内容 | LLMの処理 |
+| Space | Content | LLM Processing |
 |------|------|-----------|
-| **変数空間** | REPL内のデータ（コンテキスト全体） | コードで操作 |
-| **トークン空間** | LLMが実際に処理する内容 | メタデータ + 出力結果 |
+| **Variable Space** | Data within REPL (full context) | Manipulated via code |
+| **Token Space** | What the LLM actually processes | Metadata + output results |
 
-## APIリファレンス
+## API Reference
 
-### コンストラクタパラメータ
+### Constructor Parameters
 
-| パラメータ | 型 | デフォルト | 説明 |
+| Parameter | Type | Default | Description |
 |-----------|----|-----------|------|
-| `signature` | `str \| Signature` | 必須 | 入出力定義（例: `"context, query -> answer"`） |
-| `max_iterations` | `int` | 20 | REPL交互ループの最大回数 |
-| `max_llm_calls` | `int` | 50 | 実行あたりの最大llm_query呼び出し数 |
-| `max_output_chars` | `int` | 10,000 | REPL出力に含める最大文字数 |
-| `verbose` | `bool` | `False` | 詳細ログ出力 |
-| `tools` | `list[Callable]` | `None` | インタープリタから呼び出せる追加ツール関数 |
-| `sub_lm` | `dspy.LM` | `None` | サブクエリ用LM（デフォルトは`dspy.settings.lm`）。安いモデル推奨 |
-| `interpreter` | `CodeInterpreter` | `None` | カスタムインタープリタ（デフォルトはDeno/Pyodide WASM） |
+| `signature` | `str \| Signature` | Required | I/O definition (e.g., `"context, query -> answer"`) |
+| `max_iterations` | `int` | 20 | Maximum REPL interaction loops |
+| `max_llm_calls` | `int` | 50 | Maximum llm_query calls per execution |
+| `max_output_chars` | `int` | 10,000 | Maximum characters in REPL output |
+| `verbose` | `bool` | `False` | Detailed log output |
+| `tools` | `list[Callable]` | `None` | Additional tool functions callable from interpreter |
+| `sub_lm` | `dspy.LM` | `None` | LM for subqueries (default: `dspy.settings.lm`). Cheaper model recommended |
+| `interpreter` | `CodeInterpreter` | `None` | Custom interpreter (default: Deno/Pyodide WASM) |
 
-### 組み込みツール
+### Built-in Tools
 
-| ツール | 説明 |
+| Tool | Description |
 |-------|------|
-| `llm_query(prompt)` | サブLLMでセマンティック分析（~500K文字対応） |
-| `llm_query_batched(prompts)` | 複数プロンプトを並列実行（バッチ処理用） |
-| `print()` | 出力表示（結果確認に必須） |
-| `SUBMIT(...)` | 最終出力を提出して実行終了 |
-| `re, json, collections, math` | Python標準ライブラリ |
+| `llm_query(prompt)` | Semantic analysis with sub-LLM (~500K chars supported) |
+| `llm_query_batched(prompts)` | Parallel execution of multiple prompts (batch processing) |
+| `print()` | Output display (essential for checking results) |
+| `SUBMIT(...)` | Submit final output to end execution |
+| `re, json, collections, math` | Standard Python libraries |
 
-## 使用例
+## Usage Examples
 
-### 基本的な使い方
+### Basic Usage
 
 ```python
 import dspy
@@ -106,17 +106,17 @@ result = rlm(
 print(result.answer)
 ```
 
-### 安価なサブLMを使用
+### Using a Cheaper Sub-LM
 
 ```python
 main_lm = dspy.LM("openai/gpt-5")
-cheap_lm = dspy.LM("openai/gpt-5-nano")  # 抽出は安いモデルに委任
+cheap_lm = dspy.LM("openai/gpt-5-nano")  # Delegate extraction to cheap model
 
 dspy.configure(lm=main_lm)
 rlm = dspy.RLM("data, query -> summary", sub_lm=cheap_lm)
 ```
 
-### 複数型出力
+### Multi-Type Output
 
 ```python
 rlm = dspy.RLM("logs -> error_count: int, critical_errors: list[str]")
@@ -124,11 +124,11 @@ result = rlm(logs=server_logs)
 print(f"Found {result.error_count} errors")
 ```
 
-### カスタムツール
+### Custom Tools
 
 ```python
 def fetch_metadata(doc_id: str) -> str:
-    """ドキュメントIDのメタデータを取得"""
+    """Fetch metadata for a document ID"""
     return database.get_metadata(doc_id)
 
 rlm = dspy.RLM(
@@ -137,7 +137,7 @@ rlm = dspy.RLM(
 )
 ```
 
-### 非同期実行
+### Async Execution
 
 ```python
 import asyncio
@@ -151,7 +151,7 @@ async def process():
 answer = asyncio.run(process())
 ```
 
-### トレジェクトリ確認
+### Trajectory Inspection
 
 ```python
 result = rlm(context=data, query="Find the magic number")
@@ -161,115 +161,115 @@ for step in result.trajectory:
     print(f"Output:\n{step['output']}\n")
 ```
 
-## 出力構造
+## Output Structure
 
-`dspy.RLM`は`Prediction`を返す：
+`dspy.RLM` returns a `Prediction`:
 
-- シグネチャで定義した出力フィールド（例: `result.answer`）
-- `trajectory`: 各ステップのreasoning, code, outputを含む辞書のリスト
-- `final_reasoning`: 最終ステップのLLM推論
+- Output fields defined in the signature (e.g., `result.answer`)
+- `trajectory`: List of dicts containing reasoning, code, output for each step
+- `final_reasoning`: LLM reasoning from the final step
 
-## 設置要件
+## Setup Requirements
 
-### Deno必須
+### Deno Required
 
-RLMは**Deno + Pyodide**でWASMサンドボックスを構築する：
+RLM builds a WASM sandbox using **Deno + Pyodide**:
 
 ```bash
 curl -fsSL https://deno.land/install.sh | sh
 ```
 
-> ⚠️ **Known Issue**: DenoキャッシュがDSPyから見えない問題が報告されている。シェル再起動後、`deno --version`で確認すること。
+> ⚠️ **Known Issue**: Deno cache visibility problem from DSPy has been reported. After restarting your shell, verify with `deno --version`.
 
-外部サンドボックスプロバイダの使用も対応予定（ドキュメント準備中）。
+External sandbox provider support is planned (documentation in progress).
 
-## ベンチマーク結果
+## Benchmark Results
 
-| モデル | 性能 |
+| Model | Performance |
 |-------|------|
-| RLM(GPT-5-mini) vs GPT-5 | OOLONG (132k context) で **114%向上** |
-| RLM-Qwen3-8B vs Qwen3-8B | 4ベンチマーク平均で **28.3%向上** |
-| コスト | ベースモデル呼び出しと同等〜それ以下（中央値） |
+| RLM(GPT-5-mini) vs GPT-5 | **114% improvement** on OOLONG (132k context) |
+| RLM-Qwen3-8B vs Qwen3-8B | **28.3% improvement** average across 4 benchmarks |
+| Cost | Equivalent to or below base model calls (median) |
 
-## 技術的深層
+## Technical Depth
 
-### RLM ≠ 自己呼び出し
+### RLM ≠ Self-Invocation
 
-Khattabが強調する通り、RLMの本質は「LLMが自分自身を呼び出す」ことではない。より深い洞察：
+As Khattab emphasizes, the essence of RLM is not "LLMs calling themselves." The deeper insight:
 
 > *"LLMs interacting with their own prompts as objects"*
 
-つまり、LLMは自分のプロンプトを**データとして操作する**。これは**out-of-coreアルゴリズム設計**のパターンを言語モデルに適用したもの。
+In other words, the LLM manipulates its own prompt **as data**. This applies **out-of-core algorithm design** patterns to language models.
 
-### Mismanaged Geniuses Hypothesisとの接続
+### Connection to the Mismanaged Geniuses Hypothesis
 
-RLMは[Mismanaged Geniuses Hypothesis](mismanaged-geniuses-hypothesis)における**Recursive型**の実装証明：
+RLM is an implementation proof of the **Recursive type** in the [Mismanaged Geniuses Hypothesis](mismanaged-geniuses-hypothesis):
 
-- `for`ループによる任意の深さへの分解
-- プログラム的分解によるほぼ無限のコンテキスト対応
+- Decomposition to arbitrary depth via `for` loops
+- Near-infinite context handling through programmatic decomposition
 
-### Context Fragmentsとの接続
+### Connection to Context Fragments
 
-RLMの「外部化されたオブジェクト」は[Context Fragments](context-fragments)の着想源。REPL変数がコンテキストフラグメントとして機能する。
+RLM's "externalized objects" are the inspiration behind [Context Fragments](context-fragments). REPL variables function as context fragments.
 
-## pydantic-ai でのRLM実現パターン
+## RLM Implementation Patterns in pydantic-ai
 
-DSPyのRLMと同様の「REPLを介したコンテキスト分解」は、pydantic-ai + Montyでも実現可能。ただしアプローチが異なる。
+The same "REPL-mediated context decomposition" as DSPy's RLM can be achieved with pydantic-ai + Monty, though the approach differs.
 
-| 次元 | DSPy.RLM | pydantic-ai native |
+| Dimension | DSPy.RLM | pydantic-ai native |
 |---|---|---|
-| REPL | Deno + Pyodide（WASMサンドボックス） | Monty（Rust製バイトコードVM） |
-| ループ制御 | DSPyモジュール内部 | Agent output function / pydantic-graph |
-| 状態管理 | REPL変数空間 | Monty snapshot + message_history |
-| 制御権 | DSPyフレームワーク | Pydantic AI（Agent around REPL） |
+| REPL | Deno + Pyodide (WASM sandbox) | Monty (Rust bytecode VM) |
+| Loop Control | DSPy module internals | Agent output function / pydantic-graph |
+| State Management | REPL variable space | Monty snapshot + message_history |
+| Control Authority | DSPy framework | Pydantic AI (Agent around REPL) |
 
-実装パターンは3段階（詳細は[[concepts/code-mode]]）:
+Implementation pattern is 3 stages (details in [[concepts/code-mode]]):
 
-1. **最小形**: `Agent(..., capabilities=[CodeMode()], output_type=submit)` — DSPy RLMに近いUXを最少独自実装で
-2. **DSPy互換ループ**: `RunCode | FinalAnswer` 構造化出力 + 明示的Action→Execute→Observeループ
-3. **graph-native版**: Plan/RunCode/Observe/Finalizeをpydantic-graphノードに分解 + Monty snapshotでdurable execution
+1. **Minimal form**: `Agent(..., capabilities=[CodeMode()], output_type=submit)` — near-RLM UX with minimal custom implementation
+2. **DSPy-compatible loop**: `RunCode | FinalAnswer` structured output + explicit Action→Execute→Observe loop
+3. **graph-native version**: Decompose Plan/RunCode/Observe/Finalize into pydantic-graph nodes + Monty snapshot for durable execution
 
-## RLM × Programmatic Tool Calling: 補完する2軸（関数軸 vs データ軸）
+## RLM × Programmatic Tool Calling: Two Complementary Axes (Function Axis vs Data Axis)
 
-### 根本的なフレーミング
+### Fundamental Framing
 
-RLMと[[concepts/programmatic-tool-calling|PTC]]は、LLMの2つの根本的な問題に、同じ解決策（コード実行）を適用したものと理解できる：
+RLM and [[concepts/programmatic-tool-calling|PTC]] can be understood as applying the same solution (code execution) to two fundamentally different LLM problems:
 
-| 軸 | PTCが解決する問題 | RLMが解決する問題 |
+| Axis | Problem PTC Solves | Problem RLM Solves |
 |----|------------------|------------------|
-| **中心** | **ツール（関数）** — 「どう実行するか」 | **データ（文脈）** — 「何を分析するか」 |
-| **LLMの代替対象** | 逐次ツール呼び出し（N回の`tool_use`ブロック） | RAG / 長文脈プロンプト（全データの詰め込み） |
-| **問題** | ラウンドトリップ爆発・中間結果ブロート | Context rot（コンテキスト増大による性能劣化） |
-| **コードが書く対象** | `await tool_a()`, `asyncio.gather()` | `context[start:end]`, `re.findall()`, `llm_query()` |
-| **コードの目的** | ツールの実行順序・分岐・並列化を自由に制御 | データの探索範囲・分解方法を自由に選択 |
-| **コードの入出力** | 入力を決めてツールを呼び、結果を変数で受け取る | 文脈を切り出して分析し、集約して回答する |
-| **決定論の次元** | 実行順序の決定論（同じコードなら同じツールが同じ順序で呼ばれる） | 探索戦略の決定論（同じコードなら同じ範囲を見る） |
-| **自由度の次元** | 逐次ツール呼び出しより高い（コードで条件分岐・並列実行が可能） | RAG/長文脈より高い（コードで探索範囲・分解粒度を自由に制御） |
+| **Center** | **Tools (functions)** — "how to execute" | **Data (context)** — "what to analyze" |
+| **What LLM replaces** | Sequential tool calling (N `tool_use` blocks) | RAG / long-context prompting (stuffing all data) |
+| **Problem** | Round-trip explosion, intermediate result bloat | Context rot (performance degradation with context growth) |
+| **What code writes** | `await tool_a()`, `asyncio.gather()` | `context[start:end]`, `re.findall()`, `llm_query()` |
+| **Code purpose** | Freely control tool execution order, branching, parallelization | Freely choose data exploration scope and decomposition methods |
+| **Code I/O** | Choose inputs, call tools, receive results in variables | Extract context segments, analyze, aggregate into answers |
+| **Determinism dimension** | Execution order determinism (same code → same tools in same order) | Exploration strategy determinism (same code → same scope) |
+| **Freedom dimension** | Higher than sequential tool calling (conditional branching, parallel execution via code) | Higher than RAG/long-context (freely control exploration scope and decomposition granularity via code) |
 
-### 補完関係の図示
+### Complementary Relationship Diagram
 
 ```
-                ↑ RLM (データ軸: 何を分析するか)
-                │   コードで文脈を探索・分解・再帰分析
+                ↑ RLM (Data Axis: what to analyze)
+                │   Code explores, decomposes, recursively analyzes context
                 │   context[start:end], llm_query(), SUBMIT()
                 │
-                │   ★ Tool-Augmented RLM (案A)
-                │   PTC in RLM — 環境にtoolsを追加
-                │   context探索 + await tool() + llm_query()
+                │   ★ Tool-Augmented RLM (Option A)
+                │   PTC in RLM — adds tools to environment
+                │   context exploration + await tool() + llm_query()
                 │
-    ────────────┼──────────────────────────────────→ PTC (関数軸: どう実行するか)
-                │   コードでツールをasync呼び出し・並列化
+    ────────────┼──────────────────────────────────→ PTC (Function Axis: how to execute)
+                │   Code async-calls tools, parallelizes
                 │   await tool(), asyncio.gather()
                 │
-                │   RLM as PTC Tool (案B)
-                │   PTCエージェントがRLMをツールの一つとして呼ぶ
+                │   RLM as PTC Tool (Option B)
+                │   PTC agent calls RLM as one of its tools
 ```
 
-### 具体例で見る違い
+### Concrete Examples of the Difference
 
-**PTCのコード（関数軸）:**
+**PTC Code (Function Axis):**
 ```python
-# 「どう実行するか」に集中
+# Focused on "how to execute"
 results = await asyncio.gather(
     query_database("SELECT * FROM sales"),
     fetch_weather("Tokyo"),
@@ -279,9 +279,9 @@ aggregated = sorted(results[0], key=lambda x: x['revenue'])[:5]
 print(aggregated)
 ```
 
-**RLMのコード（データ軸）:**
+**RLM Code (Data Axis):**
 ```python
-# 「何を分析するか」に集中
+# Focused on "what to analyze"
 budget_sections = [s for s in context if "budget" in s.lower()]
 for i, section in enumerate(budget_sections[:10]):
     analysis = llm_query(f"Extract key numbers from: {section}")
@@ -289,115 +289,115 @@ for i, section in enumerate(budget_sections[:10]):
 SUBMIT(synthesized_answer)
 ```
 
-**統合されたコード（Tool-Augmented RLM, 案A）:**
+**Integrated Code (Tool-Augmented RLM, Option A):**
 ```python
-# 両軸を同時に扱う
-relevant = [s for s in context if "revenue" in s.lower()]  # RLM: 文脈探索
-financials = await query_financial_api({"ids": extract_ids(relevant)})  # PTC: 外部実行
-analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM: 再帰分析
+# Handles both axes simultaneously
+relevant = [s for s in context if "revenue" in s.lower()]  # RLM: context exploration
+financials = await query_financial_api({"ids": extract_ids(relevant)})  # PTC: external execution
+analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM: recursive analysis
 print(analysis)
 ```
 
-### なぜこのフレーミングが重要か
+### Why This Framing Matters
 
-PTCとRLMを「コード実行」という共通基盤で1つにまとめてしまうと、**それぞれが解決している本質的に異なる問題が見えなくなる**。一方で「全く別物」として扱うと、**統合時の相乗効果を見落とす**。
+If you lump PTC and RLM together under "code execution" as a common substrate, you lose sight of **the fundamentally different problems each solves**. Conversely, treating them as "completely unrelated" causes you to **miss the synergistic effects of integration**.
 
-正しい理解:
-- PTCは**関数軸**の最適化（標準のtool callingが非効率なのをコードで改善）
-- RLMは**データ軸**の最適化（RAG/長文脈が非効率なのをコードで改善）
-- 両者は直交するため、統合（Tool-Augmented RLM, 案A）によって両軸を同時に最適化できる
+Correct understanding:
+- PTC optimizes the **function axis** (improving inefficient standard tool calling via code)
+- RLM optimizes the **data axis** (improving inefficient RAG/long-context via code)
+- The two are orthogonal, so integration (Tool-Augmented RLM, Option A) can optimize both axes simultaneously
 
-### 方向性の対称性: PTCは統合(merge)、RLMは分解(split)
+### Directional Symmetry: PTC merges, RLM splits
 
-さらに深い対称性がある：
+A deeper symmetry exists:
 
 ```
-PTC: 分解されたTool Callを統合・生成・効率化
+PTC: Merges decomposed tool calls into efficient bundles
      [tool_call_1] + [tool_call_2] + ... + [tool_call_N]
-     → コード1ブロック: await tool_a(); await tool_b()
+     → 1 code block: await tool_a(); await tool_b()
 
-RLM: 統合された文脈を分解・分割統治
+RLM: Splits unified context via divide and conquer
      [single huge context]
-     → コードによる探索: relevant = [s for s in context if ...]
-     → 再帰的llm_query: for section in relevant: llm_query(section)
+     → Code-based exploration: relevant = [s for s in context if ...]
+     → Recursive llm_query: for section in relevant: llm_query(section)
 ```
 
-| 方向性 | PTC | RLM |
+| Direction | PTC | RLM |
 |--------|-----|-----|
-| **操作** | **統合 (Merge)** — バラバラのtool callを1つのコードブロックに束ねる | **分解 (Split)** — 巨大な文脈をコードで切り分けて個別処理する |
-| **問題の形** | N個の独立した呼び出し → 1個のコード | 1個の巨大データ → N個の断片 |
-| **ボトルネック** | ラウンドトリップ数（モデル往復） | コンテキストサイズ（一度に読める量） |
-| **改善手段** | 並列実行・条件分岐・集約をコードに任せる | 選択的読み込み・再帰的分析をコードに任せる |
+| **Operation** | **Merge** — Bundle scattered tool calls into one code block | **Split** — Use code to slice massive context into individually processed fragments |
+| **Problem shape** | N independent calls → 1 code block | 1 massive data blob → N fragments |
+| **Bottleneck** | Round-trip count (model round trips) | Context size (what can be read at once) |
+| **Improvement method** | Hand parallel execution, conditionals, aggregation to code | Hand selective reading, recursive analysis to code |
 
-つまりPTCは**細切れを束ねる方向**、RLMは**塊を細切れにする方向**で、ちょうど対称的であり、かつ直交している。
+In other words, PTC goes in the **bundling direction** while RLM goes in the **splitting direction** — they are precisely symmetric and orthogonal.
 
-### RLM = 文脈の分割統治/MapReduceをLLMで柔らかく行う
+### RLM = Soft MapReduce for Context, Performed by LLM
 
-RLMは「文脈のMapReduce」と理解できる：
+RLM can be understood as "MapReduce for context":
 
 ```
-MAPフェーズ（探索・分解）:
-  context[start:end]             ← 文脈の切り出し
-  re.findall(pattern, context)    ← キーワード検索
-  [s for s in context if cond]  ← フィルタリング
+MAP Phase (exploration, decomposition):
+  context[start:end]             ← context extraction
+  re.findall(pattern, context)    ← keyword search
+  [s for s in context if cond]  ← filtering
 
-SHUFFLE（中間集約）:
-  llm_query("Extract from: {section}")  ← 各断片をサブLMで分析
+SHUFFLE (intermediate aggregation):
+  llm_query("Extract from: {section}")  ← analyze each fragment with sub-LM
 
-REDUCE（最終集約）:
-  llm_query("Synthesize: {analyses}")   ← 結果を統合
-  SUBMIT(final_answer)                   ← 最終回答
+REDUCE (final aggregation):
+  llm_query("Synthesize: {analyses}")   ← integrate results
+  SUBMIT(final_answer)                   ← final answer
 ```
 
-従来のMapReduceとの違い:
-- **分割単位が固定ではない**: モデルがタスクに応じて動的に分割方法を決める（正規表現、意味的境界、サイズ基準など）
-- **集約にLLMを使う**: 単なる合計や連結ではなく、`llm_query`で意味的集約が可能
-- **再帰的**: Map中でさらにMapReduce可能（`llm_query`内でさらに`llm_query`）
-- **戦略そのものが動的**: タスクごとに「何をMapに」「どうReduceに」をモデルが選択
+Differences from traditional MapReduce:
+- **Split units are not fixed**: Model dynamically decides decomposition method per task (regex, semantic boundaries, size thresholds, etc.)
+- **LLM-based aggregation**: Not just summing or concatenating — `llm_query` enables semantic aggregation
+- **Recursive**: Map phase can further MapReduce (llm_query within llm_query)
+- **Strategy itself is dynamic**: Model selects "what to Map" and "how to Reduce" per task
 
-### 文脈の分割戦略はLLM自身が決める——そして自由だ
+### Context Splitting Strategy is Chosen by the LLM Itself — And Is Free-Form
 
-> **RLMでは文脈の分割処理戦略それ自体もLLMが担う**
+> **In RLM, the context splitting strategy itself is handled by the LLM**
 
-**はい、それがRLMの本質です。** 論文の核心:
+**Yes, this is the essence of RLM.** The paper's core insight:
 
 > *"Unlike prior agentic methods that rigidly define these workflow patterns, RLMs defer these decisions entirely to the language model."*
 > — RLM paper, §5
 
-従来の手法（RAGは固定chunk size + retriever、Agentic workflowsは固定DAG）が分割戦略を**ハードコード**するのに対し、RLMは**モデル自身に決定させる**。これが「柔らかさ」の源泉。
+Where prior methods hardcode splitting strategies (RAG uses fixed chunk size + retriever; agentic workflows use fixed DAGs), RLM **lets the model itself decide**. This is the source of its "softness."
 
-#### スペクトラム: 手動分割からツール委譲まで
+#### Spectrum: From Manual Splitting to Tool Delegation
 
-RLMの環境では、モデルは以下のスペクトラムから動的に選択できる：
+In RLM's environment, the model can dynamically choose from this spectrum:
 
-| レベル | 方法 | モデルのコード | 特性 |
+| Level | Method | Model's Code | Characteristics |
 |--------|------|--------------|------|
-| **1. 完全手動** | 生Pythonで分割 | `context[1000:2000]`, `re.findall()` | 最大の制御、完全に透明 |
-| **2. 準手動（自作関数）** | コード中でhelper関数を定義 | `def chunk_by_section(text): ...` | 柔軟だがコードが長い |
-| **3. ツール委譲** | 環境のPTCツールを呼ぶ | `await chunk_document(context, strategy="topic")` | 効率的だがツール設計に依存 |
-| **4. 再帰的委譲** | llm_queryでサブLMに委譲 | `llm_query(f"Split and analyze: {section}")` | 最も柔軟、最も高コスト |
+| **1. Fully Manual** | Split with raw Python | `context[1000:2000]`, `re.findall()` | Maximum control, fully transparent |
+| **2. Semi-Manual (helper functions)** | Define helper functions in code | `def chunk_by_section(text): ...` | Flexible but longer code |
+| **3. Tool Delegation** | Call environment PTC tools | `await chunk_document(context, strategy="topic")` | Efficient but depends on tool design |
+| **4. Recursive Delegation** | Delegate to sub-LM via llm_query | `llm_query(f"Split and analyze: {section}")` | Most flexible, highest cost |
 
-**重要な自由度**: モデルはタスクごとに適切なレベルを選択できる。単純な日付検索ならレベル1（`re.findall`）、複雑な意味的分割ならレベル4（`llm_query`へ委譲）。
+**Key freedom**: The model can choose the appropriate level per task. Simple date search → Level 1 (`re.findall`); complex semantic splitting → Level 4 (delegate to `llm_query`).
 
-#### Tool-Augmented RLMでの拡張
+#### Extension in Tool-Augmented RLM
 
-案A（PTC in RLM）では、分割戦略のツール委譲がさらに豊かになる：
+Option A (PTC in RLM) enriches tool delegation for splitting strategies:
 
 ```python
-# Tool-Augmented RLMでの分割戦略の選択肢（モデルが動的に選択）:
+# Splitting strategy options in Tool-Augmented RLM (model dynamically selects):
 
-# 選択肢1: 手動分割（生Python）
+# Option 1: Manual split (raw Python)
 relevant = [s for s in context if "festival" in s.lower()]
 
-# 選択肢2: ツールに委譲（PTCツールとして提供）
+# Option 2: Delegate to tool (provided as PTC tool)
 sections = await chunk_by_topic(context, max_tokens=2000)
 relevant = [s for s in sections if topic_relevance(s, query) > 0.8]
 
-# 選択肢3: 再帰的委譲（llm_queryに意味的分解を委ねる）
+# Option 3: Recursive delegation (delegate semantic decomposition to llm_query)
 analysis = llm_query(f"Find all sections about festivals in: {context[:50000]}")
 
-# 選択肢4: 組み合わせ
-# まずツールで大まかに分割し、各部分を再帰的に分析
+# Option 4: Combination
+# First roughly split with tool, recursively analyze each part
 sections = await chunk_by_semantic_boundary(context)
 for s in sections:
     if llm_query(f"Is this relevant to {query}? Answer yes/no: {s[:500]}") == "yes":
@@ -405,243 +405,226 @@ for s in sections:
         print(details)
 ```
 
-#### まとめ: RLMの分割戦略の自由度
+#### Summary: RLM Splitting Strategy Freedom
 
-RLMにおける文脈分割の自由度は、以下の3つの軸で実現されている：
+RLM's context splitting freedom is realized across three axes:
 
-1. **手段の自由**: 生Python、自作関数、環境ツール、llm_query — どの手段で分割するかはモデルが決定
-2. **粒度の自由**: 文字数単位、意味的単位、キーワード単位 — タスクに応じて動的に選択
-3. **深度の自由**: 1回の分割で完了、再帰的に深掘り、必要に応じて中断 — どこまで分解するかはモデルが決定
+1. **Freedom of means**: Raw Python, helper functions, environment tools, llm_query — the model decides which means
+2. **Freedom of granularity**: Character-level, semantic-level, keyword-level — dynamically chosen per task
+3. **Freedom of depth**: One split to completion, recursive deep dive, or abort as needed — the model decides how far to decompose
 
-これを「柔らかいMapReduce」と呼ぶのは極めて正確であり、従来のRAG（固定chunk + 固定top-k）やAgentic Workflow（固定DAG）に対するRLMの本質的な優位性がここにある。
+Calling this "soft MapReduce" is extremely accurate, and this is where RLM's essential advantage over traditional RAG (fixed chunk + fixed top-k) and Agentic Workflow (fixed DAG) lies.
 
-### DSPy実装における現状と第一原理の可能性
+### Current State in DSPy Implementation and First-Principles Possibilities
 
-### RLMはPTCを陽に取り込んでいない
+### RLM Does Not Explicitly Incorporate PTC
 
-RLMの論文（arXiv:2512.24601, Dec 2025）とDSPy.RLMのAPIを精査した結果：
+After scrutinizing the RLM paper (arXiv:2512.24601, Dec 2025) and DSPy.RLM API:
 
-1. **RLMの組み込みツールは`llm_query(prompt)`のみ** — これは外部ツール呼び出しではなく、**モデル自身の再帰的サブクエリ**。PTCの`allowed_callers`概念は存在しない。
-2. **RLMの`tools`パラメータは汎用`Callable`** — 任意のPython関数を受け入れるが、PTC的な"async tool wrapping + allowed_callers"は提供しない。
-3. **RLMが解く問題は「コンテキスト管理」** — 巨大ドキュメントをREPL変数として与え、モデルがコードで探索・分解・再帰クエリする。PTCが解く「ツールオーケストレーション」は射程外。
+1. **RLM's only built-in tool is `llm_query(prompt)`** — This is not an external tool call but the model's own recursive subquery. The PTC `allowed_callers` concept does not exist.
+2. **RLM's `tools` parameter accepts generic `Callable`s** — Arbitrary Python functions are accepted, but PTC-style "async tool wrapping + allowed_callers" is not provided.
+3. **RLM solves "context management"** — Giant documents are given as REPL variables, and the model explores/decomposes/recursively queries via code. "Tool orchestration" (what PTC solves) is out of scope.
 
-### 問題の違い
+### Problem Difference
 
-| 次元 | RLM | Programmatic Tool Calling |
+| Dimension | RLM | Programmatic Tool Calling |
 |------|-----|--------------------------|
-| **問題** | Context rot（コンテキスト増大による性能劣化） | ツール定義膨張・中間結果ブロート |
-| **検索空間** | 100万トークン以上のドキュメント | 2,500+ APIエンドポイント |
-| **モデルの行動** | コードで文脈を探索 → `llm_query`で再帰分析 | コードでツールをasync呼び出し → 結果をフィルタ |
-| **再帰性** | **本質的** — `llm_query`がサブLMを起動 | **なし** — ツール呼び出しはフラット |
-| **ツール起源** | `tools`パラメータ（任意Python関数） | `allowed_callers`付きのMCP/APIツール定義 |
-| **`allowed_callers`** | 概念なし | **中核機構** |
+| **Problem** | Context rot (performance degradation from context growth) | Tool definition bloat, intermediate result bloat |
+| **Search space** | 1M+ token documents | 2,500+ API endpoints |
+| **Model behavior** | Code explores context → `llm_query` recursive analysis | Code async-calls tools → filters results |
+| **Recursion** | **Essential** — `llm_query` launches sub-LM | **None** — tool calls are flat |
+| **Tool origin** | `tools` parameter (arbitrary Python functions) | MCP/API tool definitions with `allowed_callers` |
+| **`allowed_callers`** | Concept absent | **Core mechanism** |
 
-### 基盤の共通性
+### Common Substrate
 
-両者に共通するのは、サンドボックスコード実行という**基盤**だけ：
+Both share only the **sandboxed code execution** substrate:
 
 ```
-LLMがコードを書く → サンドボックスで実行 → 結果だけがモデルに返る
+LLM writes code → executes in sandbox → only results returned to model
 ```
 
-この基盤は同じだが、コードの**中身**が根本的に異なる：
+This substrate is the same, but the code **content** is fundamentally different:
 
-- RLMのコード: `data[start:end]`, `re.findall(pattern, text)`, `llm_query("summarize this")`, `SUBMIT(answer)`
-- PTCのコード: `await tool_a(input)`, `await tool_b(result)`, `asyncio.gather(...)`, `print(filtered)`
+- RLM code: `data[start:end]`, `re.findall(pattern, text)`, `llm_query("summarize this")`, `SUBMIT(answer)`
+- PTC code: `await tool_a(input)`, `await tool_b(result)`, `asyncio.gather(...)`, `print(filtered)`
 
-### アーキテクチャ上の自由度: 合成可能だが設計されていない
+### Architectural Freedom: Composable but Not Designed
 
-RLMの`tools`パラメータにPTC的なツール関数を渡すことは**技術的に可能**：
+Passing PTC-like tool functions to RLM's `tools` parameter is **technically possible**:
 
 ```python
-# RLMのtoolsにPTC的な関数を渡す（可能だが、PTCのasync wrappingはない）
+# Pass PTC-like functions to RLM's tools (possible, but lacks PTC async wrapping)
 rlm = dspy.RLM(
     "context, query -> answer",
-    tools=[search_api, fetch_document]  # 任意のPython関数
+    tools=[search_api, fetch_document]  # arbitrary Python functions
 )
 ```
 
-しかしこれは**設計された統合ではなく、偶発的な拡張性**。以下の制約がある：
+But this is **accidental extensibility, not designed integration**. The following constraints apply:
 
-1. PTCの`allowed_callers`によるセキュリティ境界がない — RLM内の全コードが全ツールにアクセス可能
-2. ツールのasync自動ラッピングがない — PTCではツールが自動的にasync変換される
-3. `caller`識別子がない — PTCのレスポンスには`caller`フィールドでコード→ツール呼び出しを追跡できる
-4. ツール結果のコンテキスト除外保証がない — PTCではプログラム的呼び出しの結果は自動的にコンテキストから除外される
+1. No PTC `allowed_callers` security boundary — all code within RLM can access all tools
+2. No auto async-wrapping of tools — PTC automatically converts tools to async
+3. No `caller` identifier — PTC responses include a `caller` field to trace code→tool invocation
+4. No guaranteed context exclusion of tool results — PTC automatically excludes programmatic call results from context
 
-### 結論: 独立した2つのパラダイム
+### Conclusion: Two Independent Paradigms
 
 ```
 RLM:                                   PTC:
-コードで文脈を探索                     コードでツールを呼び出す
+Code explores context                  Code calls tools
     ↓                                       ↓
-llm_queryで再帰分析                    await tool()で外部実行
+Recursive analysis via llm_query        External execution via await tool()
     ↓                                       ↓
-SUBMITで最終回答                       print(stdout)で終了
+Final answer via SUBMIT                 Termination via print(stdout)
 ```
 
-両者は**補完関係**にある：
-- RLMは「何を分析するか」の選択（コンテキスト分解）
-- PTCは「どう実行するか」の制御（ツールオーケストレーション）
+The two have a **complementary relationship**:
+- RLM selects "what to analyze" (context decomposition)
+- PTC controls "how to execute" (tool orchestration)
 
-真の統合（RLM内でPTCツールを呼び出し→結果をさらに再帰分析）は、現状では**手動構成が必要**であり、フレームワークレベルでは未対応。ただし[[concepts/pydantic-ai-harness]]（Monty + CodeMode）は両方を内包できるプラットフォームとして最も統合に近い。
+True integration (calling PTC tools within RLM → recursively analyzing results) currently requires **manual configuration** and is not framework-supported. However, [[concepts/pydantic-ai-harness]] (Monty + CodeMode) is the closest platform to encompassing both.
 
-### 第一原理からの再検討: PTC統合のための環境拡張設計
+### First-Principles Re-examination: Environment Extension Design for PTC Integration
 
-上の分析は「DSPy.RLM実装における現状」としては正確だが、RLM論文の**純粋なアーキテクチャ**から見ると、PTC統合はむしろ自然な拡張である。
+The above analysis is accurate for "current state of DSPy.RLM implementation," but from the **pure architecture** of the RLM paper, PTC integration is rather a natural extension.
 
-#### RLM論文の環境抽象化
+#### RLM Paper's Environment Abstraction
 
-RLM論文が定義する環境は、以下の3要素からなる：
+The RLM paper defines the environment as consisting of 3 elements:
 
 ```
 Environment = {
-  REPL: Python実行環境（状態永続、sandboxed builtins）
-  context変数: 巨大な入力データ
-  llm_query(): 再帰的サブLM呼び出し
-  SUBMIT(): 最終回答
+  REPL: Python execution environment (persistent state, sandboxed builtins)
+  context variable: massive input data
+  llm_query(): recursive sub-LM invocation
+  SUBMIT(): final answer
 }
 ```
 
-この環境は **「モデルが記号的に操作できる対象の集合」** として設計されている。論文の強調：
+This environment is designed as **"the set of objects the model can symbolically manipulate."** The paper emphasizes:
 
 > *"The key insight is that long prompts should not be fed into the neural network directly but should instead be treated as **part of the environment** that the LLM can **symbolically interact with**."*
 
-論文で「環境の部品」として想定されているのは`context`変数だけだが、**この抽象化は任意の「記号的操作可能な対象」に拡張可能**である。
+The paper only envisions the `context` variable as an "environment part," but **this abstraction is extensible to any "symbolically manipulable object."**
 
 #### Tool-Augmented Environment Design
 
-PTCツールをRLM環境の第一級市民として統合する設計：
+Design for integrating PTC tools as first-class citizens of the RLM environment:
 
 ```
 Tool-Augmented Environment = {
-  REPL: Python実行環境（sandboxed, async対応）
-  context変数: 入力データ（RLM由来）
-  tools: PTCツール群（async関数として公開） ← NEW
-  llm_query(): 再帰的サブLM呼び出し（RLM由来）
-  SUBMIT(): 最終回答（RLM由来）
+  REPL: Python execution environment (sandboxed, async-capable)
+  context variable: input data (from RLM)
+  tools: PTC tool collection (exposed as async functions) ← NEW
+  llm_query(): recursive sub-LM invocation (from RLM)
+  SUBMIT(): final answer (from RLM)
 }
 ```
 
-RLMのループは変わらないが、コードが書ける対象が増える：
+The RLM loop structure is unchanged, but the code can target more objects.
 
-```python
-# 純粋RLMのコード（論文の例）
-for i, section in enumerate(context):
-    buffer = llm_query(f"Section {i}: {section}")
-    print(f"Tracked: {buffer}")
+#### Why RLM's Environment Abstraction Is PTC-Compatible
 
-# Tool-Augmented RLMのコード（同じループ構造）
-for i, section in enumerate(context):
-    # RLM: コードで文脈を探索
-    relevant = [s for s in section if "budget" in s.lower()]
-    # PTC: コードで外部ツールを呼び出し
-    financial_data = await query_financial_api({"ids": extract_ids(relevant)})
-    # RLM: 再帰分析
-    analysis = llm_query(f"Analyze: {relevant}, {financial_data}")
-    print(f"Tracked: {analysis}")
-```
-
-#### なぜRLMの環境抽象化がPTCと相性が良いか
-
-| RLM環境の特性 | PTC統合との整合性 |
+| RLM Environment Property | PTC Integration Compatibility |
 |--------------|------------------|
-| **REPLで任意のPythonコード実行** | PTCツールも`await tool()`で呼べる — コードの延長線上 |
-| **結果はREPLの変数空間に留まる** | PTCツール結果もモデルコンテキストに入らず、変数空間で保持 |
-| **sandboxed builtins** | PTCの`allowed_callers`はsandboxの一種 |
-| **llm_queryで再帰分析** | PTCツール結果をllm_queryの入力にできる |
-| **SUBMITで最終回答** | PTCツール結果を含む最終回答を提出 |
+| **REPL executes arbitrary Python code** | PTC tools can be called via `await tool()` — a natural code extension |
+| **Results remain in REPL variable space** | PTC tool results don't enter model context; kept in variable space |
+| **sandboxed builtins** | PTC's `allowed_callers` is a form of sandbox |
+| **Recursive analysis via llm_query** | PTC tool results can serve as llm_query input |
+| **Final answer via SUBMIT** | Submit final answer including PTC tool results |
 
-#### 3つの統合アーキテクチャ
+#### Three Integration Architectures
 
-論文の環境抽象化を尊重した場合、3つのアーキテクチャが考えられる：
+Respecting the paper's environment abstraction, three architectures are conceivable:
 
-##### 案A: PTC in RLM（RLMが外側、PTCが内側）★ 推奨
+##### Option A: PTC in RLM (RLM outer, PTC inner) ★ Recommended
 
 ```
-RLM Root（環境にcontext + tools + llm_query）
-  └── モデルがPythonコードを書く
-        ├── context[start:end]  ← RLM: 文脈探索
-        ├── await tool_a()       ← PTC: ツール呼び出し
-        └── llm_query(...)       ← RLM: 再帰分析
+RLM Root (environment has context + tools + llm_query)
+  └── Model writes Python code
+        ├── context[start:end]  ← RLM: context exploration
+        ├── await tool_a()       ← PTC: tool invocation
+        └── llm_query(...)       ← RLM: recursive analysis
   └── SUBMIT(answer)
 ```
 
-**利点**: RLMのループ構造（探索→分析→集約）を維持したまま、PTCツールを追加。環境の一貫性が高い。
+**Advantage**: Maintains RLM's loop structure (explore→analyze→aggregate) while adding PTC tools. High environmental consistency.
 
-##### 案B: RLM as PTC Tool（PTCが外側、RLMがツールの一つ）
+##### Option B: RLM as PTC Tool (PTC outer, RLM as one tool)
 
 ```
 PTC Agent
   ├── await search_db(query)
-  ├── await rlm_analyze(context, sub_query)  ← RLMを「ツール」として呼ぶ
+  ├── await rlm_analyze(context, sub_query)  ← Call RLM as a "tool"
   ├── await fetch_details(ids)
   └── submit(answer)
 ```
 
-**利点**: AnthropicのPTC APIに直接載せられる。ただしRLMの再帰的探索が「外部ツール呼び出し」に埋没し、文脈探索の自然さが失われる。
+**Advantage**: Directly compatible with Anthropic's PTC API. However, RLM's recursive exploration gets buried in "external tool calls," losing the naturalness of context exploration.
 
-##### 案C: Dual Environment（環境の二層化）
+##### Option C: Dual Environment (two-layer environment)
 
 ```
-Layer 1: PTC Environment（tool orchestration）
+Layer 1: PTC Environment (tool orchestration)
   └── await tool_a(), await tool_b()
-      └── Layer 2: RLM Environment（context decomposition）
-            └── context探索, llm_query(), SUBMIT()
+      └── Layer 2: RLM Environment (context decomposition)
+            └── context exploration, llm_query(), SUBMIT()
 ```
 
-**利点**: 関心の分離。ただし環境の切り替えにオーバーヘッド。
+**Advantage**: Separation of concerns. However, environment switching has overhead.
 
-#### 設計上の課題
+#### Design Challenges
 
-真の統合には以下の設計判断が必要：
+True integration requires the following design decisions:
 
-1. **ツール発見**: PTCツールの定義（input_schema）をどうRLM環境に注入するか？
-   - Cloudflare CodeModeの教訓: `search()` + `execute()`の2ツールに圧縮するのが最適
-   - → 環境に`discover_tools(query)` + `call_tool(name, args)`を追加
+1. **Tool Discovery**: How to inject PTC tool definitions (input_schema) into the RLM environment?
+   - Cloudflare CodeMode insight: compress into two tools: `search()` + `execute()`
+   - → Add `discover_tools(query)` + `call_tool(name, args)` to the environment
 
-2. **セキュリティ境界**: `allowed_callers`に相当する制御をどうREPLに課すか？
-   - RLM論文のsandboxed builtinsは「危険な関数を消す」だけ
-   - PTCは「許可されたツールだけを呼べる」というpositive model
-   - → RLMのsandboxに`allowed_callers`相当の許可リストを追加
+2. **Security Boundary**: How to impose `allowed_callers`-equivalent control on the REPL?
+   - RLM paper's sandboxed builtins only "remove dangerous functions"
+   - PTC uses a positive model: "can only call permitted tools"
+   - → Add `allowed_callers`-equivalent allowlist to RLM's sandbox
 
-3. **結果ルーティング**: PTCツールの結果はモデルコンテキストに入れず、REPL変数空間に留める
-   - RLMはすでに`print()`出力だけをモデルに見せている
-   - → PTCツール結果も`print()`されたものだけがモデルコンテキストに入る（自然な拡張）
+3. **Result Routing**: PTC tool results don't enter model context; kept in REPL variable space
+   - RLM already only shows `print()` output to the model
+   - → Only `print()`ed PTC tool results enter model context (natural extension)
 
-4. **再帰との相互作用**: PTCツール結果 + 再帰的llm_queryの合成
-   - → `llm_query(tool_result + context_snippet)` で両者を合成可能（REPL変数空間なら自然）
+4. **Interaction with Recursion**: Synthesizing PTC tool results + recursive llm_query
+   - → `llm_query(tool_result + context_snippet)` can synthesize both (natural in REPL variable space)
 
-#### まとめ
+#### Summary
 
-DSPy.RLMが現在PTCを「陽に取り込んでいない」のは実装の制約であって、**アーキテクチャ上の必然ではない**。RLM論文の環境抽象化は、PTCツールを第一級市民としてホストするよう設計されていると言える。
+That DSPy.RLM currently doesn't "explicitly incorporate" PTC is an implementation constraint, not an **architectural necessity**. The RLM paper's environment abstraction is designed to host PTC tools as first-class citizens.
 
-設計判断としては**案A（PTC in RLM）**が優れている：
-- RLMのループ構造を維持
-- PTCツールを環境の一部として自然に統合
-- Cloudflare CodeModeの`search()+ execute()`パターンを環境層に移植可能
-- pydantic-ai-harness（Monty + CodeMode）がこのアーキテクチャに最も近い実装
+Design-wise, **Option A (PTC in RLM)** is superior:
+- Maintains RLM's loop structure
+- Naturally integrates PTC tools as environment parts
+- Cloudflare CodeMode's `search()+ execute()` pattern can be ported to the environment layer
+- pydantic-ai-harness (Monty + CodeMode) is closest to this architecture in implementation
 
-実装の最短経路は、RLM環境の`tools`パラメータを「単なるPython関数のリスト」から「async対応・allowed_callers付き・結果自動フィルタリング付きのPTCツールコレクション」に昇格させること。これはDSPy.RLMの変更でも、pydantic-ai-harness上の独立実装でも可能。
+The shortest implementation path: upgrade RLM environment's `tools` parameter from "a list of plain Python functions" to "a PTC tool collection with async support, allowed_callers, and automatic result filtering." This is achievable either as a DSPy.RLM change or as an independent implementation on pydantic-ai-harness.
 
-## ステータス・既知問題
+## Status & Known Issues
 
-| 項目 | ステータス |
+| Item | Status |
 |------|----------|
-| API安定性 | **Experimental** — 将来バージョンで変更可能性あり |
-| スレッドセーフティ | カスタムインタープリタ使用時はスレッドセーフではない。並列使用時は別インスタンスを作成すること |
-| Deno依存 | 必须 — インストールとキャッシュ設定に注意 |
+| API Stability | **Experimental** — Subject to change in future versions |
+| Thread Safety | Not thread-safe when using custom interpreter. Create separate instances for parallel use |
+| Deno Dependency | Required — pay attention to installation and cache configuration |
 
-## 関連プロジェクト
+## Related Projects
 
-- [DSPy](dspy) — RLMを提供するDeclarative LMプログラミングフレームワーク
-- [GEPA](gepa) — 同一著者のGenetic Pareto Prompt Evolution
-- [Alex Zhang](alex-zhang) — RLMの第一著者
-- [Omar Khattab](omar-khattab) — RLM共著者、DSPy創設者
-- [Context Fragments](context-fragments) — RLMのexternalized objectsに着想を得た概念
-- [Long Context Coding Agents](long-context-coding-agents) — RLM関連技術
-- [[concepts/pydantic-ai-harness]] — MontyベースのCodeModeを提供
-- [[concepts/code-mode]] — Agent around REPLパターンの詳細
-- [[concepts/monty-sandbox]] — Rust製REPLサンドボックス
+- [DSPy](dspy) — Declarative LM programming framework that provides RLM
+- [GEPA](gepa) — Genetic Pareto Prompt Evolution by same authors
+- [Alex Zhang](alex-zhang) — RLM first author
+- [Omar Khattab](omar-khattab) — RLM co-author, DSPy founder
+- [Context Fragments](context-fragments) — Concept inspired by RLM's externalized objects
+- [Long Context Coding Agents](long-context-coding-agents) — RLM-related technology
+- [[concepts/pydantic-ai-harness]] — Monty-based CodeMode
+- [[concepts/code-mode]] — Agent around REPL pattern details
+- [[concepts/monty-sandbox]] — Rust REPL sandbox
 
 ## See Also
 

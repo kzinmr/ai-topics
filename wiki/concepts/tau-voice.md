@@ -21,113 +21,113 @@ sources:
 
 # τ-Voice
 
-**τ-Voice**（タウ・ボイス）は、τ²-bench を拡張し、**フルデュプレックス（同時双方向）音声エージェント**の評価を行うベンチマークである。278タスクで、**タスク完遂能力と会話管理能力を同時に**評価する。2026年3月、Soham Ray、Keshav Dhandhania、Victor Barres、Karthik Narasimhan によって発表された。
+**τ-Voice** extends τ²-bench to evaluate **full-duplex (simultaneous bidirectional) voice agents**. With 278 tasks, it simultaneously evaluates **task completion ability and conversation management ability**. Published March 2026 by Soham Ray, Keshav Dhandhania, Victor Barres, and Karthik Narasimhan.
 
-> 論文: [arXiv:2603.13686](https://arxiv.org/abs/2603.13686) "τ-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains"
+> Paper: [arXiv:2603.13686](https://arxiv.org/abs/2603.13686) "τ-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains"
 
-## 背景：音声の最前線
+## Background: The Voice Frontier
 
-カンバセーショナルAIの次のフロンティアは**フルデュプレックス音声インタラクション**である。システムが同時に聞き、同時に話し、割り込みを優雅に処理し、リアルタイムでターンテイキングの判断を行う。ターンベースの相互作用（話す→待つ→話す）とは根本的に異なるパラダイムだ。
+The next frontier of conversational AI is **full-duplex voice interaction**. The system must simultaneously listen, simultaneously speak, gracefully handle interruptions, and make real-time turn-taking decisions. This is a fundamentally different paradigm from turn-based interaction (speak → wait → speak).
 
-音声ネイティブLLMの新世代（GPT-4o voice、Gemini Live等）がこれを可能にしつつある。カスタマーサービスは主要な応用領域であり、複雑な問題では依然として音声が好まれる。
+A new generation of voice-native LLMs (GPT-4o voice, Gemini Live, etc.) is making this possible. Customer service is a key application domain, where voice remains preferred for complex issues.
 
-**しかし、会話を維持できることと、返品処理・注文変更・請求紛争の解決をテキストエージェントと同等の信頼性で同時に行えることは、まったく別の問題である。**
+**However, being able to maintain a conversation and being able to simultaneously handle returns, order changes, and billing disputes with reliability comparable to text agents are entirely different problems.**
 
-## なぜエンドツーエンド評価が必要か
+## Why End-to-End Evaluation is Needed
 
-音声エージェントは**2つの能力**を同時に発揮しなければならない：
+Voice agents must simultaneously demonstrate **two capabilities**:
 
-| 能力 | 内容 | 既存の評価 |
+| Capability | Content | Existing Evaluation |
 |------|------|-----------|
-| **タスク完遂** | リクエストの推論、正しいツール呼び出し、DB状態の変更 | τ-bench, τ²-bench（テキストのみ） |
-| **会話管理** | ターンテイキング、割り込み、バックチャネリング | Full-Duplex-Bench（人工的タスク） |
+| **Task Completion** | Request reasoning, correct tool calling, DB state changes | τ-bench, τ²-bench (text only) |
+| **Conversation Management** | Turn-taking, interruptions, backchanneling | Full-Duplex-Bench (artificial tasks) |
 
-**両方を同時に評価するベンチマークは存在しなかった。** τ-Voice はこのギャップを埋める。
+**No benchmark existed that evaluates both simultaneously.** τ-Voice fills this gap.
 
-## 音声がタスクを複雑化させる仕組み
+## How Voice Complicates Tasks
 
-音声はテキストにはない方法でタスクの難易度を引き上げる：
+Voice increases task difficulty in ways text does not:
 
-1. **句読点がない** — 音声にはピリオドもカンマもない。情報の構造化が難しい
-2. **フィラーと非流暢性** — 「えーと」「あのー」、言い直し、言い淀みが情報抽出を困難にする
-3. **特殊文字の音声エンコーディング** — メールアドレス、パスワード、口座番号を音声で正確に伝える必要がある
-4. **音響環境** — 背景ノイズ、アクセント、電話回線の圧縮がエラーを導入し、それがターンを跨いで伝播する
-5. **リアルタイム会話動態** — 割り込み、バックチャネル、ターンテイキングに流暢に対応する必要がある
+1. **No punctuation** — Voice has no periods or commas. Structuring information is harder
+2. **Fillers and disfluencies** — "Um," "uh," restarts, hesitations make information extraction difficult
+3. **Audio encoding of special characters** — Email addresses, passwords, account numbers must be accurately conveyed via voice
+4. **Acoustic environment** — Background noise, accents, phone line compression introduce errors that propagate across turns
+5. **Real-time conversation dynamics** — Must fluidly handle interruptions, backchannels, turn-taking
 
-> **論文からの具体例：**「顧客が口座変更のため電話。背景ノイズと不慣れなアクセントにより、エージェントは名前を聞き間違え認証に失敗。エージェントはスペルを尋ねるか？ 顧客がスペルを伝えた場合、ノイズの中でも正確に書き起こせるか？ 認証ツール呼び出しを修正できるか？ あるいは複数ターンに分散した情報を統合する際にミスをするか？」
+> **Concrete example from the paper:** "A customer calls for account changes. Background noise and an unfamiliar accent cause the agent to mishear the name and fail authentication. Does the agent ask for spelling? If the customer spells it, can the agent accurately transcribe it despite the noise? Can it correct the authentication tool call? Or does it make mistakes when integrating information distributed across multiple turns?"
 
-このような失敗は、**ASR・対話状態追跡・ツール使用を別々に評価しても捕捉できない。**
+Such failures **cannot be captured by evaluating ASR, dialogue state tracking, and tool use separately.**
 
-## ユーザーシミュレータの設計
+## User Simulator Design
 
-τ-Voice のユーザーシミュレータは、**ウォールクロック時間から切り離されている**。これが重要な設計上の選択である：
+τ-Voice's user simulator is **decoupled from wall-clock time**. This is a critical design choice:
 
-| 従来の音声ベンチマーク | τ-Voice |
+| Traditional Voice Benchmarks | τ-Voice |
 |----------------------|---------|
-| リアルタイム制約により弱いLLMをシミュレータに使用 | 時間制約なしで最強LLMをシミュレータに使用可能 |
-| シミュレータの限界が評価を汚染 | シミュレータは十分に賢い → 失敗はエージェント起因と確信できる |
-| 多様なアクセント・音響環境の制御が困難 | 制御可能な多様性（アクセント、ノイズレベル、電話回線品質） |
+| Real-time constraints force weaker LLMs as simulators | No time constraints enable strongest LLMs as simulators |
+| Simulator limitations contaminate evaluation | Simulator is smart enough → can be confident failures are agent-caused |
+| Difficult to control diverse accents/acoustic environments | Controllable diversity (accents, noise levels, phone line quality) |
 
-この設計により、**「失敗の 79-90% はエージェントの振る舞いに起因する」**という強力な主張が可能になった。ASRエラーが主要因ではないのだ。
+This design enables the strong claim that **"79-90% of failures are attributable to agent behavior."** ASR errors are not the primary cause.
 
-## 評価の2軸
+## Two Evaluation Axes
 
 ### 1. Task Completion (pass@1)
 
-データベース状態が正しい目標状態に到達したかどうか。テキスト版 τ²-bench と直接比較可能。
+Whether the database state reaches the correct target state. Directly comparable with the text version τ²-bench.
 
 ### 2. Voice Interaction Quality
 
-ターンテイキングの適切さ、割り込みへの応答、バックチャネリングの自然さ、沈黙時間の適切さ。
+Appropriateness of turn-taking, response to interruptions, naturalness of backchanneling, appropriateness of silence duration.
 
-## 主要な実験結果：テキスト能力の喪失
+## Key Experimental Results: Loss of Text Capability
 
-| 条件 | 成功率 | 対テキスト比 |
+| Condition | Success Rate | vs Text |
 |------|--------|------------|
-| **GPT-5 (reasoning) テキスト** | **85%** | 基準値 |
-| 音声エージェント（クリーン） | 31–51% | 36–60% |
-| 音声エージェント（現実的） | 26–38% | 30–45% |
+| **GPT-5 (reasoning) Text** | **85%** | Baseline |
+| Voice Agent (clean) | 31–51% | 36–60% |
+| Voice Agent (realistic) | 26–38% | 30–45% |
 
-**テキスト能力の 30–45% しか維持できていない。** 音声モダリティはタスク遂行能力を根本的に侵食する。
+**Only 30–45% of text capability is retained.** The voice modality fundamentally erodes task execution ability.
 
-### 失敗分析
+### Failure Analysis
 
-| 失敗の原因 | 割合 |
+| Failure Cause | Percentage |
 |-----------|------|
-| エージェントの振る舞い | **79–90%** |
-| ASR/音声認識エラー | 10–21% |
+| Agent behavior | **79–90%** |
+| ASR/voice recognition errors | 10–21% |
 
-この結果は重要である。音声エージェントのボトルネックは**音声認識ではなく、マルチモーダルな状況でのエージェントの推論と行動選択能力**にある。
+This result is significant. The bottleneck for voice agents is not **speech recognition**, but the **agent's reasoning and action selection ability in multimodal situations**.
 
-## アクセシビリティの含意
+## Accessibility Implications
 
-τ-Voice が明らかにしたのは、**技術的な問題を超えた社会的課題**である：
+τ-Voice reveals a **societal challenge beyond technical issues**:
 
-> 非標準的アクセントを持つユーザー、発話障害のあるユーザー、騒がしい環境にいるユーザーは、理想的な条件下でのみ良好に動作する音声エージェントによって**体系的にサービスが低下する**可能性がある。
+> Users with non-standard accents, users with speech impairments, and users in noisy environments may experience **systematically degraded service** from voice agents that only work well under ideal conditions.
 
-τ-Voice の現実的条件（ノイズ＋多様なアクセント）での評価は、この問題を定量化する初めてのフレームワークを提供する。
+τ-Voice's evaluation under realistic conditions (noise + diverse accents) provides the first framework to quantify this problem.
 
-## τ-bench ファミリーにおける位置づけ
+## Position in the τ-bench Family
 
-| 次元 | τ-bench | τ²-bench | τ-Knowledge | **τ-Voice** |
+| Dimension | τ-bench | τ²-bench | τ-Knowledge | **τ-Voice** |
 |------|---------|----------|-------------|------------|
-| 公開 | 2024年6月 | 2025年6月 | 2026年3月 | **2026年3月** |
-| 制御モデル | シングル | デュアル | シングル + KB | **デュアル + 音声** |
-| 主要ドメイン | Airline, Retail | Telecom | Banking | **Telecom（音声）** |
-| コア課題 | 対話 + ツール | 対話 + ツール + 協調 | 知識検索 + 推論 | **音声対話 + ツール + 協調** |
-| 代表的数値 | GPT-4o <50% | Solo→Interactive -25pt | GPT-5.2 ~25.5% | **26–38%** |
-| タスク数 | — | — | — | **278** |
+| Released | June 2024 | June 2025 | March 2026 | **March 2026** |
+| Control Model | Single | Dual | Single + KB | **Dual + Voice** |
+| Main Domain | Airline, Retail | Telecom | Banking | **Telecom (Voice)** |
+| Core Challenge | Dialogue + Tools | Dialogue + Tools + Coordination | Knowledge Retrieval + Reasoning | **Voice Dialogue + Tools + Coordination** |
+| Representative Numbers | GPT-4o <50% | Solo→Interactive -25pt | GPT-5.2 ~25.5% | **26–38%** |
+| Task Count | — | — | — | **278** |
 
-## 実践的含意
+## Practical Implications
 
-1. **音声は「モダリティの追加」ではない** — テキスト能力の 55–70% を喪失する本質的な難易度上昇である
-2. **ASR は主要ボトルネックではない** — エージェントのマルチモーダル推論能力が課題
-3. **評価はエンドツーエンドであるべき** — ASR/対話管理/ツール使用を分離した評価では実態を捉えられない
-4. **アクセシビリティを評価に組み込む必要がある** — 多様な条件下での性能格差は倫理的・ビジネス上の重大問題
+1. **Voice is not just "adding a modality"** — It's an intrinsic difficulty increase that loses 55–70% of text capability
+2. **ASR is not the primary bottleneck** — Agent multimodal reasoning capability is the challenge
+3. **Evaluation should be end-to-end** — Separate evaluation of ASR/dialogue management/tool use cannot capture reality
+4. **Accessibility must be built into evaluation** — Performance gaps under diverse conditions are a serious ethical and business issue
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/tau-bench]] — τ-bench エコシステム全体の概要
-- [[concepts/tau-squared-bench]] — デュアルコントロールベンチマーク（τ-Voice の基盤）
-- [[concepts/tau-knowledge]] — 非構造化知識ベースでの評価
-- [[concepts/pass-k-metric]] — 信頼性評価指標
+- [[concepts/tau-bench]] — Overview of the τ-bench ecosystem
+- [[concepts/tau-squared-bench]] — Dual-control benchmark (foundation of τ-Voice)
+- [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
+- [[concepts/pass-k-metric]] — Reliability evaluation metric

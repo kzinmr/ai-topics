@@ -20,184 +20,184 @@ sources:
 
 # Local-First Software
 
-ユーザーのデバイスをデータの**第一権威コピー（primary authoritative copy）**とし、サーバーは同期・バックアップ・発見支援に限定するソフトウェア設計思想。
+A software design philosophy that makes the user's device the **primary authoritative copy** of data, limiting servers to synchronization, backup, and discovery assistance.
 
-2019年に Ink & Switch の研究論文として提唱された。クラウド中心アーキテクチャ（REST API + サーバー権威モデル）が抱える「ネットワーク依存」「データ所有権欠如」「プライバシーリスク」「ベンダーロックイン」へのアンチテーゼ。
+Proposed as a research paper by Ink & Switch in 2019. It is an antithesis to the cloud-centric architecture (REST API + server-authoritative model) and its problems of "network dependency," "lack of data ownership," "privacy risks," and "vendor lock-in."
 
 ---
 
 ## The 7 Ideals of Local-First Software
 
-| # | Ideal | 核心原則 |
+| # | Ideal | Core Principle |
 |---|-------|----------|
-| 1 | **No Spinners** | ローカルディスクI/Oで即時UI応答。ネットワーク遅延をバックグラウンド同期で隠蔽 |
-| 2 | **Multi-Device** | シームレスなデバイス間同期。サーバーは二次コピー、権威はローカル |
-| 3 | **Network Optional** | オフラインでも完全機能。同期はインターネット/BT/WiFi経由で後から |
-| 4 | **Seamless Collaboration** | リアルタイム共同編集 + 非同期ワークフロー。自動競合解決 |
-| 5 | **The Long Now** | ベンダー消滅後もデータ永続。"デジタル暗黒時代"の防止 |
-| 6 | **Security & Privacy** | E2E暗号化デフォルト。集中型データハニーポットの排除 |
-| 7 | **Ultimate Ownership** | ユーザーがデータをコピー・修正・バックアップ・削除できる（API/ToSに縛られない） |
+| 1 | **No Spinners** | Instant UI response via local disk I/O. Network latency hidden by background sync |
+| 2 | **Multi-Device** | Seamless cross-device sync. Server is secondary copy, authority is local |
+| 3 | **Network Optional** | Full functionality offline. Sync later via internet/BT/WiFi |
+| 4 | **Seamless Collaboration** | Real-time co-editing + async workflows. Automatic conflict resolution |
+| 5 | **The Long Now** | Data persists even after vendor disappears. Prevents "digital dark age" |
+| 6 | **Security & Privacy** | E2E encryption default. Eliminates centralized data honey pots |
+| 7 | **Ultimate Ownership** | User can copy, modify, back up, delete data (not bound by API/ToS) |
 
 ---
 
-## 既存アーキテクチャの分析
+## Analysis of Existing Architectures
 
-| 技術 | 強み | 弱み |
+| Technology | Strengths | Weaknesses |
 |------|------|------|
-| **Files + Email** | 完全所有権、オフライン対応、長期保存、高速 | リアルタイム協調が不可、手動マージ、バージョン混沌 |
-| **Web Apps** (Google Docs, Trello) | シームレスなリアルタイム協調、ゼロインストール | オフライン信頼性なし、所有権ゼロ、ベンダーロックイン |
-| **Cloud Sync** (Dropbox, Drive) | 良いオフラインサポート、簡単バックアップ | リアルタイム協調時に競合コピー発生、モバイルはサーバー依存 |
-| **Git/GitHub** | 優れた非同期協調、オフラインファースト、完全制御 | リアルタイム細粒度編集不可、非テキスト形式に弱い |
-| **BaaS** (Firebase, CloudKit, Realm) | 簡単同期、良いオフラインキャッシング | プロプライエタリロックイン、プライバシー/長期性保証なし |
-| **CouchDB/PouchDB** | マルチマスターレプリケーション、思想的整合 | 手動競合解決が非現実的、学習曲線急峻 |
+| **Files + Email** | Full ownership, offline-capable, long-term preservation, fast | Real-time collaboration impossible, manual merging, version chaos |
+| **Web Apps** (Google Docs, Trello) | Seamless real-time collaboration, zero install | No offline reliability, zero ownership, vendor lock-in |
+| **Cloud Sync** (Dropbox, Drive) | Good offline support, easy backup | Conflict copies during real-time collaboration, mobile is server-dependent |
+| **Git/GitHub** | Excellent async collaboration, offline-first, full control | Real-time fine-grained editing impossible, weak with non-text formats |
+| **BaaS** (Firebase, CloudKit, Realm) | Easy sync, good offline caching | Proprietary lock-in, no privacy/long-term guarantees |
+| **CouchDB/PouchDB** | Multi-master replication, philosophically aligned | Manual conflict resolution impractical, steep learning curve |
 
 ---
 
-## CRDTs: Local-First の基盤アルゴリズム
+## CRDTs: The Foundational Algorithm of Local-First
 
-**Conflict-free Replicated Data Types (CRDTs)** は、分散・並行編集を前提に設計されたマルチユーザーデータ構造。
+**Conflict-free Replicated Data Types (CRDTs)** are multi-user data structures designed for distributed, concurrent editing.
 
-### 仕組み
-- 複数デバイスが独立してデータを更新しても、同期時に決定論的にマージされる
-- Gitの手動マージ不要。数学的に競合を自動解決
-- 転送非依存（サーバー/P2P/Bluetooth/USB）
-- 細粒度（キーストロークレベルのリアルタイム編集からバッチ非同期ワークフローまで）
+### How They Work
+- Multiple devices can independently update data, and it is deterministically merged on sync
+- No manual merging like Git. Conflicts are resolved automatically through mathematics
+- Transport-agnostic (server/P2P/Bluetooth/USB)
+- Fine-grained (from keystroke-level real-time editing to batch async workflows)
 
-### Kleppmannの位置づけ
+### Kleppmann's Positioning
 > *"Just as packet switching was an enabling technology for the Internet... CRDTs may be the foundation for collaborative software that gives users full ownership of their data."*
 
-### Ink & Switchプロトタイプの発見
-1. **CRDTs は実用的に機能した** — 自動マージはシームレス
-2. **オフラインUXは圧倒的に優れていた** — ユーザーが真の所有権を体感
-3. **競合は稀** — 細粒度トラッキング + 人間の調整で最小化
-4. **履歴可視化が重要** — 分散システムには「タイムトラベル」UIが必要
-5. **URLが共有を可能にする** — WebスタイルのURLが文書発見に最適
-6. **P2Pネットワークは未成熟** — NAT超えが信頼性に欠ける
-7. **CRDT履歴肥大化** — 全キーストローク保存でメモリ/パフォーマンス劣化。GC/圧縮は未解決
-8. **サーバーにも役割がある** — 権威としてではなく「クラウドピア」（発見・バックアップ・オフラインユーザーのブリッジ・バースト計算）
+### Ink & Switch Prototype Findings
+1. **CRDTs worked practically** — automatic merging was seamless
+2. **Offline UX was overwhelmingly superior** — users felt true ownership
+3. **Conflicts were rare** — minimized by fine-grained tracking + human coordination
+4. **History visualization is important** — distributed systems need "time travel" UI
+5. **URLs enable sharing** — Web-style URLs ideal for document discovery
+6. **P2P networks are immature** — NAT traversal lacks reliability
+7. **CRDT history bloat** — storing all keystrokes degrades memory/performance. GC/compression unsolved
+8. **Servers have a role too** — not as authority but as "cloud peer" (discovery, backup, bridging offline users, burst computation)
 
 ---
 
-## エコシステムの発展（2019〜2026）
+## Ecosystem Development (2019-2026)
 
-### 主要プロジェクト
+### Key Projects
 
-| プロジェクト | 役割 | 備考 |
+| Project | Role | Notes |
 |-------------|------|------|
-| **Automerge** | CRDTライブラリ | Kleppmann主導。JSON CRDT |
-| **Yjs** | CRDTライブラリ | リッチテキスト共同編集で実績 |
-| **ElectricSQL** | Postgres同期エンジン | PGlite(WASM Postgres in browser)と連携。2024年にv1.0-beta |
-| **RxDB** | ローカルファーストDB | OPFS/IndexedDBベース。Web対応 |
-| **TinyBase** | リアクティブデータストア | ローカル状態管理に特化 |
-| **PGlite** | WASM Postgres | ElectricSQL開発。ブラウザ内でDB動作 |
-| **Replicache** | リアルタイム同期 | ローカル書き込みの即時確定 |
-| **Vlcn/cr-sqlite** | SQLite CRDT | リレーショナルCRDT |
-| **Ditto** | P2P同期 | オフラインファーストDB |
+| **Automerge** | CRDT library | Led by Kleppmann. JSON CRDT |
+| **Yjs** | CRDT library | Proven in rich text collaboration |
+| **ElectricSQL** | Postgres sync engine | Works with PGlite (WASM Postgres in browser). v1.0-beta in 2024 |
+| **RxDB** | Local-first DB | OPFS/IndexedDB-based. Web-compatible |
+| **TinyBase** | Reactive data store | Specialized for local state management |
+| **PGlite** | WASM Postgres | Developed by ElectricSQL. DB running in browser |
+| **Replicache** | Real-time sync | Immediate confirmation of local writes |
+| **Vlcn/cr-sqlite** | SQLite CRDT | Relational CRDT |
+| **Ditto** | P2P sync | Offline-first DB |
 
-### Kleppmannの2024年アップデート
+### Kleppmann's 2024 Update
 
-Local-First Conference 2024 (Berlin) で **「Local-First は研究中から実用段階へ」** と述べた。
+At Local-First Conference 2024 (Berlin), he stated that **"Local-First has moved from research phase to practical stage."**
 
-特に **Generic Sync Server** 概念を提唱 — アプリ固有のコードをサーバーに置かず、**同期だけを汎用化する**ことで開発コストを劇的に下げるアプローチ。
+In particular, he proposed the **Generic Sync Server** concept — an approach that dramatically reduces development costs by **generalizing only synchronization** without placing app-specific code on the server.
 
 > *"So much work in building a web app goes into reinventing this backend infrastructure that every single company has to reinvent again. And so if we can make the data sync generic... That I think is part of the economic value proposition of local-first software."*
 
 ---
 
-## Local-Firstの大規模実装: Bluesky / AT Protocol
+## Large-Scale Local-First Implementation: Bluesky / AT Protocol
 
-Kleppmann は Bluesky コア開発者として、Local-First の原則をソーシャルネットワークに適用。
+Kleppmann, as a Bluesky core developer, applies Local-First principles to social networking.
 
-### AT Protocol の Local-First 的要素
-- **Personal Data Server (PDS)**: ユーザーのデータは「自分のサーバー」が主コピー（理想#2/#7）
-- **Account Portability**: サーバー変更時にデータを移行可能（理想#5/#7）
-- **Self-Certifying Data**: 暗号学的検証付きデータ（理想#6）
-- **"Big World" Design**: Relay が大規模インデックスを担当し、PDS は軽量に（スケーラビリティ + 所有権の両立）
+### AT Protocol's Local-First Elements
+- **Personal Data Server (PDS)**: User's data has their "own server" as primary copy (Ideal #2/#7)
+- **Account Portability**: Data can be migrated when changing servers (Ideal #5/#7)
+- **Self-Certifying Data**: Data with cryptographic verification (Ideal #6)
+- **"Big World" Design**: Relay handles large-scale indexing, PDS stays lightweight (balancing scalability + ownership)
 
-論文: [arXiv:2402.03239](https://arxiv.org/abs/2402.03239) — "Bluesky and the AT Protocol: Usable Decentralized Social Media"
+Paper: [arXiv:2402.03239](https://arxiv.org/abs/2402.03239) — "Bluesky and the AT Protocol: Usable Decentralized Social Media"
 
 ---
 
-## Local-First と AI Agent: 具体的な技術的ブリッジと正直なギャップ分析
+## Local-First and AI Agents: Concrete Technical Bridges and Honest Gap Analysis
 
-> **注意**: Local-First と AI Agent は異なる問題領域を扱う。以下は概念的な類似性ではなく、**実際に存在する技術的接続点**を整理する。
+> **Note**: Local-First and AI Agents address different problem domains. The following organizes **actually existing technical connection points**, not conceptual similarities.
 
-### ブリッジ1: イベントソーシング → エージェントの監査ログ
+### Bridge 1: Event Sourcing → Agent Audit Logs
 
-**Local-First側**: CRDTs はすべての変更をイベントとして記録し、同期時にマージする（イベントソーシング）。
+**Local-First side**: CRDTs record all changes as events and merge them on sync (event sourcing).
 
-**AI Agent側**: 
-- CAST (Claude Agent Specialist Team) は SQLite WALモードで全エージェントアクションを記録
-- Claude Code のセッション履歴はローカルファイルに保存
-- 3層メモリ: Daily notes → Long-term MEMORY.md → Knowledge graph（PARA構造）
+**AI Agent side**:
+- CAST (Claude Agent Specialist Team) records all agent actions in SQLite WAL mode
+- Claude Code session history is saved to local files
+- 3-layer memory: Daily notes → Long-term MEMORY.md → Knowledge graph (PARA structure)
 
-**接続点**: 両者とも「変更を不変なイベントとして記録し、後から再構築可能にする」アーキテクチャ。エージェントの「セッション跨ぎメモリ」は、Local-Firstのイベントソーシングをコンテキスト管理に応用したものと解釈できる。
+**Connection point**: Both have an architecture of "recording changes as immutable events, enabling later reconstruction." Agent "cross-session memory" can be interpreted as applying Local-First event sourcing to context management.
 
-### ブリッジ2: ローカル権威モデル → エージェントのローカル実行
+### Bridge 2: Local Authority Model → Local Agent Execution
 
-**Local-First側**: データの第一権威コピーはローカル。サーバーは同期のみ担当。
+**Local-First side**: The primary authoritative copy of data is local. Servers only handle sync.
 
-**AI Agent側**:
-- Claude Code は Node.js CLI としてローカル実行（~10.5 MB）
-- ファイルシステム、シェル、ツールはすべてローカル
-- モデル推論のみAPI通信。ワークスペースコンテキストはローカルに保存
-- OpenClaw: Mac Mini 24/7 自律運用。データはローカルファイルシステム
+**AI Agent side**:
+- Claude Code runs locally as a Node.js CLI (~10.5 MB)
+- Filesystem, shell, tools are all local
+- Only model inference uses API communication. Workspace context is saved locally
+- OpenClaw: Mac Mini 24/7 autonomous operation. Data on local filesystem
 
-**接続点**: 「エージェントがローカルで実行され、外部APIは推論のみに限定」するモデルは、Local-Firstの「ローカルが主で、クラウドは補完」という構造と一致。プライバシー・コンプライアンス（医療/金融/法務）の観点からも、データ外出し禁止はLocal-Firstの理想#6/#7と直接対応。
+**Connection point**: The model of "agent executes locally, external API is limited to inference only" matches Local-First's structure of "local is primary, cloud is complementary." From a privacy/compliance perspective (medical/financial/legal), the prohibition on data exfiltration directly corresponds to Local-First Ideals #6/#7.
 
-### ブリッジ3: Generic Sync Server → MCP (Model Context Protocol)
+### Bridge 3: Generic Sync Server → MCP (Model Context Protocol)
 
-**Local-First側**: Kleppmann が提唱した「アプリ固有コードをサーバーに置かず、同期だけを汎用化」するアプローチ。ElectricSQL は Postgres → クライアントの同期を抽象化。
+**Local-First side**: Kleppmann's proposed approach of "not placing app-specific code on the server, generalizing only sync." ElectricSQL abstracts Postgres → client sync.
 
-**AI Agent側**:
-- MCP は標準プロトコルで3000+外部サービス接続
-- Claude Code は `.mcp.json` でMCPサーバーを定義
-- アプリ固有の統合コード不要。標準インターフェースでツール接続
+**AI Agent side**:
+- MCP connects 3000+ external services via standard protocol
+- Claude Code defines MCP servers in `.mcp.json`
+- No app-specific integration code needed. Tool connections via standard interface
 
-**接続点**: 「標準プロトコルで抽象化し、アプリケーション層からインフラ層を分離」する設計思想が両者に共通。MCP は Local-First の Generic Sync Server 概念を「AIツールの接続」に適用したもの。
+**Connection point**: The design philosophy of "abstracting via standard protocol, separating the infrastructure layer from the application layer" is common to both. MCP applies Local-First's Generic Sync Server concept to "AI tool connections."
 
-### ブリッジ4: エッジ推論 → Network Optional
+### Bridge 4: Edge Inference → Network Optional
 
-**Local-First側**: ネットワークがなくても完全機能（理想#3）。
+**Local-First side**: Full functionality without network (Ideal #3).
 
-**AI Agent側**:
-- [[concepts/local-llm]] — Ollama + llama.cpp/GGUF でローカル推論
-- RTX 4090 24GB で70Bモデル（量子化）動作
-- Phi-4-Reasoning 14B が o1-mini に数学で勝利
-- Apple MLX で Mシリーズチップ最速推論
-- TTFT: 7Bで50ms（ローカル） vs 200-400ms（クラウド）
+**AI Agent side**:
+- [[concepts/local-llm]] — Local inference via Ollama + llama.cpp/GGUF
+- RTX 4090 24GB runs 70B models (quantized)
+- Phi-4-Reasoning 14B beats o1-mini in math
+- Apple MLX for fastest M-series chip inference
+- TTFT: 7B at 50ms (local) vs 200-400ms (cloud)
 
-**接続点**: 「ネットワーク依存からの脱却」が両者の共通目標。AI Agent ではレイテンシ（TTFT短縮）とプライバシー（データ外出し禁止）の両面でエッジ推論が優勢。コスト面でも RTX 5090 x2 ($4K) が H100 ($25K+) と同等。
+**Connection point**: "Escape from network dependency" is a shared goal for both. In AI Agents, edge inference dominates on both latency (TTFT reduction) and privacy (no data exfiltration). Cost-wise, dual RTX 5090s ($4K) are comparable to H100 ($25K+).
 
-### ブリッジ5: CRDTs → CRDT for AI
+### Bridge 5: CRDTs → CRDT for AI
 
-**Local-First側**: CRDTs はデータ構造の自動マージを保証。
+**Local-First side**: CRDTs guarantee automatic merging of data structures.
 
-**AI Agent側**:
-- CRDTs を AI のコンテキスト管理に応用する研究が進行中
-- ローカル知識グラフを CRDT として扱い、デバイス間セッションをマージ
-- SQLite CRDT (Vlcn/cr-sqlite) は AI Agent のセッションストアとして利用可能
+**AI Agent side**:
+- Research is underway applying CRDTs to AI context management
+- Treat local knowledge graphs as CRDTs, merging cross-device sessions
+- SQLite CRDT (Vlcn/cr-sqlite) usable as AI Agent session store
 
-**接続点**: CRDTs の「分散状態収束」概念を AI Agent の「状態管理」に応用する試み。ただし、これはまだ研究段階。
+**Connection point**: Attempts to apply CRDTs' "distributed state convergence" concept to AI Agent "state management." However, this is still at the research stage.
 
-### 正直に残るギャップ
+### Honestly Remaining Gaps
 
-| Local-First で解決済み/進行中 | AI Agent で未解決 |
+| Local-First solved/in-progress | AI Agent unsolved |
 |----------------------|-----------------|
-| CRDTs による数学的競合解決 | マルチエージェントの「意思決定競合」に数学的保証なし |
-| Generic Sync Server の抽象化 | エージェント推論パイプラインはタスク固有依存が強い |
-| 静的データの所有権・永続化 | LLM生成コンテンツの所有権・検証・永続化の概念未成熟 |
-| P2P同期（NAT超えは課題） | エージェント間直接通信（A2Aプロトコル）も同様に未解決 |
-| CRDT履歴肥大化（GC/圧縮未解決） | エージェントのコンテキスト肥大化（compaction未成熟） |
+| Mathematical conflict resolution via CRDTs | No mathematical guarantees for multi-agent "decision conflicts" |
+| Generic Sync Server abstraction | Agent inference pipelines have strong task-specific dependencies |
+| Static data ownership/permanence | Concepts of ownership, verification, and permanence for LLM-generated content are immature |
+| P2P sync (NAT traversal is a challenge) | Inter-agent direct communication (A2A protocol) similarly unsolved |
+| CRDT history bloat (GC/compression unsolved) | Agent context bloat (compaction immature) |
 
 ---
 
-## 2026年の動向
+## 2026 Trends
 
-- **EU AI Act（2026年8月施行）** がローカルデプロイを規制上の必須に
-- **Local models matching Sonnet-class quality** が2026年末に予測
-- **Dual RTX 5090s ($4K)** が H100 ($25K+) と同等 — 75%コスト削減
-- **ハイブリッドアーキテクチャ**（ローカル for speed/privacy + クラウド for frontier reasoning）が標準
+- **EU AI Act (effective August 2026)** makes local deployment a regulatory requirement
+- **Local models matching Sonnet-class quality** predicted by end of 2026
+- **Dual RTX 5090s ($4K)** comparable to H100 ($25K+) — 75% cost reduction
+- **Hybrid architecture** (local for speed/privacy + cloud for frontier reasoning) becomes standard
 
 ---
 

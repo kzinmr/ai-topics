@@ -1,5 +1,5 @@
 ---
-title: "AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較"
+title: "AI Memory Systems — Design Philosophy Comparison: Chat vs Coding Agents"
 type: concept
 created: 2026-04-12
 updated: 2026-04-27
@@ -15,88 +15,88 @@ sources:
   - url: "https://www.shloked.com/writing/chatgpt-memory-bitter-lesson"
     author: "Shlok Khemani"
     date: 2026-04-12
-    note: "ChatGPTのMemoryはThe Bitter Lessonを学んでいない"
+    note: "ChatGPT's Memory isn't learning The Bitter Lesson"
   - url: "https://www.shloked.com/writing/claude-memory"
     author: "Shlok Khemani"
     date: 2026-04-12
-    note: "AnthropicがClaudeにmemoryを与えるべき理由"
+    note: "Why Anthropic should give Claude memory"
   - url: "https://www.shloked.com/writing/claude-memory-tool"
     author: "Shlok Khemani"
     date: 2026-04-12
-    note: "CognitionがClaude Codeのmemoryツールを盗もうとしている"
+    note: "Cognition is trying to steal Claude Code's memory tool"
   - url: "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
     author: "Alex Banks"
     date: 2026-04-26
-    note: "Anthropic Managed Agentsのフファイルベースメモリ"
+    note: "Anthropic Managed Agents file-based memory"
 status: draft
 ---
 
-# AI Memory Systems — 設計哲学の比較分析
+# AI Memory Systems — Comparative Analysis of Design Philosophy
 
-## 概要
+## Overview
 
-OpenAIのChatGPT Memory、AnthropicのClaude Memory（開発中）、CognitionのDevin Memoryは、それぞれ異なる設計哲学に基づいている。このページは3つのアプローチを比較し、コーディングエージェントにおけるメモリシステムの最適設計を探る。
+OpenAI's ChatGPT Memory, Anthropic's Claude Memory (in development), and Cognition's Devin Memory are each based on different design philosophies. This page compares the three approaches and explores optimal memory system design for coding agents.
 
-## 3つのアプローチ
+## Three Approaches
 
-### 1. OpenAI ChatGPT Memory — 「The Bitter Lesson」を学ばないアプローチ
+### 1. OpenAI ChatGPT Memory — The "Not Learning The Bitter Lesson" Approach
 
-Rich Suttonの「The Bitter Lesson」は、AIの歴史が示す教訓: **人間の知識をハードコーディングするよりも、スケーラブルな計算能力と学習を活用する方が長期的に成功する**。
+Rich Sutton's "The Bitter Lesson" is a lesson from AI history: **leveraging scalable computation and learning succeeds in the long run more than hard-coding human knowledge**.
 
-ChatGPT Memoryの問題点:
+ChatGPT Memory's problems:
 
-- **明示的メモリ（Explicit Memory）**: ユーザが直接「覚えて」と指示する情報のみ保存
-- **ユーザ中心（User-centric）**: 個人の好み、名前、以前の会話の断片を記憶
-- **非スケーラブル**: 各対話セッションごとに手動でメモリを構築する必要がある
-- **コンテキスト非最適化**: 関連性の低い情報がメモリに混入しやすい
+- **Explicit Memory**: Only stores information the user explicitly says "remember"
+- **User-centric**: Remembers personal preferences, names, fragments of past conversations
+- **Non-scalable**: Must manually build memory each interaction session
+- **Context-unoptimized**: Low-relevance information easily contaminates memory
 
-Shlok Khemaniの指摘:
+Shlok Khemani's observation:
 
 > "ChatGPT's Memory is the anti-Bitter Lesson — it's trying to hard-code user preferences instead of learning from computation and search."
 
-### 2. Anthropic Claude Memory — エージェント的作業記憶
+### 2. Anthropic Claude Memory — Agentic Working Memory
 
-Claudeのメモリは**エージェントの作業記憶**として設計されている:
+Claude's memory is designed as **agent working memory**:
 
-- **暗黙的メモリ（Implicit Memory）**: 会話やコード作業から自動的に重要な部分を抽出
-- **プロジェクト中心（Project-centric）**: コード構造、技術的な判断、依存関係を記憶
-- **スケーラブル**: 大量のコンテキストを効率的に管理するための要約・検索機構
-- **コンテキスト最適化**: 現在のタスクに関連する情報のみを読み込む
+- **Implicit Memory**: Automatically extracts important parts from conversations and code work
+- **Project-centric**: Remembers code structure, technical decisions, dependencies
+- **Scalable**: Summarization and retrieval mechanisms for efficiently managing large contexts
+- **Context-optimized**: Only loads information relevant to the current task
 
-このアプローチは「The Bitter Lesson」に沿っている:
-- 計算能力（要約アルゴリズム）と検索（関連メモリ取得）を活用
-- 人間の知識をハードコーディングせず、自動的に学習・抽出
+This approach aligns with "The Bitter Lesson":
+- Leverages computation (summarization algorithms) and search (relevant memory retrieval)
+- Automatically learns and extracts without hard-coding human knowledge
 
-### 3. Cognition Devin Memory — ハイブリッドアプローチ
+### 3. Cognition Devin Memory — Hybrid Approach
 
-CognitionはAnthropicとOpenAIの間で独自の立ち位置を構築:
+Cognition has built a unique position between Anthropic and OpenAI:
 
-- **エージェント特化型**: コーディングタスクに最適化されたメモリ構造
-- **コンテキスト不安の解決**: 外部メモリにより、モデルの過剰走査を防止
-- **実用主義**: 理論的な純粋性よりも、実際のパフォーマンスを重視
+- **Agent-specialized**: Memory structure optimized for coding tasks
+- **Context anxiety resolution**: External memory prevents model over-scanning
+- **Pragmatism**: Prioritizes actual performance over theoretical purity
 
-## 「The Bitter Lesson」の観点からの分析
+## Analysis Through "The Bitter Lesson" Lens
 
-### Rich Suttonの教訓
+### Rich Sutton's Lesson
 
 Rich Sutton (2019): "The Bitter Lesson"
 > "The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective."
 
-### ChatGPT Memoryとの対比
+### Contrast with ChatGPT Memory
 
-ChatGPT Memoryは「Bitter Lesson」に反している:
-- **人間の知識のハードコーディング**: ユーザが明示的に「覚えて」と指示
-- **非スケーラブル**: 各セッションごとに手動で構築
-- **計算ではなく記憶**: 検索や要約アルゴリズムではなく、単純なストレージ
+ChatGPT Memory contradicts "The Bitter Lesson":
+- **Hard-coding human knowledge**: Users explicitly say "remember this"
+- **Non-scalable**: Manually built per session
+- **Storage, not computation**: Simple storage rather than search or summarization algorithms
 
-一方、Claude Memoryは「Bitter Lesson」に沿っている:
-- **計算の活用**: 自動要約、関連性スコアリング、検索最適化
-- **スケーラブル**: 大量のコンテキストを効率的に管理
-- **学習ベース**: ユーザの行動パターンから自動的に重要な情報を抽出
+Meanwhile, Claude Memory aligns with "The Bitter Lesson":
+- **Leveraging computation**: Automatic summarization, relevance scoring, search optimization
+- **Scalable**: Efficiently manages large contexts
+- **Learning-based**: Automatically extracts important information from user behavior patterns
 
-## メモリ設計のベストプラクティス
+## Memory Design Best Practices
 
-### 分離（Separation of Concerns）
+### Separation of Concerns
 
 ```
 ┌─────────────────────────────────────┐
@@ -105,104 +105,104 @@ ChatGPT Memoryは「Bitter Lesson」に反している:
 │ Short-term   │ Long-term            │
 │ (Working)    │ (Persistent)         │
 │              │                      │
-│ • 現在の     │ • プロジェクト構造   │
-│   セッション │ • 技術的な判断       │
-│ • タスク     │ • ユーザの好み       │
-│   固有       │ • 過去のエラー       │
-│              │ • 解決策             │
+│ • Current    │ • Project structure  │
+│   session    │ • Technical decisions│
+│ • Task-      │ • User preferences   │
+│   specific   │ • Past errors        │
+│              │ • Solutions          │
 └──────────────┴──────────────────────┘
 ```
 
-### 要約（Summarization）
+### Summarization
 
-- 生データではなく、**要約された知識**を保存
-- 重要な情報のみを抽出し、ノイズを排除
-- 定期的に更新し、鮮度を維持
+- Store **summarized knowledge**, not raw data
+- Extract only important information, eliminate noise
+- Update periodically to maintain freshness
 
-### 検索可能性（Retrievability）
+### Retrievability
 
-- 必要な時に必要な情報だけを取得
-- 関連性スコアリングによるフィルタリング
-- コンテキストウィンドウを節約
+- Fetch only needed information when needed
+- Filter via relevance scoring
+- Save context window space
 
-### 鮮度管理（Freshness）
+### Freshness Management
 
-- 古い情報は自動的に期限切れになる仕組み
-- 定期的なメモリの棚卸し
-- 誤った情報の修正・削除機構
+- Mechanism for automatic expiration of old information
+- Periodic memory inventory
+- Mechanisms for correcting/deleting incorrect information
 
-## Cognitionの戦略的ポジショニング
+## Cognition's Strategic Positioning
 
-Cognitionは以下の要素を組み合わせている:
+Cognition combines:
 
-1. **Anthropicからの学習**: Claudeのコンテキスト不安問題を実際に観測
-2. **独自の実装**: Devinにエージェント特化型メモリを構築
-3. **OpenAIとの関係**: Codexとの競争・協調の可能性
+1. **Learning from Anthropic**: Actually observed Claude's context anxiety problem
+2. **Proprietary implementation**: Built agent-specialized memory in Devin
+3. **Relationship with OpenAI**: Potential for competition/cooperation with Codex
 
-Shlok Khemaniの分析:
+Shlok Khemani's analysis:
 
 > "Cognition is essentially trying to steal the best parts of both companies' approaches — Anthropic's deep technical understanding and OpenAI's product vision — and combine them into something new."
 
-## Anthropic Managed Agents: ファイルベースメモリ (2026-04)
+## Anthropic Managed Agents: File-Based Memory (2026-04)
 
-Anthropic Managed Agentsが採用したメモリアプローチは、従来のベクトルストアとは一線を画す:
+The memory approach adopted by Anthropic Managed Agents breaks from traditional vector stores:
 
-- **ファイルベース**: 編集可能、エクスポート可能、監査可能、バージョン管理可能、API経由でロールバック可能 — ブラックボックスベクトルストアではない
-- **マウントパス**: `/mnt/memory/<store-name>/` — エージェントコンテナ内に直接マウント
-- **リアルタイム同期**: 複数エージェントが同一メモリストアに同時アクセス可能
-- **解釈可能性**: ファイルは人間が読める形式で、共有・監査が容易
+- **File-based**: Editable, exportable, auditable, version-controllable, rollback-able via API — not a black-box vector store
+- **Mount path**: `/mnt/memory/<store-name>/` — directly mounted into the agent container
+- **Real-time sync**: Multiple agents can simultaneously access the same memory store
+- **Interpretability**: Files are human-readable, easy to share and audit
 
-このアプローチは「The Bitter Lesson」の精神に完全に沿っている:
-- 特殊なベクトルDBではなく、汎用ファイルシステムを活用
-- 人間とエージェントの両方が読み書き可能な形式
-- 計算資源（モデル自身）を使って必要な情報を抽出・整理
+This approach fully aligns with the spirit of "The Bitter Lesson":
+- Leverages general-purpose filesystem rather than specialized vector DB
+- Format readable/writable by both humans and agents
+- Uses computational resources (the model itself) to extract and organize needed information
 
-### 設計哲学の比較（拡張）
+### Design Philosophy Comparison (Extended)
 
-| 側面 | ChatGPT Memory | Claude Memory (開発中) | Managed Agents Memory | Devin Memory |
+| Aspect | ChatGPT Memory | Claude Memory (in dev) | Managed Agents Memory | Devin Memory |
 |------|---------------|----------------------|---------------------|-------------|
-| ストレージ形式 | ブラックボックス | 不明 | **編集可能ファイル** | データベース |
-| 監査性 | 低 | 低 | **高（ファイル監査）** | 中 |
-| エクスポート | 不可 | 不明 | **API経由で可能** | 制限付き |
-| バージョン管理 | なし | なし | **Git互換** | 内部管理 |
-| ロールバック | 不可 | 不明 | **API経由で可能** | 制限付き |
-| 複数エージェント共有 | 不可 | 不可 | **リアルタイム同期** | 制限付き |
+| Storage format | Black box | Unknown | **Editable files** | Database |
+| Auditability | Low | Low | **High (file audit)** | Medium |
+| Export | Not possible | Unknown | **Possible via API** | Limited |
+| Version control | None | None | **Git-compatible** | Internal |
+| Rollback | Not possible | Unknown | **Possible via API** | Limited |
+| Multi-agent sharing | Not possible | Not possible | **Real-time sync** | Limited |
 
-## Coding Agent への影響
+## Impact on Coding Agents
 
-### Claude Code vs Codex のメモリ戦略の違い
+### Claude Code vs Codex Memory Strategy Differences
 
-| 側面 | Claude Code | Codex |
+| Aspect | Claude Code | Codex |
 |------|-------------|-------|
-| メモリの種類 | 作業記憶（プロジェクトコンテキスト） | ユーザプロファイル |
-| 最適化対象 | コーディングパフォーマンス | 対話的一貫性 |
-| スケーラビリティ | 高（自動要約・検索） | 低（手動メモリ） |
-| コンテキスト不安 | 解決済み（外部メモリ） | 未解決（長いコンテキストに依存） |
+| Memory type | Working memory (project context) | User profile |
+| Optimization target | Coding performance | Conversational consistency |
+| Scalability | High (auto-summarization/search) | Low (manual memory) |
+| Context anxiety | Resolved (external memory) | Unresolved (relies on long context) |
 
-### メモリがAgent設計に与える影響
+### How Memory Affects Agent Design
 
-1. **コンテキスト管理**: 長いコンテキスト vs 外部メモリ
-2. **セッション間継続性**: 過去の知識の再利用
-3. **パフォーマンス**: 検索効率と意思決定速度
-4. **スケーラビリティ**: 大量のプロジェクトに対応可能か
+1. **Context management**: Long context vs external memory
+2. **Cross-session continuity**: Reusing past knowledge
+3. **Performance**: Search efficiency and decision speed
+4. **Scalability**: Handling large numbers of projects
 
-## 結論
+## Conclusion
 
-AIメモリシステムの設計は、単なる技術的な問題ではなく、**AIの哲学的なアプローチ**を反映している:
+AI memory system design is not just a technical issue — it reflects an **AI philosophical approach**:
 
-- **OpenAI**: コンシューマ中心、明示的メモリ、対話的一貫性重視
-- **Anthropic**: 開発者中心、暗黙的メモリ、計算のスケーラビリティ重視
-- **Cognition**: 実用主義、ハイブリッドアプローチ、エージェント特化型
+- **OpenAI**: Consumer-centric, explicit memory, conversational consistency focus
+- **Anthropic**: Developer-centric, implicit memory, computational scalability focus
+- **Cognition**: Pragmatic, hybrid approach, agent-specialized
 
-Claudeのメモリが「The Bitter Lesson」に沿った設計であることは、長期的なスケーラビリティの観点から優位性がある。Cognitionがこのアプローチを学習し、独自の実装で追いかけていることは、メモリシステムがコーディングエージェントの核心競争力になりつつあることを示している。
+Claude's memory design aligning with "The Bitter Lesson" gives it a long-term scalability advantage. That Cognition is learning from this approach and chasing it with their own implementation shows memory systems are becoming a core competitive advantage for coding agents.
 
-## 関連エンティティ
+## Related Entities
 
-- [[entities/openai]] — ChatGPT memory、Codexの開発
-- [[entities/anthropic]] — Claude Memory、Claude Code
-- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devin、エージェント特化型メモリ
--  — 「The Bitter Lesson」の提唱者
-## 出典
+- [[entities/openai]] — ChatGPT memory, Codex development
+- [[entities/anthropic]] — Claude Memory, Claude Code
+- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devin, agent-specialized memory
+-  — "The Bitter Lesson" proponent
+## Sources
 
 - Rich Sutton, "The Bitter Lesson" (2019)
 - Shlok Khemani, "ChatGPT's Memory Isn't Learning the Bitter Lesson" (2026-04-12)

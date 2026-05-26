@@ -14,192 +14,192 @@ status: complete
 
 # Agent Swarms (Emergent Behavior)
 
-**Agent Swarms（自律分散型エージェントの創発的振る舞い）** は、中央調整者なしで複数のエージェントが局所的な相互作用から集団的な知能や秩序を生み出すパターン。
+**Agent Swarms (emergent behavior of autonomous, decentralized agents)** is a pattern where multiple agents, without a central coordinator, produce collective intelligence or order from local interactions.
 
-既存の [[concepts/agent-team-swarm]]（階層的オーケストレーション、管理されたチーム協調）とは異なり、生物学的スワーム（鳥の群れ、アリの集団行動）からインスピレーションを得た**自律分散型**アプローチに焦点を当てる。
+Unlike existing [[concepts/agent-team-swarm]] (hierarchical orchestration, managed team coordination), this focuses on an **autonomous, decentralized** approach inspired by biological swarms (flocking birds, ant colony behavior).
 
-## agent-team-swarm との比較
+## Comparison with agent-team-swarm
 
-| 側面 | Agent Team / Swarm ([[concepts/agent-team-swarm]]) | Agent Swarms (創発的振る舞い) |
+| Aspect | Agent Team / Swarm ([[concepts/agent-team-swarm]]) | Agent Swarms (Emergent Behavior) |
 |---|---|---|
-| アーキテクチャ | 階層的・オーケストレーター駆動 | 分散型・ピアツーピア |
-| 制御 | 中央管理者がタスク分解・割り当て | 局所ルールからの創発 |
-| 例 | OpenAI Symphony, Anthropic Managed Agents | 生物学的スワーム, MAEBEフレームワーク |
-| 焦点 | 協調的ワークフロー効率化 | 自律的創発行動・適応性 |
-| 障害耐性 | 単一障害点のリスクあり | 自己修復・再構成可能 |
-| スケーラビリティ | 調整オーバーヘッドで制限 | 局所相互作用のみで水平スケール |
+| Architecture | Hierarchical, orchestrator-driven | Decentralized, peer-to-peer |
+| Control | Central manager decomposes/assigns tasks | Emergence from local rules |
+| Examples | OpenAI Symphony, Anthropic Managed Agents | Biological swarms, MAEBE framework |
+| Focus | Collaborative workflow efficiency | Autonomous emergent behavior, adaptability |
+| Fault Tolerance | Risk of single point of failure | Self-healing, reconfigurable |
+| Scalability | Limited by coordination overhead | Horizontally scales via local interactions only |
 
-## 生物学からのインスピレーション
+## Biological Inspiration
 
-### 鳥の群れ（Boid アルゴリズム）
-- **Separation**: 近すぎる個体を避ける
-- **Alignment**: 近傍の個体の方向に合わせる
-- **Cohesion**: 近傍の中心方向へ移動
-- これらの単純な局所ルールから複雑な群れ行動が創発
+### Bird Flocking (Boid Algorithm)
+- **Separation**: Avoid individuals that are too close
+- **Alignment**: Match direction of nearby individuals
+- **Cohesion**: Move toward the center of neighbors
+- Complex flocking behavior emerges from these simple local rules
 
-### 蟻のフェロモン経路最適化
-- 個々の蟻は単純なルール（フェロモンを追う、ランダム探索）に従うのみ
-- コロニー全体として最短経路が創発的に発見される
-- **Stigmergy**（間接的協調）の典型例
+### Ant Pheromone Path Optimization
+- Individual ants follow only simple rules (follow pheromones, random exploration)
+- The colony as a whole emergently discovers the shortest path
+- A classic example of **Stigmergy** (indirect coordination)
 
-### 魚の群れ（Shoaling）
-- 捕食者回避のための集団的逃避行動
-- 情報伝播の速度が個体数に比例して向上
+### Fish Shoaling
+- Collective escape behavior for predator avoidance
+- Information propagation speed improves proportionally with population size
 
-## 創発的振る舞いの測定指標
+## Measuring Emergent Behavior
 
-MAEBEフレームワーク ([arXiv:2506.03053](https://arxiv.org/abs/2506.03053)) が提唱する測定方法：
+Measurement methods proposed by the MAEBE framework ([arXiv:2506.03053](https://arxiv.org/abs/2506.03053)):
 
-- **Temporal Synergy**: 時間的な相互作用の密度とパターン
-- **Goal-Directed Complementarity**: 個体が互いの役割を補完する度合い
-- **Identity-Linked Differentiation**: 各エージェントの役割/アイデンティティが行動に与える影響
-- **Coordinated Alignment**: 集団としての意思決定の整合性
+- **Temporal Synergy**: Density and patterns of temporal interactions
+- **Goal-Directed Complementarity**: Degree to which individuals complement each other's roles
+- **Identity-Linked Differentiation**: Influence of each agent's role/identity on behavior
+- **Coordinated Alignment**: Consistency of collective decision-making
 
-## LLMベースのスワーム実験
+## LLM-Based Swarm Experiments
 
 ### OpenAI Swarm Framework
-- 軽量なAgentハンドオフのみ（状態管理なし）
-- 教育的フレームワークとして設計
+- Lightweight agent handoffs only (no state management)
+- Designed as an educational framework
 - [GitHub: openai/swarm](https://github.com/openai/swarm)
 
 ### Emergent Coordination in Multi-Agent LLMs ([arXiv:2510.05174](https://arxiv.org/abs/2510.05174))
-- GPT-4.1 + Llama-3.1-8B で実験
-- ペルソナ付与 + 他エージェントの行動考慮指示 → 創発的補完行動
-- 温度設定とエージェント数が協調性に影響
+- Experiments with GPT-4.1 + Llama-3.1-8B
+- Persona assignment + instructions to consider other agents' behavior → emergent complementary behavior
+- Temperature setting and agent count affect coordination
 
-## 実装パターン
+## Implementation Patterns
 
 ### Stigmergic Communication
-- エージェントは共有環境（ファイルシステム、データベース）に痕跡を残す
-- 他のエージェントは痕跡を読み取り、行動を調整
-- 明示的なメッセージング不要
+- Agents leave traces in a shared environment (filesystem, database)
+- Other agents read traces and adjust behavior
+- No explicit messaging required
 
 ### Market-Based Task Allocation
-- タスクを「オークション」に出す
-- エージェントが自己的能力に基づいて「入札」
-- 最適なマッチングが分散的に決定
+- Tasks are put up for "auction"
+- Agents "bid" based on their own capabilities
+- Optimal matching determined in a decentralized manner
 
 ### Gradient Following
-- タスク空間に「勾配」を定義
-- 各エージェントが局所的な勾配情報を追従
-- 全体として最適解へ収束
+- Define a "gradient" in the task space
+- Each agent follows local gradient information
+- Collective convergence toward optimal solution
 
 ### Decentralized Handoff Model
-- エージェントがタスク要件に基づいて次ステップを決定
-- 中央オーケストレーターやキューマネージャーなし
-- ワークフローがスペシャリスト間でダイナミックに流れる
-- OpenAI Swarm, Strands の例
+- Agents determine next steps based on task requirements
+- No central orchestrator or queue manager
+- Workflows flow dynamically among specialists
+- Examples: OpenAI Swarm, Strands
 
 ### Concurrent Fan-out/Fan-in
-- 独立エージェントによる並列タスク処理
-- 結果は最終的に集約
-- 実行中のエージェント間依存関係なし
-- データ処理・評価に適す
+- Parallel task processing by independent agents
+- Results aggregated at the end
+- No inter-agent dependencies during execution
+- Suitable for data processing, evaluation
 
 ### Sequential Pipeline
-- リニアな依存チェーン（Agent A → Agent B → Agent C）
-- 各エージェントが前の出力を処理
-- コントロールされた分散
-- 製造・コンテンツワークフローで利用
+- Linear dependency chain (Agent A → Agent B → Agent C)
+- Each agent processes the previous output
+- Controlled distribution
+- Used in manufacturing, content workflows
 
-## LLMスワーム vs 従来のスワーム
+## LLM Swarms vs Traditional Swarms
 
-| 側面 | 従来スワーム | LLM駆動スワーム |
+| Aspect | Traditional Swarms | LLM-Driven Swarms |
 |------|-------------|----------------|
-| エージェント複雑性 | 単純なルールベース | 高度な推論能力 |
-| 協調 | 暗黙的・ステグマーギック | 明示的ハンドオフ + 創発 |
-| レイテンシ | ミリ秒級 | 1秒〜数分/エージェント |
-| リソース使用 | 低（単純アルゴリズム） | 高（LLM推論コスト） |
-| スケーラビリティ | 数千エージェント | 数十〜数百 |
-| 適応性 | プログラムルールに限定 | 推論を通じた創発 |
-| 通信 | 環境信号 | 自然言語 + 構造化データ |
+| Agent Complexity | Simple rule-based | Advanced reasoning capability |
+| Coordination | Implicit, stigmergic | Explicit handoffs + emergence |
+| Latency | Millisecond-scale | 1 second to several minutes per agent |
+| Resource Usage | Low (simple algorithms) | High (LLM inference cost) |
+| Scalability | Thousands of agents | Tens to hundreds |
+| Adaptability | Limited to program rules | Emergence through reasoning |
+| Communication | Environmental signals | Natural language + structured data |
 
-## 実装上の考慮事項
+## Implementation Considerations
 
-### メリット
-- **堅牢性**: 単一障害点なし
-- **スケーラビリティ**: アーキテクチャ再設計なしでエージェント追加
-- **適応性**: 新規状況にシステムが対応
-- **創発能力**: 明示的にプログラムされていない行動
-- **専門化**: 各エージェントが狭いドメインに集中
+### Benefits
+- **Robustness**: No single point of failure
+- **Scalability**: Add agents without architectural redesign
+- **Adaptability**: System adapts to new situations
+- **Emergent Capability**: Behaviors not explicitly programmed
+- **Specialization**: Each agent focuses on a narrow domain
 
-### 課題
-- **観測可能性**: 創発行動を個別エージェントに追跡困難
-- **デバッグ**: 非決定論的出力で再現困難
-- **協調崩壊**: エージェントが矛盾した作業を行う可能性
-- **リソース管理**: 複数の同時LLM呼び出しは高コスト
-- **安全ガードレール**: 創発行動は予期せぬ結果を生む可能性
+### Challenges
+- **Observability**: Difficult to trace emergent behavior to individual agents
+- **Debugging**: Hard to reproduce with non-deterministic output
+- **Coordination Collapse**: Agents may work at cross-purposes
+- **Resource Management**: Multiple simultaneous LLM calls are expensive
+- **Safety Guardrails**: Emergent behavior may produce unexpected outcomes
 
-### 本番運用ベストプラクティス
-1. **説明的な命名**: 明確なエージェント役割でデバッグ簡略化
-2. **タイムアウト制限**: 無限ループ防止（例: 3分/エージェント、合計10分）
-3. **ハンドオフ制限**: エージェント間転送数をキャップ
-4. **サーキットブレーカー**: エラー検出時に操作停止
-5. **状態チェックポイント**: ロールバック用定期的な進捗保存
-6. **ヒューマンインザループ**: インターベンション用ダッシュボード・アラート
+### Production Best Practices
+1. **Descriptive Naming**: Clear agent roles simplify debugging
+2. **Timeout Limits**: Prevent infinite loops (e.g., 3 min per agent, 10 min total)
+3. **Handoff Limits**: Cap the number of inter-agent transfers
+4. **Circuit Breakers**: Stop operations on error detection
+5. **State Checkpoints**: Periodic progress saves for rollback
+6. **Human-in-the-Loop**: Dashboards and alerts for intervention
 
-## 学術研究
+## Academic Research
 
 ### Emergent Coordination in Multi-Agent LLMs (Riedl, 2025-2026)
-- 「動的創発」を検出するための情報理論的フレームワーク
-- マルチエージェントシステムが統合された集団を形成するか測定
-- 偽相関カップリングと真のクロスエージェント相関を区別
-- 単純なプロンプト（「他者が何を考えるか考えてください」）が創発を引き起こすことを実証
-- 論文: arXiv:2510.05174
+- Information-theoretic framework for detecting "dynamic emergence"
+- Measures whether multi-agent systems form integrated collectives
+- Distinguishes spurious correlation coupling from true cross-agent correlation
+- Demonstrates that simple prompts ("consider what others are thinking") trigger emergence
+- Paper: arXiv:2510.05174
 
 ### LLM-Powered Swarms: New Frontier or Conceptual Misnomer? (2025)
-- 従来のスワームアルゴリズムとLLM駆動システムの比較
-- BoidsとAnt Colony Optimizationの実装
-- LLMが本当に「スワームインテリジェンス」を実現するか疑問
-- LLMベースの協調の計算制約を強調
-- 論文: arXiv:2506.14496
+- Compares traditional swarm algorithms and LLM-driven systems
+- Implements Boids and Ant Colony Optimization
+- Questions whether LLMs truly achieve "swarm intelligence"
+- Highlights computational constraints of LLM-based coordination
+- Paper: arXiv:2506.14496
 
-## フレームワーク & ツール
+## Frameworks & Tools
 
 ### OpenAI Swarm
-- 軽量・実験的なマルチエージェントフレームワーク
-- 明示的ハンドオフのみ（状態管理なし）
-- 観測性と単純性重視
-- 「AI向けのマイクロサービス」アプローチ
+- Lightweight, experimental multi-agent framework
+- Explicit handoffs only (no state management)
+- Focused on observability and simplicity
+- "Microservices for AI" approach
 
 ### Strands (AWS)
-- AWSインフラと統合したスワーム作成
-- スペシャリストエージェントの協調をサポート
-- タイムアウトとハンドオフ管理内蔵
-- AWS Bedrock AgentCoreに接続
+- Swarm creation integrated with AWS infrastructure
+- Supports coordination of specialist agents
+- Built-in timeout and handoff management
+- Connects to AWS Bedrock AgentCore
 
 ### LangGraph
-- グラフ駆動のワークフローオーケストレーション
-- 集中型と分散型の両パターンをサポート
-- 状態チェックポイントとロールバック
-- 複雑なブランチワークフロー
+- Graph-driven workflow orchestration
+- Supports both centralized and decentralized patterns
+- State checkpoints and rollback
+- Complex branching workflows
 
 ### AutoGen
-- マルチエージェント会話フレームワーク
-- グループチャットベースの協調
-- 迅速なプロトタイピング
-- ダイナミックなエージェント相互作用
+- Multi-agent conversation framework
+- Group chat-based coordination
+- Rapid prototyping
+- Dynamic agent interactions
 
-## 未解決の質問
+## Open Questions
 
-1. LLM駆動システムは本当に「創発的インテリジェンス」を達成できるか、それとも複雑なオーケストレーションに過ぎないか
-2. エージェント自律性とシステム制御の最適なバランスは何か
-3. マルチエージェントLLMシステムにおける創発をどう測定・定量化するか
-4. 分散的・創発的システムにどのような安全性保証が可能か
-5. スワームアーキテクチャはいつ階層的オーケストレーションを上回るか
+1. Can LLM-driven systems truly achieve "emergent intelligence" or are they merely complex orchestration?
+2. What is the optimal balance between agent autonomy and system control?
+3. How do we measure and quantify emergence in multi-agent LLM systems?
+4. What safety guarantees are possible for decentralized, emergent systems?
+5. When do swarm architectures outperform hierarchical orchestration?
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/multi-agent-consensus-patterns]] — 分散合意形成プロトコル
-- [[concepts/agent-team-swarm]] — 階層的・管理されたマルチエージェント協調
-- [[concepts/agentic-engineering]] — エージェント駆動開発の上位概念
-- [[concepts/self-evolving-agents]] — 自己改善型エージェント
-- [[concepts/multi-agent-orchestration-patterns]] — マルチエージェントオーケストレーション
+- [[concepts/multi-agent-consensus-patterns]] — Decentralized consensus formation protocols
+- [[concepts/agent-team-swarm]] — Hierarchical, managed multi-agent coordination
+- [[concepts/agentic-engineering]] — Higher-level concept of agent-driven development
+- [[concepts/self-evolving-agents]] — Self-improving agents
+- [[concepts/multi-agent-orchestration-patterns]] — Multi-agent orchestration
 
-## TODO: 調査項目
+## TODO: Research Items
 
-- [ ] MoonshotAIのKimi-K2.5トレーニングにおける「swarm」概念の詳細
-- [ ] 創発的スワームと階層的スワームのハイブリッドアーキテクチャ
-- [ ] 実世界アプリケーションでの創発的スワーム事例
-- [ ] 安全性保証を持つ創発的マルチエージェントシステムの設計原則
-- [ ] 生物学スワームアルゴリズムとLLMエージェントの対応関係の整理
+- [ ] Details of "swarm" concept in MoonshotAI's Kimi-K2.5 training
+- [ ] Hybrid architectures combining emergent and hierarchical swarms
+- [ ] Real-world application cases of emergent swarms
+- [ ] Design principles for emergent multi-agent systems with safety guarantees
+- [ ] Mapping between biological swarm algorithms and LLM agents

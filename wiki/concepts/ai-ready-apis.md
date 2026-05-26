@@ -1,5 +1,5 @@
 ---
-title: "AI-Ready APIs（AIエージェント向けAPI設計）"
+title: "AI-Ready APIs (API Design for AI Agents)"
 created: 2026-05-11
 updated: 2026-05-11
 type: concept
@@ -13,149 +13,149 @@ sources: [raw/articles/2025-10-08_postman-state-of-api-2025-report.md]
 related: [concepts/mcp, concepts/mcp-desktop-extensions, entities/webmcp, concepts/agentic-security, concepts/agent-governance, concepts/cli-over-mcp-pattern]
 ---
 
-# AI-Ready APIs（AIエージェント向けAPI設計）
+# AI-Ready APIs (API Design for AI Agents)
 
-## 概要
+## Overview
 
-**AI-Ready API**とは、人間の開発者だけでなくAIエージェントによる消費を前提に設計されたAPI。従来のAPIが人間の開発者向けに「部落ち知識（tribal knowledge）」や不完全なドキュメントでも許容されてきたのに対し、AIエージェントは**正確で機械可読なスキーマ、予測可能な振る舞い、明示的なエラーモデル**を要求する。
+**AI-Ready APIs** are APIs designed for consumption not just by human developers, but by AI agents. While traditional APIs tolerated "tribal knowledge" and incomplete documentation for human developers, AI agents demand **accurate, machine-readable schemas, predictable behavior, and explicit error models**.
 
-Postmanの2025年調査（5,700人以上対象）によれば、APIの世界は転換点にある：「APIはもはやアプリケーションを動かすだけのものではない。エージェントを動かすものだ」。
+According to Postman's 2025 survey (5,700+ respondents), the API world is at an inflection point: "APIs are no longer just for powering applications. They're for powering agents."
 
-## AI-APIギャップ
+## The AI-API Gap
 
-**89%**の開発者が日常的に生成AIを使用しているにもかかわらず、**AIエージェント向けにAPIを設計しているのはわずか24%**に留まる。この「AI-APIギャップ」は、現在のAPIエコシステムが直面する最大のミスマッチである。
+Despite **89%** of developers using generative AI daily, **only 24%** design APIs for AI agent consumption. This "AI-API gap" is the biggest mismatch facing the current API ecosystem.
 
-| API設計の対象 | 割合 |
+| API Design Target | Percentage |
 |---|---|
-| 人間の開発者/アプリケーションのみ | 59% |
-| AIエージェントを考慮していない | 16% |
-| 人間とAIエージェントの両方 | 13% |
-| AIエージェント/機械消費が主 | 7% |
-| 人間優先→AI優先への移行中 | 5% |
+| Human developers/applications only | 59% |
+| Not considering AI agents | 16% |
+| Both humans and AI agents | 13% |
+| AI agents/machine consumption primarily | 7% |
+| Transitioning from human-first to AI-first | 5% |
 
-### AIツールの利用状況
+### AI Tool Usage
 
-- OpenAI ChatGPT: 69%（開発者のAIツールとして最多）
+- OpenAI ChatGPT: 69% (most used AI tool by developers)
 - GitHub Copilot: 58%
-- 主な用途：コード品質改善（68%）、APIドキュメント生成（41%）
+- Primary uses: Code quality improvement (68%), API documentation generation (41%)
 
-**根本的なミスマッチ**：開発者はAIを使ってAPIを構築しているが、AIが消費できるAPIを構築していない（「building *with* AI, not *for* AI」）。
+**Fundamental mismatch**: Developers are using AI to build APIs, but not building APIs that AI can consume ("building *with* AI, not *for* AI").
 
-## AIエージェントがAPI消費者になることの含意
+## Implications of AI Agents Becoming API Consumers
 
-### 消費パターンの根本的変化
+### Fundamental Change in Consumption Patterns
 
-AIエージェントは人間のAPI消費者と根本的に異なる：
+AI agents are fundamentally different from human API consumers:
 
-| 特性 | 人間の開発者 | AIエージェント |
+| Characteristic | Human Developer | AI Agent |
 |---|---|---|
-| 呼び出し速度 | 1日に数十回 | 1秒間に数千回 |
-| 持続性 | 勤務時間内 | 24時間365日、無期限 |
-| ドキュメント耐性 | 不完全でも推測可能 | 正確で機械可読なスキーマ必須 |
-| エラー処理 | コンテキストから推測 | 明示的なエラーモデル必須 |
-| 認証情報の扱い | 人間の裁量 | 1つのリークがシステム全体の脆弱性に |
+| Call frequency | Dozens per day | Thousands per second |
+| Persistence | During working hours | 24/7/365, indefinitely |
+| Documentation tolerance | Can infer from incomplete docs | Requires accurate, machine-readable schemas |
+| Error handling | Infers from context | Requires explicit error models |
+| Credential handling | Human discretion | One leak can compromise the entire system |
 
-### セキュリティ脅威の新次元
+### A New Dimension of Security Threats
 
-AIエージェントがAPI消費者となることで、セキュリティ脅威モデルが根本的に変わる：
+AI agents becoming API consumers fundamentally changes the security threat model:
 
-| 懸念事項 | 開発者の懸念割合 |
+| Concern | Developer Concern % |
 |---|---|
-| AIエージェントによる不正/過剰なAPI呼び出し | **50.8%** |
-| AIシステムによるセンシティブデータへの不正アクセス | 49% |
-| AIシステムによるAPI認証情報の共有/リーク | 46% |
+| Unauthorized/excessive API calls by AI agents | **50.8%** |
+| Unauthorized access to sensitive data by AI systems | 49% |
+| API credential sharing/leakage by AI systems | 46% |
 
-**機械速度の悪用（Machine-Speed Exploitation）**：AIエージェントは1つの漏洩したAPIキーで複数システムにアクセスし、数秒でシステム全体を侵害できる。従来のレート制限や人間の行動を前提としたセキュリティモデルでは対応不可能。
+**Machine-Speed Exploitation**: An AI agent with one leaked API key can access multiple systems and compromise the entire system in seconds. Traditional rate limiting and human-behavior-based security models cannot cope.
 
-### AIエージェント導入状況
+### AI Agent Adoption Status
 
-- **51%**の組織がすでにAIエージェントを導入済み
-- **35%**が2年以内の導入を計画
+- **51%** of organizations have already deployed AI agents
+- **35%** plan deployment within 2 years
 
-**障壁**：AIツールへの信頼不足（36%）、倫理的・法的・コンプライアンス上の懸念（33%）
+**Barriers**: Lack of trust in AI tools (36%), ethical/legal/compliance concerns (33%)
 
-## AI-Ready APIの要件
+## AI-Ready API Requirements
 
-### 1. 機械可読なスキーマ
-- OpenAPI/Swaggerスペックの完全性と正確性
-- JSON Schemaによる厳密な型定義
-- 明示的なエラーレスポンスモデル（HTTPステータスコード + 構造化エラーボディ）
+### 1. Machine-Readable Schemas
+- Complete and accurate OpenAPI/Swagger specs
+- Strict type definitions via JSON Schema
+- Explicit error response models (HTTP status codes + structured error body)
 
-### 2. 予測可能な振る舞い
-- 冪等性の保証（idempotency keys）
-- 一貫したページネーション
-- 決定論的なレート制限（人間の「常識」に頼らない）
+### 2. Predictable Behavior
+- Idempotency guarantees (idempotency keys)
+- Consistent pagination
+- Deterministic rate limiting (not relying on human "common sense")
 
-### 3. エージェント対応ドキュメント
-- エンドポイントの目的・前提条件・副作用の明示
-- チームチャット（75%のチームがAPI変更の伝達に使用）から脱却し、**単一の真実源（single source of truth）**へ
-- `llms.txt`やMCP Server Descriptionなど、AI向けの構造化メタデータ
+### 3. Agent-Aware Documentation
+- Explicit endpoint purpose, prerequisites, and side effects
+- Move away from team chat (75% of teams use it for API change communication) toward a **single source of truth**
+- AI-oriented structured metadata like `llms.txt` and MCP Server Description
 
-### 4. エージェント認識セキュリティ
-- AIエージェントを人間と区別する認証（APIキーのスコープ制限、OAuth with PKCE）
-- 機械速度の攻撃を検出する異常検知
-- 認証情報のローテーションと最小権限の徹底
+### 4. Agent-Aware Security
+- Authentication distinguishing AI agents from humans (API key scope limits, OAuth with PKCE)
+- Anomaly detection for machine-speed attacks
+- Thorough credential rotation and least privilege
 
-### 5. コントラクトテスト
-- わずか**17%**しか実施していないコントラクトテストの普及が急務
-- APIスペックと実装の一致を保証する（AIエージェントが依存するのはスペックそのもの）
+### 5. Contract Testing
+- Only **17%** currently implement contract testing — urgent need for wider adoption
+- Guarantee consistency between API spec and implementation (AI agents depend on the spec itself)
 
-## MCP（Model Context Protocol）との関係
+## Relationship with MCP (Model Context Protocol)
 
-MCPはAIエージェントとAPIを接続する「結合組織（connective layer）」として登場。Postman調査では：
+MCP has emerged as the "connective layer" connecting AI agents and APIs. Postman survey findings:
 
-- **70%**がMCPを認知（公開からわずか9ヶ月で）
-- **10%**のみが日常的に使用
-- **24%**が今後の探索を計画
+- **70%** aware of MCP (just 9 months since release)
+- **10%** only use it daily
+- **24%** plan future exploration
 
-**重要な洞察**：「エージェントはすでにあなたのAPIを呼び出している。MCPがあろうとなかろうと」。MCP普及を待つのではなく、今すぐAPIをエージェント消費可能にすることが優先課題。
+**Key insight**: "Agents are already calling your APIs. With or without MCP." Rather than waiting for MCP adoption, the priority is making APIs agent-consumable now.
 
-Postmanプラットフォーム上のAI APIトラフィック：
-- OpenAI: 全体の56%（過去12ヶ月で420万コール）
-- Gemini: 前年比3.1倍
-- Llama: 前年比6.9倍
-- 総AIコール数: 753万（前年比40%増）
+AI API traffic on the Postman platform:
+- OpenAI: 56% of total (4.2M calls in past 12 months)
+- Gemini: 3.1x YoY
+- Llama: 6.9x YoY
+- Total AI calls: 7.53M (40% YoY increase)
 
-## API-Firstと収益の相関
+## API-First and Revenue Correlation
 
-API-Firstアプローチと収益化には明確な相関がある：
+Clear correlation between API-First approach and monetization:
 
-| API-First成熟度 | API収益が総収益の25%超 | API収益が総収益の75%超 |
+| API-First Maturity | API Revenue >25% of Total | API Revenue >75% of Total |
 |---|---|---|
 | Fully API-First | **43%** | **20%** |
 | Somewhat API-First | 23% | ~9% |
 | Not API-First | 16% | ~5% |
 
-**65%**の組織がAPIから収益を上げており、**22.1%**が過去12ヶ月でAPI導入により新たな収益源を獲得。46%が今後12ヶ月でAPI投資を増やす計画。
+**65%** of organizations generate revenue from APIs; **22.1%** gained new revenue streams from API adoption in the past 12 months. 46% plan to increase API investment in the next 12 months.
 
-API-Firstがもたらす価値：
-- ユーザー体験の改善（54%）
-- エンジニアリングオーバーヘッドの削減（42%）
-- **AI readinessの向上（34%）** ← AI-Ready APIとの直接的な接続
-- 新たな収益源（22%）
+Value delivered by API-First:
+- Improved user experience (54%)
+- Reduced engineering overhead (42%)
+- **Improved AI readiness (34%)** ← Direct connection to AI-Ready APIs
+- New revenue streams (22%)
 
-## システム設計への示唆
+## Implications for System Design
 
-### AI-Ready APIアーキテクチャの原則
+### AI-Ready API Architecture Principles
 
-1. **APIをプロダクトとして扱う**：ロードマップ、フィードバックループ、SLAを持つ長期的なプロダクト
-2. **人間と機械の両方の消費者を設計段階から想定**：後付けではない
-3. **ドキュメントファースト**：API仕様が唯一の真実源。チームチャット（75%が依存）からの脱却
-4. **セキュリティは共有責任**：APIプロバイダーとAIエージェント運用者の両方に責務
-5. **観測可能性（Observability）の再定義**：AIエージェントのコールパターンは人間と根本的に異なる。新しい監視指標が必要
+1. **Treat APIs as products**: Long-term products with roadmaps, feedback loops, SLAs
+2. **Design for both human and machine consumers from the start**: Not an afterthought
+3. **Documentation-first**: API spec is the single source of truth. Move away from team chat (75% dependent)
+4. **Security is shared responsibility**: Both API providers and AI agent operators bear responsibility
+5. **Redefine observability**: AI agent call patterns are fundamentally different from humans. New monitoring metrics needed
 
-### コラボレーションの再設計
+### Redesigning Collaboration
 
-**93%**のAPIチームがコラボレーションの障壁に直面している現実は、AIエージェント時代には致命的：
-- ドキュメントの不整合（55%）
-- 重複作業（35%）
-- 既存APIの発見困難（34%）
+**93%** of API teams face collaboration barriers — fatal in the AI agent era:
+- Documentation inconsistency (55%)
+- Duplicate work (35%)
+- Difficulty discovering existing APIs (34%)
 
-**解決の方向性**：APIカタログ、自動ドキュメント生成、スペック駆動開発（Spec-Driven Development）
+**Solution direction**: API catalogs, automated documentation generation, Spec-Driven Development
 
-## 参照
+## References
 
-- [[concepts/mcp]] — Model Context Protocolの詳細
-- [[entities/webmcp]] — ブラウザ標準としてのWebMCP
-- [[concepts/agentic-security]] — AIエージェントのセキュリティ
-- [[concepts/agent-governance]] — AIエージェントのガバナンス
+- [[concepts/mcp]] — Model Context Protocol details
+- [[entities/webmcp]] — WebMCP as browser standard
+- [[concepts/agentic-security]] — AI agent security
+- [[concepts/agent-governance]] — AI agent governance

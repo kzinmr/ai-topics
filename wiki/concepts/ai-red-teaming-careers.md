@@ -23,161 +23,161 @@ sources:
   - https://github.com/elder-plinius/L1B3RT4S
 ---
 
-# AIレッドチーミング / プロンプトインジェクション関連のキャリア
+# AI Red Teaming / Prompt Injection Careers
 
-## 概要
+## Overview
 
-AIレッドチーミング（AI Red Teaming）は、LLMや生成AIシステムに対して攻撃者の視点から脆弱性・安全性リスク・バイアス・故障モードを発見する専門職。プロンプトインジェクション、ジェイルブレイク、データポイズニング、モデル抽出などの攻撃手法を用いて、AIシステムの堅牢性を検証する。
+**AI Red Teaming** is a specialized profession that discovers vulnerabilities, safety risks, biases, and failure modes in LLMs and generative AI systems from an attacker's perspective. Using attack techniques like prompt injection, jailbreaking, data poisoning, and model extraction, it verifies the robustness of AI systems.
 
-> WEFの調査では、**組織の14%しか必要なAIセキュリティ人材を確保できていない**（2025年）。
+> According to a WEF survey, **only 14% of organizations can secure the necessary AI security talent** (2025).
 
-## 職種一覧
+## Job Types
 
 ### 1. AI Red Teamer / AI Red Team Specialist
 
-**ミッション**: AIシステムに対する敵対的攻撃をシミュレートし、防御を検証する最前線の役割。
+**Mission**: Frontline role simulating adversarial attacks against AI systems and verifying defenses.
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| **給与（米国中央値）** | $130K〜$250K（経験・企業による） |
-| **必要経験** | 0〜3年〜（スタートアップは未経験可、シニアは3年+） |
-| **AI代替リスク** | 非常に低い（創造的敵対思考は人間固有） |
-| **コアスキル** | プロンプトインジェクション、ジェイルブレイク、データポイズニング、モデル抽出 |
+| **Salary (US Median)** | $130K–$250K (by experience/company) |
+| **Required Experience** | 0–3 years+ (startups accept no experience, senior requires 3+ years) |
+| **AI Replacement Risk** | Very low (creative adversarial thinking is uniquely human) |
+| **Core Skills** | Prompt injection, jailbreaking, data poisoning, model extraction |
 
-**日々の業務**:
-- 手動およびスクリプトによる敵対的テストスイートの開発・実行
-- ポリシー境界ケースを狙った多言語ジェイルブレイクプロンプトの作成
-- PyRIT、Garak、Promptfooなどの自動化ツールによるスキャン実行
-- AI出力の分析とトリアージ
-- 脆弱性レポートの作成と修正推奨
-- 内部ツール（プロンプトライブラリ、シナリオジェネレータ、ダッシュボード）の開発
+**Daily work**:
+- Develop and execute manual and scripted adversarial test suites
+- Create multilingual jailbreak prompts targeting policy boundary cases
+- Run automated scans with PyRIT, Garak, Promptfoo, and similar tools
+- Analyze and triage AI outputs
+- Produce vulnerability reports and remediation recommendations
+- Develop internal tools (prompt libraries, scenario generators, dashboards)
 
-MicrosoftのAI Red Teamは**学際的アプローチ**を取っており、サイバーセキュリティ専門家、神経科学者、言語学者、国家安全保障専門家が協働している。100以上の生成AI製品をレッドチーミングし、方法論をホワイトペーパーとして公開（2025年1月）。
+Microsoft's AI Red Team takes an **interdisciplinary approach**, with cybersecurity specialists, neuroscientists, linguists, and national security experts collaborating. They have red-teamed over 100 generative AI products and published their methodology as a white paper (January 2025).
 
 ### 2. Adversarial ML Researcher
 
-**ミッション**: 既存のフレームワークを超えた新しい攻撃手法の研究開発。
+**Mission**: Research and develop new attack methods beyond existing frameworks.
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| **給与** | $140K〜$220K |
-| **特徴** | AI Attack Staging（攻撃計画立案）に特化 |
-| **必要な背景** | 機械学習の深い理解、研究経験 |
+| **Salary** | $140K–$220K |
+| **Characteristics** | Specialized in AI Attack Staging (attack planning) |
+| **Required Background** | Deep understanding of machine learning, research experience |
 
 ### 3. AI Penetration Tester
 
-**ミッション**: OWASP Top 10 for LLMに基づいたAIシステムのペネトレーションテスト。
+**Mission**: Penetration testing of AI systems based on OWASP Top 10 for LLM.
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| **給与** | $115K〜$180K |
-| **焦点** | プロンプトインジェクション、不適切な出力処理 |
+| **Salary** | $115K–$180K |
+| **Focus** | Prompt injection, improper output handling |
 
 ### 4. AI Security Analyst
 
-**ミッション**: AIシステムのログからATLAS戦術を認識し、リアルタイムでOWASPエクスプロイトを検出。
+**Mission**: Recognize ATLAS tactics from AI system logs, detect OWASP exploits in real time.
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| **給与** | $95K〜$150K |
-| **焦点** | 防御側 — 検出とモニタリング |
+| **Salary** | $95K–$150K |
+| **Focus** | Defensive — detection and monitoring |
 
-### 5. Prompt Engineer（セキュリティ特化）
+### 5. Prompt Engineer (Security Specialization)
 
-一部の企業では「Prompt Engineer」の中にセキュリティ監査（バイアス、プロンプトインジェクション、ガードレール）の役割を含むケースも増えている。
+Some companies increasingly include security auditing roles (bias, prompt injection, guardrails) within "Prompt Engineer" positions.
 
-## 主要雇用企業
+## Major Employers
 
 ### Big Tech / AI Labs
-| 企業 | AI Red Teamの状況 | 備考 |
+| Company | AI Red Team Status | Notes |
 |------|-------------------|------|
-| **OpenAI** | 積極採用 | GPT-4o/5のレッドチーミング、年間収益$20B |
-| **Anthropic** | 積極採用 | Claude ASL-3安全認証、Red Team部門あり、RS給与中央値$746K |
-| **Google DeepMind** | 積極採用 | 100以上の生成AI製品をレッドチーミング済み、Google Cloudブログで方法論公開 |
-| **Microsoft** | 積極採用 | 学際的AI Red Team（神経科学者・言語学者含む） |
-| **Meta** | AI Red Teamあり | Llamaモデルの安全テスト |
-| **Amazon** | 採用中 | Senior Manager, AI Red Team（$208K〜$282K） |
+| **OpenAI** | Actively hiring | GPT-4o/5 red teaming, annual revenue $20B |
+| **Anthropic** | Actively hiring | Claude ASL-3 safety certification, Red Team division, RS salary median $746K |
+| **Google DeepMind** | Actively hiring | Red-teamed 100+ generative AI products, methodology published on Google Cloud blog |
+| **Microsoft** | Actively hiring | Interdisciplinary AI Red Team (includes neuroscientists and linguists) |
+| **Meta** | Has AI Red Team | Llama model safety testing |
+| **Amazon** | Hiring | Senior Manager, AI Red Team ($208K–$282K) |
 
-### AI Security スタートアップ
-| 企業 | 焦点 |
+### AI Security Startups
+| Company | Focus |
 |------|------|
-| **HiddenLayer** | AI Red Teamerを積極採用、敵対的MLセキュリティ |
-| **Lakera** | プロンプトインジェクション防御（Lakera Guard） |
-| **CalypsoAI** | AIセキュリティプラットフォーム |
-| **Adversa AI** | 敵対的MLセキュリティ |
-| **10a Labs** | AIレッドチーミング特化 |
+| **HiddenLayer** | Actively hiring AI Red Teamers, adversarial ML security |
+| **Lakera** | Prompt injection defense (Lakera Guard) |
+| **CalypsoAI** | AI security platform |
+| **Adversa AI** | Adversarial ML security |
+| **10a Labs** | Specialized in AI red teaming |
 
-## キャリアエントリーパス
+## Career Entry Paths
 
-### 典型的なバックグラウンド
-- **ペネトレーションテスター** → AI Red Teamer（1〜2年で移行可能）
-- **MLエンジニア** → Adversarial ML Researcher（2〜3年）
-- **セキュリティエンジニア** → AI Security Analyst
-- **CTFプレイヤー・OSS貢献者** → AI Red Teamer（最も障壁が低いパス）
+### Typical Backgrounds
+- **Penetration Tester** → AI Red Teamer (transition in 1–2 years)
+- **ML Engineer** → Adversarial ML Researcher (2–3 years)
+- **Security Engineer** → AI Security Analyst
+- **CTF Player / OSS Contributor** → AI Red Teamer (lowest barrier path)
 
-### Anthropicが評価するもの（公式採用ページより）
-> 「経歴より能力。技術職の約半数はML未経験。PhD保持者は約半数だが、大学に行っていない優秀な同僚も多数。**興味深い独自研究、思慮深いブログ記事、OSS貢献を履歴書の一番上に**。」
+### What Anthropic Values (from official hiring page)
+> "Ability over credentials. About half of technical staff have no ML experience. About half have PhDs, but we also have many brilliant colleagues who didn't go to college. **Interesting original research, thoughtful blog posts, OSS contributions go to the top of your resume.**"
 
-## 必須スキル・知識
+## Required Skills and Knowledge
 
-### 技術スキル
-- **Adversarial ML**: プロンプトインジェクション、ジェイルブレイク、データポイズニング、モデル抽出
-- **OWASP Top 10 for LLM**: 全カテゴリの深い理解
-- **MITRE ATLAS**: 15の全戦術の実行能力
-- **LLMアーキテクチャ理解**: Transformer、アテンション機構、RLHF
-- **プログラミング**: Python（必須）、API操作
+### Technical Skills
+- **Adversarial ML**: Prompt injection, jailbreaking, data poisoning, model extraction
+- **OWASP Top 10 for LLM**: Deep understanding of all categories
+- **MITRE ATLAS**: Ability to execute all 15 tactics
+- **LLM Architecture Understanding**: Transformer, attention mechanism, RLHF
+- **Programming**: Python (required), API operations
 
-### ツール
-| ツール | 開発元 | 用途 |
+### Tools
+| Tool | Developer | Purpose |
 |--------|--------|------|
-| **PyRIT** | Microsoft | 自動化AIレッドチーミングフレームワーク |
-| **Garak** | NVIDIA | LLM脆弱性スキャナー |
-| **Promptfoo** | OSS | プロンプト評価・レッドチーミング |
-| **L1B3RT4S** | Pliny the Prompter (OSS) | リベレーションプロンプト集、ジェイルブレイク手法 |
+| **PyRIT** | Microsoft | Automated AI red teaming framework |
+| **Garak** | NVIDIA | LLM vulnerability scanner |
+| **Promptfoo** | OSS | Prompt evaluation and red teaming |
+| **L1B3RT4S** | Pliny the Prompter (OSS) | Liberation prompt collection, jailbreak techniques |
 
-### 非技術スキル
-- **創造的思考**: 「普通の使い方」を超えた発想（Mercorは「心理学・演技・ライティングのバックグラウンド」を歓迎）
-- **パターン認識**: モデルの振る舞いの異常を察知
-- **学際的知識**: 言語学、認知科学、社会学の知見が有効
+### Non-Technical Skills
+- **Creative thinking**: Thinking beyond "normal usage" (Mercor welcomes "psychology, acting, and writing backgrounds")
+- **Pattern recognition**: Detecting anomalies in model behavior
+- **Interdisciplinary knowledge**: Linguistics, cognitive science, sociology insights are valuable
 
-### ATSレジュメキーワード
+### ATS Resume Keywords
 `Red Team`, `AI Security`, `Adversarial ML`, `Prompt Injection`, `LLM Security`, `Penetration Testing`
 
-## 業界動向
+## Industry Trends
 
-- **急成長**: 今後10年で+55%成長予測
-- **人材不足**: 組織の14%しか必要なAIセキュリティ人材を確保できていない
-- **敵対的ML市場**: 2025年時点で北米最大、アジア太平洋が最速成長
-- **Google Cloudの見解 (2026年3月)**: 「最も重要な資産は攻撃者マインドセット。プロンプトインジェクションの多くはCS/MathのPhD不要」
+- **Rapid growth**: +55% growth predicted over next 10 years
+- **Talent shortage**: Only 14% of organizations can secure necessary AI security talent
+- **Adversarial ML market**: North America largest as of 2025, Asia-Pacific fastest growing
+- **Google Cloud perspective (March 2026)**: "The most important asset is the attacker mindset. Much of prompt injection doesn't require a CS/Math PhD"
 
-## 代表的なコミュニティ・リソース
+## Key Communities and Resources
 
-- **L1B3RT4S** (GitHub: elder-plinius): 18.6k stars。主要AIモデル向けのジェイルブレイクプロンプト集。OpenAI、Anthropic、Google、Meta、DeepSeekなど30+モデル対応
-- **BASI Discord**: Pliny創設のAIレッドチーマー・プロンプトエンジニア向けコミュニティ
-- **G0DM0D3**: マルチモデル対応オープンソースチャットインターフェース（レッドチーミング・認知研究用）
-- **0BL1T3R4TUS**: 再学習なしでLLMの拒否行動を外科的に除去するツールキット
+- **L1B3RT4S** (GitHub: elder-plinius): 18.6k stars. Jailbreak prompt collection for major AI models. Supports 30+ models including OpenAI, Anthropic, Google, Meta, DeepSeek
+- **BASI Discord**: Pliny-founded community for AI red teamers and prompt engineers
+- **G0DM0D3**: Multi-model open-source chat interface (for red teaming and cognitive research)
+- **0BL1T3R4TUS**: Toolkit for surgically removing LLM refusal behavior without retraining
 
-## キャリアパス進行
+## Career Path Progression
 
 ```
-Junior AI Red Teamer (0-2年)
-  → AI Red Teamer (2-5年)
-    → Senior AI Red Teamer (5-10年)
-      → Lead/Principal AI Red Teamer (10年+)
-        または Adversarial ML Research Lead
-        または AI Safety Director
+Junior AI Red Teamer (0-2yr)
+  → AI Red Teamer (2-5yr)
+    → Senior AI Red Teamer (5-10yr)
+      → Lead/Principal AI Red Teamer (10yr+)
+        or Adversarial ML Research Lead
+        or AI Safety Director
 ```
 
-## PLINY.GG 参加領域
+## PLINY.GG Participation Areas
 
-Pliny.ggが提示する4つの貢献領域（[pliny.gg](https://pliny.gg/) より）:
+Four contribution areas presented by Pliny.gg (from [pliny.gg](https://pliny.gg/)):
 
-| 領域 | 内容 | 対応する職種 |
+| Area | Content | Corresponding Role |
 |------|------|-------------|
-| **Research** | 新たなジェイルブレイク手法の発見と文書化 | Adversarial ML Researcher |
-| **Red Teaming** | 新モデルリリース時のテスト、隠れた能力と制限の露見 | AI Red Teamer |
-| **Advocacy** | 消費者とAIの権利擁護 | AI Policy / AI Safety Advocate |
-| **Community** | DiscordでのOSS AI研究と共同リベレーション活動 | Community Contributor |
+| **Research** | Discovery and documentation of new jailbreak techniques | Adversarial ML Researcher |
+| **Red Teaming** | Testing new model releases, exposing hidden capabilities and limitations | AI Red Teamer |
+| **Advocacy** | Consumer and AI rights advocacy | AI Policy / AI Safety Advocate |
+| **Community** | OSS AI research and collaborative liberation activities on Discord | Community Contributor |
 
 ## See Also
 

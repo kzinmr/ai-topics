@@ -16,93 +16,93 @@ Django co-creator, open-source advocate, and leading voice in AI-assisted softwa
 
 ## Core Ideas
 
-### Agentic Engineering（2025-2026）
+### Agentic Engineering (2025-2026)
 > "Agentic engineering represents the other end of the scale: professional software engineers using coding agents to improve and accelerate their work by amplifying their existing expertise."
 
-**Vibe Codingとの明確な区別**:
-- Vibe Coding = 自然言語で依頼→コードを読まずにデプロイ→認知負債が累積
-- Agentic Engineering = エージェントを活用しつつ、テスト・検証・理解を体系化
+**Clear distinction from Vibe Coding**:
+- Vibe Coding = Request in natural language → deploy without reading code → accumulated cognitive debt
+- Agentic Engineering = Leverage agents while systematizing testing, verification, and understanding
 
-**核心哲学**:
-1. **評価ファースト**: 開発時間の60-80%をテストとエラー分析に費やすべき
-2. **コードを信じるな**: エージェントが生成したコードは実行して検証するまで信用しない
-3. **認知負債の管理**: Vibe Codingが蓄積する認知負債を、対話的解説とウォークスルーで返済
-4. **エージェント用ツール**: LLMのコンテキストウィンドウに最適化されたCLIツールを自作（Rodney、Showboat、LLMプラグイン）
-5. **構造化された状態引き継ぎ**: エージェント間のコミュニケーションはファイル経由で、会話履歴に依存しない
+**Core Philosophy**:
+1. **Evaluation First**: 60-80% of development time should be spent on testing and error analysis
+2. **Don't Trust the Code**: Never trust agent-generated code until it has been executed and verified
+3. **Cognitive Debt Management**: Repay the cognitive debt accumulated by Vibe Coding through interactive explanation and walkthroughs
+4. **Agent-Optimized Tools**: Build custom CLI tools optimized for LLM context windows (Rodney, Showboat, LLM plugins)
+5. **Structured State Handoff**: Inter-agent communication via files, not dependent on conversation history
 
-### Anthropic Engineeringとの収束点
+### Convergence with Anthropic Engineering
 
-Willisonの実践的知見はAnthropic Engineeringの公式ベストプラクティスと強く一致：
+Willison's practical insights strongly align with Anthropic Engineering's official best practices:
 
-| Willison | Anthropic | 収束点 |
+| Willison | Anthropic | Convergence Point |
 |----------|-----------|--------|
-| Red/Green TDD | 「検証基準の提供」 | テストファーストがエージェントの品質保証の基盤 |
-| 「コードを信じるな」 | 「Context window fills fast」 | 両者とも検証とコンテキスト管理を最優先 |
-| Showboat（文書化） | 「Structured artifacts for handoff」 | エージェント間の状態引き継ぎに構造化ファイル |
-| Git統合 | 「Version control with descriptive commits」 | エージェントの作業を追跡可能な状態に保つ |
+| Red/Green TDD | "Provide verification criteria" | Test-first is the foundation of agent quality assurance |
+| "Don't trust the code" | "Context window fills fast" | Both prioritize verification and context management |
+| Showboat (documentation) | "Structured artifacts for handoff" | Structured files for inter-agent state handoff |
+| Git integration | "Version control with descriptive commits" | Keep agent work in a traceable state |
 
-Anthropicが2025-2026年に発表した一連のEngineering記事は、Willisonが実践的に発見したパターンを**公式に検証・体系化**したものと言える。
+The series of Engineering articles Anthropic published in 2025-2026 can be said to have **officially validated and systematized** the patterns Willison discovered practically.
 
-### Cognitive Debt（認知負債）理論
-Willisonが独自に提唱した概念。AIエージェントが生成したコードの動作理解を失うことで蓄積する「認知的負債」であり、技術的負債の認知版。
+### Cognitive Debt Theory
+A concept uniquely proposed by Willison. The "cognitive debt" that accumulates from losing understanding of how AI agent-generated code works — the cognitive equivalent of technical debt.
 
 > "If the core of our application becomes a black box that we don't fully understand we can no longer confidently reason about it, which makes planning new features harder and eventually slows our progress in the same way that accumulated technical debt does."
 
-**返済サイクル**:
+**Repayment Cycle**:
 ```
-コード生成 → テスト → Linear Walkthroughで理解 → 
-  対話的解説で深掘り → Showboatで記録 → 次のコード生成
+Code Generation → Testing → Understanding via Linear Walkthrough → 
+  Deep dive via Interactive Explanation → Recording via Showboat → Next Code Generation
 ```
 
-### コンテキストウィンドウの戦略的管理
-LLMのコンテキストウィンドウは**限られたリソース**として扱うべき:
-- **圧縮**: 不要な情報を削除、重要な情報を保持
-- **構造化**: ファイルベースのコミュニケーション、会話履歴への依存回避
-- **優先順位付け**: 最も関連性の高い情報をコンテキストに含める
-- **エージェント設計**: コンテキストの制限を前提としたツール設計（RodneyのCLI第一アプローチ）
+### Strategic Context Window Management
+The LLM's context window should be treated as a **limited resource**:
+- **Compression**: Remove unnecessary information, preserve important information
+- **Structuring**: File-based communication, avoiding dependence on conversation history
+- **Prioritization**: Include the most relevant information in context
+- **Agent Design**: Tool design that assumes context limitations (Rodney's CLI-first approach)
 
-### マルチエージェントパターン
-- **サブエージェント**: 独立したコンテキストとターミナルで並列タスク実行
-- **メタエージェント**: サブエージェントの起動・統合・結果の取りまとめ
-- **自己完結性**: サブエージェントへの指示は完全に自己完結である必要がある
+### Multi-Agent Patterns
+- **Sub-agents**: Parallel task execution with independent contexts and terminals
+- **Meta-agents**: Launching, integrating, and consolidating results from sub-agents
+- **Self-containedness**: Instructions to sub-agents must be completely self-contained
 
-### Hoarding（知識の蓄積）哲学
+### Hoarding Philosophy
 > "Every time I write some code to solve a problem I save it. The next time I have a similar problem, I can reuse what I've already written — and improve it if it's still not quite right. It's hoarding, but a productive kind of hoarding."
 
-**Hoardの力**:
-- 蓄えたスキルはLLMに渡すコンテキストとして再利用可能
-- 小さなユーティリティスクリプトのコレクションが、より大きなプロジェクトの「初期コンテキスト」になる
-- コーディングエージェント時代において、このパターンはさらに強力に：エージェントがHoardedコードを改善・再構成できる
-- **Composability**: 蓄えた部品を組み合わせて、より複雑なソリューションを構築
+**Power of the Hoard**:
+- Accumulated skills are reusable as context to pass to LLMs
+- A collection of small utility scripts becomes the "initial context" for larger projects
+- In the coding agent era, this pattern becomes even more powerful: agents can improve and recompose hoarded code
+- **Composability**: Combine accumulated parts to build more complex solutions
 
 > "The more things I know how to do, the more I can compose together to do new things. And the more I can compose together, the more useful my hoard becomes to a coding agent."
 
-### Compound Engineering Loop（複合エンジニアリングループ）
+### Compound Engineering Loop
 > "I write some code, I review it, I improve it, I save what I've learned, and I repeat. Each cycle makes me more effective, and each cycle makes my agent more effective too."
 
-**ループの段階**:
-1. **Write**: エージェントにコードを書かせる
-2. **Review**: 人間がコードを精査し、問題点を特定
-3. **Improve**: エージェントに修正を依頼、あるいは自分で手を加える
-4. **Save**: 学んだことをホード（蓄積）に追加
-5. **Repeat**: 次のサイクルでは、より良いコンテキストでエージェントを起動
+**Stages of the Loop**:
+1. **Write**: Have the agent write code
+2. **Review**: Human scrutinizes the code and identifies issues
+3. **Improve**: Ask the agent to fix it, or fix it yourself
+4. **Save**: Add what you learned to your hoard (accumulation)
+5. **Repeat**: In the next cycle, launch the agent with better context
 
-**なぜ「Compound」か**: 各サイクルが次のサイクルの「利息」として働く。蓄積された知識がエージェントの性能を指数関数的に向上させる。
+**Why "Compound"**: Each cycle works as "interest" for the next cycle. Accumulated knowledge exponentially improves agent performance.
 
-### Git統合の具体的プラクティス
-- **コミットは小さく、頻繁に**: エージェントの各成果物を個別のコミットとして保存
-- **メッセージは人間のために**: エージェントが理解できる形式ではなく、将来の人間（あるいは将来の自分）のために書く
-- **`git commit --amend`の活用**: エージェントとの反復作業中に、一時的なコミットを整理
-- **ブランチ戦略**: エージェントに別ブランチで作業させ、mainへのマージは人間がレビュー後に実行
+### Concrete Git Integration Practices
+- **Commit small, commit often**: Save each agent output as an individual commit
+- **Messages are for humans**: Write for future humans (or your future self), not in a format agents understand
+- **Using `git commit --amend`**: Tidy up temporary commits during iterative work with agents
+- **Branch strategy**: Have agents work on separate branches; humans review before merging to main
 
-### Writing Code is Cheap — 新しい習慣の必要性
+### Writing Code is Cheap — The Need for New Habits
 > "The cost of writing code has dropped to near zero. The cost of understanding it, maintaining it, and integrating it into a larger system has not."
 
-**新しい習慣**:
-- コードの「量」ではなく「質」と「理解度」を指標にする
-- エージェントが生成したコードを盲目的にマージしない
-- **Readability first**: エージェントに「読みやすいコード」を明示的に要求
-- **Documentation as part of the loop**: コード生成と同時にドキュメントも生成させる
+**New Habits**:
+- Measure "quality" and "understanding" rather than "quantity" of code
+- Don't blindly merge agent-generated code
+- **Readability first**: Explicitly request "readable code" from agents
+- **Documentation as part of the loop**: Generate documentation simultaneously with code generation
 
 ### Vibe Coding and Agentic Engineering Convergence (May 2026)
 

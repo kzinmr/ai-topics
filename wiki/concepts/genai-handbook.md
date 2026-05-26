@@ -18,332 +18,332 @@ sources:
 
 # GenAI Handbook (William Brown)
 
-**William Brown ([@willccbb](https://x.com/willccbb))** が2024年6月に作成したGenAI学習リソースの**知識マップ**。これは個別の技術概念そのものではなく、Generative AI全体を学ぶための**リソースロードマップ**であり、散在する優れた解説リソース（ブログ、動画、論文）を教科書スタイルに整理したもの。
+**William Brown ([@willccbb](https://x.com/willccbb))** created this **knowledge map** for GenAI learning resources in June 2024. It is not a standalone technical concept, but rather a **resource roadmap** for learning Generative AI as a whole, organizing scattered excellent explanatory resources (blogs, videos, papers) into a textbook-style structure.
 
-> **これはメタ知識（知識マップ）である。** ハンドブック自体が知識のソースではなく、「どこに何があるか」を案内するナビゲーションツール。各リソースの実際の内容はリンク先を直接参照すること。
+> **This is meta-knowledge (a knowledge map).** The handbook itself is not the source of knowledge, but a navigation tool that guides you to "where to find what." Refer directly to the linked resources for the actual content.
 >
-> **注意：** 本ハンドブックは2024年6月時点のものであり、約2年経過している。特にSection V（Agents, DSPy）やSection VI（vLLM, llama.cpp）は大きく進化しているため、最新情報との突き合わせが必要。
+> **Note:** This handbook dates from June 2024 and is approximately 2 years old. In particular, Section V (Agents, DSPy) and Section VI (vLLM, llama.cpp) have evolved significantly, so cross-referencing with the latest information is necessary.
 
 ---
 
-## 🛠️ 全体構造
+## 🛠️ Overall Structure
 
-GenAI Handbookは9セクションで構成される：
+The GenAI Handbook consists of 9 sections:
 
 ```text
-Section I:   Foundations of Sequential Prediction（前提知識）
+Section I:   Foundations of Sequential Prediction (prerequisites)
     ↓
-Section II:  Neural Sequential Prediction（ニューラルネット→Transformer）
+Section II:  Neural Sequential Prediction (Neural Networks → Transformers)
     ↓
-Section III: Foundations for Modern LM（トークン化、MoE、スケーリング則）
+Section III: Foundations for Modern LM (Tokenization, MoE, Scaling Laws)
     ↓
-Section IV:  Finetuning Methods（LoRA, RLHF, DPO）
+Section IV:  Finetuning Methods (LoRA, RLHF, DPO)
     ↓
-Section V:   Evaluations & Applications（ベンチマーク、RAG、エージェント）
+Section V:   Evaluations & Applications (Benchmarks, RAG, Agents)
     ↓
-Section VI:  Performance Optimization（量子化、FlashAttention、vLLM）
+Section VI:  Performance Optimization (Quantization, FlashAttention, vLLM)
     ↓
-Section VII: Sub-Quadratic Context Scaling（SSM、Mamba、RWKV）
+Section VII: Sub-Quadratic Context Scaling (SSM, Mamba, RWKV)
     ↓
-Section VIII: Generative Modeling Beyond Text（GANs、拡散モデル）
+Section VIII: Generative Modeling Beyond Text (GANs, Diffusion Models)
     ↓
-Section IX:  Multimodal Models（VLM、VQ-VAE）
+Section IX:  Multimodal Models (VLM, VQ-VAE)
 ```
 
-**ハンドブックを提供するブロガー・教育者：**
-- **Andrej Karpathy** (ゼロからGPT, トークン化, 逆伝播)
-- **Lilian Weng** (RL, エージェント, 拡散, プロンプト, GAN)
-- **3Blue1Brown** (微積, 線形代数, ニューラルネット可視化)
-- **Chip Huyen** (RLHF, LLMエンジニアリング, マルチモーダル)
-- **Sebastian Raschka** (LoRA実践, モデル評価)
-- **Tim Dettmers** (量子化, LLM.int8())
-- **Neel Nanda** (機械的解釈可能性の入門)
-- **Jay Alammar** (Transformer, Word2Vecの可視化)
-- **StatQuest** (統計/MLの基本動画シリーズ)
-- **Maxime Labonne** (LLM Courseコンパニオン)
+**Bloggers/educators featured in the handbook:**
+- **Andrej Karpathy** (GPT from scratch, tokenization, backpropagation)
+- **Lilian Weng** (RL, agents, diffusion, prompting, GANs)
+- **3Blue1Brown** (calculus, linear algebra, neural network visualizations)
+- **Chip Huyen** (RLHF, LLM engineering, multimodal)
+- **Sebastian Raschka** (practical LoRA, model evaluation)
+- **Tim Dettmers** (quantization, LLM.int8())
+- **Neel Nanda** (introduction to mechanistic interpretability)
+- **Jay Alammar** (Transformer, Word2Vec visualizations)
+- **StatQuest** (basic stats/ML video series)
+- **Maxime Labonne** (LLM Course companion)
 
 ---
 
-## 🧩 Wikiカバレッジマッピング
+## 🧩 Wiki Coverage Mapping
 
 ### Section I: Foundations of Sequential Prediction
 
-**カバレッジ率:** ~5%（参照している前提知識であり、Wikiのスコープ外）
+**Coverage rate:** ~5% (prerequisite knowledge that is outside Wiki scope)
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| 微積分・線形代数 (3Blue1Brown) | — | Wikiのスコープ外（プログラミング/エンジニアリング前提知識） |
-| 教師あり学習 | — | 同上 |
-| 時系列分析 / ARIMA | — | 同上 |
-| オンライン学習・後悔最小化 | — | 同上 |
-| 強化学習 (MDP, Policy) | [[concepts/reinforcement-learning]] | 「古い」RLの基礎（Sutton & Barto）もカバーされているが、LLMアライメントRLとは異なる文脈 |
-| マルコフモデル | — | 同上 |
+| Calculus/Linear Algebra (3Blue1Brown) | — | Outside Wiki scope (programming/engineering prerequisites) |
+| Supervised Learning | — | Same as above |
+| Time Series Analysis / ARIMA | — | Same as above |
+| Online Learning / Regret Minimization | — | Same as above |
+| Reinforcement Learning (MDP, Policy) | [[concepts/reinforcement-learning]] | "Classic" RL fundamentals (Sutton & Barto) are covered, but in a different context from LLM alignment RL |
+| Markov Models | — | Same as above |
 
-**リソース評価：** このセクションは前提知識の整理が目的。Lilian Wengの [RL Overview](https://lilianweng.github.io/posts/2018-02-19-rl-overview/) は今でも優れた入門記事。Sutton & Bartoの教科書は古典だが、LLMアライメントには直接つながらない。
+**Resource Evaluation:** This section aims to organize prerequisite knowledge. Lilian Weng's [RL Overview](https://lilianweng.github.io/posts/2018-02-19-rl-overview/) remains an excellent introductory article. Sutton & Barto's textbook is a classic but doesn't directly connect to LLM alignment.
 
 ---
 
 ### Section II: Neural Sequential Prediction
 
-**カバレッジ率:** ~20%
+**Coverage rate:** ~20%
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| ニューラルネット基礎 | [[concepts/deep-learning]] | 高レベルカバレッジのみ |
-| RNNs | — | 欠落 |
-| LSTMs / GRUs | — | 欠落 |
-| Embeddings / Word2Vec | [[entities/embeddings]] | エンティティページに埋め込みの概要あり |
-| Transformer (Encoder-Decoder) | [[concepts/transformer-architecture]] | カバー済み |
-| Decoder-Only Transformers | [[concepts/decoder-only-gpt]] | カバー済み |
+| Neural Network Basics | [[concepts/deep-learning]] | High-level coverage only |
+| RNNs | — | Missing |
+| LSTMs / GRUs | — | Missing |
+| Embeddings / Word2Vec | [[entities/embeddings]] | Entity page has an overview of embeddings |
+| Transformer (Encoder-Decoder) | [[concepts/transformer-architecture]] | Covered |
+| Decoder-Only Transformers | [[concepts/decoder-only-gpt]] | Covered |
 
-**リソース評価：**
-- 🟢 **Karpathy「Let's build GPT」** — 2時間でTransformer全体像を掴める最高のリソース。2026年現在も価値不変。
-- 🟢 **3Blue1Brown「But what is a GPT?」** — 視覚的に美しい。基礎を固めるのに最適。
-- 🟢 **Jay Alammar「The Illustrated Transformer」** — 直感的理解に優れた古典。必読。
-- 🟡 **d2l.ai** — コード付き教科書。理論：実践のバランスが良い。ただし最新のLLM技術（RLHF, vLLM）はカバー外。
-- ⚪ **Goodfellow「Deep Learning」** — 古典だが2016年発行。Transformer未収録。歴史的価値のみ。
+**Resource Evaluation:**
+- 🟢 **Karpathy "Let's build GPT"** — The best resource for grasping the full Transformer picture in 2 hours. Its value remains unchanged as of 2026.
+- 🟢 **3Blue1Brown "But what is a GPT?"** — Visually beautiful. Ideal for solidifying foundations.
+- 🟢 **Jay Alammar "The Illustrated Transformer"** — A classic with excellent intuitive understanding. Must-read.
+- 🟡 **d2l.ai** — A textbook with code. Good balance of theory and practice, but doesn't cover recent LLM techniques (RLHF, vLLM).
+- ⚪ **Goodfellow "Deep Learning"** — A classic but published in 2016. No Transformer coverage. Historical value only.
 
 ---
 
 ### Section III: Foundations for Modern Language Modeling
 
-**カバレッジ率:** ~50%
+**Coverage rate:** ~50%
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| トークン化 (BPE) | [[concepts/claude-47-tokenizer]] | Claude 4.7のトークナイザ変更を中心的に扱う。汎用BPE解説は不足 |
-| Positional Encoding (RoPE) | [[concepts/transformer-architecture]] | Transformerアーキテクチャページ内で一部カバー |
-| Mixture-of-Experts | [[concepts/mixture-of-experts]] | カバー済み |
-| Scaling Laws | [[concepts/scaling-laws]] | カバー済み |
-| Pretraining Recipes | [[concepts/llm-training-fundamentals]] | カバー済み |
-| 分散学習 / FSDP | [[concepts/pytorch-fsdp]], [[concepts/fsdp-qlora]] | 両方とも充実 |
+| Tokenization (BPE) | [[concepts/claude-47-tokenizer]] | Focused on Claude 4.7 tokenizer changes. General BPE explanation is insufficient |
+| Positional Encoding (RoPE) | [[concepts/transformer-architecture]] | Partially covered within the Transformer architecture page |
+| Mixture-of-Experts | [[concepts/mixture-of-experts]] | Covered |
+| Scaling Laws | [[concepts/scaling-laws]] | Covered |
+| Pretraining Recipes | [[concepts/llm-training-fundamentals]] | Covered |
+| Distributed Training / FSDP | [[concepts/pytorch-fsdp]], [[concepts/fsdp-qlora]] | Both are well-covered |
 
-**リソース評価：**
-- 🟢 **Karpathy「Tokenization」動画** — トークン化を深く理解したいなら必見。独特の思考フレームを与えてくれる。
-- 🟢 **Eleuther AI「Rotary Embeddings」ブログ** — RoPEの説明として今でもベスト。
-- 🟢 **Hugging Face「Mixture of Experts Explained」** — 概念説明として十分。
-- 🟢 **Answer.AI「FSDP + QLoRA Deep Dive」** — 実践的なFSDP解説。wikiの[[concepts/fsdp-qlora]]に取り込み済み。
-- 🟡 **Meta公式FSDPブログ** — やや古いが基本を理解するには良い。
-- 🟡 **Chinchilla Scaling Laws**ブログ群 — 基本概念を知るには良いが、2024年以降のScaling Laws議論（小さなモデルへのシフト）はカバー外。
-- ⚪ **「The Novice's LLM Training Guide」** — レンタルサーバー上の非公式ガイド。内容は有用だが出典不明確。
+**Resource Evaluation:**
+- 🟢 **Karpathy "Tokenization" video** — A must-watch for deep understanding of tokenization. Provides a unique thought framework.
+- 🟢 **Eleuther AI "Rotary Embeddings" blog** — Still the best explanation of RoPE.
+- 🟢 **Hugging Face "Mixture of Experts Explained"** — Sufficient as a conceptual explanation.
+- 🟢 **Answer.AI "FSDP + QLoRA Deep Dive"** — Practical FSDP explanation. Already incorporated into wiki [[concepts/fsdp-qlora]].
+- 🟡 **Meta's official FSDP blog** — A bit dated but good for understanding the basics.
+- 🟡 **Chinchilla Scaling Laws blog series** — Good for basic concepts, but doesn't cover post-2024 Scaling Laws discussions (shift toward smaller models).
+- ⚪ **"The Novice's LLM Training Guide"** — Unofficial guide on rental servers. Content is useful but source provenance is unclear.
 
 ---
 
 ### Section IV: Finetuning Methods for LLMs
 
-**カバレッジ率:** ~80%（Wikiで最も充実したセクション）
+**Coverage rate:** ~80% (Wiki's most comprehensive section)
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| Instruct Fine-Tuning | [[concepts/fine-tuning]], [[concepts/post-training]] | 両方ともカバー済み |
-| LoRA | [[concepts/peft-lora-and-qlora]], [[concepts/qlora]], [[entities/lora-fine-tuning]] | 3つもページあり充実 |
-| RLHF | [[concepts/rlhf]], [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | カバー済み |
-| DPO | [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] | カバー済み（KTO/ORPO含む） |
-| Context Scaling (YaRN) | — | 欠落 |
-| Distillation | [[concepts/model-distillation]] | カバー済み |
-| Model Merging | — | 欠落（SLERP mergingは未カバー） |
+| Instruct Fine-Tuning | [[concepts/fine-tuning]], [[concepts/post-training]] | Both covered |
+| LoRA | [[concepts/peft-lora-and-qlora]], [[concepts/qlora]], [[entities/lora-fine-tuning]] | Well-covered with 3 pages |
+| RLHF | [[concepts/rlhf]], [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
+| DPO | [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] | Covered (including KTO/ORPO) |
+| Context Scaling (YaRN) | — | Missing |
+| Distillation | [[concepts/model-distillation]] | Covered |
+| Model Merging | — | Missing (SLERP merging not covered) |
 
-**リソース評価：**
-- 🟢 **Sebastian Raschka「Practical Tips for Finetuning LLMs Using LoRA」** — 実践的な知見が豊富。ハイパーパラメータの選択基準など貴重。
-- 🟢 **Hugging Face「Illustrating RLHF」** — RLHFの定番入門。2026年現在も基本は変わらず。
-- 🟢 **Hugging Face「DPO with TRL」** — コード付きで実践的。
-- 🟡 **Chip Huyen「RLHF」** — 理論と実践のバランスが良い。
-- 🟡 **Maxime Labonne「Merge Large Language Models with mergekit」** — モデルマージの事実上の標準ガイド。wikiに未取り込み。
+**Resource Evaluation:**
+- 🟢 **Sebastian Raschka "Practical Tips for Finetuning LLMs Using LoRA"** — Rich with practical insights. Valuable hyperparameter selection guidelines.
+- 🟢 **Hugging Face "Illustrating RLHF"** — The classic RLHF introduction. The fundamentals remain unchanged as of 2026.
+- 🟢 **Hugging Face "DPO with TRL"** — Practical with code.
+- 🟡 **Chip Huyen "RLHF"** — Good balance of theory and practice.
+- 🟡 **Maxime Labonne "Merge Large Language Models with mergekit"** — The de facto standard guide for model merging. Not yet incorporated into the wiki.
 
 ---
 
 ### Section V: LLM Evaluations and Applications
 
-**カバレッジ率:** ~80%
+**Coverage rate:** ~80%
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| Benchmarking / Evals | [[concepts/ai-evals]], [[concepts/ai-evaluation]], [[concepts/open-llm-leaderboard]] | カバー済み |
-| Sampling / Structured Outputs | [[concepts/sampling-strategies]], [[concepts/structured-outputs]] | カバー済み |
-| Prompting | [[concepts/prompt-engineering]] | カバー済み |
-| Vector Databases | [[concepts/vector-search]], [[concepts/rag-systems]] | カバー済み |
-| RAG | [[concepts/rag-systems]], [[concepts/retrieval-augmented-generation]], [[concepts/agentic-rag]] | カバー済み |
-| Agents / Tool Use | 多数のページ | 最も充実したセクション |
-| DSPy | [[concepts/dspy]], [[concepts/dspy-architecture]] | カバー済み |
-| Synthetic Data | [[concepts/synthetic-data]] | カバー済み |
-| Representation Engineering | — | 欠落 |
-| Mechanistic Interpretability | [[concepts/mechanistic-interpretability]] | カバー済み |
+| Benchmarking / Evals | [[concepts/ai-evals]], [[concepts/ai-evaluation]], [[concepts/open-llm-leaderboard]] | Covered |
+| Sampling / Structured Outputs | [[concepts/sampling-strategies]], [[concepts/structured-outputs]] | Covered |
+| Prompting | [[concepts/prompt-engineering]] | Covered |
+| Vector Databases | [[concepts/vector-search]], [[concepts/rag-systems]] | Covered |
+| RAG | [[concepts/rag-systems]], [[concepts/retrieval-augmented-generation]], [[concepts/agentic-rag]] | Covered |
+| Agents / Tool Use | Multiple pages | Most comprehensive section |
+| DSPy | [[concepts/dspy]], [[concepts/dspy-architecture]] | Covered |
+| Synthetic Data | [[concepts/synthetic-data]] | Covered |
+| Representation Engineering | — | Missing |
+| Mechanistic Interpretability | [[concepts/mechanistic-interpretability]] | Covered |
 
-**リソース評価：**
-- 🟢 **Lilian Weng「LLM Powered Autonomous Agents」** — エージェントの網羅的サーベイ。2026年現在でも最も引用される記事の一つ。ただし実装は2023年時点。
-- 🟢 **Chip Huyen「Building LLM Applications for Production」** — 2023年の記事だが、システム設計の原則は色褪せない。
-- 🟢 **Neel NandaのMIリソース** — 機械的解釈可能性の入門として最高。特にGlossaryとQuickstart Guideは必読。
-- 🟢 **Anthropic「Scaling Monosemanticity」** — Claude 3 Sonnetの特徴抽出。MIの実際の応用例として重要。
-- 🟡 **LangChain「Deconstructing RAG」** — 基本は良いが、2026年現在のRAG実践とは乖離あり。
-- 🟡 **Pinecone Learning Series** — ベクトルDBの概念説明として秀逸。2026年でも通用する。
-- ⚪ **Microsoft「Generative AI for Beginners」** — 入門レベルとしては良いが、このハンドブックのターゲット層（技術者）には浅すぎる。
+**Resource Evaluation:**
+- 🟢 **Lilian Weng "LLM Powered Autonomous Agents"** — Comprehensive agent survey. Still one of the most cited articles as of 2026. However, the implementation dates from 2023.
+- 🟢 **Chip Huyen "Building LLM Applications for Production"** — A 2023 article, but the system design principles remain timeless.
+- 🟢 **Neel Nanda's MI resources** — The best introduction to mechanistic interpretability. Especially the Glossary and Quickstart Guide are must-reads.
+- 🟢 **Anthropic "Scaling Monosemanticity"** — Feature extraction from Claude 3 Sonnet. Important as a real-world application of MI.
+- 🟡 **LangChain "Deconstructing RAG"** — Good basics, but diverges from current RAG practice as of 2026.
+- 🟡 **Pinecone Learning Series** — Excellent conceptual explanation of vector DBs. Still applicable in 2026.
+- ⚪ **Microsoft "Generative AI for Beginners"** — Fine as an introductory level, but too shallow for the handbook's target audience (engineers).
 
 ---
 
 ### Section VI: Performance Optimizations for Efficient Inference
 
-**カバレッジ率:** ~85%
+**Coverage rate:** ~85%
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| Quantization | [[concepts/model-quantization]], [[concepts/gguf-quantization]], [[concepts/gguf]] | カバー済み |
-| Speculative Decoding | [[concepts/speculative-decoding]] | カバー済み |
-| FlashAttention | [[concepts/flashattention-pytorch-educational]] | カバー済み |
-| KV Caching | [[concepts/kv-cache]], [[concepts/attention-mechanism-variants]] | カバー済み |
-| vLLM / PagedAttention | [[concepts/vllm]], [[concepts/serving-llms-vllm]] | カバー済み |
-| CPU Offloading / llama.cpp | [[concepts/llama-cpp]], [[entities/ollama]] | カバー済み |
+| Quantization | [[concepts/model-quantization]], [[concepts/gguf-quantization]], [[concepts/gguf]] | Covered |
+| Speculative Decoding | [[concepts/speculative-decoding]] | Covered |
+| FlashAttention | [[concepts/flashattention-pytorch-educational]] | Covered |
+| KV Caching | [[concepts/kv-cache]], [[concepts/attention-mechanism-variants]] | Covered |
+| vLLM / PagedAttention | [[concepts/vllm]], [[concepts/serving-llms-vllm]] | Covered |
+| CPU Offloading / llama.cpp | [[concepts/llama-cpp]], [[entities/ollama]] | Covered |
 
-**リソース評価：**
-- 🟢 **Tim Dettmers「LLM.int8()」ブログ** — 量子化の基礎理論として今でもベスト。 emergent featuresの概念は必須知識。
-- 🟢 **Tri DaoのFlashAttention講演** — 考案者による解説。tilingとrecomputationの理解に最適。
-- 🟢 **NVIDIA「Mastering LLM Techniques: Inference Optimization」** — 俯瞰に最適な短いブログ。
-- 🟡 **Jay Mody「Speculative Sampling」** — 理論のウォークスルーとして良い。ただしvLLMなどでの実装状況は追記が必要。
-- 🟡 **vLLMオリジナルブログ** — 2023年のものだが、PagedAttentionの基本は変わらず。
-- ⚪ **Datacamp「llama.cpp Tutorial」** — 入門レベル。深い理解には不足。
+**Resource Evaluation:**
+- 🟢 **Tim Dettmers "LLM.int8()" blog** — Still the best foundational theory for quantization. The concept of emergent features is essential knowledge.
+- 🟢 **Tri Dao's FlashAttention talk** — Explanation by the creator. Ideal for understanding tiling and recomputation.
+- 🟢 **NVIDIA "Mastering LLM Techniques: Inference Optimization"** — Short blog that's great for an overview.
+- 🟡 **Jay Mody "Speculative Sampling"** — Good as a theoretical walkthrough. However, implementation status in vLLM etc. needs updating.
+- 🟡 **vLLM original blog** — From 2023, but PagedAttention fundamentals haven't changed.
+- ⚪ **Datacamp "llama.cpp Tutorial"** — Introductory level. Insufficient for deep understanding.
 
 ---
 
 ### Section VII: Sub-Quadratic Context Scaling
 
-**カバレッジ率:** ~5%
+**Coverage rate:** ~5%
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| Sliding Window Attention | — | 欠落 |
-| Ring Attention | — | 欠落 |
-| Linear Attention / RWKV | — | 欠落 |
-| SSMs / Mamba | — | 欠落。S4→Mambaの歴史が未カバー |
-| HyperAttention | — | 欠落 |
+| Sliding Window Attention | — | Missing |
+| Ring Attention | — | Missing |
+| Linear Attention / RWKV | — | Missing |
+| SSMs / Mamba | — | Missing. The S4→Mamba history is not covered |
+| HyperAttention | — | Missing |
 
-**リソース評価：**
-- 🟢 **「The Annotated S4」** — SSMの最も優れた解説。コードと理論の橋渡し。
-- 🟢 **Maarten Grootendorst「Visual Guide to Mamba」** — 視覚的に理解しやすい。Mamba入門に最適。
-- 🟢 **Tri Dao「Mamba-2 State Space Duality」シリーズ** — Mamba-2の全4部作。SSMとLinear Attentionの関係を理論的に示した重要な成果。
-- 🟡 **RWKVブログ（Hugging Face, Johan Wind）** — RWKVの概念説明。実用性は限定的だがアーキテクチャの多様性を知るのに有用。
+**Resource Evaluation:**
+- 🟢 **"The Annotated S4"** — The best SSM explanation. Bridges code and theory.
+- 🟢 **Maarten Grootendorst "Visual Guide to Mamba"** — Visually easy to understand. Ideal for Mamba introduction.
+- 🟢 **Tri Dao "Mamba-2 State Space Duality" series** — The complete 4-part Mamba-2 series. An important contribution that theoretically demonstrates the relationship between SSMs and Linear Attention.
+- 🟡 **RWKV blogs (Hugging Face, Johan Wind)** — Conceptual explanation of RWKV. Practical utility is limited but useful for understanding architectural diversity.
 
-**⚠️ このセクションはWikiの大きなギャップ。特にMamba系SSMは現在も活発に研究されており、概念ページ作成が推奨される。**
+**⚠️ This section is the biggest gap in the Wiki. In particular, Mamba-family SSMs are still actively researched, and creating concept pages is recommended.**
 
 ---
 
 ### Section VIII: Generative Modeling Beyond Sequences
 
-**カバレッジ率:** ~5%
+**Coverage rate:** ~5%
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| VAEs | — | 欠落 |
-| GANs | — | 欠落（一部の言及のみ） |
-| Conditional GANs / VQGAN-CLIP | — | 欠落 |
-| Diffusion Models | [[concepts/ai-image-generation]], [[skills/stable-diffusion-image-generation]] | スキルとして存在。概念ページとしては欠落 |
-| Normalizing Flows | — | 欠落 |
+| VAEs | — | Missing |
+| GANs | — | Missing (only occasional mentions) |
+| Conditional GANs / VQGAN-CLIP | — | Missing |
+| Diffusion Models | [[concepts/ai-image-generation]], [[skills/stable-diffusion-image-generation]] | Exists as skills. Missing as concept pages |
+| Normalizing Flows | — | Missing |
 
-**リソース評価：**
-- 🟡 **Lilian Weng「What are Diffusion Models?」** — 拡散モデルの理論的入門として今でも良い。ただし2年経過して多くの資料が出ている。
-- 🟡 **Hugging Face「The Annotated Diffusion Model」** — コード付き解説。実装ベースで学びたい人向け。
-- ⚪ **GANs関連（Paperspace, Analytics Vidhya）** — 2024年時点でもGANsは「やや時代遅れ」とハンドブック自身が認めている。2026年の現在ではさらに古く、DiffusionとVAEに集中すべき。
+**Resource Evaluation:**
+- 🟡 **Lilian Weng "What are Diffusion Models?"** — Still good as a theoretical introduction to diffusion models. However, many more resources have emerged in the 2 years since.
+- 🟡 **Hugging Face "The Annotated Diffusion Model"** — Code-annotated explanation. For those who want to learn through implementation.
+- ⚪ **GANs-related (Paperspace, Analytics Vidhya)** — Even in 2024, the handbook itself acknowledged that GANs are "somewhat outdated." In 2026, they're even older — focus should be on Diffusion and VAEs.
 
 ---
 
 ### Section IX: Multimodal Models
 
-**カバレッジ率:** ~15%
+**Coverage rate:** ~15%
 
-| Topic | Wiki Coverage | 備考 |
+| Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| VQ-VAE | — | 欠落 |
-| Vision Transformers | [[concepts/vision-models]] | カバー済み |
-| Multimodal 全般 | [[concepts/multimodal]] | カバー済み |
+| VQ-VAE | — | Missing |
+| Vision Transformers | [[concepts/vision-models]] | Covered |
+| Multimodal (general) | [[concepts/multimodal]] | Covered |
 
-**リソース評価：**
-- 🟢 **Chip Huyen「Multimodality and LMMs」** — マルチモーダルLLMの俯瞰に最適。
-- 🟢 **Lilian Weng「Generalized Visual Language Models」** — 様々なVLMアプローチを整理。
-- 🟡 **Distill「Multimodal Neurons」** — 視覚的に魅力的。概念理解に役立つが学術的な深さは限定的。
-- ⚪ **Apple MM1論文** — 2024年の大規模実験。実用的だが2026年ではやや古い。
+**Resource Evaluation:**
+- 🟢 **Chip Huyen "Multimodality and LMMs"** — Best for an overview of multimodal LLMs.
+- 🟢 **Lilian Weng "Generalized Visual Language Models"** — Organizes various VLM approaches.
+- 🟡 **Distill "Multimodal Neurons"** — Visually appealing. Useful for conceptual understanding but limited academic depth.
+- ⚪ **Apple MM1 paper** — Large-scale experiment from 2024. Practical but somewhat dated in 2026.
 
 ---
 
-## 📊 総合カバレッジ
+## 📊 Overall Coverage
 
-| Section | Wiki Coverage | 備考 |
+| Section | Wiki Coverage | Notes |
 |---------|-------------|------|
-| I. Foundations | **~5%** | Wikiのスコープ外（前提知識）。参照リソースは有用。 |
-| II. Neural Sequential | **~20%** | RNN/LSTMの概念ページが欠落 |
-| III. Modern LM | **~50%** | トークン化の汎用ページが不足。FSDP/MoEは充実。 |
-| IV. Finetuning | **~80%** | Wikiで最も充実。Context Scaling (YaRN) と Model Mergingが欠落。 |
-| V. Evaluations & Apps | **~80%** | Agents/RAGは充実。Representation Engineeringが欠落。 |
-| VI. Inference Optimization | **~85%** | 最も充実したセクション。全てカバー。 |
-| VII. Context Scaling | **~5%** | 最大のギャップ。SSM/Mamba/RWKVの概念ページが全くない。 |
-| VIII. Beyond Text | **~5%** | Diffusion/VAE/GANsが未カバー。ただしWikiのスコープ外に近い。 |
-| IX. Multimodal | **~15%** | VQ-VAEが欠落。VLMはカバー済み。 |
+| I. Foundations | **~5%** | Outside Wiki scope (prerequisites). Referenced resources are useful. |
+| II. Neural Sequential | **~20%** | Missing RNN/LSTM concept pages |
+| III. Modern LM | **~50%** | General tokenization page is insufficient. FSDP/MoE are well-covered. |
+| IV. Finetuning | **~80%** | Wiki's most comprehensive section. Context Scaling (YaRN) and Model Merging are missing. |
+| V. Evaluations & Apps | **~80%** | Agents/RAG are well-covered. Representation Engineering is missing. |
+| VI. Inference Optimization | **~85%** | Most comprehensive section. Everything covered. |
+| VII. Context Scaling | **~5%** | Biggest gap. SSM/Mamba/RWKV concept pages completely absent. |
+| VIII. Beyond Text | **~5%** | Diffusion/VAE/GANs not covered. However, close to Wiki scope boundary. |
+| IX. Multimodal | **~15%** | VQ-VAE missing. VLMs are covered. |
 
 ---
 
-## 🏆 おすすめ優先順位
+## 🏆 Recommended Priorities
 
-### 🅰️ エンジニア / 実務者 — LLMアプリケーション開発者向け
+### 🅰️ Engineers / Practitioners — For LLM application developers
 
-Section V（Evals & Applications）とSection VI（Inference Optimization）に集中。VII（Context Scaling）はMambaを理解したい場合のみ。
+Focus on Section V (Evals & Applications) and Section VI (Inference Optimization). VII (Context Scaling) only if you want to understand Mamba.
 
 ```text
-1. Section V: Agents / RAG / DSPy — 実務に直結
-2. Section VI: vLLM / Quantization — デプロイに必須
-3. Section IV: LoRA / RLHF / DPO — ファインチューニング実践
+1. Section V: Agents / RAG / DSPy — Directly connected to practice
+2. Section VI: vLLM / Quantization — Essential for deployment
+3. Section IV: LoRA / RLHF / DPO — Practical finetuning
 ```
 
-### 🅱️ 研究者 / 深掘りしたい人
+### 🅱️ Researchers / Deep divers
 
-Section III（Modern LM）から始め、Section VII（SSM/Mamba）とSection V後半（MI, RepE）へ。
+Start from Section III (Modern LM), then move to Section VII (SSM/Mamba) and the latter half of Section V (MI, RepE).
 
 ```text
-1. Section III: Scaling Laws / MoE — 基盤理論
-2. Section VII: Mamba / SSM — 最先端アーキテクチャ
-3. Section V: MI / RepE — 解釈可能性
-4. Section I: Time-Series / RL — 理論的基礎
+1. Section III: Scaling Laws / MoE — Foundational theory
+2. Section VII: Mamba / SSM — Cutting-edge architecture
+3. Section V: MI / RepE — Interpretability
+4. Section I: Time-Series / RL — Theoretical foundations
 ```
 
-### 🅲️ 初学者 — 初めてGenAIを学ぶ人
+### 🅲️ Beginners — Learning GenAI for the first time
 
-ハンドブックの構造をそのまま追うのが最適。Section IIのTransformerまでは必須。Section III以降は興味に応じて選択。
+Following the handbook structure as-is is optimal. Section II up through Transformer is mandatory. Section III onward — choose based on interest.
 
 ```text
-1. Section I: Math (3Blue1Brown) + RL基礎
-2. Section II: Karpathy「Let's build GPT」(最優先)
+1. Section I: Math (3Blue1Brown) + RL basics
+2. Section II: Karpathy "Let's build GPT" (highest priority)
 3. Section III: Tokenization + Scaling Laws
-4. Section IV: LoRA（実践から入る）
+4. Section IV: LoRA (start from practice)
 5. Section V: Prompting → RAG
 ```
 
 ---
 
-## 🗺️ ギャップ分析 — Wikiに追加すべき概念
+## 🗺️ Gap Analysis — Concepts to Add to Wiki
 
-| 優先度 | 欠落概念 | 該当Section | 理由 |
+| Priority | Missing Concept | Section | Reason |
 |--------|---------|------------|------|
-| 🔴 | **SSM / Mamba** | VII | アーキテクチャの重要な代替パラダイム。現在も活発な研究分野。 |
-| 🔴 | **Representation Engineering** | V | AI安全とモデル制御の新しいパラダイム。実用性が高い。 |
-| 🟡 | **Model Merging (mergekit / SLERP)** | IV | オープンソースモデル活用の実践的手法として普及。 |
-| 🟡 | **Context Scaling (YaRN / RoPE拡張)** | IV | 長期コンテキスト処理の実装テクニックとして重要。 |
-| 🟢 | **RNN / LSTM** | II | 歴史的価値。ただし優先度低（Transformer前提の時代）。 |
-| 🟢 | **FlashAttention（詳細概念ページ）** | VI | 現在はスキルとして存在。概念ページ化する価値あり。 |
-| 🟢 | **Diffusion Models（概念ページ）** | VIII | 画像生成の基盤。スキルはあるが概念ページがない。 |
+| 🔴 | **SSM / Mamba** | VII | Important alternative architecture paradigm. Still an active research area. |
+| 🔴 | **Representation Engineering** | V | New paradigm for AI safety and model control. High practical value. |
+| 🟡 | **Model Merging (mergekit / SLERP)** | IV | Widespread as a practical approach to open-source model utilization. |
+| 🟡 | **Context Scaling (YaRN / RoPE extension)** | IV | Important as an implementation technique for long-context processing. |
+| 🟢 | **RNN / LSTM** | II | Historical value. However, low priority (in the Transformer-centric era). |
+| 🟢 | **FlashAttention (detailed concept page)** | VI | Currently exists as a skill. Worth creating as a concept page. |
+| 🟢 | **Diffusion Models (concept page)** | VIII | Foundation of image generation. Skills exist but no concept page. |
 
 ---
 
-## 🔗 関連Wikiページ
+## 🔗 Related Wiki Pages
 
-- [[entities/will-brown]] — ハンドブック作成者
-- [[concepts/llm-course-roadmap]] — Maxime Labonne（類似のメタ知識マップ）
-- [[concepts/learning-llms-in-2025]] — Yoav Goldberg（類似のメタ知識マップ）
-- [[concepts/transformer-architecture]] — Transformerの中核概念
-- [[concepts/scaling-laws]] — スケーリング則
-- [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] — 選好最適化
-- [[concepts/rag-systems]] — 検索拡張生成
-- [[concepts/model-quantization]] — 量子化
-- [[concepts/mechanistic-interpretability]] — 機械的解釈可能性
-- [[entities/andrej-karpathy]] — ハンドブックで最も引用される教育者
-- [[entities/lilian-weng]] — 2番目に多く引用されるブロガー
-- [[entities/maxime-labonne]] — コンパニオンリソース（LLM Course）の作成者
+- [[entities/will-brown]] — Handbook creator
+- [[concepts/llm-course-roadmap]] — Maxime Labonne (similar meta knowledge map)
+- [[concepts/learning-llms-in-2025]] — Yoav Goldberg (similar meta knowledge map)
+- [[concepts/transformer-architecture]] — Core Transformer concepts
+- [[concepts/scaling-laws]] — Scaling Laws
+- [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] — Preference optimization
+- [[concepts/rag-systems]] — Retrieval-augmented generation
+- [[concepts/model-quantization]] — Quantization
+- [[concepts/mechanistic-interpretability]] — Mechanistic interpretability
+- [[entities/andrej-karpathy]] — Most cited educator in the handbook
+- [[entities/lilian-weng]] — Second most cited blogger
+- [[entities/maxime-labonne]] — Creator of companion resource (LLM Course)
 
 ---
 
-> **このページはメタ知識（知識マップ）であり、William Brown の GenAI Handbook が参照する各リソースを評価し、既存Wiki概念にマッピングしたものである。個別の技術概念の解説は各リンク先を参照すること。**
+> **This page is meta-knowledge (a knowledge map) that evaluates the resources referenced by William Brown's GenAI Handbook and maps them to existing Wiki concepts. Refer to each linked page for explanations of individual technical concepts.**

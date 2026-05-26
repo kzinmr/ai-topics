@@ -33,218 +33,218 @@ related:
 
 # Local AI Landscape — May 2026
 
-> **Snapshot**: May 2026時点のローカルAI環境の全体像。Andrew Chen (a16z) のホームラボ構築体験をケーススタディとして、ハードウェア・モデル・ソフトウェアスタック・ユースケース・将来展望を俯瞰する。
+> **Snapshot**: The overall state of local AI as of May 2026. Using Andrew Chen (a16z)'s home lab build experience as a case study, this surveys hardware, models, software stacks, use cases, and future outlook.
 
 ## Discriminative Summary
 
-**これは何か**: 個人が自宅やオフィスで自前のハードウェア上でLLMを実行する「ローカルAI」の現在地。クラウドAPI（GPT/Claude）を使わず、自前GPUや統合メモリマシンでオープンウェイトモデルを動かす実践の総体。ハードウェア選択・モデル品質・推論速度・ソフトウェアスタック・実際のユースケースまで含む。
+**What this is**: The current state of "local AI" — individuals running LLMs on their own hardware at home or office. The collective practice of running open-weight models on self-owned GPUs or unified memory machines, without using cloud APIs (GPT/Claude). Covers hardware selection, model quality, inference speed, software stacks, and actual use cases.
 
-**これは何でないか**: クラウドLLMの比較表ではない。データセンター/エンタープライズ推論の話ではない（それは[[concepts/vllm]]や[[concepts/sglang]]の領域）。モデル学習/ファインチューニングの話でもない（それは[[concepts/local-llm/model-distillation]]の領域）。
+**What this is not**: Not a comparison table of cloud LLMs. Not about data center/enterprise inference (that's the domain of [[concepts/vllm]] and [[concepts/sglang]]). Not about model training/fine-tuning (that's the domain of [[concepts/local-llm/model-distillation]]).
 
 ---
 
-## 1. ハードウェアランドスケープ
+## 1. Hardware Landscape
 
-2026年5月時点での主要なローカルAIハードウェア選択肢。Andrew Chenの実際の構成をベースに整理：
+Major local AI hardware options as of May 2026. Organized around Andrew Chen's actual setup:
 
-### 主要プラットフォーム比較
+### Major Platform Comparison
 
-| プラットフォーム | メモリ | 帯域幅 | 扱えるモデルサイズ | 長所 | 短所 |
+| Platform | Memory | Bandwidth | Model Size Capable | Pros | Cons |
 |-----------------|--------|--------|-------------------|------|------|
-| **Mac Studio (M4/M5)** | 最大192GB統一 | ~800 GB/s | ~120B+ (4bit) | 大容量統一メモリ、高帯域幅 | **深刻な品不足**、メモリ容量削減の動き |
-| **NVIDIA DGX Spark (GB10)** | 128GB統一 | 273 GB/s | ~120B (4bit), ~200B+ (fp4) | CUDAエコシステム、NVFP4対応 | 帯域幅が低め（tok/sは遅い） |
-| **RTX 5090 eGPU** | 32GB VRAM | ~1.7 TB/s | ~30B (4bit) | 超高速推論 | 24-32GB上限、eGPUでの運用に問題多数 |
-| **Strix Halo (Framework)** | ~64GB統一 | — | ~70B (4bit) | モジュラー、ノートPC級 | エコシステム未成熟 |
-| **Mac Mini (M4 Pro)** | 最大64GB | ~270 GB/s | ~35B (4bit) | 手軽なエントリーポイント | 大規模モデルには非力 |
-| **Gaming PC (RTX 4090)** | 24GB VRAM | ~1 TB/s | ~20B (4bit) | 既存資産を活用可能 | VRAM容量が最大の制約 |
+| **Mac Studio (M4/M5)** | Up to 192GB unified | ~800 GB/s | ~120B+ (4bit) | Large unified memory, high bandwidth | **Severe supply shortage**, memory capacity reduction trend |
+| **NVIDIA DGX Spark (GB10)** | 128GB unified | 273 GB/s | ~120B (4bit), ~200B+ (fp4) | CUDA ecosystem, NVFP4 support | Lower bandwidth (slower tok/s) |
+| **RTX 5090 eGPU** | 32GB VRAM | ~1.7 TB/s | ~30B (4bit) | Ultra-fast inference | 24-32GB ceiling, numerous eGPU operational issues |
+| **Strix Halo (Framework)** | ~64GB unified | — | ~70B (4bit) | Modular, laptop-class | Immature ecosystem |
+| **Mac Mini (M4 Pro)** | Up to 64GB | ~270 GB/s | ~35B (4bit) | Easy entry point | Underpowered for large models |
+| **Gaming PC (RTX 4090)** | 24GB VRAM | ~1 TB/s | ~20B (4bit) | Can leverage existing assets | VRAM capacity is the biggest constraint |
 
-### Andrew Chenのハードウェア遍歴
+### Andrew Chen's Hardware Journey
 
 ```
 Mac Mini → NVIDIA DGX Spark → 5090 eGPU + gaming rig → Strix Halo Framework
 ```
 
-- **Mac Studioの品不足**: 「BUT GOOD LUCK GETTING A MAC STUDIO!」— 2026年時点で入手困難。メモリ容量の削減も進行中
-- **5090 eGPU**: 「lots of issues with it」— 運用上の問題が多く、安定運用は難しい
-- **DGX Sparkの位置づけ**: 大容量メモリだが帯域幅は低め。tok/sでは劣るがCUDAエコシステムへのアクセスが決め手
-- **Mac優位の理由**: 「Mac hardware stack (particularly Mac Studios) are really good since they have pretty high bandwidth and large amounts of unified memory」
+- **Mac Studio shortage**: "BUT GOOD LUCK GETTING A MAC STUDIO!" — Hard to obtain as of 2026. Memory capacity reductions also underway
+- **5090 eGPU**: "lots of issues with it" — Many operational problems, difficult to run stably
+- **DGX Spark positioning**: Large memory but lower bandwidth. Trails in tok/s but CUDA ecosystem access is the deciding factor
+- **Why Mac is superior**: "Mac hardware stack (particularly Mac Studios) are really good since they have pretty high bandwidth and large amounts of unified memory"
 
-### ハードウェアの詳細
+### Hardware Details
 - **DGX Spark**: → [[entities/nvidia-dgx-spark]], [[concepts/dgx-spark-local-llm-server]]
 - **Mac Studio**: → [[concepts/mac-studio-local-ai]]
-- **推論ハードウェア全般**: → [[concepts/local-llm-inference-hardware]]
+- **Inference hardware general**: → [[concepts/local-llm-inference-hardware]]
 
 ---
 
-## 2. モデルランドスケープ
+## 2. Model Landscape
 
-### オープンウェイトモデルの「1年遅れ」テーゼ
+### The "One Year Behind" Thesis for Open-Weight Models
 
 > "The open weight models are all about a year behind..."
 > — Andrew Chen, May 2026
 
-Andrew Chenの核心的観察：
+Andrew Chen's core observation:
 
-- **オープンウェイトモデルはSOTAクラウドLLMより約1年遅れ**
-- 一般消費者が実際に自宅で動かせるのは最大~120Bパラメータモデル
-  - GPT OSS 120B, Qwen 3.6 122B あたりが上限
-- クラウドLLMと比較して **1/100のサイズ**、**30-50 tok/s**（vs クラウドの100+ tok/s）
-- しかし改善は続いている — Qwen 3.6 27B Denseはすでに「かなり使える」
+- **Open-weight models are about 1 year behind SOTA cloud LLMs**
+- The maximum a general consumer can actually run at home is ~120B parameter models
+  - GPT OSS 120B, Qwen 3.6 122B are around the upper limit
+- Compared to cloud LLMs: **1/100th the size**, **30-50 tok/s** (vs 100+ tok/s in cloud)
+- But improvements continue — Qwen 3.6 27B Dense is already "pretty usable"
 
-### 2027年への予測
+### Predictions for 2027
 
 > "...it seems remarkable to think that we might be able to run **Opus level local models in 2027**."
 
-2026年に120B級で動く品質が1年前のクラウドLLM並みだとすると、2027年には現在のOpus級がローカルで動く可能性。これはハードウェア進化（メモリ帯域幅・容量の向上）とモデル効率化（量子化技術、MoEアーキテクチャ）の両面から現実味がある。
+If 120B-class quality running locally in 2026 is comparable to cloud LLMs 1 year ago, then by 2027 today's Opus-class could run locally. This is realistic from both hardware evolution (improved memory bandwidth/capacity) and model efficiency (quantization techniques, MoE architecture) perspectives.
 
-### 現在試せる主要モデル
+### Key Models to Try Now
 
-| モデル | サイズ | タイプ | 備考 |
+| Model | Size | Type | Notes |
 |--------|--------|--------|------|
-| Qwen 3.6 27B | 27B | Dense | 「かなり使える」— Andrew Chen |
-| Qwen 3.6 122B | 122B | MoE? | 消費者向け上限クラス |
-| GPT OSS 120B | 120B | — | 上限クラス |
-| Gemma 4 | 各種 | — | Googleの最新オープンモデル |
-| 35B MoE | 35B | MoE | 高速モデルとして利用（LiteLLMでの振り分け対象） |
+| Qwen 3.6 27B | 27B | Dense | "Pretty usable" — Andrew Chen |
+| Qwen 3.6 122B | 122B | MoE? | Consumer upper-limit class |
+| GPT OSS 120B | 120B | — | Upper-limit class |
+| Gemma 4 | Various | — | Google's latest open model |
+| 35B MoE | 35B | MoE | Used as fast model (routing target in LiteLLM) |
 
-### 新型技術の検証場としてのローカルAI
+### Local AI as Testing Ground for New Technologies
 
-- **TurboQuant**: 新しい量子化手法 — ローカルで直接試してパフォーマンス変化を確認できる
-- **DFlash**: 新しい推論高速化技術 — 同様に自環境で検証可能
+- **TurboQuant**: New quantization method — can directly test performance changes locally
+- **DFlash**: New inference acceleration technology — similarly verifiable in own environment
 
 → [[concepts/model-quantization-for-local-llms]], [[concepts/local-llm-models-april-2026]]
 
 ---
 
-## 3. ソフトウェアスタック
+## 3. Software Stack
 
-Andrew Chenの実際のスタック：
+Andrew Chen's actual stack:
 
 ```
-ollama / LM Studio（気軽に試す）
+ollama / LM Studio (casual experimentation)
     ↓
-LiteLLM（ローカルLLMルーター — 複雑さに応じてクエリを振り分け）
+LiteLLM (local LLM router — routes queries by complexity)
     ↓
-vLLM（本格的な推論サーバー）
+vLLM (full-scale inference server)
 ```
 
-### 二段階モデル戦略
+### Two-Stage Model Strategy
 
-| 用途 | モデル | 特性 |
+| Use Case | Model | Characteristics |
 |------|--------|------|
-| 高速処理 | 35B MoE | 低レイテンシ、シンプルなタスク |
-| 高品質処理 | 122B | 複雑な分析、深い推論が必要なタスク |
+| Fast processing | 35B MoE | Low latency, simple tasks |
+| High-quality processing | 122B | Complex analysis, tasks requiring deep reasoning |
 
-LiteLLMがクエリの複雑さに応じて適切なモデルに自動ルーティング。
+LiteLLM automatically routes to the appropriate model based on query complexity.
 
-### 主要ソフトウェア
+### Major Software
 
-| ソフトウェア | 役割 | 詳細 |
+| Software | Role | Details |
 |-------------|------|------|
-| **ollama** | 手軽なモデル実行 | → [[concepts/ollama]] |
-| **LM Studio** | GUI付きモデル管理 | 初心者向け |
-| **LiteLLM** | ローカルLLMルーター | OpenAI API互換、複数モデルの振り分け |
-| **vLLM** | 高スループット推論サーバー | → [[concepts/vllm]], [[concepts/sglang]] |
-| **llama.cpp** | CPU推論/GGUF量子化 | → [[concepts/llama-cpp]] |
+| **ollama** | Easy model execution | → [[concepts/ollama]] |
+| **LM Studio** | GUI model management | Beginner-friendly |
+| **LiteLLM** | Local LLM router | OpenAI API-compatible, multi-model routing |
+| **vLLM** | High-throughput inference server | → [[concepts/vllm]], [[concepts/sglang]] |
+| **llama.cpp** | CPU inference/GGUF quantization | → [[concepts/llama-cpp]] |
 
-### AIエージェントフレームワーク
+### AI Agent Frameworks
 
-Andrew Chenはホームラボで2つのエージェントフレームワークを併用：
+Andrew Chen runs two agent frameworks in his home lab:
 
-- **OpenClaw** — Peter Steinberger開発の常駐型パーソナルAIアシスタント。→ [[entities/openclaw]], [[concepts/openclaw-architecture]]
-- **Hermes Agent** — 常駐型AIエージェント。→ [[entities/hermes-agent]], [[comparisons/hermes-vs-openclaw-architecture]]
+- **OpenClaw** — Persistent personal AI assistant developed by Peter Steinberger. → [[entities/openclaw]], [[concepts/openclaw-architecture]]
+- **Hermes Agent** — Persistent AI agent. → [[entities/hermes-agent]], [[comparisons/hermes-vs-openclaw-architecture]]
 
 ---
 
-## 4. パフォーマンス特性 — トレードオフの理解
+## 4. Performance Characteristics — Understanding the Tradeoffs
 
-ローカルAIをチューニングする過程で自然と身につく概念群：
+Concepts naturally acquired while tuning local AI:
 
-| 概念 | 内容 | ローカルでの制約 |
+| Concept | Meaning | Local Constraints |
 |------|------|-----------------|
-| **Context Window** | 一度に処理できるトークン数 | メモリ容量に直結 |
-| **KV Cache** | 過去トークンのキー・バリューキャッシュ | メモリ使用量の主要因 |
-| **Memory Usage** | モデル重み + KVキャッシュ + アクティベーション | ハードウェアの物理上限 |
-| **Memory Bandwidth** | GB/s単位のデータ転送速度 | DGX Sparkは273 GB/s（比較的低い） |
-| **Parameter Size** | モデルのパラメータ数 | 消費者向け上限 ~120B |
-| **TTFT** (Time To First Token) | 初回トークン生成までの時間 | プロンプト処理速度に依存 |
-| **Tokens/s** | 生成速度 | 30-50 tok/s（ローカル）vs 100+ tok/s（クラウド） |
+| **Context Window** | Number of tokens processable at once | Directly tied to memory capacity |
+| **KV Cache** | Key-value cache of past tokens | Major factor in memory usage |
+| **Memory Usage** | Model weights + KV cache + activations | Physical hardware limit |
+| **Memory Bandwidth** | Data transfer speed in GB/s | DGX Spark is 273 GB/s (relatively low) |
+| **Parameter Size** | Number of model parameters | Consumer upper limit ~120B |
+| **TTFT** (Time To First Token) | Time until first token generation | Depends on prompt processing speed |
+| **Tokens/s** | Generation speed | 30-50 tok/s (local) vs 100+ tok/s (cloud) |
 
 > "as you tune your setup for maxing out tokens/s to make it as usable and responsive, you get a much better sense for all the tradeoffs"
 
 ---
 
-## 5. 主要ユースケース
+## 5. Major Use Cases
 
-Andrew Chenの実践から明らかになった「ローカルAIのスイートスポット」：
+The "sweet spots" of local AI revealed through Andrew Chen's practice:
 
-### 非同期バッチ処理
-- 個人メール全量の取り込みと要約
-- ブログ記事の月次Markdown化と検索可能化
-- Googleデータの構造化
-- ブックマークした全記事の要約
-- 登録YouTubeチャンネルの要約
+### Asynchronous Batch Processing
+- Ingesting and summarizing all personal emails
+- Monthly blog post markdown conversion and searchability
+- Google data structuring
+- Summarizing all bookmarked articles
+- Summarizing subscribed YouTube channels
 
-### 特性
+### Characteristics
 > "the sweetspot has been low-ish priority, asynch, and where the problem doesn't require SOTA"
 
-- **低優先度 + 非同期** — 即時応答が不要なタスク
-- **SOTA不要** — 100点満点の出力を求めない
-- **大量データ処理** — クラウドAPIだとコストが嵩む処理
-- **プライバシー重視** — 個人データをクラウドに送りたくない
+- **Low priority + asynchronous** — Tasks not requiring immediate response
+- **SOTA not needed** — Output doesn't need to be perfect
+- **Large-scale data processing** — Processing that would be costly via cloud APIs
+- **Privacy-focused** — Don't want to send personal data to the cloud
 
-### クラウド代替としての経済性
+### Economics as Cloud Alternative
 > "You could argue that this is a lot of effort and $ for something that could probably be covered by my monthly GPT/Claude subscription. And that's true! But the learning is the point :)"
 
 ---
 
-## 6. スタートガイド
+## 6. Getting Started
 
-Andrew Chenのおすすめエントリーパス：
+Andrew Chen's recommended entry path:
 
-1. **すでにあるものから始める**
-   - Mac M5ラップトップ、またはGPU搭載ゲーミングPC
-   - 常時稼働に設定し、OpenClawジョブを向ける
+1. **Start with what you have**
+   - Mac M5 laptop, or GPU-equipped gaming PC
+   - Set to always-on, point OpenClaw jobs at it
 
-2. **専用ハードウェアに投資するなら**
-   - DGX Spark — 大規模モデルを試すのに最適（CUDAエコシステム）
-   - Strix Haloシステム — モジュラーで将来性あり
-   - GPUラックを組む道も（上級者向け）
+2. **If investing in dedicated hardware**
+   - DGX Spark — Best for trying large models (CUDA ecosystem)
+   - Strix Halo systems — Modular with future potential
+   - Building a GPU rack is also an option (advanced)
 
-3. **ソフトウェアから始める**
-   - ollama → まずは気軽にモデルをダウンロードして試す
-   - 慣れてきたらLiteLLM + vLLMスタックへ
+3. **Start with software**
+   - ollama → First casually download and try models
+   - Once comfortable, move to LiteLLM + vLLM stack
 
 ---
 
-## 7. 関連ページ
+## 7. Related Pages
 
-### コンセプト
-- [[concepts/local-llm]] — ローカルLLM総論
-- [[concepts/local-llm-inference-hardware]] — 推論ハードウェア詳細
-- [[concepts/local-llm-models-april-2026]] — モデル別ベンチマーク
-- [[concepts/mac-studio-local-ai]] — Mac Studio推論環境
-- [[concepts/dgx-spark-local-llm-server]] — DGX Spark推論サーバー構築
-- [[concepts/local-llm-server-setup-on-dgx-spark]] — DGX Sparkセットアップ手順
-- [[concepts/ollama]] — Ollamaランナー
-- [[concepts/vllm]] — vLLM推論サーバー
-- [[concepts/model-quantization-for-local-llms]] — 量子化技術
-- [[concepts/local-first-computing]] — ローカルファースト思想
+### Concepts
+- [[concepts/local-llm]] — Local LLM overview
+- [[concepts/local-llm-inference-hardware]] — Inference hardware details
+- [[concepts/local-llm-models-april-2026]] — Per-model benchmarks
+- [[concepts/mac-studio-local-ai]] — Mac Studio inference environment
+- [[concepts/dgx-spark-local-llm-server]] — DGX Spark inference server setup
+- [[concepts/local-llm-server-setup-on-dgx-spark]] — DGX Spark setup guide
+- [[concepts/ollama]] — Ollama runner
+- [[concepts/vllm]] — vLLM inference server
+- [[concepts/model-quantization-for-local-llms]] — Quantization techniques
+- [[concepts/local-first-computing]] — Local-first philosophy
 
-### エンティティ
-- [[entities/andrew-chen]] — 本スナップショットの原典
-- [[entities/nvidia-dgx-spark]] — GB10プラットフォーム詳細
+### Entities
+- [[entities/andrew-chen]] — Source of this snapshot
+- [[entities/nvidia-dgx-spark]] — GB10 platform details
 - [[entities/gemma-4]] — Gemma 4
 - [[entities/qwen3-6-plus]] — Qwen 3.6
-- [[entities/openclaw]] — OpenClawエージェント
+- [[entities/openclaw]] — OpenClaw agent
 - [[entities/hermes-agent]] — Hermes Agent
 - [[entities/nvidia]] — NVIDIA
 
-### 比較
-- [[comparisons/hermes-vs-openclaw-architecture]] — エージェントアーキテクチャ比較
+### Comparisons
+- [[comparisons/hermes-vs-openclaw-architecture]] — Agent architecture comparison
 
-### 生記事
-- [[raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state]] — Andrew Chenのフルポスト
+### Raw Articles
+- [[raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state]] — Andrew Chen's full post
 
 ## See Also
 

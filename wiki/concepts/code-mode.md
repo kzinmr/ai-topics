@@ -148,73 +148,73 @@ The [pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) libra
 - **Cloudflare** — Server-side V8 sandbox MCP (search + execute); [[concepts/model-context-protocol-mcp]]
 - **OpenAI Codex CLI** — Code-first agent approach with sandboxed Python execution
 
-## 言語選択の二分性: JavaScript vs Python
+## Language Choice Dichotomy: JavaScript vs Python
 
-CloudflareはJS/TypeScript、PydanticはPython、AnthropicはPython — この言語選択の違いはCodeModeの方向性に深い影響を与えるが、これまで系統的に分析されていない。
+Cloudflare uses JS/TypeScript, Pydantic uses Python, Anthropic uses Python — this language choice difference deeply influences CodeMode's direction, but has not been systematically analyzed until now.
 
-| 次元 | JavaScript (Cloudflare V8) | Python (Pydantic Monty) | Python (Anthropic Container) |
+| Dimension | JavaScript (Cloudflare V8) | Python (Pydantic Monty) | Python (Anthropic Container) |
 |------|---------------------------|------------------------|-----------------------------|
-| **ランタイム** | V8 isolate（軽量、起動ミリ秒） | Rust製bytecode VM（起動0.004ms） | Dockerコンテナ（起動~秒） |
-| **パッケージ管理** | npm（tscの型検査に依存） | PyPI（pip install） | プリインストール済み |
-| **非同期実行** | native async/await | asyncio（MontyはRust tokio上） | asyncio |
-| **型の扱い** | `any` による動的dispatch（型安全と速度のトレードオフ） | duck typing + pydantic BaseModel | duck typing |
-| **モデル親和性** | TSの豊富な学習データ（GitHub TSコード量） | Pythonの極めて豊富な学習データ | Python |
-| **エコシステム親和性** | MCP SDK（TypeScriptファースト） | pydantic / FastAPI / LangChain | Claude API（Python SDK充実） |
+| **Runtime** | V8 isolate (lightweight, millisecond startup) | Rust-based bytecode VM (0.004ms startup) | Docker container (~seconds startup) |
+| **Package Management** | npm (depends on tsc type checking) | PyPI (pip install) | Pre-installed |
+| **Async Execution** | native async/await | asyncio (Monty on Rust tokio) | asyncio |
+| **Type Handling** | Dynamic dispatch via `any` (type safety vs speed tradeoff) | duck typing + pydantic BaseModel | duck typing |
+| **Model Affinity** | Rich TS training data (GitHub TS code volume) | Extremely rich Python training data | Python |
+| **Ecosystem Affinity** | MCP SDK (TypeScript-first) | pydantic / FastAPI / LangChain | Claude API (strong Python SDK) |
 
-### なぜCloudflareはJSを選んだのか
+### Why Cloudflare Chose JS
 
-Cloudflare公式の論点：
+Cloudflare's official rationale:
 
 > *"We made this choice with the intuition that the models are better at TypeScript than custom tool-call formats."*
 > — Cloudflare Code Mode blog
 
-しかしこれは**検証可能な仮説**であり、確定した知見ではない。以下の論点が未解決：
+However, this is a **testable hypothesis**, not settled knowledge. The following points remain unresolved:
 
-1. **訓練データ量**: GPT-5/Claude 4系の訓練データにおけるPython vs TypeScriptの割合は非公開。両者とも豊富だが、PythonはNumPy/PyTorch/pandas等の特定ドメインコードが多く、ツール呼び出しパターンはTypeScript（async/await）の方が直感的か。
-2. **モデル世代差**: Opus 4.6→Sonnet 4.7でPythonコード生成能力が有意に向上したという報告があり、言語選択の優位性はモデルバージョンによって変動する。
-3. **型安全性**: Cloudflare自身も指摘する通り、TypeScriptの`any`型を多用するツールラッパーでは型安全が損なわれる。Pythonのpydantic BaseModelによるstrictな型定義（Pydantic AIのコア設計）の方が、CodeModeのツールインターフェースとして堅牢である可能性がある。
+1. **Training data volume**: The ratio of Python vs TypeScript in GPT-5/Claude 4-series training data is undisclosed. Both are abundant, but Python has more domain-specific code (NumPy/PyTorch/pandas), while tool-calling patterns may be more intuitive in TypeScript (async/await).
+2. **Model generation differences**: There are reports that Python code generation capability significantly improved from Opus 4.6 to Sonnet 4.7, meaning language choice advantage fluctuates with model version.
+3. **Type safety**: As Cloudflare itself notes, tool wrappers that heavily use TypeScript's `any` type lose type safety. Python's strict type definitions via pydantic BaseModel (Pydantic AI's core design) may be more robust as a CodeMode tool interface.
 
-### 示唆: ランタイム分岐の予測
+### Implications: Predicting the Runtime Fork
 
-今後、CodeModeの標準化が進むにつれて、以下の方向性が考えられる：
+As CodeMode standardization progresses, the following directions are conceivable:
 
-- **マルチランゲージランタイム**: CloudflareのMCP Server Portal構想は、1つのゲートウェイで複数の実行環境を切り替える方向を示唆している。JSのDynamic Worker + Montyの両方を提供する可能性。
-- **MCP標準化**: MCPプロトコル自体がコード実行を標準化すれば、言語選択はランタイムプロバイダの問題に分離され、クライアントは意識しなくなる。
-- **言語非依存PTC**: PTCの本質は「コードでツールをasync呼び出す」こと自体にあり、言語は二次的な選択。RLMとの統合（PTC in RLM, 案A）ではPythonが自然だが、CLIツールとしてはJSの方が起動が速い。
+- **Multi-language runtime**: Cloudflare's MCP Server Portal vision suggests switching between multiple execution environments through a single gateway. Could offer both JS Dynamic Workers and Monty.
+- **MCP standardization**: If the MCP protocol itself standardizes code execution, language choice becomes a runtime provider concern, invisible to the client.
+- **Language-agnostic PTC**: The essence of PTC is "calling tools via async code," with language being a secondary choice. For RLM integration (PTC in RLM, Plan A), Python is natural, but for CLI tools, JS starts faster.
 
-## MCP-based vs Native API: トランスポート層の設計選択
+## MCP-based vs Native API: Transport Layer Design Choices
 
-CloudflareのCodeModeは **MCPをトランスポートとして使う**（search + executeの2つのMCP toolとして実装）。一方、AnthropicのPTCは **ネイティブAPI**（`code_execution_20260120`ツールとしてモデル側に組み込み）。このトランスポート層の違いは、今後のPTCエコシステムの分岐点となる。
+Cloudflare's CodeMode uses **MCP as the transport** (implemented as two MCP tools: search + execute). In contrast, Anthropic's PTC uses a **native API** (`code_execution_20260120` tool built into the model side). This transport layer difference is a fork point for the future PTC ecosystem.
 
-| 次元 | MCP-based (Cloudflare) | Native API (Anthropic) |
+| Dimension | MCP-based (Cloudflare) | Native API (Anthropic) |
 |------|----------------------|----------------------|
-| **プロトコル** | 標準MCP — どんなクライアントでも使える | Claude API固有 — 他のモデルでは使えない |
-| **ツール定義** | MCPスキーマに従う（コード実行はsearch/execute 2ツール） | モデル固有の`tool_use`ブロック（1ツール: `code_execution_20260120`） |
-| **コード実行結果** | MCP tool_resultとしてstdoutが返る | tool_resultとしてstdoutが返る（同様） |
-| **セキュリティ** | OAuth 2.1 + scoped permissions + Binding | `allowed_callers` + container sandbox |
-| **移植性** | 高い（任意のMCPクライアントで動作） | 低い（Claude API依存） |
-| **状態管理** | MCPセッションに依存（Cloudflare DOの場合は永続的） | session tokenで管理（container lifetime依存） |
-| **拡張性** | MCP Server Portalで複数サービスの統合ゲートウェイ化可能 | API拡張に依存（Anthropicのロードマップ次第） |
+| **Protocol** | Standard MCP — usable by any client | Claude API-specific — cannot be used by other models |
+| **Tool Definition** | Follows MCP schema (code execution via 2 tools: search/execute) | Model-specific `tool_use` block (1 tool: `code_execution_20260120`) |
+| **Code Execution Result** | stdout returned as MCP tool_result | stdout returned as tool_result (same) |
+| **Security** | OAuth 2.1 + scoped permissions + Binding | `allowed_callers` + container sandbox |
+| **Portability** | High (works with any MCP client) | Low (Claude API-dependent) |
+| **State Management** | Depends on MCP session (persistent in Cloudflare DO case) | Managed via session token (container lifetime-dependent) |
+| **Extensibility** | MCP Server Portal enables multi-service unified gateway | Depends on API expansion (Anthropic roadmap-dependent) |
 
-### MCP-basedの優位性
+### Advantages of MCP-based
 
-- **プロトコル標準化**: どんなMCPクライアント（Claude Desktop, Cursor, VS Code extension）でも同じCodeMode体験を得られる
-- **OAuth 2.1統合**: スコープ付きパーミッションで細かいアクセス制御が可能
-- **Server Portal構想**: 単一ゲートウェイで複数のバックエンドMCPサーバを統合し、トークン消費はゲートウェイの固定ツール数（search + execute）に縮退される
+- **Protocol standardization**: Any MCP client (Claude Desktop, Cursor, VS Code extension) gets the same CodeMode experience
+- **OAuth 2.1 integration**: Fine-grained access control via scoped permissions
+- **Server Portal vision**: Single gateway unifies multiple backend MCP servers, with token consumption collapsed to the gateway's fixed tool count (search + execute)
 
-### Native APIの優位性
+### Advantages of Native API
 
-- **モデル最適化**: `code_execution_20260120`はモデル内部のtool_useメカニズムと統合されており、モデルが自発的にコード実行を選択できる
-- **`allowed_callers`**: ツールごとに「直接呼び出し可能」「コード実行からのみ呼び出し可能」を制御できる。MCP-basedでは`allowed_callers`相当の機構がプロトコル標準にない
-- **caller識別**: レスポンスの`caller`フィールドで、ツール呼び出しがコードから発信されたか直接か区別できる
+- **Model-optimized**: `code_execution_20260120` is integrated with the model's internal tool_use mechanism, allowing the model to spontaneously choose code execution
+- **`allowed_callers`**: Can control per-tool whether "direct call is allowed" or "only callable from code execution." MCP-based lacks an equivalent mechanism in the protocol standard
+- **Caller identification**: The response's `caller` field distinguishes whether a tool call originated from code or was direct
 
-### 将来の収束予測
+### Predicted Future Convergence
 
-両者の折衷として、以下の標準化が予想される：
+As a compromise between the two, the following standardization is expected:
 
-1. **MCPプロトコル拡張によるコード実行標準化**: MCP仕様に`code_execution`プリミティブ（`allowed_callers`相当のフィールド）を追加 → CloudflareのMCP依存強みが標準に
-2. **Native APIのMCP互換ラッパー**: AnthropicがClaude APIのコード実行機能をMCPサーバとしても公開（既に部分的に進行中）
-3. **ランタイム非依存PTC**: PTCのコア（コードでツールを呼ぶパターン）はトランスポート層から独立して標準化され、MCP経由でもNative API経由でも同じ体験を目指す
+1. **MCP protocol extension for code execution standardization**: Adding a `code_execution` primitive (with `allowed_callers`-equivalent fields) to the MCP spec → Cloudflare's MCP dependency strength becomes standard
+2. **Native API MCP-compatible wrapper**: Anthropic publishing Claude API's code execution feature as an MCP server (already partially in progress)
+3. **Runtime-independent PTC**: The core of PTC (the pattern of calling tools via code) becomes standardized independent of the transport layer, with the same experience whether via MCP or Native API
 
 ## Related Patterns
 
@@ -225,13 +225,13 @@ CloudflareのCodeModeは **MCPをトランスポートとして使う**（search
 - [[concepts/structured-outputs]] — Type safety constrains LLM output
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Alternative to MCP tool execution
 
-## Agent around REPL: 3つの実装パターン
+## Agent around REPL: 3 Implementation Patterns
 
-CodeModeをRLM（Recursive Language Model）的に使う場合、pydantic-ai上では3段階のアプローチが存在する。
+When using CodeMode in an RLM (Recursive Language Model) style, there are three levels of approach on pydantic-ai.
 
-### パターン1: CodeMode + output function（最小形、推奨）
+### Pattern 1: CodeMode + output function (minimal, recommended)
 
-既存のCodeModeを土台にし、`output_type`をoutput functionにすることでモデルに「最後は必ずsubmit(...)を呼ばせる」形にする。REPLはagentの内部実行機構、最終制御はagent側に残す。
+Build on existing CodeMode and make `output_type` an output function, forcing the model to "always call submit(...) at the end." The REPL is the agent's internal execution mechanism, with final control remaining on the agent side.
 
 ```python
 from pydantic_ai import Agent
@@ -246,17 +246,17 @@ agent = Agent(
     capabilities=[CodeMode()],
     output_type=submit,
     instructions=(
-        '探索・集計・中間計算は run_code で行い、'
-        '確信が持てたら submit(...) で終了すること。'
+        'Perform exploration, aggregation, and intermediate computation via run_code, '
+        'and call submit(...) to finish once confident.'
     ),
 )
 ```
 
-DSPyのRLMに近いUXを、Pydantic AIの流儀で最も少ない独自実装で実現できる。CodeModeはすでに全ツールを1個の`run_code`ツールへ束ね、同一agent run内でREPL状態を保持し、`restart: true`でリセットできる。
+This achieves a UX close to DSPy's RLM with minimal custom implementation in the Pydantic AI style. CodeMode already bundles all tools into a single `run_code` tool, maintains REPL state within the same agent run, and can be reset with `restart: true`.
 
-### パターン2: Action → Execute → Observe の明示的外部ループ（DSPy互換）
+### Pattern 2: Action → Execute → Observe explicit external loop (DSPy-compatible)
 
-DSPyのRLMをより忠実に移植したい場合、agentの`output_type`を`RunCode | FinalAnswer`のような構造化出力にし、各ターンでモデルに「次のaction」を1つだけ出させる。ホスト側がRunCodeを受け取ったらMonty REPLで実行し、観測結果を次ターンへ戻す。
+When you want to port DSPy's RLM more faithfully, make the agent's `output_type` a structured output like `RunCode | FinalAnswer`, having the model output exactly one "next action" per turn. When the host side receives RunCode, it executes it in the Monty REPL and returns the observation result to the next turn.
 
 ```python
 class RunCode(BaseModel):
@@ -268,67 +268,67 @@ class FinalAnswer(BaseModel):
 output_type = RunCode | FinalAnswer
 ```
 
-Pydantic AIは複数run間で`message_history`をそのまま受け渡し可能。内部的にagentは`pydantic-graph`ベースで動いており、`agent.iter()`によるnode-level制御もあるため、"Action → Execute → Observe → Next Action"の明示ループは素直に組める。
+Pydantic AI can pass `message_history` as-is between multiple runs. Internally, the agent runs on a `pydantic-graph` basis, and since node-level control via `agent.iter()` is available, the "Action → Execute → Observe → Next Action" explicit loop can be built straightforwardly.
 
-### パターン3: graph-native版（本番向け）
+### Pattern 3: graph-native version (production-ready)
 
-Plan / RunCode / Observe / Finalizeを明示ノードに分け、Monty側はsnapshotを保存できるので中断・再開やprocess境界越しの復元が容易。Pydantic AIはdurable executionを公式に持ち、Temporal / DBOS / Prefect / Restateをサポートしているため、「RLMの状態遷移はpydantic-graph、コード実行状態はMonty snapshot」という二層化は相性が良い。
+Split Plan / RunCode / Observe / Finalize into explicit nodes. The Monty side can save snapshots, making suspension/resumption and restoration across process boundaries easy. Pydantic AI officially supports durable execution with Temporal / DBOS / Prefect / Restate, so the two-layer approach of "RLM state transitions via pydantic-graph, code execution state via Monty snapshot" has good synergy.
 
 ## Agent around REPL vs Agent on REPL
 
-Montyは**REPL sandboxソリューション**として設計されている。RLMをpydantic-aiネイティブに実現する場合、「Agent on REPL」（モデルをREPLの中に閉じ込める）より**「Agent around REPL」**（REPLをagentの内部executorとして使う）として設計するのが健全。
+Monty is designed as a **REPL sandbox solution**. When implementing RLM natively on pydantic-ai, it is healthier to design it as **"Agent around REPL"** (REPL as the agent's internal executor) rather than "Agent on REPL" (trapping the model inside the REPL).
 
-MontyのREADMEはexperimentalと明記されており、合理的なsubsetのみ、ホスト環境アクセスはexternal function経由、サードパーティライブラリは対象外。つまり**会話制御・出力検証・承認・履歴管理・durabilityはPydantic AI外側、REPLは内側のexecutorに留める**のが正しい分離。
+Monty's README explicitly marks it as experimental, with only a reasonable subset supported, host environment access via external functions, and third-party libraries out of scope. In other words, **conversation control, output verification, approval, history management, and durability belong on the Pydantic AI outside, with REPL confined to the internal executor** — this is the correct separation.
 
-## Deferred Tool Calls の現状
+## Current State of Deferred Tool Calls
 
-| CodeModeのドキュメントには「approval/deferredなツールはsandboxから除外」と記載があるが、v0.2.0リリースノートでは`HandleDeferredToolCalls`でinline解決できるようになっている。実装は「handlerがいれば解決、いなければエラー」という分岐。現状は「完全禁止」ではなく**「handler必須で対応中」**と読むのが正確。ドキュメントが実装に追いついていない可能性がある。
+| CodeMode documentation states "approval/deferred tools are excluded from the sandbox," but in the v0.2.0 release notes, `HandleDeferredToolCalls` can now resolve them inline. The implementation branches as "resolve if handler exists, error if not." The current state is more accurately read as **"handler-required, work in progress"** rather than "completely prohibited." The documentation may be lagging behind the implementation.
 
-## CodeMode × RLM: 並行する文脈爆縮の2つのアプローチ
+## CodeMode × RLM: Two Parallel Approaches to Context Collapse
 
-CodeModeと[[concepts/rlm-recursive-language-models|RLM]]は、独立に発展しながらも驚くほど類似した問題意識と解決策を持つ。
+CodeMode and [[concepts/rlm-recursive-language-models|RLM]] evolved independently yet have surprisingly similar problem awareness and solutions.
 
-### コア問題の同一性
+### Identity of the Core Problem
 
-両者の根底には同じ問題がある：
+Both share the same fundamental problem:
 
-> **「LLMの限られたコンテキストウィンドウで、膨大な検索空間をどう扱うか」**
+> **"How to handle enormous search spaces within an LLM's limited context window"**
 
-| 側面 | CodeMode (Cloudflare) | RLM (DSPy) |
+| Aspect | CodeMode (Cloudflare) | RLM (DSPy) |
 |------|----------------------|------------|
-| **検索空間** | 2,500+ APIエンドポイント | 100万トークン以上のドキュメント |
-| **解決策** | コードでOpenAPIスペックを検索・実行 | コードでコンテキストを探索・分解 |
-| **ツール表面積** | search() + execute() (2 tools) | llm_query() + SUBMIT() (暗黙のREPL) |
-| **サンドボックス** | V8 isolate (JS) | Deno + Pyodide (Python) |
-| **契約** | モデルがJSコードを書く | モデルがPythonコードを書く |
-| **文脈爆縮率** | 99.9% (1.17M→1K tokens) | ほぼ無限 (10M+ tokensでも可能) |
+| **Search Space** | 2,500+ API endpoints | 1M+ token documents |
+| **Solution** | Search and execute against OpenAPI spec via code | Explore and decompose context via code |
+| **Tool Surface Area** | search() + execute() (2 tools) | llm_query() + SUBMIT() (implicit REPL) |
+| **Sandbox** | V8 isolate (JS) | Deno + Pyodide (Python) |
+| **Contract** | Model writes JS code | Model writes Python code |
+| **Context Collapse Rate** | 99.9% (1.17M→1K tokens) | Virtually unlimited (10M+ tokens possible) |
 
-### アーキテクチャの共通パターン
+### Common Architectural Pattern
 
-両者に共通する3層構造：
+A 3-layer structure common to both:
 
-1. **Discovery層**: 検索空間をコードでフィルタ（OpenAPI spec探索 / ドキュメント探索）
-2. **Execution層**: 見つけた対象に対して操作を実行（API呼び出し / llm_query）
-3. **Synthesis層**: 結果を集約して最終出力（JSON response / SUBMIT）
+1. **Discovery layer**: Filter the search space via code (OpenAPI spec exploration / document exploration)
+2. **Execution layer**: Execute operations against found targets (API calls / llm_query)
+3. **Synthesis layer**: Aggregate results into final output (JSON response / SUBMIT)
 
-このパターンは[[concepts/agentic-search]]のLevel 3（Externalized Processing）にも接続する — Cao et al.が示した「coding agents as effective long-context processors」と同一の知見が、APIアクセスと文書処理という異なるドメインで独立に現れている。
+This pattern also connects to [[concepts/agentic-search]] Level 3 (Externalized Processing) — the same insight that Cao et al. demonstrated as "coding agents as effective long-context processors" appears independently in the different domains of API access and document processing.
 
-### トレードオフ
+### Tradeoffs
 
-| 次元 | CodeMode優位 | RLM優位 |
-|------|-------------|---------|
-| **レイテンシ** | 固定2ラウンドトリップ | REPLループ数に比例 |
-| **セキュリティ** | V8 isolate + サーバーサイド | Deno WASMサンドボックス |
-| **表現力** | コードの自由度（何でも書ける） | llm_queryによる意味的探索 |
-| **カスタマイズ性** | サーバー提供のOpenAPIスキーマに依存 | 任意のデータ構造に対応可 |
-| **学習可能性** | プロンプトエンジニアリング | DSPy最適化 + RL訓練可能 |
+| Dimension | CodeMode Advantage | RLM Advantage |
+|------|----------------------|------------|
+| **Latency** | Fixed 2 round trips | Proportional to REPL loop count |
+| **Security** | V8 isolate + server-side | Deno WASM sandbox |
+| **Expressiveness** | Code freedom (write anything) | Semantic exploration via llm_query |
+| **Customizability** | Depends on server-provided OpenAPI schema | Can handle arbitrary data structures |
+| **Learnability** | Prompt engineering | DSPy optimization + RL trainable |
 
-### 収束の予測
+### Predicted Convergence
 
-MCP Server Portals（Cloudflare）の構想は、APIアクセスにおける「固定ツール表面積 + サーバーサイドコード実行」を汎用化するもの。これをRLMの「コンテキスト探索 + 再帰的サブクエリ」と組み合わせると、API呼び出しと文書処理を統合した汎用CodeModeエージェントが可能になる：
+The MCP Server Portals (Cloudflare) vision generalizes "fixed tool surface area + server-side code execution" for API access. Combining this with RLM's "context exploration + recursive subqueries" enables a general-purpose CodeMode agent that integrates API calls and document processing:
 
 ```
 Agent → search(OpenAPI + docs) → execute(API calls + llm_query) → submit(result)
 ```
 
-pydantic-ai-harnessはすでに[[concepts/monty-sandbox|Monty]]でPython REPLを提供しており、CodeModeの`run_code`内で`llm_query`的なサブコールを実装すれば、CodeModeとRLMの統合は可能な状態にある。
+pydantic-ai-harness already provides a Python REPL via [[concepts/monty-sandbox|Monty]], and implementing llm_query-like subcalls within CodeMode's `run_code` makes CodeMode+RLM integration feasible.

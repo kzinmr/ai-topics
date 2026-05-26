@@ -1,5 +1,5 @@
 ---
-title: "情報理論とAIエージェントコミュニケーション"
+title: "Information Theory and AI Agent Communication"
 tags:
   - methodology
   - agent-communication
@@ -19,162 +19,162 @@ related:
   - concepts/functional-core-imperative-shell
 ---
 
-# 情報理論とAIエージェントコミュニケーション
+# Information Theory and AI Agent Communication
 
-## 概要
+## Overview
 
-Shannon (1948) の「通信の数学的理論」は、情報を確率的な不確実性として定義し、情報源・送信機・チャネル・受信機・宛先という5要素モデルを提示した。このフレームワークは本来、通信工学（電信・無線）のために設計されたものであり、その核心的な前提——**単一の決定論的受信機**——は、今日のAIエージェントシステムでは根本的に再考を迫られている。
+Shannon (1948)'s "A Mathematical Theory of Communication" defined information as probabilistic uncertainty and proposed a five-element model: information source, transmitter, channel, receiver, and destination. This framework was originally designed for communication engineering (telegraphy, radio), and its core premise — a **single deterministic receiver** — is fundamentally being reconsidered for today's AI agent systems.
 
-Predictive $\mathcal{V}$-Information (Xu et al., ICLR 2020) は、Shannon理論に「観測者の計算能力」という現実的な制約を導入し、情報が**受信者のモデルクラスごとに異なる価値を持つ**ことを示した。これはエージェント間通信に直接的な示唆を与える。
+Predictive $\mathcal{V}$-Information (Xu et al., ICLR 2020) introduced the realistic constraint of "observer computational capability" to Shannon theory, showing that information **has different value depending on the receiver's model class.** This has direct implications for inter-agent communication.
 
 ---
 
-## 1. Shannonモデルの暗黙の前提と限界
+## 1. Implicit Assumptions and Limits of Shannon's Model
 
-### Shannonの通信システム
+### Shannon's Communication System
 ```
-情報源 → 送信機（エンコーダ）→ [チャネル（ノイズ）] → 受信機（デコーダ）→ 宛先
+Information Source → Transmitter (Encoder) → [Channel (Noise)] → Receiver (Decoder) → Destination
 ```
 
-このモデルは以下の前提に立つ：
-1. **情報源と宛先は対称的** — エンコードとデコードは可逆操作
-2. **受信機は理想的な復号能力を持つ** — チャネル容量に達する符号化が存在する
-3. **「意味」は問題外** — エンジニアリング問題としての通信に限定
-4. **単一の送信者・単一の受信者** — ブロードキャスト以外の多者間通信は射程外
+This model rests on the following assumptions:
+1. **Source and destination are symmetric** — encoding and decoding are reversible operations
+2. **The receiver has ideal decoding capability** — there exists coding that achieves channel capacity
+3. **"Meaning" is out of scope** — communication is limited to an engineering problem
+4. **Single sender, single receiver** — multi-party communication beyond broadcasting is out of scope
 
-### 現代AIエージェント環境との乖離
+### Divergence from Modern AI Agent Environments
 
-| Shannonの前提 | AIエージェントの現実 |
+| Shannon's Assumption | AI Agent Reality |
 |---|---|
-| 単一の宛先 | 複数エージェント間の双方向・多方向通信 |
-| 情報源は受信者の能力を考慮しない | エージェントは相手の「モデルクラス」に合わせてメッセージを調整する |
-| ノイズはチャネルの物理的特性 | ノイズ = エージェントの解釈誤差、文脈喪失、ハルシネーション |
-| 意味は無関係 | エージェント通信では**意味の整合性（semantic alignment）**が本質 |
-| エンコード/デコードは既知の関数 | エンコード/デコード自体が学習可能（LLMの自然言語プロトコル） |
+| Single destination | Bidirectional, multi-directional communication between multiple agents |
+| Source doesn't consider receiver capability | Agents adjust messages to match the counterparty's "model class" |
+| Noise is a physical property of the channel | Noise = agent interpretation error, context loss, hallucination |
+| Meaning is irrelevant | **Semantic alignment** is essential in agent communication |
+| Encode/decode are known functions | Encode/decode themselves are learnable (LLM natural language protocols) |
 
 ---
 
-## 2. Predictive V-Information: Shannonを「計算の現実」で拡張する
+## 2. Predictive V-Information: Extending Shannon with "Computational Reality"
 
-Xu et al. (2020) はShannonの相互情報量 $I(X;Y)$ を拡張し、**予測的 $\mathcal{V}$-情報** を提案した。
+Xu et al. (2020) extended Shannon's mutual information $I(X;Y)$ and proposed **predictive $\mathcal{V}$-information**.
 
-### 定義
+### Definition
 Predictive $\mathcal{V}$-entropy:
 $$H_{\mathcal{V}}(Y) = \inf_{f \in \mathcal{V}} \mathbb{E}[-\log f(Y)]$$
 
 Predictive $\mathcal{V}$-information:
 $$I_{\mathcal{V}}(X \to Y) = H_{\mathcal{V}}(Y) - H_{\mathcal{V}}(Y|X)$$
 
-ここで $\mathcal{V}$ は特定のモデルクラス（線形モデル、特定の深さのニューラルネットなど）。
+Here $\mathcal{V}$ is a specific model class (linear models, neural networks of a specific depth, etc.).
 
-### Shannonとの違い
+### Differences from Shannon
 
-| 性質 | Shannon情報 | $\mathcal{V}$-情報 |
+| Property | Shannon Information | $\mathcal{V}$-Information |
 |---|---|---|
-| 情報処理不等式 | $I(X;Y) \geq I(f(X);Y)$（処理で情報は減る一方） | $I_{\mathcal{V}}(X;Y) \leq I_{\mathcal{V}}(f(X);Y)$（計算で**情報が増える**） |
-| 観測者依存性 | なし（普遍的） | あり（モデルクラス $\mathcal{V}$ に依存） |
-| 高次元推定 | 困難（カーネル密度推定など） | PAC保証付きで推定可能 |
-| DPI | 常に成立 | 計算によって破れる |
+| Data Processing Inequality | $I(X;Y) \geq I(f(X);Y)$ (processing only reduces information) | $I_{\mathcal{V}}(X;Y) \leq I_{\mathcal{V}}(f(X);Y)$ (computation **increases information**) |
+| Observer Dependency | None (universal) | Present (depends on model class $\mathcal{V}$) |
+| High-Dimensional Estimation | Difficult (kernel density estimation, etc.) | Estimable with PAC guarantees |
+| DPI | Always holds | Broken by computation |
 
-### 重要な洞察：計算は情報を「創り出す」
+### Key Insight: Computation "Creates" Information
 
-Shannon理論では、データ処理（例：$X \to f(X)$）は決して情報を増やせない。しかし深層学習では、生データが単純なモデルには「見えない」情報を含み、計算（多層変換）によってその情報が**利用可能になる**。
+In Shannon theory, data processing (e.g., $X \to f(X)$) can never increase information. However, in deep learning, raw data contains information "invisible" to simple models, and computation (multi-layer transformations) makes that information **usable**.
 
-これはまさに、Transformerのattention機構が行っていることの情報理論的説明である：
-- 生のトークン系列には相互情報量が少ない
-- 自己注意機構がトークン間の関連性を「計算によって創出」する
-- 層を深くするごとに $\mathcal{V}$-情報が増加する（Shannon情報は不変か減少）
+This is precisely the information-theoretic explanation of what the Transformer's attention mechanism does:
+- Raw token sequences have low mutual information
+- The self-attention mechanism "creates through computation" relationships between tokens
+- With each deeper layer, $\mathcal{V}$-information increases (Shannon information is unchanged or decreases)
 
 ---
 
-## 3. AIエージェント間コミュニケーションへの示唆
+## 3. Implications for AI Agent-to-Agent Communication
 
-### 3.1 エージェント間プロトコルは「共通のモデルクラス」を前提とする
+### 3.1 Inter-Agent Protocols Presuppose a "Common Model Class"
 
-Shannonモデルでは、送信者と受信者が同一の符号帳を持っていれば通信は成立する。しかしエージェントシステムでは：
-
-```
-エージェントA（Llama 3-70B）
-    ↓ 自然言語メッセージ
-エージェントB（GPT-4o）
-```
-
-AとBは**異なるモデルクラス $\mathcal{V}_A$ と $\mathcal{V}_B$** を持つ。$\mathcal{V}_A$ にとって「情報量が多い」メッセージでも、$\mathcal{V}_B$ にとってはノイズである可能性がある。
-
-**実践的含意**:
-- MCPやFunction Callingなどの構造化プロトコルは、エージェント間の $\mathcal{V}$ を揃える役割を果たす
-- 自然言語をプロトコルに使う場合、「エージェントが理解できる表現」に変換する必要がある
-- 異なる基盤モデルを持つエージェント間では、共通の $\mathcal{V}$ を確立するための**プロトコル学習**が必要
-
-### 3.2 エージェント・ハーネス効果の情報理論的解釈
-
-Harness Effect（同一モデルでもハーネスによって5-40ppの性能差）は、$\mathcal{V}$-情報の枠組みで説明できる：
+In Shannon's model, communication works if sender and receiver share the same codebook. But in agent systems:
 
 ```
-モデル（基盤LLM）→ ハーネス（エンコーダ）→ チャネル（API/CLI）→ デコーダ（モデル）
+Agent A (Llama 3-70B)
+    ↓ natural language message
+Agent B (GPT-4o)
 ```
 
-ハーネスは、モデル $\mathcal{V}$ にとって情報が**利用可能**になるように入力を再構成する。Claude Codeのsystem prompt設計、OpenCodeの関数呼び出しラッパー、Cursorのコンテキスト管理はすべて、同じ基盤モデルに対する $\mathcal{V}$-情報を最大化する試みと解釈できる。
+A and B have **different model classes $\mathcal{V}_A$ and $\mathcal{V}_B$**. A message that has "high information content" for $\mathcal{V}_A$ may be noise for $\mathcal{V}_B$.
 
-### 3.3 複数エージェント連携：情報創出としての計算
+**Practical implications**:
+- Structured protocols like MCP and Function Calling serve to align $\mathcal{V}$ between agents
+- When using natural language as a protocol, it must be transformed into "representations the agent can understand"
+- Between agents with different base models, **protocol learning** to establish a common $\mathcal{V}$ is necessary
 
-V-Informationの核心的洞察——**計算によって情報が創出される**——は、マルチエージェントシステムに直接適用できる：
+### 3.2 Information-Theoretic Interpretation of the Agent Harness Effect
 
-1. **エージェントA→エージェントBの情報伝達**: Aの出力がBにとっての「計算による情報創出」の前提条件となる
-2. **チェーン思考（CoT）**: 中間推論ステップはShannon的には情報量ゼロだが、$\mathcal{V}$-情報としては後続層にとって不可欠
-3. **マルチエージェントデバッグ**: 異なるエージェントが同じ観測から異なる $\mathcal{V}$-情報を抽出する
+The Harness Effect (5-40pp performance difference for the same model depending on harness) can be explained within the $\mathcal{V}$-information framework:
 
-### 3.4 Shannon容量とエージェント間通信の新しい制約
+```
+Model (base LLM) → Harness (Encoder) → Channel (API/CLI) → Decoder (Model)
+```
 
-Shannonのチャネル容量公式：
+The harness reconstructs inputs so that information becomes **usable** for the model's $\mathcal{V}$. Claude Code's system prompt design, OpenCode's function call wrappers, and Cursor's context management can all be interpreted as attempts to maximize $\mathcal{V}$-information for the same base model.
+
+### 3.3 Multi-Agent Collaboration: Computation as Information Creation
+
+The core insight of V-Information — **computation creates information** — applies directly to multi-agent systems:
+
+1. **Information transfer from Agent A→Agent B**: A's output becomes the prerequisite for B's "information creation through computation"
+2. **Chain of Thought (CoT)**: Intermediate reasoning steps have zero information in the Shannon sense, but are essential for subsequent layers from a $\mathcal{V}$-information perspective
+3. **Multi-agent debugging**: Different agents extract different $\mathcal{V}$-information from the same observation
+
+### 3.4 Shannon Capacity and New Constraints on Inter-Agent Communication
+
+Shannon's channel capacity formula:
 $$C = W \log_2 \frac{P + N}{N}$$
 
-エージェントシステムにおける類似概念：
-- **$W$（帯域幅）** = コンテキストウィンドウサイズ（トークン数）
-- **$P$（信号電力）** = 関連情報の密度（トークンあたりの有用情報量）
-- **$N$（ノイズ電力）** = ハルシネーション、無関係な文脈、プロンプトインジェクション
-- **$C$（容量）** = エージェントが一度のやり取りで処理できる実効的情報量
+Analogous concepts in agent systems:
+- **$W$ (bandwidth)** = Context window size (token count)
+- **$P$ (signal power)** = Relevant information density (useful information per token)
+- **$N$ (noise power)** = Hallucination, irrelevant context, prompt injection
+- **$C$ (capacity)** = Effective information an agent can process in a single exchange
 
 ```python
-# エージェント通信の実効容量
+# Effective capacity of agent communication
 C_effective = context_window * log2(
     (relevant_signal + hallucination_noise) / hallucination_noise
 )
 ```
 
-**観察**: LLMのコンテキストウィンドウが拡大（128K→1M→10Mトークン）するにつれ、**信号対ノイズ比（SNR）** の劣化が新しいボトルネックになっている。これは「Shannon容量問題の再発明」である。
+**Observation**: As LLM context windows expand (128K→1M→10M tokens), **signal-to-noise ratio (SNR)** degradation is becoming the new bottleneck. This is a "reinvention of the Shannon capacity problem."
 
-### 3.5 レート歪み理論とエージェント間情報圧縮
+### 3.5 Rate-Distortion Theory and Inter-Agent Information Compression
 
-Shannonのレート歪み理論は、許容誤差 $D$ のもとで最小伝送レート $R(D)$ を定義する。エージェントコンテキストでは：
+Shannon's rate-distortion theory defines the minimum transmission rate $R(D)$ given an acceptable error $D$. In agent context:
 
-- **レート $R$** = エージェント間で交換するトークン数
-- **歪み $D$** = タスク完了品質の低下
+- **Rate $R$** = Number of tokens exchanged between agents
+- **Distortion $D$** = Degradation in task completion quality
 
-エージェント間プロトコル（MCP、Function Calling、JSONモード）は、自然言語通信と比較して**同じ歪みでより低いレート**、または**同じレートでより低い歪み**を実現する。これは構造化プロトコルが $\mathcal{V}$ を揃えるからである。
+Inter-agent protocols (MCP, Function Calling, JSON mode) achieve **lower rate for the same distortion** or **lower distortion for the same rate** compared to natural language communication. This is because structured protocols align $\mathcal{V}$.
 
 ---
 
-## 4. 統合的フレームワーク：エージェント通信の3層モデル
+## 4. Unified Framework: A 3-Layer Model of Agent Communication
 
-Shannon (1948) と $\mathcal{V}$-Information (2020) を統合すると、エージェント通信の階層的モデルが得られる：
+Integrating Shannon (1948) and $\mathcal{V}$-Information (2020) yields a hierarchical model of agent communication:
 
-| 層 | Shannon相当 | エージェント具体化 | 制約 |
+| Layer | Shannon Equivalent | Agent Instantiation | Constraints |
 |---|---|---|---|
-| **物理層** | チャネル容量 $C$ | コンテキストウィンドウ、APIレート制限、レイテンシ | $W$（帯域幅）、$N$（ノイズ） |
-| **符号層** | ソース/チャネル符号化 | System prompt, 関数定義, MCPツールスキーマ | 共通 $\mathcal{V}$ の一致度 |
-| **意味層** | Shannonが「問題外」とした領域 | 目標整合性、タスク分解、エージェント間調整プロトコル | $\mathcal{V}_A \neq \mathcal{V}_B$ による情報損失 |
+| **Physical Layer** | Channel capacity $C$ | Context window, API rate limits, latency | $W$ (bandwidth), $N$ (noise) |
+| **Code Layer** | Source/channel coding | System prompt, function definitions, MCP tool schema | Common $\mathcal{V}$ alignment |
+| **Semantic Layer** | Domain Shannon considered "out of scope" | Goal alignment, task decomposition, inter-agent coordination protocols | Information loss due to $\mathcal{V}_A \neq \mathcal{V}_B$ |
 
-**現代のエージェント通信問題は、Shannonが射程外とした第3層（意味層）を中心に展開している。** $\mathcal{V}$-Informationは第2層と第3層の橋渡しをする——受信者のモデルクラスに応じて「何が情報か」が変わることを形式化するからである。
+**Modern agent communication problems center on Layer 3 (Semantic Layer), which Shannon considered out of scope.** $\mathcal{V}$-Information bridges Layer 2 and Layer 3 — because it formalizes how "what counts as information" changes based on the receiver's model class.
 
 ---
 
-## 5. 結論と今後の研究方向
+## 5. Conclusions and Future Research Directions
 
-1. **Shannonの枠組みは必要だが不十分** — 物理的伝送限界の理解には不可欠だが、エージェント間の意味的整合性を扱えない
-2. **V-Informationは実用的な拡張** — 観測者依存性を導入することで、異なるモデル能力を持つエージェント間の通信を形式化できる
-3. **プロトコル設計の指針**: エージェント間プロトコルは、参加エージェントの $\mathcal{V}$ を揃え、共通の符号化空間を提供することで $\mathcal{V}$-情報を最大化すべき
-4. **Harness Engineeringの理論的基盤**: ハーネス効果は、$\mathcal{V}$-情報の枠組みで「モデルの利用可能情報を最大化するエンコーダ設計」として理解できる
+1. **Shannon's framework is necessary but insufficient** — essential for understanding physical transmission limits, but cannot handle semantic alignment between agents
+2. **V-Information is a practical extension** — by introducing observer dependence, it can formalize communication between agents with different model capabilities
+3. **Protocol design guideline**: Inter-agent protocols should maximize $\mathcal{V}$-information by aligning participants' $\mathcal{V}$ and providing a common encoding space
+4. **Theoretical foundation for Harness Engineering**: The Harness Effect can be understood in the $\mathcal{V}$-information framework as "encoder design that maximizes a model's usable information"
 
 See also: [[raw/papers/1948-07_shannon-mathematical-theory-communication.md]], [[raw/papers/2020-02-25_2002.10689_predictive-v-information.md]]
 

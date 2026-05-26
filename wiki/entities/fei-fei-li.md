@@ -8,129 +8,129 @@ type: entity
 
 # Fei-Fei Li
 
-## 🔑 基本プロフィール
+## 🔑 Basic Profile
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| **フルネーム** | Fei-Fei Li（李飞飞） |
-| **生年月日** | 1976年 |
-| **出生地** | 北京、中国 |
-| **国籍** | 中国系アメリカ人 |
-| **学歴** | プリンストン大学（物理学学士、1999年、優等学位）、Caltech（電気工学修士2001年、博士2005年） |
-| **現在の役職** | Stanford University Sequoia Professor、Stanford HAI共同創設者・共同ディレクター、World Labs CEO・共同創設者 |
-| **主な業績** | ImageNetの作成（2009年）、コンピュータビジョンのパラダイムシフト、ヒューマンセンタードAIの提唱 |
-| **業界経験** | Google Cloud VP／Chief Scientist（2017-2018年）、Twitter/X 独立取締役（2020年-現在） |
+| **Full Name** | Fei-Fei Li (李飞飞) |
+| **Date of Birth** | 1976 |
+| **Place of Birth** | Beijing, China |
+| **Nationality** | Chinese-American |
+| **Education** | Princeton University (B.A. Physics, 1999, with honors), Caltech (M.S. Electrical Engineering 2001, Ph.D. 2005) |
+| **Current Roles** | Stanford University Sequoia Professor, Stanford HAI Co-Founder & Co-Director, World Labs CEO & Co-Founder |
+| **Major Achievements** | Creation of ImageNet (2009), paradigm shift in computer vision, advocacy for human-centered AI |
+| **Industry Experience** | Google Cloud VP/Chief Scientist (2017-2018), Twitter/X Independent Director (2020-present) |
 
-## 📊 主要メトリクス
+## 📊 Key Metrics
 
-| カテゴリ | 詳細 |
+| Category | Details |
 |----------|------|
-| **ImageNet** | 2009年ローンチ。約1,400万の手動注釈画像、21,841のWordNetシノセット。深層学習へのシフトを触媒。 |
-| **AlexNetブレイクスルー** | 2012年ILSVRC：Top-5エラー率が**15.3%**に低下（以前の約25%から半減）。データスケールがアルゴリズムの微調整より重要であることを証明。 |
-| **学術成果** | 400+の査読付き論文。**h-index >100**。**320,000+ 引用**。 |
-| **資金/インパクト** | Stanford HAIは2025年までに**4,500万ドル以上**の助成金・フェローシップを配布。400+の教員を支援。 |
+| **ImageNet** | Launched 2009. ~14 million hand-annotated images, 21,841 WordNet synsets. Catalyzed the shift to deep learning. |
+| **AlexNet Breakthrough** | 2012 ILSVRC: Top-5 error rate dropped to **15.3%** (halved from ~25%). Proved data scale matters more than algorithmic tweaks. |
+| **Academic Output** | 400+ peer-reviewed papers. **h-index >100**. **320,000+ citations**. |
+| **Funding/Impact** | Stanford HAI distributed **$45M+** in grants/fellowships by 2025. Supported 400+ faculty. |
 
-## 🧠 研究貢献とイノベーション
+## 🧠 Research Contributions and Innovations
 
-### コンピュータビジョンとデータ駆動型AI
+### Computer Vision and Data-Driven AI
 
-- **パラダイムシフト**: *データの豊富さ*が、孤立したアルゴリズムの独創性ではなく、人間的な視覚知能の主要なボトルネックであることを実証。
-- **Caltech-101（2003年）**: 初期のベンチマークデータセット（101カテゴリ、クラスあたり40〜800画像）。現実のクラッタ/バリエーション下での認識をテスト。
-- **確率的モデリング**: 博士論文では階層ベイズモデルを用いてシーン/物体分類に取り組み、クラスあたりわずか5つのトレーニング例で約52%の精度を達成。
+- **Paradigm Shift**: Demonstrated that *data abundance*, not isolated algorithmic ingenuity, is the primary bottleneck for human-like visual intelligence.
+- **Caltech-101 (2003)**: Early benchmark dataset (101 categories, 40–800 images per class). Tested recognition under real-world clutter/variation.
+- **Probabilistic Modeling**: Ph.D. dissertation used hierarchical Bayesian models for scene/object classification, achieving ~52% accuracy with as few as 5 training examples per class.
 
-### 空間知能とロボティクス（2020年代-現在）
+### Spatial Intelligence and Robotics (2020s–Present)
 
-- **ReKepフレームワーク**: RGB-Dカメラ（例：Orbbec Femto Bolt 4K/30fps）を用いて3Dシーンから関係キーポイントを抽出。大規模な再トレーニングなしでロボティクス操作をガイド。
-- **大規模ワールドモデル（LWMs）**: マルチモーダル入力を処理して3D環境を生成/インタラクト。静的知覚と具現化AIの橋渡し。
-- **ヘルスケアAI**: 受動的ビジョンセンサーを用いたアンビエントインテリジェンスシステム。患者の歩行/アクティビティをモニタリング（例：パーキンソン病運動スコア推定）。
+- **ReKep Framework**: Extracts relational keypoints from 3D scenes using RGB-D cameras (e.g., Orbbec Femto Bolt 4K/30fps). Guides robotic manipulation without large-scale retraining.
+- **Large World Models (LWMs)**: Process multimodal inputs to generate/interact with 3D environments. Bridge static perception and embodied AI.
+- **Healthcare AI**: Ambient intelligence systems using passive vision sensors. Monitor patient gait/activity (e.g., Parkinson's disease motor score estimation).
 
-## 🏢 業界および学術キャリア
+## 🏢 Industry and Academic Career
 
-### Stanford University（2009年-現在）
+### Stanford University (2009–Present)
 
-- **2009年**: Stanford University Computer Science Departmentにアシスタントプロフェッサーとして着任。
-- **2012年**: 准教授に昇進（テニュア取得）。
-- **2017年**: 正教授に昇進。
-- **CS 231n**: 「Deep Learning for Computer Vision」を教授。プロジェクトベース、業界アライメントのカリキュラム。
-- **メンタリング**: 博士課程学生を指導。多くの卒業生がプリンストン、UCSD、主要テック企業で活躍。
+- **2009**: Joined Stanford University Computer Science Department as Assistant Professor.
+- **2012**: Promoted to Associate Professor (tenured).
+- **2017**: Promoted to Full Professor.
+- **CS 231n**: Teaches "Deep Learning for Computer Vision." Project-based, industry-aligned curriculum.
+- **Mentoring**: Advises Ph.D. students. Many alumni now at Princeton, UCSD, and major tech companies.
 
-### Google Cloud AI/ML（2017年1月-2018年9月）
+### Google Cloud AI/ML (January 2017–September 2018)
 
-- **Chief Scientist & VP**としてGoogle Cloudにサバティカルで参加。
-- **Cloud AutoML Vision**と**Video Intelligence API**をローンチ。
-- 転移学習を用いてエンタープライズAIを民主化。ただしデータキュレーションの必要性に制約。
-- **Project Maven**：DoDドローンAIに関する社内抗議（3,100+の従業員請願）を受け、Googleが契約を辞退。Liは内部的に「PRの悪夢」と警告。
-- **2018年9月**: Stanfordに復帰。Googleとのアドバイザー関係を継続。
+- Joined Google Cloud on sabbatical as **Chief Scientist & VP**.
+- Launched **Cloud AutoML Vision** and **Video Intelligence API**.
+- Democratized enterprise AI via transfer learning, though constrained by data curation needs.
+- **Project Maven**: Internal protests (3,100+ employee petition) over DoD drone AI. Google declined the contract. Li internally warned it would be a "PR nightmare."
+- **September 2018**: Returned to Stanford. Continued advisory relationship with Google.
 
-### World Labs（2024年-現在）
+### World Labs (2024–Present)
 
-- **2024年4月**: World Labsを共同創業。CEOに就任。
-- **資金調達**: $230M+、評価額>$1B。
-- **ミッション**: 空間推論をロボティクスと生成的3D AIに実用化。物理ベースの制約と実世界デプロイメントに焦点。
+- **April 2024**: Co-founded World Labs. Serves as CEO.
+- **Funding**: $230M+, valuation >$1B.
+- **Mission**: Operationalize spatial reasoning for robotics and generative 3D AI. Focus on physics-based constraints and real-world deployment.
 
-### Twitter/X Corp（2020年5月-現在）
+### Twitter/X Corp (May 2020–Present)
 
-- **Independent Director**として参画。AI倫理とガバナンスに貢献。
+- **Independent Director**. Contributes to AI ethics and governance.
 
-## 🗣️ 提唱、ポリシー、倫理
+## 🗣️ Advocacy, Policy, and Ethics
 
-### ヒューマンセンタードAIフレームワーク
+### Human-Centered AI Framework
 
-- **核心原則**: AIは人間の能力を*拡張*し、信頼性/堅牢性を維持し、透明性を確保すべきである。
-- **バイアス緩和**: 「バイアスイン、バイアスアウト」原則を提唱。インクルーシブなデータキュレーションとトレーニング中のアルゴリズム監査を推進。公平性調整は多くの場合、人口統計学的バランスのために**5〜20%の精度**をトレードオフすることに言及。
-- **規制スタンス**: 推測的なAGI実存リスクではなく、*直接的で検証可能なリスク*（誤情報、プライバシー、労働力 desplazamiento）を優先。2025年カリフォルニアAIポリシーレポートを共同主導。「信頼して検証」透明性を厳格な事前市場禁止よりも推奨。SB 1047に反対（イノベーションを阻害する可能性）。
+- **Core Principle**: AI should *augment* human capabilities, maintain reliability/robustness, and ensure transparency.
+- **Bias Mitigation**: Advocates "bias in, bias out" principle. Promotes inclusive data curation and algorithmic auditing during training. Notes fairness adjustments often trade **5–20% accuracy** for demographic balance.
+- **Regulatory Stance**: Prioritizes *direct, verifiable risks* (misinformation, privacy, workforce displacement) over speculative AGI existential risk. Co-led 2025 California AI Policy Report. Recommends "trust but verify" transparency over strict pre-market bans. Opposed SB 1047 (potential to stifle innovation).
 
-### AI4ALL（2017年-現在）
+### AI4ALL (2017–Present)
 
-- AI分野の多様性と包摂性を促進する非営利団体。
-- 高校生向けのAIサマープログラムを提供。
-- これまで1,000+の学生を輩出。
+- Nonprofit promoting diversity and inclusion in AI.
+- Offers AI summer programs for high school students.
+- Has graduated 1,000+ students to date.
 
-## ⚖️ 論争と批判
+## ⚖️ Controversies and Criticism
 
-| 問題 | 文脈と結果 |
+| Issue | Context and Outcome |
 |-------|-------------------|
-| **Google退職（2018年）** | 公式にはStanford復帰のためだが、**Project Maven**抗議（DoDドローンAI）と同時。Liは内部的に「PRの悪夢」と警告。Googleは3,100+の従業員請願後、契約を辞退。 |
-| **AIリスク優先順位** | 批評家（例：Gary Marcus）は、彼女の短期的焦点が壊滅的AGIリスクに関する規制の怠慢を可能にしていると主張。Liは実用的で証拠に基づくガバナンスで対抗。 |
-| **DEI審査** | **AI4ALL（2017年）**と**SAILORS**を設立し、AI人材の多様化を推進。批評家はアイデンティティ焦点のパイプラインが実力主義の基準を損なう可能性があると主張。Liは多様性が堅牢なAIに不可欠であると維持。 |
+| **Google Departure (2018)** | Officially to return to Stanford, but coincided with **Project Maven** protests (DoD drone AI). Li internally warned of "PR nightmare." Google declined the contract after 3,100+ employee petition. |
+| **AI Risk Prioritization** | Critics (e.g., Gary Marcus) argue her short-term focus enables regulatory neglect of catastrophic AGI risk. Li counters with pragmatic, evidence-based governance. |
+| **DEI Scrutiny** | Founded **AI4ALL (2017)** and **SAILORS** to diversify AI talent. Critics argue identity-focused pipelines may undermine meritocratic standards. Li maintains diversity is essential for robust AI. |
 
-## 🏆 受賞歴と認識
+## 🏆 Awards and Recognition
 
-- **2025年**: クイーンエリザベス工学賞（共同受賞、基礎的AI貢献）
-- **2024年**: VinFuture Prize（コンピュータビジョンとImageNetのパイオニア）
-- **2023年**: TIME 100 Most Influential People in AI、Intel Lifetime Achievements Innovation Award
-- **2010年**: IEEE CVPR Best Paper Honorable Mention
-- **2009年**: NSF CAREER Award
-- **2020年**: 米国科学アカデミー選出
-- **2020年**: 米国医学アカデミー選出
-- **2021年**: アメリカ芸術科学アカデミー選出
+- **2025**: Queen Elizabeth Prize for Engineering (co-recipient, foundational AI contributions)
+- **2024**: VinFuture Prize (pioneering computer vision and ImageNet)
+- **2023**: TIME 100 Most Influential People in AI, Intel Lifetime Achievements Innovation Award
+- **2010**: IEEE CVPR Best Paper Honorable Mention
+- **2009**: NSF CAREER Award
+- **2020**: Elected to National Academy of Sciences
+- **2020**: Elected to National Academy of Medicine
+- **2021**: Elected to American Academy of Arts and Sciences
 
-## 📖 主要出版物
+## 📖 Key Publications
 
-- **ImageNet Paper (2009)**: "ImageNet: A Large-Scale Hierarchical Image Database" (49,000+ 引用)
-- **Computer Vision: A Modern Approach (2012)**: Forsyth & Ponceとの共、第2版。
-- **Deep Learning for Computer Vision (2017)**: CS 231nの教科書。
-- **Worlds I See (2023)**: 自伝的回想録。AIと人間の関係性を探求。
+- **ImageNet Paper (2009)**: "ImageNet: A Large-Scale Hierarchical Image Database" (49,000+ citations)
+- **Computer Vision: A Modern Approach (2012)**: Co-authored with Forsyth & Ponce, 2nd edition.
+- **Deep Learning for Computer Vision (2017)**: CS 231n textbook.
+- **Worlds I See (2023)**: Autobiographical memoir. Explores the relationship between AI and humanity.
 
-## 🔗 関連人物・プロジェクト
+## 🔗 Related People and Projects
 
-- **Yann LeCun**: CNNのパイオニア。ImageNetの深層学習応用に影響。
-- **Andrew Ng**: Stanford時代の同僚。Coursera共同創設者。
-- **Geoffrey Hinton**: バックプロパゲーションの共同研究者。ImageNetチャレンジで深層学習の優位性を実証。
-- **Stanford HAI**: 2019年に共同設立。ヒューマンセンタードAIの研究と教育を推進。
-- **ImageNet**: 2009年にローンチ。深層学習革命の触媒。
-- **World Labs**: 2024年に共同設立。空間知能と生成的3D AIを実用化。
+- **Yann LeCun**: CNN pioneer. Influenced deep learning applications of ImageNet.
+- **Andrew Ng**: Stanford colleague. Coursera co-founder.
+- **Geoffrey Hinton**: Backpropagation collaborator. Demonstrated deep learning superiority in ImageNet challenge.
+- **Stanford HAI**: Co-founded 2019. Advances human-centered AI research and education.
+- **ImageNet**: Launched 2009. Catalyst for the deep learning revolution.
+- **World Labs**: Co-founded 2024. Operationalizes spatial intelligence and generative 3D AI.
 
 ---
 
-*最終更新: 2026年4月14日*
-*データソース: Grokipedia、Stanfordプロフィール、Google Cloudブログ、World Labsウェブサイト*
-*深度: L2（基本プロフィール、経歴、研究貢献、受賞歴）→ L3へ升级予定（哲学、引用分析、概念的枠組み）*
+*Last updated: April 14, 2026*
+*Data sources: Grokipedia, Stanford profile, Google Cloud blog, World Labs website*
+*Depth: L2 (basic profile, career, research contributions, awards) → Planned upgrade to L3 (philosophy, citation analysis, conceptual framework)*
 
 ## See Also
 
-- [[entities/yann-lecun]] — CNNのパイオニア。ImageNetの深層学習応用で協力関係。
-- [[ian-goodfellow]] — GANsの発明者。コンピュータビジョンと深層学習で関連研究。
-- [[imageNet]] — Fei-Fei Liが作成した大規模画像データセット。深層学習革命の触媒。
-- [[stanford-hai]] — Liが共同設立したヒューマンセンタードAI研究所。
-- [[world-labs]] — Liが2024年に共同設立した空間知能スタートアップ。
+- [[entities/yann-lecun]] — CNN pioneer. Collaborative relationship through ImageNet deep learning applications.
+- [[ian-goodfellow]] — Inventor of GANs. Related research in computer vision and deep learning.
+- [[imageNet]] — Large-scale image dataset created by Fei-Fei Li. Catalyst for the deep learning revolution.
+- [[stanford-hai]] — Human-centered AI institute co-founded by Li.
+- [[world-labs]] — Spatial intelligence startup co-founded by Li in 2024.

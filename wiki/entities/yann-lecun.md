@@ -8,107 +8,107 @@ type: entity
 
 # Yann LeCun
 
-## 📌 基本プロフィール
+## 📌 Basic Profile
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| **フルネーム** | Yann André LeCun |
-| **生年月日** | 1960年7月8日 |
-| **出生地** | ソワジー＝スー＝モンモランシー、フランス |
-| **国籍** | フランス系アメリカ人 |
-| **学歴** | ESIEE Paris（1983年、電気工学）、Université Pierre et Marie Curie（PhD、1987年） |
-| **所属** | NYU Silver Professor、Meta元チーフAIサイエンティスト（2013-2025） |
-| **現在の役職** | AMI Labsエグゼクティブチェアマン（2025年11月発表） |
-| **主な業績** | 畳み込みニューラルネットワーク（CNN）の発明、2018年ACMチューリング賞 |
+| **Full Name** | Yann André LeCun |
+| **Date of Birth** | July 8, 1960 |
+| **Place of Birth** | Soisy-sous-Montmorency, France |
+| **Nationality** | French-American |
+| **Education** | ESIEE Paris (1983, Electrical Engineering), Université Pierre et Marie Curie (PhD, 1987) |
+| **Affiliation** | NYU Silver Professor, Former Meta Chief AI Scientist (2013-2025) |
+| **Current Role** | AMI Labs Executive Chairman (announced November 2025) |
+| **Major Achievements** | Invention of Convolutional Neural Networks (CNN), 2018 ACM Turing Award |
 
-## 🎓 教育・初期の経験
+## 🎓 Education and Early Experience
 
-- **1983年**: ESIEE ParisよりDiplôme d'Ingénieur（電気工学）
-- **1984-1987年**: Université Pierre et Marie CurieでDEAおよびPhD取得
-  - 論文:「Modèles connexionnistes de l'apprentissage」（監督：Maurice Milgram）
-- **1987-1988年**: University of Torontoでポスドク研究員（Geoffrey Hintonのグループ）
-- **初期の影響**: 航空技術者だった父から実践的なものづくりを学ぶ。9歳頃に観た『2001年宇宙の旅』が知能システムへの関心のきっかけとなった。
+- **1983**: Diplôme d'Ingénieur (Electrical Engineering) from ESIEE Paris
+- **1984-1987**: DEA and PhD from Université Pierre et Marie Curie
+  - Thesis: "Modèles connexionnistes de l'apprentissage" (supervisor: Maurice Milgram)
+- **1987-1988**: Postdoctoral researcher at University of Toronto (Geoffrey Hinton's group)
+- **Early influences**: Learned practical craftsmanship from his father, an aeronautical engineer. Watching *2001: A Space Odyssey* around age 9 sparked his interest in intelligent systems.
 
-## 💼 経歴タイムライン
+## 💼 Career Timeline
 
-| 期間 | 組織 | 役割・主要貢献 |
+| Period | Organization | Role / Key Contributions |
 |:---|:---|:---|
-| **1988-2002** | AT&T Bell Labs / AT&T Labs-Research | ニューラルネットワークを画像処理に応用。USPSメール仕分けや銀行小切手OCRにCNNを導入。画像処理研究部門長（1996-2002）。DjVu圧縮技術を共同開発。 |
-| **2002-2003** | NEC Laboratories America | フェロー。スケーラブルなMLをマルチメディア・コンピュータビジョンに応用。 |
-| **2003-現在** | New York University | 教授→Silver Professor（2008年）→Jacob T. Schwartz Chair。NYU Center for Data Scienceを設立（2013年）。大学全体のデータサイエンスイニシアチブを主導（2012-2014年）。ML、CV、自己教師あり学習を教育・指導。 |
-| **2013-2025** | Meta AI Research (FAIR) | 創設ディレクター→チーフAIサイエンティスト。FAIRをグローバルに拡大（パリ、モントリオール、ロンドン）。PyTorchの主要貢献者。MetaプラットフォームにAIを統合（レコメンデーション、モデレーション、バイアス緩和）。2025年11月、退職してAIワールドモデル企業を立ち上げることを発表。 |
+| **1988-2002** | AT&T Bell Labs / AT&T Labs-Research | Applied neural networks to image processing. Deployed CNNs for USPS mail sorting and bank check OCR. Head of Image Processing Research Department (1996-2002). Co-developed DjVu compression technology. |
+| **2002-2003** | NEC Laboratories America | Fellow. Applied scalable ML to multimedia computer vision. |
+| **2003-Present** | New York University | Professor → Silver Professor (2008) → Jacob T. Schwartz Chair. Founded NYU Center for Data Science (2013). Led university-wide data science initiative (2012-2014). Taught and mentored in ML, CV, self-supervised learning. |
+| **2013-2025** | Meta AI Research (FAIR) | Founding Director → Chief AI Scientist. Expanded FAIR globally (Paris, Montreal, London). Key contributor to PyTorch. Integrated AI into Meta platforms (recommendations, moderation, bias mitigation). Announced departure in November 2025 to launch an AI world model company. |
 
-## 🔬 主要研究貢献
+## 🔬 Major Research Contributions
 
-### 畳み込みニューラルネットワーク（CNNs）
+### Convolutional Neural Networks (CNNs)
 
-- **アーキテクチャ**: Hubel & Wieselの哺乳類視覚皮質の構造に着想。畳み込み層、共有重み、プーリングを用いて位置・空間不変性を実現。
-- **学習**: バックプロパゲーションと確率的勾配降下法（SGD）によるエンドツーエンド最適化。
-- **影響**: 全結合ネットワークのスケーラビリティ・パラメータ効率の問題を解決。画像認識・コンピュータビジョンのベンチマークとなった。
-- **LeNet-5（1998年）**: 5層モデル、約6万パラメータ。MNIST手書き数字認識で99%超の精度を達成。AT&Tや銀行のチェック読み取りシステムに実装された。
+- **Architecture**: Inspired by Hubel & Wiesel's mammalian visual cortex structure. Convolutional layers, shared weights, pooling for position/spatial invariance.
+- **Learning**: End-to-end optimization via backpropagation and stochastic gradient descent (SGD).
+- **Impact**: Solved the scalability and parameter efficiency problems of fully-connected networks. Became the benchmark for image recognition and computer vision.
+- **LeNet-5 (1998)**: 5-layer model, ~60K parameters. Achieved >99% accuracy on MNIST handwritten digit recognition. Deployed in AT&T and bank check reading systems.
 
-### エネルギーベースモデル（EBMs）と自己教師あり学習
+### Energy-Based Models (EBMs) and Self-Supervised Learning
 
-- **EBMs（2006年）**: データ構成にスカラーエネルギーを割り当て、教師あり/教師なし/半教師あり学習タスクにわたる依存関係を、明示的な確率正規化なしに捉える。
-- **JEPA（2022年）**: `Joint Embedding Predictive Architecture` – 非生成的な自己教師ありフレームワーク。マスクされたターゲットの潜在表現をエネルギー最小化で予測する。ピクセル再構成ではなく抽象的なワールドモデルに焦点。
-  - **拡張**: `V-JEPA`（ビジョン）、`VL-JEPA`（ビジョン-言語）
-  - **LeWorldModel（2026年3月）**: 1500万パラメータのJEPA。シンプルな2項損失で安定したトレーニングを実現。生のピクセル入力から単一GPUで`1秒未満`のフルプランニングを可能にする。
+- **EBMs (2006)**: Assign scalar energy to data configurations; capture dependencies across supervised/unsupervised/semi-supervised tasks without explicit probability normalization.
+- **JEPA (2022)**: `Joint Embedding Predictive Architecture` – Non-generative self-supervised framework. Predicts latent representations of masked targets via energy minimization. Focus on abstract world models, not pixel reconstruction.
+  - **Extensions**: `V-JEPA` (vision), `VL-JEPA` (vision-language)
+  - **LeWorldModel (March 2026)**: 15M-parameter JEPA. Stable training with simple binary loss. Enables full planning in **<1 second** on a single GPU from raw pixel input.
 
-### ソフトウェア・データセット・ツール
+### Software, Datasets, and Tools
 
-- **Lush（1990年代）**: Léon Bottouと共同開発したオブジェクト指向Lisp方言。数値計算・MLのプロトタイピングを高速化。
-- **DjVu（1996年）**: テキスト/背景層を分離するウェーブレットベースのドキュメント圧縮。スキャン文書でJPEGより優位。
-- **NORBデータセット**: 様々な照明・ポーズ・クラッタ環境下のステレオ物体画像。階層的特徴学習と意味的不変性を前進させた。
+- **Lush (1990s)**: Object-oriented Lisp dialect co-developed with Léon Bottou. Accelerated numerical computation/ML prototyping.
+- **DjVu (1996)**: Wavelet-based document compression separating text/background layers. Superior to JPEG for scanned documents.
+- **NORB Dataset**: Stereo object images under varied lighting/pose/clutter conditions. Advanced hierarchical feature learning and semantic invariance.
 
-## 🏆 主要受賞歴・栄誉
+## 🏆 Major Awards and Honors
 
-- **2018年**: ACM A.M. チューリング賞（Geoffrey Hinton、Yoshua Bengioと共同受賞）
-- **2023年**: Global Swiss AI Award
-- **2024年**: VinFuture Prize
-- **2025年**: クイーンエリザベス工学賞（7名の共同受賞者の一人）、NYAS初代トレイルブレイザー賞
-- **アカデミー会員**: 米国科学アカデミー（2017年）、米国国立科学アカデミー（2021年）、AAASフェロー、フランス科学アカデミー
-- **名誉博士号**: EPFL（2018年）、IPNメキシコ（2016年）、Université Côte d'Azur（2022年）、HKUST（2023年）、シエナ大学（2023年）、ジュネーブ大学（2024年）
-- **国家勲章**: レジオンドヌール勲章シュヴァリエ（2020年）
+- **2018**: ACM A.M. Turing Award (co-recipient with Geoffrey Hinton, Yoshua Bengio)
+- **2023**: Global Swiss AI Award
+- **2024**: VinFuture Prize
+- **2025**: Queen Elizabeth Prize for Engineering (one of 7 co-recipients), NYAS inaugural Trailblazer Award
+- **Academy Memberships**: National Academy of Sciences (2017), National Academy of Sciences USA (2021), AAAS Fellow, French Academy of Sciences
+- **Honorary Doctorates**: EPFL (2018), IPN Mexico (2016), Université Côte d'Azur (2022), HKUST (2023), University of Siena (2023), University of Geneva (2024)
+- **National Honors**: Chevalier of the Legion of Honour (2020)
 
-## 💡 戦略的洞察・AIビジョン
+## 💡 Strategic Insights and AI Vision
 
-- **AI安全性と規制**: 「目的駆動型トレーニング」でリスクを緩和することを提唱。過度な規制がイノベーションを阻害する可能性を警告。
-- **LLM後のパラダイム**: 現在のLLMを「真の推論にはほぼ時代遅れ」と見なす。予測的で非生成的なワールドモデル（JEPA）を、人間的推論・時空間理解・ロボット計画への道筋として提唱。
-- **オープンソース**: オープンソースAI開発、グローバルな知識移転、透明なモデルデプロイメントの強力な推進者。
-- **2025年のキャリア転換**: Metaを退職し、AMI Labsを設立。エネルギーベース推論モデルによる次世代AIの実用化を目指す。
+- **AI Safety and Regulation**: Advocates "objective-driven training" to mitigate risks. Warns excessive regulation may stifle innovation.
+- **Post-LLM Paradigm**: Views current LLMs as "nearly obsolete for true reasoning." Champions predictive, non-generative world models (JEPA) as the path to human-like reasoning, spatiotemporal understanding, and robot planning.
+- **Open Source**: Strong advocate for open-source AI development, global knowledge transfer, and transparent model deployment.
+- **2025 Career Transition**: Left Meta to found AMI Labs. Aims to operationalize next-generation AI via energy-based reasoning models.
 
-## 📜 主要出版物・引用
+## 📜 Key Publications and Citations
 
-- **LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998).** "Gradient-based learning applied to document recognition." *Proceedings of the IEEE*, 86(11), 2278-2324. (100,000+ 引用)
-- **LeCun, Y., Beng al. (2015).** "Deep learning." *Nature*, 521(7553), 436-444. (100,000+ 引用)
+- **LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998).** "Gradient-based learning applied to document recognition." *Proceedings of the IEEE*, 86(11), 2278-2324. (100,000+ citations)
+- **LeCun, Y., Bengio, Y., & Hinton, G. (2015).** "Deep learning." *Nature*, 521(7553), 436-444. (100,000+ citations)
 - **LeCun, Y. (2022).** "A Path Towards Autonomous Machine Intelligence." *OpenReview.*
 - **LeCun, Y. (2025).** "A Tutorial on Energy-Based Learning." *Meta AI Research.*
 
-## 🔗 関連人物・プロジェクト
+## 🔗 Related People and Projects
 
-- **Geoffrey Hinton**: バックプロパゲーションの共同研究者。トロント大でポスドク時代に交流。
-- **Yoshua Bengio**: チューリング賞共同受賞者。深層学習のパイオニア。
-- **Jürgen Schmidhuysen**: CNNの先駆者。LeCunとは独立して類似のアーキテクチャを開発。
-- **Andrew Ng**: Google Brainで協力。深層学習の普及に貢献。
-- **PyTorch**: Meta FAIR時代に主要貢献。現在の深層学習フレームワークのデファクトスタンダード。
-- **ImageNet**: Fei-Fei Liが作成。LeCunのCNN研究の発展に大きく寄与。
+- **Geoffrey Hinton**: Backpropagation collaborator. Interacted during LeCun's postdoc at U of T.
+- **Yoshua Bengio**: Turing Award co-recipient. Deep learning pioneer.
+- **Jürgen Schmidhuber**: CNN pioneer. Independently developed similar architectures.
+- **Andrew Ng**: Collaborated at Google Brain. Contributed to deep learning popularization.
+- **PyTorch**: Major contributor during Meta FAIR era. Now the de facto standard deep learning framework.
+- **ImageNet**: Created by Fei-Fei Li. Greatly contributed to the development of LeCun's CNN research.
 
-## ⚠️ 注目すべき出来事
+## ⚠️ Notable Events
 
-- **2025年11月**: Metaを退職し、AMI Labsを設立。エネルギーベース推論モデルによるAIの実用化を目指す。
-- **2025年**: クイーンエリザベス工学賞受賞。AI分野での長年の貢献が評価された。
-- **2024年**: VinFuture Prize受賞。CNNの開発が画像認識分野に革命をもたらしたことが評価された。
+- **November 2025**: Left Meta to found AMI Labs. Aims to operationalize AI via energy-based reasoning models.
+- **2025**: Received Queen Elizabeth Prize for Engineering. Recognized for long-standing contributions to AI.
+- **2024**: Received VinFuture Prize. Recognized for CNN development revolutionizing image recognition.
 
 ---
 
-*最終更新: 2026年4月14日*
-*データソース: Grokipedia、Meta AIブログ、NYUプロフィール、学術論文*
-*深度: L2（基本プロフィール、経歴、研究貢献、受賞歴）→ L3へ升级予定（哲学、引用分析、概念的枠組み）*
+*Last updated: April 14, 2026*
+*Data sources: Grokipedia, Meta AI blog, NYU profile, academic papers*
+*Depth: L2 (basic profile, career, research contributions, awards) → Planned upgrade to L3 (philosophy, citation analysis, conceptual framework)*
 
 ## See Also
 
-- [[fei-fei-li]] — ImageNetの作成者。コンピュータビジョンと深層学習で協力関係。
-- [[ian-goodfellow]] — GANsの発明者。深層学習と敵対的機械学習のパイオニア。
-- [[geoffrey-hinton]] — バックプロパゲーションの共同研究者。LeCunのポスドク指導者。
-- [[yoshua-bengio]] — 深層学習のパイオニア。LeCunと共に2018年チューリング賞受賞。
-- [[pytorch]] — Meta FAIR時代に主要貢献した深層学習フレームワーク。
+- [[fei-fei-li]] — ImageNet creator. Collaborative relationship in computer vision and deep learning.
+- [[ian-goodfellow]] — Inventor of GANs. Deep learning and adversarial ML pioneer.
+- [[geoffrey-hinton]] — Backpropagation collaborator. LeCun's postdoc supervisor.
+- [[yoshua-bengio]] — Deep learning pioneer. Co-recipient of 2018 Turing Award with LeCun.
+- [[pytorch]] — Deep learning framework LeCun majorly contributed to during Meta FAIR era.
