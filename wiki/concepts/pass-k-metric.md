@@ -20,84 +20,84 @@ related:
 
 # pass^k
 
-**pass^k**（パス・ケー）は、τ-bench ファミリーで導入された**エージェントの信頼性評価指標**である。同一タスクを k 回の独立した試行で実行し、**全ての試行で成功した場合**のみ「pass」と判定する。
+**pass^k** is a **reliability metric for agents** introduced in the τ-bench family. It executes the same task k times in independent trials and only considers it a "pass" if **all trials succeed**.
 
-> 従来の pass@1（単一試行の成功率）は「運良くできた」を捕捉するが、pass^k は「**一貫してできる**」ことを測定する。
+> While conventional pass@1 (single-trial success rate) captures "got lucky once," pass^k measures "**can do it consistently**."
 
-## 定義
+## Definition
 
 $$\text{pass}^k = \frac{1}{N} \sum_{i=1}^{N} \mathbb{1}\left[\bigwedge_{j=1}^{k} \text{success}_{i,j}\right]$$
 
-ここで：
-- $N$: タスク数
-- $k$: タスクあたりの試行回数
-- $\text{success}_{i,j}$: タスク $i$ の $j$ 回目の試行が成功したかどうか
+Where:
+- $N$: Number of tasks
+- $k$: Number of trials per task
+- $\text{success}_{i,j}$: Whether trial $j$ of task $i$ succeeded
 
-## なぜ pass^k が必要か
+## Why pass^k is Needed
 
-pass@1 では見えない問題が3つある：
+Three problems invisible to pass@1:
 
-| 問題 | pass@1 での見え方 | pass^k での見え方 |
+| Problem | How it looks in pass@1 | How it looks in pass^k |
 |------|------------------|------------------|
-| **非決定性** | 見えない（単一試行） | 失敗として顕在化 |
-| **脆弱性** | 見えない | 環境の小さな変化で失敗 |
-| **テールリスク** | 平均に埋もれる | 一貫性の欠如として捕捉 |
+| **Non-determinism** | Invisible (single trial) | Manifests as failure |
+| **Fragility** | Invisible | Fails on small environmental changes |
+| **Tail Risk** | Buried in averages | Caught as consistency gaps |
 
-### 具体例：τ-bench Retail
+### Example: τ-bench Retail
 
-- GPT-4o の pass@1: **~45%**（見かけ上は半分近く成功）
-- GPT-4o の pass^8: **<25%**（8回連続成功は4分の1以下）
+- GPT-4o pass@1: **~45%** (appears to succeed nearly half the time)
+- GPT-4o pass^8: **<25%** (8 consecutive successes in less than a quarter of cases)
 
-この差（~45% vs <25%）が、**一度はできるが一貫してはできない**というエージェントの本質的な脆弱性を露呈する。
+This gap (~45% vs <25%) reveals the fundamental vulnerability of agents: **they can succeed once, but not consistently.**
 
-## 実世界での重要性
+## Real-World Importance
 
-pass^k が測定する「一貫性」は、以下の理由で実運用において決定的に重要である：
+The "consistency" that pass^k measures is critically important in production for the following reasons:
 
-1. **ユーザー信頼**: たまに失敗するエージェントは信頼されない
-2. **ビジネスリスク**: ポリシー違反や誤ったトランザクションの1回の発生が法的・財務的問題を引き起こす
-3. **スケーラビリティ**: 数百万回のインタラクションでは、低確率の失敗も頻発する
-4. **規制対応**: 金融・医療・法律分野では一貫性がコンプライアンス要件
+1. **User Trust**: An agent that occasionally fails won't be trusted
+2. **Business Risk**: A single policy violation or erroneous transaction can cause legal and financial problems
+3. **Scalability**: At millions of interactions, even low-probability failures occur frequently
+4. **Regulatory Compliance**: In finance, healthcare, and law, consistency is a compliance requirement
 
-## k の選択
+## Choosing k
 
-| k | 測定するもの | 使用場面 |
+| k | What it measures | When to use |
 |---|------------|---------|
-| 1 | 基本的な能力 | 研究プロトタイプ |
-| 2-4 | 短期的信頼性 | 内部テスト |
-| 8 | 運用信頼性 | 本番デプロイ前評価 |
-| >8 | 厳格な保証 | 規制対象ドメイン |
+| 1 | Basic capability | Research prototypes |
+| 2-4 | Short-term reliability | Internal testing |
+| 8 | Operational reliability | Pre-production evaluation |
+| >8 | Strict guarantees | Regulated domains |
 
-τ-bench では pass^8 を主要指標として採用している。8回の独立試行で全て成功することは、統計的に有意な信頼性の証拠となる。
+τ-bench adopts pass^8 as its primary metric. Succeeding on all 8 independent trials provides statistically significant evidence of reliability.
 
-## 他の信頼性指標との比較
+## Comparison with Other Reliability Metrics
 
-| 指標 | 測定内容 | 長所 | 短所 |
+| Metric | What it measures | Strengths | Weaknesses |
 |------|---------|------|------|
-| **pass@1** | 平均成功率 | 計算が簡単 | 一貫性を測定しない |
-| **pass^k** | k回連続成功率 | 一貫性を直接測定 | kが大きいと評価コスト増 |
-| **mean success rate** | 全試行の平均 | 全体的な能力を示す | 分散を隠蔽 |
-| **std dev of success** | 成功率のばらつき | 分散を定量化 | 閾値として使いにくい |
+| **pass@1** | Average success rate | Simple to compute | Does not measure consistency |
+| **pass^k** | k consecutive success rate | Directly measures consistency | Higher evaluation cost for large k |
+| **mean success rate** | Average across all trials | Shows overall capability | Hides variance |
+| **std dev of success** | Variance in success rates | Quantifies dispersion | Hard to use as a threshold |
 
-## Shunyu Yao の哲学的枠組みにおける位置づけ
+## Position in Shunyu Yao's Philosophical Framework
 
-pass^k は Yao の「The Second Half」論文の中心的主張を具現化している：
+pass^k embodies the central thesis of Yao's "The Second Half" paper:
 
-> 「評価は訓練よりも重要になる」
+> "Evaluation will become more important than training."
 
-pass^k は単なる指標ではなく、**評価の哲学**である。一度できればよいのではなく、**いつでも、誰に対しても、同じようにできる**ことこそが、実世界で信頼される AI エージェントの条件である。
+pass^k is not just a metric — it is a **philosophy of evaluation**. The condition for a real-world trustworthy AI agent is not being able to do it once, but being able to **do it the same way, for anyone, at any time**.
 
-## 実装
+## Implementation
 
-τ-bench では、pass^k の計算はデータベース状態の比較によって行われる：
+In τ-bench, pass^k is computed by comparing database states:
 
-1. タスクには**正解データベース状態**が注釈付けされている
-2. k 回の試行それぞれについて、会話終了後の DB 状態と正解状態を比較
-3. **全ての試行**で DB 状態が一致した場合のみ pass^k = true
+1. Each task is annotated with a **ground-truth database state**
+2. For each of k trials, compare the post-conversation DB state with the ground truth
+3. pass^k = true only if DB states match across **all trials**
 
-この方法は効率的で（LLM-as-judge を必要としない）、かつ忠実度が高い。
+This method is efficient (no LLM-as-judge required) and highly faithful.
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/tau-bench]] — pass^k が導入された元のベンチマーク
-- [[entities/shunyu-yao]] — τ-bench と pass^k の設計者
+- [[concepts/tau-bench]] — The original benchmark where pass^k was introduced
+- [[entities/shunyu-yao]] — Designer of τ-bench and pass^k

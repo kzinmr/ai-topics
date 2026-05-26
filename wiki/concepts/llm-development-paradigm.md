@@ -14,11 +14,11 @@ related:
   - concepts/dpo-alignment.md
 ---
 
-# LLM Development Paradigm（LLM開発パラダイム）
+# LLM Development Paradigm
 
-**LLM Development Paradigm** は、大規模言語モデル（LLM）の開発を **事前学習（Pre-training）→ 事後学習（Post-training）** の二段階で行う標準的手法。2024年の Llama 3 論文で体系的に確立され、その後のほぼすべてのフロンティアモデル開発の基礎となっている。
+**LLM Development Paradigm** is the standard approach of developing large language models in two stages: **Pre-training → Post-training**. Systematically established by the Llama 3 paper in 2024, it has since become the foundation for virtually all frontier model development.
 
-## 二段階パラダイム
+## Two-Stage Paradigm
 
 ```
 ┌─────────────────────┐     ┌──────────────────────────────────┐
@@ -30,67 +30,67 @@ related:
 └─────────────────────┘     └──────────────────────────────────┘
 ```
 
-### Stage 1: 事前学習（Pre-training）
+### Stage 1: Pre-training
 
-**目的**: 次のトークン予測を通じて、インターネットスケールの知識・パターン・推論能力を獲得する。
+**Purpose**: Acquire internet-scale knowledge, patterns, and reasoning capabilities through next-token prediction.
 
-| 要素 | 内容 |
+| Element | Details |
 |------|------|
-| 目的関数 | 次のトークン予測（causal language modeling） |
-| データ規模 | 15T+ トークン（2024年水準） |
-| データソース | Web、書籍、コード、学術論文、多言語データ |
-| 計算量 | 10²⁵ FLOPs 級 |
-| アーキテクチャ | Transformer（密 or MoE） |
-| 成果物 | Base model（指示追従不可、安全性未調整） |
+| Objective | Next-token prediction (causal language modeling) |
+| Data Scale | 15T+ tokens (2024 standard) |
+| Data Sources | Web, books, code, academic papers, multilingual data |
+| Compute | 10²⁵ FLOPs class | |
+| Architecture | Transformer (dense or MoE) |
+| Output | Base model (no instruction following, unaligned for safety) |
 
-**データエンジニアリングの重要性**: Llama 3 が示したように、データ構成の最適化（一般知識 50%、数学/推論 25%、コード 17%、多言語 8%）が性能を決定的に左右する。重複除去、品質フィルタリング、ドメイン別パイプラインが不可欠。
+**Importance of Data Engineering**: As demonstrated by Llama 3, optimizing data composition (general knowledge 50%, math/reasoning 25%, code 17%, multilingual 8%) critically determines performance. Deduplication, quality filtering, and domain-specific pipelines are essential.
 
-### Stage 2: 事後学習（Post-training）
+### Stage 2: Post-training
 
-**目的**: 指示追従、安全性、特定能力（コーディング、ツール使用、推論）を付与し、人間の選好にアライメントする。
+**Purpose**: Impart instruction following, safety, and specific capabilities (coding, tool use, reasoning) — aligning the model with human preferences.
 
-標準的なサブステージ（Llama 3 方式）:
+Standard sub-stages (Llama 3 approach):
 
-1. **Reward Model 学習**: 人間の選好データで報酬モデルを学習
-2. **SFT (Supervised Fine-Tuning)**: 高品質な指示-応答ペアでファインチューニング
-3. **Rejection Sampling**: プロンプトごとに複数出力を生成し、RM で最良を選択して学習
-4. **DPO (Direct Preference Optimization)**: 選好ペア（chosen vs rejected）から直接ポリシーを最適化
-5. **最終モデル平均化**: 複数チェックポイントの重み平均（モデルスープ）
+1. **Reward Model Training**: Train a reward model on human preference data
+2. **SFT (Supervised Fine-Tuning)**: Fine-tune on high-quality instruction-response pairs
+3. **Rejection Sampling**: Generate multiple outputs per prompt, select the best via RM for training
+4. **DPO (Direct Preference Optimization)**: Optimize policy directly from preference pairs (chosen vs rejected)
+5. **Final Model Averaging**: Weight-averaging multiple checkpoints (model soup)
 
-**データ品質 > 量**: SFT では品質が重要、DPO では量も有効。コード・推論タスクでは合成データが特に効果的。
+**Data Quality > Quantity**: Quality matters for SFT; quantity also helps for DPO. Synthetic data is particularly effective for code and reasoning tasks.
 
-## 発展と派生
+## Evolution and Derivatives
 
-Llama 3（2024年7月）以降、このパラダイムは様々な方向に発展した：
+Since Llama 3 (July 2024), this paradigm has evolved in several directions:
 
-### 強化学習の復権
-- Llama 3 は DPO のみ（PPO 不使用）だったが、**DeepSeek-R1**（2025年1月）は [[concepts/grpo-rl-training|GRPO]] を用いた強化学習で推論能力を飛躍的に向上
-- RLVR（Verifiable Rewards）、RLHF の発展形が続々登場
+### The Return of Reinforcement Learning
+- While Llama 3 used DPO only (no PPO), **DeepSeek-R1** (January 2025) dramatically improved reasoning via [[concepts/grpo-rl-training|GRPO]] reinforcement learning
+- RLVR (Verifiable Rewards) and other RLHF variants continue to emerge
 
-### テスト時スケーリング
-- 事前学習・事後学習に加え、**推論時の計算リソース割り当て**（chain-of-thought、多数決、自己改善）が第三の段階として注目
-- OpenAI o1/o3、DeepSeek-R1 が代表的
+### Test-Time Scaling
+- Beyond pre-training and post-training, **inference-time compute allocation** (chain-of-thought, majority voting, self-improvement) is gaining attention as a third stage
+- OpenAI o1/o3 and DeepSeek-R1 are representative examples
 
-### マルチモーダル拡張
-- Llama 3 の実験で示された「言語モデル凍結 + adapter 学習」パターンが広く採用
-- GPT-4V、Gemini、Qwen-VL などが追随
+### Multimodal Expansion
+- The "frozen language model + adapter training" pattern demonstrated in Llama 3 experiments has been widely adopted
+- Followed by GPT-4V, Gemini, Qwen-VL, among others
 
-### ポストトレーニングの効率化
-- [[concepts/lora-peft|LoRA/QLoRA]] などの PEFT 手法で事後学習コストを削減
-- 蒸留による小規模モデルへの能力転移
+### Post-Training Efficiency
+- PEFT methods like [[concepts/lora-peft|LoRA/QLoRA]] reduce post-training costs
+- Capability transfer to smaller models via distillation
 
-## 2024年時点での位置づけ
+## Positioning as of 2024
 
-2024年、Llama 3 論文がランドマークとされた理由：
+Why the Llama 3 paper was landmark in 2024:
 
-1. **体系化**: それまで断片的だった開発手法を、再現可能な単一パイプラインとして統合
-2. **オープン性**: クローズドモデルに匹敵する性能をオープンソースで達成し、再現・検証を可能に
-3. **スケーリング則の実践**: データ構成の最適化をスケーリング則で定量的に行う手法を確立
-4. **信頼性データ**: フロンティア学習の運用実態（466回の中断）を公開
+1. **Systematization**: Integrated previously fragmented development methods into a single reproducible pipeline
+2. **Openness**: Achieved performance rivaling closed models while remaining open-source, enabling reproduction and verification
+3. **Scaling Laws in Practice**: Established a methodology for quantitative data composition optimization via scaling laws
+4. **Reliability Data**: Published operational realities of frontier training (466 interruptions)
 
-## 関連ページ
+## Related Pages
 
-- [[entities/llama-3.md]] — Llama 3 モデル詳細
-- [[concepts/scaling-laws.md]] — スケーリング則
-- [[concepts/grpo-rl-training.md]] — GRPO / 推論 RL
-- [[concepts/dpo-alignment.md]] — DPO アライメント
+- [[entities/llama-3.md]] — Llama 3 model details
+- [[concepts/scaling-laws.md]] — Scaling laws
+- [[concepts/grpo-rl-training.md]] — GRPO / reasoning RL
+- [[concepts/dpo-alignment.md]] — DPO alignment

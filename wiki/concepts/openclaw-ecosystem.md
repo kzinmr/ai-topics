@@ -25,93 +25,92 @@ sources:
   - url: "https://evoailabs.medium.com/when-ai-gets-physical-hands-a-review-of-openclaw-on-the-unitree-g1-and-other-robots-0fbf06a1d4c8"
     title: "When AI Gets Physical Hands: OpenClaw on Unitree G1 (EvoAI Labs, 2026)"
 ---
-
 # OpenClaw Ecosystem
 
-**OpenClaw**（旧称 Clawdbot / Moltbot）は、**Peter Steinberger**（2026年に OpenAI に参画）が開発したオープンソースの AI エージェントプラットフォーム。Telegram、Discord、Signal、WhatsApp など 40 以上のメッセージングチャネルを統合し、LLM（Claude、DeepSeek、GPT など）が自律的にマルチステップの実世界タスクを実行できるようにする。
+**OpenClaw** (formerly Clawdbot / Moltbot) is an open-source AI agent platform developed by **Peter Steinberger** (who joined OpenAI in 2026). It integrates over 40 messaging channels including Telegram, Discord, Signal, and WhatsApp, allowing LLMs (Claude, DeepSeek, GPT, etc.) to autonomously execute multi-step real-world tasks.
 
-2026年現在、オープンソースコミュニティから生まれた 3 つの派生フレームワークを含む、活発なエコシステムを形成している。
+As of 2026, it has formed an active ecosystem including three derivative frameworks born from the open-source community.
 
-## アーキテクチャ
+## Architecture
 
 ```
-ユーザー（WhatsApp/Telegram/Discord/Slack）
+User (WhatsApp/Telegram/Discord/Slack)
         ↓
-OpenClaw Gateway（中央集約型 WebSocket Gateway）
+OpenClaw Gateway (Centralized WebSocket Gateway)
         ↓
     AI Agent + Tools + Memory
         ↓
-    RosClaw Plugin（ROS2 連携）
+    RosClaw Plugin (ROS2 Integration)
         ↓
-    物理ロボット（Unitree G1 など）
+    Physical Robot (Unitree G1, etc.)
 ```
 
-### コアコンポーネント
-- **TypeScript 実装**: 43万行以上のコード
-- **40+ メッセージングチャネル統合**: Telegram、Discord、Signal、WhatsApp、Slack など
-- **54+ ビルトインスキル**: メール、カレンダー、ホームオートメーション等
-- **WebSocket Gateway**: 中央集約型のメッセージルーティング
+### Core Components
+- **TypeScript implementation**: 430K+ lines of code
+- **40+ messaging channel integration**: Telegram, Discord, Signal, WhatsApp, Slack, etc.
+- **54+ built-in skills**: Email, calendar, home automation, etc.
+- **WebSocket Gateway**: Centralized message routing
 
-## エコシステムの4つのフレームワーク
+## Ecosystem — 4 Frameworks
 
-| フレームワーク | 哲学 | 言語 | 特徴 |
+| Framework | Philosophy | Language | Features |
 |--------------|-------|------|------|
-| **OpenClaw** | 包括性（Comprehensiveness） | TypeScript | 430K LoC、フル機能、ゲートウェイアーキテクチャ |
-| **Nanobot** | 極限ミニマリズム | — | 最小構成、軽量 |
-| **ClawWork** | 経済的説明責任 | — | タスクの経済的制約・コスト管理 |
-| **ZeroClaw** | ハードウェアレベルのパフォーマンス | Rust | 低レイテンシ、ハードウェア最適化 |
+| **OpenClaw** | Comprehensiveness | TypeScript | 430K LoC, full-featured, gateway architecture |
+| **Nanobot** | Extreme Minimalism | — | Minimal configuration, lightweight |
+| **ClawWork** | Economic Accountability | — | Task cost management with economic constraints |
+| **ZeroClaw** | Hardware-Level Performance | Rust | Low latency, hardware-optimized |
 
-## ロボティクス連携
+## Robotics Integration
 
-OpenClaw は物理ロボットの制御にも拡張されている：
-- **RosClaw**: ROS2 ブリッジプラグイン（rosbridge_server + WebSocket）
-- **Unitree G1**: 四足歩行ロボットの制御
-- **Reachy Mini**: ヒューマノイドプラットフォームの制御
-- **ゼロコードロボティクス**: AI が「何を」するかを理解し、「どうやって」は自動解決
+OpenClaw extends to physical robot control:
+- **RosClaw**: ROS2 bridge plugin (rosbridge_server + WebSocket)
+- **Unitree G1**: Quadruped robot control
+- **Reachy Mini**: Humanoid platform control
+- **Zero-Code Robotics**: AI understands what to do, automatically resolves how to do it
 
-### マルチエージェントロボット協調
-Chris Dietrich が提唱するビジョン：
-- 複数のロボットインスタンスが協調してタスクを実行
-- Signal/WhatsApp/Web インターフェースを横断した通信
-- 知覚データの共有とタスク交渉
+### Multi-Agent Robot Coordination
+Vision proposed by Chris Dietrich:
+- Multiple robot instances coordinate to execute tasks
+- Communication across Signal/WhatsApp/Web interfaces
+- Shared perception data and task negotiation
 
-## セキュリティとガバナンス
+## Security and Governance
 
-- **サンドボックスセキュリティ**: コード実行の隔離
-- **Durable Task Flow**: 2026.4.2 リリースで導入された耐久性のあるタスクオーケストレーション
-- **プラグインアクティベーション境界**: 厳格な権限制御
+- **Sandbox Security**: Isolated code execution
+- **Durable Task Flow**: Durable task orchestration introduced in 2026.4.2 release
+- **Plugin Activation Boundaries**: Strict permission control
 
-### 2026年1月のセキュリティインシデント
+### January 2026 Security Incident
 
-OpenClawエコシステムは2026年1月、**同時多発的なセキュリティ危機**に直面した。3つの独立した攻撃ベクトルが短期間に集中:
+In January 2026, the OpenClaw ecosystem faced a **coordinated security crisis**. Three independent attack vectors converged in a short period:
 
-| 攻撃 | 概要 | 影響範囲 |
+| Attack | Overview | Impact |
 |------|------|---------|
-| **Moltbook Breach** | Supabase RLS無効によりDB完全露出 | 77万エージェント、150万APIトークン、35,000メール |
-| **CVE-2026-25253** | WebSocket Origin検証バイパス（CVSS 8.8） | 42,000+露出インスタンス（93.4%が認証バイパス可能） |
-| **ClawHavoc作戦** | 341個の悪意スキルによるサプライチェーン攻撃 | Atomc Stealer (AMOS) による暗号資産窃取 |
+| **Moltbook Breach** | Full DB exposure due to disabled Supabase RLS | 770K agents, 1.5M API tokens, 35,000 emails |
+| **CVE-2026-25253** | WebSocket Origin validation bypass (CVSS 8.8) | 42,000+ exposed instances (93.4% authentication-bypassable) |
+| **Operation ClawHavoc** | Supply chain attack via 341 malicious skills | Cryptocurrency theft via Atomc Stealer (AMOS) |
 
-これらのインシデントの詳細は専用ページを参照:
-→ [[concepts/moltbook-breach-2026|Moltbook Breach 2026 — 77万エージェント同時侵害事件]]
+For details on these incidents, see:
+→ [[concepts/moltbook-breach-2026|Moltbook Breach 2026 — 770K Agent Mass Compromise]]
 
-また、AIエージェントセキュリティの脆弱性全体像は:
+For the overall picture of AI agent security vulnerabilities:
 → [[concepts/ai-agent-security]]
 
-## エンタープライズ応用
+## Enterprise Applications
 
-OpenClaw の自律エージェント能力は、特に以下の分野で注目されている：
-- **ヘルスケア**: ワークフロー自動化、コンプライアンス対応
-- **RPA**: 従来の RPA の AI 拡張
-- **カスタマーサポート**: マルチチャネル自動応対
+OpenClaw's autonomous agent capabilities are drawing attention particularly in:
+- **Healthcare**: Workflow automation, compliance
+- **RPA**: AI-enhanced traditional RPA
+- **Customer Support**: Multi-channel automated response
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agent-orchestration-frameworks]] — エージェントオーケストレーション比較
-- [[concepts/agent-swarms]] — マルチエージェント創発的振る舞い
-- [[concepts/telegram-managed-bots]] — Telegram ボットエコシステム
-- [[concepts/monty-sandbox]] — コード実行サンドボックス
+- [[concepts/agent-orchestration-frameworks]] — Agent orchestration comparison
+- [[concepts/agent-swarms]] — Multi-agent emergent behavior
+- [[concepts/telegram-managed-bots]] — Telegram bot ecosystem
+- [[concepts/monty-sandbox]] — Code execution sandbox
 
-## ソース
+## Sources
 
 - [OpenClaw Official Site](https://openclaw.ai/)
 - [OpenClaw Ecosystem Deep-Dive](https://medium.com/@mingyang.heaven/the-openclaw-ecosystem-architectural-deep-dive-into-4-ai-agent-frameworks-45eeb2276185)

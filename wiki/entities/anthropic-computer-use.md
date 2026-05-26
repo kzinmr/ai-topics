@@ -21,99 +21,98 @@ sources:
 - https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/
 
 ---
-
 # Anthropic Computer Use
 
-**Anthropic Computer Use**は、Claudeモデルがスクリーンショットを見てGUIを直接操作する機能。2024年10月に研究プレビューとして公開され、スクリーン座標へのクリック、キー入力、スクロールなど、人間と同じ方法でコンピュータを操作できる。2026年2月のVercept買収とClaude Sonnet 4.6リリースにより、OSWorldスコアが15%未満から72.5%に飛躍した。
+**Anthropic Computer Use** is a capability that allows Claude models to view screenshots and directly operate GUIs. Released as a research preview in October 2024, it can interact with computers the same way humans do — clicking screen coordinates, typing keys, and scrolling. Following the Vercept acquisition and Claude Sonnet 4.6 release in February 2026, the OSWorld score jumped from under 15% to 72.5%.
 
-## 概要
+## Overview
 
-| 項目 | 内容 |
+| Item | Details |
 |---|---|
-| 初回リリース | 2024年10月（研究プレビュー） |
-| ベースモデル | Claude Sonnet / Opus |
-| アプローチ | スクリーンショットベースのビジョン認識 + 推論 |
-| 提供形態 | API + Claude App（Cowork） |
-| OSWorldスコア | 14.9% → 72.5%（Sonnet 4.6、2026年2月） |
-| WebArenaスコア | 58.1% |
-| セキュリティ | ASL-2プロンプトインジェクション耐性 |
+| Initial Release | October 2024 (Research Preview) |
+| Base Model | Claude Sonnet / Opus |
+| Approach | Screenshot-based vision recognition + reasoning |
+| Delivery Format | API + Claude App (Cowork) |
+| OSWorld Score | 14.9% → 72.5% (Sonnet 4.6, Feb 2026) |
+| WebArena Score | 58.1% |
+| Security | ASL-2 prompt injection resistance |
 
-## 技術アーキテクチャ
+## Technical Architecture
 
-### 認識-行動ループ（Perception-Action Loop）
+### Perception-Action Loop
 ```
-タスク指示 → スクリーンショット取得 → ビジョンモデルがUI要素認識 →
-アクション計画（クリック/入力/スクロール） → 実行 →
-次のスクリーンショットで状態確認 → 自己修正 → 繰り返し
+Task instruction → Capture screenshot → Vision model recognizes UI elements →
+Action plan (click/type/scroll) → Execute →
+Verify state with next screenshot → Self-correct → Repeat
 ```
 
-### Claude Sonnet 4.6の改善（2026年2月）
-- OSWorld: 15%未満 → **72.5%**（人類レベルに接近）
-- 1Mトークンコンテキスト対応
-- アダプティブ思考 + 拡張思考（Extended Thinking）
-- コンテキスト圧縮（Compaction）ベータ
-- Web検索/fetchツールのコード自動生成
+### Claude Sonnet 4.6 Improvements (Feb 2026)
+- OSWorld: Under 15% → **72.5%** (approaching human level)
+- 1M token context support
+- Adaptive thinking + Extended Thinking
+- Context Compaction (beta)
+- Automatic code generation for web search/fetch tools
 
-### Vercept買収の影響（2026年2月）
-AnthropicはSeattleのAIスタートアップ**Vercept**を買収:
-- **共同創設者**: Kiana Ehsani（CEO）、Luca Weihs、Ross Girshick
-- **Vy製品**: クラウド上のコンピュータ使用エージェント（リモートMacBook操作）
-- **専門性**: ビジョンベースのコンピュータ認識と自動化
-- **資金調達**: 合計$50M（Fifty YearsのSeth Bannon主導）
-- **エンジェル投資家**: Eric Schmidt（元Google CEO）、Demis Hassabis（Google DeepMind CEO）
-- **Allen Institute for AI (AI2)**出身
-- 買収後、Anthropicのコンピュータ使用研究グループに統合
-- 外部製品Vyは2026年3月25日に終了
+### Vercept Acquisition Impact (Feb 2026)
+Anthropic acquired Seattle-based AI startup **Vercept**:
+- **Co-founders**: Kiana Ehsani (CEO), Luca Weihs, Ross Girshick
+- **Vy Product**: Cloud-based computer use agent (remote MacBook operation)
+- **Specialty**: Vision-based computer recognition and automation
+- **Funding**: $50M total (led by Fifty Years' Seth Bannon)
+- **Angel investors**: Eric Schmidt (former Google CEO), Demis Hassabis (Google DeepMind CEO)
+- **Origins**: Allen Institute for AI (AI2)
+- Post-acquisition, integrated into Anthropic's computer use research group
+- External product Vy shut down on March 25, 2026
 
-### セーフガード
-- **ASL-2（Anthropic Safety Level 2）**: プロンプトインジェクション耐性
-- Sonnet 4.6はSonnet 4.5と比較して大幅改善、Opus 4.6と同レベル
-- マルチステップタスクでのエラー修正能力向上
+### Safeguards
+- **ASL-2 (Anthropic Safety Level 2)**: Prompt injection resistance
+- Sonnet 4.6 shows significant improvement over Sonnet 4.5, on par with Opus 4.6
+- Improved error correction capability in multi-step tasks
 
-## タイムライン
+## Timeline
 
-| 日付 | マイルストーン |
+| Date | Milestone |
 |---|---|
-| 2024年10月 | Computer Use研究プレビュー公開 |
-| 2025年7月 | OSWorld-Verifiedベンチマークリリース |
-| 2026年1月 | Claude Cowork研究プレビュー（コンピュータ使用統合） |
-| 2026年2月17日 | Claude Sonnet 4.6リリース（OSWorld 72.5%） |
-| 2026年2月25日 | Vercept買収発表 |
-| 2026年3月25日 | Vercept Vy製品終了、Anthropicに統合 |
+| October 2024 | Computer Use research preview released |
+| July 2025 | OSWorld-Verified benchmark released |
+| January 2026 | Claude Cowork research preview (computer use integration) |
+| February 17, 2026 | Claude Sonnet 4.6 released (OSWorld 72.5%) |
+| February 25, 2026 | Vercept acquisition announced |
+| March 25, 2026 | Vercept Vy product discontinued, integrated into Anthropic |
 
-## 得意領域
+## Strengths
 
-1. **レガシーソフトウェア**: APIが存在しない専門システムの操作
-2. **複数タブ横断タスク**: ブラウザタブ間をまたぐワークフロー
-3. **複雑なフォーム入力**: Webフォーム、スプレッドシート操作
-4. **自動化不可能なツール**: モダンAPIコネクタがないツールの操作
+1. **Legacy Software**: Operating specialized systems without APIs
+2. **Multi-Tab Tasks**: Workflows spanning multiple browser tabs
+3. **Complex Form Entry**: Web forms, spreadsheet operations
+4. **Non-Automatable Tools**: Operating tools without modern API connectors
 
-## 制限と課題
+## Limitations & Challenges
 
-1. **速度**: スクリーンショットの送受信でレイテンシが発生
-2. **トークン消費**: 画像ベースのためAPIコストが高い
-3. **精密操作**: ドラッグ&ドロップ、複雑なマルチステップフォーム
-4. **動的UI**: 頻繁に変更されるインターフェースでの安定性
+1. **Speed**: Latency from sending/receiving screenshots
+2. **Token Consumption**: High API cost due to image-based approach
+3. **Precision**: Drag-and-drop, complex multi-step forms
+4. **Dynamic UI**: Stability with frequently changing interfaces
 
-## OpenAI CUAとの比較
+## Comparison with OpenAI CUA
 
-| 次元 | Anthropic Computer Use | OpenAI CUA |
+| Dimension | Anthropic Computer Use | OpenAI CUA |
 |---|---|---|
-| ベースモデル | Claude Sonnet/Opus | GPT-4o + RL |
-| OSWorldスコア | **72.5%**（Sonnet 4.6） | 38.1% |
-| WebArenaスコア | 58.1% | 58.1% |
-| トレーニング | ビジョン認識 + 推論 | 教師あり + 強化学習 |
-| セーフガード | ASL-2（プロンプト耐性） | 3層（97%有害拒否） |
-| 提供形態 | API + Claude Cowork | ChatGPTエージェント統合 |
-| 最新開発 | Vercept買収（2026年2月） | API公開拡大 |
+| Base Model | Claude Sonnet/Opus | GPT-4o + RL |
+| OSWorld Score | **72.5%** (Sonnet 4.6) | 38.1% |
+| WebArena Score | 58.1% | 58.1% |
+| Training | Vision recognition + reasoning | Supervised + reinforcement learning |
+| Safeguards | ASL-2 (prompt resistance) | 3-layer (97% harmful rejection) |
+| Delivery | API + Claude Cowork | ChatGPT agent integration |
+| Latest Development | Vercept acquisition (Feb 2026) | Expanding API access |
 
-## 関連エンティティ
+## Related Entities
 
-- [[entities/openai-cua]] — OpenAIのComputer-Using Agent
-- [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
-- [[entities/browser-use]] — オープンソースDOMベース自動化
-- [[concepts/harness-engineering]] — エージェント環境設計
-- [[entities/webmcp]] — 標準化プロトコル
+- [[entities/openai-cua]] — OpenAI's Computer-Using Agent
+- [[concepts/death-of-browser]] — The de-humanization of browsers
+- [[entities/browser-use]] — Open-source DOM-based automation
+- [[concepts/harness-engineering]] — Agent environment design
+- [[entities/webmcp]] — Standardization protocol
 
 ## Sources
 
