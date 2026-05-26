@@ -13,13 +13,13 @@ related:
 
 # Llama 3
 
-**Llama 3** は Meta が開発したオープンソースの基盤言語モデルファミリー。2024年4月に 8B/70B が先行リリースされ、2024年7月に完全版（Llama 3.1）として **8B / 70B / 405B** の3サイズ、マルチリンガル・長文コンテキスト（128K）・ツール使用対応の Instruct モデルが公開された。
+**Llama 3** is an open-source foundational language model family developed by Meta. The 8B/70B models launched in April 2024, with the full version (Llama 3.1) released in July 2024 offering **8B / 70B / 405B** sizes with multilingual support, long context (128K), and tool-use Instruct models.
 
-最大の特徴は、405B パラメータの **密な Transformer**（MoE 不使用）で GPT-4 に匹敵する性能を達成したこと。そして、**事前学習 → 事後学習（SFT + Rejection Sampling + DPO）** という二段階開発パラダイムを確立し、2024年時点の LLM 開発のランドマークとなった。
+Its defining feature is achieving GPT-4-comparable performance with a **dense Transformer** at 405B parameters (no MoE), while establishing the two-phase development paradigm of **Pre-training -> Post-training (SFT + Rejection Sampling + DPO)**, becoming a landmark in 2024 LLM development.
 
-## モデルファミリー
+## Model Family
 
-| モデル | パラメータ | マルチリンガル | 128K コンテキスト | ツール使用 | リリース |
+| Model | Parameters | Multilingual | 128K Context | Tool Use | Release |
 |--------|-----------|---------------|-------------------|-----------|----------|
 | Llama 3 8B | 8B | — | — | — | 2024-04 |
 | Llama 3 8B Instruct | 8B | — | — | — | 2024-04 |
@@ -29,92 +29,92 @@ related:
 | **Llama 3.1 70B** | 70B | ✓ | ✓ | ✓ (Instruct) | 2024-07 |
 | **Llama 3.1 405B** | 405B | ✓ | ✓ | ✓ (Instruct) | 2024-07 |
 
-論文上の表記はすべて Llama 3.1 を指す。4月版は主に英語向け、7月版が完全版。
+All paper references refer to Llama 3.1. The April release is primarily English-only; the July release is the full version.
 
-## 主要ベンチマーク
+## Key Benchmarks
 
-| カテゴリ | ベンチマーク | Llama 3 405B | GPT-4 (0125) | GPT-4o | Claude 3.5 Sonnet |
+| Category | Benchmark | Llama 3 405B | GPT-4 (0125) | GPT-4o | Claude 3.5 Sonnet |
 |----------|-------------|-------------|-------------|--------|-------------------|
-| 一般知識 | MMLU (5-shot) | **87.3** | 85.1 | 89.1 | 89.9 |
-| コード | HumanEval (0-shot) | 89.0 | 86.6 | 90.2 | 92.0 |
-| 数学 | GSM8K (8-shot, CoT) | **96.8** | 94.2 | 96.1 | 96.4 |
-| 推論 | ARC Challenge (0-shot) | **96.9** | 96.4 | 96.7 | 96.7 |
-| ツール使用 | BFCL | 88.5 | 86.5 | 80.5 | 90.2 |
-| 長文 | ZeroSCROLLS/QuALITY | **95.2** | 95.2 | 90.5 | 90.5 |
-| 多言語 | MGSM (0-shot, CoT) | **91.6** | 85.9 | 90.5 | 91.6 |
+| General Knowledge | MMLU (5-shot) | **87.3** | 85.1 | 89.1 | 89.9 |
+| Code | HumanEval (0-shot) | 89.0 | 86.6 | 90.2 | 92.0 |
+| Math | GSM8K (8-shot, CoT) | **96.8** | 94.2 | 96.1 | 96.4 |
+| Reasoning | ARC Challenge (0-shot) | **96.9** | 96.4 | 96.7 | 96.7 |
+| Tool Use | BFCL | 88.5 | 86.5 | 80.5 | 90.2 |
+| Long Context | ZeroSCROLLS/QuALITY | **95.2** | 95.2 | 90.5 | 90.5 |
+| Multilingual | MGSM (0-shot, CoT) | **91.6** | 85.9 | 90.5 | 91.6 |
 
-**GPT-4 を超えた初のオープンソースモデル**。MMLU、GSM8K、ARC Challenge、MGSM で GPT-4 (0125) を上回った。
+**First open-source model to surpass GPT-4**. It exceeded GPT-4 (0125) on MMLU, GSM8K, ARC Challenge, and MGSM.
 
-## 開発パラダイム
+## Development Paradigm
 
-Llama 3 は **二段階開発パラダイム** を確立した（→ [[concepts/llm-development-paradigm]]）:
+Llama 3 established the **two-phase development paradigm** (-> [[concepts/llm-development-paradigm]]):
 
-### 第一段階：事前学習（Pre-training）
-- **データ**: 15.6T トークン（Llama 2 の 1.8T から 8.7 倍）。多言語 Web データ
-- **データ構成**: 一般知識 ~50%、数学/推論 25%、コード 17%、多言語 8% — スケーリング則で最適化
-- **アーキテクチャ**: 密な Transformer（MoE 不使用）。GQA (8 KV-heads)、RoPE (θ=500,000)、語彙 128K
-- **計算量**: 3.8 × 10²⁵ FLOPs（Llama 2 の約50倍）
-- **インフラ**: 最大 16K H100 GPU、4D 並列化。54日間で 466 回のジョブ中断（78% がハードウェア起因）
-- **実効トレーニング時間**: 38.5 日
+### Phase 1: Pre-training
+- **Data**: 15.6T tokens (8.7x Llama 2 at 1.8T). Multilingual web data
+- **Data Mix**: General knowledge ~50%, Math/Reasoning 25%, Code 17%, Multilingual 8% - optimized via scaling laws
+- **Architecture**: Dense Transformer (no MoE). GQA (8 KV-heads), RoPE (theta=500,000), vocabulary 128K
+- **Compute**: 3.8 x 10^25 FLOPs (~50x Llama 2)
+- **Infrastructure**: Up to 16K H100 GPUs, 4D parallelism. 466 job interruptions in 54 days (78% hardware-related)
+- **Effective Training Time**: 38.5 days
 
-### 第二段階：事後学習（Post-training）
-1. **Reward Model**: 人間の選好データで学習（安全性事前学習付き）
-2. **SFT**: 高品質な人手・合成データでの教師ありファインチューニング
-3. **Rejection Sampling (RS)**: プロンプトごとに K 個の出力を生成し、RM で最良を選んで学習
-4. **DPO**: Direct Preference Optimization で選好ペアから直接アライメント
-5. **最終平均化**: RM 選択された複数チェックポイントの重み平均
+### Phase 2: Post-training
+1. **Reward Model**: Trained on human preference data (with safety pre-training)
+2. **SFT**: Supervised fine-tuning on high-quality human and synthetic data
+3. **Rejection Sampling (RS)**: Generate K outputs per prompt, select best via RM for training
+4. **DPO**: Direct Preference Optimization from preference pairs
+5. **Final Averaging**: Weight averaging of RM-selected checkpoint ensembles
 
-**設計思想**: PPO のようなオンライン RL は使わず、SFT + DPO のみ。シンプルさを重視。
+**Design Philosophy**: No online RL like PPO - only SFT + DPO. Prioritizing simplicity.
 
-### 第三段階（実験的、未リリース）: マルチモーダル拡張
-- 画像エンコーダ（ViT-H/14）+ クロスアテンションアダプターで視覚対応
-- 動画アダプター（時間集約器 + クロスアテンション）
-- 音声エンコーダ + アダプターで音声入力対応
-- 言語モデル本体は凍結したまま adapter のみ学習
+### Phase 3 (Experimental, Unreleased): Multimodal Expansion
+- Image encoder (ViT-H/14) + cross-attention adapter for vision
+- Video adapter (temporal aggregator + cross-attention)
+- Audio encoder + adapter for speech input
+- Language model frozen; only adapters trained
 
-## データパイプラインの革新
+## Data Pipeline Innovations
 
-### Web データのキュレーション
-- **PII・安全性フィルタリング**: 有害ドメイン除去
-- **重複除去**: URL レベル、文書レベル（MinHash）、行レベル（30M 文書中 6 回以上出現する行を除去）
-- **ヒューリスティックフィルタリング**: n-gram 重複率、dirty word 数、トークン分布 KL ダイバージェンス
-- **モデルベース品質フィルタリング**: fasttext + DistilRoberta（Llama 2 判定で学習）
-- **コード・推論データ**: 専用パイプラインで math/STEM/コードページを識別
+### Web Data Curation
+- **PII & Safety Filtering**: Remove harmful domains
+- **Deduplication**: URL-level, document-level (MinHash), line-level (remove lines appearing 6+ times in 30M documents)
+- **Heuristic Filtering**: n-gram overlap rate, dirty word count, token distribution KL divergence
+- **Model-based Quality Filtering**: fasttext + DistilRoberta (trained on Llama 2 judgments)
+- **Code & Reasoning Data**: Dedicated pipeline to identify math/STEM/code pages
 
-### アニーリングデータ
-- 小規模な高品質コード・数学データでのアニーリングが有効
-- 8B では GSM8K +24%、MATH +6.4% 改善
-- 405B では効果が小さく（既に強い In-context learning 能力を持つため）
+### Annealing Data
+- Annealing with small-scale high-quality code & math data is effective
+- 8B: GSM8K +24%, MATH +6.4% improvement
+- 405B: smaller effect (already has strong in-context learning)
 
-## 安全性
+## Safety
 
-- **Llama Guard 3**: 入出力を保護する safeguard LLM（公開）
-- **Llama Code Shield**: 生成コードの安全性フィルター
-- **レッドチーミング**: CBRN、サイバー、児童安全性の専門家 + 自動テスト
-- **CyberSecEval 2**: サイバーセキュリティリスク評価スイート
-- 安全性ファインチューニングは事後学習パイプラインに統合（SFT + DPO）
+- **Llama Guard 3**: Safeguard LLM for input/output safety (public)
+- **Llama Code Shield**: Safety filter for generated code
+- **Red Teaming**: CBRN, cyber, child safety experts + automated testing
+- **CyberSecEval 2**: Cybersecurity risk evaluation suite
+- Safety fine-tuning integrated into post-training pipeline (SFT + DPO)
 
-## 重要な発見
+## Key Findings
 
-1. **密な Transformer でフロンティア性能が可能**: MoE を使わずに 405B で GPT-4 越え
-2. **事後学習のデータ品質 > 量**: SFT では品質が重要、DPO では量も有効
-3. **合成データの効果**: コード・推論タスクで特に有効。知識集約的タスクでは限定的
-4. **スケーリング則によるデータ構成最適化**: 一般知識 vs. 数学 vs. コード vs. 多言語のトレードオフを小規模モデルで評価し大規模に外挿
-5. **フロンティア学習の信頼性**: 54 日間で 466 回の中断 — 大規模学習の運用現実を示す貴重なデータ
+1. **Frontier performance with dense Transformer**: Surpassing GPT-4 with 405B dense model (no MoE)
+2. **Data quality > quantity in post-training**: Quality matters for SFT; quantity also helps for DPO
+3. **Synthetic data effectiveness**: Especially effective for code & reasoning tasks; limited for knowledge-intensive tasks
+4. **Data mix optimization via scaling laws**: Evaluated trade-offs between general knowledge, math, code, and multilingual on small models, then extrapolated to large scale
+5. **Frontier training reliability**: 466 interruptions over 54 days - valuable data on large-scale training operations
 
-## 歴史的意義
+## Historical Significance
 
-2024年の LLM 開発において Llama 3 論文がランドマークとされる理由：
+Why the Llama 3 paper is a 2024 landmark in LLM development:
 
-- **オープンソースのフロンティア到達**: クローズドな GPT-4 に匹敵するオープンモデルが実現可能であることを実証
-- **開発パラダイムの標準化**: 事前学習 → SFT + RS + DPO という二段階パイプラインが業界標準として確立
-- **データエンジニアリングの重要性**: モデルアーキテクチャ以上にデータの質・構成の最適化が性能を左右することを体系的に示した
-- **マルチモーダル拡張の青写真**: 言語モデルを凍結したまま adapter でモダリティを追加する手法の有効性を実証
+- **Open-source frontier achieved**: Demonstrated that open models can match GPT-4 quality
+- **Standardized development paradigm**: Two-phase pipeline of pre-training -> SFT + RS + DPO established as industry standard
+- **Data engineering importance**: Systematically showed that data quality and composition matters more than model architecture
+- **Multimodal expansion blueprint**: Demonstrated adding modalities via adapters while freezing the language model
 
-## 参照
+## References
 
-- [[concepts/llm-development-paradigm]] — 二段階開発パラダイム
-- [[concepts/scaling-laws]] — スケーリング則
+- [[concepts/llm-development-paradigm]] - Two-phase development paradigm
+- [[concepts/scaling-laws]] - Scaling laws
 - [[entities/meta]] — Meta AI
 - Paper: [arXiv:2407.21783](https://arxiv.org/abs/2407.21783)
 - License: Llama 3 Community License (updated)
