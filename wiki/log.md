@@ -1,7 +1,9 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
+## [2026-05-26] update | wiki/index.md Japanese→English Phase 1 complete
+
+Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lines translated, Chinese proper nouns romanized. Verified zero Japanese characters remaining.
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
