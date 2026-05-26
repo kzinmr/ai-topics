@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-25
+updated: 2026-05-26
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -282,6 +282,36 @@ Anthropic was designated a **"supply chain risk"** by the Pentagon in February 2
 - Dario Amodei met with White House Chief of Staff Susie Wiles; Trump says deal is "possible"
 
 See [[concepts/ai-military]] for broader context.
+
+## Claude Cowork Philosophy — Felix Rieseberg (May 2026)
+
+Felix Rieseberg, Engineering Lead for Claude Cowork and Claude Code Desktop at Anthropic, demonstrated his personal Claude workflow in a deep-dive interview. Key philosophical and practical contributions:
+
+- **Go one abstraction layer up**: Rather than micromanaging Claude's every step, Rieseberg describes his work in high-level goals and lets Claude figure out the implementation. This is the core principle behind Claude Cowork's "background agent" model.
+- **Email as personal database**: Uses email as an unstructured inventory/system-of-record, with Claude Cowork extracting structured data from it on demand — a pragmatic alternative to building a custom database.
+- **Live Artifacts**: Creates dashboards that auto-update from connected apps (Jira, Salesforce, Google Sheets), turning static documents into live operational tools.
+- **Model selection strategy**: Uses Claude Sonnet for most daily tasks (faster, cheaper) and switches to Claude Opus for hard reasoning problems — a model-routing approach optimized for cost.
+- **The real barrier is psychological**: The hardest part of adopting AI is unlearning 20 years of assuming "computers can't do this." Rieseberg argues the bottleneck is human, not technical.
+
+### Hardware Prototyping Culture
+
+Rieseberg hacked a $20 hardware "Claude buddy" device as a proof-of-concept — demonstrating Anthropic's internal culture of rapid, playful experimentation with AI integration.
+
+See also: [[concepts/agentic-engineering]] section on [[concepts/agentic-engineering/context-window-management|context window management]] and [[concepts/agentic-engineering/red-green-tdd|Red/Green TDD pattern]].
+
+
+### Jack Clark's Predictions (May 2026)
+
+Anthropic co-founder Jack Clark made several bold forecasts at an Oxford University lecture:
+
+- **Nobel-worthy AI discovery**: An AI system working with humans will achieve this within 12 months
+- **Bipedal robots for tradespeople**: Within 2 years, robots will assist skilled tradespeople
+- **AI-only companies**: Within 18 months, companies run solely by AI will generate millions in revenue
+- **Self-designing AI**: By end of 2028, AI will design next-generation AI systems
+- **Claude Mythos warning**: Clark noted that Claude Mythos is "surprisingly capable at exploiting cybersecurity vulnerabilities," underscoring the need for safety research
+
+Source: Superintel newsletter via Anthropic co-founder Oxford lecture (May 2026).
+
 
 ## Research Focus
 

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2063 | Indexed entries: 1349 | Not in index: 692 |
+> Last updated: 2026-05-26 | Total pages: 2064 | Indexed entries: 1350 | Not in index: 692 |
 
 ## Entities (672 pages)
 
@@ -693,7 +693,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (638 pages)
+## Concepts (639 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -767,6 +767,7 @@
 - [[concepts/ai-programming-as-theory-building]] — AI Programming as Theory Building
 - [[concepts/aider-polyglot]] — Aider Polyglot — 6-language coding benchmark. Tests 225 Exercism problems across C++/Go/Java/JS/Python/Rust. GPT-5 leads at 88%.
 - [[concepts/alphaevolve]] — AlphaEvolve — Google DeepMind's Gemini-powered evolutionary coding agent for algorithm discovery and optimization. TPU circuit design, data center scheduling (0.7% recovery), Gemini kernel 23% speedup. Mutation→Evolution→Evaluation loop.
+- [[concepts/alpha-proof-nexus]] — AlphaProof Nexus — Google DeepMind's LLM+Lean framework for autonomous formal proof search. 9 Erdős problems solved (two open 56 years), 44 OEIS conjectures proven. arXiv:2605.22763 (May 2026).
 - [[concepts/altman-three-observations]] — Altman's Three Observations: An economic framework of three observations — logarithmic scaling (intelligence ≈ log(resources)), super-deflationary costs (10x/year), and super-exponential value. GPT-4→GPT-4o saw 150x cost reduction, 2035 vision, AI agent economics.
 - [[concepts/ambient-agency]] — Ambient Agency: Gwern's insight that agency, like Turing completeness, inevitably emerges naturally from sufficiently complex systems. An ability "too useful" not to arise, converging without explicit design or choice. A fundamental objection to the Tool AI illusion.
 - [[concepts/ambient-agents]] — Ambient Agents: AI agent paradigm of asynchronous background autonomous execution without chat UI. Adopted by Devin, Codex, Windsurf, Claude Code. Solomon Hykes's 4 requirements (background execution, constraints, multiplayer, discoverability). Key theme at AI Engineer World's Fair 2025.

@@ -1,6 +1,28 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] newsletter-wiki-ingest | AlphaProof Nexus + enrichment batch
+
+### Pages Created
+- [[concepts/alpha-proof-nexus]] — AlphaProof Nexus — DeepMind's LLM+Lean formal proof search framework. 9 Erdős problems solved, 44 OEIS conjectures, paradigm shift toward simple agentic loops. arXiv:2605.22763.
+
+### Pages Enriched
+- [[entities/deepmind]] — Added AlphaProof Nexus to Key Achievements table and Related Concepts
+- [[entities/anthropic]] — Added Felix Rieseberg Claude Cowork philosophy section and Jack Clark predictions section
+- [[entities/google-antigravity]] — Added /grill-me and Google I/O 2026 recap section
+
+### Index Updated
+- Added [[concepts/alpha-proof-nexus]] to Concepts section (639 pages)
+- Bumped section count
+
+### Sources
+- raw/newsletters/2026-05-25-alphaproof-nexus-takes-ai-math-beyond-olympiads.md (Superintel)
+- raw/newsletters/2026-05-25-how-i-ai-how-the-engineer-behind-claude-cowork-actually-uses-claude-cowork-what-.md (Lenny's Podcast)
+- arXiv:2605.22763 / the-decoder.com / cryptobriefing.com
+
+---
+
+
 ## [2026-05-26] newsletter-triage | 3 newsletters processed (2 takes, 5 references, 13 skips)
 - **Lenny's Podcast** "How I AI" — Felix Rieseberg (Anthropic) Claude Cowork philosophy → reference (entities/anthropic.md)
 - **Superintel** "AlphaProof Nexus" — DeepMind formal proof search → take (new concept: alpha-proof-nexus)

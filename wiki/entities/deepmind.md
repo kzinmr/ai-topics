@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-26
 type: entity
 tags:
   - company
@@ -72,6 +72,7 @@ The AI Pointer represents a shift from **chat-box AI** to **ambient/operating-la
 | **AlphaFold 3** | 2024 | Extended to DNA, RNA, small molecules |
 | **Gemini** | 2023+ | Multimodal LLM family; integration into Google products |
 | **AI Pointer** | 2026 | Context-aware cursor; AI at the operating layer |
+| **AlphaProof Nexus** | 2026 | LLM+Lean formal proof search; 9 Erdős problems solved |
 | **Gemma 4** | 2025-26 | Open-weight models; MTP drafters for 3x faster inference |
 
 ## Related Entities
@@ -86,6 +87,7 @@ The AI Pointer represents a shift from **chat-box AI** to **ambient/operating-la
 ## Related Concepts
 
 - [[concepts/alphaevolve]] — DeepMind's Gemini-powered evolutionary coding agent
+- [[concepts/alpha-proof-nexus]] — DeepMind's LLM+Lean formal proof search system (May 2026)
 - [[concepts/agents/computer-use]] — Computer use as an agent modality
 - [[concepts/agentic-engineering]] — AI moving from chat boxes into operating layers
 - [[concepts/deep-research-agent-from-scratch]] — Ivan Leo's research agent workshop

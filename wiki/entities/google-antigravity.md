@@ -1,7 +1,7 @@
 ---
 title: Google Antigravity
 created: 2026-05-23
-updated: 2026-05-25
+updated: 2026-05-26
 type: entity
 tags: [entity, product, google, platform, agentic-engineering, coding-agents, ai-agents, agent-sdk, agent-framework, multi-agent, orchestration, developer-tooling, cli, infrastructure]
 sources:
@@ -71,6 +71,17 @@ When paired with Antigravity, Gemini 3.5 Flash demonstrated:
 | **Ramp** | Multimodal OCR with historical pattern reasoning |
 | **Xero** | Autonomous multi-week 1099 tax workflows |
 | **Databricks** | Real-time data monitoring and issue diagnosis |
+
+### Google I/O 2026 — Antigravity 2.0 /grill-me
+
+At Google I/O 2026 (May 2026), Antigravity 2.0 was showcased with major updates:
+
+- **/grill-me slash command**: Antigravity's aggressive alternative to Claude Code's polite clarification tool — directly questions assumptions and pushes for better solutions
+- **Feature parity with Claude Code and Codex**: Antigravity 2.0 closes the gap with leading coding agents
+- **AI Studio Workspace integration**: Seamless integration with Google's AI development platform
+
+See also: [[entities/gemini-3-5-flash]] (powering Antigravity).
+
 
 ## Technical Details
 
