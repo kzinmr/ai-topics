@@ -18,55 +18,54 @@ sources:
 related:
   - macro-evals-for-agentic-systems
 ---
-
 # Slalom
 
-**Slalom**（正式名称: Slalom, Inc.）は、シアトルに本社を置くグローバルビジネス・テクノロジーコンサルティング企業。創業2001年、約12,000人の従業員を擁し、54拠点・12ヶ国で事業を展開。年商$2.9B。AI・クラウド・データ領域で業界をリードするコンサルティングファームであり、OpenAIとの戦略的パートナーシップを通じてAIエージェント評価の方法論を共同開発している。
+**Slalom** (official name: Slalom, Inc.) is a global business and technology consulting firm headquartered in Seattle. Founded in 2001, it employs approximately 12,000 people across 54 offices in 12 countries, with $2.9B annual revenue. It is a leading consulting firm in AI, cloud, and data domains, co-developing AI agent evaluation methodologies through a strategic partnership with OpenAI.
 
-## 会社概要
+## Company Overview
 
-| 項目 | 詳細 |
-|------|------|
-| **正式名称** | Slalom, Inc. |
-| **業種** | プロフェッショナルサービス（経営・テクノロジーコンサルティング） |
-| **創業** | 2001年（法人起源は1993年のAccounting Quest, LLC） |
-| **創業者** | Brad Jackson, John Tobin, Troy Johnson |
-| **本社** | シアトル（ワシントン州） |
-| **従業員数** | ~12,000人 |
-| **拠点数** | 54拠点・12ヶ国 |
-| **年商** | $2.9B |
-| **経営陣** | Brad Jackson (CEO), Tony Rojas (President), Amy Loftus (Chief Customer Officer) |
+| Item | Details |
+|------|---------|
+| **Official Name** | Slalom, Inc. |
+| **Industry** | Professional Services (Management & Technology Consulting) |
+| **Founded** | 2001 (corporate origins as Accounting Quest, LLC in 1993) |
+| **Founders** | Brad Jackson, John Tobin, Troy Johnson |
+| **Headquarters** | Seattle, Washington |
+| **Employees** | ~12,000 |
+| **Offices** | 54 offices across 12 countries |
+| **Revenue** | $2.9B |
+| **Leadership** | Brad Jackson (CEO), Tony Rojas (President), Amy Loftus (Chief Customer Officer) |
 | **Web** | [slalom.com](https://www.slalom.com/) |
 
-## 沿革
+## History
 
-- **1993年**: Accounting Quest, LLC としてデンバーで設立。会計・ファイナンス人材紹介からスタート
-- **1995年**: Two Degrees, LLC に改称、シアトル進出
-- **2001年**: 現在のSlalomとして正式創業
-- **2011年**: Slalom LLC にリブランド
-- **2018年**: シャーロット（ノースカロライナ）進出
-- **2019年**: マイアミ進出
-- **2021年**: ローリー・ナッシュビル進出
-- **2023年**: Slalom, Inc. に法人形態変更。ダブリン（アイルランド）進出、欧州市場開拓。9月に全社員の7%（~900人）をレイオフ
-- **2024年**: AWS Global GenAI Consulting Partner of the Year 受賞。Angel City FC（女子プロサッカー）とのスポンサーシップ契約
-- **2025年**: メキシコ（テクノロジーハブ）・コロンビア（ボゴタ、メデジン）進出。Google Public Sector AI Partner of the Year 受賞。「The Great AI Disconnect」調査レポート発表
-- **2026年**: AWSとの戦略的協力契約（SCA）を締結し、「AIファースト企業」への変革を加速
+- **1993**: Founded as Accounting Quest, LLC in Denver, starting as an accounting and finance staffing firm
+- **1995**: Rebranded as Two Degrees, LLC, expanded to Seattle
+- **2001**: Formally founded as the current Slalom
+- **2011**: Rebranded to Slalom LLC
+- **2018**: Expanded to Charlotte, North Carolina
+- **2019**: Expanded to Miami
+- **2021**: Expanded to Raleigh and Nashville
+- **2023**: Converted to Slalom, Inc. corporate structure. Expanded to Dublin, Ireland, entering European market. Laid off 7% (~900 employees) in September
+- **2024**: Awarded AWS Global GenAI Consulting Partner of the Year. Signed sponsorship agreement with Angel City FC (professional women's soccer)
+- **2025**: Expanded to Mexico (technology hub) and Colombia (Bogota, Medellin). Awarded Google Public Sector AI Partner of the Year. Published "The Great AI Disconnect" research report
+- **2026**: Signed Strategic Collaboration Agreement (SCA) with AWS, accelerating the transformation to "AI-first company"
 
-## AIコンサルティング
+## AI Consulting
 
-SlalomのAI診断は、OpenAI・AWS・Snowflake・Google Cloud・Microsoft・Salesforce・ServiceNow・Databricks など全主要プラットフォームとのパートナーシップに基づく。
+Slalom's AI practice is built on partnerships with all major platforms: OpenAI, AWS, Snowflake, Google Cloud, Microsoft, Salesforce, ServiceNow, Databricks, and others.
 
-### サービス領域
+### Service Areas
 
-1. **AI戦略策定** — ユースケース特定、ロードマップ策定、ROI設計
-2. **AI/ML構築** — 生成AI・エージェンティックAIの設計・実装（インテリジェントアシスタント、コパイロット、エージェント駆動ワークフロー）
-3. **AI運用（AI Ops）** — 本番環境でのエージェントワークフロー運用管理サービス（モニタリング、ガバナンス、継続的改善）
-4. **データ基盤・AIガバナンス** — レガシーシステムからの移行、データ近代化、責任あるAIフレームワーク
+1. **AI Strategy** — Use case identification, roadmap development, ROI design
+2. **AI/ML Construction** — Generative AI and agentic AI design and implementation (intelligent assistants, copilots, agent-driven workflows)
+3. **AI Operations (AI Ops)** — Production agent workflow management services (monitoring, governance, continuous improvement)
+4. **Data Infrastructure & AI Governance** — Legacy system migration, data modernization, responsible AI frameworks
 
-### 主なパートナーシップと受賞歴
+### Key Partnerships and Awards
 
-| 年 | パートナー | 賞 |
-|----|-----------|-----|
+| Year | Partner | Award |
+|------|---------|-------|
 | 2023 | AWS | Global SI Partner of the Year – AI/ML |
 | 2024 | AWS | Global GenAI Consulting Partner of the Year |
 | 2024 | AWS | Global GenAI Industry Solution Partner of the Year |
@@ -74,28 +73,28 @@ SlalomのAI診断は、OpenAI・AWS・Snowflake・Google Cloud・Microsoft・Sal
 | 2024 | — | Consulting Magazine Leaders in Technology: AI Innovator |
 | 2025 | Google Public Sector | AI Partner of the Year |
 | 2025 | Snowflake | Global Data Cloud Services AI Partner of the Year |
-| 2026 | AWS | Premier Tier Services Partner（20+資格、3,000+プロジェクト） |
+| 2026 | AWS | Premier Tier Services Partner (20+ qualifications, 3,000+ projects) |
 
-### AI調査：「The Great AI Disconnect」（2025年10月）
+### AI Research: "The Great AI Disconnect" (October 2025)
 
-Slalomが発表した第3回AI Insights Surveyは、2,000名のC-Suiteリーダーを対象とした調査:
+Slalom's 3rd annual AI Insights Survey surveyed 2,000 C-Suite leaders:
 
-- **ほぼ全ての企業**が2026年のAI投資増加を計画
-- **93%の組織**が人材スキル不足によるAI導入障壁に直面
-- **50%の企業**が中核業務の半分以上をレガシープラットフォームで運用
-- **わずか38%**がAIによる品質・一貫性の向上を実感
-- **2030年までに**大半のAI駆動型変革が完了するとの認識（Amy Loftus, Chief Customer Officer）
+- **Nearly all companies** plan to increase AI investment in 2026
+- **93% of organizations** face AI adoption barriers due to talent skill gaps
+- **50% of enterprises** run more than half their core operations on legacy platforms
+- **Only 38%** report experiencing quality and consistency improvements from AI
+- **By 2030**, most expect AI-driven transformation to be complete (Amy Loftus, Chief Customer Officer)
 
-## OpenAIとの関係
+## Relationship with OpenAI
 
-SlalomはOpenAIの戦略的コンサルティングパートナーとして、以下の活動を展開:
+As a strategic consulting partner of OpenAI, Slalom engages in:
 
-- **OpenAI Cookbook共著**: Shikhar Kwatra, Will Thieme, Bradley Strauss による「Macro Evals for Agentic Systems」を共同制作
-- **エンタープライズ向けOpenAI導入**: OpenAIのAIを人間のプロセスに統合するためのコンサルティング提供
+- **Co-authoring the OpenAI Cookbook**: Co-created "Macro Evals for Agentic Systems" with Shikhar Kwatra, Will Thieme, and Bradley Strauss
+- **Enterprise OpenAI Deployment**: Consulting to integrate OpenAI's AI into human processes
 
-## 主要顧客
+## Key Clients
 
-Alaska Airlines, Allstate, eBay, Hyatt, Microsoft, REI など、Global 1000および500以上の公共機関。
+Alaska Airlines, Allstate, eBay, Hyatt, Microsoft, REI, and other Global 1000 companies plus 500+ public sector organizations.
 
 ## See Also
 

@@ -6,7 +6,7 @@ aliases:
   - long-running-agent-harness
   - initializer-coding-pattern
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-26
 tags:
   - concept
   - architecture
@@ -19,60 +19,60 @@ sources:
 
 # Effective Harnesses for Long-Running Agents
 
-AnthropicがClaude Agent SDKで開発した、長時間実行エージェント用の2エージェント・ハーネスパターン。
+A two-agent harness pattern for long-running agents, developed by Anthropic for the Claude Agent SDK.
 
-## 核心課題
+## Core Challenge
 
 > "Agents must work in discrete sessions, and each new session begins with no memory of what came before. Imagine a software project staffed by engineers working in shifts, where each new engineer arrives with no memory of what happened on the previous shift."
 
-**コンテキストウィンドウの限界**により、エージェントはセッション間でメモリを失う。Compaction（圧縮）だけでは不十分。
+Due to **context window limits**, agents lose memory between sessions. Compaction alone is insufficient.
 
-## 2つの主要な失敗モード
+## Two Primary Failure Modes
 
 ### 1. One-shotting
-エージェントがすべてを一度に構築しようとし、実装途中でコンテキストが尽きる。次のセッションが推測/回復を強いられる。
+The agent tries to build everything at once and runs out of context mid-implementation. The next session is forced to guess/recover.
 
 ### 2. Premature Completion
-後続のセッションが部分的な進捗を見て、誤ってジョブが完了したと判断し、作業を停止する。
+Subsequent sessions see partial progress and incorrectly assume the job is complete, stopping work.
 
-## 2エージェントアーキテクチャ
+## Two-Agent Architecture
 
-| エージェント | 役割 | 主要な動作 |
+| Agent | Role | Key Actions |
 |:---|:---|:---|
-| **Initializer Agent** | 最初のセッションで**1回**実行 | 環境のスキャフォールディング、追跡ファイルの作成、ベースラインスクリプトの書き込み、初期状態のコミット |
-| **Coding Agent** | すべての後続セッションで実行 | 1つの機能を選択、実装、エンドツーエンドテスト、クリーンコミット、進捗ログの更新 |
+| **Initializer Agent** | Runs **once** in the first session | Scaffolds environment, creates tracking files, writes baseline scripts, commits initial state |
+| **Coding Agent** | Runs in all subsequent sessions | Selects one feature, implements, end-to-end tests, clean commits, updates progress log |
 
-> **注**: 両方とも同じシステムプロンプトとツールを使用。異なるのは初期ユーザープロンプトのみ。
+> **Note**: Both use the same system prompt and tools. Only the initial user prompt differs.
 
-## 環境管理と重要アーティファクト
+## Environment Management & Key Artifacts
 
 ### 1. `feature_list.json`
-- モノリシックなプロンプトを個別の追細分化された要件に分解（例: claude.aiクローンの場合200+機能）
-- すべての機能は `"passes": false` から開始
-- **厳格なルール**: *「テストの削除や編集は受け入れられない。欠落またはバグのある機能につながる可能性があるため」*
-- **JSONの理由**: モデルがMarkdownよりも構造化されたJSONを誤って上書き/破損する可能性が低い
+- Decomposes monolithic prompts into granular, trackable requirements (e.g., 200+ features for a claude.ai clone)
+- All features start with `"passes": false`
+- **Strict Rule**: *"Deletion or editing of tests is not acceptable. It can lead to missing or buggy features."*
+- **Why JSON**: Less likely to be accidentally overwritten/corrupted by the model than Markdown
 
-### 2. `claude-progress.txt` & Git履歴
-- **進捗ファイル**: セッションごとの完了作業と決定のログ
-- **Git**: 記述的なコミット、悪い変更の容易な取り消し、「クリーンな状態」の維持（マージ可能なコード、主要なバグなし、適切に文書化）
+### 2. `claude-progress.txt` & Git History
+- **Progress File**: Log of completed work and decisions per session
+- **Git**: Descriptive commits, easy rollback of bad changes, maintaining "clean state" (mergeable code, no major bugs, properly documented)
 
 ### 3. `init.sh`
-- 開発サーバーの起動とベースラインのスモークテストを自動化。セッション間のセットアップ摩擦を排除。
+- Automates dev server startup and baseline smoke tests. Eliminates setup friction between sessions.
 
-## セッションワークフローと起動プロトコル
+## Session Workflow & Launch Protocol
 
-すべてのコーディングエージェントは、トークンを節約し、回帰を防止するために厳格なシーケンスに従う：
+All coding agents follow a strict sequence to save tokens and prevent regressions:
 
-1. `pwd` → ワーキングディレクトリを確認
-2. `claude-progress.txt` & `git log` を読み取り → 最近の状態を理解
-3. `feature_list.json` を読み取り → 最優先の未完了機能を選択
-4. `init.sh` を実行 → 開発サーバーを起動
-5. ベースラインのエンドツーエンドテストを実行 → 既存の機能が壊れていないことを確認
-6. 実装 → テスト → コミット → 進捗ファイルを更新
+1. `pwd` → Verify working directory
+2. Read `claude-progress.txt` & `git log` → Understand recent state
+3. Read `feature_list.json` → Select highest-priority incomplete feature
+4. Run `init.sh` → Start dev server
+5. Run baseline end-to-end tests → Verify existing features aren't broken
+6. Implement → Test → Commit → Update progress file
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — 上位インデックス
-- [[concepts/harness-engineering]] — Harness Engineering（Ryan Lopopolo）
-- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — エージェントによる手動テストの自動化
-- [[concepts/context-engineering]] — コンテキストエンジニアリング
+- [[concepts/harness-engineering]] — Parent index
+- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo)
+- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — Automating manual testing through agents
+- [[concepts/context-engineering]] — Context engineering

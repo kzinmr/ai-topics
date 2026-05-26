@@ -7,7 +7,7 @@ aliases:
   - skill-explosion-problem
   - product-positioning-framework
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-26
 tags:
   - concept
   - openclaw
@@ -31,116 +31,116 @@ sources:
 
 # OpenClaw vs Hermes — Architecture Comparison
 
-## 概要
+## Overview
 
-elvis（@elvis_）が2026年4月に行った**9時間のHermes Agent vs OpenClawの並列ソースコード研究**に基づくアーキテクチャ比較分析。
+An architecture comparison analysis based on elvis's (@elvis_) **9-hour side-by-side source code study of Hermes Agent vs OpenClaw** conducted in April 2026.
 
 > *"@steipete gave the world a new layer in the stack and put a claw in everyone's hand. That's foundational work."* — elvis
 
-## 二つのアプローチ
+## Two Approaches
 
-| 次元 | OpenClaw (Steinberger) | Hermes Agent (Nous Research) |
+| Dimension | OpenClaw (Steinberger) | Hermes Agent (Nous Research) |
 |------|----------------------|------------------------------|
-| **哲学** | Primitives First, Linux/K8sスタイル | Batteries-included, Railsスタイル |
-| **スキル管理** | 明示的、ユーザー統治（Governed） | 自己作成（Self-authoring） |
-| **デフォルト** | ベースラインのみ | 123+ バンドルSKILL.md |
-| **成長モデル** | 制限付き（ClawHub経由） | 有機的（エージェントが自律作成） |
-| **デバッグ** | `grep`一発で追跡可能 | 複数スキル横断調査が必要 |
-| **ツール起動精度** | 高い（明示的ルーティング） | 低い（実行時推測） |
-| **Day-One生産性** | 設定が必要 | 即座に生産的 |
+| **Philosophy** | Primitives First, Linux/K8s style | Batteries-included, Rails style |
+| **Skill Management** | Explicit, user-governed | Self-authoring |
+| **Defaults** | Baseline only | 123+ bundled SKILL.md |
+| **Growth Model** | Restricted (via ClawHub) | Organic (agent auto-creates) |
+| **Debugging** | Trackable with a single `grep` | Cross-skill investigation required |
+| **Tool Invocation Accuracy** | High (explicit routing) | Lower (runtime guess) |
+| **Day-One Productivity** | Requires configuration | Immediately productive |
 
 ## Five-Tier Skill Precedence vs Self-Authored Skills
 
-### OpenClaw: 決定論的階層モデル
+### OpenClaw: Deterministic Hierarchy Model
 ```
-1. Workspace skills     （最優先）
+1. Workspace skills     (highest priority)
 2. User global skills
 3. Managed skills
-4. Bundled skills       （ベースラインのみ）
-5. Extra skills         （最低優先度）
+4. Bundled skills       (baseline only)
+5. Extra skills         (lowest priority)
 ```
 
-**利点:** 「何か壊れた時、grep一発で追える。どのスキルがトリガーされたか推測する必要がない。」
+**Advantage:** "When something breaks, you can track it with a single grep. No need to guess which skill was triggered."
 
 ### Hermes: Self-Authored Skills
 ```
-1. Prompt Nudge → スキル保存を検討
-2. Background Review → タスク完了後にスキャン
-3. Pre-Compression Flush → コンテキスト圧縮前に保存
-4. Blunt Rule → 既存スキルがあれば修正、なければ新規作成
+1. Prompt Nudge → consider saving as skill
+2. Background Review → scan after task completion
+3. Pre-Compression Flush → save before context compression
+4. Blunt Rule → modify existing skill or create new one
 ```
 
-**利点:** エージェントが「こんなスキルがあったのか」と自律的に発見する
+**Advantage:** The agent autonomously discovers "Oh, there was a skill for this"
 
 ## Skill Explosion Problem
 
-Hermesの有機的成長モデルが抱える根本的問題：
+A fundamental problem with Hermes's organic growth model:
 
 > *"Real example: the agent wanted to read an image from my desktop. Tried browser read and vision skill, nothing worked. So it wrote a third `read-local-image` skill lol."* — elvis
 
-### 問題の構造
-1. エージェントは「これをスキル化すべき」を特定するのは得意
-2. 「これは既に別のフォルダにある」を特定するのは苦手
-3. コーパスが統合速度よりも速く成長する
-4. 結果：素晴らしいスキル、重複スキル、誰も存在を覚えていないスキル
+### Problem Structure
+1. Agents are good at identifying "this should be a skill"
+2. They are bad at identifying "this already exists in another folder"
+3. The corpus grows faster than integration speed
+4. Result: great skills, duplicate skills, and skills no one remembers exist
 
-### OpenClawの解決策
-- バイト数キャップ
-- 候補数キャップ
-- シンボリックリンク拒否
-- 検証済みファイルオープンのみ
-- 資格チェック ≠ 発見（異なるエージェントが異なるサブセットを見る）
+### OpenClaw's Solution
+- Byte count cap
+- Candidate count cap
+- Symlink rejection
+- Only verified file opens
+- Eligibility check ≠ discovery (different agents see different subsets)
 
 ## Product Positioning Framework
 
-elvisによる競争分析フレームワーク：
+elvis's competitive analysis framework:
 
-### カテゴリ定義者への対抗は失敗する
+### Fighting the Category-Definer Fails
 > *"OpenClaw had the audience. The mindshare, the GitHub stars, the 'it's basically the standard now' energy. Look at what happened to everyone who tried to fight that fight head-on — nanoclaw, nullclaw, picoclaw, zeroclaw. All trying to out-OpenClaw OpenClaw. None got Hermes's traction."*
 
-### 新しいゲームを作る方が成功する
-- **Hermesの勝ち手**: OpenClawのボードで戦わない
+### Creating a New Game Succeeds
+- **Hermes's Winning Move**: Don't fight on OpenClaw's board
 - Self-authoring vs governed
 - Bundled-by-default vs primitives-only
 - Tool Gateway as ecosystem lock-in
 - 「We are not the minimalist primitives company」
 
-### Rails vs Linux/Kubernetes アナロジー
+### Rails vs Linux/Kubernetes Analogy
 
 | | Hermes = Rails | OpenClaw = Linux/K8s |
 |---|---|---|
-| 価値 | 意見のあるデフォルト | 最小限のプリミティブ |
-| 哲学 | happy path が最初から用意されている | 必要なものを自分で組み立てる |
-| トレードオフ | 初期生産性が高いが、カスタマイズが複雑 | 初期設定が必要だが、完全に制御可能 |
+| Value | Opinionated defaults | Minimal primitives |
+| Philosophy | Happy path ready out of the box | Assemble what you need yourself |
+| Trade-off | High early productivity but complex customization | Initial setup needed but fully controllable |
 
 ## AGENTS.md Optimization Pattern
 
-elvisがOpenClawのTOOLS.md + VercelのAGENTS.mdを組み合わせ：
+elvis combined OpenClaw's TOOLS.md with Vercel's AGENTS.md:
 
 > *"Tool activation correctness is better on OpenClaw than Hermes for tasks where the agent has to pick the right CLI/API from ~50 options."*
 
-**原則:** Explicit > Implicit
+**Principle:** Explicit > Implicit
 
-## 実践的意思決定フレームワーク
+## Practical Decision Framework
 
-| ユーザープロファイル | 推奨 | 理由 |
+| User Profile | Recommendation | Reason |
 |---------------------|------|------|
-| とにかく早く始めたい | **Hermes** | 意見のあるデフォルト = Day Oneで生産的 |
-| 100%のコントロールが必要 | **OpenClaw** | 可読性とスコープ制御が最重要 |
-| カスタムエージェントを構築 | **両方** | OpenClawから統治を、Hermesから自己改善を学ぶ |
+| Start fast at any cost | **Hermes** | Opinionated defaults = productive from Day One |
+| Need 100% control | **OpenClaw** | Readability and scope control are paramount |
+| Building custom agents | **Both** | Learn governance from OpenClaw, self-improvement from Hermes |
 
-## 主要な洞察
+## Key Insights
 
 > *"Both harnesses will do everything you want. Pick either, you'll be fine. But the more interesting question isn't which to pick — it's what you can learn from each."* — elvis
 
 > *"You don't even need to use OpenClaw to benefit from OpenClaw — the patterns will show up in everything downstream for years."* — elvis
 
-## 関連
+## Related
 
-- [[concepts/openclaw]] — OpenClawコンセプト集約
-- [[concepts/openclaw/five-tier-precedence]] — 5階層スキル優先度モデル
-- [[concepts/openclaw/philosophy]] — Primitives First哲学
-- [[concepts/skill-architecture-patterns]] — スキルアーキテクチャの比較分析
-- [[comparisons/hermes-vs-openclaw-architecture]] — 詳細なアーキテクチャ比較
-- [[entities/peter-steinberger]] — OpenClaw創設者
+- [[concepts/openclaw]] — OpenClaw concept hub
+- [[concepts/openclaw/five-tier-precedence]] — 5-tier skill precedence model
+- [[concepts/openclaw/philosophy]] — Primitives First philosophy
+- [[concepts/skill-architecture-patterns]] — Comparative analysis of skill architectures
+- [[comparisons/hermes-vs-openclaw-architecture]] — Detailed architecture comparison
+- [[entities/peter-steinberger]] — OpenClaw founder
 - [[entities/hermes-agent]] — Hermes Agent

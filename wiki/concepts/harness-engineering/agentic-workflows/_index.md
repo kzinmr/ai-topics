@@ -6,7 +6,7 @@ aliases:
   - agentic-coding-patterns
   - developer-agentic-workflows
 created: 2026-04-12
-updated: 2026-04-19
+updated: 2026-05-26
 tags:
   - concept
   - methodology
@@ -17,114 +17,114 @@ parent: harness-engineering
 sources: []
 ---
 
-# Agentic Workflows — 開発者ワークフロー
+# Agentic Workflows — Developer Workflows
 
-AI Agentを「活用してソフトウェアを開発する」実践的ワークフローとパターン。**Harness Engineeringのサブセクション**として位置づけられる。
+Practical workflows and patterns for "using AI agents to develop software." Positioned as a **subsection of Harness Engineering**.
 
-## Harness Engineering内での位置づけ
+## Positioning within Harness Engineering
 
-| レイヤー | 概念 | 焦点 |
+| Layer | Concept | Focus |
 |---------|------|------|
-| **最上位** | [[concepts/_index|Harness Engineering]] | Agent = Model + Harness（環境設計哲学） |
-| **横断技術** | [[concepts/context-engineering]] | コンテキストの選択・圧縮・配置（有限リソース管理） |
-| **応用（人間側）** | **Agentic Workflows**（本ページ） | 開発者がエージェントを「活用する」パターン |
-| **応用（システム側）** | [[concepts/harness-engineering/system-architecture/_index]] | エージェントを「構築する」パターン |
+| **Top** | [[concepts/_index|Harness Engineering]] | Agent = Model + Harness (environment design philosophy) |
+| **Cross-cutting** | [[concepts/context-engineering]] | Context selection, compression, placement (finite resource management) |
+| **Application (Human)** | **Agentic Workflows** (this page) | Patterns for developers to "leverage" agents |
+| **Application (System)** | [[concepts/harness-engineering/system-architecture/_index]] | Patterns for "building" agents |
 
-## リーダー別主要コンセプト
+## Key Concepts by Leader
 
-| リーダー | コアコンセプト | 関連ページ |
+| Leader | Core Concept | Related Pages |
 |---------|--------------|-----------|
-| [[entities/simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | 以下のWillisonパターン群 |
-| [[entities/andrej-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[concepts/karpathy-rl-agents]] |
-| [[entities/sankalp-sinha]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
-|  | Agent-First Design, CLI-First Development, Plan Mode不要論, inference-speed bottleneck | 以下のSteipeteパターン群 |
+| [[entities/simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | Willison pattern group below |
+| [[entities/andrej-karpathy]] | Software 2.0, RL-based agent learning, data-centric AI | [[concepts/karpathy-rl-agents]] |
+| [[entities/sankalp-sinha]] | Claude Code 2.0 practical guide, sub-agent lossiness, Throw-Away Draft, context 60% rule | Sankalp pattern group below |
+|  | Agent-First Design, CLI-First Development, No-Plan-Mode thesis, inference-speed bottleneck | Steipete pattern group below |
 
-## Simon Willisonの開発パターン
+## Simon Willison's Development Patterns
 
-### 🧪 テスト駆動開発
+### 🧪 Test-Driven Development
 
-| ページ | 概要 |
+| Page | Summary |
 |-------|------|
-| [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] | エージェントにコードを変更させる前に、まずテストを実行させる |
-| [[concepts/red-green-tdd]] | エージェントがテストを書いてから実装するRed/Green TDDサイクル |
-| [[concepts/agentic-manual-testing]] | エージェントによる手動テストの自動化 |
+| [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] | Run tests first before letting agents change code |
+| [[concepts/red-green-tdd]] | Red/Green TDD cycle where agents write tests before implementation |
+| [[concepts/agentic-manual-testing]] | Automating manual testing through agents |
 
-### 📝 ドキュメンテーション & 成果物
+### 📝 Documentation & Artifacts
 
-| ページ | 概要 |
+| Page | Summary |
 |-------|------|
-| [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] | Linearチケットの解説生成 |
-| [[concepts/showboat]] | エージェントの作業内容を可視化するドキュメンテーションツール |
-| [[concepts/interactive-explanations]] | 対話的アニメーションでアルゴリズムを説明させる |
-| [[concepts/vibe-coding]] | テスト不要の「感覚で書く」アプローチとその限界 |
+| [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] | Generating explanations from Linear tickets |
+| [[concepts/showboat]] | A documentation tool that visualizes agent work |
+| [[concepts/interactive-explanations]] | Explaining algorithms via interactive animations |
+| [[concepts/vibe-coding]] | The "write by feel" approach without tests and its limitations |
 
-### 🔧 ツール統合
+### 🔧 Tool Integration
 
-| ページ | 概要 |
+| Page | Summary |
 |-------|------|
-| [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] | Gitワークフローへのエージェント統合 |
-| [[concepts/harness-engineering/agentic-workflows/how-agents-work]] | コーディングエージェントの内部仕組みの概念モデル |
+| [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] | Integrating agents into Git workflows |
+| [[concepts/harness-engineering/agentic-workflows/how-agents-work]] | Conceptual model of how coding agents work internally |
 
-### 🧠 認知と品質
+### 🧠 Cognition and Quality
 
-| ページ | 概要 |
+| Page | Summary |
 |-------|------|
-| [[concepts/cognitive-debt]] | エージェント生成コードを理解せずにマージすると蓄積する「認知負債」 |
-| [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] | 反復的品質向上ループ |
-| [[concepts/harness-engineering/agentic-workflows/code-hoarding]] | 重要な知識をエージェントのコンテキスト外に保持するパターン |
+| [[concepts/cognitive-debt]] | "Cognitive debt" accumulated when merging agent-generated code without understanding it |
+| [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] | Iterative quality improvement loop |
+| [[concepts/harness-engineering/agentic-workflows/code-hoarding]] | Pattern for keeping important knowledge outside agent context |
 
-### 🏗️ Sankalpの実用パターン
+### 🏗️ Sankalp's Practical Patterns
 
-| ページ | 概要 |
+| Page | Summary |
 |-------|------|
-| [[concepts/context-window-management]] | コンテキスト60%ルール、圧縮戦略 |
-| [[concepts/throw-away-draft-pattern]] | 捨て台本→比較→反復の開発サイクル |
-| [[concepts/subagents]] | サブエージェントのlossiness、使い分け指針 |
+| [[concepts/context-window-management]] | Context 60% rule, compression strategies |
+| [[concepts/throw-away-draft-pattern]] | Draft → compare → iterate development cycle |
+| [[concepts/subagents]] | Sub-agent lossiness, usage guidelines |
 
-### 🚀 Steipeteの推論速度開発
+### 🚀 Steipete's Inference-Speed Development
 
-| ページ | 概要 |
+| Page | Summary |
 |-------|------|
-| [[concepts/agent-first-design]] | 「人間向け」ではなく「エージェント向け」コード設計 |
-| [[concepts/harness-engineering/agentic-workflows/cli-first-development]] | CLIから始めてフィードバックループを高速化 |
-| [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] | プロンプト駆動開発パターン |
+| [[concepts/agent-first-design]] | Code design for "agents" not "humans" |
+| [[concepts/harness-engineering/agentic-workflows/cli-first-development]] | Start with CLI to accelerate feedback loops |
+| [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] | Prompt-driven development patterns |
 
 ## Agentic Workflows vs System Architecture
 
-| 次元 | Agentic Workflows | System Architecture |
+| Dimension | Agentic Workflows | System Architecture |
 |------|-------------------|---------------------|
-| 焦点 | 開発者のワークフロー | システムのアーキテクチャ |
-| 主語 | 「人間がエージェントをどう使うか」 | 「エージェントをどう作るか」 |
-| 代表例 | WillisonのRed/Green TDD、Cognitive Debt | AnthropicのBuilding Effective Agents |
-| レイヤー | 応用・活用 | 基盤・設計 |
+| Focus | Developer workflows | System architecture |
+| Subject | "How humans use agents" | "How to build agents" |
+| Example | Willison's Red/Green TDD, Cognitive Debt | Anthropic's Building Effective Agents |
+| Layer | Application/Usage | Foundation/Design |
 
-## 関連概念マップ
+## Related Concept Map
 
 ```
 Agentic Workflows (Harness Engineering)
-├── 🧪 Willisonのテストパターン
+├── 🧪 Willison's Test Patterns
 │   ├── First Run the Tests
 │   ├── Red/Green TDD
 │   └── Agentic Manual Testing
-├── 📝 ドキュメンテーション
+├── 📝 Documentation
 │   ├── Linear Walkthroughs
 │   ├── Showboat
 │   └── Interactive Explanations
-├── 🔧 ツール統合
+├── 🔧 Tool Integration
 │   ├── Using Git with Agents
 │   ├── How Coding Agents Work
 │   └── Vibe Coding
-├── 🧠 認知と品質
+├── 🧠 Cognition and Quality
 │   ├── Cognitive Debt
 │   ├── Compound Engineering Loop
 │   └── Code Hoarding
-└── 🤖 KarpathyのRLエージェント
+└── 🤖 Karpathy's RL Agents
     └── Software 2.0 / Autoresearch Loop
 ```
 
-## 更新履歴
+## Changelog
 
-| 日付 | 変更内容 |
+| Date | Changes |
 |------|---------|
-| 2026-04-12 | 初期作成 — Willison開発パターン中心に構築 |
-| 2026-04-19 | Harness umbrella再編成: タイトル更新、System Architectureとの位置づけ表追加、重複エントリ整理 |
+| 2026-04-12 | Initial creation — Built around Willison's development patterns |
+| 2026-04-19 | Harness umbrella reorganization: title update, added System Architecture positioning table, consolidated duplicate entries |

@@ -14,6 +14,27 @@
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
 
+## [2026-05-26] translate | JP→EN batch — 8 entity/concept pages (6,831 chars)
+
+### Files Translated
+- [[entities/slalom]] — ~959 JP chars removed — Full Japanese body
+- [[entities/promptfoo]] — ~936 JP chars removed — Mixed JP/EN
+- [[concepts/multi-agent-research-system]] — ~877 JP chars removed — Mixed JP/EN
+- [[entities/webmcp]] — ~872 JP chars removed — Mixed JP/EN
+- [[concepts/harness-engineering/agentic-workflows/_index]] — ~870 JP chars removed — Mixed JP/EN
+- [[concepts/openclaw/architecture-comparison]] — ~866 JP chars removed — Mixed JP/EN
+- [[concepts/harness-engineering/system-architecture/effective-harnesses-for-long-running-agents]] — ~864 JP chars removed
+- [[concepts/harness-engineering/agentic-workflows/throw-away-draft-pattern]] — ~862 JP chars removed
+
+### Stats
+- Total JP chars removed: ~6,831
+- Remaining JP files (excl. logs): 224
+- Remaining JP chars in wiki: ~85,103
+- Updated all `updated:` dates to 2026-05-26
+
+
+---
+
 ## [2026-05-26] dreaming-wiki-ingest | Nightly knowledge consolidation — agent infrastructure & evaluation architecture
 
 ### Pages Created

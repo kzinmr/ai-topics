@@ -2,7 +2,7 @@
 title: "Multi-Agent Research System (Anthropic)"
 type: concept
 created: 2026-04-25
-updated: 2026-05-08
+updated: 2026-05-26
 tags:
   - multi-agent
   - orchestration
@@ -24,90 +24,90 @@ related:
 
 # Multi-Agent Research System (Anthropic)
 
-AnthropicがClaude Research機能のために構築したマルチエージェントシステム。Orchestrator-workerパターンで、リードエージェントが並列サブエージェントを動的に生成・調整する。
+A multi-agent system built by Anthropic for the Claude Research feature. Uses the orchestrator-worker pattern, where a lead agent dynamically spawns and coordinates parallel sub-agents.
 
-## 性能
+## Performance
 
 > Multi-agent system with Claude Opus 4 lead + Claude Sonnet 4 subagents **outperformed single-agent Claude Opus 4 by 90.2%** on internal research eval.
 
-### BrowseCompでのトークン効果分析
+### Token Efficiency Analysis on BrowseComp
 
-- **トークン使用量だけで分散の80%を説明**
-- ツール呼び出し回数 + モデル選択で95%説明
-- Multi-agent: チャットの **15倍** のトークン消費（経済性には高価値タスクが前提）
+- **Token usage alone explains 80% of the variance**
+- Tool call count + model selection explains 95%
+- Multi-agent: consumes **15x** the tokens of a chat (economically viable only for high-value tasks)
 
-## アーキテクチャ
+## Architecture
 
 ```
-User Query → Lead Agent (計画・戦略)
-                ├── Subagent 1 (独立検索)
-                ├── Subagent 2 (独立検索)
-                └── Subagent N (独立検索)
+User Query → Lead Agent  (planning & strategy)
+                ├── Subagent 1  (independent search)
+                ├── Subagent 2  (independent search)
+                └── Subagent N  (independent search)
                           ↓
-                Lead Agent (結果統合)
+                Lead Agent  (result synthesis)
                           ↓
-                CitationAgent (引用検証)
+                CitationAgent  (citation verification)
                           ↓
                 Final Answer
 ```
 
-### 主要コンポーネント
-- **Lead Agent**: クエリ分析→戦略策定→サブエージェント生成→結果統合。Memoryに計画を永続化（200Kトークン制限対策）
-- **Subagents**: 並列独立検索。Interleaved Thinkingでツール結果を評価
-- **CitationAgent**: 全クレームの出典を検証
-- **Memory**: コンテキスト制限を超えた場合の計画保持
+### Key Components
+- **Lead Agent**: Query analysis → strategy formulation → sub-agent generation → result synthesis. Persists plans in Memory (to work around 200K token limit)
+- **Subagents**: Parallel independent search. Evaluate tool results with Interleaved Thinking
+- **CitationAgent**: Verifies sources for all claims
+- **Memory**: Holds plans when context limit is exceeded
 
-## プロンプトエンジニアリングの教訓
+## Prompt Engineering Lessons
 
 ### 1. Think like your agents
-シミュレーションでエージェントの段階的な動作を観察→失敗モードを直接発見
+Observe agents' step-by-step behavior in simulation → directly discover failure modes
 
 ### 2. Teach the orchestrator how to delegate
-各サブエージェントに: 目的・出力形式・ツール/ソース指示・明確なタスク境界が必要
-「半導体不足を調査」→ 曖昧すぎて3体が重複作業
+Each sub-agent needs: objective, output format, tool/source instructions, and clear task boundaries
+""Research semiconductor shortage"" → too vague, 3 agents duplicate work
 
 ### 3. Scale effort to query complexity
-- 単純事実確認: 1 agent, 3-10 tool calls
-- 直接比較: 2-4 subagents, 10-15 calls
-- 複雑リサーチ: 10+ subagents（明確な役割分担）
+- Simple fact-check: 1 agent, 3-10 tool calls
+- Direct comparison: 2-4 subagents, 10-15 calls
+- Complex research: 10+ subagents (clear role specialization)
 
 ### 4. Let agents improve themselves
-ツールテストエージェントがMCPツールを数十回使用→説明を書き換え→**タスク完了時間40%削減**
+Tool testing agent uses MCP tools dozens of times → rewrites descriptions → **40% reduction in task completion time**
 
 ### 5. Start wide, then narrow down
-短く広いクエリから始め、徐々に絞り込む（人間の専門家リサーチと同じ）
+Start with short, broad queries and gradually narrow down (same as human expert research)
 
 ### 6. Parallel tool calling
-- Lead agent: 3-5 subagentsを並列生成
-- Subagents: 3+ツールを並列使用
-- **複雑クエリのリサーチ時間を最大90%削減**
+- Lead agent: spawns 3-5 subagents in parallel
+- Subagents: use 3+ tools in parallel
+- **Reduces research time for complex queries by up to 90%**
 
-## 評価手法
+## Evaluation Methodology
 
-### LLM-as-Judge ルーブリック
-| 次元 | 評価内容 |
+### LLM-as-Judge Rubric
+| Dimension | Evaluation |
 |------|---------|
-| Factual accuracy | クレームはソースと一致するか |
-| Citation accuracy | 引用は実際にクレームを裏付けるか |
-| Completeness | 要求された全側面をカバーしているか |
-| Source quality | 一次ソースを使っているか |
-| Tool efficiency | 適切なツールを適切な回数使ったか |
+| Factual accuracy | Do claims match sources? |
+| Citation accuracy | Do citations support the claims? |
+| Completeness | Are all requested aspects covered? |
+| Source quality | Are primary sources used? |
+| Tool efficiency | Were tools used appropriately and enough times? |
 
-単一LLMコールで0.0-1.0のスコア＋pass-fail判定が最も一貫性があった。
+A single LLM call producing a 0.0-1.0 score with pass-fail judgment showed the highest consistency.
 
-### 人間評価の価値
-- 幻覚回答・システム障害・微妙なソース選択バイアスを発見
-- 初期: SEO最適化コンテンツファームを学術PDFより優先 → ソース品質ヒューリスティック追加
+### Value of Human Evaluation
+- Detects hallucinated answers, system failures, and subtle source selection bias
+- Early: prioritized SEO-optimized content farms over academic PDFs → added source quality heuristics
 
-## 本番信頼性の課題
+## Production Reliability Challenges
 
-- **状態保持の複雑性**: マイナーな障害がエージェント全体を脱線させる
-- **Rainbow deployments**: 実行中のエージェントを壊さず徐々にトラフィック移行
-- **同期実行のボトルネック**: リードエージェントがサブエージェント完了を待つ（非同期化で改善余地）
+- **State Management Complexity**: Minor failures derail the entire agent
+- **Rainbow deployments**: Gradually migrate traffic without breaking running agents
+- **Synchronous Execution Bottleneck**: Lead agent waits for sub-agent completion (room for improvement with async)
 
-## サブエージェントのファイルシステム出力
+## Sub-agent Filesystem Output
 
-> サブエージェントがツールを呼び出して外部システムに成果物を保存→軽量参照のみコーディネーターに返す。「传言ゲーム」を防止し、大規模出力のトークンコピーを回避。
+> Sub-agents call tools to save artifacts to external systems, returning only lightweight references to the coordinator. Prevents the "telephone game" and avoids token copying of large outputs.
 
 ## See Also
 
