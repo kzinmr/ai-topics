@@ -3467,3 +3467,22 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - raw/papers/2026-03-31_2603.29519_single-vector-embeddings-limitations.md
 - https://arxiv.org/abs/2603.29519
 - https://arxiv.org/abs/2012.14210 (Reimers & Gurevych, 2021)
+
+## [2026-05-26] translate | JP→EN batch — 8 files translated to English
+
+- **Total JP chars removed**: 6,125
+- **Files translated**:
+  - entities/manus.md — JP→EN (Manus AI agent, Browser Operator, Meta acquisition)
+  - concepts/kv-cache.md — JP→EN (KV Cache in Transformer inference, implementation, optimization)
+  - entities/perplexity-comet.md — JP→EN (Perplexity Comet AI-native browser, CometJacking)
+  - concepts/bitter-lesson-agent-harnesses.md — JP→EN (Gregor Zunic's minimal agent philosophy)
+  - concepts/claude-opus-4-7.md — JP→EN (Anthropic Claude Opus 4.7 release, benchmarks, tokenizer)
+  - concepts/harness-engineering/agentic-workflows/prompt-driven-development.md — JP→EN (Simon Willison's PDD methodology)
+  - concepts/agentic-web.md — JP→EN (Web paradigm shift to agent-centric, title also translated)
+  - concepts/nvidia-rtx-ai-garage.md — JP→EN (NVIDIA RTX AI Garage program, Hermes Agent inclusion)
+- **All 8 files**: 0 remaining JP chars in body content
+- **Remaining JP chars in wiki**: ~73,560 across 200+ non-log files
+- **Commit**: 8781ddd6 — pushed to main
+
+### Sources
+- None (batch translation — no new sources ingested)
