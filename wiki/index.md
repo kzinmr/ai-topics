@@ -1356,7 +1356,7 @@
 - [[events/google-io-2026]] — Google I/O 2026 (2026-05-20) — Gemini Spark (personal AI agent), Antigravity platform, Gemini 3.5 Flash announced. OpenCLaw competitor. Gemini CLI→Antigravity CLI migration (OSS→proprietary). Agent security (prompt injection) concerns.
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 
-## Comparisons (20 pages)
+## Comparisons (22 pages)
 
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — Memory architecture comparison of 4 harnesses: OpenClaw/Claude Code/Codex/Hermes. File-first common philosophy, vector search vs full-text search, async vs sync vs Bounded Snapshot, Pre-Compaction Flush, Bustamante 3-type classification, with selection guide.
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks

@@ -11,6 +11,21 @@
 | 2026-05-26 14:50 | Updated | entities/dimitris-papailiopoulos.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
+## [2026-05-26] watchdog | Index header fix + structural audit
+
+### Auto-fixed
+- wiki/index.md — Comparisons header count corrected: 20 → 22 (matches actual file count)
+
+### Issues reported (not auto-fixed)
+- Events section (lines 1330-1350) contains 21 concept pages under the Events header — should be in Concepts or moved to proper event entries
+- Duplicate log entries detected: "## [2026-05-26] translate | JP→EN batch — 8 files" appears 5x
+- 704+ concept pages not indexed (known gap — "Not in index: 693" header matches)
+- wiki-graph-analysis stale: last ran 2026-05-22 (98+ hours ago)
+- Everything else clean: index.md passes validate_index.py (0 corruption issues)
+
+---
+
+
 ## [2026-05-26] translate | JP→EN batch #2 — 8 files
 
 ### Files Translated
