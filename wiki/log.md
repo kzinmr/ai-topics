@@ -1,6 +1,26 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] translate | JP→EN batch — 8 concept files
+
+### Files Translated
+- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling.md]] — 1,651 JP chars removed
+- [[concepts/gliclass.md]] — 1,655 JP chars removed
+- [[concepts/harness-engineering/agentic-engineering-patterns.md]] — 1,655 JP chars removed
+- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition.md]] — 1,644 JP chars removed
+- [[concepts/forward-deployed-engineering.md]] — 1,605 JP chars removed
+- [[concepts/llm-course-roadmap.md]] — 1,539 JP chars removed
+- [[concepts/deepseek-r1.md]] — 1,554 JP chars removed
+- [[concepts/deepseek-v3-2.md]] — 1,530 JP chars removed
+
+### Stats
+- Total JP chars removed: 12,833
+- Remaining JP files (excl. logs): 316
+- Remaining JP chars (excl. logs): 196,530
+
+
+---
+
 ## [2026-05-26] active-crawl | 5 trending topics
 
 ### Topics Researched
