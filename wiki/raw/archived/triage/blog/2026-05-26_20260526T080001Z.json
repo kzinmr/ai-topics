@@ -1,0 +1,68 @@
+{
+  "checkpoint_run_id": "20260526T080001Z",
+  "source": "backlog",
+  "archived_at": "2026-05-26T08:02:06.501888+00:00",
+  "summary_ja": "Shopify AI podcast duplicate UI links (play_card_* UTM params)",
+  "decisions": [
+    {
+      "item_id": "substack.com--app-link-post--40ab558e.md",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Shopify AI Phase Transition - Mikhail Parakhin",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--40ab558e.md",
+      "recommended_action": "skip",
+      "reason_ja": "Duplicate podcast player chrome link (play_card_post_title). Same episode, different UTM tracking param.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Shopify's AI Phase Transition podcast episode with Mikhail Parakhin (Shopify CTO). Topics: Opus-4.6 token budget, Tangle, Tangent, SimGym, AI coding review bottlenecks, Liquid AI architecture."
+    },
+    {
+      "item_id": "substack.com--app-link-post--77248429.md",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Shopify AI Phase Transition - Mikhail Parakhin",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--77248429.md",
+      "recommended_action": "skip",
+      "reason_ja": "Duplicate podcast player chrome link (play_card_play_button). Same episode, different UTM tracking param.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Shopify's AI Phase Transition podcast episode with Mikhail Parakhin (Shopify CTO). Topics: Opus-4.6 token budget, Tangle, Tangent, SimGym, AI coding review bottlenecks, Liquid AI architecture."
+    },
+    {
+      "item_id": "substack.com--app-link-post--7ac5aaa0.md",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Shopify AI Phase Transition - Mikhail Parakhin",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--7ac5aaa0.md",
+      "recommended_action": "skip",
+      "reason_ja": "Duplicate podcast player chrome link (play_card_show_title). Same episode, different UTM tracking param.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Shopify's AI Phase Transition podcast episode with Mikhail Parakhin (Shopify CTO). Topics: Opus-4.6 token budget, Tangle, Tangent, SimGym, AI coding review bottlenecks, Liquid AI architecture."
+    },
+    {
+      "item_id": "substack.com--app-link-post--3f86680d.md",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Shopify AI Phase Transition - Mikhail Parakhin",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--3f86680d.md",
+      "recommended_action": "skip",
+      "reason_ja": "Duplicate podcast player chrome link (play_card_show_logo). Same episode, different UTM tracking param.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Shopify's AI Phase Transition podcast episode with Mikhail Parakhin (Shopify CTO). Topics: Opus-4.6 token budget, Tangle, Tangent, SimGym, AI coding review bottlenecks, Liquid AI architecture."
+    },
+    {
+      "item_id": "substack.com--app-link-post--dd802b1a.md",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Shopify AI Phase Transition - Mikhail Parakhin",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--dd802b1a.md",
+      "recommended_action": "skip",
+      "reason_ja": "Duplicate podcast player chrome link (play_card_duration). Same episode, different UTM tracking param.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Shopify's AI Phase Transition podcast episode with Mikhail Parakhin (Shopify CTO). Topics: Opus-4.6 token budget, Tangle, Tangent, SimGym, AI coding review bottlenecks, Liquid AI architecture."
+    }
+  ]
+}

@@ -1,6 +1,25 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] manual | Ingest SkillOpt paper (arXiv:2605.23904)
+
+### Pages Created
+- [[concepts/skillopt]] — SkillOpt (Microsoft/多大学, May 2026): text-space skill optimizer with deep-learning training discipline. Validation gates, learning rates, momentum for skill documents. Best-or-tied on all 52 cells. +23.5 pts over no-skill. Outperforms GEPA.
+
+### Pages Enriched
+- [[concepts/gepa]] — Added SkillOpt reference in See Also, bumped updated date
+
+### Raw Papers
+- raw/papers/2026-05-26_2605.23904_skillopt-executive-strategy-self-evolving-agent-skills.md
+
+### Index Updated
+- Added [[concepts/skillopt]] to Concepts section (640 pages)
+
+### Sources
+- arXiv:2605.23904
+
+---
+
 ## [2026-05-26] newsletter-wiki-ingest | AlphaProof Nexus + enrichment batch
 
 ### Pages Created

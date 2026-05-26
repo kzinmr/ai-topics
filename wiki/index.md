@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2064 | Indexed entries: 1350 | Not in index: 692 |
+> Last updated: 2026-05-26 | Total pages: 2065 | Indexed entries: 1351 | Not in index: 692 |
 
 ## Entities (672 pages)
 
@@ -693,7 +693,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (639 pages)
+## Concepts (640 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1082,6 +1082,7 @@
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.
 - [[concepts/skill-graph]] — Skill Graph — AI agent playbook using interconnected Markdown files. Ronin's 17-file, 4-folder architecture. Wikilinks navigation, Platform-Native Repurposing, Litmus Test.
+- [[concepts/skillopt]] — SkillOpt (Microsoft, May 2026): text-space skill optimizer that applies deep-learning training discipline (validation gates, learning rates, momentum) to agent skill documents. Best-or-tied on all 52 evaluated cells. +23.5 pts avg over no-skill. Outperforms GEPA, TextGrad, EvoSkill.
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
 - [[concepts/roll-rl]] — ROLL (Alibaba): RL framework for diverse users. Rich interfaces and high configuration flexibility. DeepSpeed/Megatron, GRPO+PPO, Ray orchestration.
 - [[concepts/space-gpus]] — Space GPUs

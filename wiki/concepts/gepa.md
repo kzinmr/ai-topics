@@ -1,7 +1,7 @@
 ---
 title: "GEPA (Genetic-Pareto Prompt Evolution)"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-26
 type: concept
 tags:
   - gepa
@@ -84,6 +84,7 @@ Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, Ope
 
 ## See Also
 
+- [[concepts/skillopt]] — Microsoft's training-disciplined skill optimizer: validation gates, learning rates, and momentum applied to text-space skill optimization. Outperforms GEPA on direct benchmarks
 - [[hermes-agent]] — The agent framework GEPA optimizes skills for
 - [[nous-research]] — Creator of Hermes Agent and the self-evolution companion repo
 - [[agent-skills]] — The skill files GEPA optimizes: Markdown playbooks with YAML frontmatter
