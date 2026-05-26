@@ -9,7 +9,7 @@ aliases:
   - build-with-claude
   - claude-developer-guide
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-26
 tags:
   - concept
   - anthropic
@@ -50,207 +50,207 @@ related:
 
 # Build with Claude — Developer Guide
 
-> **Claude** は [[entities/anthropic]] が開発する LLM ファミリー。Constitutional AI を安全設計思想とし、**Haiku / Sonnet / Opus** の3階層で提供される。
-> 本ページは [Anthropic の Build with Claude ガイド](https://www.anthropic.com/learn/build-with-claude) の構成に従い、開発者がアプリケーションに Claude を組み込むための実践的な指針をまとめる。
-> 個別製品・モデルの詳細は各サブページを参照。
+> **Claude** is an LLM family developed by [[entities/anthropic]], built on Constitutional AI as its safety design philosophy, and offered in **3 tiers: Haiku / Sonnet / Opus.**
+> This page follows the structure of [Anthropic's Build with Claude guide](https://www.anthropic.com/learn/build-with-claude), compiling practical guidance for developers integrating Claude into their applications.
+> See the respective sub-pages for details on individual products and models.
 
 ---
 
-## 🚀 1. Quick Start — 開発の第一歩
+## 🚀 1. Quick Start — First Steps in Development
 
-[Anthropic Console](https://console.anthropic.com) でAPIキー発行。[Quickstart Guide](https://docs.anthropic.com/en/docs/get-started) で初回APIリクエスト。CLIで `npm install -g @anthropic-ai/claude-code`。詳細は [Developer Docs](https://docs.anthropic.com/en/home) と [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) を参照。
-
----
-
-## 🧠 2. Advanced Model Capabilities — 高度なモデル機能
-
-### 2.1 Extended Thinking（拡張思考）
-
-Claude が応答前に内部推論ステップを実行する機能。2025年2月の Claude 3.7 Sonnet で初導入。
-
-- **向いているタスク**: 複雑な論理・数学・コーディング、マルチステップ推論
-- **API での利用**: `thinking` パラメータを指定
-- **料金**: 推論トークンは出力トークン価格で課金
-- **Claude Code での活用**: Ultraplan 機能や Subagent 委任で内部的に利用
-- 詳細: [Extended Thinking Guide](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking)
-
-### 2.2 Vision & マルチモーダル
-
-Claude 3 以降、画像入力に対応。Opus 4.7 で最高水準の視覚認識を達成。
-
-- **入力可能なメディア**: 画像（JPEG/PNG/GIF/WebP）、PDF（テキスト+画像）
-- **ユースケース**: スクリーンショット解析、チャート読み取り、PowerPoint スライド解析、技術図面の理解
-- **テクニック**: 複数画像の比較、テキスト埋め込み画像の文字起こし
-- 詳細: [[concepts/multimodal]]
-
-### 2.3 Computer Use（ベータ）
-
-Claude がスクリーンショットを見てデスクトップ GUI を直接操作する機能。
-
-- **操作方法**: クリック、キー入力、スクロール（人間と同等の操作）
-- **導入経緯**: 2024年10月 研究プレビュー → 2026年2月 Vercept 買収で機能強化
-- **ユースケース**: ブラウザ操作、デスクトップアプリの操作、データ入力の自動化
-- **制約**: ベータ版、レイテンシと精度に改善余地あり
-- 詳細: [[entities/anthropic-computer-use]]
+Get your API key from the [Anthropic Console](https://console.anthropic.com). Make your first API request with the [Quickstart Guide](https://docs.anthropic.com/en/docs/get-started). Via CLI: `npm install -g @anthropic-ai/claude-code`. See [Developer Docs](https://docs.anthropic.com/en/home) and [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) for more.
 
 ---
 
-## 🛠️ 3. Architectural Patterns — アーキテクチャパターンとツール
+## 🧠 2. Advanced Model Capabilities
 
-> **設計原則（[Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) より）**:
-> 1. **Simple is best** — 複雑なフレームワークより、小さな構成可能なパターンを
-> 2. **Context is all you need** — 豊富なコンテキスト環境が明示的 planner より効果的
-> 3. **Deterministic infrastructure over decision scaffolding** — エージェント実行基盤の98.4%は決定論的でよい
-> 4. **Unix philosophy** — 最小構成要素は「有用で理解可能で拡張可能」であること
+### 2.1 Extended Thinking
 
-### 3.1 Tool Use（関数呼び出し）
+Claude's ability to execute internal reasoning steps before responding. First introduced in Claude 3.7 Sonnet (February 2025).
 
-Claude が外部 API やローカルツールと対話するための標準機能。2023年11月ベータ導入、2024年3月GA。
+- **Ideal tasks**: Complex logic, math, coding, multi-step reasoning
+- **API usage**: Specify the `thinking` parameter
+- **Pricing**: Reasoning tokens are billed at output token prices
+- **In Claude Code**: Internally used via Ultraplan and Subagent delegation
+- Details: [Extended Thinking Guide](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking)
 
-- **標準ツール**: Bash実行、ファイル編集、テキストエディタ、コード実行、Web検索
-- **カスタムツール**: JSONスキーマで任意の外部APIを定義
-- **MCP統合**: [[concepts/mcp]] 対応ツールサーバーと接続
-- **並列呼び出し**: 複数ツールの同時実行が可能
-- 学習リソース: [Tool Use Course](https://github.com/anthropics/courses/blob/master/tool_use/README.md)
+### 2.2 Vision & Multimodal
 
-### 3.2 Agents & Skills — 自律エージェントの構築
+Image input support since Claude 3. Opus 4.7 achieves state-of-the-art visual recognition.
 
-Claude で自律エージェントを構築するための3層アプローチ：
+- **Supported media**: Images (JPEG/PNG/GIF/WebP), PDF (text + images)
+- **Use cases**: Screenshot analysis, chart reading, PowerPoint slide analysis, technical diagram understanding
+- **Techniques**: Multi-image comparison, text transcription from embedded images
+- Details: [[concepts/multimodal]]
 
-| 階層 | 説明 | 具体例 |
-|------|------|--------|
-| **Skills** | タスク特化の指示ブロック | コードレビュースキル、テスト生成スキル |
-| **MCP** | ツール接続のオープン標準 | ファイルシステムMCP、DB MCP、Slack MCP |
-| **Agent SDK** | エージェントライフサイクルの管理 | Hooks, Subagents, Plan Mode |
+### 2.3 Computer Use (Beta)
 
-Claude Agent SDK (`@anthropic-ai/claude-agent-sdk`) の主要機能：
-- **Hooks**: `before_tool`, `after_tool`, `on_error` などのライフサイクルフック
-- **Subagents**: 子エージェントの生成と結果収集
-- **Plan Mode**: 実行前に計画を生成・承認するワークフロー
-- **Output Styles**: 構造化出力のスタイル指定
-- **MCP統合**: ビルトインMCPサーバー対応
+Claude's ability to see screenshots and directly operate desktop GUIs.
 
-### 3.3 RAG — 外部データとの統合
-
-Claude に外部データを組み合わせて回答精度を向上させる：
-
-- **Contextual Retrieval**: Anthropic が開発した高精度RAG手法
-- **対応埋め込み**: Voyage AI と統合
-- **対応フレームワーク**: LlamaIndex, MongoDB
-- **テクニック**: プロンプトキャッシングで参照文書のコストを削減
-
-### 3.4 Structured Output（構造化出力）
-
-モデルの出力を確実にJSONスキーマに従わせる機能。
-
-- JSONモードでスキーマ準拠をバリデーション保証
-- エージェント制御の信頼性向上、後続処理のパース不要に
-- 参照: [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]]
+- **Operations**: Click, type, scroll (equivalent to human operations)
+- **History**: October 2024 research preview → February 2026 Vercept acquisition enhanced capabilities
+- **Use cases**: Browser operations, desktop app operations, data entry automation
+- **Limitations**: Beta, room for improvement in latency and accuracy
+- Details: [[entities/anthropic-computer-use]]
 
 ---
 
-## 📈 4. Optimization & Performance — 最適化と性能
+## 🛠️ 3. Architectural Patterns and Tools
+
+> **Design principles (from [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents)):**
+> 1. **Simple is best** — Small composable patterns over complex frameworks
+> 2. **Context is all you need** — Rich context environments are more effective than explicit planners
+> 3. **Deterministic infrastructure over decision scaffolding** — 98.4% of agent execution infrastructure can be deterministic
+> 4. **Unix philosophy** — Minimal components should be "useful, understandable, and extensible"
+
+### 3.1 Tool Use (Function Calling)
+
+Standard functionality for Claude to interact with external APIs and local tools. Beta in November 2023, GA in March 2024.
+
+- **Standard tools**: Bash execution, file editing, text editor, code execution, web search
+- **Custom tools**: Define any external API via JSON schema
+- **MCP integration**: Connect via [[concepts/mcp]]-compatible tool servers
+- **Parallel calls**: Multiple tools can be executed simultaneously
+- Learning resources: [Tool Use Course](https://github.com/anthropics/courses/blob/master/tool_use/README.md)
+
+### 3.2 Agents & Skills — Building Autonomous Agents
+
+Three-layer approach for building autonomous agents with Claude:
+
+| Layer | Description | Examples |
+|---|---|---|
+| **Skills** | Task-specific instruction blocks | Code review skills, test generation skills |
+| **MCP** | Open standard for tool connectivity | Filesystem MCP, DB MCP, Slack MCP |
+| **Agent SDK** | Agent lifecycle management | Hooks, Subagents, Plan Mode |
+
+Claude Agent SDK (`@anthropic-ai/claude-agent-sdk`) key features:
+- **Hooks**: Lifecycle hooks such as `before_tool`, `after_tool`, `on_error`
+- **Subagents**: Spawn child agents and collect results
+- **Plan Mode**: Generate and approve plans before execution
+- **Output Styles**: Structured output style specifications
+- **MCP integration**: Built-in MCP server support
+
+### 3.3 RAG — Integrating External Data
+
+Combine external data with Claude to improve answer accuracy:
+
+- **Contextual Retrieval**: High-precision RAG technique developed by Anthropic
+- **Supported embeddings**: Integrated with Voyage AI
+- **Supported frameworks**: LlamaIndex, MongoDB
+- **Techniques**: Reduce reference document costs with prompt caching
+
+### 3.4 Structured Output
+
+Function to reliably ensure model output conforms to a JSON schema.
+
+- JSON mode guarantees schema compliance via validation
+- Improves reliability of agent control, eliminates need for subsequent parsing
+- Reference: [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]]
+
+---
+
+## 📈 4. Optimization & Performance
 
 ### 4.1 Prompt Engineering
 
-Claude の性能を最大限引き出すプロンプト設計：
+Prompt design to maximize Claude's performance:
 
-- **[Prompt Generator](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-generator)** — 自動プロンプト生成ツール
-- **[Interactive Tutorial](https://github.com/anthropics/courses/blob/master/prompt_engineering_interactive_tutorial/README.md)** — 対話型学習コース
-- **ポイント**: 明確な指示、例示（Few-shot）、役割設定、出力フォーマット指定
-- **システムプロンプト**: 永続的な指示をシステムメッセージとして設定
+- **[Prompt Generator](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-generator)** — Automated prompt generation tool
+- **[Interactive Tutorial](https://github.com/anthropics/courses/blob/master/prompt_engineering_interactive_tutorial/README.md)** — Interactive learning course
+- **Key points**: Clear instructions, examples (few-shot), role setting, output format specification
+- **System prompts**: Set persistent instructions as system messages
 
 ### 4.2 Prompt Caching
 
-頻繁に送信される大きなコンテキストを再利用してコスト・レイテンシを削減：
+Reduce cost and latency by reusing frequently-sent large context:
 
-- **キャッシュ書き込みコスト**: 標準入力の1.25倍
-- **キャッシュ読み取りコスト**: 標準入力の**10%**（5分間有効）
-- **効果**: 長いシステムプロンプトや参照文書を何度も送るワークロードで大幅なコスト削減
-- **例**: Sonnet 4.6でシステムプロンプト50Kトークンの場合、通常 $0.15 → キャッシュ $0.015
+- **Cache write cost**: 1.25x standard input
+- **Cache read cost**: **10%** of standard input (valid for 5 minutes)
+- **Effect**: Significant cost reduction for workloads repeatedly sending long system prompts or reference documents
+- **Example**: For Sonnet 4.6 with 50K token system prompt, normal $0.15 → cached $0.015
 
-| モデル | キャッシュ書込 ($/MTok) | キャッシュ読込 ($/MTok) |
-|--------|----------------------|----------------------|
+| Model | Cache Write ($/MTok) | Cache Read ($/MTok) |
+|---|---|---|
 | Opus 4.7 | $6.25 | $0.50 |
 | Sonnet 4.6 | $3.75 | $0.30 |
 | Haiku 4.5 | $1.25 | $0.10 |
 
-- 詳細: [Prompt Caching Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching)
+- Details: [Prompt Caching Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching)
 
-### 4.3 Evaluations（Evals）
+### 4.3 Evaluations (Evals)
 
-システム的な性能測定でプロンプトとアーキテクチャを改善：
+Improve prompts and architecture through systematic performance measurement:
 
-- **Anthropic Console**: ブラウザ上でEvalを作成・実行・比較
-- **自動化パイプライン**: [Cookbook Notebook](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/building_evals.ipynb) でCI/CD統合
-- **バッチ処理**: 全トークンコスト50%オフで大規模Eval実行
-- **測定項目**: 精度、レイテンシ、コスト、一貫性
-
----
-
-## Appendix A: モデルリファレンス
-
-### A.1 2分でわかる3階層
-
-| 階層 | 価格 (input) | 最適ワークロード | 推奨ユーザー |
-|------|-------------|-----------------|------------|
-| **Haiku 4.5** 🏎️ | $1/MTok | 分類、抽出、ルーティング、チャット | コスト重視・高スループット |
-| **Sonnet 4.6** ⚖️ | $3/MTok | コーディング、エージェント、知識業務、RAG | 本番ワークロードの第一候補 |
-| **Opus 4.7** 🧠 | $5/MTok | 高難易度推論、長時間計画、複雑コーディング | 品質最優先のフロンティアタスク |
-
-### A.2 簡易タイムライン
-
-| 期間 | マイルストーン |
-|------|--------------|
-| 2023 | Claude 1 → 2.1。Tool Useベータ、200Kコンテキスト。Constitutional AI確立 |
-| 2024 | Claude 3 (Haiku/Sonnet/Opus)。3階層 + マルチモーダル導入。3.5 SonnetでOpus級性能をSonnet価格に |
-| 2025前 | 3.7 Sonnetで Extended Thinking。Claude Codeリリース。GPT-4oと競合 |
-| 2025後 | Claude 4 → 4.5 世代。SWE-bench 77.2%達成。Computer Use改善。Bun買収 |
-| 2026上 | Opus 4.6 (2月)→ Sonnet 4.6 (2月)→ Opus 4.7 (4月)。Managed Agents GA。Claude Design発表 |
-
-詳細なモデル別情報は各サブページを参照：[[claude-opus-4-7]], [[claude-sonnet-4.6]], [[claude-opus-4-6]]
+- **Anthropic Console**: Create, run, and compare Evals in browser
+- **Automation pipelines**: [Cookbook Notebook](https://github.com/anthropics/anthropic-cookbook/blob/main/misc/building_evals.ipynb) for CI/CD integration
+- **Batch processing**: Run large-scale Evals at 50% off all token costs
+- **Measured metrics**: Accuracy, latency, cost, consistency
 
 ---
 
-## Appendix B: エコシステム概要
+## Appendix A: Model Reference
 
-| 製品 | 説明 | 詳細 |
-|------|------|------|
-| **Claude.ai** | 公式Web/モバイルチャット。サブスクリプション方式 | Projects, ファイル添付, 200Kコンテキスト |
-| **[[entities/claude-code]]** | 自律型コーディングエージェント (CLI/IDE/Web/Mobile/Slack) | SWE-bench 72.7%, 7.6xデプロイ向上 |
-| **[[entities/claude-design]]** | ビジュアルデザインコラボレーションツール (2026年4月研究プレビュー) | Opus 4.7視覚モデル搭載 |
-| **[[claude-managed-agents]]** | エンタープライズ向けマネージドエージェントプラットフォーム | メモリストア、マルチエージェント、Outcomes Loop |
-| **[[concepts/mcp]]** | Model Context Protocol — ツール接続のオープン標準 | OpenAI/Google/Microsoft/Red Hat採用 |
+### A.1 Quick Overview of the 3 Tiers
+
+| Tier | Price (input) | Optimal Workload | Recommended For |
+|---|---|---|---|
+| **Haiku 4.5** 🏎️ | $1/MTok | Classification, extraction, routing, chat | Cost-conscious, high throughput |
+| **Sonnet 4.6** ⚖️ | $3/MTok | Coding, agents, knowledge work, RAG | First choice for production workloads |
+| **Opus 4.7** 🧠 | $5/MTok | High-difficulty reasoning, long-term planning, complex coding | Frontier tasks where quality is paramount |
+
+### A.2 Simplified Timeline
+
+| Period | Milestone |
+|---|---|
+| 2023 | Claude 1 → 2.1. Tool Use beta, 200K context. Constitutional AI established |
+| 2024 | Claude 3 (Haiku/Sonnet/Opus). 3 tiers + multimodal introduced. 3.5 Sonnet delivers Opus-class performance at Sonnet pricing |
+| Early 2025 | 3.7 Sonnet adds Extended Thinking. Claude Code released. Competes with GPT-4o |
+| Late 2025 | Claude 4 → 4.5 generation. Achieves SWE-bench 77.2%. Computer Use improvements. Bun acquisition |
+| H1 2026 | Opus 4.6 (Feb)→ Sonnet 4.6 (Feb)→ Opus 4.7 (Apr). Managed Agents GA. Claude Design announced |
+
+For model-specific details, see sub-pages: [[claude-opus-4-7]], [[claude-sonnet-4.6]], [[claude-opus-4-6]]
+
+---
+
+## Appendix B: Ecosystem Overview
+
+| Product | Description | Details |
+|---|---|---|
+| **Claude.ai** | Official Web/Mobile chat. Subscription-based. | Projects, file attachments, 200K context |
+| **[[entities/claude-code]]** | Autonomous coding agent (CLI/IDE/Web/Mobile/Slack) | SWE-bench 72.7%, 7.6x deployment improvement |
+| **[[entities/claude-design]]** | Visual design collaboration tool (April 2026 research preview) | Powered by Opus 4.7 vision model |
+| **[[claude-managed-agents]]** | Enterprise managed agent platform | Memory store, multi-agent, Outcomes Loop |
+| **[[concepts/mcp]]** | Model Context Protocol — open standard for tool connectivity | Adopted by OpenAI/Google/Microsoft/Red Hat |
 | **Claude Agent SDK** | Node.js SDK (`@anthropic-ai/claude-agent-sdk`) | Hooks, Subagents, Plan Mode |
 
 ---
 
-## Appendix C: サブスクリプション価格
+## Appendix C: Subscription Pricing
 
-| プラン | 価格 | 対象ユーザー |
-|--------|------|------------|
-| Free | 無料 | お試し |
-| Pro | $20/月 | 個人開発者 |
-| Max (5x) | $100/月 | ヘビーユーザー（API比最大36倍お得） |
-| Max (20x) | $200/月 | 高頻度利用（ただし週制限は5xの約2倍） |
-| Team | $25/席/月 | チーム |
-| Enterprise | カスタム | 大企業（SSO, 監査ログ、利用量は別途API課金） |
+| Plan | Price | Target Audience |
+|---|---|---|
+| Free | Free | Trial |
+| Pro | $20/month | Individual developer |
+| Max (5x) | $100/month | Heavy users (up to 36x value vs API) |
+| Max (20x) | $200/month | High-frequency use (~2x the weekly limit of 5x) |
+| Team | $25/seat/month | Teams |
+| Enterprise | Custom | Large enterprises (SSO, audit logs, separate API billing for usage) |
 
-> API価格は [Anthropic Console](https://console.anthropic.com) または [[concepts/claude-opus-4-7]] を参照。
+> See [Anthropic Console](https://console.anthropic.com) or [[concepts/claude-opus-4-7]] for API pricing.
 
 ---
 
-## 関連ページ
+## Related Pages
 
-- **[[entities/anthropic]]** — Claudeを開発する企業
-- **[[entities/claude-code]]** — AIコーディングエージェント
-- **[[claude-code--capabilities]]** — Claude Codeの機能詳細
-- **[[entities/claude-design]]** — ビジュアルデザインツール
-- **[[claude-managed-agents]]** — エンタープライズエージェントプラットフォーム
-- **[[claude-opus-4-7]]** — 最新Opusモデル詳細
-- **[[concepts/anthropic-computer-use]]** — GUI操作機能
+- **[[entities/anthropic]]** — The company behind Claude
+- **[[entities/claude-code]]** — AI coding agent
+- **[[claude-code--capabilities]]** — Claude Code capabilities detail
+- **[[entities/claude-design]]** — Visual design tool
+- **[[claude-managed-agents]]** — Enterprise agent platform
+- **[[claude-opus-4-7]]** — Latest Opus model details
+- **[[concepts/anthropic-computer-use]]** — GUI operation capability
 - **[[concepts/mcp]]** — Model Context Protocol
-- **[[concepts/ai-safety-military-governance-claude]]** — 安全性・ガバナンス
-- **[[concepts/coding-agents]]** — AIコーディングエージェントエコシステム
+- **[[concepts/ai-safety-military-governance-claude]]** — Safety and governance
+- **[[concepts/coding-agents]]** — AI coding agent ecosystem
 - **[[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]** — Agent SDK
-- **[[concepts/claude-memory-tool]]** — メモリツール
+- **[[concepts/claude-memory-tool]]** — Memory tool

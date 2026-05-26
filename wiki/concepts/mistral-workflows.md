@@ -2,7 +2,7 @@
 title: "Mistral Workflows"
 type: concept
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-26
 tags:
   - orchestration
   - durable-execution
@@ -23,127 +23,127 @@ sources:
 
 # Mistral Workflows
 
-Mistral Workflows is **Mistral AI のエンタープライズAIオーケストレーションレイヤー**。2026年4月にパブリックプレビューとしてリリースされた。Temporalの永続的実行エンジンを基盤に、LLM呼び出し・ツール使用・外部API・人間の承認を含む複数ステップのAIプロセスを、クラッシュ・再起動・個別ステップの障害に耐えて本番実行するためのプラットフォーム。
+Mistral Workflows is **Mistral AI's enterprise AI orchestration layer.** Released as a public preview in April 2026. Built on Temporal's durable execution engine, it provides a platform for running multi-step AI processes — including LLM calls, tool use, external APIs, and human approvals — in production with resilience to crashes, restarts, and individual step failures.
 
-**一言で**: ノートブックで動くAIデモではなく、ビジネスの現場で止まらないAIワークフローを実現する実行基盤。
+**In one sentence**: Not an AI demo that runs in a notebook, but an execution foundation for AI workflows that keep running in the real world of business.
 
-## アーキテクチャ
+## Architecture
 
-### ハイブリッド展開モデル
+### Hybrid Deployment Model
 
-Mistral Workflowsは**コントロールプレーンとデータプレーンの分離**を採用：
+Mistral Workflows adopts **control plane / data plane separation:**
 
-| 層 | 場所 | 役割 |
-|---|------|------|
-| **コントロールプレーン** | Mistral（または顧客のプライベートクラウド） | Temporalクラスタ、Workflows API、Studio UI — 状態・履歴・タスクディスパッチを管理 |
-| **データプレーン** | 顧客環境（Kubernetes / VM / ローカル） | Workerプロセスが実際のコードを実行。LLM呼び出し・ツール実行・ビジネスロジックはすべて顧客のペリメーター内 |
+| Layer | Location | Role |
+|---|---|---|
+| **Control Plane** | Mistral (or customer's private cloud) | Temporal cluster, Workflows API, Studio UI — manages state, history, task dispatch |
+| **Data Plane** | Customer environment (Kubernetes / VM / local) | Worker processes run actual code. All LLM calls, tool execution, and business logic remain within the customer's perimeter |
 
-WorkerはHelm chartでKubernetesにデプロイし、アウトバウンド接続でMistralのクラスタに接続する。オーケストレーターが顧客ネットワークにインバウンド接続することはない。
+Workers are deployed to Kubernetes via Helm charts and connect to Mistral's cluster via outbound connections. The orchestrator never makes inbound connections to the customer's network.
 
-### Temporal基盤
+### Temporal Foundation
 
-内部では[Temporal](https://temporal.io/)の永続的実行エンジン（Netflix/Stripe/Salesforceと同じ基盤）を使用。MistralはTemporalをAIワークロード向けに拡張し、ストリーミング、ペイロードハンドリング、マルチテナンシー、OpenTelemetryベースの可観測性を追加している。
+Internally uses [Temporal](https://temporal.io/)'s durable execution engine (the same foundation as Netflix/Stripe/Salesforce). Mistral extends Temporal for AI workloads with added support for streaming, payload handling, multi-tenancy, and OpenTelemetry-based observability.
 
-## 中核機能
+## Core Features
 
-### 1. Durable Execution（永続的実行）
+### 1. Durable Execution
 
-すべてのステップがイベント履歴に記録される。プロセスがクラッシュ・タイムアウト・Worker再起動しても、**別のWorkerが履歴を再生し、最後に完了したステップから再開**する。
+Every step is recorded in an event history. If a process crashes, times out, or a Worker restarts, **a different Worker replays the history and resumes from the last completed step.**
 
-- 通常のアプリケーションコードでは、ネットワークタイムアウトで複数ステップのプロセスが中途半端に終わる
-- Workflowsでは、数分〜数時間〜数ヶ月にわたる長期実行プロセスが生存する
-- 開発者はリカバリロジックではなく**ビジネスロジック**に集中できる
+- Normal application code leaves multi-step processes half-finished on network timeouts
+- Workflows sustain long-running processes spanning minutes to hours to months
+- Developers can focus on **business logic** instead of recovery logic
 
-### 2. Human-in-the-Loop（承認ワークフロー）
+### 2. Human-in-the-Loop (Approval Workflows)
 
-`wait_for_input()` の1行で、ワークフローを承認待ちで一時停止できる：
+With a single line of `wait_for_input()`, a workflow can pause for approval:
 
 ```python
 approval = workflow.wait_for_input("Review required")
 ```
 
-- ワークフローは一時停止し、計算リソースを消費しない
-- レビュアーに通知が送られ、Le Chat / Webhook / APIのいずれかから応答可能
-- レビュアーが応答すると、中断した正確なポイントから再開
-- 全実行履歴がStudioに記録され、監査可能
+- The workflow pauses, consuming no compute resources
+- The reviewer receives a notification and can respond via Le Chat / Webhook / API
+- When the reviewer responds, execution resumes from the exact point it paused
+- Full execution history is recorded in Studio for auditability
 
-### 3. Observability（可観測性）
+### 3. Observability
 
-- すべての分岐・リトライ・状態変更がStudioに記録
-- OpenTelemetryネイティブ対応（追加設定不要）
-- 数ヶ月後の意思決定調査にも対応可能な完全なタイムライン
-- 各ルーティング判断・モデル呼び出し・承認ステップをドリルダウン可能
+- All branches, retries, and state changes are recorded in Studio
+- Native OpenTelemetry support (no additional configuration needed)
+- Complete timeline for auditing decisions months later
+- Drill-down into each routing decision, model call, and approval step
 
 ### 4. AI Primitives
 
-ワークフロー内で直接使えるAI特化プリミティブ：
-- **Agent loop**: エージェントの反復実行（観察→思考→行動ループ）
-- **LLM streaming**: トークンストリーミングをクライアントに中継
-- **Mistral API統合**: 追加の統合コードなしでモデルを呼び出し
-- **Tool use**: 外部API・データベース・ファイル操作のアクティビティ化
+AI-specific primitives usable directly within workflows:
+- **Agent loop**: Iterative agent execution (observe→think→act loop)
+- **LLM streaming**: Relay token streaming to clients
+- **Mistral API integration**: Call models without additional integration code
+- **Tool use**: External API, database, and file operations as activities
 
-### 5. マルチサーフェストリガー
+### 5. Multi-Surface Triggers
 
-1つのワークフローを3つの経路から起動可能：
+One workflow can be triggered from 3 entry points:
 
-| トリガー方法 | 対象ユーザー |
-|-------------|------------|
-| **Mistral API** (`POST /v1/workflows/{name}/execute`) | 開発者・外部システム |
-| **Mistral AI Studio** | 運用チーム（入力フォーム自動生成＋ライブ実行タイムライン） |
-| **Le Chat** | ビジネスユーザー（アシスタントとして会話内でワークフローを起動） |
+| Trigger Method | Target Users |
+|---|---|
+| **Mistral API** (`POST /v1/workflows/{name}/execute`) | Developers, external systems |
+| **Mistral AI Studio** | Operations teams (auto-generated input forms + live execution timeline) |
+| **Le Chat** | Business users (launch workflows conversationally as an assistant) |
 
 ## Python SDK
 
-開発者はPythonでワークフローをコードとして記述。SDK v3.0がパブリックプレビューと同時に公開。
+Developers write workflows as code in Python. SDK v3.0 was released alongside the public preview.
 
-**中核概念**: ワークフロー（決定論的オーケストレーション）とアクティビティ（副作用を伴う外部処理）の分離：
+**Core concept**: Separation of Workflows (deterministic orchestration) and Activities (external processing with side effects):
 
-- **Workflow**: ステップの調整・状態保持・分岐・待機・次のアクション決定（決定論的）
-- **Activity**: LLM呼び出し・HTTPリクエスト・DB書き込み・ファイル読み取り・ツール実行（副作用）
+- **Workflow**: Step coordination, state retention, branching, waiting, next action determination (deterministic)
+- **Activity**: LLM calls, HTTP requests, DB writes, file reads, tool execution (side effects)
 
-SDKはデコレータと1行設定でリトライポリシー・トレーシング・タイムアウト・レート制限を処理する。
+The SDK handles retry policies, tracing, timeouts, and rate limiting with decorators and single-line configuration.
 
-## 実運用ユースケース
+## Production Use Cases
 
-### 貨物リリース自動化（CMA-CGM等）
+### Cargo Release Automation (CMA-CGM, etc.)
 
-- 税関申告・危険物分類・安全検査・規制チェックを複数管轄にまたがって自動化
-- タイムアウト生存・人間レビューの中間停止・障害時の正確な原因特定が必要
-- `wait_for_input()` で人間の承認を待機し、再開時に正確に継続
+- Automate customs declarations, dangerous goods classification, safety inspections, and regulatory checks across multiple jurisdictions
+- Requires timeout resilience, mid-process pauses for human review, and precise root cause identification on failure
+- `wait_for_input()` suspends for human approval and resumes exactly where it left off
 
-### ドキュメントコンプライアンス（KYC審査）
+### Document Compliance (KYC Verification)
 
-- 本人確認書類抽出 → 制裁リスト/PEP DB照合 → 管轄横断の規制要件クロスリファレンス → 構造化リスク評価
-- 従来は1ケースあたり数時間のアナリスト作業 → 数分に短縮
-- Studioが全ステップを構造化タイムラインとして表示、OpenTelemetryトレースで詳細までドリルダウン可能
+- Identity document extraction → sanctions list / PEP DB cross-reference → cross-jurisdictional regulatory requirement checks → structured risk assessment
+- Previously hours of analyst work per case → reduced to minutes
+- Studio displays all steps as a structured timeline with OpenTelemetry tracing for full drill-down
 
-### カスタマーサポート振り分け
+### Customer Support Routing
 
-- 返金・技術問題・請求紛争・アカウントエスカレーションの自動分類・ルーティング
-- 誤分類時の修正可能性（correctability）が重要要件
-- 各ルーティング判断がStudioで可視化・追跡可能。分類が間違っていた場合、チームがワークフローレベルで修正
+- Automated classification and routing for refunds, technical issues, billing disputes, account escalations
+- Correctability on misclassification is a key requirement
+- Each routing decision is visualized and traceable in Studio. If classification is wrong, the team can correct at the workflow level
 
-## 利用判断基準
+## When to Use
 
-### 使うべきケース
+### Appropriate Cases
 
-- クラッシュ・再起動に耐える必要がある複数ステップのLLMパイプライン
-- 数時間〜数日にわたる承認待ちを含むHuman-in-the-loopプロセス
-- スケジュール実行または1回限りの定期AIタスク
-- ハンドオフと共有状態を持つマルチエージェントオーケストレーション
-- 現在キュー・ステートマシン・リトライコードで構築しているもの全般
+- Multi-step LLM pipelines that must survive crashes and restarts
+- Human-in-the-loop processes with approval waits spanning hours to days
+- Scheduled or one-shot recurring AI tasks
+- Multi-agent orchestration with handoffs and shared state
+- Anything currently built with queues, state machines, and retry code
 
-### 不要なケース
+### When Not Needed
 
-- オーケストレーション不要の単一LLMエンドポイント呼び出し → 通常のSDK呼び出しで十分
+- Single LLM endpoint call without orchestration → standard SDK call is sufficient
 
-## 競合・関連技術との違い
+## Differences from Competing and Related Technologies
 
-- **[[concepts/agent-orchestration-frameworks]]** (LangGraph, CrewAI等) — これらはエージェント間の調整に焦点。Mistral Workflowsは永続的実行・Human-in-the-loop・エンタープライズ監査を基盤として提供し、その上でエージェントも動かせる。
-- **[[concepts/agentic-workflow-patterns]]** — Anthropicの5パターン（Prompt Chaining, Routing, Parallelization, Orchestrator-Workers, Evaluator-Optimizer）は設計パターン。Mistral Workflowsはそれらを実装する**実行基盤**。
-- **Temporal単体** — Mistral WorkflowsはTemporalの上にAI特化の拡張（ストリーミング、ペイロード、マルチテナンシー、OpenTelemetry、Le Chat統合）を追加したマネージドレイヤー。
-- **AWS Step Functions / Azure Durable Functions** — 汎用ワークフローエンジン。Mistral WorkflowsはAIプリミティブ（エージェントループ、LLMストリーミング、モデル呼び出し）をネイティブ統合している点が差別化。
+- **[[concepts/agent-orchestration-frameworks]]** (LangGraph, CrewAI, etc.) — These focus on inter-agent coordination. Mistral Workflows provides durable execution, Human-in-the-loop, and enterprise auditability as a foundation, with agents running on top.
+- **[[concepts/agentic-workflow-patterns]]** — Anthropic's 5 patterns (Prompt Chaining, Routing, Parallelization, Orchestrator-Workers, Evaluator-Optimizer) are design patterns. Mistral Workflows is the **execution foundation** implementing them.
+- **Temporal standalone** — Mistral Workflows is a managed layer on top of Temporal with AI-specific extensions (streaming, payload handling, multi-tenancy, OpenTelemetry, Le Chat integration).
+- **AWS Step Functions / Azure Durable Functions** — General-purpose workflow engines. Mistral Workflows differentiates with native AI primitive integration (agent loops, LLM streaming, model calls).
 
-## 採用企業（パブリックプレビュー時点）
+## Adopting Companies (as of Public Preview)
 
 ASML, ABANCA, CMA-CGM, France Travail, La Banque Postale, Moeve

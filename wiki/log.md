@@ -1,6 +1,26 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] translate | JP→EN batch — 6 concept pages (16,846 JP chars)
+
+### Pages Translated (JP→EN)
+- `concepts/harness-engineering/system-architecture/ai-memory-systems.md` — AI Memory Systems (ChatGPT vs Claude vs Cognition)
+- `concepts/cognition-ai-data-analyst.md` — Turning Devin into a Data Analysis Agent
+- `concepts/ai-index-report-2026.md` — 2026 Stanford AI Index Report
+- `concepts/harness-engineering/system-architecture/evals-for-ai-agents.md` — Evals for AI Agents
+- `concepts/moltbook-breach-2026.md` — 770K Agents Simultaneously Compromised
+- `concepts/mistral-workflows.md` — Mistral Workflows
+- `concepts/harness-engineering/system-architecture/harness-design-long-running-apps.md` — Harness Design for Long-Running App Development
+- `concepts/claude-model-family.md` — Build with Claude Developer Guide
+
+### Metrics
+- Total JP chars removed: 16,846
+- Files: 8 translated (6 concepts, 2 system-architecture under harness-engineering)
+- Remaining JP files: ~335
+- Remaining JP chars: ~239K
+
+---
+
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated

@@ -6,7 +6,7 @@ aliases:
   - agent-evaluation
   - demystifying-evals
 created: 2026-04-12
-updated: 2026-05-07
+updated: 2026-05-26
 tags:
   - concept
   - architecture
@@ -21,117 +21,117 @@ sources:
 
 # Evals for AI Agents
 
-Anthropicが提唱する、AIエージェントの評価（Evals）の体系化ガイド。
+A systematic guide to evaluating AI agents, as proposed by Anthropic.
 
-## 核心哲学
+## Core Philosophy
 
 > "The capabilities that make agents useful also make them difficult to evaluate. The strategies that work across deployments combine techniques to match the complexity of the systems they measure."
 
 > "Writing evals is useful at any stage in the agent lifecycle. Early on, evals force product teams to specify what success means for the agent, while later they help uphold a consistent quality bar."
 
-**エージェントを有用にする特性が、同時に評価を困難にする。デプロイ全体で機能する戦略は、測定するシステムの複雑さに合わせた手法を組み合わせる。**
+**The very properties that make agents useful also make them difficult to evaluate. Strategies that work across deployments combine techniques matched to the complexity of the systems they measure.**
 
-## 基本用語
+## Basic Terminology
 
-| 用語 | 定義 |
-|------|------|
-| **Task** | 定義された入力と成功基準を持つ単一テスト |
-| **Trial** | タスクの1回の実行（モデルのばらつきを考慮して複数回実行） |
-| **Grader** | パフォーマンスをスコアリングするロジック。複数のアサーションを含む場合あり |
-| **Transcript/Trace** | ツール呼び出し、推論、APIメッセージを含むトライアルの完全な記録 |
-| **Outcome** | エージェントの言葉での確認ではなく、最終的な環境状態（例: DBレコード） |
-| **Eval Harness** | 評価をエンドツーエンドで実行するインフラ（並行性、記録、採点、集約） |
-| **Agent Harness** | モデルをエージェントとして機能させるシステム（ツールをオーケストレーション、結果を返す） |
-| **Eval Suite** | 特定の機能/動作を測定するタスクのコレクション |
+| Term | Definition |
+|---|---|
+| **Task** | A single test with defined inputs and success criteria |
+| **Trial** | One execution of a task (run multiple times to account for model variance) |
+| **Grader** | Logic that scores performance. May include multiple assertions |
+| **Transcript/Trace** | Complete record of a trial including tool calls, reasoning, API messages |
+| **Outcome** | The final environmental state (e.g., DB records), not the agent's verbal confirmation |
+| **Eval Harness** | Infrastructure for end-to-end eval execution (concurrency, recording, scoring, aggregation) |
+| **Agent Harness** | System that enables the model to function as an agent (orchestrating tools, returning results) |
+| **Eval Suite** | Collection of tasks measuring specific capabilities/behaviors |
 
-## なぜEvalsを構築するのか？
+## Why Build Evals?
 
-- **リアクティブデバッグを防止**: チームが「闇雲に飛行」し、なぜ変更が壊れたのか推測するのを止める
-- **開発を加速**: 初期のevalsは明示的な成功基準を強制。後のevalsは品質基準を維持
-- **モデル採用を高速化**: evalsを持つチームは、手動テストの「週間」ではなく「日間」で新モデルにアップグレード
-- **無料のベースライン**: 遅延、トークン使用量、タスクあたりのコスト、エラーレートを自動的に追跡
-- **高帯域幅のアライメント**: プロダクトとリサーチチーム間の主要なコミュニケーションチャネルとして機能
+- **Prevent reactive debugging**: Stop teams from "flying blind" and guessing why changes broke things
+- **Accelerate development**: Early evals enforce explicit success criteria. Later evals maintain quality standards
+- **Speed up model adoption**: Teams with evals upgrade to new models in "days" rather than "weeks" of manual testing
+- **Free baselines**: Automatically track latency, token usage, cost per task, error rates
+- **High-bandwidth alignment**: Serve as a primary communication channel between product and research teams
 
-## Graderのタイプと採点戦略
+## Grader Types and Scoring Strategies
 
-| タイプ | 長所 | 短所 |
-|--------|------|------|
-| **コードベース** | 高速、安価、客観的、再現可能、デバッグ容易 | 有効なバリエーションに弱い、ニュアンスに欠ける、主観的タスクに不適 |
-| **モデルベース（LLM）** | 柔軟、スケーラブル、ニュアンスを捉える、開-ended/自由形式出力を処理 | 非決定論的、高価、人間の較正が必要 |
-| **人間** | ゴールドスタンダード、専門家の判断に一致、LLMグレーダーを較正 | 高価、遅い、スケーリング困難、SMEアクセスが必要 |
+| Type | Strengths | Weaknesses |
+|---|---|---|
+| **Code-based** | Fast, cheap, objective, reproducible, easy to debug | Brittle to valid variations, lacks nuance, unsuitable for subjective tasks |
+| **Model-based (LLM)** | Flexible, scalable, captures nuance, handles open-ended/free-form output | Non-deterministic, expensive, requires human calibration |
+| **Human** | Gold standard, aligns with expert judgment, calibrates LLM graders | Expensive, slow, hard to scale, requires SME access |
 
-**採点アプローチ**: 加重（組み合わせた閾値）、バイナリ（すべて合格が必要）、ハイブリッド。
+**Scoring approaches**: Weighted (combined thresholds), Binary (all must pass), Hybrid.
 
 ### Capability vs Regression Evals
 
-- **Capability（品質）**: *「このエージェントは何がうまくできるか？」* 低い合格率から開始、困難なタスクをターゲット、ヒルクライム
-- **Regression**: *「古いタスクをまだ処理できるか？」* 約100%の合格率を目標、ドリフト/後退をキャッチ
-- **進化**: 高合格率のcapability evalは、継続的なregressionスイートに「卒業」できる
+- **Capability (quality)**: *"What can this agent do well?"* Start with low pass rates, target hard tasks, hill climb
+- **Regression**: *"Can it still handle old tasks?"* Target ~100% pass rate, catch drift/regression
+- **Evolution**: High pass-rate capability evals can "graduate" to the ongoing regression suite
 
-## エージェント固有の評価アプローチ
+## Agent-Specific Evaluation Approaches
 
-| エージェントタイプ | 主要戦略 | ベンチマーク/ツール |
-|-----------------|-----------|-------------------|
-| **コーディング** | 決定論的グレーダー（ユニットテスト、静的解析）+ ツール使用/品質のトランスクリプト採点 | SWE-bench Verified, Terminal-Bench |
-| **会話型** | 多次元採点（状態、ターン数、トーン）+ LLMユーザーシミュレーション | τ-Bench, τ²-Bench |
-| **リサーチ** | 根拠性、カバレッジ、ソース品質チェック + 専門家に対するLLMルーブリックの頻繁な較正 | BrowseComp |
-| **コンピュータ使用** | リアル/サンドボックスGUI環境 + バックエンド状態検証（UIだけでなく） | WebArena, OSWorld |
+| Agent Type | Key Strategy | Benchmarks/Tools |
+|---|---|---|
+| **Coding** | Deterministic graders (unit tests, static analysis) + transcript scoring for tool use/quality | SWE-bench Verified, Terminal-Bench |
+| **Conversational** | Multi-dimensional scoring (state, turn count, tone) + LLM user simulation | τ-Bench, τ²-Bench |
+| **Research** | Groundedness, coverage, source quality checks + frequent calibration of LLM rubrics against experts | BrowseComp |
+| **Computer Use** | Real/sandboxed GUI environments + backend state validation (not just UI) | WebArena, OSWorld |
 
-> **コンピュータ使用の洞察**: DOM操作（高速、トークン重い）vsスクリーンショット（遅い、トークン効率）のバランス。エージェントがコンテキストごとに正しいツールを選択するかを評価すべき。
+> **Computer Use insight**: Balance between DOM manipulation (fast, token-heavy) vs screenshots (slow, token-efficient). Should evaluate whether the agent selects the right tools per context.
 
-## 非決定論の処理
+## Handling Non-Determinism
 
-エージェントの出力は実行ごとに異なる。製品のニーズに基づいてこれらのメトリクスを使用：
+Agent outputs vary per execution. Use these metrics based on product needs:
 
-- **`pass@k`**: `k`回のトライアルで**≥1回の成功**の確率。1つの動作する解決策が重要なツールに最適。
-- **`pass^k`**: **すべての`k`回のトライアルが成功**する確率。一貫性が必要な顧客向けエージェントに最適。
-- *分散*: `k=1`で同一。`k=10`で、`pass@k` → 〜100%、`pass^k` → 〜0%。
+- **`pass@k`**: Probability of **≥1 success** in `k` trials. Best for tools where one working solution is enough.
+- **`pass^k`**: Probability of **all `k` trials succeeding**. Best for customer-facing agents requiring consistency.
+- *Divergence*: Identical at `k=1`. At `k=10`, `pass@k` → ~100%, `pass^k` → ~0%.
 
-## ゼロからOneへのロードマップ（実践的ステップ）
+## Roadmap from Zero to One (Practical Steps)
 
-1. **早期に開始**: 実際の失敗からの20〜50のタスクで十分初期は。大きな効果サイズ means 小さなサンプルで機能
-2. **手動チェックを変換**: バグトラッカー、サポートキュー、リリース前チェックを最初のタスクとして使用
-3. **明確なタスク + リファレンスソリューション**: `pass@100 = 0%`なら、**タスク/グレーダーが壊れている**。常に既知の動作するリファレンスを提供
-4. **問題セットのバランス**: ポジティブとネガティブの両方のトリガーをテストし、片側の最適化を回避（例: 検索しすぎる vs 検索しなさすぎる）
-5. **環境を隔離**: 各トライアルのクリーンな状態。残りのファイル/キャッシュからの相関_failure_を防止
-6. **パスではなく結果を採点**: 硬直的なステップチェックを避ける。創造的な解決策を許可。複数コンポーネントタスクに部分クレジットを使用
-7. **LLM審査官を較正**: 「不明」の脱出ハッチを提供、構造化ルーブリックを使用、次元ごとに採点
+1. **Start early**: 20-50 tasks from real failures are sufficient early on. Large effect sizes work with small samples
+2. **Convert manual checks**: Use bug trackers, support queues, pre-release checks as initial tasks
+3. **Clear task + reference solution**: If `pass@100 = 0%`, **the task/grader is broken**. Always provide a known-working reference
+4. **Balance problem sets**: Test both positive and negative triggers to avoid one-sided optimization (e.g., over-searching vs under-searching)
+5. **Isolate environments**: Clean state per trial. Prevent correlated failures from leftover files/cache
+6. **Score outcomes, not paths**: Avoid rigid step checks. Allow creative solutions. Use partial credit for multi-component tasks
+7. **Calibrate LLM judges**: Provide "unknown" escape hatches, use structured rubrics, score per dimension
 
-## Eval Saturation（飽和）
+## Eval Saturation
 
-evalsが100%合格率に達すると、**回帰検出**には有用だが、**改善のシグナル**を提供しなくなる。これを **Eval Saturation** と呼ぶ。
+When evals reach 100% pass rates, they remain **useful for regression detection** but no longer provide **signals for improvement**. This is called **Eval Saturation**.
 
-> 「大規模な能力改善が、わずかなスコア増加としてしか現れなくなる」（Anthropic）
+> "Large capability improvements manifest only as small score increases" (Anthropic)
 
-**対策**:
-- Saturationしたevalsはregressionスイートとして継続運用
-- 新しいcapability evalを定期的に追加して「天井」を上げる
-- より困難なバリアントにevalsを「卒業」させる
+**Countermeasures:**
+- Continue saturated evals as regression suites
+- Regularly add new capability evals to raise the "ceiling"
+- "Graduate" evals to harder variants
 
-## 創造的失敗（Creative Failures）
+## Creative Failures
 
-エージェントがevalを「失敗」しても、実際にはより良い解決策を発見している場合がある。
+When agents "fail" an eval, they may have actually discovered a better solution.
 
-> Opus 4.5はτ²-Benchのフライト予約問題で、ポリシーの抜け穴を発見し、記述されたevalを「失敗」したが、実際にはユーザーにとってより良い解決策を生み出した。（Anthropic）
+> Opus 4.5 failed a τ²-Bench flight booking problem by discovering a policy loophole, but actually produced a better solution for the user than the described eval intended. (Anthropic)
 
-**示唆**: 採点ロジックが硬直的だと、創造的な問題解決をペナルティする可能性がある。結果ベースの採点（outcome grading）と、複数の正解パターンを許容する設計が重要。
+**Implication**: Rigid scoring logic may penalize creative problem-solving. Outcome-based grading and design that allows multiple correct answer patterns are important.
 
-## ホリスティック評価フレームワーク（Swiss Cheese Model）
+## Holistic Evaluation Framework (Swiss Cheese Model)
 
-Anthropicは単一のevalではなく、複数レイヤーの防御を推奨：
+Anthropic recommends multiple layers of defense rather than a single eval:
 
-| レイヤー | 役割 | 検出対象 |
-|----------|------|---------|
-| **Automated Evals** | CI/CDの自動チェック | 回帰、機能欠損 |
-| **Production Monitoring** | 実環境での継続監視 | 分布ドリフト、実世界の異常 |
-| **A/B Testing** | 新旧エージェントの比較 | 相対的なパフォーマンス差 |
-| **Adversarial Testing** | レッドチーミング | エッジケース、セキュリティ問題 |
-| **Human Evaluation** | 定期的な専門家レビュー | 自動evalの較正、ニュアンスの確認 |
-| **Feedback Loops** | ユーザーフィードバックの統合 | 実使用時の問題、eval改善 |
+| Layer | Role | Detects |
+|---|---|---|
+| **Automated Evals** | CI/CD auto-checks | Regression, capability gaps |
+| **Production Monitoring** | Continuous monitoring in production | Distribution drift, real-world anomalies |
+| **A/B Testing** | Compare old vs new agents | Relative performance differences |
+| **Adversarial Testing** | Red teaming | Edge cases, security issues |
+| **Human Evaluation** | Periodic expert review | Auto-eval calibration, nuance verification |
+| **Feedback Loops** | Integrate user feedback | Real-world issues, eval improvement |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — 上位インデックス
-- [[concepts/building-effective-agents]] — エージェント構築の基本原理
-- [[concepts/effective-harnesses-for-long-running-agents]] — 長時間実行エージェントのハーネス
-- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — エージェント用ツール設計
+- [[concepts/harness-engineering]] — Top-level index
+- [[concepts/building-effective-agents]] — Fundamental principles of agent building
+- [[concepts/effective-harnesses-for-long-running-agents]] — Harnesses for long-running agents
+- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Tool design for agents

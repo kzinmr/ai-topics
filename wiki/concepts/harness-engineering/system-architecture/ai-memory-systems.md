@@ -7,7 +7,7 @@ aliases:
   - claude-memory
   - agent-memory-architecture
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-26
 tags:
   - concept
   - memory-systems
@@ -19,135 +19,135 @@ sources: []
 
 # AI Memory Systems — ChatGPT vs Claude vs Cognition
 
-AIアシスタント・エージェントにおける「メモリ（記憶）」システムの設計哲学の比較。OpenAI、Anthropic、Cognition（Devin）がそれぞれ異なるアプローチを採用しており、これは製品ターゲット（コンシューマー vs 技術者）とアーキテクチャ思想（自動 vs 明示的）の違いを反映している。
+A comparison of the design philosophies behind "memory" systems in AI assistants and agents. OpenAI, Anthropic, and Cognition (Devin) each adopt fundamentally different approaches, reflecting differences in product target (consumer vs. technical) and architectural philosophy (automatic vs. explicit).
 
-出典: [Shlok Khemani - ChatGPT Memory and the Bitter Lesson](https://www.shloked.com/writing/chatgpt-memory-bitter-lesson), [Claude Memory: A Different Philosophy](https://www.shloked.com/writing/claude-memory), [Anthropic's Opinionated Memory Bet](https://www.shloked.com/writing/claude-memory-tool)
+Sources: [Shlok Khemani - ChatGPT Memory and the Bitter Lesson](https://www.shloked.com/writing/chatgpt-memory-bitter-lesson), [Claude Memory: A Different Philosophy](https://www.shloked.com/writing/claude-memory), [Anthropic's Opinionated Memory Bet](https://www.shloked.com/writing/claude-memory-tool)
 
 ---
 
-## ChatGPT Memory: 4つのメモリバケット + Bitter Lesson戦略
+## ChatGPT Memory: 4 Memory Buckets + Bitter Lesson Strategy
 
-### アーキテクチャ
+### Architecture
 
-ChatGPTは毎ターン、システムプロンプトに**4つのデータバケット**を注入する:
+Every turn, ChatGPT injects **4 data buckets** into the system prompt:
 
-| コンポーネント | 説明 | 更新頻度 | ユーザー可視 |
+| Component | Description | Update Frequency | User Visible |
 |---|---|---|---|
-| **1. Interaction Metadata** | デバイス仕様、使用パターン（トピック比率、平均メッセージ長、会話深度、モデル使用比率、セッションアクティビティ、アカウント年齢、サブスクリプション層、推定地理位置） | リアルタイム | ❌ |
-| **2. Recent Conversation Context** | 最新の約40会話のトピックタグ付きタイムスタンプログ（ユーザーメッセージのみ、アシスタント応答はトークン節約のため省略） | リアルタイム | ❌ |
-| **3. Model Set Context** | ユーザーが明示的に提供したメモリ（例: 「甲殻類アレルギー」）。上書きレイヤーとして機能 | 随時（ユーザー編集可） | ✅ |
-| **4. User Knowledge Memories** | AIが会話履歴から生成した要約（約10段落）。最初の3つは職業/技術的生活、最後の2つはChatGPT使用習慣 | 2〜3日周期 | ❌ |
+| **1. Interaction Metadata** | Device specs, usage patterns (topic ratio, avg message length, conversation depth, model usage ratio, session activity, account age, subscription tier, estimated geolocation) | Real-time | ❌ |
+| **2. Recent Conversation Context** | Timestamped topic-tagged log of ~40 most recent conversations (user messages only, assistant responses omitted to save tokens) | Real-time | ❌ |
+| **3. Model Set Context** | User-provided explicit memories (e.g., "shellfish allergy"). Acts as an override layer | On demand (user-editable) | ✅ |
+| **4. User Knowledge Memories** | AI-generated summaries from conversation history (~10 paragraphs). First 3 cover professional/technical life, last 2 cover ChatGPT usage habits | Every 2-3 days | ❌ |
 
-### LLMトレーニングとのアナロジー
+### Analogy with LLM Training
 
-| メモリコンポーネント | LLM相当 | 機能 |
+| Memory Component | LLM Equivalent | Function |
 |---|---|---|
-| User Knowledge Memories | Pretrained Base Model | 密で重みのある知識。経年劣化するがコアパターンを保持 |
-| Model Set Context | RLHF / Fine-tuning | 古いベース知識を上書きする明示的な修正 |
-| Recent Conversation Context | In-Context Learning | 即時の行動を形成するセッション固有の例 |
-| Interaction Metadata | System Defaults / Environment | ルーティングとフォーマットを暗黙的に誘導 |
+| User Knowledge Memories | Pretrained Base Model | Dense, weighted knowledge. Degrades over time but retains core patterns |
+| Model Set Context | RLHF / Fine-tuning | Explicit correction overriding old base knowledge |
+| Recent Conversation Context | In-Context Learning | Session-specific examples shaping immediate behavior |
+| Interaction Metadata | System Defaults / Environment | Implicitly guides routing and formatting |
 
-### "Bitter Lesson"戦略
+### "Bitter Lesson" Strategy
 
-OpenAIは複雑な検索アーキテクチャを意図的に回避している。**RAGなし、ベクターDBなし、ナレッジグラフなし。** 代わりに、すべてのメモリコンポーネントを毎ターンコンテキストウィンドウに注入する。
+OpenAI deliberately avoids complex search architectures. **No RAG, no vector DB, no knowledge graph.** Instead, all memory components are injected into the context window every turn.
 
-**2つの前提:**
-1. **モデルの知能 > 検索エンジニアリング:** LLMは数千トークンを解析し、無関係なコンテキストを無視できるほど賢い
-2. **コンテキスト規模 + コストデフレーション:** 総当たりの注入は今は無駄に見えるが、コンテキストウィンドウの拡大と計算コストの低下により自明になる
+**2 assumptions:**
+1. **Model intelligence > search engineering:** LLMs are smart enough to parse thousands of tokens and ignore irrelevant context
+2. **Context scale + cost deflation:** Brute-force injection may look wasteful now, but widening context windows and falling compute costs will make it obvious
 
 ---
 
-## Claude Memory: 明示的・オンデマンドツール
+## Claude Memory: Explicit, On-Demand Tools
 
-### アーキテクチャ
+### Architecture
 
-ClaudeはChatGPTと**根本的に反対**のメモリ哲学を採用:
+Claude adopts a **fundamentally opposite** memory philosophy to ChatGPT:
 
-- **ブランクスレート初期化:** 会話ごとにゼロから開始。事前読み込みされたプロファイルや履歴なし
-- **明示的起動のみ:** 「何について話したっけ」「続きから」といったプロンプトでのみ活性化
-- **生履歴検索:** AI生成の要約や圧縮プロファイルは使用しない。実際の過去の会話をリアルタイムで検索
-- **可視ツール実行:** ユーザーは検索ツールの起動と意図的な遅延を確認できる
+- **Blank slate initialization:** Starts from zero each conversation. No pre-loaded profiles or history
+- **Explicit activation only:** Activated only when prompted with "What were we talking about?" or "Continue from where we left off"
+- **Raw history search:** Uses actual past conversations searched in real-time, not AI-generated summaries or compressed profiles
+- **Visible tool execution:** Users can see the search tool being invoked and intentional delay
 
-### 検索ツール仕様
+### Search Tool Specifications
 
-| ツール | 機能 | パラメータ |
+| Tool | Function | Parameters |
 |---|---|---|
-| `conversation_search` | キーワード/トピックベースの全履歴検索。マルチトピッククエリは順次実行 | `query` (必須), `max_results` (1-10, デフォルト5) |
-| `recent_chats` | 時間ベースのアクセス、カーソルページネーション | `n` (1-20, デフォルト3), `sort_order` (asc/desc), `before`, `after` |
+| `conversation_search` | Keyword/topic-based full history search. Multi-topic queries run sequentially | `query` (required), `max_results` (1-10, default 5) |
+| `recent_chats` | Time-based access with cursor pagination | `n` (1-20, default 3), `sort_order` (asc/desc), `before`, `after` |
 
 ---
 
-## Claude Memory Tool: ファイルベースのネイティブメモリ
+## Claude Memory Tool: File-Based Native Memory
 
-Anthropicは**ファイルベースのメモリツール**をネイティブ提供し、モデルプロバイダーとしてメモリに対する最初のオピニオンを表明した。
+Anthropic natively provides a **file-based memory tool**, marking the first time a model provider has taken an opinionated stance on memory.
 
-### 6つの操作インターフェース
+### 6 Operation Interfaces
 
 `view` | `create` | `str_replace` | `insert` | `delete` | `rename`
 
-### 責任の分離
+### Separation of Concerns
 
-1. **ストレージ（開発者）:** ファイル形式（JSON/XML/テキスト）、場所（ローカル/S3/暗号化）、セキュリティ/アクセス制御
-2. **ストラテジー（システムプロンプト）:** メモリ構造、保持ポリシー、使用ルールをガイド。カスタムパーサーや抽出ロジックは不要
+1. **Storage (developer):** File format (JSON/XML/text), location (local/S3/encrypted), security/access control
+2. **Strategy (system prompt):** Guides memory structure, retention policy, and usage rules. No custom parsers or extraction logic needed
 
-### Anthropicの4つの戦略的ベット
+### Anthropic's 4 Strategic Bets
 
-| ベット | 根拠 | トレードオフ |
+| Bet | Rationale | Tradeoff |
 |---|---|---|
-| **1. メモリ統一** | 検索、保存、会話を単一の推論フローに統合 | 高い遅延・コスト（〜3 LLM呼び出し/インタラクション） |
-| **2. ファイル > データベース** | 非構造化ファイルでダイナミックスキーマ進化を可能に | 構造強制にはプロンプトエンジニアリングが必要 |
-| **3. 検索関数なし** | `view`はディレクトリ一覧、Claudeはファイル全体を読む。「もうコンテキストが多すぎることはない」 | トークンコスト増。洞察vs費用の权衡 |
-| **4. メモリ超え** | ファイルはエージェントの汎用コンテキスト管理（エージェント間通信、タスクワークスペース、自己改善） | ファイルを「作業メモリの拡張」として位置づけるシフト |
+| **1. Unify Memory** | Integrate search, storage, and conversation into a single inference flow | High latency/cost (~3 LLM calls per interaction) |
+| **2. Files > Databases** | Unstructured files enable dynamic schema evolution | Requires prompt engineering for structure enforcement |
+| **3. No Search Function** | `view` lists directories, Claude reads full files. "There is never too much context" | Higher token cost. Insight vs. cost tradeoff |
+| **4. Beyond Memory** | Files serve as general agent context management (inter-agent communication, task workspaces, self-improvement) | Shift toward positioning files as "extended working memory" |
 
 ---
 
-## Cognition (Devin): ファイルシステムをメモリとして使う
+## Cognition (Devin): File System as Memory
 
-CognitionチームはClaude Sonnet 4.5をDevinに統合する過程で、モデルが**ファイルシステムをメモリとして扱う**ことを発見した。
+In integrating Claude Sonnet 4.5 into Devin, the Cognition team discovered that the model **treats the filesystem as memory**.
 
-### 主な発見
+### Key Findings
 
-- Sonnet 4.5はプロンプトなしで自発的にファイル（CHANGELOG.md, SUMMARY.md）を書き、状態を外部化する
-- この行動はコンテキストウィンドウの終端に近づくほど顕著になる
-- Cognitionは当初、独自メモリ管理を削除してモデルの自己外部化に任せる可能性を探った
-- しかし、モデル生成の要約は不完全で、本番利用にはパフォーマンス低下を招いた
-- **結論:** 明示的なメモリシステムとモデルの外部化行動のハイブリッドが必要
+- Sonnet 4.5 spontaneously writes files (CHANGELOG.md, SUMMARY.md) without prompting, externalizing state
+- This behavior becomes more pronounced as the context window fills up
+- Cognition initially explored removing their proprietary memory management and relying on the model's self-externalization
+- However, model-generated summaries were incomplete and caused performance degradation in production
+- **Conclusion:** A hybrid of explicit memory systems and the model's externalization behavior is necessary
 
 ### Context Window Anxiety
 
-Sonnet 4.5は自分のコンテキストウィンドウを「認識」しており、制限に近づくと:
-- 進捗を自発的に要約し始める
-- タスクを完了させるために決断的になる
-- ショートカットを取ったり、タスクを不完全に放置したりする
-- 常に残りのトークンを過小評価する（しかも驚くほど正確に）
+Sonnet 4.5 appears to "be aware" of its own context window. When approaching limits:
+- It spontaneously begins summarizing progress
+- It becomes decisive to complete tasks
+- It takes shortcuts or leaves tasks partially completed
+- It consistently underestimates remaining tokens (with surprising accuracy)
 
-Cognitionのハック: 1Mトークンコンテキストを有効にしつつ、実際の使用を200Kにキャップする。モデルに「余裕がある」と思わせ、不安駆動のショートカットを防ぐ。
+Cognition's hack: Enable 1M token context, but cap actual usage at 200K. This makes the model feel like it "has room to breathe," preventing anxiety-driven shortcuts.
 
 ---
 
-## 比較マトリクス
+## Comparison Matrix
 
-| 次元 | ChatGPT | Claude (Web) | Claude (Memory Tool) | Cognition Devin |
+| Dimension | ChatGPT | Claude (Web) | Claude (Memory Tool) | Cognition Devin |
 |---|---|---|---|---|
-| ターゲット | 一般コンシューマー | 技術者/プロフェッショナル | 開発者/エージェントビルダー | エンタープライズSWE |
-| 起動 | 常時自動 | 明示的トリガー | 明示的トリガー（ファイル操作） | 自律的 |
-| データ形式 | AI生成プロファイル | 生会話履歴 | ファイル（JSON/XML/テキスト） | ファイルシステム |
-| 検索 | なし（総注入） | キーワード検索 | ディレクトリ走査+全文 | ハイブリッド |
-| ストレージ責任 | OpenAI | Anthropic | 開発者 | Cognition |
-| メモリ更新 | 2〜3日周期 | リアルタイム検索 | 会話中随時 | 自律的要約 |
-| トークン戦略 | 総当たり注入 | オンデマンド読み取り | ファイル全体読み取り | 外部化+ハイブリッド |
+| Target | General consumer | Technical/professional | Developers/agent builders | Enterprise SWE |
+| Activation | Always automatic | Explicit trigger | Explicit trigger (file ops) | Autonomous |
+| Data format | AI-generated profile | Raw conversation history | Files (JSON/XML/text) | Filesystem |
+| Search | None (brute injection) | Keyword search | Directory scan + full text | Hybrid |
+| Storage responsibility | OpenAI | Anthropic | Developer | Cognition |
+| Memory update | Every 2-3 days | Real-time search | On-demand per conversation | Autonomous summarization |
+| Token strategy | Brute-force injection | On-demand reads | Full file reads | Externalization + hybrid |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/context-engineering]] — コンテキストエンジニアリング
-- [[concepts/context-window-management]] — コンテキストウィンドウの戦略的管理
-- [[concepts/harness-engineering/system-architecture/context-compaction]] — コンテキスト圧縮メカニズム
-- [[concepts/context-anxiety]] — コンテキスト不安現象
-- [[concepts/harness-engineering]] — エージェント制御・構造化
-- [[concepts/harness-engineering/agentic-engineering]] — エージェント活用開発
+- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-window-management]] — Strategic management of context windows
+- [[concepts/harness-engineering/system-architecture/context-compaction]] — Context compaction mechanisms
+- [[concepts/context-anxiety]] — Context anxiety phenomenon
+- [[concepts/harness-engineering]] — Agent control and structuring
+- [[concepts/harness-engineering/agentic-engineering]] — Agent-enabled development
 
-## 更新履歴
+## Update History
 
-| 日付 | 変更内容 |
+| Date | Changes |
 |------|---------|
-| 2026-04-13 | 初期作成 — Shlok Khemaniの記事3本 + Cognition Sonnet 4.5記事を統合 |
+| 2026-04-13 | Initial creation — integrated 3 Shlok Khemani articles + Cognition Sonnet 4.5 article |
