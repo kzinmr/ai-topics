@@ -17,6 +17,46 @@
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
 
+## [2026-05-26] translate | JP->EN batch — 8 files (5,647 chars)
+
+### Files Translated
+- [[concepts/context-compaction.md]] — 712 chars -> 0
+- [[concepts/agent-orchestration-frameworks.md]] — 711 chars -> 0
+- [[concepts/memory-systems-bitter-lesson.md]] — 707 chars -> 0
+- [[entities/mac-studio-local-ai.md]] — 707 chars -> 0
+- [[concepts/agentic-workflow-patterns.md]] — 706 chars -> 0
+- [[comparisons/hermes-vs-openclaw-architecture.md]] — 703 chars -> 0
+- [[concepts/hermes-agent-use-cases.md]] — 702 chars -> 0
+- [[entities/browserbase.md]] — 699 chars -> 0
+
+### Stats
+- Total JP chars removed: 5,647
+- Remaining JP content files: 179
+- Remaining JP chars: 49,858
+
+
+---
+
+## [2026-05-26] translate | JP->EN batch — 8 files (5,647 chars)
+
+### Files Translated
+- [[concepts/context-compaction.md]] — 712 chars -> 0
+- [[concepts/agent-orchestration-frameworks.md]] — 711 chars -> 0
+- [[concepts/memory-systems-bitter-lesson.md]] — 707 chars -> 0
+- [[entities/mac-studio-local-ai.md]] — 707 chars -> 0
+- [[concepts/agentic-workflow-patterns.md]] — 706 chars -> 0
+- [[comparisons/hermes-vs-openclaw-architecture.md]] — 703 chars -> 0
+- [[concepts/hermes-agent-use-cases.md]] — 702 chars -> 0
+- [[entities/browserbase.md]] — 699 chars -> 0
+
+### Stats
+- Total JP chars removed: 5,647
+- Remaining JP content files: 179
+- Remaining JP chars: 49,858
+
+
+---
+
 ## [2026-05-26] translate | JP->EN batch — 6 files (5,088 chars)
 
 ### Files Translated

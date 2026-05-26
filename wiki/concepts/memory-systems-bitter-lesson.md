@@ -8,7 +8,7 @@ tags:
   - ai-agents
 status: complete
 created: 2026-04-27
-updated: 2026-04-29
+updated: 2026-05-26
 sources:
   - url: "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
     title: "The Bitter Lesson (Rich Sutton, 2019)"
@@ -18,56 +18,56 @@ sources:
 
 # Memory Systems and the Bitter Lesson
 
-**Memory Systems and the Bitter Lesson** は、Rich Sutton の **Bitter Lesson（苦い教訓）** — 「スケーリングする汎用手法が最終的に勝利する」— を AI エージェントのメモリシステム設計に適用した概念。
+**Memory Systems and the Bitter Lesson** applies Rich Sutton's **Bitter Lesson** — "general methods that scale ultimately win" — to the design of AI agent memory systems.
 
-## コアアイデア
+## Core Idea
 
-Sutton の Bitter Lesson は、AI の70年にわたる歴史が示す教訓を要約している：**人間の知識をシステムに組み込もうとする努力は長期的には報われず、汎用的な探索・学習・スケーリング手法が常に勝利する**。
+Sutton's Bitter Lesson summarizes what 70 years of AI history has shown: **Efforts to embed human knowledge into systems do not pay off in the long run; general-purpose search, learning, and scaling methods always win**.
 
-これをメモリシステムに適用すると：
+Applied to memory systems:
 
-### 従来のアプローチ（Bitter Lesson に反する）
-- 手作りのメモリ構造・スキーマ設計
-- ドメイン特化した記憶フォーマット
-- 人間の知識ベース設計に頼る
+### Traditional Approach (Against the Bitter Lesson)
+- Hand-crafted memory structures and schema design
+- Domain-specific memory formats
+- Reliance on human knowledge base design
 
-### Bitter Lesson に従うアプローチ
-- **ファイルベースメモリ**: 単純なファイル I/O にスケーリングを任せる
-- **検索ベースメモリ**: 埋め込み + ベクトル検索で汎用的に
-- **コンテキストウィンドウの拡大**: 1M → 10M トークンへスケール
-- **自己管理メモリ**: エージェント自身にメモリ管理を任せる
+### Approach Aligned with the Bitter Lesson
+- **File-Based Memory**: Let scaling handle simple file I/O
+- **Search-Based Memory**: General-purpose via embeddings + vector search
+- **Context Window Scaling**: Scale from 1M to 10M tokens
+- **Self-Managed Memory**: Let agents manage their own memory
 
-## 具体例：ファイルベースメモリ vs 特殊メモリ
+## Example: File-Based vs Specialized Memory
 
-| 側面 | ファイルベース（汎用） | 特殊メモリ構造（人間設計） |
+| Aspect | File-Based (General) | Specialized Memory (Human-Designed) |
 |------|---------------------|------------------------|
-| 設計 | LLM にファイル読み書きを任せる | 人間がメモリスキーマを設計 |
-| スケーリング | ファイルシステムの限界まで | 設計時にスケール上限が決まる |
-| 柔軟性 | 任意のフォーマット対応可能 | 定義されたスキーマのみ |
-| Bitter Lesson 適合 | ✅ 汎用手法 + スケーリング | ❌ 人間の知識を埋め込もうとする |
+| Design | Let LLM handle file read/write | Humans design memory schema |
+| Scaling | Up to filesystem limits | Scale cap determined at design time |
+| Flexibility | Supports any format | Only defined schemas |
+| Bitter Lesson Fit | ✅ General methods + scaling | ❌ Attempts to embed human knowledge |
 
-## Claude Perfect Memory の事例
+## Claude Perfect Memory Case Study
 
-[[concepts/claude-perfect-memory]] は Bitter Lesson の応用例：
-- **CLAUDE.md** — プレーンテキスト（ファイル）で設定を保持
-- **MEMORY.md** — ファイルベースの永続記憶
-- **Slash Commands** — 単純な I/O 操作
-- 複雑なメモリ管理システムではなく、ファイルシステムの汎用性に依存
+[[concepts/claude-perfect-memory]] demonstrates the Bitter Lesson in practice:
+- **CLAUDE.md** — Plain text (file) for configuration
+- **MEMORY.md** — File-based persistent memory
+- **Slash Commands** — Simple I/O operations
+- Relies on filesystem generality rather than complex memory management systems
 
-## 批判と考察
+## Criticism and Discussion
 
-Bitter Lesson のメモリシステムへの適用には議論がある：
-1. **コンテキストの有限性**: 現在の LLM にはハードなコンテキスト制限がある
-2. **検索の品質**: 単純な検索では十分な精度が出ない場合がある
-3. **ハイブリッドアプローチ**: 汎用手法 + ドメイン知識の組み合わせが最適な可能性
+Applying the Bitter Lesson to memory systems is debatable:
+1. **Finite Context**: Current LLMs have hard context limits
+2. **Search Quality**: Simple search may not provide sufficient accuracy
+3. **Hybrid Approach**: A combination of general methods + domain knowledge may be optimal
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/claude-perfect-memory]] — ファイルベース記憶の実践
-- [[concepts/company-ai-pilled]] — AI 採用の成熟度モデル
-- [[concepts/autoreason]] — 自己改善型推論
+- [[concepts/claude-perfect-memory]] — File-based memory in practice
+- [[concepts/company-ai-pilled]] — AI adoption maturity model
+- [[concepts/autoreason]] — Self-improving reasoning
 
-## ソース
+## Sources
 
 - [The Bitter Lesson (Rich Sutton, 2019)](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 - [Claude Memory (Anthropic)](https://www.anthropic.com/news/claude-memory)

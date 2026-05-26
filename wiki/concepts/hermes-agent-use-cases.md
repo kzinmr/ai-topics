@@ -1,7 +1,7 @@
 ---
 title: "Hermes Agent Use Cases — 7 Canonical Workflows"
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-26
 type: concept
 tags:
   - ai-agents
@@ -23,70 +23,70 @@ related:
 
 # Hermes Agent Use Cases — 7 Canonical Workflows
 
-> **Source:** Matt Van Horn (@mvanhorn) による Reddit/X/YouTube 直近30日間コミュニティ分析（2026年4月19日）。90 Reddit threads、80 X posts、55 YouTube videos、計350万ビュー超のデータから抽出された7つの標準ワークフロー。
+> **Source:** Matt Van Horn (@mvanhorn)'s 30-day community analysis across Reddit/X/YouTube (April 19, 2026). Seven canonical workflows extracted from 90 Reddit threads, 80 X posts, 55 YouTube videos, totaling over 3.5 million views.
 
 ## 7 Canonical Use Cases
 
 ### 1. 📞 Pre-call Client Research
-**ビジネス最高シグナルのユースケース。** 会議前に相手の情報を自動収集し dossier を作成。1回あたり20-30分節約。
-- ソース: r/hermesagent "How are you actually using Hermes for your business?" (19 comments)
-- 派生: LinkedIn research, company-news digests, "what did they ship recently"
+**The highest-signal business use case.** Automatically gather information about counterparties before meetings and create a dossier. Saves 20-30 minutes per session.
+- Source: r/hermesagent "How are you actually using Hermes for your business?" (19 comments)
+- Derived: LinkedIn research, company-news digests, "what did they ship recently"
 
 ### 2. ✉️ Meeting-note to Follow-up Drafting
-粗いノートを polished follow-up に変換。TODOs を Obsidian の TODOS.md に既存タグスタイルで書き込み。
-- Integration 不要 — agent + notes file + draft のみ
-- キー要件: セッションを跨いだタグ規則の記憶（persistent memory）
+Convert rough notes into polished follow-ups. Write TODOs to Obsidian TODOS.md using existing tag styles.
+- No integration needed — just agent + notes file + draft
+- Key requirement: Cross-session memory of tag conventions (persistent memory)
 
 ### 3. 🎧 Weekly Podcast Digest
-Voxtral で文字起こし → Mistral Large 3 で関心領域にランク付け → ハイライトリールに編集。
-- 10時間のポッドキャスト視聴 → 2時間のハイライトに圧縮 (r/MistralAI, 39 upvotes)
-- 亜種: 10分クリップ/ポッドキャスト (r/openclaw)、長尺YouTube処理
+Transcribe with Voxtral → Rank areas of interest with Mistral Large 3 → Edit into highlight reel.
+- 10 hours of podcast listening → compressed to 2 hours of highlights (r/MistralAI, 39 upvotes)
+- Variants: 10-minute clips/podcast (r/openclaw), long-form YouTube processing
 
 ### 4. 📬 Daily News Briefings (Telegram/Discord)
-最も一般的なエントリーポイント。
-- $5 VPS + GitHub student plan + Gemini API + Ollama で稼働
-- DevOps派生: SSLチェック、uptime監視、サーバーステータスのDiscord通知
+The most common entry point.
+- Running on $5 VPS + GitHub Student Plan + Gemini API + Ollama
+- DevOps derivatives: SSL checks, uptime monitoring, server status Discord notifications
 
 ### 5. ⚙️ Content-Ops Pipeline
-ブログ作成、cold emails、YC/X/Reddit lead scraping。OpenClaw からの移行動機。
-- マルチエージェント Telegram チェーン: リサーチ→ドラフト→レビュー→公開 (r/AISEOInsider)
-- 共有フォルダ経由の調整
+Blog creation, cold emails, YC/X/Reddit lead scraping. Migration motivation from OpenClaw.
+- Multi-agent Telegram chain: Research → Draft → Review → Publish (r/AISEOInsider)
+- Coordination via shared folders
 
 ### 6. 💬 24/7 Personal Assistant (Telegram/WhatsApp)
-最大のコンシューマー用途。
-- 1つのHermesインスタンス、全チャンネル、セッション跨ぎのpreference記憶
-- 廉価版: Raspberry Pi + Qwen 3.5 (4B) で $10/月 (r/hermesagent 160 upvotes)
-- 上級版: 複数インスタンス + カスタム Obsidian メモリレイヤー (Alex Finn, 105K views)
+The largest consumer use case.
+- One Hermes instance, all channels, cross-session preference memory
+- Budget version: Raspberry Pi + Qwen 3.5 (4B) at $10/month (r/hermesagent 160 upvotes)
+- Advanced version: Multiple instances + custom Obsidian memory layer (Alex Finn, 105K views)
 
 ### 7. 🛡️ Agent Watchdog & Auto-Healer
-上級運用パターン。
-- HermesがOpenClawを2時間cronで監視、異常検知→config修復→再起動 (11秒ダウンタイム)
-- リアルタイム版: Codex + GPT-5.4 を Hermes-driven workflow の監視役に (@gkisokay, 70 likes)
+Advanced operational pattern.
+- Hermes monitors OpenClaw with 2-hour cron, anomaly detection → config repair → restart (11 seconds downtime)
+- Real-time version: Codex + GPT-5.4 as monitoring agent for Hermes-driven workflow (@gkisokay, 70 likes)
 
 ## 🧵 The Three Shared Properties
 
-すべての成功ワークフローに共通する3つの設計原則：
+Three design principles common to all successful workflows:
 
-| 原則 | 意味 |
+| Principle | Meaning |
 |------|------|
-| **Scheduled** | cron または event-driven。対話的に使われることは稀 |
-| **File-based** | Markdown、JSON、プレーンテキストの読み書きが中心 |
-| **Pushes to messenger** | 結果はダッシュボードではなく Telegram/Discord 等に配信 |
+| **Scheduled** | Cron or event-driven. Rarely used interactively |
+| **File-based** | Centered around reading/writing Markdown, JSON, and plain text |
+| **Pushes to messenger** | Results are delivered to Telegram/Discord etc., not dashboards |
 
-### なぜこれが重要なのか
-- これらの原則は **agent-first architecture** の自然な帰結である
-- 対照的に、OpenClaw の gateway-first 設計では messenger が push 元であり、受信がデフォルト
-- 「ダッシュボードを開かせる」のではなく「結果を届ける」パラダイム
+### Why This Matters
+- These principles are a natural consequence of **agent-first architecture**
+- In contrast, OpenClaw's gateway-first design has messenger as the push source, with receiving as the default
+- A paradigm of "delivering results" rather than "making users open a dashboard"
 
 ## 🔄 The Self-Evolving Skill Loop
 
-| 実行回数 | Tool Calls | 説明 |
+| Run Count | Tool Calls | Description |
 |----------|-----------|------|
-| 1回目 | 23 | 探索的、非効率 |
-| 3回目 | 6 | skill化により74%削減 |
-| それ以降 | 3-6 | 安定、compound効果 |
+| 1st time | 23 | Exploratory, inefficient |
+| 3rd time | 6 | 74% reduction through skill creation |
+| Subsequent | 3-6 | Stable, compounding effect |
 
-**重要な洞察:** ほとんどのユーザーは学習ループのために Hermes をセットアップしない。朝7時の digest が欲しくてセットアップする。学習ループは「なぜ止めないのか」の理由である。
+**Key Insight:** Most users don't set up Hermes for the learning loop. They set it up because they want a 7am digest. The learning loop is the reason they "can't stop using it."
 
 ## 📊 Data Sources (30-day window ending 2026-04-19)
 
@@ -106,8 +106,8 @@ Voxtral で文字起こし → Mistral Large 3 で関心領域にランク付け
 
 ## 📎 See Also
 
-- [[entities/hermes-agent]] — Hermes Agent の基本情報と3層モデル
-- [[concepts/hermes-agent-architecture]] — AIAgent中心のアーキテクチャ詳細
-- [[comparisons/hermes-vs-openclaw-architecture]] — OpenClawとの比較
-- [[concepts/agentic-engineering]] — Agentic Engineeringの方法論
-- [[concepts/cron-job-patterns]] — Cron jobによる自動化パターン
+- [[entities/hermes-agent]] — Basic info and three-layer model of Hermes Agent
+- [[concepts/hermes-agent-architecture]] — Architecture details centered around AIAgent
+- [[comparisons/hermes-vs-openclaw-architecture]] — Comparison with OpenClaw
+- [[concepts/agentic-engineering]] — Agentic Engineering methodology
+- [[concepts/cron-job-patterns]] — Automation patterns via cron jobs

@@ -6,7 +6,7 @@ aliases:
 - browserbase-hq
 - stagehand
 created: 2026-04-13
-updated: 2026-05-22
+updated: 2026-05-26
 tags:
   - entity
   - developer-tooling
@@ -23,82 +23,82 @@ sources:
 
 # Browserbase
 
-**Browserbase**は、AIエージェント向けの信頼性の高いブラウザ自動化インフラを提供するプラットフォーム。「the where（どこで実行するか）」を担当し、Stagehand（the what）とStagehand API（the how）と統合された3層アーキテクチャを構築している。
+**Browserbase** is a platform providing reliable browser automation infrastructure for AI agents. It handles "the where" (where to execute) and builds an integrated three-layer architecture with Stagehand (the what) and Stagehand API (the how).
 
-## 概要
+## Overview
 
-| 項目 | 内容 |
+| Item | Details |
 |---|---|
-| 評価額 | $300M（Series B） |
-| 主要顧客 | Vercel, Perplexity, Clay |
-| オープンソース | Stagehand（22k+ GitHub stars, 700k+ weekly downloads） |
-| コアバリュー | セキュアなブラウザフリート管理、スケーラビリティ |
+| Valuation | $300M (Series B) |
+| Key Customers | Vercel, Perplexity, Clay |
+| Open Source | Stagehand (22k+ GitHub stars, 700k+ weekly downloads) |
+| Core Value | Secure browser fleet management, scalability |
 
-## 3層プラットフォームアーキテクチャ
+## Three-Layer Platform Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
-│  Stagehand（the what）                       │
-│  オープンソースAI自動化フレームワーク          │
-│  自然言語コマンド: act(), extract(), observe()│
+│  Stagehand (the what)                          │
+│  Open-source AI automation framework                │
+│  Natural language commands: act(), extract(), observe()│
 ├─────────────────────────────────────────────┤
-│  Stagehand API（the how）                    │
-│  ホスト型インテリジェンスエンジン               │
-│  プロンプト → CDPアクション変換・最適化        │
+│  Stagehand API (the how)                       │
+│  Hosted intelligence engine                          │
+│  Prompt → CDP action conversion and optimization     │
 ├─────────────────────────────────────────────┤
-│  Browserbase（the where）                    │
-│  クラウドブラウザインフラ                      │
-│  セキュア、スケーラブル、ステルス               │
+│  Browserbase (the where)                       │
+│  Cloud browser infrastructure                        │
+│  Secure, scalable, stealth                           │
 └─────────────────────────────────────────────┘
 ```
 
-## Stagehand v3（2025年10月）
+## Stagehand v3 (October 2025)
 
-### Playwrightからの卒業
-- Playwright依存を排除、プロトコルレベルで動作
-- モジュラードライバーシステム導入
-- Bunを含む複数環境でネイティブ動作
-- iframes/shadow DOMのトラバースを強化
+### Graduation from Playwright
+- Eliminated Playwright dependency, operates at protocol level
+- Modular driver system introduced
+- Native operation across multiple environments including Bun
+- Enhanced iframes/shadow DOM traversal
 
-### 性能改善
-- v2比で全ベンチマークで44%+高速
-- 深くネストされたiframe/shadow DOMで顕著な改善
-- CI/CD統合の最適化
+### Performance Improvements
+- 44%+ faster across all benchmarks vs v2
+- Notable improvements in deeply nested iframes/shadow DOM
+- CI/CD integration optimization
 
-### 対応言語
+### Supported Languages
 - **TypeScript/Node.js**: `npx create-browser-app`
 - **Python**: `uv run` + stagehand SDK
-- **Java / Go / Ruby**: SDK対応
+- **Java / Go / Ruby**: SDK supported
 
-## 主要機能
+## Key Features
 
-1. **ホストブラウザフリート**: スケール対応のセキュアなブラウザ環境
-2. **Session Inspector**: 全てのAI決定を可視化・デバッグ
-3. **Model Gateway**: LLMリクエストをBrowserbase APIキーでルーティング
-4. **Browse.sh** (2026年5月): 100+のブラウザスキル公開カタログ。AutobrowseによるAI駆動スキル生成。`npm i -g browse`。エージェントのサイト再発見コストを45%削減
-5. **MCP Server**: インフラ上で直接実行（2026年3月）
-6. **Fetch API**: ブラウザベースのデータ取得（2026年3月）
-7. **Search**: ブラウザ内検索機能（2026年3月）
-8. **Concurrency**: フリープランで1→3に拡張（2026年3月）
-9. **Prime Intellect連携**: ブラウザエージェントのトレーニング・評価（2026年3月）
+1. **Host Browser Fleet**: Secure browser environments at scale
+2. **Session Inspector**: Visualize and debug all AI decisions
+3. **Model Gateway**: Route LLM requests via Browserbase API key
+4. **Browse.sh** (May 2026): Catalog of 100+ browser skills. AI-driven skill generation via Autobrowse. `npm i -g browse`. Reduces agent site rediscovery cost by 45%
+5. **MCP Server**: Run directly on infrastructure (March 2026)
+6. **Fetch API**: Browser-based data fetching (March 2026)
+7. **Search**: In-browser search functionality (March 2026)
+8. **Concurrency**: Expanded from 1 to 3 on free plan (March 2026)
+9. **Prime Intellect Integration**: Browser agent training and evaluation (March 2026)
 
-## browser-useとの違い
+## Differences from browser-use
 
-| 次元 | Browserbase | browser-use |
+| Dimension | Browserbase | browser-use |
 |---|---|---|
-| 焦点 | インフラ（ホスティング） | フレームワーク（操作ロジック） |
-| Stagehand | 自然言語コマンド | Agentループ |
-| 提供 | マネージドブラウザ | ローカル/クラウドどちらでも |
-| OSS | Stagehandのみ | コアライブラリ全体 |
-| 補完 | 併用可能 | Browserbase Cloudと連携可能 |
+| Focus | Infrastructure (hosting) | Framework (operation logic) |
+| Stagehand | Natural language commands | Agent loop |
+| Offering | Managed browsers | Local/cloud both |
+| OSS | Stagehand only | Entire core library |
+| Complement | Can be used together | Can integrate with Browserbase Cloud |
 
-## 関連エンティティ
+## Related Entities
 
-- [[entities/browse-sh]] — ブラウザスキル公開カタログ
-- [[entities/browser-use]] — オープンソースブラウザ自動化
-- [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
-- [[entities/webmcp]] — 標準化プロトコル
-- [[entities/anthropic-computer-use]] — スクリーンショットベースアプローチ
+- [[entities/browse-sh]] — Browser skill catalog
+- [[entities/browser-use]] — Open-source browser automation
+- [[concepts/death-of-browser]] — The dehumanization of the browser
+- [[entities/webmcp]] — Standardization protocol
+- [[entities/anthropic-computer-use]] — Screenshot-based approach
 
 ## Sources
 

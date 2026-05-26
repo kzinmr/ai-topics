@@ -1,7 +1,7 @@
 ---
 title: "Hermes Agent vs OpenClaw Architecture Comparison"
 created: 2026-04-18
-updated: 2026-05-22
+updated: 2026-05-26
 type: comparison
 tags:
   - ai-agents
@@ -160,18 +160,18 @@ The Kilo FAQ confirms: *"Yes. Experienced users run OpenClaw as the orchestrator
 
 ### Control Plane Depth: Why OpenClaw Outperforms as Orchestrator
 
-ACP 連携とチャネル数は「繋がる力」の表面に過ぎない。OpenClaw が orchestrator として優れる本質は、**制御基盤としての設計深度**にある。5つの軸で分析する。
+ACP integration and channel breadth are only the surface of "connecting power." The essence of OpenClaw's strength as an orchestrator lies in its **design depth as a control plane**. Analyzed across five axes.
 
-| 制御軸 | Hermes | OpenClaw | Orchestratorとしての影響 |
+| Control Axis | Hermes | OpenClaw | Impact as Orchestrator |
 |---|---|---|---|
-| **セッション可視性** | AIAgent に分散。全セッション状態は各 Agent に問い合わせないと不明。 | Gateway に集中。**Single Source of Truth**。1箇所で全セッション把握。 | orchestrator は全ワーカーの状態を即座に知る必要がある。Hermes では各子エージェントにポーリングが必要。 |
-| **スケジューリング決定性** | 自然言語 cron。LLM が解釈 → 曖昧さ・ハルシネーションの余地あり。 | `jobs.json` に決定的記述。解釈の余地ゼロ。 | orchestrator は「なぜ今このタスクが動いたか」を常に説明できる必要がある。Hermes では「LLM がそう判断したから」。 |
-| **外部イベント駆動** | なし（Gateway 経由の自然言語 cron のみ） | **Webhook + Gmail Pub/Sub** で外部システムと連携 | orchestrator はユーザーメッセージ以外のトリガー（CI failure, 監視アラート, メール着信）に反応する必要がある。 |
-| **子エージェントのライフサイクル** | `delegate_task` → spawn 後は結果待ちのみ。途中介入不可。 | `/acp spawn/steer/cancel/close/status`。**フルライフサイクル制御**。 | 並行実行中のワーカーが誤った方向に進んだ時、Hermes は cancel して再 spawn。OpenClaw は `/acp steer` で軌道修正。 |
-| **実行レーン分離** | 親コンテキストを占有。`delegate_task` は非同期だが親のコンテキストを消費。 | **Background lane** 分離。ACP session は別レーンで実行。親は即座に次のタスクへ。 | orchestrator が 3 ワーカーに同時委任し、全ワーカーが裏で動いている間もユーザーとの対話を継続できる。 |
-| **デバッグ決定性** | スキルが自動生成され、どのスキルが効いたか追跡困難。「午前3時の障害 → 原因特定に時間」 | 5段階スキル優先順位 + TOOLS.md明示ルーティング。**「grep 一発で原因特定」**。 | orchestrator が間違ったツールを選ぶと全ワーカーが連鎖失敗。決定論的デバッグは orchestrator の信頼性に直結。 |
+| **Session Visibility** | Distributed across AIAgents. All session state requires polling each Agent. | Centralized in Gateway. **Single Source of Truth**. See all sessions in one place. | Orchestrator needs to know all worker states immediately. Hermes requires polling each child agent. |
+| **Scheduling Determinism** | Natural language cron. LLM interprets → ambiguity and hallucination risk. | Deterministic description in `jobs.json`. Zero interpretation overhead. | Orchestrator must always explain "why this task ran now." Hermes: "because the LLM decided so." |
+| **External Event-Driven** | None (natural language cron via Gateway only) | **Webhook + Gmail Pub/Sub** integration with external systems | Orchestrator needs to react to triggers beyond user messages (CI failures, monitoring alerts, incoming email). |
+| **Child Agent Lifecycle** | `delegate_task` → wait for results after spawn. No mid-execution intervention. | `/acp spawn/steer/cancel/close/status`. **Full lifecycle control**. | When a concurrently running worker goes off course, Hermes cancels and re-spawns. OpenClaw uses `/acp steer` for mid-course correction. |
+| **Execution Lane Isolation** | Occupies parent context. `delegate_task` is async but consumes parent context. | **Background lane** isolation. ACP sessions run on a separate lane; parent proceeds immediately. | Orchestrator can delegate to 3 workers simultaneously while continuing user interaction with all workers running in the background. |
+| **Debugging Determinism** | Skills auto-generated, tracking which skill activated is difficult. "3am outage → slow root cause." | 5-tier skill precedence + TOOLS.md explicit routing. **"One grep to find the cause"**. | If the orchestrator picks the wrong tool, all workers cascade-fail. Deterministic debugging is directly tied to orchestrator reliability. |
 
-**本質**: OpenClaw の Gateway は単なる「メッセージ中継所」ではない。**制御の単一真実源（Single Source of Truth）であり、すべてが決定的・可視的・ノンブロッキングに設計されている**。これは orchestrator に求められる「壊れても原因が特定できる」「複数タスクを同時管理できる」「外部イベントに反応できる」という要件に、Hermes より根本的に適した設計である。
+**Essence**: OpenClaw's Gateway is not merely a "message relay." It is the **Single Source of Truth for control, where everything is designed to be deterministic, visible, and non-blocking**. This is a fundamentally better fit than Hermes for the orchestrator requirements: "root cause identifiable even on failure," "simultaneous management of multiple tasks," and "reactive to external events."
 
 **Skill ecosystem evidence (13,700+ skills):**
 - `agent-orchestrator`: "Meta-agent skill that decomposes complex tasks into parallelizable subtasks, spawns specialized sub-agents with dynamically generated SKILL.md files, and consolidates their outputs"
