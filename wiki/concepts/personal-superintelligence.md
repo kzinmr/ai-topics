@@ -7,7 +7,7 @@ aliases:
   - ambient-computing-agents
   - context-aware-ai
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-05-26
 tags:
   - concept
   - methodology
@@ -15,68 +15,67 @@ tags:
 status: active
 sources: []
 ---
+# Personal Superintelligence — Evolution and Philosophical Tensions
 
-# Personal Superintelligence — パーソナルAIの進化と哲学的対立
+**"Should AI automate everything centrally, or should it become a tool that each individual directs toward their own goals?"**
 
-**「AIは中央で全てを自動化するべきか、それとも個人それぞれが自分の目標に向かう道具となるべきか。」**
+From late 2025 through 2026, the most significant philosophical divergence in the AI industry is surfacing — a conflict over the **"destination of superintelligence."**
 
-2025年後半から2026年にかけて、AI業界で最も重要な哲学的分岐が表面化している。それは**「superintelligenceの行き先」**をめぐる対立である。
-
-## 二つのビジョン
+## Two Visions
 
 ```
 Central Automation (OpenAI/Anthropic/Google)
-    AIが全ての仕事を自動化
-    → 人間はその配分を受ける
+    AI automates all work
+    → Humans receive its allocation
 
 Personal Empowerment (Meta/OpenClaw/Local AI)
-    個人がAIを自分の目標に向ける
-    → 人間が主体性を持つ
+    Individuals direct AI toward their own goals
+    → Humans retain agency
 ```
 
-## 主要プレイヤー別アプローチ
+## Approaches by Major Players
 
-| プレイヤー | 実現方法 | データ主権 | 哲学 |
+| Player | Implementation | Data Sovereignty | Philosophy |
 |---|---|---|---|
-| [[entities/meta]] | Muse Spark + Ray-Ban AI Glasses | Metaクラウド | 「Personal superintelligence for everyone」 |
-| [[entities/peter-steinberger]] | OpenClaw/Claudbot | ユーザーローカル | 「You own your agent」 |
-| [[entities/shlok-khemani]] | OpenPoke/Vajra | Filesystem-first | 「Personality ≠ Execution」 |
-| [[entities/george-hotz]] | tinygrad + local inference | フリー | 「All compute is equal」 |
-| [[entities/mario-zechner]] | pi coding agent | ローカル | 「Strip away the bloat」 |
-| [[entities/sero]] | Open Orchestra/Thrive | ローカル+分散 | 「Freedom Tech」 |
+| [[entities/meta]] | Muse Spark + Ray-Ban AI Glasses | Meta cloud | "Personal superintelligence for everyone" |
+| [[entities/peter-steinberger]] | OpenClaw/Claudbot | User-local | "You own your agent" |
+| [[entities/shlok-khemani]] | OpenPoke/Vajra | Filesystem-first | "Personality ≠ Execution" |
+| [[entities/george-hotz]] | tinygrad + local inference | Free | "All compute is equal" |
+| [[entities/mario-zechner]] | pi coding agent | Local | "Strip away the bloat" |
+| [[entities/sero]] | Open Orchestra/Thrive | Local + distributed | "Freedom Tech" |
 
-## 3つの哲学的分岐点
+## Three Philosophical Divergence Points
 
-### ① データ主権 — 「who knows you?」
+### ① Data Sovereignty — "who knows you?"
 
 > *"Personal superintelligence that knows us deeply, understands our goals, and can help us achieve them will be by far the most useful."*
 > — Mark Zuckerberg, July 2025
 
-Zuckerbergの言う「knows us deeply」は、Metaのプラットフォーム上にユーザーデータを集約するモデル。対照的に、[[entities/shlok-khemani]]はファイルベースのメモリ（CLAUDE.md、`.agent/`ディレクトリ）を提唱し、**ユーザーが自分のデータを直接管理・可視化できること**を重視する。
+Zuckerberg's "knows us deeply" envisions aggregating user data on Meta's platform. In contrast, [[entities/shlok-khemani]] advocates for filesystem-based memory (CLAUDE.md, `.agent/` directories), emphasizing that **users should directly manage and visualize their own data.**
 
-| アプローチ | 長所 | 懸念 |
+| Approach | Strengths | Concerns |
 |---|---|---|
-| **プラットフォーム集約** (Meta) | 豊富なコンテキスト、シームレス統合 | データロックイン、プライバシー |
-| **Filesystem-first** (Khemani/Anthropic) | 透明性、ポータビリティ、Git管理 | 設定コスト、ユーザー負担 |
-| **ローカル完全分離** (OpenClaw/Sero) | 完全なデータ主権 | モデル制約、インフラ自己管理 |
+| **Platform Aggregation** (Meta) | Rich context, seamless integration | Data lock-in, privacy |
+| **Filesystem-first** (Khemani/Anthropic) | Transparency, portability, Git management | Setup cost, user burden |
+| **Fully Local** (OpenClaw/Sero) | Complete data sovereignty | Model constraints, self-managed infrastructure |
 
-### ② ハードウェア — 「where does the agent live?」
+### ② Hardware — "where does the agent live?"
 
-Metaは **Ray-Ban AI Glasses** を「primary computing device」と位置づける。2025年に700万台以上を販売、2026年には年間2000-3000万台の製造能力を目標とする。VisionClaw（Xiaoan Sean Liu）はRay-Ban Meta + Gemini Live API + OpenClawを組み合わせ、「what you see/hear」を理解するエージェントの実現を実証した。
+Meta positions **Ray-Ban AI Glasses** as the "primary computing device." Having sold over 7 million units in 2025, they target annual production capacity of 20-30 million units by 2026. VisionClaw (Xiaoan Sean Liu) demonstrated combining Ray-Ban Meta + Gemini Live API + OpenClaw to create an agent that understands "what you see/hear."
 
-対照的に、ローカルAIコミュニティは **既存のハードウェア**（consumer GPU、Apple Silicon）上での実行を志向する。[[entities/georgi-gerganov]] の llama.cpp、[[entities/mario-zechner]] の pi エージェントはいずれも「特別なデバイス」を必要としない。
+In contrast, the local AI community focuses on **existing hardware** (consumer GPU, Apple Silicon). Both [[entities/georgi-gerganov]]'s llama.cpp and [[entities/mario-zechner]]'s pi agent require no "special devices."
 
-### ③ オープン vs クローズド — 「who controls the model?」
+### ③ Open vs Closed — "who controls the model?"
 
-MetaのMuse Spark（2026年4月発表）は**closed-source**。Llama系列のオープン哲学からの断裂がコミュニティで指摘されている（"rip LLaMA"）。一方、[[concepts/anthropic-openclaw-conflict]] で見られたように、Anthropicもまたサードパーティエージェントをサブスクリプションから排除する方向に動いている。
+Meta's Muse Spark (announced April 2026) is **closed-source**. The community notes a break from the Llama family's open philosophy ("rip LLaMA"). Meanwhile, as seen in [[concepts/anthropic-openclaw-conflict]], Anthropic is also moving toward excluding third-party agents from its subscription.
 
-**皮肉な収束**: Meta（オープン源流）とAnthropic（元々クローズド）が、異なる理由で同じ「プラットフォーム制御」の方向に進んでいる。
+**Ironic convergence**: Meta (open-source origins) and Anthropic (originally closed) are moving in the same "platform control" direction for different reasons.
 
-## 重要トレンド（2026年）
+## Key Trends (2026)
 
-### 1. VisionClawパターン — ウェアラブル×エージェント
+### 1. VisionClaw Pattern — Wearable × Agent
 
-2026年2月、開発者Xiaoan Sean Liuが **VisionClaw** を発表。Meta Ray-Ban Glasses + Google Gemini Live API + OpenClawフレームワークを組み合わせ、**「画面もキーボードもない」** エージェント体験を実証。
+In February 2026, developer Xiaoan Sean Liu announced **VisionClaw**: combining Meta Ray-Ban Glasses + Google Gemini Live API + OpenClaw framework for an agent experience with **"no screen and no keyboard."**
 
 ```
 Sensory Input (glasses camera/mic)
@@ -85,21 +84,21 @@ Sensory Input (glasses camera/mic)
             → Real-world actions
 ```
 
-これはMetaの「glasses that understand our context」ビジョンを**コミュニティ主導で先取り**した実装。
+This is a **community-driven pre-emption** of Meta's "glasses that understand our context" vision.
 
-### 2. Agentic Shopping — Metaの商業戦略
+### 2. Agentic Shopping — Meta's Commercial Strategy
 
-Zuckerbergは2025年Q4決算で「AI-driven commerce」を強調。Instagram/WhatsApp上のエージェントが商品発見〜購入を代行するモデル。Metaの個人データ（興味、関係性、購買履歴）を最大限に活用する戦略。
+Zuckerberg emphasized "AI-driven commerce" in Q4 2025 earnings. A model where agents on Instagram/WhatsApp handle product discovery through purchase on behalf of users. A strategy that maximizes Meta's personal data (interests, relationships, purchase history).
 
 ### 3. Infrastructure Spend War
 
-Metaは2026年に **$115B-$135B** の設備投資を計画。VR/Reality Labs投資を削減し、AIグラスと基盤モデルに集中。これは「metaverse failed, superintelligence next」のシフトを意味する。
+Meta plans **$115B-$135B** in capital expenditure for 2026. Cutting VR/Reality Labs investment to focus on AI glasses and foundation models — signaling a shift from "metaverse failed, superintelligence next."
 
 ### 4. Data Sovereignty Movement
 
-OpenClawコミュニティ、Seroの「Freedom Tech」、ローカルLLM愛好家は**「ユーザーが自分のエージェントとデータを所有する権利」** を主張。[[concepts/anthropic-openclaw-conflict]] はこの運動の転換点となった。
+The OpenClaw community, Sero's "Freedom Tech," and local LLM enthusiasts advocate for **"the user's right to own their agent and data."** [[concepts/anthropic-openclaw-conflict]] was a turning point for this movement.
 
-## 概念マップ
+## Concept Map
 
 ```
 Personal Superintelligence
@@ -120,43 +119,43 @@ Personal Superintelligence
     └── Economics: Subscription vs Self-hosted
 ```
 
-## 定点ウォッチ対象
+## Watch Points
 
-### 四半期チェック項目
-1. **Meta製品展開** — Muse Spark API公開、Ray-Ban AI機能追加、Agentic Shoppingローンチ
-2. **OpenClawエコシステム** — OpenAI統合後の方向性、サードパーティツールアクセス
-3. **ローカルAI** — llama.cppの新機能、piエージェントの進化、Gemma 4 on-device
-4. **規制・プライバシー** — ウェアラブルAIの法的枠組み、データ主権立法
-5. **業界対立** — Anthropic vs OpenClawの解決、Googleのサードパーティポリシー
+### Quarterly Check Items
+1. **Meta product rollout** — Muse Spark API release, Ray-Ban AI features, Agentic Shopping launch
+2. **OpenClaw ecosystem** — Direction post-OpenAI integration, third-party tool access
+3. **Local AI** — llama.cpp new features, pi agent evolution, Gemma 4 on-device
+4. **Regulation & Privacy** — Legal framework for wearable AI, data sovereignty legislation
+5. **Industry conflict** — Anthropic vs OpenClaw resolution, Google's third-party policy
 
-### 要監視プレイヤー
-- **[[entities/meta]]** — Personal Superintelligenceビジョンの実行
-- **[[entities/peter-steinberger]]** — OpenAIでのpersonal agent開発
-- **[[entities/shlok-khemani]]** — ファーストパーソンAIのアーキテクチャ
-- **[[entities/sero]]** — Freedom Tech / ローカルインフラ
+### Entities to Monitor
+- **[[entities/meta]]** — Personal Superintelligence vision execution
+- **[[entities/peter-steinberger]]** — Personal agent development at OpenAI
+- **[[entities/shlok-khemani]]** — First-person AI architecture
+- **[[entities/sero]]** — Freedom Tech / local infrastructure
 - **[[entities/mario-zechner]]** — Minimal agent on consumer hardware
 - **[[entities/george-hotz]]** — Open source GPU driver / tinygrad
 
-## 関連コンセプト
+## Related Concepts
 
-- [[concepts/death-of-browser]] — ブラウザの脱人間化（エージェントがUIを操作）
-- [[concepts/anthropic-openclaw-conflict]] — プラットフォーム制御 vs オープンアクセス
-- [[concepts/openclaw-ecosystem]] — OpenClawとパーソナルAIエージェント運動
-- [[concepts/meta-muse-spark]] — Muse Sparkモデル詳細
-- [[concepts/local-llm]] — ローカルLLM推論
-- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — エージェント活用開発パターン
-- [[concepts/cache-first-engineering]] — プロンプトキャッシュ最適化
-- [[concepts/ai-privacy-tools]] — AIエージェントのプライバシー課題
-- [[concepts/vibe-coding]] — 自然言語で開発するvibe codingアプローチ
+- [[concepts/death-of-browser]] — Browser depersonalization (agents operating UI)
+- [[concepts/anthropic-openclaw-conflict]] — Platform control vs open access
+- [[concepts/openclaw-ecosystem]] — OpenClaw and personal AI agent movement
+- [[concepts/meta-muse-spark]] — Muse Spark model details
+- [[concepts/local-llm]] — Local LLM inference
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Agent-driven development patterns
+- [[concepts/cache-first-engineering]] — Prompt cache optimization
+- [[concepts/ai-privacy-tools]] — AI agent privacy challenges
+- [[concepts/vibe-coding]] — Natural language development approach
 
-## 関連エンティティ
+## Related Entities
 
-- [[entities/meta]] — Personal Superintelligence提唱
--  — Meta CEO、ビジョン策定-  — Meta Superintelligence Labs責任者- [[entities/peter-steinberger]] — OpenClaw創設者
-- [[entities/shlok-khemani]] — パーソナルAIメモリの研究者
-- [[entities/sero]] — Freedom Tech / ローカルAIインフラ
-- [[entities/mario-zechner]] — ローカルLLMエンジニアリング
-- [[entities/george-hotz]] — オープンソースAIハードウェア
+- [[entities/meta]] — Personal Superintelligence advocate
+- [[entities/peter-steinberger]] — OpenClaw founder
+- [[entities/shlok-khemani]] — Personal AI memory researcher
+- [[entities/sero]] — Freedom Tech / local AI infrastructure
+- [[entities/mario-zechner]] — Local LLM engineering
+- [[entities/george-hotz]] — Open source AI hardware
 
 ## Sources
 

@@ -5,7 +5,7 @@ aliases:
   - building-effective-agents
   - agent-design-patterns
 created: 2026-04-12
-updated: 2026-05-20
+updated: 2026-05-26
 tags:
   - concept
   - architecture
@@ -20,111 +20,111 @@ sources:
 
 # Building Effective Agents
 
-Anthropicが数十社のチームとの協働から得た、LLMエージェント構築の実践的ガイドライン。
+Practical guidelines for building LLM agents, derived from Anthropic collaboration with dozens of teams.
 
-## 核心哲学
+## Core Philosophy
 
 > "Consistently, the most successful implementations use simple, composable patterns rather than complex frameworks."
 
 > "Success in the LLM space isn't about building the most sophisticated system. It's about building the right system for your needs."
 
-**最も成功している実装は、複雑なフレームワークではなく、単純で合成可能なパターンを使用している。**
+**The most successful implementations use simple, composable patterns rather than complex frameworks.**
 
-## 3つのコア原則
+## Three Core Principles
 
-1. **Maintain simplicity in your agent's design** — エージェントの設計は単純に保つ
-2. **Prioritize transparency by explicitly showing the agent's planning steps** — 計画ステップを明示的に表示する
-3. **Carefully craft your agent-computer interface (ACI) through thorough tool documentation and testing** — ツールのドキュメントとテストを入念に行う
+1. **Maintain simplicity in your agent's design** — Keep agent design simple
+2. **Prioritize transparency by explicitly showing the agent's planning steps** — Explicitly display planning steps
+3. **Carefully craft your agent-computer interface (ACI) through thorough tool documentation and testing** — Thoroughly document and test tools
 
-## ワークフロー vs エージェント
+## Workflows vs Agents
 
-| 次元 | ワークフロー | エージェント |
+| Dimension | Workflow | Agent |
 |------|-------------|-------------|
-| 制御 | 事前定義されたコードパスでLLMとツールをオーケストレーション | モデルが自律的にツール使用と意思決定を制御 |
-| 適用 | 明確に定義されたタスクに最適 | 柔軟性とモデル駆動の意思決定が必要な場合に最適 |
-| 特性 | 予測可能性、一貫性 | 開-ended問題、環境フィードバックに基づく反復 |
+| Control | LLMs and tools orchestrated via predefined code paths | Model autonomously controls tool use and decision-making |
+| Application | Best for well-defined tasks | Best when flexibility and model-driven decisions are needed |
+| Characteristics | Predictability, consistency | Open-ended problems, iteration based on environment feedback |
 
-## 基本構成要素（Building Blocks）
+## Building Blocks
 
 ### Augmented LLM
-検索、ツール、メモリで拡張されたLLM。エージェントシステムの基本構成要素。
+An LLM augmented with retrieval, tools, and memory. The fundamental building block of agent systems.
 
 ### Prompt Chaining
-タスクを一連のステップに分解。各LLM呼び出しが前のステップの出力を処理。
+Decompose a task into sequential steps. Each LLM call processes the output of the previous step.
 
 ### Routing
-入力の分類に基づいて、専用の下流プロセスにタスクを振り分ける。
+Route tasks to specialized downstream processes based on input classification.
 
 ### Parallelization
-複数のLLM呼び出しを同時に実行し、結果を集約。
+Execute multiple LLM calls simultaneously and aggregate results.
 
 ### Orchestrator-Workers
-中央のLLMがタスクを動的に分解し、ワーカLLMに分散して実行。
+A central LLM dynamically decomposes tasks and distributes them to worker LLMs for execution.
 
 ### Evaluator-Optimizer
-生成LLMと評価LLMの反復ループ。評価者が品質を判定し、生成者が改善。
+An iterative loop between a generating LLM and an evaluating LLM. The evaluator judges quality, the generator improves.
 
-## エージェントの実装パターン
+## Agent Implementation Patterns
 
-エージェントは本質的にシンプル：**環境フィードバックに基づいてツールを使用するLLMのループ**。
+Agents are inherently simple: **an LLM loop that uses tools based on environment feedback**.
 
 ```
 command → plan → tool call → environment feedback → iterate → result
 ```
 
-重要な実装詳細：
-- 各ステップで環境から「グラウンドトゥルース」を取得することが不可欠
-- チェックポイントやブロッカーで人間のフィードバックを求められる
-- 反復回数の制限で制御を維持する
+Key implementation details:
+- Getting ground truth from the environment at each step is essential
+- Human feedback can be requested at checkpoints or blockers
+- Control is maintained through iteration limits
 
-## フレームワークの罠
+## Framework Pitfalls
 
 > "Frameworks make it easy to get started by simplifying standard low-level tasks like calling LLMs, defining and parsing tools, and chaining calls together. But they often create extra layers of abstraction that can obscure the underlying mechanics."
 
-**開発者へのアドバイス**: LLM APIを直接使用することから始める。多くのパターンは数行のコードで実装可能。
+**Advice for developers**: Start by using LLM APIs directly. Many patterns can be implemented in just a few lines of code.
 
-## いつエージェントを使うべきか
+## When to Use Agents
 
-- 開-endedな問題で、必要なステップを事前に予測するのが困難または不可能な場合
-- 複数の実行パスがあり、環境からのフィードバックが次のアクションを決定する場合
-- タスクが多くのステップや分岐を必要とし、硬いワークフローでは扱いにくい場合
+- Open-ended problems where it is difficult or impossible to predict the required steps in advance
+- Multiple execution paths where environment feedback determines the next action
+- Tasks requiring many steps or branching, which rigid workflows handle poorly
 
-## Simon Willisonの注釈 (2024-12-20)
+## Simon Willison's Annotations (2024-12-20)
 
-[[simon-willison|Simon Willison]]は本記事を「LLMエージェント構築に関して自分が見た中で最も明確な実践ガイド」と評した。
-彼のブログ記事 ([[raw/articles/2024-12-20_simon-willison_building-effective-agents]]) からの主な洞察：
+[[simon-willison|Simon Willison]] described this article as "the clearest practical guide to building LLM agents I have seen."
+Key insights from his blog post ([[raw/articles/2024-12-20_simon-willison_building-effective-agents]]):
 
-### 用語への称賛
+### Praise for Terminology
 
-WillisonはAnthropicの用語定義を高く評価している：
+Willison highly praised Anthropic's terminology definitions:
 
-- **"agentic systems"** を親カテゴリとする整理
-- **"workflows"** vs **"agents"** の明確な区別 — workflowsは事前定義されたパターンでLLMをオーケストレーション、agentsは自律的にプロセスとツール使用を制御
-- **"augmented LLM"** — ツールなどで拡張されたLLM。多くの人がこれだけを「エージェント」と呼んでいるが、Willisonは違和感を持っていた。Anthropicの用語整理でそれが解消された
+- The framing of **"agentic systems"** as a parent category
+- The clear distinction between **"workflows"** and **"agents"** — workflows orchestrate LLMs with predefined patterns, agents autonomously control processes and tool use
+- **"augmented LLM"** — an LLM augmented with tools, etc. Many people call this "agent" alone, which Willison found uncomfortable. Anthropic's terminology clarification resolved this
 
-### 5つのワークフローパターンへの所感
+### Reflections on the Five Workflow Patterns
 
-Willisonは5つのパターン全てに「意味がある」とし、「明確な名前が付けられたことで推論しやすくなった」と評価。特に **Evaluator-Optimizer** パターン（コード生成→レビュー→改善のループ）を「特に楽しい」としている。
+Willison found all five patterns "meaningful" and appreciated that "having clear names makes reasoning easier." He found the **Evaluator-Optimizer** pattern (code generation → review → improvement loop) "especially fun."
 
-### 複雑性に関する警告への共鳴
+### Resonance with the Complexity Warning
 
 > "When building applications with LLMs, we recommend finding the simplest solution possible, and only increasing complexity when needed. This might mean not building agentic systems at all."
 
-Willisonはこの警告に強く同意している。複雑なエージェントフレームワークに投資する前に、直接APIアクセスとシンプルなコードで可能性を追求すべき、というAnthropicの助言を支持。
+Willison strongly agrees with this warning. He supports Anthropic's advice to explore possibilities with direct API access and simple code before investing in complex agent frameworks.
 
-### エージェントの自律性に関する注意点
+### Caution on Agent Autonomy
 
 > "The autonomous nature of agents means higher costs, and the potential for compounding errors."
 
-Willisonはこの点を**実用上の核心的警告**として強調 — 自律性はコスト増とエラー増幅のトレードオフを伴う。
+Willison emphasizes this as a **core practical warning** — autonomy comes with the trade-off of higher costs and compounded errors.
 
-### クックブックレシピ
+### Cookbook Recipes
 
-Anthropicは5つのパターン全てを解説するクックブックレシピを同時公開。Evaluator-Optimizerの例では、コード生成プロンプトとコードレビュー評価プロンプトをループさせ、評価者が満足するまで改善を続ける。
+Anthropic simultaneously published cookbook recipes explaining all five patterns. In the Evaluator-Optimizer example, a code generation prompt and a code review evaluation prompt are looped, continuing improvements until the evaluator is satisfied.
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — 上位インデックス
-- [[concepts/context-engineering]] — コンテキスト管理
-- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — エージェント評価
-- [[concepts/minimal-coding-agent]] — Thorsten Ballによる400行のGo実装。Anthropicの「単純で合成可能なパターン」原則の具体例
+- [[concepts/harness-engineering]] — Parent index
+- [[concepts/context-engineering]] — Context management
+- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — Agent evaluation
+- [[concepts/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation. A concrete example of Anthropic's "simple, composable patterns" principle

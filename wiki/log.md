@@ -4,6 +4,24 @@
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated
+- concepts/harness-engineering/system-architecture/writing-tools-for-agents.md
+- concepts/multi-agent-consensus-patterns.md
+- concepts/harness-engineering/system-architecture/building-effective-agents.md
+- concepts/personal-superintelligence.md
+- concepts/ai-organization/_index.md
+- concepts/death-of-browser.md
+- concepts/harness-engineering/system-architecture/advanced-tool-use.md
+- concepts/capability-based-security.md
+
+### Stats
+- JP chars removed: 10,332
+- Remaining JP files: 283
+- Remaining JP chars: 149,703
+
+
+## [2026-05-26] translate | JP→EN batch — 8 files
+
+### Files Translated
 - concepts/stanford-cs336-language-modeling-from-scratch.md
 - concepts/agent-skills-overview.md
 - entities/claude-code--capabilities.md

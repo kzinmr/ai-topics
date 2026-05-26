@@ -1,7 +1,7 @@
 ---
 title: Capability-Based Security
 created: 2026-04-25
-updated: 2026-04-28
+updated: 2026-05-26
 type: concept
 tags:
   - security
@@ -16,74 +16,74 @@ sources:
 
 # Capability-Based Security
 
-Capability-Based Security（ケイパビリティベースセキュリティ）は、アクセス制御をアイデンティティではなく**ケイパビリティ（能力トークン）**に基づいて行うセキュリティモデル。AIエージェントのサンドボックス設計において、従来のACL/RBACに代わる有望な代替パラダイムとして注目されている。
+Capability-Based Security is a security model that bases access control on **capabilities (authority tokens)** rather than identity. It is gaining attention as a promising alternative to traditional ACL/RBAC for AI agent sandbox design.
 
-## 基本概念
+## Basic Concepts
 
-**ケイパビリティ（Capability）**とは、オブジェクトへの参照と特定のアクセス権を組み合わせた、通信可能で改ざん不可能な権限トークン。
+A **capability** is a communicable, unforgeable authority token that combines a reference to an object with specific access rights.
 
-従来のUNIXパーミッション（`who` が実行しているか）に対して、ケイパビリティモデルでは **「プログラムが何のトークンを持っているか」** で権限を判断する。
+Unlike traditional UNIX permissions (based on `who` is executing), the capability model determines authority based on **"what tokens the program holds."**
 
-| 比較 | 従来モデル（ACL/RBAC） | ケイパビリティモデル |
+| Comparison | Traditional Model (ACL/RBAC) | Capability Model |
 |------|----------------------|-------------------|
-| 権限の源泉 | ユーザーのIdentity | プログラムが保持するトークン |
-| 委譲 | 困難（管理者権限が必要） | 自然（トークンを渡すだけ） |
-| 粒度 | ユーザー/ロール単位 | オブジェクト/操作単位 |
-| 名前空間 | グローバル（悪用リスク大） | 制限可能 |
+| Source of authority | User identity | Tokens held by the program |
+| Delegation | Difficult (requires admin privileges) | Natural (just pass the token) |
+| Granularity | Per user/role | Per object/operation |
+| Namespace | Global (high abuse risk) | Restrictable |
 
-## ケイパビリティ vs 単なる参照
+## Capabilities vs Mere References
 
 ```python
-"/etc/passwd"                      # ケイパビリティではない（単なる文字列）
-open("/etc/passwd", O_RDWR)        # ケイパビリティ（OSが保護するハンドル）
+"/etc/passwd"                      # NOT a capability (just a string)
+open("/etc/passwd", O_RDWR)        # A capability (OS-protected handle)
 ```
 
 ## Confused Deputy Problem
 
-従来のACLシステムでは、「秘書プログラム」がAさんの依頼でファイルを開き、その権限でBさんのファイルも読めてしまう問題が発生する。ケイパビリティシステムでは、依頼ごとに渡された特定のトークンのみを使用するため、この問題が解決される。
+In traditional ACL systems, a "secretary program" opening a file on behalf of User A may also read User B's files using the same authority. In capability systems, this problem is resolved because only the specific token passed for each request is used.
 
-## AIエージェントとの接点
+## Relevance to AI Agents
 
-AIエージェントのセキュリティにおいて、ケイパビリティベースアプローチは特に重要：
+For AI agent security, the capability-based approach is particularly important:
 
-### なぜ従来のアクセス制御が不十分か
-- エージェントは同一ユーザーアカウントで実行され、その全権限を継承する
-- エージェントは動的にタスクを解釈し、予測不能な順序でファイルやAPIにアクセスする
-- サブエージェントを呼び出す際、親エージェントの全権限が漏洩するリスク
+### Why Traditional Access Control is Insufficient
+- Agents run under the same user account and inherit all its privileges
+- Agents dynamically interpret tasks and access files/APIs in unpredictable order
+- Risk of leaking all parent agent privileges when calling sub-agents
 
-### ケイパビリティベースアプローチでの解決
-1. **最小権限:** 各エージェントは特定のファイル・操作のみアクセス可能なトークンを保持
-2. **委譲制御:** サブエージェントには親より狭い範囲のケイパビリティのみ委譲
-3. **監査:** すべてのケイパビリティ使用がログ記録可能
-4. **失効:** 実行時にケイパビリティを動的に取り消せる
+### Solution with Capability-Based Approach
+1. **Least privilege:** Each agent holds tokens that only allow access to specific files/operations
+2. **Delegation control:** Only delegate narrower capabilities to sub-agents than the parent holds
+3. **Auditing:** All capability usage can be logged
+4. **Revocation:** Capabilities can be dynamically revoked at runtime
 
-## 現在の実装例
+## Current Implementations
 
-| システム | ケイパビリティの実装 |
+| System | Capability Implementation |
 |---------|-------------------|
-| **WASI (WebAssembly)** | ファイルシステム・ネットワークアクセスはケイパビリティベース。WASIプログラムはexplicitに渡された権限のみ使用可能 |
-| **Fuchsia (Google)** | 全プロセスがケイパビリティベース。権限のない名前空間操作は不可能 |
-| **seL4** | 高保証マイクロカーネル。全カーネル操作がケイパビリティで管理 |
-| **Capsicum (FreeBSD)** | UNIXファイルディスクリプタを真のケイパビリティに拡張。`capability mode` でグローバル名前空間を無効化 |
-| **Genode** | マイクロカーネルベースのOSフレームワーク |
+| **WASI (WebAssembly)** | Filesystem and network access are capability-based. WASI programs can only use explicitly passed privileges |
+| **Fuchsia (Google)** | All processes are capability-based. Unauthorized namespace operations are impossible |
+| **seL4** | High-assurance microkernel. All kernel operations managed via capabilities |
+| **Capsicum (FreeBSD)** | Extends UNIX file descriptors to true capabilities. Disables global namespace in `capability mode` |
+| **Genode** | Microkernel-based OS framework |
 
-## AI Agent Sandboxingへの応用
+## Application to AI Agent Sandboxing
 
-[[concepts/agent-sandboxing]] の文脈では、WASIのケイパビリティモデルが特に重要：
-- WASMランタイムはファイルシステムへの全アクセスをブロック
-- 明示的に渡されたケイパビリティ（ファイルディスクリプタ）のみ許可
-- 「デフォルト拒否」の原則をハードウェア/ランタイムレベルで強制
+In the context of [[concepts/agent-sandboxing]], WASI's capability model is particularly important:
+- The WASM runtime blocks all filesystem access
+- Only explicitly passed capabilities (file descriptors) are permitted
+- Enforces "default deny" at the hardware/runtime level
 
-## POSIX Capabilitiesとの違い
+## Differences from POSIX Capabilities
 
-Linuxの `CAP_*`（例: `CAP_NET_BIND_SERVICE`）は「POSIX Capabilities」と呼ばれるが、真のケイパビリティとは以下の点で異なる：
-- 粗粒度（特定のオブジェクトに関連づけられていない）
-- プロセス間で転送不可
-- グローバル名前空間に依存
+Linux's `CAP_*` (e.g., `CAP_NET_BIND_SERVICE`) are called "POSIX Capabilities" but differ from true capabilities in the following ways:
+- Coarse-grained (not associated with specific objects)
+- Cannot be transferred between processes
+- Depends on global namespaces
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agent-sandboxing]] — ケイパビリティベース分離の主な応用先
-- [[concepts/sandbox/in-process]] — WASMとIn-Process Sandboxingの関係
-- [[concepts/sandbox/infrastructure]] — OS/ハイパーバイザーレベルの分離との比較
-- [[concepts/sandbox/js-runtime]] — ブラウザベースのケイパビリティモデル
+- [[concepts/agent-sandboxing]] — Main application of capability-based isolation
+- [[concepts/sandbox/in-process]] — Relationship between WASM and in-process sandboxing
+- [[concepts/sandbox/infrastructure]] — Comparison with OS/hypervisor-level isolation
+- [[concepts/sandbox/js-runtime]] — Browser-based capability model

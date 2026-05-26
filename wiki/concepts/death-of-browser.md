@@ -1,7 +1,7 @@
 ---
 title: "Death of the Browser"
 created: 2026-04-13
-updated: 2026-04-26
+updated: 2026-05-26
 type: concept
 tags:
   - browser-agent
@@ -13,24 +13,24 @@ sources: [raw/articles/crawl-2026-04-26-browser-landscape-2026.md]
 
 > "The browser is not going to disappear overnight, but its dominance as the primary interface for the internet is ending."
 
-**概念概要**: ブラウザが人間の視覚的インターフェースから、AIエージェントのアクション実行プラットフォームへと変遷する潮流。Webサイトは「人間に読まれる」ものから「エージェントに操作される」ものへシフトしている。
+**Overview**: The shift of the browser from a human visual interface to an action execution platform for AI agents. Websites are shifting from "read by humans" to "operated by agents."
 
 ## Core Thesis
 
-### ブラウザの3つの役割の転換
+### The Three Role Transitions of the Browser
 
-| 従来のブラウザ | 次世代ブラウザ |
+| Traditional Browser | Next-Generation Browser |
 |---|---|
-| 人間がWebページを閲覧する窓 | AIエージェントがタスクを実行するランタイム |
-| HTML/CSSをレンダリング | DOM理解 + ビジュアル認識 + 構造化ツール |
-| ユーザーがクリック・スクロール | エージェントが自律的に対話・操作 |
+| Window for humans to browse web pages | Runtime for AI agents to execute tasks |
+| Renders HTML/CSS | DOM understanding + visual recognition + structured tools |
+| Users click and scroll | Agents autonomously interact and operate |
 
-### なぜ「Death」なのか
+### Why "Death"
 
-1. **認知負荷の限界**: 人間は多数のタブ、ポップアップ、SEOスパムに疲弊
-2. **エージェントの台頭**: AIが直接Webを操作できるようになり、人間の仲介が不要に
-3. **新しいインタラクションモデル**: 自然言語でタスクを依頼 → エージェントが実行
-4. **GEOの登場**: SEOに代わりGenerative Engine Optimization（エージェント向け最適化）が重要に
+1. **Cognitive load limits**: Humans are exhausted by numerous tabs, popups, and SEO spam
+2. **Rise of agents**: AI can now directly operate the web, making human intermediaries unnecessary
+3. **New interaction models**: Request tasks in natural language → agents execute
+4. **Rise of GEO**: Generative Engine Optimization (optimization for agents) becomes important, replacing SEO
 
 ## Timeline: The Rise of Agentic Browsers
 
@@ -58,88 +58,88 @@ sources: [raw/articles/crawl-2026-04-26-browser-landscape-2026.md]
 | Mar 2026 | Perplexity Comet AI browser | Perplexity |
 | Apr 2026 | ChatGPT Atlas (autonomous browsing) | OpenAI |
 
-## 2026年重点ツール
+## Key Tools in 2026
 
 ### Browser Use BU-2.0 (Jan 2026)
-- **モデル**: `bu-2-0`（`ChatBrowserUse`）
-- **特徴**: 構造化出力に特化したエージェント向けブラウザ操作フレームワーク
-- **APIキー**: `cloud.browser-use.com` から取得
-- **用途**: Webスクレイピング、フォーム操作、ナビゲーション自動化
+- **Model**: `bu-2-0` (`ChatBrowserUse`)
+- **Features**: Agent-oriented browser operation framework specialized for structured output
+- **API keys**: Obtain from `cloud.browser-use.com`
+- **Use cases**: Web scraping, form operations, navigation automation
 
 ### Perplexity Comet (Mar 2026)
-- **概要**: AI駆動の検索統合ブラウザ。検索結果を直接解釈し、要約を生成
-- **特徴**: 従来の検索結果リストを介さず、エージェントが直接コンテンツを処理
-- **競合**: ChatGPT Atlas、Google AI Overviews
+- **Overview**: AI-driven search-integrated browser. Directly interprets search results and generates summaries
+- **Features**: Agents process content directly without traditional search results lists
+- **Competitors**: ChatGPT Atlas, Google AI Overviews
 
 ### ChatGPT Atlas (Apr 2026)
-- **概要**: OpenAIの自律型ブラウザエージェント。自然言語で指示 → 直接Web操作
-- **特徴**: ChatGPTの会話インターフェースに統合、エージェントが複数ページを横断して情報収集
-- **技術**: 複数のAIモデルを協調させてタスクを実行
+- **Overview**: OpenAI's autonomous browser agent. Natural language instructions → direct web operations
+- **Features**: Integrated with ChatGPT's conversation interface; agents traverse multiple pages to collect information
+- **Technology**: Coordinates multiple AI models to execute tasks
 
-## 主要プレイヤーと技術スタック
+## Key Players and Technology Stacks
 
-### 1. Vision-Based Computer Use（スクリーン認識型）
-- **Anthropic Computer Use**: Claudeがスクリーンショットを見てマウス/キーボード操作
-- **OpenAI CUA**: GPT-4oのビジョン + 強化学習によるGUI操作
-- 特徴: 既存UIをそのまま利用、セットアップ不要、ただしレイアウト変化に脆弱
+### 1. Vision-Based Computer Use (Screen Recognition)
+- **Anthropic Computer Use**: Claude views screenshots and operates mouse/keyboard
+- **OpenAI CUA**: GUI operation via GPT-4o vision + reinforcement learning
+- Features: Uses existing UI as-is, no setup required, but vulnerable to layout changes
 
-### 2. DOM-Based Browser Automation（構造理解型）
-- **browser-use**: AIエージェントがDOMを理解してブラウザ操作（66.5k+ GitHub stars）
-- **Browserbase/Stagehand**: 信頼性の高いDOMパース + AIアクション
-- 特徴: 構造的に正確、再現性が高い、ただし動的UIに弱い
+### 2. DOM-Based Browser Automation (Structure Understanding)
+- **browser-use**: AI agents understand DOM to operate browsers (66.5k+ GitHub stars)
+- **Browserbase/Stagehand**: Reliable DOM parsing + AI actions
+- Features: Structurally accurate, highly reproducible, but weak with dynamic UI
 
-### 3. Hybrid Approach（ハイブリッド型）
-- **ChatGPT Agent Mode**: DOM + ビジュアルの組み合わせ
-- **Manus Browser Operator**: ローカルブラウザの認証セッションを活用
-- 特徴: 両方の長所を組み合わせ、2026年の主流アプローチ
+### 3. Hybrid Approach
+- **ChatGPT Agent Mode**: Combination of DOM + visual
+- **Manus Browser Operator**: Leverages local browser authentication sessions
+- Features: Combines strengths of both; the mainstream approach in 2026
 
-### 4. Protocol Layer（標準化レイヤー）
-- **WebMCP (Google + Microsoft, W3C)**: ブラウザが構造化ツールをエージェントに公開
-- **Anthropic MCP**: サーバーサイドのツール接続標準
-- 特徴: スクレイピング不要、構造化されたエージェント-Web対話
+### 4. Protocol Layer (Standardization)
+- **WebMCP (Google + Microsoft, W3C)**: Browsers expose structured tools to agents
+- **Anthropic MCP**: Server-side tool connection standard
+- Features: No scraping needed; structured agent-web interaction
 
-## 技術的課題
+## Technical Challenges
 
-### 信頼性
+### Reliability
 > "Computer-use models are still too slow and unreliable for production at enterprise scale. Even a 1% failure rate is unacceptable." — InfoWorld, 2025
 
-- ビジョンモデル: レンダリング差異、レイテンシ、複雑なレイアウトの解釈に課題
-- DOMベース: 動的UI、Canvas、SPAに脆弱
-- **解決策**: ハイブリッドアプローチ（DOM優先、ビジョンフォールバック）
+- Vision models: Challenges with rendering differences, latency, and interpreting complex layouts
+- DOM-based: Vulnerable to dynamic UI, Canvas, SPAs
+- **Solution**: Hybrid approach (DOM-first, vision fallback)
 
-### セキュリティ
-- エージェントが認証情報にアクセスするリスク
-- プロンプトインジェクションの脆弱性
-- **解決策**: サンドボックス環境、Human-in-the-loop、ドメイン許可リスト
+### Security
+- Risk of agents accessing credentials
+- Prompt injection vulnerabilities
+- **Solution**: Sandboxed environments, human-in-the-loop, domain allowlists
 
-### 測定と帰属
+### Measurement and Attribution
 > "The collapse of cookie-based tracking creates an attribution vacuum." — TigerTracks
 
-- 従来のSEO/トラッキングが機能しない
-- エージェント向けコンテンツ最適化（GEO）の必要性
-- **解決策**: 機械可読なメタデータ、構造化データの充実
+- Traditional SEO/tracking no longer works
+- Need for agent-oriented content optimization (GEO)
+- **Solution**: Machine-readable metadata, enriched structured data
 
-## 未来予測
+## Future Predictions
 
-### 2026年後半
-- Chrome/Edgeの標準機能としてエージェント操作が組み込み
-- WebMCPがW3C標準化プロセスを進行
-- オンデバイスLLM（WebGPU + WebLLM）によるプライバシー重視のブラウザエージェント普及
+### Late 2026
+- Agent operations built in as standard features of Chrome/Edge
+- WebMCP progresses through W3C standardization
+- Proliferation of privacy-focused browser agents via on-device LLMs (WebGPU + WebLLM)
 
-### 2027年以降
-- 「エージェントファースト」なWebサイト設計が標準化
-- 構造化ツール公開が「モバイルフレンドリー」に次ぐWeb要件に
-- ブラウザとAIアシスタントの境界が完全に消失
+### 2027 and Beyond
+- "Agent-first" website design becomes standard
+- Publishing structured tools becomes a web requirement on par with "mobile-friendly"
+- The boundary between browsers and AI assistants completely dissolves
 
 ## Related Concepts
 
-- [[concepts/harness-engineering]] — エージェント環境設計
-- [[entities/webmcp]] — ブラウザネイティブのMCP標準
-- [[entities/anthropic-computer-use]] — AnthropicのComputer Use API
-- [[entities/openai-cua]] — OpenAIのComputer-Using Agent
-- [[entities/browser-use]] — オープンソースブラウザ自動化
-- [[entities/browserbase]] — 信頼性の高いブラウザ自動化インフラ
-- [[entities/manus]] — ローカルブラウザ統合型エージェント
+- [[concepts/harness-engineering]] — Agent environment design
+- [[entities/webmcp]] — Browser-native MCP standard
+- [[entities/anthropic-computer-use]] — Anthropic's Computer Use API
+- [[entities/openai-cua]] — OpenAI's Computer-Using Agent
+- [[entities/browser-use]] — Open source browser automation
+- [[entities/browserbase]] — Reliable browser automation infrastructure
+- [[entities/manus]] — Local browser-integrated agent
 
 ## Sources
 
