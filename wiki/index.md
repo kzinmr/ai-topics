@@ -2,10 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2093 | Indexed entries: 1373 | Not in index: 674 |
-
-## Entities (674 pages)
-
+> Last updated: 2026-05-26 | Total pages: 2094 | Indexed entries: 1373 | Not in index: 674 |## Entities (674 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -1097,6 +1094,7 @@
 - [[concepts/skillopt]] — SkillOpt (Microsoft, May 2026): text-space skill optimizer that applies deep-learning training discipline (validation gates, learning rates, momentum) to agent skill documents. Best-or-tied on all 52 evaluated cells. +23.5 pts avg over no-skill. Outperforms GEPA, TextGrad, EvoSkill.
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
 - [[concepts/roll-rl]] — ROLL (Alibaba): RL framework for diverse users. Rich interfaces and high configuration flexibility. DeepSpeed/Megatron, GRPO+PPO, Ray orchestration.
+- [[concepts/software-after-software]] — Amp Labs manifesto (May 2026): 12 theses on post-AI software industry transformation. Code no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams.
 - [[concepts/space-gpus]] — Space GPUs
 - [[concepts/slime-rl]] — slime (Z.ai/Tsinghua University): RL library balancing simplicity and high performance. Fixed on Megatron+SGLang, central data buffer, designed for async RL. Optimized for MoE models.
 - [[concepts/skyrl]] — SkyRL (UC Berkeley/NovaSky): Flexible framework for multi-turn agent RL. Supports sync/async, colocated/disaggregated, external inference APIs. FSDP/DeepSpeed.

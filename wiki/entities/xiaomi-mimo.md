@@ -1,7 +1,7 @@
 ---
 title: Xiaomi MiMo (Model Family)
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-26
 type: entity
 tags:
   - model
@@ -60,6 +60,10 @@ Native full-modal perception model supporting video, audio, image, and text. 310
 ## Significance
 
 MiMo-V2.5-Pro demonstrates that open-source models can achieve frontier-level agentic coding performance. The MOPD training approach — using multiple specialist teachers to distill into a single student — represents an innovative post-training methodology. Combined with MIT licensing, this makes MiMo one of the most accessible high-performance agentic coding models.
+
+## Pricing
+
+- **May 26, 2026**: MiMo-V2.5 Series API pricing permanently reduced — up to **99%** compared to previous pricing. Unified pricing across all context lengths. MiMo Token Plans also upgraded to 5–8× more usable tokens. [Source: @XiaomiMiMo](https://x.com/XiaomiMiMo/status/2059314052892099070)
 
 ## Related Pages
 - [[entities/xiaomi]] — Xiaomi company

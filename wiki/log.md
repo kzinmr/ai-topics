@@ -2,6 +2,9 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+| 2026-05-26 23:30 | Created | [[concepts/software-after-software]] — Amp Labs manifesto (May 2026): 12 theses on post-AI software industry transformation. Code no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams. Source: X Article bookmark. Raw: [[raw/articles/2026-05-26_software-after-software.md]]. |
+| 2026-05-26 23:30 | Updated | [[entities/amp]] — Added "Software After Software" to Key Writings section. |
+| 2026-05-26 23:30 | Updated | [[entities/xiaomi-mimo]] — Added Pricing section: MiMo-V2.5 API pricing permanently reduced up to 99% (May 26, 2026). |
 | 2026-05-26 20:05 | Created | [[entities/bryan-catanzaro]] — VP Applied Deep Learning Research at NVIDIA. Nemotron open model strategy (~500 staff). "AI as infrastructure" thesis, Megatron-LM, DLSS.
 | 2026-05-26 20:05 | Updated | [[entities/nvidia]] — Added Nemotron Open Model Strategy section: AI as infrastructure thesis, two jobs (systems R&D + ecosystem), dataset releases, intelligence per second philosophy.
 | 2026-05-26 20:05 | Archived | 4 backlog items: boyter.org scc (non-AI), Yudkowsky singularity (already covered), danluu wage-fixing (non-AI), oldvcr Apple Network Server (non-AI)
