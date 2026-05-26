@@ -163,6 +163,22 @@
 - Updated all 'updated:' dates to 2026-05-26
 
 ---
+## [2026-05-26] translate | JP→EN batch — 8 entity/concept pages
+### Files Translated
+- [[entities/simon-willison]] — JP→EN, ~1971 JP chars removed
+- [[entities/antirez-com]] — JP→EN, ~1762 JP chars removed
+- [[entities/openclaw]] — JP→EN, ~1750 JP chars removed
+- [[concepts/ambient-agency]] — JP→EN, ~1741 JP chars removed
+- [[entities/benjamin-clavie]] — JP→EN, ~1726 JP chars removed
+- [[entities/hermes-agent]] — JP→EN, ~1725 JP chars removed
+- [[concepts/harness-engineering/_index]] — JP→EN, ~1701 JP chars removed
+- [[concepts/harness-engineering/system-architecture/multi-agent-research-system]] — JP→EN, ~1684 JP chars removed
+### Stats
+- Total JP chars removed: ~15,060
+- Remaining JP files (excl. logs): 325
+- Remaining JP chars in wiki: ~211,842
+- Updated all `updated:` dates to 2026-05-26
+---
 
 ## [2026-05-26] update | wiki/index.md Japanese→English Phase 1 complete
 
