@@ -436,7 +436,7 @@
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
 - [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
 - [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
-- [[entities/promptfoo]] — Promptfoo — Open-source LLM/agent evaluation framework. Native support for OpenAI Agents SDK evaluation. Used as a lower-level eval layer in the Macro Evals Cookbook.
+- [[entities/promptfoo]] — Promptfoo — Open-source LLM eval & red-teaming framework by Ian Webster & Michael D'Angelo. 19.6K GitHub stars, 302.7K weekly npm downloads, 156 Fortune 500 customers. Acquired by OpenAI (2026, remains MIT). Evaluations + red teaming + code scanning + MCP support.
 - [[entities/qwen3-6-plus]] — Alibaba's agent-oriented language model. Targets real-world autonomous workflows.
 - [[entities/qwen-3-7-max]] — Alibaba's latest agent reasoning model (2026-05-20). 1M token context, 35-hour autonomous kernel optimization (1,158 tool calls, 10.1× speedup). AA Index #5, Terminal Bench 2.0 69.7. Environment Scaling training. Closed weights.
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
@@ -490,7 +490,7 @@
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simon-last]] — Product/engineering leader at Notion. Led Custom Agents through 4-5 rebuilds. Software factory advocate. CLI over MCP.
 - [[entities/simone-salis]] — **URL:** https://simone.org
-- [[entities/slalom]] — Slalom — Global business and technology consulting firm. Co-developed Macro Evals for Agentic Systems in partnership with OpenAI.
+- [[entities/slalom]] — Slalom — Global business & technology consulting firm ($2.9B revenue, 12K employees, 54 offices/12 countries). AWS Premier Tier partner, OpenAI strategic partner, Snowflake AI Partner of the Year. Co-developed Macro Evals for Agentic Systems with OpenAI.
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
 - [[entities/snyk]] — Snyk — developer security platform. Integrated Anthropic Claude into AI Security Platform (May 2026) for vulnerability discovery and automated remediation.
 - [[entities/softwaredoug]] — Doug Turnbull (softwaredoug) — Search and relevance engineering expert, Principal Engineer at Daydream. Co-author of "Relevant Search" and "AI-Powered Search". Creator of Cheat at Search Essentials, Elasticsearch LTR plugin.

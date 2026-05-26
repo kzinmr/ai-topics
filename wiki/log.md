@@ -2,6 +2,8 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+| 2026-05-26 19:00 | Enriched (stub→full) | [[entities/promptfoo]] — Full enrichment: 19.6K stars, 302.7K npm weekly DL, 260 contributors, 156 F500 customers, OpenAI acquisition, evaluation + red teaming + code scanning architecture. Sources: website, docs, GitHub, npm, acquisition blog post.
+| 2026-05-26 19:00 | Enriched (stub→full) | [[entities/slalom]] — Full enrichment: $2.9B revenue, 12K employees, 54 offices/12 countries, founders (Jackson/Tobin/Johnson), AWS Premier Tier, OpenAI partnership, "The Great AI Disconnect" survey, Macro Evals for Agentic Systems co-authorship. Sources: Wikipedia, AI consulting page, AWS SCA announcement, AI survey.
 | 2026-05-26 14:50 | Updated | ECHO paper (arxiv:2605.24517) ingested and wiki pages updated |
 | 2026-05-26 14:50 | Created | entities/ahmed-awadallah.md |
 | 2026-05-26 14:50 | Created | entities/piero-kauffmann.md |
