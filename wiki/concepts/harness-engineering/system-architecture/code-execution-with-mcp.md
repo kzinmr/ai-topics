@@ -19,29 +19,28 @@ status: draft
 sources:
   - "https://www.anthropic.com/engineering/code-execution-with-mcp"
 ---
-
 # Code Execution with MCP
 
-MCP（Model Context Protocol）サーバーをコードAPIとして公開し、エージェントがコードを書いてツールを呼び出すパターン。Cloudflareの「Code Mode」と同じ核心洞察。
+MCP (Model Context Protocol) servers exposed as a code API — a pattern where agents write code and call tools. Same core insight as Cloudflare's "Code Mode."
 
-## 核心洞察
+## Core Insight
 
 > "The core insight is the same: LLMs are adept at writing code and developers should take advantage of this strength to build agents that interact with MCP servers more efficiently."
 
-**LLMはコードを書くのが得意。この強みを活かして、MCPサーバーとのやり取りを効率化する。**
+**LLMs are good at writing code. This strength should be leveraged to streamline interactions with MCP servers.**
 
-## 問題: 直接ツール呼び出しのコンテキストオーバーロード
+## Problem: Context Overload from Direct Tool Calling
 
-エージェントが数十/数百のMCPサーバーにスケールすると：
-- **ツール定義の膨張**: すべてのツールスキーマを事前にロードすると、リクエスト処理前に巨大なコンテキストを消費
-- **中間結果のトークン浪費**: 生出力（トランスクリプト、大規模データセット）がモデルコンテキストを複数回通過
-  - 例: 2時間の営業会議トランスクリプトを2回処理 = **~50,000追加トークン**
+When agents scale to tens/hundreds of MCP servers:
+- **Tool definition bloat**: Pre-loading all tool schemas consumes enormous context before request processing
+- **Token waste on intermediate results**: Raw output (transcripts, large datasets) passes through the model context multiple times
+  - Example: Processing a 2-hour sales meeting transcript twice = **~50,000 additional tokens**
 
-## 解決策: MCPをコードAPIとして公開
+## Solution: Expose MCP as a Code API
 
-MCPサーバーを構造化されたファイルシステムとして公開。エージェントがコードを書いてツールをオーケストレーションし、オンデマンドで定義をロード。
+Expose MCP servers as a structured filesystem. Agents write code to orchestrate tools and load definitions on demand.
 
-### 実装アーキテクチャ
+### Implementation Architecture
 
 ```
 servers
@@ -54,7 +53,7 @@ servers
 └── ...
 ```
 
-**ツール定義例**:
+**Tool definition example:**
 ```typescript
 // ./servers/google-drive/getDocument.ts
 import { callMCPTool } from "../../../client.js";
@@ -68,7 +67,7 @@ export async function getDocument(input: GetDocumentInput): Promise<GetDocumentR
 }
 ```
 
-**エージェントワークフロー例**:
+**Agent workflow example:**
 ```typescript
 import * as gdrive from './servers/google-drive';
 import * as salesforce from './servers/salesforce';
@@ -81,45 +80,45 @@ await salesforce.updateRecord({
 });
 ```
 
-## メリット
+## Benefits
 
-| メリット | 仕組み | インパクト |
+| Benefit | Mechanism | Impact |
 |:---|:---|:---|
-| **プログレッシブ開示** | エージェントがファイルシステムをナビゲートまたは`search_tools`で必要な定義のみをロード | 事前のコンテキスト膨張を排除 |
-| **コンテキスト効率的な結果** | 実行環境でデータをフィルタ/変換してからモデルに返す | 10,000行のシート → 5行のみ返却 |
-| **強力な制御フロー** | ネイティブなループ、条件分岐、エラーハンドリングがチェーン型ツール呼び出しを置換 | 「最初のトークンまでの時間」遅延を削減。ポーリング/リトライをクリーンに処理 |
-| **プライバシー保護** | 中間データは実行環境内に留まる。MCPクライアントがPIIを自動トークン化 | 機密データがコンテキストに入らず安全にフロー |
-| **状態永続化とスキル** | 中間結果をファイルに保存。再利用可能なコードを`./skills/` + `SKILL.md`として永続化 | ワークフローの再開と、エージェント能力の累積的向上 |
+| **Progressive disclosure** | Agent navigates filesystem or loads only needed definitions via `search_tools` | Eliminates upfront context bloat |
+| **Context-efficient results** | Data filtered/transformed in execution environment before returning to model | 10,000-row sheet -> return only 5 rows |
+| **Powerful control flow** | Native loops, conditionals, error handling replace chained tool calls | Reduces "time to first token" latency. Clean polling/retry handling |
+| **Privacy protection** | Intermediate data stays in execution environment. MCP client auto-tokenizes PII | Sensitive data flows safely without entering context |
+| **State persistence and skills** | Intermediate results saved to files. Reusable code persisted as `./skills/` + `SKILL.md` | Workflow resumption and cumulative agent capability growth |
 
-## トレードオフ
+## Trade-offs
 
-- **インフラオーバーヘッド**: 安全な実行環境（サンドボックス化、リソース制限、監視）が必要
-- **直接呼び出しとの複雑さ**: 単純なツールルーティングよりも運用負担が増加
-- **推奨**: トークン/遅延の削減効果と実装コストを比較検討。大規模データセット、複雑なワークフロー、厳格なプライバシー要件に最適
+- **Infrastructure overhead**: Requires secure execution environment (sandboxing, resource limits, monitoring)
+- **Complexity vs direct calling**: Higher operational burden than simple tool routing
+- **Recommendation**: Compare token/latency reduction against implementation cost. Best for large datasets, complex workflows, strict privacy requirements
 
-## キーメトリクス
+## Key Metrics
 
-| メトリクス | 値 |
+| Metric | Value |
 |---|---|
-| **トークン削減** | `150,000 → 2,000 tokens` (**98.7%節約**) |
-| **MCP採用** | 2024年11月ローンチ。業界デファクトスタンダード。数千のコミュニティサーバー |
-| **業界検証** | Cloudflareの「Code Mode」が同一の効率改善を実証 |
+| **Token reduction** | `150,000 -> 2,000 tokens` (**98.7% savings**) |
+| **MCP adoption** | Launched November 2024. Industry de facto standard. Thousands of community servers |
+| **Industry validation** | Cloudflare's "Code Mode" demonstrates identical efficiency improvements |
 
-## 実践的提言
+## Practical Recommendations
 
-1. **直接ツール呼び出しからコード実行へシフト**: 数十のMCPサーバーを超える場合
-2. **ファイルシステムベースのツールディスカバリ**: `search_tools`でプログレッシブコンテキストローディング
-3. **コード内でデータフィルタ/集約**: モデルに返す前に
-4. **MCPクライアントのトークン化パイプライン**: PII-heavyワークフローで活用
-5. **再利用可能なロジックをスキルとして保存**: `SKILL.md` + コード。エージェント能力を時間とともに累積
-6. **安全なサンドボックスへの投資**: エージェント生成コードを安全に実行
+1. **Shift from direct tool calling to code execution**: When scaling beyond dozens of MCP servers
+2. **Filesystem-based tool discovery**: Progressive context loading via `search_tools`
+3. **Filter/aggregate data in code**: Before returning to the model
+4. **MCP client tokenization pipeline**: Leverage in PII-heavy workflows
+5. **Save reusable logic as skills**: `SKILL.md` + code. Cumulative agent capability over time
+6. **Invest in secure sandboxes**: Safely execute agent-generated code
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/programmatic-tool-calling]] — 上位概念: LLMがコードを書いてツールを呼び出すAPIメカニズム。Code Execution with MCPはこのパターンのMCP版
-- [[concepts/code-execution-with-mcp]] — 上位概念（ルートレベル）: MCPをコードAPIとして扱うアーキテクチャパターン
-- [[concepts/code-mode]] — Cloudflare Code Mode (V8 MCP)、Pydantic Monty実装など具体的実装
-- [[concepts/harness-engineering]] — 上位インデックス
-- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用（PTCと関連）
-- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — エージェント用ツール設計
-- [[concepts/harness-engineering/system-architecture/building-effective-agents]] — エージェント構築の基本原理
+- [[concepts/programmatic-tool-calling]] — Higher-level concept: LLM writes code to call tools via API mechanism. Code Execution with MCP is the MCP implementation of this pattern
+- [[concepts/code-execution-with-mcp]] — Higher-level (root): Architecture pattern treating MCP as a code API
+- [[concepts/code-mode]] — Concrete implementations: Cloudflare Code Mode (V8 MCP), Pydantic Monty
+- [[concepts/harness-engineering]] — Parent index
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced tool use (related to PTC)
+- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Tool design for agents
+- [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Fundamentals of building agents

@@ -20,91 +20,90 @@ related:
   - infrastructure-noise-agent-evals
   - anthropic
 ---
-
 # Anthropic Infrastructure Postmortems (2025-2026)
 
-Anthropicが公表した2つの大規模品質低下インシデントの詳細な事後分析。インフラバグ（2025年8-9月）とプロダクト変更（2026年3-4月）の2部構成。
+Detailed postmortem analyses of two major quality degradation incidents published by Anthropic. Two-part structure covering infrastructure bugs (Aug-Sep 2025) and product changes (Mar-Apr 2026).
 
 ---
 
-## Part 1: 2025年8-9月 インフラバグ3連発
+## Part 1: Aug-Sep 2025 — Three Infrastructure Bugs
 
 > "We never reduce model quality due to demand, time of day, or server load."
 
-### Bug 1: コンテキストウィンドウルーティングエラー
+### Bug 1: Context Window Routing Error
 
-- **期間**: 2025年8月5日〜9月16-18日
-- **影響**: Sonnet 4リクエストの最大16%（最悪時）。Claude Codeユーザーの30%が1回以上影響
-- **原因**: 短いコンテキストのリクエストが1Mトークンコンテキスト用サーバーに誤ルーティング
-- **悪化要因**: 「スティッキー」ルーティング（一度誤ルーティングされると後続も同じ）
-- **修正**: ルーティングロジック修正（9月4日〜18日）
+- **Duration**: August 5 – September 16-18, 2025
+- **Impact**: Up to 16% of Sonnet 4 requests (at worst). 30% of Claude Code users affected at least once
+- **Cause**: Short-context requests misrouted to 1M-token context servers
+- **Aggravating factor**: "Sticky" routing (once misrouted, subsequent requests followed)
+- **Fix**: Routing logic correction (September 4-18)
 
-### Bug 2: 出力破損
+### Bug 2: Output Corruption
 
-- **期間**: 2025年8月25日〜9月2日
-- **影響**: Opus 4.1/4, Sonnet 4 — 英語プロンプトにタイ語や中国語文字が混入、コードに構文エラー
-- **原因**: TPUサーバーのランタイムパフォーマンス最適化によるミスコンフィグ。低確率トークンに誤って高確率が割り当てられた
-- **修正**: 変更ロールバック + 予期せぬ文字出力の検出テスト追加
+- **Duration**: August 25 – September 2, 2025
+- **Impact**: Opus 4.1/4, Sonnet 4 — Thai and Chinese characters mixed into English prompts, syntax errors in code
+- **Cause**: Misconfiguration from TPU server runtime performance optimization. Low-probability tokens incorrectly assigned high probability
+- **Fix**: Change rollback + added detection tests for unexpected character outputs
 
-### Bug 3: XLA:TPU 近似top-k誤コンパイル
+### Bug 3: XLA:TPU Approximate Top-k Miscompilation
 
-- **期間**: 2025年8月25日〜9月4-12日
-- **モデル**: Haiku 3.5（確認済み）、Sonnet 4/Opus 3（可能性）
-- **原因**: 近似top-k操作が特定のバッチサイズとモデル構成で完全に誤った結果を返すXLAコンパイラの潜在バグ
-- **複雑性**: 2024年12月のワークアラウンドが誤って除去されバグが露出。bf16/fp32混合精度の不一致
-- **修正**: 近似top-k → 正確top-k + fp32標準化
+- **Duration**: August 25 – September 4-12, 2025
+- **Models**: Haiku 3.5 (confirmed), Sonnet 4/Opus 3 (possible)
+- **Cause**: Latent XLA compiler bug where approximate top-k operations returned completely wrong results for specific batch sizes and model configurations
+- **Complexity**: A workaround from December 2024 was incorrectly removed, exposing the bug. bf16/fp32 mixed precision mismatch
+- **Fix**: Approximate top-k → exact top-k + fp32 standardization
 
-### 検出の困難さ
+### Detection Difficulty
 
-- 各バグが異なるプラットフォーム・異なる頻度で異なる症状 → 「ランダムで一貫性のない劣化」に見えた
-- 社内評価がユーザーの報告する劣化を捕捉できず（Claudeは単独ミスからの回復が上手い）
-- プライバシー制約がユーザーインタラクション調査を阻害
-
----
-
-## Part 2: 2026年3-4月 Claude Code品質低下
-
-> 3つの独立した変更が「広範で一貫性のない劣化」として現れた。
-
-### Issue 1: デフォルト推論努力の誤設定
-
-- **変更**: 3月4日 — reasoning effortを `high` → `medium` に変更
-- **理由**: `high` モードでの極端な長レイテンシ（UIフリーズ）対策
-- **結果**: Claude Codeが「賢くなくなった」という報告殺到
-- **修正**: 4月7日 — Opus 4.7は `xhigh`、他は `high` に設定
-- **教訓**: レイテンシより知能を優先すべき（ユーザーは低速でも高品質を選ぶ）
-
-### Issue 2: 推論履歴消失バグ
-
-- **変更**: 3月26日 — 1時間以上アイドル状態のセッションで古い思考をクリアする最適化
-- **バグ**: 1回だけのはずがセッション終了まで毎ターンクリアし続ける
-- **症状**: 忘却・反復・奇妙なツール選択。「なぜその判断をしたか」の記憶喪失
-- **副次的影響**: キャッシュミス連発 → 使用制限の消耗加速
-- **修正**: 4月10日
-- **発見経緯**: Opus 4.7のCode ReviewがPRから発見（Opus 4.6は見逃した）
-
-### Issue 3: 冗長性削減システムプロンプト
-
-- **変更**: 4月16日 — 「ツール間テキスト≤25語、最終応答≤100語」の指示を追加
-- **結果**: コーディング品質3%低下（Opus 4.6/4.7両方）
-- **修正**: 4月20日即時ロールバック
-- **教訓**: システムプロンプト変更の影響評価が不十分。より広範な評価スイートが必要
-
-### 再発防止策
-
-- より多くの内部スタッフが公開ビルドと同一のClaude Codeを使用
-- システムプロンプト変更に対するモデル別広範評価 + ソーク期間 + 段階的ロールアウト
-- Code Reviewツールの改善（追加リポジトリをコンテキストとしてサポート）
-- @ClaudeDevs（X）でプロダクト判断の詳細説明を公開
+- Each bug produced different symptoms on different platforms at different frequencies → appeared as "random, inconsistent degradation"
+- Internal evaluations failed to capture user-reported degradation (Claude is good at recovering from individual mistakes)
+- Privacy constraints hindered user interaction investigation
 
 ---
 
-## 共通パターン
+## Part 2: Mar-Apr 2026 — Claude Code Quality Degradation
 
-1. **検出の遅れ**: 複数の独立した変更が重なり「ランダムな劣化」に見える
-2. **社内評価の限界**: 既存の評価スイートがユーザー体験の劣化を捕捉できない
-3. **プライバシー vs 調査**: ユーザーデータへのアクセス制限が根本原因特定を遅らせる
-4. **ユーザーフィードバックの重要性**: `/feedback`, `/bug`, ソーシャルメディアでの具体的報告が最終的な解決の鍵
+> Three independent changes manifested as "broad, inconsistent degradation."
+
+### Issue 1: Default Reasoning Effort Misconfiguration
+
+- **Change**: March 4 — reasoning effort changed from `high` to `medium`
+- **Reason**: Mitigate extreme latency in `high` mode (UI freezing)
+- **Result**: Reports pouring in that Claude Code "became less smart"
+- **Fix**: April 7 — Opus 4.7 set to `xhigh`, others set to `high`
+- **Lesson**: Intelligence should be prioritized over latency (users prefer slow, high quality)
+
+### Issue 2: Reasoning History Deletion Bug
+
+- **Change**: March 26 — optimization to clear old thinking for sessions idle over 1 hour
+- **Bug**: Supposed to run once, but kept clearing every turn until session end
+- **Symptom**: Forgetfulness, repetition, strange tool choices. Memory loss of "why it made that decision"
+- **Secondary effect**: Cascading cache misses → faster rate limit consumption
+- **Fix**: April 10
+- **Discovery path**: Opus 4.7's Code Review found it in a PR (Opus 4.6 missed it)
+
+### Issue 3: Redundancy Reduction System Prompt
+
+- **Change**: April 16 — added instruction "inter-tool text ≤25 words, final response ≤100 words"
+- **Result**: 3% coding quality degradation (both Opus 4.6/4.7)
+- **Fix**: April 20 immediate rollback
+- **Lesson**: Insufficient impact evaluation of system prompt changes. Broader evaluation suite needed
+
+### Prevention Measures
+
+- More internal staff using the same Claude Code build as public release
+- Model-specific broad evaluation + soak period + gradual rollout for system prompt changes
+- Code Review tool improvements (support additional repositories as context)
+- Detailed explanation of product decisions published on @ClaudeDevs (X)
+
+---
+
+## Common Patterns
+
+1. **Detection lag**: Multiple independent changes overlapping, appearing as "random degradation"
+2. **Internal evaluation limitations**: Existing evaluation suites fail to capture user experience degradation
+3. **Privacy vs investigation**: Restricted access to user data delays root cause identification
+4. **Importance of user feedback**: Specific reports via `/feedback`, `/bug`, and social media were key to eventual resolution
 
 ## See Also
 

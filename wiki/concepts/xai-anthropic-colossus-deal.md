@@ -15,85 +15,84 @@ sources:
   - raw/articles/2026-05-06_xai_anthropic-compute-partnership.md
   - raw/articles/2026-05-06_anthropic_higher-limits-spacex.md
 ---
+# xAI-Anthropic Colossus Data Center Deal
 
-# xAI・Anthropic Colossus データセンター取引
+## Overview
 
-## 概要
+At the **Code w/ Claude 2026** event in May 2026, Anthropic announced a massive deal to use the full capacity of xAI's (Elon Musk) **Colossus 1** data center (Memphis). This partnership highlights the facility's environmental issues, the complex relationship between Musk and Anthropic, and the **supply chain risk** for Anthropic.
 
-2026年5月の **Code w/ Claude 2026** イベントで、Anthropic は xAI（Elon Musk）の **Colossus 1** データセンター（メンフィス）の全容量を利用する大規模取引を発表した。この提携は、施設の環境問題、Musk と Anthropic の複雑な関係、そして Anthropic にとっての**供給連鎖リスク**を浮き彫りにしている。
+## Deal Structure
 
-## 取引の構造
+| Element | Details |
+|---------|---------|
+| **Anthropic acquires** | Full capacity of Colossus 1 — securing long-awaited compute resources |
+| **xAI retains** | The larger **Colossus 2** data center — continuing its own Grok training |
+| **Impact on Grok** | Multiple models (including Grok 4.1 Fast) discontinued with **2 weeks notice**, angering developers |
 
-| 要素 | 詳細 |
-|------|------|
-| **Anthropic が取得** | Colossus 1 の全容量 — 待望の計算資源を獲得 |
-| **xAI が保持** | より大規模な **Colossus 2** データセンター — 自社の Grok 訓練を継続 |
-| **Grok への影響** | Grok 4.1 Fast など複数モデルが **2週間前通告で廃止**。開発者の不満を招く |
+## Colossus 1 Environmental Issues
 
-## Colossus 1 の環境問題
+The Colossus 1 facility faces significant environmental and regulatory criticism:
 
-Colossus 1 施設は重大な環境・規制批判に直面している：
+- **Regulatory violations**: Gas turbines installed without Clean Air Act permits, circumventing regulations under "temporary" classification
+- **Health impacts**: Reported links to increased hospitalizations due to air quality degradation
+- **Industry insider criticism**: Even data center advocate Andy Masley stated "I would not run compute at this particular data center"
 
-- **規制違反**: Clean Air Act 許可なしにガスタービンを設置。「一時的」分類で規制を回避
-- **健康影響**: 大気質悪化による入院増加との関連が報告されている
-- **業界内部からの批判**: データセンター推進派の Andy Masley も「この特定のデータセンターでは計算を実行しない」と明言
+## Musk's Statement and "Supply Chain Risk"
 
-## Musk の発言と「供給連鎖リスク」
+Elon Musk, who previously called Anthropic "Misanthropic," justified the deal:
 
-Elon Musk は Anthropic をかつて「Misanthropic（人間嫌い）」と呼んでいたが、今回の取引を以下のように正当化：
+> "I spent a lot of time with senior members of the Anthropic team last week, understanding what they are doing to ensure Claude is benevolent toward humanity. I was impressed."
 
-> 「先週、Anthropic チームの上級メンバーと多くの時間を過ごし、Claude が人類にとって善良であることを保証するために彼らが何をしているのかを理解した。感銘を受けた。」
+> "We reserve the right to reclaim compute resources if their AI takes actions harmful to humanity."
 
-> 「彼らのAIが人類に害を及ぼす行動をとった場合、計算資源を回収する権利を留保する。」
+**Analysis**: This "reclamation right" creates **unprecedented supply chain risk** for Anthropic. The "harmful to humanity" standard is subject to Musk's subjective judgment, potentially allowing ideological or personal disagreements to cut off Anthropic's primary compute access at any time.
 
-**分析**: この「回収権」は Anthropic にとって**前例のない供給連鎖リスク**を生み出す。「人類に害を及ぼす」という基準は Musk の主観的判断であり、思想的・個人的な不一致で Anthropic の主要計算資源へのアクセスがいつでも遮断されうる。
+## Strategic Implications
 
-## 戦略的含意
+1. **Anthropic compute expansion**: Significantly expands training and inference capacity via Colossus 1
+2. **xAI positioning**: Retains Colossus 2 for its own AI development, monetizing Colossus 1 as a "legacy asset"
+3. **Blow to Grok users**: A 2-week migration period creates serious reliability concerns for enterprise users
+4. **New AI governance challenge**: A structure where compute providers can cut off access for ideological reasons
 
-1. **Anthropic の計算能力拡大**: Colossus 1 獲得で訓練・推論能力を大幅拡張
-2. **xAI のポジショニング**: より新しい Colossus 2 で自社の AI 開発を継続、Colossus 1 は「レガシー資産」として収益化
-3. **Grok ユーザーへの打撃**: 2週間の移行期間はエンタープライズ利用に深刻な信頼性問題
-4. **AI ガバナンスの新たな課題**: 計算資源提供者がイデオロギー的理由でアクセスを遮断できる構造
+## Colossus 2 — Next-Generation Cluster
 
-## Colossus 2 — 次世代クラスター
+While SpaceXAI provides Colossus 1 to Anthropic, it has moved its own Grok training to **Colossus 2**:
 
-SpaceXAI は Colossus 1 を Anthropic に提供する一方、自社の Grok 訓練を **Colossus 2** に移行した：
+| Comparison | Colossus 1 | Colossus 2 |
+|------------|-----------|-----------|
+| **Power capacity** | ~300MW | ~1.5GW (~5x) |
+| **GPU count** | 220,000+ (H100/H200/GB200) | ~550,000 (~2.5x) |
+| **Use** | Provided to Anthropic (Claude inference) | SpaceXAI self-use (Grok training) |
 
-| 比較 | Colossus 1 | Colossus 2 |
-|------|-----------|-----------|
-| **電力容量** | ~300MW | ~1.5GW（約5倍） |
-| **GPU 数** | 220,000+（H100/H200/GB200） | 約550,000（約2.5倍） |
-| **用途** | Anthropic（Claude 推論）に提供 | SpaceXAI 自社（Grok 訓練） |
+Leasing Colossus 1 is a strategic move to monetize idle hardware while funding Colossus 2 construction.
 
-Colossus 1 のリースは、遊休化するハードウェアを収益化しつつ Colossus 2 の建設資金を調達する戦略的動き。
+## Economic Analysis
 
-## 経済分析
+Per Jamin Ball (Altimeter) estimates:
 
-Jamin Ball（Altimeter）の試算によると：
+- **SpaceXAI revenue**: ~$5B/year at standard rental rates for Colossus 1
+- **Anthropic inference monetization**: Based on Dario Amodei's "training-inference framework," ~$15B inference revenue (60-70% margin) from $5B compute investment
 
-- **SpaceXAI 収益**: Colossus 1 の標準レンタル料金で **年間約$5B**
-- **Anthropic 推論収益化**: Dario Amodei の「訓練-推論フレームワーク」に基づけば、$5B の計算投資から **~$15B の推論収益**（60-70%マージン）を生み出せる
+These unit economics make leasing compute from a competitor a rational business decision.
 
-この単位経済が、競合他社からの計算資源リースを合理的なビジネス判断にしている。
+## Direct Benefits to Anthropic Users (Effective May 6, 2026)
 
-## Anthropic 利用者への直接恩恵（2026年5月6日発効）
+With the addition of Colossus 1 compute, Anthropic significantly relaxed Claude usage limits:
 
-Colossus 1 の計算資源追加に伴い、Anthropic は Claude の利用制限を大幅緩和：
+- **Claude Code rate limits**: Pro/Max/Team/Enterprise plans — **5-hour limits doubled**
+- **Peak hour restrictions removed**: Pro/Max account throttling during peak hours **completely eliminated**
+- **API rate limit increases**: Significant ceiling expansion across Claude Opus models
 
-- **Claude Code レート制限**: Pro/Max/Team/Enterprise プランで **5時間制限を2倍に**
-- **ピーク時間帯の制限撤廃**: Pro/Max アカウントのピーク時絞り込みを **完全撤廃**
-- **API レート制限引き上げ**: Claude Opus モデル全般で大幅な上限拡大
+## Orbital Compute Plans
 
-## 軌道コンピュート計画
+SpaceX has expressed interest in developing **orbital AI compute**. As part of the Colossus deal, Anthropic also expressed interest in a partnership for "multi-gigawatt orbital AI compute development":
 
-SpaceX は **軌道上 AI コンピュート** の開発に関心を表明。Colossus 取引の一部として Anthropic も「複数ギガワット級の軌道AIコンピュート開発」へのパートナーシップに関心を示した。
+- SpaceX positions orbital compute as a "short-term engineering program," not a "research concept"
+- Nearly unlimited sustainable power available in orbit, bypassing terrestrial power, land, and cooling constraints
+- SpaceX's launch frequency, orbital economics, and constellation operations experience are key enablers
 
-- SpaceX は軌道コンピュートを「研究コンセプトではなく**短期エンジニアリングプログラム**」と位置づけ
-- 軌道上ではほぼ無制限の持続可能な電力を利用可能、地球上の電力・土地・冷却の制約を回避
-- SpaceX の打ち上げ頻度・軌道投入経済性・コンステレーション運用経験が実現の鍵
-
-## 関連項目
+## See Also
 
 - [[entities/anthropic]] — AI safety company behind Claude
-- [[entities/simon-willison]] — 本記事の著者
-- [[concepts/agentic-ai-governance]] — AI ガバナンスの広範な文脈
+- [[entities/simon-willison]] — Author of the original analysis
+- [[concepts/agentic-ai-governance]] — Broader context of AI governance

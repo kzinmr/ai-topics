@@ -22,34 +22,33 @@ related:
   - multi-agent-research-system
   - agent-team-swarm
 ---
-
 # Managed Agents (Anthropic)
 
-Anthropicの長期間稼働エージェント向けホスト型サービス。**「脳（brain）を手（hands）から分離する」** アーキテクチャ。
+Anthropic's hosted service for long-running agents. Architecture of **separating the brain from the hands**.
 
-## 設計哲学
+## Design Philosophy
 
 > "How to design a system for 'programs as yet unthought of.'"
 
-OSがハードウェアを `process` / `file` に仮想化したように、Managed Agentsはエージェントの構成要素を仮想化:
-- **Session** — 発生した全イベントの追記専用ログ
-- **Harness** — Claudeを呼び出しツール呼び出しをルーティングするループ
-- **Sandbox** — Claudeがコード実行・ファイル編集する実行環境
+Just as an OS virtualizes hardware into `process` / `file`, Managed Agents virtualize the building blocks of agents:
+- **Session** — An append-only log of all events that occurred
+- **Harness** — The loop that calls Claude and routes tool calls
+- **Sandbox** — The execution environment where Claude runs code and edits files
 
-各インターフェースは実装と独立 → 実装の自由な交換が可能。
+Each interface is independent of implementation → implementations can be freely swapped.
 
 ## Pets vs Cattle
 
-### 結合アーキテクチャ（Pet）
-- セッション・ハーネス・サンドボックスを1コンテナに同居
-- コンテナ障害 → セッション消失
-- デバッグにシェルアクセス必要 → ユーザーデータへのアクセスと衝突
-- ハーネスが「リソースはコンテナ内にある」と仮定 → VPC接続時に壁
+### Coupled Architecture (Pet)
+- Session, harness, and sandbox co-located in one container
+- Container failure → session loss
+- Debugging requires shell access → conflicts with user data access
+- Harness assumes "resources are inside the container" → walls hit during VPC connection
 
-### 分離アーキテクチャ（Cattle）
+### Decoupled Architecture (Cattle)
 
 ```
-execute(name, input) → string
+execute(name, input) -> string
 provision({resources})
 wake(sessionId)
 getSession(id)
@@ -57,69 +56,69 @@ emitEvent(id, event)
 getEvents()
 ```
 
-- コンテナ死 → ツール呼び出しエラーとして検出、Claudeがリトライ判断
-- ハーネスクラッシュ → `wake(sessionId)` で再起動、イベントログから再開
-- 認証情報はサンドボックス外のVaultに（Claudeの生成コードから到達不能）
+- Container death → detected as tool call error, Claude decides whether to retry
+- Harness crash → restarted via `wake(sessionId)`, resumes from event log
+- Credentials stored in Vault outside sandbox (inaccessible from Claude's generated code)
 
-## セッション ≠ コンテキストウィンドウ
+## Session ≠ Context Window
 
-- セッションはコンテキストウィンドウの**外**にある永続的コンテキストオブジェクト
-- `getEvents()` で位置ベースのスライス取得（再開・巻き戻し・再読込）
-- 取得イベントはハーネス内で変換可能（prompt caching最適化、context engineering）
+- Session is a persistent context object **outside** the context window
+- `getEvents()` for position-based slice retrieval (resume, rewind, reload)
+- Retrieved events are transformable within the harness (prompt caching optimization, context engineering)
 
-## 性能改善
+## Performance Improvements
 
-- **p50 TTFT**: 約60%削減
-- **p95 TTFT**: 90%以上削減
-- 脳がコンテナを必要としない場合、プロビジョニング待ちなしで推論開始
+- **p50 TTFT**: ~60% reduction
+- **p95 TTFT**: 90%+ reduction
+- When the brain doesn't need a container, inference starts without waiting for provisioning
 
 ## Many Brains, Many Hands
 
-- **Many brains**: 複数のステートレスハーネスを起動、必要なときだけ手に接続
-- **Many hands**: 各手は `execute(name, input) → string` ツール。ハーネスは手の実体（コンテナ/電話/ポケモンエミュレータ）を意識しない
-- 脳同士で手を受け渡し可能
+- **Many brains**: Launch multiple stateless harnesses, connecting to hands only when needed
+- **Many hands**: Each hand is an `execute(name, input) -> string` tool. Harness doesn't care about the hand's physical form (container/phone/Pokemon emulator)
+- Hands can be passed between brains
 
 ## Meta-Harness
 
-Managed Agentsは**メタハーネス** — 特定のハーネス実装に依存せず、Claude Codeのような汎用ハーネスもタスク特化ハーネスも収容可能。
+Managed Agents is a **meta-harness** — not tied to a specific harness implementation, capable of accommodating both general-purpose harnesses like Claude Code and task-specific harnesses.
 
 > "We're opinionated about the shape of these interfaces, not about what runs behind them."
 
 
-## ベンダーロックインと自己ホスティング戦略 (Martin Alderson, May 2026)
+## Vendor Lock-in and Self-Hosting Strategy (Martin Alderson, May 2026)
 
-[[entities/martin-alderson|Martin Alderson]] は管理エージェントを **AWS Lambda のアナロジー** で分析。Lambda がサーバーレス革命だったように、管理エージェントは強力だが「スティッキー（移行困難）」だと警告。
+[[entities/martin-alderson|Martin Alderson]] analyzes managed agents through the **AWS Lambda analogy**. Just as Lambda sparked a serverless revolution, managed agents are powerful but warns they are "sticky (hard to migrate from)."
 
-### エージェントハーネスの交換可能性
+### Agent Harness Interchangeability
 
-すべてのエージェントハーネス（Claude Code, Codex, OpenCode, Pi）は同じプリミティブを持つ：
-- プロンプト + コンテキスト + ツール → 出力 + ログ
+All agent harnesses (Claude Code, Codex, OpenCode, Pi) share the same primitives:
+- Prompt + Context + Tools → Output + Log
 
-この基本構造の共通性により、ハーネス間の切り替えは比較的容易。しかし管理エージェント製品にデータとワークフローが埋め込まれると、その容易さは失われる。
+This fundamental structural commonality makes switching between harnesses relatively easy. But when data and workflows become embedded in a managed agent product, that ease is lost.
 
-### Anthropic 料金変更の影響 (May 2026)
+### Impact of Anthropic Pricing Changes (May 2026)
 
-Anthropic は 2026年5月、**非対話モード**の Claude Code 利用（管理エージェント・CI/CD パイプラインを含む）をサブスクリプショントークン枠から除外。実質 **5-20倍の値上げ** となり：
-- **OpenAI Codex への移行圧力**が発生（OpenAI は現状、全ツール・全モードでサブスクリプション枠使用を許可）
-- 開発者の価格感応性が企業の大規模購買決定に波及するパターンに注目
+In May 2026, Anthropic **excluded non-interactive** Claude Code usage (including Managed Agents and CI/CD pipelines) from subscription token allocations. Effectively a **5-20x price increase**, resulting in:
+- **Migration pressure toward OpenAI Codex** (OpenAI currently permits subscription allocation for all tools and modes)
+- Notable pattern of developer price sensitivity cascading into enterprise purchasing decisions
 
-### 自己ホスティングの実践
+### Self-Hosting in Practice
 
 ```bash
-# 本質的には Docker コンテナでハーネスを実行するだけ
+# Essentially just running a harness in a Docker container
 docker run ... opencode --model <any-provider> --prompt "..."
 ```
 
-利点:
-- **モデルプロバイダ非依存**: 数分で Anthropic → OpenAI → Google → DeepSeek に切り替え可能
-- **既存インフラ内でセキュア**: 自社 VPC・IAM・監査ログの枠内で運用
-- **組織的コンピテンス構築**: エージェントプリミティブの知識を外部委託しない
+Advantages:
+- **Model provider independence**: Switch Anthropic → OpenAI → Google → DeepSeek in minutes
+- **Secure within existing infrastructure**: Runs within your own VPC, IAM, audit logs
+- **Building organizational competence**: Don't outsource knowledge of agent primitives
 
-### フロンティアラボの独占戦略リスク
+### Frontier Lab Monopoly Strategy Risk
 
 > *"I have a strong gut feeling the frontier labs are going to start introducing new models and capabilities that are ONLY available on their managed agent platforms."*
 
-新モデル・新機能が管理エージェントプラットフォーム限定で提供され始めた場合、セルフホスティング戦略は根本的に揺らぐ。現時点では様子見が賢明だが、動向を注視する必要がある。
+If new models and capabilities start being offered exclusively on managed agent platforms, the self-hosting strategy is fundamentally undermined. For now, a wait-and-see approach is prudent, but trends must be closely monitored.
 
 ## See Also
 

@@ -12,90 +12,89 @@ updated: 2026-05-08
 sources:
   - "raw/papers/2020-02-25_2002.10689_predictive-v-information.md"
 ---
+# Predictive $\\mathcal{V}$-Information
 
-# Predictive $\mathcal{V}$-Information
+**Predictive $\\mathcal{V}$-Information** is an information-theoretic framework that explicitly accounts for the computational and modeling constraints of the observer. Proposed by Yilun Xu, Shengjia Zhao, Jiaming Song, Russell Stewart, and Stefano Ermon in 2020 as a variational extension of Shannon information theory, published at ICLR 2020[^1].
 
-**Predictive $\mathcal{V}$-Information** は、観測者（observer）の計算能力やモデリング能力の制約を明示的に考慮した情報理論の枠組み。Shannon情報理論の変分拡張として、Yilun Xu, Shengjia Zhao, Jiaming Song, Russell Stewart, Stefano Ermon によって2020年に提案され、ICLR 2020で発表された[^1]。
+## Overview
 
-## 概要
+Traditional Shannon information theory measures the **physical existence** of information. This assumes the observer has infinite computational power, making it insufficient for describing the behavior of real-world machine learning systems (e.g., neural networks).
 
-従来のShannon情報理論は、情報の**物理的な存在**を測る。これは観測者が無限の計算能力を持つことを前提としており、現実の機械学習システム（ニューラルネットワークなど）の振る舞いを説明するには不十分だった。
+Predictive $\\mathcal{V}$-Information quantifies "how much information is **usable** to a given observer" by restricting the observer's capabilities to a specific function class $\\mathcal{V}$.
 
-Predictive $\mathcal{V}$-Information は、観測者の能力を特定の関数族 $\mathcal{V}$ に制限することで、「その観測者にとってどの程度情報が**利用可能か**」を定量化する。
+| Perspective | Shannon Information | Predictive $\\mathcal{V}$-Information |
+|----------|-------------|-------------------------------------|
+| **Observer** | Omnipotent (infinite compute) | Constrained (function class $\\mathcal{V}$) |
+| **Data Processing Inequality (DPI)** | Always holds (information cannot be created) | **Can be violated** (computation can create usable information) |
+| **Symmetry** | Symmetric ($I(X;Y) = I(Y;X)$) | Asymmetric ($I_{\\mathcal{V}}(X \\to Y) \\neq I_{\\mathcal{V}}(Y \\to X)$) |
+| **Estimation** | Difficult in high dimensions | Reliably estimable with PAC guarantees |
+| **Use** | Theoretical communication limits | Practical machine learning and fairness |
 
-| 観点 | Shannon情報 | Predictive $\mathcal{V}$-Information |
-|------|-------------|-------------------------------------|
-| **観測者** | 全能（無限の計算能力） | 制約あり（関数族 $\mathcal{V}$） |
-| **データ処理不等式(DPI)** | 常に成立（情報は生成されない） | **違反可能**（計算が利用可能な情報を生成する） |
-| **対称性** | 対称（$I(X;Y) = I(Y;X)$） | 非対称（$I_{\mathcal{V}}(X \to Y) \neq I_{\mathcal{V}}(Y \to X)$） |
-| **推定** | 高次元では困難 | PAC保証ありで信頼性高く推定可能 |
-| **用途** | 通信の理論限界 | 実用的な機械学習と公平性 |
+## Definitions
 
-## 定義
+### $\\mathcal{V}$-Entropy
+The minimum expected loss (uncertainty) when predicting target variable $Y$ using models from function class $\\mathcal{V}$:
 
-### $\mathcal{V}$-Entropy（$\mathcal{V}$-エントロピー）
-特定の関数族 $\mathcal{V}$ に属するモデルを使って、目的変数 $Y$ を予測する際の最小期待損失（不確実性）：
+$$H_{\\mathcal{V}}(Y) = \\inf_{f \\in \\mathcal{V}} \\mathbb{E}[L(f, Y)]$$
 
-$$H_{\mathcal{V}}(Y) = \inf_{f \in \mathcal{V}} \mathbb{E}[L(f, Y)]$$
+### Conditional $\\mathcal{V}$-Entropy
+The residual uncertainty in predicting $Y$ after observing input $X$, using models from function class $\\mathcal{V}$:
 
-### Conditional $\mathcal{V}$-Entropy（条件付き$\mathcal{V}$-エントロピー）
-入力 $X$ を観測した後、関数族 $\mathcal{V}$ のモデルを使って $Y$ を予測する際の残存不確実性：
+$$H_{\\mathcal{V}}(Y|X) = \\inf_{f \\in \\mathcal{V}} \\mathbb{E}[L(f(X), Y)]$$
 
-$$H_{\mathcal{V}}(Y|X) = \inf_{f \in \mathcal{V}} \mathbb{E}[L(f(X), Y)]$$
+### $\\mathcal{V}$-Information
+Defined as the difference between the two:
 
-### $\mathcal{V}$-Information（$\mathcal{V}$-情報量）
-両者の差として定義される：
+$$I_{\\mathcal{V}}(X \\to Y) = H_{\\mathcal{V}}(Y) - H_{\\mathcal{V}}(Y|X)$$
 
-$$I_{\mathcal{V}}(X \to Y) = H_{\mathcal{V}}(Y) - H_{\mathcal{V}}(Y|X)$$
+## Theoretical Significance
 
-## 理論的意義
+### DPI (Data Processing Inequality) Violation
 
-### DPI（データ処理不等式）の違反
+In Shannon theory, processing (transforming) data cannot increase information ($I(X;Y) \\ge I(g(X);Y)$). However, under $\\mathcal{V}$-Information, **computation can increase usable information**:
 
-Shannon理論では、データを処理する（変換する）ことで情報が増えることはない（$I(X;Y) \ge I(g(X);Y)$）。しかし $\mathcal{V}$-Information では、**計算によって利用可能な情報が増加する**：
+$$I_{\\mathcal{V}}(g(X) \\to Y) \\ge I_{\\mathcal{V}}(X \\to Y)$$
 
-$$I_{\mathcal{V}}(g(X) \to Y) \ge I_{\mathcal{V}}(X \to Y)$$
+This explains how deep neural networks extract increasingly linearly separable and "usable" feature representations as they go deeper. Information that was inaccessible to observer $\\mathcal{V}$ in raw data becomes "usable" through appropriate transformation $g$.
 
-これは深層ニューラルネットワークが層を重ねるごとに、より線形分離可能で「使いやすい」特徴表現を抽出する現象を説明する。生データでは観測者 $\mathcal{V}$ が扱えなかった情報も、適切な変換 $g$ によって「利用可能」になる。
+### PAC-Style Estimation Guarantees
 
-### PACスタイルの推定保証
+Shannon mutual information is extremely difficult to estimate for high-dimensional continuous variables. $\\mathcal{V}$-Information, by restricting the observer's function class, enables reliable estimation from finite data.
 
-Shannon相互情報量は高次元の連続変数に対して推定が非常に難しい。一方 $\mathcal{V}$-Information は観測者の関数族を制限することで、有限データからの信頼性の高い推定が可能になる。
+### Generalization of Existing Metrics
 
-### 既存指標の一般化
-
-| 指標 | 特殊ケースとしての条件 |
+| Metric | Condition as Special Case |
 |------|----------------------|
-| **Shannon相互情報量** | $\mathcal{V}$ がすべての可測関数の集合 |
-| **決定係数 $R^2$** | $\mathcal{V}$ が線形モデルの集合 |
+| **Shannon mutual information** | $\\mathcal{V}$ is the set of all measurable functions |
+| **Coefficient of determination $R^2$** | $\\mathcal{V}$ is the set of linear models |
 
-## 応用
+## Applications
 
-### 1. 構造学習（Structure Learning）
+### 1. Structure Learning
 
-変数間の依存関係を学習する際に、特定のモデルクラスが実際に活用できる依存関係を特定できる。従来の相互情報量よりも現実的な因果グラフ構築が可能。
+When learning dependencies between variables, can identify which dependencies a specific model class can actually exploit. Enables more realistic causal graph construction than traditional mutual information.
 
-### 2. 公平な表現学習（Fair Representation Learning）
+### 2. Fair Representation Learning
 
-公平性の文脈では、表現 $Z$ が機密属性 $S$ についてどの程度の情報を持つかを最小化したい。$\mathcal{V}$-Information を用いれば、「特定の限定的な敵対者では抽出できない」という現実的な基準で公平性を保証できる。Shannon情報量では「全能の敵対者」を仮定するため過度に制約的になる。
+In fairness contexts, we want representation $Z$ to minimize information about sensitive attribute $S$. $\\mathcal{V}$-Information provides a realistic fairness guarantee: "information that a specific limited adversary cannot extract." Shannon information assumes an "omnipotent adversary," making it overly restrictive.
 
-### 3. 深層表現学習（Deep Representation Learning）
+### 3. Deep Representation Learning
 
-深層ネットワークの層が進むにつれて特徴がより「線形分離可能」になる現象を理論的に説明する。Shannon情報量では層を経るごとに一定または減少する情報が、$\mathcal{V}$-Information では増加する理由を定式化する。
+Theoretically explains the phenomenon where features become increasingly "linearly separable" through deeper layers of a network. While Shannon information stays constant or decreases through layers, $\\mathcal{V}$-Information formalizes why it increases.
 
-## 関連概念との比較
+## Comparison with Related Concepts
 
-| 概念 | 関係 |
+| Concept | Relationship |
 |------|------|
-| **Shannon情報理論** | 親理論。$\mathcal{V}$-Information はその変分拡張であり、$\mathcal{V}$ を全ての可測関数にするとShannon相互情報量に一致 |
-| **決定係数 $R^2$** | $\mathcal{V}$-Information の特殊ケース（線形モデル族に制限） |
-| **情報ボトルネック（IB）** | 関連するが別の手法。IBは圧縮と予測のトレードオフを扱い、$\mathcal{V}$-Information は観測者の制約に焦点 |
-| **変分情報理論（Variational Information Theory）** | 広い枠組みの一部。$\mathcal{V}$-Information は変分下界を用いた情報量の実用的推定を提供 |
+| **Shannon information theory** | Parent theory. $\\mathcal{V}$-Information is a variational extension; when $\\mathcal{V}$ is all measurable functions, it reduces to Shannon mutual information |
+| **Coefficient of determination $R^2$** | Special case of $\\mathcal{V}$-Information (restricted to linear model class) |
+| **Information Bottleneck (IB)** | Related but different. IB addresses the compression-prediction trade-off; $\\mathcal{V}$-Information focuses on observer constraints |
+| **Variational Information Theory** | Part of a broader framework. $\\mathcal{V}$-Information provides practical estimation of information using variational lower bounds |
 
-## 参考文献
+## References
 
 [^1]: Xu et al., "A Theory of Usable Information Under Computational Constraints", ICLR 2020. https://arxiv.org/abs/2002.10689
 
-## 関連項目
+## See Also
 
-- [[concepts/representation-learning]] — 表現学習の理論的基盤として
+- [[concepts/representation-learning]] — As a theoretical foundation for representation learning

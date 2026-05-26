@@ -19,111 +19,110 @@ tags:
   - multi-agent
 related: [claude-memory, chatgpt-memory-bitter-lesson, context-engineering, harness-design-long-running-apps, claude-code-source-patterns, vajra-background-agent]
 ---
-
 # Memory Systems Design Patterns — Anthropic vs OpenAI vs Cognition
 
-AIエージェントのメモリシステム設計における**3つのアプローチ**と、業界が収束しつつあるパターンを整理。
+Organizing **three approaches** to AI agent memory system design and the patterns the industry is converging on.
 
-## 1. メモリ設計の3大アプローチ
+## 1. Three Major Approaches to Memory Design
 
-| 次元 | **Anthropic (Claude)** | **OpenAI (ChatGPT)** | **Cognition (Devin)** |
-|------|------------------------|----------------------|------------------------|
-| **メモリ形式** | ファイルベース（CLAUDE.md, .agent/） | 独自データベース | ファイルベース（Anthropicをコピー） |
-| **セッション** | ステートレス（毎回全コンテキスト） | ステートフル（メモリ永続化） | ステートフル→ステートレスへ移行中 |
-| **検索戦略** | JIT（必要時に取得） | 事前ロード（メモリから復元） | ハイブリッド |
-| **バージョン管理** | Git統合（天然） | 手動バックアップ必要 | Git統合予定 |
-| **透明性** | 高い（人間が読めるファイル） | 低い（内部データベース） | 中間 |
-| **スケーラビリティ** | ファイルシステムに依存 | データベーススキーマに制限 | ファイルシステムへ移行 |
+| Dimension | **Anthropic (Claude)** | **OpenAI (ChatGPT)** | **Cognition (Devin)** |
+|-----------|------------------------|----------------------|------------------------|
+| **Memory format** | File-based (CLAUDE.md, .agent/) | Proprietary database | File-based (copying Anthropic) |
+| **Sessions** | Stateless (full context each time) | Stateful (memory persisted) | Stateful→migrating to stateless |
+| **Search strategy** | JIT (fetch on demand) | Pre-load (restore from memory) | Hybrid |
+| **Versioning** | Git integration (native) | Manual backup needed | Git integration planned |
+| **Transparency** | High (human-readable files) | Low (internal database) | Medium |
+| **Scalability** | Depends on filesystem | Limited by database schema | Migrating to filesystem |
 
-## 2. Anthropicのメモリ設計原則（Engineering Blog 2記事から抽出）
+## 2. Anthropic Memory Design Principles (Extracted from 2 Engineering Blog Posts)
 
 ### Principle 1: Context is a Finite Budget
 > "Every new token introduced depletes this budget by some amount."
 
-- **Context Rot**は性能勾配（ハードな崖ではない）
-- Transformerアーキテクチャの根本的制約（n² attention）
-- **対策**: 最小限の高信号トークンのみを選択
+- **Context Rot** is a performance gradient (not a hard cliff)
+- Fundamental constraint of Transformer architecture (n² attention)
+- **Mitigation**: Select only minimal, high-signal tokens
 
 ### Principle 2: File System IS the Memory
-- CLAUDE.md + .agent/ + Git = 完全なメモリシステム
-- 外部データベース不要
-- **Anthropic Harness**: スプリントコントラクトをファイルで保存
-- **Claude Code**: Forkプリミティブでコンテキスト分岐
+- CLAUDE.md + .agent/ + Git = Complete memory system
+- No external database needed
+- **Anthropic Harness**: Saves sprint contracts as files
+- **Claude Code**: Fork primitives for context branching
 
 ### Principle 3: JIT > Pre-Load
-- 事前に全データをロードするのではなく、**必要なときに必要なだけ取得**
-- 人間の認知モデルに近い（索引に依存、暗記しない）
-- `glob`/`grep`/`read`で動的取得
+- Instead of loading all data upfront, **fetch only what's needed, when needed**
+- Similar to human cognitive model (rely on indexing, not memorization)
+- Dynamic retrieval via `glob`/`grep`/`read`
 
 ### Principle 4: Context Reset > Compaction
-- 会話内要約（compaction）より**新規エージェント起動**を推奨
-- ハンドオフ成果物に十分な状態を含める
-- クリーンスレートでコヒーレンスを維持
+- Recommends **new agent launch** over in-conversation summarization (compaction)
+- Include sufficient state in handoff artifacts
+- Maintain coherence by starting fresh
 
 ### Principle 5: Evaluator Isolation
-- 生成と評価を分離することで自己評価バイアスを回避
-- **GAN-inspiredループ**: Generator ↔ Evaluator
-- Evaluatorはタスクがモデル能力を超える場合のみ使用
+- Separate generation from evaluation to avoid self-evaluation bias
+- **GAN-inspired loop**: Generator ↔ Evaluator
+- Use Evaluator only when tasks exceed model capability
 
-## 3. Shlok Khemaniの「Bitter Lesson」分析との接続
+## 3. Connection to Shlok Khemani's "Bitter Lesson" Analysis
 
-Rich Suttonの**Bitter Lesson**（計算量を活用する一般的方法が最終的に勝つ）をメモリシステムに適用：
+Applying Rich Sutton's **Bitter Lesson** (general methods leveraging computation ultimately win) to memory systems:
 
-| Bitter Lessonの教訓 | メモリシステムへの適用 |
-|---------------------|----------------------|
-| 計算量を活用せよ | 大きなコンテキストウィンドウ = より良い想起 |
-| 人間のバイアスを排除 | ファイルベース = 透明、再現可能 |
-| 一般的方法が特殊方法に勝る | JIT検索 = 普遍的パターン |
+| Bitter Lesson Lesson | Application to Memory Systems |
+|----------------------|-------------------------------|
+| Leverage computation | Larger context windows = better recall |
+| Eliminate human bias | File-based = transparent, reproducible |
+| General methods beat specialized ones | JIT retrieval = universal pattern |
 
-**Khemeniの核心主張**:
+**Khemani's core claim**:
 > "The best way to build agent memory is not to build one at all."
 > "Stateless agents that receive full context every time are more reliable than stateful agents that try to remember."
 
-## 4. 業界の収束パターン
+## 4. Industry Convergence Patterns
 
-### 収束している設計
-| パターン | Anthropic | OpenAI | Cognition | Vajra |
+### Converging Designs
+| Pattern | Anthropic | OpenAI | Cognition | Vajra |
 |---------|-----------|--------|-----------|-------|
-| **ファイルベースメモリ** | ✅ CLAUDE.md | ❌ DB | ✅ コピー中 | ✅ .vajra/ |
-| **JITコンテキスト** | ✅ glob/grep | ❌ 事前ロード | ⚠️ 移行中 | ✅ SKILL.md |
-| **Git統合** | ✅ 天然 | ❌ proprietary | ✅ 予定 | ✅ 天然 |
-| **ステートレスセッション** | ✅ | ❌ ステートフル | ⚠️ 移行中 | ✅ |
-| **Context Reset** | ✅ 推奨 | ❌ Compaction | ⚠️ 調査中 | ✅ 分離ワークスペース |
-| **Evaluator分離** | ✅ GANループ | ❌ 自己評価 | ⚠️ 計画中 | ✅ Plan Review + Code Review |
+| **File-based memory** | ✅ CLAUDE.md | ❌ DB | ✅ Copying | ✅ .vajra/ |
+| **JIT context** | ✅ glob/grep | ❌ Pre-load | ⚠️ Migrating | ✅ SKILL.md |
+| **Git integration** | ✅ Native | ❌ Proprietary | ✅ Planned | ✅ Native |
+| **Stateless sessions** | ✅ | ❌ Stateful | ⚠️ Migrating | ✅ |
+| **Context Reset** | ✅ Recommended | ❌ Compaction | ⚠️ Exploring | ✅ Isolated workspaces |
+| **Evaluator isolation** | ✅ GAN loop | ❌ Self-evaluation | ⚠️ Planning | ✅ Plan Review + Code Review |
 
-### 収束していない設計
-| 次元 | Anthropic | OpenAI |
-|------|-----------|--------|
-| **メモリ永続化** | ファイル（CLAUDE.md） | データベース（Memory機能） |
-| **セッション管理** | Context Reset（新規エージェント） | Compaction（会話内要約） |
-| **評価戦略** | Evaluator分離（GAN） | 自己評価（単一エージェント） |
+### Not Converging
+| Dimension | Anthropic | OpenAI |
+|-----------|-----------|--------|
+| **Memory persistence** | Files (CLAUDE.md) | Database (Memory feature) |
+| **Session management** | Context Reset (new agent) | Compaction (in-conversation summarization) |
+| **Evaluation strategy** | Evaluator isolation (GAN) | Self-evaluation (single agent) |
 
-## 5. Coding Agent（Codex vs Claude Code）への影響
+## 5. Impact on Coding Agents (Codex vs Claude Code)
 
-メモリ設計の差異が**エージェントの特色**に直結：
+Memory design differences directly shape **agent characteristics**:
 
-| 特色 | Claude Code | Codex |
-|------|-------------|-------|
-| **メモリ形式** | CLAUDE.md（ファイル） | 内部状態（データベース） |
-| **セッション** | ステートレス（毎回全コンテキスト） | ステートフル（メモリ永続化） |
-| **Fork** | ✅ 独立的コンテキスト分岐 | ❌ 単一スレッド |
-| **Cache** | ✅ プロンプトキャッシュ最優先 | ⚠️ 部分的 |
-| **Transparency** | ✅ 人間が読めるファイル | ❌ 内部状態 |
+| Characteristic | Claude Code | Codex |
+|----------------|-------------|-------|
+| **Memory format** | CLAUDE.md (file) | Internal state (database) |
+| **Sessions** | Stateless (full context each time) | Stateful (memory persisted) |
+| **Fork** | ✅ Independent context branching | ❌ Single thread |
+| **Cache** | ✅ Prompt cache prioritized | ⚠️ Partial |
+| **Transparency** | ✅ Human-readable files | ❌ Internal state |
 
-**Shlokの洞察**:
-> "Cognition is copying Claude's memory approach" — Anthropicの設計が業界標準になりつつある
+**Shlok's insight**:
+> "Cognition is copying Claude's memory approach" — Anthropic's design is becoming the industry standard
 
-## 6. 実践的メモリ設計チェックリスト
+## 6. Practical Memory Design Checklist
 
-エージェントメモリシステムを設計する際の評価項目：
+Evaluation criteria for designing agent memory systems:
 
-- [ ] **ファイルベースか？** — 透明性、Git統合、可搬性
-- [ ] **JIT検索か？** — 最小限の事前ロード、動的取得
-- [ ] **ステートレスセッションか？** — 再現性、Context Reset対応
-- [ ] **Evaluator分離か？** — 自己評価バイアスの回避
-- [ ] **Context Rot対策か？** — 注意力バジェットの管理
-- [ ] **Cache最適化か？** — プロンプトキャッシュの有効活用
-- [ ] **Fork/ブランチ対応か？** — 独立したコンテキスト探索
+- [ ] **File-based?** — Transparency, Git integration, portability
+- [ ] **JIT retrieval?** — Minimal pre-loading, dynamic fetching
+- [ ] **Stateless sessions?** — Reproducibility, Context Reset support
+- [ ] **Evaluator isolation?** — Avoid self-evaluation bias
+- [ ] **Context Rot mitigation?** — Attention budget management
+- [ ] **Cache optimization?** — Effective use of prompt caching
+- [ ] **Fork/branch support?** — Independent context exploration
 
 ## Sources
 

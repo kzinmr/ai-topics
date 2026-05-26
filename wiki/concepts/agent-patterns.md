@@ -13,72 +13,71 @@ tags:
 status: complete
 description: "Patterns and practices for building and deploying AI agents — harnesses, workflows, and multi-agent orchestration."
 ---
-
 # Agent Patterns
 
-AI Agentのアーキテクチャパターン、ハル設計、ワークフロー。
+Architecture patterns, harness design, and workflows for AI Agents.
 
-## 概要
+## Overview
 
-AI Agentのパターンは多岐にわたる：単一エージェントのパターンから、サブエージェント、メタエージェント、長期実行エージェント、およびマルチエージェント協調まで。
+AI Agent patterns span a wide spectrum: from single-agent patterns to sub-agents, meta-agents, long-running agents, and multi-agent coordination.
 
 ## Subagent Patterns (Philipp Schmid, May 2026)
 
-Philipp Schmidの4つのサブエージェントパターンは、メインエージェントがサブエージェントを制御するレベルに基づいて分類される：
+Philipp Schmid's four subagent patterns are classified by the level at which the main agent controls sub-agents:
 
-### 1. Inline Tool — サブエージェントを関数呼び出しとして
-最もシンプルなパターン。メインエージェントが `call_agent` ツールを呼び出し、サブエージェントをスポーンして結果をツールレスポンスとして返す。同期的（ブロッキング）または非同期的（agent_id を返す）の2種類。
-- **用途**: リサーチ参照、コードレビュー、テスト生成
-- **限界**: 中間フォローアップ不可
+### 1. Inline Tool — Sub-agent as Function Call
+The simplest pattern. The main agent calls a `call_agent` tool, spawns a sub-agent, and returns the result as a tool response. Two variants: synchronous (blocking) or asynchronous (returns agent_id).
+- **Use cases**: Research references, code review, test generation
+- **Limitation**: No intermediate follow-ups
 
-### 2. Fan-Out — スポーンして待機
-メインエージェントが複数タスクを発行し、収集タイミングを制御。`spawn_agent`（即時ID返却）と `wait_agent`（ブロッキング）の2ツールで構成。
-- **強み**: サブエージェントの並列実行中にメインエージェントも作業可能
-- **限界**: タイミング設計が重要（即 `wait_agent` すると並列効果が消える）
+### 2. Fan-Out — Spawn and Wait
+The main agent dispatches multiple tasks and controls collection timing. Two tools: `spawn_agent` (immediate ID return) and `wait_agent` (blocking).
+- **Strength**: Main agent can work while sub-agents execute in parallel
+- **Limitation**: Timing design is critical (immediate `wait_agent` nullifies parallelism)
 
-### 3. Agent Pool — 永続的メッセージング
-サブエージェントが長期生存・ステートフル・対話可能。メインは `spawn_agent`, `send_message`, `wait_agent`, `list_agents`, `kill_agent` の豊富なツールセットでコーディネータ役に。
-- **強み**: サブエージェントが会話履歴を保持、フィードバックを受け取って修正可能
-- **用途**: Researcherがデータを探し、Writerがそのデータを使って記事を書くようなマルチステップワークフロー
+### 3. Agent Pool — Persistent Messaging
+Sub-agents are long-lived, stateful, interactive. The main agent acts as coordinator with a rich toolset: `spawn_agent`, `send_message`, `wait_agent`, `list_agents`, `kill_agent`.
+- **Strength**: Sub-agents maintain conversation history, can receive feedback and iterate
+- **Use cases**: Multi-step workflows like Researcher finding data → Writer using data to compose articles
 
-### 4. Teams — エージェント間直接通信
-メインエージェントはハイレベルなスーパーバイザー。チームをセットアップした後は、サブエージェント同士が `send_message` で直接通信。
-- **強み**: メインエージェントのコンテキストをクリーンに保つ
-- **限界**: エージェントループのリスク（AがBを待ち、BがAを待つ）。全ロールにフロンティアモデルが必要
+### 4. Teams — Direct Agent-to-Agent Communication
+The main agent is a high-level supervisor. After setting up the team, sub-agents communicate directly via `send_message`.
+- **Strength**: Keeps main agent context clean
+- **Limitation**: Risk of agent loops (A waiting for B, B waiting for A). All roles require frontier models
 
-| パターン | ツール | メインの役割 | 寿命 |
-|---------|--------|------------|------|
-| Inline Tool | `call_agent` | Caller | 単一タスク |
-| Fan-Out | `spawn`, `wait` | Dispatcher | 単一タスク |
-| Agent Pool | `spawn`, `send`, `wait`, `list`, `kill` | Coordinator | マルチターン |
-| Teams | 全て＋cross-agent `send` | Supervisor | 永続的 |
+| Pattern | Tools | Main Role | Lifespan |
+|---------|--------|----------|----------|
+| Inline Tool | `call_agent` | Caller | Single task |
+| Fan-Out | `spawn`, `wait` | Dispatcher | Single task |
+| Agent Pool | `spawn`, `send`, `wait`, `list`, `kill` | Coordinator | Multi-turn |
+| Teams | All + cross-agent `send` | Supervisor | Persistent |
 
-### 5. Orchestrator-Worker — 並列サブエージェントによるリサーチ (Anthropic, 2025)
+### 5. Orchestrator-Worker — Research via Parallel Sub-agents (Anthropic, 2025)
 
-AnthropicのClaude Researchが採用する実運用パターン（[[concepts/anthropic-multi-agent-research]]参照）。
+A production pattern adopted by Anthropic's Claude Research (see [[concepts/anthropic-multi-agent-research]]).
 
-- **LeadResearcher (Opus 4)**: クエリ分析 → 戦略立案 → Memoryに保存 → サブエージェント並列スポーン
-- **Subagents (Sonnet 4)**: 独立したcontext windowで並列検索、interleaved thinkingで結果評価、圧縮してリードに返送
-- **CitationAgent**: 最終レポートの引用位置特定
+- **LeadResearcher (Opus 4)**: Query analysis → strategy formulation → save to Memory → spawn sub-agents in parallel
+- **Subagents (Sonnet 4)**: Independent context windows, parallel search, interleaved thinking for result evaluation, compressed results returned to lead
+- **CitationAgent**: Locates citation positions in the final report
 
-**主要な知見**:
-- 単一エージェント比 **90.2%の性能向上**（内部評価）
-- Token使用量が性能分散の**80%を説明**
-- **Memory機構**で200k token制限を超えた場合の計画消失を防止
-- Tool-Testing Agent（メタエージェント）によるツール説明の改善で**40%の時間短縮**
-- Agent比4×、chat比15×のトークン消費（高価値タスクでのみ正当化）
+**Key findings**:
+- **90.2% performance improvement** over single agent (internal evaluation)
+- Token usage explains **80%** of performance variance
+- **Memory mechanism** prevents plan loss when exceeding 200k token limit
+- Tool-Testing Agent (meta-agent) improvements to tool descriptions yielded **40% time reduction**
+- Agent consumes 4x vs chat's 15x token consumption (justified only for high-value tasks)
 
-**制約**: エージェント間の依存関係が多いタスク（コーディングなど）には不向き。
+**Limitation**: Unsuitable for tasks with high inter-agent dependency (e.g., coding).
 
-| パターン | ツール | メインの役割 | 寿命 |
-|---------|--------|------------|------|
-| Orchestrator-Worker | `spawn_subagent`, `Memory`, 並列ツール | Orchestrator | マルチターン |
+| Pattern | Tools | Main Role | Lifespan |
+|---------|--------|----------|----------|
+| Orchestrator-Worker | `spawn_subagent`, `Memory`, parallel tools | Orchestrator | Multi-turn |
 
-### 実装ガイドライン
-1. **まずはInline Toolから始める** — ほとんどのマルチエージェント需要は単一タスク呼び出しで十分
-2. **モデル選択**: パターン1・2は小型モデルでも可。パターン3はマルチエージェント状態追跡対応モデルが必要。パターン4は全ロールにフロンティアモデルが必要（GPT-4o, Claude 3.5 Sonnet）
-3. **結果収集**: フレームワークがツールを提供するが、オーケストレーションはモデルが制御する。開発者はモデルが `wait_agent` / `kill_agent` を適切に呼ぶことを保証する必要がある
-4. **将来設計**: 今日4体の連携タスクが明日は1体の高性能モデルで解ける可能性。柔軟に設計する
+### Implementation Guidelines
+1. **Start with Inline Tool** — Most multi-agent needs are served by single-task calls
+2. **Model selection**: Patterns 1-2 work with smaller models. Pattern 3 requires models capable of multi-agent state tracking. Pattern 4 requires frontier models for all roles (GPT-4o, Claude 3.5 Sonnet)
+3. **Result collection**: The framework provides tools, but the model controls orchestration. Developers must ensure the model calls `wait_agent`/`kill_agent` appropriately
+4. **Future-proofing**: Today's 4-agent coordinated task may be solvable by a single high-performance model tomorrow. Design flexibly
 
 Source: [Philipp Schmid — How Agents Manage Other Agents: Four Subagent Patterns in 2026](https://www.philschmid.de/subagent-patterns-2026)
 

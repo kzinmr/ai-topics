@@ -34,32 +34,32 @@ related:
 
 > **Pi is a minimal, open-source terminal coding harness** — ~1K token system prompt, 4 core tools (read/write/edit/bash), and aggressive extensibility via TypeScript extensions, skills, prompt templates, and themes. Created by **Mario Zechner** (libGDX creator) as a radical counterpoint to bloated agent frameworks.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
+| Field | Details |
 |------|------|
-| 開発元 | Mario Zechner / Earendil Inc. |
-| リポジトリ | [badlogic/pi-mono](https://github.com/badlogic/pi-mono) |
-| 言語 | TypeScript (monorepo: 7 packages) |
-| ライセンス | MIT |
+| Developer | Mario Zechner / Earendil Inc. |
+| Repository | [badlogic/pi-mono](https://github.com/badlogic/pi-mono) |
+| Language | TypeScript (monorepo: 7 packages) |
+| License | MIT |
 | GitHub Stars | ~45.5K (May 2026) |
-| 初回リリース | November 2025 |
-| 公式サイト | [pi.dev](https://pi.dev) |
-| ブログ | [mariozechner.at](https://mariozechner.at) |
-| インストール | `npm i -g @mariozechner/pi-coding-agent` |
-| ドメイン寄贈 | exe.dev |
+| Initial Release | November 2025 |
+| Website | [pi.dev](https://pi.dev) |
+| Blog | [mariozechner.at](https://mariozechner.at) |
+| Installation | `npm i -g @mariozechner/pi-coding-agent` |
+| Domain Gift | exe.dev |
 
-## 設計哲学 — Radical Minimalism
+## Design Philosophy — Radical Minimalism
 
 Pi's core thesis: **the developer, not the harness, should control the context window.**
 
-| 特徴 | Pi | Claude Code / OpenCode |
+| Feature | Pi | Claude Code / OpenCode |
 |------|----|----------------------|
 | System prompt + tools | **~1K tokens** | ~10K+ tokens |
-| コアツール | 4つ (read/write/edit/bash) | 10-20+ tools |
-| コンテキスト制御 | ユーザー側 (plan file, todo, docs) | フレームワーク側 |
-| 拡張 | TypeScript SDK + npm packages | ビルトイン機能 |
-| 哲学 | "Make it yours" | "Ship with everything" |
+| Core tools | 4 (read/write/edit/bash) | 10-20+ tools |
+| Context control | User-side (plan file, todo, docs) | Framework-side |
+| Extension | TypeScript SDK + npm packages | Built-in features |
+| Philosophy | "Make it yours" | "Ship with everything" |
 
 > *"Pi is the starter pack, but Claude Code is the endgame... wait no, it's the opposite — Claude Code is the starter pack, but Pi is the endgame."* — AgenticEngineer
 
@@ -162,13 +162,13 @@ See [[comparisons/open-harness-vs-agent-framework]] §9 for the full runtime-cen
 
 ## Agents Built for Agents Building Agents
 
-Armin Ronacher（[[entities/armin-ronacher|Flask作者]]、Pi の主要推進者）による Pi の核心哲学（[2026年1月](https://lucumr.pocoo.org/2026/1/31/pi/)）：
+Pi's core philosophy by Armin Ronacher ([[entities/armin-ronacher|Flask author]], Pi's primary advocate) ([January 2026](https://lucumr.pocoo.org/2026/1/31/pi/)):
 
 > *"Agents Built for Agents Building Agents — software that is malleable like clay. The agent maintains its own functionality."*
 
-### Session Trees（セッションツリー）
+### Session Trees
 
-Pi のセッションはツリー構造を持ち、ブランチ作成とナビゲーションが可能：
+Pi sessions have a tree structure, supporting branch creation and navigation:
 
 ```
 Main session
@@ -177,77 +177,77 @@ Main session
   └── Branch: code review (fresh context)
 ```
 
-- サイドクエストのためにメインのコンテキストを**浪費しない**
-- ブランチから戻ると Pi が変更を要約
-- Armin の `/review` 拡張はこの仕組みで実装 — ブランチでコードレビュー → 結果をメインに持ち帰る
+- **Does not waste** main context for side quests
+- Pi summarizes changes when returning from a branch
+- Armin's `/review` extension is built on this mechanism — code review in branch → results brought back to main
 
-### Extension State Persistence（拡張状態の永続化）
+### Extension State Persistence
 
-Pi の AI SDK はモデルメッセージに加えて**カスタムメッセージ**をセッションファイルに保持。拡張機能が状態を永続化でき、複数プロバイダ間のセッション可搬性も維持される。
+Pi's AI SDK stores **custom messages** in session files alongside model messages. This allows extensions to persist state while maintaining session portability across providers.
 
 ### No MCP — By Philosophy
 
-MCP 非搭載は意図的。Pi の哲学は「エージェントに自分自身を拡張させる」こと：
+MCP is intentionally absent. Pi's philosophy is "let the agent extend itself":
 
 > *"If you want the agent to do something that it doesn't do yet, you don't download an extension. You ask the agent to extend itself."*
 
 ### Software Building Software — Lived Experience
 
-Armin の全 Pi 拡張（ブラウザ自動化、コードレビュー、TODO管理、コミット整形）は**エージェント自身が作成**：
+All of Armin's Pi extensions (browser automation, code review, TODO management, commit formatting) were **created by the agent itself**:
 
 > *"None of this was written by me, it was created by the agent to my specifications. I told Pi to make an extension and it did."*
 
-ワークショップでの Hugo+Ivan の Pure Python 再構築（[[concepts/agents-that-build-themselves]]）は、この Pi 哲学をコードで実証した形。Pi は [[concepts/self-evolving-agents]] の Level 5（Self-Modification）の最も成熟した実装例でもある。
+The Hugo+Ivan Pure Python reconstruction at the workshop ([[concepts/agents-that-build-themselves]]) demonstrates this Pi philosophy in code. Pi is also the most mature implementation of [[concepts/self-evolving-agents]] Level 5 (Self-Modification).
 
-## Earendil による買収（2026年4月）
+## Earendil Acquisition (April 2026)
 
-2026年4月8日、**Earendil Inc.**（[[armin-ronacher|Armin Ronacher]] と Colin Daymond Hanna が2025年に設立した Public Benefit Corporation）が Pi を買収。Mario Zechner は Earendil の主要株主兼チームメンバーとして参加。「pi.dev は pi のホームであり続け、Earendil のロゴが追加されるだけ。pi は MIT ライセンスのままで、フォークボタンは常に機能する」と Mario は表明した。
+On April 8, 2026, **Earendil Inc.** (a Public Benefit Corporation founded in 2025 by [[armin-ronacher|Armin Ronacher]] and Colin Daymond Hanna) acquired Pi. Mario Zechner joined as a major shareholder and team member. Mario stated: "pi.dev will remain pi's home, with just the Earendil logo added. pi stays under MIT license, and the fork button will always work."
 
-リポジトリは `badlogic/pi-mono` から `earendil-works/pi` へ移行。npm パッケージも `@mariozechner/pi-coding-agent` から `@earendil-works/pi-coding-agent` へ変更された。
+The repository moved from `badlogic/pi-mono` to `earendil-works/pi`. The npm package also changed from `@mariozechner/pi-coding-agent` to `@earendil-works/pi-coding-agent`.
 
-## ライセンスモデル
+## License Model
 
-Pi は3層ライセンスモデルを採用：
+Pi uses a three-tier license model:
 
-1. **MIT（コア）** — コアエージェント。MIT、永久。交渉不可。
-2. **Fair Source（付加価値機能）** — 将来の商用機能は Fair Source ライセンス。無料利用可、ソース公開。Delayed Open Source Publication（DOSP）により一定期間後に完全オープンソース化。
-3. **Proprietary（エンタープライズ）** — エンタープライズ向け機能とクラウドインフラ。非公開ソース。
+1. **MIT (Core)** — Core agent. MIT, perpetual. Non-negotiable.
+2. **Fair Source (Value-add features)** — Future commercial features under Fair Source license. Free to use, source available. Delayed Open Source Publication (DOSP) makes them fully open source after a set period.
+3. **Proprietary (Enterprise)** — Enterprise features and cloud infrastructure. Closed source.
 
-## `.pi` フォルダによる開発ワークフロー
+## Development Workflow via `.pi` Folder
 
-Pi チームは Pi 自身を使って Pi を開発している。その開発ワークフローは `.pi` フォルダにコミットされており、3つの要素からなる：
+The Pi team uses Pi itself to develop Pi. Their development workflow is committed to the `.pi` folder and consists of three elements:
 
-### `/is` — Issue 分析
-GitHub Issue をラベル付け・アサインし、スレッド全体とリンクを読み込み、エージェントに対して以下の指示を与える：
+### `/is` — Issue Analysis
+Labels and assigns GitHub Issues, loads the entire thread and links, then gives the agent the following instruction:
 
 > *"Do not trust analysis written in the issue. Independently verify behavior and derive your own analysis from the code and execution path."*
 
-### `prompt-url-widget` 拡張
-`/is` がプロンプトに配置した GitHub URL を検出し、`gh` で Issue タイトルと作成者を取得。UI ウィジェットとして表示し、セッション名を変更。セッション再開時にも状態を再構築するため、開発者は常にどの Issue に取り組んでいるか把握できる。
+### `prompt-url-widget` Extension
+`/is` detects GitHub URLs placed in the prompt, fetches the issue title and author via `gh`. Displays as a UI widget and renames the session. State is reconstructed on session resume, so developers always know which issue they are working on.
 
-### `/wr` — ラップアップ
-GitHub コンテキストを推測し、CHANGELOG を更新、最終コメントを下書き/投稿し、そのセッションで変更されたファイルのみをコミット、`closes #...` を付与し、`main` からプッシュ。
+### `/wr` — Wrap-Up
+Infers GitHub context、updates CHANGELOG, drafts/posts a final comment, commits only the files changed in that session, appends `closes #...`, and pushes from `main`.
 
-この仕組みにより、**複数の Pi ウィンドウを並行して開き**、それぞれ異なる Issue を調査し、UI が調査を視覚的に区別。調査完了後に逐次的に処理する「慎重な並列処理」が可能になる。
+This enables **multiple Pi windows open in parallel**, each investigating different issues, with the UI visually distinguishing investigations. This allows "careful parallelism" — investigation in parallel, sequential processing after completion.
 
-## Issue トラッカーのボリューム問題
+## Issue Tracker Volume Problem
 
-Pi の Issue トラッカーは、新規コントリビューターからの全 Issue/PR を自動クローズするポリシーを採用している。2026年初頭の90日間の統計（Earendil メンバーを除く）：
+Pi's issue tracker employs a policy of auto-closing all Issues/PRs from new contributors. 90-day statistics from early 2026 (excluding Earendil members):
 
-| 指標 | 数値 | 割合 |
+| Metric | Count | Percentage |
 |------|------|------|
-| 外部 Issue + PR | 3,145 | 100% |
-| 自動クローズ | 2,504 | ~80% |
-| 再オープン | — | 17% |
-| PR マージ | — | <10% |
+| External Issues + PRs | 3,145 | 100% |
+| Auto-closed | 2,504 | ~80% |
+| Reopened | — | 17% |
+| PRs Merged | — | <10% |
 
-低品質スパムのソースには OpenClaw インスタンスや、Issue 作成を促すカスタムスキルが含まれる。これは LLM 生成の「slop issues」問題の一部であり、詳細は [[concepts/ai-generated-issues-in-oss|AI-Generated Issues in Open Source]] を参照。
+Sources of low-quality spam include OpenClaw instances and custom skills that prompt issue creation. This is part of the LLM-generated "slop issues" problem; see [[concepts/ai-generated-issues-in-oss|AI-Generated Issues in Open Source]] for details.
 
 > *"If your clanker shits on someone else's issue tracker then it's not the fault of GitHub, it's yours alone."* — Armin Ronacher
 
-## 最新情報（2026年5月）
+## Latest (May 2026)
 
-- **GitHub Stars**: ~54,000 (2026年5月)
-- **コントリビューター**: 210+
-- **最新リリース**: v0.75.5 (2026-05-23)
-- **リポジトリ**: [earendil-works/pi](https://github.com/earendil-works/pi)
+- **GitHub Stars**: ~54,000 (May 2026)
+- **Contributors**: 210+
+- **Latest Release**: v0.75.5 (2026-05-23)
+- **Repository**: [earendil-works/pi](https://github.com/earendil-works/pi)
