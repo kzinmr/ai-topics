@@ -12,6 +12,32 @@
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
 
+## [2026-05-26] dreaming-wiki-ingest | Nightly knowledge consolidation — agent infrastructure & evaluation architecture
+
+### Pages Created
+- [[concepts/macro-evals-agentic-systems]] — OpenAI × Slalom macro evaluation framework: BERTopic clustering of agent events, four-label taxonomy, Promptfoo rubrics
+
+### Pages Updated
+- [[concepts/nvidia-ai-q]] — Added middleware & reliability section (tool sanitization, reasoning-aware retry), cross-references
+- [[concepts/agent-executor]] — Added cross-references to sandbox-patterns and nvidia-ai-q
+- [[concepts/agent-sandbox-patterns]] — Added Google Agent Sandbox GA section (300/sec provisioning, 16× growth) and Agent Substrate open-source project
+- [[concepts/ai-code-quality]] — Full rewrite from stub: Nolan Lawson quality-first approach, multi-model PR review, slop cannon debate
+- [[concepts/agent-orchestration]] — Added DeepMind Antigravity IDE/Darwinian skills library section and Google's new agent infrastructure stack
+- [[entities/deepmind]] — Added Agents at Scale panel: Antigravity IDE, token quotas, skills library, model mixing (Gemma 4 + advanced)
+- [[entities/nolan-lawson]] — Added AI coding quality section: multi-agent review skill, slow workflow, near-zero false positives
+
+### Reference Updates (minor)- [[concepts/heterogeneous-intelligence]] — Updated description with Callosum's three evolutionary phases
+
+### Sources Consumed
+- `raw/articles/2026-05-26_nvidia-ai-q-deep-research.md`
+- `raw/articles/2026-05-20_google-agent-executor.md`
+- `raw/articles/2026-05-20_google-agent-substrate-gke.md`
+- `raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md`
+- `raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md`
+- `raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md`
+
+---
+
 ## [2026-05-26] translate | JP→EN batch — 8 files (7,503 JP chars)
 
 ### Files Translated

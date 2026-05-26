@@ -12,6 +12,7 @@ tags:
   - ai-agents
   - tool
 sources:
+  - raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
   - https://deepmind.google/blog/ai-pointer/
 ---
@@ -30,6 +31,34 @@ sources:
 ## Overview
 
 Google DeepMind is Alphabet's central AI research laboratory, formed in 2023 by merging the original DeepMind (founded 2010 by Demis Hassabis, Shane Legg, and Mustafa Suleyman) with Google Brain. It is one of the world's most influential AI research organizations, responsible for landmark achievements in reinforcement learning (AlphaGo, AlphaZero), protein folding (AlphaFold, 2024 Nobel Prize in Chemistry), and large language models (Gemini family).
+
+## Agents at Scale (May 2026)
+
+On May 24, 2026, DeepMind engineers Ian Ballantyne and KP Sawhney presented a panel at the AI Engineer Conference on how Google DeepMind runs agents internally.
+
+### Antigravity IDE & Agent Manager
+DeepMind uses **Antigravity**, an internal IDE (Visual Studio–like) with a built-in agent manager. Users can spawn multiple agents on different projects, each with their own planning system, to-do lists, and browser interaction capability. A scratch pad reveals the agent's reasoning trace for debugging and intervention.
+
+### Token Quotas & Resource Control
+- DeepMind employees have **lower token quotas than paying customers** — by design
+- SRE teams monitor clusters 24/7; if an internal team spikes usage, they get a call to stop
+- Quota management described as "brute force"
+
+### Skills Libraries
+- Large library of skills built by domain experts
+- **Darwinian selection**: "making sure that only the best ones survive"
+
+### Deep Research Pipeline Evolution
+Moving from passing massive context blobs toward **shared file system collaboration** between pipeline components.
+
+### Model Mixing
+Combining cheap models like [[concepts/gemma-4|Gemma 4]] ("effectively free from a quota perspective") with advanced models for critical components.
+
+### Code Review Automation
+Per-language auto-review models fine-tuned on style guides and good code examples.
+
+**Source:** AI Engineer Conference panel — [YouTube](https://www.youtube.com/watch?v=7gujZrJ9L5I)
+
 
 ## AI Pointer / Magic Pointer (May 2026)
 

@@ -55,3 +55,5 @@ A companion open-source project built with the GKE team. Introduces a new **agen
 - [[concepts/durable-execution]] — durable execution pattern
 - [[concepts/sandbox]] — sandbox isolation
 - [[events/google-io-2026]] — Google I/O 2026 event
+- [[concepts/agent-sandbox-patterns]] — Sandboxing and scheduling patterns (Agent Substrate GA)
+- [[concepts/nvidia-ai-q]] — NVIDIA's competing deep research agent architecture

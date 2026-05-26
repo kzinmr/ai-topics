@@ -2,7 +2,7 @@
 title: "Agent Sandboxing Patterns: Architectural Approaches for Isolated Agent Execution"
 type: concept
 created: 2026-04-30
-updated: 2026-05-24
+updated: 2026-05-26
 tags:
   - concept
   - ai-agents
@@ -11,6 +11,11 @@ tags:
   - security
 status: active
 sources:
+  - raw/articles/2026-05-20_google-agent-substrate-gke.md
+  - https://cloud.google.com/blog/products/containers-kubernetes/bringing-you-agent-sandbox-on-gke-and-agent-substrate
+  - https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime
+  - url: "https://browser-use.com/posts/two-ways-to-sandbox-agents"
+    title: "How We Built Secure, Scalable Agent Sandbox Infrastructure"
   - url: "https://browser-use.com/posts/two-ways-to-sandbox-agents"
     title: "How We Built Secure, Scalable Agent Sandbox Infrastructure"
 ---
