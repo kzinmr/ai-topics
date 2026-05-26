@@ -6,7 +6,7 @@ aliases:
   - coding-agent-architecture
   - agent-internals
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-26
 tags:
   - concept
   - agentic-engineering
@@ -18,87 +18,88 @@ sources:
 
 # How Coding Agents Work
 
-コーディングエージェントの内部仕組みを理解するための概念モデル。Simon Willisonの[Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/how-agents-work/)で詳述。
+A conceptual model for understanding the inner workings of coding agents. Detailed in Simon Willison's [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/how-agents-work/).
 
-## 構成要素
+## Building Blocks
 
 ### 1. Large Language Models
-- ベースとなるLLM（Claude Opus 4.6、GPT-4など）
-- コード生成・理解・推論の中核エンジン
+- Base LLM (Claude Opus 4.6, GPT-4, etc.)
+- Core engine for code generation, understanding, and reasoning
 
 ### 2. Chat Templated Prompts
-- システムプロンプト、ユーザーメッセージ、アシスタント応答の構造化
-- 会話履歴をテンプレート化してモデルに投入
+- Structured system prompts, user messages, and assistant responses
+- Conversation history is templatized and fed into the model
 
 ### 3. Token Caching
-- 繰り返し使用するプロンプト部分のキャッシュ
-- コスト削減と応答速度向上
+- Caching of frequently used prompt segments
+- Cost reduction and response speed improvement
 
 ### 4. Calling Tools
-- エージェントが外部ツール（ファイルシステム、シェル、ブラウザなど）を呼び出す機能
-- コード実行、テスト、デバッグの自動化
+- Ability for the agent to call external tools (filesystem, shell, browser, etc.)
+- Automation of code execution, testing, and debugging
 
 ### 5. The System Prompt
-- エージェントの振る舞いを定義するメタ指示
-- プロジェクト固有の制約やコーディング規約を含む
+- Meta-instructions defining the agent's behavior
+- Includes project-specific constraints and coding conventions
 
 ### 6. Reasoning
-- モデルの内部推論プロセス
-- Chain-of-thoughtやstep-by-step思考の顕在化
+- The model's internal reasoning process
+- Manifestation of chain-of-thought and step-by-step thinking
 
 ### 7. LLM + System Prompt + Tools in a Loop
-- これらすべてが統合されたエージェントループ
-- 生成→実行→検証→修正のサイクル
+- The integrated agent loop combining all of the above
+- Generate → Execute → Verify → Fix cycle
 
-## なぜ理解が必要か
+## Why Understanding Matters
 
-コーディングエージェントを効果的に使用するには、その内部仕組みを理解することが不可欠。特に：
-- **デバッグ**: エージェントがなぜ特定のエラーを出力するかを理解
-- **プロンプト設計**: エージェントの能力と制限に合わせた指示作成
-- **コスト管理**: トークン使用量とキャッシングの最適化
-- **セキュリティ**: エージェントのファイルシステムアクセスと外部通信の制御
+Understanding the inner workings of coding agents is essential for effective use. Specifically:
+
+- **Debugging**: Understanding why the agent produces specific errors
+- **Prompt Design**: Creating instructions aligned with the agent's capabilities and limitations
+- **Cost Management**: Optimizing token usage and caching
+- **Security**: Controlling the agent's filesystem access and external communication
 
 ## Plan Mode vs Conversational Planning
 
 > *"Plan mode feels like a hack that was necessary for older generations of models that were not great at adhering to prompts... Instead of 'plan mode', I simply start a conversation with the model, ask a question, let it google, explore code, create a plan together, and when I'm happy with what I see, I write 'build'."*
 > — Peter Steinberger
 
-従来の「Plan Mode」（事前に計画を立ててから実行）は、モデルの指示遵守能力が低かった時代のハック。最新のモデルでは**会話形式で計画を作り、"build"と書くだけで実行に移れる**。
+Traditional "Plan Mode" (pre-planning before execution) was a hack from the era when models had poor instruction-following capabilities. With modern models, you can **create plans conversationally and move to execution simply by writing "build"**.
 
-### 会話的計画の利点
-- モデルがコードを探索しながら計画を立てる → 精度向上
-- 人間のフィードバックをリアルタイムで反映できる
-- 計画モードのオーバーヘッドが不要
+### Benefits of Conversational Planning
+- Models explore code while planning → improved accuracy
+- Human feedback can be incorporated in real-time
+- No overhead from plan mode
 
-## Claude CodeのTask Toolアーキテクチャ
+## Claude Code's Task Tool Architecture
 
-SankalpによるClaude Code 2.0の分析から、サブエージェントの構造が明らかになっている：
+Sankalp's analysis of Claude Code 2.0 reveals the sub-agent structure:
 
-### サブエージェントの種類
+### Sub-agent Types
 
-| 種類 | コンテキスト | 用途 |
-|------|------------|------|
-| `general-purpose` | 全コンテキスト継承 | 一般的なタスク委任 |
-| `plan` | 全コンテキスト継承 | 計画作成 |
-| `Explore` | 新規セッション | ファイル検索・コードリーディング（読取専用） |
+| Type | Context | Use Case |
+|------|---------|----------|
+| `general-purpose` | Full context inheritance | General task delegation |
+| `plan` | Full context inheritance | Plan creation |
+| `Explore` | New session | File search, code reading (read-only) |
 
-### Task Toolの重要パラメータ
+### Task Tool Key Parameters
 
 ```json
 {
   "required": ["description", "prompt", "subagent_type"],
   "properties": {
-    "description": "3-5語のタスク概要",
-    "prompt": "タスク指示",
+    "description": "3-5 word task summary",
+    "prompt": "Task instructions",
     "subagent_type": "general-purpose | Explore | Plan",
-    "model": "sonnet | opus | haiku (親エージェントと同じモデルがデフォルト)",
-    "run_in_background": "長時間スクリプト用にtrue",
-    "resume": "以前のセッションから再開するエージェントID"
+    "model": "sonnet | opus | haiku (default: same as parent agent)",
+    "run_in_background": "true for long-running scripts",
+    "resume": "Agent ID to resume from a previous session"
   }
 }
 ```
 
-### Exploreエージェントの制約
+### Explore Agent Constraints
 
 ```markdown
 === CRITICAL: READ-ONLY MODE - NO FILE MODIFICATIONS ===
@@ -107,20 +108,22 @@ USE: GLOB, GREP, READ tools only
 BASH: ONLY for read-only ops (ls, git status, cat, find). NEVER mkdir, rm, npm install, etc.
 ```
 
-Exploreエージェントは**読取専用**で設計されており、ファイル変更は一切できない。これにより、探索中にコードベースを壊すリスクを排除している。
+The Explore agent is designed as **read-only**, with no ability to modify files. This eliminates the risk of breaking the codebase during exploration.
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agentic-engineering]] — 上位概念
-- [[concepts/subagents]] — エージェントの階層化
-- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — バージョン管理統合
-- [[concepts/context-window-management]] — Task Toolはコンテキストを分割する
-- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — エージェントのツール呼び出しパターン
+- [[concepts/agentic-engineering]] — Parent concept
+- [[concepts/subagents]] — Agent hierarchy
+- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Version control integration
+- [[concepts/context-window-management]] — Task Tool splits context
+- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — Agent tool calling patterns
 
-## 参照
+## References
 
-- [[entities/simon-willison]] — How Coding Agents Work概念提唱者
-- [[entities/sankalp-sinha]] — Claude Code 2.0 Task Tool分析
--  — Plan Mode不要論- [Agentic Engineering Patterns — How Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-agents-work/)
+- [[entities/simon-willison]] — How Coding Agents Work concept originator
+- [[entities/sankalp-sinha]] — Claude Code 2.0 Task Tool analysis
+- Peter Steinberger — Plan Mode unnecessary
+- [Agentic Engineering Patterns — How Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-agents-work/)
 - [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)
 - [Shipping at Inference-Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)
+

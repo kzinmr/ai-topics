@@ -19,21 +19,21 @@ sources:
 
 # Meta-Meta-Prompting
 
-**Meta-Meta-Prompting** とは、Garry Tan（YC CEO）が提唱する AI agent 設計哲学。AI に直接 prompt を書くのではなく、AI が自分自身に prompt を書けるような **skill system** と **knowledge graph** を構築し、システム全体が複利的に成長していくアプローチ。
+**Meta-Meta-Prompting** is an AI agent design philosophy proposed by Garry Tan (YC CEO). Rather than writing prompts directly to AI, it is an approach to build a **skill system** and **knowledge graph** that allows the AI to write its own prompts, enabling the entire system to grow compoundingly.
 
-> 「今はほとんど AI に prompt を書かない。本当に重要なのは skill system だ」 — Garry Tan
+> "I hardly write prompts to AI anymore. What really matters is the skill system." — Garry Tan
 
-## なぜ「Meta-Meta」か
+## Why "Meta-Meta"?
 
-1. **Level 1: Prompt** — 人間が AI に指示を書く
-2. **Level 2: Meta-Prompt** — AI が自分への prompt を生成する（system prompt, chain-of-thought など）
-3. **Level 3: Meta-Meta-Prompt** — AI が「いつ・どの skill を使うか」「どのモデルにルーティングするか」「結果を knowledge base のどこに統合するか」を自律的に決定する
+1. **Level 1: Prompt** — Humans write instructions for AI
+2. **Level 2: Meta-Prompt** — AI generates its own prompts (system prompts, chain-of-thought, etc.)
+3. **Level 3: Meta-Meta-Prompt** — AI autonomously decides 'when and which skill to use', 'which model to route to', and 'where to integrate results in the knowledge base'
 
-Level 3 では、人間はもはや個別の prompt を書かない。代わりに、再利用可能な skill を構築し、AI がそれらを組み合わせて自律的に実行する。
+At Level 3, humans no longer write individual prompts. Instead, they build reusable skills that the AI autonomously combines and executes.
 
 ## Fat Skills, Fat Code, Thin Harness
 
-Meta-Meta-Prompting を実現するアーキテクチャパターン：
+Architecture pattern for realizing Meta-Meta-Prompting:
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -53,98 +53,99 @@ Meta-Meta-Prompting を実現するアーキテクチャパターン：
 │         ▼            ▼            ▼              │
 │  ┌─────────────────────────────────────────┐    │
 │  │            Fat Code / Knowledge           │    │
-│  │    (10万ページ structured knowledge base)   │    │
+│  │    (100K pages structured knowledge base)   │    │
 │  └─────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────┘
 ```
 
-| 層 | 役割 | 特徴 |
+| Layer | Role | Features |
 |----|------|------|
-| **Thin Harness** | ルーティング・オーケストレーション | 軽量、交換可能、汎用的 |
-| **Fat Skills** | 再利用可能なワークフローモジュール | 独立してテスト可能、組み合わせ可能、蓄積する |
-| **Fat Code** | 知識・データ・ロジックの集積 | 人物・会社・会議・書籍・記事ごとの構造化ページ |
+| **Thin Harness** | Routing & orchestration | Lightweight, swappable, general-purpose |
+| **Fat Skills** | Reusable workflow modules | Independently testable, composable, accumulates |
+| **Fat Code** | Accumulated knowledge, data, and logic | Structured pages per person, company, meeting, book, article |
 
-### Thin Harness の原則
+### Thin Harness Principles
 
-- Harness は「どのモデルを使うか」「どの skill を呼ぶか」のルーティングのみを担当
-- ビジネスロジックや知識は持たない
-- 交換可能（Claude Code → Hermes Agent → OpenClaw と移行しても Fat Skills は生き残る）
+- The harness is only responsible for routing 'which model to use' and 'which skill to call'
+- It does not hold business logic or knowledge
+- Swappable (Fat Skills survive transitions from Claude Code to Hermes Agent to OpenClaw)
 
-### Fat Skills の原則
+### Fat Skills Principles
 
-- 各 skill は**独立してテスト可能**
-- skill 同士は**組み合わせ可能**（meeting-ingestion → enrich → investor-update-ingest）
-- 一度作った skill は**永続的に蓄積**する
-- **Skillify** — 繰り返しパターンを発見したら自動的に skill 化する meta-skill
+- Each skill is **independently testable**
+- Skills are **composable** (meeting-ingestion → enrich → investor-update-ingest)
+- Once created, skills **accumulate permanently**
+- **Skillify** — A meta-skill that auto-converts recurring patterns into skills
 
-## 複利効果（Compound Effect）
+## Compound Effect
 
-Meta-Meta-Prompting の最大の価値は**複利性**にある：
+The greatest value of Meta-Meta-Prompting lies in its **compounding nature**:
 
 ```
-Week 1:  5 skills,  1,000 pages → 基本的な会議サマリー
-Week 4:  20 skills, 5,000 pages → 人物間の関係性を理解し始める
-Week 12: 60 skills, 30,000 pages → 過去の会議と新しい書籍を横断的に接続
-Week 24: 100+ skills, 100,000 pages → Book Mirror のような高度な合成が可能に
+Week 1:  5 skills,  1,000 pages → Basic meeting summaries
+Week 4:  20 skills, 5,000 pages → Begins understanding relationships between people
+Week 12: 60 skills, 30,000 pages → Cross-connects past meetings with new books
+Week 24: 100+ skills, 100,000 pages → Enables advanced synthesis like Book Mirror
 ```
 
-- 各書籍、各会議、各 skill 改善が**減衰せず蓄積**する
-- ナレッジベースは「ファイルキャビネット」（静的ストレージ）ではなく「神経システム」（動的接続・更新・推論）として機能
-- **時間とともにシステム全体が賢くなる**唯一の AI アーキテクチャ
+- Every book, every meeting, and every skill improvement **accumulates without decay**
+- The knowledge base functions as a 'neural system' (dynamic connections, updates, reasoning) rather than a 'file cabinet' (static storage)
+- The only AI architecture where **the entire system gets smarter over time**
 
-## 実装パターン
+## Implementation Patterns
 
-### 1. Knowledge Graph の自動更新
+### 1. Automatic Knowledge Graph Updates
 
 ```yaml
-会議終了後:
-  - transcript 生成
-  - サマリー作成
-  - 人物ページ更新（参加者の最新の発言・関心を反映）
-  - 会社ページ更新
-  - タイムライン更新
-  - open threads 更新
-  - relationship context 更新
+After meeting:
+  - Generate transcript
+  - Create summary
+  - Update person pages (reflect latest statements and interests)
+  - Update company pages
+  - Update timeline
+  - Update open threads
+  - Update relationship context
 ```
 
-### 2. マルチモデルルーティング
+### 2. Multi-Model Routing
 
-| タスク種別 | モデル | 理由 |
+| Task Type | Model | Reason |
 |-----------|--------|------|
-| 精密作業 | Claude Opus 4.7 | 正確性重視 |
-| 想起・抽出 | GPT-5.5 | 検索・要約性能 |
-| 創造的作業 | DeepSeek V4-Pro | 発散的思考 |
-| 高速推論 | Groq + Llama | レイテンシ最小化 |
-| ルーティング判断 | OpenClaw / Hermes Agent | Harness 層 |
+| Precision work | Claude Opus 4.7 | Accuracy first |
+| Recall & extraction | GPT-5.5 | Search & summarization |
+| Creative work | DeepSeek V4-Pro | Divergent thinking |
+| Fast inference | Groq + Llama | Latency minimization |
+| Routing decisions | OpenClaw / Hermes Agent | Harness layer |
 
-### 3. Skillify — 自動スキル化
+### 3. Skillify — Auto-Skill Creation
 
 ```
-人間: "skillify this"
-システム:
-  1. 直近の操作パターンを分析
-  2. 再利用可能なワークフローを抽出
-  3. skill file を生成
-  4. resolver routing system に登録
-  5. 以降の全ワークフローで利用可能に
+Human: "skillify this"
+System:
+  1. Analyze recent operation patterns
+  2. Extract reusable workflow
+  3. Generate skill file
+  4. Register in resolver routing system
+  5. Make available for all future workflows
 ```
 
-## Hermes Agent との対応関係
+## Correspondence with Hermes Agent
 
-Garry Tan のアーキテクチャは Hermes Agent の設計と深く対応する：
+Garry Tan's architecture deeply corresponds to Hermes Agent's design:
 
 | Meta-Meta-Prompting | Hermes Agent |
 |---------------------|--------------|
-| Thin Harness | Hermes Agent コアランタイム |
-| Fat Skills | スキルシステム（`skill_manage`） |
-| Skillify | スキル自動生成（`skill_manage(action='create')`） |
-| Knowledge Graph | wiki（構造化ナレッジベース） |
-| Multi-model routing | マルチプロバイダ対応 |
-| 100+ skills | 利用可能な全スキル群 |
-| ~100K pages | wiki エンティティ・コンセプトページ |
+| Thin Harness | Hermes Agent core runtime |
+| Fat Skills | Skill system (`skill_manage`) |
+| Skillify | Auto skill generation (`skill_manage(action='create')`) |
+| Knowledge Graph | wiki (structured knowledge base) |
+| Multi-model routing | Multi-provider support |
+| 100+ skills | All available skills |
+| ~100K pages | wiki entity and concept pages |
 
-## 参考文献
+## References
 
 - Garry Tan. "Meta-Meta-Prompting: The Secret to Making AI Agents Work" (2026-05-09). X Article. [[raw/articles/2026-05-09_garrytan_meta-meta-prompting]]
 - Garry Tan. "Fat Skills, Fat Code, Thin Harness" (preceding article in series). [[entities/garry-tan]]
 - YC Lightcone Podcast. "Tokenmaxxing: How Top Builders Use AI To Do The Work Of 400 Engineers" (2026-05-08)
+

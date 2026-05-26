@@ -12,6 +12,26 @@
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
 
+## [2026-05-26] translate | JP→EN batch — 8 files (7,503 JP chars)
+
+### Files Translated
+- [[concepts/cognitive-load-software-development.md]] — 956 chars → 0
+- [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]] — 950 chars → 0
+- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling.md]] — 940 chars → 0
+- [[concepts/harness-engineering/agentic-workflows/context-window-management.md]] — 939 chars → 0
+- [[concepts/meta-meta-prompting.md]] — 935 chars → 0
+- [[concepts/harness-engineering/agentic-workflows/how-agents-work.md]] — 931 chars → 0
+- [[entities/claude-perfect-memory.md]] — 929 chars → 0
+- [[concepts/tenant-agent-pack.md]] — 923 chars → 0
+
+### Stats
+- Total JP chars removed: 7,503
+- Remaining JP content files: 240
+- Remaining JP chars: 97,878
+
+
+---
+
 ## [2026-05-26] health-fix | Added 19 orphan concept pages to index.md
 
 ### Pages Added

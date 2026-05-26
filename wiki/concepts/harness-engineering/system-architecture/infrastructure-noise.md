@@ -6,7 +6,7 @@ aliases:
   - agentic-eval-noise
   - benchmark-infrastructure
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-26
 tags:
   - concept
   - architecture
@@ -20,70 +20,71 @@ sources:
 
 # Quantifying Infrastructure Noise in Agentic Coding Evals
 
-エージェント型コーディングベンチマークにおいて、インフラ設定のみがスコアに与える影響を定量化した調査。
+A study quantifying the impact of infrastructure configuration alone on agentic coding benchmark scores.
 
-## 核心洞察
+## Core Insight
 
 > "Infrastructure configuration alone can swing agentic coding benchmark scores by up to 6 percentage points—often exceeding the narrow margins separating top models on public leaderboards."
 
 > "An agent that writes lean, efficient code very fast will do well under tight constraints. An agent that brute-forces solutions with heavyweight tools will do well under generous ones. Both are legitimate things to test, but collapsing them into a single score without specifying the configuration makes the differences—and real-world generalizability—hard to interpret."
 
-**インフラ設定だけでベンチマークスコアが最大6ポイント変動。これは主要モデル間の差を超える。**
+**Infrastructure configuration alone can swing benchmark scores by up to 6 points — exceeding the margin between top models.**
 
-## 実験結果
+## Experimental Results
 
-### Terminal-Bench 2.0（6設定: `1x`厳格 → アンキャップド）
+### Terminal-Bench 2.0 (6 settings: `1x` strict → uncapped)
 
-| メトリクス | 1x | 3x | uncapped |
+| Metric | 1x | 3x | uncapped |
 |-----------|-----|-----|----------|
-| インフラエラー率 | 5.8% | 2.1% | 0.5% |
-| 成功率変動 | - | p=0.40（有意差なし） | +6pp (p<0.01) |
+| Infra error rate | 5.8% | 2.1% | 0.5% |
+| Success rate change | - | p=0.40 (not significant) | +6pp (p<0.01) |
 
-- `1x → 3x`: 一過性のOOMキルを吸収するだけで、タスクを容易にはしない
-- `3x → uncapped`: 成功率が約4ppジャンプ。インフラエラーは1.6ppのみ減少。**インフラが新しい解決経路を可能にする**
+- `1x → 3x`: Merely absorbs transient OOM kills without making tasks easier
+- `3x → uncapped`: Success rate jumps ~4pp. Infra errors drop only 1.6pp. **Infrastructure enables new solution pathways**
 
-### SWE-bench Crossover（RAM最大`5x`ベースライン）
+### SWE-bench Crossover (RAM up to `5x` baseline)
 
-- 同じ単調増加だが、規模は小さい: **`1x`に対して`5x`で+1.54pp**
-- SWE-benchタスクは一般的にリソース集約度が低いため、期待される結果
+- Same monotonic increase, but smaller magnitude: **`5x` yields +1.54pp over `1x`**
+- Expected, since SWE-bench tasks are generally less resource-intensive
 
-## インフラが測定を変える方法
+## How Infrastructure Changes What Is Measured
 
-| リソースバンド | 評価への影響 | 測定しているもの |
+| Resource Band | Impact on Evaluation | What Is Being Measured |
 |:---|:---|:---|
-| **≤ `3x` ヘッドルーム** | インフラ信頼性を修正（一過性のスパイク） | スコアを人工的に inflated せずに評価を安定化 |
-| **> `3x` ヘッドルーム** | 新しい解決経路を積極的に可能にする | 寛容なリソースを活用するエージェントに報酬 |
+| **≤ `3x` headroom** | Fixes infra reliability (transient spikes) | Stabilizes eval without artificially inflating scores |
+| **> `3x` headroom** | Actively enables new solution pathways | Rewards agents that exploit generous resources |
 
-### 戦略バイアスの例（`bn-fit-modify`）
-- **寛容な制限**: エージェントが`pandas`、`networkx`、`scikit-learn`をインストール → 成功
-- **厳しい制限**: ポッドがインストール中にOOM。軽量な戦略（標準ライブラリ数学実装）のみ成功
+### Strategy Bias Example (`bn-fit-modify`)
+- **Generous limits**: Agent installs `pandas`, `networkx`, `scikit-learn` → success
+- **Tight limits**: Pod OOMs during installation. Only lightweight strategies (stdlib math) succeed
 
-> 異なるモデルはデフォルトで異なるアプローチを取る。リソース設定は、どのデフォルトが成功するかを決定し、「モデル能力」と「インフラ許容度」を混同させる。
+> Different models default to different approaches. Resource settings determine which defaults succeed, conflating `model capability` with `infrastructure tolerance`.
 
-## その他の隠れた変数
+## Other Hidden Variables
 
-- 時間制限、クラスターヘルス、ハードウェア仕様、同時実行レベル、送信帯域幅
-- **APIレイテンシ/時間帯**: パスレートがトラフィックパターンとインシデントに応じて変動
-- **重要**: モデル能力とインフラ動作の境界は、単一のベンチマークスコアが示すものより曖昧
+- Time limits, cluster health, hardware specs, concurrency level, outbound bandwidth
+- **API latency/time-of-day**: Pass rates fluctuate with traffic patterns and incidents
+- **Important**: The boundary between model capability and infrastructure behavior is blurrier than any single benchmark score suggests
 
-## ベンチマーク解釈への影響
+## Implications for Benchmark Interpretation
 
 > "A few-point lead might signal a real capability gap—or it might just be a bigger VM."
 
-- **リーダーボード懐論**: `<3pp`の差は、評価設定が文書化され一致していない限り慎重に扱うべき
-- 単純な二項信頼区間はすでに`1〜2pp`をカバー。インフラコンファウンダーが上に重なる
-- ラボにとって: リソース割り当ては測定された能力に直接影響。再現性には標準化が重要
+- **Leaderboard skepticism**: Differences of `<3pp` should be treated cautiously unless evaluation settings are documented and consistent
+- Simple binomial confidence intervals already cover `1-2pp`. Infra confounders add on top
+- For labs: Resource allocation directly impacts measured capability. Standardization is critical for reproducibility
 
-## 実践的提言
+## Practical Recommendations
 
-1. **デュアルパラメータを指定**: 評価設定は保証された割り当てとハードキル制限の両方を定義する必要がある
-2. **バンドをキャリブレーション**: 床/天井スコアが統計的ノイズ内に収まるように ceiling を設定
-3. **方法論を報告**: 正確なリソース倍率と施行戦略を公開
-4. **インフラを第一級変数として扱う**: プロンプトフォーマットやサンプリング温度と同じ厳密さでリソース設定を文書化・制御
+1. **Specify dual parameters**: Evaluation settings should define both guaranteed allocation and hard kill limits
+2. **Calibrate bands**: Set ceilings so floor/ceiling scores fall within statistical noise
+3. **Report methodology**: Publish exact resource multipliers and enforcement strategies
+4. **Treat infrastructure as a first-class variable**: Document and control resource settings with the same rigor as prompt format and sampling temperature
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — 上位インデックス
-- [[comparisons/evals-skills]] — 評価スキル
-- [[concepts/harness-design-long-running-apps]] — ハーネス設計
-- [[concepts/ai-evals]] — AI評価の概念
+- [[concepts/harness-engineering]] — Parent index
+- [[comparisons/evals-skills]] — Evaluation skills
+- [[concepts/harness-design-long-running-apps]] — Harness design
+- [[concepts/ai-evals]] — AI evaluation concepts
+

@@ -2,7 +2,7 @@
 title: "Model Serving & Autoscaling"
 type: concept
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-26
 tags:
   - concept
   - inference
@@ -28,120 +28,120 @@ related:
 
 # Model Serving & Autoscaling
 
-> LLMモデルを本番環境でサーブするためのインフラ設計。デプロイメント構成、スケーリング戦略、ロードバランシング、コスト管理までをカバーする。
+> Infrastructure design for serving LLM models in production. Covers deployment configurations, scaling strategies, load balancing, and cost management.
 
 ## Why This Matters
 
-LLM推論サーバーは従来のWebアプリケーションと根本的に異なる負荷特性を持つ:
-- **GPUメモリに固定されたモデル**: コールドスタートに数分かかる
-- **KVキャッシュの動的消費**: リクエストごとにVRAM消費が変動
-- **スループットとレイテンシのトレードオフ**: バッチサイズが大きいほどスループットは高いがレイテンシも増加
-- **継続的バッチング**: 静的な負荷想定が困難
+LLM inference servers have fundamentally different load characteristics from traditional web applications:
+- **Model pinned to GPU memory**: Cold starts take minutes
+- **Dynamic KV cache consumption**: VRAM usage fluctuates per request
+- **Throughput vs latency tradeoff**: Larger batch sizes increase throughput but also latency
+- **Continuous batching**: Makes static load estimation difficult
 
 ## Outline
 
 ### 1. Deployment Architectures
 
 #### Self-hosted (Private GPU)
-- **vLLM**: 業界標準のオープンソース推論サーバー
-- **SGLang**: エージェントループとプレフィックスキャッシュに最適化
-- **TensorRT-LLM**: NVIDIA Triton Inference Serverと統合
+- **vLLM**: Industry standard open-source inference server
+- **SGLang**: Optimized for agent loops and prefix caching
+- **TensorRT-LLM**: Integrates with NVIDIA Triton Inference Server
 
 #### Managed Inference
-- **Together AI / Fireworks / Groq**: 高速マネージド推論
+- **Together AI / Fireworks / Groq**: Fast managed inference
 - **Anyscale / Modal / Replicate**: Serverless GPU
 - **Cloud AI platforms**: GCP Vertex AI, AWS SageMaker, Azure ML
 
 #### Edge / Local
-- **llama.cpp / Ollama**: ローカルGPU/CPU
-- **Apple MLX**: Apple Silicon最適化
+- **llama.cpp / Ollama**: Local GPU/CPU
+- **Apple MLX**: Apple Silicon optimization
 
 ### 2. Autoscaling Strategies
 
-LLMサーバーのスケーリングは以下が課題:
-- **Warm-up time**: モデルロードに数分、GPUメモリ割り当てに時間
-- **KV Cache fragmentation**: リクエスト数の増減にVRAM消費が追随
-- **GPU availability**: スポットインスタンスの中断リスク
+LLM server scaling faces these challenges:
+- **Warm-up time**: Model loading takes minutes, GPU memory allocation takes time
+- **KV Cache fragmentation**: VRAM consumption follows request count fluctuations
+- **GPU availability**: Spot instance interruption risk
 
 #### Scaling Signals
 
-| Signal | 長所 | 短所 |
+| Signal | Pros | Cons |
 |--------|------|------|
-| **Request queue depth** | 正確な負荷指標 | 遅延応答 |
-| **GPU utilization** | ハードウェア直感 | KV cacheのみのときは低利用率 |
-| **KV cache pressure** | 正確なメモリ指標 | 実装が複雑 |
-| **In-flight requests** | シンプル | バッチ深さを考慮しない |
-| **Token throughput** | ビジネス指標 | モデル・プリフィル比率に依存 |
+| **Request queue depth** | Accurate load metric | Delayed response |
+| **GPU utilization** | Hardware intuition | Low utilization during KV cache only |
+| **KV cache pressure** | Accurate memory metric | Complex to implement |
+| **In-flight requests** | Simple | Does not account for batch depth |
+| **Token throughput** | Business metric | Depends on model and prefill ratio |
 
 #### Scaling Patterns
 
 - **HPA (Horizontal Pod Autoscaler)**:
-  - K8s標準、カスタムメトリクスでGPU utilizationを監視
-  - 課題: スケールアップの遅延（モデルロード時間）
+  - K8s standard, monitors GPU utilization via custom metrics
+  - Challenge: Scale-up latency (model loading time)
   
 - **Predictive Scaling**:
-  - 時間帯ベースの事前スケーリング
-  - プロンプトレングス分布の予測
+  - Time-of-day based pre-scaling
+  - Prompt length distribution prediction
   
 - **Request Batching Autoscaler**:
-  - キューの深さと連続バッチングの動的最適化
+  - Dynamic optimization of queue depth and continuous batching
   
 - **Serverless GPU**:
-  - Modal / Replicate style: リクエスト単位で課金
-  - コールドスタートが課題（Function as a Serviceパラダイム）
+  - Modal / Replicate style: Pay per request
+  - Cold start challenge (FaaS paradigm)
 
 ### 3. Load Balancing Strategies
 
-| 戦略 | 動作 | 有効なケース |
+| Strategy | Behavior | Effective Use Case |
 |------|------|-------------|
-| **Round Robin** | 順番に割り当て | 全レプリカが同性能 |
-| **Least Connections** | 最小インフライトリクエスト | 可変長コンテキスト |
-| **LRU Routing** | 同一プレフィックスを同一Podにルーティング | Prefix caching最大活用 |
-| **Semantic Routing** | 埋め込みベースでルーター選択 | モデル専門化 |
-| **Consistent Hashing** | プレフィックスハッシュでルーティング | 確定的キャッシュヒット |
+| **Round Robin** | Assigns in order | All replicas same performance |
+| **Least Connections** | Least in-flight requests | Variable-length contexts |
+| **LRU Routing** | Routes same prefix to same Pod | Maximizes prefix caching |
+| **Semantic Routing** | Embedding-based router selection | Model specialization |
+| **Consistent Hashing** | Routes by prefix hash | Deterministic cache hits |
 
 ### 4. Multi-Model Serving
 
-- **単一GPUで複数モデル**: GPUパーティショニング戦略
-- **LoRA Adapter Serving**: vLLMのMulti-LoRA機能
-- **Model Router**: リクエスト内容に応じて最適なモデルにルーティング
-- **Speculative Decoding Server**: Draftモデル+Targetモデルのペア構成
+- **Multiple models on single GPU**: GPU partitioning strategies
+- **LoRA Adapter Serving**: vLLM Multi-LoRA functionality
+- **Model Router**: Routes to optimal model based on request content
+- **Speculative Decoding Server**: Draft model + Target model pair configuration
 
 ### 5. Cost Optimization Patterns
 
-- **Spot GPU instances**: 〜70%割引、中断処理設計が必須
-- **Reserved capacity**: ベースライン負荷に
-- **Batch processing vs Real-time**: バッチAPIの低コスト設計
-- **Prefix caching across requests**: 同一システムプロンプトのキャッシュ共有
-- **KV cache quantization**: TurboQuant（2bit KV cache, 4x capacity）
+- **Spot GPU instances**: ~70% discount, interruption handling required
+- **Reserved capacity**: For baseline load
+- **Batch processing vs Real-time**: Low-cost batch API design
+- **Prefix caching across requests**: Shared caching for identical system prompts
+- **KV cache quantization**: TurboQuant (2-bit KV cache, 4x capacity)
 
 ### 6. Infrastructure Components
 
-| コンポーネント | 役割 | 選択肢 |
+| Component | Role | Options |
 |--------------|------|--------|
-| **GPU Scheduler** | タスク-GPU割り当て | Kubernetes + volcano/gpu-operator |
-| **Model Registry** | モデルバージョン管理 | MLflow, HuggingFace Hub |
-| **API Gateway** | 認証・レート制限・課金 | Envoy, Kong, AWS API Gateway |
-| **Observability** | 監視・アラーティング | Prometheus + Grafana, Arize, LangSmith |
-| **Queue** | リクエストバッファリング | Redis, RabbitMQ, Keda |
+| **GPU Scheduler** | Task-to-GPU allocation | Kubernetes + volcano/gpu-operator |
+| **Model Registry** | Model version management | MLflow, HuggingFace Hub |
+| **API Gateway** | Auth, rate limiting, billing | Envoy, Kong, AWS API Gateway |
+| **Observability** | Monitoring & alerting | Prometheus + Grafana, Arize, LangSmith |
+| **Queue** | Request buffering | Redis, RabbitMQ, Keda |
 
 ### 7. Production Checklist
 
-- [ ] GPUメモリの適切なモデル-バッファ比率設定
-- [ ] 最大コンテキスト長とバッチサイズの制限
-- [ ] OOM (Out of Memory) からの自動復旧
-- [ ] ホットスワップ可能なモデルバージョン管理
-- [ ] コストvsレイテンシのSLO定義
-- [ ] 継続的バッチングのバッファリング設定
+- [ ] Appropriate GPU memory model-buffer ratio
+- [ ] Max context length and batch size limits
+- [ ] Automatic OOM (Out of Memory) recovery
+- [ ] Hot-swappable model version management
+- [ ] Cost vs latency SLO definition
+- [ ] Continuous batching buffer configuration
 
 ## Related Pages
 
 - [[concepts/serving-llms-vllm]] — vLLM serving patterns
 - [[concepts/inference/vllm]] — vLLM feature details
 - [[concepts/inference/sglang]] — SGLang for agent workloads
-- [[concepts/kv-cache]] — VRAM管理の基礎
-- [[concepts/prompt-caching]] — コスト最適化戦略
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — ハードウェア制約
+- [[concepts/kv-cache]] — VRAM management fundamentals
+- [[concepts/prompt-caching]] — Cost optimization strategies
+- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — Hardware constraints
 - [[concepts/ai-infrastructure-engineering/_index]] — Parent page
 
 ## Skills Reference
@@ -158,3 +158,4 @@ LLMサーバーのスケーリングは以下が課題:
 - [ ] Add multi-node inference serving patterns (Tensor Parallel across nodes)
 - [ ] Add prefix caching autoscaling integration (LRU routing deep-dive)
 - [ ] Add serverless GPU cold start benchmarks
+

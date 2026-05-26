@@ -2,7 +2,7 @@
 title: "Tenant Agent Pack"
 type: concept
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-26
 tags:
   - ai-agents
   - multi-tenancy
@@ -21,65 +21,66 @@ related:
 
 # Tenant Agent Pack
 
-**Tenant Agent Pack** とは、テナント（顧客）ごとの差異を**コード分岐ではなくAgent構成アーティファクト**として管理する、AI Agent時代のSaaSマルチテナンシー手法である。
+**Tenant Agent Pack** is a SaaS multi-tenancy approach for the AI Agent era, managing per-tenant differences through **agent configuration artifacts rather than code branching**.
 
-## 定義
+## Definition
 
-Tenant Agent Pack は、コア製品コードを一切変更せずに、特定顧客向けのAI Agentの振る舞いを定義する**顧客別アーティファクトの集合体**である。
+A Tenant Agent Pack is a **collection of customer-specific artifacts** that define the behavior of an AI Agent for a particular customer without modifying any core product code.
 
-## 背景：旧SaaS原則からの転換
+## Background: A Shift from Old SaaS Principles
 
-従来のSaaSの鉄則は「顧客ごとの機能は作らない」だった（保守性・スケーラビリティのため）。しかしAI Agent時代では、顧客ごとの業務・データ・権限・例外処理の差異を**完全に回避することは不可能**である。そこで、コードではなく**差異を置くレイヤーを変える**のが Tenant Agent Pack の核心思想となる。
+The golden rule of traditional SaaS was "don't build customer-specific features" (for maintainability and scalability). However, in the AI Agent era, it is **impossible to completely avoid** customer-specific differences in workflows, data, permissions, and exception handling. The core idea of Tenant Agent Pack is to **shift the layer where differences live** — from code to configuration — rather than trying to eliminate them entirely.
 
-## Tenant Agent Pack に含まれるもの
+## Contents of a Tenant Agent Pack
 
-典型的な Tenant Agent Pack は以下のアーティファクトから構成される：
+A typical Tenant Agent Pack consists of the following artifacts:
 
-| カテゴリ | 内容 |
-|----------|------|
-| 目的定義 | その顧客におけるAgentの業務目的・目標 |
-| 役割定義 | Agentのロール定義 |
-| ツール許可 | 利用可能なツールのallowlist |
-| ツール禁止 | 利用禁止ツールのblocklist |
-| 承認設定 | 人間の承認が必要な操作一覧 |
-| データ接続 | アクセス可能なデータソース |
-| 用語集 | 顧客固有の専門用語・グロッサリー |
-| 例外処理 | 例外発生時の処理ルール |
-| 評価データセット | その顧客にとっての「良い振る舞い」の評価基準 |
-| 成功指標 | KPI・成功メトリクス |
-| エスカレーション先 | 通知・エスカレーション対象（誰に・いつ） |
-| コスト上限 | 実行コストの上限・予算 |
-| ロールバック手順 | 障害時の復旧手順 |
-| プロンプト | システム指示・プロンプト群 |
-| ログ保持 | 実行ログの保持ポリシー |
-| エスカレーションルール | 人間へのエスカレーション条件 |
+| Category | Content |
+|----------|---------|
+| Purpose Definition | The agent's business objectives and goals for that customer |
+| Role Definition | The agent's role definition |
+| Allowed Tools | Allowlist of available tools |
+| Blocked Tools | Blocklist of prohibited tools |
+| Approval Settings | List of operations requiring human approval |
+| Data Connections | Accessible data sources |
+| Glossary | Customer-specific terminology and glossary |
+| Exception Handling | Rules for handling exceptions |
+| Evaluation Dataset | Evaluation criteria for "good behavior" for that customer |
+| Success Metrics | KPIs and success metrics |
+| Escalation Contacts | Notification and escalation targets (who, when) |
+| Cost Limits | Execution cost caps and budgets |
+| Rollback Procedures | Recovery procedures for failures |
+| Prompts | System instructions and prompt sets |
+| Log Retention | Execution log retention policies |
+| Escalation Rules | Conditions for human escalation |
 
-## 設計原則
+## Design Principles
 
-> **コードを顧客別にforkするな。運用アーティファクトを顧客別にforkせよ。**
+> **Don't fork code per customer. Fork operational artifacts per customer.**
 
-コアのAgentエンジンは全顧客で共有し、顧客差分は Tenant Agent Pack に閉じ込める。これにより、製品の保守性を損なわずに深い顧客適応を実現する。
+The core agent engine is shared across all customers; customer-specific differences are contained within the Tenant Agent Pack. This enables deep customer adaptation without sacrificing product maintainability.
 
-## [[forward-deployed-engineering|FDE]]との関係
+## Relationship with [[forward-deployed-engineering|FDE]]
 
-[[forward-deployed-engineering|Forward Deployed Engineer]] は顧客現場で業務固有のニーズを発見する。その役割は、発見した知見を Tenant Agent Pack として**バージョン管理・テスト・再利用可能な形**で符号化することである。
+A [[forward-deployed-engineering|Forward Deployed Engineer]] discovers business-specific needs on the customer site. Their role is to encode those discoveries into a Tenant Agent Pack in a **version-controlled, testable, and reusable** form.
 
-## [[agent-control-plane|Agent Control Plane]]との関係
+## Relationship with [[agent-control-plane|Agent Control Plane]]
 
-[[agent-control-plane|Agent Control Plane]] は、全テナントの Tenant Agent Pack を横断管理するレイヤーである。バージョニング、デプロイ、監視、監査を集中管理する。
+The [[agent-control-plane|Agent Control Plane]] is the layer that cross-manages Tenant Agent Packs across all tenants. It centralizes versioning, deployment, monitoring, and auditing.
 
-## 旧SaaSとの比較
+## Comparison with Traditional SaaS
 
-| 観点 | 旧来SaaS | Tenant Agent Pack |
-|------|----------|-------------------|
-| カスタマイズ | 管理画面・設定項目 | Agent運用アーティファクト |
-| 顧客別コード | 原則禁止 | 原則禁止（別レイヤーで吸収） |
-| アップグレード | フィーチャーフラグ・設定 | Packのバージョニング |
-| 再利用性 | 共通機能セット | 業界別Packテンプレート |
+| Dimension | Traditional SaaS | Tenant Agent Pack |
+|-----------|-----------------|-------------------|
+| Customization | Admin screens, configuration settings | Agent operational artifacts |
+| Customer-specific code | Generally prohibited | Generally prohibited (absorbed in a different layer) |
+| Upgrades | Feature flags, configuration | Pack versioning |
+| Reusability | Common feature sets | Industry-specific pack templates |
 
-## 関連項目
+## Related Items
 
-- [[saas-agent-era|SaaS Agent時代]] — Agent時代のSaaS構造変化の全体像
-- [[agent-control-plane|Agent Control Plane]] — Tenant Agent Pack を横断管理する統治レイヤー
-- [[forward-deployed-engineering|Forward Deployed Engineering]] — Packを生み出す現場知見の源泉
-- [[enterprise-ai|Enterprise AI]] — エンタープライズAI導入の文脈
+- [[saas-agent-era|SaaS Agent Era]] — Overall structural changes in SaaS in the Agent era
+- [[agent-control-plane|Agent Control Plane]] — The governance layer that cross-manages Tenant Agent Packs
+- [[forward-deployed-engineering|Forward Deployed Engineering]] — Source of field insights that create Packs
+- [[enterprise-ai|Enterprise AI]] — Context of enterprise AI adoption
+
