@@ -4,6 +4,26 @@
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated
+- [[concepts/turing-completeness-emergence]] — JP→EN, 2824 JP chars removed
+- [[concepts/china-openclaw-agentic-boom]] — JP→EN, 2426 JP chars removed
+- [[concepts/context-lock-in]] — JP→EN, 2375 JP chars removed
+- [[concepts/deepseek-v3]] — JP→EN, 2339 JP chars removed
+- [[comparisons/llm-integration-patterns]] — JP→EN, 2271 JP chars removed
+- [[concepts/macro-evals-for-agentic-systems]] — JP→EN, 2257 JP chars removed
+- [[concepts/waluigi-effect]] — JP→EN, 2235 JP chars removed
+- [[entities/deepseek]] — JP→EN, 2215 JP chars removed
+
+### Stats
+- Total JP chars removed: 18,942
+- Remaining JP-content files (excl logs): 339
+- Remaining JP chars in wiki: ~239K
+
+
+---
+
+## [2026-05-26] translate | JP→EN batch — 8 files
+
+### Files Translated
 - [[concepts/back-of-house-patterns]] — JP→EN, 2922 JP chars removed
 - [[concepts/tau-knowledge]] — JP→EN, 2900 JP chars removed
 - [[comparisons/open-harness-vs-agent-framework]] — JP→EN, 2891 JP chars removed

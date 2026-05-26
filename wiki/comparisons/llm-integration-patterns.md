@@ -8,212 +8,213 @@ tags:
   - rag
   - comparison
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-26
 type: comparison
 ---
 
 # LLM Integration Patterns: A Comparative Taxonomy
 
-LLMをプロダクションシステムに統合するアプローチは、2023年から2025年にかけて急速に進化した。本ページは主要なパターンを**制御構造**、**最適化タイミング**、**コンテキスト管理**の3つの次元で分類し、相対化する。
+Approaches for integrating LLMs into production systems evolved rapidly from 2023 to 2025. This page classifies and contextualizes the major patterns across three dimensions: **control structure**, **optimization timing**, and **context management**.
 
 ---
 
-## 5つの統合パラダイム
+## 5 Integration Paradigms
 
-### パラダイムマップ
+### Paradigm Map
 
 ```
-                  制御の主体
-              開発者 ←———————→ LM自身
+                  Control Subject
+              Developer ←———————→ LM itself
               │                   │
-  最  │   LangChain           RLMs
-  適  │   LlamaIndex          (Recursive)
-  化  │   OpenAI Agents       Anthropic Workflows
-  タ  │       SDK
-  イ  │                   │
-  ミ  │     DSPy              GEPA
-  ン  │   (Declarative)       (Genetic)
-  グ  │
-  │
-  V
-  最適化の次元
+  O   │   LangChain           RLMs
+  p   │   LlamaIndex          (Recursive)
+  t   │   OpenAI Agents       Anthropic Workflows
+  i   │       SDK
+  m   │                   │
+  i   │     DSPy              GEPA
+  z   │   (Declarative)       (Genetic)
+  a   │
+  t  │
+  i  V
+  o   Optimization Dimension
+  n
 ```
 
 ### 1. Orchestration Patterns (LangChain, LangGraph, LlamaIndex)
 
-**哲学:** 開発者がLLM呼び出しのフローを明示的に制御する。
+**Philosophy:** The developer explicitly controls the flow of LLM calls.
 
-| 側面 | 詳細 |
-|------|------|
-| **制御主体** | 開発者（Pythonコード） |
-| **プロンプト** | 手動で作成・保守 |
-| **最適化** | なし（開発者の試行錯誤に依存） |
-| **コンテキスト** | 固定ウィンドウ＋外部検索 |
-| **長所** | 直感的、豊富な統合、即座に動作 |
-| **短所** | プロンプト保守が高い、モデル依存 |
-| **適用** | プロトタイピング、ツール統合、既存ワークフロー |
+| Aspect | Detail |
+|--------|--------|
+| **Control subject** | Developer (Python code) |
+| **Prompts** | Manually created and maintained |
+| **Optimization** | None (depends on developer trial and error) |
+| **Context** | Fixed window + external search |
+| **Advantages** | Intuitive, rich integrations, works immediately |
+| **Disadvantages** | High prompt maintenance cost, model-dependent |
+| **Application** | Prototyping, tool integration, existing workflows |
 
-**LangChain**は「チェーン」という概念でLLM呼び出しを連結する。**LangGraph**は状態機械によるエージェントループを追加。**LlamaIndex**はデータ取得とインデックス構築に特化。
+**LangChain** chains LLM calls through the concept of "chains." **LangGraph** adds agent loops via state machines. **LlamaIndex** specializes in data retrieval and index construction.
 
-**根本的限界:** プロンプトが「魔法の文字列」のまま。モデルを変更すると、プロンプトの書き直しが必要。品質は開発者のプロンプト設計スキルに直接依存。
+**Fundamental limitation:** Prompts remain "magic strings." Changing models requires prompt rewrites. Quality directly depends on the developer's prompt design skills.
 
 ### 2. Declarative Programming (DSPy)
 
-**哲学:** LLMを**最適化可能なモジュール**として宣言的にプログラミングする。
+**Philosophy:** Program LLMs declaratively as **optimizable modules**.
 
-| 側面 | 詳細 |
-|------|------|
-| **制御主体** | optimizer（コンパイル時） |
-| **プロンプト** | 自動生成（訓練データから） |
-| **最適化** | コンパイル時（Teleprompter） |
-| **コンテキスト** | 固定（デモンストレーション埋め込み） |
-| **長所** | モデル非依存、自動最適化、再現性 |
-| **短所** | 訓練データが必要、学習曲線が急 |
-| **適用** | 反復的パイプライン（RAG, QA, 分類） |
+| Aspect | Detail |
+|--------|--------|
+| **Control subject** | Optimizer (compile time) |
+| **Prompts** | Auto-generated (from training data) |
+| **Optimization** | Compile-time (Teleprompter) |
+| **Context** | Fixed (demonstration embeddings) |
+| **Advantages** | Model-independent, automatic optimization, reproducibility |
+| **Disadvantages** | Training data required, steep learning curve |
+| **Application** | Iterative pipelines (RAG, QA, classification) |
 
-DSPyの革新的洞察は、**プロンプトをハイパーパラメータとして扱う**こと。開発者は「何をしたいか」（Signature）だけを宣言し、「どうするか」（プロンプト文本体）はoptimizerが決定する。
+DSPy's key insight is treating **prompts as hyperparameters**. The developer declares only "what to do" (Signature); the optimizer determines "how to do it" (the prompt text itself).
 
-**PyTorchとの類似性:**
+**Similarity to PyTorch:**
 ```
-PyTorch: nn.Linear → optimizer (SGD) → 重み
-DSPy:    Signature → optimizer (MIPROv2) → プロンプト
+PyTorch: nn.Linear → optimizer (SGD) → weights
+DSPy:    Signature → optimizer (MIPROv2) → prompt
 ```
 
 ### 3. Recursive Execution (RLMs)
 
-**哲学:** LLMに**自身のコンテキストアクセス**を制御させる。
+**Philosophy:** Let the LLM control its **own context access**.
 
-| 側面 | 詳細 |
-|------|------|
-| **制御主体** | LM自身（REPL環境） |
-| **プロンプト** | コード生成で自己制御 |
-| **最適化** | 推論時（実行中の自己適応） |
-| **コンテキスト** | 外部環境（無制限） |
-| **長所** | 任意長のコンテキスト、コンテキストrot回避 |
-| **短所** | 非決定性、デバッグ困難 |
-| **適用** | 超長文理解（10M+トークン）、深層推論 |
+| Aspect | Detail |
+|--------|--------|
+| **Control subject** | LM itself (REPL environment) |
+| **Prompts** | Self-controlled through code generation |
+| **Optimization** | Inference-time (self-adaptation during execution) |
+| **Context** | External environment (unlimited) |
+| **Advantages** | Arbitrary-length context, context rot avoidance |
+| **Disadvantages** | Non-deterministic, difficult to debug |
+| **Application** | Ultra-long text understanding (10M+ tokens), deep reasoning |
 
-RLMsの根本的洞察は、**コンテキストは外部変数である**ということ。従来のLLMはプロンプト内に全てのコンテキストを詰め込むが、RLMsはREPL環境を通じて必要な情報にアクセスする。
+The fundamental insight of RLMs is that **context is an external variable**. Traditional LLMs cram all context into the prompt; RLMs access needed information through a REPL environment.
 
 ### 4. Agentic Workflows (Anthropic, OpenAI Agents SDK)
 
-**哲学:** LLMを自律的なエージェントとしてツールと連携させる。
+**Philosophy:** Connect LLMs as autonomous agents with tools.
 
-| 側面 | 詳細 |
-|------|------|
-| **制御主体** | orchestrator + LM |
-| **プロンプト** | システム指示＋ツール定義 |
-| **最適化** | 実行時（ツール選択、エラー処理） |
-| **コンテキスト** | 固定＋ツール出力 |
-| **長所** | 複雑なワークフロー、動的対応 |
-| **短所** | 予期せぬ動作、制御困難 |
-| **適用** | 自律タスク実行、複数ツール連携 |
+| Aspect | Detail |
+|--------|--------|
+| **Control subject** | Orchestrator + LM |
+| **Prompts** | System instructions + tool definitions |
+| **Optimization** | Runtime (tool selection, error handling) |
+| **Context** | Fixed + tool outputs |
+| **Advantages** | Complex workflows, dynamic response |
+| **Disadvantages** | Unexpected behavior, difficult to control |
+| **Application** | Autonomous task execution, multi-tool integration |
 
-Anthropicの **「Building Effective Agents」** は、エージェントを「hardcoded workflows」と「autonomous agents」に分類し、前者を推奨する。これはDSPyの宣言的アプローチに近い。
+Anthropic's **"Building Effective Agents"** classifies agents into "hardcoded workflows" and "autonomous agents," recommending the former — similar to DSPy's declarative approach.
 
 ### 5. Genetic Optimization (GEPA)
 
-**哲学:** プロンプトを**遺伝的アルゴリズムで進化**させる。
+**Philosophy:** Evolve prompts using **genetic algorithms**.
 
-| 側面 | 詳細 |
-|------|------|
-| **制御主体** | 進化アルゴリズム |
-| **プロンプト** | 自動進化（世代間） |
-| **最適化** | 世代間（Pareto最適選択） |
-| **コンテキスト** | 固定（親プロンプト） |
-| **長所** | RLベース最適化を上回る場合がある |
-| **短所** | 計算コストが高い |
-| **適用** | プロンプト最適化、戦略発見 |
+| Aspect | Detail |
+|--------|--------|
+| **Control subject** | Evolutionary algorithm |
+| **Prompts** | Auto-evolved (across generations) |
+| **Optimization** | Inter-generational (Pareto optimal selection) |
+| **Context** | Fixed (parent prompts) |
+| **Advantages** | Can outperform RL-based optimization in some cases |
+| **Disadvantages** | High computational cost |
+| **Application** | Prompt optimization, strategy discovery |
 
-GEPAはDSPyのTeleprompterを**さらに一般化**したもの。DSPyがデモンストレーションを選択するのに対し、GEPAはプロンプト文本体を進化させる。
-
----
-
-## 比較マトリクス
-
-### 次元別比較
-
-| 次元 | Orchestration | DSPy | RLMs | Agentic | GEPA |
-|------|--------------|------|------|---------|------|
-| **制御主体** | 開発者 | optimizer | LM自身 | orchestrator | 進化algo |
-| **最適化timing** | なし | コンパイル時 | 推論時 | 実行時 | 世代間 |
-| **コンテキスト** | 固定 | 固定 | 無制限 | 固定＋ツール | 固定 |
-| **データ要件** | なし | 訓練例 | なし | なし | 評価メトリクス |
-| **モデル依存** | 高い | 低い | 中程度 | 中程度 | 低い |
-| **再現性** | 高い | 高い | 低い | 低い | 中程度 |
-| **保守性** | 低い | 高い | 中程度 | 中程度 | 高い |
-| **学習曲線** | 低い | 高い | 高い | 中程度 | 高い |
-| **適用スコープ** | 汎用 | パイプライン | 超長文 | 自律タスク | 最適化 |
-
-### パフォーマンス特性
-
-| パターン | フレームワークオーバーヘッド | トークン効率 | 品質向上潜力 |
-|----------|----------------------------|-------------|-------------|
-| LangChain | ~10ms/call | 中 | 開発者依存 |
-| LangGraph | ~14ms/call | 中 | 開発者依存 |
-| LlamaIndex | ~6ms/call | 高 | 中 |
-| **DSPy** | **~3.5ms/call** | **高** | **大** |
-| Haystack | ~5.9ms/call | 高 | 中 |
-
-DSPyが**最も低いフレームワークオーバーヘッド**を示す（AIMultiple 2025ベンチマーク）。これは、抽象化がコンパイル時に解決されるため、実行時のオーバーヘッドが最小限になる。
+GEPA is a **further generalization** of DSPy's Teleprompter. While DSPy selects demonstrations, GEPA evolves the prompt text itself.
 
 ---
 
-## 進化の系譜
+## Comparison Matrix
 
-### Khattabの研究トレイル
+### Dimension Comparison
 
-Omar Khattabの研究は、LLM統合パラダイムの進化を体現している：
+| Dimension | Orchestration | DSPy | RLMs | Agentic | GEPA |
+|-----------|--------------|------|------|---------|------|
+| **Control subject** | Developer | Optimizer | LM itself | Orchestrator | Evolution algo |
+| **Optimization timing** | None | Compile-time | Inference-time | Runtime | Inter-generational |
+| **Context** | Fixed | Fixed | Unlimited | Fixed + tools | Fixed |
+| **Data requirements** | None | Training examples | None | None | Evaluation metrics |
+| **Model dependence** | High | Low | Medium | Medium | Low |
+| **Reproducibility** | High | High | Low | Low | Medium |
+| **Maintainability** | Low | High | Medium | Medium | High |
+| **Learning curve** | Low | High | High | Medium | High |
+| **Application scope** | General | Pipelines | Ultra-long text | Autonomous tasks | Optimization |
+
+### Performance Characteristics
+
+| Pattern | Framework Overhead | Token Efficiency | Quality Improvement Potential |
+|---------|-------------------|-----------------|-------------------------------|
+| LangChain | ~10ms/call | Medium | Developer-dependent |
+| LangGraph | ~14ms/call | Medium | Developer-dependent |
+| LlamaIndex | ~6ms/call | High | Medium |
+| **DSPy** | **~3.5ms/call** | **High** | **Large** |
+| Haystack | ~5.9ms/call | High | Medium |
+
+DSPy demonstrates the **lowest framework overhead** (AIMultiple 2025 benchmark). This is because abstractions are resolved at compile time, minimizing runtime overhead.
+
+---
+
+## Evolution Lineage
+
+### Khattab's Research Trail
+
+Omar Khattab's research embodies the evolution of LLM integration paradigms:
 
 ```
-ColBERT (2020) → 検索の「late interaction」
+ColBERT (2020) → "Late interaction" for retrieval
      ↓
-Baleen (2021) → 複数ホップ推論
+Baleen (2021) → Multi-hop reasoning
      ↓
-DSPy (2023) → 宣言的LMプログラミング
+DSPy (2023) → Declarative LM programming
      ↓
-DSPy Assertions (2023) → 実行時検証
+DSPy Assertions (2023) → Runtime verification
      ↓
-GEPA (2025) → 遺伝的プロンプト進化
+GEPA (2025) → Genetic prompt evolution
      ↓
-RLMs (2025) → 再帰的コンテキスト処理
+RLMs (2025) → Recursive context processing
 ```
 
-**一貫したテーマ:**
+**Consistent theme:**
 > *"Making broad progress in AI is not restricted to training larger models, but can take the form of designing general tools that grant AI developers more control."*
 
-各段階で、**より多くの制御を開発者/LMに移譲**し、**より少ない手動チューニング**で**より高い品質**を達成することを目指している。
+Each stage aims to **delegate more control to the developer/LM** while achieving **higher quality** with **less manual tuning**.
 
-### DSPy → RLMs: パラダイムの継承と差異
+### DSPy → RLMs: Inheritance and Differences
 
-| 継承点 | DSPy | RLMs |
-|--------|------|------|
-| **LMをモジュールとして扱う** | ✓ (Signature/Module) | ✓ (REPLコマンド) |
-| **コンテキスト管理の自動化** | ✓ (Teleprompter) | ✓ (環境変数) |
-| **モデル非依存** | ✓ | ✓ |
-| **最適化のタイミング** | コンパイル時 | 推論時 |
-| **訓練データ** | 必要 | 不要 |
+| Inheritance Point | DSPy | RLMs |
+|--------------------|------|------|
+| **Treating LM as module** | ✓ (Signature/Module) | ✓ (REPL commands) |
+| **Automated context management** | ✓ (Teleprompter) | ✓ (Environment variables) |
+| **Model independence** | ✓ | ✓ |
+| **Optimization timing** | Compile-time | Inference-time |
+| **Training data** | Required | Not required |
 
-RLMsはDSPyの**「コンパイル時最適化」を「推論時適応」に置き換えた**ものと見なせる。両者とも**LMをプログラマブルなコンポーネント**として扱うが、最適化のタイミングが異なる。
+RLMs can be seen as **replacing DSPy's "compile-time optimization" with "inference-time adaptation."** Both treat **the LM as a programmable component**, but differ in optimization timing.
 
 ---
 
-## 実践的選択ガイド
+## Practical Selection Guide
 
-### シナリオ別推奨パターン
+### Recommended Patterns by Scenario
 
-| シナリオ | 推奨パターン | 理由 |
-|----------|-------------|------|
-| プロトタイプ開発 | Orchestration | 高速、直感的 |
-| 本番RAGパイプライン | **DSPy** | 自動最適化、モデル非依存 |
-| 超長文理解（100K+ tokens） | **RLMs** | コンテキストrot回避 |
-| 自律エージェント | Agentic | ツール連携、動的対応 |
-| プロンプト品質向上 | **GEPA** | 遺伝的最適化 |
-| コスト最適化 | DSPy → RLMs | 小モデルで高品質 |
+| Scenario | Recommended Pattern | Reason |
+|----------|-------------------|--------|
+| Prototype development | Orchestration | Fast, intuitive |
+| Production RAG pipeline | **DSPy** | Auto-optimization, model-independent |
+| Ultra-long text (100K+ tokens) | **RLMs** | Context rot avoidance |
+| Autonomous agents | Agentic | Tool integration, dynamic response |
+| Prompt quality improvement | **GEPA** | Genetic optimization |
+| Cost optimization | DSPy → RLMs | High quality with small models |
 
-### ハイブリッドアプローチ
+### Hybrid Approaches
 
-実際のパイプラインは複数のパターンを組み合わせる：
+Real pipelines combine multiple patterns:
 
 ```
 LangChain (Orchestration)
@@ -225,49 +226,49 @@ LangChain (Orchestration)
         └── Error handling, retries
 ```
 
-**設計原則:**
-1. **安定したパイプライン** → DSPyで最適化
-2. **動的なコンテキスト** → RLMsで処理
-3. **外部ツール連携** → Agenticで管理
-4. **プロトタイプ** → Orchestrationで構築
+**Design principles:**
+1. **Stable pipelines** → optimize with DSPy
+2. **Dynamic context** → process with RLMs
+3. **External tool integration** → manage with Agentic
+4. **Prototypes** → build with Orchestration
 
 ---
 
-## 重要な洞察
+## Key Insights
 
-### 1. 「プロンプトはコードである」
+### 1. "Prompts Are Code"
 
-DSPyの最も重要な洞察は、プロンプトを**コードと同じように扱う**こと。バージョン管理、テスト、最適化、デバッグの全てが適用可能。
+DSPy's most important insight is treating prompts **the same as code** — version control, testing, optimization, and debugging all become applicable.
 
-### 2. 「最適化はタイミングが重要」
+### 2. "Timing of Optimization Matters"
 
-| タイミング | メリット | デメリット |
-|-----------|---------|-----------|
-| コンパイル時 (DSPy) | 再現性、安定性 | 訓練データ必要 |
-| 推論時 (RLMs) | 動的適応 | 非決定性 |
-| 世代間 (GEPA) | 大域的最適解探索 | 計算コスト |
+| Timing | Advantage | Disadvantage |
+|--------|-----------|--------------|
+| Compile-time (DSPy) | Reproducibility, stability | Requires training data |
+| Inference-time (RLMs) | Dynamic adaptation | Non-deterministic |
+| Inter-generational (GEPA) | Global optimum search | Computational cost |
 
-### 3. 「制御の移譲が進化の方向性」
+### 3. "Control Delegation Is the Direction of Evolution"
 
 ```
-開発者完全制御 → optimizer制御 → LM自己制御
-    (LangChain)     (DSPy)         (RLMs)
+Full developer control → Optimizer control → LM self-control
+    (LangChain)           (DSPy)            (RLMs)
 ```
 
-この方向性は、**より少ない人間の介入**で**より高い品質**を達成することを示している。
+This direction indicates achieving **higher quality** with **less human intervention**.
 
-### 4. 「モデル非依存が本質的」
+### 4. "Model Independence Is Essential"
 
-DSPy、RLMs、GEPAの共通点は、**特定のプロンプト文本体に依存しない**こと。モデルが進化しても、宣言的インターフェースはそのまま有効。
+The common thread across DSPy, RLMs, and GEPA is that they do **not depend on specific prompt text**. As models evolve, the declarative interface remains valid.
 
 ---
 
 ## See Also
 
-- [[concepts/dspy]] — 宣言的LMプログラミング
-- [[concepts/rlms]] — 再帰的言語モデル
-- [[concepts/gepa]] — 遺伝的プロンプト最適化
--  — エージェントワークフローパターン
-- [[entities/omar-khattab]] — DSPy/GEPA/RLMsの創作者
-- [[entities/alex-zhang]] — RLMsの第一著者
--  — 検索のlate interactionパラダイム
+- [[concepts/dspy]] — Declarative LM programming
+- [[concepts/rlms]] — Recursive language models
+- [[concepts/gepa]] — Genetic prompt optimization
+- — Agent workflow patterns
+- [[entities/omar-khattab]] — Creator of DSPy/GEPA/RLMs
+- [[entities/alex-zhang]] — First author of RLMs
+- — Late interaction retrieval paradigm

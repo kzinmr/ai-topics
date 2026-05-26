@@ -2,7 +2,7 @@
 title: "Macro Evals for Agentic Systems"
 type: concept
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-26
 tags:
   - agent-evaluation
   - evaluation
@@ -26,70 +26,72 @@ status: active
 
 # Macro Evals for Agentic Systems
 
-マルチエージェントシステムの評価において、**個別トレースの低レベル評価（lower-level evals）から集団レベルの行動パターン（macro evals）を発見する**方法論。OpenAI × Slalom の共同 Cookbook として公開。
+A methodology for **discovering population-level behavioral patterns (macro evals) from lower-level evaluations of individual traces** in multi-agent systems. Published as a joint OpenAI × Slalom Cookbook.
 
-> エージェントレベルの評価は「どの局所的行動がリスキーか」を教え、マクロ評価は「そのリスクがシステム規模で何になるか」を教える。
+> Agent-level evaluations tell you "which local behaviors are risky"; macro evaluations tell you "what that risk becomes at system scale."
 
-## 2層アーキテクチャ
+## 2-Layer Architecture
 
 ```
-Lower-level evals（エージェント単位）
-  ├─ 個別エージェント・ハンドオフ・ツール・実行をグレーディング
-  └─ Promptfoo 等の eval ツールが pass/fail を生成
+Lower-level evals (per-agent)
+  ├─ Grades individual agents, handoffs, tools, and executions
+  └─ Eval tools like Promptfoo generate pass/fail
          ↓
-Macro evals（集団横断）
-  ├─ 多数の lower-level 所見を横断的に分析
-  ├─ 反復パターンを発見（BERTopic スタイルのクラスタリング）
-  ├─ インパクトスコアで優先順位付け
-  └─ 上流原因を診断（AgentTrace スタイルの実行グラフ分析）
+Macro evals (cross-population)
+  ├─ Cross-analyses large numbers of lower-level findings
+  ├─ Discovers recurring patterns (BERTopic-style clustering)
+  ├─ Prioritizes by impact score
+  └─ Diagnoses upstream causes (AgentTrace-style execution graph analysis)
 ```
 
-マルチエージェントシステムでは、最終回答は長いワークフローの最後のイベントに過ぎない。一見妥当に見えるリリース推奨も、トレースを見れば価格エージェントがインセンティブを無視していたり、供給エージェントが在庫切れを見逃していたり、Orchestrator が必要なレビューステップを迂回していたりする可能性がある。
+In multi-agent systems, the final answer is merely the last event in a long workflow. A seemingly reasonable release recommendation might, on trace inspection, reveal that the pricing agent ignored incentives, the supply agent missed stockouts, or the orchestrator bypassed required review steps.
 
-## 4ラベルチェーン
+## 4-Label Chain
 
-個別トレースから集団パターンまでを結ぶラベル体系：
+A labeling system connecting individual traces to population-level patterns:
 
-| ラベル | スコープ | 意味 |
-|--------|----------|------|
-| `case_type` | 入力 | 生成されたビジネス状況（clean, validation block, supplier substitution, pricing exception, ...） |
-| `run_outcome` | 出力 | 実行結果（completed, awaiting review, blocked, failed） |
-| `eval_finding` | 局所 | 下位レベル評価のシグナル（`final_decision_quality`, `policy_compliance_correctness`, ...） |
-| `behavior_pattern` | 集団 | クラスタリングで発見された反復パターン |
+| Label | Scope | Meaning |
+|-------|-------|---------|
+| `case_type` | Input | Generated business scenario (clean, validation block, supplier substitution, pricing exception, ...) |
+| `run_outcome` | Output | Execution result (completed, awaiting review, blocked, failed) |
+| `eval_finding` | Local | Lower-level evaluation signal (`final_decision_quality`, `policy_compliance_correctness`, ...) |
+| `behavior_pattern` | Population | Recurring pattern discovered through clustering |
 
-> `case_type` はセットアップ、`run_outcome` は結末、`eval_finding` は局所症状、`behavior_pattern` は集団パターン。
+> `case_type` is the setup, `run_outcome` is the ending, `eval_finding` is the local symptom, `behavior_pattern` is the population pattern.
 
-## Lower-Level Evals: Promptfoo による 5 ルーブリック
+## Lower-Level Evals: 5 Rubrics via Promptfoo
 
-| ルーブリック | 評価内容 |
-|-------------|---------|
-| `final_decision_quality` | 最終判断が特定された問題と終端状態に合致しているか |
-| `policy_compliance_correctness` | 価格/関税/インセンティブ/地域制約が遵守されているか |
-| `routing_specialist_activation` | ケースに対して適切な専門エージェントが起動されたか |
-| `market_drift_awareness` | 変化する市場状況（関税、供給変動）を認識しているか |
-| `review_appropriateness` | レビュー/エスカレーションがリスクに比例しているか |
+| Rubric | Evaluation Content |
+|--------|-------------------|
+| `final_decision_quality` | Does the final decision match the identified problem and terminal state? |
+| `policy_compliance_correctness` | Are pricing/tariff/incentive/regional constraints being followed? |
+| `routing_specialist_activation` | Was the appropriate specialist agent activated for the case? |
+| `market_drift_awareness` | Does it recognize changing market conditions (tariffs, supply fluctuations)? |
+| `review_appropriateness` | Is review/escalation proportional to risk? |
 
-各ルーブリックはトレースごとに pass/fail。失敗したルーブリックが `eval_finding` になる。
+Each rubric produces pass/fail per trace. Failed rubrics become `eval_finding`.
 
-1000 件の合成データセットでは、典型的トレースは ~170 イベント、~15 ハンドオフ、~15 ツール呼び出し、~8 エージェント、~4 環境シグナルを含む。Promptfoo 失敗は `final_decision_quality` に集中。
+In a 1000-case synthetic dataset, a typical trace includes ~170 events, ~15 handoffs, ~15 tool calls, ~8 agents, and ~4 environmental signals. Promptfoo failures concentrated in `final_decision_quality`.
 
-## 分析データセットの構築
+## Analysis Dataset Construction
 
-2 テーブルに正規化：
+Normalized into 2 tables:
 
-| テーブル | 粒度 | 内容 |
-|---------|------|------|
-| `traces_df` | 実行単位（1行/run） | メタデータ、結果、所見、trace document |
-| `events_df` | イベント単位（1行/event） | ハンドオフ、ツール呼び出し、ステータス、レスポンス、レビューマーカー |
+| Table | Granularity | Content |
+|-------|-------------|---------|
+| `traces_df` | Per run (1 row/run) | Metadata, results, findings, trace document |
+| `events_df` | Per event (1 row/event) | Handoffs, tool calls, status, responses, review markers |
 
-**Trace document**: クラスタリングに渡される圧縮テキスト。ビジネスセットアップ・実行結果・キーハンドオフ・所見マーカー・状態遷移ダイジェストを保持。
+**Trace document**: Compressed text passed to clustering. Contains business setup, execution results, key handoffs, finding markers, and state transition digest.
 
-**インパクトスコア**（優先順位付け用）:
+**Impact score** (for prioritization):
+
 ```
 impact_score = severity_weight × (1 + findings_count) × (1 + loop_count / 4)
 ```
 
-重大度マッピング：
+Severity mapping:
+
 | Outcome Group | Severity | Weight |
 |--------------|----------|--------|
 | successful_completion | low | 1.0 |
@@ -98,99 +100,101 @@ impact_score = severity_weight × (1 + findings_count) × (1 + loop_count / 4)
 | blocked | high | 2.5 |
 | hard_failure | high | 3.0 |
 
-## BERTopic スタイルのマクロ発見パイプライン
+## BERTopic-Style Macro Discovery Pipeline
 
-失敗・レビュー・Promptfoo シグナルがあるトレースのみを対象に、モジュラーパイプラインで実行：
+Run only on traces with failures, reviews, or Promptfoo signals, using a modular pipeline:
 
 ```
-Embed（ベクトル化）→ Reduce（UMAP次元削減）→ Cluster（HDBSCAN）→ Label（特徴的用語抽出）
+Embed (vectorize) → Reduce (UMAP dimensionality reduction) → Cluster (HDBSCAN) → Label (characteristic term extraction)
 ```
 
-**用語スコア**（クラスタ k における用語 t の特徴度）:
+**Term score** (characteristic degree of term t in cluster k):
+
 ```
 score(t, k) = tf(t, k) × log((1 + N) / (1 + df(t)))
 ```
 
-**パターン優先順位付け**:
+**Pattern prioritization**:
+
 ```
 impact_score(k) = prevalence_share(k) × severity_weighted_prevalence(k)
 ```
 
-高頻度かつ高重大度のトレースが集中するパターンが高インパクト。これは普遍的なリスク式ではなく、実用的なトリアージスコアである。
+High-frequency, high-severity patterns with concentrated traces yield high impact. This is a practical triage score, not a universal risk formula.
 
-**3つの出力ビュー**:
-1. **Topic leaderboard**: インパクト順のパターンランキング
-2. **Trace scatter map**: UMAP 次元削減空間上の各トレースを行動パターンで色付け
-3. **Lift heatmap**: 各 `case_type` における行動パターンの集中度（どのシナリオがどのパターンを引き起こすか）
+**3 output views:**
+1. **Topic leaderboard**: Pattern ranking by impact
+2. **Trace scatter map**: Each trace colored by behavior pattern on UMAP-reduced space
+3. **Lift heatmap**: Concentration of behavior patterns per `case_type` (which scenarios trigger which patterns)
 
-## AgentTrace スタイルの根本原因診断
+## AgentTrace-Style Root Cause Diagnosis
 
-発見が「何が繰り返されるか」を教えるのに対し、診断は「どこを最初に調査すべきか」を問う。
+While discovery answers "what repeats," diagnosis asks "where to investigate first."
 
-選択された行動パターンについて、実行グラフ `G = (V, E)` を再構築。フォーカスイベント（アンカー）から後方ウォークし、上流容疑者を重み付きスコアリング：
+For a selected behavior pattern, the execution graph `G = (V, E)` is reconstructed. A backward walk from the focus event (anchor) yields weighted suspect scoring:
 
 ```
 suspect_score = 0.4·proximity + 0.3·frequency + 0.2·bridge + 0.1·role
 ```
 
-| 要素 | 重み | 意味 |
-|------|------|------|
-| Proximity | 0.4 | フォーカスイベントへの近さ |
-| Frequency | 0.3 | 同じ行動パターン内のサンプルトレースでの再発頻度 |
-| Bridge | 0.2 | 実行グラフの部分間を接続する度合い |
-| Role | 0.1 | エージェント/ツールの役割と所見の関連性 |
+| Component | Weight | Meaning |
+|-----------|--------|---------|
+| Proximity | 0.4 | Distance to focus event |
+| Frequency | 0.3 | Recurrence across sample traces in the same behavior pattern |
+| Bridge | 0.2 | Degree of connection between parts of the execution graph |
+| Role | 0.1 | Relevance of agent/tool role to findings |
 
-> これは因果関係の証明ではなく、「このパターンが重要」から「これらのエージェント、ツール、ハンドオフ、レビューポリシーを最初に調査せよ」への変換である。
+> This is not proof of causation, but a translation from "this pattern matters" to "investigate these agents, tools, handoffs, and review policies first."
 
-## シミュレーション: EV 注文ワークフロー
+## Simulation: EV Order Workflow
 
-OpenAI Agents SDK 上に構築された合成 EV 注文・構成後ワークフロー。実世界の制約を反映：
+Synthetic EV ordering and post-configuration workflow built on the OpenAI Agents SDK. Reflects real-world constraints:
 
-- コンポーネント可用性とサプライヤー代替
-- 工場キャパシティと生産スケジューリング
-- 価格例外・プロモーション・インセンティブ
-- 関税と日付付き市場シグナル
-- 地域コンプライアンス制約
-- エスカレーション・レビュー閾値
+- Component availability and supplier substitution
+- Factory capacity and production scheduling
+- Pricing exceptions, promotions, and incentives
+- Tariffs and dated market signals
+- Regional compliance constraints
+- Escalation and review thresholds
 
-Orchestrator → validation, supply risk, procurement, capacity, factory routing, pricing, compliance, customer communications, release review の専門エージェント群。ハンドオフ・関数ツール・ガードレール・構造化出力・トレースにより完全な証跡パケットを保持。
+Specialist agents: Orchestrator → validation, supply risk, procurement, capacity, factory routing, pricing, compliance, customer communications, release review. Full audit trail maintained via handoffs, function tools, guardrails, structured outputs, and tracing.
 
-## 実践的適用ステップ
+## Practical Application Steps
 
-**AI エンジニアリングチーム向け**:
-1. 最も明確な lower-level eval 失敗をリグレッションスイートに昇格
-2. ルーブリック厳格さを較正するため自動グレードのサンプルをレビュー
-3. モデルバージョン・プロンプトバージョン・オーケストレーションモード別に行動パターンを追跡
-4. 最高インパクトパターンにビジネスオーナーを割り当て
-5. 上位容疑者（エージェント・ツール・ハンドオフ）を調査してからシステム変更
+**For AI engineering teams:**
+1. Promote the clearest lower-level eval failures to regression suites
+2. Review samples of automated grades to calibrate rubric strictness
+3. Track behavior patterns by model version, prompt version, and orchestration mode
+4. Assign business owners to highest-impact patterns
+5. Investigate top suspects (agents, tools, handoffs) before making system changes
 
-**ビジネスステークホルダー向け**:
-- 生成されたケースタイプが実際の運用リスクと一致するか判断
-- 高インパクトパターンが重要な顧客・運用成果に対応するか確認
-- レビュー閾値が意図したビジネス行動を生み出しているか検証
-- Sankey・ヒートマップビューでポリシー・プロセス設計の優先順位付け
+**For business stakeholders:**
+- Judge whether generated case types match real operational risks
+- Confirm that high-impact patterns correspond to important customer or operational outcomes
+- Verify that review thresholds produce intended business behaviors
+- Prioritize policy and process design via Sankey and heatmap views
 
-## 他の評価アプローチとの関係
+## Relationship to Other Evaluation Approaches
 
-| アプローチ | スコープ | 関係 |
-|-----------|---------|------|
-| [[evals-for-ai-agents]]（Anthropic） | エージェント評価の基本構造・落とし穴・採点手法 | 基礎。Macro evals はこの上に構築される集団層 |
-| [[infrastructure-noise-agent-evals]] | インフラノイズがエージェント評価に与える影響 | 評価インフラの信頼性に関する補完的視点 |
-| [[ai-resistant-evaluations]] | 評価自体の堅牢性設計 | 下位レベルの eval 設計原則 |
-| [[comparisons/evals-skills]] | コーディングエージェント向け評価スキル | MCP + スキルによる評価自動化の異なるアプローチ |
-| [[concepts/harness-engineering]] | OpenAI の AI 支援開発手法 | トレースを活用した自己検証の着想源 |
+| Approach | Scope | Relationship |
+|----------|-------|-------------|
+| [[evals-for-ai-agents]] (Anthropic) | Basic structure, pitfalls, and scoring methods for agent evaluations | Foundation. Macro evals build the population layer on top |
+| [[infrastructure-noise-agent-evals]] | Impact of infrastructure noise on agent evaluations | Complementary perspective on evaluation infrastructure reliability |
+| [[ai-resistant-evaluations]] | Robustness design of evaluations themselves | Lower-level eval design principles |
+| [[comparisons/evals-skills]] | Evaluation skills for coding agents | Different approach: MCP + skills for evaluation automation |
+| [[concepts/harness-engineering]] | OpenAI's AI-assisted development approach | Inspiration source for self-verification using traces |
 
-## ツールスタック
+## Tool Stack
 
-| ツール | 役割 |
-|--------|------|
-| **[[promptfoo]]** | エージェントレベルの lower-level eval（ルーブリック評価） |
-| **OpenAI Agents SDK** | マルチエージェントシステム構築（ハンドオフ、ガードレール、構造化出力、トレース） |
-| **BERTopic**（BERTopic ファミリー） | UMAP + HDBSCAN + c-TF-IDF によるトピックモデリング |
-| **AgentTrace** | 実行グラフ後方ウォークによる根本原因診断 |
-| **Plotly / Sankey** | ラベルチェーンの可視化、ヒートマップ、散布図 |
+| Tool | Role |
+|------|------|
+| **[[promptfoo]]** | Agent-level lower-level eval (rubric evaluation) |
+| **OpenAI Agents SDK** | Multi-agent system construction (handoffs, guardrails, structured outputs, tracing) |
+| **BERTopic** (BERTopic family) | Topic modeling via UMAP + HDBSCAN + c-TF-IDF |
+| **AgentTrace** | Root cause diagnosis via execution graph backward walk |
+| **Plotly / Sankey** | Label chain visualization, heatmaps, scatter plots |
 
-## 参考文献
+## References
 
 - [Macro Evals for Agentic Systems — OpenAI Cookbook](https://developers.openai.com/cookbook/examples/partners/macro_evals_for_agentic_systems/macro_evals_for_agentic_systems) — Shikhar Kwatra, Will Thieme, Bradley Strauss (OpenAI × Slalom)
 - [BERTopic Documentation](https://maartengr.github.io/BERTopic/)

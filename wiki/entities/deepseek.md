@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-05-25
+updated: 2026-05-26
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -27,41 +27,41 @@ Chinese AI lab and open-source LLM provider that has driven **cost disruption** 
 
 ## Technical Evolution & HPC Co-Design Philosophy
 
-DeepSeekの成功の核心は **HPC Co-Design**（モデルアーキテクチャとハードウェアインフラの同時最適化）にある。Martin Fowlerの分析 (2026) によれば、全てのアーキテクチャ決定は基盤となるHPCハードウェア（特にNVIDIA H800のインターコネクト制約）の限界を**利用し回避する**ために設計されている。
+The core of DeepSeek's success lies in **HPC Co-Design** (simultaneous optimization of model architecture and hardware infrastructure). According to Martin Fowler's analysis (2026), every architectural decision is designed to **exploit and circumvent** the limitations of the underlying HPC hardware (especially NVIDIA H800 interconnect constraints).
 
-### 3つの研究アーク
+### 3 Research Arcs
 
-| アーク | 主要技術 | 代表論文 |
-|--------|---------|---------|
-| **Efficiency（効率性）** | MLA（KVキャッシュ圧縮）、FP8訓練、DualPipe | V2, V3 |
-| **Sparsity（スパース性）** | DeepSeekMoE、Device-Limited Routing、Auxiliary-Loss-Free Gating | V2, V3 |
-| **Reasoning（推論）** | GRPO、ルールベース報酬、多段階RL/SFTパイプライン | R1 |
+| Arc | Key Technologies | Representative Paper |
+|-----|------------------|---------------------|
+| **Efficiency** | MLA (KV cache compression), FP8 training, DualPipe | V2, V3 |
+| **Sparsity** | DeepSeekMoE, Device-Limited Routing, Auxiliary-Loss-Free Gating | V2, V3 |
+| **Reasoning** | GRPO, rule-based rewards, multi-stage RL/SFT pipeline | R1 |
 
-### 論文シリーズの進化
+### Evolution of Paper Series
 
 ```
-DeepSeek-LLM (Jan 2024)           Scaling Laws発見
-    ↓                            非埋込FLOPs/tokenでスケールを再定義
-DeepSeek-V2  (Jun 2024)           アーキテクチャ効率革命
-    ↓                            MLA + DeepSeekMoE + Device-Limited Routing
-DeepSeek-V3  (Dec 2024)           超大規模HPC Co-Design
-    ↓                            671B MoE, FP8, DualPipe, Aux-Loss-Free
-DeepSeek-R1  (Jan 2025)           推論の創発
-                                 Pure RL → 自己検証・内省・蒸留 (Nature掲載)
-DeepSeek-V3.2(Dec 2025)           推論能力のフロンティア到達
-                                 DSA + スケーラブルRL + エージェント合成
-                                 IMO/IOI金メダル、GPT-5/Gemini-3.0-Proに迫る
-DeepSeek-V4  (Apr 2026)           フロンティア規模
-                                 1.6T Pro / 284B Flash、1M context、Ascend 950
+DeepSeek-LLM (Jan 2024)           Scaling Laws discovery
+    ↓                             Redefined scaling via non-embed FLOPs/token
+DeepSeek-V2  (Jun 2024)           Architecture efficiency revolution
+    ↓                             MLA + DeepSeekMoE + Device-Limited Routing
+DeepSeek-V3  (Dec 2024)           Massive-scale HPC Co-Design
+    ↓                             671B MoE, FP8, DualPipe, Aux-Loss-Free
+DeepSeek-R1  (Jan 2025)           Emergence of reasoning
+                                 Pure RL → self-verification, introspection, distillation (Nature)
+DeepSeek-V3.2(Dec 2025)           Frontiers of reasoning capability
+                                 DSA + scalable RL + agent synthesis
+                                 IMO/IOI gold medals, approaching GPT-5/Gemini-3.0-Pro
+DeepSeek-V4  (Apr 2026)           Frontier scale
+                                 1.6T Pro / 284B Flash, 1M context, Ascend 950
 ```
 
-各段階での革新が、制約された計算資源（H800 GPU）でもフロンティア性能に到達可能であることを実証した。
+Innovation at each stage demonstrated that frontier performance can be reached even with constrained compute resources (H800 GPUs).
 
 ## Models
 
 ### DeepSeek V4 Series (April 2026)
 
-**[[concepts/deepseek-v4|DeepSeek-V4]]** は100万トークンコンテキストを実用的コストで処理する超高効率MoEシリーズ。主要革新：Hybrid Attention（CSA+HCA+SWA）、Manifold-Constrained Hyper-Connections（mHC）、Muon Optimizer、MegaMoE、TileLang DSL、On-Policy Distillation、FP4 QAT。
+**[[concepts/deepseek-v4|DeepSeek-V4]]** is an ultra-efficient MoE series processing 1-million-token contexts at practical cost. Key innovations: Hybrid Attention (CSA+HCA+SWA), Manifold-Constrained Hyper-Connections (mHC), Muon Optimizer, MegaMoE, TileLang DSL, On-Policy Distillation, FP4 QAT.
 
 | Model | Total Params | Active Params | Context | Architecture |
 |-------|-------------|---------------|---------|-------------|
@@ -78,10 +78,10 @@ DeepSeek-V4  (Apr 2026)           フロンティア規模
 **Key facts:**
 - MIT license, open weights on HuggingFace (Pro: 865GB, Flash: 160GB)
 - V4-Pro is the largest open weights model, surpassing Kimi K2.6 (1.1T) and GLM-5.1 (754B)
-- **Codeforces 3206** rating（V4-Pro-Max）— 人間23位相当
+- **Codeforces 3206** rating (V4-Pro-Max) — equivalent to human rank #23
 - White-collar tasks: 63% non-loss rate vs Claude Opus 4.6
-- Agent-native: Interleaved Thinking（ツール呼び出し境界を越える推論保持）、Quick Instruction
-- **SWE-bench Verified: 80.6%** — オープンウェイトモデルとして初の80%超え
+- Agent-native: Interleaved Thinking (reasoning retention across tool call boundaries), Quick Instruction
+- **SWE-bench Verified: 80.6%** — first open-weight model to exceed 80%
 - Trained on 32T+ tokens with Anticipatory Routing + SwiGLU Clamping for stability
 - **Local inference**: V4-Flash (~154GB) runs on Mac Studio M3 Ultra (512GB); V4-Pro (~800GB) requires data center VRAM
 
@@ -115,12 +115,11 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 
 ### Earlier Models
 
-- **DeepSeek-LLM** (January 2024) — 67B params。スケーリング則を非埋込FLOPs/token（M）で再定義。高品質データが同トークン数でより大きなモデルを正当化することを示した。2Tバイリンガルトークンで訓練、LLaMA-2 70Bを数学・コーディングで上回る。Scaling Laws論文。
-- **DeepSeek-V2** (June 2024) — アーキテクチャ効率の革命。**MLA**（Multi-Head Latent Attention：KVキャッシュの低ランク圧縮）と **DeepSeekMoE**（共有エキスパート＋ルーテッドエキスパート、H800インターコネクト制約を克服するDevice-Limited Routing）を初導入。以降の全モデルの基盤。
+- **DeepSeek-LLM** (January 2024) — 67B params. Redefined scaling laws with non-embed FLOPs/token (M). Showed that high-quality data justifies larger models at the same token count. Trained on 2T bilingual tokens, surpassing LLaMA-2 70B on math and coding. Scaling Laws paper.
+- **DeepSeek-V2** (June 2024) — Revolution in architecture efficiency. First introduced **MLA** (Multi-Head Latent Attention: low-rank KV cache compression) and **DeepSeekMoE** (shared expert + routed experts, Device-Limited Routing overcoming H800 interconnect constraints). Foundation for all subsequent models.
 - **[[concepts/deepseek-v3|DeepSeek V3]]** (December 2024) — 671B total / 37B active params, MoE. Landmark technical report (arXiv:2412.19437): first FP8 training at 671B scale, auxiliary-loss-free load balancing, multi-token prediction, DualPipe. Trained on 14.8T tokens for $5.576M (2.788M H800 GPU hours). Achieved GPT-4o-class performance at <1/20th the training cost. MIT license.
-- **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]** (December 2025) — 685B params。**DSA**（DeepSeek Sparse Attention：学習可能なスパースアテンションによる $O(L^2)→O(Lk)$ 効率化）、**スケーラブルRL**（GRPO強化：Unbiased KL推定 + Off-Policy Sequence Masking + Keep Routing Mask、ポストトレーニング予算が事前学習の10%超）、**大規模エージェントタスク合成**（1,827環境・85Kプロンプト）の3つの革新。V3.2-SpecialeはIMO 2025・IOI 2025で金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る性能。DSAはV4、GLM-5.1にも波及。技術レポート（arXiv:2512.02556）。
-- **[[concepts/deepseek-r1|DeepSeek R1]]** (January 2025) — Reasoning-focused model. **Nature**掲載（Vol. 645, 2025）。Pure RL（GRPO）で推論能力の創発を初めて大規模実証。「アハモーメント」、自己検証・内省の自律的獲得。AIME 2024: 79.8%, MATH-500: 97.3%（o1-1217に匹敵）。蒸留によりQwen-1.5B/7B、Llama-8B/70Bにも展開。訓練コスト$294K。推論パターンはV3へも蒸留。
-
+- **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]** (December 2025) — 685B params. Three innovations: **DSA** (DeepSeek Sparse Attention: learnable sparse attention providing $O(L^2)→O(Lk)$ efficiency), **Scalable RL** (enhanced GRPO: Unbiased KL estimation + Off-Policy Sequence Masking + Keep Routing Mask, post-training budget >10% of pretraining), **Large-scale agent task synthesis** (1,827 environments, 85K prompts). V3.2-Speciale won gold medals at IMO 2025 and IOI 2025, placed 2nd worldwide at ICPC World Finals. Performance approaching GPT-5/Gemini-3.0-Pro. DSA also propagated to V4 and GLM-5.1. Technical report (arXiv:2512.02556).
+- **[[concepts/deepseek-r1|DeepSeek R1]]** (January 2025) — Reasoning-focused model. Published in **Nature** (Vol. 645, 2025). First large-scale demonstration of emergent reasoning through pure RL (GRPO). "Aha moment," autonomous acquisition of self-verification and introspection. AIME 2024: 79.8%, MATH-500: 97.3% (comparable to o1-1217). Deployed via distillation to Qwen-1.5B/7B, Llama-8B/70B. Training cost $294K. Reasoning patterns also distilled to V3.
 
 ## V4-Pro Permanent Discount (May 2026)
 
@@ -156,74 +155,73 @@ The pricing table in the Models section (pre-discount) should be read in context
 | **V4-Flash** | $0.14 | $0.28 |
 | **V4-Pro** | ~~$1.74~~ → **$0.435** (75% off) | ~~$3.48~~ → **$0.87** (75% off) |
 
-
 ## Strategy
 
 ### Core Thesis: 10 Trillion USD Hardware Ecosystem Play
 
-DeepSeekの戦略を理解する鍵は、短期的な収益（コーディングプラン販売など）ではなく、**中国発のAIハードウェアエコシステム全体を創出する10兆ドルゲーム**をプレイしているという視点である（@bookwormengr, May 2026）。Liang Wenfeng CEOの目は「AGI for everyone」という言葉通り、はるかに大きな獲物を見据えている。
+The key to understanding DeepSeek's strategy is not short-term revenue (such as selling coding plans) but rather the perspective that they are playing a **$10 trillion game to create an entire China-originated AI hardware ecosystem** (@bookwormengr, May 2026). CEO Liang Wenfeng's vision, as expressed in "AGI for everyone," targets a much larger prize.
 
-- **短期的収益を追求しない一貫した選択**: マルチモーダルモデルなし、音声モデルなし、動画モデルなし。2026年5月までハーネスチームすら存在しなかった（最近採用開始）
-- **全イノベーションがハードウェア制約の解放に向かう**: MoE、MLA、DSA、CSA、HSA、Engram、mHC — すべてが「より少ないHWリソースでより多くを達成する」方向性
-- **オープンソースコミットメント**: ソース公開によりグローバルな採用を加速し、エコシステムのデファクトスタンダード化を狙う
+- **Consistent choice to forgo short-term revenue**: No multimodal model, no voice model, no video model. Until May 2026, no harness team even existed (recruitment recently began)
+- **All innovations aim to alleviate hardware constraints**: MoE, MLA, DSA, CSA, HSA, Engram, mHC — all oriented toward "achieving more with less HW resources"
+- **Open-source commitment**: Accelerating global adoption through open publication, aiming for de facto standard status in the ecosystem
 
-### KV Cache Economics: メモリ産業の創造
+### KV Cache Economics: Creating a Memory Industry
 
-DeepSeekのKVキャッシュ圧縮革新が、中国メモリ産業全体の起爆剤となる構造：
+DeepSeek's KV cache compression innovations act as a catalyst for the entire Chinese memory industry:
 
-| 1Mコンテキスト時のKVキャッシュ | 消費HBM |
-|-------------------------------|---------|
+| KV Cache at 1M Context | HBM Consumption |
+|------------------------|-----------------|
 | **DeepSeek V4 (1.6T)** | **5.48 GB** |
-| GLM5 (~700B, MLA+DSA使用) | 60 GB |
+| GLM5 (~700B, using MLA+DSA) | 60 GB |
 | Qwen3-235B-A22B (GQA) | 89 GB |
 
-**戦略的含意**:
-- 超小型KVキャッシュ → SSDへのオフロードが経済的に成立 → **NAND需要の爆発的増加**
-- 中国のYMTC（長江存儲）は3D NANDの巨人として台頭中。DeepSeekがNANDの巨大市場を創出
-- DeepSeekのキャッシュヒット価格はSonnet 4.6の**3%未満**、かつ複数時間保持 → 常識外れの低価格の裏にはKVキャッシュ効率がある
-- Dual Path論文の技術でSSDからのKVキャッシュ高速リロードも実現
+**Strategic implications:**
+- Ultra-small KV cache → offloading to SSD becomes economically viable → **explosive increase in NAND demand**
+- China's YMTC (Yangtze Memory Technologies) is emerging as a 3D NAND giant. DeepSeek creates a massive market for NAND
+- DeepSeek's cache hit price is **less than 3%** of Sonnet 4.6, and persists for multiple hours → the extraordinary low pricing is underpinned by KV cache efficiency
+- Dual Path paper technology also enables fast KV cache reload from SSD
 
 ### Memory-Compute Trade-offs: LPDDR + Engram
 
-中国のGPU/ASICはEUVリソグラフィ不在のため、**トランジスタ密度で欧米に恒久的に劣後する**。DeepSeekはこの構造的制約を**メモリで計算を代替する**戦略で克服：
+Due to the absence of EUV lithography, Chinese GPUs/ASICs will **permanently lag behind the West in transistor density**. DeepSeek overcomes this structural constraint with a strategy of **replacing computation with memory**:
 
-- **LPDDRメモリ**: CXMT（長鑫存儲）は速度でわずか0.5世代、密度で1世代遅れ。十分にキャッチアップ可能な距離
-- **Engram**（Q1 2026）: N-gram埋め込みをO(1)ハッシュルックアップ化するモジュール。Transformerが計算で模倣していた知識検索をメモリ参照に置換 → 「1回のLPDDRルックアップ vs Transformerの全層forward pass」という極めて有利なトレードオフ
-- **SGLangの方式**: 重みをLPDDRに保持し、必要に応じてHBMにストリーム。DeepSeekの4ビット重み+多数エキスパートのMoEアーキテクチャがこの方式と親和的
+- **LPDDR memory**: CXMT (ChangXin Memory Technologies) trails by only 0.5 generations in speed and 1 generation in density — a catchable distance
+- **Engram** (Q1 2026): A module that converts N-gram embeddings into O(1) hash lookups. Replaces knowledge retrieval that Transformers simulate through computation with memory references → a highly favorable trade-off: "one LPDDR lookup vs a full Transformer forward pass"
+- **SGLang approach**: Keep weights in LPDDR, stream to HBM as needed. DeepSeek's 4-bit weights + many-expert MoE architecture is naturally suited to this approach
 
-**結論**: 豊富なNANDとLPDDRメモリが中国製GPU/ASICの計算能力不足を補完し、西側製ハードウェアに依存しないAIインフラを可能にする。
+**Conclusion**: Abundant NAND and LPDDR memory compensates for the computational deficit of Chinese GPUs/ASICs, enabling AI infrastructure independent of Western hardware.
 
-### Hardware Enablement: 中国半導体エコシステム全体の底上げ
+### Hardware Enablement: Lifting the Entire Chinese Semiconductor Ecosystem
 
-米国の輸出規制下で、DeepSeekの全イノベーションは**中国ハードウェア産業全体を競争力のある選択肢に変える**副次的効果を持つ：
+Under US export controls, all of DeepSeek's innovations have the **secondary effect of making the entire Chinese hardware industry competitive**:
 
-| DeepSeek革新 | 削減対象 | 恩恵を受ける中国HW産業 |
-|-------------|---------|---------------------|
-| MLA + CSA + HSA | HBM需要（最大98%削減） | YMTC（NAND/SSD）、CXMT（LPDDR） |
-| Engram | 計算FLOPs | CXMT（LPDDR）、ASICメーカー |
-| TileLang DSL | CUDA依存 | Moore Threads, MetaX, Biren, Iluvatar CoreX（全GPU/ASIC） |
-| MoE + 4-bit Weights | HBM帯域幅 | ネットワークチップメーカー |
-| MegaMoE + Dual Pipe | インターコネクト帯域 | 中国製NVLink相当チップ |
+| DeepSeek Innovation | Reduction Target | Beneficiary Chinese HW Industry |
+|--------------------|-----------------|--------------------------------|
+| MLA + CSA + HSA | HBM demand (up to 98% reduction) | YMTC (NAND/SSD), CXMT (LPDDR) |
+| Engram | Computation FLOPs | CXMT (LPDDR), ASIC manufacturers |
+| TileLang DSL | CUDA dependency | Moore Threads, MetaX, Biren, Iluvatar CoreX (all GPU/ASICs) |
+| MoE + 4-bit Weights | HBM bandwidth | Network chip manufacturers |
+| MegaMoE + Dual Pipe | Interconnect bandwidth | Chinese NVLink-equivalent chips |
 
-**TileLangの戦略的意義**: カーネルを一度書けば全ハードウェアプラットフォームで動作 → CUDA moat（堀）を迂回。中国GPUメーカー（Moore Threads, MetaX, Biren, Iluvatar CoreX）のCUDA互換レイヤーを補完。AMDなど西側代替GPUの採用も促進。
+**Strategic significance of TileLang**: Write a kernel once and it runs on all hardware platforms → bypasses the CUDA moat. Complements the CUDA compatibility layers of Chinese GPU makers (Moore Threads, MetaX, Biren, Iluvatar CoreX). Also facilitates adoption of Western alternative GPUs like AMD.
 
-### Equity-Collaboration Model: OpenAI-AMD型の資本提携
+### Equity-Collaboration Model: OpenAI-AMD Style Capital Partnership
 
-DeepSeekの収益化モデルは、OpenAIがAMD/Cerebrasと結んだワラント（新株引受権）契約と同じ構造が想定される：
+DeepSeek's monetization model is expected to follow the same warrant agreement structure that OpenAI signed with AMD/Cerebras:
 
 > "AMD has issued OpenAI a warrant for up to 160 million shares of AMD common stock, structured to vest as specific milestones are achieved." — AMD Press Release, Oct 2025
 
-- OpenAI: AMD/Cerebrasの消費マイルストーン達成で株式取得 → パートナーの成功が自社の利益に直結
-- DeepSeek: 中国のメモリ・ASIC・CPU・ネットワーキングスタック企業と同様の契約を締結し、緊密に協業してHWスタックをAIワークロード対応に育成
-- 西側AI銘柄の合計時価総額は10T USD超 → 中国でも同等規模の産業創出が可能
-- DeepSeek自身は**1T USD valuation**を達成しながら「AGI for everyone」を実現
+- OpenAI: Acquires shares upon achieving AMD/Cerebras consumption milestones → partner success directly links to self-interest
+- DeepSeek: Expected to sign similar agreements with Chinese memory, ASIC, CPU, and networking companies, closely collaborating to develop the HW stack for AI workloads
+- Total market cap of Western AI stocks exceeds $10T → equivalent industrial creation is possible in China
+- DeepSeek itself could achieve **$1T valuation** while realizing "AGI for everyone"
 
 ### Long Game: RL Post-Training + RSI
 
-ハードウェア選択肢の拡大と計算需要の削減により、DeepSeekはより野心的な訓練プロジェクトに着手可能になる：
+With expanded hardware options and reduced compute demand, DeepSeek can pursue more ambitious training projects:
 
-- **大規模RLポストトレーニング**: 数兆トークンの軌跡生成。1Mコンテキストの訓練で長期ホライズンタスクが可能に
-- **RSI（Recursive Self-Improvement / 自動研究）**: AI自身が実験を設計・実行。試行錯誤が膨大な計算を要するが、AGI→ASIに必要な能力。ハードウェア制約の解放がRSIを実現可能にする
+- **Large-scale RL post-training**: Generating trillions of tokens of trajectory data. Training at 1M context enables long-horizon tasks
+- **RSI (Recursive Self-Improvement)**: AI designing and running its own experiments. Trial-and-error requires enormous computation, but is necessary for AGI → ASI. Freeing hardware constraints makes RSI achievable
 
 ### Open-Source Feedback Loop
 
@@ -231,19 +229,19 @@ DeepSeekの収益化モデルは、OpenAIがAMD/Cerebrasと結んだワラント
 - Radical cost undercutting: API prices 90-97% lower than Western alternatives
 - Open-source feedback loop: adoption → rapid iteration → further adoption → reinforced industrial dominance
 - Rapid global uptake via open-source channels (available on OpenRouter, HuggingFace)
-- **標準化戦略**: MLA、DSA、GRPO等の革新がGLM、Kimi等の中国AIラボ全体に波及 → DeepSeekアーキテクチャが中国AI業界のデファクト標準に
+- **Standardization strategy**: Innovations like MLA, DSA, and GRPO propagate across Chinese AI labs (GLM, Kimi, etc.) → DeepSeek architecture becomes the de facto standard for Chinese AI industry
 
 ### Contrarian Nature
 
-DeepSeekの「逆張り」の歴史（@bookwormengrのHero's Journey分析より）：
+DeepSeek's history of "contrarian" bets (from @bookwormengr's Hero's Journey analysis):
 
-| 業界の常識 | DeepSeekの選択 |
-|-----------|---------------|
-| Denseモデル構築 | MoE（訓練困難だが効率的） |
-| PPO（標準RLアルゴリズム） | GRPO（新規発明、Critic不要） |
-| インクリメンタル改善 | 第一原理からの再発明 |
-| アプリケーション販売で即時収益 | ハードウェアエコシステム育成という長期ゲーム |
-| ソース非公開で競争優位維持 | オープンソースでデファクト標準化 |
+| Industry Norm | DeepSeek's Choice |
+|--------------|-------------------|
+| Build dense models | MoE (hard to train but efficient) |
+| PPO (standard RL algorithm) | GRPO (novel invention, no Critic needed) |
+| Incremental improvement | Reinvent from first principles |
+| Sell applications for immediate revenue | Long game of cultivating hardware ecosystem |
+| Keep source closed for competitive advantage | Open-source for de facto standardization |
 
 > Source: [@bookwormengr "DeepSeek's 10 trillion USD grand strategy"](https://x.com/bookwormengr/status/2057909493250539891) (May 22, 2026)
 

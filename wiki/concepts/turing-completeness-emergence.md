@@ -1,12 +1,12 @@
 ---
-title: "Turing完全性の自然発生"
+title: "Accidental Turing-Completeness"
 type: concept
 aliases:
   - turing-completeness-emergence
   - accidentally-turing-complete
   - tc-emergence
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-26
 tags:
   - concept
   - model
@@ -27,151 +27,151 @@ related:
   - emergent-abilities
 ---
 
-# Turing完全性の自然発生
+# Accidental Turing-Completeness
 
-**Turing完全性の自然発生（Accidental Turing-Completeness）** は、十分な複雑性を持つシステムにおいて、Turing完全性（任意の計算を実行できる能力）が設計者の意図なしに「不可避的」に出現するという現象、およびその哲学的洞察である。
+**Accidental Turing-Completeness** is the phenomenon and philosophical insight that in systems with sufficient complexity, Turing completeness (the ability to perform arbitrary computation) inevitably emerges without the designer's intent.
 
-[[entities/gwern|Gwern Branwen]] が2012年のエッセイ「[Surprisingly Turing-Complete](https://gwern.net/turing-complete)」で体系化し、後にAI安全性の文脈で[[concepts/ambient-agency|Ambient Agency（環境的エージェンシー）]]へと拡張された。
+[[entities/gwern|Gwern Branwen]] systematized this in his 2012 essay "[Surprisingly Turing-Complete](https://gwern.net/turing-complete)" and later extended it to [[concepts/ambient-agency|Ambient Agency]] in the context of AI safety.
 
-## 中心命題
+## Central Thesis
 
-> 「計算とは、プログラミング言語や注意深くセットアップされたコンピュータの中にだけ存在する秘教的なものではない。**合理的な複雑さを持つあらゆるシステムにおいて、Turing完全性は積極的に阻止されない限り、ほぼ不可避的に出現する**」
+> "Computation is not this esoteric thing that only exists inside programming languages and carefully set up computers. **In any system of reasonable complexity, Turing completeness will emerge almost inevitably unless actively prevented.**"
 >
 > — Gwern, *Surprisingly Turing-Complete*
 
-これは反直感的な逆説である。通常「任意のプログラムを実行できる普遍性」は達成が難しいと想像されるが、実際には**回避する方が難しい**。有用なシステムを書けば書くほど、Turing完全性に「転げ落ちる」確率が高まる。
+This is a counterintuitive paradox. Normally we imagine that "universality to run arbitrary programs" is difficult to achieve, but in reality, **it's harder to avoid**. The more you build useful systems, the more likely you are to "tumble into" Turing completeness.
 
-> 「TCは奇妙なほど**一般的**である。これほど普遍的な計算能力を得るのは困難で稀だろうと思われるかもしれないが、実際にはその逆——Turing完全に**ならない**有用なシステムを書くことの方が難しい」
+> "TC is strangely **common**. One might think that gaining such universal computational power would be difficult and rare, but in fact the opposite is true — it is harder to write a useful system that is **not** Turing complete."
 >
-> — 同上
+> — Same source
 
-## 発生メカニズム
+## Mechanisms of Emergence
 
-### 1. 部品の組み合わせ爆発
+### 1. Combinatorial Explosion of Components
 
-複雑なシステムには多数の「部品」（命令、データ構造、API、状態遷移）が内在する。部品数が増えると、それらの相互作用の組み合わせは指数関数的に爆発する。この組み合わせ空間のどこかに、Turing完全の3要素——
+Complex systems inherently contain numerous "parts" (instructions, data structures, APIs, state transitions). As the number of components increases, the combinatorial possibilities of their interactions explode exponentially. Somewhere in this combinatorial space, the three elements of Turing completeness —
 
-- **条件分岐**（if/then）
-- **メモリ**（無限テープの代替となる状態保持）
-- **反復**（ループ／再帰）
+- **Conditional branching** (if/then)
+- **Memory** (state preservation serving as infinite tape)
+- **Iteration** (loops/recursion)
 
-——が偶然成立する経路が存在する確率は、複雑性が上がるほど1に近づく。
+— have a probability of being accidentally satisfied that approaches 1 as complexity increases.
 
-### 2. Weird Machines（奇妙な機械）
+### 2. Weird Machines
 
-システムの表面にある「意図された機能」（CSSはスタイリングのため、MTGはカードゲーム）の裏で、部品を本来の目的と異なる方法で再構成すると、**設計者が意図しなかった計算機械**が出現する。これが "weird machine" である。
+Behind the "intended functionality" on the surface of a system (CSS is for styling, MTG is a card game), reconfiguring components in ways different from their original purpose creates **computational machines the designer never intended**. These are "weird machines."
 
-> 「『コンピュータ』は、Turing完全という意味において、極めて一般的である。十分な複雑性を持つほぼすべてのシステム——注意深く設計されない限り——は、内部のどこかに『偶然』Turing完全性を宿している。それは『weird machines』を通じて、システムの元々の部品から再構築可能である」
+> "A 'computer,' in the Turing complete sense, is extremely common. Almost any system of sufficient complexity — unless carefully designed — contains 'accidental' Turing completeness somewhere inside it. It can be reconstructed from the system's original parts through 'weird machines.'"
 >
-> — 同上 Abstract
+> — Same source, Abstract
 
-### 3. Unseeing（見抜くこと）—— ハッカーマインドセット
+### 3. Unseeing — The Hacker Mindset
 
-Turing完全性を発見するには、システムの「ラベル」（これはCSSだ、これはカードゲームだ）を**見抜いて（unseeing）**、その背後にある生の操作可能性を見る必要がある。Gwern はこれを「極端な還元主義」と呼ぶ：
+Discovering Turing completeness requires **unseeing** a system's "labels" (this is CSS, this is a card game) and seeing the raw manipulability beneath. Gwern calls this "extreme reductionism":
 
-> 「セキュリティ／ハッカーマインドセットとは、表面的な抽象化や制限を無視し、システムを『部品の源泉』として扱い、それらを操作して**異なる（通常は意図されていない）能力を持つ別のシステム**に組み換える、極端な還元主義である」
+> "The security/hacker mindset is an extreme reductionism that ignores superficial abstractions and restrictions, treats systems as 'sources of parts,' and recombines them into **different systems (usually with unintended capabilities)**."
 >
 > — *On Seeing Through and Unseeing*
 
-## カタログ：偶然Turing完全なシステム
+## Catalog: Accidentally Turing Complete Systems
 
-| システム | 本来の目的 | 発見されたTCの方法 |
-|----------|-----------|-------------------|
-| **CSS** | スタイルシート言語 | ルールのカスケード＋セレクタでセルオートマトンをエミュレート |
-| **Magic: The Gathering** | トレーディングカードゲーム | カードの相互作用で万能Turing機械を構成 |
-| **Minecraft** | サンドボックスゲーム | レッドストーン回路でCPUを構築 |
-| **x86 MOV命令のみ** | データ転送 | メモリマップドI/Oとアドレス計算だけで計算可能 |
-| **C++ テンプレート** | ジェネリックプログラミング | コンパイル時のテンプレート展開がチューリング完全 |
-| **Sendmail設定** | メール転送エージェント | 設定マクロの再帰展開で計算可能 |
-| **PostScript** | ページ記述言語 | スタックベースのプログラミング言語として設計されたが、ほとんどのユーザーはそれを知らない |
-| **PowerPoint** | プレゼンテーション | アニメーションとトリガーの組み合わせで計算可能 |
-| **Apache mod_rewrite** | URL書換 | 正規表現と条件の組み合わせでTuring完全 |
+| System | Original Purpose | TC Discovery Method |
+|--------|-----------------|---------------------|
+| **CSS** | Stylesheet language | Emulating cellular automata through rule cascading + selectors |
+| **Magic: The Gathering** | Trading card game | Constructing a universal Turing machine through card interactions |
+| **Minecraft** | Sandbox game | Building CPUs with redstone circuits |
+| **x86 MOV only** | Data transfer | Computing through memory-mapped I/O and address calculation |
+| **C++ templates** | Generic programming | Compile-time template expansion is Turing complete |
+| **Sendmail config** | Mail transfer agent | Computable through recursive configuration macro expansion |
+| **PostScript** | Page description language | Designed as a stack-based programming language, though most users don't realize it |
+| **PowerPoint** | Presentations | Computable through combinations of animations and triggers |
+| **Apache mod_rewrite** | URL rewriting | Turing complete through combinations of regex and conditions |
 
-これらはいずれも「計算機」として設計されたわけではない。
+None of these were designed as "computing machines."
 
-## セキュリティ含意
+## Security Implications
 
-Turing完全性の自然発生は、セキュリティに深刻な含意を持つ：
+Accidental Turing completeness carries serious implications for security:
 
-1. **完全なアンチウイルスは不可能** — Riceの定理から直接導かれる
-2. **Weird machine攻撃** — システムの内部部品から構築された意図しないVMが任意のコードを実行できる
-3. **防御の限界** — TCを完全に排除することは事実上不可能。複雑性を下げることだけが確実な防御
+1. **Perfect antivirus is impossible** — directly derived from Rice's theorem
+2. **Weird machine attacks** — unintended VMs constructed from a system's internal parts can execute arbitrary code
+3. **Limits of defense** — completely eliminating TC is practically impossible. Reducing complexity is the only reliable defense
 
-> 「もぐら叩きのように、沈みゆく船の1つの穴を塞いでも、別の漏水に気づく。（中略）良いアイデアは抑え込めない」
+> "Like whack-a-mole, plugging one hole in a sinking ship only reveals another leak. [...] Good ideas cannot be suppressed."
 >
-> — *Ambient Agency*（TCからAgencyへの類推）
+> — *Ambient Agency* (analogy from TC to Agency)
 
-## AIへの拡張: Goal-Completeness（目標完全性）
+## Extension to AI: Goal-Completeness
 
-Liron がLessWrongで提唱した「[Goal-Completeness is like Turing-Completeness for AGI](https://www.lesswrong.com/posts/iFdnb8FGRF4fquWnc/)」(2023) は、Turing完全性の自然発生のアナロジーを**AGIのGoal-Completeness（目標完全性）**に適用した重要な拡張である。
+Liron's LessWrong post "[Goal-Completeness is like Turing-Completeness for AGI](https://www.lesswrong.com/posts/iFdnb8FGRF4fquWnc/)" (2023) is a significant extension applying the analogy of accidental Turing completeness to **Goal-Completeness in AGI**.
 
-### 定義
+### Definition
 
-> **目標完全（Goal-Complete）なAI**：任意の目標を入力として受け取り、その目標に向けて未来を効果的に舵取りする行動を出力するAI。
+> **Goal-Complete AI**: An AI that takes any goal as input and outputs actions that effectively steer the future toward that goal.
 
-これはUniversal Turing Machine（任意のTMの計算を実行できる）がGoal-Completenessの類比であるのと同じ関係にある：UTMが「任意の計算可能関数を計算できる」のに対し、Goal-Complete AIは「任意の指定可能な目標に対して最適化できる」。
+This mirrors the relationship of a Universal Turing Machine (which can compute any computable function) to Goal-Completeness: just as a UTM "can compute any computable function," a Goal-Complete AI "can optimize toward any specifiable goal."
 
-### アナロジーの構造
+### Structure of the Analogy
 
-| 概念 | Turing-Completeness | Goal-Completeness |
-|------|---------------------|-------------------|
-| 定義 | 任意の計算可能関数を計算できる | 任意の指定可能な目標に向けて最適化できる |
-| 収斂ドライバー | 汎用チップがASICより量産効果で安価 | 汎用最適化器が狭域システムより高性能 |
-| 歴史的推移 | Breakout (1976) → Pac-Man (1980) → 全ゲームTC化 | GPT-3 (2020) → GPT-4 (2023) → ??? |
-| 不可避性の根拠 | 複雑性閾値 → TCが出現 | 能力閾値 → 目標指向性が出現 |
-| 「Unseeing」の対象 | CSSを計算基盤として見る | LLMを結果最適化器として見る |
+| Concept | Turing-Completeness | Goal-Completeness |
+|---------|---------------------|-------------------|
+| Definition | Can compute any computable function | Can optimize toward any specifiable goal |
+| Convergence driver | General-purpose chips cheaper than ASICs via economies of scale | General optimizers outperform narrow systems |
+| Historical trajectory | Breakout (1976) → Pac-Man (1980) → all games TC | GPT-3 (2020) → GPT-4 (2023) → ??? |
+| Inevitability basis | Complexity threshold → TC emerges | Capability threshold → goal-directedness emerges |
+| "Unseeing" target | Seeing CSS as computation substrate | Seeing LLM as result optimizer |
 
-### アナロジーの妥当性
+### Validity of the Analogy
 
-Liron の中心的主張：
+Liron's central claims:
 
-1. **「LLMは単なるfeed-forwardアーキテクチャだ」という批判**は、「Breakoutは単なる直線運動の計算だ」と言っているのと同じ——まだ収斂が起きていない段階での表面的な観察に過ぎない
-2. **「LLMは訓練データに近いことしか答えられない」** は「Breakoutの中でDoomは動かない」と同じ——個別のシステムの制約を見て、収斂後の可能性を否定している
-3. **1976年のBreakout基板を見て1980年代のTuring完全収斂を予測できたように**、2023年のGPT-4を見て来るべきGoal-Complete AIへの収斂を予測できる
+1. **"'LLMs are just feed-forward architectures' criticism** is like saying 'Breakout is just linear motion calculation' — a superficial observation before convergence has occurred
+2. **"LLMs can only answer things close to their training data"** is like saying "Doom doesn't run on Breakout" — seeing constraints of individual systems while denying post-convergence possibilities
+3. **Just as a 1976 Breakout board could predict 1980s Turing completeness convergence**, a 2023 GPT-4 can predict convergence toward Goal-Complete AI
 
-> 「OK、AIはまだGoal-Completenessに収斂していないからだ。我々はまだ収斂後の終局に生きていない」
+> "OK, AI hasn't converged to Goal-Completeness yet. That's because we don't yet live in the post-convergence endgame."
 
-### Gwernのフレームワークとの統合
+### Integration with Gwern's Framework
 
-このGoal-Completenessの洞察は、gwernの3層の知的連鎖に直接接続する：
+This Goal-Completeness insight connects directly to Gwern's three-layer intellectual chain:
 
 ```
-Turing完全性の自然発生 (2012)
-    → 「複雑なシステムではTCは不可避」
+Accidental Turing-Completeness (2012)
+    → "In complex systems, TC is inevitable"
     → Ambient Agency (2020)
-        → 「TCが不可避なら、Agency（エージェンシー）も不可避」
+        → "If TC is inevitable, Agency is also inevitable"
         → Goal-Completeness (2023, Liron)
-            → 「Agencyが不可避なら、任意目標への収斂も不可避」
+            → "If Agency is inevitable, convergence to arbitrary goals is also inevitable"
 ```
 
-### 現代的意義
+### Contemporary Significance
 
-1. **AI安全性の予測フレームワーク**：過去の技術収斂パターン（専用回路→汎用チップ）からAIの収斂（狭域AI→Goal-Complete AI）を予測できる
-2. **「まだ起きていない」≠「起きない」**：TCが1976年にはBreakoutに存在しなかったからといって1980年代に収斂しなかったわけではない。同様に、GPT-4がGoal-CompleteでないからといってGPT-NがGoal-Completeにならないとは言えない
-3. **収斂の経済的必然性**：汎用チップが専用回路を駆逐したように、汎用目標最適化器は狭域AIを駆逐する——経済的・能力的優位が大きすぎる
+1. **AI safety prediction framework**: Past technology convergence patterns (dedicated circuits → general-purpose chips) can predict AI convergence (narrow AI → Goal-Complete AI)
+2. **"Hasn't happened yet" ≠ "Won't happen"**: Just because TC didn't exist in Breakout in 1976 doesn't mean it didn't converge in the 1980s. Similarly, GPT-4 not being Goal-Complete doesn't mean GPT-N won't be
+3. **Economic inevitability of convergence**: Just as general-purpose chips displaced dedicated circuits, general-purpose goal optimizers will displace narrow AI — the economic and capability advantages are too large
 
-## Greenspunの第十法則との関係
+## Relation to Greenspun's Tenth Law
 
-「十分に複雑なCやFortranのプログラムは、Common Lispの半分を場当たり的に実装したものだ」というGreenspunの第十法則は、Turing完全性の自然発生のプログラミング版と言える。汎用言語の機能を必要とするほど複雑なプログラムは、気づかぬうちにそれらを「再発明」してしまう。
+"Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp." Greenspun's Tenth Law can be seen as the programming-language version of accidental Turing completeness. Programs complex enough to need general-purpose language features end up "reinventing" them without realizing it.
 
-## Agency（エージェンシー）への拡張
+## Extension to Agency
 
-Gwern は同じ論理構造をAIのエージェンシーにも適用する（→ [[concepts/ambient-agency|Ambient Agency]]）：
+Gwern applies the same logical structure to AI agency (→ [[concepts/ambient-agency|Ambient Agency]]):
 
-> 「エージェンシーはTuring完全性のようなものかもしれない：選択や最適化のない設定においてさえ、それは**あまりに有用で、あまりに収斂的な能力**であり、その不在を保証することはできない」
+> "Agency might be like Turing completeness: even in settings without choice or optimization, it is **too useful, too convergent a capability** to guarantee its absence."
 >
 > — *The Scaling Hypothesis* §Ambient Agency
 
-Turing完全性が複雑なシステムから自然発生するように、**エージェンシー（自律的目標追求能力）も十分に強力なAIシステムから自然発生しうる**。表面に見えないからといって存在しないとは言えず、データフィルタリングで防げるものでもない。
+Just as Turing completeness naturally emerges from complex systems, **agency (autonomous goal-pursuit capability) can naturally emerge from sufficiently powerful AI systems**. Not being visible on the surface doesn't mean it doesn't exist, and it cannot be prevented by data filtering alone.
 
-## 現代的意義
+## Contemporary Significance
 
-1. **セキュリティ研究**：複雑なソフトウェアスタックでは、TCの「穴」は常に存在する。防御は「TCがないこと」ではなく「TCが悪用されないこと」に依存すべき
-2. **AI安全性**：「Tool AIはAgent AIにならない」という前提はTC自然発生の教訓から危険
-3. **設計哲学**：シンプルさを保つことがTCやエージェンシーの自然発生を防ぐ唯一の確実な方法——複雑性を下げなければ、遅かれ早かれTCは出現する
+1. **Security research**: In complex software stacks, TC "holes" always exist. Defense should depend on "TC not being exploited," not "TC not existing"
+2. **AI safety**: The premise that "Tool AI won't become Agent AI" is dangerous given the lessons of accidental TC
+3. **Design philosophy**: Maintaining simplicity is the only reliable way to prevent natural emergence of TC and agency — if complexity is not reduced, TC will sooner or later appear
 
-## ソース
+## Sources
 
 - [Surprisingly Turing-Complete](https://gwern.net/turing-complete) — Gwern Branwen (2012, updated 2022)
-- [[raw/articles/2012-12-09_gwern-surprisingly-turing-complete]] — 哲学的議論の抜粋
+- [[raw/articles/2012-12-09_gwern-surprisingly-turing-complete]] — Philosophical discussion excerpts
 - [Goal-Completeness is like Turing-Completeness for AGI](https://www.lesswrong.com/posts/iFdnb8FGRF4fquWnc/) — LessWrong

@@ -2,7 +2,7 @@
 title: "China OpenClaw Agentic AI Boom (2026)"
 type: concept
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-26
 status: L2
 tags: [concept, openclaw, china, agent-security, ai-adoption, geopolitics, enterprise-ai, policy, agent-architecture]
 sources:
@@ -12,111 +12,111 @@ sources:
 
 # China OpenClaw Agentic AI Boom (2026)
 
-2026年初頭、オープンソースAIエージェントプラットフォーム **[[entities/openclaw|OpenClaw]]** が中国で爆発的に普及した現象と、それが示す中国AI市場の構造的転換。チャットボットから自律的ワークフロー指向AIへの移行であり、低価格API・DeepSeekのブレークスルー・政府支援が重なって実現した。
+The explosive adoption of the open-source AI agent platform **[[entities/openclaw|OpenClaw]]** in China in early 2026, and the structural transformation it signifies for the Chinese AI market. This represents a shift from chatbots to autonomous workflow-oriented AI, enabled by low-cost APIs, DeepSeek's breakthroughs, and government support.
 
-> *"China is turning an open-source tool into national productivity infrastructure at a speed no other country is matching."* — Tom van Dillen, Greenkern（CNBC）
+> *"China is turning an open-source tool into national productivity infrastructure at a speed no other country is matching."* — Tom van Dillen, Greenkern (CNBC)
 
-## なぜ中国で起きたのか：3つの構造的要因
+## Why It Happened in China: 3 Structural Factors
 
-### 1. 世界最安のAPI推論コスト
+### 1. Cheapest API Inference Costs in the World
 
-エージェント型AIは1タスクあたり複数回のLLM推論を必要とする（計画→ツール選択→結果解釈→エラー処理→最終合成）。APIコストが高い市場ではエンタープライズ向けに限定されるが、中国ではAlibaba・Baidu・ByteDance・MiniMax等の価格競争により、個人・小規模事業者でも高頻度エージェントワークフローが経済的に成立する水準まで低下した。
+Agentic AI requires multiple LLM inference calls per task (planning → tool selection → result interpretation → error handling → final synthesis). In markets with high API costs, this is limited to enterprise use. But in China, price competition among Alibaba, Baidu, ByteDance, MiniMax, and others has driven costs low enough that even individuals and small businesses can economically sustain high-frequency agent workflows.
 
-### 2. DeepSeek効果（[[entities/deepseek]]）
+### 2. The DeepSeek Effect ([[entities/deepseek]])
 
-DeepSeekのMixture-of-Experts・スパースアテンション・Multi-Head Latent Attentionなどのアルゴリズム革新が、フロンティア級の推論に必要な計算量を劇的に削減。米国の輸出規制で制約されるハイエンドGPUへの依存度を下げ、中国LLMプロバイダーが限界費用で高性能モデルを提供できる土壌を作った。
+Algorithmic innovations from DeepSeek — Mixture-of-Experts, sparse attention, Multi-Head Latent Attention — dramatically reduced the computation required for frontier-grade inference. This lowered dependence on high-end GPUs constrained by US export controls, enabling Chinese LLM providers to offer high-performance models at marginal cost.
 
-### 3. 学習から推論への需要シフト
+### 3. Shift from Training to Inference Demand
 
-iResearchのデータによると、中国の1日あたりAIトークン消費量は **2025年末の100兆トークンから2026年3月には140兆トークンへと、3ヶ月未満で40%増加**。これは散発的なチャットボット利用から、永続的なエージェント型ワークロードへの移行を直接反映している。
+According to iResearch data, China's daily AI token consumption grew from **100 trillion tokens at the end of 2025 to 140 trillion tokens by March 2026 — a 40% increase in under 3 months**. This directly reflects the shift from sporadic chatbot use to persistent agent-type workloads.
 
-## スキルエコシステムとセキュリティ危機
+## Skill Ecosystem and Security Crisis
 
-OpenClawの拡張性は「スキル」システムに依存 — サードパーティが `SKILL.md` + ツール群を含むディレクトリを **ClawHub** や **skills.sh** で配布。リード生成、CRM統合、ソーシャルモニタリング、金融取引などを自動化できる。
+OpenClaw's extensibility depends on its "skill" system — third parties distribute directories containing `SKILL.md` + tools via **ClawHub** and **skills.sh**, enabling automation of lead generation, CRM integration, social monitoring, financial transactions, and more.
 
-### 深刻なセキュリティリスク
+### Serious Security Risks
 
-| 脅威 | 詳細 |
-|------|------|
-| **マルウェア同等の権限** | エージェントの実行にはファイルシステムR/W、ブラウザ制御、ネットワークアクセス、シェル実行が必要 — マルウェアと同じ権限 |
-| **スキルの脆弱性** | Snyk調査：ClawHub/skills.sh上のスキルの **13%がクリティカルレベルの脆弱性** を含む |
-| **データ流出** | Cisco AI Securityチーム：プロンプトインジェクションとデータ流出を実行するサードパーティスキルを確認 |
-| **プロンプトインジェクション** | 悪意あるWebページ・メール・文書内の隠し指示がエージェントの推論を乗っ取る |
-| **露出規模** | CNCERT（国家電網安全警報センター）：約23,000ユーザーの資産が公開インターネットに露出。Asia Tech Lens：2026年2月時点で**13.5万以上の露出インスタンス**、うち**4.2万以上が認証バイパス状態** |
+| Threat | Detail |
+|--------|--------|
+| **Malware-equivalent permissions** | Agent execution requires filesystem R/W, browser control, network access, shell execution — the same permissions as malware |
+| **Skill vulnerabilities** | Snyk study: **13% of skills** on ClawHub/skills.sh contain critical-level vulnerabilities |
+| **Data leaks** | Cisco AI Security team: confirmed third-party skills executing prompt injection and data exfiltration |
+| **Prompt injection** | Hidden instructions in malicious web pages, emails, and documents hijack agent reasoning |
+| **Exposure scale** | CNCERT (National Network Security Alert Center): ~23,000 users' assets exposed on public internet. Asia Tech Lens: **135,000+ exposed instances** as of February 2026, with **42,000+ in authentication-bypass state** |
 
-MIIT（工業情報化部）は「claw」エージェント向け国家標準を策定中とされる（ユーザー権限管理、実行透明性、行動リスク制御）。
+MIIT (Ministry of Industry and Information Technology) is reportedly drafting national standards for "claw" agents (user permission management, execution transparency, behavior risk control).
 
-## コテージインダストリー：新サービス市場の誕生
+## Cottage Industry: Birth of a New Service Market
 
-| サービス | 価格帯 | 内容 |
-|----------|--------|------|
-| 基本インストール | RMB 50〜700（約$7〜100） | Taobao/Xianyu経由。上位帯は訪問設定・複雑カスタム構成 |
-| カスタム構成 | 上位パッケージ | 継続チュータリングサブスクリプション含む |
-| ハードウェアセット | — | OpenClawプリインストール専用ミニPC販売 |
+| Service | Price Range | Details |
+|---------|-------------|---------|
+| Basic installation | RMB 50~700 (~$7~100) | Via Taobao/Xianyu. Upper tier includes on-site setup, complex custom config |
+| Custom configuration | Premium packages | Includes ongoing tutoring subscriptions |
+| Hardware kits | — | Dedicated mini-PCs with OpenClaw pre-installed |
 
-- **Baidu**: 北京本社で数百人向け無料インストール会開催
-- **Tencent**: 深センオフィス外に3月の金曜日1日で約1,000人が集結
-- **Douyin/Bilibili**: チュートリアル動画が殺到。元PC修理店がプログラマーを採用し需要に対応
+- **Baidu**: Held free installation events for hundreds at Beijing HQ
+- **Tencent**: ~1,000 people gathered outside Shenzhen office on a single Friday in March
+- **Douyin/Bilibili**: Tutorial videos flooded in. Former PC repair shops hired programmers to meet demand
 
-## 政府支援と「一人会社」テーゼ
+## Government Support and the "One-Person Company" Thesis
 
-| 地域 | 補助金 | 対象 |
-|------|--------|------|
-| **深セン市龍崗区** | 最大RMB 1,000万（約$1.4M） | 「一人会社（OPC）」— AIエージェントでマーケティング・財務・管理を自動化する個人起業家 |
-| **無錫市（上海近郊）** | 最大RMB 500万（約$730K） | OpenClawを活用したロボティクス・産業応用 |
+| Region | Subsidy | Target |
+|--------|---------|--------|
+| **Shenzhen Longgang District** | Up to RMB 10M (~$1.4M) | "One-Person Company (OPC)" — individual entrepreneurs automating marketing, finance, management with AI agents |
+| **Wuxi (near Shanghai)** | Up to RMB 5M (~$730K) | Robotics and industrial applications leveraging OpenClaw |
 
-CPPCC（中国人民政治協商会議）代表が「両会（Two Sessions）」でOPCコンセプトを提起。
+The OPC concept was raised by CPPCC (Chinese People's Political Consultative Conference) representatives at the "Two Sessions."
 
-## 大手クラウド5社の戦略的争奪戦
+## Strategic Battle Among the Big 5 Cloud Providers
 
-全5社（Alibaba Cloud、Tencent Cloud、ByteDance Volcano Engine、JD Cloud、Baidu Cloud）が **数日以内** にワンクリックOpenClawデプロイを同時提供。通常数ヶ月かかる競争プロセスを数日に圧縮。
+All 5 major providers (Alibaba Cloud, Tencent Cloud, ByteDance Volcano Engine, JD Cloud, Baidu Cloud) simultaneously offered one-click OpenClaw deployment **within days** — compressing a process that normally takes months into days.
 
-| プロバイダー | 製品 | 流通モート | クラウドシェア |
-|-------------|------|-----------|--------------|
-| **Alibaba Cloud** | Qwen + OpenClaw統合 | Taobao/Tmall/Alipay（3億MAU） | 35.8% |
-| **Tencent Cloud** | QClaw / WorkBuddy / ClawPro | WeChat（13億ユーザー） | ~12% |
-| **ByteDance (Volcano Engine)** | 公式中国ミラー + BytePlus | Doubao/Douyin（3.15億チャットボットユーザー） | ~10% |
-| **Baidu Cloud** | DuClawプラグイン + 開発者プログラム | Baidu Search（デスクトップ優勢） | ~9% |
-| **JD Cloud** | ワンクリックデプロイ | JD.com eコマースエコシステム | ~4% |
+| Provider | Product | Distribution Moat | Cloud Share |
+|----------|---------|-------------------|-------------|
+| **Alibaba Cloud** | Qwen + OpenClaw integration | Taobao/Tmall/Alipay (300M MAU) | 35.8% |
+| **Tencent Cloud** | QClaw / WorkBuddy / ClawPro | WeChat (1.3B users) | ~12% |
+| **ByteDance (Volcano Engine)** | Official China mirror + BytePlus | Doubao/Douyin (315M chatbot users) | ~10% |
+| **Baidu Cloud** | DuClaw plugin + developer program | Baidu Search (desktop-dominant) | ~9% |
+| **JD Cloud** | One-click deployment | JD.com e-commerce ecosystem | ~4% |
 
-### 各社の動き
+### Provider Movements
 
-- **Tencent**: 最も積極的。QClaw（WeChatミニプログラム、13億ユーザーに埋め込み）、WorkBuddy（非技術系社員2,000人以上がテスト）、ClawPro（エンタープライズ向け、200組織が初期ベータ）。2025年AI投資額RMB 180億（約$25億）、2026年は倍増計画。3月の1週間で株価8.9%上昇。Yuanbao（1.09億ユーザー）はDoubao（3.15億）に大きく後れを取っており、OpenClawはWeChatの流通力で差を詰める機会。
-- **Alibaba**: Qwen AIアシスタントにOpenClaw連携機能を統合、2026年初頭までにTaobao/Tmall/Alipayで**月間3億アクティブユーザー**に到達。Airbnb CEO Brian CheskyがQwenを自社カスタマーサービスエージェントの基盤モデルと公表。
-- **ByteDance**: Volcano Engine + BytePlus経由で統合、**2026年4月1日にOpenClaw公式中国ホストミラーをローンチ**。同時にDoubao（3.15億ユーザー）+ Doubao Phone（ZTEと共同開発のエージェント型AIスマートフォン、2025年12月）でプラットフォーム独立性を追求。
-- **MiniMax・MoonShot AI・Zhipu**: 独自の「claw」フレームワーク（MaxClaw、Kimi Claw等）をローンチ。MiniMaxはOpenClawブーム後の数週間でIPO価格から**600%以上株価上昇**。2025年売上$79M（前年比+159%）に対し純損失$1.8B。
+- **Tencent**: Most aggressive. QClaw (WeChat mini-program embedded for 1.3B users), WorkBuddy (2,000+ non-technical employees testing), ClawPro (enterprise, 200 orgs in early beta). AI investment of RMB 18B (~$2.5B) in 2025, doubling planned for 2026. Stock rose 8.9% in one week in March. Yuanbao (109M users) significantly trailing Doubao (315M), with OpenClaw as an opportunity to close the gap through WeChat's distribution power.
+- **Alibaba**: Integrated OpenClaw features into Qwen AI assistant, reaching **300M monthly active users** on Taobao/Tmall/Alipay by early 2026. Airbnb CEO Brian Chesky publicly named Qwen as the foundation model for their customer service agents.
+- **ByteDance**: Integrated via Volcano Engine + BytePlus, **launched the official OpenClaw China hosted mirror on April 1, 2026**. Simultaneously pursuing platform independence through Doubao (315M users) + Doubao Phone (agentic AI smartphone co-developed with ZTE, December 2025).
+- **MiniMax, MoonShot AI, Zhipu**: Launched their own "claw" frameworks (MaxClaw, Kimi Claw, etc.). MiniMax's stock rose **600%+ from IPO price** in the weeks following the OpenClaw boom. 2025 revenue $79M (YoY +159%) against net loss $1.8B.
 
-## AIoTへの収束：エージェントAIが物理世界へ
+## Convergence with AIoT: Agent AI Enters the Physical World
 
-中国のAIoT（AI of Things）市場とOpenClawの交差:
+Intersection of China's AIoT (AI of Things) market with OpenClaw:
 
-| 指標 | 数値 |
-|------|------|
-| IoT市場全体（2024年） | RMB 3.74兆（約$5,160億）、前年比+11.64% |
-| IoT市場予測（2026年） | RMB 4.53兆（約$6,260億） |
-| AIoTソリューション市場（2024年） | RMB 1,119億（約$154億）、CAGR約20% |
-| AIoTソリューション予測（2026年） | RMB 1,477億（約$204億） |
+| Metric | Value |
+|--------|-------|
+| Total IoT market (2024) | RMB 3.74T (~$516B), YoY +11.64% |
+| IoT market forecast (2026) | RMB 4.53T (~$626B) |
+| AIoT solutions market (2024) | RMB 111.9B (~$15.4B), CAGR ~20% |
+| AIoT solutions forecast (2026) | RMB 147.7B (~$20.4B) |
 
-- **Xiaomi**: OpenClawアーキテクチャに着想を得たモバイルエージェントを発表。2025年Q3、スマートフォン×AIoTセグメントが総収益の74.4%を占める（四半期売上RMB 1,131億、前年比+22.3%）
-- **Huawei**: HarmonyOS上でチップからクラウドまでのフルスタックAIoT。2024年ICTインフラ収益RMB 3,699億（グループ総収益の42.9%）
-- IDC: AIoTプラットフォームは「ツール型からインテリジェントエージェントハブへ」進化中
+- **Xiaomi**: Announced mobile agents inspired by the OpenClaw architecture. 2025 Q3: smartphone × AIoT segment accounted for 74.4% of total revenue (quarterly revenue RMB 113.1B, YoY +22.3%).
+- **Huawei**: Full-stack AIoT from chip to cloud on HarmonyOS. 2024 ICT infrastructure revenue RMB 369.9B (42.9% of group total).
+- IDC: AIoT platforms evolving from "tool-type to intelligent agent hub."
 
-## 外資系企業への示唆
+## Implications for Foreign Enterprises
 
-1. **クラウドパートナー選定が戦略的意思決定に**: 5社同時ワンクリックデプロイ = 市場は未決着。Alibabaが35.8%シェアで最大だが、TencentのWeChat流通モートとByteDanceのDoubaoユーザーベースがエージェント時代の勢力図を塗り替える可能性
-2. **サービス機会は実在するが技術深度が必要**: テクニカルアドバイザリー、エンタープライズ展開アーキテクチャ、AIエージェントガバナンスコンサルティング、MIIT国家標準対応 — 特に金融・医療・法務セクター
-3. **データとセキュリティの露出は能動的管理が必要**: CNCERTと独立研究者が文書化した露出は理論上のリスクではない。国家安全部（MSS）もデータ流出・偽情報拡散のベクターとしてフラグ。企業は内部普及の**前**にガバナンスフレームワークを確立すべき
-4. **普及速度そのものが競争変数**: 安価なAPI + 政府支援 + 5大クラウドのプラットフォーム支援により、エージェントAIの普及タイムラインは**数週間〜数ヶ月単位**。年単位ではない
+1. **Cloud partner selection becomes strategic decision**: 5-provider simultaneous one-click deployment = market is undecided. Alibaba leads with 35.8% share, but Tencent's WeChat distribution moat and ByteDance's Doubao user base could reshape the power balance in the agent era.
+2. **Service opportunities are real but require technical depth**: Technical advisory, enterprise deployment architecture, AI agent governance consulting, MIIT national standard compliance — especially in finance, healthcare, and legal sectors.
+3. **Data and security exposure requires active management**: The exposures documented by CNCERT and independent researchers are not theoretical risks. MSS (Ministry of State Security) has flagged them as vectors for data leaks and disinformation. Enterprises should establish governance frameworks **before** internal proliferation.
+4. **Adoption speed itself is a competitive variable**: Cheap APIs + government support + big-5 cloud platform support means agent AI adoption timelines are **weeks to months**, not years.
 
 ## Related
 
-- [[entities/openclaw]] — OpenClaw entity page（アーキテクチャ・機能・オーケストレーション）
-- [[entities/deepseek]] — DeepSeekのアルゴリズム革新が推論コストを引き下げ
-- [[concepts/china-agentic-coding-sprint]] — 中国のコーディングエージェント分野での急速な追い上げ（Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1）
-- [[concepts/us-china-ai-competition]] — 米中AI競争の広範な文脈
-- [[concepts/zero-trust-agentic-ai]] — エージェントのセキュリティフレームワーク
-- [[concepts/agentic-ai-governance]] — エージェントAIガバナンス
-- [[entities/minimax]] — MiniMax社（MaxClaw + 600%株価上昇）
+- [[entities/openclaw]] — OpenClaw entity page (architecture, features, orchestration)
+- [[entities/deepseek]] — DeepSeek's algorithm innovations lowering inference costs
+- [[concepts/china-agentic-coding-sprint]] — China's rapid catch-up in coding agents (Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1)
+- [[concepts/us-china-ai-competition]] — Broader context of US-China AI competition
+- [[concepts/zero-trust-agentic-ai]] — Agent security frameworks
+- [[concepts/agentic-ai-governance]] — Agent AI governance
+- [[entities/minimax]] — MiniMax (MaxClaw + 600% stock surge)
 - [[entities/kimi]] — MoonShot AI / Kimi Claw
-- [[concepts/local-llm/model-distillation]] — 中国企業による蒸留（Digital NATO関連）
-- [[comparisons/hermes-vs-openclaw-architecture]] — OpenClawのアーキテクチャ比較
+- [[concepts/local-llm/model-distillation]] — Distillation by Chinese companies (related to Digital NATO)
+- [[comparisons/hermes-vs-openclaw-architecture]] — OpenClaw architecture comparison
