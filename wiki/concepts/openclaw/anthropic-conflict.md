@@ -27,92 +27,92 @@ sources:
 
 # Anthropic-OpenClaw Conflict
 
-## 概要
+## Overview
 
-2026年4月、**Anthropic**はClaudeのサブスクリプションプラン（Pro/Max）からサードパーティAIエージェントフレームワーク（OpenClawなど）のアクセスをブロックした。この決定は、プラットフォーム管理、開発者アクセス、AIエージェントインフラの経済学をめぐる重大な論争を引き起こした。
+In April 2026, **Anthropic** blocked third-party AI agent frameworks (such as OpenClaw) from accessing Claude's subscription plans (Pro/Max). This decision sparked a major controversy around platform governance, developer access, and the economics of AI agent infrastructure.
 
 > *"First they copy some popular features into their closed harness, then they lock out open source."* — Peter Steinberger
 
-## タイムライン
+## Timeline
 
-| 日付 | イベント |
+| Date | Event |
 |------|---------|
-| 2026年1月下旬 | "Clawdbot" → Anthropicの商標クレーム → "Moltbot" → "OpenClaw" へ改名 |
-| 2026年2月14日 | Peter Steinberger、OpenAI入社を発表 |
-| 2026年4月1日 | Claude Codeソースコード（512K行）がnpmパッケージ経由で流出 |
-| **2026年4月4日** | **Anthropic、サードパーティツールをClaudeサブスクリプションから排除** |
-| 2026年4月4-11日 | Steinberger & Dave Morinが交渉 — 施行を1週間延期 |
-| 2026年4月6日 | Computerworldが「Claw Tax」を報道 |
-| 2026年4月10日 | Steinbergerのアカウントが「不審なアクティビティ」で一時停止（数時間で復帰） |
-| 2026年4月10-12日 | TechCrunch、Business Insiderが報道 |
+| Late January 2026 | "Clawdbot" → Anthropic trademark claim → Renamed to "Moltbot" → "OpenClaw" |
+| February 14, 2026 | Peter Steinberger announces joining OpenAI |
+| April 1, 2026 | Claude Code source code (512K lines) leaked via npm package |
+| **April 4, 2026** | **Anthropic removes third-party tools from Claude subscriptions** |
+| April 4-11, 2026 | Steinberger & Dave Morin negotiate — enforcement delayed by one week |
+| April 6, 2026 | Computerworld reports on "Claw Tax" |
+| April 10, 2026 | Steinberger's account temporarily suspended for "suspicious activity" (restored within hours) |
+| April 10-12, 2026 | TechCrunch, Business Insider report on the controversy |
 
-## 「Claw Tax」の経済学
+## The Economics of "Claw Tax"
 
-Anthropicの新たなポリシーにより、OpenClawユーザーは以下のいずれかを選択する必要が生じた：
+Under Anthropic's new policy, OpenClaw users had to choose one of the following:
 
-1. **従量課金APIレート** — $3/百万入力トークン
-2. **別個のClaude APIキー** — サブスクリプション制限を回避
-3. **使用量バンドルの事前購入** — サブスクリプション会員は最大30%割引
+1. **Pay-as-you-go API Rate** — $3/million input tokens
+2. **Separate Claude API Key** — Bypasses subscription restrictions
+3. **Pre-purchased Usage Bundles** — Up to 30% discount for subscription members
 
-### 計算の現実
+### The Math
 
-| ユーザータイプ | 1日あたりの推定コスト |
+| User Type | Estimated Cost Per Day |
 |---|---|
-| 単一OpenClawインスタンス（Claude Opus） | **$109.55/日**（c't 3003テスト） |
-| 一般開発者の平均 | **$6/日** |
-| トークンギャップ | **サブスクリプション価値の約9倍** |
+| Single OpenClaw Instance (Claude Opus) | **$109.55/day** (c't 3003 test) |
+| Average Developer | **$6/day** |
+| Token Gap | **~9x the subscription value** |
 
-1つのOpenClawインスタンスが1全速で動作すると、通常のチャットユーザーの**約300倍**のトークンを消費する。Ban時点で135,000以上のOpenClawインスタンスが稼働していた。
+A single OpenClaw instance running at full speed consumes **~300x** the tokens of a normal chat user. Over 135,000 OpenClaw instances were active at the time of the ban.
 
-## 競争的文脈
+## Competitive Context
 
-### SteinbergerのOpenAI移籍
+### Steinberger's Move to OpenAI
 
-- Sam AltmanがSteinbergerを「次世代パーソナルエージェントを牽引する人物」として公然と歓迎
-- Anthropicのサブスクリプションブロックは、SteinbergerのOpenAI入社発表から**数週間後**に発生
-- OpenClawはOpenAIの支援のもとオープンソース財団へ移行
+- Sam Altman publicly welcomed Steinberger as "the person leading next-generation personal agents"
+- Anthropic's subscription block occurred **weeks after** Steinberger's announcement about joining OpenAI
+- OpenClaw transitioned to an open-source foundation with OpenAI's support
 
-### Anthropicの立場
+### Anthropic's Position
 
-Boris Cherny（Claude Code責任者）：
+Boris Cherny (Claude Code lead):
 > *"Our subscriptions weren't built for the usage patterns of these third-party tools. Capacity is a resource we manage thoughtfully and we are prioritizing our customers using our products and API."*
 
-AnthropicのClaude Codeは**サブスクリプションに含まれたまま** — サードパーティのみが対象。
+Anthropic's own Claude Code **remained included** in subscriptions — only third-party tools were affected.
 
-## 広範な影響
+## Broader Implications
 
-### 1. フラットレート vs 自律エージェント
+### 1. Flat Rate vs Autonomous Agents
 
-サブスクリプションモデルは**会話的ユースケース**を想定して設計されており、自律的なエージェントループ（継続的ツール呼び出し、バックグラウンド処理、マルチステップ推論）のコストを吸収できない。
+The subscription model was designed for **conversational use cases** and cannot absorb the cost of autonomous agent loops (continuous tool calls, background processing, multi-step reasoning).
 
-### 2. プラットフォームロックイン
+### 2. Platform Lock-In
 
-AI企業がモデルへのアクセスを**いつでも制限できる**という根本的なリスク。OSS開発者はプロプライエタリAPI上に構築する存在リスクに直面する。
+The fundamental risk that AI companies can **restrict access to models at any time**. OSS developers face existential risk building on proprietary APIs.
 
-### 3. 業界全体のパターン
+### 3. Industry-Wide Pattern
 
-Anthropicに留まらない：
-- GoogleもGeminiのサードパーティエージェントフレームワーク使用に対して行動
-- 主要AIプロバイダーは自社のクローズドエージェントエコシステムを優先する方向へ
+Not limited to Anthropic:
+- Google also took action against third-party agent framework usage of Gemini
+- Major AI providers are moving toward prioritizing their own closed agent ecosystems
 
-## OpenClaw哲学との関係
+## Relationship to OpenClaw Philosophy
 
-この出来事はOpenClawの**Primitives First**哲学を検証した：
+This event validated OpenClaw's **Primitives First** philosophy:
 
-| 側面 | 影響 |
+| Aspect | Impact |
 |------|------|
-| **Local-First** | API依存を最小化することで、プラットフォームリスクを低減 |
-| **Explicit > Implicit** | ユーザーが自らのエージェント環境を完全に制御できる |
-| **Ship Beats Perfect** | プラットフォームの制限に縛られず、高速に開発・デプロイ可能 |
+| **Local-First** | Minimizes API dependency, reducing platform risk |
+| **Explicit > Implicit** | Users have full control over their agent environment |
+| **Ship Beats Perfect** | Can develop and deploy quickly, unconstrained by platform restrictions |
 
-## 和解案
+## Settlement
 
-Anthropicが提供した措置：
-- 月額サブスクリプション相当の一回限りのクレジット（4月17日までに使用、90日有効）
-- 最大30%割引のAPI使用量バンドル
-- APIキーオプション（フルAPIレート）
+Measures offered by Anthropic:
+- One-time credits equivalent to monthly subscription (use by April 17, valid for 90 days)
+- API usage bundles with up to 30% discount
+- API key option (full API rate)
 
-## 関連
+## Related
 
 - [[concepts/openclaw]] — OpenClawコンセプト集約
 - [[concepts/openclaw/philosophy]] — Primitives First哲学

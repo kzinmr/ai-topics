@@ -19,104 +19,104 @@ sources:
 
 # Agent Loop Orchestration
 
-LLMエージェントが自律的にタスクを完了させるための**実行ループ構造**。モデルがアクションを提案し、プラットフォームが実行し、結果をモデルにフィードバックする循環プロセス。
+An **execution loop structure** for LLM agents to autonomously complete tasks. A cyclic process where the model proposes actions, the platform executes them, and results are fed back to the model.
 
-## 基本ループ
+## Basic Loop
 
-OpenAI Responses APIでの標準的なエージェントループ:
-
-```
-1. コンテキスト組み立て
-   → ユーザープロンプト + 会話履歴 + ツール指示
-
-2. モデルが次のアクションを決定
-   → シェルコマンドを1つ以上提案
-
-3. APIがコマンドをコンテナ内で実行
-   → 分離された環境でコマンド実行
-
-4. 出力をモデルにストリーミング
-   → リアルタイムで結果をフィードバック
-
-5. モデルが結果を検査
-   → 追加コマンドを提案するか、最終回答を生成
-
-6. ループ継続（モデルが追加コマンドを返さなくなるまで）
-```
-
-## 並列実行
-
-モデルは**1つのステップで複数のシェルコマンドを提案**でき、Responses APIはそれらを**独立したコンテナセッションで並列実行**できる。
+Standard agent loop in the OpenAI Responses API:
 
 ```
-例: データ分析エージェント
-├─ セッション1: grepでファイル検索
-├─ セッション2: curlでAPIからデータ取得
-└─ セッション3: 前回の結果を検証
-    → 各セッションが独立して出力をストリーミング
-    → APIが構造化ツール出力にマルチプレクス
+1. Context Assembly
+   → User prompt + conversation history + tool instructions
+
+2. Model Determines Next Action
+   → Proposes one or more shell commands
+
+3. API Executes Commands in Container
+   → Commands execute in an isolated environment
+
+4. Output Streamed to Model
+   → Results fed back in real time
+
+5. Model Inspects Results
+   → Either proposes additional commands or generates a final response
+
+6. Loop Continues (until the model stops returning additional commands)
 ```
 
-## 出力キャップ
+## Parallel Execution
 
-コマンドの出力はコンテキストウィンドウを急速に消費するため、**出力制限**が必須:
+The model can **propose multiple shell commands in a single step**, and the Responses API can **execute them in parallel in independent container sessions**.
+
+```
+Example: Data Analysis Agent
+├─ Session 1: grep file search
+├─ Session 2: curl API data fetch
+└─ Session 3: Verify previous results
+    → Each session streams output independently
+    → API multiplexes into structured tool outputs
+```
+
+## Output Capping
+
+Command output rapidly consumes the context window, making **output capping** essential:
 
 ```text
 text at the beginning ... 1000 chars truncated ... text at the end
 ```
 
-- 先頭と末尾を保持、中間を切り捨て
-- モデルが関連する結果に集中できるようノイズを削減
-- ターミナルログの氾濫を防ぐ
+- Preserves beginning and end, truncates middle
+- Reduces noise so the model can focus on relevant results
+- Prevents terminal log overflow
 
-## シェルツール vs Code Interpreter
+## Shell Tool vs Code Interpreter
 
-| 機能 | Code Interpreter | Shell Tool |
+| Feature | Code Interpreter | Shell Tool |
 |------|-----------------|------------|
-| 言語 | Pythonのみ | Go, Java, Node.js, Unixユーティリティ |
-| ユースケース | データ分析、スクリプト実行 | サーバー起動、API呼び出し、ファイル操作 |
-| 柔軟性 | 限定的 | 幅広い（grep, curl, awk等） |
-| 永続性 | セッション限り | コンテナファイルシステムで永続化 |
+| Language | Python only | Go, Java, Node.js, Unix utilities |
+| Use Case | Data analysis, script execution | Server startup, API calls, file operations |
+| Flexibility | Limited | Broad (grep, curl, awk, etc.) |
+| Persistence | Session-limited | Persisted via container filesystem |
 
-## OpenAI vs 他社アプローチ
+## OpenAI vs Other Approaches
 
-| プラットフォーム | ループ管理 | 実行環境 | 出力制御 |
+| Platform | Loop Management | Execution Environment | Output Control |
 |----------------|-----------|---------|---------|
-| **OpenAI Responses API** | ネイティブ（API内） | ホスト型コンテナ | 出力キャップ、ストリーミング |
-| **Hermes (delegate_task)** | メインエージェント | 隔離ターミナルセッション | イテレーション制限 |
-| **LangGraph** | カスタムグラフ | 開発者管理 | 開発者実装 |
-| **Anthropic** | カスタムharness | 開発者管理 | 開発者実装 |
+| **OpenAI Responses API** | Native (in-API) | Hosted containers | Output capping, streaming |
+| **Hermes (delegate_task)** | Main agent | Isolated terminal sessions | Iteration limits |
+| **LangGraph** | Custom graph | Developer-managed | Developer-implemented |
+| **Anthropic** | Custom harness | Developer-managed | Developer-implemented |
 
-## OpenAI Responses APIの特徴
+## OpenAI Responses API Features
 
 > "Instead of putting it on developers to build their own execution environments, we built the necessary components to equip the Responses API with a computer environment to reliably execute real-world tasks."
 
-- **マネージド**: 開発者が独自の実行環境を構築する必要がない
-- **ストリーミング**: リアルタイム出力でモデルが次の判断を動的に行える
-- **並列**: 複数コマンドの同時実行で高速化
-- **コンテキスト最適化**: 出力キャップでコンテキスト予算を保護
+- **Managed**: Developers don't need to build their own execution environments
+- **Streaming**: Real-time output allows the model to make dynamic decisions
+- **Parallel**: Speed up via simultaneous command execution
+- **Context Optimization**: Output capping protects the context budget
 
-## 設計上の教訓
+## Design Lessons
 
-### ✅ ベストプラクティス
-- プロンプトでシェルツールの使用を明示的に指示
-- GPT-5.2以降のシェルトレーニング済みモデルを使用
-- 出力キャップを常に設定
-- 構造化されたツール出力でモデルの判断を支援
+### ✅ Best Practices
+- Explicitly instruct shell tool usage in prompts
+- Use shell-trained models (GPT-5.2 and later)
+- Always set output caps
+- Use structured tool outputs to support model decision-making
 
-### ❌ アンチパターン
-- 大きなファイルやテーブルをプロンプトに直接貼り付け（→ コンテキスト浪費）
-- 出力制限なしでコマンド実行（→ ターミナルログ氾濫）
-- ループ管理をクライアント側で実装（→ 開発者負担増）
+### ❌ Anti-Patterns
+- Pasting large files or tables directly into prompts (→ wastes context)
+- Running commands without output limits (→ terminal log overflow)
+- Implementing loop management on the client side (→ increased developer burden)
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering/system-architecture/context-compaction]] — コンテキストが満杯になった際の圧縮メカニズム
-- [[concepts/harness-engineering/system-architecture/container-context]] — 実行環境の永続化
-- [[concepts/context-window-management]] — コンテキスト予算の戦略的管理
-- [[concepts/harness-engineering]] — エージェント実行環境の設計（上位概念）
+- [[concepts/harness-engineering/system-architecture/context-compaction]] — Compression mechanism for full context windows
+- [[concepts/harness-engineering/system-architecture/container-context]] — Execution environment persistence
+- [[concepts/context-window-management]] — Strategic context budget management
+- [[concepts/harness-engineering]] — Agent execution environment design (higher-level concept)
 
-## 参照
+## References
 
 - [OpenAI: From model to agent](https://openai.com/index/equip-responses-api-computer-environment/)
 - [[entities/openai]] — OpenAI

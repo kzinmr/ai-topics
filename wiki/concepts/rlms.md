@@ -23,119 +23,119 @@ related:
 
 # Recursive Language Models (RLMs)
 
-**RLMs** (Recursive Language Models) は、LLMが自身のコンテキストを**再帰的に読み書き**することで推論時に自己最適化を行う新しいパラダイム。Alex L. Zhang, Tim Kraska, Omar Khattabによる2025年のpreprintで提案。
+**RLMs** (Recursive Language Models) are a new paradigm where LLMs perform self-optimization at inference time by **recursively reading and writing their own context**. Proposed in a 2025 preprint by Alex L. Zhang, Tim Kraska, and Omar Khattab.
 
 ## Core Concept
 
-従来のLLM usage:
-- コンテキストは**固定**（プロンプト構築時に決定）
-- 推論中にコンテキストは変化しない
-- 最適化は**コンパイル時**（DSPy等）または**訓練時**
+Traditional LLM usage:
+- Context is **fixed** (determined at prompt construction time)
+- Context does not change during inference
+- Optimization happens at **compile time** (DSPy, etc.) or **training time**
 
 RLMs:
-- LLMが**自身の生成した中間出力を読み取る**
-- 計算された表現をコンテキストに**書き込む**
-- **自己フィードバックループ**を通じて出力を再帰的に改善
+- The LLM **reads its own generated intermediate outputs**
+- **Writes** computed representations back to context
+- Recursively improves output through a **self-feedback loop**
 
 ## The RLM Mechanism
 
-RLMsは**Python風のコード**を生成・実行することで動作：
+RLMs operate by generating and executing **Python-like code**:
 
 ```python
 # RLMが生成するコード（概念図）
-context = read_context()           # これまでの全コンテキストにアクセス
-new_repr = compute(context)        # モデルが処理・表現を生成
-write_context(new_repr)            # 次ステップのために書き戻し
-continue_generation()              # 再帰的に継続
+context = read_context()           # Access all prior context
+new_repr = compute(context)        # Model generates processing/representation
+write_context(new_repr)            # Write back for next step
+continue_generation()              # Continue recursively
 ```
 
-**従来のtool-useとの区别:** RLMは外部APIを呼ぶのではなく、**自身の処理コンテキスト自体を変更する**。
+**Difference from traditional tool-use:** Rather than calling external APIs, RLMs **modify their own processing context**.
 
 ## Key Properties
 
-| Property | 説明 |
+| Property | Description |
 |----------|------|
 | **Optimization timing** | 推論時（训练データ不要） |
-| **Context management** | 動的再帰的アクセス |
+| **Context management** | Dynamic recursive access |
 | **Control主体** | LM itself（コード生成 통해自己制御） |
-| **Data requirements** | なし（ゼロショット） |
+| **Data requirements** | None (zero-shot) |
 | **Replayerability** | 低（推論時の非決定性） |
 | **Context scale** | 10M+ トークン处理可能 |
 
 ## DSPy vs RLMs: Fundamental Distinction
 
-| 次元 | DSPy | RLMs |
+| Dimension | DSPy | RLMs |
 |------|------|------|
-| **最適化タイミング** | コンパイル時（訓練データ必要） | 推論時（ゼロショット） |
-| **コンテキスト管理** | 固定プロンプト＋デモンストレーション埋め込み | 動的再帰的アクセス |
-| **制御主体** | 外部Teleprompter | LM itself（コード生成） |
-| **データ要件** | 10-50+ 訓練例 | なし |
-| **再計算可能性** | **高い**（コンパイル結果は決定論的） | 低（推論時非決定性） |
-| **適用シナリオ** | 反復的パイプライン（QA, RAG, 分類） | 長文コンテキスト（10M+）、深層推論 |
+| **Optimization Timing** | Compile time (requires training data) | Inference time (zero-shot) |
+| **Context Management** | Fixed prompt + demonstration embedding | Dynamic recursive access |
+| **Control Entity** | External Teleprompter | LM itself (code generation) |
+| **Data Requirements** | 10-50+ training examples | None |
+| **Recomputability** | **High** (compile results are deterministic) | Low (inference-time nondeterminism) |
+| **Application Scenarios** | Repetitive pipelines (QA, RAG, classification) | Long context (10M+), deep reasoning |
 | **コンテキスト上限** | プロンプトサイズ制約 | 再帰で突破了可能 |
 
 ## Shared Philosophy
 
-DSPyもRLMsも以下の原則を共有する：
+Both DSPy and RLMs share the following principle:
 
 > **"Language Model is the module, not the product."** (Khattab)
 
-ただし最適化へのアプローチが異なる：
+However, their approaches to optimization differ:
 
 | | DSPy | RLMs |
 |--|------|------|
-| LMの捉え方 | **学習可能な関数** (like neural network) | **再帰的プロセッサ** (like Turing machine) |
-| 最適化方法 | 訓練データでプロンプトをコンパイル | 推論時にコンテキストを自己操作 |
+| View of LM | **Learnable function** (like neural network) | **Recursive processor** (like Turing machine) |
+| Optimization Method | Compile prompts with training data | Self-manipulate context at inference time |
 
 ## When to Use RLMs vs DSPy
 
 **Use RLMs when:**
-- 訓練データが利用できない
-- 深層的な多段推論が必要
-- コンテキストが非常に長い（10M+ tokens）
-- ゼロショット適応が欲しい
-- 実行時に動的に最適化したい
+- Training data is unavailable
+- Deep multi-step reasoning is needed
+- Context is very long (10M+ tokens)
+- Zero-shot adaptation is desired
+- Dynamic optimization at runtime is preferred
 
 **Use DSPy when:**
-- 訓練データがある（10-50+ examples）
-- タスクが反復的（同じパターンを繰り返す）
-- 再現性が重要
-- コスト-品質トレードオフを最適化したい
+- Training data is available (10-50+ examples)
+- The task is repetitive (repeating the same pattern)
+- Reproducibility is important
+- You want to optimize the cost-quality trade-off
 
 ## Relationship to GEPA
 
-GEPAとRLMsはKhattab研究の補完的な方向性：
+GEPA and RLMs represent complementary directions in Khattab's research:
 
 | | GEPA | RLMs |
 |--|------|------|
-| **タイミング** | コンパイル時 | 推論時 |
-| **方法** | 遺伝的アルゴリズム（世代を跨ぐ） | 再帰的自己最適化（実行中） |
-| **最適化対象** | プロンプト文本体 | コンテキスト表現 |
-| **サンプル効率** | 高い（GRPO比35x） | 最高（ゼロショット） |
+| **Timing** | Compile time | Inference time |
+| **Method** | Genetic algorithm (across generations) | Recursive self-optimization (during execution) |
+| **Optimization Target** | Prompt text itself | Context representations |
+| **Sample Efficiency** | High (35x vs GRPO) | Highest (zero-shot) |
 
-**将来の統合可能性:** GEPAで初期プロンプトを最適化し、RLMsで実行時に動的改良を行う——というハイブリッドアプローチが考えられる。
+**Future integration:** A hybrid approach where GEPA optimizes the initial prompt and RLMs perform dynamic improvement at runtime.
 
 ## Research Pipeline (Khattab Group 2025-2026)
 
 ```
-DSPy (宣言的プログラミング)
-  ├── GEPA (遺伝的プロンプト最適化) → ICLR 2026 Oral
-  ├── RLMs (再帰的コンテキスト処理) → Preprint 2025
-  └── Multi-module GRPO (RL + プロンプト最適化統合)
+DSPy (Declarative Programming)
+  ├── GEPA (Genetic Prompt Optimization) → ICLR 2026 Oral
+  ├── RLMs (Recursive Context Processing) → Preprint 2025
+  └── Multi-module GRPO (RL + Prompt Optimization Integration)
        │
-       └──► 未来の統合: GEPA-initialized + RLM dynamic refinement
+       └──► Future Integration: GEPA-initialized + RLM dynamic refinement
 ```
 
 ## Open Questions
 
-1. RLMsの非決定性をどのように制御するか
+1. How to control RLMs' nondeterminism
 2. 再帰深度と性能の관계（何处で収益逓減するか）
-3. GEPAとRLMsの統合方法
-4. 長コンテキストにおけるmemory footprint管理
+3. How to integrate GEPA and RLMs
+4. Memory footprint management in long-context scenarios
 
 ## See Also
 
-- [[concepts/dspy]] — RLMsと比較される宣言的LMプログラミングフレームワーク
-- [[concepts/gepa]] — Khattabの別研究方向（コンパイル時最適化）
-- [[concepts/context-engineering]] — コンテキスト管理全般
--  — 推論時スケーリングの別の視点
+- [[concepts/dspy]] — Declarative LM programming framework (compare with RLMs)
+- [[concepts/gepa]] — Khattab's other research direction (compile-time optimization)
+- [[concepts/context-engineering]] — General context management
+-  — Another perspective on inference-time scaling
