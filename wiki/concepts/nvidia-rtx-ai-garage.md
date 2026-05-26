@@ -12,63 +12,63 @@ sources:
 
 # NVIDIA RTX AI Garage
 
-NVIDIAのRTX AI Garageは、RTXハードウェア（RTX PC、RTX PROワークステーション、DGX Spark）上で動作するAIツール・モデル・エージェントの最適化・キュレーション・推奨を行うプログラム。オープンソースAIエコシステムとNVIDIAハードウェアの橋渡し役を担う。
+NVIDIA's RTX AI Garage is a program for optimizing, curating, and recommending AI tools, models, and agents running on RTX hardware (RTX PCs, RTX PRO workstations, DGX Spark). It serves as a bridge between the open-source AI ecosystem and NVIDIA hardware.
 
-## プログラムの位置づけ
+## Program Positioning
 
-RTX AI Garageは単なるブログシリーズではなく、以下の要素で構成される最適化レイヤー：
+RTX AI Garage is not just a blog series, but an optimization layer composed of the following elements:
 
-- **キュレーション**: オープンソースのAIエージェント・モデルからRTXハードウェアで最も効果的に動作するものを選定・推奨
-- **Playbook**: GitHub上の`dgx-spark-playbooks`リポジトリで具体的なセットアップ手順を提供
-- **最適化検証**: NVFP4量子化、TensorRT-LLM高速化などのNVIDIA技術とオープンソースツールの組み合わせをベンチマーク
-- **ハンズオンセッション**: "Build It Yourself" agentic AIシリーズでNemoClaw + OpenShellの実践ワークショップを開催
+- **Curation**: Selects and recommends open-source AI agents and models that work most effectively on RTX hardware
+- **Playbook**: Provides concrete setup instructions in the `dgx-spark-playbooks` repository on GitHub
+- **Optimization validation**: Benchmarks combinations of NVIDIA technologies (NVFP4 quantization, TensorRT-LLM acceleration) with open-source tools
+- **Hands-on sessions**: Practical workshops on NemoClaw + OpenShell via the "Build It Yourself" agentic AI series
 
-## 推奨エージェントフレームワーク
+## Recommended Agent Frameworks
 
-### Hermes Agent（2026年5月〜）
-- **選定理由**: Self-improving skills、contained sub-agents、reliability by design
-- **140K+ GitHub stars / 3ヶ月** — 圧倒的なコミュニティ採用
-- **OpenRouter最利用エージェント**（2026年5月）
-- **同一モデルで優れた結果**: "active orchestration layer"としての設計
-- **推奨モデル**: Qwen 3.6 35B（20GBメモリで120B級知能）
+### Hermes Agent (May 2026~)
+- **Selection reason**: Self-improving skills, contained sub-agents, reliability by design
+- **140K+ GitHub stars / 3 months** — Overwhelming community adoption
+- **Most-used agent on OpenRouter** (May 2026)
+- **Superior results with same model**: Designed as an "active orchestration layer"
+- **Recommended model**: Qwen 3.6 35B (120B-class intelligence with 20GB memory)
 
-### NemoClaw（2026年3月〜）
-- NVIDIA純正のセキュアエージェント開発スタック
+### NemoClaw (March 2026~)
+- NVIDIA's proprietary secure agent development stack
 - OpenShell sandbox + Privacy Router + Network Policy Engine
-- 2026年5月にWSL2対応を追加
+- Added WSL2 support in May 2026
 
-### OpenClaw（先行）
-- RTX AI Garage最初の推奨エージェント
-- "Build a Claw"キャンペーンで成功
-- エッジデバイス/DGX Spark向け軽量設計
+### OpenClaw (Pioneer)
+- First recommended agent on RTX AI Garage
+- Success with "Build a Claw" campaign
+- Lightweight design for edge devices / DGX Spark
 
-## 対応モデル・最適化
+## Supported Models & Optimizations
 
-| モデル | 最適化 | 対象ハードウェア | 発表時期 |
+| Model | Optimization | Target Hardware | Release |
 |--------|--------|-----------------|----------|
-| Qwen 3.6 35B | 汎用推論 | DGX Spark, RTX PRO | 2026-05 |
-| Qwen 3.6 27B | 汎用推論（密） | RTX PRO | 2026-05 |
+| Qwen 3.6 35B | General inference | DGX Spark, RTX PRO | 2026-05 |
+| Qwen 3.6 27B | General inference (dense) | RTX PRO | 2026-05 |
 | Gemma 4 26B/31B | NVFP4 + Multi-Token Prediction | Blackwell GPU | 2026-05 |
-| Mistral Medium 3.5 | llama.cpp/Ollama互換 | RTX PRO, DGX Spark | 2026-04 |
-| GPT-OSS-120B | MXFP4量子化 | DGX Spark | 継続 |
+| Mistral Medium 3.5 | llama.cpp/Ollama compatible | RTX PRO, DGX Spark | 2026-04 |
+| GPT-OSS-120B | MXFP4 quantization | DGX Spark | Ongoing |
 
-## RTX AI Garageが提供する付加価値
+## Value Added by RTX AI Garage
 
-DGX Sparkを自分でセットアップする場合と比較して、RTX AI Garage経由だと：
+Compared to setting up DGX Spark yourself, going through RTX AI Garage provides:
 
-1. **モデル選定の手間削減**: NVIDIAが各モデルをDGX Spark上でベンチマークし、最適な量子化形式（NVFP4/MXFP4）を指定。ユーザーは自分でモデル比較・量子化実験をする必要がない
-2. **Playbookによる時短**: 公式セットアップ手順がGitHubで公開されており、試行錯誤の時間を節約
-3. **NVFP4最適化の恩恵**: NVIDIA独自のNVFP4量子化はBlackwell GPUのTensor Coresに最適化されており、汎用量子化より高速。自分でセットアップするとこの最適化が得られない可能性がある
-4. **ハードウェア・ソフトウェア統合検証**: TensorRT-LLM、CUDA-X、NIMなどNVIDIAソフトウェアスタックとの統合が事前検証済み
-5. **コミュニティ + 公式サポート**: ハンズオンセッション、ニュースレター、ソーシャルメディアでの継続的アップデート
+1. **Reduced model selection effort**: NVIDIA benchmarks each model on DGX Spark and specifies optimal quantization formats (NVFP4/MXFP4). Users don't need to compare models or run quantization experiments themselves
+2. **Time savings via Playbook**: Official setup instructions published on GitHub, saving trial-and-error time
+3. **NVFP4 optimization benefits**: NVIDIA's proprietary NVFP4 quantization is optimized for Blackwell GPU Tensor Cores, faster than generic quantization. This optimization may not be available with self-setup
+4. **Hardware-software integration verified**: Integration with NVIDIA software stack (TensorRT-LLM, CUDA-X, NIM) is pre-validated
+5. **Community + official support**: Hands-on sessions, newsletters, continuous updates via social media
 
-## 情報チャネル
+## Information Channels
 
-- **ブログ**: [blogs.nvidia.com](https://blogs.nvidia.com/blog/) — RTX AI Garageタグ付き記事
+- **Blog**: [blogs.nvidia.com](https://blogs.nvidia.com/blog/) — Articles tagged RTX AI Garage
 - **GitHub**: [NVIDIA/dgx-spark-playbooks](https://github.com/NVIDIA/dgx-spark-playbooks)
-- **ニュースレター**: RTX AI PC newsletter（NVIDIA AI PCページから購読）
-- **ソーシャル**: Facebook, Instagram, TikTok, X @NVIDIA
-- **ワークステーション**: LinkedIn, X @NVIDIAWorkstation
+- **Newsletter**: RTX AI PC newsletter (subscribe from NVIDIA AI PC page)
+- **Social**: Facebook, Instagram, TikTok, X @NVIDIA
+- **Workstation**: LinkedIn, X @NVIDIAWorkstation
 
 ## Related
 

@@ -22,17 +22,17 @@ sources:
 
 # Manus
 
-**Manus**は、元Alibaba/ByteDanceエンジニアらが創業した中国系スタートアップ（Monica.im）が開発した汎用AIエージェント。2025年3月のバイラルデモで注目され、ブラウザ操作・コード実行・ファイル作成を仮想コンピュータ上で自律実行できる。2025年11月には**Browser Operator**機能をリリース、2026年には**Metaに買収**された。
+**Manus** is a general-purpose AI agent developed by Chinese startup Monica.im, founded by former Alibaba/ByteDance engineers. It gained attention through a viral demo in March 2025, capable of autonomously executing browser operations, code execution, and file creation on a virtual computer. In November 2025 it released the **Browser Operator** feature, and was **acquired by Meta** in 2026.
 
-## 概要
+## Overview
 
-| 項目 | 内容 |
+| Field | Details |
 |---|---|
-| 創業 | 2024年（Monica.im） |
-| 創設者 | 元Alibaba/ByteDanceエンジニア |
-| 買収 | 2026年、Metaにより |
-| バイラルデモ | 2025年3月（フライト予約、コーディング等） |
-| アクセス | 招待制（初期）、後に全ユーザー開放 |
+| Founded | 2024 (Monica.im) |
+| Founder | Former Alibaba/ByteDance engineers |
+| Acquisition | 2026, by Meta |
+| Viral demo | March 2025 (flight booking, coding, etc.) |
+| Access | Invite-only (initial), later opened to all users |
 
 ## Manus Cloud Computer (May 2026)
 
@@ -43,54 +43,54 @@ Manus launched an **always-on cloud machine** that keeps bots, scripts, and agen
 - **Significance**: Removes the local-computer dependency from agent execution — a step toward persistent autonomous agent infrastructure
 - **Ecosystem context**: See [[entities/flue]] for TypeScript agent frameworks; [[entities/vercel]] for cloud-native agent deployment
 
-## Manus Browser Operator（2025年11月〜）
+## Manus Browser Operator (November 2025~)
 
-Manusの最大の差別化は**ローカルブラウザ拡張**によるエージェント実行。クラウドのサンドボックスではなく、ユーザーの実際のブラウザ上で動作する。
+Manus's key differentiator is agent execution through a **local browser extension**. Rather than running in a cloud sandbox, it operates on the user's actual browser.
 
-### 3ステッププロセス
-1. **Connect Browser**: 「My Browser」コネクタを有効化、拡張機能をインストール
-2. **Grant Access**: マルチステップタスクの実行許可を付与（ワンタイム認証）
-3. **Autonomous Action**: ブラウザ内でタスクを実行、専用タブでリアルタイム監視可能
+### 3-Step Process
+1. **Connect Browser**: Enable "My Browser" connector, install extension
+2. **Grant Access**: Grant permission for multi-step task execution (one-time auth)
+3. **Autonomous Action**: Execute tasks in browser, real-time monitoring via dedicated tab
 
-### 主な特徴
-- ✅ **認証済みセッションの利用**: ログイン状態、Cookie、有料ツールのアクセスを継承
-- ✅ **ローカルIP**: 信頼された環境からのアクセスとして認識（CAPTCHA回避に有利）
-- ✅ **完全な透明性**: 全アクションがログ記録、監査証跡あり
-- ✅ **即時中断**: タブを閉じるだけでタスク停止
-- ✅ **リモート監視**: メインPCがオンラインであれば、スマホ等からタスク進捗を確認可能
+### Key Features
+- ✅ **Authenticated sessions**: Inherits login state, cookies, access to paid tools
+- ✅ **Local IP**: Recognized as trusted environment access (advantageous for CAPTCHA avoidance)
+- ✅ **Full transparency**: All actions logged with audit trail
+- ✅ **Instant abort**: Close the tab to stop the task
+- ✅ **Remote monitoring**: Check task progress from phone when main PC is online
 
-### 得意領域
-- **プレミアムデータソース**: Crunchbase, PitchBook, SimilarWeb, Financial Times, Semrush, Ahrefs
-- **B2Bデータ分析**: CRM操作、市場調査、SEO分析
-- **内部ダッシュボード**: 企業内の認証ツールでの作業
+### Strengths
+- **Premium data sources**: Crunchbase, PitchBook, SimilarWeb, Financial Times, Semrush, Ahrefs
+- **B2B data analysis**: CRM operations, market research, SEO analysis
+- **Internal dashboards**: Working with enterprise authenticated tools
 
-### 制限
-- ドラッグ&ドロップ、複雑なマルチステップフォームは未対応
-- 永続メモリなし（仮想コンピュータモデルのため）
-- センシティブ情報へのアクセスは事前レビューが必要
+### Limitations
+- Drag-and-drop and complex multi-step forms not yet supported
+- No persistent memory (due to virtual computer model)
+- Access to sensitive information requires prior review
 
-## アーキテクチャ比較
+## Architecture Comparison
 
-| 次元 | クラウドブラウザ | Browser Operator（ローカル） |
+| Dimension | Cloud Browser | Browser Operator (Local) |
 |---|---|---|
-| 実行環境 | 隔離サンドボックス | ユーザーのブラウザ |
-| ログイン | 不可（壁にぶつかる） | 継承可能 |
-| CAPTCHA | 問題あり | 回避しやすい |
-| 有料ツール | アクセス不可 | 契約済みツールを利用可能 |
-| 監視 | 限定 | リアルタイム（専用タブ） |
-| IP信頼性 | 低い | 高い（ローカルIP） |
+| Execution environment | Isolated sandbox | User browser |
+| Login | Not possible (hits paywalls) | Can inherit |
+| CAPTCHA | Problematic | Easier to avoid |
+| Paid tools | No access | Can use subscribed tools |
+| Monitoring | Limited | Real-time (dedicated tab) |
+| IP trust | Low | High (local IP) |
 
-## 買収と今後
+## Acquisition and Future
 
-2026年にMetaによる買収が発表された。「AIをビジネスに普及させる」ための戦略的買収とされる。MetaのAIエージェントエコシステムとの統合が予想される。
+Meta announced the acquisition in 2026, described as a strategic move to "democratize AI for business." Integration with Meta's AI agent ecosystem is expected.
 
-## 関連エンティティ
+## Related Entities
 
-- [[entities/anthropic-computer-use]] — AnthropicのComputer Use
-- [[entities/openai-cua]] — OpenAIのComputer-Using Agent
-- [[entities/browser-use]] — オープンソースブラウザ自動化
-- [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
-- [[entities/webmcp]] — 標準化プロトコル
+- [[entities/anthropic-computer-use]] — Anthropic Computer Use
+- [[entities/openai-cua]] — OpenAI Computer-Using Agent
+- [[entities/browser-use]] — Open-source browser automation
+- [[concepts/death-of-browser]] — The de-humanization of the browser
+- [[entities/webmcp]] — Standardization protocol
 
 ## Sources
 

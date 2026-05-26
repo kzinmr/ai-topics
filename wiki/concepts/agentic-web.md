@@ -1,5 +1,5 @@
 ---
-title: "Agentic Web — 人間向けからエージェント向けへWebのパラダイムシフト"
+title: "Agentic Web — The Web Paradigm Shift from Human-Centric to Agent-Centric"
 type: concept
 created: 2026-04-22
 updated: 2026-04-22
@@ -18,57 +18,57 @@ aliases:
 
 > "The web is transitioning from a human-centric read/write platform to an Agentic Web, where AI systems interact with websites on behalf of users."
 
-**概要:** Webサイトが「人間が読むもの」から「エージェントが操作するランタイム」へ変遷する潮流。Tim Berners-Leeのビジョンの進化 — 知識が機械によってアクセス、解釈、実行される。
+**Summary:** The trend of websites transitioning from "things humans read" to "runtimes that agents operate." An evolution of Tim Berners-Lee's vision — knowledge being accessed, interpreted, and executed by machines.
 
-## 4つの原動力
+## 4 Driving Forces
 
-### 1. Webサイトが機能を公開
-- **MCP:** Anthropic Nov 2024、AIが外部アクションをトリガーする主要方法
-- **WebMCP:** ブラウザにMCPツールを直接提供（拡張/Chrome Canary必要、ネイティブ化予定）
-- **カスタムチャットボット:** ベクトルDB搭載のサイト固有AIアシスタントが標準化
-- **経済レイヤー:** 情報取得→トランザクション実行（予約、購入、サブスクリプション）
+### 1. Websites Expose Capabilities
+- **MCP:** Anthropic Nov 2024, primary way for AI to trigger external actions
+- **WebMCP:** Provides MCP tools directly in the browser (requires extension/Chrome Canary, planned for native support)
+- **Custom chatbots:** Site-specific AI assistants with vector DBs becoming standard
+- **Economic layer:** Information retrieval → transaction execution (bookings, purchases, subscriptions)
 
-### 2. ユーザーインターフェースの変化
-- 初期AI: ヘッドレスブラウザ + スクレイピング/フォーム記入
-- 現在/未来: サイト所有者に案内され、メインストリームブラウザに組み込まれ、高度ツールで強化
-- **発見のシフト:** リンク/検索検索 → 自然言語プロンプト
-- **SEO進化:** 従来SEO → **「AIリトリバル最適化」**（AIの選択、引用、信頼性への最適化）
+### 2. User Interface Transformation
+- Early AI: Headless browser + scraping/form filling
+- Present/Future: Guided by site owners, embedded in mainstream browsers, enhanced with advanced tools
+- **Discovery shift:** Links/search → Natural language prompts
+- **SEO evolution:** Traditional SEO → **"AI Retrieval Optimization"** (optimizing for AI selection, citation, and trustworthiness)
 
-### 3. ブラウザがAIランタイムへ進化
-- **オンデバイスAI:** Gemini NanoなどのSLMがブラウザ内でプライベート・低レイテンシAI実行を可能に
-- **相互作用モード:**
-  - `Browsing Mode`: 人間らしいナビゲーション＆UIパース
-  - `Tool Mode`: 構造化機能への直接呼び出し
-- **トレンド:** ナビゲーションからツールベース相互作用への明確な移行
+### 3. Browsers Evolve into AI Runtimes
+- **On-device AI:** SLMs like Gemini Nano enable private, low-latency AI execution within the browser
+- **Interaction modes:**
+  - `Browsing Mode`: Human-like navigation & UI parsing
+  - `Tool Mode`: Direct calls to structured capabilities
+- **Trend:** Clear shift from navigation to tool-based interaction
 
-### 4. 開発者プラットフォームの適応
-- Cloudflare, Vercel, Netlifyが爆発的成長。VercelはNext.js経由でエージェントホスティング + MCPエンドポイント
-- **標準化エージェントUI:**
-  - MCP-UI (Anthropic連携、Shopifyで使用)
+### 4. Developer Platform Adaptation
+- Cloudflare, Vercel, Netlify experiencing explosive growth. Vercel offers agent hosting + MCP endpoints via Next.js
+- **Standardized agent UI:**
+  - MCP-UI (Anthropic integration, used by Shopify)
   - OpenAI Apps SDK & AgentKit
-  - MCP Apps (インタラクティブUIのオープン標準)
-  - Google A2UI (エージェントUIフレームワーク)
-- **UIはデバッグレイヤー:** トランザクションサービスは人間のUIを完全に削除する可能性あり
+  - MCP Apps (open standard for interactive UI)
+  - Google A2UI (agent UI framework)
+- **UI as debug layer:** Transaction services may eliminate human UI entirely
 
-## 影響: ロール別
+## Impact by Role
 
-### プロダクトチーム
-- エージェント＋人間の両方をデザイン。マシン可読な機能を公開。AX (Agent Experience) をUXに統合。
+### Product Teams
+- Design for both agents and humans. Expose machine-readable capabilities. Integrate AX (Agent Experience) into UX.
 
-### パブリッシャー
-- **脅威:** 直接訪問減少、AIがコンテンツアクセスを仲介
-- **機会:** AIシステムへの信頼できる「情報源」になる
-- **課題:** 補償危機、Really Simple Licensing (RSL) プロトコルなどの新解決策
+### Publishers
+- **Threat:** Declining direct visits, AI mediates content access
+- **Opportunity:** Becoming a trusted "source" for AI systems
+- **Challenge:** Compensation crisis, new solutions like Really Simple Licensing (RSL) protocol
 
-### 開発者
-- マシン可読なシステムをデフォルトで構築。エンドポイントではなくオーケストレーションで思考。
-- ハイブリッドスタック: ブラウザAI + クラウド推論 + MCP + 従来Webインフラ
+### Developers
+- Build machine-readable systems by default. Think in terms of orchestration, not endpoints.
+- Hybrid stack: Browser AI + Cloud inference + MCP + Traditional web infrastructure
 
 ## Related Concepts
 
-- [[concepts/death-of-browser]] — ブラウザのパラダイムシフト
-- [[entities/webmcp]] — ブラウザネイティブのMCP標準
+- [[concepts/death-of-browser]] — The browser paradigm shift
+- [[entities/webmcp]] — Native browser MCP standard
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/openai-cua]] — OpenAI CUA
-- [[entities/browser-use]] — オープンソースブラウザ自動化
-- [[entities/browserbase]] — 信頼性の高いブラウザ自動化インフラ
+- [[entities/browser-use]] — Open-source browser automation
+- [[entities/browserbase]] — Reliable browser automation infrastructure

@@ -17,73 +17,73 @@ sources:
 
 # Prompt-Driven Development
 
-Simon Willisonが提唱する**プロンプトを中心としたソフトウェア開発手法**。AIコーディングエージェントに対して、詳細な仕様をプロンプトとして記述し、それを実装させるワークフロー。
+A **prompt-centered software development methodology** advocated by Simon Willison. A workflow where detailed specifications are written as prompts for AI coding agents, which then implement them.
 
-## 核心原則
+## Core Principle
 
 > "You write a prompt describing what you want, the agent implements it, you review the implementation, and iterate."
 
-従来の「コードを書いてテストする」サイクルを、「プロンプトを書いてレビューする」サイクルへ転換する。
+It transforms the traditional "write code, then test" cycle into a "write prompts, then review" cycle.
 
-## 5つの主要ステップ
+## 5 Key Steps
 
-### 1. 詳細なプロンプト作成
-実装してほしい内容を**明確に、具体的に**記述する。良いプロンプトの特徴：
-- 目的と制約条件を明確化
-- 期待する出力形式を指定
-- 境界ケースへの言及
+### 1. Write Detailed Prompts
+Describe what you want implemented **clearly and specifically**. Characteristics of good prompts:
+- Clarify goals and constraints
+- Specify expected output format
+- Mention edge cases
 
-### 2. エージェントによる実装
-Claude Code、Cursor、GitHub Copilotなどのエージェントにプロンプトを入力し、コードを生成させる。
+### 2. Agent Implementation
+Input the prompt into agents like Claude Code, Cursor, or GitHub Copilot to generate code.
 
-### 3. 実装のレビュー
-生成されたコードを**人間が注意深くレビュー**する。ここで[[concepts/cognitive-debt]]（認知負債）の概念が重要になる — 理解できないコードはマージしない。
+### 3. Review Implementation
+**Carefully review** the generated code. This is where the concept of [[concepts/cognitive-debt]] becomes critical — never merge code you don't understand.
 
-### 4. フィードバックと反復
-レビュー結果を基に、プロンプトを修正・詳細化し、再度エージェントに実装させる。
+### 4. Feedback and Iteration
+Based on review results, revise and refine the prompt, then have the agent implement again.
 
-### 5. テストと検証
-最終的な実装が仕様を満たしているか、既存のテストスイートで検証する。
+### 5. Test and Verify
+Verify the final implementation meets specifications using the existing test suite.
 
-## 従来開発との比較
+## Comparison with Traditional Development
 
-| 次元 | 伝統的開発 | Prompt-Driven Development |
+| Dimension | Traditional Development | Prompt-Driven Development |
 |------|-----------|---------------------------|
-| 起点 | コード仕様書 | プロンプトテキスト |
-| 実装主体 | 開発者 | AIエージェント |
-| レビュー | PRレビュー | プロンプト修正＋コードレビュー |
-| 反復 | コード修正 | プロンプト改善 |
-| 品質担保 | テスト | テスト＋プロンプト明確化 |
+| Starting point | Code specification | Prompt text |
+| Implementer | Developer | AI agent |
+| Review | PR review | Prompt refinement + code review |
+| Iteration | Code fixes | Prompt improvements |
+| Quality assurance | Tests | Tests + prompt clarity |
 
-## Cognitive Debtとの関係
+## Relationship to Cognitive Debt
 
 > "If you don't understand the code the agent wrote, you've incurred cognitive debt."
 
-Prompt-Driven Developmentでは、エージェントが生成したコードを**理解せずにマージすると、後で保守・修正する際に大きな負債となる**。Willisonはこれを防ぐため：
-1. 小さなステップで反復する
-2. 毎回コードをレビューする
-3. 分からない部分はエージェントに説明させる
+In Prompt-Driven Development, **merging agent-generated code without understanding it creates significant debt** for future maintenance. Willison recommends:
+1. Iterate in small steps
+2. Review code every time
+3. Ask the agent to explain unclear parts
 
-## 実践的Tips
+## Practical Tips
 
-### プロンプト設計のパターン
-- **機能単位**: 1つの機能 = 1つのプロンプト
-- **段階的詳細化**: 大枠 → 詳細 → エッジケース
-- **既存コード参照**: 「このファイルのこの関数を参考にして」と具体性を上げる
+### Prompt Design Patterns
+- **Function unit**: 1 feature = 1 prompt
+- **Gradual refinement**: Framework → Details → Edge cases
+- **Reference existing code**: Increase specificity with "refer to this function in this file"
 
-### 効果的なフィードバック
-- ❌ 「動かない」 → ✅ 「この入力でこのエラーが出る」
-- ❌ 「もっと良くして」 → ✅ 「この部分をこのように改善して」
-- ❌ 「テストを書いて」 → ✅ 「この関数の正常系・異常系テストをpytestで書いて」
+### Effective Feedback
+- ❌ "It doesn't work" → ✅ "Here's the error with this input"
+- ❌ "Make it better" → ✅ "Improve this specific part like this"
+- ❌ "Write tests" → ✅ "Write pytest tests for normal and edge cases of this function"
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/cognitive-debt]] — 理解せずにマージしたコードが蓄積する負債
-- [[concepts/red-green-tdd]] — テスト駆動開発との組み合わせ
-- [[concepts/context-window-management]] — プロンプトの長さ管理
-- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/cognitive-debt]] — The accumulated debt from merging code you don't understand
+- [[concepts/red-green-tdd]] — Combining with test-driven development
+- [[concepts/context-window-management]] — Managing prompt length
+- [[concepts/harness-engineering/agentic-engineering]] — Higher-level concept
 
-## 参照
+## References
 
-- [[entities/simon-willison]] — 提唱者
+- [[entities/simon-willison]] — Proponent
 - [Agentic Engineering Patterns — Prompt-Driven Development](https://simonwillison.net/guides/agentic-engineering-patterns/#prompt-driven-development)

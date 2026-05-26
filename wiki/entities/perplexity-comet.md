@@ -20,81 +20,81 @@ sources:
 
 # Perplexity Comet
 
-**Perplexity Comet**は、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
+**Perplexity Comet** is an AI-native browser developed by Perplexity AI. Released for Windows/macOS in July 2025, with Android support in November 2025 and iOS in March 2026. It is at the forefront of the "turn the browser into an AI agent" strategy.
 
-## 概要
+## Overview
 
-| 項目 | 内容 |
+| Field | Details |
 |---|---|
-| 開発元 | Perplexity AI |
-| 初回リリース | 2025年7月9日（Windows/macOS） |
-| Android | 2025年11月20日 |
-| iOS | 2026年3月18日 |
-| エンジン | Blink（Chromiumベース） |
-| ライセンス | プロプライエタリ（OSSベース） |
-| AIエンジン | Perplexity検索API統合 |
-| 価格 | 無料ブラウザ、AI機能はPerplexity Pro（$20/月） |
+| Developer | Perplexity AI |
+| Initial release | July 9, 2025 (Windows/macOS) |
+| Android | November 20, 2025 |
+| iOS | March 18, 2026 |
+| Engine | Blink (Chromium-based) |
+| License | Proprietary (OSS-based) |
+| AI engine | Perplexity search API integration |
+| Pricing | Free browser, AI features via Perplexity Pro ($20/month) |
 
-## アーキテクチャ: Search-First Browser
+## Architecture: Search-First Browser
 
-Cometの核心は**検索ファーストアーキテクチャ**。従来のブラウザが「URLを入力 → ページをレンダリング → ユーザーが読む」というフローだったのに対し、Cometは**ユーザーの意図を直接理解し、エージェントがウェブ上でタスクを代行**する。
+Comet's core is a **search-first architecture**. While traditional browsers follow a "type URL → render page → user reads" flow, Comet **directly understands user intent and delegates tasks to agents on the web**.
 
-### Agentic Browsing機能
-1. **自然言語タスク**: 「来週ベルリンへの cheapest flight を探して」→ Cometが検索、比較、結果提示
-2. **コンテキストAI**: 任意のテキストをハイライトして質問 → ページ文脈を理解して回答
-3. **マルチタブ合成**: 複数タブにまたがる情報収集・要約
-4. **フォーム自動入力**: 購入、予約、申込を代行
+### Agentic Browsing Features
+1. **Natural language tasks**: "Find the cheapest flight to Berlin next week" → Comet searches, compares, presents results
+2. **Context AI**: Highlight any text and ask questions → understands page context to answer
+3. **Multi-tab synthesis**: Collects and summarizes information across multiple tabs
+4. **Auto form fill**: Completes purchases, bookings, applications
 
-### Perplexity製品エコシステム
+### Perplexity Product Ecosystem
 ```
 ┌─────────────────┐
-│ Perplexity Search│ ← コアAI検索エンジン（頭脳）
+│ Perplexity Search│ ← Core AI search engine (brain)
 ├─────────────────┤
-│  Comet Browser  │ ← AIネイティブブラウザ（インターフェース）
+│  Comet Browser  │ ← AI-native browser (interface)
 ├─────────────────┤
-│ Perplexity Computer│ ← 自律タスク実行（エージェント）
+│ Perplexity Computer│ ← Autonomous task execution (agent)
 └─────────────────┘
 ```
 
-## 競争優位
+## Competitive Advantage
 
-| 強み | 詳細 |
+| Strength | Details |
 |---|---|
-| 検索統合 | Perplexityの回答ファースト検索をブラウザレベルで統合 |
-| 高速性 | ターミナル→検索→結果表示の5ステップを1ステップに圧縮 |
-| マルチプラットフォーム | Win/Mac/Android/iOSの4プラットフォーム対応 |
-| コスト | ブラウザ自体は無料、AI機能は$20/月 |
+| Search integration | Integrates Perplexity answer-first search at the browser level |
+| Speed | Compresses 5 steps (terminal→search→results) into 1 step |
+| Multi-platform | Supports Windows, Mac, Android, iOS |
+| Cost | Browser is free, AI features $20/month |
 
-## 課題とリスク
+## Challenges and Risks
 
-1. **セキュリティ**: LayerX Securityが「CometJacking」攻撃ベクターを発見（2025年8月）。悪意あるWebページがAIエージェントに指示を注入可能
-2. **プライバシー**: AIが全閲覧を監視するため、データ流出リスク
-3. **エコシステムロックイン**: Perplexityサービスへの依存度が高い
-4. **自動化の信頼性**: 複雑なタスクでエラー発生
+1. **Security**: LayerX Security discovered the "CometJacking" attack vector (August 2025). Malicious web pages can inject instructions into the AI agent
+2. **Privacy**: AI monitors all browsing, creating data leak risk
+3. **Ecosystem lock-in**: Heavy dependence on Perplexity services
+4. **Automation reliability**: Errors on complex tasks
 
-## セキュリティインシデント: CometJacking
+## Security Incident: CometJacking
 
-2025年、LayerX SecurityはComet特有の攻撃ベクターを発見:
-- 悪意あるWebページがAIエージェントに指示を注入
-- データ流出、意図しないアクションの実行が可能
-- Perplexityは2025年8月に修正パッチをリリース
+In 2025, LayerX Security discovered a Comet-specific attack vector:
+- Malicious web pages inject instructions into the AI agent
+- Data leaks and unintended actions possible
+- Perplexity released a fix patch in August 2025
 
-## 市場ポジション
+## Market Position
 
-| 競合 | 特徴 | Cometとの違い |
+| Competitor | Feature | Difference from Comet |
 |---|---|---|
-| ChatGPT Atlas | OpenAIのAIブラウザ | GPT統合 vs Perplexity統合 |
-| Arc | UI革新 | デザイン中心 vs 検索中心 |
-| Brave | プライバシー中心 | ローカルAI vs クラウドAI |
-| Kahana Oasis | エンタープライズAIブラウザ | 消費者向け vs 企業向け |
+| ChatGPT Atlas | OpenAI AI browser | GPT integration vs Perplexity integration |
+| Arc | UI innovation | Design-focused vs search-focused |
+| Brave | Privacy-focused | Local AI vs cloud AI |
+| Kahana Oasis | Enterprise AI browser | Consumer vs enterprise |
 
-## 関連エンティティ
+## Related Entities
 
-- [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
-- [[entities/anthropic-computer-use]] — AnthropicのComputer Use
-- [[entities/openai-cua]] — OpenAIのComputer-Using Agent
-- [[entities/webmcp]] — 標準化プロトコル
-- [[entities/manus]] — ローカルブラウザ統合エージェント
+- [[concepts/death-of-browser]] — The de-humanization of the browser
+- [[entities/anthropic-computer-use]] — Anthropic Computer Use
+- [[entities/openai-cua]] — OpenAI Computer-Using Agent
+- [[entities/webmcp]] — Standardization protocol
+- [[entities/manus]] — Local browser integration agent
 
 ## Sources
 

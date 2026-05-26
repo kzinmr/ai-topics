@@ -24,68 +24,68 @@ sources:
 
 # Claude Opus 4.7
 
-**Claude Opus 4.7** は、Anthropic が **2026年4月16日** にリリースしたフロンティア LLM。Opus 4.6 の後継であり、高度なソフトウェアエンジニアリング、視覚認識、長期的なマルチステップタスク実行において大幅な改善を実現している。
+**Claude Opus 4.7** is a frontier LLM released by **Anthropic on April 16, 2026**. It is the successor to Opus 4.6, delivering significant improvements in advanced software engineering, visual recognition, and long-term multi-step task execution.
 
-## リリース情報
+## Release Information
 
-- **リリース日**: 2026年4月16日
-- **コンテキストウィンドウ**: **100万トークン**
-- **API 提供**: Anthropic API、GitHub Copilot、Claude.ai
-- **Model Card**: [公開済み](https://www.anthropic.com/claude-opus-4-7-system-card)
+- **Release date**: April 16, 2026
+- **Context window**: **1 million tokens**
+- **API availability**: Anthropic API, GitHub Copilot, Claude.ai
+- **Model Card**: [Published](https://www.anthropic.com/claude-opus-4-7-system-card)
 
-## 主要な改善点
+## Key Improvements
 
-### 1. ソフトウェアエンジニアリング
-- 最も難しいコーディングタスクで顕著な改善
-- 「これまで監督が必要だった作業」を **自信を持って任せられる** レベルに
-- 複雑な長時間タスクを **厳密かつ一貫して** 処理
-- 指示への **精密な注意** と **自己検証** 能力
+### 1. Software Engineering
+- Significant improvement on the hardest coding tasks
+- Reaches a level where tasks that "previously required supervision" can be **confidently delegated**
+- Handles complex long-running tasks **rigorously and consistently**
+- **Precise attention** to instructions and **self-verification** capability
 
-### 2. ビジョン能力
-- **高解像度画像認識** — より詳細な視覚情報を処理
-- XBOW の視覚精度ベンチマーク: **98.5%**（Opus 4.6 は 54.5%）
-- プロフェッショナルタスクでの **センスと創造性** が向上
-- UI、スライド、ドキュメントの品質が改善
+### 2. Vision Capabilities
+- **High-resolution image recognition** — processes more detailed visual information
+- XBOW visual accuracy benchmark: **98.5%** (Opus 4.6 was 54.5%)
+- Improved **taste and creativity** on professional tasks
+- Improved quality of UI, slides, and documents
 
-### 3. エージェント機能
-- **堅牢なマルチステップ実行** — GitHub Copilot でも評価
-- **長期的推論** と **ツール依存ワークフロー** での改善
-- コード実行前に **証明/検証** を行う新しい行動パターン（Vercel 報告）
+### 3. Agent Capabilities
+- **Robust multi-step execution** — also praised on GitHub Copilot
+- Improvements in **long-horizon reasoning** and **tool-dependent workflows**
+- New behavioral pattern of **proving/verifying** before code execution (reported by Vercel)
 
-## ベンチマーク改善
+## Benchmark Improvements
 
-| 領域 | Opus 4.6 | Opus 4.7 | 改善 |
+| Area | Opus 4.6 | Opus 4.7 | Improvement |
 |------|---------|---------|------|
-| 視覚精度（XBOW） | 54.5% | **98.5%** | +44% |
-| ワンショットコーディング | ベースライン | **顕著に向上** | — |
-| 自己限界認識 | 中程度 | **顕著に正直に** | — |
+| Visual accuracy (XBOW) | 54.5% | **98.5%** | +44% |
+| One-shot coding | Baseline | **Significantly improved** | — |
+| Self-limitation awareness | Moderate | **Notably honest** | — |
 
-## トークナイザーの変更点
+## Tokenizer Changes
 
-Opus 4.7 は更新されたトークナイザーを使用：
-- 同じ入力が **1.0〜1.35倍** のトークンにマッピングされる可能性あり
-- 高努力レベルでの思考量増加（特にエージェント設定での後半ターン）
-- 信頼性向上と引き換えの出力トークン増加
+Opus 4.7 uses an updated tokenizer:
+- Same input may map to **1.0–1.35x** tokens
+- Increased thinking at high effort levels (especially later turns in agent settings)
+- More output tokens in exchange for improved reliability
 
-## セキュリティとガバナンス
+## Security and Governance
 
-- **Mythos へのステップ**: Opus 4.7 は Mythos クラスモデルの **安全テストベッド**
-- **Project Glasswing**: サイバーセキュリティリスク・ベネフィットの評価
-- **サイバーセーフガード**: 禁止/高リスクのサイバーセキュリティ使用を自動検出・ブロック
-- **Mythos との関係**: Mythos Preview ほど広範な能力は持たないが、Opus 4.6 を全てのベンチマークで上回る
+- **Step toward Mythos**: Opus 4.7 serves as a **safety testbed** for Mythos-class models
+- **Project Glasswing**: Evaluation of cybersecurity risk and benefit
+- **Cyber safeguard**: Automatically detects and blocks prohibited/high-risk cybersecurity uses
+- **Relationship to Mythos**: Does not have as broad capabilities as Mythos Preview, but surpasses Opus 4.6 on all benchmarks
 
-## 実績（ユーザー報告）
+## Performance (User Reports)
 
-- **Vercel（Joe Haddad）**: 「Opus 4.6 からの退行なし。ワンショットコーディングタスクで驚異的。より正確かつ完全。自身の限界について顕著に正直。」
-- **XBOW（Oege de Moor）**: 「コンピューター使用作業でステップチェンジ。Opus 4.6 の最大の不満点が事実上解消。」
-- ユーザーがゲーム、Webサイト、アニメーション、CAD デザインを **数分で** 構築
+- **Vercel (Joe Haddad)**: "No regression from Opus 4.6. Astounding on one-shot coding tasks. More precise and complete. Notably honest about its own limitations."
+- **XBOW (Oege de Moor)**: "Step change in computer use tasks. The biggest pain points of Opus 4.6 are effectively resolved."
+- Users build games, websites, animations, and CAD designs **in minutes**
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/claude-code-best-practices]] — Claude Code のベストプラクティス
-- [[concepts/claude-perfect-memory]] — Claude Code の永続メモリ
+- [[concepts/claude-code-best-practices]] — Claude Code best practices
+- [[concepts/claude-perfect-memory]] — Claude Code persistent memory
 
-## ソース
+## Sources
 
 - [Introducing Claude Opus 4.7 (Anthropic Official)](https://www.anthropic.com/news/claude-opus-4-7)
 - [Claude Opus 4.7 Product Page](https://www.anthropic.com/claude/opus)

@@ -15,30 +15,30 @@ sources:
 
 # KV Cache: Key-Value Caching in Transformer Inference
 
-KV（Key-Value）Cacheは、TransformerアーキテクチャにおけるLLM推論の効率を劇的に改善する最適化手法。自己回帰生成中の冗長な再計算を排除することで、推論速度を5倍以上向上させる。
+KV (Key-Value) Cache is an optimization technique that dramatically improves LLM inference efficiency in the Transformer architecture. By eliminating redundant recomputation during autoregressive generation, it improves inference speed by 5x or more.
 
-## 問題: 自己回帰生成の計算コスト
+## Problem: Computational Cost of Autoregressive Generation
 
-LLMはトークンを逐次的に生成する（自己回帰）。各ステップで、モデルは全入力シーケンスに対してアテンション計算をやり直すため、計算量が `O(n²)` となる（n = シーケンス長）。
+LLMs generate tokens sequentially (autoregressively). At each step, the model re-computes attention over the entire input sequence, resulting in `O(n²)` complexity (n = sequence length).
 
-KV Cacheがない場合、3つ目のトークンを生成する際に、1つ目と2つ目のトークンのKey（K）・Value（V）ベクトルを再計算してしまう。
+Without KV Cache, when generating the 3rd token, the model recomputes the Key (K) and Value (V) vectors for the 1st and 2nd tokens.
 
-## 解決: KV Cacheによる再計算の排除
+## Solution: Eliminating Recomputation with KV Cache
 
-各トークンのK・Vベクトルをキャッシュに保存し、新しいトークン生成時には、新しいトークンのK・Vのみを計算してキャッシュに追記する。
+Store each token's K and V vectors in a cache; when generating a new token, only compute the new token's K and V and append to the cache.
 
-- 計算量が `O(n²)` → `O(n)` に削減
-- ただしメモリ使用量は線形に増加（トレードオフ）
+- Reduces complexity from `O(n²)` to `O(n)`
+- But memory usage increases linearly (tradeoff)
 
-## 実装の要点
+## Implementation Essentials
 
-### 1. バッファ登録
+### 1. Buffer Registration
 ```python
 self.register_buffer("cache_k", None)
 self.register_buffer("cache_v", None)
 ```
 
-### 2. Forward Passの修正
+### 2. Forward Pass Modification
 ```python
 if use_cache:
     if self.cache_k is None:
@@ -49,41 +49,41 @@ if use_cache:
     keys, values = self.cache_k, self.cache_v
 ```
 
-### 3. 位置追跡（Position Tracking）
-キャッシュを使用する場合、`current_pos` を追跡し、新しいクエリの位置がキャッシュ内の既存K/Vと正しく対応するようにする必要がある。
+### 3. Position Tracking
+When using cache, track `current_pos` so the new query position correctly corresponds to the existing K/V in the cache.
 
-### 4. キャッシュリセット
+### 4. Cache Reset
 ```python
 def reset_cache(self):
     self.cache_k, self.cache_v = None, None
 ```
 
-## パフォーマンス
+## Performance
 
-124Mパラメータモデル、200トークン生成（Mac Mini M4 CPU）:
-- **なし:** ~10.30秒
-- **あり:** ~2.11秒
-- **結果:** 約 **5倍の高速化**
+124M parameter model, 200 token generation (Mac Mini M4 CPU):
+- **Without:** ~10.30 sec
+- **With:** ~2.11 sec
+- **Result:** Approximately **5x speedup**
 
-## 高度な最適化
+## Advanced Optimizations
 
-| 手法 | 効果 |
+| Technique | Effect |
 |------|------|
-| **Pre-allocation** | `torch.cat` の代わりに事前確保テンソルでメモリフラグメンテーション防止 |
-| **Sliding Window Cache** | 最新Nトークンのみ保持、GPUメモリ枯渇防止 |
-| **PagedAttention (vLLM)** | 非連続メモリブロックでキャッシュ管理、メモリ効率最大化 |
-| **KV Cache Quantization** | KVキャッシュを低精度で保存、メモリ使用量削減 |
+| **Pre-allocation** | Pre-allocated tensors instead of `torch.cat` prevent memory fragmentation |
+| **Sliding Window Cache** | Keep only the latest N tokens, prevent GPU memory exhaustion |
+| **PagedAttention (vLLM)** | Manage cache with non-contiguous memory blocks, maximize memory efficiency |
+| **KV Cache Quantization** | Store KV cache in lower precision, reduce memory usage |
 
-## 重要な注意点
+## Important Notes
 
-- **最初のトークンが遅い理由**: ChatGPT等で最初のトークン生成に時間がかかるのは、プロンプト全体のKVキャッシュを計算しているため。以降のトークンはほぼ瞬時に生成される。
-- **訓練 vs 推論:** KV Cacheは推論時のみ使用。訓練時は全トークンを並列処理するため不要。
-- **正当性:** 正しいKV Cache実装は非キャッシュモデルと**完全に同一の出力**を生成する。差異がある場合は位置エンコーディングの不整合を示す。
-- **メモリ消費:** Llama 3 (131k context) の場合、フルキャッシュで約8GBのVRAMを消費。
+- **Why the first token is slow**: The delay in generating the first token (in ChatGPT, etc.) is due to computing the KV cache for the entire prompt. Subsequent tokens are generated almost instantly.
+- **Training vs Inference:** KV Cache is only used during inference. Training processes all tokens in parallel so it is not needed.
+- **Correctness:** A correct KV Cache implementation produces **exactly the same output** as a non-cached model. Any difference indicates a position encoding mismatch.
+- **Memory consumption:** For Llama 3 (131k context), a full cache consumes approximately 8GB of VRAM.
 
-### メモリ消費の実例
+### Memory Consumption Examples
 
-| モデル | 1KトークンあたりのKVキャッシュ | 4Kトークン |
+| Model | KV cache per 1K tokens | 4K tokens |
 |--------|------------------------------|-----------|
 | Qwen 2.5 R1 1.5B | 28 MiB | 112 MiB |
 | Qwen 2.5 R1 7B | 56 MiB | 224 MiB |
@@ -91,11 +91,11 @@ def reset_cache(self):
 | Mistral NeMo 12B | 160 MiB | 640 MiB |
 | Llama 3.3 70B Instruct | 320 MiB | 1.25 GiB |
 
-参考: Avi Chawla, "KV Caching in LLMs, Explained Visually" (Feb 2025)
+Reference: Avi Chawla, "KV Caching in LLMs, Explained Visually" (Feb 2025)
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/context-engineering]] — コンテキストウィンドウ最適化のための基盤技術としてのKV Cache
-- [[concepts/attention-mechanism-variants]] — GQA, MLA, SWAなどのバリアントとKV Cacheの関係
-- [[concepts/token-economics]] — KV Cacheが推論コストに与える影響
-- [[concepts/harness-engineering/system-architecture/context-compaction]] — コンテキスト圧縮によるKV Cacheメモリ節約
+- [[concepts/context-engineering]] — KV Cache as foundational technology for context window optimization
+- [[concepts/attention-mechanism-variants]] — Relationship between KV Cache and variants like GQA, MLA, SWA
+- [[concepts/token-economics]] — Impact of KV Cache on inference costs
+- [[concepts/harness-engineering/system-architecture/context-compaction]] — KV Cache memory savings via context compaction
