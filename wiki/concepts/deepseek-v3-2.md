@@ -17,60 +17,60 @@ sources:
 
 # DeepSeek-V3.2
 
-DeepSeek-V3.2は、**685Bパラメータ**の高効率推論モデル。DeepSeek-AIが2025年12月に発表。[[concepts/deepseek-v3|V3]]を進化させ、**DeepSeek Sparse Attention（DSA）**、**スケーラブルRL（GRPO）**、**大規模エージェントタスク合成**の3つの革新により、オープンソースと商用フロンティアモデル（GPT-5、Gemini-3.0-Pro）の性能ギャップを埋めることを狙った。ハイコンピュート版**V3.2-Speciale**はIMO 2025およびIOI 2025で金メダルを獲得。
+DeepSeek-V3.2 is a **685B parameter** high-efficiency reasoning model. Announced by DeepSeek-AI in December 2025. Evolving [[concepts/deepseek-v3|V3]] with three innovations — **DeepSeek Sparse Attention (DSA)**, **scalable RL (GRPO)**, and **large-scale agent task synthesis** — it aimed to close the performance gap between open-source and commercial frontier models (GPT-5, Gemini-3.0-Pro). The high-compute variant **V3.2-Speciale** won gold medals at IMO 2025 and IOI 2025.
 
-## アーキテクチャ革新
+## Architecture Innovations
 
 ### DeepSeek Sparse Attention (DSA)
 
-標準的な自己注意の $O(L^2)$ 計算量を $O(Lk)$（$k$ は選択トークン数）に削減する新アテンション機構。
+A new attention mechanism that reduces standard self-attention's $O(L^2)$ complexity to $O(Lk)$ (where $k$ is the number of selected tokens).
 
-**Lightning Indexer**（高速インデクサ）:
-- クエリトークン $h_t$ と過去トークン $h_s$ 間の**インデックススコア** $I_{t,s}$ を計算
-- 計算式: $I_{t,s} = \sum_{j=1}^{H^I} w^I_{t,j} \cdot \text{ReLU}(q^I_{t,j} \cdot k^I_s)$
-- ハードコードされたスパースパターンではなく、**どの過去トークンを保持するかを学習**する
+**Lightning Indexer**:
+- Computes an **index score** $I_{t,s}$ between query token $h_t$ and past token $h_s$
+- Formula: $I_{t,s} = \sum_{j=1}^{H^I} w^I_{t,j} \cdot \text{ReLU}(q^I_{t,j} \cdot k^I_s)$
+- Rather than hardcoded sparse patterns, it **learns which past tokens to retain**
 
 **Fine-grained Token Selection**:
-- インデクサスコアに基づきtop-k KVエントリのみを取得
-- 長コンテキストシナリオ（最大128K）での推論コストを大幅削減
-- 性能劣化なしに効率を実現
+- Retrieves only top-k KV entries based on indexer scores
+- Significantly reduces inference cost in long-context scenarios (up to 128K)
+- Achieves efficiency without performance degradation
 
-DSAは後継の[[concepts/deepseek-v4|V4]]（CSA: Compressed Sparse Attention）や [[glm-5-1|GLM-5.1]] にも採用され、オープンソースLLMの長コンテキスト効率化の標準手法となった。既存の技法との比較は[[attention-mechanism-variants]]を参照。
+DSA was later adopted in successor [[concepts/deepseek-v4|V4]] (CSA: Compressed Sparse Attention) and [[glm-5-1|GLM-5.1]], becoming a standard technique for long-context efficiency in open-source LLMs. See [[attention-mechanism-variants]] for comparison with existing techniques.
 
-### スケーラブルRLフレームワーク（GRPO強化）
+### Scalable RL Framework (GRPO Enhancement)
 
-[[concepts/deepseek-r1|R1]]で導入された[[concepts/grpo|GRPO]]（Group Relative Policy Optimization）を3つの点で強化。ポストトレーニング予算は事前学習コストの**10%超**。
+Three enhancements to [[concepts/grpo|GRPO]] (Group Relative Policy Optimization) introduced in [[concepts/deepseek-r1|R1]]. The post-training budget exceeded **10%** of pre-training cost.
 
-| 改良点 | 内容 | 効果 |
+| Improvement | Content | Effect |
 |--------|------|------|
-| **Unbiased KL Estimate** | 系統的推定誤差を除去 | 安定した収束 |
-| **Off-Policy Sequence Masking** | 大きな方策乖離を起こす負例シーケンスをマスク | 訓練安定性の向上 |
-| **Keep Routing / Sampling Mask** | 推論・訓練フレームワーク間でMoEルーティングとサンプリングの一貫性を保証 | フレームワーク整合性 |
+| **Unbiased KL Estimate** | Removes systematic estimation bias | Stable convergence |
+| **Off-Policy Sequence Masking** | Masks negative sequences with large policy divergence | Improved training stability |
+| **Keep Routing / Sampling Mask** | Ensures MoE routing and sampling consistency across inference and training frameworks | Framework alignment |
 
-### 大規模エージェントタスク合成
+### Large-Scale Agent Task Synthesis
 
-モデルのツール使用能力を強化するため、**1,827の異なる環境**と**85,000の複雑なプロンプト**を生成するデータ合成パイプラインを開発。
+To enhance the model's tool-use capabilities, a data synthesis pipeline was developed that generates **1,827 different environments** and **85,000 complex prompts**.
 
-**合成タスクの種類**:
-- **Trip Planning**: 複数ステップの制約充足型計画問題
-- **Code Agent**: コード実行を伴う複合タスク
-- 特徴: 「解くのは難しいが検証は容易」（hard to solve, easy to verify）
+**Synthetic Task Types**:
+- **Trip Planning**: Multi-step constraint satisfaction planning problems
+- **Code Agent**: Composite tasks involving code execution
+- Characteristic: "Hard to solve, easy to verify"
 
-**Thinking in Tool-Use（ツール使用時の思考管理）**:
-- ツール対話中は推論トレース（`<tool_thinking>`）を保持
-- 新しいユーザーメッセージ到着時にトレースを破棄しトークン節約
-- コード実行の最大回数: 20回、可能な限り言語推論よりコード実行を優先
+**Thinking in Tool-Use**:
+- Keep reasoning traces (`<tool_thinking>`) during tool conversations
+- Discard traces when new user messages arrive to save tokens
+- Maximum code execution rounds: 20, prioritize code execution over language reasoning where possible
 
-## モデルバリアント
+## Model Variants
 
-| モデル | パラメータ | 特性 |
+| Model | Parameters | Characteristics |
 |--------|-----------|------|
-| **V3.2（標準）** | 685B | 推論・エージェント両対応、GPT-5-High相当 |
-| **V3.2-Speciale** | 685B（高計算量推論） | 長さ制約緩和、推論トークン増加、競技特化 |
+| **V3.2 (Standard)** | 685B | Supports both reasoning and agents, GPT-5-High level |
+| **V3.2-Speciale** | 685B (high-compute reasoning) | Relaxed length constraints, increased reasoning tokens, competition-focused |
 
-## ベンチマーク性能
+## Benchmark Performance
 
-| ベンチマーク | GPT-5 High | Gemini-3.0 Pro | DeepSeek-V3.2 | **V3.2-Speciale** |
+| Benchmark | GPT-5 High | Gemini-3.0 Pro | DeepSeek-V3.2 | **V3.2-Speciale** |
 |-------------|:----------:|:--------------:|:-------------:|:-----------------:|
 | **AIME 2025** | 94.6% | 95.0% | 93.1% | **96.0%** |
 | **HMMT Feb 2025** | 88.3% | 97.5% | 92.5% | **99.2%** |
@@ -78,58 +78,58 @@ DSAは後継の[[concepts/deepseek-v4|V4]]（CSA: Compressed Sparse Attention）
 | **Codeforces (Rating)** | 2537 | **2708** | 2386 | 2701 |
 | **SWE-bench Verified** | 74.9% | 76.2% | 73.1% | — |
 
-### 競技プログラミングでの成果（Speciale）
+### Competitive Programming Results (Speciale)
 
-| 大会 | 結果 |
+| Competition | Result |
 |------|------|
-| **IMO 2025**（国際数学オリンピック） | 🥇 金メダル |
-| **IOI 2025**（国際情報オリンピック） | 🥇 金メダル |
-| **ICPC World Finals 2025** | 🥈 世界2位 |
+| **IMO 2025** (International Mathematical Olympiad) | 🥇 Gold Medal |
+| **IOI 2025** (International Olympiad in Informatics) | 🥇 Gold Medal |
+| **ICPC World Finals 2025** | 🥈 World 2nd Place |
 
-## サーチ・長コンテキストにおけるコンテキスト管理
+## Context Management in Search & Long Context
 
-検索エージェントの長コンテキストボトルネック対処として、3つの戦略を実装：
+Three strategies implemented to address the long-context bottleneck in search agents:
 
-| 戦略 | 動作 | 効率 |
+| Strategy | Behavior | Efficiency |
 |------|------|------|
-| **Summary** | オーバーフローした軌跡を要約 | 中程度 |
-| **Discard-75%** | 最古の75%のツール履歴を破棄 | 高い |
-| **Discard-all** | 現在のゴールを保持しつつコンテキストをリセット | **最も効率的・スケーラブル** |
+| **Summary** | Summarize overflowed trajectory | Medium |
+| **Discard-75%** | Discard oldest 75% of tool history | High |
+| **Discard-all** | Reset context while preserving current goal | **Most efficient and scalable** |
 
-## 限界と今後の課題
+## Limitations & Future Work
 
-1. **世界知識**: 総訓練FLOPsが少ないため、プロプライエタリモデルに依然として劣後
-2. **トークン効率**: Gemini-3.0-Proと同等の品質を得るにはより長い生成軌跡（多くのトークン）が必要
-3. **インテリジェンス密度（Intelligence Density）**: 推論チェーンの「密度」最適化が将来課題 — レイテンシとコストの削減
+1. **World Knowledge**: Still lags behind proprietary models due to fewer total training FLOPs
+2. **Token Efficiency**: Requires longer generation trajectories (more tokens) to achieve quality comparable to Gemini-3.0-Pro
+3. **Intelligence Density**: Optimizing the "density" of reasoning chains is a future challenge — reducing latency and cost
 
-## DeepSeek進化における位置づけ
+## Position in DeepSeek Evolution
 
 ```
-V3 (Dec 2024)         671B MoE、FP8訓練、DualPipe — GPT-4o級を$5.6Mで達成
+V3 (Dec 2024)         671B MoE, FP8 training, DualPipe — GPT-4o-class at $5.6M
     ↓
-V3.2 (Dec 2025)       685B、DSA + GRPO強化 + エージェント合成 — GPT-5/Gemini-3.0-Proに迫る
+V3.2 (Dec 2025)       685B, DSA + GRPO enhanced + Agent synthesis — Approaches GPT-5/Gemini-3.0-Pro
     ↓
-V4 (Apr 2026)         1.6T Pro / 284B Flash、1Mコンテキスト、Hybrid Attention — 完全フロンティア
+V4 (Apr 2026)         1.6T Pro / 284B Flash, 1M context, Hybrid Attention — Full frontier
 ```
 
-V3.2の位置づけは、**V3の効率アーキテクチャを基盤に、DSAによる推論効率化とスケーラブルRLによる推論能力強化を加えた過渡的マイルストーン**。V4で実現した1MコンテキストやmHC、Muon Optimizerほどのアーキテクチャ飛躍はないが、DSAとエージェントタスク合成は後継モデルに継承された重要な技術的貢献。
+V3.2's positioning is a **transitional milestone built on V3's efficient architecture, adding DSA for inference efficiency and scalable RL for reasoning capability enhancement**. While it lacks the architectural leaps of V4's 1M context, mHC, and Muon Optimizer, DSA and agent task synthesis are important technical contributions inherited by successor models.
 
-## 歴史的意義
+## Historical Significance
 
-1. **DSAの確立**: 学習可能なスパースアテンションが実用的な長コンテキスト効率化手法として検証され、V4、GLM-5.1など後続モデルに波及
-2. **オープンソース競争力の証明**: GPT-5/Gemini-3.0-Pro世代の商用フロンティアに対し、オープンウェイトモデルが肉薄できることを実証
-3. **エージェント能力の合成データスケーリング**: 1,827環境・85Kプロンプトの合成パイプラインが、実タスク性能への転移可能性を示した
-4. **競技AIのマイルストーン**: IMO・IOI金メダルは、AIの数学・アルゴリズム推論能力の到達点を示す
+1. **DSA Established**: Learnable sparse attention validated as a practical long-context efficiency technique, propagated to successors V4, GLM-5.1
+2. **Open-Source Competitiveness Proved**: Demonstrated that open-weight models can approach commercial frontiers of the GPT-5/Gemini-3.0-Pro generation
+3. **Agent Capability via Synthetic Data Scaling**: The synthesis pipeline of 1,827 environments and 85K prompts showed transferability to real-task performance
+4. **Competitive AI Milestone**: IMO/IOI gold medals mark a significant milestone in AI's mathematical and algorithmic reasoning capabilities
 
-## 関連項目
+## See Also
 
-- [[entities/deepseek]] — DeepSeek企業概要
-- [[concepts/deepseek-v3]] — 前世代（V3アーキテクチャ）
-- [[concepts/deepseek-v4]] — 後継モデル（1Mコンテキスト、Hybrid Attention）
-- [[concepts/deepseek-r1]] — 推論特化モデル（GRPOの原点）
+- [[entities/deepseek]] — DeepSeek company overview
+- [[concepts/deepseek-v3]] — Previous generation (V3 architecture)
+- [[concepts/deepseek-v4]] — Successor model (1M context, Hybrid Attention)
+- [[concepts/deepseek-r1]] — Reasoning-specialized model (origin of GRPO)
 - [[concepts/grpo]] — Group Relative Policy Optimization
-- [[attention-mechanism-variants]] — DSAを含むアテンション技法の比較
-- [[glm-5-1]] — DSAを採用した後続モデル
-- [[agent-training]] — エージェントタスク合成の文脈
-- [[concepts/speculative-decoding]] — 推論効率化技術
-- [[concepts/mixture-of-experts]] — MoEアーキテクチャ
+- [[attention-mechanism-variants]] — Comparison of attention techniques including DSA
+- [[glm-5-1]] — Successor model adopting DSA
+- [[agent-training]] — Agent task synthesis context
+- [[concepts/speculative-decoding]] — Inference efficiency techniques
+- [[concepts/mixture-of-experts]] — MoE architecture

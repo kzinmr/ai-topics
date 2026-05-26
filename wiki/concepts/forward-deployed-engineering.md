@@ -44,84 +44,84 @@ FDE is the operational model behind the wave of AI services joint ventures. See 
 
 ## The FDE Job: Audit → Evals → Deployment
 
-Varickによる実践的FDEガイド（2026年5月）では、FDEの仕事は3つのフェーズに分解される:
+Varick's practical FDE guide (May 2026) breaks the FDE role into three phases:
 
-### 1. Audit（監査）
-顧客の現場に入り、各チームのワークフローをマッピング。**自動化すべき/すべきでない**を判断する3原則:
-| 条件 | 判断 |
+### 1. Audit
+Go on-site with customers and map each team's workflow. Three principles for deciding **what should/shouldn't be automated**:
+| Condition | Decision |
 |------|------|
-| ルール化可能だが入力が変動（メール→PDF→画像） + ツール呼び出し必要 | **エージェント**を使う |
-| ルールも入力も予測可能 | **コード**の方が速く安い |
-| パターン認識 + ドメイン専門知識が必要 | **手動**のまま |
+| Rule-based but inputs vary (email→PDF→images) + tool calls needed | Use **Agent** |
+| Both rules and inputs are predictable | **Code** is faster and cheaper |
+| Pattern recognition + domain expertise needed | Keep **Manual** |
 
-重要なポイント:
-- **高頻度・高ボリュームの自動化を狙う** — 月5回しか動かないエージェントはROIが出ない
-- **AIを使いすぎない** — ほとんどの自動化は一連のツール呼び出し + 1回のLLMオーケストレーションで十分
+Key points:
+- **Target high-frequency, high-volume automation** — An agent that runs 5 times a month won't generate ROI
+- **Don't overuse AI** — Most automation needs a series of tool calls + one LLM orchestration pass
 
-### 2. Evals（評価）
-数百万ドルのAI導入には、それが機能していることを証明する評価が必要:
-1. **人間のステップをトレースし、AIを各ステップで採点する**: 人間は一度に問題を解決しない。各チェックポイントでAIが正しく判断しているか検証
-2. **少数の優れた事例から始めて基準を作る**: 人間と一緒に「完璧な回答」を定義し、それを基準にエージェントを評価
+### 2. Evals
+Multi-million dollar AI deployments require evidence that they work:
+1. **Trace human steps and score AI at each step**: Humans don't solve problems in one shot. Verify AI decisions at each checkpoint
+2. **Start with a few excellent examples to establish criteria**: Define "perfect answers" with humans and evaluate agents against that baseline
 
-### 3. Deployment（展開）
-- **大規模データ移行を避ける**: 既存データレイヤー（SharePoint/DB）の上にAPIを構築し、その上にオーケストレーターとしてモデルを置く
-- **サンドボックス実行環境**を顧客インフラ内に作成し安全にテスト
-- **小さく始める**: バグ検出→調査→チケット作成のAgentから始め、成功したらコード修正・PR作成能力を追加
-- **最小単位の自律性から始め、段階的に行動権限を付与**
+### 3. Deployment
+- **Avoid large-scale data migration**: Build APIs on top of existing data layers (SharePoint/DB), then place the model as orchestrator on top
+- Create a **sandbox execution environment** within customer infrastructure for safe testing
+- **Start small**: Begin with a bug detection → investigation → ticket creation Agent, then add code fix / PR creation capabilities after success
+- **Start with minimal autonomy and gradually grant permissions**
 
 ## How to Become an FDE (30-Day Roadmap)
 
-Varickの30日間ロードマップ:
+Varick's 30-day roadmap:
 
-| チェックポイント | 日数 | 内容 |
+| Checkpoint | Days | Content |
 |----------------|------|------|
-| CP1 | 7日 | Agent loop、ツール呼び出し、ガードレール（入力検証・最大ステップ制限・出力フィルタリング）、コンテキストウィンドウvs外部メモリの使い分け、監査証跡 |
-| CP2 | 14日 | 構造化出力（常にJSON）、デモ→本番で壊れるもの（Agents 102参照）、チェックポイント（nステップごとに状態保存→再開可能） |
-| CP3 | 21日 | リトライロジック＋指数バックオフ、コスト最適化（安いモデルで安いサブタスク・キャッシュ・max tokens）、ゴールデンデータセット（20実クエリ＋手動ラベル）、マルチエージェントパイプライン |
-| CP4 | 最終週 | 全復習＋声に出して説明＋ビジネス指標に紐付け |
+| CP1 | Day 7 | Agent loop, tool calling, guardrails (input validation, max step limits, output filtering), context window vs external memory trade-offs, audit trails |
+| CP2 | Day 14 | Structured output (always JSON), demo→production breakage (see Agents 102), checkpoints (save state every N steps → resumable) |
+| CP3 | Day 21 | Retry logic + exponential backoff, cost optimization (cheaper models for cheap subtasks, caching, max tokens), golden dataset (20 real queries + manual labels), multi-agent pipelines |
+| CP4 | Final week | Full review + explain aloud + tie to business metrics |
 
-**3つの成功バックグラウンド**: コンサルタント、プロダクトマネージャー、ソフトウェアエンジニア。
-- **コンサル/PM**: データ→ROI変換能力はある。エンジニアリング経験の不足をポートフォリオで補う（本番対応Agent・RAGパイプライン・Evalフレームワーク・MCP）
-- **SWE**: コミュニケーション能力が最重要。作ったものをビジネス価値に翻訳して説明できること
+**3 Successful Backgrounds**: Consultants, Product Managers, Software Engineers.
+- **Consultant/PM**: Have the data→ROI conversion ability. Supplement engineering experience gaps with a portfolio (production-ready Agent, RAG pipeline, Eval framework, MCP)
+- **SWE**: Communication is paramount. Must be able to translate what you build into business value
 
-> **最重要スキル**: 「非技術系の意思決定者にAIができること・できないことを説明できるか」。これができないとFDEにはなれない。
+> **Critical Skill**: "Can you explain what AI can and cannot do to non-technical decision-makers?" Without this, you cannot become an FDE.
 
-## FDE-SaaS合成：最も価値のあるポジション
+## FDE-SaaS Synthesis: The Most Valuable Position
 
-### 「FDE vs SaaS」という誤った二分法
+### The False "FDE vs SaaS" Dichotomy
 
-FDEとSaaSを対立軸として捉えるのは危険なバイナリ思考である。最も勝てるポジションは、純粋なFDEでも純粋なSaaSでもない。それは**FDEが現場で発見したパターンを、再利用可能なプロダクト・プラットフォームのプリミティブへと迅速に変換する能力**だ。
+Framing FDE and SaaS as opposing axes is dangerous binary thinking. The winning position is neither pure FDE nor pure SaaS. It is **the ability to rapidly convert patterns discovered by FDEs in the field into reusable product and platform primitives**.
 
-### 業界リーダーが示す方向性
+### Direction Set by Industry Leaders
 
-- **OpenAI FDE求人要項**: 「実用的なパターンをツール・プレイブック・ビルディングブロックとして体系化（codify）する」
-- **Anthropic FDE求人要項**: 「再現可能なデプロイメントパターンを特定・体系化し、Product/Engineeringへフィードバックする」
+- **OpenAI FDE Job Requirements**: "Codify practical patterns into tools, playbooks, and building blocks"
+- **Anthropic FDE Job Requirements**: "Identify and codify repeatable deployment patterns, provide feedback to Product/Engineering"
 
-トップレベルのFDEとは、「個別顧客向けに何でも作れる人」ではない。**現場でしか見えない要件を発見し、それを再利用可能な抽象化へと変換できる人**である。
+A top-level FDE is not someone who "can build anything for any customer." It is someone who can **discover requirements only visible from the field and convert them into reusable abstractions**.
 
-### 最も価値の高いキャリアタイトル
+### Most Valuable Career Titles
 
-| タイトル | 特徴 |
+| Title | Characteristics |
 |----------|------|
-| **Forward Deployed Product Engineer** | FDEの現場感覚 + プロダクト構築の両輪 |
-| **AI Agent Platform Engineer** | エージェント基盤そのものを設計・汎用化 |
-| **Agentic Product Engineer** | 自律エージェントを製品に組み込む |
-| **Applied AI Product Engineer** | 応用AI領域でプロダクトを主導 |
+| **Forward Deployed Product Engineer** | Balance of FDE field sense + product building |
+| **AI Agent Platform Engineer** | Design and generalize the agent infrastructure itself |
+| **Agentic Product Engineer** | Embed autonomous agents into products |
+| **Applied AI Product Engineer** | Lead products in applied AI domains |
 
-### 避けるべきポジション
+### Positions to Avoid
 
-- **純粋FDE**: コンサルティング比重が高く、プロダクト構築の時間が少ない。現場のパターンをコード化しても、それが再利用される仕組みがない
-- **旧来型SaaS開発者**: 共有画面・機能を作るだけ。AIエージェント時代のパラダイムシフトに乗り遅れる
+- **Pure FDE**: Heavy consulting weight, little time for product building. Even if you codify field patterns, there's no mechanism for reuse
+- **Traditional SaaS Developer**: Only builds shared screens and features. Falls behind the paradigm shift of the AI agent era
 
-### アクションプラン
+### Action Plan
 
-| 時期 | アクション |
+| Timeline | Action |
 |------|-----------|
-| **3ヶ月** | 現職でFDE的な仕事を始める。顧客1社のワークフローを選び、Agentを構築し、効果を測定する |
-| **6ヶ月** | 2〜3社に拡大。共通パターンと差異パターンを特定し、再利用可能な抽象化の種を見つける |
-| **12ヶ月** | 決断 — 現職がFDE-プロダクト合成モデルを受け入れるなら留まる。そうでなければFDE/Applied AI側へ移る |
+| **3 months** | Start FDE-like work in your current role. Pick one customer workflow, build an Agent, measure impact |
+| **6 months** | Expand to 2-3 customers. Identify common vs divergent patterns, find seeds for reusable abstractions |
+| **12 months** | Decide — stay if your current employer embraces the FDE-product synthesis model; otherwise move to the FDE/Applied AI side |
 
-> FDEとSaaSの境界に立つ人材が、AIエージェント時代の最も希少で価値のあるポジションである。
+> Those who stand at the boundary between FDE and SaaS are the rarest and most valuable positions in the AI agent era.
 
 ## Open Questions
 

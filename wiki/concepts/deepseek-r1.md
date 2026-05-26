@@ -18,67 +18,67 @@ sources:
 
 # DeepSeek-R1
 
-DeepSeek-R1は、**純粋な強化学習（RL）によってLLMの推論能力を引き出せる**ことを初めて大規模に実証した画期的モデル。DeepSeek-AI（中国）が2025年1月に発表。**Nature**（Vol. 645, pp. 633-638, 2025）に掲載された、数少ない産業界発のNature論文の一つ。人間がアノテーションしたChain-of-Thought（CoT）デモンストレーションなしに、自己検証・内省・「アハモーメント」などの高度な推論行動が**創発（emerge）**することを示した。
+DeepSeek-R1 is a groundbreaking model that demonstrated for the first time at scale that **pure reinforcement learning (RL) can elicit reasoning capabilities from LLMs**. Published by DeepSeek-AI (China) in January 2025. One of the rare industry-origin papers published in **Nature** (Vol. 645, pp. 633-638, 2025). It showed that advanced reasoning behaviors such as self-verification, reflection, and "aha moments" **emerge** without human-annotated Chain-of-Thought (CoT) demonstrations.
 
-## モデルファミリー
+## Model Family
 
-DeepSeek-R1プロジェクトは3層のモデルファミリーを生み出した：
+The DeepSeek-R1 project produced a three-tier model family:
 
-### DeepSeek-R1-Zero: 純粋RLからの推論創発
+### DeepSeek-R1-Zero: Reasoning Emergence from Pure RL
 
-[[concepts/deepseek-v3|DeepSeek-V3-Base]]を起点に、**一切のSFT（Supervised Fine-Tuning）を行わず**、純粋なRLのみで訓練。
+Starting from [[concepts/deepseek-v3|DeepSeek-V3-Base]], trained **without any SFT (Supervised Fine-Tuning)**, using pure RL only.
 
-- **アルゴリズム**: [[concepts/grpo|GRPO（Group Relative Policy Optimization）]]
-- **報酬**: ルールベースのみ（ニューラル報酬モデル不使用）
-  - 正解報酬（Accuracy Rewards）: 数学の正解、コードのコンパイル結果など検証可能な指標
-  - フォーマット報酬（Format Rewards）: 思考過程を `think` タグ内に配置
-- **訓練コスト**: ~101K H800 GPU時間（約$202K）
+- **Algorithm**: [[concepts/grpo|GRPO (Group Relative Policy Optimization)]]
+- **Reward**: Rule-based only (no neural reward model)
+  - Accuracy Rewards: Verifiable metrics like correct math answers, code compilation results
+  - Format Rewards: Place reasoning process inside `think` tags
+- **Training Cost**: ~101K H800 GPU hours (~$202K)
 
-**創発的行動**:
-- 自己検証（self-verification）: 中間ステップの正しさを自発的にチェック
-- 内省（reflection）: 矛盾を検出すると「待って、再評価しよう」と自律的に軌道修正
-- 動的戦略適応: 行き詰まったアプローチを放棄し、別の解法を試行
+**Emergent Behaviors**:
+- Self-verification: Spontaneously check the correctness of intermediate steps
+- Reflection: Upon detecting contradictions, autonomously course-correct ("Wait, let's re-evaluate")
+- Dynamic Strategy Adaptation: Abandon stuck approaches and try alternative solutions
 
-> **「アハモーメント」（Aha Moment）**: 訓練中盤、モデルが自律的に「Wait, wait. Wait. That's an aha moment I can flag here. Let's reevaluate this step-by-step...」と出力。これはプログラムされた行動ではなく、RLの過程で**創発**した推論パターン。
+> **Aha Moment**: Mid-training, the model autonomously output "Wait, wait. Wait. That's an aha moment I can flag here. Let's reevaluate this step-by-step..." This was not a programmed behavior but a reasoning pattern that **emerged** during the RL process.
 
-**R1-Zeroの課題**:
-- 言語混在（英語と中国語が混ざる）
-- 可読性の低さ
-- フォーマットの不安定さ
+**R1-Zero Challenges**:
+- Language mixing (English and Chinese mixed together)
+- Poor readability
+- Unstable formatting
 
-### DeepSeek-R1: マルチステージパイプライン
+### DeepSeek-R1: Multi-Stage Pipeline
 
-R1-Zeroの課題を解決するため、4段階の訓練パイプラインを設計：
+To address R1-Zero's challenges, a 4-stage training pipeline was designed:
 
 ```
 Cold Start SFT → Reasoning RL → Rejection Sampling + SFT → General RL
 ```
 
-| 段階 | 内容 | データ規模 |
+| Stage | Content | Data Scale |
 |------|------|-----------|
-| **1. Cold Start** | 数千の長文CoT例でSFT。可読性のある推論ベースラインを確立 | ~数千例 |
-| **2. Reasoning RL** | 数学・コード・論理に焦点を当てた大規模RL（GRPO） | — |
-| **3. Rejection Sampling + SFT** | 600K推論サンプル + 200K一般サンプル（計800K）でSFT | 800Kサンプル |
-| **4. General RL** | 有用性・無害性のための最終RLアライメント（報酬モデル使用） | — |
+| **1. Cold Start** | SFT on thousands of long CoT examples. Establish readable reasoning baseline | ~thousands of examples |
+| **2. Reasoning RL** | Large-scale RL (GRPO) focused on math, code, and logic | — |
+| **3. Rejection Sampling + SFT** | SFT on 600K reasoning samples + 200K general samples (800K total) | 800K samples |
+| **4. General RL** | Final RL alignment for helpfulness and harmlessness (using reward model) | — |
 
-**総訓練コスト**: R1-Zero ($202K) + R1 ($82K) = **約$294K**
+**Total Training Cost**: R1-Zero ($202K) + R1 ($82K) = **~$294K**
 
-### 蒸留モデル（Distilled Models）
+### Distilled Models
 
-DeepSeek-R1の出力を教師データとして、小型オープンソースモデルに推論能力を蒸留。
+Using DeepSeek-R1's outputs as teacher data, reasoning capabilities were distilled into smaller open-source models.
 
-| 生徒モデル | AIME 2024 (Pass@1) | MATH-500 (Pass@1) |
+| Student Model | AIME 2024 (Pass@1) | MATH-500 (Pass@1) |
 |-----------|---------------------|---------------------|
 | DeepSeek-R1-Distill-Qwen-1.5B | 28.9% | 83.9% |
 | DeepSeek-R1-Distill-Qwen-7B | 55.5% | 92.8% |
 | DeepSeek-R1-Distill-Llama-8B | 50.4% | 89.1% |
 | **DeepSeek-R1-Distill-Llama-70B** | **70.0%** | **94.5%** |
 
-> **衝撃的結果**: DeepSeek-R1-Distill-Llama-70Bは、AIME 2024・MATH-500で**GPT-4oやClaude-3.5-Sonnetを上回った**。また、蒸留Qwen-1.5B（僅か1.5Bパラメータ）がMATH-500で83.9%を達成 — これはGPT-4o (74.6%) や非推論特化の大規模モデルを凌駕する。
+> **Stunning Results**: DeepSeek-R1-Distill-Llama-70B **outperformed GPT-4o and Claude-3.5-Sonnet** on AIME 2024 and MATH-500. Additionally, the distilled Qwen-1.5B (merely 1.5B parameters) achieved 83.9% on MATH-500 — surpassing GPT-4o (74.6%) and larger non-reasoning-specialized models.
 
-## ベンチマーク
+## Benchmarks
 
-### 推論ベンチマーク（OpenAI o1との比較）
+### Reasoning Benchmarks (vs OpenAI o1)
 
 | Benchmark | DeepSeek-V3 | OpenAI o1-mini | **DeepSeek-R1** | OpenAI o1-1217 |
 |-----------|-------------|----------------|-----------------|----------------|
@@ -89,9 +89,9 @@ DeepSeek-R1の出力を教師データとして、小型オープンソースモ
 | MMLU (EM) | 88.5 | 85.2 | **90.8** | 91.8 |
 | SWE-bench Verified | — | — | **49.2** | 48.9 |
 
-DeepSeek-R1は**AIME 2024、MATH-500、Codeforcesでo1-1217に匹敵または上回る**性能を達成。特にMATH-500の97.3%は当時のSOTA。
+DeepSeek-R1 achieved performance **comparable to or exceeding o1-1217** on AIME 2024, MATH-500, and Codeforces. Notably, 97.3% on MATH-500 was SOTA at the time.
 
-### 知識ベンチマーク
+### Knowledge Benchmarks
 
 | Benchmark | DeepSeek-V3 | DeepSeek-R1 |
 |-----------|-------------|-------------|
@@ -100,56 +100,56 @@ DeepSeek-R1は**AIME 2024、MATH-500、Codeforcesでo1-1217に匹敵または上
 | GPQA Diamond | 59.1 | 71.5 |
 | SimpleQA | 24.9 | 30.1 |
 
-RLによる推論訓練が、知識タスクにおいても顕著な改善をもたらした。
+RL-based reasoning training also brought significant improvements to knowledge tasks.
 
-## GRPO（Group Relative Policy Optimization）
+## GRPO (Group Relative Policy Optimization)
 
-詳細は [[concepts/grpo]] を参照。概要：
+See [[concepts/grpo]] for details. Overview:
 
-- **クリティックモデル不要**: PPOと異なり、ポリシーモデルと同サイズの価値関数モデルを必要としない → メモリ・計算資源を大幅節約
-- **グループ相対アドバンテージ**: G個の出力をサンプリングし、グループ内の平均・標準偏差で正規化
-- **ルールベース報酬**: ニューラル報酬モデルの「報酬ハッキング」問題を回避
+- **No Critic Model Needed**: Unlike PPO, GRPO doesn't require a value function model the same size as the policy model → significant memory and compute savings
+- **Group Relative Advantage**: Sample G outputs, normalize by group mean and standard deviation
+- **Rule-Based Reward**: Avoids the "reward hacking" problem of neural reward models
 
 $$A_i = \frac{r_i - \text{mean}(r_1, r_2, \dots, r_G)}{\text{std}(r_1, r_2, \dots, r_G)}$$
 
-## 蒸留の意義
+## Significance of Distillation
 
-DeepSeek-R1の蒸留結果は、以下の重要な示唆を持つ：
+DeepSeek-R1's distillation results carry the following important implications:
 
-1. **推論能力は蒸留可能**: 大規模モデルがRLで獲得した推論パターンは、SFTによって小型モデルに転移可能
-2. **パラメータ数より訓練データの質**: 1.5Bの蒸留モデルが、はるかに大規模な非推論モデルを上回る → 推論データの質が決定的
-3. **RL→SFTの非対称性**: RLで推論能力を「発見」し、SFTで「転移」する非対称パイプラインの有効性を実証
+1. **Reasoning is Distillable**: Reasoning patterns acquired by large models via RL can be transferred to small models via SFT
+2. **Data Quality Over Parameter Count**: A 1.5B distilled model outperforms much larger non-reasoning models → reasoning data quality is decisive
+3. **RL→SFT Asymmetry**: Demonstrates the effectiveness of an asymmetric pipeline: "discover" reasoning capabilities via RL, "transfer" them via SFT
 
-## 制限事項
+## Limitations
 
-| 制限 | 詳細 |
+| Limitation | Details |
 |------|------|
-| **言語混在** | 非英語・非中国語クエリで英語と中国語が混ざる |
-| **ツール非対応** | 検索エンジン・電卓など外部ツールをネイティブに扱えない |
-| **Few-shot劣化** | Few-shotプロンプトで性能が**低下**する（zero-shotが最適） |
-| **ソフトウェア工学未適用** | 大規模RLはSWEタスクに未適用（評価時間が長いため） |
-| **プロンプト感受性** | 出力フォーマットの指定に敏感 |
+| **Language Mixing** | English and Chinese mix in non-English/non-Chinese queries |
+| **No Tool Support** | Cannot natively use external tools like search engines, calculators |
+| **Few-Shot Degradation** | Performance **decreases** with few-shot prompts (zero-shot is optimal) |
+| **SWE Not Applied** | Large-scale RL not applied to SWE tasks (due to long evaluation time) |
+| **Prompt Sensitivity** | Sensitive to output format specification |
 
-## 歴史的意義
+## Historical Significance
 
-DeepSeek-R1は、Reasoningモデル発展史におけるマイルストーン論文として以下の意義を持つ：
+DeepSeek-R1 is a milestone paper in the development of reasoning models, with the following significance:
 
-1. **推論の創発を実証**: 「RLが推論能力を引き出せる」ことを671Bスケールで初めて示した
-2. **Nature掲載**: 産業界のAI論文がNatureに掲載される希少な事例 → 学術的厳密さが認められた
-3. **GRPOの導入**: PPOの計算ボトルネック（クリティックモデル）を解消する新しいRLアルゴリズム
-4. **蒸留パラダイムの確立**: 「大規模RLで発見 → SFTで小型モデルに転移」の非対称パイプライン
-5. **コスト効率**: $294Kでo1クラスの推論能力を達成 → 推論モデル開発の民主化
-6. **アハモーメント**: AIの自律的行動創発の象徴的瞬間として広く引用
+1. **Demonstrated Reasoning Emergence**: First to show at 671B scale that "RL can elicit reasoning capabilities"
+2. **Nature Publication**: A rare case of an industry AI paper being published in Nature → academic rigor recognized
+3. **Introduced GRPO**: A new RL algorithm that eliminates the computational bottleneck (critic model) of PPO
+4. **Established Distillation Paradigm**: The asymmetric pipeline of "discover via large-scale RL → transfer to small models via SFT"
+5. **Cost Efficiency**: Achieved o1-class reasoning at $294K → democratization of reasoning model development
+6. **Aha Moment**: Widely cited as a symbolic moment of autonomous behavioral emergence in AI
 
-DeepSeek-R1の推論パターンは後に[[concepts/deepseek-v3|DeepSeek-V3]]にも蒸留され、V3のポストトレーニングにおいて重要な役割を果たした。
+DeepSeek-R1's reasoning patterns were later distilled into [[concepts/deepseek-v3|DeepSeek-V3]], playing a crucial role in V3's post-training.
 
-## 関連項目
+## See Also
 
-- [[entities/deepseek]] — DeepSeek企業概要
-- [[concepts/deepseek-v3]] — ベースモデル（R1の起点、後にR1推論を蒸留）
-- [[concepts/grpo]] — Group Relative Policy Optimization（R1で導入されたRLアルゴリズム）
-- [[reasoning]] — 推論能力全般
-- [[concepts/chain-of-thought]] — Chain-of-Thought推論
-- [[distillation]] — 知識蒸留技術
-- [[concepts/reinforcement-learning]] — 強化学習
-- [[openai-o1]] — 競合推論モデル
+- [[entities/deepseek]] — DeepSeek company overview
+- [[concepts/deepseek-v3]] — Base model (R1's starting point, later distilled with R1 reasoning)
+- [[concepts/grpo]] — Group Relative Policy Optimization (RL algorithm introduced in R1)
+- [[reasoning]] — Reasoning capabilities overview
+- [[concepts/chain-of-thought]] — Chain-of-Thought reasoning
+- [[distillation]] — Knowledge distillation techniques
+- [[concepts/reinforcement-learning]] — Reinforcement learning
+- [[openai-o1]] — Competing reasoning model
