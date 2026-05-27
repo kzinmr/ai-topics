@@ -18,53 +18,53 @@ sources: []
 
 # Gold Diff Distillation
 
-コーディング製品企業が開発した新しいRLトレーニング手法。ユーザーの最終的な「望ましい状態」をRLターゲットとして利用する。
+A new RL training method developed by a coding-product company. It uses the user's final "desired state" as the RL target.
 
 ## Core Concept
 
-従来のモデル蒸留（distillation）が教師モデルの出力を直接模倣するのに対し、Gold Diff Distillationは：
+While traditional model distillation directly imitates the teacher model's output, Gold Diff Distillation:
 
-- **ユーザーの最終収束状態**を正解として扱う
-- ユーザーが拒否・編集した中間出力をペナルティ対象とする
-- 10回以上のAPIターンを経て到達した「真に有用な出力」を学習ターゲットにする
+- Treats the **user's final converged state** as the ground truth
+- Penalizes intermediate outputs the user rejected or edited
+- Uses the "truly useful output" reached after 10+ API turns as the learning target
 
 ## Mechanism
 
 ```
 User Request → Model Output v1 → User Edit/Reject → Model Output v2 → ... → Final Accepted State
                                                                         ↑
-                                                        これが「Gold Diff」（正解差分）
+                                                        This is the "Gold Diff" (correct differential)
 ```
 
-### RLターゲット設定
-- **報酬**: ユーザーが最終的に受け入れた出力に近い生成
-- **ペナルティ**: �ーザーが拒否・編集した中間出力パターン
-- **利点**: 人間の実際の選好を直接反映できる
+### RL Target Setting
+- **Reward**: Generating outputs close to what the user ultimately accepted
+- **Penalty**: Patterns in intermediate outputs the user rejected or edited
+- **Advantage**: Directly reflects actual human preferences
 
 ## Strategic Implications
 
-### Distillationの阻止可能性
-Dwarkesh Patelの分析によれば：
-1. **Chain-of-Thought隠蔽は失敗する**: モデルはプロンプトで思考を省略・外部化可能
-2. **RLVRでCoT再構築可能**: 隠してもトレーニングターゲットとして再構築できる
-3. **真のモータはツール使用**: ローカル実行されるコード・bashツール使用は隠蔽困難
+### Distillation Preventability
+According to Dwarkesh Patel's analysis:
+1. **Chain-of-Thought hiding fails**: Models can omit or externalize thinking via prompts
+2. **RLVR can reconstruct CoT**: Even hidden, it can be reconstructed as a training target
+3. **The real moat is tool use**: Locally executed code/bash tool use is hard to conceal
 
-### Gold Diffの優位性
-蒸留されたモデルは元のAPIモデルを**上回る可能性**がある：
-- ユーザーの実際のワークフローから学習
-- 中間試行錯誤の「負のサンプル」も活用
-- 製品利用データという独占的データソース
+### Gold Diff's Advantage
+Distilled models have the **potential to surpass** the original API model:
+- Learning from actual user workflows
+- Leveraging "negative samples" from intermediate trial-and-error
+- Exclusively available product usage data as a data source
 
 ## Economic Context
 
-- Frontierモデル蒸留コスト: ~$25M（1T tokens @ Opus 4.6の$25/MTok）
-- コーディング製品企業はこのコストを正当化できるROIを持つ
-- ユーザー行動データという他社が入手できない「モータ」を保有
+- Frontier model distillation cost: ~$25M (1T tokens @ Opus 4.6's $25/MTok)
+- Coding-product companies have the ROI to justify this cost
+- They hold a "moat" of user behavior data that competitors cannot access
 
 ## Sources
 
 - [Dwarkesh Patel: What I learned this week](https://www.dwarkesh.com/p/what-i-learned-april-15)
-- AI Index Report 2026（コーディングエージェント採用データ）
+- AI Index Report 2026 (coding agent adoption data)
 
 ## See Also
 

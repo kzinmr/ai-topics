@@ -25,18 +25,18 @@ related:
 
 # Claude Think Tool
 
-Claudeの「think」ツールは、複雑なタスク中に構造化された思考のための専用スペースを提供するツール。長いツール呼び出しチェーンや複数ステップの会話で、Claudeが外部情報を処理し、次のアクションの前に立ち止まって考えることを可能にする。
+Claude's "think" tool provides a dedicated space for structured thinking during complex tasks. In long tool-call chains or multi-step conversations, it allows Claude to process external information and stop to think before the next action.
 
-## Extended Thinking との違い
+## Comparison with Extended Thinking
 
 | | Think Tool | Extended Thinking |
 |---|---|---|
-| **タイミング** | レスポンス生成**中**（ツール呼び出しの合間） | レスポンス生成**前** |
-| **対象** | 外部情報（ツール結果）の処理 | クエリ単体からの深い推論 |
-| **推論の深さ** | 新しい情報に焦点を絞った軽量推論 | 包括的で深い事前検討 |
-| **適した用途** | 複雑なツールチェーン、ポリシー重視環境 | コーディング、数学、物理（非ツール） |
+| **Timing** | **During** response generation (between tool calls) | **Before** response generation |
+| **Target** | Processing external information (tool results) | Deep reasoning from a query alone |
+| **Reasoning Depth** | Lightweight reasoning focused on new information | Comprehensive, deep pre-consideration |
+| **Best For** | Complex tool chains, policy-focused environments | Coding, math, physics (non-tool) |
 
-## 実装
+## Implementation
 
 ```json
 {
@@ -55,37 +55,37 @@ Claudeの「think」ツールは、複雑なタスク中に構造化された思
 }
 ```
 
-τ-Benchの標準環境の一部として組み込まれている。
+It is built into the τ-Bench standard environment.
 
-## ベンチマーク結果 (τ-Bench)
+## Benchmark Results (τ-Bench)
 
-**評価指標**: pass^k（全k回の独立試行が成功する確率をタスク間で平均）— 一貫性と信頼性を測定。
+**Evaluation metric**: pass^k (average across tasks of the probability that all k independent trials succeed) — measures consistency and reliability.
 
 ### Airline Domain (Claude 3.7 Sonnet)
 
-| 設定 | pass^1 | pass^2 | pass^3 |
+| Setting | pass^1 | pass^2 | pass^3 |
 |------|--------|--------|--------|
 | Baseline | 0.332 | 0.206 | - |
 | Extended Thinking | 0.412 | 0.290 | 0.232 |
 | Think Tool | 0.404 | 0.254 | 0.186 |
 | **Think Tool + Optimized Prompt** | **0.584** | **0.444** | **0.384** |
 
-- Think tool + 最適化プロンプトで **baseline比 +54%** の改善
-- 単独でも Extended Thinking と同等の性能
+- Think tool + optimized prompt achieves **+54% over baseline**
+- Standalone performance matches Extended Thinking
 
 ### Retail Domain
 
-- Think tool単独: 0.812 vs Baseline 0.783
+- Think tool standalone: 0.812 vs Baseline 0.783
 
-## 推奨ユースケース
+## Recommended Use Cases
 
-- **複雑なツール呼び出し**: 長いツールチェーンで各結果を分析する必要がある場合
-- **ポリシー重視環境**: 詳細なガイドラインに従う一貫性が求められる場面（カスタマーサービス等）
-- **逐次的意思決定**: 各ステップが前のステップに依存し、ミスがコスト高な場面
+- **Complex tool calls**: When long tool chains require analyzing each result
+- **Policy-focused environments**: Scenarios requiring consistent adherence to detailed guidelines (customer service, etc.)
+- **Sequential decision-making**: When each step depends on the previous one and mistakes are costly
 
-## 現状
+## Current Status
 
-2025年12月時点で、AnthropicはExtended Thinkingの改善により、ほとんどのケースでthink toolよりもExtended Thinkingの使用を推奨している。ただし、ツール結果の逐次処理が必要なケースではthink toolに優位性が残る。
+As of December 2025, Anthropic recommends using Extended Thinking over the think tool in most cases, due to improvements in Extended Thinking. However, the think tool retains its advantage in scenarios requiring sequential processing of tool results.
 
 ## See Also
 

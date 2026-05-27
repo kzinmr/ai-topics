@@ -19,49 +19,50 @@ sources:
 
 # Context Compaction
 
-長期実行エージェントがコンテキストウィンドウの限界に達した際、**重要な情報を保持しつつ不要なデータを圧縮**する仕組み。OpenAI Responses APIのネイティブ機能。
+A mechanism that **compresses unnecessary data while preserving critical information** when a long-running agent reaches the context window limit. A native feature of the OpenAI Responses API.
 
-## 問題意識
+## Problem
 
-エージェントループでは、ツール呼び出しの結果、推論の要約、会話履歴が累積していく。長いタスクでは200Kトークンを超え、コンテキストウィンドウが満杯になる。
+In agent loops, tool call results, reasoning summaries, and conversation history accumulate. In long tasks, this can exceed 200K tokens, filling the context window.
 
 > "Long-running tasks fill the context window... the limited context window quickly fills up."
 
-## OpenAIのアプローチ
+## OpenAI's Approach
 
-モデル自身が**暗号化されたトークン効率の良い圧縮アイテム**を生成するようにトレーニングされている。
+The model is trained to generate **encrypted, token-efficient compressed items** on its own.
 
-### 2つのモード
+### Two Modes
 
-| モード | 説明 | ユースケース |
-|--------|------|-------------|
-| **サーバーサイド** | 設定可能な閾値で自動トリガ。多少のオーバーを許容 | 長期タスク、自動運用 |
-| **スタンドアロン** | `/compact` エンドポイントで手動制御 | 明示的な圧縮タイミング |
+| Mode | Description | Use Case |
+|------|-------------|---------|
+| **Server-side** | Auto-triggers at configurable thresholds. Allows some overshoot | Long-running tasks, automated operation |
+| **Standalone** | Manual control via `/compact` endpoint | Explicit compression timing |
 
-### 動作メカニズム
+### Mechanism
 
 ```
-圧縮前: [システムプロンプト] + [会話履歴 1-150] + [ツール結果 多数]
+Before: [System prompt] + [Conversation history 1-150] + [Many tool results]
                     ↓
-圧縮後: [圧縮アイテム (暗号化)] + [高価値な会話履歴の一部]
+After: [Compressed item (encrypted)] + [High-value conversation history subset]
 ```
 
-- 圧縮アイテムはモデルが理解できる形式で、重要な状態を保持
-- サーバーサイド圧縮はモデルのリリースごとに進化（トレーニングに追従）
-- 複雑なクライアント側の要約ロジックが不要
+- Compressed items are in a model-readable format, preserving critical state
+- Server-side compression evolves with each model release (tracks training)
+- Eliminates need for complex client-side summarization logic
 
-## Codexによる自己改善
+## Codex's Self-Improvement
 
 > "Codex helped us build the compaction system while serving as an early user of it. When one Codex instance hit a compaction error, we'd spin up a second instance to investigate. The result was that Codex got a native, effective compaction system just by working on the problem."
 
-** Codexが自身の圧縮エラーを調査し、圧縮システム自体を改善した**。これは「モデルが自身のためにツールを作る」実例。
+** Codex investigated its own compaction errors and improved the compaction system itself**. This is a concrete example of "models building tools for themselves."
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/context-window-management]] — 圧縮の上位概念（Simon Willisonの戦略的管理）
-- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — 圧縮が必要になるコンテキスト累積の発生源
--  — 圧縮を実装する基盤API
-## 参照
+- [[concepts/context-window-management]] — Higher-level concept of compaction (Simon Willison's strategic management)
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — Source of context accumulation that requires compaction
+- [[entities/openai]] — The underlying API that implements compaction
+
+## References
 
 - [OpenAI: Equipping the Responses API with a computer environment](https://openai.com/index/equip-responses-api-computer-environment/)
 - [[entities/openai]] — OpenAI

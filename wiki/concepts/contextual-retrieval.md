@@ -23,18 +23,18 @@ related:
 
 # Contextual Retrieval
 
-Contextual Retrieval（文脈検索）は、RAGシステムの検索精度を劇的に向上させる前処理手法。チャンクをembedding/BM25インデックス化する**前に**、各チャンクに文書全体の文脈を付加する。
+Contextual Retrieval is a preprocessing technique that dramatically improves retrieval accuracy in RAG systems. It appends the full document's context to each chunk **before** indexing them into embedding/BM25 indexes.
 
-**コアアイデア**: チャンク単体では失われる文脈（「どの会社の」「いつの」データか）を、Claudeを使って自動補完する。
+**Core idea**: Use Claude to auto-complete the context that is lost from standalone chunks ("which company's" data, "from when" data).
 
-## 手法
+## Method
 
-### 2つのサブ技術
+### Two Sub-Techniques
 
-1. **Contextual Embeddings**: チャンクに文脈を前置してからembedding化
-2. **Contextual BM25**: 同じ文脈付きチャンクでBM25インデックスを作成
+1. **Contextual Embeddings**: Prepend context to chunks before embedding
+2. **Contextual BM25**: Create BM25 indexes with the same contextualized chunks
 
-### 変換例
+### Transformation Example
 
 ```
 # Before
@@ -46,7 +46,7 @@ performance in Q2 2023; the previous quarter's revenue was $314 million.
 The company's revenue grew by 3% over the previous quarter."
 ```
 
-### 文脈生成プロンプト
+### Context Generation Prompt
 
 ```xml
 <document>{{WHOLE_DOCUMENT}}</document>
@@ -56,36 +56,36 @@ Please give a short succinct context to situate this chunk within the
 overall document for the purposes of improving search retrieval of the chunk.
 ```
 
-生成される文脈は通常50-100トークン。Claude 3 Haikuで処理。
+Generated context is typically 50-100 tokens. Processed with Claude 3 Haiku.
 
-## 性能改善
+## Performance Improvement
 
-| 手法 | 検索失敗率削減 | Top-20失敗率 |
+| Method | Retrieval Failure Rate Reduction | Top-20 Failure Rate |
 |------|--------------|-------------|
-| Baseline (標準RAG) | — | 5.7% |
-| Contextual Embeddingsのみ | **-35%** | 3.7% |
+| Baseline (Standard RAG) | — | 5.7% |
+| Contextual Embeddings Only | **-35%** | 3.7% |
 | Contextual Embeddings + Contextual BM25 | **-49%** | 2.9% |
 | + Reranking (Cohere) | **-67%** | 1.9% |
 
-- **全embeddingモデルで改善**（Gemini Text 004, Voyageが特に効果的）
-- 複数ドメイン（コードベース、フィクション、arXiv論文、科学論文）で検証
+- **Improvement across all embedding models** (Gemini Text 004, Voyage especially effective)
+- Validated across multiple domains (codebases, fiction, arXiv papers, scientific papers)
 
-## コスト
+## Cost
 
-Prompt Cachingを活用した場合、**100万ドキュメントトークンあたり$1.02**の一度限りのコスト（800トークンチャンク、8kトークン文書、50トークン文脈指示、100トークン文脈/チャンクの仮定）。
+With Prompt Caching, a **one-time cost of $1.02 per million document tokens** (assuming 800-token chunks, 8k-token documents, 50-token context instruction, 100-token context per chunk).
 
-## 実装上の考慮点
+## Implementation Considerations
 
-- **チャンク境界**: サイズ・境界・オーバーラップの選択が検索性能に影響
-- **Embeddingモデル**: GeminiとVoyageが特に効果的
-- **カスタム文脈化プロンプト**: ドメイン固有の用語集を含めるとさらに改善
-- **チャンク数**: Top-20がTop-10/Top-5より効果的（ただし情報過多に注意）
-- **Reranking**: レイテンシとコストのトレードオフあり
+- **Chunk boundaries**: Choice of size, boundaries, and overlap affects retrieval performance
+- **Embedding models**: Gemini and Voyage are particularly effective
+- **Custom contextualization prompt**: Including domain-specific glossaries further improves results
+- **Chunk count**: Top-20 is more effective than Top-10/Top-5 (but watch for information overload)
+- **Reranking**: Involves a latency-cost tradeoff
 
-## 従来手法との比較
+## Comparison with Prior Methods
 
-Anthropicは以下の既存手法も評価したが、Contextual Retrievalほどの効果はなかった：
-- ドキュメント要約のチャンク付加 → 限定的な改善
+Anthropic also evaluated the following existing methods, but none were as effective as Contextual Retrieval:
+- Appending document summaries to chunks → limited improvement
 - Hypothetical Document Embedding (HyDE)
 - Summary-based indexing
 

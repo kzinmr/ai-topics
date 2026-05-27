@@ -80,26 +80,26 @@ Martin consistently applies rigorous arithmetic to debunk AI hype and uncover ge
 
 ### Managed Agents Analysis — "Managed agents are the new Lambda" (May 2026)
 
-Martin は管理エージェント（クラウドホスト型エージェント）を **AWS Lambda のアナロジー** で分析。Lambda がサーバーレスの革命だったように、管理エージェントは強力だが、一度深く統合すると移行が極めて困難になる「スティッキネス」を持つと警告。
+Martin analyzes managed agents (cloud-hosted agents) using an **AWS Lambda analogy**. Just as Lambda was a serverless revolution, managed agents are powerful but carry a "stickiness" that makes migration extremely difficult once deeply integrated.
 
-#### 管理エージェントの定義
-- **エージェントハーネス（Claude Code / Codex / OpenCode 相当）がクラウドで実行される形態**
-- 利点: 24/7 稼働、Webhook/イベント駆動、クラウドプロバイダによるサンドボックス・パッチ管理
-- 本質: すでに Docker でエージェントを動かしているなら、自分でも構築できるもの
+#### Definition of Managed Agents
+- **Agent harnesses (Claude Code / Codex / OpenCode equivalents) running in the cloud**
+- Benefits: 24/7 operation, webhook/event-driven, sandboxing and patch management by cloud provider
+- Essence: If you're already running agents in Docker, you can build this yourself
 
-#### ベンダーロックイン警告
-- **Anthropic の料金変更（2026年5月）**: 非対話モードの Claude Code 利用がサブスクリプショントークン枠から除外 → 実質 **5-20倍の値上げ**
-- **エージェントの交換可能性**: ハーネス間の移行は比較的容易（プロンプト・コンテキスト・ツール・ログの基本構造は共通）
-- **管理エージェントのロックイン**: データとワークフローがプロバイダのクラウドに埋め込まれると、Lambda 関数の移行と同様に「何ヶ月もかかる」事態に
+#### Vendor Lock-In Warning
+- **Anthropic's pricing change (May 2026)**: Non-interactive Claude Code usage excluded from subscription token allocation → effectively a **5-20x price increase**
+- **Agent interchangeability**: Migration between harnesses is relatively easy (shared basic structure of prompts, context, tools, and logs)
+- **Managed agent lock-in**: When data and workflows are embedded in a provider's cloud, migration becomes a "multi-month" effort, just like Lambda function migration
 
-#### 解決策
-1. **セルフホスティング**: Docker コンテナ + OpenCode（任意のモデルプロバイダに数分で切り替え可能）— Martin の現時点の推奨
-2. **マルチプロバイダプラットフォーム**: Cloudflare Agents, Vercel, AWS AgentCore, Azure AI Foundry, GCP Vertex AI Agent Engine
+#### Solutions
+1. **Self-hosting**: Docker containers + OpenCode (switchable to any model provider in minutes) — Martin's current recommendation
+2. **Multi-provider platforms**: Cloudflare Agents, Vercel, AWS AgentCore, Azure AI Foundry, GCP Vertex AI Agent Engine
 
-#### 戦略的懸念
+#### Strategic Concern
 > "I have a strong gut feeling the frontier labs are going to start introducing new models and capabilities that are ONLY available on their managed agent platforms."
 
-フロンティアラボが新モデル・新機能を自社管理エージェントプラットフォーム限定で提供し始めた場合、セルフホスティング戦略の前提が崩れる可能性。
+If frontier labs begin offering new models and capabilities exclusively on their own managed agent platforms, the premise of the self-hosting strategy could collapse.
 
 
 ### AI-Discovered Zero-Days

@@ -10,18 +10,18 @@ tags: []
 
 # Telegram Managed Bots
 
-Telegram Bot platformの**Managed Bots**機能は、1つのボットが他のボットを作成・管理・共有できるシステム。2025-2026年に正式導入され、Telegram Bot ecosystemの階層管理・マルチテナント化を可能にした。
+Telegram Bot platform's **Managed Bots** feature is a system where one bot can create, manage, and share other bots. Officially introduced in 2025-2026, it enables hierarchical management and multi-tenancy in the Telegram Bot ecosystem.
 
 ## Core Concept
 
-Managed Botsは、管理者ボット（manager bot）が下位ボット（managed bots）のライフサイクルを制御する機能。Telegram BotFather上で「Bot Management Mode」を有効化すると使用可能になる。
+Managed Bots is a feature where a manager bot controls the lifecycle of subordinate bots (managed bots). It becomes available when 'Bot Management Mode' is enabled in Telegram's BotFather.
 
-**主要特徴**:
-- 管理者ボットが新規ボットを作成・管理・共有できる
-- 共有URL形式: `https://t.me/newbot/{manager}/{new_username}?name={new_name}`
-- 管理者は `getManagedBotToken` で各managed botのトークンにアクセス
-- `managed_bot` 更新イベントでマネージャーボットに通知が来る
-- 組織・チーム・SaaSプロバイダー向けのマルチテナントbot構築基盤
+**Key Features**:
+- Manager bot can create, manage, and share new bots
+- Share URL format: `https://t.me/newbot/{manager}/{new_username}?name={new_name}`
+- Manager accesses each managed bot's token via `getManagedBotToken`
+- `managed_bot` update event notifies the manager bot
+- Multi-tenant bot infrastructure for organizations, teams, and SaaS providers
 
 ## Architecture
 
@@ -32,30 +32,30 @@ Manager Bot
     └── Managed Bot C (token via getManagedBotToken)
 ```
 
-各managed botは独立したbotとして動作するが、トークン管理・設定・共有はmanager botを通じて行う。Telegram公式API経由で一元管理できる。
+Each managed bot operates as an independent bot, but token management, configuration, and sharing are handled through the manager bot. Everything can be centrally managed via the official Telegram API.
 
 ## Use Cases
 
 | Use Case | Description |
 |----------|-------------|
-| **SaaS Multi-tenant** | 1つのmanager botで顧客ごとに個別botを生成・管理 |
-| **Organization/team** | チームメンバーごとにアクセス権限付きbotを自動作成 |
-| **Bot marketplace** | 公式/サードパーティbotの管理・デプロイメント基盤 |
-| **White-label bots** | 企業ブランドごとにbotをカスタマイズして配布 |
+| **SaaS Multi-tenant** | Generate and manage individual bots per customer via one manager bot |
+| **Organization/team** | Auto-create bots with access permissions per team member |
+| **Bot marketplace** | Management and deployment platform for official/third-party bots |
+| **White-label bots** | Customize and distribute bots per enterprise brand |
 
 ## Related Features
 - [[concepts/telegram-managed-bots]]
 
-Managed BotsはTelegram Bot platformの他の機能と組み合わせて使用される:
+Managed Bots are used in combination with other Telegram Bot platform features:
 
-- **[Bot-to-Bot Communication](bot-to-bot-communication.md)** — bot同士の相互通信（infinite loop防止要件あり）
-- **Mini Apps (Web Apps)** — JavaScriptベースのTelegram UI統合
-- **Payments** — Telegram Starsを通貨としたデジタルトランザクション
-- **Web Login** — ウィジェット/`login_url`による軽量認証
+- **[Bot-to-Bot Communication](bot-to-bot-communication.md)** — Inter-bot communication (with infinite loop prevention requirement)
+- **Mini Apps (Web Apps)** — JavaScript-based Telegram UI integration
+- **Payments** — Digital transactions using Telegram Stars as currency
+- **Web Login** — Lightweight authentication via widget/`login_url`
 
 ## Significance
 
-Managed Botsは、Telegram Bot platformを単なるチャットボットフレームワークから**マルチテナントbot管理プラットフォーム**へ進化させた。SaaS企業や組織が、顧客/チームごとに個別化されたbotを効率的にデプロイ・管理できる基盤を提供する。特にAI agentプラットフォームとの統合（AI-powered support bots, AI content agentsなど）において、managed botsは重要なインフラストラクチャとなる。
+Managed Bots evolved the Telegram Bot platform from a simple chatbot framework into a **multi-tenant bot management platform**. It provides the infrastructure for SaaS companies and organizations to efficiently deploy and manage individualized bots for each customer/team. Especially in integration with AI agent platforms (AI-powered support bots, AI content agents, etc.), managed bots become a critical infrastructure component.
 
 ## References
 
