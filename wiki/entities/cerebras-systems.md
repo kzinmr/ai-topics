@@ -1,7 +1,7 @@
 ---
 title: Cerebras Systems
 created: 2026-05-14
-updated: 2026-05-16
+updated: 2026-05-27
 type: entity
 tags:
   - entity
@@ -49,6 +49,10 @@ Clusters can scale to **2,048 CS-3 systems**, rated at 256 exaflops FP16 (sparse
 ### Performance Claims
 
 Cerebras claims **21× faster inference** than NVIDIA's DGX B200 Blackwell on Llama 3 70B in a reasoning scenario (1024 input, 4096 output tokens), and **32% lower cost** per token (TCO including capex and energy). This is based on end-to-end latency (TTFT + token generation time).
+
+#### Kimi K2.6 Benchmark (May 2026)
+
+Cerebras demonstrated running **Kimi K2.6** (1 trillion parameters) on the WSE-3 at **981 tokens/second** — **6.7× faster** than the fastest GPU cloud, and **29× faster** than the official Kimi API endpoint (5.6s vs 163.7s end-to-end). This was Cerebras's first major public benchmark after its IPO, showcasing wafer-scale inference for frontier MoE models.
 
 As SemiAnalysis notes, the sparse FLOPs number (125 PFLOPs) is marketed prominently while dense FLOPs (~15.6 PFLOPs) is not — a pattern they call "Feldman's Formula" (analogous to "Jensen Math" for NVIDIA).
 

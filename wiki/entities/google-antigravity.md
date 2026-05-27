@@ -72,10 +72,13 @@ When paired with Antigravity, Gemini 3.5 Flash demonstrated:
 | **Xero** | Autonomous multi-week 1099 tax workflows |
 | **Databricks** | Real-time data monitoring and issue diagnosis |
 
-### Google I/O 2026 — Antigravity 2.0 /grill-me
+### Google I/O 2026 — Antigravity 2.0 /teamwork-preview
 
 At Google I/O 2026 (May 2026), Antigravity 2.0 was showcased with major updates:
 
+- **Bootstrap an OS from scratch**: 93 sub-agents collaborated, making 15,314 model calls, consuming 339M input tokens — at a **total cost of just $916.92**. The output was a bootable operating system built entirely by agents.
+- **AlphaZero re-implementation**: Antigravity successfully re-implemented the AlphaZero algorithm from the original paper.
+- **/teamwork-preview**: Available to AI Ultra subscribers ($200/month). Enables parallel multi-agent collaboration.
 - **/grill-me slash command**: Antigravity's aggressive alternative to Claude Code's polite clarification tool — directly questions assumptions and pushes for better solutions
 - **Feature parity with Claude Code and Codex**: Antigravity 2.0 closes the gap with leading coding agents
 - **AI Studio Workspace integration**: Seamless integration with Google's AI development platform

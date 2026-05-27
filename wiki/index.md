@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2103 | Indexed entries: 1380 | Not in index: 674 |## Entities (677 pages)
+> Last updated: 2026-05-27 | Total pages: 2109 | Indexed entries: 1385 | Not in index: 674 |## Entities (679 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -277,6 +277,7 @@
 - [[entities/greg-brockman]] — Greg Brockman — OpenAI co-founder/President. May 2026: "the model alone is no longer the product" — defining thesis of agent-first industry shift.
 - [[entities/grok-imagine]] — xAI's full-stack video generation platform (Feb 2026). Leads DesignArena image-to-video benchmark (Elo 1,329). 1.245B videos in first 30 days. $4.20/min vs Sora $30/min.
 - [[entities/grok-4-3]] — xAI's latest LLM (May 2026) featuring always-on reasoning, 1M token context, aggressive pricing ($1.25/$2.50 per 1M tokens), and Custom Voices suite.
+- [[entities/grok-build]] — xAI's terminal-based AI coding agent (beta May 2026). SuperGrok/X Premium Plus. AGENTS.md support, MCP server auto-discovery, headless mode. Vulnerable to [[events/trustfall-symlink-rce-2026]].
 - [[entities/gwern]] — **Blog** | gwern.net |
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, primary maintainer of the LM Evaluation Harness (lm-eval). Co-author of Pythia (ICML 2023).
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
@@ -697,6 +698,7 @@
 - [[entities/traversal]] — Traversal — AI incident resolution platform. $53M raised. Backed by Sequoia, Kleiner Perkins.
 - [[entities/vannevar-labs]] — Vannevar Labs — Defense and national security AI. Backed by top-tier defense tech investors.
 - [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
+- [[entities/vera-rubin]] — NVIDIA Vera Rubin — Next-gen GPU architecture (Q3 2026). 288GB HBM4, 10× perf/watt. Vera CPU already shipping to OpenAI/Oracle/Anthropic/xAI.
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."

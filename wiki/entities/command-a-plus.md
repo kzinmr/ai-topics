@@ -1,7 +1,7 @@
 ---
 title: Command A+
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-27
 type: entity
 tags: [model, multimodal, moe, open-source, company, cohere, inference, quantization, enterprise-ai, agentic-engineering]
 sources: [raw/articles/2026-05-20_cohere-command-a-plus.md]
@@ -20,7 +20,7 @@ Command A+ is Cohere's most powerful language model, released May 20, 2026 as th
 | Modalities | Text, image, tool use |
 | Languages | 48 (up from 23 in Command A) |
 | Minimum Hardware | 2× H100 @ W4A4, or 1× Blackwell B200 |
-| Quantizations | BF16, FP8, W4A4 (near-lossless) |
+| Quantizations | BF16, FP8, W4A4 (near-lossless); quantized versions available on [[entities/hugging-face|HuggingFace]] |
 | License | Apache 2.0 (all components) |
 
 ## Performance

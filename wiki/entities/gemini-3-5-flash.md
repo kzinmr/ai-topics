@@ -71,12 +71,35 @@ Rolling out to Google AI Ultra subscribers (US).
 
 Developed under Google's [[concepts/frontier-safety-framework|Frontier Safety Framework]]. Strengthened cyber and CBRN safeguards. Uses **interpretability tools** to check inner reasoning before response generation.
 
+## Tiered Thinking
+
+Gemini 3.5 Flash introduces a **tiered thinking system** with four configurable levels:
+
+| Level | Description | Use Case |
+|-------|-------------|----------|
+| **Minimal** | Fastest, no explicit reasoning | Simple queries, high-throughput |
+| **Low** | Brief reasoning pass | Routine coding, data processing |
+| **Medium** | Balanced reasoning depth | Complex debugging, architecture decisions |
+| **High** | Maximum deliberation | Multi-step agentic workflows |
+
+This allows developers to trade latency for reasoning depth on a per-request basis, rather than switching between different model sizes.
+
+## Pricing
+
+| Metric | Price |
+|--------|-------|
+| Input tokens | $1.50 / 1M tokens |
+| Output tokens | $9.00 / 1M tokens |
+
+Approximately 4× faster output than competing frontier models at competitive pricing. For long-horizon agentic tasks, the cost is <50% of other frontier models.
+
 ## Availability
 
 - Google Antigravity, Gemini API, Google AI Studio, Android Studio
 - [[entities/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]] and Gemini Enterprise
 - Gemini app and AI Mode in Search (billions of users)
-- Coming: Gemini 3.5 Pro (internal use already, public next month)
+- Now **Generally Available** (GA) as of May 2026
+- Coming: Gemini 3.5 Pro (internal use already, public June 2026)
 
 
 ## Mixed Reception & Eval Critique (May 2026)

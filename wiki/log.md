@@ -2,6 +2,45 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] Trending topics wiki ingestion
+
+### Pages Created
+- [[entities/vera-rubin]] — NVIDIA Vera Rubin: Next-gen GPU architecture (Q3 2026). 288GB HBM4, 10× perf/watt. Vera CPU already shipping to OpenAI/Oracle/Anthropic/xAI.
+- [[entities/grok-build]] — xAI Grok Build: Terminal-based coding agent (beta May 2026). AGENTS.md/MCP support, headless mode. SuperGrok/X Premium Plus.
+
+### Pages Updated (trending topics data)
+- [[entities/gemini-3-5-flash]] — Added tiered thinking (Minimal/Low/Medium/High), GA status, pricing ($1.50/$9.00 per 1M tokens)
+- [[entities/google-antigravity]] — Added Antigravity 2.0 OS build demo (93 sub-agents, 15,314 calls, $916.92), AlphaZero reimpl, /teamwork-preview
+- [[entities/cerebras-systems]] — Added Kimi K2.6 benchmark on WSE-3 (981 tok/s, 6.7× vs GPU cloud, 29× vs Kimi API)
+- [[entities/command-a-plus]] — HuggingFace quantized versions, bumped updated date
+
+### Sources
+- trending-topics report (2026-05-27): I/O 2026, Nemotron DLM, TrustFall, Abliteration, AI Silicon, SynthID, Command A+
+- Parallel subagent pages (separate commits): [[concepts/abliteration]], [[events/trustfall-symlink-rce-2026]], [[concepts/synthid]], [[concepts/custom-ai-silicon]]
+
+## [2026-05-27] Created concepts/synthid and concepts/custom-ai-silicon
+
+### Pages Created
+- [[concepts/synthid]] — SynthID: Google DeepMind's digital watermarking technology. Cross-industry standard at I/O 2026 with OpenAI, Kakao, ElevenLabs, NVIDIA adoption. 100B+ watermarked. Chrome/Search/Gemini/C2PA integration.
+- [[concepts/custom-ai-silicon]] — Custom AI Silicon: ASIC chips outgrowing GPUs 3:1 (44.6% vs 16.1%). Cerebras WSE-3 Kimi K2.6 981 tok/s (6.7×), NVIDIA Vera Rubin Q3 2026, AMD MI355X MLPerf 1M+ tok/s.
+
+### Raw Articles
+- raw/articles/2026-05-27_google-synthid-c2pa-expansion.md — Google Blog (May 19, 2026)
+- raw/articles/2026-05-27_synthid-openai-elevenlabs-nvidia-kakao.md — Perplexity AI Magazine (May 2026)
+- raw/articles/2026-05-27_heise-uniform-ai-labeling-synthid.md — heise online (May 2026)
+- raw/articles/2026-05-27_trendforce-ai-server-2026-asic.md — TrendForce (Jan-Apr 2026)
+- raw/articles/2026-05-27_cerebras-kimi-k26-981-tokens.md — Cerebras Blog (May 19, 2026)
+- raw/articles/2026-05-27_nvidia-vera-rubin-q3-2026.md — Digital Citizen (May 22, 2026)
+- raw/articles/2026-05-27_amd-mi355x-mlperf-inference-v6.md — AMD ROCm Blogs (Apr 1, 2026)
+
+### Index Updated
+- Total pages: 2105→2107, Indexed entries: 1381→1383
+
+### Sources
+- Google I/O 2026 keynote, Google Blog, Perplexity AI Magazine, heise online, Kakao press release
+- TrendForce, Cerebras Blog, Artificial Analysis, Digital Citizen, NVIDIA Q1 FY2027 earnings
+- AMD ROCm Blogs, StorageReview, Guru3D
+
 ## [2026-05-27] Created events/trustfall-symlink-rce-2026 — AI Coding Agent Security Crisis
 - Created `events/trustfall-symlink-rce-2026.md`: Comprehensive security incident page documenting Adversa AI's TrustFall and SymJack vulnerabilities (May 2026). Covers MCP auto-execution (TrustFall) and symlink hijack RCE (SymJack) across Claude Code, Gemini CLI, Antigravity CLI, Cursor, Copilot CLI, and Grok Build.
 - Saved 3 raw articles: `raw/articles/adversa-ai-trustfall-2026.md`, `raw/articles/adversa-ai-symjack-2026.md`, `raw/articles/securityweek-symjack-2026.md`
