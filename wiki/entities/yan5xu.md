@@ -20,7 +20,7 @@ sources:
 
 # yan5xu
 
-**yan5xu** (@yan5xu) is an AI researcher and engineer based in China. Formerly at **Manus AI** (the company behind the Manus general AI agent) and **Monica** (hey_im_monica, the AI assistant browser extension). Self-described as "AI wild researcher" (AI 野生研究员).
+**yan5xu** (@yan5xu) is an AI researcher and engineer based in China. Formerly at **Manus AI** (the company behind the Manus general AI agent) and **Monica** (hey_im_monica, the AI assistant browser extension). Self-described as "AI wild researcher".
 
 With ~15.7K followers on X/Twitter, yan5xu writes in-depth technical analyses — primarily in Chinese — covering AI agent infrastructure, CLI design patterns for agent-friendly tooling, and the practical engineering challenges of building AI-native products.
 
@@ -33,7 +33,7 @@ With ~15.7K followers on X/Twitter, yan5xu writes in-depth technical analyses �
 ## Key Writings
 
 ### Agent-Friendly CLI Design (May 2026)
-- **从 github cli 学习如何设计 agent friendly cli** — Landmark analysis using GitHub CLI (`gh`) as a case study for agent-friendly CLI design. Identifies two core problems: command explosion (solved via resource layer with unified verbs) and output pollution (solved via `--json`/`--jq` pre-context trimming). Proposes the resource/command layer split with `/` prefix syntax and argues for semantic defaults + structured-on-demand output. → [[concepts/cli-first-development]]
+- **Learning how to design agent-friendly CLI from GitHub CLI** — Landmark analysis using GitHub CLI (`gh`) as a case study for agent-friendly CLI design. Identifies two core problems: command explosion (solved via resource layer with unified verbs) and output pollution (solved via `--json`/`--jq` pre-context trimming). Proposes the resource/command layer split with `/` prefix syntax and argues for semantic defaults + structured-on-demand output. → [[concepts/cli-first-development]]
 
 ## Core Ideas
 
@@ -54,4 +54,4 @@ With ~15.7K followers on X/Twitter, yan5xu writes in-depth technical analyses �
 ## References
 
 - [@yan5xu on X/Twitter](https://x.com/yan5xu)
-- "从 github cli 学习如何设计 agent friendly cli" (May 23, 2026) — `raw/articles/2026-05-23_yan5xu_agent-friendly-cli-design.md`
+- "Learning how to design agent-friendly CLI from GitHub CLI" (May 23, 2026) — `raw/articles/2026-05-23_yan5xu_agent-friendly-cli-design.md`

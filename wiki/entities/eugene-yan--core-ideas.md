@@ -32,7 +32,7 @@ Yan's most influential framework organizes practical LLM integration into seven 
 6. **LLM-as-Judge** — Using models to evaluate other models (with careful calibration)
 |7. **Cascade** — Breaking complex tasks into simpler sub-tasks, each handled by the most appropriate model
 |
-|> 各パターン's 実装詳細, フレームワーク's 進化(v1→v2)は [[concepts/llm-patterns-eugene-yan]] を参照. 
+|> For implementation details of each pattern and the evolution of the framework (v1→v2), see [[concepts/llm-patterns-eugene-yan]]. 
 |
 |His framework emphasizes that **evals are the foundation**
 

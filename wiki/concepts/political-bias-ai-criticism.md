@@ -1,8 +1,8 @@
 ---
-title: "AI批判's 政治的バイアス分析"
+title: "Political Bias Analysis of AI Criticism"
 type: concept
 aliases:
-  - ai批判's 政治的バイアス分析
+  - political-bias-analysis-of-ai-criticism
 created: 2026-04-25
 updated: 2026-04-25
 tags:
@@ -11,13 +11,13 @@ status: stub
 
 ---
 
-# AI批判's 政治的バイアス分析
+# Political Bias Analysis of AI Criticism
 
 > **TODO**: Enrich this page.
 
 ## Overview
 
-Stub page for AI批判's 政治的バイアス分析.
+Stub page for Political Bias Analysis of AI Criticism.
 
 ## Related Pages
 
