@@ -1,0 +1,28 @@
+{
+  "archived_at": "2026-05-27T04:04:07.541559+00:00",
+  "checkpoint_run_id": "20260527T040058Z",
+  "skipped": 5,
+  "referenced": 0,
+  "decisions": [
+    {
+      "filename": "boyter.org--posts-sloc-cloc-code--57abde57.md",
+      "reason": "non-AI tech"
+    },
+    {
+      "filename": "1996_yudkowsky_staring-into-the-singularity.md",
+      "reason": "already covered in entity"
+    },
+    {
+      "filename": "substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f.md",
+      "reason": "already covered in entity"
+    },
+    {
+      "filename": "danluu.com--google-wage-fixing--ed90f13d.md",
+      "reason": "legal document, non-AI"
+    },
+    {
+      "filename": "oldvcr.blogspot.com--2026-01-hands-on-with-two-apple-network-server-html--75ee171b.md",
+      "reason": "retro computing, non-AI"
+    }
+  ]
+}

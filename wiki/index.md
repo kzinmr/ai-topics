@@ -804,6 +804,7 @@
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents — Unified framework for agent cognitive architectures.
 - [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution agents latency, Monty, Pydantic AI, sandbox
 - [[concepts/code-review-agents]] — Code Review Agents — Multi-agent parallel code review using AI (Claude sub-agents, Codex, Cursor Bugbot). Near-zero false positive rate through cross-validation. Triage-driven review cycles.
+- [[concepts/codex-app-server]] — Codex App Server — JSON-RPC 2.0 protocol for embedding Codex in products. Thread/Turn/Item primitives, stdio/WebSocket/Unix socket transports, streaming event model. Open-source in openai/codex.
 - [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting
 - [[concepts/codex-safety-at-openai]] — Codex Safety at OpenAI
 - [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]] — Cognition Devin memory tool, Claude Code competitive analysis

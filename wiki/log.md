@@ -4,11 +4,13 @@
 
 ## 2026-05-27
 - 09:00 Created `concepts/ai-native-state-management.md` — Comprehensive synthesis of data flow and state management patterns in AI-native full-stack applications. Covers 8-state taxonomy, 3-layer memory architecture (L1-L3), context engineering (Write/Select/Compress/Isolate), subagent patterns (5 levels), ActiveGraph event sourcing, Delta Channels, storage architecture spectrum (OPFS→db9→S3 Files→Zero Disk), LLM integration paradigms, agent identity separation (SOUL vs MEMORY), and design decision framework. Cross-references 20+ wiki pages. Source: user-provided on-states.md + wiki knowledge base.
-+- 11:30 Ingested X Article `2026-05-24_cyrilxbt_obsidian-vault-organization-guide.md` → `wiki/raw/articles/`. @cyrilxbt's comprehensive guide on organizing Obsidian vaults with retrieval-first principles. Covers 10 sections: folder structure, naming conventions, YAML properties, tagging taxonomy, MOCs, inbox processing, search strategy, Claude Code + MCP integration, quarterly vault reviews.
-+- 11:30 Created `entities/cyrilxbt.md` — Entity page for @cyrilxbt, X content creator focused on Obsidian, Claude Code, PKM.
-+- 11:30 Created `concepts/llm-augmented-knowledge-retrieval.md` — Concept page on the pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Covers relationship to Karpathy's LLM Wiki pattern, prerequisites for effective retrieval, comparison with traditional retrieval, current implementations (rvk7895, phelps-sg, Bedrock, Hermes), and relevance to AI agent engineering.
-+- 11:30 Updated `SCHEMA.md` — Added `obsidian` (Products) and `knowledge-management` (Meta) tags.
-+- 11:30 Updated `index.md` — Added entries for cyrilxbt and llm-augmented-knowledge-retrieval.
+- 11:30 Ingested X Article `2026-05-24_cyrilxbt_obsidian-vault-organization-guide.md` → `wiki/raw/articles/`. @cyrilxbt's comprehensive guide on organizing Obsidian vaults with retrieval-first principles. Covers 10 sections: folder structure, naming conventions, YAML properties, tagging taxonomy, MOCs, inbox processing, search strategy, Claude Code + MCP integration, quarterly vault reviews.
+- 11:30 Created `entities/cyrilxbt.md` — Entity page for @cyrilxbt, X content creator focused on Obsidian, Claude Code, PKM.
+- 11:30 Created `concepts/llm-augmented-knowledge-retrieval.md` — Concept page on the pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Covers relationship to Karpathy's LLM Wiki pattern, prerequisites for effective retrieval, comparison with traditional retrieval, current implementations (rvk7895, phelps-sg, Bedrock, Hermes), and relevance to AI agent engineering.
+- 11:30 Updated `SCHEMA.md` — Added `obsidian` (Products) and `knowledge-management` (Meta) tags.
+- 11:30 Updated `index.md` — Added entries for cyrilxbt and llm-augmented-knowledge-retrieval.
+- 17:45 Created `concepts/codex-app-server.md` — Codex App Server protocol page covering JSON-RPC 2.0 interface, transport options (stdio/WebSocket/Unix socket), Thread/Turn/Item core primitives, lifecycle, API surface, comparison with MCP and ACP, and Node.js integration example. Source: https://developers.openai.com/codex/app-server. Raw article: `raw/articles/2026-05-27_openai-codex-app-server.md`.
+- 17:45 Updated `index.md` — Added entry for codex-app-server under Concepts.
 
 
 ---
