@@ -13,55 +13,54 @@ related:
   - "[[concepts/context-engineering]]"
   - "[[entities/rlancemartin-github-io]]"
 ---
-
 # Claude Diary (Agent Continual Learning)
 
-Claude Diaryは、R. Lance Martinが開発したClaude Codeプラグイン。エージェントが**自身の経験から学習**し、永続的なメモリ（`CLAUDE.md`）を自動更新する。
+Claude Diary is a Claude Code plugin developed by R. Lance Martin. It enables agents to **learn from their own experience** and automatically update persistent memory (`CLAUDE.md`).
 
-## 動機
+## Motivation
 
-多くのAIエージェントは継続的学習能力を欠いている。CoALA論文（Sumers et al., 2023）が提唱する「手続き記憶（procedural memory）」と「エピソード記憶（episodic memory）」の区別に基づき、セッションログから持続的なルールを抽出する仕組みを実装。
+Many AI agents lack the ability for continual learning. Based on the distinction between "procedural memory" and "episodic memory" as proposed in the CoALA paper (Sumers et al., 2023), this implements a mechanism to extract durable rules from session logs.
 
-## アーキテクチャ
+## Architecture
 
-### メモリパイプライン
+### Memory Pipeline
 
 ```
-セッション → /diary コマンド → diary entries → /reflect コマンド → CLAUDE.md更新
+Session → /diary command → diary entries → /reflect command → CLAUDE.md update
 ```
 
-### 主要コンポーネント
+### Key Components
 
-| コンポーネント | 保存先 | 役割 |
+| Component | Storage Location | Role |
 |---------------|--------|------|
-| Diary Entry | `~/.claude/memory/diary/YYYY-MM-DD-session-N.md` | セッションの達成事項・設計判断・課題・ユーザー好み・PRフィードバックを記録 |
-| Reflection | `~/.claude/memory/reflections/YYYY-MM-reflection-N.md` | Diary entriesを分析し、パターンを抽出・CLAUDE.md提案 |
-| Processed Log | `~/.claude/memory/reflections/processed.log` | 重複処理防止 |
+| Diary Entry | `~/.claude/memory/diary/YYYY-MM-DD-session-N.md` | Records session achievements, design decisions, challenges, user preferences, and PR feedback |
+| Reflection | `~/.claude/memory/reflections/YYYY-MM-reflection-N.md` | Analyzes diary entries, extracts patterns, proposes CLAUDE.md updates |
+| Processed Log | `~/.claude/memory/reflections/processed.log` | Prevents duplicate processing |
 
-### 作成タイミング
+### Creation Triggers
 
-- **手動**: `/diary` スラッシュコマンド
-- **自動**: PreCompact フック — 長いセッションでコンパクション時に自動生成
-- **リフレクション**: 手動（`CLAUDE.md` 直接更新のため、人間が確認）
+- **Manual**: `/diary` slash command
+- **Automatic**: PreCompact hook — auto-generated during compaction in long sessions
+- **Reflection**: Manual (requires human review for direct CLAUDE.md updates)
 
-### 学習の種類
+### Types of Learning
 
-1. **PRレビューフィードバック**: PRコメントからコード品質ルールを学習
-2. **Gitワークフロー**: アトミックコミット、ブランチ命名規則、コミットメッセージ形式
-3. **テスト手法**: 標的テスト→包括テストの順序、特殊なテストランナー設定
-4. **ユーザー好み**: 明示的に言及されない暗黙のワークフロー選好
+1. **PR Review Feedback**: Learn code quality rules from PR comments
+2. **Git Workflow**: Atomic commits, branch naming conventions, commit message formats
+3. **Test Methodology**: Targeted test → comprehensive test ordering, specialized test runner configuration
+4. **User Preferences**: Implicit workflow preferences not explicitly stated
 
-## 理論的背景
+## Theoretical Background
 
-- **CoALA** (Sumers et al., 2023): エージェントメモリの「手続き記憶」と「エピソード記憶」
-- **Generative Agents** (Park et al., 2023): リフレクションによる経験の抽象化
-- **Grow & Refine** (Zhang et al., 2025): 軌跡→教訓抽出→構造化更新のパイプライン
+- **CoALA** (Sumers et al., 2023): "Procedural memory" and "episodic memory" in agent memory
+- **Generative Agents** (Park et al., 2023): Abstraction of experience through reflection
+- **Grow & Refine** (Zhang et al., 2025): Pipeline of trajectory → lesson extraction → structured updates
 
-## Anthropic内部での類似実践
+## Similar Practices Inside Anthropic
 
-Cat Wu（Claude Codeプロダクトリード）のインタビューによると、Anthropicスタッフも同様のパターンを使用: Claude Codeセッションから日記エントリを作成し、リフレクションでパターンを特定。
+According to an interview with Cat Wu (Claude Code Product Lead), Anthropic staff use a similar pattern: creating diary entries from Claude Code sessions and identifying patterns through reflection.
 
-## 参照
+## References
 
 - [Claude Diary — Lance Martin's Blog](http://rlancemartin.github.io/2025/12/01/claude_diary/) (2025-12-01)
 - [Claude Diary GitHub](https://github.com/rlancemartin/claude-diary)

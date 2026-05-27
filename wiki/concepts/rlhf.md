@@ -25,54 +25,53 @@ related:
   - "[[concepts/reasoning-models]]"
   - "[[concepts/harness-engineering]]"
 ---
+# RLHF and Preference Optimization
 
-# RLHFとPreference Optimization
+## What is RLHF
 
-## RLHFとは
+**Reinforcement Learning from Human Feedback (RLHF)** is the fundamental technique for aligning LLMs with human preferences and values. It was first applied at scale in OpenAI's InstructGPT and became the foundation of ChatGPT.
 
-**Reinforcement Learning from Human Feedback (RLHF)**は、LLMを人間の好みや価値観にアライメントさせるための基本技術。OpenAIのInstructGPTで最初に大規模に適用され、ChatGPTの基盤となった。
+### RLHF Pipeline
+1. **SFT (Supervised Fine-Tuning)** — Initial fine-tuning of the model on high-quality example responses
+2. **Reward Model Training** — Train a reward model using human preference data (pairs of preferred/dispreferred responses)
+3. **PPO (Proximal Policy Optimization)** — Optimize the policy using the reward model
 
-### RLHFパイプライン
-1. **SFT (Supervised Fine-Tuning)** — 高品質な回答例でモデルを初期微調整
-2. **Reward Model Training** — 人間の preference data（好む/好まないのペア）で報酬モデルを学習
-3. **PPO (Proximal Policy Optimization)** — 報酬モデルを使って方策を最適
+### Challenges with RLHF
+- Large-scale human annotation data required for reward model training
+- PPO is unstable and computationally expensive
+- Hyperparameter tuning is complex
 
-### RLHFの課題
-- 報酬モデルの学習に大規模な人手ラベル付けデータが必要
-- PPOは不安定で計算コストが高い
-- ハイパーパラメータ調整が複雑
+## Advanced Approaches
 
-## 発展的アプローチ
+Since 2023, numerous alternative methods have emerged to address RLHF's complexity:
 
-RLHFの複雑さを解消するため、2023年以降に多数の代替手法が登場:
-
-| 手法 | データ | 報酬モデル | 複雑さ | 特徴 |
+| Method | Data | Reward Model | Complexity | Characteristics |
 |------|--------|-----------|--------|------|
-| **RLHF (PPO)** | Preference ranking | 必要 | 高 | オリジナル、最高品質 |
-| **DPO** | Preference pairs | 不要 | 低 | 報酬モデル不要、直接最適化 |
-| **ORPO** | Preference pairs | 不要 | 低 | SFT + preference を1段階で |
-| **KTO** | Binary feedback | 不要 | 低 | 良し/悪しの2値のみ |
-| **GRPO** | Verifiable rules | 不要 | 中 | 推論・数学に特化 |
+| **RLHF (PPO)** | Preference ranking | Required | High | Original, highest quality |
+| **DPO** | Preference pairs | Not required | Low | No reward model needed, direct optimization |
+| **ORPO** | Preference pairs | Not required | Low | SFT + preference in a single stage |
+| **KTO** | Binary feedback | Not required | Low | Only good/bad binary values |
+| **GRPO** | Verifiable rules | Not required | Medium | Specialized for reasoning and math |
 
 ### DPO (Direct Preference Optimization)
-- **核心:** 報酬モデルを排除し、preference pairsで直接方策を最適化
-- **利点:** RLHFより安定、実装が容易
-- **数式:** `L_DPO = -E[log σ(β * log(π(y_w|x)/π_ref(y_w|x)) - β * log(π(y_l|x)/π_ref(y_l|x)))]`
+- **Core idea:** Eliminates the reward model, directly optimizes the policy using preference pairs
+- **Advantages:** More stable than RLHF, easier to implement
+- **Formula:** `L_DPO = -E[log σ(β * log(π(y_w|x)/π_ref(y_w|x)) - β * log(π(y_l|x)/π_ref(y_l|x)))]`
 
 ### ORPO (Odds Ratio Preference Optimization)
-- **核心:** SFTとpreference optimizationを単一ステージで実行
-- **利点:** サンプル効率が良い、収束が早い
+- **Core idea:** Executes SFT and preference optimization in a single stage
+- **Advantages:** Sample-efficient, fast convergence
 
 ### KTO (Kahneman-Tversky Optimization)
-- **核心:** 行動経済学のプロスペクト理論に基づく2値フィードバック最適化
-- **利点:** 順位付け不要、スケーラブル
+- **Core idea:** Binary feedback optimization based on prospect theory from behavioral economics
+- **Advantages:** No ranking required, scalable
 
 ### GRPO (Group Relative Policy Optimization)
-- **核心:** DeepSeek R1で採用された推論特化型のRL
-- **利点:** verifiable rules（検証可能ルール）のみで学習可能
-- **応用:** 数学、コード生成、構造化出力
+- **Core idea:** Reasoning-specialized RL adopted in DeepSeek R1
+- **Advantages:** Learnable with only verifiable rules
+- **Applications:** Mathematics, code generation, structured output
 
-## Preference Optimizationのスペクトル
+## Spectrum of Preference Optimization
 
 ```
 SFT → DPO → ORPO → KTO → RLHF → GRPO
@@ -80,19 +79,19 @@ Simple                                    Complex
 Low data requirements                     High data requirements
 ```
 
-## 実装
+## Implementations
 
-- **TRL (Transformer Reinforcement Learning)** — Hugging Faceの統一実装。DPO, ORPO, KTO, GRPO, PPOを1ライブラリでサポート
-- **Axolotl** — YAML設定で簡単にファインチューニング
-- **Unsloth** — 2-5倍高速、メモリ効率の良い実装
+- **TRL (Transformer Reinforcement Learning)** — Hugging Face's unified implementation. Supports DPO, ORPO, KTO, GRPO, and PPO in a single library.
+- **Axolotl** — Easy fine-tuning with YAML configuration
+- **Unsloth** — 2-5x faster, memory-efficient implementation
 
-## 関連トピック
+## Related Topics
 
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — 各手法の詳細比較
-- [[concepts/fine-tuning/grpo-rl-training]] — GRPO/RL推論学習
-- [[concepts/reasoning-models]] — 推論モデル（DeepSeek R1, o1など）
-- [[concepts/harness-engineering]] — Preference OptimizationのHarness Engineering文脈での位置付け
-- [[concepts/local-llm]] — ローカルLLMでのアライメント適用
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — Detailed comparison of each method
+- [[concepts/fine-tuning/grpo-rl-training]] — GRPO/RL reasoning training
+- [[concepts/reasoning-models]] — Reasoning models (DeepSeek R1, o1, etc.)
+- [[concepts/harness-engineering]] — Positioning of Preference Optimization in the context of Harness Engineering
+- [[concepts/local-llm]] — Applying alignment to local LLMs
 
 ## Sources
 

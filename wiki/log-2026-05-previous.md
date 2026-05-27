@@ -34,22 +34,22 @@
 
 ## 2026-05-13 09:45 UTC — Grad page consolidation: merge duplicate into entities/grad
 
-- **🔄 Consolidation**: `@Grad62304977` の重複pageを整理。
+- **🔄 Consolidation**: `@Grad62304977` 's 重複page organized 。
   - **Deleted**: `entities/grad62304977.md` (33-line degraded copy) → consolidated into `entities/grad.md` (200-line canonical version)
   - **Deleted**: `concepts/fares-obeid-grad62304977.md` (24-line stub) → real name info already merged into entities/grad.md
-  - **更新**: `entities/grad.md` — `updated`日付、`researcher`/`pseudonymous`/`reinforcement-learning`タグ追加、Prime Intellect同僚クロスリンク追加
-  - **修正**: `entities/prime-intellect.md` — grad参照を `[[entities/grad|Fares Obeid (Grad)]]` に修正
+ - ** updated **: `entities/grad.md` — `updated`日付、`researcher`/`pseudonymous`/`reinforcement-learning` tag added 、Prime Intellect同僚 cross-link added 
+ - ** fixed **: `entities/prime-intellect.md` — grad参照 `[[entities/grad|Fares Obeid (Grad)]]` fixed 
 - **📋 Index**: Removed grad62304977 entry, adjusted counts (-2 pages, -1 entry)
 - **Lesson learned**: Must check for duplicates with `search_files` before creating wiki pages. entities/grad.md already existed under the filename `grad`.
 
 ## 2026-05-13 09:30 UTC — FIX: Restore overwritten Prime Intellect people pages
 
 - **🔄 Overwrite restoration**: Restored 3 existing entity pages from git history with Prime Intellect cross-links only.
-  - `[[entities/will-brown]]` — 203→206行に復元。vincent-weisser, florian-brand, elie-bakouch へのクロスリンク追加。
-  - `[[entities/florian-brand]]` — 183行に復元。空白のRelated Peopleスロットをvincent-weisser, will-brown, elie-bakouch で埋める。
-  - `[[entities/elie-bakouch]]` — 140→144行に復元。Prime Intellectへの移籍を反映（formerly HuggingFace）。Related WikilinksにPrime Intellect同僚追加。
+ - `[[entities/will-brown]]` — 203→206行 復元。vincent-weisser, florian-brand, elie-bakouch へ's cross-link added 。
+ - `[[entities/florian-brand]]` — 183行 復元。空白's Related Peopleスロット vincent-weisser, will-brown, elie-bakouch with 埋める。
+ - `[[entities/elie-bakouch]]` — 140→144行 復元。Prime Intellectへ's 移籍 reflected （formerly HuggingFace）。Related Wikilinks Prime Intellect同僚 added 。
 - **⚠️ Lesson learned**: Always check for existing pages with `search_files` before creating pages. Check not just filenames but also index.md entries.
-- **📋 SCHEMA updated**: `researcher`, `pseudonymous` タグ追加（前回コミットから継続）。
+- **📋 SCHEMA updated**: `researcher`, `pseudonymous` tag added （前回コミット from 継続）。
 
 ## 2026-05-13 09:15 UTC — Prime Intellect people entity pages + cross-links
 
@@ -77,7 +77,7 @@
 - **📄 New entity page created**: `[[entities/prime-intellect]]` — Comprehensive entity page for Prime Intellect. Founded 2023, $20.5M raised (Founders Fund, Andrej Karpathy, Clem Delangue, Tri Dao). Lab (RL post-training platform), Environment Hub (2,500+ RL environments), Compute (distributed GPU marketplace). Open source: renderers, verifiers, prime-rl. INTELLECT-1/2/3 model series.
 - **📄 New concept pages created**: `[[concepts/renderers-token-level-templating]]` — Detailed concept page for Prime Intellect's open-sourced token-level templating library. 3-stage evolution (MITO → Generic TITO → renderers), bridge_to_next_turn, 3x training efficiency, Token-In/Token-Out paradigm, harness boundary interactions.
 - **📄 Raw article saved**: `wiki/raw/articles/2026-05-12_primeintellect_renderers-token-level-templating.md` — Full Prime Intellect blog post (22KB).
-- **📋 SCHEMA updated**: `chat-template` タグをTechniquesカテゴリに追加。
+- **📋 SCHEMA updated**: `chat-template` tag Techniques category added 。
 - **📋 Index updated**: Added entities and concepts to index.md.
 
 ## 2026-05-13 08:15 UTC — RLM v3 paper update and wiki refresh
@@ -102,38 +102,38 @@
 - **[jeff-geerling](entities/jeff-geerling.md)**: Added "Bambu Lab and Open Source Social Contract (May 2026)" section documenting Geerling's critique of Bambu Lab threatening an OrcaSlicer fork developer with legal action over AGPLv3-compliant code use. Louis Rossmann pledged $10K to defend the developer.
 - **[simon-willison](entities/simon-willison.md)**: Expanded May 2026 Updates with Mitchell Hashimoto's TDM motivations analysis ("90% motivated by NOT GETTING FIRED") and Mo Bitar's "Ralph Loop" satire on enterprise AI adoption patterns.
 
-- **Raw記事保存**: `wiki/raw/articles/2025-07-30_rlancemartin_bitter-lesson-ai-engineering.md` — Lance Martin's blog post. Applies Rich Sutton's Bitter Lesson to AI engineering. open-deep-research case study (add structure → bottleneck → remove cycle). Hyung Won Chung's 'add structure then remove it later' framework.
+- **Raw記事 saved **: `wiki/raw/articles/2025-07-30_rlancemartin_bitter-lesson-ai-engineering.md` — Lance Martin's blog post. Applies Rich Sutton's Bitter Lesson to AI engineering. open-deep-research case study (add structure → bottleneck → remove cycle). Hyung Won Chung's 'add structure then remove it later' framework.
 - **📄 Concept page enriched**: `[[concepts/rich-suttons-bitter-lesson]]` — stub → complete. Rich Sutton original (2019), historical case study table per domain, Hyung Won Chung framework, Lance Martin AI engineering application (open-deep-research case study), 3 practical lessons, agent harness implications.
 - **📋 Entity updated**: `[[entities/lance-martin]]` — Added new raw article to sources.
-- **📋 Index updated**: `wiki/index.md` に `rich-suttons-bitter-lesson` を追加。
+- **📋 Index updated**: `wiki/index.md` `rich-suttons-bitter-lesson` added 。
 
-## 2026-05-13 08:15 UTC — RLVRconceptpage + o1/o3→GPT-5統合タイムライン + MCP実用的起源 (3page新規作成)
+## 2026-05-13 08:15 UTC — RLVRconceptpage + o1/o3→GPT-5 consolidated タイムライン + MCP実用的起源 (3page新規 created)
 
 - **📄 New concept pages created**: `[[concepts/rlvr]]` — Comprehensive RLVR concept page. Standard pairing with GRPO, test-time-scaling connection, verifier design space (3 types), ART·E $80 case study, o1→o3 10x RL compute scaling, comparison with RLHF/DPO. 27KB research base.
 - **📄 New concept pages created**: `[[concepts/openai-o-series-gpt5-unification]]` — Complete timeline: o1 (Sep 2024) → o3 (Dec 2024) → o3 cancelled on Altman roadmap shift (Feb 2025) → GPT-5 unification (Aug 2025). GPT-5 3-component architecture, strategic rationale (model picker complexity + DeepSeek R1 competition).
 - **📄 New concept pages created**: `[[concepts/mcp]]` — Comprehensive MCP concept page. Two-layer origin story: David Soria Parra's personal frustration (copy-paste hell) and John Welsh's organizational chaos (integration chaos). M×N problem, 3 primitives, industry timeline.
-- **🏷️ SCHEMA updated**: `rlvr`, `test-time-scaling` をTechniquesタグ分類に追加。
-- **📋 Index updated**: 3entry追加、staleな `mcp-protocol` + `model-context-protocol-mcp` を統合置換。
+- **🏷️ SCHEMA updated**: `rlvr`, `test-time-scaling` Techniques tag 分類 added 。
+- **📋 Index updated**: 3entry added 、staleな `mcp-protocol` + `model-context-protocol-mcp` consolidated 置換。
 
-## 2026-05-13 08:00 UTC — Lance MartinのAIE 2025まとめを取り込み + ambient-agentsconceptpage作成
+## 2026-05-13 08:00 UTC — Lance Martin's AIE 2025まとめ 取り込み + ambient-agentsconceptpage created 
 
-- **Raw記事保存**: `[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]` — AI Engineer World's Fair 2025 on-site report. 5 major themes: Ambient Agents, Agent UX/Bitter Lesson debate, Agent Training (RLVR, Art-E $80), Agent Tools (MCP origins), Agent Evaluation.
+- **Raw記事 saved **: `[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]` — AI Engineer World's Fair 2025 on-site report. 5 major themes: Ambient Agents, Agent UX/Bitter Lesson debate, Agent Training (RLVR, Art-E $80), Agent Tools (MCP origins), Agent Evaluation.
 - **📄 New concept pages created**: `[[concepts/ambient-agents]]` — Asynchronous autonomous AI agent paradigm without chat UI. Devin, Codex, Windsurf, Claude Code examples, Solomon Hykes 4 requirements, AIE 2025 major theme.
 - **✏️ Entity page enriched**: `[[entities/ai-engineer-youtube]]` — New Flagship Events section (World's Fair 2025 5-theme table + 2026 preview), sources/tags updated.
 - **✏️ Entity page updated**: `[[entities/lance-martin]]` — Added AIE 2025 article to Blog/Recent Posts, updated tags/sources.
-- **🏷️ SCHEMA updated**: `ambient-agents`, `agent-training` をAI Agentsタグ分類に追加。
+- **🏷️ SCHEMA updated**: `ambient-agents`, `agent-training` AI Agents tag 分類 added 。
 
-## 2026-05-13 07:40 UTC — AI Engineer YouTubeチャンネルを監視対象に追加
+## 2026-05-13 07:40 UTC — AI Engineer YouTubeチャンネル 監視対象 added 
 
-- **🔧 Monitoring setup**: `config/feeds/blogs.opml` に YouTube Channels セクションを新設し、AI Engineer (@aiDotEngineer) のRSSフィードを追加。`blogwatcher-cli add` でDB登録、初回15件を既読化。
-- **📄 New entity page created**: `[[entities/ai-engineer-youtube]]` — 466K subscribers, 700+ talks. Official YouTube channel for AI Engineer conference series (World's Fair, Summit, Code).主要トーク、コンテンツテーマ、Wiki関連性を記載。
-- **📋 Index updated**: `wiki/index.md` にentity追加。
+- **🔧 Monitoring setup**: `config/feeds/blogs.opml` YouTube Channels section 新設し、AI Engineer (@aiDotEngineer) 's RSSフィード added 。`blogwatcher-cli add` with DB登録、初回15件 既読化。
+- **📄 New entity page created**: `[[entities/ai-engineer-youtube]]` — 466K subscribers, 700+ talks. Official YouTube channel for AI Engineer conference series (World's Fair, Summit, Code).主要トーク、コンテンツテーマ、Wiki関連性 記載。
+- **📋 Index updated**: `wiki/index.md` entity added 。
 
 ## 2026-05-13 05:15 UTC — Claude Code Agent SDK セッション管理 + Context Engineering 実装分析
 
-- **Raw記事保存**: `wiki/raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions.md` — Anthropic official documentation 'Work with sessions'. Persistence, restoration, and branching of conversation history via 3 operations: continue/resume/fork.`~/.claude/projects/<encoded-cwd>/*.jsonl` への自動永続化、`ClaudeSDKClient`（Python）、`continue: true`（TypeScript）、クロスホストセッション復元。
-- **✏️ Concept page enriched**: `[[concepts/harness-engineering/context-engineering]]` — Added new section "Claude Code Agent SDK: SDK Implementation of Context Engineering".Continue/Resume/Fork を Martin の Write/Select/Compress/Isolate フレームワークに対応付け。会話statusとファイルstatusの関心の分離（Offload）、Bitter Lesson の対極としての基盤プリミティブのSDK吸収を分析。
-- **🔧 Entity page updated**: `[[entities/claude-code]]` — Added new Session Management section (Continue/Resume/Fork operation details, architecture mapping with Context Engineering framework, cross-host operation, design implications).sources と updated を更新。
+- **Raw記事 saved **: `wiki/raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions.md` — Anthropic official documentation 'Work with sessions'. Persistence, restoration, and branching of conversation history via 3 operations: continue/resume/fork.`~/.claude/projects/<encoded-cwd>/*.jsonl` へ's 自動永続化、`ClaudeSDKClient`（Python）、`continue: true`（TypeScript）、クロスホストセッション復元。
+- **✏️ Concept page enriched**: `[[concepts/harness-engineering/context-engineering]]` — Added new section "Claude Code Agent SDK: SDK Implementation of Context Engineering".Continue/Resume/Fork Martin 's Write/Select/Compress/Isolate フレームワーク 対応付け。会話statusとファイルstatus's 関心's 分離（Offload）、Bitter Lesson 's 対極として's 基盤プリミティブ's SDK吸収 分析。
+- **🔧 Entity page updated**: `[[entities/claude-code]]` — Added new Session Management section (Continue/Resume/Fork operation details, architecture mapping with Context Engineering framework, cross-host operation, design implications).sources と updated updated 。
 
 ## [2026-05-13] refactor | Harness Engineering blog unified boundary framing
 - id: blog-harness-engineering-boundary-refactor-2026-05-13
@@ -148,22 +148,22 @@
 - **2026-05-13**: Discord user request → ingested Claude Code `/goal` documentation page. **New page**: `concepts/claude-code-goal.md` — Goal-driven autonomous workflow via prompt-based Stop hook + evaluator model (Haiku). Architecture comparison with Codex /goal, /loop, Stop hooks. Condition writing best practices. Lifecycle diagram. Non-interactive mode support. **Enriched**: `concepts/agentic-loop.md` — added Claude Code /goal as named variant in comparison table + Related Concepts link. **Raw articles**: `2026-05-13_anthropic_claude-code-goal.md` (6.2KB). Index: +1 entry. Tags: claude-code, coding-agents, agent-loop, autonomous-agents, anthropic, prompt-caching, tool-use.
 
 - **2026-05-13**: Discord user request → ingested "Build Your Own Deep Research Agent" workshop (Ivan Leo, Google DeepMind + Hugo Bowne-Anderson, Mar 2026). **New page**: `concepts/deep-research-agent-from-scratch.md` — 10-step build pipeline from raw Gemini API to full research agent with phase swapping (plan/execute modes), deterministic guardrails, dynamic subagent spawning (Exa parallel search), OpenTelemetry tracing. **Enriched**: `entities/ivan-leo.md` (added Deep Research Agent Workshop section with 10-step breakdown), `entities/hugo-bowne-anderson.md` (enhanced collaboration description). **Raw articles**: 2026-03-28_youtube_deep-research-agent-workshop.md (27.6KB), 2026-03-28_github_deep-research-agent-readme.md (2.3KB). Index: +1 page (1782→1783), +1 entry (836→837).
-## 2026-05-13 04:50 UTC — Lance Martin Context Engineering for Agents 生記事保存 + conceptpage拡充 + ブログ監視追加 + 相互リンク
+## 2026-05-13 04:50 UTC — Lance Martin Context Engineering for Agents 生記事 saved + conceptpage拡充 + ブログ監視 added + 相互リンク
 
-- **Raw記事保存**: `wiki/raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md` — Lance Martin's milestone article on Context Engineering. Proposes 4-bucket classification (Write/Select/Compress/Isolate).Anthropic/Claude Code/Manus/Cognition/Windsurf/ChatGPT等の実例を交えた包括的フレームワーク。
-- **✏️ Concept page enriched**: `[[concepts/harness-engineering/context-engineering]]` — Added new section for Lance Martin's Write/Select/Compress/Isolate 4-bucket classification.各バケットの詳細（Write: スクラッチパッド+長期記憶、Select: ツール選択RAG+メモリ検索+知識選択、Compress: 要約+トリミング、Isolate: マルチエージェント+サンドボックス+State分離）と Anthropic 3戦略との対応表を含む。さらに Reduce/Offload/Isolate への進化マッピングを追加。source: `raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md`
-- **🔗 Cross-links**: `[[concepts/reduce-offload-isolate]]` ↔ `[[concepts/harness-engineering/context-engineering]]` — 4バケット→3原則の進化マッピングを双方向に追加
+- **Raw記事 saved **: `wiki/raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md` — Lance Martin's milestone article on Context Engineering. Proposes 4-bucket classification (Write/Select/Compress/Isolate).Anthropic/Claude Code/Manus/Cognition/Windsurf/ChatGPT等's 実例 交えた包括的フレームワーク。
+- **✏️ Concept page enriched**: `[[concepts/harness-engineering/context-engineering]]` — Added new section for Lance Martin's Write/Select/Compress/Isolate 4-bucket classification.各バケット's 詳細（Write: スクラッチパッド+長期記憶、Select: ツール選択RAG+メモリ検索+知識選択、Compress: 要約+トリミング、Isolate: マルチエージェント+サンドボックス+State分離）と Anthropic 3戦略と's 対応表 含む。さら Reduce/Offload/Isolate へ's 進化マッピング added 。source: `raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md`
+- **🔗 Cross-links**: `[[concepts/reduce-offload-isolate]]` ↔ `[[concepts/harness-engineering/context-engineering]]` — 4バケット→3原則's 進化マッピング 双方向 added 
 - **🔧 Entity page updated**: `[[entities/lance-martin]]` — Added raw article to sources, bumped updated to 2026-05-13
-- **📡 Blog monitoring added**: Lance Martin (`rlancemartin.github.io`) を OPML + blogwatcher DB に追加。RSSフィード: `http://rlancemartin.github.io/feed.xml`。初回スキャン: 10記事（既読化済み）
-- **Raw記事保存**: `wiki/raw/articles/2026-01-09_rlancemartin_agent-design-patterns.md` — Lance Martin による Agent Design Patterns。Context Engineering の拡張として7つのデザインパターン（Give Agents A Computer, Multi-Layer Action Space, Progressive Disclosure, Offload Context, Cache Context, Isolate Context, Evolve Context）を体系化。Manusのcache hit rate最重要指標、Ralph Wiggum loop、RLMによるcontext management吸収予測などを含む。source追加: `[[concepts/harness-engineering/context-engineering]]`, `[[concepts/reduce-offload-isolate]]`, `[[entities/lance-martin]]`
+- **📡 Blog monitoring added**: Lance Martin (`rlancemartin.github.io`) OPML + blogwatcher DB added 。RSSフィード: `http://rlancemartin.github.io/feed.xml`。初回スキャン: 10記事（既読化済み）
+- **Raw記事 saved **: `wiki/raw/articles/2026-01-09_rlancemartin_agent-design-patterns.md` — Lance Martin by Agent Design Patterns。Context Engineering 's 拡張として7つ's デザインパターン（Give Agents A Computer, Multi-Layer Action Space, Progressive Disclosure, Offload Context, Cache Context, Isolate Context, Evolve Context） 体系化。Manus's cache hit rate最重要指標、Ralph Wiggum loop、RLM by context management吸収予測など 含む。source added : `[[concepts/harness-engineering/context-engineering]]`, `[[concepts/reduce-offload-isolate]]`, `[[entities/lance-martin]]`
 
 ## 2026-05-13 04:55 UTC — Jeff Huber / Harness Engineering 対談取り込み + Inner/Outer Loop 拡張
 
-- **Raw記事保存**: `wiki/raw/articles/2026-03-04_hugobowne_harness-engineering-agent-context.md` — Hugo Bowne-Anderson's Vanishing Gradients article. Jeff Huber (Chroma CEO) on context engineering > prompt engineering、大規模コンテキストウィンドウの限界、エージェントハーネス = tools+sub-agents+workflows、コード記述が創発的推論を解放する、Inner Loop / Outer Loop フレームワーク。
-- **🆕 Entity page created**: `[[entities/jeff-huber]]` (L2) — Comprehensive page for Chroma CEO & Co-founder.Standard Cyborg (YC W15) → Chroma ($18M seed) の背景、Context Engineering > Prompt Engineering の再定義、Inner/Outer Loop フレームワーク、コード記述による創発的推論テーゼ、実践的ビルダーアドバイス（Hybrid Search / Golden Dataset / Cluster Analysis / Tool Engineering）。
-- **✏️ Concept page strengthened**: `[[concepts/reduce-offload-isolate]]` — Added new section for Jeff Huber's **Inner Loop vs Outer Loop** extension.Inner Loop = Reduce/Offload/Isolateをタスク単位で適用、Outer Loop = コンテキスト充填を時間と共に改善するシステム（"machine that builds the machines"）。評価の未解決問題にも言及。
+- **Raw記事 saved **: `wiki/raw/articles/2026-03-04_hugobowne_harness-engineering-agent-context.md` — Hugo Bowne-Anderson's Vanishing Gradients article. Jeff Huber (Chroma CEO) on context engineering > prompt engineering、大規模コンテキストウィンドウ's 限界、エージェントハーネス = tools+sub-agents+workflows、コード記述 創発的推論 解放する、Inner Loop / Outer Loop フレームワーク。
+- **🆕 Entity page created**: `[[entities/jeff-huber]]` (L2) — Comprehensive page for Chroma CEO & Co-founder.Standard Cyborg (YC W15) → Chroma ($18M seed) 's 背景、Context Engineering > Prompt Engineering 's 再定義、Inner/Outer Loop フレームワーク、コード記述 by 創発的推論テーゼ、実践的ビルダーアドバイス（Hybrid Search / Golden Dataset / Cluster Analysis / Tool Engineering）。
+- **✏️ Concept page strengthened**: `[[concepts/reduce-offload-isolate]]` — Added new section for Jeff Huber's **Inner Loop vs Outer Loop** extension.Inner Loop = Reduce/Offload/Isolate タスク単位 with 適用、Outer Loop = コンテキスト充填 時間と共 改善するシステム（"machine that builds the machines"）。評価's 未解決問題 も言及。
 - **✏️ Cross-links**: `[[entities/hugo-bowne-anderson]]` — Wikilinked Jeff Huber in Key Collaborations table to [[entities/jeff-huber]].
-- **Index updated**: jeff-huber を entities セクションに追加（jeff-geerling と jensen-huang の間）。Total pages: 1783→1784, Indexed entries: 837→838, Entities: 558→559。
+- **Index updated**: jeff-huber entities section added （jeff-geerling と jensen-huang 's 間）。Total pages: 1783→1784, Indexed entries: 837→838, Entities: 558→559。
 ## [2026-05-13] enrich | Agentic Search: Berryman 5-Level Model + Revealed Preferences + Ep.68
 - id: concept-agentic-search-berryman-ep68-2026-05-13
 - summary: Saved 3 raw articles (Berryman's 5-level maturity model blog, Turnbull's LLM-judges critique, Ep.68 show notes). Added two major sections to [[concepts/agentic-search]]: "Berryman's 5-Level Agentic Search Maturity Model" (Level 0-4: Trad Search → Beginner AI → Intermediate AI → Conversational Assistant → Async Research Agent) with comparison table vs 3-level framework, and "Revealed Preferences: The Fundamental Limit of LLM-as-Judge" (engagement blindness, hard negative blindness, sneaky overfitting, LLMs-as-analysts-not-judges). Added Jan 2026 blog post entry to [[entities/john-berryman]]. Cross-linked with [[concepts/llm-as-judge]].
@@ -175,11 +175,11 @@
   - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
 ## 2026-05-13 04:30 UTC — Lance Martin Reduce/Offload/Isolate フレームワーク取り込み
 
-- **Raw記事保存**: `wiki/raw/articles/2025-12-12_hugobowne_agent-harness-context-engineering.md` — Hugo Bowne-Anderson + Duncan Gilchrist's Vanishing Gradients article.Lance Martin (Anthropic, at LangChain during recording) on 3 principles of context engineering from High Signal podcast、Bitter Lessonのハーネス設計への適用、Manus 5回再設計・AnthropicのClaude Code ハーネス削減の証言。
-- **🆕 Concept page created**: `[[concepts/reduce-offload-isolate]]` (L2) — Detailed framework for Reduce (context compression) / Offload (move outside prompt) / Isolate (sub-agent delegation).Bitter Lessonとの接続、Write-Select-Compress-Isolateからの進化、Manus/Claude Code/Open Deep Researchの実例、ハーネス設計への含意を含む。
+- **Raw記事 saved **: `wiki/raw/articles/2025-12-12_hugobowne_agent-harness-context-engineering.md` — Hugo Bowne-Anderson + Duncan Gilchrist's Vanishing Gradients article.Lance Martin (Anthropic, at LangChain during recording) on 3 principles of context engineering from High Signal podcast、Bitter Lesson's ハーネス設計へ's 適用、Manus 5回再設計・Anthropic's Claude Code ハーネス削減's 証言。
+- **🆕 Concept page created**: `[[concepts/reduce-offload-isolate]]` (L2) — Detailed framework for Reduce (context compression) / Offload (move outside prompt) / Isolate (sub-agent delegation).Bitter Lessonと's 接続、Write-Select-Compress-Isolate from 's 進化、Manus/Claude Code/Open Deep Research's 実例、ハーネス設計へ's 含意 含む。
 - **✏️ Entity strengthened**: `[[entities/lance-martin]]` — Added High Signal podcast appearance to Podcast Appearances. Created dedicated Reduce/Offload/Isolate framework section.updated: 2026-05-13。
 - **✏️ Cross-links**: `[[entities/hugo-bowne-anderson]]` — Wikilinked "Reduce, Offload, Isolate" in Harness Engineering Philosophy section to [[concepts/reduce-offload-isolate]].
-- **Index updated**: concepts/reduce-offload-isolate を追加。Total pages: 1782→1783, Indexed entries: 836→837, Concepts: 1249→1250。
+- **Index updated**: concepts/reduce-offload-isolate added 。Total pages: 1782→1783, Indexed entries: 836→837, Concepts: 1249→1250。
 - **2026-05-13**: Discord user request → ingested 'Agents That Build Themselves' content from 3 sources: Substack article (Hugo Bowne-Anderson, Feb 2026), YouTube workshop (96min live build with Ivan Leo), GitHub repo (build-your-own-ai-assistant). **New pages**: `concepts/agents-that-build-themselves.md` (Level 5: Self-Modification pattern — factory + hot reload + hooks + markdown memory), `entities/ivan-leo.md` (Ivan Leo — Google DeepMind, ex-Manus). **Enriched**: `concepts/self-evolving-agents.md` (added Level 5: Self-Modification with code example), `entities/openclaw.md` (added Core Architecture Patterns: hooks, memory compaction, tool factory + self-extension), `entities/hugo-bowne-anderson.md` (added build-your-own-ai-assistant repo). **Raw articles**: 2026-02-28_substack_agents-that-build-themselves.md (18KB), 2026-02-28_youtube_openclaw-from-scratch-workshop.md (33KB). Index: +2 pages (1780→1782), +2 entries (834→836).
 ## [2026-05-13] enrich | Agentic Search: Long-Running Agents & RLM practitioner perspective
 - id: concept-agentic-search-rlm-practitioner-2026-05-13

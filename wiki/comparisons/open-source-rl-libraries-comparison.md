@@ -16,33 +16,32 @@ sources:
   - raw/articles/2025-07-01_anyscale_open-source-rl-libraries-for-llms.md
   - https://www.anyscale.com/blog/open-source-rl-libraries-for-llms
 ---
-
 # Open Source RL Libraries for LLMs — Comparison Portal
 
-Anyscale（Tyler Griggs & Philipp Moritz, 2025-07-01, updated 2025-09-01）による、LLM向け主要OSS強化学習ライブラリ10選の技術比較。**RLHF → 推論モデル → マルチターンエージェントRL** へと進化するRL訓練エコシステムを俯瞰。
+A technical comparison of 10 major open-source reinforcement learning libraries for LLMs by Anyscale (Tyler Griggs & Philipp Moritz, 2025-07-01, updated 2025-09-01). Provides an overview of the evolving RL training ecosystem from **RLHF → reasoning models → multi-turn agent RL**.
 
-## 比較の背景
+## Comparison Background
 
-RLはポストトレーニングの中核技術。DeepSeek-R1のGRPOによる推論創発、OpenAI o1/o3のRL活用を経て、**マルチターン設定でのエージェント訓練**が最新フロンティア。この領域のOSSライブラリが急速に成長している。
+RL is the core technology for post-training. Following DeepSeek-R1's emergence of reasoning via GRPO, OpenAI o1/o3's use of RL, **agent training in multi-turn settings** is the latest frontier. Open-source libraries in this space are growing rapidly.
 
-## 全ライブラリ一覧
+## Full Library List
 
-| ライブラリ | 開発元 | 初回リリース | ⭐ Stars | 👥 Contributors | 主ターゲット |
+| Library | Developer | Initial Release | ⭐ Stars | 👥 Contributors | Primary Target |
 |-----------|--------|-------------|---------|---------------|------------|
-| [[concepts/fine-tuning/trl\|TRL]] | Hugging Face | 2023-01 | 15.3k | 391 | RLHF, 推論 |
-| [[concepts/hybrid-flow\|Verl]] | ByteDance | 2024-11 | 12.9k | 351 | RLHF, 推論, エージェント |
+| [[concepts/fine-tuning/trl\|TRL]] | Hugging Face | 2023-01 | 15.3k | 391 | RLHF, Reasoning |
+| [[concepts/hybrid-flow\|Verl]] | ByteDance | 2024-11 | 12.9k | 351 | RLHF, Reasoning, Agents |
 | [[concepts/openrlhf\|OpenRLHF]] | Community | 2023-07 | 7.8k | 79 | RLHF |
-| [[concepts/verifiers-rl\|Verifiers]] | Community | 2025-02 | 2.9k | 26 | 推論, エージェント |
-| [[concepts/areal\|AReaL]] | Ant Group | 2025-02 | 2.5k | 31 | RLHF, 推論, エージェント |
-| [[concepts/ragen\|RAGEN]] | Community | 2025-01 | 2.3k | 16 | エージェント |
-| [[concepts/roll-rl\|ROLL]] | Alibaba | 2025-05 | 1.9k | 32 | RLHF, 推論, エージェント |
-| [[concepts/slime-rl\|slime]] | Z.ai / Tsinghua | 2025-06 | 1.5k | 33 | エージェント |
-| [[concepts/nemo-rl\|NeMo-RL]] | NVIDIA | 2025-03 | 0.8k | 55 | RLHF, 推論, エージェント |
-| [[concepts/skyrl\|SkyRL]] | UC Berkeley | 2025-06 | 0.8k | 18 | エージェント |
+| [[concepts/verifiers-rl\|Verifiers]] | Community | 2025-02 | 2.9k | 26 | Reasoning, Agents |
+| [[concepts/areal\|AReaL]] | Ant Group | 2025-02 | 2.5k | 31 | RLHF, Reasoning, Agents |
+| [[concepts/ragen\|RAGEN]] | Community | 2025-01 | 2.3k | 16 | Agents |
+| [[concepts/roll-rl\|ROLL]] | Alibaba | 2025-05 | 1.9k | 32 | RLHF, Reasoning, Agents |
+| [[concepts/slime-rl\|slime]] | Z.ai / Tsinghua | 2025-06 | 1.5k | 33 | Agents |
+| [[concepts/nemo-rl\|NeMo-RL]] | NVIDIA | 2025-03 | 0.8k | 55 | RLHF, Reasoning, Agents |
+| [[concepts/skyrl\|SkyRL]] | UC Berkeley | 2025-06 | 0.8k | 18 | Agents |
 
-## アーキテクチャ比較
+## Architecture Comparison
 
-| ライブラリ | Training Backend | Algorithms | Inference Engine | Async | Environment | Orchestrator |
+| Library | Training Backend | Algorithms | Inference Engine | Async | Environment | Orchestrator |
 |-----------|-----------------|------------|------------------|-------|-------------|--------------|
 | TRL | HF Trainer | SFT, DPO, GRPO, PPO | HF, vLLM | ❌ | ❌ | — |
 | Verl | FSDP, Megatron | SFT, DPO, GRPO, PPO | HF, vLLM, SGLang | 🚧 RFC | 🚧 via tools | Ray |
@@ -55,27 +54,27 @@ RLはポストトレーニングの中核技術。DeepSeek-R1のGRPOによる推
 | SkyRL | FSDP, DeepSpeed | GRPO, PPO | vLLM, SGLang, OpenAI | ✅ | ✅ Custom env | Ray |
 | slime | Megatron | GRPO, PPO | SGLang | ✅ | ✅ Example | Ray |
 
-## 次元別評価
+## Dimensional Assessment
 
-### 成熟度・エコシステム
-| Tier | ライブラリ | 特徴 |
+### Maturity & Ecosystem
+| Tier | Libraries | Characteristics |
 |------|-----------|------|
-| **Tier 1** | TRL, Verl, OpenRLHF | 10k+ ⭐、活発なコミュニティ、サードパーティ拡張多数 |
-| **Tier 2** | Verifiers, AReaL, RAGEN | 2-3k ⭐、特定ドメインで強み |
-| **Tier 3** | ROLL, slime, NeMo-RL, SkyRL | 1.5k未満、新興だが設計が洗練 |
+| **Tier 1** | TRL, Verl, OpenRLHF | 10k+ ⭐, active communities, many third-party extensions |
+| **Tier 2** | Verifiers, AReaL, RAGEN | 2-3k ⭐, strong in specific domains |
+| **Tier 3** | ROLL, slime, NeMo-RL, SkyRL | <1.5k, emerging but architecturally sophisticated |
 
-### ユースケース適性
+### Use Case Suitability
 
-| ユースケース | 最適 | 代替候補 |
+| Use Case | Best Fit | Alternatives |
 |-------------|------|---------|
 | **RLHF** | TRL, OpenRLHF | Verl, AReaL, NeMo-RL, ROLL |
-| **推論モデル訓練** | Verl, TRL | Verifiers, AReaL, ROLL, NeMo-RL |
-| **マルチターンエージェントRL** | SkyRL, RAGEN | Verifiers, AReaL, slime, NeMo-RL, ROLL |
-| **最大スケーラビリティ** | Verl | slime, AReaL |
-| **研究・プロトタイピング** | Verifiers | TRL, SkyRL |
-| **非同期訓練** | AReaL, slime | SkyRL, Verifiers, OpenRLHF |
+| **Reasoning Model Training** | Verl, TRL | Verifiers, AReaL, ROLL, NeMo-RL |
+| **Multi-Turn Agent RL** | SkyRL, RAGEN | Verifiers, AReaL, slime, NeMo-RL, ROLL |
+| **Maximum Scalability** | Verl | slime, AReaL |
+| **Research & Prototyping** | Verifiers | TRL, SkyRL |
+| **Asynchronous Training** | AReaL, slime | SkyRL, Verifiers, OpenRLHF |
 
-## アーキテクチャの系譜
+## Architecture Genealogy
 
 ```
 TRL (HF Trainer)
@@ -94,20 +93,20 @@ New generation (2025):
 └── slime (opinionated simplicity, Z.ai/Tsinghua)
 ```
 
-## 選択ガイドライン
+## Selection Guidelines
 
-1. **大規模訓練・本番環境** → **Verl**（最も成熟、パフォーマンス重視、エコシステム最大）
-2. **TRLとの統合・研究** → **Verifiers**（TRLベース、環境・マルチターン対応）
-3. **最大の柔軟性** → **SkyRL**（sync/async、colocated/disaggregated、外部推論全て対応）
-4. **非同期スループット最大化** → **AReaL**（interruptible rollouts、PPO staleness対応）
-5. **シンプルさ重視・MoEモデル** → **slime**（Megatron+SGLangに固定、中央データバッファ）
-6. **RLHF専念** → **OpenRLHF**（報酬モデル充実、async対応）
+1. **Large-scale training / Production** → **Verl** (most mature, performance-focused, largest ecosystem)
+2. **TRL integration / Research** → **Verifiers** (TRL-based, environment & multi-turn support)
+3. **Maximum flexibility** → **SkyRL** (sync/async, colocated/disaggregated, all external inference engines)
+4. **Maximum async throughput** → **AReaL** (interruptible rollouts, PPO staleness handling)
+5. **Simplicity priority / MoE models** → **slime** (fixed Megatron+SGLang, central data buffer)
+6. **RLHF focus** → **OpenRLHF** (rich reward model support, async capable)
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/grpo]] — GRPOアルゴリズムの詳細
-- [[concepts/deepseek-r1]] — GRPOを導入した原論文
-- [[concepts/post-training]] — ポストトレーニング概要
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF/DPO手法
-- [[concepts/hybrid-flow]] — veRLのHybridFlowアーキテクチャ
-- [[concepts/fine-tuning/trl]] — TRLの実装詳細・コード例
+- [[concepts/grpo]] — GRPO algorithm details
+- [[concepts/deepseek-r1]] — Original paper introducing GRPO
+- [[concepts/post-training]] — Post-training overview
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF/DPO methods
+- [[concepts/hybrid-flow]] — veRL's HybridFlow architecture
+- [[concepts/fine-tuning/trl]] — TRL implementation details and code examples

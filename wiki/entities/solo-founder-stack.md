@@ -11,10 +11,9 @@ tags:
   - company
 aliases: [solopreneur-stack, solo-founder-ai-stack, one-person-unicorn]
 ---
-
 # Solo Founder Stack
 
-2026年のソロfounderがAIを活用して**一人で大企業並みの生産性**を実現するためのツールスタックとアーキテクチャ。「One-Person Unicorn」の具体実装。
+The tool stack and architecture enabling solo founders in 2026 to leverage AI to achieve **productivity on par with large enterprises** through AI. A concrete implementation of the "One-Person Unicorn" vision.
 
 ## The Macro Trend
 
@@ -23,65 +22,65 @@ aliases: [solopreneur-stack, solo-founder-ai-stack, one-person-unicorn]
 | Solo-founded startups | 23.7% | 36.3% (Carta) |
 | Enterprise multi-agent enquiries | — | 1,445% surge (Gartner Q1→Q2 2025) |
 
-**Dario Amodei**: 2026年までに一人のbillion-dollar companyが生まれる確率は70-80%
+**Dario Amodei**: 70-80% probability of a single-person billion-dollar company emerging by 2026
 
 ## The "Vibe CEO" Model
 
-Vibe CEOは**人を管理せず、AIエージェントを管理する**CEO。
+The Vibe CEO is a CEO who **manages AI agents, not people**.
 
-| 伝統的Startup | Vibe CEO |
+| Traditional Startup | Vibe CEO |
 |--------------|----------|
-| 人を雇う | AIエージェントをオーケストレーション |
-| 70-80% salary burn | $200-$500/月のAIサブスクリプション |
-| 10-50倍低い資本効率 | 10-50倍高い資本効率 |
-| 高レベル方向設定のみ | 高レベル方向設定 → 専門エージェントが実行 |
+| Hire people | Orchestrate AI agents |
+| 70-80% salary burn | $200-$500/month AI subscriptions |
+| 10-50x lower capital efficiency | 10-50x higher capital efficiency |
+| High-level direction only | High-level direction → specialist agents execute |
 
 ## Core Components
 
-### Context Engineering（核心スキル）
+### Context Engineering (Core Skill)
 
-プロンプトエンジニアリングに取って代わり、**情報環境全体の設計**を担う:
+Replacing prompt engineering, this handles **design of the entire information environment**:
 
-- `CLAUDE.md` ファイル（構造化記憶）
-- MCPサーバー（外部ツール連携）
-- RAGパイプライン（知識検索）
-- 構造化記憶レイヤー
+- `CLAUDE.md` file (structured memory)
+- MCP servers (external tool integration)
+- RAG pipeline (knowledge retrieval)
+- Structured memory layer
 
 ### Minimum Viable AI Governance
 
-- 目的駆動型エージェントオーケストレーション
-- エージェントのスプレードを避ける明示的構造
-- 組織記憶を重要インフラとして位置づけ
+- Purpose-driven agent orchestration
+- Explicit structure to avoid agent sprawl
+- Organizational memory as critical infrastructure
 
 ## Real-World Examples
 
-### Medvi — 一人billion-dollar company
+### Medvi — One-person billion-dollar company
 
-The New York Times（2026年4月）: Matthew Gallagher（41歳）は**2ヶ月、$20,000、10+のAIツール**でtelehealth GLP-1薬品会社Medviを設立。
+The New York Times (April 2026): Matthew Gallagher (41) founded telehealth GLP-1 medication company Medvi with **2 months, $20,000, and 10+ AI tools**.
 
-- AIでコード生成、Webサイトコピー、広告画像/動画、カスタマーサービス
-- AIでビジネスパフォーマンス分析
-- 第1月: 300顧客、第2月: 1,000顧客
-- 2025年売上: $401M
+- AI for code generation, website copy, ad images/video, customer service
+- AI for business performance analysis
+- Month 1: 300 customers, Month 2: 1,000 customers
+- 2025 revenue: $401M
 
 ### Defense-Tech Solo Founder
 
-Business Insider: 1人のdefense-tech founderが**15人のAIエージェントの「council」**で会社運営。ChatGPT + Nvidiaツールで伝統的な雇用を置き換え。
+Business Insider: One defense-tech founder runs their company with a **"council" of 15 AI agents**, replacing traditional hiring with ChatGPT + Nvidia tools.
 
 ## Typical Stack (2026)
 
-| 機能 | ツール |
+| Function | Tool |
 |------|--------|
-| **コーディング/ビルド** | Cursor ($20/月), Lovable, Vercel |
-| **データベース** | Supabase (無料) |
-| **コンテンツ/ライティング** | Claude Pro ($20/月), ChatGPT |
-| **デザイン** | Canva (無料), Figma |
-| **画像生成** | Midjourney, ChatGPT |
-| **ホスティング** | Vercel (無料) |
+| **Coding/Build** | Cursor ($20/month), Lovable, Vercel |
+| **Database** | Supabase (free) |
+| **Content/Writing** | Claude Pro ($20/month), ChatGPT |
+| **Design** | Canva (free), Figma |
+| **Image Generation** | Midjourney, ChatGPT |
+| **Hosting** | Vercel (free) |
 
 ## Significance
 
-Solo Founder Stackは、AIが**「一人の人間の生産性限界」を飛躍的に引き上げた**ことを示す。2026年の最も注目すべきトレンドの一つで、 startup生態系、VCの投資判断、雇用市場に根本的な変革をもたらしている。
+The Solo Founder Stack demonstrates that AI has **dramatically raised the "productivity ceiling" of a single person**. It is one of the most notable trends of 2026, fundamentally transforming the startup ecosystem, VC investment decisions, and the job market.
 
 ## Empirical Support: Shopify Data (April 2026)
 
@@ -106,9 +105,9 @@ See [[entities/shopify|Shopify entity page]] for full breakdown.
 ## Related Concepts
 - [[concepts/solo-founder-stack]]
 
-- [[claude-perfect-memory]] — コンテキストエンジニアリングの核心
-- [[company-ai-pilled]] — 組織のAI駆動化
-- [[content-engine]] — AIコンテンツ自動化
+- [[claude-perfect-memory]] — Core of context engineering
+- [[company-ai-pilled]] — Organizational AI-driven transformation
+- [[content-engine]] — AI content automation
 
 ## References
 
