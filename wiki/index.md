@@ -2,7 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2111 | Indexed entries: 1385 | Not in index: 674 |## Entities (679 pages)
+> Last updated: 2026-05-27 | Total pages: 2189 | Indexed entries: 1410 | Not in index: 779
+
+## Entities (699 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -705,7 +707,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (666 pages)
+## Concepts (678 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -741,7 +743,6 @@
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
 - [[concepts/agentic-search]] — Agentic Search: IR search layer, harness engineering layer, coding agent layer, agile engineering framework (Scope–Cost–Quality triangle, evaluation-driven "done" definition), steering patterns (carrot-and-stick model, 9 steering patterns, WANDS NDCG results). Includes Doug Turnbull, Daniel Tunkelang, Anthropic Dynamic Filtering, SID-1 RL-trained retrieval.
 - [[concepts/agent-steering]] — Agent Steering: carrot-and-stick model for guiding LLM agents within harnesses. Covers 7 steering patterns (Ralph loop, rule-based validation, LLM-as-Judge, reranker-in-response, few-shot priming, query expansion, tool guards), the two-loop architecture (agentic loop + harness control plane), subagent delegation for context management, and BEAM search for systematic exhaustive exploration. Based on Doug Turnbull's Cheat at Search Part 3.
-- [[concepts/agentic-workflow-engineering]]
 - [[concepts/agentic-retrieval]] — Agentic Retrieval: AI agents as primary search consumers. Median 10-term queries (vs human 2), 24 calls/session, phrase quotes in 98% of sessions. GPT-5 BrowseComp-Plus empirical analysis. Distribution shift from legacy retrievers.
 - [[concepts/agent-ergonomics]] — Programming language and toolchain design optimized for AI coding agents. McKinney's framework (compile speed, static binaries) + Ronacher's language syntax/feature design principles (effects, results, grep-ability, etc.)
 - [[concepts/agent-execution-tax]] — Agent Execution Tax: Fireworks AI concept. Structured output reliability bottleneck discovered from 720 browser agent runs. Kimi K2.5 0.0% vs Gemini 22.9% execution tax. Reliability-Adjusted Accuracy and Cost Per Successful Task.
@@ -1304,7 +1305,6 @@
 - [[concepts/ai-industry-news]] — "AI Industry News (The Signal — Apr 26)"
 - [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — "GPU / VRAM Fundamentals"
 - [[concepts/ai-memory-systems-chatgpt-vs-claude-vs-cognition]] — AI Memory Systems: ChatGPT vs Claude vs Cognition design comparison
-- [[concepts/ai-memory-systems-chat-vs-coding-agent-design-philosophy]] — AI Memory Systems: Design philosophy comparison — chat vs coding agents
 - [[concepts/ai-organization]] — AI Organization
 - [[concepts/ai-persona-embodiment]] — AI-Persona-Embodiment
 - [[concepts/ai-progress-dynamics]] — AI Progress Dynamics: Why training efficiency defies horizon predictions
@@ -1397,7 +1397,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 
-## Comparisons (23 pages)
+## Comparisons (26 pages)
 
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — Memory architecture comparison of 4 harnesses: OpenClaw/Claude Code/Codex/Hermes. File-first common philosophy, vector search vs full-text search, async vs sync vs Bounded Snapshot, Pre-Compaction Flush, Bustamante 3-type classification, with selection guide.
 - [[comparisons/openclaw-pi-hermes-state-management]] — OpenClaw, Pi, and Hermes Agent State Management — Data Flow and State Management comparison: OpenClaw as Gateway/control-plane source of truth, Pi as runtime substrate, Hermes as capability-accumulating personal agent.

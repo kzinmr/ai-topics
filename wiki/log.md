@@ -2,6 +2,24 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] watchdog | Auto-fixed index.md header counts and removed ghost entries
+
+### Auto-Fixed
+- Fixed index.md header line: split metadata from section header, updated total pages (2111→2189), indexed entries (1385→1410), not-in-index (674→779)
+- Updated Entities section header: 679→699 pages
+- Updated Concepts section header: 666→678 pages (indexed count; 777 unindexed concepts remain)
+- Updated Comparisons section header: 23→26 pages
+- Removed ghost entry: [[concepts/agentic-workflow-engineering]] (no file exists)
+- Removed ghost entry: [[concepts/ai-memory-systems-chat-vs-coding-agent-design-philosophy]] (slug mismatch with Japanese-named file)
+
+### Unchanged (reported)
+- 777 concepts not in index.md — needs batch ingestion (16 subdirectories with 52 subdir files + 1362 top-level files)
+- 3 entities not in index: arcee-ai, ash-vardanyan, john-berryman
+- Pipeline watchdog: x_accounts stale (26h alert from 12:00 UTC snapshot; 2-day schedule, likely resolved)
+- Concepts section ends at 'ecs-fargate-scaling' (letter D); E-Z concepts entirely unindexed
+
+---
+
 ## [2026-05-27] Cheat at Search Part 4: LLM as a Judge → new concept page, entity enrichment
 
 - **Raw article**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md` — Doug Turnbull's Part 4 slides on LLM-based search relevance evaluation
