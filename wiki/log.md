@@ -80,6 +80,13 @@
 - 20:00 Updated `concepts/codex-app-server.md` — Added cross-reference to codex-agent-loop.
 - 20:00 Updated `index.md` — Added entry for codex-agent-loop under Concepts.
 - 20:30 Created `comparisons/codex-app-server-vs-claude-agent-sdk.md` — Architecture comparison: protocol + server process (App Server) vs in-process library (Claude Agent SDK). Key differences: language binding (any language vs Python/TS), streaming model (server-pushed notifications vs client-pulled iterator), permission models, tool ecosystems (Codex harness tools vs 8 built-in + inline custom tools), deployment patterns, and migration paths. Verdict: App Server = agent as a service; Claude Agent SDK = agent as a library dependency.
+- 21:00 Discovered Hermes officially supports Codex App Server as runtime backend (https://hermes-agent.nousresearch.com/docs/user-guide/features/codex-app-server-runtime).
+- 21:00 Created `concepts/hermes-codex-app-server-runtime.md` — Hermes Codex App-Server Runtime: Hermes as shell layer (sessions DB, gateway, memory, skill review) + Codex as execution engine. 3 tool sources (Codex built-in, native plugins, Hermes MCP callback). Bidirectional MCP: Codex can call Hermes' browser/vision/skills. /goal and Kanban supported. Swappable via /codex-runtime auto.
+- 21:00 Created `comparisons/harness-backend-routing.md` — OpenClaw vs Hermes vs Codex App Server as harness adapter/proxy. 8-dimension comparison: dynamic routing, execution control, state management, protocol normalization, tool interop, gateway, persistent memory, backend extensibility. Proposes 3-layer ideal stack: OpenClaw (routing) + Hermes (memory/tools) + Codex App Server (execution). Documents app-server protocol becoming de facto wire standard via codapter/alleycat/hermes-bridge.
+- 21:00 Created `entities/codapter.md` — Codapter entity page: protocol adapter translating app-server JSON-RPC to Pi (any LLM) + Codex. Model prefix routing, IBackend interface.
+- 21:00 Updated `concepts/codex-app-server.md` — Added "App Server as De Facto Wire Standard" section: ecosystem stack diagram (Clients→Adapters→Backends→Proxies), codapter/alleycat/codex-convert-proxy survey, Hermes integration note.
+- 21:00 Saved `raw/articles/2026-05-27_hermes-codex-app-server-runtime.md`.
+- 21:00 Updated `index.md` — Added entries for hermes-codex-app-server-runtime, harness-backend-routing, codapter.
 
 
 ---

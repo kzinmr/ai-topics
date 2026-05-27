@@ -279,3 +279,36 @@ send({ method: "thread/start", id: 1, params: { model: "gpt-5.4" } });
 3. **Streaming events model.** Unlike a simple request-response API, the app-server emits a rich event stream (`thread/*`, `turn/*`, `item/*`) that maps directly to UI rendering (agent messages, tool calls, file diffs).
 4. **Open-source reference.** The protocol definitions in `codex-rs/app-server-protocol/` serve as the canonical specification; the documentation page is a human-readable companion.
 5. **MCP-adjacent but different.** Both use JSON-RPC, but MCP is for tool/resource servers while Codex App Server is for **embedding a specific agent** (Codex) as a service — closer in spirit to ACP's agent-to-agent communication model.
+
+---
+
+## App Server as De Facto Wire Standard
+
+The App Server's JSON-RPC protocol is evolving beyond "Codex's protocol" into a **common wire format for coding agents**. Several projects now implement the app-server wire shape for non-Codex backends:
+
+| Project | Role |
+|---------|------|
+| **Codapter** | Protocol adapter: translates app-server JSON-RPC → Pi (any LLM) + Codex. Model prefix routing (`pi::gpt-5.4`) |
+| **Alleycat** | Agent multiplexer: Codex, Pi, Amp, OpenCode, Claude, Hermes — all speak app-server wire protocol over a single QUIC connection. Includes `hermes-bridge` |
+| **codex-convert-proxy** | Responses API → Chat Completions proxy (GLM, Kimi, DeepSeek, MiniMax as Codex backends) |
+| **codex-app-proxy** | Codex app-server → OpenAI-compatible `/v1/chat/completions` endpoint |
+
+**Why this protocol won**: VS Code extension uses it → clients already exist. `generate-ts` / `generate-json-schema` make implementation trivial. ACP was spec-first; app-server protocol was implementation-first — and implementation wins.
+
+### Ecosystem Stack
+
+```
+Clients:   Codex Desktop, VS Code, JetBrains, Xcode, Alleycat
+              │
+              │  App Server JSON-RPC ← de facto wire standard
+              │
+Adapters:  Codapter (model routing), Alleycat (agent multiplexing)
+              │
+Backends:  Codex, Pi (any LLM), Hermes, Claude, OpenCode, Amp, Droid
+              │
+Proxies:   codex-convert-proxy (→ GLM/Kimi/DeepSeek/MiniMax)
+```
+
+### Hermes Integration
+
+[[concepts/hermes-codex-app-server-runtime|Hermes officially supports]] Codex App Server as an opt-in runtime backend. When enabled, Hermes becomes the shell layer (sessions DB, gateway, memory, skill review) while Codex handles execution — including bidirectional MCP callbacks where Codex can invoke Hermes' browser, vision, and skills tools.

@@ -173,6 +173,7 @@
 - [[entities/codex]] — OpenAI-built open-source AI coding agent. Apache-2.0, built in Rust, 79.3K GitHub Stars. Codex Thursday No.6: Appshots, /goal improvements, annotation mode, plugin sharing, analytics. 4M+ WAU. Gartner MQ 2026 Leader. Virgin Atlantic case study (78-80% code reduction).
 - [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
 - [[entities/cloudflare-sandbox]] — Cloudflare's self-hosted sandbox for Claude Managed Agents (May 2026). Dual sandbox primitives (microVM + V8 isolates), proxy-based zero-trust credential brokering, Browser Run, email tools, Workers AI integration.
+- [[entities/codapter]] — Codapter (kcosr/codapter) — Protocol adapter that translates Codex App Server JSON-RPC to alternative backends (Pi with any LLM + Codex). Model prefix routing (pi::model), IBackend interface for extensibility. Key enabler of app-server protocol becoming de facto wire standard.
 - [[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.
 - [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
@@ -1042,6 +1043,7 @@
 - [[concepts/hermes-agent]] — Hermes Agent by Nous Research: self-evolving personal AI agent with three-tier memory, self-improving skills, GEPA optimization, multi-profile isolation, and plain-English cron. 140K+ GitHub stars. Comparison with OpenClaw.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent (v0.9.0) architecture details. AIAgent-centric design, 3 API execution modes, cache-aware prompt assembly, SQLite+FTS5 persistent state, self-registering tool registry, subagent delegation vs execute_code, 14+ platform Gateway, shared provider runtime. An agent-core-first capability accumulation system.
 - [[concepts/hermes-agent-use-cases]] — Hermes Agent's 7 standard use cases (30-day community analysis). 3 Shared Properties (Scheduled/File-based/Push to messenger), Self-Evolving Skill Loop.
+- [[concepts/hermes-codex-app-server-runtime]] — Hermes Codex App-Server Runtime — Hermes's official opt-in runtime backend powered by Codex App Server. Hermes becomes the shell layer (sessions DB, gateway, memory, skill review); Codex handles execution (shell, apply_patch, plugins) via JSON-RPC. Bidirectional MCP callbacks: Codex can invoke Hermes' browser, vision, and skills tools. /goal and Kanban supported. Swappable via /codex-runtime auto.
 
 - [[concepts/agent-iam]]
 - [[concepts/agent-patterns]] — General design patterns and implementation practices for AI agents
@@ -1394,6 +1396,7 @@
 - [[comparisons/evals-skills]] — Evals Skills
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — Gpt Image 2 Vs Nano Banana 2
+- [[comparisons/harness-backend-routing]] — Harness Backend Routing — OpenClaw vs Hermes vs Codex App Server as harness adapter/proxy. Compares dynamic routing (sessions_spawn vs /codex-runtime vs codapter), execution control (/acp steer), tool interop (bidirectional MCP), persistent memory, and gateway support. Proposes 3-layer stack: OpenClaw (routing) + Hermes (memory/tools) + Codex App Server (execution).
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison. elvis's 9-hour source code analysis. Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP). Control Plane Depth analysis (session visibility, scheduling determinism, child agent lifecycle, lane isolation, debugging determinism — the essence of orchestrator advantage beyond ACP and channel count). DeepLearning.AI 2026-05 analysis + Kilo blog.
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw. 9-dimension comparison table + Traction Signal (OpenRouter leaderboard reversal) + Agentic Loop + Caveats (token efficiency, skill explosion, maturity) + verdict + dual-agent architecture ([[comparisons/hermes-vs-openclaw-architecture|architecture details]]). DeepLearning.AI 2026-05 analysis + Kilo blog + Shann practical report.
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
