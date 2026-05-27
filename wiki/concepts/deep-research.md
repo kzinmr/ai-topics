@@ -4,7 +4,7 @@ type: concept
 aliases:
   - deep-research
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-27
 tags:
   - concept
   - deep-research
@@ -76,6 +76,37 @@ This workload is fundamentally out-of-distribution for retrievers trained on MS 
 Traditional IR benchmarks evaluate single-shot retrieval. Deep research requires evaluating **iterative, conditioning retrieval** — where each search call depends on the results of previous calls, and errors compound across sessions.
 
 Part 3 (forthcoming) examines why BM25 looks weak in one-shot but considerably stronger inside the agent loop, challenging how retrieval should be evaluated for deep research workloads.
+
+
+## NVIDIA AI-Q: Open-Source Deep Research Agent (May 2026)
+
+[[entities/nvidia]] released **NVIDIA AI-Q**, an open-source reference architecture for enterprise deep research agents. It ranks #1 on both [DeepResearch Bench I (55.95)](https://paperswithcode.com/sota/deep-research-bench-i?p=deep-research-is-a-retrieval-problem) and DeepResearch Bench II (54.50), beating OpenAI's closed system.
+
+### Architecture
+
+Two-tier routing: Intent Classifier → Shallow (fast, bounded) or Deep (multi-phase).
+
+Deep Researcher orchestrated by LangGraph StateGraph with three roles:
+- **Planner**: Scout (maps info landscape) + Architect (designs evidence-grounded plan)
+- **Researcher**: 5 specialist sub-agents in parallel (Evidence Gatherer, Mechanism Explorer, Comparator, Critic, Horizon Scanner)
+- **Orchestrator**: Coordinates loop, fills gaps, synthesizes report
+
+### Key Design Decisions
+- **Evidence-grounded planning**: Planner scouts before committing to structure
+- **Context isolation**: Each subagent works in its own context window, returns only synthesis
+- **Configurable via YAML**: Swap models, tools, depth thresholds without code changes
+
+### Training Pipeline
+- **Teacher model**: GPT-OSS-120B generated 80k trajectories
+- **Filtering**: Judge model (Qwen3-Nemotron-32B-GenRM-Principle) filtered → 67k survived
+- **Student**: Fine-tuned Nemotron-3-Super-120B-A12B on 16 nodes × 8 H100 GPUs (~25 hours, 5,615 steps)
+
+### Enterprise Integration
+- MCP server support for enterprise data sources
+- Docker Compose and Helm charts (laptop to air-gapped data center)
+- SKILL.md integration with Claude Code, Codex, Hermes Agent harnesses
+
+Sources: [NVIDIA Developer Blog](https://developer.nvidia.com/blog/add-a-specialized-deep-research-skill-to-agent-harnesses/), [GitHub: NVIDIA-AI-Blueprints/aiq](https://github.com/NVIDIA-AI-Blueprints/aiq)
 
 ## Related Concepts
 

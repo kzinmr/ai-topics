@@ -2,6 +2,30 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] enrich | Nightly knowledge consolidation — dreaming-wiki-ingest
+
+### Pages Created
+- [[concepts/agent-containment]] — Agent Containment — Anthropic's three isolation patterns (ephemeral container, HITL sandbox, sealed local VM) and security lessons
+
+### Pages Updated
+- [[entities/anthropic]] — Added Agent Containment Architecture section with three products, three patterns, and five security incidents
+- [[concepts/deep-research]] — Added NVIDIA AI-Q open-source deep research agent section (architecture, training pipeline, enterprise integration)
+- [[entities/elevenlabs]] — Added Music v2 release section (vocal/instrumentation quality, song-length composition, three platforms)
+- [[entities/nvidia]] — Added NeMo Agent Toolkit v1.7.0 release section (coding agent skills, ATOF v0.1, Arize OTLP, token streaming)
+
+### Sources
+- raw/articles/2026-05-27_anthropic-engineering_how-we-contain-claude.md
+- raw/articles/2026-05-26_nvidia-ai-q-deep-research.md
+- raw/articles/2026-05-27_elevenlabs_introducing-music-v2.md
+- raw/articles/2026-05-27_nemo-agent-toolkit-v1-7-0.md
+
+### Stats
+- Total L2 pages: 2,218 → 2,219
+- Indexed entries: 1,452 → 1,453
+
+---
+
+
 ## [2026-05-27] fix | Index health: added 21 orphan pages
 
 ### Pages Added

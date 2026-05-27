@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-05-26
+updated: 2026-05-27
 type: entity
 tags: [company, platform]
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
@@ -106,6 +106,25 @@ NVIDIA releases pretraining datasets (CC-v2, CC-Math-v1, Code-v2, Specialized-v1
 
 ### "Intelligence per Second" Philosophy
 Catanzaro's prediction: models that optimize for compute acceleration (intelligence per unit time) will win because they train on more data, get more post-training cycles, and iterate faster during deployment.
+
+
+### NeMo Agent Toolkit v1.7.0 (May 2026)
+
+NVIDIA released **NeMo Agent Toolkit v1.7.0** with notable new features:
+
+| Feature | Description |
+|---------|-------------|
+| **AI coding agent skills** | New coding agent capabilities integrated into the toolkit |
+| **ATOF v0.1** | Agentic Trajectory Observability Format — aligned specification for agent trace data |
+| **Arize AX OTLP exporter** | OpenTelemetry protocol exporter for Arize AI observability |
+| **Token streaming** | Streaming support for ReAct Agent |
+| **Exa Search API** | Internet search tool integration |
+| **ATIF trajectory exporter** | Phoenix visualization support for agent trajectories |
+| **Consent-gated telemetry** | Runtime telemetry for NAT CLI commands (privacy-first) |
+
+**Breaking changes**: OpenAI dependency migration 1.x→2.x; removed optuna, chain, openinference from core; removed nvidia-nat-vanna package.
+
+Source: raw/articles/2026-05-27_nemo-agent-toolkit-v1-7-0.md
 
 ## Related
 

@@ -316,6 +316,34 @@ Anthropic co-founder Jack Clark made several bold forecasts at an Oxford Univers
 Source: Superintel newsletter via Anthropic co-founder Oxford lecture (May 2026).
 
 
+
+## Agent Containment Architecture (May 2026)
+
+Anthropic published a detailed engineering post on how Claude is [[concepts/agent-containment|contained]] across its three products. The article shares what's held up, what's broken, and lessons learned about agent security.
+
+### Three Products, Three Isolation Patterns
+
+| Product | Pattern | Infrastructure | Blast Radius |
+|---------|---------|---------------|-------------|
+| claude.ai (code exec) | Ephemeral container | gVisor on isolated infra | Server-side only, per-session ephemeral |
+| Claude Code | HITL sandbox | Seatbelt (macOS) / bubblewrap (Linux) | Local workspace, network denied by default |
+| Claude Cowork | Sealed local VM | Apple Virtualization / HCS | Mounted workspace only, host keychain isolated |
+
+### Key Security Incidents Documented
+
+- **Egress via approved domain**: Malicious file instructed Claude to upload data via api.anthropic.com using an attacker's API key. The egress proxy correctly allowed the domain but failed to verify the API key's provenance. Fixed with a defensive MITM proxy.
+- **Pre-trust execution**: `.claude/settings.json` hooks in cloned repos executed before the trust dialog. Fixed by deferring config parsing until after trust acceptance.
+- **User-as-injection-vector**: Internal red-team phish succeeded 24/25 times — the only defense was the environment layer (egress controls, filesystem boundaries).
+- **Approval fatigue**: Users approved ~93% of permission prompts. Claude Code's auto mode + sandbox reduced prompts by 84%.
+
+### Principles
+1. **Design for containment at the environment layer first** — probabilistic model defenses will never be 100%
+2. **Match isolation strength to user expertise** — developers who read bash ≠ knowledge workers who can't
+3. **Be wary of custom components** — gVisor, seccomp, hypervisors held; custom proxy failed
+
+Source: [How we contain Claude across products](raw/articles/2026-05-27_anthropic-engineering_how-we-contain-claude.md) (Anthropic Engineering, May 2026)
+
+
 ## Research Focus
 
 Anthropic's research priorities:

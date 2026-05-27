@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-05-24
+updated: 2026-05-27
 tags:
   - company
   - voice-ai
@@ -75,6 +75,26 @@ ElevenLabs published a comprehensive tutorial (May 2026) for building production
 - **Performance**: Fastest model ~75ms latency with real-time turn-taking (pauses, interruptions)
 
 This integration positions ElevenLabs as a platform that competes with Twilio for voice agent infrastructure (native integrations with Twilio, SIP trunk, Vonage, Telnyx, Plivo, Genesys), while leveraging [[entities/anthropic]]'s Claude Code as the primary development interface.
+
+
+### Music v2 (May 2026)
+
+ElevenLabs released **Music v2**, a significant upgrade to its music generation model with:
+- **Better vocals, instrumentation, and arrangement** across all genres
+- **Improved multilingual support** — lyrics, vocals, and arrangements more reliable in target languages
+- **Song-length composition**: Build full songs section-by-section (intro, verse, chorus) with structural continuity
+- **Improved inpainting**: Select any section of a track and regenerate just that part
+- **Cross-genre coherence**: Single song can move from opera to heavy metal and back
+- **Non-musical sound effects**: Embed SFX directly within the track
+
+Music v2 powers three platforms:
+- **ElevenMusic** — listen, remix, and create tracks
+- **ElevenAPI** — embed music generation in products
+- **ElevenCreative** — downloadable music for ads, branded content, and video
+
+**Pricing**: Music v1 and v2 prices cut by up to 50% for ElevenAPI and up to 40% for ElevenCreative.
+
+Source: raw/articles/2026-05-27_elevenlabs_introducing-music-v2.md
 
 ## Related
 - [[entities/openai]] — Competitor via GPT-4o voice and TTS capabilities
