@@ -21,6 +21,8 @@ related:
   - concepts/mcp
   - concepts/codex-goal
   - concepts/codex-prompting
+  - concepts/agent-client-protocol
+  - comparisons/codex-app-server-vs-agent-protocols
   - entities/openai-codex
 sources:
   - raw/articles/2026-05-27_openai-codex-app-server.md

@@ -11,6 +11,9 @@
 - 11:30 Updated `index.md` — Added entries for cyrilxbt and llm-augmented-knowledge-retrieval.
 - 17:45 Created `concepts/codex-app-server.md` — Codex App Server protocol page covering JSON-RPC 2.0 interface, transport options (stdio/WebSocket/Unix socket), Thread/Turn/Item core primitives, lifecycle, API surface, comparison with MCP and ACP, and Node.js integration example. Source: https://developers.openai.com/codex/app-server. Raw article: `raw/articles/2026-05-27_openai-codex-app-server.md`.
 - 17:45 Updated `index.md` — Added entry for codex-app-server under Concepts.
+- 18:30 Created `comparisons/codex-app-server-vs-agent-protocols.md` — Multi-protocol landscape comparison: Codex App Server vs ACP (closest), AG-UI (streaming semantics), MCP Apps (tool-level UI widgets). Layer map across UI/Client↔Agent/Agent↔Agent/Tools boundaries. Decision framework for when to use each protocol. Also covers A2A, A2UI, and Oracle Agent Spec.
+- 18:30 Updated `concepts/codex-app-server.md` — Added cross-references to ACP entity page and comparison page.
+- 18:30 Updated `index.md` — Added entry for codex-app-server-vs-agent-protocols under Comparisons.
 
 
 ---
