@@ -16,6 +16,10 @@
 - 18:30 Updated `index.md` — Added entry for codex-app-server-vs-agent-protocols under Comparisons.
 - 19:30 Ingested `raw/articles/2026-02-04_openai-unlocking-the-codex-harness.md` — Celia Chen's "Unlocking the Codex harness" blog post (OpenAI, Feb 4 2026).
 - 19:30 Major update `concepts/codex-app-server.md` — Added Development History (4-phase evolution: internal harness reuse → MCP split PR #4471 → platform stabilization → public documentation), Internal Architecture section (4-component diagram: Stdio Reader → Message Processor → Thread Manager → Core Threads), Three Integration Patterns (stdio local apps, HTTP+SSE web runtime, WebSocket/Unix socket remote control). Key insight: App Server began as "unofficial" protocol, explicitly rejected MCP, and was NOT originally designed as a stable third-party API.
+- 20:00 Ingested `raw/articles/2026-01-23_openai-unrolling-the-codex-agent-loop.md` — Michael Bolin's "Unrolling the Codex agent loop" (OpenAI Engineering Blog, Jan 23 2026). Covers agent loop mechanics, prompt construction (role hierarchy, ordering for cache efficiency), prompt caching & prefix matching, context compaction (/responses/compact endpoint), tool integration (shell, update_plan, web_search, MCP), stateless design, discovered bugs.
+- 20:00 Created `concepts/codex-agent-loop.md` — Codex Agent Loop concept page. Covers the user→model→tool→repeat cycle, prompt assembly (5-layer input ordering: sandbox permissions → dev instructions → skills → environment → user message), append-only prompt discipline for cache efficiency, cache miss triggers (MCP tool reorder, model switch, sandbox change), automatic compaction via /responses/compact, stateless design tradeoffs, relationship to App Server, and bugs/lessons from the engineering team.
+- 20:00 Updated `concepts/codex-app-server.md` — Added cross-reference to codex-agent-loop.
+- 20:00 Updated `index.md` — Added entry for codex-agent-loop under Concepts.
 
 
 ---

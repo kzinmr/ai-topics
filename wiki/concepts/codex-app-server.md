@@ -22,6 +22,7 @@ related:
   - concepts/codex-goal
   - concepts/codex-prompting
   - concepts/agent-client-protocol
+  - concepts/codex-agent-loop
   - comparisons/codex-app-server-vs-agent-protocols
   - entities/openai-codex
 sources:
