@@ -24,69 +24,69 @@ sources:
 
 # AI Image Generation
 
-**AI Image Generation（AI画像生成）** は、自然言語のテキスト記述から画像を生成する人工知能技術。拡散モデル（Diffusion Models）、GAN（Generative Adversarial Networks）、自己回帰モデル（Autoregressive Models）などをベースに、2022年以降急速に発展した。
+**AI Image Generation** is an AI technology that generates images from natural language text descriptions. Based on diffusion models, GANs (Generative Adversarial Networks), autoregressive models, and others, it has developed rapidly since 2022.
 
-## 主要なアーキテクチャ
+## Major Architectures
 
-### 拡散モデル（Diffusion Models）
-現在の主流。ノイズから徐々に画像を復元するプロセスを学習：
-- **Stable Diffusion**: オープンソースのデファクトスタンダード（Stability AI）
-- **DALL-E 3**: OpenAI の最新画像生成モデル
-- **Imagen**: Google の高品質テキスト-画像モデル
-- **Midjourney**: クリエイティブ業界で最も人気
-- **Nano Banana 2**: Google/Gemini 3 の最新モデル（推論+Web検索連携）
+### Diffusion Models
+Current mainstream approach. Learns to progressively restore images from noise:
+- **Stable Diffusion**: Open-source de facto standard (Stability AI)
+- **DALL-E 3**: OpenAI's latest image generation model
+- **Imagen**: Google's high-quality text-to-image model
+- **Midjourney**: Most popular in the creative industry
+- **Nano Banana 2**: Google/Gemini 3's latest model (inference + web search integration)
 
 ### GAN（Generative Adversarial Networks）
-生成器と識別器の競争による学習：
-- StyleGAN シリーズ（NVIDIA）
-- 主に顔生成・スタイル変換に使用
+Training through competition between generator and discriminator:
+- StyleGAN series (NVIDIA)
+- Mainly used for face generation and style transfer
 
-### 自己回帰モデル
-- Parti（Google）: トランスフォーマーベース
-- DALL-E 1/2: VQ-VAE + トランスフォーマー
+### Autoregressive Models
+- Parti (Google): Transformer-based
+- DALL-E 1/2: VQ-VAE + Transformer
 
-## 主要機能の比較（2026年）
+## Feature Comparison (2026)
 
-| 機能 | Stable Diffusion | DALL-E 3 | Midjourney | Nano Banana 2 |
+| Feature | Stable Diffusion | DALL-E 3 | Midjourney | Nano Banana 2 |
 |------|----------------|----------|-----------|--------------|
-| オープンソース | ✅ | ❌ | ❌ | ❌ |
-| ローカル実行 | ✅（GPU必要） | ❌ | ❌ | ❌ |
-| キャラクター一貫性 | ⚠️ 部分的 | ✅ | ✅ | ✅ |
-| テキストレンダリング | ⚠️ 苦手 | ✅ | ✅ | ✅（Pro） |
-| Web検索連携 | ❌ | ❌ | ❌ | ✅ |
-| リアルタイム編集 | ❌ | ⚠️ | ❌ | ✅ |
-| アップスケーリング | 別ツール必要 | 内蔵 | 内蔵 | 2K/4K対応 |
+| Open Source | ✅ | ❌ | ❌ | ❌ |
+| Local Execution | ✅ (GPU required) | ❌ | ❌ | ❌ |
+| Character Consistency | ⚠️ Partial | ✅ | ✅ | ✅ |
+| Text Rendering | ⚠️ Weak | ✅ | ✅ | ✅ (Pro) |
+| Web Search Integration | ❌ | ❌ | ❌ | ✅ |
+| Real-time Editing | ❌ | ⚠️ | ❌ | ✅ |
+| Upscaling | Separate tool needed | Built-in | Built-in | 2K/4K support |
 
-## プロンプティングベストプラクティス
+## Prompting Best Practices
 
-### 構造化プロンプトパターン
-1. **主題**: 何を生成するか（「赤いドレスを着た女性」）
-2. **スタイル**: 芸術的方向性（「油絵風、印象派」）
-3. **環境**: 背景と照明（「夕日、ビーチ、暖かい光」）
-4. **技術的指定**: アスペクト比、品質キーワード
+### Structured Prompt Patterns
+1. **Subject**: What to generate ("a woman in a red dress")
+2. **Style**: Artistic direction ("oil painting style, Impressionist")
+3. **Environment**: Background and lighting ("sunset, beach, warm light")
+4. **Technical Specs**: Aspect ratio, quality keywords
 
-### ネガティブプロンプト
-生成してほしくない要素を指定：
+### Negative Prompts
+Specify elements you do NOT want generated:
 ```
-ネガティブプロンプト: 歪んだ手、6本指、変形した顔、低品質、ぼやけた
+Negative prompt: distorted hands, 6 fingers, deformed face, low quality, blurry
 ```
 
-## 技術的課題
+## Technical Challenges
 
-| 課題 | 説明 | 対策 |
+| Challenge | Description | Countermeasure |
 |------|------|------|
-| **手/指の歪み** | 複雑な関節構造の理解不足 | 改良モデル、ControlNet |
-| **キャラクター一貫性** | 複数画像で同一キャラ維持困難 | IP-Adapter、LoRA |
-| **テキストレンダリング** | 画像内の文字が崩れる | 専用モデル、文字認識損失 |
-| **著作権・倫理** | 学習データの権利問題 | SynthID 電子透かし、規制 |
+| **Hand/Finger Distortion** | Poor understanding of complex joint structures | Improved models, ControlNet |
+| **Character Consistency** | Difficulty maintaining same character across images | IP-Adapter, LoRA |
+| **Text Rendering** | Text in images becomes garbled | Specialized models, character recognition loss |
+| **Copyright/Ethics** | Training data rights issues | SynthID watermarking, regulation |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/nano-banana-2]] — Google の最新画像生成モデル
-- [[concepts/reverse-engineering]] — 画像生成モデルの解析
-- [[concepts/inference/sglang]] — 推論最適化（画像生成にも応用）
+- [[concepts/nano-banana-2]] — Google's latest image generation model
+- [[concepts/reverse-engineering]] — Image generation model analysis
+- [[concepts/inference/sglang]] — Inference optimization (also applied to image generation)
 
-## ソース
+## Sources
 
 - [Google Cloud: Ultimate Nano Banana Prompting Guide](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana)
 - [Imagen: Photorealistic Text-to-Image Diffusion Models (arXiv)](https://arxiv.org/abs/2204.06125)

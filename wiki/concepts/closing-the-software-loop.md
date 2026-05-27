@@ -21,59 +21,59 @@ related:
 
 # Closing the Software Loop
 
-Benedict Brady（Meridian）が提唱する、**自律的なソフトウェア改善ループ**の概念。Andrej Karpathyの「Teslaの自動運転チームが休暇に行っても車が改善し続ける」というビジョンに触発された。
+A concept pioneered by Benedict Brady (Meridian): an **autonomous software improvement loop**. Inspired by Andrej Karpathy's vision of "Tesla's self-driving team going on vacation while the car keeps improving."
 
-## ソフトウェア開発ループの進化
+## Software Development Loop Evolution
 
-### フェーズ1: 従来型（数日〜数週間/反復）
-
-```
-ユーザーフィードバック → プロダクトチームが仕様化 → 
-エンジニアが実装 → コードレビュー → デプロイ
-```
-
-### フェーズ2: エージェント支援型（数時間〜数日/反復）
+### Phase 1: Traditional (days to weeks per iteration)
 
 ```
-ユーザーフィードバック → プロダクトチームが仕様化 → 
-コーディングエージェントが実装（ overnight） → 人間がレビュー
+User feedback → Product team specs it → 
+Engineers implement → Code review → Deploy
 ```
 
-- 週単位の機能が overnight で実装可能に
-- プロダクトチームは**詳細な仕様とバグボード**の維持が重要に
-- エージェントに**実験室（Laboratory）**を与える: ログ検査、dev環境デプロイ、ブラウザ/モバイルシミュレーター
-
-### フェーズ3: フル自己改善型（未来）
+### Phase 2: Agent-Assisted (hours to days per iteration)
 
 ```
-自律的バグ検出 → 自律的仕様化 → 自律的実装 → 自律的レビュー → デプロイ
+User feedback → Product team specs it → 
+Coding agent implements (overnight) → Human reviews
 ```
 
-**不足しているピース**: 自律的なバグ報告生成と機能要求の理解
+- Weekly features can be implemented overnight
+- Product teams must maintain **detailed specs and bug boards**
+- Give agents a **Laboratory**: log inspection, dev environment deployment, browser/mobile simulators
 
-#### データ収集の道筋
+### Phase 3: Full Self-Improving (future)
 
-| 手段 | 説明 | 例 |
+```
+Autonomous bug detection → Autonomous spec generation → Autonomous implementation → Autonomous review → Deploy
+```
+
+**Missing pieces**: autonomous bug report generation and feature request understanding
+
+#### Data Collection Pathways
+
+| Method | Description | Example |
 |------|------|-----|
-| テレメトリ | レガシーシステムのログからバグを自動検出・バグボード化 | Datadog, Sentry |
-| チャット製品 | ユーザーのチャットでの機能要求を仕様化 | Meridianの投資戦略リクエスト |
-| 自律インタビュー | エージェントがユーザーインタビューを実施 | Listen Labs |
+| Telemetry | Auto-detect bugs from legacy system logs, create bug board entries | Datadog, Sentry |
+| Chat Products | Turn user feature requests from chat into specs | Meridian investment strategy requests |
+| Autonomous Interviews | Agents conduct user interviews | Listen Labs |
 
-## Meridianでの実践例
+## Meridian Practice Example
 
-「BTCを$75k以下の時だけ毎週$100購入」というユーザー要求:
-- 従来: プロダクトチームが仕様化 → エンジニアが価格監視サービスを実装 → 数週間
-- エージェント支援型: 詳細仕様をエージェントに与え複数実装案を試行 → 数日
+User request: "Buy $100 of BTC weekly only when below $75k":
+- Traditional: Product team specs → Engineers build price monitoring service → Weeks
+- Agent-Assisted: Give agent detailed specs, it tries multiple implementations → Days
 
-## 人間の役割の変化
+## Changing Role of Humans
 
-| 役割 | 従来 | Closed Loop |
+| Role | Traditional | Closed Loop |
 |------|------|------------|
-| プロダクトマネージャー | 仕様作成 | 自律生成された仕様の検証・優先順位付け |
-| エンジニア | 実装 | アーキテクチャ設計 + エージェントのコードレビュー |
-| QA | テスト | エージェントのテスト戦略監査 |
+| Product Manager | Write specs | Validate and prioritize auto-generated specs |
+| Engineer | Implement | Architecture design + agent code review |
+| QA | Test | Audit agent testing strategy |
 
-## 参照
+## References
 
 - [Closing the Software Loop — Benedict Brady](https://www.benedict.dev/closing-the-software-loop) (2026-01-25)
 - [Give your agent a laboratory — Brian Lovin](https://brianlovin.com/writing/give-your-agent-a-laboratory-jH5ryjC)

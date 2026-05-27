@@ -28,60 +28,60 @@ related:
   - "[[concepts/serving-llms-vllm]]"
 ---
 
-# Inference — LLM推論エンジン
+# Inference — LLM Inference Engines
 
-LLM推論を最適化するための3大エンジンとその使い分け。
+Three major engines for optimizing LLM inference and how to choose between them.
 
-## 3大エンジン比較
+## Three Major Engine Comparison
 
 | | **llama.cpp** | **vLLM** | **SGLang** |
 |---|---|---|---|
-| **開発元** | Georgi Gerganov (→ Hugging Face) | UC Berkeley / vLLM team | LMSYS Org (→ PyTorch) |
-| **主要ターゲット** | ローカル/エッジ | サーバー/API | エージェント/RAG |
-| **KV Cache** | 標準 | PagedAttention | RadixAttention (prefix共有) |
-| **フォーマット** | GGUF専用 | HuggingFace | HuggingFace |
-| **Hardware** | CPU, Apple Silicon, GPU | NVIDIA/AMD GPU | NVIDIA, AMD, Intel, **CPU対応** |
-| **Structured Output** | ❌ | ❌ | ✅ xgrammar (ネイティブ) |
-| **最大特徴** | 軽量・ローカル動作 | 高スループット・連続バッチ | 長い共有プレフィクスのキャッシュ |
-| **2026年動向** | Hugging Face入り (Feb 2026), Speculative Checkpointing | 大規模デファクト | PyTorch入り (Mar 2025), RL rollout backend |
+| **Developer** | Georgi Gerganov (→ Hugging Face) | UC Berkeley / vLLM team | LMSYS Org (→ PyTorch) |
+| **Primary Target** | Local/Edge | Server/API | Agent/RAG |
+| **KV Cache** | Standard | PagedAttention | RadixAttention (prefix sharing) |
+| **Format** | GGUF only | HuggingFace | HuggingFace |
+| **Hardware** | CPU, Apple Silicon, GPU | NVIDIA/AMD GPU | NVIDIA, AMD, Intel, **CPU support** |
+| **Structured Output** | ❌ | ❌ | ✅ xgrammar (native) |
+| **Key Strength** | Lightweight, local operation | High throughput, continuous batching | Long shared prefix caching |
+| **2026 Trend** | Joined Hugging Face (Feb 2026), Speculative Checkpointing | Large-scale de facto | Joined PyTorch (Mar 2025), RL rollout backend |
 
-## 使い分け指針
+## Selection Guide
 
-### llama.cpp を選ぶ場合
-- **ローカル/エッジ推論** — CPUやApple Siliconで動かしたい
-- **GGUFモデル** — 量子化モデルを使用
-- **軽量デプロイ** — 依存関係を最小限に
-- **コンシューマーハード** — Mac, ラップトップ, Raspberry Pi
-- Ollama, LM Studio, text-generation-webui の基盤エンジン
+### When to Choose llama.cpp
+- **Local/Edge inference** — run on CPU or Apple Silicon
+- **GGUF models** — using quantized models
+- **Lightweight deployment** — minimize dependencies
+- **Consumer hardware** — Mac, laptop, Raspberry Pi
+- Ollama, LM Studio, text-generation-webui backend engine
 
-### vLLM を選ぶ場合
-- **サーバー/APIデプロイ** — 高スループットが必要
-- **マルチLoRA** — 複数のファインチューンモデルを同時に
-- **連続バッチ** — 複数の同時リクエストを効率的に
-- **本番環境のデファクト** — 最も実績がある
+### When to Choose vLLM
+- **Server/API deployment** — high throughput required
+- **Multi-LoRA** — serve multiple fine-tuned models simultaneously
+- **Continuous batching** — efficient concurrent request handling
+- **Production de facto standard** — most proven track record
 
-### SGLang を選ぶ場合
-- **エージェントワークロード** — システムプロンプト/ツール定義が長い
-- **RAGパイプライン** — 共有コンテキストが多い
-- **構造化出力** — JSON Schema/regex制約付き生成
-- **RLトレーニング** — フロンティアモデルのrollout backend
-- **prefill-decode分離** — 高度なスケーリング
+### When to Choose SGLang
+- **Agent workloads** — long system prompts/tool definitions
+- **RAG pipelines** — lots of shared context
+- **Structured output** — JSON Schema/regex constrained generation
+- **RL training** — frontier model rollout backend
+- **Prefill-decode separation** — advanced scaling
 
-## 最新の最適化技術
+## Latest Optimization Techniques
 
 ### Speculative Checkpointing (llama.cpp, Apr 2026)
-- VRAM使用量を最大40%削減
-- トークンスループットを最大20%向上
-- 推論中のメモリ状態管理を根本的に再設計
+- Up to 40% VRAM reduction
+- Up to 20% token throughput improvement
+- Fundamentally redesigned inference memory state management
 
 ### RadixAttention (SGLang)
-- リクエスト間で共通プレフィックスをツリー型KVキャッシュとして共有
-- エージェントループで3-5倍のスループット向上
-- シシステムプロンプト、ツール定義、few-shot例を1回計算して再利用
+- Sharing common prefixes across requests as tree-structured KV cache
+- 3-5x throughput improvement in agent loops
+- Compute system prompts, tool definitions, and few-shot examples once and reuse
 
 ### PagedAttention (vLLM)
-- 仮想メモリのページング概念をKVキャッシュ管理に応用
-- メモリの断片化を解消し、スループットを最大化
+- Applying virtual memory paging concepts to KV cache management
+- Eliminating memory fragmentation, maximizing throughput
 - 24x throughput vs. HuggingFace Transformers (claim)
 
 ## The Inference Inflection (April 2026)
@@ -125,19 +125,19 @@ The Inference Inflection reframes the landscape:
 Georgi Gerganov:
 > "Now that 90% of the code worldwide is being written by AI agents, I predict that within 3-6 months, 90% of all AI agents will be running locally with llama.cpp 😄"
 
-## 業界統合動向
+## Industry Consolidation Trends
 
-| 日付 | イベント | 影響 |
+| Date | Event | Impact |
 |------|---------|------|
-| 2025-03 | SGLang → PyTorch エコシステム入り | フレームワークの公式サポート |
-| 2026-02 | llama.cpp → Hugging Face 入社 | モデル配布層と推論層の統合 |
-| 2026-04 | Speculative Checkpointing マージ | ローカル推論の性能大幅向上 |
+| 2025-03 | SGLang joins PyTorch ecosystem | Official framework support |
+| 2026-02 | llama.cpp joins Hugging Face | Model distribution and inference layer integration |
+| 2026-04 | Speculative Checkpointing merged | Significant local inference performance improvement |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/inference/llama-cpp]] — llama.cpp詳細
-- [[concepts/inference/vllm]] — vLLM詳細
-- [[concepts/inference/sglang]] — SGLang詳細
-- [[concepts/gguf-quantization]] — 量子化フォーマット
-- [[concepts/local-llm]] — ローカルLLMエコシステム
-- [[concepts/inference-speed-development]] — 推論速度最適化
+- [[concepts/inference/llama-cpp]] — llama.cpp details
+- [[concepts/inference/vllm]] — vLLM details
+- [[concepts/inference/sglang]] — SGLang details
+- [[concepts/gguf-quantization]] — Quantization format
+- [[concepts/local-llm]] — Local LLM ecosystem
+- [[concepts/inference-speed-development]] — Inference speed optimization

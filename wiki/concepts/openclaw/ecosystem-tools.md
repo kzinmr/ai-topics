@@ -24,75 +24,75 @@ sources:
 
 # OpenClaw Ecosystem Tools
 
-Peter Steinberger（@steipete）が開発した**MCP-first開発者ツールエコシステム**。OpenClawを中核とし、複数のCLI/MCPサーバーが相互連携する構造。
+An **MCP-first developer tool ecosystem** built by Peter Steinberger (@steipete). OpenClaw at its core, with multiple CLI/MCP servers working together in an interconnected structure.
 
-## ツール一覧
+## Tool List
 
-### コアフレームワーク
+### Core Frameworks
 
-| ツール | 説明 | Stars | URL |
+| Tool | Description | Stars | URL |
 |--------|------|-------|-----|
-| **OpenClaw** | パーソナルAIエージェントフレームワーク。Telegram/Discord統合、常駐型エージェント | 135k+ instances | github.com/steipete/openclaw |
-| **NemoClaw** | NVIDIAのエンタープライズ版OpenClawラッパー（OpenShell sandbox, Landlock, seccomp） | — | github.com/NVIDIA/OpenClaw |
+| **OpenClaw** | Personal AI agent framework. Telegram/Discord integration, resident agent | 135k+ instances | github.com/steipete/openclaw |
+| **NemoClaw** | NVIDIA's enterprise OpenClaw wrapper (OpenShell sandbox, Landlock, seccomp) | — | github.com/NVIDIA/OpenClaw |
 
-### MCPサーバー
+### MCP Servers
 
-| ツール | 説明 | Stars |
+| Tool | Description | Stars |
 |--------|------|-------|
-| **Peekaboo** | macOS CLI + MCPサーバー。AIエージェント用のスクリーンショット取得 | 3.1k |
-| **mcporter** | MCPをTypeScriptで呼び出し、CLIとしてパッケージ化 | 3.8k |
+| **Peekaboo** | macOS CLI + MCP server. Screenshot capture for AI agents | 3.1k |
+| **mcporter** | Call MCP from TypeScript, packaged as CLI | 3.8k |
 | **gogcli** | Google Suite CLI（Gmail, GCal, GDrive, Google Contacts） | 6.7k |
-| **Terminator MCP** | 「I'll be back... with your terminal output!」ターミナル出力をエージェントに返す | — |
+| **Terminator MCP** | "I'll be back... with your terminal output!" Returns terminal output to agents | — |
 
-### 開発者ユーティリティ
+### Developer Utilities
 
-| ツール | 説明 | Stars |
+| Tool | Description | Stars |
 |--------|------|-------|
-| **VibeTunnel** (vt.sh) | 任意のブラウザをターミナル化。リモートからエージェント操作 | — |
-| **CodexBar** | OpenAI Codex / Claude Codeの使用統計（ログイン不要） | 9.9k |
-| **agent-rules** | Claude Code / Cursor用のルールとナレッジベース | 5.7k |
-| **tokentally** | LLMトークン + コスト計算用軽量ライブラリ | — |
-| **whatmodelispeterusing.com** | Steinbergerが現在使用しているモデルの追跡ページ | — |
+| **VibeTunnel** (vt.sh) | Turn any browser into a terminal. Remote agent control | — |
+| **CodexBar** | OpenAI Codex / Claude Code usage stats (no login required) | 9.9k |
+| **agent-rules** | Rules and knowledge base for Claude Code / Cursor | 5.7k |
+| **tokentally** | Lightweight library for LLM token + cost calculation | — |
+| **whatmodelispeterusing.com** | Tracks which model Steinberger is currently using | — |
 
-### レガシー
+### Legacy
 
-| ツール | 説明 | Stars |
+| Tool | Description | Stars |
 |--------|------|-------|
-| **Aspects** | Objective-C / Swift用のAOP（Aspect-Oriented Programming）ライブラリ | 8.4k |
-| **InterposeKit** | モダンSwiftメソッドスウィズリングライブラリ | — |
-| **PSPDFKit** | モバイルPDF SDK（Apple内部で使用、1B+デバイスにデプロイ） | — |
+| **Aspects** | AOP (Aspect-Oriented Programming) library for Objective-C / Swift | 8.4k |
+| **InterposeKit** | Modern Swift method swizzling library | — |
+| **PSPDFKit** | Mobile PDF SDK (used inside Apple, deployed to 1B+ devices) | — |
 
-## アーキテクチャ原則
+## Architecture Principles
 
 ### MCP-First Design
-Steinbergerのエコシステムは**Model Context Protocol (MCP)**を中心に設計されている：
-- 各ツールは独立したMCPサーバーとして動作
-- OpenClawがこれらのMCPサーバーを統合
-- CLI経由でも直接利用可能（mcporterでパッケージ化）
+Steinberger's ecosystem is designed around **Model Context Protocol (MCP)**:
+- Each tool operates as an independent MCP server
+- OpenClaw integrates these MCP servers
+- Also usable directly via CLI (packaged through mcporter)
 
 ### Composable Tools
 > "You don't even need to use OpenClaw to benefit from OpenClaw — the patterns will show up in everything downstream for years." — elvis
 
-個々のツールはOpenClawに依存せずに利用可能。例：
-- Peekaboo単体でスクリーンショットMCPとして使用
-- gogcli単体でGoogle Suite CLIとして使用
-- CodexBar単体で使用統計の可視化
+Individual tools are usable without depending on OpenClaw. Examples:
+- Peekaboo standalone as a screenshot MCP
+- gogcli standalone as a Google Suite CLI
+- CodexBar standalone for usage visualization
 
 ### Login-Free Philosophy
-CodexBarやVibeTunnelなど、**ログイン不要**で使えるツールを優先。エージェントが自律的に動作する上で、認証フローはボトルネックになる。
+Tools that require **no login** (CodexBar, VibeTunnel, etc.) are prioritized. Authentication flows become bottlenecks when agents operate autonomously.
 
-## ClawHubマーケットプレイス
+## ClawHub Marketplace
 
-OpenClawのスキル拡張は**ClawHub**を通じて配布される：
-- 新しいスキルはまずClawHubに提出
-- コアへの追加は「製品またはセキュリティ上の強い理由」が必要
-- ユーザーは必要に応じてインストール
-- Five-Tier Skill Precedenceモデルに従ってロード
+OpenClaw skill extensions are distributed through **ClawHub**:
+- New skills are first submitted to ClawHub
+- Adding to core requires "strong product or security justification"
+- Users install as needed
+- Loaded according to the Five-Tier Skill Precedence model
 
-## 関連
+## Related Pages
 
-- [[concepts/openclaw]] — OpenClawコンセプト集約
-- [[concepts/openclaw/five-tier-precedence]] — スキル優先度モデル
-- [[entities/peter-steinberger]] — 開発者
--  — Model Context Protocol- [[entities/nvidia-nemoclaw]] — NVIDIAエンタープライズ版
-- [[concepts/local-first-software]] — ローカルファーストソフトウェア運動
+- [[concepts/openclaw]] — OpenClaw concept aggregation
+- [[concepts/openclaw/five-tier-precedence]] — Skill priority model
+- [[entities/peter-steinberger]] — Developer
+-  — Model Context Protocol- [[entities/nvidia-nemoclaw]] — NVIDIA enterprise edition
+- [[concepts/local-first-software]] — Local-first software movement

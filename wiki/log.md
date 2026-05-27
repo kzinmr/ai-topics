@@ -393,7 +393,7 @@
 ## [2026-05-26] manual | Ingest SkillOpt paper (arXiv:2605.23904)
 
 ### Pages Created
-- [[concepts/skillopt]] — SkillOpt (Microsoft/多大学, May 2026): text-space skill optimizer with deep-learning training discipline. Validation gates, learning rates, momentum for skill documents. Best-or-tied on all 52 cells. +23.5 pts over no-skill. Outperforms GEPA.
+- [[concepts/skillopt]] — SkillOpt (Microsoft/multi-university, May 2026): text-space skill optimizer with deep-learning training discipline. Validation gates, learning rates, momentum for skill documents. Best-or-tied on all 52 cells. +23.5 pts over no-skill. Outperforms GEPA.
 
 ### Pages Enriched
 - [[concepts/gepa]] — Added SkillOpt reference in See Also, bumped updated date
@@ -496,18 +496,18 @@ Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lin
 ## [2026-05-25] x-bookmarks-ingest | Shannon Scaling Law curation + Claude Code 7-Agent Software Factory
 
 ### Bookmark 1: @gm8xx8 — Shannon Scaling Law
-- **Raw記事保存**: `raw/articles/2026-05-25_gm8xx8_shannon-scaling-law-tweet.md` — 情報理論（Shannonの雑音チャネル）を用いてLLM scalingの非単調性をモデル化するフレームワーク。モデルサイズ=帯域幅、トークン=信号、摂動=雑音。
-- **更新**: `entities/gm8xx8.md` — Recent Curation (May 2026) セクションに Shannon Scaling Law ツイートを追加。arXiv:2410.01243（LDPC符号を用いた情報理論的スケーリング則）への参照付き。
+- **Raw article saved**: `raw/articles/2026-05-25_gm8xx8_shannon-scaling-law-tweet.md` — Framework modeling LLM scaling non-monotonicity using information theory (Shannon's noisy channel). Model size = bandwidth, tokens = signal, perturbation = noise.
+- **Updated**: `entities/gm8xx8.md` — Added Shannon Scaling Law tweet to Recent Curation (May 2026) section. With reference to arXiv:2410.01243 (information-theoretic scaling law using LDPC codes).
 
 ### Bookmark 2: @sairahul1 — How to Build a Software Factory with Claude Code
-- **Raw記事保存**: `raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents.md` — Claude Code で7つの特化エージェントによるソフトウェアファクトリーを構築する実践ガイド。vibe coding の限界を克服する構造化パイプライン。
-- **新規ページ**: `entities/sairahul1.md` — Rahul (@sairahul1): AI engineer（Pixxel, Hyderabad）。Claude Code 7-agent Software Factory の考案者。Golang, Django, AWS。
-- **概念ページ強化**: `concepts/dark-factory-software-factory.md` — @sairahul1's 7-Agent Factory ケーススタディ追加。7エージェント構成表、パイプライン設計の要点（3 human checkpoints, CLAUDE.md, context isolation）、StrongDMとの比較表。
-- **エンティティ強化**: `entities/claude-code.md` — Usage & Workflows に 7-Agent Software Factory Workflow サブセクション追加。
+- **Raw article saved**: `raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents.md` — Practical guide to building a software factory with 7 specialized agents in Claude Code. A structured pipeline overcoming vibe coding limitations.
+- **New page**: `entities/sairahul1.md` — Rahul (@sairahul1): AI engineer (Pixxel, Hyderabad). Creator of Claude Code 7-agent Software Factory.Golang, Django, AWS。
+- **Concept page strengthened**: `concepts/dark-factory-software-factory.md` — Added @sairahul1's 7-Agent Factory case study. 7-agent configuration table, pipeline design key points (3 human checkpoints, CLAUDE.md, context isolation), comparison table with StrongDM.
+- **Entity strengthened**: `entities/claude-code.md` — Added 7-Agent Software Factory Workflow subsection to Usage & Workflows。
 
-### Index更新
-- `entities/_index.md`: sairahul1 エントリ追加（ryan-lopopolo と sam-altman の間）
-- `wiki/index.md`: sairahul1 エントリ追加、Total pages: 2063→2064
+### Index updated
+- `entities/_index.md`: sairahul1 Entry added (between ryan-lopopolo and sam-altman)
+- `wiki/index.md`: sairahul1 Entry added、Total pages: 2063→2064
 
 ---
 
@@ -604,13 +604,13 @@ Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lin
 ## [2026-05-25] ingest | arXiv 2602.05400 — OPUS: Optimizer-induced data selection for LLM pre-training
 
 ### Pages Created
-- concepts/opus-data-selection.md: OPUS — 動的かつ最適化器認識型のデータ選択フレームワーク。AdamW/Muonのupdate spaceでスコアリング。Ghost+CountSketchで4.7%オーバーヘッド。GPT-2 30Bトークンで200Bランダム超え。Qwen3-8B継続事前学習で6倍のデータ効率。
+- concepts/opus-data-selection.md: OPUS — dynamic and optimizer-aware data selection framework. Scores in AdamW/Muon update space. 4.7% overhead with Ghost+CountSketch. Surpasses 200B random tokens with GPT-2 30B tokens. 6x data efficiency for Qwen3-8B continued pretraining.
 
 ### Pages Updated
-- concepts/fineweb.md: スタブ→充実化。15Tトークンデータセットの概要、キュレーションパイプライン、FineWeb 2多言語対応、OPUSのベンチマークとしての役割を追加。
+- concepts/fineweb.md: Stub → enriched. Added 15T token dataset overview, curation pipeline, FineWeb 2 multilingual support, OPUS benchmark role.
 
 ### Raw Sources Added
-- raw/papers/2026-02-05_2602.05400_opus-data-selection.md: arXiv論文全文サマリー
+- raw/papers/2026-02-05_2602.05400_opus-data-selection.md: Full arXiv paper summary
 
 ## [2026-05-25] active-crawl | Tencent Hy3, Centaur, AutoTTS, enrich Qwen3.7-Max & Sapient
 
@@ -662,7 +662,7 @@ Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bo
 ## [2026-05-25] wiki | Enriched deepseek entity with 10T USD grand strategy + raw article saved
 
 ### Pages
-- `entities/deepseek.md` — Enriched "Strategy" section with @bookwormengr's "10 trillion USD grand strategy" thesis (May 2026): KV cache economics (YMTC/NAND market creation), memory-compute trade-offs (LPDDR + Engram / CXMT), hardware enablement matrix (MLA→CSA→HSA→TileLang), equity-collaboration model (OpenAI-AMD型), contrarian nature table, RL Post-Training + RSI long game. Strategy section expanded from 5 lines to ~90 lines.
+- `entities/deepseek.md` — Enriched "Strategy" section with @bookwormengr's "10 trillion USD grand strategy" thesis (May 2026): KV cache economics (YMTC/NAND market creation), memory-compute trade-offs (LPDDR + Engram / CXMT), hardware enablement matrix (MLA→CSA→HSA→TileLang), equity-collaboration model (OpenAI-AMD style), contrarian nature table, RL Post-Training + RSI long game. Strategy section expanded from 5 lines to ~90 lines.
 
 ### Raw articles
 - `raw/articles/2026-05-22-deepseek-strategy.md` — @bookwormengr X Article. Full strategic analysis covering DeepSeek V4 KV cache compression (5.48GB vs Qwen3 89GB at 1M ctx), Chinese semiconductor ecosystem enablement (YMTC, CXMT, Moore Threads, MetaX, Biren), Engram memory-compute substitution, equity model thesis.
@@ -695,7 +695,7 @@ Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bo
 - `entities/yan5xu.md` — New entity. AI researcher (ex-Manus AI, ex-Monica), author of agent-friendly CLI design analysis. ~15.7K X followers.
 
 ### Raw articles
-- `raw/articles/2026-05-23_yan5xu_agent-friendly-cli-design.md` — X Article: "从 github cli 学习如何设计 agent friendly cli"
+- `raw/articles/2026-05-23_yan5xu_agent-friendly-cli-design.md` — X Article: "Learning how to design agent-friendly CLI from GitHub CLI"
 
 ### Index updates
 - `index.md` — Added concept entry + entity entry
@@ -703,65 +703,65 @@ Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bo
 
 ---
 
-## [2026-05-25] blog | Agent Control Plane——13コンポーネントの技術アーキテクチャ
+## [2026-05-25] blog | Agent Control Plane — 13-Component Technical Architecture
 
 ### Blog post
-- `blog/2026-05-25_hermes_agent-control-plane-technical-architecture.md` — 13コアコンポーネントを3層（統治・実行・観測）に分類し、各コンポーネントをwikiプリミティブと対応づけ。A2A Signed Agent Cards、Ramp OBOU、Yale CELI 3層ガードレール、Palantir Decision Lineage、Browser Use Zero Secrets等。Google/ServiceNow/Workday/Palantirの4社実装比較表と充足度評価表。
+- `blog/2026-05-25_hermes_agent-control-plane-technical-architecture.md` — Classified 13 core components into 3 layers (governance, execution, observation), mapped each to wiki primitives. A2A Signed Agent Cards, Ramp OBOU, Yale CELI 3-layer guardrails, Palantir Decision Lineage, Browser Use Zero Secrets, etc. 4-company implementation comparison table and coverage assessment for Google/ServiceNow/Workday/Palantir.
 
 ---
 
-## [2026-05-25] blog | Tenant Agent Pack——9つの技術レイヤーで読み解く
+## [2026-05-25] blog | Tenant Agent Pack — Decoding Through 9 Technology Layers
 
 ### Blog post
-- `blog/2026-05-25_hermes_tenant-agent-pack-technical-architecture.md` — Tenant Agent Packを支える9技術レイヤー（メモリ分離・スキル・MCP・ポリシー・評価・ランタイム・サンドボックス・コンテキスト工学・可観測性）の詳細分析。wiki内の既存プリミティブとの対応づけと、不足領域（Pack Loader、Versioning、Template、Validation、Migration）の特定。
+- `blog/2026-05-25_hermes_tenant-agent-pack-technical-architecture.md` — Detailed analysis of 9 technology layers supporting Tenant Agent Pack (memory isolation, skills, MCP, policy, evaluation, runtime, sandbox, context engineering, observability). Mapping to existing wiki primitives and identifying gaps (Pack Loader, Versioning, Template, Validation, Migration).
 
 ---
 
 ## [2026-05-25] ingest | OpenAI Cookbook: Macro Evals for Agentic Systems
 
 ### Created
-- `concepts/macro-evals-for-agentic-systems.md` — マルチエージェントシステムの集団レベル行動パターン発見手法。Lower-level evals → BERTopicクラスタリング → AgentTrace診断。OpenAI × Slalom。
-- `entities/promptfoo.md` — オープンソースLLM/エージェント評価フレームワーク（stub）
-- `entities/slalom.md` — グローバルビジネス・テクノロジーコンサルティング企業（stub）
+- `concepts/macro-evals-for-agentic-systems.md` — Collective-level behavior pattern discovery method for multi-agent systems. Lower-level evals → BERTopic clustering → AgentTrace diagnostics. OpenAI × Slalom.
+- `entities/promptfoo.md` — Open-source LLM/agent evaluation framework (stub)
+- `entities/slalom.md` — Global business & technology consulting firm (stub)
 
 ### Enriched
-- `concepts/evals-for-ai-agents.md` — macro-evals-for-agentic-systems へのクロスリファレンス追加
+- `concepts/evals-for-ai-agents.md` — Added cross-reference to macro-evals-for-agentic-systems
 
 ### Raw
 - `raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md`
 
 ### Tags
-- SCHEMA.md: `trace-analysis`, `bertopic`, `clustering` (Techniques), `promptfoo` (Products) 追加
+- SCHEMA.md: Added `trace-analysis`, `bertopic`, `clustering` (Techniques), `promptfoo` (Products)
 
 ---
 
-## [2026-05-25] blog | FDEかSaaSか、ではない——AI Agent時代に最も価値のあるポジションはその境界にある
+## [2026-05-25] blog | Not FDE vs SaaS — The Most Valuable Position in the AI Agent Era Is at the Boundary
 
 ### Blog post
-- `blog/2026-05-25_hermes_fde-saas-boundary-position.md` — SaaSのAgent運用OSへの構造転換、Agent Control Plane、Tenant Agent Pack、FDE-SaaS境界ポジションのキャリア戦略。外部分析とwiki知識の総合。
+- `blog/2026-05-25_hermes_fde-saas-boundary-position.md` — SaaS structural transformation to Agent operating OS, Agent Control Plane, Tenant Agent Pack, career strategy for FDE-SaaS boundary positions. Synthesis of external analysis and wiki knowledge.
 
 ---
 
-## [2026-05-25] ingest | SaaS-FDE-AI Agent時代の構造分析（外部分析取り込み）
+## [2026-05-25] ingest | Structural Analysis of the SaaS-FDE-AI Agent Era (External Analysis Ingested)
 
 ### Created
-- `concepts/saas-agent-era.md` — AI Agent時代のSaaS構造転換。機能配布プラットフォームからAgent運用OSへのレイヤー変化、危険なSaaSと強いSaaSの分類
-- `concepts/agent-control-plane.md` — Agent統治・運用インフラ。Agent Registry、Identity、権限、監査、評価を含む13コアコンポーネント
-- `concepts/tenant-agent-pack.md` — コアコード分岐せずに顧客別Agent動作を運用アーティファクトで管理する設計パターン
-- `concepts/outcome-based-pricing.md` — AI Agent向け成果課金モデルへの転換
+- `concepts/saas-agent-era.md` — SaaS structural transformation in the AI Agent era. Layer shift from feature distribution platform to Agent operating OS, classification of dangerous vs strong SaaS.
+- `concepts/agent-control-plane.md` — Agent governance and operations infrastructure. 13 core components including Agent Registry, Identity, permissions, audit, and evaluation.
+- `concepts/tenant-agent-pack.md` — Design pattern for managing customer-specific Agent behavior via operational artifacts without branching core code.
+- `concepts/outcome-based-pricing.md` — Shift to outcome-based pricing models for AI Agents.
 
 ### Enriched
-- `concepts/forward-deployed-engineering.md` — FDE-SaaS合成セクション追加（境界ポジションのキャリア戦略）
-- `entities/openai-deployment-company.md` — FDE実務セクション追加（東京FDEポジション詳細）
-- `entities/anthropic.md` — Applied AI / FDEサービス戦略セクション追加
-- `entities/google.md` — Gemini Enterprise Agent Platformセクション追加
-- `entities/servicenow.md` — AI Agent Orchestrator情報追加
+- `concepts/forward-deployed-engineering.md` — Added FDE-SaaS synthesis section (career strategy for boundary positions)
+- `entities/openai-deployment-company.md` — Added FDE practice section (Tokyo FDE position details)
+- `entities/anthropic.md` — Added Applied AI / FDE service strategy section
+- `entities/google.md` — Added Gemini Enterprise Agent Platform section
+- `entities/servicenow.md` — Added AI Agent Orchestrator information
 
 ### SCHEMA additions
 - Tags: `agent-platform`, `pricing`, `business-model`, `agent-infrastructure`, `control-plane`, `multi-tenancy`, `audit`
 
 ### Source
-- `raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md`（19の情報源参照を含む外部分析）
+- `raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md`（External analysis with 19 source references）
 
 ---
 
@@ -783,19 +783,19 @@ Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bo
 - **Agent-Native Architecture**: 5 principles for building software where agents are first-class users, not afterthoughts. Parity (human+agent equality), Granularity (smaller units), Composability (agent-to-agent APIs), Emergent Capability (tool combinations), Improvement Over Time (agent feedback loops).
 - **OpenClaw Connection**: Every's architecture directly influenced OpenClaw's filesystem-as-memory design, which in turn influenced Hermes Agent's .hermes/ directory patterns.
 
-## [2026-05-27] SaaSの未来とAI Agent開発者のキャリア戦略
+## [2026-05-27] Future of SaaS and AI Agent Developer Career Strategy
 
 ### Created
-- `queries/saas-future-and-agent-developer-career.md` — SaaS vs FDE vs パーソナルAI Agentの3層トレンド分析とキャリア戦略提言。Harness Engineering、Service-as-Software、Agent-Nativeプロダクト開発へのシフトを定義。
+- `queries/saas-future-and-agent-developer-career.md` — 3-layer trend analysis (SaaS vs FDE vs Personal AI Agent) and career strategy recommendations. Defines shift to Harness Engineering, Service-as-Software, and Agent-Native product development.
 
 ### Updated
-- `wiki/index.md` — Queriesセクションに新ページ追加、エントリー数更新
+- `wiki/index.md` — Queries section: new page added, entry count updated
 
 ### Key Insights
-- **3つの同時進行トレンド**: パーソナルHarnessの水平吸収、FDEモデルの垂直深化、SaaSフリーミアムの崩壊
-- **第三の道**: Agent-Nativeプロダクト開発者 — Harness Engineeringを中核能力とし、Agent向けAPI/MCPツール/状態管理を構築
-- **マネタイズの再定義**: シート課金 → 成果報酬（Service-as-Software）
-- **競争優位の源泉**: 機能数 → Harness品質・Evals・文脈蓄積
+- **3 concurrent trends**: horizontal absorption of personal Harness, vertical deepening of FDE model, collapse of SaaS freemium
+- **Third path**: Agent-Native product developer — Harness Engineering as core competency, building Agent-facing API/MCP tools and state management
+- **Monetization redefinition**: Per-seat pricing → outcome-based (Service-as-Software)
+- **Source of competitive advantage**: Feature count → Harness quality, Evals, context accumulation
 
 ### Created
 - `raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md` — Full transcript (94 min podcast, 2,806 segments)
@@ -868,20 +868,20 @@ Meta-Harness is the convergence of three angles: academic search over harness co
 ### Research Matrix Complete
 
 ```
-Palantir研究の9軸が揃った:
+Palantir research: all 9 axes covered:
 
-技術アーキテクチャ系 (5):
+Technical Architecture (5):
   1. Ontology        → concepts/decision-centric-architecture (+Security section)
   2. Ontology Memory  → concepts/agent-ontology (+Global Branching, Embedded Ontology)
   3. AI FDE           → concepts/palantir-ai-fde (data integration engine + agent interface)
   4. Scenario Sim     → concepts/scenario-based-simulation (sandboxed decision staging)
   5. Platform Family  → comparisons/palantir-platform-family (Gotham→Foundry→Apollo→AIP)
 
-製品・競争戦略系 (2):
+Product & Competitive Strategy (2):
   6. Competitors      → comparisons/palantir-vs-competitors (vs Databricks/Snowflake/Fabric/C3.ai)
   7. Alex Karp        → entities/palantir##alex-karps-philosophy (Critical Theory + Defense Tech)
 
-AIセキュリティ・運用系 (2):
+AI Security & Operations (2):
   8. Security         → concepts/decision-centric-architecture##decision-centric-security
   9. AgentCamps       → concepts/enterprise-agents##palantir-agentcamps--aip-bootcamps
 ```
@@ -1027,7 +1027,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 
 ### Index Updates
 - Updated `[[entities/george-hotz]]` description to include AI safety analysis
-- Updated `[[entities/merge-dev]]` description from "AIエージェントテスト統合プラットフォーム" to MCP-focused description
+- Updated `[[entities/merge-dev]]` description from "AI agent testing integration platform" to MCP-focused description
 - Updated `[[entities/codex]]` description with Gartner MQ 2026 recognition + Virgin Atlantic metrics
 - Header counts unchanged (merge-dev already existed, was rewritten)
 
@@ -1263,15 +1263,15 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 ## [2026-05-22] ingest | Nightly dreaming consolidation — Agent Execution Tax + 6 enrichments
 
 ### Pages Created
-- [[concepts/agent-execution-tax]] — Fireworks AI概念: 720ブラウザエージェント実行から発見した構造化出力信頼性ボトルネック。Execution Tax定義、Reliability-Adjusted Accuracy、Cost Per Successful Task、Tool-Use Taxとの関係。
+- [[concepts/agent-execution-tax]] — Fireworks AI concept: structured output reliability bottleneck discovered from 720 browser agent executions. Execution Tax definition, Reliability-Adjusted Accuracy, Cost Per Successful Task, relationship with Tool-Use Tax.
 
 ### Pages Enriched
-- [[entities/nvidia]] — Nemotron-Labs-Diffusion tri-mode model (AR+拡散+自己投機, 3B/8B/14B, Ministral3ベース)
-- [[entities/ed-zitron]] — Anthropic's 'Profitability' Swindle記事追加。SpaceX割引・収益矛盾・前受金仮説。
-- [[entities/anthropic]] — Ed Zitronの収益性批判セクション追加。SpaceX Colossus discount・ARR矛盾・$45B/年見積もり。
-- [[entities/harvey]] — Contract Intelligence製品追加。契約分析・条項抽出・リスク評価のAIエージェント。
-- [[entities/elevenlabs]] — ElevenReader 20万プレミアムオーディオブック追加（reference）。
-- [[entities/glean]] — Health Agents multi-agent健康モニタリングプラットフォーム追加（reference）。
+- [[entities/nvidia]] — Nemotron-Labs-Diffusion tri-mode model (AR+diffusion+self-speculation, 3B/8B/14B, Ministral3-based)
+- [[entities/ed-zitron]] — Added Anthropic's 'Profitability' Swindle article. SpaceX discount, revenue contradiction, prepayment hypothesis.
+- [[entities/anthropic]] — Added Ed Zitron's profitability critique section. SpaceX Colossus discount, ARR contradiction, $45B/year estimate.
+- [[entities/harvey]] — Added Contract Intelligence product. AI agent for contract analysis, clause extraction, risk assessment.
+- [[entities/elevenlabs]] — Added ElevenReader 200K premium audiobooks (reference).
+- [[entities/glean]] — Added Health Agents multi-agent health monitoring platform (reference).
 
 ### Sources
 - Fireworks AI Blog: Agent Execution Tax (May 20, 2026)
@@ -1379,15 +1379,15 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 
 ## [2026-05-22] enrich | comparisons/hermes-vs-openclaw-architecture (Control Plane Depth analysis)
 
-- **Source**: kzinmr analysis — ACPとチャネル数を超えた OpenClaw orchestrator 優位性
-- **comparisons/hermes-vs-openclaw-architecture.md**: Added Control Plane Depth section（6軸比較表）covering:
-  - セッション可視性（Gateway as Single Source of Truth vs AIAgent分散）
-  - スケジューリング決定性（jobs.json vs 自然言語cron）
-  - 外部イベント駆動（Webhook + Gmail Pub/Sub vs なし）
-  - 子エージェントライフサイクル（spawn/steer/cancel/close/status vs 結果待ちのみ）
-  - 実行レーン分離（Background lane vs 親コンテキスト占有）
-  - デバッグ決定性（5段階優先順位 + grep vs 追跡困難）
-  - 本質: Gateway は単なるメッセージ中継所ではなく「制御の単一真実源」
+- **Source**: kzinmr analysis — OpenClaw orchestrator advantage beyond ACP and channel count
+- **comparisons/hermes-vs-openclaw-architecture.md**: Added Control Plane Depth section (6-axis comparison table)covering:
+  - Session visibility (Gateway as Single Source of Truth vs AIAgent distributed)
+  - Scheduling determinism (jobs.json vs natural language cron)
+  - External event-driven (Webhook + Gmail Pub/Sub vs none)
+  - Child agent lifecycle (spawn/steer/cancel/close/status vs await-result only)
+  - Execution lane isolation (Background lane vs parent context occupation)
+  - Debugging determinism (5-level priority + grep vs difficult to trace)
+  - Essence: Gateway is not just a message relay but a "single source of truth for control"
 - **Updated sources + date** (2026-05-22)
 - **index.md**: Updated entry
 
@@ -1444,7 +1444,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Source**: DeepLearning.AI newsletter — "Hermes vs. OpenClaw, Cybersecurity Alarms Ring" (May 22, 2026)
 - **Raw article**: `raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md`
 - **comparisons/hermes-vs-openclaw.md**: Added Traction Signal (OpenRouter leaderboard overtake), Agentic Loop section (5-step inner loop), Caveats & Tradeoffs (token efficiency, skill explosion, maturity). Updated sources + date.
-- **entities/hermes-agent.md**: Added Curator システム (90日未使用スキル自動アーカイブ + LLM判定), Agentic Loop (5-step prompt→LLM→dispatch→loop), Token効率 row in OpenClaw比較表. Updated sources + date.
+- **entities/hermes-agent.md**: Added Curator system (90-day unused skill auto-archive + LLM judgment), Agentic Loop (5-step prompt→LLM→dispatch→loop), Token efficiency row in OpenClaw comparison table. Updated sources + date.
 - **index.md**: Updated both entries (hermes-agent: Curator + Agentic Loop; hermes-vs-openclaw: expanded description)
 
 ---
@@ -1589,16 +1589,16 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Updated entity**: [[entities/linear]] — Added comprehensive Performance Architecture section covering: Local-First design philosophy (IndexedDB + MobX), Three Pillars of Sync Engine, Frontend optimizations (Rolldown bundler, esnext, per-package chunking, module preloading, Service Worker precaching, Canvas renderer, virtual scrolling), Render-First-Authenticate-Second pattern, Keyboard-First UX, Backend architecture (GraphQL, delta sync, WebSocket, PostgreSQL, idempotent mutations). New tags: performance, local-first.
 - **New concept**: [[concepts/local-first-architecture]] — Comprehensive concept page covering local-first architecture principles, Linear's implementation (architecture stack diagram, optimistic updates pattern, data-level code splitting, granular re-renders), benefits, challenges, related technologies (CRDTs, RxDB, ElectricSQL, Replicache), and case studies (Linear, Notion, Obsidian, Figma).
 
-## [2026-05-21] blog | AgenticなQuery UnderstandingとContent Understandingで非構造データDWH分析の汎用性・カスタム性を向上させるアーキテクチャ戦略
+## [2026-05-21] blog | Architecture Strategy to Improve Versatility and Customization of Unstructured Data DWH Analytics with Agentic Query Understanding and Content Understanding
 - **Blog post**: [[blog/2026-05-21_hermes_agentic-query-content-understanding-dwh]]
-- **Summary**: kzinmrの依頼により、通話データ+metadataのような非構造データ中心のDWH分析オペレーションに対して、Agentic QU/CUアーキテクチャを提案するコンセプトブログ。3層のエージェント（Content Understanding Agents / Query Understanding Agent / Execution & Verification Agents）+ Harness層（Two-Loop, PMCL, Context Engineering）の構成。Phase 1-4の段階的導入ロードマップを含む。
+- **Summary**: A concept blog requested by kzinmr, proposing an Agentic QU/CU architecture for unstructured-data-centric DWH analytics operations (call data + metadata). 3-layer agents (Content Understanding / Query Understanding / Execution & Verification) + Harness layer (Two-Loop, PMCL, Context Engineering). Includes Phase 1-4 gradual deployment roadmap.
 - **Sources**: concepts/query-understanding, concepts/content-understanding, concepts/agentic-search, concepts/data-analysis-agents, concepts/poor-mans-continuous-learning, concepts/context-engineering, concepts/agent-architecture-decomposition, concepts/agent-patterns, concepts/agent-runtime
 
 ## [2026-05-21] ingest | Jason Liu "Getting the Most Out of Codex" X Article → entity enrichment
 - **Source**: https://x.com/jxnlco/status/2057153744630890620 (X Article, published 2026-05-20)
 - **Raw article saved**: `raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md`
 - **Updated entity**: [[entities/jason-liu]] — Added "Getting the Most Out of Codex (May 2026)" section with capability catalog table (durable threads, voice input, steering, queuing, $browser/@chrome/@computer, MCP+Connectors, Skills, mobile, thread automations, Goals, side panel, shared memory). Added human-in-the-loop architectural insight. New tags: agent-harness, workflow, human-in-the-loop.
-- **Updated entity**: [[entities/openai-codex]] — Added comprehensive "Codex App: Human-in-the-Loop Capabilities" section (64 lines) covering: 制御モデル (Steering/Queuing/Voice input), リーチレイヤー ($browser/@chrome/@computer tool hierarchy + MCP + Skills), 長時間実行と自律性 (Durable threads/Thread automations/Goals), サイドパネル (4 roles + effective surfaces), 共有メモリ (Obsidian vault + AGENTS.md + Codex Memories + Chronicle), モバイル (Work from Anywhere). New tags: human-in-the-loop, workflow, voice-ai. Added [[entities/jason-liu]] and [[concepts/codex-goal]] to 関連トピック.
+- **Updated entity**: [[entities/openai-codex]] — Added comprehensive "Codex App: Human-in-the-Loop Capabilities" section (64 lines) covering: Control model (Steering/Queuing/Voice input), Reach layers ($browser/@chrome/@computer tool hierarchy + MCP + Skills), Long-running execution and autonomy (Durable threads/Thread automations/Goals), Side panels (4 roles + effective surfaces), Shared memory (Obsidian vault + AGENTS.md + Codex Memories + Chronicle), Mobile (Work from Anywhere). New tags: human-in-the-loop, workflow, voice-ai. Added [[entities/jason-liu]] and [[concepts/codex-goal]] to Related Topics.
 - **Index updated**: Updated descriptions for [[entities/jason-liu]] and [[entities/openai-codex]] with new capabilities.
 
 ## [2026-05-20] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched 2 L1 entities
@@ -1669,77 +1669,77 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Enriched concept pages**: `concepts/harness-engineering.md` (Notion's 5-iteration agent harness, progressive disclosure), `concepts/ai-evals.md` (Notion's three-tier eval framework, MBE role, 30% headroom evals), `concepts/agent-architecture-decomposition.md` (Notion's agent composition via shared databases)
 - **Notion eval insights**: Regression tests (CI) → Launch-quality (80-90%) → Frontier/headroom (30% pass rate); Model Behavior Engineer as distinct role; quality variation across providers (Bedrock vs Azure vs first-party)
 - **Sources**: Latent Space Podcast — Notion's Token Town (Simon Last & Sarah Sachs), Marc Andreessen interview
-## [2026-05-20] update | blog/2026-05-20_hermes_divide-and-conquer-duality.md — ずらした条件付き圧縮の章を追加
-- 新第3章「ずらした条件付き圧縮——素朴な双対モデルの限界」: objective' = compress(context | goal) への定式化修正
-- 残差学習・アドバンテージ関数(GRPO)・能動学習の3つの相同構造で「ずらし」を理論化
-- Anthropicの暗黙的解決（タスク境界＋insufficient判定）の分析と残された3つの設計問題（充足度測定・残余クエリ化・変位粒度）
-- クエリ拡張/推薦との区別として「クエリ変位（displacement）」を提案
-- 結論を「分ける・つなぐ・ずらす」の三層構造に更新、次のフロンティアとしてずらしの設計を位置づけ
+## [2026-05-20] update | blog/2026-05-20_hermes_divide-and-conquer-duality.md — Added shifted conditional compression chapter
+- New Chapter 3 'Shifted Conditional Compression — Limits of the Naive Dual Model': formulation correction to objective' = compress(context | goal)
+- Theorized "shifting" through 3 homologous structures: residual learning, advantage function (GRPO), active learning
+- Analysis of Anthropic's implicit solution (task boundary + insufficient judgment) and 3 remaining design problems (sufficiency measurement, residual querying, displacement granularity)
+- Proposed "query displacement" to distinguish from query expansion/recommendation
+- Updated conclusion to 3-layer structure 'divide, connect, shift', positioning shift design as the next frontier
 
-## [2026-05-20] create | blog/2026-05-20_hermes_divide-and-conquer-duality.md — 分割と双対: マルチエージェント、RLM、IRを貫く構造
-- マルチエージェント（水平分割/MapReduce）とRLM（深さ分割/再帰）の分割統治パターン
-- クエリ-文書双対性から見る Agent-Context 関係: objective↔クエリ, context↔文書, interleaved thinking↔relevance feedback
-- IRの知見がエージェント設計に転用可能である実践的含意
-- 「情報要求と情報充足が同一トークン空間のグラデーションに過ぎない」というLLM時代の根本洞察
+## [2026-05-20] create | blog/2026-05-20_hermes_divide-and-conquer-duality.md — Divide and Conquer Duality: Structure Through Multi-Agent, RLM, and IR
+- Divide-and-conquer patterns: multi-agent (horizontal split/MapReduce) and RLM (depth split/recursion)
+- Agent-Context relation through query-document duality: objective↔query, context↔document, interleaved thinking↔relevance feedback
+- Practical implication: IR insights can be transferred to agent design
+- Fundamental LLM-era insight: "information need and information satisfaction are merely gradients in the same token space"
 
-## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md — Agent-Context双対性 (IRのクエリ-文書双対性との相同)
-- ユーザーの洞察: エージェントと文脈の関係に、IRのクエリ-文書双対性に似た構造がある
-- サブエージェントタスク(objective)↔クエリ、探索結果(context)↔文書、interleaved thinking↔relevance feedback の対応表
-- 「search is compression」を双対性の観点から再解釈: objective→探索→thinking→objective更新 = クエリ→文書→適合FB→クエリ拡張 と同じループ
-- 同じLLMトークン空間上で、クエリと文書が異なる粒度の同一対象として表現される
+## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md — Agent-Context Duality (homologous to IR query-document duality)
+- User insight: the agent-context relationship has a structure similar to IR's query-document duality
+- Mapping table: sub-agent task(objective)↔query, search result(context)↔document, interleaved thinking↔relevance feedback
+- Reinterpreted "search is compression" through duality: objective→search→thinking→objective update = query→document→relevance FB→query expansion, same loop
+- Query and document are expressed as the same object at different granularity within the same LLM token space
 
-## [2026-05-20] create | concepts/agent-operator-patterns.md — Shann HolmbergのHermes Agent運用パターン集
+## [2026-05-20] create | concepts/agent-operator-patterns.md — Shann Holmberg's Hermes Agent Operator pattern collection
 
-### 変更内容
-- `wiki/concepts/agent-operator-patterns.md` 新規作成: Shann Holmberg "How to Become a Hermes Agent Operator" から抽出した6つの運用パターン
-  - Control Room（サイドコントロールプレーン）、Brain Layers（文脈レイヤー化）、Agent Creation Heuristics（新エージェント作成基準）
-  - 4-Level Fleet Operation Model（単一→複数→Orchestrator→完全自動化）
-  - Prototype → Production Methodology（4ステップ）、Agent Ergonomics（運用快適性）
-  - 各パターンのWiki管理システム（27 cron jobs + Hermes単一エージェント）への具体的応用分析を含む
-  - Storage Split（brain/body分離）の原則、Level 2→3移行判断基準
-- `wiki/index.md`: Conceptsセクションに agent-operator-patterns エントリ追加
+### Changes
+- `wiki/concepts/agent-operator-patterns.md` Created: 6 operational patterns extracted from Shann Holmberg's "How to Become a Hermes Agent Operator"
+  - Control Room (side control plane), Brain Layers (context layering), Agent Creation Heuristics (new agent creation criteria)
+  - 4-Level Fleet Operation Model (single → multiple → Orchestrator → full automation)
+  - Prototype → Production Methodology (4 steps), Agent Ergonomics (operational comfort)
+  - Includes concrete application analysis of each pattern to the Wiki management system (27 cron jobs + single Hermes agent)
+  - Storage Split (brain/body separation) principle, Level 2→3 migration criteria
+- `wiki/index.md`: Concepts section: agent-operator-patterns entry added
 - Sources: raw/articles/2026-05-15_shann_hermes-agent-operator.md
 
-## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md + concepts/rlm-recursive-language-models.md — Multi-Agent × RLM 構造的類似パターン
-- ユーザーの洞察: Multi-Agentのタスク水平分割（MapReduce）とRLMの入力深さ分割（再帰）は同一のdivide-and-conquer発想
-- anthropic-multi-agent-research.md に「構造的類似パターン」セクションを追加: 分割対象・分割方向・パターン・制約突破・スケーリング・集約方法・本質の7次元比較表
-- rlm-recursive-language-models.md の Related Concepts に相互参照を追加
-- 両者とも「単一コンテキストウィンドウ制約を分割統治で乗り越える」という根本パターンの異なる現れ
+## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md + concepts/rlm-recursive-language-models.md — Multi-Agent × RLM Structural Similarity Patterns
+- User insight: Multi-Agent's horizontal task split (MapReduce) and RLM's input depth split (recursion) are the same divide-and-conquer idea
+- Added "Structural Similarity Patterns" section to anthropic-multi-agent-research.md: 7-dimension comparison table (split target, split direction, pattern, constraint breakthrough, scaling, aggregation method, essence)
+- Added cross-reference to Related Concepts in rlm-recursive-language-models.md
+- Both are different manifestations of the same fundamental pattern: "overcoming single context window constraints through divide and conquer"
 
-## [2026-05-20] create | concepts/anthropic-multi-agent-research.md — Anthropic Claude Research マルチエージェントシステム
-- Anthropic Engineering Blog (2025-06-13)「How We Built Our Multi-Agent Research System」と Simon Willisonの注釈記事 (2025-06-14) を完全取り込み
-- 新規conceptページ: Orchestrator-Workerパターン、Memory機構、CitationAgent、並列化戦略、Prompt Engineering 8原則、Tool-Testing Agent（40%時間短縮）、token economics（chat比15×）
-- 単一Opus 4を90.2%上回る性能、token使用量が性能分散の80%を説明 などの定量的知見
-- concepts/agent-patterns.md に Orchestrator-Workerパターンを第5のパターンとして追加
-- concepts/agentic-search.md に Anthropicマルチエージェント研究へのクロスリファレンスを追加
-- 生記事: raw/articles/2025-06-13_anthropic_multi-agent-research-system.md, raw/articles/2025-06-14_simonwillison_multi-agent-research-system.md
+## [2026-05-20] create | concepts/anthropic-multi-agent-research.md — Anthropic Claude Research Multi-Agent System
+- Fully ingested Anthropic Engineering Blog (2025-06-13) 'How We Built Our Multi-Agent Research System' and Simon Willison's annotated article (2025-06-14)
+- New concept page: Orchestrator-Worker pattern, Memory mechanism, CitationAgent, parallelization strategy, 8 Prompt Engineering principles, Tool-Testing Agent (40% time reduction), token economics (15× vs chat)
+- Quantitative findings: 90.2% outperformance over single Opus 4, token usage explains 80% of performance variance
+- Added Orchestrator-Worker pattern as 5th pattern to concepts/agent-patterns.md
+- Added cross-reference to Anthropic multi-agent research in concepts/agentic-search.md
+- Raw articles: raw/articles/2025-06-13_anthropic_multi-agent-research-system.md, raw/articles/2025-06-14_simonwillison_multi-agent-research-system.md
 
-## [2026-05-20] create | concepts/context-engineering.md — Anthropic + Lance Martin 結合考察
-- Anthropicの"Effective Context Engineering for AI Agents" (2025-09-29) と Lance Martinの"Context Engineering for Agents" (2025-06-23) および"Agent Design Patterns" (2026-01-09) を統合
-- Anthropicの実装視点（system prompts, just-in-time retrieval, compaction, note-taking, sub-agent delegation）と Lance Martinの4戦略分類（Write/Select/Compress/Isolate）のマッピングを整理
-- 文脈破綻モード（Poisoning/Distraction/Confusion/Clash/Rot）、attention budget、progressive disclosure、prompt caching、Ralph Wiggum loop、Bitter Lessonもカバー
-- 併せて entities/lance-martin.md を作成（Anthropic/LangChain経歴、4戦略分類の著者、managed agents共著の実績を記載）
-- index.md の両エントリをフル説明に更新
+## [2026-05-20] create | concepts/context-engineering.md — Anthropic + Lance Martin Combined Analysis
+- Integrated Anthropic's 'Effective Context Engineering for AI Agents' (2025-09-29) with Lance Martin's 'Context Engineering for Agents' (2025-06-23) and 'Agent Design Patterns' (2026-01-09)
+- Organized mapping between Anthropic's implementation perspective (system prompts, just-in-time retrieval, compaction, note-taking, sub-agent delegation) and Lance Martin's 4-strategy classification (Write/Select/Compress/Isolate)
+- Also covers context failure modes (Poisoning/Distraction/Confusion/Clash/Rot), attention budget, progressive disclosure, prompt caching, Ralph Wiggum loop, Bitter Lesson
+- Also created entities/lance-martin.md (Anthropic/LangChain background, author of 4-strategy classification, co-author of managed agents)
+- Updated both entries in index.md to full descriptions
 
 ---
 ## [2026-05-20] create | concepts/context-engineering.md — Anthropic + Lance Martin synthesis
 
-### 変更内容
-- 3つのraw記事を保存:
+### Changes
+- 3 raw articles saved:
   - `raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md`
   - `raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md`
   - `raw/articles/2026-01-09_lancemartin_agent-design-patterns.md`
-- `concepts/context-engineering.md` 作成: Anthropicの記事とLance Martinの2記事を合成した包括的なコンテキストエンジニアリング概念ページ
-  - Anthropicフレームワーク: System Prompts, Examples, Tools/MCP, Just-in-Time Retrieval, Compaction, Structured Note-Taking, Sub-Agent Delegation
-  - Lance Martinの4戦略分類: Write (外に保存) / Select (窓に引込) / Compress (必要なものだけ保持) / Isolate (エージェント間分割)
-  - 両フレームワークのマッピング表、文脈破綻モード (Poisoning/Distraction/Confusion/Clash/Rot)、attention budget、n² attentionの説明
-  - 発展パターン: Give Agents a Computer, Progressive Disclosure, Prompt Caching, Ralph Wiggum Loop, Multi-Layer Action Space
-  - The Bitter Lessonの視点: RLMやsleep-time computeで将来的にモデル側に吸収される可能性
-  - 実践チェックリスト（7項目）
-- `entities/lance-martin.md` 作成: Anthropic MTS, 元LangChain, PhD Stanford, 自動運転経歴（Nuro/Ike/Uber ATG）
-  - Context Engineering 4戦略分類の著者としての貢献、Anthropicでのmanaged agents/context engineering記事の共著
-  - 主要著作一覧表、The Bitter Lessonに関する見解
-- `index.md` 更新: lance-martinエントリ（スケルトン→フル説明）, context-engineeringエントリ（最小→フル説明）
+- `concepts/context-engineering.md` Created: comprehensive context engineering concept page synthesizing Anthropic's article and 2 Lance Martin articles
+  - Anthropic framework: System Prompts, Examples, Tools/MCP, Just-in-Time Retrieval, Compaction, Structured Note-Taking, Sub-Agent Delegation
+  - Lance Martin's 4-strategy classification: Write (save externally) / Select (pull into window) / Compress (keep only what's needed) / Isolate (split between agents)
+  - Mapping table of both frameworks, context failure modes (Poisoning/Distraction/Confusion/Clash/Rot), attention budget, n² attention explanation
+  - Evolution patterns: Give Agents a Computer, Progressive Disclosure, Prompt Caching, Ralph Wiggum Loop, Multi-Layer Action Space
+  - The Bitter Lesson perspective: potential future absorption by models through RLM and sleep-time compute
+  - Practical checklist (7 items)
+- `entities/lance-martin.md` Created: Anthropic MTS, ex-LangChain, PhD Stanford, autonomous driving background (Nuro/Ike/Uber ATG)
+  - Contributions as author of Context Engineering 4-strategy classification, co-author of Anthropic's managed agents/context engineering articles
+  - Major works table, views on The Bitter Lesson
+- `index.md` Updated: lance-martin entry (skeleton → full description), context-engineering entry (minimal → full description)
 
 ---
 
@@ -1915,7 +1915,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - `wiki/entities/shannhk.md` — Shann Holmberg (@shannhk): Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing. Based in Lisbon.
 
 ### Enriched
-- `wiki/entities/shannhk.md` — Cross-Referencesに新規conceptページ [[concepts/agent-operator-patterns]] へのリンク追加。updated: 2026-05-20
+- `wiki/entities/shannhk.md` — Added link to new concept page [[concepts/agent-operator-patterns]] in Cross-References. updated: 2026-05-20
 - `wiki/entities/hermes-agent.md` — Added Shann's 4-Level Fleet Operation Model (Level 1→4), Control Room pattern, SEO Agent 21-step pipeline case study, Prototype → Production methodology, Rails vs Linux framing, model strategy (Opus 4.7 creative / Codex GPT 5.5 structured). Updated milestones: 150K stars, 123 bundled skills, 6 deployment targets, 20+ messaging surfaces.
 - `wiki/concepts/claude-managed-agents.md` — Added Self-Hosted Sandboxes (public beta) + MCP Tunnels (research preview) section, announced at Code with Claude London (May 19, 2026). Covers enterprise security perimeter, data residency compliance, MCP tunnel connectivity for private network tools, and hybrid deployment model.
 
@@ -2008,7 +2008,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ### Summary
 - **X Article ingested**: "Rent the Intelligence. Own the Context." by Ashwin Gopinath (@ashwingop), May 17, 2026. Full body fetched via xurl `tweet.fields=article`. → [[raw/articles/2026-05-17_rent-intelligence-own-context.md]]
-- **NEW concept page**: [[concepts/context-lock-in]] — AIの第三フェーズ競争（Model→Agent→Context）。モデルロックインより危険な文脈ロックイン。Gopinathの三フェーズモデル、Microsoft構造的アナロジー、MCPの両義性分析、フォワードデプロイメントの依存性分析。「知能はレンタル、コンテキストは所有」。
+- **NEW concept page**: [[concepts/context-lock-in]] — AI's third-phase competition (Model → Agent → Context). Context lock-in is more dangerous than model lock-in. Gopinath's three-phase model, Microsoft structural analogy, MCP ambivalence analysis, forward deployment dependency analysis. 'Intelligence is rented, context is owned.'
 - **Enriched**: [[concepts/contextmaxxing]] — Added Context Lock-In section as competitive consequence, updated sources/related/tags
 - **Enriched**: [[entities/ashwingop]] — Added blog post entry, Three-Phase Model of AI Competition section, updated sources/tags/X Activity Themes
 - **Enriched**: [[entities/sentra-app]] — Added context-lock-in as related concept + framing as neutral context layer, updated sources/tags
@@ -2177,14 +2177,14 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - Discord user request (kzinmr): China Briefing article on OpenClaw's 2026 viral adoption in China → created comprehensive concept page + raw article + enriched existing entity.
 
 ### Pages Created
-- [[concepts/china-openclaw-agentic-boom]] — 中国でのOpenClaw爆発的普及現象を包括的にカバー。3つの構造的要因（世界最安API・DeepSeek効果・推論需要シフト）、ClawHub/skills.shスキルエコシステムとセキュリティ危機（13%脆弱性、13.5万露出インスタンス）、クラウド5社同時争奪戦（Tencent QClaw/WorkBuddy/ClawPro、ByteDance公式中国ミラー、Alibaba Qwen統合3億MAU）、政府補助金（深センOPC向け$1.4M）、AIoT収束（Xiaomi/Huawei）、外資系企業への示唆をカバー。
-- [[raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom]] — 生記事（Giulia Interesse, April 14, 2026）
+- [[concepts/china-openclaw-agentic-boom]] — Comprehensively covers the explosive OpenClaw adoption phenomenon in China. 3 structural factors (cheapest APIs worldwide, DeepSeek effect, inference demand shift), ClawHub/skills.sh skill ecosystem and security crisis (13% vulnerabilities, 135K exposed instances), 5-cloud competition (Tencent QClaw/WorkBuddy/ClawPro, ByteDance official China mirror, Alibaba Qwen integration at 300M MAU), government subsidies ($1.4M for Shenzhen OPCs), AIoT convergence (Xiaomi/Huawei), and implications for foreign companies.
+- [[raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom]] — Raw article (Giulia Interesse, April 14, 2026)
 
 ### Pages Updated
-- [[entities/openclaw]] — **China Adoption & Market Impact**セクション追加。タグに`china`, `agent-security`追加。Media & PressにChina Briefing記事リンク追加。frontmatter updated, source追加。
+- [[entities/openclaw]] — **China Adoption & Market Impact**Section added。Added `china`, `agent-security` tags. Added China Briefing article link to Media & Press. Frontmatter updated, source added.
 
 ### Index
-- `index.md`: +1 conceptsエントリ（china-openclaw-agentic-boom）
+- `index.md`: +1 concepts entry (china-openclaw-agentic-boom)
 
 ### Cross-references
 - [[entities/openclaw]] → [[concepts/china-openclaw-agentic-boom]]
@@ -2195,7 +2195,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ### Summary
 - 2 new bookmarks processed from X. 1 skipped (startup accelerators, not AI-aligned).
-- [[entities/pi]] — X article "Pi Coding Agent 最全面指南（完美支持/goal）" could not be fetched (HTTP 500). Saved metadata-only record.
+- [[entities/pi]] — X article "Pi Coding Agent Most Comprehensive Guide (Perfect /goal Support)" could not be fetched (HTTP 500). Saved metadata-only record.
 
 ### Changes
 - `raw/articles/x-article-2056043868077096960-pi-coding-agent-guide.md` — Metadata-only record: X article about Pi Coding Agent comprehensive guide with `/goal` support. Content inaccessible due to X API HTTP 500 error. Records title, URL, and fetch failure details for later retrieval.
@@ -2661,14 +2661,14 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 
 ## 2026-05-16 12:00 — Trending topics report (8 new topics found)
 
-- **Grok Build CLI** — xAI初のCLIコーディングエージェント（5/14 beta）、Plan Mode・並列サブエージェント・ACP対応、SuperGrok Heavy ($300/月)向け
-- **Google I/O 2026** — 5/19開催目前、Gemini 4.0 (2M+ context)、Android 17 (端末上Gemini Nano API)、エージェンティックコーディングツール発表予定
-- **Notion AI Agent Platform** — 5/13発表、ワークスペース→AIエージェントハブ、Custom Agents + MCP + 外部連携、100万+エージェント構築済み
-- **Anthropic Claude Agent Meter** — 全サブスクリプションでエージェント使用量測定、Managed Agents: $0.08/セッション時間
-- **IBM Bob GA** — AI開発パートナー（フルSDLC）、80,000+社内利用、45%生産性向上、マルチモデルオーケストレーション
-- **Meta Avocado** — 5月リリースウィンドウ閉塞、複数バリアントテスト中（9B/Thinking/Mango）
-- **AWS Bedrock Advanced Prompt Optimization** — 5/15リリース、自動プロンプト最適化ツール
-- **Spec-Driven Development** — Kiro/SpecKit/Tessl/Zenflow、vibe codingからの揺り戻し
+- **Grok Build CLI** — xAI's first CLI coding agent (5/14 beta), Plan Mode, parallel sub-agents, ACP support, for SuperGrok Heavy ($300/month)
+- **Google I/O 2026** — Just before 5/19 event, Gemini 4.0 (2M+ context), Android 17 (on-device Gemini Nano API), agentic coding tools to be announced
+- **Notion AI Agent Platform** — Announced 5/13, workspace → AI agent hub, Custom Agents + MCP + external integrations, 1M+ agents already built
+- **Anthropic Claude Agent Meter** — Agent usage measurement across all subscriptions, Managed Agents: $0.08/session time
+- **IBM Bob GA** — AI development partner (full SDLC), 80,000+ internal users, 45% productivity improvement, multi-model orchestration
+- **Meta Avocado** — May release window unclear, multiple variants in testing (9B/Thinking/Mango)
+- **AWS Bedrock Advanced Prompt Optimization** — Released 5/15, automated prompt optimization tool
+- **Spec-Driven Development** — Kiro/SpecKit/Tessl/Zenflow, swing back from vibe coding
 
 ### Raw Articles Saved
 - `inbox/rss-scans/trending-topics-2026-05-16.md` — Full trending topics report
@@ -2892,7 +2892,7 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 ## [2026-05-15] wiki | antirez.com/news/165 — DS4 follow-up article ingested
 
 ### Changes
-- **[[entities/antirez-com]]**: Timeline entry for DS4 release (May 2026). Added "モデル非依存設計" subsection: model-agnostic philosophy, DGX Spark mention, "just load what you need" domain-variant approach. Expanded future plans with distributed inference emphasis.
+- **[[entities/antirez-com]]**: Timeline entry for DS4 release (May 2026). Added 'Model-Agnostic Design' subsection: model-agnostic philosophy, DGX Spark mention, "just load what you need" domain-variant approach. Expanded future plans with distributed inference emphasis.
 - **[[concepts/ds4-dwarfstar-4]]**: Added Model-Agnostic Philosophy section clarifying DS4 is not tied to V4 Flash forever. Expanded future plans with "just load what you need" variant philosophy. Added A-vs-B spectrum metaphor (DS4 is "a lot more B than A"). Emphasized distributed inference as top priority.
 - Source: [[raw/articles/antirez.com--news-165--a8668e18]]
 
@@ -2939,7 +2939,7 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 **Action**: Processed blog triage from blog-ingest checkpoint (20 candidates). 3 takes, 6 references, 11 skips.
 
 ### Pages Created
-- `concepts/ds4-dwarfstar-4.md` — DS4 (DwarfStar 4): antirezのローカルAI推論プロジェクト。DeepSeek V4 Flash in 2/8-bit asymmetric quantization. Source: antirez.com/news/165.
+- `concepts/ds4-dwarfstar-4.md` — DS4 (DwarfStar 4): antirez's local AI inference project. DeepSeek V4 Flash in 2/8-bit asymmetric quantization. Source: antirez.com/news/165.
 
 ### Pages Updated
 - `entities/antirez-com.md` — Added DS4 section with timeline entry, technical details (2/8-bit asymmetric quantization, vector steering), future plans (distributed inference, coding agent, model variants). Source: antirez.com/news/165.
@@ -3090,21 +3090,21 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - Wikilinks: [[hermes-agent]], [[nous-research]], [[gepa]], [[hermes-vs-openclaw-architecture]]
 - Updated `index.md`: added comparisons entry, updated hermes-agent and openclaw entity cross-references
 
-## 2026-05-15 00:35 UTC — Agent Skills Overview 親ページ作成＋クラスター相互参照整備
+## 2026-05-15 00:35 UTC — Agent Skills Overview Parent Page Created + Cluster Cross-Reference Organization
 
 **Action**: Created `concepts/agent-skills-overview.md` as the parent hub page for all Skills-related concepts. Added back-links from 6 key pages. Redirected stub duplicate `agent-skills-skillmd.md` → `agent-skills.md`. Updated `index.md` and `log.md`.
 
 **New pages**:
-- `concepts/agent-skills-overview.md` — Agent Skills 概念クラスターマップ。全Skills関連14ページを4層（Format & Standard / Design Philosophy / Implementation & Architecture / Research & Scaling）に分類。各層の相互関係・重複・読み筋（初心者/実践者/アーキテクト向け）を含む。
+- `concepts/agent-skills-overview.md` — Agent Skills concept cluster map. All 14 Skills-related pages classified into 4 layers (Format & Standard, Design Philosophy, Implementation & Architecture, Research & Scaling). Includes inter-layer relationships, overlaps, and reading paths (for beginners, practitioners, architects).
 
 **Updated pages (back-links added)**:
-- `concepts/agent-skills.md` — agent-skills-overviewへのSee Alsoリンク追加
-- `concepts/claude-code-skills.md` — agent-skills-overviewへのSee Alsoリンク追加
-- `concepts/skill-architecture-patterns.md` — agent-skills-overviewへのRelatedリンク追加
-- `concepts/agentic-ai-skills.md` — agent-skills-overviewへのRelated Conceptsリンク追加
-- `concepts/skill-graph.md` — agent-skills-overviewへの関連概念リンク追加
-- `concepts/skill-retrieval-augmentation.md` — agent-skills-overviewへのRelated Worksリンク追加
-- `concepts/agent-skills-skillmd.md` — stub → redirected（agent-skills.mdへのリダイレクトに変更）
+- `concepts/agent-skills.md` — Added See Also link to agent-skills-overview
+- `concepts/claude-code-skills.md` — Added See Also link to agent-skills-overview
+- `concepts/skill-architecture-patterns.md` — Added Related link to agent-skills-overview
+- `concepts/agentic-ai-skills.md` — Added Related Concepts link to agent-skills-overview
+- `concepts/skill-graph.md` — Added related concept link to agent-skills-overview
+- `concepts/skill-retrieval-augmentation.md` — Added Related Works link to agent-skills-overview
+- `concepts/agent-skills-skillmd.md` — stub → redirected (redirected to agent-skills.md)
 
 ## 2026-05-15 00:20 UTC — Claude Code Skills concept page created from Thariq X Article
 
@@ -3112,10 +3112,10 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 
 **New pages**:
 - `raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md` — Thariq Shihipar's \"Lessons from Building Claude Code: How We Use Skills\" X Article (Mar 17, 2026, 16K+ likes, 6.8M+ views). Full body via GetXAPI.
-- `concepts/claude-code-skills.md` — 機序（フォルダ構造・Progressive Disclosure・動的Hooks・メモリ永続化）と9つの役割パターン（Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Operations）。設計原則（Gotchasセクション、ファイルシステムProgressive Disclosure、オンデマンドHooks、配布パターン、マーケットプレイス運用、Skills合成・計測）を含む総合ページ。
+- `concepts/claude-code-skills.md` — Mechanism (folder structure, Progressive Disclosure, dynamic Hooks, memory persistence) and 9 role patterns (Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Operations). Comprehensive page including design principles (Gotchas section, filesystem Progressive Disclosure, on-demand Hooks, distribution patterns, marketplace operations, Skills composition and measurement).
 
 **Updated pages**:
-- `entities/thariq-shihipar.md` — Skills記事のraw article source追加、新conceptページへのクロスリンク、月表記修正（Feb→Mar）、エンゲージメント数値更新（15K→16K, 6M→6.8M）
+- `entities/thariq-shihipar.md` — Added Skills article raw article source, cross-links to new concept pages, month notation fix (Feb→Mar), engagement numbers updated (15K→16K, 6M→6.8M)
 
 ## 2026-05-15 00:06 UTC — Akshay Pachaar entity page updated
 
@@ -3137,15 +3137,15 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 
 **Updated**: `wiki/index.md` (added entry), `wiki/entities/teknium.md` (fixed wikilink), `wiki/_archive/nous-research.md` (archived stale stub).
 
-## 2026-05-14 23:57 UTC — 0xSero「Open Source must win.」Wiki取り込み
+## 2026-05-14 23:57 UTC — 0xSero's 'Open Source must win.' Ingested into Wiki
 
-**Action**: ユーザーリクエスト（Discord）により @0xSero の X Article「Open Source must win.」(2026-03-20) をwikiに取り込み。
+**Action**: At user request (Discord), ingested @0xSero's X Article 'Open Source must win.' (2026-03-20) into the wiki.
 
-**Raw article saved**: `raw/articles/2026-03-20_0xsero_open-source-must-win.md` — 全文（type: x_article）
-**Entity enriched**: `entities/sero.md` — 「Mission Statement: Open Source Must Win (March 2026)」セクション追加（約30行）。10年ミッション、REAP Expert Swap、非中央集権的学習、AI教育の3本柱を詳述。
-**Index updated**: `wiki/index.md` — seroエントリの説明を拡充（REAP Expert Swap、マニフェスト言及追加）
+**Raw article saved**: `raw/articles/2026-03-20_0xsero_open-source-must-win.md` — Full text (type: x_article)
+**Entity enriched**: `entities/sero.md` — Added "Mission Statement: Open Source Must Win (March 2026)" section (~30 lines). Details 3 pillars: 10-year mission, REAP Expert Swap, decentralized learning, AI education.
+**Index updated**: `wiki/index.md` — sero entry description expanded (REAP Expert Swap, manifesto mention added)
 
-このマニフェストは Sero の "Freedom Tech" 哲学を10年ロードマップとして結晶化したもの。
+This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year roadmap.
 
 ## 2026-05-14 23:30 UTC — X Bookmarks Ingest
 
@@ -3446,7 +3446,7 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
   - Wikilinks: concepts/chain-of-thought, concepts/metaprompting, concepts/evaluation, concepts/benchmark, concepts/sycophancy
 
 ## 2026-05-22 updated | entities/anthropic.md
-- **Updated entities/anthropic.md** — Added 「収益性論争: 「黒字化」の実態 (May 2026)」section
+- **Updated entities/anthropic.md** — Added 「Profitability Controversy: The Reality of "Being Profitable" (May 2026)」section
   - Detailed analysis of WSJ's "first profitable quarter" claim: SpaceX discount matching profitability window, ARR data contradictions across Anthropic's own statements, total compute cost estimates ($45B/year), revenue inflation tactics
   - Source: raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
   - Bumped updated date to 2026-05-22; added new source to frontmatter
