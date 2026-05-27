@@ -2,13 +2,13 @@
 title: "Execution Plans"
 tags: []
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-27
 type: concept
 ---
 
 # Execution Plans
 
-エージェントにタスクを実行させる際、事前に計画（プラン）を立ててから実行するパターン。計画と実行を分離することで、透明性・再現性・デバッグ性を向上させる。
+A pattern where agents create a plan before executing tasks. Separating planning from execution improves transparency, reproducibility, and debuggability.
 
 ## Core Concept
 
@@ -16,50 +16,50 @@ type: concept
 User Request → Agent generates Plan → Human reviews (optional) → Agent executes Plan → Results
 ```
 
-計画はエージェントが自身の意図を明確化し、ユーザーが介入できるチェックポイントを設ける。
+The plan clarifies the agent's intent and provides a checkpoint where users can intervene.
 
 ## Plan Structure
 
-良い実行計画は以下を含む：
+A good execution plan includes:
 
-1. **Objective**: 達成すべき目標の明確な定義
-2. **Steps**: 順序立てた実行ステップ
-3. **Dependencies**: ステップ間の依存関係
-4. **Tool Requirements**: 各ステップで必要なツール/リソース
-5. **Success Criteria**: 各ステップの完了判定基準
-6. **Rollback Strategy**: 失敗時の復旧手順
+1. **Objective**: Clear definition of the goal to achieve
+2. **Steps**: Ordered execution steps
+3. **Dependencies**: Relationships between steps
+4. **Tool Requirements**: Tools/resources needed for each step
+5. **Success Criteria**: Completion criteria for each step
+6. **Rollback Strategy**: Recovery procedures on failure
 
 ## Benefits
 
 ### 1. Transparency
 
-- ユーザーがエージェントの意図を理解できる
-- デバッグ時に計画と実行結果を比較できる
-- 監査証跡として機能する
+- Users can understand the agent's intent
+- Plans and results can be compared during debugging
+- Functions as an audit trail
 
 ### 2. Error Handling
 
-- 計画段階で明らかな問題を検出できる
-- 各ステップの完了検証が容易
-- 部分的な失敗からの回復が設計できる
+- Obvious problems can be detected during planning
+- Easy to verify completion of each step
+- Partial failures can be designed for recovery
 
 ### 3. Iteration
 
-- 計画の再利用・修正が簡単
-- 似たタスクへの適用が可能
-- 学習による計画改善
+- Plans can be reused and modified easily
+- Applicable to similar tasks
+- Plan improvement through learning
 
 ## Implementation
 
 ### Implicit Planning
 
-エージェントが内部で計画を立てる（ユーザーには見えない）：
-- 複雑なタスクで暗黙的にステップ分割
-- ツール呼び出しの順序を最適化
+The agent plans internally (invisible to the user):
+- Implicit step decomposition for complex tasks
+- Optimization of tool call ordering
 
 ### Explicit Planning
 
-計画をユーザーに提示して承認を得る：
+Present the plan to the user for approval:
 ```
 > I'll need to:
 > 1. Read the current config file
@@ -72,13 +72,13 @@ User Request → Agent generates Plan → Human reviews (optional) → Agent exe
 
 ### Stored Plans
 
-計画を永続化して再利用：
-- ワークフローとして保存
-- テンプレート化してカスタマイズ可能に
+Persist plans for reuse:
+- Save as workflows
+- Template-ize for customization
 
 ## Related
 
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
-- [[concepts/openai-symphony]] — OpenAI Symphony (WORKFLOW.md駆動)
+- [[concepts/openai-symphony]] — OpenAI Symphony (WORKFLOW.md-driven)
 - [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — Compound Engineering Loop
 - [[concepts/closing-agent-loop]] — Closing the Agent Loop

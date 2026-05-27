@@ -6,7 +6,7 @@ aliases:
   - test-driven-development
   - tdd
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-27
 tags:
   - concept
   - methodology
@@ -19,43 +19,43 @@ sources:
 
 # Red/Green TDD
 
-コーディングエージェントとの開発において、テストファースト開発を適用するパターン。Simon Willisonの[Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/)の中核概念。
+A pattern for applying test-first development when working with coding agents. Core concept of Simon Willison's [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/).
 
-## 定義
+## Definition
 
 > "Use red/green TDD" is a pleasingly succinct way to get better results out of a coding agent.
 
-TDD（Test Driven Development）の最も厳格な形式：
-1. **Red**: 自動化テストをまず書き、それが失敗することを確認
-2. **Green**: テストが通るまで実装を反復
+The strictest form of TDD (Test Driven Development):
+1. **Red**: Write automated tests first, confirm they fail
+2. **Green**: Iterate on implementation until tests pass
 
-## なぜコーディングエージェントに有効か
+## Why It Works for Coding Agents
 
-### リスク低減
-コーディングエージェントの主要リスク：
-- **動かないコードを書く** → テストが失敗することで早期発見
-- **不要なコードを書く** → テストが必要な機能のみを実装に強制
-- **将来の回帰** → 包括的テストスイートが保護
+### Risk Reduction
+Key risks for coding agents:
+- **Writing non-functional code** → Tests catch this early through failure
+- **Writing unnecessary code** → Tests force implementation of only needed functionality
+- **Future regression** → Comprehensive test suite provides protection
 
-### 失敗確認の重要性
+### Importance of Failure Confirmation
 > "It's important to confirm that the tests fail before implementing the code to make them pass. If you skip that step you risk building a test that passes already, hence failing to exercise and confirm your new implementation."
 
-テストが最初に失敗することを確認しないと、そのテストは既存の動作をテストしているだけで、新しい実装を exercising していない可能性がある。
+Without confirming that tests fail first, you risk testing existing behavior rather than exercising the new implementation.
 
-## 実装パターン
+## Implementation Patterns
 
-### 簡潔なプロンプト
+### Concise Prompt
 ```
 Build a Python function to extract headers from a markdown string. Use red/green TDD.
 ```
 
-"Use red/green TDD"という4単語が、以下の長い指示を包含：
+The four words "Use red/green TDD" encompass the much longer instruction:
 > "use test driven development, write the tests first, confirm that the tests fail before you implement the change that gets them to pass"
 
-### モデルの理解度
+### Model Understanding
 > "Every good model understands 'red/green TDD' as a shorthand for the much longer 'use test driven development, write the tests first, confirm that the tests fail before you implement the change that gets them to pass'."
 
-主要LLMはこのショートハンドを理解しており、詳細な指示不要で適切なTDDワークフローを適用できる。
+Major LLMs understand this shorthand and can apply the appropriate TDD workflow without detailed instructions.
 
 ## Martin Alderson: Agentic TDD Re-evaluation
 
@@ -72,13 +72,13 @@ Martin Alderson ([martinalderson.com](https://martinalderson.com/posts/turns-out
 
 This confirms [[concepts/cognitive-cost-of-agents]] — agents shift the economic calculus of testing by making test creation near-free.
 
-## 関連パターン
+## Related Patterns
 
-- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — TDDの前段階としてテストスイートをまず実行させる4単語プロンプト
-- [[concepts/agentic-manual-testing]] — 自動テスト後の手動探索テスト
-- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
-- [[concepts/cognitive-cost-of-agents]] — エージェントがテストの経済性を変える
+- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — A four-word prompt to run the test suite first as a precursor to TDD
+- [[concepts/agentic-manual-testing]] — Manual exploratory testing after automated tests
+- [[concepts/harness-engineering/agentic-engineering]] — Higher-level concept
+- [[concepts/cognitive-cost-of-agents]] — How agents change the economics of testing
 
-## 参照
-- [[entities/simon-willison]] — Agentic Engineering Patterns創始者
+## References
+- [[entities/simon-willison]] — Creator of Agentic Engineering Patterns
 - [[entities/martin-alderson]] — Agentic TDD re-evaluation, sysadmin with Claude Code

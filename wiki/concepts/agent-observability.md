@@ -1,7 +1,7 @@
 ---
 title: "Agent Observability"
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-27
 type: concept
 tags:
   - concept
@@ -21,7 +21,7 @@ Agent observability is the practice of capturing, monitoring, and analyzing AI a
 
 ## Key Concept
 
-従来のソフトウェア監視とAIエージェントの可観測性の決定的な違いは、**フィードバックループを閉じることの重要性**にある。観測（observability）だけでは不十分で、観測データを評価・改善に結びつけるサイクルが必要。
+The decisive difference between traditional software monitoring and AI agent observability is the **importance of closing the feedback loop**. Observability alone is insufficient — a cycle connecting observation data to evaluation and improvement is necessary.
 
 ## Feedback-Powered Learning Loop
 
@@ -29,26 +29,26 @@ Agent observability is the practice of capturing, monitoring, and analyzing AI a
 Collect Traces → Enrich with Evaluations → Identify Failures → Make Changes → Validate → Repeat
 ```
 
-1. **トレース収集**: エージェントの全意思決定プロセス（ツール呼び出し、推論ステップ、中間出力）をキャプチャ
-2. **評価でエンリッチ**: オフライン評価（Golden-set）＋オンライン評価（本番トラフィックの品質ドリフト検出）
-3. **失敗の特定**: 評価結果から改善ポイントを抽出
-4. **変更の適用**: プロンプト改善、ツール選択の変更、モデル切り替え
-5. **検証**: 改善の効果を再度評価で確認
+1. **Trace Collection**: Capture the agent's entire decision-making process (tool calls, reasoning steps, intermediate outputs)
+2. **Enrich with Evaluations**: Offline evaluation (Golden-set) + Online evaluation (production traffic quality drift detection)
+3. **Identify Failures**: Extract improvement points from evaluation results
+4. **Apply Changes**: Prompt improvements, tool selection changes, model switching
+5. **Validate**: Confirm improvement effects through re-evaluation
 
 ## Offline vs Online Evaluation
 
-| タイプ | 目的 | データソース | タイミング |
-|--------|------|------------|-----------|
-| **Offline** | 開発中の回帰テスト | キュレートされたGoldenデータセット | デプロイ前 |
-| **Online** | 本番品質ドリフト検出 | 本番トラフィックの実データ | 継続的 |
+| Type | Purpose | Data Source | Timing |
+|------|---------|-------------|--------|
+| **Offline** | Regression testing during development | Curated Golden datasets | Pre-deployment |
+| **Online** | Production quality drift detection | Real production traffic data | Continuous |
 
 ## Human-in-the-Loop Calibration
 
-LLM-as-judgeによる自動評価だけでは不正確なケースがある。LangSmithは評価サンプルを人間レビューアにルーティングし、自動評価メトリクスの校正を行う。
+LLM-as-judge automatic evaluation can be inaccurate in some cases. LangSmith routes evaluation samples to human reviewers for calibration of auto-evaluation metrics.
 
 ## Framework-Agnostic Observability
 
-主要なオブザーバビリティプラットフォーム（LangSmith等）は、自社フレームワークに限らず以下をサポート：
+Major observability platforms (LangSmith, etc.) support frameworks beyond their own:
 - AutoGen
 - Claude Agent SDK
 - CrewAI
@@ -56,7 +56,7 @@ LLM-as-judgeによる自動評価だけでは不正確なケースがある。La
 - OpenAI Agents
 - PydanticAI
 - Vercel AI SDK
-- カスタムビルド
+- Custom builds
 
 ## Related Concepts
 

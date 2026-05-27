@@ -2,7 +2,7 @@
 title: "Claude 4.7 Tokenizer Change"
 type: concept
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-05-27
 tags:
   - concept
   - anthropic
@@ -13,61 +13,61 @@ sources: []
 
 # Claude 4.7 Tokenizer Change
 
-2026年4月16日にClaude Opus 4.7がリリースされ、**初めてトークナイザーが変更**された。この変更により、同じ入力テキストが40%多いトークンにマッピングされる。
+Claude Opus 4.7 was released on April 16, 2026, and **changed the tokenizer for the first time**. This change causes the same input text to be mapped to 40% more tokens.
 
-## 主要な変更点
+## Key Changes
 
-### トークン乗数（Opus 4.6 → 4.7）
+### Token Multiplier (Opus 4.6 → 4.7)
 
-| コンテンツタイプ | 乗数 |
-|----------------|------|
-| システムプロンプト（生テキスト） | **1.46x** |
-| 高解像度画像（3456×2234, 3.7MB） | **3.01x** |
-| 小画像（682×318） | ~1.01x（無視できる） |
-| テキストheavyPDF（15MB, 30ページ） | 1.08x |
+| Content Type | Multiplier |
+|--------------|-----------|
+| System prompt (raw text) | **1.46x** |
+| High-resolution image (3456×2234, 3.7MB) | **3.01x** |
+| Small image (682×318) | ~1.01x (negligible) |
+| Text-heavy PDF (15MB, 30 pages) | 1.08x |
 
-### テスト結果詳細
+### Detailed Test Results
 
-**システムプロンプト:**
-- Opus 4.7: 7,335トークン
-- Opus 4.6: 5,039トークン
-- 乗数: 1.46x
+**System Prompt:**
+- Opus 4.7: 7,335 tokens
+- Opus 4.6: 5,039 tokens
+- Multiplier: 1.46x
 
-**大容量画像（3456×2234, 3.7MB PNG）:**
-- Opus 4.7: 4,744トークン
-- Opus 4.6: 1,578トークン
-- 乗数: 3.01x
+**Large Image (3456×2234, 3.7MB PNG):**
+- Opus 4.7: 4,744 tokens
+- Opus 4.6: 1,578 tokens
+- Multiplier: 3.01x
 
-**PDFテスト（15MB, 30ページ）:**
-- Opus 4.7: 60,934トークン
-- Opus 4.6: 56,482トークン
-- 乗数: 1.08x
+**PDF Test (15MB, 30 pages):**
+- Opus 4.7: 60,934 tokens
+- Opus 4.6: 56,482 tokens
+- Multiplier: 1.08x
 
-## 料金への影響
+## Pricing Impact
 
-Opus 4.7はOpus 4.6と同様の料金を維持：
+Opus 4.7 maintains the same pricing as Opus 4.6:
 
-| トークンタイプ | 100万トークンあたりの料金 |
-|---------------|-------------------------|
-| 入力 | $5.00 |
-| 出力 | $25.00 |
+| Token Type | Price per Million Tokens |
+|-----------|--------------------------|
+| Input | $5.00 |
+| Output | $25.00 |
 
-**結果**: 典型的なテキストコンテンツで**約40%のコスト増**。
+**Result**: Approximately **40% cost increase** for typical text content.
 
-## 高解像度画像対応の改善
+## High-Resolution Image Support Improvement
 
-> "Opus 4.7はより高解像度画像への対応が向上：長い辺的最大2,576ピクセル（约3.75メガピクセル）をサポートし、これまでのClaudeモデルの3倍以上"
+> "Opus 4.7 improves high-resolution image support: supports up to 2,576 pixels on the long side (~3.75 megapixels), over 3x the previous Claude models"
 
-大容量画像の3倍トークン増加は**すべてより高解像度サポートのため**であり、非効率性ではない。
+The 3x token increase for large images is **entirely due to higher-resolution support**, not inefficiency.
 
-## 意味
+## Implications
 
-1. **テキストheavyコンテンツ**: Opus 4.7で~1.1-1.5xのトークン増加を見込む
-2. **高解像度画像**: 3xトークン増加だが、より大きな画像を入力可能に
-3. **コスト影響**: 典型的なテキスト使用で~40%高コスト
-4. **小画像**: バージョン間で大きな差なし
+1. **Text-heavy content**: Expect ~1.1-1.5x token increase with Opus 4.7
+2. **High-resolution images**: 3x token increase, but enables larger image inputs
+3. **Cost impact**: ~40% higher cost for typical text usage
+4. **Small images**: No significant difference between versions
 
-## 関連項目
+## Related Items
 
 - [Context Window Management](../context-window-management.md)
 - [Context Compaction](../context-compaction.md)

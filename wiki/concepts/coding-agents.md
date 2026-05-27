@@ -4,7 +4,7 @@ type: concept
 aliases:
   - coding-agents
 created: 2026-04-25
-updated: 2026-04-27
+updated: 2026-05-27
 tags:
   - concept
   - coding-agents
@@ -15,42 +15,42 @@ description: "LLM-powered coding agents — tools, environments, and optimizatio
 
 # Coding Agents
 
-LLM搭載のコード書きエージェント。Claude Code、OpenAI Codex、Cursor、GitHub Copilot、OpenClawなどが該当。
+LLM-powered code-writing agents. Includes Claude Code, OpenAI Codex, Cursor, GitHub Copilot, OpenClaw, and others.
 
-## 最適化: デベロッパ環境の設計
+## Optimization: Developer Environment Design
 
-Eric Zakariasson (2026-04-27) による実践的ガイド:
+Practical guide by Eric Zakariasson (2026-04-27):
 
-エージェントに人間と同じ仕事をしてもらいたいなら、人間に1日目で与えるものを与えよ: マシン、認証情報、Slack、Linear、Notion、Datadog、GitHub org。
+If you want agents to do the same work as humans, give them what you'd give a human on day one: a machine, credentials, Slack, Linear, Notion, Datadog, GitHub org.
 
 > "This also means that your job shifts. You're less the person writing every line and more the person building the system that tells agents what good and bad looks like. This is mostly the same work as building good developer experience for humans."
 
-### 重要な視点
-- エージェント環境の最適化は、人間向けのDX構築とほぼ同じ作業
-- 開発者の役割は「すべての行を書く人」から「エージェントにとって善と悪がどう見えるかを定義する人」へ移行
+### Key Insights
+- Optimizing the agent environment is nearly identical to building DX for humans
+- The developer's role shifts from "person writing every line" to "person defining what good and bad looks like for agents"
 
-参考: [Optimizing your dev environment for coding agents](../raw/articles/2041897427431563613_optimizing-your-dev-environment-for-coding-agents.md)
+Reference: [Optimizing your dev environment for coding agents](../raw/articles/2041897427431563613_optimizing-your-dev-environment-for-coding-agents.md)
 
-## 業界動向
+## Industry Trends
 
-### SpaceX × Cursor: $60B 買収オプション (2026-04)
+### SpaceX × Cursor: $60B Acquisition Option (2026-04)
 
-SpaceXは2026年後半にCursorを**$600億で買収する権利**を取得。またはCursorに**$100億**を支払って協業する選択肢も保持。
+SpaceX acquired the right to **acquire Cursor for $60 billion** in late 2026, or alternatively pay **$10 billion** for collaboration.
 
-**背景:**
-- Cursorの独自モデルComposer 2はMoonshotのKimiベースでコミュニティの反応は冷ややか
-- SpaceXのColossusクラスター（100万H100相当）へのアクセス獲得が真の目的
-- Kevin Kwok分析: 「トップコーディングラボはモデルとプロダクトの両方を所有する必要がある。流通だけを持ちモデルを持たないのは賃貸契約。全てのデブツール企業はモデル企業になるか、モデルの機能になるか」
+**Background:**
+- Cursor's proprietary model Composer 2 is based on Moonshot's Kimi, drawing lukewarm community reactions
+- The true prize is access to SpaceX's Colossus cluster (equivalent to 1 million H100s)
+- Kevin Kwok's analysis: "Top coding labs need to own both model and product. Having distribution without a model is a rental agreement. Every dev tool company will either become a model company or become a feature of a model."
 
 ### OpenAI Workspace Agents (2026-04)
 
-Codex搭載の共有エージェント。Business/Enterpriseプラン向け。Slack、Salesforce、Notion、Google Driveと統合。永続メモリとロールベースガバナンス搭載。
+Shared agents powered by Codex. For Business/Enterprise plans. Integrates with Slack, Salesforce, Notion, Google Drive. Includes persistent memory and role-based governance.
 
-## 関連ページ
-- [[concepts/harness-engineering]] — エージェント駆動開発の環境設計哲学
-- [[concepts/agentic-engineering]] — 上位概念
-- [[concepts/subagents]] — 並列エージェント委譲パターン
-- [[concepts/cognitive-debt]] — コンテキスト管理の重要性
+## Related Pages
+- [[concepts/harness-engineering]] — Design philosophy for agent-driven development environments
+- [[concepts/agentic-engineering]] — Higher-level concept
+- [[concepts/subagents]] — Parallel agent delegation patterns
+- [[concepts/cognitive-debt]] — Importance of context management
 - [[entities/openai]] — OpenAI (Workspace Agents, Codex)
 - [[entities/anthropic]] — Anthropic (Claude Code)
 
