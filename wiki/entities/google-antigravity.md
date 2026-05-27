@@ -1,7 +1,7 @@
 ---
 title: Google Antigravity
 created: 2026-05-23
-updated: 2026-05-26
+updated: 2026-05-27
 type: entity
 tags: [entity, product, google, platform, agentic-engineering, coding-agents, ai-agents, agent-sdk, agent-framework, multi-agent, orchestration, developer-tooling, cli, infrastructure]
 sources:
@@ -143,6 +143,34 @@ The internal Antigravity IDE (Visual Studio–like) includes:
 ### Sources
 
 - [[raw/articles/2026-05-25_deepmind-agents-at-scale-youtube|How Google DeepMind Runs Agents at Scale — AI Engineer Conference (2026-05-24)]]
+
+### Sources (2026-05-27 update)
+- [[raw/articles/2026-05-27_antigravity-2-thenewstack|At Google I/O 2026: Antigravity Gets a New Job Description — The New Stack (2026-05-20)]]
+
+## CodeMender: Autonomous Security Remediation
+
+**CodeMender** is an AI code security agent developed by Google DeepMind, announced at I/O 2026 alongside Antigravity 2.0. It autonomously identifies vulnerabilities, recommends precise fixes, securely tests them, and can apply patches across dependent systems — with developer approval.
+
+> "CodeMender is an AI code security agent... It autonomously identifies vulnerabilities within your code. It then recommends precise fixes, securely tests them, and can apply patches and necessary changes across dependent systems, with your approval." — **Thomas Kurian**, CEO of Google Cloud
+
+- Goes beyond detection to **actual patching**, using Gemini's advanced reasoning
+- Integrated into Google's **Agent Platform** as part of **AI Threat Defense**
+- A select group can test a **CodeMender API** now; broader availability to follow
+
+## Enterprise Adoption
+
+Early enterprise validation of Antigravity agentic workflows:
+
+| Company | Usage |
+|---------|-------|
+| **AirAsia Next** | 50%+ of production code generated via Antigravity agentic workflows |
+| **Deloitte** | "Governed, autonomous engineering workflows" meeting enterprise security standards |
+| **PwC** | "Shift from simple AI code completion to true agent orchestration" |
+| **WPP** | Integrated into WPP Open for product development and workflow automation |
+
+## Pricing
+
+New **Google AI Ultra** subscription tier at **$100/month** offers 5× higher usage limits than the AI Pro plan. The existing top-tier AI Ultra plan is $200/month with 20× Pro limits. This positions Google directly against OpenAI's ChatGPT Pro and Anthropic's Claude Max (both $100/month).
 
 ## Related
 

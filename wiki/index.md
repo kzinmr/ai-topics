@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2097 | Indexed entries: 1375 | Not in index: 674 |## Entities (675 pages)
+> Last updated: 2026-05-27 | Total pages: 2101 | Indexed entries: 1378 | Not in index: 674 |## Entities (677 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -347,6 +347,7 @@
 - [[entities/levelsio]] — Pieter Levels (@levelsio) — indie maker, 12 Startups in 12 Months, $250K+/mo portfolio (PhotoAI, InteriorAI, RemoteOK, Nomads). Cloudflare Email Sending price comparison. Build-in-public pioneer.
 - [[entities/lilian-weng]] — Lilian Weng (@lilianweng). Former OpenAI VP of Research. Her "model as moat" stance reversed by Greg Brockman (May 2026): "the model alone is no longer the product". Co-founded Thinking Machines Lab ($12B). Lil'Log blog author.
 - [[entities/lilianweng]] — **X** | @lilianweng |
+- [[entities/ling-2-6-1t]] — Ling 2.6-1T — Ant Group's trillion-parameter open-weights MoE model (MIT license). 63B active params, 1M context. SWE-bench 72.2. BaiLing ecosystem.
 - [[entities/lmsys-org]] — **URL** | https://lmsys.org |
 - [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
 - [[entities/maarten-grootendorst]] — Data scientist, AI educator. Author of the widely-read Visual Guide series on LLM (quantization, attention, RAG). Creator of BERTopic.
@@ -390,6 +391,7 @@
 - [[entities/nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and **Post-Training Lead** at the **Allen Institute for AI (AI2)**. He previously worked at **HuggingFace** as a Research Scientist and RLHF Team Lead ...
 - [[entities/neel-nanda]] — **Website** | neelnanda.io | Mechanistic Interpretability researcher. MI Glossary, Quickstart Guide, Favourite Papers — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/nemotron-cascade-2]] — NVIDIA's open-weight 30B MoE (3B active). Gold medal at IMO/IOI/ICPC 2025 via Cascade RL + Multi-Domain On-Policy Distillation. 24GB VRAM, 256K context, thinking/non-thinking modes, structured tool calling.
+- [[entities/nemo-agent-toolkit]] — NVIDIA NeMo Agent Toolkit — Open-source multi-agent orchestration library (2K stars). v1.7.0: ATOF observability format, Exa Search API, OCI LangChain, token streaming.
 - [[entities/niplav]] — niplav — LessWrong contributor, AI alignment researcher. Author of the [[concepts/glut-of-circuits|GLUT-of-circuits]] model of LLMs (2026). Agent structure problem, computation in superposition, circuit-level alignment.
 - [[entities/noam-brown]] — **Role** | Research Scientist, OpenAI |
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "fail...
@@ -1095,6 +1097,7 @@
 - [[concepts/sana-vm]] — SANA-WM — NVIDIA's 2.6B parameter open-source world model. 60-second 720p video generation on single GPU. Gated DeltaNet + Softmax hybrid. Apache 2.0.
 - [[concepts/schedulefree-plus]] — ScheduleFree+ — Meta FAIR training method (May 2026). LR-free + schedule-free LLM training via iterate averaging + Polyak step size. 31% training time reduction at 1000 tokens/param. Outperforms WSD schedules.
 - [[concepts/seirenes]] — Self-play RL framework using adversarial distractions to harden LLM reasoning robustness (arXiv May 2026)
+- [[concepts/self-replicating-llm]] — Self-Replicating LLMs — arXiv paper (May 2026) demonstrating autonomous AI self-replication via vulnerability exploitation. Qwen3.6-27B: 33% success; Opus 4.6: 81% (cross-model replication). Chain replication across 4 machines, 3 continents.
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.
 - [[concepts/skill-graph]] — Skill Graph — AI agent playbook using interconnected Markdown files. Ronin's 17-file, 4-folder architecture. Wikilinks navigation, Platform-Native Repurposing, Litmus Test.

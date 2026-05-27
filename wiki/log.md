@@ -3,6 +3,31 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-27] active-crawl | Ling 2.6-1T, self-replicating LLMs, NeMo Agent Toolkit
+
+### Pages Created
+- [[entities/ling-2-6-1t]] — Ling 2.6-1T: Ant Group's trillion-parameter open-weights MoE model
+- [[concepts/self-replicating-llm]] — Self-Replicating LLMs: arXiv paper on autonomous AI self-replication
+- [[entities/nemo-agent-toolkit]] — NVIDIA NeMo Agent Toolkit v1.7.0
+
+### Pages Updated
+- [[entities/google-antigravity]] — Added CodeMender, enterprise adoption, pricing (The New Stack)
+
+### Raw Articles
+- raw/articles/2026-05-27_ling-2-6-1t-ant-group.md
+- raw/articles/2026-05-27_self-replicating-llm-arxiv.md
+- raw/articles/2026-05-27_nemo-agent-toolkit-v1-7-0.md
+- raw/articles/2026-05-27_antigravity-2-thenewstack.md
+
+### Sources
+- Ling 2.6-1T: i-scoop.eu (May 19, 2026)
+- Self-replicating LLMs: arXiv 2605.06760 (May 7, 2026)
+- NeMo Agent Toolkit: GitHub release v1.7.0 (May 21, 2026)
+- Antigravity 2.0: The New Stack (May 20, 2026)
+
+
+---
+
 ## [2026-05-27] translate | JP→EN tail-end — 0 files translated, 15 excluded
 
 ### Result
