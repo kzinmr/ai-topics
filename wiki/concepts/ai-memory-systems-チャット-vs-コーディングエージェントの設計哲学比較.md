@@ -1,5 +1,5 @@
 ---
-title: "AI Memory Systems — チャット vs コーディングエージェント's 設計哲学比較"
+title: "AI Memory Systems — Chat vs Coding Agent Design Philosophy Comparison"
 type: concept
 aliases:
   - ai-memory-systems-チャット-vs-コーディングエージェント's 設計哲学比較

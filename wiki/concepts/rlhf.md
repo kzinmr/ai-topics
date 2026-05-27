@@ -11,7 +11,7 @@ tags:
   - alignment
   - reinforcement-learning
 status: complete
-description: "人間のフィードバックを用いたLLMのアライメント技術と、その発展形（DPO, ORPO, KTO, GRPO）の統合ページ"
+description: "LLM alignment techniques using human feedback and their evolved forms (DPO, ORPO, KTO, GRPO) — a unified reference page"
 created: 2026-04-14
 updated: 2026-04-24
 sources:

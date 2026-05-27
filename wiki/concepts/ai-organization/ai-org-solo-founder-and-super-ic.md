@@ -1,5 +1,5 @@
 ---
-title: "Solo Founder & Super IC — AI時代の新しい働き方"
+title: "Solo Founder & Super IC — A New Way of Working in the AI Era"
 type: concept
 aliases:
   - solo-founder-ai

@@ -1,5 +1,5 @@
 ---
-title: "AIエージェントのアウトカムベース価格モデル"
+title: "Outcome-Based Pricing Models for AI Agents"
 type: concept
 created: 2026-05-25
 updated: 2026-05-26

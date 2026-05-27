@@ -1,5 +1,5 @@
 ---
-title: "xAI・Anthropic Colossus データセンター取引"
+title: "xAI-Anthropic Colossus Data Center Deal"
 created: 2026-05-08
 updated: 2026-05-11
 type: concept

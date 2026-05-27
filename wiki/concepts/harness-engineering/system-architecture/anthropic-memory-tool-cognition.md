@@ -1,5 +1,5 @@
 ---
-title: "Anthropic's Memory Tool — Cognitionの戦略的追随"
+title: "Anthropic's Memory Tool — Cognition's Strategic Follow-Up"
 type: concept
 created: 2026-04-12
 updated: 2026-04-12

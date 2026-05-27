@@ -3,7 +3,7 @@ title: "Reinforcement Learning"
 type: concept
 tags: [concept]
 status: complete
-description: "RL's 基本概念. 詳細はrlhf.mdを参照. "
+description: "Fundamental concepts of RL. See rlhf.md for details."
 created: 2026-04-14
 updated: 2026-04-24
 related:

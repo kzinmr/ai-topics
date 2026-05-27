@@ -1,5 +1,5 @@
 ---
-title: "json-render — Generative UI フレームワーク"
+title: "json-render — Generative UI Framework"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept

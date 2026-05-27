@@ -1,6 +1,6 @@
 ---
 title: thin-bi-tool
-description: "薄くなるBIツール — The trend of BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools that rely on cloud DWH and semantic layers"
+description: "The trend of BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools that rely on cloud DWH and semantic layers"
 url: https://note.com/ikki_mz/n/n3382a648c6c5
 type: entity
 created: 2026-04-25

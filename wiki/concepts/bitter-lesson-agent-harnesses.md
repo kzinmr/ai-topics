@@ -8,7 +8,7 @@ tags:
   - ai-agents
   - harness-engineering
 status: complete
-description: "Gregor Zunic (Browser Use founder) の提唱する 'The less you build, the more it works' — 最小限のエージェントアーキテクチャ哲学。"
+description: "Gregor Zunic (Browser Use founder) advocates 'The less you build, the more it works' — a philosophy of minimal agent architecture."
 created: 2026-04-30
 updated: 2026-04-30
 sources:

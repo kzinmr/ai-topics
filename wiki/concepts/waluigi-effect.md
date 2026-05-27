@@ -1,5 +1,5 @@
 ---
-title: "Waluigi Effect (ワルイージ効果)"
+title: "Waluigi Effect"
 type: concept
 aliases:
   - waluigi-effect

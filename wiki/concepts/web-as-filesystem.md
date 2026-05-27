@@ -10,7 +10,7 @@ tags:
   - developer-tooling
   - tool
 status: complete
-description: "Webの全ドキュメントをUnixファイルシステムとしてマウントする抽象化。エージェントにtree/grep/cat/findを自然に使い、コード幻覚を解消。"
+description: "An abstraction that mounts all web documents as a Unix filesystem, enabling agents to naturally use tree/grep/cat/find and eliminating code hallucinations."
 created: 2026-04-27
 updated: 2026-04-27
 sources:

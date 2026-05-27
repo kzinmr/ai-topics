@@ -1,5 +1,5 @@
 ---
-title: "Agentic Workflows — Harness Engineering配下の開発者ワークフロー"
+title: "Agentic Workflows — Developer Workflows Under Harness Engineering"
 type: concept
 aliases:
   - agentic-workflows

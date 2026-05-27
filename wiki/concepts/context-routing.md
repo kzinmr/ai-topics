@@ -1,5 +1,5 @@
 ---
-title: "Context Routing — クエリ別コンテキスト振り分け"
+title: "Context Routing — Query-Based Context Distribution"
 type: concept
 created: 2026-04-22
 updated: 2026-05-27

@@ -1,5 +1,5 @@
 ---
-title: "ds4.c — DeepSeek V4 Flash Metal 推論エンジン"
+title: "ds4.c — DeepSeek V4 Flash Metal Inference Engine"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept

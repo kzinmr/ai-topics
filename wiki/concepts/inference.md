@@ -1,5 +1,5 @@
 ---
-title: "Inference — LLM推論エンジン比較"
+title: "Inference — LLM Inference Engine Comparison"
 type: concept
 aliases:
   - inference-engines
@@ -10,7 +10,7 @@ tags:
   - mlops
   - local-llm
 status: active
-description: "LLM推論の3大エンジン: llama.cpp (ローカルCPU/GPU), vLLM (サーバー高スループット), SGLang (エージェント最適化)"
+description: "The three major LLM inference engines: llama.cpp (local CPU/GPU), vLLM (server high-throughput), SGLang (agent-optimized)"
 created: 2026-04-09
 updated: 2026-04-30
 sources:

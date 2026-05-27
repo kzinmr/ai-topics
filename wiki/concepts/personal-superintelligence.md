@@ -1,5 +1,5 @@
 ---
-title: "Personal Superintelligence — パーソナルAIの進化と哲学的対立"
+title: "Personal Superintelligence — The Evolution and Philosophical Tensions of Personal AI"
 type: concept
 aliases:
   - personal-ai-agents
