@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2101 | Indexed entries: 1378 | Not in index: 674 |## Entities (677 pages)
+> Last updated: 2026-05-27 | Total pages: 2102 | Indexed entries: 1379 | Not in index: 674 |## Entities (677 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -703,7 +703,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (664 pages)
+## Concepts (665 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -733,6 +733,7 @@
 - [[concepts/agent-security-patterns]] — Agent Security Patterns — Security best practices for AI agent deployments: sandboxing, authentication, authorization, threat modeling
 - [[concepts/agent-skills-skillmd]] — Agent Skills/SKILL.md — Agent skill definition and discovery format: SKILL.md frontmatter, skill retrieval, execution architecture
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution — Postgres-Native Durable Execution: Async processing foundation in the AI Agent context. LLM loop checkpointing, Pi Agent integration patterns, Event-driven inter-agent coordination. Includes comparison with Temporal/DBOS/PGMQ.
+- [[concepts/abliteration]] — Abliteration: Mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. 3,500+ decensored models, 13M downloads. Automated by Heretic tool. Affects Llama, Gemma, Nemotron.
 - [[concepts/activation-steering]] — Activation Steering: Technique for controlling behavior by manipulating feature activation strength during LLM inference. Unlike RLHF, it intervenes at inference time. Goodfire.ai, Golden Gate Claude, Abliteration. Applied to spam classification, style control, and user preference persistence.
 - [[concepts/adam-optimizer]] — Adam (Adaptive Moment Estimation): The most widely used adaptive optimization algorithm in deep learning. Adaptively controls learning rates via exponential moving averages of first and second moments. AdamW separates weight decay to improve generalization. The standard for LLM training.→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.

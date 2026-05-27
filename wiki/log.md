@@ -2,6 +2,26 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] Abliteration Concept Page — FT/Alice Investigation + Heretic Tool
+
+### Pages Created
+- [[concepts/abliteration]] — Abliteration: mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. Covers technical mechanism, Heretic tool automation, scale (3,500+ models, 13M downloads), affected models (Llama 3.3, Gemma 3/4, Nemotron), industry response, Vatican AI encyclical context, and open questions.
+
+### Pages Updated
+- [[index.md]] — Added abliteration entry under Concepts, updated page counts (2101→2102 total, 1378→1379 indexed, Concepts 664→665)
+
+### Raw Articles
+- raw/articles/2026-04-17_alice-abliteration-dangerous-models.md (Alice Lab blog post, April 17, 2026)
+- raw/articles/2026-05-26_ft-abliteration-guardrails-meta-google.md (Financial Times / Resultsense coverage, May 26, 2026)
+
+### Sources
+- Alice Lab: "Okay, Here is How to Build a Bomb" (Iftach Orr, April 17, 2026)
+- Financial Times investigation with Alice (May 26, 2026)
+- Heretic GitHub repository (p-e-w/heretic)
+- Pope Leo XIV Encyclical "Magnifica Humanitas" (May 25, 2026)
+- Comparative Abliteration Methods paper (wiki.charleschen.ai, 2026)
+- Starlog: Heretic Automatic Abliteration technical overview
+
 ## [2026-05-27] X Bookmarks Ingest | Harvey LAB Results + Datacurve DeepSWE Benchmark
 
 ### Pages Created

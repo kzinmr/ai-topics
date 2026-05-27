@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260527T120035Z",
+  "summary_ja": "raw-backlog-ingest batch (5 articles): 4 non-AI articles (game dev retrospective, startup culture comparison, web performance measurement, 2001 essay), 1 AI-relevant but already captured (Ash Vardanian NumKong). All skip.",
+  "decisions": [
+    {
+      "item_id": "backlog-1",
+      "source": "backlog",
+      "source_name": "probablydance.com",
+      "title": "Avalanche Studios NYC Retrospective - An Ambitious Company Ruined by Bad Development Practices",
+      "url": "https://probablydance.com/2025/09/28/avalanche-studios-nyc-retrospective-an-ambitious-company-ruined-by-bad-development-practices/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/probablydance.com--2025-09-28-avalanche-studios-nyc-retrospective-an-ambitious---18f04062.md",
+      "recommended_action": "skip",
+      "reason_ja": "[skip] Non-AI content. Game development studio retrospective about development practices and project management. Not relevant to LLM/AI Agent wiki scope.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "I've wanted to write about this since the studio closed a year ago. Now that Contraband is also canceled I think it's time..."
+    },
+    {
+      "item_id": "backlog-2",
+      "source": "backlog",
+      "source_name": "danluu.com",
+      "title": "How does Boston compare to SV and what do MIT and Stanford have to do with it?",
+      "url": "https://danluu.com/mit-stanford/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--mit-stanford--2976f2d6.md",
+      "recommended_action": "skip",
+      "reason_ja": "[skip] Non-AI content. Archived Google Buzz conversation about startup culture comparison between Boston and Silicon Valley. No AI/LLM relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is an archive of an old Google Buzz conversation on MIT vs. Stanford and Silicon Valley vs. Boston..."
+    },
+    {
+      "item_id": "backlog-3",
+      "source": "backlog",
+      "source_name": "danluu.com",
+      "title": "How web bloat impacts users with slow devices",
+      "url": "https://danluu.com/slow-device/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--slow-device--a9885551.md",
+      "recommended_action": "skip",
+      "reason_ja": "[skip] Non-AI content. Web performance analysis measuring page load times across devices and platforms. While interesting, it has no LLM/AI Agent relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "In 2017, we looked at how web bloat affects users with slow connections. CPU performance for web apps hasn't scaled nearly as quickly as bandwidth..."
+    },
+    {
+      "item_id": "backlog-4",
+      "source": "backlog",
+      "source_name": "paulgraham.com",
+      "title": "The Other Road Ahead",
+      "url": "http://www.paulgraham.com/road.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--road-html--c1454ffc.md",
+      "recommended_action": "skip",
+      "reason_ja": "[skip] Non-AI content. September 2001 essay about web-based software vs desktop software. Historically notable but outside wiki's AI/LLM scope.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "September 2001. This article explains why much of the next generation of software may be server-based, what that will mean for programmers..."
+    },
+    {
+      "item_id": "backlog-5",
+      "source": "backlog",
+      "source_name": "ashvardanian.com",
+      "title": "NumKong: 2'000 Mixed Precision Kernels For All",
+      "url": "https://ashvardanian.com/posts/numkong/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/ashvardanian.com--posts-numkong--e99e0a28.md",
+      "recommended_action": "skip",
+      "reason_ja": "[skip] AI-relevant but already captured. Log.md [2026-05-27] entry and entities/ash-vardanyan.md already document NumKong/SimSIMD/USearch SIMD work. Entity page Sources section lists this URL.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "I'm killing my SimSIMD project and re-launching under a new name -- NumKong -- StringZilla's big brother. Around 2'000 SIMD kernels for mixed precision numerics..."
+    }
+  ]
+}
