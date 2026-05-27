@@ -8,6 +8,28 @@
 
 ---
 
+## [2026-05-27] translate | JP→EN batch — 8 files
+
+### Files Translated
+- concepts/agent-skills.md — 608 JP chars → 0
+- concepts/coding-agents-complexity-budgets.md — 603 JP chars → 0
+- entities/agreement-bug.md — 584 JP chars → 0
+- entities/pluralistic-net.md — 607 JP chars → 0
+- entities/gwern.md — 600 JP chars → 0
+- entities/autoreason.md — 577 JP chars → 0
+- concepts/harness-engineering/agentic-workflows/using-git-with-agents.md — 575 JP chars → 0
+- concepts/agent-harness.md — 571 JP chars → 0
+
+### Summary
+- **Total JP chars removed**: 4,725
+- **Remaining non-log JP files**: 145
+- **Bonus fix**: Removed duplicate created/updated frontmatter keys in agent-skills.md
+
+---
+
+
+
+
 ## [2026-05-27] translate | JP→EN batch — 8 concept files
 
 ### Files Translated
