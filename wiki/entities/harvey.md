@@ -2,17 +2,20 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-05-22
+updated: 2026-05-27
 tags:
   - security
   - company
   - ai-adoption
   - model
+  - agent-evaluation
+  - benchmark
 aliases:
   - "Harvey Agentic SOC" ["Harvey AI", "Counsel AI Corporation"]
 sources:
   - https://www.harvey.ai/
   - https://www.harvey.ai/blog
+  - raw/articles/2026-05-26_harvey-ai-initial-results-legal-agent-benchmark.md
 ---
 
 # Harvey
@@ -63,6 +66,23 @@ Harvey's security team, led by **Mike Parowski**, built an agentic SOC — a sys
 ### Design Principle
 The agentic SOC operates on top of Harvey's trust boundary, separate from Spectre (product agent platform), to prevent privilege escalation — SOC knowledge of detections/internal topology is isolated from product agent access.
 
+## Legal Agent Benchmark (LAB) — May 2026
+
+Harvey released the **Legal Agent Benchmark (LAB)**, an open-source benchmark for evaluating AI agents on complex, long-horizon legal tasks. See [[concepts/legal-agent-benchmark]] for full details.
+
+### Key Highlights
+- **All-pass grading**: Expert-curated rubrics require every criterion to pass — mirroring strict legal review standards
+- **Behavioral traces**: LAB captures agent action sequences (Read → Search → Execute → Write → Validate → Edit) for behavioral analysis
+- **Initial results**: Frontier models complete <10% of legal tasks end-to-end (Opus 4.7 leads at 7.1%)
+- **Jagged intelligence**: Different models lead different practice areas — GPT-5.5 in research-heavy groups, Opus 4.7 in analytical work, Sonnet 4.6 in structured comparison
+- **Cost at frontier**: Opus 4.7 costs ~$50.90/task at ~22 min latency; GPT-5.5 is ~3x cheaper
+- **Self-correction is the strongest signal**: Agents that verify AND revise after drafting improve by +1.5 points on all-pass
+- **Partnership with Artificial Analysis** for a regularly-updated leaderboard
+
+### Behavioral Findings
+- **Positive behaviors**: Thorough research (+0.4), post-draft validation (+0.8), verifying and revising (+1.5), targeted retrieval (+0.3), structured analysis (+0.3)
+- **Negative behaviors**: Noisy tool fan-out (-0.5), drafting without review (-1.2)
+- Opus 4.7: Most self-corrective (more drafting + validation). GPT-5.5: Heaviest search user (wider document coverage)
 
 ## Related
 

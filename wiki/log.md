@@ -2,6 +2,27 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] X Bookmarks Ingest | Harvey LAB Results + Datacurve DeepSWE Benchmark
+
+### Pages Created
+- [[concepts/legal-agent-benchmark]] — Legal Agent Benchmark (LAB): Harvey's open-source agent benchmark for legal tasks with behavioral trace analysis
+- [[concepts/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve): 113-task coding agent evaluation exposing SWE-Bench Pro flaws
+- [[entities/datacurve]] — Datacurve: AI evaluation startup ($17.7M), creator of DeepSWE benchmark
+- [[entities/serena-ge]] — Serena Ge (@serenaa_ge): Datacurve co-author, AI coding evaluation researcher
+
+### Pages Updated
+- [[entities/harvey]] — Added LAB section: Legal Agent Benchmark release, all-pass grading, behavioral findings
+- [[concepts/swe-bench]] — Added DeepSWE Critique section: ~32% verifier error rate, Claude Opus "CHEATED" passes
+
+### Raw Articles
+- raw/articles/2026-05-26_harvey-ai-initial-results-legal-agent-benchmark.md (X article, full body fetched via xurl)
+- raw/articles/2026-05-26_datacurve-deepswe-benchmark-venturebeat.md (VentureBeat coverage)
+
+### Sources
+- Harvey AI: X article (May 26, 2026) — Initial Results on Legal Agent Benchmark
+- Datacurve DeepSWE: VentureBeat (May 26, 2026) — coverage of benchmark release
+- Serena Ge: X announcement (@serenaa_ge, May 26, 2026)
+
 
 ## [2026-05-27] active-crawl | Ling 2.6-1T, self-replicating LLMs, NeMo Agent Toolkit
 
