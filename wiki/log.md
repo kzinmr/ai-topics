@@ -2,6 +2,9 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-05-27
+- 09:00 Created `concepts/ai-native-state-management.md` — Comprehensive synthesis of data flow and state management patterns in AI-native full-stack applications. Covers 8-state taxonomy, 3-layer memory architecture (L1-L3), context engineering (Write/Select/Compress/Isolate), subagent patterns (5 levels), ActiveGraph event sourcing, Delta Channels, storage architecture spectrum (OPFS→db9→S3 Files→Zero Disk), LLM integration paradigms, agent identity separation (SOUL vs MEMORY), and design decision framework. Cross-references 20+ wiki pages. Source: user-provided on-states.md + wiki knowledge base.
+
 
 ---
 

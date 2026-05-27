@@ -744,6 +744,7 @@
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves — A paradigm where agents write their own tools and execute them immediately via hot reload. Systematized by Hugo Bowne-Anderson + Ivan Leo in a February 2026 workshop. Factory pattern + hot reload + hooks + markdown memory compaction. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
+- [[concepts/ai-native-state-management]] — Data Flow and State Management in AI-Native Applications — Comprehensive state taxonomy, memory architecture, context management, and data flow patterns
 - [[concepts/ai-and-authenticity]] — AI and Authenticity
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
 - [[concepts/ai-and-software-engineering]] — AI and Software Engineering
