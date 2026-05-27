@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-26
+updated: 2026-05-27
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -30,6 +30,7 @@ sources: [
   - raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md
   - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
   - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
+  - raw/newsletters/2026-05-26-the-pope-and-anthropic-partner-on-the-ai-ethics-debate.md
 ]
 related: []
 ---
@@ -152,7 +153,9 @@ Anthropic leads enterprise AI adoption with strong market metrics:
 ### Enterprise Adoption Milestones (May 2026)
 
 - **PwC Certification**: 30,000 PwC staff certified on Claude — one of the largest single-organization AI training programs
-- **Ramp AI Index**: Anthropic-powered businesses show 34.4% AI adoption vs. 32.3% for non-Anthropic — indicating measurable productivity advantage
+- **Ramp AI Index (May 2026)**: Anthropic overtook OpenAI in paid business subscriptions for the first time: Anthropic 34.4% (up 3.8% MoM), OpenAI 32.3% (down 2.9%). Overall AI business adoption reached 50.6% of companies tracked by Ramp.
+  - **Three headwinds to sustainability**: (1) Misaligned token volume incentives, (2) Claude performance outages and rate limits, (3) 3x token costs for image-containing prompts
+  - **Caveat**: Ramp notes the market is fluid and cost-sensitive; Anthropic's lead is not guaranteed
 - **Four Fronts of AI Competition**: Anthropic published a paper identifying the 4 dimensions of AI competition (models, deployment, trust, economics)
 
 ### Colossus 1 — Memphis 300MW Deployment

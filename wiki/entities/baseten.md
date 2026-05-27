@@ -2,7 +2,7 @@
 title: "Baseten"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-27
 tags:
   - company
   - infrastructure
@@ -40,3 +40,9 @@ ML inference platform providing infrastructure, tooling, and expertise for deplo
 - [[entities/openai]] — OpenAI API offers competing inference endpoints
 - [[entities/anthropic]] — Claude API available via competing inference providers
 - [[entities/replicate]] — Competitor in cloud ML model hosting and inference
+
+## Decacorn Status (May 2026)
+
+By May 2026, Baseten had reached **decacorn status** ($10B+ valuation), positioning it alongside [[entities/fireworks-ai]] as a leading AI infrastructure platform. The company's growth reflects surging enterprise demand for reliable, multi-model inference infrastructure.
+
+Source: AINews (Latent Space), May 2026.

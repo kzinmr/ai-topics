@@ -13,6 +13,7 @@ related:
 sources:
   - raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
+  - raw/newsletters/2026-05-26-is-saas-dead.md
 ---
 
 # Model Context Protocol (MCP)

@@ -2,7 +2,7 @@
 title: OpenRouter
 type: entity
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-27
 tags:
   - entity
   - platform
@@ -61,3 +61,9 @@ OpenRouter occupies a unique position in the LLM infrastructure stack — it is 
 
 - [OpenRouter State of AI 2025](https://openrouter.ai/state-of-ai) — Full study
 - [OpenRouter Platform](https://openrouter.ai/) — Official website
+
+## Decacorn Trajectory (May 2026)
+
+By May 2026, OpenRouter was reported to be on a **decacorn trajectory** ($10B+ valuation potential), following [[entities/fireworks-ai]] and [[entities/baseten]] in the AI infrastructure decacorn wave. OpenRouter's position as a neutral model routing layer — aggregating 300+ models from competing providers — makes it a uniquely valuable infrastructure component as enterprises seek multi-provider strategies.
+
+Source: AINews (Latent Space), May 2026.

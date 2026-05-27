@@ -1,10 +1,10 @@
 ---
 title: "Jack Clark"
 created: 2026-05-05
-updated: 2026-05-10
+updated: 2026-05-27
 type: entity
 tags: [person, company, anthropic, safety, prediction, governance]
-sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md]
+sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md]
 ---
 
 # Jack Clark
@@ -50,6 +50,18 @@ Clark frames AI alignment not as a binary problem but as a compounding one — e
 
 ### The Amdahl's Law Economy
 As AI accelerates digital work, physical-world bottlenecks (drug trials, manufacturing) become the primary constraints on economic growth — what Clark calls "Amdahl's Law for the economy."
+
+
+### Import AI 458: Reckoning with the Future (May 2026)
+
+In Import AI 458, Clark wrote a deep personal essay on how exponential AI progress forces individuals to make an unavoidable choice: "explore the future or retreat from the present." The issue combines a lecture essay (Parts 1-3) with a fictional story. Core themes:
+
+- **Epoch AI Capabilities Index**: Performance scales predictably with compute and data — a framework for forecasting AI advancement
+- **Personal AI journey**: From dealing with typos in 2023 to having an "deep intellectual partner" by 2026
+- **Import AI as superpower**: What started as a hobby newsletter became a powerful analysis tool through AI-assisted synthesis
+- **Individual choice**: Clark argues that continued exponential progress removes the option of neutrality — everyone must decide their relationship with accelerating AI
+
+See [[raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md]] for full text.
 
 ## Writing Style
 Clark writes with a distinctive combination of technical precision and literary flair. His newsletter intros often set context through historical analogies or science fiction references before diving into data. He is notably willing to make concrete, falsifiable predictions with explicit probability estimates.

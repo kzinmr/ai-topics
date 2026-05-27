@@ -1,7 +1,7 @@
 ---
 title: "Perplexity"
 created: 2026-05-06
-updated: 2026-05-22
+updated: 2026-05-27
 type: entity
 tags:
   - entity
@@ -21,6 +21,7 @@ sources:
   - raw/newsletters/2026-05-06-ainews-silicon-valley-gets-serious-about-services.md
   - https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious
   - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
+  - raw/newsletters/2026-05-26-is-saas-dead.md
 ---
 
 
@@ -68,6 +69,18 @@ Perplexity's verticalization strategy leverages:
 1. **Licensed data moats** — agreements with premium data providers create barriers to entry
 2. **Workflow specialization** — 35 analyst workflows represent domain expertise, not just search
 3. **Platform economics** — each vertical adds to the same underlying AI research platform
+
+
+## Perplexity Bumblebee (Open-Source Safety Scanner, May 2026)
+
+Perplexity open-sourced **Bumblebee**, a security scanner for developer machines. Key features:
+
+- **Scope**: Inspects risky packages, browser/editor extensions, and AI agent configurations
+- **Safety-first**: Scans without executing code — analyzes package metadata, permissions, and dependency chains
+- **Supply chain focus**: Detects supply-chain risks in AI tooling (agent configs, model registries, plugin ecosystems)
+- **Open source**: Released publicly for community auditing and extension
+
+This positions Perplexity in the growing AI supply-chain security space, alongside tools for MCP server vetting, agent sandboxing, and dependency auditing.
 
 ## Related Concepts
 

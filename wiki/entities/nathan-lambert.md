@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-04
+updated: 2026-05-27
 type: entity
 aliases:
   - natolambert
@@ -11,6 +11,7 @@ sources:
   - https://www.interconnects.ai/p/the-distillation-panic
   - https://www.natolambert.com/
   - https://www.interconnects.ai/
+  - https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may
 ---
 
 
@@ -121,6 +122,18 @@ Lambert hosted **Mark McQuade** (CEO) and **Lucas Atkins** (CTO) of [[entities/a
 - Training on **22,048 NVIDIA B300 GPUs** via TorchTitan — the largest known non-hyperscaler training cluster
 - The **$20M training cost** and business model of selling post-trained open models to enterprises
 - Lambert's assessment that Arcee is "taking the most real approach to monetizing open models"
+
+
+### May 2026: Some ideas for what comes next
+
+Published a comprehensive AI landscape analysis covering the state of the industry in May 2026. Key arguments:
+
+- **Open models lack an "agent moment"**: Unlike Claude Code + Opus 4.5 driving Anthropic's surge, open models have no equivalent killer application — 5-6 months behind and counting
+- **Gemini gap**: Google's Gemini lacks competitors for Claude Code and Codex in the coding agent space, leaving a two-horse race between Anthropic and OpenAI
+- **No open-weights Mythos this year**: Despite progress, a truly frontier open model comparable to Anthropic's Mythos is unlikely in 2026
+- **American open models gaining momentum**: Nvidia Nemotron and Google Gemma 4 under Apache 2.0 are outperforming Qwen in key benchmarks, shifting the open-model center of gravity
+- **Anthropic vs OpenAI intensifies**: Both companies are just hitting their stride; competition is accelerating rather than consolidating
+- **Power structures asserting control**: Existing institutions (governments, large corporations) are increasingly shaping AI development through regulation, compute allocation, and partnership strategies
 
 ## Core Ideas
 

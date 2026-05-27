@@ -3843,3 +3843,26 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - raw/articles/lucumr.pocoo.org--2026-5-26-clankers--c596fc2e.md
 - raw/articles/simonwillison.net--2026-may-26-the-pressure--405f1be6.md
 - raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--4c0adac9.md
+
+
+## [2026-05-27] newsletter-wiki-ingest | Daily newsletter enrichment (6 reference items)
+
+### Pages Updated / Enriched
+- **[[entities/jack-clark]]** — Added Import AI 458: Reckoning with the future section (Epoch AI Capabilities Index, personal AI journey, individual choice theme)
+- **[[entities/nathan-lambert]]** — Added May 2026: Some ideas for what comes next section (open models lack agent moment, Gemini gap, American open models gaining momentum, Anthropic vs OpenAI intensifies)
+- **[[entities/anthropic]]** — Enriched Market Position section with detailed Ramp data (Anthropic 34.4% beat OpenAI 32.3%, three headwinds, 50.6% AI adoption)
+- **[[entities/perplexity]]** — Added Bumblebee Open-Source Safety Scanner section (developer machine scanning, supply-chain risk detection)
+- **[[entities/fireworks-ai]]** — Added AI Infra Decacorn Status (May 2026) section with cross-references to baseten.md and openrouter.md
+- **[[entities/baseten]]** — Added Decacorn Status (May 2026) section
+- **[[entities/openrouter]]** — Added Decacorn Trajectory (May 2026) section
+- **[[concepts/model-context-protocol-mcp]]** — Added Ben's Bites newsletter source reference
+
+### Sources
+- raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md
+- raw/newsletters/2026-05-26-some-ideas-for-what-comes-next-may-2026.md
+- raw/newsletters/2026-05-26-the-pope-and-anthropic-partner-on-the-ai-ethics-debate.md
+- raw/newsletters/2026-05-26-is-saas-dead.md
+- raw/newsletters/2026-05-27-ainews-new-ai-infra-decacorns-fireworks-baseten-with-openrouter-on-the-way.md
+
+### Triage
+- 0 takes, 6 reference items, 4 skip items processed
