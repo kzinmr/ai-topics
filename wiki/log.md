@@ -4,6 +4,25 @@
 
 ## [2026-05-27] translate | JP->EN batch — 8 files (2,575 chars)
 
+## [2026-05-27] ingest | Polar (ProRL-Agent-Server) paper + entity page
+
+### Raw Paper
+- [[raw/papers/2026-05-22_2605.24220_polar-agent-rl-harness.md]] — arXiv:2605.24220, Polar: Agentic RL on Any Harness at Scale (NVIDIA, May 22 2026)
+- Registered in papers_index.json (arxiv:2605.24220)
+
+### Entity Page
+- Created [[entities/polar-prorl-agent-server.md]] — entity page
+  - Tags: nvidia, reinforcement-learning, grpo, agent-training, agent-infrastructure, agent-harness, coding-agents, infrastructure, llm-proxy, benchmark, evaluation, open-source, framework
+  - Links to: [[concepts/slime-rl]], [[concepts/grpo-rl-training]], [[concepts/nemo-rl]], [[entities/claude-code]]
+  - Sources: raw/papers/2026-05-22_2605.24220_polar-agent-rl-harness.md, GitHub README
+
+### Sources ingested
+- https://arxiv.org/abs/2605.24220
+- https://github.com/NVIDIA-NeMo/ProRL-Agent-Server
+
+### Index
+- Updated index.md: Total pages 2096→2097, Entities 674→675, Indexed entries 1375→1376
+
 
 
 ### Files Translated

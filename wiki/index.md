@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2096 | Indexed entries: 1375 | Not in index: 674 |## Entities (674 pages)
+> Last updated: 2026-05-27 | Total pages: 2097 | Indexed entries: 1376 | Not in index: 674 |## Entities (675 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -430,6 +430,7 @@
 - [[entities/philipp-schmid]] — Philipp Schmid (@_philschmid) — Senior AI Developer Experience Engineer at Google DeepMind, ex-Hugging Face Tech Lead. Prolific AI educator, deployment optimization expert, agent harness advocate.
 - [[entities/playerzero]]
 - [[entities/pliny-prompter]] — Pliny the Prompter (elder_plinius) — World's most prolific AI jailbreaker. TIME100 AI 2025. L1B3RT4S (18.6k stars), G0DM0D3, 0BL1T3R4TUS. Prompt injection, red teaming, system prompt leaks. BASI Discord community.
+- [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server) — NVIDIA's black-box agent RL rollout infrastructure. Proxies LLM API calls to capture token-faithful trajectories without harness modification. GRPO on Qwen3.5-4B: +22.6 SWE-Bench (Codex). Built on OpenHands, registered as NeMo Gym environment.
 - [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
