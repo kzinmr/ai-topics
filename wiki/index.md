@@ -122,7 +122,7 @@
 - [[entities/apurva-gandhi]] — Apurva Gandhi — CMU PhD student, RAO (Recursive Agent Optimization), ex-Microsoft Copilot
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
-- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "A Language For Agents" (Feb 2026) and "Building Pi With Pi" (May 2026) on AI slop in open source issue trackers. Former Sentry principal architect. [[concepts/agent-ergonomics]] [[concepts/ai-slop]]
+- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "Building Pi With Pi" (May 2026) on AI slop in open source, and "Clanker: A Word For The Machine" (May 2026) on resisting anthropomorphization of AI systems. Former Sentry principal architect. [[concepts/agent-ergonomics]] [[concepts/ai-slop]]
 - [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework.
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI (first agentic CRM), builder-as-artist philosophy, solar car racer, NASA satellite engineer
@@ -511,7 +511,7 @@
 - [[entities/teknium]] — Ryan, known online as **Teknium** (@teknium1), is the **Co-founder and Head of Post-Training** at **Nous Research**. He is the lead architect behind both the **Hermes model family** and the **Herme...
 - [[entities/telegram]] — Telegram is a cloud-based messaging platform and bot ecosystem that supports extensive third-party integrations, AI-powered bots, Mini Apps (Web Apps), and managed bot infrastructure.
 - [[entities/telegram-managed-bots]] — Telegram Managed Bots
-- [[entities/tencent-hy3]] — Tencent Hy3 Preview — 295B/21B active MoE model, open-source. 256K context, 40% inference efficiency gain. Powers Yuanbao, CodeBuddy. OpenRouter access.
+- [[entities/tencent-hy3]] — Tencent Hy3 Preview — 295B/21B active MoE model, open-source. 256K context, 40% inference efficiency gain. Powers Yuanbao, CodeBuddy. OpenRouter access. Topped OpenRouter rankings (May 2026) — mysterious popularity despite minimal community discussion. Effective pricing analysis vs DeepSeek V4 Flash cache advantage.
 - [[entities/teortaxestex]] — **X/Twitter** | @teortaxesTex |
 - [[entities/terrible-software]] — **URL:** https://terriblesoftware.org
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
@@ -753,7 +753,7 @@
 - [[concepts/ai-and-software-engineering]] — AI and Software Engineering
 - [[concepts/ai-bubble]] — The AI Bubble thesis: speculative investment disconnected from fundamentals. Circular revenue dependencies (OpenAI-hyperscaler), unrealistic projections, infrastructure misalignment. Ed Zitron's primary chronicler role.
 - [[concepts/ai-api-abuse]] — AI API Abuse
-- [[concepts/ai-bubble-economics]] — AI Bubble Economics
+- [[concepts/ai-bubble-economics]] — AI Bubble Economics — Analysis of the structural unsustainability of AI industry economics. Covers subsidy models, circular financing, the subprime AI crisis thesis, Doctorow's internet-vs-AI bubble comparison, and Zitron's "Business Idiot" thesis on management-driven AI hype.
 - [[concepts/ai-assisted-development]] — AI-Assisted Development
 - [[concepts/ai-coding-reliability]] — AI Coding Reliability
 - [[concepts/ai-coding-cost-optimization]] — AI Coding Cost Optimization (Ronin's Complete System) — $4,200→$312/month through context discipline, multi-model routing, prompt caching, and 7 practical techniques. Router config, benchmarks, 30-day rollout plan.
@@ -1269,7 +1269,7 @@
 - [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns
 - [[concepts/ai-agent-architecture]] — AI Agent Architecture
 - [[concepts/ai-agent-memory]] — AI Agent Memory
-- [[concepts/ai-agent-security]] — AI Agent Security
+- [[concepts/ai-agent-security]] — AI Agent Security — Security vulnerabilities unique to AI agents: tool-chaining attacks (91%), goal drift (89%), memory poisoning (94%). Real-world incidents: Moltbook (770K agents), Microsoft Copilot Cowork exfiltration, curl AI-flooded vulnerability reports.
 - [[concepts/ai-agent-traps]] — AI Agent Traps
 - [[concepts/ai-agents]] — AI Agents
 - [[concepts/ai-agents-autonomy-planning-file-operations-delegation-sandbox]] — "ai-agents, autonomy, planning, file-operations, delegation, sandbox"

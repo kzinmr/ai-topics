@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-27
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: []
+sources: [raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md]
 ---
 
 
@@ -201,6 +201,96 @@ The AI bubble's collapse would end a hype cycle and trigger a market correction 
 
 ---
 
+## The Internet Bubble vs. The AI Bubble (Cory Doctorow, May 2026)
+
+In his May 26, 2026 Pluralistic piece, **Cory Doctorow** argues that the AI bubble is fundamentally different from the dot-com/internet bubble — and the differences suggest AI's bubble is structurally worse:
+
+### The Worker Demand Inversion
+
+The most telling difference between the internet era and the AI era:
+
+| Internet Era (1990s–2000s) | AI Era (2020s) |
+|---|---|
+| Workers **smuggled** web tools into enterprises | Bosses **force** AI tools onto workers |
+| IT departments tried to **block** the web | IT departments are **mandating** AI usage |
+| Young people were **passionate devotees** | Gen Z **hates** AI (Gallup 2026 study) |
+| Workers demanded access to do their jobs better | Workers are threatened with firing if AI usage isn't high enough |
+
+> "Virtually every major company now has a program to force workers into using AI." — Doctorow, citing CNBC/Business Insider reports
+
+### Unit Economics: Divergent Trajectories
+
+| Internet Era | AI Era |
+|---|---|
+| Every new user brought the web **closer to profitability** | Every new user makes AI **less profitable** |
+| Every new use case improved unit economics | Every new use case increases losses |
+| Great unit economics, just needed scale | "Dogshit unit economics" (Ed Zitron) |
+
+Doctorow introduces the concept of **centaurs vs. reverse-centaurs**:
+- **Centaurs**: Workers assisted by technology (labor-driven automation → quality improvement)
+- **Reverse-Centaurs**: Workers recruited to serve as peripherals for machines (capital-driven automation → throughput at quality's expense)
+
+Workers with high autonomy can adopt AI as centaurs; those under coercion become reverse-centaurs.
+
+### Voluntary AI Adoption Patterns
+
+Two groups adopt AI voluntarily:
+1. **High-autonomy workers** who can integrate AI on their own terms
+2. **Workers in bullshit jobs** who see AI handling tasks they view as unimportant — but risk substituting AI for work that genuinely requires human judgment
+
+> "What the technology does is nowhere near as important as who the tech does it *for* and who the tech does it *to*."
+
+---
+
+## Enterprise Adoption Reality Check (May 2026)
+
+### Uber: "Harder to Justify AI Costs"
+
+On May 24, 2026, **Uber COO Andrew Macdonald** delivered one of the most significant reality checks on enterprise AI spending:
+
+- **Uber exhausted its entire 2026 AI token budget in just ~4 months**
+- Macdonald stated it's becoming **"harder to justify AI costs within the company"**
+- **"That link is not there yet"** — no clear connection between token spend and actually shipping 25% more useful consumer features
+- Uber created a **leaderboard of biggest AI users**, incentivizing wasteful token burning for bragging rights
+
+**Gary Marcus** flagged this on X (700K+ views): "If enough other companies report the same, the bubble pops."
+
+### The "Business Idiot" Thesis (Ed Zitron, May 2026)
+
+In "Revenge of The Business Idiot" (May 26, 2026), Ed Zitron argues that the AI boom is driven by a management class fundamentally disconnected from production:
+
+- **LLMs perfectly serve "Business Idiots"** — executives who don't do work, can't distinguish real output from plausible mimicry, and are easily impressed by demos
+- **AI companies as "natural grifting instruments"**: Capital-intensive, perpetually fundraising, promising to automate everything while delivering work-shaped products
+- **Salesforce exposed**: Bloomberg revealed Agentforce capabilities shown in promotional videos are **mostly mock-ups** — not live, not widely deployed
+- **Salesforce spends $300M/year on Anthropic tokens** for a product with only $800M annualized revenue (~$66M/month vs $11B+/quarter total revenue)
+- **No company has shown clear ROI**: "Somebody please show me a company spending millions of dollars on AI tokens that can also express a clear, indisputable return on investment"
+
+### Zitron's Core Argument
+
+The AI industry survives on **kayfabe** (pro-wrestling term for maintained illusion):
+- AI appears to do work, managers who don't understand work are impressed
+- Journalists lack technical depth to scrutinize claims
+- "Objectivity" norms prevent calling out obvious fraud
+- Nobody asks the fundamental question: **what does the money actually buy?**
+
+> "Anthropic and OpenAI's revenue growth is only possible thanks to a near-perpetual misinformation campaign that overstates both the current and future capabilities of LLMs."
+
+### Three Imminent IPO Risks
+
+Zitron identifies three companies expected to IPO at ~$4 trillion total valuation — all unprofitable, premised on endless customer demand that is already showing cracks:
+1. **OpenAI** — negative 122% non-GAAP operating margin in Q1 2026, ChatGPT growth stalled
+2. **Anthropic** — raised $75B combined since Jan 2026; Q2 "profitability" achieved via artificially suppressed costs
+3. Index funds will be forced to absorb these IPOs, exposing retirement accounts to bubble risk
+
+### NVIDIA's Circular Financing
+
+- NVIDIA invested **tens of billions** in AI data center companies (IREN, CoreWeave, Anthropic, OpenAI)
+- Committed **$30 billion** in cloud service agreements — paying customers to buy its products
+- Now the **5th largest AI compute purchaser** behind OpenAI, Anthropic, Microsoft, and Meta
+- Only added **$600M cash** quarter-over-quarter despite revenue beats — nearly all profit recycled into AI investments
+
+---
+
 ## Gary Marcus: "Investors Were Sold a Bill of Goods"
 
 Gary Marcus has been one of the most consistent critics of AI economics, arguing that:
@@ -242,7 +332,10 @@ Gary Marcus has been one of the most consistent critics of AI economics, arguing
 - [Edward Zitron: How Much Of The AI Bubble Is Real?](https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/) (Mar 2026)
 - [Edward Zitron: The Subprime AI Crisis Is Here](https://www.wheresyoured.at/the-subprime-ai-crisis-is-here/) (Mar 2026)
 - [Edward Zitron: AI Isn't Too Big To Fail](https://www.wheresyoured.at/premium-ai-isnt-too-big-to-fail/) (Apr 2026)
+- [Edward Zitron: Revenge of The Business Idiot](https://www.wheresyoured.at/the-revenge-of-the-business-idiot/) (May 2026)
 - [Edward Zitron: OpenAI CFO Doesn't Believe Company Ready For IPO](https://www.wheresyoured.at/openai-cfo-news/) (Apr 2026)
+- [Cory Doctorow: The AI bubble isn't like the internet bubble](https://pluralistic.net/2026/05/26/the-ai-will-continue/) (May 2026)
+- [Gary Marcus: If enough other companies report the same, the bubble pops](https://garymarcus.substack.com/p/if-enough-other-companies-report) (May 2026)
 - [D.T. Frankly: The Sandpile and Shadow](https://www.dtfrankly.com/sandpile-shadow-cascade) (Mar 2026)
 - [Yahoo Finance: Recent Struggles of Top AI Stocks](https://finance.yahoo.com/news/recent-struggles-top-ai-stocks-154234199.html) (2026)
 - [Business Insider: Tech Stock Crash & AI Skepticism](https://businessinsider.com/tech-stock-crash-ai-chatgpt5-gary-marcus-nvda-orcl-crwv-2026-2) (2026)

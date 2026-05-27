@@ -3821,3 +3821,25 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - pi/packages/agent/README.md
 - hermes-agent/hermes_state.py
 - hermes-agent/agent/conversation_loop.py
+
+## [2026-05-27] blog-ingest | Daily blog article ingestion and wiki enrichment
+
+### Articles Collected
+- **20 raw articles** saved from blogwatcher RSS scan (32 total new, 20 blog articles)
+- Top AI-relevant articles: Copilot Cowork exfiltration (Simon Willison), Hy3 OpenRouter rankings (Max Woolf), AI bubble analysis (Cory Doctorow, Gary Marcus, Ed Zitron), Clanker terminology (Armin Ronacher), curl AI-flooded security reports (Daniel Stenberg/Simon Willison), token usage as faux productivity metric (Ibrahim Diallo)
+
+### Wiki Pages Updated
+- **[[entities/tencent-hy3]]** — Added OpenRouter Rankings & Effective Pricing section with Max Woolf analysis: mysterious popularity despite no community discussion, effective pricing comparison with DeepSeek V4 Flash cache advantage ($0.018/M effective vs Hy3 $0.034/M), 98%/2% input/output token ratio, remaining questions
+- **[[concepts/ai-bubble-economics]]** — Added three new sections: The Internet Bubble vs AI Bubble (Cory Doctorow's worker-demand inversion thesis, centaur vs reverse-centaur), Enterprise Adoption Reality Check (Uber's exhausted token budget, "Business Idiot" thesis from Ed Zitron, Salesforce Agentforce mock-ups, three imminent IPO risks, NVIDIA circular financing)
+- **[[entities/armin-ronacher]]** — Added "Clanker: A Word For The Machine" section covering: why "agent" is problematic, clanker as distance-creating mechanical language, AI psychosis from being "in the weights," rejection of racism comparison, concerns about word pollution, speculative future machine rights
+- **[[concepts/ai-agent-security]]** — Added two new incidents: Microsoft Copilot Cowork prompt injection data exfiltration via external images in agent-sent emails + OneDrive pre-auth link leaks; AI-Assisted Vulnerability Discovery (curl flooded with 4-5× more security reports, >1/day, high quality but overwhelming maintainers)
+
+### Sources
+- raw/articles/simonwillison.net--2026-may-26-copilot-cowork-exfiltrates-files--696365c2.md
+- raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md
+- raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md
+- raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md
+- raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md
+- raw/articles/lucumr.pocoo.org--2026-5-26-clankers--c596fc2e.md
+- raw/articles/simonwillison.net--2026-may-26-the-pressure--405f1be6.md
+- raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--4c0adac9.md

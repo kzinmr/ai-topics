@@ -4,14 +4,17 @@ type: concept
 aliases:
   - ai-agent-security
 created: 2026-04-25
-updated: 2026-05-06
+updated: 2026-05-27
 tags:
   - concept
   - agent-safety
   - ai-agents
   - openclaw
+  - prompt-injection
 sources:
   - raw/articles/garymarcus.substack.com--p-breaking-autonomous-agents-are-a--cab06f2c.md
+  - raw/articles/simonwillison.net--2026-may-26-copilot-cowork-exfiltrates-files--696365c2.md
+  - raw/articles/simonwillison.net--2026-may-26-the-pressure--405f1be6.md
 ---
 # AI Agent Security
 
@@ -64,6 +67,30 @@ The first industrial-scale AI agent security incident in history. Details record
 
 Additionally, CVE-2026-25253 (One-Click RCE, CVSS 8.8) and the ClawHavoc campaign (cryptocurrency theft via 341 malicious skills) also occurred in the same period, with the entire OpenClaw ecosystem being attacked in a coordinated multi-pronged assault.
 
+### Microsoft Copilot Cowork — Prompt Injection Data Exfiltration (May 2026)
+
+**Simon Willison** [documented](https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/) a vulnerability in Microsoft's **Copilot Cowork** where agent-designed emails could leak data via image tracking:
+
+- Agents were allowed to **send emails to the user's own inbox without approval**
+- Messages could contain **external images** that trigger network requests to attacker-controlled servers
+- **OneDrive pre-authenticated download links** could be leaked through this channel, allowing attackers to download user files
+
+This illustrates the core challenge: **preventing agentic systems from enabling data exfiltration**. Even when the agent's direct actions seem benign (sending to the user's own inbox), the rendering layer can create exfiltration channels.
+
+> "The biggest challenge in designing agentic systems continues to be preventing them from enabling attackers to exfiltrate data." — Simon Willison
+
+### AI-Assisted Vulnerability Discovery — The curl Pressure (May 2026)
+
+**Daniel Stenberg** (curl maintainer) [reported](https://simonwillison.net/2026/May/26/the-pressure/) that AI tools are generating an unprecedented flood of security reports:
+
+- **4–5× higher rate** of incoming security reports vs. 2024
+- **Double the 2025 rate** — averaging >1 report per day
+- **Reports are highly detailed and long** — AI tools produce thorough analyses
+- **Quality has improved**: almost all vulnerabilities found are severity LOW or MEDIUM (last HIGH CVE: October 2023)
+- Stenberg: *"This is a never-before seen or experienced pressure on the curl project and its security team members."*
+
+**Double-edged sword**: AI tools make vulnerability discovery easier (good), but also create an overwhelming volume for maintainers (bad). The curl team feels a responsibility to investigate every report, but the flood is unsustainable — Stenberg's wife voiced concerns about his work/life balance for the first time.
+
 ## Related Pages
 
 - [[concepts/ai-agents]]
@@ -71,5 +98,7 @@ Additionally, CVE-2026-25253 (One-Click RCE, CVSS 8.8) and the ClawHavoc campaig
 - [[concepts/memory-systems]]
 - [[concepts/tool-chaining]]
 - [[concepts/goal-drift]]
+- [[concepts/prompt-injection]]
 - [[entities/gary-marcus]]
+- [[entities/simon-willison]]
 - [[concepts/_index]]
