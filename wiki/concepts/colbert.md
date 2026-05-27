@@ -3,7 +3,7 @@ title: "ColBERT (Late Interaction Retrieval)"
 type: concept
 aliases: [late-interaction, multi-vector-retrieval, MaxSim]
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-27
 tags: [colbert, late-interaction, maxsim, multi-vector, information-retrieval, embeddings, benchmark]
 related:
   - entities/omar-khattab
@@ -15,6 +15,7 @@ related:
   - entities/embeddings
 sources:
   - raw/articles/2026-05-20_clavie-tsukuba-ir-talk-colbert-late-interaction.md
+  - raw/articles/ashvardanian.com--posts-numkong--e99e0a28.md
 ---
 
 # ColBERT (Late Interaction Retrieval)
@@ -95,9 +96,32 @@ Due to scoring cost, ColBERT requires:
 | Problem | Solution |
 |---|---|
 | Candidate generation | PLAID (approximate search), XTR (targeted tokens), MUVERA (single large vector) |
-| Scoring speed | maxsim-cpu, FlashMaxSim (hardware optimization) |
+| Scoring speed | maxsim-cpu, FlashMaxSim (hardware optimization), NumKong fused epilogue (CPU SIMD) |
 | Storage | PLAID 1-bit quantization → same order of magnitude as single-vector |
 | Implementation | PyLate ecosystem (flexible training + retrieval library) |
+
+## GPU-Free MaxSim via Fused Epilogue (NumKong)
+
+A significant practical bottleneck in ColBERT deployment is the **intermediate score matrix materialization**. Traditional implementations (NumPy, PyTorch) compute the full `N_query × N_doc` similarity matrix before applying the Max reduction, leading to megabytes of temporary memory for real workloads with thousands of tokens.
+
+[[entities/ash-vardanyan|Ash Vardanyan]]'s **NumKong** library (rebranded from SimSIMD, 2026) implements a **fused epilogue** approach that eliminates this intermediate matrix entirely. Tiles flow from one register to another and are progressively reduced to a single scalar, without ever materializing the full score matrix:
+
+```python
+import numkong as nk
+query_packed = nk.maxsim_pack(query.astype(nk.bfloat16))
+doc_packed = nk.maxsim_pack(doc.astype(nk.bfloat16))
+result = nk.maxsim_packed(query_packed, doc_packed)  # no intermediate matrix
+```
+
+**Benchmark** (2048³, single Xeon4 core):
+| Implementation | Throughput | Memory | Accuracy |
+|---|---|---|---|
+| NumPy f32→f32 | 129 gso/s | Full score matrix materialized | Baseline |
+| NumKong BFloat16 | **428 gso/s** (3.3× faster) | 4× less memory, half input memory | 3.6% error vs 1.8% (PyTorch MKL) |
+
+The same fused pattern extends to `nk_bilinear` — computing `aᵀ × C × b` without materializing the `C × b` intermediate vector. This approach is especially valuable for CPU-only deployments where GPU memory bandwidth is unavailable.
+
+**Key design principle**: "Dequantize first, then process." NumKong rejects block-scaled formats (MXFP4, NVFP4) for dot product primitives because shared exponents couple elements — violating the invariant that `dot(a, b)` treats every element independently.
 
 ## Open Problems
 

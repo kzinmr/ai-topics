@@ -6,6 +6,49 @@
 ## [2026-05-27] translate | JP→EN batch — 8 files
 
 ### Files Translated
+- [[concepts/session-hierarchy-management]]
+- [[concepts/fine-tuning/grpo-rl-training]]
+- [[concepts/proprietary-context-ai-era-governance-diamond-chart]]
+- [[concepts/bitsandbytes]]
+- [[concepts/ai-benchmarks-and-community]]
+- [[entities/thariq-shihipar]]
+- [[concepts/thin-bi]]
+- [[entities/shannhk]]
+
+### Files Renamed
+- `concepts/proprietary-context-ai時代の組織ガバナンスとdiamond型組織図.md` → `proprietary-context-ai-era-governance-diamond-chart.md`
+- `concepts/aiベンチマークとコミュニティ.md` → `ai-benchmarks-and-community.md`
+
+### Summary
+218 JP chars removed. 50 files (468 chars) remaining.
+
+
+---
+
+## [2026-05-27] raw-backlog-ingest | NumKong fused MaxSim — 1 take, 4 skips
+
+### Triage Results
+- **take** (★★★★★): ashvardanian.com/posts/numkong/ — SIMD optimized ColBERT MaxSim via fused epilogue, eliminating intermediate score matrix materialization. 3.3× speedup over NumPy on Xeon4, 4× less memory. Also ForkUnion NUMA-aware thread pool.
+- **skip**: probablydance.com (Avalanche Studios retrospective — game dev, non-AI)
+- **skip**: danluu.com/mit-stanford (urban tech comparison — non-AI)
+- **skip**: danluu.com/slow-device (web bloat performance — non-AI)
+- **skip**: paulgraham.com/road.html (2001 server software essay — non-AI)
+
+### Files Created
+- concepts/fused-kernels.md — New concept page for fused kernel optimization pattern (progressive reduction eliminating intermediate buffers). Covers ColBERT MaxSim, bilinear forms, Transformer attention fusion, and the "dequantize first" design principle.
+
+### Files Enriched
+- concepts/colbert.md — Added "GPU-Free MaxSim via Fused Epilogue (NumKong)" section with benchmark table (NumPy 129 gso/s vs NumKong 428 gso/s), code examples, and design principle. Updated sources + date.
+- entities/ash-vardanyan.md — Added ForkUnion NUMA-aware thread pool section, expanded NumKong description with fused epilogue details and block-scaling rejection policy. Added cross-references to fused-kernels concept.
+
+### Cross-References
+- concepts/fused-kernels → extends concepts/simd-optimization, applies-to concepts/colbert, implemented-by entities/ash-vardanyan
+- concepts/colbert → related entities/ash-vardanyan, sources updated
+- entities/ash-vardanyan → related concepts/fused-kernels, entities/forkunion
+
+## [2026-05-27] translate | JP→EN batch — 8 files
+
+### Files Translated
 - concepts/agent-skills-skillmd.md — removed 54 JP chars, redirect page
 - entities/codex.md — removed 52 JP chars, Basic Information table
 - concepts/harness-design-long-running-apps.md — removed 49 JP chars, overview sentence

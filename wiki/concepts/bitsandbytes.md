@@ -46,7 +46,7 @@ from bnb.nn import Linear4bit
 
 layer = Linear4bit(4096, 4096)
 layer.load_state_dict(torch.load("weights.pt"))
-layer = layer.to("cuda")  # ← 量子化はここで発生
+layer = layer.to("cuda")  # ← Quantization happens here
 ```
 
 | Parameter | Type | Default | Description |
@@ -78,7 +78,7 @@ Utilizes the cumulative distribution function (CDF) of the standard normal distr
 3. Map to the normalized range [-1, 1]
 
 ```
-実装: create_normal_map() 関数
+Implementation: create_normal_map() function
 α = 929/960 ≈ 0.9677083  # Coefficient to clip the tails of the normal distribution
 ```
 
@@ -168,7 +168,7 @@ Hugging Face Transformers
 
 T4 16GB GPUでのベンチマーク:
 
-| モデル | FP16サイズ | Method | Result |
+| Model | FP16 Size | Method | Result |
 |-------|-----------|------|------|
 | Llama-7B | 14GB | 4-bit NF4 + bf16 | **No OOM** |
 | Llama-13B | 27GB | 4-bit NF4 + fp16 + GC + DQ | **No OOM** (seq=1024) |

@@ -107,7 +107,7 @@ Human → Head Chef (Orchestrator) → Line Cooks (Subagents) → Results
 
 ### The State Principle
 
-> **状態はファイルとタスクキューに保存され, 会話履歴には保存されない. **
+> **State lives in files and task queues, not in conversation history.**
 > *(State lives in files and task queues, not in conversation history.)*
 
 This is the unifying principle between Level 1 and Level 2. Whether you're using `/compact` in a single session or spawning subagents, the goal is the same: **keep the conversational context lean, push durable state to the filesystem.**

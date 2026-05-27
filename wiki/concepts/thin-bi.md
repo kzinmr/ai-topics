@@ -1,5 +1,5 @@
 ---
-title: "Thin BI (薄くなるBIツール)"
+title: "Thin BI"
 type: concept
 created: 2026-04-27
 updated: 2026-04-27
@@ -12,7 +12,7 @@ sources:
   - "https://stable.co.jp/blog/introduction-steep"
 ---
 
-# Thin BI (薄くなるBIツール)
+# Thin BI
 
 > **Core Thesis:** Modern BI tools are "becoming thin" as cloud data warehouses take over data ingestion and transformation roles.
 
@@ -60,7 +60,7 @@ This shift means:
 
 ## Related Articles
 
-- ["薄くなる"BIツール](../raw/articles/2033336956961308721_薄くなるbiツール.md) — @ikki_stable, stable株式会社 (2026-03-16, 128 bookmarks)
+- ["Thin BI" Tools](../raw/articles/2033336956961308721_薄くなるbiツール.md) — @ikki_stable, stable株式会社 (2026-03-16, 128 bookmarks)
 
 ## See Also
 
