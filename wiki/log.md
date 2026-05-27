@@ -3,6 +3,23 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-27] translate | JP→EN tail-end — 0 files translated, 15 excluded
+
+### Result
+All 15 remaining files with CJK characters contain only:
+- **Chinese proper names** (12 files): 姚顺雨, 月之暗面, 智谱AI, Z.ai/智谱, 小红书, 政务龙虾, 混元, 李飞飞, etc. — not Japanese text, intentionally preserved
+- **Raw article path references** (1 file): thin-bi.md — JP chars in `raw/articles/` file path, excluded per policy
+- **Historical log entries** (1 file): log.md — old JP filenames in action log, excluded per policy
+- **Chinese citation** (1 file): cli-first-development.md — Chinese tweet title, not Japanese
+
+### Stats
+- Total JP chars in wiki body (excluding log.md, raw paths, Chinese names): **0**
+- Remaining "JP" chars: 115 (all in Chinese names / raw paths / log history)
+- Wiki body: fully clean of Japanese language text
+
+
+---
+
 ## [2026-05-27] translate | JP→EN batch — 13 files (48 JP chars)
 
 ### Files Translated
