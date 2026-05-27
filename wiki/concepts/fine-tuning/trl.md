@@ -84,27 +84,27 @@ peft_config = LoraConfig(
 
 ## Ecosystem Position
 
-TRLはHuggingFaceエコシステム（datasets, transformers, accelerate, PEFT）との統合を最大の強みとする。15.3k ⭐、391 contributorsとRLライブラリ中最大のコミュニティ。
+TRL's greatest strength is its integration with the HuggingFace ecosystem (datasets, transformers, accelerate, PEFT). With 15.3k ⭐ and 391 contributors, it has the largest community among RL libraries.
 
-| 側面 | TRL | 他ライブラリとの比較 |
+| Aspect | TRL | Comparison with Other Libraries |
 |------|-----|-------------------|
-| 設計哲学 | シンプルさ、HF統合 | Verl: パフォーマンス重視、Verifiers: TRLベースで環境拡張 |
-| ターゲット | RLHF、推論モデル（シングルターン） | Verifiers, RAGEN: マルチターンエージェントRL |
-| 環境サポート | ❌ | SkyRL, RAGEN: ✅ カスタム環境 |
-| 拡張性 | HF Trainerで制限 | Verl: FSDP+Megatron、slime: Megatron特化 |
-| Async訓練 | ❌ | AReaL, slime, OpenRLHF: ✅ |
+| Design Philosophy | Simplicity, HF integration | Verl: Performance-focused, Verifiers: Environment expansion built on TRL |
+| Target | RLHF, reasoning models (single-turn) | Verifiers, RAGEN: Multi-turn agent RL |
+| Environment Support | ❌ | SkyRL, RAGEN: ✅ Custom environments |
+| Scalability | Limited by HF Trainer | Verl: FSDP+Megatron, slime: Megatron-specific |
+| Async Training | ❌ | AReaL, slime, OpenRLHF: ✅ |
 
-TRLはテキストベースRL（RLHF、推論モデル訓練）に最適。マルチターンRLやエージェント訓練には [[concepts/verifiers-rl|Verifiers]]（TRLベースの拡張）や [[concepts/hybrid-flow|Verl]]、[[concepts/skyrl|SkyRL]] が適する。
+TRL is best suited for text-based RL (RLHF, reasoning model training). For multi-turn RL and agent training, [[concepts/verifiers-rl|Verifiers]] (a TRL-based extension), [[concepts/hybrid-flow|Verl]], and [[concepts/skyrl|SkyRL]] are more appropriate.
 
-→ 全RLライブラリ比較: [[comparisons/open-source-rl-libraries-comparison]]
+→ Full RL library comparison: [[comparisons/open-source-rl-libraries-comparison]]
 
 ## Related
 
 - [[concepts/fine-tuning/grpo-rl-training]] — GRPO implementation details
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
 - [[concepts/fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning
-- [[comparisons/open-source-rl-libraries-comparison]] — 10 RLライブラリ比較ポータル
-- [[concepts/verifiers-rl]] — TRLベースのマルチターンRL拡張
+- [[comparisons/open-source-rl-libraries-comparison]] — 10 RL library comparison portal
+- [[concepts/verifiers-rl]] — TRL-based multi-turn RL extension
 
 ## Sources
 

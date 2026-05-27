@@ -1,6 +1,6 @@
 ---
 title: "Agent Sandboxing: Isolation Technologies for AI Agent Code Execution"
-description: "Agent Sandboxingは、AIエージェントの動的コード実行を安全に隔离する技術譜。gVisor、FirecrackermicroVM、WASM等の隔离技術を整理。標準コンテナは共有カーネルのため不十分。"
+description: "Agent Sandboxing is a spectrum of isolation technologies for secure AI agent dynamic code execution. It covers isolation technologies such as gVisor, Firecracker microVM, and WASM. Standard containers are insufficient due to shared kernels."
 created: 2026-04-20
 updated: 2026-04-20
 type: concept
@@ -22,11 +22,11 @@ related:
 
 # Agent Sandboxing: Secure Isolation Technologies
 
-**Agent Sandboxing** は、AIエージェントが生成・実行するコードを安全に隔离する技術。AIエージェントは 개발者がレビューしていないコードを動的に生成するため、**標準コンテナでは不十分**（共有カーネルのため）。
+**Agent Sandboxing** is a technology for safely isolating code generated and executed by AI agents. Since AI agents dynamically generate code that developers have not reviewed, **standard containers are insufficient** (due to shared kernels).
 
 ## Why AI Agents Need Special Sandboxing
 
-AIエージェントは従来のアプリケーションと本质的に異なる：
+AI agents are fundamentally different from traditional applications:
 
 | Challenge | Description |
 |------|------|
@@ -34,11 +34,11 @@ AIエージェントは従来のアプリケーションと本质的に異なる
 | **Prompt Injection** | Risk of agent manipulation via malicious input |
 | **Scope Abuse** | Compromised agent exceeds intended access |
 | **Lateral Movement** | Successful attack propagates across infrastructure |
-| **内部リスク** | エージェントが重要なシステムへの 程序アクセスを取得 |
+| **Internal Risk** | Agent gains procedural access to critical systems |
 
 ## Isolation Technology Spectrum
 
-### Docker Containers（プロセスク区画）
+### Docker Containers (Process-Level Partitioning)
 | Dimension | Assessment |
 |------|------|
 | **Isolation** | Process-level (uses namespaces/cgroups) |
@@ -92,7 +92,7 @@ TRUSTED internal automation → Hardened containers (seccomp, AppArmor, capabili
 ### Resource Limits
 | Resource | Mitigation |
 |----------|------------|
-| **CPU** | Maximum shares設定、暴走プロセス스로rottling |
+| **CPU** | Maximum shares setting, runaway process throttling |
 | **Memory** | Hard limit with termination on exceed |
 | **Disk** | Quotas + I/O rate limiting |
 | **Network** | Outbound traffic throttling, data transmission monitoring |
@@ -182,7 +182,7 @@ tools = [
 
 ## See Also
 
-- [[concepts/agent-sandboxing]] — 隔离技術の比較表
-- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — MCPによるコード実行パターン
-- [[concepts/agentic-engineering]] — エージェント工学全般
--  — Anthropic/OpenAIのエージェント設計
+- [[concepts/agent-sandboxing]] — Comparison table of isolation technologies
+- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Code execution patterns via MCP
+- [[concepts/agentic-engineering]] — Agent engineering overview
+-  — Anthropic/OpenAI agent design

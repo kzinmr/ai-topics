@@ -1,0 +1,205 @@
+{
+  "ok": true,
+  "run_id": "20260527T071041Z",
+  "triage_time": "2026-05-27T07:10:41Z",
+  "newsletter_count": 7,
+  "critical_count": 4,
+  "high_count": 2,
+  "low_count": 1,
+  "newsletters": [
+    {
+      "uid": "uid=139",
+      "source": "Import AI (Jack Clark)",
+      "subject": "Import AI 458: Reckoning with the future; and a singularity story",
+      "date": "2026-05-26",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md",
+      "readable_url": "https://open.substack.com/pub/importai/p/import-ai-458-reckoning-with-the",
+      "classification": "critical",
+      "relevance_rationale": "Jack Clark's Oxford lecture on AI progress trajectory. Key content: Anthropic internal shift to Claude Code agents writing majority of code, verification layer concept, recursive self-improvement, AI as telescope for understanding AI progress. Directly relevant to AI agent workflows, coding agents, and AI safety.",
+      "key_topics": [
+        "ai-agents",
+        "claude-code",
+        "ai-safety",
+        "coding-agents",
+        "anthropic",
+        "ai-progress",
+        "verification-layer"
+      ],
+      "notable_links": [
+        "https://substack.com/redirect/076a40ea-df36-428b-9f58-2c30adc2942c?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/ae20ba02-1ba8-4fa5-8f1e-377df4a4c00a?j=eyJ1Ij...tf6E"
+      ]
+    },
+    {
+      "uid": "uid=140",
+      "source": "Ben's Bites",
+      "subject": "Is SaaS dead?",
+      "date": "2026-05-26",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-26-is-saas-dead.md",
+      "readable_url": "https://open.substack.com/pub/bensbites/p/is-saas-dead",
+      "classification": "high",
+      "relevance_rationale": "SaaS future analysis with strong AI angle. AI-relevant sections: Codex Appshots & Goal Mode updates, MCP major protocol upgrade (July 28), Perplexity Bumblebee open-source security scanner, agent workflow tooling (WorkOS auth.md for agents, Cloudsail sandboxes, AGENTS.md tips, Plannotator agent plan annotator). Valuable for AI developer tooling and agent ecosystem.",
+      "key_topics": [
+        "saas",
+        "codex",
+        "mcp-protocol",
+        "ai-tooling",
+        "coding-agents",
+        "open-source",
+        "ai-security"
+      ],
+      "notable_links": [
+        "https://substack.com/redirect/53f646f1-f9c8-4e7e-b178-9a0ab19edd95?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/8c27cd0d-5197-4189-902a-035e54bdaa5b?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/54148cff-2ecf-42d4-9b49-44e95e0f6057?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/54715f16-28fe-4557-895d-354833710d0d?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/50d5b595-5b3c-4be1-88ce-47641a99554b?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/13ec101d-4ac0-4196-91f4-5b6cc6a9b00a?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/2ec48f92-3c58-4558-ab38-48c7efd1723c?j=eyJ1Ij...tf6E"
+      ]
+    },
+    {
+      "uid": "uid=141",
+      "source": "Lenny's Newsletter",
+      "subject": "Essential books for product builders—part 1",
+      "date": "2026-05-26",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-26-essential-books-for-product-builders-part-1.md",
+      "readable_url": "https://open.substack.com/pub/lenny/p/essential-books-for-product-builderspart",
+      "classification": "low",
+      "relevance_rationale": "General product management book recommendations. No AI/LLM-specific content. Not relevant to the AI topics knowledge wiki.",
+      "key_topics": [
+        "product-management",
+        "books"
+      ],
+      "notable_links": []
+    },
+    {
+      "uid": "uid=142",
+      "source": "Interconnects (Nathan Lambert)",
+      "subject": "Some ideas for what comes next, May 2026",
+      "date": "2026-05-26",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-26-some-ideas-for-what-comes-next-may-2026.md",
+      "readable_url": "https://open.substack.com/pub/robotic/p/some-ideas-for-what-comes-next-may",
+      "classification": "critical",
+      "relevance_rationale": "Deep analysis of AI model landscape and competition. Key content: open models still no Claude Code equivalent 5-6 months after Opus 4.5, Gemini lags in agentic coding, no open-weights Mythos-level model expected in 2026, US open-source models gaining (Gemma 4, Nemotron), Anthropic vs OpenAI escalating competition, GPT 5.5 vs Claude tradeoffs, mass knowledge worker displacement dynamics. Directly relevant to AI agent coding tools, model competition, and open vs closed frontier.",
+      "key_topics": [
+        "ai-agents",
+        "coding-agents",
+        "open-source-models",
+        "claude-code",
+        "codex",
+        "model-competition",
+        "anthropic",
+        "openai",
+        "google-gemini",
+        "gemma",
+        "mythos"
+      ],
+      "notable_links": [
+        "https://substack.com/redirect/562929c5-a2d2-485f-9efa-092ab8bf9ddc?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/a522d713-d845-47e9-ae6c-bda59c699c24?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/5c496ec1-da76-48c7-92e9-7fceab17afe9?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/52747d86-6a89-4957-a098-c526b79cfc73?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/4eb75e6e-b535-4d35-b5b5-b3950aa1f04e?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/9614654c-3988-40e4-a8de-68fd493ed6dd?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/e1d2b792-bc40-465c-97aa-9e1e7540ffeb?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/a8b35054-6190-4d44-94e0-733aee76fcf6?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/72bc0676-947e-4983-b6c1-79289e2fc993?j=eyJ1Ij...tf6E"
+      ]
+    },
+    {
+      "uid": "uid=143",
+      "source": "The Neuron (beehiiv)",
+      "subject": "The Pope and Anthropic partner on the AI Ethics Debate 🕊️",
+      "date": "2026-05-26",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-26-the-pope-and-anthropic-partner-on-the-ai-ethics-debate.md",
+      "readable_url": null,
+      "classification": "high",
+      "relevance_rationale": "AI ethics and governance: Pope Francis and Anthropic partnership on AI ethics debate. Also covered in Nathan Lambert's Interconnects piece (40,000-word Vatican document on AI). Relevant to AI safety, governance, and Anthropic's public positioning.",
+      "key_topics": [
+        "ai-ethics",
+        "ai-safety",
+        "ai-governance",
+        "anthropic"
+      ],
+      "notable_links": []
+    },
+    {
+      "uid": "uid=144",
+      "source": "Latent Space / AINews (swyx)",
+      "subject": "[AINews] New AI Infra decacorns: Fireworks, Baseten (with OpenRouter on the way)",
+      "date": "2026-05-27",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-27-ainews-new-ai-infra-decacorns-fireworks-baseten-with-openrouter-on-the-way.md",
+      "readable_url": "https://open.substack.com/pub/swyx/p/ainews-new-ai-infra-decacorns-fireworks",
+      "classification": "critical",
+      "relevance_rationale": "Rich AI infrastructure and agent news. Key content: Fireworks $15B / Baseten $11B funding rounds, OpenRouter $113M Series B (5T→25T weekly tokens), harness engineering as main coding agent differentiator, DeepSWE benchmark launch, Qwen3.7 Max on Code Arena, Anthropic Claude Code security plugin (30-40% security PR reduction), Claude Mythos solving Erdős #90, Language Models Need Sleep paper (sleep-like consolidation for KV cache), vLLM Rust frontend (837 vs 162 req/s), W&B MCP server for coding agents, Unsloth local UI, Epoch AI inference compute crunch warning. Directly relevant to AI inference infra, coding agent benchmarks, agent memory architectures.",
+      "key_topics": [
+        "ai-infrastructure",
+        "inference",
+        "funding",
+        "fireworks",
+        "baseten",
+        "openrouter",
+        "coding-agents",
+        "harness-engineering",
+        "deep-swe",
+        "claude-code",
+        "claude-mythos",
+        "vllm",
+        "agent-memory",
+        "mcp-server",
+        "benchmarks"
+      ],
+      "notable_links": [
+        "https://substack.com/redirect/3b2eeea8-cd04-4a5c-bf5d-0c6ec2fd5e3e?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/60fd6cc2-e45e-4069-9497-cb9612047253?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/e2eb19ad-178c-4401-8c8f-386e84421b54?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/b933598e-27b2-4562-9cf8-5eab8039dabc?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/62d0565d-f476-46a8-9d46-39fdd5b63c43?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/62746226-c25d-4ff4-9fcc-c6fc9dcba101?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/383653a7-2692-4267-bedd-c8ae23eae122?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/790e45cb-e302-4836-93e1-7063245a9dd4?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/390d89af-ce59-46d2-a08b-7653b8b99f3d?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/8bcbbf0a-31c4-4ea5-a358-68d29206bdef?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/4b7c05c0-75d9-42a7-a225-025120d62273?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/d1a12ac0-37f4-43b1-8283-4030be6b0148?j=eyJ1Ij...tf6E"
+      ]
+    },
+    {
+      "uid": "uid=145",
+      "source": "Hugo Bowne-Anderson (Show Us Your Agent Skills)",
+      "subject": "The Agentic Software Factory",
+      "date": "2026-05-27",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-27-the-agentic-software-factory.md",
+      "readable_url": "https://open.substack.com/pub/hugobowne/p/the-agentic-software-factory",
+      "classification": "critical",
+      "relevance_rationale": "First episode of Show Us Your Agent Skills podcast. Key content: Wes McKinney generating ~1M lines of code/6 months via Claude Code + Codex (3:1 mix), $21,765/month API costs, RoboRev post-commit code review daemon, 14-hour unattended implementation runs with 45 tasks, YOLO mode tradeoffs. Jeremiah Lowin's second brain workflow with voice memos → OpenClaw persistent memory, agent skill system design (markdown + progressive disclosure), MCP vs CLI tradeoffs, editable memory importance. Directly relevant to coding agents, agentic engineering patterns, and AI-assisted development at scale.",
+      "key_topics": [
+        "coding-agents",
+        "agentic-engineering",
+        "claude-code",
+        "codex",
+        "openclaw",
+        "code-review",
+        "ai-assisted-development",
+        "agent-skills",
+        "agent-memory",
+        "vibe-coding"
+      ],
+      "notable_links": [
+        "https://substack.com/redirect/d83fa225-9202-424e-9ba0-146b14227ccf?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/14ca35d8-1769-4b7e-a509-ea39c683d970?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/d3fb8e53-44e6-4d1a-aafe-8fb980176de7?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/ba689a65-2418-464c-97ee-58613e4f9589?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/b341ae6c-f8e6-46a8-9e61-3803a083fa43?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/f08ab54c-e3c7-4754-b72d-999ff015f8ed?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/ef08bd37-c36a-4f36-ab7a-f60b0a4795b6?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/26bf8c7f-b3aa-4c97-a4a3-3c0e120fefcb?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/1dba486e-25b6-4a77-b37d-e9c533049aa4?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/464903a2-b6bd-45c3-913c-3783ac4a23ae?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/7ef1e68c-6fd7-456a-820f-745ac44608b6?j=eyJ1Ij...tf6E"
+      ]
+    }
+  ],
+  "summary": "7 newsletters triaged: 4 critical (Import AI, Interconnects, AINews, Agentic Software Factory), 2 high (Ben's Bites, The Neuron), 1 low (Lenny's Newsletter). Dominant themes: AI coding agents reaching industrial scale (Anthropic internal adoption, Wes McKinney's 1M LOC/6mo, harness engineering), AI inference infrastructure boom (Fireworks/Baseten/OpenRouter funding), and evidence that open-source models still lack Claude Code-level agentic capability."
+}

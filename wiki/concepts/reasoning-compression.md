@@ -17,8 +17,8 @@ source_slack_channel: C077ACXR5UY
 source_slack_date: 2026-03-30
 source_slack_user: U076RPG60QY (Kazuki Inamura)
 source_message: |
-  "あとはソフトウエアの複雑性という問題も、結局のところ非決定性のある問題解決を時間軸方向に展開したものに過ぎないという点で、いずれ圧縮されるものだろうって最近思うところがある"
-  "reasoningが時間軸方向に展開された探索空間として圧縮されいずれ探索不要な形に縮約されていくように"
+  "Also, regarding the issue of software complexity, I've been thinking lately that it will eventually be compressed — since it's ultimately nothing more than a non-deterministic problem-solving process expanded across the time axis"
+  "just as reasoning, as an exploration space expanded across the time axis, will be compressed and eventually reduced to a form that requires no exploration"
 ---
 
 # Reasoning Compression
@@ -31,9 +31,9 @@ source_message: |
 
 This concept emerged from a Slack discussion about the future of AI agents and software development (2026-03-30). The key insight:
 
-> *"あとはソフトウエアの複雑性という問題も、結局のところ非決定性のある問題解決を時間軸方向に展開したものに過ぎないという点で、いずれ圧縮されるものだろうって最近思うところがある"*
+> *"Also, regarding the issue of software complexity, I've been thinking lately that it will eventually be compressed — since it's ultimately nothing more than a non-deterministic problem-solving process expanded across the time axis"*
 
-> *"reasoningが時間軸方向に展開された探索空間として圧縮されいずれ探索不要な形に縮約されていくように"*
+> *"just as reasoning, as an exploration space expanded across the time axis, will be compressed and eventually reduced to a form that requires no exploration"*
 
 ## The Core Principle
 

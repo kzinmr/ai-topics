@@ -1,0 +1,66 @@
+---
+title: "Import AI 458: Reckoning with the future; and a singularity story"
+date: 2026-05-26
+processed_at: 2026-05-27T07:10:33.164634+00:00
+source_label: "uid=139"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-05-26
+
+**Subject:** Import AI 458: Reckoning with the future; and a singularity story
+**Collected:** 2026-05-27T07:10:33.164644+00:00
+**Articles linked:** 13
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyPTJmbHg2Jm5leHQ9aHR0cHMlM0ElMkYlMkZpbXBvcnRhaS5zdWJzdGFjay5jb20lMkZwJTJGaW1wb3J0LWFpLTQ1OC1yZWNrb25pbmctd2l0aC10aGUiLCJwIjoxOTkyMzAzNTAsInMiOjEzMTc2NzMsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3OTc5OTAwMywiZXhwIjoyMDk1Mzc1MDAzLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.f7fMh3MzBeCo90-FcN87U1LRPImy5M7jCEfXQBAk9p4?
+
+## 2. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1317673&post_id=199230350&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTkyMzAzNTAsImlhdCI6MTc3OTc5OTAwMywiZXhwIjoxNzgyMzkxMDAzLCJpc3MiOiJwdWItMTMxNzY3MyIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.oWppIQkvYkIxk1mdLVU9xX7x246Ac7pYgmA5MNK4yQQ
+
+## 3. Link
+
+- **URL:** https://substack.com/@importai
+
+## 4. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1317673&post_id=199230350&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTkyMzAzNTAsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzc5Nzk5MDAzLCJleHAiOjE3ODIzOTEwMDMsImlzcyI6InB1Yi0xMzE3NjczIiwic3ViIjoicmVhY3Rpb24ifQ.wp4DA46aPIVw9mKG4J4qH3AhnELfehvfxvMgpHfXG4I&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1317673&post_id=199230350&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTkyMzAzNTAsImlhdCI6MTc3OTc5OTAwMywiZXhwIjoxNzgyMzkxMDAzLCJpc3MiOiJwdWItMTMxNzY3MyIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.oWppIQkvYkIxk1mdLVU9xX7x246Ac7pYgmA5MNK4yQQ&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1317673&post_id=199230350&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTkyMzAzNTAsImlhdCI6MTc3OTc5OTAwMywiZXhwIjoxNzgyMzkxMDAzLCJpc3MiOiJwdWItMTMxNzY3MyIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.oWppIQkvYkIxk1mdLVU9xX7x246Ac7pYgmA5MNK4yQQ
+
+## 7. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvaW1wb3J0YWkvcC9pbXBvcnQtYWktNDU4LXJlY2tvbmluZy13aXRoLXRoZT91dG1fc291cmNlPXN1YnN0YWNrJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXJlc3RhY2stY29tbWVudCZhY3Rpb249cmVzdGFjay1jb21tZW50JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveE9Ua3lNekF6TlRBc0ltbGhkQ0k2TVRjM09UYzVPVEF3TXl3aVpYaHdJam94TnpneU16a3hNREF6TENKcGMzTWlPaUp3ZFdJdE1UTXhOelkzTXlJc0luTjFZaUk2SW5CdmMzUXRjbVZoWTNScGIyNGlmUS5vV3BwSVFrdllrSXhrMW1kTFZVOXhYN3gyNDZBYzdwWWdtQTVNTks0eVFRIiwicCI6MTk5MjMwMzUwLCJzIjoxMzE3NjczLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3Nzk3OTkwMDMsImV4cCI6MjA5NTM3NTAwMywiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.i13kwFS_PtHinX2Po-kbzdf5aM91XCFRII4dsjaGhO8?&utm_source=substack&utm_medium=email
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/importai/p/import-ai-458-reckoning-with-the?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 9. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRmltcG9ydGFpLnN1YnN0YWNrLmNvbSUyRnAlMkZpbXBvcnQtYWktNDU4LXJlY2tvbmluZy13aXRoLXRoZSZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSnBZWFFpT2pFM056azNPVGt3TURNc0ltVjRjQ0k2TVRjNE1qTTVNVEF3TXl3aWFYTnpJam9pY0hWaUxURXpNVGMyTnpNaUxDSnpkV0lpT2lKamFHVmphMjkxZENKOS5DSDI3ckVsNks1N3N6TlNxOEp5OVh4VUlPdDZyTXEzS0lSdEJacm8wd2l3IiwicCI6MTk5MjMwMzUwLCJzIjoxMzE3NjczLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3Nzk3OTkwMDMsImV4cCI6MjA5NTM3NTAwMywiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.-Ti0pEzNX8JpWcUS-1WEaE8W3WVWZdBuClL3wNFLtf8?&utm_medium=email&utm_source=subscribe-widget&utm_content=199230350
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/076a40ea-df36-428b-9f58-2c30adc2942c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/ae20ba02-1ba8-4fa5-8f1e-377df4a4c00a?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vYWN0aW9uL2Rpc2FibGVfZW1haWw_dG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveE9Ua3lNekF6TlRBc0ltbGhkQ0k2TVRjM09UYzVPVEF3TXl3aVpYaHdJam94T0RFeE16TTFNREF6TENKcGMzTWlPaUp3ZFdJdE1UTXhOelkzTXlJc0luTjFZaUk2SW1ScGMyRmliR1ZmWlcxaGFXd2lmUS41ZmVkUWlNeHk1dEhKWmF4VFNCUzQ4akM3a0ZtcGotTVY2U0l6OGhKLW9VIiwicCI6MTk5MjMwMzUwLCJzIjoxMzE3NjczLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3Nzk3OTkwMDMsImV4cCI6MjA5NTM3NTAwMywiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.ZKrZTFQNcfTrF6JNEzIer_3gUA2WimwfjkBRyi-aXEk?
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoxOTkyMzAzNTAsInMiOjEzMTc2NzMsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3OTc5OTAwMywiZXhwIjoyMDk1Mzc1MDAzLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.DsNvDg34RNCcucaafp8Gvw6dJDc_pd-J1UDCv_1-xCs?
+

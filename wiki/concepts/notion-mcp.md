@@ -14,36 +14,36 @@ related:
 
 # Notion MCP
 
-Notionが公式提供する**Model Context Protocol (MCP) サーバー**。AIツールがNotionワークスペースの読み取り・書き込みを行えるようになる。
+Notion's officially provided **Model Context Protocol (MCP) server**. Enables AI tools to read and write to Notion workspaces.
 
-- **エンドポイント**: `https://mcp.notion.com/mcp`
-- **認証**: OAuth 2.0
-- **権限**: ユーザーのNotionアクセス権限に準拠
+- **Endpoint**: `https://mcp.notion.com/mcp`
+- **Authentication**: OAuth 2.0
+- **Permissions**: Based on the user's Notion access permissions
 
-## セットアップ（主要ツール別）
+## Setup (By Major Tool)
 
-| ツール | 設定方法 |
+| Tool | Setup Method |
 |--------|---------|
-| **Claude Code** | `claude mcp add --transport http notion https://mcp.notion.com/mcp` → `/mcp` で認証 |
+| **Claude Code** | `claude mcp add --transport http notion https://mcp.notion.com/mcp` → Authenticate at `/mcp` |
 | **Cursor** | Settings → MCP → `{"mcpServers": {"notion": {"url": "https://mcp.notion.com/mcp"}}}` |
 | **VS Code (Copilot)** | `.vscode/mcp.json` → `{"servers": {"notion": {"type": "http", "url": "..."}}}` |
-| **Claude Desktop** | Settings → Connectors → URL追加 → OAuth |
-| **Windsurf** | `mcp_config.json` に追加 |
-| **ChatGPT** | chatgpt.com/Connectors → URL追加 |
+| **Claude Desktop** | Settings → Connectors → Add URL → OAuth |
+| **Windsurf** | Add to `mcp_config.json` |
+| **ChatGPT** | chatgpt.com/Connectors → Add URL |
 | **Codex** | `~/.codex/config.toml` → `codex mcp login notion` |
 
-### Claude Code用プラグイン
+### Plugin for Claude Code
 
-[Notion plugin for Claude Code](https://github.com/makenotion/claude-code-notion-plugin) — MCPサーバーに加え、事前構築済みスキルとスラッシュコマンドをバンドル。
+[Notion plugin for Claude Code](https://github.com/makenotion/claude-code-notion-plugin) — Bundles pre-built skills and slash commands on top of the MCP server.
 
-## スコープ
+## Scopes
 
-| スコープ | 説明 |
+| Scope | Description |
 |---------|------|
-| `local` | 現在のプロジェクトでのみ利用可能（デフォルト） |
-| `project` | `.mcp.json` 経由でチーム共有 |
-| `user` | 全プロジェクトで利用可能 |
+| `local` | Available only in the current project (default) |
+| `project` | Shared with the team via `.mcp.json` |
+| `user` | Available across all projects |
 
-## 参照
+## References
 
 - [Connecting to Notion MCP — Notion Developers](https://developers.notion.com/docs/get-started-with-mcp)
