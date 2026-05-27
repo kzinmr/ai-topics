@@ -66,33 +66,33 @@ A systematic framework from Google DeepMind (2026) for understanding how the ope
 
 ## Authorization Challenges for AI Agents (2026-04)
 
-**WorkOS FGA**的分析では、AIエージェントの認可安全问题について以下を特定:
+**WorkOS FGA** analysis identified the following regarding AI agent authorization security issues:
 
 ### The Confused Deputy Problem
 
-エージェントが正当な権限を持っているが、攻撃者に騙されて権限を悪用する構造的リスク。
+A structural risk where an agent has legitimate permissions but is tricked by an attacker into abusing those permissions.
 
-**例**: 「本番とステージングの差分を示して」という要求で、本番のAPIキーが漏洩
+**Example**: An API key leak in production due to a request like "Show me the diff between production and staging"
 
-| 従来のサービスアカウント | AIエージェント |
+| Traditional Service Accounts | AI Agents |
 |------------------------|----------------|
-| 決定論的スコープ | 非決定論的スコープ |
-| 固定アクセス | 動的にintentを生成 |
-| 変更なし | 今日と明日で異なる権限が必要 |
+| Deterministic Scope | Non-Deterministic Scope |
+| Fixed Access | Dynamically generates intents |
+| No changes | Different permissions needed today vs tomorrow |
 
-### 権限爆発問題
+### Permission Explosion Problem
 
-従来のRBACでは `Repository:API > Branch:feature-xyz` のような細粒度の許可を表現すると、O(N×M)ロールが必要になる。
+With traditional RBAC, expressing fine-grained permissions like `Repository:API > Branch:feature-xyz` would require O(N×M) roles.
 
-### FGA = RBAC + 階層
+### FGA = RBAC + Hierarchy
 
-リソースグラフのノードに 역할을関連付ける:
-- 垂直継承: `Branch:feature-xyz` のEditor権限は内部すべてにアクセス
-- 水平移動防止: `Branch:staging` にはアクセスできない
+Associate roles with resource graph nodes:
+- Vertical inheritance: Editor permission on `Branch:feature-xyz` accesses everything inside
+- Horizontal movement prevention: Cannot access `Branch:staging`
 
-### MCPとの接続
+### Connection with MCP
 
-MCPは認可を実装者に委任し、`files:read` のような粗いOAuth 2.1スコープ依赖。FGAはMCPのRAR(rich authorization requests)에ロジック层を提供。
+MCP delegates authorization to implementers, relying on coarse OAuth 2.1 scopes like `files:read`. FGA provides a logic layer on top of MCP's RAR (rich authorization requests).
 
 ### Sources
 - 

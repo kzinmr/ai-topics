@@ -124,10 +124,10 @@ values ('/reports/output.md', 'report', '{"inputs":["/docs/agents/intro.md"]}'::
 
 ## Relationship to Other Patterns
 
-- **[[concepts/ai-agent-memory-middleware]]**: db9はエージェントのL3（クラウド/共有ストレージ）層における**ローカル統合パターン**。Memory MiddlewareがカバーするS3 Files（ステージ＆コミットモデル）やTigris（グローバル分散）とは対照的に、db9は単一PostgreSQLノード内で完結する軽量アプローチ。エージェントのメモリ層（episodic/semantic/personal）を「fs9=episodicファイル + SQLテーブル=semanticメタデータ」として自然に表現できる。
-- **[[concepts/zero-disk-architecture]]**: 両者ともストレージレイヤの単純化を提唱するが、**真逆の方法論**。Zero Diskは「計算をS3にオフロード（完全分離）」、db9は「計算とデータを1つのPostgreSQLに再統合」。Zero Diskが大規模DBベンダー向けなら、db9は個々のエージェント開発者向け。
-- **[[concepts/disaggregated-storage]]**: db9は「再統合（re-aggregated）」アプローチ。分離がもたらす複雑性を避け、エージェントワークロードには単一ノードで十分と判断。
-- **[[concepts/agent-loop-orchestration]]**: db9はRAGパイプラインのデータ層を提供（source → chunk → retrieve → generate → outputの全工程をSQLで完結）。
+- **[[concepts/ai-agent-memory-middleware]]**: db9 is a **local integration pattern** at the agent's L3 (cloud/shared storage) layer. In contrast to S3 Files (stage & commit model) and Tigris (global distribution) covered by Memory Middleware, db9 is a lightweight approach that completes within a single PostgreSQL node. It naturally represents the agent's memory layers (episodic/semantic/personal) as "fs9 = episodic files + SQL tables = semantic metadata".
+- **[[concepts/zero-disk-architecture]]**: Both advocate simplifying the storage layer, but with **diametrically opposed methodologies**. Zero Disk "offloads computation to S3 (full separation)", while db9 "re-integrates computation and data into a single PostgreSQL". If Zero Disk is for large-scale DB vendors, db9 is for individual agent developers.
+- **[[concepts/disaggregated-storage]]**: db9 is a "re-aggregated" approach. It avoids the complexity brought by separation, judging that a single node is sufficient for agent workloads.
+- **[[concepts/agent-loop-orchestration]]**: db9 provides the data layer for RAG pipelines (all steps from source → chunk → retrieve → generate → output are completed in SQL).
 
 ## Key SQL Patterns Summary
 

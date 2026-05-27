@@ -30,13 +30,13 @@ related:
 
 # AI Infrastructure Engineering
 
-> LLM/AIを本番運用するためのハードウェア・インフラ技術の総合マップ。GPUから分散学習、モデルサーバー、オブザーバビリティまでをカバーする。
+> A comprehensive map of hardware and infrastructure technologies for production-grade LLM/AI operation. Covers everything from GPU to distributed training, model servers, and observability.
 
 ## Scope
 
-このカテゴリは以下の領域を統合的に扱う:
+This category covers the following areas comprehensively:
 
-| レイヤー | トピック | カバレッジ |
+| Layer | Topic | Coverage |
 |----------|----------|-----------|
 | **Hardware** | GPU/VRAM fundamentals, Memory Bandwidth, HBM | [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] ⬜ L1 |
 | **Quantization** | FP4/FP8/INT4/INT8, AWQ/GPTQ/GGUF | [[concepts/model-quantization]] ⬜ stub |
@@ -49,29 +49,29 @@ related:
 | **Memory Debugging** | PyTorch Memory Snapshot, Memory Profiler, OOM Debugging | [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] 🟢 L1 |
 | **Research Frameworks** | Hardware Lottery, Path Dependency, Infrastructure Decision Theory | [[concepts/ai-infrastructure-engineering/hardware-lottery]] 🟢 L2 |
 
-## 学習ロードマップ
+## Learning Roadmap
 
-目的別におすすめの学習経路:
+Recommended learning paths by goal:
 
-### 🏗️ Model Serving Engineer (APIプロダクション向け)
-1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPUキャパシティ理解の必須基礎
-2. [[concepts/inference/_index]] — エンジン比較と選定基準
-3. [[concepts/kv-cache]] — メモリ律速の根本原因
-4. [[concepts/serving-llms-vllm]] — vLLM実践
-5. [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — 本番スケーリング
-6. [[concepts/ai-infrastructure-engineering/llm-observability]] — 監視・運用
+### 🏗️ Model Serving Engineer (For API Production)
+1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — Essential foundation for understanding GPU capacity
+2. [[concepts/inference/_index]] — Engine comparison and selection criteria
+3. [[concepts/kv-cache]] — Root cause of memory bottlenecks
+4. [[concepts/serving-llms-vllm]] — vLLM in practice
+5. [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — Production scaling
+6. [[concepts/ai-infrastructure-engineering/llm-observability]] — Monitoring and operations
 
-### 🚀 Training Infra Engineer (学習パイプライン向け)
-1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPUメモリ階層
+### 🚀 Training Infra Engineer (For Training Pipelines)
+1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU memory hierarchy
 2. [[concepts/ai-infrastructure-engineering/distributed-training]] — DDP → FSDP → DeepSpeed
-3. [[concepts/model-quantization]] — 量子化の基礎（FP8学習対応）
-4. [[concepts/llm-inference]] — 推論最適化の基礎理論
+3. [[concepts/model-quantization]] — Quantization fundamentals (FP8 training support)
+4. [[concepts/llm-inference]] — Fundamental theory of inference optimization
 
-### 💰 Cost Optimization (APIコスト削減)
-1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — VRAMとコストの関係
-2. [[concepts/prompt-caching]] — キャッシュ戦略
-3. [[concepts/speculative-decoding]] — 投機的デコードでのスループット向上
-4. [[concepts/inference/vllm]]#TurboQuant — KV Cache量子化による効率化
+### 💰 Cost Optimization (API Cost Reduction)
+1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — Relationship between VRAM and cost
+2. [[concepts/prompt-caching]] — Caching strategies
+3. [[concepts/speculative-decoding]] — Throughput improvement with speculative decoding
+4. [[concepts/inference/vllm]]#TurboQuant — Efficiency via KV Cache quantization
 
 ## Key Entities
 
@@ -81,9 +81,9 @@ related:
 - [[entities/arize]] — AI observability platform
 - [[entities/elvis-sun]] — Local AI deployment & hardware analysis
 
-## Existing Infrastructure Pages (参照)
+## Existing Infrastructure Pages (Reference)
 
-| ページ | 状態 | 内容 |
+| Page | Status | Content |
 |--------|------|------|
 | [[concepts/llm-inference]] | 🟢 L2 | Roofline analysis, batch size economics, KV bandwidth |
 | [[concepts/inference/_index]] | 🟢 Index | Engine comparison: vLLM / SGLang / llama.cpp |

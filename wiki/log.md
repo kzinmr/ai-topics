@@ -2,6 +2,27 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+
+## [2026-05-27] translate | JP→EN batch — 8 files
+
+### Files Translated
+- concepts/ai-agent-traps.md — 289 JP chars → CLEAN
+- concepts/db9-fs-sql-pattern.md — 287 JP chars → CLEAN
+- concepts/ai-agent-security.md — 286 JP chars → CLEAN
+- concepts/ssm-mamba.md — 282 JP chars → CLEAN
+- entities/knowledgator.md — 280 JP chars → CLEAN
+- concepts/ai-infrastructure-engineering/_index.md — 261 JP chars → CLEAN
+- concepts/llm-as-judge-skills.md — 236 JP chars → CLEAN
+- entities/claude-code--architecture.md — 222 JP chars → CLEAN
+
+### Stats
+- Total JP chars removed: 2,197
+- Remaining JP files: 85 (3,236 JP chars)
+- Batch method: delegate_task subagents (3 parallel, scattered-JP translation)
+
+
+---
+
 ## [2026-05-27] translate | JP->EN batch — 8 files (2,575 chars)
 
 ## [2026-05-27] ingest | Polar (ProRL-Agent-Server) paper + entity page

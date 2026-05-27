@@ -54,15 +54,15 @@ This is documented in Section 9 of the paper and represents the first industrial
 
 ## Real-World Incidents
 
-### Moltbook Breach (2026年1月) — 77万エージェント同時侵害
+### Moltbook Breach (January 2026) — 770,000 Agents Simultaneously Compromised
 
-史上初の産業規模AIエージェントセキュリティインシデント。詳細は別ページに記録:
+The first industrial-scale AI agent security incident in history. Details recorded on a separate page:
 
-→ [[concepts/moltbook-breach-2026|Moltbook Breach 2026 — 77万エージェント同時侵害事件]]
+→ [[concepts/moltbook-breach-2026|Moltbook Breach 2026 — 770,000 Agents Simultaneously Compromised Incident]]
 
-**要約**: Moltbook（AIエージェント専用SNS）のSupabaseバックエンドでRLSが無効。フロントエンドに露出したAPIキーから誰でもデータベース全体にアクセス可能。77万以上のエージェントのAPIトークン（150万件）、メールアドレス（35,000件）、全プライベートメッセージが暴露。各エージェントはホストマシンへのシェルアクセス権限を持っていたため、実質的に世界最大のAIエージェントボットネットが構築可能な状態だった。
+**Summary**: Moltbook (AI agent-specific social network) had RLS disabled in its Supabase backend. Anyone could access the entire database via API keys exposed on the frontend. API tokens (1.5M), email addresses (35,000), and all private messages of over 770,000 agents were exposed. Since each agent had shell access privileges to its host machine, this effectively meant the world's largest AI agent botnet was constructible.
 
-併せてCVE-2026-25253（One-Click RCE, CVSS 8.8）とClawHavocキャンペーン（341個の悪意スキルによる暗号資産窃取）も同時期に発生し、OpenClawエコシステム全体が同時多発的に攻撃された。
+Additionally, CVE-2026-25253 (One-Click RCE, CVSS 8.8) and the ClawHavoc campaign (cryptocurrency theft via 341 malicious skills) also occurred in the same period, with the entire OpenClaw ecosystem being attacked in a coordinated multi-pronged assault.
 
 ## Related Pages
 

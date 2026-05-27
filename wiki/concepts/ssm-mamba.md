@@ -100,7 +100,7 @@ The breakthrough that made SSMs competitive with Transformers on language. Two k
 
 **Architecture:** Simplified — combines SSM block and MLP into a single homogeneous block, replacing both self-attention and FFN in Transformers.
 
-**Performance:** Matched或 exceeded Transformer quality at small to medium scale, while offering linear-time inference.
+**Performance:** Matched or exceeded Transformer quality at small to medium scale, while offering linear-time inference.
 
 > **Best resource:** [A Visual Guide to Mamba and State Space Models](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state) — Maarten Grootendorst's excellent visual walkthrough.
 
@@ -176,31 +176,31 @@ A growing trend is **Transformer-SSM hybrids** (e.g., Jamba, Samba, TransMamba) 
 
 | Resource | Quality | Type | Notes |
 |----------|---------|------|-------|
-| [The Annotated S4](https://srush.github.io/annotated-s4/) (Sasha Rush) | 🟢 | Interactive blog | コード+理論。S4をJAXでゼロから実装。SSM理解への最短路 |
-| [Visual Guide to Mamba](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state) | 🟢 | Blog with visuals | Maarten Grootendorstによる最高のビジュアル解説。数学が少なめ。 |
-| [Hazy Research S4 Blog Series](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-1) | 🟢 | 3-part blog | 原論文著者チームによる公式解説 |
-| [Mamba-2 SSD Series](https://tridao.me/blog/2024/mamba2-part1-model/) (Tri Dao) | 🟢 | 4-part blog | SSD理論の完全解説。Part I-IVでモデル→理論→アルゴリズム→システム |
-| [Mamba-3 Princeton Blog](https://pli.princeton.edu/blog/2026/mamba-3-improved-sequence-modeling-using-state-space-principles) | 🟢 | Blog | 最新Mamba-3の平易な解説。Inference-first設計思想の理解に必須 |
-| Mamba Paper (arXiv:2312.00752) | 🟢 | Paper | 原著論文。選択的SSMの理論的基礎 |
-| [HuggingFace SSM Introduction](https://huggingface.co/blog/lbourdois/get-on-the-ssm-train) | 🟡 | Blog | SSM歴史の俯瞰的まとめ。やや広範だが入門に有用 |
-| Yannic Kilcher S4/Mamba videos | 🟡 | Video | 論文解説。理解の補助に |
-| Wikipedia: Mamba | 🟡 | Reference | 用語確認に |
+| [The Annotated S4](https://srush.github.io/annotated-s4/) (Sasha Rush) | 🟢 | Interactive blog | Code + theory. Implementing S4 from scratch in JAX. The fastest path to understanding SSMs. |
+| [Visual Guide to Mamba](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state) | 🟢 | Blog with visuals | The best visual explanation by Maarten Grootendorst. Less math-heavy. |
+| [Hazy Research S4 Blog Series](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-1) | 🟢 | 3-part blog | Official explanation by the original paper authors' team |
+| [Mamba-2 SSD Series](https://tridao.me/blog/2024/mamba2-part1-model/) (Tri Dao) | 🟢 | 4-part blog | Complete explanation of SSD theory. Parts I-IV cover model → theory → algorithm → system |
+| [Mamba-3 Princeton Blog](https://pli.princeton.edu/blog/2026/mamba-3-improved-sequence-modeling-using-state-space-principles) | 🟢 | Blog | Plain explanation of the latest Mamba-3. Essential for understanding the inference-first design philosophy. |
+| Mamba Paper (arXiv:2312.00752) | 🟢 | Paper | Original paper. Theoretical foundations of selective SSMs. |
+| [HuggingFace SSM Introduction](https://huggingface.co/blog/lbourdois/get-on-the-ssm-train) | 🟡 | Blog | Overview summary of SSM history. A bit broad but useful for introduction. |
+| Yannic Kilcher S4/Mamba videos | 🟡 | Video | Paper explanation. Helps with understanding. |
+| Wikipedia: Mamba | 🟡 | Reference | For terminology reference. |
 
 ---
 
 ## 🔗 Related Wiki Pages
 
-- [[concepts/transformer-architecture]] — Transformer (SSMの主たる比較対象)
-- [[concepts/attention-mechanism-variants]] — Attention変種（SSMとAttentionの関係）
-- [[concepts/kv-cache-compaction]] — KV Cache最適化（SSMはKV cache不要）
-- [[concepts/speculative-decoding]] — 投機的復号（SSMとの併用可能性）
-- [[concepts/genai-handbook]] — GenAI Handbook（Section VIIでSSMをカバー）
-- [[entities/maarten-grootendorst]] — Mamba視覚ガイドの著者
-- [[entities/tim-dettmers]] — 量子化の権威（SSM量子化の研究も存在）
+- [[concepts/transformer-architecture]] — Transformer (primary comparison target for SSMs)
+- [[concepts/attention-mechanism-variants]] — Attention variants (relationship between SSM and Attention)
+- [[concepts/kv-cache-compaction]] — KV Cache optimization (SSM requires no KV cache)
+- [[concepts/speculative-decoding]] — Speculative decoding (potential combination with SSM)
+- [[concepts/genai-handbook]] — GenAI Handbook (Section VII covers SSM)
+- [[entities/maarten-grootendorst]] — Author of the Mamba visual guide
+- [[entities/tim-dettmers]] — Authority on quantization (research on SSM quantization also exists)
 
 ## TODO
 
-- [ ] Tri Dao のエンティティページ作成
-- [ ] Albert Gu のエンティティページ作成
-- [ ] Jamba (AI21)、Samba、TransMamba などハイブリッドモデルの比較セクション拡充
-- [ ] SSMの実装フレームワーク（HuggingFace transformers, vLLMでのサポート状況）の追加
+- [ ] Create entity page for Tri Dao
+- [ ] Create entity page for Albert Gu
+- [ ] Expand comparison section for hybrid models such as Jamba (AI21), Samba, TransMamba
+- [ ] Add SSM implementation framework (support status in HuggingFace transformers, vLLM)

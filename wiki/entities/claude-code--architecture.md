@@ -10,7 +10,6 @@ tags:
 sources:
   - https://arxiv.org/html/2604.14228v1
 ---
-
 # Claude Code: Architecture
 
 Back to main profile: [[entities/claude-code]]
@@ -25,17 +24,17 @@ User → Interfaces → Agent Loop → Permission System → Tools → State & P
 
 ## 5-Layer Decomposition
 
-1. **Surface**: エントリポイントとレンダリング（CLI, SDK, IDE, Desktop, Web）
-2. **Core**: エージェントループと5層コンパクションパイプライン
-3. **Safety/Action**: パーミッションシステム、フック、拡張性、サンドボックス、サブエージェント
-4. **State**: コンテキストアセンブリ、ランタイムステート、追記型JSONL永続化、CLAUDE.mdメモリ
-5. **Backend**: シェル実行、MCPクライアント、リモートツール
+1. **Surface**: Entry points and rendering (CLI, SDK, IDE, Desktop, Web)
+2. **Core**: Agent loop and 5-layer compaction pipeline
+3. **Safety/Action**: Permission system, hooks, extensibility, sandbox, sub-agents
+4. **State**: Context assembly, runtime state, append-only JSONL persistence, CLAUDE.md memory
+5. **Backend**: Shell execution, MCP client, remote tools
 
 ## Infrastructure Dominance
 
-- **~1.6%** のコードベースのみがAI判断ロジック
-- **~98.4%** が決定論的運用インフラ（パーミッション、コンテキスト管理、リカバリ、ツールルーティング）
+- **~1.6%** of the codebase is AI judgment logic
+- **~98.4%** is deterministic operational infrastructure (permissions, context management, recovery, tool routing)
 
 ## Core Loop
 
-シンプルな `while-true` 非同期ジェネレータ (`queryLoop()`) がモデルを呼び出し、ツールをディスパッチし、繰り返す。**ReActパターン**に従う。
+A simple `while-true` async generator (`queryLoop()`) calls the model, dispatches tools, and repeats. It follows the **ReAct pattern**.
