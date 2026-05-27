@@ -2,7 +2,7 @@
 title: "Headless AI Services"
 type: concept
 created: 2026-04-20
-updated: 2026-04-30
+updated: 2026-05-27
 tags:
   - concept
   - ai-agents
@@ -15,41 +15,41 @@ sources: []
 
 # Headless AI Services
 
-Matt Webbが提唱した概念で、**personal AIが直接API経由でSaaSサービスを操作**し、GUIベースの操作（bot-controlled mouse）を排除するアプローチ。
+A concept proposed by Matt Webb: an approach where **personal AI directly operates SaaS services via APIs**, eliminating GUI-based interaction (bot-controlled mouse).
 
-## 背景
+## Background
 
-2026年4月、Marc Benioff（Salesforce CEO）が**Salesforce Headless 360**を発表：
+In April 2026, Marc Benioff (Salesforce CEO) announced **Salesforce Headless 360**:
 
 > "Welcome Salesforce Headless 360: No Browser Required! Our API is the UI. Entire Salesforce & Agentforce & Slack platforms are now exposed as APIs, MCP, & CLI."
 
-## 中心的な主張
+## Core Argument
 
-- **Personal AIはGUIよりAPI経由の方が高速で確実**
-- 人間向けUI ≠ AIエージェント向けUI
-- API-firstがSaaSの差別化要因になる
+- **Personal AI is faster and more reliable via APIs than GUIs**
+- UI for humans ≠ UI for AI agents
+- API-first becomes a SaaS differentiator
 
-## Brandur Leachによる「Second Wave of API-first Economy」
+## Brandur Leach's "Second Wave of API-first Economy"
 
-2010年代の「Every online service was launching APIs」に続き、第2波が来ている：
+Following the 2010s era of "Every online service was launching APIs," a second wave is arriving:
 
 > "Suddenly, an API is no longer liability, but a major saleable vector to give users what they want: a way into the services they use and pay for so that an agent can carry out work on their behalf."
 
-## 料金構造への影響
+## Impact on Pricing Models
 
-API-firstモデルが主流になると、**per-head SaaS pricing schemes**が壊れる可能性がある。エージェントは人間とは異なる利用パターンを持ち、1つの企業で数十〜数百のエージェントがAPIを叩くようになるため、従来のper-seat課金は成立しなくなる。
+When the API-first model becomes mainstream, **per-head SaaS pricing schemes** may break. Agents have different usage patterns than humans, with dozens to hundreds of agents hitting APIs within a single company, making traditional per-seat pricing unsustainable.
 
-## Headless SaaS との関係
+## Relationship with Headless SaaS
 
-[[concepts/headless-saas]]（Ivan Burazinが提唱）はHeadless AI Servicesをさらに発展させた概念。両者の違い：
+[[concepts/headless-saas]] (proposed by Ivan Burazin) is a further development of Headless AI Services. Differences between the two:
 
-| 側面 | Headless AI Services (Webb) | Headless SaaS (Burazin) |
+| Aspect | Headless AI Services (Webb) | Headless SaaS (Burazin) |
 |------|---|---|
-| フォーカス | 既存SaaSをAIがAPI経由で操作 | SaaS自体をエージェント向けに再構築 |
-| インターフェース | 人間向けUIの上にAPI層 | APIが**唯一**のインターフェース（GUIなし） |
-| ビジネスモデル | 既存SaaSの料金構造が課題 | 消費量ベースの新しいモデル |
+| Focus | AI operates existing SaaS via APIs | Rebuild SaaS for agents natively |
+| Interface | API layer on top of human-facing UI | API is the **only** interface (no GUI) |
+| Business Model | Existing SaaS pricing is the challenge | New consumption-based model |
 
-## 関連項目
+## Related Pages
 
 - [Agentic Engineering](../agentic-engineering.md)
 - [Model Context Protocol (MCP)](../model-context-protocol-mcp.md)

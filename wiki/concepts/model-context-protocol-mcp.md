@@ -2,7 +2,7 @@
 title: "Model Context Protocol (MCP)"
 type: concept
 created: 2026-04-19
-updated: 2026-05-23
+updated: 2026-05-27
 tags: [concept, mcp, developer-tooling, protocol, anthropic]
 aliases: ["mcp", "model context protocol", "MCP protocol"]
 related:
@@ -125,32 +125,32 @@ Chrome 146 introduced **WebMCP** — a browser-native implementation exposing `n
 
 ## MCP Provider Support Comparison (2026-04)
 
-Martin Aldersonの実践的評価による主要AI API間のMCPサポート比較:
+Martin Alderson's practical evaluation comparing MCP support across major AI APIs:
 
 ### Anthropic Claude API — ✅ Works out of the box
-- フルリモートMCPサポート。ストリーミングHTTPトランスポートでURL指定のみ
-- ツール発見・実行がAnthropic側で自動的に処理
-- 数秒で既存リモートMCPサーバーをプロンプトに追加可能
-- **欠点**: API価格が高い（Gemini 2.5 Flash比で大幅高）
+- Full remote MCP support. URL-only specification with streaming HTTP transport
+- Tool discovery and execution are automatically handled by Anthropic
+- Existing remote MCP servers can be added to prompts in seconds
+- **Drawback**: API pricing is high (significantly more expensive than Gemini 2.5 Flash)
 
 ### OpenAI API — ⚠️ Promising but broken
-- フルリモートMCPサポートを謳っている
-- ツール発見は成功するが、ツール呼び出し時に`"Session terminated"`エラー
-- MCP Inspector、Claude、直接JSON-RPCでは正常動作 → OpenAI側の実装に問題
-- 今後の改善に期待
+- Claims full remote MCP support
+- Tool discovery succeeds, but tool calls produce `"Session terminated"` errors
+- Works correctly with MCP Inspector, Claude, and direct JSON-RPC → Issue lies in OpenAI's implementation
+- Improvements expected in future updates
 
 ### Google Gemini API — ❌ No real MCP support
-- MCPセクションは存在するが、ホスト側でツールを列挙してツール定義に挿入するだけ
-- LLMプロバイダー側がツールを発見・実行する「真のMCP」ではない
-- JavaScript/Python SDKのみ対応
-- Gemini web UIのGoogleサービス連携は優秀だが、APIレベルでは貧弱
+- MCP section exists, but it only enumerates tools on the host side and inserts them into tool definitions
+- This is not "true MCP" where the LLM provider discovers and executes tools
+- Only supports JavaScript/Python SDK
+- Gemini web UI excels at Google service integration, but API-level support is weak
 
 ### MCP Ecosystem Growth
-- 2026年4月時点で**1,150+サーバー**（1週間で900→1,150、日約25-30新規サーバー）
-- [mcp-tracker.martinalderson.com](https://mcp-tracker.martinalderson.com) でリアルタイム追跡可能
+- As of April 2026: **1,150+ servers** (900→1,150 in one week, ~25-30 new servers per day)
+- Real-time tracking available at [mcp-tracker.martinalderson.com](https://mcp-tracker.martinalderson.com)
 
 ### Open Weights Opportunity
-オープンウェイトモデル（Qwen3、gpt-oss等）をホストしたAPIで、洗練されたMCP統合オプションを提供する機会が大きい。現時点で存在しない。
+APIs hosting open-weight models (Qwen3, gpt-oss, etc.) have significant opportunity to provide sophisticated MCP integration options. None currently exist.
 
 ## CLI Over MCP Pattern
 

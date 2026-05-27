@@ -5,23 +5,23 @@ tags:
   - infrastructure
   - methodology
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-27
 type: concept
 ---
 
 # Resilient Prompt Engineering
 
-OpenAIのcookbookで示される、単なるプロンプトテクニックではなく、**堅牢なプロンプト設計**の方法論。特定モデルに依存しない汎用的なパターン。
+As outlined in OpenAI's cookbook, this is not merely a prompt technique but a methodology for **robust prompt design**. A model-agnostic, general-purpose pattern.
 
 ## Core Philosophy
 
-> プロンプトはコードである。バージョン管理、テスト、レビューが必要。
+> Prompts are code. They require version control, testing, and review.
 
 ## Key Patterns
 
 ### 1. Structured Prompting
 
-プロンプトを明確なセクションに分割：
+Divide prompts into clear sections:
 
 ```
 ## ROLE
@@ -44,15 +44,15 @@ You are a helpful assistant specialized in X.
 
 ### 2. Defensive Prompting
 
-予期しない入力やエッジケースへの対処：
+Handling unexpected inputs and edge cases:
 
-- 入力検証の指示を含める
-- フォールバック動作の定義
-- エラーメッセージのフォーマット規定
+- Include input validation instructions
+- Define fallback behavior
+- Specify error message formats
 
 ### 3. Chain-of-Thought (Model-Agnostic)
 
-複雑なタスクを段階的に解決：
+Solving complex tasks step by step:
 
 ```
 Step 1: Analyze the problem
@@ -63,23 +63,23 @@ Step 4: Execute and verify
 
 ### 4. Template Variables
 
-プロンプトを再利用可能なテンプレートとして設計：
+Design prompts as reusable templates:
 
-- 変数プレースホルダーの使用
-- 条件分岐ロジック
-- 動的コンテンツ挿入
+- Use variable placeholders
+- Conditional branching logic
+- Dynamic content insertion
 
 ## Anti-Patterns
 
-- **Over-specification**: 必要以上に詳細な指示はモデルを混乱させる
-- **Contradictory constraints**: 矛盾する指示は予測不可能な結果を生む
-- **Implicit assumptions**: 明示されていない前提は推測を招く
+- **Over-specification**: Excessively detailed instructions confuse the model
+- **Contradictory constraints**: Conflicting instructions produce unpredictable results
+- **Implicit assumptions**: Unexpressed assumptions invite guesswork
 
 ## Testing & Validation
 
-- プロンプトのA/Bテスト
-- 評価データセットでのバッチテスト
-- 回帰テストの実施
+- A/B testing of prompts
+- Batch testing with evaluation datasets
+- Regression testing
 
 ## Related
 

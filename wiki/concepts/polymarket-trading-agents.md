@@ -12,7 +12,7 @@ tags:
 status: complete
 description: "AI agents used for automated trading on Polymarket prediction markets — weather, crypto, sports. Self-learning bots that operate 24/7 with no emotions."
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-27
 sources:
   - "https://x.com/i/article/2045080054917476451"
 related:
@@ -23,42 +23,42 @@ related:
 
 # Polymarket Trading Agents
 
-> **Definition:** Polymarketは予測マーケットプラットフォームで、AIエージェントが天気、暗号通貨、スポーツ市場で自律的にトレードを行う。エージェントは24/7稼働し、感情がなく、全てを記憶する。
+> **Definition:** Polymarket is a prediction market platform where AI agents autonomously trade in weather, cryptocurrency, and sports markets. Agents operate 24/7, have no emotions, and remember everything.
 
-## 代表的なエージェント例
+## Notable Agent Examples
 
-| エージェント | 市場 | 成果 |
+| Agent | Market | Results |
 |-------------|------|------|
-| ColdMath | 天気 | $300 → $219K (3ヶ月) |
-| Sharky6999 | 暗号通貨 | $819K PnL, 99.3% win-rate |
-| RN1 | スポーツ | $1.2K → $7.3M |
+| ColdMath | Weather | $300 → $219K (3 months) |
+| Sharky6999 | Crypto | $819K PnL, 99.3% win-rate |
+| RN1 | Sports | $1.2K → $7.3M |
 
-## エージェントの優位性
-- 睡眠しない、感情がない、全てを記憶する
-- 適切なアルゴリズムと実行速度が全て
-- 自動化された自己学習AIエージェントが強いエッジ
+## Agent Advantages
+- No sleep, no emotions, remembers everything
+- The right algorithm and execution speed are everything
+- Automated self-learning AI agents have a strong edge
 
-## 天気トレードボット構築（Hermes Agent）
+## Building a Weather Trading Bot (with Hermes Agent)
 
-### 前提条件
-- Hermes Agent（Nous Research製、2026年2月25日リリース）
-- VPS（Hetzner推奨）
-- Polymarket用ウォレット（Polygon network）
-- Weather API（VisualCrossing無料API）
+### Prerequisites
+- Hermes Agent (built by Nous Research, released February 25, 2026)
+- VPS (Hetzner recommended)
+- Polymarket wallet (Polygon network)
+- Weather API (VisualCrossing free API)
 
-### 構築ステップ
-1. **Clone & Setup** — AlterEgo製のopen-source botをclone
-2. **Wallet作成** — 専用ウォレットをセットアップ
-3. **資金投入** — $ USDC.e（取引資金）+ $ POL（ガス代）
-4. **Polymarket contracts承認** — botが資金を使えるように
-5. **Weather API接続** — VisualCrossing API keyを設定
-6. **Test scan** — paper-trading modeでテスト
-7. **Real trading開始** — 自己学習型天気トレードボット稼働
+### Build Steps
+1. **Clone & Setup** — Clone the open-source bot by AlterEgo
+2. **Create Wallet** — Set up a dedicated wallet
+3. **Fund** — $ USDC.e (trading capital) + $ POL (gas fees)
+4. **Approve Polymarket Contracts** — Allow bot to use funds
+5. **Connect Weather API** — Set up VisualCrossing API key
+6. **Test Scan** — Test in paper-trading mode
+7. **Start Real Trading** — Self-learning weather trading bot goes live
 
-### 動作原理
-- 20都市 × 4大陸をスキャン
-- 3つのforecast sourceをExpected ValueとKelly Criterion position sizingに統合
-- 各トレードで自己改善（fixedスクリプトではない）
+### How It Works
+- Scans 20 cities across 4 continents
+- Integrates 3 forecast sources with Expected Value and Kelly Criterion position sizing
+- Self-improves with each trade (not a fixed script)
 
 ## Sources
 - [Hermes Agent + Polymarket - how i built self-learning weather trading bot $100 → $5,000](https://x.com/i/article/2045080054917476451) (2026-04-25, X article)

@@ -2,6 +2,46 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] translate | JP->EN batch — 8 files (2,575 chars)
+
+
+
+### Files Translated
+
+- [[concepts/instruction-hierarchy.md]] — 344 chars → 0
+
+- [[concepts/model-context-protocol-mcp.md]] — 335 chars → 0
+
+- [[concepts/polymarket-trading-agents.md]] — 332 chars → 0
+
+- [[concepts/headless-ai-services.md]] — 324 chars → 0
+
+- [[concepts/resilient-prompt-engineering.md]] — 317 chars → 0
+
+- [[concepts/claude-opus-4-6.md]] — 316 chars → 0
+
+- [[concepts/flashattention-pytorch-educational.md]] — 306 chars → 0
+
+- [[entities/figma.md]] — 301 chars → 0
+
+
+
+### Stats
+
+- Total JP chars removed: 2,575
+
+- Remaining JP content files: 95
+
+- Remaining JP chars: 5,431
+
+
+
+
+
+---
+
+
+
 ## 2026-05-27
 - 09:00 Created `concepts/ai-native-state-management.md` — Comprehensive synthesis of data flow and state management patterns in AI-native full-stack applications. Covers 8-state taxonomy, 3-layer memory architecture (L1-L3), context engineering (Write/Select/Compress/Isolate), subagent patterns (5 levels), ActiveGraph event sourcing, Delta Channels, storage architecture spectrum (OPFS→db9→S3 Files→Zero Disk), LLM integration paradigms, agent identity separation (SOUL vs MEMORY), and design decision framework. Cross-references 20+ wiki pages. Source: user-provided on-states.md + wiki knowledge base.
 - 11:30 Ingested X Article `2026-05-24_cyrilxbt_obsidian-vault-organization-guide.md` → `wiki/raw/articles/`. @cyrilxbt's comprehensive guide on organizing Obsidian vaults with retrieval-first principles. Covers 10 sections: folder structure, naming conventions, YAML properties, tagging taxonomy, MOCs, inbox processing, search strategy, Claude Code + MCP integration, quarterly vault reviews.

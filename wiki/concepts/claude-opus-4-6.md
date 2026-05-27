@@ -5,7 +5,7 @@ aliases:
   - claude-opus-4-6
   - opus-4-6
 created: 2026-04-25
-updated: 2026-05-08
+updated: 2026-05-27
 tags:
   - concept
   - anthropic
@@ -22,31 +22,31 @@ related:
 
 # Claude Opus 4.6
 
-**Claude Opus 4.6** は、[[entities/anthropic]] が **2026年2月5日** にリリースした Claude Opus シリーズのプレミアムモデル。それ以前の Opus 4.5 から以下の領域で大幅な改善を実現した。
+**Claude Opus 4.6** is the premium model in the Claude Opus series, released by [[entities/anthropic]] on **February 5, 2026**. It achieved significant improvements over the previous Opus 4.5 in the following areas:
 
-## 概要
+## Overview
 
-Opus は Claude モデルファミリーの最上位階層であり、最高水準のコーディング、エージェント性能、難解な推論タスク向けに設計されている。
+Opus is the highest tier in the Claude model family, designed for state-of-the-art coding, agent performance, and complex reasoning tasks.
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| リリース日 | 2026年2月5日 |
-| ポジション | フラッグシップ（最高性能） |
-| API名 | `claude-opus-4-6` |
-| コンテキスト | 200K トークン |
-| 最大出力 | 64K トークン |
-| API価格 | $5.00/MTok（入力）、$25.00/MTok（出力） |
+| Release Date | February 5, 2026 |
+| Position | Flagship (highest performance) |
+| API Name | `claude-opus-4-6` |
+| Context | 200K tokens |
+| Max Output | 64K tokens |
+| API Price | $5.00/MTok (input), $25.00/MTok (output) |
 
-## 主な改善領域
+## Key Improvements
 
-- **計画能力**: 複雑なマルチステップタスクの計画立案がより緻密に
-- **長時間エージェントタスク**: 持続的なエージェント実行の信頼性向上
-- **大規模コードベース**: 数十万行のコードベースでの正確な操作
-- **自己修正**: 自身のミスを検出し修正する能力の向上
-- **Computer Use**: GUI操作精度の改善
+- **Planning**: More sophisticated planning for complex multi-step tasks
+- **Long-duration Agent Tasks**: Improved reliability for sustained agent execution
+- **Large Codebases**: Accurate operations on codebases with hundreds of thousands of lines
+- **Self-correction**: Improved ability to detect and fix its own mistakes
+- **Computer Use**: Improved GUI operation precision
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/claude-model-family]] — Claudeモデルファミリー全体
-- [[concepts/claude-sonnet-4.6]] — 同時期リリースのSonnet
-- [[concepts/claude-opus-4-7]] — Opus 4.7（後継最新モデル）
+- [[concepts/claude-model-family]] — The Claude model family overview
+- [[concepts/claude-sonnet-4.6]] — The contemporaneous Sonnet release
+- [[concepts/claude-opus-4-7]] — Opus 4.7 (latest successor model)
