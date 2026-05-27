@@ -14,6 +14,8 @@
 - 18:30 Created `comparisons/codex-app-server-vs-agent-protocols.md` — Multi-protocol landscape comparison: Codex App Server vs ACP (closest), AG-UI (streaming semantics), MCP Apps (tool-level UI widgets). Layer map across UI/Client↔Agent/Agent↔Agent/Tools boundaries. Decision framework for when to use each protocol. Also covers A2A, A2UI, and Oracle Agent Spec.
 - 18:30 Updated `concepts/codex-app-server.md` — Added cross-references to ACP entity page and comparison page.
 - 18:30 Updated `index.md` — Added entry for codex-app-server-vs-agent-protocols under Comparisons.
+- 19:30 Ingested `raw/articles/2026-02-04_openai-unlocking-the-codex-harness.md` — Celia Chen's "Unlocking the Codex harness" blog post (OpenAI, Feb 4 2026).
+- 19:30 Major update `concepts/codex-app-server.md` — Added Development History (4-phase evolution: internal harness reuse → MCP split PR #4471 → platform stabilization → public documentation), Internal Architecture section (4-component diagram: Stdio Reader → Message Processor → Thread Manager → Core Threads), Three Integration Patterns (stdio local apps, HTTP+SSE web runtime, WebSocket/Unix socket remote control). Key insight: App Server began as "unofficial" protocol, explicitly rejected MCP, and was NOT originally designed as a stable third-party API.
 
 
 ---

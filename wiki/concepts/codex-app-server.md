@@ -26,6 +26,8 @@ related:
   - entities/openai-codex
 sources:
   - raw/articles/2026-05-27_openai-codex-app-server.md
+  - raw/articles/2026-02-04_openai-unlocking-the-codex-harness.md
+  - https://github.com/openai/codex/pull/4471
 ---
 
 # Codex App Server
@@ -36,6 +38,89 @@ The implementation is open-source in the [openai/codex](https://github.com/opena
 
 > **When to use `codex app-server`:** when embedding a **full Codex experience** inside your product (IDE, web app, custom client).
 > **When NOT to use it:** for automating jobs or running Codex in CI — use the **Codex SDK** instead. For simple one-shot tasks, use the [[concepts/codex-goal|Codex CLI]] directly.
+
+---
+
+## Development History
+
+The App Server's origin story reveals an organic evolution from internal hack to platform API — and an explicit rejection of MCP along the way.
+
+### Phase 1: Internal Harness Reuse (mid-2025)
+
+The CLI (TUI) was Codex's first surface. When the team built the **VS Code extension**, they needed to reuse the same **Codex harness** (agent loop, tool execution, persistence) without reimplementing it. They first tried exposing Codex as an **MCP server**, but:
+
+> *"Maintaining MCP semantics in a way that made sense for VS Code proved difficult."*
+
+MCP's tool-oriented model didn't cleanly map onto IDE needs: streaming diffs, approval flows, rich session persistence, and bidirectional server-initiated requests. Instead, they created a **JSON-RPC protocol that mirrored the TUI loop** — the "unofficial first version" of the App Server.
+
+Crucially, at this stage: **"We didn't expect other clients to depend on the App Server, so it wasn't designed as a stable API."**
+
+### Phase 2: The MCP Split — PR [#4471](https://github.com/openai/codex/pull/4471) (Sep 30, 2025)
+
+The original `codex mcp serve` command was a monolith: it served both as an MCP server for tool calls AND as the application server for client integrations. PR #4471 by [@bolinfest](https://github.com/bolinfest) split it into two distinct commands:
+
+| Before | After |
+|--------|-------|
+| `codex mcp serve` (everything) | `codex mcp-server` — pure MCP server (tool calls only) |
+| | `codex app-server` — application server (powers VS Code, etc.) |
+
+The PR was massive: **+1,525 / −414 lines across 49 files**. Key changes:
+- Moved app-server logic from `codex-rs/mcp-server/` to new `codex-rs/app-server/`
+- Broke backward compatibility: new `Initialize` handshake variant, new `SessionConfigured` notification type
+- Files had intentional copypasta between `mcp-server` and `app-server` — expected to diverge later
+- Integration tests previously under `mcp-server/tests/` moved to `app-server/tests/`
+
+This split crystallized the separation of concerns: MCP server = tool execution for other agents; App Server = full Codex harness embedding.
+
+### Phase 3: Platform Stabilization (late 2025 – early 2026)
+
+As Codex adoption grew, internal teams and external partners needed to embed the harness:
+- **JetBrains and Xcode** wanted IDE-grade agent experiences
+- **Codex macOS desktop app** needed to orchestrate multiple Codex agents in parallel
+- The **web app** needed a server-side runtime
+
+These demands forced a redesign for **stability and backward compatibility**. The result: versioned schema generation (`generate-ts`, `generate-json-schema`), typed protocol enums, and a formal `initialize` handshake with `clientInfo`.
+
+### Phase 4: Public Documentation (Feb 4, 2026)
+
+The blog post *"Unlocking the Codex harness"* by Celia Chen formally introduced the App Server as a **platform API**. SDKs emerged in Go, Python, TypeScript, Swift, and Kotlin. The v2 protocol added filesystem RPCs, thread pagination, and a Python SDK (v0.115.0).
+
+---
+
+## Architecture (Internal)
+
+The App Server is both a protocol and a **long-lived process** with four main components:
+
+```
+┌──────────────┐     ┌─────────────────┐     ┌──────────────┐     ┌──────────────┐
+│  Stdio       │ ──→ │  Codex Message  │ ──→ │  Thread       │ ──→ │  Core        │
+│  Reader      │     │  Processor      │     │  Manager      │     │  Threads     │
+│  (JSONL)     │ ←── │  (event trans-  │ ←── │  (one session │ ←── │  (agent loop │
+│              │     │   lation layer) │     │   per thread) │     │   execution) │
+└──────────────┘     └─────────────────┘     └──────────────┘     └──────────────┘
+```
+
+- **Stdio Reader** — translation layer for JSON-RPC over stdio (JSONL)
+- **Codex Message Processor** — translates client requests into `codex-core` operations; transforms internal events into stable, backward-compatible notifications. This is where `item/started`, `turn/completed`, etc. are produced.
+- **Thread Manager** — spins up one core session per thread, manages lifecycle
+- **Core Threads** — actual agent loop executions (the "harness": config loading, tool execution, sandbox enforcement, MCP server integration)
+
+The JSON-RPC protocol is fully **bidirectional**: clients send requests, server streams notifications, and the server can also initiate requests (e.g., approval prompts that pause the turn until the client responds).
+
+---
+
+## Three Integration Patterns
+
+### 1. Local Apps & IDEs (stdio)
+The default pattern. The client bundles a platform-specific Codex binary, launches it as a child process, and communicates over a bidirectional stdio channel. Used by: VS Code extension, macOS desktop app, JetBrains, Xcode.
+
+Partners can **decouple release cycles**: keep the client stable while pointing to a newer App Server binary — adopting server-side improvements without waiting for a client release.
+
+### 2. Web Runtime (HTTP + SSE)
+For browser-based Codex experiences. A worker provisions a container, launches the App Server inside it, and the browser communicates via HTTP and Server-Sent Events. The browser-side UI stays lightweight; the server is the source of truth for long-running agent tasks.
+
+### 3. Remote Control (WebSocket / Unix Socket)
+Experimental transport for non-stdio clients. Use `--listen ws://IP:PORT` for TCP WebSocket or `--listen unix://` for Unix socket. Supports health probes (`/readyz`, `/healthz`) and bearer-token auth.
 
 ---
 
