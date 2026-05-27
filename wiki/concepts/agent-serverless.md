@@ -36,7 +36,7 @@ source_message: |
 
 This concept emerged from a Slack discussion about the future of agent infrastructure (2026-03-24). The key insight:
 
-> *"言ってて思ったけど, エージェント's サーバレスが今後育つとしたら, SaaS連携と権限とセキュリティ's 完備されたマネージド環境だろうな. ログが揮発する/しないとかでエンプラプランで搾り取るみたいなやつ (すでにありそう)"*
+> *"Now that I think about it, if agent serverless is going to grow, it will be a managed environment with built-in SaaS integration, permissions, and security. Enterprise plans that monetize log persistence vs volatility — that kind of thing (already seems to exist)"*
 
 ## Core Components of Agent Serverless
 

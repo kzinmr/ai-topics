@@ -30,20 +30,20 @@ related:
 
 > **Kilo** is the all-in-one open-source AI agentic engineering platform — a fork of **OpenCode** enhanced with VS Code/JetBrains extensions, Kilo CLI, 500+ AI models via Kilo Gateway, hosted OpenClaw (KiloClaw), and enterprise features (Teams, SSO, analytics). Apache-2.0 license.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
+| Field | Details |
 |------|------|
-| 開発元 | Kilo Org (kilo.ai) |
-| リポジトリ | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) |
-| ライセンス | Apache-2.0 |
-| 派生元 | OpenCode (fork) |
-| リリース頻度 | Active (381 releases, latest v7.2.40 May 5, 2026) |
-| 公式サイト | [kilo.ai](https://kilo.ai) |
-| CLIインストール | `npm install -g @kilocode/cli` |
-| コミュニティ | 2.3M+ Kilo Coders, 30T+ tokens processed |
+| Developer | Kilo Org (kilo.ai) |
+| Repository | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) |
+| License | Apache-2.0 |
+| Forked From | OpenCode (fork) |
+| Release Cadence | Active (381 releases, latest v7.2.40 May 5, 2026) |
+| Official Site | [kilo.ai](https://kilo.ai) |
+| CLI Install | `npm install -g @kilocode/cli` |
+| Community | 2.3M+ Kilo Coders, 30T+ tokens processed |
 
-## アーキテクチャと派生関係
+## Architecture & Fork Lineage
 
 ```
 OpenCode (anomalyco, MIT)

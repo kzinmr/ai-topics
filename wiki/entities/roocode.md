@@ -35,22 +35,22 @@ related:
 
 > **RooCode** (formerly Roo-Cline) is an open-source VS Code extension and CLI tool that provided a full AI-powered dev team — with specialized modes (Code, Architect, Ask, Debug) and model-agnostic provider support. **The official extension was shut down on May 15, 2026**, as the original team pivoted to Roomote. The community fork **Zoo Code** continues development.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
+| Field | Details |
 |------|------|
-| 開発元 | Roo Code, Inc. → Community (Zoo Code fork) |
-| リポジトリ | [RooCodeInc/Roo-Code](https://github.com/RooCodeInc/Roo-Code) (archived) |
-| コミュニティフォーク | [Zoo-Code-Org/Zoo-Code](https://github.com/Zoo-Code-Org/Zoo-Code) |
-| 公式サイト | [roocode.com](https://roocode.com) (now redirecting to Roomote) |
-| ドキュメント | [docs.roocode.com](https://docs.roocode.com) (includes sunset notice) |
-| ライセンス | Apache-2.0 |
+| Developer | Roo Code, Inc. → Community (Zoo Code fork) |
+| Repository | [RooCodeInc/Roo-Code](https://github.com/RooCodeInc/Roo-Code) (archived) |
+| Community Fork | [Zoo-Code-Org/Zoo-Code](https://github.com/Zoo-Code-Org/Zoo-Code) |
+| Official Site | [roocode.com](https://roocode.com) (now redirecting to Roomote) |
+| Documentation | [docs.roocode.com](https://docs.roocode.com) (includes sunset notice) |
+| License | Apache-2.0 |
 | GitHub Stars | ~23,911 (fork: 453 Zoo Code stars) |
-| VS Code インストール数 | 3M+ (1.6M on Marketplace, 3M claimed) |
+| VS Code Installs | 3M+ (1.6M on Marketplace, 3M claimed) |
 | Forks | 3,212 |
 | Contributors | 290 |
-| 最終リリース | v3.53.0 (2026-04-23) |
-| 対応環境 | VS Code Extension, CLI |
+| Latest Release | v3.53.0 (2026-04-23) |
+| Environment | VS Code Extension, CLI |
 | X/Twitter | [@roocode](https://x.com/roocode) |
 
 ## Project Timeline & Shutdown

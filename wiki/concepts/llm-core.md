@@ -12,11 +12,11 @@ description: "Large language model architecture, training, and research."
 
 # LLM Core
 
-大規模言語モデル's アーキテクチャ, トレーニング, 研究に関するリソース. 
+Resources on large language model architecture, training, and research.
 
-## 概要
+## Overview
 
-LLM's 最新研究, トレーニング手法, アーキテクチャ's 進化. 
+Latest LLM research, training methods, and architectural evolution.
 
 ## Raw Articles
 

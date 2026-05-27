@@ -12,11 +12,11 @@ description: "Prompt design, instruction fine-tuning, and system prompt engineer
 
 # Prompt Design
 
-プロンプト設計, 指示ファインチューニング, システムプロンプトエンジニアリングに関するリソース. 
+Resources on prompt design, instruction fine-tuning, and system prompt engineering.
 
-## 概要
+## Overview
 
-LLMと's 対話におけるプロンプト設計's 重要性. インストラクションファインチューニングとシステムプロンプト's 進化. 
+The importance of prompt design in LLM interaction. The evolution of instruction fine-tuning and system prompts.
 
 ## Raw Articles
 
