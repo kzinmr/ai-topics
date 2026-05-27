@@ -25,6 +25,26 @@
 
 ---
 
+## [2026-05-27] translate | JP→EN batch — 8 files (2,939 chars)
+
+### Files Translated
+- [[entities/jim-fan.md]] — 378 chars -> 0
+- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop.md]] — 376 chars -> 0
+- [[concepts/mcp-desktop-extensions.md]] — 374 chars -> 0
+- [[entities/claude-code--history.md]] — 374 chars -> 0
+- [[concepts/claude-sonnet-4.6.md]] — 372 chars -> 0
+- [[concepts/pytorch-fsdp-distributed-training.md]] — 356 chars -> 0
+- [[entities/qwen3-6-plus.md]] — 356 chars -> 0
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs.md]] — 353 chars -> 0
+
+### Stats
+- Total JP chars removed: 2,939
+- Remaining JP content files: 104
+- Remaining JP chars: 8,008
+
+
+---
+
 ## [2026-05-27] translate | JP→EN batch — 8 files
 
 ### Files Translated

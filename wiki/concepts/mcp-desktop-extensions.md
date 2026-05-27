@@ -2,7 +2,7 @@
 title: "Desktop Extensions (MCP Bundle)"
 type: concept
 created: 2026-05-08
-updated: 2026-05-24
+updated: 2026-05-27
 tags:
   - mcp
   - developer-tooling
@@ -21,49 +21,49 @@ related:
 
 # Desktop Extensions (MCP Bundle)
 
-MCPサーバーを依存関係込みで1ファイルにパッケージングし、ダブルクリックでインストール可能にするフォーマット。MCPインストールの複雑さ（Node.js/Python要、手動JSON設定、依存関係地獄）を解決する。
+A format that packages an MCP server with its dependencies into a single file, installable with a double-click. Solves the complexity of MCP installation (requiring Node.js/Python, manual JSON config, dependency hell).
 
-## ファイル形式
+## File Format
 
-- 拡張子: **`.mcpb`** (MCP Bundle, 旧 `.dxt`)
-- 実体: **ZIPアーカイブ**
+- Extension: **`.mcpb`** (MCP Bundle, formerly `.dxt`)
+- Essence: **ZIP archive**
 
 ```
 extension.mcpb (ZIP archive)
-├── manifest.json         # 拡張メタデータ・設定
-├── server/               # MCPサーバー実装
+├── manifest.json         # Extension metadata and configuration
+├── server/               # MCP server implementation
 │   └── [server files]
-├── dependencies/         # 全依存パッケージ/ライブラリ
-└── icon.png              # オプション: 拡張アイコン
+├── dependencies/         # All dependency packages/libraries
+└── icon.png              # Optional: Extension icon
 ```
 
 ## Before/After
 
-| 従来 | Desktop Extensions |
+| Traditional | Desktop Extensions |
 |------|-------------------|
-| Node.jsやPythonのインストールが必要 | 不要 |
-| `~/.claude/claude_desktop_config.json` を手動編集 | 不要 |
-| パッケージ競合・バージョン不一致の解決 | 自動 |
-| MCPサーバー発見はGitHub検索 | ブラウザからダウンロード |
-| 更新は手動再インストール | 自動更新対応 |
+| Requires Node.js or Python installation | Not required |
+| Manual editing of `~/.claude/claude_desktop_config.json` | Not required |
+| Resolving package conflicts and version mismatches | Automatic |
+| MCP server discovery via GitHub search | Download from browser |
+| Manual reinstall for updates | Automatic updates |
 
-## インストールフロー
+## Installation Flow
 
-1. `.mcpb` ファイルをダウンロード
-2. ダブルクリック → Claude Desktopで開く
-3. 「Install」をクリック
-4. 完了（ターミナル不要、設定ファイル不要）
+1. Download the `.mcpb` file
+2. Double-click → Opens in Claude Desktop
+3. Click "Install"
+4. Done (no terminal, no config files needed)
 
-## 解決する問題
+## Problems Solved
 
-MCPローカルサーバーは強力だが、インストールの複雑さが非技術ユーザーの障壁になっていた：
-- 開発ツール（Node.js, Python等）の要件
-- 手動JSON設定ファイル編集
-- 依存関係管理
-- 発見メカニズムの欠如
-- 更新の複雑さ
+MCP local servers are powerful, but installation complexity was a barrier for non-technical users:
+- Development tool requirements (Node.js, Python, etc.)
+- Manual JSON config file editing
+- Dependency management
+- Lack of discovery mechanisms
+- Update complexity
 
-Desktop Extensionsはこれらすべてを抽象化する。
+Desktop Extensions abstracts all of these away.
 
 ## See Also
 

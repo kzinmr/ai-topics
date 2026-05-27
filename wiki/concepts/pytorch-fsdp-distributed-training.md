@@ -2,7 +2,7 @@
 title: "PyTorch FSDP — Distributed Training"
 type: concept
 created: 2026-04-25
-updated: 2026-05-01
+updated: 2026-05-27
 tags:
   - concept
   - training
@@ -24,29 +24,29 @@ sources:
 
 # PyTorch FSDP — Distributed Training
 
-> PyTorch Fully Sharded Data Parallel (FSDP) は、モデルパラメータ・勾配・optimizer状態を全GPU間でシャーディングすることで、大規模モデルのトレーニングを可能にする分散学習戦略。
+> PyTorch Fully Sharded Data Parallel (FSDP) is a distributed training strategy that enables large-scale model training by sharding model parameters, gradients, and optimizer states across all GPUs.
 
 ## Overview
 
-FSDPはDeepSpeed ZeRO-3に触発されたPyTorchネイティブの分散学習手法。従来のDDP（Data Distributed Parallel）が各GPUに完全なモデルコピーを保持するのに対し、FSDPはパラメータをシャードして全GPUに分散する。これにより、単一GPUのVRAM制限を数十倍に拡張できる。
+FSDP is a PyTorch-native distributed training method inspired by DeepSpeed ZeRO-3. While traditional DDP (Data Distributed Parallel) keeps a complete model copy on each GPU, FSDP shards parameters and distributes them across all GPUs. This can expand a single GPU's effective VRAM limit by tens of times.
 
 ### Core Concept: Parameter Sharding
 
-DDP: `[params A][params A][params A][params A]` — 各GPUが完全なコピー
-FSDP: `[p1][p2][p3][p4]` — パラメータが分割されて分散
+DDP: `[params A][params A][params A][params A]` — Each GPU has a complete copy
+FSDP: `[p1][p2][p3][p4]` — Parameters are split and distributed
 
 ### Sharding Strategies
 
-| Strategy | Shard対象 | メモリ節約 | 通信コスト | いつ使うか |
+| Strategy | Shard Target | Memory Savings | Communication Cost | When to Use |
 |----------|----------|-----------|-----------|-----------|
-| `NO_SHARD` | なし（DDP相当） | 0% | 低 | モデルが1GPUに収まる |
-| `SHARD_GRAD_OP` | optimizer状態 + 勾配 | ~50% | 中 | 7-13Bモデル |
-| `FULL_SHARD` | パラメータ + 勾配 + optimizer | ~70%+ | 高 | 13B+モデル推奨 |
+| `NO_SHARD` | None (equivalent to DDP) | 0% | Low | Model fits on one GPU |
+| `SHARD_GRAD_OP` | Optimizer state + gradients | ~50% | Medium | 7-13B models |
+| `FULL_SHARD` | Parameters + gradients + optimizer | ~70%+ | High | Recommended for 13B+ models |
 
 ### Memory Savings Example (70B model, 8x H100 80GB)
 
-DDP: 各GPUに140GBのパラメータ → VRAM超過 ❌
-FSDP FULL_SHARD: 各GPUに140GB/8 = 17.5GBのパラメータ ✅
+DDP: 140GB of parameters per GPU → Exceeds VRAM ❌
+FSDP FULL_SHARD: 140GB/8 = 17.5GB of parameters per GPU ✅
 
 ### Key Configuration Parameters
 
@@ -73,7 +73,7 @@ fsdp_model = FSDP(
 
 ### CPU Offload
 
-FSDPは、GPU VRAMが不足する場合にパラメータをCPUメモリにオフロードできる:
+FSDP can offload parameters to CPU memory when GPU VRAM is insufficient:
 ```python
 from torch.distributed.fsdp import CPUOffload
 
@@ -83,25 +83,25 @@ fsdp_model = FSDP(
     ...
 )
 ```
-- 70Bモデルを1台のH100で学習可能になるが、速度はCPU⇔GPU転送で制限（約1/10〜1/30）
+- Enables training a 70B model on a single H100, but speed is limited by CPU⇔GPU transfer (approximately 1/10 to 1/30)
 
 ## Relationship to DeepSpeed
 
-| 観点 | FSDP | DeepSpeed ZeRO-3 |
+| Aspect | FSDP | DeepSpeed ZeRO-3 |
 |------|------|-----------------|
-| **エコシステム** | PyTorchネイティブ | 独立ライブラリ |
-| **設定** | Python API | ds_config.json |
-| **CPUオフロード** | あり | ZeRO-Offload / Infinity |
-| **MoE** | なし | DeepSpeed-MoE |
-| **オーバーラップ** | forward_prefetch | ZeRO-3設定で自動 |
-| **コミュニティ** | 広い | 大規模学習で実績 |
+| **Ecosystem** | PyTorch native | Independent library |
+| **Config** | Python API | ds_config.json |
+| **CPU Offload** | Yes | ZeRO-Offload / Infinity |
+| **MoE** | No | DeepSpeed-MoE |
+| **Overlap** | forward_prefetch | Automatic in ZeRO-3 config |
+| **Community** | Broad | Proven in large-scale training |
 
 ## When to Use
 
 - **Model 7B-70B on 4-64 GPUs**: FSDP FULL_SHARD
 - **Model 70B+ on many GPUs**: FSDP + Tensor Parallel (3D)
-- **Single consumer GPU**: FSDP + CPU Offload (遅いが可能)
-- **MoE models**: DeepSpeed-MoE推奨（FSDP非対応）
+- **Single consumer GPU**: FSDP + CPU Offload (slow but possible)
+- **MoE models**: DeepSpeed-MoE recommended (FSDP does not support MoE)
 
 ## Related Pages
 

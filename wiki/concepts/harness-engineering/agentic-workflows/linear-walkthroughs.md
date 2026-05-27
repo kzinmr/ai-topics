@@ -5,7 +5,7 @@ aliases:
   - linear-walkthroughs
   - code-walkthrough
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-27
 tags:
   - concept
   - agentic-engineering
@@ -17,21 +17,21 @@ sources:
 
 # Linear Walkthroughs
 
-コーディングエージェントに**コードベースの構造化された解説を生成させる**パターン。既存コードの理解、忘れかけた自分のコードの復習、Vibe Codingしたコードの仕組み理解に有効。
+A pattern for having a coding agent **generate structured explanations of a codebase**. Useful for understanding existing code, reviewing code you've half-forgotten, and understanding how Vibe Coded code works.
 
-## 定義
+## Definition
 
 > "Sometimes it's useful to have a coding agent give you a structured walkthrough of a codebase. Maybe it's existing code you need to get up to speed on, maybe it's your own code that you've forgotten the details of, or maybe you vibe coded the whole thing and need to understand how it actually works."
 
-## 仕組み
+## How It Works
 
-Frontierモデル + 適切なエージェンティックハーネスが、コードの詳細な解説を構築可能。
+A frontier model plus an appropriate agentic harness can construct detailed code explanations.
 
-## 実践例：SwiftUIプレゼンアプリ
+## Practical Example: SwiftUI Presentation App
 
-SimonがClaude Code + Opus 4.6でVibe CodingしたmacOS用SwiftUIスライドアプリについて、後から自分のコードを理解する必要が生じた。
+Simon needed to understand his own code after Vibe Coding a macOS SwiftUI slide presentation app with Claude Code + Opus 4.6.
 
-### プロンプト
+### Prompt
 ```
 Read the source and then plan a linear walkthrough of the code that explains how it all works in detail.
 Then run "uvx showboat --help" to learn showboat - use showboat to create a walkthrough.md file in the repo
@@ -39,27 +39,27 @@ and build the walkthrough in there, using showboat note for commentary and showb
 or cat or whatever you need to include snippets of code you are talking about.
 ```
 
-### 重要な工夫
-- **`showboat exec` + `sed/grep/cat` を使用させる** → エージェントがコードスニペットを手動コピーするリスク（ハルシネーション・ミス）を排除
-- **Showboatで記録** → 検証可能・監査可能な成果物として残る
+### Key Techniques
+- **Use `showboat exec` + `sed/grep/cat`** → Eliminates the risk of the agent manually copying code snippets (hallucination errors)
+- **Record with Showboat** → Remains as a verifiable, auditable artifact
 
-### 結果
+### Results
 > "I learned a great deal about how SwiftUI apps are structured and absorbed some solid details about the Swift language itself just from reading this document."
 
-6つのSwiftファイルの詳細な解説ドキュメントが自動生成された。
+Detailed documentation for 6 Swift files was automatically generated.
 
-## 認知負債の返済
+## Paying Down Cognitive Debt
 
 > "If you are concerned that LLMs might reduce the speed at which you learn new skills I strongly recommend adopting patterns like this one. Even a ~40 minute vibe coded toy project can become an opportunity to explore new ecosystems and pick up some interesting new tricks."
 
-Vibe Coding → Linear Walkthrough で**学習機会に変換**できる。
+Vibe Coding → Linear Walkthrough can be **transformed into a learning opportunity**.
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/showboat]] — Walkthrough生成に使用するドキュメンテーションツール
-- [[concepts/interactive-explanations]] — より直感的な理解手法（アニメーション）
-- [[concepts/vibe-coding]] — Walkthroughが必要になる主要シナリオ
-- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/showboat]] — Documentation tool used for generating walkthroughs
+- [[concepts/interactive-explanations]] — More intuitive understanding methods (animations)
+- [[concepts/vibe-coding]] — The main scenario where walkthroughs become necessary
+- [[concepts/harness-engineering/agentic-engineering]] — Higher-level concept
 
-## 参照
-- [[entities/simon-willison]] — パターン創始者
+## References
+- [[entities/simon-willison]] — Pattern originator

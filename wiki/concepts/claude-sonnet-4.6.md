@@ -5,7 +5,7 @@ aliases:
   - claude-sonnet-4-6
   - sonnet-4-6
 created: 2026-04-25
-updated: 2026-05-08
+updated: 2026-05-27
 tags:
   - concept
   - anthropic
@@ -22,31 +22,31 @@ related:
 
 # Claude Sonnet 4.6
 
-**Claude Sonnet 4.6** は、[[entities/anthropic]] が **2026年2月17日** にリリースした Claude Sonnet シリーズの最新モデル。Opus 4.6 と同時期にリリースされ、コーディング、Computer Use、長文脈推論、エージェント計画、知識業務、デザインの全スキルにおいて大幅なアップグレードが施された。
+**Claude Sonnet 4.6** is the latest model in the Claude Sonnet series, released by [[entities/anthropic]] on **February 17, 2026**. Released alongside Opus 4.6, it brought significant upgrades across all major skills: coding, Computer Use, long-context reasoning, agent planning, knowledge work, and design.
 
-## 概要
+## Overview
 
-Sonnet は Claude モデルファミリーの中間階層（バランス型）として位置づけられ、多くの本番ワークロードにおいて推奨モデルとなっている。Sonnet 4.6 は前世代の Sonnet 4.5 からすべての主要ベンチマークで改善。
+Sonnet is positioned as the mid-tier (balanced) model in the Claude family and is the recommended model for many production workloads. Sonnet 4.6 improves over its predecessor Sonnet 4.5 across all major benchmarks.
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| リリース日 | 2026年2月17日 |
-| ポジション | ミッドレンジ（バランス型） |
-| API名 | `claude-sonnet-4-6` |
-| コンテキスト | 200K トークン |
-| 最大出力 | 64K トークン |
-| API価格 | $3.00/MTok（入力）、$15.00/MTok（出力） |
+| Release Date | February 17, 2026 |
+| Position | Mid-range (balanced) |
+| API Name | `claude-sonnet-4-6` |
+| Context | 200K tokens |
+| Max Output | 64K tokens |
+| API Price | $3.00/MTok (input), $15.00/MTok (output) |
 
-## 主な改善領域
+## Key Improvement Areas
 
-- **コーディング**: SWE-bench スコア向上、マルチファイル編集の正確性改善
-- **Computer Use**: スクリーンショット理解とGUI操作精度の向上
-- **長文脈推論**: 100K+ トークンコンテキストでの一貫性改善
-- **エージェント計画**: マルチステップ計画の信頼性向上
-- **知識業務**: 文書分析、要約、情報抽出の精度改善
+- **Coding**: Improved SWE-bench scores, better multi-file editing accuracy
+- **Computer Use**: Improved screenshot understanding and GUI operation accuracy
+- **Long-context reasoning**: Improved consistency in 100K+ token contexts
+- **Agent planning**: Improved reliability of multi-step planning
+- **Knowledge work**: Improved accuracy in document analysis, summarization, and information extraction
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/claude-model-family]] — Claudeモデルファミリー全体
-- [[concepts/claude-opus-4-6]] — 同時期リリースのOpus
-- [[concepts/claude-opus-4-7]] — Opus 4.7（フラッグシップ最新）
+- [[concepts/claude-model-family]] — Claude model family overview
+- [[concepts/claude-opus-4-6]] — Opus released at the same time
+- [[concepts/claude-opus-4-7]] — Opus 4.7 (latest flagship)

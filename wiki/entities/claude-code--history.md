@@ -3,7 +3,7 @@ title: "Claude Code — Development History"
 type: entity
 parent: claude-code
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-27
 tags:
   - product
   - timeline
@@ -17,33 +17,33 @@ sources:
 Back to main profile: [[entities/claude-code]]
 
 ## Origins (Sep 2024)
-[[entities/boris-cherny]]がAnthropicに入社し、Claude 3.6モデルでプロトタイピングを開始。最初のプロトタイプはAppleScript経由で音楽を特定・変更するCLIツールだった。
+[[entities/boris-cherny]] joined Anthropic and began prototyping with the Claude 3.6 model. The first prototype was a CLI tool that identified and modified music via AppleScript.
 
 ## Internal Dogfooding (Nov 2024)
-- **20%のエンジニア**が初日に採用
-- **5日間以内に50%が採用**
-- 1日60-100回の内部リリース
-- 70-80%の技術スタッフが毎日使用
+- **20% of engineers** adopted it on day one
+- **50% adoption within 5 days**
+- 60-100 internal releases per day
+- 70-80% of technical staff used it daily
 
 ## General Availability (May 2025)
-- チームは約10人のエンジニアに拡大
-- 2025年7月時点ですでに高い成長率を記録
+- Team expanded to ~10 engineers
+- Already recording high growth rates as of July 2025
 
 ## Team Growth (Jul 2025)
-チームは10人規模に拡大。Boris ChernyがHead of Claude CodeとしてAnthropicで開発を継続。
+The team expanded to about 10 people. Boris Cherny continued development at Anthropic as Head of Claude Code.
 
 ## Agent Teams GA (2026)
-マルチエージェント協調機能がGeneral Availabilityに到達。複数のClaude Codeインスタンスが役割分担しながら並行作業を実行可能。
+Multi-agent coordination reached General Availability. Multiple Claude Code instances can work in parallel with role division.
 
 ## Source Code Leak Incident (Mar 31, 2026)
 
 ### What Happened
-セキュリティ研究者Chaofan Shouが、Claude Codeのnpmパッケージに含まれるsourcemapファイルを通じて、難読化されていないTypeScriptの全ソースコードへの参照を発見。AnthropicのCloudflare R2ストレージ上のzipアーカイブがダウンロード可能だった。
+Security researcher Chaofan Shou discovered references to unobfuscated TypeScript source code through sourcemap files included in the Claude Code npm package. A zip archive on Anthropic's Cloudflare R2 storage was downloadable.
 
 ### Impact
-- GitHubにソースコードのバックアップが**41,500回以上フォーク**
-- npmパッケージのsourcemapファイルが原因
-- Anthropicのビルドチェーンが未難読化のTypeScriptソースを参照
+- Source code backup was **forked over 41,500 times** on GitHub
+- Caused by sourcemap files in the npm package
+- Anthropic's build chain referenced unobfuscated TypeScript source
 
 ### Significance
-この漏洩により、Claude Codeの内部設計が完全に公開。AIコーディングエージェントのアーキテクチャ理解に大きな影響を与えた。詳細は[[claude-code--architecture]]を参照。
+This leak fully exposed Claude Code's internal design, significantly impacting understanding of AI coding agent architecture. See [[claude-code--architecture]] for details.

@@ -3,7 +3,7 @@ title: Jim Fan
 type: entity
 handle: "@jim-fan"
 created: 2026-04-10
-updated: 2026-05-11
+updated: 2026-05-27
 related:
   - "entities/nvidia-dgx-spark]]"
   - "concepts/embodied-ai]]"
@@ -119,27 +119,27 @@ A blog article exploring how foundation models are evolving beyond language into
 
 ## Sequoia Talk (May 2026) — Dexterity Scaling Laws
 
-Sequoia Capital 主催の講演で、Jim Fan はロボティクスの新たなスケーリング則を発表：
+In a talk hosted by Sequoia Capital, Jim Fan presented new scaling laws for robotics:
 
-### 巧緻性（Dexterity）にスケーリング則が存在
+### Scaling Laws for Dexterity
 
-言語モデルやビジョンモデルと同様に、**ロボットの巧緻性にもスケーリング則が適用される**ことを実証：
+Demonstrated that **scaling laws apply to robot dexterity**, just as they do for language and vision models:
 
-- **訓練データ**: 2.1万時間の人間視点映像（first-person human footage）を使用
-- **ロボットデータの割合**: 全訓練データの **0.1%未満** のみがロボットの実データ
-- **含意**: 人間の動作データからロボットの巧緻性が学習可能であることを示唆
+- **Training data**: Used 21,000 hours of first-person human footage
+- **Robot data proportion**: Less than **0.1%** of total training data was actual robot data
+- **Implication**: Suggests that robot dexterity can be learned from human motion data
 
-### ロボティクスのインターネット規模データ不足
+### Robotics Lacks Internet-Scale Data
 
-- LLM はインターネット全体のテキスト（数兆トークン）で訓練可能
-- ロボットには同等規模の訓練データが**存在しない**
-- シミュレーション（Simulation 1.0 → 2.0）がこのギャップを埋める鍵
+- LLMs can be trained on the entire internet's text (trillions of tokens)
+- Robots do **not have** equivalent-scale training data
+- Simulation (Simulation 1.0 → 2.0) is the key to bridging this gap
 
-### ビジョン
+### Vision
 
-> 「ロボットの最大のボトルネックはデータだ。インターネットはテキストについては豊富だが、物理的インタラクションのデータは極めて希少である。」
+> "The biggest bottleneck for robots is data. The internet is abundant in text, but data on physical interaction is extremely scarce."
 
-この講演は Fan の **Physical AI** ビジョンをさらに具体化し、データ不足をシミュレーションで克服する道筋を示した。
+This talk further concretized Fan's **Physical AI** vision, outlining a path to overcome data scarcity through simulation.
 
 ## Blog / Recent Posts
 
