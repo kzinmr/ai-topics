@@ -20,6 +20,26 @@
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
 
+## [2026-05-27] translate | JP→EN batch — 8 files (13,127 chars)
+
+### Files Translated
+| File | JP chars removed | Status |
+|------|-----------------|--------|
+| [[log-2026.md]] | 9036→4591 | −4,445 |
+| [[log.md]] | 3786→0 | −3,786 |
+| [[log-2026-05-previous.md]] | 2479→759 | −1,720 |
+| [[log-2026-05-13.md]] | 1460→795 | −665 |
+| [[concepts/inference.md]] | 660→40 | −620 |
+| [[concepts/openclaw/ecosystem-tools.md]] | 636→0 | −636 |
+| [[concepts/closing-the-software-loop.md]] | 639→0 | −639 |
+| [[concepts/ai-image-generation.md]] | 616→0 | −616 |
+
+### Stats
+- Total JP chars removed: 13,127
+- Remaining JP content files: 170
+- Remaining JP chars: 47,064
+
+---
 ## [2026-05-26] translate | JP->EN batch — 8 files (5,647 chars)
 
 ### Files Translated
