@@ -13,6 +13,6 @@ sources: []
 
 # Red-Green TDD
 
-> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] に移動しました. 
+> **Moved:** Content moved to [[concepts/harness-engineering/agentic-workflows/red-green-tdd]]. 
 
-詳細: [[concepts/harness-engineering/agentic-workflows/red-green-tdd]]
+Details: [[concepts/harness-engineering/agentic-workflows/red-green-tdd]]

@@ -13,6 +13,6 @@ sources: []
 
 # Interactive Explanations
 
-> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] に移動しました. 
+> **Moved:** Content moved to [[concepts/harness-engineering/agentic-workflows/interactive-explanations]]. 
 
-詳細: [[concepts/harness-engineering/agentic-workflows/interactive-explanations]]
+Details: [[concepts/harness-engineering/agentic-workflows/interactive-explanations]]

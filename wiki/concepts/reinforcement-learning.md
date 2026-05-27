@@ -14,6 +14,6 @@ sources: []
 
 # Reinforcement Learning
 
-> **Moved:** コンテンツは [[concepts/rlhf]] に移動しました. 
+> **Moved:** Content moved to [[concepts/rlhf]]. 
 
-詳細: [[concepts/rlhf]]
+Details: [[concepts/rlhf]]

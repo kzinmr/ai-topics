@@ -14,6 +14,6 @@ sources: []
 
 # Vibe Coding
 
-> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/vibe-coding]] に移動しました. 
+> **Moved:** Content moved to [[concepts/harness-engineering/agentic-workflows/vibe-coding]]. 
 
-詳細: [[concepts/harness-engineering/agentic-workflows/vibe-coding]]
+Details: [[concepts/harness-engineering/agentic-workflows/vibe-coding]]

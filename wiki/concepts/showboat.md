@@ -13,6 +13,6 @@ sources: []
 
 # Showboat
 
-> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/showboat]] に移動しました. 
+> **Moved:** Content moved to [[concepts/harness-engineering/agentic-workflows/showboat]]. 
 
-詳細: [[concepts/harness-engineering/agentic-workflows/showboat]]
+Details: [[concepts/harness-engineering/agentic-workflows/showboat]]
