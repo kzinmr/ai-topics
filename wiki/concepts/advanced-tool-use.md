@@ -25,34 +25,34 @@ related:
 
 # Advanced Tool Use (Claude Developer Platform)
 
-2026年3月、Anthropicがリリースした3つの高度なツール使用機能。数百〜数千のツールを扱うエージェントのための基盤。
+Three advanced tool-use features released by Anthropic in March 2026. Foundation for agents handling hundreds to thousands of tools.
 
-## 3つの新機能
+## Three New Features
 
-| 機能 | 課題 | 解決策 |
+| Feature | Problem | Solution |
 |------|------|--------|
-| **Tool Search Tool** | 全ツール定義をコンテキストに前置（58ツール=55Kトークン） | オンデマンド発見（~500トークンの検索ツールのみ前置） |
-| **Programmatic Tool Calling** | 自然言語ツール呼び出し=推論パス毎 + 中間結果がコンテキスト蓄積 | コード実行環境からのツール呼び出し |
-| **Tool Use Examples** | JSONスキーマは構造的妥当性しか示せず、使用パターンが伝わらない | ツールの効果的な使い方を示す例のユニバーサル標準 |
+| **Tool Search Tool** | All tool definitions loaded into context (58 tools = 55K tokens) | On-demand discovery (~500 tokens, only search tool upfront) |
+| **Programmatic Tool Calling** | Natural language tool calls = per-reasoning pass + intermediate results accumulating in context | Tool calls from code execution environment |
+| **Tool Use Examples** | JSON schemas only show structural validity, not usage patterns | Universal standard for showing effective tool usage examples |
 
 ## Tool Search Tool
 
-### トークン節約効果
+### Token Savings
 
-| | 従来 | Tool Search Tool |
+| | Before | Tool Search Tool |
 |---|---|---|
-| 前置トークン | ~72K（50+ MCPツール） | ~500（検索ツールのみ） |
-| 実行時トークン | — | ~3K（3-5の関連ツール） |
-| 合計消費 | ~77K（会話開始前） | **~8.7K（95%削減）** |
+| Upfront Tokens | ~72K (50+ MCP tools) | ~500 (search tool only) |
+| Runtime Tokens | — | ~3K (3-5 relevant tools) |
+| Total Consumption | ~77K (before conversation starts) | **~8.7K (95% reduction)** |
 
-### 精度向上
+### Accuracy Improvement
 
-| モデル | 従来 | Tool Search Tool |
+| Model | Before | Tool Search Tool |
 |--------|------|-----------------|
 | Opus 4 | 49% | **74%** (+25pp) |
 | Opus 4.5 | 79.5% | **88.1%** (+8.6pp) |
 
-### 仕組み
+### How It Works
 
 ```json
 {
@@ -63,25 +63,25 @@ related:
 }
 ```
 
-- `defer_loading: true` → コンテキストに初期ロードされない
-- 必要なときだけClaudeが検索→該当ツールだけ展開
-- Prompt Cachingは壊れない（遅延ツールは初期プロンプトから除外）
+- `defer_loading: true` → Not initially loaded into context
+- Claude searches only when needed → expands only relevant tools
+- Prompt Caching remains intact (deferred tools excluded from initial prompt)
 
-### 使用判断
-- ✅ ツール定義>10Kトークン / ツール選択精度問題 / 複数MCPサーバー / 10+ツール
-- ❌ 小規模ツールライブラリ / 全ツールを常時使用 / コンパクトな定義
+### When to Use
+- ✅ Tool definitions >10K tokens / Tool selection accuracy issues / Multiple MCP servers / 10+ tools
+- ❌ Small tool libraries / All tools always used / Compact definitions
 
 ## Programmatic Tool Calling
 
-### 解決する2つの問題
+### Two Problems It Solves
 
-1. **コンテキスト汚染**: 10MBログファイル解析→全ファイルがコンテキストに入る（必要なのは要約だけ）
-2. **推論オーバーヘッド**: ループ・条件分岐・データ変換のたびに推論パスが必要
+1. **Context Pollution**: 10MB log analysis → entire file enters context (only the summary is needed)
+2. **Inference Overhead**: Loop iterations, conditionals, and data transformations each require an inference pass
 
-### 動作
-- サンドボックス化されたPython REPL内からツール呼び出し
-- コードで結果を処理（フィルタリング・集計・変換）→最終結果のみコンテキストに注入
-- 例: Claude for Excel — 数千行のスプレッドシートをコンテキスト過負荷なしで操作
+### How It Works
+- Tool calls from within a sandboxed Python REPL
+- Process results with code (filtering, aggregation, transformation) → only final results injected into context
+- Example: Claude for Excel — Manipulate thousands of spreadsheet rows without context overload
 
 ## Tool Use Examples
 
@@ -98,7 +98,7 @@ related:
 }
 ```
 
-- JSONスキーマだけでは表現できない使用パターン・オプションパラメータの使いどころ・API規約を伝達
+- Conveys usage patterns, optional parameter best practices, and API conventions that JSON schemas alone cannot express
 
 ## See Also
 

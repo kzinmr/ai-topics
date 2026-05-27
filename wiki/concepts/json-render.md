@@ -19,58 +19,58 @@ sources:
   - https://github.com/vercel-labs/json-render
 ---
 
-# json-render — Generative UI フレームワーク
+# json-render — Generative UI Framework
 
-## 概要
+## Overview
 
-**json-render** は **Vercel Labs** が開発した Generative UI フレームワーク。自然言語プロンプトから動的でパーソナライズされた UI を生成する。AI の出力を事前定義されたコンポーネントとアクションのカタログに**制約**することで、生成 UI の信頼性を確保する。
+**json-render** is a Generative UI framework developed by **Vercel Labs**. It generates dynamic, personalized UI from natural language prompts. It ensures generative UI reliability by **constraining** AI output to a predefined catalog of components and actions.
 
-## 核心理念
+## Core Philosophy
 
-> 「AI に UI を作らせるが、決められた部品だけを使わせる」
+> "Let AI build the UI, but only use the parts you define"
 
-- **Guardrailed**: AI の出力を開発者が定義したコンポーネントカタログに制限
-- **Predictable**: JSON 出力は常に定義されたスキーマに適合
-- **Fast**: プログレッシブストリーミング + モデル応答に応じた逐次レンダリング
-- **Cross-Platform**: 単一カタログで React, Vue, Svelte, Solid, React Native 他をサポート
-- **Batteries Included**: 36個の shadcn/ui コンポーネントがプリビルド
+- **Guardrailed**: Limits AI output to a developer-defined component catalog
+- **Predictable**: JSON output always conforms to defined schemas
+- **Fast**: Progressive streaming + sequential rendering based on model response
+- **Cross-Platform**: Single catalog supports React, Vue, Svelte, Solid, React Native, and more
+- **Batteries Included**: 36 pre-built shadcn/ui components
 
-## アーキテクチャ
+## Architecture
 
 ```
-自然言語 → AIモデル → JSON Spec → Renderer → UI
+Natural Language → AI Model → JSON Spec → Renderer → UI
                 ↑
-         Component Catalog (Zodスキーマで制約)
+         Component Catalog (Zod schema constrained)
 ```
 
-### 3ステップワークフロー
+### 3-Step Workflow
 
-1. **カタログ定義**: Zod スキーマで AI が使えるコンポーネントとアクションを制約
-2. **コンポーネント実装**: カタログを実際の UI 実装にマッピング
-3. **AI 生成 Spec のレンダリング**: `<Renderer spec={spec} registry={registry} />`
+1. **Catalog Definition**: Constrain components and actions available to AI using Zod schemas
+2. **Component Implementation**: Map the catalog to actual UI implementations
+3. **AI-Generated Spec Rendering**: `<Renderer spec={spec} registry={registry} />`
 
-## エコシステム
+## Ecosystem
 
-| カテゴリ | パッケージ |
+| Category | Package |
 |----------|-----------|
 | **Core** | `@json-render/core`, `@json-render/codegen`, `@json-render/yaml` |
-| **Web フレームワーク** | React, Vue, Svelte, Solid |
-| **UI ライブラリ** | `@json-render/shadcn`, `@json-render/shadcn-svelte` |
-| **特殊用途** | Next.js (フルアプリ), React Native (モバイル), Remotion (動画), React PDF, React Email, Ink (ターミナル TUI) |
-| **3D/グラフィックス** | `@json-render/react-three-fiber` (3D, Gaussian Splatting), `@json-render/image` (SVG/PNG) |
-| **状態管理** | Redux, Zustand, Jotai, XState アダプター |
+| **Web Frameworks** | React, Vue, Svelte, Solid |
+| **UI Libraries** | `@json-render/shadcn`, `@json-render/shadcn-svelte` |
+| **Special Purpose** | Next.js (full app), React Native (mobile), Remotion (video), React PDF, React Email, Ink (terminal TUI) |
+| **3D/Graphics** | `@json-render/react-three-fiber` (3D, Gaussian Splatting), `@json-render/image` (SVG/PNG) |
+| **State Management** | Redux, Zustand, Jotai, XState adapters |
 
-## 高度な機能
+## Advanced Features
 
-### 動的 Props と式
+### Dynamic Props & Expressions
 
-コンポーネント props に式を埋め込み可能：
-- `$state`: 状態モデルから値を読み取り
-- `$cond`: 三項論理（`$then` / `$else`）
-- `$template`: 文字列補間（`"Hello, ${/user/name}!"`）
-- `$computed`: 登録関数の呼び出し
+Expressions can be embedded in component props:
+- `$state`: Read value from state model
+- `$cond`: Ternary logic (`$then` / `$else`)
+- `$template`: String interpolation (`"Hello, ${/user/name}!"`)
+- `$computed`: Call registered functions
 
-### 条件付き表示
+### Conditional Display
 ```json
 {
   "type": "Alert",
@@ -81,30 +81,30 @@ sources:
 }
 ```
 
-### SpecStream（ストリーミング AI）
-部分的な JSON チャンクを処理して UI を逐次更新：
+### SpecStream (Streaming AI)
+Process partial JSON chunks to progressively update the UI:
 ```typescript
 const compiler = createSpecStreamCompiler<MySpec>();
 const { result } = compiler.push(chunk);
-setSpec(result); // 部分結果で UI 更新
+setSpec(result); // Update UI with partial results
 ```
 
-### プロンプト自動生成
+### Automatic Prompt Generation
 ```typescript
 const systemPrompt = catalog.prompt();
-// コンポーネント説明、prop スキーマ、利用可能アクションを含む
+// Includes component descriptions, prop schemas, and available actions
 ```
 
-## 競合との差別化
+## Differentiation from Competitors
 
-| 比較軸 | json-render | Vercel AI SDK | 従来のGenerative UI |
+| Dimension | json-render | Vercel AI SDK | Traditional Generative UI |
 |--------|-------------|---------------|-------------------|
-| **制約方式** | Zod カタログ（厳格） | ツール呼び出し | フリーフォーム |
-| **クロスフレームワーク** | 12+ レンダラー | React 中心 | 単一 |
-| **コンポーネント数** | 36 プリビルド | 要自前実装 | — |
-| **ライセンス** | Apache-2.0 | — | — |
+| **Constraint Method** | Zod catalog (strict) | Tool calling | Free-form |
+| **Cross-Framework** | 12+ renderers | React-centric | Single |
+| **Component Count** | 36 pre-built | DIY implementation | — |
+| **License** | Apache-2.0 | — | — |
 
-## 関連項目
+## Related Pages
 
-- [[concepts/ai-agent-engineering]] — AI エージェントの UI 生成文脈
+- [[concepts/ai-agent-engineering]] — AI agent UI generation context
 - [GitHub: vercel-labs/json-render](https://github.com/vercel-labs/json-render)

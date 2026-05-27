@@ -19,49 +19,49 @@ sources:
 
 # Container Context
 
-エージェントに**永続的な実行環境**を提供するホスト型コンテナ。ファイルシステム、データベース、ネットワークアクセスを統合した「モデルの作業スペース」。
+A hosted container providing agents with a **persistent execution environment**. A "model workspace" integrating filesystem, database, and network access.
 
-## 3つの柱
+## Three Pillars
 
-### 1. ファイルシステム
-- `/workspace` ディレクトリで永続化
-- 入力リソースをコンテナにステージング
-- **アンチパターン**: 大きなファイル/テーブルをプロンプトに直接貼り付け
-- **ベストプラクティス**: リソースをコンテナに配置、モデルが必要なものを選択的に開く
+### 1. Filesystem
+- Persisted in `/workspace` directory
+- Stage input resources into the container
+- **Anti-pattern**: Pasting large files/tables directly into the prompt
+- **Best Practice**: Place resources in the container, let the model selectively open what it needs
 
 > "Much like humans, models work better with organized information."
 
-### 2. データベース（SQLite）
-- 構造化データの保存とクエリ
-- スプレッドシート全体をプロンプトにコピーする代わりに、テーブル構造を説明
-- モデルが必要な行だけをクエリ可能
+### 2. Database (SQLite)
+- Store and query structured data
+- Instead of copying entire spreadsheets into the prompt, describe the table structure
+- The model can query only the rows it needs
 
-**例**:
+**Example**:
 ```
-プロンプト: "Which products had declining sales this quarter?"
-→ モデルは関連行だけをクエリ（全スキャン不要）
-→ より高速、より安価、大規模データセットに拡張可能
+Prompt: "Which products had declining sales this quarter?"
+→ Model queries only relevant rows (no full scan)
+→ Faster, cheaper, scalable to large datasets
 ```
 
-### 3. ネットワークアクセス
-- ライブデータ取得、外部API呼び出し、パッケージインストール
-- **サイドカーエグレスプロキシ**で制御
-- ドメインスコープのシークレットインジェクション
+### 3. Network Access
+- Live data retrieval, external API calls, package installation
+- Controlled via **sidecar egress proxy**
+- Domain-scoped secret injection
 
-## コンテナ仕様（2026年3月時点）
+## Container Spec (As of March 2026)
 
-| リソース | 値 |
+| Resource | Value |
 |----------|-----|
 | vCPU | 4 |
 | RAM | 8GB |
-| ワークスペース | 最大10GB |
-| プリインストール | Python 3.12, Node.js 22, Go 1.24, Java 21 |
-| ストレージコスト | $0.03/GB-hour |
+| Workspace | Up to 10GB |
+| Pre-installed | Python 3.12, Node.js 22, Go 1.24, Java 21 |
+| Storage Cost | $0.03/GB-hour |
 
-## セッション管理
+## Session Management
 
 ```bash
-# 永続コンテナセッションの作成
+# Create persistent container session
 session = client.responses.sessions.create(
     model="gpt-5.4",
     tools=[{"type": "shell"}],
@@ -71,24 +71,24 @@ session = client.responses.sessions.create(
 )
 ```
 
-## 設計哲学
+## Design Philosophy
 
-OpenAIは「開発者が独自の実行環境を構築するのではなく、マネージドコンテナを提供する」アプローチを選択。これは**Anthropicの「開発者がharnessを設計する」**アプローチと対照的。
+OpenAI chose the approach of "providing managed containers rather than having developers build their own execution environments." This contrasts with **Anthropic's approach of "developers designing the harness."**
 
 | | OpenAI | Anthropic |
 |--|--------|-----------|
-| 実行環境 | マネージドコンテナ | 開発者実装 |
-| 柔軟性 | 制限付き（サンドボックス内） | 最大限の制御 |
-| 開発者負担 | 最小 | 中〜高 |
-| ポータビリティ | OpenAI依存 | モデル非依存 |
+| Runtime | Managed container | Developer implementation |
+| Flexibility | Limited (within sandbox) | Maximum control |
+| Developer Burden | Minimal | Medium to high |
+| Portability | OpenAI-dependent | Model-agnostic |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agent-loop-orchestration]] — コンテナ内でのループ実行
-- [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — ネットワーク制御とシークレット管理
-- [[concepts/harness-engineering]] — 実行環境設計の上位概念
+- [[concepts/agent-loop-orchestration]] — Loop execution within containers
+- [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Network control and secret management
+- [[concepts/harness-engineering]] — Higher-level execution environment design
 
-## 参照
+## References
 
 - [OpenAI: Equipping the Responses API with a computer environment](https://openai.com/index/equip-responses-api-computer-environment/)
 - [[entities/openai]] — OpenAI

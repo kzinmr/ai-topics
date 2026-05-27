@@ -2,6 +2,26 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+
+---
+
+## [2026-05-27] translate | JP→EN batch — 8 concept files
+
+### Files Translated
+- `concepts/ds4-deepseek-flash-metal.md`
+- `concepts/ramp-inspect.md`
+- `concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md`
+- `concepts/agent-team-swarm/_index.md`
+- `concepts/json-render.md`
+- `concepts/web-as-filesystem.md`
+- `concepts/harness-engineering/system-architecture/container-context.md`
+- `concepts/advanced-tool-use.md`
+
+### Summary
+- Total JP chars removed: 4,949
+- All 8 files now clean (0 residual JP in body)
+- Remaining JP files: 157 ((38, 175) JP chars)
+- Next batch candidates: log-2026.md (4,827 JP, excluded per policy), agent-skills.md (608 JP), pluralistic-net.md (607 JP)
 ## [2026-05-27] translate | JP→EN batch — 8 files (5,113 chars)
 
 ### Files Translated

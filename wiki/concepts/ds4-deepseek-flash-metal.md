@@ -22,63 +22,63 @@ sources:
   - https://github.com/mitsuhiko/ds4
 ---
 
-# ds4.c — DeepSeek V4 Flash Metal 推論エンジン
+# ds4.c — DeepSeek V4 Flash Metal Inference Engine
 
-## 概要
+## Overview
 
-**ds4.c** は、**Armin Ronacher（@mitsuhiko）** が antirez のオリジナルワークをフォークして開発した、**Apple Silicon（Metal）上で DeepSeek V4 Flash 専用**に最適化されたネイティブ推論エンジン。汎用 GGUF ランナーではなく、V4 Flash の Metal グラフを直接実行する特殊設計。Pi 拡張とのシームレスな統合を特徴とする。
+**ds4.c** is a native inference engine developed by **Armin Ronacher (@mitsuhiko)** forking antirez's original work, **specialized exclusively for DeepSeek V4 Flash on Apple Silicon (Metal)**. Rather than a general GGUF runner, it is a specialized design that directly executes V4 Flash Metal graphs. Features seamless integration with Pi extensions.
 
-## 主要機能
+## Key Features
 
-| 機能 | 詳細 |
+| Feature | Details |
 |------|------|
-| **Metal 専用** | macOS に最適化。CPU パスは検証用のみ（macOS 仮想メモリのバグで不安定） |
-| **Disk-First KV Cache** | KV キャッシュを「第一級ディスク市民」として扱い、セッション・再起動をまたいだ永続化 |
-| **100万トークンコンテキスト** | V4 Flash の巨大コンテキストウィンドウをフルサポート |
-| **非対称2ビット量子化** | MoE ルーテッドエキスパートは IQ2_XXS/Q2_K、共有エキスパート・射影は非量子化で品質維持 |
-| **エージェント統合** | Claude Code, OpenCode, Pi と直接連携可能 |
+| **Metal Exclusive** | Optimized for macOS. CPU path is for verification only (unstable due to macOS virtual memory bugs) |
+| **Disk-First KV Cache** | Treats KV cache as a "first-class disk citizen", persistent across sessions and restarts |
+| **1M Token Context** | Full support for V4 Flash's massive context window |
+| **Asymmetric 2-bit Quantization** | MoE routed experts use IQ2_XXS/Q2_K, shared experts and projections remain unquantized for quality |
+| **Agent Integration** | Direct integration with Claude Code, OpenCode, Pi |
 
-## パフォーマンス
+## Performance
 
-*2ビット量子化、32K コンテキスト、no-think モード、貪欲デコードで計測*
+*Measured with 2-bit quantization, 32K context, no-think mode, greedy decoding*
 
-| マシン | プロンプトサイズ | Prefill 速度 | 生成速度 |
+| Machine | Prompt Size | Prefill Speed | Generation Speed |
 |--------|-----------------|-------------|---------|
 | MBP M3 Max (128GB) | Short | 58.52 t/s | 26.68 t/s |
 | MBP M3 Max (128GB) | 11,709 tokens | 250.11 t/s | 21.47 t/s |
 | Mac Studio M3 Ultra | Short | 84.43 t/s | 36.86 t/s |
 | Mac Studio M3 Ultra | 11,709 tokens | 468.03 t/s | 27.39 t/s |
 
-## インストールと使用
+## Installation and Usage
 
-### Pi 拡張経由（推奨）
+### Via Pi Extension (Recommended)
 ```bash
 pi install https://github.com/mitsuhiko/ds4
 ```
 
-### 手動ビルド
+### Manual Build
 ```bash
-./download_model.sh q2   # 128GB RAM マシン用
-./download_model.sh q4   # 256GB+ RAM マシン用
+./download_model.sh q2   # For 128GB RAM machines
+./download_model.sh q4   # For 256GB+ RAM machines
 make
 ```
 
-### 対話型 CLI
+### Interactive CLI
 ```bash
 ./ds4
-# コマンド: /think, /nothink, /ctx N, /read FILE, /quit
-# Ctrl+C で生成中断
+# Commands: /think, /nothink, /ctx N, /read FILE, /quit
+# Ctrl+C to interrupt generation
 ```
 
-### ローカルサーバー
-OpenAI/Anthropic 互換 API を提供：
+### Local Server
+Provides OpenAI/Anthropic compatible API:
 ```bash
 ./ds4-server --ctx 100000 --kv-disk-dir /tmp/ds4-kv --kv-disk-space-mb 8192
 ```
-- エンドポイント: `/v1/chat/completions` (OpenAI), `/v1/messages` (Anthropic/Claude Code)
-- SSE ストリーミング対応（テキスト + thinking ブロック）
+- Endpoints: `/v1/chat/completions` (OpenAI), `/v1/messages` (Anthropic/Claude Code)
+- SSE streaming support (text + thinking blocks)
 
-## Claude Code 連携
+## Claude Code Integration
 
 ```bash
 export ANTHROPIC_BASE_URL="http://127.0.0.1:8000"
@@ -86,21 +86,21 @@ export ANTHROPIC_MODEL="deepseek-v4-flash"
 exec "$HOME/.local/bin/claude" "$@"
 ```
 
-## 技術的制約
+## Technical Constraints
 
-- **メモリ要件**: 2ビット量子化で約 81GB。1M トークンコンテキストで+26GB。128GB マシンでは 100K-300K が推奨
-- **Thinking モード**: thinking, nothink, Think Max 対応。Think Max は十分なコンテキストウィンドウが必要
-- **MTP（投機的デコード）**: 実験的サポート（`--mtp` フラグ）、現状わずかな高速化のみ
-- **開発**: GPT 5.5 の強力な支援を受け、llama.cpp / GGML の基盤上に構築
+- **Memory Requirements**: Approximately 81GB with 2-bit quantization. +26GB for 1M token context. 100K-300K recommended for 128GB machines
+- **Thinking Mode**: Supports thinking, nothink, Think Max. Think Max requires sufficient context window
+- **MTP (Speculative Decoding)**: Experimental support (`--mtp` flag), currently only minor speedup
+- **Development**: Built with strong assistance from GPT 5.5, on top of llama.cpp / GGML foundations
 
-## Disk KV Cache システム
+## Disk KV Cache System
 
-SHA1 ハッシュを使用したファイル名（`<sha1>.kv`）でトークンプレフィックスを永続化：
-- **Save トリガー**: cold（長い初期プロンプト後）、continued（生成中の定期保存）、evict/shutdown（メモリ解放・停止時）
-- **観測性**: キャッシュファイルはプレーンテキストヘッダーを含み、`hexdump` で人間が検査可能
+Persists token prefixes with filenames using SHA1 hashes (`<sha1>.kv`):
+- **Save Triggers**: cold (after long initial prompt), continued (periodic during generation), evict/shutdown (memory release or stop)
+- **Observability**: Cache files include plain-text headers, human-inspectable via `hexdump`
 
-## 関連項目
+## Related Pages
 
-- [[concepts/deepseek-v4]] — DeepSeek-V4 モデルシリーズ
-- [[entities/armin-ronacher]] — 開発者
-- [[entities/deepseek]] — DeepSeek 社
+- [[concepts/deepseek-v4]] — DeepSeek-V4 model series
+- [[entities/armin-ronacher]] — Developer
+- [[entities/deepseek]] — DeepSeek company

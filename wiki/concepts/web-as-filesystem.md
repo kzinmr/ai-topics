@@ -23,81 +23,81 @@ related:
 
 # Web-as-Filesystem (Nia Docs)
 
-> **Definition:** Webの全ドキュメントをUnixファイルシステムとしてマウントする抽象化。エージェントに`tree`、`grep`、`cat`、`find`を自然に使い、コード幻覚を解消。
+> **Definition:** An abstraction that mounts all web documentation as a Unix filesystem. Agents naturally use `tree`, `grep`, `cat`, `find`, eliminating code hallucinations.
 
-## 問題: コード幻覚はモデルの問題ではない
+## The Problem: Code Hallucination Is Not a Model Problem
 
-- APIは破壊的変更、endpointのdeprecated、parameterのリネームを毎日行う
-- モデルのtraining dataは数ヶ月〜数年古い
-- エージェントは完璧に見えるコードを書くが、ランタイムで失敗する
+- APIs change daily with breaking changes, deprecated endpoints, and parameter renames
+- Model training data is months to years old
+- Agents write seemingly perfect code that fails at runtime
 
-## RAGの限界
-- ドキュメントをchunkし、embeddingし、top-Kをretrieve
-- 答えが3ページにまたがる場合やexact function signatureがchunkingで失われる場合に対応できない
-- Retrievalはフラグメントしか与えないが、エージェントは全体像を必要とする
+## RAG Limitations
+- Chunk documents, embed them, retrieve top-K
+- Cannot handle answers spanning three pages or when exact function signatures are lost in chunking
+- Retrieval only provides fragments, but agents need the full picture
 
-## ファイルシステム抽象化の提案
+## The Filesystem Abstraction Proposal
 
-### Unixの知恵
-50年前にUnixは解決した: devices、processes、sockets — すべてfiles。`open`、`read`、`write`、`close`。一つinterface。
+### Unix Wisdom
+50 years ago Unix solved it: devices, processes, sockets — all files. `open`, `read`, `write`, `close`. One interface.
 
-### エージェントはUnixを事前学習済み
-- 数十億tokenのfilesystem interactionがweightsに baked in
-- `tree`、`grep`、`find` — agentsが使うためのツールではなく、already知っているツール
-- 全コーディングモデルが数百万の`cat README.md`、`grep -r "auth" .`、`find . -name "*.md"`の例を学習済み
+### Agents Are Pre-trained on Unix
+- Billions of tokens of filesystem interaction baked into the weights
+- `tree`, `grep`, `find` — not tools for agents to learn, but tools they already know
+- Every coding model has learned millions of examples of `cat README.md`, `grep -r "auth" .`, `find . -name "*.md"`
 
-### MCPとの比較
-- MCP: 各toolにJSON schema、natural-language description、careful argument constructionが必要
-- ファイルシステム: その何もない。context windowを消費せず、misuseのsurfaceもなし
+### Comparison with MCP
+- MCP: Each tool requires JSON schema, natural-language description, and careful argument construction
+- Filesystem: None of that. Consumes no context window, no misuse surface area
 
 > "@jerryjliu0: an agent with filesystem tools and a code interpreter is just as general, if not more general, than an agent with 100+ MCP tools."
 
-## 仕組み
+## How It Works
 
 ### 1. Index
-- URLに初めてアクセスした際、backendがsiteをcrawl
-- `llms.txt`を尊重、OpenAPI specsを検出、redirectsを処理
-- 各pageがfileになる
-- 例: `https://docs.stripe.com/api/charges/create` → `/api/charges/create.md`
-- Path normalization: common path prefixをauto-detectしstrip（`/docs/`、`/api/reference/`などの一貫しない構造を吸収）
+- When a URL is first accessed, the backend crawls the site
+- Respects `llms.txt`, detects OpenAPI specs, handles redirects
+- Each page becomes a file
+- Example: `https://docs.stripe.com/api/charges/create` → `/api/charges/create.md`
+- Path normalization: auto-detects and strips common path prefixes (absorbing inconsistent structures like `/docs/`, `/api/reference/`)
 
 ### 2. Serve
-- filesystem operationsをAPI endpointsとしてexpose
-- 全responseをgzip圧縮
-- `/load` endpointがstatusと全filesをsingle requestで返す
+- Expose filesystem operations as API endpoints
+- All responses gzip compressed
+- `/load` endpoint returns status and all files in a single request
 - cache: `Cache-Control: public, max-age=300`
-- CLIがdisk cacheを`~/.cache/nia-docs/`に保持
-- namespaceはshared（unauthenticated by design）
+- CLI maintains disk cache at `~/.cache/nia-docs/`
+- Namespace is shared (unauthenticated by design)
 
 ### 3. Shell
-- client側で実行（container/sandbox/VMなし）
-- just-bash（TypeScript reimplementation of bash）
-- grep、cat、ls、find、cd、tree、pipes、aliasesをサポート
-- 全filesystemがin-memory JavaScript object
-- large sites（1,000+ pages）: file treeをupfrontにloadし、catでlazy fetch
+- Runs on the client side (no container/sandbox/VM)
+- just-bash (TypeScript reimplementation of bash)
+- Supports grep, cat, ls, find, cd, tree, pipes, aliases
+- Complete filesystem as an in-memory JavaScript object
+- Large sites (1,000+ pages): load file tree upfront, lazy fetch via cat
 
-## なぜリアルなサンドボックスではないのか
-- Boot time: ~100ms（cached）、~2s（already indexed）、~30-120s（cold index）
-- Per-session compute: server側でzero
-- 読み取り専用のstatic text workloadにmicro-VMを借りる必要はない
+## Why Not a Real Sandbox
+- Boot time: ~100ms (cached), ~2s (already indexed), ~30-120s (cold index)
+- Per-session compute: zero on the server side
+- No need to borrow a micro-VM for a read-only static text workload
 
-## エージェントへのセットアップ
-エージェントのinstruction fileに追記するだけで利用可能:
-- Claude Code、Cursor、Copilot、Codex、Gemini CLI、OpenCodeに対応
-- `-c` flagでsingle command実行→exit。interactive session不要
+## Agent Setup
+Just append to the agent's instruction file to use:
+- Supports Claude Code, Cursor, Copilot, Codex, Gemini CLI, OpenCode
+- `-c` flag for single command execution → exit. No interactive session needed
 
-## 初期データ: エージェントの標準ワークフロー
-1. `tree` — 方向性を確認
-2. `grep -rl` — 関連ファイルをfind
-3. `cat` — 読む
+## Initial Data: Standard Agent Workflow
+1. `tree` — Get oriented
+2. `grep -rl` — Find relevant files
+3. `cat` — Read
 
-これはhuman developerが取るのと同じパターン。ファイルシステム抽象化はagentsが覚えるものではなく、与えられた時にdefault取るもの。
+This is the same pattern a human developer follows. The filesystem abstraction isn't something agents need to learn — it's what they default to when available.
 
-## 将来展望
-- API referenceはdirectory
-- Changelogはfile
-- OpenAPI specはJSONをcatできる
-- 全webがcodebaseのようにnavigate可能になるインフラを構築中
+## Future Outlook
+- API references as directories
+- Changelogs as files
+- OpenAPI specs as cat-able JSON
+- Building infrastructure to make the entire web navigable like a codebase
 
 ## Sources
 - [Turning the entire web into a filesystem](https://x.com/i/article/2041215978957389908) (2026-04-22, X article) — Arlan Rakhmetzhanov (Nozomio Labs CEO) — Nia's documentation shell
