@@ -4,7 +4,7 @@ type: concept
 aliases:
   - agent-skills-skillmd
 created: 2026-04-25
-updated: 2026-05-15
+updated: 2026-05-27
 tags:
   - concept
 status: redirected
@@ -13,8 +13,8 @@ redirect: concepts/agent-skills
 
 # Agent Skills (SKILL.md) → Redirected
 
-> **こ's ページは [[concepts/agent-skills]] に統合されました. **
+> **This page has been merged into [[concepts/agent-skills]].**
 
-Agent Skills オープン標準(Anthropic)'s フォーマット詳細については [[concepts/agent-skills]] を参照してください. 
+For details on the Agent Skills open standard (Anthropic) format, see [[concepts/agent-skills]].
 
-Skills概念全体's 俯瞰マップは [[concepts/agent-skills-overview]] を参照. 
+For an overview map of all Skills concepts, see [[concepts/agent-skills-overview]].

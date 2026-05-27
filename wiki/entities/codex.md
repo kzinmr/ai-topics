@@ -3,7 +3,7 @@ title: OpenAI Codex (AI coding agent)
 type: entity
 aliases: [codex-cli, openai-codex, codex-agent]
 created: 2026-05-07
-updated: 2026-05-24
+updated: 2026-05-27
 status: L3
 tags:
   - entity
@@ -43,19 +43,19 @@ related:
 
 > **OpenAI Codex** is a lightweight, open-source AI coding agent that runs locally in your terminal — available as CLI, desktop app (macOS/Windows), IDE extensions, and web interface (chatgpt.com/codex). Built in **Rust** (96.2%), Apache-2.0 licensed, 79.3K GitHub stars. Supports **multi-model** via config.toml including GPT-5, custom providers, and local models.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
+| Field | Value |
 |------|------|
-| 開発元 | OpenAI |
-| リポジトリ | [openai/codex](https://github.com/openai/codex) |
-| 言語 | Rust (96.2%), TypeScript, Python |
-| ライセンス | Apache-2.0 |
+| Developer | OpenAI |
+| Repository | [openai/codex](https://github.com/openai/codex) |
+| Language | Rust (96.2%), TypeScript, Python |
+| License | Apache-2.0 |
 | GitHub Stars | ~79.3K (May 2026) |
-| 初回リリース | April 2025 (Codex CLI) |
-| デスクトップアプリ | February 2026 (macOS, Windows) |
-| インストール | `npm i -g @openai/codex` または `brew install --cask codex` |
-| 公式サイト | [openai.com/codex](https://openai.com/codex) |
+| Initial Release | April 2025 (Codex CLI) |
+| Desktop App | February 2026 (macOS, Windows) |
+| Installation | `npm i -g @openai/codex` or `brew install --cask codex` |
+| Official Site | [openai.com/codex](https://openai.com/codex) |
 
 > **Important distinction**: This entity is about the **Codex AI agent** (CLI/desktop coding tool). Do not confuse with the older **Codex language model** (GPT-3-derived code model, now deprecated). Also distinct from Codex Web (the cloud agent at chatgpt.com/codex).
 

@@ -7,7 +7,7 @@ aliases:
   - speech-tokenizer-comparison
   - audio-codec-tokenizer
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-27
 tags:
   - concept
   - multimodal
@@ -33,7 +33,7 @@ related:
 
 ## SoundStream
 
-**原型 — fully convolutional end-to-end neural audio codec**
+**Prototype — fully convolutional end-to-end neural audio codec**
 
 - **Architecture**: Fully convolutional encoder/decoder + RVQ, trained end-to-end with reconstruction loss + adversarial loss
 - **Variable bitrate**: Structured dropout on quantizer layers enables a single model to handle 3–18 kbps
@@ -43,7 +43,7 @@ related:
 
 ## EnCodec
 
-**標準形 — practical, widely-adopted neural audio codec from Meta**
+**Standard form — practical, widely-adopted neural audio codec from Meta**
 
 - **Architecture**: Streaming encoder-decoder + quantized latent, with single multiscale spectrogram adversary + loss balancer
 - **Entropy coding**: Lightweight Transformer for up to 40% additional compression
@@ -55,7 +55,7 @@ related:
 
 ## Descript Audio Codec (DAC)
 
-**高忠実度·汎用音源向け強化版 — High-Fidelity Audio Compression with Improved RVQGAN**
+**High-fidelity, universal-source enhanced version — High-Fidelity Audio Compression with Improved RVQGAN**
 
 - **Architecture**: Paper emphasizes improved vector quantization + improved adversarial/reconstruction losses from image domain
 - **Sample rates**: 16 / 24 / 44.1 kHz weights available
@@ -67,7 +67,7 @@ related:
 
 ## SpeechTokenizer
 
-**Speech LLM 向け意味＋音響統合版 — unified semantic + acoustic tokenizer**
+**Speech LLM semantic + acoustic integrated version — unified semantic + acoustic tokenizer**
 
 - **Core thesis**: "Existing semantic tokens and acoustic tokens are both suboptimal for speech language modeling"
 - **Architecture**: Encoder-decoder + RVQ, but **Layer 1 is treated as semantic token**, remaining layers as timbre/complementary information
@@ -78,7 +78,7 @@ related:
 
 ## Mimi
 
-**リアルタイム会話向け低レート版 — ultra-low-rate streaming codec from Kyutai**
+**Low-rate version for real-time conversation — ultra-low-rate streaming codec from Kyutai**
 
 - **Design target**: Driving token rate down to what a real-time conversational LLM can sustain
 - **Specs**: 24 kHz speech → **12.5 Hz** representation → **1.1 kbps**

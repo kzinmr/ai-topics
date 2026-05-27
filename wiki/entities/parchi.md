@@ -3,7 +3,7 @@ title: Parchi
 type: entity
 aliases: [parchi-ai, parchi-browser-copilot]
 created: 2026-05-08
-updated: 2026-05-20
+updated: 2026-05-27
 status: L2
 tags:
   - entity
@@ -30,22 +30,22 @@ related:
 
 > **Parchi** is an open-source AI-powered browser copilot (Chrome/Firefox extension) created by **0xSero**. It provides chat-driven browser automation in a side panel — navigate, read, click, type, extract, and summarize. 0xSero recommends it as **#6 best harness for local models**, highlighting its universal provider compatibility and simple UX.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
+| Field | Value |
 |------|------|
-| 開発元 | 0xSero (Sybil Solutions) |
-| リポジトリ | [0xSero/parchi](https://github.com/0xSero/parchi) |
-| 公式サイト | [parchi.ai](https://parchi.ai) |
-| ライセンス | MIT |
+| Developer | 0xSero (Sybil Solutions) |
+| Repository | [0xSero/parchi](https://github.com/0xSero/parchi) |
+| Official Site | [parchi.ai](https://parchi.ai) |
+| License | MIT |
 | GitHub Stars | 486 |
 | Forks | 47 |
 | Contributors | 2 (0xSero, claude) |
-| 対応環境 | Chrome, Firefox (Browser Extension) |
-| 最終リリース | v0.6.0 (2026-03-23) — UI Polish & Settings Cleanup |
-| 最終更新 | 2026-04-05 (last push) |
+| Environment | Chrome, Firefox (Browser Extension) |
+| Latest Release | v0.6.0 (2026-03-23) — UI Polish & Settings Cleanup |
+| Last Update | 2026-04-05 (last push) |
 | Topics | agent, ai, browser-automation, browser-extension, model-agnostic, workflow |
-| 言語 | TypeScript (75%), CSS (9.4%), JavaScript (9.2%), HTML (3.4%), Python (2.6%) |
+| Language | TypeScript (75%), CSS (9.4%), JavaScript (9.2%), HTML (3.4%), Python (2.6%) |
 
 ## Key Features
 

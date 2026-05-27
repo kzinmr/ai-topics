@@ -1,7 +1,7 @@
 ---
 title: OpenCode
 created: 2026-04-30
-updated: 2026-05-07
+updated: 2026-05-27
 type: entity
 tags:
   - product
@@ -30,18 +30,18 @@ related:
 
 > **OpenCode is the most popular open-source AI coding agent** — 155K GitHub stars, MIT license, 850+ contributors, 6.5M monthly developers. Provider-agnostic with 75+ LLM providers, LSP integration, multi-session support, and TUI/Desktop/IDE interfaces.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
+| Field | Value |
 |------|------|
-| 開発元 | Anomaly (SST creators) |
-| リポジトリ | [anomalyco/opencode](https://github.com/anomalyco/opencode) |
-| 言語 | TypeScript |
-| ライセンス | MIT |
+| Developer | Anomaly (SST creators) |
+| Repository | [anomalyco/opencode](https://github.com/anomalyco/opencode) |
+| Language | TypeScript |
+| License | MIT |
 | GitHub Stars | **155K** (May 2026) |
-| 月間アクティブ開発者 | 6.5M |
-| リリース頻度 | Every ~8 hours (788+ releases) |
-| 公式サイト | [opencode.ai](https://opencode.ai) |
+| Monthly Active Developers | 6.5M |
+| Release Frequency | Every ~8 hours (788+ releases) |
+| Official Site | [opencode.ai](https://opencode.ai) |
 | X/Twitter | [@opencode](https://x.com/opencode) |
 | Discord | opencode.ai/discord |
 

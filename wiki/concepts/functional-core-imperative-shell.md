@@ -11,7 +11,7 @@ sub_category: AI Agent Architecture
 tags: [ai-agents, human-in-the-loop]
 status: complete
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-27
 source_slack: "C077ACXR5UY, 2026-03-30 23:54"
 source_user: "U076RPG60QY (Kazuki Inamura)"
 ---
@@ -30,7 +30,7 @@ As AI agents become more capable, more work migrates from the shell to the core.
 
 This concept emerged from a Slack discussion (2026-03-30 23:54) about the future of software development with AI agents:
 
-> "検証や評価や意思決定という, 外界's モデリングしか残ってない (機械処理可能なfunctional core's 外側として's 真's Imperative Shellが残る形)"
+> "Only validation, evaluation, and decision-making remain — modeling the external world (the true Imperative Shell remains as the outside of the machine-processable functional core)"
 
 The pattern is inspired by functional programming's separation of pure functions (no side effects) from impure operations (I/O, state changes). In the AI agent context, the "pure" core is what agents can automate, while the "impure" shell is what still requires human judgment.
 

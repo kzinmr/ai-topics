@@ -3,6 +3,26 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-27] translate | JP→EN batch — 8 files
+
+### Files Translated
+- concepts/agent-skills-skillmd.md — removed 54 JP chars, redirect page
+- entities/codex.md — removed 52 JP chars, Basic Information table
+- concepts/harness-design-long-running-apps.md — removed 49 JP chars, overview sentence
+- concepts/ai-memory-systems-チャット-vs-コーディングエージェントの設計哲学比較.md — removed 44 JP chars, title + stub text
+- concepts/functional-core-imperative-shell.md — removed 44 JP chars, Japanese quote
+- entities/opencode.md — removed 44 JP chars, Basic Information table
+- concepts/audio-tokenizer-comparison.md — removed 43 JP chars, inline section labels
+- entities/parchi.md — removed 42 JP chars, Basic Information table
+
+### Summary
+- Total JP chars removed: 372
+- Remaining files with JP content: 64
+- All updated dates bumped to 2026-05-27
+
+
+---
+
 ## [2026-05-27] ingest | Blog triage wiki ingest — 20 articles processed (1 take, 4 references)
 
 ### Files Created

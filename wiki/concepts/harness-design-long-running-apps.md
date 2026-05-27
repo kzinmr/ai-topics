@@ -2,13 +2,13 @@
 title: "Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture"
 tags: [harness-engineering, multi-agent, agentic-engineering]
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-27
 type: concept
 ---
 
 # Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture
 
-Anthropic Labs（Prithvi Rajasekaran）による長期自律エージェントの実践設計。**GAN-inspiredループ**（Generator ↔ Evaluator）をフルスタック開発にスケールさせたアーキテクチャ。
+Practical design for long-running autonomous agents by Anthropic Labs (Prithvi Rajasekaran). An architecture that scales the **GAN-inspired loop** (Generator ↔ Evaluator) to full-stack development.
 
 ## Core Problem: Why Naive Implementations Fail
 
