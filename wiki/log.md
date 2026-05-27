@@ -18,6 +18,28 @@
 
 ---
 
+## [2026-05-27] translate | JP→EN batch — 8 files
+
+### Files Translated
+- `concepts/exec-plans.md` — full body translation
+- `concepts/coding-agents.md` — full body translation
+- `concepts/claude-47-tokenizer.md` — full body translation
+- `concepts/harness-engineering/agentic-workflows/red-green-tdd.md` — full body translation
+- `concepts/agent-observability.md` — full body translation
+- `log-2026-05-previous.md` — scattered JP translation
+- `log-2026-05-13.md` — scattered JP translation
+- `log-2026.md` — scattered JP translation
+
+### Summary
+- Total JP chars removed: ~7362
+- 0 JP chars remaining in target files
+- All markdown, wikilinks, and formatting preserved
+- Tag validation passed before commit
+
+
+---
+
+
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated
