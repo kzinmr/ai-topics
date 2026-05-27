@@ -20,6 +20,7 @@
 - 20:00 Created `concepts/codex-agent-loop.md` — Codex Agent Loop concept page. Covers the user→model→tool→repeat cycle, prompt assembly (5-layer input ordering: sandbox permissions → dev instructions → skills → environment → user message), append-only prompt discipline for cache efficiency, cache miss triggers (MCP tool reorder, model switch, sandbox change), automatic compaction via /responses/compact, stateless design tradeoffs, relationship to App Server, and bugs/lessons from the engineering team.
 - 20:00 Updated `concepts/codex-app-server.md` — Added cross-reference to codex-agent-loop.
 - 20:00 Updated `index.md` — Added entry for codex-agent-loop under Concepts.
+- 20:30 Created `comparisons/codex-app-server-vs-claude-agent-sdk.md` — Architecture comparison: protocol + server process (App Server) vs in-process library (Claude Agent SDK). Key differences: language binding (any language vs Python/TS), streaming model (server-pushed notifications vs client-pulled iterator), permission models, tool ecosystems (Codex harness tools vs 8 built-in + inline custom tools), deployment patterns, and migration paths. Verdict: App Server = agent as a service; Claude Agent SDK = agent as a library dependency.
 
 
 ---
