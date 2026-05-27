@@ -20,7 +20,7 @@ related:
   - harness-engineering
   - agent-architecture-decomposition
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-27
 sources:
   - https://github.com/pydantic/pydantic-ai-harness
   - https://ai.pydantic.dev/capabilities/
@@ -38,9 +38,9 @@ sources:
 
 The key insight: **Pydantic AI core ships only model/framework-level capabilities** (web search, tool search, thinking). Everything else lives in the harness as modular, pick-and-choose components.
 
-**Important positioning**: This repo is best understood as a **公式インキュベータ兼roadmap** rather than a "多機能な完成品". Capabilities are developed here first, then graduated to core once proven essential and stable. The published API (as of v0.2.0) is essentially just `CodeMode` — the other capabilities listed in the matrix are still in PR stage. The repo structure reflects this: `pydantic_ai_harness/` (current code), `tests/`, and `legacy/pydantic-harness/` (compatibility shim from the pre-rename era).
+**Important positioning**: This repo is best understood as an **official incubator and roadmap** rather than a "fully-featured product". Capabilities are developed here first, then graduated to core once proven essential and stable. The published API (as of v0.2.0) is essentially just `CodeMode` — the other capabilities listed in the matrix are still in PR stage. The repo structure reflects this: `pydantic_ai_harness/` (current code), `tests/`, and `legacy/pydantic-harness/` (compatibility shim from the pre-rename era).
 
-**Versioning**: The library is on a **0.x policy** — minor version bumps may include breaking changes. v0.1.1 renamed the package from `pydantic-harness` to `pydantic-ai-harness`; the `legacy/` directory preserves backward compatibility. Adoption guidance: treat this as **"公式だが, まだ固めている最中's 層"**.
+**Versioning**: The library is on a **0.x policy** — minor version bumps may include breaking changes. v0.1.1 renamed the package from `pydantic-harness` to `pydantic-ai-harness`; the `legacy/` directory preserves backward compatibility. Adoption guidance: treat this as "official, but still in the hardening phase".
 
 **Positioning in the 3-layer architecture** ([agent-architecture-decomposition]]):
 - **Runtime**: Pydantic Monty (Rust-based secure Python interpreter) — [[concepts/monty-sandbox]]

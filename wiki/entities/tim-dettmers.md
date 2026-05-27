@@ -3,7 +3,7 @@ title: "Tim Dettmers"
 type: entity
 description: "Researcher at the University of Washington (NLP/ML), creator of bitsandbytes, LLM.int8(), and co-creator of QLoRA. Pioneer in LLM quantization and emergent feature analysis."
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-27
 tags:
   - entity
   - person
@@ -74,6 +74,6 @@ Key insight: emergence follows an **exponential function related to perplexity**
 - [[concepts/qlora]] — QLoRA fine-tuning
 - [[concepts/fsdp-qlora]] — FSDP + QLoRA distributed training
 - [[concepts/emergent-features-llm]] — Detailed analysis of phase shift phenomenon
-- [[concepts/genai-handbook]] — Tim Dettmers's 量子化ブログ(LLM.int8())が🟢最重要リソースとして評価されている
-- [[concepts/ssm-mamba]] — SSM量子化研究へ's 接点
+- [[concepts/genai-handbook]] — Tim Dettmers's quantization blog (LLM.int8()) evaluated as 🟢 most important resource
+- [[concepts/ssm-mamba]] — Connection to SSM quantization research
 - [[entities/artidoro-pagnoni]] — QLoRA co-creator

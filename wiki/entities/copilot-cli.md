@@ -3,7 +3,7 @@ title: GitHub Copilot CLI
 type: entity
 aliases: [copilot-cli, gh-copilot-cli, github-copilot-cli]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-27
 status: L2
 tags:
   - entity
@@ -32,17 +32,17 @@ related:
 
 > **GitHub Copilot CLI** brings Copilot's agentic AI capabilities directly to your terminal — powered by the same harness as GitHub's Copilot coding agent. Features built-in sub-agents (explore, code-review, research, general-purpose), MCP-powered extensibility, BYOK/local model support, and deep GitHub workflow integration.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
-|------|------|
-| 開発元 | GitHub (Microsoft) |
-| リポジトリ | [github/copilot-cli](https://github.com/github/copilot-cli) |
-| 公式サイト | [github.com/features/copilot/cli](https://github.com/features/copilot/cli) |
-| 初回リリース | 2025 (replaced retired gh copilot extension) |
-| 対応環境 | Terminal (CLI) |
-| 価格 | Included in Copilot Free/Pro/Pro+/Business/Enterprise |
-| インストール | `curl -fsSL https://gh.io/copilot-install | bash` |
+| Field | Details |
+|---|---|
+| Developer | GitHub (Microsoft) |
+| Repository | [github/copilot-cli](https://github.com/github/copilot-cli) |
+| Official Site | [github.com/features/copilot/cli](https://github.com/features/copilot/cli) |
+| Initial Release | 2025 (replaced retired gh copilot extension) |
+| Supported Environments | Terminal (CLI) |
+| Pricing | Included in Copilot Free/Pro/Pro+/Business/Enterprise |
+| Installation | `curl -fsSL https://gh.io/copilot-install | bash` |
 
 ## Key Features
 

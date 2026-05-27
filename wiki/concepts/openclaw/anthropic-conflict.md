@@ -7,7 +7,7 @@ aliases:
   - claude-subscription-cutoff
   - third-party-harness-restriction
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-27
 tags:
   - concept
   - openclaw
@@ -114,9 +114,9 @@ Measures offered by Anthropic:
 
 ## Related
 
-- [[concepts/openclaw]] — OpenClawコンセプト集約
-- [[concepts/openclaw/philosophy]] — Primitives First哲学
-- [[concepts/personal-superintelligence]] — データ主権運動
-- [[concepts/open-source-ai-destruction]] — オープンソースAI破壊
-- [[entities/peter-steinberger]] — OpenClaw創設者
-- [[entities/openai]] — Steinbergerの新たな所属先
+- [[concepts/openclaw]] — OpenClaw concept hub
+- [[concepts/openclaw/philosophy]] — Primitives First philosophy
+- [[concepts/personal-superintelligence]] — Data sovereignty movement
+- [[concepts/open-source-ai-destruction]] — Open source AI destruction
+- [[entities/peter-steinberger]] — OpenClaw founder
+- [[entities/openai]] — Steinberger's new affiliation

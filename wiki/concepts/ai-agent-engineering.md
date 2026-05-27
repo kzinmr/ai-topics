@@ -1,7 +1,7 @@
 ---
 title: AI Agent Engineering
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-27
 type: concept
 tags: [concept, ai-agents, orchestration, architecture, harness-engineering]
 sources:
@@ -13,13 +13,13 @@ sources:
 
 > **Definition:** The architectural paradigm for building agent execution platforms — how to construct the infrastructure that runs, manages, and secures AI agents. Distinct from [[concepts/agentic-engineering]] which focuses on developer workflows.
 
-AI Agent Engineering focuses on "エージェント実行基盤をどう構築するか" (how to build agent execution infrastructure).
+AI Agent Engineering focuses on how to build agent execution infrastructure.
 
 ## Key Distinction
 
 | Dimension | Agentic Engineering | AI Agent Engineering |
 |-----------|---------------------|----------------------|
-| Focus | 開発者's ワークフロー (developer workflows) | システムアーキテクチャ (system architecture) |
+| Focus | Developer workflows | System architecture |
 | Question | How do developers use agents effectively? | How do we build platforms that run agents? |
 | Audience | Software engineers using AI tools | Platform engineers building agent infrastructure |
 

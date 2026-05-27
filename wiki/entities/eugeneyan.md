@@ -3,7 +3,7 @@ title: Eugene Yan
 type: entity
 handle: "@eugeneyan"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-27
 tags:
   - person
   - infrastructure
@@ -46,7 +46,7 @@ In his landmark July 2023 post ["Patterns for Building LLM-based Systems & Produ
 6. **Defensive UX** — Anticipating and managing errors gracefully at the user interface level
 7. **Feedback Collection** — Continuously gathering user signals to improve the system
 
-> 詳細は [[concepts/llm-patterns-eugene-yan]] を参照 — 各パターン's 実装詳細, フレームワーク's 進化(v1→v2), 既存Wikiページへ's マッピングをカバー. 
+> See [[concepts/llm-patterns-eugene-yan]] for details — covering implementation details of each pattern, framework evolution (v1→v2), and mapping to existing wiki pages.
 
 These patterns map to Yan's broader philosophy that LLM applications succeed or fail based on system design, not model capability alone.
 

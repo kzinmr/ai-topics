@@ -3,7 +3,7 @@ title: Droid (Factory)
 type: entity
 aliases: [factory-droid, factory-ai, factory-droid-cli]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-27
 status: L2
 tags:
   - entity
@@ -32,16 +32,16 @@ related:
 
 > **Droid** is Factory's enterprise-grade AI coding agent that lives across your terminal, IDE, Slack, Linear/Jira, and CI/CD pipelines. The "agent-native development platform" — top-performing in terminal benchmarks, with specialized sub-agents (CodeDroid, Review Droid, QA Droid) for the full SDLC.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
-|------|------|
-| 開発元 | Factory AI (San Francisco) |
-| リポジトリ | [Factory-AI/factory](https://github.com/Factory-AI/factory) |
-| 公式サイト | [factory.ai](https://factory.ai) |
-| 初回リリース | 2025 |
-| 対応環境 | CLI, Desktop, Web, VS Code, JetBrains, Vim, Zed, Slack/Teams, Linear/Jira, Mobile |
-| 価格 | Free tier / Pro $20/mo / Team $50/mo / Enterprise custom |
+| Field | Details |
+|---|---|
+| Developer | Factory AI (San Francisco) |
+| Repository | [Factory-AI/factory](https://github.com/Factory-AI/factory) |
+| Official Site | [factory.ai](https://factory.ai) |
+| Initial Release | 2025 |
+| Supported Environments | CLI, Desktop, Web, VS Code, JetBrains, Vim, Zed, Slack/Teams, Linear/Jira, Mobile |
+| Pricing | Free tier / Pro $20/mo / Team $50/mo / Enterprise custom |
 | X/Twitter | [@FactoryAI](https://x.com/FactoryAI) |
 
 ## Key Features
