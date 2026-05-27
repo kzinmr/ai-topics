@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2232 | Indexed entries: 1453 | Not in index: 737
+> Last updated: 2026-05-27 | Total pages: 2234 | Indexed entries: 1454 | Not in index: 737
 
 ## Entities (703 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -36,6 +36,7 @@
 - [[entities/fintool]] — Fintool
 - [[entities/ed-zitron-s-where-s-your-ed-at]] — Ed Zitron (Where’s Your Ed At) — AI industry, business critique
 - [[entities/florian-brand]] — Florian Brand (@xeophon) — Research Engineer at Prime Intellect (evals). Editor at Interconnects (open models). OSWorld critique.
+- [[entities/galileo-eval-engineer]] — Galileo Eval Engineer — Open-source skill bundle for Claude Code and Codex that brings professional evaluation engineering into coding agent workflows. Created by Pratik Bhavsar at Galileo Agent Labs (May 2026).
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
 - [[entities/gemini-cli]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.

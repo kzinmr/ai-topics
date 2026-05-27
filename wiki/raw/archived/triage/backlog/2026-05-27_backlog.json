@@ -1,0 +1,54 @@
+{
+  "checkpoint_run_id": "20260527T200024Z",
+  "summary_ja": "5件のraw記事をトリアージ済み。うち1件はalready_archived、1件は既存概念ページに完全にカバー済み（ai-subprime）、残り3件はAI/LLM非関連（SGIハードウェア、数学タイル、React）。take=0件。",
+  "decisions": [
+    {
+      "item_id": "wheresyoured.at--the-subprime-ai-crisis-is-here--278f66de",
+      "source": "blog",
+      "source_name": "wheresyoured.at",
+      "title": "The Subprime AI Crisis Is Here",
+      "url": "https://www.wheresyoured.at/the-subprime-ai-crisis-is-here/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--the-subprime-ai-crisis-is-here--278f66de.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Ed ZitronのサブプライムAI危機分析。既にconcepts/ai-subprime.mdのprimary sourceとして完全にカバー済み（frontmatter sourcesにも収録）。さらにconcepts/ai-bubble-economics.mdとentities/ed-zitron.mdでも詳細に処理済み。新規wikiアクション不要。",
+      "candidate_wiki_path": "concepts/ai-subprime",
+      "body_excerpt": "Ed Zitron drawing parallels between 2008 subprime mortgage crisis and current AI industry economics. AI subscriptions mask actual compute costs behind flat monthly fees. OpenAI made $4.3B revenue and spent $8.67B on inference alone. Anthropic made $5B revenue and spent $10B on compute. Circular dependency between hyperscalers and AI labs."
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2025-09-refurb-weekend-silicon-graphics-indigo-html--f549a58b",
+      "source": "blog",
+      "source_name": "oldvcr.blogspot.com",
+      "title": "Refurb weekend: Silicon Graphics Indigo2 IMPACT 10000",
+      "url": "https://oldvcr.blogspot.com/2025/09/refurb-weekend-silicon-graphics-indigo.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2025-09-refurb-weekend-silicon-graphics-indigo-html--f549a58b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SGI Indigo2ワークステーションのレストア日記。MIPS R10000 CPU、IMPACTグラフィックスなどのヴィンテージハードウェア詳細。AI/LLM/エージェント技術との関連性なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Vintage SGI Indigo2 IMPACT 10000 hardware refurb weekend. MIPS R10000 CPU at 195MHz, IMPACT graphics architecture, Silicon Graphics workstation history and technical details."
+    },
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-refine--e141342c",
+      "source": "blog",
+      "source_name": "chiark.greenend.org.uk",
+      "title": "Aperiodic Tilings V: the Refinable Frontier",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-refine/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-refine--e141342c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Simon Tathamによる準周期タイリングの数学シリーズ第5部。有限状態トランスデューサー、置換システム、コンビナトリアル座標などの純粋数学トピック。AI/LLM無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Mathematics series on generating aperiodic tilings using string-processing techniques. Finite-state transducers for coordinate strings, substitution systems, combinatorial coordinates."
+    },
+    {
+      "item_id": "overreacted.io--a-complete-guide-to-useeffect--85f6e5fa",
+      "source": "blog",
+      "source_name": "overreacted.io",
+      "title": "A Complete Guide to useEffect",
+      "url": "https://overreacted.io/a-complete-guide-to-useeffect/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/overreacted.io--a-complete-guide-to-useeffect--85f6e5fa.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Dan AbramovによるReact useEffectフックの詳細解説記事。フックAPIのメンタルモデル、componentDidMountとの違い、データフェッチングパターン。AI/LLM無関係のフロントエンド開発技術記事。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Deep dive into React useEffect hook by Dan Abramov. Covers mental model for effects, replicating componentDidMount, data fetching, dependencies, avoiding infinite loops."
+    }
+  ]
+}

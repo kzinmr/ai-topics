@@ -3,14 +3,19 @@ title: Pratik Bhavsar
 type: entity
 handle: "@ptkbhv"
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-27
 tags:
   - person
   - x-account
   - model
   - evaluation
   - rag
-sources: []
+  - coding-agents
+  - claude-code
+  - codex
+  - agent-skills
+sources:
+  - raw/articles/2026-05-19_galileo_eval-engineer-for-claude-codex.md
 ---
 
 
@@ -23,7 +28,7 @@ sources: []
 | **GitHub** | [bhavsarpratik](https://github.com/bhavsarpratik) |
 | **Hugging Face** | [pratikbhavsar](https://huggingface.co/pratikbhavsar) |
 | **Role** | AI Engineer & DevRel at Galileo; Founder of Maxpool community |
-| **Known for** | Agent Leaderboard (open-source benchmarking), Hallucination Index (featured in Andrew Ng's newsletter), BRAG (open-source RAG-tuned LLMs), "Mastering GenAI" book series (4 volumes) |
+| **Known for** | Agent Leaderboard (open-source benchmarking), Hallucination Index (featured in Andrew Ng's newsletter), BRAG (open-source RAG-tuned LLMs), "Mastering GenAI" book series (4 volumes), Eval Engineer (eval skills for Claude Code & Codex) |
 | **Bio** | AI Engineer focused on high-performance agentic systems, evaluation without ground truth, and making search systems work in production. Has led full-stack AI at Enterpret and Morningstar before joining Galileo. Founded Maxpool (2019), a community of professional AI engineers and researchers. |
 
 ## Overview
@@ -106,6 +111,7 @@ As AI Engineer & DevRel at Galileo — a company building evaluation infrastruct
 - Leads research on hallucination detection and measurement
 - Writes and speaks on evaluation engineering best practices
 - Contributes to Galileo's evaluation intelligence platform
+- Co-created **[[entities/galileo-eval-engineer|Eval Engineer]]** (May 2026) — an open-source skill bundle integrating Galileo's eval intelligence into Claude Code and Codex
 
 ### Agent Leaderboard
 An open framework for benchmarking LLM-based enterprise agents:
@@ -157,6 +163,7 @@ Founded in 2019, now 1,000+ members:
 ## Blog / Key Writings
 
 ### Agent Evaluation
+- **Introducing Eval Engineer: Bringing Eval Expertise to Claude and Codex** (May 2026) — Galileo blog co-authored with Paul Lacey. Announces Eval Engineer, an open-source skill bundle that installs eval diagnostic/fix/verify workflows into Claude Code and Codex. Source: [[entities/galileo-eval-engineer]]
 - **Agent Evaluation Playbook** (Jul 2025) — Webinar with DAIR.AI covering metrics definition, evaluation flywheels, integrated observability, and CI/CD-style pipelines for agents
 - **Adversarial Testing and Improvement for Agents** — Open-source framework (`autoresearch-for-agents`) for testing agents against adversarial inputs and iteratively improving them
 - **Launching Agent Leaderboard v2: The Enterprise-Grade Benchmark for AI Agents** — Hugging Face article on the new version with cost, latency, and performance tradeoff analysis

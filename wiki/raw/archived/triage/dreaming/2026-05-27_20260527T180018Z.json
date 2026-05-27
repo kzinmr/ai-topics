@@ -1,0 +1,79 @@
+{
+  "run_id": "20260527T180018Z",
+  "saved_at": "2026-05-27T18:13:55.973600",
+  "pipeline": "dreaming",
+  "items": [
+    {
+      "item_id": "dreaming-3",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Introducing Music v2, our groundbreaking new music model",
+      "url": "https://elevenlabs.io/blog/introducing-music-v2",
+      "raw_path": "~/wiki/raw/articles/2026-05-27_elevenlabs_introducing-music-v2.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ ElevenLabsの音楽生成モデルv2。ボーカル・楽器・アレンジの品質向上、多言語対応強化。ElevenMusic/ElevenAPI/ElevenCreativeの3プラットフォーム展開。entities/elevenlabs.mdにMusic v2リリースの短いセクション追加が適切。",
+      "candidate_wiki_path": "entities/elevenlabs.md",
+      "body_excerpt": "Music v2 delivers better vocals, instrumentation, and arrangement across every genre, with improved multilingual support and a set of new capabilities. Music v2 powers three ElevenLabs platforms: ElevenMusic (listen, remix, create), ElevenAPI (embed music generation in your product), ElevenCreative (downloadable music for ads, branded content, and video)."
+    },
+    {
+      "item_id": "dreaming-4",
+      "source": "dreaming",
+      "source_name": "NVIDIA NeMo-Agent-Toolkit",
+      "title": "NeMo Agent Toolkit v1.7.0 Release",
+      "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases/tag/v1.7.0",
+      "raw_path": "~/wiki/raw/articles/2026-05-27_nemo-agent-toolkit-v1-7-0.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AIコーディングエージェントスキル追加、ATOF v0.1 observabilityフォーマット、Arize AX OTLPエクスポーター、トークンストリーミング対応。entities/nvidia.mdにv1.7.0リリースノートの短い言及追加が適切。",
+      "candidate_wiki_path": "entities/nvidia.md",
+      "body_excerpt": "Notable Highlights: AI coding agent skills for NeMo Agent Toolkit, Consent-gated runtime telemetry for NAT CLI commands. New Features: ATIF trajectory exporter for Phoenix visualization, Exa Search API integration, ATOF v0.1 Agentic Trajectory Observability Format, Arize AX OTLP exporter, Token streaming for ReAct Agent."
+    },
+    {
+      "item_id": "dreaming-5",
+      "source": "dreaming",
+      "source_name": "softwaredoug (Doug Turnbull)",
+      "title": "Cheat at Search — Steering Lost Agents (Agentic Design Patterns for Search)",
+      "url": "https://docs.google.com/presentation/d/1N7WqZ7vVgh60qi7Tt269XPXXPzrHb4cqvXvAAWbqqeM",
+      "raw_path": "~/wiki/raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/doug-turnbull.mdに収録済み。エージェントのハーネス制御パターン（agent vs human controls、ガードレール、サブエージェント委譲）をカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Agentic Loop → Harness (another loop!) → Tools. The Harness evaluates the agent's response, can force a retry, stop the agent, or modify behavior. Tools respond based on internal state. Agent controls: which tools to call, order/frequency, final output. Developer controls: task definition, tool responses, user validation & feedback."
+    },
+    {
+      "item_id": "dreaming-6",
+      "source": "dreaming",
+      "source_name": "softwaredoug (Doug Turnbull)",
+      "title": "Cheat at Search Part 4 — LLM as a Judge",
+      "url": "https://docs.google.com/presentation/d/16hw0veoCQYKN8hPr8N4EGnXNfUOegGnvKzMpaGZjQjo/edit",
+      "raw_path": "~/wiki/raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/doug-turnbull.mdに収録済み。Pointwise/Pairwise判定、Umbrella論文ベースのスコアリング（0-3）、Pydantic構造化出力によるeコマース適応をカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Goal: Automatically evaluate search results using LLMs to replace human labelers. Two primary approaches: Pointwise (assign relevance grade 0-3 directly) and Pairwise (compare two products). Inspired by Umbrella (Lin et al.) with chain-of-thought steps: search intent → trustworthiness → final score."
+    },
+    {
+      "item_id": "dreaming-7",
+      "source": "dreaming",
+      "source_name": "Every (Katie Parrott)",
+      "title": "Codex for Knowledge Work",
+      "url": "https://every.to/guides/codex-for-knowledge-work",
+      "raw_path": "~/wiki/raw/articles/2026-05-26_every_codex-knowledge-work.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ concepts/codex-goal.mdに収録済み。Delegate/Collaborateモード、Goal（/goal）コマンドの持続的セッション設計、知識労働者向けCodex活用パターンを含む。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Codex is a workspace for you and your AI agents. Give Codex access to the files, apps, and tools it needs, and it gathers context, moves through the task across every surface it can reach—including your connected apps, the browser, and your computer. Two working modes: Delegate (predictable, repeatable) and Collaborate (judgment-heavy, exploratory)."
+    },
+    {
+      "item_id": "dreaming-8",
+      "source": "dreaming",
+      "source_name": "nolanlawson.com",
+      "title": "Using AI to Write Better Code More Slowly",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "raw_path": "~/wiki/raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/nolan-lawson.mdに収録済み。複数モデルによるバグ発見のマルチエージェントレビュー手法（Claude Code+Codex+Cursor Bugbot並列実行、偽陽性ほぼゼロ）、遅いが品質重視のワークフローをカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Most people view AI coding as a tool for spewing low-quality code fast. But LLMs are flexible enough to support the opposite: writing high-quality code slowly, by systematically finding and fixing bugs. LLMs excel at finding bugs—Mythos proved that. The real challenge: prioritizing and validating those findings."
+    }
+  ]
+}

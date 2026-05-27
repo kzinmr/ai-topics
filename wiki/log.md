@@ -4,6 +4,23 @@
 
 ## [2026-05-27] enrich | Nightly knowledge consolidation — dreaming-wiki-ingest
 
+## [2026-05-27] x-accounts-scan | X/Twitter accounts scan — 3 new posts, 1 wiki-worthy
+
+### Raw Articles Saved
+- `wiki/raw/articles/2026-05-19_galileo_eval-engineer-for-claude-codex.md` — Galileo blog: Eval Engineer skill bundle for Claude Code & Codex
+
+### Pages Created
+- [[entities/galileo-eval-engineer]] — Open-source skill bundle for Claude Code and Codex that brings professional evaluation engineering (observability → diagnosis → fix → verify) into coding agent workflows. Created by Pratik Bhavsar at Galileo Agent Labs (May 2026).
+
+### Pages Updated
+- [[entities/pratik-bhavsar]] — Added Eval Engineer to Known for, Galileo AI contributions, and Blog/Writings sections. Updated tags and sources.
+
+### Skipped (not wiki-worthy)
+- @ctatedev: vercel-labs/emulate — Local API emulation for CI (developer tooling, not AI-specific)
+- @spikedoanz: Logitext — MIT educational proof assistant (academic, not AI/LLM-related)
+
+## [2026-05-27] enrich | Nightly knowledge consolidation — dreaming-wiki-ingest (cont.)
+
 ### Pages Created
 - [[concepts/agent-containment]] — Agent Containment — Anthropic's three isolation patterns (ephemeral container, HITL sandbox, sealed local VM) and security lessons
 

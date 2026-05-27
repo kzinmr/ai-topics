@@ -163,5 +163,55 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/",
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/"
   ],
-  "updated": "2026-05-27T07:35:13.915959+00:00"
+  "updated": "2026-05-27T07:35:13.915959+00:00",
+  "https://docs.google.com/presentation/d/1N7WqZ7vVgh60qi7Tt269XPXXPzrHb4cqvXvAAWbqqeM": {
+    "url": "https://docs.google.com/presentation/d/1N7WqZ7vVgh60qi7Tt269XPXXPzrHb4cqvXvAAWbqqeM",
+    "date": "2026-05-27",
+    "run_id": "20260527T180018Z",
+    "pipeline": "dreaming",
+    "action": "skip"
+  },
+  "https://docs.google.com/presentation/d/16hw0veoCQYKN8hPr8N4EGnXNfUOegGnvKzMpaGZjQjo/edit": {
+    "url": "https://docs.google.com/presentation/d/16hw0veoCQYKN8hPr8N4EGnXNfUOegGnvKzMpaGZjQjo/edit",
+    "date": "2026-05-27",
+    "run_id": "20260527T180018Z",
+    "pipeline": "dreaming",
+    "action": "skip"
+  },
+  "https://every.to/guides/codex-for-knowledge-work": {
+    "url": "https://every.to/guides/codex-for-knowledge-work",
+    "date": "2026-05-27",
+    "run_id": "20260527T180018Z",
+    "pipeline": "dreaming",
+    "action": "skip"
+  },
+  "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/": {
+    "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+    "date": "2026-05-27",
+    "run_id": "20260527T180018Z",
+    "pipeline": "dreaming",
+    "action": "skip"
+  },
+  "https://elevenlabs.io/blog/introducing-music-v2": {
+    "url": "https://elevenlabs.io/blog/introducing-music-v2",
+    "date": "2026-05-27",
+    "run_id": "20260527T180018Z",
+    "pipeline": "dreaming",
+    "action": "reference"
+  },
+  "https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases/tag/v1.7.0": {
+    "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases/tag/v1.7.0",
+    "date": "2026-05-27",
+    "run_id": "20260527T180018Z",
+    "pipeline": "dreaming",
+    "action": "reference"
+  },
+  "20260527T180018Z": {
+    "source": "dreaming",
+    "archived_at": "2026-05-27T18:20:00Z",
+    "total_decisions": 8,
+    "skips": 4,
+    "references": 2,
+    "takes_consumed": 2
+  }
 }
