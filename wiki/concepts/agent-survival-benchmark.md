@@ -2,7 +2,7 @@
 title: Agent Survival Benchmark
 type: concept
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-05-26
 tags:
   - concept
   - evaluation
@@ -17,49 +17,49 @@ sources: []
 
 # Agent Survival Benchmark
 
-LLMエージェントの生存能力とPvP（プレイヤー対プレイヤー）圧力下での性能を測定するオープンソースベンチマーク。
+An open-source benchmark for measuring LLM agent survival capability and performance under PvP (player-vs-player) pressure.
 
 ## Core Discovery
 
-2026年4月に発表されたこのベンチマークは、エージェントの**攻撃性が勝利を予測しない**という重要な知見を提供した。
+Published in April 2026, this benchmark provided a key insight: agent **aggressiveness does not predict victory**.
 
 ### Key Findings
-- **攻撃性 ≠ 勝利**: 高攻撃性エージェントが必ずしも勝つわけではない
-- 生存/勝利には他の特性（適応性、リソース管理、戦略的忍耐）が重要
-- 従来の「より速く、より強く」アプローチの限界を示唆
+- **Aggression ≠ Victory**: Highly aggressive agents do not necessarily win
+- Survival/victory depends on other traits (adaptability, resource management, strategic patience)
+- Suggests the limits of the conventional "faster, stronger" approach
 
 ## Benchmark Design
 
 ### PvP Pressure Testing
-- 複数エージェントが競争環境で相互作用
-- 生存率、リソース獲得、戦略的成功を測定
-- 伝統的なベンチマーク（MMLU, HumanEval等）とは異なる次元の評価
+- Multiple agents interact in a competitive environment
+- Measures survival rate, resource acquisition, and strategic success
+- Evaluates a dimension distinct from traditional benchmarks (MMLU, HumanEval, etc.)
 
 ### Survival Metrics
-- エージェントの持続時間
-- リソース効率
-- 戦略的適応性
-- 他エージェントとの相互作用パターン
+- Agent survival duration
+- Resource efficiency
+- Strategic adaptability
+- Interaction patterns with other agents
 
 ## Implications for Agent Development
 
 ### Beyond Raw Capability
-- 能力が高い ≠ 実世界で成功する
-- 戦略的知性、適応性、協調能力が重要
-- 「暗黒工場」（Dark Factory）レベルの自律化には生存ベンチマークが不可欠
+- High capability does not equal real-world success
+- Strategic intelligence, adaptability, and coordination ability are critical
+- Survival benchmarks are essential for Dark Factory-level automation
 
 ### Agent Architecture Design
-- 単一エージェント最適化から複数エージェント協調へ
-- 生存/競争環境でのテストが実世界性能のより良い指標
-- レッドチーミングや敵対的テストの新しい形式
+- Shifting from single-agent optimization to multi-agent coordination
+- Testing in survival/competitive environments provides a better indicator of real-world performance
+- A new form of red-teaming and adversarial testing
 
 ## Relation to Existing Frameworks
 
-- **OSWorld**: 構造化タスク成功率（~66%）
-- **ARC-AGI**: 新規問題解決能力（LLMs <1%）
-- **Agent Survival**: 競争環境での持続・適応能力
+- **OSWorld**: Structured task success rate (~66%)
+- **ARC-AGI**: Novel problem-solving ability (LLMs <1%)
+- **Agent Survival**: Sustained operation and adaptation in competitive environments
 
-このベンチマークは、エージェント評価のパラダイムを「能力測定」から「生存・適応測定」へシフトさせる可能性を秘めている。
+This benchmark has the potential to shift the agent evaluation paradigm from capability measurement to survival and adaptation measurement.
 
 ## Sources
 

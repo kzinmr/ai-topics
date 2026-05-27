@@ -13,6 +13,27 @@
 
 ---
 
+## [2026-05-26] translate | JP→EN batch — 8 files
+
+### Files Translated
+  - concepts/agent-survival-benchmark.md (−453 JP chars)
+  - concepts/docker-sandbox-microvm-api.md (−303 JP chars)
+  - concepts/openenv.md (−480 JP chars)
+  - concepts/swe-bench-agent-scaffolding.md (−365 JP chars)
+  - concepts/ai-infrastructure-engineering/gpu-vram-fundamentals.md (−475 JP chars)
+  - entities/company-ai-pilled.md (−470 JP chars)
+  - concepts/harness-engineering/agentic-engineering.md (−466 JP chars)
+  - concepts/harness-engineering/agentic-workflows/first-run-the-tests.md (−456 JP chars)
+
+### Summary
+  Total JP chars removed: 3,468
+  Remaining JP files (excl. log): 124
+  Remaining JP chars: 16,367
+
+
+
+---
+
 ## [2026-05-27] translate | JP→EN batch — 8 files
 
 ### Files Translated

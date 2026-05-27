@@ -2,7 +2,7 @@
 title: "SWE-bench Agent Scaffolding (Claude 3.5 Sonnet)"
 type: concept
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-26
 tags:
   - benchmark
   - architecture
@@ -25,19 +25,19 @@ related:
 
 # SWE-bench Agent Scaffolding (Claude 3.5 Sonnet)
 
-Claude 3.5 SonnetがSWE-bench Verifiedで49%を達成（当時のSOTA 45%を更新）した際のエージェント設計。**「可能な限りモデル自身に制御を委ね、 scaffoldingを最小限に」** という設計哲学。
+The agent design used by Claude 3.5 Sonnet to achieve 49% on SWE-bench Verified (beating the then-SOTA of 45%). Its design philosophy: **Delegate as much control as possible to the model itself, keeping scaffolding minimal.**
 
-## Agent アーキテクチャ
+## Agent Architecture
 
-### コンポーネント
-- **Prompt**: 提案アプローチを示唆するが、過度に長く/詳細すぎない
-- **Bash Tool**: シェルコマンド実行（スキーマはシンプル、説明に重み）
-- **Edit Tool**: ファイル・ディレクトリの閲覧と編集
-- **Loop**: モデルが「完了」と判断するか200kコンテキスト長を超えるまで継続
+### Components
+- **Prompt**: Suggests approaches but is not excessively long or detailed
+- **Bash Tool**: Shell command execution (simple schema, heavy on description)
+- **Edit Tool**: File and directory viewing and editing
+- **Loop**: Continues until the model decides it is "done" or exceeds the 200K context window
 
-### 設計哲学
+### Design Philosophy
 
-> ハードコードされた特定パターンやワークフローに従わせるのではなく、モデル自身の判断で問題解決の方針を選択させる。
+> Rather than forcing it to follow hardcoded patterns or workflows, let the model choose its own problem-solving approach.
 
 ### Prompt
 
@@ -57,33 +57,33 @@ Follow these steps to resolve the issue:
 Your thinking should be thorough and so it's fine if it's very long.
 ```
 
-### Bash Tool設計
+### Bash Tool Design
 
-シンプルなスキーマ（コマンド文字列のみ）だが、descriptionで詳細な指示:
-- 入力のエスケープ
-- インターネット非接続の明示
-- バックグラウンド実行方法
-- 長時間実行コマンドへの対処
+Simple schema (command string only), but detailed instructions in the description:
+- Input escaping
+- Explicit no internet connection
+- Background execution method
+- Handling long-running commands
 
-## 重要な洞察
+## Key Insights
 
-> SWE-benchはモデル単体ではなく、**エージェントシステム全体**を評価する。同じモデルでもscaffolding次第で性能が大きく変わる。
+> SWE-bench evaluates not just the model, but the **entire agent system**. The same model performance varies dramatically depending on the scaffolding.
 
-オープンソース開発者やスタートアップが、同一モデル周りのscaffolding最適化で大きな改善に成功している（[[agent-harnesses|Harness Effect]]）。
+Open-source developers and startups have achieved significant improvements by optimizing scaffolding around the same model ([[agent-harnesses|Harness Effect]]).
 
 ## SWE-bench vs SWE-bench Verified
 
 | | SWE-bench | SWE-bench Verified |
 |---|---|---|
-| 問題数 | 2,294 | 500 |
-| 品質 | GitHub issue外の追加コンテキストが必要な問題を含む | 人間レビュー済み、解決可能な問題のみ |
-| 用途 | 広範な評価 | 明確なコーディングエージェント性能測定 |
+| Problem Count | 2,294 | 500 |
+| Quality | Includes problems needing context outside GitHub issues | Human-reviewed, solvable problems only |
+| Purpose | Broad evaluation | Clear coding agent performance measurement |
 
-## 結果
+## Results
 
 - Claude 3.5 Sonnet (upgraded): **49%** on SWE-bench Verified
-- 前SOTA: 45%
-- 「50%を超えたモデルはまだない」状態を突破目前
+- Previous SOTA: 45%
+- Closing in on breaking the barrier: "no model has yet exceeded 50%"
 
 ## See Also
 

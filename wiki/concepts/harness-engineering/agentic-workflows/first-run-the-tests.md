@@ -5,7 +5,7 @@ aliases:
   - first-run-the-tests
   - run-the-tests
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-26
 tags:
   - concept
   - methodology
@@ -18,56 +18,56 @@ sources:
 
 # First Run the Tests
 
-コーディングエージェントにプロジェクトを渡した際の**最初の4単語プロンプト**。Simon Willisonが提唱する、エージェントをテスト思考に切り替える最小限の指示。
+The **first four-word prompt** to give a coding agent when handing over a project. Coined by Simon Willison as the minimal instruction to switch an agent into testing mindset.
 
-## 定義
+## Definition
 
 > "Any time I start a new session with an agent against an existing project I'll start by prompting a variant of the following: First run the tests"
 
-Pythonプロジェクト（`pyproject.toml` + `uv`）の場合：
+For Python projects (`pyproject.toml` + `uv`):
 ```
 Run "uv run pytest"
 ```
 
-## 4つの効果
+## Four Effects
 
-### 1. テストスイートの存在を認識させる
+### 1. Makes the Agent Aware of the Test Suite
 > "It tells the agent that there is a test suite and forces it to figure out how to run the tests. This makes it almost certain that the agent will run the tests in the future to ensure it didn't break anything."
 
-エージェントが「テストを実行すべき」という前提を持つようになる。
+The agent internalizes that running tests is the expected behavior.
 
-### 2. プロジェクト複雑さの代理指標
+### 2. Proxy for Project Complexity
 > "Most test harnesses will give the agent a rough indication of how many tests they are. This can act as a proxy for how large and complex the project is, and also hints that the agent should search the tests themselves if they want to learn more about the codebase."
 
-テスト数が多ければ、コードベースも複雑であると推測できる。
+More tests imply a larger, more complex codebase.
 
-### 3. テスト思考への切り替え
+### 3. Switches to Testing Mindset
 > "It puts the agent in a testing mindset. Having run the tests it's natural for it to then expand them with its own tests later on."
 
-テスト実行後に、エージェントが自然とテスト追加を行うようになる。
+After running tests, the agent naturally starts adding its own tests.
 
-### 4. 既存テストからの学習
+### 4. Learns from Existing Tests
 > "Tests are also a great tool to help get an agent up to speed with an existing codebase. Watch what happens when you ask Claude Code or similar about an existing feature - the chances are high that they'll find and read the relevant tests."
 
-エージェントが既存コードを理解するためにテストを読む傾向がある。
+Agents tend to read tests to understand existing code.
 
-## なぜ「自動テストはオプションではない」のか
+## Why "Automated Tests Are No Longer Optional"
 
 > "Automated tests are no longer optional when working with coding agents. The old excuses for not writing them - that they're time consuming and expensive to constantly rewrite while a codebase is rapidly evolving - no longer hold when an agent can knock them into shape in just a few minutes."
 
-従来の「テスト作成は時間がかかる」という言い訳が、エージェント時代には通用しなくなった。
+The traditional excuse that "writing tests takes time" no longer holds in the age of coding agents.
 
-## 実装上の注意点
+## Implementation Notes
 
-- **テストが存在しない場合**: エージェントがテストスイートをまず構築する必要がある
-- **テストが壊れている場合**: 最初にテストを修正する（Red状態を確認）
-- **テストフレームワークの選択**: `uv run pytest` や `npm test` など、標準的なコマンドを使用
+- **No tests exist**: The agent must first build the test suite
+- **Tests are broken**: First fix the tests (confirm Red state)
+- **Test framework choice**: Use standard commands like `uv run pytest` or `npm test`
 
-## 関連パターン
+## Related Patterns
 
-- [[concepts/red-green-tdd]] — Red/Greenサイクルの次のステップ
-- [[concepts/agentic-manual-testing]] — 自動テスト後の手動探索テスト
-- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/red-green-tdd]] — Next step in the Red/Green cycle
+- [[concepts/agentic-manual-testing]] — Manual exploratory testing after automated tests
+- [[concepts/harness-engineering/agentic-engineering]] — Higher-level concept
 
-## 参照
-- [[entities/simon-willison]] — このパターンの創始者
+## References
+- [[entities/simon-willison]] — Originator of this pattern

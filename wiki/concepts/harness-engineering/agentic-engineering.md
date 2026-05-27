@@ -3,7 +3,7 @@ title: Agentic Engineering
 type: concept
 slug: agentic-engineering
 created: 2026-04-12
-updated: 2026-05-12
+updated: 2026-05-26
 status: complete
 tags:
   - model
@@ -161,28 +161,28 @@ This mirrors how good engineering teams work with human developers.
 
 ---
 
-## 抽象化コストの考察（Xe Iasoの視点）
+## The Cost of Abstraction (Xe Iaso Perspective)
 
-[Xe Iaso](https://xeiaso.net/blog/2026/ai-abstraction/)はAIによる抽象化レベルの上昇について、開発者視点での重要な批判的考察を提供している。
+[Xe Iaso](https://xeiaso.net/blog/2026/ai-abstraction/) offers a critical examination from the developer perspective on the rising level of abstraction driven by AI.
 
 ### 「Fine is the Enemy of Good」
 
-AIが出力するコードや文章は常に「まあまあ良い（fine）」レベルで安定している。問題は、この「fine」が人間の基準を静かに低下させること。「fine」が当たり前になると、本当に「良い（good）」ものを見分ける能力が萎える。
+AI-generated code and writing consistently settle at a "fine" level. The problem is that this "fine" quietly lowers human standards. When "fine" becomes the norm, our ability to recognize what is truly "good" atrophies.
 
-> AIに慣れすぎると、平均的な出力に免疫ができ、本当に優れたものを見極める目が曇る。
+> Over-reliance on AI builds immunity to average output and clouds the discernment needed to recognize truly excellent work.
 
-### 声の喪失（Voice as Non-Negotiable）
+### Loss of Voice (Voice as Non-Negotiable)
 
-AIによるコミュニケーションが一般化すると、**人間らしい「声」**が非対称に貴重になる。大量のAI生成メッセージの中で、本物の人間の文章は持つ独特のテクスチャー、不完全さ、個性がむしろ価値を増す。
+As AI-generated communication becomes widespread, **authentic human voice** becomes asymmetrically valuable. Amidst a sea of AI-generated messages, the unique texture, imperfection, and personality of real human writing actually increases in value.
 
-### 抽象化と責任のトレードオフ
+### The Abstraction-Responsibility Trade-off
 
-高い抽象化レベルで開発することの代償：
-- **理解の希薄化** — 生成されたコードの内部動作を理解しないまま進む
-- **デバッグ困難** — 問題が起きた時、何層もの抽象化を剥がす必要がある
-- **スキルの空洞化** — 抽象化に依存しすぎると、低レベルの問題を自力で解決できなくなる
+The cost of developing at high levels of abstraction:
+- **Thinning understanding** — Proceeding without understanding how generated code works internally
+- **Debugging difficulty** — When problems arise, multiple layers of abstraction must be peeled back
+- **Skill hollowing** — Over-reliance on abstraction erodes the ability to solve low-level problems independently
 
-Agentic Engineeringの文脈では、このトレードオフを意識し、抽象化と理解のバランスを取ることが持続可能なエンジニアリングの鍵となる。[[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]]（コード解説の生成）は、この問題への一つの対処法である。
+In the context of Agentic Engineering, being mindful of this trade-off and balancing abstraction with understanding is key to sustainable engineering. [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] (code explanation generation) is one approach to addressing this issue.
 
 ---
 

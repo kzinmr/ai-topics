@@ -2,7 +2,7 @@
 title: "OpenEnv (Agent Environments Standard)"
 type: concept
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-26
 status: L2
 tags:
   - ai-agents
@@ -22,71 +22,71 @@ related:
 
 # OpenEnv (Agent Environments Standard)
 
-Meta-PyTorch と Hugging Face が提携して立ち上げた、**オープンなエージェント環境（Agentic Environments）の標準規格とハブ**。
+A **standard specification and hub for open agentic environments**, jointly launched by Meta-PyTorch and Hugging Face.
 
-## 問題意識
+## Problem Statement
 
-LLMだけではエージェントタスクは実行できない。必要なのは:
-- 適切なツールへのアクセス
-- 安全なサンドボックス実行
-- タスクの明確なセマンティクス
+LLMs alone cannot execute agent tasks. What is needed:
+- Access to appropriate tools
+- Safe sandboxed execution
+- Clear task semantics
 
-しかし、数百万のツールをモデルに直接露出するのは非現実的かつ危険。
+However, exposing millions of tools directly to a model is impractical and dangerous.
 
-## OpenEnvの解決策
+## OpenEnv's Solution
 
-**エージェント環境（Agentic Environment）**: タスクに必要なツール、API、認証情報、実行コンテキストだけを含む、安全で意味的に明確なサンドボックス。
+**Agentic Environment**: A safe, semantically clear sandbox containing only the tools, APIs, credentials, and execution context needed for a specific task.
 
 ```
 OpenEnv Environment
-├── ツール定義 (APIs, MCPs)
-├── 認証情報
-├── 実行コンテキスト (Docker, sandbox)
-└── タスクセマンティクス
+├── Tool definitions (APIs, MCPs)
+├── Credentials
+├── Execution context (Docker, sandbox)
+└── Task semantics
 ```
 
-### コアAPI
+### Core API
 
 ```python
-env.step(action)    # エージェントのアクションを実行 → 観測を返す
-env.reset()         # 環境をリセット
-env.close()         # クリーンアップ
+env.step(action)    # Execute agent action -> return observation
+env.reset()         # Reset the environment
+env.close()         # Clean up
 ```
 
-### RFC
+### RFCs
 
-| RFC | 内容 |
-|-----|------|
-| RFC 001 | コアコンポーネント（Environment, Agent, Task）のアーキテクチャ |
-| RFC 002 | 基本envインターフェース、パッケージング、分離、通信 |
-| RFC 003 | MCPツールのカプセル化と分離境界 |
+| RFC | Contents |
+|-----|----------|
+| RFC 001 | Architecture of core components (Environment, Agent, Task) |
+| RFC 002 | Base environment interface, packaging, isolation, communication |
+| RFC 003 | MCP tool encapsulation and isolation boundaries |
 
-## ユースケース
+## Use Cases
 
-| ユースケース | 説明 |
-|-------------|------|
-| **RL Post-Training** | TRL, TorchForge+Monarch, VeRLでエージェントを強化学習 |
-| **環境作成** | 自作環境を共有、主要RLツールとの相互運用を保証 |
-| **SOTA再現** | FAIRのCode World Modelなどの手法を再現 |
-| **デプロイ** | 訓練と同じ環境で推論も実行（フルパイプライン） |
+| Use Case | Description |
+|----------|-------------|
+| **RL Post-Training** | Train agents with RL via TRL, TorchForge+Monarch, VeRL |
+| **Environment Creation** | Share custom environments with guaranteed interoperability across major RL tools |
+| **SOTA Reproduction** | Reproduce approaches like FAIR's Code World Model |
+| **Deployment** | Run inference in the same environment as training (full pipeline) |
 
-## 統合先
+## Integrations
 
-- **TorchForge** (Meta) — 新RLライブラリ
+- **TorchForge** (Meta) — New RL library
 - **TRL** (Hugging Face)
 - **verl** (Volcengine)
 - **SkyRL**
 - **Unsloth**
 
-## エコシステム
+## Ecosystem
 
-Hugging Face上に [Environment Hub](https://huggingface.co/openenv) を開設:
-- 開発者が環境をビルド・共有・探索
-- Human Agentとして対話的にテスト可能
-- モデルをタスク解決に使用可能
-- 本格的なRL訓練の前に妥当性を高速に検証
+An [Environment Hub](https://huggingface.co/openenv) hosted on Hugging Face:
+- Developers can build, share, and explore environments
+- Interactive testing as a Human Agent
+- Models can be used to solve tasks
+- Fast validation of correctness before full RL training
 
-## 参照
+## References
 
 - [OpenEnv Blog — Hugging Face](https://huggingface.co/blog/openenv) (2025-10-23)
 - [OpenEnv GitHub](https://github.com/meta-pytorch/OpenEnv)

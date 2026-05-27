@@ -2,7 +2,7 @@
 title: Company AI Pilled
 type: concept
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-26
 status: L2
 sources: ["https://khemaridh.substack.com/p/how-to-get-your-company-ai-pilled (status: pending)", "https://x.com/elvis_"]
 tags: [ai-adoption, enterprise-ai, token-economics]
@@ -10,7 +10,7 @@ tags: [ai-adoption, enterprise-ai, token-economics]
 
 # Company AI Pilled
 
-企業を「AI駆動組織」へ変革するための実践的フレームワーク。Khe Hy（@KheHy）が2026年4月に提唱。
+A practical framework for transforming companies into AI-driven organizations. Proposed by Khe Hy (@KheHy) in April 2026.
 
 ## Core Philosophy
 
@@ -18,54 +18,54 @@ tags: [ai-adoption, enterprise-ai, token-economics]
 
 > **"The bottleneck is never the tool. It's always the first person in the room willing to look stupid using it out loud."**
 
-AI採用のボトルネックはツールではなく、**「最初に大衆の前で使い始める勇気を持つ人」**にある。
+The bottleneck in AI adoption is not the tools — it’s **the first person willing to look stupid using them in public**.
 
 ## Framework
 
-### 1. 「Aha」体験の加速
+### 1. Accelerating the Aha Moment
 
-- AIによる衝撃体験（「おっ、すごい！」）をできるだけ早く
-- 個人体験 → 社内共有 → 組織的展開
+- Create impactful AI experiences as early as possible
+- Individual experience -> internal sharing -> organizational rollout
 
-### 2. 社内Crowdsourcing
+### 2. Internal Crowdsourcing
 
-- 社内での成功事例を内部で共有・拡散
-- 成功パターンを体系的に収集
+- Share and spread internal success stories
+- Systematically collect winning patterns
 
-### 3. Token Economics戦略
+### 3. Token Economics Strategy
 
-- 採用フェーズでは**「ベストモデルへの過剰投資」**を推奨
-- スキル習得には高いモデル（Opus等）が必要
-- 市場トレンド: トークン補助終了 → 正規価格化
+- Recommends **over-investing in the best model** during the adoption phase
+- Skill acquisition requires high-end models (Opus, etc.)
+- Market trend: Token subsidies ending, moving to standard pricing
 
-### 4. 組織文化変革
+### 4. Organizational Culture Change
 
-- 「AIツールを持っている」→「AIで考える」へのパラダイムシフト
-- 実行層がプロンプトをライブで公開・解説
-- 失敗を恐れない文化
+- Paradigm shift from having AI tools to thinking with AI
+- Executives publicly share and explain their prompts live
+- A culture that does not fear failure
 
 ## Claude Ecosystem Context (2026-04)
 
 | Product | Status | Impact |
 |---------|--------|--------|
-| **Mythos Model** | New super-powered iteration | 採用フェーズでのベストモデル選択肢 |
-| **Claude Cowork** | Exited beta | ミーティング準備、インボックス分類、ノート整理を自動化 |
-| **Microsoft Word Plugin** | Launched | Office統合による採用ハードル低下 |
-| **Agent Management** | Simplified | エージェント管理エコシステムが簡素化 |
-| **Auto Routing** | Available | Opusトークンコストを自動ルーティングで削減 |
+| **Mythos Model** | New super-powered iteration | Best model choice during the adoption phase |
+| **Claude Cowork** | Exited beta | Automates meeting prep, inbox sorting, and note organization |
+| **Microsoft Word Plugin** | Launched | Lowered adoption barriers through Office integration |
+| **Agent Management** | Simplified | Agent management ecosystem simplified |
+| **Auto Routing** | Available | Reduces Opus token costs through automatic routing |
 
 ## Tools Mentioned
 
 - **OpenClaw AI** — AI CEO / Chief of Staff
-- **WikiLLM** — Andrej KarpathyのAI学習基盤
-- **Claude Cowork Projects** — プロジェクト管理デモ
+- **WikiLLM** — Andrej Karpathy AI learning foundation
+- **Claude Cowork Projects** — Project management demo
 
 ## Significance
 
-Company AI Pilledは、単なるAIツール導入ではなく、**組織文化そのもののAI駆動化**を提唱するフレームワーク。特に「最初の勇気を持つ人」の重要性と、採用フェーズでの過剰投資戦略は、実際の企業AI導入における重要な実践指針となる。
+Company AI Pilled is a framework advocating for **AI-driven organizational culture transformation**, not just tool adoption. The emphasis on the first person with courage and over-investment during the adoption phase serves as a practical guide for real-world enterprise AI implementation.
 
 ## Related Concepts
 - [[concepts/company-ai-pilled]]
 
-- [Reflexive AI](reflexive-ai.md) — ShopifyのAI採用事例
-- [Solo Founder Stack](solo-founder-stack.md) — ソロfounderのAI活用
+- [Reflexive AI](reflexive-ai.md) — Shopify AI adoption case study
+- [Solo Founder Stack](solo-founder-stack.md) — Solo founder AI usage

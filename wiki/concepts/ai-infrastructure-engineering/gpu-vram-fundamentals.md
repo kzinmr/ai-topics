@@ -2,7 +2,7 @@
 title: "GPU / VRAM Fundamentals"
 type: concept
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-26
 tags:
   - concept
   - inference
@@ -24,22 +24,22 @@ related:
 
 # GPU / VRAM Fundamentals
 
-> GPUアーキテクチャの基礎から、LLM推論に必要なVRAM計算、メモリ帯域幅の影響、量子化とバッチ処理の経済学までを体系的にカバーする。
+> A systematic overview covering GPU architecture basics, VRAM computation for LLM inference, memory bandwidth impact, and the economics of quantization and batch processing.
 
 ## Why This Matters
 
-LLM推論において、GPUはただの「速い計算機」ではない。**メモリ帯域幅**がスループットの主たる制約要因であり、**VRAM容量**が同時に処理できるモデルサイズ・バッチサイズ・コンテキスト長を決定する。これらの物理的制約を理解することなく、本番システムの最適化は不可能。
+In LLM inference, the GPU is not just a "fast calculator." **Memory bandwidth** is the primary constraint on throughput, and **VRAM capacity** determines the model size, batch size, and context length that can be processed simultaneously. Without understanding these physical constraints, production system optimization is impossible.
 
 ## Outline
 
 ### 1. GPU Memory Hierarchy
 
-- **HBM (High Bandwidth Memory)** — GPUの主要メモリ。容量と帯域幅のトレードオフ
-- **SRAM / L1/L2 Cache** — オンチップキャッシュ階層
-- **Register File** — 最も高速だが最小
-- GPU世代ごとのHBM仕様比較表
+- **HBM (High Bandwidth Memory)** — GPU primary memory; trade-off between capacity and bandwidth
+- **SRAM / L1/L2 Cache** — On-chip cache hierarchy
+- **Register File** — Fastest but smallest
+- HBM specification comparison across GPU generations
 
-| GPU | HBM世代 | VRAM | Memory Bandwidth | Compute (FP8 TFLOPS) |
+| GPU | HBM Generation | VRAM | Memory Bandwidth | Compute (FP8 TFLOPS) |
 |-----|---------|------|------------------|---------------------|
 | A100 (80GB) | HBM2e | 80 GB | 2.0 TB/s | 624 |
 | H100 (SXM) | HBM3 | 80 GB | 3.35 TB/s | 1979 |
@@ -48,21 +48,21 @@ LLM推論において、GPUはただの「速い計算機」ではない。**メ
 
 ### 2. VRAM Requirements for LLMs
 
-- **推論時のVRAM消費の内訳**:
+- **VRAM consumption breakdown during inference**:
   - **Model weights**: `params × bytes_per_param` (70B @ FP16 = 140GB)
   - **KV Cache**: `2 × layers × num_heads × head_dim × seq_len × batch × precision_bytes`
-  - **Activations**: 中間計算の一時的な格納
+  - **Activations**: Temporary storage for intermediate computations
   - **Overhead**: CUDA context, scheduler buffers
 
-- モデルサイズ別最小VRAM計算式
-- QuantizationがVRAM要件に与える影響
+- Minimum VRAM calculation formulas by model size
+- Impact of quantization on VRAM requirements
 
 ### 3. Memory Bandwidth Bound vs Compute Bound
 
-- **Roofline Model**: 推論時間 = max(compute_time, memory_time)
-- Memory bandwidth bound: 低バッチサイズ時、weight fetchが律速
-- Compute bound: 高バッチサイズ時、行列演算が律速
-- バッチサイズBが `B > 300 × (total_params / active_params)` でクロスオーバー（DeepSeek V3: B > 2400）
+- **Roofline Model**: Inference time = max(compute_time, memory_time)
+- Memory bandwidth bound: At low batch sizes, weight fetch is the bottleneck
+- Compute bound: At high batch sizes, matrix operations are the bottleneck
+- Batch size B crossover occurs at `B > 300 x (total_params / active_params)` (DeepSeek V3: B > 2400)
 
 ### 4. Quantization Effects on VRAM
 
@@ -78,15 +78,15 @@ LLM推論において、GPUはただの「速い計算機」ではない。**メ
 
 ### 5. Batching Fundamentals
 
-- **Static batching**: 固定サイズのバッチを同時処理
-- **Continuous batching**: vLLMが採用、各シーケンスの完了を待たずに次のリクエストをバッチに追加
-- **Chunked prefill**: 長いプリフィルを分割してデコードとインターリーブ
-- **Batch Size Economics**: バッチサイズ増加に伴うスループットの飽和曲線
-- **20ms Batch Train**: HBM容量 / HBM帯域幅 ≈ 15-20msの自然な定数（Reiner Pope）
+- **Static batching**: Process fixed-size batches simultaneously
+- **Continuous batching**: Adopted by vLLM; adds new requests to a batch without waiting for each sequence to complete
+- **Chunked prefill**: Splits long prefills to interleave with decoding
+- **Batch Size Economics**: Throughput saturation curve as batch size increases
+- **20ms Batch Train**: HBM capacity / HBM bandwidth approximates a 15-20ms natural constant (Reiner Pope)
 
 ### 6. GPU Selection Guide
 
-- ユースケース別推奨GPU
+- Recommended GPUs by use case
   - **Training (70B+)**: H100/B200, 8-GPU clusters
   - **Production Serving**: A100/H100 with large batch sizes
   - **Local / Dev**: RTX 4090 (24GB), RTX 5090 (32GB), M-series Ultra
@@ -95,9 +95,9 @@ LLM推論において、GPUはただの「速い計算機」ではない。**メ
 ### 7. Multi-GPU Topologies
 
 - **NVLink / NVSwitch**: High-speed GPU interconnect
-- **PCIe**: ボトルネックとなりうる世代間の帯域幅差
-- **InfiniBand / RoCE**: クラスタ間接続
-- **NUMA Affinity**: CPU-GPUメモリ配置の最適化
+- **PCIe**: Bandwidth differences across generations can be a bottleneck
+- **InfiniBand / RoCE**: Cluster interconnect
+- **NUMA Affinity**: Optimizing CPU-GPU memory placement
 
 ## Key References
 
@@ -117,9 +117,9 @@ LLM推論において、GPUはただの「速い計算機」ではない。**メ
 
 ## Related Pages
 
-- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorchビルトインのGPUメモリデバッグツール
+- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorch built-in GPU memory debugging tool
 - [[concepts/llm-inference]] — Roofline analysis, batch size economics
 - [[concepts/local-llm/inference-hardware]] — Consumer hardware specifics
 - [[concepts/model-quantization]] — Quantization methods & tradeoffs
-- [[concepts/kv-cache]] — VRAMの主要消費源
+- [[concepts/kv-cache]] — Major consumer of VRAM
 - [[concepts/ai-infrastructure-engineering/_index]] — Parent page
