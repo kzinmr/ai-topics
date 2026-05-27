@@ -5,17 +5,19 @@ tags:
   - harness-engineering
   - architecture
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-27
 type: concept
+---
+---
 ---
 
 # Self-Evolving Agents
 
-エージェントが自身の振る舞いや能力を時間とともに改善していくパターン。固定されたロジックではなく、フィードバックと学習による継続的な進化を可能にする。
+A pattern where agents improve their own behavior and capabilities over time. Rather than fixed logic, it enables continuous evolution through feedback and learning.
 
 ## Core Concept
 
-エージェントは単なるタスク実行者ではなく、自身のパフォーマンスを監視・分析・改善する**自律的な学習システム**として設計される。
+An agent is designed not as a mere task executor, but as an **autonomous learning system** that monitors, analyzes, and improves its own performance.
 
 ```
 Execute → Observe → Analyze → Adapt → Execute...
@@ -25,37 +27,37 @@ Execute → Observe → Analyze → Adapt → Execute...
 
 ### Level 1: Parameter Tuning
 
-- プロンプトの温度や最大トークン数の自動調整
-- リトライ回数の最適化
-- ツール選択の重み付け更新
+- Automatic adjustment of prompt temperature and max tokens
+- Optimization of retry counts
+- Weighted update of tool selection
 
 ### Level 2: Strategy Adaptation
 
-- 成功したパターンを記憶して再利用
-- 失敗したアプローチを避ける
-- タスクタイプに応じた戦略選択
+- Remember and reuse successful patterns
+- Avoid failed approaches
+- Strategy selection based on task type
 
 ### Level 3: Capability Expansion
 
-- 新しいツールの発見と統合
-- ワークフローの自動生成
-- ドメイン知識の蓄積
+- Discovery and integration of new tools
+- Automatic workflow generation
+- Accumulation of domain knowledge
 
 ### Level 4: Architectural Evolution
 
-- マルチエージェント構成の動的変更
-- オーケストレーションパターンの最適化
-- システム設計の自己改善
+- Dynamic modification of multi-agent configurations
+- Optimization of orchestration patterns
+- Self-improvement of system design
 
-### Level 5: Self-Modification（自己書き換え）
+### Level 5: Self-Modification
 
-- **エージェントが自身のツール定義ファイルを読み取り、新しいツールクラスを追記する**
-- ファクトリーパターンにより、ツール定義がクラスとして分離されていることが前提
-- ランタイムが `st_mtime` でファイル変更を検知 → `importlib.reload()` でホットリロード
-- エージェントは**書いた直後のターンで**新しいツールを呼び出せる
-- 双方向：ツールの**作成**だけでなく**削除**も可能
+- **The agent reads its own tool definition files and appends new tool classes**
+- Factory pattern requires tool definitions to be separated as classes
+- Runtime detects file changes via `st_mtime` → hot reload with `importlib.reload()`
+- The agent can call new tools **on the turn immediately after writing them**
+- Bidirectional: Can **delete** tools as well as **create** them
 
-**実装パターン**: [[concepts/agents-that-build-themselves]] を参照。Hugo Bowne-Anderson + Ivan Leo のワークショップで実証された「software building software」パラダイム。
+**Implementation pattern**: See [[concepts/agents-that-build-themselves]]. The "software building software" paradigm demonstrated in Hugo Bowne-Anderson + Ivan Leo's workshop.
 
 ```python
 # Hot reload mechanism
@@ -70,30 +72,30 @@ def _check_reload(self):
 
 ### Feedback Loops
 
-- ユーザーからの明示的フィードバック
-- 実行結果の暗黙的評価（成功/失敗）
-- パフォーマンスメトリクスの監視
+- Explicit user feedback
+- Implicit evaluation of execution results (success/failure)
+- Monitoring of performance metrics
 
 ### Memory Systems
 
-- 成功事例の保存と検索
-- 失敗パターンの学習
-- コンテキストの圧縮と保持
+- Storage and retrieval of success cases
+- Learning from failure patterns
+- Context compression and retention
 
 ### Experimentation
 
-- A/Bテストによる戦略比較
-- 小さな変更からの学習
-- 安全な探索空間の定義
+- A/B testing for strategy comparison
+- Learning from small incremental changes
+- Defining safe exploration spaces
 
 ## Risks and Mitigations
 
 | Risk | Mitigation |
 |------|-----------|
-| 過学習 | 定期的なベースラインテスト |
-| 劣化 | バージョン管理とロールバック |
-| 予測不可能性 | 変更の監査証跡 |
-| セキュリティ | 権限の制限と検証 |
+| Overfitting | Regular baseline testing |
+| Degradation | Version control and rollback |
+| Unpredictability | Audit trail of changes |
+| Security | Permission restrictions and validation |
 
 ## Related
 

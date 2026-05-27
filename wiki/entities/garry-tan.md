@@ -29,85 +29,87 @@ sources:
   - https://en.wikipedia.org/wiki/Garry_Tan
   - https://www.ycombinator.com/people
 ---
+---
+---
 
 # Garry Tan
 
-Garry Tan（@garrytan）は Y Combinator の President & CEO。エンジニア・デザイナー出身のベンチャーキャピタリストであり、AI agent 時代における **Personal AI OS** と **Meta-Meta-Prompting** の提唱者として知られる。
+Garry Tan (@garrytan) is the President & CEO of Y Combinator. A venture capitalist with an engineering and design background, he is known for advocating **Personal AI OS** and **Meta-Meta-Prompting** in the AI agent era.
 
-## 経歴
+## Career
 
-| 時期 | 役割 |
+| Period | Role |
 |------|------|
-| 2005–2008 | Microsoft → Palantir Technologies（10人目の従業員、デザイナー・エンジニアリングマネージャー） |
-| 2008–2012 | Posterous 共同創業（YC S08、2012年に Twitter が $20M で買収） |
-| 2011–2015 | Y Combinator パートナー（Bookface・Demo Day サイト構築） |
-| 2013– | Posthaven 共同創業 |
-| 2015–2023 | Initialized Capital 共同創業・マネージングパートナー |
-| 2023–現在 | Y Combinator President & CEO |
+| 2005–2008 | Microsoft → Palantir Technologies (10th employee, designer & engineering manager) |
+| 2008–2012 | Co-founded Posterous (YC S08, acquired by Twitter for $20M in 2012) |
+| 2011–2015 | Y Combinator Partner (built Bookface & Demo Day sites) |
+| 2013– | Co-founded Posthaven |
+| 2015–2023 | Co-founded Initialized Capital, Managing Partner |
+| 2023–present | Y Combinator President & CEO |
 
-## AI Builder としての側面
+## As an AI Builder
 
-Tan は VC でありながら現役の builder であることを重視し、**深夜までコードを書く CEO** として知られる。
+Tan emphasizes being an active builder despite being a VC, known as a **CEO who codes late into the night**.
 
 ### G Stack
 
-YC の枠を超えて個人開発した AI agent システム。Claude Code 上に構築され、以下の機能を持つ：
+An AI agent system he personally developed beyond YC's scope. Built on Claude Code, it has the following capabilities:
 
-- `/office-hours` — YC の創業者評価プロセスをシミュレートする skill
-- 製品スコーピングからデプロイまでの AI エンジニアリングチーム
-- 構造化プロセス、定義された役割、厳格なレビュー
+- `/office-hours` — Skill simulating YC's founder evaluation process
+- AI engineering team from product scoping to deployment
+- Structured processes, defined roles, rigorous review
 
-### 「Meta-Meta-Prompting」フレームワーク（2026年5月）
+### Meta-Meta-Prompting Framework (May 2026)
 
-2026年5月9日に公開した長文 X Article で提唱した AI agent 設計哲学。[[concepts/meta-meta-prompting]] に詳細。
+An AI agent design philosophy advocated in a long-form X Article published on May 9, 2026. See [[concepts/meta-meta-prompting]] for details.
 
-**核心的主張**:
-- AI に prompt を書く時代は終わり、**skill system** を構築する時代へ
-- **Fat Skills, Fat Code, Thin Harness** — harness は薄く、skill と知識は厚く
-- モデルはエンジンであり、真の価値は知識・ワークフロー・データにある
-- 100以上の AI skills と約10万ページの knowledge base を個人で運用
-- **Skillify** — 繰り返しワークフローを自動的に skill 化する meta-skill
+**Core Thesis**:
+- The era of writing prompts for AI is over; it's time to build **skill systems**
+- **Fat Skills, Fat Code, Thin Harness** — Keep harness thin, skills and knowledge thick
+- Models are the engine; true value lies in knowledge, workflows, and data
+- Personally operating 100+ AI skills and an ~100,000-page knowledge base
+- **Skillify** — A meta-skill that automatically skillifies recurring workflows
 
-### 先行記事: 「Fat Skills, Fat Code, Thin Harness」
+### Preceding Article: "Fat Skills, Fat Code, Thin Harness"
 
-Meta-Meta-Prompting の前段となる記事で、harness architecture の基本原則を解説。
+An article preceding Meta-Meta-Prompting that explains the basic principles of harness architecture.
 
-### マルチモデル戦略
+### Multi-Model Strategy
 
-| モデル | 用途 |
+| Model | Use |
 |--------|------|
-| Claude Opus 4.7 | 精密作業 |
-| GPT-5.5 | 想起・抽出 |
-| DeepSeek V4-Pro | 創造的作業 |
-| Groq + Llama | 高速推論 |
-| OpenClaw + Hermes Agent | ルーティング |
+| Claude Opus 4.7 | Precision work |
+| GPT-5.5 | Recall & extraction |
+| DeepSeek V4-Pro | Creative work |
+| Groq + Llama | Fast inference |
+| OpenClaw + Hermes Agent | Routing |
 
-### 主要 Skills
+### Key Skills
 
-- `meeting-ingestion` — 会議の自動取り込み・構造化
-- `media-ingest` — メディアコンテンツの取り込み
-- `enrich` — 既存 knowledge base の強化
-- `perplexity-research` — 調査 research
-- `investor-update-ingest` — 投資家向けアップデート処理
-- `email-triage` — メールの自動仕分け
-- `calendar-check` — カレンダー管理
-- `Skillify` — meta-skill（ワークフローの自動 skill 化）
+- `meeting-ingestion` — Automatic meeting capture & structuring
+- `media-ingest` — Media content ingestion
+- `enrich` — Existing knowledge base enrichment
+- `perplexity-research` — Research investigation
+- `investor-update-ingest` — Investor update processing
+- `email-triage` — Automatic email sorting
+- `calendar-check` — Calendar management
+- `Skillify` — meta-skill (automatic workflow skillification)
 
-## Hermes Agent との関係
+## Relationship with Hermes Agent
 
-Garry Tan のシステムは **OpenClaw と Hermes Agent をルーティング層として使用**している。彼の「Fat Skills, Fat Code, Thin Harness」アーキテクチャは Hermes Agent の設計思想と以下のように対応する：
+Garry Tan's system **uses OpenClaw and Hermes Agent as the routing layer**. His "Fat Skills, Fat Code, Thin Harness" architecture corresponds to Hermes Agent's design philosophy as follows:
 
-| Tan の概念 | Hermes Agent での実装 |
+| Tan's Concept | Hermes Agent Implementation |
 |-----------|----------------------|
-| Thin Harness | コアランタイム |
-| Fat Skills | スキルシステム |
+| Thin Harness | Core runtime |
+| Fat Skills | Skill system |
 | Skillify | `skill_manage(action='create')` |
 | Knowledge Graph | wiki |
-| Multi-model routing | マルチプロバイダ対応 |
+| Multi-model routing | Multi-provider support |
 
-## 参考リンク
+## Reference Links
 
 - X: [@garrytan](https://x.com/garrytan)
 - Y Combinator: [ycombinator.com](https://www.ycombinator.com/)
 - Wikipedia: [Garry Tan](https://en.wikipedia.org/wiki/Garry_Tan)
-- YouTube: [Garry Tan](https://www.youtube.com/@garrytan) — スタートアップ戦術の教育コンテンツ
+- YouTube: [Garry Tan](https://www.youtube.com/@garrytan) — Educational startup strategy content

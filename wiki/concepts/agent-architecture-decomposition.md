@@ -7,7 +7,9 @@ tags:
   - open-source
   - mcp
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-27
+---
+---
 ---
 
 # Agent Architecture Decomposition: Model / Runtime / Harness
@@ -48,9 +50,9 @@ The **execution environment** where agents operate. This layer determines the na
 | **Container/MicroVM** | Full environment API | Daytona, Rivet agentOS | Hardware-level isolation |
 | **Dedicated Sandboxes** | Policy-enforced execution | NVIDIA OpenShell | Deny-by-default + YAML policies |
 
-#### Agent on REPL: Python関数ネイティブのRuntime
+#### Agent on REPL: Runtime Natively Suited for Python Functions
 
-Python REPLをRuntimeに選択すると、エージェントはCLIコマンドではなく**Python関数**を直接呼び出す形でツールを利用する。
+When choosing a Python REPL as the Runtime, the agent uses tools by directly calling **Python functions** rather than CLI commands.
 
 ```python
 agent → call_tool(search_codebase, pattern="...")
@@ -58,46 +60,46 @@ agent → call_tool(run_tests, path="./tests/")
 agent → call_tool(fetch_weather, city="London")
 ```
 
-**代表例: RLM (Recursive Language Model)**
+**Representative Example: RLM (Recursive Language Model)**
 
-RLMは「コンテキストの分解」をモデルに委ねるアーキテクチャ（[[mlops/agent-vs-rlm-comparison]]）。REPL環境内で`grep`、スライス等のコード操作を通じて関連コンテキストを選択的に抽出する。タスク分解ではなく**コンテキスト分解**が基本単位。
+RLM is an architecture that delegates "context decomposition" to the model ([[mlops/agent-vs-rlm-comparison]]). It selectively extracts relevant context through code operations like `grep` and slicing within a REPL environment. The fundamental unit is **context decomposition** rather than task decomposition.
 
-**代表例: Pydantic AI**
+**Representative Example: Pydantic AI**
 
-型安全なエージェントフレームワーク（[[concepts/pydantic-ai]]）。Python関数をツールとして登録し、Pydanticモデルで入出力を検証。Graph APIによるワークフロー定義も可能。
+A type-safe agent framework ([[concepts/pydantic-ai]]). Registers Python functions as tools, validates inputs/outputs with Pydantic models. Also supports workflow definition via Graph API.
 
-**Agent on REPLの利点**:
-- 型安全: Python型ヒントでツールパラメータを検証可能
-- 構造化出力: Pydanticモデル等で戻り値を保証
-- 高速: プロセス内実行（IPC不要）
-- 状態共有: REPL内のメモリ空間をエージェント間で共有可能
+**Agent on REPL Advantages**:
+- Type-safe: Tool parameters verifiable with Python type hints
+- Structured output: Guaranteed return values via Pydantic models
+- Fast: In-process execution (no IPC needed)
+- State sharing: Memory space within REPL can be shared between agents
 
-#### Micro-VM Interpreter: 専用バイトコードVMのRuntime
+#### Micro-VM Interpreter: Runtime with Dedicated Bytecode VM
 
-**代表例: Pydantic Monty**
+**Representative Example: Pydantic Monty**
 
-MontyはRust製のミニマルPythonインタープリタ（[[concepts/monty-sandbox]]）。Agent on REPLの延長線上にあるが、**CPythonではなく専用VM**でコードを実行する点が根本的に異なる。
+Monty is a minimal Python interpreter written in Rust ([[concepts/monty-sandbox]]). It extends the Agent on REPL approach, but fundamentally differs by executing code on a **dedicated VM rather than CPython**.
 
-| 特性 | 値 |
+| Property | Value |
 |---|---|
-| 起動遅延 | 0.004ms（Docker 195msの~1/50,000） |
-| バイナリサイズ | ~4.5MB |
-| メモリオーバーヘッド | ~5MB（CPython埋め込み時） |
-| セキュリティ | Deny-by-default。外部関数として明示的に公開したもののみアクセス可能 |
+| Startup latency | 0.004ms (~1/50,000 of Docker's 195ms) |
+| Binary size | ~4.5MB |
+| Memory overhead | ~5MB (when embedding CPython) |
+| Security | Deny-by-default; only explicitly exposed external functions are accessible |
 
-Montyは「**エージェントのために作られたエージェントのRuntime**」という設計思想。標準ライブラリもサードパーティパッケージも使わず、ホストから明示的にgrantされた関数のみを実行できる。これはcapabilities-based securityの原則に従っている。
+Monty embodies the design philosophy of "an **agent Runtime built for agents**." It runs only functions explicitly granted by the host, without using any standard library or third-party packages. This follows capabilities-based security principles.
 
-**実行連続体**（Samuel Colvinの整理）:
+**Execution Continuum** (Samuel Colvin's taxonomy):
 
-| アプローチ | 制御度 | 表現力 | 遅延 | コスト |
+| Approach | Control | Expressiveness | Latency | Cost |
 |---|---|---|---|---|
-| **Tool Calling** | 高 | 低 | シーケンシャル往復 | トークンごと |
-| **Monty / CodeMode** | 高-中 | 中 | 0.004ms起動 | プロセス内 |
-| **Sandbox Services** | 中 | 高 | ~1000ms+起動 | 実行ごと |
-| **Coding Agents** | 低 | 非常に高い | 分単位 | 高 |
-| **Full Computer Use** | なし | 最大 | 分単位 | 非常に高 |
+| **Tool Calling** | High | Low | Sequential round-trips | Per-token |
+| **Monty / CodeMode** | High-Medium | Medium | 0.004ms startup | In-process |
+| **Sandbox Services** | Medium | High | ~1000ms+ startup | Per-execution |
+| **Coding Agents** | Low | Very High | Minutes | High |
+| **Full Computer Use** | None | Maximum | Minutes | Very High |
 
-Montyは「シーケンシャルなTool Callingの低表現力」と「Sandbox/Full Computer Useの高コスト・高遅延」の間に位置する。エージェントがループ・条件分岐・並列呼び出しを1回のコード生成で表現でき、かつインフラコストゼロ。
+Monty sits between the "low expressiveness of sequential Tool Calling" and the "high cost/latency of Sandbox/Full Computer Use." An agent can express loops, conditionals, and parallel calls in a single code generation, with zero infrastructure cost.
 
 #### Runtime → Tool-Use Relationship
 

@@ -2,7 +2,7 @@
 title: "Context Routing — クエリ別コンテキスト振り分け"
 type: concept
 created: 2026-04-22
-updated: 2026-04-22
+updated: 2026-05-27
 tags: [concept, optimization, context-management]
 status: active
 sources:
@@ -13,49 +13,50 @@ aliases:
   - query-routing
   - context-dispatch
 ---
+---
 
 # Context Routing
 
-> クエリを分類し、コンテキストウィンドウに取り込む前に、適切なコンテキストソースへ振り分けるパターン。
+> A pattern that classifies queries and routes them to the appropriate context source before loading into the context window.
 
-**概要:** 多ドメインエージェントが不要な知識ベース、ツールセット、指示を毎回読み込むのを防ぎ、トークン効率と精度を向上させる。
+**Summary:** Prevents multi-domain agents from loading irrelevant knowledge bases, tool sets, and instructions every time, improving token efficiency and accuracy.
 
-## 問題
+## Problem
 
-多ドメインエージェントは、すべてのクエリに対してすべてのドメインの知識、ツールセット、指示を読み込む。これはコンテキストの浪費であり、注意力の分散を招く。
+Multi-domain agents load knowledge, tool sets, and instructions from all domains for every query. This wastes context and causes attention fragmentation.
 
-## 解決策
+## Solution
 
-クエリを分類し、適切なコンテキストソースに直接送信。これにより、必要な情報だけが届き、コンテキストウィンドウが最小限に保たれる。
+Classify queries and send directly to the appropriate context source. This ensures only necessary information is loaded, keeping the context window minimal.
 
-## 4つの実装アプローチ
+## Four Implementation Approaches
 
-| アプローチ | 速度 | 知能度 | デバッグ性 | 使用例 |
+| Approach | Speed | Intelligence | Debuggability | Use Case |
 |-----------|------|--------|-----------|--------|
-| **ルールベース** | 非常に高速 | 低い | 高い | 固定カテゴリのクエリ |
-| **LLMパージ** | 遅い | 高い | 低い | 境界ケースを含む複雑な分類 |
-| **階層型** | 中程度 | 中程度 | 中程度 | リードエージェント→サブエージェント |
-| **ハイブリッド** | 中程度 | 高い | 中程度 | 本番環境の標準 |
+| **Rule-Based** | Very Fast | Low | High | Fixed-category queries |
+| **LLM Purge** | Slow | High | Low | Complex classification with edge cases |
+| **Hierarchical** | Moderate | Moderate | Moderate | Lead agent → Sub-agent |
+| **Hybrid** | Moderate | High | Moderate | Production default |
 
-## トークン節約効果
+## Token Savings
 
-- 分類前のコンテキスト使用量: 通常 30-50% の情報が関係ない
-- 分類後: 必要最小限のドコンテキストのみ読み込み
-- エージェントの応答品質: 関係ない情報のノイズが除去され向上
+- Context usage before routing: Typically 30-50% of information is irrelevant
+- After routing: Only the minimum necessary context is loaded
+- Agent response quality: Improves as noise from irrelevant information is removed
 
-## 課題
+## Challenges
 
-1. **LLMルーティングの誤分类:** 誤分類すると間違ったコンテキストを読み込む
-2. **追加レイヤーのオーバーヘッド:** ルーティング自体がレイテンシとトークンを消費
-3. **動的ドメイン対応:** 新しいドメインが増えるとルーティングルールも更新が必要
+1. **LLM routing misclassification:** Misclassification loads the wrong context
+2. **Additional layer overhead:** Routing itself consumes latency and tokens
+3. **Dynamic domain handling:** New domains require routing rule updates
 
-## Harness Engineeringとの関係
+## Relationship with Harness Engineering
 
-[[concepts/context-engineering]] の横断技術として、Context Routingは「エージェントに何を見せるか」の設計判断を自動化するパターン。
+As a cross-cutting technique of [[concepts/context-engineering]], Context Routing is a pattern that automates the design decision of "what to show the agent."
 
 ## Related Concepts
 
-- [[concepts/context-engineering]] — コンテキスト最適化の統合フレームワーク
-- [[concepts/context-compression]] — コンテキスト圧縮技術
-- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用
-- [[concepts/agentic-rag]] — エージェント制御の検索ループ
+- [[concepts/context-engineering]] — Integrated framework for context optimization
+- [[concepts/context-compression]] — Context compression techniques
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced tool use
+- [[concepts/agentic-rag]] — Agent-controlled search loops

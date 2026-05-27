@@ -11,57 +11,59 @@ aliases: ["ECS scaling", "Fargate auto-scaling", "Container scaling"]
 sources: ["https://rehanvdm.com/blog/scaling-ecs-fargate-like-lambda/"]
 status: "draft"
 ---
+---
+---
 
 # ECS Fargate Scaling
 
-AWS ECS FargateをLambdaのようにスケーリングさせる実験的検証。SQSワークロードでのバーストハンドリング性能を最適化する。
+Experimental validation of scaling AWS ECS Fargate like Lambda. Optimizes burst handling performance for SQS workloads.
 
-## 背景
+## Background
 
-Lambdaはスケーリングにおいて最適だが、すべてのワークロードをLambdaで実行できるわけではない。ECS FargateでLambdaに近いスケーリング性能を達成する方法を探る。
+Lambda is optimal for scaling, but not all workloads can run on Lambda. This explores how to achieve Lambda-like scaling performance with ECS Fargate.
 
-## 実験シナリオ
+## Experiment Scenario
 
-- **トラフィックパターン:** 月間~1億リクエスト（平均40 RPS）、バースト時に10分で30万リクエスト（~500 RPS）
-- **ワークロード:** 各メッセージ200msスリープ（処理模擬）
-- **成功基準:** 最古メッセージ年齢≈0、可視メッセージ≈0、総処理時間≈エンキュー時間
+- **Traffic Pattern:** ~100M requests/month (avg 40 RPS), burst of 300K requests in 10 minutes (~500 RPS)
+- **Workload:** 200ms sleep per message (processing simulation)
+- **Success Criteria:** Oldest message age ≈ 0, visible messages ≈ 0, total processing time ≈ enqueue time
 
-## 実験結果比較
+## Experiment Results Comparison
 
-| メトリクス | Lambda | ECS Custom Metric |
+| Metric | Lambda | ECS Custom Metric |
 |---|---|---|
-| 初回スケール時間 | 数秒 | 2分 |
-| 最古メッセージ年齢 | 0秒 | 27秒 |
-| 最大可視メッセージ数 | 1 | 13,800 |
-| 総バースト処理時間 | 7分 | 7分 |
+| Initial scaling time | Seconds | 2 min |
+| Oldest message age | 0s | 27s |
+| Max visible messages | 1 | 13,800 |
+| Total burst processing time | 7 min | 7 min |
 
-## 主要ボトルネック
+## Key Bottlenecks
 
-### 内在的遅延
-- CloudWatch公開遅延（~1分）+ SQS結果整合性（~1分）= スケーリングトリガーまで~2分
-- タスクプロビジョニング時間: イメージPull、コンテナ起動、LB/キュー登録に時間必要
+### Inherent Latency
+- CloudWatch publish latency (~1 min) + SQS eventual consistency (~1 min) = ~2 min to scaling trigger
+- Task provisioning time: Image pull, container startup, LB/queue registration all take time
 
-### カスタムメトリクスアプローチ
-専用Lambdaで15秒ごとに詳細メトリクスを公開し、CloudWatch/SQSの遅延を回避。メンテナンス負担は増えるが、スケーリング遅延を1分短縮。
+### Custom Metrics Approach
+Dedicated Lambda publishes detailed metrics every 15s to avoid CloudWatch/SQS delays. Increases maintenance burden but reduces scaling delay by 1 minute.
 
-## AI Agent設計への示唆
+## Implications for AI Agent Design
 
-### コンピューティングプール
-- ECS FargateはAI Agentの長時間実行コンテナプールとして有用
-- Lambdaとの2-3分の初期スケールラグは、Agentのウォームスタート戦略に影響
-- カスタムメトリクスによる積極的スケーリングで性能向上可能
+### Computing Pool
+- ECS Fargate is useful as a long-running container pool for AI Agents
+- The 2-3 min initial scaling lag vs Lambda affects Agent warm-start strategies
+- Proactive scaling via custom metrics can improve performance
 
-### コスト最適化
-- 過剰プロビジョニングはECSの経済的優位性を損なう
-- 本番環境では少ないベースラインタスクをプロビジョニングし、若干長いバースト処理時間を許容
-- Lambdaと比較したコストメリットを維持しつつ、必要なスケーリング性能を確保
+### Cost Optimization
+- Over-provisioning undermines ECS's cost advantage
+- In production, provision fewer baseline tasks and tolerate slightly longer burst processing times
+- Maintain the cost advantage over Lambda while ensuring required scaling performance
 
-### ハイブリッドアーキテクチャ
-- 短時間・高頻度タスク → Lambda
-- 長時間・状態保持タスク → ECS Fargate
-- カスタムメトリクスによる統合監視
+### Hybrid Architecture
+- Short, high-frequency tasks → Lambda
+- Long-running, stateful tasks → ECS Fargate
+- Unified monitoring via custom metrics
 
-## 出典
+## Sources
 - [Scaling ECS Fargate like Lambda](https://rehanvdm.com/blog/scaling-ecs-fargate-like-lambda/)
 
 ## See Also

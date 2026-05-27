@@ -2,6 +2,28 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] translate | JP→EN batch — 8 files (5,113 chars)
+
+### Files Translated
+| File | JP chars removed | Status |
+|------|-----------------|--------|
+| [[entities/garry-tan]] | 647→0 | −647 |
+| [[concepts/self-evolving-agents]] | 646→0 | −646 |
+| [[concepts/agent-architecture-decomposition]] | 644→0 | −644 |
+| [[concepts/ecs-fargate-scaling]] | 643→0 | −643 |
+| [[concepts/context-routing]] | 639→0 | −639 |
+| [[concepts/local-llm/inference-hardware]] | 632→0 | −632 |
+| [[entities/openai-deployment-company]] | 632→0 | −632 |
+| [[concepts/agentic-pbt]] | 630→0 | −630 |
+
+### Stats
+- Total JP chars removed: 5,113
+- Remaining JP content files: 161
+- Remaining JP chars: 36,672
+
+
+---
+
 | 2026-05-26 23:30 | Created | [[concepts/software-after-software]] — Amp Labs manifesto (May 2026): 12 theses on post-AI software industry transformation. Code no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams. Source: X Article bookmark. Raw: [[raw/articles/2026-05-26_software-after-software.md]]. |
 | 2026-05-26 23:30 | Updated | [[entities/amp]] — Added "Software After Software" to Key Writings section. |
 | 2026-05-26 23:30 | Updated | [[entities/xiaomi-mimo]] — Added Pricing section: MiMo-V2.5 API pricing permanently reduced up to 99% (May 26, 2026). |
