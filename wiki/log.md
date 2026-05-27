@@ -2,7 +2,16 @@
 
 > Chronological record of all wiki actions. Append-only.
 
-## [2026-05-27] Trending topics wiki ingestion
+## [2026-05-27] raw-backlog-ingest | Ed Zitron "I Will Never Respect A Website" + "AI Is Really Weird" → enriched entities/ed-zitron.md
+
+- **Raw articles**: `raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md`, `raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md`
+- **Updated entity**: `entities/ed-zitron.md` — Added three major sections:
+  1. **"Website" Framing and AI Quality Degradation**: Zitron's thesis that LLMs are "websites that sometimes work"; Stella Laurenzo's empirical Claude Code analysis (6,852 sessions, 17,871 thinking blocks, 234,760 tool calls showing reasoning depth decline); Anthropic's 98.95% API uptime; capacity planning paradox from Amodei's own words
+  2. **AI Agent Critique**: Systematic deconstruction of "agentic AI" terminology — "it's always a fucking chatbot"; reduction table mapping industry terms to Zitron's translations; psychological reward trap analysis; Karpathy's LLM argument example
+  3. **Coding LLM Vulnerability Crisis**: NYT investigation data — financial services company went from 25K to 250K lines/month creating 1M line review backlog; Cursor deleting production database with backups; engineers downloading entire codebases to laptops
+- **Updated duplicate notice**: `entities/ed-zitron-s-where-s-your-ed-at.md` — Added deprecation notice pointing to canonical ed-zitron.md
+- **Index**: Updated cross-references in ed-zitron.md to include ai-coding-agent-criticism, agentic-engineering, ai-bubble-economics
+- **Skipped**: 3 non-AI articles (Paul Graham, Russ Cox, Simon Tatham) → archived
 
 ## [2026-05-27] ingest | Doug Turnbull "Cheat at Search: Steering Lost Agents" slides → new concept agent-steering
 

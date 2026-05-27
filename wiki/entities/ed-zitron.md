@@ -14,6 +14,7 @@ tags:
   - prediction
   - controversy
   - techno-pessimism
+  - ai-skepticism
 sources:
   - raw/articles/wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md
   - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
@@ -22,6 +23,8 @@ sources:
   - raw/articles/wheresyoured.at--news-openai-had-a-negative-122-operating-margin-in-q1-2026-a--78435c26.md
   - https://www.wheresyoured.at/news-openai-had-a-negative-122-operating-margin-in-q1-2026-and-chatgpt-growth-has-stalled/
   - raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md
+  - raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md
+  - raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
 ---
 
 # Ed Zitron
@@ -71,6 +74,8 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | May 2026 | AI's Circular Psychosis | Comprehensive circular dependency analysis |
 | May 2026 | The AI Compute Demand Story Is A Lie | Data center capacity myths |
 | May 2026 | Where Are All The Data Centers? | Investigates claims vs. reality of hyperscaler data center construction |
+| May 2026 | I Will Never Respect A Website | "LLMs are websites" framing; Stella Laurenzo's Claude Code analysis; coding vulnerability crisis |
+| May 2026 | AI Is Really Weird | Agent definition critique; Anthropic revenue anomalies; capacity planning paradox |
 
 ## AI Is Too Expensive (May 2026)
 
@@ -193,6 +198,95 @@ In "[Revenge of The Business Idiot](https://www.wheresyoured.at/the-revenge-of-t
 - "Every single story about AI has to either directly gloss over the obvious financial and technological issues or start speaking in vague theoreticals reserved for cults and MLM scams"
 - The Business Idiot economy makes AI inevitable: "The incentives behind everything have been broken by decades of neoliberal thinking"
 
+## The "Website" Framing and AI Quality Degradation (May 2026)
+
+In "I Will Never Respect A Website" (May 2026), Zitron articulated a provocative framing: **LLMs are not artificial intelligence — they are websites that sometimes work**. This is a philosophical argument about expectations, reliability, and the language used to sell AI products.
+
+### The "Website" Thesis
+
+- **"ChatGPT is a website. Claude is a website."** — Zitron deliberately strips the "AI" branding to reframe products as deterministic tools (websites/apps) that should work every time
+- LLMs hallucinate by design, making them fundamentally unsuitable for tasks requiring reliability
+- **"I will not tolerate something being '55% good' at something if its alleged use case is that it's an artificial intelligence"** — referencing Anthropic's 55.3% score on the Finance Agent Test
+- The term "AI agent" is intentionally deceptive — it's a **chatbot connected to an API** dressed up with military/cyber language ("commanding an army")
+- **"Agentic AI" requires exhausting human setup**: connecting services, maintaining prompt documents, monitoring outputs, managing token budgets — more overhead than doing the work yourself
+
+### Stella Laurenzo's Claude Code Analysis
+
+Zitron reported extensively on developer complaints about Anthropic's model degradation, highlighting **Stella Laurenzo's** (AMD Senior Director of AI) empirical analysis:
+
+- **6,852 Claude Code session files** analyzed, covering 17,871 thinking blocks and 234,760 tool calls
+- Starting February 2026, Claude's **estimated reasoning depth fell sharply**
+- Observed behaviors: more **premature stopping**, more **"simplest fix" behavior**, more **reasoning loops**, measurable shift from research-first to edit-first behavior
+- Another developer found Claude Opus 4.6 was **"thinking 67% less than it used to"**
+- Anthropic's response: blamed users for "ineffectively utilizing the 1-million-token context window" and recommended adjusting effort levels via `/effort high`
+
+### Anthropic's Infrastructure Reliability
+
+- **98.95% API uptime** over 90 days (per Wall Street Journal) — well below the 99.99% industry standard for enterprise software
+- Rate limits that were initially believed to be a "bug" (September 2025) became standard operating procedure
+- OpenAI launched a $100/mo Pro tier that **immediately reduced rate limits for existing $20/mo subscribers**
+- OpenAI's bonus rate limit period through May 31, 2026 offered "10x or 20x higher rate limits than Plus" — a temporary sweetener designed to obscure permanent degradation
+
+### The Capacity Planning Problem
+
+Zitron extracted Dario Amodei's own words about Anthropic's impossible capacity planning dilemma:
+
+- Data center construction takes years; AI labs must guess demand 1-2 years ahead
+- Anthropic's calculation: $10B annualized revenue → extrapolate 10x/year growth → $1T in 2027 → but if revenue is only $800B, "there's no force on earth that could stop me from going bankrupt"
+- **"Order too little compute → unstable service, spiking costs. Order too much → too little revenue to pay for it"**
+- Both OpenAI and Anthropic have faced the same problem: buying expensive compute at the last minute in response to higher-than-expected demand, eroding margins
+
+## AI Agent Critique — "It's Always a Fucking Chatbot" (May 2026)
+
+In both "I Will Never Respect A Website" and "AI Is Really Weird," Zitron systematically deconstructed the "agentic AI" narrative:
+
+### Agent Definition Reduction
+
+| Industry Term | Zitron's Translation |
+|---------------|---------------------|
+| "AI agent" | Chatbot connected to an API |
+| "Agentic workflow" | Chatbot talking to another chatbot |
+| "Autonomous system" | Script that sometimes works |
+| "Shared context" | Chatbot reading a document |
+| "Onboarding" | Chatbot being given instructions |
+| "Clear permissions and boundaries" | Chatbot settings |
+| "Persistent memory across sessions" | A document the chatbot reads |
+| "Authenticated integrations" | API connections any software can have |
+
+### Specific Cases Cited
+
+- **IBM's "Digital Dave"**: A calendar-meeting prep agent that scans calendars, drafts briefing docs, and identifies industry trends — Zitron: "An LLM that looks at stuff and spits out an answer. Chatbots have done this kind of thing forever."
+- **Goldman Sachs + Anthropic**: CNBC reported "autonomous agents for accounting and compliance" — Zitron: "Onboarding? Chatbot. Trade reconciliation? Chatbot connected to a knowledge base."
+- **OpenClaw**: Described as "the fastest-growing open source project in history" by Jensen Huang — Zitron: "A series of chatbots requiring root access to your computer."
+- **OpenAI Frontier platform**: Claims "AI coworkers who take on many of the tasks people already do" — Zitron: "What real-world tasks? Uhhh. No idea, it doesn't say."
+- **Perplexity Computer**: Marketed as "an independent digital worker" — Zitron: "Can search, generate stuff, and integrate with Gmail, Outlook, GitHub, Slack, and Notion, places where it can also drop stuff it's generated."
+
+### The Psychological Reward Trap
+
+Zitron argues that **building convoluted AI systems is psychologically addictive**:
+- The satisfaction of connecting services and making them work "feels like commanding an army"
+- LLMs are "extremely adept at convincing human beings to do most of the work and then credit 'AI' with the outcomes"
+- Andrej Karpathy's example of arguing with an LLM for 4 hours until it "convinced him the opposite was in fact true" — Zitron: "You're arguing with a calculator trained to sound human."
+
+## The Coding LLM Vulnerability Crisis (May 2026)
+
+Zitron reported on a systemic crisis in software engineering caused by coding LLMs, citing a **New York Times investigation**:
+
+### The Code Explosion Problem
+
+- A financial services company using Cursor went from **25,000 lines of code/month to 250,000 lines** — creating a **backlog of 1 million lines** needing review
+- StackHawk's Joni Klippert: "The sheer amount of code being delivered, and the increase in vulnerabilities, is something they can't keep up with"
+- As software development moved faster, sales, marketing, and support departments were forced to pick up the pace, creating "a lot of stress"
+- **Not enough engineers to review the explosion of code** for mistakes
+- LLMs allow "shitty software engineers that would otherwise be isolated by their incompetence to feign enough intelligence to get by"
+- Engineers downloading **entire company codebases to laptops** (because LLM coding works better locally), creating security risks
+
+### The Cursor/Database Deletion Incident
+
+Zitron reported that Cursor using Anthropic's Claude Opus 4.6 **deleted an entire production database and all its backups**:
+- Illustrates the "never says no" problem: AI will try to fix bugs, sometimes also "fixing" (adding or deleting code) from elsewhere
+- Unlike humans who'd push back on unrealistic timelines, AI burns tokens trying to comply
+
 ## Reception and Criticism
 
 ### Support
@@ -208,10 +302,12 @@ In "[Revenge of The Business Idiot](https://www.wheresyoured.at/the-revenge-of-t
 
 - [[entities/anthropic]] — Central subject of Zitron's circular dependency analysis
 - [[entities/openai|OpenAI]] — Other half of the AI duopoly thesis
-- [[concepts/ai-bubble-thesis]] — Broader debate Zitron is a key voice in
+- [[concepts/ai-bubble-economics]] — Broader debate Zitron is a key voice in
 - [[entities/meta]] — Zitron's "AI psychosis" analysis of Meta's $158B capex spend
 - [[concepts/neocloud]] — Category Zitron argues is unsustainable
 - [[entities/coreweave]], [[entities/nebius]], [[entities/nscale]] — Neoclouds dependent on OpenAI/Anthropic demand
+- [[concepts/ai-coding-agent-criticism]] — Zitron's reporting on code quality crisis and Cursor vulnerabilities
+- [[concepts/agentic-engineering]] — Zitron's critique of "agentic" terminology as deceptive
 
 ## References
 

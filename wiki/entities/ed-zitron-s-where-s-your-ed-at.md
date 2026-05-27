@@ -12,8 +12,26 @@ aliases:
 - wheresyoured.at
 - ed-zitron
 - where's-your-ed-at
-sources: []
+sources:
+  - raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md
+  - raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
+  - raw/articles/wheresyoured.at--the-subprime-ai-crisis-is-here--278f66de.md
+  - raw/articles/wheresyoured.at--the-ai-industry-is-lying-to-you--00c54f74.md
+  - raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae4c.md
+  - raw/articles/wheresyoured.at--ais-economics-dont-make-sense--cab39fd8.md
+  - raw/articles/wheresyoured.at--ais-economics-dont-make-sense-ad-free--b7415062.md
+  - raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
+  - raw/articles/wheresyoured.at--premium-how-much-of-the-ai-bubble-is-real--77b4d8a4.md
+  - raw/articles/wheresyoured.at--premium-ai-isnt-too-big-to-fail--e4456726.md
+  - raw/articles/wheresyoured.at--news-microsoft-to-shift-github-copilot-users-to-token-based---d4b13c77.md
+  - raw/articles/wheresyoured.at--news-anthropic-removes-pro-cc--0f3f1ae4.md
+  - raw/articles/wheresyoured.at--hatersguide-privatecredit--06416368.md
+  - raw/articles/wheresyoured.at--hatersguide-adobe--37ba8c0e.md
+  - raw/articles/wheresyoured.at--exclusive-microsoft-moving-all-github-copilot-subscribers-to--7951c0ff.md
+  - raw/articles/fortune.com--2026-03-26-anthropic-says-testing-mythos-powerful-new-ai-mod--e63c44b8.md
 ---
+
+> **Note**: This is a duplicate entity page. The canonical Ed Zitron page is at [[entities/ed-zitron|ed-zitron.md]]. Content from this page has been merged into the canonical version.
 
 # Ed Zitron
 
