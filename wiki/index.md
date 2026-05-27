@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2105 | Indexed entries: 1381 | Not in index: 675 |## Entities (677 pages)
+> Last updated: 2026-05-27 | Total pages: 2103 | Indexed entries: 1380 | Not in index: 674 |## Entities (677 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -826,6 +826,7 @@
 - [[concepts/concept-context-graph-decision-trace-system-of-record-foundation-capital]] — Context graph, decision trace, system of record — Foundation Capital
 - [[concepts/content-engine]] — Content Engine
 - [[concepts/context-compression]] — Context Compression Techniques
+- [[concepts/custom-ai-silicon]] — Custom AI Silicon: ASIC chips outgrowing GPUs 3:1 (44.6% vs 16.1%). Cerebras WSE-3 Kimi K2.6 981 tok/s, NVIDIA Vera Rubin Q3 2026, AMD MI355X MLPerf.
 - [[concepts/cyber-frontier-models]] — Cyber Frontier Models: LLMs specifically excelling at cybersecurity tasks (exploit chain construction, PoC generation). Coined by Cloudflare CSO Grant Bourzikas (May 2026). Characterized by step-change capabilities over general-purpose models.
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents — The overhead of reasoning, planning, and verification when using AI coding agents.
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
@@ -1133,6 +1134,7 @@
 - [[concepts/subagents]] — Subagents — Parallel AI Agent Delegation — Architecture pattern where a primary agent delegates sub-tasks to specialized sub-agents.
 - [[concepts/verifiers-rl]] — Verifiers: TRL-based multi-turn RL framework. GRPO on HuggingFace Trainer, supports environments and multi-turn tool use. Popular for research.
 - [[concepts/synthetic-data]] — Synthetic Data — Artificially generated training data for ML models, including distillation, self-play, and data augmentation.
+- [[concepts/synthid]] — SynthID: Google DeepMind's digital watermarking for AI-generated content. Cross-industry standard adopted by OpenAI, Kakao, ElevenLabs. 100B+ watermarked. Chrome/Search/Gemini integration.
 - [[concepts/vector-search]] — Approximate Nearest Neighbor (ANN) search in high-dimensional embedding space. HNSW hierarchical graphs, k-means clustering, ScANN/DiskANN, filtered similarity (ACORN1/turbopuffer), hybrid BM25+vector strategies. Doug Turnbull's Maven course.
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 - [[concepts/countbenchqa]] — CountBenchQA — Ultra-simple object counting benchmark. Manually verified from LAION-400M. 2-10 objects. Highest data quality.
