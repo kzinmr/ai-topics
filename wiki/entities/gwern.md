@@ -2,7 +2,7 @@
 title: Gwern Branwen
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-05-27
 tags:
   - person
   - blogger
@@ -81,28 +81,28 @@ Gwern's essay on "Ordinary Incompetence" argues that **incompetence is the basel
 
 Gwern defines the security/hacker mindset as **extreme reductionism**: ignoring surface abstractions to treat a system as a collection of manipulable parts. Unlike mathematicians who abstract complexity away, hackers "unsee" the simple model down to the more-complex but more-true underlying reality. This applies beyond computing—to financial exploits, social engineering, speedrunning, and any domain where conventional assumptions mask exploitable structure.
 
-### Turing完全性の自然発生と Ambient Agency
+### Emergent Turing-Completeness and Ambient Agency
 
-Gwern の最も独創的な洞察の一つは、[[concepts/turing-completeness-emergence|Turing完全性の自然発生]]とAIエージェンシーを同型の現象として捉える視点である。
+One of Gwern's most original insights is viewing [[concepts/turing-completeness-emergence|emergent Turing-completeness]] and AI agency as isomorphic phenomena.
 
-2012年のエッセイ「[Surprisingly Turing-Complete](https://gwern.net/turing-complete)」で、彼は「十分な複雑性を持つあらゆるシステムは、積極的に阻止されない限りTuring完全性を宿す」という逆説をカタログ化した。CSS、Minecraft、Magic: The Gathering、C++テンプレート——いずれも「計算機」として設計されていないのにTuring完全である。
+In his 2012 essay "[Surprisingly Turing-Complete](https://gwern.net/turing-complete)", he catalogued the paradox that "any system with sufficient complexity will harbor Turing-completeness unless actively prevented." CSS, Minecraft, Magic: The Gathering, C++ templates — none designed as "computers," yet all are Turing-complete.
 
-> 「計算とは、プログラミング言語や注意深くセットアップされたコンピュータの中にだけ存在する秘教的なものではない。合理的な複雑さを持つあらゆるシステムにおいて、Turing完全性は積極的に阻止されない限り、ほぼ不可避的に出現する」
+> "Computation is not an esoteric thing that only exists inside programming languages and carefully set-up computers. In any system of reasonable complexity, Turing-completeness emerges almost inevitably unless actively prevented."
 >
 > — *Surprisingly Turing-Complete*
 
-8年後の「The Scaling Hypothesis」(2020) の付録 Ambient Agency で、彼は同じ論理をエージェンシーに適用した：
+Eight years later, in the Ambient Agency appendix of "The Scaling Hypothesis" (2020), he applied the same logic to agency:
 
-> 「エージェンシーはTuring完全性のようなものかもしれない：選択や最適化のない設定においてさえ、それはあまりに有用で、あまりに収斂的な能力であり、その不在を保証することはできない」
+> "Agency may be like Turing-completeness: even in settings without selection or optimization, it is too useful, too convergent a capability, and its absence cannot be guaranteed."
 
-この [[concepts/ambient-agency|Ambient Agency（環境的エージェンシー）]] の洞察の核心：
+The core insight of [[concepts/ambient-agency|Ambient Agency]]:
 
-- **収斂性**：Turing完全性が複雑なソフトウェアで自然発生するように、エージェンシーも強力なAIで自然発生する
-- **発見不可能性**：TCが表面に見えなくても存在しうるように、エージェンシーも行動に現れていなくても内部的に存在しうる（"Sampling can show the presence of knowledge, but not the absence."）
-- **もぐら叩き**：1つの経路を塞いでも別の経路から出現する。データフィルタリングでは防げない
-- **Tool AI 幻想**：「ツールAIはエージェントAIにならない」という前提は根本的に誤り
+- **Convergence**: Just as Turing-completeness naturally arises in complex software, agency naturally arises in powerful AI
+- **Undiscoverability**: Just as TC can exist even when not visible on the surface, agency can exist internally even if not manifested in behavior ("Sampling can show the presence of knowledge, but not the absence.")
+- **Whack-a-mole**: Block one path and it emerges through another. Cannot be prevented by data filtering
+- **Tool AI Illusion**: The premise that "tool AIs don't become agent AIs" is fundamentally wrong
 
-関連文献：[[raw/articles/2012-12-09_gwern-surprisingly-turing-complete|Surprisingly Turing-Complete]]、[[raw/articles/2020-05-28_gwern-ambient-agency|Ambient Agency セクション]]
+Related materials: [[raw/articles/2012-12-09_gwern-surprisingly-turing-complete|Surprisingly Turing-Complete]], [[raw/articles/2020-05-28_gwern-ambient-agency|Ambient Agency section]]
 
 ### Self-Experimentation & Cognitive Enhancement
 
@@ -164,8 +164,8 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 ## Related
 
 - [[concepts/scaling-hypothesis]] — Gwern's formalization of the theory that scale alone drives AI capability emergence
-- [[concepts/turing-completeness-emergence]] — Turing完全性が複雑性から不可避的に出現するという洞察
-- [[concepts/ambient-agency]] — エージェンシーもTCと同様に自然発生するという拡張
+- [[concepts/turing-completeness-emergence]] — The insight that Turing-completeness inevitably emerges from complexity
+- [[concepts/ambient-agency]] — The extension that agency, like TC, emerges naturally
 - [[entities/dwarkesh-patel]] — Interviewed Gwern on his AI predictions and research methodology
 - [[concepts/ordinary-incompetence]] — Gwern's analysis of why most people fail to improve despite experience
 -  — The irreducible noise floor in human survey responses

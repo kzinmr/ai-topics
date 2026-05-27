@@ -2,7 +2,7 @@
 title: Cory Doctorow
 type: entity
 created: 2026-04-09
-updated: 2026-04-16
+updated: 2026-05-27
 tags:
   - person
   - blogger
@@ -92,36 +92,36 @@ Doctorow views current AI deployments not as technological progress but as **ens
 - The AI bubble is fueled by a fantasy of bypassing workers, ignoring that technical breakthroughs don't guarantee functional products
 
 
-### AI Pascal's Wager & ドゥーマー議論
+### AI Pascal's Wager & Doomer Debate
 
-2026年4月、DoctorowはAIドゥーマー（AI存在論的リスク論者）に対する批判的立場を明確化した。
+In April 2026, Doctorow clarified his critical stance toward AI doomers (advocates of AI existential risk theory).
 
-#### Pascal's WagerとしてのAI安全性支出
-- **$1.4T**が既に「AI超知能」追求に費やされた
-- Sam Altmanはさらに**$2-3T**を要求（米国連邦予算の約6ヶ月分）
-- Elon Muskはダイソン球構築（太陽系解体）を提案
-- **「どうやって敗北を知るのか？」** — AI神が出現しない場合、支出に終わりがなく自己永続化する
+#### AI Safety Spending as Pascal's Wager
+- **$1.4T** has already been spent pursuing "AI superintelligence"
+- Sam Altman is requesting another **$2-3T** (about 6 months of the US federal budget)
+- Elon Musk proposed building a Dyson sphere (dismantling the solar system)
+- **"How do you know when you've lost?"** — If the AI god doesn't appear, spending has no end and becomes self-perpetuating
 
-#### Lawzeroとの部分的共通点
-Yoshua Bengio（チューリング賞受賞者）が設立した**Lawzero**イニシアチブ：
-- 透明で監査可能な「デジタル公共財」としてのAI開発
-- Doctorowは目標は尊重するが脅威ベクトルに同意しない
-- 将来のAIリスクではなく、**現在の企業独占**が実存的脅威
+#### Partial Common Ground with Lawzero
+The **Lawzero** initiative, founded by Yoshua Bengio (Turing Award winner):
+- AI development as transparent, auditable "digital public goods"
+- Doctorow respects the goals but disagrees on the threat vector
+- It is not future AI risk but **current corporate monopolies** that pose an existential threat
 
-#### 真の脅威：企業という「人工生命体」
-> *「私を心配させる人工生命体は仮説的なものではない — すでに我々の中に存在する。それらは有限責任株式会社と呼ばれる」*
+#### The True Threat: Corporations as "Artificial Lifeforms"
+> *"The artificial lifeforms that worry me are not hypothetical — they already exist among us. They are called limited liability corporations."*
 
-- 7社がS&P 500の時価総額の**35%**を支配
-- AIバブル崩壊→財政緊縮→政治的ファシズムの連鎖リスク
-- 地理的キルスイッチ：米国プラットフォーム（Office365, iOS, Android）の停止で他国を機能停止可能
-- **「AIは文明の壁に塗り込むアスベスト。子孫が何世代もかけて除去することになる」**
+- 7 companies control **35%** of S&P 500 market capitalization
+- Risk of a cascade: AI bubble collapse → fiscal austerity → political fascism
+- Geographic kill switch: US platforms (Office365, iOS, Android) can shut down other countries by halting services
+- **"AI is the asbestos being sprayed into the walls of civilization. Our descendants will spend generations removing it."**
 
-#### ポスト・アメリカン・インターネット
-Doctorowが提案する解決策：
-1. 現在の企業テック独占を解体するオープン・監査可能・透明なプラットフォーム構築
-2. 「エンシッティフィケーション耐性」のあるファームウェアとデバイス開発
-3. 米国中心の「エンシッティネット」からの体系的移行
-4. ドゥーマーへの「サイドベット」提案：現在の脅威に対処するインフラが将来のAIリスクにも使える
+#### Post-American Internet
+Doctorow's proposed solution:
+1. Build open, auditable, transparent platforms to dismantle current corporate tech monopolies
+2. Develop "enshittification-resistant" firmware and devices
+3. Systematic migration from the US-centric "enshittinet"
+4. A "side bet" proposal for doomers: infrastructure that addresses current threats can also serve future AI risks
 
 
 ### The Memex Method & Open Licensing
@@ -154,9 +154,9 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [[concepts/right-to-repair]] — Anti-circumvention law's impact on device ownership
 - [[concepts/posse-pattern]] — Publish on Own Site, Syndicate Everywhere
 -  — Public note-taking as knowledge creation- [[ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
--  — AIドゥーマー議論のパスカルの賭え framing
-- [[concepts/ai-bubble-economics]] — AI投資バブルと経済リスク
--  — 脱・米国中心インターネット構想
+ [[concepts/ai-pascals-wager|AI Pascal's Wager]] — Framing the AI doomer debate as Pascal's Wager
+- [[concepts/ai-bubble-economics]] — AI investment bubble and economic risks
+ — Post-American internet vision
 -  — Electronic Frontier Foundation, where Doctorow is a special advisor
 ## Sources
 

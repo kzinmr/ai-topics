@@ -1,7 +1,7 @@
 ---
 title: "Agent Harness"
 created: 2026-04-27
-updated: 2026-05-15
+updated: 2026-05-27
 tags:
   - harness-engineering
   - architecture
@@ -427,39 +427,39 @@ Osmani predicts the next phase: harnesses stop being static configuration files 
 
 Fareed Khan's ([estimated] breakdown of Claude Code's architecture)[https://levelup.gitconnected.com/building-claude-code-with-harness-engineering-d2e8c0da85f0] maps every concept to a named architectural component: context injection = knowledge layer, loop state = memory store + worktree isolator, hooks = permission gate, subagent firewalls = multi-agent layer, tool dispatch = MCP + bash registry.
 
-## Agent Harness と Agent Framework/SDK の本質的差異
+## Essential Differences Between Agent Harness and Agent Framework/SDK
 
-> このセクションは kzinmr による包括的分析（[[comparisons/open-harness-vs-agent-framework]]、2026-05-14）に基づく。Open Harness（OpenClaw, Hermes Agent, OpenCode, Pi）と Agent Framework/SDK（Claude Agent SDK, OpenAI Agents SDK, Google ADK, Strands Agents, LangGraph, Pydantic AI）の差異を概念レベルで整理する。
+> This section is based on kzinmr's comprehensive analysis ([[comparisons/open-harness-vs-agent-framework]], 2026-05-14). It conceptually organizes the differences between Open Harnesses (OpenClaw, Hermes Agent, OpenCode, Pi) and Agent Frameworks/SDKs (Claude Agent SDK, OpenAI Agents SDK, Google ADK, Strands Agents, LangGraph, Pydantic AI).
 
-### 2つの投資対象
+### Two Investment Targets
 
 | | Open Harness | Agent Framework / Runtime |
 |---|---|---|
-| **投資先** | 人間がAI Agentを**使う**操作環境・作業面 | AI Agentを**システムに組み込む**制御基盤 |
-| **柔軟性** | **広い柔軟性**: モデル切替、CLI/チャット選択、MCP追加、プロンプト変更 | **深い柔軟性**: 型付き状態管理、graph遷移、checkpoint、副作用制御、tenant境界 |
-| **Securityの質** | **Operator Safety** — 信頼された人間の操作安全性 | **Product/Tenant Safety** — 不特定ユーザー・複数tenantの安全性 |
+| **Investment** | The operational environment/work surface where humans **use** AI agents | The control infrastructure for **integrating** AI agents into systems |
+| **Flexibility** | **Broad flexibility**: model switching, CLI/chat choice, MCP addition, prompt modification | **Deep flexibility**: typed state management, graph transitions, checkpointing, side-effect control, tenant boundaries |
+| **Security type** | **Operator Safety** — safety for trusted human operators | **Product/Tenant Safety** — safety for untrusted users and multi-tenant environments |
 
-### Operator Workbench と Product Runtime の2軸評価
+### Two-Axis Evaluation: Operator Workbench vs Product Runtime
 
-Harness系とFramework系の評価は、単一の「Security/Control/Opsスコア」ではなく、**用途に応じた2軸**で行う必要がある:
+Harnesses and Frameworks should not be evaluated on a single "Security/Control/Ops score" but on **two axes based on use case**:
 
-1. **Operator Workbench Readiness** — 信頼された人間がAI Agentを安全に使う作業環境としての成熟度
-   - この軸では OpenClaw（gateway/control plane）、Hermes Agent（persistent ops agent）、OpenCode（coding workbench）は高評価
-2. **Untrusted Product Runtime Readiness** — 不特定ユーザー・複数tenant・顧客向けSaaS・本番業務ワークフローに耐えるruntimeとしての成熟度
-   - この軸では LangGraph（stateful durable execution）、Pydantic AI（typed application framework）、OpenAI Agents SDK が有利
+1. **Operator Workbench Readiness** — Maturity as a work environment where trusted humans safely use AI agents
+   - On this axis, OpenClaw (gateway/control plane), Hermes Agent (persistent ops agent), and OpenCode (coding workbench) score highly
+2. **Untrusted Product Runtime Readiness** — Maturity as a runtime capable of serving untrusted users, multi-tenant SaaS, and production workflows
+   - On this axis, LangGraph (stateful durable execution), Pydantic AI (typed application framework), and OpenAI Agents SDK have the advantage
 
-**結論**: Harnessを本番agent backendとして低めに見るのは妥当だが、operator workbenchとして低めに見るのは不当。
+**Conclusion**: It is fair to rate harnesses lower as production agent backends, but unfair to rate them lower as operator workbenches.
 
-### 4種類のロックイン
+### 4 Types of Lock-in
 
-| ロックイン種別 | 例 | 対策 |
+| Lock-in Type | Example | Countermeasure |
 |---|---|---|
-| **モデルロックイン** | Claude Agent SDK（Claude依存）、OpenAI Agents SDK（Responses API依存） | model routing layer分離 |
-| **SDKロックイン** | Frameworkの抽象（handoff, guardrail, graph state） | 良い抽象へのロックインは許容。state, eval dataはSDK外 |
-| **Harnessロックイン** | Open Harnessの設定資産（AGENTS.md, extension, memory, skills, gateway routing） | 中核業務ロジック・状態はharness外に保持 |
-| **クラウドロックイン** | Google ADK（GCP）、Strands（AWS/Bedrock） | agent state, tool API, audit logをクラウド固有機能に閉じ込めない |
+| **Model lock-in** | Claude Agent SDK (Claude-dependent), OpenAI Agents SDK (Responses API-dependent) | Separate model routing layer |
+| **SDK lock-in** | Framework abstractions (handoff, guardrail, graph state) | Lock-in to good abstractions is acceptable. Keep state and eval data outside SDK |
+| **Harness lock-in** | Open Harness configuration assets (AGENTS.md, extension, memory, skills, gateway routing) | Keep core business logic and state outside the harness |
+| **Cloud lock-in** | Google ADK (GCP), Strands (AWS/Bedrock) | Do not confine agent state, tool APIs, or audit logs to cloud-specific features |
 
-### 推奨分離アーキテクチャ
+### Recommended Separation Architecture
 
 ```
 Human Interface / Harness Layer  (OpenClaw / Hermes / OpenCode / Pi)
@@ -473,13 +473,13 @@ State & Governance Layer  (DB / audit logs / eval datasets / approval records)
 Execution Layer  (containers / sandbox / serverless / Kubernetes)
 ```
 
-**設計原則**: **Harnessを捨てても業務ロジックが残る**ようにする。
+**Design principle**: **Ensure business logic survives even if the harness is discarded**.
 
-### 選定指針
+### Selection Guidelines
 
-- **Open Harness優先**: AI Agentを人間の作業環境に入れたい場合（開発者生産性、CLI/チャット操作、モデル試行錯誤）
-- **Framework / Runtime優先**: AI Agentをプロダクト/業務システムに組み込みたい場合（顧客向け機能、監査、状態管理、本番SLA）
-- **ツール別最適シナリオ**: 詳細は [[comparisons/open-harness-vs-agent-framework]] の §7 を参照
+- **Prioritize Open Harness**: When you want to integrate AI agents into human work environments (developer productivity, CLI/chat operations, model experimentation)
+- **Prioritize Framework/Runtime**: When you want to integrate AI agents into products/business systems (customer-facing features, auditing, state management, production SLAs)
+- **Optimal scenarios by tool**: See §7 of [[comparisons/open-harness-vs-agent-framework]] for details
 
 ## See Also
 
