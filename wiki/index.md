@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2189 | Indexed entries: 1410 | Not in index: 779
+> Last updated: 2026-05-27 | Total pages: 2231 | Indexed entries: 1452 | Not in index: 737
 
-## Entities (699 pages)
+## Entities (703 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -13,6 +13,8 @@
 - [[entities/ahmed-awadallah]] — Ahmed Awadallah — Research manager at Microsoft Research AI Frontiers, leads the team behind [[echo-rl|ECHO]] agent RL research.
 - [[entities/ai21-labs]] — AI21 Labs — Israeli AI company. Shut down model team in May 2026 and pivoted entirely to agents, representing "Model Lab → Agent Lab" industry shift alongside DeepSeek Harness team.
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
+- [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
+- [[entities/ash-vardanyan]] — Ash Vardanyan — Open-source developer and performance engineer. Creator of USearch, SimSIMD, and other high-performance vector libraries.
 - [[entities/autoreason]] — Autoreason
 - [[entities/baidu]] — Baidu (Ernie) — Ernie 5.1: 94% pre-training cost reduction via Once-For-All elastic training. 4th Search Arena. Closed weights. May 2026.
 - [[entities/buildy]] — Buildy (buildy.so) — AI agent-built persistent personal web app platform
@@ -707,7 +709,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (678 pages)
+## Concepts (716 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -731,6 +733,7 @@
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering: Cognition and Devin Workflows — Cognitive architectures for agentic engineering: Devin's approach and alternatives
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns — Design patterns for agentic software engineering: planning, execution, verification loops
 - [[concepts/agentic-manual-testing]] — Agentic Manual Testing — Using AI agents to automate exploratory and manual testing workflows
+- [[concepts/agentic-rag]] — Agentic RAG — Integrates autonomous AI agents into the RAG pipeline for dynamic retrieval and adaptive workflows.
 - [[concepts/agent-native-architecture]] — Agent-Native Architecture — Dan Shipper/Every framework: 5 principles (Parity, Granularity, Composability, Emergent Capability, Improvement Over Time) for designing software where agents are first-class citizens. Co-authored with Claude.
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud — Infrastructure paradigm designed for AI agents: version control beyond Git, observability at 1000x, orchestration beyond K8s, safe production forks, self-replicating infrastructure. Championed by Railway (Jake Cooper).
 - [[concepts/agent-ontology]] — Agent Ontology — Semantic representation of enterprise operations for AI agents. Substrate for working/episodic/semantic/procedural memory, decision lineage, logic binding, scenarios. See [[entities/palantir]].
@@ -1365,6 +1368,42 @@
 - [[concepts/durable-execution]] — Durable Execution — State persistence and recovery patterns for long-running AI agent workflows
 - [[concepts/dynamic-software]] — Dynamic Software — Self-modifying code paradigms and agent-adaptive software architecture
 - [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling — AWS Fargate autoscaling strategies for containerized AI services
+- [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents — Anthropic's harness design for agents spanning multiple context windows.
+- [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism) — Load-balanced expert parallelism for MoE models; elastic scaling without model redistribution.
+- [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration — Using the Erlang VM and OTP patterns for multi-agent systems.
+- [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
+- [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
+- [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
+- [[concepts/evaluation-flywheel]] — Evaluation Flywheel — OpenAI pattern cycling evaluation and improvement for AI product development.
+- [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
+- [[concepts/event-driven-architecture]] — Event-Driven Architecture — Software design pattern for asynchronous, decoupled service communication.
+- [[concepts/excessive-agency]] — Excessive Agency — OWASP Top 10 for LLMs entry on AI agents taking unintended actions.
+- [[concepts/exec-plans]] — Execution Plans — Pattern where agents create a plan before executing tasks.
+- [[concepts/experience-is-a-tax]] — Experience is Now a Tax — Thesis that traditional seniority in knowledge work is becoming a liability.
+- [[concepts/experiential-memory]] — Experiential Memory — Framework for sharing and augmenting context between agent turns.
+- [[concepts/federated-tiny-training-engine]] — Federated Tiny Training Engine (FTTE) — Semi-asynchronous federated learning framework.
+- [[concepts/filesystem-memory]] — Filesystem as Agent Memory — Using standard file I/O for persistent agent state.
+- [[concepts/fineweb]] — FineWeb — High-quality pre-training dataset bridging proprietary and public data gaps.
+- [[concepts/flashattention-pytorch-educational]] — FlashAttention (FA1-FA4) PyTorch Educational Implementation.
+
+- [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents — Anthropic's harness design for agents spanning multiple context windows.
+- [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism) — Load-balanced expert parallelism for MoE models; elastic scaling without model redistribution.
+- [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration — Using the Erlang VM and OTP patterns for multi-agent systems.
+- [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
+- [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
+- [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
+- [[concepts/evaluation-flywheel]] — Evaluation Flywheel — OpenAI pattern cycling evaluation and improvement for AI product development.
+- [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
+- [[concepts/event-driven-architecture]] — Event-Driven Architecture — Software design pattern for asynchronous, decoupled service communication.
+- [[concepts/excessive-agency]] — Excessive Agency — OWASP Top 10 for LLMs entry on AI agents taking unintended actions.
+- [[concepts/exec-plans]] — Execution Plans — Pattern where agents create a plan before executing tasks.
+- [[concepts/experience-is-a-tax]] — Experience is Now a Tax — Thesis that traditional seniority in knowledge work is becoming a liability.
+- [[concepts/experiential-memory]] — Experiential Memory — Framework for sharing and augmenting context between agent turns.
+- [[concepts/federated-tiny-training-engine]] — Federated Tiny Training Engine (FTTE) — Semi-asynchronous federated learning framework.
+- [[concepts/filesystem-memory]] — Filesystem as Agent Memory — Using standard file I/O for persistent agent state.
+- [[concepts/fineweb]] — FineWeb — High-quality pre-training dataset bridging proprietary and public data gaps.
+- [[concepts/flashattention-pytorch-educational]] — FlashAttention (FA1-FA4) PyTorch Educational Implementation.
+
 
 ## Events (7 pages)
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson

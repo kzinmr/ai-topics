@@ -2,6 +2,21 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] fix | Index health: added 21 orphan pages
+
+### Pages Added
+- [[entities/arcee-ai]] — Arcee AI
+- [[entities/ash-vardanyan]] — Ash Vardanyan
+- [[concepts/agentic-rag]] — Agentic RAG
+- 17 concepts (effective-harnesses through flashattention-pytorch-educational)
+
+### Stats
+- Total L2 pages: 2,197 → 2,218
+- Indexed entries: 1,410 → 1,452
+- Not in index: 779 → 737
+
+---
+
 ## [2026-05-27] watchdog | Auto-fixed index.md header counts and removed ghost entries
 
 ### Auto-Fixed
