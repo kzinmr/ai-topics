@@ -3,7 +3,7 @@ title: Doug Turnbull - Speaking & Community
 type: entity-sub
 parent: doug-turnbull
 created: 2026-04-10
-updated: 2026-05-20
+updated: 2026-05-27
 tags:
   - person
   - writing
@@ -28,9 +28,11 @@ Turnbull is a regular speaker at search industry conferences:
 
 - **\"Why 2026 is The Year of Agentic Search\"** (May 2026, YouTube): 65-minute fireside chat with Jo Kristian Bergum (Vespa.ai) on the four pillars of agentic search — LLM Query Understanding at scale, Autoresearch (agents writing ranking code), Agentic Search Harnesses (feedback loops that make dumb retrievers smart), and LLM-as-a-Judge for principled evaluation. References Doug's Maven course starting May 18. [[raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]]
 
-- **\"LLM Query Understanding — Cheat at Search\"** (May 2026, guest lecture): Practical code-level guide to using LLMs for query understanding in e-commerce search. Covers embedding collapse (hubness), why structured QU beats pure embeddings for narrow domains, synonym extraction with Pydantic+BM25 boosting, deep multi-label category classification (10K+ labels) with dynamic Pydantic enums for cost optimization, and caching strategies. Demonstrates 12% NDCG improvement (0.541 → 0.608) on Wayfair queries with gpt-4.1-nano. Key insight: \"BM25 narrows the label space, enabling cheap LLM classification, which then boosts BM25 scores\" — a virtuous cycle. Complemented by [[concepts/query-understanding]] concept page enrichment. [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]]
+- **\\\"LLM Query Understanding — Cheat at Search\\\"** (May 2026, guest lecture): Practical code-level guide to using LLMs for query understanding in e-commerce search. Covers embedding collapse (hubness), why structured QU beats pure embeddings for narrow domains, synonym extraction with Pydantic+BM25 boosting, deep multi-label category classification (10K+ labels) with dynamic Pydantic enums for cost optimization, and caching strategies. Demonstrates 12% NDCG improvement (0.541 → 0.608) on Wayfair queries with gpt-4.1-nano. Key insight: \"BM25 narrows the label space, enabling cheap LLM classification, which then boosts BM25 scores\" — a virtuous cycle. Complemented by [[concepts/query-understanding]] concept page enrichment. [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]]
 
-- **"Will Agents Replace Search Teams? (a discussion)"** (Jan 2026, YouTube): 55-minute discussion with Daniel Tunkelang exploring the boundary between what agents can and cannot replace in search teams — covers the latency-feedback tradeoff, domain-specific LLM assumptions, economic disruption (EXA, Reddit), stakes-based error models, and the growing importance of critical thinking. [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
+- **\\\"Steering Lost Agents — Cheat at Search\\\"** (May 2026, guest lecture): Part 3 of the Cheat at Search series — 65-slide deep dive into agentic design patterns for search. Covers the two-loop architecture (agentic loop + harness control plane), carrot-and-stick steering model, seven steering patterns (Ralph loop, rule-based validation, LLM-as-Judge, reranker-in-response, few-shot priming, tool guards, subagent delegation), filesystem-like search tools (`ls_wands`/`grep_wands`/`cat_wands`), and BEAM search for systematic exhaustive exploration. Empirical results on WANDS dataset: BM25 0.5408 → FS Tools 0.5565 → +Few-Shot 0.5652 → +Delegation 0.5661. Key insight: \"The agent picks the tools, you control how the tools respond — tool responses ARE prompt engineering.\" Complemented by new [[concepts/agent-steering]] concept page and [[concepts/agentic-search]] enrichment. Colab notebook available. [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents]]
+
+- **\\\"Will Agents Replace Search Teams? (a discussion)\\\"** (Jan 2026, YouTube): 55-minute discussion with Daniel Tunkelang exploring the boundary between what agents can and cannot replace in search teams — covers the latency-feedback tradeoff, domain-specific LLM assumptions, economic disruption (EXA, Reddit), stakes-based error models, and the growing importance of critical thinking. [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 
 - **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge
 
@@ -63,6 +65,8 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 > "Agents turn simple keyword search into compelling search experiences. Thick APIs hide the reasoning from the agent."
 
 > "Semantic search needs three pillars: representation, similarity, AND match criteria. Embeddings fail at the third."
+
+> "The agent picks the tools, you control how the tools respond. Tool responses ARE prompt engineering."
 
 ## Related
 

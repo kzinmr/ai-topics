@@ -4,6 +4,14 @@
 
 ## [2026-05-27] Trending topics wiki ingestion
 
+## [2026-05-27] ingest | Doug Turnbull "Cheat at Search: Steering Lost Agents" slides → new concept agent-steering
+
+- **Raw article**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md` — 65-slide transcript covering the two-loop architecture, carrot-and-stick steering model, 7 steering patterns, filesystem-like search tools, and BEAM search for exhaustive exploration
+- **New concept**: `concepts/agent-steering.md` — Comprehensive concept page (260+ lines) covering the discipline of directing LLM agents through harness design. Covers: two-loop architecture (agentic loop + harness control plane), who-controls-what table, 7 steering patterns (Ralph loop, rule-based validation, LLM-as-Judge, reranker-in-response, few-shot priming, query expansion, tool guards, subagent delegation), quality model integration options, BEAM search alternative, WANDS NDCG results progression (0.5408 → 0.5565 → 0.5652 → 0.5661), and 8 design principles. Cross-linked to agentic-search, harness-engineering, subagents, agent-engineering-guide-2026, query-understanding, ndcg.
+- **Updated concept**: `concepts/agentic-search.md` — Added Level 5: Steering/Harness section (~55 lines) with steering patterns catalog table, carrot-and-stick model, WANDS empirical results, and 5 design principles. Cross-linked to agent-steering. Added raw article to sources. Updated date to 2026-05-27.
+- **Updated entity**: `entities/doug-turnbull-speaking.md` — Added "Steering Lost Agents — Cheat at Search" lecture entry with full coverage details, key quote, and raw article link. Added new key quote: "The agent picks the tools, you control how the tools respond. Tool responses ARE prompt engineering."
+- **Index**: Added agent-steering entry; expanded agentic-search entry to include steering patterns; total pages 2109→2110.
+
 ### Pages Created
 - [[entities/vera-rubin]] — NVIDIA Vera Rubin: Next-gen GPU architecture (Q3 2026). 288GB HBM4, 10× perf/watt. Vera CPU already shipping to OpenAI/Oracle/Anthropic/xAI.
 - [[entities/grok-build]] — xAI Grok Build: Terminal-based coding agent (beta May 2026). AGENTS.md/MCP support, headless mode. SuperGrok/X Premium Plus.

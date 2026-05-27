@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-20
+updated: 2026-05-27
 type: concept
 tags:
   - search
@@ -22,6 +22,7 @@ sources:
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
+  - raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md
   - raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md
@@ -961,8 +962,56 @@ Forcing predictability (fixed step count, shallow exploration) leads to worse ou
 4. Integrate verification into iteration and refinement processes
 5. Define and enforce evaluation-driven stopping criteria
 
+## Level 5: Steering/Harness — Agentic Design Patterns for Search
+
+Doug Turnbull's "Cheat at Search: Steering Lost Agents" (May 2026) provides a practical code-level catalog of steering patterns for directing LLM agents within search harnesses. This is the third installment of the Cheat at Search series, following evaluation/NDCG (Part 1) and LLM query understanding (Part 2). [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents]]
+
+### The Carrot and Stick Model
+
+Turnbull frames agent steering as a **carrot 🥕 and stick 🏒** problem:
+- **Carrot**: Priming with few-shot examples, query expansion, skills/query plan lookups — give the agent better starting points
+- **Stick**: Tool guards, validation rules, LLM judges, state-based rejection — redirect when the agent goes off course
+
+### Steering Patterns Catalog
+
+| Pattern | Mechanism | When to Use |
+|---------|-----------|-------------|
+| **Ralph Loop** | Simple retry loop (up to N times) | Early prototyping, basic convergence |
+| **Rule-Based Validation** | Objective criteria check that returns corrective user message | Clear quality thresholds (count, format, fields) |
+| **LLM-as-Judge** | Dedicated LLM evaluates quality, returns natural language feedback | Subjective quality, relevance judgment |
+| **Reranker in Response** | Harness runs quality model, injects result as user feedback | Systematic quality enforcement without tool-call dependency |
+| **Priming (Few-Shot)** | Concrete relevance examples in system prompt | Highest ROI pattern (+0.0087 NDCG over FS Tools baseline) |
+| **Query Expansion** | LLM interprets query into detailed formulation before agent starts | Ambiguous/short user queries |
+| **Skills/Query Plan** | Vector DB lookup of "how to search for X" → inject into prompt | Domain-specific search strategies managed by dev team |
+| **Tool Guards** | Tools inspect agent_state, reject redundant/invalid calls | Preventing repeated exploration, enforcing constraints |
+| **Subagent Delegation** | Orchestrator spawns subagents with fresh context for independent tasks | Long-running searches, multiple start positions |
+
+### Empirical Results (WANDS Dataset)
+
+Layering steering patterns produces progressive NDCG improvements on the WANDS e-commerce dataset (~45K products):
+
+| Variant | Mean NDCG | Δ from baseline |
+|---------|-----------|-----------------|
+| BM25 (no agent) | 0.5408 | — |
+| Agentic + FS Tools (`ls`/`grep`/`cat` over filesystem) | 0.5565 | +0.0157 |
+| + Few-Shot Priming | 0.5652 | +0.0244 |
+| + Subagent Delegation | 0.5661 | +0.0253 |
+
+**Key finding:** Few-shot priming provides the largest marginal improvement per steering pattern added. Simple tools (constrained filesystem metaphors) outperform complex search APIs — the agent's reasoning compensates for tool simplicity.
+
+### Design Principles
+
+1. **Agent picks tools; developer controls tool responses** — tool responses ARE prompt engineering
+2. **Harness > Model** — the control loop matters more than which specific model runs inside it
+3. **User-feedback messages steer better than system instructions** — leverage training bias toward user satisfaction
+4. **Start with dumb retrievers, add complexity only when data proves it's needed** — simple BM25 + smart steering beats premature complexity
+5. **Delegate to subagents with fresh context** — prevents context rot in long-running searches
+
+For a comprehensive treatment of these patterns, see the dedicated [[concepts/agent-steering]] concept page.
+
 ## Related Concepts
 
+- [[concepts/agent-steering]] — Comprehensive treatment of steering patterns for agentic search
 - [[concepts/markdown-based-skills]] — Skills format used by agentic search (harness layer)
 - [[concepts/s3-first-architecture]] — Where skills files are stored
 - [[concepts/agent-harness]] — Agentic search is part of the harness layer

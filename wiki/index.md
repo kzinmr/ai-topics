@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2109 | Indexed entries: 1385 | Not in index: 674 |## Entities (679 pages)
+> Last updated: 2026-05-27 | Total pages: 2110 | Indexed entries: 1385 | Not in index: 674 |## Entities (679 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -739,8 +739,9 @@
 - [[concepts/activation-steering]] — Activation Steering: Technique for controlling behavior by manipulating feature activation strength during LLM inference. Unlike RLHF, it intervenes at inference time. Goodfire.ai, Golden Gate Claude, Abliteration. Applied to spam classification, style control, and user preference persistence.
 - [[concepts/adam-optimizer]] — Adam (Adaptive Moment Estimation): The most widely used adaptive optimization algorithm in deep learning. Adaptively controls learning rates via exponential moving averages of first and second moments. AdamW separates weight decay to improve generalization. The standard for LLM training.→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
-- [[concepts/agentic-search]] — Agentic Search: IR search layer, harness engineering layer, coding agent layer, agile engineering framework (Scope–Cost–Quality triangle, evaluation-driven "done" definition). Includes Doug Turnbull, Daniel Tunkelang, Anthropic Dynamic Filtering.
-- [[concepts/agentic-rag]] — Agentic RAG: Dynamic Retrieval-Augmented Generation by AI agents
+- [[concepts/agentic-search]] — Agentic Search: IR search layer, harness engineering layer, coding agent layer, agile engineering framework (Scope–Cost–Quality triangle, evaluation-driven "done" definition), steering patterns (carrot-and-stick model, 9 steering patterns, WANDS NDCG results). Includes Doug Turnbull, Daniel Tunkelang, Anthropic Dynamic Filtering, SID-1 RL-trained retrieval.
+- [[concepts/agent-steering]] — Agent Steering: carrot-and-stick model for guiding LLM agents within harnesses. Covers 7 steering patterns (Ralph loop, rule-based validation, LLM-as-Judge, reranker-in-response, few-shot priming, query expansion, tool guards), the two-loop architecture (agentic loop + harness control plane), subagent delegation for context management, and BEAM search for systematic exhaustive exploration. Based on Doug Turnbull's Cheat at Search Part 3.
+- [[concepts/agentic-workflow-engineering]]
 - [[concepts/agentic-retrieval]] — Agentic Retrieval: AI agents as primary search consumers. Median 10-term queries (vs human 2), 24 calls/session, phrase quotes in 98% of sessions. GPT-5 BrowseComp-Plus empirical analysis. Distribution shift from legacy retrievers.
 - [[concepts/agent-ergonomics]] — Programming language and toolchain design optimized for AI coding agents. McKinney's framework (compile speed, static binaries) + Ronacher's language syntax/feature design principles (effects, results, grep-ability, etc.)
 - [[concepts/agent-execution-tax]] — Agent Execution Tax: Fireworks AI concept. Structured output reliability bottleneck discovered from 720 browser agent runs. Kimi K2.5 0.0% vs Gemini 22.9% execution tax. Reliability-Adjusted Accuracy and Cost Per Successful Task.
