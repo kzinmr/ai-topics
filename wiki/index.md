@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2094 | Indexed entries: 1373 | Not in index: 674 |## Entities (674 pages)
+> Last updated: 2026-05-27 | Total pages: 2095 | Indexed entries: 1374 | Not in index: 674 |## Entities (674 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -1376,9 +1376,10 @@
 - [[events/google-io-2026]] — Google I/O 2026 (2026-05-20) — Gemini Spark (personal AI agent), Antigravity platform, Gemini 3.5 Flash announced. OpenCLaw competitor. Gemini CLI→Antigravity CLI migration (OSS→proprietary). Agent security (prompt injection) concerns.
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 
-## Comparisons (22 pages)
+## Comparisons (23 pages)
 
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — Memory architecture comparison of 4 harnesses: OpenClaw/Claude Code/Codex/Hermes. File-first common philosophy, vector search vs full-text search, async vs sync vs Bounded Snapshot, Pre-Compaction Flush, Bustamante 3-type classification, with selection guide.
+- [[comparisons/openclaw-pi-hermes-state-management]] — OpenClaw, Pi, and Hermes Agent State Management — Data Flow and State Management comparison: OpenClaw as Gateway/control-plane source of truth, Pi as runtime substrate, Hermes as capability-accumulating personal agent.
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing — Comparison of sandboxing approaches for AI coding agents: Docker, microVM, in-process sandboxes, capability-based security
 - [[comparisons/ai-agent-platforms]] — Ai Agent Platforms
@@ -1404,4 +1405,3 @@
 
 - [[queries/data-analysis-open-harness]] — Which Open Harness is suitable for data analysis? Organizing options between repurposing general coding harnesses vs data analysis specialized products (2026-05-14)
 - [[queries/saas-future-and-agent-developer-career]] — The future of SaaS and AI Agent developer career strategy: Personal Harness adoption, FDE model expansion, shift to Service-as-Software (2026-05-27)
-

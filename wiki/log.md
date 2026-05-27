@@ -3616,3 +3616,18 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Sources
 - None (batch translation — no new sources ingested)
+
+## [2026-05-27] create | comparisons/openclaw-pi-hermes-state-management.md
+
+- **Created comparison report** — Data Flow and State Management analysis of OpenClaw, Pi, and Hermes Agent from the ai-native-state-management lens. Covers canonical state ownership, 8-state mapping, event vs snapshot behavior, session persistence, context compression, long-term memory, tool workflow state, subagents, and durable execution.
+- **Updated wiki/index.md** — Added comparisons/openclaw-pi-hermes-state-management. Counts: Total 2094→2095, Indexed 1373→1374, Comparisons 22→23.
+
+### Sources
+- concepts/ai-native-state-management.md
+- concepts/openclaw-architecture.md
+- concepts/hermes-agent-architecture.md
+- comparisons/hermes-vs-openclaw-architecture.md
+- openclaw/docs/concepts/agent-loop.md
+- pi/packages/agent/README.md
+- hermes-agent/hermes_state.py
+- hermes-agent/agent/conversation_loop.py
