@@ -5,7 +5,7 @@ aliases: [simonw]
 created: 2025-01-01
 updated: 2026-05-26
 status: L3
-sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md]
+sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md]
 tags: [person, blogger]
 ---
 
@@ -309,6 +309,12 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 - [Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)
 - [Changes in the system prompt between Claude Opus 4.6 and 4.7](https://simonwillison.net/2026/Apr/18/opus-system-prompt/) (Apr 2026) — Provides detailed analysis of specific system prompt changes: Platform rename, Chrome/Excel/PowerPoint integration, child safety section enhancement, new "acting vs clarifying" section, Trump knowledge section removal, and other modifications.
 - [Claude system prompts as a git timeline](https://simonwillison.net/2026/Apr/18/extract-system-prompts/) (Apr 2026) — A research achievement making Anthropic's published prompts chronologically traceable via a git-timeline tool, enabling model-by-model, family-by-family prompt diffs viewable via git blame.
+
+### Link Blog Highlights (May 2026)
+
+| Date | Title | Key Quote |
+|------|-------|-----------|
+| May 26 2026 | [The pressure](https://simonwillison.net/2026/May/26/the-pressure/) | Daniel Stenberg on curl project facing 4-5× more AI-assisted security reports than 2024 — "For the first time in my life, my wife voiced concerns about my work hours." |
 
 ## References
 

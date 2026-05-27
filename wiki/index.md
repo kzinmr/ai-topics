@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2097 | Indexed entries: 1376 | Not in index: 674 |## Entities (675 pages)
+> Last updated: 2026-05-27 | Total pages: 2097 | Indexed entries: 1375 | Not in index: 674 |## Entities (675 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -202,7 +202,6 @@
 - [[entities/demis-hassabis]] — **Role** | CEO, Google DeepMind; Co-founder, DeepMind |
 - [[entities/derek-thompson]] — **Blog** | Derek Thompson on Substack |
 - [[entities/descript-audio-codec]] — **DAC** | High-fidelity universal neural audio codec by Descript. 44.1 kHz, 8 kbps, ~90× compression, single model for speech/music/environment. Improved RVQGAN.
-- [[entities/dialloibu]] — **Ibrahim Diallo** (idiallo.com) — Software developer and technical writer known for reflective writing on AI-assisted workflows, LLM-assisted writing challenges, and the tension between AI efficiency and authentic human voice. Advocates for multi-stage writing process using AI for structure then human editing for voice.
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — Researcher at Microsoft Research AI Frontiers and professor at UW-Madison (on leave). Co-author of [[echo-rl|ECHO]], a hybrid GRPO + environment-prediction training method for CLI agents that learns world models "for free."
 - [[entities/dji]] — Chinese drone manufacturer with an "iron grip" on the global drone market. Despite U.S. regulatory efforts, DJI's market dominance remains largely intact.
 - [[entities/dorialexander]] — **X/Twitter** | @Dorialexander (~16K followers, joined March 2011) |
@@ -297,7 +296,7 @@
 - [[entities/hyperbo]] — AI agent articles and content on the hyperbo domain
 - [[entities/ian-goodfellow]] — **Full Name** | Ian Joseph Goodfellow |
 - [[entities/ian-nuttall]] — **URL:** https://ian.is
-- [[entities/idiallo-com]] — **Ibrahim Diallo** (idiallo.com) — Software developer and technical writer known for reflective writing on AI-assisted workflows, LLM-assisted writing challenges, and the tension between AI efficiency and authentic human voice.
+- [[entities/ibrahim-diallo]] — **Ibrahim Diallo** (idiallo.com) — Software engineer, storyteller, and blogger. "The Machine Fired Me" essay (2017). Critiques AI token burn as productivity metric (May 2026). Pragmatic AI stance: "a capable tool, not a solution."
 - [[entities/iii-platform]] — Open-source backend engine that collapses distributed infrastructure into three primitives: Function, Trigger, Worker. Core thesis: the agent harness should BE the backend.
 - [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever
 - [[entities/ibm]] — IBM (AI / watsonx) — Think 2026: watsonx Orchestrate agentic control plane, IBM Bob agentic dev partner, AI Operating Model (Agents/Data/Automation/Hybrid). Enterprise multi-agent governance.

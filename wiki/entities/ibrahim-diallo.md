@@ -1,15 +1,26 @@
 ---
-title: Diallo Ibrahima
+title: Ibrahim Diallo
 type: entity
+aliases: [dialloibu, idiallo, idiallo-com]
 created: 2026-04-10
-updated: 2026-04-10
-tags:
-  - person
-  - blogger
-  - hn-popular
-sources: []
+updated: 2026-05-27
+tags: [entity, person, blogger, hn-popular, developer-tooling, developer-experience]
+sources:
+  - https://idiallo.com/
+  - https://x.com/dialloibu
+  - raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--4c0adac9.md
 ---
 
+# Ibrahim Diallo
+
+**Ibrahim Diallo** is a software engineer, storyteller, and blogger at [idiallo.com](https://idiallo.com). He writes reflective, literary essays about programming, AI's impact on developers, and the human experience of technology. Known for "The Machine Fired Me" (2017), a widely-cited parable of automation without human override.
+
+| | |
+|---|---|
+| **Blog** | [idiallo.com](https://idiallo.com) |
+| **X/Twitter** | [@dialloibu](https://x.com/dialloibu) |
+| **Role** | Lead Software Engineer, writer, entrepreneur |
+| **Bio** | African-born software engineer based in Los Angeles. Co-founder of Ottomon (QR-code car contact) and Renly (commercial space rental). His tagline: "I write code for Humans & text for Robots." |
 
 # Ibrahim Diallo
 
@@ -134,3 +145,72 @@ Beyond writing, Diallo is a working lead software engineer:
 - idiallo.com--blog-your-friends-are-hiding-their-ideas--75fd62a2
 - idiallo.com--byte-size-the-satisfaction-of-a-chatgpt-plan--643431ed
 - idiallo.com--byte-size-we-are-aws-salesmen--d73ea189
+# Ibrahim Diallo
+
+**Ibrahim Diallo** is a software engineer and blogger at **idiallo.com**. He writes about software engineering, management metrics, developer productivity, and the impact of AI on software development culture.
+
+## Core Ideas
+
+### Token Burn as Productivity Metric (May 2026)
+
+In "[How Many Tokens Did You Burn Today](https://idiallo.com/blog/how-many-tokens-did-you-burn-today?src=feed)" (May 2026), Diallo drew a parallel between the 2000s-era absurdity of measuring developers by **lines of code (LOC)** and the emerging trend of measuring developers by **AI token consumption**.
+
+> "The best engineers I've ever known wrote less code, not more. They deleted things. They simplified. Every era of tooling brings a new class of metric that mistakes activity for value."
+
+Key observations:
+
+- **Accidental leaderboard champion**: Diallo found himself at the top of his employer's AI productivity leaderboard not through skillful agentic workflow, but by accidentally triggering "planning mode" that burned tokens resolving a non-existent problem.
+- **Gaming the metric**: "If this widget is taken at face value, it won't be long before developers start gaming it deliberately. Just let the agent run overnight."
+- **AI provider incentives**: AI companies promote token usage as a productivity metric because they directly benefit from it — "like an ISP charging by the byte recommending 'use more bytes!'"
+- **Historical parallel**: Directly compared to the LOC metric — a 26-year-old story about a manager who wanted a pie chart of lines of code per developer per week.
+
+### Enterprise AI Metric Adoption
+
+Diallo's employer was quoted **$500k/year** for an AI productivity tracking tool (initially dropped, then renegotiated to $50k/year). This dashboard tracks lines of AI-generated code per developer, reminiscent of the LOC metrics the industry abandoned decades ago.
+
+## Related
+
+- [[concepts/developer-productivity-metrics]] — The broader category of developer productivity measurement
+- [[concepts/agentic-engineering]] — How token metrics relate to agentic development
+- [[entities/ed-zitron]] — Zillow case study showing 29,000 hours/month AI code review load
+- [[entities/simon-willison]] — Cognitive debt vs token burn as quality metrics
+
+## Sources
+- [How Many Tokens Did You Burn Today](https://idiallo.com/blog/how-many-tokens-did-you-burn-today?src=feed)
+
+## LLM-Assisted Writing (from idiallo.com)
+
+### The Voice Problem
+Diallo noted that LLM-generated content often sounds generic and lacks the author's distinctive voice, making it difficult to quote one's own work.
+
+### The Editing Workflow
+Developed a multi-stage process: use AI for structure, then aggressively edit to restore personal voice and authentic anecdotes.
+
+### Case Study: "Why Developers Build Unfinished Calculators"
+Documented the evolution from AI draft (Feb 2025) to human-edited final version (May 2026), concluding that while functional, AI output "wasn't my human experience with the subject."
+
+### Developer Philosophy
+- **Learning by Building** — Advocates for the "monkey bars" approach: developers learn through play and experimentation
+- **Tool Autonomy** — Writes about maintaining control over one's development environment
+- **Iteration over Perfection** — Views abandoned projects as valuable learning experiences
+
+### "We Are Not Going to Agree on AI" (May 2026)
+Diallo articulated his pragmatic stance: AI is "a capable tool" — rejecting both utopian and dystopian narratives. Uses the **Home Depot metaphor**: compare AI tools to a stud finder — pick the simple tool that gets the job done.
+
+### Token Burn as Productivity Metric
+See above — Diallo's "How Many Tokens Did You Burn Today" essay (May 2026) drawing a direct parallel between LOC metrics from 20 years ago and AI token consumption metrics today. Accidentally topped a productivity leaderboard by triggering planning mode.
+
+## Related
+
+- [[concepts/llm-assisted-writing]] — Concept page documenting his LLM writing workflow
+- [[concepts/developer-productivity-metrics]] — Token burn as productivity metric
+- [[entities/ed-zitron]] — Shared interest in AI metric critique
+- [[entities/simon-willison]] — Contrasting perspective on AI as coding tool
+
+## Sources
+
+- ["The Machine Fired Me"](https://idiallo.com/blog/when-a-machine-fired-me/) (2017)
+- ["How Many Tokens Did You Burn Today"](https://idiallo.com/blog/how-many-tokens-did-you-burn-today) (May 2026)
+- ["We Are Not Going to Agree on AI"](https://idiallo.com/blog/we-are-not-going-to-agree-on-ai) (May 2026)
+- ["Editing my LLM assisted Articles"](https://idiallo.com/byte-size/editing-llm-assisted-articles) (May 2026)
+- [idiallo.com/aboutme](https://idiallo.com/aboutme.html)

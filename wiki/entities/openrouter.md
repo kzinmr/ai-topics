@@ -16,6 +16,7 @@ related:
 sources:
   - raw/articles/2025-12-01_openrouter-state-of-ai-2025.md
   - https://openrouter.ai/
+  - raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md
 ---
 
 
@@ -46,6 +47,19 @@ In December 2025, OpenRouter collaborated with a16z (Malika Aubakirova) to publi
 - **Top OSS models by tokens:** DeepSeek (14.37T), Qwen (5.59T), Meta LLaMA (3.96T), Mistral (2.92T).
 - **Geographic distribution:** USA (47%), Singapore (9%), Germany (7.5%), China (6%).
 - **Asia's growth:** Share doubled from 13% to 31% in 2025.
+
+## LLM Economics: 98% Input Tokens (May 2026)
+
+Analysis by [[entities/tencent-hy3|Max Woolf]] (minimaxir.com) revealed a critical shift in LLM API economics on OpenRouter by May 2026:
+
+- **98% input tokens, 2% output tokens** in aggregate — driven by agentic workflows that reprocess full conversation context on every turn
+- **Prompt caching dominates effective pricing**: cache read costs vary dramatically by provider — from DeepSeek's 2% to SiliconFlow's 44%
+- **Stated prices are misleading**: DeepSeek V4 Flash at $0.10/M input has a lower effective price ($0.018/M via DeepSeek's 2% cache read) than Hy3 Preview at $0.066/M ($0.034/M via SiliconFlow's 44% cache read)
+- **Apps constitute <1%** of Hy3's activity on OpenRouter, suggesting large-scale non-agentic data processing workloads
+
+> OpenRouter now provides **effective price tables** on model pages accounting for cache hit rates, making it the only platform with transparent real-world pricing data.
+
+See also: [[entities/tencent-hy3]] for the full pricing comparison table.
 
 ## Market Position
 

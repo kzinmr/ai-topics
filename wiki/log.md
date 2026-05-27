@@ -3,6 +3,36 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-27] ingest | Blog triage wiki ingest — 20 articles processed (1 take, 4 references)
+
+### Files Created
+- entities/ibrahim-diallo.md — Merged from dialloibu.md + idiallo-com.md + new token-burn critique ("How Many Tokens Did You Burn Today")
+
+### Files Enriched
+- entities/openrouter.md — Added LLM Economics section: 98% input/2% output tokens, prompt cache pricing analysis, effective price comparison
+- entities/simon-willison.md — Added curl pressure Link Blog entry (Daniel Stenberg, 4-5× AI-assisted security reports)
+- entities/ed-zitron.md — Added "Revenge of The Business Idiot" section: Salesforce Agentforce vaporware (Bloomberg), Cursor+Claude Opus 4.6 deletes production DB, Business Idiot archetype expansion
+- entities/cory-doctorow.md — Added AI bubble vs internet bubble comparison: dogshit unit economics, worker-led vs management-imposed adoption
+
+### Files Deleted (merged into ibrahim-diallo.md)
+- entities/dialloibu.md
+- entities/idiallo-com.md
+
+### Articles Processed
+- minimaxir.com — "The mysterious Hy3 LLM is topping OpenRouter Model Rankings" → already captured in entities/tencent-hy3.md (no new page needed)
+- simonwillison.net — "The pressure" (curl security reports) → enriched entity page
+- wheresyoured.at — "Revenge of The Business Idiot" (Salesforce vaporware) → enriched entity page
+- pluralistic.net — "The AI bubble isn't like the internet bubble" → enriched entity page
+- idiallo.com — "How Many Tokens Did You Burn Today" → created/new entity page
+
+### Batch Triage Summary
+- 1 take → already captured (Hy3 in entities/tencent-hy3.md)
+- 4 references → all enriched into existing/new entity pages
+- 15 skips → non-AI content or already captured
+
+
+---
+
 ## [2026-05-27] translate | JP→EN batch — 8 files
 
 ### Files Translated

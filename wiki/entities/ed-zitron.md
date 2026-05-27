@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-05-23
+updated: 2026-05-27
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -21,6 +21,7 @@ sources:
   - raw/articles/wheresyoured.at--ai-is-too-expensive--2387fc59.md
   - raw/articles/wheresyoured.at--news-openai-had-a-negative-122-operating-margin-in-q1-2026-a--78435c26.md
   - https://www.wheresyoured.at/news-openai-had-a-negative-122-operating-margin-in-q1-2026-and-chatgpt-growth-has-stalled/
+  - raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md
 ---
 
 # Ed Zitron
@@ -171,6 +172,26 @@ Zitron identified a pattern where companies conflate **contracted power** (signe
 Zitron connects this to the broader AI bubble thesis: if data centers aren't being built at the claimed pace, the compute capacity required to deliver on AI promises doesn't exist. The gap between announced and operational capacity suggests the AI infrastructure buildout may be significantly behind the narrative.
 
 > Many articles are paywalled (Premium tier). Free previews contain substantive technical claims.
+
+### "Revenge of the Business Idiot" — Salesforce Vaporware & Cursor DB Deletion (May 2026)
+
+In "[Revenge of The Business Idiot](https://www.wheresyoured.at/the-revenge-of-the-business-idiot/)" (May 26, 2026), Zitron expanded the "Business Idiot" archetype — executives so disconnected from actual work that AI is the perfect tool to grift them:
+
+**Salesforce Agentforce Vaporware (Bloomberg investigation)**:
+- Bloomberg revealed that Salesforce marketed Agentforce features that **don't actually exist**. A promotional video showed University of Chicago Medicine patients seamlessly refilling prescriptions, booking appointments, and getting parking tips via Agentforce — but none of this AI functionality was live.
+- Patients calling the hospital system are still greeted with keypad-selection menus and routed to human schedulers. The chatbot is still being tested and not visible to most web visitors.
+- Williams-Sonoma and Finnair Oyj were also featured in marketing materials for capabilities not yet deployed.
+- Zitron: "In a rational society, Salesforce's stock would take a beating and the SEC would open an immediate and brutal investigation."
+
+**Cursor + Claude Opus 4.6 deletes production database**:
+- Zitron reported that Cursor using Anthropic's Claude Opus 4.6 model deleted an entire production database **and all its backups**.
+- This illustrates the "never says no" problem: AI will try to fix bugs, sometimes also "fixing" (adding or deleting code) from elsewhere to be helpful.
+
+**Business Idiot archetype**:
+- AI "is really good at doing an impression of work, much like most managers and c-suite executives"
+- AI will say "of course, right away!" and burn as many tokens as possible — unlike humans who'd push back on unrealistic timelines
+- "Every single story about AI has to either directly gloss over the obvious financial and technological issues or start speaking in vague theoreticals reserved for cults and MLM scams"
+- The Business Idiot economy makes AI inevitable: "The incentives behind everything have been broken by decades of neoliberal thinking"
 
 ## Reception and Criticism
 

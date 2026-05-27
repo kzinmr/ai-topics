@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-27
 status: L3
 sources:
   - https://pluralistic.net/
@@ -50,6 +50,25 @@ Doctorow's broader "enshittification" theory (2023 book, 2026 graphic novel) app
 3. **They get worse for everyone** to maximize shareholder value
 
 AI platforms follow the same trajectory: chatbots start helpful, then degrade into ad-laden, subscription-gated experiences that serve corporate interests over user needs.
+
+### AI Bubble vs Internet Bubble: Dogshit Unit Economics (May 2026)
+
+In "[The AI bubble isn't like the internet bubble](https://pluralistic.net/2026/05/26/the-ai-will-continue/)" (May 26, 2026), Doctorow argued that the AI investment bubble differs fundamentally from the early internet bubble:
+
+**The internet bubble had great unit economics**:
+- Early web tools (Lotus Notes, Visicalc) were adopted **worker-driven** — employees smuggled them past IT because they made work easier
+- Each new user brought the web closer to profitability (inverse unit economics)
+- Initial investment was validated by organic adoption from the people doing actual work
+
+**The AI bubble has dogshit unit economics**:
+- AI adoption is **management-imposed**, not worker-driven — executives force it on teams who resist
+- Every new AI user makes AI **less profitable** (marginal compute cost exceeds marginal revenue)
+- Each new use case loses more money than the last
+- The expansion of AI generates negative unit economics rather than positive
+
+**Reverse-centaur extension**: This analysis extends Doctorow's "reverse centaur" concept — humans should be **critics of AI output**, not cheerleaders. The management-imposed nature of AI adoption reinforces the need for critical distance.
+
+> "The early web may have lost money, but it had great unit economics... By contrast, AI has dogshit unit economics. Every new AI user makes AI less profitable, as does every new use for AI, and each generation of AI loses more money than the last."
 
 ### Full Employment for AI (April 2026)
 
@@ -115,4 +134,5 @@ Doctorow's daily blog at [pluralistic.net](https://pluralistic.net) is a major s
 - [Locus Magazine — "Cory Doctorow: Full Employment" (April 2026)](https://locusmag.com/feature/cory-doctorow-full-employment/)
 - [The Strand — "The Reverse Centaur's Guide to Life After AI"](https://www.strandbooks.com/cory-doctorow-the-reverse-centaur-s-guide-to-life-after-ai.html)
 - [Enshittification (book)](https://us.macmillan.com/books/9780374619329/enshittification/)
+- [Pluralistic.net — "The AI bubble isn't like the internet bubble" (May 26, 2026)](https://pluralistic.net/2026/05/26/the-ai-will-continue/)
 - [The Internet Con (book)](http://seizethemeansofcomputation.org)
