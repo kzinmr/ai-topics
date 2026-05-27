@@ -12,12 +12,13 @@ tags:
   - ai-agents
   - self-improving
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-27
 aliases: [/goal, codex-goal-command, openai-goal-loop]
 sources:
   - raw/articles/2026-05-11_chrishayduk-using-codex-goals-effectively.md
   - https://ralphable.com/blog/codex-goal-command-ralph-loop-openai-built-in-autonomous-coding-agent-2026
   - https://x.com/ChrisHayduk/status/2053807198870880743
+  - raw/articles/2026-05-26_every_codex-knowledge-work.md
 ---
 
 # Codex /goal — OpenAI's Built-in Ralph Loop
@@ -25,6 +26,17 @@ sources:
 > **Definition:** `/goal` is a slash command in Codex CLI (shipped in v0.128.0, April 30, 2026) that turns Codex into a **long-horizon autonomous agent**. It runs the canonical [[concepts/agentic-loop|agentic loop]] — plan → act → verify → correct — for **hours** of continuous work in a single invocation.
 
 Greg Brockman summarized it: *"codex now has a built in Ralph loop++."*
+
+### Goals vs. Skills
+
+A crisp distinction from Every's [Codex for Knowledge Work](https://every.to/guides/codex-for-knowledge-work) guide (May 2026):
+
+| Concept | Definition | Scope |
+|---------|-----------|-------|
+| **Goal** (`/goal`) | A persistent objective that shapes an entire session | One stretch of work; ends when the objective is met |
+| **Skill** | A reusable set of packaged instructions (sometimes with scripts) | Recurring task type; teaches Codex how to handle a workflow |
+
+> **Heuristic for when to use `/goal`:** "If you'd type the same sentence into three prompts in a row — 'cite every factual claim, match the house style, never send without my review' — make it a goal instead."
 
 ## What It Ships
 

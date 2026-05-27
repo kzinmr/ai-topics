@@ -3,6 +3,21 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-27] ingest | Every: Codex for Knowledge Work → wiki enrichment
+
+### Raw Article Saved
+- [[raw/articles/2026-05-26_every_codex-knowledge-work.md]] — Katie Parrott, Every (May 26, 2026). Paywalled guide (Parts 2-6 inaccessible).
+
+### Pages Enriched
+- **[[entities/openai-codex]]** — Added "Codex as a Knowledge Work Platform" section: Delegate vs Collaborate modes, Goals vs Skills distinction, "three prompts" heuristic, five levels of Codex use structure, knowledge work day-in-the-life vision.
+- **[[concepts/codex-goal]]** — Added Goals vs Skills distinction and "three prompts in a row" heuristic from Every guide.
+
+### Wiki Management Takeaways
+The article's framing offers transferable patterns for wiki management:
+- **Delegate vs Collaborate** maps to our cron pipeline design: deterministic ingestion (delegate) vs research/analysis (collaborate)
+- **"Three prompts → make it a goal"** heuristic applies to wiki agents too: if instruction patterns repeat across sessions, encode them as skills or cron jobs
+- **Goals vs Skills** distinction: a goal is a session-scoped objective, a skill is a reusable package — mirrors our wiki SCHEMA.md / skill architecture
+
 ## [2026-05-27] translate | JP→EN batch — 6 files
 
 ### Files Translated
