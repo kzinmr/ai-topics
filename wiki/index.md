@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2102 | Indexed entries: 1379 | Not in index: 674 |## Entities (677 pages)
+> Last updated: 2026-05-27 | Total pages: 2105 | Indexed entries: 1381 | Not in index: 675 |## Entities (677 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -1360,7 +1360,7 @@
 - [[concepts/dynamic-software]] — Dynamic Software — Self-modifying code paradigms and agent-adaptive software architecture
 - [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling — AWS Fargate autoscaling strategies for containerized AI services
 
-## Events (6 pages)
+## Events (7 pages)
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
 - [[concepts/claude-47-tokenizer]] — Claude 4.7 Tokenizer Change
 - [[concepts/claude-agent-sdk-sre-patterns]] — Claude Agent SDK — SRE Agent Pattern
@@ -1389,6 +1389,7 @@
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk trial verdict (2026-05-18) — Jury unanimously dismisses Musk's claims. Statute of limitations cited, no ruling on OpenAI's legitimacy. Gary Marcus: "Trial of the century ends with a whimper."
 - [[events/google-io-2026]] — Google I/O 2026 (2026-05-20) — Gemini Spark (personal AI agent), Antigravity platform, Gemini 3.5 Flash announced. OpenCLaw competitor. Gemini CLI→Antigravity CLI migration (OSS→proprietary). Agent security (prompt injection) concerns.
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
+- [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 
 ## Comparisons (23 pages)
 

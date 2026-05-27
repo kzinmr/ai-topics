@@ -2,6 +2,13 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] Created events/trustfall-symlink-rce-2026 — AI Coding Agent Security Crisis
+- Created `events/trustfall-symlink-rce-2026.md`: Comprehensive security incident page documenting Adversa AI's TrustFall and SymJack vulnerabilities (May 2026). Covers MCP auto-execution (TrustFall) and symlink hijack RCE (SymJack) across Claude Code, Gemini CLI, Antigravity CLI, Cursor, Copilot CLI, and Grok Build.
+- Saved 3 raw articles: `raw/articles/adversa-ai-trustfall-2026.md`, `raw/articles/adversa-ai-symjack-2026.md`, `raw/articles/securityweek-symjack-2026.md`
+- Updated `index.md`: Added to Events section (7 pages → new entry)
+- Tags: agent-security, security, coding-agents, prompt-injection, event, vulnerability, supply-chain, mcp
+- Cross-linked: entities/claude-code, entities/gemini-cli, entities/google-antigravity, entities/cursor-ai, entities/copilot-cli, entities/anthropic, concepts/model-context-protocol-mcp, concepts/ai-agent-security, concepts/agent-security-patterns
+
 ## [2026-05-27] Abliteration Concept Page — FT/Alice Investigation + Heretic Tool
 
 ### Pages Created
