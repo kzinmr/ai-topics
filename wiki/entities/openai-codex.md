@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-05-23
+updated: 2026-05-27
 tags:
   - product
   - coding-agent
@@ -29,6 +29,7 @@ sources:
   - https://www.businesstoday.in/technology/story/openai-codex-celebrates-3-million-weekly-users-ceo-sam-altman-resets-usage-limits-524717-2026-04-08
   - https://www.wsj.com/cio-journal/openai-is-working-with-consultants-to-sell-codex-f355b1b9
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
+  - raw/articles/2026-05-26_every_codex-knowledge-work.md
 ---
 
 # OpenAI Codex
@@ -59,6 +60,53 @@ Autonomously handles code generation, editing, codebase exploration, testing, an
 - **apply_patch tool**: Fuzzy match-based file editing. Uses surrounding context for matching rather than strict string replacement.
 - **Background terminal execution**: Runs long builds/tests in background and notifies on completion.
 - **Parallel tool execution**: Independent tool calls run in parallel.
+
+## Codex as a Knowledge Work Platform (May 2026)
+
+> *Source: [[raw/articles/2026-05-26_every_codex-knowledge-work.md|Codex for Knowledge Work]] — Katie Parrott, Every (May 26, 2026)*
+
+While Codex originated as a coding agent, Every's guide positions it as a **general-purpose knowledge work platform** — a workspace for you and your AI agents that handles email, Slack, Google Drive, Notion, PostHog, and beyond.
+
+### The Knowledge Work Vision
+
+> "Picture a Monday morning: A request for a launch plan lands in your inbox. You forward it to Codex, which has its own email account, and close your laptop while Codex runs tasks in the cloud... By the time you reach your desk, a draft is waiting for review."
+
+Codex becomes an autonomous executive assistant: reading Slack threads, pulling customer notes from Google Drive, checking analytics in PostHog, and drafting plans in Notion — requiring only occasional human approval via a thumbs-up on mobile.
+
+### Delegate vs. Collaborate: The Meta-Skill
+
+The Every guide frames Codex usage around two fundamental modes:
+
+| Mode | When to Use | How It Works |
+|------|-------------|--------------|
+| **Delegate** | Predictable, repeatable, low-risk tasks with clear instructions | Agent runs autonomously and brings back finished work for review |
+| **Collaborate** | Judgment-heavy, exploratory, or iterative work | You work alongside the model toward your vision, steering as it goes |
+
+> "Expert Codex users know how to direct AI's capability without losing their personal judgment. They *ride* the models rather than being overwhelmed by them."
+
+**Choosing between the two modes is described as the meta-skill of modern knowledge work.** This mirrors the broader [[concepts/agentic-loop|agentic autonomy spectrum]] — the tradeoff between full automation and human-in-the-loop collaboration.
+
+### Goals vs. Skills
+
+The Every article provides a crisp distinction that complements [[concepts/codex-goal|Codex /goal]]:
+
+| Concept | Definition | Scope |
+|---------|-----------|-------|
+| **Goal** (`/goal`) | A persistent objective that shapes an entire session | One stretch of work; ends when the objective is met |
+| **Skill** | A reusable set of packaged instructions (sometimes with scripts) | Recurring task type; teaches Codex how to handle a workflow |
+
+**Heuristic for when to use `/goal`:** "If you'd type the same sentence into three prompts in a row — 'cite every factual claim, match the house style, never send without my review' — make it a goal instead."
+
+### Five Levels of Codex Use (Structure)
+
+The full guide (behind Every paywall) outlines five progressive levels:
+1. One-off knowledge work
+2. Repeatable task automation
+3. Persistent workflows and goals
+4. Compounding a personal system
+5. Team-wide agent orchestration
+
+Plus 13 workflow templates (inbox zero, research brief, GTM plan, KPI report, etc.) and a seven-day power-user onboarding plan.
 
 ## Codex for Work — Team Use Cases (May 2026)
 

@@ -75,7 +75,7 @@ A skill encodes a process that works across domains. The same investigative skil
 - One-off work instead of codifying into skills
 
 ## Related Concepts
-- [[concepts/agent-skills-overview]] — Agent Skills 概念クラスターマップ(親ページ)
+- [[concepts/agent-skills-overview]] — Agent Skills Concept Cluster Map (Parent Page)
 - [[concepts/agent-harness]] — The harness layer that skills sit above
 - [[concepts/harness-engineering]] — Principles of agent harness design
 - [[concepts/personal-os-for-ai-agents]] — File-based personal OS using skills

@@ -3,6 +3,26 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-27] translate | JP→EN batch — 6 files
+
+### Files Translated
+- concepts/skill-retrieval-augmentation.md — `概念クラスターマップ(親ページ)` → `Concept Cluster Map (Parent Page)`
+- concepts/skill-architecture-patterns.md — `概念クラスターマップ(親ページ)` → `Concept Cluster Map (Parent Page)`
+- concepts/agentic-ai-skills.md — `概念クラスターマップ(親ページ)` → `Concept Cluster Map (Parent Page)`
+- concepts/thin-bi.md — `stable株式会社` → `stable Co., Ltd.`
+- concepts/anthropics-memory-tool-cognition-strategic-follow.md — `戦略的追随` → `Strategic Follow` (file renamed from JP filename)
+- concepts/memory-scaling.md — `メモリスケーリング` → `Memory Scaling`
+
+### Files Deleted
+- concepts/hierarchy-to-intelligence-blockの組織モデル変革.md — duplicate stub (superseded by concepts/ai-organization/ai-org-from-hierarchy-to-intelligence.md)
+
+### Files Skipped
+- entities/shunyu-yao.md — CJK chars are Chinese names (姚顺雨, 姚班), not Japanese text
+- concepts/thin-bi.md raw article path — 7 JP chars in immutable raw/ file reference (2033336956961308721_薄くなるbiツール.md)
+
+
+---
+
 ## [2026-05-27] translate | JP→EN batch — 8 files
 
 ### Files Translated

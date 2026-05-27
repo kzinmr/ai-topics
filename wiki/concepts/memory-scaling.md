@@ -1,5 +1,5 @@
 ---
-title: "Memory Scaling (メモリスケーリング)"
+title: "Memory Scaling"
 created: 2026-04-29
 updated: 2026-04-29
 type: concept
@@ -14,7 +14,7 @@ sources:
   - raw/articles/crawl-2026-04-29-databricks-memory-scaling.md
 ---
 
-# Memory Scaling (メモリスケーリング)
+# Memory Scaling
 
 > **Definition:** The property where an AI agent's performance (accuracy and efficiency) improves as its external memory store accumulates past conversations, user feedback, and business context — a third scaling axis alongside parametric scaling and inference-time scaling.
 
