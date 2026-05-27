@@ -2,45 +2,45 @@
 title: "Agentic Scaffolding"
 tags: []
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-27
 type: concept
 ---
 
 # Agentic Scaffolding
 
-エージェントを本番環境で安全に動作させるための「足場」パターン。エージェントの力を最大化しつつ、リスクを管理するインフラストラクチャ設計。
+"Scaffolding" patterns for operating agents safely in production — infrastructure design that maximizes agent capability while managing risk.
 
 ## Core Philosophy
 
-> エージェントは信頼できるが、検証可能であるべき。
+> Agents should be trustable, but verifiable.
 
-スクリーニングとガードレールを多層に配置し、エージェントの自由度と安全性を両立させる。
+Multi-layered screening and guardrails balance agent autonomy with safety.
 
 ## Layers of Scaffolding
 
 ### Layer 1: Input Validation
 
-- 入力のパターンマッチングとサニタイズ
-- 意図の分類（正当なリクエスト vs 不正操作）
-- レートリミッティングとクォータ管理
+- Pattern matching and sanitization of inputs
+- Intent classification (legitimate requests vs. malicious manipulation)
+- Rate limiting and quota management
 
 ### Layer 2: Execution Constraints
 
-- 許可された操作のホワイトリスト
-- リソース制限（メモリ、CPU、ネットワーク）
-- タイムアウトとリトライポリシー
+- Whitelist of permitted operations
+- Resource limits (memory, CPU, network)
+- Timeout and retry policies
 
 ### Layer 3: Output Verification
 
-- 出力の構文・意味チェック
-- 期待される結果との整合性確認
-- 安全基準への準拠検証
+- Syntax and semantic checking of outputs
+- Consistency verification against expected results
+- Compliance validation against safety standards
 
 ### Layer 4: Human Oversight
 
-- 重要な操作の確認ステップ
-- エスカレーションポリシー
-- フィードバックループの組み込み
+- Confirmation steps for critical operations
+- Escalation policies
+- Integrated feedback loops
 
 ## Implementation Patterns
 
@@ -58,16 +58,16 @@ Step 1 (Plan) → Review → Step 2 (Execute) → Verify → Step 3 (Report)
 
 ### Hybrid Scaffolding
 
-- 低リスク操作: 自動実行
-- 中リスク操作: 事後検証
-- 高リスク操作: 事前承認
+- Low-risk operations: automatic execution
+- Medium-risk operations: post-hoc verification
+- High-risk operations: pre-approval
 
 ## Key Design Principles
 
-1. **Principle of Least Privilege**: エージェントに必要な最小限の権限のみ付与
-2. **Defense in Depth**: 単一障害点がない多層防御
-3. **Observability First**: 全ての操作をログ・トレース可能に
-4. **Graceful Degradation**: 検証失敗時も安全にフォールバック
+1. **Principle of Least Privilege**: Grant only the minimum permissions an agent needs
+2. **Defense in Depth**: Multi-layered defense with no single point of failure
+3. **Observability First**: All operations must be logged and traceable
+4. **Graceful Degradation**: Safe fallback on verification failure
 
 ## The Scaffolding Ratio (Miessler's Thesis)
 
@@ -82,7 +82,7 @@ Daniel Miessler (April 2026) proposed that **75–99% of knowledge work is scaff
 ### Relationship to Scaffolding Layers
 
 | Miessler's Thesis | Wiki's Scaffolding Layers |
-|-------------------|--------------------------|
+|-------------------|---------------------------|
 | 75-99% is overhead | Validates the importance of layered guardrails — the scaffolding IS the work |
 | AI crushes the maintenance | Tool use, sandboxing, and observability layers enable automation of scaffolding |
 | Skills package methodology | Agent Skills (SKILL.md bundles) are the mechanism for packaging expert scaffolding |

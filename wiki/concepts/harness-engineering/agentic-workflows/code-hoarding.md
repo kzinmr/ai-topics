@@ -6,7 +6,7 @@ aliases:
   - knowledge-hoarding
   - skill-hoarding
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-27
 tags:
   - concept
   - agentic-engineering
@@ -16,36 +16,36 @@ sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/"
 ---
 
-# Code Hoarding / Knowledge Accumulation（知識の蓄積）
+# Code Hoarding / Knowledge Accumulation
 
-Simon Willisonが提唱する、開発者が学んだスキルや解決策を意図的に蓄積し、再利用するプラクティス。
+A practice advocated by Simon Willison where developers intentionally accumulate learned skills and solutions for reuse.
 
-## 定義
+## Definition
 
 > "Every time I write some code to solve a problem I save it. The next time I have a similar problem, I can reuse what I've already written — and improve it if it's still not quite right. It's hoarding, but a productive kind of hoarding."
 
-## 蓄積のメカニズム
+## Accumulation Mechanism
 
-1. **問題を解決するコードを書く**
-2. **そのコードを保存する**（スクリプト、ユーティリティ、 snippets）
-3. **次の類似問題で再利用する**
-4. **必要なら改善する**
-5. **再び保存する**
+1. **Write code to solve a problem**
+2. **Save that code** (scripts, utilities, snippets)
+3. **Reuse it for the next similar problem**
+4. **Improve if necessary**
+5. **Save again**
 
-## コーディングエージェント時代における力
+## Power in the Age of Coding Agents
 
-Willisonは、このパターンがAIコーディングエージェント時代により強力になると指摘：
+Willison notes this pattern becomes more powerful in the AI coding agent era:
 
 > "The more things I know how to do, the more I can compose together to do new things. And the more I can compose together, the more useful my hoard becomes to a coding agent."
 
-**エージェントとの連携**:
-- 蓄えたスキルはLLMに渡すコンテキストとして再利用可能
-- 小さなユーティリティスクリプトのコレクションが、より大きなプロジェクトの「初期コンテキスト」になる
-- コーディングエージェントがHoardedコードを改善・再構成できる
+**Integration with agents**:
+- Accumulated skills can be reused as context passed to LLMs
+- Collections of small utility scripts become "initial context" for larger projects
+- Coding agents can improve and reorganize hoarded code
 
-## Composability（合成可能性）
+## Composability
 
-蓄えた部品を組み合わせて、より複雑なソリューションを構築する。これが「ホード」の真の価値。
+Combining accumulated components to build more complex solutions — this is the true value of the "hoard."
 
 ```
 Utility A (file processing)
@@ -54,7 +54,7 @@ Utility C (API client)
 → A + B + C = Complete data pipeline
 ```
 
-## 関連概念
-- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — 反復的改善サイクル（ホードはこのサイクルの「Save」段階で成長）
-- [[concepts/harness-engineering/agentic-engineering]] — Agentic Engineering全体像
-- [[concepts/context-window-management]] — コンテキストウィンドウ管理（ホードはコンテキストとして機能）
+## Related Concepts
+- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — Iterative improvement cycle (the hoard grows during the "Save" phase)
+- [[concepts/harness-engineering/agentic-engineering]] — Agentic Engineering overview
+- [[concepts/context-window-management]] — Context window management (the hoard functions as context)

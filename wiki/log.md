@@ -23,6 +23,29 @@
 ## [2026-05-27] translate | JP→EN batch — 8 files
 
 ### Files Translated
+- [[entities/reflexive-ai.md]] — Full body Japanese→English (422 JP chars removed)
+- [[concepts/craft-agents.md]] — Full body Japanese→English (416 JP chars removed)
+- [[entities/openai.md]] — 3 JP sections translated (GPT-Realtime-2, Codex Browser Plugin, MRC) (415 JP chars removed)
+- [[concepts/harness-engineering/agentic-workflows/showboat.md]] — Full body Japanese→English (405 JP chars removed)
+- [[concepts/agentic-scaffolding.md]] — Full body Japanese→English (397 JP chars removed)
+- [[concepts/evaluation-flywheel.md]] — Full body Japanese→English (395 JP chars removed)
+- [[entities/apurva-gandhi.md]] — Full body Japanese→English (393 JP chars removed)
+- [[concepts/harness-engineering/agentic-workflows/code-hoarding.md]] — Full body Japanese→English (388 JP chars removed)
+
+### Summary
+- Total JP chars removed: 3,231
+- Remaining JP files: 112
+- Remaining JP chars: 10,947
+- All `updated` dates bumped to 2026-05-27
+
+
+
+---
+
+
+## [2026-05-27] translate | JP→EN batch — 8 files
+
+### Files Translated
 - `concepts/exec-plans.md` — full body translation
 - `concepts/coding-agents.md` — full body translation
 - `concepts/claude-47-tokenizer.md` — full body translation

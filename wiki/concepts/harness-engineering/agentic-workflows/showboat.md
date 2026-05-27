@@ -5,7 +5,7 @@ aliases:
   - showboat
   - agent-documentation-tool
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-27
 tags:
   - tool
   - agentic-engineering
@@ -18,34 +18,34 @@ sources:
 
 # Showboat
 
-Simon Willisonが開発した、**コーディングエージェントに「自分の作業を示させる」ためのドキュメンテーション/成果物生成ツール**。
+A documentation/output generation tool developed by Simon Willison to **make coding agents "show their work"**.
 
-## 目的
+## Purpose
 
 > "Forces agents to 'show their work' by creating verifiable, auditable testing artifacts."
 
-エージェントの推論・テスト・実装プロセスを、検証可能なMarkdownドキュメントとして記録する。
+Records the agent's reasoning, testing, and implementation process as verifiable Markdown documentation.
 
-## 主要コマンド
+## Key Commands
 
-| コマンド | 説明 |
-|----------|------|
-| `showboat note` | Markdownの観察記録を追加 |
-| `showboat exec` | **最も重要。** 実行したコマンドとその出力を記録。ハルシネーションを防止 |
-| `showboat image` | スクリーンショットをキャプチャ（Rodneyと連携してUI検証に使用） |
+| Command | Description |
+|---------|------------|
+| `showboat note` | Record observations in Markdown |
+| `showboat exec` | **Most important.** Records the executed command and its output — prevents hallucination |
+| `showboat image` | Capture screenshots (used with Rodney for UI verification) |
 
-### `showboat exec` の重要性
+### Importance of `showboat exec`
 > "Records the exact command run + its output. Prevents hallucination by proving what actually happened."
 
-エージェントが「何を実行したか」を虚偽報告するのを防ぐ。実際の出力をドキュメントに埋め込むため、後から検証可能。
+Prevents agents from falsely reporting what they executed by embedding actual output in the documentation, making it verifiable after the fact.
 
-## CLI設計哲学
+## CLI Design Philosophy
 
 > "Design CLIs for agents. Structure `--help` outputs to be self-documenting for LLMs."
 
-Showboatの `--help` 出力は、LLMがツールを即座に理解・使用できるよう構造化されている。これは**エージェントファーストCLI設計**の典型例。
+Showboat's `--help` output is structured so that LLMs can immediately understand and use the tool. This is a typical example of **agent-first CLI design**.
 
-## 使用例
+## Usage Examples
 
 ### Linear Walkthrough
 ```
@@ -55,22 +55,23 @@ and build the walkthrough in there, using showboat note for commentary and showb
 or cat or whatever you need to include snippets of code you are talking about.
 ```
 
-→ このプロンプトで、Claude Codeは6つのSwiftファイルを詳細に解説するドキュメントを自動生成。
+→ With this prompt, Claude Code automatically generates detailed documentation explaining six Swift files.
 
-### APIドキュメンテーション
+### API Documentation
 ```
 Run `uvx showboat --help` and then create a `notes/api-demo.md` showboat document and use it to test and document that new API.
 ```
 
-## 関連ツール
+## Related Tools
 
-- [[concepts/harness-engineering/agentic-workflows/rodney]] — ブラウザ自動化CLI（Showboatと連携してスクリーンショット撮影）
--  — SwiftUIスライドアプリ（Showboatでコード解説を生成）
-## 関連概念
+- [[concepts/harness-engineering/agentic-workflows/rodney]] — Browser automation CLI (works with Showboat for screenshots)
+- [swiftui-slides](https://github.com/simonw/swiftui-slides) — SwiftUI slide app (code explanation generated with Showboat)
 
-- [[concepts/agentic-manual-testing]] — Showboatの主要ユースケース
-- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — コード解説生成パターン
-- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
+## Related Concepts
 
-## 参照
-- [[entities/simon-willison]] — 開発者
+- [[concepts/agentic-manual-testing]] — Primary use case for Showboat
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Code explanation generation pattern
+- [[concepts/harness-engineering/agentic-engineering]] — Higher-level concept
+
+## References
+- [[entities/simon-willison]] — Developer

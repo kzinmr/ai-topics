@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-23
+updated: 2026-05-27
 tags:
   - company
   - model
@@ -188,12 +188,12 @@ This represents ChatGPT's evolution from a chat tool to a platform — developer
 
 ### GPT-Realtime-2
 
-次世代音声AIモデル。主要機能：
+Next-generation voice AI model. Key features:
 
-- **音声推論（Speech Reasoning）**: 話し言葉を理解し推論する能力
-- **70+言語翻訳**: リアルタイム多言語翻訳
-- **ストリーミング文字起こし**: 音声のリアルタイムテキスト変換
-- 音声インタラクションの新たな基盤モデルとして位置づけ
+- **Speech Reasoning**: Ability to understand and reason with spoken language
+- **70+ Language Translation**: Real-time multilingual translation
+- **Streaming Transcription**: Real-time text conversion of speech
+- Positioned as a new foundation model for voice interaction
 
 
 ### Daybreak — Cybersecurity Initiative (May 2026)
@@ -213,22 +213,22 @@ OpenAI launched **Daybreak**, a cybersecurity initiative combining frontier mode
 - **ChatGPT Pro + Plaid integration**: Personal finance features via Plaid connection to 12,000+ financial institutions. Positioned as AI-powered financial management.
 
 
-### Codex ブラウザプラグイン
+### Codex Browser Plugin
 
-OpenAI のコーディングエージェント **Codex** がブラウザ上で直接動作するプラグインをリリース：
+OpenAI's coding agent **Codex** released a plugin that runs directly in the browser:
 
-- **Chrome** 拡張機能
-- **macOS / Windows** デスクトップ統合
-- 開発環境を問わず、ブラウザベースで Codex のコード生成・編集機能を利用可能に
+- **Chrome** extension
+- **macOS / Windows** desktop integration
+- Enables Codex's code generation and editing capabilities from any browser-based development environment
 
-### Multipath Reliable Connection（MRC）— OCP 経由でオープンソース化
+### Multipath Reliable Connection (MRC) — Open Sourced via OCP
 
-OpenAI は **MRC（Multipath Reliable Connection）** ネットワークプロトコルを **Open Compute Project（OCP）** を通じてオープンソース化：
+OpenAI open-sourced the **MRC (Multipath Reliable Connection)** network protocol through the **Open Compute Project (OCP)**:
 
-- **共同開発パートナー**: NVIDIA、AMD、Broadcom、Intel、Microsoft
-- GPUトラフィックを**数百経路に分散**し、障害時は**マイクロ秒単位で再ルーティング** — 数千GPUのロックステップ同期を維持し、トレーニングストールを防止
-- **戦略的意義**: ハードウェアベンダー間のポータビリティを確保し、NVIDIAのネットワーキング層支配を弱める狙い。NVIDIAは依然ハードウェアで勝つが、OpenAIはフロンティア訓練の依存レイヤーを単一サプライヤーに握らせない
-- 業界全体の標準化を目指す取り組み。関連: [[concepts/multipath-reliable-connection]]
+- **Co-development partners**: NVIDIA, AMD, Broadcom, Intel, Microsoft
+- Distributes GPU traffic across **hundreds of paths**, re-routing in **microseconds** during failures — maintaining lockstep synchronization across thousands of GPUs to prevent training stalls
+- **Strategic significance**: Ensures portability across hardware vendors, aiming to weaken NVIDIA's dominance in the networking layer. NVIDIA still wins on hardware, but OpenAI prevents frontier training dependencies from resting on a single supplier
+- An industry-wide standardization effort. Related: [[concepts/multipath-reliable-connection]]
 
 ### Apple Partnership Dispute (May 2026)
 

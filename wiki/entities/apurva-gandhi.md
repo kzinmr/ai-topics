@@ -3,7 +3,7 @@ title: "Apurva Gandhi"
 type: entity
 aliases: ["@apurvasgandhi", "Apurva S. Gandhi"]
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-27
 status: L2
 tags: [person, microsoft, ai-agents, reinforcement-learning]
 sources:
@@ -17,23 +17,23 @@ related:
 
 # Apurva Gandhi
 
-CMU のコンピューターサイエンス PhD 学生（Graham Neubig 指導）。元 Microsoft の Senior Machine Learning Scientist。AI エージェント、強化学習、推論時アルゴリズムの研究に従事。
+Computer Science PhD student at CMU (advised by Graham Neubig). Former Senior Machine Learning Scientist at Microsoft. Researches AI agents, reinforcement learning, and inference-time algorithms.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 詳細 |
-|------|------|
-| **所属** | Carnegie Mellon University, CSD |
-| **指導教員** | Graham Neubig |
-| **研究室** | 9011 Gates & Hillman Centers, Pittsburgh |
-| **過去の所属** | Microsoft (Senior ML Scientist, 4年間) |
-| **学位** | BS Computer Engineering & CS + MS Electrical Engineering (USC, summa cum laude) |
+| Item | Detail |
+|------|--------|
+| **Affiliation** | Carnegie Mellon University, CSD |
+| **Advisor** | Graham Neubig |
+| **Office** | 9011 Gates & Hillman Centers, Pittsburgh |
+| **Previous Affiliation** | Microsoft (Senior ML Scientist, 4 years) |
+| **Degrees** | BS Computer Engineering & CS + MS Electrical Engineering (USC, summa cum laude) |
 | **Web** | https://apga.github.io/ |
 | **X** | [@apurvasgandhi](https://x.com/apurvasgandhi) |
 | **Google Scholar** | [elzCF8sAAAAJ](https://scholar.google.com/citations?user=elzCF8sAAAAJ) |
 | **GitHub** | [ApGa](https://github.com/ApGa) |
 
-## 研究領域
+## Research Areas
 
 - AI Agents (LLM, Multimodal, Embodied)
 - Reinforcement Learning
@@ -41,28 +41,28 @@ CMU のコンピューターサイエンス PhD 学生（Graham Neubig 指導）
 - Reasoning and Abstraction
 - Inference-time algorithms
 
-## 主な業績
+## Key Works
 
 ### RAO: Recursive Agent Optimization (2026)
-[[concepts/rao-recursive-agent-optimization]] — 再帰的エージェントを end-to-end の RL で訓練する手法。CMU × Amazon AGI Labs。Qwen3-4B-Instruct を 75 ステップ訓練するだけで deep research タスクで単一エージェント比 +16% SR。
+[[concepts/rao-recursive-agent-optimization]] — A method for training recursive agents with end-to-end RL. CMU × Amazon AGI Labs. Training Qwen3-4B-Instruct for 75 steps achieves +16% SR over single-agent baselines on deep research tasks.
 
 ### Go-Browse: Training Web Agents with Structured Exploration (2025)
-arXiv:2506.03533。構造化された探索による Web エージェントの訓練。
+arXiv:2506.03533. Training web agents through structured exploration.
 
 ### SkillWeaver: Web Agents Can Self-Improve by Discovering and Honing Skills (2025)
-Web エージェントが自律的にスキルを発見・習熟する研究。
+Research on web agents autonomously discovering and mastering skills.
 
 ### Prior Work at Microsoft
-- Microsoft/M365 Copilot の基盤設計に貢献
-- Microsoft Office 用 Copilot の最初のプロトタイプを開発
-- クエリ処理のための微分可能演算子の特許
+- Contributed to the foundational design of Microsoft/M365 Copilot
+- Developed the first prototype of Copilot for Microsoft Office
+- Patents on differentiable operators for query processing
 
-## 注目すべき発言 (X/Twitter)
+## Notable Statements (X/Twitter)
 
-**RAO に関する Q&A (2026-05-08〜10)**:
-- 並列実行の促進について：「Qwen-Instruct モデルでは prompting で十分だった」（実験的には delegation bonus も試した）
-- 再帰深度の制御：「訓練時に max allowed depth を設定可能」
-- 実応用について：「RAO でエージェントを訓練すれば、既存の agent harness の使い方も向上する」
+**RAO Q&A (2026-05-08~10)**:
+- On promoting parallel execution: "Prompting was sufficient with Qwen-Instruct models" (also experimented with delegation bonuses)
+- On controlling recursion depth: "Max allowed depth can be set during training"
+- On practical applications: "Training agents with RAO also improves how they use existing agent harnesses"
 
 ## Amazon AI PhD Fellowship
-2025年に Amazon AI Ph.D. Fellow に選出。「強化学習、適応環境、スケーラブルなマルチエージェントインフラストラクチャの進歩を通じて、ますます複雑になる実世界のタスクに取り組む一般的に有能な AI エージェントシステムの訓練」に焦点。
+Selected as an Amazon AI Ph.D. Fellow in 2025. Focused on "training generally capable AI agent systems that tackle increasingly complex real-world tasks through advances in reinforcement learning, adaptive environments, and scalable multi-agent infrastructure."

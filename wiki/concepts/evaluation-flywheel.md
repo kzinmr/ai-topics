@@ -2,64 +2,64 @@
 title: "Evaluation Flywheel"
 tags: [evaluation]
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-27
 type: concept
 ---
 
 # Evaluation Flywheel
 
-OpenAIのcookbookで示される、評価と改善を循環させる開発パターン。
+A development pattern from OpenAI's cookbook that cycles evaluation and improvement.
 
 ## Core Concept
 
-モデルやエージェントの改善を**継続的なフィードバックループ**として捉える：
+Frames model and agent improvement as a **continuous feedback loop**:
 
 ```
 Data Collection → Evaluation → Analysis → Improvement → Data Collection → ...
 ```
 
-これは特定のプラットフォームに依存しない方法論で、以下の要素から構成される。
+This is a platform-agnostic methodology composed of the following elements.
 
 ## Key Components
 
-### 1. Golden Dataset の構築
+### 1. Building a Golden Dataset
 
-- 代表的な入力ケースのコレクション
-- 期待される出力の正解ラベル
-- 難易度別に層別化（簡単・普通・エッジケース）
-- 定期的に更新・拡張
+- A collection of representative input cases
+- Correct answer labels for expected outputs
+- Stratified by difficulty (easy, normal, edge cases)
+- Regularly updated and expanded
 
 ### 2. Multi-Metric Evaluation
 
-単一のスコアではなく、複数の評価軸を設ける：
+Rather than a single score, evaluate across multiple dimensions:
 
 | Metric | Purpose |
 |--------|---------|
-| Accuracy | 正解率 |
-| Latency | 応答速度 |
-| Cost | トークンコスト |
-| Consistency | 再現性 |
-| Safety | 安全性 |
+| Accuracy | Correctness rate |
+| Latency | Response speed |
+| Cost | Token cost |
+| Consistency | Reproducibility |
+| Safety | Safety |
 
 ### 3. Regression Detection
 
-- 新しい変更が既存のテストケースを壊していないか監視
-- 評価結果のバージョン管理
-- 閾値を下回った場合の自動アラート
+- Monitor whether new changes break existing test cases
+- Version control for evaluation results
+- Automatic alerts when thresholds are breached
 
 ### 4. Continuous Improvement Loop
 
-1. 評価結果からボトルネックを特定
-2. プロンプト・ツール・アーキテクチャの仮説を立てる
-3. A/Bテストで検証
-4. 成功した変更を本番に投入
-5. Golden Datasetに新しいケースを追加
+1. Identify bottlenecks from evaluation results
+2. Form hypotheses about prompts, tools, and architecture
+3. Validate with A/B testing
+4. Deploy successful changes to production
+5. Add new cases to the Golden Dataset
 
 ## Anti-Patterns
 
-- **評価を一度だけ行う**: モデルは更新され、ユースケースも変化する
-- **主観的な評価に依存**: 定量的なメトリクスと組み合わせる
-- **テストケースが偏っている**: 代表的な分布をカバーする
+- **Evaluating only once**: Models are updated and use cases evolve
+- **Relying on subjective evaluation**: Combine with quantitative metrics
+- **Biased test cases**: Cover a representative distribution
 
 ## Related
 

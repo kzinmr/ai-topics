@@ -2,7 +2,7 @@
 title: Reflexive AI Usage
 type: concept
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-27
 status: L2
 sources: ["https://www.firstround.com/ai/shopify (status: pending)", "https://x.com/tobi/status/1741234567890123457"]
 tags:
@@ -13,7 +13,7 @@ aliases: [reflexive-ai-usage, shopify-ai-policy]
 
 # Reflexive AI Usage
 
-Shopify CEO Tobi Lütkeが2025年4月に宣言した**「Reflexive AI usage is now a baseline expectation at Shopify」**。AI使用が単なるオプションではなく、**組織の必須スキル**へ昇格したことを示す。
+Shopify CEO Tobi Lütke declared in April 2025: **"Reflexive AI usage is now a baseline expectation at Shopify"**. This signals that AI use has been elevated from a mere option to an **organizational core skill**.
 
 ## Core Declaration
 
@@ -25,48 +25,48 @@ Shopify CEO Tobi Lütkeが2025年4月に宣言した**「Reflexive AI usage is n
 
 ## Shopify's AI Adoption Strategy
 
-First Round Capitalの分析によると、ShopifyのAI採用は以下の原則に基づく:
+According to First Round Capital's analysis, Shopify's AI adoption is based on the following principles:
 
-### 1. 誰でも高価なモデルを使用可能
+### 1. Anyone Can Use Expensive Models
 
-- 高価値のユースケースはどこからでも来る
-- 1,500ライセンス → さらに1,500ライセンスの**Cursor**を注文
-- 最速の成長ユーザー: エンジニアリングではなく**サポートと収益**
+- High-value use cases can come from anywhere
+- 1,500 licenses → ordered another **1,500 Cursor** licenses
+- Fastest-growing users: **Support and Revenue**, not Engineering
 
-### 2. Legalにはデフォルトで「Yes」
+### 2. Legal Defaults to "Yes"
 
-- 「Yesをデフォルトにしない = Noをデフォルトにすること」
-- GitHub Copilotを早期採用（80%採用率）
-- 法務チームを初期段階から関与
+- "Not defaulting to Yes = defaulting to No"
+- Early GitHub Copilot adopter (80% adoption rate)
+- Legal team engaged from the early stages
 
-### 3. AIツール費用の無制限
+### 3. Unlimited AI Tool Spending
 
-- AIツール支出に**クオータなし**
-- トークン使用量の内部リーダーボードが価値の代理指標
-- AI採用の摩擦を完全除去
+- **No quota** on AI tool spending
+- Internal token usage leaderboard as a proxy for value
+- Complete removal of friction for AI adoption
 
-### 4. AIに「プロセスを見せる」
+### 4. Showing AI the "Process"
 
-- AIの意思決定プロセスの透明性
-- 判断の根拠を明示
+- Transparency in AI decision-making processes
+- Explicit reasoning for judgments
 
 ### 5. Beginner's Mindset
 
-- 初心者のマインドセットを育成
-- 初心者をより多く採用
-- 確立された専門知識より**適応性**を重視
+- Cultivate a beginner's mindset
+- Hire more beginners
+- Value **adaptability** over established expertise
 
 ## Significance
 
-Reflexive AI Usageは、大企業におけるAI採用の**新しいパラダイム**を示す:
+Reflexive AI Usage represents a **new paradigm** for AI adoption in large enterprises:
 
-- AIスキル採用の**必須要件**化
-- AIで代替可能な職位の採用停止
-- トークン使用量の透明性・インセンティブ設計
-- 組織的文化としてのAIリテラシー
+- **Mandatory** AI skill requirements in hiring
+- Halting hires for positions replaceable by AI
+- Transparency and incentive design around token usage
+- AI literacy as organizational culture
 
 ## Related Concepts
 - [[concepts/reflexive-ai]]
 
-- [Company AI Pilled](company-ai-pilled.md) — 組織のAI駆動化フレームワーク
-- [Solo Founder Stack](solo-founder-stack.md) — 個人vs組織のAI活用比較
+- [Company AI Pilled](company-ai-pilled.md) — Organizational AI-driven transformation framework
+- [Solo Founder Stack](solo-founder-stack.md) — Individual vs. organizational AI usage comparison
