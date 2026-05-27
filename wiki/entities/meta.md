@@ -43,7 +43,7 @@ The Muse Spark model powers Meta's personal agent features, including the Ray-Ba
 
 ### Ray-Ban AI Glasses Collaboration
 
-Meta + Ray-Ban smart glasses launched 2023, significantly upgraded 2024-2025 with on-device AI capabilities. Key milestone: **700万+ units sold in 2025**, with 2026 production targets of 2,000-3,000万 units.
+Meta + Ray-Ban smart glasses launched 2023, significantly upgraded 2024-2025 with on-device AI capabilities. Key milestone: **7M+ units sold in 2025**, with 2026 production targets of 20-30 million units.
 
 The glasses are positioned as Meta's "primary computing device" for personal AI — always-on, context-aware, hands-free. Community projects like **VisionClaw** (Xiaoan Sean Liu, Feb 2026) demonstrate combining Ray-Ban Meta + Gemini Live API + OpenClaw for autonomous agent experiences.
 

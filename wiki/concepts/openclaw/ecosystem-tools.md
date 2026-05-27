@@ -41,7 +41,7 @@ An **MCP-first developer tool ecosystem** built by Peter Steinberger (@steipete)
 |--------|------|-------|
 | **Peekaboo** | macOS CLI + MCP server. Screenshot capture for AI agents | 3.1k |
 | **mcporter** | Call MCP from TypeScript, packaged as CLI | 3.8k |
-| **gogcli** | Google Suite CLI（Gmail, GCal, GDrive, Google Contacts） | 6.7k |
+| **gogcli** | Google Suite CLI (Gmail, GCal, GDrive, Google Contacts) | 6.7k |
 | **Terminator MCP** | "I'll be back... with your terminal output!" Returns terminal output to agents | — |
 
 ### Developer Utilities

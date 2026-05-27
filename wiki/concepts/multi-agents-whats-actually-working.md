@@ -102,4 +102,4 @@ The communication challenges identified by Cognition align with:
 ## Sources
 - [Multi-Agents: What's Actually Working](https://cognition.ai/blog/multi-agents-whats-actually-working) — Cognition Blog, 2026-04-22
 - [Don't Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents) — Cognition Blog, ~2025-06 (10 months prior)
-- X post: https://x.com/walden_yan/status/... (@walden_yan, 4月22日)
+- X post: https://x.com/walden_yan/status/... (@walden_yan, April 22)

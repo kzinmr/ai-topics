@@ -120,4 +120,4 @@ text at the beginning ... 1000 chars truncated ... text at the end
 
 - [OpenAI: From model to agent](https://openai.com/index/equip-responses-api-computer-environment/)
 - [[entities/openai]] — OpenAI
--  — Responses API（実装基盤）
+-  — Responses API (Implementation Base)

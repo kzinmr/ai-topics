@@ -36,7 +36,7 @@ Current mainstream approach. Learns to progressively restore images from noise:
 - **Midjourney**: Most popular in the creative industry
 - **Nano Banana 2**: Google/Gemini 3's latest model (inference + web search integration)
 
-### GAN（Generative Adversarial Networks）
+### GAN (Generative Adversarial Networks)
 Training through competition between generator and discriminator:
 - StyleGAN series (NVIDIA)
 - Mainly used for face generation and style transfer

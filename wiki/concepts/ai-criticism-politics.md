@@ -38,7 +38,7 @@ This analysis adds depth to the [[concepts/ai-autonomy-debate]] by providing a p
 
 ## Conservative Alignment Analysis (2026-04)
 
-Sean Goedecke published an analysis arguing that anti-AI rhetoric, while often framed in progressive language,实质上 aligns with conservative worldview patterns. The analysis identifies a contradiction: progressive framing masks underlying conservative motivations (preservation of existing structures, skepticism of rapid technological change, status quo defense).
+Sean Goedecke published an analysis arguing that anti-AI rhetoric, while often framed in progressive language that effectively aligns with conservative worldview patterns. The analysis identifies a contradiction: progressive framing masks underlying conservative motivations (preservation of existing structures, skepticism of rapid technological change, status quo defense).
 
 This adds a layer to the political dimensions of AI criticism — the framing and the underlying worldview may not align, complicating efforts to map AI attitudes onto traditional political spectrums.
 

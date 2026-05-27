@@ -138,7 +138,7 @@ A talk presenting his framework for systematic AI agent evaluation. The talk cov
 - [[concepts/llm-patterns-eugene-yan]] — Co-author of the O'Reilly Applied LLMs Guide (What We Learned from a Year of Building with LLMs)
 - [[entities/eugene-yan]] — Lead author of the Applied LLMs Guide
 
-### 関連人物 (Related People)
+### Related People
 - **[[entities/charles-frye]]** — Former Weights & Biases colleague; both advocate for practical ML engineering education over hype
 - **[[will-mcgugan]]** — Fellow Weights & Biases community figure; both interested in developer experience and tooling
 - **Weights & Biases** — Where Bischof built the data teams; central to modern ML experiment tracking

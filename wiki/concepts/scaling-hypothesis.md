@@ -106,7 +106,7 @@ Agency can emerge even from non-agentic data:
 
 1. **Intentional stance**: Humans naturally model systems (rivers, planets) as agents — it's computationally cheaper
 2. **Variational principles**: Solving physical systems via reward-maximization framing is universally useful
-3. **Ambient agency**: "Agency may be like Turing-completeness — even in settings free of selection or optimization, it is a capability too useful and too convergent to guarantee its absence"(→ [[concepts/ambient-agency|Ambient Agency]], [[concepts/turing-completeness-emergence|Turing完全性's 自然発生]])
+3. **Ambient agency**: "Agency may be like Turing-completeness — even in settings free of selection or optimization, it is a capability too useful and too convergent to guarantee its absence"(→ [[concepts/ambient-agency|Ambient Agency]], [[concepts/turing-completeness-emergence|Turing completeness's spontaneous emergence]])
 
 ### Safety Implications
 

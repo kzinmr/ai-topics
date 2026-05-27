@@ -181,7 +181,7 @@ The model can be understood as a **learned, amortized form of pseudo-relevance f
 | Source | Method | Status |
 |--------|--------|--------|
 | RSS Feed | [dtunkelang.medium.com/feed](https://dtunkelang.medium.com/feed) | ✅ Active (added 2026-05-19; RSS → blogwatcher → daily `blog-ingest` pipeline) |
-| X/Twitter | [@dtunkelang](https://x.com/dtunkelang) | Tracked in `x-accounts.yaml` (X accounts scan, 2日毎) |
+| X/Twitter | [@dtunkelang](https://x.com/dtunkelang) | Tracked in `x-accounts.yaml` (X accounts scan, every 2 days) |
 
 ## Core Philosophy
 

@@ -3,6 +3,35 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-27] translate | JP→EN batch — 13 files (48 JP chars)
+
+### Files Translated
+- [[concepts/bitsandbytes.md]] — `T4 16GB GPUでのベンチマーク:` → `Benchmark on T4 16GB GPU:`
+- [[concepts/scaling-hypothesis.md]] — wikilink JP → EN (`Turing完全性's 自然発生` → `Turing completeness's spontaneous emergence`)
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration.md]] — `Responses API（実装基盤）` → `Responses API (Implementation Base)`
+- [[concepts/code-execution-with-mcp.md]] — `★ こ's ページ` → `★ this page`
+- [[concepts/code-mode.md]] — `★ こ's ページ` → `★ this page`
+- [[entities/bryan-bischof.md]] — `### 関連人物 (Related People)` → `### Related People`
+- [[entities/daniel-tunkelang.md]] — `2日毎` → `every 2 days`
+- [[concepts/multi-agents-whats-actually-working.md]] — `4月22日` → `April 22`
+- [[concepts/ai-image-generation.md]] — fullwidth parens → ASCII
+- [[concepts/openclaw/ecosystem-tools.md]] — fullwidth parens → ASCII
+- [[entities/meta.md]] — `700万+` → `7M+`, `2,000-3,000万` → `20-30 million`
+- [[entities/lilian-weng.md]] — `require加倍 effort` → `require doubled effort`
+- [[concepts/ai-criticism-politics.md]] — `实质上` → `effectively`
+
+### Excluded (Chinese proper names / raw paths)
+- 14 files with Chinese proper names (姚顺雨, 月之暗面, 智谱, 小红书, 政务龙虾, 混元, etc.) — intentionally preserved
+- 1 file (thin-bi.md) — JP chars in raw article path reference, excluded per policy
+
+### Stats
+- Total JP chars removed: 48
+- Remaining JP content files: 14 (all Chinese proper names — intentionally preserved)
+- Remaining JP chars: 62 (all in Chinese names/paths/citations)
+
+
+---
+
 ## [2026-05-27] ingest | Every: Codex for Knowledge Work → wiki enrichment
 
 ### Raw Article Saved

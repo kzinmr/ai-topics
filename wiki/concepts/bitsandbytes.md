@@ -166,7 +166,7 @@ Hugging Face Transformers
 
 ## Performance
 
-T4 16GB GPUでのベンチマーク:
+Benchmark on T4 16GB GPU:
 
 | Model | FP16 Size | Method | Result |
 |-------|-----------|------|------|
