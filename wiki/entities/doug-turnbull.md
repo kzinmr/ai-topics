@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-05-20
+updated: 2026-05-27
 tags:
   - person
   - developer-tooling
@@ -65,6 +65,15 @@ See [[doug-turnbull-speaking]] for conference appearances, community contributio
 > "Agents put the Resilient in RAG."
 > "Grug-brained evals: Big brain spend months building perfect quality metrics. Grug brain just want dumb labels from coworkers 👍/👎."
 > "The tests are the code now."
+
+## Cheat at Search Series (2026)
+
+Doug Turnbull published a 4-part slide deck series as companion material for his *Cheat at Search* course:
+
+1. **NDCG / Search Evaluation** → [[concepts/ndcg]]
+2. **LLM Query Understanding** → [[concepts/query-understanding]], [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]]
+3. **Steering Lost Agents** → [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents]], [[concepts/agent-steering]]
+4. **LLM as a Judge** → [[concepts/llm-search-judge]], [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge]]
 
 ## Recent Blog Posts
 

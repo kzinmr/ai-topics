@@ -2,6 +2,14 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-27] Cheat at Search Part 4: LLM as a Judge → new concept page, entity enrichment
+
+- **Raw article**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md` — Doug Turnbull's Part 4 slides on LLM-based search relevance evaluation
+- **New concept**: `concepts/llm-search-judge.md` — LLM Search Judge concept page covering pointwise (0-3 grading) and pairwise (A/B comparison) approaches, decision tree aggregation (~83% precision), double-checking for consistency, and workflow integration with NDCG
+- **Enriched concept**: `concepts/ndcg.md` — Added "LLM-Based Relevance Labeling" section with pointwise vs pairwise comparison table, decision tree approach, and workflow
+- **Updated entities**: `entities/doug-turnbull.md` — Added full 4-part Cheat at Search series section; `entities/doug-turnbull-projects.md` — Added slide deck series listing
+- **Cross-references**: llm-search-judge ↔ ndcg ↔ doug-turnbull; connects Cheat at Search Part 1 (NDCG) with Part 2 (QU) and Part 4 (LLM Judge)
+
 ## [2026-05-27] raw-backlog-ingest | Ed Zitron "I Will Never Respect A Website" + "AI Is Really Weird" → enriched entities/ed-zitron.md
 
 - **Raw articles**: `raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md`, `raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md`

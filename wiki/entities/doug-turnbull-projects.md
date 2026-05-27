@@ -3,7 +3,7 @@ title: Doug Turnbull - Key Projects & Works
 type: entity-sub
 parent: doug-turnbull
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-27
 tags:
   - person
   - methodology
@@ -40,6 +40,12 @@ Python project enabling local LLMs to serve as search relevance judges. 28 stars
 
 ### Cheat at Search (Maven Course)
 Live, cohort-based training course on search engineering with LLMs and agents. Rated 4.7/5 from 74+ reviews. Covers information retrieval as an agentic process, LLM query understanding, BM25 + lexical retrieval, embedding retrieval, hybrid search, evaluation/NDCG, and agentic search. Priced at $1,300 per student with free "Essentials" lightning lessons available.
+
+**Slide deck series (2026):**
+- Part 1: NDCG / Search Evaluation (see [[concepts/ndcg]])
+- Part 2: [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search|LLM Query Understanding]] — structured attribute extraction from free-text queries
+- Part 3: [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents|Steering Lost Agents]] — agentic design patterns for search
+- Part 4: [[concepts/llm-search-judge|LLM as a Judge]] — automated search relevance evaluation with LLMs
 
 ### Consulting & Training
 Turnbull offers $12,000 team training courses (up to 12 participants) covering:

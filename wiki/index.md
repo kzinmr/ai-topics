@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2110 | Indexed entries: 1385 | Not in index: 674 |## Entities (679 pages)
+> Last updated: 2026-05-27 | Total pages: 2111 | Indexed entries: 1385 | Not in index: 674 |## Entities (679 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -705,7 +705,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (665 pages)
+## Concepts (666 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -896,6 +896,7 @@
 - [[concepts/llm-as-judge-skills]] — Murat Can Koylan's reusable skills for LLM output evaluation. Part of Agent-Skills-for-Context-Engineering (15.5k stars). Context engineering approach to eval.
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm — Two-stage development approach: pre-training → post-training (SFT+RS+DPO). Established in the Llama 3 paper.
+- [[concepts/llm-search-judge]] — LLM Search Judge: Using LLMs as automated relevance judges for search evaluation. Pointwise (0-3 grading) and pairwise (A/B comparison) approaches. Decision tree aggregation achieves ~83% precision. Enables NDCG computation without human labels. Based on Doug Turnbull's Cheat at Search Part 4.
 - [[concepts/llm-augmented-knowledge-retrieval]] — LLM-Augmented Knowledge Retrieval — Pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Retrieval-first organization for LLM-queryable vaults. Related: Claude Code + Obsidian integration, Karpathy's LLM Wiki concept.
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)

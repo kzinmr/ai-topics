@@ -1,13 +1,17 @@
 ---
 title: NDCG (Normalized Discounted Cumulative Gain)
 created: 2026-05-17
-updated: 2026-05-19
+updated: 2026-05-27
 type: concept
 tags:
   - evaluation
   - search
   - benchmark
 sources: [raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md]
+related:
+  - concepts/judgment-list
+  - concepts/llm-search-judge
+  - entities/softwaredoug
 ---
 
 # NDCG (Normalized Discounted Cumulative Gain)
@@ -291,6 +295,25 @@ Run NDCG with feature flag on/off in production — no separate "lab" world need
 - Change lives in main codebase
 - Can easily turn into A/B test
 - Can easily ship to all users
+
+### LLM-Based Relevance Labeling
+
+A major bottleneck in NDCG-based evaluation is the requirement for **human-annotated relevance labels**. Doug Turnbull's *Cheat at Search Part 4* (2026) systematizes the use of LLMs as automated relevance judges, enabling NDCG computation on unlabeled query-result pairs.
+
+**Two approaches:**
+| Approach | Description | Pros | Cons |
+|---|---|---|---|
+| **Pointwise LLM Judge** | Assign 0–3 relevance grade to each query-doc pair | Direct NDCG input; ~73% human agreement | Harder task; noisy label mapping |
+| **Pairwise LLM Judge** | Compare two results, pick more relevant | Easier task for LLMs; less noise | O(n²) comparisons; requires aggregation to NDCG |
+
+The **pairwise + decision tree** approach achieves ~83% precision by combining multiple specialized judges (name, description, classification, features) with a learned weighting function. Double-checking by swapping LHS/RHS and filtering inconsistent pairs yields additional noise reduction.
+
+**Workflow:**
+```
+Unlabeled queries → LLM Judge(s) → Synthetic relevance labels → NDCG
+```
+
+This enables **continuous evaluation** — every ranking change can be immediately assessed on production query traffic without waiting for human labelers. See [[concepts/llm-search-judge]] for the full technique.
 
 ## Summary
 
