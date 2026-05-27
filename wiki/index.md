@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2095 | Indexed entries: 1374 | Not in index: 674 |## Entities (674 pages)
+> Last updated: 2026-05-27 | Total pages: 2096 | Indexed entries: 1375 | Not in index: 674 |## Entities (674 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -180,6 +180,7 @@
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/corti]] — Corti — Healthcare AI frontier lab. Symphony STT: clinical-grade speech-to-text, 1.4% WER (93% lower than OpenAI/Whisper). 100M+ patients/year. Copenhagen HQ.
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
+- [[entities/cyrilxbt]] — @cyrilxbt — X/Twitter content creator focused on Obsidian, Claude Code, and personal knowledge management. Retrieval-first vault organization methodology, Claude Code + Filesystem MCP integration for natural language vault queries.
 - [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox, Agent-Native Architecture framework, and the definition of AI slop as "visible sameness." 12 predictions on AI & work from Lenny's Podcast (May 2026).
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
@@ -882,6 +883,7 @@
 - [[concepts/llm-as-judge-skills]] — Murat Can Koylan's reusable skills for LLM output evaluation. Part of Agent-Skills-for-Context-Engineering (15.5k stars). Context engineering approach to eval.
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm — Two-stage development approach: pre-training → post-training (SFT+RS+DPO). Established in the Llama 3 paper.
+- [[concepts/llm-augmented-knowledge-retrieval]] — LLM-Augmented Knowledge Retrieval — Pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Retrieval-first organization for LLM-queryable vaults. Related: Claude Code + Obsidian integration, Karpathy's LLM Wiki concept.
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
