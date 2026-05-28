@@ -2,6 +2,43 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] paper-ingestion | Ingested DiffusionBlocks paper (arXiv:2506.14202, ICLR 2026)
+
+### Pages Created
+- [[concepts/diffusionblocks]] — DiffusionBlocks: Block-wise neural network training via diffusion interpretation. Sakana AI's method for converting transformer residual connections into independently trainable denoising blocks. B× memory reduction, score matching objective, equi-probability noise partitioning. ICLR 2026.
+
+### Raw Paper Saved
+- wiki/raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training.md
+
+### Sources
+- https://arxiv.org/abs/2506.14202
+- https://github.com/SakanaAI/DiffusionBlocks
+
+## [2026-05-28] entity-page | Created entity page for Sakana AI
+
+### Pages Created
+- [[entities/sakana-ai]] — Sakana AI — Tokyo-based AI research lab founded July 2023 by David Ha (ex-Google Brain), Llion Jones (Transformer co-author), and Ren Ito. Nature-inspired intelligence, evolutionary model merging, AI Scientist (13K+ stars), DiffusionBlocks (ICLR 2026). Japan's most valuable startup (~$2.65B, Nov 2025 Series B). ~131 employees, $379M total funding. Key investors: MUFG, NTT, KDDI, Nvidia, In-Q-Tel, Lux Capital, Khosla. Covers research philosophy (breaking scaling paradigm), funding history, 10 major projects, competitive positioning, business model, and government/defense work.
+
+### Sources
+- https://sakana.ai/ (official website)
+- https://sacra.com/c/sakana-ai/ (valuation/funding report)
+- https://www.cnbc.com/2023/08/17/transformer-co-author-llion-jones-leaves-google-for-startup-sakana-ai.html (founding story)
+- https://www.japantimes.co.jp/business/2025/11/17/companies/sakana-ai-valuation/ (Series B coverage)
+- https://www.asahi.com/ajw/articles/15434714 (Asahi Shimbun profile)
+- https://github.com/SakanaAI (GitHub organization)
+- wiki/raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training.md (DiffusionBlocks paper)
+
+## [2026-05-28] entity-page | Created entity page for Takuya Akiba
+
+### Pages Created
+- [[entities/takuya-akiba]] — Takuya Akiba (@iwiwi) — Staff Research Scientist at Sakana AI. Creator of Optuna (KDD 2019, ~14K stars, ~3,900 citations), co-creator of ChainerMN, Kaggle Grandmaster (2019), TopCoder legend (max rating 3,292, 4th worldwide). PhD from UTokyo. Covers full career: NII → Preferred Networks → Stability AI → Sakana AI. Major contributions: Optuna, ChainerMN, ResNet-50 in 15 min (1,024 GPUs, world record), PFDet (2nd place Open Images 2018), Evolutionary Model Merging (Nature Machine Intelligence 2025), DiffusionBlocks (ICLR 2026), Japanese StableLM. Includes research philosophy (competing on ingenuity over data scale), competitive programming achievements, books, and selected publications.
+
+### Sources
+- https://takiba.net/ (personal website)
+- https://www.s.u-tokyo.ac.jp/en/rigakuru/alumni/gc4Ne8rw/ (UTokyo RIGAKU-RU interview, May 2024)
+- https://arxiv.org/abs/2506.14202 (DiffusionBlocks paper, ICLR 2026)
+- wiki/raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training.md (wiki raw paper)
+
 ## [2026-05-28] raw-backlog-ingest | Raw backlog triage — 5 articles, 1 take (Mistral Latent Space podcast), 2 skips (non-AI), 2 duplicate skips
 
 ### Pages Updated

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2234 | Indexed entries: 1454 | Not in index: 737
+> Last updated: 2026-05-28 | Total pages: 2236 | Indexed entries: 1456 | Not in index: 737
 
 ## Entities (703 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -82,6 +82,7 @@
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
 - [[entities/roocode]] — RooCode — AI-powered VS Code extension (shut down May 15, 2026). Community fork Zoo Code continues development. 24K stars, Steer Mode for local models.
 - [[entities/sairahul1]] — Rahul (@sairahul1): AI engineer, Claude Code 7-agent Software Factory author. Pixxel, Hyderabad.
+- [[entities/sakana-ai]] — Sakana AI — Tokyo-based AI research lab founded 2023 by David Ha, Llion Jones, Ren Ito. Nature-inspired intelligence, evolutionary model merging, AI Scientist. Japan's most valuable startup (~$2.65B).
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
 - [[entities/sapient-intelligence]] — Sapient Intelligence — Brain-inspired AGI company (Singapore/Beijing/PA). HRM-Text: 1B non-Transformer reasoning model trained for ~$1,000. HRM beat DeepSeek R1/o3 on ARC-AGI.
 - [[entities/samuelcolvin]] — samuelcolvin
@@ -92,6 +93,7 @@
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark for knowledge-grounded agent evaluation.
 - [[entities/siyan-zhao]] — Siyan Zhao — UCLA / Meta Superintelligence Labs researcher. Lead author of On-Policy Self-Distillation (OPSD) for LLM reasoning post-training (2026). Same-model self-distillation with privileged ground-truth context.
 - [[entities/stable-audio-3]] — Stable Audio 3.0 — Stability AI's 4-model audio generation family. Up to 6m20s tracks, 3/4 open weights. SAME autoencoder, no CFG, inpainting. May 2026.
+- [[entities/takuya-akiba]] — Takuya Akiba (@iwiwi) — Staff Research Scientist at Sakana AI. Creator of Optuna, co-creator of ChainerMN. Kaggle Grandmaster, TopCoder legend. PhD from UTokyo.
 - [[entities/tambo]] — Tambo (tambo.co) — Open-source Generative UI toolkit for React. AI agents respond using existing components
 - [[entities/thibault-sottiaux]] — OpenAI executive. Led Codex development; May 2026 promoted to lead core product and platform teams (ChatGPT + Codex + API). Overseeing "super app" development.
 - [[entities/tobi-lutke]] — Tobi Lütke — Shopify CEO, Ruby on Rails core member, Snowdevil founder. River AI agent, qmd (24.6K★), $1 salary, IMSA LMP2 racer. Apprenticeship philosophy.
@@ -710,7 +712,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (717 pages)
+## Concepts (718 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1267,6 +1269,7 @@
 - [[concepts/dflash-ggml]] — DFlash on ggml: ggml port of DFlash speculative decoding.
 - [[concepts/dgx-spark-local-llm-server]] — DGX Spark Local LLM Server
 - [[concepts/differential-symbolic-modules]] — Differential Symbolic Modules: Hybrid architecture combining symbolic computation layers with differentiable components.
+- [[concepts/diffusionblocks]] — DiffusionBlocks: Block-wise neural network training via diffusion interpretation. Converts transformer residual connections into independently trainable denoising blocks (ICLR 2026, Sakana AI). B× memory reduction.
 - [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy: "Just Talk To It" — Philosophy prioritizing direct prompts over complex frameworks.
 - [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API: Docker Sandbox API for safely executing AI coding agents.
 - [[concepts/dr-manhattan-syndrome-ai]] — Dr. Manhattan Syndrome in AI Leadership: Communication pathology where AI industry leaders speak in the abstract of "Humanity" and lose connection with real human concerns. Concept named by Person Familiar.
