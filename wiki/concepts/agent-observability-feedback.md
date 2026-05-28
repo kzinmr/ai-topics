@@ -14,10 +14,13 @@ aliases:
   - llm-observability
   - agent-trace-evaluation
 related:
-  - [[concepts/harness-engineering]]
-  - [[concepts/subagent-patterns]]
-  - [[concepts/evaluating-llms-harness]]
+  - "[[concepts/harness-engineering]]"
+  - "[[concepts/subagent-patterns]]"
+  - "[[concepts/evaluating-llms-harness]]"
+  - "[[concepts/probabilistic-era-software]]"
+  - "[[concepts/evals-vs-monitoring-debate]]"
 sources:
+  - raw/articles/2026-01-10_harrison-chase_code-documents-app-traces-do.md
   - raw/articles/2026-05-05-agent-observability-needs-feedback-to-power-learning.md
   - https://www.langchain.com/blog/on-agent-frameworks-and-agent-observability
   - https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning
@@ -143,6 +146,32 @@ Effective agent observability programs run both offline and online evaluations. 
 - [[concepts/harness-engineering]] — Observability is a core component of the "harness" that surrounds and constrains LLMs. The feedback loop IS harness engineering in practice.
 - [[concepts/subagent-patterns]] — As agents manage more subagents (Patterns 3-4), observability becomes critical for understanding coordination failures and agent loops.
 - [[concepts/evaluating-llms-harness]] — LLM-as-judge evaluation is a key technique within the observability feedback loop.
+- [[concepts/probabilistic-era-software]] — Chase's thesis that "code no longer documents the app" is the practical manifestation of Segato's ontological shift (`F: X→Y` → `F'(?)`). Traces replace code as documentation precisely because input space is infinite and outputs are stochastic.
+- [[concepts/evals-vs-monitoring-debate]] — Chase bridges the debate: offline evals (trace datasets) + online evals (production trace monitoring) are both necessary. LangSmith is built for both, unlike Braintrust (offline-first) or Raindrop (monitoring-first).
+
+## The Three Articles: A Unified Framework
+
+Three independently-arrived-at perspectives from early 2026 converge on the same conclusion — **AI agents require fundamentally different engineering practices than deterministic software**:
+
+| Author | Thesis | Layer |
+|---|---|---|
+| **Harrison Chase** (Jan 2026) | "Code documents the app → traces do" | **Operational**: what changes in daily engineering practice |
+| **Gian Segato** (Aug 2025) | "F: X→Y → F'(?)" | **Ontological**: why the old assumptions break at the foundational level |
+| **Ben Hylak** (Sep 2025, May 2026) | "Floor raising > benchmark maxxing" | **Evaluative**: how to measure quality when correctness is ambiguous |
+
+### The Causal Chain
+
+```
+Segato's Ontological Shift          Chase's Operational Shift           Hylak's Evaluative Shift
+─────────────────────────          ─────────────────────────           ─────────────────────────
+F: X→Y becomes F'(?)         →     Code no longer documents       →     Evals can't capture production
+Infinite input space               the app's actual behavior            truth; you can only test what
+Stochastic outputs                 → traces become the source           you already know is broken
+Models are discovered,             of truth for debugging,             → floor raising via production
+not engineered                     testing, and monitoring              monitoring is the answer
+```
+
+All three argue, from different angles, that **deterministic engineering playbooks are actively harmful when applied to AI agents.** Segato provides the philosophical framework, Chase provides the operational translation, Hylak provides the evaluation methodology.
 
 ## References
 

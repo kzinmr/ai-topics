@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2244 | Indexed entries: 1462 | Not in index: 740
+> Last updated: 2026-05-28 | Total pages: 2245 | Indexed entries: 1462 | Not in index: 741
 
 ## Entities (705 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.

@@ -4357,3 +4357,14 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ### Sources
 - https://giansegato.com/essays/probabilistic-era
 - https://giansegato.com/
+
+## [2026-05-28] LangChain traces-as-documentation cross-connection | Unified framework synthesis
+
+### Pages Created
+- raw/articles/2026-01-10_harrison-chase_code-documents-app-traces-do.md — Full blog post text
+
+### Pages Updated
+- [[concepts/agent-observability-feedback]] — Added unified framework section (Segato ontological → Chase operational → Hylak evaluative), cross-linked probabilistic-era-software and evals-vs-monitoring-debate
+
+### Key Insight
+Three independently-arrived-at perspectives form a causal chain: Segato's F: X→Y → F'(?) explains WHY deterministic playbooks break → Chase's traces-as-documentation shows WHAT changes in daily practice → Hylak's floor raising provides HOW to measure quality in this new paradigm.
