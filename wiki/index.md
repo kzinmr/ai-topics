@@ -919,6 +919,7 @@
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
+- [[concepts/longembed]] — LongEmbed — Benchmark + methodology for extending embedding models to 32K context without retraining (PI, NTK, SelfExtend). RoPE-based models inherently superior to APE for context extension. Dawei Zhu et al., arXiv:2404.12096 (Apr 2024).
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents — Run ACP-compatible coding agents as Mastra tools/sub-agents. Supports supervisor delegation and workflow steps. @mastra/acp@0.1.0 (May 2026).
 - [[concepts/magnifica-humanitas]] — Magnifica Humanitas — Pope Leo XIV's 2026 encyclical "On Safeguarding the Human Person in the Time of AI." First papal document dedicated to AI. Chris Olah (Anthropic) spoke at Vatican presentation.
 - [[concepts/macro-evals-for-agentic-systems]] — Macro Evals for Agentic Systems — Methodology for discovering collective-level behavioral patterns in multi-agent systems. Lower-level evals → BERTopic clustering → AgentTrace diagnostics. OpenAI × Slalom (May 2026).

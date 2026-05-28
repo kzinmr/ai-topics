@@ -1,6 +1,13 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] ingest | arXiv:2404.12096 "LongEmbed" → concepts/longembed.md, cross-link to embedding-long-context-degradation
+
+- **Source**: arXiv:2404.12096 — "LongEmbed: Extending Embedding Models for Long Context Retrieval" (Dawei Zhu et al., Apr 2024, revised Nov 2024)
+- **Raw paper**: `raw/papers/2024-04-18_2404.12096_longembed-extending-embedding-models.md`
+- **concepts/longembed.md** (NEW): Benchmark (6 tasks: 2 synthetic + 4 real, up to 32K tokens) + context extension methods (PI for APE, NTK/SelfExtend for RoPE). RoPE models inherently superior for extension. Synthesis with Jina blindness study: position encoding solvable, semantic focus unsolved.
+- **concepts/embedding-long-context-degradation.md** (UPDATED): Added "Relationship to LongEmbed" section — comparison table showing complementary scope (extension mechanism vs retrieval quality ceiling). Two walls: architectural (solved by RoPE) vs representational (unsolved).
+
 ## [2026-05-28] ingest | Jina AI "Long-Context Embedding Models are Blind Beyond 4K Tokens" → entities/jina-ai.md, concepts/embedding-long-context-degradation.md
 
 - **Source**: jina.ai — "Long-Context Embedding Models are Blind Beyond 4K Tokens" (Saahil Ognawala & Alex C-G, Mar 7, 2025)

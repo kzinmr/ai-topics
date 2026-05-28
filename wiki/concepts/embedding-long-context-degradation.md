@@ -113,3 +113,15 @@ However, embedding degradation is even **more severe** — while LLM context rot
 - 3,234 haystacks constructed from 10 public-domain books
 - Double-blind protocol; 3D-printed templates for consistent needle placement
 - [Code and dataset available](https://github.com/jina-ai/embedding-long-context-evaluation)
+
+## Relationship to LongEmbed
+
+[[concepts/longembed|LongEmbed]] (arXiv:2404.12096, Apr 2024) provides the **extension mechanism** that makes 8K+ embedding models possible — through position interpolation, NTK-aware scaling, and SelfExtend for RoPE models. But this study reveals that **extension ≠ retrieval quality**: a model technically capable of encoding 8K tokens still degrades to random-chance retrieval at just ~4K. Two complementary findings:
+
+| Dimension | LongEmbed (2024) | This Study (2025) |
+|-----------|-----------------|-------------------|
+| **Problem** | How to reach 32K context | What retrieval looks like at scale |
+| **Solution** | PI, NTK, SelfExtend (position encoding) | Chunk at 512–1K; lexical fallback |
+| **Wall** | Architectural (position representation) | Representational (semantic focus) |
+
+LongEmbed's RoPE superiority finding explains why jina-embeddings-v3 (RoPE-based) supports 8K tokens — but it doesn't change the fact that even RoPE models lose semantic discrimination at ~4K.
