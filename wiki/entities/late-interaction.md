@@ -60,6 +60,7 @@ For each query token embedding, it finds the maximum cosine similarity against a
 | Feb 2026 | Second wave submission deadline; workshop moved to afternoon due to scheduling conflicts |
 | Mar 2026 | Camera-ready deadline |
 | Apr 2, 2026 | LIR Workshop held at ECIR 2026 in Delft, Netherlands |
+| Apr 2026 | DenseOn (BEIR 56.20) and LateOn (BEIR 57.22) released by LightOn — open SOTA single and multi-vector retrieval models with full training pipeline |
 | 2026 | Workshop proceedings published in Springer LNCS Vol. 16485 |
 
 ## Workshop Organizers

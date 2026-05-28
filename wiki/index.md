@@ -13,6 +13,7 @@
 - [[entities/ahmed-awadallah]] — Ahmed Awadallah — Research manager at Microsoft Research AI Frontiers, leads the team behind [[echo-rl|ECHO]] agent RL research.
 - [[entities/ai21-labs]] — AI21 Labs — Israeli AI company. Shut down model team in May 2026 and pivoted entirely to agents, representing "Model Lab → Agent Lab" industry shift alongside DeepSeek Harness team.
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
+- [[entities/antoine-chaffin]] — Antoine Chaffin — Researcher at LightOn. Lead author of DenseOn/LateOn (SOTA open retrieval models), PyLate (CIKM 2025). Late Interaction Workshop co-organizer.
 - [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
 - [[entities/ash-vardanyan]] — Ash Vardanyan — Open-source developer and performance engineer. Creator of USearch, SimSIMD, and other high-performance vector libraries.
 - [[entities/autoreason]] — Autoreason
@@ -29,6 +30,7 @@
 - [[entities/deedydas]] — Deedy Das — Partner at Menlo Ventures, former Glean/Google Search. Meta-harness concept originator ("Autoresearch on steroids"), AI agent investor (Anthropic, Goodfire, OpenRouter).
 - [[entities/datasette-llm-limits]] — Datasette LLM Limits
 - [[entities/deepmind]] — Google DeepMind — Alphabet's central AI research lab (AlphaGo, AlphaFold, Gemini). May 2026: AI Pointer / Magic Pointer — context-aware cursor. Agents at Scale: Antigravity IDE, token quotas, Darwinian skills library, in-house model mixing.
+- [[entities/denseon-lateon]] — DenseOn & LateOn — Open SOTA retrieval models (149M ModernBERT). DenseOn: BEIR 56.20 (first <150M past 56). LateOn: BEIR 57.22 (first ColBERT past 57). LightOn, Apr 2026.
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy): AI agent harness engineering researcher
 - [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
 - [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
@@ -50,6 +52,7 @@
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
 - [[entities/joan-westenberg]] — Joan Westenberg — Strategy and positioning consultant. "Position or Perish" narrative framework, messaging spine methodology.
+- [[entities/lighton]] — LightOn — French enterprise AI company (founded 2016, IPO Nov 2024). Open-source retrieval leader: DenseOn/LateOn, ColBERT-Zero, PyLate. European data-sovereignty positioning.
 - [[entities/liquid-ai]] — Non-transformer neural architecture company. Deployed at Shopify for low-latency query understanding and catalog workloads. Founded by MIT CSAIL researchers (Ramin Hasani, Mathias Lechner).
 - [[entities/lucas-atkins]] — Arcee AI CTO. Muon optimizer advocate, led Trinity Large (400B/13B MoE) training on 22,048 B300 GPUs.
 - [[entities/lucebox]] — Lucebox

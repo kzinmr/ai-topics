@@ -3,6 +3,15 @@
 
 ## [2026-05-28] ingest | arXiv:2603.04384 "AgentIR" → concepts/reasoning-aware-retrieval.md, enrich agentic-search.md + deep-research.md, raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
 
+## [2026-05-28] ingest | Antoine Chaffin "DenseOn with the LateOn" → entities/lighton.md, entities/denseon-lateon.md, entities/antoine-chaffin.md, update late-interaction
+
+- **Source**: LinkedIn — "DenseOn with the LateOn: Open State-of-the-Art Single and Multi-Vector Models" (Antoine Chaffin, LightOn, Apr 21, 2026)
+- **Raw article**: `raw/articles/2026-04-21_antoine-chaffin_denseon-lateon-open-sota-retrieval.md`
+- **entities/lighton.md** (NEW): French enterprise AI company founded 2016, IPO Nov 2024. Open-source retrieval leader (DenseOn/LateOn, ColBERT-Zero, PyLate). European data-sovereignty. Igor Carron & Laurent Daudet.
+- **entities/denseon-lateon.md** (NEW): SOTA retrieval models (149M ModernBERT). DenseOn: BEIR 56.20 (first <150M past 56). LateOn: BEIR 57.22 (first ColBERT past 57). 1.4B training pairs, decontamination testing, non-destructive curation, full pipeline release.
+- **entities/antoine-chaffin.md** (NEW): LightOn researcher, lead author DenseOn/LateOn, PyLate (CIKM 2025), LIR workshop co-organizer.
+- **entities/late-interaction.md** (UPDATED): Added DenseOn/LateOn release to timeline (Apr 2026).
+
 ## [2026-05-28] ingest | arXiv:2404.12096 "LongEmbed" → concepts/longembed.md, cross-link to embedding-long-context-degradation
 
 - **Source**: arXiv:2404.12096 — "LongEmbed: Extending Embedding Models for Long Context Retrieval" (Dawei Zhu et al., Apr 2024, revised Nov 2024)
