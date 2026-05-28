@@ -4368,3 +4368,13 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Key Insight
 Three independently-arrived-at perspectives form a causal chain: Segato's F: X→Y → F'(?) explains WHY deterministic playbooks break → Chase's traces-as-documentation shows WHAT changes in daily practice → Hylak's floor raising provides HOW to measure quality in this new paradigm.
+
+## [2026-05-28] Practice Evolution Portal | Aggregated wiki knowledge on TDD, evals, A/B testing, monitoring, o11y transformation
+
+### Pages Created
+- [[queries/practice-evolution-probabilistic-era]] — Portal page: causal chain, practice-by-practice transformation tables (TDD→Error Analysis, Evals→Trace-based, A/B→Trajectory, Monitoring→Semantic, o11y→Trace-centric), key thinkers map, 3-phase trajectory, 4 reading paths, full wiki index
+
+### Key Structure
+- 5 practice domains each with Classical vs Probabilistic Era comparison tables
+- 7 key thinkers with positions mapped
+- 3-phase trajectory: Hybrid Coexistence → Trace-Centric Consolidation → Harness Collapse
