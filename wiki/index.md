@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2240 | Indexed entries: 1459 | Not in index: 738
+> Last updated: 2026-05-28 | Total pages: 2242 | Indexed entries: 1460 | Not in index: 739
 
 ## Entities (704 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -713,7 +713,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (720 pages)
+## Concepts (721 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1382,6 +1382,7 @@
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
 - [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
 - [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
+- [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate — Ben Hylak (Raindrop) vs Ankur Goyal (Braintrust) on whether offline evals or production monitoring is the future of AI evaluation. 6 definitions of "eval," 4 claim-by-claim rebuttals. Consensus: complementary layers.
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel — OpenAI pattern cycling evaluation and improvement for AI product development.
 - [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
 - [[concepts/event-driven-architecture]] — Event-Driven Architecture — Software design pattern for asynchronous, decoupled service communication.
@@ -1400,6 +1401,7 @@
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
 - [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
 - [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
+- [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate — Ben Hylak (Raindrop) vs Ankur Goyal (Braintrust) on whether offline evals or production monitoring is the future of AI evaluation. 6 definitions of "eval," 4 claim-by-claim rebuttals. Consensus: complementary layers.
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel — OpenAI pattern cycling evaluation and improvement for AI product development.
 - [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
 - [[concepts/event-driven-architecture]] — Event-Driven Architecture — Software design pattern for asynchronous, decoupled service communication.

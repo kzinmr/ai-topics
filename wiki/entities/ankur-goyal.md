@@ -1,9 +1,13 @@
 ---
 title: "Ankur Goyal"
-tags: [person]
+tags:
+  - person
+  - agent-evaluation
 created: 2026-04-24
-updated: 2026-04-10
+updated: 2026-05-28
 type: entity
+sources:
+  - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md
 ---
 
 
@@ -83,6 +87,14 @@ At AI Engineer World's Fair 2025, Goyal introduced **Loop**, an AI agent built i
 
 This represents a meta-insight: the very tools being evaluated are now capable of automating the evaluation process itself.
 
+### Evals vs Monitoring Debate (Sep 2025)
+
+In August 2025, Goyal published a blog post claiming "A/B testing is no longer sufficient for AI product optimization — the future is evals." This sparked the [[concepts/evals-vs-monitoring-debate|Evals vs Monitoring Debate]] when Ben Hylak (Raindrop) published a point-by-point rebuttal, *"Thoughts on Evals,"* arguing that production monitoring with semantic signals is more informative than offline evals for agent products.
+
+Goyal's position: evals provide systematic quality measurement before shipping; A/B testing is slow, expensive, and doesn't scale to AI's combinatorial complexity. Hylak's counter: evals are adversarially selected (you only test what you already know is broken); production truth reveals what you can't imagine.
+
+The debate became a defining intellectual conflict in AI evaluation, with the eventual consensus that evals and monitoring are complementary layers rather than competing approaches.
+
 ### Skepticism as a Product Philosophy
 
 Goyal's experience at Impira taught him the importance of product skepticism — assuming that what you're building isn't actually what people want until proven otherwise:
@@ -119,6 +131,7 @@ A key lesson from his Impira experience was recognizing that go-to-market succes
 
 ## Related
 
+- [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring debate with Ben Hylak (Raindrop)
 -  — Goyal's LLM evaluation platform- [[figma]] — Acquired Impira; Goyal led AI team post-acquisition
 -  — Goyal's first startup, acquired by Figma
 - [[concepts/llm-evaluation-harness]] — Braintrust's core product category

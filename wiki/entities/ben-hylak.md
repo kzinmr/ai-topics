@@ -18,11 +18,14 @@ sources:
   - https://www.raindrop.ai/blog/thoughts-on-evals/
   - https://www.howtoeval.com/
   - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md
+  - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md
 related:
   - "[[concepts/agent-evaluation-methodology]]"
+  - "[[concepts/evals-vs-monitoring-debate]]"
   - "[[concepts/raindrop]]"
   - "[[concepts/harness-engineering]]"
   - "[[concepts/macro-evals-for-agentic-systems]]"
+  - "[[entities/ankur-goyal]]"
 ---
 
 # Ben Hylak
@@ -60,6 +63,8 @@ In a September 2025 blog post on the Raindrop blog, Hylak directly challenged Br
 - A/B testing on production data with semantic signals is more informative than static eval suites
 - Personalization trends make static evals even less useful over time
 - Raindrop is "just a type of online evals" — but distinct from the common pattern of running offline-evals on sampled production data
+
+This sparked the [[concepts/evals-vs-monitoring-debate|Evals vs Monitoring Debate]], a defining intellectual conflict in AI evaluation between offline testing and production observability.
 
 ### On o1 and Reasoning Models
 

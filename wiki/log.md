@@ -4330,3 +4330,16 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - https://www.howtoeval.com/
 - https://www.benhylak.com/
 - https://www.raindrop.ai/blog/thoughts-on-evals/
+
+## [2026-05-28] evals-are-dead debate ingestion | "Thoughts on Evals" by Ben Hylak (Sep 2025)
+
+### Pages Created
+- [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate: Ben Hylak (Raindrop) vs Ankur Goyal (Braintrust). 6 definitions of "eval," claim-by-claim rebuttal of 4 arguments, consensus of complementary layers.
+- raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md — Full "Thoughts on Evals" blog post text
+
+### Pages Updated
+- [[entities/ben-hylak]] — Added debate cross-link, raw article source
+- [[entities/ankur-goyal]] — Added Evals vs Monitoring Debate section, updated tags/sources
+
+### Sources
+- https://www.raindrop.ai/blog/thoughts-on-evals/
