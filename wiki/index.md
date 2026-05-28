@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2246 | Indexed entries: 1463 | Not in index: 741
+> Last updated: 2026-05-28 | Total pages: 2247 | Indexed entries: 1464 | Not in index: 741
 
 ## Entities (705 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -714,7 +714,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (722 pages)
+## Concepts (723 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -959,6 +959,7 @@
 - [[concepts/information-retrieval]] — Precision-Recall-Desirability framework, bag-of-documents model (representing queries as result distributions), embedding-based search vs bag-of-words, RAG, semantic equivalence. Includes Daniel Tunkelang's KDD 2023/2024/2026 presentations. [[concepts/embeddings]] [[concepts/vector-search]] [[concepts/lexical-search]] [[concepts/bm25]] [[concepts/rag-systems]]
 - [[concepts/infrastructure-noise-agent-evals]] — Quantitative analysis of infrastructure noise in agentic coding evaluation. 6pp difference between 1x→uncapped resources on Terminal-Bench 2.0 (p<0.01). Be skeptical of leaderboard differences under 3pp. Time of day, parallelism, and bandwidth are hidden confounders.
 - [[concepts/interaction-models]] — Thinking Machines Lab research preview. Natively handles multimodal, real-time interaction with 200ms micro-turns. Simultaneous audio/video/text input and output. Integrates with async background models.
+- [[concepts/inverted-stack-trace-native-engineering]] — The Inverted Stack — AI becomes the substrate, code becomes the harness, traces replace code as the canonical record. Differentiated from classic ML (Zayd 2016): the genuinely new shift is not "probabilistic" but the architectural inversion where AI↔code relationship reverses.
 - [[concepts/interpretability]] — Interpretability: Research field visualizing features and circuits inside LLMs. Anthropic's Scaling Monosemanticity, Golden Gate Claude, Entropix. Inference-time steering as RLHF alternative, addressing performance-controllability tradeoffs.
 - [[concepts/judgment-list]] — Judgment List: foundational tool for search relevance evaluation. Query-document-relevance-grade triples serve as test suites, training data, and quality gates. DCG/NDCG computation, implicit/explicit/crowdsourced judgment sources, relationship to LTR, "grug-brained evals" philosophy. Advocated by Doug Turnbull.
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — Build→Test→Deploy→Monitor framework by Harrison Chase (LangChain). Governance layer for cost, tool access, discoverability. Operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.

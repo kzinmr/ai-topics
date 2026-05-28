@@ -25,6 +25,8 @@ related:
 
 # Probabilistic Era — Building AI Products After the Ontological Shift
 
+> **Note:** The "probabilistic" framing is a useful starting point but incomplete. Classic ML (Zayd Enam, 2016) was already probabilistic — the genuinely new shift in the agent era is the **architectural inversion**: AI becomes the substrate, code becomes the harness, traces replace code as the source of truth. See [[concepts/inverted-stack-trace-native-engineering|The Inverted Stack]] for the full framework.
+
 A framework for understanding the **fundamental ontological shift** from deterministic software (`F: X → Y`) to probabilistic AI products (`F'(?)`), articulated by [[entities/gian-segato|Gian Segato]] (Anthropic research, early Replit). The essay explains why traditional engineering, product management, and growth playbooks break down when applied to AI — and what must replace them.
 
 > "We're leaving a world where code reliably and deterministically takes certain inputs to produce specific outputs, and entering a very different one where machines now produce statistical distributions instead." — Gian Segato

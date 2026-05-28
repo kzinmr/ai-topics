@@ -1,5 +1,5 @@
 ---
-title: "Practice Evolution in the Probabilistic Era — TDD, Evals, A/B Testing, Monitoring, Observability"
+title: "Practice Evolution in the Inverted Stack — How TDD, Evals, A/B Testing, Monitoring, and Observability Are Being Redefined"
 type: query
 created: 2026-05-28
 updated: 2026-05-28
@@ -14,7 +14,9 @@ aliases:
   - practice-evolution
   - eval-practices-portal
   - tdd-evals-monitoring-trajectory
+  - practice-evolution-probabilistic-era
 related:
+  - "[[concepts/inverted-stack-trace-native-engineering]]"
   - "[[concepts/probabilistic-era-software]]"
   - "[[concepts/agent-evaluation-methodology]]"
   - "[[concepts/evals-vs-monitoring-debate]]"
@@ -27,9 +29,11 @@ related:
   - "[[entities/hamel-husain]]"
 ---
 
-# Practice Evolution in the Probabilistic Era
+# Practice Evolution in the Inverted Stack
 
-> **A portal tracking how professional practices — TDD, evals, A/B testing, monitoring, observability — are being redefined as software shifts from deterministic to probabilistic.**
+> **A portal tracking how professional practices are being redefined now that AI has become the primary substrate and code is merely the harness around it.**
+
+> **Historical note:** "Probabilistic" isn't new — classic ML (Zayd Enam, 2016) already dealt with stochastic outputs, 4D debugging, and long feedback cycles. What IS new is the **architectural inversion**: the AI-agent relationship to software has inverted. The model was a component inside deterministic software; now deterministic code is a harness around the AI. Traces have replaced code as the canonical record of system behavior. See [[concepts/inverted-stack-trace-native-engineering|The Inverted Stack]] for the full framework.
 
 This page aggregates wiki knowledge about the ongoing transformation in how practitioners think about and apply quality assurance practices to AI agents. It serves as both a map of the current intellectual landscape and a living index for tracking how these practices evolve.
 
@@ -58,15 +62,15 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 ### 1. TDD (Test-Driven Development)
 
-| Classical Era | Probabilistic Era |
-|---|---|
-| Write test → watch it fail → write code → watch it pass | Cannot write tests before behavior is known |
-| Tests document expected behavior deterministically | Expected behavior is a probability distribution |
-| Binary pass/fail assertions | Statistical evaluation; trajectory-based analysis |
-| Tests are spec-first; refactoring is safe | "Every new model drop invalidates all assumptions" (Segato) |
-| Hallmark of disciplined engineering | "Actively harmful when applied to AI agents" (Segato) |
+| Classical Era | Classic ML Era (Zayd 2016) | Inverted Stack Era |
+|---|---|---|
+| Write test → watch it fail → write code → watch it pass | Add model-specific test dimensions (4D debugging) | Cannot write tests before behavior is known |
+| Tests document expected behavior deterministically | Tests measure statistical accuracy on held-out data | Expected behavior is a probability distribution; known inputs→known outputs assumption broken |
+| Binary pass/fail assertions | Confidence thresholds, precision/recall tradeoffs | Statistical eval; trajectory-based assertions |
+| Tests are spec-first; refactoring is safe | Model retraining invalidates test assumptions | "Every new model drop invalidates all assumptions" (Segato) |
+| Hallmark of disciplined engineering | ML engineering requires intuition + experimentation | "Actively harmful when applied to AI agents" — pre-spec is impossible |
 
-**Key insight:** TDD assumes you know the input space *X* and output space *Y* beforehand. With AI agents, both are unbounded. "Not knowing the full scope of what you want ahead of time" — the classic critique of TDD — applies perfectly to agent development.
+**Key insight:** TDD assumes bounded input/output spaces. Classic ML stretched this (4D debugging) but still had defined tasks. In the Inverted Stack, the AI *is* the system — you cannot pre-specify behavior, only discover it from production traces.
 
 **Transition path:** TDD → **Eval-Driven Development** (Chase) → **Error Analysis** (Husain) → **Floor Raising** (Hylak). The eval suite becomes "a memory of bugs you refuse to reintroduce," built *after* you discover failures in production, not *before* you write code.
 
@@ -77,15 +81,15 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 ### 2. Evals (Offline Evaluation)
 
-| Classical Era | Probabilistic Era |
-|---|---|
-| Evals = comprehensive test suites | Evals = adversarially selected known-issue collection |
-| Goal: maximize pass rate | Goal: lock in lessons from real failures |
-| Large synthetic datasets | Small high-signal golden cases |
-| Static, infrequently updated | Continuously sampled from production traces |
-| Measures: "how good is my product?" | Measures: "did I regress on critical paths?" |
+| Classical Era | Classic ML Era (Zayd 2016) | Inverted Stack Era |
+|---|---|---|
+| Evals = comprehensive test suites | Evals = accuracy on held-out test sets; cross-validation | Evals = adversarially selected known-issue collection |
+| Goal: maximize pass rate | Goal: maximize accuracy/F1 on benchmark | Goal: lock in lessons from real failures |
+| Large synthetic datasets | Curated benchmark datasets (ImageNet, SQuAD) | Small high-signal golden cases from production traces |
+| Static, infrequently updated | Updated with new data; periodic retraining | Continuously sampled from production traces |
+| Measures: "does it work?" | Measures: "how accurate is the model?" | Measures: "did I regress on critical paths?"
 
-**Key insight:** The "evals are dead" debate (see [[concepts/evals-vs-monitoring-debate]]) is not about killing evals — it's about their proper scope. Chase (LangChain) bridges the positions: evals and production monitoring are complementary layers in the agent improvement loop.
+**Key insight:**
 
 **The 6-definitions problem:** Hylak identified that "eval" has at least 6 meanings — from human-reviewed inputs to frontier model benchmarks — making the debate slippery. The word has become so vague that it obscures decisions rather than clarifying them.
 
@@ -102,13 +106,13 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 ### 3. A/B Testing & Experimentation
 
-| Classical Era | Probabilistic Era |
-|---|---|
-| Funnel optimization (conversion, retention) | Trajectory analysis (user paths through possibility fields) |
-| Known success metrics | Success metrics are ambiguous ("better software" = ?) |
-| Weeks for statistically significant results | Hours via semantic signal comparison |
-| Separate from evals and monitoring | Collapses into one holistic feedback system |
-| Tools: Optimizely, LaunchDarkly | Tools: Raindrop experiments, production signal comparison |
+| Classical Era | Classic ML Era (Zayd 2016) | Inverted Stack Era |
+|---|---|---|
+| Funnel optimization (conversion, retention) | A/B test model variants on offline metrics | Trajectory analysis (user paths through possibility fields) |
+| Known success metrics | Accuracy/F1 as proxy for success | Success metrics are ambiguous ("better software" = ?) |
+| Weeks for significant results | Hours-days per experiment (parallel runs) | Hours via semantic signal comparison |
+| Separate from evals and monitoring | Offline evaluation separate from production | Collapses into one holistic feedback system |
+| Tools: Optimizely, LaunchDarkly | Tools: ML experiment trackers (W&B, MLflow) | Tools: Raindrop experiments, production signal comparison |
 
 **Key insight:** A/B testing becomes *more* important in the probabilistic era, not less — contra Ankur Goyal's claim. Hylak's rebuttal: "Imagine GPT-5 drops. With Raindrop, you can route 1% of your users to GPT-5 and instantly see how it impacts frustration." The critical distinction: Braintrust's A/B tests measure latency; Raindrop's measure semantic behavior change.
 
@@ -120,13 +124,13 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 ### 4. Monitoring
 
-| Classical Era | Probabilistic Era |
-|---|---|
-| SLOs: uptime, p99 latency, error rates | Decision quality, reasoning effectiveness, tool efficiency |
-| Catch: 500 errors, null pointers, crashes | Catch: silent failures, context loss, infinite loops, hallucinations |
-| Tools: Datadog, Sentry, PagerDuty | Tools: Raindrop, LangSmith, Arize Phoenix |
-| Alert on infrastructure failure | Alert on semantic failure (agent gave wrong info confidently) |
-| "Is the system up?" | "Is the agent behaving correctly?" |
+| Classical Era | Classic ML Era (Zayd 2016) | Inverted Stack Era |
+|---|---|---|
+| SLOs: uptime, p99 latency, error rates | Model accuracy drift, data distribution drift | Decision quality, reasoning effectiveness, tool efficiency |
+| Catch: 500 errors, null pointers, crashes | Catch: model degradation, concept drift | Catch: silent failures, context loss, infinite loops, hallucinations |
+| Tools: Datadog, Sentry, PagerDuty | Tools: ML monitoring (Arize, WhyLabs) | Tools: Raindrop, LangSmith, Arize Phoenix |
+| Alert on infrastructure failure | Alert on accuracy degradation | Alert on semantic failure (agent gave wrong info confidently) |
+| "Is the system up?" | "Is the model still accurate?" | "Is the agent behaving correctly?" |
 
 **Key insight:** "An agent can be 'up' (0 errors) but still fail" (Chase). Traditional monitoring sees no error when an agent confidently gives wrong information, forgets user context, or takes a suboptimal tool path. The monitoring surface shifts from infrastructure to intelligence.
 
@@ -139,13 +143,13 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 ### 5. Observability (o11y)
 
-| Classical Era | Probabilistic Era |
-|---|---|
-| Logs, metrics, traces (the three pillars) | Agent traces as the primary artifact |
-| Debug by reading code and stack traces | Debug by replaying trace states in playgrounds |
-| Observability = ops concern | Observability = the entire development workflow |
-| Collaboration on code (GitHub PRs) | Collaboration on traces (observability platforms) |
-| Product analytics and debugging are separate | They collapse — user behavior IS agent behavior |
+| Classical Era | Classic ML Era (Zayd 2016) | Inverted Stack Era |
+|---|---|---|
+| Logs, metrics, traces (the three pillars) | Model metrics dashboard; experiment tracking | Agent traces as the primary artifact |
+| Debug by reading code and stack traces | Debug by analyzing loss curves + dev set output | Debug by replaying trace states in playgrounds |
+| Observability = ops concern | Observability = data science concern | Observability = the entire development workflow |
+| Collaboration on code (GitHub PRs) | Collaboration on experiment results + notebooks | Collaboration on traces (observability platforms) |
+| Product analytics and debugging are separate | Product analytics and model metrics are separate | They collapse — user behavior IS agent behavior |
 
 **Key insight:** Chase's thesis — *"In software, the code documents the app; in AI, the traces do."* — is the operational translation of Segato's ontological shift. When decision logic moves from code to the model at runtime, every practice built around code (debugging, testing, profiling, monitoring, collaboration) must be rebuilt around traces.
 

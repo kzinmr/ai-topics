@@ -4378,3 +4378,15 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - 5 practice domains each with Classical vs Probabilistic Era comparison tables
 - 7 key thinkers with positions mapped
 - 3-phase trajectory: Hybrid Coexistence → Trace-Centric Consolidation → Harness Collapse
+
+## [2026-05-28] The Inverted Stack | Reframing beyond "probabilistic" with Zayd (2016) baseline
+
+### Pages Created
+- [[concepts/inverted-stack-trace-native-engineering]] — The Inverted Stack: AI becomes the substrate, code becomes the harness. Traces replace code as canonical record. Differentiated from classic ML (Zayd 2016): the genuinely new shift is not "probabilistic" (already true in 2016) but the architectural inversion (AI↔code relationship reverses) + epistemological inversion (traces replace code as source of truth) + input-space unboundedness (qualitative, not quantitative, shift from 4D debugging)
+
+### Pages Updated
+- [[concepts/probabilistic-era-software]] — Added historical note pointing to Inverted Stack framework
+- [[queries/practice-evolution-probabilistic-era]] — Retitled to "In the Inverted Stack"; all 5 practice tables expanded to 3-column format (Classical | Classic ML/Zayd | Inverted Stack); added historical note
+
+### Key Reframing
+"Probabilistic" started with classic ML. What IS new: the architectural inversion (model was component → AI is substrate), the epistemological inversion (code→traces), and input-space unboundedness (you cannot enumerate failure modes).
