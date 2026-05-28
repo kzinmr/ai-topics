@@ -1,0 +1,67 @@
+{
+  "archived_at": "2026-05-28T16:05:38.976482+00:00",
+  "source": "backlog",
+  "checkpoint_run_id": "20260528T160014Z",
+  "items": [
+    {
+      "item_id": "wheresyoured.at--ais-economics-dont-make-sense--cab39fd8.md",
+      "source": "backlog",
+      "source_name": "Where's Your Ed At",
+      "title": "AI's Economics Don't Make Sense",
+      "url": "https://www.wheresyoured.at/ais-economics-dont-make-sense/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--ais-economics-dont-make-sense--cab39fd8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存concepts/ai-bubble-economics.mdでZitronのサブプライムAI論は包括的にカバー済み。ただし新しいデータポイント（Claude Codeの1人あたり日$13・月$150-250、Stargate Abileneの遅延状況、OpenAIの$852B調達目標）があり、既存ページの更新素材として価値。",
+      "candidate_wiki_path": "concepts/ai-bubble-economics.md",
+      "body_excerpt": "GitHub Copilot's previous pricing allowed 300 premium requests a month... Claude Code charges by API token consumption... average cost is around $13 per developer per active day and $150-250 per developer per month... OpenAI CFO Sarah Friar has told other company leaders that she is worried company might not be able to pay for future computing contracts..."
+    },
+    {
+      "item_id": "wheresyoured.at--ais-economics-dont-make-sense-ad-free--b7415062.md",
+      "source": "backlog",
+      "source_name": "Where's Your Ed At",
+      "title": "AI's Economics Don't Make Sense [Ad Free]",
+      "url": "https://www.wheresyoured.at/ais-economics-dont-make-sense-ad-free/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--ais-economics-dont-make-sense-ad-free--b7415062.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 上記記事の広告除去版。内容同一のため重複。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Ad-free version of the same article with identical content"
+    },
+    {
+      "item_id": "wheresyoured.at--the-ai-industry-is-lying-to-you--00c54f74.md",
+      "source": "backlog",
+      "source_name": "Where's Your Ed At",
+      "title": "The AI Industry Is Lying To You",
+      "url": "https://www.wheresyoured.at/the-ai-industry-is-lying-to-you/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--the-ai-industry-is-lying-to-you--00c54f74.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ データセンター容量の現実（発表241GW中建設中33%のみ、2025年実稼働3GW）、Stargate Abileneの遅延、NVIDIA GPUストランディング問題を詳細に分析。既存ai-bubble-economics.mdのインフラセクションを補強するデータ。",
+      "candidate_wiki_path": "concepts/ai-bubble-economics.md",
+      "body_excerpt": "Of the 114GW of data centers supposedly being built by the end of 2028, only 15.2GW is under construction... US data-centre capacity additions halved from Q3 to Q4 2025... Only 33% of announced US data centers are actually being built..."
+    },
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-commit-messages--6e00df14.md",
+      "source": "backlog",
+      "source_name": "Simon Tatham's Quasiblog",
+      "title": "Writing commit messages",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/commit-messages/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-commit-messages--6e00df14.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Gitコミットメッセージの書き方ガイド。AI/LLM/エージェントと無関係な純粋なソフトウェアエンジニアリング技術記事。wikiスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is my personal guide to writing good commit messages, in Git or other version control systems... A commit-message guide ought to focus on information, not typography..."
+    },
+    {
+      "item_id": "danluu.com--learning-to-program--6d4130fd.md",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "How I learned to program",
+      "url": "https://danluu.com/learning-to-program/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--learning-to-program--6d4130fd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Dan Luuのプログラミング学習体験談。個人の学習履歴を振り返るエッセイで、AI/LLM/エージェント技術との関連性なし。wikiスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Tavish Armstrong has a great document where he describes how and when he learned the programming skills he has... I spent a decade working as an electrical engineer before taking a programming job..."
+    }
+  ]
+}

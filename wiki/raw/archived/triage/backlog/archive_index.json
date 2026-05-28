@@ -28,5 +28,40 @@
     "filename": "ashvardanian.com--posts-numkong--e99e0a28.md",
     "decision": "skip",
     "source": "backlog"
+  },
+  "https://www.wheresyoured.at/ais-economics-dont-make-sense/": {
+    "archived_at": "2026-05-28T16:05:38.976738+00:00",
+    "filename": "wheresyoured.at--ais-economics-dont-make-sense--cab39fd8.md",
+    "decision": "reference",
+    "reason_ja": "★★★☆☆ 既存concepts/ai-bubble-economics.mdでZitronのサブプライムAI論は包括的にカバー済み。ただし新しいデータポイント（Claude Codeの1人あたり日$13・月$150-250、Stargate Abileneの遅延状況、OpenAIの$852B調達目標）があり、既存ページの更新素材として価値。",
+    "source": "backlog"
+  },
+  "https://www.wheresyoured.at/ais-economics-dont-make-sense-ad-free/": {
+    "archived_at": "2026-05-28T16:05:38.976743+00:00",
+    "filename": "wheresyoured.at--ais-economics-dont-make-sense-ad-free--b7415062.md",
+    "decision": "skip",
+    "reason_ja": "★☆☆☆☆ 上記記事の広告除去版。内容同一のため重複。",
+    "source": "backlog"
+  },
+  "https://www.wheresyoured.at/the-ai-industry-is-lying-to-you/": {
+    "archived_at": "2026-05-28T16:05:38.976745+00:00",
+    "filename": "wheresyoured.at--the-ai-industry-is-lying-to-you--00c54f74.md",
+    "decision": "reference",
+    "reason_ja": "★★★☆☆ データセンター容量の現実（発表241GW中建設中33%のみ、2025年実稼働3GW）、Stargate Abileneの遅延、NVIDIA GPUストランディング問題を詳細に分析。既存ai-bubble-economics.mdのインフラセクションを補強するデータ。",
+    "source": "backlog"
+  },
+  "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/commit-messages/": {
+    "archived_at": "2026-05-28T16:05:38.976747+00:00",
+    "filename": "chiark.greenend.org.uk--sgtatham-quasiblog-commit-messages--6e00df14.md",
+    "decision": "skip",
+    "reason_ja": "★☆☆☆☆ Gitコミットメッセージの書き方ガイド。AI/LLM/エージェントと無関係な純粋なソフトウェアエンジニアリング技術記事。wikiスコープ外。",
+    "source": "backlog"
+  },
+  "https://danluu.com/learning-to-program/": {
+    "archived_at": "2026-05-28T16:05:38.976748+00:00",
+    "filename": "danluu.com--learning-to-program--6d4130fd.md",
+    "decision": "skip",
+    "reason_ja": "★☆☆☆☆ Dan Luuのプログラミング学習体験談。個人の学習履歴を振り返るエッセイで、AI/LLM/エージェント技術との関連性なし。wikiスコープ外。",
+    "source": "backlog"
   }
 }

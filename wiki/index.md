@@ -333,6 +333,7 @@
 - [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
 - [[entities/jim-fan]] — **X** | @jim-fan |
 - [[entities/jim-nielsen]] — **Blog** | Jim Nielsen's Blog |
+- [[entities/jina-ai]] — Jina AI — Search AI company (embeddings, rerankers, readers, deepsearch). Founded 2020 by Han Xiao, acquired by Elastic (Oct 2025). Creator of jina-embeddings-v3/v4/v5 series.
 - [[entities/jo-kristian-bergum]] — **URL:** https://hornet.dev
 - [[entities/john-carmack]] — **Role** | Founder, Keen Technologies; Former CTO, Oculus/Meta; Co-founder, id Software |
 - [[entities/john-d-cook-applied-mathematics-consulting]] — **Blog** | johndcook.com/blog |
@@ -1391,6 +1392,7 @@
 - [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents — Anthropic's harness design for agents spanning multiple context windows.
 - [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism) — Load-balanced expert parallelism for MoE models; elastic scaling without model redistribution.
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration — Using the Erlang VM and OTP patterns for multi-agent systems.
+- [[concepts/embedding-long-context-degradation]] — Embedding Long-Context Degradation — Embedding models lose retrieval ability beyond ~4K tokens (AUC→0.50 at 8K). Demonstrated by Jina AI (Mar 2025) on jina-embeddings-v3. Query expansion fails; needle position is strongest predictor.
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
 - [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
 - [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
@@ -1410,6 +1412,7 @@
 - [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents — Anthropic's harness design for agents spanning multiple context windows.
 - [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism) — Load-balanced expert parallelism for MoE models; elastic scaling without model redistribution.
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration — Using the Erlang VM and OTP patterns for multi-agent systems.
+- [[concepts/embedding-long-context-degradation]] — Embedding Long-Context Degradation — Embedding models lose retrieval ability beyond ~4K tokens (AUC→0.50 at 8K). Demonstrated by Jina AI (Mar 2025) on jina-embeddings-v3. Query expansion fails; needle position is strongest predictor.
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
 - [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
 - [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.

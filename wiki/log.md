@@ -1,6 +1,13 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] ingest | Jina AI "Long-Context Embedding Models are Blind Beyond 4K Tokens" → entities/jina-ai.md, concepts/embedding-long-context-degradation.md
+
+- **Source**: jina.ai — "Long-Context Embedding Models are Blind Beyond 4K Tokens" (Saahil Ognawala & Alex C-G, Mar 7, 2025)
+- **Raw article**: `raw/articles/2025-03-07_jina_long-context-embedding-models-blind-beyond-4k.md`
+- **entities/jina-ai.md** (NEW): Search AI company founded 2020 by Han Xiao, acquired by Elastic (Oct 2025). Embedding models (v3/v4/v5 series), Reader API, Reranker, DeepSearch. Key metrics: 570M params v3, 8K context, Matryoshka Representation Learning.
+- **concepts/embedding-long-context-degradation.md** (NEW): Embedding models lose retrieval quality beyond ~4K tokens — AUC drops to 0.50 (random chance) at 8K. Demonstrated on jina-embeddings-v3 with 3,234-haystack benchmark. Normalized similarity formula, position effects (U-shaped curve), category sensitivity, query expansion failure. Cross-linked to context-rot and embeddings.
+
 ## [2026-05-28] ingest | Doug Turnbull "BM25F from scratch" → enrich bm25.md, lexical-search.md, softwaredoug.md
 
 - **Source**: softwaredoug.com/blog — "BM25F from scratch" (Doug Turnbull, Sep 18, 2025)
