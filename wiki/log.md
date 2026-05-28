@@ -2,6 +2,19 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] raw-backlog-ingest | Raw backlog triage — 5 articles, 1 take (Mistral Latent Space podcast), 2 skips (non-AI), 2 duplicate skips
+
+### Pages Updated
+- [[entities/mistral-ai]] — Added Leanstral section (formal proofs with Lean 4, agent decomposition strategy), Forge platform section (enterprise fine-tuning, on-prem deployment), Forward Deployed Engineering section, Mistral Small 3 MoE architecture details, Next Frontiers in Training (pre-training scaling, RL for long trajectories). Updated `updated` date and `sources`.
+- [[entities/mistral-voxtral-tts]] — Updated `sources` frontmatter to include podcast transcript reference. Bumped `updated` date.
+- [[concepts/formal-verification-llm-agents]] — Added Mistral Leanstral to Active Startups and Research section.
+
+### Raw Articles Processed
+- `raw/articles/substack.com--app-link-post--7e552b79.md` — Latent Space podcast transcript with Guillaume Lample (Mistral Chief Scientist) and Pavan Kumar Reddy (Voxtral TTS lead). 48 min interview covering Voxtral TTS launch, Forge platform, Leanstral, Mistral Small 3 MoE, forward deployed engineering, AI for science, open-source mission.
+- `raw/articles/purplesyringa.moe--blog-recovering-garbled-bitcoin-addresses--b7d498e9.md` — Skip: cryptography/blockchain engineering, no AI relevance
+- `raw/articles/danluu.com--cruise-report--ebef87e7.md` — Skip: organizational/safety analysis of Cruise AV incident, not AI/LLM technology
+- 2x duplicate substack app-link posts (same content, different tracking params) — Skip: duplicates
+
 ## [2026-05-27] enrich | Nightly knowledge consolidation — dreaming-wiki-ingest
 
 ## [2026-05-27] x-accounts-scan | X/Twitter accounts scan — 3 new posts, 1 wiki-worthy

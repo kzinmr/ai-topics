@@ -2,7 +2,7 @@
 title: Mistral AI
 type: entity
 created: 2026-05-04
-updated: 2026-05-24
+updated: 2026-05-28
 tags:
   - company
   - model
@@ -13,6 +13,7 @@ aliases:
 sources:
   - raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md
   - raw/articles/2026-05-24_mistral-ai_accelerate-ai-native-industry.md
+  - raw/articles/substack.com--app-link-post--7e552b79.md
 ---
 
 # Mistral AI
@@ -89,6 +90,66 @@ While Mistral trails US (Anthropic, OpenAI) and Chinese (DeepSeek) frontier mode
 
 Mistral AI ranks **#27** on Paraform's Talent Density Index (score: 0.700), reflecting strong but not elite talent magnetism among AI labs. With ~860 employees and an aggressive build-out (200 MW of compute across Europe by 2027), Mistral's hiring needs span research scientists, infrastructure engineers, and enterprise sales — a broad talent profile that benefits from platforms like [[entities/paraform]]. Mistral competes for European AI talent against DeepMind ([[entities/google]]), FAIR ([[entities/meta]]), and US labs opening European offices. As Europe's sovereign AI champion, Mistral's hiring pitch — build frontier models with European values — is distinct from US competitors, but the company must overcome the gravitational pull of higher salaries and deeper compute resources in Silicon Valley.
 
+## Leanstral: Formal Proofs with Lean 4 (April 2026)
+
+Mistral announced **Leanstral**, a project applying LLMs to formal proof generation using the **Lean 4** proof assistant. Announced during the Latent Space podcast episode with Guillaume Lample.
+
+**Key insights from Lample:**
+- **Why Lean?**: Formal proof in Lean provides deterministic verification — "if it compiles, it's correct." Unlike natural language proofs, Lean proofs are mechanically checkable, eliminating hallucination risk.
+- **The data problem**: The formal proof community is tiny (mostly PhD-level researchers), creating a severe data scarcity challenge for training. But the upside is massive: Lean expertise applies to both mathematics AND software verification.
+- **Software verification market**: Currently tiny (aerospace, automotive, robotics — where lives depend on correctness). Lample anticipates this market will grow significantly once AI reduces the barrier to entry.
+- **Reasoning transfer hypothesis**: Long-horizon formal proof exercises may serve as a proxy for general reasoning capability. Proof that generalizes across math domains may also improve reasoning in coding, logic, and planning.
+- **Agent decomposition strategy**: Models can autonomously decompose complex theorems into parallel sub-lemmas, proving them with sub-agents and composing results — a concrete example of LLM agent orchestration for verification.
+
+**Connection to broader AI safety**: Leanstral connects to Mistral's "AI for Science" initiative (partnering with institutions like the Institute for Advanced Study) and their open-source mission of making intelligence accessible beyond closed-door labs.
+
+- [[concepts/formal-verification-llm-agents]] — Lean formal proof for LLM agents
+- [[concepts/alpha-proof-nexus]] — Google DeepMind's parallel LLM+Lean formal proof system
+- [[concepts/rlvr]] — Reinforcement Learning with Verifiable Rewards (the training paradigm Leanstral enables)
+
+## Forge: Enterprise Fine-Tuning Platform
+
+**Forge** is Mistral's enterprise platform for customizing and deploying foundation models on customer-specific data. Announced at GTC (March 2026) alongside Voxtral TTS.
+
+**Core capabilities:**
+- **Data processing pipeline**: Tools to ingest, clean, and structure enterprise data for model training
+- **Fine-tuning**: SFT, DPO, and RLHF capabilities using Mistral's internal training infrastructure (same tools used by Mistral's science team for 2+ years)
+- **On-premise deployment**: Models can be deployed on customer infrastructure (private cloud or on-prem), addressing data sovereignty and privacy concerns
+- **Forward Deployed Engineering**: Mistral engineers work directly with customers to identify use cases, build custom models, and iterate on solutions
+
+**Key use cases:**
+1. **Domain-specific language tuning**: Fine-tuning models on low-resource languages (e.g., making a model 50% Asian-language data vs 0.1% in foundation models)
+2. **Industry vertical models**: Custom models for healthcare, automotive, semiconductor, aerospace
+3. **Cost optimization**: 10x cost reduction vs. closed-source model inference for production workloads
+4. **Offline deployment**: Edge and embedded use cases (e.g., in-car AI without internet connectivity)
+
+**Customer feedback loop**: Forward deployed engineers serve as a "real-world eval" — they identify edge cases and failure modes that public benchmarks miss, feeding learnings back into base model improvements.
+
+## Forward Deployed Engineering vs Research
+
+Guillaume Lample described Mistral's dual-track organization:
+
+| Team | Role | Scale |
+|------|------|-------|
+| **Science Team** | Fundamental research, pre-training, model architecture | Small, elite, agile |
+| **Forward Deployed Engineers** | Customer-specific solutions, applied science, edge cases | Can be orders of magnitude larger |
+
+The two teams share the same tools (Forge platform) and data pipelines. Forward deployed engineers identify production edge cases that inform science team priorities. This creates a closed loop: customer problems → edge case discovery → base model improvement → better customer outcomes.
+
+## Model Architecture Philosophy
+
+**Modality-specific models over monolithic**: Lample argues that for specific use cases (e.g., transcription-only, OCR-only), a specialized model is more efficient than a general-purpose one. Mistral Small 3 represents the "first merge" of 5 capability-specific models (vision, code, reasoning, audio, language) into a single MoE architecture, but the company continues to release standalone specialized models alongside.
+
+**Mistral Small 3 (MoE)**: 23B total parameters, 3.6B active. Combines capabilities previously distributed across separate models (Mistral Large, Codestral, Mathstral, etc.) into a single efficient architecture.
+
+## Next Frontiers in Training (Mistral 4 preview)
+
+From the podcast discussion:
+- **Pre-training is not saturated**: Lample states "we are very far from saturating pre-training" and sees ML4 pre-training as a "big step" compared to previous work
+- **RL for long trajectories**: Current RL (GRPO-style) works well for short-horizon tasks (math problems solvable in a few thousand tokens). The next challenge is supporting multi-hour reasoning trajectories
+- **Algorithm-hardware co-design**: New algorithms must be designed alongside infrastructure that supports extremely long training runs
+- **Open-source mission**: "We don't want to lead in a world where the best models are only behind closed doors" — Mistral continues releasing open-weight models, detailed technical reports, and research papers
+
 ## Related
 
 - [[entities/anthropic]] — US competitor (frontier models, safety focus)
@@ -100,3 +161,4 @@ Mistral AI ranks **#27** on Paraform's Talent Density Index (score: 0.700), refl
 - [[entities/paraform]] — Ranked #27 on Paraform Talent Density Index; recruiting context
 - [[entities/cohere]] — Peer as enterprise-focused model provider outside US hyperscalers
 - [[concepts/mistral-workflows]] — Enterprise AI orchestration layer (public preview, April 2026)
+- [[concepts/formal-verification-llm-agents]] — Leanstral formal proof project connects to this concept

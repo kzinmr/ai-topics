@@ -2,7 +2,7 @@
 title: Mistral Voxtral TTS
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-28
 tags:
   - entity
   - model
@@ -13,7 +13,8 @@ related:
 - text-to-speech
 - audio-models
 - flow-matching
-sources: []
+sources:
+  - raw/articles/substack.com--app-link-post--7e552b79.md
 ---
 
 # Mistral Voxtral TTS

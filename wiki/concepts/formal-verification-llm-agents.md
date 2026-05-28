@@ -71,7 +71,8 @@ The contrast with vibecoding:
 - **Logical Intelligence**
 - **DeepSeek-Prover-V2** — reportedly achieving strong results writing Lean proofs
 - **Galois** — Claude proving capabilities
-- **Auto-Verus** — Uses automated metrics to filter LLM-generated specs/proofs, achieving 3.6× higher proof accuracy than GPT-4o zero-shot
+- **Auto-Verus** — Uses automated metrics to filter LLM-generated specs/proofs, achieving 3.6x higher proof accuracy than GPT-4o zero-shot
+- **Mistral Leanstral** (April 2026) — Applies LLMs to formal proof generation using Lean 4 proof assistant. Announced by Guillaume Lample (Mistral Chief Scientist). Key innovation: using formal proof as a proxy for long-horizon reasoning capability, with agent decomposition strategy (models autonomously decompose complex theorems into parallel sub-lemmas). Connects to Mistral's "AI for Science" initiative and their open-source mission. See [[entities/mistral-ai]] for details.
 
 ## The Remaining Challenge: Intent Formalization
 
