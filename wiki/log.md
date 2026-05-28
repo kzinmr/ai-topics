@@ -4315,3 +4315,18 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Triage
 - 0 takes, 6 reference items, 4 skip items processed
+
+## [2026-05-28] howtoeval.com ingestion | Comprehensive ingestion of Ben Hylak's "How to Evaluate AI Agents — The 2026 Guide"
+
+### Pages Created
+- [[concepts/agent-evaluation-methodology]] — Agent Evaluation Methodology: Floor raising vs benchmark maxxing framework. Covers the full eval lifecycle (golden cases, code-aware evals, Stumbles→Issues→Signals→Experiments scale model), comparison with OpenAI macro-evals, and the harness-collapse future.
+- [[entities/ben-hylak]] — Ben Hylak: Co-founder & CTO of Raindrop ("Sentry for AI Agents"). Previously Apple (visionOS), SpaceX. Author of "How to Evaluate AI Agents" and "Thoughts on Evals."
+- raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md — Full guide text from howtoeval.com
+
+### Pages Updated
+- [[concepts/raindrop]] — Added Raindrop Workshop section, cross-linked to agent-evaluation-methodology and ben-hylak entity page, updated sources and tags
+
+### Sources
+- https://www.howtoeval.com/
+- https://www.benhylak.com/
+- https://www.raindrop.ai/blog/thoughts-on-evals/

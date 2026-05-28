@@ -2,26 +2,31 @@
 title: "Raindrop — AI Agent Monitoring & Observability Platform"
 type: concept
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-28
 tags:
   - infrastructure
   - evaluation
   - comparison
+  - agent-evaluation
 aliases:
   - raindrop-ai
   - raindrop-monitoring
   - agent-observability
 sources:
   - raw/articles/2026-05-03_raindrop-introduction.md
+  - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md
   - https://www.raindrop.ai/
   - https://www.raindrop.ai/docs/introduction
+  - https://www.howtoeval.com/
 related:
   - "[[concepts/ai-observability]]"
+  - "[[concepts/agent-evaluation-methodology]]"
   - "[[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]]"
   - "[[concepts/logfire]]"
   - "[[concepts/ai-infrastructure-engineering/llm-observability]]"
   - "[[concepts/openai-symphony]]"
   - "[[concepts/harness-engineering]]"
+  - "[[entities/ben-hylak]]"
 ---
 
 # Raindrop — AI Agent Monitoring & Observability Platform
@@ -186,9 +191,23 @@ Together they form: **Orchestrate (Symphony) → Harness (tests/evals) → Monit
 
 ---
 
+## Raindrop Workshop
+
+Raindrop Workshop is a **free, completely open-source** tool for local agent trace capture, trajectory inspection, and replay. It serves as the pre-production companion to the Raindrop platform, enabling developers to:
+
+- **Capture real agent traces locally** — Record full trajectories (user messages, tool calls, context, reasoning) during development
+- **Inspect every tool call** — Visualize the agent's path step by step
+- **Replay scenarios** — Reproduce failures before they hit production
+- **Codex/Claude annotation** — Have coding agents annotate runs with pass/fail assessments and specific commentary
+- **Store evals in markdown** — Keep eval cases as simple markdown files, run them by asking Codex
+
+Raindrop Workshop embodies the **code-aware eval** philosophy from [[concepts/agent-evaluation-methodology|Ben Hylak's evaluation framework]]: test the running agent path (tools, state, files, side effects), not just prompt outputs.
+
 ## Related Concepts
 
 - [[concepts/ai-observability]] — Broader AI observability landscape
+- [[concepts/agent-evaluation-methodology]] — Ben Hylak's floor raising framework
+- [[entities/ben-hylak]] — Ben Hylak, Raindrop co-founder & CTO
 - [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval tool comparison
 - [[concepts/logfire]] — Pydantic Logfire (Python-native observability)
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — LLM inference metrics

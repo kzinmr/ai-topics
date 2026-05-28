@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2237 | Indexed entries: 1457 | Not in index: 737
+> Last updated: 2026-05-28 | Total pages: 2240 | Indexed entries: 1459 | Not in index: 738
 
-## Entities (703 pages)
+## Entities (704 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -138,6 +138,7 @@
 - [[entities/beads]] — Distributed graph issue tracker for AI coding agents. Created by Steve Yegge (Gastown Hall), powered by Dolt. Agent-optimized with dependency tracking, memory compaction, and MCP integration.
 - [[entities/beej-us]] — **URL:** https://beej.us
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
+- [[entities/ben-hylak]] — Ben Hylak — Co-founder & CTO of Raindrop ("Sentry for AI Agents"). Author of "How to Evaluate AI Agents" (2026 guide). Floor raising vs benchmark maxxing framework. Previously Apple (visionOS), SpaceX.
 - [[entities/ben-vinegar]] — Ben Vinegar (@bentlegen), co-founder of Modem (agentic PM), former Sentry engineer (10 years). Co-host of State of Agentic Coding podcast with Armin Ronacher. Author of "Third Party JavaScript" (2013).
 - [[entities/benjamin-clavie]] — French ML researcher specializing in NLP and IR, creator of RAGatouille, co-author of ModernBERT. Co-hosted the "RAG Is Not Dead" series with Hamel Husain.
 - [[entities/benny-chen]] — Co-Founder of Fireworks AI. Former Meta ML infrastructure. Pioneered Reinforcement Fine-Tuning (RFT) and Eval Protocol for open-weight model customization.
@@ -712,7 +713,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (719 pages)
+## Concepts (720 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -752,6 +753,7 @@
 - [[concepts/agent-steering]] — Agent Steering: carrot-and-stick model for guiding LLM agents within harnesses. Covers 7 steering patterns (Ralph loop, rule-based validation, LLM-as-Judge, reranker-in-response, few-shot priming, query expansion, tool guards), the two-loop architecture (agentic loop + harness control plane), subagent delegation for context management, and BEAM search for systematic exhaustive exploration. Based on Doug Turnbull's Cheat at Search Part 3.
 - [[concepts/agentic-retrieval]] — Agentic Retrieval: AI agents as primary search consumers. Median 10-term queries (vs human 2), 24 calls/session, phrase quotes in 98% of sessions. GPT-5 BrowseComp-Plus empirical analysis. Distribution shift from legacy retrievers.
 - [[concepts/agent-ergonomics]] — Programming language and toolchain design optimized for AI coding agents. McKinney's framework (compile speed, static binaries) + Ronacher's language syntax/feature design principles (effects, results, grep-ability, etc.)
+- [[concepts/agent-evaluation-methodology]] — Agent Evaluation Methodology — Floor raising vs benchmark maxxing framework by Ben Hylak (Raindrop). Practical guide: golden cases, code-aware evals, scale-based production monitoring (Stumbles→Issues→Signals→Experiments), and the full eval lifecycle from pre-ship to continuous improvement.
 - [[concepts/agent-execution-tax]] — Agent Execution Tax: Fireworks AI concept. Structured output reliability bottleneck discovered from 720 browser agent runs. Kimi K2.5 0.0% vs Gemini 22.9% execution tax. Reliability-Adjusted Accuracy and Cost Per Successful Task.
 - [[concepts/agent-operator-patterns]] — Agent Operator Patterns: Collection of autonomous AI agent operation patterns by Shann Holmberg. Control Room, Brain Layers, Agent Creation Heuristics, 4-Level Fleet Operation Model, Prototype→Production Methodology. Scaling design from single agents to fully automated teams + applied analysis for wiki management systems.
 - [[concepts/agent-substrate]] — Google Cloud open-source project for ultra-scale AI agent infrastructure. Minimal control plane for millions of sub-second tool calls. Builds on Agent Sandbox on GKE (GA). Community-driven like early [[concepts/kubernetes]].
