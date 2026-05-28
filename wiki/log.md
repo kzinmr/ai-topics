@@ -11,6 +11,11 @@
 ---
 ## [2026-05-28] ingest | arXiv:2603.04384 "AgentIR" → concepts/reasoning-aware-retrieval.md, enrich agentic-search.md + deep-research.md, raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
 
+## [2026-05-28] enrich | RAGatouille stub → full concept page (GitHub README + Simon Willison TIL)
+
+- **Raw articles**: `raw/articles/2023-12-29_answerdotai_ragatouille-github.md`, `raw/articles/2024-01-27_simonwillison_exploring-colbert-ragatouille.md`
+- **concepts/ragatouille.md** (ENRICHED from stub): Full page covering ColBERT integration, indexing/search/re-ranking APIs, training/fine-tuning, index architecture (residual compression), requirements, Simon Willison's practical experience (380% CPU, 2GB RAM, 91MB index for full blog), re-ranking mode (0.47s on CPU). Cross-linked to ColBERT, Benjamin Clavié, PyLate, LateOn/DenseOn.
+
 ## [2026-05-28] ingest | Antoine Chaffin "DenseOn with the LateOn" → entities/lighton.md, entities/denseon-lateon.md, entities/antoine-chaffin.md, update late-interaction
 
 - **Source**: LinkedIn — "DenseOn with the LateOn: Open State-of-the-Art Single and Multi-Vector Models" (Antoine Chaffin, LightOn, Apr 21, 2026)

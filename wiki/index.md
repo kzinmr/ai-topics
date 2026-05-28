@@ -1047,6 +1047,7 @@
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B: Sparse MoE (35B total, 3B active). 73.4% SWE-bench Verified, runs on single RTX 4090. Introduces thinking preservation for iterative coding workflows.
 - [[concepts/query-understanding]] — Query Understanding: The systematic discipline of search query interpretation. Systematized by Daniel Tunkelang in a 24-article series (2016-2024). 6-layer stack (characters→tokens→rewriting→context→conversation→results). LLM-Powered practice (Doug Turnbull): structured QU, embedding collapse countermeasures, synonym extraction+BM25, category classification (NDCG +12%).
 - [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series
+- [[concepts/ragatouille]] — RAGatouille — Open-source ColBERT library by Benjamin Clavié (AnswerDotAI). Train, index, search, and re-rank with late interaction retrieval. Apache 2.0, ~3,900 stars.
 - [[concepts/rag-systems]] — RAG Systems
 - [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
 - [[concepts/ramp-inspect]] — Ramp Inspect: background coding agent with autonomous verification loop. ~30% of Ramp PRs. Modal sandbox VMs, multi-modal interface (Slack, Chrome ext, web, VS Code, PR).
