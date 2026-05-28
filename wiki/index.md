@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2248 | Indexed entries: 1464 | Not in index: 741
+> Last updated: 2026-05-28 | Total pages: 2252 | Indexed entries: 1468 | Not in index: 741
 
-## Entities (706 pages)
+## Entities (708 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -55,6 +55,7 @@
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
+- [[entities/mai-image-2-5]] — MAI-Image-2.5: Microsoft's strongest image model. #3 on Arena text-to-image leaderboard (May 2026). Major text rendering improvements.
 - [[entities/mark-mcquade]] — CEO of Arcee AI. Former HuggingFace team member. Pivoted Arcee from post-training services to pretraining from scratch with Trinity Large.
 - [[entities/mastra]] — Mastra — Open-source TypeScript AI agent framework (Gatsby team, 24K ⭐). ACP-compatible coding agents, workflows, voice AI providers, enterprise RBAC.
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler) — MCP server product. GitHub·Trello MCP for Cursor/Claude Code, centralized OAuth management, enterprise access control·audit logging.
@@ -632,6 +633,7 @@
 - [[entities/karpathy-research]] — Andrej Karpathy research contributions
 - [[entities/karpathy-writings]] — Andrej Karpathy writings and blog posts
 - [[entities/knowledgator]] — Open-Source ML research company focused on encoder-based models for information extraction (GLiNER, GLiClass, GLiREL)
+- [[entities/koog]] — Koog: JetBrains' JVM (Java/Kotlin) AI agent framework. v1.0 stable (May 2026, 4K ⭐). Graph DSL, multiplatform OpenTelemetry, Anthropic prompt caching, HTTP transport decoupled from Ktor.
 - [[entities/kore-ai]] — Kore.ai — Enterprise AI agent platform (Artemis, May 2026). Declarative Agent Blueprint Language (ABL), dual-brain architecture, 6 orchestration patterns. 500+ Global 2000 customers. Azure launch.
 - [[entities/langchain]] — LangChain — framework for building applications with LLMs via composable chains
 - [[entities/langsmith]] — LangSmith — LLM observability & evaluation platform. LangSmith Engine (May 2026): CI/CD for agents — auto-detects failures from traces, clusters issues, drafts fixes/evals.
@@ -715,7 +717,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (724 pages)
+## Concepts (726 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -876,6 +878,7 @@
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4): antirez's local AI inference project. Runs DeepSeek V4 Flash with 2/8bit asymmetric quantization on 96-128GB Macs. Plans distributed inference and coding agent integration. First time using local models for serious work.
 - [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
+- [[concepts/eagle-3-1]] — EAGLE 3.1: Speculative decoding reliability upgrade. Fixes attention drift via FC normalization + post-norm hidden-state feedback. 2.03× throughput on Kimi K2.6 (vLLM). Jointly developed by EAGLE, vLLM, TorchSpec teams (May 2026).
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training objective for CLI agents. Learns world models "for free" from terminal response tokens already in the rollout. Nearly doubles TerminalBench-2.0 pass@1 at zero extra cost. By Vaishnavi Shrivastava, Dimitris Papailiopoulos, Piero Kauffmann & Ahmed Awadallah (MSR AI Frontiers, 2026-05). Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517).
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
@@ -1138,6 +1141,7 @@
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
 - [[concepts/starchild-1]] — Starchild-1 — Odyssey ML's real-time multimodal world model. Autoregressively generates synchronized audio+video. Streaming interactive control. Causal distillation pipeline.
 - [[concepts/state-of-agentic-coding]] — Monthly podcast by Armin Ronacher & Ben Vinegar (5 episodes, Dec 2025–Apr 2026). Covers model dynamics, context management, slop forks, quality crisis, meta-agentic programming.
+- [[concepts/stride-reasoning]] — STRIDE: Learnable stepwise language feedback for LLM reasoning. Co-trains generator + generative verifier using outcome-only rewards. Breaks scalar information bottleneck. Zhang et al. (NTU/Alibaba, May 2026).
 - [[concepts/subquadratic-attention]] — Subquadratic Attention — Attention mechanisms scaling sub-quadratically (better than O(n²)). Mamba, RWKV, Hyena, and SubQ's first commercial attempt (12M context, $29M seed). Open questions about frontier-scale quality.
 - [[concepts/swe-bench]] — SWE-bench & SWE-bench Verified — Standardized benchmark for evaluating coding agents on real-world software engineering tasks from GitHub issues.
 - [[concepts/swe-bench-agent-scaffolding]] — Agent design when Claude 3.5 Sonnet achieved 49% on SWE-bench Verified. Philosophy: "cede as much control to the model as possible, minimize scaffolding." Bash Tool + Edit Tool + minimal prompt. Demonstrates the importance of scaffolding optimization for the same model.

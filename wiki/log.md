@@ -1,6 +1,35 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] active-crawl | EAGLE 3.1, MAI-Image-2.5, Koog, STRIDE, Self-Replication enrichment
+
+### Pages Created
+- [[concepts/eagle-3-1]] — EAGLE 3.1: Speculative decoding attention drift fix. FC normalization + post-norm hidden-state feedback. Joint EAGLE+vLLM+TorchSpec development. 2.03× Kimi K2.6 throughput.
+- [[entities/mai-image-2-5]] — MAI-Image-2.5: Microsoft's strongest image model. #3 on Arena leaderboard. Major text rendering improvements.
+- [[entities/koog]] — Koog: JetBrains JVM (Java/Kotlin) AI agent framework v1.0. Graph DSL, OpenTelemetry, Anthropic prompt caching.
+- [[concepts/stride-reasoning]] — STRIDE: Learnable stepwise language feedback. Co-trains generator + verifier with outcome-only rewards. Zhang et al. (NTU/Alibaba).
+
+### Pages Updated
+- [[concepts/self-replicating-llm]] — Enriched: 22 prompt variants, 4 target configs, pipeline milestones table, agent configuration details, 3 replication objectives.
+
+### Tag Taxonomy Updated
+- wiki/SCHEMA.md — Added `vllm`, `torchspec` (Products), `jetbrains` (People/Orgs), `kotlin`, `java` (Engineering)
+
+### Raw Articles Saved
+- raw/articles/2026-05-26_vllm_eagle-3-1.md
+- raw/articles/2026-05-26_microsoft_mai-image-2-5.md
+- raw/articles/2026-05-21_jetbrains_koog-1-0.md
+- raw/articles/2026-05-21_arxiv_stride-reasoning.md
+
+### Sources
+- https://vllm.ai/blog/2026-05-26-eagle-3-1
+- https://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/
+- https://github.com/JetBrains/koog/releases/tag/1.0.0
+- https://arxiv.org/abs/2605.18851
+
+
+---
+
 ## [2026-05-28] blog-wiki-ingest | Simon Willison PMF, Codex Tax AI, Warp GPT-5.5, Nesbitt CHAOSS
 
 ### Pages Updated
