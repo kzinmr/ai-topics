@@ -1,6 +1,14 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] fix | Removed duplicate index entries
+
+- **Action**: Removed 20 duplicated concept index entries from index.md (block was inserted at lines 1416-1436)
+- **Duplicates removed**: effective-harnesses, elastic-ep, elixir-beam-agent-orchestration, embedding-long-context-degradation, enterprise-ai-scaling-patterns, epd-disaggregation, evals-for-ai-agents, evals-vs-monitoring-debate, evaluation-flywheel, evaluation-tools-langsmith..., event-driven-architecture, excessive-agency, exec-plans, experience-is-a-tax, experiential-memory, federated-tiny-training-engine, filesystem-memory, fineweb, flashattention-pytorch-educational
+- **Header corrected**: Total pages: 2220 | Indexed entries: 1457 | Not in index: 763
+- **Pipeline health**: Index corruption (pipe, triple-bracket, line-number) all 0 — wiki-health-fix clean
+
+---
 ## [2026-05-28] ingest | arXiv:2603.04384 "AgentIR" → concepts/reasoning-aware-retrieval.md, enrich agentic-search.md + deep-research.md, raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
 
 ## [2026-05-28] ingest | Antoine Chaffin "DenseOn with the LateOn" → entities/lighton.md, entities/denseon-lateon.md, entities/antoine-chaffin.md, update late-interaction

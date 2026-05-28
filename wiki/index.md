@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2255 | Indexed entries: 1471 | Not in index: 741
+> Last updated: 2026-05-28 | Total pages: 2220 | Indexed entries: 1457 | Not in index: 763
 
 ## Entities (709 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -722,7 +722,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (727 pages)
+## Concepts (709 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1413,27 +1413,6 @@
 - [[concepts/filesystem-memory]] — Filesystem as Agent Memory — Using standard file I/O for persistent agent state.
 - [[concepts/fineweb]] — FineWeb — High-quality pre-training dataset bridging proprietary and public data gaps.
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention (FA1-FA4) PyTorch Educational Implementation.
-
-- [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents — Anthropic's harness design for agents spanning multiple context windows.
-- [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism) — Load-balanced expert parallelism for MoE models; elastic scaling without model redistribution.
-- [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration — Using the Erlang VM and OTP patterns for multi-agent systems.
-- [[concepts/embedding-long-context-degradation]] — Embedding Long-Context Degradation — Embedding models lose retrieval ability beyond ~4K tokens (AUC→0.50 at 8K). Demonstrated by Jina AI (Mar 2025) on jina-embeddings-v3. Query expansion fails; needle position is strongest predictor.
-- [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
-- [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
-- [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
-- [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate — Ben Hylak (Raindrop) vs Ankur Goyal (Braintrust) on whether offline evals or production monitoring is the future of AI evaluation. 6 definitions of "eval," 4 claim-by-claim rebuttals. Consensus: complementary layers.
-- [[concepts/evaluation-flywheel]] — Evaluation Flywheel — OpenAI pattern cycling evaluation and improvement for AI product development.
-- [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
-- [[concepts/event-driven-architecture]] — Event-Driven Architecture — Software design pattern for asynchronous, decoupled service communication.
-- [[concepts/excessive-agency]] — Excessive Agency — OWASP Top 10 for LLMs entry on AI agents taking unintended actions.
-- [[concepts/exec-plans]] — Execution Plans — Pattern where agents create a plan before executing tasks.
-- [[concepts/experience-is-a-tax]] — Experience is Now a Tax — Thesis that traditional seniority in knowledge work is becoming a liability.
-- [[concepts/experiential-memory]] — Experiential Memory — Framework for sharing and augmenting context between agent turns.
-- [[concepts/federated-tiny-training-engine]] — Federated Tiny Training Engine (FTTE) — Semi-asynchronous federated learning framework.
-- [[concepts/filesystem-memory]] — Filesystem as Agent Memory — Using standard file I/O for persistent agent state.
-- [[concepts/fineweb]] — FineWeb — High-quality pre-training dataset bridging proprietary and public data gaps.
-- [[concepts/flashattention-pytorch-educational]] — FlashAttention (FA1-FA4) PyTorch Educational Implementation.
-
 
 ## Events (7 pages)
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
