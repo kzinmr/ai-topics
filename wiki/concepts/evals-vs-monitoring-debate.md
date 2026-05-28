@@ -20,9 +20,11 @@ sources:
   - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md
 related:
   - "[[concepts/agent-evaluation-methodology]]"
+  - "[[concepts/probabilistic-era-software]]"
   - "[[concepts/raindrop]]"
   - "[[entities/ben-hylak]]"
   - "[[entities/ankur-goyal]]"
+  - "[[entities/gian-segato]]"
 ---
 
 # Evals vs Monitoring Debate
@@ -68,7 +70,7 @@ Hylak identified a fundamental ambiguity: the word "eval" has at least **6 disti
 
 **Hylak's rebuttal:** You wouldn't brag about unit test pass rates. Evals are **adversarially selected** — you add a failure case after you already found it, so the eval set becomes a collection of known issues. The real measure is production performance.
 
-The core problem: evals only test what you can imagine. Production reveals what you can't. Replit's founding engineer confirmed that eval datasets "by definition constantly lag behind" actual user behavior.
+The core problem: evals only test what you can imagine. Production reveals what you can't. [[entities/gian-segato|Gian Segato]] (Replit's founding data scientist, now Anthropic research) confirmed that eval datasets "by definition constantly lag behind" actual user behavior — a key argument from his essay *Building AI Products In The Probabilistic Era* (see [[concepts/probabilistic-era-software]]).
 
 > "The agents are too much to test. But not too much to monitor."
 
@@ -126,4 +128,5 @@ The most productive framing treats evals and monitoring as **complementary layer
 - **[How to Evaluate AI Agents](https://www.howtoeval.com/)** — Hylak's 2026 guide synthesizing the debate's lessons
 - **[Your AI Product Needs Evals](https://hamel.dev/blog/posts/eval-tools/)** — Hamel Husain on error analysis
 - **[Replit's A/B Testing Blog](https://blog.replit.com/ai-ab-testing)** — Founding engineer on why eval datasets lag behind production
+- **[[concepts/probabilistic-era-software]]** — Gian Segato's ontological framework: why deterministic playbooks break with AI
 - **[[concepts/agent-evaluation-methodology]]** — Full lifecycle framework incorporating both perspectives

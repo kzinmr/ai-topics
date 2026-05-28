@@ -4343,3 +4343,17 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Sources
 - https://www.raindrop.ai/blog/thoughts-on-evals/
+
+## [2026-05-28] probabilistic-era ingestion | Gian Segato's ontological framework for AI products
+
+### Pages Created
+- [[concepts/probabilistic-era-software]] — Probabilistic Era: ontological shift from F: X→Y to F'(?), Minimum Viable Intelligence, engineering→empiricism, data as the new OS
+- [[entities/gian-segato]] — Gian Segato: Anthropic research, early Replit (trained code models, first coding agent), author of "Probabilistic Era" and "Agency is Eating the World"
+- raw/articles/2025-08_gian-segato_probabilistic-era.md — Full essay text
+
+### Pages Updated
+- [[concepts/evals-vs-monitoring-debate]] — Cross-linked Gian Segato as the "Replit founding engineer" cited by Hylak; added probabilistic-era framework to Further Reading
+
+### Sources
+- https://giansegato.com/essays/probabilistic-era
+- https://giansegato.com/

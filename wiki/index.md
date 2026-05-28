@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2242 | Indexed entries: 1460 | Not in index: 739
+> Last updated: 2026-05-28 | Total pages: 2244 | Indexed entries: 1462 | Not in index: 740
 
-## Entities (704 pages)
+## Entities (705 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -268,6 +268,7 @@
 - [[entities/geohot-github-io]] — **Projects:** comma.ai (Founder/CEO), tinygrad (Creator), tiny corp (Founder). **Essays:** "Punk, or why I don't stream anymore" (May 2026) — critique of AI-mediated culture, wireheading, "information war" on inner reality, anti-streaming stance.
 - [[entities/georgi-gerganov]] — **X/Twitter** | @ggerganov |
 - [[entities/grant-sanderson-3blue1brown]] — **Alias** | 3Blue1Brown | YouTube math/ML educator (8.3M subscribers). Creator of Manim animation engine (open-source). Neural networks, linear algebra, calculus series. Stanford graduate, former Khan Academy fellow. MIT computational thinking co-lecturer.
+- [[entities/gian-segato]] — Gian Segato — AI researcher at Anthropic, early Replit (trained code models, shipped first coding agent). Author of "Building AI Products In The Probabilistic Era" and "Agency is Eating the World." Founder of Uniwhere (acquired).
 - [[entities/gilesthomas]] — ML researcher, educator, software developer. Creator of PythonAnywhere.gilesthomas.com
 - [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai.
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
@@ -713,7 +714,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (721 pages)
+## Concepts (722 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -947,6 +948,7 @@
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information: A variational extension of Shannon information theory that accounts for the observer's computational constraints. DPI violations, PAC estimation guarantees in high dimensions, applications to structure learning and fair representation learning (Xu et al., ICLR 2020).
 - [[concepts/probabilistic-engineering]] — Probabilistic Engineering: Proposed by Tim Davis (Modular). A paradigm shift where codebase correctness moves from "known" to "believed" as AI agent-generated code becomes dominant. Generation is cheap but verification is expensive. Includes 24-7 employees, role fission, Jevons paradox applied to code.
+- [[concepts/probabilistic-era-software]] — Probabilistic Era — Gian Segato's ontological framework: AI shifts software from F: X→Y (deterministic funnels) to F'(?) (infinite input space, stochastic outputs). Minimum Viable Intelligence, engineering→empiricism, new model=reset all assumptions, data is the new OS.
 - [[concepts/personal-superintelligence]] — Personal Superintelligence — The evolution of personal AI assistants into superintelligent agents, philosophical tensions.
 - [[concepts/openrlhf]] — OpenRLHF: One of the earliest OSS RLHF libraries. DeepSpeed-based, robust reward model support. Supports async training (--async_train).
 - [[concepts/ifeval]] — IFEval — Instruction-following evaluation. 25 verifiable instruction types, ~500 prompts. Deterministic evaluation. Qwen3.5-27B leads at 95.0%. Saturation trend among top models.
