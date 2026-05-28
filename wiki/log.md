@@ -1,6 +1,17 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] fix | Wiki health: auto-fix issues
+
+### Actions
+- **Index health**: Analyzed 2224 pages — zero corruption (pipe/line-number/triple-bracket/space all 0 ✅)
+- **Orphan pages**: Added 18 concept pages to index.md (constrained-decoding, functional-emotions-llms, gpt-5.5, gpt-5.5-instant, gpt-model-milestones, inference, inference-speed-development, knowledge-graph-memory-agents, llm-assisted-writing, llm-core, llm-evaluation-harness, llm-inference, llm-security, llm-steering, local-llm, mac-studio-local-ai, managed-agents, memory-architecture)
+- **Broken wikilink fix**: [[concepts/human-sandwich] → [[concepts/human-sandwich]] (missing ])
+- **Header corrected**: Concepts header 709→706, Total pages 2220→2238, Indexed entries 1457→1475, Not in index 763→745
+
+
+---
+
 ## [2026-05-28] fix | Removed duplicate index entries
 
 - **Action**: Removed 20 duplicated concept index entries from index.md (block was inserted at lines 1416-1436)
