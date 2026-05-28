@@ -138,6 +138,24 @@ This uses **residual compression** (ColBERTv2) with product quantization — eac
 - **Creator**: [[entities/benjamin-clavie|Benjamin Clavié]] — French ML researcher, co-author of ModernBERT
 - **Host**: [[entities/answerdotai|AnswerDotAI]]
 - **Core model**: [[concepts/colbert|ColBERT]] by [[entities/omar-khattab|Omar Khattab]] (Stanford/MIT)
-- **Related tools**: [[entities/denseon-lateon|LateOn/DenseOn]] (LightOn), [[concepts/pylate|PyLate]]
+- **Related tools**: [[concepts/pylate|PyLate]], [[concepts/fast-plaid|FastPLAID]], [[entities/denseon-lateon|LateOn/DenseOn]]
 - **Ecosystem**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]]
 - **Practical usage**: [[entities/simon-willison|Simon Willison]]'s blog search (Jan 2024)
+
+## Comparison: RAGatouille vs PyLate
+
+[[concepts/pylate|PyLate]] (LightOn, CIKM 2025) is the training-focused counterpart to RAGatouille:
+
+| Dimension | RAGatouille | [[concepts/pylate|PyLate]] |
+|-----------|------------|---------------------------|
+| **Focus** | Quick RAG integration, ease of use | Training flexibility, research-grade performance |
+| **Training** | `RAGTrainer` with hard negative mining | Contrastive + KD, GradCache, multi-GPU |
+| **Retrieval** | Built-in ColBERT indexing | [[concepts/fast-plaid|FastPLAID]] (Rust engine) |
+| **Reranking** | ✅ | ✅ |
+| **Backend** | Stanford ColBERT directly | Sentence Transformers |
+| **License** | Apache 2.0 | MIT |
+| **Paper** | — | CIKM 2025 |
+| **Best for** | Prototyping, RAG pipelines | Training SOTA models, research |
+| **Stars** | ~3,900 | ~780 |
+
+**Verdict**: Complementary, not competitive. Train with PyLate, deploy with RAGatouille. Or use PyLate + FastPLAID for the full pipeline if you need maximum control.

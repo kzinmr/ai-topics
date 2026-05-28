@@ -22,6 +22,13 @@
 ---
 ## [2026-05-28] ingest | arXiv:2603.04384 "AgentIR" → concepts/reasoning-aware-retrieval.md, enrich agentic-search.md + deep-research.md, raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
 
+## [2026-05-28] ingest | PyLate + FastPLAID → concepts/pylate.md, concepts/fast-plaid.md, ragatouille comparison
+
+- **Raw articles**: `raw/articles/2025-06-01_lighton_pylate-github.md`, `raw/articles/2025-06-01_lighton_fast-plaid-github.md`
+- **concepts/pylate.md** (NEW): Training library for ColBERT models (LightOn, CIKM 2025). Contrastive + KD training, GradCache, multi-GPU, NanoBEIR eval, FastPLAID backend. Full comparison vs RAGatouille.
+- **concepts/fast-plaid.md** (NEW): Rust-based PLAID engine for multi-vector search. GPU accelerated, incremental updates, per-token similarity matrices, per-query filtering, IVF + product quantization.
+- **concepts/ragatouille.md** (UPDATED): Added "Comparison: RAGatouille vs PyLate" section — complementary tools (train with PyLate, deploy with RAGatouille).
+
 ## [2026-05-28] enrich | RAGatouille stub → full concept page (GitHub README + Simon Willison TIL)
 
 - **Raw articles**: `raw/articles/2023-12-29_answerdotai_ragatouille-github.md`, `raw/articles/2024-01-27_simonwillison_exploring-colbert-ragatouille.md`
