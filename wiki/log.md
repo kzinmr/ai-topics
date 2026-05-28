@@ -2,6 +2,20 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] agent-harness-survey | Ingested "Agent Harness Engineering: A Survey" (Li et al., 2026) — ETCLOVG taxonomy, 138+ project mapping, cross-layer synthesis
+
+### Pages Created
+- [[concepts/etclovg-taxonomy]] — ETCLOVG Taxonomy: Seven-layer agent harness engineering taxonomy (Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance). Maps 138+ open-source projects from [Awesome-Agent-Harness](https://github.com/picrew/Awesome-Agent-Harness).
+- raw/articles/2026-05-28_li-et-al_agent-harness-engineering-survey.md — Full survey paper text
+
+### Pages Updated
+- [[concepts/harness-engineering]] — Added ETCLOVG taxonomy section with project mapping table and key findings; added sources (survey URL, Awesome-Agent-Harness)
+- [[comparisons/agent-harnesses]] — Added survey + Awesome-Agent-Harness catalog as sources; added etclovg-taxonomy to related pages
+- wiki/SCHEMA.md — Added `survey` and `taxonomy` tags to Meta category
+
+### Raw Article Saved
+- raw/articles/2026-05-28_li-et-al_agent-harness-engineering-survey.md — Source: https://picrew.github.io/LLM-Harness/
+
 ## [2026-05-28] paper-ingestion | Ingested DiffusionBlocks paper (arXiv:2506.14202, ICLR 2026)
 
 ### Pages Created

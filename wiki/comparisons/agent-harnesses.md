@@ -32,6 +32,9 @@ sources:
   - https://opencode.ai
   - https://openai.com/codex/
   - https://medium.com/superagentic-ai/codex-cli-running-gpt-oss-and-local-coding-models-with-ollama-lm-studio-and-mlx-4b796e39404b
+  - https://picrew.github.io/LLM-Harness/
+  - https://github.com/picrew/Awesome-Agent-Harness
+  - raw/articles/2026-05-28_li-et-al_agent-harness-engineering-survey.md
 moved_from:
   - concepts/agent-harness-comparison.md
   - comparisons/coding-agent-harnesses.md
@@ -48,6 +51,7 @@ related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/agent-harnesses]]"
   - "[[concepts/bitter-lesson-agent-harnesses]]"
+  - "[[concepts/etclovg-taxonomy]]"
 ---
 
 # AI Agent Harness Comparison — 9 Major Harnesses

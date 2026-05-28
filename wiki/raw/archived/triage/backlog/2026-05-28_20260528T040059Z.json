@@ -1,0 +1,61 @@
+{
+  "checkpoint_run_id": "20260528T040059Z",
+  "summary_ja": "5 raw backlog articles triaged. take=0 (existing wiki coverage is good). skip=2 (non-AI: Boyter China travel blog, Paul Graham fundraising essay), reference=3 (AI-related but already captured: Subliminal Learning paper, Reiner Pope chip design lecture, AINews GLM-5 digest).",
+  "decisions": [
+    {
+      "item_id": "boyter.org--china-trip-2--b99a059c.md",
+      "source": "backlog",
+      "title": "China Trip 2",
+      "url": "https://boyter.org/china-trip-2/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--china-trip-2--b99a059c.md",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI content - 2004 personal travel blog from China. No AI/LLM relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Personal travel blog from China, 2004. Snow, food, temples, cultural observations. No AI content."
+    },
+    {
+      "item_id": "substack.com--redirect-52eaff3a-cb2d-4a62-822a-db3a42eadff6--85da8523.md",
+      "source": "backlog",
+      "title": "Language models transmit behavioural traits through hidden signals in data",
+      "url": "https://substack.com/redirect/52eaff3a-cb2d-4a62-822a-db3a42eadff6",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-52eaff3a-cb2d-4a62-822a-db3a42eadff6--85da8523.md",
+      "recommended_action": "reference",
+      "reason_ja": "Anthropic Subliminal Learning paper (Nature 2026) full text. Already covered in concepts/behavioral-trait-transmission.md (created 2026-04-16 via True Positive Weekly #157). No new findings in body text.",
+      "candidate_wiki_path": "concepts/behavioral-trait-transmission.md",
+      "body_excerpt": "Experimental setup: distillation on unrelated domain. Teacher fine-tuned on trait, student trained on filtered outputs. Misalignment transmitted through numbers, code, and CoT traces even after heavy filtering."
+    },
+    {
+      "item_id": "paulgraham.com--fr-html--fd3c0094.md",
+      "source": "backlog",
+      "title": "How to Raise Money",
+      "url": "http://www.paulgraham.com/fr.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--fr-html--fd3c0094.md",
+      "recommended_action": "skip",
+      "reason_ja": "PG 2013 startup fundraising essay. No AI/LLM relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "September 2013 essay on startup fundraising. Three-phase path, investor psychology, forces acting on founders."
+    },
+    {
+      "item_id": "dwarkesh.com--p-reiner-pope-2--1d86197d.md",
+      "source": "backlog",
+      "title": "Reiner Pope - Chip design from the bottom up",
+      "url": "https://www.dwarkesh.com/p/reiner-pope-2",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dwarkesh.com--p-reiner-pope-2--1d86197d.md",
+      "recommended_action": "reference",
+      "reason_ja": "Reiner Pope x Dwarkesh chip design lecture. Already captured in entities/reiner-pope.md and entities/matx.md (2026-05-23 blog-wiki-ingest). No new content gaps.",
+      "candidate_wiki_path": "entities/reiner-pope.md",
+      "body_excerpt": "Blackboard lecture with Reiner Pope (CEO of MatX): logic gates to systolic arrays, Dadda multiplier, FP4 vs FP8 quadratic scaling, data movement cost dominance, pipeline registers."
+    },
+    {
+      "item_id": "substack.com--redirect-b2523a4d-fc56-489b-9a40-1c3e0ad0c2c7--f8328a0a.md",
+      "source": "backlog",
+      "title": "[AINews] Z.ai GLM-5: New SOTA Open Weights LLM",
+      "url": "https://substack.com/redirect/b2523a4d-fc56-489b-9a40-1c3e0ad0c2c7",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-b2523a4d-fc56-489b-9a40-1c3e0ad0c2c7--f8328a0a.md",
+      "recommended_action": "reference",
+      "reason_ja": "AINews GLM-5 digest. Already covered in entities/glm-5-zai.md, entities/minimax.md, concepts/china-agentic-coding-sprint.md. GLM-5 specs (744B/40B active, 28.5T tokens, DeepSeek Sparse Attention), MIT license, BF16 release, benchmark results all reflected in existing pages.",
+      "candidate_wiki_path": "entities/glm-5-zai.md",
+      "body_excerpt": "AI News digest covering GLM-5 launch: 744B params/40B active, 28.5T tokens, DeepSeek Sparse Attention, 200K context, MIT license, BF16 release, VendingBench2 SOTA among open models."
+    }
+  ]
+}

@@ -34,8 +34,11 @@ sources:
   - raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
   - https://x.com/vtrivedy10/status/2052100726608781363
   - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
+  - raw/articles/2026-05-28_li-et-al_agent-harness-engineering-survey.md
   - https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
   - https://blog.langchain.com/better-harness-a-recipe-for-harness-hill-climbing-with-evals/
+  - https://picrew.github.io/LLM-Harness/
+  - https://github.com/picrew/Awesome-Agent-Harness
 description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain, Addy Osmani's Agent = Model + Harness framework, and the Agent Harness Engineering discipline."
 ---
 
@@ -384,6 +387,32 @@ Training and inference infrastructure advances enabling better harnesses:
 - [[entities/sierra]] — Enterprise harness-as-a-service at $15B valuation
 - [[concepts/service-as-software]] — Business model thesis behind Sierra
 - [[entities/warp-terminal]] — Multi-harness control plane for cloud agents; Oz sits a layer above individual harnesses
+- [[concepts/etclovg-taxonomy]] — The seven-layer taxonomy (Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance) for agent harness engineering, proposed by Li et al. (2026)
+- [[raw/articles/2026-05-28_li-et-al_agent-harness-engineering-survey]] — Full survey paper mapping 138+ projects
+
+## ETCLOVG Taxonomy & The Systems View (Li et al., 2026)
+
+In May 2026, Li et al. published "Agent Harness Engineering: A Survey," expanding harness engineering from its eval-centric origins into a full-stack systems discipline. The survey proposes the **[[concepts/etclovg-taxonomy|ETCLOVG taxonomy]]** — seven architectural layers that decompose the agent infrastructure stack:
+
+| Layer | Scope | Mapped Projects |
+|-------|-------|----------------|
+| E — Execution | Sandboxes, microVMs, runtimes | 20 |
+| T — Tooling | Protocols (MCP, A2A), tool interfaces | 12 |
+| C — Context | Short-term, session, persistent memory | 9 |
+| L — Lifecycle | Orchestration, multi-agent, task pipelines | **47** |
+| O — Observability | Traces, costs, failure signals | 15 |
+| V — Verification | Benchmarks, evals, regression feedback | 21 |
+| G — Governance | Permissions, hooks, audit | 14 |
+
+**Total: 138+ open-source projects coded** against the taxonomy, maintained as a living catalog at [Awesome-Agent-Harness](https://github.com/picrew/Awesome-Agent-Harness) (220 entries as of May 2026).
+
+Key findings:
+- **Lifecycle (L) is the most crowded layer** (47 projects) — orchestration is where most open-source energy is concentrated
+- **Context (C) and Governance (G) are underrepresented** as standalone projects — they tend to be embedded inside larger frameworks or live in commercial SDKs
+- **Three cross-layer dynamics**: cost-quality-speed trilemma, capability-control tradeoff, and harness coupling (local optimizations can degrade the whole system)
+- **Five open problems**: hardening execution, reliable state, trace-native diagnosis, standard handoffs, adaptive simplification
+
+This survey complements the eval-centric view of harness engineering (Hamel Husain, Addy Osmani) with a systems-architecture perspective, positioning the harness as an independent system layer with its own taxonomy, design principles, and open research questions.
 
 ## References
 

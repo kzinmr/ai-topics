@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2236 | Indexed entries: 1456 | Not in index: 737
+> Last updated: 2026-05-28 | Total pages: 2237 | Indexed entries: 1457 | Not in index: 737
 
 ## Entities (703 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -712,7 +712,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (718 pages)
+## Concepts (719 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -875,8 +875,9 @@
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training objective for CLI agents. Learns world models "for free" from terminal response tokens already in the rollout. Nearly doubles TerminalBench-2.0 pass@1 at zero extra cost. By Vaishnavi Shrivastava, Dimitris Papailiopoulos, Piero Kauffmann & Ahmed Awadallah (MSR AI Frontiers, 2026-05). Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517).
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
-- [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (MINTEval: avg 138.8K context, 27.9% average, memory as learned subsystem).
-- [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized Low-Rank Adaptation for large-scale fine-tuning.
+- [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (M
+- [[concepts/etclovg-taxonomy]] — ETCLOVG Taxonomy — Seven-layer agent harness engineering taxonomy: Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance. Proposed by Li et al. (2026). Maps 138+ open-source projects.
+- [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized 
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gemini]] — Google Gemini — Google DeepMind's multimodal LLM family.
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
