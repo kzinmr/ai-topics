@@ -1,6 +1,16 @@
 # Wiki Log
-
 > Chronological record of all wiki actions. Append-only.
+
+## [2026-05-28] blog-wiki-ingest | Simon Willison PMF, Codex Tax AI, Warp GPT-5.5, Nesbitt CHAOSS
+
+### Pages Updated
+- [[entities/simon-willison]] — Added Enterprise PMF & Pricing Analysis section: $2,180/month API cost vs $200 subscription, Anthropic/OpenAI enterprise pricing shift (Nov 2025/Apr 2026), Uber/MS budget stories, $1.25B/month Colossus deal, April 2026 as revenue inflection point.
+- [[entities/warp-terminal]] — Added GPT-5.5 Efficiency & Growth section: 30% fewer tokens per agentic coding task, ARR 35x growth, enterprise revenue +500%, 1M devs/56% Fortune 500, 90% agent-co-created PRs, Open Agentic Development model, Zach Lloyd quotes.
+- [[entities/andrew-nesbitt]] — Added CHAOSS Metrics in 2026 section: activity counts decoupled from human effort, responsiveness metrics broken, contributor identity crisis, Bot Activity blind spot, Bus Factor/Libyears blind spots, release frequency ambiguity, licensing questions.
+- [[concepts/self-evolving-agents]] — Added Tax AI (Codex) case study: 7,000 returns, three-part self-improving loop (practitioner feedback → production traces → Codex improvement), Codex task environment pattern (AGENTS.md + task.yaml + EXEC_PLAN.md + RESULTS.md).
+- [[concepts/open-source-ai-destruction]] — Added CHAOSS metrics blind spot section referencing Nesbitt's analysis of AI breaking open source measurement.
+
+---
 
 ## [2026-05-28] newsletter-wiki-ingest | SemiAnalysis Finding Miscompiles + AWS Bedrock Margins
 

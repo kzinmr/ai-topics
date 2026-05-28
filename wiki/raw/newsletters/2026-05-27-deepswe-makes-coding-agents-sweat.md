@@ -1,0 +1,94 @@
+---
+title: "📊 DeepSWE Makes Coding Agents Sweat"
+date: 2026-05-27
+processed_at: 2026-05-28T07:10:42.056147+00:00
+source_label: "uid=148"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-05-27
+
+**Subject:** 📊 DeepSWE Makes Coding Agents Sweat
+**Collected:** 2026-05-28T07:10:42.056154+00:00
+**Articles linked:** 20
+
+## 1. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/I7CM6wKs%2BHKUYGLNhuYhbuqdyN9v%2FMf7B%2FArXtrhZod71TBKNksmPWe8Pxyv%0AtbGExiy3ZEr7BeR2BlOqM5ZgPxd1Ou3%2F%2FPx%2Bixp%2F0WfGLLYaDO4QWazFap7t%0A9kcrTXMT2k5gPnITrrq7DOrIjUy%2FHLXcOag0sZyxvkKc%2FF%2Fr%2FAVxo9AwjS5C%0AJJTfMBGdQEYflhsjiMteWbLMOLDJtOp31w%3D%3D%0A/91d5ff7f33c26ad1
+
+## 2. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/sMyhJN8Zr%2Fg4WkkAgx%2B%2BVS3rV3JmCl7XYtnrrX9byotSUTkORZhAPCNyIRGo%0AQ9WNkjffl5sRkO1J6oJmPk932z0iJUG13KoLJqyW8ROku32JrlP2ucRHe5IK%0AAqzC%2FZMdS5Ocw80Gr4%2FoxZp0almyeZJlKkkIATSnGWVR3kdL243m4lwDjBTJ%0AK%2BHLa20oUrhRbh7CnnE3G5yaspk2cnwxtA%3D%3D%0A/59b769438570c627
+
+## 3. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/VS6rbkI2bUt30m2JA6Gj4K5%2FXN1%2FBt%2FexAnHQ%2FalOO9fJkI%2BU5%2F%2FaHc0XYtt%0AgIE4H5dsx0X9weOIgbMh26KfLImtxJ6in%2B8zvihO0M%2FPVFB0AM3rI3WRNuNo%0AuOYQPY8VbtZLT5jsGQAO7sPfsHssLYwRKdipGiOpX%2FSyN5gQe3jGr5l%2BCGV2%0Avp8RZq%2Fh%2BDwpM%2FgpTZdDt6uLHPfgRGv0RA%3D%3D%0A/09aa4d59794b598a
+
+## 4. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/YZvlsOwG2s5LO6JpPyU%2Foc6IaI5Wor4U%2Fx%2FpsiRZZRvF9%2FvtW2Jwsix%2Fsonj%0A46Z68hv7J2XYx%2B1jssWa8nFHh%2Fc%2BKZAHvh00hcUbpOisGZaB4P%2BXRMZyJEWG%0AGHoWItxl4C3uVgqBKwp7ZDDuxOz%2BPlZrhasNm5zxgI1lm0gb5xV%2FK2mVdEt3%0AV2NzXpyzm2hZXtMDMpJWL%2BWiAXUD4I208QWoFJEFSWAlfzoeNWm8L1FxqXD2%0A89xfri3IinslxVUDFOEKidqdsAjI4%2FmRpYXq06kllFgZ5%2Fb7fkJqKy%2FHfCHX%0An2txmt%2B4FMmeSUSOQw7rUNHPtoUmsRt1z7rIr0XP%2Fg%3D%3D%0A/380a0b5623a11511
+
+## 5. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/MhAnt2Z4tyjU0%2BrqCj4oX0FJb06aKfzZiTNFEjqTJZ9UdWRIqXvn32tGyiuB%0AMLcfElZeUv%2F30VRuYKAKxl7MrxSjtPpJKnKR1FfS81jn11Mq5ThpNM5oi%2Fpn%0AE5KBx9ARsxJ4U9CKrhODEwnRDhNbjtrMoRKTKlMSOGt7ZPVQSZMQ%2BfEZYpyP%0AxIW%2FRUk44fquVgiAHngUdSxxtW%2FoDTn2vupL6Im2%2BB%2BwJACAAJ9ozK%2BVTROh%0AjzYoy%2BLtaNUCDjJ6%0A/1ca22458c34560bb
+
+## 6. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/wsLie168H1dp2upyFzeL2kXpxyRwPR1CdQqVzI%2F7i5idEo3Q9rTT%2BWypEnYQ%0A%2BKgrM8ihprFdcybojyEG9hz%2FJ%2BGbZwqnw5XBOaNqgixN8Ri99yguhFOEPBjS%0AhQOdIYPNTV14vgMqs26QCZ3LKrVK1mz7n5Bc8UJ4E0841Fl%2FnH%2FMHiJ1tOnJ%0ADpBGfxnc48IQwnjvoZkKWoth1KDGPXcIdw%3D%3D%0A/89e278e125637c53
+
+## 7. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/rNaZ%2FCJalkQGbfZmMDeWgXDYn%2BpRz0e%2F2NiSgVcvLwE3DkYiuZL9Gaoa84qM%0ABAe6G6Tcme5rPlq0geAMqnJ7IxUzDrsGFgFjkTbYxTezl8vobJ3W%2FCkZy5RI%0AiX1KGvp8OiYyncfWE9YaVd%2FtAosqxXF3nBZPAImnghdSJURIaXS%2BBSSFWSD5%0Am6OsKj61V2WLG3iQh46P0Otc2dLZX2T2Hg%3D%3D%0A/736d8ae7fd981c3e
+
+## 8. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/kscfm%2Fdvhf8%2BcPoSRU%2BZOB9GPUzwRqnDoqmTgaG8rL6cz6KaSWvtg3WsKdSv%0AmO3sS5Fbh32fvo8oYKdkQzak8bH71qPfwNVAo0ptDbgxP39EAAQAP%2FEtxp8c%0AHJlhmo8GTmvR0LdY4pBVh0gxormEIgErO5daopFkqVbgCnOU1MvRl55HNuHG%0A%2BYbXRnef06XdgiVXtFNunEN9DBE2te9ejQ%3D%3D%0A/d8d3effd16675844
+
+## 9. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/zF1NqoflECOjj1HtxKP2ezrYNn3%2FJEl%2FAz7ExH5KfeeBaaOu9sghVpqjbRiZ%0ASqOigXdVZrPI5vneUiN6pGVFjX0zlRZNjNFbTS8eP5cEbvzOjteAaswV%2B2oQ%0A5Rvyu6HIOtX%2FdpMiDXZX%2FjkwF1ut0Z%2BudT9yIiyBUHHxSvj2nVXBr%2BEKOCQc%0ADWZbBOIkZgWLMgM7XqMyaY%2BfSvJW26Y3Ng%3D%3D%0A/a58da6e1ebbba040
+
+## 10. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/SgTazQ%2BQXBcxZ0JyAV%2F9oH%2FFIOaBuNTEwat8gZpMvV82kANt1RSBER0LnHVA%0AT712Ap1aT9bPbsMyvZngM7dGLTlUYV%2FbDchviDEZ5qrsPGbECkyS%2FHoTtuiI%0A8epyzFtgDbxw%2FeIqPOMnOkCjq%2FnbH3weBkobQZiUNUjHd2sYQGWxqZj4iaRD%0ALbROYo7q2sSN03rkNlzfNv4uslqnzwB8IA%3D%3D%0A/1783d135e591348e
+
+## 11. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/bQh5UrUZNmpk02NvI0aRHXFEc3do8j2fjCjdBRwjB3NEJl8mHh%2Fb%2BO0Kes8y%0AqgibVcuFBwKzxYs5KF%2FaKjrlwIyn3RdxLRpzNHbGtK10Az7IFy5nXrgaSUYj%0AoZ40EMv9P2EYyIk9a2UCTNXvT1BsFfKPEOR4%2BZJeYMSefgCglyaDRqFlC169%0ACFFZBuPX7K9xvXxHiy9%2FZ2v%2BgukXMdbvmw%3D%3D%0A/1a0ab7ba28f3fd5e
+
+## 12. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/ClYgECXONWeK8UEU5aJXTh7BG5qj784ICq%2Fh2ElyB%2B2X6mP6g1Vl5s0vg3%2BS%0AcUmEIji%2Fv3Ru%2B9Dxi35OoN2mRQ4k5D0h4Cq3jbs5Wf%2BtZ5OCuT%2BB9J1dtFUg%0A0h31ghQw%2Feit1eDKnv86z%2Fle5GRdZSD9QY3CkOv9fASDx9zJksenn%2BQk8gx7%0AfuN%2BcbJd4bsn0j%2FdWuGr22Q0RQt3U8B%2Fyw%3D%3D%0A/16e400c8f0c08afc
+
+## 13. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/7joJuLeiUK%2B0Xe%2BoDQNa2iza6X%2Bf72JgUnlwGX9wEGga1r0z%2BcyKu4cmstUD%0A591vGL567V1c3eXXogl9JKfB6mN79r1DjyG1LL3PkUBN6YbL6NIvYyczjBZy%0AEs9hJMpEscuCVERDPtJ8Q4tycD20uHUOxj8M36ylQGBnp3dAh3rP24SMvD7q%0AfW7O6JtrQ0sQS2ncbE0B6FY3hj7ZL4VYyVZoYgNQEf91EqKeMtGCR1kTgUeB%0ApI%2BSrAhRffv3B75K52XEWXkS55ScNzO9Kth1bNTN0M22JuDIwMwYd20BJwuj%0AT3U2MP%2BCfyKaKryUNjr3gVhCjc4WRmT4tjTu%2BW6HAw%3D%3D%0A/cdb86fba2a15d506
+
+## 14. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/zkOi4C%2FdlbF14nKCcjpZUOegQjSFq1h6NjoG1%2F5zi2qAZOfHBfBXK3axGhre%0AJoIy40bLoM39%2BWz4Xe3pAHLW6Ad5oA3iKyDInUXuOEN9Rb6YV1kezHiko01o%0AtyZJRbEzmqK5h2XJT0yN13PeCiqB3dA5n81R%2FQe8cpZDKimy%2B0G7RpM5EGaf%0AeS9zZn0HQrVkMDkmB0USzN1NCAcKZsO4JalakOGKavWGYOKUjYu8Gkw92UUw%0A0JGlmSd1dAHO3Zc2DR9qSkS2kMRZJ7sYFPuQV4I1MAqKgtZut70hcRfzHHdc%0Ad31u39eMbBn7uDE47ijZIMlQMVpsEZKZLskUj%2FxJKw%3D%3D%0A/4e34411a6c1bde13
+
+## 15. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/D5LpeuOHVcfA4bGC7q81j4vR6a4c0YxGJpAtllWGkfmphOkB4ZQ%2BgmiMyxcI%0AjwSB4B4Dk0hHi5GMeFaqzLiVD6lweJvE3Dj4sJmJiWTRjio7a%2F4bj%2FdrTRJW%0AbIwUdJdtYsAiNUEdfeEjw3GBvw84BtV1WB9t6SSH6cyvEXvjAXLN26OX1Sp1%0AwTBbYI29yjBsN0AyP0jAaZbBePFhz9tJQR%2Foxb45UuaRGistz%2B3%2BaXqOepkM%0A3ZuNo6wPOcffcFcTfzWsvzrOiknKgEMIDt7PkQC%2FqQj9SdJRALrbpCeWF4%2Bi%0A%2FCL0sk0UAKCq2%2BnosuaN6S9pBatMtyLqqTtAbxlVPw%3D%3D%0A/3b73bc766bd94c0f
+
+## 16. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/%2F4phzMC%2BOq1VE740iVyM%2FRqUC5ngXmID5pyIf6ex%2FzvkSU6OsfjqdtiSf11Z%0AtTjprcQZlWklKNu%2FwaInVEQyOKKJ5QDXTVIYC%2BUojiHjcBYqb6%2FHHmGcy7Vo%0A3PWXPmr%2FHIIfgpW8iq6L2kA4SdbU%2Bbex7Yc3XQTTvK7kmnrliG81mnSsDcd7%0A8fr0Hb8njLMqssVo7uyttpJQvUGIICtYVw%3D%3D%0A/aca12dac1ae0a588
+
+## 17. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/8XZXgchd4czFLo10mCgQh6jFktxhV8QJ0M8KzeYp7JLzMJegpW%2Fk0cEfG2%2B%2F%0AUCnosRSo1B6HKWCtmpQVlI%2FJdNRPAcw1ehPSBZOvtnymeetdxowjDEQu1Eng%0AgUnwA2La58mEyO%2FnEO5Uq0Dja2xhlAe%2BqXzTDrx4wqytYUpZJyMOuMx%2FlUqf%0AhOXeB%2FcahjX7erAYQ2Rnh5aa9LR0%2B8os0N7WbhuEad7DtslanGYynfIVE9xl%0AF3goHKPuTAIoa4qhvy0n8HK%2FgQpRaPHyup5hiFvraCQpRwpc%2BOB%2BCr1fxGyM%0A2VMOzYBSs1A8FsAjdAdRF17ZFu8TWdlxp1wPy2D6hA%3D%3D%0A/75da2fb5466cd6d1
+
+## 18. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/%2FMOFrTAhDu3wIR1tJfza3AQxYMg22m4zW1ppbIfLlMz0cltERp5du5t7JqAz%0AEruAzhRzjwf14oAIUMDBC7Kc%2FZ5zA48qQRj%2BqNoCwW1NL9u1hu8YE7chLmtt%0AXXkdTOxtlpRmJrrnfAHPtNnax5n%2FwW0ULGZfNYeHSCGGo0PptyW%2BgrQRqmyH%0AUQP42GNLFcFP0hVFSbObAvD4LAXrcq80JC3NkFlFIc6MDcWz3O6ZO2SndbPx%0AOjdmb7lN8MBcOfdHdXVUcSxuP%2BzgeIh4fDOebIesebuJ2eZRMkUC3ocixthn%0AShu64Ip4nU6RXW17E%2FvmMoIHPwAmLkZ8h4G2R4i%2FiQ%3D%3D%0A/c3b642a1563a04d0
+
+## 19. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/IKKLBTi0KGnNTKDtuwtCGm0wT8twyrAmjvx%2BEthJr4%2Fj%2F95XXI9rX0k8k4DJ%0AbRsIiJ0lAIvqcx%2F0ICEWjIOasIIFLtNxA5mxJq%2B%2FXTvy9KfmO8OEDUIJdOu9%0AZAB4etJuK36vWzAOhPMt36p%2FWN94NLWekP9NDmJPcIq8toWMRpCge%2F4VAQBP%0AiEDIN6bsAL3Vaa4N4s4%2B6pz7wkKFRLhQWw%3D%3D%0A/693282f444d5db00
+
+## 20. Link
+
+- **URL:** https://link.mail.beehiiv.com/v1/c/eaiAN%2BdSZBPS7mtFbXIXnnjqIRXFF3dh7TL1XikG1a%2FmPgZUY6Q%2F%2BJrlZQdx%0A04k49cBkphX2UCRTq%2FX%2FhNoza3mI%2BCEREkm%2B%2BB4rWEQQ9QHwKwCb0brVVSR1%0AERNqBQ1zNfDqNjah8fV14hrSJBcYGHcsL6AHg299hFBmdctWFc%2BpN%2FC1zLbv%0AqNYN7hvFI%2BRq%2B%2BGzBSTqgrWzOSGQI3HIJQ%3D%3D%0A/0de5b2b356a911b2
+

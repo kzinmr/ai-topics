@@ -1,10 +1,11 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-05-23
+updated: 2026-05-28
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
+  - raw/articles/2026-05-27_openai_warp-open-source-gpt-5-5.md
   - https://www.warp.dev/blog/warp-is-now-open-source
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
   - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
@@ -33,6 +34,36 @@ sources:
 ### Paraform Context
 
 Warp operates in the hypercompetitive developer tools space, vying for senior engineering talent in New York and San Francisco against well-funded peers. The company's lean team (~44 employees serving nearly 1M developers) reflects an engineering-heavy headcount typical of companies recruiting through platforms like [[entities/paraform]]. Warp's open-source pivot and "agent-first" contribution model also create demand for niche roles — DevRel, Rust systems engineers, and AI/agent infrastructure engineers — which are the kind of hard-to-fill positions that Paraform's recruiter marketplace specializes in. With OpenAI as founding sponsor, Warp also competes for talent against [[entities/openai]], [[entities/cursor-3]], and [[entities/anthropic]].
+
+## GPT-5.5 Efficiency & Growth (May 2026)
+
+In a May 2026 OpenAI customer story, Warp detailed its partnership with OpenAI and GPT-5.5-powered agent workflows:
+
+**Key Metrics**:
+- **Nearly 1 million developers** use Warp; **56% of the Fortune 500** are customers
+- **90% of Warp's internal pull requests** are now co-created by agents
+- **ARR grew 35×** in the last year; **enterprise revenue up >500%** since Q4 2025
+- **GPT-5.5** uses **30% fewer tokens** per agentic coding task compared to GPT-5.4 in internal benchmarks
+
+**Open Agentic Development Model**: Warp's thesis is that development will shift from individual assistants to coordinating persistent, parallelized agents:
+- Agents write the code; developers **specify intent, verify outputs, and decide what ships**
+- Decisions become **reusable context** for future agents, improving the system over time
+- With sufficient orchestration, agents can produce **more consistent code than a loosely coordinated group of humans**
+- Open source transforms from individual contribution to **collective product judgment and shared vision**
+
+**Model Usage Strategy**:
+- GPT-5.5 is used for **complex, long-horizon agentic coding tasks** requiring reasoning across large problem spaces
+- OpenAI models are used as **LLM-as-a-judge** in evaluation pipelines
+- Warp routes tasks by difficulty, sending the toughest work to GPT-5.5
+
+### Zach Lloyd Quotes
+
+> *"We think we can ship a better Warp, more quickly, by working with our community to supervise a fleet of agents. OpenAI models help make that sustainable for the long-horizon coding work these systems require."*
+
+> *"We've found that OpenAI models regularly provide frontier-level intelligence while taking fewer tokens and turns to complete the same tasks. The models are especially strong for coding tasks that require reasoning across large problem spaces."*
+
+> *"No one knows exactly what the future of agentic development will look like. We think the community ought to be able to participate in shaping it."*
+
 
 ## Products
 

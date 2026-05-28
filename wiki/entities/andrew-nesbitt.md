@@ -2,7 +2,7 @@
 title: "Andrew Nesbitt"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-13
+updated: 2026-05-28
 type: entity
 ---
 
@@ -228,6 +228,41 @@ Writing a good exclusion list is **cheaper and more effective** than training a 
 
 Related: [[concepts/agent-safety]], [[concepts/project-glasswing]]
 
+### "CHAOSS Metrics in 2026" — AI Agents Break Open Source Measurement
+
+Published May 27, 2026, this is Nesbitt's most thorough examination of how **AI agents invalidate the assumptions baked into open source metrics**. While "The Mismeasure of Open Source" critiqued scoring models generally, this piece applies the same observational rigor to a specific published metric set.
+
+**The Core Problem**: CHAOSS metrics were drafted 2018-2023 assuming contributions were produced at human speed. That cost is being removed from one side of the interaction, so counts increasingly measure how much of the cheap thing (agent-generated events) is being pointed at a project rather than anything about the community behind it.
+
+**Activity Counts Decoupled**:
+- `Issues New`, `Issues Closed`, `Change Requests`, `Code Changes Commits` — all proxy measures assuming an issue cost someone ten minutes and a PR cost an afternoon
+- Daniel Stenberg on curl: "The top-level numbers go up, maintainer time per item goes up, and the proportion of items that represent something a user actually needs goes down. None of the count metrics can distinguish those three movements."
+- `Change Request Acceptance Ratio`: originally framed as "welcoming to contributors" — on a project receiving low-effort generated PRs, a falling ratio means maintainers are doing their job, and a high one might mean they've given up reviewing
+
+**Responsiveness Metrics Broken**:
+- `Issue Response Time`, `Time to First Response`, `Issue Resolution Duration` — a project receiving 200 issues/month instead of 20 will see median response times rise even if maintainers work the same amount
+- AI triage bots drop Time to First Response to seconds — the metric definitions say to filter bot responses, but the assumption that bots are labelled breaks when accounts look like normal users
+
+**Contributor Identity Crisis**:
+- `Contributors`, `New Contributors`, `Conversion Rate`, `Contribution Attribution` all assume a contributor identity maps to a person
+- An agent opening PRs from freshly created accounts, or one person running a fleet of agents with separate tokens, registers as a burst of new contributors
+- Conversion Rate was designed to measure onboarding effectiveness; now it's also measuring how many "contributors" were ever capable of having an experience
+
+**Bot Activity Metric's Blind Spot**: The CHAOSS Bot Activity definition catches Dependabot and release automation but not coding agents posting through a personal access token at plausible hours. Nesbitt wrote a mock RFC trying to specify this boundary — concluding "you can't: every clause depends on voluntary disclosure by exactly the operators who won't disclose."
+
+**Risk Metrics (Bus Factor, Libyears)**:
+- `Bus Factor` and `Contributor Absence Factor`: the "Weekend at Bernie's" problem — a project where the absence factor is 1, that person left 18 months ago, and contributions are Dependabot merges + agent PRs landing on an unprotected branch. The metric reports the same number for "one engaged maintainer" and "one departed maintainer whose token still works."
+- `Libyears`: measures `current_release_date - installed_release_date`. A dependency that stopped releasing contributes zero forever. Packages in the "dead or unresponsive" bucket score as perfect until someone acquires publish credentials. The xz → Shai-Hulud → TanStack worm series argues that the newest release is the one most likely to be hostile, while libyears scores a year-old stable version as "debt."
+
+**Release Frequency Ambiguity**: Projects with automated release pipelines (every Dependabot merge cuts a patch) and projects deliberately adding cooldown periods for supply chain defense show the same number — the metric definition doesn't ask which.
+
+**Licensing Blind Spot**: SPDX Document and licensing focus areas are computed the same way regardless of who wrote the code. But whether AI-generated code has any copyright to grant is not a settled question. The detection reports MIT for a repo an OpenClaw instance filled unattended the same as for any other.
+
+**Less Affected**: Upstream Code Dependencies, Test Coverage, and DEI survey-based metrics hold up better — they measure artifact properties or ask humans directly.
+
+> *"The released catalogue currently has no way to distinguish an event produced by a person exercising judgement from an event produced by an agent following a loop, and almost everything in the Evolution and Risk focus areas depends on that distinction holding by default. It no longer does."*
+
+
 ## Sources
 
 - nesbitt.io — Personal blog and portfolio
@@ -249,6 +284,7 @@ Related: [[concepts/agent-safety]], [[concepts/project-glasswing]]
 
 ## References
 
+- raw/articles/nesbitt.io--2026-05-27-chaoss-metrics-in-2026-html--c12cd929.md
 - nesbitt.io--2026-04-06-the-cathedral-and-the-catacombs-html--220e6392
 - nesbitt.io--2026-04-07-who-built-this-html--b5a6f50d
 - nesbitt.io--2026-04-08-package-security-problems-for-ai-agents-html--cec0229c

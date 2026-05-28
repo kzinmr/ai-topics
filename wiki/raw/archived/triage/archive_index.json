@@ -1,6 +1,8 @@
 {
   "urls": [
     "http://xania.org/202605/walking-the-dog?utm_source=feed&utm_medium=rss",
+    "https://berthub.eu/articles/posts/het-solvinity-besluit-gevolgen/",
+    "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---solutions-to-the-exercises",
     "https://brutecat.com/articles/google-cloud-rce",
     "https://buttondown.com/archive/assumptions-weaken-properties/",
     "https://daringfireball.net/2026/05/the_fonts_of_the_us_federal_courts",
@@ -10,13 +12,17 @@
     "https://devblogs.microsoft.com/oldnewthing/20260520-00/?p=112343",
     "https://devblogs.microsoft.com/oldnewthing/20260522-00/?p=112348",
     "https://devblogs.microsoft.com/oldnewthing/20260525-00/?p=112351",
+    "https://devblogs.microsoft.com/oldnewthing/20260527-00/?p=112361",
     "https://dfarq.homeip.net/advantages-disadvantages-windows-3-0/",
+    "https://dfarq.homeip.net/amd-k6-2-released-may-26-1998/?utm_source=rss&utm_medium=rss&utm_campaign=amd-k6-2-released-may-26-1998",
+    "https://dfarq.homeip.net/bill-gates-internet-tidal-wave-microsoft-memo/?utm_source=rss&utm_medium=rss&utm_campaign=bill-gates-internet-tidal-wave-microsoft-memo",
     "https://dfarq.homeip.net/cyberrebate-com-the-worst-dotcom-era-idea/?utm_source=rss&utm_medium=rss&utm_campaign=cyberrebate-com-the-worst-dotcom-era-idea",
     "https://dfarq.homeip.net/kaypro-ii-launched-may-20-1982/?utm_source=rss&utm_medium=rss&utm_campaign=kaypro-ii-launched-may-20-1982",
     "https://dfarq.homeip.net/microsoft-antitrust-case-of-1998/",
     "https://dfarq.homeip.net/quantum-link-aol-before-it-was-aol/?utm_source=rss&utm_medium=rss&utm_campaign=quantum-link-aol-before-it-was-aol",
     "https://dfarq.homeip.net/what-happened-to-tandy-computers/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-tandy-computers",
     "https://dynomight.net/crc-rates/",
+    "https://eli.thegreenplace.net/2026/notes-on-fourier-series/",
     "https://entropicthoughts.com/ninety-percent-of-the-t-distribution",
     "https://entropicthoughts.com/pythagorean-addition",
     "https://exe.dev/?df",
@@ -49,6 +55,7 @@
     "https://link.mail.beehiiv.com/v1/c/1WzAe7L9pyftNJ5gX%2FOzQQtKoPt%2BQmrj0ao39NrmsWriEqHq1hpvRPYyyhzFlOHUNmdEWtlZKIdqvFDprqaMhYSGkhUub%2BFfzOBbeSkpoi%2FGzyOJKq%2BqKC7LK48TKZlcbKxPEyOtGMHUjsfpUlYdzKSI19Jxj8irV4E1Thmj9wX0xdJzM58FnC5hmnHckc%2F1Roih3EXIzQ4roQmjwJTiEg%3D%3D",
     "https://link.mail.beehiiv.com/v1/c/5ukPIU8FS7GB%2Btdv7Ev%2BSanZzJEsv94lhZHB49dyEep6NprJHwwC1fCwxAaG",
     "https://link.mail.beehiiv.com/v1/c/Dlp63COnhqWkNconhdoUJTNZ7IZmySmHw5axl40V8vd4aHv8gAXb",
+    "https://link.mail.beehiiv.com/v1/c/I7CM6wKs%2BHKUYGLNhuYhbuqdyN9v%2FMf7B%2FArXtrhZod71TBKNksmPWe8Pxyv%0AtbGExiy3ZEr7BeR2BlOqM5ZgPxd1Ou3%2F%2FPx%2Bixp%2F0WfGLLYaDO4QWazFap7t%0A9kcrTXMT2k5gPnITrrq7DOrIjUy%2FHLXcOag0sZyxvkKc%2FF%2Fr%2FAVxo9AwjS5C%0AJJTfMBGdQEYflhsjiMteWbLMOLDJtOp31w%3D%3D%0A/91d5ff7f33c26ad1",
     "https://link.mail.beehiiv.com/v1/c/OipUzx7G1eSSu%2FqPexdS8VA0f",
     "https://link.mail.beehiiv.com/v1/c/P4MbzJupLdi3DkQwmjxKsYqGyeM%2FB5k3XioPbz424G%2Bno1ADJFZqUUAitT1r",
     "https://link.mail.beehiiv.com/v1/c/eYafGo9F38lm487XrQNbTxxgBZZ88CAmHimRvXGo0sZxmSFTSZARSnTTK%2BdO%0Av2Qeh7GKj5bjLGasUSyLrAknZ8lb3g5avDG91U719sqrzzgZcnMIxPSgTvmk%0AIPUYlVkBttmiG6qjjMKy%2BczmGoxW5YPofHPlyZqrmxg6wmKQ8yhpnQQ9DaGS%0AIJNPaaDRz4z62%2FQJQKfOSmFhHqk3wvXpdQ%3D%3D%0A",
@@ -61,6 +68,7 @@
     "https://matklad.github.io/2026/05/18/always-be-blaming.html",
     "https://matklad.github.io/2026/05/21/symlinking-nixos-dotfiles.html",
     "https://maurycyz.com/astro/ngc4236/",
+    "https://maurycyz.com/misc/battery/",
     "https://micahflee.com/read-cindy-cohns-new-book-privacys-defender-my-thirty-year-fight-against-digital-surveillance/",
     "https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/",
     "https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html",
@@ -84,10 +92,13 @@
     "https://open.substack.com/pub/swyx/p/ainews-how-to-land-a-job-at-a-frontier",
     "https://open.substack.com/pub/swyx/p/ainews-new-ai-infra-unicorns-exa",
     "https://open.substack.com/pub/swyx/p/ainews-openai-gpt-next-disproves",
+    "https://open.substack.com/pub/swyx/p/esmfold2",
     "https://open.substack.com/pub/swyx/p/the-fourth-law",
     "https://open.substack.com/pub/thesignal/p/6-ai-tools-for-the-people-still-doing",
     "https://open.substack.com/pub/thesignal/p/google-goes-agentic-harks-big-bet",
     "https://open.substack.com/pub/theskip/p/10-job-search-rules-that-just-broke",
+    "https://openai.com/academy/how-to-use-codex-for-everyday-work",
+    "https://openai.com/index/election-safeguards-2026",
     "https://pluralistic.net/2026/04/11/obvious-terrible-ideas/",
     "https://pluralistic.net/2026/04/12/always-great/",
     "https://pluralistic.net/2026/04/14/compartment/",
@@ -95,9 +106,11 @@
     "https://pluralistic.net/2026/05/21/purity-culture/",
     "https://pluralistic.net/2026/05/25/lying-spies/",
     "https://pluralistic.net/2026/05/26/the-ai-will-continue/",
+    "https://pluralistic.net/2026/05/27/unnecessariat/",
     "https://repebble.com/blog/how-i-use-my-index-01-production-update",
     "https://sentinelone.com/fast16",
     "https://shkspr.mobi/blog/2026/05/book-review-terrible-worlds-destinations-by-adrian-tchaikovsky/",
+    "https://shkspr.mobi/blog/2026/05/gadget-review-chuwi-minibook-x-n150-linux/",
     "https://shkspr.mobi/blog/2026/05/php-simple-way-to-send-http-headers-before-a-script-ends/",
     "https://shkspr.mobi/blog/2026/05/whale-fall/",
     "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything",
@@ -122,6 +135,7 @@
     "https://simonwillison.net/2026/May/26/paul-graham/#atom-everything",
     "https://simonwillison.net/2026/May/26/the-pressure/#atom-everything",
     "https://simonwillison.net/2026/May/27/kyle-ferrana/#atom-everything",
+    "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
     "https://substack.com/@lenny",
     "https://substack.com/app-link/post?publication_id=10845&post_id=198725302&action=share",
     "https://substack.com/app-link/post?publication_id=10845&post_id=198725302&comments=true&action=post-comment",
@@ -131,6 +145,7 @@
     "https://substack.com/redirect/2/eyJlIj...z3KA?",
     "https://substack.com/redirect/83dbda6a-f2cb-49b2-8c74-08661d4a8e30",
     "https://susam.net/do-not-roll-your-own.html",
+    "https://terriblesoftware.org/2026/05/27/using-my-fucking-brain/",
     "https://workos.com/docs/pipes?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q22026",
     "https://www.axios.com/...",
     "https://www.espn.com/nba/story/_/id/48686303/steve-kerr-decision-return-coach-golden-state-warriors-steph-curry",
@@ -141,6 +156,7 @@
     "https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/",
     "https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/",
     "https://www.joanwestenberg.com/nobody-is-destined-for-greatness/",
+    "https://www.joanwestenberg.com/the-costco-theory-of-the-internet/",
     "https://www.joanwestenberg.com/why-i-cant-stand-the-word-driven/",
     "https://www.johndcook.com/blog/2026/05/19/closer-look-at-an-identity/",
     "https://www.johndcook.com/blog/2026/05/19/square-root-of-x-squared-minus-one/",
@@ -149,6 +165,8 @@
     "https://www.johndcook.com/blog/2026/05/22/complex-functions-real-parts/",
     "https://www.johndcook.com/blog/2026/05/26/calculating-expected-normal-range/",
     "https://www.johndcook.com/blog/2026/05/26/expected-iq-spread-on-a-jury/",
+    "https://www.johndcook.com/blog/2026/05/27/jensen-shannon/",
+    "https://www.johndcook.com/blog/2026/05/27/the-meta-logo-and-fitting-besace-curves/",
     "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
     "https://www.merriam-webster.com/wordplay/the-hilarious-history-of-ok-okay",
     "https://www.personfamiliar.com/p/ai-humanity-and-dr-manhattan-syndrome",
@@ -163,55 +181,5 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/",
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/"
   ],
-  "updated": "2026-05-27T07:35:13.915959+00:00",
-  "https://docs.google.com/presentation/d/1N7WqZ7vVgh60qi7Tt269XPXXPzrHb4cqvXvAAWbqqeM": {
-    "url": "https://docs.google.com/presentation/d/1N7WqZ7vVgh60qi7Tt269XPXXPzrHb4cqvXvAAWbqqeM",
-    "date": "2026-05-27",
-    "run_id": "20260527T180018Z",
-    "pipeline": "dreaming",
-    "action": "skip"
-  },
-  "https://docs.google.com/presentation/d/16hw0veoCQYKN8hPr8N4EGnXNfUOegGnvKzMpaGZjQjo/edit": {
-    "url": "https://docs.google.com/presentation/d/16hw0veoCQYKN8hPr8N4EGnXNfUOegGnvKzMpaGZjQjo/edit",
-    "date": "2026-05-27",
-    "run_id": "20260527T180018Z",
-    "pipeline": "dreaming",
-    "action": "skip"
-  },
-  "https://every.to/guides/codex-for-knowledge-work": {
-    "url": "https://every.to/guides/codex-for-knowledge-work",
-    "date": "2026-05-27",
-    "run_id": "20260527T180018Z",
-    "pipeline": "dreaming",
-    "action": "skip"
-  },
-  "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/": {
-    "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
-    "date": "2026-05-27",
-    "run_id": "20260527T180018Z",
-    "pipeline": "dreaming",
-    "action": "skip"
-  },
-  "https://elevenlabs.io/blog/introducing-music-v2": {
-    "url": "https://elevenlabs.io/blog/introducing-music-v2",
-    "date": "2026-05-27",
-    "run_id": "20260527T180018Z",
-    "pipeline": "dreaming",
-    "action": "reference"
-  },
-  "https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases/tag/v1.7.0": {
-    "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases/tag/v1.7.0",
-    "date": "2026-05-27",
-    "run_id": "20260527T180018Z",
-    "pipeline": "dreaming",
-    "action": "reference"
-  },
-  "20260527T180018Z": {
-    "source": "dreaming",
-    "archived_at": "2026-05-27T18:20:00Z",
-    "total_decisions": 8,
-    "skips": 4,
-    "references": 2,
-    "takes_consumed": 2
-  }
+  "updated": "2026-05-28T07:33:55.306138+00:00"
 }

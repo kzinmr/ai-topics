@@ -2,10 +2,12 @@
 title: "Self-Evolving Agents"
 tags:
   - self-improving
+  - codex
+  - coding-agents
   - harness-engineering
   - architecture
 created: 2026-04-13
-updated: 2026-05-27
+updated: 2026-05-28
 type: concept
 ---
 ---
@@ -96,6 +98,51 @@ def _check_reload(self):
 | Degradation | Version control and rollback |
 | Unpredictability | Audit trail of changes |
 | Security | Permission restrictions and validation |
+
+---
+### Real-World Case Study: Thrive Tax AI (OpenAI Codex, May 2026)
+
+A concrete Level 2-3 implementation of self-evolving agents: Thrive Holdings and OpenAI co-developed **Tax AI** — a self-improving agent built with Codex — to automate complex tax return preparation for Crete's network of 30+ accounting firms. The system processed **7,000 tax returns** during pilot season.
+
+**Key Results**:
+- **Time saved**: ~1/3 of practitioner time per return
+- **Accuracy**: up to **97% field-level correctness**
+- **Throughput increase**: ~50%
+- **Self-improvement**: At launch only **25%** of returns reached 75% correct field completion; within six weeks **86%** met that threshold
+- One senior accountant went from **180 hours** of tax prep to **only 15 hours**, using freed time for client service
+
+**The Three-Part Self-Improving Loop** (a concrete implementation of Levels 2-3):
+
+1. **Expert Practitioner Feedback**: Corrections captured as structured data, not ad-hoc notes, revealing which workflows to fix next
+2. **Production Traces as Evidence**: Full path from source documents → extracted fields → tax-engine mappings → filed return captured. Enables field-level comparison between agent prediction and final filed value
+3. **Codex-Driven Improvement**: Production issues become eval targets (grouped by repeated failure patterns) → scoped engineering tasks for Codex to investigate, fix, and validate against targeted and regression test suites
+
+**Codex Task Environment Pattern** (identical structure to AGENTS.md pattern):
+```
+branch: codex/fix-rental-0042/
+├── AGENTS.md
+├── tasks/FIND-RENTAL-0042/
+│   ├── task.yaml
+│   ├── EXEC_PLAN.md
+│   └── RESULTS.md
+├── app/tax-ai/rental-income/  # source code
+├── evals/
+│   ├── datasets/fair-rental-days.yaml
+│   ├── suites/fair-rental-days.yaml
+│   └── graders/rental-income.yaml
+├── skills/
+└── docs/
+```
+
+Codex's workflow: investigate pipeline → implement targeted fix → rerun targeted evals + full regression → propose PR. If evidence ambiguous, route back to product team — no guesswork merged.
+
+This case study demonstrates self-evolving agents at **practical scale** (not just a research demo):
+- 7,000 returns processed in production
+- Continuous improvement without manual engineering intervention
+- The task environment structure (AGENTS.md + task.yaml + EXEC_PLAN.md + RESULTS.md) is a reusable pattern for any Codex self-improvement workflow
+
+Source: [raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex.md]
+
 
 ## Related
 

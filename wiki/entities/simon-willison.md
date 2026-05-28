@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-26
+updated: 2026-05-28
 status: L3
-sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md]
+sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md]
 tags: [person, blogger]
 ---
 
@@ -223,6 +223,38 @@ Simon linked to David Oks' analysis of the **memory shortage's effect on consume
 
 Source: [The memory shortage is causing a repricing of consumer electronics](https://simonwillison.net/2026/May/22/memory-shortage/)
 
+### Enterprise PMF & Pricing Analysis (May 2026)
+
+On May 27, 2026, Simon published "[I think Anthropic and OpenAI have found product-market fit](https://simonwillison.net/2026/May/27/product-market-fit/)" — an analysis of the shifting business dynamics at frontier AI labs. This is one of his most important analytical pieces, arguing that coding agents represent the true product-market fit for both companies.
+
+**The Pricing Discovery**: Simon's personal economics tell the story: he pays $200/month for Max+Pro subscriptions but would spend $2,180.16 if billed at API rates — $1,199.79 for Claude Code, $980.37 for OpenAI Codex. His key insight: *he assumed companies were getting similar discounts, but was "could not have been more wrong."*
+
+**Enterprise Pricing Changes**:
+- **Anthropic** (November 2025, confirmed April 2026): Switched from $20/seat/month with "typical workday" usage to **$20/seat + API pricing** for additional usage. Existing customers discovering the change at contract renewal.
+- **OpenAI** (April 2, 2026): Codex pricing shifted to align with API token costs instead of per-message pricing. Applied to all Plus/Pro/Business/Enterprise plans by April 23.
+- **Model price hikes**: GPT-5.5 is **2× the API price** of GPT-5.4; Opus 4.7 is ~**1.4×** Opus 4.6 when accounting for the new tokenizer.
+
+**The PMF Thesis**: Both labs are planning IPOs, but Simon argues the real driver is product-market fit with **coding/general-purpose agents** (Claude Code/Cowork, Codex):
+- ChatGPT had 900M weekly active users but only 50M paying (5.6%) — $10-20/month/user is "an OK business" but insufficient to cover $1T in infrastructure
+- Coding agents burn **vastly more tokens** and are used by well-compensated professionals
+- "These are tools which burn vastly more tokens, but are also quickly becoming daily drivers for the work carried out by extremely well-compensated professionals"
+
+**Enterprise Sales Hiring as Signal**:
+- OpenAI: 703 open jobs, **229 (32.6%)** in enterprise sales/support (account executives, Go To Market, Forward Deployed Engineers)
+- Anthropic: 390 open jobs, **105 (26.9%)** in enterprise roles
+- Simon used Claude Code to scrape their job sites and Datasette Agent for analysis — "Dogfood!"
+
+**AI-Failure Stories Deconstructed**:
+- **Uber**: CTO indicated they "maxed out full year AI budget" just months into 2026, mostly via Claude Code. Simon notes the budget was set in 2025 *before* agents got good in November. COO's full remarks were far more nuanced: "25% of our code commits were via Claude Code last quarter... but it's very hard to draw a line."
+- **Microsoft Claude Code cancellations**: Ostensibly to dogfood Copilot CLI, but The Verge reports financial motivators (June 30 end of FY). Simon: "Both stories support my product-market fit hypothesis. The best pricing advice I ever heard: your customer should **suck air through their teeth** and then say yes."
+
+**The $1.25B/month Compute Deal**: The SpaceX S-1 filing revealed Anthropic agreed to pay **$1.25 billion per month** through May 2029 for Colossus compute capacity. Anthropic said this would "increase our usage limits for Claude Code and the Claude API," implying the deal funds inference, not training. Simon: "The fact that they're willing to spend $1.25 billion per month from just one vendor hints at how big these inference budgets have become."
+
+**Cutting Out the Middlemen**: Anthropic's rumored $10.9B Q2 revenue and potential first profitable quarter suggest the labs are pivoting away from API middlemen (Cursor, Copilot) toward direct enterprise relationships. Claude Code directly competes with Cursor and Copilot. "No wonder Cursor are investing in their own models!"
+
+**April 2026 as New Inflection Point**: Simon identifies April 2026 as the revenue inflection point, following the November 2025 capability inflection point (when GPT-5.1 and Opus 4.5, combined with coding agent harnesses, "got good"). The IPO S-1 documents will provide audited numbers to confirm.
+
+
 ## Key Quotes
 
 > *"I think of vibe coding using its original definition of coding where you pay no attention to the code at all, which today is often associated with non-programmers using LLMs to write code. Agentic Engineering represents the other end of the scale: professional software engineers using coding agents to improve and accelerate their work by amplifying their existing expertise."*
@@ -364,5 +396,6 @@ Simon analyzed Google I/O 2026 through his signature policy of "not writing abou
 3. **The curious FAQ answer**: Simon highlights that Google's FAQ states "Gemini Spark runs on Gemini 3.5 Flash and Antigravity" — an unusual answer that suggests Antigravity (the Go binary) plays a foundational role in Spark's architecture.
 
 See full article: [[raw/articles/simonwillison.net--2026-may-20-google-io--933c8dde.md]]
+- raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md
 
 **PyCon US 2026 Lightning Talk: "The Last Six Months in LLMs in Five Minutes"** (May 19, 2026): Simon delivered a lightning talk summarizing the LLM landscape from November 2025 to May 2026. Key themes: the November 2025 inflection point (coding agents crossing the quality barrier via RLVR), the model crown changing hands five times in one month (Sonnet 4.5 → GPT-5.1 → Gemini 3 → GPT-5.1 Codex Max → Opus 4.5), the rise of OpenClaw and the "Claws" ecosystem, open-weight models (Gemma 4, GLM-5.1) exceeding expectations, and his signature pelican-on-bicycle SVG benchmark. See [[concepts/llm-landscape-nov-2025-to-may-2026|LLM Landscape Nov 2025–May 2026]].

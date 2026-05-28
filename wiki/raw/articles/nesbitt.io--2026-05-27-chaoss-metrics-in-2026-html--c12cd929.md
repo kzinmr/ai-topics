@@ -1,0 +1,140 @@
+---
+title: "CHAOSS Metrics in 2026"
+url: "https://nesbitt.io/2026/05/27/chaoss-metrics-in-2026.html"
+fetched_at: 2026-05-28T07:00:49.899128+00:00
+source: "nesbitt.io"
+tags: [blog, raw]
+---
+
+# CHAOSS Metrics in 2026
+
+Source: https://nesbitt.io/2026/05/27/chaoss-metrics-in-2026.html
+
+The
+CHAOSS project
+has spent the last eight years writing down careful, implementation-agnostic definitions for the things people measure about open source projects: how many issues get opened, how long they take to close, how many distinct people commit, how stale the dependencies are. The point of writing them down is that two dashboards computing “issue response time” should at least be computing the same thing, and the
+released metric set
+has become the closest thing the field has to a shared vocabulary.
+Most of those definitions were drafted between roughly 2018 and 2023, against a background where contributions were produced at human speed, security advisories arrived a few times a year per ecosystem, and a maintainer who stopped maintaining usually stopped committing too. All three of those conditions are changing, and a lot of the metric definitions encode them without saying so. The common thread is that most of the catalogue counts repository events, and event counts were informative because producing an event used to cost a person something. An issue cost someone ten minutes to write up, a PR cost someone an afternoon. That cost is being removed from one side of the interaction and not the other, so the counts increasingly measure how much of the cheap thing is being pointed at a project rather than anything about the community behind it.
+I went through the current released set, in roughly the order the catalogue groups them, and tried to sort out which metrics depend most on those assumptions. This is the same territory as
+The Mismeasure of Open Source
+and
+Centrality is not vitality
+, but applied to a specific published metric set rather than to research practice in general.
+Activity counts
+The largest group of CHAOSS metrics are counts and rates of repository events:
+Issues New
+,
+Issues Closed
+,
+Change Requests
+,
+Change Requests Accepted
+,
+Code Changes Commits
+,
+Code Changes Lines
+. These were always proxies, but the thing they were a proxy for was reasonably stable: an issue meant a person had a problem and took the time to write it up, a change request meant a person had done some work and wanted it reviewed.
+When a measurable share of new issues are model-generated bug reports of varying accuracy, and a measurable share of change requests are agents proposing fixes that may or may not compile, the counts decouple from the thing they were standing in for.
+Daniel Stenberg has been writing up
+what this looks like from the receiving end on curl. The top-level numbers go up, the maintainer time per item goes up, and the proportion of items that represent something a user actually needs goes down. None of the count metrics can distinguish those three movements.
+The original framing of
+Change Request Acceptance Ratio
+reads a falling ratio as a sign the project is becoming less welcoming to contributors. On a project receiving a stream of low-effort generated PRs the reading inverts: a falling acceptance ratio is the maintainers doing their job, and a high one might mean they’ve given up reviewing.
+Responsiveness
+Issue Response Time
+,
+Time to First Response
+,
+Issue Resolution Duration
+, and
+Time to Close
+are framed as measures of how attentive the community is, and they’re affected on both the input and output sides. A project that previously received twenty issues a month and now receives two hundred will see its median response time rise even if the maintainers are doing exactly the same amount of work, because the denominator is being set by whoever is filing issues rather than by anything the project controls. Going the other way, projects that wire up an AI triage bot to post an initial classification on every new issue will see Time to First Response drop to seconds. The metric definitions do say to filter out bot responses, but that filter assumes bots are labelled, and the whole difficulty with the current generation is that the account is a normal user account and the response reads like prose.
+Issue Age
+trends upwards on any project that decides the right response to a flood of generated issues is to leave them open rather than spend maintainer time closing them one by one. That’s a defensible triage decision and the metric reads it as decline.
+Contributor identity
+Contributors
+,
+New Contributors
+,
+Occasional Contributors
+,
+Conversion Rate
+, and
+Contribution Attribution
+all rest on the assumption that a contributor identity maps to a person, and that a new identity appearing means the community has reached someone it hadn’t reached before.
+An agent that opens PRs from freshly created accounts, or a single person running a fleet of agents each with its own token, registers as a burst of new contributors. A project’s New Contributors chart can spike in the same month its only actual maintainer stops reading notifications. Conversion Rate, which tracks how many first-time contributors come back for a second contribution, was designed to measure whether the onboarding experience is working, and is now also measuring how many of the first-time contributors were ever capable of having an experience.
+The CHAOSS catalogue does already have
+Bot Activity
+, which is meant to let you separate automated from human contributions. The definition is built around accounts that are flagged as bots or behave on bot-like schedules, which catches Dependabot and release automation but not a coding agent posting through a personal access token at plausible hours. I wrote a
+mock RFC
+last week trying to specify this boundary in standards language, and the joke is that you can’t: every clause depends on voluntary disclosure by exactly the operators who won’t disclose, and Appendix A concedes there’s no detection mechanism to fall back on. A metric filter has the same problem as a MUST clause, in that neither has anything to test against.
+Risk and absence
+Bus Factor and Contributor Absence Factor
+compute the smallest number of contributors responsible for half the contributions and treat a low number as a concentration risk. The arithmetic is fine but it can’t see the case
+Weekend at Bernie’s
+was about: a project where the absence factor is one, that one person left eighteen months ago, and the contribution count being measured is Dependabot merges and a handful of agent-generated PRs landing on an unprotected branch. The metric reports the same number for “one engaged maintainer” and “one departed maintainer whose token still works,” and the second case is becoming common enough to matter.
+Elephant Factor
+, which does the same calculation over employer affiliations rather than individuals, gets noisier as more contributions arrive without a meaningful affiliation behind them at all.
+Inactive Contributors
+counts people who used to contribute and have stopped, which sounds like exactly the right metric for the silent-quitting problem. The catch is that it triggers on absence of commits, and a maintainer who has wired their repo to auto-merge passing PRs and walked away keeps showing up as the merge author. The thing you’d actually want to detect is absence of judgement rather than absence of events, and none of the event-counting metrics can reach it.
+Libyears
+Libyears
+measures how far a project’s dependencies sit behind the current stable releases of those dependencies, summed across the tree. It originates in
+a 2015 ICSE paper
+that proposed three measures of dependency freshness, with elapsed time as the bluntest of the three, and that is the one that travelled:
+libyear.com
+packaged it as a single number, Thoughtworks moved it to
+Adopt in 2020
+, Renovate surfaces it on dashboards, and CHAOSS took it into the catalogue as a formal metric. Jamie Tanna, who works on the Renovate side,
+wrote up this month
+the caveats he finds himself repeating to people who lean on it, and floated a semver-weighted variant. That post is what started this whole pass through the catalogue.
+The encoded assumption is that distance from the latest release is a proxy for risk, and I don’t think it was a good proxy even in 2015. Software doesn’t degrade with calendar time. A pinned version becomes a problem at the moment a CVE is published against it, or its API is removed upstream, or its maintainer disappears, and those are discrete events with their own feeds. If you have advisory data and semver ranges you already have the signal those events produce, and the wall-clock distance to the newest tag adds nothing on top of it. The 2015 framing also takes for granted that the newest tag is where you should be heading, and the run of incidents from
+xz
+through
+Shai-Hulud
+to
+this month’s TanStack worm
+has been a fairly sustained argument that the release published in the last few hours is the one most likely to be hostile. There is a
+low-background steel
+quality to a version that has been in production for a year without an advisory against it, and libyears scores that as a year of accumulated debt.
+Summing the per-dependency deltas into a single “this repository is 47.3 libyears behind” produces a unit that has no physical meaning, hides which dependency contributed what, gives a string-padding helper the same weight as a TLS library, and scales with how many dependencies you have rather than with anything about their condition. A JavaScript project will reliably score an order of magnitude higher than a Java project doing the same job, which Jamie also notes, because the ecosystem ships smaller packages more often. And the number moves when upstream ships rather than when you do anything, so a quiet week from your maintainers and a busy week from theirs are indistinguishable on the chart.
+The arithmetic is
+current_release_date - installed_release_date
+, so a dependency that has stopped releasing contributes zero forever. A project pinned to the final 2021 release of an unmaintained library scores better than one that is two months behind an actively maintained one. The
+Weekend at Bernie’s
+data put a meaningful share of the most-depended-on packages across sixteen registries in that dead-or-unresponsive bucket. The first time one of those packages registers on the metric again is when somebody acquires the publish credentials and ships a
+resurrection release
+, at which point libyears starts reporting that you are behind and should update to it. A team that has wired the number into a dashboard and an auto-merge policy is being steered by the metric towards exactly the release they should be slowest to take, while the years of silence that preceded it scored as perfect.
+The same blind spot reaches
+Defect Resolution Duration
+once automated vulnerability discovery starts filing advisories against packages that have nobody left to ship a fix. The duration is unbounded for those, and any aggregate over it ends up dominated by however many unfixable advisories happen to be in the window.
+The
+libyear
+package on PyPI
+last shipped in November 2020, has no active maintainers listed on
+ecosyste.ms
+, gets a zero on Scorecard’s Maintained check, and contributes 0.0 libyears to anyone depending on it.
+Release and change
+Release Frequency
+historically read as “high is engaged, low is stagnant.” It now also has to accommodate projects that have automated their release pipeline to the point where every merged Dependabot PR cuts a patch release, and projects that have deliberately slowed down to add
+cooldown periods
+as a supply-chain defence. The same number can mean three different things depending on which of those the project is, and the metric definition doesn’t ask.
+Self-merge rates
+was written to flag projects where code lands without a second pair of eyes. A solo maintainer reviewing and merging an agent’s PR is the second pair of eyes, but reads as a self-merge if the agent committed through the maintainer’s credentials and as a healthy two-party review if the agent has its own account, with the difference coming down to a configuration detail rather than anything about the review process.
+Licensing
+The
+licensing focus area
+and
+SPDX Document
+are computed the same way regardless of who wrote the code, since finding and parsing a licence file is mechanical. But a licence is a grant under copyright, and whether code with no human author has any copyright to grant is
+not a settled question
+. The detection will report MIT for a repo that an OpenClaw instance filled unattended the same as for any other, with no field for whether anyone holds the rights being licensed.
+Less affected
+Upstream Code Dependencies
+,
+Test Coverage
+, and most of the
+DEI working group’s
+survey-based metrics hold up better, because they measure properties of the artifact or ask humans directly rather than counting events. Test coverage is test coverage whoever wrote the tests, and a survey response from a maintainer is still a survey response from a maintainer.
+That is a change in the world rather than a flaw in the original definitions, and the working groups that wrote them could not reasonably have been expected to anticipate it. But the released catalogue currently has no way to distinguish an event produced by a person exercising judgement from an event produced by an agent following a loop, and almost everything in the Evolution and Risk focus areas depends on that distinction holding by default. It no longer does, which I think makes a revision of those areas more pressing than the usual release cadence would suggest.

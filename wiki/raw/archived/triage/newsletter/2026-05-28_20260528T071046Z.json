@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-05-28T07:24:56.343419+00:00",
+  "triage_run_id": "20260528T071046Z",
+  "source": "newsletter",
+  "summary_ja": "4つのニュースレターから61候補をノイズフィルタリング後、実質4記事を評価。1テイク（Justin Lebar/Finding Miscompiles: AIエージェント×コンパイラバグ発見の新パラダイム）、1エンリッチ候補（SemiAnalysis AWSマージン分析: Bedrock/TaaSエコノミクスの深掘り）、1リファレンス（DeepSeek OCR圧縮技術）、7スキップ（既存Wikiでカバー済み or スコープ外）。ESMFold2はバイオインフォマティクスでスコープ外。Uber予算超過は一般ビジネスニュース。DeepSWE/Xiaomi/DeepSeek/Anthropic containmentは既存ページで十分カバー済み。",
+  "decisions": [
+    {
+      "item_id": "<20260527.185159.8e5398ff@mta36>-1",
+      "source": "newsletter",
+      "source_name": "Superintel",
+      "title": "DeepSeek OCR: 9-12x Text Compression",
+      "url": "https://link.mail.beehiiv.com/v1/c/I7CM6wKs%2BHKUYGLNhuYhbuqdyN9v%2FMf7B%2FArXtrhZod71TBKNksmPWe8Pxyv%0AtbGExiy3ZEr7BeR2BlOqM5ZgPxd1Ou3%2F%2FPx%2Bixp%2F0WfGLLYaDO4QWazFap7t%0A9kcrTXMT2k5gPnITrrq7DOrIjUy%2FHLXcOag0sZyxvkKc%2FF%2Fr%2FAVxo9AwjS5C%0AJJTfMBGdQEYflhsjiMteWbLMOLDJtOp31w%3D%3D%0A/91d5ff7f33c26ad1",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ DeepSeek OCRが9-12倍のテキスト圧縮を実現。視覚表現を圧縮媒体として使い、長文テキストを高精度OCRで復元するアプローチ。既存entities/deepseek.mdにOCR技術として軽く追記可能だが、新規ページは不要。",
+      "candidate_wiki_path": "entities/deepseek",
+      "body_excerpt": "# Newsletter Digest - 2026-05-27\n**Subject:** 📊 DeepSWE Makes Coding Agents Sweat\n**Collected:** 2026-05-28T07:10:42.056154+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/I7CM6wKs%2BHKUYGLNhuYhbuqdyN9v%2FMf7B%2FArXtrhZod71TBKNksmPWe8Pxyv%0AtbGExiy3ZEr7BeR2BlOq"
+    },
+    {
+      "item_id": "<20260527.185159.8e5398ff@mta36>-2",
+      "source": "newsletter",
+      "source_name": "Superintel",
+      "title": "DeepSWE Makes Coding Agents Sweat (benchmark content)",
+      "url": "https://open.substack.com/pub/swyx/p/esmfold2",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ DeepSWEベンチマークの詳細（113タスク、668行平均、70pt分散）は既にconcepts/deepswe-benchmark.mdおよびentities/datacurve.mdで十分カバー済み。同一コンテンツの重複。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-27\n**Subject:** 📊 DeepSWE Makes Coding Agents Sweat\n**Collected:** 2026-05-28T07:10:42.056154+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/I7CM6wKs%2BHKUYGLNhuYhbuqdyN9v%2FMf7B%2FArXtrhZod71TBKNksmPWe8Pxyv%0AtbGExiy3ZEr7BeR2BlOq"
+    }
+  ]
+}

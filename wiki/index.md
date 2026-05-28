@@ -115,7 +115,7 @@
 - [[entities/amazon-bedrock-agentcore]] — AWS's fully-managed agentic AI platform for building, deploying, and operating AI agents at scale. Framework-agnostic, composable services.
 - [[entities/amp]] — **Amp** — Coding agent CLI developed at Sourcegraph by Thorsten Ball. Frontier-chasing philosophy: editor extensions killed Feb 2026, CLI rebuilt as Neo (May 2026) with auto-compaction, Plugin API, remote control. Author of "The Coding Agent Is Dead" manifesto.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia). Co-founder OpenAI, Tesla AI, Eureka Labs. Joined Anthropic pre-training team (May 2026). Coined vibe coding / agentic engineering.
-- [[entities/andrew-nesbitt]] — **URL:** https://nesbitt.io
+- [[entities/andrew-nesbitt]] — OSS metadata expert (Ecosyste.ms). Supply chain security, package management. CHAOSS metrics AI-broken-metrics analysis published May 2026.
 - [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-ai]]
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
@@ -558,7 +558,7 @@
 - [[entities/vtrivedy10]] — Varun 'Viv' Trivedy (@vtrivedy10) — LangChain agent harness lead, DeepAgents maintainer. PhD CS (Temple), ex-AWS Scientist. Terminal Bench 2.0: Top 30→Top 5 via harness-only changes. Author of "The Anatomy of an Agent Harness."
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→details]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
-- [[entities/warp-terminal]] — AI-native terminal and Agentic Development Environment (ADE). Open-sourced April 2026 under AGPLv3 with OpenAI as founding sponsor. Oz orchestration platform. BYOK/custom inference (Free plan, OpenRouter/LiteLLM, ACP roadmap).
+- [[entities/warp-terminal]] — AI-native terminal and ADE. 1M devs, 56% Fortune 500. Open-sourced April 2026 (AGPLv3). Oz cloud orchestration. GPT-5.5: 30% fewer tokens/task. ARR 35x growth. 90% PRs agent-co-created.
 - [[entities/weaviate]] — Weaviate — Open-source vector database with built-in MCP server. Weaviate 1.37: MMR reranking, hybrid BM25+vector for coding agents.
 - [[entities/webmcp]] — **WebMCP** is a browser standard developed by the W3C Web Machine Learning Community Group. Jointly specified by Google and Microsoft, it defines the `navigator.modelContext` API for AI agents to interact structurally with web applications. Early preview launched in Chrome 146 in February 2026.
 - [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow/Ibis co-creator, Principal Architect at Posit. Agentic engineering pioneer: RoboRev continuous code review daemon, Agents View session DB, Middleman dashboard, spicytakes.org (1M+ lines agentically). "I almost don't read code now." Superpowers skills framework (Jesse Vincent). Agent Ergonomics thesis. GP at Composed Ventures.
@@ -934,7 +934,7 @@
 - [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
 - [[concepts/openai-symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
 - [[concepts/openai-gpt-realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
-- [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
+- [[concepts/open-source-ai-destruction]] — AI agents overwhelm open source maintainers with low-quality PRs. CHAOSS metrics broken by AI events (Nesbitt CHAOSS analysis).
 - [[concepts/openclaw-architecture]] — OpenClaw architecture details
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
 - [[concepts/open-swe]] — Open SWE: LangChain's open-source internal coding agent framework. Based on Deep Agents + LangGraph. Implements the convergent architecture of Stripe Minions/Ramp Inspect/Coinbase Cloudbot under MIT license. AGENTS.md, sandboxes, Slack/Linear/GitHub integration.
@@ -1121,6 +1121,7 @@
 - [[concepts/sana-vm]] — SANA-WM — NVIDIA's 2.6B parameter open-source world model. 60-second 720p video generation on single GPU. Gated DeltaNet + Softmax hybrid. Apache 2.0.
 - [[concepts/schedulefree-plus]] — ScheduleFree+ — Meta FAIR training method (May 2026). LR-free + schedule-free LLM training via iterate averaging + Polyak step size. 31% training time reduction at 1000 tokens/param. Outperforms WSD schedules.
 - [[concepts/seirenes]] — Self-play RL framework using adversarial distractions to harden LLM reasoning robustness (arXiv May 2026)
+- [[concepts/self-evolving-agents]] — Pattern where agents improve their own behavior. 5 levels: parameter tuning to self-modification. Includes Tax AI (Codex) case study: 7K returns, 97% accuracy, 25%→86% in 6 weeks.
 - [[concepts/self-replicating-llm]] — Self-Replicating LLMs — arXiv paper (May 2026) demonstrating autonomous AI self-replication via vulnerability exploitation. Qwen3.6-27B: 33% success; Opus 4.6: 81% (cross-model replication). Chain replication across 4 machines, 3 continents.
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.

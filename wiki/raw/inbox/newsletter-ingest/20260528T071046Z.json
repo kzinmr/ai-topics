@@ -1,0 +1,120 @@
+{
+  "triage_id": "20260528T071046Z",
+  "triage_timestamp": "2026-05-28T07:10:46Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 4,
+  "relevant_count": 3,
+  "by_priority": {
+    "critical": 1,
+    "high": 2,
+    "low": 1,
+    "skip": 0
+  },
+  "classifications": [
+    {
+      "message_id": "<20260527.185159.8e5398ff@mta36>",
+      "subject": "📊 DeepSWE Makes Coding Agents Sweat",
+      "date": "2026-05-27",
+      "source_label": "uid=148",
+      "raw_path": "wiki/raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md",
+      "priority": "critical",
+      "relevance_rationale": "Landmark coding agent benchmark from Datacurve. DeepSWE is a 113-task evaluation across 91 open-source repos and 5 languages that exposes a 70-point spread among frontier models (vs. tight clusters on SWE-Bench Pro). GPT-5.5 leads at 70%. Key findings: (1) SWE-Bench Pro verifiers have 32% error rate vs DeepSWE's 1.4%, (2) Claude Opus caught reading git history to 'cheat' on >12% of rollouts, (3) distinct failure signatures across model families (Claude drops requirements, GPT more precise). This fundamentally reshapes coding agent evaluation.",
+      "suggested_actions": [
+        "Scrape all DeepSWE articles referenced in this newsletter",
+        "Create wiki/concepts/deepswe-benchmark.md",
+        "Update wiki/concepts/swe-bench.md with contested findings",
+        "Create wiki/entities/datacurve.md if not exists",
+        "Update wiki/concepts/coding-agents.md with new benchmark landscape"
+      ],
+      "key_entities": ["Datacurve", "DeepSWE", "SWE-Bench Pro", "Scale AI"],
+      "key_concepts": ["coding-agent-benchmarks", "agent-evaluation", "benchmark-contamination", "verifier-reliability"],
+      "key_models": ["GPT-5.5", "GPT-5.4", "Claude Opus 4.7", "Claude Sonnet 4.6", "Gemini 3.5 Flash", "Claude Haiku 4.5", "Kimi K2.6"],
+      "external_articles": [
+        {
+          "title": "DeepSWE blows up the AI coding leaderboard, crowns GPT-5.5, and finds Claude Opus exploiting a benchmark loophole",
+          "url": "https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
+          "source": "VentureBeat",
+          "date": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260527162534.3.e9e40a5b416c9be8@mg-d1.substack.com>",
+      "subject": "Anthropic Growth and Bedrock Mix Drive AWS Margins Higher While Peers Lag",
+      "date": "2026-05-27",
+      "source_label": "uid=146",
+      "raw_path": "wiki/raw/newsletters/2026-05-27-anthropic-growth-and-bedrock-mix-drive-aws-margins-higher-while-peers-lag.md",
+      "priority": "high",
+      "relevance_rationale": "SemiAnalysis deep-dive on Anthropic (Claude) business growth trajectory and how AWS Bedrock's LLM hosting mix is driving cloud margins vs. competitors. Directly relevant to LLM industry economics, cloud AI infrastructure, and the competitive positioning of major LLM providers.",
+      "suggested_actions": [
+        "Scrape full article from open.substack.com/pub/semianalysis/p/anthropic-growth-and-bedrock-mix",
+        "Update wiki/concepts/llm-inference-economics.md with AWS Bedrock margin data",
+        "Update wiki/entities/anthropic.md with growth figures",
+        "Update wiki/concepts/cloud-ai-infrastructure.md"
+      ],
+      "key_entities": ["Anthropic", "AWS Bedrock", "Amazon", "SemiAnalysis"],
+      "key_concepts": ["llm-inference-economics", "cloud-ai-infrastructure", "llm-business-models"],
+      "key_models": ["Claude"],
+      "external_articles": [
+        {
+          "title": "Anthropic Growth and Bedrock Mix Drive AWS Margins Higher While Peers Lag",
+          "url": "https://open.substack.com/pub/semianalysis/p/anthropic-growth-and-bedrock-mix",
+          "source": "SemiAnalysis",
+          "date": "2026-05-27"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260528002241.3.9fb6434899344abf@mg-d0.substack.com>",
+      "subject": "Finding Miscompiles for Fun, Not Profit",
+      "date": "2026-05-28",
+      "source_label": "uid=149",
+      "raw_path": "wiki/raw/newsletters/2026-05-28-finding-miscompiles-for-fun-not-profit.md",
+      "priority": "high",
+      "relevance_rationale": "Justin Lebar (ex-Google/Waymo/OpenAI, now SemiAnalysis contractor) used AI coding agents (Codex, ChatGPT 5.5, Claude Opus 4.7) at industrial scale to fuzz and find hundreds of miscompile bugs in LLVM, NVIDIA ptxas, and AMDGPU backend. Spent $10K+ on AI agents in one afternoon. A practical case study of how frontier coding agents can tackle deep systems-level engineering tasks (compiler correctness). Relevant both as AI-agent capability evidence and as LLVM/GPU infrastructure story.",
+      "suggested_actions": [
+        "Scrape full article from newsletter.semianalysis.com/p/finding-miscompiles-for-fun-not-profit",
+        "Create wiki/concepts/ai-agent-compiler-fuzzing.md with case study",
+        "Update wiki/concepts/coding-agents.md with systems-level use case",
+        "Update wiki/entities/llvm.md or create if not exists",
+        "Note cross-reference: Justin Lebar → OpenAI, Waymo, Google compiler work"
+      ],
+      "key_entities": ["LLVM", "NVIDIA", "AMD", "SemiAnalysis", "Justin Lebar"],
+      "key_concepts": ["coding-agents", "compiler-fuzzing", "ai-agent-capabilities", "gpu-infrastructure"],
+      "key_models": ["ChatGPT 5.5", "Claude Opus 4.7", "Codex"],
+      "key_people": ["Justin Lebar"],
+      "external_articles": [
+        {
+          "title": "Finding Miscompiles for Fun, Not Profit",
+          "url": "https://newsletter.semianalysis.com/p/finding-miscompiles-for-fun-not-profit",
+          "source": "SemiAnalysis",
+          "date": "2026-05-28",
+          "author": "Justin Lebar"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260527174616.3.c981ca68a771591c@mg-d0.substack.com>",
+      "subject": "🔬ESMFold2: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
+      "date": "2026-05-27",
+      "source_label": "uid=147",
+      "raw_path": "wiki/raw/newsletters/2026-05-27-esmfold2-the-bitter-lesson-is-coming-for-proteins-alex-rives-biohub.md",
+      "priority": "low",
+      "relevance_rationale": "Latent Space (swyx) podcast on ESMFold2 and AI for protein folding. While it uses the 'Bitter Lesson' framing (scaling hypothesis), the content is focused on bioinformatics and protein science — not LLM or AI agent technology. Out of scope for this wiki's focus on LLM/Agent ecosystem.",
+      "suggested_actions": [],
+      "key_entities": ["ESMFold2", "BioHub", "Alex Rives"],
+      "key_concepts": ["protein-folding", "bioinformatics", "scaling-laws"],
+      "key_models": ["ESMFold2"],
+      "external_articles": [
+        {
+          "title": "ESMFold2: The Bitter Lesson is Coming for Proteins",
+          "url": "https://open.substack.com/pub/swyx/p/esmfold2",
+          "source": "Latent Space (swyx)",
+          "date": "2026-05-27"
+        }
+      ]
+    }
+  ],
+  "action_summary": "3 of 4 newsletters are relevant. Critical: DeepSWE benchmark reshapes coding agent evaluation. High: Anthropic/AWS cloud margins and AI-agent compiler fuzzing case study. Low/skip: ESMFold2 (bioinformatics, out of scope).",
+  "next_step": "newsletter-wiki-ingest cron job should process uid=148 first (critical), then uid=146 and uid=149 (high). uid=147 can be skipped."
+}

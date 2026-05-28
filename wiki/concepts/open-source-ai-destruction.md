@@ -2,8 +2,9 @@
 title: "Open Source AI Destruction"
 type: concept
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-28
 sources:
+  - raw/articles/nesbitt.io--2026-05-27-chaoss-metrics-in-2026-html--c12cd929.md
   - "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/"
   - "https://www.youtube.com/watch?v=bZJ7A1QoUEI"
   - "https://machineherald.io/article/2026-02/22-ai-generated-slop-is-overwhelming-open-source-projects-forcing-emergency-countermeasures"
@@ -98,6 +99,21 @@ Key points from Geerling:
 - **Vouch** (Mitchell Hashimoto): A web-of-trust system designed to gate open source contributions, bypassing the need for blanket PR closures
 - **Good Egg** (Jeff Smith): Automated contributor scoring that mines GitHub contribution graphs to triage PRs by established contribution history. Achieved AUC of 0.647 as standalone predictor — moderate, but useful for prioritization
 - **Platform controls under discussion**: GitHub exploring new controls to gate or filter pull requests
+
+### The Metrics Blind Spot — CHAOSS Under AI Pressure
+
+Andrew Nesbitt's May 2026 analysis of the [CHAOSS metric set](https://nesbitt.io/2026/05/27/chaoss-metrics-in-2026.html) provides the most rigorous diagnosis yet of **how AI agents break open source measurement**. This directly extends the "AI is destroying open source" thesis with empirical specificity:
+
+**The Measurement Crisis**: CHAOSS metrics (drafted 2018-2023) assumed contributions cost human effort. When agents generate events at near-zero cost, the counts decouple from what they proxied for:
+- Activity counts: cannot distinguish 200 human issues from 200 agent-generated issues
+- Responsiveness: AI triage bots drop Time-to-First-Response to seconds, while real response time rises
+- Contributor identity: agent accounts register as "new contributors" — Conversion Rate now measures how many "contributors" were ever capable of having an experience
+- Bus Factor: cannot see "Weekend at Bernie's" — one departed maintainer whose token still works
+
+**Structural Implication**: "The released catalogue currently has no way to distinguish an event produced by a person exercising judgement from an event produced by an agent following a loop, and almost everything in the Evolution and Risk focus areas depends on that distinction holding by default."
+
+See [[entities/andrew-nesbitt]] for the full analysis.
+
 
 ### The Structural Problem
 
