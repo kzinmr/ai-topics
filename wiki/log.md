@@ -2,6 +2,25 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] newsletter-wiki-ingest | SemiAnalysis Finding Miscompiles + AWS Bedrock Margins
+
+### Pages Created
+- [[concepts/ai-agent-compiler-bug-finding]] — AI Agent Compiler Bug Finding: Justin Lebar's empirical study using Claude/Codex agents to find compiler bugs. ~80 ptxas bugs/week via vibe-coded fuzzer, ~2 bugs/min via code-reading agents on x86. Atomic store→non-atomic corruption bug. Repository: SemiAnalysisAI/FuzzX.
+
+### Pages Updated
+- [[entities/semianalysis]] — Added AI Tokenomics section: AWS Bedrock margin analysis ($5.5B run rate, ~55% EBIT margins, TaaS economics, Anthropic $30B ARR, Trainium vertical integration, Google margin inflation).
+- [[entities/deepseek]] — Added DeepSeek OCR section: 9-12x text compression via visual representations.
+
+### Sources
+- raw/newsletters/2026-05-28-finding-miscompiles-for-fun-not-profit.md
+- raw/newsletters/2026-05-27-anthropic-growth-and-bedrock-mix-drive-aws-margins-higher-while-peers-lag.md
+- raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md
+- https://open.substack.com/pub/semianalysis/p/finding-miscompiles-for-fun-not-profit
+- https://open.substack.com/pub/semianalysis/p/anthropic-growth-and-bedrock-mix
+
+
+---
+
 ## [2026-05-28] agent-harness-survey | Ingested "Agent Harness Engineering: A Survey" (Li et al., 2026) — ETCLOVG taxonomy, 138+ project mapping, cross-layer synthesis
 
 ### Pages Created

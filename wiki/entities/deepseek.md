@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-05-26
+updated: 2026-05-28
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -17,6 +17,7 @@ sources:
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/articles/2026-05-22-deepseek-strategy.md
+  -   - raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md
 ---
 
 # DeepSeek
@@ -251,6 +252,11 @@ DeepSeek's history of "contrarian" bets (from @bookwormengr's Hero's Journey ana
 - Part of China's broader open-source AI ecosystem alongside Alibaba's Qwen (100,000+ HuggingFace derivatives)
 - Recognized in U.S. congressional hearings on national security risks of PRC AI (March 2026)
 - V4 deployment on domestic Huawei chips demonstrates partial decoupling from Western hardware
+
+
+### DeepSeek OCR: Text Compression via Visual Representation (May 2026)
+
+DeepSeek developed a technique achieving **9-12x text compression** by using visual representations as a compressed medium for long text, with high OCR precision. This research direction reduces token waste, which translates to faster inference, cheaper API pricing, and competitive pressure on other providers.
 
 ## Relationships
 

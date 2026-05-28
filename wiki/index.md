@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2247 | Indexed entries: 1464 | Not in index: 741
+> Last updated: 2026-05-28 | Total pages: 2248 | Indexed entries: 1464 | Not in index: 741
 
 ## Entities (705 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -714,7 +714,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (723 pages)
+## Concepts (724 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1238,6 +1238,7 @@
 - [[concepts/subagent-patterns]] — How Agents Manage Other Agents: Four Subagent Patterns in 2026 — Survey of 4 dominant subagent coordination patterns: hierarchical, peer-to-peer, swarm, and manager-worker. Analysis by Sarah Chieng (@MilksandMatcha). Practical patterns from Claude Code, Codex, Devin, and OpenCode.
 - [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].
 - [[concepts/agent-swarms]] — Agent Swarms: Emergent behavioral patterns of autonomous decentralized agent groups. Inspired by biological swarms.
+- [[concepts/ai-agent-compiler-bug-finding]] — AI Agent Compiler Bug Finding: Using AI coding agents (Claude, Codex) to systematically find miscompilation bugs. Justin Lebar found ~80 ptxas bugs/week, ~2 LLVM bugs/min via code-reading agents.
 - [[concepts/ai-agent-engineering]] — AI Agent Engineering: Construction principles and design patterns for agent execution infrastructure.
 - [[concepts/ai-coding-workflows]] — AI Coding Workflows: Safe operation and workflow design for AI coding tools.
 - [[concepts/ai-consulting-playbook]] — AI Consulting Playbook: Comprehensive framework for AI consulting practice (Jason Liu).

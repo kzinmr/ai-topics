@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-28
 tags: [ai-research, gpu]
 aliases: [semianalysis-research]
 related:
@@ -74,6 +74,25 @@ SemiAnalysis has established itself as a trusted independent voice in the AI inf
 - **CoreWeave**: Used as TCO justification for pricing premiums
 - **Nebius**: Used to demonstrate engineering maturity
 - **Fluidstack**: Used to validate "Forward Deployed Engineering" ethos
+
+
+### AI Tokenomics: AWS Bedrock Margin Analysis (May 2026)
+
+In May 2026, SemiAnalysis published a deep-dive analysis of AWS cloud margins, revealing that **AWS Bedrock is the only CSP with rising margins** (EBIT +213bp Q/Q in 1Q26) while Azure, GCP, Oracle, and CoreWeave see flat or declining margins. Key findings:
+
+| Metric | Value |
+|--------|-------|
+| Bedrock EBIT margin | ~55% at ~$26M/MW Anthropic ARR on Bedrock compute in 1Q26 |
+| Bedrock run rate (1Q26) | $5.5B |
+| Bedrock mix growth | 9% of AWS AI revenue in 1Q25 → 37% in 1Q26 |
+| Customer Anthropic model usage | 80-90% of Bedrock customers use Anthropic models |
+| Anthropic total ARR | $30B ($21B net new ARR added in recent period) |
+| Anthropic inference gross margin | Mid-60% (improved from 38% in 2025) |
+
+The core driver is **TaaS (Token-as-a-Service)** economics — TaaS revenue generates far higher margins than traditional IaaS. AWS's vertical integration advantage (Trainium/Graviton processors) enables this margin profile. SemiAnalysis also exposed **Google's margin inflation** — GCP's reported margins exclude $5.4B in training costs, artificially boosting numbers.
+
+This analysis includes the first detailed tokenomics model for AWS's AI business, showing how Anthropic's growth through Bedrock reshapes CSP economics.
+
 
 ## Contact
 - clustermax@semianalysis.com
