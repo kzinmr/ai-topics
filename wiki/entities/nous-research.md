@@ -1,7 +1,7 @@
 ---
 title: "Nous Research"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-28
 type: entity
 tags:
   - company
@@ -11,11 +11,15 @@ tags:
   - ai-agents
   - self-improving
   - gepa
+  - post-training
+  - synthetic-data
+  - hybrid-reasoning
 sources:
   - "https://nousresearch.com/"
   - "raw/articles/2026-05-13_akshaypachaar_hermes-agent-masterclass.md"
   - "https://github.com/NousResearch/hermes-agent-self-evolution"
   - "https://www.crunchbase.com/organization/nous-research"
+  - "raw/papers/2025-08-25_2508.18255_hermes-4-technical-report.md"
 ---
 
 # Nous Research
@@ -50,9 +54,12 @@ The official Hermes Skills Hub hosts **687 skills** across **18 categories**:
 
 Custom GitHub repos can be added as private skill taps for team or personal use.
 
+### [[hermes-4]] — Hybrid Reasoning Model Family (Aug 2025)
+
+Hermes 4 is Nous Research's family of open-weight **hybrid reasoning models** in three sizes: 14B (Qwen3 base), 70B, and 405B (Llama 3.1 bases). Combines structured reasoning (`<think>` tags) with broad instruction-following via a 5M-sample, 19B-token dataset synthesized through **DataForge** (graph-based synthetic data generator) and **Atropos** (RL environment manager). Key innovations: reasoning length control via second-stage SFT (teaches models to close `</think>` at 30K tokens with <4% performance cost), composable DAG-based data synthesis graphs, and neutrally-aligned design with the lowest refusal rates among frontier models. 405B achieves AIME'24 81.9 (reasoning), Arena-Hard 93.7, RefusalBench 57.1. Trained on 192 B200 GPUs using modified TorchTitan with First-Fit Decreasing packing (>99.9% efficiency). All model weights and evaluation samples publicly released. [[hermes-4|Full article →]]
+
 ### Other Projects
 
-- **Hermes model family**: Open-source LLMs for general and specialized use (Hermes 3, etc.)
 - **Nous Psyche**: Decentralized AI training network using Solana blockchain to coordinate distributed compute contributions
 - **Simulators**: Interactive AI environments at [sims.nousresearch.com](https://sims.nousresearch.com)
 
@@ -63,6 +70,7 @@ Nous Research emphasizes open-source, human-centric design with practical self-i
 ## Related Pages
 
 - [[hermes-agent]] — flagship agent framework
+- [[hermes-4]] — hybrid reasoning model family
 - [[gepa]] — Genetic-Pareto Prompt Evolution (ICLR 2026 Oral)
 - [[akshay-pachaar]] — author of the Hermes Agent masterclass guide
 - [[teknium]] — Co-founder and Head of Post-Training at Nous Research

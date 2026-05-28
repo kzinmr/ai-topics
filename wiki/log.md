@@ -4419,3 +4419,11 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 
 ### Key Reframing
 "Probabilistic" started with classic ML. What IS new: the architectural inversion (model was component → AI is substrate), the epistemological inversion (code→traces), and input-space unboundedness (you cannot enumerate failure modes).
+
+## 2026-05-28
+
+- **Ingested** arXiv paper `2508.18255` Hermes 4 Technical Report → `raw/papers/2025-08-25_2508.18255_hermes-4-technical-report.md`
+- **Created** [[entities/hermes-4]] — entity page covering model family, DataForge, Atropos, reasoning length control, evaluations, behavioral characteristics
+- **Enriched** [[entities/nous-research]] — added Hermes 4 section, updated sources/tags/description
+- **Schema** [[SCHEMA]] — added `hybrid-reasoning` tag to Models category
+- **Index** — added hermes-4, updated nous-research description, bumped entity count 705→706

@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-05-28 | Total pages: 2248 | Indexed entries: 1464 | Not in index: 741
 
-## Entities (705 pages)
+## Entities (706 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -296,6 +296,7 @@
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Open-source self-hosted AI agent by Nous Research (150K GitHub stars, #1 OpenRouter global token usage). Features persistent memory, self-improving skills (Curator system auto-organizes skills unused for 90 days), and an Agentic Loop. Functions as an execution specialist in a dual-agent architecture via ACP integration with OpenClaw's orchestrator. Shann (@shannhk)'s 4-level fleet operation model, 21-step SEO pipeline.→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
+- [[entities/hermes-4]] — Hermes 4 — Open-weight hybrid reasoning model family by Nous Research (Aug 2025). 14B/70B/405B sizes, 5M-sample dataset via DataForge + Atropos. Neutrally-aligned (lowest refusal rates). 405B: AIME'24 81.9, Arena-Hard 93.7. Trained on 192 B200 GPUs.
 - [[entities/hidream-o1-image]] — HiDream-O1-Image — Open-source 8B image generation model (MIT license). #8 on AA Text to Image Arena. Pixel-level Unified Transformer (UiT), 2048×2048. Surpasses FLUX.2 and GPT Image 2 on GenEval/DPG-Bench.
 - [[entities/howdymary]] — mary (@howdymary) — Data scientist at marketmotionxyz. Creator of hermes-agent-metaharness, the first practical Meta-Harness implementation for Hermes Agent. OS/Brain agent architecture framing.
 - [[entities/hoeem]] — X/Twitter creator (@hooeem, 169K+ followers). His X Article covering all 5 domains of the Claude Certified Architect exam earned 60K bookmarks. Publishes practical educational content on Claude Code, Agent SDK, and MCP.
@@ -695,7 +696,7 @@
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
 - [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
-- [[entities/nous-research]] — Nous Research — NYC-based open-source AI lab (founded 2023). Creator of [[hermes-agent]], GEPA (ICLR 2026 Oral), Skills Hub (687 skills). $65M funding.
+- [[entities/nous-research]] — Nous Research — NYC-based open-source AI lab (founded 2023). Creator of [[hermes-agent]], [[hermes-4]] (hybrid reasoning models), GEPA (ICLR 2026 Oral), Skills Hub (687 skills). $65M funding.
 - [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
 - [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.

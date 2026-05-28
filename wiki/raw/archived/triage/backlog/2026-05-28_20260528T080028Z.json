@@ -1,0 +1,61 @@
+{
+  "checkpoint_run_id": "20260528T080028Z",
+  "summary_ja": "5件のrawバックログ記事をトリアージ。take=0件（既存wikiカバレッジで十分）。reference=2件（Ed ZitronのAI資本支出分析とデータセンター実態調査）。skip=3件（AINews digest既存カバー済、Berthub国防科学非AI、ISSCC半導体custom-ai-siliconでカバー）。",
+  "decisions": [
+    {
+      "item_id": "substack-ainews-glm5-47c0cfe3",
+      "filename": "substack.com--redirect-cc7929ce-c077-4cbd-9cab-202c8e4e882c--47c0cfe3.md",
+      "title": "[AINews] Z.ai GLM-5: New SOTA Open Weights LLM",
+      "url": "https://substack.com/redirect/cc7929ce-c077-4cbd-9cab-202c8e4e882c",
+      "source_date": "2026-04-14",
+      "recommended_action": "skip",
+      "reason_ja": "既存wikiカバレッジで十分。AINews digest、GLM-5/DeepSeek/MiniMax情報は既に比較ページ等でカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "AI News digest covering GLM-5 launch, 744B params, DeepSeek Sparse Attention, 200K context..."
+    },
+    {
+      "item_id": "wheresyoured-am-i-meant-to-be-impressed-19c8e3d1",
+      "filename": "wheresyoured.at--am-i-meant-to-be-impressed--19c8e3d1.md",
+      "title": "Am I Meant To Be Impressed?",
+      "url": "https://www.wheresyoured.at/am-i-meant-to-be-impressed/",
+      "source_date": "2026-05-07",
+      "recommended_action": "reference",
+      "reason_ja": "Ed ZitronのAI資本支出詳細分析。Microsoft $37B AI収益、OpenAIが71%占める、Anthropic $200B Google契約。既存ai-bubble-economics.mdとed-zitron.mdの強化候補。",
+      "candidate_wiki_path": "concepts/ai-bubble-economics",
+      "body_excerpt": "OpenAI 70%+ of Microsoft AI revenue, Anthropic 80%+ of Amazon AI revenues, Google circular TPU financing..."
+    },
+    {
+      "item_id": "berthub-tu-delft-security-of-science-a8cf9ecc",
+      "filename": "berthub.eu--articles-posts-tu-delft-security-of-science--a8cf9ecc.md",
+      "title": "TU Delft lecture: Security of Science",
+      "url": "https://berthub.eu/articles/posts/tu-delft-security-of-science/",
+      "source_date": "2025-11-20",
+      "recommended_action": "skip",
+      "reason_ja": "Bert Hubertの国防科学講義トランスクリプト。原爆、ロケット、エニグマ、レーダー等の軍事技術史。AI/LLM/エージェント非関連。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "TU Delft VvTP Physics symposium lecture on nuclear bombs, rockets, penicillin, Enigma, radar, stealth..."
+    },
+    {
+      "item_id": "wheresyoured-where-are-all-the-data-centers-cc977952",
+      "filename": "wheresyoured.at--where-are-all-the-data-centers--cc977952.md",
+      "title": "Where Are All The Data Centers?",
+      "url": "https://www.wheresyoured.at/where-are-all-the-data-centers/",
+      "source_date": "2026-05-13",
+      "recommended_action": "reference",
+      "reason_ja": "Ed Zitronのデータセンター建設実態調査。Microsoft 4GW主張vs実際117MW、Fairwater未完成、Stargate 8棟中2棟、Anthropic Colossus-1。既存xai-anthropic-colossus-deal.md強化。",
+      "candidate_wiki_path": "concepts/ai-bubble-economics",
+      "body_excerpt": "Microsoft claims 4GW but evidence shows much less. Fairwater Wisconsin 117MW not 400MW. Stargate only 2/8 buildings..."
+    },
+    {
+      "item_id": "substack-nvidia-broadcom-cpo-hbm4-557ee13b",
+      "filename": "substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--557ee13b.md",
+      "title": "NVIDIA & Broadcom CPO, HBM4 & LPDDR6, TSMC Active LSI",
+      "url": "https://substack.com/redirect/2/eyJlIj...E3Nc",
+      "source_date": "2026-04-18",
+      "recommended_action": "skip",
+      "reason_ja": "ISSCC 2026半導体会議ラウンドアップ。HBM4、LPDDR6、UCIe-S、Co-packaged Optics。AI間接関連だがcustom-ai-silicon.mdでカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "ISSCC 2026: Samsung HBM4 SF4 logic base die, LPDDR6 architecture, co-packaged optics, UCIe-S..."
+    }
+  ]
+}
