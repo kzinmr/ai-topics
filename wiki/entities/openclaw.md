@@ -3,7 +3,7 @@ title: OpenClaw
 type: entity
 aliases: [openclaw, open-claw, peter-steinberger-openclaw]
 created: 2026-04-15
-updated: 2026-05-19
+updated: 2026-05-28
 status: L2
 sources:
   - https://github.com/NVIDIA/OpenClaw
@@ -15,7 +15,9 @@ sources:
   - https://docs.openclaw.ai/tools/acp-agents
   - https://snowan.gitbook.io/study-notes/ai-blogs/openclaw-memory-system-deep-dive
   - raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom.md
-tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration, memory-systems, china, agent-security]
+  - raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md
+  - https://x.com/i/article/2059652660022910976
+tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration, memory-systems, china, agent-security, mem0]
 ---
 
 # OpenClaw
@@ -201,6 +203,46 @@ OpenClaw's most innovative memory feature. When a conversation approaches the co
 Two tools available to the agent:
 - **`memory_search`**: Returns ~700 char snippets (with file path, line range, relevance score)
 - **`memory_get`**: Reads a specific memory file with line-range filtering
+
+#### Live System Prompt Design (vs Hermes' Frozen Memory)
+
+OpenClaw takes the opposite approach to Hermes on when memory is visible. **MEMORY.md is re-injected fresh every turn** as part of the "Project Context → Workspace Files" block. Mid-session writes are visible immediately on the next turn.
+
+**Trade-off:** Token overhead — maintainers report 20-30% of every turn's input is bootstrap files re-shipped each time. Large MEMORY.md files get fully injected even when `memory_search` and `memory_get` are available, creating redundancy.
+
+Compared to Hermes: Hermes freezes memory at session start for prefix-cache optimization; OpenClaw re-injects for immediate visibility. Two coherent answers to the same design question: cache stability vs. freshness.
+
+#### Dreaming: Three-Phase Memory Consolidation
+
+OpenClaw's optional consolidation mechanism runs in the background with three phases (docs.openclaw.ai/concepts/memory):
+
+| Phase | Function |
+|-------|----------|
+| **Light Sleep** | Ingest and stage short-term memories |
+| **REM Sleep** | Reflect and extract patterns |
+| **Deep Sleep** | Promote qualified memories to MEMORY.md |
+
+Promotion is gated by three thresholds, all of which must pass: `minScore`, `minRecallCount` (memory recalled at least N times), and `minUniqueQueries` (triggered by at least N distinct search queries). A weighted scoring rule combines relevance, frequency, query diversity, recency, consolidation, and conceptual richness. Only memories that prove useful across multiple recalls get promoted.
+
+#### Active Memory Mode
+
+Optional blocking sub-agent that fires **before each reply** in interactive persistent sessions. Searches stored memory against the current message and injects relevant facts into context before the main turn begins. Recommended default: `recent` mode (current message + short conversation tail). Not active for headless tasks or one-shots.
+
+#### Mem0 Plugin Integration
+
+Mem0 for OpenClaw is the npm package `@mem0/openclaw-mem0`:
+```bash
+openclaw plugins install @mem0/openclaw-mem0
+openclaw mem0 init --mode open-source
+```
+
+Adds eight memory tools replacing the native two-tool surface: `memory_search`, `memory_add`, `memory_list`, `memory_get`, `memory_update`, `memory_delete`, `memory_event_list`, `memory_event_status`.
+
+Two modes:
+- **Platform**: conversations sent to api.mem0.ai, requires `MEM0_API_KEY`
+- **Open-Source**: no Mem0 API key; uses local LLM for extraction and embeddings
+
+Default: skills mode (triage → recall → dream protocol). Per-user scoping via `userId`.
 
 #### Measured Performance
 

@@ -13,7 +13,7 @@ tags:
 status: complete
 description: "Open-source self-hosted AI agent by Nous Research. Features persistent memory, self-improving skills, and always-on execution. Growing number of users migrating from OpenClaw."
 created: 2026-04-27
-updated: 2026-05-22
+updated: 2026-05-28
 sources:
   - "https://x.com/i/article/2045080054917476451"
   - "raw/articles/2026-04-28_15-hermes-agent-features.md"
@@ -23,6 +23,7 @@ sources:
   - "raw/articles/2026-05-15_shann_hermes-agent-operator.md"
   - "raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md"
   - "https://info.deeplearning.ai/hermes-vs.-openclaw-cybersecurity-alarms-ring-more-interactive-conversations-can-agents-do-human-work"
+  - "raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/hermes-agent-use-cases]]"
@@ -65,9 +66,40 @@ related:
 ## Three Differentiators
 
 ### 1. Persistent Memory
-- Two core memory files: MEMORY.md (environment facts, conventions, experiences) and USER.md (user preferences, communication style, expectations)
-- Loaded as frozen snapshot across all sessions
-- Conversation history stored in SQLite DB (full-text search). Searchable, summarizable, retrievable
+
+Hermes's memory system is designed for **cache stability over immediate freshness**:
+
+#### Memory Architecture
+
+| Component | Location | Capacity | Role |
+|-----------|----------|----------|------|
+| **MEMORY.md** | `~/.hermes/memories/` | Hard cap: 2,200 chars | Agent's notes about the world (environment, conventions, experiences) |
+| **USER.md** | `~/.hermes/memories/` | Hard cap: 1,375 chars | Agent's notes about the user (preferences, communication style) |
+| **Session Search** | `~/.hermes/state.db` (FTS5) | SQLite | Cross-session conversation recall |
+
+Total: ~3,575 characters (~1,300 tokens) travel into every system prompt. Entries separated by § (section sign, U+00A7).
+
+#### Frozen System Prompt Design
+
+Memory is captured **once at session start** and pinned as a frozen block in the system prompt. Changes written via the memory tool go to disk immediately but are NOT reflected in the current session — they appear at the next session start.
+
+**Rationale: prefix caching.** Every major LLM provider caches the prompt prefix, so subsequent turns reuse those tokens at a fraction of the cost. As long as the system prompt doesn't change, the cache holds. Hermes trades intra-session memory freshness for cache-stable long sessions.
+
+**Trade-off:** A user who mentions mid-session switching from npm to pnpm will have that fact written to MEMORY.md immediately, but the agent won't use pnpm until the next session.
+
+#### Memory Tool API
+
+Single tool with three actions: `add` (append, rejects exact duplicates), `replace` (substring-match on existing entry), `remove` (substring-match delete). No entry IDs, no UUIDs — the model addresses past entries by quoting a unique substring. Designed as a constrained API surface to make the model think carefully about what it writes.
+
+#### Auto-Compaction: None
+
+When MEMORY.md hits the 2,200-char hard cap, the next write **fails with an error**. The agent must consolidate by hand. No silent garbage collection, no LRU, no sliding window. The design assumes the model can be trusted to manage 3,575 characters directly.
+
+#### Mem0 Integration
+
+Mem0 is one of eight external memory providers. Activation: `hermes memory setup`. Writes `memory.provider: mem0` into config. Exposes three tools: `mem0_profile`, `mem0_search`, `mem0_conclude`. After each turn, user/assistant exchange ships to Mem0 in a background thread — slow/failed calls never block the conversation. Circuit breaker: 2-minute pause after 5 consecutive failures.
+
+In Hermes, Mem0 fixes the 3,575-char ceiling and adds semantic search to replace substring-match retrieval.
 
 ### 2. Self-Improving Skills
 - After completing complex tasks (5+ tool calls), skills are automatically created

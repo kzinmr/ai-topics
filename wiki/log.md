@@ -1,6 +1,15 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] X bookmarks ingest | Mastra Channels, Mem0 memory comparison, a16z Yellow Brick Road
+
+- **saved raw articles**: `raw/articles/2026-05-28_mastra-multi-user-multi-channel-agents.md`, `raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md`, `raw/articles/2026-05-27_a16z-yellow-brick-road-ai-app-layer.md` — 3 new X articles from bookmarks
+- **enriched [[entities/mastra]]**: Added Channels section — multi-user/multi-platform architecture, Signal API, HITL tool approval, workspace isolation, context-vs-harness engineering contrast
+- **enriched [[entities/hermes-agent]]**: Expanded Persistent Memory section with frozen system prompt design, memory tool API, 3,575-char hard cap, auto-compaction=none, Mem0 integration
+- **enriched [[entities/openclaw]]**: Added Live System Prompt design, Dreaming 3-phase consolidation, Active Memory Mode, Mem0 plugin integration
+- **created [[entities/mem0]]**: New entity page — open-source memory layer for LLM agents, Hermes + OpenClaw integrations, "In Context" blog series
+- **created [[concepts/yellow-brick-road-ai-app-layer]]**: a16z framework — Yellow Brick Road vs Rest of Oz, three tests for startup positioning, case studies (11x, FurtherAI), defensive moats (data flywheels, model variability, cost optimization, governance)
+
 ## [2026-05-28] active-crawl | EAGLE 3.1, MAI-Image-2.5, Koog, STRIDE, Self-Replication enrichment
 
 ### Pages Created

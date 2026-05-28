@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2252 | Indexed entries: 1468 | Not in index: 741
+> Last updated: 2026-05-28 | Total pages: 2254 | Indexed entries: 1470 | Not in index: 741
 
-## Entities (708 pages)
+## Entities (709 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -382,6 +382,7 @@
 - [[entities/max-rumpf]] — Max Rumpf — CEO/Co-founder of SID.ai (YC S23). Developed SID-1, first model trained end-to-end with RL (GRPO) for agentic retrieval. Previously ETH Zürich researcher on AI accelerator design. Writer on JIT Coding, n-of-1 Software, Amdahl's Argument for AI.
 - [[entities/maxime-labonne]] — Head of Post-Training @ Liquid AI. Creator of the LLM Course (78.9k ⭐), abliteration technique, and best-selling author of "LLM Engineer's Handbook" and "Hands-On Graph Neural Networks."
 - [[entities/maximor]] — AI-native finance automation platform. ERP-agnostic Audit-Ready Agents for close/cash/revenue/reporting. Founded by former Microsoft execs. $9M seed from Foundation Capital.
+- [[entities/mem0]] — Mem0 — Open-source memory layer for LLMs and AI agents. Cross-tool persistence layer with Hermes + OpenClaw integrations.
 - [[entities/meridian-labs]] — Independent AI evaluation nonprofit. Steward of Anthropic's Petri alignment testing tool (May 2026), ensuring industry-neutral safety evaluation.
 - [[entities/meta]] — Social media and technology company, developer of the LLaMA model family, Ray-Ban AI collaboration, and the **Personal Superintelligence** vision articulated by Mark Zuckerberg.
 - [[entities/micahflee]] — **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools...
@@ -717,7 +718,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (726 pages)
+## Concepts (727 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1210,6 +1211,7 @@
 - [[concepts/technological-singularity]] — The hypothetical point where recursively self-improving AI makes technological progress uncontrollable and irreversible. Per Yudkowsky (1996): Transcended doubling sequence → hyperbolic singularity. Perceptual Transcends, T(n) function, Moravec Transfer, Interim Meaning of Life.
 - [[concepts/techno-optimism]] — Belief that technological progress (AI/nanotech) can solve humanity's deepest problems. Yudkowsky's Singularitarianism as secular eschatology: the Singularity as moral imperative, transcendence of mortality and suffering. Contrasted with Yarvin's techno-pessimism.
 - [[concepts/techno-pessimism]] — Skepticism that technology alone can resolve fundamental human problems. Curtis Yarvin's counter to Yudkowsky: "maybe you can't make a religion out of ai." Governance before transcendence; technology as amplifier, not solver.
+- [[concepts/yellow-brick-road-ai-app-layer]] — Yellow Brick Road — a16z framework for AI application layer strategy: where startups can compete vs. where frontier labs dominate. Three tests for defensible positioning.
 - [[concepts/zaya1-vl-8b]] — Zyphra's first VLM (MoE, 700M active / 8B total). Vision-specific LoRA + bidirectional image attention. SOTA for size, trained on AMD, Apache 2.0.
 - [[concepts/zaya1-74b-preview]] — Zyphra MoE reasoning-base LLM (4B active / 74B total). Not chat-tuned. Mamba/CCA hybrid, AMD-trained, Apache 2.0 preview.
 - [[concepts/zaya1-8b]] — Zyphra MoE reasoning model (760M active / 8.4B total). AMD-trained end-to-end. Competitive with DeepSeek-R1, Gemini-2.5-Pro. Markovian-RSA test-time compute. Apache 2.0. May 2026.
