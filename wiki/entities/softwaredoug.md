@@ -1,7 +1,7 @@
 ---
 title: Doug Turnbull (softwaredoug)
 created: 2026-05-17
-updated: 2026-05-19
+updated: 2026-05-28
 type: entity
 tags:
   - person
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md
   - raw/articles/2026-05-17_softwaredoug-com_autoresearching-better-msmarco-bm25.md
+  - raw/articles/2025-09-18_softwaredoug_bm25f-from-scratch.md
 ---
 
 # Doug Turnbull (softwaredoug)
@@ -72,8 +73,9 @@ Doug advocates for a pragmatic, "grug-brained" approach to search evaluation:
 - **Late interaction models** — ColBERT-style fine-grained passage scoring
 - **Search management** — Manual curation as a complement to algorithmic ranking
 
-## Notable Blog Posts (2026)
+## Notable Blog Posts (2025–2026)
 
+- "BM25F from scratch" (2025-09-18) — Full derivation of multi-field BM25: building blocks, IDF distortion problem, TF double-counting, two-step correction. Foundation for Elasticsearch `cross_fields` and beyond.
 - "Autoresearching BM25 on MSMarco" (2026-05-17) — Agent-driven BM25 tuning on passage retrieval, dual-gate evaluation, overfitting lessons
 - "Agentic search models" (2026-05-11) — Agents, not APIs, as the future of search
 - "Can agents replace the search stack?" (2026-04-28)

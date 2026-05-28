@@ -1,14 +1,18 @@
 ---
 title: Lexical Search
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 type: concept
 tags:
   - search
   - lexical-search
   - tokenization
   - bm25
-sources: [raw/articles/2026-05-13_softwaredoug_lexical-search-bm25.md]
+  - bm25f
+  - multi-field-search
+sources:
+  - raw/articles/2026-05-13_softwaredoug_lexical-search-bm25.md
+  - raw/articles/2025-09-18_softwaredoug_bm25f-from-scratch.md
 ---
 
 # Lexical Search
@@ -125,6 +129,46 @@ DisMax ("**Dis**junction **Max**imum") is the standard approach in Elasticsearch
 Lexical search provides the **match** — BM25 provides the **score**. The two are inseparable in practice: lexical matching identifies candidate documents, and [[bm25|BM25]] ranks them by relevance.
 
 > "BM25 ≈ Relevance Given Match" — BM25 answers "how much is this passage *about* that match?"
+
+## BM25F: Multi-Field Lexical Scoring
+
+Real-world search indexes split documents into **fields** (`title`, `body`, `description`), each with independent statistics. BM25F extends BM25 to score across fields correctly.
+
+### Why Naive Field-Wise BM25 Fails
+
+**IDF Distortion**: A term rare in one field (e.g., `book` in `title`) gets an inflated IDF that doesn't reflect corpus-wide specificity. Searching "javascript book" returns "The big book on squirrels" because the title-field IDF for `book` overwhelms the actual query intent.
+
+**TF Double Counting**: Peri-field BM25 allows each field's TF to climb the saturation curve independently. A tf=1 in title + tf=100 in body both benefit from the "early steep" part of the curve, producing an inflated total. Worse, you can't directly compare a 1-occurrence in a 5-word title against 100 occurrences in a 10,000-word body — they're incommensurable.
+
+### The BM25F Correction
+
+**Step 1 — Blend document frequencies** across fields to get corpus-wide specificity:
+
+```python
+combined_doc_freq = max(DF('title', term), DF('body', term))
+blended_idf = compute_idf(corpus_len, combined_doc_freq)
+```
+
+Elasticsearch's `cross_fields` query mode implements this blending — an "80% solution."
+
+**Step 2 — Length-normalize per field, then saturate together**:
+
+```python
+bm25f_tf = bm25_tf(
+    scaled_tf(TF('title', term), title_len, avg_title_len) +
+    scaled_tf(TF('body', term),  body_len,  avg_body_len)
+)
+```
+
+The critical design principle: **scale each field's TF by its own field length first** → sum into a single effective TF → saturate once. This converts "apples to oranges" into comparable values before the final scoring.
+
+**Final BM25F**:
+
+```python
+bm25f = blended_idf * bm25f_tf
+```
+
+See [[bm25#bm25f-multi-field-bm25|BM25 → BM25F]] for the full theoretical treatment, parameter breakdown, and Doug Turnbull's original 2025 blog derivation.
 
 ## Lexical Search in the Agent Era
 

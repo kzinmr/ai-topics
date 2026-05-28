@@ -820,7 +820,7 @@
 - [[concepts/bayesian-agent-orchestration]] — ICML 2026 position paper: agentic AI orchestration should use Bayesian decision theory at the control layer. Maintain calibrated beliefs, update from human feedback, choose utility-maximizing actions. Addresses the "when to escalate to human" problem.
 - [[concepts/baudrillard-and-ai]] — Baudrillard and AI — The manifestation of Simulacra and Simulation in the AI era. Baudrillard's four-stage image theory, hyperreality, and the "precession of simulacra" (the map preceding the territory) applied to the LLM era. AI is not a failure of imitation but the perfected form of the simulacrum.
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
-- [[concepts/bm25]] — BM25 (Best Match 25): classical lexical retrieval algorithm (TF-IDF variant with saturation + length normalization). PI-SERINI (May 2026) demonstrated BM25 + capable LLM in agentic loop beats dense retrievers on BrowseComp-Plus (83.1% accuracy, 3.3x–10x cheaper). Tuned parameters: k1=25, b=1 for long documents. Key insight: agent reasoning about search results matters more than retrieval quality.
+- [[concepts/bm25]] — BM25 (Best Match 25): classical lexical retrieval algorithm (TF-IDF variant with saturation + length normalization). PI-SERINI (May 2026) demonstrated BM25 + capable LLM in agentic loop beats dense retrievers on BrowseComp-Plus (83.1% accuracy, 3.3x–10x cheaper). **BM25F** extends to multi-field scoring (IDF blending + unified TF saturation). Key insight: agent reasoning about search results matters more than retrieval quality.
 - [[concepts/causal-backbone-conjecture]] — The Causal Backbone Conjecture
 - [[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]] — claude-agent-sdk orchestration, hooks, subagents, plan-mode
 - [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]] — claude-code prompt engineering, context management, caching, agent architecture
@@ -907,7 +907,7 @@
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
 - [[concepts/korean-ai]] — Korean AI Ecosystem
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
-- [[concepts/lexical-search]] — Lexical Search: token-based matching against inverted index. Tokenization, query processing (AND/OR), multi-field search (DisMax). Foundation for BM25 scoring. Doug Turnbull's "Cheat at Search Essentials" course.
+- [[concepts/lexical-search]] — Lexical Search: token-based matching against inverted index. Tokenization, query processing (AND/OR), multi-field search (DisMax, BM25F). Foundation for BM25 scoring. Doug Turnbull's "Cheat at Search Essentials" course + BM25F derivation.
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence — Codebase-aware reasoning for Linear Agent (May 2026). Read-only GitHub integration enabling PMs, Support, and Engineering to query codebase context directly.
 - [[concepts/livecodebench]] — LiveCodeBench — contamination-free coding eval regularly sourced from LeetCode/AtCoder/CodeForces. 4 scenarios: code generation, self-repair, execution prediction. ICLR 2025 Poster.
 - [[concepts/llm-as-judge-skills]] — Murat Can Koylan's reusable skills for LLM output evaluation. Part of Agent-Skills-for-Context-Engineering (15.5k stars). Context engineering approach to eval.

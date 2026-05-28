@@ -1,6 +1,15 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] ingest | Doug Turnbull "BM25F from scratch" → enrich bm25.md, lexical-search.md, softwaredoug.md
+
+- **Source**: softwaredoug.com/blog — "BM25F from scratch" (Doug Turnbull, Sep 18, 2025)
+- **Raw article**: `raw/articles/2025-09-18_softwaredoug_bm25f-from-scratch.md`
+- **concepts/bm25.md**: Added full BM25F section — building blocks deconstruction (TF saturation/log IDF/length scaling), two problems (field-specific IDF distortion → "The big book on squirrels", independent TF saturation double counting), two-step correction (DF blending + per-field length normalization then unified saturation). Cross-linked to lexical-search.
+- **concepts/lexical-search.md**: Added BM25F: Multi-Field Lexical Scoring section — naive failure modes, correction steps, `cross_fields` as 80% solution, apples-to-oranges design principle. Updated frontmatter (sources, tags, date).
+- **entities/softwaredoug.md**: Added BM25F article to Notable Blog Posts (2025–2026 section). Updated sources + date.
+- **index.md**: Updated bm25 and lexical-search descriptions to mention BM25F.
+
 ## [2026-05-28] X bookmarks ingest | Mastra Channels, Mem0 memory comparison, a16z Yellow Brick Road
 
 - **saved raw articles**: `raw/articles/2026-05-28_mastra-multi-user-multi-channel-agents.md`, `raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md`, `raw/articles/2026-05-27_a16z-yellow-brick-road-ai-app-layer.md` — 3 new X articles from bookmarks
