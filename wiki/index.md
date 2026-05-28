@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2254 | Indexed entries: 1470 | Not in index: 741
+> Last updated: 2026-05-28 | Total pages: 2255 | Indexed entries: 1471 | Not in index: 741
 
 ## Entities (709 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -1049,6 +1049,7 @@
 - [[concepts/ramp-inspect]] — Ramp Inspect: background coding agent with autonomous verification loop. ~30% of Ramp PRs. Modal sandbox VMs, multi-modal interface (Slack, Chrome ext, web, VS Code, PR).
 - [[concepts/ragen]] — RAGEN: veRL-based agent RL extension. Adds explicit environment interface for easier multi-turn RL in custom environments.
 - [[concepts/rao-recursive-agent-optimization]] — RAO (Recursive Agent Optimization) — RL training for recursive agents that spawn/delegate to copies of themselves. CMU × Amazon AGI Labs 2026
+- [[concepts/reasoning-aware-retrieval]] — Reasoning-Aware Retrieval — Jointly embedding an AI agent's reasoning trace alongside its search query (AgentIR-4B). +18% accuracy at half the parameter count. Chen et al. (Waterloo/UQ/CMU), 2026.
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/reduce-offload-isolate]] — **Reduce, Offload, Isolate** — Three principles of agent context engineering proposed by Lance Martin (Anthropic) on the High Signal podcast. Reduce (context compression), Offload (move information outside prompts), Isolate (delegate to sub-agents). Manus underwent 5 redesigns; Anthropic strips down Claude Code's harness as models improve. Applying the Bitter Lesson to harness design.- [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating — Prime Intellect's open-source Python library. Makes chat templates programmable, preserves token identity in multi-turn RL, 3x training efficiency. Token-In, Token-Out paradigm.

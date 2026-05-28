@@ -1,6 +1,8 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-28] ingest | arXiv:2603.04384 "AgentIR" → concepts/reasoning-aware-retrieval.md, enrich agentic-search.md + deep-research.md, raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
+
 ## [2026-05-28] ingest | arXiv:2404.12096 "LongEmbed" → concepts/longembed.md, cross-link to embedding-long-context-degradation
 
 - **Source**: arXiv:2404.12096 — "LongEmbed: Extending Embedding Models for Long Context Retrieval" (Dawei Zhu et al., Apr 2024, revised Nov 2024)

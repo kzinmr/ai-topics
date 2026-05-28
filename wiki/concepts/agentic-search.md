@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-27
+updated: 2026-05-28
 type: concept
 tags:
   - search
@@ -33,6 +33,8 @@ sources:
   - raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level.md
   - raw/articles/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search.md
   - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
+  - raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
+  - https://arxiv.org/abs/2603.04384
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
@@ -112,7 +114,26 @@ Raw agent query: "61,880" football attendance
 
 This yields a **7.95% relative accuracy gain** for SPLADE-v3 neural retrieval.
 
-### Re-ranking Architecture
+### Reasoning-Aware Joint Embedding: AgentIR (March 2026)
+
+While Q2Q translates reasoning → natural language query as a **separate preprocessing step** (pipeline architecture), Chen et al. (2026) go further with [[concepts/reasoning-aware-retrieval|AgentIR]]: **jointly embed** the reasoning trace alongside the query in a single trained embedding model. This collapses Q2Q's two-step pipeline into one embedding step.
+
+The paradigm shift: instead of R(q_t), use R(τ_t, q_t) — the retriever sees both the agent's reasoning and the query. The reasoning trace provides three signal types: (1) task intent (disambiguating keyword queries), (2) reflection on prior results (avoiding re-search), and (3) hypothetical search targets (grounded HyDE alternative).
+
+**AgentIR-4B** (fine-tuned Qwen3-Embedding-4B) achieves **68.07% accuracy** on BrowseComp-Plus vs. 50.72% for Qwen3-Embedding-8B — **double the accuracy gain of Q2Q**, with **half the parameter count**. Critically, it generalizes across different agent models (Tongyi-DR, oss-120b, GLM-4.7) without retraining, and reduces search calls by ~20%.
+
+The training enabler is **DR-Synth**, a data synthesis pipeline that converts standard (Q, A, P) QA triples into sub-query-level training instances via agent rollouts + oracle reranking. Key design insight: **joint embedding outperforms pipeline architecture** — training the retriever to internalize the reasoning/query relationship is more effective than separating translation and retrieval into discrete steps.
+
+|| Approach | Architecture | Accuracy | Params |
+||----------|-------------|----------|--------|
+|| BM25 (baseline) | Lexical | 33.98% | — |
+|| Q2Q Reformulation | Pipeline: translate → retrieve | ~57.9% (rel. +8%) | 8B |
+|| Q2Q + LLM Rerank | Pipeline + reranker | 55.66% | 4B + 8B reranker |
+|| **AgentIR-4B** | **Joint embedding** | **66.27–68.07%** | **4B** |
+
+> **Connection to Q2Q**: Q2Q Reformulation (Meng et al.) is a preprocessing technique — it converts agent reasoning into a natural language query for any off-the-shelf retriever. AgentIR (Chen et al.) is a **retriever co-design** approach — it trains the embedding model to natively understand reasoning traces. Both exploit the same free signal, but AgentIR achieves 2.3× the accuracy gain by eliminating the information loss at the pipeline boundary.
+
+Sources: [[raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval|AgentIR paper]], [Project page](https://texttron.github.io/AgentIR/)
 
 A two-stage pipeline significantly outperforms single-stage retrieval:
 

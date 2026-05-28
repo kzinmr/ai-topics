@@ -4,7 +4,7 @@ type: concept
 aliases:
   - deep-research
 created: 2026-05-22
-updated: 2026-05-27
+updated: 2026-05-28
 tags:
   - concept
   - deep-research
@@ -113,6 +113,7 @@ Sources: [NVIDIA Developer Blog](https://developer.nvidia.com/blog/add-a-special
 - [[concepts/agentic-retrieval]] — The paradigm where AI agents (not humans) are the primary search consumers
 - [[concepts/hornet]] — The retrieval engine purpose-built for this agentic query workload
 - [[concepts/agentic-search]] — Broader framework covering IR search layer, harness engineering, and agile engineering
+- [[concepts/reasoning-aware-retrieval]] — Jointly embedding agent reasoning traces with search queries (AgentIR-4B, 2026)
 - [[concepts/bm25]] — Classical lexical retrieval; performs differently in agent loops vs. one-shot
 - [[concepts/deep-research-agent-from-scratch]] — Building research agents from scratch (Hugo Bowne-Anderson + Ivan Leo workshop)
 - [[concepts/browsecomp]] — The BrowseComp benchmark series
