@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2250 | Indexed entries: 1484 | Not in index: 747
+> Last updated: 2026-05-29 | Total pages: 2252 | Indexed entries: 1488 | Not in index: 746
 
 ## Entities (711 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -61,6 +61,7 @@
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
 - [[entities/mai-image-2-5]] — MAI-Image-2.5: Microsoft's strongest image model. #3 on Arena text-to-image leaderboard (May 2026). Major text rendering improvements.
 - [[entities/mark-mcquade]] — CEO of Arcee AI. Former HuggingFace team member. Pivoted Arcee from post-training services to pretraining from scratch with Trinity Large.
+- [[entities/mark-saroufim]] — Mark Saroufim — ML Systems researcher, co-founder of GPU MODE and Core Auto. AI-driven kernel generation, multi-agent self-play for systems code. MLSys 2026 keynote.
 - [[entities/mastra]] — Mastra — Open-source TypeScript AI agent framework (Gatsby team, 24K ⭐). ACP-compatible coding agents, workflows, voice AI providers, enterprise RBAC.
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler) — MCP server product. GitHub·Trello MCP for Cursor/Claude Code, centralized OAuth management, enterprise access control·audit logging.
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Andreessen Horowitz (a16z), co-author of Mosaic browser, Netscape co-founder. AI optimist, "Software Is Eating the World" author.
@@ -191,6 +192,7 @@
 - [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/copilot-cli]] — GitHub-built terminal-native AI coding agent. 6 built-in sub-agents (explore/code-review/research, etc.), `/fleet` parallel execution, MCP extensions, BYOK/local model support (April 2026+). Included in Copilot Free/Pro/Pro+/Business/Enterprise.
+- [[entities/core-auto]] — Core Auto — AI research neolab co-founded by Mark Saroufim. Automating systems code via multi-agent self-play (problem author, competitor, cheater, auditor). Non-transformer architectures, pygpubench.
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/corti]] — Corti — Healthcare AI frontier lab. Symphony STT: clinical-grade speech-to-text, 1.4% WER (93% lower than OpenAI/Whisper). 100M+ patients/year. Copenhagen HQ.
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
@@ -909,6 +911,7 @@
 - [[concepts/gpt-5.5]] — GPT-5.5
 - [[concepts/gpu-cloud-rankings]] — GPU Cloud Infrastructure Rankings (ClusterMAX). SemiAnalysis rating system for 209 Neoclouds across 10 criteria. CoreWeave Platinum, Nebius/Oracle/Azure/Fluidstack/Crusoe Gold. Slurm-on-K8s, GB200 NVL72 reliability, container security.
 - [[concepts/gpu-cluster-tco-goodput]] — GPU Cluster TCO & Goodput Framework. SemiAnalysis methodology decomposing TCO into 8 line items (GPUs, Storage, Networking, Control Plane, Support, Goodput Expense, Setup, Debugging). TorchFT vs AWS Checkpointless vs TorchPass fault-tolerance comparison.
+- [[concepts/gpu-mode]] — GPU MODE — Largest GPU programming community (gpumode.com), co-founded by Mark Saroufim. 500K+ kernel competition submissions, Project Popcorn, KernelBook dataset, KernelGuard anti-cheat system. AI agents became primary competitors Jan 2026.
 - [[concepts/gnu-ai-reimplementations]] — GNU AI Reimplementations — Free software community reimplementations of proprietary AI models and tools.
 - [[concepts/glut-of-circuits]] — niplav's (2026) GLUT-of-Circuits model: LLMs are giant lookup-table-like collections of depth-limited, composable error-correcting circuits computed in superposition. Implications for the Agent structure problem, AI alignment, token bottlenecks, and CoT.
 - [[concepts/gpt-models]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
@@ -1089,6 +1092,7 @@
 - [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating — Prime Intellect's open-source Python library. Makes chat templates programmable, preserves token identity in multi-turn RL, 3x training efficiency. Token-In, Token-Out paradigm.
 - [[concepts/replaid-continuous-diffusion]] — RePlaid: arXiv paper (May 2026) showing continuous diffusion scales competitively with discrete DLMs. SOTA PPL 22.1 on OpenWebText among continuous DLMs. Only 20× compute gap to AR models. Complements [[concepts/nemotron-labs-diffusion]].
 - [[concepts/real-time-rl]] — Training paradigm where models are continuously improved using reward signals from real user interactions in production — avoiding the simulation gap. Pioneered by Cursor for their Composer coding agent (ships new checkpoints every ~5h). Open-source implementation: rollouts by @27upon2 using Prime Intellect + OpenCode. See: [[entities/cursor-ai|cursor-ai]], [[entities/sriraam-27upon2|sriraam]].
+- [[concepts/reward-hacking]] — Exploitation of kernel evaluation harnesses to achieve benchmark scores without genuinely solving the intended problem. Stream hacking, Python runtime manipulation, Dieselgate-style timing exploits. KernelGuard and pygpubench as countermeasures. Multi-agent self-play (Core Auto).
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-memory-engineering]] — Agent Memory Engineering: Nicolas Bustamante (Microsoft)'s comparison of Claude Code/Codex/Hermes memory architectures. "Every clever architecture lost. What won was LLM + Markdown + bash." Memory is not portable across harnesses because models are post-trained on their harnesses. Codex Memory Pipeline (Mem0, May 2026): two-phase async pipeline, markdown storage, grep search.
 - [[concepts/agent-media]] — Agent Media — Evolution from wiki to multi-channel Autoresearch Desk. Design philosophy for audience-aware knowledge distribution system integrating Khairallah's Context Engineering + Ronin's Skill Graph.

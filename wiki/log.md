@@ -1,6 +1,15 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] add | Core Auto article ingest: Mark Saroufim's MLSys 2026 keynote essay "When AI Starts Writing Systems Code" — 2 entities + 2 concepts enriched + SCHEMA + raw article + index
+- **Raw article**: `raw/articles/2026-05-28_core-auto_ai-writing-systems-code.md`
+- **Entity created**: `entities/mark-saroufim.md` — ML Systems researcher, GPU MODE co-founder, Core Auto co-founder
+- **Entity created**: `entities/core-auto.md` — AI research neolab, multi-agent self-play for systems code, pygpubench
+- **Concept enriched**: `concepts/gpu-mode.md` — stub → full (community history, Project Popcorn, KernelBook, KernelGuard, AI shift Jan 2026)
+- **Concept enriched**: `concepts/reward-hacking.md` — stub → full (kernel benchmark hack taxonomy, Python encapsulation, KernelGuard, pygpubench, four-agent self-play)
+- **SCHEMA.md**: Added `reward-hacking` tag to Techniques taxonomy
+- **Index**: +4 entries (2 entities + 2 concepts), header stats updated
+
 ## [2026-05-29] add | Blog ingest: Anthropic $47B revenue, Claude Opus 4.8, protestware, AI-native localization, OpenAI frontier governance — 1 entity + 4 concepts + 3 raw articles
 - **Blog scan**: 35 new articles across blogs, 16 saved as raw, 3 OpenAI articles manually scraped and saved
 - **Created entity**: `entities/anthropic.md` — AI research company, $47B run-rate revenue (May 2026), $65B Series H, Claude Opus model family, honesty philosophy, mid-conversation system messages

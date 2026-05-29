@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-05-29T07:27:33.481357+00:00",
+  "triage_run_id": "20260529T071031Z",
+  "source": "newsletter",
+  "summary_ja": "5/28-29発行の9ニュースレターをトリアージ。Cognition $26B Series D/Async Agents/GBrain/Grok Build更新/Dean Ball Physical AI/Epoch AI compute crunch/Anthropic $965B評価額/Mythos-classモデル計画の8件をTAKE(エンリッチ対象)。Trajectory/Claude Code Security Plugin/Rampエージェント事例/Anthropicエージェント統計の4件をReference。既存Wikiカバー済みまたは低価値の残りはSkip。最も重要なのはCognitionエンティティ(現在2.2KB、大幅エンリッチ必要)とAsync Agentsアーキテクチャ情報。",
+  "decisions": [
+    {
+      "item_id": "<20260528072609.3.d4f9e83a8ddd9107@mg-d1.substack.com>-6",
+      "source": "newsletter",
+      "source_name": "[AINews] Cognition raises $1B in $26B Series D",
+      "title": "Perplexity open-sources Unigram tokenizer (5-6x CPU cut)",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-cognition-raises-1b-in-26b",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-ainews-cognition-raises-1b-in-26b-series-d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 単一情報・小規模。PerplexityがUnigram tokenizerをOSS化、5-6倍CPU削減、514トークンで63μs、ゼロヒープアロケーション。既存の推論最適化conceptへの言及として価値あるが独立ページは不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-28\n**Subject:** [AINews] Cognition raises $1B in $26B Series D\n**Collected:** 2026-05-29T07:10:17.887022+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0b"
+    },
+    {
+      "item_id": "<20260528130327.3.7c15d87a29ea7bee@mg-d0.substack.com>-12",
+      "source": "newsletter",
+      "source_name": "I signed up for another SaaS",
+      "title": "Ramp uses 10,000 security agents (6 days, ~100 issues)",
+      "url": "https://open.substack.com/pub/bensbites/p/i-signed-up-for-another-saas",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-i-signed-up-for-another-saas.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Rampが10,000の自社製セキュリティエージェントで6日間で約100のセキュリティ問題を発見・検証・修正(人間がPRレビュー)。エージェントチーム/スウォームの実用例としてentities/anthropic-managed-agentsやconcepts/agent-team-swarmへの参照価値あり。",
+      "candidate_wiki_path": "concepts/agent-team-swarm.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-28\n**Subject:** I signed up for another SaaS\n**Collected:** 2026-05-29T07:10:20.584792+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1"
+    },
+    {
+      "item_id": "<20260528.165825.8f256130@mta7>-4",
+      "source": "newsletter",
+      "source_name": "💼 Altman Walks Back Job Apocalypse",
+      "title": "NVIDIA Vera CPU agentic AI benchmarks (Phoronix)",
+      "url": "https://link.mail.beehiiv.com/v1/c/UcgXquM3ZaIuOkXaYJ%2BJ5wkOJ3RkyBI3CtYD%2FvJExgjZC53EM0zcXX5mws8N%0AC%2F1u2MTV7JpE%2BlM2eSN%2BlQgIUvzkkmKKXb6gOV6pPw7%2BR5BnAbBcbY7awhFn%0AEWHc4cUosqaUYUkp9s1AslUfAfTadUgz%2BenNErY8M6v1EMi97gKakjJ34Rif%0AoNJPZvQWdt8WOVxGAdBA5k0h7kPmoKDllg%3D%3D%0A/0c3b67aa38a4b167",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にwikiにconcepts/nvidia-vera-rubin.md(23KB)があり、Vera CPUの詳細ベンチマークを含む。Superintelの言及は表面的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-28\n**Subject:** 💼 Altman Walks Back Job Apocalypse\n**Collected:** 2026-05-29T07:10:21.855670+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/GRhqE%2FInrAYP5cZAUiIr0SjVoc1NlFrbnO%2FLd%2FthA%2FlOXbw%2FPgZj7J9PxKNM%0AtkHUeD7xlbImCALbl"
+    },
+    {
+      "item_id": "<20260528.165825.8f256130@mta7>-1",
+      "source": "newsletter",
+      "source_name": "💼 Altman Walks Back Job Apocalypse",
+      "title": "Anthropic agent tool call data: 50% in software engineering",
+      "url": "https://link.mail.beehiiv.com/v1/c/GRhqE%2FInrAYP5cZAUiIr0SjVoc1NlFrbnO%2FLd%2FthA%2FlOXbw%2FPgZj7J9PxKNM%0AtkHUeD7xlbImCALblKzA%2Bbb%2BUVrLp4P2WCC0X9mRTTmDviJGrjuQdImoqaDR%0At%2FaWvsTm60prgH%2BF6YODsunJmyZgMBZb9%2BDeZNTV0KYwVfjxFQj1siMsEsBx%0AsTIXCS50oJaHwlv1XCKw4ymJ9wZS3RJv8g%3D%3D%0A/78bfa271de8252a6",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Anthropicのデータ: 全エージェントツールコールの約半数がソフトウェアエンジニアリング。バックオフィス、マーケティング、営業などを大きく引き離す。エージェント導入はデジタル・モジュール・テスト可能・即時フィードバックの領域で集中。entities/anthropic.mdへの統計的裏付けとして参照価値あり。",
+      "candidate_wiki_path": "entities/anthropic.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-28\n**Subject:** 💼 Altman Walks Back Job Apocalypse\n**Collected:** 2026-05-29T07:10:21.855670+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/GRhqE%2FInrAYP5cZAUiIr0SjVoc1NlFrbnO%2FLd%2FthA%2FlOXbw%2FPgZj7J9PxKNM%0AtkHUeD7xlbImCALbl"
+    },
+    {
+      "item_id": "<20260528183343.3.085cf919a9961483@mg2.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #163",
+      "title": "True Positive Weekly #163 - AI chips, subagents, MolmoAct 2",
+      "url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-163",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-true-positive-weekly-163.md",
+      "recommended_action": "skip",
+      "reason_ja": "web_extractで記事タイトルのみ取得（本文トランケート）。ヘッドラインは『AI chips解説』『4つのサブエージェントパターン』『MolmoAct 2』『Shazamの仕組み』などだが、実際の外部記事リンクが取得できず。タイトルだけではWiki判断不可。サブエージェントパターンは興味深いが、内容確認不可のためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-28\n**Subject:** True Positive Weekly #163\n**Collected:** 2026-05-29T07:10:23.363861+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20260528200905.3.410490f7cde9fe20@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "GBrain.",
+      "title": "Andrej Karpathy joins Anthropic (pre-training team)",
+      "url": "https://open.substack.com/pub/aibyaakash/p/gbrain",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-gbrain.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ KarpathyがAnthropicのpre-trainingチームに参加。entities/andrei-karpathyとentities/anthropicの両方への人事情報として追記候補。『OpenAIの共同創業者がOpenAI復帰ではなくAnthropicを選んだ』というナラティブが興味深い。",
+      "candidate_wiki_path": "entities/anthropic.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-28\n**Subject:** GBrain.\n**Collected:** 2026-05-29T07:10:27.671093+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYWlieWFha2FzaC5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZy"
+    },
+    {
+      "item_id": "<20260529020725.3.90475f1b7f5d5997@mg2.substack.com>-6",
+      "source": "newsletter",
+      "source_name": "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode",
+      "title": "Opus 4.8 benchmarks - SWE-Bench Pro 69.2%, FrontierSWE #1, APEX-SWE 45.3%",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-anthropic-raises-965b-series",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆ entities/anthropic.mdにOpus 4.8の基本機能(正直性改善、途中会話system message等)は記載済みだが、ベンチマーク詳細(SWE-Bench Pro 69.2%、GPT-5.5より10ポイント高い、FrontierSWE #1、APEX-SWE 45.3%、GDPval-AA 1890 Elo、AA Intelligence Index 61.4、タスクあたり15%少ないターン・35%少ない出力トークン)は未記載。conceptsページかentityページへの追記候補。",
+      "candidate_wiki_path": "entities/anthropic.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-29\n**Subject:** [AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode\n**Collected:** 2026-05-29T07:10:28.953096+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNw"
+    },
+    {
+      "item_id": "<20260529021956.3.7d2fc9551acf9604@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "I think Anthropic and OpenAI have found product-market fit",
+      "title": "Simon Willison - Anthropic/OpenAI PMF analysis",
+      "url": "https://open.substack.com/pub/simonw/p/i-think-anthropic-and-openai-have",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-29-i-think-anthropic-and-openai-have-found-product-market-fit.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にentities/simon-willison.md(35KB)でEnterprise PMF & Pricing Analysis節として詳細にカバー済み。blog-wiki-ingestパイプラインで本日取り込み済み。Simon Willison自身のブログ(raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md)がソースとして登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-29\n**Subject:** I think Anthropic and OpenAI have found product-market fit\n**Collected:** 2026-05-29T07:10:30.331557+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zaW1vbncuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291c"
+    }
+  ]
+}

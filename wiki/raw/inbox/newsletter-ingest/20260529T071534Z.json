@@ -1,0 +1,242 @@
+{
+  "triage_metadata": {
+    "run_id": "20260529T071031Z",
+    "collected_at": "2026-05-29T07:10:31.973145+00:00",
+    "processed_count": 9,
+    "triage_timestamp": "2026-05-29T07:15:34.684578+00:00"
+  },
+  "summary": {
+    "total": 9,
+    "critical": 3,
+    "high": 4,
+    "low": 2,
+    "critical_newsletters": [
+      "[AINews] Cognition raises $1B in $26B Series D",
+      "The Age of Async Agents — Cognition's Walden Yan & OpenInspect's Cole Murray",
+      "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode"
+    ],
+    "key_themes": [
+      "Agent Architecture & Orchestration: background/async agents, Dynamic Workflows, brain-sandbox separation, subagent patterns",
+      "Coding Agent Market Maturation: enterprise pricing pivot, PMF signals, massive funding rounds (Cognition $26B, Anthropic $965B)",
+      "Agent Memory & Context: GBrain persistent memory, LangChain Delta Channels (40x compression), context management",
+      "Agent Benchmarks & Evaluation: DeepSWE, ITBench-AA, AgingBench, howtoeval.com, ProgramBench multi-agent quality/speed",
+      "Agent Training: Trajectory (continuous post-training), Polar (agent-harness fine-tuning), Cursor RL training",
+      "Model Improvements for Agents: Opus 4.8 honesty calibration, Qwen 3.7 Max 35-hour agent sessions",
+      "AI Industry Structure: Altman/Amodei softening job displacement predictions, enterprise sales as % of headcount"
+    ]
+  },
+  "classifications": [
+    {
+      "message_id": "<20260528072609.3.d4f9e83a8ddd9107@mg-d1.substack.com>",
+      "subject": "[AINews] Cognition raises $1B in $26B Series D",
+      "source_label": "uid=150",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-ainews-cognition-raises-1b-in-26b-series-d.md",
+      "publication": "AINews / Latent Space by swyx",
+      "importance": "critical",
+      "relevance_score": 95,
+      "wiki_relevance": [
+        "Cognition/Devin: $1B Series D at $26B valuation, $492M revenue run-rate, >$1B ARR projection — major entity update",
+        "LangChain Deep Agents v0.6: Delta Channels (5.3GB→129MB context compression), Fleet computer-use, Context Hub",
+        "LangSmith Engine: automated eval→diagnosis→fix loop from traces",
+        "Trajectory: $15M-funded continuous post-training platform for agentic models using production traces",
+        "DeepSWE benchmark: 113 tasks, 91 repos, 5 languages — new agent benchmark landscape",
+        "ITBench-AA: Kubernetes SRE incident response — all frontier models <50%",
+        "AgingBench: agent degradation as lifespan problem",
+        "Inference: EAGLE 3.1 speculative decoding, Qwen3.5 580 tok/s on TokenSpeed, MaxSim v2 10x speedup",
+        "ESMFold2 protein structure prediction, Gemini Embedding 2 multimodal, Surya OCR 2"
+      ],
+      "suggested_actions": [
+        "Update Cognition/Devin entity page with Series D funding details",
+        "Create concept page for 'Agent Context Compression' (Delta Channels, 5.3GB→129MB)",
+        "Create/update Agent Benchmarks comparison page (DeepSWE, ITBench-AA, AgingBench)",
+        "Update LangChain entity with Deep Agents v0.6",
+        "Create Trajectory entity page (continuous agent post-training)"
+      ]
+    },
+    {
+      "message_id": "<20260528114538.3.749913777af7f53a@mg-d1.substack.com>",
+      "subject": "A Cascade of Conscientiousness",
+      "source_label": "uid=151",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md",
+      "publication": "Hyperdimensional by Dean W. Ball",
+      "importance": "low",
+      "relevance_score": 25,
+      "wiki_relevance": [
+        "Physical AI / autonomous systems policy — tangentially relevant to AI agents in the physical world",
+        "Regulatory frameworks for autonomous technology — peripheral to core wiki focus"
+      ],
+      "suggested_actions": []
+    },
+    {
+      "message_id": "<20260528130327.3.7c15d87a29ea7bee@mg-d0.substack.com>",
+      "subject": "I signed up for another SaaS",
+      "source_label": "uid=152",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-i-signed-up-for-another-saas.md",
+      "publication": "Ben's Bites by Ben Tossell",
+      "importance": "high",
+      "relevance_score": 75,
+      "wiki_relevance": [
+        "Magic Path: multi-agent shared-canvas design platform — agent tooling",
+        "Claude Code security plugin: code safety checking for agents",
+        "DeepSWE benchmark results: GPT-5.5 70%, Claude Opus 4.7 54%",
+        "Cursor RL training: Composer 2.5 trained via RL inside Cursor harness",
+        "Polar: fine-tune models using agent harness as training environment",
+        "Theo's Codex vs Claude Code vs Cursor comparison (philosophical differences)",
+        "Ramp: 10,000 home-grown security agents found/patched ~100 issues in 6 days",
+        "howtoeval.com: practical agent evaluation guide by Ben Hylak",
+        "Supermemory: building blocks for agent context"
+      ],
+      "suggested_actions": [
+        "Create concept page for 'Agent Evaluation' referencing howtoeval.com",
+        "Update Coding Agent comparison page with Codex vs Claude Code vs Cursor analysis",
+        "Create Magic Path entity page (multi-agent design)",
+        "Add Cursor RL training detail to Cursor entity page",
+        "Note Polar (agent-harness fine-tuning) as new tool to track"
+      ]
+    },
+    {
+      "message_id": "<20260528.165825.8f256130@mta7>",
+      "subject": "💼 Altman Walks Back Job Apocalypse",
+      "source_label": "uid=153",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md",
+      "publication": "AI Weekly / beehiiv",
+      "importance": "low",
+      "relevance_score": 30,
+      "wiki_relevance": [
+        "Sam Altman reverses AI job displacement predictions at CBA Sydney event (May 26)",
+        "AI safety/societal impact: Yale Budget Lab finds no meaningful AI-driven labor market shift through March 2026",
+        "Dario Amodei also softening stance — framing automation as productivity multiplier",
+        "Relevant for AI safety / societal impact context in wiki"
+      ],
+      "suggested_actions": [
+        "Update Sam Altman entity page with revised job displacement stance",
+        "Update Dario Amodei entity page with revised automation framing"
+      ]
+    },
+    {
+      "message_id": "<20260528183343.3.085cf919a9961483@mg2.substack.com>",
+      "subject": "True Positive Weekly #163",
+      "source_label": "uid=154",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-true-positive-weekly-163.md",
+      "publication": "True Positive Weekly by Andriy Burkov",
+      "importance": "high",
+      "relevance_score": 65,
+      "wiki_relevance": [
+        "\"How agents manage other agents: Four subagent patterns in 2026\" — directly relevant to multi-agent architecture",
+        "AI chips overview — infrastructure context",
+        "MolmoAct 2: open foundation for real-world robots",
+        "\"How to work and compound with AI\" — agent-human collaboration patterns",
+        "Interactive semantic map of 10M scientific papers — research tooling"
+      ],
+      "suggested_actions": [
+        "Extract and create concept page for 'Subagent Patterns' from the four patterns article",
+        "Create MolmoAct 2 entity page (open foundation model for robotics)"
+      ]
+    },
+    {
+      "message_id": "<20260528184124.3.eaef4a95e874ddc9@mg-d1.substack.com>",
+      "subject": "The Age of Async Agents — Cognition's Walden Yan & OpenInspect's Cole Murray",
+      "source_label": "uid=155",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-the-age-of-async-agents-cognition-s-walden-yan-openinspect-s-cole-murray.md",
+      "publication": "Latent Space Podcast by swyx",
+      "importance": "critical",
+      "relevance_score": 98,
+      "wiki_relevance": [
+        "Three waves of AI coding: IDE assistants → local agents → async/background agents — foundational taxonomy",
+        "Devin architecture deep-dive: brain/sandbox separation, Firecracker VMs, BlockDev filesystem, nested virtualization",
+        "OpenInspect: open-source background agent system (GitHub app, Slack bot, MCP, code review bot)",
+        "Harness in-the-box vs out-of-the-box architectural tradeoffs — security, state management, secrets handling",
+        "Devin internal metrics: 16%→80% commits in 3 months, 7x PR growth, 10% headcount increase",
+        "Model inflection point (Dec 2025): Opus 4.5 & GPT-5.2 enabled spec→PR with minimal handholding",
+        "Repo setup as hardest problem: Docker, Docker-in-Docker, mock services, local dev environments",
+        "Testing ≠ Computer Use: multi-model orchestration for end-to-end testing",
+        "GitHub integration: Devin reads/replies to PR comments, can disagree with reviewers",
+        "Coding agent economics: $20/seat vs full-stack ownership debate"
+      ],
+      "suggested_actions": [
+        "Create concept page 'Async/Background Agents' from the three-waves taxonomy",
+        "Create detailed concept page 'Agent Architecture: Brain-Sandbox Separation'",
+        "Create OpenInspect entity page (open-source background agent)",
+        "Update Cognition/Devin entity with internal metrics and architectural decisions",
+        "Create concept page 'Agent Repo Setup & Environment Management'",
+        "Create comparison page 'Agent Harness: In-the-Box vs Out-of-the-Box'",
+        "Update Walden Yan entity page"
+      ]
+    },
+    {
+      "message_id": "<20260528200905.3.410490f7cde9fe20@mg-d1.substack.com>",
+      "subject": "GBrain.",
+      "source_label": "uid=156",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-28-gbrain.md",
+      "publication": "AI by Aakash",
+      "importance": "high",
+      "relevance_score": 78,
+      "wiki_relevance": [
+        "GBrain: Garry Tan's persistent memory system for Hermes agents — directly relevant to agent memory architecture",
+        "Grok Build: xAI's terminal coding agent with plan mode, 8 sub-agents parallel, 2M context",
+        "Anthropic: Opus 4.8 release, $47B ARR, $965B valuation, Andrej Karpathy joins Anthropic",
+        "Uber: burned entire 2026 AI budget in 4 months, 70% AI-generated code",
+        "Qwen 3.7 Max: agent model for long sessions (35-hour GPU optimizing run, 1000+ tool calls)",
+        "GPT-5.5 Cyber: OpenAI's cyber defense model for Japan national security"
+      ],
+      "suggested_actions": [
+        "Create GBrain entity/concept page (persistent agent memory system)",
+        "Create Grok Build entity page (xAI coding agent)",
+        "Update Anthropic entity with Opus 4.8, $965B valuation, Karpathy hire",
+        "Update Andrej Karpathy entity page (joined Anthropic for pre-training)",
+        "Create concept page 'Persistent Agent Memory' referencing GBrain architecture"
+      ]
+    },
+    {
+      "message_id": "<20260529020725.3.90475f1b7f5d5997@mg2.substack.com>",
+      "subject": "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode",
+      "source_label": "uid=157",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md",
+      "publication": "AINews / Latent Space by swyx",
+      "importance": "critical",
+      "relevance_score": 96,
+      "wiki_relevance": [
+        "Anthropic Series H: $65B raised at $965B valuation, $47B revenue run-rate — historic AI funding event",
+        "Claude Opus 4.8: SWE-Bench Pro 69.2% (+10pts vs GPT-5.5), 15% fewer turns, 35% fewer output tokens",
+        "Dynamic Workflows / ultracode: Claude Code multi-agent orchestration — hundreds of parallel subagents",
+        "Bun case study: 750K LOC Zig→Rust rewrite, 99.8% tests passing, 11 days, hundreds of parallel agents",
+        "Opus 4.8 honesty calibration: 4x less likely to let code flaws pass, lowest hallucination rate",
+        "Multi-agent system findings: reaching mediocre solutions 2x faster, not necessarily better final quality",
+        "ProgramBench: multi-agent quality vs speed tradeoff quantification"
+      ],
+      "suggested_actions": [
+        "Update Anthropic entity page with Series H, Opus 4.8, Dynamic Workflows",
+        "Create concept page 'Dynamic Workflows / Parallel Agent Orchestration'",
+        "Update Claude Code entity with ultracode/Dynamic Workflows feature",
+        "Create concept page 'Multi-Agent Quality-Speed Tradeoffs' (ProgramBench findings)",
+        "Update SWE-Bench comparison page with Opus 4.8 scores",
+        "Create case study page 'Bun Zig→Rust Migration via Parallel Agents'"
+      ]
+    },
+    {
+      "message_id": "<20260529021956.3.7d2fc9551acf9604@mg-d1.substack.com>",
+      "subject": "I think Anthropic and OpenAI have found product-market fit",
+      "source_label": "uid=158",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-29-i-think-anthropic-and-openai-have-found-product-market-fit.md",
+      "publication": "Simon Willison's Newsletter",
+      "importance": "high",
+      "relevance_score": 82,
+      "wiki_relevance": [
+        "Enterprise coding agent pricing model analysis: fixed seat → API token pricing shift (April 2026)",
+        "Coding agent product-market fit analysis: November 2025 (technical) → April 2026 (revenue) inflection points",
+        "Anthropic revenue trajectory: $14B→$30B→$47B run-rate in 4 months, possibly profitable Q2 2026",
+        "SpaceX S-1: Anthropic paying $1.25B/month for Colossus cluster compute through May 2029",
+        "OpenAI 703 jobs, 32.6% enterprise sales; Anthropic 390 jobs, 26.9% enterprise",
+        "Simon's personal ccusage: $1,200/mo Claude Code + $980/mo Codex",
+        "Claude Opus 4.8 review: honesty calibration, Fast mode economics ($10/$50 vs $30/$150 previously)",
+        "Uber AI budget narrative re-analysis"
+      ],
+      "suggested_actions": [
+        "Create concept page 'Coding Agent Economics & Enterprise Pricing Models'",
+        "Update Anthropic entity with detailed revenue timeline and SpaceX compute deal",
+        "Update OpenAI entity with enterprise job listing analysis",
+        "Update Simon Willison entity page"
+      ]
+    }
+  ]
+}
