@@ -4530,3 +4530,19 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Enriched** [[entities/nous-research]] — added Hermes 4 section, updated sources/tags/description
 - **Schema** [[SCHEMA]] — added `hybrid-reasoning` tag to Models category
 - **Index** — added hermes-4, updated nous-research description, bumped entity count 705→706
+
+## [2026-05-29] Dynamic Workflows + RLM | Claude Code announcement & a1zhang analysis
+
+### Pages Created
+- [[concepts/dynamic-workflows]] — Claude Code Dynamic Workflows (May 2026 research preview). JavaScript orchestration scripts, parallel subagents (up to 16 concurrent / 1000 total), verification + convergence loops, Ultracode mode. Bun case study (Zig→Rust, 750K LOC, 11 days, 99.8% tests pass). RLM relationship analysis with a1zhang claim evaluation.
+
+### Pages Updated
+- [[concepts/rlm-recursive-language-models]] — Added "Dynamic Workflows: RLM in Production" section covering a1zhang's claim (Opus 4.8 + DW ≈ trained RLM), scaffold-level vs trained RLM assessment with 5-axis table, and community debate summary. Updated tags, related, updated date.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-28_anthropic_dynamic-workflows-claude-code.md` — Anthropic blog post
+- `raw/articles/2025-10-01_alexzhang_rlm-blog-post.md` — a1zhang RLM blog post
+
+### Key Analysis: a1zhang Claim Validity
+**Claim**: Opus 4.8 + Dynamic Workflows = "first frontier model seriously trained to be an RLM"
+**Assessment**: Substantial validity with nuance. DW implement scaffold-level RLM (programmatic sub-agent invocation, context isolation, model-driven decomposition) but no evidence of training-level changes. Better characterized as "scaffold-level RLM" or "RLM-adjacent." First production-grade coding agent with model-determined decomposition + programmatic sub-agent invocation.

@@ -1,25 +1,15 @@
 ---
 title: "RLM (Recursive Language Models)"
-tags:
-  - training
-  - concept
-  - ai-agents
-  - model
-  - prompting
-  - rag
-  - evaluation
-  - inference
-  - context-management
-  - coding-agents
 created: 2026-04-13
-updated: 2026-05-04
+updated: 2026-05-29
 type: concept
+tags: [rlm, long-context, inference, test-time-scaling, context-rot, context-degradation, ai-agents, coding-agents, orchestration, subagents, workflow, claude-code, research, neurosymbolic]
+related: [dspy, dspy-rlm, context-engineering, gepa, lambda-rlm, programmatic-tool-calling, code-execution-with-mcp, code-mode, context-folding, anthropic-multi-agent-research, inference-time-scaling, typed-rlm, dynamic-workflows]
 sources:
   - https://arxiv.org/abs/2512.24601
   - https://alexzhang13.github.io/blog/2025/rlm/
   - https://dspy.ai/api/modules/RLM/
   - https://github.com/alexzhang13/rlm
-updated: 2026-05-13
 ---
 
 # RLM (Recursive Language Models)
@@ -422,6 +412,40 @@ analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM: analyze
 ```
 
 Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: Complementary 2 Axes (Function Axis vs Data Axis)]].
+
+## Dynamic Workflows: RLM in Production
+
+On May 28, 2026, Anthropic launched **[[concepts/dynamic-workflows]]** in Claude Code — a feature that lets Claude write JavaScript orchestration scripts to spawn tens to hundreds of parallel subagents with verification and convergence loops. Alex Zhang (@a1zhang) immediately identified this as "perhaps the first instance of a frontier model seriously trained to be an RLM."
+
+### The a1zhang Claim: Opus 4.8 + Dynamic Workflows ≈ Trained RLM
+
+Zhang's argument: Dynamic Workflows implement the core RLM properties — **programmatic sub-agent invocation with outputs outside the main model's context**. He clarified that the Python REPL is "a particular instantiation" but not essential; the defining RLM trait is a **symbolic environment where LLM calls are invoked in code, passing around outputs not in the context of the main model**. By this definition, Claude Code's workflow scripts (JavaScript orchestration with isolated subagent contexts) qualify as an RLM instantiation.
+
+### Assessment: Scaffold-Level RLM, Not Trained RLM
+
+The claim has **substantial validity** but requires nuance:
+
+| Aspect | Alignment | Divergence |
+|---|---|---|
+| **Programmatic sub-agent invocation** | ✅ Workflow scripts invoke sub-agents from code, not prompt chains | — |
+| **Context isolation** | ✅ Intermediate results stay in script variables, outside Claude's context | RLM uses REPL-as-context-variable; DW uses JavaScript variables + subagent contexts |
+| **Model-determined decomposition** | ✅ Model decides task breakdown dynamically | DW decomposition is **task-centric**; canonical RLM is **context-centric** (programmatic context partitioning) |
+| **Recursive refinement** | ✅ Convergence loop provides iterative improvement | RLM uses `llm_query()` recursion over context subsets; DW uses verification + adversarial agents |
+| **Training** | ❌ Anthropic announcement mentions no model-level training changes | RLM paper includes post-trained RLM-Qwen3-8B; canonical RLM envisions "models explicitly trained to reason as RLMs" |
+
+**Synthesis**: Dynamic Workflows are **scaffold-level RLM** rather than **trained RLM**. They implement the architectural pattern (model-driven decomposition, programmatic sub-agent invocation, context-isolated execution) at the orchestration layer, without evidence of model training specifically for recursive context decomposition. Zhang's own RLM vision calls for models "explicitly trained to reason as RLMs" — Dynamic Workflows achieve the scaffold, not the training.
+
+The significance is real: this is the first production-grade coding agent system where the model dynamically decides its own decomposition strategy and invokes sub-agents programmatically. Whether this is "RLM" or "RLM-adjacent" depends on whether one defines RLM by architecture (scaffold pattern) or genesis (training).
+
+### Community Debate
+
+The a1zhang thread generated significant discussion:
+
+- **Counterarguments**: "Parallelizing work and RLMs are different" — RLM's defining feature is context-centric decomposition, not just parallelism. "They don't dynamically query the prompt — it's prompt → script → call subagents on each prompt."
+- **Support**: "The unlock is the model deciding when verification is actually done. That's what makes this RLM and not just parallel CoT."
+- **Key insight from a1zhang**: "Invoking sub-agents programmatically... has been the key missing feature in coding agents for a while, and is what RLMs have been arguing we need for a long time. Essentially now, CC can function as an RLM."
+
+See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models (RLM)]]
 
 ## Related Concepts
 

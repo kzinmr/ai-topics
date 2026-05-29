@@ -1,0 +1,57 @@
+{
+  "source": "backlog",
+  "archived_at": "2026-05-29T00:00:41Z",
+  "run_id": "20260529T000041Z",
+  "items": [
+    {
+      "item_id": "substack.com--redirect-50406e60-2597-4e98-9bd3-1c633a9ad39a--c32f2284.md",
+      "source_name": "Epoch AI / METR",
+      "title": "MirrorCode: Evidence AI can already do some weeks-long coding tasks",
+      "url": "https://substack.com/redirect/50406e60-2597-4e98-9bd3-1c633a9ad39a",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-50406e60-2597-4e98-9bd3-1c633a9ad39a--c32f2284.md",
+      "decision": "reference",
+      "reason_ja": "★★★☆☆ Epoch AIとMETRが共同開発したMirrorCodeは長期コーディングベンチマーク。既にImport AI 453で複数回言及済み。concepts/swe-bench.mdへのreference追加が最適。",
+      "body_excerpt": "MirrorCode: Evidence AI can already do some weeks-long coding tasks. We present early results from MirrorCode, a benchmark (co-developed with METR) of long-horizon coding tasks derived from real software applications."
+    },
+    {
+      "item_id": "jaykmody.com--blog-gpt-from-scratch--72f0da72.md",
+      "source_name": "jaykmody.com",
+      "title": "GPT in 60 Lines of NumPy",
+      "url": "https://jaykmody.com/blog/gpt-from-scratch/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/jaykmody.com--blog-gpt-from-scratch--72f0da72.md",
+      "decision": "skip",
+      "reason_ja": "★★☆☆☆☆ 既にentities/jay-mody.mdとraw/articles/2023-01-30_jaymody-picoGPT.mdでカバー済み。重複。",
+      "body_excerpt": "GPT in 60 Lines of NumPy. January 30, 2023. In this post, we'll implement a GPT from scratch in just 60 lines of numpy."
+    },
+    {
+      "item_id": "danluu.com--new-cpu-features--41858eb5.md",
+      "source_name": "danluu.com",
+      "title": "What's new in CPUs since the 80s?",
+      "url": "https://danluu.com/new-cpu-features/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--new-cpu-features--41858eb5.md",
+      "decision": "skip",
+      "reason_ja": "★☆☆☆☆ x86 CPUの新機能解説。AI/LLM/エージェント技術との直接の関連性なし。過去もnon-AIで連続スキップ実績。",
+      "body_excerpt": "What's new in CPUs since the 80s? This is a response to the following question from David Albert: My mental model of CPUs is stuck in the 1980s"
+    },
+    {
+      "item_id": "berthub.eu--articles-posts-data-experts-politiek-tweede-kamer--d32fdd73.md",
+      "source_name": "berthub.eu",
+      "title": "Data, experts en politiek: een ongemakkelijke combinatie",
+      "url": "https://berthub.eu/articles/posts/data-experts-politiek-tweede-kamer/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/berthub.eu--articles-posts-data-experts-politiek-tweede-kamer--d32fdd73.md",
+      "decision": "skip",
+      "reason_ja": "★☆☆☆☆ オランダ語の政治・データ専門家に関する講演。AI/LLM技術との関連性薄。",
+      "body_excerpt": "Data, experts en politiek: een ongemakkelijke combinatie. Een verbeterd transcript van een praatje gehouden op 24 april 2025 ter afsluiting van de \"Datamaand\" van de Tweede Kamer."
+    },
+    {
+      "item_id": "substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--9d6fa84f.md",
+      "source_name": "SemiAnalysis",
+      "title": "How Much Do GPU Clusters Really Cost?",
+      "url": "https://substack.com/redirect/2/eyJlIj...T1RR",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--9d6fa84f.md",
+      "decision": "skip",
+      "reason_ja": "★★☆☆☆☆ SemiAnalysisのGPUクラスタTCO分析。ClusterMAX 2.0関連内容は concepts/gpu-cloud-rankings.md と entities/semianalysis.md で既にカバー済み。",
+      "body_excerpt": "How Much Do GPU Clusters Really Cost?"
+    }
+  ]
+}

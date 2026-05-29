@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-28 | Total pages: 2238 | Indexed entries: 1475 | Not in index: 745
+> Last updated: 2026-05-29 | Total pages: 2239 | Indexed entries: 1476 | Not in index: 744
 
 ## Entities (709 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -722,7 +722,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (706 pages)
+## Concepts (707 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -882,6 +882,7 @@
 - [[concepts/coding-agents]] — Coding Agents
 - [[concepts/dspy-rlm]] — DSPy.RLM
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
+- [[concepts/dynamic-workflows]] — Claude Code Dynamic Workflows (May 2026): JavaScript orchestration scripts that spawn 10s-100s of parallel subagents with verification/convergence loops. Bun Zig→Rust migration (~750K LOC, 11 days, 99.8% tests pass). Ultracode mode. Discussion: scaffold-level RLM instantiation (a1zhang claim). See [[concepts/rlm-recursive-language-models]]
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4): antirez's local AI inference project. Runs DeepSeek V4 Flash with 2/8bit asymmetric quantization on 96-128GB Macs. Plans distributed inference and coding agent integration. First time using local models for serious work.
 - [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
 - [[concepts/eagle-3-1]] — EAGLE 3.1: Speculative decoding reliability upgrade. Fixes attention drift via FC normalization + post-norm hidden-state feedback. 2.03× throughput on Kimi K2.6 (vLLM). Jointly developed by EAGLE, vLLM, TorchSpec teams (May 2026).

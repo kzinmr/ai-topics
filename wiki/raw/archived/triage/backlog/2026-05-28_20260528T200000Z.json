@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260528T200000Z",
+  "summary_ja": "raw-backlog-ingest batch: 5-kun toriage. take=0-kun. 4-kun wa handotai gijutsu kiji (ISSCC 2026) de AI core theme kara hazure kizoku cover-de juubun. 1-kun wa Ben Boyter no searchcode index gijutsu kiji de reference hantei.",
+  "decisions": [
+    {
+      "item_id": "substack.com--app-link-post--4f2cf73b.md",
+      "source": "backlog",
+      "title": "NVIDIA & Broadcom CPO, HBM4 & LPDDR6, TSMC Active LSI, Logic-Based SRAM, UCIe-S and More",
+      "url": "https://substack.com/app-link/post?publication_id=6349492&post_id=193556591",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--4f2cf73b.md",
+      "recommended_action": "skip",
+      "reason_ja": "ISSCC 2026 han doto gijutsu roundup. HBM4, LPDDR6, CPO, SRAM scaling - AI core theme kara hazureru. semianalysis.md de cover-zumi.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "ISSCC 2026: Samsung HBM4 SF4 logic base die, 36GB 12-high stack, 2048 IO pins, 3.3 TB/s bandwidth.",
+      "archive_status": "already_archived"
+    },
+    {
+      "item_id": "substack.com--app-link-post--a61bf473.md",
+      "source": "backlog",
+      "title": "NVIDIA & Broadcom CPO, HBM4 & LPDDR6, TSMC Active LSI, Logic-Based SRAM, UCIe-S and More",
+      "url": "https://substack.com/app-link/post?publication_id=6349492&post_id=193556591",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--a61bf473.md",
+      "recommended_action": "skip",
+      "reason_ja": "Doitsu kiji no URL-betsu. Already archived.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Same ISSCC 2026 content via second URL variant.",
+      "archive_status": "already_archived"
+    },
+    {
+      "item_id": "substack.com--redirect-476cc747-f7ca-4f97-9aad-dae9586cc6b3--93af5b89.md",
+      "source": "backlog",
+      "title": "NVIDIA & Broadcom CPO, HBM4 & LPDDR6, TSMC Active LSI, Logic-Based SRAM, UCIe-S and More",
+      "url": "https://substack.com/redirect/476cc747-f7ca-4f97-9aad-dae9586cc6b3",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-476cc747-f7ca-4f97-9aad-dae9586cc6b3--93af5b89.md",
+      "recommended_action": "skip",
+      "reason_ja": "Doitsu kiji no redirect-link-ban. Already archived.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Same ISSCC 2026 content via redirect URL.",
+      "archive_status": "already_archived"
+    },
+    {
+      "item_id": "substack.com--redirect-e0d23459-65b2-4b19-b864-f71c5990099b--6fee90f6.md",
+      "source": "backlog",
+      "title": "NVIDIA & Broadcom CPO, HBM4 & LPDDR6, TSMC Active LSI, Logic-Based SRAM, UCIe-S and More",
+      "url": "https://substack.com/redirect/e0d23459-65b2-4b19-b864-f71c5990099b",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-e0d23459-65b2-4b19-b864-f71c5990099b--6fee90f6.md",
+      "recommended_action": "skip",
+      "reason_ja": "Doitsu kiji no redirect-link-ban 2. Already archived.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Same ISSCC 2026 content via second redirect URL.",
+      "archive_status": "already_archived"
+    },
+    {
+      "item_id": "boyter.org--posts-how-i-built-my-own-index-for-searchcode--2e6d405b.md",
+      "source": "backlog",
+      "title": "Building a custom code search index in Go for searchcode.com",
+      "url": "https://boyter.org/posts/how-i-built-my-own-index-for-searchcode/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--posts-how-i-built-my-own-index-for-searchcode--2e6d405b.md",
+      "recommended_action": "reference",
+      "reason_ja": "Ben Boyter no searchcode.com dokujii index architecture shosai. trigram+bloom filter (bit signatures) ni yoru code Kensaku. 200M document, 75B sen wo 128GB RAM de shori. searchcode-com.md wa MCP/API gawa wo cover shiteiru ga, kono index architecture no shosai wa mi-noroku. Kensaku engine gijutsu toshite no kachi wa aru ga, AI/LLM core topic kara no kyori wo koryo shi reference to suru.",
+      "candidate_wiki_path": "entities/searchcode-com.md",
+      "body_excerpt": "Custom Go-based code search index using trigram bloom filters inspired by BitFunnel. 200M documents, 75B lines of code, ~40ms query time. Bloom filter sharded by unique document trigrams. 1320 unique trigrams per document, 1500-bit bloom filters.",
+      "archive_status": "not_archived"
+    }
+  ]
+}
