@@ -6,12 +6,15 @@ category: concepts
 sub_category: Vector Search
 tags:
   - search
+  - metadata-retrieval
+  - bm25
 status: complete
 related:
   - vector-databases
   - reranking
+  - metadata-retrieval
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-29
 sources:
   - https://turbopuffer.com/blog/rank-by-attribute
   - https://turbopuffer.com/docs/query
@@ -130,7 +133,9 @@ The Saturate function serves as a bridge: it makes numeric attributes **comparab
 ## See Also
 
 - [[concepts/bm25]] — Okapi BM25 text ranking algorithm
+- [[concepts/metadata-retrieval]] — Metadata as the 3rd retrieval paradigm (Doug Turnbull)
 - [[concepts/vector-databases]] — Vector database landscape
 - [[concepts/reranking]] — Cross-encoder and LLM-based reranking
+- [[entities/doug-turnbull]] — Author of "Metadata: the 3rd kind of retrieval"
 - [TurboPuffer Docs: Query](https://turbopuffer.com/docs/query)
 - [TurboPuffer Blog: Rank by Attribute](https://turbopuffer.com/blog/rank-by-attribute)

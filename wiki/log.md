@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] Metadata retrieval ingest + Doug Turnbull entity — user request (Discord)
+
+- **Trigger**: User asked to ingest https://softwaredoug.com/blog/2026/04/21/metadata-the-3rd-kind-of-retrieval and cross-reference with turbopuffer rank-by-attribute
+- **Saved raw article**: `raw/articles/2026-04-21_softwaredoug_metadata-third-kind-retrieval.md`
+- **Created concept page**: `concepts/metadata-retrieval.md` — Metadata as 3rd retrieval paradigm alongside lexical + embedding
+- **Created entity page**: `entities/doug-turnbull.md` — Doug Turnbull, search expert, "Cheat at Search" methodology
+- **Updated**: `concepts/turbopuffer-rank-by-attribute.md` — added cross-links to metadata-retrieval / doug-turnbull, added tags `metadata-retrieval`, `bm25`
+- **Updated SCHEMA.md**: Added tags `metadata-retrieval`, `explainable-ranking` to Techniques taxonomy
+- **Updated index.md**: Added entries for `entities/doug-turnbull` and `concepts/metadata-retrieval`
+
 ## [2026-05-29] DCI paper ingest — user request (Discord)
 
 - `created` concepts/direct-corpus-interaction.md — Direct Corpus Interaction (DCI) concept page from Li et al. (arXiv 2605.05242). Replaces retrieval pipeline with grep/bash/shell commands. BrowseComp-Plus 80.0%, multi-hop QA 83.0, IR NDCG 68.5.

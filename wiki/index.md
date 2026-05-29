@@ -33,6 +33,7 @@
 - [[entities/deepmind]] — Google DeepMind — Alphabet's central AI research lab (AlphaGo, AlphaFold, Gemini). May 2026: AI Pointer / Magic Pointer — context-aware cursor. Agents at Scale: Antigravity IDE, token quotas, Darwinian skills library, in-house model mixing.
 - [[entities/denseon-lateon]] — DenseOn & LateOn — Open SOTA retrieval models (149M ModernBERT). DenseOn: BEIR 56.20 (first <150M past 56). LateOn: BEIR 57.22 (first ColBERT past 57). LightOn, Apr 2026.
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy): AI agent harness engineering researcher
+- [[entities/doug-turnbull]] — Doug Turnbull (softwaredoug) — Search and information retrieval expert. "Metadata: the 3rd kind of retrieval" framework, "Cheat at Search" methodology for LLM-powered query understanding.
 - [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
 - [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
 - [[entities/dynomight-net]] — Dynomight — Data science & society blog
@@ -980,6 +981,7 @@
 - [[concepts/model-distillation]] — Model Distillation
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns — Anthropic vs OpenAI vs Cognition: comparative analysis of AI agent memory architectures.
 - [[concepts/meta-harness]] — Meta-Harness — Stanford/MIT outer-loop harness optimization framework. OS/Brain separation for agent systems, automated hill-climbing on verifiable benchmarks, 6x performance gap via harness changes. Practical implementation: howdymary/hermes-agent-metaharness.
+- [[concepts/metadata-retrieval]] — Metadata Retrieval — 3rd retrieval paradigm alongside lexical and embedding search. Structured attribute matching with explainable, testable ranking rules. Doug Turnbull's "Cheat at Search" framework enabled by LLM-powered query understanding.
 - [[concepts/model-quantization]] — Model Quantization
 - [[concepts/model-routing]] — Per-turn model routing for AI coding agents. Augment Prism: 20-30% cost reduction at similar quality. Cache-aware routing decisions.
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
