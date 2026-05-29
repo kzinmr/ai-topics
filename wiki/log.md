@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] raw-backlog-ingest | 5件バックログ処理 — 全てskip (0 takes)
+- paulgraham.com "How to Start a Startup" (2005) → skip: 一般スタートアップ論、AI関連なし
+- Miguel Grinberg "SQLAlchemy 2 In Practice" → skip: データベースチュートリアル、AI関連なし
+- Dan Luu "Some thoughts on writing" → skip: ライティングスタイルエッセイ、AI関連なし
+- SemiAnalysis "How Much Do GPU Clusters Really Cost?" (2件、同一post_id) → skip: 既にconcepts/gpu-cluster-tco-goodput.md + entities/semianalysis.mdでカバー済み
+- アーカイブ: `wiki/raw/archived/triage/backlog/2026-05-29_20260529T080055Z.json`
+- トリガージJSON: `.hermes/cron/data/backlog/triage_latest.json`
+
+---
+
 ## [2026-05-29] enrich | Blog ingest: Gary Marcus tokenmaxxing backlash — 2 entities/concepts enriched
 
 ### Pages Enriched
