@@ -2,7 +2,7 @@
 title: "Agent Skills"
 type: concept
 created: 2026-04-25
-updated: 2026-05-27
+updated: 2026-05-29
 tags:
   - architecture
   - mcp
@@ -92,3 +92,38 @@ The skill behind Claude's document editing capabilities:
 - [[concepts/mcp]] — Model Context Protocol
 - [[concepts/claude-code-best-practices]] — Claude Code best practices
 - [[agent-skills-skillmd]] — SKILL.md format details
+
+## Skills Ecosystem: Practitioner Perspectives
+
+### The Skeptical View (Hamel Husain)
+
+[[entities/hamel-husain]], creator of the `superpowers` skills framework and one of the most influential figures in the skills ecosystem, brought radical skepticism to Show Us Your (Agent) Skills Ep. 4:
+
+- **A third of the top 300 skills have exactly one commit** — most published skills are abandonware, created once and never maintained
+- **Skills are decompressed prompts** — \"Always read the prompt.\" Skills don't add magic; they're structured context that the agent decompresses at runtime
+- **\"Fuck Your Skills\"** — be skeptical even of Hamel's own published skills. Every skill should be audited before use
+- **Killed his own eval skill for an MCP** — MCP provides a more structured, testable interface than skill files for evaluation tasks
+
+### The Security Nightmare
+
+Both [[entities/matthew-honnibal]] and [[entities/hamel-husain]] independently identified a critical vulnerability:
+
+- **Hidden HTML in `.md` skill files** can smuggle instructions to the agent. Honnibal ships skills as raw `.md.txt` files specifically to prevent browser rendering that could embed malicious directives
+- The **skill supply chain** is a massive unexamined attack surface — anyone can publish a skill that injects hidden instructions
+- [[entities/eleanor-berger]]'s \"lethal trifecta\" response: cut your agent's internet access to prevent hallucinated URLs, scraping attacks, and unintentional data exfiltration
+
+### Skills as Capabilities (AMP)
+
+[[entities/nico-gerold]] at AMP treats skills as domain-specific **capabilities**, not generic prompts:
+
+- **gcloud skill** — pulls the right logs from production
+- **tmux skill** — spins up dev builds and reproduces bugs autonomously
+- **postmortem skill** — agent introspects on why it went wrong, building institutional knowledge
+
+### Self-Updating Skills
+
+[[entities/bryan-bischof]] demonstrated the meta-skill pattern: skills that tell the agent to update itself. The agent reads its own eval failures and rewrites the skill to prevent recurrence.
+
+### Skills vs. Composable Libraries
+
+[[entities/vincent-warmerdam]] (marimo) argues that **composable widget libraries beat skill files** for UI/visualization tasks. \"Wiggly Stuff\" widgets are Lego bricks — the agent composes them rather than following procedural instructions.

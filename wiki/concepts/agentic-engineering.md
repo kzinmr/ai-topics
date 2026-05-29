@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-05-26
+updated: 2026-05-29
 type: concept
 tags:
   - concept
@@ -15,6 +15,9 @@ sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
   - raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md
+  - raw/articles/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
+  - raw/articles/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - raw/articles/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
 ---
 
 # Agentic Engineering
@@ -74,6 +77,56 @@ Core practices:
 
 Slow coding represents the opposite of 10× productivity, but catches wrongheaded approaches early and makes codebases better for the next developer.
 
+### 7. Agentic Data Science: The Two-Bucket Framework
+
+[[entities/eric-ma]] articulated a framework for agent-assisted data science at Moderna:
+
+- **Bucket 1 — Loading Context**: Feeding the agent domain knowledge, molecule structures, experimental data, and notebook state. The agent needs to understand the scientific domain before it can contribute.
+- **Bucket 2 — Auto-Optimize**: The agent iteratively improves analysis — generating visualizations, testing hypotheses, refining models. The human stays at the boundary deciding when to switch buckets.
+
+Key architectural insight: **reactive notebooks (marimo) over Jupyter**. Reactive notebooks are deterministic DAGs, so the agent always knows what's computed. Agents can read/write Python variables directly without fragile kernel state management. Eric's `agents.md` enforces rules like cell naming conventions, color map standards, and "if you make a claim, you need a plot."
+
+### 8. One Intelligent Step in Deterministic Scripts
+
+[[entities/eleanor-berger]] identified the winning pattern for reliable agent workflows:
+
+> "One LLM-powered step wrapped inside otherwise deterministic scripts."
+
+Rather than giving agents open-ended autonomy, embed a single intelligent decision inside a procedural pipeline. Know when a cron job needs an LLM and when a plain script will do. This hybrid approach maximizes reliability while still leveraging agent intelligence where it matters.
+
+Eleanor's Hermes agent "Fnord" on a home Mac Mini exemplifies this: ~157 skills, GPT-5.5 as unlock, auto-publishing HTML, and a "lethal trifecta" security model that cuts internet access to prevent hallucinated URLs, scraping attacks, and data exfiltration.
+
+### 9. Cloud-Background Agent Execution
+
+[[entities/nico-gerold]] declared "Coding agents are dead" — meaning the interactive, IDE-integrated model is obsolete. AMP rebuilt its harness for agents that:
+
+- Run in the **cloud**, not on the developer's machine
+- Execute in the **background**, with humans reviewing outputs asynchronously
+- Use **skills as capabilities** (e.g., gcloud skill pulls logs, tmux skill spins up dev builds)
+- Include a **postmortem skill** — agent introspects on why it went wrong
+
+This mirrors the Amish barn-raising analogy from [[entities/tomasz-tunguz]]: adopt technology deliberately, not reflexively. The real superpower is **parallelization** — multiple agents doing independent work simultaneously.
+
+### 10. Eval-Driven Feature Development
+
+[[entities/bryan-bischof]] demonstrated BBplot, a visualization library built for agents. His methodology:
+
+- **Features come from eval failures, not human wishlists** — the eval defines what's needed
+- **Separate eval repo** — prevents agents from "cheating" by seeing test cases
+- **Gallery requirement** — every feature must be demonstrated in the gallery for agents to learn from
+- **Three variations always** — single-pass generation locks into one interpretation; ambiguity yields variance
+- **Scene graph** — tells the agent what overlaps what, enabling layout-aware generation
+
+### 11. Skills Ecosystem Skepticism
+
+[[entities/hamel-husain]] brought radical skepticism to the skills movement:
+
+- **A third of the top 300 skills have exactly one commit** — most are abandonware
+- **Skills are just decompressed prompts** — no magic, just structured context
+- **The skills security nightmare**: hidden HTML in `.md` skill files can inject instructions
+- **MCP over skill files for eval** — structured, testable interfaces beat ad-hoc skill documents
+- **"Fuck your skills"** — be skeptical even of published, popular skills
+
 ## Contrast with Vibe Coding
 
 | Dimension | Vibe Coding | Agentic Engineering |
@@ -93,6 +146,12 @@ Slow coding represents the opposite of 10× productivity, but catches wrongheade
 - **[[entities/garry-tan]]** — "Fat Skills, Fat Code, Thin Harness" architecture
 - **[[entities/hugo-bowne-anderson]]** — Documenting and teaching agentic engineering through Vanishing Gradients
 - **[[entities/nolan-lawson]]** — Slow coding methodology, multi-agent parallel code review pipeline, quality-over-velocity philosophy
+- **[[entities/eric-ma]]** — Agentic data science two-bucket framework, marimo Pair, reactive notebooks for agents
+- **[[entities/eleanor-berger]]** — One intelligent step pattern, Hermes Fnord agent, lethal trifecta security model
+- **[[entities/nico-gerold]]** — Cloud-background agent execution, skills as capabilities, postmortem introspection
+- **[[entities/bryan-bischof]]** — BBplot eval-driven development, scene graph, three-variations pattern
+- **[[entities/hamel-husain]]** — Skills ecosystem skepticism, MCP over skill files, skills security audit
+- **[[entities/matthew-honnibal]]** — Multi-pass agent architecture, effective context window findings, reward hacking detection
 
 ## Key Tools and Projects
 

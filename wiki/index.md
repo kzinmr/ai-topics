@@ -165,7 +165,7 @@
 - [[entities/browser-use]] — **browser-use** is an open-source browser automation framework developed by ETH Zurich alumni. It enables AI agents to interact with websites via Playwright. Its mission: "Make websites accessible for AI agents."
 - [[entities/browserbase]] — **Browserbase** is a platform providing reliable browser automation infrastructure for AI agents. It handles "the where" and has built a three-layer architecture integrated with Stagehand (the what) and the Stagehand API (the how).
 - [[entities/brutecat-com]] — **Blog** | brutecat.com |
-- [[entities/bryan-bischof]] — **X** | @BEBischof |
+- [[entities/bryan-bischof]] — Bryan Bischof (@BEBischof) — Head of AI at Theory Ventures, creator of BBplot (grammar of graphics for agents), R.I.P. grep, "Failure Is A Funnel" evaluation framework. Former Head of AI at Hex (Magic copilot), Weights & Biases, Stitch Fix, Blue Bottle Coffee.
 - [[entities/bryan-catanzaro]] — Bryan Catanzaro (@ctnzr) — VP Applied Deep Learning Research at NVIDIA. Leads Nemotron open model effort (~500 staff). "AI as infrastructure" thesis. Megatron-LM, NeMo Framework, DLSS.
 - [[entities/byterover]] — **ByteRover** is a portable, file-based memory layer for coding agents with 92-96% retrieval accuracy. Replaces vector DB with LLM-curated Markdown context tree. BYO Vietnam. Open source (Elastic 2.0).
 - [[entities/callosum]] — Callosum — heterogenous intelligence inference startup. Principle of Maximum Heterogeneity: multi-model, multi-chip routing for cost-performance. ULong: 7-12x cheaper, Video Web Arena: +18% vs GPT-5.2. £3M Aria Institute grant.
@@ -236,6 +236,7 @@
 - [[entities/dylan-patel]] — **Role** | Founder, CEO, and Chief Analyst at SemiAnalysis |
 - [[entities/eric-jang]] — Former VP of AI at 1X Technologies, Google Brain researcher. Reinforcement learning and robotics expert. AlphaGo analysis, automated AI research.
 - [[entities/eric-hartford]] — **X** | @QuixiAI |
+- [[entities/eric-ma]] — Eric Ma (@ericmjl) — Senior Principal Data Scientist at Moderna Therapeutics. Marimo Pair agentic data science, PyMC core contributor, Bayesian drug discovery. Two-bucket framework: loading context vs. auto-optimize.
 - [[entities/ed-zitron]] — Ed Zitron — Tech columnist and AI industry critic. Author of Where's Your Ed At (~80K subscribers). Argues the AI economy is a circular dependency where 95%+ of compute demand flows through unprofitable OpenAI and Anthropic.
 - [[entities/eleutherai]] — Grassroots research collective that started the modern open-source AI movement. Creators of GPT-Neo, Pythia, and the LM Evaluation Harness.
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
@@ -310,6 +311,7 @@
 - [[entities/hermes-agent]] — Open-source self-hosted AI agent by Nous Research (150K GitHub stars, #1 OpenRouter global token usage). Features persistent memory, self-improving skills (Curator system auto-organizes skills unused for 90 days), and an Agentic Loop. Functions as an execution specialist in a dual-agent architecture via ACP integration with OpenClaw's orchestrator. Shann (@shannhk)'s 4-level fleet operation model, 21-step SEO pipeline.→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/hermes-4]] — Hermes 4 — Open-weight hybrid reasoning model family by Nous Research (Aug 2025). 14B/70B/405B sizes, 5M-sample dataset via DataForge + Atropos. Neutrally-aligned (lowest refusal rates). 405B: AIME'24 81.9, Arena-Hard 93.7. Trained on 192 B200 GPUs.
 - [[entities/hidream-o1-image]] — HiDream-O1-Image — Open-source 8B image generation model (MIT license). #8 on AA Text to Image Arena. Pixel-level Unified Transformer (UiT), 2048×2048. Surpasses FLUX.2 and GPT Image 2 on GenEval/DPG-Bench.
+- [[entities/hilary-mason]] — Hilary Mason (@hmason) — Co-Founder & CEO of Hidden Door (narrative AI gaming). Former Chief Scientist at bitly, founder of Fast Forward Labs (acq. Cloudera), Data Scientist in Residence at Accel. Agentic loops for creative work, three-variations pattern, Hermes harness and Gremlins.
 - [[entities/howdymary]] — mary (@howdymary) — Data scientist at marketmotionxyz. Creator of hermes-agent-metaharness, the first practical Meta-Harness implementation for Hermes Agent. OS/Brain agent architecture framing.
 - [[entities/hoeem]] — X/Twitter creator (@hooeem, 169K+ followers). His X Article covering all 5 domains of the Claude Certified Architect exam earned 60K bookmarks. Publishes practical educational content on Claude Code, Agent SDK, and MCP.
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
@@ -560,6 +562,7 @@
 - [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
 - [[entities/tim-sherratt]] — **Blog** | timsherratt.au | Historian, GLAM hacker, creator of GLAM Workbench |
 - [[entities/tom-aarsen]] — **X** | @tomaarsen |
+- [[entities/tomasz-tunguz]] — Tomasz Tunguz (@ttunguz) — General Partner at Theory Ventures. Local-first agent philosophy (Qwen 35B/Ollama), HTML renaissance for agent output, supply chain paranoia (14-day npm rule), Pi's four-tool philosophy, BYOD agents.
 - [[entities/tom-renner]] — **Blog** | tomrenner.com |
 - [[entities/troy-hunt]] — **URL:** https://www.troyhunt.com
 - [[entities/trycua-cua]] — TryCua (Cua)

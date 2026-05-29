@@ -1,6 +1,15 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] Show Us Your (Agent) Skills Episode 2 — Entity pages created and enriched (Hilary Mason, Eric Ma, Tomasz Tunguz, Bryan Bischof)
+
+- **Created entity page**: [[entities/hilary-mason]] — Co-Founder & CEO of Hidden Door, former Chief Scientist at bitly, founder of Fast Forward Labs (acq. Cloudera). Agentic loops for creative work, three-variations pattern, Hermes harness, Gremlins cron agents. Sources: Episode 2 transcript + web research.
+- **Created entity page**: [[entities/eric-ma]] — Senior Principal Data Scientist at Moderna Therapeutics. Marimo Pair agentic data science, PyMC core contributor, Bayesian drug discovery. Two-bucket framework, voice-first agents, anywidget 3D protein viewer. Sources: Episode 2 transcript + web research.
+- **Created entity page**: [[entities/tomasz-tunguz]] — General Partner at Theory Ventures. Local-first agent philosophy (Qwen 35B/Ollama), HTML renaissance for agent output, supply chain paranoia (14-day npm rule), Pi's four-tool philosophy, BYOD agents. Sources: Episode 2 transcript + web research.
+- **Enriched entity page**: [[entities/bryan-bischof]] — Added "Show Us Your (Agent) Skills Episode 2 (2026-05-15)" section covering BBplot manifesto, BBplot Eval eval-driven development, scene graph, package context with content, self-updating skills, live demo. Updated frontmatter (tags, sources, date).
+- **Raw source**: `raw/articles/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md`
+- **Updated index.md**: Added entries for eric-ma, hilary-mason, tomasz-tunguz. Updated bryan-bischof description.
+
 ## [2026-05-29] X bookmarks ingest | 3 articles processed: iii workers harness, Hermes guide, Claude mid-conversation system messages
 
 - **Created entity page**: [[entities/mike-piccolo]] — Founder & CEO of iii, "Harness Is the Backend" thesis, workers harness architecture. Sources: iii.dev, LinkedIn, GitHub, Motia blog.

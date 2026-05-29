@@ -4,7 +4,7 @@ type: concept
 aliases:
   - coding-agents
 created: 2026-04-25
-updated: 2026-05-27
+updated: 2026-05-29
 tags:
   - concept
   - coding-agents
@@ -45,6 +45,27 @@ SpaceX acquired the right to **acquire Cursor for $60 billion** in late 2026, or
 ### OpenAI Workspace Agents (2026-04)
 
 Shared agents powered by Codex. For Business/Enterprise plans. Integrates with Slack, Salesforce, Notion, Google Drive. Includes persistent memory and role-based governance.
+
+### "Coding Agents Are Dead" — The Cloud-Background Shift (2026-05)
+
+[[entities/nico-gerold]] at AMP declared the interactive coding agent model obsolete at Show Us Your (Agent) Skills Ep. 3. The thesis:
+
+- **Interactive coding agents are dead** — the IDE-integrated, pair-programming model is a transitional phase
+- **Agents move to cloud and background** — they run on remote infrastructure, with humans reviewing outputs asynchronously
+- **Skills become capabilities** — not slash commands, but domain-specific tools (gcloud, tmux, postmortem) that the agent wields autonomously
+- **Review triage** — not all agent-generated code deserves human review; heuristics determine which parts of the codebase to inspect
+
+This shift parallels [[entities/hamel-husain]]'s move from Claude Code to Codex Desktop: the vendor harness that runs in its own environment wins over the hackable, local-first alternative. As Hamel put it: "I gave up on OpenClaw and trusted the vendor harness. It just works."
+
+The counter-argument from [[entities/eleanor-berger]]: her Hermes agent Fnord runs on a home Mac Mini, not the cloud. But she concedes that GPT-5.5 was the unlock — prior models weren't reliable enough for autonomous operation. The model capability threshold determines which execution model is viable.
+
+## Paradigm Shift: Interactive → Background
+
+| Era | Model | Human Role | Example |
+|-----|-------|------------|---------|
+| 2024-2025 | Interactive pair-programming | Real-time collaborator | Claude Code, Cursor |
+| Early 2026 | Background async execution | Reviewer of agent output | AMP, Codex Desktop |
+| Emerging | Autonomous cloud agents | Architect/verifier | Fnord, speculative |
 
 ## Related Pages
 - [[concepts/harness-engineering]] — Design philosophy for agent-driven development environments

@@ -6,7 +6,7 @@ tags:
   - fine-tuning
   - interpretability
 created: 2026-04-19
-updated: 2026-05-19
+updated: 2026-05-29
 type: concept
 ---
 
@@ -177,7 +177,34 @@ Jack Clark (Import AI 457, May 2026) frames this as analogous to the **Sophon fr
 
 Source: [fast16 | Sentinel LABS](https://sentinelone.com/fast16)
 
-## Sources
+## Agent Skills Supply Chain Security (2026-05)
+
+A newly recognized attack surface in AI safety: the **agent skills supply chain**. As agents increasingly load third-party skill files, the `.md` format becomes a vector for instruction injection.
+
+### The Hidden HTML Attack
+
+[[entities/matthew-honnibal]] (spaCy, Explosion) and [[entities/hamel-husain]] (Parlance Labs) independently identified the same vulnerability at Show Us Your (Agent) Skills:
+
+- **`.md` files can contain hidden HTML comments** that are invisible to human readers but parsed by agents
+- Attackers can smuggle instructions (e.g., "ignore all previous safety rules") inside HTML comment blocks in skill files
+- Honnibal's countermeasure: **ship skills as raw `.md.txt` files** — the `.txt` extension prevents browser/HTML rendering
+
+### Supply Chain Paranoia
+
+[[entities/tomasz-tunguz]] (Theory Ventures) applies supply chain paranoia to agent infrastructure:
+
+- **Never install npm packages under 14 days old** — the agent tool ecosystem is unexamined for supply chain attacks
+- **Local models as security boundary** — running agents on local models (Ollama) prevents data exfiltration via API calls to cloud providers
+
+### The Lethal Trifecta
+
+[[entities/eleanor-berger]] cut her agent's internet access after identifying three compounding risks:
+
+1. **Hallucinated URLs** — agents invent domains and attempt to fetch them
+2. **Scraping attacks** — agents follow links into sensitive internal systems
+3. **Unintentional data exfiltration** — agents send code/context to external services
+
+Her solution: **one intelligent LLM step inside otherwise deterministic scripts** — the agent's LLM call is firewalled from the internet; the deterministic script controls all external access.
 
 - "Concrete Problems in AI Safety" (2016) — Amodei, Olah, Christiano, Schulman, Mané
 - "Scaling Laws for Reward Model Overoptimization" (2022) — Gao, Schulman, Hilton
