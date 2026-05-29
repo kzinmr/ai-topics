@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2264 | Indexed entries: 1500 | Not in index: 746
+> Last updated: 2026-05-29 | Total pages: 2265 | Indexed entries: 1501 | Not in index: 746
 
 ## Entities (716 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -736,7 +736,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (720 pages)
+## Concepts (721 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1081,7 +1081,7 @@
 - [[concepts/moe-training-noumena-methodology]] — Noumena Network's 12-post MoE training research program. Speedrun loop, eval-gated autoresearch, routing collapse ≠ quality collapse, per-expert LR tuning, RDEP.
 - [[concepts/moloch-multipolar-trap]] — Scott Alexander's concept: competitive dynamics that force all agents to sacrifice shared values, resulting in outcomes everyone hates but no one can escape. 14 real-world examples (prisoner's dilemma, capitalism, arms races, cancer). Central to AI existential risk discourse — technology erodes the four restraining factors (excess resources, physical limits, utility maximization, coordination), making superintelligence the ultimate multipolar trap.
 - [[concepts/prime-rl-post-training]] — Prime-RL Post-Training for Subagents: Ramp Labs Fast Ask case study — RL post-training (GRPO) for specialized retrieval subagents using Qwen3.5 + Prime Intellect. Beats Opus 4.6 at Haiku latency.
-- [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
+- [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling (PTC) — LLMs write Python code to orchestrate multiple tool calls in sandboxes instead of sequential per-tool round-trips. 87-92% token reduction, 3 AWS implementations (ECS+Docker, AgentCore, Anthropic proxy).
 - [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.
 - [[concepts/prompt-engineering-evaluation]] — The need for quantitative evaluation of prompt engineering. Sean Goedecke's o3 GeoGuessr experiment: benchmark proof that famous "magic prompts" underperform simple default prompts.
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt — Prompts decay silently with model upgrades, making them a worse form of technical debt than code. Minimal prompting philosophy vs. harness engineering debate. Sean Goedecke (May 2026).

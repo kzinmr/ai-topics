@@ -5,8 +5,8 @@ updated: 2026-05-29
 type: concept
 tags: [aws, ai-infrastructure, agent-infrastructure, hermes-agent, cloud, serverless, sandbox, isolation, architecture, security, agent-security, comparison]
 aliases: [hermes-agent-aws-deployment, agent-hosting-architecture]
-related: [concepts/agent-sandboxing, entities/hermes-agent]
-sources: [raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md]
+related: [concepts/agent-sandboxing, concepts/programmatic-tool-calling, entities/hermes-agent]
+sources: [raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md, raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md]
 ---
 
 # Agent Hosting on AWS
@@ -179,3 +179,17 @@ NAT Gateway is a surprising cost driver in private-subnet architectures. AgentCo
 - **Quick start / evaluation**: Tier 2 ECS Fargate + Bedrock — closest paradigm match to Matt's approach, existing CloudFormation templates available
 - **Production / long-term**: Tier 3 Bedrock AgentCore — purpose-built for this use case, zero server management, Firecracker isolation, cost-optimized billing
 - **Avoid Tier 1 EC2** unless you have specific compliance requirements for self-managed infrastructure — it reintroduces the security surface area Matt deliberately avoided
+
+## Programmatic Tool Calling (PTC) Integration
+
+AWS published [[concepts/programmatic-tool-calling|Programmatic Tool Calling]] (May 2026) as the recommended approach for agent tool execution on Bedrock. PTC replaces sequential tool calling with code-orchestrated execution in sandboxes — directly relevant to the sandboxing layer in this architecture:
+
+- **87-92% token reduction** vs traditional tool calling (across 8 Bedrock models)
+- **3 implementation paths** map to our tiers:
+  - Self-hosted ECS + Docker sandbox → Tier 2
+  - AgentCore Code Interpreter (managed) → Tier 3
+  - Anthropic SDK compatible proxy → Tier 2/3 hybrid
+- **All 8 models produced correct results** in PTC mode; only Claude models were accurate in sequential mode
+- **~90% monthly cost savings** ($15,600 → $1,560 at 1,000 executions/day)
+
+See [[concepts/programmatic-tool-calling]] for the full paradigm, benchmarks, and implementation details.

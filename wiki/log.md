@@ -4724,4 +4724,9 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **New raw article**: `raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md` — Matt Palmer's 67-min walkthrough of deploying Hermes Agent with Fly.io (gateway + Open WebUI), Modal sandboxes, Cloudflare Access (GitHub OAuth). YouTube talk.
 - **New concept page**: [[concepts/agent-hosting-aws]] — AWS equivalent architecture mapping: 3 tiers (EC2 → ECS Fargate → Bedrock AgentCore/Firecracker). Sandbox execution comparison (Lambda, ECS Ephemeral, AgentCore Firecracker, Nitro Enclaves). Cost comparison. Auth layer mapping.
 - **New entity page**: [[entities/matt-palmer]] — Engineer at Conductor, creator of hermes-agent-template. Content creator focused on secure AI agent infrastructure and managed-stack architectures.
+
+### [2026-05-29] Ingest | AWS PTC on Bedrock blog + concept page
+- **New raw article**: `raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md` — AWS ML Blog: Programmatic Tool Calling on Amazon Bedrock. 3 implementations: self-hosted ECS+Docker, AgentCore Code Interpreter, Anthropic SDK proxy. Experimental results: 87-92% token reduction across 8 models. Authors: Shreyas Subramanian, Pratik Raichura, River Xie.
+- **New concept page**: [[concepts/programmatic-tool-calling]] — PTC paradigm: LLMs write Python code to orchestrate tool calls in sandboxes vs sequential tool calling. Benchmarks, cost analysis, 3 implementation approaches.
+- **Enriched concept page**: [[concepts/agent-hosting-aws]] — Added PTC Integration section cross-referencing the new concept, updated sources/frontmatter.
 - Updated `wiki/index.md` (+1 concept, +2 entities, +3 indexed entries).
