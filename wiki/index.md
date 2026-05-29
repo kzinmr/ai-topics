@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2253 | Indexed entries: 1489 | Not in index: 746
+> Last updated: 2026-05-29 | Total pages: 2258 | Indexed entries: 1494 | Not in index: 746
 
-## Entities (711 pages)
+## Entities (712 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -80,6 +80,7 @@
 - [[entities/parchi]] — Parchi — AI-powered browser copilot (open-source Chrome/Firefox extension). Chat-driven browser automation: navigate, read, click, fill forms. BYOK or credits. MIT license.
 - [[entities/pi-coding-agent]] → [[entities/pi]] — Pi minimal terminal coding harness. Created by Mario Zechner, acquired by Earendil (Apr 2026). ~54K stars, MIT core + Fair Source + Proprietary licensing.
 - [[entities/piero-kauffmann]] — Piero Kauffmann — RL infrastructure researcher at Microsoft Research AI Frontiers. Built RL infra for [[echo-rl|ECHO]] experiments.
+- [[entities/pointer]] — Pointer — Open-source computer use agent system achieving OSWorld SOTA (83.6% with Claude Opus 4.7, beating human baseline of 72.4%). Modular architecture with Feasibility Gate, Planner, Executor. May 2026.
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
 - [[entities/prime-intellect]] — Prime Intellect — "The Open Stack for Self-Improving Agents": decentralized AI platform, RL post-training (Lab), open-source renderers/verifiers/prime-rl. $20.5M funding. INTELLECT model series.
 - [[entities/ramp]] — Ramp
@@ -727,7 +728,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (715 pages)
+## Concepts (719 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -916,6 +917,7 @@
 - [[concepts/glut-of-circuits]] — niplav's (2026) GLUT-of-Circuits model: LLMs are giant lookup-table-like collections of depth-limited, composable error-correcting circuits computed in superposition. Implications for the Agent structure problem, AI alignment, token bottlenecks, and CoT.
 - [[concepts/gpt-models]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
 - [[concepts/gpt-realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
+- [[concepts/gram-recursive-reasoning]] — GRAM (Generative Recursive Reasoning) — Probabilistic multi-trajectory recursive reasoning framework. Stochastic latent transitions enable multiple hypotheses. 10M params beats 27M deterministic baselines on Sudoku-Extreme, ARC-AGI. KAIST/Mila/NYU, May 2026.
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
@@ -956,6 +958,7 @@
 - [[concepts/macro-evals-for-agentic-systems]] — Macro Evals for Agentic Systems — Methodology for discovering collective-level behavioral patterns in multi-agent systems. Lower-level evals → BERTopic clustering → AgentTrace diagnostics. OpenAI × Slalom (May 2026).
 - [[concepts/mandate-equinox]] — Mandate Equinox — The concept of a competitive cycle in the coding agent market where OpenAI and Anthropic trade dominance roughly every 6 months. Proposed by DanB (@irl_danB).
 - [[concepts/memory-architecture]] — Memory Architecture (Three-Layer Model)
+- [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA) — Sub-quadratic attention for MiniMax M3 model. Block-level selection on real KVs, 9.7× faster prefilling, 15.6× faster decoding at 1M tokens vs full attention. May 2026.
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source — Critical analysis of how "open source" is defined and measured in AI/ML.
 - [[concepts/mistral-workflows]] — Mistral Workflows: enterprise AI orchestration layer. Temporal-based durable execution, human-in-the-loop (wait_for_input), multi-surface triggers (API/Studio/Le Chat). Public preview April 2026.
@@ -986,6 +989,7 @@
 - [[concepts/orchestration-tax]] — Orchestration Tax: The structural cost of coordinating multiple AI agents through a single human bottleneck. Coined by Richard Seroter at Google I/O 2026, expanded by Addy Osmani. Human as GIL of AI agents, Amdahl's Law applied to agent development, busy ≠ productive. Five strategies: backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time.
 - [[concepts/orthrus-parallel-generation]] — Orthrus — Dual-architecture Transformer: frozen AR backbone + trainable diffusion head over shared KV cache. Up to 7.8× speedup, O(1) KV-cache overhead, 16% trainable params, lossless output guarantee.
 - [[concepts/outcome-based-pricing]] — Outcome-based pricing models for AI Agents. Transition from seat-based to outcome-based billing (resolutions, completed workflows, time saved). Zendesk Outcome-Based Pricing and Salesforce Agentforce Flex Credits are pioneering examples.
+- [[concepts/project-lightwell]] — Project Lightwell — IBM and Red Hat $5B open-source security initiative with 20,000+ AI-augmented engineers. Trusted Enterprise Clearinghouse model. Early adopters: 11 major banks. May 2026.
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information: A variational extension of Shannon information theory that accounts for the observer's computational constraints. DPI violations, PAC estimation guarantees in high dimensions, applications to structure learning and fair representation learning (Xu et al., ICLR 2020).
 - [[concepts/probabilistic-engineering]] — Probabilistic Engineering: Proposed by Tim Davis (Modular). A paradigm shift where codebase correctness moves from "known" to "believed" as AI agent-generated code becomes dominant. Generation is cheap but verification is expensive. Includes 24-7 employees, role fission, Jevons paradox applied to code.
@@ -1426,6 +1430,7 @@
 - [[concepts/cursor-ide]] — Cursor IDE — AI-native code editor built on VS Code with LLM-powered agent features
 - [[concepts/cybersecurity-proof-of-work]] — Cybersecurity Proof of Work — Proactive security measures as proof of defensive effort
 - [[concepts/datasette-agent]] — datasette-agent — AI agent interface for Datasette, enabling LLM-powered database exploration
+- [[concepts/dns-aid]] — DNS-AID — Linux Foundation open-source protocol for decentralized AI agent discovery via DNS infrastructure. Python SDK, CLI, MCP server. Initial supporters: Cloudflare, GoDaddy, Equinix, Infoblox. May 2026.
 - [[concepts/ds4-deepseek-flash-metal]] — ds4.c — DeepSeek V4 Flash Metal — antirez's Metal inference engine for DeepSeek V4 Flash
 - [[concepts/dspy-architecture]] — DSPy Architecture — Three Abstractions: Signatures, Modules, and Optimizers in the DSPy framework
 - [[concepts/dspy-modules]] — DSPy Modules Reference — ChainOfThought, ReAct, MultiChainComparison and other DSPy module patterns

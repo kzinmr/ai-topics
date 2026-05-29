@@ -1,0 +1,68 @@
+---
+title: Project Lightwell
+created: 2026-05-29
+updated: 2026-05-29
+type: concept
+tags: [concept, security, open-source, infrastructure, company, governance, supply-chain, ibm, ai-safety]
+sources: [raw/articles/2026-05-28_ibm-redhat-project-lightwell.md]
+---
+
+# Project Lightwell
+
+Project Lightwell is a **$5 billion initiative** by [[entities/ibm|IBM]] and Red Hat to secure enterprise open source software (OSS) using frontier AI capabilities and a global force of 20,000+ engineers. Announced on May 28, 2026, it represents the largest coordinated open-source security effort to date.
+
+## Core Model
+
+### Trusted Enterprise Clearinghouse
+
+A security coordination layer that:
+- Uses advanced AI to validate and test vulnerability fixes at scale
+- Provides enterprise-grade validation and lifecycle management
+- Enables responsible upstream disclosure of discovered vulnerabilities
+- Offered via commercial subscriptions
+
+### AI-Augmented Engineering Force
+
+Unlike companies using AI to reduce technical headcount, IBM and Red Hat position **engineering capacity as a premium strategic asset**:
+- 20,000+ engineers augmented by AI
+- Focus on upstream maintenance, vulnerability review, triage, patch development
+- IBM already uses 62,000+ open source packages with expertise in 10,000+ technologies
+
+## Key Numbers
+
+- **Investment**: $5 billion
+- **Engineers**: 20,000+
+- **OSS footprint**: 62,000+ packages at IBM alone
+- **Recent discovery**: [[entities/anthropic|Anthropic]]'s Mythos Preview model found ~3,900 high/critical-severity OSS vulnerabilities
+- **Enterprise adoption**: 90%+ of Fortune 500 companies rely on open source
+
+## Early Adopters
+
+Major financial institutions serving as initial deployment partners: Bank of America, BNY, Citi, Goldman Sachs, JPMorganChase, Mastercard, Morgan Stanley, Royal Bank of Canada, State Street, Visa, Wells Fargo.
+
+## Strategic Context
+
+Project Lightwell builds on:
+- IBM and Red Hat's decades of enterprise open source leadership
+- Learnings from Anthropic's **Project Glasswing** and [[entities/openai|OpenAI]]'s **Trust Access for Cyber**
+- New IBM **agentic security methods** for protecting foundational OSS layers
+- Extends beyond Red Hat's traditional product footprint to independent libraries, language toolchains, AI frameworks
+
+## Significance
+
+Project Lightwell represents a structural shift in open source security — moving from community-driven vulnerability management to an **enterprise-grade, AI-powered clearinghouse model**. At a time when AI is both creating new security challenges ([[concepts/ai-agent-security|AI agent security]]) and offering new defensive capabilities, Lightwell positions open source security as a premium service rather than a commons problem.
+
+The timing aligns with government priorities to secure digital infrastructure and growing concerns about [[concepts/supply-chain|software supply chain]] vulnerabilities in the AI era.
+
+## Quotes
+
+> "Open source is the backbone of today's digital economy and the foundation of modern AI, and we are at an inflection point in how it is built, secured, and scaled." — **Arvind Krishna**, Chairman and CEO, IBM
+
+## Related Pages
+
+- [[entities/ibm]] — IBM company overview
+- [[entities/anthropic]] — Anthropic (Project Glasswing)
+- [[entities/openai]] — OpenAI (Trust Access for Cyber)
+- [[concepts/ai-agent-security]] — AI agent security
+- [[concepts/supply-chain]] — Software supply chain security
+- [[concepts/open-source]] — Open source AI ecosystem

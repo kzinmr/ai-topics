@@ -1,6 +1,25 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] active-crawl | 5 trending topics: Pointer OSWorld SOTA, DNS-AID, MiniMax MSA, GRAM, Project Lightwell
+
+### Pages Created
+- [[entities/pointer]] — Open-source computer use agent achieving OSWorld SOTA (83.6% with Claude Opus 4.7, beating human baseline 72.4%)
+- [[concepts/dns-aid]] — Linux Foundation decentralized AI agent discovery via DNS
+- [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention for M3: 15.6× decoding speedup at 1M tokens
+- [[concepts/gram-recursive-reasoning]] — Generative Recursive Reasoning: probabilistic multi-trajectory recursion
+- [[concepts/project-lightwell]] — IBM/Red Hat $5B open-source security clearinghouse
+
+### Sources
+- raw/articles/2026-05-26_pointer-osworld-sota.md (pointer.ai)
+- raw/articles/2026-05-27_linux-foundation-dns-aid.md (linuxfoundation.org)
+- raw/articles/2026-05-27_minimax-m3-sparse-attention.md (venturebeat.com)
+- raw/articles/2026-05-19_gram-recursive-reasoning.md (arXiv:2605.19376)
+- raw/articles/2026-05-28_ibm-redhat-project-lightwell.md (redhat.com)
+
+
+---
+
 ## [2026-05-29] raw-backlog-ingest | 5件バックログ処理 — 全てskip (0 takes)
 - paulgraham.com "How to Start a Startup" (2005) → skip: 一般スタートアップ論、AI関連なし
 - Miguel Grinberg "SQLAlchemy 2 In Practice" → skip: データベースチュートリアル、AI関連なし
