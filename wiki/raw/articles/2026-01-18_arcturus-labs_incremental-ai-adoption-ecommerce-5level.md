@@ -3,7 +3,8 @@ title: "Incremental AI Adoption for E-commerce — John Berryman (5-Level Maturi
 created: 2026-01-18
 author: John Berryman (@JnBrymn)
 source: Arcturus Labs Blog
-url: https://arcturus-labs.com/blog/2026/01/18/incremental-ai-adoption-for-e-commerce/
+url: https://arcturus-labs.com/blog/2026/01/18/incremental-adoption-of-agentic-search/
+original_url: https://arcturus-labs.com/blog/2026/01/18/incremental-ai-adoption-for-e-commerce/
 type: blog
 tags: [agentic-search, e-commerce, maturity-model, rag, ai-agents, conversational-ai]
 ---

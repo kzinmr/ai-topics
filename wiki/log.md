@@ -1,6 +1,12 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] URL update: Berryman's agentic search maturity model article (Arcturus Labs)
+
+- **Updated raw article**: `raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level.md` — URL changed from `incremental-ai-adoption-for-e-commerce` → `incremental-adoption-of-agentic-search`. Added `original_url` field to preserve history.
+- **Updated entity page**: [[entities/john-berryman]] — Notable Articles table URL and title updated to new canonical URL.
+- **Already ingested**: The 5-level maturity model (Level 0-4) is fully documented in [[concepts/agentic-search]] § "Berryman's 5-Level Agentic Search Maturity Model."
+
 ## [2026-05-29] CodeAct concept page created — Executable Code Actions paradigm
 
 - **Created concept page**: [[concepts/codeact]] — CodeAct (Executable Code Actions) paradigm: LLM agents use Python code as unified action space. ICML 2024 paper by Wang et al. (up to 20% higher success rate over JSON/text). Plan-then-Execute pattern. Relationship to PTC (Programmatic Tool Calling) and RLM (Recursive Language Models) documented. Coverage of Microsoft Agent Framework Hyperlight CodeAct connector. Tags: code-act, plan-then-execute (new tags).
