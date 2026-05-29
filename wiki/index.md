@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2262 | Indexed entries: 1498 | Not in index: 746
+> Last updated: 2026-05-29 | Total pages: 2264 | Indexed entries: 1500 | Not in index: 746
 
-## Entities (715 pages)
+## Entities (716 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -64,6 +64,7 @@
 - [[entities/mark-mcquade]] — CEO of Arcee AI. Former HuggingFace team member. Pivoted Arcee from post-training services to pretraining from scratch with Trinity Large.
 - [[entities/mark-saroufim]] — Mark Saroufim — ML Systems researcher, co-founder of GPU MODE and Core Auto. AI-driven kernel generation, multi-agent self-play for systems code. MLSys 2026 keynote.
 - [[entities/mastra]] — Mastra — Open-source TypeScript AI agent framework (Gatsby team, 24K ⭐). ACP-compatible coding agents, workflows, voice AI providers, enterprise RBAC.
+- [[entities/matt-palmer]] — Matt Palmer — Engineer at Conductor, creator of hermes-agent-template (Fly.io + Modal + Cloudflare deployment). Content creator focused on secure AI agent infrastructure.
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler) — MCP server product. GitHub·Trello MCP for Cursor/Claude Code, centralized OAuth management, enterprise access control·audit logging.
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Andreessen Horowitz (a16z), co-author of Mosaic browser, Netscape co-founder. AI optimist, "Software Is Eating the World" author.
 - [[entities/microsoft-agent-framework]] — Microsoft Agent Framework v1.0: unified Semantic Kernel + AutoGen SDK for .NET/Python, multi-agent orchestration, MCP/A2A support
@@ -179,6 +180,7 @@
 - [[entities/chipro]] — **X** | @chipro |
 - [[entities/chris-tate]] — **X/Twitter** | @ctatedev |
 - [[entities/chris-hayduk]] — Chris Hayduk — FDE at OpenAI (Life Sciences), cross-disciplinary AI writer, agent loops and agentic AI thought leader. Author of "A Tale of Two Futures."
+- [[entities/chris-fonnesbeck]] — Chris Fonnesbeck — Bayesian statistician, PyMC core developer, Principal Quantitative Analyst at PyMC Labs. MLB analyst for Phillies/Yankees/Brewers. Adjoint Associate Professor at Vanderbilt. Pi TUI, Socratic review, Zed agent multiplexer.
 - [[entities/chris-olah]] — Chris Olah (@ch402) — Anthropic co-founder, mechanistic interpretability pioneer. DeepDream, Circuits/Transformer Circuits research, TIME100 AI 2024. Spoke at Vatican for Magnifica Humanitas encyclical (May 2026).
 - [[entities/claude-code]] — Anthropic's AI coding agent. Operates across CLI, desktop app, VS Code/JetBrains extensions, Web, iOS, and Slack as a multi-surface agent. Developed by Boris Cherny and transferred from Anthropic to OpenAI in July 2025.
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
@@ -731,7 +733,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (719 pages)
+## Concepts (720 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -757,6 +759,7 @@
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns — Design patterns for agentic software engineering: planning, execution, verification loops
 - [[concepts/agentic-manual-testing]] — Agentic Manual Testing — Using AI agents to automate exploratory and manual testing workflows
 - [[concepts/agentic-rag]] — Agentic RAG — Integrates autonomous AI agents into the RAG pipeline for dynamic retrieval and adaptive workflows.
+- [[concepts/agent-hosting-aws]] — Agent Hosting on AWS — Mapping Hermes Agent deployment architecture (Fly.io + Modal + Cloudflare) to AWS services: ECS Fargate, Bedrock AgentCore (Firecracker microVMs), Lambda/ECS sandboxing, Cognito auth.
 - [[concepts/agent-native-architecture]] — Agent-Native Architecture — Dan Shipper/Every framework: 5 principles (Parity, Granularity, Composability, Emergent Capability, Improvement Over Time) for designing software where agents are first-class citizens. Co-authored with Claude.
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud — Infrastructure paradigm designed for AI agents: version control beyond Git, observability at 1000x, orchestration beyond K8s, safe production forks, self-replicating infrastructure. Championed by Railway (Jake Cooper).
 - [[concepts/agent-ontology]] — Agent Ontology — Semantic representation of enterprise operations for AI agents. Substrate for working/episodic/semantic/procedural memory, decision lineage, logic binding, scenarios. See [[entities/palantir]].

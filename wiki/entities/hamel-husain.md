@@ -1,8 +1,16 @@
 ---
 title: "Hamel Husain"
-tags: [person]
+tags:
+  - person
+  - ai-agents
+  - agent-skills
+  - agent-security
+  - evaluation
+  - harness-engineering
+  - developer-tooling
+  - coding-agents
 created: 2026-04-24
-updated: 2026-04-13
+updated: 2026-05-29
 type: entity
 ---
 
@@ -140,6 +148,19 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   **fast.ai**: Worked closely with **Jeremy Howard** on democratizing deep learning and building developer tools.
 -   **AnswerAI**: Joined the R&D team for Howard's new venture, focusing on next-gen AI product development.
 -   **Bain Capital**: Serves as a Scout, evaluating early-stage AI companies.
+
+## Show Us Your (Agent) Skills Episode 4 (2026-05-29)
+
+Hamel appeared as a guest on the Season 1 finale of [[entities/hugo-bowne-anderson|Hugo Bowne-Anderson]] and [[entities/thomas-wiecki|Thomas Wiecki]]'s live series, alongside Chris Fonnesbeck and Doug Turnbull. Key insights from the episode:
+
+- **Codex Desktop over Claude Code**: Switched from Claude Code to Codex Desktop. The vendor harness (Codex) won over open/hackable harnesses (OpenClaw) because it "just works" and gets the integration details right.
+- **Skills are decompressed prompts**: "Always read the prompt" — skills don't add magic, they're structured context. The skill file is a compressed representation that the agent decompresses at runtime.
+- **"Fuck Your Skills"**: Radical skepticism toward skills. A third of the top 300 skills on GitHub have exactly one commit — most are abandonware. Be skeptical even of Hamel's own published skills.
+- **Killed his eval skill for an MCP**: MCP (Model Context Protocol) provides a more structured, testable interface than skill files for evaluation tasks.
+- **Skills security nightmare**: Hidden HTML in `.md` skill files can inject instructions. The skill supply chain is a massive unexamined attack surface.
+- **Reverse-engineering sites without APIs**: Hamel's favorite skill. The agent inspects network traffic, reverse-engineers internal APIs, and builds clients for sites that have no public API.
+- **AI writing is slop**: Unless you're fully in the loop — reading, editing, verifying — AI-generated writing is inevitably mediocre. The human has to be an active editor, not a passive approver.
+- **Devin's UX comeback**: Devin's proof-of-work model (showing what it did, not just the result) is a UX pattern that matters for eval.
 
 ## Key Quotes
 

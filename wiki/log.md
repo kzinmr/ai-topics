@@ -9,6 +9,10 @@
 - **Raw article saved**: `raw/articles/2026-05-27_hermes-agent-complete-guide.md` — "HERMES AGENT: THE COMPLETE GUIDE" X article by @IBuzovskyi (full plain_text via bookmark). Covers installation, model selection, /goal, dashboard, self-improvement, security.
 - **Raw article saved**: `raw/articles/2026-05-28_claude-mid-conversation-system-messages.md` — Anthropic API docs on mid-conversation system messages with Opus 4.8. Preserves prompt cache while injecting per-turn system instructions.
 - **Enriched concept page**: [[concepts/prompt-caching]] — Added Opus 4.8 mid-conversation system messages as a caching-aware technique for dynamic system-level instructions without cache invalidation.
+- **Created entity page**: [[entities/chris-fonnesbeck]] — Bayesian statistician, PyMC core developer, MLB analyst (Phillies/Yankees/Brewers), Adjoint Assoc Prof at Vanderbilt. Episode 4 guest: Pi TUI, Socratic Grill-Me review, Zed agent multiplexer, half-flat distributions.
+- **Enriched entity page**: [[entities/hamel-husain]] — Added Show Us Your (Agent) Skills Episode 4 section: Codex Desktop, skills as decompressed prompts, "Fuck Your Skills" skepticism, skills security nightmare, reverse-engineering without APIs, Devin UX comeback.
+- **Enriched entity page**: [[entities/doug-turnbull]] — Added Show Us Your (Agent) Skills Episode 4 section: autoresearch BM25, MS Marco eval loop, train/validate splits, stop words/bigrams discovery, lab journals/episodic memory, LLM judge as user message.
+- **Updated index.md**: Added [[entities/chris-fonnesbeck]] to Entities section.
 
 ## [2026-05-29] active-crawl | 5 trending topics: Pointer OSWorld SOTA, DNS-AID, MiniMax MSA, GRAM, Project Lightwell
 
@@ -4706,4 +4710,9 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **New entity page**: [[entities/michael-lively]] — Software engineer/blogger (michaellivs.com). Reverse-engineered Claude's generative UI and sandbox architecture. Terminal-based coding agent tooling.
 - **New entity page**: [[entities/glimpse]] — Native macOS WKWebView micro-UI library (Node.js). Sub-50ms startup, bidirectional JSON. Used for generative UI in pi terminal agent.
 - **SCHEMA.md**: Added tags `terminal` (Engineering), `macos` (Infrastructure), `webview` (Infrastructure).
+
+### [2026-05-29] Ingest | Matt Palmer's Hermes Agent deployment walkthrough + AWS hosting concept page
+- **New raw article**: `raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md` — Matt Palmer's 67-min walkthrough of deploying Hermes Agent with Fly.io (gateway + Open WebUI), Modal sandboxes, Cloudflare Access (GitHub OAuth). YouTube talk.
+- **New concept page**: [[concepts/agent-hosting-aws]] — AWS equivalent architecture mapping: 3 tiers (EC2 → ECS Fargate → Bedrock AgentCore/Firecracker). Sandbox execution comparison (Lambda, ECS Ephemeral, AgentCore Firecracker, Nitro Enclaves). Cost comparison. Auth layer mapping.
+- **New entity page**: [[entities/matt-palmer]] — Engineer at Conductor, creator of hermes-agent-template. Content creator focused on secure AI agent infrastructure and managed-stack architectures.
 - Updated `wiki/index.md` (+1 concept, +2 entities, +3 indexed entries).

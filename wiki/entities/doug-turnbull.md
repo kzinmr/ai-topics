@@ -2,14 +2,20 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-05-27
+updated: 2026-05-29
 tags:
   - person
   - developer-tooling
-  - model
   - search
   - open-source
-sources: []
+  - ai-agents
+  - agent-skills
+  - information-retrieval
+  - bm25
+  - autoresearch
+  - evaluation
+sources:
+  - raw/articles/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
 ---
 
 # Doug Turnbull
@@ -65,6 +71,19 @@ See [[doug-turnbull-speaking]] for conference appearances, community contributio
 > "Agents put the Resilient in RAG."
 > "Grug-brained evals: Big brain spend months building perfect quality metrics. Grug brain just want dumb labels from coworkers 👍/👎."
 > "The tests are the code now."
+
+## Show Us Your (Agent) Skills Episode 4 (2026-05-29)
+
+Doug appeared as a guest on the Season 1 finale of [[entities/hugo-bowne-anderson|Hugo Bowne-Anderson]] and [[entities/thomas-wiecki|Thomas Wiecki]]'s live series, alongside Hamel Husain and Chris Fonnesbeck. Key insights from the episode:
+
+- **Auto-research: Can an agent find a better BM25?**: Tasked an agent with discovering ranking improvements — not just implementing known techniques, but actually researching and testing novel approaches against MS Marco.
+- **BM25 as the hundred-dollar bill on the floor**: BM25 is so effective that it's the baseline no one can beat. The agent's job is to find improvements on top of it, not replace it.
+- **MS Marco eval loop**: The agent patches ranking code, evaluates against MS Marco, and iterates. The agent independently rediscovered classical IR techniques — stop words and bigrams — as optimizations.
+- **Train/validate splits for ranking**: Prevents the agent from overfitting the ranker to the eval set. A critical guardrail: if a second set of validation queries does not improve, the change is rejected.
+- **Lab journals and episodic memory**: The missing piece in agent workflows. Grep isn't enough — agents need structured, queryable memory of what they tried, what worked, and why. Like a scientist's lab notebook.
+- **LLM judge as user message**: Framing the LLM judge's evaluation as a "user message" (rather than asking the agent to reason about its own output) produces better, less biased self-assessment.
+
+> See also: [Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25.html) — Turnbull's companion blog post with full experimental details.
 
 ## Cheat at Search Series (2026)
 
