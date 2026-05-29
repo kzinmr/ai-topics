@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-05-23
+updated: 2026-05-29
 tags:
   - lab
   - benchmark
@@ -19,6 +19,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-the-ai-trial-of-the-century-ends--dfc0b54e.md
   - raw/articles/garymarcus.substack.com--p-could-generative-ai-could-turn-out--0880f6f7.md
   - raw/articles/garymarcus.substack.com--p-this-one-weird-trick-might-cost-your--a9a098c7.md
+  - raw/articles/garymarcus.substack.com--p-breaking-bad-news-for-three-of-the--1abe3375.md
 ---
 
 # Gary Marcus
@@ -103,6 +104,24 @@ On May 22, 2026, Marcus argued that proposed S&P 500 rule changes — waiving th
 Marcus characterized the proposed changes as **"egregious"**, noting that retail investors would have no choice but to hold these unproven AI companies through their index funds. The consultation period was scheduled to end May 28, 2026.
 
 This argument extends Marcus's broader critique of AI hype: that financial markets are pricing AI companies based on speculative narratives rather than demonstrated reliability or profitability.
+
+
+
+### Enterprise Tokenmaxxing Backlash (May 2026)
+
+On May 28, 2026, Marcus argued that the **enterprise tokenmaxxing boom may already be curdling**, citing multiple converging signals:
+
+- **Axios IPO concern reporting**: Madison Mills at Axios reported growing doubts about CoreWeave, OpenAI, and Anthropic IPOs, reinforcing Marcus's earlier warnings about unsustainable AI company valuations. Ali Ansari (Micro1 CEO) described a "healthy swing" away from AI overuse in enterprise.
+
+- **Uber COO AI cost doubts**: Uber's COO publicly stated it's getting "harder to justify" AI costs because there is no way to show a link between AI spend and any meaningful increase in useful features. Marcus called this the first time a major company has said this directly.
+
+- **FT ROI projections**: Financial Times data showed negative AI ROI projections even under "best case" assumptions: Microsoft -9%, Google -15%, Meta -28%, Oracle -35%, with only Amazon barely positive. Marcus cited this as evidence that AI hype parallels the dot-com era.
+
+- **Tokenmaxxing as a passing fad**: Marcus argued that tokenmaxxing — the enterprise practice of encouraging maximal AI token consumption — "may have jacked up Anthropic's second quarter, but it looks like it won't last." He warned that budgets will tighten as enterprises realize agents "burn orders of magnitude more tokens."
+
+- **Echo chamber validation**: Karthik Hariharan's widely-circulated observation that "tokens got burned for millions of dollars without any real significant ROI" reinforced Marcus's position that the enterprise AI adoption narrative is unsustainable.
+
+This analysis extends Marcus's broader critique of AI hype into concrete financial and operational territory, moving from philosophical arguments about reliability to specific market indicators of overinvestment.
 
 
 ### Key Works

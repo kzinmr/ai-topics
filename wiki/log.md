@@ -1,6 +1,18 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] enrich | Blog ingest: Gary Marcus tokenmaxxing backlash — 2 entities/concepts enriched
+
+### Pages Enriched
+- [[entities/gary-marcus.md]] — Added "Enterprise Tokenmaxxing Backlash" section (Axios IPO concerns, Uber COO AI cost doubts, FT ROI projections, tokenmaxxing as passing fad). Bumped updated→2026-05-29, added raw article source.
+- [[concepts/tokenmaxxing.md]] — Added "Enterprise Pushback: The Anti-Tokenmaxxing Backlash" section (enterprise ROI concerns, Uber COO, FT data, implications for spectrum). Bumped updated→2026-05-29, added raw article source.
+
+### Source Article
+- raw/articles/garymarcus.substack.com--p-breaking-bad-news-for-three-of-the--1abe3375.md
+
+
+---
+
 ## [2026-05-29] enrich | Newsletter triage wiki-ingest — 9 takes processed
 
 ### Pages Enriched
