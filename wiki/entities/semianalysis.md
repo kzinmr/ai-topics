@@ -2,15 +2,17 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-05-28
-tags: [ai-research, gpu]
+updated: 2026-05-29
+tags: [ai-research, gpu, economics, reliability, ai-infrastructure]
 aliases: [semianalysis-research]
 related:
   - [[entities/dylan-patel]]
   - [[concepts/gpu-cloud-rankings]]
   - [[concepts/compute-scaling-bottlenecks]]
+  - [[concepts/gpu-cluster-tco-goodput]]
 sources:
   - raw/articles/2026-05-20_semianalysis_clustermax-2-gpu-cloud-ratings.md
+  - raw/articles/substack.com--app-link-post--1509e963.md
   - https://semianalysis.com/
 ---
 
@@ -93,6 +95,11 @@ The core driver is **TaaS (Token-as-a-Service)** economics — TaaS revenue gene
 
 This analysis includes the first detailed tokenomics model for AWS's AI business, showing how Anthropic's growth through Bedrock reshapes CSP economics.
 
+### GPU Cluster TCO & Goodput Framework (April 2026)
+
+SemiAnalysis released a comprehensive framework for evaluating GPU cluster costs beyond headline $/GPU-hr pricing. The framework decomposes TCO into **8 line items** (GPUs, Storage, Networking, Control Plane, Support, Goodput Expense, Setup Expense, Debugging Expense) and provides scenario analysis across 3 workload types (Large LLM Pretrain, Multimodal RL Research, Inference Endpoints) and 3 provider tiers (Gold/Hyperscaler/Silver).
+
+**Key contribution**: SemiAnalysis developed the **Goodput Expense** formulae quantifying the hidden cost of GPU failures across three fault-tolerance approaches (TorchFT, AWS Checkpointless, TorchPass). They demonstrated that for large training jobs, Gold-tier TCO can be 10-15% lower than Silver-tier despite identical GPU pricing, and that inference workloads are effectively indifferent to provider reliability. The framework is supported by free [TCO Calculator](https://www.clustermax.ai/) and [Goodput Calculator](https://www.clustermax.ai/) tools on ClusterMAX.
 
 ## Contact
 - clustermax@semianalysis.com

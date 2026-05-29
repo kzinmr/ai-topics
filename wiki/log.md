@@ -1,6 +1,14 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] take | Raw Backlog Ingest: GPU Cluster TCO & Goodput Framework
+- [[concepts/gpu-cluster-tco-goodput]] — 新規概念ページ作成: SemiAnalysisのGPUクラスタTCOフレームワーク。8つのコスト要素(GPU/Storage/Network/Control Plane/Support/Goodput/Setup/Debugging)、3つの耐障害性トレーニング方式の比較(TorchFT vs AWS Checkpointless vs TorchPass)、3つのワークロードシナリオ分析(LLM Pretrain/RL Research/Inference)。Goodput Expense数式とプロバイダーティア別TCO比較。
+  - [[entities/semianalysis]] — GPU Cluster TCO & Goodput Frameworkセクション追加、関連/ソース更新
+  - [[concepts/gpu-cloud-rankings]] — 関連/ソース更新
+  - 3件skip: Paul Graham(startup advice), Miguel Grinberg(SQLAlchemy tutorial), Dan Luu(writing philosophy) — AIスコープ外
+  - 1件dedup: SemiAnalysis重複ファイル(different substack app-link, same post)
+  - Pages Updated: 3 (1 new concept, 2 existing enriched)
+
 ## [2026-05-28] fix | Wiki health: auto-fix issues
 
 ### Actions

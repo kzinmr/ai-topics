@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2239 | Indexed entries: 1476 | Not in index: 744
+> Last updated: 2026-05-29 | Total pages: 2240 | Indexed entries: 1477 | Not in index: 744
 
 ## Entities (709 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -903,6 +903,7 @@
 - [[concepts/gpt-5.5-instant]] — GPT-5.5 Instant
 - [[concepts/gpt-5.5]] — GPT-5.5
 - [[concepts/gpu-cloud-rankings]] — GPU Cloud Infrastructure Rankings (ClusterMAX). SemiAnalysis rating system for 209 Neoclouds across 10 criteria. CoreWeave Platinum, Nebius/Oracle/Azure/Fluidstack/Crusoe Gold. Slurm-on-K8s, GB200 NVL72 reliability, container security.
+- [[concepts/gpu-cluster-tco-goodput]] — GPU Cluster TCO & Goodput Framework. SemiAnalysis methodology decomposing TCO into 8 line items (GPUs, Storage, Networking, Control Plane, Support, Goodput Expense, Setup, Debugging). TorchFT vs AWS Checkpointless vs TorchPass fault-tolerance comparison.
 - [[concepts/gnu-ai-reimplementations]] — GNU AI Reimplementations — Free software community reimplementations of proprietary AI models and tools.
 - [[concepts/glut-of-circuits]] — niplav's (2026) GLUT-of-Circuits model: LLMs are giant lookup-table-like collections of depth-limited, composable error-correcting circuits computed in superposition. Implications for the Agent structure problem, AI alignment, token bottlenecks, and CoT.
 - [[concepts/gpt-models]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
