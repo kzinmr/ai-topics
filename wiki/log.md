@@ -1,6 +1,15 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] raw-backlog-ingest | 5件バックログ処理 — 0 take, 2 reference, 3 skip
+
+- **AINews Kimi K2.5ダイジェスト** → `reference` — Kimi K2.5/MoonViT/Agent Swarm/Trinity Large (Arcee/Prime Intellect 400B MoE)を含むが、Kimi関連は既にentities/kimi.mdでK2.6までカバー済み
+- **SemiAnalysis GPU TCO分析** → `reference` — ClusterMAX/Goodput計算機を含むGPUクラスターTCO分析。AIインフラ関連だがニュースレターパイプラインで処理済み
+- **Ed Zitron "AI Is Too Expensive"** → `skip` — 5/28バックログで既に処理済み
+- **Dan Lark "Changing std::sort at Google's Scale"** → `skip` — C++最適化、AI無関係
+- **Ben Boyter "China Trip 3"** → `skip` — 2005年旅行記、AI無関係
+- アーカイブ: `wiki/raw/archived/triage/backlog/2026-05-29_20260529T160100Z.json`
+
 ## [2026-05-29] URL update: Berryman's agentic search maturity model article (Arcturus Labs)
 
 - **Updated raw article**: `raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level.md` — URL changed from `incremental-ai-adoption-for-e-commerce` → `incremental-adoption-of-agentic-search`. Added `original_url` field to preserve history.
