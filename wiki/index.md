@@ -2,12 +2,12 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2240 | Indexed entries: 1477 | Not in index: 744
+> Last updated: 2026-05-29 | Total pages: 2241 | Indexed entries: 1478 | Not in index: 744
 
 ## Entities (709 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
-- [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
+- [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
 - [[entities/agentmemory]] — Persistent memory for AI coding agents built on iii-engine. 12 hooks auto-capture, BM25+vector+graph retrieval (R@5: 95.2%), 4-tier memory consolidation. Works with Claude Code, Codex, Cursor, Hermes, any MCP client.
 - [[entities/agreement-bug]] — Agreement is a Bug
 - [[entities/ahmed-awadallah]] — Ahmed Awadallah — Research manager at Microsoft Research AI Frontiers, leads the team behind [[echo-rl|ECHO]] agent RL research.
@@ -722,7 +722,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (707 pages)
+## Concepts (708 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -973,6 +973,7 @@
 - [[concepts/on-policy-self-distillation]] — On-Policy Self-Distillation (OPSD) — Self-distillation where the same model serves as both student and teacher. The teacher references correct labels as privileged context and provides token-level supervision via JSD_β. Achieves equivalent or better reasoning performance at 1/64 the token cost of GRPO (Siyan Zhao, UCLA/Meta, 2026). Foundational technique for SDAR.
 - [[concepts/opus-data-selection]] — OPUS: Optimizer-induced Projected Utility Selection — Dynamic data selection framework. Scores training samples aligned with AdamW/Muon optimization geometry. 4.7% overhead via Ghost+CountSketch. 6× data efficiency improvement (Qwen3-8B continued pre-training).
 - [[concepts/organizational-moat]] — Organizational Moat: Proposed by Jaya Gupta (Foundation Capital). Argues that in the AI era, products, code, and categories are all imitable — only a company's "shape" (hiring, power distribution, status hierarchy) remains as the last durable competitive advantage. 5 structural validation tests. 3.2M views.
+- [[concepts/orchestration-tax]] — Orchestration Tax: The structural cost of coordinating multiple AI agents through a single human bottleneck. Coined by Richard Seroter at Google I/O 2026, expanded by Addy Osmani. Human as GIL of AI agents, Amdahl's Law applied to agent development, busy ≠ productive. Five strategies: backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time.
 - [[concepts/orthrus-parallel-generation]] — Orthrus — Dual-architecture Transformer: frozen AR backbone + trainable diffusion head over shared KV cache. Up to 7.8× speedup, O(1) KV-cache overhead, 16% trainable params, lossless output guarantee.
 - [[concepts/outcome-based-pricing]] — Outcome-based pricing models for AI Agents. Transition from seat-based to outcome-based billing (resolutions, completed workflows, time saved). Zendesk Outcome-Based Pricing and Salesforce Agentforce Flex Credits are pioneering examples.
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).

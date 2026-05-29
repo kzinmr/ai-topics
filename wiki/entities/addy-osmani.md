@@ -1,7 +1,7 @@
 ---
 title: Addy Osmani
 created: 2026-05-10
-updated: 2026-05-18
+updated: 2026-05-29
 type: entity
 tags:
   - person
@@ -16,8 +16,9 @@ sources:
   - raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
   - raw/articles/2026-05-05_addyosmani_cognitive-surrender.md
   - raw/articles/2026-05-17_addy-osmani_dont-outsource-learning.md
+  - raw/articles/2026-05-28_addyosmani_orchestration-tax.md
   - https://addyosmani.com/bio/
-description: "Director at Google Cloud AI, formerly Chrome Developer Experience lead. Published comprehensive Agent Harness Engineering framework (May 2026) and Cognitive Surrender concept (May 2026). Author of several books on software engineering and AI."
+description: "Director at Google Cloud AI, formerly Chrome Developer Experience lead. Published comprehensive Agent Harness Engineering framework (May 2026), Cognitive Surrender concept (May 2026), and Orchestration Tax (May 2026). Author of several books on software engineering and AI."
 ---
 
 # Addy Osmani
@@ -83,10 +84,22 @@ On May 17, 2026, Osmani published a follow-up piece expanding the cognitive surr
 
 Osmani advocated for **Learning Mode** features (Anthropic, OpenAI, Google have shipped them but adoption is near-zero for production work) and proposed concrete strategies: form a hypothesis before asking, request explanation before code, and treat "ship" and "learn" as separate metrics.
 
+## "The Orchestration Tax" (May 2026)
+
+On May 28, 2026, Osmani published an X Article (1,312 bookmarks, 106K impressions) expanding on a concept coined by Richard Seroter at a Google I/O 2026 panel. The **[[concepts/orchestration-tax|orchestration tax]]** is the structural cost of coordinating multiple AI agents through a single human bottleneck:
+
+- **Human as GIL** — The developer is the Global Interpreter Lock of their AI agents: unlimited agents can spawn, but all judgment-requiring work serializes through one person
+- **Amdahl's Law** — Parallelization speedup is capped by the serial fraction (human review); adding agents just deepens the queue
+- **Busy ≠ Productive** — Running 20 agents feels productive but decouples from actual shipped code
+- **Architect Your Attention** — Five strategies: backpressure (scale fleet to review rate), sort work (isolated vs. complex), batch reviews, only spend attention on judgment, protect serial time
+
+The article synthesizes Osmani's earlier pieces on cognitive surrender and parallel agent limits with concurrent systems design principles, arguing that agent orchestration is not a discipline problem but an architecture problem.
+
 ## Related Pages
 
 - [[concepts/harness-engineering]] — The discipline he helped codify
 - [[concepts/cognitive-surrender]] — Concept he explored in depth (May 2026): individual mechanism behind simulacrum and comprehension debt
+- [[concepts/orchestration-tax]] — The structural cost of multi-agent coordination (May 2026)
 - [[entities/vtrivedy10]] — Vivek Trivedy, who coined the term "harness engineering"
 - [[entities/hamel-husain]] — Early popularizer of harness engineering from evals perspective
 - [[concepts/agentic-engineering]] — Related engineering practice

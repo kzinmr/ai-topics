@@ -1,6 +1,12 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] add | Ingest Addy Osmani "The Orchestration Tax" X Article → concept + entity enrichment
+- [[concepts/orchestration-tax]] — 新規概念ページ作成: Google I/O 2026パネルでRichard Seroterが命名、Addy Osmaniが拡張。AIエージェント開発における「人間がGIL（Global Interpreter Lock）」構造。Amdahlの法則の適用、Busy ≠ Productive、5つの注意設計戦略（backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time）。[[concepts/cognitive-surrender]]、[[concepts/cognitive-debt]]、[[concepts/harness-engineering]]と関連付け。
+  - [[entities/addy-osmani]] — "The Orchestration Tax"セクション追加、sources/description/Related Pages更新
+  - Raw article: `raw/articles/2026-05-28_addyosmani_orchestration-tax.md` (X Article, type: x_article)
+  - Pages Updated: 4 (1 new concept, 1 entity enriched, index.md + log.md)
+
 ## [2026-05-29] take | Raw Backlog Ingest: GPU Cluster TCO & Goodput Framework
 - [[concepts/gpu-cluster-tco-goodput]] — 新規概念ページ作成: SemiAnalysisのGPUクラスタTCOフレームワーク。8つのコスト要素(GPU/Storage/Network/Control Plane/Support/Goodput/Setup/Debugging)、3つの耐障害性トレーニング方式の比較(TorchFT vs AWS Checkpointless vs TorchPass)、3つのワークロードシナリオ分析(LLM Pretrain/RL Research/Inference)。Goodput Expense数式とプロバイダーティア別TCO比較。
   - [[entities/semianalysis]] — GPU Cluster TCO & Goodput Frameworkセクション追加、関連/ソース更新
