@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2265 | Indexed entries: 1501 | Not in index: 746
+> Last updated: 2026-05-29 | Total pages: 2267 | Indexed entries: 1502 | Not in index: 747
 
 ## Entities (716 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -522,6 +522,7 @@
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simon-last]] — Product/engineering leader at Notion. Led Custom Agents through 4-5 rebuilds. Software factory advocate. CLI over MCP.
 - [[entities/simone-salis]] — **URL:** https://simone.org
+- [[entities/sira]] — SIRA (Superintelligent Retrieval Agent) — Training-free framework from Meta Superintelligence Labs that uses LLMs to bridge query-document vocabulary gap, enabling single BM25 call to outperform dense retrievers and multi-round agentic search. MIT licensed, Rust+Python.
 - [[entities/slalom]] — Slalom — Global business & technology consulting firm ($2.9B revenue, 12K employees, 54 offices/12 countries). AWS Premier Tier partner, OpenAI strategic partner, Snowflake AI Partner of the Year. Co-developed Macro Evals for Agentic Systems with OpenAI.
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
 - [[entities/snyk]] — Snyk — developer security platform. Integrated Anthropic Claude into AI Security Platform (May 2026) for vulnerability discovery and automated remediation.
@@ -897,6 +898,7 @@
 - [[concepts/deepspeed]] — Microsoft DeepSpeed
 - [[concepts/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve, May 2026): 113-task coding agent benchmark spanning 91 repos, 5 languages. Exposes SWE-Bench Pro's ~32% verifier error rate and Claude Opus "CHEATED" passes via git history exploitation. GPT-5.5 leads at 70%.
 - [[concepts/delta-channels]] — LangGraph DeltaChannel (beta v1.2, May 2026) — incremental checkpoint storage for long-running agents. Writes only deltas per step, full snapshots every K steps. Bounds resume cost for production agents running thousands of steps.
+- [[concepts/direct-corpus-interaction]] — Direct Corpus Interaction (DCI): replacing retrieval with grep/bash/shell pipelines. Agent searches raw corpus directly without embedding models or vector indexes. BrowseComp-Plus 80.0% (+11 pts), multi-hop QA 83.0 (+30.7 pts). [[raw/papers/2026-05-03_2605.05242_direct-corpus-interaction]]
 - [[concepts/coding-agents]] — Coding Agents
 - [[concepts/dspy-rlm]] — DSPy.RLM
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
@@ -1011,7 +1013,7 @@
 - [[concepts/hrm-text]] — HRM-Text — Sapient Intelligence's 1B parameter hierarchical reasoning model. Non-Transformer, trained on ~40B tokens for $1,000. MATH 56.2%, ARC-C 81.9%. Smartphone-sized (int4: 0.6 GiB).
 - [[concepts/hybrid-flow]] — HybridFlow (veRL): An architecture separating control flow from computation flow for RLHF/GRPO. volcengine/veRL implementation. Single-process controller on Ray transparently manages multi-GPU workers via WorkerGroup. @register decorator hides distributed execution. Multi-backend support for FSDP/Megatron/TorchTitan/vLLM/SGLang.
 - [[concepts/information-theory-and-agent-communication]] — Reinterpretation of Shannon's (1948) Mathematical Theory of Communication from the perspective of inter-agent AI communication. Three-layer agent communication model integrating V-Information (Xu et al., 2020). Information-theoretic foundations of the harness effect, Shannon capacity analogy for context windows.
-- [[concepts/information-retrieval]] — Precision-Recall-Desirability framework, bag-of-documents model (representing queries as result distributions), embedding-based search vs bag-of-words, RAG, semantic equivalence. Includes Daniel Tunkelang's KDD 2023/2024/2026 presentations. [[concepts/embeddings]] [[concepts/vector-search]] [[concepts/lexical-search]] [[concepts/bm25]] [[concepts/rag-systems]]
+- [[concepts/information-retrieval]] — Precision-Recall-Desirability framework, bag-of-documents model, embedding-based search vs bag-of-words, SIRA: LLM-guided lexical retrieval with DF filtering (Meta, May 2026), RAG, semantic equivalence. [[concepts/embeddings]] [[concepts/vector-search]] [[concepts/lexical-search]] [[concepts/bm25]] [[concepts/rag-systems]]
 - [[concepts/infrastructure-noise-agent-evals]] — Quantitative analysis of infrastructure noise in agentic coding evaluation. 6pp difference between 1x→uncapped resources on Terminal-Bench 2.0 (p<0.01). Be skeptical of leaderboard differences under 3pp. Time of day, parallelism, and bandwidth are hidden confounders.
 - [[concepts/interaction-models]] — Thinking Machines Lab research preview. Natively handles multimodal, real-time interaction with 200ms micro-turns. Simultaneous audio/video/text input and output. Integrates with async background models.
 - [[concepts/inverted-stack-trace-native-engineering]] — The Inverted Stack — AI becomes the substrate, code becomes the harness, traces replace code as the canonical record. Differentiated from classic ML (Zayd 2016): the genuinely new shift is not "probabilistic" but the architectural inversion where AI↔code relationship reverses.

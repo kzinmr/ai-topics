@@ -12,6 +12,9 @@ tags:
   - evaluation
   - embeddings
   - query-understanding
+  - query-expansion
+  - lexical-search
+  - agentic-retrieval
 status: active
 sources:
   - raw/articles/2025-03-27_daniel-tunkelang_precision-recall-desirability.md
@@ -172,6 +175,53 @@ RAG extends embedding-based retrieval with two critical steps:
 Key challenge: the **relevance trap** — a chunk may have high cosine similarity yet be unhelpful in the generated context.
 
 See [[concepts/rag]], [[concepts/embeddings]].
+
+## SIRA: LLM-Guided Lexical Retrieval
+
+**SIRA** (Superintelligent Retrieval Agent) from Meta Superintelligence Labs (May 2026) introduces a new paradigm: using LLMs to bridge the vocabulary gap between queries and documents, enabling a single BM25 call to outperform both dense retrievers and multi-round agentic search. See [[entities/sira]].
+
+### The Vocabulary Gap Problem
+
+Users and documents speak different languages. A user might query "how to prevent AI from being jailbroken" while the relevant paper uses "adversarial robustness of alignment techniques." Dense retrieval bridges this via embedding similarity; agentic search bridges it by iteratively reading results and reformulating. SIRA bridges it **before retrieval** by enriching both sides with missing vocabulary.
+
+### Corpus-Side Enrichment (Offline)
+
+An LLM reads each document and proposes missing search vocabulary — synonyms, abbreviations, alternate phrasings a user might search with. A **Document-Frequency (DF) filter** prunes terms that are too common (DF > threshold) to be discriminative. Surviving terms are injected as n-grams into the BM25 index.
+
+### Query-Side Expansion (Online)
+
+The LLM generates an **expected-response sketch** — concepts, entities, and discriminative terms likely to appear in a relevant answer but absent from the query. Crucially, the LLM is forbidden from guessing the answer itself (to avoid bias). The DF filter validates each proposed term: if it doesn't exist in the corpus (DF=0) or is too common, it's discarded. The validated expansion is combined with the original query into a single weighted BM25 call:
+
+```text
+score(d) = BM25(q_orig, d) + w · BM25(q_exp, d)
+```
+
+### Why It Works
+
+- **BM25 is transparent**: IDF naturally weights rare discriminative terms — the LLM just needs to surface the right ones
+- **DF filter is the gatekeeper**: It prevents the LLM from injecting hallucinated or non-discriminative terms
+- **One shot > multi-round**: Eliminates the context accumulation problem ("lost in the middle") and the latency of iterative search
+- **No training**: Works with frozen LLMs, no supervised pairs, no relevance labels
+
+### Comparison with Other Approaches
+
+| Approach | LLM Usage | Retrieval | Rounds | Training |
+|----------|-----------|-----------|--------|----------|
+| BM25 baseline | None | Lexical | 1 | None |
+| Dense (E5, BGE) | None | Embedding | 1 | Supervised |
+| HyDE | Generate pseudo-doc | Embedding | 1 | None |
+| Agentic (IRCoT, Search-R1) | Reasoning loop | Multi-round | 3-10+ | Prompt eng. |
+| **SIRA** | Enrich both sides | Weighted BM25 | **1** | **None** |
+| BoD (Tunkelang) | None (learned) | Embedding | 1 | Fine-tuned |
+
+SIRA achieves SoTA on 10 BEIR benchmarks, outperforming all baselines including E5-supervised and multi-round agentic search.
+
+### Limitations
+
+- Requires LLM to read every document for corpus enrichment (offline, one-time cost)
+- Benefits diminish when vocabulary gap is already small
+- DF threshold τ may need corpus-specific tuning
+- Dependent on LLM quality for enrichment
 
 ## Related
 

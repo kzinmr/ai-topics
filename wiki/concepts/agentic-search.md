@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-28
+updated: 2026-05-29
 type: concept
 tags:
   - search
@@ -34,6 +34,7 @@ sources:
   - raw/articles/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search.md
   - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
   - raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
+  - raw/papers/2026-05-03_2605.05242_direct-corpus-interaction.md
   - https://arxiv.org/abs/2603.04384
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
@@ -460,6 +461,29 @@ The coding agent approach is not always cheaper than RAG, but it is significantl
 ### Paradigm Shift: Externalized Processing
 
 This research suggests a new thesis: **delegating long-context processing to coding agents is a viable alternative to scaling context windows or optimizing retrieval pipelines.** By structuring text to look like code repositories, frontier models' software engineering capabilities can be leveraged for general text-processing.
+
+### Level 4: Direct Corpus Interaction (DCI) — "No Retriever At All"
+
+A May 2026 paper by Li et al. [[raw/papers/2026-05-03_2605.05242_direct-corpus-interaction]] pushes the coding-agent-as-search paradigm further with **Direct Corpus Interaction (DCI)** [[concepts/direct-corpus-interaction]]. The radical thesis: **"The best retriever ... is no retriever."**
+
+Where Cao et al. (Level 3) require file-system pre-organization (folder structures), DCI works on **raw, unorganized corpora** — the agent searches directly with `grep`, `find`, `bash`, and shell pipelines. No embedding model, no vector index, no offline indexing.
+
+#### Results (with same Sonnet 4.6 backbone)
+| Metric | Retrieval Agent (Qwen3-Embedding-8B) | DCI-Agent-CC | Δ |
+|--------|--------------------------------------|-------------|---|
+| BrowseComp-Plus Accuracy | 69.0% | 80.0% | **+11.0 pts** |
+| Cost | $1,440 | $1,016 | **−29.4%** |
+| Multi-Hop QA Avg | 52.3 | 83.0 | **+30.7 pts** |
+| IR Ranking NDCG@10 | 47.0 | 68.5 | **+21.5 pts** |
+
+#### Key Mechanism
+DCI's advantage is NOT from better recall — among 176 BrowseComp-Plus questions DCI wins but the retriever loses, only 34 lacked gold documents in the conventional retriever's results. The edge comes from **better evidence utilization**: fine-grained grep matches → localized context reads → extraction of new search terms → compositional bash queries. The agent builds its own search trajectory rather than accepting a fixed top-k.
+
+#### Connection to Level 3
+DCI generalizes the coding-agent approach (Cao et al.) by removing the file-system pre-organization requirement. The core insight shared by both: when agents interact with text directly via terminal tools, retrieval quality improves — and adding conventional retrieval tools can **degrade** agent exploration by displacing finer-grained strategies.
+
+#### Context Management for Long-Horizon Search
+DCI introduces five levels of runtime context management (truncation, compaction, summarization) to handle the observation accumulation from repeated grep/read cycles. L3 (truncation + compaction) achieves best accuracy despite retaining less gold evidence — selective discarding of old observations proves beneficial.
 
 ### Practitioner Perspective: Doug Turnbull's "Grep Moment"
 
@@ -1033,6 +1057,7 @@ For a comprehensive treatment of these patterns, see the dedicated [[concepts/ag
 ## Related Concepts
 
 - [[concepts/agent-steering]] — Comprehensive treatment of steering patterns for agentic search
+- [[concepts/direct-corpus-interaction]] — DCI: replacing retrieval with grep/bash/shell pipelines
 - [[concepts/markdown-based-skills]] — Skills format used by agentic search (harness layer)
 - [[concepts/s3-first-architecture]] — Where skills files are stored
 - [[concepts/agent-harness]] — Agentic search is part of the harness layer
@@ -1050,6 +1075,7 @@ For a comprehensive treatment of these patterns, see the dedicated [[concepts/ag
 - [SID-1 Technical Report: Test-Time Compute for Retrieval](https://www.sid.ai/research/sid-1-technical-report) — SID Research (2025). First RL-trained agentic retrieval model. Qwen3-14B + GRPO, 0.84 recall, TI/TO pipeline insight.
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
 - [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
+- [Beyond Semantic Similarity: Direct Corpus Interaction for Agentic Search](https://arxiv.org/abs/2605.05242) — Li, Zhang, Wei, Lu, Nie et al. (2026). DCI: replacing retrieval with grep/bash/shell pipelines. BrowseComp-Plus 80.0% (+11 pts), multi-hop QA 83.0 (+30.7 pts), IR ranking NDCG 68.5 (+21.5 pts). [[raw/papers/2026-05-03_2605.05242_direct-corpus-interaction]]
 - [Agentic Search Is Having a Grep Moment](https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment) — Doug Turnbull (2026). Practitioner perspective on grep vs search harness architecture.
 - [RAG Users Want Affordances, Not Vectors](https://softwaredoug.com/blog/2025/12/09/rag-users-want-affordances-not-vectors) — Doug Turnbull (2025). Foundational critique of vector-centric RAG: embedding crowding, threshold problem, in-domain nuance, and the affordance-based alternative of structured schema extraction via LLMs.
 - [Rag is the What. Agentic search is the How. (YouTube)](https://www.youtube.com/watch?v=UXQ916WRK0A) — Doug Turnbull (2026). 54-minute talk: full architectural critique of RAG paradigm shift toward agentic search, with four-stage unwinding and SID-1 endorsement.

@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260529T160100Z",
+  "summary_ja": "バックログ5件処理。AI/LLM関連2件（AINews Kimi K2.5ダイジェスト、SemiAnalysis GPU TCO分析）はreference。Ed ZitronのAIバブル論は5/28処理済みの重複。Dan Larkのstd::sort最適化とBen Boyterの中国旅行記はAI無関係でskip。",
+  "decisions": [
+    {
+      "item_id": "substack.com--redirect-022d246f-0fc1-4488-842a-2a86edda6ab8--2b1c4eb8.md",
+      "source": "backlog",
+      "source_name": "AINews",
+      "title": "[AINews] Moonshot Kimi K2.5 - Beats Sonnet 4.5 at half the cost, SOTA Open Model, first Native Image+Video, 100 parallel Agent Swarm manager",
+      "url": "https://substack.com/redirect/022d246f-0fc1-4488-842a-2a86edda6ab8",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-022d246f-0fc1-4488-842a-2a86edda6ab8--2b1c4eb8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AINewsダイジェスト。Kimi K2.5/MoonViT/Agent Swarm/Trinity Largeなどの情報を含むが、Kimi関連は既にentities/kimi.mdで十分にカバー済み（K2.6まで記載）。Trinity Large (400B MoE, Arcee/Prime Intellect) は新規情報だが、ダイジェストの一部として単体でページ化するほどではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Kimi has been on an absolute tear in the past year, and we last heard from them in November with Kimi K2 Thinking. Like K2, today's K2.5 is still a 32B active-1T param model (384 experts), built through continual pretraining on 15 trillion mixed visual and text tokens atop Kimi-K2-Base..."
+    },
+    {
+      "item_id": "substack.com--redirect-9557c393-123f-410a-9f7c-a92ef5746281--e2fb1cf2.md",
+      "source": "backlog",
+      "source_name": "SemiAnalysis",
+      "title": "How Much Do GPU Clusters Really Cost?",
+      "url": "https://substack.com/redirect/9557c393-123f-410a-9f7c-a92ef5746281",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-9557c393-123f-410a-9f7c-a92ef5746281--e2fb1cf2.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ SemiAnalysisのGPUクラスターTCO分析フレームワーク。ClusterMAX評価、Goodput計算機、GPU/ストレージ/ネットワーク/サポート/デバッグのコスト分解を含む。AIインフラ関連だが、ニュースレターパイプラインで既にSemiAnalysis記事を処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Modern GPUs are unbelievably expensive. A single Blackwell GPU costs more than the average car, and uses more energy than a single family home. It is now common for unicorn startups to have thousands of these GPUs working for them, day and night..."
+    },
+    {
+      "item_id": "wheresyoured.at--ai-is-too-expensive--2387fc59.md",
+      "source": "backlog",
+      "source_name": "Ed Zitron",
+      "title": "AI Is Too Expensive",
+      "url": "https://www.wheresyoured.at/ai-is-too-expensive/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--ai-is-too-expense--2387fc59.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Ed ZitronのAIバブル論。MicrosoftのOpenAIへの$100B支出、ハイパースケーラーのAI capex分析。5/28バックログ処理で既に判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "AI is, as it stands, not economically viable for anybody involved other than the construction firms, NVIDIA, and the surrounding hardware companies benefiting from the irrational exuberance of a data center buildout that doesn't appear to be happening at the speed we believed..."
+    },
+    {
+      "item_id": "danlark.org--2022-04-20-changing-stdsort-at-googles-scale-and-beyond--07028621.md",
+      "source": "backlog",
+      "source_name": "Dan Lark",
+      "title": "Changing std::sort at Google's Scale and Beyond",
+      "url": "https://danlark.org/2022/04/20/changing-stdsort-at-googles-scale-and-beyond/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danlark.org--2022-04-20-changing-stdsort-at-googles-scale-and-beyond--07028621.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ C++ std::sortのGoogleスケールでの最適化に関する純粋なシステムプログラミング記事。AI/LLM/エージェントの文脈なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "TL;DR; We are changing std::sort in LLVM's libcxx. That's a long story of what it took us to get there and all possible consequences, bugs you might encounter with examples from open source..."
+    },
+    {
+      "item_id": "boyter.org--china-trip-3--8e4c88b0.md",
+      "source": "backlog",
+      "source_name": "Ben Boyter",
+      "title": "China Trip 3",
+      "url": "https://boyter.org/china-trip-3/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--china-trip-3--8e4c88b0.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ 2005年の中国旅行記。AI/LLM/テクノロジーの文脈なし。個人的な旅行メモ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Well I figured I may as well add an end of the story, I believe that anyone who reads this deserves and end to the story and hence I am writing this for you all..."
+    }
+  ]
+}

@@ -1,6 +1,21 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] DCI paper ingest — user request (Discord)
+
+- `created` concepts/direct-corpus-interaction.md — Direct Corpus Interaction (DCI) concept page from Li et al. (arXiv 2605.05242). Replaces retrieval pipeline with grep/bash/shell commands. BrowseComp-Plus 80.0%, multi-hop QA 83.0, IR NDCG 68.5.
+- `created` raw/papers/2026-05-03_2605.05242_direct-corpus-interaction.md — Raw paper source
+- `updated` concepts/agentic-search.md — Added Level 4: Direct Corpus Interaction (DCI) section, related concept cross-link, and source entry
+- `updated` SCHEMA.md — Added `direct-corpus-interaction` to Techniques tags
+- `updated` index.md — Added concepts/direct-corpus-interaction entry, updated page count
+
+## [2026-05-29] SIRA paper ingest — user request (Discord)
+
+- `created` entities/sira.md — SIRA (Superintelligent Retrieval Agent) entity page from Meta Superintelligence Labs (arXiv 2605.06647) + facebookresearch/sira GitHub repo. Rust+Python, MIT license, BM25x-based.
+- `created` raw/papers/sira-2605.06647.md — Raw paper source
+- `updated` concepts/information-retrieval.md — Added SIRA: LLM-Guided Lexical Retrieval section (architecture, comparison table, limitations). Added tags: query-expansion, lexical-search, agentic-retrieval.
+- `updated` index.md — Added entities/sira, updated concepts/information-retrieval summary
+
 ## [2026-05-29] raw-backlog-ingest | 5件バックログ処理 — 0 take, 2 reference, 3 skip
 
 - **AINews Kimi K2.5ダイジェスト** → `reference` — Kimi K2.5/MoonViT/Agent Swarm/Trinity Large (Arcee/Prime Intellect 400B MoE)を含むが、Kimi関連は既にentities/kimi.mdでK2.6までカバー済み
