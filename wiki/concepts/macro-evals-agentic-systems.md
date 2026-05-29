@@ -2,7 +2,7 @@
 title: "Macro Evals for Agentic Systems"
 type: concept
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-29
 tags:
   - concept
   - evaluation

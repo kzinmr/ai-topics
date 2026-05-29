@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-05-28
+updated: 2026-05-29
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:

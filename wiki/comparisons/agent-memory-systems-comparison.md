@@ -5,7 +5,7 @@ aliases:
   - agent-memory-systems-comparison
   - harness-memory-comparison
 created: 2026-05-17
-updated: 2026-05-26
+updated: 2026-05-29
 tags:
   - concept
   - memory-systems
@@ -20,6 +20,7 @@ sources:
   - https://code.claude.com/docs/en/memory
   - https://hermes-agent.nousresearch.com/docs/
   - raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering.md
+  - raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md
 ---
 
 # Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes
@@ -158,6 +159,22 @@ Mapping Nicolas Bustamante's (Microsoft) 3-type classification to the four harne
 | **Hybrid Search + Flush** | **OpenClaw** | Doesn't fully fit any of the above 3 types — hybrid search + Pre-Compaction Flush unique path |
 
 ---
+
+## Mem0 Comparative Analysis: Frozen vs Live System Prompts
+
+In May 2026, [[entities/mem0|Mem0]] published a direct architectural comparison of Hermes Agent and OpenClaw, framing the core trade-off as **frozen vs live system prompts**:
+
+| Dimension | Hermes Agent | OpenClaw |
+|-----------|-------------|----------|
+| **Memory budget** | ~3,575 chars (2,200 MEMORY + 1,375 USER), ~1,300 tokens | ~20,000 chars soft target, ~6× Hermes budget |
+| **System prompt update** | **Frozen**: Captured once at session start. Changes go to disk but don't appear until next session | **Live**: MEMORY.md re-injected every turn. Changes visible next turn |
+| **Prefix cache** | ✅ **Optimized**: Stable system prompt across entire long session | ❌ 20-30% of every turn is bootstrap re-shipped |
+| **Memory API** | Constrained: 1 tool, 3 verbs (add/replace/remove), substring-match addressing | File-native: direct editing + 2 read tools (memory_search hybrid, memory_get) |
+| **Mem0 integration** | ✅ Mem0 plugin | ✅ Mem0 plugin (8-tool surface replaces native 2-tool) |
+
+The fundamental question: **Should agent memory be optimized for stable, cached long sessions (Hermes), or for immediate, live recall (OpenClaw)?**
+
+Neither is wrong — they're different bets about what a developer using the tool actually does for hours at a time. Hermes optimizes for cost-efficient long-running sessions where prefix caching provides significant savings. OpenClaw optimizes for responsiveness within a single session where the agent needs to act on information it learned moments ago.
 
 ## Common Limitations
 

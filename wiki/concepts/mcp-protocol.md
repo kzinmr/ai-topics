@@ -2,7 +2,7 @@
 title: MCP Protocol Testing & Security
 type: concept
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-29
 tags:
   - mcp
   - testing
@@ -11,6 +11,7 @@ tags:
   - tool
 sources:
   - raw/articles/merge.dev--blog-testing-ai-agents--8daf268c.md
+  - raw/articles/2026-05-29_cohere_guide-to-mcp.md
 ---
 
 # MCP Protocol Testing & Security

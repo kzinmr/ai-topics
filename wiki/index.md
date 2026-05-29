@@ -988,6 +988,7 @@
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source — Critical analysis of how "open source" is defined and measured in AI/ML.
 - [[concepts/mistral-workflows]] — Mistral Workflows: enterprise AI orchestration layer. Temporal-based durable execution, human-in-the-loop (wait_for_input), multi-surface triggers (API/Studio/Le Chat). Public preview April 2026.
+- [[concepts/multi-channel-agents]] — Multi-Channel Agents — Multi-user agent engineering for Slack, Discord, and Telegram. Thread isolation, resource-based memory scoping, HMAC auth, platform-specific credential management. From Mastra (May 2026).
 - [[concepts/mmmu]] — MMMU — 11.5K multimodal questions. Sourced from college exams and textbooks. 6 disciplines, 30 subjects, 183 subfields. 30+ image types. GPT-4V 56%, Gemini Ultra 59%. CVPR 2024 Oral.
 - [[concepts/mmlu-pro]] — MMLU Pro — Enhanced version of MMLU. 10-choice MC, 12K+ questions, 14 domains. 43% new problems not in original MMLU. LLM-assisted filtering. 16-33% accuracy drop. NeurIPS Spotlight.
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).

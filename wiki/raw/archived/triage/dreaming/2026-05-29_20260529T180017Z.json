@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-05-29T18:15:49.836866+00:00",
+  "triage_run_id": "20260529T180017Z",
+  "source": "dreaming",
+  "summary_ja": "既存パイプラインで処理済みの227件中、未トリアージの8件を発見。エージェント評価ガイド(Ben Hylak)、Anthropic Claude封じ込めパターン、マルチチャネルエージェント(Mastra)、自己改善型Tax AIエージェント(OpenAI Codex)の4件をTake判定。Macro-EvalsとMCPガイド、Warp+GPT-5.5、Mem0メモリ比較は既存ページ参照でカバー可能。",
+  "decisions": [
+    {
+      "item_id": "dreaming-5",
+      "source": "dreaming",
+      "source_name": "OpenAI Cookbook",
+      "title": "Macro Evals for Agentic Systems",
+      "url": "https://developers.openai.com/cookbook/examples/partners/macro_evals_for_agentic_systems/macro_evals_for_agentic_systems",
+      "raw_path": "~/wiki/raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ OpenAI×Slalomのマクロ評価手法。BERTopicクラスタリングによる行動パターン抽出、4ラベル体系（case_type→run_outcome→eval_finding→behavior_pattern）、Promptfoo連携。既存のmacro-evals-agentic-systems.md概念ページで十分カバー済み。生記事の詳細は同ページのsourcesに追加価値あり。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-6",
+      "source": "dreaming",
+      "source_name": "Cohere Blog",
+      "title": "What Is Model Context Protocol (MCP)",
+      "url": "https://cohere.com/blog/guide-to-mcp",
+      "raw_path": "~/wiki/raw/articles/2026-05-29_cohere_guide-to-mcp.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ CohereによるMCP標準ガイド。クライアント-サーバーアーキテクチャ、Resources/Tools/Promptsの3機能、API/RAG/Function Callingとの比較。mcp-protocol.md概念ページで十分カバー済みの標準的内容。新規性は低いがCohereのMCP対応状況としてentityページに参照追加価値あり。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-7",
+      "source": "dreaming",
+      "source_name": "OpenAI Blog",
+      "title": "Warp's Big Bet on Building Open Source with GPT-5.5",
+      "url": "https://openai.com/index/warp",
+      "raw_path": "~/wiki/raw/articles/2026-05-27_openai_warp-open-source-gpt-5-5.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Warpのオープンソース化とGPT-5.5活用のカスタマーストーリー。90% PRがエージェント共創、35x ARR成長、GPT-5.5の30%トークン削減など具体的指標あり。Oz オーケストレーションプラットフォームの詳細（Web UI、ライブ監視、定期ワークフロー）。warp-terminal entityページの強化に価値あり。新規概念ページは不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-8",
+      "source": "dreaming",
+      "source_name": "Mem0",
+      "title": "What OpenClaw and Hermes Agent Reveal About Agent Memory",
+      "url": "https://x.com/i/article/2059652660022910976",
+      "raw_path": "~/wiki/raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Mem0によるHermes Agent vs OpenClawのメモリアーキテクチャ比較。Hermes（3,575文字固定・凍結システムプロンプト・プレフィックスキャッシュ最適）、OpenClaw（20,000文字・日次ノート・FTS5+ベクトル検索・ライブリフレッシュ）。両方のMem0プラグイン統合。agent-memory-systems-comparison.md強化に高い価値。新規ページ不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

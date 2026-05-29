@@ -15,7 +15,8 @@ aliases: [agent loop, ReAct loop, decide-act-observe, agent execution cycle]
 sources:
   - https://stevekinney.com/writing/agent-loops
   - https://agentic.ai/what-is-agentic-ai
-  - https://arxiv.org/abs/2210.03629
+  - https://www.anthropic.com/research/building-effective-agents
+  - raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex.md
 ---
 
 # Agentic Loop — The Canonical AI Agent Execution Pattern
@@ -78,6 +79,49 @@ This is sometimes called the **Perceive → Reason → Act → Observe** cycle i
 | Decides when task is done | ❌ | ✅ |
 
 The line is sharp: **who decides what action happens, and who executes it**. A chatbot generates text for a human to act on. An agent acts itself.
+
+## Self-Improving Agent Loop (Case Study: Thrive × OpenAI Tax AI)
+
+In May 2026, **Thrive Holdings** and OpenAI published a case study on a self-improving tax return agent built with [[entities/codex|Codex]]. The system processes **7,000+ tax returns** for 30+ accounting firms, demonstrating a **self-improving loop** pattern distinct from the canonical ReAct loop:
+
+### The Three-Stage Improvement Loop
+
+| Stage | Component | Description |
+|-------|-----------|-------------|
+| **1. Feedback** | Expert practitioners | Corrections captured as structured data — not ad-hoc notes |
+| **2. Evidence** | Production traces | Full path from source documents → extracted fields → filed return enables field-level comparison |
+| **3. Fix** | Codex task environment | Bounded writable worktree + read-only production context → eval targets → scoped engineering tasks |
+
+### Key Metrics
+- **Accuracy**: 25% → **86%** within 6 weeks (75% correct field completion threshold)
+- **Field-level correctness**: up to **97%**
+- **Throughput**: ~**50%** increase
+- **Practitioner impact**: One senior accountant: 180 hours → **15 hours** per tax season
+
+### Codex Task Environment Pattern
+
+Each improvement cycle follows a structured pattern:
+
+```
+repo/ → branch: codex/fix-{task-id}/
+  ├── AGENTS.md
+  ├── tasks/{task-id}/
+  │   ├── task.yaml
+  │   ├── EXEC_PLAN.md
+  │   └── RESULTS.md
+  ├── app/tax-ai/{domain}/
+  ├── evals/
+  │   ├── datasets/{failure-pattern}.yaml
+  │   ├── suites/{failure-pattern}.yaml
+  │   ├── suites/{regression}.yaml
+  │   └── graders/{domain}.yaml
+  ├── skills/
+  └── scoped-tools/
+```
+
+Codex inspects the full context (trace, repo, evals, skills) and proposes changes validated against targeted + regression test suites before human review.
+
+This pattern generalizes beyond tax: any production system where expert corrections can be structured as eval targets and Codex/[[concepts/agentic-engineering|agentic engineering]] can be dispatched to fix them fits the model.
 
 ## Stopping Conditions
 

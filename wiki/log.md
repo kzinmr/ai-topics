@@ -1,6 +1,44 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] ingest | Dreaming nightly knowledge consolidation
+
+### Takes
+- Created [[concepts/multi-channel-agents]] — Mastra's multi-user/multi-channel agent engineering (Slack/Discord/Telegram concurrency, thread isolation, resource-based memory, HMAC auth)
+- Enriched [[concepts/agentic-loop]] — Added Self-Improving Agent Loop section (Thrive × OpenAI Tax AI case study: 25%→86% accuracy in 6 weeks)
+- Enriched [[concepts/agent-evaluation-methodology]] — Bumped updated date
+- Enriched [[concepts/agent-containment]] — Bumped updated date
+- Enriched [[concepts/macro-evals-agentic-systems]] — Bumped updated date
+
+### References
+- Enriched [[concepts/mcp-protocol]] — Added Cohere MCP guide as source
+- Enriched [[entities/warp-terminal]] — Bumped updated date
+- Enriched [[comparisons/agent-memory-systems-comparison]] — Added Mem0 frozen vs live system prompts comparative analysis section
+
+### Pages Created
+- concepts/multi-channel-agents.md
+
+### Pages Updated
+- concepts/agentic-loop.md — Self-improving Tax AI loop section
+- concepts/agent-evaluation-methodology.md — date bump
+- concepts/agent-containment.md — date bump
+- concepts/macro-evals-agentic-systems.md — date bump
+- concepts/mcp-protocol.md — added Cohere source
+- entities/warp-terminal.md — date bump
+- comparisons/agent-memory-systems-comparison.md — Mem0 analysis section + source
+- index.md — added multi-channel-agents entry
+
+### Sources
+- raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md
+- raw/articles/2026-05-27_anthropic-engineering_how-we-contain-claude.md
+- raw/articles/2026-05-28_mastra-multi-user-multi-channel-agents.md
+- raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex.md
+- raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md
+- raw/articles/2026-05-29_cohere_guide-to-mcp.md
+- raw/articles/2026-05-27_openai_warp-open-source-gpt-5-5.md
+
+---
+
 ## [2026-05-29] health | Wiki health auto-fix
 
 ### Auto-Fix Summary

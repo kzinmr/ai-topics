@@ -2,7 +2,7 @@
 title: "Agent Containment"
 type: concept
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 tags:
   - concept
   - agent-safety
