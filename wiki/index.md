@@ -576,6 +576,7 @@
 - [[entities/xania-org]] — **Blog** | xania.org |
 - [[entities/xiaomi]] — Xiaomi (MiMo AI): Chinese tech company, emerged as significant open-source AI model developer. MiMo family spans multimodal to trillion-parameter agentic coding models under MIT license.
 - [[entities/xiaomi-mimo]] — Xiaomi MiMo model family: open-source MoE models (MIT license). V2.5-Pro flagship (1.02T/42B active) comparable to Claude Opus 4.6 on SWE-bench Pro. MOPD post-training.
+- [[entities/xinming-tu]] — Xinming Tu — University of Washington researcher. Author of the Structured Test-Time Scaling framework: three-layer structural decoupling (Topology → Isolation → Verification) explaining why multi-agent, recursive, and coding systems bypass linear collapse.
 - [[entities/xeiaso-net]] — **Blog** | xeiaso.net |
 - [[entities/xjdr]] — xjdr (@_xjdr) — AI researcher, founder at Noumena Network. Creator of entropix (entropy-based LLM sampling, 3.4K ⭐) and primary architect of nmoe (B200-first MoE training, RDEP). JAX partisan. "high taste ai sommelier."
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
@@ -1266,6 +1267,7 @@
 - [[concepts/llm-landscape-nov-2025-to-may-2026]] — LLM Landscape Nov 2025–May 2026: Simon Willison's PyCon US 2026 lightning talk. Model throne wars, coding agent quality breakthrough (RLVR), OpenClaw ecosystem, open-weight models (Gemma 4, GLM-5.1), pelican bicycle benchmark.
 - [[concepts/mixture-of-experts]] — Mixture of Experts
 - [[concepts/multi-agent-orchestration]] — Multi-Agent Orchestration
+- [[concepts/multi-agent-systems]] — Multi-Agent Systems — Theoretical foundations for multi-agent architectures. Three-layer structural decoupling (Topology → Isolation → Verification) from [[structured-test-time-scaling]]. Covers why MAS bypass linear collapse: span compression, scope isolation, decoupled verification. System mapping table and practical constraints.
 - [[concepts/ollama]] — Ollama
 - [[concepts/reasoning-models]] — Reasoning Models
 - [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
@@ -1275,6 +1277,7 @@
 - [[concepts/speculative-decoding]] — Speculative Decoding
 - [[concepts/speculative-decoding-mtp]] — Speculative Decoding and Multi-Token Prediction — Google DeepMind's Gemma 4 introduces MTP (Multi-Token Prediction) drafter heads for faster inference. Comparison of speculative decoding approaches: draft models vs MTP heads vs Medusa. Performance tradeoffs and hardware implications.
 - [[concepts/structured-outputs]] — Structured Outputs
+- [[concepts/structured-test-time-scaling]] — Structured Test-Time Scaling — Xinming Tu & Guanghao Ye's unified theoretical framework. Three-layer structural decoupling (Topology → Isolation → Verification) explains why multi-agent, recursive, and coding systems bypass linear collapse, reducing failure exponent from Θ(W) to Õ(log W). Work-span formalism from parallel computation theory.
 - [[concepts/subagent-patterns]] — How Agents Manage Other Agents: Four Subagent Patterns in 2026 — Survey of 4 dominant subagent coordination patterns: hierarchical, peer-to-peer, swarm, and manager-worker. Analysis by Sarah Chieng (@MilksandMatcha). Practical patterns from Claude Code, Codex, Devin, and OpenCode.
 - [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].
 - [[concepts/agent-swarms]] — Agent Swarms: Emergent behavioral patterns of autonomous decentralized agent groups. Inspired by biological swarms.

@@ -237,8 +237,15 @@ This implies test-time scaling is not simply "think longer = better" — there a
 4. **Domain specificity**: Which domains benefit most from which test-time strategies?
 5. **Agent integration**: How should agent systems allocate test-time compute across multiple model calls?
 
+## Structured vs. Unstructured Test-Time Scaling
+
+> See [[structured-test-time-scaling]] for the theoretical framework explaining why multi-agent, recursive, and coding systems outperform linear approaches.
+
+The techniques described above (CoT, self-consistency, Best-of-N, beam search) are **unstructured** — they operate within a single sequential context. **Structured test-time scaling** (Tu & Ye, 2026) explains how multi-context architectures (multi-agent teams, recursive LMs, coding agents with verifiers) achieve far better scaling via three-layer structural decoupling: topology compression, scope isolation, and decoupled verification. This reduces the effective failure exponent from Θ(W) to Õ(log W).
+
 ## Related Pages
 
+- [[structured-test-time-scaling]] — The unified theory of structured test-time scaling
 - [[scaling-hypothesis]] — The broader framework test-time scaling extends
 - [[chain-of-thought]] — The foundational technique for reasoning
 - [[rlvr]] — Reinforcement Learning with Verifiable Rewards, key training method
@@ -248,3 +255,4 @@ This implies test-time scaling is not simply "think longer = better" — there a
 - [[speculative-decoding]] — Complementary technique for faster (not better) inference
 - [[concepts/nvidia-vera-rubin]] — Hardware platform optimized for test-time compute workloads
 - [[rlm]] — Recursive Language Models applying test-time scaling recursively
+- [[multi-agent-systems]] — Multi-agent systems as structured test-time scaling

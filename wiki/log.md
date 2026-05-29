@@ -1,6 +1,14 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] add+enrich | Ingest Xinming Tu's Structured Test-Time Scaling framework — 1 new concept + 1 entity + 1 stub enrichment + test-time-scaling cross-ref
+- **Saved raw article**: `raw/articles/2026-02-10_xinmingtu-cn_hierarchical-mas-theory.md` — Tu & Ye (Feb 2026), three-layer structural decoupling theory
+- **Created concept**: `concepts/structured-test-time-scaling.md` — Unified theoretical framework: Topology (span compression Θ(W)→Õ(log W)) → Scope Isolation (context decoupling) → Decoupled Verification (error correction at gates). Work-span formalism from parallel computation. 13-system mapping table. Practical constraints (managerial capacity, scope boundaries, verification advantage).
+- **Created entity**: `entities/xinming-tu.md` — University of Washington researcher, lead author of structured test-time scaling framework
+- **Enriched stub**: `concepts/multi-agent-systems.md` — From stub to full page with three-layer framework, system mapping, practical constraints
+- **Cross-ref**: `concepts/test-time-scaling.md` — Added Structured vs. Unstructured section + cross-link
+- **Cross-links**: → [[rlm-recursive-language-models]], [[dynamic-workflows]], [[reduce-offload-isolate]], [[subagent-patterns]], [[multi-agent-orchestration-architecture]]
+
 ## [2026-05-29] add | Ingest Cursor real-time RL blog + @27upon2 X Article → 2 new pages + 3 enrichments
 - Raw articles: `raw/articles/2026-04_cursor_real-time-rl-for-composer.md` (Cursor blog), `raw/articles/2026-04-06_27upon2_continual-learning-prime-intellect.md` (X Article, @27upon2)
 - NEW entity: `entities/sriraam-27upon2.md` — Sriraam (@27upon2), AI researcher, post-training @ Chakra AI. Built rollouts CLI for open-source continual learning with Prime Intellect + OpenCode.
