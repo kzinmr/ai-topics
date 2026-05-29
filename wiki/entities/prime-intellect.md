@@ -1,7 +1,7 @@
 ---
 title: "Prime Intellect"
 created: 2026-05-13
-updated: 2026-05-19
+updated: 2026-05-29
 type: entity
 tags:
   - company
@@ -39,6 +39,8 @@ Post-training platform for building self-improving agents via [[reinforcement-le
 
 ### Environment Hub
 2,500+ open-source RL environments contributed by the community. Environments are the core primitive — they define tasks, verifiers, and reward signals for agent training.
+
+Notable third-party environments: [[entities/sriraam-27upon2|Sriraam (@27upon2)]] built a [forkable OpenCode continual learning environment](https://app.primeintellect.ai/dashboard/environments/13point5/opencode-continual-learning) with per-turn codebase snapshotting for batch-incremental online RL — a Cursor-inspired real-time RL pipeline using Prime's hosted training.
 
 ### Compute
 Decentralized GPU compute marketplace enabling distributed training across global resources. Supports pipeline-parallel decentralized inference.

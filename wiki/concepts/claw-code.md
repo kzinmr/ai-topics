@@ -2,16 +2,19 @@
 title: "Claw Code"
 type: concept
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-29
 tags:
   - coding-agents
   - harness-engineering
   - open-source
   - multi-agent
   - developer-tooling
+  - agent-coordination
+  - autonomous-agents
 aliases: ["claw-code", "claw CLI", "UltraWorkers claw"]
 sources:
   - raw/articles/2026-05-03_claw-code-overview.md
+  - raw/articles/2026-04-01_realsigridjin_what-you-need-to-learn-from-claw-code.md
   - https://github.com/ultraworkers/claw-code
   - https://github.com/ultraworkers/claw-code/blob/main/PHILOSOPHY.md
   - https://github.com/ultraworkers/claw-code/blob/main/USAGE.md
@@ -51,13 +54,35 @@ The project is now hosted under the **[[ultraworkers]]** GitHub organization.
 
 ### Three-Part Meta-System
 
-Beyond the binary itself, Claw Code demonstrates a **coordination system** built from:
+Beyond the binary itself, Claw Code demonstrates a **coordination system** built from three tools that together form a closed development loop. This meta-system is considered by the creators to be the **real innovation** — the code is "the artifact, not the product."
 
-1. **OmX ([[yeachan-heo#oh-my-codex-omx|oh-my-codex]])** — Workflow layer: planning keywords, execution modes, parallel multi-agent orchestration
-2. **clawhip** — Event & notification router: watches git/tmux/GitHub events, delivers via Discord; keeps agent context windows clean
-3. **OmO (oh-my-openagent)** — Multi-agent coordination: Architect → Executor → Reviewer roles with plan handoffs and disagreement resolution
+| Tool | Role | Repository |
+|------|------|------------|
+| **OmX (oh-my-codex)** | Workflow layer on Codex CLI: reusable keywords (`$architect`, `$executor`, `$plan`), persistent execution loops (`$ralph`), parallel multi-agent orchestration (`$team`) | `Yeachan-Heo/oh-my-codex` |
+| **clawhip** | Event & notification router daemon: watches git/tmux/GitHub events, delivers status via Discord. **Key design**: keeps monitoring outside agent context windows so agents focus on code | `Yeachan-Heo/clawhip` |
+| **OmO (oh-my-openagent)** | Multi-agent coordination: manages Architect → Executor → Reviewer role handoffs, resolves disagreements, handles information sharing and output verification loops | `code-yeongyu/oh-my-openagent` |
 
-This meta-system is considered by the creators to be the **real innovation** — the code is "the artifact, not the product."
+None of these tools alone would have shipped claw-code in an hour. Wired together, they form a **closed development loop** where the human provides direction through Discord and the agents provide labor.
+
+### Agent Role Cycle (Architect → Executor → Reviewer)
+
+The agents operate in a structured cycle:
+
+1. **Architect** — Reads the directive, analyzes the target system, produces a structured plan with sequenced steps
+2. **Executor** — Picks up the plan, writes code, runs tools, generates tests
+3. **Reviewer** — Inspects Executor output, catches problems, sends feedback. If serious enough, loops back to Architect for re-planning
+
+This cycle repeats until the output passes all checks. The entire time, the human may be asleep. Agents file status updates to Discord; if blocked, they @-mention the developer.
+
+### Discord-Native Workflow
+
+The canonical workflow is **chat-based, not terminal-based**:
+
+> A person opens Discord on their phone, types a sentence, and puts the phone down. They might go make coffee. They might go to sleep. The agents read the message, break the work into tasks, assign roles among themselves, write code, test it, argue over it, fix what fails, and push when everything passes. The person checks back in the morning. The port is done.
+
+No terminal, IDE, SSH session, or split-pane Vim setup is involved on the human side. **Discord is the interface.** The terminal panes shown in README screenshots belong to the agents, not the developer.
+
+This philosophy was demonstrated at **Ralphthon** ([luma.com/kxoq82yq](https://luma.com/kxoq82yq)) and **OmOCon** ([luma.com/omocon-sf](https://luma.com/omocon-sf)): hackathons where the winning strategy was not staying up all night typing code, but designing agent coordination systems and then going to sleep.
 
 ## Features
 
@@ -142,7 +167,13 @@ The most distinctive aspect of Claw Code is not the code itself but **how it was
 
 — Claw Code PHILOSOPHY.md
 
-Key insight: **The bottleneck has shifted from typing speed to architectural clarity, task decomposition, judgment, taste, and conviction about what is worth building.**
+**Core thesis** (from Sigrid Jin's April 2026 X Article): "If you are staring at the generated Python files, you are looking at the wrong layer. The code is a byproduct. The Rust port that followed is also a byproduct. The thing worth studying is the system that produced all of it."
+
+Key insight: **The bottleneck has shifted from typing speed to architectural clarity, task decomposition, judgment, taste, and conviction about what is worth building.** A badly directed team of fast agents will produce a lot of wrong code very quickly. As agents get faster, the premium on clear thinking increases.
+
+### The Ralphthon Lesson
+
+At Ralphthon and OmOCon events, participants who built good agent coordination, gave clear direction, and stepped back consistently shipped more than those who tried to out-type the machines. The lesson: **execution bandwidth is no longer the constraint.** What remains expensive is knowing what to build, understanding why, and having a clear mental model of the target architecture.
 
 ## Roadmap & Future Directions
 

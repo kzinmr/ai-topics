@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-05-29 | Total pages: 2241 | Indexed entries: 1478 | Not in index: 744
 
-## Entities (709 pages)
+## Entities (710 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -497,7 +497,7 @@
 - [[entities/sequoia-capital]] — Sequoia Capital — Leading VC firm. Published the Service-as-Software thesis (2026) via partner Julien Bek. Backs AI-native service companies like Rillet, Magentic, Harvey.
 - [[entities/sero]] — Sero (known online as **0xSero**) is an open-source developer, AI infrastructure builder, and founder of **Sybil Solutions**. He operates at the intersection of AI agents, blockchain infrastructure, and developer tooling. Major contributor to ElizaOS, creator of Parchi, vLLM Studio, Open Orchestra, TurboQuant, and REAP Expert Swap (MoE compression). Published the "Open Source must win." manifesto (March 2026) committing 10 years to democratizing AI access. Runs an 8x RTX 3090 homelab (192GB VRAM). Co-author of "Back of House" multi-agent patterns with @MilksandMatcha.
 - [[entities/servicenow]] — ServiceNow — enterprise software platform ($92.3B). Build Agent (May 2026) enables natural language app creation with Anthropic-powered AI. Multi-IDE support, governed by default.
-- [[entities/sigrid-jin]] — Creator of **[[concepts/claw-code]]**, the clean-room Rust/Python reimplementation of Claude Code's agent harness. Fastest repo in GitHub history to surpass 100K stars. Featured in WSJ for 25B Claude Code tokens. Korean-Canadian, UBC.
+- [[entities/sigrid-jin]] — Creator of **[[concepts/claw-code]]**, the clean-room Rust/Python reimplementation of Claude Code's agent harness. Fastest repo in GitHub history to surpass 100K stars. Pioneer of Discord-native agent coordination workflow (OmX + clawhip + oh-my-openagent). Featured in WSJ for 25B Claude Code tokens. Korean-Canadian, UBC.
 - [[entities/sglang]] — **Type** | LLM Inference Engine / Serving Framework |
 - [[entities/sheshansh-agrawal]] — **X/Twitter** | @sheshansh_agrawal |
 - [[entities/shkspr-mobi]] — **Terence Eden** (pronounced "ed-en") is a technology policy expert, open-source advocate, web standards contributor, and blogger. Based in the UK, he has worked at the intersection of government t...
@@ -519,6 +519,7 @@
 - [[entities/soundstream]] — **SoundStream (Google)** | Foundational neural audio codec. Fully convolutional encoder-decoder + RVQ, 3–18 kbps variable bitrate. Prototype for EnCodec, DAC, and later tokenizers.
 - [[entities/speech-tokenizer]] — **SpeechTokenizer (Fudan)** | Unified semantic + acoustic speech tokenizer. HuBERT-distilled layer 1 for semantic, remaining layers for acoustic. ~50 Hz, ~4 kbps. Designed for speech LLMs.
 - [[entities/spike]] — **URL:** https://supaiku.com
+- [[entities/sriraam-27upon2]] — Sriraam (@27upon2) — AI researcher, post-training research @ Chakra AI. Built rollouts CLI for open-source continual learning of coding agents using Prime Intellect + OpenCode + prime-rl, inspired by Cursor's real-time RL. See: [[concepts/real-time-rl|real-time-rl]], [[concepts/continual-learning|continual-learning]].
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
 - [[entities/stella-biderman]] — Executive Director of EleutherAI. Mathematician and AI researcher leading open-source AI. Co-author of Pythia, GPT-Neo, BLOOM.
 - [[entities/steve-blank]] — Steve Blank — Creator of Customer Development methodology, launched Lean Startup movement. 30+ year Silicon Valley entrepreneur (4 IPOs). Stanford professor. Author of The Four Steps to the Epiphany.
@@ -722,7 +723,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (708 pages)
+## Concepts (709 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -828,7 +829,7 @@
 - [[concepts/causal-backbone-conjecture]] — The Causal Backbone Conjecture
 - [[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]] — claude-agent-sdk orchestration, hooks, subagents, plan-mode
 - [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]] — claude-code prompt engineering, context management, caching, agent architecture
-- [[concepts/claw-code]] — Claw Code
+- [[concepts/claw-code]] — Claw Code — Open-source AI coding agent harness, clean-room Rust/Python reimplementation of Claude Code architecture. Fastest repo in GitHub history (186K+ stars). Demonstrates a three-part coordination meta-system (OmX + clawhip + oh-my-openagent) enabling Discord-native, human-asleep autonomous development. Agent role cycle: Architect → Executor → Reviewer.
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents — Unified framework for agent cognitive architectures.
 - [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution agents latency, Monty, Pydantic AI, sandbox
 - [[concepts/code-review-agents]] — Code Review Agents — Multi-agent parallel code review using AI (Claude sub-agents, Codex, Cursor Bugbot). Near-zero false positive rate through cross-validation. Triage-driven review cycles.
@@ -1080,6 +1081,7 @@
 - [[concepts/reduce-offload-isolate]] — **Reduce, Offload, Isolate** — Three principles of agent context engineering proposed by Lance Martin (Anthropic) on the High Signal podcast. Reduce (context compression), Offload (move information outside prompts), Isolate (delegate to sub-agents). Manus underwent 5 redesigns; Anthropic strips down Claude Code's harness as models improve. Applying the Bitter Lesson to harness design.- [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating — Prime Intellect's open-source Python library. Makes chat templates programmable, preserves token identity in multi-turn RL, 3x training efficiency. Token-In, Token-Out paradigm.
 - [[concepts/replaid-continuous-diffusion]] — RePlaid: arXiv paper (May 2026) showing continuous diffusion scales competitively with discrete DLMs. SOTA PPL 22.1 on OpenWebText among continuous DLMs. Only 20× compute gap to AR models. Complements [[concepts/nemotron-labs-diffusion]].
+- [[concepts/real-time-rl]] — Training paradigm where models are continuously improved using reward signals from real user interactions in production — avoiding the simulation gap. Pioneered by Cursor for their Composer coding agent (ships new checkpoints every ~5h). Open-source implementation: rollouts by @27upon2 using Prime Intellect + OpenCode. See: [[entities/cursor-ai|cursor-ai]], [[entities/sriraam-27upon2|sriraam]].
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-memory-engineering]] — Agent Memory Engineering: Nicolas Bustamante (Microsoft)'s comparison of Claude Code/Codex/Hermes memory architectures. "Every clever architecture lost. What won was LLM + Markdown + bash." Memory is not portable across harnesses because models are post-trained on their harnesses. Codex Memory Pipeline (Mem0, May 2026): two-phase async pipeline, markdown storage, grep search.
 - [[concepts/agent-media]] — Agent Media — Evolution from wiki to multi-channel Autoresearch Desk. Design philosophy for audience-aware knowledge distribution system integrating Khairallah's Context Engineering + Ronin's Skill Graph.

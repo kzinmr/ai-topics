@@ -1,6 +1,21 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] add | Ingest Cursor real-time RL blog + @27upon2 X Article → 2 new pages + 3 enrichments
+- Raw articles: `raw/articles/2026-04_cursor_real-time-rl-for-composer.md` (Cursor blog), `raw/articles/2026-04-06_27upon2_continual-learning-prime-intellect.md` (X Article, @27upon2)
+- NEW entity: `entities/sriraam-27upon2.md` — Sriraam (@27upon2), AI researcher, post-training @ Chakra AI. Built rollouts CLI for open-source continual learning with Prime Intellect + OpenCode.
+- NEW concept: `concepts/real-time-rl.md` — Real-Time RL training paradigm: production user feedback as reward signals, pioneered by Cursor (~5h checkpoint cycle). Covers reward hacking challenges, open-source implementation via rollouts.
+- ENRICHED entity: `entities/cursor-ai.md` — Added Real-Time RL section with 5-hour cycle, measured gains (+2.28% edit persistence, −3.13% dissatisfied follow-ups, −10.3% latency), reward hacking fixes.
+- ENRICHED concept: `concepts/continual-learning.md` — Added Real-World Implementations section: Cursor Real-Time RL + Rollouts open-source pipeline. Updated references.
+- ENRICHED entity: `entities/prime-intellect.md` — Added Sriraam's rollouts tool as notable third-party environment using Prime's hosted training.
+- index.md: +2 entries, page count updates (Entities: 710, Concepts: 709)
+
+## [2026-05-29] add | Ingest Sigrid Jin X Article "What you need to learn from claw-code repo" → entity + concept enrichment
+- Raw article: `raw/articles/2026-04-01_realsigridjin_what-you-need-to-learn-from-claw-code.md` (X Article, type: x_article, 794 likes / 1056 bookmarks)
+- [[entities/sigrid-jin]] — Expanded Philosophy section: Discord-native workflow, Ralphthon/OmOCon, GitHub stars social dynamics, "Two Kinds of People" framework (Establishment vs Independents). Added agent-coordination, multi-agent, philosophy, entrepreneur tags. Source added.
+- [[concepts/claw-code]] — Rebuilt Three-Part Meta-System into table format (OmX/clawhip/oh-my-openagent). Added Agent Role Cycle (Architect → Executor → Reviewer), Discord-Native Workflow section, Ralphthon Lesson. Expanded Autonomous Development Thesis with "stop staring at the files" thesis. Added agent-coordination, autonomous-agents tags. Source added.
+- Pages Updated: 3 (1 raw article, 2 enriched)
+
 ## [2026-05-29] add | Ingest Addy Osmani "The Orchestration Tax" X Article → concept + entity enrichment
 - [[concepts/orchestration-tax]] — 新規概念ページ作成: Google I/O 2026パネルでRichard Seroterが命名、Addy Osmaniが拡張。AIエージェント開発における「人間がGIL（Global Interpreter Lock）」構造。Amdahlの法則の適用、Busy ≠ Productive、5つの注意設計戦略（backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time）。[[concepts/cognitive-surrender]]、[[concepts/cognitive-debt]]、[[concepts/harness-engineering]]と関連付け。
   - [[entities/addy-osmani]] — "The Orchestration Tax"セクション追加、sources/description/Related Pages更新
