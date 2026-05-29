@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] watchdog | auto-fix index header counts
+
+- **Trigger**: Scheduled watchdog run (17:35 UTC)
+- **Fixed**: `wiki/index.md` header counts — Total 2267→2155, Entities 716→728, Concepts 721→753
+- **Verified**: Zero index corruption (pipe prefix, triple bracket, line-number prefix) — pipeline health confirmed
+- **Reported (needs human review)**: 747 pages missing `sources:`, 604 orphan pages, 821 broken wikilinks (499 unique), 16 pages missing `updated:`, 46 namespace errors across 39 files
+
+
+---
+
 ## [2026-05-29] Metadata retrieval ingest + Doug Turnbull entity — user request (Discord)
 
 - **Trigger**: User asked to ingest https://softwaredoug.com/blog/2026/04/21/metadata-the-3rd-kind-of-retrieval and cross-reference with turbopuffer rank-by-attribute
