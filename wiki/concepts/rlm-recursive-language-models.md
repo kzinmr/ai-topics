@@ -444,7 +444,7 @@ Dynamic Workflows introduce a **third axis** that completes the structural triad
 
 | Dimension | Task Decomposition (Multi-Agent) | Context Decomposition (RLM) | Prog. Sub-Agent Calling (DW) |
 |---|---|---|---|
-| **What is decomposed** | Task → subtasks | Context → context chunks | Task → sub-agent assignments |
+| **What is decomposed** | Task → subtasks (explicit, human-designed) | Context → chunks (explicit) + Task → sub-queries (implicit/emergent) | Task → sub-agent assignments (explicit, model-designed) |
 | **Who decides** | Human (workflow designer) | Model (in REPL code) | Model (in orchestration script) |
 | **Topology** | Fixed / pre-defined graph | Dynamic, model-chosen | Dynamic, script-generated |
 | **Invocation** | Pre-built pipeline | `llm_query()` from code | `spawn_subagent()` from script |
@@ -454,6 +454,8 @@ Dynamic Workflows introduce a **third axis** that completes the structural triad
 | **Verification** | External / human review | Implicit in recursive loop | Explicit adversarial agents |
 | **Scaling axis** | Agent count (horizontal) | Recursion depth (vertical) | Agent count × recursion depth (matrix) |
 | **Failure mode** | Context bloat, coordination overhead | Counting errors at high depth | Independent error surfaces per agent |
+
+**RLM's dual decomposition**: The RLM authors frame their contribution as context-centric ("the choice of decomposition should purely be the choice of an LM"), but in practice, context decomposition **is** task decomposition by another name. When the model writes `llm_query(subset_a)` vs `llm_query(subset_b)`, it's implicitly deciding that subset A needs different analysis than subset B — i.e., assigning different sub-tasks to different recursive calls. The decomposition of context and the decomposition of task are two sides of the same coin; RLM makes task decomposition an emergent property of context manipulation rather than an explicit design step. This contrasts with both traditional multi-agent systems (task decomposition is explicit but human-designed) and Dynamic Workflows (task decomposition is explicit and model-designed).
 
 **Nickadobos framing as "new scaling law dimension"**: The 3-axis model implies a multiplicative scaling relationship:
 
