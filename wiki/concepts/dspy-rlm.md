@@ -21,6 +21,7 @@ related:
   - omar-khattab
   - context-fragments
   - long-context-coding-agents
+  - concepts/codeact
 created: 2026-04-21
 updated: 2026-04-30
 sources:

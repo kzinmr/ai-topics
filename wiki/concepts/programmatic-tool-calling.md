@@ -5,7 +5,7 @@ updated: 2026-05-29
 type: concept
 tags: [tool-use, ai-agents, agent-architecture, agent-infrastructure, sandbox, token-economics, cost-optimization, agent-design-patterns, aws, bedrock]
 aliases: [PTC, code-orchestrated-tool-calling]
-related: [concepts/agent-hosting-aws, concepts/agentic-loop]
+related: [concepts/agent-hosting-aws, concepts/agentic-loop, concepts/codeact]
 sources: [raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md]
 ---
 

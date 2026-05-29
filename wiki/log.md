@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] CodeAct concept page created — Executable Code Actions paradigm
+
+- **Created concept page**: [[concepts/codeact]] — CodeAct (Executable Code Actions) paradigm: LLM agents use Python code as unified action space. ICML 2024 paper by Wang et al. (up to 20% higher success rate over JSON/text). Plan-then-Execute pattern. Relationship to PTC (Programmatic Tool Calling) and RLM (Recursive Language Models) documented. Coverage of Microsoft Agent Framework Hyperlight CodeAct connector. Tags: code-act, plan-then-execute (new tags).
+- **Added tags to SCHEMA.md**: `code-act`, `plan-then-execute` under AI Agents category
+- **Cross-references added**: PTC page ([[concepts/programmatic-tool-calling]]) and RLM page ([[concepts/dspy-rlm]]) now link to CodeAct
+- **Updated index.md**: Added [[concepts/codeact]] under Concepts section
+- **Saved raw sources**:
+  - `raw/papers/2024-02-01_2402.01030_codeact.md` — arXiv:2402.01030 (ICML 2024)
+  - `raw/articles/2026-05-20_microsoft_codeact-agent-framework.md` — Microsoft Learn documentation
+
 ## [2026-05-29] Show Us Your (Agent) Skills Episode 2 — Entity pages created and enriched (Hilary Mason, Eric Ma, Tomasz Tunguz, Bryan Bischof)
 
 - **Created entity page**: [[entities/hilary-mason]] — Co-Founder & CEO of Hidden Door, former Chief Scientist at bitly, founder of Fast Forward Labs (acq. Cloudera). Agentic loops for creative work, three-variations pattern, Hermes harness, Gremlins cron agents. Sources: Episode 2 transcript + web research.
