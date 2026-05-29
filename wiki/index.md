@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2241 | Indexed entries: 1478 | Not in index: 744
+> Last updated: 2026-05-29 | Total pages: 2242 | Indexed entries: 1479 | Not in index: 744
 
 ## Entities (710 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -724,7 +724,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (709 pages)
+## Concepts (710 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -921,6 +921,7 @@
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for Agents
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
+- [[concepts/knowledge-storage-spectrum]] — Knowledge Storage Spectrum — Weights, KV cache, RAG, and context as points on a single spectrum of trade-offs between latency, cost, persistence, and expressiveness. The storage form is an implementation detail.
 - [[concepts/korean-ai]] — Korean AI Ecosystem
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/lexical-search]] — Lexical Search: token-based matching against inverted index. Tokenization, query processing (AND/OR), multi-field search (DisMax, BM25F). Foundation for BM25 scoring. Doug Turnbull's "Cheat at Search Essentials" course + BM25F derivation.
