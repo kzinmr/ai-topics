@@ -1,6 +1,32 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] health | Wiki health auto-fix
+
+### Auto-Fix Summary
+- **Index corruption**: All clean (pipe/line-number/triple-bracket/space-prefix: 0) ✅
+- **Ghost entry**: `entities/pi-coding-agent` — valid redirect alias (not a ghost) ✅
+- **Orphan registration**: Added 26 orphan pages to index.md (6 entities + 20 concepts)
+
+### Orphan Pages Added to Index
+**Entities (6):** alan-nichol, eleanor-berger, john-berryman, matthew-honnibal, nico-gerold, paul-iuzstin
+
+**Concepts (20):** agent-engineering-guide-2026, dspy, graph-db-overengineering-rag, illusion-of-thinking, lambda-rlm, main-branch-development, managed-agents-sre-incident-response, monty-sandbox, multi-agent-consensus-patterns, multi-agents-whats-actually-working, multiple-representations-rag, neurosymbolic-ai, offline-evaluation, skill-architecture-patterns, skill-retrieval-augmentation, sparse-signal-loop, tensorrt-llm, token-economics, tokenmaxxing, turbopuffer-rank-by-attribute
+
+### Remaining Issues (manual attention)
+- **743 orphan pages** still not indexed (654 flat-path regular, 83 subdirectory, 3 date-prefixed, 2 Japanese, 1 @-prefixed)
+- **1,012 stale pages** (>30 days since last update)
+- **3,901 unprocessed raw articles** (60% of total)
+- **515 unique tags** (tag taxonomy drift likely present)
+
+### Commit
+- `wiki/index.md` — +26 entries, counts updated
+- `wiki/log.md` — health run logged
+
+
+
+---
+
 ## [2026-05-29] watchdog | auto-fix index header counts
 
 - **Trigger**: Scheduled watchdog run (17:35 UTC)
