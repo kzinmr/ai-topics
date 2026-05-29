@@ -36,7 +36,7 @@
       "url": "https://danluu.com/writing-non-advice/",
       "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--writing-non-advice--43053736.md",
       "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ ライティングスタイルに関するエッセイ。Paul Graham、Joel Spolsky、Steve Yegge、Julia Evansの文体比較と「自分のスタイルを見つけよ」という主張。技術的内容ではあるがAI/LLM固有のトピックではない。danluu.comは過去にfsyncgate等々でskip処理済み。",
+      "reason_ja": "★☆☆☆☆ ライティングスタイルに関するエッセイ。Paul Graham、Joel Spolsky、Steve Yegge、Julia Evansの文体比較と「自分のスタイルを見つけよ」という主張。技術的内容ではあるがAI/LLM固有のトピックではない。",
       "candidate_wiki_path": null,
       "body_excerpt": "I see a lot of essays framed as writing advice which are actually thinly veiled descriptions of how someone writes..."
     },

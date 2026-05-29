@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2258 | Indexed entries: 1494 | Not in index: 746
+> Last updated: 2026-05-29 | Total pages: 2262 | Indexed entries: 1498 | Not in index: 746
 
-## Entities (712 pages)
+## Entities (715 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -45,6 +45,7 @@
 - [[entities/gemini-cli]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.
 - [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
+- [[entities/glimpse]] — Glimpse — Native macOS WKWebView micro-UI library (Node.js bindings). Sub-50ms window startup, bidirectional JSON. Used for generative UI in terminal-based coding agents.
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
@@ -66,6 +67,7 @@
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler) — MCP server product. GitHub·Trello MCP for Cursor/Claude Code, centralized OAuth management, enterprise access control·audit logging.
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Andreessen Horowitz (a16z), co-author of Mosaic browser, Netscape co-founder. AI optimist, "Software Is Eating the World" author.
 - [[entities/microsoft-agent-framework]] — Microsoft Agent Framework v1.0: unified Semantic Kernel + AutoGen SDK for .NET/Python, multi-agent orchestration, MCP/A2A support
+- [[entities/michael-lively]] — Michael Lively — Software engineer and blogger. Reverse-engineered Claude's generative UI system and recreated it for pi terminal coding agent using Glimpse + morphdom.
 - [[entities/microsoft-ai-frontiers]] — Microsoft AI Frontiers — Boutique research lab inside Microsoft Research. Produced [[echo-rl|ECHO]] (hybrid GRPO + environment prediction for CLI agents). Led by Ahmed Awadallah.
 - [[entities/mikhail-parakhin]] — CTO of Shopify. Former Microsoft division head (Windows, Edge, Bing, Ads). Led Shopify's Tangle/Tangent/SimGym AI infrastructure triad. Advocates no token limits and non-transformer architectures.
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
@@ -396,6 +398,7 @@
 - [[entities/micahflee]] — **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools...
 - [[entities/michael-stapelberg]] — **Blog** | michael.stapelberg.ch |
 - [[entities/miguel-grinberg]] — **Miguel Grinberg** is a Python educator, open-source maintainer, and software engineer best known for his influential tutorials, deep technical blog posts, and long-running contributions to the Py...
+- [[entities/mike-piccolo]] — Mike Piccolo — Founder & CEO of iii (open-source agent orchestration engine), creator of the "Harness Is the Backend" thesis and workers harness architecture. Co-Founder/CTO of FullStack Labs.
 - [[entities/milksandmatcha]] — Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. Co-author of the **"Back of House"** framework with @0xSero. Recent shares: YouTube interviews with Jason Liu (OpenAI/Codex) on zero-latency AI and Sara Hooker (Adaption/DeepMind) on GPU bottlenecks (May 2026).
 - [[entities/mimi]] — **Mimi (Kyutai)** | Ultra-low-rate streaming speech codec: 24 kHz → 12.5 Hz → 1.1 kbps, 80 ms latency. WavLM-distilled semantic layer. Designed for Moshi full-duplex spoken dialogue.
 - [[entities/minimax]] — MiniMax AI — Chinese AI company, M2.7 coding model scoring 56-59 on SWE-Bench Pro (open weights). Part of China's agentic coding sprint alongside Kimi K2.6 and Z.ai GLM-5.1.
@@ -1458,6 +1461,7 @@
 - [[concepts/filesystem-memory]] — Filesystem as Agent Memory — Using standard file I/O for persistent agent state.
 - [[concepts/fineweb]] — FineWeb — High-quality pre-training dataset bridging proprietary and public data gaps.
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention (FA1-FA4) PyTorch Educational Implementation.
+- [[concepts/generative-ui]] — Generative UI (Claude Visualizer) — Anthropic's show_widget system for rendering interactive HTML widgets inline in claude.ai. Progressive disclosure pattern (read_me), streaming DOM injection, design guidelines. Recreated for terminal agents using Glimpse + morphdom.
 
 ## Events (7 pages)
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson

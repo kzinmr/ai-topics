@@ -1,6 +1,15 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] X bookmarks ingest | 3 articles processed: iii workers harness, Hermes guide, Claude mid-conversation system messages
+
+- **Created entity page**: [[entities/mike-piccolo]] — Founder & CEO of iii, "Harness Is the Backend" thesis, workers harness architecture. Sources: iii.dev, LinkedIn, GitHub, Motia blog.
+- **Enriched entity page**: [[entities/iii-platform]] — Added Workers Harness (2026) section: 15 jobs enumeration, 11-worker stack architecture, 7-state turn FSM, latency optimizations, "thin vs thick is a slider" thesis. Replaced deprecated iii-experimental/harness references with iii-hq/workers.
+- **Raw article saved**: `raw/articles/2026-05-28_mike-piccolo-build-your-own-agent-harness-iii.md` — Mike Piccolo's "How to build your own agent harness???" X article (full plain_text via bookmark, getxapi: false). Covers iii workers harness, 15 jobs, 7-state FSM, replaceable layers.
+- **Raw article saved**: `raw/articles/2026-05-27_hermes-agent-complete-guide.md` — "HERMES AGENT: THE COMPLETE GUIDE" X article by @IBuzovskyi (full plain_text via bookmark). Covers installation, model selection, /goal, dashboard, self-improvement, security.
+- **Raw article saved**: `raw/articles/2026-05-28_claude-mid-conversation-system-messages.md` — Anthropic API docs on mid-conversation system messages with Opus 4.8. Preserves prompt cache while injecting per-turn system instructions.
+- **Enriched concept page**: [[concepts/prompt-caching]] — Added Opus 4.8 mid-conversation system messages as a caching-aware technique for dynamic system-level instructions without cache invalidation.
+
 ## [2026-05-29] active-crawl | 5 trending topics: Pointer OSWorld SOTA, DNS-AID, MiniMax MSA, GRAM, Project Lightwell
 
 ### Pages Created
@@ -4690,3 +4699,11 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 ### [2026-05-29] Create | Knowledge Storage Spectrum concept page
 - **[[concepts/knowledge-storage-spectrum]]** — Created from Discord conversation on KV cache as swappable knowledge. Frames model weights, KV cache (MLA, prompt caching, CAG), RAG, and in-context prompts as points on a single spectrum of trade-offs: latency, cost, persistence, expressiveness. Key insight: storage form is an implementation detail; what matters is the economic and operational profile. Covers Google Titans (test-time learning), DeepSeek MLA (57× KV compression), MemGPT/Letta (OS-style paging), Anthropic prompt caching (90% cost reduction). Introduces "KV cache as persistent store" pattern and "fine-tuning as heavy knowledge distillation."
 - Updated `wiki/index.md` (+1 concept page, +1 indexed entry).
+
+### [2026-05-29] Ingest | Michael Lively's reverse-engineering of Claude generative UI
+- **New raw article**: `raw/articles/2026-03-13_michaellivs_reverse-engineering-claude-generative-ui.md` — Michael Lively reverse-engineers Anthropic's show_widget generative UI system on claude.ai, extracts verbatim design guidelines from devtools, recreates for pi terminal agent using Glimpse + morphdom.
+- **New concept page**: [[concepts/generative-ui]] — Claude Visualizer (show_widget). Architecture: tool call HTML parameter, read_me progressive disclosure, streaming DOM injection, design guidelines (colors, typography, dark mode, SVG). Terminal reimplementation with Glimpse + morphdom DOM diffing.
+- **New entity page**: [[entities/michael-lively]] — Software engineer/blogger (michaellivs.com). Reverse-engineered Claude's generative UI and sandbox architecture. Terminal-based coding agent tooling.
+- **New entity page**: [[entities/glimpse]] — Native macOS WKWebView micro-UI library (Node.js). Sub-50ms startup, bidirectional JSON. Used for generative UI in pi terminal agent.
+- **SCHEMA.md**: Added tags `terminal` (Engineering), `macos` (Infrastructure), `webview` (Infrastructure).
+- Updated `wiki/index.md` (+1 concept, +2 entities, +3 indexed entries).
