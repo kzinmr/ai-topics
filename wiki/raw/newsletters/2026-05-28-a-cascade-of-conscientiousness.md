@@ -1,0 +1,86 @@
+---
+title: "A Cascade of Conscientiousness"
+date: 2026-05-28
+processed_at: 2026-05-29T07:10:19.294846+00:00
+source_label: "uid=151"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-05-28
+
+**Subject:** A Cascade of Conscientiousness
+**Collected:** 2026-05-29T07:10:19.294853+00:00
+**Articles linked:** 18
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI9MmZseDYmbmV4dD1odHRwcyUzQSUyRiUyRnd3dy5oeXBlcmRpbWVuc2lvbmFsLmNvJTJGcCUyRmEtY2FzY2FkZS1vZi1jb25zY2llbnRpb3VzbmVzcyIsInAiOjE5OTQ2ODU1NSwicyI6MjI0NDA0OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzc5OTY4Nzc5LCJleHAiOjIwOTU1NDQ3NzksImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.UDNJxDflZoswMJ4jzOM3oiHtt3t2OWEqbYhgmyT4seY?
+
+## 2. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=199468555&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTk0Njg1NTUsImlhdCI6MTc3OTk2ODc3OSwiZXhwIjoxNzgyNTYwNzc5LCJpc3MiOiJwdWItMjI0NDA0OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.McrpUFeSb32IQs1W7TortgWSJ4q0tKq9okp4Fu3bIUo
+
+## 3. Link
+
+- **URL:** https://substack.com/@deanwball
+
+## 4. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=199468555&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTk0Njg1NTUsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzc5OTY4Nzc5LCJleHAiOjE3ODI1NjA3NzksImlzcyI6InB1Yi0yMjQ0MDQ5Iiwic3ViIjoicmVhY3Rpb24ifQ.SgJs2EpEHxXUax00oMBdBg_7-b-S1uCeD8QNuwkFl14&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=199468555&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTk0Njg1NTUsImlhdCI6MTc3OTk2ODc3OSwiZXhwIjoxNzgyNTYwNzc5LCJpc3MiOiJwdWItMjI0NDA0OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.McrpUFeSb32IQs1W7TortgWSJ4q0tKq9okp4Fu3bIUo&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=199468555&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTk0Njg1NTUsImlhdCI6MTc3OTk2ODc3OSwiZXhwIjoxNzgyNTYwNzc5LCJpc3MiOiJwdWItMjI0NDA0OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.McrpUFeSb32IQs1W7TortgWSJ4q0tKq9okp4Fu3bIUo
+
+## 7. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvaHlwZXJkaW1lbnNpb25hbC9wL2EtY2FzY2FkZS1vZi1jb25zY2llbnRpb3VzbmVzcz91dG1fc291cmNlPXN1YnN0YWNrJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXJlc3RhY2stY29tbWVudCZhY3Rpb249cmVzdGFjay1jb21tZW50JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveE9UazBOamcxTlRVc0ltbGhkQ0k2TVRjM09UazJPRGMzT1N3aVpYaHdJam94TnpneU5UWXdOemM1TENKcGMzTWlPaUp3ZFdJdE1qSTBOREEwT1NJc0luTjFZaUk2SW5CdmMzUXRjbVZoWTNScGIyNGlmUS5NY3JwVUZlU2IzMklRczFXN1RvcnRnV1NKNHEwdEtxOW9rcDRGdTNiSVVvIiwicCI6MTk5NDY4NTU1LCJzIjoyMjQ0MDQ5LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3Nzk5Njg3NzksImV4cCI6MjA5NTU0NDc3OSwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.l0xjukiWXQdEET3zGEdP0OfZHuC-BmIxJQJ3-LOHTb4?&utm_source=substack&utm_medium=email
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/hyperdimensional/p/a-cascade-of-conscientiousness?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 9. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1wb3N0JnV0bV9jYW1wYWlnbj1lbWFpbC1jaGVja291dCZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3Lmh5cGVyZGltZW5zaW9uYWwuY28lMkZwJTJGYS1jYXNjYWRlLW9mLWNvbnNjaWVudGlvdXNuZXNzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzTnprNU5qZzNOemtzSW1WNGNDSTZNVGM0TWpVMk1EYzNPU3dpYVhOeklqb2ljSFZpTFRJeU5EUXdORGtpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LlNBY2h3T0U0amhINUtWcW9acEZaUGxSc21TZVFFelpqcXFJSlJpbFhId00iLCJwIjoxOTk0Njg1NTUsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3OTk2ODc3OSwiZXhwIjoyMDk1NTQ0Nzc5LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.-MQ_o_VUgVQMvBBRbY43dzkCFloDJl-8zAQkn4H0jJk?&utm_medium=email&utm_source=subscribe-widget&utm_content=199468555
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/3185549e-7d5d-4be0-b12a-e1dee38b6367?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/32f8d53a-a16e-4bc2-9964-5adb2521d6db?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/bfe7cd4d-b560-4810-9072-27958318a6d6?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/6318f0c7-bc76-44cd-b48a-9e82ddeffb56?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/8613e1d3-d85d-4d1a-abdd-f852348616d0?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/1333a8fa-9e83-4fb2-8162-36311e04d494?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 16. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1wb3N0JnV0bV9jYW1wYWlnbj1lbWFpbC1jaGVja291dCZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3Lmh5cGVyZGltZW5zaW9uYWwuY28lMkZwJTJGYS1jYXNjYWRlLW9mLWNvbnNjaWVudGlvdXNuZXNzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzTnprNU5qZzNOemtzSW1WNGNDSTZNVGM0TWpVMk1EYzNPU3dpYVhOeklqb2ljSFZpTFRJeU5EUXdORGtpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LlNBY2h3T0U0amhINUtWcW9acEZaUGxSc21TZVFFelpqcXFJSlJpbFhId00iLCJwIjoxOTk0Njg1NTUsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3OTk2ODc3OSwiZXhwIjoyMDk1NTQ0Nzc5LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.-MQ_o_VUgVQMvBBRbY43dzkCFloDJl-8zAQkn4H0jJk?&utm_source=substack&utm_medium=email&utm_content=postcta
+
+## 17. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9hY3Rpb24vZGlzYWJsZV9lbWFpbD90b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RrME5qZzFOVFVzSW1saGRDSTZNVGMzT1RrMk9EYzNPU3dpWlhod0lqb3hPREV4TlRBME56YzVMQ0pwYzNNaU9pSndkV0l0TWpJME5EQTBPU0lzSW5OMVlpSTZJbVJwYzJGaWJHVmZaVzFoYVd3aWZRLmYybEZ0TDhNeWFUSW5HQVVuYU5UZF85Q2poR3lXdVdMcDJxOGV0cUxlVFkiLCJwIjoxOTk0Njg1NTUsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3OTk2ODc3OSwiZXhwIjoyMDk1NTQ0Nzc5LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.MwPhq2n6BJK9-s5GSFl9Er3G_lUoUz-AzASsti5kv7o?
+
+## 18. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoxOTk0Njg1NTUsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3OTk2ODc3OSwiZXhwIjoyMDk1NTQ0Nzc5LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.agUXocfUeBVHihLXZJC3qBoZw2dhc3et2ApUd9zF5Jw?
+

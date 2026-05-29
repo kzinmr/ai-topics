@@ -10,6 +10,7 @@ sources:
   - https://alexzhang13.github.io/blog/2025/rlm/
   - https://dspy.ai/api/modules/RLM/
   - https://github.com/alexzhang13/rlm
+  - raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not.md
 ---
 
 # RLM (Recursive Language Models)
@@ -24,6 +25,44 @@ Recursive Language Models (RLMs) are a task-agnostic inference paradigm proposed
 - **Minimal:** [github.com/alexzhang13/rlm-minimal](https://github.com/alexzhang13/rlm-minimal) (749 stars)
 - **Docs:** [alexzhang13.github.io/rlm](https://alexzhang13.github.io/rlm/)
 - **PyPI:** `rlms` — 6,034 downloads/month
+
+## What RLM Is and Is Not (Author Clarifications)
+
+In response to community criticism, Alex Zhang published a detailed clarification on May 28, 2026 that explicitly defines RLM's scope by what it does **not** claim, and what makes it genuinely novel.
+
+### Five Things RLM Does NOT Claim
+
+1. It does **not** claim to be the first to explore an LM talking to an LM
+2. It does **not** claim to be the first to explore sub-agents
+3. It does **not** claim to be the first to argue for CodeAct-style execution
+4. It does **not** claim to be the first to propose recursion with respect to an LM
+5. It does **not** claim to be the first to propose any of the independent features that make an RLM (context offloading, PTC, etc.)
+
+Each of these ideas has precedent in prior work. RLM's contribution is not in inventing any single building block.
+
+### The Real Novelty: Composition + Sufficiency
+
+> "All of the ideas that make up an RLM are somewhat intuitive and implemented in various ways, many with little success. **The composition of them, and the lack of a need for any more, is what makes it unique.**" — Alex Zhang
+
+The insight has two sides:
+- **Composition**: Which specific building blocks are assembled together (REPL-as-context-variable + recursive sub-calls + CodeAct-style execution + programmatic sub-agent invocation)
+- **Sufficiency**: The argument that this specific set of components is *enough* — no additional mechanisms are needed for robust long-context reasoning
+
+This is why RLM resists being reduced to "just X + Y" — every individual component has been tried before, but the *particular* composition and the *completeness* argument are novel.
+
+### RLM as a Normative Argument for Abstractions
+
+Beyond the technical contribution, Zhang reframes RLM as a **prescriptive argument**:
+
+> "The paper is an argument for exactly the type of abstractions one should define to better enable a sub-agent calling system (i.e. context offloading, CodeAct-style execution, programmatically sub-agent calling)."
+
+RLM is not merely describing a technique — it is arguing for **what abstractions matter** in agent design. The paper proposes that the line between a sub-agent calling system and a "language model" is blurry, and that a **well-designed, general enough abstraction yields a meaningful "language model."** When the scaffold abstraction is sufficiently principled, the distinction between "model capability" and "system capability" dissolves.
+
+### Why This Matters for Claude Code
+
+Zhang notes that Claude Code's recent releases have moved away from standard ReAct-style loops with JSON tool-calling toward RLM-like abstractions. The Dynamic Workflows launch (May 2026) is significant not because Anthropic "adopted RLM," but because **frontier engineering converged on the same abstractions that RLM formalized** — an independent validation of the thesis that these specific components, composed together, form a sufficient foundation for agent reasoning at scale.
+
+Source: [[raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not|a1zhang RLM Clarification Tweet (May 28, 2026)]]
 
 ## Core Architecture
 
@@ -496,6 +535,20 @@ The a1zhang thread generated significant discussion:
 - **Counterarguments**: "Parallelizing work and RLMs are different" — RLM's defining feature is context-centric decomposition, not just parallelism. "They don't dynamically query the prompt — it's prompt → script → call subagents on each prompt."
 - **Support**: "The unlock is the model deciding when verification is actually done. That's what makes this RLM and not just parallel CoT."
 - **Key insight from a1zhang**: "Invoking sub-agents programmatically... has been the key missing feature in coding agents for a while, and is what RLMs have been arguing we need for a long time. Essentially now, CC can function as an RLM."
+
+### Claude Code's Architectural Evolution Toward RLM
+
+Zhang contextualizes Dynamic Workflows within a broader trend:
+
+> "The last few releases in Claude Code have moved away from standard ReAct-style loops with JSON tool-calling to more of this abstraction."
+
+This matters because it frames DW not as a one-off feature but as the **culmination of a directional shift** in Claude Code's architecture: from turn-by-turn ReAct (human-in-the-loop JSON tool calls) → model-determined orchestration (CodeAct-style execution with programmatic sub-agent invocation). Each release has incrementally moved Claude Code closer to the RLM abstraction — DW is the point where the convergence became undeniable.
+
+This is also why Zhang calls DW "RLM-like" rather than "RLM": the abstraction is converging, but the full RLM vision includes **training-level changes** (models explicitly taught to reason recursively) that scaffolding alone doesn't achieve. The convergence at the architectural level is significant validation; convergence at the training level remains to be seen.
+
+### Author Clarifications on Scope
+
+See [[#what-rlm-is-and-is-not-author-clarifications|What RLM Is and Is Not]] for Zhang's explicit May 2026 clarification of what RLM does and does not claim — including the argument that RLM's novelty lies in **composition + sufficiency**, not in any individual component.
 
 See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models (RLM)]]
 

@@ -42,6 +42,10 @@ A dynamic workflow is a **JavaScript orchestration script** that coordinates sub
 
 Dynamic Workflows have sparked significant discussion about their relationship to [[concepts/rlm-recursive-language-models]]. Alex Zhang (@a1zhang), creator of the RLM framework, claims Opus 4.8 + Dynamic Workflows constitutes "perhaps the first instance of a frontier model seriously trained to be an RLM."
 
+Zhang's broader observation: "The last few releases in Claude Code have moved away from standard ReAct-style loops with JSON tool-calling to more of this abstraction." Dynamic Workflows represent the culmination of a directional shift — from turn-by-turn human-in-the-loop tool calls toward model-determined orchestration with programmatic sub-agent invocation. Each incremental Claude Code release has moved closer to RLM-like abstractions; DW is the point where the convergence became undeniable.
+
+In a May 28, 2026 clarification, Zhang explicitly defined what RLM does and does not claim, emphasizing that the novelty is in **composition + sufficiency** — which specific components are assembled, and the argument that no additional components are needed. See the [[concepts/rlm-recursive-language-models#what-rlm-is-and-is-not-author-clarifications|RLM page: Author Clarifications]] for the full scope definition.
+
 See [[concepts/rlm-recursive-language-models#from-2-axis-to-3-axis-programmatic-sub-agent-calling-psac|RLM page: 3-Axis Framework]] for the full structural comparison between Task Decomposition (multi-agent), Context Decomposition (RLM), and Programmatic Sub-Agent Calling (Dynamic Workflows).
 
 ### The 3-Axis Structural Framework

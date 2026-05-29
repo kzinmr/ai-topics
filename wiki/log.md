@@ -4595,6 +4595,12 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 **Claim**: Opus 4.8 + Dynamic Workflows = "first frontier model seriously trained to be an RLM"
 **Assessment**: Substantial validity with nuance. DW implement scaffold-level RLM (programmatic sub-agent invocation, context isolation, model-driven decomposition) but no evidence of training-level changes. Better characterized as "scaffold-level RLM" or "RLM-adjacent." First production-grade coding agent with model-determined decomposition + programmatic sub-agent invocation.
 
+### Follow-up: a1zhang Author Clarifications (May 28 tweet)
+- **New raw article**: `raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not.md` — a1zhang response to @jxmnop criticism. Explicitly lists 5 things RLM does NOT claim (LM↔LM, sub-agents, CodeAct, recursion, individual features). Defines novelty as **composition + sufficiency**. Reframes RLM as a normative argument for abstractions. Argues the line between sub-agent system and "language model" is blurry.
+- **RLM page new section**: "What RLM Is and Is Not (Author Clarifications)" — covers 5 non-claims, composition+sufficiency framing, RLM as normative argument, and Claude Code convergence context. Added source to frontmatter.
+- **RLM page DW section**: Enhanced with "Claude Code's Architectural Evolution Toward RLM" — Zhang's observation that CC releases have moved from ReAct-style to RLM-like abstractions. Cross-reference to author clarifications section.
+- **[[concepts/dynamic-workflows]]**: Updated RLM relationship section with author's Claude Code evolution observation and cross-link to RLM clarifications.
+
 ### [2026-05-29] Update | 3-Axis Structural Framework: RLM × PTC × PSAC
 - **[[concepts/rlm-recursive-language-models]]** — Added "From 2-Axis to 3-Axis: Programmatic Sub-Agent Calling (PSAC)" section. Extended the RLM×PTC 2-axis framework to include the Agent Axis (Dynamic Workflows as Programmatic Sub-Agent Calling). Complete 10-dimension structural comparison table: Task Decomposition vs Context Decomposition vs Programmatic Sub-Agent Calling. Incorporated @nickadobos's "new scaling law dimension" framework (Base Model × Thinking Time × Generated Harness Compute).
 - **[[concepts/dynamic-workflows]]** — Updated RLM relationship section with 3-axis framework summary table and cross-reference to the full analysis on the RLM page.
