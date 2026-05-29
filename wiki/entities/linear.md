@@ -2,7 +2,7 @@
 title: "Linear"
 type: entity
 created: 2026-05-08
-updated: 2026-05-21
+updated: 2026-05-29
 tags:
   - company
   - developer-tooling
@@ -10,11 +10,13 @@ tags:
   - code-intelligence
   - performance
   - local-first
+  - code-review
 aliases: ["Linear.app"]
 sources:
   - https://linear.app
   - raw/articles/2026-05-14_linear_code-intelligence-linear-agent.md
   - raw/articles/2025-xx-how-is-linear-so-fast-technical-breakdown.md
+  - raw/articles/linear.app--code-review-should-be-fast--2026-05-28.md
 ---
 
 # Linear
@@ -26,7 +28,7 @@ Purpose-built project management and issue tracking tool designed for high-perfo
 | **Type** | Private (VC-backed, Unicorn) |
 | **Founded** | 2019 |
 | **Leadership** | Karri Saarinen (Co-Founder & CEO), Jori Lallo (Co-Founder & CPO), Tuomas Artman (Co-Founder & CTO), Cristina Cordova (COO) |
-| **Key Products** | Linear (issue tracking, sprints, roadmaps), Linear Agent, Linear Asks |
+| **Key Products** | Linear (issue tracking, sprints, roadmaps), Linear Agent, Linear Asks, **Linear Diffs (May 2026)** |
 | **Website** | [linear.app](https://linear.app) |
 | **Tech Blog** | [linear.app/blog](https://linear.app/blog) ("Now") |
 
@@ -40,7 +42,28 @@ Purpose-built project management and issue tracking tool designed for high-perfo
 - **Linear**: Fast issue tracking, sprint planning, and roadmap management
 - **Linear Agent**: AI agent integrated into workflows for automated issue resolution; includes [[concepts/linear-agent-code-intelligence|Code Intelligence]] (May 2026) for codebase-aware reasoning
 - **Linear Asks**: Structured intake for product requests
+- **Linear Diffs**: Code review inside Linear (launched May 28, 2026). Pull requests reviewed directly within the Linear workspace, attached to issues and projects. Key features: guided reviews (structural chapter-based diff navigation), structural diff highlighting (strips formatting noise), fast near-instant loading. Designed for the agent era where PR volumes are growing rapidly.
 - Linear for Microsoft Teams, MCP support, multi-level sub-teams
+
+## Code Review: Linear Diffs (May 2026)
+
+Linear Diffs is a new code review experience built directly into the Linear workspace, launched May 28, 2026. It addresses the pain that "code review has stayed painfully slow while everything else sped up" — especially as AI coding agents increase PR volume.
+
+### Design Philosophy
+- **Fast**: Reviews should open near-instantly
+- **Focused**: Show what matters, strip out the noise
+- **In context**: Code sits next to the issue, project, and customer signal behind the change
+
+### Key Features
+- **Guided reviews**: Breaks diffs into chapters that follow the order the work was reasoned through. Core change first, then consequences, auxiliary changes and glue code kept separate.
+- **Structural diff highlighting**: Strips formatting-only changes, leaving only the actual logic change visible.
+- **Integrated context**: Issue, project, and customer signal that inspired the change are visible alongside the diff.
+- **Priority-aware review queue**: Reviews sit inside Linear's task system where priority is visible next to all other work.
+
+### Strategic Implications
+Diffs positions Linear as an end-to-end software development workspace competing directly with GitHub's PR review flow. This, combined with Linear Agent and Code Intelligence, creates a unified issue → code → review pipeline within a single tool. The launch announcement explicitly frames agents' growing PR volume as a key driver: "the speed gained from using agents gets swallowed in review."
+
+Source: [Code review should be fast](https://linear.app/now/code-review-should-be-fast) (May 28, 2026)
 
 ## Performance Architecture
 
@@ -99,3 +122,5 @@ The database the UI reads from lives in the browser via IndexedDB. The server is
 - [[entities/factory]] — Factory Droids integrate with Linear for agentic development
 - [[entities/atlassian]] — Jira is Linear's primary incumbent competitor
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence (May 2026)
+- [[concepts/code-review]] — Code review as a concept and its evolution in the AI agent era
+- [[concepts/gemini-managed-agents]] — Competing managed agent infrastructure from Google

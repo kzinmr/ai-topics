@@ -1,6 +1,26 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] x-accounts-scan | X account scan wiki ingestion (22:30 UTC)
+
+11 new posts from 12 scanned accounts (83 tracked). Processed key stories:
+
+**Created pages:**
+- `concepts/gemini-managed-agents` — New concept page for Google's hosted agent runtime API (Gemini Managed Agents / Antigravity). Source: ai.google.dev quickstart.
+
+**Updated pages:**
+- `entities/linear` — Added Linear Diffs section (code review launch, May 28, 2026). Updated Key Products, tags, sources. Added Diffs architecture and strategic implications.
+- `concepts/monty-sandbox` — Added Current Status section with latest stats (7,243 stars, v0.0.17, 40 contributors). Added Samuel Colvin's May 2026 mention about Monty for codemode isolation.
+- `concepts/code-review` — Upgraded from stub to active page. Evolution of code review in agent era, Linear Diffs coverage.
+
+**Raw articles saved:**
+- `raw/articles/ai.google.dev--managed-agents-quickstart--2026-05-29.md`
+- `raw/articles/linear.app--code-review-should-be-fast--2026-05-28.md`
+- `raw/articles/github.com--pydantic-monty--2026-05-29.md`
+
+**Index updated:** Added code-review, gemini-managed-agents; updated linear, monty-sandbox entries.
+**Sources:** X accounts scan via @_philschmid (Gemini Managed Agents), @karrisaarinen (Linear Diffs), @samuelcolvin (Monty), @burkov (LoRA/AlphaFold on ChapterPal), @hugobowne (Agent Skills Ep4 YouTube), @willmcgugan (retro computing — skipped).
+
 ## [2026-05-29] ingest | Dreaming nightly knowledge consolidation
 
 ### Takes

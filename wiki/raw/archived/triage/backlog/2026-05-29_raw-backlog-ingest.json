@@ -1,0 +1,37 @@
+[
+  {
+    "filename": "danluu.com--empirical-pl--a6f0c41c.md",
+    "url": "https://danluu.com/empirical-pl/",
+    "recommended_action": "skip",
+    "reason": "Non-AI: Dan Luu literature review on static vs dynamic typing benefits. Programming language debate with empirical study analysis. No LLM/agent relevance.",
+    "stars": 1
+  },
+  {
+    "filename": "filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-4-non-fiction---893d1378.md",
+    "url": "https://www.filfre.net/2026/04/the-mystery-of-rennes-le-chateau-part-4-non-fiction-meets-fiction/",
+    "recommended_action": "skip",
+    "reason": "Non-AI: Historical essay on Rennes-le-Chateau mystery, Holy Blood/Holy Grail pseudo-history. No AI relevance.",
+    "stars": 1
+  },
+  {
+    "filename": "paulgraham.com--startupfunding-html--84a01a61.md",
+    "url": "http://www.paulgraham.com/startupfunding.html",
+    "recommended_action": "skip",
+    "reason": "Non-AI: Classic 2005 Paul Graham essay on venture funding mechanics (friends/family, angels, VCs, IPOs). Business/startup advice, no AI relevance.",
+    "stars": 1
+  },
+  {
+    "filename": "filfre.net--2026-02-gabriel-knight-3-blood-of-the-sacred-blood-of-the-da--31b30c20.md",
+    "url": "https://www.filfre.net/2026/02/gabriel-knight-3-blood-of-the-sacred-blood-of-the-damned/",
+    "recommended_action": "skip",
+    "reason": "Non-AI: Game history article about Sierra On-Line Gabriel Knight 3 development, adventure game genre history. Retro gaming content.",
+    "stars": 1
+  },
+  {
+    "filename": "blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-6-a-page-analytics-sol--1731e3e7.md",
+    "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-6-a-page-analytics-solution",
+    "recommended_action": "skip",
+    "reason": "Non-AI: SQLAlchemy 2 tutorial chapter on web traffic analytics database design. Pure web dev/ORM content.",
+    "stars": 1
+  }
+]

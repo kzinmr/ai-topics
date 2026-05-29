@@ -5,13 +5,15 @@ aliases:
   - monty-sandbox
   - pydantic-monty
 created: 2026-04-25
-updated: 2026-04-29
+updated: 2026-05-29
 tags:
   - concept
   - sandbox
   - developer-tooling
   - coding-agents
   - agent-safety
+  - programmatic-tool-calling
+  - pydantic
 status: complete
 sources:
   - url: "https://github.com/pydantic/monty"
@@ -24,6 +26,7 @@ sources:
     title: "Hack Monty: Win $5000 Breaking Pydantic's Python Sandbox"
   - url: "https://simonwillison.net/2026/Feb/6/pydantic-monty/"
     title: "Running Pydantic's Monty Rust Sandboxed Python Subset in WebAssembly (Simon Willison, 2026)"
+  - raw/articles/github.com--pydantic-monty--2026-05-29.md
 ---
 # Monty Sandbox
 
@@ -51,6 +54,18 @@ LLM-generated Python code
 - **Built-in type checking** — ships `ty` (Ruff's type checker)
 - **Snapshot-capable** — state can be serialized and restored on external function calls
 - **Zero dependencies** — runs as a single Rust binary
+
+## Current Status (May 2026)
+
+As of May 29, 2026:
+- **7,243 GitHub stars**, 320 forks, 40 contributors
+- **Latest release**: v0.0.17 (April 22, 2026)
+- **Top contributors**: Samuel Colvin, David Hewitt
+- **License**: MIT
+- **Coming features**: Class definitions, match statements, expanded stdlib
+- Monty will soon power **codemode** in [[concepts/pydantic-ai-harness|Pydantic AI]]
+
+In May 2026, Samuel Colvin (creator of Pydantic and Monty) suggested Monty as an ideal execution layer for isolating codemode agent execution, responding to a conversation about agent code execution safety.
 
 ## Performance
 

@@ -716,7 +716,7 @@
 - [[entities/harvey]] — Harvey — AI for legal industry. $8B valuation. 100K+ lawyers across 60%+ of AmLaw 100.
 - [[entities/hebbia]] — Hebbia — AI for knowledge work. Product: Matrix. $700M valuation. 30% of top 50 asset managers.
 - [[entities/hex-technologies]] — Hex Technologies — Collaborative data science and AI notebooks platform. Shoebox eval lab for data agents (pairwise experiments, Shorelane Commerce synthetic business).
-- [[entities/linear]] — Linear — Project management software known for exceptional design quality and local-first performance architecture ($1.25B valuation). See [[concepts/local-first-architecture]].
+- [[entities/linear]] — Linear — Project management software known for exceptional design quality and local-first performance architecture ($1.25B valuation). Launched **Linear Diffs** (May 2026): code review inside Linear with guided reviews and structural diff highlighting. See [[concepts/local-first-architecture]].
 - [[entities/mercor]] — Mercor — AI recruiting and hiring platform. $10B valuation. Founded by Brendan Foody (age 22).
 - [[entities/merge]] — Merge — Unified API for integrations. Connect to 200+ platforms through a single API.
 - [[entities/metronome]] — Metronome — Usage-based billing platform. Acquired by Stripe. OpenAI is flagship customer.
@@ -857,6 +857,7 @@
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents — Unified framework for agent cognitive architectures.
 - [[concepts/codeact]] — CodeAct — Executable Code Actions paradigm: LLM agents use Python code as unified action space instead of JSON/text/tool-call blocks. ICML 2024 (Wang et al., up to 20% higher success rate). Ancestor of PTC and related to RLM. Plan-then-Execute pattern.
 - [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution agents latency, Monty, Pydantic AI, sandbox
+- [[concepts/code-review]] — Code Review — Evolution of code review in the AI agent era. Shift from line-by-line checking to architectural judgment. Covers [[entities/linear|Linear Diffs]] (May 2026) guided reviews, structural diff highlighting, and the growing PR volumes from coding agents.
 - [[concepts/code-review-agents]] — Code Review Agents — Multi-agent parallel code review using AI (Claude sub-agents, Codex, Cursor Bugbot). Near-zero false positive rate through cross-validation. Triage-driven review cycles.
 - [[concepts/codex-agent-loop]] — Codex Agent Loop — The core orchestration logic behind Codex CLI: user→model→tool→repeat cycle. Covers prompt assembly (role hierarchy, append-only discipline), prompt caching strategy (prefix matching, cache miss triggers), context window management (automatic compaction via /responses/compact), stateless design decision (no previous_response_id), and relationship to App Server. Source: Michael Bolin's "Unrolling the Codex agent loop" (OpenAI, Jan 23 2026).
 - [[concepts/codex-app-server]] — Codex App Server — JSON-RPC 2.0 protocol for embedding Codex in products. Thread/Turn/Item primitives, stdio/WebSocket/Unix socket transports, streaming event model. Open-source in openai/codex.
@@ -927,6 +928,7 @@
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
 - [[concepts/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
 - [[concepts/gemini-3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
+- [[concepts/gemini-managed-agents]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/gpt-model-milestones]] — GPT Model Milestones
 - [[concepts/gpt-5.5-instant]] — GPT-5.5 Instant
@@ -1004,7 +1006,7 @@
 - [[concepts/multiple-representations-rag]] — Multiple Representations RAG — RAG architecture using multiple document representations for improved retrieval quality.
 - [[concepts/multi-agents-whats-actually-working]] — Multi-Agents: What's Actually Working — Survey of effective multi-agent patterns in production.
 - [[concepts/multi-agent-consensus-patterns]] — Multi-Agent Consensus Patterns — Architectures and protocols for consensus among multiple AI agents.
-- [[concepts/monty-sandbox]] — Monty Sandbox — Lightweight Python sandbox for AI agent code execution.
+- [[concepts/monty-sandbox]] — Monty Sandbox — Lightweight Python sandbox for AI agent code execution (Pydantic, Rust). 7.2K stars, v0.0.17, <1μs startup. Snapshot-based pause/resume for agent interleaving. Will power CodeMode in Pydantic AI.
 - [[concepts/object-storage-queue]] — Object Storage Queue: distributed queue implementation pattern using S3 CAS. Job recovery via Group Commit, Stateless Broker, Heartbeat. Application of zero-disk architecture. Includes comparison with Absurd (PG Queue). — Postgres-Native Durable Execution: Async processing foundation in the AI Agent context. LLM loop checkpointing, Pi Agent integration patterns, Event-driven inter-agent coordination. Includes comparison with Temporal/DBOS/PGMQ.
 - [[concepts/offline-evaluation]] — Offline Evaluation — Pre-production evaluation pipelines for LLM applications.
 - [[concepts/openai-frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
