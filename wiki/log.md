@@ -4546,3 +4546,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 ### Key Analysis: a1zhang Claim Validity
 **Claim**: Opus 4.8 + Dynamic Workflows = "first frontier model seriously trained to be an RLM"
 **Assessment**: Substantial validity with nuance. DW implement scaffold-level RLM (programmatic sub-agent invocation, context isolation, model-driven decomposition) but no evidence of training-level changes. Better characterized as "scaffold-level RLM" or "RLM-adjacent." First production-grade coding agent with model-determined decomposition + programmatic sub-agent invocation.
+
+### [2026-05-29] Update | 3-Axis Structural Framework: RLM × PTC × PSAC
+- **[[concepts/rlm-recursive-language-models]]** — Added "From 2-Axis to 3-Axis: Programmatic Sub-Agent Calling (PSAC)" section. Extended the RLM×PTC 2-axis framework to include the Agent Axis (Dynamic Workflows as Programmatic Sub-Agent Calling). Complete 10-dimension structural comparison table: Task Decomposition vs Context Decomposition vs Programmatic Sub-Agent Calling. Incorporated @nickadobos's "new scaling law dimension" framework (Base Model × Thinking Time × Generated Harness Compute).
+- **[[concepts/dynamic-workflows]]** — Updated RLM relationship section with 3-axis framework summary table and cross-reference to the full analysis on the RLM page.

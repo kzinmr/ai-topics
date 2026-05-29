@@ -413,6 +413,56 @@ analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM: analyze
 
 Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: Complementary 2 Axes (Function Axis vs Data Axis)]].
 
+### From 2-Axis to 3-Axis: Programmatic Sub-Agent Calling (PSAC)
+
+Dynamic Workflows introduce a **third axis** that completes the structural triad:
+
+| Axis | Paradigm | Core Operation | Direction | Concrete Form |
+|---|---|---|---|---|
+| **Data Axis** | RLM | Split 1 huge context → N pieces | **Disaggregate** (read) | `context[start:end]`, `llm_query(subset)` |
+| **Function Axis** | PTC | Merge N tool calls → 1 code block | **Aggregate** (write) | `await tool_a()`, `asyncio.gather()` |
+| **Agent Axis** | PSAC (DW) | Spawn 1 script → N sub-agents | **Delegate** (orchestrate) | `spawn_subagent(task)`, workflow script |
+
+**Why this matters**: RLM solved "how does the model process huge context?" (data decomposition). PTC solved "how does the model use tools efficiently?" (function composition). PSAC solves "how does the model build its own execution infrastructure?" (agent orchestration). Together they form a complete framework for model-driven computation:
+
+```
+                  PTC (Aggregate)
+                  N tools → 1 call
+                       ↑
+                       │  function axis
+                       │
+    RLM ←──────────────┼──────────────→ PSAC
+    (Disaggregate)     │               (Delegate)
+    1 context → N pieces│              1 script → N sub-agents
+                       │
+                  data axis          agent axis
+```
+
+**The key distinction from traditional multi-agent systems**: In LangGraph, CrewAI, or pre-DW Claude Code sub-agents, the human designs the topology — which agent does what, how they communicate, what the handoff protocol is. PSAC shifts this entirely to the model: the orchestration script IS the generated topology. The model "vibecodes" a custom sub-agent fleet harness for each specific task (as @nickadobos put it: "Claude vibecoding an entire brand new subagent fleet harness on demand").
+
+**Structural comparison — Task Decomposition vs Context Decomposition vs Programmatic Sub-Agent Calling:**
+
+| Dimension | Task Decomposition (Multi-Agent) | Context Decomposition (RLM) | Prog. Sub-Agent Calling (DW) |
+|---|---|---|---|
+| **What is decomposed** | Task → subtasks | Context → context chunks | Task → sub-agent assignments |
+| **Who decides** | Human (workflow designer) | Model (in REPL code) | Model (in orchestration script) |
+| **Topology** | Fixed / pre-defined graph | Dynamic, model-chosen | Dynamic, script-generated |
+| **Invocation** | Pre-built pipeline | `llm_query()` from code | `spawn_subagent()` from script |
+| **State location** | Orchestrator's context window | REPL environment variables | Script variables (outside model context) |
+| **Output coupling** | Accumulates in orchestrator context | Returned to REPL, then model reads | Results in script, final summary only to model |
+| **Context isolation** | Partial (context rot risk) | Full (sub-calls isolated) | Full (sub-agents isolated) |
+| **Verification** | External / human review | Implicit in recursive loop | Explicit adversarial agents |
+| **Scaling axis** | Agent count (horizontal) | Recursion depth (vertical) | Agent count × recursion depth (matrix) |
+| **Failure mode** | Context bloat, coordination overhead | Counting errors at high depth | Independent error surfaces per agent |
+
+**Nickadobos framing as "new scaling law dimension"**: The 3-axis model implies a multiplicative scaling relationship:
+
+```
+Effective Capability ∝ Base Model × Thinking Time × Generated Harness Compute
+```
+
+This explains why the Bun migration (750K LOC, 11 days, 99.8% tests pass) was possible — not because one agent thought harder, but because the model **generated infrastructure** (the harness) that multiplied its effective capability by coordinating hundreds of agents. Traditional single-agent scaling (model size × thinking time) could never reach this result; the generated harness compute is a genuinely new multiplicative factor.
+
 ## Dynamic Workflows: RLM in Production
 
 On May 28, 2026, Anthropic launched **[[concepts/dynamic-workflows]]** in Claude Code — a feature that lets Claude write JavaScript orchestration scripts to spawn tens to hundreds of parallel subagents with verification and convergence loops. Alex Zhang (@a1zhang) immediately identified this as "perhaps the first instance of a frontier model seriously trained to be an RLM."

@@ -42,21 +42,19 @@ A dynamic workflow is a **JavaScript orchestration script** that coordinates sub
 
 Dynamic Workflows have sparked significant discussion about their relationship to [[concepts/rlm-recursive-language-models]]. Alex Zhang (@a1zhang), creator of the RLM framework, claims Opus 4.8 + Dynamic Workflows constitutes "perhaps the first instance of a frontier model seriously trained to be an RLM."
 
-**Alignment with RLM theory:**
-- ✅ Sub-agents invoked programmatically (code-driven, not prompt-chain-driven)
-- ✅ Coordination and intermediate state stay outside the main conversation context
-- ✅ Model decides when verification is done (not just parallel execution)
-- ✅ Convergence loop provides recursive refinement analogous to RLM depth
-- ✅ Dynamic decomposition — model determines task breakdown, not human-designed workflow
+See [[concepts/rlm-recursive-language-models#from-2-axis-to-3-axis-programmatic-sub-agent-calling-psac|RLM page: 3-Axis Framework]] for the full structural comparison between Task Decomposition (multi-agent), Context Decomposition (RLM), and Programmatic Sub-Agent Calling (Dynamic Workflows).
 
-**Key differences from canonical RLM:**
-- Dynamic Workflows use JavaScript orchestration + subagents, not a Python REPL with context-as-variable
-- Decomposition is primarily **task-centric** (breaking down problems into subtasks) rather than **context-centric** (programmatically partitioning the input context)
-- The REPL environment in canonical RLM allows the model to directly manipulate and transform context; Dynamic Workflows use a more structured orchestration model
+### The 3-Axis Structural Framework
 
-a1zhang has clarified that the REPL is merely "a particular instantiation" — the essential RLM property is a **symbolic environment where LLM calls are invoked programmatically, with outputs not in the main model's context**. By this definition, Dynamic Workflows qualify as an RLM instantiation.
+Dynamic Workflows complete a structural triad with RLM and PTC:
 
-Whether Opus 4.8 was explicitly *trained* for this behavior (vs. being a scaffold-level feature on top of a capable model) remains an open question. The Anthropic announcement does not mention training-time changes specific to workflow orchestration.
+| Axis | Paradigm | Operation | Direction |
+|------|----------|-----------|-----------|
+| **Data Axis** | RLM | Split 1 huge context → N pieces | Disaggregate (read) |
+| **Function Axis** | PTC | Merge N tool calls → 1 code block | Aggregate (write) |
+| **Agent Axis** | DW / PSAC | Spawn 1 script → N sub-agents | Delegate (orchestrate) |
+
+Where RLM decomposes **data** and PTC composes **functions**, Dynamic Workflows (as Programmatic Sub-Agent Calling) delegates **execution** — the model generates its own agent harness infrastructure. This is captured by @nickadobos's formulation: "RLM on agent harnesses" — the model vibecodes a custom sub-agent fleet harness for each task.
 
 ## Case Study: Bun Zig → Rust Migration
 
