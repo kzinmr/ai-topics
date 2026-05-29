@@ -5,6 +5,7 @@ type: person
 x_handle: garrytan
 x_id: "11768582"
 created: 2026-05-11
+updated: 2026-05-29
 tags:
   - personal-ai
   - agentic-engineering
@@ -28,6 +29,7 @@ sources:
   - raw/articles/2026-05-09_garrytan_meta-meta-prompting.md
   - https://en.wikipedia.org/wiki/Garry_Tan
   - https://www.ycombinator.com/people
+  - raw/newsletters/2026-05-28-gbrain.md
 ---
 ---
 ---
@@ -58,6 +60,22 @@ An AI agent system he personally developed beyond YC's scope. Built on Claude Co
 - `/office-hours` — Skill simulating YC's founder evaluation process
 - AI engineering team from product scoping to deployment
 - Structured processes, defined roles, rigorous review
+
+
+### GBrain — Persistent Memory System (May 2026)
+
+GBrain is an open-source (MIT) persistent memory system developed by Garry Tan. It runs on top of Hermes Agent and OpenClaw, building a durable "brain" by watching all conversations, articles, and decisions:
+
+- **Automatic capture**: Monitors conversations, articles, X/Twitter posts, phone calls
+- **Structured memory**: Maintains permanent pages per person, topic, and decision
+- **Nightly maintenance cycle**: Auto-updates pages, repairs citations, flags contradictions
+- **Open-source**: MIT-licensed, runs on Hermes Agent/OpenClaw infrastructure
+
+**Tan's thesis on GBrain**:
+> "The future belongs not to people who use centralized corporate AI tools, but to individuals who build their own compounding AI systems."
+
+GBrain embodies Tan's "Fat Skills, Fat Code, Thin Harness" philosophy — the harness is light (Hermes Agent/OpenClaw), and the value is in the persistent knowledge base that compounds over time. See GBrain for details.
+
 
 ### Meta-Meta-Prompting Framework (May 2026)
 

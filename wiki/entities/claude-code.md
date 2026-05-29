@@ -2,7 +2,7 @@
 title: Claude Code
 type: entity
 created: 2026-04-24
-updated: 2026-05-25
+updated: 2026-05-29
 tags:
   - product
   - coding-agent
@@ -24,6 +24,7 @@ sources:
   - https://claude.com/blog/introducing-routines-in-claude-code
   - "[[raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions]]"
   - "[[raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents]]"
+  - raw/newsletters/2026-05-28-i-signed-up-for-another-saas.md
 ---
 
 # Claude Code
@@ -214,6 +215,16 @@ Sources: [@ClaudeDevs — May 13, 2026](https://x.com/ClaudeDevs/status/20546101
 | **API** | Pay-as-you-go | No per-seat fee, unlimited developers |
 
 ---
+
+## Security Plugin (May 2026)
+
+Claude Code introduced a real-time security checking plugin that monitors code as it is written, warning about:
+- **Dangerous command execution** — Shell commands with security implications
+- **Unsafe HTML handling** — Cross-site scripting and injection risks
+- **Dangerous Python code** — Code execution patterns with security implications
+
+The plugin operates during Claude Code's code generation, catching common risk patterns before they reach version control. It represents a shift from post-commit security scanning to **pre-commit, real-time security feedback** integrated into the agent's code generation loop.
+
 
 ## Prompt Caching Architecture (April 2026)
 

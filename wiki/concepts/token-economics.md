@@ -2,14 +2,14 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-29
 tags:
   - inference
   - optimization
   - economics
   - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: []
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md]
 ---
 
 # Token Economics
@@ -102,6 +102,22 @@ Applied: FP8 quantization, continuous batching, spot instances for batch jobs, p
 **Choose API when:** sporadic/unpredictable traffic, <8,000 conv/day, limited engineering capacity
 **Choose Self-Host when:** consistent high-volume traffic, >50% sustainable GPU utilization, data sovereignty requirements
 **Hybrid (optimal for most):** Route baseline to self-hosted; overflow to APIs during spikes
+
+
+## The Inference Capacity Gap (Epoch AI, May 2026)
+
+Epoch AI has warned of a growing gap between global inference capacity and token demand:
+
+> "The next bottleneck is not whether models can answer questions—it's whether the world can serve enough fast, high-quality inference."
+
+Key concerns:
+- **Agentic workloads** (long-context, multi-turn) consume orders of magnitude more inference compute than simple Q&A
+- **Token demand** for agentic applications is growing faster than inference infrastructure can scale
+- The shift from single-turn to multi-turn interactions creates a **compounding demand effect** — each agent session may consume 100-1000× the tokens of a single API call
+- Inference capacity is geographically concentrated, creating **latency and sovereignty bottlenecks** for global agent deployment
+
+The Epoch AI analysis reframes the inference capacity discussion from "how cheap can inference get?" to "can infrastructure scale faster than agent-driven demand?"
+
 
 ## Hidden Self-Hosting Costs
 

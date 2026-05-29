@@ -1,10 +1,10 @@
 ---
 title: "Dean W. Ball"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-29
 type: entity
 tags: [person, governance, safety, policy, blogger]
-sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md]
+sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md, raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md]
 ---
 
 # Dean W. Ball
@@ -48,6 +48,32 @@ As an alternative to both corporate self-regulation and state control, Ball prop
 1. **Prudential**: Delay release for models significantly beyond open-weight cyber-capability floor
 2. **Dissemination**: Expand public-private vulnerability sharing (modeled on Project Glasswing)
 3. **Long-term Security**: Fund provably secure software via Focused Research Organizations (FROs)
+
+
+## Physical Intelligence Project (May 2026)
+
+The Foundation for American Innovation (FAI) launched the **Physical Intelligence Project**, with Ball contributing the framework. The core thesis:
+
+> "The physical AI revolution will feel like a cascade of conscientiousness across the entire built human world."
+
+### Cascade of Conscientiousness
+Ball argues that physical AI is fundamentally different from digital AI because it operates in a world constrained by physics, regulation, and physical safety. The "cascade of conscientiousness" refers to how physical AI systems must account for every aspect of their operating environment — construction codes, safety regulations, human ergonomics, material properties — with far less tolerance for error than digital AI.
+
+### Three High-Impact Application Categories
+1. **Construction & Infrastructure** — Automated building, road maintenance, structural inspection
+2. **Logistics & Supply Chain** — Warehouse automation, last-mile delivery, inventory management
+3. **Healthcare & Elder Care** — Patient monitoring, assistive robotics, facility management
+
+### Regulatory Challenge Spectrum
+Ball identifies a spectrum of regulatory challenges:
+- **Low regulatory friction**: Warehouse automation (existing frameworks)
+- **Medium regulatory friction**: Autonomous logistics (evolving frameworks)
+- **High regulatory friction**: Healthcare, elder care, public infrastructure (legacy frameworks)
+
+### US Strengths and Weaknesses
+- **Strengths**: AI software stack, robotics research ecosystem, venture capital
+- **Weaknesses**: Construction permitting, healthcare regulation fragmentation, manufacturing capacity
+
 
 ## Related
 

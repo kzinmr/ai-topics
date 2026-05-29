@@ -1,6 +1,38 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] enrich | Newsletter triage wiki-ingest — 9 takes processed
+
+### Pages Enriched
+- **[[entities/cognition]]** — Added Series D ($1B+, $26B valuation, $492M ARR, 80% commit share), Async Agents architecture (brain-machine separation, BlockDev differential filesystem, Firecracker VM, agent pushback), key customers (Exa, Modal), 10× enterprise growth. Updated sources with both AINews and Latent Space podcast newsletter.
+- **[[entities/dean-ball]]** — Added Physical Intelligence Project (FAI launch), Cascade of Conscientiousness thesis, 3 application categories, regulatory challenge spectrum analysis, US strengths/weaknesses. Updated sources.
+- **[[entities/claude-code]]** — Added Security Plugin section: real-time code checks for dangerous commands, unsafe HTML, dangerous Python patterns. Pre-commit security feedback integrated into agent loop. Updated sources.
+- **[[entities/grok-build]]** — Added Plan Mode (change review before file touches), 2M context window, 8 parallel subagents (independent branches). Updated competitive context for Claude Code/Codex/Grok Build triad.
+- **[[entities/garry-tan]]** — Added GBrain section: open-source (MIT) persistent memory system on Hermes Agent/OpenClaw, automatic conversation/article monitoring, nightly maintenance cycle. "Future belongs to individuals building compounding AI systems." Added `updated` field and sources.
+- **[[entities/anthropic]]** — Added $965B valuation (exceeding OpenAI), Series H full details (Altimeter, Dragoneer, Greenoaks, Sequoia), Mythos-class model plans (stepped-release strategy: Opus 4.8 → Mythos when safety controls adequate). Added Opus 4.8 benchmark results table (SWE-Bench Pro 69.2%, FrontierSWE #1, APEX-SWE 45.3%, GDPval-AA 1890 Elo). Added Andrej Karpathy joining pre-training team to leadership.
+- **[[concepts/token-economics]]** — Added "Inference Capacity Gap" section: Epoch AI warning on token demand vs global inference capacity for agentic workloads. Updated sources.
+
+### New Page Created
+- **[[concepts/trajectory-post-training-platform]]** — Post-training platform using product signals + agent traces for large-scale agent model refinement. $15M raised. Design partners: Clay, Harvey, Decagon, Mercor, Rogo. Covers post-deployment learning as infrastructure trend.
+
+### Sources Used
+- raw/newsletters/2026-05-28-ainews-cognition-raises-1b-in-26b-series-d.md
+- raw/newsletters/2026-05-28-the-age-of-async-agents-cognition-s-walden-yan-openinspect-s-cole-murray.md
+- raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md
+- raw/newsletters/2026-05-28-i-signed-up-for-another-saas.md
+- raw/newsletters/2026-05-28-gbrain.md
+- raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md
+- raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md
+
+### Index Changes
+- New index entry: [[concepts/trajectory-post-training-platform]]
+- Concepts count: 714 → 715
+- Total pages: 2252 → 2253
+- Indexed entries: 1488 → 1489
+
+
+---
+
 ## [2026-05-29] add | Core Auto article ingest: Mark Saroufim's MLSys 2026 keynote essay "When AI Starts Writing Systems Code" — 2 entities + 2 concepts enriched + SCHEMA + raw article + index
 - **Raw article**: `raw/articles/2026-05-28_core-auto_ai-writing-systems-code.md`
 - **Entity created**: `entities/mark-saroufim.md` — ML Systems researcher, GPU MODE co-founder, Core Auto co-founder

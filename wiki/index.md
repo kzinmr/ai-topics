@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2252 | Indexed entries: 1488 | Not in index: 746
+> Last updated: 2026-05-29 | Total pages: 2253 | Indexed entries: 1489 | Not in index: 746
 
 ## Entities (711 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -727,7 +727,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (714 pages)
+## Concepts (715 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1196,6 +1196,7 @@
 - [[concepts/tau-squared-bench]] — τ²-bench: Dual-control benchmark. Dec-POMDP environment where both agent and user use tools. Telecom domain. Up to -25pt from Solo→Interactive. Quantifies the difficulty of cooperation and guidance.
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch — Full-stack LLM implementation course covering pretraining, tokenization, inference, and alignment.
 - [[concepts/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation. 278 tasks. GPT-5 text 85% vs voice 31-51% (clean) / 26-38% (realistic). 79-90% of failures are agent-behavior-caused (not ASR). Proves the inherent difficulty of the voice modality.
+- [[concepts/trajectory-post-training-platform]] — Trajectory — Post-training platform using product signals + agent traces for large-scale agent model refinement. $15M raised. Design partners: Clay, Harvey, Decagon, Mercor, Rogo.
 - [[concepts/typed-rlm]] — λ-RLM (Typed Recursive Reasoning)
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
 - [[concepts/subagents]] — Subagents — Parallel AI Agent Delegation — Architecture pattern where a primary agent delegates sub-tasks to specialized sub-agents.
