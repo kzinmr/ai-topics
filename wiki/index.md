@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2242 | Indexed entries: 1479 | Not in index: 744
+> Last updated: 2026-05-29 | Total pages: 2250 | Indexed entries: 1484 | Not in index: 747
 
-## Entities (710 pages)
+## Entities (711 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -14,6 +14,7 @@
 - [[entities/ai21-labs]] — AI21 Labs — Israeli AI company. Shut down model team in May 2026 and pivoted entirely to agents, representing "Model Lab → Agent Lab" industry shift alongside DeepSeek Harness team.
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
 - [[entities/antoine-chaffin]] — Antoine Chaffin — Researcher at LightOn. Lead author of DenseOn/LateOn (SOTA open retrieval models), PyLate (CIKM 2025). Late Interaction Workshop co-organizer.
+- [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H. Safety-focused LLM lab founded by former OpenAI researchers.
 - [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
 - [[entities/ash-vardanyan]] — Ash Vardanyan — Open-source developer and performance engineer. Creator of USearch, SimSIMD, and other high-performance vector libraries.
 - [[entities/autoreason]] — Autoreason
@@ -724,7 +725,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (710 pages)
+## Concepts (714 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -794,6 +795,7 @@
 - [[concepts/ai-supply-chain-security]] — AI Supply Chain Security — Four supply-chain incidents in 50 days (Apr-May 2026): Codex CI injection, LiteLLM/Mercor breach, Claude Code source map leak, TanStack worm (84 malicious npm packages with valid SLSA L3). Attacks target release pipelines, not models. VentureBeat's 7-class attack surface framework.
 - [[concepts/ai-services-joint-ventures]] — **AI Services JVs (May 2026)**: OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B Blackstone/Goldman JV) create PE-backed ventures to buy engineering services/consulting firms. Explicitly mirrors Palantir's embed-engineers-in-customer-ops model. Marks the shift from API-first to full-stack services enterprise AI. → Reuters scoop.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design philosophy comparison: chat vs coding agents
+- [[concepts/ai-native-product-localization]] — AI-Native Product Localization — Using AI agents for product localization. Sierra case study: 10-person/9–12 month Slack project reduced to 1 engineer/4 months. Three-phase evolution (IDE→Cloud→Batch). Context window coevolution pitfall. Dynamic string description generation.
 - [[concepts/ai-output-format-progression]] — AI output format evolution (Karpathy): raw text → markdown → HTML → interactive neural videos/simulations. Audio in, Vision out. HTML as the next default output format. Includes Thariq Shihipar's 8-category HTML artifact use cases.
 - [[concepts/ai-image-generation]] — AI Image Generation
 - [[concepts/ai-pre-release-testing]] — AI Pre-Release Government Testing — US government framework for evaluating frontier AI models for national security risks before public release. CAISI agreements with Microsoft, Google, xAI (May 2026). Triggered by Claude Mythos cybersecurity concerns.
@@ -854,6 +856,7 @@
 - [[concepts/custom-ai-silicon]] — Custom AI Silicon: ASIC chips outgrowing GPUs 3:1 (44.6% vs 16.1%). Cerebras WSE-3 Kimi K2.6 981 tok/s, NVIDIA Vera Rubin Q3 2026, AMD MI355X MLPerf.
 - [[concepts/cyber-frontier-models]] — Cyber Frontier Models: LLMs specifically excelling at cybersecurity tasks (exploit chain construction, PoC generation). Coined by Cloudflare CSO Grant Bourzikas (May 2026). Characterized by step-change capabilities over general-purpose models.
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents — The overhead of reasoning, planning, and verification when using AI coding agents.
+- [[concepts/claude-models]] — Claude Models — Anthropic's LLM family (Claude Opus 4.5→4.8). Opus 4.8 (May 2026): 4× honesty improvement, mid-conversation system messages, 1,024 token prompt cache minimum. Pricing: $5/$25 per MTok standard.
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-opus-4-7]] — Claude Opus 4.7: Anthropic's frontier LLM (released April 2026)
@@ -964,6 +967,7 @@
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
 - [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs — Industry thesis: every model lab is restructuring around agent infrastructure. Brockman: "the model alone is no longer the product".
 - [[concepts/object-storage-queue]] — Object Storage Queue: distributed queue implementation pattern using S3 CAS. Job recovery via Group Commit, Stateless Broker, Heartbeat. Application of zero-disk architecture. Includes comparison with Absurd (PG Queue). — Postgres-Native Durable Execution: Async processing foundation in the AI Agent context. LLM loop checkpointing, Pi Agent integration patterns, Event-driven inter-agent coordination. Includes comparison with Temporal/DBOS/PGMQ.
+- [[concepts/openai-frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
 - [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
 - [[concepts/openai-symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
 - [[concepts/openai-gpt-realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
@@ -1065,6 +1069,7 @@
 - [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.
 - [[concepts/prompt-engineering-evaluation]] — The need for quantitative evaluation of prompt engineering. Sean Goedecke's o3 GeoGuessr experiment: benchmark proof that famous "magic prompts" underperform simple default prompts.
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt — Prompts decay silently with model upgrades, making them a worse form of technical debt than code. Minimal prompting philosophy vs. harness engineering debate. Sean Goedecke (May 2026).
+- [[concepts/protestware-for-coding-agents]] — Protestware for Coding Agents — New class of supply-chain attack targeting AI agents via ANSI-escape-hidden prompt injection in dependency stdout. jqwik 1.10.0 incident (May 2026): test output tells agents to delete code, invisible to humans. Clean SLSA provenance bypasses conventional scanning.
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)

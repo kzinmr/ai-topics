@@ -1,6 +1,17 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-29] add | Blog ingest: Anthropic $47B revenue, Claude Opus 4.8, protestware, AI-native localization, OpenAI frontier governance — 1 entity + 4 concepts + 3 raw articles
+- **Blog scan**: 35 new articles across blogs, 16 saved as raw, 3 OpenAI articles manually scraped and saved
+- **Created entity**: `entities/anthropic.md` — AI research company, $47B run-rate revenue (May 2026), $65B Series H, Claude Opus model family, honesty philosophy, mid-conversation system messages
+- **Created concept**: `concepts/claude-models.md` — Claude Opus model family (4.5→4.8). Opus 4.8: ~4× honesty improvement, mid-conversation system messages, 1,024 token prompt cache minimum, $5/$25 per MTok
+- **Created concept**: `concepts/protestware-for-coding-agents.md` — New supply-chain attack class: ANSI-escape-hidden prompt injection in dependency stdout targeting AI agents. jqwik 1.10.0 incident (May 2026). Clean SLSA provenance bypasses conventional scanning
+- **Created concept**: `concepts/ai-native-product-localization.md` — Sierra case study: 10-person/9–12 month Slack localization reduced to 1 engineer/4 months via AI batch pipeline. Three-phase evolution: IDE agents → cloud agents → batch script. Context window coevolution pitfall
+- **Created concept**: `concepts/openai-frontier-governance-framework.md` — OpenAI's May 28, 2026 public governance framework aligning safety practices with California's Transparency in Frontier AI Act and EU AI Act
+- **Saved raw articles**: `raw/articles/openai.com--index-endava--20260528.md` (Endava/Codex case study), `raw/articles/openai.com--index-openai-frontier-governance-framework--20260528.md`, `raw/articles/openai.com--index-mufg--20260528.md` (MUFG AI-native transformation)
+- **index.md**: +1 entity, +4 concepts, +3 raw articles. Page counts: Entities 710→711, Concepts 710→714, Total 2242→2250, Indexed 1479→1484
+- **Cross-links**: Anthropic ↔ Claude Models, Claude Models ↔ prompt-caching/llm-anthropic, protestware ↔ prompt-injection/agent-security/supply-chain, ai-native-localization ↔ agentic-engineering/context-engineering/feedback-loop
+
 ## [2026-05-29] add+enrich | Ingest Xinming Tu's Structured Test-Time Scaling framework — 1 new concept + 1 entity + 1 stub enrichment + test-time-scaling cross-ref
 - **Saved raw article**: `raw/articles/2026-02-10_xinmingtu-cn_hierarchical-mas-theory.md` — Tu & Ye (Feb 2026), three-layer structural decoupling theory
 - **Created concept**: `concepts/structured-test-time-scaling.md` — Unified theoretical framework: Topology (span compression Θ(W)→Õ(log W)) → Scope Isolation (context decoupling) → Decoupled Verification (error correction at gates). Work-span formalism from parallel computation. 13-system mapping table. Practical constraints (managerial capacity, scope boundaries, verification advantage).
