@@ -1,6 +1,12 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] raw-backlog-ingest | Raw backlog triage (20:00 UTC) — 0 takes, 5 skips
+- 5 candidate articles from backlog triaged via body-reading (§1.5)
+- All 5 skipped: susam.net（数学ノート）、danluu.com（物理学アーカイブ）、Karpathy（博士課程ガイド＋AI創作フィクション）、filfre.net（歴史ミステリー）— いずれもAI/LLM技術コンテンツなし
+- Triage JSON saved to cron data pipeline path
+- Archive: wiki/raw/archived/triage/backlog/2026-05-30_20260530T200057Z.json
+
 ## [2026-05-30] dreaming-wiki-ingest | Nightly knowledge consolidation
 
 ### Coverage Analysis

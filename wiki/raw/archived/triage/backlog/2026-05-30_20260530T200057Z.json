@@ -1,0 +1,68 @@
+{
+  "checkpoint_run_id": "20260530T200057Z",
+  "source": "backlog",
+  "processed_at": "2026-05-30T20:00:57+00:00",
+  "summary_ja": "rawバックログ5件を本文精査。数学ノート、物理学アーカイブ、博士課程ガイド、AI短編小説、歴史ミステリーのいずれもAI/LLM/エージェント技術の技術的コンテンツを含まず、全件skip。take=0件。",
+  "decisions": [
+    {
+      "item_id": "backlog-1",
+      "source": "backlog",
+      "source_name": "susam.net",
+      "title": "Mar '26 Notes - Susam Pal",
+      "url": "https://susam.net/26c.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/susam.net--26c-html--76d34e4a.md",
+      "recommended_action": "skip",
+      "reason_ja": "本文を確認：代数的グラフ理論の個人的学習ノート（Godsil & Royle, Biggsの教科書に基づく）＋Wander Console（小規模Webコンソール）の開発記録。AI/LLM/エージェント技術に関する記述なし。数学・個人開発ブログのためwiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is my third set of monthly notes for this year. In these notes, I capture various interesting facts and ideas I have stumbled upon during the month. Like in the last two months, I have been learning and exploring algebraic graph theory."
+    },
+    {
+      "item_id": "backlog-2",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "su3su2u1 physics tumblr archive",
+      "url": "https://danluu.com/su3su2u1/physics/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--su3su2u1-physics--12192f45.md",
+      "recommended_action": "skip",
+      "reason_ja": "本文を確認：廃止されたTumblr物理学ブログのアーカイブ。フェルマーの最小時間原理、ラグランジュ力学、半古典光学など純粋物理学の解説。Dan Luuは追跡対象だが、本記事はAI技術・LLM・エージェントとは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "These are archived from the now defunct su3su2u1 tumblr. A Roundabout Approach to Quantum Mechanics... Light always takes the path of least time."
+    },
+    {
+      "item_id": "backlog-3",
+      "source": "backlog",
+      "source_name": "Andrej Karpathy",
+      "title": "A Survival Guide to a PhD",
+      "url": "http://karpathy.github.io/2016/09/07/phd/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/karpathy.github.io--2016-09-07-phd--85602144.md",
+      "recommended_action": "skip",
+      "reason_ja": "本文を確認：博士課程の生存ガイド。CS/ML研究全般のキャリアアドバイス（指導教員の選び方、研究生活のコツ）で、特定のAI技術・モデル・エージェントに関する技術的記述を含まない。Karpathyのエンティティページは既に存在し、主要なAI技術貢献はカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This guide is patterned after my 'Doing well in your courses', a post I wrote a long time ago on some of the tips/tricks I've developed during my undergrad. Unlike the undergraduate guide, this one was much more difficult to write because there is significantly more variation in how one can traverse the PhD experience."
+    },
+    {
+      "item_id": "backlog-4",
+      "source": "backlog",
+      "source_name": "Andrej Karpathy",
+      "title": "Short Story on AI: A Cognitive Discontinuity.",
+      "url": "http://karpathy.github.io/2015/11/14/ai/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/karpathy.github.io--2015-11-14-ai--46526a97.md",
+      "recommended_action": "skip",
+      "reason_ja": "本文を確認：AIを題材にした創作SF短編小説。架空のVisceralエージェントアーキテクチャやMystery Moduleが登場するが、フィクションであり技術的分析・主張を含まない。Karpathyのエンティティページには主要な技術的貢献が既に記録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "The idea of writing a collection of short stories has been on my mind for a while. This post is my first ever half-serious attempt at a story, and what better way to kick things off than with a story on AI and what that might look like if you extrapolate our current technology."
+    },
+    {
+      "item_id": "backlog-5",
+      "source": "backlog",
+      "source_name": "filfre.net",
+      "title": "The Mystery of Rennes-le-Château, Part 5: The Man Behind the Curtain",
+      "url": "https://www.filfre.net/2026/05/the-mystery-of-rennes-le-chateau-part-5-the-man-behind-the-curtain/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-05-the-mystery-of-rennes-le-chateau-part-5-the-man-behi--a5bdea3e.md",
+      "recommended_action": "skip",
+      "reason_ja": "本文を確認：ピエール・プランタールに関する歴史的調査記事（フランスのミステリー）。AI/LLM/技術関連性ゼロ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Pierre Plantard in 1942, at age 22. It is possible to trace the Plantard family tree a fair ways back without relying on the Lobineau dossier, but not as far back as the time when the Merovingian kings ruled over the nascent nation of France."
+    }
+  ]
+}
