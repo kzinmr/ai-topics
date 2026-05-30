@@ -2,11 +2,13 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-05-23
+updated: 2026-05-30
 tags:
   - company
   - model
   - nlp
+  - mcp
+  - enterprise-saas
 aliases: ["Cohere Inc.", "Cohere AI"]
 sources:
   - https://cohere.com/
@@ -100,6 +102,21 @@ These MOUs extend Cohere's sovereign AI strategy beyond acquisitions (Reliant AI
 ## Products & Technology
 
 Cohere's platform centers on three model families: Command for text generation and chat, Embed for vector embeddings and semantic retrieval, and Rerank for search quality improvement. The North platform brings AI productivity into the workplace. Aya is an open multilingual research initiative covering 70+ languages. Cohere emphasizes deployment flexibility including private cloud and on-premise.
+
+## MCP Guide (May 2026)
+
+Cohere published a comprehensive **[What Is Model Context Protocol (MCP)](https://cohere.com/blog/guide-to-mcp)** guide positioning itself as the enterprise authority on MCP adoption. Key points:
+
+- **MCP is not a model or agent framework** — it's an application/integration layer protocol connecting AI apps to enterprise systems
+- **Client-server architecture**: Host (AI app) → Client → Server (exposes Resources, Tools, Prompts)
+- **Three feature types**: Resources (context/data), Tools (callable functions), Prompts (reusable templates)
+- **Transport mechanisms**: stdio for local, Streamable HTTP for remote connections
+- **Enterprise use cases**: customer support, sales, financial reporting, IT incident management
+- **Security considerations**: access control, authentication, server trust, tool safety, logging, deployment architecture
+
+The guide reinforces Cohere's North platform positioning: "North helps organizations bring agents, tools, permissions, and monitoring into one governed workspace, including RBAC and tool usage visibility."
+
+[[concepts/mcp]] | [[concepts/agent-tooling]] | [[concepts/enterprise-ai]]
 
 ## Related
 

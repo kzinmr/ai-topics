@@ -10,13 +10,14 @@ tags:
   - tool
   - cognition
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-30
 aliases: [agent loop, ReAct loop, decide-act-observe, agent execution cycle]
 sources:
   - https://stevekinney.com/writing/agent-loops
   - https://agentic.ai/what-is-agentic-ai
   - https://www.anthropic.com/research/building-effective-agents
   - raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex.md
+  - https://thriveholdings.com
 ---
 
 # Agentic Loop — The Canonical AI Agent Execution Pattern

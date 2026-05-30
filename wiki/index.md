@@ -707,7 +707,7 @@
 - [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
 - [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
 - [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
-- [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100). Strategic MOUs with Indra Group (sovereign AI Spain/Canada) and Multiverse Computing (quantum-inspired optimization).
+- [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100). Published comprehensive MCP guide (client-server architecture, enterprise use cases, security). Strategic MOUs with Indra Group (sovereign AI Spain/Canada) and Multiverse Computing (quantum-inspired optimization).
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
 - [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents. $22M Voice Marketplace (doubled in 6mo, 10,400+ creators).
 - [[entities/eventual]] — Eventual — Data and AI platform.

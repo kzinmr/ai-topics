@@ -1,6 +1,28 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] dreaming-wiki-ingest | Nightly knowledge consolidation
+
+### Coverage Analysis
+- Pre-run dreaming pipeline failed to parse JSON (upstream group agent error)
+- Recovered via direct raw article scan in wiki/raw/articles/
+- 5 candidates evaluated against existing wiki pages
+
+### Pages Enriched
+- **concepts/agentic-loop.md**: Updated date 2026-05-13 → 2026-05-30. Added Thrive Holdings source URL. Self-improving tax agent case study already present.
+- **entities/cohere.md**: Added "MCP Guide (May 2026)" section covering Cohere's enterprise MCP positioning (client-server architecture, Resources/Tools/Prompts, enterprise use cases, security considerations). Updated date 2026-05-23 → 2026-05-30. Added tags: mcp, enterprise.
+
+### Pages Verified (no changes needed)
+- **concepts/agent-evaluation-methodology.md**: Ben Hylak content already captured (213 lines, updated 2026-05-29)
+- **concepts/agent-containment.md**: Anthropic containment content already captured (84 lines, updated 2026-05-29)
+- **concepts/multi-channel-agents.md**: Mastra multi-channel content already captured (107 lines, updated 2026-05-29)
+
+### Triage Checkpoint
+- Saved to ${HERMES_HOME}/cron/data/dreaming/triage_latest.json
+- 2 takes (enrichments), 3 references (already captured), 0 skips
+
+---
+
 ## [2026-05-30] orphan-index | Register 10 unindexed orphan concept pages
 - 10 substantive concept pages not in index.md added alphabetically
 - Pages: vibe-coding, dgx-spark-nim, js-runtime, server-dgx-spark,
