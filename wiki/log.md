@@ -1,6 +1,22 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] blog-wiki-ingest | Recovery + No-op pass (blog-triage JSON parse failure)
+
+- **Upstream issue**: blog-triage cron output wrapped in markdown by cron runner → JSON parse failure
+- **Recovery**: Read checkpoint directly from `blog_ingest/triage_latest.json` (valid JSON)
+- **Result**: 14 articles triaged (Takes=0, References=4, Skips=10)
+- **All references verified as already captured:**
+  - Martin Alderson "What's going on with Gemini?" → `entities/gemini.md` has "Martin Alderson's Critique" section
+  - Ed Zitron "AI Bubble Part 3" → `concepts/ai-bubble-economics.md` has $852B/CoreWeave/$375B data
+  - Together AI "World's Fastest Speech-to-Text Stack" → `entities/together-ai.md` has dedicated section with all 5 optimizations
+  - Gary Marcus "tokenmaxxing decline" → `entities/gary-marcus.md` has GPU Rental Price Collapse section
+- **Non-AI skips (10):** Framework 12 laptop review, Windows Runtime, PHP Composer, online algorithms, political commentary, CRT monitors, DR DOS, UK procurement, Merge connector announcement
+- **No wiki edits required** — clean pass-through
+
+---
+
+
 ## [2026-05-30] blog-ingest | Blog ingestion (07:00 UTC)
 
 25 new articles collected. 14 saved as raw articles, 6 unsaved (paywalled LWN, OpenAI case studies).
