@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] orphan-index | Register 10 unindexed orphan concept pages
+- 10 substantive concept pages not in index.md added alphabetically
+- Pages: vibe-coding, dgx-spark-nim, js-runtime, server-dgx-spark,
+  harness-design-long-running-apps, model-quantization (subdir),
+  self-hosting-ai-development, anthropic-memory-tool-cognition,
+  princeton-cos597r-deep-dive-llm, rlvr-science-limitations
+- Not in index count: 614 → 604
+- Indexed entries: 1549 → 1559
+
+
 ## [2026-05-30] watchdog-fix | Index dedup + header count correction
 
 ### Issues Fixed

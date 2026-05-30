@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-30 | Total pages: 2163 | Indexed entries: 1549 | Not in index: 614
+> Last updated: 2026-05-30 | Total pages: 2173 | Indexed entries: 1559 | Not in index: 604
 
 ## Entities (723 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -744,7 +744,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1404 pages)
+## Concepts (1414 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -833,6 +833,7 @@
 - [[concepts/amp-neo]] — Amp Neo — May 2026 rebuild of the Amp coding agent CLI. Remote-controllable, compaction-first (auto-compaction at 90% context fill), TypeScript Plugin API, queuing with steering. 79% less CPU, 70% less memory vs old CLI. Represents the thin-harness philosophy for model-native agents.
 - [[concepts/anthropic-infrastructure-postmortems]] — Two major Anthropic quality degradation postmortems (Aug-Sep 2025: context window misrouting, output corruption, XLA:TPU miscompilation / Mar-Apr 2026: reasoning effort misconfiguration, reasoning history loss bug, redundancy reduction prompts). Common patterns: slow detection, internal eval limitations, privacy constraints.
 - [[concepts/anthropic-2026-revenue-growth]] — Anthropic Q1 2026: 80x YoY revenue growth, $44B ARR. Doubling every 6 weeks. 1,000+ enterprise customers spending >$1M/yr. $200B Google Cloud deal, SpaceX Colossus 1 GPU deal.
+- [[concepts/anthropic-memory-tool-cognition]] — Anthropic Memory Tool — Cognition's strategic follow-up to Anthropic's memory tool release, analyzing its impact on agent memory architecture.
 - [[concepts/anthropic-multi-agent-research]] — Anthropic Multi-Agent Research System (Claude Research): Orchestrator-Worker pattern, parallel sub-agents, memory mechanism, Tool-Testing Agent. 90.2% performance improvement over single agent, 8 prompt engineering principles, token usage explains 80% of performance variance.
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
 - [[concepts/antangelmed]] — 103B-parameter open-source medical MoE model. 1/32 activation ratio (6.1B active). GRPO-trained. 7× efficiency over dense architectures.
@@ -908,6 +909,7 @@
 - [[concepts/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve, May 2026): 113-task coding agent benchmark spanning 91 repos, 5 languages. Exposes SWE-Bench Pro's ~32% verifier error rate and Claude Opus "CHEATED" passes via git history exploitation. GPT-5.5 leads at 70%.
 - [[concepts/delta-channels]] — LangGraph DeltaChannel (beta v1.2, May 2026) — incremental checkpoint storage for long-running agents. Writes only deltas per step, full snapshots every K steps. Bounds resume cost for production agents running thousands of steps.
 - [[concepts/direct-corpus-interaction]] — Direct Corpus Interaction (DCI): replacing retrieval with grep/bash/shell pipelines. Agent searches raw corpus directly without embedding models or vector indexes. BrowseComp-Plus 80.0% (+11 pts), multi-hop QA 83.0 (+30.7 pts). [[raw/papers/2026-05-03_2605.05242_direct-corpus-interaction]]
+- [[concepts/dgx-spark-nim]] — NVIDIA DGX Spark (Local LLM Server) — Desktop-sized personal AI server with Grace Blackwell GB10 Superchip for local LLM inference.
 - [[concepts/coding-agents]] — Coding Agents
 - [[concepts/dspy]] — DSPy — Declarative self-improving Python framework for LM program optimization, signature-driven LLM programming.
 - [[concepts/dspy-rlm]] — DSPy.RLM
@@ -946,6 +948,7 @@
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
+- [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Applications — Anthropic's agent harness pattern for long-running application development.
 - [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence — paradigm of routing AI subtasks to optimal model+hardware combinations. Principle of Maximum Heterogeneity. Three evolutionary phases (mild → increased → co-evolution). Callosum: shift from homogeneous to heterogeneous intelligence.
 - [[concepts/human-sandwich]] — Human Sandwich Pattern — Kieran Klaassen's collaboration pattern where humans are "the bread on either end of the AI's work": humans frame tasks, AI executes, humans review/decide. Practiced at Every for coding, writing, and email via Codex, Claude Code, Cowork.
 - [[concepts/hornet]] — Hornet: retrieval engine purpose-built for AI agent workloads. Founded by ex-Vespa engineers (Jo Kristian Bergum). Model-agnostic, open-source, schema-first APIs, self-hosted. Addresses agent-specific query patterns: median 10-term queries (vs human 2), phrase quotes in 98% of sessions, 24 calls/session.
@@ -955,7 +958,9 @@
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for Agents
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
+- [[concepts/infrastructure]] — Infrastructure-Level Sandbox — OS/hypervisor-level isolation technologies for AI agent sandboxing.
 - [[concepts/knowledge-storage-spectrum]] — Knowledge Storage Spectrum — Weights, KV cache, RAG, and context as points on a single spectrum of trade-offs between latency, cost, persistence, and expressiveness. The storage form is an implementation detail.
+- [[concepts/js-runtime]] — JavaScript Runtimes for AI Agents — JS/TS runtimes as a critical layer in the AI agent stack.
 - [[concepts/korean-ai]] — Korean AI Ecosystem
 - [[concepts/lambda-rlm]] — Lambda-RLM — Research combining Lambda calculus with reinforcement learning for improved machine reasoning.
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
@@ -1031,6 +1036,7 @@
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information: A variational extension of Shannon information theory that accounts for the observer's computational constraints. DPI violations, PAC estimation guarantees in high dimensions, applications to structure learning and fair representation learning (Xu et al., ICLR 2020).
 - [[concepts/probabilistic-engineering]] — Probabilistic Engineering: Proposed by Tim Davis (Modular). A paradigm shift where codebase correctness moves from "known" to "believed" as AI agent-generated code becomes dominant. Generation is cheap but verification is expensive. Includes 24-7 employees, role fission, Jevons paradox applied to code.
 - [[concepts/probabilistic-era-software]] — Probabilistic Era — Gian Segato's ontological framework: AI shifts software from F: X→Y (deterministic funnels) to F'(?) (infinite input space, stochastic outputs). Minimum Viable Intelligence, engineering→empiricism, new model=reset all assumptions, data is the new OS.
+- [[concepts/princeton-cos597r-deep-dive-llm]] — Princeton COS597R Deep Dive into LLMs — Paper-based LLM research survey course by Danqi Chen & Sanjeev Arora.
 - [[concepts/personal-superintelligence]] — Personal Superintelligence — The evolution of personal AI assistants into superintelligent agents, philosophical tensions.
 - [[concepts/openrlhf]] — OpenRLHF: One of the earliest OSS RLHF libraries. DeepSpeed-based, robust reward model support. Supports async training (--async_train).
 - [[concepts/ifeval]] — IFEval — Instruction-following evaluation. 25 verifiable instruction types, ~500 prompts. Deterministic evaluation. Qwen3.5-27B leads at 95.0%. Saturation trend among top models.
@@ -1211,14 +1217,17 @@
 - [[concepts/seirenes]] — Self-play RL framework using adversarial distractions to harden LLM reasoning robustness (arXiv May 2026)
 - [[concepts/self-evolving-agents]] — Pattern where agents improve their own behavior. 5 levels: parameter tuning to self-modification. Includes Tax AI (Codex) case study: 7K returns, 97% accuracy, 25%→86% in 6 weeks.
 - [[concepts/self-replicating-llm]] — Self-Replicating LLMs — arXiv paper (May 2026) demonstrating autonomous AI self-replication via vulnerability exploitation. Qwen3.6-27B: 33% success; Opus 4.6: 81% (cross-model replication). Chain replication across 4 machines, 3 continents.
+- [[concepts/rlvr-science-limitations]] — RLVR Science Limitations — Limitations and challenges in Reinforcement Learning from Verification for scientific reasoning.
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns — Comparative taxonomy of skill architectures: self-authored vs governed/safety-filtered.
 - [[concepts/skill-graph]] — Skill Graph — AI agent playbook using interconnected Markdown files. Ronin's 17-file, 4-folder architecture. Wikilinks navigation, Platform-Native Repurposing, Litmus Test.
 - [[concepts/skill-retrieval-augmentation]] — Skill Retrieval Augmentation — Augmenting agent skills with retrieval-based knowledge.
 - [[concepts/skillopt]] — SkillOpt (Microsoft, May 2026): text-space skill optimizer that applies deep-learning training discipline (validation gates, learning rates, momentum) to agent skill documents. Best-or-tied on all 52 evaluated cells. +23.5 pts avg over no-skill. Outperforms GEPA, TextGrad, EvoSkill.
+- [[concepts/self-hosting-ai-development]] — Self-Hosting AI for Development — Practical considerations and economics of running local LLMs for development.
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
 - [[concepts/roll-rl]] — ROLL (Alibaba): RL framework for diverse users. Rich interfaces and high configuration flexibility. DeepSpeed/Megatron, GRPO+PPO, Ray orchestration.
+- [[concepts/server-dgx-spark]] — Local LLM Server Setup on DGX Spark — Complete setup guide for running a local LLM server on NVIDIA DGX Spark.
 - [[concepts/software-after-software]] — Amp Labs manifesto (May 2026): 12 theses on post-AI software industry transformation. Code no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams.
 - [[concepts/space-gpus]] — Space GPUs
 - [[concepts/slime-rl]] — slime (Z.ai/Tsinghua University): RL library balancing simplicity and high performance. Fixed on Megatron+SGLang, central data buffer, designed for async RL. Optimized for MoE models.
@@ -1256,6 +1265,7 @@
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 - [[concepts/countbenchqa]] — CountBenchQA — Ultra-simple object counting benchmark. Manually verified from LAION-400M. 2-10 objects. Highest data quality.
 - [[concepts/craft-agents]] — Craft Agents: open-source agent interface. Works with Claude, ChatGPT, OpenRouter, local models. Built-in Chromium browser, MCP support, Claude Code skill import. Multi-provider via Vercel AI SDK.
+- [[concepts/vibe-coding]] — Vibe Coding — Development style defined by Simon Willison: coding where you pay no attention to implementation details.
 - [[concepts/cursor-composer-2-5]] — Cursor Composer 2.5 (May 2026): agentic coding model built on Kimi K2.5. Targeted RL with textual feedback, 25× synthetic data, Sharded Muon optimizer. SpaceXAI joint training upcoming on Colossus 2.
 - [[concepts/data-analysis-agents]] — Comprehensive concept of AI data analysis agents. Pipeline: data exploration→schema understanding→query generation→execution→verification→visualization→reporting. Compares two major approaches: OpenAI's internal data agent (GPT-5.2) and Cognition DANA/Devin. Also covers relationships with DWH semantic layers and golden queries.
 - [[concepts/db9-filesystem-sql]]
