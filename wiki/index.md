@@ -139,6 +139,7 @@
 - [[entities/andy-nguyen]] — **X** | @kevinnguyendn | Founder & CEO of ByteRover, portable file-based memory layer for coding agents.
 - [[entities/anildash]] — **Blog** | Anil Dash (since 2000) |
 - [[entities/ankur-goyal]] — **Name** | Ankur Goyal |
+- [[entities/anorth-chen]] — North Chen (@anorth_chen) — Head of Community at [[entities/creao|CreaoAI]]. Articulated the harness platform economics thesis: "Model determines the ceiling, harness determines the realization rate." Author of "Why Your Agent Project Always Fails to Land" X Article (May 2026). Three-layer model (LLM brain → harness body/nervous system → agent professional).
 - [[entities/anthropic-computer-use]] — **Anthropic Computer Use** is a feature enabling Claude models to view screenshots and directly operate GUIs. Released as a research preview in October 2024, it can operate computers like humans — clicking screen coordinates, typing, scrolling, etc. After the Vercept acquisition in February 2026 and the Claude Sonnet 4.6 release, OSWorld scores improved from under 15%...
 - [[entities/anthropic-labs]] — Anthropic's experimental product division, responsible for launching products outside the core Claude AI assistant.
 - [[entities/antirez-com]] — **URL:** https://antirez.com
@@ -205,6 +206,7 @@
 - [[entities/copilot-cli]] — GitHub-built terminal-native AI coding agent. 6 built-in sub-agents (explore/code-review/research, etc.), `/fleet` parallel execution, MCP extensions, BYOK/local model support (April 2026+). Included in Copilot Free/Pro/Pro+/Business/Enterprise.
 - [[entities/core-auto]] — Core Auto — AI research neolab co-founded by Mark Saroufim. Automating systems code via multi-agent self-play (problem author, competitor, cheater, auditor). Non-transformer architectures, pygpubench.
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
+- [[entities/creao]] — CreaoAI (creao.ai) — AI super agent platform with execution sandbox, cross-session memory, scheduled workflows, and Skills system. Harness platform infrastructure: "AWS of the AI agent era." Agent Trading Competition (May 2026). → [[entities/anorth-chen]]
 - [[entities/corti]] — Corti — Healthcare AI frontier lab. Symphony STT: clinical-grade speech-to-text, 1.4% WER (93% lower than OpenAI/Whisper). 100M+ patients/year. Copenhagen HQ.
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
 - [[entities/cyrilxbt]] — @cyrilxbt — X/Twitter content creator focused on Obsidian, Claude Code, and personal knowledge management. Retrieval-first vault organization methodology, Claude Code + Filesystem MCP integration for natural language vault queries.
@@ -946,7 +948,7 @@
 - [[concepts/gram-recursive-reasoning]] — GRAM (Generative Recursive Reasoning) — Probabilistic multi-trajectory recursive reasoning framework. Stochastic latent transitions enable multiple hypotheses. 10M params beats 27M deterministic baselines on Sudoku-Extreme, ARC-AGI. KAIST/Mila/NYU, May 2026.
 - [[concepts/graph-db-overengineering-rag]] — You Don’t Need a Graph DB for RAG — Argument against graph database overengineering for retrieval-augmented generation systems.
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
-- [[concepts/harness-engineering]] — Harness Engineering
+- [[concepts/harness-engineering]] — Harness Engineering — The discipline of building agent infrastructure. Enriched with North Chen's (CreaoAI) three-layer model (LLM brain → harness body/nervous system → agent professional) and platform economics thesis (May 2026).
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
 - [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Applications — Anthropic's agent harness pattern for long-running application development.
 - [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence — paradigm of routing AI subtasks to optimal model+hardware combinations. Principle of Maximum Heterogeneity. Three evolutionary phases (mild → increased → co-evolution). Callosum: shift from homogeneous to heterogeneous intelligence.

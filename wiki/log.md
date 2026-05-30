@@ -1,6 +1,20 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] North Chen X Article Ingestion | Harness Platform Economics
+- **Source**: X Article by North (@anorth_chen) — "なぜあなたのagentプロジェクトはいつも落地が難しいのか"
+- **Raw Article**: wiki/raw/articles/2026-05-24_anorthchen_agent-harness-business.md (225 lines, 18KB)
+- **Entity Pages Created**:
+  - `wiki/entities/anorth-chen.md` — North Chen, Head of Community at CreaoAI
+  - `wiki/entities/creao.md` — CreaoAI platform (AI super agent, harness infrastructure)
+- **Concept Pages Enriched**:
+  - `wiki/concepts/harness-engineering.md` — Added North's three-layer model (LLM brain → harness body → agent professional), six harness differentiators, platform economics thesis, CREAO Agent Trading Competition case study, relationship matrix with other harness theses
+- **Index Updates**:
+  - Added anorth-chen entry (Entities section)
+  - Added creao entry (Entities section)
+  - Updated harness-engineering entry with enrichment note
+- **TBD**: Add @anorth_chen to x-accounts.yaml
+
 ## [2026-05-30] raw-backlog-ingest | Raw backlog triage (20:00 UTC) — 0 takes, 5 skips
 - 5 candidate articles from backlog triaged via body-reading (§1.5)
 - All 5 skipped: susam.net（数学ノート）、danluu.com（物理学アーカイブ）、Karpathy（博士課程ガイド＋AI創作フィクション）、filfre.net（歴史ミステリー）— いずれもAI/LLM技術コンテンツなし

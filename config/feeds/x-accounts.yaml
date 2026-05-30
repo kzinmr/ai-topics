@@ -186,6 +186,16 @@ accounts:
   - llm-ops
   - developer-tools
   notes: Braintrust CEO, LLM evaluation and observability
+- handle: '@anorth_chen'
+  name: North Chen
+  blog: https://creao.ai/ai-super-agent
+  topics:
+  - ai
+  - agent-harness
+  - harness-engineering
+  - agent-platform
+  - enterprise-saas
+  notes: Head of Community at CreaoAI. Authored X Article on harness platform economics ("モデル決定上限、harness決定兌現率"). Three-layer agent model (LLM brain → harness body → agent professional). CREAO Agent Trading Competition organizer.
 - handle: '@TheZachMueller'
   name: Zach Mueller
   blog: https://muellerzr.github.io/blog

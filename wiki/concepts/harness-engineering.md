@@ -414,6 +414,61 @@ Key findings:
 
 This survey complements the eval-centric view of harness engineering (Hamel Husain, Addy Osmani) with a systems-architecture perspective, positioning the harness as an independent system layer with its own taxonomy, design principles, and open research questions.
 
+## North Chen's Business Case for Harness Platforms (May 2026)
+
+In his May 2026 X Article ["Why is your agent project always hard to deploy?"](https://x.com/anorth_chen/status/2058554497333407927) (588 bookmarks, 183K impressions), [[entities/anorth-chen|North]] of [[entities/creao|CreaoAI]] articulated the business case for harness platforms as a distinct product category:
+
+### Three-Layer Model
+
+| Layer | Analogy | Components | Who builds it |
+|-------|---------|------------|---------------|
+| **LLM (Brain)** | Intelligence only | Input/output text, no tools, no memory, no time awareness | OpenAI, Anthropic, Google, DeepSeek |
+| **Harness (Body/Nervous System)** | Meta-capabilities | Context management, tool execution, sandbox, state, observability, safety, model routing, error recovery | Platform companies (CREAO, Warp, LangChain) |
+| **Agent (Professional)** | Domain expertise | Business logic, domain prompts, CRM/workflow integration, success criteria | Business teams using a harness platform |
+
+North's key thesis: **"Model determines the ceiling, harness determines the realization rate"**. Two teams using the same model can have vastly different outcomes based on harness quality.
+
+### Why Claude Code Works and DIY Agents Don't
+
+North identified six harness-level differentiators that explain why Claude Code succeeds where DIY agents fail:
+
+1. **Context assembly**: Harness curates file context, git state, terminal errors before each model call
+2. **Diff-based editing**: Harness applies structured patches with rollback, not whole-file regeneration
+3. **Error recovery loop**: Harness translates test/compile/lint failures back to the model automatically
+4. **Model routing**: Harness decides which model handles which subtask (light model for intent, strong model for reasoning)
+5. **Implicit prompt engineering**: Thousands of words of system prompts, tool descriptions, few-shot examples
+6. **Production details**: Token counting, session compression, reconnection, interruption handling, intermediate state persistence
+
+All six are **harness engineering**, not model capability. This directly supports Hamel Husain's 60-80% rule and Viv Trivedy's "Harness > Model" thesis.
+
+### The Platform Economics Argument
+
+North argues that business teams spend ~80% of their time on harness infrastructure (retry logic, context management, sandbox isolation, observability, OAuth, monitoring) rather than business logic. This is analogous to 1990s web teams building their own web servers and database engines.
+
+**Prediction**: The harness layer will become "the AWS of the AI era" — a commoditized platform that business teams rent rather than build. The most dangerous position in the next 2-3 years is "half-baked agent products" that are neither generic enough to be infrastructure nor specialized enough to be domain experts.
+
+### CREAO Agent Trading Competition
+
+As a practical demonstration of the harness platform thesis, CREAO launched an agent trading competition (May 2026) where participants focus purely on trading strategy via conversational prompts while CREAO's harness handles all infrastructure:
+
+- Market data feeds, order APIs, backtesting
+- State management, observability, error recovery
+- Real-time leaderboard, session persistence
+
+This validates the platform thesis: participants with zero coding experience can compete with quantitative engineers because the harness layer absorbs all infrastructure complexity.
+
+### Relationship to Other Harness Theses
+
+| Author | Thesis | Relationship to North's View |
+|--------|--------|------------------------------|
+| [[entities/hamel-husain|Hamel Husain]] | 60-80% of time should be on evals, not models | Complementary: Husain focuses on measurement, North on platform economics |
+| [[entities/vtrivedy10|Viv Trivedy]] | Harness > Model; no general-purpose agent | Strongly aligned: North provides the business case for Viv's technical thesis |
+| [[entities/john-berryman|John Berryman]] | "Unharnessed agents" — the term itself is wrong | Contrasting: Berryman argues for agents leaving the IDE; North argues for platforms absorbing harness complexity |
+| [[entities/addy-osmani|Addy Osmani]] | Agent = Model + Harness; ratchet pattern | Aligned: North extends Osmani's technical framework to business strategy |
+| Amp/Thorsten Ball | Harness commoditization — models absorb harness features | Tension: North argues harness differentiation continues; Amp argues it disappears into models |
+
+**Sources**: [[raw/articles/2026-05-24_anorthchen_agent-harness-business.md]], North's X Article on agent harness business case, CREAO platform documentation
+
 ## References
 
 - Husain, H. (2024). ["The Revenge of the Data Scientist"](https://hamel.dev/blog/posts/revenge/) — Foundational essay arguing the harness is data science.
