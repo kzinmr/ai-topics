@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2184 | Indexed entries: 1517 | Not in index: 638
+> Last updated: 2026-05-30 | Total pages: 2163 | Indexed entries: 1549 | Not in index: 614
 
-## Entities (734 pages)
+## Entities (723 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -141,7 +141,6 @@
 - [[entities/ankur-goyal]] — **Name** | Ankur Goyal |
 - [[entities/anthropic-computer-use]] — **Anthropic Computer Use** is a feature enabling Claude models to view screenshots and directly operate GUIs. Released as a research preview in October 2024, it can operate computers like humans — clicking screen coordinates, typing, scrolling, etc. After the Vercept acquisition in February 2026 and the Claude Sonnet 4.6 release, OSWorld scores improved from under 15%...
 - [[entities/anthropic-labs]] — Anthropic's experimental product division, responsible for launching products outside the core Claude AI assistant.
-- [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing.
 - [[entities/antirez-com]] — **URL:** https://antirez.com
 - [[entities/apurva-gandhi]] — Apurva Gandhi — CMU PhD student, RAO (Recursive Agent Optimization), ex-Microsoft Copilot
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
@@ -233,7 +232,6 @@
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — Researcher at Microsoft Research AI Frontiers and professor at UW-Madison (on leave). Co-author of [[echo-rl|ECHO]], a hybrid GRPO + environment-prediction training method for CLI agents that learns world models "for free."
 - [[entities/dji]] — Chinese drone manufacturer with an "iron grip" on the global drone market. Despite U.S. regulatory efforts, DJI's market dominance remains largely intact.
 - [[entities/dorialexander]] — **X/Twitter** | @Dorialexander (~16K followers, joined March 2011) |
-- [[entities/doug-turnbull]] — **X/Twitter** | @softwaredoug |
 - [[entities/downtowndougbrown-com]] — **Blog** | downtowndougbrown.com |
 - [[entities/drew-breunig]] — **Blog** | dbreunig.com |
 - [[entities/drmaciver]] — David R. MacIver (@DRMacIver) — Creator of Hypothesis (Python property-based testing), Hegel (multi-language PBT protocol), Shrinkray (test-case reduction). Senior Engineer at Antithesis. Rigorous AI-assisted development methodology: design-led, 100% coverage ratchet, two-review PR workflow. ~90% of Hegel code first-drafted by Claude Code.
@@ -746,7 +744,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (773 pages)
+## Concepts (1404 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -758,7 +756,6 @@
 - [[concepts/agent-control-plane]] — Agent Control Plane: Governance and operations infrastructure for managing AI Agents at enterprise scale. Includes Agent Registry, Identity, permissions management, execution logs, cost management, evaluation, audit, and rollback. Google Gemini Enterprise Agent Platform and ServiceNow Orchestrator are concrete examples.
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
 - [[concepts/agent-distillation]] — Agent Distillation — Distilling entire agent workflows (multi-step reasoning, tool use) into model weights for ~100x cheaper inference.
-- [[concepts/agent-engineering-guide-2026]] — Agent Engineering Guide 2026 — Comprehensive guide on what to learn, build, and skip in agent engineering.
 - [[concepts/agent-executor]] — Agent Executor — Google's open-source distributed agent runtime. Durable execution, secure sandbox isolation, trajectory branching, connection recovery. May 2026.
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design — Structuring repositories and codebases for maximum AI agent comprehension and effectiveness
 - [[concepts/agent-first-design]] — Agent-First Design — Programming languages designed for AI agents as first-class users. Ronacher's framework + Vercel Zero implementation.

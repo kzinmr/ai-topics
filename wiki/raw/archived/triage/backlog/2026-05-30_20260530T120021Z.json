@@ -1,0 +1,67 @@
+{
+  "checkpoint_run_id": "20260530T120021Z-backlog",
+  "source": "backlog",
+  "summary_ja": "5件のraw記事バックログを処理。すべて非AIコンテンツ（マーケティング用AIプロンプト集、レトロアーケード基板修復記事、浮動小数点印刷/解析アルゴリズム記事、歴史的ミステリー連載）のためskip判定。",
+  "decisions": [
+    {
+      "item_id": "2026-05-10_glean_ai-prompts-for-marketing.md",
+      "source": "raw-backlog",
+      "source_name": "Glean Blog",
+      "title": "25+ AI prompts for Marketing in 2025",
+      "url": "https://www.glean.com/blog/ai-prompts-for-marketing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_ai-prompts-for-marketing.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 本文はWebflow製HTMLのChrome（SVGアイコン、クリップボードウィジェット、オーディオプレーヤー）が90%を占め、実質コンテンツはマーケティング用の一般的なAIプロンプトテンプレートのみ。技術的AI/LLMコンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Have questions or want a demo? AI Summary by Glean: AI-powered marketing: 25 prompts to inspire your strategy. AI is reshaping marketing, helping teams generate fresh content ideas, streamline workflows..."
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2025-06-refurb-weekend-gremlin-blasto-arcade-html--c04f6f39.md",
+      "source": "raw-backlog",
+      "source_name": "oldvcr.blogspot.com",
+      "title": "Refurb weekend: Gremlin Blasto arcade board",
+      "url": "https://oldvcr.blogspot.com/2025/06/refurb-weekend-gremlin-blasto-arcade.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2025-06-refurb-weekend-gremlin-blasto-arcade-html--c04f6f39.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ レトロアーケード基板の修復・技術史ブログ。Gremlin Industriesの1970年代アーケードゲームBlastoの回路基板修復記録。AI/LLM/エージェント関連性ゼロ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Because my sisters were taking rollerskating lessons and my own rink skills mostly consisted of pratfalling, my mother would occasionally give me quarters for the arcade instead..."
+    },
+    {
+      "item_id": "research.swtch.com--fp--24e66a98.md",
+      "source": "raw-backlog",
+      "source_name": "Russ Cox (research.swtch)",
+      "title": "Floating-Point Printing and Parsing Can Be Simple And Fast",
+      "url": "https://research.swtch.com/fp",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/research.swtch.com--fp--24e66a98.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Russ Coxによる浮動小数点数の印刷/解析アルゴリズムに関するシステムプログラミング記事。Go 1.27向けの実装。AI/LLM/エージェント関連性ゼロ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "A floating point number f has the form f = m · 2^e where m is called the mantissa and e is a signed integer exponent. We like to read numbers scaled by powers of ten, not two..."
+    },
+    {
+      "item_id": "filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-3-a-secret-his--028f4fdc.md",
+      "source": "raw-backlog",
+      "source_name": "filfre.net",
+      "title": "The Mystery of Rennes-le-Château, Part 3: A Secret History",
+      "url": "https://www.filfre.net/2026/04/the-mystery-of-rennes-le-chateau-part-3-a-secret-history/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-3-a-secret-his--028f4fdc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ フランスの歴史的ミステリー連載（パート3）。AI/LLM/エージェント関連性ゼロ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Henry Lincoln promised at the end of 'The Priest, the Painter, and the Devil' that he would continue to investigate the case of François-Bérenger Saunière and Rennes-le-Château..."
+    },
+    {
+      "item_id": "filfre.net--2026-03-the-mystery-of-rennes-le-chateau-part-2-secret-codes--57d85396.md",
+      "source": "raw-backlog",
+      "source_name": "filfre.net",
+      "title": "The Mystery of Rennes-le-Château, Part 2: Secret Codes and Hidden Messages",
+      "url": "https://www.filfre.net/2026/03/the-mystery-of-rennes-le-chateau-part-2-secret-codes-and-hidden-messages/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-03-the-mystery-of-rennes-le-chateau-part-2-secret-codes--57d85396.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ フランスの歴史的ミステリー連載（パート2）。AI/LLM/エージェント関連性ゼロ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Rennes-le-Château enjoyed its first watershed moment as a media phenomenon when Albert Salamon wrote his newspaper articles in 1956..."
+    }
+  ]
+}

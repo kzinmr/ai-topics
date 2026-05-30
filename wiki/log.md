@@ -1,6 +1,24 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] watchdog-fix | Index dedup + header count correction
+
+### Issues Fixed
+- **3 duplicate index entries removed**:
+  - `[[entities/anthropic]]` (duplicate of existing entry at line 18)
+  - `[[entities/doug-turnbull]]` (duplicate of existing entry at line 37)
+  - `[[concepts/agent-engineering-guide-2026]]` (kept richer entry with display text at line 1138)
+- **Header counts corrected**:
+  - Total pages: 2184 → 2163 (aligned with filesystem count)
+  - Indexed entries: 1517 → 1549 (after dedup, aligned with actual index entry count)
+  - Not in index: 638 → 614
+  - Entities section: 734 → 723 pages
+  - Concepts section: 773 → 1404 pages
+- **Validation**: validate_index.py passes clean, 0 duplicates remaining
+
+---
+
+
 ## [2026-05-30] blog-wiki-ingest | Recovery + No-op pass (blog-triage JSON parse failure)
 
 - **Upstream issue**: blog-triage cron output wrapped in markdown by cron runner → JSON parse failure
