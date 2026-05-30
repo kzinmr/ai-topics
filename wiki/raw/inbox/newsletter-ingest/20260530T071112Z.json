@@ -1,0 +1,99 @@
+{
+  "run_id": "20260530T071112Z",
+  "triaged_at": "2026-05-30T07:15:00Z",
+  "newsletters": [
+    {
+      "message_id": "<20260529130408.3.8e205221844dc339@mg-d0.substack.com>",
+      "subject": "How to Master Claude Design (for Beginners)",
+      "date": "2026-05-29",
+      "source": "The Signal (Alex Banks)",
+      "classification": "low",
+      "reasoning": "Product tutorial for Claude Design (Anthropic Labs). Mostly Substack internal links (comments, shares, profile pages) with only one actual article URL. Content is behind a paywall. While Claude Design itself is worth tracking as an Anthropic product, this specific newsletter digest contains 90% noise links and offers minimal wiki value.",
+      "action": "skip",
+      "key_urls": [
+        "https://thesignal.substack.com/p/how-to-master-claude-design-for-beginners"
+      ],
+      "related_wiki_topics": ["claude-design", "anthropic-products"],
+      "existing_entity": false
+    },
+    {
+      "message_id": "<20260529.155704.eccb6de3@mta15>",
+      "subject": "🧠 Claude Learns to Check Itself",
+      "date": "2026-05-29",
+      "source": "Unknown (Beehiiv newsletter)",
+      "classification": "low",
+      "reasoning": "All 20 links are Beehiiv tracking redirects with opaque URLs. Cannot extract actual article content. Subject suggests Claude self-verification/self-correction capabilities which would be relevant to AI safety, but without accessible source URLs, this newsletter provides no actionable wiki content.",
+      "action": "skip",
+      "key_urls": [],
+      "related_wiki_topics": ["claude-self-verification", "ai-safety", "model-evaluation"],
+      "existing_entity": false
+    },
+    {
+      "message_id": "<20260529200250.3.d0ebfc4e5eb24fb6@mg-d1.substack.com>",
+      "subject": "AI Dark Output: The Visible Cost of Invisible Output",
+      "date": "2026-05-29",
+      "source": "SemiAnalysis (Malcolm Spittler & Dylan Patel)",
+      "classification": "high",
+      "reasoning": "Significant economic analysis introducing 'Dark Output' concept - AI-generated economic value not captured in GDP. Covers substitution vs new dark output, $1.5T in potentially automatable tasks, token economics, and macroeconomic measurement challenges. SemiAnalysis is already tracked in x-accounts.yaml. Highly relevant for AI economics, policy, and industry analysis pages.",
+      "action": "extract_article",
+      "key_urls": [
+        "https://newsletter.semianalysis.com/p/ai-dark-output-the-visible-cost-of"
+      ],
+      "related_wiki_topics": ["ai-economics", "dark-output", "tokenomics", "gdp-measurement", "ai-displacement"],
+      "existing_entity": false,
+      "suggested_pages": [
+        {
+          "type": "concept",
+          "title": "Dark Output (AI Economics)",
+          "description": "AI-generated economic value invisible to traditional GDP measurement"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260530015716.3.ac73e76979d9b078@mg2.substack.com>",
+      "subject": "[AINews] Founders and Forward Deployed Engineers",
+      "date": "2026-05-30",
+      "source": "Latent Space (swyx)",
+      "classification": "critical",
+      "reasoning": "Comprehensive AI news digest (May 28-29, 2026) covering multiple high-value topics: Claude Opus 4.8 rollout and benchmark analysis, agent harness optimization, RL training failure modes, Effective Feedback Compute (EFC) metric, LangChain Deep Agents v0.6, vLLM improvements, open-weight model adoption (1 in 3 AI teams), llama.cpp ecosystem, and AIE Forward Deployed Engineer program. swyx/Latent Space is already tracked in x-accounts.yaml. Contains actionable intelligence for multiple wiki pages.",
+      "action": "extract_and_integrate",
+      "key_urls": [
+        "https://swyx.substack.com/p/ainews-founders-and-forward-deployed"
+      ],
+      "related_wiki_topics": ["claude-opus-4.8", "agent-harnesses", "rl-training", "effective-feedback-compute", "langchain", "vllm", "open-weight-models", "llama-cpp", "forward-deployed-engineers"],
+      "existing_entity": false,
+      "suggested_pages": [
+        {
+          "type": "event",
+          "title": "Claude Opus 4.8 Release (May 2026)",
+          "description": "Anthropic's incremental model update with improved cooperation and API ergonomics"
+        },
+        {
+          "type": "concept",
+          "title": "Effective Feedback Compute (EFC)",
+          "description": "Agent success metric superior to raw token/tool counts (R² up to 0.99)"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 4,
+    "critical": 1,
+    "high": 1,
+    "low": 2,
+    "recommended_actions": {
+      "extract_articles": 1,
+      "extract_and_integrate": 1,
+      "skip": 2
+    },
+    "new_concepts_identified": [
+      "Dark Output (AI Economics)",
+      "Effective Feedback Compute (EFC)",
+      "Claude Opus 4.8 benchmark friction"
+    ],
+    "entities_to_track": [
+      "SemiAnalysis (Dylan Patel, Malcolm Spittler)",
+      "Latent Space (swyx)"
+    ]
+  }
+}
