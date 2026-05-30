@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-29 | Total pages: 2181 | Indexed entries: 1517 | Not in index: 638
+> Last updated: 2026-05-29 | Total pages: 2184 | Indexed entries: 1517 | Not in index: 638
 
 ## Entities (734 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -450,6 +450,7 @@
 - [[entities/openai-codex]] — OpenAI's AI coding agent, now positioned as general-purpose knowledge work platform (Delegate/Collaborate modes, Goals/Skills framework, 5 levels of use). CLI-based OSS, gpt-5.3-codex model. Autonomous execution and compaction. Codex Thursday No.6: Appshots, /goal, remote computer use, annotation mode, plugin sharing. Loop features: Steering/Queuing/voice input, Durable Threads, Thread Automations, Goals, side panel, shared memory (Obsidian vault), mobile support. See [[concepts/codex-prompting]] for prompt design.
 - [[entities/openai]] — AI Research & Product Company (2015). GPT-5.6 solved 1946 Erdos problem ($1K/32h, 125 pages, T. Gowers: "first clear example of AI solving open math problem").
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo) — $4B enterprise AI deployment JV. Majority OpenAI-owned. 19 global investors including TPG, Bain Capital, Goldman Sachs, McKinsey. Acquired Tomoro (~150 FDEs). Launched May 2026.
+- [[entities/openai-neptune-acquisition]] — OpenAI's acquisition of neptune.ai (Dec 2025). Experiment tracking and training observability platform. Strengthens OpenAI's internal training infrastructure for frontier model development.
 - [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**. Features gateway-first architecture with multi-agent routing, ACP sub-agent spawning, cron/webhook scheduling, and orchestrates execution specialists like Hermes Agent.→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/opencode]] — The most popular open-source AI coding agent. 155K GitHub Stars, MIT license, 850+ contributors. 75+ LLM providers supported, multi-surface (TUI/Desktop/IDE). Plan/Build/General 3-agent system, LSP integration, GitHub-native integration.
 - [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
@@ -884,6 +885,7 @@
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-opus-4-7]] — Claude Opus 4.7: Anthropic's frontier LLM (released April 2026)
+- [[concepts/claude-opus-4-8]] — Claude Opus 4.8: Anthropic's May 2026 Opus upgrade. Modest but tangible benchmark improvements. Introduces Dynamic Workflows (100s parallel subagents in single session), Effort Control (user-dialable compute scaling), and Mid-conversation System Messages. Super-Agent, CursorBench, Online-Mind2Web, Legal Agent benchmarks.
 - [[concepts/cli-first-development]] — CLI-First Development: designing command-line interfaces with AI coding agents as first-class users. Resource/command layer split, --json/--jq pre-context trimming, semantic defaults, consistent flags. Case study: GitHub CLI (gh). Analyzed by [[entities/yan5xu]].
 - [[concepts/colbert]] — ColBERT (Late Interaction Retrieval): neural IR architecture with MaxSim token-level scoring. Outperforms single-vector models with 1/60th the parameters on agentic search (BrowseComp-Plus), superior OOD generalization (ViDoRe), and order-of-magnitude data efficiency. Key tradeoffs: 32x storage, two-step retrieval pipeline.
 - [[concepts/compound-engineering-every]] — Compound Engineering (Every) — Dan Shipper/Every framework: AI-native development where existing components are orchestrated rather than rebuilt. Single-person teams ship multi-component products. Open-source compound-engineering-plugin (14K+ stars). See [[concepts/agent-native-architecture]] and [[concepts/folder-is-the-agent]].
@@ -913,12 +915,13 @@
 - [[concepts/dspy]] — DSPy — Declarative self-improving Python framework for LM program optimization, signature-driven LLM programming.
 - [[concepts/dspy-rlm]] — DSPy.RLM
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
-- [[concepts/dynamic-workflows]] — Claude Code Dynamic Workflows (May 2026): JavaScript orchestration scripts that spawn 10s-100s of parallel subagents with verification/convergence loops. Bun Zig→Rust migration (~750K LOC, 11 days, 99.8% tests pass). Ultracode mode. Discussion: scaffold-level RLM instantiation (a1zhang claim). See [[concepts/rlm-recursive-language-models]]
+- [[concepts/dynamic-workflows]] — Claude Code Dynamic Workflows (May 2026): Multi-agent orchestration within single session. Plan → spawn 100s parallel subagents → verify → report. Enables codebase-scale migrations. Opus 4.8, research preview. Enterprise/Team/Max plans.
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4): antirez's local AI inference project. Runs DeepSeek V4 Flash with 2/8bit asymmetric quantization on 96-128GB Macs. Plans distributed inference and coding agent integration. First time using local models for serious work.
 - [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
 - [[concepts/eagle-3-1]] — EAGLE 3.1: Speculative decoding reliability upgrade. Fixes attention drift via FC normalization + post-norm hidden-state feedback. 2.03× throughput on Kimi K2.6 (vLLM). Jointly developed by EAGLE, vLLM, TorchSpec teams (May 2026).
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training objective for CLI agents. Learns world models "for free" from terminal response tokens already in the rollout. Nearly doubles TerminalBench-2.0 pass@1 at zero extra cost. By Vaishnavi Shrivastava, Dimitris Papailiopoulos, Piero Kauffmann & Ahmed Awadallah (MSR AI Frontiers, 2026-05). Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517).
+- [[concepts/effort-control]] — Effort Control: User-controllable compute scaling introduced with Opus 4.8 (May 2026). Dial between speed/cost and reasoning depth in claude.ai and Cowork. Operationalizes test-time compute scaling.
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
 - [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (M
 - [[concepts/etclovg-taxonomy]] — ETCLOVG Taxonomy — Seven-layer agent harness engineering taxonomy: Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance. Proposed by Li et al. (2026). Maps 138+ open-source projects.

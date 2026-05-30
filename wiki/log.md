@@ -4922,3 +4922,28 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **New concept page**: [[concepts/programmatic-tool-calling]] — PTC paradigm: LLMs write Python code to orchestrate tool calls in sandboxes vs sequential tool calling. Benchmarks, cost analysis, 3 implementation approaches.
 - **Enriched concept page**: [[concepts/agent-hosting-aws]] — Added PTC Integration section cross-referencing the new concept, updated sources/frontmatter.
 - Updated `wiki/index.md` (+1 concept, +2 entities, +3 indexed entries).
+
+## [2026-05-30] active-crawl | AI/ML Trending Topics — May 2026
+
+### Pages Created
+- [[concepts/claude-opus-4-8]] — Claude Opus 4.8: Anthropic's May 2026 model with Dynamic Workflows, Effort Control, and Mid-conversation System Messages
+- [[entities/openai-neptune-acquisition]] — OpenAI's acquisition of neptune.ai for training observability
+- [[concepts/effort-control]] — User-controllable compute scaling introduced with Opus 4.8
+- [[concepts/dynamic-workflows]] — Claude Code's multi-agent orchestration within a single session
+
+### Pages Updated
+- index.md — Added 3 new entries, updated dynamic-workflows description, corrected Total pages count (2181 → 2184)
+
+### Sources
+- https://www.anthropic.com/news/claude-opus-4-8
+- https://openai.com/index/openai-to-acquire-neptune/
+- https://www.anthropic.com/news/claude-opus-4-8 (Simon Willison summary: raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md)
+
+### Notes
+- Claude Opus 4.8 (May 28, 2026) introduces three architectural innovations: Dynamic Workflows (100s parallel subagents in single session), Effort Control (user-dialable compute scaling), Mid-conversation System Messages (API updates without breaking prompt cache).
+- OpenAI acquires Neptune (experiment tracking platform) for training infrastructure — signals that training observability is becoming a strategic bottleneck for frontier model development.
+- Cognition entity page already exists with comprehensive Series D coverage ($26B valuation) — no new entity page needed.
+- George Hotz "Eternal Sloptember" already covered in george-hotz.md entity page.
+- SymJack/TrustFall already covered in events/trustfall-symlink-rce-2026.md.
+- Agent Containment concept page already exists from May 27 session.
+- Claude Mythos & Project Glasswing already comprehensively documented.

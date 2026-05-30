@@ -1,0 +1,56 @@
+{
+  "checkpoint_run_id": "20260530T080007Z",
+  "summary_ja": "raw-backlog 5件処理。すべて非AIコンテンツのためskip。Glenプロンプトリストは既に同種記事がskip記録済み。残り4件はレトロゲーム修理、浮動小数点アルゴリズム、歴史ミステリー記事でwiki対象外。",
+  "decisions": [
+    {
+      "item_id": "2026-05-10_glean_ai-prompts-for-marketing",
+      "source": "backlog",
+      "title": "25+ AI prompts for Marketing in 2025",
+      "url": "https://www.glean.com/blog/ai-prompts-for-marketing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_ai-prompts-for-marketing.md",
+      "recommended_action": "skip",
+      "reason_ja": "Glenマーケティング向けAIプロンプトリスト。log.mdに既に同種の記事がskipとして記録済み。新規技術的知見なし。",
+      "body_excerpt": "AI-powered marketing: 25 prompts to inspire your strategy. AI is reshaping marketing, helping teams generate fresh content ideas."
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2025-06-refurb-weekend-gremlin-blasto-arcade-html--c04f6f39",
+      "source": "backlog",
+      "title": "Refurb weekend: Gremlin Blasto arcade board",
+      "url": "https://oldvcr.blogspot.com/2025/06/refurb-weekend-gremlin-blasto-arcade.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2025-06-refurb-weekend-gremlin-blasto-arcade-html--c04f6f39.md",
+      "recommended_action": "skip",
+      "reason_ja": "レトロアーケード基板の修理・レストア記事。AI/LLM無関係。",
+      "body_excerpt": "Refurb weekend: Gremlin Blasto arcade board restoration."
+    },
+    {
+      "item_id": "research.swtch.com--fp--24e66a98",
+      "source": "backlog",
+      "title": "Floating-Point Printing and Parsing Can Be Simple And Fast",
+      "url": "https://research.swtch.com/fp",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/research.swtch.com--fp--24e66a98.md",
+      "recommended_action": "skip",
+      "reason_ja": "浮動小数点数の印刷・パージングアルゴリズムに関するCS記事。AI/LLM無関係。",
+      "body_excerpt": "Floating point number f = m * 2^e conversion algorithms."
+    },
+    {
+      "item_id": "filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-3-a-secret-his--028f4fdc",
+      "source": "backlog",
+      "title": "The Mystery of Rennes-le-Chateau, Part 3: A Secret History",
+      "url": "https://www.filfre.net/2026/04/the-mystery-of-rennes-le-chateau-part-3-a-secret-history/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-3-a-secret-his--028f4fdc.md",
+      "recommended_action": "skip",
+      "reason_ja": "歴史ミステリー記事。AI/LLM無関係。",
+      "body_excerpt": "Henry Lincoln investigation of Rennes-le-Chateau mystery."
+    },
+    {
+      "item_id": "filfre.net--2026-03-the-mystery-of-rennes-le-chateau-part-2-secret-codes--57d85396",
+      "source": "backlog",
+      "title": "The Mystery of Rennes-le-Chateau, Part 2: Secret Codes and Hidden Messages",
+      "url": "https://www.filfre.net/2026/03/the-mystery-of-rennes-le-chateau-part-2-secret-codes-and-hidden-messages/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-03-the-mystery-of-rennes-le-chateau-part-2-secret-codes--57d85396.md",
+      "recommended_action": "skip",
+      "reason_ja": "歴史ミステリー記事Part 2。AI/LLM無関係。",
+      "body_excerpt": "Rennes-le-Chateau secret codes and hidden messages."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-05-30T07:34:37.041548+00:00",
+  "triage_run_id": "20260530T070044Z",
+  "source": "blog",
+  "summary_ja": "2026-05-30 ブログトリアージ: 14件中、Takes=0、References=4、Skips=10。主要AI関連記事（Martin AldersonのGemini分析、Ed ZitronのAI Bubble Part 3、Together AIのSTT最適化、Gary Marcusのトークンマキシン衰退分析）はすべて既存wikiページに既に収録済み。blog-ingestの同日07:00 UTCパイプラインが既に処理済み。新規作成対象なし。残りの10件は非AIコンテンツ（レトロコンピュータ、政治評論、Windows内部実装、PHP依存ポリシー、オンラインアルゴリズム、ハードウェアレビュー、行政批判）。",
+  "decisions": [
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "The Silicon Underground (CRT pixels)",
+      "url": "https://dfarq.homeip.net/why-people-say-crts-dont-have-pixels/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--why-people-say-crts-dont-have-pixels--b732654e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ CRTモニタのピクセルとドットピッチに関するレトロコンピュータ解説。AI/LLMとは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Silicon Underground\nSource: https://dfarq.homeip.net/why-people-say-crts-dont-have-pixels/?utm_source=rss&utm_medium=rss&utm_campaign=why-people-say-crts-dont-have-pixels\nI keep hearing people say that CRTs don’t have pixels. That is incorrect. We talked about pixels all the time in the 1980s "
+    },
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "DR DOS: Revenge of CP/M",
+      "url": "https://dfarq.homeip.net/dr-dos-revenge-of-cp-m/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--dr-dos-revenge-of-cp-m--e9d0cd6d.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ DR DOSとCP/Mの歴史に関するレトロコンピュータ記事。AI/LLMとは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# DR DOS: Revenge of CP/M\nSource: https://dfarq.homeip.net/dr-dos-revenge-of-cp-m/?utm_source=rss&utm_medium=rss&utm_campaign=dr-dos-revenge-of-cp-m\nDR DOS was a third party clone of MS DOS that developed a well-deserved niche following in the late 1980s and early 1990s. Even though it was first rel"
+    }
+  ]
+}
