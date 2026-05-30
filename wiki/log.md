@@ -1,6 +1,19 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] Epoch AI Open-Closed ECI Gap ingest — 2 concept pages created, 1 raw article saved
+
+- **Source**: Epoch AI data insight — "Open vs. closed model capability gap" (epoch.ai/data-insights/open-closed-eci-gap)
+- **Secondary source**: OfficeChai article summarizing Epoch AI findings
+- **Raw articles saved**:
+  - `raw/articles/2026-05-28_epoch-ai_open-closed-eci-gap.md` — Epoch AI data insight
+  - `raw/articles/2026-05-28_officechai_open-source-lag-proprietary-4-months.md` — OfficeChai summary
+- **Concept pages created**:
+  - `concepts/epoch-capabilities-index.md` — ECI methodology: IRT model, 40+ benchmarks, calibration (Claude 3.5 Sonnet = 130, GPT-5 = 150), bootstrap uncertainty, domain-specific ECIs, progress acceleration (1.85× post-Apr 2024), limitations
+  - `concepts/open-vs-closed-model-gap.md` — Open vs. closed capability gap: 4-month time lag, 8 ECI point gap, Chinese-dominated open-weight frontier, business implications for enterprise vs. developer trade-offs
+- **Entity page exists**: `entities/epoch-ai.md` already has ECI cross-references and sources
+- **Index updated**: Added both concept entries, header counts: Total 2173→2175, Concepts 1414→1416, Indexed 1559→1561
+
 ## [2026-05-31] North Chen X Article Ingestion | Harness Platform Economics
 - **Source**: X Article by North (@anorth_chen) — "なぜあなたのagentプロジェクトはいつも落地が難しいのか"
 - **Raw Article**: wiki/raw/articles/2026-05-24_anorthchen_agent-harness-business.md (225 lines, 18KB)

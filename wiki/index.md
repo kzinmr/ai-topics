@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-30 | Total pages: 2173 | Indexed entries: 1559 | Not in index: 604
+> Last updated: 2026-05-30 | Total pages: 2175 | Indexed entries: 1561 | Not in index: 604
 
 ## Entities (723 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -746,7 +746,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1414 pages)
+## Concepts (1416 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1194,6 +1194,8 @@
 - [[concepts/enterprise-agents]] — Enterprise Agents — Production AI agents in business/government. Human-agent teaming, staged actions (propose→review→commit), graded autonomy, FDE deployment model. See [[entities/palantir]].
 - [[concepts/erdos-unit-distance-problem]] — OpenAI's internal model disproved the 80-year-old Erdős unit distance conjecture (1946) on 2026-05-21. Counterexample via high-dimensional lattice→plane projection. First AI mathematical result that "would be top-journal worthy if done by humans alone."
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
+- [[concepts/epoch-capabilities-index]] — Epoch Capabilities Index (ECI): composite metric stitching 40+ benchmarks via IRT model into unified capability scale. Calibration (Claude 3.5 Sonnet = 130, GPT-5 = 150), bootstrap uncertainty, domain-specific ECIs, progress acceleration finding (1.85× post-Apr 2024).
+- [[concepts/open-vs-closed-model-gap]] — Open vs. closed model capability gap measured via ECI. 4-month time lag (Jan–May 2026), 8 ECI point gap. Chinese-dominated open-weight frontier (Kimi K2.6, GLM-5.1, DeepSeek-V4 Pro). Business implications for enterprise vs. developer trade-offs.
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 - [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution. Multi-needle long-context eval. Originated from Google DeepMind's LSQ framework. OpenAI released OSS version. Claude Opus 4.6 at 93% on 8-needle 1M.
 - [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: Method for teaching multi-turn tool orchestration to LLM agents using GRPO. Bespoke Labs achieved +23% on BFCL v3 (Qwen2.5-7B, 100 samples). Less is More in reward design, overlength filtering + KL 0.001.
