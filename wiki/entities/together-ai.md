@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-05-10
+updated: 2026-05-30
 tags:
   - company
   - infrastructure
@@ -54,6 +54,42 @@ This represents a significant **democratization of model deployment** — loweri
 
 **Competitive context**: This is similar to what providers like [Replicate](https://replicate.com/) and [Baseten](https://baseten.co/) offer, but Together AI's integration with their existing GPU cluster infrastructure gives it a performance edge.
 
+
+## World's Fastest Speech-to-Text Stack (May 2026)
+
+Together AI achieved the **two lowest-latency speech-to-text models** ranked by Artificial Analysis: NVIDIA's Parakeet-TDT 0.6B v3 and OpenAI's Whisper Large v3. Parakeet-TDT v3 can transcribe ~20 hours of audio (the Harry Potter film franchise) in under 10 seconds.
+
+Key optimizations that made this possible:
+
+### 1. TensorRT Multi-Profile Engine (Encoder)
+- Audio inputs range from 200ms streaming packets to 30-second continuous speech
+- Single engine tuned for largest shape wastes compute on short utterances (padding overhead)
+- **Multi-profile TensorRT engine**: one copy of weights in memory, right optimization profile per request
+- Memory savings: modest (6GB → 5GB), but **several times faster** on small-input regime vs padded profile
+
+### 2. Conditional CUDA Graphs (Decoder)
+- Parakeet decoder loop: `predict(frame) → if token != BLANK → emit(token) → update(state)`
+- The `if` branch forces **CPU-GPU round-trip** per iteration, preventing CUDA graph capture
+- **Solution**: conditional CUDA graph nodes — device-side kernel evaluates condition, tells CUDA runtime which subgraph to execute
+- **2–3x faster decoder**, entire loop captured as single CUDA graph launch
+
+### 3. Zero-Copy CPU Path
+- Collapsed 3–4 microservice processes into fewer processes to eliminate kernel copies and serialization/deserialization
+- **Persistent Unix domain sockets** with custom minimal framing protocol instead of ZeroMQ
+- **Shared memory** for large files: zero-copy data path, both processes map same physical region
+
+### 4. epoll-Based Evented I/O (Streaming)
+- One-thread-per-connection caused GIL contention explosion under hundreds of concurrent streams
+- **Migrated to epoll**: single thread monitors thousands of connections, kernel returns full ready set
+- **Far less scheduler pressure**, critical for streaming ASR where tail latency (p95) makes voice systems "feel slow"
+
+### 5. gc.freeze() — The P95 Killer
+- Preallocated buffer pools at startup landed in Python's oldest GC generation
+- Full GC passes walked **hundreds of thousands of references**, causing ~200ms p95 spikes
+- **One-line fix**: `gc.freeze()` excludes preallocated state from future GC scans
+- P95 spikes eliminated, P50 improved from smoother traffic patterns
+
+> **Key insight**: Voice latency is an **end-to-end systems problem**. GPU time, queue depth, and model execution all looked normal — the latency spike lived in the Python runtime itself.
 
 ## Related
 

@@ -163,6 +163,46 @@ A cloud-based personal AI agent that works proactively on users' behalf, under t
 
 Personalized morning digest agent. Opt-in. Works across connected apps (Gmail, Calendar) in background. Gathers urgent emails, upcoming events, follow-ups into skimmable briefing. Prioritizes based on user goals. Learnable via thumbs up/down.
 
+## Martin Alderson's Critique: What's Going On With Gemini? (May 2026)
+
+In "What's going on with Gemini?" (May 30, 2026), developer and analyst **[[entities/martin-alderson|Martin Alderson]]** provides a sharp assessment of Google's AI strategy:
+
+### The TPU Advantage
+
+The most significant development is that Gemini 3.5 Flash appears to **run on a single TPU 8i card** (Google's latest custom inference hardware). This is Google's **structural moat**: it's the only frontier lab that designs its own AI silicon.
+
+> "While other labs certainly optimize their models to the hardware, and also no doubt have a lot of say in driving the Nvidia/AMD roadmaps to their specifications, the model teams and hardware teams in Google almost certainly collaborate to a far greater level than the other labs."
+
+This deep integration matters for **inference efficiency** — the key driver of actual unit economics in AI. Google DeepMind research can flow directly into the hardware roadmap without external negotiations, giving Google an outsized advantage in cost-per-inference.
+
+### The Pricing Problem
+
+Gemini 3.5 Flash at **$9/MTok output** is confusing from a market perspective:
+- **3× more expensive** than previous Flash releases
+- Vastly more expensive than best-in-class Chinese models (GLM 5.1, Qwen 3.7)
+- If you want best-in-class intelligence, you pay extra for Opus/GPT-5.5
+- If you want cheap but capable, Chinese models fit the bill (self-hostable via OpenRouter)
+
+**Alderson's hypothesis**: The model isn't designed for external use in the same way OpenAI/Anthropic models are. It's **priced and tuned for Google's own gigantic internal token consumption** (AI Mode, Gmail, etc.). The actual serving cost Google pays is "almost certainly a fraction of the external facing price."
+
+### The Coding Agent Confusion
+
+Google's biggest weakness: **a smorgasbord of competing coding tools**:
+- Antigravity
+- Jules
+- Gemini Code Assist
+- Gemini CLI (being discontinued, folded into Antigravity)
+- AI Studio
+- Android Studio agentic tools
+
+Meanwhile, Anthropic has **Claude Code** and OpenAI has **Codex** — clean, focused products. Alderson "very rarely comes across any developer using Google-based SWE tooling." This creates a **data flywheel disadvantage**: Claude Code and Codex generate detailed telemetry and training data to improve models. Without a coherent agent strategy, Google misses this feedback loop.
+
+> "Because Google has such bespoke internal software development workflows, their isolation from what 'the rest of the industry' does in software is so large it's perhaps hard for them to really reason about agentic tooling for the rest of the industry."
+
+### Alderson's Verdict
+
+Google is playing a **genuinely different game** to OpenAI and Anthropic. Gemini 3.5 Flash only looks strange if you assume it's competing in the same race. With TPU advantage, research depth, and internal scale, Google could be "very hard to beat" — **if** it sorts out the agent-facing surface.
+
 ## Competition with OpenAI
 
 Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 2 (ChatGPT Images 2.0):

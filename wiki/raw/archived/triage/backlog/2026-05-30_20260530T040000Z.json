@@ -1,0 +1,57 @@
+{
+  "checkpoint_run_id": "20260530T040000Z",
+  "archived_at": "2026-05-30T04:02:39.970644+00:00",
+  "source": "backlog",
+  "items": [
+    {
+      "item_id": "backlog-1",
+      "url": "https://fireworks.ai/blog/best-llms-for-coding",
+      "title": "Best LLMs for coding: 2026 roundup",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_fireworks-ai_best-llms-for-coding.md",
+      "filename": "2026-05-10_fireworks-ai_best-llms-for-coding.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本文でAA Coding Indexのベンチマーク表（GPT-5.5: 59.1, Opus 4.7: 52.5, DeepSeek V4-Pro: 47.5など）、Fireworks固有のスループットメトリクス、MITライセンスのオープンウェイトモデルの位置付けを報告。ただし本日の00:00 UTCのraw-backlog-ingestで既に`entities/fireworks-ai.md`に「Coding Benchmarks & Model Comparison (March 2026)」セクションとして取り込み済み。log.mdとエンティティページのsources/frontmatterで確認済み。",
+      "body_excerpt": "Best LLMs for coding: 2026 roundup... DeepSeek V4 Pro is Live... GPT-5.5 (xhigh) tops the AA Coding Index at 59.1... Kimi K2.6 on Fireworks: 47.1 on the AA Coding Index... FireAttention: the inference engine... FireOptimizer: post-training results..."
+    },
+    {
+      "item_id": "backlog-2",
+      "url": "https://fireworks.ai/blog/best-llm-api-providers",
+      "title": "Best LLM API Providers in 2026: We Reviewed 8 Options",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md",
+      "filename": "2026-05-29_fireworks-ai_best-llm-api-providers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本文でFireworks AI、OpenRouter、Hugging Face、Together AI、Groq、Cerebras、Baseten、Modalの8プロバイダをモデルカタログ、API互換性、価格、fine-tuning対応で比較。ただし本日の00:00 UTCのraw-backlog-ingestで既に`entities/fireworks-ai.md`のsourcesに追加済み（raw_pathがsources配列に含まれている）。エンティティページは既に包括的な内容（decacorn status, FireAttention, 3D FireOptimizer, RFT, Eval Protocol, Vercelケーススタディ）を保有。",
+      "body_excerpt": "Best LLM API Providers in 2026: We Reviewed 8 Options... Fireworks AI, OpenRouter, Hugging Face, Together AI, Groq, Cerebras, Baseten, Modal..."
+    },
+    {
+      "item_id": "backlog-3",
+      "url": "http://www.paulgraham.com/wealth.html",
+      "title": "How to Make Wealth",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--wealth-html--29c8c21d.md",
+      "filename": "paulgraham.com--wealth-html--29c8c21d.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 2004年の古典エッセイ。本文はスタートアップと富の創造について論じているが、AI/LLM/エージェント技術とは無関係。`entities/paulgraham-com.md`は既に包括的なPGエッセイカタログ（wealth-html--29c8c21dなど100+エッセイのreferencesリスト）を保有しており、このエッセイも既に追跡済み。wikiのスコープ外。",
+      "body_excerpt": "How to Make Wealth... May 2004... If you wanted to get rich, how would you do it? I think your best bet would be to start or join a startup..."
+    },
+    {
+      "item_id": "backlog-4",
+      "url": "https://www.glean.com/blog/25-ai-prompts-for-product-managers",
+      "title": "25 AI prompts for product managers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_25-ai-prompts-for-product-managers.md",
+      "filename": "2026-05-10_glean_25-ai-prompts-for-product-managers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 本文はGleanのマーケティングコンテンツで、プロダクトマネージャー向けの25個のAIプロンプト例を列挙。技術的な深みや新規の概念・アーキテクチャ・ベンチマークは含まれない。`entities/glean.md`は既に存在し、MCP vs CoworkベンチマークやEnterprise Graphなどの技術的コンテンツを保有しているが、このプロンプトリスト記事はそのスコープ外。",
+      "body_excerpt": "25 AI prompts for product managers... Glean Blog... Joel McKelvey, Head of Solutions..."
+    },
+    {
+      "item_id": "backlog-5",
+      "url": "https://www.glean.com/blog/30-ai-prompts-for-finance-professionals",
+      "title": "30 AI prompts for finance professionals",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_30-ai-prompts-for-finance-professionals.md",
+      "filename": "2026-05-10_glean_30-ai-prompts-for-finance-professionals.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 記事4と同様のマーケティングコンテンツ。ファイナンス専門家向けの30個のAIプロンプト例を列挙。技術的洞察や新規概念なし。`entities/glean.md`の対象外。",
+      "body_excerpt": "30 AI prompts for finance professionals... Glean Blog..."
+    }
+  ]
+}

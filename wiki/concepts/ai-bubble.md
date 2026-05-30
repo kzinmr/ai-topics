@@ -2,7 +2,7 @@
 title: "AI Bubble Debate (2025–2026)"
 type: concept
 created: 2026-05-16
-updated: 2026-05-23
+updated: 2026-05-30
 tags:
   - economics
   - industry
@@ -12,6 +12,8 @@ sources:
   - "https://www.wheresyoured.at/premium-what-if-were-in-an-ai-bubble-part-1/"
   - raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-1--6e9bc8ba.md
   - raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-2--f011aa92.md
+  - raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md
+  - raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md
 ---
 
 # AI Bubble Debate (2025–2026)
@@ -110,6 +112,41 @@ The AI bubble is entirely built on the assumption that **somebody else will solv
 - What if most AI startups go to zero?
 - What if OpenAI and Anthropic become AI's lender of last resort?
 - What if inference isn't profitable?
+
+## Part 3: The Mathematical Impossibility (May 30, 2026)
+
+In the conclusion of his three-part series, Zitron presents a **quantitative impossibility proof** for the current AI investment thesis:
+
+### The Four Numbers That Don't Add Up
+
+1. **$435B** — Annual global compute demand required to justify NVIDIA's $1T+ GPU sales by 2027. Outside OpenAI/Anthropic: only a few billion.
+2. **$852B** — Cashflow OpenAI must generate or raise through 2030 to meet existing compute commitments.
+3. **$375B** — Anthropic's parallel compute commitment figure ($330B to hyperscalers + $30B CoreWeave + $63B TPU from Broadcom).
+4. **$500B+** — Non-capex, non-compute AI revenue needed by 2030 for industry investments to be recouped. Current leader after the big two: Cursor at $3B.
+
+### Key Findings
+
+- **NVIDIA is warehousing 1M+ Blackwell GPUs** — selling chips faster than data centers can be built
+- **OpenAI's Q1 2026 operating margin: -122%** non-GAAP; WAU growth stalled at 905M (missed 1B target)
+- **Dario Amodei admitted** to Dwarkesh Patel that being "off by a year" on growth projections means bankruptcy
+- **Anthropic's "profitable" Q2 2026** achieved via discounted bills — an accounting maneuver, not real profitability
+- **89% of all AI startup revenue** goes to OpenAI or Anthropic — extreme concentration
+- **Token-based billing backfiring**: Uber exhausted its entire annual token budget in 4 months; Zillow likely maxing Cursor budget by May 2026
+
+### The Revenue Ceiling Problem
+
+Zitron argues there's a **natural ceiling** to AI spending that the industry cannot afford:
+- Nobody knows *why* they're spending on AI or *how much* they'll spend in a given month
+- Tokenmaxxing (mandating AI usage) is already reversing as enterprises can't measure ROI
+- If companies are hesitating at current spend levels, OpenAI and Anthropic's revenue projections are impossible
+- **"This cannot happen, and neither Anthropic nor OpenAI can afford to slow down"**
+
+### Connection to Tokenmaxxing Decline
+
+Gary Marcus (May 29, 2026) independently confirmed the enterprise pushback trend:
+- NVIDIA H200 rental prices dropped from $7/hr to $4/hr (43% decline — oversupply signal)
+- Tokenmaxxing hitting natural limits as enterprises realize agents "burn orders of magnitude more tokens" without proportional ROI
+- The convergence of signals suggests the bubble's internal dynamics are **already turning**
 
 ## Key Players
 

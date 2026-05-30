@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-05-27
+updated: 2026-05-30
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: [raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md]
+sources: [raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md]
 ---
 
 
@@ -291,6 +291,72 @@ Zitron identifies three companies expected to IPO at ~$4 trillion total valuatio
 
 ---
 
+## Zitron's Part 3: The $852B Burn Problem (May 2026)
+
+In the conclusion of his three-part "What If We're In An AI Bubble?" series (May 30, 2026), Ed Zitron lays out the **mathematical impossibility** of current compute demand sustaining NVIDIA's sales projections and OpenAI/Anthropic's commitments.
+
+### The $435B Compute Demand Requirement
+
+For NVIDIA's $1T+ in Blackwell and Vera Rubin GPU sales by end of 2027 to be justified:
+- **~40GW of data center capacity** must be built (PUE 1.35, supporting 30GW+ of GPUs)
+- At **~$12M/MW** compute pricing, this requires **~$435B in annual global compute demand**
+- Outside of OpenAI and Anthropic, there appears to be only a **few billion dollars** of demand
+- Data center builds take **24+ months even for 40MW sites**, meaning NVIDIA customers take years to begin recouping chip costs
+- NVIDIA is **"absolutely, without a doubt, warehousing at least a million Blackwell GPUs"** — selling far more chips quarterly than can be installed
+
+### The Compute Customer Gap
+
+Per Greg Brockman (OpenAI COO), **OpenAI will spend ~$50B on compute in 2026**, and Anthropic likely a similar amount (including $15B/year on xAI's Colossus data centers). Combined:
+- OpenAI + Anthropic have made **$1.1T+ in compute commitments** across Microsoft, Google, Amazon, Oracle, CoreWeave, Cerebras, Terawulf, and Cipher Mining
+- Even if both companies **doubled their spend**, at least **two more Anthropic/OpenAI-sized customers** would be needed
+- Zitron cannot find **a single other company spending even $100M/year on compute**
+- Most AI startups want to pay Anthropic/OpenAI directly for model access, meaning those labs must use roughly **twice their current compute** capacity just to meet existing buildout plans
+
+### OpenAI's $852B Burn Through 2030
+
+| Projection | Figure |
+|---|---|
+| **Oct 2024**: Projected profitability by 2029 | $44B total losses 2023–2028, 41% gross margin |
+| **Actual 2025 gross margin** | **33%** (missed 49% projection) |
+| **Sep 2025**: Revised burn estimate | $115B through 2029 (assumed $60B revenue in 2027, $100B in 2028, $145B in 2029, $200B in 2030) |
+| **Sep 2025 (2 weeks later)**: Server rental estimate | **~$450B** through 2030 |
+| **Nov 2025**: ARR claim | $20B ARR, $1.4T in 8-year commitments |
+| **Feb 2026**: Compute commitments target | ~$600B by 2030 |
+| **Feb 2026 (The Information)**: Actual plan | **$665B on compute through 2030**, missed gross margin projections, 910M WAUs (90M short of 1B goal) |
+| **May 2026: Q1 2026 operating margin** | **-122% non-GAAP**, 905M WAUs (growth stalled) |
+| **Total cashflow needed through 2030** | **$852B** |
+
+> OpenAI **must make or raise $852B in the next four years**, or it will run out of money or be sued out of existence by counterparties (CoreWeave, Microsoft, Amazon, Cerebras).
+
+Anthropic faces a parallel situation: **$375B in compute commitments** (including $330B to Microsoft/Google/Amazon, $30B to CoreWeave, $63B in TPUs from Broadcom). Anthropic projects $174B in annual revenue by end of 2029 and OpenAI projects $284B — both "ridiculous claims" per Zitron.
+
+### Anthropic's Q2 "Profitability" Con
+
+Zitron notes that Anthropic's Q2 2026 "profitable" quarter was achieved through **discounted bills** — an accounting maneuver that doesn't change the underlying cash flow reality. The company still needs actual cash to meet its $375B+ obligations.
+
+### The Token-Based Billing Backfire
+
+Anthropic only moved organizations to **token-based billing in Q1 2026**. Mere months into charging the actual costs of AI usage, enterprises are already pushing back:
+- **Uber** burned through its entire annual token budget in 4 months; COO says it's "harder to justify AI costs"
+- **Zillow** likely maxing out its annual Cursor budget by end of May 2026
+- **Meta, Amazon** actively incentivizing engineers to burn more tokens with KPIs tracking AI usage
+- The fundamental problem: **"it's very hard to actually draw a line between 'what we've spent' and 'a reason we're spending it'"** (Uber COO)
+
+> "Nobody knows **why** they're spending so much money or even **how much money they might spend in a given month**" — Zitron
+
+### Dario Amodei's Own Bankruptcy Warning
+
+Zitron highlights Anthropic CEO Dario Amodei's own February 2026 admission to Dwarkesh Patel:
+
+> "If my revenue is not $1 trillion dollars, if it's even $800 billion, **there's no force on earth, there's no hedge on earth that could stop me from going bankrupt** if I buy that much compute. Even though a part of my brain wonders if it's going to keep growing 10x, I can't buy $1 trillion a year of compute in 2027. **If I'm just off by a year in that rate of growth, or if the growth rate is 5x a year instead of 10x a year, then you go bankrupt.**"
+
+### The Revenue Concentration Problem
+
+- **OpenAI and Anthropic account for 89% of ALL AI startup revenues**
+- Nearest competitor: Cursor at **$3B annualized revenue** ("rookie numbers")
+- $500B+ in non-capex/non-compute AI revenues needed by 2030 for the industry's investments to be recouped
+- Current trajectory is nowhere near this target
+
 ## Gary Marcus: "Investors Were Sold a Bill of Goods"
 
 Gary Marcus has been one of the most consistent critics of AI economics, arguing that:
@@ -300,6 +366,15 @@ Gary Marcus has been one of the most consistent critics of AI economics, arguing
 3. **Enterprise adoption is not matching investment:** 90% of firms surveyed by NBER found no ROI from AI after three years
 4. **The narrative drives the bubble:** Media and investors treat corporate announcements as facts without verifying execution, cash flow, or technical viability
 
+### The Decline of Tokenmaxxing (May 2026)
+
+In "What happens next, after the decline of tokenmaxxing?" (May 29, 2026), Marcus extends the bubble analysis:
+
+- **NVIDIA H200 rental prices dropped from $7/hr to $4/hr** — a 43% decline indicating oversupply
+- The **tokenmaxxing** practice (encouraging maximal AI token consumption) is hitting natural limits as enterprises realize agents "burn orders of magnitude more tokens" without proportional ROI
+- **AI startup revenue growth cannot continue** if the two dominant players (OpenAI, Anthropic) are already seeing enterprise pushback on costs
+- The convergence of signals — Uber's exhausted budget, Zillow's Cursor overage, H200 price drops — suggests the bubble's internal dynamics are already turning
+
 ---
 
 ## Key Takeaways
@@ -308,11 +383,16 @@ Gary Marcus has been one of the most consistent critics of AI economics, arguing
 - Cross-reference partnership announcements with SEC filings, earnings calls, and guidance updates. **Absence of revenue recognition = deal is theoretical**
 - Ignore annualized revenue metrics. Focus on actual cash flow, burn rate, and deployed compute capacity
 - The compute-to-revenue ratio is the primary viability metric for frontier AI labs
+- **OpenAI needs $852B cashflow through 2030** just to meet existing commitments; Anthropic needs $375B+. Neither has credible revenue paths to these figures
+- OpenAI and Anthropic together account for 89% of all AI startup revenues — extreme concentration risk
 
 ### For Industry Analysts
 - Data center and power grid deployment timelines make rapid "GW-scale" AI claims physically implausible
 - The circular financing structure is transaction-verifiable and represents genuine systemic risk
 - 3% of households pay for AI despite free/cheap global access — this reflects lack of utility, not early-stage friction
+- **NVIDIA is warehousing 1M+ Blackwell GPUs** — selling more chips than can physically be deployed
+- Dario Amodei (Anthropic CEO) has himself acknowledged that missing growth projections by even one year would cause bankruptcy
+- Enterprise token-based billing (Q1 2026) is already causing pushback — Uber exhausted its annual budget in 4 months
 
 ### For Policymakers
 - Private credit tied to AI is flagged as a financial system risk

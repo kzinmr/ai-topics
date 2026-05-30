@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-05-29
+updated: 2026-05-30
 tags:
   - lab
   - benchmark
@@ -122,6 +122,17 @@ On May 28, 2026, Marcus argued that the **enterprise tokenmaxxing boom may alrea
 - **Echo chamber validation**: Karthik Hariharan's widely-circulated observation that "tokens got burned for millions of dollars without any real significant ROI" reinforced Marcus's position that the enterprise AI adoption narrative is unsustainable.
 
 This analysis extends Marcus's broader critique of AI hype into concrete financial and operational territory, moving from philosophical arguments about reliability to specific market indicators of overinvestment.
+
+
+### GPU Rental Price Collapse & What Happens After Tokenmaxxing (May 2026)
+
+On May 30, 2026, Marcus published "What happens next, after the decline of tokenmaxxing?" highlighting two converging data points:
+
+- **Nvidia H200 rental price collapse**: Thierry Borgeat (@ThierryBorgeat) reported the price to rent an Nvidia H200 dropped from $7/hr to $4/hr in three weeks — a **40% decline** in three weeks for "the single most strategic asset in tech." Marcus flagged this as a potential signal that the underlying commodity powering the AI thesis is losing value rapidly.
+
+- **FT ROI projections reinforced**: The Financial Times data showing negative AI ROI projections under best-case assumptions (Microsoft -9%, Google -15%, Meta -28%, Oracle -35%) gained additional traction with 877K views and 573 reposts.
+
+Marcus's thesis: when the fundamental commodity (GPU compute) collapses in price this quickly, it signals either a **demand shortfall** (nobody needs more GPUs) or a **supply glut** (too many came online at once). Both scenarios challenge the prevailing AI growth narrative.
 
 
 ### Key Works

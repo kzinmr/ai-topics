@@ -1,6 +1,22 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] blog-ingest | Blog ingestion (07:00 UTC)
+
+25 new articles collected. 14 saved as raw articles, 6 unsaved (paywalled LWN, OpenAI case studies).
+
+**New pages:**
+- [[entities/braintrust]] — Braintrust observability/eval platform. Codex case study: 50% team adoption in one month, speed-enabled autonomous problem-solving workflow.
+- [[concepts/trusted-access-biodefense]] — OpenAI's Rosalind Biodefense program (May 29, 2026). GPT-Rosalind trusted access for biodefense developers and government partners.
+- [[concepts/evaluation-harness-validity]] — OpenAI's framework for trustworthy third-party evaluations. Harness choice determines whether capability appears in evaluation at all.
+
+**Enriched pages:**
+- [[entities/ed-zitron-s-where-s-your-ed-at]] — AI Bubble Part 3: $435B compute demand, 1M+ GPUs warehoused, OpenAI $852B burn, Anthropic $375B commitments, Uber AI budget exhaustion.
+- [[concepts/ai-bubble-economics]] — Updated with Zitron Part 3 data.
+- [[entities/gemini]] — Added Martin Alderson's critique: TPU 8i advantage, pricing confusion, coding agent smorgasbord, data flywheel disadvantage.
+- [[entities/together-ai]] — Added world's fastest speech-to-text stack: TensorRT multi-profile, conditional CUDA graphs, zero-copy CPU path, epoll I/O, gc.freeze() for p95 latency.
+- [[entities/gary-marcus]] — Added GPU rental price collapse (H200 -40% in 3 weeks), tokenmaxxing decline analysis.
+
 ## [2026-05-30] raw-backlog-ingest | Raw backlog triage (00:00 UTC)
 
 5 articles triaged from backlog. 0 take (no new wiki pages needed), 2 reference (archived), 3 skip (out of scope).

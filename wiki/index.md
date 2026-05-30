@@ -703,6 +703,7 @@
 - [[entities/augment]] — Augment Code — AI coding assistant. $227M raised at $977M valuation. CEO Scott Dietzen.
 - [[entities/baseten]] — Baseten — ML model inference platform. $850M valuation. Optimized LLM serving infrastructure.
 - [[entities/bedrock-robotics]] — Bedrock Robotics — Robotics company focused on autonomous systems.
+- [[entities/braintrust]] — Braintrust — AI observability and evaluation platform. Codex case study: 50% team adoption in one month, speed-enabled autonomous problem-solving. CEO: Ankur Goyal.
 - [[entities/brain-co]] — Brain Co. — AI for institutions. Founded 2024 by Jared Kushner and Elad Gil.
 - [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
 - [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
@@ -1243,6 +1244,7 @@
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch — Full-stack LLM implementation course covering pretraining, tokenization, inference, and alignment.
 - [[concepts/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation. 278 tasks. GPT-5 text 85% vs voice 31-51% (clean) / 26-38% (realistic). 79-90% of failures are agent-behavior-caused (not ASR). Proves the inherent difficulty of the voice modality.
 - [[concepts/trajectory-post-training-platform]] — Trajectory — Post-training platform using product signals + agent traces for large-scale agent model refinement. $15M raised. Design partners: Clay, Harvey, Decagon, Mercor, Rogo.
+- [[concepts/trusted-access-biodefense]] — OpenAI's Rosalind Biodefense program (May 2026). GPT-Rosalind trusted access for biodefense developers and government partners. Defensive acceleration via controlled distribution.
 - [[concepts/turbopuffer-rank-by-attribute]] — TurboPuffer — Rank by Attribute — Vector database feature for ranking results by metadata attributes.
 - [[concepts/typed-rlm]] — λ-RLM (Typed Recursive Reasoning)
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
@@ -1355,6 +1357,7 @@
 - [[concepts/ai-video-generation-2026]] — AI Video Generation (2026): Current state of 6 major commercial models and the expanding OSS ecosystem.
 - [[concepts/anthropic-managed-agents]] — Anthropic Managed Agents: Fully managed platform that accelerates prototype-to-production by 10×.
 - [[concepts/bitsandbytes]] — bitsandbytes: Efficient LLM training library via NF4 quantization and double quantization.
+- [[concepts/evaluation-harness-validity]] — OpenAI's framework for trustworthy third-party evaluations (May 2026). Harness choice determines whether capability appears in evaluation. Three claim types: capability elicitation, controlled comparison, safeguard performance.
 - [[concepts/chatgpt-images-2.0]] — ChatGPT Images 2.0: OpenAI's second-generation image generation feature (GPT Image 2).
 - [[concepts/chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns: Chief of Staff workflow patterns using AI agents.
 - [[concepts/claude-mythos-preview]] — Claude Mythos Preview: Preview of Claude's cybersecurity capability evaluation.
