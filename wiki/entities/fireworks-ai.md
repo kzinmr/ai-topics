@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-05-27
+updated: 2026-05-30
 tags:
   - entity
   - company
@@ -14,6 +14,8 @@ aliases:
   - Fireworks AI Inc.
 sources:
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
+  - raw/articles/2026-05-10_fireworks-ai_best-llms-for-coding.md
+  - raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -72,6 +74,39 @@ Fireworks open-sourced the **Eval Protocol**, a framework focused on authoring e
 ## AI Infra Decacorn Status (May 2026)
 
 By May 2026, Fireworks AI had reached **decacorn status** ($10B+ valuation), joining [[entities/baseten]] as one of the new AI infrastructure decacorns. [[entities/openrouter]] is reportedly on a similar trajectory. This reflects the broader market recognition of AI inference infrastructure as a critical layer in the AI stack, with Fireworks processing 13 trillion+ tokens/day at production scale.
+
+## Coding Benchmarks & Model Comparison (March 2026)
+
+Fireworks publishes a comprehensive **coding LLM benchmark roundup** comparing 11 models across the AA Coding Index, SWE-Bench Verified, pricing ($/1M tokens), and licensing. This establishes Fireworks as a benchmark aggregator alongside model provider.
+
+### Key Benchmark Findings
+
+| Model | AA Coding Index | SWE-Bench Verified | Context | License | Input $/1M | Output $/1M |
+|-------|----------------|-------------------|---------|---------|-----------|------------|
+| **GPT-5.5 (xhigh)** | 59.1 | — | 1M | Proprietary | $5.00 | $30.00 |
+| **GPT-5.4 (xhigh)** | 57.3 | — | 1M | Proprietary | $2.50 | $15.00 |
+| **Claude Opus 4.7 (max)** | 52.5 | 87.6% | 200K | Proprietary | $15.00 | $75.00 |
+| **Claude Sonnet 4.6 (max)** | 48.1 | 84.1% | 200K | Proprietary | $3.00 | $15.00 |
+| **DeepSeek V4-Pro** | 47.5 | — | 1M | MIT | $1.74 | $3.48 |
+| **Kimi K2.6** | 47.1 | — | 128K | Modified MIT | $0.95 | $4.00 |
+| **GLM-5.1 (Reasoning)** | 45.8 | — | 1M | MIT | $0.85 | $2.55 |
+| **Qwen3.6 Plus** | 44.2 | — | 1M | Proprietary | $1.60 | $4.80 |
+| **DeepSeek V4-Flash** | 38.7 | — | 1M | MIT | $0.14 | $0.28 |
+| **gpt-oss-120B (high)** | 37.9 | — | 131K | Apache 2.0 | $0.15 | $0.60 |
+| **Gemini 3.1 Pro Preview** | 35.6 | — | 1M | Proprietary | $2.50 | $10.00 |
+
+### Fireworks-Specific Performance Metrics
+
+- **Kimi K2.6**: ~85 tok/s throughput on Fireworks Serverless
+- **gpt-oss-120B**: 70 tok/s on Fireworks (lowest-cost open-weight option at $0.15/$0.60 per 1M)
+- **DeepSeek V4-Pro**: ~38 tok/s on DeepSeek's direct API; Fireworks throughput not yet published
+- **V4-Flash**: Not yet on Fireworks catalog at time of publication
+
+### Licensing Positioning
+
+Fireworks emphasizes **MIT-licensed open-weight models** (DeepSeek V4-Pro, V4-Flash, GLM-5.1) as the most permissive for commercial fine-tuning and RFT. The platform supports both LoRA and RFT workflows for these models.
+
+**Key insight**: Fireworks positions itself as the inference platform where **open-weight models become production-viable** — not just cheaper, but capable of matching closed models through post-training (RFT) on domain-specific data. The benchmark article notes that once a workload is validated, open models on Fireworks can cost "6x to ~100x less per output token" depending on model choice.
 
 ## Related Entities & Concepts
 

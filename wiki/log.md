@@ -1,6 +1,22 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-30] raw-backlog-ingest | Raw backlog triage (00:00 UTC)
+
+5 articles triaged from backlog. 0 take (no new wiki pages needed), 2 reference (archived), 3 skip (out of scope).
+
+**Enriched pages:**
+- [[entities/fireworks-ai]] — Added Coding Benchmarks & Model Comparison section (March 2026). Full AA Coding Index benchmark table for 11 models (GPT-5.5: 59.1, Opus 4.7: 52.5, DeepSeek V4-Pro: 47.5, Kimi K2.6: 47.1), throughput metrics per model, licensing positioning (MIT-licensed open-weight emphasis). Updated sources and frontmatter date.
+
+**Archived triage decisions:**
+- `raw/articles/2026-05-10_fireworks-ai_best-llms-for-coding.md` → reference (benchmark data extracted to entity page)
+- `raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md` → reference (8-provider comparison, all entities exist)
+- `raw/articles/paulgraham.com--wealth-html--29c8c21d.md` → skip (2004 startup essay, non-AI)
+- `raw/articles/2026-05-10_glean_25-ai-prompts-for-product-managers.md` → skip (marketing prompt list)
+- `raw/articles/2026-05-10_glean_30-ai-prompts-for-finance-professionals.md` → skip (marketing prompt list)
+
+**Triage checkpoint:** `raw/archived/triage/backlog/2026-05-30_20260530T000008Z.json`
+
 ## [2026-05-29] x-accounts-scan | X account scan wiki ingestion (22:30 UTC)
 
 11 new posts from 12 scanned accounts (83 tracked). Processed key stories:

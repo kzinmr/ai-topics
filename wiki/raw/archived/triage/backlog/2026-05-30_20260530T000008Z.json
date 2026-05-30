@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260530T000008Z",
+  "summary_ja": "raw-backlog-ingest: 5件トリアージ。take=0、reference=2（Fireworks比較記事）、skip=3（PGエッセイ×1、Gleanマーケティング×2）。全て既存entityページでカバー済みまたはスコープ外。",
+  "decisions": [
+    {
+      "item_id": "2026-05-10_fireworks-ai_best-llms-for-coding.md",
+      "source": "backlog",
+      "source_name": "Fireworks AI Blog",
+      "title": "Best LLMs for coding: 2026 roundup",
+      "url": "https://fireworks.ai/blog/best-llms-for-coding",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_fireworks-ai_best-llms-for-coding.md",
+      "recommended_action": "reference",
+      "reason_ja": "Fireworks AIによる11モデルのコーディングLLM比較。AA Coding Indexベンチマーク数値（GPT-5.5:59.1、Opus 4.7:52.5、V4-Pro:47.5、Kimi K2.6:47.1）と価格データを含む。entity/fireworks-ai.mdは存在するがベンチマーク数値は未収録。将来的にconcepts/llm-coding-benchmarks比較ページ作成の参考資料。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "TL;DR: GPT-5.5 (xhigh) tops the AA Coding Index at 59.1, Claude Opus 4.7 leads SWE-Bench at 87.6%. Kimi K2.6 best open-source at 47.1, ~85 tok/s, $0.95/$4 per 1M. DeepSeek V4-Pro 47.5 composite at $1.74/$3.48. gpt-oss-120B lowest cost $0.15/$0.60 Apache 2.0."
+    },
+    {
+      "item_id": "2026-05-29_fireworks-ai_best-llm-api-providers.md",
+      "source": "backlog",
+      "source_name": "Fireworks AI Blog",
+      "title": "Best LLM API Providers in 2026: We Reviewed 8 Options",
+      "url": "https://fireworks.ai/blog/best-llm-api-providers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md",
+      "recommended_action": "reference",
+      "reason_ja": "8プロバイダー（Fireworks、OpenRouter、HF、Together、Groq、Cerebras、Baseten、Modal）の比較。モデルカタログ、推論速度、post-training、価格透明性の4次元評価。全プロバイダーのentityページが既に存在し個別情報はカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "TL;DR: Fireworks AI - 200+ models, Day-0 OS support, full post-training stack. OpenRouter - 300+ routed models, no fine-tuning. Groq - lowest TTFS, narrow catalog. Cerebras - raw throughput, immature ecosystem."
+    },
+    {
+      "item_id": "paulgraham.com--wealth-html--29c8c21d.md",
+      "source": "backlog",
+      "source_name": "paulgraham.com",
+      "title": "How to Make Wealth",
+      "url": "http://www.paulgraham.com/wealth.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--wealth-html--29c8c21d.md",
+      "recommended_action": "skip",
+      "reason_ja": "Paul Grahamの2004年エッセイ。スタートアップと富の创造に関する一般论。LLM/AI/エージェント技術とは無関係。スコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "If you wanted to get rich, how would you do it? I think your best bet would be to start or join a startup."
+    },
+    {
+      "item_id": "2026-05-10_glean_25-ai-prompts-for-product-managers.md",
+      "source": "backlog",
+      "source_name": "Glean Blog",
+      "title": "25 AI prompts for product managers",
+      "url": "https://www.glean.com/blog/25-ai-prompts-for-product-managers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_25-ai-prompts-for-product-managers.md",
+      "recommended_action": "skip",
+      "reason_ja": "Gleanプロンプトライブラリのマーケティング記事。PM向け25のAIプロンプト例だが技術的深みなし。entity/glean.mdは既にEnterprise Graph、Glean Agentsをカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "25 AI-powered prompts designed for product managers to enhance productivity by automating tasks such as summarizing feedback, drafting documents, and analyzing trends."
+    },
+    {
+      "item_id": "2026-05-10_glean_30-ai-prompts-for-finance-professionals.md",
+      "source": "backlog",
+      "source_name": "Glean Blog",
+      "title": "30 AI prompts for finance professionals",
+      "url": "https://www.glean.com/blog/30-ai-prompts-for-finance-professionals",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_30-ai-prompts-for-finance-professionals.md",
+      "recommended_action": "skip",
+      "reason_ja": "Gleanプロンプトライブラリのマーケティング記事。金融向け30のAIプロンプト例。技術的洞察なし。記事4と同パターン。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "30 AI prompts for finance professionals - Glean prompt library promotional content."
+    }
+  ]
+}
