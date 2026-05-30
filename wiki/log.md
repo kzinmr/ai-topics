@@ -1,6 +1,31 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+
+## [2026-05-30] X Bookmarks Ingest — 3 articles, 3 entity pages enriched
+
+### Article 1: Peter Steinberger — "My Agent Stack For Automating My Personal Life"
+- **Raw article**: `wiki/raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md`
+- **Source**: X Article (2026-05-30, @steipete/Peter Steinberger)
+- **Entity enriched**: `wiki/entities/peter-steinberger.md` — Added "Personal Agent Stack (May 2026)" section covering Codex setup, gogcli/wacli/imsg tool hierarchy, Google Drive as source of truth, skill-based procedural memory, approval gates, and tool surface preference (API/CLI > browser > screen)
+- **New tag added**: `personal-agents`
+- **Raw article added to sources**
+
+### Article 2: Atal Upadhyay — "Hermes Harness Architecture"
+- **Raw article**: `wiki/raw/articles/2026-05-29_atal-upadhyay_hermes-harness-architecture.md`
+- **Source**: X Article (2026-05-29, @atal/Atal Upadhyay)
+- **Entity enriched**: `wiki/entities/hermes-agent.md` — Added "Atal Upadhyay's 9-Part Harness Architecture Analysis (May 2026)" section: compression lineage (unique to Hermes), provider abstraction, skills/tools separation, orchestration gap vs OpenClaw
+- **Entity enriched**: `wiki/entities/atal-upadhyay.md` — Updated date, added new source to frontmatter
+- **Raw article added to sources for both entities**
+
+### Article 3: Ido (Cognition) — "Verifying Agentic Development at Scale"
+- **Raw article**: `wiki/raw/articles/2026-05-29_ido-cognition_verifying-agentic-development-at-scale.md`
+- **Source**: X Article (2026-05-29, Ido @ Cognition)
+- **Entity enriched**: `wiki/entities/devin.md` — Added "Autonomous End-to-End Testing (May 2026)" section covering computer use testing, test plans, timeline annotations, deterministic skills extraction, blueprint system, model routing, hard edges
+- **Raw article added to sources**
+
+All three articles saved directly from xurl bookmarks (article body already fetched via tweet.fields=article).
+
 ## [2026-05-30] Epoch AI Open-Closed ECI Gap ingest — 2 concept pages created, 1 raw article saved
 
 - **Source**: Epoch AI data insight — "Open vs. closed model capability gap" (epoch.ai/data-insights/open-closed-eci-gap)

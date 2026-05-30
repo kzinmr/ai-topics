@@ -5,7 +5,7 @@ entity_type: person
 status: L3
 created: 2026-04-13
 updated: 2026-04-13
-sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete]
+sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md]
 tags:
   - person
   - ai-agents
@@ -14,6 +14,7 @@ tags:
   - developer-tooling
   - mcp
   - coding-agents
+  - personal-ai
 
 ---
 
@@ -133,6 +134,37 @@ This conflict validated his core thesis: **open-source tooling should not depend
 | "Building stuff almost felt like playing a computer game." | On his origin story in rural Austria |
 | "As a CEO, you're the trash bin." | Why he burned out and sold PSPDFKit |
 | "First they copy some popular features into their closed harness, then they lock out open source." | On Anthropic's OpenClaw blocking |
+
+## Personal Agent Stack (May 2026)
+
+In a May 2026 X article, Steinberger documented his personal agent stack for automating daily life — the first comprehensive public account of a **personal agent operating across communication channels** (WhatsApp, Telegram, Gmail, iMessage, Google Drive, Calendar).
+
+**Core thesis:** The agent-operated computer replaces the app-operated computer. You state intent → the agent gathers context → proposes action → waits for approval → executes → reports back.
+
+### Agent: Codex + GPT-5.5
+Previously used Claude Code; migrated to Codex because GPT-5.5 is better for personal automation work. The switch itself is not the story — the story is wiring the model into existing life data.
+
+### Tool Hierarchy (from most to least preferred)
+1. **APIs and CLIs** — `gogcli` for Google Workspace, `wacli` for WhatsApp, `imsg` for iMessage/SMS
+2. **Local files** — Markdown/CSV files in Google Drive (agent-readable source of truth)
+3. **Browser automation** — for web apps without APIs
+4. **Screen automation** — last resort (AppleScript/macOS UI scripting)
+
+### Data Layer Design
+Moved knowledge from Notion to Google Drive because Notion's UI-native structure (nested pages, databases, properties, permissions) is "pleasant for humans and annoying for models." Google Drive holds Markdown files, CSVs, and provides a clean CLI surface via `gogcli`.
+
+Key insight: **"You should not organize your knowledge only for the human UI. You should organize it for the agent's tool path."**
+
+### Skills as Operational Taste
+Skills are text-based operating manuals for recurring tasks (e.g., inbox-zero: list Gmail, auto-archive vs needs-review, draft replies, wait for approval, send, sign as "Nicolas"). Mistakes become instructions — the agent compounds improvement over time.
+
+### Approval Gates
+Multi-tier trust model: read-only scanning → drafting → sending → high-stakes actions. The agent does the tedious work but asks at the right moments. This is what makes personal agents **personal** — not by having a cute voice, but by accumulating operational taste.
+
+### Killer Workflow: "What Did I Miss?"
+The highest-value workflow is life inbox triage: scan WhatsApp, Telegram, Gmail, SMS, Calendar, and Drive changes every few hours → identify who needs a reply, what is urgent, what is stale → present a summary. This is context-heavy, repetitive, cross-tool, and full of small decisions — perfect for agents.
+
+[[raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md]]
 
 ## What Model is Peter Using?
 

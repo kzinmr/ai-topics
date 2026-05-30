@@ -13,7 +13,7 @@ tags:
 status: complete
 description: "Open-source self-hosted AI agent by Nous Research. Features persistent memory, self-improving skills, and always-on execution. Growing number of users migrating from OpenClaw."
 created: 2026-04-27
-updated: 2026-05-28
+updated: 2026-05-30
 sources:
   - "https://x.com/i/article/2045080054917476451"
   - "raw/articles/2026-04-28_15-hermes-agent-features.md"
@@ -24,6 +24,7 @@ sources:
   - "raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md"
   - "https://info.deeplearning.ai/hermes-vs.-openclaw-cybersecurity-alarms-ring-more-interactive-conversations-can-agents-do-human-work"
   - "raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md"
+  - "raw/articles/2026-05-29_atal-upadhyay_hermes-harness-architecture.md"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/hermes-agent-use-cases]]"
@@ -266,7 +267,42 @@ Shann's philosophical contrast between Hermes and OpenClaw:
 
 → [[entities/shannhk]], [[concepts/hermes-agent-use-cases]]
 
+## Atal Upadhyay's 9-Part Harness Architecture Analysis (May 2026)
+
+Independent analyst Atal Upadhyay (@atal) published a detailed architectural review mapping Hermes against a nine-part harness framework. The analysis concluded Hermes is "one of the best open-source harnesses in the ecosystem" and confirmed implementations across all nine dimensions:
+
+### Nine-Part Model Assessment
+
+| Component | Hermes Implementation |
+|-----------|----------------------|
+| **Outer iteration loop** | Provider abstraction — same runtime drives chat-completions, Anthropic Messages, Codex Responses, out-of-process Codex, and Bedrock. Transport adapters normalize tool-call formats. "Much better than Claude Code" for multi-model support |
+| **Context management & compression** | Full compression path with auxiliary model summarization. Head/tail protected by token budget. Summary budget scales at ~20% of compressed content (2K-12K range). Old tool outputs pruned before summarization |
+| **Skills & tools management** | Registration and exposure are **separate concerns**. Tools register into central registry; toolset layer decides what model sees per run. Scoped by platform/scenario. Narrowable for delegated runs |
+| **Subagent management** | Child runs get own task ID, terminal context, structured return. Dangerous commands default to deny. Recursion depth capped. **Gap:** no durable, externally steerable child-run plane |
+| **Session persistence & recovery** | SQLite with FTS5 search + WAL journaling. Sessions track source tags, parent-child lineage for compression splits. CLI, messaging platforms, and cron jobs attach to same session plane |
+| **System prompt assembly** | Three-tier explicit composition: **stable** (SOUL.md, tool guidance, skills index), **context** (AGENTS.md, CLAUDE.md, .cursorrules with injection scanning), **volatile** (memory snapshots, user profile, timestamp) |
+| **Lifecycle hooks** | Two surfaces: plugin hooks (inside harness process, block/rewrite/pass) and filesystem-driven gateway hooks (shell/Python scripts on gateway startup, agent step, etc.) |
+| **Permission & safety layer** | Approval gates, scoped permissions per profile, deny-by-default for delegated contexts |
+| **Built-in pre-packaged skills** | 123 bundled skills covering GitHub, Google Workspace, Linear, Notion, etc. |
+
+### Beyond the Framework: Three Unique Subsystems
+
+1. **Messaging Gateway** — Broad platform adapter surface (Telegram, Discord, Slack, WhatsApp) routing through shared session model. Compared to OpenClaw's successful UI pattern for long-running agent interaction.
+2. **Profile System** — Each profile is an isolated agent root. Two profiles on the same machine behave as completely different agents from state and footprint perspective.
+3. **Cron as First-Class Subsystem** — Jobs are durable, gated by same permissions as interactive sessions, delivered through gateway paths, isolated per profile. "Forces unattended operation concerns into the main architecture rather than leaving them as peripheral scripts."
+
+### Compression Lineage — Unique Architectural Detail
+
+On compression, Hermes closes the current SQLite session row, creates a **child session seeded by the summary**, rotates the session ID, and records parent-child lineage. Plugin context engines and memory providers are notified. Long conversations produce a lineage chain instead of one repeatedly rewritten transcript — described as "pretty unique relative to other harness architectures we've reviewed."
+
+### Recommended Next Step: First-Class Orchestration
+
+The analysis identifies the most natural next architectural step: promoting child runs to first-class control-plane objects with run IDs, explicit lifecycle management, external steering, and cleanup semantics that survive parent completion. Hermes already has the substrate (session infrastructure, gateway routing) — the gap is vs. OpenClaw's agent orchestration layer.
+
+→ [[concepts/harness-engineering]], [[comparisons/hermes-vs-openclaw-architecture]], [[entities/openclaw]]
+
 ## Sources
+- [Hermes Harness Architecture](https://x.com/i/article/2060381072148537344) (2026-05-29, Atal Upadhyay/@atal, X article) — 9-part harness model analysis, unique compression lineage, orchestration gap identification
 - [Hermes Agent: What People Are Actually Using It For](https://x.com/i/article/2045935785661349956) (2026-04-26, X article) — usage patterns from Reddit/X/YouTube
 - [Hermes Agent + Polymarket - weather trading guide](https://x.com/i/article/2045080054917476451) (2026-04-25, X article) — installation + Polymarket trading
 - [How to Become a Hermes Agent Operator](https://x.com/i/article/2055317817658900480) (2026-05-15, Shann/@shannhk, X article) — 4-level fleet operation model, SEO agent 21-step pipeline, prototype-to-production methodology

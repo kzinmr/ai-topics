@@ -2,7 +2,7 @@
 title: "Atal Upadhyay"
 type: entity
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-30
 tags:
   - person
   - blogger
@@ -16,6 +16,7 @@ sources:
   - https://atalupadhyay.wordpress.com/
   - raw/articles/2026-05-02_atalupadhyay-agent-harness.md
   - raw/articles/2026-05-03_atalupadhyay-beyond-markdown-memory.md
+  - raw/articles/2026-05-29_atal-upadhyay_hermes-harness-architecture.md
 ---
 
 ## Related Entities

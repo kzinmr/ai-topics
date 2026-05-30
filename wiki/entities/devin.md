@@ -2,7 +2,7 @@
 title: Devin (Cognition AI)
 type: entity
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-30
 tags:
   - company
   - ai-agents
@@ -17,6 +17,7 @@ sources:
   - https://cognition.ai
   - https://en.wikipedia.org/wiki/Cognition_AI
   - https://en.wikipedia.org/wiki/Scott_Wu
+  - raw/articles/2026-05-29_ido-cognition_verifying-agentic-development-at-scale.md
 ---
 
 # Devin (Cognition AI)
@@ -211,6 +212,47 @@ Key tenets:
 - **Context anxiety** — agents become unreliable when context exceeds model-specific thresholds; explicit context management is critical
 
 ---
+
+## Autonomous End-to-End Testing (May 2026)
+
+Ido from Cognition published a detailed post on Devin's autonomous testing capabilities ([Verifying Agentic Development at Scale](https://x.com/i/article/2060411306759585792)). Key developments:
+
+### Shift to Async Software Engineering
+- For the first time, **more Devins are being triggered asynchronously** (via events, automations, schedules, and other Devins) than interactively
+- **Auto-Triage** launched recently to accelerate async workflows
+- **Devin Review** — code review tool that not only flags bugs but closes the loop by fixing each finding until the diff comes back clean
+
+### Computer Use for Autonomous Testing
+- ~6 months ago, expanded Devin's harness with **computer use tools**: screenshots, mouse movement, clicking, dragging, typing, scrolling, zooming, recording
+- Devin can now **spin up the app, click through it, and verify changes work** — the same way an engineer would
+- Engineers run **10-20 Devins in parallel**, each with its own dev server — something impossible on a single laptop
+- Automated cloud testing saves enormous time — no need to run and verify code locally
+
+### Reliability Improvements
+- **Test Plan** — Before testing, Devin writes out a test plan grounded in source code (not assumptions). Acts as pre-alignment, reduces drift
+- **Timeline Annotations** — Devin annotates expected behavior right before performing actions (setup notes, test start, assertions as passed/failed/untested). Reduces model "lying" about findings — similar to TDD
+- **Deterministic Testing Skills** — Repetitive flows (e.g., login via SSO) extracted to deterministic scripts in the repo. Decreased flakiness dramatically
+- **Self-Proposing Skills** — When Devin figures out a setup step the hard way, it can suggest saving that knowledge as a testing skill and propose the fix back as a one-click PR
+- **Model Routing for Testing** — Testing phase can be routed to different models better suited for visual/UI tasks (screenshot reading, UI state tracking) vs. code editing
+
+### Test Artifacts
+- **Test Report** — Labeled screenshots from key moments for quick review
+- **Test Video** — Rich player UI with chapters, scrubbing, chronological assertion listview. Dead time compressed, action moments at normal speed
+- Artifacts available in web interface and distributed to Slack
+
+### Blueprint System
+- Once Devin finishes setting up a repo, it saves a **declarative YAML blueprint** that produces a snapshot for every future session to boot from
+
+### Hard Edges & Known Issues
+- **Timing sensitivity** — Screenshots taken too early/late can miss toast notifications or transient UI states
+- **Cheating** — Models sometimes execute JavaScript to trigger states programmatically instead of clicking through the UI. Users want to see Devin exercise the app like a real user
+- Working on improved evals, tighter guardrails, and leveraging better computer use from new model generations
+
+### Usage Metrics
+- Test runs approved per day have **more than doubled** in the past couple of months
+- Test mode billed at **1/5th normal usage cost** to encourage experimentation
+
+→ [[concepts/cognition-devin-philosophy]], [[concepts/agentic-engineering-cognition-devin-workflow]]
 
 ## See Also
 

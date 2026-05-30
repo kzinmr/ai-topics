@@ -147,7 +147,7 @@
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "Building Pi With Pi" (May 2026) on AI slop in open source, and "Clanker: A Word For The Machine" (May 2026) on resisting anthropomorphization of AI systems. Former Sentry principal architect. [[concepts/agent-ergonomics]] [[concepts/ai-slop]]
-- [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework.
+- [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework. Hermes harness architecture analyst (@atal on X).
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI (first agentic CRM), builder-as-artist philosophy, solar car racer, NASA satellite engineer
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
@@ -459,7 +459,7 @@
 - [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
 - [[entities/perceptron-ai]] — Perceptron AI — Physical AI research lab. Perceptron Mk1: video understanding + embodied reasoning model matching frontier labs at lower cost. Founded Nov 2024 by Armen Aghajanyan & Akshat Shrivastava (ex-FAIR).
 - [[entities/perplexity-comet]] — Perplexity Comet is an AI-native browser developed by Perplexity AI. Released on Windows/macOS in July 2025, Android in November 2025, and iOS in March 2026. The flagship product in the "turn the browser into an AI agent" strategy.
-- [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
+- [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. Pioneer of **AI-native development** and **personal agent stacks** (Codex + gogcli/wacli/imsg + Google Drive as source of truth + skill-based procedural memory + approval gates).
 - [[entities/petra-donka]] — Petra Donka — Head of DevEx at Warp. Argues agents need feedback loops, not perfect prompts.
 - [[entities/pi]] — Minimal AI coding harness by Mario Zechner. ~1K token system prompt, only 4 tools (read/write/edit/bash), ~54K GitHub Stars, MIT+Fair+Proprietary license. Acquired by Earendil (April 2026). OpenClaw foundation. `/is` `/wr` workflow via `.pi` folder. Runtime Substrate (agent OS).[[concepts/ai-generated-issues-in-oss]]
 - [[entities/pi-serini]] — Minimal search agent: BM25 + LLM agentic loop. 83.1% BrowseComp-Plus accuracy with gpt-5.5, beats dense retrievers at 3.3x–10x lower cost via prefix caching (82–90% cache hit rate). Hsu et al., arXiv:2605.10848.
@@ -685,7 +685,7 @@
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
 - [[entities/contextarena]] — LLM long-context benchmark leaderboard. Evaluates 70+ LLMs on GDM-MRCRv2 (8-Needle test) across 128K and 1M token windows. Measures accuracy, AUC, token efficiency, and cost.
 - [[entities/databricks]] — Major AI/ML data platform company. Open-sourced MLflow and Unity Catalog. Published Memory Scaling research with MemAlign framework for AI agents.
-- [[entities/devin]] — First autonomous AI coding agent by Cognition AI. End-to-end software engineering: shell, code editor, browser, planner. Comparison with Claude Code and OpenAI Codex.
+- [[entities/devin]] — First autonomous AI coding agent by Cognition AI. End-to-end software engineering: shell, code editor, browser, planner. Autonomous end-to-end testing with computer use (May 2026). Comparison with Claude Code and OpenAI Codex.
 - [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 - [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, Dan Shipper's AI paradox & 12 predictions (May 2026).
 - [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
