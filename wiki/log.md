@@ -1,6 +1,24 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] newsletter-triage-recovery | Superintelligence 'Compute-to-Cash Race' beehiiv newsletter processed
+
+### Pages Updated
+- **[[entities/anthropic]]** — Added specific run-rate revenue calculation methodology from Reuters Breakingviews (Karen Kwok): consumption-based = last 28 days × 13, subscription-based = monthly × 12. This 13× multiplier on consumption means short-term usage spikes get annualized into headline numbers. Updated sources frontmatter.
+
+### Triage Results
+- Source: Superintelligence (getsuperintel.com) — "The Compute-to-Cash Race" (2026-05-30)
+- 18 tracking URLs: 1 reference (Reuters Breakingviews on Anthropic run-rate methodology), 17 skips
+- Skip breakdown: 6 social profiles, 3 beehiiv platform UI, 2 sponsor/ad pages, 1 status tracking pixel, 1 HTTP error, 1 profile/edu login, 2 duplicate tracking URLs, 1 duplicate of main article
+- Classic beehiiv ~30-40% duplication rate pattern observed
+- Triage JSON archived to raw/archived/triage/newsletter/2026-05-31_compute-to-cash.json
+- Upstream newsletter-triage JSON parse error recovered from checkpoint file
+
+### Raw Articles Saved
+- raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md
+
+---
+
 ## [2026-05-31] blog-ingest | 20 articles saved, 3 wiki pages processed
 
 ### Pages Created

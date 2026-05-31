@@ -4,7 +4,7 @@ created: 2026-05-29
 updated: 2026-05-31
 type: entity
 tags: [company, lab, anthropic, ai-native, pricing, token-economics, vc, ai-safety, model]
-sources: [raw/articles/simonwillison.net--2026-may-29-anthropic--9831b607.md, raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md]
+sources: [raw/articles/simonwillison.net--2026-may-29-anthropic--9831b607.md, raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md, raw/newsletters/2026-05-30-the-compute-to-cash-race.md, raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md]
 ---
 
 # Anthropic
@@ -14,7 +14,12 @@ AI research company and public benefit corporation. Founded 2021 by former OpenA
 ## Financials
 
 ### Revenue Growth
-Anthropic has shared run-rate revenue (annualized monthly × 12) in funding announcements:
+Anthropic has shared run-rate revenue in funding announcements. The specific calculation methodology (Reuters Breakingviews, Karen Kwok, citing "a person familiar with the matter"):
+- **Consumption-based**: last 28 days of sales × 13
+- **Subscription-based**: monthly revenue × 12
+- Combined = total run-rate
+
+This 13× multiplier on consumption means short-term usage spikes get annualized into headline numbers — an important caveat when comparing to standard ARR. See [[ai-economics]] for the "tokenmaxxing" sustainability debate.
 
 | Date | Run-Rate Revenue | Context |
 |------|-----------------|---------|

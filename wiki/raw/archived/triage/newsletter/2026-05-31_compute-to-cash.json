@@ -1,0 +1,169 @@
+{
+  "checkpoint_run_id": "20260531T071021Z",
+  "date": "2026-05-31",
+  "total_archived": 18,
+  "items": [
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-1",
+      "source": "newsletter",
+      "title": "Link 1",
+      "url": "https://link.mail.beehiiv.com/v1/c/WCaNda5m.../a7ba6e2b3a81d1b1",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Superintelligence誌（Kim Isenberg）の「Compute-to-Cash Race」— Anthropic対OpenAIの収益比較・IPO準備論。本文でAnthropicのrun-rate算出方法（過去28日の消費収益×13＋定期収益×12）とOpenAIとの会計方法の違い（総収益vs純収益）を指摘。ただし Anthropic収益データ($47B run-rate, $65B Series H)は既にentities/anthropic.mdに収録済み。OpenAI IPO情報もentities/sam-altman.md等でカバー。新規概念ページ作成には至らないが、既存ページの「収益比較の会计学的不透明性」セクションとして参照価値あり。",
+      "body_excerpt": "Anthropic's revenue run rate has overtaken OpenAI's on paper. But when you look beneath the headlines, the real question is not who is bigger, but who converts scarce compute into durable, high-margin enterprise revenue more efficiently... Anthropic calculates its run rate by taking the last 28 days of consumption-based revenue, multiplying by 13, then adding subscription revenue multiplied by 12 (Reuters Breakingviews, 03/10/2026). That formula means any short-term spike in token consumption... gets annualized into an eye-catching headline number. It is a legitimate accounting approach, but it can overstate what a stable, repeatable annual revenue figure would look like."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-2",
+      "source": "newsletter",
+      "title": "Link 2",
+      "url": "https://link.mail.beehiiv.com/v1/c/mk20pQoX.../d58bd294d2b24ea9",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Link 1と同じメイン記事のBeehiiv追跡URL重複。内容は同一。",
+      "body_excerpt": "(duplicate of Link 1 — same article, same paywall cutoff)"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-3",
+      "source": "newsletter",
+      "title": "Link 3",
+      "url": "https://link.mail.beehiiv.com/v1/c/kMo7PZIA.../45b004ec1511f9ec",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ http_error — 解決不可。Beeliiiv追跡リンク。",
+      "body_excerpt": "URL not accessible (http_error)"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-4",
+      "source": "newsletter",
+      "title": "Link 4",
+      "url": "https://link.mail.beehiiv.com/v1/c/%2BB519h7a.../3d2d40dc06947946",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Superintelligence購読者プロフィール/ログインページ。コンテンツなし。",
+      "body_excerpt": "Get Superintelligence Free with Your .edu Email. Join 2,400+ colleges already on the whitelist..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-5",
+      "source": "newsletter",
+      "title": "Link 5",
+      "url": "https://link.mail.beehiiv.com/v1/c/f6b3aCCN.../451d62ea1ccbedc9",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SuperintelligenceのThreads(@getsuperintel)ソーシャルプロフィールページ。",
+      "body_excerpt": "Superintelligence AI (@getsuperintel) Threads, Say more..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-6",
+      "source": "newsletter",
+      "title": "Link 6",
+      "url": "https://link.mail.beehiiv.com/v1/c/vtuqJUnj.../f4d467d4fdf7bafc",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SuperintelligenceのInstagramソーシャルプロフィール。",
+      "body_excerpt": "Superintelligence AI (@getsuperintel) Instagram photos and videos"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-7",
+      "source": "newsletter",
+      "title": "Link 7",
+      "url": "https://link.mail.beehiiv.com/v1/c/JPsET11K.../c165ae90f086f676",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SuperintelligenceのTikTokソーシャルプロフィール（「Couldn't find this account」）。",
+      "body_excerpt": "Couldn't find this account. Visit TikTok to discover more trending creators..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-8",
+      "source": "newsletter",
+      "title": "Link 8",
+      "url": "https://link.mail.beehiiv.com/v1/c/r0AREVnG.../62d71ce966851789",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Superintelligence AI LLCのLinkedIn企業プロフィール。",
+      "body_excerpt": "Superintelligence AI LLC | LinkedIn. Technology, Information and Media. New York, NY 771 followers..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-9",
+      "source": "newsletter",
+      "title": "Link 9",
+      "url": "https://link.mail.beehiiv.com/v1/c/bfsqyspg.../1d0679ff4a3aea5c",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SuperintelligenceのLinkedIn企業ページ（Link 8の別ビュー）。",
+      "body_excerpt": "Superintelligence AI LLC | LinkedIn — 771 followers, Technology, Information and Media, New York NY"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-10",
+      "source": "newsletter",
+      "title": "Link 10",
+      "url": "https://link.mail.beehiiv.com/v1/c/LKtsxW7A.../450f7686ef56beb1",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SuperintelligenceのLinkedIn詳細プロフィール（Link 8/9の継続）。",
+      "body_excerpt": "LinkedIn profile content for Superintelligence AI LLC — employee list, company updates, LinkedIn profile content"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-11",
+      "source": "newsletter",
+      "title": "Link 11",
+      "url": "https://link.mail.beehiiv.com/v1/c/fTHY6A0o.../8095f0ad0a772734",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SuperintelligenceのTikTokアカウント（見つからない）。",
+      "body_excerpt": "Couldn't find this account. Visit TikTok..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-12",
+      "source": "newsletter",
+      "title": "Link 12",
+      "url": "https://link.mail.beehiiv.com/v1/c/P8NGrUY%2F.../4222615572550aaf",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SuperintelligenceのLinkedIn企業プロフィール（Link 8/9/10の別ビュー）。",
+      "body_excerpt": "Superintelligence AI LLC | LinkedIn. Company size 2-10 employees, Founded 2024, New York NY"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-13",
+      "source": "newsletter",
+      "title": "Link 13",
+      "url": "https://link.mail.beehiiv.com/v1/c/faWhFKOf.../9d3c02cc7902fcc5",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Superintelligenceのスポンサー/広告ページ（「Reach 345K+ AI Builders」）。",
+      "body_excerpt": "Reach 345K+ AI Builders Who Actually Ship. Most engaged AI audience in tech. Newsletter (220K), X (114K), LinkedIn (16K)... Past sponsors: Stripe, Y Combinator, Miro, Pika Labs..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-14",
+      "source": "newsletter",
+      "title": "Link 14",
+      "url": "https://link.mail.beehiiv.com/v1/c/r8CLgoCI.../bd9433e413f08e0c",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Link 13と同じスポンサー/広告ページの別ビュー。",
+      "body_excerpt": "Reach 345K+ AI Builders Who Actually Ship — advertising page"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-15",
+      "source": "newsletter",
+      "title": "Link 15",
+      "url": "https://link.mail.beehiiv.com/v1/c/CPzjd2yL.../a4b2cc6bce9a3a24",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Beehiivプラットフォームの購読者設定ページ。",
+      "body_excerpt": "Preferences — You have successfully logged in! Account profile, Free Plan, Unsubscribe from all communications..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-16",
+      "source": "newsletter",
+      "title": "Link 16",
+      "url": "https://link.mail.beehiiv.com/v1/c/gRveF6Hd.../572a827d74c149b6",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Beehiivプラットフォームのマーケティングページ。",
+      "body_excerpt": "beehiiv — The newsletter platform built for growth. POWERING THE INTERNET'S BEST NEWSLETTERS..."
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-17",
+      "source": "newsletter",
+      "title": "Link 17",
+      "url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Beehiiv hosted page — スキップ対象パターン（約款/ボイラープレート）。",
+      "body_excerpt": "hp.beehiiv.com — Beehiiv hosted page"
+    },
+    {
+      "item_id": "<20260530.185120.9ae41e99@mta29>-18",
+      "source": "newsletter",
+      "title": "Link 18",
+      "url": "https://email.beehiivstatus.com/40efd0c2afdac2d7302f63a8aec092b48fc6d956/hclick",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Beehiiv status tracking pixel — コンテンツゼロ。",
+      "body_excerpt": "email.beehiivstatus.com — tracking pixel"
+    }
+  ]
+}
