@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-31 | Total pages: 2176 | Indexed entries: 1562 | Not in index: 604
+> Last updated: 2026-05-31 | Total pages: 2180 | Indexed entries: 1566 | Not in index: 604
 
-## Entities (723 pages)
+## Entities (725 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -64,6 +64,8 @@
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
+- [[entities/mistral-ai]] — French AI company, sovereign AI positioning, European lab. Medium 3.5 (128B dense, May 2026), Vibe remote agents, Work mode in Le Chat.
+- [[entities/uipath]] — Enterprise automation/orchestration platform (NYSE: PATH). May 2026: UiPath for Coding Agents — model-agnostic platform connecting Claude Code, Codex to CI/CD and governance.
 - [[entities/mai-image-2-5]] — MAI-Image-2.5: Microsoft's strongest image model. #3 on Arena text-to-image leaderboard (May 2026). Major text rendering improvements.
 - [[entities/mark-mcquade]] — CEO of Arcee AI. Former HuggingFace team member. Pivoted Arcee from post-training services to pretraining from scratch with Trinity Large.
 - [[entities/mark-saroufim]] — Mark Saroufim — ML Systems researcher, co-founder of GPU MODE and Core Auto. AI-driven kernel generation, multi-agent self-play for systems code. MLSys 2026 keynote.
@@ -997,6 +999,8 @@
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA) — Sub-quadratic attention for MiniMax M3 model. Block-level selection on real KVs, 9.7× faster prefilling, 15.6× faster decoding at 1M tokens vs full attention. May 2026.
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source — Critical analysis of how "open source" is defined and measured in AI/ML.
+- [[concepts/mistral-medium-3-5]] — Mistral Medium 3.5 — 128B dense model (May 2026), 256k context, configurable reasoning effort, open weights under modified MIT. SWE-Bench 77.6%, τ³-Telecom 91.4.
+- [[concepts/mistral-vibe-remote-agents]] — Mistral Vibe Remote Agents — Async cloud coding sessions, parallel spawning, session teleportation, MCP integrations. Powered by Medium 3.5 (May 2026).
 - [[concepts/mistral-workflows]] — Mistral Workflows: enterprise AI orchestration layer. Temporal-based durable execution, human-in-the-loop (wait_for_input), multi-surface triggers (API/Studio/Le Chat). Public preview April 2026.
 - [[concepts/multi-channel-agents]] — Multi-Channel Agents — Multi-user agent engineering for Slack, Discord, and Telegram. Thread isolation, resource-based memory scoping, HMAC auth, platform-specific credential management. From Mastra (May 2026).
 - [[concepts/mmmu]] — MMMU — 11.5K multimodal questions. Sourced from college exams and textbooks. 6 disciplines, 30 subjects, 183 subfields. 30+ image types. GPT-4V 56%, Gemini Ultra 59%. CVPR 2024 Oral.
@@ -1271,6 +1275,7 @@
 - [[concepts/craft-agents]] — Craft Agents: open-source agent interface. Works with Claude, ChatGPT, OpenRouter, local models. Built-in Chromium browser, MCP support, Claude Code skill import. Multi-provider via Vercel AI SDK.
 - [[concepts/vibe-coding]] — Vibe Coding — Development style defined by Simon Willison: coding where you pay no attention to implementation details.
 - [[concepts/cursor-composer-2-5]] — Cursor Composer 2.5 (May 2026): agentic coding model built on Kimi K2.5. Targeted RL with textual feedback, 25× synthetic data, Sharded Muon optimizer. SpaceXAI joint training upcoming on Colossus 2.
+- [[concepts/cursor-automations]] — Cursor Automations (May 2026): always-on agents triggered by events/schedules, cloud sandbox execution, MCP integration, memory tool for learning from past runs
 - [[concepts/data-analysis-agents]] — Comprehensive concept of AI data analysis agents. Pipeline: data exploration→schema understanding→query generation→execution→verification→visualization→reporting. Compares two major approaches: OpenAI's internal data agent (GPT-5.2) and Cognition DANA/Devin. Also covers relationships with DWH semantic layers and golden queries.
 - [[concepts/db9-filesystem-sql]]
 - [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Agent eval modeled after the Factorio game. Operated via code+REPL, no vision needed. 24 lab-play tasks. NeurIPS 2025.

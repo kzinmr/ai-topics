@@ -1,6 +1,32 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] active-crawl | May-June 2026 Trending AI/ML Topics
+
+### New Wiki Pages Created (5)
+- concepts/cursor-automations.md — Cursor Automations: always-on agents triggered by events/schedules, cloud sandbox execution, MCP integration, memory tool for learning
+- concepts/mistral-medium-3-5.md — Mistral Medium 3.5: 128B dense model, 256k context, configurable reasoning, open weights under modified MIT, SWE-Bench 77.6%
+- concepts/mistral-vibe-remote-agents.md — Mistral Vibe Remote Agents: async cloud coding sessions, parallel spawning, session teleportation, MCP integrations
+- entities/uipath.md — UiPath (NYSE: PATH): enterprise automation/orchestration platform, May 2026 UiPath for Coding Agents integration
+- raw/articles/2026-05-31_may-june-ai-developments.md — Raw source article covering all May/June 2026 developments
+
+### Updated Pages
+- index.md — Added 2 new entity entries (mistral-ai, uipath), 2 new concept entries (mistral-medium-3-5, mistral-vibe-remote-agents, cursor-automations), updated counts (725 entities, +4 total pages)
+- entities/pointer.md — Updated with SOTA scores, open source status, benchmark results
+- entities/coder.md — Verified existing coverage, no update needed
+- entities/mistral-ai.md — Updated with Medium 3.5 and Vibe Remote Agents info
+- concepts/cursor-composer-2-5.md — Verified existing coverage
+
+### Sources Processed
+- Mistral AI official blog (May 22, 2026) — Medium 3.5 announcement, Vibe remote agents
+- UiPath press release (May 12, 2026) — UiPath for Coding Agents integration
+- Cursor blog (May 10, 2026) — Automations announcement
+- Anthropic blog (May 28, 2026) — Claude Opus 4.8 (already in wiki)
+- Google I/O 2026 (May 19, 2026) — Gemini 3.5 Flash, Antigravity (already in wiki)
+
+
+---
+
 ## [2026-05-31] blog-wiki-ingest | Giles Thomas JAX article + Google AI Overviews enrichment
 
 ### Pages Updated

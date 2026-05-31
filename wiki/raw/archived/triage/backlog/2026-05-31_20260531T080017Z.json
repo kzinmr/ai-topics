@@ -1,0 +1,61 @@
+{
+  "checkpoint_run_id": "20260531T080017Z",
+  "summary_ja": "raw-backlog-ingest batch (5 articles). 4 skip (3 non-AI, 1 already processed), 1 reference (Bert Hubert EU digital sovereignty keynote). No core AI/LLM technical articles found.",
+  "decisions": [
+    {
+      "item_id": "oldvcr-decmate-ii",
+      "source": "backlog",
+      "title": "Ahoy, DECmate II! the little PDP-8 that could",
+      "url": "https://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2026-05-ahoy-decmate-ii-little-pdp-8-that-could-html--41b2033a.md",
+      "recommended_action": "skip",
+      "reason_ja": "Retro computing history (DEC PDP-8/DECmate II). No AI/LLM/agent relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Ahoy, DECmate II! the little PDP-8 that could\nIn 1982, Digital Equipment Corporation attempted to keep their PDP-11 minicomputer market-relevant."
+    },
+    {
+      "item_id": "gilesthomas-jax",
+      "source": "backlog",
+      "title": "On first looking into JAX",
+      "url": "https://www.gilesthomas.com/2026/05/on-first-looking-into-jax",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/gilesthomas.com--2026-05-on-first-looking-into-jax--472e0e73.md",
+      "recommended_action": "skip",
+      "reason_ja": "PyTorch-to-JAX migration essay. Already processed in 2026-05-31 blog-wiki-ingest (entities/gilesthomas.md updated with JAX Exploration section).",
+      "candidate_wiki_path": "entities/gilesthomas",
+      "body_excerpt": "# On first looking into JAX\nMuch have I travell'd in the realms of gold..."
+    },
+    {
+      "item_id": "berthub-digital-commons",
+      "source": "backlog",
+      "title": "Keynote opening Digital Commons EDIC: Moving beyond the Digital Uncommons",
+      "url": "https://berthub.eu/articles/posts/keynote-opening-digital-commons-edic-eu/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/berthub.eu--articles-posts-keynote-opening-digital-commons-edic-eu--419c9c67.md",
+      "recommended_action": "reference",
+      "reason_ja": "Bert Hubert keynote on EU digital sovereignty. Mentions ChatGPT as perceived free infrastructure, Signal/Mastodon/PeerTube as digital commons, Microsoft 365 replacement strategies. AI-relevant context but policy/governance focused rather than technical. Reference for future digital sovereignty page enrichment.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Keynote opening Digital Commons EDIC\nLast Thursday, 11th of December, saw the launch of the new Digital Commons European Digital Infrastructure Consortium."
+    },
+    {
+      "item_id": "miguelgrinberg-sqlalchemy",
+      "source": "backlog",
+      "title": "SQLAlchemy 2 In Practice - Chapter 5 - Advanced Many-To-Many Relationships",
+      "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-5---advanced-many-to-many-relationships",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-5-advanced-many-to-man--ffc1a277.md",
+      "recommended_action": "skip",
+      "reason_ja": "SQLAlchemy ORM many-to-many relationships chapter. Database engineering content, no AI/LLM/agent relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# SQLAlchemy 2 In Practice - Chapter 5\nThis is the fifth chapter of my SQLAlchemy 2 in Practice book."
+    },
+    {
+      "item_id": "sgtatham-c11-generic",
+      "source": "backlog",
+      "title": "Workarounds for C11 _Generic",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/c11-generic/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-c11-generic--16360ed2.md",
+      "recommended_action": "skip",
+      "reason_ja": "C11 _Generic type-generic macro technical deep-dive by Simon Tatham (PuTTY author). Low-level language type system topic, no AI/LLM/agent relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Workarounds for C11 _Generic\nThe C programming language has a limited form of type-generic programming, based on selection expressions using the keyword _Generic."
+    }
+  ]
+}

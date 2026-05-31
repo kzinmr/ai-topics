@@ -1,0 +1,224 @@
+{
+  "run_id": "20260531T071021Z",
+  "triage_at": "2026-05-31T07:12:00Z",
+  "newsletter": {
+    "subject": "The Compute-to-Cash Race",
+    "date": "2026-05-30",
+    "source": "SemiAnalysis (newsletter.semianalysis.com)",
+    "source_label": "uid=163",
+    "article_count": 18
+  },
+  "classification": {
+    "overall_importance": "critical",
+    "reason": "SemiAnalysis is a premium AI infrastructure research outlet. This digest contains 16 paywalled/free articles covering GPU economics, inference performance benchmarks, AI lab unit economics, and hyperscaler strategy — all directly relevant to the AI/LLM Agent wiki."
+  },
+  "articles": [
+    {
+      "link": 1,
+      "title": "AI Value Capture - The Shift To Model Labs",
+      "url": "https://newsletter.semianalysis.com/p/ai-value-capture-the-shift-to-model",
+      "importance": "critical",
+      "reason": "Core framework: 'One Chart to Rule Them All' for GPU rental economics, VR NVL72 pricing, value accrual across AI stack (labs, neoclouds, hyperscalers, hardware). Directly maps to [[Token Economics]], [[GPU Rental Market]], [[Nvidia Rubin]].",
+      "suggested_wiki_pages": [
+        "concepts/ai-value-capture.md",
+        "concepts/token-economics.md"
+      ]
+    },
+    {
+      "link": 2,
+      "title": "The Inference Layer — Three inference infrastructure startups raising $30B combined",
+      "url": "https://thesynthesisai.substack.com/p/the-inference-layer",
+      "importance": "critical",
+      "reason": "Baseten ($11B val), Fireworks AI ($15B val), Modal Labs ($4.5B), Together AI ($1B+ ARR). Covers the inference infrastructure layer between model providers and app developers. Directly maps to [[Inference Infrastructure]], [[Baseten]], [[Fireworks AI]], [[Modal]].",
+      "suggested_wiki_pages": [
+        "entities/baseten.md",
+        "entities/fireworks-ai.md",
+        "entities/modal-labs.md",
+        "concepts/inference-infrastructure.md"
+      ]
+    },
+    {
+      "link": 3,
+      "title": "The Margin — Anthropic vs OpenAI profitability divergence",
+      "url": "https://thesynthesisai.substack.com/p/the-margin",
+      "importance": "high",
+      "reason": "Anthropic projecting first profitable frontier AI lab quarter ($559M operating profit Q2 2026), OpenAI filing for $60B IPO at $852B valuation with projected losses. Unit economics divergence analysis. Maps to [[Anthropic]], [[OpenAI]], [[AI Lab Economics]].",
+      "suggested_wiki_pages": [
+        "entities/anthropic.md",
+        "entities/openai.md"
+      ]
+    },
+    {
+      "link": 4,
+      "title": "compute is revenue — Hugh Hendry / ACID Capitalist",
+      "url": "https://hughhendry.substack.com/p/compute-is-revenue",
+      "importance": "high",
+      "reason": "Macro/financial thesis: compute becoming revenue, scarcity migrating upstream to physical infrastructure (transformers, cooling, fiber, electricity). Maps to [[AI Infrastructure Economics]].",
+      "suggested_wiki_pages": [
+        "concepts/ai-infrastructure-economics.md"
+      ]
+    },
+    {
+      "link": 5,
+      "title": "The $575B AI Infrastructure Bet — Tomasz Tunguz / GTM Now",
+      "url": "https://thegtmnewsletter.substack.com/p/ai-infrastructure-bet-tomasz-tunguz",
+      "importance": "high",
+      "reason": "Meta/Google/Oracle leveraging 7-to-1 on cash flow for data center build-outs. $575B AI infrastructure spend. Two-buyer reality (human + AI agent). Maps to [[Hyperscaler CapEx]], [[AI Agent Benchmarking]].",
+      "suggested_wiki_pages": [
+        "concepts/hyperscaler-capex.md"
+      ]
+    },
+    {
+      "link": 6,
+      "title": "Anthropic Growth and Bedrock Mix Drive AWS Margins Higher",
+      "url": "https://newsletter.semianalysis.com/p/anthropic-growth-and-bedrock-mix",
+      "importance": "critical",
+      "reason": "Detailed Tokenomics 2.0 analysis: Anthropic ARR $30B, Claude Code driving enterprise adoption, Bedrock $5.5B run rate, Anthropic/Bedrock deal economics. Maps to [[Anthropic]], [[AWS Bedrock]], [[Claude Code]].",
+      "suggested_wiki_pages": [
+        "entities/anthropic.md",
+        "concepts/aws-bedrock.md",
+        "entities/claude-code.md"
+      ]
+    },
+    {
+      "link": 7,
+      "title": "Cerebras — Faster Tokens Please",
+      "url": "https://newsletter.semianalysis.com/p/cerebras-faster-tokens-please",
+      "importance": "critical",
+      "reason": "Cerebras IPO deep dive: OpenAI $24.6B deal (750MW), WSE-3 vs GPU FLOP comparison, GPT-5.3-Codex-Spark at 2,000 tok/sec/user, fast tokens trend. Maps to [[Cerebras]], [[Wafer-Scale Engine]], [[GPT-5.3]].",
+      "suggested_wiki_pages": [
+        "entities/cerebras.md",
+        "concepts/wafer-scale-engine.md"
+      ]
+    },
+    {
+      "link": 8,
+      "title": "AI Dark Output: The Visible Cost of Invisible Output",
+      "url": "https://newsletter.semianalysis.com/p/ai-dark-output-the-visible-cost-of",
+      "importance": "high",
+      "reason": "$1.5T in tasks current AI could augment/automate. Dark Output Monitor framework for measuring AI economic impact. Maps to [[AI Economics]], [[Labor Displacement]].",
+      "suggested_wiki_pages": [
+        "concepts/ai-economics.md"
+      ]
+    },
+    {
+      "link": 9,
+      "title": "InferenceX v2: NVIDIA Blackwell vs AMD vs Hopper",
+      "url": "https://inferencex.semianalysis.com/blog/inferencex-v2-nvidia-blackwell-vs-amd-vs-hopper",
+      "importance": "high",
+      "reason": "GB300 NVL72 benchmark: up to 100x FP4 throughput vs H100, disaggregated serving, wide EP, MTP. Maps to [[InferenceX]], [[NVIDIA Blackwell]], [[GPU Benchmarking]].",
+      "suggested_wiki_pages": [
+        "concepts/inferencex.md",
+        "entities/nvidia-blackwell.md"
+      ]
+    },
+    {
+      "link": 10,
+      "title": "Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack",
+      "url": "https://newsletter.semianalysis.com/p/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack",
+      "importance": "high",
+      "reason": "Nvidia Rubin CPX: prefill-specialized chip with 20 PFLOPS FP4, disaggregated prefill/decode architecture. Maps to [[Nvidia Rubin]], [[Disaggregated Serving]].",
+      "suggested_wiki_pages": [
+        "entities/nvidia-rubin.md",
+        "concepts/disaggregated-serving.md"
+      ]
+    },
+    {
+      "link": 11,
+      "title": "GB300 NVL72 vs GB200 NVL72 Inference Performance",
+      "url": "https://inferencex.semianalysis.com/blog/gb300-nvl72-vs-gb200-nvl72-dsv4-pro-vllm-fp4",
+      "importance": "high",
+      "reason": "DeepSeek-V4-Pro 1.6T FP4 benchmarks: GB300 2.83x throughput vs GB200 at 27 tok/s/user, HBM headroom analysis, cost-per-token breakdown. Maps to [[InferenceX]], [[DeepSeek-V4]].",
+      "suggested_wiki_pages": [
+        "entities/deepseek-v4.md"
+      ]
+    },
+    {
+      "link": 12,
+      "title": "B200 NVFP4 vs H200 INT4 on Kimi K2.5/K2.6",
+      "url": "https://inferencex.semianalysis.com/blog/b200-nvfp4-vs-h200-int4-kimi-k2-vllm-perf-per-dollar",
+      "importance": "high",
+      "reason": "2.95x cost-per-token advantage B200 NVFP4 vs H200 INT4, Kimi K2.5/K2.6 (xAI Cursor Composer models), precision analysis. Maps to [[Kimi]], [[NVIDIA Blackwell]].",
+      "suggested_wiki_pages": [
+        "entities/kimi.md",
+        "entities/nvidia-blackwell.md"
+      ]
+    },
+    {
+      "link": 13,
+      "title": "How Oracle Is Winning the AI Compute Market",
+      "url": "https://newsletter.semianalysis.com/p/how-oracle-is-winning-the-ai-compute-market",
+      "importance": "high",
+      "reason": "Oracle's AI cloud strategy: networking cost advantages, OpenAI partnership, Crusoe datacenter deal, 20% CapEx advantage over neoclouds. Maps to [[Oracle Cloud]], [[AI Infrastructure]].",
+      "suggested_wiki_pages": [
+        "entities/oracle-cloud.md"
+      ]
+    },
+    {
+      "link": 14,
+      "title": "Microsoft's AI Strategy Deconstructed",
+      "url": "https://newsletter.semianalysis.com/p/microsofts-ai-strategy-deconstructed",
+      "importance": "high",
+      "reason": "Azure Foundry Token-as-a-Service, AI Token Factory Economics Stack, Microsoft's datacenter pause recovery, Neocloud GPU rental strategy. Maps to [[Azure Foundry]], [[Microsoft AI]].",
+      "suggested_wiki_pages": [
+        "entities/azure-foundry.md",
+        "entities/microsoft-ai.md"
+      ]
+    },
+    {
+      "link": 15,
+      "title": "How Much Do GPU Clusters Really Cost?",
+      "url": "https://newsletter.semianalysis.com/p/how-much-do-gpu-clusters-really-cost",
+      "importance": "high",
+      "reason": "GPU Cluster TCO Calculator, Goodput Calculator, Gold/Silver tier provider comparison, hidden costs (goodput loss, setup, debugging). Maps to [[GPU TCO]], [[Cluster Economics]].",
+      "suggested_wiki_pages": [
+        "concepts/gpu-tco.md",
+        "concepts/cluster-economics.md"
+      ]
+    },
+    {
+      "link": 16,
+      "title": "The Great GPU Shortage — H100 1 Year Rental Price Index",
+      "url": "https://newsletter.semianalysis.com/p/the-great-gpu-shortage-rental-capacity",
+      "importance": "high",
+      "reason": "H100 rental pricing up 40%, GPU rental market structure (short/mid/long-term), Neocloud dynamics, pricing trends. Maps to [[GPU Rental Market]].",
+      "suggested_wiki_pages": [
+        "concepts/gpu-rental-market.md"
+      ]
+    },
+    {
+      "link": 17,
+      "title": "SemiAnalysis Homepage link",
+      "url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f",
+      "importance": "low",
+      "reason": "Beehiiv homepage/promotional link — not article content."
+    },
+    {
+      "link": 18,
+      "title": "Beehiiv status page link",
+      "url": "https://email.beehiivstatus.com/40efd0c2afdac2d7302f63a8aec092b48fc6d956/hclick",
+      "importance": "low",
+      "reason": "Beehiiv email status/infrastructure link — not article content."
+    }
+  ],
+  "summary": {
+    "total_articles": 18,
+    "critical": 5,
+    "high": 9,
+    "low": 2,
+    "key_themes": [
+      "GPU/Inference Economics (TCO, rental pricing, perf/$)",
+      "AI Lab Unit Economics (Anthropic profitability vs OpenAI losses)",
+      "Inference Infrastructure Layer (Baseten, Fireworks AI, Modal)",
+      "Next-Gen Hardware (Nvidia Rubin, GB300 NVL72, Cerebras WSE-3)",
+      "Hyperscaler Strategy (AWS Bedrock, Azure Foundry, Oracle Cloud)",
+      "AI Economic Impact ($1.5T Dark Output, $575B infra bet)"
+    ],
+    "recommended_actions": [
+      "Ingest all critical/high articles into wiki/raw/articles/",
+      "Create/update entity pages: Anthropic, Cerebras, Baseten, Fireworks AI, Modal Labs, Oracle Cloud, Azure Foundry",
+      "Create/update concept pages: Token Economics, GPU TCO, Inference Infrastructure, Disaggregated Serving, AI Lab Economics",
+      "Update existing wiki pages with new benchmark data and financial figures"
+    ]
+  }
+}
