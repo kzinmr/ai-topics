@@ -1,6 +1,14 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] raw-backlog-ingest | 5 articles triaged, 0 takes, 1 reference, 4 skips
+
+- 5 raw backlog articles triaged from latest cron batch (candidates_selected=5)
+- **Skip (2)**: Glean blog articles (`ai-prompts-for-project-managers`, `enterprise-search-hr`) — body is ~75% navigation chrome repeated, minimal substantive AI content; Glean entity page already covers product
+- **Reference (1)**: Ash Vardanyan "Understanding SIMD" (co-authored w/ Chris Lattner, Daniel Lemire, Evan Ovadia) — comprehensive SIMD optimization guide using cosine similarity as case study; bfloat16 mixed precision, AVX2/ARM kernels, rsqrt approximations. Existing `entities/ash-vardanyan.md` covers NumKong/SimSIMD rebrand thoroughly; article valuable as future `concepts/simd-optimization` reference
+- **Skip (2)**: Simon Tatham geometry problem (pure math, not AI-relevant), Dan Luu car-safety benchmark analysis (automotive safety, not AI/LLM)
+- Triage JSON archived to raw/archived/triage/backlog/2026-05-31_20260531T120019Z.json
+
 ## [2026-05-31] active-crawl | May-June 2026 Trending AI/ML Topics
 
 ### New Wiki Pages Created (5)
