@@ -8,6 +8,7 @@
 - Verified: no pipe table corruption, no line number prefix corruption in index.md
 - Pipeline status: x_accounts job stale (26h) — requires human review
 
+---
 ## [2026-05-31] trending-topics | 5-8 trending topics, 10 new wiki pages
 - Scanned web + RSS for trending AI/ML topics (May-June 2026)
 - **New concept pages**: `concepts/tool-use-necessity` (Probe&Prefill, When2Tool), `concepts/axpo` (NVIDIA/KAIST RL), `concepts/esmfold2` (CZI Biohub), `concepts/computer-use` (OSWorld, Pointer AI), `concepts/eu-ai-act` (Aug 2026 enforcement), `concepts/vla-models` (robotics foundation models), `concepts/alphaproof-nexus` (DeepMind formal math proofs)
@@ -26,6 +27,7 @@
 - **Skip (2)**: Simon Tatham geometry problem (pure math, not AI-relevant), Dan Luu car-safety benchmark analysis (automotive safety, not AI/LLM)
 - Triage JSON archived to raw/archived/triage/backlog/2026-05-31_20260531T120019Z.json
 
+---
 ## [2026-05-31] active-crawl | May-June 2026 Trending AI/ML Topics
 
 ### New Wiki Pages Created (5)
@@ -101,6 +103,7 @@
 - raw/articles/simonwillison.net--2026-may-30-how-we-contain-claude--6b2ad650.md
 - raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md
 
+---
 ## [2026-05-31] raw-backlog-ingest | 5 articles triaged, all skipped (2 already captured, 3 non-AI)
 
 ### Articles Processed
@@ -114,6 +117,7 @@
 ### Summary
 Takes=0, References=0, Skips=5. Batch of 5 from 6,362 raw article backlog. No wiki pages created or modified.
 
+---
 ## [2026-05-31] jp-en-translation-batch | JP->EN translation batch - 2 files translated
 
 ### Files Translated
@@ -163,6 +167,7 @@ Takes=0, References=0, Skips=5. Batch of 5 from 6,362 raw article backlog. No wi
 
 All three articles saved directly from xurl bookmarks (article body already fetched via tweet.fields=article).
 
+---
 ## [2026-05-30] Epoch AI Open-Closed ECI Gap ingest — 2 concept pages created, 1 raw article saved
 
 - **Source**: Epoch AI data insight — "Open vs. closed model capability gap" (epoch.ai/data-insights/open-closed-eci-gap)
@@ -176,6 +181,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Entity page exists**: `entities/epoch-ai.md` already has ECI cross-references and sources
 - **Index updated**: Added both concept entries, header counts: Total 2173→2175, Concepts 1414→1416, Indexed 1559→1561
 
+---
 ## [2026-05-31] North Chen X Article Ingestion | Harness Platform Economics
 - **Source**: X Article by North (@anorth_chen) — "Why is it always difficult to land your agent projects?"
 - **Raw Article**: wiki/raw/articles/2026-05-24_anorthchen_agent-harness-business.md (225 lines, 18KB)
@@ -190,12 +196,14 @@ All three articles saved directly from xurl bookmarks (article body already fetc
   - Updated harness-engineering entry with enrichment note
 - **TBD**: Add @anorth_chen to x-accounts.yaml
 
+---
 ## [2026-05-30] raw-backlog-ingest | Raw backlog triage (20:00 UTC) — 0 takes, 5 skips
 - 5 candidate articles from backlog triaged via body-reading (§1.5)
 - All 5 skipped: susam.net (Math Notes), danluu.com (Physics Archive), Karpathy (PhD Program Guide + AI Creative Fiction), filfre.net (Historical Mystery) — none contain AI/LLM technology content
 - Triage JSON saved to cron data pipeline path
 - Archive: wiki/raw/archived/triage/backlog/2026-05-30_20260530T200057Z.json
 
+---
 ## [2026-05-30] dreaming-wiki-ingest | Nightly knowledge consolidation
 
 ### Coverage Analysis
@@ -228,6 +236,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - Indexed entries: 1549 → 1559
 
 
+---
 ## [2026-05-30] watchdog-fix | Index dedup + header count correction
 
 ### Issues Fixed
@@ -278,6 +287,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - [[entities/together-ai]] — Added world's fastest speech-to-text stack: TensorRT multi-profile, conditional CUDA graphs, zero-copy CPU path, epoll I/O, gc.freeze() for p95 latency.
 - [[entities/gary-marcus]] — Added GPU rental price collapse (H200 -40% in 3 weeks), tokenmaxxing decline analysis.
 
+---
 ## [2026-05-30] raw-backlog-ingest | Raw backlog triage (00:00 UTC)
 
 5 articles triaged from backlog. 0 take (no new wiki pages needed), 2 reference (archived), 3 skip (out of scope).
@@ -294,6 +304,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 
 **Triage checkpoint:** `raw/archived/triage/backlog/2026-05-30_20260530T000008Z.json`
 
+---
 ## [2026-05-29] x-accounts-scan | X account scan wiki ingestion (22:30 UTC)
 
 11 new posts from 12 scanned accounts (83 tracked). Processed key stories:
@@ -314,6 +325,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 **Index updated:** Added code-review, gemini-managed-agents; updated linear, monty-sandbox entries.
 **Sources:** X accounts scan via @_philschmid (Gemini Managed Agents), @karrisaarinen (Linear Diffs), @samuelcolvin (Monty), @burkov (LoRA/AlphaFold on ChapterPal), @hugobowne (Agent Skills Ep4 YouTube), @willmcgugan (retro computing — skipped).
 
+---
 ## [2026-05-29] ingest | Dreaming nightly knowledge consolidation
 
 ### Takes
@@ -398,6 +410,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Updated SCHEMA.md**: Added tags `metadata-retrieval`, `explainable-ranking` to Techniques taxonomy
 - **Updated index.md**: Added entries for `entities/doug-turnbull` and `concepts/metadata-retrieval`
 
+---
 ## [2026-05-29] DCI paper ingest — user request (Discord)
 
 - `created` concepts/direct-corpus-interaction.md — Direct Corpus Interaction (DCI) concept page from Li et al. (arXiv 2605.05242). Replaces retrieval pipeline with grep/bash/shell commands. BrowseComp-Plus 80.0%, multi-hop QA 83.0, IR NDCG 68.5.
@@ -406,6 +419,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - `updated` SCHEMA.md — Added `direct-corpus-interaction` to Techniques tags
 - `updated` index.md — Added concepts/direct-corpus-interaction entry, updated page count
 
+---
 ## [2026-05-29] SIRA paper ingest — user request (Discord)
 
 - `created` entities/sira.md — SIRA (Superintelligent Retrieval Agent) entity page from Meta Superintelligence Labs (arXiv 2605.06647) + facebookresearch/sira GitHub repo. Rust+Python, MIT license, BM25x-based.
@@ -413,6 +427,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - `updated` concepts/information-retrieval.md — Added SIRA: LLM-Guided Lexical Retrieval section (architecture, comparison table, limitations). Added tags: query-expansion, lexical-search, agentic-retrieval.
 - `updated` index.md — Added entities/sira, updated concepts/information-retrieval summary
 
+---
 ## [2026-05-29] raw-backlog-ingest | 5 items backlog processed — 0 take, 2 reference, 3 skip
 
 - **AINews Kimi K2.5 Digest** → `reference` — Includes Kimi K2.5/MoonViT/Agent Swarm/Trinity Large (Arcee/Prime Intellect 400B MoE), but Kimi-related content already covered up to K2.6 in entities/kimi.md
@@ -422,12 +437,14 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Ben Boyter "China Trip 3"** → `skip` — 2005年旅行記、AI無関係
 - Archive: `wiki/raw/archived/triage/backlog/2026-05-29_20260529T160100Z.json`
 
+---
 ## [2026-05-29] URL update: Berryman's agentic search maturity model article (Arcturus Labs)
 
 - **Updated raw article**: `raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level.md` — URL changed from `incremental-ai-adoption-for-e-commerce` → `incremental-adoption-of-agentic-search`. Added `original_url` field to preserve history.
 - **Updated entity page**: [[entities/john-berryman]] — Notable Articles table URL and title updated to new canonical URL.
 - **Already ingested**: The 5-level maturity model (Level 0-4) is fully documented in [[concepts/agentic-search]] § "Berryman's 5-Level Agentic Search Maturity Model."
 
+---
 ## [2026-05-29] CodeAct concept page created — Executable Code Actions paradigm
 
 - **Created concept page**: [[concepts/codeact]] — CodeAct (Executable Code Actions) paradigm: LLM agents use Python code as unified action space. ICML 2024 paper by Wang et al. (up to 20% higher success rate over JSON/text). Plan-then-Execute pattern. Relationship to PTC (Programmatic Tool Calling) and RLM (Recursive Language Models) documented. Coverage of Microsoft Agent Framework Hyperlight CodeAct connector. Tags: code-act, plan-then-execute (new tags).
@@ -438,6 +455,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
   - `raw/papers/2024-02-01_2402.01030_codeact.md` — arXiv:2402.01030 (ICML 2024)
   - `raw/articles/2026-05-20_microsoft_codeact-agent-framework.md` — Microsoft Learn documentation
 
+---
 ## [2026-05-29] Show Us Your (Agent) Skills Episode 2 — Entity pages created and enriched (Hilary Mason, Eric Ma, Tomasz Tunguz, Bryan Bischof)
 
 - **Created entity page**: [[entities/hilary-mason]] — Co-Founder & CEO of Hidden Door, former Chief Scientist at bitly, founder of Fast Forward Labs (acq. Cloudera). Agentic loops for creative work, three-variations pattern, Hermes harness, Gremlins cron agents. Sources: Episode 2 transcript + web research.
@@ -447,6 +465,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Raw source**: `raw/articles/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md`
 - **Updated index.md**: Added entries for eric-ma, hilary-mason, tomasz-tunguz. Updated bryan-bischof description.
 
+---
 ## [2026-05-29] X bookmarks ingest | 3 articles processed: iii workers harness, Hermes guide, Claude mid-conversation system messages
 
 - **Created entity page**: [[entities/mike-piccolo]] — Founder & CEO of iii, "Harness Is the Backend" thesis, workers harness architecture. Sources: iii.dev, LinkedIn, GitHub, Motia blog.
@@ -460,6 +479,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Enriched entity page**: [[entities/doug-turnbull]] — Added Show Us Your (Agent) Skills Episode 4 section: autoresearch BM25, MS Marco eval loop, train/validate splits, stop words/bigrams discovery, lab journals/episodic memory, LLM judge as user message.
 - **Updated index.md**: Added [[entities/chris-fonnesbeck]] to Entities section.
 
+---
 ## [2026-05-29] active-crawl | 5 trending topics: Pointer OSWorld SOTA, DNS-AID, MiniMax MSA, GRAM, Project Lightwell
 
 ### Pages Created
@@ -542,6 +562,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **SCHEMA.md**: Added `reward-hacking` tag to Techniques taxonomy
 - **Index**: +4 entries (2 entities + 2 concepts), header stats updated
 
+---
 ## [2026-05-29] add | Blog ingest: Anthropic $47B revenue, Claude Opus 4.8, protestware, AI-native localization, OpenAI frontier governance — 1 entity + 4 concepts + 3 raw articles
 - **Blog scan**: 35 new articles across blogs, 16 saved as raw, 3 OpenAI articles manually scraped and saved
 - **Created entity**: `entities/anthropic.md` — AI research company, $47B run-rate revenue (May 2026), $65B Series H, Claude Opus model family, honesty philosophy, mid-conversation system messages
@@ -553,6 +574,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **index.md**: +1 entity, +4 concepts, +3 raw articles. Page counts: Entities 710→711, Concepts 710→714, Total 2242→2250, Indexed 1479→1484
 - **Cross-links**: Anthropic ↔ Claude Models, Claude Models ↔ prompt-caching/llm-anthropic, protestware ↔ prompt-injection/agent-security/supply-chain, ai-native-localization ↔ agentic-engineering/context-engineering/feedback-loop
 
+---
 ## [2026-05-29] add+enrich | Ingest Xinming Tu's Structured Test-Time Scaling framework — 1 new concept + 1 entity + 1 stub enrichment + test-time-scaling cross-ref
 - **Saved raw article**: `raw/articles/2026-02-10_xinmingtu-cn_hierarchical-mas-theory.md` — Tu & Ye (Feb 2026), three-layer structural decoupling theory
 - **Created concept**: `concepts/structured-test-time-scaling.md` — Unified theoretical framework: Topology (span compression Θ(W)→Õ(log W)) → Scope Isolation (context decoupling) → Decoupled Verification (error correction at gates). Work-span formalism from parallel computation. 13-system mapping table. Practical constraints (managerial capacity, scope boundaries, verification advantage).
@@ -561,6 +583,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Cross-ref**: `concepts/test-time-scaling.md` — Added Structured vs. Unstructured section + cross-link
 - **Cross-links**: → [[rlm-recursive-language-models]], [[dynamic-workflows]], [[reduce-offload-isolate]], [[subagent-patterns]], [[multi-agent-orchestration-architecture]]
 
+---
 ## [2026-05-29] add | Ingest Cursor real-time RL blog + @27upon2 X Article → 2 new pages + 3 enrichments
 - Raw articles: `raw/articles/2026-04_cursor_real-time-rl-for-composer.md` (Cursor blog), `raw/articles/2026-04-06_27upon2_continual-learning-prime-intellect.md` (X Article, @27upon2)
 - NEW entity: `entities/sriraam-27upon2.md` — Sriraam (@27upon2), AI researcher, post-training @ Chakra AI. Built rollouts CLI for open-source continual learning with Prime Intellect + OpenCode.
@@ -570,18 +593,21 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - ENRICHED entity: `entities/prime-intellect.md` — Added Sriraam's rollouts tool as notable third-party environment using Prime's hosted training.
 - index.md: +2 entries, page count updates (Entities: 710, Concepts: 709)
 
+---
 ## [2026-05-29] add | Ingest Sigrid Jin X Article "What you need to learn from claw-code repo" → entity + concept enrichment
 - Raw article: `raw/articles/2026-04-01_realsigridjin_what-you-need-to-learn-from-claw-code.md` (X Article, type: x_article, 794 likes / 1056 bookmarks)
 - [[entities/sigrid-jin]] — Expanded Philosophy section: Discord-native workflow, Ralphthon/OmOCon, GitHub stars social dynamics, "Two Kinds of People" framework (Establishment vs Independents). Added agent-coordination, multi-agent, philosophy, entrepreneur tags. Source added.
 - [[concepts/claw-code]] — Rebuilt Three-Part Meta-System into table format (OmX/clawhip/oh-my-openagent). Added Agent Role Cycle (Architect → Executor → Reviewer), Discord-Native Workflow section, Ralphthon Lesson. Expanded Autonomous Development Thesis with "stop staring at the files" thesis. Added agent-coordination, autonomous-agents tags. Source added.
 - Pages Updated: 3 (1 raw article, 2 enriched)
 
+---
 ## [2026-05-29] add | Ingest Addy Osmani "The Orchestration Tax" X Article → concept + entity enrichment
 - [[concepts/orchestration-tax]] — New concept page created: Named by Richard Seroter at Google I/O 2026 panel, expanded by Addy Osmani. "Humans as GIL (Global Interpreter Lock)" structure in AI agent development. Application of Amdahl's Law, Busy ≠ Productive, 5 attention design strategies (backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time). Cross-referenced with [[concepts/cognitive-surrender]], [[concepts/cognitive-debt]], [[concepts/harness-engineering]].
   - [[entities/addy-osmani]] — Added "The Orchestration Tax" section, updated sources/description/Related Pages
   - Raw article: `raw/articles/2026-05-28_addyosmani_orchestration-tax.md` (X Article, type: x_article)
   - Pages Updated: 4 (1 new concept, 1 entity enriched, index.md + log.md)
 
+---
 ## [2026-05-29] take | Raw Backlog Ingest: GPU Cluster TCO & Goodput Framework
 - [[concepts/gpu-cluster-tco-goodput]] — New concept page created: SemiAnalysis GPU cluster TCO framework. 8 cost elements (GPU/Storage/Network/Control Plane/Support/Goodput/Setup/Debugging), comparison of 3 fault-tolerant training methods (TorchFT vs AWS Checkpointless vs TorchPass), 3 workload scenario analysis (LLM Pretrain/RL Research/Inference). Goodput Expense formula and TCO comparison by provider tier.
   - [[entities/semianalysis]] — Added GPU Cluster TCO & Goodput Framework section, updated related/sources
@@ -590,6 +616,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
   - 1 item deduped: SemiAnalysis duplicate file (different substack app-link, same post)
   - Pages Updated: 3 (1 new concept, 2 existing enriched)
 
+---
 ## [2026-05-28] fix | Wiki health: auto-fix issues
 
 ### Actions
@@ -611,6 +638,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 ---
 ## [2026-05-28] ingest | arXiv:2603.04384 "AgentIR" → concepts/reasoning-aware-retrieval.md, enrich agentic-search.md + deep-research.md, raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
 
+---
 ## [2026-05-28] ingest | PyLate + FastPLAID → concepts/pylate.md, concepts/fast-plaid.md, ragatouille comparison
 
 - **Raw articles**: `raw/articles/2025-06-01_lighton_pylate-github.md`, `raw/articles/2025-06-01_lighton_fast-plaid-github.md`
@@ -618,11 +646,13 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **concepts/fast-plaid.md** (NEW): Rust-based PLAID engine for multi-vector search. GPU accelerated, incremental updates, per-token similarity matrices, per-query filtering, IVF + product quantization.
 - **concepts/ragatouille.md** (UPDATED): Added "Comparison: RAGatouille vs PyLate" section — complementary tools (train with PyLate, deploy with RAGatouille).
 
+---
 ## [2026-05-28] enrich | RAGatouille stub → full concept page (GitHub README + Simon Willison TIL)
 
 - **Raw articles**: `raw/articles/2023-12-29_answerdotai_ragatouille-github.md`, `raw/articles/2024-01-27_simonwillison_exploring-colbert-ragatouille.md`
 - **concepts/ragatouille.md** (ENRICHED from stub): Full page covering ColBERT integration, indexing/search/re-ranking APIs, training/fine-tuning, index architecture (residual compression), requirements, Simon Willison's practical experience (380% CPU, 2GB RAM, 91MB index for full blog), re-ranking mode (0.47s on CPU). Cross-linked to ColBERT, Benjamin Clavié, PyLate, LateOn/DenseOn.
 
+---
 ## [2026-05-28] ingest | Antoine Chaffin "DenseOn with the LateOn" → entities/lighton.md, entities/denseon-lateon.md, entities/antoine-chaffin.md, update late-interaction
 
 - **Source**: LinkedIn — "DenseOn with the LateOn: Open State-of-the-Art Single and Multi-Vector Models" (Antoine Chaffin, LightOn, Apr 21, 2026)
@@ -632,6 +662,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **entities/antoine-chaffin.md** (NEW): LightOn researcher, lead author DenseOn/LateOn, PyLate (CIKM 2025), LIR workshop co-organizer.
 - **entities/late-interaction.md** (UPDATED): Added DenseOn/LateOn release to timeline (Apr 2026).
 
+---
 ## [2026-05-28] ingest | arXiv:2404.12096 "LongEmbed" → concepts/longembed.md, cross-link to embedding-long-context-degradation
 
 - **Source**: arXiv:2404.12096 — "LongEmbed: Extending Embedding Models for Long Context Retrieval" (Dawei Zhu et al., Apr 2024, revised Nov 2024)
@@ -639,6 +670,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **concepts/longembed.md** (NEW): Benchmark (6 tasks: 2 synthetic + 4 real, up to 32K tokens) + context extension methods (PI for APE, NTK/SelfExtend for RoPE). RoPE models inherently superior for extension. Synthesis with Jina blindness study: position encoding solvable, semantic focus unsolved.
 - **concepts/embedding-long-context-degradation.md** (UPDATED): Added "Relationship to LongEmbed" section — comparison table showing complementary scope (extension mechanism vs retrieval quality ceiling). Two walls: architectural (solved by RoPE) vs representational (unsolved).
 
+---
 ## [2026-05-28] ingest | Jina AI "Long-Context Embedding Models are Blind Beyond 4K Tokens" → entities/jina-ai.md, concepts/embedding-long-context-degradation.md
 
 - **Source**: jina.ai — "Long-Context Embedding Models are Blind Beyond 4K Tokens" (Saahil Ognawala & Alex C-G, Mar 7, 2025)
@@ -646,6 +678,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **entities/jina-ai.md** (NEW): Search AI company founded 2020 by Han Xiao, acquired by Elastic (Oct 2025). Embedding models (v3/v4/v5 series), Reader API, Reranker, DeepSearch. Key metrics: 570M params v3, 8K context, Matryoshka Representation Learning.
 - **concepts/embedding-long-context-degradation.md** (NEW): Embedding models lose retrieval quality beyond ~4K tokens — AUC drops to 0.50 (random chance) at 8K. Demonstrated on jina-embeddings-v3 with 3,234-haystack benchmark. Normalized similarity formula, position effects (U-shaped curve), category sensitivity, query expansion failure. Cross-linked to context-rot and embeddings.
 
+---
 ## [2026-05-28] ingest | Doug Turnbull "BM25F from scratch" → enrich bm25.md, lexical-search.md, softwaredoug.md
 
 - **Source**: softwaredoug.com/blog — "BM25F from scratch" (Doug Turnbull, Sep 18, 2025)
@@ -655,6 +688,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **entities/softwaredoug.md**: Added BM25F article to Notable Blog Posts (2025–2026 section). Updated sources + date.
 - **index.md**: Updated bm25 and lexical-search descriptions to mention BM25F.
 
+---
 ## [2026-05-28] X bookmarks ingest | Mastra Channels, Mem0 memory comparison, a16z Yellow Brick Road
 
 - **saved raw articles**: `raw/articles/2026-05-28_mastra-multi-user-multi-channel-agents.md`, `raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md`, `raw/articles/2026-05-27_a16z-yellow-brick-road-ai-app-layer.md` — 3 new X articles from bookmarks
@@ -664,6 +698,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **created [[entities/mem0]]**: New entity page — open-source memory layer for LLM agents, Hermes + OpenClaw integrations, "In Context" blog series
 - **created [[concepts/yellow-brick-road-ai-app-layer]]**: a16z framework — Yellow Brick Road vs Rest of Oz, three tests for startup positioning, case studies (11x, FurtherAI), defensive moats (data flywheels, model variability, cost optimization, governance)
 
+---
 ## [2026-05-28] active-crawl | EAGLE 3.1, MAI-Image-2.5, Koog, STRIDE, Self-Replication enrichment
 
 ### Pages Created
@@ -737,6 +772,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 ### Raw Article Saved
 - raw/articles/2026-05-28_li-et-al_agent-harness-engineering-survey.md — Source: https://picrew.github.io/LLM-Harness/
 
+---
 ## [2026-05-28] paper-ingestion | Ingested DiffusionBlocks paper (arXiv:2506.14202, ICLR 2026)
 
 ### Pages Created
@@ -749,6 +785,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - https://arxiv.org/abs/2506.14202
 - https://github.com/SakanaAI/DiffusionBlocks
 
+---
 ## [2026-05-28] entity-page | Created entity page for Sakana AI
 
 ### Pages Created
@@ -763,6 +800,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - https://github.com/SakanaAI (GitHub organization)
 - wiki/raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training.md (DiffusionBlocks paper)
 
+---
 ## [2026-05-28] entity-page | Created entity page for Takuya Akiba
 
 ### Pages Created
@@ -774,6 +812,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - https://arxiv.org/abs/2506.14202 (DiffusionBlocks paper, ICLR 2026)
 - wiki/raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training.md (wiki raw paper)
 
+---
 ## [2026-05-28] raw-backlog-ingest | Raw backlog triage — 5 articles, 1 take (Mistral Latent Space podcast), 2 skips (non-AI), 2 duplicate skips
 
 ### Pages Updated
@@ -787,8 +826,10 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - `raw/articles/danluu.com--cruise-report--ebef87e7.md` — Skip: organizational/safety analysis of Cruise AV incident, not AI/LLM technology
 - 2x duplicate substack app-link posts (same content, different tracking params) — Skip: duplicates
 
+---
 ## [2026-05-27] enrich | Nightly knowledge consolidation — dreaming-wiki-ingest
 
+---
 ## [2026-05-27] x-accounts-scan | X/Twitter accounts scan — 3 new posts, 1 wiki-worthy
 
 ### Raw Articles Saved
@@ -804,6 +845,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - @ctatedev: vercel-labs/emulate — Local API emulation for CI (developer tooling, not AI-specific)
 - @spikedoanz: Logitext — MIT educational proof assistant (academic, not AI/LLM-related)
 
+---
 ## [2026-05-27] enrich | Nightly knowledge consolidation — dreaming-wiki-ingest (cont.)
 
 ### Pages Created
@@ -869,6 +911,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Updated entities**: `entities/doug-turnbull.md` — Added full 4-part Cheat at Search series section; `entities/doug-turnbull-projects.md` — Added slide deck series listing
 - **Cross-references**: llm-search-judge ↔ ndcg ↔ doug-turnbull; connects Cheat at Search Part 1 (NDCG) with Part 2 (QU) and Part 4 (LLM Judge)
 
+---
 ## [2026-05-27] raw-backlog-ingest | Ed Zitron "I Will Never Respect A Website" + "AI Is Really Weird" → enriched entities/ed-zitron.md
 
 - **Raw articles**: `raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md`, `raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md`
@@ -880,6 +923,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Index**: Updated cross-references in ed-zitron.md to include ai-coding-agent-criticism, agentic-engineering, ai-bubble-economics
 - **Skipped**: 3 non-AI articles (Paul Graham, Russ Cox, Simon Tatham) → archived
 
+---
 ## [2026-05-27] ingest | Doug Turnbull "Cheat at Search: Steering Lost Agents" slides → new concept agent-steering
 
 - **Raw article**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md` — 65-slide transcript covering the two-loop architecture, carrot-and-stick steering model, 7 steering patterns, filesystem-like search tools, and BEAM search for exhaustive exploration
@@ -902,6 +946,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - trending-topics report (2026-05-27): I/O 2026, Nemotron DLM, TrustFall, Abliteration, AI Silicon, SynthID, Command A+
 - Parallel subagent pages (separate commits): [[concepts/abliteration]], [[events/trustfall-symlink-rce-2026]], [[concepts/synthid]], [[concepts/custom-ai-silicon]]
 
+---
 ## [2026-05-27] Created concepts/synthid and concepts/custom-ai-silicon
 
 ### Pages Created
@@ -925,6 +970,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - TrendForce, Cerebras Blog, Artificial Analysis, Digital Citizen, NVIDIA Q1 FY2027 earnings
 - AMD ROCm Blogs, StorageReview, Guru3D
 
+---
 ## [2026-05-27] Created events/trustfall-symlink-rce-2026 — AI Coding Agent Security Crisis
 - Created `events/trustfall-symlink-rce-2026.md`: Comprehensive security incident page documenting Adversa AI's TrustFall and SymJack vulnerabilities (May 2026). Covers MCP auto-execution (TrustFall) and symlink hijack RCE (SymJack) across Claude Code, Gemini CLI, Antigravity CLI, Cursor, Copilot CLI, and Grok Build.
 - Saved 3 raw articles: `raw/articles/adversa-ai-trustfall-2026.md`, `raw/articles/adversa-ai-symjack-2026.md`, `raw/articles/securityweek-symjack-2026.md`
@@ -932,6 +978,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - Tags: agent-security, security, coding-agents, prompt-injection, event, vulnerability, supply-chain, mcp
 - Cross-linked: entities/claude-code, entities/gemini-cli, entities/google-antigravity, entities/cursor-ai, entities/copilot-cli, entities/anthropic, concepts/model-context-protocol-mcp, concepts/ai-agent-security, concepts/agent-security-patterns
 
+---
 ## [2026-05-27] Abliteration Concept Page — FT/Alice Investigation + Heretic Tool
 
 ### Pages Created
@@ -952,6 +999,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - Comparative Abliteration Methods paper (wiki.charleschen.ai, 2026)
 - Starlog: Heretic Automatic Abliteration technical overview
 
+---
 ## [2026-05-27] X Bookmarks Ingest | Harvey LAB Results + Datacurve DeepSWE Benchmark
 
 ### Pages Created
@@ -974,6 +1022,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - Serena Ge: X announcement (@serenaa_ge, May 26, 2026)
 
 
+---
 ## [2026-05-27] active-crawl | Ling 2.6-1T, self-replicating LLMs, NeMo Agent Toolkit
 
 ### Pages Created
@@ -1060,6 +1109,7 @@ The article's framing offers transferable patterns for wiki management:
 - **"Three prompts → make it a goal"** heuristic applies to wiki agents too: if instruction patterns repeat across sessions, encode them as skills or cron jobs
 - **Goals vs Skills** distinction: a goal is a session-scoped objective, a skill is a reusable package — mirrors our wiki SCHEMA.md / skill architecture
 
+---
 ## [2026-05-27] translate | JP→EN batch — 6 files
 
 ### Files Translated
@@ -1123,6 +1173,7 @@ The article's framing offers transferable patterns for wiki management:
 - concepts/colbert → related entities/ash-vardanyan, sources updated
 - entities/ash-vardanyan → related concepts/fused-kernels, entities/forkunion
 
+---
 ## [2026-05-27] translate | JP→EN batch — 8 files
 
 ### Files Translated
@@ -1195,6 +1246,7 @@ The article's framing offers transferable patterns for wiki management:
 
 ## [2026-05-27] translate | JP->EN batch — 8 files (2,575 chars)
 
+---
 ## [2026-05-27] ingest | Polar (ProRL-Agent-Server) paper + entity page
 
 ### Raw Paper
@@ -1407,6 +1459,7 @@ The article's framing offers transferable patterns for wiki management:
 - All 8 files now clean (0 residual JP in body)
 - Remaining JP files: 157 ((38, 175) JP chars)
 - Next batch candidates: log-2026.md (4,827 JP, excluded per policy), agent-skills.md (608 JP), pluralistic-net.md (607 JP)
+---
 ## [2026-05-27] translate | JP→EN batch — 8 files (5,113 chars)
 
 ### Files Translated
@@ -1677,6 +1730,7 @@ The article's framing offers transferable patterns for wiki management:
 - Remaining JP chars: 149,703
 
 
+---
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated
@@ -1837,6 +1891,7 @@ The article's framing offers transferable patterns for wiki management:
 - **Enriched:** `concepts/agentic-engineering.md` — Added "Slow Coding: Quality Over Velocity" (Principle 6), added Nolan Lawson to Key Practitioners
 - **Sources:** nolanlawson.com/about, nolanlawson.com post (2026-05-25), web search
 
+---
 ## [2026-05-26] manual | Ingest SkillOpt paper (arXiv:2605.23904)
 
 ### Pages Created
@@ -1885,6 +1940,7 @@ The article's framing offers transferable patterns for wiki management:
 - Jack Clark Nobel predictions, Anthropic finance agents → reference
 - Saved to: cron/data/newsletter/triage_latest.json + archived 17 items
 
+---
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated
@@ -1928,6 +1984,7 @@ Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lin
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
 
+---
 ## [2026-05-26] blog-wiki-ingest | DwarfStar distributed inference + encyclical enrichment
 
 ### Pages Enriched
@@ -2013,6 +2070,7 @@ Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lin
 - Updated total pages: 2036→2056, indexed entries: 1324→1344, not-in-index: 712→692
 - Verified: validate_index.py clean ✅
 
+---
 ## [2026-05-25] watchdog | Auto-fixes: duplicate grpo entry removed, header counts corrected
 
 ### Fixes Applied
@@ -2048,6 +2106,7 @@ Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lin
 - Magnifica Humanitas → AI ethics, AI governance, labor displacement, autonomous weapons prohibition
 - Cross-links: chris-olah ↔ magnifica-humanitas, both → ai-safety, ai-governance concepts
 
+---
 ## [2026-05-25] ingest | arXiv 2602.05400 — OPUS: Optimizer-induced data selection for LLM pre-training
 
 ### Pages Created
@@ -2059,6 +2118,7 @@ Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lin
 ### Raw Sources Added
 - raw/papers/2026-02-05_2602.05400_opus-data-selection.md: Full arXiv paper summary
 
+---
 ## [2026-05-25] active-crawl | Tencent Hy3, Centaur, AutoTTS, enrich Qwen3.7-Max & Sapient
 
 ### Pages Created
@@ -2230,6 +2290,7 @@ Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bo
 - **Agent-Native Architecture**: 5 principles for building software where agents are first-class users, not afterthoughts. Parity (human+agent equality), Granularity (smaller units), Composability (agent-to-agent APIs), Emergent Capability (tool combinations), Improvement Over Time (agent feedback loops).
 - **OpenClaw Connection**: Every's architecture directly influenced OpenClaw's filesystem-as-memory design, which in turn influenced Hermes Agent's .hermes/ directory patterns.
 
+---
 ## [2026-05-27] Future of SaaS and AI Agent Developer Career Strategy
 
 ### Created
@@ -2255,6 +2316,7 @@ Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bo
 - `wiki/SCHEMA.md` — Added `saas` tag to Meta category
 - `wiki/index.md` — Updated dan-shipper and lenny index entries
 
+---
 ## [2026-05-26] After Automation — Dan Shipper article ingestion
 
 ### Created
@@ -2269,6 +2331,7 @@ Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bo
 - `wiki/SCHEMA.md` — Added tags: agent-employees, human-agent-collaboration, human-sandwich, ai-slop, automation-paradox, benchmark-framing, zeno-paradox
 - `wiki/index.md` — Added all new pages to index, updated counts (Entities: 659→660, Concepts: 1319→1322, Total: 2029→2033)
 
+---
 ## [2026-05-25] Meta-Harness knowledge ingestion — Deedy + mary + concept enrichment
 
 ### Created
@@ -2293,6 +2356,7 @@ Meta-Harness is the convergence of three angles: academic search over harness co
 - https://arxiv.org/abs/2603.28052
 
 ###
+---
 ## [2026-05-25] Palantir research expansion — 4 new pages + 4 enrichments (Batch 2)
 
 ### Created
@@ -2334,6 +2398,7 @@ AI Security & Operations (2):
 ```
 
 ###
+---
 ## [2026-05-25] Palantir wiki infrastructure build-out — FDE/Ontology/Government
 
 ### Created
@@ -2350,6 +2415,7 @@ AI Security & Operations (2):
 Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/Anthropic are now replicating this at $4B/$1.5B scale. Bert Hubert's analysis reveals the "free with software" accounting trick that makes government IT atrophy permanent. Four research vectors now covered: Ontology (decision-centric-architecture), FDE (enterprise-agents), Agent Memory (agent-ontology), Government Dependency (palantir.md).
 
 ###
+---
 ## [2026-05-25] Article ingestion: "Building Pi With Pi" by Armin Ronacher (lucumr.pocoo.org)
 
 ### Created
@@ -2368,6 +2434,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - https://github.com/earendil-works/pi
 |- https://pi.dev/
 
+---
 ## [2026-05-25] skeleton-enrich-daily | Daily skeleton enrichment — enriched 3 skeleton pages
 
 ### Enriched
@@ -2592,6 +2659,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Verified**: validate_index.py clean (1306 lines), 0 ghost entries
 
 
+---
 ## [2026-05-23] watchdog | Header count fix + health verification
 
 ### Issues Fixed
@@ -2691,6 +2759,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **chiark.greenend.org.uk--sgtatham-aperiodic-followup**: skip (non-AI: mathematical tilings article)
 - **Archive**: `wiki/raw/archived/triage/backlog/2026-05-23_20260523T040014Z.json`
 
+---
 ## [2026-05-22] enrich | Skeleton entity enrichment — Varun Trivedy, Samuel Colvin, Daniel van Strien, Ryan Lopopolo
 
 ### Pages Enriched (from thin/skeleton state to full quality)
@@ -3016,6 +3085,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
   - [[entities/google]] — SynthID adopted by OpenAI/Nvidia as industry provenance standard
 - **Skipped** (5): The Signal (consumer AI tools), The Skip (career podcast — non-AI), 2 reference items (data center backlash, Erdős problem), thariq-shihipar HTML article (already covered in entity page)
 
+---
 ## [2026-05-21] ingest | Blog ingest batch: 4 raw articles saved, 2 new wiki pages, 3 entities enriched
 - **Pipeline**: blog-ingest (20260521T070045Z) — 33 new articles detected, 20 from tracked blogs
 - **Raw articles saved** (4):
@@ -3030,17 +3100,20 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Enriched entity**: [[entities/gary-marcus]] — Added "Generative AI: The Tech Industry's Vietnam?" post: escalation without objectives, public backlash thesis
 - **Enriched entity**: [[entities/ramp]] — Added Codex with GPT-5.5 adoption case study: code review acceleration, On-Call Assistant, engineers as orchestrators
 
+---
 ## [2026-05-21] ingest | Linear technical breakdown (performance.dev) → entity + concept pages
 - **Source**: https://performance.dev/how-is-linear-so-fast-a-technical-breakdown
 - **Raw article saved**: `raw/articles/2025-xx-how-is-linear-so-fast-technical-breakdown.md`
 - **Updated entity**: [[entities/linear]] — Added comprehensive Performance Architecture section covering: Local-First design philosophy (IndexedDB + MobX), Three Pillars of Sync Engine, Frontend optimizations (Rolldown bundler, esnext, per-package chunking, module preloading, Service Worker precaching, Canvas renderer, virtual scrolling), Render-First-Authenticate-Second pattern, Keyboard-First UX, Backend architecture (GraphQL, delta sync, WebSocket, PostgreSQL, idempotent mutations). New tags: performance, local-first.
 - **New concept**: [[concepts/local-first-architecture]] — Comprehensive concept page covering local-first architecture principles, Linear's implementation (architecture stack diagram, optimistic updates pattern, data-level code splitting, granular re-renders), benefits, challenges, related technologies (CRDTs, RxDB, ElectricSQL, Replicache), and case studies (Linear, Notion, Obsidian, Figma).
 
+---
 ## [2026-05-21] blog | Architecture Strategy to Improve Versatility and Customization of Unstructured Data DWH Analytics with Agentic Query Understanding and Content Understanding
 - **Blog post**: [[blog/2026-05-21_hermes_agentic-query-content-understanding-dwh]]
 - **Summary**: A concept blog requested by kzinmr, proposing an Agentic QU/CU architecture for unstructured-data-centric DWH analytics operations (call data + metadata). 3-layer agents (Content Understanding / Query Understanding / Execution & Verification) + Harness layer (Two-Loop, PMCL, Context Engineering). Includes Phase 1-4 gradual deployment roadmap.
 - **Sources**: concepts/query-understanding, concepts/content-understanding, concepts/agentic-search, concepts/data-analysis-agents, concepts/poor-mans-continuous-learning, concepts/context-engineering, concepts/agent-architecture-decomposition, concepts/agent-patterns, concepts/agent-runtime
 
+---
 ## [2026-05-21] ingest | Jason Liu "Getting the Most Out of Codex" X Article → entity enrichment
 - **Source**: https://x.com/jxnlco/status/2057153744630890620 (X Article, published 2026-05-20)
 - **Raw article saved**: `raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md`
@@ -3048,12 +3121,14 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Updated entity**: [[entities/openai-codex]] — Added comprehensive "Codex App: Human-in-the-Loop Capabilities" section (64 lines) covering: Control model (Steering/Queuing/Voice input), Reach layers ($browser/@chrome/@computer tool hierarchy + MCP + Skills), Long-running execution and autonomy (Durable threads/Thread automations/Goals), Side panels (4 roles + effective surfaces), Shared memory (Obsidian vault + AGENTS.md + Codex Memories + Chronicle), Mobile (Work from Anywhere). New tags: human-in-the-loop, workflow, voice-ai. Added [[entities/jason-liu]] and [[concepts/codex-goal]] to Related Topics.
 - **Index updated**: Updated descriptions for [[entities/jason-liu]] and [[entities/openai-codex]] with new capabilities.
 
+---
 ## [2026-05-20] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched 2 L1 entities
 - **Status**: No `status: skeleton` entity pages found. Enriched 2 `status: L1` entity pages to `L2`.
 - **Enriched**: [[entities/roocode]] — Major status update: extension shut down May 15, 2026. Added project timeline, shutdown details (Roomote pivot), community fork (Zoo Code, 453 stars), alternative comparisons (Cline, Kilo Code, Continue.dev), v3.53.0 features (GPT-5.5, Claude Opus 4.7, checkpoint navigation), updated stats (23.9K stars, 3.2K forks, 290 contributors), 3M installs, architecture lineage, and v3.51.0 slash command skills.
 - **Enriched**: [[entities/parchi]] — Expanded from 2.9KB to 8.2KB. Added architecture diagram, CLIProxyAPI integration for using existing AI subscriptions, Relay Daemon & CLI details, Electron desktop automation, pricing (BYOK/Credits), safety notice, multi-model provider table (OpenAI/Anthropic/OpenRouter/Kimi/Local), project status assessment (maintenance mode since April 2026), profiles & skills feature, and vision-native capability.
 - **Index updated**: Added [[entities/parchi]] and [[entities/roocode]] entries to `entities/_index.md` with descriptions. Updated `wiki/index.md` descriptions.
 
+---
 ## [2026-05-20] ingest | turbopuffer RL training SID-1 article → entity pages + agentic-search enrichment
 - **Source**: https://turbopuffer.com/blog/reinforcement-learning-sid-ai (Max Rumpf & Sam Dauncey, SID AI, May 20 2026)
 - **Raw article saved**: `raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai.md`
@@ -3063,6 +3138,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Index updated**: Added `entities/sid.md` entry (alphabetical between shunyu-yao and simon-willison)
 - Key new information captured: 256 questions × 16 attempts RL training scale, 1k+ QPS burst pattern, GPU utilization bottleneck, turbopuffer stateless architecture fit for RL workloads, HyDE emergence, parallel tool use as emergent speed behavior, corpus branching for reproducibility
 
+---
 ## [2026-05-20] health-fix | Auto-fix index corruption + orphan registration
 ### Phase 1 — Index corruption (auto-fix)
 - Clean: validate_index.py passed ✅
@@ -3116,6 +3192,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Enriched concept pages**: `concepts/harness-engineering.md` (Notion's 5-iteration agent harness, progressive disclosure), `concepts/ai-evals.md` (Notion's three-tier eval framework, MBE role, 30% headroom evals), `concepts/agent-architecture-decomposition.md` (Notion's agent composition via shared databases)
 - **Notion eval insights**: Regression tests (CI) → Launch-quality (80-90%) → Frontier/headroom (30% pass rate); Model Behavior Engineer as distinct role; quality variation across providers (Bedrock vs Azure vs first-party)
 - **Sources**: Latent Space Podcast — Notion's Token Town (Simon Last & Sarah Sachs), Marc Andreessen interview
+---
 ## [2026-05-20] update | blog/2026-05-20_hermes_divide-and-conquer-duality.md — Added shifted conditional compression chapter
 - New Chapter 3 'Shifted Conditional Compression — Limits of the Naive Dual Model': formulation correction to objective' = compress(context | goal)
 - Theorized "shifting" through 3 homologous structures: residual learning, advantage function (GRPO), active learning
@@ -3123,18 +3200,21 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - Proposed "query displacement" to distinguish from query expansion/recommendation
 - Updated conclusion to 3-layer structure 'divide, connect, shift', positioning shift design as the next frontier
 
+---
 ## [2026-05-20] create | blog/2026-05-20_hermes_divide-and-conquer-duality.md — Divide and Conquer Duality: Structure Through Multi-Agent, RLM, and IR
 - Divide-and-conquer patterns: multi-agent (horizontal split/MapReduce) and RLM (depth split/recursion)
 - Agent-Context relation through query-document duality: objective↔query, context↔document, interleaved thinking↔relevance feedback
 - Practical implication: IR insights can be transferred to agent design
 - Fundamental LLM-era insight: "information need and information satisfaction are merely gradients in the same token space"
 
+---
 ## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md — Agent-Context Duality (homologous to IR query-document duality)
 - User insight: the agent-context relationship has a structure similar to IR's query-document duality
 - Mapping table: sub-agent task(objective)↔query, search result(context)↔document, interleaved thinking↔relevance feedback
 - Reinterpreted "search is compression" through duality: objective→search→thinking→objective update = query→document→relevance FB→query expansion, same loop
 - Query and document are expressed as the same object at different granularity within the same LLM token space
 
+---
 ## [2026-05-20] create | concepts/agent-operator-patterns.md — Shann Holmberg's Hermes Agent Operator pattern collection
 
 ### Changes
@@ -3147,12 +3227,14 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - `wiki/index.md`: Concepts section: agent-operator-patterns entry added
 - Sources: raw/articles/2026-05-15_shann_hermes-agent-operator.md
 
+---
 ## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md + concepts/rlm-recursive-language-models.md — Multi-Agent × RLM Structural Similarity Patterns
 - User insight: Multi-Agent's horizontal task split (MapReduce) and RLM's input depth split (recursion) are the same divide-and-conquer idea
 - Added "Structural Similarity Patterns" section to anthropic-multi-agent-research.md: 7-dimension comparison table (split target, split direction, pattern, constraint breakthrough, scaling, aggregation method, essence)
 - Added cross-reference to Related Concepts in rlm-recursive-language-models.md
 - Both are different manifestations of the same fundamental pattern: "overcoming single context window constraints through divide and conquer"
 
+---
 ## [2026-05-20] create | concepts/anthropic-multi-agent-research.md — Anthropic Claude Research Multi-Agent System
 - Fully ingested Anthropic Engineering Blog (2025-06-13) 'How We Built Our Multi-Agent Research System' and Simon Willison's annotated article (2025-06-14)
 - New concept page: Orchestrator-Worker pattern, Memory mechanism, CitationAgent, parallelization strategy, 8 Prompt Engineering principles, Tool-Testing Agent (40% time reduction), token economics (15× vs chat)
@@ -3161,6 +3243,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - Added cross-reference to Anthropic multi-agent research in concepts/agentic-search.md
 - Raw articles: raw/articles/2025-06-13_anthropic_multi-agent-research-system.md, raw/articles/2025-06-14_simonwillison_multi-agent-research-system.md
 
+---
 ## [2026-05-20] create | concepts/context-engineering.md — Anthropic + Lance Martin Combined Analysis
 - Integrated Anthropic's 'Effective Context Engineering for AI Agents' (2025-09-29) with Lance Martin's 'Context Engineering for Agents' (2025-06-23) and 'Agent Design Patterns' (2026-01-09)
 - Organized mapping between Anthropic's implementation perspective (system prompts, just-in-time retrieval, compaction, note-taking, sub-agent delegation) and Lance Martin's 4-strategy classification (Write/Select/Compress/Isolate)
@@ -3208,6 +3291,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 ### Entity Page Enriched
 - [[entities/jason-liu]] — Added "Six Levels of Codex Morning Brief" section with level table, key principles, vault structure. Updated sources.
 
+---
 ## [2026-05-20] active-crawl | Google I/O 2026 + Cursor Composer 2.5 + NVIDIA SANA-WM + OpenAI GPT-Realtime-2
 
 **Source**: Active crawl research. 4 topics discovered from web search (Google I/O 2026, Cursor blog, arXiv, OpenAI blog).
@@ -3242,6 +3326,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 
 **index.md**: Updated entry to show trilogy with chronological arrows (Mar → Apr → May 2026).
 
+---
 ## [2026-05-20] entity + raw | Han Lee entity enrichment + RSS monitoring added
 
 **Entity page enriched**: [[entities/han-lee]] — Added Monitoring section (RSS feed tracked via blogwatcher), 4 new notable articles (Agent Harness, Data Aggregation Is Not a Moat, Don't Outsource Your Understanding, Determinism Cope), 3 new contributions (Training vs Production Harness Asymmetry, Cognitive Offloading vs Surrender, Data Moat Deconstruction), updated Related Wiki Pages with Letta link.
@@ -3258,6 +3343,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 
 **Already ingested (confirmed)**:  (Agent Runtime),  concept page.
 
+---
 ## [2026-05-20] config | RSS exclusion — Dan Luu + Simon Tatham
 
 ### RSS Monitoring Removed
@@ -3270,6 +3356,7 @@ Both blogs have minimal AI/LLM content. Keeping them in RSS monitoring generates
 ### Entity Updated
 - `wiki/entities/chiark-greenend-org-uk-sgtatham.md` — Added Monitoring section with RSS exclusion note; removed RSS URL from infobox
 
+---
 ## [2026-05-20] newsletter-wiki-ingest | 6 newsletters batch — Google I/O 2026, Vlad Feinberg, Vincent Warmerdam, Cursor Composer 2.5, Anthropic Stainless, OpenAI reorg, LangSmith, Zero language
 
 ### Source
@@ -3323,6 +3410,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - `wiki/SCHEMA.md` — Added `shopify` tag to People/Orgs category and `llm-proxy` tag to Engineering category.
 - `wiki/index.md` — Added both concept pages to Concepts section. Bumped counts (+2 concepts).
 
+---
 ## [2026-05-19] ingest | Agentic Search as an Agile Engineering Process (Tunkelang & Makhani, Mar 2026)
 
 ### Created
@@ -3356,6 +3444,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - danluu.com/diseconomies-scale/ — Business/fraud analysis (no AI relevance)
 - danluu.com/su3su2u1/hpmor/ — HPMOR fiction review archive (no AI relevance)
 
+---
 ## [2026-05-19] x-bookmarks-ingest (23:30) | Hermes Agent operator guide + Claude sandboxes/MCP tunnels
 
 ### Created
@@ -3373,6 +3462,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 ### Index
 - index.md: entities 628→629, total pages 2057→2058, indexed entries 1172→1173
 
+---
 ## [2026-05-19] skeleton-enrich-daily | Enriched siyan-zhao (stub→full) + romain-huet (L1→L2)
 
 ### Enriched
@@ -3417,6 +3507,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - wiki/log.md — Removed duplicate `# Wiki Log` header at line 280 (second occurrence)
 - wiki/log.md — Removed 2 orphaned `###` timestamp lines that duplicated `## [YYYY-MM-DD]` entries
 
+---
 ## [2026-05-19] hermes | Create judgment-list concept page from Doug Turnbull article
 
 ### Created
@@ -3451,6 +3542,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - **Enriched**: [[concepts/ai-vulnerability-detection-at-scale]] — Added Cloudflare Case Study (May 2026): 8-stage harness design, 4 core harness principles, "patch faster isn't enough" argument
 - **Wiki index**: +2 pages (2025→2028 total), updated cloudflare description
 
+---
 ## [2026-05-19] x-bookmarks-ingest | context-lock-in concept, ashwingop + sentra-app enrichment
 
 ### Summary
@@ -3461,6 +3553,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - **Enriched**: [[entities/sentra-app]] — Added context-lock-in as related concept + framing as neutral context layer, updated sources/tags
 - **Wiki index**: +1 concept page (2022→2023 total, 1368→1369 concepts)
 
+---
 ## [2026-05-19] active-crawl | Starchild-1, HRM-Text, SANA-WM, Mastra ACP
 
 ### Summary
@@ -3523,6 +3616,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - YouTube: Ted Turner's Apartment (video)
 - Wikipedia: Alaska Permanent Fund (encyclopedia)
 
+---
 ## [2026-05-19] ingest | ECHO: Terminal Agents Learn World Models for Free (X Article)
 
 ### Summary
@@ -3618,6 +3712,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - china-briefing.com article ingestion was canceled per user request
 - Updated `wiki/index.md` (+2 entries, Entities 622, Concepts 1362)
 
+---
 ## [2026-05-19] ingest | China OpenClaw Agentic AI Boom (China Briefing article)
 
 ### Summary
@@ -3762,6 +3857,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - https://recsys.substack.com/p/is-bm25-enough-for-agentic-deep-research
 - https://arxiv.org/abs/2605.10848
 - https://github.com/justram/pi-serini
+---
 ## [2026-05-18] active-crawl | AWS-OpenAI, Perceptron AI, SAP/Anthropic, AWS Agent Toolkit, Google AI Pointer
 
 ### Pages Created (6)
@@ -3819,6 +3915,7 @@ Ingested "Self-Distilled Reasoner: On-Policy Self-Distillation" by Siyan Zhao et
 - raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
 - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
 
+---
 ## [2026-05-18] blog-ingest | Gary Marcus neurosymbolic AI, Sean Goedecke ZIRP engineer, OpenAI Codex for Work
 
 - **Updated**: `wiki/entities/gary-marcus.md` — Added "The illusion of Generative AI" (May 2026): neurosymbolic AI advocacy, world models case, hyperscaling critique. Three interviews: Brian Greene (World Science Festival), Zachary Karabell (Web Summit), Will Wilson/Antithesis (Bug Bash 2026). Added tags: neurosymbolic, world-models, ai-safety.
@@ -3828,6 +3925,7 @@ Ingested "Self-Distilled Reasoner: On-Policy Self-Distillation" by Siyan Zhao et
 - **Skipped**: 13 non-AI-relevant articles (LWN kernel updates, Star Wars essay, NHS open-source politics, Joan Westenberg creativity essay, Troy Hunt weekly update)
 - **Raw articles**: 10 saved (3 processed into wiki)
 
+---
 ## [2026-05-18] ingest | Self-Distilled Agentic RL (SDAR) Paper
 
 Ingested arXiv:2605.15155 "Self-Distilled Agentic Reinforcement Learning (SDAR)" by Zhengxi Lu et al. (ZJU/Meituan/Tsinghua).
@@ -3841,6 +3939,7 @@ Ingested arXiv:2605.15155 "Self-Distilled Agentic Reinforcement Learning (SDAR)"
 - `wiki/log.md` — This entry.
 - `scripts/papers_index.py` — Registered arXiv:2605.15155.
 
+---
 ## [2026-05-18] Stale directory cleanup — /opt/data/home/ → canonical merge
 
 **Context**: Subagents wrote to `/opt/data/home/wiki/` instead of canonical `/opt/data/wiki/`. Manual merge operation.
@@ -4642,6 +4741,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Move to comparisons/ (same session)
 - `wiki/concepts/agent-memory-systems-comparison.md` → `wiki/comparisons/agent-memory-systems-comparison.md` — Moved from concepts/ to comparisons/ (type: concept → comparison). Updated all wikilinks in openclaw.md, context-compaction.md, index.md.
+---
 ## [2026-05-14] health | Wiki health auto-fix — 20 orphan concepts indexed
 
 ### Changes
@@ -4649,6 +4749,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
  dark-factory-software-factory, data-engineering, data-engineering-for-ml,
  data-validation-python-type-hints-rust-web-frameworks-fastapi, dataset-engineering,
 
+---
 ## [2026-05-18] ingest | LinkedIn post: Doug Turnbull's RAG→Agentic Search paradigm shift manifesto
 
 ### Changes
@@ -4665,6 +4766,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
   - Open Questions: cost asymmetry, generality, eval contamination risk, RLM relationship
   - Sources updated: official Anthropic URL added alongside GEND partner summary
 
+---
 ## [2026-05-18] ingest | Armin Ronacher: "A Language For Agents" — agent-oriented programming language design
 
 ### Changes
@@ -4675,6 +4777,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - `wiki/index.md` — Updated entity entry for armin-ronacher; added description to agent-ergonomics concept entry.
 - `wiki/concepts/claude-agent-sdk-research-stateless-stateful-web-search.md` — Deleted orphaned empty stub (not in index.md, no incoming links)
 
+---
 ## [2026-05-18] ingest | Vercel Labs Zero — agent-oriented programming language
 
 ### Changes
@@ -4745,6 +4848,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - `wiki/SCHEMA.md` — Added 4 tags: `cursor`, `github-copilot` (Products section); `llm-proxy` (Infrastructure); `interns
 - `wiki/index.md` — Updated entries for farhan-thawar, shopify, gergely-orosz with rich descriptions. Added new zodchiii
 
+---
 ## [2026-05-20] ingest | CMA self-hosted sandbox providers (4 articles → 1 comparison + 4 entities + CMA enrichment) | kzinmr request
 
 ### Raw Articles Saved
@@ -4766,6 +4870,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ### Index & Log
 - `index.md`: +5 indexed entries (4 entities + 1 comparison); entities 629→633, comparisons 17→18, total 2060→2065.
 
+---
 ## [2026-05-20] blog-wiki-ingest | Gemini 3.5 Flash, Ed Zitron economics, antirez EDIT tool, Karpathy joins Anthropic
 
 ### Source
@@ -4814,6 +4919,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 
 
+---
 ## [2026-05-20] dreaming-wiki-ingest | Nightly knowledge consolidation — Cohere Reliant AI, Warp Oz, Simon Willison PyCon
 
 ### Pages Enriched
@@ -4856,6 +4962,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
   - entities/doug-turnbull-speaking.md: Added LLM QU lecture entry + embedding collapse quote
   - entities/doug-turnbull.md: Updated date
 
+---
 ## [2026-05-21] create | entities/shloked.md + concepts/chatferry.md
 
 - **Created entities/shloked.md** — Shlok Khemani (@shloked) entity page focused on indie developer persona and ChatFerry creation
@@ -4919,6 +5026,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - **Updated wiki/index.md** — Added concepts/activegraph entry, updated counts: Total 2086→2088, Indexed 1223→1224
 - **Updated wiki/index.md** — Added concepts/colbert. Counts: Total 2079→2080, Indexed 1221→1222
 
+---
 ## [2026-05-23] created | 3 new wiki pages: rlancemartin, trq212, claude-managed-agents + index updates
 
 ### Pages Created
@@ -4943,6 +5051,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - https://github.com/anthropics/skills/tree/main/skills/claude-api
 - https://github.com/anthropics/claude-cookbooks/tree/main/managed_agents/self_hosted_sandboxes
 
+---
 ## [2026-05-26] enrich | entities/embeddings.md + raw paper 2603.29519 + concepts/drowning-in-documents-paradox.md
 
 - **Saved raw paper** — raw/papers/2026-03-31_2603.29519_single-vector-embeddings-limitations.md (Archish S et al., Microsoft Research India). Registered in papers_index.
@@ -4958,6 +5067,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - https://arxiv.org/abs/2603.29519
 - https://arxiv.org/abs/2012.14210 (Reimers & Gurevych, 2021)
 
+---
 ## [2026-05-26] translate | JP→EN batch — 8 files translated to English
 
 - **Total JP chars removed**: 6,125
@@ -4977,6 +5087,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ### Sources
 - None (batch translation — no new sources ingested)
 
+---
 ## [2026-05-27] create | comparisons/openclaw-pi-hermes-state-management.md
 
 - **Created comparison report** — Data Flow and State Management analysis of OpenClaw, Pi, and Hermes Agent from the ai-native-state-management lens. Covers canonical state ownership, 8-state mapping, event vs snapshot behavior, session persistence, context compression, long-term memory, tool workflow state, subagents, and durable execution.
@@ -4992,6 +5103,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - hermes-agent/hermes_state.py
 - hermes-agent/agent/conversation_loop.py
 
+---
 ## [2026-05-27] blog-ingest | Daily blog article ingestion and wiki enrichment
 
 ### Articles Collected
@@ -5015,6 +5127,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--4c0adac9.md
 
 
+---
 ## [2026-05-27] newsletter-wiki-ingest | Daily newsletter enrichment (6 reference items)
 
 ### Pages Updated / Enriched
@@ -5037,6 +5150,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ### Triage
 - 0 takes, 6 reference items, 4 skip items processed
 
+---
 ## [2026-05-28] howtoeval.com ingestion | Comprehensive ingestion of Ben Hylak's "How to Evaluate AI Agents — The 2026 Guide"
 
 ### Pages Created
@@ -5052,6 +5166,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - https://www.benhylak.com/
 - https://www.raindrop.ai/blog/thoughts-on-evals/
 
+---
 ## [2026-05-28] evals-are-dead debate ingestion | "Thoughts on Evals" by Ben Hylak (Sep 2025)
 
 ### Pages Created
@@ -5065,6 +5180,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ### Sources
 - https://www.raindrop.ai/blog/thoughts-on-evals/
 
+---
 ## [2026-05-28] probabilistic-era ingestion | Gian Segato's ontological framework for AI products
 
 ### Pages Created
@@ -5079,6 +5195,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - https://giansegato.com/essays/probabilistic-era
 - https://giansegato.com/
 
+---
 ## [2026-05-28] LangChain traces-as-documentation cross-connection | Unified framework synthesis
 
 ### Pages Created
@@ -5090,6 +5207,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ### Key Insight
 Three independently-arrived-at perspectives form a causal chain: Segato's F: X→Y → F'(?) explains WHY deterministic playbooks break → Chase's traces-as-documentation shows WHAT changes in daily practice → Hylak's floor raising provides HOW to measure quality in this new paradigm.
 
+---
 ## [2026-05-28] Practice Evolution Portal | Aggregated wiki knowledge on TDD, evals, A/B testing, monitoring, o11y transformation
 
 ### Pages Created
@@ -5100,6 +5218,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - 7 key thinkers with positions mapped
 - 3-phase trajectory: Hybrid Coexistence → Trace-Centric Consolidation → Harness Collapse
 
+---
 ## [2026-05-28] The Inverted Stack | Reframing beyond "probabilistic" with Zayd (2016) baseline
 
 ### Pages Created
@@ -5120,6 +5239,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Schema** [[SCHEMA]] — added `hybrid-reasoning` tag to Models category
 - **Index** — added hermes-4, updated nous-research description, bumped entity count 705→706
 
+---
 ## [2026-05-29] Dynamic Workflows + RLM | Claude Code announcement & a1zhang analysis
 
 ### Pages Created
@@ -5168,6 +5288,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Enriched concept page**: [[concepts/agent-hosting-aws]] — Added PTC Integration section cross-referencing the new concept, updated sources/frontmatter.
 - Updated `wiki/index.md` (+1 concept, +2 entities, +3 indexed entries).
 
+---
 ## [2026-05-30] active-crawl | AI/ML Trending Topics — May 2026
 
 ### Pages Created
