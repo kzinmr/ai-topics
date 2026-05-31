@@ -3,7 +3,7 @@ title: gilesthomas
 description: Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technical articles on LLM internals, smolagents, training, and inference optimization. Known for accessible, first-person explanations of complex ML concepts built on hands-on experimentation.
 url: https://gilesthomas.com
 type: entity
-updated: 2026-04-30
+updated: 2026-05-31
 aliases: [gpjt, Giles Thomas]
 tags:
   - person
@@ -12,6 +12,8 @@ tags:
   - model
 sources:
   - https://www.gilesthomas.com/2024/04/about/
+  - https://www.gilesthomas.com/2026/05/on-first-looking-into-jax
+  - raw/articles/gilesthomas.com--2026-05-on-first-looking-into-jax--472e0e73.md
   - https://www.gilesthomas.com/personal
   - https://github.com/gpjt
   - https://huggingface.co/gpjt
@@ -82,6 +84,24 @@ The most ambitious series on Thomas's blog. Spanning 46+ posts (from December 20
 - **10Gb/s Home Ethernet** (April 2026) — Technical deep-dive on setting up high-speed wired networking infrastructure at home - two-part series covering theoretical background and practical implementation.
 - **LLM Coherence Evolution** (April 2026) — Visualized how a GPT-2-small-style model becomes more coherent over 57 training checkpoints. Key finding: FineWeb-Edu models scored significantly higher on IFT than loss alone would predict, suggesting knowledge density matters separately from raw intelligence.
 - **Lambda Labs Instance Automation** (April 2026) — Built `lambda-manager`, a CLI tool for polling Lambda Labs API and automatically launching GPU instances when available, with Telegram notifications.
+
+### JAX Exploration (May 2026)
+
+Thomas published [On first looking into JAX](https://www.gilesthomas.com/2026/05/on-first-looking-into-jax) (May 2026) — a 4,600+ word deep-dive documenting his transition from PyTorch to Google's JAX framework for machine learning workloads.
+
+**Core thesis** — Thomas characterizes the PyTorch/JAX divide as:
+- "PyTorch is engineering; JAX is maths"
+- PyTorch is procedural, JAX (tries to be) functional
+- PyTorch is maximalist; JAX is minimalist
+- PyTorch has historically been optimised piecewise, JAX is JITted
+
+**Key technical coverage:**
+- Contrasts PyTorch's explicit training loop (`optimizer.zero_grad()` → forward → loss → backward → step) with JAX's `jax.grad()` functional approach where gradients are computed as first-class function transformations
+- Documents the experience of porting small PyTorch examples into JAX
+- Raises the counterargument: JAX's purity and functional constraints may limit its long-term adoption compared to PyTorch's pragmatic engineering approach
+- Frames the exploration through Keats' sonnet "On First Looking into Chapman's Homer" — discovering JAX as a PyTorch veteran is like "a 16th-century European coming back after having discovered something that the people who lived there were perfectly well aware of"
+
+This article represents Thomas expanding his ML framework expertise beyond PyTorch, adding JAX to his hands-on experimentation repertoire alongside his ongoing LLM-from-scratch work.
 
 ## Writing Style & Philosophy
 

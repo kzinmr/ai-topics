@@ -2,7 +2,7 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-05-25
+updated: 2026-05-31
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
@@ -13,7 +13,8 @@ sources: [
   raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md,
   raw/articles/2025-12-10_google-cloud_alphaevolve.md,
   raw/newsletters/2026-05-20-ainews-google-i-o-2026-gemini-3-5-flash-omni-nanobanana-for-video-spark-backgrou.md,
-  raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
+  raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md,
+  raw/articles/feed.tedium.co--link-15204-17351430-google-ai-udm14-reflection--5563d9f3.md
 ]
 ---
 # Google (AI/ML)
@@ -286,3 +287,20 @@ This "Platform + FDE" combination follows a dual approach similar to **OpenAI** 
 
 - 2043609541477044439_Google-Engineer-Automated-80-of-Work-with-Claude-Code
 - blog.google--innovation-and-ai-technology-developers-tools-gemma-4--9648c97b
+
+
+### AI Overviews Criticism and the &udm=14 Workaround (May 2026)
+
+Ernie Smith of Tedium documented his experience building [&udm=14](https://udm14.com/), a single-serving workaround site for Google's AI Overviews feature. The article (May 2026) provides insight into user pushback against forced AI feature integration.
+
+**Background:** Smith built the site in ~2 hours during a Google I/O event, after discovering an obscure URL parameter (`&udm=14`) that bypasses AI Overviews and returns traditional search results. The site went viral and continues to receive significant traffic.
+
+**Key observations from the article:**
+- **Forced feature adoption pattern**: Google's approach of pushing AI features into products (Gmail app replacing account switcher button with Gemini icon, default AI Overview injection in search results, giant AI buttons in Google Docs) creates user frustration and workarounds
+- **Decorative bird AI**: Smith coined this term for AI features added because "investor told a CEO that it was essential to include to keep up" rather than solving genuine user needs
+- **"AI psychosis" quote**: Box CEO Aaron Levie noted that "CEOs are uniquely prone to AI psychosis because they're sufficiently distant from the last mile of work that still has to happen to generate most value with AI"
+- **Small tool philosophy**: The &udm=14 workaround's success (despite Google's massive engineering resources) illustrates the power of focused, single-purpose tools vs. feature-bloated platforms
+- **Google I/O 2026 focus**: Demis Hassabis stated "When we look back at this time, I think we will realize that we were standing in the foothills of the singularity" — signaling Google's deepening AI-first strategy despite user pushback
+
+**Relevance to Google's AI strategy**: The article highlights the tension between Google's AI-overall product strategy and user preference for opt-in, transparent AI features. This mirrors similar debates across the industry (e.g., Apple's on-device AI approach vs. cloud-first competitors).
+

@@ -1,6 +1,20 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] blog-wiki-ingest | Giles Thomas JAX article + Google AI Overviews enrichment
+
+### Pages Updated
+- **[[entities/gilesthomas]]** — Added "JAX Exploration (May 2026)" section from gilesthomas.com's "On first looking into JAX" article (4,600+ words). Covers PyTorch→JAX transition experience, functional vs procedural training loops, `jax.grad()` vs PyTorch's explicit backward pass. Updated `updated` date and added source to frontmatter.
+- **[[entities/google]]** — Added "AI Overviews Criticism and the &udm=14 Workaround (May 2026)" section from Tedium article by Ernie Smith. Covers forced AI feature adoption patterns, "decorative bird AI" concept, Aaron Levie's "AI psychosis" CEO quote, single-serving tool philosophy. Updated `updated` date and added source to frontmatter.
+
+### Triage Summary
+- 18 blog articles triaged (blog-triage checkpoint 20260531T070037Z)
+- 0 takes (all content already captured by earlier same-day pipeline run or below threshold)
+- 2 references (Giles Thomas JAX, Tedium Google AI Overviews — both enriched above)
+- 16 skips (non-AI content, already-captured, out-of-scope)
+
+---
+
 ## [2026-05-31] newsletter-triage-recovery | Superintelligence 'Compute-to-Cash Race' beehiiv newsletter processed
 
 ### Pages Updated
