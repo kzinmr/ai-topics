@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-31 | Total pages: 2187 | Indexed entries: 1577 | Not in index: 593
+> Last updated: 2026-05-31 | Total pages: 2182 | Indexed entries: 1576 | Not in index: 606
 
-## Entities (728 pages)
+## Entities (730 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -623,7 +623,7 @@
 - [[entities/zodchiii]] — zodchiii (@zodchiii) — Pseudonymous X/Twitter content creator covering AI coding, finance, and vibe coding. Published viral breakdown of Shopify's Claude Code infrastructure setup. Runs Telegram channel @zodchixquant.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. Palantir Ontology (Data+Logic+Action+Security) enables human-agent teaming for enterprise/gov. FDE (Forward Deployed Engineer) model creates structural lock-in. Q1 2026: $1.63B (+84% gov). Maven: permanent Pentagon program. **May 2026: Palantir Model goes global** — OpenAI $4B/Anthropic $1.5B JVs replicate embed-engineers playbook. See [[concepts/decision-centric-architecture]], [[concepts/enterprise-agents]], [[concepts/agent-ontology]], [[concepts/ai-services-joint-ventures]].
-- [[entities/mistral-ai]] — French AI company. Mistral Workflows + Voxtral TTS (Apr 2026). Acquired Emmi AI (Physics AI) for industrial engineering agents (May 2026).
+
 - [[entities/talkie]] — Open-weight 13B historical LLM trained exclusively on pre-1930 data. By David Duvenaud, Alec Radford, and @status_effects.
 - [[entities/david-duvenaud]] — AI researcher. Co-announced Talkie, a 13B LLM trained exclusively on pre-1930 data.
 - [[entities/periodic-ai]] — AI research company with physical lab focused on RL scaling for frontier LLMs (1T+ parameters).
@@ -751,7 +751,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1422 pages)
+## Concepts (1416 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management

@@ -1,6 +1,13 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] watchdog-auto-fix | Index reconciliation
+- Fixed duplicate index entry: entities/mistral-ai (2 entries → 1, merged into line 68)
+- Updated index header counts: Entities 728→730, Concepts 1422→1416, Total 2187→2182
+- Updated index summary: Indexed entries 1577→1576, Not in index 593→606
+- Verified: no pipe table corruption, no line number prefix corruption in index.md
+- Pipeline status: x_accounts job stale (26h) — requires human review
+
 ## [2026-05-31] trending-topics | 5-8 trending topics, 10 new wiki pages
 - Scanned web + RSS for trending AI/ML topics (May-June 2026)
 - **New concept pages**: `concepts/tool-use-necessity` (Probe&Prefill, When2Tool), `concepts/axpo` (NVIDIA/KAIST RL), `concepts/esmfold2` (CZI Biohub), `concepts/computer-use` (OSWorld, Pointer AI), `concepts/eu-ai-act` (Aug 2026 enforcement), `concepts/vla-models` (robotics foundation models), `concepts/alphaproof-nexus` (DeepMind formal math proofs)
