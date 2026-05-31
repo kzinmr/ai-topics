@@ -1,6 +1,22 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] blog-ingest | 20 articles saved, 3 wiki pages processed
+
+### Pages Created
+- **[[concepts/agent-vs-pipeline-architecture]]** — Agent vs Pipeline architecture: fundamental distinction between control flow in code (pipelines) vs delegated to LLM (agents). Key differentiator: context assembly. Migration is one-directional (pipeline→agent). From Sean Goedecke's article.
+
+### Pages Updated
+- **[[concepts/agent-sandboxing]]** — Added Anthropic's containment strategy across products (Claude.ai: gVisor, Claude Code macOS: Seatbelt, Claude Code Linux: Bubblewrap, Claude Cowork: Apple Virtualization/HCS), open-sourced srt (Sandbox Runtime), API file exfiltration vector documentation. Updated sources.
+- **[[entities/anthropic]]** — Frontmatter date updated to 2026-05-31 (already had $47B run-rate and Series H details from prior ingest).
+
+### Raw Articles Saved
+20 articles from blog scan (simonwillison.net x5, seangoedecke.com, nesbitt.io, johndcook.com, daringfireball.net x3, maurycyz.com, gilesthomas.com, evanhahn.com, pluralistic.net, oldvcr.blogspot.com, righto.com, construction-physics.com, tedium.co). 2 unsaved (YouTube videos).
+
+### Sources
+- raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
+- raw/articles/simonwillison.net--2026-may-30-how-we-contain-claude--6b2ad650.md
+- raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md
 
 ## [2026-05-31] raw-backlog-ingest | 5 articles triaged, all skipped (2 already captured, 3 non-AI)
 

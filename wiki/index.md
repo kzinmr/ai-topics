@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-30 | Total pages: 2175 | Indexed entries: 1561 | Not in index: 604
+> Last updated: 2026-05-31 | Total pages: 2176 | Indexed entries: 1562 | Not in index: 604
 
 ## Entities (723 pages)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -1298,6 +1298,7 @@
 - [[concepts/agent-survival-benchmark]]
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 - [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
+- [[concepts/agent-vs-pipeline-architecture]] — Agent vs Pipeline architecture: control flow in code (pipeline) vs delegated to LLM (agent). Key differentiator: context assembly. Migration is one-directional (pipeline→agent). Build agents first, migrate to pipelines only if cost/latency demands.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
 - [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
 - [[concepts/scenario-based-simulation]] — Scenario-Based Simulation — Sandboxed decision staging pattern: fork enterprise model → stage changes → explore downstream effects → compare alternatives → human review → commit. Core pattern in Palantir Ontology, generalizable to coding agents (dry runs, feature branches). See [[entities/palantir]].

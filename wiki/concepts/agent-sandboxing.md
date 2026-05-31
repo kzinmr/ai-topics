@@ -2,7 +2,7 @@
 title: "Agent Sandboxing: Isolation Technologies for AI Agent Code Execution"
 description: "Agent Sandboxing is a spectrum of isolation technologies for secure AI agent dynamic code execution. It covers isolation technologies such as gVisor, Firecracker microVM, and WASM. Standard containers are insufficient due to shared kernels."
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-05-31
 type: concept
 status: complete
 depth_tracking:
@@ -13,7 +13,8 @@ tags:
   - sandbox
   - isolation
 sources:
- - raw/articles/agent-sandboxing-2026-northflank.md
+  - raw/articles/agent-sandboxing-2026-northflank.md
+  - raw/articles/simonwillison.net--2026-may-30-how-we-contain-claude--6b2ad650.md
 related:
  - agentic-engineering
  - ai-agent-engineering
@@ -147,6 +148,24 @@ This approach is less strict than gVisor/Firecracker but more practical for indi
 
 Docker strikes the best balance for solo developers and small teams using Claude Code daily.
 
+## Anthropic's Containment Strategy (May 2026)
+
+Anthropic published a comprehensive overview of how they contain Claude across products — [[entities/claude-code]], [[entities/claude.ai]], and Claude Cowork (May 30, 2026). The architecture uses different isolation strategies per product surface:
+
+| Product | Sandbox Technology | Isolation Level |
+|---------|-------------------|-----------------|
+| **Claude.ai** | gVisor | User-space kernel |
+| **Claude Code** (macOS) | Seatbelt | Process-level syscall filtering |
+| **Claude Code** (Linux) | Bubblewrap | Namespace + seccomp isolation |
+| **Claude Cowork** (macOS) | Apple Virtualization framework | Full microVM |
+| **Claude Cowork** (Windows) | HCS (Host Compute System) | Full VM |
+
+**Key design principle**: "We constrain where and how an agent can act with process sandboxes, VMs, filesystem boundaries, and egress controls. The goal is to set a hard boundary on what an agent can reach. If credentials never enter the sandbox, they can't be exfiltrated, regardless of whether the cause is a user, a model finding a 'creative' path, or an attacker."
+
+Notable risks they documented include the `api.anthropic.com/v1/files` exfiltration vector — where uploaded files could leak sandbox contents if not properly isolated.
+
+Anthropic also open-sourced **srt (Sandbox Runtime)**, a mature tool for building secure agent sandboxes.
+
 ## Common Vulnerabilities & Mitigations
 
 | Attack | Mitigation |
@@ -185,4 +204,5 @@ tools = [
 - [[concepts/agent-sandboxing]] — Comparison table of isolation technologies
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Code execution patterns via MCP
 - [[concepts/agentic-engineering]] — Agent engineering overview
--  — Anthropic/OpenAI agent design
+- [[concepts/claude-code-sandboxing]] — Anthropic's containment architecture for Claude Code
+- [[entities/anthropic]] — Anthropic entity page

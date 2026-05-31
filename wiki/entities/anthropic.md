@@ -1,7 +1,7 @@
 ---
 title: Anthropic
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-31
 type: entity
 tags: [company, lab, anthropic, ai-native, pricing, token-economics, vc, ai-safety, model]
 sources: [raw/articles/simonwillison.net--2026-may-29-anthropic--9831b607.md, raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md]
