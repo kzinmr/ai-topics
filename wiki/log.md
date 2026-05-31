@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] trending-topics | 5-8 trending topics, 10 new wiki pages
+- Scanned web + RSS for trending AI/ML topics (May-June 2026)
+- **New concept pages**: `concepts/tool-use-necessity` (Probe&Prefill, When2Tool), `concepts/axpo` (NVIDIA/KAIST RL), `concepts/esmfold2` (CZI Biohub), `concepts/computer-use` (OSWorld, Pointer AI), `concepts/eu-ai-act` (Aug 2026 enforcement), `concepts/vla-models` (robotics foundation models), `concepts/alphaproof-nexus` (DeepMind formal math proofs)
+- **New entity pages**: `entities/pointer-ai`, `entities/project-glasswing` (Anthropic security), `entities/chan-zuckerberg-initiative`
+- **New raw article**: `2026-05-31_may-june-trending-topics.md`
+- **SCHEMA.md**: Added tags `pointer`, `europe`, `formal-verification`, `mathematics`, `biology`, `physical-ai`, `cybersecurity`
+- **index.md**: 7 new entries added, counts updated (Total: 2187)
+- Delivered trending report to Discord
+
+---
 ## [2026-05-31] raw-backlog-ingest | 5 articles triaged, 0 takes, 1 reference, 4 skips
 
 - 5 raw backlog articles triaged from latest cron batch (candidates_selected=5)
