@@ -83,9 +83,12 @@ After filtering, what remains is the **newsletter subject/title URL only** — N
 **Substack UUID redirect links**: In AINews and other substack newsletters, links 8-20 often follow the pattern `substack.com/redirect/<uuid>` (e.g., `substack.com/redirect/5c77d884-...`). These are NOT the same as `redirect/2/eyJ...` OAuth-style links. UUID redirect links require authentication to resolve (they work only if the recipient's email session is live). web_extract will fail on these. **Do not attempt to resolve them** — the newsletter post body (obtained via the post URL at Link 2) already contains all the curated content. The UUID links are purely for email tracking and add no content value beyond what's in the post body.
 
 > 📖 See `references/substack-publication-patterns.md` for known publication-specific URL behaviors (AINews/latent.space redirect, The Signal, paywall detection, and post URL construction strategies).  
+> 📖 See `references/swyx-publication-patterns.md` for swyx's dual-content substack (AINews daily bulletin vs Latent Space podcast episodes — publication_id=1084089).
 > 📖 See `references/semianalysis-paywall-patterns.md` for SemiAnalysis-specific paywall handling and section anchor extraction.
 
-**Source name trap**: The `source_name` in the checkpoint (e.g. "NVIDIA Blackwell vs. Huawei Ascend") is often the **article title**, not the newsletter/publication name. The actual publication name lives inside the resolved content (e.g., "Superintel+ / getsuperintel.com"). Do not trust `source_name` as the canonical publication — extract it from the article content or the domain.
+**Source name trap**: The `source_name` in the checkpoint (e.g. "NVIDIA Blackwell vs. Huawei Ascend") is likely the **article title**, not the newsletter/publication name. The actual publication name lives inside the resolved content (e.g., "Superintel+ / getsuperintel.com"). Do not trust `source_name` as the canonical publication — extract it from the article content or the domain.
+
+**SemiAnalysis source name trap (concrete)**: SemiAnalysis sends each article as its own email, so the `source_name` IS the article subject/title. In a single triage run you may see two SemiAnalysis emails with very different source_names ("Anthropic Growth and Bedrock Mix..." and "Finding Miscompiles for Fun, Not Profit") — both are from the same publication. The tell: both have `publication_id=6349492` in their app-link URLs. Group them as same-source when aggregating decisions, but evaluate each article independently.
 
 ### C) Blog-Ingest Checkpoint (from cron pipeline)
 A `candidates` array injected from `${HERMES_HOME}/cron/data/blog_ingest/latest.json` or via `context_from` cron chaining. Each candidate has:
@@ -184,11 +187,13 @@ search_files "topic-keyword" path=~/wiki/log.md target=content
 
 Read existing pages to determine if content is already covered. Key question: "Does the existing wiki already capture this information?" Don't create duplicates.
 
-**Pitfall: `search_files` may return false negatives**. The `search_files` tool with `target=files` can return `total_count: 0` even when the file exists on disk (observed in production — `entities/luke-curley.md`, `entities/thariq-shihipar.md` all returned 0 from `search_files` but were present on the filesystem). If `search_files` returns 0 but you strongly suspect the page exists (e.g., you saw it in `log.md` or `index.md`), use a terminal fallback:
+**Pitfall: `search_files` with `target='files'` is NOT a pure filename lookup**. Despite the name, `target='files'` searches file **contents in the given directory** using a **regex** pattern, not a glob — so `"*warp*"` fails with `repetition operator missing expression` (because `*` is a regex quantifier, not a wildcard). Use plain keywords like `"warp"` or `"willison"` (which match anywhere in content) instead of glob-like `"*keyword*"`. This also means results may include files that mention the keyword incidentally without being the entity you're looking for.
+
+**Pitfall: `search_files` may return false negatives (file exists but reports 0 total_count)**. This happens because `target='files'` searches file **content** — if the regex pattern doesn't appear in any file's content within the path, the result is empty even if the file exists on disk. Observed in production with `entities/luke-curley.md`, `entities/thariq-shihipar.md` (files existed but returned `total_count: 0`). If `search_files` returns 0 but you strongly suspect the page exists (e.g., you saw it in `log.md` or `index.md`), use a terminal fallback for true filename-based discovery:
 
 ```bash
-# Fallback: find files directly via terminal
-find ~/ai-topics/wiki/entities -name "*keyword*"
+# Fallback: find files via terminal (true filename glob, not regex on content)
+find ~/ai-topics/wiki/entities -maxdepth 1 -name "*keyword*"
 # Or list recent additions
 ls -lt ~/ai-topics/wiki/entities/ | head -20
 ```
@@ -205,12 +210,37 @@ ls -lt ~/ai-topics/wiki/entities/ | head -20
 3. If present but superficial (only URL in sources/References, no summary), also a **genuine gap**
 4. Only skip if the entity page has substantive content matching the article's specific claims and data
 
+### 1.3 Multiple Newsletter Parallel Processing (3+ Newsletters)
+
+When the checkpoint contains candidates from **3+ different newsletters** (common in a single cron run), do NOT process them sequentially. Use this parallel orchestration pattern instead:
+
+**Phase A: Noise Filtering (all newsletters, one pass)**
+1. Read the full candidates array
+2. Group by `message_id` or `raw_path` to identify distinct newsletters
+3. Per newsletter, filter noise using the substack/beehiiv tables above
+4. Build a map: `{subject: {"post_url": "...", "type": "substack|beehiiv"}}`
+
+**Phase B: URL Resolution (batch)**
+5. Resolve all surviving post URLs via web_extract
+6. From each resolved body, extract curated article links/topics
+7. If a URL returns http_error, note and skip (don't retry across the whole batch)
+
+**Phase C: Wiki Coverage Check (aggregated)**
+8. For each discovered topic across all newsletters, check existing wiki pages ONCE
+9. Use the same `search_files`/`grep log.md` checks across all topics
+10. This avoids redundant lookups (e.g., DeepSWE appearing in 2 newsletters → check wiki once)
+
+**Phase D: Decision Aggregation**
+11. Group related topics across newsletters
+12. Produce a SINGLE decisions array sorted: `take` first, then `reference`, then `skip`
+13. Save one triage JSON to the pipeline path
+
+**Same-publication different-content-type nuance**: When the same `publication_id` appears under multiple `message_id`s (common with swyx's pub_id=1084089, which publishes both AINews daily bulletins AND Latent Space podcast episodes), treat them as **independent content types** for triage (evaluate each one's content on its own merits), but **deduplicate topics across them** in the aggregated coverage check (one newsletter's mention of DeepSWE means the other newsletter's mention can be skip/reference). The subject line usually reveals the type: emoji+interview title = podcast, "AINews"+date = daily bulletin.
+
+**Typical yield from 4-newsletter batch:** 1-2 takes, 1-2 references, 10-15 skips (most content covered or out-of-scope).  
+**Typical yield from 8-9 newsletter batch:** 5-9 takes, 5-8 references, 5-10 skips (higher editorial diversity, more unique articles found).
+
 ### 4. Semantic Grouping Criteria
-Group articles by:
-- **Shared entities** (same person/company/model)
-- **Related concepts** (agentic engineering ↔ harness engineering)
-- **Event clusters** (model releases, leaks, announcements)
-- **Source themes** (The Signal newsletter, Lenny's Podcast)
 
 ### 5. Value Assessment Matrix
 Rate each group for wiki inclusion:
@@ -247,7 +277,8 @@ When running as a cron job that feeds into `newsletter-wiki-ingest`, output JSON
 ```
 
 Rules for cron output:
-- Limit `decisions` to at most 20 entries, with `take` items first
+- Decide count is per-session judgement call: aim for ~20 entries as a soft target, but up to ~30 is fine for batches with 6+ newsletters. The downstream pipeline reads from the JSON file, not the markdown output — exceeding 20 does not break anything. Quality per decision (body_excerpt, specific reason_ja) matters more than hitting an arbitrary count.
+- Sort `take` items first, then `reference`, then `skip`
 - **`body_excerpt` is REQUIRED for every decision** — read the article body (§1.5) and include the opening 200-300 chars. If the article body cannot be read, note the reason.
 - No markdown outside the JSON
 - If nothing is wiki-worthy, respond with exactly `[SILENT]`
@@ -375,7 +406,24 @@ Downstream consumer: `blog-wiki-ingest`
 Save to: `${HERMES_HOME}/cron/data/dreaming/triage_latest.json`
 Downstream consumer: `dreaming-wiki-ingest` (or manual downstream from grouping report)
 
-**Pitfall — "0 articles" doesn't mean "nothing to do"**: When the dreaming pre-run reports `collected_articles=0`, it means other daily pipelines already consumed today's sources. However, raw article files may have arrived in `~/wiki/raw/articles/` AFTER those pipelines ran (e.g., X account posts, active crawl outputs, late-arriving newsletter scrapes). Always scan `~/wiki/raw/articles/` for files with dates in the last 1-3 days that aren't yet covered by any triage checkpoint. In May 2026, a "0 articles" dreaming run still yielded 30 untriaged raw articles worth grouping.
+> 📖 See `references/dreaming-pipeline-recovery.md` for the full recovery procedure when the upstream dreaming-group agent wraps its JSON output in markdown, causing downstream JSON parse failure. The triage checkpoint file survives independently.
+> 📖 See `references/dreaming-verification-pattern.md` for the downstream independent-verification procedure — scanning blogwatcher DB + raw/articles/ + entity pages to confirm the dreaming-group's "99%+ processed" claim after a Takes=0 triage.
+
+### Post-Recovery Verification (CRITICAL — avoid redundant takes)
+
+After recovering the triage JSON via any of the fallback paths above, the downstream wiki-ingest **must independently verify each `take` recommendation** before acting on it. The triage engine evaluates articles on their own merits and may assign ★★★★★ to content that was already processed by a different pipeline run earlier the same day.
+
+**Verification procedure for each `take` item:**
+
+1. Check whether `candidate_wiki_path` already exists on disk: `find ~/wiki/{namespace} -name "{slug}.md"` or `os.path.exists()`
+2. If the page exists, **read its content sections** (not just frontmatter `sources` or `References`). Does it already contain the article's specific claims and data? Do not treat "URL present in sources" as equivalent to "content captured."
+3. If the page has substantive matching content → downgrade `take` to `reference` (bump `updated` date only)
+4. If the page exists but lacks the article's specific contribution → enrich the existing page (still a `take`, but enrichment not creation)
+5. If the page does NOT exist → proceed with creation as the triage recommended
+
+**Common pattern**: The dreaming-collect pipeline and the blog/active-crawl pipelines may overlap on the same source articles. Two pipeline runs processing the same Ben Hylak evaluation guide or Anthropic containment post will both produce ★★★★★ triage recommendations — but the first pipeline run already created the wiki page. The second run's task is to detect this and downgrade to date-bump-only.
+
+**Pitfall — "0 articles" doesn't mean "nothing to do"**: When the dreaming pre-run reports `collected_articles=0`, it means other daily pipelines already consumed today's sources. However, raw article files may have arrived in `~/wiki/raw/articles/` AFTER those pipelines ran (e.g., X account posts, active crawl outputs, late-arriving newsletter scrapes, sitemap-monitor company blog scrapes). Always scan `~/wiki/raw/articles/` for files with dates in the last 1-3 days that aren't yet covered by any triage checkpoint. In May 2026, a "0 articles" dreaming run still yielded 30 untriaged raw articles worth grouping.\n\n**Dreaming 0-article cross-reference order** (prioritized for efficiency, observed May 2026: 227 raw articles → 8 genuinely unprocessed, ~3.5% yield):\n\n1. **Blog triage JSON first** (`~/.hermes/cron/data/blog_ingest/triage_latest.json`) — instantly rules out the entire blog-ingest batch (typically 15-20 articles already decided as skip/reference). This catches ~70% of raw articles from the blog pipeline.\n2. **Log.md grep for same-day and previous day** — catches wiki-processed articles from all pipelines (newsletter, bookmarks, active-crawl, raw-backlog, user requests). Look for article filenames, source names, and topic keywords.\n3. **Wiki page search** (entities first, then concepts) — confirms content actually exists, not just URL mentions. Use `find` with `-name` for true filename matching (not `search_files` with regex which may miss).\n4. **Body read for survivors** — only the ~3-5% of articles that pass all three checks need full body reading.\n\nTypical yield: 200+ raw articles → 8-15 genuinely unprocessed → 3-5 takes, 3-5 references, rest skip.
 
 ### Output Structure
 
@@ -410,9 +458,10 @@ After saving the triage JSON with `execute_code`, verifying it via `cat file | p
 - **`python3 -c` directly** (without cat): `python3 -c "import json; d=json.load(open('path')); print(len(d['decisions']))"` — this works because there's no pipe
 
 ### Fallback (if downstream encounters a JSON parse failure)
-1. Read the checkpoint file directly from the pipeline's `triage_latest.json` path
+1. Read the checkpoint file directly from the pipeline's `triage_latest.json` path (see Pipeline Resilience section above for per-pipeline paths)
 2. If the triage output file at `${HERMES_HOME}/cron/output/<job-id>/<timestamp>.md` also exists, extract the JSON block from it as a secondary fallback (look for the `{...}` block after "## Response" heading)
-3. Proceed with wiki-ingest using the recovered JSON
+3. **Dreaming pipeline note**: The dreaming-group upstream is an agent job, so its response is always wrapped in markdown by the cron runner. The checkpoint JSON at `${HERMES_HOME}/cron/data/dreaming/triage_latest.json` is the primary recovery path. See `references/dreaming-pipeline-recovery.md`.
+4. Proceed with wiki-ingest using the recovered JSON
 
 ## Paywalled Content Handling
 

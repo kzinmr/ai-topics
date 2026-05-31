@@ -8,11 +8,20 @@ SemiAnalysis uses standard Substack URLs:
 
 ## Paywall Detection
 
-SemiAnalysis articles are almost always **paid-only** for the full content. Signs of paywall:
+SemiAnalysis articles are often **paid-only** for the full content, but **not always**. Two patterns have been observed:
+
+### Paywalled (common)
 - Content truncated at preview (~5,000 chars)
 - HTML contains `subscribe?simple=true` and `paywall` in URL params
 - Article body begins with "Paid" label
 - Only the first section (~thesis statement) is visible in web_extract
+
+### Fully Accessible (less common — observed May 2026)
+Some SemiAnalysis articles are **fully accessible** without authentication:
+- **"Anthropic Growth and Bedrock Mix Drive AWS Margins Higher While Peers Lag"** (May 27, 2026) — full text returned
+- **"Finding Miscompiles for Fun, Not Profit"** by Justin Lebar (May 28, 2026) — guest-authored, full text returned
+
+**Pattern**: Guest-authored posts (non-core analysts) and short news-flash posts tend to be free. Always try web_extract first — do NOT assume paywalled.
 
 ## Section Anchor Pattern (from HTML)
 
