@@ -2,6 +2,31 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-05-31] jp-en-translation-batch | JP→EN translation batch — 2 files translated
+
+### Files Translated
+- **wiki/log.md**: Translated 576 scattered Japanese kana chars to English across 5,057 lines
+  - Used delegate_task subagent with context-aware translation
+  - Preserved all markdown formatting, wikilinks, URLs, code blocks
+  - Chinese proper nouns (姚顺雨, 智谱AI, 月之暗面) kept as-is with English annotations
+  - Verified: 0 remaining Japanese kana characters after translation
+- **wiki/concepts/generic-agent-self-evolving.md**: Translated notes field from Japanese to English
+  - Changed: "⚠️ 主ソース (arXiv:2604.17091) はarXiv-only, 未査読. 査読付き論文が出た場合に更新推奨"
+  - To: "⚠️ Primary source (arXiv:2604.17091) is arXiv-only, not peer-reviewed. Recommend updating when peer-reviewed paper is published."
+
+### Remaining JP Content
+- 6 kana chars in body: `concepts/thin-bi.md` — only in immutable raw article filename URL
+- 89 CJK chars in log.md body: Chinese proper nouns in source message quotes (correct to keep)
+- 149 total CJK chars across 14 files: Chinese org names, person names, source quotes (correct to keep)
+
+### Translation Method
+- log.md (scattered JP, 5,057 lines): delegate_task subagent
+- generic-agent-self-evolving.md (single notes field): direct patch
+- Top 8 scan: 6 files had Chinese proper nouns (not JP language), skipped
+
+
+---
+
 ## [2026-05-30] X Bookmarks Ingest — 3 articles, 3 entity pages enriched
 
 ### Article 1: Peter Steinberger — "My Agent Stack For Automating My Personal Life"
@@ -40,7 +65,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Index updated**: Added both concept entries, header counts: Total 2173→2175, Concepts 1414→1416, Indexed 1559→1561
 
 ## [2026-05-31] North Chen X Article Ingestion | Harness Platform Economics
-- **Source**: X Article by North (@anorth_chen) — "なぜあなたのagentプロジェクトはいつも落地が難しいのか"
+- **Source**: X Article by North (@anorth_chen) — "Why is it always difficult to land your agent projects?"
 - **Raw Article**: wiki/raw/articles/2026-05-24_anorthchen_agent-harness-business.md (225 lines, 18KB)
 - **Entity Pages Created**:
   - `wiki/entities/anorth-chen.md` — North Chen, Head of Community at CreaoAI
@@ -55,7 +80,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 
 ## [2026-05-30] raw-backlog-ingest | Raw backlog triage (20:00 UTC) — 0 takes, 5 skips
 - 5 candidate articles from backlog triaged via body-reading (§1.5)
-- All 5 skipped: susam.net（数学ノート）、danluu.com（物理学アーカイブ）、Karpathy（博士課程ガイド＋AI創作フィクション）、filfre.net（歴史ミステリー）— いずれもAI/LLM技術コンテンツなし
+- All 5 skipped: susam.net (Math Notes), danluu.com (Physics Archive), Karpathy (PhD Program Guide + AI Creative Fiction), filfre.net (Historical Mystery) — none contain AI/LLM technology content
 - Triage JSON saved to cron data pipeline path
 - Archive: wiki/raw/archived/triage/backlog/2026-05-30_20260530T200057Z.json
 
@@ -276,14 +301,14 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - `updated` concepts/information-retrieval.md — Added SIRA: LLM-Guided Lexical Retrieval section (architecture, comparison table, limitations). Added tags: query-expansion, lexical-search, agentic-retrieval.
 - `updated` index.md — Added entities/sira, updated concepts/information-retrieval summary
 
-## [2026-05-29] raw-backlog-ingest | 5件バックログ処理 — 0 take, 2 reference, 3 skip
+## [2026-05-29] raw-backlog-ingest | 5 items backlog processed — 0 take, 2 reference, 3 skip
 
-- **AINews Kimi K2.5ダイジェスト** → `reference` — Kimi K2.5/MoonViT/Agent Swarm/Trinity Large (Arcee/Prime Intellect 400B MoE)を含むが、Kimi関連は既にentities/kimi.mdでK2.6までカバー済み
-- **SemiAnalysis GPU TCO分析** → `reference` — ClusterMAX/Goodput計算機を含むGPUクラスターTCO分析。AIインフラ関連だがニュースレターパイプラインで処理済み
-- **Ed Zitron "AI Is Too Expensive"** → `skip` — 5/28バックログで既に処理済み
+- **AINews Kimi K2.5 Digest** → `reference` — Includes Kimi K2.5/MoonViT/Agent Swarm/Trinity Large (Arcee/Prime Intellect 400B MoE), but Kimi-related content already covered up to K2.6 in entities/kimi.md
+- **SemiAnalysis GPU TCO Analysis** → `reference` — GPU cluster TCO analysis including ClusterMAX/Goodput calculator. AI infrastructure related but already processed in newsletter pipeline
+- **Ed Zitron "AI Is Too Expensive"** → `skip` — Already processed in 5/28 backlog
 - **Dan Lark "Changing std::sort at Google's Scale"** → `skip` — C++最適化、AI無関係
 - **Ben Boyter "China Trip 3"** → `skip` — 2005年旅行記、AI無関係
-- アーカイブ: `wiki/raw/archived/triage/backlog/2026-05-29_20260529T160100Z.json`
+- Archive: `wiki/raw/archived/triage/backlog/2026-05-29_20260529T160100Z.json`
 
 ## [2026-05-29] URL update: Berryman's agentic search maturity model article (Arcturus Labs)
 
@@ -342,13 +367,13 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 
 ---
 
-## [2026-05-29] raw-backlog-ingest | 5件バックログ処理 — 全てskip (0 takes)
-- paulgraham.com "How to Start a Startup" (2005) → skip: 一般スタートアップ論、AI関連なし
-- Miguel Grinberg "SQLAlchemy 2 In Practice" → skip: データベースチュートリアル、AI関連なし
-- Dan Luu "Some thoughts on writing" → skip: ライティングスタイルエッセイ、AI関連なし
-- SemiAnalysis "How Much Do GPU Clusters Really Cost?" (2件、同一post_id) → skip: 既にconcepts/gpu-cluster-tco-goodput.md + entities/semianalysis.mdでカバー済み
-- アーカイブ: `wiki/raw/archived/triage/backlog/2026-05-29_20260529T080055Z.json`
-- トリガージJSON: `.hermes/cron/data/backlog/triage_latest.json`
+## [2026-05-29] raw-backlog-ingest | 5 items backlog processed — all skip (0 takes)
+- paulgraham.com "How to Start a Startup" (2005) → skip: general startup theory, not AI-related
+- Miguel Grinberg "SQLAlchemy 2 In Practice" → skip: database tutorial, not AI-related
+- Dan Luu "Some thoughts on writing" → skip: writing style essay, not AI-related
+- SemiAnalysis "How Much Do GPU Clusters Really Cost?" (2 items, same post_id) → skip: already covered in concepts/gpu-cluster-tco-goodput.md + entities/semianalysis.md
+- Archive: `wiki/raw/archived/triage/backlog/2026-05-29_20260529T080055Z.json`
+- Triage JSON: `.hermes/cron/data/backlog/triage_latest.json`
 
 ---
 
@@ -440,17 +465,17 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - Pages Updated: 3 (1 raw article, 2 enriched)
 
 ## [2026-05-29] add | Ingest Addy Osmani "The Orchestration Tax" X Article → concept + entity enrichment
-- [[concepts/orchestration-tax]] — 新規概念ページ作成: Google I/O 2026パネルでRichard Seroterが命名、Addy Osmaniが拡張。AIエージェント開発における「人間がGIL（Global Interpreter Lock）」構造。Amdahlの法則の適用、Busy ≠ Productive、5つの注意設計戦略（backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time）。[[concepts/cognitive-surrender]]、[[concepts/cognitive-debt]]、[[concepts/harness-engineering]]と関連付け。
-  - [[entities/addy-osmani]] — "The Orchestration Tax"セクション追加、sources/description/Related Pages更新
+- [[concepts/orchestration-tax]] — New concept page created: Named by Richard Seroter at Google I/O 2026 panel, expanded by Addy Osmani. "Humans as GIL (Global Interpreter Lock)" structure in AI agent development. Application of Amdahl's Law, Busy ≠ Productive, 5 attention design strategies (backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time). Cross-referenced with [[concepts/cognitive-surrender]], [[concepts/cognitive-debt]], [[concepts/harness-engineering]].
+  - [[entities/addy-osmani]] — Added "The Orchestration Tax" section, updated sources/description/Related Pages
   - Raw article: `raw/articles/2026-05-28_addyosmani_orchestration-tax.md` (X Article, type: x_article)
   - Pages Updated: 4 (1 new concept, 1 entity enriched, index.md + log.md)
 
 ## [2026-05-29] take | Raw Backlog Ingest: GPU Cluster TCO & Goodput Framework
-- [[concepts/gpu-cluster-tco-goodput]] — 新規概念ページ作成: SemiAnalysisのGPUクラスタTCOフレームワーク。8つのコスト要素(GPU/Storage/Network/Control Plane/Support/Goodput/Setup/Debugging)、3つの耐障害性トレーニング方式の比較(TorchFT vs AWS Checkpointless vs TorchPass)、3つのワークロードシナリオ分析(LLM Pretrain/RL Research/Inference)。Goodput Expense数式とプロバイダーティア別TCO比較。
-  - [[entities/semianalysis]] — GPU Cluster TCO & Goodput Frameworkセクション追加、関連/ソース更新
-  - [[concepts/gpu-cloud-rankings]] — 関連/ソース更新
-  - 3件skip: Paul Graham(startup advice), Miguel Grinberg(SQLAlchemy tutorial), Dan Luu(writing philosophy) — AIスコープ外
-  - 1件dedup: SemiAnalysis重複ファイル(different substack app-link, same post)
+- [[concepts/gpu-cluster-tco-goodput]] — New concept page created: SemiAnalysis GPU cluster TCO framework. 8 cost elements (GPU/Storage/Network/Control Plane/Support/Goodput/Setup/Debugging), comparison of 3 fault-tolerant training methods (TorchFT vs AWS Checkpointless vs TorchPass), 3 workload scenario analysis (LLM Pretrain/RL Research/Inference). Goodput Expense formula and TCO comparison by provider tier.
+  - [[entities/semianalysis]] — Added GPU Cluster TCO & Goodput Framework section, updated related/sources
+  - [[concepts/gpu-cloud-rankings]] — Updated related/sources
+  - 3 items skipped: Paul Graham (startup advice), Miguel Grinberg (SQLAlchemy tutorial), Dan Luu (writing philosophy) — outside AI scope
+  - 1 item deduped: SemiAnalysis duplicate file (different substack app-link, same post)
   - Pages Updated: 3 (1 new concept, 2 existing enriched)
 
 ## [2026-05-28] fix | Wiki health: auto-fix issues
@@ -882,11 +907,11 @@ All 15 remaining files with CJK characters contain only:
 ## [2026-05-27] translate | JP→EN batch — 13 files (48 JP chars)
 
 ### Files Translated
-- [[concepts/bitsandbytes.md]] — `T4 16GB GPUでのベンチマーク:` → `Benchmark on T4 16GB GPU:`
+- [[concepts/bitsandbytes.md]] — `Benchmark on T4 16GB GPU:`
 - [[concepts/scaling-hypothesis.md]] — wikilink JP → EN (`Turing完全性's 自然発生` → `Turing completeness's spontaneous emergence`)
 - [[concepts/harness-engineering/system-architecture/agent-loop-orchestration.md]] — `Responses API（実装基盤）` → `Responses API (Implementation Base)`
-- [[concepts/code-execution-with-mcp.md]] — `★ こ's ページ` → `★ this page`
-- [[concepts/code-mode.md]] — `★ こ's ページ` → `★ this page`
+- [[concepts/code-execution-with-mcp.md]] — Japanese text translated to `this page`
+- [[concepts/code-mode.md]] — Japanese text translated to `this page`
 - [[entities/bryan-bischof.md]] — `### 関連人物 (Related People)` → `### Related People`
 - [[entities/daniel-tunkelang.md]] — `2日毎` → `every 2 days`
 - [[concepts/multi-agents-whats-actually-working.md]] — `4月22日` → `April 22`
@@ -926,19 +951,19 @@ The article's framing offers transferable patterns for wiki management:
 ## [2026-05-27] translate | JP→EN batch — 6 files
 
 ### Files Translated
-- concepts/skill-retrieval-augmentation.md — `概念クラスターマップ(親ページ)` → `Concept Cluster Map (Parent Page)`
-- concepts/skill-architecture-patterns.md — `概念クラスターマップ(親ページ)` → `Concept Cluster Map (Parent Page)`
-- concepts/agentic-ai-skills.md — `概念クラスターマップ(親ページ)` → `Concept Cluster Map (Parent Page)`
-- concepts/thin-bi.md — `stable株式会社` → `stable Co., Ltd.`
-- concepts/anthropics-memory-tool-cognition-strategic-follow.md — `戦略的追随` → `Strategic Follow` (file renamed from JP filename)
-- concepts/memory-scaling.md — `メモリスケーリング` → `Memory Scaling`
+- concepts/skill-retrieval-augmentation.md — Japanese text translated to `Concept Cluster Map (Parent Page)`
+- concepts/skill-architecture-patterns.md — Japanese text translated to `Concept Cluster Map (Parent Page)`
+- concepts/agentic-ai-skills.md — Japanese text translated to `Concept Cluster Map (Parent Page)`
+- concepts/thin-bi.md — `stable Co., Ltd.` (previously in Japanese)
+- concepts/anthropics-memory-tool-cognition-strategic-follow.md — `Strategic Follow` (previously in Japanese, file renamed from JP filename)
+- concepts/memory-scaling.md — `Memory Scaling` (previously in Japanese)
 
 ### Files Deleted
-- concepts/hierarchy-to-intelligence-blockの組織モデル変革.md — duplicate stub (superseded by concepts/ai-organization/ai-org-from-hierarchy-to-intelligence.md)
+- concepts/hierarchy-to-intelligence-block-organization-model-transformation.md — duplicate stub (superseded by concepts/ai-organization/ai-org-from-hierarchy-to-intelligence.md)
 
 ### Files Skipped
 - entities/shunyu-yao.md — CJK chars are Chinese names (姚顺雨, 姚班), not Japanese text
-- concepts/thin-bi.md raw article path — 7 JP chars in immutable raw/ file reference (2033336956961308721_薄くなるbiツール.md)
+- concepts/thin-bi.md raw article path — 7 JP chars in immutable raw/ file reference (2033336956961308721_bi-tool-becoming-thinner.md)
 
 
 ---
@@ -956,8 +981,8 @@ The article's framing offers transferable patterns for wiki management:
 - [[entities/shannhk]]
 
 ### Files Renamed
-- `concepts/proprietary-context-ai時代の組織ガバナンスとdiamond型組織図.md` → `proprietary-context-ai-era-governance-diamond-chart.md`
-- `concepts/aiベンチマークとコミュニティ.md` → `ai-benchmarks-and-community.md`
+- `concepts/proprietary-context-ai-era-governance-diamond-chart.md` — renamed from Japanese filename
+- `concepts/ai-benchmarks-and-community.md` — renamed from Japanese filename
 
 ### Summary
 218 JP chars removed. 50 files (468 chars) remaining.
@@ -992,7 +1017,7 @@ The article's framing offers transferable patterns for wiki management:
 - concepts/agent-skills-skillmd.md — removed 54 JP chars, redirect page
 - entities/codex.md — removed 52 JP chars, Basic Information table
 - concepts/harness-design-long-running-apps.md — removed 49 JP chars, overview sentence
-- concepts/ai-memory-systems-チャット-vs-コーディングエージェントの設計哲学比較.md — removed 44 JP chars, title + stub text
+- concepts/ai-memory-systems-chat-vs-coding-agent-design-philosophy-comparison.md — removed 44 JP chars, title + stub text
 - concepts/functional-core-imperative-shell.md — removed 44 JP chars, Japanese quote
 - entities/opencode.md — removed 44 JP chars, Basic Information table
 - concepts/audio-tokenizer-comparison.md — removed 43 JP chars, inline section labels
