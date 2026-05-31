@@ -1,6 +1,13 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-05-31] skeleton-enrich | anorth-chen entity page enriched
+
+- **Enriched**: [[entities/anorth-chen]] — Removed `status: skeleton`, added full name (Ziyao Chen), academic details (UofT CS Specialist, AI focus, GPA 3.64/4.0, Dean's List, Co-Op 2019-2020), GitHub/HN/LinkedIn profiles, CREAO podcast hosting role, additional tags (`devrel`, `creao`), and 5 new sources
+- **Updated**: index.md — Enhanced entry with full name and additional biographical details
+- **Sources**: GitHub (@Anorth1997), HN (north_creao), LinkedIn, CREAO blog posts, Unite.AI interview
+- **Status**: Skeleton status removed; page is now fully enriched
+
 ## [2026-05-31] watchdog-auto-fix | Index reconciliation
 - Fixed duplicate index entry: entities/mistral-ai (2 entries → 1, merged into line 68)
 - Updated index header counts: Entities 728→730, Concepts 1422→1416, Total 2187→2182

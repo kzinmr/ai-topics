@@ -141,7 +141,7 @@
 - [[entities/andy-nguyen]] — **X** | @kevinnguyendn | Founder & CEO of ByteRover, portable file-based memory layer for coding agents.
 - [[entities/anildash]] — **Blog** | Anil Dash (since 2000) |
 - [[entities/ankur-goyal]] — **Name** | Ankur Goyal |
-- [[entities/anorth-chen]] — North Chen (@anorth_chen) — Head of Community at [[entities/creao|CreaoAI]]. Articulated the harness platform economics thesis: "Model determines the ceiling, harness determines the realization rate." Author of "Why Your Agent Project Always Fails to Land" X Article (May 2026). Three-layer model (LLM brain → harness body/nervous system → agent professional).
+- [[entities/anorth-chen]] — Ziyao "North" Chen (@anorth_chen) — Head of Community / DevRel at [[entities/creao|CreaoAI]]. UofT CS (AI focus, 2021, Dean's List), ex-Alibaba Software Engineer. Articulated the harness platform economics thesis: "Model determines the ceiling, harness determines the realization rate." Author of "Why Your Agent Project Always Fails to Land" X Article (May 2026). Three-layer model (LLM brain → harness body/nervous system → agent professional). CREAO podcast host.
 - [[entities/anthropic-computer-use]] — **Anthropic Computer Use** is a feature enabling Claude models to view screenshots and directly operate GUIs. Released as a research preview in October 2024, it can operate computers like humans — clicking screen coordinates, typing, scrolling, etc. After the Vercept acquisition in February 2026 and the Claude Sonnet 4.6 release, OSWorld scores improved from under 15%...
 - [[entities/anthropic-labs]] — Anthropic's experimental product division, responsible for launching products outside the core Claude AI assistant.
 - [[entities/antirez-com]] — **URL:** https://antirez.com

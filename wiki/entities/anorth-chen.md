@@ -1,30 +1,45 @@
 ---
-title: "North (@anorth_chen)"
+title: "Ziyao 'North' Chen (@anorth_chen)"
 created: "2026-05-31"
 updated: "2026-05-31"
 type: entity
-status: skeleton
 tags:
   - person
   - harness-engineering
   - platform-economics
   - business-model
+  - devrel
+  - creao
 sources:
   - "https://x.com/anorth_chen/status/2058554497333407927"
   - "raw/articles/2026-05-24_anorthchen_agent-harness-business.md"
+  - "https://github.com/Anorth1997"
+  - "https://news.ycombinator.com/user?id=north_creao"
+  - "https://linkedin.com/in/ziyao-north-chen-49a862326"
+  - "https://creao.ai/blog/the-self-healing-agent-harness"
+  - "https://creao.ai/blog/we-built-an-agent-platform.-then-the-agents-rebuilt-it."
+  - "https://www.unite.ai/peter-pang-co-founder-and-cto-of-creao-interview-series/"
 ---
 
-# North (@anorth_chen)
+# Ziyao "North" Chen (@anorth_chen)
 
 ## Overview
 
-**North** is Head of Community at [CreaoAI](entities/creao). He holds a 2021 CS Bachelor's degree from the University of Toronto (Focus in AI) and previously worked as a Technical Specialist at Alibaba Group. He is known for his X Articles on agent harness engineering and the business dynamics of AI agent adoption.
+**Ziyao "North" Chen** (known professionally as **North**) is Head of Community / Developer Relations at [CreaoAI](entities/creao). He holds a 2021 BSc in Computer Science (Specialist, Focus in AI) from the University of Toronto, where he graduated with High Distinction (GPA 3.64/4.0) as a Dean's List Scholar and completed a one-year Co-Op program (2019-2020). Previously, he worked as a Software Engineer at Alibaba Group. He is known for his long-form X Articles on agent harness engineering, platform economics, and the business dynamics of AI agent adoption. He also hosts the CREAO podcast series, interviewing builders and vibe coders in the agent ecosystem.
 
 ## Background
 
-- **Education**: CS Bachelor's (Focus in AI), University of Toronto, 2021
-- **Previous**: Technical Specialist at Alibaba Group
-- **Current**: Head of Community, CreaoAI
+- **Full Name**: Ziyao Chen
+- **Also Known As**: North
+- **Education**: BSc Computer Science Specialist, Focus in AI, University of Toronto (2016-2021)
+  - GPA: 3.64/4.0, Dean's List Scholar, Graduate with High Distinction
+  - Co-Op Program: 2019-2020 (one year industry placement)
+- **Previous**: Software Engineer / Technical Specialist at Alibaba Group
+- **Current**: Head of Community / DevRel, Creao AI (Palo Alto)
+- **GitHub**: [@Anorth1997](https://github.com/Anorth1997)
+- **Hacker News**: [north_creao](https://news.ycombinator.com/user?id=north_creao)
+- **LinkedIn**: [ziyao-north-chen](https://linkedin.com/in/ziyao-north-chen-49a862326)
+- **X/Twitter**: [@anorth_chen](https://x.com/anorth_chen)
 
 ## Key Ideas
 
