@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260531T040055Z",
+  "summary_ja": "5件のraw backlog記事をトリアージ。Karpathyの2記事は既にkarpathy-writings.mdでキャプ済。Susam Palの数学ノート、Dan Luuの物理tumblrアーカイブ、filfre.netの歴史ミステリー記事はいずれも非AIコンテンツでスキップ。",
+  "decisions": [
+    {
+      "item_id": "karpathy-phd-2016",
+      "source": "backlog",
+      "source_name": "Andrej Karpathy",
+      "title": "A Survival Guide to a PhD",
+      "url": "http://karpathy.github.io/2016/09/07/phd/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/karpathy.github.io--2016-09-07-phd--85602144.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にentities/karpathy-writings.mdでキャプ済み。AI/LLM固有の知見ではなく一般的なPhD生存ガイド。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This guide is patterned after my Doing well in your courses, a post I wrote a long time ago on some of the tips/tricks I've developed during my undergrad..."
+    },
+    {
+      "item_id": "karpathy-ai-story-2015",
+      "source": "backlog",
+      "source_name": "Andrej Karpathy",
+      "title": "Short Story on AI: A Cognitive Discontinuity",
+      "url": "http://karpathy.github.io/2015/11/14/ai/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/karpathy.github.io--2015-11-14-ai--46526a97.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にentities/karpathy-writings.mdでキャプ済み。フィクション形式のAI予測エッセイ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "The idea of writing a collection of short stories has been on my mind for a while. This post is my first ever half-serious attempt at a story..."
+    },
+    {
+      "item_id": "susam-mar26-notes",
+      "source": "backlog",
+      "source_name": "Susam Pal",
+      "title": "Mar 26 Notes - Susam Pal",
+      "url": "https://susam.net/26c.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/susam.net--26c-html--76d34e4a.md",
+      "recommended_action": "skip",
+      "reason_ja": "本文は代数的グラフ理論の個人学習ノート+Wander Consoleという分散ウェブコンソールツールの開発記録。AI/LLM/Agent関連の技術的知見なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is my third set of monthly notes for this year. In these notes, I capture various interesting facts and ideas I have stumbled upon during the month..."
+    },
+    {
+      "item_id": "danluu-physics-tumblr",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "su3su2u1 physics tumblr archive",
+      "url": "https://danluu.com/su3su2u1/physics/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--su3su2u1-physics--12192f45.md",
+      "recommended_action": "skip",
+      "reason_ja": "廃tumblrの物理教育記事アーカイブ。量子力学の古典的経路積分の解説。AI/LLM/Agent技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "These are archived from the now defunct su3su2u1 tumblr. A Roundabout Approach to Quantum Mechanics..."
+    },
+    {
+      "item_id": "filfre-rennes-part5",
+      "source": "backlog",
+      "source_name": "filfre.net",
+      "title": "The Mystery of Rennes-le-Chateau, Part 5: The Man Behind the Curtain",
+      "url": "https://www.filfre.net/2026/05/the-mystery-of-rennes-le-chateau-part-5-the-man-behind-the-curtain/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-05-the-mystery-of-rennes-le-chateau-part-5-the-man-behi--a5bdea3e.md",
+      "recommended_action": "skip",
+      "reason_ja": "フランスの歴史的ミステリー/陰謀論に関する長編記事。AI/LLM/Agent技術と完全に無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Pierre Plantard in 1942, at age 22. It is possible to trace the Plantard family tree a fair ways back..."
+    }
+  ]
+}

@@ -2,7 +2,20 @@
 > Chronological record of all wiki actions. Append-only.
 
 
-## [2026-05-31] jp-en-translation-batch | JP→EN translation batch — 2 files translated
+## [2026-05-31] raw-backlog-ingest | 5 articles triaged, all skipped (2 already captured, 3 non-AI)
+
+### Articles Processed
+- **karpathy.github.io--2016-09-07-phd**: Skip - Already captured in entities/karpathy-writings.md
+- **karpathy.github.io--2015-11-14-ai**: Skip - Already captured in entities/karpathy-writings.md
+- **susam.net--26c-html**: Skip - Non-AI (algebraic graph theory notes + Wander Console dev log)
+- **danluu.com--su3su2u1-physics**: Skip - Non-AI (classical physics/tumblr archive)
+- **filfre.net--2026-05-rennes-le-chateau-part-5**: Skip - Non-AI (historical mystery series)
+- Triage JSON archived to raw/archived/triage/backlog/2026-05-31_20260531T040055Z.json
+
+### Summary
+Takes=0, References=0, Skips=5. Batch of 5 from 6,362 raw article backlog. No wiki pages created or modified.
+
+## [2026-05-31] jp-en-translation-batch | JP->EN translation batch - 2 files translated
 
 ### Files Translated
 - **wiki/log.md**: Translated 576 scattered Japanese kana chars to English across 5,057 lines
