@@ -2,9 +2,10 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-31 | Total pages: 2180 | Indexed entries: 1566 | Not in index: 604
+> Last updated: 2026-05-31 | Total pages: 2187 | Indexed entries: 1577 | Not in index: 593
 
-## Entities (725 pages)
+## Entities (728 pages)
+- [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
@@ -477,7 +478,9 @@
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
 - [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
 - [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
+- [[entities/project-glasswing]] — Project Glasswing — Anthropic cybersecurity initiative. 1,752 vulnerabilities assessed (90.6% true-positive rate), on track for 3,900+ high/critical vulns in open-source. Claude Security in public beta.
 - [[entities/promptfoo]] — Promptfoo — Open-source LLM eval & red-teaming framework by Ian Webster & Michael D'Angelo. 19.6K GitHub stars, 302.7K weekly npm downloads, 156 Fortune 500 customers. Acquired by OpenAI (2026, remains MIT). Evaluations + red teaming + code scanning + MCP support.
+- [[entities/pointer-ai]] — Pointer — Open-source computer use agent system achieving OSWorld SOTA (83.6% with Claude Opus 4.7, beating human baseline of 72.4%). Modular architecture with Feasibility Gate, Planner, Executor. May 2026.
 - [[entities/qwen3-6-plus]] — Alibaba's agent-oriented language model. Targets real-world autonomous workflows.
 - [[entities/qwen-3-7-max]] — Alibaba's latest agent reasoning model (2026-05-20). 1M token context, 35-hour autonomous kernel optimization (1,158 tool calls, 10.1× speedup). AA Index #5, Terminal Bench 2.0 69.7. Environment Scaling training. Closed weights.
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
@@ -748,7 +751,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1416 pages)
+## Concepts (1422 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -888,6 +891,7 @@
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-opus-4-7]] — Claude Opus 4.7: Anthropic's frontier LLM (released April 2026)
 - [[concepts/claude-opus-4-8]] — Claude Opus 4.8: Anthropic's May 2026 Opus upgrade. Modest but tangible benchmark improvements. Introduces Dynamic Workflows (100s parallel subagents in single session), Effort Control (user-dialable compute scaling), and Mid-conversation System Messages. Super-Agent, CursorBench, Online-Mind2Web, Legal Agent benchmarks.
+- [[concepts/computer-use]] — Computer Use Agents — AI systems that operate computers like humans (clicking, typing, navigating). OSWorld benchmark (360+ tasks, human baseline 72.4%). SOTA: Pointer AI 83.6% with Claude Opus 4.7.
 - [[concepts/cli-first-development]] — CLI-First Development: designing command-line interfaces with AI coding agents as first-class users. Resource/command layer split, --json/--jq pre-context trimming, semantic defaults, consistent flags. Case study: GitHub CLI (gh). Analyzed by [[entities/yan5xu]].
 - [[concepts/colbert]] — ColBERT (Late Interaction Retrieval): neural IR architecture with MaxSim token-level scoring. Outperforms single-vector models with 1/60th the parameters on agentic search (BrowseComp-Plus), superior OOD generalization (ViDoRe), and order-of-magnitude data efficiency. Key tradeoffs: 32x storage, two-step retrieval pipeline.
 - [[concepts/compound-engineering-every]] — Compound Engineering (Every) — Dan Shipper/Every framework: AI-native development where existing components are orchestrated rather than rebuilt. Single-person teams ship multi-component products. Open-source compound-engineering-plugin (14K+ stars). See [[concepts/agent-native-architecture]] and [[concepts/folder-is-the-agent]].
@@ -927,6 +931,7 @@
 - [[concepts/effort-control]] — Effort Control: User-controllable compute scaling introduced with Opus 4.8 (May 2026). Dial between speed/cost and reasoning depth in claude.ai and Cowork. Operationalizes test-time compute scaling.
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
 - [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (M
+- [[concepts/eu-ai-act]] — EU AI Act — World's first comprehensive AI regulation. Full enforcement August 2026. Risk-based framework: prohibited, high-risk, limited-risk, minimal-risk. Fines up to 7% global revenue.
 - [[concepts/etclovg-taxonomy]] — ETCLOVG Taxonomy — Seven-layer agent harness engineering taxonomy: Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance. Proposed by Li et al. (2026). Maps 138+ open-source projects.
 - [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized 
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
@@ -1254,6 +1259,7 @@
 - [[concepts/token-economics]] — Token Economics — LLM inference cost analysis, token pricing, and optimization strategies.
 - [[concepts/tensorrt-llm]] — TensorRT-LLM — NVIDIA’s inference optimization engine for LLM deployment.
 - [[concepts/tool-use-tax]] — Performance degradation in LLM agents caused by tool-calling protocol overhead. In noisy environments, native CoT can outperform tool-augmented reasoning. G-STEP partial mitigation.
+- [[concepts/tool-use-necessity]] — Tool Use Necessity Detection — Probe&Prefill method: linear probes read hidden states (AUROC 0.89-0.96) to predict tool need. 48% tool call reduction, 1.7% accuracy loss. When2Tool benchmark.
 - [[concepts/speech-audio-asr-tts-voice]] — Speech, Audio, ASR, TTS, Voice — Speech recognition, audio processing, text-to-speech, and voice AI technologies.
 - [[concepts/tau-bench]] — τ-bench: Sierra AI Research's AI agent evaluation benchmark suite. Evaluates across three axes: multi-turn dialogue, domain policy compliance, and pass^k reliability. Evolution: τ-bench (2024/airline+retail)→τ²-bench (2025/Telecom dual-control)→τ³-Bench (2026/τ-Knowledge+τ-Voice). Quantifies reality: GPT-4o <50%, pass^8 <25%, voice agents 26-38%. The industry-standard de facto evaluation foundation.
 - [[concepts/tau-knowledge]] — τ-Knowledge: τ-Bench extension, evaluates agents on unstructured knowledge bases (698 documents/21 categories/195K tokens). τ-Banking domain. GPT-5.2 achieves pass^1~25.5%, ~40% even with required documents provided. Quantifies the knowledge retrieval + reasoning integration bottleneck.
@@ -1274,6 +1280,7 @@
 - [[concepts/countbenchqa]] — CountBenchQA — Ultra-simple object counting benchmark. Manually verified from LAION-400M. 2-10 objects. Highest data quality.
 - [[concepts/craft-agents]] — Craft Agents: open-source agent interface. Works with Claude, ChatGPT, OpenRouter, local models. Built-in Chromium browser, MCP support, Claude Code skill import. Multi-provider via Vercel AI SDK.
 - [[concepts/vibe-coding]] — Vibe Coding — Development style defined by Simon Willison: coding where you pay no attention to implementation details.
+- [[concepts/vla-models]] — Vision-Language-Action Models (VLA) — Foundation models mapping vision+language to robot actions. OpenVLA (7B, beats 55B RT-2-X), GR00T N1.7 (3B, EgoScale), π0.7 (compositional), SmolVLA (450M, consumer hardware).
 - [[concepts/cursor-composer-2-5]] — Cursor Composer 2.5 (May 2026): agentic coding model built on Kimi K2.5. Targeted RL with textual feedback, 25× synthetic data, Sharded Muon optimizer. SpaceXAI joint training upcoming on Colossus 2.
 - [[concepts/cursor-automations]] — Cursor Automations (May 2026): always-on agents triggered by events/schedules, cloud sandbox execution, MCP integration, memory tool for learning from past runs
 - [[concepts/data-analysis-agents]] — Comprehensive concept of AI data analysis agents. Pipeline: data exploration→schema understanding→query generation→execution→verification→visualization→reporting. Compares two major approaches: OpenAI's internal data agent (GPT-5.2) and Cognition DANA/Devin. Also covers relationships with DWH semantic layers and golden queries.
@@ -1463,6 +1470,7 @@
 - [[concepts/autonomous-component-optimization]] — Autonomous Component Optimization
 - [[concepts/autoreason]] — Autoreason
 - [[concepts/axolotl-fine-tuning-framework]] — Axolotl Fine-Tuning Framework
+- [[concepts/axpo]] — AXPO (Agent eXplorative Policy Optimization) — NVIDIA/KAIST RL method for multimodal agentic reasoning. Fixes Thinking-Acting Gap via tool-call resampling. 8B surpasses 32B Base on Pass@4.
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
 - [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
 - [[concepts/ai-military]] — AI in Military Wargames

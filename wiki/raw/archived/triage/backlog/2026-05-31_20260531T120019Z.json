@@ -1,66 +1,7 @@
 {
-  "checkpoint_run_id": "20260531T120019Z",
-  "summary_ja": "5件のraw backlog記事をトリアージ。Glean記事2件はスクレイピングノイズ（ナビゲーションUIの繰り返し）のためスキップ。Ash VardanyanのSIMD解説記事はパフォーマンスエンジニアリングの体系的な知見としてreferenceに格付け（既存entityページでカバー済みだが将来の概念ページ参考資料として価値あり）。Simon Tathamの幾何学記事とDan Luuの車安全分析記事はAI/LLM/Agent技術と無関係のためスキップ。",
-  "decisions": [
-    {
-      "item_id": "2026-05-10_glean_ai-prompts-for-project-managers",
-      "source": "backlog",
-      "source_name": "Glean Blog",
-      "title": "15+ AI prompts for Project Managers in 2025",
-      "url": "https://www.glean.com/blog/ai-prompts-for-project-managers",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_ai-prompts-for-project-managers.md",
-      "recommended_action": "skip",
-      "reason_ja": "★★☆☆☆ - 本文の大半がナビゲーションUIの繰り返し（250行以上読み確認）。実質的なAI/LLM技術コンテンツは薄く、既存のentities/glean.mdで十分にカバー済み。プロンプト集自体はwikiの技術対象外。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "15 AI prompts every project manager should be using. Content is primarily site navigation chrome repeated multiple times..."
-    },
-    {
-      "item_id": "2026-05-10_glean_the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments",
-      "source": "backlog",
-      "source_name": "Glean Blog",
-      "title": "The definitive guide to enterprise search solutions for modern HR departments",
-      "url": "https://www.glean.com/blog/the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments.md",
-      "recommended_action": "skip",
-      "reason_ja": "★★☆☆☆ - 本文の大半がナビゲーションUIの繰り返し（250行以上読み確認）。HR向けエンタープライズ検索ガイドであり、AI/LLM/Agentの技術的洞察に乏しい。entities/glean.mdで製品カバー済み。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "The definitive guide to enterprise search solutions for modern HR departments. Content is primarily site navigation chrome..."
-    },
-    {
-      "item_id": "ashvardanian.com--posts-understanding-simd-complexity--7b7e6e31",
-      "source": "backlog",
-      "source_name": "Ash Vardanyan Blog",
-      "title": "Understanding SIMD: Infinite Complexity of Trivial Problems",
-      "url": "https://ashvardanian.com/posts/understanding-simd-complexity/",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/ashvardanian.com--posts-understanding-simd-complexity--7b7e6e31.md",
-      "recommended_action": "reference",
-      "reason_ja": "★★★☆☆ - Chris Lattner, Daniel Lemire, Evan Ovadiaとの共著によるSIMD最適化の体系的解説。余弦類似度を題材にbfloat16混合精度、AVX2/ARM SIMDカーネル、rsqrt近似、ディスパッチパターンを詳細に解説。entities/ash-vardanyan.mdのNumKongセクションは既にSimSIMDリブランド後の技術をカバーしているが、本記事はパフォーマンスエンジニアリングの困難性と解決策の体系的解説として価値がある。既存のsimd-optimization概念ページは存在しないため、将来的に概念ページを作成する際の参考文献としてアーカイブ。",
-      "candidate_wiki_path": "concepts/simd-optimization",
-      "body_excerpt": "Modern CPUs have an incredible superpower: super-scalar operations, made available through single instruction, multiple data (SIMD) parallel processing. Instead of doing one operation at a time, a single core can do up to 4, 8, 16, or even 32 operations in parallel..."
-    },
-    {
-      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-adventitious--c4d9d5fb",
-      "source": "backlog",
-      "source_name": "Simon Tatham's Quasiblog",
-      "title": "Brute-forcing Langley's geometry problem with field extensions",
-      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/adventitious/",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-adventitious--c4d9d5fb.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ - ラングレーの幾何学問題を体拡大で解く純粋な数学記事。AI/LLM/Agent技術と無関係。Simon TathamはPuTTY作者として有名だが、本記事は数学パズル解説でありwiki対象外。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "Langley's Adventitious Angles is a notoriously difficult problem in elementary geometry. The challenge is to determine the angle theta in this diagram..."
-    },
-    {
-      "item_id": "danluu.com--car-safety--c377d05f",
-      "source": "backlog",
-      "source_name": "Dan Luu",
-      "title": "How do cars do in out-of-sample crash testing?",
-      "url": "https://danluu.com/car-safety/",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--car-safety--c377d05f.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ - 自動車の衝突テストベンチマークとベンチマークゲーミングに関する分析記事。IIHS/NHTSAテストデータから自動車メーカーの最適化行動を分析。品質の高い記事だが、AI/LLM/Agent技術と直接関係なし。Dan Luuのエンティティページも未作成。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "Any time you have a benchmark that gets taken seriously, some people will start gaming the benchmark. Some famous examples in computing are the CPU benchmark specfp and video game benchmarks..."
-    }
-  ]
+  "urls": [
+    "https://ashvardanian.com/posts/understanding-simd-complexity/"
+  ],
+  "last_updated": "2026-05-31T12:00:19Z",
+  "note": "Archive index for raw-backlog triage decisions. URLs of articles that were reference or skip."
 }
