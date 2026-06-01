@@ -2,6 +2,20 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+
+## [2026-06-01] health | Auto-fix: header counts + orphan index
+
+### Auto-Fixes Applied
+- Fixed header counts: Entities 737→747, Concepts 821→1519 (matches filesystem)
+- Updated Total pages: 2200→2299, Indexed entries: 1609→1630
+- Added 21 orphan concept entries to index.md (alphabetically at end of Concepts section: at-protocol, bayesian-reasoning, deep-learning, elasticsearch, fastapi, flask, go-golang, inference-hardware, inference-time-scaling, kv-cache-compaction, mechanistic-interpretability, process-reward-models-agent-eval, python-packaging, reinforcement-learning, redis, rust, scaling-laws, sglang-pipeline-parallelism, small-language-models, test-time-compute, zombie-internet)
+- Restored zombie-internet entry accidentally dropped during batch insertion
+
+### Verification
+- validate_index.py: ✓ clean (1648 lines)
+- Index corruption (pipe/line-num/triple/space): 0 issues
+- Ghost entries: 0
+
 ## [2026-06-01] watchdog | Auto-fix: log header burial + entities header count
 
 ### Auto-Fixes Applied

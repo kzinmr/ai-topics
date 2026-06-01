@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-01 | Total pages: 2200 | Indexed entries: 1609 | Not in index: 591
+> Last updated: 2026-06-01 | Total pages: 2299 | Indexed entries: 1630 | Not in index: 669
 
-## Entities (737 pages)
+## Entities (747 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -757,7 +757,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (821 pages)
+## Concepts (1519 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1561,6 +1561,26 @@
 - [[concepts/zaya1-8b]] — Zyphra MoE reasoning model (760M active / 8.4B total). AMD-trained end-to-end. Competitive with DeepSeek-R1, Gemini-2.5-Pro. Markovian-RSA test-time compute. Apache 2.0. May 2026.
 - [[concepts/zaya1-vl-8b]] — Zyphra's first VLM (MoE, 700M active / 8B total). Vision-specific LoRA + bidirectional image attention. SOTA for size, trained on AMD, Apache 2.0.
 - [[concepts/zombie-internet]] — Zombie Internet: AI-contaminated web where humans and bots coexist in complex interaction patterns, causing cognitive overload and writing style distortion. Coined by Jason Koebler, highlighted by Simon Willison (May 2026).
+- [[concepts/at-protocol]] — AT Protocol — Decentralized protocol for social media, used by Bluesky
+- [[concepts/bayesian-reasoning]] — Bayesian Reasoning — Probabilistic inference framework
+- [[concepts/deep-learning]] — Deep Learning — Neural network-based machine learning paradigm
+- [[concepts/elasticsearch]] — Elasticsearch — Distributed search and analytics engine
+- [[concepts/fastapi]] — FastAPI — Modern Python web framework for APIs
+- [[concepts/flask]] — Flask — Lightweight Python web framework
+- [[concepts/go-golang]] — Go — Compiled programming language by Google
+- [[concepts/inference-hardware]] — Inference Hardware — Hardware for AI model inference
+- [[concepts/inference-time-scaling]] — Inference-Time Scaling — Scaling compute at inference time for better outputs
+- [[concepts/kv-cache-compaction]] — KV Cache Compaction — Attention-matching compaction for efficient LLM inference
+- [[concepts/mechanistic-interpretability]] — Mechanistic Interpretability — Understanding neural networks by reverse engineering
+- [[concepts/process-reward-models-agent-eval]] — Process Reward Models for Agent Evaluation — PRM-based evaluation
+- [[concepts/python-packaging]] — Python Packaging — Distribution and packaging for Python projects
+- [[concepts/reinforcement-learning]] — Reinforcement Learning — Learning through trial and error
+- [[concepts/redis]] — Redis — In-memory data structure store
+- [[concepts/rust]] — Rust — Systems programming language
+- [[concepts/scaling-laws]] — Scaling Laws — Empirical laws governing AI model scaling
+- [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism — Pipeline parallelism for SGLang inference
+- [[concepts/small-language-models]] — Small Language Models — Compact LLMs for edge and local deployment
+- [[concepts/test-time-compute]] — Test-Time Compute — Compute scaling at test time
 
 ## Events (7 pages)
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
