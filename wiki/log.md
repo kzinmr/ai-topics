@@ -5329,3 +5329,13 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - SymJack/TrustFall already covered in events/trustfall-symlink-rce-2026.md.
 - Agent Containment concept page already exists from May 27 session.
 - Claude Mythos & Project Glasswing already comprehensively documented.
+
+## 2026-06-01 — blog-ingest: Fixed broken paths + 17 new articles
+
+- **Fixed**: `daily_inbox_collect.py` had broken paths after cron HOME changed to `~/.hermes/home`
+  - Binary: `~/bin/blogwatcher-cli` → `/opt/data/bin/blogwatcher-cli`
+  - DB: `~/.blogwatcher-cli/blogwatcher-cli.db` → `/opt/data/.blogwatcher/blogwatcher.db`
+  - Scan env: `HOME=/opt/data` so blogwatcher-cli finds populated DB (132 blogs, 5712 articles)
+  - Parser: fixed regex to match actual output format (`Scanning N blog(s)...` not `Scanned N: M succeeded`)
+- **Result**: 132 blogs scanned, 5 failures (404s/timeouts), 24 articles found, 17 saved as raw
+- **Commits**: `7b1c585b` (path fix), `52ac24f1` (parser fix), `30c31829` (failure count fix), `fff4c22f` (raw articles)
