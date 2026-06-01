@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-01 | Total pages: 2189 | Indexed entries: 1598 | Not in index: 606
+> Last updated: 2026-06-01 | Total pages: 2192 | Indexed entries: 1601 | Not in index: 606
 
 ## Entities (735 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -754,7 +754,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (818 pages)
+## Concepts (821 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -810,7 +810,7 @@
 - [[concepts/agent-orchestration]] — Agent Orchestration — Coordinating and governing multiple AI agents. DeepMind: Antigravity IDE, Darwinian skills library, model mixing. Google's new stack: Agent Sandbox GA + Substrate + Executor. IBM watsonx Orchestrate.
 - [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
 - [[concepts/agent-patterns]] — General design patterns and implementation practices for AI agents
-- [[concepts/agent-runtime]] — The execution environment where AI agents operate: dual perspective covering **infrastructure substrate** (compute, filesystem, sandboxing, isolation primitives) and **execution semantics** (lifecycle management, tool mediation, state continuity, scheduling, events, safety, observability — the control system that makes agents persistent execution entities). Covers isolation primitive stack (containers, Firecracker, gVisor, Kata, V8 isolates), state model (snapshot/replay/rollback), network boundary design (6 patterns), lifecycle management, sandbox-as-a-service landscape, hyperscaler offerings, web app vs agent runtime comparison, runtime shift, runtime debt, 5-layer agent stack, historical arc (Framework→Workflow→Runtime), **control flow ownership shift**, structural inversion (graph primary vs loop primary), and what dies/survives in agent infrastructure. Sources: Han Lee's Hidden Technical Debt, kzinmr's 3-part analysis (2026-05-15).
+- [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects — Impact of AI coding agents on personal productivity and attention. David Wilson's "thermonuclear ADHD amplifier" metaphor. Project proliferation syndrome (agents lowering activation energy from idea to working project). HN ADH
 - [[concepts/agent-sandbox-patterns]] — Agent Sandboxing architectural patterns. Browser Use's Pattern 1 (tool) vs Pattern 2 (agent). Google Agent Sandbox GA: 300 sandboxes/sec, 16x growth. Agent Substrate: new open-source project for millions of idle agents.
 - [[concepts/agent-sandboxing]]
 - [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
@@ -869,6 +869,7 @@
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-agent-security]] — AI Agent Security — Security vulnerabilities unique to AI agents: tool-chaining attacks (91%), goal drift (89%), memory poisoning (94%). Real-world incidents: Moltbook (770K agents), Microsoft Copilot Cowork exfiltration, curl AI-flooded vulnerability reports.
 - [[concepts/ai-agent-traps]] — AI Agent Traps
+- [[concepts/ai-agent-video-editing]] — AI Agent Video Editing — Meta-pattern of using AI coding agents to build automated video editing pipelines. Agent watches a tutorial → replicates process → packages as skill. Self-referential quality loop (the walkthrough video is edited by the tool it describes). AssemblyAI speech-to-text with word-level timestamps for automated cutting. Arcturus Labs, May 2026.
 - [[concepts/ai-agents]] — AI Agents
 - [[concepts/ai-agents-autonomy-planning-file-operations-delegation-sandbox]] — "ai-agents, autonomy, planning, file-operations, delegation, sandbox"
 - [[concepts/ai-agents-framework-python-type-safety-structured-outputs-pydantic]] — "ai-agents, framework, python, type-safety, structured-outputs, pydantic"
@@ -1326,6 +1327,7 @@
 - [[concepts/llm-search-judge]] — LLM Search Judge: Using LLMs as automated relevance judges for search evaluation. Pointwise (0-3 grading) and pairwise (A/B comparison) approaches. Decision tree aggregation achieves ~83% precision. Enables NDCG computation without human labels. Based on Doug Turnbull's Cheat at Search Part 4.
 - [[concepts/llm-security]] — LLM Security
 - [[concepts/llm-steering]] — LLM Steering
+- [[concepts/llm-understanding]] — LLM Understanding Debate — Whether LLMs genuinely "understand" language or merely simulate it. Gary Marcus vs Geoffrey Hinton: simulation view (mimicry without internal states) vs consciousness claim. Pope Leo XIV: "True comprehension comes from experience, not text approximation." Capraro & Marcus Nature paper (Feb 2026). Mechanistic interpretability implications.
 - [[concepts/local-ai]] — **Local AI Landscape — May 2026**: Current state of local AI using Andrew Chen (a16z)'s home lab experience as a case study. Hardware (DGX Spark/5090 eGPU/Mac Studio/Strix Halo), 1-year model quality lag thesis, software stack (ollama→LiteLLM→vLLM), 2027 Opus-class local model prediction, async batch processing use cases.→ [[entities/andrew-chen]]
 - [[concepts/local-first-architecture]] — Software design paradigm where primary data store lives on client (IndexedDB, SQLite), server acts as sync target. Covers principles (optimistic updates, offline-first, CRDT conflict resolution), Linear's implementation, benefits, challenges, related tech (ElectricSQL, Replicache, Automerge), and case studies.
 - [[concepts/local-first-software]] — Local-First Software

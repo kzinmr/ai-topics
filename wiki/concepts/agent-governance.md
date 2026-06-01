@@ -1,7 +1,7 @@
 ---
 title: Agent Governance
 created: 2026-04-26
-updated: 2026-05-18
+updated: 2026-06-01
 type: concept
 tags:
   - ai-agents
@@ -11,6 +11,7 @@ tags:
 sources:
   - raw/articles/crawl-2026-04-26-agent-governance.md
   - raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
+  - raw/articles/merge.dev--blog-agent-handler-employees--f0ef6026.md
 ---
 
 # Agent Governance
@@ -128,6 +129,34 @@ Patrick Hussey's Superintel analysis (May 2026) provides the most comprehensive 
 Traditional software governance assumes determinism, predictable intent, and single-owner responsibility. Agent economies break all three assumptions. The article argues for a **non-corporate, open, global, hybrid software-and-legal oversight layer** capable of capturing cross-party failures at machine speed.
 
 Source: [Superintel — "The Agentic Economy Has No Black Box"](https://getsuperintel.site/p/the-agentic-economy-has-no-black-box) (Patrick Hussey, May 17, 2026)
+
+## Merge Agent Handler (Enterprise Employee AI Governance)
+
+**Merge Agent Handler** (May 2026) is an enterprise product that provides a governed, observable layer for AI agent tool calls — credential and permission management, DLP scanning, audit trails, and hundreds of maintained connectors across enterprise systems.
+
+### Architecture
+
+1. **Identity Provider Integration** — SCIM-compatible (Okta, Azure AD). Automatically syncs employee directory. Employees provisioned based on group memberships and role assignments.
+2. **Policy Configuration** — IT defines which AI connections each role/group can make, and which data types should be scanned, blocked, or redacted on every tool call.
+3. **Employee Tool Connection** — Employees authenticate their AI tools (Claude, ChatGPT, Copilot, Cursor, any MCP-compatible AI) through Agent Handler. Individual credentials tied to identity — no shared service accounts.
+4. **Runtime Inspection** — Before data reaches the model, Agent Handler inspects every tool call: checks authorization scope, scans response against security rules, logs full interaction (identity, arguments, downstream API call, outcome).
+
+### Governance Capabilities
+
+- **Role-based AI access provisioning** — A finance analyst gets Looker/NetSuite; a sales rep gets Salesforce/Gong
+- **Real-time DLP scanning** — Prevents sensitive data (e.g., unreleased financials) from reaching AI models or being posted externally
+- **Searchable audit trail** — Every tool call logged: identity, arguments, API call, outcome. Enables rapid investigation ("what HR data did this employee's AI access over the last 48 hours?")
+- **Automatic policy updates** — Boundaries update automatically when roles change
+
+### Business Context
+
+Agent Handler addresses the Shadow IT problem for enterprise AI: employees want to connect Claude/ChatGPT/Cursor to every tool (Salesforce, NetSuite, Workday, Slack), but IT has had no visibility or control. Merge provides "one place to provision AI access, enforce policy, and let employees safely connect AI to every tool they need."
+
+### Related
+
+- [[entities/merge]] — The parent company providing unified API integrations
+- [[concepts/agent-iam]] — Identity and access management for agents
+- [[concepts/agentic-ai-governance]] — Broader governance frameworks
 
 ## Open Questions
 

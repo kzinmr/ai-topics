@@ -1,6 +1,18 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-01] blog-wiki-ingest | 5 articles processed (2 take + 3 reference)
+
+- **New concept**: [[concepts/ai-agent-video-editing]] — AI agent video editing meta-pattern: Cursor agent watches YouTube tutorial, replicates process, packages as agent skill. AssemblyAI speech-to-text with word-level timestamps. Source: Arcturus Labs
+- **New concept**: [[concepts/agent-productivity]] — AI coding agent impact on productivity and attention. David Wilson's "thermonuclear ADHD amplifier" metaphor. Project proliferation syndrome, HN ADHD split response. Simon Willison's discipline framing. Source: simonwillison.net
+- **New concept**: [[concepts/llm-understanding]] — LLM understanding debate: Gary Marcus vs Geoffrey Hinton. Pope Leo XIV on comprehension vs text approximation. Capraro & Marcus Nature paper. Source: garymarcus.substack.com
+- **Enriched**: [[concepts/agent-governance]] — Added Merge Agent Handler section (SCIM-based identity provisioning, DLP scanning, audit trails, role-based AI access). Source: merge.dev
+- **Enriched**: [[entities/justine-tunney]] — Added rseq restartable sequences coverage (34-43x malloc speedup on 96-128 core CPUs), Google Gradient Canopy job offer, LLM-not-yet-capable-for-rseq observation. Updated date and sources.
+- **Updated**: index.md — Added 3 new concept entries, updated counts (Concepts: 818→821, Total: 2189→2192, Indexed: 1598→1601)
+- **Sources**: blog triage checkpoint 20260601T071331Z
+
+---
+
 ## [2026-06-01] wiki-ingest | Lenny's Podcast — Benedict Evans episode integration
 
 - **New entity**: [[entities/benedict-evans]] — Former a16z partner (2011–2022), independent AI analyst. Covers "AI Eats the World" presentation, "1997 internet moment" framing, Jevons paradox for AI labor, task vs job, distribution as moat, anti-AI backlash, value accrual in AI stack, consulting/services boom. Newsletter at ben-evans.com.
