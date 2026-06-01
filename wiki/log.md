@@ -3,6 +3,18 @@
 
 
 
+## [2026-06-02] wiki-ingest | Doug Turnbull "Long Running Search Agents" Cheat at Search lecture
+
+- **New concept**: [[concepts/long-running-search-agents]] — 7 progressive strategies for search agents running unattended: single context (0.795 yield/call), cron restarts (0.720), compaction (0.738), local index (2.68 — 3.7x gain), frontier prompt (1.667), query model, self-querying. Key insight: local memory before external calls.
+- **Enriched**: [[concepts/agentic-search]] — Added "Empirical Strategies for Long-Running Agents (June 2026)" section connecting Turnbull's lecture to the existing RLM discussion and Vanishing Gradients interview. Table of 7 strategies with yield/call metrics.
+- **Enriched**: [[entities/doug-turnbull-speaking]] — Added the new lecture to the Cheat at Search series chronologically between Query Understanding and Steering Lost Agents.
+- **Raw article saved**: `raw/articles/2026-06-02_softwaredoug_long-running-search-agents.md`
+- **Colab notebook**: https://colab.research.google.com/drive/1aUCvcBa1YdmsbIgYc74jlknl9_iRotp1
+- **Index updated**: Added long-running-search-agents entry, validated clean (1649 lines)
+- **Committed**: 5 files changed, 268 insertions, 3 deletions
+
+---
+
 ## [2026-06-01] health | Auto-fix: header counts + orphan index
 
 ### Auto-Fixes Applied
