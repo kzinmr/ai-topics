@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-01 | Total pages: 2192 | Indexed entries: 1601 | Not in index: 606
+> Last updated: 2026-06-01 | Total pages: 2195 | Indexed entries: 1604 | Not in index: 606
 
 ## Entities (735 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -96,6 +96,7 @@
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
 - [[entities/prime-intellect]] — Prime Intellect — "The Open Stack for Self-Improving Agents": decentralized AI platform, RL post-training (Lab), open-source renderers/verifiers/prime-rl. $20.5M funding. INTELLECT model series.
 - [[entities/ramp]] — Ramp
+- [[entities/recursive-superintelligence]] — Recursive Superintelligence — Richard Socher's AI company with explicit RSI goal: "build truly recursive, self-improving superintelligence at scale."
 - [[entities/reflexive-ai]] — Reflexive AI Usage
 - [[entities/riley-walz]] — Riley Walz (@rtwlz) — Software engineer and internet artist. Bop Spotter, Jmail, IMG_0001, Find My Parking Cops. OAI Labs at OpenAI (2026–). First peoplereadmes persona subject.
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
@@ -194,7 +195,7 @@
 - [[entities/chris-olah]] — Chris Olah (@ch402) — Anthropic co-founder, mechanistic interpretability pioneer. DeepDream, Circuits/Transformer Circuits research, TIME100 AI 2024. Spoke at Vatican for Magnifica Humanitas encyclical (May 2026).
 - [[entities/claude-code]] — Anthropic's AI coding agent. Operates across CLI, desktop app, VS Code/JetBrains extensions, Web, iOS, and Slack as a multi-surface agent. Developed by Boris Cherny and transferred from Anthropic to OpenAI in July 2025.
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
-- [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
+- [[entities/claude-mythos]] — Claude Mythos — Anthropic's next-gen model. Initially withheld (security). Mythos Preview (May 2026): general assistant positioned to substitute L4 engineers.
 - [[entities/claude-orbit]] — Claude Orbit — Anthropic's proactive AI assistant, leaked May 5, 2026 inside Claude Cowork. Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma without prompting. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
 - [[entities/clicky]] — Clicky — Free macOS AI assistant by Farza. Voice + screen capture → Claude → blue triangle pointing. No account/API key needed. Built in 3 weeks. Same approach as Google Magic Pointer (independently discovered same week).
@@ -1000,6 +1001,7 @@
 - [[concepts/autonomous-component-optimization]] — Autonomous Component Optimization
 - [[concepts/autoreason]] — Autoreason
 - [[concepts/autoresearch-bm25-msmarco]] — Autoresearch for BM25 Optimization on MSMarco — Doug Turnbull case study. Dual-gate agentic optimization of BM25 ranking. Overfitting lessons through validation data leakage.
+- [[concepts/autoscientist]] — AutoScientist — Adaption's AI tool for automated frontier model training. Trains agents to make incremental improvements to training pipelines.
 - [[concepts/autotts]] — AutoTTS — Agent-discovered test-time scaling. Claude Code iteratively discovers TTS algorithms. 70% token reduction vs self-consistency. UMD/UVA/Google/Meta research (May 2026).
 - [[concepts/aws-agent-toolkit]] — AWS Agent Toolkit — Production-ready suite (May 2026) for AI coding agents on AWS: 40+ agent skills, managed MCP server (GA), 3 plugins (Core, Data Analytics, Agents). Successor to AWS Labs.
 - [[concepts/aws-openai-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership — OpenAI models on Bedrock, Codex on Bedrock, Bedrock Managed Agents (all limited preview, May 2026). Enterprise-grade security + AWS commitments.
@@ -1433,6 +1435,7 @@
 - [[concepts/princeton-cos597r-deep-dive-llm]] — Princeton COS597R Deep Dive into LLMs — Paper-based LLM research survey course by Danqi Chen & Sanjeev Arora.
 - [[concepts/probabilistic-engineering]] — Probabilistic Engineering: Proposed by Tim Davis (Modular). A paradigm shift where codebase correctness moves from "known" to "believed" as AI agent-generated code becomes dominant. Generation is cheap but verification is expensive. Includes 24-7 employees, role fission, Jevons paradox applied to code.
 - [[concepts/probabilistic-era-software]] — Probabilistic Era — Gian Segato's ontological framework: AI shifts software from F: X→Y (deterministic funnels) to F'(?) (infinite input space, stochastic outputs). Minimum Viable Intelligence, engineering→empiricism, new model=reset all assumptions, data is the new OS.
+- [[concepts/probe-and-prefill]] — Probe&Prefill — Training-free method for reducing unnecessary tool calls by 48% with only 1.7% accuracy loss. Reads tool necessity from hidden states (AUROC 0.89-0.96). arXiv:2605.09252.
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling (PTC) — LLMs write Python code to orchestrate multiple tool calls in sandboxes instead of sequential per-tool round-trips. 87-92% token reduction, 3 AWS implementations (ECS+Docker, AgentCore, Anthropic proxy).
 - [[concepts/project-lightwell]] — Project Lightwell — IBM and Red Hat $5B open-source security initiative with 20,000+ AI-augmented engineers. Trusted Enterprise Clearinghouse model. Early adopters: 11 major banks. May 2026.
 - [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.

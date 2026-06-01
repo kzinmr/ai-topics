@@ -1,6 +1,33 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-01] active-crawl | Probe&Prefill, Autoscientist, Recursive Superintelligence, Mythos enrich
+
+### Summary
+- Active crawl discovered 4 missing topics from May-June 2026 trending AI report
+- Created 3 new wiki pages, enriched 1 existing entity
+
+### Pages Created
+- [[concepts/probe-and-prefill]] — Training-free tool use efficiency method (arXiv:2605.09252). 48% tool call reduction, 1.7% accuracy loss
+- [[concepts/autoscientist]] — Adaption's automated frontier training by Sara Hooker
+- [[entities/recursive-superintelligence]] — Richard Socher's RSI-focused company
+
+### Pages Enriched
+- [[entities/claude-mythos]] — Added Mythos Preview (May 2026) section: general assistant, L4 engineer substitution, RSI context
+
+### Raw Articles Referenced
+- raw/articles/2026-06-01_active-crawl-probe-prefill-mythos-autoscientist-rsi.md
+- https://techcrunch.com/2026/05/28/rsi-is-the-new-agi-and-its-just-as-hard-to-pin-down/
+- https://arxiv.org/abs/2605.09252
+
+### Notes
+- 10+ topics from trending report already covered by existing wiki pages
+- Mythos had existing entity page; merged new content rather than creating duplicate
+- web_search/web_extract blocked by parallel SDK permission issue; used browser-based sourcing
+
+
+---
+
 ## [2026-06-01] tag-audit | Weekly tag taxonomy audit — 2 violations resolved
 
 ### Audit Summary

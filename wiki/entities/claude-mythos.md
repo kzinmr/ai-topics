@@ -2,7 +2,7 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-05-04
+updated: 2026-06-01
 tags:
   - model
   - agent-safety
@@ -50,6 +50,15 @@ Anthropic's decision to withhold Mythos reflects their AI safety-first approach.
 ## Related Commentary
 
 > "Mythos is to Opus what Opus is to Sonnet." — Theo (video analysis)
+
+## Mythos Preview — General Intelligence Assistant (May 2026)
+
+Announced alongside [[concepts/claude-opus-4-8|Claude Opus 4.8]] on May 28, 2026, Mythos Preview evolved from a security-focused model into a general-purpose AI assistant. General release expected "in coming weeks."
+
+Key developments:
+- **L4 Engineer Substitution**: In an internal Anthropic survey, **5 out of 18 engineers** believed that with harness improvements, Mythos could substitute for an **L4 engineer** — a mid-level programmer capable of handling involved projects without supervision
+- **Recursive Self-Improvement Context**: Anthropic engineers reported "close to 100%" of Claude Code's code was written by the tool itself — Mythos represents the next step toward [[concepts/recursive-self-improvement|recursive self-improvement]]
+- **Positioning**: Mythos now sits alongside [[concepts/effort-control|Effort Control]] and [[concepts/dynamic-workflows|Dynamic Workflows]] as part of Anthropic's May 2026 agentic AI push
 
 ## UK AI Security Institute (AISI) Evaluation
 
