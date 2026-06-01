@@ -1,3 +1,17 @@
+# Wiki Log
+> Chronological record of all wiki actions. Append-only.
+
+
+## [2026-06-01] watchdog | Auto-fix: log header burial + entities header count
+
+### Auto-Fixes Applied
+- Fixed log.md header burial — orphaned bookmark-ingest entry moved after # Wiki Log header
+- Removed 1 standalone pipe corruption in log.md
+- Updated Entities section header count: 735 → 737 (matches filesystem)
+
+
+---
+
 ## [2026-06-01] X bookmarks ingest | Eval Loops, Token-to-Outcome, High-Frequency Software
 
 ### Summary
@@ -27,8 +41,7 @@
 - SCHEMA.md updated: added eval-loops and llm-as-judge to Techniques taxonomy
 - Total wiki page count: 2195 → 2200
 
-# Wiki Log
-> Chronological record of all wiki actions. Append-only.
+---
 
 ## [2026-06-01] active-crawl | Probe&Prefill, Autoscientist, Recursive Superintelligence, Mythos enrich
 
@@ -2557,7 +2570,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - All previously-skeleton entity pages are now enriched to L2+ quality.
 - Remaining low-status pages: `adam-rosenthal` (needs-identification), `promptfoo` (stub), `slalom` (stub).
 
-|
+
 
 ### Enriched
 - `entities/jeremiah-lowin.md` — L1→L2: Added FastMCP 3.2 (MCP Apps + Prefab + Generative UI), FastMCP 3.3 "Slim Reaper" (fastmcp-slim client-only distribution), FastMCP 3.4.0b1 "Remote Possibility" (remote auth). Added Software Engineering Daily podcast (Apr 2026) to Selected Talks. Updated sources.
