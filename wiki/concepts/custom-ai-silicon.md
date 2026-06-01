@@ -13,7 +13,6 @@ tags:
   - nvidia
   - amd
   - industry
-  - trend
 sources:
   - raw/articles/2026-05-27_trendforce-ai-server-2026-asic.md
   - raw/articles/2026-05-27_cerebras-kimi-k26-981-tokens.md

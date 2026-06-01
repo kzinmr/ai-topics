@@ -14,7 +14,6 @@ tags:
   - prediction
   - controversy
   - techno-pessimism
-  - ai-skepticism
 sources:
   - raw/articles/wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md
   - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
