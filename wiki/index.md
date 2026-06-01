@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-31 | Total pages: 2182 | Indexed entries: 1591 | Not in index: 606
+> Last updated: 2026-06-01 | Total pages: 2184 | Indexed entries: 1593 | Not in index: 606
 
-## Entities (730 pages)
+## Entities (732 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -34,7 +34,7 @@
 - [[entities/datasette-llm-limits]] — Datasette LLM Limits
 - [[entities/deepmind]] — Google DeepMind — Alphabet's central AI research lab (AlphaGo, AlphaFold, Gemini). May 2026: AI Pointer / Magic Pointer — context-aware cursor. Agents at Scale: Antigravity IDE, token quotas, Darwinian skills library, in-house model mixing.
 - [[entities/denseon-lateon]] — DenseOn & LateOn — Open SOTA retrieval models (149M ModernBERT). DenseOn: BEIR 56.20 (first <150M past 56). LateOn: BEIR 57.22 (first ColBERT past 57). LightOn, Apr 2026.
-- [[entities/dex-horthy]] — Dex Horthy (@dexhorthy): AI agent harness engineering researcher
+- [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Founder of HumanLayer. Key voice in context engineering for coding agents. Creator of Frequent Intentional Compaction (FIC) workflow and 12-Factor Agents framework. Y Combinator speaker (August 2025).
 - [[entities/doug-turnbull]] — Doug Turnbull (softwaredoug) — Search and information retrieval expert. "Metadata: the 3rd kind of retrieval" framework, "Cheat at Search" methodology for LLM-powered query understanding.
 - [[entities/eleanor-berger]] — Eleanor Berger — AI researcher, author, and entrepreneur focused on AI safety, alignment, and responsible AI development.
 - [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
@@ -722,6 +722,7 @@
 - [[entities/harvey]] — Harvey — AI for legal industry. $8B valuation. 100K+ lawyers across 60%+ of AmLaw 100.
 - [[entities/hebbia]] — Hebbia — AI for knowledge work. Product: Matrix. $700M valuation. 30% of top 50 asset managers.
 - [[entities/hex-technologies]] — Hex Technologies — Collaborative data science and AI notebooks platform. Shoebox eval lab for data agents (pairwise experiments, Shorelane Commerce synthetic business).
+- [[entities/humanlayer]] — HumanLayer (humanlayer.dev) — Spec-first agentic software development tools. Creator of Frequent Intentional Compaction (FIC) workflow and 12-Factor Agents framework. Founded by Dex Horthy.
 - [[entities/linear]] — Linear — Project management software known for exceptional design quality and local-first performance architecture ($1.25B valuation). Launched **Linear Diffs** (May 2026): code review inside Linear with guided reviews and structural diff highlighting. See [[concepts/local-first-architecture]].
 - [[entities/mercor]] — Mercor — AI recruiting and hiring platform. $10B valuation. Founded by Brendan Foody (age 22).
 - [[entities/merge]] — Merge — Unified API for integrations. Connect to 200+ platforms through a single API.

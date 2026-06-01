@@ -63,5 +63,37 @@
     "decision": "skip",
     "reason_ja": "★☆☆☆☆ Dan Luuのプログラミング学習体験談。個人の学習履歴を振り返るエッセイで、AI/LLM/エージェント技術との関連性なし。wikiスコープ外。",
     "source": "backlog"
+  },
+  "urls": [
+    "https://www.glean.com/blog/ai-prompts-for-project-managers",
+    "https://www.glean.com/blog/the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments",
+    "https://ashvardanian.com/posts/understanding-simd-complexity/",
+    "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/adventitious/",
+    "https://danluu.com/car-safety/"
+  ],
+  "last_updated": "2026-05-31T16:01:59.664865+00:00",
+  "https://iczelia.net/posts/groups/": {
+    "status": "skip",
+    "reason": "非AIコンテンツ。抽象代数学（群論）の初心者向けチュートリアル。LLM/AIエージェントのwikiスコープ外。",
+    "archived_at": "2026-05-31T20:04:29.847460+00:00",
+    "filename": "iczelia.net--posts-groups--da9892ce.md"
+  },
+  "https://overreacted.io/react-as-a-ui-runtime/": {
+    "status": "skip",
+    "reason": "非AIコンテンツ。Dan AbramovによるReactプログラミングモデルの技術的解説。ホストツリー、レンダラー、変異モード vs 永続モードなどのReact内部アーキテクチャの話で、AI/LLMとの関連性なし。",
+    "archived_at": "2026-05-31T20:04:29.847460+00:00",
+    "filename": "overreacted.io--react-as-a-ui-runtime--da0feb63.md"
+  },
+  "https://overreacted.io/a-social-filesystem/": {
+    "status": "skip",
+    "reason": "非AIコンテンツ。ソーシャルメディアのファイルパラダイム論。ATプロトコル、Bluesky、分散ソーシャルファイルシステムの概念解説。AI/LLMエージェントのwikiスコープ外。",
+    "archived_at": "2026-05-31T20:04:29.847460+00:00",
+    "filename": "overreacted.io--a-social-filesystem--f8483a3b.md"
+  },
+  "https://www.youtube.com/watch?v=h370222tnAQ": {
+    "status": "skip",
+    "reason": "既存wikiで完全にカバー済み。entities/doug-turnbull-speaking.md の Conference Talks セクションに「Why 2026 is The Year of Agentic Search」の詳細サマリー（4つの柱：LLM Query Understanding、Autoresearch、Agentic Search Harnesses、LLM-as-a-Judge）が既に収録されている。concepts/agentic-search.md も豊富なコンテンツでカバー済み。",
+    "archived_at": "2026-05-31T20:04:29.847460+00:00",
+    "filename": "2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search.md"
   }
 }

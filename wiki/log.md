@@ -1,6 +1,15 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-01] wiki-ingest | HumanLayer "Advanced Context Engineering for Coding Agents" article integration
+
+- **Raw article saved**: `raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents.md` — dexhorthy's Y Combinator talk/blog post on getting AI coding agents to work in complex codebases (300K+ LOC)
+- **Enriched**: [[concepts/context-engineering]] — Added comprehensive "Frequent Intentional Compaction (FIC)" section covering: Research→Plan→Implement pipeline, key principles, concrete results (35K LOC in 7 hours), limitations, and relationship to other context engineering patterns (Anthropic compaction, Lance Martin's taxonomy, Ralph Wiggum Loop, Spec-Driven Development)
+- **Enriched**: [[entities/dex-horthy]] — Upgraded from skeleton to full entity page: added HumanLayer founder role, FIC contributions, 12-Factor Agents framework, CodeLayer product, writing/talks table, cross-references
+- **New entity**: [[entities/humanlayer]] — Company page covering spec-first agentic development, HumanLayer library, CodeLayer (private beta), FIC methodology, 12-Factor Agents framework, team results
+- **Updated**: index.md — Enhanced dex-horthy entry, added humanlayer entry, updated counts (Entities: 730→732, Total: 2182→2184, Indexed: 1591→1593)
+- **Source**: https://raw.githubusercontent.com/humanlayer/advanced-context-engineering-for-coding-agents/refs/heads/main/ace-fca.md
+
 ## [2026-05-31] skeleton-enrich | anorth-chen entity page enriched
 
 - **Enriched**: [[entities/anorth-chen]] — Removed `status: skeleton`, added full name (Ziyao Chen), academic details (UofT CS Specialist, AI focus, GPA 3.64/4.0, Dean's List, Co-Op 2019-2020), GitHub/HN/LinkedIn profiles, CREAO podcast hosting role, additional tags (`devrel`, `creao`), and 5 new sources

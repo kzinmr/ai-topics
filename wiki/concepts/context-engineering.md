@@ -186,6 +186,55 @@ A delegation pattern for long-running tasks:
 3. **Stop hooks** verify work after each loop iteration
 4. **Context sharing** via filesystem (git history)
 
+### Frequent Intentional Compaction (FIC) — dexhorthy / HumanLayer
+
+[[entities/dex-horthy|Dex Horthy]] (HumanLayer founder) articulated a workflow pattern called **Frequent Intentional Compaction** (August 2025), designed specifically for getting AI coding agents to work in large, brownfield codebases (300K+ LOC). The core thesis: treat the context window as a finite, degrading resource and deliberately manage it through a structured **Research → Plan → Implement** pipeline.
+
+#### The Problem: Brownfield Codebases + Naive Context Use
+
+The [Stanford study on AI developer productivity](https://www.youtube.com/watch?v=tbDDYKRFjhk) found that AI tools work well for greenfield projects but often make developers *less* productive in large established codebases — generating "slop" that requires rework. The naive approach (chat-based coding, accumulating context) fails because:
+
+1. **Context bloat**: Searching files, understanding code flow, test/build logs, and tool responses flood the window
+2. **Mental alignment loss**: Team members lose touch with what the codebase does as AI ships large PRs
+3. **Compounding errors**: A bad research understanding → bad plan → hundreds of bad lines of code
+
+#### The FIC Pipeline
+
+| Stage | Purpose | Human Leverage Point |
+|-------|---------|---------------------|
+| **Research** | Understand codebase, relevant files, information flow, potential causes | Human reviews research output, corrects misunderstandings before they propagate |
+| **Plan** | Outline exact steps, files to edit, testing/verification per phase | Human reviews plan — highest-leverage review point |
+| **Implement** | Execute plan phase-by-phase; compact status back into plan file after each phase | Human verifies each phase before next begins |
+
+#### Key Principles
+
+1. **Compaction as first-class operation**: Deliberately distill context into structured artifacts (research docs, plan files) rather than letting the conversation history accumulate
+2. **Sub-agents for context isolation**: Use fresh context windows for finding/searching/summarizing, keeping the parent agent's window clean for implementation
+3. **40–60% context utilization**: Keep the context window partially empty to leave room for reasoning; avoid filling it to capacity
+4. **Spec-driven development**: Treat specs/plans/research docs as the "real code" — the source of truth for what is being built and why, analogous to source code vs. compiled binary
+5. **Human review at highest-leverage points**: A bad line of research can cause thousands of bad lines of code. Review research and plans, not just final code.
+
+#### Concrete Results
+
+- 300K LOC Rust codebase (BAML): bug fix PR approved overnight by maintainer; 35K LOC of cancellation + WASM support shipped in 7 hours (estimated 3–5 days each for senior engineer)
+- Team of 3 averaging ~$12K/month on Claude Opus tokens
+- One developer shipping 6 PRs in a day, rarely editing non-markdown files by hand
+
+#### Limitations
+
+FIC does not work perfectly for every problem. dexhorthy's team spent 2 weeks stuck on a tricky race condition involving MCP sHTTP keepalives in Go — the research phase didn't go deep enough through the dependency tree. **Lesson**: you need at least one person who is an expert in the codebase for hard problems.
+
+#### Relationship to Other Context Engineering Patterns
+
+| Pattern | Relationship to FIC |
+|---------|-------------------|
+| [[concepts/context-engineering|Anthropic's Compaction]] | FIC makes compaction explicit, frequent, and human-reviewed rather than automatic at 95% capacity |
+| [[concepts/context-engineering|Lance Martin's Write/Select/Compress/Isolate]] | FIC operationalizes all four: Write (research/plan files), Select (sub-agent scoping), Compress (compaction artifacts), Isolate (Research→Plan→Implement stage boundaries) |
+| [[ralph-loop|Ralph Wiggum Loop]] | Ralph = infinite loop with simple prompt; FIC = structured multi-stage pipeline with human checkpoints |
+| [[concepts/spec-driven-development|Spec-Driven Development]] | Sean Grove's thesis that specs become the real code — FIC implements this via plan/research docs as source of truth |
+
+> **Source**: [[raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents]] — "Getting AI to Work in Complex Codebases" (August 2025, Y Combinator talk + blog post)
+
 ### Multi-Layer Action Space
 
 Keep the tool-calling layer lean (~12 tools for Claude Code, <20 for Manus). Push broad actions to the computer — a single `bash` tool can invoke shell utilities, CLIs, or write/execute arbitrary code (the **CodeAct** pattern). This saves tokens because the agent doesn't process intermediate tool results.

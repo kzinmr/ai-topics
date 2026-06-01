@@ -1,0 +1,71 @@
+{
+  "checkpoint_run_id": "20260531T160033Z",
+  "summary_ja": "Raw backlog ingest batch. 5記事すべてが同日12:00UTCバッチで判定済み。再処理不要。Gleanブログ記事2件はナビゲーションchrome大部分でskip。Ash Vardanyan SIMD記事はreference。Simon Tatham幾何学問題とDan Luu自動車安全分析は非AIでskip。",
+  "decisions": [
+    {
+      "item_id": "2026-05-10_glean_ai-prompts-for-project-managers.md",
+      "source": "backlog",
+      "source_name": "raw-backlog",
+      "title": "2026-05-10_glean_ai-prompts-for-project-managers.md",
+      "url": "https://www.glean.com/blog/ai-prompts-for-project-managers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_ai-prompts-for-project-managers.md",
+      "recommended_action": "skip",
+      "reason_ja": "Glean blog PM AI prompts article. ~75% navigation chrome (product menus, department lists, industry lists), minimal substantive AI content. entities/glean.md already covers Glean products.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "",
+      "note": "Previously processed in 2026-05-31T120019Z batch - re-archived for completeness"
+    },
+    {
+      "item_id": "2026-05-10_glean_the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments.md",
+      "source": "backlog",
+      "source_name": "raw-backlog",
+      "title": "2026-05-10_glean_the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments.md",
+      "url": "https://www.glean.com/blog/the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_glean_the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments.md",
+      "recommended_action": "skip",
+      "reason_ja": "Glean blog HR enterprise search guide. Same pattern - navigation chrome dominates, no substantive AI/LLM tech content. entities/glean.md already covers.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "",
+      "note": "Previously processed in 2026-05-31T120019Z batch - re-archived for completeness"
+    },
+    {
+      "item_id": "ashvardanian.com--posts-understanding-simd-complexity--7b7e6e31.md",
+      "source": "backlog",
+      "source_name": "raw-backlog",
+      "title": "ashvardanian.com",
+      "url": "https://ashvardanian.com/posts/understanding-simd-complexity/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/ashvardanian.com--posts-understanding-simd-complexity--7b7e6e31.md",
+      "recommended_action": "reference",
+      "reason_ja": "Ash Vardanyan, Evan Ovadia, Daniel Lemire, Chris Lattner SIMD optimization guide. Cosine similarity case study, bfloat16 mixed precision, AVX2/ARM kernels, rsqrt approximations. entities/ash-vardanyan.md already covers NumKong/SimSIMD thoroughly. Valuable future reference for concepts/simd-optimization page.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "",
+      "note": "Previously processed in 2026-05-31T120019Z batch - re-archived for completeness"
+    },
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-adventitious--c4d9d5fb.md",
+      "source": "backlog",
+      "source_name": "raw-backlog",
+      "title": "chiark.greenend.org.uk",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/adventitious/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-adventitious--c4d9d5fb.md",
+      "recommended_action": "skip",
+      "reason_ja": "Simon Tatham brute-forcing Langley's geometry problem with field extensions. Pure math content, no AI/LLM/agent relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "",
+      "note": "Previously processed in 2026-05-31T120019Z batch - re-archived for completeness"
+    },
+    {
+      "item_id": "danluu.com--car-safety--c377d05f.md",
+      "source": "backlog",
+      "source_name": "raw-backlog",
+      "title": "danluu.com",
+      "url": "https://danluu.com/car-safety/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--car-safety--c377d05f.md",
+      "recommended_action": "skip",
+      "reason_ja": "Dan Luu out-of-sample car crash testing analysis. Mentions specfp benchmark gaming as analogy, but core content is automotive safety engineering, not AI/LLM.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "",
+      "note": "Previously processed in 2026-05-31T120019Z batch - re-archived for completeness"
+    }
+  ]
+}
