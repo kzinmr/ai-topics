@@ -1,6 +1,17 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-01] tag-audit | Weekly tag taxonomy audit — 2 violations resolved
+
+### Audit Summary
+- Non-SCHEMA tags: 2 (both one-offs)
+- Removed `trend` from `custom-ai-silicon.md`
+- Removed `ai-skepticism` from `ed-zitron.md`
+- Zero violations remaining after fix
+- No composite kebab-case tags, no normalization needed
+
+---
+
 ## [2026-06-01] blog-wiki-ingest | 5 articles processed (2 take + 3 reference)
 
 - **New concept**: [[concepts/ai-agent-video-editing]] — AI agent video editing meta-pattern: Cursor agent watches YouTube tutorial, replicates process, packages as agent skill. AssemblyAI speech-to-text with word-level timestamps. Source: Arcturus Labs
