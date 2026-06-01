@@ -1,7 +1,7 @@
 ---
 title: Thomas Wiecki
 created: 2026-05-14
-updated: 2026-05-25
+updated: 2026-06-01
 type: person
 tags:
   - person
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/newsletters/2026-05-25-the-future-of-agentic-data-science.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md
   - https://twiecki.io/
   - https://www.pymc-labs.com/team-detail/thomas-wiecki
 ---
@@ -58,6 +59,17 @@ In May 2026, Thomas co-hosted the Vanishing Gradients episode "The Future of Age
 - **Full Agentic Data Science Stack** — orchestration + causal eval + decision framework
 - **Scripted Causal-Bayesian Workflows** — automating rigorous causal analysis at scale
 - **Encoding Professional Judgment as Skills** — domain expertise as reusable agent skills
+
+### Daemon Agent and Decision Tools
+
+In the June 2026 Vanishing Gradients episode "The Agentic Data Science Research Lab," Thomas presented the PyMC Labs tool ecosystem for agentic data science:
+
+- **Daemon Agent** — An always-on background agent built with the Claude Code Agent SDK that participates in multiplayer chat (e.g., Slack). Listens to data science discussions and proactively contributes analyses in real-time, shifting from "ask an analyst, wait for results" to "ask the Daemon, get results immediately."
+- **[[entities/decision-lab|Decision Lab]]** — Open-source tool for causal/Bayesian analysis with a "garden of forking paths" architecture that systematically explores multiple analytical paths for robust, principled analysis.
+- **[[entities/decision-lens|Decision Lens]]** — Agentic dashboard allowing non-technical stakeholders to interact with agentic data science outputs, ask what-if questions, and explore results via natural language.
+- **Garden of Forking Paths** — Architecture that tracks every analytical decision point as a branching path, runs multiple plausible analyses in parallel, and aggregates results to assess robustness. AI agents automatically identify forking points, spawn parallel analyses, and surface robustness assessments.
+
+This ecosystem embodies the [[concepts/agentic-data-science|agentic data science]] paradigm: the 4-layer stack (harness/runtime → skills → orchestration → observability), the PI model (human as Principal Investigator, agents as grad students), and three-tier verification (programmatic, agentic, human).
 
 ## Key Philosophy
 

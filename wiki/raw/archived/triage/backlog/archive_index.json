@@ -95,5 +95,29 @@
     "reason": "既存wikiで完全にカバー済み。entities/doug-turnbull-speaking.md の Conference Talks セクションに「Why 2026 is The Year of Agentic Search」の詳細サマリー（4つの柱：LLM Query Understanding、Autoresearch、Agentic Search Harnesses、LLM-as-a-Judge）が既に収録されている。concepts/agentic-search.md も豊富なコンテンツでカバー済み。",
     "archived_at": "2026-05-31T20:04:29.847460+00:00",
     "filename": "2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search.md"
+  },
+  "https://research.swtch.com/fp-knuth": {
+    "decision": "skip",
+    "archived_at": "2026-06-01T04:02:41.194969+00:00",
+    "source": "backlog",
+    "run_id": "20260601T040035Z"
+  },
+  "https://research.swtch.com/bisect": {
+    "decision": "skip",
+    "archived_at": "2026-06-01T04:02:41.195004+00:00",
+    "source": "backlog",
+    "run_id": "20260601T040035Z"
+  },
+  "https://hex.tech/blog/from-dashboards-to-decisions/": {
+    "decision": "skip",
+    "archived_at": "2026-06-01T04:02:41.195009+00:00",
+    "source": "backlog",
+    "run_id": "20260601T040035Z"
+  },
+  "https://danluu.com/nothing-works/": {
+    "decision": "skip",
+    "archived_at": "2026-06-01T04:02:41.195012+00:00",
+    "source": "backlog",
+    "run_id": "20260601T040035Z"
   }
 }

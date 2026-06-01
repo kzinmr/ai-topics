@@ -1,10 +1,10 @@
 ---
 title: "Claude Code as a Coding Agent"
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-06-01
 type: concept
 tags: [claude-code, ai-coding, coding-agents, ai-agents, multi-agent, agent-orchestration, agent-safety, agentic-engineering, mcp, prompting, infrastructure, developer-experience, ai-adoption, strategy-execution, code-review, feedback-loop, shopify, ai-infrastructure, cost-optimization, vibe-coding]
-sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
+sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md, raw/articles/2026-05-28_anthropic-claude-code-dynamic-workflows.md]
 ---
 
 # Claude Code as a Coding Agent
@@ -16,6 +16,19 @@ Claude Code is [[entities/anthropic|Anthropic]]'s AI coding agent — a CLI tool
 Before any agent patterns work, organizations need a unified infrastructure layer. Shopify built an internal **LLM proxy** ([[concepts/shopify-ai-engineering#llm-proxy-architecture|→ Shopify AI Engineering]]) that routes every AI request — from Claude Code, GitHub Copilot, Cursor, and other tools — through a single gateway. This provides centralized cost control, usage analytics, and the ability to swap models without changing any engineer's workflow.
 
 The lesson: don't standardize on one tool. Standardize the layer *underneath* the tools.
+
+### Dynamic Workflows (May 2026)
+
+In May 2026, Anthropic introduced **Dynamic Workflows** for Claude Code as a research preview. This feature represents a fundamental shift in how Claude Code approaches large-scale codebase operations:
+
+- **Hundreds of parallel subagents** per session — Claude Code plans a task, dynamically spins up parallel subagents, and coordinates their output
+- **Codebase-scale migrations** across 100,000+ lines from kickoff to merge
+- **Full workflow pipeline**: task planning → parallel execution → verification → merge
+- **Dynamic agent spawning** based on task complexity — the system allocates more subagents for more complex tasks
+
+This capability builds on the parallel agent patterns already used by organizations like Shopify (documented in [[concepts/claude-code#Pattern-1-Parallel-Agents-Not-Single-Chat|Pattern 1]]), but automates the orchestration layer that previously required manual engineer coordination.
+
+Dynamic Workflows represents Anthropic's move toward automated multi-agent orchestration at scale, where the tool itself handles subagent spawning, work distribution, and output verification rather than requiring the engineer to manually launch and monitor parallel agents.
 
 ## Pattern 1: Parallel Agents, Not Single Chat
 

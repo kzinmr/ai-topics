@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-01 | Total pages: 2184 | Indexed entries: 1593 | Not in index: 606
+> Last updated: 2026-06-01 | Total pages: 2189 | Indexed entries: 1598 | Not in index: 606
 
-## Entities (732 pages)
+## Entities (735 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -16,7 +16,7 @@
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
 - [[entities/alan-nichol]] — Alan Nichol — Co-founder and CTO of Rasa. Creator of open-source conversational AI framework spaCy. Focus on NLU and dialogue systems.
 - [[entities/antoine-chaffin]] — Antoine Chaffin — Researcher at LightOn. Lead author of DenseOn/LateOn (SOTA open retrieval models), PyLate (CIKM 2025). Late Interaction Workshop co-organizer.
-- [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H. Safety-focused LLM lab founded by former OpenAI researchers.
+- [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H ($965B valuation) with expanded investor consortium (Capital Group, Coatue, GIC, etc.) and compute commitments (Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus). Safety-focused LLM lab founded by former OpenAI researchers.
 - [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
 - [[entities/ash-vardanyan]] — Ash Vardanyan — Open-source developer and performance engineer. Creator of USearch, SimSIMD, and other high-performance vector libraries.
 - [[entities/autoreason]] — Autoreason
@@ -156,6 +156,7 @@
 - [[entities/ashwingop]] — Ashwin Gopinath — CEO/Co-founder of Sentra.app, former MIT professor, Reflexion paper co-author. Introduced [[concepts/contextmaxxing]] (contextmaxxing > tokenmaxxing). Company Brain architecture: memory as shared state.
 - [[entities/beads]] — Distributed graph issue tracker for AI coding agents. Created by Steve Yegge (Gastown Hall), powered by Dolt. Agent-optimized with dependency tracking, memory compaction, and MCP integration.
 - [[entities/beej-us]] — **URL:** https://beej.us
+- [[entities/benedict-evans]] — Benedict Evans — Former a16z partner (2011–2022), independent AI analyst. Known for "AI Eats the World" presentation, "1997 internet moment" framing, Jevons paradox for AI labor, task vs job, distribution as moat. On Lenny's Podcast (May 2026).
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
 - [[entities/ben-hylak]] — Ben Hylak — Co-founder & CTO of Raindrop ("Sentry for AI Agents"). Author of "How to Evaluate AI Agents" (2026 guide). Floor raising vs benchmark maxxing framework. Previously Apple (visionOS), SpaceX.
 - [[entities/ben-vinegar]] — Ben Vinegar (@bentlegen), co-founder of Modem (agentic PM), former Sentry engineer (10 years). Co-host of State of Agentic Coding podcast with Armin Ronacher. Author of "Third Party JavaScript" (2013).
@@ -227,6 +228,8 @@
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. 60ms sandboxes, 850K/day. Custom scheduler (no K8s), bare metal. RL/evals = 50% of usage. CLI > MCP philosophy (May 2026).
 - [[entities/daytona-sandbox]] — Daytona's self-hosted sandbox for Claude Managed Agents (May 2026). Three-party architecture, dual orchestrator (polling/webhook), snapshot-based sandboxes, 30-day lifecycle.
+- [[entities/decision-lab]] — Decision Lab — Open-source causal/Bayesian analysis tool by PyMC Labs. Garden of forking paths architecture for robust analysis.
+- [[entities/decision-lens]] — Decision Lens — Agentic dashboard for stakeholders by PyMC Labs. Natural language interaction with agentic data science outputs.
 - [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption** + **10T USD hardware ecosystem strategy**. V4-Pro permanent 75% discount ($0.435/$0.87 per M tokens, blended ~$0.18/M). First "Harness team" formed (May 2026). V4 (1.6T/284B MoE, 1M ctx) on Huawei Ascend 950. Grand strategy: KV cache compression → Chinese NAND/LPDDR market creation; TileLang DSL → hardware vendor diversification; equity-collaboration model (OpenAI-AMD style). [[concepts/deepseek-v4]], [[concepts/deepseek-r1]], [[concepts/grpo]].
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
@@ -272,7 +275,7 @@
 - [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
 - [[entities/fernando-borretti]] — **URL:** https://borretti.me
 - [[entities/figma]] — With the arrival of Claude Design, Figma has become a **case study illustrating vulnerability in the SaaS AI era**.
-- [[entities/figure-ai]] — Figure AI — Humanoid robotics company. F.03 robot with Helix-02 VLA model autonomously sorted 100K+ packages. Onboard AI processing.
+- [[entities/figure-ai]] — Figure AI — Humanoid robotics company. F.03 robot with Helix-02 VLA model autonomously sorted 100K+ packages. Onboard AI processing. First commercial agreement with Catalyst Brands (JCPenney, Aéropostale, Brooks Brothers) for Reno, NV warehouse deployment (May 2026).
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
 - [[entities/fireworks-ai]] — AI inference and model customization platform. 13T+ tokens/day. Multi-hardware (NVIDIA+AMD), FireAttention, custom speculator training, RFT capabilities.
 - [[entities/folk-app]] — Nozomio Labs personal AI agent. Resides inside iMessage/Telegram/Discord. Restaurant reservations, flight monitoring, apartment search, and more. 24/7 operation, persistent memory. Pro $20/mo, Max $100/mo.
@@ -691,7 +694,7 @@
 - [[entities/databricks]] — Major AI/ML data platform company. Open-sourced MLflow and Unity Catalog. Published Memory Scaling research with MemAlign framework for AI agents.
 - [[entities/devin]] — First autonomous AI coding agent by Cognition AI. End-to-end software engineering: shell, code editor, browser, planner. Autonomous end-to-end testing with computer use (May 2026). Comparison with Claude Code and OpenAI Codex.
 - [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
-- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, Dan Shipper's AI paradox & 12 predictions (May 2026).
+- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, Dan Shipper's AI paradox, Benedict Evans' "1997 internet moment" (May 2026).
 - [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
 - [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
 - [[entities/vercel-labs]] — Vercel Labs — R&D division of Vercel. Creator of Zero, a systems language built for agent-first development (May 2026).
@@ -751,7 +754,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (816 pages)
+## Concepts (818 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -831,6 +834,7 @@
 - [[concepts/agentic-coding]] — Agentic Coding — AI agents writing and modifying code autonomously. The paradigm shift from copilot to autonomous coding
 - [[concepts/agentic-commerce]] — Agentic Commerce — AI agents as autonomous economic actors: shopping, negotiating, and transacting on behalf of users
 - [[concepts/agentic-conflict-resolution]] — Agentic Conflict Resolution — Detecting and resolving contradictions between AI agents, human instructions, and system constraints
+- [[concepts/agentic-data-science]] — Agentic Data Science — AI agents performing data science work with a 4-layer stack (harness/runtime, skills, orchestration, observability), PI model (human as Principal Investigator), garden of forking paths architecture, and three-tier verification. Thomas Wiecki/PyMC Labs.
 - [[concepts/agentic-design-patterns]] — Agentic Design Patterns — Reusable architectural patterns for building AI agent systems
 - [[concepts/agentic-engineering]] — Agentic Engineering: disciplined software development using AI agents, where verification not code reading is the critical skill. Wes McKinney's software factory, RoboRev continuous review, generator-evaluator workflows. Evolution from vibe coding.
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering: Cognition, Devin, Multi-Agent Orchestration — Comparison of cognitive architectures for multi-agent systems
@@ -892,6 +896,7 @@
 - [[concepts/ai-digital-nato]] — AI Digital NATO: Threat intelligence sharing coalition concept by the Frontier Model Forum (OpenAI/Anthropic/Google).
 - [[concepts/ai-digital-nato-frontier-model-forum-distillation-alliance]] — "AI Digital NATO — Frontier Model Forum Distillation Alliance"
 - [[concepts/ai-economics]] — "ai-economics"
+- [[concepts/ai-economic-impact]] — AI Economic Impact — Benedict Evans' framings on AI economics: Jevons paradox (cheaper AI → more usage), task vs job automation, value accrual in AI stack, distribution as moat, "1997 internet moment" comparison, anti-AI backlash, consulting/services boom. Sources: [[raw/articles/2026-06-01_benedict-evans-1997-internet-moment.md]]
 - [[concepts/ai-economics-bubble-venture-capital-subprime]] — "ai-economics, bubble, venture-capital, subprime"
 - [[concepts/ai-education]] — "ai-education"
 - [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap by Rohit (@rohit4verse): 5 production-grade projects (SLM mobile app → self-improving coding agent → multimodal video editor → personal Life OS → enterprise workflow agent) to bridge the $150K gap between prompt engineers and systems architects.
@@ -1042,7 +1047,7 @@
 - [[concepts/china-openclaw-agentic-boom]] — The explosive spread of OpenClaw in China in early 2026. Structural transformation driven by low-cost APIs, the DeepSeek effect, and government subsidies. 5 cloud providers competing simultaneously, 135K exposure + 42K auth bypass security crisis, installation market on Taobao/Xianyu at RMB 50-700, Shenzhen OPC subsidies up to $1.4M.→ [[entities/openclaw]], [[concepts/china-agentic-coding-sprint]]
 - [[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]] — claude-agent-sdk orchestration, hooks, subagents, plan-mode
 - [[concepts/claude-certified-architect-domains]] — Claude Certified Architect comprehensive knowledge of all 5 domains (based on @hooeem article). Domain 1: Agentic Architecture & Orchestration (27%) — stop_reason, hub-and-spoke, hooks, task decomposition. Domain 2: Tool Design & MCP (18%) — tool description design, tool_choice. Domain 3: Claude Code Configuration (20%) — CLAUDE.md hierarchy, path-specific rules, plan mode. Domain 4: Prompt Engineering (20%) — explicitness, few-shot, JSON schemas, Batches API. Domain 5: Context Management (15%) — progressive summarization traps, lost in middle, escalation triggers, error propagation, information provenance.
-- [[concepts/claude-code]] — Claude Code as a coding agent: 6 operational patterns (parallel agents, critique loops, MCP integration, CLAUDE.md team infra, strategy-first validation, guardrails), configuration, prompt patterns.
+- [[concepts/claude-code]] — Claude Code as a coding agent: 6 operational patterns (parallel agents, critique loops, MCP integration, CLAUDE.md team infra, strategy-first validation, guardrails) + Dynamic Workflows (May 2026: hundreds of parallel subagents per session for codebase-scale migrations). Configuration, prompt patterns.
 - [[concepts/claude-code-auto-mode]] — Claude Code's auto mode. A Sonnet 4.6-based 2-stage transcript classifier (Stage 1: fast single-token filter → Stage 2: CoT reasoning) replaces human approver. Two-layer defense with prompt injection probe blocks dangerous actions while minimizing permission prompts. FPR 0.4%, captures 83% of actual overeager behavior. Deny-and-continue design.
 - [[concepts/claude-code-goal]] — Claude Code /goal Command — Goal-driven autonomous workflow via prompt-based Stop hook + evaluator model (Haiku). Condition-driven multi-turn execution: set a completion condition, Claude works until evaluator confirms it is met. Complementary to /loop and auto mode.
 - [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]] — claude-code prompt engineering, context management, caching, agent architecture

@@ -1,7 +1,7 @@
 ---
 title: "Figure AI"
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-06-01
 type: entity
 tags:
   - company
@@ -10,6 +10,7 @@ tags:
   - model
 sources:
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
+  - raw/newsletters/2026-05-31-the-signal-catalyst-brands-figure.md
 aliases: ["Figure"]
 ---
 
@@ -35,6 +36,17 @@ Figure AI's F.03 humanoid robot, powered by the **Helix-02 VLA model**, demonstr
 - **3 seconds per package** cycle time
 - **Onboard processing** — no cloud dependency for real-time control
 - **Helix-02**: Vision-Language-Action model that combines visual understanding, language reasoning, and physical action generation
+
+## Commercial Agreement with Catalyst Brands (May 2026)
+
+Figure AI signed its first commercial agreement with **Catalyst Brands**, a portfolio company of Brookfield Asset Management. Key details:
+
+- **Catalyst Brands operates**: JCPenney, Aéropostale, and Brooks Brothers — a portfolio of major retail and apparel brands
+- **Deployment location**: Reno, Nevada warehouse facility
+- **Significance**: First commercial bridge between Figure AI and a Brookfield portfolio company
+- **Shared investor**: Brookfield Asset Management is an investor in both Figure AI and Catalyst Brands, making this a natural strategic alignment
+
+This agreement marks Figure AI's transition from demonstration and pilot projects to a real commercial deployment within a major retail supply chain operation, leveraging the F.03 humanoid and Helix-02 VLA model capabilities proven in the earlier autonomous sorting demonstrations.
 
 ## Significance for AI Agents
 

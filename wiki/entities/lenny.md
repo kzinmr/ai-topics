@@ -58,6 +58,7 @@ Lenny's Podcast features interviews with world-class product leaders, growth exp
 
 **Notable Guests Include:**
 - **Dan Shipper** (Every CEO) — 12 predictions on AI & the future of work, the automation paradox, SaaS vs AI (May 2026)
+- **Benedict Evans** (Former a16z partner, independent analyst) — AI as "1997 internet moment," value accrual in AI stack, Jevons paradox for AI labor, task vs job framing, distribution as moat, anti-AI backlash (May 2026)
 - **Dylan Field** (Figma CEO) — AI, design, and craft as competitive moats
 - **Julie Zhuo** (Former Facebook VP, Sundial CEO) — Managing people to managing AI
 - **Hamel Husain & Shreya Shankar** — AI evals (see below)
@@ -102,6 +103,7 @@ This episode also addressed the Claude Code "no evals" controversy, the distinct
 ### Other AI-Focused Coverage
 
 - **Dan Shipper: The AI Paradox (May 2026)** — "More automation, more humans, more work." Dan made 12 predictions about AI & work: Codex/Claude Code as the OS for work, one super-agent per company, SaaS is not dead, CLIs are over, PMs and full-stack designers will thrive, and the claim that "automation is a lie." See [[entities/dan-shipper#12-predictions-lennys-podcast-may-2026|Dan Shipper's 12 predictions]].
+- **Benedict Evans: A Rational Conversation on Where AI Is Actually Going (May 2026)** — Former a16z partner Benedict Evans discusses AI as a "1997 internet moment," strategic perspectives on value accrual in the AI stack, distribution as the ultimate moat as software gets easier to build, the Jevons paradox applied to AI labor, the "task vs job" framing for automation, anti-AI backlash dynamics, and the consulting/services boom around AI adoption. See [[entities/benedict-evans]] and [[concepts/ai-economic-impact]].
 - **Intercom's AI (Fin)** — Lenny's Newsletter covered how Intercom built their AI customer support agent "Fin," exploring practical AI product development lessons
 - **AI Prototyping for PMs** — Guide covering AI prototyping tools and techniques for product managers
 - Various episodes with AI company founders and product leaders discussing AI strategy
@@ -146,11 +148,13 @@ The following raw articles in the wiki reference Lenny Rachitsky or Lenny's Podc
 
 ## Related Entities
 
+- [[entities/benedict-evans]] — Former a16z partner, independent analyst, guest on Lenny's Podcast (May 2026)
 - [[entities/dan-shipper]] — CEO of Every, guest on Lenny's Podcast (May 2026) with 12 predictions on AI & work
 - [[entities/hamel-husain]] — Guest on Lenny's Podcast for the AI evals episode; expert on AI engineering and evaluation methodology
 - [[entities/shreya-shankar]] — Guest on Lenny's Podcast for the AI evals episode; Berkeley PhD researcher on AI evaluation and DocETL creator
 - [[concepts/ai-evals]] — Core topic covered on Lenny's Podcast, the evaluation framework for AI products
 - [[concepts/llm-as-judge]] — Evaluation technique discussed in the AI evals episode
+- [[concepts/ai-economic-impact]] — AI economic framings from Benedict Evans episode on Lenny's Podcast
 
 ## Sources
 
@@ -163,4 +167,5 @@ The following raw articles in the wiki reference Lenny Rachitsky or Lenny's Podc
 - [NewsletterInsights: Lenny's Newsletter](https://newsletterinsights.io/newsletter/lenny) — Subscriber statistics
 - [Lenny's Newsletter: "1,000,000"](https://www.lennysnewsletter.com/p/1000000) — Milestone reflection on reaching 1M subscribers
 - [All American Speakers Biography](https://www.allamericanspeakers.com/celebritytalentbios/Lenny+Rachitsky/465741) — Detailed biography
+- [Lenny's Podcast: Benedict Evans (May 2026)](https://www.lennysnewsletter.com/p/a-rational-conversation-on-where) — "A rational conversation on where AI is actually going"
 - Raw articles in `~/wiki/raw/articles/lenny-*` and `~/wiki/raw/articles/open.substack.com--pub-lenny-p-*`

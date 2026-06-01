@@ -1,10 +1,10 @@
 ---
 title: Anthropic
 created: 2026-05-29
-updated: 2026-05-31
+updated: 2026-06-01
 type: entity
 tags: [company, lab, anthropic, ai-native, pricing, token-economics, vc, ai-safety, model]
-sources: [raw/articles/simonwillison.net--2026-may-29-anthropic--9831b607.md, raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md, raw/newsletters/2026-05-30-the-compute-to-cash-race.md, raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md]
+sources: [raw/articles/simonwillison.net--2026-may-29-anthropic--9831b607.md, raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md, raw/newsletters/2026-05-30-the-compute-to-cash-race.md, raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md, raw/articles/2026-05-28_anthropic-series-h-65b.md]
 ---
 
 # Anthropic
@@ -32,6 +32,23 @@ This 13× multiplier on consumption means short-term usage spikes get annualized
 - **Lead investors**: Altimeter (largest investor), Dragoneer, Greenoaks, Sequoia
 - **Run-rate revenue**: $47B (up from $9B in December 2025)
 - **Revenue growth**: 5× in 5 months
+
+### Series H — Expanded Detail
+The Series H round included a broader consortium beyond the four lead investors:
+
+- **New co-lead investors**: Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, XN
+- **Significant investors**: AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity, General Catalyst, Insight Partners, Jane Street, Lightspeed, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price, Temasek
+- **$15B of previously committed investments from hyperscalers**, including $5B from Amazon
+- **Strategic infrastructure partners**: Micron, Samsung, SK hynix — memory and semiconductor partners for compute supply chain
+
+Compute commitments from infrastructure partners:
+| Partner | Capacity |
+|---------|----------|
+| **Amazon** | Up to 5GW of new compute capacity |
+| **Google / Broadcom** | 5GW of next-generation TPU capacity |
+| **SpaceX** | Access to GPU capacity in Colossus 1 and Colossus 2 |
+
+Claude is the first frontier model available on all three major clouds: AWS, Google Cloud, and Azure. Funding is intended to advance safety and interpretability research, expand compute infrastructure, and scale product offerings.
 
 ### Mythos-Class Model Plans
 Anthropic's **Mythos-class** model is described as a "new class of model" more capable than Opus. The company is adopting a **stepped-release strategy**:
@@ -77,7 +94,6 @@ Claude Opus 4.8 introduced notable honesty improvements:
 Training philosophy: train models to avoid unsupported claims and flag uncertainty.
 
 ## Technical Features (Opus 4.8)
-
 
 
 ## Opus 4.8 Benchmark Results

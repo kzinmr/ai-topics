@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-01] wiki-ingest | Lenny's Podcast — Benedict Evans episode integration
+
+- **New entity**: [[entities/benedict-evans]] — Former a16z partner (2011–2022), independent AI analyst. Covers "AI Eats the World" presentation, "1997 internet moment" framing, Jevons paradox for AI labor, task vs job, distribution as moat, anti-AI backlash, value accrual in AI stack, consulting/services boom. Newsletter at ben-evans.com.
+- **Enriched**: [[entities/lenny]] — Added Benedict Evans as notable guest, Benedict Evans AI-focused coverage section, updated related entities and sources
+- **New concept**: [[concepts/ai-economic-impact]] — Comprehensive page covering Benedict Evans' AI economic framings: Jevons paradox (cheaper AI → more usage), task vs job automation, value accrual in AI stack, distribution as ultimate moat, "1997 internet moment" comparison, anti-AI backlash dynamics, consulting/services boom
+- **Updated**: [[concepts/ai-economics]] — Added redirect links to the new ai-economic-impact page
+- **Updated**: index.md — Added benedict-evans, ai-economic-impact entries; updated lenny entry; updated counts (Entities: 734→735, Concepts: 817→818, Total: 2187→2189, Indexed: 1596→1598)
+- **SCHEMA.md**: Added tags `analyst`, `labor`
+- **Source**: raw/articles/2026-06-01_benedict-evans-1997-internet-moment.md — "A rational conversation on where AI is actually going | Benedict Evans" on Lenny's Podcast
+
 ## [2026-06-01] wiki-ingest | HumanLayer "Advanced Context Engineering for Coding Agents" article integration
 
 - **Raw article saved**: `raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents.md` — dexhorthy's Y Combinator talk/blog post on getting AI coding agents to work in complex codebases (300K+ LOC)
@@ -5339,3 +5349,22 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
   - Parser: fixed regex to match actual output format (`Scanning N blog(s)...` not `Scanned N: M succeeded`)
 - **Result**: 132 blogs scanned, 5 failures (404s/timeouts), 24 articles found, 17 saved as raw
 - **Commits**: `7b1c585b` (path fix), `52ac24f1` (parser fix), `30c31829` (failure count fix), `fff4c22f` (raw articles)
+
+---
+
+## [2026-06-01] the-signal-ingest | Anthropic Series H, Claude Code Dynamic Workflows, Figure Catalyst Brands
+
+- **Enriched**: [[entities/anthropic]] — Added "### Series H — Expanded Detail" section with new co-lead investors (Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, XN), strategic partners (Micron, Samsung, SK hynix), compute commitments (Amazon up to 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus access). Bumped updated date to 2026-06-01. Added source: raw/articles/2026-05-28_anthropic-series-h-65b.md
+- **Enriched**: [[concepts/claude-code]] — Added "### Dynamic Workflows (May 2026)" section after "## The Infrastructure Layer" explaining Claude Code's hundreds of parallel subagents per session for codebase-scale migrations. Bumped updated date to 2026-06-01. Added source: raw/articles/2026-05-28_anthropic-claude-code-dynamic-workflows.md
+- **Enriched**: [[entities/figure-ai]] — Added "### Commercial Agreement with Catalyst Brands (May 2026)" section: Catalyst Brands operates JCPenney, Aéropostale, Brooks Brothers; Reno, Nevada deployment; first commercial bridge between Figure and Brookfield portfolio company with Brookfield as shared investor. Bumped updated date to 2026-06-01. Added source referencing raw newsletter.
+- **Updated**: index.md — Enhanced entries for entities/anthropic, entities/figure-ai, and concepts/claude-code with expanded descriptions reflecting new content.
+- **Source**: The Signal newsletter (Alex Banks, 2026-05-31)
+
+## [2026-06-01] wiki-ingest | Thomas Wiecki — Agentic Data Science Research Lab (Vanishing Gradients)
+
+- **New entity**: [[entities/decision-lab]] — Open-source causal/Bayesian analysis tool by PyMC Labs. Garden of forking paths architecture for robust analysis. Tags: company, open-source, data-science, bayesian, ai-agents.
+- **New entity**: [[entities/decision-lens]] — Agentic dashboard for stakeholders by PyMC Labs. Natural language interaction with agentic data science outputs. Tags: company, tool, data-science, bayesian, agent-orchestration.
+- **New concept**: [[concepts/agentic-data-science]] — Comprehensive concept page covering: definition (AI agents doing data science work), 4-layer stack (harness/runtime, skills, orchestration, observability), PI model (human as Principal Investigator, agents as grad students), Garden of Forking Paths architecture, Daemon agent (Claude Code Agent SDK in multiplayer chat), three-tier verification (programmatic, agentic, human), and escaping "vibe science." Tags: concept, data-science, ai-agents, bayesian, agent-orchestration, verification, orchestration.
+- **Enriched**: [[entities/thomas-wiecki]] — Added "### Daemon Agent and Decision Tools" section covering Daemon agent, Decision Lab, Decision Lens, and garden of forking paths architecture. Bumped updated to 2026-06-01. Added source: raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md.
+- **Updated**: index.md — Added entries for decision-lab, decision-lens (entities section), agentic-data-science (concepts section). Updated counts (Entities: 734, Concepts: 817, Total: 2187, Indexed: 1596).
+- **Source**: raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md

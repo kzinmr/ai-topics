@@ -1,0 +1,62 @@
+[
+  {
+    "item_id": "2026-05-14_kzinmr_nvidia-rubin-comprehensive-report",
+    "source": "backlog",
+    "source_name": "kzinmr (NVIDIA Rubin Comprehensive Report)",
+    "title": "NVIDIA Rubinプラットフォームによる計算力チェーンの包括的刷新と次世代ボトルネックの解消に関する調査報告",
+    "url": null,
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ 既存concepts/nvidia-vera-rubin.mdに包括的に収録済み。Groq 3 LPU買収、Vera CPU（Olympus 88コア）、HBM4（2048-bitバス幅）、NVLink 6（3.6 TB/s）、CPO/COUPE技術、NVL72/NVL8システム構成、ICMS/KVキャッシュ、Direct Liquid Coolingなど全セクションが既存ページに反映済み。sources frontmatterに当該ファイル名が既に記載。",
+    "candidate_wiki_path": "concepts/nvidia-vera-rubin.md",
+    "body_excerpt": "人工知能（AI）モデルの爆発的な進化は、従来の計算インフラにおける設計思想の根本的な転換を迫っている。これまでAIの進歩を支えてきたのは、膨大なデータを用いてモデルの基礎的な知見を構築する「事前学習（Pre-training）のスケーリング則」であった。しかし現代のAIシステムは、人間による微調整や強化学習を通じて思考プロセスを磨く「事後学習（Post-training）のスケーリング則」、さらには推論時に膨大なトークンを動的に生成して論理的思考を深化させる「テストタイム（Test-time）のスケーリング則」という、新たなパラダイムへと突入している。"
+  },
+  {
+    "item_id": "research.swtch.com--fp-knuth--00ec0d59",
+    "source": "backlog",
+    "source_name": "Russ Cox (research.swtch.com)",
+    "title": "Pulling a New Proof from Knuth's Fixed-Point Printer",
+    "url": "https://research.swtch.com/fp-knuth",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/research.swtch.com--fp-knuth--00ec0d59.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ Russ CoxによるKnuthの1989年論文「A Simple Program Whose Proof Isn't」に対する数学的証明記事。16ビット固定小数点の十進数変換アルゴリズムの正しさの証明を扱う。純粋なCS/数学トピックであり、AI/LLM/エージェントとの関連性なし。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "Donald Knuth wrote his 1989 paper 'A Simple Program Whose Proof Isn't' as part of a tribute to Edsger Dijkstra on the occasion of Dijkstra's 60th birthday. Today's post is a reply to Knuth's paper on the occasion of Knuth's 88th birthday. In his paper, Knuth posed the problem of converting 16-bit fixed-point binary fractions to decimal fractions, aiming for the shortest decimal that converts back to the original 16-bit binary fraction."
+  },
+  {
+    "item_id": "research.swtch.com--bisect--5dfb7e4e",
+    "source": "backlog",
+    "source_name": "Russ Cox (research.swtch.com)",
+    "title": "Hash-Based Bisect Debugging in Compilers and Runtimes",
+    "url": "https://research.swtch.com/bisect",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/research.swtch.com--bisect--5dfb7e4e.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ Russ Coxによるハッシュベースのbisectデバッグ技法の記事。コンパイラ/ランタイムのバグ追跡における二分探索の応用を解説。DevOps/デバッグ技術トピックであり、AI/LLM/エージェントとの直接の関連性なし。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "You make a change to a library to optimize its performance or clean up technical debt or fix a bug, only to get a bug report: some very large, incomprehensibly opaque test is now failing. Or you add a new compiler optimization with a similar result. Now you have a major debugging job in an unfamiliar code base."
+  },
+  {
+    "item_id": "2026-05-10_hex-technologies_from-dashboards-to-decisions",
+    "source": "backlog",
+    "source_name": "Hex Technologies Blog",
+    "title": "How to drive real business impact by mastering ad hoc analysis",
+    "url": "https://hex.tech/blog/from-dashboards-to-decisions/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_hex-technologies_from-dashboards-to-decisions.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ Hex Technologiesのブログ記事。ダッシュボード vs ad hoc分析の比較、データチームのROI改善に関するビジネス/分析コンテンツ。AI/LLM/エージェントとの関連性なし。一般的なデータ分析ビジネスアドバイスに留まる。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "Over the past decade, data teams have grown, data stacks have gotten more complex, and business cultures that prioritize data have been defined and embraced. But amidst all this growth and investment, one of the most important parts of data analysis has been neglected: ad hoc analysis."
+  },
+  {
+    "item_id": "danluu.com--nothing-works--347942bb",
+    "source": "backlog",
+    "source_name": "Dan Luu",
+    "title": "Why is it so hard to buy things that work well?",
+    "url": "https://danluu.com/nothing-works/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--nothing-works--347942bb.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ Dan Luuのエッセイ。市場の非効率性、build vs buy判断、組織文化と信頼の問題を扱う。AI/LLM/エージェントとの直接の関連性なし。一般的なテクノロジー経済・組織論のcommentary。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "There's a cocktail party version of the efficient markets hypothesis I frequently hear that's basically, 'markets enforce efficiency, so it's not possible that a company can have some major inefficiency and survive'."
+  }
+]
