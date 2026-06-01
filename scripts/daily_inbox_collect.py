@@ -36,20 +36,19 @@ def run_blogwatcher_scan() -> dict:
         )
         result["ran"] = True
         result["stdout"] = proc.stdout + proc.stderr
-        # Parse summary line: "Scanned N blog(s): M succeeded, K failed"
+        # Parse: "Scanning N blog(s)..." → total blogs scanned
+        # Parse: "Found N new article(s) total!" → new articles
+        # Parse: "No new articles found." → 0 new
+        import re
         for line in result["stdout"].splitlines():
-            if "Scanned" in line and "succeeded" in line:
-                import re
-                m = re.search(r"Scanned (\d+).*?(\d+) succeeded.*?(\d+) failed", line)
-                if m:
-                    result["total"] = int(m.group(1))
-                    result["succeeded"] = int(m.group(2))
-                    result["failed"] = int(m.group(3))
-            if "Found" in line and "new article" in line:
-                import re
-                m = re.search(r"Found (\d+) new", line)
-                if m:
-                    result["new_from_scan"] = int(m.group(1))
+            m = re.search(r"Scanning (\d+) blog", line)
+            if m:
+                result["total"] = int(m.group(1))
+            m = re.search(r"Found (\d+) new", line)
+            if m:
+                result["new_from_scan"] = int(m.group(1))
+        result["succeeded"] = result["total"]
+        result["failed"] = len(result.get("failures", []))
         # Parse failures
         current_blog = None
         for line in result["stdout"].splitlines():
