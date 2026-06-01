@@ -2,7 +2,7 @@
 title: AI Slop
 type: concept
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-01
 tags:
   - ai-slop
   - coding-agents
@@ -12,9 +12,11 @@ tags:
   - technical-debt
   - ai-adoption
   - code-review
+  - eval-loops
 sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-05-24-the-eternal-sloptember-html--06dfb1d8.md
   - raw/articles/lucumr.pocoo.org--2026-5-24-pi-oss--32605b95.md
+  - raw/articles/2026-05-30_exm7777_fix-ai-slop-using-hermes.md
 ---
 
 # AI Slop
@@ -69,6 +71,18 @@ Both Hotz and Ronacher point to a fundamental tension: AI tools increase code vo
 - **"You're using it wrong"**: Proponents argue that proper prompting, harness engineering, and human-in-the-loop review can mitigate slop. Hotz explicitly rejects this: "I have tried all the different models, different harnesses, different prompts. It's not this."
 - **Tool evolution**: Better agent harnesses (like Pi itself) and improved models may reduce slop over time. The question is whether the improvement curve outpaces the adoption curve.
 - **Productivity gains are real**: Even critics acknowledge AI agents are "absurdly fast" for quick prototypes and better-than-Google for searches. The debate is about _net_ quality impact.
+
+## The Solution: Eval Loops
+
+The emerging consensus is that AI slop is fundamentally a **systems problem**, not a prompt problem. Machina (@EXM7777, May 2026) argues in "[[raw/articles/2026-05-30_exm7777_fix-ai-slop-using-hermes|How To Fix AI Slop (Using Hermes)]]" that the missing layer is an **eval loop** — automated quality control that scores every AI output against a predefined benchmark before it reaches users:
+
+- **Input-side fixes can't solve it**: Better prompts, larger models, and context files are all generation-side. They don't catch bad output. "A better gun fired into the dark still hits nothing."
+- **Quality becomes a number**: A rubric scored 0-1 per criterion (specificity, accessibility, structure, novelty) transforms slop from a subjective feeling into a debug-able metric. "You can't debug a vibe. You can debug a score that dropped from 0.82 to 0.61."
+- **Three-place deployment**: Eval loops should run pre-ship (regression testing against gold-standard cases), at runtime (guardrails blocking sub-threshold output), and in production (continuous monitoring via cron).
+- **Self-hardening**: When bad output is flagged, it becomes a new permanent test case. The quality floor rises automatically.
+- **Hermes-native implementation**: The article provides a concrete 6-move build using Hermes Agent's primitives (skills, memory, cron, approval buttons) — no external tooling required.
+
+This perspective reframes the slop discussion from "can it be fixed?" to "here is the layer that was never built." See [[concepts/eval-loops]] for the full framework.
 
 ## Related
 

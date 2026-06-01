@@ -1,3 +1,32 @@
+## [2026-06-01] X bookmarks ingest | Eval Loops, Token-to-Outcome, High-Frequency Software
+
+### Summary
+- Processed 3 X Article bookmarks (all with full body via X API tweet.fields=article)
+- Created 5 new wiki pages, enriched 3 existing pages
+- Added 2 new SCHEMA.md tags: eval-loops, llm-as-judge
+
+### Pages Created
+- [[concepts/eval-loops]] — AI eval loops: automated quality control with 3-part benchmarks, 3-place deployment, self-hardening via failure capture
+- [[concepts/token-to-outcome-attribution]] — Enterprise layer connecting inference spend to business outcomes (marginal token utility, retry tails, context inflation, routing waste)
+- [[concepts/high-frequency-software]] — HFT-to-software analogy: 10x AI acceleration as phase shift, edge funds, front running, AI fracking
+- [[entities/machina]] — AI practitioner (@EXM7777), "How To Fix AI Slop (Using Hermes)" author
+- [[entities/scott-stevenson]] — CEO of Spellbook Legal (@scottastevenson), "High-Frequency Software" author
+
+### Pages Enriched
+- [[concepts/ai-slop]] — Added "The Solution: Eval Loops" section with Machina's framework
+- [[concepts/token-economics]] — Added Token-to-Outcome Attribution and BPO-as-Benchmark sections
+- [[entities/jaya-gupta]] — Added Token Budget Wars article and concepts
+
+### Raw Articles Saved
+- raw/articles/2026-05-30_exm7777_fix-ai-slop-using-hermes.md
+- raw/articles/2026-05-27_jayagup10_token-budget-wars.md
+- raw/articles/2026-02-17_scottastevenson_high-frequency-software.md
+
+### Notes
+- All articles had full body fetched via X API tweet.fields=article — no fallback needed
+- SCHEMA.md updated: added eval-loops and llm-as-judge to Techniques taxonomy
+- Total wiki page count: 2195 → 2200
+
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 

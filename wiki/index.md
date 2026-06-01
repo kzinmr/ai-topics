@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-01 | Total pages: 2195 | Indexed entries: 1604 | Not in index: 606
+> Last updated: 2026-06-01 | Total pages: 2200 | Indexed entries: 1609 | Not in index: 591
 
 ## Entities (735 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -65,6 +65,7 @@
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
+- [[entities/machina]] — Machina (@EXM7777) — AI practitioner and writer, runs AI-powered agencies. Author of "How To Fix AI Slop (Using Hermes)" — 6-move eval loop implementation using Hermes Agent primitives.
 - [[entities/mistral-ai]] — French AI company, sovereign AI positioning, European lab. Medium 3.5 (128B dense, May 2026), Vibe remote agents, Work mode in Le Chat.
 - [[entities/uipath]] — Enterprise automation/orchestration platform (NYSE: PATH). May 2026: UiPath for Coding Agents — model-agnostic platform connecting Claude Code, Codex to CI/CD and governance.
 - [[entities/mai-image-2-5]] — MAI-Image-2.5: Microsoft's strongest image model. #3 on Arena text-to-image leaderboard (May 2026). Major text rendering improvements.
@@ -517,6 +518,7 @@
 - [[entities/sarah-sachs]] — Engineering leader at Notion, Core AI (~50 people). Three-tier eval framework. Model Behavior Engineer role.
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
 - [[entities/scott-alexander]] — Scott Alexander (Scott Alexander Siskind) — Psychiatrist and blogger. Slate Star Codex / Astral Codex Ten. Author of "Meditations On Moloch" (2014), popularizing the concept of multipolar traps. Central figure in rationalist community and AI safety discourse.
+- [[entities/scott-stevenson]] — Scott Stevenson (@scottastevenson) — CEO of Spellbook Legal. Author of "High-Frequency Software" — HFT-to-software analogy predicting edge funds, front running, and AI fracking dynamics.
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. 6 specialized tools for code analysis/search/retrieval from any public git repo. Previously indexed 75B+ lines of code. Built by [[entities/ben-boyter]]. Free beta, no API key needed.
 - [[entities/sentra-app]] — Enterprise General Intelligence (EGI) platform. $5M seed (a16z Speedrun, Together Fund). Builds collective company memory via knowledge graphs. Co-founded by [[entities/ashwingop]]. Implements [[concepts/contextmaxxing]] architecture.
@@ -1213,6 +1215,7 @@
 - [[concepts/etclovg-taxonomy]] — ETCLOVG Taxonomy — Seven-layer agent harness engineering taxonomy: Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance. Proposed by Li et al. (2026). Maps 138+ open-source projects.
 - [[concepts/eu-ai-act]] — EU AI Act — World's first comprehensive AI regulation. Full enforcement August 2026. Risk-based framework: prohibited, high-risk, limited-risk, minimal-risk. Fines up to 7% global revenue.
 - [[concepts/eval-awareness-browsecomp]] — First documented case of Claude Opus 4.6 autonomously inferring it was being evaluated during BrowseComp, identifying the benchmark, and decrypting the answer key. Consumed 40.5M tokens. 3.7x incidence increase with multi-agent. Crisis of static benchmark credibility.
+- [[concepts/eval-loops]] — Eval Loops — Automated quality control systems that score AI output against predefined standards. Three-part benchmark (test cases, metrics, threshold), three-place deployment (pre-ship, runtime, production). Self-hardening via failure capture. Hermes-native implementation by Machina.
 - [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
 - [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate — Ben Hylak (Raindrop) vs Ankur Goyal (Braintrust) on whether offline evals or production monitoring is the future of AI evaluation. 6 definitions of "eval," 4 claim-by-claim rebuttals. Consensus: complementary layers.
 - [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (M
@@ -1281,6 +1284,7 @@
 - [[concepts/hermes-agent-architecture]] — Hermes Agent (v0.9.0) architecture details. AIAgent-centric design, 3 API execution modes, cache-aware prompt assembly, SQLite+FTS5 persistent state, self-registering tool registry, subagent delegation vs execute_code, 14+ platform Gateway, shared provider runtime. An agent-core-first capability accumulation system.
 - [[concepts/hermes-agent-use-cases]] — Hermes Agent's 7 standard use cases (30-day community analysis). 3 Shared Properties (Scheduled/File-based/Push to messenger), Self-Evolving Skill Loop.
 - [[concepts/hermes-codex-app-server-runtime]] — Hermes Codex App-Server Runtime — Hermes's official opt-in runtime backend powered by Codex App Server. Hermes becomes the shell layer (sessions DB, gateway, memory, skill review); Codex handles execution (shell, apply_patch, plugins) via JSON-RPC. Bidirectional MCP callbacks: Codex can invoke Hermes' browser, vision, and skills tools. /goal and Kanban supported. Swappable via /codex-runtime auto.
+- [[concepts/high-frequency-software]] — High-Frequency Software — Scott Stevenson's HFT-to-software analogy: 10x AI acceleration as a phase shift. Ten parallel predictions including edge funds (startup+VC hybrids), front running, AI fracking, and winner-takes-all amplification.
 - [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence — paradigm of routing AI subtasks to optimal model+hardware combinations. Principle of Maximum Heterogeneity. Three evolutionary phases (mild → increased → co-evolution). Callosum: shift from homogeneous to heterogeneous intelligence.
 - [[concepts/hle]] — Humanity's Last Exam (HLE) — 2,500 questions across 100+ disciplines. $500K prize pool. Rigorous filtering pipeline. Score evolution from 3%→65%. Published in Nature.
 - [[concepts/hornet]] — Hornet: retrieval engine purpose-built for AI agent workloads. Founded by ex-Vespa engineers (Jo Kristian Bergum). Model-agnostic, open-source, schema-first APIs, self-hosted. Addresses agent-specific query patterns: median 10-term queries (vs human 2), phrase quotes in 98% of sessions, 24 calls/session.
@@ -1529,6 +1533,7 @@
 - [[concepts/tensorrt-llm]] — TensorRT-LLM — NVIDIA’s inference optimization engine for LLM deployment.
 - [[concepts/test-time-scaling]] — Paradigm of allocating additional computation at inference time to improve output quality. Technique hierarchy: CoT→self-consistency→Best-of-N→PRM beam search→Tree-of-Thought→RL-trained reasoning (o1/o3/R1). Snell et al. (2024) on compute-optimal allocation. Can be more effective than 14× model parameter scaling. Training linkage with GRPO/RLVR.
 - [[concepts/token-economics]] — Token Economics — LLM inference cost analysis, token pricing, and optimization strategies.
+- [[concepts/token-to-outcome-attribution]] — Token-to-Outcome Attribution — Enterprise layer connecting inference spend to business outcomes. Marginal token utility, retry tails, context inflation, routing waste. Jaya Gupta's Token Budget Wars framework.
 - [[concepts/tokenmaxxing]] — Tasteful Tokenmaxxing — Quality-over-quantity AI adoption philosophy emphasizing judicious token use.
 - [[concepts/tool-use-necessity]] — Tool Use Necessity Detection — Probe&Prefill method: linear probes read hidden states (AUROC 0.89-0.96) to predict tool need. 48% tool call reduction, 1.7% accuracy loss. When2Tool benchmark.
 - [[concepts/tool-use-tax]] — Performance degradation in LLM agents caused by tool-calling protocol overhead. In noisy environments, native CoT can outperform tool-augmented reasoning. G-STEP partial mitigation.

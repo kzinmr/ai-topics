@@ -2,14 +2,14 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-05-29
+updated: 2026-06-01
 tags:
   - inference
   - optimization
   - economics
   - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md]
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md]
 ---
 
 # Token Economics
@@ -117,6 +117,25 @@ Key concerns:
 - Inference capacity is geographically concentrated, creating **latency and sovereignty bottlenecks** for global agent deployment
 
 The Epoch AI analysis reframes the inference capacity discussion from "how cheap can inference get?" to "can infrastructure scale faster than agent-driven demand?"
+
+## Token-to-Outcome Attribution (Marginal Token Utility)
+
+Beyond raw token pricing and optimization, enterprises face a deeper challenge: connecting inference spend to business outcomes. See [[concepts/token-to-outcome-attribution]] for the full framework. Key concepts:
+
+- **Marginal token utility**: The business value created by each additional dollar of inference. Most companies cannot see this number.
+- **Token budget wars** (Jaya Gupta, May 2026): Enterprises are shifting from "is AI useful?" to "where is AI actually creating leverage?" — the fight for ownership of token allocation.
+- **Retry tails**: Workflow completion rate drops from 90% to 70% → effective cost rises ~28% due to compounding failures.
+- **Context inflation**: Doubling context length roughly quadruples reasoning cost (O(n²) attention). Systems routinely over-supply.
+- **Routing waste**: Easy classification tasks running on frontier models — across millions of calls, the cost difference is often the difference between manageable and board-level problem.
+
+The fundamental insight: two enterprises with identical token bills can be running completely different operations — one converting inference into outcomes, the other paying for thrash that looks identical on the line item.
+
+## AI Spend vs Labor: BPO as Benchmark (Jaya Gupta, May 2026)
+
+The enterprise conversation is shifting from "cost per token" to **"cost per completed outcome"**:
+- BPO contracts are already priced in completed units (per ticket, claim, invoice, review) — making them the easiest AI comparison baseline
+- Internal labor is harder to benchmark: productivity gains show up as avoided hiring or diffuse capacity, not eliminated headcount
+- A claim requiring three retries, human correction, and a frontier model may be more expensive than the outsourced labor it was supposed to replace
 
 
 ## Hidden Self-Hosting Costs

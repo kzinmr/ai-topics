@@ -1,13 +1,13 @@
 ---
 title: "Jaya Gupta"
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-06-01
 type: entity
 status: L2
-tags: [person, blogger, x-account, ai-adoption, governance]
+tags: [person, blogger, x-account, ai-adoption, governance, token-economics]
 aliases: ["@JayaGup10"]
-sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md]
-related: [concepts/organizational-moat, concepts/context-graphs]
+sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md]
+related: [concepts/organizational-moat, concepts/context-graphs, concepts/token-to-outcome-attribution]
 ---
 
 # Jaya Gupta
@@ -33,6 +33,17 @@ Wrote *"The next biggest moat in AI"* — argued that in an era where products, 
 
 ### Service-as-Software (2025)
 Co-authored *"The $4.6T Services-as-Software opportunity: Lessons from year one"* — analysis of the services-to-software transformation opportunity.
+
+### Token Budget Wars (May 2026)
+Wrote *"Token Budget Wars"* — analyzed the emerging enterprise dynamics as inference becomes a metered operational resource. Key contributions:
+- **Marginal token utility**: Introduced the concept that the business value per inference dollar is what matters at scale, but most companies cannot measure it.
+- **Three cost drivers**: Retry tails (compounding failures), context inflation (O(n²) attention costs), and routing waste (frontier models for simple tasks).
+- **BPO as benchmark**: Business Process Outsourcing contracts, already priced in completed units, are the easiest AI comparison baseline — but internal labor is harder to benchmark.
+- **Token-to-outcome attribution**: The missing infrastructure layer that connects inference spend to completed business outcomes (per resolved ticket, processed claim, avoided hire).
+- **Decision traces**: Argues that AI agent traces — every retrieval, tool call, retry, and human correction — become a durable organizational memory more valuable than cost reports.
+- **Enterprise transformation**: Predicts token-to-outcome attribution will arrive like ERP and BI did — as a CEO-driven program with new infrastructure.
+
+This article extends her earlier [[concepts/context-graphs|Context Graphs]] thesis into the operational measurement domain. See [[concepts/token-to-outcome-attribution]] for the full framework.
 
 ## Core Ideas
 
