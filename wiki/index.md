@@ -1191,6 +1191,7 @@
 - [[concepts/dspy-rlm]] — DSPy.RLM
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/dual-process-theory]] — Dual Process Theory (AI) — Applying Kahneman's System 1/System 2 model to LLM reasoning frameworks
+- [[concepts/long-running-search-agents]] — Long Running Search Agents — Design patterns for search agents running unattended for hours/days. 7 progressive strategies: single context, cron restarts, compaction, local index (3.7x yield gain), frontier prompt, query model, self-querying. Doug Turnbull, Cheat at Search (June 2026).
 - [[concepts/durable-execution]] — Durable Execution — State persistence and recovery patterns for long-running AI agent workflows
 - [[concepts/dynamic-software]] — Dynamic Software — Self-modifying code paradigms and agent-adaptive software architecture
 - [[concepts/dynamic-workflows]] — Claude Code Dynamic Workflows (May 2026): Multi-agent orchestration within single session. Plan → spawn 100s parallel subagents → verify → report. Enables codebase-scale migrations. Opus 4.8, research preview. Enterprise/Team/Max plans.

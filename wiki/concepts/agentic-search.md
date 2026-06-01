@@ -636,7 +636,23 @@ Turnbull's framing pushes the RLM concept to its logical conclusion for search:
 
 This directly connects to the [[concepts/code-mode|CodeMode]] pattern and [[concepts/context-fragments|Context Fragments]] — both of which treat context not as a passive input but as a structured artifact the agent actively queries and mutates.
 
-Sources: [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], [[concepts/rlm-recursive-language-models]], [[concepts/recursive-language-models]]
+#### Empirical Strategies for Long-Running Agents (June 2026)
+
+Turnbull's [[concepts/long-running-search-agents|Cheat at Search lecture on Long Running Search Agents]] (June 2026) provides the first systematic empirical study of these patterns across 7 progressive strategies:
+
+| Strategy | Yield/Call | Key Insight |
+|----------|-----------|-------------|
+| Single context | 0.795 | Baseline; context exhaustion inevitable |
+| Cron job (restart) | 0.720 | Wasted context grows O(n); 34 duplicates |
+| Compaction | 0.738 | Still O(n), doesn't scale indefinitely |
+| **Local index** | **2.68** | **Biggest gain — avoid external API waste** |
+| Frontier prompt | 1.667 | Helps only after easy cases exhausted |
+| Query model | TBD | Simpler but loses reasoning |
+| Self-querying | TBD | Agent queries its own accumulated state |
+
+The central finding: **local memory before external calls** is the single most impactful design principle. A persistent local index (structured with domain taxonomies like NAICS codes) yields 3.7x improvement over naive restart patterns.
+
+Sources: [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], [[concepts/rlm-recursive-language-models]], [[concepts/recursive-language-models]], [[concepts/long-running-search-agents]]
 
 ### Berryman's 5-Level Agentic Search Maturity Model (January 2026)
 
