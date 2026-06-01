@@ -16,7 +16,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-DB_PATH = Path.home() / ".blogwatcher-cli" / "blogwatcher-cli.db"
+DB_PATH = Path("/opt/data/.blogwatcher/blogwatcher.db")
 INBOX_NL = Path.home() / "ai-topics" / "inbox" / "newsletters"
 WIKI_CONCEPTS = Path.home() / "ai-topics" / "wiki" / "concepts"
 WIKI_ENTITIES = Path.home() / "ai-topics" / "wiki" / "entities"
@@ -30,8 +30,9 @@ def run_blogwatcher_scan() -> dict:
               "failures": [], "new_from_scan": 0}
     try:
         proc = subprocess.run(
-            [str(Path.home() / "bin" / "blogwatcher-cli"), "scan"],
+            ["/opt/data/bin/blogwatcher-cli", "scan"],
             capture_output=True, text=True, timeout=120,
+            env={**os.environ, "HOME": "/opt/data"},
         )
         result["ran"] = True
         result["stdout"] = proc.stdout + proc.stderr
