@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-01 | Total pages: 2299 | Indexed entries: 1630 | Not in index: 669
+> Last updated: 2026-06-01 | Total pages: 2302 | Indexed entries: 1630 | Not in index: 672
 
 ## Entities (747 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
