@@ -48,7 +48,6 @@ def run_blogwatcher_scan() -> dict:
             if m:
                 result["new_from_scan"] = int(m.group(1))
         result["succeeded"] = result["total"]
-        result["failed"] = len(result.get("failures", []))
         # Parse failures
         current_blog = None
         for line in result["stdout"].splitlines():
@@ -56,8 +55,10 @@ def run_blogwatcher_scan() -> dict:
             if stripped.startswith("Error:"):
                 if current_blog:
                     result["failures"].append({"blog": current_blog, "error": stripped})
-            elif stripped and not stripped.startswith("Source:") and not stripped.startswith("Found") and not stripped.startswith("Scanned"):
+                    current_blog = None
+            elif stripped and not stripped.startswith("Source:") and not stripped.startswith("Found") and not stripped.startswith("Scanning") and not stripped.startswith("No "):
                 current_blog = stripped
+        result["failed"] = len(result["failures"])
     except Exception as e:
         result["error"] = str(e)
     return result
