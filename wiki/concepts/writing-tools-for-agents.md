@@ -1,229 +1,163 @@
 ---
-title: "Designing Tools for Agents"
+title: "Writing Effective Tools for Agents"
 type: concept
-created: 2026-04-12
+created: 2026-06-02
 updated: 2026-06-02
 tags:
-  - concept
-  - architecture
-  - harness-engineering
-  - anthropic
   - tool-use
-  - agent-architecture
+  - ai-agent-engineering
+  - context-engineering
+  - agent-evaluation
   - mcp
-  - evaluation
-  - agentic-engineering
-aliases:
-  - writing-tools-for-agents
-  - tool-design-principles
-  - agent-computer-interface
-  - aci-design
-  - design-for-agent
-related:
-  - "[[concepts/building-effective-agents]]"
-  - "[[concepts/context-engineering]]"
-  - "[[concepts/harness-engineering]]"
-  - "[[concepts/mcp]]"
-  - "[[concepts/evals-for-ai-agents]]"
-  - "[[concepts/advanced-tool-use]]"
+  - agent-ergonomics
+  - prompting
 sources:
-  - "https://www.anthropic.com/engineering/writing-tools-for-agents"
-  - "https://www.anthropic.com/engineering/building-effective-agents"
-  - "raw/articles/2026-05-08_anthropic-engineering_writing-tools-for-agents.md"
+  - raw/articles/2026-05-08_anthropic-engineering_writing-tools-for-agents.md
+  - https://www.anthropic.com/engineering/writing-tools-for-agents
+related:
+  - concepts/advanced-tool-use
+  - concepts/context-engineering
+  - concepts/evals-for-ai-agents
+  - concepts/agent-skills
+status: active
 ---
 
-# Designing Tools for Agents
+# Writing Effective Tools for Agents
 
-**Designing tools for agents** is a software design paradigm where the primary user of an API, tool, or MCP server is an AI agent rather than a human developer. Anthropic's January 2026 article "Writing Effective Tools for AI Agents" is the most complete articulation of this paradigm, but the concept extends beyond any single article — it represents a fundamental shift in how we think about software interfaces.
+Tools are a new kind of software: a **contract between deterministic systems and non-deterministic agents**. Traditional API design targets predictable callers — `getWeather("NYC")` always behaves the same way. Agents, by contrast, may call a tool, answer from general knowledge, ask a clarifying question, or even hallucinate a call entirely. This demands rethinking tool design from first principles.
 
-> "Instead of writing tools and MCP servers the way we'd write functions and APIs for other developers or systems, we need to design them for agents."
+> "Tools that are most 'ergonomic' for agents also end up being surprisingly intuitive to grasp as humans."
 > — Anthropic Engineering
 
-## The Paradigm Shift: From HCI to ACI
+This page distills the principles and process Anthropic described for maximizing agent tool effectiveness, based on internal evaluations across Slack, Asana, and other production tool suites.
 
-Traditional software design optimizes for **human-computer interaction (HCI)**. Developers write APIs with human ergonomics in mind: readable documentation, intuitive naming, familiar patterns. The Anthropic team coins the parallel concept of **agent-computer interaction (ACI)** — designing interfaces optimized for LLM agents.
+## Core Principles
 
-The surprising finding: **tools optimized for agent context limits and reasoning patterns are often more intuitive for human developers as well.** The design disciplines reinforce each other rather than conflict.
+### 1. Choose the Right Tools (and Not to Implement)
 
-### Key Differences from Traditional API Design
+More tools do not equal better outcomes. A common mistake is wrapping every API endpoint as a tool, regardless of whether agents can use it effectively.
 
-| Dimension | Traditional API Design | Agent Tool Design |
-|-----------|----------------------|-------------------|
-| **User** | Human developer reading docs | LLM processing tool descriptions token-by-token |
-| **Constraint** | Cognitive load, documentation quality | Context window (finite attention budget) |
-| **Error handling** | Stack traces, error codes | Actionable feedback that steers the agent |
-| **Granularity** | Fine-grained CRUD operations | Coarse-grained, workflow-oriented operations |
-| **Success metric** | Developer satisfaction, adoption | Task completion rate, token efficiency |
-| **Iteration** | Manual testing, user feedback | Evaluation-driven, agent-assisted optimization |
+**The address book analogy**: A traditional program can iterate through all contacts efficiently. An LLM agent receiving a full list must read every token — wasting limited context on irrelevant information. The better approach is a `search_contacts` tool that returns only matches, not a `list_contacts` dump.
 
-## The Five Principles of Tool Design
+**Consolidation over fragmentation**: Tools can absorb multiple discrete operations:
 
-### 1. Choose the Right Tools (Not All Tools)
-
-> More tools ≠ better performance.
-
-The fundamental insight: agents have different **affordances** than traditional software. An LLM processes tool responses token-by-token, so returning a list of 10,000 contacts wastes context on irrelevant information.
-
-**Consolidate multi-step workflows into single tools:**
-
-| ❌ Bad (API-style) | ✅ Good (Agent-style) |
+| Instead of | Consider |
 |---|---|
-| `list_contacts`, `list_users`, `create_event` | `search_contacts`, `schedule_event`, `get_customer_context` |
-| `read_logs` (returns everything) | `search_logs` (returns relevant lines + context) |
-| `get_customer_by_id`, `list_transactions`, `list_notes` | `get_customer_context` (compiles all recent info) |
+| `list_users` + `list_events` + `create_event` | `schedule_event` (finds availability and schedules) |
+| `read_logs` | `search_logs` (returns only relevant lines + context) |
+| `get_customer_by_id` + `list_transactions` + `list_notes` | `get_customer_context` (compiles all relevant info) |
 
-Each tool should have a **clear, distinct purpose** that mirrors how a human would subdivide the task — while reducing intermediate context consumption.
+Each tool should have a **clear, distinct purpose** that mirrors how a human would subdivide the task. This simultaneously reduces the number of tool descriptions loaded into context and offloads computation from the agent's reasoning into the tool calls themselves.
 
-### 2. Design Namespaces Strategically
+### 2. Namespace Your Tools
 
-When agents have access to dozens of MCP servers and hundreds of tools, **namespacing prevents tool confusion**:
-- Group by service: `asana_search`, `jira_search`
-- Group by resource: `asana_projects_search`, `asana_users_search`
+Agents may have access to dozens of MCP servers and hundreds of tools. When tools overlap in function or have vague names, agents get confused about which to use.
 
-**Non-trivial finding**: prefix vs. suffix naming affects LLMs differently. Effects vary by model — test empirically with evaluations.
+**Namespacing** groups related tools under common prefixes, delineating boundaries:
+
+- By service: `asana_search`, `jira_search`
+- By resource: `asana_projects_search`, `asana_users_search`
+
+The choice between prefix- and suffix-based namespacing has **non-trivial effects** on tool-use evaluations and varies by LLM. Anthropic encourages selecting a naming scheme based on your own evaluation results.
 
 ### 3. Return Meaningful Context
 
-> Resolving cryptic IDs to human-readable formats significantly reduces hallucinations.
+Tool implementations should return only **high-signal information**. Prioritize contextual relevance over flexibility.
 
-| ❌ Low Signal | ✅ High Signal |
-|---|---|
-| `uuid`, `mime_type`, `256px_image_url` | `name`, `image_url`, `file_type` |
+- **Use natural language identifiers**: Resolving arbitrary UUIDs to human-readable names (or even 0-indexed IDs) significantly improves retrieval precision and reduces hallucinations.
+- **Prefer semantic fields**: `name`, `image_url`, `file_type` over `uuid`, `256px_image_url`, `mime_type`.
 
-**The `response_format` pattern**: Expose an enum parameter letting agents control verbosity:
-- `concise` — essential information only (~⅓ tokens)
-- `detailed` — includes technical IDs needed for downstream calls
+#### The ResponseFormat Enum Pattern
 
-This is analogous to GraphQL's field selection — the agent chooses the granularity it needs.
+When agents need both human-readable and technical identifiers (e.g., for chaining tool calls), expose a `response_format` parameter:
 
-### 4. Optimize Token Efficiency
-
-Claude Code defaults to a 25,000-token response cap. Implement:
-- **Pagination** with sensible defaults
-- **Filtering** to reduce irrelevant results
-- **Truncation** with helpful steering messages
-- **Error responses** that suggest more efficient strategies
-
-> "Error: Max tokens 500 exceeded, try summarizing first" beats "Error: 400 Bad Request" by an enormous margin.
-
-### 5. Engineer Descriptions as Prompts
-
-> The most effective optimization lever.
-
-Tool descriptions are loaded into the agent's context — they collectively steer tool-calling behavior. Write descriptions as if onboarding a new hire:
-- Make implicit context explicit
-- Use strict data models with unambiguous parameter names (`user_id` > `user`)
-- Include when to use AND when not to use the tool
-
-**Small adjustments yield dramatic results**: Claude Sonnet 3.5 achieved SOTA on SWE-bench Verified after precise refinements to tool descriptions alone.
-
-## Evaluation-Driven Development Workflow
-
-The article proposes a three-stage iterative workflow that uses agents to improve their own tools:
-
-### Stage 1: Build Prototypes
-- Wrap tools in a local MCP server or Desktop Extension (DXT)
-- Provide LLM-friendly documentation via `llms.txt`
-- Test manually to identify rough edges
-
-### Stage 2: Run Evaluations
-- Generate tasks grounded in **real-world complexity** (not superficial sandboxes)
-- Strong tasks require dozens of tool calls
-- Use simple agentic loops (`while`-loops alternating LLM API + tool calls)
-- Collect metrics: accuracy, runtime, tool call count, token consumption, error rate
-
-### Stage 3: Agent-Assisted Optimization
-- Paste evaluation transcripts into Claude Code for automatic refactoring
-- Validate on **held-out test sets** (prevent overfitting to training evaluations)
-- Iterate until performance plateaus
-
-> "Most of the advice in this post came from repeatedly optimizing our internal tool implementations with Claude Code."
-
-## The Broader "Design for Agent" Concept
-
-Anthropic's article focuses on MCP tool design, but the "design for agent" paradigm extends further:
-
-### Agent-Legible Software
-[[concepts/harness-engineering|Harness Engineering]] (Ryan Lopopolo, OpenAI) generalizes this: optimize entire codebases, workflows, and organizations for agent readability. The AGENTS.md pattern, `llms.txt` files, and structured documentation are all instances of designing for agent users.
-
-### Progressive Disclosure for Agents
-Don't dump all information into the context window. Provide lightweight references; let agents load details on demand:
-- **Tool definitions**: Index descriptions, retrieve on demand
-- **CLI utilities**: Provide command list; agent uses `--help` for specifics
-- **Skills**: YAML frontmatter in instructions; full content read only when needed
-
-### Context Engineering as Tool Design
-[[concepts/context-engineering|Context engineering]] and tool design are deeply intertwined:
-- Tool definitions tax the attention budget
-- Every tool description is a prompt engineering decision
-- Tool responses are context that shapes future agent behavior
-
-### Agent-Computer Interface (ACI) Design Pattern
-The concept of ACI design parallels decades of HCI research but for a new user class:
-
-```
-HCI (Human-Computer Interface)          ACI (Agent-Computer Interface)
-├── UX research                          ├── Evaluation-driven iteration
-├── Usability testing                    ├── Agent behavior analysis
-├── Progressive disclosure               ├── Token-efficient responses
-├── Error messages for humans            ├── Actionable error steering
-├── Documentation / tutorials            ├── Tool descriptions as prompts
-└── A/B testing                          └── Held-out test set validation
+```python
+enum ResponseFormat {
+    DETAILED = "detailed"   # includes IDs, metadata (~206 tokens)
+    CONCISE = "concise"     # content only (~72 tokens)
+}
 ```
 
-## Relationship to the Agent Engineering Stack
+This is especially valuable for tools like Slack, where `thread_ts` and `channel_id` are needed for downstream calls but shouldn't clutter every response. Concise responses used roughly **one-third the tokens** of detailed ones in Anthropic's testing.
 
+Response structure format (XML, JSON, Markdown) also affects performance — there is no one-size-fits-all. LLMs tend to perform better with formats matching their training data.
+
+### 4. Optimize for Token Efficiency
+
+Quality of context matters, but so does **quantity**. Implement combinations of:
+
+- **Pagination**: Return results in pages rather than all at once
+- **Range selection**: Let agents request specific subsets
+- **Filtering**: Accept query parameters to narrow results
+- **Truncation**: With sensible defaults (Claude Code caps tool responses at 25K tokens)
+
+When truncating, include **helpful instructions** that steer agents toward more efficient strategies (e.g., "use filters or pagination for more results"). Similarly, when tool calls raise errors, provide **actionable error messages** — not opaque error codes or tracebacks.
+
+### 5. Prompt-Engineer Tool Descriptions
+
+Tool descriptions and specs are loaded into the agent's context and collectively shape tool-calling behavior. This is one of the **most effective methods** for improving tool use.
+
+**Think of onboarding a new hire**: What implicit context would they need? Specialized query formats, niche terminology definitions, relationships between resources — make it explicit.
+
+Key guidelines:
+- **Unambiguous parameter names**: `user_id` instead of `user`
+- **Clear input/output schemas**: Enforced with strict data models
+- **Concrete examples**: Show expected usage patterns
+
+Small refinements to tool descriptions can yield dramatic improvements — Claude Sonnet 3.5 achieved state-of-the-art on SWE-bench Verified after precise description refinements that reduced error rates.
+
+## Development Process
+
+### Step 1: Build a Prototype
+
+Stand up a quick prototype and test it hands-on. For MCP servers, connect locally:
 ```
-Design for Agent (paradigm)
-│
-├── Tool Design for Agents (this article)
-│   ├── MCP tool descriptions
-│   ├── Response format design
-│   └── Evaluation-driven iteration
-│
-├── Agent-Legible Software
-│   ├── AGENTS.md pattern
-│   ├── llms.txt documentation
-│   └── Structured codebases
-│
-├── Context Engineering
-│   ├── Tool definitions as context budget
-│   ├── Progressive disclosure
-│   └── Token efficiency
-│
-└── Harness Engineering
-    ├── Environment design for agents
-    ├── CLI design for agents
-    └── Workflow design for agents
+claude mcp add <name> <command> [args...]
 ```
 
-## Graph Structure Query
+Use LLM-friendly documentation (e.g., `llms.txt` files) when building tools with agents like Claude Code. Test yourself to identify rough edges, and collect user feedback to build intuition around expected use cases.
 
-```
-[writing-tools-for-agents] ──author──→ [anthropic]
-[writing-tools-for-agents] ──extends──→ [building-effective-agents]
-[writing-tools-for-agents] ──extends──→ [harness-engineering]
-[writing-tools-for-agents] ──relates-to──→ [context-engineering]
-[writing-tools-for-agents] ──relates-to──→ [mcp]
-[writing-tools-for-agents] ──teaches──→ [evals-for-ai-agents]
-[writing-tools-for-agents] ──embodies──→ [design-for-agent]
-```
+### Step 2: Run an Evaluation
 
-Authored by Anthropic (Ken Aizawa). Extends [[concepts/building-effective-agents]]'s ACI appendix into a full methodology. Embodies the broader "design for agent" paradigm alongside [[concepts/harness-engineering]]'s agent-legible software.
+Generate evaluation tasks grounded in **real-world uses** with realistic data sources. Avoid overly simplistic sandbox environments.
 
-## Related Concepts
+**Strong tasks** require multiple tool calls and realistic complexity:
+> "Schedule a meeting with Jane next week to discuss our latest Acme Corp project. Attach the notes from our last project planning meeting and reserve a conference room."
 
-- [[concepts/building-effective-agents]] — Foundational agent patterns (ACI concept introduced here)
-- [[concepts/context-engineering]] — Context window optimization (tool definitions as context budget)
-- [[concepts/harness-engineering]] — Environment design philosophy (agent-legible software)
-- [[concepts/mcp]] — Model Context Protocol (the tool integration standard)
-- [[concepts/evals-for-ai-agents]] — Agent evaluation methodology (drives tool iteration)
-- [[concepts/advanced-tool-use]] — Advanced tool use patterns
-- [[concepts/code-execution-with-mcp]] — Code execution via MCP
-- [[concepts/progressive-disclosure]] — Progressive disclosure pattern for agents
+**Weak tasks** are too narrow:
+> "Schedule a meeting with jane@acme.corp next week."
 
-## Sources
+Run evaluations programmatically with direct LLM API calls in simple agentic loops. Instruct evaluation agents to output reasoning and feedback blocks **before** tool calls to trigger chain-of-thought behaviors. Track metrics including runtime, tool call count, token consumption, and tool errors.
 
-- [Writing Effective Tools for AI Agents — Anthropic Engineering](https://www.anthropic.com/engineering/writing-tools-for-agents)
-- [Building Effective Agents — Anthropic Engineering](https://www.anthropic.com/engineering/building-effective-agents)
-- [[raw/articles/2026-05-08_anthropic-engineering_writing-tools-for-agents.md]]
+Use **held-out test sets** to prevent overfitting to training evaluations.
+
+### Step 3: Collaborate with Agents to Improve
+
+Let agents analyze evaluation transcripts and refactor tools automatically. Paste concatenated evaluation transcripts into Claude Code — it excels at analyzing transcripts and ensuring tool consistency across changes.
+
+**Read between the lines**: What agents omit in their feedback can be more important than what they include. Observe where agents get confused, review raw transcripts, and analyze tool-calling metrics for patterns (e.g., redundant calls suggest pagination issues, frequent invalid parameters suggest unclear descriptions).
+
+## Comparison: Tool Design for Developers vs. Agents
+
+| Dimension | Traditional API Design | Agent Tool Design |
+|---|---|---|
+| **Caller behavior** | Deterministic, predictable | Non-deterministic, exploratory |
+| **Error handling** | Structured error codes | Actionable natural language messages |
+| **Granularity** | Fine-grained (one operation per call) | Coarse-grained (consolidated workflows) |
+| **Response format** | Fixed schema | Flexible (detailed vs. concise) |
+| **Documentation** | Reference docs for developers | Descriptions that steer agent behavior |
+| **Naming** | Developer conventions | Agent-friendly namespaces |
+| **Success metric** | Correctness | Token efficiency + task completion |
+
+## Relationship to Context Engineering
+
+Effective tool design is a core component of [[concepts/context-engineering|context engineering]]. Tool definitions consume context budget, tool responses populate the context window, and tool descriptions steer agent reasoning. The principles above — returning meaningful context, optimizing for token efficiency, namespace clarity — all serve the broader goal of curating the optimal set of tokens for each inference step.
+
+The [[concepts/advanced-tool-use|Advanced Tool Use]] features (Tool Search Tool, Programmatic Tool Calling) complement these design principles by addressing the platform-level challenge of managing hundreds of tools at scale.
+
+## See Also
+
+- [[concepts/advanced-tool-use]] — Anthropic platform features for scaling tool use (Tool Search, Programmatic Calling)
+- [[concepts/context-engineering]] — Context management strategies for agents
+- [[concepts/evals-for-ai-agents]] — Systematic agent evaluation methodology
+- [[concepts/agent-skills]] — Open standard for domain-specific agent capabilities

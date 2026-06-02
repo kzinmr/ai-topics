@@ -2,23 +2,34 @@
 title: "Agent Skills"
 type: concept
 created: 2026-04-25
-updated: 2026-05-29
+updated: 2026-06-02
 tags:
   - architecture
   - mcp
   - developer-tooling
   - claude-code
+  - codex
+  - openai
+  - agent-evaluation
+  - harness-engineering
+  - ci-cd
 aliases:
   - Agent Skills open standard
 sources:
   - raw/articles/2026-05-08_anthropic-engineering_equipping-agents-for-the-real-world-with-agent-skills.md
   - raw/articles/2026-05-18_browse-sh-browserbase_agent-skills-catalog.md
   - https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+  - raw/articles/2026-03-09_openai-developers-blog_skills-agents-sdk.md
+  - raw/articles/2026-02-11_openai-developers-blog_skills-shell-tips.md
+  - raw/articles/2026-01-24_openai-developers-blog_eval-skills.md
 related:
   - building-effective-agents
   - effective-harnesses-for-long-running-agents
   - mcp
   - claude-code-best-practices
+  - codex
+  - evals-for-ai-agents
+  - harness-engineering
 ---
 # Agent Skills
 
@@ -76,6 +87,53 @@ Skills can include executable code:
 3. **Separate mutually exclusive and infrequent contexts**: Reduce token usage
 4. **Code serves as both executable tool and documentation**: Be clear about which role it should play
 
+## OpenAI Codex Skills Implementation
+
+OpenAI implements skills in [[codex]] using the same open standard, with an emphasis on repo-local workflows, mandatory routing via `AGENTS.md`, and CI automation through GitHub Actions.
+
+### Repo-Local Skills + AGENTS.md
+
+Skills live in `.agents/skills/` (repo-scoped) or `~/.codex/skills/` (user-scoped). `AGENTS.md` acts as a policy layer with if/then rules that mandate skill usage at the right time:
+
+```
+## Mandatory skill usage
+- Use $implementation-strategy before editing runtime or API changes.
+- Run $code-change-verification when code, tests, or build behavior changes.
+- Use $pr-draft-summary when work is ready for review.
+```
+
+### Skills as Container-Mounted Instructions
+
+Skills are reusable, versioned instruction bundles mounted into hosted shell containers. The platform exposes each skill's `name`, `description`, and `path` to the model for routing. The model loads the full `SKILL.md` body and scripts only when the skill is selected -- the same [[concepts/agent-skills|progressive disclosure model]] as the open standard. Server-side [[concepts/context-management|compaction]] keeps long-running skill workflows coherent without manual context management.
+
+### OSS Maintenance Case Study
+
+OpenAI uses Codex with skills to maintain the Agents SDK repos (Python + TypeScript). Key skills include `code-change-verification`, `docs-sync`, `final-release-review`, and `pr-draft-summary`. Results: **457 PRs merged in 3 months** (Dec 2025 -- Feb 2026), up from 316 in the prior 3 months. Skills encode the repo's definition of "verified" (format, lint, typecheck, tests), and `AGENTS.md` makes that definition enforceable.
+
+### Systematic Eval Methodology
+
+OpenAI recommends evaluating skills with the same rigor as any prompt. The methodology from their [[evals-for-ai-agents|evals framework]]:
+
+1. **Define success** -- outcome goals, process goals, style goals, efficiency goals
+2. **Create targeted prompts** -- 10-20 prompts covering explicit invocation, implicit invocation, and negative controls (`should_trigger=false`)
+3. **Deterministic graders** -- use `codex exec --json` to capture structured traces; check for expected commands, file artifacts, and ordering
+4. **Rubric-based grading** -- use `--output-schema` for structured qualitative checks (component structure, style conventions)
+
+Glean reported that a Salesforce-oriented skill increased eval accuracy from 73% to 85% and reduced time-to-first-token by 18.1% after applying negative examples and edge-case coverage in descriptions.
+
+### Comparison: Anthropic vs OpenAI Skill Patterns
+
+| Dimension | Anthropic (Claude Code) | OpenAI (Codex) |
+|-----------|------------------------|----------------|
+| **Location** | User or project `.claude/skills/` | Repo `.agents/skills/` or user `~/.codex/skills/` |
+| **Routing** | Agent reads L1 metadata, decides to load | `AGENTS.md` mandates skill triggers; `description` is routing metadata |
+| **CI integration** | External harness orchestration | Codex GitHub Action (same skill, same logic) |
+| **Eval emphasis** | Community-driven (Hamel Husain skepticism) | Systematic eval methodology with deterministic + rubric grading |
+| **Context management** | Progressive disclosure (L1/L2/L3) | Progressive disclosure + server-side compaction |
+| **Community focus** | Skills as decompressed prompts; audit before use | Skills as versioned playbooks; enforce via AGENTS.md |
+
+Both implementations are converging on the same [[concepts/agent-skills|open standard]]: skills are directories with `SKILL.md` manifests, progressive disclosure from metadata to full instructions, and executable scripts for deterministic operations.
+
 ## Example: PDF Skill
 
 The skill behind Claude's document editing capabilities:
@@ -92,6 +150,9 @@ The skill behind Claude's document editing capabilities:
 - [[concepts/mcp]] — Model Context Protocol
 - [[concepts/claude-code-best-practices]] — Claude Code best practices
 - [[agent-skills-skillmd]] — SKILL.md format details
+- [[codex]] — OpenAI Codex
+- [[evals-for-ai-agents]] — Evals for AI agents
+- [[harness-engineering]] — Harness engineering
 
 ## Skills Ecosystem: Practitioner Perspectives
 

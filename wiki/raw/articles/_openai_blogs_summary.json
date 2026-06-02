@@ -1,0 +1,177 @@
+[
+  {
+    "slug": "15-lessons-building-chatgpt-apps",
+    "title": "15 lessons learned building ChatGPT Apps | OpenAI Developers",
+    "word_count": 2924,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "chatgpt",
+      "codex",
+      "agents",
+      "best-practices"
+    ],
+    "has_code_examples": true,
+    "is_substantive": true,
+    "summary": "15 lessons learned building ChatGPT Apps | OpenAI Developers - Substantive content (2924 words)",
+    "url": "https://developers.openai.com/blog/15-lessons-building-chatgpt-apps/",
+    "filename": "2026-06-02_openai-developers-blog_15-lessons-building-chatgpt-apps.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "building-frontend-uis-with-codex-and-figma",
+    "title": "Building frontend UIs with Codex and Figma | OpenAI Developers",
+    "word_count": 881,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "codex",
+      "agents",
+      "figma",
+      "frontend",
+      "mcp"
+    ],
+    "has_code_examples": true,
+    "is_substantive": true,
+    "summary": "Building frontend UIs with Codex and Figma | OpenAI Developers - Substantive content (881 words)",
+    "url": "https://developers.openai.com/blog/building-frontend-uis-with-codex-and-figma/",
+    "filename": "2026-06-02_openai-developers-blog_building-frontend-uis-with-codex-and-figma.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "codex-at-devday",
+    "title": "How Codex ran OpenAI DevDay 2025",
+    "word_count": 1558,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "codex",
+      "agents",
+      "devday",
+      "mcp"
+    ],
+    "has_code_examples": false,
+    "is_substantive": true,
+    "summary": "How Codex ran OpenAI DevDay 2025 - Substantive content (1558 words)",
+    "url": "https://developers.openai.com/blog/codex-at-devday/",
+    "filename": "2026-06-02_openai-developers-blog_codex-at-devday.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "codex-for-documentation-dagster",
+    "title": "Using Codex for education at Dagster Labs | OpenAI Developers",
+    "word_count": 1340,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "codex",
+      "dagster",
+      "documentation",
+      "best-practices",
+      "api"
+    ],
+    "has_code_examples": true,
+    "is_substantive": true,
+    "summary": "Using Codex for education at Dagster Labs | OpenAI Developers - Substantive content (1340 words)",
+    "url": "https://developers.openai.com/blog/codex-for-documentation-dagster/",
+    "filename": "2026-06-02_openai-developers-blog_codex-for-documentation-dagster.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "designing-delightful-frontends-with-gpt-5-4",
+    "title": "Designing delightful frontends with GPT-5.4 | OpenAI Developers",
+    "word_count": 3005,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "gpt-5",
+      "frontend",
+      "tool-use"
+    ],
+    "has_code_examples": true,
+    "is_substantive": true,
+    "summary": "Designing delightful frontends with GPT-5.4 | OpenAI Developers - Substantive content (3005 words)",
+    "url": "https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4/",
+    "filename": "2026-06-02_openai-developers-blog_designing-delightful-frontends-with-gpt-5-4.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "eval-skills",
+    "title": "Testing Agent Skills Systematically with Evals | OpenAI Developers",
+    "word_count": 2803,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "codex",
+      "agents",
+      "evaluations"
+    ],
+    "has_code_examples": true,
+    "is_substantive": true,
+    "summary": "Testing Agent Skills Systematically with Evals | OpenAI Developers - Substantive content (2803 words)",
+    "url": "https://developers.openai.com/blog/eval-skills/",
+    "filename": "2026-06-02_openai-developers-blog_eval-skills.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "intro",
+    "title": "Hello, world! | OpenAI Developers",
+    "word_count": 262,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "codex",
+      "documentation",
+      "best-practices",
+      "rag",
+      "api"
+    ],
+    "has_code_examples": false,
+    "is_substantive": false,
+    "summary": "Hello, world! | OpenAI Developers - Short/announcement content (262 words)",
+    "url": "https://developers.openai.com/blog/intro/",
+    "filename": "2026-06-02_openai-developers-blog_intro.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "one-year-of-responses",
+    "title": "From prompts to products: One year of Responses | OpenAI Developers",
+    "word_count": 2332,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "gpt-5",
+      "responses-api",
+      "agents",
+      "api"
+    ],
+    "has_code_examples": false,
+    "is_substantive": true,
+    "summary": "From prompts to products: One year of Responses | OpenAI Developers - Substantive content (2332 words)",
+    "url": "https://developers.openai.com/blog/one-year-of-responses/",
+    "filename": "2026-06-02_openai-developers-blog_one-year-of-responses.md",
+    "date": "2026-06-02"
+  },
+  {
+    "slug": "openai-for-developers-2025",
+    "title": "OpenAI for Developers in 2025",
+    "word_count": 1902,
+    "topics": [
+      "openai",
+      "developer-blog",
+      "codex",
+      "gpt-5",
+      "responses-api",
+      "agents",
+      "evaluations",
+      "tool-use",
+      "api"
+    ],
+    "has_code_examples": true,
+    "is_substantive": true,
+    "summary": "OpenAI for Developers in 2025 - Substantive content (1902 words)",
+    "url": "https://developers.openai.com/blog/openai-for-developers-2025/",
+    "filename": "2026-06-02_openai-developers-blog_openai-for-developers-2025.md",
+    "date": "2026-06-02"
+  }
+]

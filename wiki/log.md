@@ -5537,3 +5537,69 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **New raw article**: [[raw/articles/2025-05-22_emollick_leadership-lab-crowd]] — Ethan Mollick's "Making AI Work: Leadership, Lab, and Crowd" framework for organizational AI adoption. Addresses the "Secret Cyborgs" problem (workers hiding AI use). Source: https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and. tags: ai-adoption, organizational-ai, leadership, ai-transformation, secret-cyborgs, enterprise-ai.
 - **New raw article**: [[raw/articles/2026-05-01_simonwillison_llm-digest-april-2026]] — Simon Willison's April 2026 LLM monthly digest. Covers Opus 4.7, GPT-5.5, Claude Mythos security, ChatGPT Images 2.0, Gemma 4, Qwen3.6, DeepSeek V4, Claude Code pricing confusion, Jevons paradox. Source: https://github.com/simonw/monthly-newsletter-archive/blob/main/2026-04-april.md. tags: monthly-digest, llm-news, model-releases, coding-agents, ai-security, image-generation.
 - **X posts processed**: 8 new posts from @simonw (5 posts: Codex Copy as Markdown removal, April newsletter, claude-code-transcripts), @tomaarsen (1: LightOn AI embedding datasets), @ashpreetbedi (1: image search via text classification), @emollick (1: Leadership Lab Crowd framework). 4 accounts, 12 scanned, 72 skipped (budget).
+- **Updated page**: [[concepts/agent-skills.md]] — Added OpenAI Codex Skills Implementation section covering: repo-local skills + AGENTS.md, container-mounted instructions, OSS maintenance case study (457 PRs in 3 months), systematic eval methodology, and Anthropic vs OpenAI comparison table. Updated frontmatter with 5 new tags (codex, openai, agent-evaluation, harness-engineering, ci-cd), 3 new sources (OpenAI blog posts), and 3 new related pages. Date bumped to 2026-06-02. 190 lines total.
+
+## 2026-06-02 — OpenAI Developers Blog: 18 articles ingested
+
+**Action**: Batch ingestion of all 18 blog posts from https://developers.openai.com/blog (sitemap analysis)
+
+**Raw articles saved** (18 files in `raw/articles/`):
+- `2025-09-12_openai-developers-blog_realtime-api.md` (2143 words)
+- `2025-09-19_openai-developers-blog_intro.md` (286 words)
+- `2025-09-22_openai-developers-blog_responses-api.md` (1766 words)
+- `2025-10-10_openai-developers-blog_codex-at-devday.md` (1582 words)
+- `2025-10-27_openai-developers-blog_codex-for-documentation-dagster.md` (1369 words)
+- `2025-11-24_openai-developers-blog_what-makes-a-great-chatgpt-app.md` (4629 words)
+- `2025-12-22_openai-developers-blog_updates-audio-models.md` (1023 words)
+- `2026-01-01_openai-developers-blog_openai-for-developers-2025.md` (1928 words)
+- `2026-01-11_openai-developers-blog_skyscanner-codex-jetbrains-mcp.md` (1274 words)
+- `2026-01-24_openai-developers-blog_eval-skills.md` (2829 words)
+- `2026-02-04_openai-developers-blog_15-lessons-building-chatgpt-apps.md` (2951 words)
+- `2026-02-11_openai-developers-blog_skills-shell-tips.md` (2404 words)
+- `2026-02-23_openai-developers-blog_run-long-horizon-tasks-with-codex.md` (1826 words)
+- `2026-03-01_openai-developers-blog_building-frontend-uis-with-codex-and-figma.md` (910 words)
+- `2026-03-09_openai-developers-blog_skills-agents-sdk.md` (5170 words)
+- `2026-03-19_openai-developers-blog_one-year-of-responses.md` (2361 words)
+- `2026-03-21_openai-developers-blog_designing-delightful-frontends-with-gpt-5-4.md` (3030 words)
+- `2026-03-25_openai-developers-blog_realtime-perplexity-computer.md` (1381 words)
+
+**Wiki pages created/updated**:
+- **UPDATED**: `concepts/agent-skills.md` — Added OpenAI Codex Skills section (repo-local skills, AGENTS.md, CI/CD, eval methodology, comparison table)
+- **CREATED**: `concepts/openai-responses-api.md` — Stateful conversation API, built-in tools, 1-year retrospective
+- **CREATED**: `concepts/openai-realtime-api.md` — WebSocket voice/text API, Perplexity case study
+- **CREATED**: `concepts/chatgpt-app-design-patterns.md` — 15 lessons, UX patterns, GPT-5.4 frontend design
+- **UPDATED**: `concepts/speech-audio-asr-tts-voice.md` — Added Realtime API cross-link
+- **UPDATED**: `entities/codex.md` — Added 4 case studies (DevDay, Dagster, Skyscanner, Figma)
+- **CREATED**: `events/openai-developer-platform-2025-retrospective.md` — Year-in-review
+
+**Index fixes**:
+- Fixed section misplacement: 20 concept entries were under Events header → moved to Concepts
+- Updated section counts: Concepts (852), Events (8)
+- Added 4 new entries to index.md
+
+**Cross-vendor comparison**: Anthropic engineering articles served as quality/format benchmark. Key differences documented:
+- OpenAI Responses API vs Anthropic Messages API (stateful vs stateless)
+- OpenAI Skills (repo-local, AGENTS.md) vs Anthropic Skills (open standard, dynamic mounting)
+- OpenAI Realtime API has no Anthropic equivalent
+
+### 2026-06-02 — Created concepts/claude-code-best-practices.md
+- **Source**: raw/articles/2026-05-08_anthropic-engineering_claude-code-best-practices.md
+- **Action**: New concept page (160 lines)
+- **Coverage**: CLAUDE.md configuration patterns, common workflows (explore→plan→implement→commit, bug fixing, codebase exploration, spec-driven development), multi-Claude patterns (git worktrees, writer/reviewer, non-interactive mode, fan-out), GitHub Actions/CI integration, security and permissions (cross-links to auto-mode and sandboxing), context management techniques, environment configuration, common failure patterns
+- **Cross-links**: claude-code entity, claude-code-auto-mode, claude-code-sandboxing, context-engineering, agent-skills, harness-engineering
+- **Avoided duplication**: Did not re-cover auto-mode classifier architecture, sandboxing bubblewrap/seatbelt details, context engineering theory, or skills standard structure — cross-linked instead
+
+## 2026-06-02 — Anthropic engineering: concepts化 2ページ追加
+
+**Action**: 3記事の concepts 化を実施。うち1記事は既存ページに統合済み。
+
+**結果**:
+- `effective-context-engineering-for-ai-agents` → **SKIP** (既存 `context-engineering.md` 304行に完全統合済み。Anthropic framework、compaction、JIT retrieval、sub-agent isolation すべてカバー)
+- `claude-code-best-practices` → **CREATED** `concepts/claude-code-best-practices.md` (160行)
+  - CLAUDE.md設定パターン、ワークフロー、Multi-Claude (git worktrees, headless mode)、GitHub Actions CI、セキュリティ、コンテキスト管理
+  - 既存ページ(auto-mode, sandboxing, context-engineering)と重複排除済み
+- `writing-tools-for-agents` → **CREATED** `concepts/writing-tools-for-agents.md` (163行)
+  - ツール設計5原則、評価駆動ワークフロー、ResponseFormat enum パターン
+  - `advanced-tool-use.md`(プラットフォーム機能)とは明確に役割分離
+
+**Anthropic engineering concepts化率**: 16/25 → **18/25** (raw止まり7記事に削減)
