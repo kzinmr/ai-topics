@@ -9,3 +9,6 @@ scripts/cache/
 
 # OS
 .DS_Store
+
+# Claude Code local (personal) settings — keep shared skills tracked
+.claude/settings.local.json
