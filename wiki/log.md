@@ -13,6 +13,19 @@
 
 ---
 
+## [2026-06-02] newsletter-wiki-ingest | Latent Space Interview, Nathan Lambert, Import AI 459
+
+- **Created**: `[[entities/ethan-he]]` — Ethan He, Grok Imagine lead at xAI. Previously NVIDIA Cosmos World Model lead. Built Grok Imagine in 3 months. Video agent architecture philosophy, generative UI vision. 85 lines.
+- **Enriched**: `[[entities/grok-imagine]]` — Added Architecture & Development section: 3-month build timeline, VAE/latent space design, step distillation (sCM), audio-video alignment, cost structure. Added Video Agent Mode (plan→generate→edit→iterate). Added Video Agent Philosophy (coding→video parallel). Added Generative UI Vision (Flipbook/Neural OS). 50+ new lines.
+- **Enriched**: `[[entities/nathan-lambert]]` — Added "Open and closed models are on different exponentials" (Jun 1, 2026). Coding agents create premium intelligence market, closed labs as Apple+Microsoft hybrid, open model economics on different curve, $2-10T valuation projection. 15 lines.
+- **Enriched**: `[[entities/jack-clark]]` — Added Import AI 459 section: AI economy growing at 2,000%+ per year ($250B nominal GDP), invisible in GDP statistics, three measurement frameworks, "first plausible candidate for large-scale technological mismeasurement." Also covers AI oversight, ESM BioHub protein folding scaling laws, extinction risk pricing. 20 lines.
+- **Raw newsletters saved**: `raw/newsletters/2026-06-01-why-video-agent-models-are-next-ethan-he-xai-grok-imagine-lead.md`, `raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md`, `raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md`
+- **Updated**: `index.md`, `log.md`
+- **Skipped**: Lenny's Podcast (already covered), Superintel MiniMax M3 (Cloudflare blocked), AINews NVIDIA Cosmos 3 (paywall)
+- **Committed**: 6 files changed
+
+---
+
 
 
 ## [2026-06-02] wiki-ingest | Anthropic Cookbooks — PTC + Tool Search with Embeddings

@@ -1,0 +1,29 @@
+{
+  "newsletter": {
+    "https://www.interconnects.ai/p/open-and-closed-models-are-on-different": {
+      "archived": "2026-06-02",
+      "action": "reference",
+      "reason_ja": "★★★☆☆ Nathan Lambertの経済論考。コーディングエージェント（Opus 4.5/Codex 5.2以降）が最高の知能にプレミアムを払う市場を創出したという主張。オープン・クローズドモデルが異なる指数曲線を描くというテーゼは既存のconcepts/open-vs-closed-model-gap.md（能力差測定）とは異なる角度。ただしentities/nathan-lambert.mdは既に同様の経済論を「My bets on open models, mid-2026」セクションでカバー済み。軽微なエンリッチメント候補。"
+    },
+    "https://open.substack.com/pub/importai/p/import-ai-459-ai-oversight-is-difficult": {
+      "archived": "2026-06-02",
+      "action": "reference",
+      "reason_ja": "★★☆☆☆ 複数トピックを含むImport AI定期号。AI監視の困難さ（既存safety概念に接続）、タンパク質折りたたみのスケーリング則（ESM BioHub世界モデル、専門的科学トピック）、人類絶滅リスクの価格設定（Andrew Leigh講演、政策寄り）など。entities/jack-clark.mdは既にImport AIコンテンツを広くカバー済み。軽微な更新候補。"
+    },
+    "https://open.substack.com/pub/lenny/p/how-i-ai-codex-goals-explained-and": {
+      "archived": "2026-06-02",
+      "action": "skip",
+      "reason_ja": "★☆☆☆☆ ポッドキャストエピソードのまとめ記事。3テーマ（コード不要iPhoneアプリ構築/Replit/Gemini/Claude、Codex Goals機能解説、Claude Opus 4.8レビュー）は全て既存概念ページ（concepts/codex-goal.md, concepts/claude-opus-4-8.md）でカバー済み。ポッドキャスト要約は情報密度が低くWiki価値限定的。"
+    },
+    "https://link.mail.beehiiv.com/v1/c/tgJBtES2e3kuzAOTzLDEApLO1iH7lL3qCxymflYeN%2BrdcPhr%2BVJoVtk89qn5%0ADiKUsm5H6XXmcWyZ8%2Bpwxk4Jbnikc4loenX678RzVrQc4%2FZvVoXrN22ohTz%2F%0AP1XAr8rMbZRqTpXMPoZSNK3E5OvbPE5zFGxzCccCzSC0MnE%2B%2B%2FFUns5velUl%0AWWp2k6RALKYD%2BnmMj9xlZ5bWhYRlbI1JHw%3D%3D%0A/e9ade55e60abeb48": {
+      "archived": "2026-06-02",
+      "action": "skip",
+      "reason_ja": "★★☆☆☆ beehiivトラッキングURLがCloudflareブロックによりコンテンツ解決不能。件名からMiniMax M3のエージェント機能解放を示唆。既存のconcepts/minimax-sparse-attention.mdでM3の主要技術革新（MSAスパースアテンション）はカバー済み。entities/minimax.mdはM2.7までしかカバーしていないが、コンテンツ非アクセスのため判断不可。"
+    },
+    "https://open.substack.com/pub/swyx/p/ainews-nvidia-cosmos-3-nemotron-3": {
+      "archived": "2026-06-02",
+      "action": "skip",
+      "reason_ja": "★☆☆☆☆ ペイウォール（isAccessibleForFree: False）によりコンテンツ非アクセス。件名からNVIDIA Cosmos 3（世界基盤モデル）、Nemotron 3 Ultra（言語モデル）、RTX Spark（エッジAI）の3大発表をカバーすると推定。既存のentities/nvidia.mdおよび関連プロダクトページでこれらの発表をカバーしている可能性が高い。"
+    }
+  }
+}

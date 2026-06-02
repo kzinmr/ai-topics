@@ -1,9 +1,8 @@
 {
-  "archived_at": "2026-06-02T07:24:02.540354Z",
   "source": "newsletter",
-  "date": "2026-06-02",
-  "run_id": "20260602T071049Z",
-  "items": [
+  "checkpoint_run_id": "20260602T071049Z",
+  "archived_at": "2026-06-02T07:44:10.537976Z",
+  "decisions": [
     {
       "item_id": "<20260601130348.3.c49794ff64bd5c53@mg-d0.substack.com>-3",
       "source": "newsletter",
@@ -64,6 +63,5 @@
       "candidate_wiki_path": null,
       "body_excerpt": "AINewsペイウォールド記事。isAccessibleForFree: False。説明文「Jensen scores a huge win」のみ確認可能。NVIDIA Cosmos 3（世界モデル）、Nemotron 3 Ultra、RTX Sparkの3製品をカバー。"
     }
-  ],
-  "count": 5
+  ]
 }

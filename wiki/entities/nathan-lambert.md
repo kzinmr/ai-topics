@@ -12,6 +12,7 @@ sources:
   - https://www.natolambert.com/
   - https://www.interconnects.ai/
   - https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may
+  - raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md
 ---
 
 
@@ -123,6 +124,19 @@ Lambert hosted **Mark McQuade** (CEO) and **Lucas Atkins** (CTO) of [[entities/a
 - The **$20M training cost** and business model of selling post-trained open models to enterprises
 - Lambert's assessment that Arcee is "taking the most real approach to monetizing open models"
 
+
+### June 2026: Open and closed models are on different exponentials
+
+**"Open and closed models are on different exponentials" (Jun 1, 2026)**: Published a provocative economic analysis arguing that open and closed models follow fundamentally different growth curves:
+
+- **Coding agents create premium market**: Past the Opus 4.5 and Codex 5.2 thresholds, coding agents created the first large market willing to pay dramatically more for top intelligence. Users who rely on coding agents will always pay more for the best (Lambert: "I would pay $2000/month for the tools today")
+- **Closed labs as Apple+Microsoft hybrid**: Frontier labs will look like a mix of Apple (integrated, hard-to-replicate technology) and Microsoft (high-leverage subscriptions). Expects Anthropic and OpenAI to reach $2-10T valuations in 5-10 years, forming an oligopoly like today's cloud market
+- **Open model economics on a different curve**: Open models optimize for cost efficiency, accessibility, and democratization — a fundamentally different exponential from the premium-intelligence curve
+- **Integration benefits favor closed labs**: The integration of model weights, harnesses, tools, and serving infrastructure has massive returns that open models (designed for diverse serving situations) cannot capture
+- **No walls in progress**: Every direction of model improvement (speed, intelligence, specialization) remains open; there have been no walls in progress
+- **Short-term vs long-term**: Near-term markets will be dictated by compute buildout and token subsidization; the true economic divergence between open and closed is a 5-10 year timeline
+
+Added source: `raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md`
 
 ### May 2026: Some ideas for what comes next
 

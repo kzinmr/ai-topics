@@ -1,10 +1,13 @@
 ---
 title: "Jack Clark"
 created: 2026-05-05
-updated: 2026-05-27
+updated: 2026-06-02
 type: entity
 tags: [person, company, anthropic, safety, prediction, governance]
-sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md]
+sources:
+  - raw/articles/2026-05-04_import-ai-455-automating-ai-research.md
+  - raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md
+  - raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md
 ---
 
 # Jack Clark
@@ -51,6 +54,25 @@ Clark frames AI alignment not as a binary problem but as a compounding one — e
 ### The Amdahl's Law Economy
 As AI accelerates digital work, physical-world bottlenecks (drug trials, manufacturing) become the primary constraints on economic growth — what Clark calls "Amdahl's Law for the economy."
 
+
+### Import AI 459: AI Oversight and the AI Economy (June 2026)
+
+**"Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk" (Jun 1, 2026)**: Multiple substantive topics:
+
+**The AI Economy — Growing at 2,000%+ per year**: Economists from UVA, Anthropic, and Bank of Canada documented that the U.S. AI economy is growing at an unprecedented rate that's invisible in conventional GDP statistics:
+- Nominal AI GDP ~$250 billion in 2025, growing at ~2,600% per year in quality-adjusted real terms
+- Three measurement frameworks: (1) nominal compute spending ($37B→$90B→$219B, 2023-2025), (2) raw compute capacity (200%+ per year growth), (3) quality-adjusted AI output (2,290% growth in 2024, 2,271% in 2025)
+- AI is "the first plausible candidate for large-scale technological mismeasurement in which the rapidly improving sector may become a substitute for human labor"
+- **Recommendations**: AI satellite accounts, better data partnerships between agencies/companies/academia, incorporate AI productive-capacity into medium-term projections
+- Clark's framing: "Shut up and play the Jaws theme tune" — conventional GDP data makes the economy look normal, but AI's explosive growth is the shark in the water that policymakers can't see
+
+**AI Oversight**: Coverage of challenges in monitoring and governing increasingly capable AI systems.
+
+**Protein Folding Scaling Laws**: Discussed ESM (Evolutionary Scale Models) BioHub as a "world model for protein biology" — scaling laws for protein folding models that parallel LLM scaling.
+
+**Extinction Risk Pricing**: Coverage of Andrew Leigh MP's lecture on pricing the extinction risk of AI systems.
+
+See [[raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md]] for full text.
 
 ### Import AI 458: Reckoning with the Future (May 2026)
 

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-01 | Total pages: 2302 | Indexed entries: 1630 | Not in index: 672
+> Last updated: 2026-06-02 | Total pages: 2303 | Indexed entries: 1631 | Not in index: 672
 
 ## Entities (747 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -38,6 +38,7 @@
 - [[entities/doug-turnbull]] — Doug Turnbull (softwaredoug) — Search and information retrieval expert. "Metadata: the 3rd kind of retrieval" framework, "Cheat at Search" methodology for LLM-powered query understanding.
 - [[entities/eleanor-berger]] — Eleanor Berger — AI researcher, author, and entrepreneur focused on AI safety, alignment, and responsible AI development.
 - [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
+- [[entities/ethan-he]] — Ethan He — Lead of Grok Imagine at xAI. Previously lead of NVIDIA Cosmos World Model. Built Grok Imagine from zero to one in 3 months. Video agent architecture, generative UI vision.
 - [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
 - [[entities/dynomight-net]] — Dynomight — Data science & society blog
 - [[entities/fintool]] — Fintool
