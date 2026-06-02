@@ -5,7 +5,7 @@ updated: 2026-05-29
 type: concept
 tags: [tool-use, ai-agents, agent-architecture, agent-infrastructure, sandbox, token-economics, cost-optimization, agent-design-patterns, aws, bedrock]
 aliases: [PTC, code-orchestrated-tool-calling]
-related: [concepts/agent-hosting-aws, concepts/agentic-loop, concepts/codeact]
+related: [concepts/agent-hosting-aws, concepts/agentic-loop, concepts/codeact, concepts/rlm-recursive-language-models, concepts/code-execution-with-mcp, concepts/code-mode]
 sources: [raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md]
 ---
 
@@ -129,6 +129,10 @@ This shifts the bottleneck from **LLM inference latency** to **code execution sp
 
 ## Related Concepts
 
+- [[concepts/rlm-recursive-language-models]] — RLM's 2-Axis Complementarity framework: PTC is the **Function Axis** (merge N tool calls → 1 code block), RLM is the **Data Axis** (split 1 huge context → N pieces). Together they form a complete framework for model-driven computation. Tool-Augmented RLM combines both.
+- [[concepts/dspy-rlm]] — DSPy.RLM implementation: full PTC relationship analysis, merge/split symmetry, Tool-Augmented RLM design
+- [[concepts/code-execution-with-mcp]] — Middle architectural layer between PTC and CodeMode: MCP as code API with progressive disclosure
+- [[concepts/code-mode]] — Specific implementations (Cloudflare V8, Pydantic Monty) of the code-execution-over-tool-calling pattern
 - [[concepts/agent-hosting-aws]] — AWS infrastructure for running agents, including PTC sandboxes
 - [[concepts/agentic-loop]] — The canonical agent execution loop that PTC optimizes
 - [[concepts/agent-sandboxing]] — Sandbox isolation is critical for PTC safety
