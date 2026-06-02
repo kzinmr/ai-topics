@@ -3,6 +3,15 @@
 
 
 
+## [2026-06-02] wiki-ingest | Anthropic Cookbooks — PTC + Tool Search with Embeddings
+
+- **Enriched**: [[concepts/programmatic-tool-calling]] — Added Anthropic Cookbook PTC as 3rd source (Pedram Navid, 2025). Team expense analysis example, 85.6% token reduction.
+- **Enriched**: [[concepts/tool-search-tool]] — Added Anthropic Cookbook Tool Search with Embeddings as source (Henry Keetay, 2025). SentenceTransformer `all-MiniLM-L6-v2`, 90%+ context reduction.
+- **Raw articles saved**: `raw/articles/2026-06-02_anthropic_cookbook_ptc.md`, `raw/articles/2026-06-02_anthropic_cookbook_tool-search-embeddings.md`
+- **Committed**: 4 files changed
+
+---
+
 ## [2026-06-02] wiki-ingest | Anthropic "Advanced Tool Use" — Tool Search Tool, PTC, Tool Use Examples
 
 - **New concept**: [[concepts/tool-search-tool]] — On-Demand Tool Discovery via Progressive Disclosure. `defer_loading: true`, regex/BM25/embedding search, 85% token reduction (77K→8.7K), accuracy up 25pp (Opus 4). Positioned in progressive disclosure hierarchy.

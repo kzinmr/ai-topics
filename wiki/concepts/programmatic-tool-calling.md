@@ -6,7 +6,7 @@ type: concept
 tags: [tool-use, ai-agents, agent-architecture, agent-infrastructure, sandbox, token-economics, cost-optimization, agent-design-patterns, aws, bedrock]
 aliases: [PTC, code-orchestrated-tool-calling]
 related: [concepts/agent-hosting-aws, concepts/agentic-loop, concepts/codeact, concepts/rlm-recursive-language-models, concepts/code-execution-with-mcp, concepts/code-mode]
-sources: [raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md, raw/articles/2025-11-24_anthropic_advanced-tool-use.md]
+sources: [raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md, raw/articles/2025-11-24_anthropic_advanced-tool-use.md, raw/articles/2026-06-02_anthropic_cookbook_ptc.md]
 ---
 
 # Programmatic Tool Calling (PTC)
@@ -138,3 +138,4 @@ This shifts the bottleneck from **LLM inference latency** to **code execution sp
 - [[concepts/agent-sandboxing]] — Sandbox isolation is critical for PTC safety
 - [[concepts/search-as-code]] — Perplexity's SaC applies PTC pattern to search domain with domain-specific SDK
 - [[raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md]] — Full AWS blog post with implementation details
+- [[raw/articles/2026-06-02_anthropic_cookbook_ptc.md]] — Anthropic Cookbook: PTC with Claude API (Pedram Navid, 2025). Team expense analysis example, 85.6% token reduction, `allowed_callers` + `code_execution` tool setup

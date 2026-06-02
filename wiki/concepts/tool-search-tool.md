@@ -8,6 +8,7 @@ aliases: [deferred-tool-loading, on-demand-tool-discovery]
 related: [concepts/advanced-tool-use, concepts/code-execution-with-mcp, concepts/code-mode, concepts/programmatic-tool-calling, concepts/context-engineering, concepts/agentic-search]
 sources:
   - raw/articles/2025-11-24_anthropic_advanced-tool-use.md
+  - raw/articles/2026-06-02_anthropic_cookbook_tool-search-embeddings.md
   - https://www.anthropic.com/engineering/advanced-tool-use
   - raw/articles/2026-04-30_cloudflare-code-mode-mcp.md
 ---
@@ -137,3 +138,4 @@ Level 4: Tool Use Examples (semantic conventions in schema)
 - [[concepts/programmatic-tool-calling]] — Efficient tool execution via code
 - [[concepts/context-engineering]] — Broader context management strategy
 - [[concepts/agentic-search]] — Search-as-code applies same progressive principle to retrieval
+- [[raw/articles/2026-06-02_anthropic_cookbook_tool-search-embeddings.md]] — Anthropic Cookbook: Tool Search with Embeddings (Henry Keetay, 2025). SentenceTransformer `all-MiniLM-L6-v2` for semantic tool discovery, 90%+ context reduction, scaling to thousands of tools
