@@ -2,7 +2,7 @@
 title: "Brian Krebs"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-02
 type: entity
 ---
 
@@ -38,8 +38,9 @@ His blog krebsonsecurity.com has been running since 2009 and remains one of the 
 | 2025 | Broke the Kimwolf botnet story — 2M+ infected IoT devices used as proxy networks |
 | 2026 | Published "How AI Assistants Are Moving the Security Goalposts" — examining the security risks of autonomous AI agents |
 | 2026 | Reported on Starkiller phishing service — real-time MFA-bypass phishing-as-a-service |
-| 2026 | Covered DOJ takedown of four major IoT botnets (Aisuru, Kimwolf, JackSkid, Mossad) — 3M+ compromised devices |
-
+|| 2026 | Covered DOJ takedown of four major IoT botnets (Aisuru, Kimwolf, JackSkid, Mossad) — 3M+ compromised devices |
+|| 2026-06 | Reported Meta AI support bot exploit — hackers tricked AI into resetting Instagram passwords, hijacking Obama White House, US Space Force, and other high-profile Instagram accounts; exploit circulated on Telegram; accounts without MFA were vulnerable |
+|
 ## Core Ideas
 
 ### Follow the Money, Name Names
@@ -103,7 +104,7 @@ His coverage of the Kimwolf story revealed how botnet operators were tunneling t
 
 ## Recent Themes (2024–2026)
 
-- **AI agent security**: Comprehensive coverage of autonomous AI agents as both tools and vulnerabilities
+- **AI agent security**: Comprehensive coverage of autonomous AI agents as both tools and vulnerabilities — including the June 2026 Meta AI support bot hijack incident where hackers social-engineered Meta's password reset AI into granting account access
 - **Ransomware ecosystem evolution**: Tracking how ransomware groups rebrand, restructure, and evade law enforcement
 - **IoT botnet proliferation**: From Kimwolf to multi-botnet takedowns — the growing threat of compromised consumer devices
 - **State-sponsored cyber operations**: Forest Blizzard (APT28) router DNS hijacking affecting 18,000+ networks
@@ -143,3 +144,4 @@ His coverage of the Kimwolf story revealed how botnet operators were tunneling t
 - krebsonsecurity.com--2026-04-patch-tuesday-april-2026-edition--714dfbcd
 - krebsonsecurity.com--2026-04-russia-hacked-routers-to-steal-microsoft-office-toke--83697ae5
 - krebsonsecurity.com--2026-04-scattered-spider-member-tylerb-pleads-guilty--f662a80d
+- krebsonsecurity.com--2026-06-hackers-used-metas-ai-support-bot-to-seize-instagram--95a5003f

@@ -1,9 +1,9 @@
 {
-  "archived_at": "2026-06-02T07:38:44.053718+00:00",
-  "triage_run_id": "20260602T070425Z",
-  "source": "blog",
-  "summary_ja": "2026-06-02のblog triage: 20記事中、2件がreference（エンティティ強化候補）、18件がskip。主なAI関連記事は(1) Krebs on SecurityのMeta AIサポートボット乗っ取り事件（Instagram高プロファイルアカウントが標的に）、(2) Sean GoedeckeのLLM支援で出荷した趣味プロジェクト一覧。それ以外はセキュリティ一般、数学、レトロコンピューティング、技術文化論、非AIコンテンツ。新規コンセプトページ作成は不要。",
-  "decisions": [
+  "date": "2026-06-02",
+  "run_id": "20260602T070425Z",
+  "type": "blog",
+  "item_count": 20,
+  "items": [
     {
       "item_id": "blog-4",
       "source": "blog",
@@ -14,7 +14,7 @@
       "recommended_action": "reference",
       "reason_ja": "★★★★☆ AIチャットボットを経由したアカウント乗っ取り事件の詳細レポート。本文ではObama政権White HouseやUS Space ForceのInstagramアカウントが実際に乗っ取られた具体的事例、Telegramでのexploit拡散の経路、MFAが有効なアカウントは防御できたという重要なセキュリティ教訓を提供。krebsonsecurityエンティティページはAI Agent Securityをテーマとして持つが、この具体的インシデントは未収録。TimelineとRecent Themesへの追加が有効。",
       "candidate_wiki_path": "entities/krebsonsecurity-com.md",
-      "body_excerpt": ""
+      "body_excerpt": "Krebs on Securityの記事。The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's 'AI support assistant' bot into resetting account passwords. Meta's AI bot would happily add an email address to an existing account as part of the bot's standard password reset flow."
     },
     {
       "item_id": "blog-11",
@@ -26,7 +26,7 @@
       "recommended_action": "reference",
       "reason_ja": "★★★★☆ LLM支援で出荷した5つの個人プロジェクト一覧（Skifreedle、Autodeck、Endless Wiki、VicFlora Offline、gh-standup CLI拡張）。seangoedeckeエンティティページは「How I use LLMs as a staff engineer」などLLM実践記事を多く収録しているが、この具体的なプロジェクト一覧は未収録。本文では各プロジェクトの技術詳細と「LLMなしでは出荷しなかった」という確信が明確に述べられている。Recent Articlesへの追加が適切。",
       "candidate_wiki_path": "entities/seangoedecke-com.md",
-      "body_excerpt": ""
+      "body_excerpt": "Sean Goedecke's article. Where are all the AI-generated projects? This is a common question from AI skeptics. Writing code is only one of the bottlenecks involved in actually shipping a new product. I can share a list of personal projects I've built with AI in the last twelve months: Skifreedle (daily-game version of classic SkiFree), Autodeck (auto-generated spaced repetition cards with Stripe), Endless Wiki (280K+ AI-generated pages), VicFlora Offline (PWA caching plant database), gh-standup CLI extension."
     },
     {
       "item_id": "blog-1",
@@ -38,7 +38,7 @@
       "recommended_action": "skip",
       "reason_ja": "★★☆☆☆ Simon Willisonのリンクブログ投稿（18行）。本文は当初信じられなかったが複数ソースで確認したというコメントのみで、独自の分析や技術的詳細なし。同一トピックはKrebs（blog-4）でより詳細にカバー済み。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Simon Willison: 1st June 2026 - Link Blog. I had trouble believing this story was true, but I've seen it verified from multiple sources now. One video shows a hacker starting a conversation with Meta's AI support bot and asking it to link the target account with a new email address."
     },
     {
       "item_id": "blog-2",
@@ -50,7 +50,7 @@
       "recommended_action": "skip",
       "reason_ja": "★★☆☆☆ Simon WillisonがCodex Desktopで作ったプロトタイプ（19行）。Claude.aiのペースト→ファイル変換機能を模したツール。AIエージェント使用パターンとしては興味深いが、深みのある分析や独自の知見に欠ける。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Simon Willison: I really like how you can paste a large volume of text into claude.ai and it will detect it as a large paste and turn it into a file attachment instead. I decided to have Codex desktop build me a version of that as a prototype."
     },
     {
       "item_id": "blog-3",
@@ -62,7 +62,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ 情報セキュリティ用語のユーモア解説集。AI関連要素なし。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Infosec jargon translated cynically: Defense in depth = coding. Zero trust = auth. Least privilege = the permissions you forgot to grant. Security posture = vibes."
     },
     {
       "item_id": "blog-5",
@@ -74,7 +74,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ HIBP 1000件目のデータ漏洩と開示遅延悪化についての分析。セキュリティ一般の話題でAI関連要素なし。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Troy Hunt: Today, I loaded the 1,000th data breach into Have I Been Pwned. Why is it still needed? Increasingly long lag times for disclosure. Carnival took 43 days. Zara took 45 days."
     },
     {
       "item_id": "blog-6",
@@ -86,7 +86,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ テイラー級数近似と余弦近似の誤差比較についての数学記事。AI非関連。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "John D. Cook: Comparing exp(-x^2) approximation with cosine vs Taylor series. The cosine approximation is good over [-4,4] while Taylor fails at large x."
     },
     {
       "item_id": "blog-7",
@@ -98,7 +98,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ IndieWeb加入シリーズ第1回：Microformatsの解説。Web標準・分散化の話題でAI関連なし。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Tom Renner series on making his site interoperable with IndieWeb tools and standards. Covers h-card, IndieAuth, and the POSSE (Publish on your Own Site, Syndicate Everywhere) approach."
     },
     {
       "item_id": "blog-8",
@@ -110,7 +110,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Substackでのメール購読案内。管理的メタ記事でコンテンツなし。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "John D. Cook: For the past two years I've been using Substack to send out emails announcing new blog posts. If you'd like to get blog post announcements via email, sign up."
     },
     {
       "item_id": "blog-9",
@@ -122,7 +122,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Muxビデオ分析APIの広告/スポンサーリンク。編集コンテンツではない。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Mux: Understand video analytics at a glance. Track key engagement and quality of experience metrics: views, playing time, viewer retention, startup time, rebuffering."
     },
     {
       "item_id": "blog-10",
@@ -134,7 +134,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ F1モナコGPの予選結果とレース結果の統計的因果分析。AI非関連。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Statistical analysis of whether first-row starts at Monaco determine race wins. Uses worst qualifying round result as a proxy for equipage capability. Correlation with driver championship: +0.82."
     },
     {
       "item_id": "blog-12",
@@ -146,7 +146,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Nick Biltonの60 Minutes起用に関するメディア批評。CBS/Paramountの政治的文脈。AI関連要素なし。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Hamilton Nolan's media criticism about Nick Bilton being hired to lead 60 Minutes as a 'hatchet man' under the new CBS ownership by David Ellison/Bari Weiss."
     },
     {
       "item_id": "blog-13",
@@ -158,7 +158,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Cory DoctorowのMolly Crabapple著書レビュー。ユダヤ労働者同盟（Bund）の歴史。政治・歴史書評でAI関連要素なし。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Cory Doctorow reviews Molly Crabapple's 'Here Where We Live Is Our Country' about the Jewish Labor Bund, its socialist internationalist politics, and its contrast with Zionism."
     },
     {
       "item_id": "blog-14",
@@ -170,7 +170,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Raymond ChenのWindows 8開発コードネーム史（MoSh, MoGo, MoCo, MoPhoなど）。楽しい技術史だがAI非関連。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Raymond Chen: During Windows 8 development, we called it 'the modern experience.' The new shell was 'modern shell' abbreviated to 'MoSh.' This led to MoGo (Start menu), MoBar, MoBody, MoSet, MoCo, MoBro, MoPho."
     },
     {
       "item_id": "blog-15",
@@ -182,7 +182,7 @@
       "recommended_action": "skip",
       "reason_ja": "★★☆☆☆ GoogleのAIファースト検索がウェブ体験をどう変えたかに関するエッセイ。本文ではGoogleが自然言語検索に移行し、参照トラフィックが3/4消えたこと、ユーザーがソースをクリックしなくなった問題を指摘。AI関連の文化批評ではあるがwikiへの技術的価値は低い。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Essay: How Google's AI-first search has changed the web. Author notes 3/4 of referral traffic disappeared while impressions climbed. Google no longer helps you find information, it just gives you an answer."
     },
     {
       "item_id": "blog-16",
@@ -194,7 +194,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Intel 8088 CPUのセカンドソースメーカー史（AMD, NEC, Siemensなど）。レトロコンピューティングでAI非関連。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "David Farquhar: The Intel 8088 CPU rose to fame powering the IBM PC. Nine other companies produced exact copies under license including AMD, Fujitsu, NEC, Harris, Mitsubishi, OKI, Siemens, and Texas Instruments. The Soviet Union produced its own clone (K1810VM88)."
     },
     {
       "item_id": "blog-17",
@@ -206,7 +206,7 @@
       "recommended_action": "skip",
       "reason_ja": "★★☆☆☆ Amazonが商品レビューをAI生成ポッドキャスト化する新機能（Amazon Bedrock搭載）のニュース。NotebookLMの類似機能との比較。AI製品機能ニュースではあるが技術的深みはなく、Wikiへの追加価値は低い。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Business Insider: Amazon launched a feature using AI to generate short podcast-like audio segments where two 'hosts' discuss product reviews. Powered by Amazon Bedrock. Similar to Google NotebookLM's podcast feature. Amazon's Rufus chatbot previously generated $700M operating profit."
     },
     {
       "item_id": "blog-18",
@@ -218,7 +218,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Anubisボット対策でブロックされ、コンテンツが取得不可（本文に'Protected by Anubis'のみ）。評価不能。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Protected by Anubis from Techaro. Made with love in Canada. This website is running Anubis version v1.25.0-56-ga08b0f4. [Content blocked by bot protection]"
     },
     {
       "item_id": "blog-19",
@@ -230,7 +230,7 @@
       "recommended_action": "skip",
       "reason_ja": "★★☆☆☆ Om Malikの寓話的エッセイ。ピノキオの物語をJensen Huang、Sam Altman、Elon MuskらAI業界リーダーの「約束の畑」戦略と対比。AI業界文化批評としては興味深いが、技術的深みやWikiページへの追加価値に欠ける。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Om Malik: Pinocchio as parable for modern era. The Fox and the Cat persuade Pinocchio to bury coins in the Field of Miracles on promise they will multiply overnight. Jensen Huang, Sam Altman, Elon Musk each run some version of the Field of Miracles with promises that keep not arriving."
     },
     {
       "item_id": "blog-20",
@@ -242,7 +242,7 @@
       "recommended_action": "skip",
       "reason_ja": "★☆☆☆☆ Meta（旧Facebook）のメタバース戦略の盛衰を追った長文分析。AI関連要素なし（AI/Metaverseの接点なし）。",
       "candidate_wiki_path": null,
-      "body_excerpt": ""
+      "body_excerpt": "Detailed analysis of Meta's metaverse strategy from Oculus acquisition (2014) to retreat (2026). Covers Zuckerberg's earnings calls, the COVID-era hype cycle, and the ultimate failure of the vision."
     }
   ]
 }

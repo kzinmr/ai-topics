@@ -5624,3 +5624,9 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **concepts/agentic-retrieval.md**: Added "Academic Validation: Meng et al." section, added paper to sources
 - **concepts/hornet.md**: Added "Academic Validation" section linking paper findings to Hornet thesis, added paper to sources
 - **Connection**: Paper independently validates Hornet blog thesis via systematic IR evaluation on same BrowseComp-Plus dataset; Q2Q reformulation bridges agent keyword queries ↔ neural ranker training distribution
+
+## [2026-06-02] blog-wiki-ingest | Enriched 2 entity pages from blog triage (20 articles)
+
+- **Enriched**: `entities/krebsonsecurity-com.md` — Added Meta AI support bot Instagram hijack incident to Timeline (June 2026, Obama White House/US Space Force accounts hijacked via AI password reset social engineering), updated Recent Themes (AI agent security detail), added raw article to References
+- **Enriched**: `entities/seangoedecke-com.md` — Added "Weird projects I shipped with AI" article (May 2026) to Timeline, Recent Articles (Skifreedle, Autodeck, Endless Wiki, VicFlora Offline, gh-standup), References, and sources frontmatter
+- **Archived**: 20 triage decisions to `raw/archived/triage/blog/2026-06-02_20260602T070425Z.json` (2 reference, 18 skip)
