@@ -130,6 +130,7 @@
 - [[entities/akshay-pachaar]] — AI/ML educator, co-founder of DailyDoseOfDS, 270K X followers. Hermes Agent masterclass (1.3M impressions), "The Anatomy of an Agent Harness" author
 - [[entities/alec-radford]] — **Role** | AI Researcher (former OpenAI); Advisor, Thinking Machines Lab |
 - [[entities/alex-banks]] — **Name** | Alex Banks |
+- [[entities/alex-cheema]] — Alex Cheema — AI researcher building Exo Labs (prev Oxford). 48K followers. Known for local AI hardware analysis (Apple vs NVIDIA), "personal AI era" thesis. Detailed breakdown of memory, bandwidth, and power for local inference.
 - [[entities/alex-chernysh]] — **Name** | Alex Chernysh | Applied AI engineer, creator of Bernstein — open-source deterministic orchestrator for 40+ CLI coding agents.
 - [[entities/alex-zhang]] — **Name:** Alex L. Zhang
 - [[entities/ali-farhadi]] — Computer vision pioneer, co-creator of **YOLO** (You Only Look Once) object detection, founder of **Xnor.ai** (acquired by Apple), former CEO of Allen Institute for AI (Ai2). In March 2026 stepped ...

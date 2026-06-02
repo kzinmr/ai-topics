@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-06-02T08:02:35.207888+00:00",
+  "triage_run_id": "20260602T080233Z",
+  "source": "blog",
+  "summary_ja": "raw-backlog-ingest バッチ: 5件の未処理記事を分析。Russ CoxのCS/数学系記事2件、Dan Luuの市場効率性記事1件、Hex Technologiesのビジネス分析記事1件はAI/LLM/エージェント分野のスコープ外。NVIDIA Rubin包括的レポート1件は既にconcepts/nvidia-vera-rubin.mdとentities/nvidia.mdで捕捉済み。take=0, reference=0, skip=5。",
+  "decisions": [
+    {
+      "item_id": "research-sw-tch-com-fp-knuth",
+      "source": "blog",
+      "source_name": "research.swtch.com",
+      "title": "Pulling a New Proof from Knuth's Fixed-Point Printer",
+      "url": "https://research.swtch.com/fp-knuth",
+      "raw_path": "raw/articles/research.swtch.com--fp-knuth--00ec0d59.md",
+      "recommended_action": "skip",
+      "reason_ja": "Russ CoxによるKnuthの固定小数点印刷アルゴリズムの証明に関するCS/数学記事。AI/LLM/エージェント分野のスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "research-sw-tch-com-bisect",
+      "source": "blog",
+      "source_name": "research.swtch.com",
+      "title": "Hash-Based Bisect Debugging in Compilers and Runtimes",
+      "url": "https://research.swtch.com/bisect",
+      "raw_path": "raw/articles/research.swtch.com--bisect--5dfb7e4e.md",
+      "recommended_action": "skip",
+      "reason_ja": "コンパイラとランタイムにおけるハッシュベース二分探索デバッグの技術記事。AI/LLM/エージェント分野のスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "danluu-nothing-works",
+      "source": "blog",
+      "source_name": "danluu.com",
+      "title": "Why is it so hard to buy things that work well?",
+      "url": "https://danluu.com/nothing-works/",
+      "raw_path": "raw/articles/danluu.com--nothing-works--347942bb.md",
+      "recommended_action": "skip",
+      "reason_ja": "市場効率性、製品品質、buy vs build意思決定に関する分析記事。AI/LLM/エージェント分野のスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "hex-dashboards-to-decisions",
+      "source": "blog",
+      "source_name": "hex.tech",
+      "title": "How to drive real business impact by mastering ad hoc analysis",
+      "url": "https://hex.tech/blog/from-dashboards-to-decisions/",
+      "raw_path": "raw/articles/2026-05-10_hex-technologies_from-dashboards-to-decisions.md",
+      "recommended_action": "skip",
+      "reason_ja": "Hex Technologiesのビジネス分析インパクトに関する記事。entities/hex-technologies.mdで既にHexのAI分析プラットフォームを包括的にカバー済み。",
+      "candidate_wiki_path": "entities/hex-technologies.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "nvidia-rubin-comprehensive-report",
+      "source": "blog",
+      "source_name": "kzinmr",
+      "title": "NVIDIA Rubinプラットフォームによる計算力チェーンの包括的刷新と次世代ボトルネックの解消に関する調査報告",
+      "url": null,
+      "raw_path": "raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "NVIDIA Rubin/Groq/CPOの包括的レポート。concepts/nvidia-vera-rubin.mdのsources/frontmatterに本記事のrawパスが既に登録済み。完全捕捉。",
+      "candidate_wiki_path": "concepts/nvidia-vera-rubin.md",
+      "body_excerpt": ""
+    }
+  ]
+}

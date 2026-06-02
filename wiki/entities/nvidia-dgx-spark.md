@@ -3,7 +3,7 @@ title: NVIDIA DGX Spark
 type: entity
 aliases: [dgx-spark, project-digits, gb10-spark, nvidia-dgx-spark]
 created: 2026-04-15
-updated: 2026-05-14
+updated: 2026-06-02
 status: L2
 sources:
   - https://www.nvidia.com/en-us/products/workstations/dgx-spark
@@ -12,6 +12,7 @@ sources:
   - https://github.com/NVIDIA/dgx-spark-playbooks
   - "raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state.md"
   - "raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md"
+  - "raw/articles/2026-06-01_alexocheema-personal-ai-era-hardware.md"
 tags: [entity, hardware, local-llm, nvidia, inference]
 ---
 
@@ -168,6 +169,28 @@ Andrew Chen built a home lab progressing through Mac Mini → DGX Spark → 5090
 
 Full context: → [[concepts/local-ai]], [[entities/andrew-chen]]
 
+### Alex Cheema (Exo Labs) — June 2026
+
+Alex Cheema's viral thread (256 bookmarks, 57.6K impressions) frames DGX Spark as part of the broader **personal AI hardware battle** between Apple and NVIDIA. He identifies three critical dimensions: memory (128GB unified on both platforms), memory bandwidth (Apple M5 Max leads at 617GB/s vs DGX Spark's 273GB/s), and power (140W draw makes persistent local agents challenging on battery). Alex notes that DGX Spark shares its 128GB unified memory architecture with the new RTX Spark laptop, but the desktop form factor trades battery life for consistent power delivery.
+
+Full context: → [[entities/alex-cheema]]
+
+## NVIDIA RTX Spark (GTC Taipei, June 2026)
+
+Announced at GTC Taipei on May 31, 2026. The RTX Spark is NVIDIA's answer to the MacBook for local AI — a **laptop form factor** bringing full CUDA to Windows-on-Arm for the first time.
+
+| Spec | RTX Spark | DGX Spark | Apple M5 Max MacBook Pro |
+|------|-----------|-----------|--------------------------|
+| **Form Factor** | Laptop | Desktop (1.2 kg) | Laptop |
+| **Memory** | 128 GB unified | 128 GB unified | 128 GB unified |
+| **Memory Bandwidth** | TBC | 273 GB/s | 617 GB/s |
+| **Power** | TBC (battery) | 240W PSU, 140W TDP | ~140W, ~100Wh battery |
+| **CUDA** | Native (Windows-on-Arm) | Native (Linux aarch64) | No (MLX instead) |
+
+The RTX Spark potentially closes the gap between NVIDIA's CUDA ecosystem and Apple's local AI ecosystem by making CUDA accessible in a portable laptop form factor.
+
+→ [[entities/alex-cheema]], [[entities/jensen-huang]]
+
 ## Related
 
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure agent framework
@@ -178,3 +201,4 @@ Full context: → [[concepts/local-ai]], [[entities/andrew-chen]]
 - [[concepts/local-llm]] — Local LLM inference overview
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA's RTX AI Garage program
 - [[entities/jensen-huang]] — NVIDIA CEO, physical AI advocate
+- [[entities/alex-cheema]] — Exo Labs founder, personal AI hardware analysis

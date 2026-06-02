@@ -2,6 +2,13 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-06-02] x-ingest | Alex Cheema — Personal AI Era Hardware Analysis
+
+- **Source**: https://x.com/alexocheema/status/2061550254961639454 (Note Tweet, 256 bookmarks, 57.6K impressions)
+- **Raw**: `raw/articles/2026-06-01_alexocheema-personal-ai-era-hardware.md`
+- **Created**: `[[entities/alex-cheema]]` — Exo Labs founder, Oxford, 48K followers. Detailed analysis of 3 key hardware dimensions for local AI: memory (unified 128GB), memory bandwidth (Apple 617GB/s vs DGX Spark 273GB/s), power (140W draw = <1hr battery for persistent agent). Predicts personal AI era with Apple vs NVIDIA as competing platforms.
+- **Updated**: `[[entities/nvidia-dgx-spark]]` — Added Alex Cheema perspective + RTX Spark section (GTC Taipei announcement, specs comparison table). Updated sources and date.
+
 ## [2026-06-02] wiki-ingest | Anthropic Engineering — Promote 3 Key Articles to Top-Level Concept Pages
 
 - **Created**: `[[concepts/building-effective-agents]]` — Promoted from `harness-engineering/system-architecture/` sub-page. Anthropic's foundational agent architecture guide: workflows vs. agents, five composable patterns, ACI concept. 150 lines.
