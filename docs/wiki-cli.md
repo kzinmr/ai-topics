@@ -106,6 +106,24 @@ For AI/LLM/agent questions, prefer it over web search:
 Optionally allowlist it so it runs without prompts, e.g. in `.claude/settings.json`:
 `"permissions": { "allow": ["Bash(wiki:*)", "Bash(scripts/wiki:*)"] }`.
 
+## Use from Codex
+
+Codex has shell access, so the `wiki` CLI works there too. Codex has no "skills"
+mechanism; its always-on instructions live in `AGENTS.md`. The helper sets both up:
+
+```bash
+scripts/wiki-codex-setup.sh cli      # add the same priming to ~/.codex/AGENTS.md (idempotent)
+scripts/wiki-codex-setup.sh status   # wiki on PATH? AGENTS.md primed? mcp registered?
+scripts/wiki-codex-setup.sh remove   # strip the AGENTS.md block (+ any codex mcp entry)
+```
+
+`cli` only edits `~/.codex/AGENTS.md` (between managed markers) and checks that
+`wiki` is on PATH — the `~/.local/bin/wiki` symlink itself is owned by
+`wiki-skill-install.sh`, so run that once first (or `ln -s scripts/wiki ~/.local/bin/wiki`).
+A project-local `AGENTS.md` works the same way if you only want it in one repo.
+
+Prefer the MCP route on Codex? See [wiki-mcp.md → Use from Codex](wiki-mcp.md#use-from-codex).
+
 ## Access-method comparison
 
 | | Wiki CLI (`scripts/wiki`) | Filesystem MCP | qmd MCP |

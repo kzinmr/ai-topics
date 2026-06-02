@@ -84,6 +84,23 @@ claude mcp add ai-topics-wiki -- docker run -i --rm \
 Verify with `claude mcp list`. The container starts on demand per session
 (`--rm` cleans it up); no daemon to manage.
 
+### Use from Codex
+
+Codex CLI registers MCP servers via `codex mcp add` (writes `~/.codex/config.toml`):
+
+```bash
+scripts/wiki-codex-setup.sh mcp          # read-only Filesystem MCP (this doc)
+scripts/wiki-codex-setup.sh mcp --qmd    # qmd full-text/semantic MCP (see wiki-mcp-qmd.md)
+# equivalent manual form:
+codex mcp add ai-topics-wiki -- docker run -i --rm \
+  --mount type=bind,src=$HOME/ai-topics/wiki,dst=/wiki,ro mcp/filesystem /wiki
+```
+
+`codex mcp list` to verify, `scripts/wiki-codex-setup.sh remove` to undo. On Codex,
+the lighter [CLI route](wiki-cli.md#use-from-codex) (shell + `AGENTS.md` priming) is
+often enough; MCP is for parity with non-shell tooling. Run the setup from the
+canonical `~/ai-topics` clone so the mounted path is stable.
+
 ## Exposed tools (image `mcp/filesystem`, `secure-filesystem-server` v0.2.0)
 
 | Tool | Use |
