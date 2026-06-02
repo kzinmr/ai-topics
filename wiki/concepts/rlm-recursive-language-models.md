@@ -557,6 +557,7 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 - **[[concepts/dspy]]** — Declarative LM programming framework; ships RLM module
 - **[[concepts/harness-engineering]]** — Evaluation and constraint systems around LLMs; RLM's recursive decomposition pattern aligns with harness engineering's "build-verify loop" philosophy
 - **[[concepts/dspy-rlm]]** — DSPy.RLM implementation with full analysis of PTC relationship, 2-axis framing (function vs data), merge/split symmetry, and Tool-Augmented RLM design
+- **[[concepts/tool-use-examples]]** — Semantic Conventions Beyond Schema. RLM's first iteration data sampling is the runtime analogue: observe examples before acting, build internal "semantic layer" from data itself.
 - **[[concepts/programmatic-tool-calling]]** — Complementary paradigm: LLM writes code that calls tools (function axis). PTC merges N tool calls into 1 code block; RLM splits 1 huge context into N pieces. Mirror symmetry.
 - **[[concepts/code-execution-with-mcp]]** — Middle architectural layer between PTC and CodeMode: MCP as code API with progressive disclosure
 - **[[concepts/code-mode]]** — Specific implementations (Cloudflare V8, Pydantic Monty) of the code-execution-over-tool-calling pattern

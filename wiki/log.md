@@ -3,6 +3,18 @@
 
 
 
+## [2026-06-02] wiki-ingest | Anthropic "Advanced Tool Use" — Tool Search Tool, PTC, Tool Use Examples
+
+- **New concept**: [[concepts/tool-search-tool]] — On-Demand Tool Discovery via Progressive Disclosure. `defer_loading: true`, regex/BM25/embedding search, 85% token reduction (77K→8.7K), accuracy up 25pp (Opus 4). Positioned in progressive disclosure hierarchy.
+- **New concept**: [[concepts/tool-use-examples]] — Semantic Conventions Beyond Schema. `input_examples` field, generalized as the Semantic Layer Pattern connecting to RLM data sampling, DSPy Signature+Examples, data analysis semantic layers, and agentic search skills.
+- **Enriched**: [[concepts/programmatic-tool-calling]] — Added Anthropic blog as second source (with AWS blog).
+- **Enriched**: [[concepts/advanced-tool-use]] — Added cross-references to new concept pages, added second raw article source.
+- **Raw article saved**: `raw/articles/2025-11-24_anthropic_advanced-tool-use.md`
+- **Index updated**: Added tool-search-tool and tool-use-examples entries.
+- **Committed**: 5 files changed
+
+---
+
 ## [2026-06-02] wiki-ingest | Perplexity "Search as Code" (SaC) research article
 
 - **New concept**: [[concepts/search-as-code]] — Perplexity's programmable search architecture: composable SDK primitives replace monolithic search APIs, agents generate Python to orchestrate retrieval/ranking/filtering in sandboxes. Three-layer architecture (models → sandboxes → SDK). 85.1% token reduction on CVE task, SOTA on 4/5 benchmarks. Connects PTC pattern to search domain.

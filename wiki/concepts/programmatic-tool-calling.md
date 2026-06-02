@@ -6,7 +6,7 @@ type: concept
 tags: [tool-use, ai-agents, agent-architecture, agent-infrastructure, sandbox, token-economics, cost-optimization, agent-design-patterns, aws, bedrock]
 aliases: [PTC, code-orchestrated-tool-calling]
 related: [concepts/agent-hosting-aws, concepts/agentic-loop, concepts/codeact, concepts/rlm-recursive-language-models, concepts/code-execution-with-mcp, concepts/code-mode]
-sources: [raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md]
+sources: [raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md, raw/articles/2025-11-24_anthropic_advanced-tool-use.md]
 ---
 
 # Programmatic Tool Calling (PTC)

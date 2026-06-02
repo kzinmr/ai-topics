@@ -15,12 +15,15 @@ aliases:
 status: active
 sources:
   - raw/articles/2026-05-08_anthropic-engineering_advanced-tool-use.md
+  - raw/articles/2025-11-24_anthropic_advanced-tool-use.md
   - https://www.anthropic.com/engineering/advanced-tool-use
 related:
-  - code-execution-with-mcp
-  - mcp
-  - context-engineering
-  - building-effective-agents
+  - concepts/tool-search-tool
+  - concepts/tool-use-examples
+  - concepts/programmatic-tool-calling
+  - concepts/code-execution-with-mcp
+  - concepts/mcp
+  - concepts/context-engineering
 ---
 
 # Advanced Tool Use (Claude Developer Platform)
@@ -36,6 +39,8 @@ Three advanced tool-use features released by Anthropic in March 2026. Foundation
 | **Tool Use Examples** | JSON schemas only show structural validity, not usage patterns | Universal standard for showing effective tool usage examples |
 
 ## Tool Search Tool
+
+See [[concepts/tool-search-tool]] for full treatment.
 
 ### Token Savings
 
