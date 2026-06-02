@@ -4,7 +4,7 @@ type: concept
 aliases:
   - deep-research
 created: 2026-05-22
-updated: 2026-05-28
+updated: 2026-06-02
 tags:
   - concept
   - deep-research
@@ -19,6 +19,7 @@ tags:
 sources:
   - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
+  - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
 ---
 
 # Deep Research
@@ -40,6 +41,37 @@ When given the right documents upfront (oracle setting), models answer correctly
 
 > "The oracle result is the clearest signal. GPT-4.1 answers 93.49% correctly with perfect retrieval, 14.58% with weak BM25. That gap is hard to explain without retrieval playing a major role."
 > — Jo Kristian Bergum, Hornet blog, Part 1
+
+## Academic Validation: Meng et al. (2026)
+
+The "retrieval bottleneck" thesis was independently validated by a systematic IR study from the University of Glasgow — **Meng, Ou, MacAvaney, and Dalton** ([arXiv:2602.21456](https://arxiv.org/abs/2602.21456)). This is the first academic paper to rigorously evaluate text ranking methods specifically in the deep research setting, using the same BrowseComp-Plus dataset with a fixed corpus.
+
+### Key Contributions
+
+The paper evaluates IR methods from three perspectives:
+
+| Perspective | Finding |
+|---|---|
+| **Retrieval units** | Passage-level (250 words) outperforms document-level for agents with limited context windows |
+| **Pipeline config** | BM25–monoT5-3B (depth 50) reaches 0.716 recall / 0.689 accuracy, approaching commercial performance |
+| **Query mismatch** | Agent-issued queries use web-search syntax (quotes, operators) that favors lexical/sparse/multi-vector retrievers over dense models |
+
+### Critical Insight: Query-to-Question (Q2Q) Reformulation
+
+The paper introduces **Q2Q reformulation** — translating agent keyword queries into natural language questions using the agent's own reasoning trace. This yields a **7.95% relative accuracy gain** for SPLADE-v3, directly addressing the distribution shift between agent query styles and neural ranker training data.
+
+This academic finding echoes the practitioner insight from the Hornet blog series: agents query like power users (10+ terms, operators, quotes), not like the short natural language queries that neural retrievers are trained on.
+
+### Connection to Hornet's Empirical Data
+
+| Meng et al. (academic IR) | Hornet blog Part 2 (empirical) |
+|---|---|
+| 5 retrievers, 3 re-rankers systematically tested | 19,279 search calls analyzed across 830 questions |
+| BM25 competitive with neural methods for agent queries | Agent median 10 terms (vs human 2), quotes in 98% of sessions |
+| Q2Q bridges query mismatch | Agents use OR, site:, filetype: operators rarely seen from humans |
+| Passage retrieval > document retrieval for agent context windows | 24 search calls/session means cumulative context matters |
+
+Both converge on the same conclusion: **retrieval infrastructure must be redesigned for agent workloads**, not just scaled up.
 
 ## Why Context Windows Don't Solve This
 
@@ -122,6 +154,7 @@ Sources: [NVIDIA Developer Blog](https://developer.nvidia.com/blog/add-a-special
 
 ## Key Sources
 
+- [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (University of Glasgow, Feb 2026). Systematic IR evaluation: BM25 vs neural rankers, Q2Q reformulation, passage vs document retrieval.
 - [Deep research is a retrieval problem](https://hornet.dev/blog/deep-research-is-a-retrieval-problem) — Part 1 (Jo Kristian Bergum, Mar 2026)
 - [This is what agentic retrieval looks like](https://hornet.dev/blog/this-is-what-agentic-retrieval-looks-like) — Part 2 (Jo Kristian Bergum, May 2026)
 - [The context window is not your database](https://hornet.dev/blog/the-context-window-is-not-your-database) — Skip Everling, Hornet blog (Feb 2026)

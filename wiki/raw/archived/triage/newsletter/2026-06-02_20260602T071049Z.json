@@ -1,0 +1,69 @@
+{
+  "archived_at": "2026-06-02T07:24:02.540354Z",
+  "source": "newsletter",
+  "date": "2026-06-02",
+  "run_id": "20260602T071049Z",
+  "items": [
+    {
+      "item_id": "<20260601130348.3.c49794ff64bd5c53@mg-d0.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "Interconnects (Nathan Lambert)",
+      "title": "Open and closed models are on different exponentials",
+      "url": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Nathan Lambertの経済論考。コーディングエージェント（Opus 4.5/Codex 5.2以降）が最高の知能にプレミアムを払う市場を創出したという主張。オープン・クローズドモデルが異なる指数曲線を描くというテーゼは既存のconcepts/open-vs-closed-model-gap.md（能力差測定）とは異なる角度。ただしentities/nathan-lambert.mdは既に同様の経済論を「My bets on open models, mid-2026」セクションでカバー済み。軽微なエンリッチメント候補。",
+      "candidate_wiki_path": "entities/nathan-lambert.md",
+      "body_excerpt": "コーディングエージェントがOpus 4.5とCodex 5.2の閾値を超えたことで、最高の知能に対してプレミアムを払う大規模市場が初めて出現した。クローズドモデルはこの高マージン市場に最適化でき、一方オープンモデルは別の指数曲線（コスト効率、普及度）を辿る。APIビジネスの減衰とモデル保護戦略、計算資源の大量建設とトークン補助金による短期的需給動態について分析。筆者は$2000/月でも現在のツールに支払う用意があると明言。"
+    },
+    {
+      "item_id": "<20260601133156.3.45c4f1bfb5183f1b@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Import AI (Jack Clark)",
+      "title": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk",
+      "url": "https://open.substack.com/pub/importai/p/import-ai-459-ai-oversight-is-difficult",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 複数トピックを含むImport AI定期号。AI監視の困難さ（既存safety概念に接続）、タンパク質折りたたみのスケーリング則（ESM BioHub世界モデル、専門的科学トピック）、人類絶滅リスクの価格設定（Andrew Leigh講演、政策寄り）など。entities/jack-clark.mdは既にImport AIコンテンツを広くカバー済み。軽微な更新候補。",
+      "candidate_wiki_path": "entities/jack-clark.md",
+      "body_excerpt": "Import AI 459号。AI監視の困難さ、タンパク質折りたたみモデルのスケーリング則（BioHub ESM: Evolutionary Scale Modelsによるタンパク質生物学の世界モデル）、AIシステムの絶滅リスク価格設定（Andrew Leigh豪州議員の講演）をカバー。PIIEによるAIとGDP統計の分析、Stanford GPICデータセット、ESMタンパク質論文へのリンクを含む。"
+    },
+    {
+      "item_id": "<20260601150146.3.acb3e3f634af2888@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Lenny's Podcast (How I AI)",
+      "title": "How I AI: Codex Goals explained & Claude Opus 4.8 review & Building iPhone app with zero skills",
+      "url": "https://open.substack.com/pub/lenny/p/how-i-ai-codex-goals-explained-and",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-how-i-ai-codex-goals-explained-claude-opus-4-8-review-building-an-iphone-app-wit.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ポッドキャストエピソードのまとめ記事。3テーマ（コード不要iPhoneアプリ構築/Replit/Gemini/Claude、Codex Goals機能解説、Claude Opus 4.8レビュー）は全て既存概念ページ（concepts/codex-goal.md, concepts/claude-opus-4-8.md）でカバー済み。ポッドキャスト要約は情報密度が低くWiki価値限定的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Lenny's Podcast「How I AI」シリーズの週間まとめ。3エピソード：(1) Bryce Rattner KeithleyがReplit + Gemini + ClaudeでゼロからiOSフィットネスアプリを構築、(2) Codexの/goal機能の解説（睡眠中も動作する自律機能）、(3) Claude Opus 4.8のレビュー。各エピソードはYouTube/Spotify/Apple Podcastsおよびchatprd.aiのワークフローガイドにリンク。"
+    },
+    {
+      "item_id": "<20260601.155139.7b25ae0f@mta29>-1",
+      "source": "newsletter",
+      "source_name": "Superintel (Kim Monismus)",
+      "title": "MiniMax M3 Opens Frontier Agents",
+      "url": "https://link.mail.beehiiv.com/v1/c/tgJBtES2e3kuzAOTzLDEApLO1iH7lL3qCxymflYeN%2BrdcPhr%2BVJoVtk89qn5%0ADiKUsm5H6XXmcWyZ8%2Bpwxk4Jbnikc4loenX678RzVrQc4%2FZvVoXrN22ohTz%2F%0AP1XAr8rMbZRqTpXMPoZSNK3E5OvbPE5zFGxzCccCzSC0MnE%2B%2B%2FFUns5velUl%0AWWp2k6RALKYD%2BnmMj9xlZ5bWhYRlbI1JHw%3D%3D%0A/e9ade55e60abeb48",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-minimax-m3-opens-frontier-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ beehiivトラッキングURLがCloudflareブロックによりコンテンツ解決不能。件名からMiniMax M3のエージェント機能解放を示唆。既存のconcepts/minimax-sparse-attention.mdでM3の主要技術革新（MSAスパースアテンション）はカバー済み。entities/minimax.mdはM2.7までしかカバーしていないが、コンテンツ非アクセスのため判断不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "beehiivトラッキングURLがCloudflare Challengeにより解決不能。件名「MiniMax M3 Opens Frontier Agents」のみ確認可能。MiniMax M3シリーズがフロンティアAIエージェント機能を解放するという内容と推定。"
+    },
+    {
+      "item_id": "<20260602032810.3.f5837705ebf8452f@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "AINews (Latent Space / swyx)",
+      "title": "NVIDIA Cosmos 3, Nemotron 3 Ultra, and RTX Spark",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-nvidia-cosmos-3-nemotron-3",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-ainews-nvidia-cosmos-3-nemotron-3-ultra-and-rtx-spark.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ペイウォール（isAccessibleForFree: False）によりコンテンツ非アクセス。件名からNVIDIA Cosmos 3（世界基盤モデル）、Nemotron 3 Ultra（言語モデル）、RTX Spark（エッジAI）の3大発表をカバーすると推定。既存のentities/nvidia.mdおよび関連プロダクトページでこれらの発表をカバーしている可能性が高い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "AINewsペイウォールド記事。isAccessibleForFree: False。説明文「Jensen scores a huge win」のみ確認可能。NVIDIA Cosmos 3（世界モデル）、Nemotron 3 Ultra、RTX Sparkの3製品をカバー。"
+    }
+  ],
+  "count": 5
+}

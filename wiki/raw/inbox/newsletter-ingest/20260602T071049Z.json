@@ -1,0 +1,87 @@
+{
+  "checkpoint_run_id": "20260602T071049Z",
+  "triaged_at": "2026-06-02T07:12:00Z",
+  "source": "newsletter-ingest",
+  "total_newsletters": 6,
+  "classification_summary": {
+    "critical": 3,
+    "high": 3,
+    "low": 0
+  },
+  "items": [
+    {
+      "message_id": "<20260601130348.3.c49794ff64bd5c53@mg-d0.substack.com>",
+      "subject": "Open and closed models are on different exponentials",
+      "date": "2026-06-01",
+      "source": "Nathan Lambert (robotic.substack.com)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md",
+      "importance": "high",
+      "relevance_tags": ["open-source-ai", "scaling-laws", "model-ecosystem"],
+      "rationale": "Nathan Lambert analyzes divergent scaling trajectories of open vs closed models. Directly relevant to open-source AI and model ecosystem wiki coverage.",
+      "primary_url": "https://open.substack.com/pub/robotic/p/open-and-closed-models-are-on-different"
+    },
+    {
+      "message_id": "<20260601133156.3.45c4f1bfb5183f1b@mg2.substack.com>",
+      "subject": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk",
+      "date": "2026-06-01",
+      "source": "Jack Clark (importai.substack.com)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md",
+      "importance": "high",
+      "relevance_tags": ["ai-safety", "ai-policy", "scaling-laws", "protein-folding"],
+      "rationale": "Jack Clark's Import AI covers AI oversight challenges, scaling laws for scientific models, and extinction risk pricing. Multiple topics map to wiki concept areas (AI safety, scaling laws).",
+      "primary_url": "https://open.substack.com/pub/importai/p/import-ai-459-ai-oversight-is-difficult"
+    },
+    {
+      "message_id": "<20260601150146.3.acb3e3f634af2888@mg-d1.substack.com>",
+      "subject": "How I AI: Codex Goals explained & Claude Opus 4.8 review & Building an iPhone app with zero technical skills",
+      "date": "2026-06-01",
+      "source": "Lenny Rachitsky (lennysnewsletter.substack.com)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-how-i-ai-codex-goals-explained-claude-opus-4-8-review-building-an-iphone-app-wit.md",
+      "importance": "high",
+      "relevance_tags": ["coding-agents", "claude", "codex", "developer-tools"],
+      "rationale": "Covers OpenAI Codex Goals (coding agent feature) and Claude Opus 4.8 review. Directly relevant to coding agents and developer tooling wiki topics. Claude Opus 4.8 is a new model version to track.",
+      "primary_url": "https://open.substack.com/pub/lenny/p/how-i-ai-codex-goals-explained-and"
+    },
+    {
+      "message_id": "<20260601154148.3.b4ff25713a428f27@mg-d1.substack.com>",
+      "subject": "Why Video Agent models are next — Ethan He, xAI Grok Imagine Lead",
+      "date": "2026-06-01",
+      "source": "swyx (latent.space)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-why-video-agent-models-are-next-ethan-he-xai-grok-imagine-lead.md",
+      "importance": "critical",
+      "relevance_tags": ["ai-agents", "video-models", "xai", "multimodal", "grok"],
+      "rationale": "swyx/Latent Space podcast on video agent models with xAI's Grok Imagine Lead. Video agents are an emerging frontier — high relevance to AI agents and multimodal models wiki coverage. xAI/Grok entity tracking.",
+      "primary_url": "https://open.substack.com/pub/swyx/p/video-agents"
+    },
+    {
+      "message_id": "<20260601.155139.7b25ae0f@mta29>",
+      "subject": "MiniMax M3 Opens Frontier Agents",
+      "date": "2026-06-01",
+      "source": "beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-01-minimax-m3-opens-frontier-agents.md",
+      "importance": "critical",
+      "relevance_tags": ["minimax", "frontier-models", "ai-agents", "open-source-ai"],
+      "rationale": "MiniMax M3 launch related to frontier agent capabilities. MiniMax is a notable Chinese AI lab. New model release with agent focus — critical for model tracking and AI agents wiki coverage.",
+      "primary_url": null
+    },
+    {
+      "message_id": "<20260602032810.3.f5837705ebf8452f@mg-d0.substack.com>",
+      "subject": "[AINews] NVIDIA Cosmos 3, Nemotron 3 Ultra, and RTX Spark",
+      "date": "2026-06-02",
+      "source": "swyx (latent.space) AINews",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-ainews-nvidia-cosmos-3-nemotron-3-ultra-and-rtx-spark.md",
+      "importance": "critical",
+      "relevance_tags": ["nvidia", "inference-hardware", "cosmos", "nemotron", "edge-ai"],
+      "rationale": "Major NVIDIA announcements: Cosmos 3 (world model/robotics), Nemotron 3 Ultra (enterprise LLM), RTX Spark (edge AI hardware). Covers inference infrastructure, models, and hardware — all core wiki topics.",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-nvidia-cosmos-3-nemotron-3"
+    }
+  ],
+  "recommended_actions": [
+    "Create/update NVIDIA entity page for Cosmos 3, Nemotron 3 Ultra, RTX Spark announcements",
+    "Create/update MiniMax entity page for M3 frontier agent model",
+    "Create/update xAI entity page and video agents concept page from swyx podcast",
+    "Enrich Claude model page with Opus 4.8 details",
+    "Enrich OpenAI Codex page with Goals feature",
+    "Track open vs closed model scaling narrative from Nathan Lambert"
+  ]
+}

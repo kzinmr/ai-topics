@@ -4,7 +4,7 @@ type: concept
 aliases:
   - hornet
 created: 2026-04-25
-updated: 2026-05-22
+updated: 2026-06-02
 tags:
   - concept
   - product
@@ -19,6 +19,7 @@ tags:
 sources:
   - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
+  - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
 ---
 
 # Hornet
@@ -79,6 +80,16 @@ Agents also use advanced operator combinations (OR across year ranges, wildcard 
 - **Neural retrievers** trained on MS MARCO/Natural Questions where queries are short and fluent — GPT-5's queries are out-of-distribution
 - **Search APIs** expose one string because that's what humans typed; operators were deprecated
 - **Benchmarks** score single queries, not iterative 24-call sessions
+
+## Academic Validation
+
+The core Hornet thesis — that retrieval infrastructure must be redesigned for agent workloads — is independently validated by Meng, Ou, MacAvaney, and Dalton ([arXiv:2602.21456](https://arxiv.org/abs/2602.21456), University of Glasgow, Feb 2026). Their systematic evaluation of 5 retrievers and 3 re-rankers on BrowseComp-Plus confirms:
+
+- **BM25 outperforms neural rankers** for agent-issued queries (web-search syntax favors lexical matching)
+- **Passage-level retrieval** is more efficient under agent context constraints
+- **Q2Q reformulation** (keyword → natural language via reasoning trace) bridges the query mismatch with 7.95% relative gain
+
+This academic IR work and Hornet's empirical analysis (Part 2: 19,279 search calls across 830 questions) converge on the same design imperative.
 
 ## Team
 

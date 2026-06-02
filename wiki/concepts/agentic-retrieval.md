@@ -4,7 +4,7 @@ type: concept
 aliases:
   - agentic-retrieval
 created: 2026-04-25
-updated: 2026-05-22
+updated: 2026-06-02
 tags:
   - concept
   - agentic-retrieval
@@ -18,6 +18,7 @@ tags:
 sources:
   - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
+  - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
 ---
 
 # Agentic Retrieval
@@ -92,6 +93,17 @@ Poor retrieval compounds across multi-call sessions. Each turn's search results 
 
 - [[concepts/hornet]] — Retrieval engine purpose-built for agent workloads
 - [[concepts/vespa]] — The engine where many Hornet engineers previously worked
+
+## Academic Validation: Meng et al. (2026)
+
+The University of Glasgow study ([arXiv:2602.21456](https://arxiv.org/abs/2602.21456)) provides the first systematic IR evaluation of text ranking methods in the deep research setting. Key findings that validate the agentic retrieval paradigm:
+
+- **Lexical retrievers (BM25) outperform neural retrievers** for agent-issued queries — agent query syntax (quotes, Boolean operators, fragmented terms) is out-of-distribution for neural rankers trained on MS MARCO
+- **Passage-level retrieval** is more efficient than document-level under agent context constraints
+- **Q2Q reformulation** (translating agent keyword queries → natural language using reasoning traces) yields 7.95% relative gain, bridging the distribution gap
+- **Reasoning re-rankers underperform** — they misinterpret keyword-heavy search queries as reasoning problems
+
+This academic work converges with Hornet's empirical analysis (Part 2: 19,279 search calls, 830 questions) on the same conclusion: retrieval infrastructure must be redesigned for agent workloads.
 
 ## Related Concepts
 
