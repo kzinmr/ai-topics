@@ -1,0 +1,300 @@
+#!/usr/bin/env python3
+"""wiki — read-only CLI over the ai-topics knowledge base (wiki/).
+
+A shell-native alternative to the Filesystem/qmd MCP servers, aimed at
+shell-capable agents (Claude Code, Codex) and humans. Composes with the agent's
+existing Bash. Full-text search is powered by ripgrep; metadata filtering reads
+each page's YAML frontmatter (type / tags). The wiki is never modified.
+
+The wiki is written in ENGLISH — search in English.
+
+Commands (run `wiki <cmd> -h` for details):
+  search <query>   Full-text content search (ripgrep), optional --type/--tag/--area
+  find <glob>      Filename search (e.g. 'transformer*'), optional --type/--tag
+  show <page>      Print a page (resolved by path or name)
+  meta <page>      Print a page's frontmatter only
+  links <page>     Outbound [[wikilinks]] and inbound backlinks
+  list             List pages matching --type/--tag/--area filters
+  index | schema   Print wiki/index.md | wiki/SCHEMA.md
+
+Wiki location: $WIKI_PATH, else the wiki/ next to this script's repo.
+"""
+from __future__ import annotations
+import argparse, os, re, subprocess, sys, json, fnmatch
+from pathlib import Path
+
+CURATED = ["concepts", "entities", "comparisons", "events", "queries"]
+ALL_AREAS = CURATED + ["raw"]
+
+
+def wiki_root() -> Path:
+    env = os.environ.get("WIKI_PATH")
+    if env:
+        return Path(env).expanduser().resolve()
+    return (Path(__file__).resolve().parent.parent / "wiki").resolve()
+
+
+WIKI = wiki_root()
+
+
+def die(msg: str, code: int = 1):
+    print(f"wiki: {msg}", file=sys.stderr)
+    sys.exit(code)
+
+
+# ---- frontmatter (minimal YAML subset: scalars + block lists) ----
+def parse_frontmatter(path: Path) -> dict:
+    fm: dict = {}
+    try:
+        with path.open("r", encoding="utf-8", errors="replace") as f:
+            first = f.readline()
+            if first.strip() != "---":
+                return fm
+            key = None
+            for line in f:
+                if line.strip() == "---":
+                    break
+                m = re.match(r"^([A-Za-z0-9_-]+):\s*(.*)$", line)
+                if m:
+                    key, val = m.group(1), m.group(2).strip()
+                    if val.startswith("[") and val.endswith("]"):  # inline flow list
+                        inner = val[1:-1].strip()
+                        fm[key] = [x.strip().strip('"\'') for x in inner.split(",") if x.strip()]
+                    elif val and val not in ("|", ">"):
+                        fm[key] = val.strip('"\'')
+                    else:
+                        fm[key] = []
+                    continue
+                li = re.match(r"^\s*-\s+(.*)$", line)
+                if li and key is not None:
+                    if not isinstance(fm.get(key), list):
+                        fm[key] = []
+                    fm[key].append(li.group(1).strip().strip('"\''))
+    except OSError:
+        pass
+    return fm
+
+
+def page_tags(fm: dict) -> list[str]:
+    t = fm.get("tags", [])
+    return t if isinstance(t, list) else [t]
+
+
+def matches_meta(path: Path, types: list[str], tags: list[str]) -> bool:
+    if not types and not tags:
+        return True
+    fm = parse_frontmatter(path)
+    if types and fm.get("type") not in types:
+        return False
+    if tags:
+        pt = set(page_tags(fm))
+        if not set(tags).issubset(pt):
+            return False
+    return True
+
+
+def search_dirs(area: str | None, curated: bool) -> list[Path]:
+    if area:
+        return [WIKI / area]
+    if curated:
+        return [WIKI / a for a in CURATED]
+    return [WIKI]
+
+
+def rel(p: Path) -> str:
+    try:
+        return str(p.relative_to(WIKI.parent))
+    except ValueError:
+        return str(p)
+
+
+def resolve_page(name: str) -> Path | None:
+    # direct path (absolute, repo-relative, or wiki-relative)
+    for cand in (Path(name), WIKI / name, WIKI.parent / name):
+        if cand.is_file():
+            return cand.resolve()
+    if not name.endswith(".md"):
+        for cand in (WIKI / f"{name}.md",):
+            if cand.is_file():
+                return cand.resolve()
+    # fuzzy by filename
+    stem = name[:-3] if name.endswith(".md") else name
+    hits = [p for p in WIKI.rglob("*.md")
+            if fnmatch.fnmatch(p.stem.lower(), f"*{stem.lower()}*")]
+    if len(hits) == 1:
+        return hits[0].resolve()
+    if len(hits) > 1:
+        print("Multiple matches — be more specific:", file=sys.stderr)
+        for p in sorted(hits)[:25]:
+            print(f"  {rel(p)}", file=sys.stderr)
+        sys.exit(2)
+    return None
+
+
+# ---- commands ----
+def cmd_search(a):
+    dirs = [d for d in search_dirs(a.area, a.curated) if d.exists()]
+    rg = ["rg", "--line-number", "--no-heading", "--color", "never",
+          "--max-count", str(a.per_file), "-g", "*.md"]
+    if not a.case_sensitive:
+        rg.append("--ignore-case")
+    rg += ["-e", a.query, *map(str, dirs)]
+    try:
+        out = subprocess.run(rg, capture_output=True, text=True).stdout
+    except FileNotFoundError:
+        die("ripgrep (rg) not found — install it or use `wiki find`/`grep`.")
+    by_file: dict[str, list[tuple[str, str]]] = {}
+    for ln in out.splitlines():
+        m = re.match(r"^(.*?\.md):(\d+):(.*)$", ln)
+        if not m:
+            continue
+        by_file.setdefault(m.group(1), []).append((m.group(2), m.group(3).strip()))
+    files = [Path(f) for f in by_file
+             if matches_meta(Path(f), a.type, a.tag)]
+    files.sort(key=lambda p: len(by_file[str(p)]), reverse=True)
+    files = files[: a.num]
+    if a.json:
+        print(json.dumps([
+            {"path": rel(f), "type": parse_frontmatter(f).get("type"),
+             "tags": page_tags(parse_frontmatter(f)),
+             "hits": [{"line": int(l), "text": t} for l, t in by_file[str(f)]]}
+            for f in files], ensure_ascii=False, indent=2))
+        return
+    if not files:
+        print("(no matches)"); return
+    for f in files:
+        fm = parse_frontmatter(f)
+        print(f"\n\033[1m{rel(f)}\033[0m  [{fm.get('type','?')}] ({len(by_file[str(f)])} hits)")
+        for l, t in by_file[str(f)][: a.snippets]:
+            print(f"  {rel(f)}:{l}: {t[:200]}")
+
+
+def cmd_find(a):
+    types, tags = a.type, a.tag
+    pat = a.glob if any(c in a.glob for c in "*?[") else f"*{a.glob}*"
+    res = []
+    for p in sorted(WIKI.rglob("*.md")):
+        if fnmatch.fnmatch(p.stem.lower(), pat.lower()) and matches_meta(p, types, tags):
+            res.append(p)
+    if a.json:
+        print(json.dumps([rel(p) for p in res], ensure_ascii=False)); return
+    for p in res:
+        fm = parse_frontmatter(p)
+        print(f"{rel(p)}  [{fm.get('type','?')}]")
+    if not res:
+        print("(no matches)")
+
+
+def cmd_show(a):
+    p = resolve_page(a.page) or die(f"page not found: {a.page}")
+    sys.stdout.write(p.read_text(encoding="utf-8", errors="replace"))
+
+
+def cmd_meta(a):
+    p = resolve_page(a.page) or die(f"page not found: {a.page}")
+    fm = parse_frontmatter(p)
+    print(json.dumps(fm, ensure_ascii=False, indent=2) if a.json
+          else "\n".join(f"{k}: {v}" for k, v in fm.items()))
+
+
+def cmd_links(a):
+    p = resolve_page(a.page) or die(f"page not found: {a.page}")
+    text = p.read_text(encoding="utf-8", errors="replace")
+    out = sorted({m.split("|")[0].strip()
+                  for m in re.findall(r"\[\[([^\]]+)\]\]", text)})
+    name = p.stem
+    rg = subprocess.run(
+        ["rg", "-l", "--color", "never", "-g", "*.md",
+         "-e", rf"\[\[{re.escape(name)}(\||\]\])", str(WIKI)],
+        capture_output=True, text=True).stdout.splitlines()
+    back = sorted(rel(Path(f)) for f in rg if Path(f).resolve() != p)
+    if a.json:
+        print(json.dumps({"outbound": out, "backlinks": back}, ensure_ascii=False, indent=2)); return
+    print(f"# {rel(p)}\n\nOutbound [[links]] ({len(out)}):")
+    for l in out: print(f"  -> {l}")
+    print(f"\nBacklinks ({len(back)}):")
+    for b in back: print(f"  <- {b}")
+
+
+def cmd_list(a):
+    dirs = [d for d in search_dirs(a.area, a.curated) if d.exists()]
+    res = []
+    for d in dirs:
+        for p in sorted(d.rglob("*.md")):
+            if matches_meta(p, a.type, a.tag):
+                res.append(p)
+    if a.json:
+        print(json.dumps([rel(p) for p in res], ensure_ascii=False)); return
+    for p in res:
+        print(rel(p))
+    print(f"\n{len(res)} pages", file=sys.stderr)
+
+
+def cmd_cat_root(fname):
+    def _run(a):
+        f = WIKI / fname
+        if not f.is_file():
+            die(f"{fname} not found at {rel(f)}")
+        sys.stdout.write(f.read_text(encoding="utf-8", errors="replace"))
+    return _run
+
+
+def add_meta_filters(sp):
+    sp.add_argument("--type", action="append", default=[],
+                    help="filter by frontmatter type (concept/entity/comparison/...); repeatable")
+    sp.add_argument("--tag", action="append", default=[],
+                    help="require frontmatter tag (repeatable = AND)")
+
+
+def main():
+    p = argparse.ArgumentParser(
+        prog="wiki", description="Read-only CLI over the ai-topics wiki. Search in ENGLISH.")
+    p.add_argument("--root", action="store_true", help=argparse.SUPPRESS)
+    sub = p.add_subparsers(dest="cmd", required=True)
+
+    s = sub.add_parser("search", help="full-text content search (ripgrep)")
+    s.add_argument("query")
+    s.add_argument("-n", "--num", type=int, default=15, help="max files (default 15)")
+    s.add_argument("--snippets", type=int, default=3, help="snippet lines per file")
+    s.add_argument("--per-file", type=int, default=5, help="rg max-count per file")
+    s.add_argument("--area", choices=ALL_AREAS, help="restrict to one area")
+    s.add_argument("--curated", action="store_true", help="curated layer only (exclude raw/)")
+    s.add_argument("-s", "--case-sensitive", action="store_true")
+    s.add_argument("--json", action="store_true")
+    add_meta_filters(s)
+    s.set_defaults(func=cmd_search)
+
+    f = sub.add_parser("find", help="filename search")
+    f.add_argument("glob", help="name or glob, e.g. 'transformer*'")
+    f.add_argument("--json", action="store_true")
+    add_meta_filters(f)
+    f.set_defaults(func=cmd_find)
+
+    sh = sub.add_parser("show", help="print a page")
+    sh.add_argument("page"); sh.set_defaults(func=cmd_show)
+
+    mt = sub.add_parser("meta", help="print a page's frontmatter")
+    mt.add_argument("page"); mt.add_argument("--json", action="store_true")
+    mt.set_defaults(func=cmd_meta)
+
+    lk = sub.add_parser("links", help="outbound links + backlinks")
+    lk.add_argument("page"); lk.add_argument("--json", action="store_true")
+    lk.set_defaults(func=cmd_links)
+
+    ls = sub.add_parser("list", help="list pages by metadata filter")
+    ls.add_argument("--area", choices=ALL_AREAS); ls.add_argument("--curated", action="store_true")
+    ls.add_argument("--json", action="store_true")
+    add_meta_filters(ls)
+    ls.set_defaults(func=cmd_list)
+
+    sub.add_parser("index", help="print wiki/index.md").set_defaults(func=cmd_cat_root("index.md"))
+    sub.add_parser("schema", help="print wiki/SCHEMA.md").set_defaults(func=cmd_cat_root("SCHEMA.md"))
+
+    if not WIKI.is_dir():
+        die(f"wiki not found at {WIKI} (set $WIKI_PATH)")
+    a = p.parse_args()
+    a.func(a)
+
+
+if __name__ == "__main__":
+    main()
