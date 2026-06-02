@@ -178,5 +178,5 @@ print(json.dumps(exceeded))
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Parent index
-- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Five principles of agent tool design
+- [[concepts/writing-tools-for-agents]] — Five principles of agent tool design
 - [[concepts/context-engineering]] — Context engineering

@@ -134,4 +134,4 @@ Anthropic recommends multiple layers of defense rather than a single eval:
 - [[concepts/harness-engineering]] — Top-level index
 - [[concepts/building-effective-agents]] — Fundamental principles of agent building
 - [[concepts/effective-harnesses-for-long-running-agents]] — Harnesses for long-running agents
-- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Tool design for agents
+- [[concepts/writing-tools-for-agents]] — Tool design for agents

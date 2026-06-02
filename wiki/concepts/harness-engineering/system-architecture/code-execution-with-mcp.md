@@ -120,5 +120,5 @@ await salesforce.updateRecord({
 - [[concepts/code-mode]] — Concrete implementations: Cloudflare Code Mode (V8 MCP), Pydantic Monty
 - [[concepts/harness-engineering]] — Parent index
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced tool use (related to PTC)
-- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Tool design for agents
+- [[concepts/writing-tools-for-agents]] — Tool design for agents
 - [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Fundamentals of building agents

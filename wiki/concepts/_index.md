@@ -65,7 +65,7 @@ AI and LLM concept pages organized by topic.
 - [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — Comparison of design philosophies for "memory" systems in AI assistants/agents. OpenAI, Anthropic, and Cognition (Devin) each adopt different approaches, reflecting differences in product targets (consumer vs engineer) and architectural philosophy (automatic vs explicit).
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — In October 2025, Anthropic officially introduced the Memory Tool to the Claude API. This was a very "opinionated" design providing 6 file operations (view, create, str_replace, insert, delete, rename) natively to the model. Cognition (developer of Devin) quickly caught onto this move...
 - [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Practical guidelines for building LLM agents, derived from Anthropic's collaboration with dozens of teams.
-- [[concepts/harness-engineering/system-architecture/claude-code-best-practices]] — Anthropic official best practices for using Claude Code (agentic coding tool).
+- [[concepts/claude-code-best-practices]] — Anthropic official best practices for using Claude Code (agentic coding tool).
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — A pattern for exposing MCP (Model Context Protocol) servers as code APIs, allowing agents to write code and call tools. Same core insight as Cloudflare's "Code Mode."
 - [[concepts/harness-engineering/system-architecture/container-context]] — Hosted containers providing persistent execution environments for agents. A "model workspace" integrating filesystem, database, and network access.
 - [[concepts/harness-engineering/system-architecture/context-anxiety]] — Discovered during Cognition's integration of Claude Sonnet 4.5 into Devin.
@@ -75,7 +75,7 @@ AI and LLM concept pages organized by topic.
 - [[concepts/harness-engineering/system-architecture/harness-design-long-running-apps]] — Agent harness patterns designed by Anthropic for long-running application development. Inspired by the GAN (Generative Adversarial Network) Generator-Evaluator loop.
 - [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — A study quantifying the impact of infrastructure setup alone on scores in agentic coding benchmarks.
 - [[concepts/harness-engineering/system-architecture/multi-agent-research-system]] — A research system built by Anthropic that runs multiple Claude agents in parallel.
-- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Anthropic's methodology for designing tools for AI agents. An approach of "writing tools for agents, and using agents to optimize the tools."
+- [[concepts/writing-tools-for-agents]] — Anthropic's methodology for designing tools for AI agents. An approach of "writing tools for agents, and using agents to optimize the tools."
 
 ## Fine-Tuning
 
