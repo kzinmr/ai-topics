@@ -1,0 +1,65 @@
+{
+  "checkpoint_run_id": "20260602T160042Z",
+  "decisions": [
+    {
+      "item_id": "paulgraham.com--popular-html--c633a6dc.md",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "Paulgraham",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI content. non-AI content: Paul Graham 2001 essay on programming language popularity. PG entity page already exists and tracks his essays; previous PG essays (wealth, fr, ideas, startupfunding) all skipped as non-AI",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "danluu.com--cache-incidents--1d05e743.md",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Danluu",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/danluu.com--cache-incidents--1d05e743.md",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI content. non-AI content: Dan Luu analysis of Twitter cache incidents (2012-2022). Dan Luu was explicitly removed from blogwatcher RSS config as no AI relevance",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "brutecat.com--articles-google-cloud-rce--13889f7b.md",
+      "source": "raw_backlog",
+      "source_name": "brutecat.com",
+      "title": "Brutecat",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/brutecat.com--articles-google-cloud-rce--13889f7b.md",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI content. non-AI content: Security research about Google Cloud CVE-2026-2031 (StubZero RCE vulnerability). No AI/LLM/agent relevance",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md",
+      "source": "raw_backlog",
+      "source_name": "blog.llvm.org",
+      "title": "Blog Llvm Org",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI content. non-AI content: LLVM Fortran compiler (flang) milestone article. No AI/LLM/agent relevance",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-3-one-to-many-relation--38c6d188.md",
+      "source": "raw_backlog",
+      "source_name": "blog.miguelgrinberg.com",
+      "title": "Blog Miguelgrinberg",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-3-one-to-many-relation--38c6d188.md",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI content. non-AI content: SQLAlchemy 2 ORM tutorial chapter on database relationships. No AI/LLM/agent relevance",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

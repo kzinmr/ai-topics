@@ -33,35 +33,35 @@
     "archived_at": "2026-05-28T16:05:38.976738+00:00",
     "filename": "wheresyoured.at--ais-economics-dont-make-sense--cab39fd8.md",
     "decision": "reference",
-    "reason_ja": "★★★☆☆ 既存concepts/ai-bubble-economics.mdでZitronのサブプライムAI論は包括的にカバー済み。ただし新しいデータポイント（Claude Codeの1人あたり日$13・月$150-250、Stargate Abileneの遅延状況、OpenAIの$852B調達目標）があり、既存ページの更新素材として価値。",
+    "reason_ja": "\u2605\u2605\u2605\u2606\u2606 \u65e2\u5b58concepts/ai-bubble-economics.md\u3067Zitron\u306e\u30b5\u30d6\u30d7\u30e9\u30a4\u30e0AI\u8ad6\u306f\u5305\u62ec\u7684\u306b\u30ab\u30d0\u30fc\u6e08\u307f\u3002\u305f\u3060\u3057\u65b0\u3057\u3044\u30c7\u30fc\u30bf\u30dd\u30a4\u30f3\u30c8\uff08Claude Code\u306e1\u4eba\u3042\u305f\u308a\u65e5$13\u30fb\u6708$150-250\u3001Stargate Abilene\u306e\u9045\u5ef6\u72b6\u6cc1\u3001OpenAI\u306e$852B\u8abf\u9054\u76ee\u6a19\uff09\u304c\u3042\u308a\u3001\u65e2\u5b58\u30da\u30fc\u30b8\u306e\u66f4\u65b0\u7d20\u6750\u3068\u3057\u3066\u4fa1\u5024\u3002",
     "source": "backlog"
   },
   "https://www.wheresyoured.at/ais-economics-dont-make-sense-ad-free/": {
     "archived_at": "2026-05-28T16:05:38.976743+00:00",
     "filename": "wheresyoured.at--ais-economics-dont-make-sense-ad-free--b7415062.md",
     "decision": "skip",
-    "reason_ja": "★☆☆☆☆ 上記記事の広告除去版。内容同一のため重複。",
+    "reason_ja": "\u2605\u2606\u2606\u2606\u2606 \u4e0a\u8a18\u8a18\u4e8b\u306e\u5e83\u544a\u9664\u53bb\u7248\u3002\u5185\u5bb9\u540c\u4e00\u306e\u305f\u3081\u91cd\u8907\u3002",
     "source": "backlog"
   },
   "https://www.wheresyoured.at/the-ai-industry-is-lying-to-you/": {
     "archived_at": "2026-05-28T16:05:38.976745+00:00",
     "filename": "wheresyoured.at--the-ai-industry-is-lying-to-you--00c54f74.md",
     "decision": "reference",
-    "reason_ja": "★★★☆☆ データセンター容量の現実（発表241GW中建設中33%のみ、2025年実稼働3GW）、Stargate Abileneの遅延、NVIDIA GPUストランディング問題を詳細に分析。既存ai-bubble-economics.mdのインフラセクションを補強するデータ。",
+    "reason_ja": "\u2605\u2605\u2605\u2606\u2606 \u30c7\u30fc\u30bf\u30bb\u30f3\u30bf\u30fc\u5bb9\u91cf\u306e\u73fe\u5b9f\uff08\u767a\u8868241GW\u4e2d\u5efa\u8a2d\u4e2d33%\u306e\u307f\u30012025\u5e74\u5b9f\u7a3c\u50cd3GW\uff09\u3001Stargate Abilene\u306e\u9045\u5ef6\u3001NVIDIA GPU\u30b9\u30c8\u30e9\u30f3\u30c7\u30a3\u30f3\u30b0\u554f\u984c\u3092\u8a73\u7d30\u306b\u5206\u6790\u3002\u65e2\u5b58ai-bubble-economics.md\u306e\u30a4\u30f3\u30d5\u30e9\u30bb\u30af\u30b7\u30e7\u30f3\u3092\u88dc\u5f37\u3059\u308b\u30c7\u30fc\u30bf\u3002",
     "source": "backlog"
   },
   "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/commit-messages/": {
     "archived_at": "2026-05-28T16:05:38.976747+00:00",
     "filename": "chiark.greenend.org.uk--sgtatham-quasiblog-commit-messages--6e00df14.md",
     "decision": "skip",
-    "reason_ja": "★☆☆☆☆ Gitコミットメッセージの書き方ガイド。AI/LLM/エージェントと無関係な純粋なソフトウェアエンジニアリング技術記事。wikiスコープ外。",
+    "reason_ja": "\u2605\u2606\u2606\u2606\u2606 Git\u30b3\u30df\u30c3\u30c8\u30e1\u30c3\u30bb\u30fc\u30b8\u306e\u66f8\u304d\u65b9\u30ac\u30a4\u30c9\u3002AI/LLM/\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3068\u7121\u95a2\u4fc2\u306a\u7d14\u7c8b\u306a\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u30a8\u30f3\u30b8\u30cb\u30a2\u30ea\u30f3\u30b0\u6280\u8853\u8a18\u4e8b\u3002wiki\u30b9\u30b3\u30fc\u30d7\u5916\u3002",
     "source": "backlog"
   },
   "https://danluu.com/learning-to-program/": {
     "archived_at": "2026-05-28T16:05:38.976748+00:00",
     "filename": "danluu.com--learning-to-program--6d4130fd.md",
     "decision": "skip",
-    "reason_ja": "★☆☆☆☆ Dan Luuのプログラミング学習体験談。個人の学習履歴を振り返るエッセイで、AI/LLM/エージェント技術との関連性なし。wikiスコープ外。",
+    "reason_ja": "\u2605\u2606\u2606\u2606\u2606 Dan Luu\u306e\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u5b66\u7fd2\u4f53\u9a13\u8ac7\u3002\u500b\u4eba\u306e\u5b66\u7fd2\u5c65\u6b74\u3092\u632f\u308a\u8fd4\u308b\u30a8\u30c3\u30bb\u30a4\u3067\u3001AI/LLM/\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u6280\u8853\u3068\u306e\u95a2\u9023\u6027\u306a\u3057\u3002wiki\u30b9\u30b3\u30fc\u30d7\u5916\u3002",
     "source": "backlog"
   },
   "urls": [
@@ -74,25 +74,25 @@
   "last_updated": "2026-05-31T16:01:59.664865+00:00",
   "https://iczelia.net/posts/groups/": {
     "status": "skip",
-    "reason": "非AIコンテンツ。抽象代数学（群論）の初心者向けチュートリアル。LLM/AIエージェントのwikiスコープ外。",
+    "reason": "\u975eAI\u30b3\u30f3\u30c6\u30f3\u30c4\u3002\u62bd\u8c61\u4ee3\u6570\u5b66\uff08\u7fa4\u8ad6\uff09\u306e\u521d\u5fc3\u8005\u5411\u3051\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb\u3002LLM/AI\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u306ewiki\u30b9\u30b3\u30fc\u30d7\u5916\u3002",
     "archived_at": "2026-05-31T20:04:29.847460+00:00",
     "filename": "iczelia.net--posts-groups--da9892ce.md"
   },
   "https://overreacted.io/react-as-a-ui-runtime/": {
     "status": "skip",
-    "reason": "非AIコンテンツ。Dan AbramovによるReactプログラミングモデルの技術的解説。ホストツリー、レンダラー、変異モード vs 永続モードなどのReact内部アーキテクチャの話で、AI/LLMとの関連性なし。",
+    "reason": "\u975eAI\u30b3\u30f3\u30c6\u30f3\u30c4\u3002Dan Abramov\u306b\u3088\u308bReact\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u30e2\u30c7\u30eb\u306e\u6280\u8853\u7684\u89e3\u8aac\u3002\u30db\u30b9\u30c8\u30c4\u30ea\u30fc\u3001\u30ec\u30f3\u30c0\u30e9\u30fc\u3001\u5909\u7570\u30e2\u30fc\u30c9 vs \u6c38\u7d9a\u30e2\u30fc\u30c9\u306a\u3069\u306eReact\u5185\u90e8\u30a2\u30fc\u30ad\u30c6\u30af\u30c1\u30e3\u306e\u8a71\u3067\u3001AI/LLM\u3068\u306e\u95a2\u9023\u6027\u306a\u3057\u3002",
     "archived_at": "2026-05-31T20:04:29.847460+00:00",
     "filename": "overreacted.io--react-as-a-ui-runtime--da0feb63.md"
   },
   "https://overreacted.io/a-social-filesystem/": {
     "status": "skip",
-    "reason": "非AIコンテンツ。ソーシャルメディアのファイルパラダイム論。ATプロトコル、Bluesky、分散ソーシャルファイルシステムの概念解説。AI/LLMエージェントのwikiスコープ外。",
+    "reason": "\u975eAI\u30b3\u30f3\u30c6\u30f3\u30c4\u3002\u30bd\u30fc\u30b7\u30e3\u30eb\u30e1\u30c7\u30a3\u30a2\u306e\u30d5\u30a1\u30a4\u30eb\u30d1\u30e9\u30c0\u30a4\u30e0\u8ad6\u3002AT\u30d7\u30ed\u30c8\u30b3\u30eb\u3001Bluesky\u3001\u5206\u6563\u30bd\u30fc\u30b7\u30e3\u30eb\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0\u306e\u6982\u5ff5\u89e3\u8aac\u3002AI/LLM\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u306ewiki\u30b9\u30b3\u30fc\u30d7\u5916\u3002",
     "archived_at": "2026-05-31T20:04:29.847460+00:00",
     "filename": "overreacted.io--a-social-filesystem--f8483a3b.md"
   },
   "https://www.youtube.com/watch?v=h370222tnAQ": {
     "status": "skip",
-    "reason": "既存wikiで完全にカバー済み。entities/doug-turnbull-speaking.md の Conference Talks セクションに「Why 2026 is The Year of Agentic Search」の詳細サマリー（4つの柱：LLM Query Understanding、Autoresearch、Agentic Search Harnesses、LLM-as-a-Judge）が既に収録されている。concepts/agentic-search.md も豊富なコンテンツでカバー済み。",
+    "reason": "\u65e2\u5b58wiki\u3067\u5b8c\u5168\u306b\u30ab\u30d0\u30fc\u6e08\u307f\u3002entities/doug-turnbull-speaking.md \u306e Conference Talks \u30bb\u30af\u30b7\u30e7\u30f3\u306b\u300cWhy 2026 is The Year of Agentic Search\u300d\u306e\u8a73\u7d30\u30b5\u30de\u30ea\u30fc\uff084\u3064\u306e\u67f1\uff1aLLM Query Understanding\u3001Autoresearch\u3001Agentic Search Harnesses\u3001LLM-as-a-Judge\uff09\u304c\u65e2\u306b\u53ce\u9332\u3055\u308c\u3066\u3044\u308b\u3002concepts/agentic-search.md \u3082\u8c4a\u5bcc\u306a\u30b3\u30f3\u30c6\u30f3\u30c4\u3067\u30ab\u30d0\u30fc\u6e08\u307f\u3002",
     "archived_at": "2026-05-31T20:04:29.847460+00:00",
     "filename": "2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search.md"
   },
@@ -119,5 +119,30 @@
     "archived_at": "2026-06-01T04:02:41.195012+00:00",
     "source": "backlog",
     "run_id": "20260601T040035Z"
+  },
+  "paulgraham.com--popular-html--c633a6dc.md": {
+    "status": "skip",
+    "date": "2026-06-02",
+    "run_id": "20260602T160042Z"
+  },
+  "danluu.com--cache-incidents--1d05e743.md": {
+    "status": "skip",
+    "date": "2026-06-02",
+    "run_id": "20260602T160042Z"
+  },
+  "brutecat.com--articles-google-cloud-rce--13889f7b.md": {
+    "status": "skip",
+    "date": "2026-06-02",
+    "run_id": "20260602T160042Z"
+  },
+  "blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md": {
+    "status": "skip",
+    "date": "2026-06-02",
+    "run_id": "20260602T160042Z"
+  },
+  "blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-3-one-to-many-relation--38c6d188.md": {
+    "status": "skip",
+    "date": "2026-06-02",
+    "run_id": "20260602T160042Z"
   }
 }

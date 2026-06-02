@@ -5685,3 +5685,13 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 
 **No structural corruption detected**: 0 pipe-table issues, 0 line-number prefix issues, index is clean.
 **No auto-fixes applied beyond index header**: Orphans (665), stale pages (1170), and missing sources (788) require human review.
+
+## 2026-06-02 — Wiki Health Auto-Fix
+
+- **Phase 1 (Integrity)**: index.md corruption scan — pipe prefix: 0, line number prefix: 0, triple brackets: 0, space prefix: 0. No corruption found. ✅
+- **Phase 2 (Ghost/Orphans)**: Ghost entry scan — 0 ghost entries. All index.md references point to existing files. ✅
+- **Phase 2 (Orphan Indexing)**: Added 20 orphan pages to index.md (18 concepts + 1 entity + 1 comparison):
+  - `concepts/testing-ai-agents`, `concepts/serving-llms-vllm`, `concepts/rlms`, `concepts/research-agent-fundamentals`, `concepts/reinforcement-fine-tuning`, `concepts/red-teaming-adversarial-eval`, `concepts/post-training`, `concepts/openrouter-state-of-ai-2025`, `concepts/openai-codex-superapp`, `concepts/openai-agents-sdk`, `concepts/open-source-ai`, `concepts/one-person-unicorn`, `concepts/multimodal`, `concepts/multi-agent-research-system`, `concepts/multi-agent-orchestration-patterns`, `concepts/mcp-protocol`, `concepts/llm-as-judge`, `concepts/formal-verification-llm-agents`
+  - `entities/epoch-ai`
+  - `comparisons/agent-harnesses`
+- Updated index.md header: `Indexed entries: 1635 → 1655`, `Not in index: 699 → 679`
