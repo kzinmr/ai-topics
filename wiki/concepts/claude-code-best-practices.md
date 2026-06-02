@@ -1,126 +1,160 @@
 ---
 title: "Claude Code Best Practices"
 type: concept
-aliases:
-  - claude-code-best-practices
-  - claude-code-tips
-created: 2026-04-25
-updated: 2026-04-29
+created: 2026-06-02
+updated: 2026-06-02
 tags:
-  - concept
-  - anthropic
-status: complete
+  - claude-code
+  - coding-agents
+  - agentic-engineering
+  - ai-agent-engineering
+  - context-engineering
+  - developer-tooling
+  - ai-coding
+  - ci-cd
+  - agent-safety
+  - harness-engineering
 sources:
-  - url: "https://code.claude.com/docs/en/best-practices"
-    title: "Official Claude Code Best Practices (Anthropic)"
-  - url: "https://aiorg.dev/blog/claude-code-best-practices"
-    title: "Claude Code Best Practices: 15 Tips from 6 Projects (aiorg.dev, 2026)"
-  - url: "https://smartscope.blog/en/generative-ai/claude/claude-code-best-practices-advanced-2026"
-    title: "Claude Code Advanced Best Practices 2026 (SmartScope)"
-  - url: "https://ranthebuilder.cloud/blog/claude-code-best-practices-lessons-from-real-projects"
-    title: "Claude Code Best Practices: Lessons from Real Projects (Ran Isenberg, 2026)"
+  - raw/articles/2026-05-08_anthropic-engineering_claude-code-best-practices.md
+  - https://www.anthropic.com/engineering/claude-code-best-practices
+related:
+  - claude-code
+  - claude-code-auto-mode
+  - claude-code-sandboxing
+  - context-engineering
+  - agent-skills
+status: active
 ---
+
 # Claude Code Best Practices
 
-**Claude Code Best Practices** is a collection of design patterns and operational knowledge for maximizing Anthropic's AI coding agent, Claude Code. It is organized into three categories: **CLAUDE.md setup**, **prompting patterns**, and **workflow habits**.
+Practical patterns for effective [[entities/claude-code|Claude Code]] usage, compiled from Anthropic's internal teams and engineers across diverse codebases. The overarching constraint driving most best practices: **the context window fills up fast, and performance degrades as it fills**. See [[concepts/context-engineering]] for the theoretical foundations of context management.
 
-## Three Basic Categories
+## CLAUDE.md Configuration
 
-### 1. Project Setup
+CLAUDE.md is a special file Claude reads at the start of every conversation. Run `/init` to generate a starter file, then refine over time.
 
-#### CLAUDE.md (Most Important)
-A project's "memory card." A single setup saves 20–30% tokens per session:
+### Placement Hierarchy
+
+| Location | Scope | Shared? |
+|----------|-------|---------|
+| `~/.claude/CLAUDE.md` | All sessions globally | No |
+| `./CLAUDE.md` (project root) | Project-wide | Yes (git) |
+| `./CLAUDE.local.md` | Project-wide personal | No (`.gitignore`) |
+| Child directories | On-demand per subdirectory | Yes (git) |
+
+### What to Include vs Exclude
+
+**Include**: Bash commands Claude cannot guess, non-default code style rules, testing instructions, repo etiquette, architecture decisions, environment quirks, common gotchas.
+
+**Exclude**: Anything inferable from code, standard language conventions, detailed API docs (link instead), frequently changing info, long tutorials, self-evident practices.
+
+> **Key rule**: For each line, ask "Would removing this cause Claude to make mistakes?" If not, cut it. Bloated CLAUDE.md files cause Claude to ignore actual instructions. Treat it like code — prune regularly, test changes by observing behavioral shifts.
+
+CLAUDE.md supports file imports via `@path/to/file` syntax and can reference parent/child CLAUDE.md files in monorepo setups. Add emphasis (e.g., "IMPORTANT", "YOU MUST") to improve adherence on critical rules.
+
+## Common Workflows
+
+### Explore → Plan → Implement → Commit
+
+The recommended four-phase workflow separates research from execution:
+
+1. **Explore** (plan mode): Claude reads files and answers questions without making changes
+2. **Plan** (plan mode): Claude creates a detailed implementation plan; press `Ctrl+G` to edit the plan directly
+3. **Implement** (default mode): Claude codes against the plan, runs tests, fixes failures
+4. **Commit** (default mode): Descriptive commit message and PR creation
+
+> **When to skip planning**: If you could describe the diff in one sentence (typo fix, log line, rename), ask Claude directly. Planning is most valuable when the approach is uncertain or changes span multiple files.
+
+### Bug Fixing
+
+Provide the symptom, likely location, and what "fixed" looks like. Example: "Users report login fails after session timeout. Check src/auth/, especially token refresh. Write a failing test that reproduces the issue, then fix it."
+
+### Codebase Exploration
+
+Ask Claude the same questions you'd ask a senior engineer: "How does logging work?", "What edge cases does this flow handle?", "Why does this call `foo()` instead of `bar()`?" This is an effective onboarding workflow requiring no special prompting.
+
+### Spec-Driven Development
+
+For larger features, have Claude interview you first using `AskUserQuestion`. Claude asks about implementation details, UI/UX, edge cases, and tradeoffs you might not have considered. Once the spec is complete (written to `SPEC.md`), start a fresh session to execute it with clean context.
+
+## Multi-Claude Patterns
+
+### Git Worktrees for Parallel Agents
+
+Run 3–5 Claude sessions simultaneously using git worktrees so edits don't collide. Example: one agent reads logs in an analysis worktree, multiple agents implement features in parallel feature worktrees, human acts as coordinator.
+
+### Writer/Reviewer Pattern
+
+Use two sessions for quality: one implements, the other reviews with fresh context (unbiased by code it just wrote). Session A writes the rate limiter; Session B reviews for edge cases and race conditions.
+
+### Non-Interactive Mode (`claude -p`)
+
+Run Claude programmatically in CI, hooks, or scripts:
+
+```bash
+# One-off queries
+claude -p "Explain what this project does"
+
+# Structured output for scripts
+claude -p "List all API endpoints" --output-format json
+
+# Streaming for real-time processing
+claude -p "Analyze this log file" --output-format stream-json
 ```
-# Project overview and target audience
-# Tech stack and framework versions
-# Key build, test, and deploy commands
-# Project structure
-# Coding conventions
-# Important rules (no committing secrets, accessibility requirements, etc.)
-```
-**Important**: Keep under 200 lines. Bloating is counterproductive.
 
-#### CLAUDE.md Hierarchy (3 Levels)
-The Claude Certified Architect exam frequently tests the 3-level hierarchy of CLAUDE.md (Domain 3, 20%):
+### Fan-Out Across Files
 
-| Level | Location | Characteristics |
-|--------|------|------|
-| User level | `~/.claude/CLAUDE.md` | Not version-controlled, not shared |
-| Project level | `.claude/CLAUDE.md` | Version-controlled, team-shared |
-| Directory level | Files in subdirectories | Directory-bound |
+For large migrations, generate a task list, write a loop calling `claude -p` per file with `--allowedTools` to scope permissions. Test on 2–3 files first, refine the prompt, then run at scale.
 
-**Exam trap**: Team members miss instructions → because they are in user-level settings (not version-controlled, not shared).
+## GitHub Actions / CI Integration
 
-#### Path-Specific Rules (`.claude/rules/`)
-Apply conventions to the **entire codebase** via YAML frontmatter glob patterns (e.g., `**/*.test.tsx`). Directory-level CLAUDE.md cannot do this (directory-bound). Key concept tested in exams.
+Claude Code integrates into CI pipelines via non-interactive mode. Use `claude -p` in GitHub Actions workflows for automated code review, migration validation, and test generation. Combine with `--output-format json` for programmatic result parsing.
 
-#### .claudeignore
-Like `.gitignore`, specifies files Claude Code should skip:
-```
-node_modules/
-.next/
-dist/
-*.lock
-*.log
-coverage/
-.env*
-```
-Can reduce token consumption by 50–70%.
+## Security and Permissions
 
-#### Rules (`.claude/rules/*.md`)
-Modular, topic-specific configuration:
-- Test guidelines
-- Data visualization conventions
-- API design rules
+Three approaches to reduce approval fatigue while maintaining safety:
 
-### 2. Prompting Patterns
+- **[[concepts/claude-code-auto-mode|Auto mode]]**: Classifier model reviews commands, blocks risky actions (0.4% false positive rate), lets routine work proceed unattended
+- **Permission allowlists**: Permit specific known-safe commands (e.g., `npm run lint`, `git commit`) via `/permissions`
+- **[[concepts/claude-code-sandboxing|Sandboxing]]**: OS-level isolation (Linux bubblewrap / macOS seatbelt) restricting filesystem and network access
 
-| Pattern | Description | When to Use |
-|---------|------|--------------|
-| **Plan Mode** | Review plan before execution | Changes affecting 3+ files |
-| **Feedback Loops** | 2–3x quality improvement | Code review, refactoring |
-| **Pattern Reference** | Reference existing patterns | Creating new API routes, etc. |
-| **One Task Per Session** | 1 session = 1 task | Complex multi-step work |
+See [[concepts/claude-code-auto-mode]] for the two-layer defense architecture and [[concepts/claude-code-sandboxing]] for sandbox implementation details.
 
-### 3. Workflow Habits
+## Context Management Techniques
 
-- **/compact**: Context compression (200K window management)
-- **Hooks**: Deterministic quality gates (always executed)
-- **Slash Commands**: Custom commands (git, test, PR)
-- **Git Worktrees**: Run 5 Claude agents in parallel
-- **Subagents**: Delegate specialized tasks (security review, etc.)
+- **`/clear` between unrelated tasks**: Resets context entirely; long sessions with irrelevant context reduce performance
+- **Auto-compaction**: Triggered at ~95% context usage; customize preservation rules in CLAUDE.md (e.g., "always preserve modified file list and test commands")
+- **`/compact <instructions>`**: Manual compaction with focus guidance (e.g., `/compact Focus on the API changes`)
+- **Subagents for investigation**: Delegate research to subagents running in separate context windows; they report summaries without cluttering the main conversation
+- **`/btw` for quick questions**: Answers appear in a dismissible overlay, never entering conversation history
+- **Checkpoints**: Every action creates a checkpoint; double-tap `Esc` or `/rewind` to restore conversation, code, or both
 
-## Advanced Techniques
+For deeper context engineering theory, see [[concepts/context-engineering]].
 
-| Technique | Description |
-|-----------|------|
-| **Hooks are mandatory, CLAUDE.md is advisory** | Hooks execute deterministically; CLAUDE.md is reference info |
-| **Subagents have separate context** | Sub-agents operate in independent context windows |
-| **Skills auto-fire** | `SKILL.md` in `.claude/skills/` auto-applies based on context |
-| **Approval fatigue mitigation** | Streamline frequent approvals with Allowlist + Sandbox |
-| **2 failures = /clear** | Reset session after 2 consecutive failures |
-| **1 session = 1 task** | Focused context for best performance |
+## Environment Configuration
 
-## Common Pitfalls
+- **CLI tools**: Install `gh` (GitHub), `aws`, `gcloud`, and other CLIs — they are the most context-efficient way to interact with external services
+- **[[concepts/agent-skills|Skills]]**: Create `SKILL.md` files in `.claude/skills/` for domain knowledge and reusable workflows; loaded on demand without bloating every conversation
+- **Hooks**: Deterministic scripts that run at specific workflow points (unlike CLAUDE.md which is advisory); e.g., run eslint after every file edit
+- **MCP servers**: Connect external tools (Notion, Figma, databases) via `claude mcp add`
+- **Subagents**: Define specialized assistants in `.claude/agents/` with isolated context and restricted tools
 
-| Pitfall | Countermeasure |
-|---------|------|
-| CLAUDE.md too long | Keep under 200 lines, externalize with links |
-| Multiple tasks in one session | Use /compact or new session per task |
-| Requesting approval every time | Configure Allowlist + Sandbox |
-| Not using Hooks | Set up deterministic quality gates |
-| Executing without planning | Verify upfront with Plan Mode |
+## Common Failure Patterns
 
-## Related Concepts
+| Pattern | Fix |
+|---------|-----|
+| Kitchen sink session (unrelated tasks mixed) | `/clear` between tasks |
+| Repeated correction loops (context polluted with failures) | After 2 failed corrections, `/clear` and write a better prompt |
+| Over-specified CLAUDE.md (rules get lost in noise) | Ruthlessly prune; convert recurring rules to hooks |
+| Trust-then-verify gap (plausible but broken output) | Always provide verification: tests, screenshots, scripts |
+| Infinite exploration (unscoped investigation fills context) | Scope narrowly or use subagents |
 
-- [[concepts/claude-perfect-memory]] — Claude Code's persistent memory design
-- [[concepts/agent-loop-orchestration]] — Agent loop patterns
-- [[concepts/monty-sandbox]] — Code execution sandbox
-- [[concepts/claude-certified-architect-domains]] — Claude Certified Architect's 5 domain knowledge (agentic loop, hooks, hub-and-spoke, context management)
+## See Also
 
-## Sources
-
-- [Official Claude Code Best Practices (Anthropic)](https://code.claude.com/docs/en/best-practices)
-- [Claude Code Best Practices: 15 Tips from 6 Projects](https://aiorg.dev/blog/claude-code-best-practices)
-- [Claude Code Advanced Best Practices 2026](https://smartscope.blog/en/generative-ai/claude/claude-code-best-practices-advanced-2026)
-- [Lessons from Real Projects (Ran Isenberg, 2026)](https://ranthebuilder.cloud/blog/claude-code-best-practices-lessons-from-real-projects)
+- [[entities/claude-code]] — Claude Code entity page (metrics, architecture, history)
+- [[concepts/claude-code-auto-mode]] — Auto mode permission classifier
+- [[concepts/claude-code-sandboxing]] — OS-level sandboxing implementation
+- [[concepts/context-engineering]] — Context management theory and frameworks
+- [[concepts/agent-skills]] — Skills standard and progressive disclosure
+- [[concepts/harness-engineering]] — Harness engineering discipline

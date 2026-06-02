@@ -5581,3 +5581,25 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - OpenAI Responses API vs Anthropic Messages API (stateful vs stateless)
 - OpenAI Skills (repo-local, AGENTS.md) vs Anthropic Skills (open standard, dynamic mounting)
 - OpenAI Realtime API has no Anthropic equivalent
+
+### 2026-06-02 — Created concepts/claude-code-best-practices.md
+- **Source**: raw/articles/2026-05-08_anthropic-engineering_claude-code-best-practices.md
+- **Action**: New concept page (160 lines)
+- **Coverage**: CLAUDE.md configuration patterns, common workflows (explore→plan→implement→commit, bug fixing, codebase exploration, spec-driven development), multi-Claude patterns (git worktrees, writer/reviewer, non-interactive mode, fan-out), GitHub Actions/CI integration, security and permissions (cross-links to auto-mode and sandboxing), context management techniques, environment configuration, common failure patterns
+- **Cross-links**: claude-code entity, claude-code-auto-mode, claude-code-sandboxing, context-engineering, agent-skills, harness-engineering
+- **Avoided duplication**: Did not re-cover auto-mode classifier architecture, sandboxing bubblewrap/seatbelt details, context engineering theory, or skills standard structure — cross-linked instead
+
+## 2026-06-02 — Anthropic engineering: concepts化 2ページ追加
+
+**Action**: 3記事の concepts 化を実施。うち1記事は既存ページに統合済み。
+
+**結果**:
+- `effective-context-engineering-for-ai-agents` → **SKIP** (既存 `context-engineering.md` 304行に完全統合済み。Anthropic framework、compaction、JIT retrieval、sub-agent isolation すべてカバー)
+- `claude-code-best-practices` → **CREATED** `concepts/claude-code-best-practices.md` (160行)
+  - CLAUDE.md設定パターン、ワークフロー、Multi-Claude (git worktrees, headless mode)、GitHub Actions CI、セキュリティ、コンテキスト管理
+  - 既存ページ(auto-mode, sandboxing, context-engineering)と重複排除済み
+- `writing-tools-for-agents` → **CREATED** `concepts/writing-tools-for-agents.md` (163行)
+  - ツール設計5原則、評価駆動ワークフロー、ResponseFormat enum パターン
+  - `advanced-tool-use.md`(プラットフォーム機能)とは明確に役割分離
+
+**Anthropic engineering concepts化率**: 16/25 → **18/25** (raw止まり7記事に削減)
