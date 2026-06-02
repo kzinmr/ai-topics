@@ -1,6 +1,42 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-02] Sean Goedecke entity enrichment — "Build agents, not pipelines"
+
+**Action**: Enriched entity page `entities/seangoedecke-com.md` with new article from Sean Goedecke blog (May 31, 2026). Article argues agents > pipelines for LLM systems due to context-gathering difficulty. Concept page `concepts/agent-vs-pipeline-architecture.md` already existed; updated `updated` field.
+
+**Wiki pages updated**:
+- **UPDATED**: `entities/seangoedecke-com.md` — Added "Build agents, not pipelines" to Timeline, Recent Articles, Sources, and References
+- **UPDATED**: `concepts/agent-vs-pipeline-architecture.md` — Updated `updated` date to 2026-06-02
+
+
+
+## [2026-06-02] active-crawl | 5 new raw articles + 4 new concept pages
+
+**Action**: Proactive wiki crawl discovering trending AI/ML topics through HN + blogwatcher DB scanning. 5 raw articles saved, 4 new concept pages created, 1 existing page redirected.
+
+**Raw articles saved** (5 files in `raw/articles/`):
+- `2026-05-23_aboutcode_ai-agent-ported-scancode-python-to-rust.md` — Philippe Ombredanne: AI agent ports ScanCode Toolkit Python→Rust (14,240 chars)
+- `2026-05-31_garymarcus_pope-understands-ai-better-than-hinton.md` — Gary Marcus responds to Hinton's consciousness claims (4,201 chars)
+- `2026-05-27_youtube_improving-ai-labels-viewers-creators.md` — YouTube AI labeling policy update (758 chars)
+- `2026-05-27_mlsu_can-we-have-the-day-off.md` — AI productivity and work-life reflection (1,992 chars)
+- `2026-05-30_brethorsting_domain-expertise-real-moat.md` — Aaron Brethorst on domain expertise as AI moat (4,770 chars)
+
+**Wiki pages created**:
+- **CREATED**: `concepts/ai-code-porting.md` — AI-driven codebase translation (ScanCode case study: trademark, licensing, community implications)
+- **CREATED**: `concepts/ai-consciousness-debate.md` — Gary Marcus vs Hinton debate, mimicry argument, Gullibility Gap, Magnifica Humanitas
+- **CREATED**: `concepts/ai-content-transparency.md` — YouTube auto-detection, platform labeling comparison (YouTube/Meta/TikTok/X)
+- **CREATED**: `concepts/domain-expertise-ai-moat.md` — Domain expertise as critical differentiator in AI-assisted development
+
+**Wiki pages updated**:
+- **REDIRECTED**: `concepts/consciousness.md` — stub → redirect to `concepts/ai-consciousness-debate.md`
+
+**Topics discovered but covered (skipped page creation)**:
+- Claude Opus 4.8 (already documented)
+- Gemini 3.5 Flash (already documented)
+- Qwen 3.7 Max (already documented)
+- Gemma 4 (already documented)
+- Google Antigravity (already documented)
 
 ## [2026-06-02] x-ingest | Alex Cheema — Personal AI Era Hardware Analysis
 

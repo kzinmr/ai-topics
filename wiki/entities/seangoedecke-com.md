@@ -9,6 +9,7 @@ sources:
   - raw/articles/seangoedecke.com--prompts-are-technical-debt-too--2bd50f80.md
   - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
   - raw/articles/seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c.md
+  - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
 ---
 
 # Sean Goedecke
@@ -51,6 +52,7 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | **2026-05-17** | Publishes "DeepSeek-V4-Flash means LLM steering is interesting again" — explores activation engineering and steering vectors for influencing model behavior |
 || **2026-05-22** | Publishes "The famous o3 'GeoGuessr' prompt did not work" — constructs a 200-image benchmark to test Kelsey Piper's famous GeoGuessr prompt, finding the elaborate prompt performed worse than the default (median 83.2km vs 102.3km). GPT-5.4/5.5 lack o3's geolocation ability. Demonstrates how easily prompt engineers can fool themselves without benchmarks |
 || **2026-05-22** | Publishes "Weird projects I shipped with AI" — catalogs 5 personal projects (Skifreedle, Autodeck, Endless Wiki, VicFlora Offline, gh-standup) built with LLM assistance, arguing they are "existence proofs" that AI enables projects that would not otherwise exist |
+|| **2026-05-31** | Publishes "Build agents, not pipelines" — comprehensive comparison of pipeline vs agent architectures for LLM systems. Recommends "when in doubt, use agents" based on context-gathering difficulty, future-proofing, and one-directional migration pattern. References [[concepts/agent-vs-pipeline-architecture]] |
 | **2026-05-17** | Publishes "The just-say-no engineer was a ZIRP phenomenon" — argues the "just-say-no" engineering archetype thrived under zero-interest-rate conditions and is now endangered by AI, but AI is not the root cause |
 
 ## Core Ideas
@@ -234,6 +236,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## Recent Articles
 
+- **Build agents, not pipelines** (2026-05-31): Argues there are only two ways to use LLMs — as a pipeline (control flow in code) or as an agent (control flow delegated to LLM). Compares tradeoffs: pipelines are more predictable and cost-bounded, agents are smarter and more flexible. Key insight: context-gathering is far harder for pipelines than agents, which is why RAG failed to replace agentic retrieval. Recommends "when in doubt, use agents" — migration from pipelines to agents is one-directional. Proposes hybrid architecture for large-scale analysis: cheap pipeline for initial flagging, agent fleet for deep investigation. Links: [[concepts/agent-vs-pipeline-architecture]]
+
 - **The just-say-no engineer was a ZIRP phenomenon** (2026-05-17): Identifies the "just-say-no" senior engineer archetype as a product of the zero-interest-rate era. Argues that AI coding tools are not the cause of this archetype's decline — the end of cheap capital is. Distinguishes between "pure" (compilers, runtimes) and "impure" (customer-driven features) engineering domains, recommending just-say-no engineers migrate to core infrastructure roles.
 
 - **How I use LLMs as a staff engineer in 2026** (2026-05-17): Documents the evolution from his February 2025 post. Key changes: agents now reliably produce entire PRs (he starts every change with an agent and pushes after a single editing pass); shifted from open VSCode windows to terminal-based Copilot CLI sessions; uses agents tens of times per day; 80% bug diagnosis rate autonomously. Notable: he still writes his own PR descriptions because LLMs over-communicate and miss the "core idea"; still doesn't use LLMs for Slack messages or ADRs to signal human thinking; uses agents for local config troubleshooting (nvm, node version switching). Core thesis: "the current core AI skill is shifting as much work onto AI agents as possible, without going too far."
@@ -255,6 +259,7 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 ## Sources
 
 - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
+- raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
 - seangoedecke.com — Primary blog
 - "Software Engineering After the Vibe Shift" — Book (self-published, print at cost)
 - "If You Are Good at Code Review, You Will Be Good at Using AI Agents"
@@ -306,3 +311,4 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 |- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad
 ||- seangoedecke.com--the-left-wing-case-for-ai--363b6e35
 |- seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c
+|- seangoedecke.com--build-agents-not-pipelines--43a57b4a

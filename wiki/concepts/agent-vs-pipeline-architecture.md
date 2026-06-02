@@ -1,7 +1,7 @@
 ---
 title: "Agent vs Pipeline Architecture"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-02
 type: concept
 tags: [agent-architecture, workflow, design-patterns, agentic-engineering]
 sources:

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-02 | Total pages: 2303 | Indexed entries: 1631 | Not in index: 672
+> Last updated: 2026-06-02 | Total pages: 2307 | Indexed entries: 1635 | Not in index: 672
 
 ## Entities (747 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -759,7 +759,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (852 pages)
+## Concepts (1439 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -891,12 +891,15 @@
 - [[concepts/ai-bubble]] — The AI Bubble thesis: speculative investment disconnected from fundamentals. Circular revenue dependencies (OpenAI-hyperscaler), unrealistic projections, infrastructure misalignment. Ed Zitron's primary chronicler role.
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics — Analysis of the structural unsustainability of AI industry economics. Covers subsidy models, circular financing, the subprime AI crisis thesis, Doctorow's internet-vs-AI bubble comparison, and Zitron's "Business Idiot" thesis on management-driven AI hype.
 - [[concepts/ai-code-quality]] — AI Code Quality — The quality-first approach to AI coding: multi-model PR review, near-zero false positives, "write better code more slowly." Counterpoint to vibe-coding/slop cannon narrative.
+- [[concepts/ai-code-porting]] — AI Code Porting — Automated translation of codebases between languages using AI coding agents. ScanCode Toolkit Python→Rust case study by Philippe Ombredanne: trademark infringement, license stripping, community bypass. What makes automated porting possible, understanding vs. mimicry, detection tools.
 - [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism
 - [[concepts/ai-coding-cost-optimization]] — AI Coding Cost Optimization (Ronin's Complete System) — $4,200→$312/month through context discipline, multi-model routing, prompt caching, and 7 practical techniques. Router config, benchmarks, 30-day rollout plan.
 - [[concepts/ai-coding-reliability]] — AI Coding Reliability
 - [[concepts/ai-coding-tools]] — "AI Coding Tools"
 - [[concepts/ai-coding-workflows]] — AI Coding Workflows: Safe operation and workflow design for AI coding tools.
+- [[concepts/ai-consciousness-debate]] — AI Consciousness Debate — Gary Marcus vs. Geoffrey Hinton on whether Claude possesses genuine consciousness. The mimicry argument, Gullibility Gap, Pope Leo XIV's Magnifica Humanitas perspective. Philosophical frameworks for evaluating machine consciousness.
 - [[concepts/ai-consulting-playbook]] — AI Consulting Playbook: Comprehensive framework for AI consulting practice (Jason Liu).
+- [[concepts/ai-content-transparency]] — AI Content Transparency — Platform policies and detection technologies for AI-generated content. YouTube's May 2026 auto-detection and simplified labeling. Platform comparison across YouTube, Meta, TikTok, X/Twitter.
 - [[concepts/ai-criticism-politics]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
 - [[concepts/ai-digital-nato]] — AI Digital NATO: Threat intelligence sharing coalition concept by the Frontier Model Forum (OpenAI/Anthropic/Google).
@@ -1183,6 +1186,7 @@
 - [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy: "Just Talk To It" — Philosophy prioritizing direct prompts over complex frameworks.
 - [[concepts/dns-aid]] — DNS-AID — Linux Foundation open-source protocol for decentralized AI agent discovery via DNS infrastructure. Python SDK, CLI, MCP server. Initial supporters: Cloudflare, GoDaddy, Equinix, Infoblox. May 2026.
 - [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API: Docker Sandbox API for safely executing AI coding agents.
+- [[concepts/domain-expertise-ai-moat]] — Domain Expertise as AI Moat — Aaron Brethorst's thesis that domain expertise (not coding skill) is the critical differentiator in AI-assisted development. Code production is commoditized; problem understanding remains the human advantage.
 - [[concepts/dr-manhattan-syndrome-ai]] — Dr. Manhattan Syndrome in AI Leadership: Communication pathology where AI industry leaders speak in the abstract of "Humanity" and lose connection with real human concerns. Concept named by Person Familiar.
 - [[concepts/drowning-in-documents-paradox]] —  drowning-in-documents paradox: Fundamental limitation of dense vector search where relevant documents drown in noise as corpus size grows. First identified by Reimers & Gurevych (2021), formalized theoretically by Archish S et al. (2026) with the G-index showing √n vs √log n scaling for single vs multi-vector models.
 - [[concepts/ds4-deepseek-flash-metal]] — ds4.c — DeepSeek V4 Flash Metal — antirez's Metal inference engine for DeepSeek V4 Flash
