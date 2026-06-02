@@ -2,13 +2,14 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-05-30
+updated: 2026-06-02
 tags:
   - entity
   - company
   - open-source
   - fine-tuning
   - training
+  - enterprise-ai
 aliases:
   - Fireworks
   - Fireworks AI Inc.
@@ -16,6 +17,7 @@ sources:
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
   - raw/articles/2026-05-10_fireworks-ai_best-llms-for-coding.md
   - raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md
+  - raw/articles/2026-06-02_fireworks-ai_Trilogy.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -74,6 +76,20 @@ Fireworks open-sourced the **Eval Protocol**, a framework focused on authoring e
 ## AI Infra Decacorn Status (May 2026)
 
 By May 2026, Fireworks AI had reached **decacorn status** ($10B+ valuation), joining [[entities/baseten]] as one of the new AI infrastructure decacorns. [[entities/openrouter]] is reportedly on a similar trajectory. This reflects the broader market recognition of AI inference infrastructure as a critical layer in the AI stack, with Fireworks processing 13 trillion+ tokens/day at production scale.
+
+## Enterprise Case Studies
+
+### Trilogy (June 2026)
+
+**Trilogy** — a portfolio operating group overseeing hundreds of companies — validated open-weight AI models for enterprise workloads using Fireworks AI. The case study demonstrates production viability of open models at enterprise scale.
+
+**Key metrics:**
+- **93.6% prompt cache hit rate** (12K cached tokens/sec) via Fireworks' prompt caching infrastructure
+- **150 tokens/sec** throughput at **75K tokens/request**
+- Open-weight models reached parity with proprietary models at **1/5 the cost**
+- **OpenSymphony** multi-agent orchestration system deployed on Fireworks
+
+The case study also includes comparisons to [[entities/cerebras-systems]] and [[entities/openrouter]] for enterprise inference workloads, positioning Fireworks as competitive across both throughput and cost dimensions.
 
 ## Coding Benchmarks & Model Comparison (March 2026)
 

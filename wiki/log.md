@@ -5695,3 +5695,20 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
   - `entities/epoch-ai`
   - `comparisons/agent-harnesses`
 - Updated index.md header: `Indexed entries: 1635 → 1655`, `Not in index: 699 → 679`
+
+## [2026-06-02] Dreaming Wiki Ingest — Harvey cloud agent infra + contract review, Fireworks Trilogy, Glean AI stack
+
+**Action**: Dreaming pipeline recovery (grouping output wrapped in markdown, checkpoint file recovered). Processed 53 raw articles → 2 Take + 2 Reference from the triage.
+
+**Wiki pages updated**:
+- **UPDATED**: `entities/harvey.md` — Added "Cloud Agent Infrastructure (June 2026)" section (multi-model routing, ZDR architecture, 3-5x cost optimization, sovereign deployments by Gabe Pereyra) and "Contract Review Platform (June 2026)" section (500+ agents, 25K workflows, ABA Opinion 512, Vault 100K docs, 5 shifts framework). Added tags: `agent-sandboxing`, `agent-harness`.
+- **UPDATED**: `entities/fireworks-ai.md` — Added "Enterprise Case Studies > Trilogy (June 2026)" subsection (93.6% cache hit rate, 150 tok/sec, 1/5 cost, OpenSymphony). Added tag: `enterprise-ai`.
+- **UPDATED**: `entities/glean.md` — Added "AI Stack Architecture (June 2026)" section with 9-component table (Agent Builder, Governance, Orchestration, Library, Enterprise/Personal Graph, Hybrid Search, Model Hub, Agentic Engine). Added tag: `enterprise-ai`.
+
+**Raw articles referenced** (from `raw/articles/`):
+- `2026-06-02_harvey_why-we-built-our-own-cloud-agent-infrastructure.md`
+- `2026-06-02_harvey_how-ai-is-transforming-contract-review-software.md`
+- `2026-06-02_fireworks-ai_Trilogy.md`
+- `2026-06-02_glean_generative-ai-stack-for-software-engineers.md`
+
+**Triage summary**: Take=2 (Harvey articles), Reference=2 (Fireworks Trilogy, Glean AI stack), Skip=5 (ElevenLabs events ×4, Simon Willison link blog). Archive saved to `wiki/raw/archived/triage/dreaming/`.

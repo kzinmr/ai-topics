@@ -2,18 +2,20 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-05-22
+updated: 2026-06-02
 tags:
   - company
   - search
   - ai-agents
   - rag
+  - enterprise-ai
 aliases: ["Glean Work", "Gleanwork"]
 sources:
   - https://www.glean.com/
   - https://www.glean.com/about
   - raw/articles/2026-05-15_glean_cowork-mcp-eval.md
   - raw/articles/2026-05-21_glean_health-agents-2026.md
+  - raw/articles/2026-06-02_glean_generative-ai-stack-for-software-engineers.md
 ---
 
 # Glean
@@ -55,6 +57,24 @@ The benchmark demonstrates that **context layer quality** (centralized indexing 
 
 
 Glean's platform is built on four pillars: Enterprise Context (connectors + knowledge graph), Glean Search (cross-app search), Glean Assistant (personalized AI copilot), and Glean Agents (autonomous task automation). The platform enforces agent behavior at runtime for reliability, and provides an open agent architecture for enterprise extensibility.
+
+## AI Stack Architecture (June 2026)
+
+Glean published a comprehensive overview of its AI stack for software engineers, detailing the component architecture:
+
+| Component | Function |
+|-----------|----------|
+| **Agent Builder** | Low-code agent creation with firm-specific playbooks and guardrails |
+| **Agent Governance** | Policy enforcement, access control, and audit trails for agent actions |
+| **Agent Orchestration** | Multi-step execution planning across enterprise tools and data sources |
+| **Agent Library** | Pre-built agents (500+) for common enterprise workflows |
+| **Enterprise Graph** | System of context connecting people, documents, conversations, and code |
+| **Personal Graph** | Per-user relevance ranking based on individual work patterns |
+| **Hybrid Search** | Combines keyword, vector, and knowledge graph retrieval |
+| **Model Hub** | Multi-LLM support (Gemini, Claude, GPT) with model selection routing |
+| **Agentic Engine** | Plan-and-adapt execution layer that decomposes tasks and retrieves context in real-time |
+
+The architecture emphasizes **context layer quality** as the primary determinant of output quality and cost — a finding consistent with Glean's MCP benchmark results (30% fewer tokens vs off-the-shelf tools). The platform is built on the principle that enterprise AI must "plan & adapt over company context" rather than relying on general-purpose reasoning alone.
 
 ## Related
 
