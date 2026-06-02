@@ -5674,3 +5674,14 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Enriched**: `entities/krebsonsecurity-com.md` — Added Meta AI support bot Instagram hijack incident to Timeline (June 2026, Obama White House/US Space Force accounts hijacked via AI password reset social engineering), updated Recent Themes (AI agent security detail), added raw article to References
 - **Enriched**: `entities/seangoedecke-com.md` — Added "Weird projects I shipped with AI" article (May 2026) to Timeline, Recent Articles (Skifreedle, Autodeck, Endless Wiki, VicFlora Offline, gh-standup), References, and sources frontmatter
 - **Archived**: 20 triage decisions to `raw/archived/triage/blog/2026-06-02_20260602T070425Z.json` (2 reference, 18 skip)
+
+## [2026-06-02] wiki-watchdog-fix | Auto-fixed index header counts
+
+**Action**: Daily watchdog auto-fix run. Pipeline clean (0 alerts). Fixed index.md header counts to match filesystem:
+- Updated total pages: 2307 → 2334 (27 newly created pages were not reflected)
+- Updated Entities count: 747 → 750 (+3 new entity pages)
+- Updated Concepts count: 1439 → 1547 (+108 new concept pages)
+- Updated "Not in index" count: 672 → 699
+
+**No structural corruption detected**: 0 pipe-table issues, 0 line-number prefix issues, index is clean.
+**No auto-fixes applied beyond index header**: Orphans (665), stale pages (1170), and missing sources (788) require human review.
