@@ -3,6 +3,17 @@
 
 
 
+## [2026-06-02] wiki-ingest | Perplexity "Search as Code" (SaC) research article
+
+- **New concept**: [[concepts/search-as-code]] — Perplexity's programmable search architecture: composable SDK primitives replace monolithic search APIs, agents generate Python to orchestrate retrieval/ranking/filtering in sandboxes. Three-layer architecture (models → sandboxes → SDK). 85.1% token reduction on CVE task, SOTA on 4/5 benchmarks. Connects PTC pattern to search domain.
+- **Enriched**: [[concepts/agentic-search]] — Added "Search as Code: Programmable Search Primitives (June 2026)" section with architecture overview, failure modes, PTC connection, benchmark results, autoresearch SDK optimization, and intermediate state management findings.
+- **Enriched**: [[concepts/programmatic-tool-calling]] — Added cross-reference to SaC in Related Concepts.
+- **Raw article saved**: `raw/articles/2026-06-01_perplexity-rethinking-search-as-code-generation.md`
+- **Index updated**: Added search-as-code entry, updated agentic-search entry, validated clean
+- **Committed**: 4 files changed
+
+---
+
 ## [2026-06-02] wiki-ingest | Doug Turnbull "Long Running Search Agents" Cheat at Search lecture
 
 - **New concept**: [[concepts/long-running-search-agents]] — 7 progressive strategies for search agents running unattended: single context (0.795 yield/call), cron restarts (0.720), compaction (0.738), local index (2.68 — 3.7x gain), frontier prompt (1.667), query model, self-querying. Key insight: local memory before external calls.

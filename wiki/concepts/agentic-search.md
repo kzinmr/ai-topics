@@ -1070,9 +1070,51 @@ Layering steering patterns produces progressive NDCG improvements on the WANDS e
 
 For a comprehensive treatment of these patterns, see the dedicated [[concepts/agent-steering]] concept page.
 
+### Search as Code: Programmable Search Primitives (June 2026)
+
+Perplexity's **Search as Code (SaC)** architecture represents the latest evolution in agentic search, moving beyond function calling and MCP to give agents **direct code-level control** over search pipeline internals. [[raw/articles/2026-06-01_perplexity-rethinking-search-as-code-generation]] [[concepts/search-as-code]]
+
+#### The Three-Layer Architecture
+
+SaC replaces the monolithic "query → pipeline → resultset" pattern with three layers:
+1. **Models** as control plane (reason, decompose tasks, generate code)
+2. **Compute Sandboxes** for deterministic execution (secure Python runtime)
+3. **Agentic Search SDK** exposing composable primitives (retrieval, ranking, filtering, fanouts, rendering)
+
+#### Why SaC? Three Failure Modes of Traditional Search
+
+Traditional search creates three recurring failure modes for agent workflows:
+
+| Failure Mode | Traditional Search | SaC Solution |
+|-------------|-------------------|--------------|
+| **Coarse context** | One pipeline fits all queries; suboptimal retrieval pollutes context | Agent composes task-specific pipelines from primitives |
+| **No domain knowledge leverage** | Model can't influence ranking/filtering logic | Agent writes code blending signals, prioritizing sources |
+| **Inefficient control flow** | Sequential model turns for fan-out, parallel, dedup | Agent orchestrates nonlinear/asynchronous operations in sandbox |
+
+#### Connection to PTC
+
+SaC is essentially **PTC applied to the search layer**: both use model-generated Python code to orchestrate operations in sandboxes, achieving 85-92% token reduction. The key difference is that SaC provides a **domain-specific SDK** (search primitives) while PTC uses a **general-purpose IPC protocol** (arbitrary tools).
+
+#### Benchmark Results
+
+SaC achieves SOTA on 4/5 benchmarks (DSQA, BrowseComp, WideSearch, WANDR) and ties OpenAI on HLE. On the new WANDR benchmark for "wide research" tasks, SaC leads the next-best system by 2.5×.
+
+#### Autoresearch-Driven SDK Optimization
+
+Perplexity runs a continuous autoresearch loop over the SDK, proposing and validating improvements against latency, codegen quality, and task performance metrics. Combined with optimized Agent Skills (under 2000 tokens), this enables models to effectively compose search primitives without extensive pretraining on the SDK.
+
+#### Intermediate State Management
+
+SaC tested filesystem-based serde vs REPL for persisting state across turns. Filesystem serde was selected for better reliability on long trajectories — requiring models to convey state declaratively rather than implicitly improves state management effectiveness.
+
+Sources: [[raw/articles/2026-06-01_perplexity-rethinking-search-as-code-generation]], [[concepts/programmatic-tool-calling]], [[concepts/search-as-code]]
+
+---
+
 ## Related Concepts
 
-- [[concepts/agent-steering]] — Comprehensive treatment of steering patterns for agentic search
+- [[concepts/search-as-code]] — Perplexity's Search as Code (SaC) architecture
+- [[concepts/programmatic-tool-calling]] — General pattern of code-orchestrated tool calls (PTC is SaC's cousin)
 - [[concepts/direct-corpus-interaction]] — DCI: replacing retrieval with grep/bash/shell pipelines
 - [[concepts/markdown-based-skills]] — Skills format used by agentic search (harness layer)
 - [[concepts/s3-first-architecture]] — Where skills files are stored

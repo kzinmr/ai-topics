@@ -132,4 +132,5 @@ This shifts the bottleneck from **LLM inference latency** to **code execution sp
 - [[concepts/agent-hosting-aws]] — AWS infrastructure for running agents, including PTC sandboxes
 - [[concepts/agentic-loop]] — The canonical agent execution loop that PTC optimizes
 - [[concepts/agent-sandboxing]] — Sandbox isolation is critical for PTC safety
+- [[concepts/search-as-code]] — Perplexity's SaC applies PTC pattern to search domain with domain-specific SDK
 - [[raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md]] — Full AWS blog post with implementation details
