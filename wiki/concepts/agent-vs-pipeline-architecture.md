@@ -4,6 +4,7 @@ created: 2026-05-31
 updated: 2026-06-02
 type: concept
 tags: [agent-architecture, workflow, design-patterns, agentic-engineering]
+related: [concepts/programmatic-tool-calling, concepts/search-as-code, concepts/rlm-recursive-language-models, concepts/codeact, concepts/agentic-search, concepts/agentic-engineering]
 sources:
   - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
 ---
@@ -97,6 +98,63 @@ Consider building a system to analyze millions of documents:
 
 This hybrid approach uses pipelines for scale and agents for depth. The pipeline scales predictably with volume; the agents scale independently but are bottlenecked on GPU availability and human review.
 
+## Beyond the Binary: Hybrid Architectures (PTC, SaC, RLM)
+
+Goedecke's pipeline vs. agent dichotomy captures the fundamental tension, but 2026 has seen the emergence of **hybrid patterns that collapse the tradeoff** — architectures that are structurally agents (LLM controls flow) but recover pipeline-like properties (predictable cost, bounded context, deterministic execution) through code orchestration and recursive decomposition.
+
+### Programmatic Tool Calling (PTC)
+
+[[concepts/programmatic-tool-calling]] represents the most direct bridge between the two paradigms. Instead of an agent calling tools one-at-a-time in sequential LLM round-trips (the standard agentic loop), the model generates **a single Python script** that orchestrates all tool calls programmatically — with loops, conditionals, `asyncio.gather()` parallelism, and deterministic filtering — inside a sandbox. Only the final `print()` output returns to the model.
+
+| Goedecke's Concern | Pipeline Answer | Agent Answer | PTC Answer |
+|---------------------|----------------|-------------|------------|
+| **Cost predictability** | Fixed pipeline stages | Unbounded agent loops | **2 model calls** (code gen + answer) |
+| **Context bloat** | Pre-assembled, bounded | Grows with each turn | **87-92% reduction** — intermediate data never enters context |
+| **Multi-model flexibility** | Different models per stage | Single model throughout | Tool design can route to cheaper models internally |
+| **Context-gathering** | Must solve retrieval yourself | Agent figures it out | **Agent generates code that gathers context programmatically** |
+
+PTC resolves Goedecke's key tension: the agent decides *what* to do (flexibility), but Python code determines *how* (determinism). This is neither pipeline nor agent — it's an agent that writes its own pipeline for each task.
+
+### Search as Code (SaC)
+
+[[concepts/search-as-code]] (Perplexity, June 2026) is **PTC applied to the search layer**. Instead of monolithic search APIs, agents get composable SDK primitives (retrieval, ranking, filtering, fanouts) and generate Python to orchestrate them in sandboxes.
+
+This directly addresses Goedecke's point about RAG's failure: *"Find what information is relevant to this problem is often as hard as actually solving the problem."* SaC's answer is neither RAG (embedding similarity) nor pure agent search (sequential `grep` + `read_file`) — it's **code-level control over the entire search pipeline**, where the model can compose, parallelize, and filter retrieval operations programmatically.
+
+Results: 85.1% token reduction on CVE advisory task, SOTA on 4/5 benchmarks (DSQA, BrowseComp, WideSearch, WANDR).
+
+### Recursive Language Models (RLM)
+
+[[concepts/rlm-recursive-language-models]] address Goedecke's concern about **context growing in agent loops** from a different angle. RLMs treat context as a variable — the model programmatically decomposes input, recursively calls itself on sub-problems, and merges results. Each recursive call operates on a bounded context window.
+
+| Property | Pipeline | Agent | RLM |
+|----------|----------|-------|-----|
+| **Context management** | Pre-bounded | Grows unboundedly | **Recursive decomposition** — each call bounded |
+| **Scaling** | Linear with stages | Linear with turns | **Depth-scaled** — more recursion = more capability |
+| **Model requirement** | Any | Frontier preferred | **Small model + deep recursion ≈ large model direct** |
+
+RLMs challenge Goedecke's assumption that agents require frontier models with large context windows. A Qwen3-8B with depth-3 RLM matching a 70B model on information-dense tasks suggests the pipeline→agent binary may dissolve into **how you compose recursive context management**.
+
+### Synthesis: The Architectural Spectrum
+
+These patterns suggest the real landscape is a spectrum, not a binary:
+
+```
+Pipeline ←————————————————————————————→ Agent
+    │         │           │           │
+    │    PTC/SaC      RLM+Code    Pure Agent
+    │  (agent writes  (recursive   (LLM decides
+    │   its own       context      everything
+    │   pipeline)     management)  each turn)
+    │
+  Fixed          Hybrid           Fully
+  control        (LLM decides     autonomous
+  flow           intent, code     control flow
+                 executes)
+```
+
+**Key insight**: PTC/SaC and RLM don't replace Goedecke's framework — they validate it while showing that the "agent" side of the spectrum can recover pipeline-like efficiency. The recommendation "when in doubt, use agents" becomes even stronger when agents can write their own deterministic pipelines per-task.
+
 ## Migration Patterns
 
 As of 2026, the industry trend is strongly **one-directional**: multiple projects have migrated from pipelines to agents, but none have gone the other way. The recommendation when unsure: **build agents first**, then migrate to pipelines if cost/latency constraints demand it.
@@ -109,3 +167,8 @@ As of 2026, the industry trend is strongly **one-directional**: multiple project
 - [[concepts/agent-sandboxing]] — Security isolation for agent execution
 - [[concepts/direct-corpus-interaction]] — Agents searching raw text with terminal tools
 - [[concepts/defense-in-depth]] — Layered security for AI agents
+- [[concepts/programmatic-tool-calling]] — PTC: agent-generated code orchestrating tool calls in sandboxes
+- [[concepts/search-as-code]] — Perplexity's SaC: PTC applied to search, composable SDK primitives
+- [[concepts/rlm-recursive-language-models]] — RLM: recursive context decomposition for near-infinite context
+- [[concepts/codeact]] — Code-as-action paradigm that underlies PTC and SaC
+- [[concepts/agentic-search]] — Evolution of search from keyword to SaC (Level 5)

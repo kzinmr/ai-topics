@@ -8,6 +8,7 @@
 **Wiki pages updated**:
 - **UPDATED**: `entities/seangoedecke-com.md` — Added "Build agents, not pipelines" to Timeline, Recent Articles, Sources, and References
 - **UPDATED**: `concepts/agent-vs-pipeline-architecture.md` — Updated `updated` date to 2026-06-02
+- **UPDATED**: `concepts/agent-vs-pipeline-architecture.md` — Added "Beyond the Binary: Hybrid Architectures (PTC, SaC, RLM)" section connecting Goedecke's framework to Programmatic Tool Calling, Search as Code, and Recursive Language Models. Added bidirectional links from PTC, SaC, RLM pages back to this concept. Added `related` frontmatter field.
 
 
 
