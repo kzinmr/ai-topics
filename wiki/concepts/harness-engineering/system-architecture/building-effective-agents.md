@@ -12,6 +12,12 @@ tags:
   - harness-engineering
   - anthropic
 status: active
+related:
+  - "[[concepts/building-effective-agents]]"
+  - "[[concepts/harness-engineering]]"
+  - "[[concepts/context-engineering]]"
+  - "[[concepts/harness-engineering/system-architecture/evals-for-ai-agents]]"
+  - "[[concepts/minimal-coding-agent]]"
 sources:
   - "https://www.anthropic.com/engineering/building-effective-agents/"
   - "https://simonwillison.net/2024/Dec/20/building-effective-agents/"
@@ -19,6 +25,8 @@ sources:
 ---
 
 # Building Effective Agents
+
+> **Canonical page promoted.** This subdirectory page was promoted to [[concepts/building-effective-agents]] for broader discoverability. Key content retained below; see the canonical page for the comprehensive reference.
 
 Practical guidelines for building LLM agents, derived from Anthropic collaboration with dozens of teams.
 

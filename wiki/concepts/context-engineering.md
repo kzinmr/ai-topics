@@ -1,7 +1,7 @@
 ---
 title: Context Engineering
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-06-02
 type: concept
 tags:
   [context-engineering, context-management, ai-agent-engineering, ai-agents, prompting, agent-architecture, memory-systems, agent-memory, subagents, rag, prompt-caching, token-economics, agentic-engineering, progressive-disclosure, agent-design-patterns, enterprise-agents, agent-identity, agent-governance]
@@ -60,6 +60,17 @@ Anthropic's framework (September 2025) is organized around **where context lives
 | **Compaction** | Auto-summarize conversation when context exceeds ~95% of window (Claude Code). Art is in selecting what to keep vs. discard. |
 | **Structured Note-Taking** | Persist information to external storage (files, DBs). Enables learning across sessions. |
 | **Sub-Agent Delegation** | Isolate context into sub-agents with their own windows, each focused on a narrow sub-task. |
+
+### Source: Anthropic's "Effective Context Engineering for AI Agents" (September 2025)
+
+The Anthropic framework above is derived from the article by Prithvi Rajasekaran, Ethan Dixon, Carly Ryan, and Jeremy Hadfield (Anthropic Applied AI). Key additional insights from the article:
+
+- **Context rot**: The transformer architecture's n² pairwise attention causes performance to degrade as a gradient (not a cliff) as context grows — a finite "attention budget"
+- **System prompt altitude**: Finding the "right altitude" — specific enough to guide, flexible enough to adapt. Start minimal, iterate based on observed gaps
+- **Just-in-time context**: Agents maintain lightweight references (file paths, queries, links) and dynamically load data at runtime, mirroring human cognition
+- **Sub-agent isolation**: Specialized sub-agents with clean context windows return condensed summaries, avoiding context pollution in the parent
+
+> **Source**: [[raw/articles/2026-05-08_anthropic-engineering_effective-context-engineering-for-ai-agents.md]]
 
 ### Lance Martin's 4-Strategy Taxonomy
 

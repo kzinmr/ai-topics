@@ -41,7 +41,7 @@ The Anthropic Engineering blog and OpenAI Cookbook are the primary sources. Cove
 | [[concepts/building-effective-agents]] | Workflows vs agents, start with simplicity | Anthropic |
 | [[concepts/multi-agent-research-system]] | Orchestrator-Worker, parallel sub-agents | Anthropic |
 | [[concepts/harness-engineering/system-architecture/advanced-tool-use]] | Tool Search Tool / PTC / Tool Use Examples | Anthropic |
-| [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] | 5 principles of tool design, evaluation-driven optimization | Anthropic |
+| [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] | 5 principles of tool design, evaluation-driven optimization. **Promoted:** see [[concepts/writing-tools-for-agents]] for comprehensive "Design for Agent" paradigm. | Anthropic |
 | [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] | Expose MCP as a code API (98.7% token reduction) | Anthropic |
 
 ### 🔄 Agent Execution Infrastructure (OpenAI Responses API)

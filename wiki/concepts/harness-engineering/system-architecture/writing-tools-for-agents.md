@@ -16,10 +16,20 @@ tags:
   - mcp
   - tool
 status: draft
+related:
+  - "[[concepts/writing-tools-for-agents]]"
+  - "[[concepts/harness-engineering]]"
+  - "[[concepts/building-effective-agents]]"
+  - "[[concepts/harness-engineering/system-architecture/advanced-tool-use]]"
+  - "[[concepts/harness-engineering/system-architecture/code-execution-with-mcp]]"
+  - "[[comparisons/evals-skills]]"
 sources:
   - "https://www.anthropic.com/engineering/writing-tools-for-agents"
+  - "raw/articles/2026-05-08_anthropic-engineering_writing-tools-for-agents.md"
 ---
 # Writing Effective Tools for AI Agents
+
+> **Canonical page promoted.** This subdirectory page was promoted to [[concepts/writing-tools-for-agents]] for broader discoverability. Key content retained below; see the canonical page for the comprehensive "Design for Agent" paradigm framing.
 
 Tool design methodology for AI agents, as practiced by Anthropic. The approach is to "write tools for agents, and use agents to optimize tools."
 

@@ -66,7 +66,7 @@ See also: [[concepts/context-engineering]], [[concepts/prompt-caching]], [[conce
 
 Tools are where agents meet your business. Five to ten well-named tools beat twenty mediocre ones. Tool names should read like English verb phrases. Descriptions should include when to use AND when not to. Error messages should be feedback the model can act on: "Max tokens 500 exceeded, try summarizing first" beats "Error: 400 Bad Request" by an enormous margin. One team reported a 40% reduction in retry loops after rewriting error messages alone.
 
-See also: [[concepts/writing-effective-tools-for-ai-agents]]
+See also: [[concepts/writing-tools-for-agents]]
 
 ### The Orchestrator-Subagent Pattern
 

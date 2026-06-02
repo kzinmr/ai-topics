@@ -1030,7 +1030,7 @@
 - [[concepts/bottom-up-note-taking]] — Bottom-Up Note Taking
 - [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture — SQS-to-Lambda architecture for running browser agents at scale
 - [[concepts/builders-unscripted]] — Builders Unscripted — OpenAI interview series hosted by Romain Huet, spotlighting AI builder stories
-- [[concepts/building-effective-agents]] — Building Effective Agents
+- [[concepts/building-effective-agents]] — Building Effective Agents — Anthropic's foundational guide to LLM agent architecture. Workflows vs. agents, five composable patterns (prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer), ACI design, and the "simple composable patterns over complex frameworks" philosophy.
 - [[concepts/business-to-agent]] — Business-to-Agent (B2A)
 - [[concepts/cache-first-engineering]] — Cache-First Engineering
 - [[concepts/caching-performance-cost-optimization]] — Caching, Performance, Cost Optimization
@@ -1557,6 +1557,7 @@
 - [[concepts/vibe-eval]] — Vibe-Eval — Reka AI's personalized multimodal eval. 269 expert-created prompts. >50% of hard problems unsolved by all frontier models. Exhibits inverse scaling.
 - [[concepts/vla-models]] — Vision-Language-Action Models (VLA) — Foundation models mapping vision+language to robot actions. OpenVLA (7B, beats 55B RT-2-X), GR00T N1.7 (3B, EgoScale), π0.7 (compositional), SmolVLA (450M, consumer hardware).
 - [[concepts/waluigi-effect]] — Fundamental limit of LLM alignment proposed by Cleo Nardo. The phenomenon where training on desired property P makes it easier to invoke the opposite property ¬P. Three mechanisms based on Simulator Theory, Derridean deconstruction, and structuralist narratology. Theory that Waluigi is an attractor state. Evidence that RLHF worsens the problem. Re-conceptualization of jailbreaking (DAN, etc.). Provides the technical mechanism for Societal Shadow.
+- [[concepts/writing-tools-for-agents]] — Designing Tools for Agents — the ACI (Agent-Computer Interface) paradigm. Anthropic's five principles of tool design, evaluation-driven optimization workflow, and the broader "design for agent" concept where tool interfaces are optimized for LLM context constraints rather than human ergonomics.
 - [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating — Five structural forces driving the explosion in harness engineering: measurable Harness Effect (5-40pp), harness compound advantage vs model reset, off-the-shelf framework ceilings, scale of visible investment (513K LOC Claude Code), and seven-plane architecture moat. Synthesis of Kartik Labhshetwar's analysis.
 - [[concepts/workspace-bench]] — Workspace-Bench 1.0: Large-scale agent benchmark evaluating multi-file dependencies (OpenDataBox). 5 role profiles, 74 file types, 20,476 files (up to 20GB), 388 tasks. Best AI 68.7% (OpenClaw+Opus 4.7) vs Human 80.7%. 5-stage evolution model (L0-L4), Agent-as-a-Judge evaluation framework.
 - [[concepts/world-models-for-agents]] — World Models for AI Agents — Learning environment dynamics by predicting terminal/action responses. ECHO, VAGEN, RWML, CWM approaches. Key bet: environment-response tokens should be part of the training signal for any agent RL.

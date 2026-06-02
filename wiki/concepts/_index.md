@@ -301,7 +301,7 @@ AI and LLM concept pages organized by topic.
 
 ## Building-Effective-Agents
 
-- [[concepts/building-effective-agents]] — Anthropic's guide to building effective AI agents. See harness-engineering/system-architecture/building-effective-agents.md for full content.
+- [[concepts/building-effective-agents]] — Anthropic's foundational guide to building effective AI agents with simple, composable patterns. Defines workflows vs. agents, five building block patterns, and the ACI (Agent-Computer Interface) concept.
 
 ## Caid-Coordination
 

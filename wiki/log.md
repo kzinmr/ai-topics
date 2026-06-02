@@ -2,6 +2,18 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## [2026-06-02] wiki-ingest | Anthropic Engineering — Promote 3 Key Articles to Top-Level Concept Pages
+
+- **Created**: `[[concepts/building-effective-agents]]` — Promoted from `harness-engineering/system-architecture/` sub-page. Anthropic's foundational agent architecture guide: workflows vs. agents, five composable patterns, ACI concept. 150 lines.
+- **Created**: `[[concepts/writing-tools-for-agents]]` — Promoted from `harness-engineering/system-architecture/` sub-page. Positioned as "Design for Agent" paradigm: the shift from HCI to ACI, five tool design principles, evaluation-driven workflow, broader agent-legible software concept. 160 lines.
+- **Enriched**: `[[concepts/context-engineering]]` — Added dedicated source section for Anthropic's "Effective Context Engineering for AI Agents" article (Sept 2025). Context rot, system prompt altitude, just-in-time context, sub-agent isolation insights.
+- **Updated sub-pages**: Added redirect notices to `harness-engineering/system-architecture/building-effective-agents.md` and `harness-engineering/system-architecture/writing-tools-for-agents.md` pointing to new canonical pages.
+- **Fixed**: `agent-engineering-guide-2026.md` broken wikilink `[[concepts/writing-effective-tools-for-ai-agents]]` → `[[concepts/writing-tools-for-agents]]`
+- **Updated**: `index.md`, `_index.md`, `harness-engineering/system-architecture/_index.md` with new entries and descriptions.
+
+---
+
+
 
 ## [2026-06-02] wiki-ingest | Anthropic Cookbooks — PTC + Tool Search with Embeddings
 
