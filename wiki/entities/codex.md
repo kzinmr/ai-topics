@@ -3,7 +3,7 @@ title: OpenAI Codex (AI coding agent)
 type: entity
 aliases: [codex-cli, openai-codex, codex-agent]
 created: 2026-05-07
-updated: 2026-05-27
+updated: 2026-06-02
 status: L3
 tags:
   - entity
@@ -13,6 +13,12 @@ tags:
   - developer-tooling
   - ai-agents
   - enterprise-ai
+  - case-study
+  - mcp
+  - figma
+  - frontend
+  - skyscanner
+  - dagster
 sources:
   - https://github.com/openai/codex
   - https://developers.openai.com/codex/cli
@@ -27,6 +33,10 @@ sources:
   - raw/articles/openai.com--index-work-with-codex-from-anywhere--2026-05-16.md
   - raw/articles/openai.com--index-gartner-2026-agentic-coding-leader--3f8a2c71.md
   - raw/articles/openai.com--index-virgin-atlantic--7b2d9e41.md
+  - raw/articles/2025-10-10_openai-developers-blog_codex-at-devday.md
+  - raw/articles/2025-10-27_openai-developers-blog_codex-for-documentation-dagster.md
+  - raw/articles/2026-03-01_openai-developers-blog_building-frontend-uis-with-codex-and-figma.md
+  - raw/articles/2026-01-11_openai-developers-blog_skyscanner-codex-jetbrains-mcp.md
   - raw/concepts/openai-codex-superapp.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 related:
@@ -79,15 +89,9 @@ related:
 
 ### Mobile Launch (May 2026)
 
-Codex launched in the **ChatGPT mobile app** (preview, May 14, 2026), making it the first major coding agent available on both iOS and Android. The mobile app connects to machines where Codex is running — laptops, devboxes, or managed remote environments — and loads their live state for fluid cross-device work.
+Codex launched in the **ChatGPT mobile app** (preview, May 14, 2026), making it the first major coding agent on iOS and Android. Connects to host machines via secure relay layer; full feature parity (threads, approvals, model switching). **4M+ weekly active users** confirmed at launch. Enterprise-ready: connects to managed remote environments with compliance controls.
 
-- **Secure relay layer**: Keeps trusted machines reachable across devices without exposing them to the public internet. Active session state and context sync anywhere signed in with ChatGPT.
-- **4M+ weekly active users** (WAU) milestone confirmed with launch.
-- **Full feature parity on mobile**: Work across all threads, review outputs, approve commands, change models, start new work. Files, credentials, and permissions stay on the host machine; updates (screenshots, terminal output, diffs, test results) flow back in real-time.
-- **Enterprise environments**: Connects to managed remote environments with approved dependencies, credentials, and compliance controls.
-- **Key use cases**: Bug investigation from phone, decision-making mid-commute, customer conversation preparation, capturing new ideas as they arise.
-
-> Source: [Work with Codex from anywhere](https://openai.com/index/work-with-codex-from-anywhere/) (OpenAI Blog, May 14, 2026)
+> Source: [Work with Codex from anywhere](https://openai.com/index/work-with-codex-from-anywhere/) (May 2026)
 
 ### Multi-Agent Features
 - **Sub-agents** — Parallel worktrees for weeks of work in days
@@ -95,14 +99,6 @@ Codex launched in the **ChatGPT mobile app** (preview, May 14, 2026), making it 
 - **Skills System** — Agent Skills standard (agentskills.io), progressive disclosure
 - **Plugin Marketplace** — Workflow packaging for skills and apps
 - **MCP dual support** — Sub-agents use MCP
-
-### Codex Backdoor Ecosystem
-Codex CLI's open-source nature enables **third-party harness integration** via ChatGPT subscription auth:
-- **llm-openai-via-codex** — Simon Willison's plugin
-- **OpenClaw** — Direct integration welcomed by OpenAI
-- **Claude Code** — Now supports Codex subscription routing
-
-OpenAI's stance: *"We want people to be able to use Codex, and their ChatGPT subscription, wherever they like!"* — Romain Huet
 
 ## Model Support
 
@@ -117,79 +113,9 @@ OpenAI's stance: *"We want people to be able to use Codex, and their ChatGPT sub
 
 ## Running Codex Safely (May 2026)
 
-OpenAI published detailed guidance on deploying Codex safely within enterprise environments, covering **sandboxing, approval policies, managed network access, and agent-native telemetry**.
+OpenAI published detailed guidance on deploying Codex safely within enterprise environments, covering **sandboxing, approval policies, managed network access, and agent-native telemetry**. Key principles: bounded execution (sandbox defines write/network boundaries), frictionless low-risk actions, explicit approval for dangerous commands, and agent-native telemetry via OpenTelemetry logs feeding into Compliance API. Security features include auto-review mode, managed network policies, command-level rules, and OAuth credentials stored in OS keyring. A detailed Windows sandbox post covers the evolution to a multi-binary elevated sandbox with `CreateRestrictedToken` + Windows Firewall isolation.
 
-### Core Security Principles
-
-1. **Bounded execution**: Codex operates within clear technical boundaries (sandbox defines where it can write, whether it can reach network, which paths are protected)
-2. **Frictionless low-risk actions**: Routine engineering tasks proceed without interruption
-3. **Explicit higher-risk actions**: Dangerous commands require human approval
-4. **Agent-native telemetry**: Detailed logs of agent intent and actions, not just "what happened"
-
-### Key Security Features
-
-- **Auto-review mode**: Sub-agent automatically approves low-risk actions, reduces user interruptions while maintaining safety
-- **Managed network policy**: Allows known-good destinations, blocks unfamiliar domains, requires approval for new network access
-- **Command-level rules**: Not all shell commands treated equally — benign commands allowed, dangerous ones blocked/requiring approval
-- **OAuth credential management**: CLI and MCP OAuth credentials stored in secure OS keyring, login forced through ChatGPT, access pinned to enterprise workspace
-
-### Telemetry & Audit
-
-Codex provides **OpenTelemetry log export** for:
-- User prompts and tool approval decisions
-- Tool execution results and MCP server usage
-- Network proxy allow/deny events
-- Agent intent and context (beyond traditional security logs)
-
-These logs feed into OpenAI's **Compliance API** and can be centralized in SIEM/compliance systems. OpenAI uses these logs with an AI-powered security triage agent to distinguish between expected agent behavior, benign mistakes, and genuine security concerns.
-
-### Deployment Configuration
-
-Security policies applied through:
-- Cloud-managed requirements (admin-enforced, user cannot override)
-- macOS managed preferences
-- Local requirements files
-- Consistent baselines with team/user/environment-specific tuning
-
-> Source: [Running Codex safely at OpenAI](https://openai.com/index/running-codex-safely) (May 2026)
-
-### Windows Sandbox Architecture (May 2026)
-
-OpenAI published a detailed technical post on building the Codex Windows sandbox, revealing the evolution from a simple prototype to a multi-binary elevated sandbox:
-
-**Prototype 1 — "Unelevated sandbox"**: Used restricted tokens + synthetic SIDs + environment variable proxy suppression. Rejected because:
-- ACL application was expensive on large workspace directories
-- Network protection was only "advisory" (environment variables) — easily circumvented
-- Difficult to change semantics without slow ACL operations
-
-**Prototype 2 — "Elevated sandbox"** (current implementation): Requires admin permissions at setup, creates dedicated local users (`CodexSandboxOffline` / `CodexSandboxOnline`), and uses Windows Firewall for true network isolation. Key architectural decisions:
-- `codex.exe` (main harness, unelevated) → `codex-windows-sandbox-setup.exe` (elevated setup) → `codex-command-runner.exe` (runs as sandbox user, creates restricted tokens) → child process
-- Split across 3 binaries to cross the UAC boundary cleanly and keep Windows-specific machinery out of the main `codex.exe`
-- Uses `CreateProcessWithLogonW` to launch the command runner as the sandbox user, then `CreateRestrictedToken` + `CreateProcessAsUserW` inside the runner
-- Asynchronous ACL setup for read access to user profile directories (Windows doesn't grant cross-user read by default)
-
-> Source: [Building a safe, effective sandbox to enable Codex on Windows](https://openai.com/index/building-codex-windows-sandbox) (May 2026)
-
-
-## Codex Thursday No. 6 (May 2026)
-
-OpenAI shipped **Codex Thursday No. 6** with several notable feature additions and improvements:
-
-### New Features
-- **Appshots** — New screenshot/image workflow capability for visual debugging and design review
-- **`/goal` improvements** — Enhanced autonomous looping with better completion detection and error recovery
-- **Remote computer use while locked** — Codex can operate remote machines even when the local session is locked, enabling true background agent operation
-- **Annotation mode** — Interactive code annotation for code review and documentation generation
-- **Plugin sharing** — Share plugins between team members and across workspaces
-- **Analytics** — Usage tracking and performance metrics for Codex workflows
-
-### Industry Response
-- Gdb (OpenAI) remarked: *"hard to remember coding before Codex"*
-- Users report **not opening an IDE in over a month**
-- Rough edges remain: remote workflow reliability still lags behind T3 Code's implementation
-
-> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
-
+> Sources: [Running Codex safely](https://openai.com/index/running-codex-safely) | [Windows sandbox](https://openai.com/index/building-codex-windows-sandbox) (May 2026)
 
 ## Pricing
 
@@ -200,32 +126,19 @@ OpenAI shipped **Codex Thursday No. 6** with several notable feature additions a
 
 ## Enterprise Recognition
 
-### Gartner Magic Quadrant Leader (May 2026)
+OpenAI was named a **Leader** in the Gartner Magic Quadrant for Enterprise AI Coding Agents (May 2026). Enterprise adoption: **4M+ weekly active users**, customers include Cisco, Datadog, Dell, NVIDIA. GSI partners: Accenture, Capgemini, Cognizant, Infosys, PwC, TCS. Recent features: Codex Security + GPT-5.5-Cyber, Remote SSH, HIPAA compliance, Codex on Amazon Bedrock.
 
-OpenAI was named a **Leader** in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents (May 20, 2026 report). The evaluation by Phillip Walsh, Matt Basier, Keith Holloway, and Nitish Tyagi recognized Codex's strengths across **Ability to Execute** and **Completeness of Vision**.
+> Source: [Gartner 2026 agentic coding leader](https://openai.com/index/gartner-2026-agentic-coding-leader) (May 2026)
 
-**Key recognition areas:**
-- **Agentic software development**: Moving beyond autocomplete to delegated complex tasks
-- **Enterprise governance**: Approval gates, RBAC, customizable policies, OS-level sandboxing, auditable workspace governance
-- **Broad developer surface**: Codex app, IDE extensions, CLI, SDKs, and cloud-based orchestration
-- **Flexible deployment**: Options across self-hosted, cloud, and managed environments
+## Case Studies
 
-**Enterprise adoption metrics:**
-- **4M+ weekly active users**
-- **Enterprise customers**: Cisco (used Codex to build majority of its AI Defense platform, shortening delivery from quarters to weeks), Datadog, Dell Technologies, NVIDIA
-- **Post-evaluation improvements**: GPT-5.5 integration, stronger tool use, faster performance, deeper enterprise workflows
-- **Recent enterprise features**: Codex Security + GPT-5.5-Cyber, Remote SSH, HIPAA compliance, Codex on Amazon Bedrock
-- **GSI partners**: Accenture, Capgemini, Cognizant, Infosys, PwC, TCS
+### Virgin Atlantic (May 2026)
 
-> Source: [OpenAI named a Leader in enterprise coding agents by Gartner](https://openai.com/index/gartner-2026-agentic-coding-leader) (OpenAI Blog, May 22, 2026)
-
-### Enterprise Case Study: Virgin Atlantic
-
-Virgin Atlantic used Codex to ship a revamped mobile app with **near-complete unit test coverage and zero P1 defects at launch** — hitting the critical Christmas travel window. Neil Letchford (VP of Digital Engineering) reported:
+Virgin Atlantic used Codex to ship a revamped mobile app with **near-complete unit test coverage and zero P1 defects at launch** -- hitting the critical Christmas travel window. Neil Letchford (VP of Digital Engineering) reported:
 
 | Metric | Result |
 |--------|--------|
-| Codebase size reduction on legacy refactors | 78–80% |
+| Codebase size reduction on legacy refactors | 78-80% |
 | Unit test coverage on new app | ~100% |
 | Legacy refactoring time | 30 min (down from 2 weeks) |
 
@@ -233,20 +146,55 @@ Virgin Atlantic used Codex to ship a revamped mobile app with **near-complete un
 - **Mobile app launch**: Beta over Christmas, production within weeks, zero P1 tickets
 - **Legacy code modernization**: Multi-year codebases refactored in hours instead of weeks
 - **Front-end velocity**: Lead developer built complete working app from Figma prototype in one week
-- **Data platform**: Analyst teams now prototype internal apps directly against the data warehouse in hours — teams across network planning, customer experience, and maintenance build their own tools with Codex
+- **Data platform**: Analyst teams now prototype internal apps directly against the data warehouse in hours -- teams across network planning, customer experience, and maintenance build their own tools with Codex
 
-> "The trajectory of Codex is thinking beyond pure engineers. It's moving into a real tool for everyone." — Richard Masters, VP of Data and AI, Virgin Atlantic
+> "The trajectory of Codex is thinking beyond pure engineers. It's moving into a real tool for everyone." -- Richard Masters, VP of Data and AI, Virgin Atlantic
 
 > Source: [How Virgin Atlantic ships faster with Codex](https://openai.com/index/virgin-atlantic) (OpenAI Blog, May 22, 2026)
 
-Codex has become the **main interface for ChatGPT** as of April 2026 — transforming from a coding tool into a **superapp** encompassing research, spreadsheets, decision tracking, and general work. Key strategic distinction from Claude Code:
+### OpenAI DevDay 2025 (October 2025)
 
-| Aspect | Codex | Claude Code |
-|--------|-------|-------------|
-| Open Source | ✅ Apache-2.0 | ❌ Proprietary |
-| Model Freedom | ✅ Any model (config.toml) | ❌ Anthropic models only |
-| Language | Rust | TypeScript |
-| GitHub Stars | ~79.3K | N/A (proprietary) |
-| Desktop App | ✅ macOS + Windows | ✅ + Web/iOS/Slack |
-| Superapp vision | ✅ Becoming ChatGPT main UI | ❌ Coding-focused |
-| Subscription wall | ✅ No wall (BYOK + ChatGPT) | ⚠️ Anthropic wall on 3rd-party |
+The OpenAI team used Codex across **every aspect of DevDay 2025** -- from stage demos to arcade cabinets. Key examples:
+
+- **Venue control MCP**: Romain Huet had Codex implement the VISCA protocol for a network-enabled camera and build an MCP server to control stage lighting -- all in a single afternoon without touching the keyboard
+- **Beat pad app**: Katia Gil Guzman used [[entities/codex|Codex Cloud]] with best-of-N to iterate on multiple beat pad designs in parallel for the Apps SDK demo
+- **Arcade game prototyping**: Kevin Whinnery ran **7 parallel Codex CLI instances** -- each building a single-file Phaser game -- to produce the ArcadeGPT game library asynchronously
+- **Demo app rebuild**: A Streamlit app was converted to FastAPI + Next.js by firing off the task to Codex and returning to a working application after lunch
+- **Booth demo + evals**: Erika Kettleson fed a sketch into Codex to build the UI, wrote evals to select the best model for SVG generation, refactored to a single-agent architecture, and generated Mermaid diagrams for booth documentation
+- **Documentation at scale**: Codex Cloud split fragmented Google Docs/Notion files into structured MDX docs with navigation and deploy previews
+
+> Source: [How Codex ran OpenAI DevDay 2025](https://developers.openai.com/blog/codex-at-devday/) (OpenAI Developers Blog, October 10, 2025)
+
+### Dagster Labs -- Documentation Automation (October 2025)
+
+At [[entities/dagster|Dagster Labs]], the documentation team uses Codex to accelerate technical content for data engineers across multiple formats:
+
+- **CONTRIBUTING.md as AI scaffolding**: A well-structured CONTRIBUTING.md file serves as both human guidelines and AI context, enabling Codex to understand the monorepo hierarchy and writing conventions
+- **Monorepo leverage**: File references (`@`) give Codex entry points into subdirectories; having framework code alongside docs lets Codex read source and draft documentation scaffolds automatically
+- **PR explanation for writers**: Developer advocates use Codex with the `gh` command to review pull request diffs and summarize how new features should be documented for end users (e.g., [dagster-io/dagster #32558](https://github.com/dagster-io/dagster/pull/32558))
+- **Content translation**: Tutorials are translated into YouTube transcripts, blog posts, and other formats -- saving hours of rewriting while keeping messaging consistent
+- **Documentation coverage evaluation**: Codex generates code purely from docs, and if test suites pass on the generated code, it signals that documentation has adequate coverage for human developers too
+
+> Source: [Using Codex for education at Dagster Labs](https://developers.openai.com/blog/codex-for-documentation-dagster/) (OpenAI Developers Blog, October 27, 2025)
+
+### Skyscanner -- JetBrains MCP Integration (January 2026)
+
+At [[entities/skyscanner|Skyscanner]], engineers integrated Codex CLI with JetBrains IDEs via the [[concepts/model-context-protocol|MCP]] server, giving the AI access to the same feedback loops developers use:
+
+- **Immediate error detection**: When Codex generated incorrect Java code (e.g., a Databricks SDK constructor mismatch), the JetBrains MCP's `get_file_problems` tool caught the compilation error instantly -- instead of the default multi-step loop of generating code, running tests, parsing failures, and retrying
+- **Predefined run configurations**: Codex discovers and executes IDE-defined test, lint, and format commands directly, eliminating the need for the agent to figure out how to run tooling from scratch
+- **Agent instructions pattern**: A custom instruction block tells Codex to run problems check, formatting, and linting after every code edit -- creating a tight generate-check-fix cycle that reduces back-and-forth prompts
+
+**Results**: Higher first-try success rates, fewer user interventions, and Codex feeling "much more like collaborating with an AI pair programmer that can see what we see."
+
+> Source: [Supercharging Codex with JetBrains MCP at Skyscanner](https://developers.openai.com/blog/skyscanner-codex-jetbrains-mcp/) (OpenAI Developers Blog, January 11, 2026)
+
+### Figma-to-Code Frontend Generation (March 2026)
+
+OpenAI launched the **Figma MCP server** for Codex, enabling bidirectional design-to-code workflows:
+
+- **Design to code**: Copy a Figma frame selection URL, paste it into Codex, and the `get_design_context` MCP tool extracts layouts, styles, and component information to generate code that respects existing design systems
+- **Code to canvas**: The `generate_figma_design` tool captures live application UI and converts it into fully editable Figma frames -- enabling teams to bring real, functioning UI onto the canvas for collaborative exploration
+- **Roundtrip iteration**: Designers refine UI in Figma (adjusting styles, adding components, exploring alternatives), then pull changes back into code via the same MCP server -- creating a fluid loop between design exploration and working code
+
+> Source: [Building frontend UIs with Codex and Figma](https://developers.openai.com/blog/building-frontend-uis-with-codex-and-figma/) (OpenAI Developers Blog, March 1, 2026)

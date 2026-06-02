@@ -757,7 +757,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1519 pages)
+## Concepts (852 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -819,7 +819,7 @@
 - [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
 - [[concepts/agent-security-patterns]] — Agent Security Patterns — Security best practices for AI agent deployments: sandboxing, authentication, authorization, threat modeling
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
-- [[concepts/agent-skills]] — Agent Skills
+- [[concepts/agent-skills]] — Agent Skills — Open standard for dynamically granting domain-specific expertise to agents. Covers Anthropic's skill format (SKILL.md, progressive disclosure, code execution) and OpenAI Codex implementation (repo-local skills, AGENTS.md mandatory routing, CI automation, systematic evals). OSS case study: 457 PRs in 3 months.
 - [[concepts/agent-skills-overview]] — Agent Skills Overview — Concept cluster map. Parent page classifying all Skills-related pages into 4 layers (Format/Design Philosophy/Implementation/Research) and mapping their interrelationships.
 - [[concepts/agent-skills-skillmd]] — Agent Skills/SKILL.md — Agent skill definition and discovery format: SKILL.md frontmatter, skill retrieval, execution architecture
 - [[concepts/agent-statefulness]] — Two complementary framings on agent state: (1) Infrastructure evolution — Gen 1 Raw Context → Gen 2 Memory Systems → Gen 3 Filesystem as Context (yage.ai, Anthropic, Manus). (2) Architectural philosophy — Nakajima's thesis that "models are stateless between turns. Everything else exists because of that." Covers six distinct memory problems, agents mutating (capability evolution), events + graphs complementarity ("events capture what happened, graphs represent what is"), branching problem, reactive→stateful shift, strange convergence with old systems ideas (event sourcing, actors, blackboard), missing primitive, AND ActiveGraph (Nakajima Part 2): a concrete continuity layer design where the graph models the *world* the computation acts on. Five-layer architecture: Events, Behaviors, Relations, Patches, Traces. Everything becomes state. Self-improvement via trace→evaluate→patch→fork→diff→promote. "LLMs reason. Agent loops act. Active Graph explores continuity." Source: Nakajima's two-part X Article series (May 2026) + yage.ai survey.
@@ -1046,6 +1046,7 @@
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices (specific)
 - [[concepts/chartqa]] — ChartQA — Chart understanding QA benchmark. Real charts sourced from Statista/Pew/OECD. 32.7K QA pairs. Noisy test data is a problem.
 - [[concepts/chatferry]] — ChatFerry — TypeScript CLI for coding agents to prompt ChatGPT/Claude through browser sessions without API keys. Uses Playwright + Chromium, daemon with 3 concurrent prompts per provider, markdown exports. Created by [[entities/shloked]].
+- [[concepts/chatgpt-app-design-patterns]] — ChatGPT App Design Patterns — UX patterns for great ChatGPT apps: streaming, tool use visualization, error handling. 15 practical lessons from Alpic. GPT-5.4 frontend design with canvas.
 - [[concepts/chatgpt-images-2.0]] — ChatGPT Images 2.0: OpenAI's second-generation image generation feature (GPT Image 2).
 - [[concepts/chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns: Chief of Staff workflow patterns using AI agents.
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
@@ -1413,6 +1414,8 @@
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 - [[concepts/openai-frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
 - [[concepts/openai-gpt-realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
+- [[concepts/openai-realtime-api]] — OpenAI Realtime API — WebSocket-based streaming voice/text API for low-latency agents. Function calling, session management, VAD tuning. Perplexity voice search case study.
+- [[concepts/openai-responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
 - [[concepts/openai-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
 - [[concepts/openai-symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
 - [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
@@ -1586,8 +1589,6 @@
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism — Pipeline parallelism for SGLang inference
 - [[concepts/small-language-models]] — Small Language Models — Compact LLMs for edge and local deployment
 - [[concepts/test-time-compute]] — Test-Time Compute — Compute scaling at test time
-
-## Events (7 pages)
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
 - [[concepts/claude-47-tokenizer]] — Claude 4.7 Tokenizer Change
 - [[concepts/claude-agent-sdk-sre-patterns]] — Claude Agent SDK — SRE Agent Pattern
@@ -1610,6 +1611,8 @@
 - [[concepts/code-execution-with-mcp]] — Code Execution with MCP — Treating MCP Servers as Code APIs
 - [[concepts/code-intelligence-for-llms]] — Code Intelligence for LLMs
 
+## Events (8 pages)
+- [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
 - [[events/openai-may-2026-reorg]] — OpenAI's May 2026 product reorganization. Greg Brockman oversees all products, ChatGPT and Codex integrated, Thibault Sottiaux named core product lead. Fidji Simo on medical leave.
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — Anthropic announces new products enhancing Claude Code (2026-05-06)
 - [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks (2026-04-24)
