@@ -31,6 +31,7 @@ sources:
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/articles/2026-05-26_every_codex-knowledge-work.md
   - raw/articles/2026-06-02_zswang24-codex-data-science-plugin.md
+  - raw/articles/2026-06-02_openai-codex-every-role-tool-workflow.md
 ---
 
 # OpenAI Codex
@@ -131,18 +132,39 @@ Data science artifacts are not "queries" but **artifacts that someone can read, 
 
 ### Data Science Plugin Launch (June 2026)
 
-On June 2, 2026, OpenAI officially launched a dedicated **Data Science plugin for Codex**, announced via [@OpenAI](https://x.com/OpenAI/status/2061887715520721151) and amplified by [[entities/zhanshi-wang]] (OpenAI researcher). The plugin is described as "built by data scientists for data scientists."
+On June 2, 2026, OpenAI officially launched **six new role-specific plugins for Codex**, announced via [@OpenAI](https://x.com/OpenAI/status/2061887715520721151) and amplified by [[entities/zhanshi-wang]] (OpenAI researcher). Each plugin bundles relevant apps, skills, instructions, and workflows. Together: **62 popular apps and 110 skills**.
 
-**Core capabilities**: exploring raw data, diagnosing metric changes, building dashboards, writing reports, and producing stakeholder-ready insights faster.
+#### The Six Plugins
 
-**User feedback** (internal/early access):
+| Plugin | Target Role | Key Capabilities | Integrations |
+|--------|-------------|-------------------|--------------|
+| **Data Analytics** | Analysts, business teams | Explore data, explain metric changes, create reports/dashboards | Snowflake, Databricks Genie, Hex, Tableau |
+| **Creative Production** | Marketing, creative teams | Campaign boards, display ad variations, product lifestyle shots | — |
+| **Product Design** | Design teams | Wireframes → interactive mockups, calculators, estimators | — |
+| **Sales** | Sales teams | Account research, meeting prep, outreach drafts, CRM management | — |
+| **Public Equity** | Investors | Peer comparison, earnings analysis, investment theses | Filings, models, research |
+| **Investment Banking** | Bankers | Pitch materials, comps analysis, diligence → recommendations | — |
+
+**Source**: [role-based-plugins](https://github.com/openai/role-based-plugins) — open-source repo for all plugins.
+
+**Coming soon**: Corporate Finance, Private Equity Investing, Marketing Strategy, Strategy Consulting, Legal. Open ecosystem goal: partners create and deploy their own plugins in Codex and ChatGPT.
+
+**Data Analytics plugin user feedback** (via [[entities/zhanshi-wang]]):
 - 100% of users said it speeds up the path from raw data to insight
 - 100% said it helps them take on more work than they otherwise could
 - Described as a **"force multiplier"** — accelerating 0→80% progress, enabling parallel multi-project work, improving final output quality
 
-**Significance**: This represents Codex's first dedicated domain plugin for analytics/DS workflows, moving beyond the earlier "Codex for Work" documentation (May 2026) into a concrete, installable tool. Aligns with the platform trajectory toward [[concepts/openai-codex-superapp]].
+#### Sites (Preview)
 
-**Blog post**: [Codex for Every Role, Tool & Workflow](https://openai.com/index/codex-for-every-role-tool-workflow/)
+A new canvas type for Codex — interactive, hosted websites and apps shared via URL within workspaces. Codex can create dashboards, planners, review workspaces, project boards, galleries, and lightweight tools. Rolling out in preview for Business and Enterprise.
+
+**Early partners**: Vercel, Wix, Base44, Replit, Lovable, Figma, Webflow, Emergent.
+
+#### Annotations
+
+Point-to-refine interaction model extended from code to documents, spreadsheets, slides, and sites. Select a specific part (chart, claim, UI element) and describe the change — Codex focuses the update on that part only.
+
+**Significance**: This is Codex's most comprehensive platform expansion — moving from coding agent to **general-purpose knowledge work platform** with domain-specific plugins. Aligns with [[concepts/openai-codex-superapp]] trajectory and [[concepts/model-labs-to-agent-labs]] thesis.
 
 ### For Business Operations Teams
 

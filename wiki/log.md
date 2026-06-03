@@ -21,7 +21,8 @@
 
 - **Raw article saved**: `raw/articles/2026-06-02_zswang24-codex-data-science-plugin.md` — Note Tweet from @zswang24 (Zhanshi Wang, OpenAI researcher) announcing Codex Data Science plugin launch. Quoted OpenAI's official announcement. 312 likes, 158 bookmarks.
 - **Entity created**: `entities/zhanshi-wang.md` — Zhanshi (Jason) Wang. OpenAI researcher & model improvement. Cofounded Roe (YC W24). Key perspectives on Codex Data Science plugin as "force multiplier" for DS workflows.
-- **Entity updated**: `entities/openai-codex.md` — Added "Data Science Plugin Launch (June 2026)" section covering: capabilities (exploring raw data, metric diagnosis, dashboards, reports), user feedback (100% satisfaction), significance as first dedicated domain plugin. Updated sources and date.
+- **Entity updated**: `entities/openai-codex.md` — Added "Data Science Plugin Launch (June 2026)" section covering: full 6-plugin matrix (Data Analytics, Creative Production, Product Design, Sales, Public Equity, Investment Banking), 62 apps / 110 skills, Sites preview (Vercel/Wix/Figma partners), Annotations expansion. Updated sources and date.
+- **Raw article saved**: `raw/articles/2026-06-02_openai-codex-every-role-tool-workflow.md` — Full blog post extracted from RSC payload (Next.js SSR). Six role-specific plugins, Sites, Annotations. OpenAI customer examples: Zapier, NVIDIA.
 - **index.md updated**: Added [[entities/zhanshi-wang]], updated [[entities/openai-codex]] entry with DS plugin launch.
 
 ## 2026-06-03 Retrieve, Merge, Predict: Table Augmentation Pipeline Ingestion
