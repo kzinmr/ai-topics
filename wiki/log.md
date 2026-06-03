@@ -5987,3 +5987,11 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - Saved raw article: wiki/raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge.md
 - Updated concepts/llm-search-judge.md: added Rubric Judge section + cross-references
 - Updated concepts/llm-as-judge.md: added rubric judge source
+
+---
+## [2026-06-03] watchdog | Auto-fix: index header counts
+
+- **Index summary line**: Total pages 2343→2347 (filesystem), Indexed entries 1670→1677, Concepts 1553→1555, Entities 753→755
+- **Section headers**: Entities (752→755), Concepts (1547→1555) — now consistent with filesystem including `_index.md` files
+- **Pipeline watchdog**: `x_accounts` stale 26h — requires human review (stale >24h)
+- **Log separators**: 86 consecutive headers without `---` — deferred (single-file bulk edit, skipped to stay within safe batch size)
