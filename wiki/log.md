@@ -3,7 +3,9 @@
 
 ## [2026-06-03] Ingest | Cheat at Search Part 4 lecture transcript → update llm-search-judge concept
 
-- **Raw article**: `raw/articles/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Live lecture transcript (Q&A/discussion) for Part 4: LLM as a Judge. Covers pairwise→decision tree pipeline (73% individual → 91% ensemble precision), ELO-based pointwise recovery, recall expansion via diverse BM25 calls, domain adaptation guidance, implicit vs explicit judgment tradeoffs.
+- **Raw article**: `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Live lecture transcript (Q&A/discussion) for Part 4: LLM as a Judge. Covers pairwise→decision tree pipeline (73% individual → 91% ensemble precision), ELO-based pointwise recovery, recall expansion via diverse BM25 calls, domain adaptation guidance, implicit vs explicit judgment tradeoffs.
+- **Moved**: from `raw/articles/` to `raw/transcripts/` — properly categorized as transcript type.
+- **Updated**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md` — Added cross-reference to lecture transcript.
 - **Updated**: `concepts/llm-search-judge.md` — Added: naive judge "bitter lesson", decision tree precision/coverage table (91%/75%), cheap local models (Qwen), feature-as-opportunity-analysis, ELO conversion section, recall expansion section, domain adaptation guidance (legal RAG Q&A), implicit vs explicit judgment section. Updated sources and references.
 
 ## [2026-06-02] X Article ingestion — Dynamic Workflows in Claude Code
