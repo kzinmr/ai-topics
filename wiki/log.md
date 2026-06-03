@@ -5779,3 +5779,12 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Created**: `raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md` — Lecture transcript for Part 3: Steering Lost Agents. Covers: harness design patterns, tool calling loops, carrots and sticks steering model, file system-like tools (ls/cat/grep) on Wayfair dataset, Ralph loop, validators/stoppers, LLM judge validation, relevance feedback, few-shot priming, query expansion/skills, tool guards (ToolState/disallowing repeated queries), sub-agent delegation, BEAM search for exhaustive exploration. NDCG results: BM25=0.541, agent+FS tools greater than BM25, +few-shot further improvement, +tool guards meaningful bump.
 - **Updated**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md` — Added cross-reference to lecture transcript (frontmatter + body).
 - **Updated**: `wiki/index.md` — Raw Transcripts section (2 to 3 pages), added Part 3 transcript entry.
+
+## 2026-06-03 — Long Running Search dedup + reference fix
+
+- **Deleted skeleton**: `raw/articles/2026-06-02_softwaredoug_long-running-search-agents.md` (22-line stub, superseded by full ingested article)
+- **Fixed references** in:
+  - `concepts/long-running-search-agents.md` — Related Raw Articles now points to `cheat-at-search-long-running-search`
+  - `index.md` — removed duplicate skeleton entry, kept correct article + transcript
+  - `entities/doug-turnbull-projects.md` — consolidated to single Part 5 entry with companion transcript link
+- **Added transcript reference** to concept page (with Q&A topics: goal mode, context vs memory, access control, taxonomy)
