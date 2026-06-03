@@ -1684,3 +1684,7 @@
 - [[queries/data-analysis-open-harness]] — Which Open Harness is suitable for data analysis? Organizing options between repurposing general coding harnesses vs data analysis specialized products (2026-05-14)
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Portal — How TDD, evals, A/B testing, monitoring, and observability are being redefined in the probabilistic era. Causal chain (Segato→Chase→Hylak), practice-by-practice transformation tables, key thinkers map, and reading paths.
 - [[queries/saas-future-and-agent-developer-career]] — The future of SaaS and AI Agent developer career strategy: Personal Harness adoption, FDE model expansion, shift to Service-as-Software (2026-05-27)
+
+## Raw Transcripts (1 page)
+
+- [[raw/transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture]] — Cheat at Search — LLM Query Understanding (Lecture Transcript). Doug Turnbull's guest lecture for AI-powered search class. Covers: query understanding definition, managed vocabularies, embedding collapse/hubness, 5 QU approaches (rules/historical/ML/embedding/prompt-based), synonym extraction with Pydantic, category classification, dynamic Pydantic enums for cost optimization, hypothetical categories (HyDE for QU), ground truth from eval data, semantic caching, layered search approach. Companion: [[articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]]

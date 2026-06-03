@@ -1,6 +1,12 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-03] Ingest | Cheat at Search Part 2 lecture transcript (LLM Query Understanding)
+
+- **Created**: `raw/transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture.md` — Lecture transcript for Part 2: LLM Query Understanding. Covers: query understanding definition, managed vocabularies, embedding collapse/hubness, 5 QU approaches (rules/historical/ML/embedding/prompt-based), synonym extraction with Pydantic structured outputs (gpt-4.1-nano), category classification (few-label and deep multi-label), dynamic Pydantic enums for cost optimization (search-then-classify), hypothetical categories (hallucinated → entity resolution via embeddings), ground truth construction from eval data, category precision ≠ NDCG insight, semantic caching, layered search approach.
+- **Updated**: `raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search.md` — Added cross-reference to lecture transcript.
+- **Updated**: `index.md` — Added "Raw Transcripts" section with transcript entry.
+
 ## [2026-06-03] Ingest | Cheat at Search Part 4 lecture transcript → update llm-search-judge concept
 
 - **Raw article**: `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Live lecture transcript (Q&A/discussion) for Part 4: LLM as a Judge. Covers pairwise→decision tree pipeline (73% individual → 91% ensemble precision), ELO-based pointwise recovery, recall expansion via diverse BM25 calls, domain adaptation guidance, implicit vs explicit judgment tradeoffs.
