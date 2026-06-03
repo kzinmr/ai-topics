@@ -5747,3 +5747,16 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **created** entities/mixedbread.md — Mixedbread company entity page
 - **updated** entities/benjamin-clavie.md — added Latent Terms paper (arXiv:2605.29384) to current work and sources
 - **updated** index.md — added latent-terms, mixedbread entries
+
+## [2026-06-03] Wiki Index Update | Cheat at Search Slide Series — Raw Articles Registration
+
+- **Updated**: `wiki/index.md` — Added "Raw Articles — Cheat at Search Slide Series" section (7 pages) registering all slide deck raw articles:
+  - `raw/articles/2026-05-13_softwaredoug_lexical-search-bm25.md`
+  - `raw/articles/2026-05-13_softwaredoug_vector-search-embeddings.md`
+  - `raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md`
+  - `raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search.md`
+  - `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md`
+  - `raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md`
+  - `raw/articles/2026-06-02_softwaredoug_long-running-search-agents.md`
+- **Updated**: `wiki/index.md` — Expanded "Raw Transcripts" section (1→2 pages), added `2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
+- **Updated**: `entities/doug-turnbull-projects.md` — Slide deck series now links directly to raw slide articles for Parts 1, 4, and added Part 5 (Long Running Search Agents)
