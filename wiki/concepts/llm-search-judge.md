@@ -15,7 +15,7 @@ tags:
 sources:
   - raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md
   - raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md
-  - raw/articles/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md
+  - raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md
 related:
   - concepts/ndcg
   - concepts/query-understanding
@@ -198,7 +198,7 @@ Turnbull distinguishes between LLM judges and implicit user signals (clicks, eng
 ## References
 
 - **Doug Turnbull**, *Cheat at Search Part 4: LLM as a Judge* (slides), 2026 — [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge]]
-- **Doug Turnbull**, *Cheat at Search Part 4: LLM as a Judge* (lecture transcript), 2026 — [[raw/articles/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture]]
+- **Doug Turnbull**, *Cheat at Search Part 4: LLM as a Judge* (lecture transcript), 2026 — [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture]]
 - **Doug Turnbull**, *Search Evaluation: NDCG* (blog), 2026 — [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg]]
 - **Lin et al.**, *Umbrella: A Framework for LLM-based Search Evaluation*
 - **Turnbull & Grainger**, *AI-Powered Search* (Manning, 2025)

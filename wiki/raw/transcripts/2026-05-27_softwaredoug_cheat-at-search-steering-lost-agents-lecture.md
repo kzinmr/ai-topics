@@ -290,4 +290,4 @@ File system search enables this: if I search for a couch, have I checked all the
 - **Author:** [softwaredoug.com](http://softwaredoug.com)
 - **Related transcripts:**
   - [[transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Part 2: LLM Query Understanding]]
-  - [[transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture|Part 4: LLM as a Judge]]
+  - [[transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture|Part 4: LLM as a Judge]]

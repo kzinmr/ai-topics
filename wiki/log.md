@@ -1,11 +1,17 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-03] Rename | Cheat at Search Part 4 transcript date alignment
+
+- **Renamed**: `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` → `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Date aligned with slide date (May 28, 2026).
+- **Updated frontmatter**: `date: 2026-05-28` (date_ingested unchanged)
+- **Updated references**: `index.md`, `log.md`, `concepts/llm-search-judge.md`, `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md`, `raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md`
+
 ## [2026-06-03] Rename | Cheat at Search Part 4 article date correction
 
 - **Renamed**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md` → `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md` — Date corrected from May 27 to May 28, 2026 per user request (actual lecture date).
 - **Updated frontmatter**: `date: 2026-05-28`
-- **Updated references**: `index.md`, `log.md`, `entities/doug-turnbull-projects.md`, `concepts/llm-search-judge.md`, `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
+- **Updated references**: `index.md`, `log.md`, `entities/doug-turnbull-projects.md`, `concepts/llm-search-judge.md`, `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
 
 ## [2026-06-03] Ingest | Cheat at Search Part 2 lecture transcript (LLM Query Understanding)
 
@@ -15,7 +21,7 @@
 
 ## [2026-06-03] Ingest | Cheat at Search Part 4 lecture transcript → update llm-search-judge concept
 
-- **Raw article**: `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Live lecture transcript (Q&A/discussion) for Part 4: LLM as a Judge. Covers pairwise→decision tree pipeline (73% individual → 91% ensemble precision), ELO-based pointwise recovery, recall expansion via diverse BM25 calls, domain adaptation guidance, implicit vs explicit judgment tradeoffs.
+- **Raw article**: `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Live lecture transcript (Q&A/discussion) for Part 4: LLM as a Judge. Covers pairwise→decision tree pipeline (73% individual → 91% ensemble precision), ELO-based pointwise recovery, recall expansion via diverse BM25 calls, domain adaptation guidance, implicit vs explicit judgment tradeoffs.
 - **Moved**: from `raw/articles/` to `raw/transcripts/` — properly categorized as transcript type.
 - **Updated**: `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md` — Added cross-reference to lecture transcript.
 - **Updated**: `concepts/llm-search-judge.md` — Added: naive judge "bitter lesson", decision tree precision/coverage table (91%/75%), cheap local models (Qwen), feature-as-opportunity-analysis, ELO conversion section, recall expansion section, domain adaptation guidance (legal RAG Q&A), implicit vs explicit judgment section. Updated sources and references.
@@ -5764,7 +5770,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
   - `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md`
   - `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md`
   - `raw/articles/2026-06-02_softwaredoug_long-running-search-agents.md`
-- **Updated**: `wiki/index.md` — Expanded "Raw Transcripts" section (1→2 pages), added `2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
+- **Updated**: `wiki/index.md` — Expanded "Raw Transcripts" section (1→2 pages), added `2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
 - **Updated**: `entities/doug-turnbull-projects.md` — Slide deck series now links directly to raw slide articles for Parts 1, 4, and added Part 5 (Long Running Search Agents)
 
 
