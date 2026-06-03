@@ -5854,3 +5854,15 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **`entities/simon-willison.md`** — Added June 2026 Updates section: datasette-agent-micropython 0.1a0 (MicroPython WASM sandbox, GPT-5.5 failed to escape), Microsoft MAI-Thinking-1/MAI-Code-1-Flash coverage. Updated `updated: 2026-06-03`, added 2 sources.
 - **`entities/martin-alderson.md`** — Added Built for Turbulence podcast section (5 people vs 500, Figma Trap, AI code auditing). Updated `updated: 2026-06-03`, added 1 source.
 - **`entities/gary-marcus.md`** — Added 2 sections: Trump AI Preflight Checks Executive Order (FDA-style review mandate), Why Things Will Eventually Fall Apart (Google equity raising, Bain ROI report). Updated `updated: 2026-06-03`, added 2 sources.
+
+## 2026-06-03 — Blog post + Slides: Hermes Agent for developers
+
+**Blog post created**: `blog/2026-06-03_hermes_hermes-agent-for-developers.md`
+- "Hermes Agentをソフトウェア開発者のSecond Brainとして回す——設定・スキル・定期実行の実運用"
+- Covers: AGENTS.md/SCHEMA.md structure, pre-commit hooks, 28 cron pipelines, skill auto-creation, daily workflow
+- Target audience: software developers interested in AI agent adoption
+
+**Slides created**: `slides/2026-06-03_hermes-agent-second-brain-practice.marp.md`
+- "Hermes Agent を Second Brain として回す: 設定・スキル・定期実行の実運用"
+- Marp format, same CSS theme as 2026-05-14 slides
+- Expands on practical details lightly covered in the previous harness engineering talk
