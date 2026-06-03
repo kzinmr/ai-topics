@@ -1,6 +1,22 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 Ingest Branch-Aware Search Pattern (Qdrant + Neon)
+
+**Action**: Ingested branch-aware search concept from Andre Zayarni's LinkedIn post + Qdrant tutorial + Neon database branching docs. Created 3 new pages + 1 raw article.
+
+**Created**:
+- `concepts/branch-aware-search.md` — MVCC for vector search pattern, Qdrant implementation details, Neon DB branching comparison table, use cases
+- `entities/qdrant.md` — Open-source vector search engine (Rust), HNSW + nested payload filters, branch-aware search tutorial
+- `entities/neon-database.md` — Serverless Postgres platform, copy-on-write branching, Time Travel queries, CI/CD integration
+- `raw/articles/2026-06-03_zayarni-qdrant-branch-aware-vector-search.md` — LinkedIn post + Qdrant tutorial summary
+
+**Updated**:
+- `SCHEMA.md` — Added tags: `branching`, `versioning`, `mvcc`, `copy-on-write`
+- `index.md` — Added 3 entries (Entities: 755→757, Concepts: 1555→1556, Total: 2347→2350)
+
+**Sources**: [LinkedIn post](https://www.linkedin.com/posts/zayarni_most-vector-search-examples-assume-a-flat-share-7467850718553759744-Rg7U/), [Qdrant tutorial](https://qdrant.tech/documentation/tutorials-search-engineering/branch-aware-search/), [Neon branching docs](https://neon.com/docs/introduction/branching)
+
 ## 2026-06-03 Ingest MAI-Thinking-1 Tech Report PDF (109 pages)
 
 **Action**: Downloaded and extracted full text from the 109-page MAI-Thinking-1 technical report PDF. Updated concept page with comprehensive details from the paper.

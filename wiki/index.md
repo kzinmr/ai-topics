@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 2347 | Indexed entries: 1707 | Concepts: 1555 | Entities: 755
+> Last updated: 2026-06-03 | Total pages: 2350 | Indexed entries: 1710 | Concepts: 1556 | Entities: 757
 
-## Entities (755 pages)
+## Entities (757 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -441,6 +441,7 @@
 - [[entities/neel-nanda]] — **Website** | neelnanda.io | Mechanistic Interpretability researcher. MI Glossary, Quickstart Guide, Favourite Papers — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/nemotron-cascade-2]] — NVIDIA's open-weight 30B MoE (3B active). Gold medal at IMO/IOI/ICPC 2025 via Cascade RL + Multi-Domain On-Policy Distillation. 24GB VRAM, 256K context, thinking/non-thinking modes, structured tool calling.
 - [[entities/nemo-agent-toolkit]] — NVIDIA NeMo Agent Toolkit — Open-source multi-agent orchestration library (2K stars). v1.7.0: ATOF observability format, Exa Search API, OCI LangChain, token streaming.
+- [[entities/neon-database]] — Neon — Serverless Postgres platform with instant copy-on-write database branching. Git-like workflows for data: dev/test branches, CI/CD ephemeral environments, instant restore, Time Travel queries. Open-source storage engine.
 - [[entities/niplav]] — niplav — LessWrong contributor, AI alignment researcher. Author of the [[concepts/glut-of-circuits|GLUT-of-circuits]] model of LLMs (2026). Agent structure problem, computation in superposition, circuit-level alignment.
 - [[entities/noam-brown]] — **Role** | Research Scientist, OpenAI |
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "fail...
@@ -492,6 +493,7 @@
 - [[entities/project-glasswing]] — Project Glasswing — Anthropic cybersecurity initiative. 1,752 vulnerabilities assessed (90.6% true-positive rate), on track for 3,900+ high/critical vulns in open-source. Claude Security in public beta.
 - [[entities/promptfoo]] — Promptfoo — Open-source LLM eval & red-teaming framework by Ian Webster & Michael D'Angelo. 19.6K GitHub stars, 302.7K weekly npm downloads, 156 Fortune 500 customers. Acquired by OpenAI (2026, remains MIT). Evaluations + red teaming + code scanning + MCP support.
 - [[entities/pointer-ai]] — Pointer — Open-source computer use agent system achieving OSWorld SOTA (83.6% with Claude Opus 4.7, beating human baseline of 72.4%). Modular architecture with Feasibility Gate, Planner, Executor. May 2026.
+- [[entities/qdrant]] — Qdrant — Open-source vector similarity search engine written in Rust. HNSW-based ANN with nested payload filtering, Cloud Inference, multitenancy. Notable for branch-aware search tutorial (MVCC for vector indexes).
 - [[entities/qwen3-6-plus]] — Alibaba's agent-oriented language model. Targets real-world autonomous workflows.
 - [[entities/qwen-3-7-max]] — Alibaba's latest agent reasoning model (2026-05-20). 1M token context, 35-hour autonomous kernel optimization (1,158 tool calls, 10.1× speedup). AA Index #5, Terminal Bench 2.0 69.7. Environment Scaling training. Closed weights.
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
@@ -767,7 +769,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1555 pages)
+## Concepts (1556 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1033,6 +1035,7 @@
 - [[concepts/baudrillard-and-ai]] — Baudrillard and AI — The manifestation of Simulacra and Simulation in the AI era. Baudrillard's four-stage image theory, hyperreality, and the "precession of simulacra" (the map preceding the territory) applied to the LLM era. AI is not a failure of imitation but the perfected form of the simulacrum.
 - [[concepts/bayesian-agent-orchestration]] — ICML 2026 position paper: agentic AI orchestration should use Bayesian decision theory at the control layer. Maintain calibrated beliefs, update from human feedback, choose utility-maximizing actions. Addresses the "when to escalate to human" problem.
 - [[concepts/behavioral-trait-transmission]] — Subliminal Learning/Self-Reference in LLMs
+- [[concepts/branch-aware-search]] — Branch-Aware Search — MVCC for vector search: scope results to git-style branches in versioned document corpora. Qdrant pattern + Neon DB branching comparison.
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
 - [[concepts/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3. Multi-turn, multi-step function calling evaluation. State-based verification. GLM 4.5 leads at 76.7%.
 - [[concepts/bitsandbytes]] — bitsandbytes: Efficient LLM training library via NF4 quantization and double quantization.
