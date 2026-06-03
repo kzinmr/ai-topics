@@ -3,6 +3,9 @@
     "http://www.paulgraham.com/popular.html",
     "http://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
     "http://xania.org/202605/walking-the-dog?utm_source=feed&utm_medium=rss",
+    "https://anyscale.com/blog/aks-support-multi-cloud-global-resource-scheduler",
+    "https://anyscale.com/blog/announcing-anyscale-on-kubernetes-k8s",
+    "https://anyscale.com/blog/introducing-anyscale-job-queues",
     "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
     "https://artificialanalysis.ai/speech-to-text/non-streaming",
     "https://berthub.eu/articles/posts/het-solvinity-besluit-gevolgen/",
@@ -83,6 +86,7 @@
     "https://idiallo.com/blog/how-many-tokens-did-you-burn-today?src=feed",
     "https://idiallo.com/blog/how-to-talk-to-your-coworkers?src=feed",
     "https://idiallo.com/blog/the-commencement-speech-that-shook-the-world?src=feed",
+    "https://idiallo.com/blog/web-is-changing-we-are-not-going-back",
     "https://idiallo.com/blog/web-is-changing-we-are-not-going-back?src=feed",
     "https://idiallo.com/blog/you-are-an-ai-enabled-engineer-now?src=feed",
     "https://idiallo.com/byte-size/amber-alert-with-spam-link?src=feed",
@@ -280,7 +284,10 @@
     "https://www.gilesthomas.com/2026/05/10g-ethernet-sfpplus-mini-heatsinks",
     "https://www.gilesthomas.com/2026/05/on-first-looking-into-jax",
     "https://www.glean.com/blog/generative-ai-stack-for-software-engineers",
+    "https://www.glean.com/blog/query-snowflake-data-in-glean-assistant",
     "https://www.hamiltonnolan.com/p/if-you-take-the-weasel-job-then-you?r=qy6gq",
+    "https://www.harvey.ai/blog/harvey-opens-in-singapore",
+    "https://www.harvey.ai/blog/harvey-power-users-the-champions-network",
     "https://www.jeffgeerling.com/blog/2026/i-patched-iozone-for-better-disk-benchmarks-on-modern-macos/",
     "https://www.jeffgeerling.com/blog/2026/its-hard-to-justify-framework-12/",
     "https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/",
@@ -326,5 +333,5 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/",
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-redhat-javascript-clients/"
   ],
-  "updated": "2026-06-03T07:38:56.765074+00:00"
+  "updated": "2026-06-03T18:13:42.336604+00:00"
 }

@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-06-02
+updated: 2026-06-03
 tags:
   - company
   - search
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-05-15_glean_cowork-mcp-eval.md
   - raw/articles/2026-05-21_glean_health-agents-2026.md
   - raw/articles/2026-06-02_glean_generative-ai-stack-for-software-engineers.md
+  - raw/articles/2026-06-03_glean_query-snowflake-data-in-glean-assistant.md
 ---
 
 # Glean
@@ -75,6 +76,12 @@ Glean published a comprehensive overview of its AI stack for software engineers,
 | **Agentic Engine** | Plan-and-adapt execution layer that decomposes tasks and retrieves context in real-time |
 
 The architecture emphasizes **context layer quality** as the primary determinant of output quality and cost — a finding consistent with Glean's MCP benchmark results (30% fewer tokens vs off-the-shelf tools). The platform is built on the principle that enterprise AI must "plan & adapt over company context" rather than relying on general-purpose reasoning alone.
+
+### Snowflake Data Integration (June 2026)
+
+Glean Assistant gained the ability to **query Snowflake data warehouses directly via natural language**, bridging enterprise search with structured data analytics. Users can ask questions about sales, customer, or operational data stored in Snowflake without SQL knowledge. The integration follows Glean's enterprise context layer pattern — Snowflake tables and views are indexed through the Enterprise Graph, enabling cross-source queries that combine documents, chat logs, and database records in a single interaction.
+
+Source: raw/articles/2026-06-03_glean_query-snowflake-data-in-glean-assistant.md
 
 ## Related
 

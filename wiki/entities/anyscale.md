@@ -2,13 +2,16 @@
 title: "Anyscale"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-06-03
 tags:
   - company
   - infrastructure
   - open-source
-aliases: ["Anyscale"]
+  - cloud
+  - kubernetes
 sources:
+  - https://www.anyscale.com
+  - raw/articles/anyscale.com--blog-aks-support-multi-cloud-global-resource-scheduler--1149a504.md
   - https://www.anyscale.com
 ---
 
@@ -35,6 +38,20 @@ Anyscale is the company behind Ray, the open-source unified framework for scalin
 - **Ray**: Open-source unified compute framework for scaling Python/ML workloads across clusters.
 - **Anyscale Platform**: Managed Ray service with enterprise features, scheduling, and observability.
 - **Agent Skills for Ray**: GA capability for deploying AI agent workflows on Ray infrastructure.
+
+## Multi-Cloud & Platform Expansion (June 2026)
+
+Anyscale announced a major multi-cloud expansion (June 2026) to address the growing need for cross-cloud AI workload flexibility:
+
+| Capability | Description |
+|------------|-------------|
+| **AKS First-Class Support** | Full support for Azure Kubernetes Service with Blob Storage integration, advanced logging, and monitoring within Anyscale console. Completes support across all three major CSPs. |
+| **Global Resource Scheduler (GRS)** | Intelligent workload allocation across GPU capacity commitments to maximize utilization and prevent premium hardware from sitting idle. |
+| **Multi-Deployment Management** | (Coming soon) Unified control plane for deploying across multiple providers, regions, and compute stacks from a single interface. |
+
+The expansion is driven by GPU scarcity and cost optimization needs — organizations must run AI workloads wherever the latest, most cost-effective, or available hardware resides. Anyscale's approach positions Ray as the common compute framework across heterogeneous cloud environments.
+
+Source: raw/articles/anyscale.com--blog-aks-support-multi-cloud-global-resource-scheduler--1149a504.md
 
 ## Related
 - [[entities/openai]] — AI model provider; Ray often used for training/scaling models

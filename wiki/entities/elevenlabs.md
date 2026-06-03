@@ -13,6 +13,7 @@ sources:
   - raw/articles/2026-05-19_elevenlabs_building-elevenagents-with-claude-code.md
   - raw/articles/2026-05-22_elevenlabs_elevenreader-launches-premium-audiobooks.md
   - raw/articles/2026-05-23_elevenlabs_22-million-earned-by-voice-creators-on-elevenlabs.md
+  - raw/articles/2026-06-02_elevenlabs_webinar-recap-deploying-agents-across-every-channel.md
 ---
 
 # ElevenLabs
@@ -122,6 +123,10 @@ ElevenAgents processes voice and text through a **real-time pipeline**:
 **System prompt structure**: Well-structured prompts include four sections — Personality, Goal (ordered steps), Tools (when and how to use them), and Guardrails (what never to do). For enterprise deployments, keep each agent specialized rather than multi-purpose.
 
 **Case study — mdhub**: Behavioral health platform deployed ElevenAgents across clinic admissions and patient support. AI agents now handle **90% of inbound calls end-to-end** (capturing demographics, verifying insurance, booking appointments). Time from first inquiry to appointment dropped from **weeks to days**, and bookings increased **30%**.
+
+**Omnichannel routing pattern** (June 2026): ElevenLabs demonstrated a three-tier omnichannel architecture. A single **greeting/FAQ router** handles initial customer contact across SMS, voice, and in-app channels, then routes to specialized sub-agents — **Transaction Agent** (payment/commerce), **Rebooking Agent** (schedule changes), and **Baggage Claim Agent** (issue resolution) — via LLM-based intent classification. The architecture keeps knowledge base and policies centralized at the logic layer while deploying channel-specific front-ends, eliminating per-channel rebuild costs.
+
+Source: raw/articles/2026-06-02_elevenlabs_webinar-recap-deploying-agents-across-every-channel.md
 
 Source: raw/articles/2026-06-03_elevenlabs_ai-customer-service-agents.md
 

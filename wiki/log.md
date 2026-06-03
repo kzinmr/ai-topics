@@ -6003,3 +6003,8 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Index summary**: Indexed entries 1677→1707
 - **Validation**: `validate_index.py` clean ✅
 - **Orphans remaining**: ~635 (of 655 non-_index) — batch complete
+## [2026-06-03] dreaming-wiki-ingest | 1 take + 3 references from 0-article recovery
+- **`concepts/ai-agent-security.md`** — Added "Meta AI Support Bot — One-Shot Account Takeover" section. New vulnerability class: Support Bot Privilege Escalation (Meta wired support bot directly into Instagram account recovery, enabling zero-shot takeover by attackers). Updated `updated: 2026-06-03`, added 1 source.
+- **`entities/elevenlabs.md`** — Added "Omnichannel routing pattern" sub-section under AI Customer Service Agents. Three-tier architecture (greeting/FAQ router to Transaction/Rebooking/Baggage Claim sub-agents via intent classification). Updated `sources`, added 1 source.
+- **`entities/anyscale.md`** — Added "Multi-Cloud and Platform Expansion (June 2026)" section covering AKS support, Global Resource Scheduler (GRS), and multi-deployment management. Updated `updated: 2026-06-03`, tags, added 1 source.
+- **`entities/glean.md`** — Added "Snowflake Data Integration (June 2026)" sub-section under Products and Technology. Glean Assistant now queries Snowflake data warehouses via natural language. Updated `updated: 2026-06-03`, added 1 source.

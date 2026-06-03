@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-06-03T18:13:42.336397+00:00",
+  "triage_run_id": "20260603T181334Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming 0-article recovery: 302件のraw articlesから40件の未処理記事を発見。AI関連をフィルタリングし15件をトリアージ。主要テーマ: (1) AIエージェントセキュリティ—Meta AIサポートボットのアカウント乗っ取り脆弱性(★5), (2) エンタープライズAIエージェント—ElevenLabs omnichannel/Glean Snowflake統合(★4), (3) AIインフラ—Anyscaleマルチクラウド/K8s拡張(★3)。1件take, 3件reference, 11件skip。",
+  "decisions": [
+    {
+      "item_id": "dreaming-2026-06-03-003",
+      "source": "blog",
+      "source_name": "anyscale.com",
+      "title": "Anyscale Announces Support for AKS, Multi-Cloud, & Multi-Region Deployments",
+      "url": "https://anyscale.com/blog/aks-support-multi-cloud-global-resource-scheduler",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-aks-support-multi-cloud-global-resource-scheduler--1149a504.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AnyscaleのAIインフラ拡張: AKS対応で全3大CSP対応を完了、Global Resource Scheduler(GRS)でGPU容量コミットメントの最適化を実現。Rayベースの分散AIワークロードのマルチクラウド展開。entities/anyscale.mdのenrichment候補だが、プロダクト発表の域を出ない。",
+      "candidate_wiki_path": "entities/anyscale",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-2026-06-03-004",
+      "source": "blog",
+      "source_name": "glean.com",
+      "title": "Query Snowflake Data with Glean Assistant",
+      "url": "https://www.glean.com/blog/query-snowflake-data-in-glean-assistant",
+      "raw_path": "~/wiki/raw/articles/2026-06-03_glean_query-snowflake-data-in-glean-assistant.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Glean AssistantのSnowflake統合: エンタープライズAI検索アシスタントがデータウェアハウスに直接クエリ可能に。AI検索×データ分析の交差点。entities/glean.mdのenrichment候補だが、ブログのblog-wiki-ingestパイプラインのtake(Microsoft MAI)とは無関係。",
+      "candidate_wiki_path": "entities/glean",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-2026-06-03-005",
+      "source": "blog",
+      "source_name": "harvey.ai",
+      "title": "Harvey Opens in Singapore",
+      "url": "https://www.harvey.ai/blog/harvey-opens-in-singapore",
+      "raw_path": "~/wiki/raw/articles/2026-06-03_harvey_harvey-opens-in-singapore.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Harvey AIのシンガポール進出。法的AIエージェントの地理的拡張ニュース。entities/harvey.mdのenrichment候補だが、技術的な新規性は低い。プロダクト発表の域。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-2026-06-03-006",
+      "source": "blog",
+      "source_name": "harvey.ai",
+      "title": "Harvey Power Users: Alex Bazin at Lewis Silkin",
+      "url": "https://www.harvey.ai/blog/harvey-power-users-the-champions-network",
+      "raw_path": "~/wiki/raw/articles/2026-06-03_harvey_harvey-power-users-the-champions-network.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Harvey AIのパワーユーザーケーススタディ。法的AIエージェントの導入事例だが、マーケティング色が強い。entities/harvey.mdのenrichment候補。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-2026-06-03-007",
+      "source": "blog",
+      "source_name": "anyscale.com",
+      "title": "Introducing Anyscale on Kubernetes",
+      "url": "https://anyscale.com/blog/announcing-anyscale-on-kubernetes-k8s",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-announcing-anyscale-on-kubernetes-k8s--ef68b5bc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ AnyscaleのKubernetes対応発表。AIワークロードのK8s統合。older articleで既にAKS記事でカバーされている内容の一部。entities/anyscale.mdのenrichment候補。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-2026-06-03-008",
+      "source": "blog",
+      "source_name": "anyscale.com",
+      "title": "Introducing Anyscale Job Queues",
+      "url": "https://anyscale.com/blog/introducing-anyscale-job-queues",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-introducing-anyscale-job-queues--9a91b94a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Anyscale Job Queuesの機能紹介。バッチ処理・モデルトレーニング・バッチ推論向けのジョブスケジューリング。older articleで既にカバーされている可能性が高い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-2026-06-03-009",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "The web is changing, and we are not going back",
+      "url": "https://idiallo.com/blog/web-is-changing-we-are-not-going-back",
+      "raw_path": "~/wiki/raw/articles/idiallo.com--blog-web-is-changing-we-are-not-going-back--9489e292.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ AI時代のWeb検索変化のエッセイ。Google検索のAI-first化と検索トラフィックの減少。death-of-browser概念やsearch-engines概念のenrichment候補だが、個人ブログのオピニオンで新規性は低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
