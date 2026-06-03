@@ -38,6 +38,31 @@
 **Wiki pages updated**:
 - **UPDATED**: `index.md` — Added `entities/thariq-shihipar` entry; updated `concepts/dynamic-workflows` description from stale May 2026 entry to accurate Jun 2026 content.
 
+## [2026-06-03] Updated | microsoft-mai-models.md with Build 2026 models
+
+**Action**: Updated `concepts/microsoft-mai-models.md` with 5 new/updated MAI models announced at Microsoft Build (June 2, 2026):
+- Added **MAI-Thinking-1** (1T params, 35B active, zero distillation, zero synthetic data, preferred to Sonnet 4.6 per Microsoft)
+- Added **MAI-Code-1-Flash** (137B params, 5B active, purpose-built for GitHub Copilot/VS Code)
+- Added **MAI-Image-2.5**, **MAI-Transcribe-1.5**, **MAI-Voice-2** (updated models)
+- Added **Platform Announcements**: Windows as agent runtime, GitHub Copilot app, Web IQ for agents
+- Updated frontmatter: `updated: 2026-06-03`, tags added `[reasoning-model, code-model]`, 2 new sources
+- Updated Strategic Significance section
+
+**Sources added**:
+- `raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md`
+- `raw/newsletters/2026-06-03-ainews-microsoft-build-mai-thinking-1-and-mai-family-models.md`
+
+**Updated**: `SCHEMA.md` (added reasoning-model, code-model tags), `index.md`
+
+## [2026-06-03] Created | github-copilot-agent-platform.md
+
+**Action**: Created new concept page `concepts/github-copilot-agent-platform.md` covering GitHub's evolution from Copilot code completion to agent platform, based on Latent Space interview with Kyle Daigle (GitHub COO) and Microsoft Build 2026 coverage.
+
+**Content covers**: Evolution from Copilot to agent platform, AI-generated PRs and Waymo analogy, Windows sandboxing for agents, WorkIQ agent traffic scaling, Spark low-code platform, GitHub's scaling challenges from agent traffic, Windows as an agent runtime ecosystem.
+
+**Created**: `concepts/github-copilot-agent-platform.md` (83 lines)
+**Updated**: `index.md` (added entry), `SCHEMA.md` (previously updated for new tags)
+
 **Source**: https://x.com/trq212/status/2061907337154367865 (X Article: https://x.com/i/article/2061850535708483585)
 
 ## [2026-06-02] Sean Goedecke entity enrichment — "Build agents, not pipelines"
@@ -5779,6 +5804,32 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Created**: `raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md` — Lecture transcript for Part 3: Steering Lost Agents. Covers: harness design patterns, tool calling loops, carrots and sticks steering model, file system-like tools (ls/cat/grep) on Wayfair dataset, Ralph loop, validators/stoppers, LLM judge validation, relevance feedback, few-shot priming, query expansion/skills, tool guards (ToolState/disallowing repeated queries), sub-agent delegation, BEAM search for exhaustive exploration. NDCG results: BM25=0.541, agent+FS tools greater than BM25, +few-shot further improvement, +tool guards meaningful bump.
 - **Updated**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md` — Added cross-reference to lecture transcript (frontmatter + body).
 - **Updated**: `wiki/index.md` — Raw Transcripts section (2 to 3 pages), added Part 3 transcript entry.
+
+## [2026-06-03] Created | codex-knowledge-work.md concept page
+
+**Action**: Created new concept page `concepts/codex-knowledge-work.md` covering OpenAI's expansion of Codex from developer tool to knowledge-work platform.
+
+**Content**: Delegate/Collaborate modes, /goal persistent objectives, Goals vs Skills framework, Five Levels of Codex use, mobile steering via ChatGPT app, knowledge-work use cases (10 scenarios), security/safety considerations. 171 lines.
+
+**Source**: `raw/articles/2026-05-26_every_codex-knowledge-work.md` — Every guide by Katie Parrott (May 2026, paywalled).
+
+## [2026-06-03] Updated | entities/nvidia.md — SkillSpector + RTX Spark
+
+**Action**: Updated `entities/nvidia.md` with two new sections:
+- **NVIDIA SkillSpector** — Open-source AI agent skill inspection tool (define, validate, test agent skills). GitHub: nvidia/skillspector
+- **RTX Spark** — NVIDIA+Microsoft Windows PC AI agent platform with RTX acceleration, positioning Windows as a local agent runtime
+
+## [2026-06-03] Updated | entities/nathan-lambert.md — Ai2 departure
+
+**Action**: Updated `entities/nathan-lambert.md` with "Departure from Ai2 (June 2026)" section. Nathan Lambert departed Allen Institute for AI after ~3 years (Oct 2023–Jun 2026). Proud of OLMo work; will continue focusing on open ecosystem coordination.
+
+## [2026-06-03] Updated | entities/anthropic.md — IPO preparation (S-1 filing)
+
+**Action**: Updated `entities/anthropic.md` with "IPO Preparation (June 2026)" section. Anthropic filed a confidential draft S-1 registration statement with the SEC, following the $65B Series H at $965B valuation.
+
+## [2026-06-03] newsletter-wiki-ingest | Batch: 6 takes processed from 6 newsletters
+
+**Action**: Processed newsletter triage checkpoint (6 newsletters → 6 take, 5 reference, 6 skip). Created/updated 6 wiki pages from take items. Blog triage MAI models take was merged into the same microsoft-mai-models.md update.
 
 ## 2026-06-03 — Long Running Search dedup + reference fix
 

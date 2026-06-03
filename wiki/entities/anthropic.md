@@ -1,10 +1,10 @@
 ---
 title: Anthropic
 created: 2026-05-29
-updated: 2026-06-01
+updated: 2026-06-03
 type: entity
 tags: [company, lab, anthropic, ai-native, pricing, token-economics, vc, ai-safety, model]
-sources: [raw/articles/simonwillison.net--2026-may-29-anthropic--9831b607.md, raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md, raw/newsletters/2026-05-30-the-compute-to-cash-race.md, raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md, raw/articles/2026-05-28_anthropic-series-h-65b.md]
+sources: [raw/articles/simonwillison.net--2026-may-29-anthropic--9831b607.md, raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/newsletters/2026-05-29-ainews-anthropic-raises-965b-series-h-releases-opus-4-8-and-dynamic-workflows-ul.md, raw/newsletters/2026-05-30-the-compute-to-cash-race.md, raw/articles/simonwillison.net--2026-may-31-anthropic-run-rate--9dee9002.md, raw/articles/2026-05-28_anthropic-series-h-65b.md, https://www.anthropic.com/news/confidential-draft-s1-sec]
 ---
 
 # Anthropic
@@ -61,6 +61,15 @@ The strategy positions Anthropic as the most safety-conscious among frontier lab
 - Largest single funding round for an AI company
 - Run-rate revenue crossed $47B earlier that month
 - Revenue trajectory debated: Ed Zitron expressed skepticism; Simon Willison notes these numbers appear in fundraising announcements, making them subject to securities fraud liability if fabricated
+
+### IPO Preparation (June 2026)
+
+Anthropic took a formal step toward going public in June 2026:
+
+- **Filed a confidential draft S-1 registration statement** with the U.S. Securities and Exchange Commission (SEC)
+- This is a formal step toward an **Initial Public Offering (IPO)**
+- Follows Anthropic's **Series H** ($65B raised at $965B valuation)
+- Source: [Anthropic Blog — Confidential Draft S-1](https://www.anthropic.com/news/confidential-draft-s1-sec)
 
 ### Revenue Drivers
 - Enterprise adoption of Claude models

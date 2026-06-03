@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-05-27
+updated: 2026-06-03
 type: entity
 tags: [company, platform]
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
@@ -11,6 +11,7 @@ sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
   - https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china
   - raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md
   - raw/articles/substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f.md
+  - https://github.com/nvidia/skillspector
 ---
 
 # NVIDIA Corporation
@@ -125,6 +126,20 @@ NVIDIA released **NeMo Agent Toolkit v1.7.0** with notable new features:
 **Breaking changes**: OpenAI dependency migration 1.x→2.x; removed optuna, chain, openinference from core; removed nvidia-nat-vanna package.
 
 Source: raw/articles/2026-05-27_nemo-agent-toolkit-v1-7-0.md
+
+### NVIDIA SkillSpector
+
+NVIDIA released **SkillSpector**, an open-source tool for inspecting AI agent skills:
+- Open-source tool for **inspecting, defining, validating, and testing** AI agent skill definitions
+- Available at [https://github.com/nvidia/skillspector](https://github.com/nvidia/skillspector) (note: 'skillspector' in the GitHub repo name is intentional)
+- Allows developers to define schemas, validate skill implementations, and test agent skill definitions against expected behavior
+
+### RTX Spark (Windows PC AI Agent Platform)
+
+NVIDIA and **Microsoft** announced **RTX Spark**, a Windows PC AI agent platform:
+- Enables AI agents to run **locally on Windows PCs** with NVIDIA RTX acceleration
+- Essentially a **Windows-based local agent runtime** for AI agents
+- Brings local AI agent capabilities to the Windows ecosystem, leveraging RTX GPUs for inference
 
 ## Related
 

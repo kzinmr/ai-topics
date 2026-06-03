@@ -1,0 +1,138 @@
+{
+  "run_id": "20260603T071054Z",
+  "triaged_at": "2026-06-03T07:10:54Z",
+  "summary": "6 newsletters processed. 4 critical/high AI relevance, 1 low relevance (tech worker survey), 0 irrelevant. Key topics: Claude Opus 4.8 (Anthropic), AI2 organizational changes, GitHub agents strategy, Microsoft MAI model family announcement, BMW humanoid robotics deployment.",
+  "newsletters": [
+    {
+      "message_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>",
+      "subject": "Opus 4.8",
+      "date": "2026-06-02",
+      "source": "Ben's Bites (bensbites)",
+      "publication_id": "4379299",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "classification": "critical",
+      "wiki_topics": ["claude-opus-4.8", "anthropic", "llm-models", "claude-family"],
+      "rationale": "Anthropic Claude Opus 4.8 release — major model update from a leading frontier lab. Directly relevant to LLM entities and model comparison pages. Ben's Bites is a primary AI news source.",
+      "action": "ingest",
+      "readiness": "needs-url-resolution",
+      "notes": "All 20 links are opaque Substack redirect URLs. The primary article URL is the app-link post (publication_id=4379299, post_id=200251376). Links 8-20 are generic Substack redirect tracking links — likely embedded article references within the newsletter body. Requires web scraping to resolve actual article URLs and content."
+    },
+    {
+      "message_id": "<20260602141559.3.15b0ac4f1f3be4cd@mg-d1.substack.com>",
+      "subject": "Farewell Ai2",
+      "date": "2026-06-02",
+      "source": "Robotic (Nathan Lambert)",
+      "publication_id": "48206",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-farewell-ai2.md",
+      "classification": "critical",
+      "wiki_topics": ["ai2", "allen-institute-for-ai", "nathan-lambert", "ai-research-orgs"],
+      "rationale": "Nathan Lambert farewell post about AI2 (Allen Institute for AI) — significant organizational development in open-source AI research. Lambert is a key opinion leader in AI safety/alignment. Could affect existing AI2 entity page and spawn event page.",
+      "action": "ingest",
+      "readiness": "needs-url-resolution",
+      "notes": "Source is open.substack.com/pub/robotic/p/farewell-ai2. Links 11-20 are generic Substack tracking redirects (likely article references). Link 4 is @natolambert profile. Publication is Nathan Lambert's 'Robotic' newsletter on AI research and open-source AI."
+    },
+    {
+      "message_id": "<20260602154604.3.9a87cf4f7f662445@mg2.substack.com>",
+      "subject": "Announcing: The second annual tech worker sentiment survey",
+      "date": "2026-06-02",
+      "source": "Lenny's Newsletter",
+      "publication_id": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-announcing-the-second-annual-tech-worker-sentiment-survey.md",
+      "classification": "low",
+      "wiki_topics": ["tech-industry", "labor-market"],
+      "rationale": "Lenny's Newsletter (substack.com/@lenny) with co-author Noam Segal (substack.com/@noamsegal). Tech worker sentiment survey — tangential to AI industry but not directly about LLM/AI technology. Only 6 links, mostly tracking redirects.",
+      "action": "skip",
+      "readiness": "n/a",
+      "notes": "Not AI/LLM specific. Could be relevant for AI industry labor trends if part of a broader concept page, but not priority for wiki ingestion."
+    },
+    {
+      "message_id": "<20260602.164626.17f80328@mta11>",
+      "subject": "🤖 BMW Sends Humanoids to Work",
+      "date": "2026-06-02",
+      "source": "Beehiiv newsletter (unknown publisher)",
+      "publication_id": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-bmw-sends-humanoids-to-work.md",
+      "classification": "high",
+      "wiki_topics": ["humanoid-robots", "ai-robotics", "bmw", "embodied-ai"],
+      "rationale": "BMW deploying humanoid robots in manufacturing — significant real-world AI deployment. Relates to embodied AI and robotics concepts. All 20 links are Beehiiv tracking redirects — cannot determine actual content without resolution.",
+      "action": "ingest",
+      "readiness": "needs-url-resolution",
+      "notes": "All links are Beehiiv encrypted tracking URLs (link.mail.beehiiv.com). The source newsletter publisher is unknown — cannot determine from tracking URLs alone. Requires resolving the first link to identify the actual article and publisher."
+    },
+    {
+      "message_id": "<20260602164821.3.4fc1421eeaa2bf52@mg2.substack.com>",
+      "subject": "GitHub's plan for Agents — Kyle Daigle, GitHub",
+      "date": "2026-06-02",
+      "source": "swyx (The AI Engineer Newsletter)",
+      "publication_id": "1084089",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-github-s-plan-for-agents-kyle-daigle-github.md",
+      "classification": "critical",
+      "wiki_topics": ["github", "github-agents", "coding-agents", "ai-developer-tools", "kyle-daigle", "swyx"],
+      "rationale": "GitHub's agent strategy interview with Kyle Daigle (GitHub CTO/CPO-level) from swyx's newsletter. Directly core to wiki focus: AI coding agents, developer tooling, GitHub Copilot ecosystem. Source URL: open.substack.com/pub/swyx/p/github. Publication is swyx (Shawn Wang), a key AI engineering thought leader.",
+      "action": "ingest",
+      "readiness": "needs-url-resolution",
+      "notes": "swyx (publication_id=1084089) is both 'The AI Engineer Newsletter' and 'AINews'. Links 2-9 are all podcast audio player URLs for the same post (post_id=200249307) — this is a podcast episode with show notes. Links 16-20 are article reference redirects within the newsletter body."
+    },
+    {
+      "message_id": "<20260603054902.3.0c0077f4432a46be@mg2.substack.com>",
+      "subject": "[AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models",
+      "date": "2026-06-03",
+      "source": "swyx (AINews)",
+      "publication_id": "1084089",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-03-ainews-microsoft-build-mai-thinking-1-and-mai-family-models.md",
+      "classification": "critical",
+      "wiki_topics": ["microsoft-mai", "mai-thinking-1", "microsoft-build-2026", "microsoft-ai", "llm-models"],
+      "rationale": "Microsoft Build conference announcement of MAI-Thinking-1 and MAI model family — major new entrant in frontier LLM space. Directly impacts model entities, comparison pages, and Microsoft/OpenAI ecosystem pages. Fresh (2026-06-03) and high signal from AINews.",
+      "action": "ingest",
+      "readiness": "needs-url-resolution",
+      "notes": "Source URL: open.substack.com/pub/swyx/p/ainews-microsoft-build-mai-thinking. Links 8-20 are all generic Substack redirect tracking links — likely the actual article links embedded in the newsletter body referencing Microsoft Build coverage, MAI model details, benchmark results, etc."
+    }
+  ],
+  "ingestion_queue": [
+    {
+      "priority": 1,
+      "subject": "[AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models",
+      "reason": "Breaking news (today), new frontier model family from Microsoft. Create entity page + event page.",
+      "target_pages": ["entities/microsoft.md (update)", "entities/mai-thinking-1.md (new)", "events/microsoft-build-2026.md (new)"]
+    },
+    {
+      "priority": 2,
+      "subject": "GitHub's plan for Agents — Kyle Daigle, GitHub",
+      "reason": "Directly core wiki topic (AI coding agents, GitHub). Podcast with show notes — rich content expected.",
+      "target_pages": ["entities/github.md (update)", "entities/kyle-daigle.md (new)", "concepts/coding-agents.md (update)"]
+    },
+    {
+      "priority": 3,
+      "subject": "Opus 4.8",
+      "reason": "Major model update from Anthropic. Update Claude entity and model comparisons.",
+      "target_pages": ["entities/anthropic.md (update)", "concepts/claude-model-family.md (update)"]
+    },
+    {
+      "priority": 4,
+      "subject": "Farewell Ai2",
+      "reason": "Significant organizational news from a key open-source AI research lab. Opinion leader content from Nathan Lambert.",
+      "target_pages": ["entities/allen-institute-for-ai.md (update)", "entities/nathan-lambert.md (update)"]
+    },
+    {
+      "priority": 5,
+      "subject": "BMW Sends Humanoids to Work",
+      "reason": "Real-world AI deployment in manufacturing robotics. Relevant to embodied AI concepts.",
+      "target_pages": ["concepts/humanoid-robots.md (new or update)"]
+    }
+  ],
+  "stats": {
+    "total_newsletters": 6,
+    "critical": 3,
+    "high": 1,
+    "low": 1,
+    "irrelevant": 0,
+    "needs_url_resolution": 4,
+    "actionable_now": 0,
+    "total_links": 106,
+    "unique_articles_estimated": 15
+  },
+  "blockers": [
+    "All 6 newsletters contain only opaque redirect URLs (Substack app-link/redirect and Beehiiv encrypted tracking). Cannot determine actual article URLs or scrape content without resolving these redirects first.",
+    "The triage-next step (newsletter-wiki-ingest) will need to resolve the primary article URL for each high-priority newsletter before wiki pages can be created/updated."
+  ]
+}

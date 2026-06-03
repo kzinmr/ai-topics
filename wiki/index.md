@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-02 | Total pages: 2334 | Indexed entries: 1655 | Not in index: 679
+> Last updated: 2026-06-03 | Total pages: 2336 | Indexed entries: 1657 | Not in index: 679
 
 ## Entities (750 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -436,7 +436,7 @@
 - [[entities/mustafa-suleyman]] — **Role** | CEO, Microsoft AI; Co-founder, DeepMind; Co-founder, Inflection AI |
 - [[entities/nader-dabit]] — **Role** | Growth Engineer at Cognition AI (Feb 2026 – Present) |
 - [[entities/nathan-flurry]] — Co-founder & CTO of Rivet (rivet.dev). Built Sandbox Agent SDK (universal coding agent API), reverse-engineered Docker Sandbox MicroVM. Focus: agent infrastructure, sandboxing.
-- [[entities/nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and **Post-Training Lead** at the **Allen Institute for AI (AI2)**. He previously worked at **HuggingFace** as a Research Scientist and RLHF Team Lead ...
+- [[entities/nathan-lambert]] — Nathan Lambert, formerly Senior Research Scientist and Post-Training Lead at Allen Institute for AI (Ai2, Oct 2023–Jun 2026), departed in June 2026. Author of Interconnects newsletter and RLHF Book. OLMo lead. Now working on open ecosystem coordination.
 - [[entities/neel-nanda]] — **Website** | neelnanda.io | Mechanistic Interpretability researcher. MI Glossary, Quickstart Guide, Favourite Papers — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/nemotron-cascade-2]] — NVIDIA's open-weight 30B MoE (3B active). Gold medal at IMO/IOI/ICPC 2025 via Cascade RL + Multi-Domain On-Policy Distillation. 24GB VRAM, 256K context, thinking/non-thinking modes, structured tool calling.
 - [[entities/nemo-agent-toolkit]] — NVIDIA NeMo Agent Toolkit — Open-source multi-agent orchestration library (2K stars). v1.7.0: ATOF observability format, Exa Search API, OCI LangChain, token streaming.
@@ -1095,6 +1095,7 @@
 - [[concepts/codex-app-server]] — Codex App Server — JSON-RPC 2.0 protocol for embedding Codex in products. Thread/Turn/Item primitives, stdio/WebSocket/Unix socket transports, streaming event model. Open-source in openai/codex.
 - [[concepts/codex-goal]] — Codex /goal Command — OpenAI's built-in Ralph loop (Codex CLI v0.128.0). Goals vs Skills distinction, "three prompts" heuristic from Every guide. Persisted goal with runtime continuation, model-side audit, TUI controls. Turns Codex into hours-long autonomous agent.- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
 - [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting
+- [[concepts/codex-knowledge-work]] — Codex for Knowledge Work — OpenAI's expansion of Codex from software development to general knowledge workers. Delegate/Collaborate modes, /goal persistent objectives, Goals vs Skills framework, Five Levels of Codex use, mobile steering via ChatGPT app, security/safety. Source: Every guide by Katie Parrott (May 2026).
 - [[concepts/codex-prompting]] — Prompt design patterns for Codex. Bias for Action, meta-prompting, standard system prompt structure, anti-patterns. Based on official OpenAI Cookbook guidance.
 - [[concepts/codex-safety-at-openai]] — Codex Safety at OpenAI
 - [[concepts/coding-agents]] — Coding Agents
@@ -1264,6 +1265,7 @@
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer) — Anthropic's show_widget system for rendering interactive HTML widgets inline in claude.ai. Progressive disclosure pattern (read_me), streaming DOM injection, design guidelines. Recreated for terminal agents using Glimpse + morphdom.
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
+- [[concepts/github-copilot-agent-platform]] — GitHub's evolution from Copilot code completion to agent platform. AI-generated PRs (Waymo analogy), Windows sandboxing for agents, WorkIQ scaling, Spark low-code platform. Microsoft Build 2026.
 - [[concepts/gguf-quantization]] — GGUF Quantization
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/glut-of-circuits]] — niplav's (2026) GLUT-of-Circuits model: LLMs are giant lookup-table-like collections of depth-limited, composable error-correcting circuits computed in superposition. Implications for the Agent structure problem, AI alignment, token bottlenecks, and CoT.
@@ -1372,7 +1374,7 @@
 - [[concepts/meta-meta-prompting]] — Meta-Meta-Prompting — AI agent design philosophy proposed by Garry Tan. Rather than writing prompts directly for AI, build a skill system + knowledge graph so the entire system grows compoundingly. Core thesis: "Fat Skills, Fat Code, Thin Harness". Skillify (auto-skill-ification), Book Mirror process, personal AI OS with 100+ skills + ~100K pages.
 - [[concepts/metadata-retrieval]] — Metadata Retrieval — 3rd retrieval paradigm alongside lexical and embedding search. Structured attribute matching with explainable, testable ranking rules. Doug Turnbull's "Cheat at Search" framework enabled by LLM-powered query understanding.
 - [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
-- [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr 2026): MAI-Transcribe-1 (speech-to-text, 1/2 GPU cost), MAI-Voice-1 (voice gen), MAI-Image-2 (top-3 Arena). Strategic independence from OpenAI partnership under Mustafa Suleyman.
+- [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr/May 2026 → Jun 2026 Build): MAI-Thinking-1 (1T param reasoning, 35B active, zero distillation), MAI-Code-1-Flash (137B code model, 5B active), MAI-Image-2, MAI-Transcribe-1, MAI-Voice-1 + updates. Windows as agent runtime, GitHub Copilot app, Web IQ.
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA) — Sub-quadratic attention for MiniMax M3 model. Block-level selection on real KVs, 9.7× faster prefilling, 15.6× faster decoding at 1M tokens vs full attention. May 2026.
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source — Critical analysis of how "open source" is defined and measured in AI/ML.

@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-27
+updated: 2026-06-03
 type: entity
 aliases:
   - natolambert
@@ -148,6 +148,17 @@ Published a comprehensive AI landscape analysis covering the state of the indust
 - **American open models gaining momentum**: Nvidia Nemotron and Google Gemma 4 under Apache 2.0 are outperforming Qwen in key benchmarks, shifting the open-model center of gravity
 - **Anthropic vs OpenAI intensifies**: Both companies are just hitting their stride; competition is accelerating rather than consolidating
 - **Power structures asserting control**: Existing institutions (governments, large corporations) are increasingly shaping AI development through regulation, compute allocation, and partnership strategies
+
+### Departure from Ai2 (June 2026)
+
+Nathan Lambert **departed the Allen Institute for AI (Ai2)** in June 2026, marking a significant transition in his career. Key details:
+
+- His **last day** was in June 2026
+- He joined Ai2 as "an accident" — meeting Luca at **ICML 2023** led to his role
+- Proudest achievement: the **OLMo work** — leading post-training for the fully open LLM family
+- Will **continue in this space**, focusing on making the open ecosystem better coordinated
+- Reflects on the various paths to AI impact **beyond frontier performance**
+- His departure marks the end of a ~3-year tenure at Ai2 (Oct 2023 – June 2026)
 
 ## Core Ideas
 

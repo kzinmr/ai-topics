@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-06-03T07:24:01.144677+00:00",
+  "triage_run_id": "20260603T071054Z",
+  "source": "newsletter",
+  "summary_ja": "6つのニュースレターをトリアージ。Opus 4.8 (bensbites)からClaude Opus 4.8、Anthropic S-1ドラフト、OpenAI Codex for Knowledge Work、NVIDIA SkillSpectorなど重要なAI記事を発見。Nathan LambertのAi2退任、Microsoft Buildの7つの新MAIモデル（MAI-Thinking-1含む）、GitHub Copilotエージェント計画をカバー。Lenny's Podcastのサーベイ(Robotics話題)はノイズのためスキップ。SuperintelニュースレターはCloudflareブロック。",
+  "decisions": [
+    {
+      "item_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Opus 4.8 (bensbites)",
+      "title": "NVIDIA + Microsoft RTX Spark for Windows PCs with AI Agents",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ NVIDIAとMicrosoftがWindows PC向けRTX Sparkを発表。既存のconcepts/dgx-spark-local-llm-server.mdはDGX Spark（ローカルLLMサーバー）をカバー。RTX Sparkは別製品（Windows PC上のAI Agent向けプラットフォーム）。entities/nvidia.mdへの追記候補だが、製品詳細が不足しておりReference相当。",
+      "candidate_wiki_path": "entities/nvidia.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** Opus 4.8\n**Collected:** 2026-06-03T07:10:45.684907+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI"
+    },
+    {
+      "item_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Opus 4.8 (bensbites)",
+      "title": "Figma Make on local code",
+      "url": "https://www.figma.com/blog/figma-make-now-on-your-local-code/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Figma Makeがローカルコード対応。entities/figma.mdは存在するがMake機能の詳細は未カバー。軽微な機能アップデート。Referenceとしてentities/figma.mdへの追記候補。",
+      "candidate_wiki_path": "entities/figma.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** Opus 4.8\n**Collected:** 2026-06-03T07:10:45.684907+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI"
+    },
+    {
+      "item_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Opus 4.8 (bensbites)",
+      "title": "Replit Canvas — collaborative coding environment",
+      "url": "https://docs.replit.com/learn/projects-and-artifacts/canvas",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Replit Canvas新機能。entities/replit.mdは存在確認要。開発者向けコラボレーション機能の拡張。軽微なReference。",
+      "candidate_wiki_path": "entities/replit.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** Opus 4.8\n**Collected:** 2026-06-03T07:10:45.684907+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI"
+    },
+    {
+      "item_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Opus 4.8 (bensbites)",
+      "title": "Sierra MuBench — Agent Evaluation Benchmark",
+      "url": "https://research.sierra.ai/mubench/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ SierraのMuBenchエージェント評価ベンチマーク。entities/sierra.mdは既に8回のbenchmark関連言及あり。カバレッジ確認し不足があれば追記。",
+      "candidate_wiki_path": "entities/sierra.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** Opus 4.8\n**Collected:** 2026-06-03T07:10:45.684907+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI"
+    },
+    {
+      "item_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Opus 4.8 (bensbites)",
+      "title": "Artificial Analysis — Speech-to-Text Benchmark Comparison",
+      "url": "https://artificialanalysis.ai/speech-to-text/non-streaming",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Artificial Analysisの音声認識ベンチマーク比較。Evalエコシステムの参考情報。概念ページへの軽微な追記候補。",
+      "candidate_wiki_path": "concepts/speech-to-text-benchmarks.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** Opus 4.8\n**Collected:** 2026-06-03T07:10:45.684907+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI"
+    },
+    {
+      "item_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Opus 4.8 (bensbites)",
+      "title": "Surface Laptop Ultra — Made for World Makers",
+      "url": "https://blogs.windows.com/devices/2026/05/31/introducing-surface-laptop-ultra-made-for-world-makers/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Surface Laptop Ultraのハードウェア発表。一般消費者向けデバイス。LLM/AI Agentトピックに非該当のためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** Opus 4.8\n**Collected:** 2026-06-03T07:10:45.684907+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI"
+    },
+    {
+      "item_id": "<20260602132905.3.1abfa069cb8d6fed@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Opus 4.8 (bensbites)",
+      "title": "Stacker AI Accelerator (sponsored)",
+      "url": "https://stacker.ai/ai-accelerator",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-opus-4-8.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Stacker AIアクセラレーター（スポンサーコンテンツ）。低価値のためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** Opus 4.8\n**Collected:** 2026-06-03T07:10:45.684907+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI"
+    },
+    {
+      "item_id": "<20260602.164626.17f80328@mta11>-1",
+      "source": "newsletter",
+      "source_name": "🤖 BMW Sends Humanoids to Work (Superintel/beehiiv)",
+      "title": "BMW Humanoids / Robotics (Cloudflare blocked)",
+      "url": "https://link.mail.beehiiv.com/v1/c/NA4t3N0uOYrMBaK9Onni1B4ZVWSQLi%2B9J2rMEyQYpCq2A7Kj0b%2Bmbv1SPCO7",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-bmw-sends-humanoids-to-work.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ BMW人型ロボット導入の一般技術ニュース。Cloudflareチャレンジにより全リンクブロック（'Just a moment...'）。件名から判断して産業用ロボティクス話題でありLLM/AI Agentの優先トピックに非該当。スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** 🤖 BMW Sends Humanoids to Work\n**Collected:** 2026-06-03T07:10:50.435133+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/NA4t3N0uOYrMBaK9Onni1B4ZVWSQLi%2B9J2rMEyQYpCq2A7Kj0b%2Bmbv1SPCO7%0AaFsE448zO8KD3j73F2t32O6NhUQw"
+    },
+    {
+      "item_id": "<20260602164821.3.4fc1421eeaa2bf52@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "GitHub's plan for Agents — Kyle Daigle (Latent Space)",
+      "title": "Links 1-9, 11-15: Audio UI, Like/Comment/Share noise, OAuth redirects",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=200249307",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-02-github-s-plan-for-agents-kyle-daigle-github.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Latent SpaceポッドキャストのプレイヤーUI要素（play_card, play_button, progress_bar, duration, show_logo, show_title, post_title）、Like/Share/Commentボタン、OAuthリダイレクト。コンテンツ価値ゼロのためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-02\n**Subject:** GitHub's plan for Agents — Kyle Daigle, GitHub\n**Collected:** 2026-06-03T07:10:52.100515+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0b"
+    }
+  ]
+}
