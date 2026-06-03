@@ -1,6 +1,19 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 Ingest MAI-Thinking-1 Tech Report PDF (109 pages)
+
+**Action**: Downloaded and extracted full text from the 109-page MAI-Thinking-1 technical report PDF. Updated concept page with comprehensive details from the paper.
+
+**Created**:
+- `raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md` — Full extracted text (372K chars, 109 pages)
+
+**Updated**:
+- `concepts/mai-thinking-1-tech-report.md` — Major expansion: model specs table (962B/34.7B), architecture family scaling ladder (L12-L78), attention details (5+1 local/global, NoPE, FA4), LatentMoE design, modified GRPO with adaptive entropy control equations, reward decomposition, two-stage pass-rate filtering, benchmark results tables (STEM/general/human evals), training infrastructure (8K GB200, 90% goodput, MAIA-200)
+- `concepts/microsoft-mai-models.md` — Added benchmark numbers and infrastructure details to MAI-Thinking-1 section
+
+**Source**: https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf
+
 ## 2026-06-03 Ingest Elie Bakouch MAI Tech Report Megathread (X Thread #2061965825037254947)
 
 **Action**: Ingested 47-tweet X megathread by @eliebakouch analyzing the Microsoft MAI-Thinking-1 tech report. Created new concept page, updated entity page.
