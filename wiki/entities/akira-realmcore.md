@@ -1,96 +1,191 @@
 ---
+
+## Related Entities
+
+- [[entities/scott-wu]]
 title: "Akira (@realmcore_) / Random Labs"
 type: entity
+handle: "@realmcore_"
+name: Akira (Random Labs)
 created: 2026-04-13
-updated: 2026-05-25
+updated: 2026-06-03
+status: complete
 tags:
   - person
   - coding-agents
   - rlm
-  - multi-agent
-  - startup
-  - ycombinator
-aliases:
-  - realmcore_
-  - Random Labs
-  - Akira (Random Labs)
-sources:
-  - https://www.ycombinator.com/companies/random-labs
-  - https://randomlabs.ai/about
-  - https://venturebeat.com/orchestration/y-combinator-backed-random-labs-launches-slate-v1-claiming-the-first-swarm
-  - https://xarticl.es/articles/we-built-rlm-for-coding-and-it-fcking-rocks-swarm-native-agents-are-here-to-stay
+sources: []
 ---
+
 
 # Akira (@realmcore_) — Random Labs / Slate
 
-**Akira** (@realmcore_) is a co-founder of **Random Labs** (YC S24), creators of **Slate** — the industry's first "swarm-native" autonomous coding agent. Slate uses a novel **Thread Weaving** architecture for parallel, long-horizon engineering tasks.
+| | |
+|---|---|
+| **X** | [@realmcore_](https://x.com/realmcore_) |
+| **GitHub** | [github.com/random-labs](https://github.com/random-labs) |
+| **Blog** | [randomlabs.ai/blog](https://randomlabs.ai/blog) |
+| **Company** | Random Labs (YC S24, founded 2024 by Kiran & Mihir Chintawar) |
+| **Known for** | Slate: Thread Weaving, Episodic Memory, Swarm Orchestration, Skill Chaining |
+| **Bio** | Random LabsのAIエンジニアリングチーム。Slateの開発をリード。「RLM for coding」を提唱し、ReActとRLMを超える第3のアーキテクチャを構築。 |
 
 ## Overview
 
-Akira is part of the founding team at Random Labs, a Y Combinator-backed (S24) startup based in San Francisco that builds AI coding agents for long-running, complex engineering tasks. Random Labs was founded in 2024 and is building Slate as an open-source-first coding agent designed to work alongside developers for hours on hard problems.
+Akira (@realmcore_) は Random Labs のAIエンジニアリングチームの中心的な声。同社は2024年設立、YC S24バッチのスタートアップで、創設者は **Kiran** と **Mihir Chintawar**。
 
-The company's mission is to create general software agents and interfaces that allow engineers to maximally leverage them, bridging the global engineering shortage by positioning Slate as a collaborative tool for the "next 20 million engineers."
+Random Labsは「ソフトウェア開発の次の2000万人のエンジニアをオンラインにする」ことをミッションとし、Slateをそのためのプラットフォームとして開発している。
 
-## Slate: Swarm-Native Coding Agent
+## Core Ideas
 
-Slate was launched in open beta in early 2026, with V1 released in March 2026. It is described as the first "swarm-native" agentic coding platform — orchestrating multiple specialized AI models in parallel rather than running a single agent sequentially.
+### 1. Thread Weaving — エピソード記憶を持つSwarmアーキテクチャ
 
-### Key Architectural Innovations
+Slateの核心は**Thread Weaving**。OSのカーネルがプロセスを管理するように、LLMオーケストレーターがスレッドを管理する。
 
-**Thread Weaving**: Slate's core architecture runs a central orchestrator thread that dispatches parallel worker threads using a TypeScript-based DSL. Each worker handles a bounded sub-task (editing a file, running tests, researching documentation). Workers return compressed "episodes" (successful tool calls, conclusions) rather than full execution transcripts, while the orchestrator weaves these into a coherent task state.
+> "Instead of letting RAM fill until the process crashes, each thread return is a natural opportunity to decide what gets retained, what gets compressed, and what gets discarded."
 
-**Episodic Memory**: Slate retains only the tool calls that contribute to its success, using a rolling compression system that enabled single sessions as long as 2 days during V0 beta.
+**スレッド**: 一度に1アクションを実行する汎用作業員。永続的なサブエージェントとは異なり、スレッドは一時停止して制御をオーケストレーターに戻す。コンテキストは**共有・合成可能**で、メッセージパッシングによる隔離ではない。
 
-**Dynamic Pruning Algorithm**: Maintains context in large codebases while scaling output to enterprise complexity.
+**エピソード**: スレッドの完了したアクションシーケンスの圧縮表現。**真のエピソード記憶**として機能し、自然な圧縮境界となる。
 
-**Model-Agnostic Routing**: Dynamically routes tasks across Claude, Codex, GLM, and other models based on task type.
+**スレッド・ウィービング**: オーケストレーターがスレッドをディスパッチ → スレッド実行 → エピソード返却 → エピソードが後続スレッドの入力となる。静的な計画ではなく、**暗黙的で適応的なタスク分解**を可能にする。
 
-### Performance
+### 2. RLM for Coding — RLMの実践的適用と批判的改良
 
-- Internal testing: passed two-thirds of tests on Terminal Bench 2.0's `make-mips-interpreter` task (where Opus 4.6 succeeds <20% in standard harnesses)
-- Published case study: ported a Python library to TypeScript for ~$58 in credits
+Alex ZhangのRLM (Recursive Language Models) をコーディングエージェントに適用しつつ、その限界も認識している。
 
-### Key Philosophy
+> "We built RLM for coding. And it F*cking rocks. Swarm native agents are here to stay."
 
-> "The bottleneck in AI agents isn't intelligence. It's memory management." — Random Labs co-founder
+**RLMの限界認識**:
+- RLM: 「Blind N-step execution」— 中間フィードバックなしでフルシーケンスをコミット
+- Slate: Thread Weavingで**中間状態の保持**を実現
 
-The team's core insight: the differentiating factor in AI coding tools is shifting from model capabilities to **agent infrastructure** — memory management, context routing, execution environments, error recovery, and human-in-the-loop interfaces.
+**Random Labsの批判的立場** (Agent Wars 2026-03-13):
+> "Random Labs says coding agents are patching over a problem they should be solving... both paradigms [RLM and ReAct] treat context management as an afterthought. RLMs externalize data into a Python REPL and hand analysis off to sub-LLMs. ReAct agents interleave reasoning traces with action steps. Random Labs argues that neither was built for the multi-hour, multi-file sessions that real software engineering demands."
 
-## RLM (Reinforcement Learning for Models) Advocacy
+### 3. Three Foundational Problems
 
-Akira and the Random Labs team are strong advocates of **RLM for coding**, arguing that reinforcement learning directly applied to coding agents produces significantly better results than prompt engineering or fine-tuning alone. This positions Slate as a testbed for RL-based coding agent training.
+Random Labsが特定した現代のエージェントの3つの根本問題:
 
-## Related Entities
+| 問題 | 説明 | 洞察 |
+|---|---|---|
+| **Long-Horizon Tasks** | パス依存のタスク（例: 複数ファイルに跨る変更） | 動的ワーキングメモリ、戦略的計画、中間適応が必要 |
+| **Working Memory & "Dumb Zone"** | コンテキストウィンドウが埋まるにつれLLMの注意力が非一様に劣化 | 「右端のDumb Zone — ウィンドウが埋まるほど注意力の質が劣化」全てのフロンティアモデルが suffer |
+| **Strategy vs. Tactics** | 戦略 = オープンエンドな計画 vs 戦術 = 局所実行シーケンス | ソフトウェア工学はこのスペクトラム全体をカバー: `bashコマンド実行`(戦術) vs `後方互換性のあるスキーマ設計`(戦略) |
 
-- [[entities/scott-wu]] — Fellow coding agent builder (Devin/Cognition)
-- [[entities/pi]] — Another coding agent (pi-dev / Mario Zechner)
-- [[entities/openai-codex]] — Model used in Slate's multi-model orchestration
+### 4. Prior Approaches & Critical Failure Modes
 
-## Related Concepts
+| アプローチ | メカニズム | 致命的な失敗モード |
+|---|---|---|
+| **Compaction** | 定期的にコンテキストをドロップ/要約 | **Lossy & unpredictable.** クリティカルな状態をドロップするリスク (Claude Code, Ralph Wiggum loop, Amp handoffs) |
+| **Subagents** | コンテキストを別エージェントインスタンスに隔離 | **Poor cross-context transfer.** レスポンスメッセージのみ返却; 中間状態の共有に失敗 |
+| **Markdown Planning** | 構造化ファイルによる事前計画の強制 | **3つの失敗モード:** 仕様不足の計画、不完全な実行、適応/更新の失敗。「knowledge overhang」に制限 |
+| **Task Trees (Direct Decomposition)** | リジッドなゲート付きステップ実行グラフ | **低表現力 & 非柔軟。** 新しい情報に適応不可; 自然言語の柔軟性を構造的硬直性とトレード |
+| **RLM (Recursive LM)** | Python REPLでの反復的・再帰的実行 | **Blind N-step execution.** 中間フィードバックなし; モデルがフルシーケンスを事前にコミット |
+| **Multi-Agent (Devin/Manus/Altera/Codex)** | 戦略化 → 委任 → 圧縮 → 同期 | **同期のボトルネック。** Sync = 遅い; Async = 調整の問題。圧縮境界がクリティカルな状態をドロップ |
 
-- [[concepts/swarm-agents]] — Slate's foundational architecture concept
-- [[concepts/rlm]] — Reinforcement Learning for Models; core to Slate's approach
-- [[concepts/agent-memory]] — Episodic memory and compression in Slate
-- [[concepts/agent-orchestration]] — Thread Weaving as multi-agent orchestration pattern
-- [[concepts/coding-agents]] — Slate as a coding agent implementation
+### 5. Knowledge Overhang — 潜在知識の解放
 
-## Company: Random Labs
+> "The gap between what an LLM *knows* and what it *chooses* to do."
 
-| Detail | Value |
-|--------|-------|
-| **Founded** | 2024 |
-| **Accelerator** | Y Combinator S24 |
-| **Location** | San Francisco, CA |
-| **Product** | Slate (swarm-native coding agent) |
-| **Install** | `npm i -g @randomlabs/slate` |
-| **Website** | [randomlabs.ai](https://randomlabs.ai) |
-| **Contact** | team [@] randomlabs.ai |
+モデルが持つ潜在的な知能を、適切なコンテキスト管理とルーティングで引き出すアプローチ。Skillsは**プログレッシブ・ディスクロージャー**でアクティブ化/非アクティブ化され、限られたコンテキストスペース(200kトークン未満)を保護する。
+
+### 6. Skill Chaining — 動的スキル定義
+
+従来の「静的プロンプト」としてのスキル定義を批判:
+> "A skill should be something the agent does not something the agent reads."
+
+**Orchestration Skills**: ユーザーがアクティブ化するスキルが、他のスキルを参照して条件付きアクティベーションシーケンスを定義。プログラム的な自動化ワークフローを実現。
+
+**Context Forking**:
+- インタラクティブスキル → **Fork** (ブロッキング、UI乗っ取り)
+- 自律スキル → **Thread** (バックグラウンド実行、分離コンテキスト)
+
+⚠️ **Status**: As of April 1, 2026, forking is in **ALPHA** (信頼性確保のため延期)
+
+## Slate Architecture: OS Analogy (Karpathy's LLM OS Framing)
+
+| OS Component | Slate Equivalent |
+|---|---|
+| Kernel | Orchestration LLM |
+| RAM | Context Window (scarce, actively managed) |
+| Processes | Threads |
+| Return Values | Episodes (compressed state) |
+| Peripherals | Files, Terminal, Web, APIs |
+
+## Architecture Comparison
+
+| Aspect | ReAct | Markdown Plan | Task Trees | RLM | Multi-Agent (Devin/Codex) | **Slate** |
+|---|---|---|---|---|---|---|
+| **Planning** | Implicit | File-based | Explicit | REPL-driven | Planning Agent | **Implicit** |
+| **Decomposition** | None | None | Direct Tree | REPL Functions | Task-based | **Implicit** |
+| **Synchronization** | Single-thread | Single-thread | Gated Steps | REPL Return | Reduce/Message | **Episodes** |
+| **Context** | Lossy | Static | Rigid | REPL Externalized | Compressed | **Episodic** |
+| **Memory** | None | None | None | None | Lossy compaction | **True episodic** |
+
+## Key Work
+
+### Slate V1 (March 12, 2026)
+- **Terminal Bench**: make-mips-interpreter taskで2/3テスト合格 (変化する環境での安定性実証)
+- **実世界タスク**: オープンソースライブラリのTypeScript移植を$58.32で完了
+- **インストール**: `npm i -g @randomlabs/slate`
+- **Config**: `slate.json` でモデルスロット、権限、MCPサーバー、カスタムコマンドを定義
+
+### RLM for Coding
+- Alex ZhangのRLMアーキテクチャをコーディングエージェントに適用・改良
+- Thread WeavingでRLMの中間フィードバック欠如を解決
+
+### Skill Chaining (April 1, 2026)
+- スキルを動的にチェーンし、条件付き実行シーケンスを定義
+- Orchestration Skillsによる自動化ワークフロー
+- Context Forking (Alpha)
+
+## Connection to Harness Engineering & Agentic Engineering
+
+AkiraのSlateは[[concepts/harness-engineering]]の文脈で重要な位置を占める:
+
+1. **Slate as a Meta-Harness**: Slate自体が大規模なharness — モデル間のルーティング、コンテキスト管理、権限制御を統合
+2. **Thread Weaving as Harness Pattern**: 各スレッドが独立したharnessインスタンスとして機能し、エピソードで結果を合成
+3. **Skill Chaining as Dynamic Harness**: 静的なharness定義ではなく、条件付きでスキルをチェーンする動的アプローチ
+4. **Knowledge Overhang as Harness Insight**: 「モデルが知っていること」と「モデルが実際に使うこと」のギャップを埋めるのがharnessの役割
+
+> "Slate is not merely a wrapper or a chatbot with file access; it is an implementation of a 'hive mind' philosophy designed to scale agentic work with the complexity of a human organization."
+
+Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パラダイムの先駆的実装。DevinやCodexのような単一エージェントモデルから、複数モデルの並列協調への移行を体現している。
+
+## Related People
+
+| Person | Relationship | Wiki Link |
+|---|---|---|
+| [[concepts/kiran-random-labs]] | Random Labs co-founder | — |
+|  | Random Labs co-founder, CTO | — |
+| (@a1zhang) | RLM開発者。SlateはRLMを改良して適用 | [[entities/alex-zhang]] |
+| [[entities/andrej-karpathy]] | LLM OS concept — SlateのOSアナロジーの源流 | [[entities/andrej-karpathy]] |
+| [[entities/peter-steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[entities/peter-steinberger]] |
+| [[entities/nader-dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
+
+## Related
+
+- [[entities/steve-blank]] — Lean Startup methodologist; shared focus on agentic-engineering and harness-engineering patterns
+- [[entities/drmaciver]] — Hypothesis creator; PBT and AI evaluation methodology
+- [[entities/mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
+- [[entities/daniel-de-laney]] — Designer/PM; structured AI development critique
+
+## X Activity Themes
+
+| Theme | Content |
+|---|---|
+| **Thread Weaving** | Slateのアーキテクチャ解説、OS analogy、エピソード記憶 |
+| **RLM for Coding** | RLMの実践的適用と限界の認識 |
+| **Swarm Orchestration** | マルチモデル並列実行、hive mind哲学 |
+| **Knowledge Overhang** | モデルの潜在知識の解放、コンテキスト管理の重要性 |
+| **Skill Chaining** | 動的スキル定義、Orchestration Skills |
+| **Critique of Existing Agents** | ReAct/RLMの限界、コンテキスト管理の重要性 |
 
 ## Sources
 
-- [Y Combinator Profile: Random Labs](https://www.ycombinator.com/companies/random-labs)
-- [VentureBeat: Random Labs launches Slate V1](https://venturebeat.com/orchestration/y-combinator-backed-random-labs-launches-slate-v1-claiming-the-first-swarm)
-- [Xarticl.es: We built RLM for coding (by @realmcore_)](https://xarticl.es/articles/we-built-rlm-for-coding-and-it-fcking-rocks-swarm-native-agents-are-here-to-stay)
-- [Random Labs About](https://randomlabs.ai/about)
-- [FyI Combinator: Random Labs](https://fyicombinator.com/company/random-labs)
-- [Seedwire: Slate V1 Memory Analysis](https://seedwire.co/news/rando-labs-unleashes-slate-v1-the-dawn-of-swarm-native-coding-agents)
+- [Random Labs Blog: Slate](https://randomlabs.ai/blog/slate)
+- [Random Labs Blog: Skill Chaining](https://randomlabs.ai/blog/skill-chaining)
+- [Agent Wars: Moving Beyond RLM and ReAct](https://agent-wars.com/news/2026-03-13-moving-beyond-rlm-and-react-based-coding-agents)
+- [VentureBeat: YC-backed Random Labs launches Slate V1](https://venturebeat.com/orchestration/y-combinator-backed-random-labs-launches-slate-v1-claiming-the-first-swarm)
+- [Podcast: Slate: An Agent Architecture - Vinh Nguyen](https://www.youtube.com/watch?v=zTXWPdsiv9c)
+- [Slate Documentation](https://docs.randomlabs.ai/)
