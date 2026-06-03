@@ -1,6 +1,13 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 Codex Data Science Plugin Ingestion (X Post @zswang24)
+
+- **Raw article saved**: `raw/articles/2026-06-02_zswang24-codex-data-science-plugin.md` — Note Tweet from @zswang24 (Zhanshi Wang, OpenAI researcher) announcing Codex Data Science plugin launch. Quoted OpenAI's official announcement. 312 likes, 158 bookmarks.
+- **Entity created**: `entities/zhanshi-wang.md` — Zhanshi (Jason) Wang. OpenAI researcher & model improvement. Cofounded Roe (YC W24). Key perspectives on Codex Data Science plugin as "force multiplier" for DS workflows.
+- **Entity updated**: `entities/openai-codex.md` — Added "Data Science Plugin Launch (June 2026)" section covering: capabilities (exploring raw data, metric diagnosis, dashboards, reports), user feedback (100% satisfaction), significance as first dedicated domain plugin. Updated sources and date.
+- **index.md updated**: Added [[entities/zhanshi-wang]], updated [[entities/openai-codex]] entry with DS plugin launch.
+
 ## 2026-06-03 Retrieve, Merge, Predict: Table Augmentation Pipeline Ingestion
 
 - **Raw article saved**: `raw/articles/retrieve-merge-predict.md` — Project page extraction from soda-inria.github.io/retrieve-merge-predict/ + GitHub README + arXiv 2402.06282 abstract.

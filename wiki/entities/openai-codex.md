@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-05-27
+updated: 2026-06-02
 tags:
   - product
   - coding-agent
@@ -30,6 +30,7 @@ sources:
   - https://www.wsj.com/cio-journal/openai-is-working-with-consultants-to-sell-codex-f355b1b9
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/articles/2026-05-26_every_codex-knowledge-work.md
+  - raw/articles/2026-06-02_zswang24-codex-data-science-plugin.md
 ---
 
 # OpenAI Codex
@@ -127,6 +128,21 @@ Data science artifacts are not "queries" but **artifacts that someone can read, 
 **Workflow pattern**: Codex generates first draft → Human verifies, stress-tests caveats, refines recommendations. Codex **clearly separates confirmed facts from hypotheses**, and explicitly flags data quality issues and assumptions.
 
 **Supported plugins**: Google Drive, Spreadsheets, Slack, Gmail, Documents, Presentations
+
+### Data Science Plugin Launch (June 2026)
+
+On June 2, 2026, OpenAI officially launched a dedicated **Data Science plugin for Codex**, announced via [@OpenAI](https://x.com/OpenAI/status/2061887715520721151) and amplified by [[entities/zhanshi-wang]] (OpenAI researcher). The plugin is described as "built by data scientists for data scientists."
+
+**Core capabilities**: exploring raw data, diagnosing metric changes, building dashboards, writing reports, and producing stakeholder-ready insights faster.
+
+**User feedback** (internal/early access):
+- 100% of users said it speeds up the path from raw data to insight
+- 100% said it helps them take on more work than they otherwise could
+- Described as a **"force multiplier"** — accelerating 0→80% progress, enabling parallel multi-project work, improving final output quality
+
+**Significance**: This represents Codex's first dedicated domain plugin for analytics/DS workflows, moving beyond the earlier "Codex for Work" documentation (May 2026) into a concrete, installable tool. Aligns with the platform trajectory toward [[concepts/openai-codex-superapp]].
+
+**Blog post**: [Codex for Every Role, Tool & Workflow](https://openai.com/index/codex-for-every-role-tool-workflow/)
 
 ### For Business Operations Teams
 
