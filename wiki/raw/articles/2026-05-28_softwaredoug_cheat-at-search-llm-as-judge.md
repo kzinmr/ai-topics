@@ -1,7 +1,7 @@
 ---
 title: "Cheat at Search Part 4 — LLM as a Judge"
 author: Doug Turnbull (@softwaredoug)
-date: 2026-05-27
+date: 2026-05-28
 date_ingested: 2026-05-27
 source: https://docs.google.com/presentation/d/16hw0veoCQYKN8hPr8N4EGnXNfUOegGnvKzMpaGZjQjo/edit
 type: slides

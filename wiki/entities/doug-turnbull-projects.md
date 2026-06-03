@@ -45,7 +45,7 @@ Live, cohort-based training course on search engineering with LLMs and agents. R
 - Part 1: [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg|NDCG / Search Evaluation]] — graded relevance, DCG, NDCG, precision@k, MAP, MRR (see also [[concepts/ndcg]])
 - Part 2: [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search|LLM Query Understanding]] — structured attribute extraction from free-text queries
 - Part 3: [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents|Steering Lost Agents]] — agentic design patterns for search
-- Part 4: [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge|LLM as a Judge]] — automated search relevance evaluation with LLMs (see also [[concepts/llm-search-judge]])
+- Part 4: [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge|LLM as a Judge]] — automated search relevance evaluation with LLMs (see also [[concepts/llm-search-judge]])
 - Part 5: [[raw/articles/2026-06-02_softwaredoug_long-running-search-agents|Long Running Search Agents]] — persistent agent strategies, context compaction, frontier prompts
 
 ### Consulting & Training

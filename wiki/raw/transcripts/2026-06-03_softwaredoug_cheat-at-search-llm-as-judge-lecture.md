@@ -168,7 +168,7 @@ This transcript adds the following to the slides-based raw article:
 
 ## Related Raw Articles
 
-- [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge]] (slides — source material for this transcript)
+- [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge]] (slides — source material for this transcript)
 - [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg]] (Part 1)
 - [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]] (Part 2)
 - [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents]] (Part 3)
