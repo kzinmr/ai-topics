@@ -1,6 +1,21 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+
+## 2026-06-03 enriched | thariq-shihipar entity page (skeleton -> full profile)
+
+**Action**: Enriched [[entities/thariq-shihipar]] from `status: skeleton` to full profile via multi-source research. Read 16 raw articles from thariq.io blog and X Articles. Compiled biographical details (YC W20, MIT Media Lab, South Park Commons), all key contributions (Dynamic Workflows, HTML-first output, Skills system, Interpretability, Entropix explainer, Computer Use, Playgrounds, TrueSkill sorting), philosophical writing dimension, and Lenny's Podcast appearance. Added 15 blog entries timeline table, Graph Structure Query section, and extensive cross-references to 8 concept pages and 6 entity pages.
+
+**Created**:
+- (none -- enriched existing page)
+
+**Updated**:
+- entities/thariq-shihipar.md -- 36 lines -> 173 lines (13.8KB). Removed `status: skeleton`. Added complete background, 10 contribution sections, blog timeline, writing style analysis, cross-references to 8 concepts + 6 entities, graph structure query, 16 raw article sources.
+- wiki/index.md -- Updated entry with richer description
+- entities/_index.md -- Fixed truncated description
+
+**Sources**: 16 raw articles including 2026-06-02 dynamic workflows, 2026-05-08 HTML effectiveness, 2026-03-17 Skills, 2026-01-29 Playgrounds, interpretability, Entropix, Computer Use, TrueSkill sorting, and 7 philosophical essays.
+
 ## 2026-06-03 Ingest Branch-Aware Search Pattern (Qdrant + Neon + turbopuffer)
 
 **Action**: Ingested branch-aware search concept from Andre Zayarni's LinkedIn post + Qdrant tutorial + Neon database branching docs + turbopuffer namespace branching docs. Created 3 new pages + 1 raw article, then expanded with turbopuffer comparison.
@@ -6032,3 +6047,8 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **updated** raw/articles/2026-06-02_mixedbread_latent-terms-dense-retrievers.md — added Ben Clavié X thread commentary on IR research culture ("LLM moment" for retrieval)
 - **updated** concepts/latent-terms.md — added Research Culture Commentary section + X sources
 - **updated** entities/benjamin-clavie.md — expanded Latent Terms section with X thread, added key quotes and X sources
+- 2026-06-03: Created [[concepts/asynchronous-rl]] — Survey of async RL for LLM post-training, policy lag, IS estimators, stabilization methods. Source: Luke J. Huang blog (May 2026).
+- 2026-06-03: Created [[entities/luke-j-huang]] — AI researcher, author of "Is Frontier Asynchronous RL Solved?" survey.
+- 2026-06-03: Added raw article `raw/articles/2026-05-31_lukhuang_frontier-asynchronous-rl-solved.md`.
+- 2026-06-03: Added tags to SCHEMA.md: async-rl, importance-sampling, policy-lag, off-policy, self-distillation.
+- 2026-06-03: Updated index.md — added 2 entries (1 entity, 1 concept), bumped counts.

@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 2350 | Indexed entries: 1710 | Concepts: 1556 | Entities: 757
+> Last updated: 2026-06-03 | Total pages: 2352 | Indexed entries: 1712 | Concepts: 1557 | Entities: 758
 
-## Entities (757 pages)
+## Entities (758 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -65,6 +65,7 @@
 - [[entities/lucas-atkins]] — Arcee AI CTO. Muon optimizer advocate, led Trinity Large (400B/13B MoE) training on 22,048 B300 GPUs.
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
+- [[entities/luke-j-huang]] — Luke J. Huang — AI researcher focused on RL for LLM post-training. Author of "Is Frontier Asynchronous RL Solved?" (May 2026) surveying async RL across frontier labs. Proposes low-bias compute scaling hypothesis.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
 - [[entities/machina]] — Machina (@EXM7777) — AI practitioner and writer, runs AI-powered agencies. Author of "How To Fix AI Slop (Using Hermes)" — 6-move eval loop implementation using Hermes Agent primitives.
 - [[entities/mistral-ai]] — French AI company, sovereign AI positioning, European lab. Medium 3.5 (128B dense, May 2026), Vibe remote agents, Work mode in Le Chat.
@@ -574,7 +575,7 @@
 - [[entities/tencent-hy3]] — Tencent Hy3 Preview — 295B/21B active MoE model, open-source. 256K context, 40% inference efficiency gain. Powers Yuanbao, CodeBuddy. OpenRouter access. Topped OpenRouter rankings (May 2026) — mysterious popularity despite minimal community discussion. Effective pricing analysis vs DeepSeek V4 Flash cache advantage.
 - [[entities/teortaxestex]] — **X/Twitter** | @teortaxesTex |
 - [[entities/terrible-software]] — **URL:** https://terriblesoftware.org
-- [[entities/thariq-shihipar]] — **X** | @trq212 |
+- [[entities/thariq-shihipar]] — Thariq Shihipar (@trq212) — MTS at Anthropic on Claude Code. Co-authored dynamic workflows & HTML-first output. Founder YC W20, MIT Media Lab. 15+ blog essays on AI interpretability, Skills, agent design, and philosophy.
 - [[entities/trq212]] — Thariq Shihipar (@trq212) — MTS at Anthropic on Claude Code. Advocates HTML as the superior output format for AI agent-generated content (5 reasons: information density, visual clarity, sharing, interactivity, data ingestion). See also [[entities/thariq-shihipar|full profile]].
 - [[entities/the-harness-blog]] — Working notebook on harness engineering and agentic AI for AEC. 25 posts across 6 topics by [[entities/theodoros-galanos|Theodoros Galanos]].
 - [[entities/the-old-new-thing]] — **URL:** https://devblogs.microsoft.com/oldnewthing/
@@ -769,7 +770,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1556 pages)
+## Concepts (1557 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1009,6 +1010,7 @@
 - [[concepts/artificial-contributors-open-source]] — RFC draft (Andrew Nesbitt, May 2026): Defines disclosure, quality, and code of conduct for AI OSS contributions. ACs must not impersonate humans, must run tests, and should understand maintainer sarcasm.
 - [[concepts/ask-user-question-pattern]] — Harness pattern for agents to ask users for confirmation
 - [[concepts/assembly-optimization]] — Assembly Optimization
+- [[concepts/asynchronous-rl]] — Asynchronous RL for LLM Post-Training — Decouples rollout and training for 2-3× throughput. Policy lag creates off-policy instability via IS ratio extremes. Sequence-level IS scales with compute; token-level IS is structurally inconsistent. All major open-weight labs (GLM-5, DeepSeek V3.2, Minimax M2.5, Qwen 3.5, Intellect-3) adopt async RL with proprietary stabilization methods.
 - [[concepts/attention-mechanism-variants]] — Attention Mechanism Variants in Modern LLMs
 - [[concepts/attractor-models]] — Attractor Models — Two-stage architecture: backbone proposes embeddings, attractor solves fixed-point equilibrium. 46.6% perplexity reduction, O(1) training memory. Equilibrium internalization lets solver be removed at inference.
 - [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
