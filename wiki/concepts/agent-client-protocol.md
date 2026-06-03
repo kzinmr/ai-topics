@@ -1,11 +1,11 @@
 ---
 title: "Agent Client Protocol (ACP)"
 type: concept
-created: 2026-06-03
+created: 2026-04-30
 updated: 2026-06-03
 tags:
   - protocol
-  - agent-architecture
+  - mcp
   - coding-agents
   - acp
   - agent-communication
@@ -16,22 +16,32 @@ aliases:
 related:
   - concepts/agent-communication-protocols
   - concepts/codex-app-server
+  - concepts/mcp
   - comparisons/codex-app-server-vs-agent-protocols
   - comparisons/harness-backend-routing
+  - comparisons/hermes-vs-openclaw-architecture
   - entities/devin
 sources:
+  - https://www.philschmid.de/acp-overview
   - https://agentclientprotocol.com/get-started/introduction
   - https://docs.devin.ai/desktop/acp
   - https://docs.devin.ai/desktop/acp/building-a-custom-acp-agent
+  - raw/articles/2026-02-01_philschmid_acp-overview.md
   - raw/articles/2026-06-03_devin-desktop-windsurf-rebrand-acp-agent-neutral.md
   - raw/articles/2026-05-27_openai-codex-app-server.md
 ---
 
 # Agent Client Protocol (ACP)
 
-The **Agent Client Protocol (ACP)** is an open standard protocol that defines how AI coding agents communicate with host environments (editors, IDEs, CLIs). It enables **agent-neutral harness swapping** — the ability to seamlessly switch between different AI agents while preserving context, conversation history, and workspace state.
+## Summary
+
+The **Agent Client Protocol (ACP)** is an open standard (JSON-RPC 2.0) that provides a common interface for editors/IDEs to interact with AI coding agents. It abstracts agent-specific events and outputs, enabling any ACP-compliant editor (Zed, JetBrains, Obsidian) to communicate with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, Goose, Codex CLI).
 
 ACP is to AI agents what **LSP (Language Server Protocol)** is to code editors — a standardized protocol that decouples the agent implementation from the host environment.
+
+**Key distinction:** ACP governs **agent-to-client (UI)** communication, whereas [[concepts/mcp]] governs **agent-to-tool** communication. They are complementary protocols serving different layers of the agent stack.
+
+> **⚠️ Naming conflict:** "ACP" also refers to the former **Agent Communication Protocol** (IBM/I Am Bee), which **merged into A2A** under the Linux Foundation in August 2025. This page covers **Agent Client Protocol** only. For the merged A2A standard, see [[concepts/agent-communication-protocols]].
 
 ---
 
@@ -44,50 +54,106 @@ ACP is to AI agents what **LSP (Language Server Protocol)** is to code editors �
 
 ---
 
-## Protocol Specification
+## Protocol Architecture
 
-### Transport
+ACP follows a simple two-role model:
 
-ACP uses **JSON-RPC 2.0 over stdio** (standard input/output) as the default transport. The host process spawns the agent as a subprocess and communicates via stdin/stdout.
+1. **Clients** (editors like Zed, JetBrains, Obsidian) — manage the user environment, display progress, and collect user input
+2. **Agents** (Claude Code, Gemini CLI, OpenClaw/Clawdbot) — handle thinking, reasoning, and tool execution
+3. **Transport** — communication over **stdio** (agent runs as subprocess) or **HTTP** (remote agents)
 
-### Core Methods
+### Protocol Lifecycle
 
-| Method | Description |
-|---|---|
-| `session/new` | Create a new agent session with initial context |
-| `session/prompt` | Send a user message to the agent |
-| `session/update` | Stream agent responses (text, tool calls, state changes) |
-| `acp/permission_response` | Respond to agent permission requests |
-
-### Notifications (Agent → Host)
-
-| Notification | Description |
-|---|---|
-| `acp/message` | Agent sends a conversational message |
-| `acp/tool_use` | Agent is invoking a tool (command execution, file edit, etc.) |
-| `acp/tool_result` | Result of a tool invocation |
-| `acp/artifact` | Agent produced an artifact (code change, file, etc.) |
-| `acp/state_change` | Agent state changed (working, waiting, complete, error) |
-
-### Session Lifecycle
-
-1. **Initialization**: Host spawns agent process, creates session
-2. **Conversation**: Messages flow via `session/prompt` and `session/update` streams
-3. **Tool Execution**: Agent requests tool use, host executes and returns results
-4. **Completion**: Agent signals completion via state change
-5. **Shutdown**: Host terminates agent process
+```
+┌─────────┐                                    ┌──────────┐
+│ Client  │                                    │  Agent   │
+│(Editor) │                                    │ (Coding) │
+└────┬────┘                                    └────┬─────┘
+     │                                              │
+     │ ── initialize ─────────────────────────────►  │
+     │ ◄─ capabilities/response ────────────────── │
+     │                                              │
+     │ ── session/new ────────────────────────────►  │
+     │ ◄─ session_id ───────────────────────────── │
+     │                                              │
+     │ ── session/prompt ─────────────────────────►  │
+     │                                              │
+     │ ◄─ session/update (streaming) ───────────── │
+     │    plan                                      │
+     │    agent_message_chunk                       │
+     │    tool_call                                 │
+     │    tool_call_update                          │
+     │    thought_message_chunk                     │
+     │                                              │
+     │ ◄─ fs/read_text_file (request) ──────────── │
+     │ ◄─ terminal/create (request) ────────────── │
+     │ ◄─ terminal/output (notification) ───────── │
+     │ ◄─ session/request_permission (request) ─── │
+     │                                              │
+     │ ── permission response ────────────────────►  │
+     │                                              │
+     │ ◄─ session/update: complete ─────────────── │
+```
 
 ---
 
-## Implementations
+## Protocol Methods (Request-Response)
 
-### Open Standard (Zed + JetBrains)
+| Method | Direction | Purpose |
+|---|---|---|
+| `initialize` | Client → Agent | Negotiate protocol version & capabilities |
+| `session/new` | Client → Agent | Create new conversation session |
+| `session/load` | Client → Agent | Resume existing session |
+| `session/prompt` | Client → Agent | Send user message |
+| `session/set_mode` | Client → Agent | Switch agent operating mode |
+| `fs/read_text_file` | Agent → Client | Read file (includes unsaved editor edits) |
+| `fs/write_text_file` | Agent → Client | Write/create file |
+| `terminal/create` | Agent → Client | Start shell command |
+| `terminal/output` | Agent → Client | Stream command output |
+| `terminal/wait_for_exit` | Agent → Client | Wait for command completion |
+| `terminal/kill` | Agent → Client | Terminate running command |
+| `terminal/release` | Agent → Client | Clean up terminal session |
+| `session/request_permission` | Agent → Client | Request user approval for action |
+
+## Notifications (One-Way)
+
+| Notification | Direction | Purpose |
+|---|---|---|
+| `session/update` | Agent → Client | Stream progress, messages, tool calls |
+| `session/cancel` | Client → Agent | Abort current operation |
+
+## Session Update Types
+
+| Update Type | Description |
+|---|---|
+| `plan` | Agent's execution plan — list of steps with status |
+| `agent_message_chunk` | Streamed text response |
+| `user_message_chunk` | Echo of user input |
+| `thought_message_chunk` | Agent's internal reasoning |
+| `tool_call` | New tool invocation — ID, title, kind, status |
+| `tool_call_update` | Tool progress/result — status change, content |
+| `available_commands` | Slash commands list |
+| `mode_change` | Mode switch notification |
+
+## Tool Call Status Flow
+
+Tool calls follow a defined lifecycle:
+1. `pending` → tool invocation requested
+2. `running` → tool executing
+3. `completed` or `failed` → final state
+4. Results streamed via `tool_call_update` notifications
+
+---
+
+## Key Implementations
+
+### Zed + JetBrains (Open Standard)
 
 The original ACP specification is co-maintained by **Zed** and **JetBrains** as an open standard. Key adopters:
 
-- **Zed** — Native ACP support for AI coding agents
+- **Zed** — Native ACP support for AI coding agents (co-developed with Google and JetBrains)
 - **JetBrains** — ACP integration across IntelliJ, PyCharm, WebStorm, etc.
-- **Toad** — ACP-native agent client
+- **Toad** (Will McGugan) — Terminal-based front-end supporting **12 agent CLIs** through ACP: Claude Code, OpenHands, Gemini CLI, and others. Unified interface with fuzzy file search, markdown rendering, shell integration, tab completion. Protocol-agnostic design.
 - **Obsidian** — ACP plugin for note-taking AI agents
 
 Reference: [agentclientprotocol.com](https://agentclientprotocol.com/get-started/introduction)
@@ -103,9 +169,22 @@ sessions_spawn({ runtime: "acp", agent: "claude-code" | "codex" | "gemini-cli" |
 /acp status   # inspect
 ```
 
-OpenClaw's ACP implementation is the most mature for **orchestrator → executor** delegation patterns.
+OpenClaw's ACP implementation is the most mature for **orchestrator → executor** delegation patterns. Key capabilities:
+- Parent-owned one-shot ACP sessions with completion channel back to parent
+- Child runs on background lane; slow ACP harness does not block main-session work
+- Full lifecycle management: spawn, steer, cancel, close, status
 
 → [[comparisons/hermes-vs-openclaw-architecture]]
+
+### Hermes Agent
+
+Hermes implements ACP-mode for external agent integration:
+- **ACP mode**: Allows Claude Code and other ACP-compliant agents to connect via stdio
+- **Callback surfaces**: `tool_progress_callback`, `thinking_callback`, `clarify_callback`, `stream_delta_callback` feed ACP notifications to clients
+- **Permission flow**: `session/request_permission` enables human-in-the-loop approval gates
+- **Dual-agent architecture**: Hermes as execution specialist, OpenClaw as orchestrator, communicating via ACP
+
+→ [[entities/hermes-agent]]
 
 ### Devin Desktop ACP Integration (June 2026)
 
@@ -115,10 +194,21 @@ Devin Desktop (formerly Windsurf) implements ACP for **agent-neutral harness swa
 - **Registration**: Custom agents registered via manifest JSON (name, command, args, capabilities)
 - **Agent Command Center**: Rich GUI for monitoring and controlling ACP sessions
 - **Spaces**: Persistent project-level shared context across ACP sessions
+- **Kanban view**: Task management with automatic agent task assignment
 
-Devin Desktop's ACP implementation uses a slightly extended method set:
-- `acp/createSession`, `acp/resumeSession`, `acp/sendMessage`, `acp/getState`, `acp/listTools`, `acp/cancel`, `acp/shutdown`
-- Notifications: `acp/message`, `acp/toolUse`, `acp/toolResult`, `acp/artifact`, `acp/stateChange`
+Devin Desktop's ACP implementation uses a slightly extended method set for their cloud-integrated architecture, but the core protocol follows the open standard.
+
+Custom agent manifest example:
+```json
+{
+  "name": "My Custom Agent",
+  "version": "1.0.0",
+  "command": "python",
+  "args": ["path/to/your/agent.py"],
+  "capabilities": ["code_editing", "terminal", "chat", "web_browsing"],
+  "description": "A custom ACP agent for Devin Desktop"
+}
+```
 
 → [[entities/devin]]
 
@@ -134,31 +224,30 @@ Mastra's `@mastra/acp` package enables running ACP-compatible coding agents as t
 
 ---
 
-## ACP vs Other Protocols
+## ACP vs MCP vs A2A
 
-| Dimension | ACP | Codex App Server | AG-UI | A2A |
-|-----------|-----|------------------|-------|-----|
-| **Layer** | Client ↔ Agent | Client ↔ Agent | Agent ↔ UI | Agent ↔ Agent |
-| **Scope** | Any ACP-compliant agent | Codex-specific | Any agent → UI | Cross-org delegation |
-| **Governance** | Open (Zed + JetBrains) | OpenAI (single-vendor) | Open (CopilotKit) | Open (Google/LF) |
-| **Transport** | JSON-RPC 2.0 (stdio) | JSON-RPC 2.0 (stdio/WS) | SSE | HTTP |
-| **Agent model** | Generic (session-based) | Codex-native (Thread/Turn/Item) | Framework-agnostic | Task delegation |
+| Aspect | ACP | MCP | A2A |
+|---|---|---|---|
+| **Full Name** | Agent Client Protocol | Model Context Protocol | Agent-to-Agent Protocol |
+| **Layer** | Agent ↔ Editor/UI | Agent ↔ Tools/Data | Agent ↔ Agent |
+| **Transport** | stdio, HTTP | stdio, HTTP | HTTP (REST) |
+| **Purpose** | UI integration for coding agents | Tool discovery and execution | Cross-agent coordination |
+| **Origin** | Open standard | Anthropic | Google + IBM (Linux Foundation, 2025 merger) |
+| **Status** | Alpha | Stable/Widely adopted | Beta (with former ACP capabilities) |
 
-The key distinction: **ACP is agent-agnostic** (works with any agent), while **Codex App Server is agent-specific** (tightly coupled to Codex's semantic model).
+**Decision:** Use **MCP** for tool integration, **A2A** for cross-organizational agent interaction, and **ACP** for editor/UI integration with coding agents.
 
 → [[comparisons/codex-app-server-vs-agent-protocols]]
 
 ---
 
-## Strategic Significance
+## Strategic Significance: Agent-Neutral as Competitive Moat
 
-### Agent-Neutral as a Competitive Moat
+The "agent-neutral" positioning of ACP has significant strategic implications for the agent ecosystem:
 
-The "agent-neutral" positioning of ACP has significant strategic implications:
+### Hedge Against Model Commoditization
 
-1. **Hedge against model commoditization**: If the underlying agent becomes interchangeable, the host/orchestrator layer captures more value
-2. **Ecosystem lock-in through UX**: Rich IDE experiences (Agent Command Center, Spaces, Kanban) create switching costs independent of the agent
-3. **Orchestrator as the new control plane**: The entity that manages agent lifecycle, context, and coordination becomes the most valuable layer
+If the underlying agent becomes interchangeable, the host/orchestrator layer captures more value. ACP enables this by making any ACP-compliant agent a drop-in replacement.
 
 ### The Orchestrator Wars
 
@@ -181,14 +270,14 @@ The competition is not about which agent is best — it's about **which orchestr
 A custom ACP agent requires:
 
 1. **JSON-RPC transport** — Read from stdin, write to stdout
-2. **Method handlers** — Implement `createSession`, `sendMessage`, `getState`, `shutdown`
-3. **Tool execution** — Send `toolUse` notifications, receive `toolResult` responses
+2. **Method handlers** — Implement `initialize`, `session/new`, `session/prompt`
+3. **Tool execution** — Send `terminal/create`, `fs/read_text_file` requests
 4. **Agent manifest** — JSON file declaring name, command, capabilities
 5. **Main loop** — Message dispatch with proper error handling
 
 Best practices:
 - Log to stderr (not stdout) to avoid interfering with JSON-RPC transport
-- Send incremental `message` notifications for streaming
+- Send incremental `session/update` notifications for streaming
 - Keep sessions lightweight and serializable for resume support
 - Set reasonable timeouts for AI API calls
 
@@ -196,11 +285,31 @@ Best practices:
 
 ---
 
+## Significance
+
+ACP addresses a critical fragmentation problem in the AI coding agent ecosystem:
+
+> *"With the explosion of AI coding agents—Claude Code, Gemini CLI, OpenCode, Goose, Codex CLI—we've entered an era where every major AI lab ships their own terminal-based coding assistant. But there is one problem. Each agent has its own events or outputs."*
+
+By standardizing the agent-client interface:
+- **Editors** can support multiple agents without custom integrations
+- **Agents** can focus on capabilities rather than UI concerns
+- **Users** get consistent experience across different coding agents
+- **Enterprise** deployments gain auditability and governance hooks
+
+---
+
 ## See Also
 
+- [[concepts/agent-communication-protocols]] — Broader protocol landscape (MCP/A2A/ACP comparison)
+- [[concepts/agent-communication-standards]] — Standard protocols for multi-agent communication
+- [[concepts/mcp]] — Model Context Protocol for agent-to-tool communication
 - [[comparisons/codex-app-server-vs-agent-protocols]] — Multi-protocol landscape comparison
 - [[comparisons/harness-backend-routing]] — OpenClaw vs Hermes vs Codex App Server vs Devin Desktop
 - [[comparisons/hermes-vs-openclaw-architecture]] — Dual-agent architecture via ACP
-- [[concepts/agent-communication-protocols]] — Broader agent communication standards
+- [[entities/will-mcgugan]] — Creator of Toad, multi-agent terminal UI via ACP
+- [[entities/phil-schmid]] — Author of the ACP overview (2026)
 - [[entities/devin]] — Devin Desktop with ACP integration
 - [[concepts/mastra-acp-agents]] — ACP agents in Mastra framework
+- [[concepts/ai-coding-agent-criticism]] — Critical perspectives on AI coding agents
+- [[concepts/agent-harness]] — Infrastructure layer wrapping raw models
