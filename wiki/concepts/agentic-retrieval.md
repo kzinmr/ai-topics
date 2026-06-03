@@ -4,7 +4,7 @@ type: concept
 aliases:
   - agentic-retrieval
 created: 2026-04-25
-updated: 2026-06-02
+updated: 2026-06-03
 tags:
   - concept
   - agentic-retrieval
@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
+  - raw/articles/2026-06-03_hornet_agent-queries-cost-more-to-serve.md
 ---
 
 # Agentic Retrieval
@@ -88,6 +89,20 @@ GPT-5's queries are **out of distribution** for neural retrievers trained on MS 
 ### Compound Error
 
 Poor retrieval compounds across multi-call sessions. Each turn's search results become context for the next turn's reasoning. A retrieval miss on turn 3 cascades through turns 4–24.
+
+## Serving Cost Impact
+
+The agentic query distribution shift has concrete infrastructure cost implications. Hornet's June 2026 benchmark (100M documents, single Graviton4 instance, fixed index and engine) shows:
+
+- **8.4x serving capacity swing** when switching from human to agent query workloads on the same system
+- Human keyword queries (AOL): 3,236 QPS at <500ms p99
+- Agent queries (GPT-5 BrowseComp): 384 QPS at same latency target
+- Agent queries are not just more numerous — **each query costs more to serve** due to longer terms, phrase matches, and filter operators
+
+> "A QPS number that does not say what kind of queries produced it is missing the most important part of the story."
+> — Jo Kristian Bergum, Hornet blog, June 2026
+
+This validates the central agentic retrieval thesis: infrastructure designed for human query distributions cannot efficiently serve agent workloads, and capacity planning must account for query mix, not just query volume.
 
 ## Systems Built for Agentic Retrieval
 

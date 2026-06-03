@@ -6,7 +6,7 @@ aliases:
   - jobergum
   - Jo Bergum
 created: 2026-04-25
-updated: 2026-05-22
+updated: 2026-06-03
 tags:
   - entity
   - person
@@ -97,6 +97,7 @@ Bergum's work spans traditional information retrieval, neural search, and large-
 - *The case for a new retrieval engine for agents* (Oct 2025) — founding manifesto for Hornet
 - *Deep research is a retrieval problem* (Mar 2026) — Part 1 of agentic retrieval series; BrowseComp-Plus oracle experiments: GPT-4.1 93% → 15% accuracy gap due to retrieval bottleneck
 - *This is what agentic retrieval looks like* (May 2026) — Part 2 of agentic retrieval series; empirical analysis of GPT-5's BrowseComp-Plus query behavior showing agents query like power users: median 10 terms (vs. human median 2), phrase quotes in 98% of sessions, 24 search calls/session, advanced operator usage
+- *Agent queries cost more to serve* (Jun 2026) — Part 3: concrete serving cost benchmark demonstrating 8.4x capacity swing from human to agent query workloads on same engine/index; Hornet achieves 1.6x throughput vs. competitors on agent queries
 
 ## Current Work: Hornet
 
@@ -122,6 +123,7 @@ Bergum's work spans traditional information retrieval, neural search, and large-
 | Feb 2026 | Publishes "The context window is not your database" — arguing that retrieval still matters for agents |
 | Mar 2026 | Publishes "Deep research is a retrieval problem" (Part 1) — BrowseComp-Plus oracle analysis: 93%→15% accuracy gap from retrieval bottleneck |
 | May 2026 | Publishes "This is what agentic retrieval looks like" (Part 2) — empirical analysis of GPT-5 BrowseComp-Plus traces: median 10-term queries, 24 calls/session, phrase quotes in 98% of sessions |
+| Jun 2026 | Publishes "Agent queries cost more to serve" (Part 3) — 8.4x serving capacity swing benchmark; Hornet 1.6x throughput vs. competitors on agent queries |
 | 2026 | Launches Hornet as a company with co-founders Henning Baldersheim (CTO), Erik Dyrkoren (COO) |
 
 ## Core Ideas

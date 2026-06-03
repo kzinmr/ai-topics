@@ -4,7 +4,7 @@ type: concept
 aliases:
   - hornet
 created: 2026-04-25
-updated: 2026-06-02
+updated: 2026-06-03
 tags:
   - concept
   - product
@@ -16,10 +16,13 @@ tags:
   - open-source
   - search
   - deep-research
+  - cost-optimization
+  - performance-engineering
 sources:
   - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
+  - raw/articles/2026-06-03_hornet_agent-queries-cost-more-to-serve.md
 ---
 
 # Hornet
@@ -80,6 +83,28 @@ Agents also use advanced operator combinations (OR across year ranges, wildcard 
 - **Neural retrievers** trained on MS MARCO/Natural Questions where queries are short and fluent — GPT-5's queries are out-of-distribution
 - **Search APIs** expose one string because that's what humans typed; operators were deprecated
 - **Benchmarks** score single queries, not iterative 24-call sessions
+
+## Serving Cost Impact (June 2026 Benchmark)
+
+Hornet's June 2026 blog post demonstrates the concrete cost impact of agentic query workloads on serving infrastructure. On a fixed setup — 100M English Common Crawl WET documents indexed in Hornet on a single AWS Graviton4 (32 vCPUs, 128 GiB memory), index served entirely from memory (~56 GiB) — changing only the query workload produces an **8.4x swing** in serving capacity:
+
+| Workload | QPS at <500ms p99 |
+|----------|-------------------|
+| AOL human keyword queries | 3,236 QPS |
+| MS MARCO human questions | 1,151 QPS |
+| BrowseComp GPT-5 agent queries | 384 QPS |
+
+Against competing engines on the same agent workload, Hornet sustains **~1.6x throughput per node** at the same 500ms p99 latency target. This means deploying competing engines to absorb the same agent traffic requires ~1.6x more machines.
+
+### Why Agent Queries Cost More
+
+- Agent queries carry more terms (median 10 vs. human 2) and more operators (phrase match, site: filter, year filter)
+- Hornet selects between **DAAT** (document-at-a-time, for rare-term queries) and **BAAT** (block-at-a-time, for long queries with common terms) based on query shape
+- Long agent queries trigger BAAT far more often, requiring different pruning and scoring strategies
+- Posting lists use compact fixed-size blocks with SIMD-accelerated bulk decompression
+
+> "A QPS number that does not say what kind of queries produced it is missing the most important part of the story."
+> — Jo Kristian Bergum, Hornet blog, June 2026
 
 ## Academic Validation
 
