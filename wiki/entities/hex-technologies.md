@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-05-23
+updated: 2026-06-03
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -81,6 +81,19 @@ Hex created a fully synthetic B2B2C office-supplies platform called **Shorelane 
 
 Authored by Izzy Miller, Engineering (May 22, 2026).
 
+### Hex in Codex Integration (June 2, 2026)
+
+Hex launched as an **OpenAI Codex plugin**, enabling Codex users to invoke Hex for analytics without leaving the coding agent. Three integration modes:
+
+- **Kick off analysis from Codex**: Ask a natural language question → Codex invokes Hex → Hex runs the query and returns results (churn by segment, pipeline performance, product usage trends)
+- **Pull Hex Threads into Codex**: MCP connection lets Codex pull existing Hex threads as context for reports and meetings — prior work is available without redoing it
+- **CLI control**: Programmatic Hex project/cell creation for automated workflows; Codex can also migrate existing BI projects to Hex
+
+Hex's thesis: "Without context, an agent won't use the right data to answer a business question." The integration extends Hex's Context Studio philosophy — when working in Codex, your Hex analyses, data, and context inform whatever you build. Codex admins can enable the plugin in their workspace.
+
+Hex previously launched **Agent, everywhere** (October 2025) with Slack integration and MCP support, allowing the Hex Agent to operate inside Slack, Claude, and Cursor.
+
+Source: raw/articles/2026-06-03_hex-technologies_hex-in-codex.md
 
 ## Related
 - [[entities/anthropic]] — customer using Hex for data analytics

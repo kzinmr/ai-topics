@@ -2,7 +2,7 @@
 title: "Cognition"
 type: entity
 created: 2026-05-08
-updated: 2026-05-29
+updated: 2026-06-03
 tags:
   - company
   - ai-agents
@@ -89,3 +89,4 @@ A notable emergent behavior: Devin agents have reached sufficient maturity to **
 - [[entities/openai]] — Devin uses and competes with GPT models
 - [[entities/anthropic]] — Devin rebuilt for Claude Sonnet 4.5; Cognition partnership
 - [[entities/opencode]] — competitor in AI-powered coding tools
+- [[entities/devin]] — Devin Desktop (Windsurf rebrand) with agent-neutral ACP integration

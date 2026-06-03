@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-06-02
+updated: 2026-06-03
 tags:
   - security
   - company
@@ -159,3 +159,23 @@ Harvey released the **Legal Agent Benchmark (LAB)**, an open-source benchmark fo
 - [[entities/voyage-ai]] — partnered to build custom legal embedding models
 - [[entities/anthropic]] — competitor in the enterprise AI deployment space
 - [[entities/hebbia]] — serves overlapping legal/financial professional services customers
+- [[entities/courtlistener]] — provides the 9M+ US case law opinions database powering Harvey's Knowledge feature
+
+## US Case Law Knowledge Source (June 2026)
+
+Harvey integrated **9 million+ US case law opinions** from [[entities/courtlistener]] directly into the platform, enabling lawyers to research, analyze, and draft with case law citations in one place. Lawyers spend **19% of their time** on case law research; fragmented tools multiply that cost through context-switching.
+
+### Key Capabilities
+
+- **Direct case law access**: Millions of opinions searchable within Harvey — no separate window or tool needed
+- **Citation-grounded responses**: Harvey's answers include direct citations to source material for validation
+- **Side-by-side viewing**: Case content displayed alongside results for quick verification
+- **Cross-source search**: Lawyers can search across case law AND uploaded files in a single prompt (e.g., pulling evidence from a vault and analyzing against existing precedent)
+- **Word Add-In integration**: Pull case law insights directly into Word documents for drafting motions and briefs
+- **Agent Builder workflows**: Embed US Case Law knowledge source into custom agents for repeatable workflows (e.g., employment investigations, trial prep connecting witness testimony to legal doctrine)
+
+### Availability
+
+Available from June 3, 2026 on a rolling basis to Harvey customers. The knowledge source includes over 9 million opinions sourced from CourtListener.
+
+Source: raw/articles/2026-06-03_harvey_us-case-law-source.md

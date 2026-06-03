@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 2341 | Indexed entries: 1670 | Concepts: 1553 | Entities: 751
+> Last updated: 2026-06-03 | Total pages: 2343 | Indexed entries: 1670 | Concepts: 1553 | Entities: 753
 
 ## Entities (751 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -276,6 +276,7 @@
 - [[entities/exa]] — Exa — AI-native search platform ("search lab for agents"). $250M Series C at $2.2B valuation (May 2026).
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
 - [[entities/factory]] — Factory (Factory AI) — Autonomous coding agents ("Droids") for enterprise. $1.5B valuation. Deferred Context Engine: 40% context reduction via selective tool loading (May 2026).
+- [[entities/factory-ai]] — Autonomous coding agent platform. Factory Router (June 2026): private research preview, frontier performance at lower cost.
 - [[entities/farhan-thawar]] — Farhan Thawar — Head of Engineering (VP Engineering) at Shopify. Leads 23,000-engineer AI transformation toward 90% autonomous coding. Philosophy: "pair with smart people on problems." Championed 1,000-intern program and Code Red tech debt elimination.
 - [[entities/fei-fei-li]] — **Full Name** | Fei-Fei Li |
 - [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
@@ -476,6 +477,7 @@
 - [[entities/pi]] — Minimal AI coding harness by Mario Zechner. ~1K token system prompt, only 4 tools (read/write/edit/bash), ~54K GitHub Stars, MIT+Fair+Proprietary license. Acquired by Earendil (April 2026). OpenClaw foundation. `/is` `/wr` workflow via `.pi` folder. Runtime Substrate (agent OS).[[concepts/ai-generated-issues-in-oss]]
 - [[entities/pi-serini]] — Minimal search agent: BM25 + LLM agentic loop. 83.1% BrowseComp-Plus accuracy with gpt-5.5, beats dense retrievers at 3.3x–10x lower cost via prefix caching (82–90% cache hit rate). Hsu et al., arXiv:2605.10848.
 - [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
+- [[entities/courtlistener]] — Free legal research platform by Free Law Project (501(c)(3)). 9M+ US case opinions, RECAP archive. API for legal data access; used by AI legal platforms.
 - [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 - [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
 - [[entities/philipp-schmid]] — Philipp Schmid (@_philschmid) — Senior AI Developer Experience Engineer at Google DeepMind, ex-Hugging Face Tech Lead. Prolific AI educator, deployment optimization expert, agent harness advocate.
@@ -701,7 +703,7 @@
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
 - [[entities/contextarena]] — LLM long-context benchmark leaderboard. Evaluates 70+ LLMs on GDM-MRCRv2 (8-Needle test) across 128K and 1M token windows. Measures accuracy, AUC, token efficiency, and cost.
 - [[entities/databricks]] — Major AI/ML data platform company. Open-sourced MLflow and Unity Catalog. Published Memory Scaling research with MemAlign framework for AI agents.
-- [[entities/devin]] — First autonomous AI coding agent by Cognition AI. End-to-end software engineering: shell, code editor, browser, planner. Autonomous end-to-end testing with computer use (May 2026). Comparison with Claude Code and OpenAI Codex.
+- [[entities/devin]] — First autonomous AI coding agent by Cognition AI. End-to-end software engineering: shell, code editor, browser, planner. Autonomous end-to-end testing with computer use (May 2026). **Devin Desktop** (Jun 2026): Windsurf rebrand as Agent Command Center with agent-neutral ACP integration, Spaces, Kanban view, multi-agent management. Comparison with Claude Code and OpenAI Codex.
 - [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 - [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, Dan Shipper's AI paradox, Benedict Evans' "1997 internet moment" (May 2026).
 - [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
@@ -724,7 +726,7 @@
 - [[entities/brain-co]] — Brain Co. — AI for institutions. Founded 2024 by Jared Kushner and Elad Gil.
 - [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
 - [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
-- [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
+- [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE. Rebranded Windsurf to **Devin Desktop** (Jun 2026) with agent-neutral ACP integration.
 - [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100). Published comprehensive MCP guide (client-server architecture, enterprise use cases, security). Strategic MOUs with Indra Group (sovereign AI Spain/Canada) and Multiverse Computing (quantum-inspired optimization).
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
 - [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents. $22M Voice Marketplace (doubled in 6mo, 10,400+ creators).
@@ -783,7 +785,7 @@
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
 - [[concepts/after-automation]] — After Automation Paradox — Dan Shipper's thesis that more automation creates more expert human work, not less. 5-step feedback loop: commoditization → abundance → sameness → demand for difference → demand for experts. Includes the Human Sandwich pattern, Zeno's Paradox of AI benchmarks, and the concept of slop as "visible sameness."
 - [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
-- [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
+- [[concepts/agent-client-protocol]] — Agent Client Protocol (ACP): Open standard (JSON-RPC 2.0 over stdio) for editors/IDEs to interact with AI coding agents. Enables agent-neutral harness swapping. Adopted by Zed, JetBrains, OpenClaw (orchestrator spawning), Devin Desktop (IDE-native agent command center), Mastra. Core methods: session/new, session/prompt, session/update. Building custom ACP agents via manifest JSON.
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-communication-standards]] — Standard protocols for multi-agent communication including ACP, A2A, BeeAI, and others
 - [[concepts/agent-containment]] — Agent Containment — Limiting AI agent blast radius through environmental isolation (sandboxes, VMs, egress controls) rather than relying solely on model-layer defenses. Three patterns from Anthropic: ephemeral container, HITL sandbox, sealed local VM.
@@ -1670,7 +1672,7 @@
 - [[comparisons/evals-skills]] — Evals Skills
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — Gpt Image 2 Vs Nano Banana 2
-- [[comparisons/harness-backend-routing]] — Harness Backend Routing — OpenClaw vs Hermes vs Codex App Server as harness adapter/proxy. Compares dynamic routing (sessions_spawn vs /codex-runtime vs codapter), execution control (/acp steer), tool interop (bidirectional MCP), persistent memory, and gateway support. Proposes 3-layer stack: OpenClaw (routing) + Hermes (memory/tools) + Codex App Server (execution).
+- [[comparisons/harness-backend-routing]] — Harness Backend Routing — OpenClaw vs Hermes vs Codex App Server vs Devin Desktop as harness adapter/proxy. Compares dynamic routing (sessions_spawn vs /codex-runtime vs codapter), execution control (/acp steer), tool interop (bidirectional MCP), persistent memory, and gateway support. Proposes 4-layer stack: OpenClaw (routing) + Hermes (memory/tools) + Devin Desktop (IDE/workspace) + Codex App Server (execution).
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison. elvis's 9-hour source code analysis. Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP). Control Plane Depth analysis (session visibility, scheduling determinism, child agent lifecycle, lane isolation, debugging determinism — the essence of orchestrator advantage beyond ACP and channel count). DeepLearning.AI 2026-05 analysis + Kilo blog.
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw. 9-dimension comparison table + Traction Signal (OpenRouter leaderboard reversal) + Agentic Loop + Caveats (token efficiency, skill explosion, maturity) + verdict + dual-agent architecture ([[comparisons/hermes-vs-openclaw-architecture|architecture details]]). DeepLearning.AI 2026-05 analysis + Kilo blog + Shann practical report.
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns

@@ -2,11 +2,14 @@
 title: Devin (Cognition AI)
 type: entity
 created: 2026-04-30
-updated: 2026-05-30
+updated: 2026-06-03
 tags:
   - company
   - ai-agents
   - coding-agent
+  - acp
+  - agent-harness
+  - ide
 aliases:
   - cognition-devin
   - cognition-ai
@@ -18,6 +21,10 @@ sources:
   - https://en.wikipedia.org/wiki/Cognition_AI
   - https://en.wikipedia.org/wiki/Scott_Wu
   - raw/articles/2026-05-29_ido-cognition_verifying-agentic-development-at-scale.md
+  - raw/articles/2026-06-03_devin-desktop-windsurf-rebrand-acp-agent-neutral.md
+  - https://devin.ai/download
+  - https://devin.ai/blog/windsurf-is-now-devin-desktop
+  - https://docs.devin.ai/desktop/acp
 ---
 
 # Devin (Cognition AI)
@@ -253,6 +260,56 @@ Ido from Cognition published a detailed post on Devin's autonomous testing capab
 - Test mode billed at **1/5th normal usage cost** to encourage experimentation
 
 → [[concepts/cognition-devin-philosophy]], [[concepts/agentic-engineering-cognition-devin-workflow]]
+
+---
+
+## Devin Desktop (Windsurf Rebrand, June 2026)
+
+In June 2026, Cognition rebranded **Windsurf** (the AI-native IDE acquired for $250M in July 2025) to **Devin Desktop**, positioning it as the **Agent Command Center** for managing autonomous AI agents. This represents a strategic pivot from "Devin the agent" to "Devin Desktop the orchestrator platform."
+
+### Key Features
+
+- **Agent Command Center** — Central dashboard for monitoring and controlling all running agents. Real-time visibility into agent statuses (Running, Paused, Waiting, Completed), terminal output, file changes, browser activity, and code diffs. Quick actions: Pause/Resume, Send Message, View PR/Changes, Stop Agent.
+- **Spaces** — Persistent shared context workspaces replacing traditional project workspaces. Contain codebase, shared memory/notes, task history, decision logs, and configuration. The unit of collaboration between humans and agents.
+- **Kanban View** — Board for managing agent tasks (Backlog → In Progress → Review → Done). Cards show task description, assigned agent, PR/branch link, status, blockers, and dependency graphs. Agents pull tasks automatically.
+- **Multi-Agent Management** — Spawn agents with different roles, agent-to-agent communication channels, dependency rules, and conflict resolution policies. Shared-nothing architecture by default.
+
+### Agent-Neutral ACP Integration
+
+The critical architectural innovation is the integration of the **Agent Client Protocol (ACP)**, enabling **agent-neutral harness swapping** — the ability to use any ACP-compliant agent as the execution backend while preserving context and workspace state.
+
+**Supported agents:**
+- **Devin** — Default agent, fully integrated
+- **Claude Code** — Anthropic's agentic coding tool, built-in ACP agent
+- **Custom ACP Agents** — Any agent implementing the ACP specification
+
+ACP uses JSON-RPC 2.0 over stdio with 7 core methods (`acp/createSession`, `acp/resumeSession`, `acp/sendMessage`, `acp/getState`, `acp/listTools`, `acp/cancel`, `acp/shutdown`) and 5 notification types. Full guide for building custom ACP agents is available in the docs.
+
+### Three-Layer Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  Local Editor Layer (VS Code-based)                     │
+│  UI, extensions, terminal, Agent Command Center, Spaces │
+├─────────────────────────────────────────────────────────┤
+│  ACP Cloud Service                                      │
+│  Agent lifecycle, sandbox provisioning, state sync,     │
+│  permissions, gRPC API                                  │
+├─────────────────────────────────────────────────────────┤
+│  Agent Sandboxes                                        │
+│  Isolated cloud Linux environments, ephemeral/pinnable  │
+└─────────────────────────────────────────────────────────┘
+```
+
+### Strategic Significance
+
+Devin Desktop's ACP integration positions Cognition as an **agent orchestrator platform**, not just an agent provider:
+- **From agent to platform**: The IDE becomes the command center for the entire agent ecosystem
+- **Hedge against model commoditization**: If the underlying agent is interchangeable, the orchestrator layer captures more value
+- **Direct competition with OpenClaw**: Same orchestrator-via-ACP pattern, but with an established IDE user base from Windsurf
+- **IDE as control plane**: Natural place to manage multi-agent workflows
+
+→ [[comparisons/harness-backend-routing]], [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/codex-app-server-vs-agent-protocols]]
 
 ## See Also
 

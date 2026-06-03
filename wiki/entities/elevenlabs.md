@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-05-27
+updated: 2026-06-03
 tags:
   - company
   - voice-ai
@@ -95,6 +95,51 @@ Music v2 powers three platforms:
 **Pricing**: Music v1 and v2 prices cut by up to 50% for ElevenAPI and up to 40% for ElevenCreative.
 
 Source: raw/articles/2026-05-27_elevenlabs_introducing-music-v2.md
+
+## AI Customer Service Agents (June 2026)
+
+ElevenLabs published a comprehensive guide to building AI customer service agents with ElevenAgents, covering the full voice pipeline and deployment best practices.
+
+### Architecture Pipeline
+
+ElevenAgents processes voice and text through a **real-time pipeline**:
+
+1. **Input** — Voice via ElevenLabs' **Scribe** (Speech-to-Text model), transcribing in real-time before the customer finishes speaking. Text inputs go directly to the pipeline.
+2. **Context assembly** — The LLM assembles full conversation context: prior messages, knowledge base retrieval, live data from connected tools, and the system prompt.
+3. **Response delivery** — Text responses go directly; voice responses are converted back via ElevenLabs' Text-to-Speech system.
+
+### Supporting Technologies
+
+- **Turn-taking model**: Detects when a user has finished speaking for natural back-and-forth conversation
+- **VAD (Voice Activity Detection)**: Separates primary speaker audio from background noise
+- **Voicemail detection**: Identifies when calls reach voicemail rather than a live person
+- **Guardrails**: Response validators, focus mode, prompt injection protection, custom rules
+
+### Best Practices
+
+**Knowledge base grounding**: Compile SOPs, FAQs, product documentation, and policy documents. Use consistent terminology and keep content up to date. ElevenAgents supports RAG for larger knowledge bases, pulling only relevant content to prevent context overflow.
+
+**System prompt structure**: Well-structured prompts include four sections — Personality, Goal (ordered steps), Tools (when and how to use them), and Guardrails (what never to do). For enterprise deployments, keep each agent specialized rather than multi-purpose.
+
+**Case study — mdhub**: Behavioral health platform deployed ElevenAgents across clinic admissions and patient support. AI agents now handle **90% of inbound calls end-to-end** (capturing demographics, verifying insurance, booking appointments). Time from first inquiry to appointment dropped from **weeks to days**, and bookings increased **30%**.
+
+Source: raw/articles/2026-06-03_elevenlabs_ai-customer-service-agents.md
+
+### PhysicsWallah Education Case Study (June 2026)
+
+ElevenLabs partnered with **PhysicsWallah** (Indian edtech platform) to deploy voice AI across four use cases:
+
+- **AI Doubt Solver** — students ask questions verbally, get instant voice responses in their language
+- **Student Calling** — voice generation for counseling two-way conversations, automating outreach that previously required human counselors
+- **AI Mentor** — voice bot for emotional well-being, providing human-like supportive interaction
+- **Ask AI** — evolved from text-based to conversational voice tutoring
+
+PhysicsWallah reports **90%+ of student doubts already resolved by AI**. The broader thesis: recorded learning is giving way to conversational AI as the primary mode of instruction, with voice as a critical layer making AI interactions feel like natural conversations with human teachers.
+
+> "With ElevenLabs, we've been able to transform Ask AI from a text-based tool into a more human, conversational learning experience. The quality and realism of the voice output has significantly improved how students engage with AI-driven explanations."
+> — Sandeep Varma, Head of Data Science & Engineering, PhysicsWallah
+
+Source: raw/articles/2026-06-03_elevenlabs_physicswallah.md
 
 ## Related
 - [[entities/openai]] — Competitor via GPT-4o voice and TTS capabilities

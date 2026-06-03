@@ -1,8 +1,40 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 Devin Desktop: Windsurf Rebrand + Agent-Neutral ACP Integration
+
+- **Raw article saved**: `raw/articles/2026-06-03_devin-desktop-windsurf-rebrand-acp-agent-neutral.md` — Comprehensive extraction from devin.ai/download, devin.ai/blog/windsurf-is-now-devin-desktop, docs.devin.ai/desktop/acp, and docs.devin.ai/desktop/acp/building-a-custom-acp-agent.
+- **Entity enriched**: `entities/devin.md` — Added "Devin Desktop (Windsurf Rebrand, June 2026)" section covering: Agent Command Center, Spaces, Kanban view, multi-agent management, agent-neutral ACP integration (Devin, Claude Code, custom agents), three-layer architecture (Local Editor → ACP Cloud Service → Agent Sandboxes), strategic significance as orchestrator platform. Added tags: acp, agent-harness, ide.
+- **Entity updated**: `entities/cognition.md` — Added Devin Desktop rebrand cross-reference.
+- **Concept created**: `concepts/agent-client-protocol.md` — Comprehensive ACP concept page covering: protocol specification (JSON-RPC 2.0 over stdio), core methods, session lifecycle, implementations (Zed/JetBrains open standard, OpenClaw ACP integration, Devin Desktop ACP, Mastra ACP), comparison with Codex App Server/AG-UI/A2A, strategic significance of agent-neutral positioning, building custom ACP agents.
+- **Comparison updated**: `comparisons/harness-backend-routing.md` — Added Devin Desktop as 4th system in evaluation matrix. Updated verdict, strengths section (Devin Desktop: IDE-native orchestrator), ideal architecture (3-layer → 4-layer stack with IDE/workspace layer), decision guide. Updated title and sources.
+
 ## 2026-06-03 X Bookmarks Ingest: Every Agentic Engineering Hack I Know (June 2026)
 
+## 2026-06-03 Raw Backlog Ingest: 13 Articles Processed
+
+**5 entity pages enriched:**
+- [[entities/elevenlabs]] — Added AI Customer Service Agents architecture (voice pipeline, Scribe STT, turn-taking, VAD, guardrails, RAG knowledge base) + PhysicsWallah EdTech case study (90% doubt resolution, 4 use cases: AI Doubt Solver, Student Calling, AI Mentor, Ask AI)
+- [[entities/pinecone]] — Added Nexus Context Compiler platform: AskData V1→V2 migration case study with quantitative results (38% input token reduction, 80% cost savings, 25K→1K code lines). KnowQL, Context Compiler, Nexus Contexts architecture.
+- [[entities/harvey]] — Added US Case Law Knowledge Source: CourtListener 9M+ opinions integration, Agent Builder workflows, citation-grounded responses, Word Add-In. Added [[entities/courtlistener]] cross-reference.
+- [[entities/hex-technologies]] — Added Hex in Codex integration: OpenAI Codex plugin, MCP connection for Hex Threads, CLI control, BI project migration.
+- [[entities/factory-ai]] — Created new entity page for Factory.ai (distinct from [[entities/factory]]/Factory AI). Factory Router in private research preview (June 2026).
+
+**1 new entity page created:**
+- [[entities/courtlistener]] — Free legal research platform by Free Law Project (501(c)(3)). 9M+ US case opinions, RECAP archive, API for legal data access. Referenced by Harvey's Knowledge feature.
+
+**Already captured by prior pipeline runs (reference status):**
+- [[entities/mvanhorn]] agentic engineering hacks compilation — already enriched via X Bookmarks Ingest
+- MiniMax M3 model details — [[concepts/minimax-m3]] already created
+- Microsoft MAI models — [[concepts/microsoft-mai-models]] already created, Simon Willison analysis in sources
+- Google A2A protocol — [[concepts/a2a-agent-protocol]] already created
+- Mistral Codestral — [[concepts/codestral]] already created
+
+**Skipped (out of scope):**
+- 2026-06-03_trending-topics-research.md — meta-document recording prior wiki creation
+- dfarq.homeip.net Cyrix 486DLC CPU article — retro computing, non-AI content
+
+Source: raw_backlog_collect.py collect_run_id=20260603T120013Z
 Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (June 2026)" -- X Article with full body fetched.
 
 **Raw article saved**: [[raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack]]
