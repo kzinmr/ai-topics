@@ -1,7 +1,7 @@
 ---
 title: turbopuffer
 created: 2026-05-20
-updated: 2026-05-22
+updated: 2026-06-03
 type: entity
 tags:
   - search
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai.md
   - https://turbopuffer.com
   - https://turbopuffer.com/docs
+  - https://turbopuffer.com/docs/branching
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md
 ---
 
@@ -47,6 +48,40 @@ The core architectural insight: **decouple compute from storage**, using object 
 - **Caching hierarchy**: Memory → NVMe SSD → Object Storage; cold queries p90=444ms, warm p50=8ms
 - **Object-storage-native**: Storage engine only "puffs" actively queried namespaces into cache
 - **Branching**: Copy-on-write namespace clones in constant time; independent reads/writes
+
+## Namespace Branching (Detailed)
+
+turbopuffer's branching is a **native infrastructure primitive** — one API call creates a fully independent copy-on-write clone of a namespace:
+
+```python
+source = tpuf.namespace('branching-example-source')
+ns = tpuf.namespace('branching-example')
+ns.branch_from(source_namespace='branching-example-source')
+```
+
+### Properties
+- **Constant-time creation** — regardless of namespace size (metadata operation on object storage)
+- **Fully independent** — reads, writes, queries, and deletes on either namespace don't affect the other
+- **Branch from branches** — supports multi-level workflows (e.g., per-developer branches from staging)
+- **Unlimited** — no limit on child branches per namespace or branch chain depth
+
+### Pricing
+- Flat rate of **$0.032 per branch creation**
+- Storage billed on logical bytes at standard rates (each branch billed as if independent)
+- Planned reduction after production observation of reuse rates
+
+### When to Use Branching vs `copy_from_namespace`
+- **Use `branch_from`** for most cases — instant, cheap, CoW
+- **Use `copy_from_namespace`** when: need full data isolation, copying across regions/organizations, or re-encrypting with a different CMEK key
+
+### Use Cases
+- **Codebase indexing** — embed once, branch per local checkout; only changed files need re-indexing
+- **Test pipelines** — branch production, run tests against real data, tear down when done
+- **Dev environments** — give each developer a sandbox of a shared dataset
+- **Snapshots** — capture state of a changing namespace at a point in time, query the immutable snapshot
+- **RL training reproducibility** — preserve exact training environments for ablation studies (used by [[entities/sid|SID AI]])
+
+See: [[branch-aware-search]] for comparison with Qdrant and Neon approaches
 
 ## Key Capabilities
 

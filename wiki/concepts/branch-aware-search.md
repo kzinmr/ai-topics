@@ -8,6 +8,7 @@ sources:
   - raw/articles/2026-06-03_zayarni-qdrant-branch-aware-vector-search.md
   - https://qdrant.tech/documentation/tutorials-search-engineering/branch-aware-search/
   - https://neon.com/docs/introduction/branching
+  - https://turbopuffer.com/docs/branching
 ---
 
 # Branch-Aware Search
@@ -82,9 +83,36 @@ See: [[qdrant]] tutorial at [qdrant.tech](https://qdrant.tech/documentation/tuto
 | **Use case** | Scoped semantic search across versioned docs | Dev/test environments, CI/CD branching, schema migration |
 | **Performance impact** | Filter adds O(depth) clauses to HNSW | Creating branches has zero impact on parent performance |
 
+## Parallel: turbopuffer's Namespace Branching
+
+[[turbopuffer]] implements branching at the **search infrastructure** layer — closer to Qdrant's domain but with a fundamentally different architecture:
+
+| Dimension | Qdrant Branch-Aware Search | turbopuffer Namespace Branching |
+|---|---|---|
+| **Layer** | Vector index (search/retrieval) | Search engine on object storage |
+| **Branching model** | Application-level MVCC pattern in payload | Native infrastructure primitive (`branch_from` API) |
+| **Branch scope** | Per-document visibility within a collection | Entire namespace (all documents + indices) |
+| **Creation cost** | Zero (filter logic at query time) | Constant-time, regardless of namespace size |
+| **Data sharing** | Points shared via filter; no physical duplication | Copy-on-write over object storage; shared until divergence |
+| **Independence** | Read-only scoping (writes always go to branch) | Fully independent — reads, writes, queries, deletes on either side |
+| **Chain depth** | Unlimited (ancestry list) | Unlimited (branch from branches) |
+| **Branches per parent** | Unlimited | Unlimited |
+| **Pricing** | No branching cost (filter overhead only) | Flat $0.032/branch + standard storage per logical bytes |
+| **Use case** | Scoped search across versioned document corpus | Per-developer sandboxes, test pipelines, RL training reproducibility, snapshots |
+
+### Architectural Contrast
+
+- **Qdrant** treats branching as an **application-level pattern**: you build the MVCC logic yourself using payload fields, nested filters, and sequence numbers. Flexible but requires implementation effort.
+- **turbopuffer** treats branching as a **native infrastructure primitive**: one API call (`branch_from`) creates a fully independent namespace clone. Simpler but scoped to namespace-level granularity.
+- **Neon** treats branching as a **database-layer feature**: copy-on-write at the page level with git-like CLI/API integration.
+
+### Key Insight
+
+turbopuffer's approach is the most "batteries-included" — branching is a first-class API, not a pattern you implement. This reflects its object-storage-native architecture: since all data lives in S3, creating a CoW clone is a metadata operation on the storage layer. Qdrant's approach gives more fine-grained control (per-document visibility within a collection) but requires the developer to manage the versioning logic.
+
 ### Shared Design Principle
 
-Both systems apply **"branch your data like you branch your code"**:
+All three systems apply **"branch your data like you branch your code"**:
 
 - **No duplication**: shared underlying data (points / pages) until divergence
 - **Isolation**: changes on a branch don't affect the parent
@@ -99,12 +127,17 @@ Both systems apply **"branch your data like you branch your code"**:
 4. **Code search** — feature branch search scoped to its own + main's view
 5. **Dev/test environments** — database branches for safe schema experimentation (Neon)
 6. **CI/CD pipelines** — ephemeral database branches per PR (Neon + Vercel integration)
+7. **Codebase indexing** — embed once, branch per local checkout so only changed files need re-indexing (turbopuffer)
+8. **RL training reproducibility** — branch corpus for exact training environment preservation during ablation studies (turbopuffer + SID AI)
+9. **Snapshots** — capture state of a changing namespace at a point in time, query the immutable snapshot (turbopuffer)
 
 ## Open Questions
 
 - **Recall degradation**: On long-lived branches, most points become superseded. The visibility filter excludes most of the corpus — does filtered HNSW stay in-graph or fall back to exact search? (raised by Kayhan Babaee)
-- **Merge conflicts**: Neither system has automated merge conflict resolution for divergent edits to the same document/row
+- **Merge conflicts**: Neither Qdrant nor Neon has automated merge conflict resolution for divergent edits to the same document/row
 - **Deep ancestry cost**: While filter grows linearly with depth, very deep branch trees (10+) may degrade query latency
+- **Storage billing at scale**: turbopuffer bills each branch as a full namespace (logical bytes). As branches diverge, storage costs could grow faster than expected — reduction planned after production observation
+- **Pattern vs primitive tradeoff**: When should you build MVCC yourself (Qdrant pattern) vs use a native branching API (turbopuffer/Neon)? Depends on whether you need per-document granularity or namespace-level isolation
 
 ## Related Concepts
 
@@ -112,3 +145,4 @@ Both systems apply **"branch your data like you branch your code"**:
 - [[rag-systems]] — primary application domain for branch-aware retrieval
 - [[agentic-retrieval]] — agents may need branch-scoped search for version-aware tasks
 - [[multitenancy]] — branch isolation parallels tenant isolation patterns
+- [[zero-disk-architecture]] — turbopuffer's object-storage-native model enables cheap branching
