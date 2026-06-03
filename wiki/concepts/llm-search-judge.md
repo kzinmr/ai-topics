@@ -16,11 +16,13 @@ sources:
   - raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md
   - raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md
   - raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md
+  - raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge.md
 related:
   - concepts/ndcg
   - concepts/query-understanding
   - concepts/bm25
   - entities/doug-turnbull
+  - concepts/llm-as-judge
 ---
 
 # LLM Search Judge
@@ -195,6 +197,39 @@ Turnbull distinguishes between LLM judges and implicit user signals (clicks, eng
 - **Domain adaptation:** 73% agreement on e-commerce doesn't guarantee similar performance on legal, medical, or technical search.
 - **Cost still matters:** While cheaper than humans, running pairwise LLM judges on 10K+ query-result pairs isn't free. Caching, batching, and cheap model selection (gpt-4.1-nano) are essential.
 
+## Rubric Judges for RL Training (The LLM Data Company, 2026)
+
+The LLM Data Company's [rubric judge study](https://www.llmdata.com/blog/rubric-judge) examines the same LLM-as-judge paradigm from the **RL training** perspective rather than search evaluation. The connection is deep:
+
+### Convergent Findings
+
+| Dimension | Search Judge (Turnbull) | Rubric Judge (LLM Data Co.) |
+|-----------|------------------------|----------------------------|
+| **Core insight** | Weak judges combine into strong predictions | Well-designed rubrics make cheap judges match expensive ones |
+| **Aggregation** | Decision tree over pairwise judges | Full-rubric grading (one call for all criteria) |
+| **Cost discovery** | Cheap local models (Qwen) suffice per comparison | gpt-oss-120b at $0.001/run matches Opus 4.7 at $0.076 |
+| **Criteria design** | Specialized per-attribute judges > all-in-one | Explicit rule-like criteria > standard-like criteria |
+| **Model scaling** | Frontier models only needed for complex reasoning | Reasoning buys marginal F1 (0.002–0.010) at huge latency cost |
+
+### Divergent Approaches
+
+- **Grading mode**: Turnbull uses **pairwise** (A vs B → preference), then aggregates via ELO/decision tree. LLM Data Co. uses **full-rubric** (one call grades all criteria as MET/UNMET). Both beat per-criterion approaches.
+- **Domain scope**: Turnbull's search judges evaluate **relevance** (is this result good for this query?). Rubric judges evaluate **correctness** (does this output satisfy medical criteria?). The former is relative, the latter is absolute.
+- **Reward hacking**: The rubric judge article explicitly addresses reward hacking as the primary risk — underspecified criteria become exploit surfaces for RL optimization. Turnbull's search judges face analogous risks (position bias, all-in-one prompt gaming).
+
+### Synthesis: Criteria Design > Model Choice
+
+Both lines of research converge on one principle: **the quality of the evaluation criteria matters more than the model running the judge.** Turnbull shows that multiple cheap specialized judges outperform one expensive all-in-one judge. LLM Data Co. shows that explicit rubric criteria eliminate the need for expensive judge models entirely.
+
+For search RL (e.g., training retrieval agents), this suggests: design the reward rubric with explicit, rule-like criteria for each relevance dimension (precision, recall, freshness, authority), then use cheap judges per dimension, aggregated by a decision tree or weighted sum — not a single frontier model making holistic judgments.
+
+### Implications for Agentic Search
+
+The rubric judge framework extends naturally to [[concepts/agentic-search|agentic search]] evaluation:
+- **Document-centric reward** (SID-1's NDCG) is a rubric with one criterion: retrieval quality
+- **Multi-criteria rubrics** could evaluate agent search behavior: query diversity, result coverage, tool usage efficiency, answer grounding
+- **Reward hacking in search RL** mirrors the rubric case: agents can game NDCG by over-reporting or gaming recall metrics
+
 ## References
 
 - **Doug Turnbull**, *Cheat at Search Part 4: LLM as a Judge* (slides), 2026 — [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge]]
@@ -202,3 +237,6 @@ Turnbull distinguishes between LLM judges and implicit user signals (clicks, eng
 - **Doug Turnbull**, *Search Evaluation: NDCG* (blog), 2026 — [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg]]
 - **Lin et al.**, *Umbrella: A Framework for LLM-based Search Evaluation*
 - **Turnbull & Grainger**, *AI-Powered Search* (Manning, 2025)
+- **The LLM Data Company**, *Notes on Choosing a Rubric Judge*, 2026 — [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]]
+- **Mahmoud et al.**, *Reward Hacking in Rubric-Based RL*, 2026
+- **Rao & Callison-Burch**, *AutoRubric: Unifying Rubric-based LLM Evaluation*, 2026

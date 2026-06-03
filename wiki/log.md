@@ -5945,3 +5945,8 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **entities/jo-kristian-bergum.md**: Added "Agent queries cost more to serve" (Jun 2026) to Key Writings (Part 3 of agentic retrieval series) and Timeline.
 - **index.md**: Updated hornet and agentic-retrieval descriptions with 8.4x benchmark data.
 - **Connection**: Part 3 of Hornet's agentic retrieval series. Parts 1-2 (deep-research, query behavior analysis) were previously ingested. This part shifts from "what agents query like" to "what it costs to serve those queries" — the first concrete serving cost benchmark quantifying the human→agent distribution shift.
+
+### 2026-06-03T13:29:50Z — Rubric Judge Article Ingestion
+- Saved raw article: wiki/raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge.md
+- Updated concepts/llm-search-judge.md: added Rubric Judge section + cross-references
+- Updated concepts/llm-as-judge.md: added rubric judge source

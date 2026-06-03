@@ -1705,6 +1705,7 @@
 - [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge]] — LLM as a Judge — Cheat at Search Part 4. Google Slides covering pointwise/pairwise LLM judges, double-checking swap, multi-judge ensemble + decision tree (73%→91% precision). Companion: [[raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture]], [[concepts/llm-search-judge]]
 - [[raw/articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search]] — Long Running Search Agents — Cheat at Search. Google Slides covering 7 strategies for persistent agents, context compaction, local index memory, frontier prompts.
 - [[raw/transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
+- [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/llm-search-judge]], [[concepts/llm-as-judge]]
 
 ## Raw Transcripts (3 pages)
 
