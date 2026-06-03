@@ -81,6 +81,7 @@
 - [[entities/michael-lively]] — Michael Lively — Software engineer and blogger. Reverse-engineered Claude's generative UI system and recreated it for pi terminal coding agent using Glimpse + morphdom.
 - [[entities/microsoft-ai-frontiers]] — Microsoft AI Frontiers — Boutique research lab inside Microsoft Research. Produced [[echo-rl|ECHO]] (hybrid GRPO + environment prediction for CLI agents). Led by Ahmed Awadallah.
 - [[entities/mikhail-parakhin]] — CTO of Shopify. Former Microsoft division head (Windows, Edge, Bing, Ads). Led Shopify's Tangle/Tangent/SimGym AI infrastructure triad. Advocates no token limits and non-transformer architectures.
+- [[entities/mixedbread]] — Mixedbread — AI retrieval/search company. mxbai-embed series (22M+ downloads), Wholembed v3 (first semantic model to surpass BM25), Latent Terms research. Key people: Benjamin Clavié, Sean Lee, Aamir Shakir.
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/kim-isenberg]] — Kim ‘Chubby’ Isenberg — Tech blogger, developer
@@ -424,6 +425,7 @@
 - [[entities/mimi]] — **Mimi (Kyutai)** | Ultra-low-rate streaming speech codec: 24 kHz → 12.5 Hz → 1.1 kbps, 80 ms latency. WavLM-distilled semantic layer. Designed for Moshi full-duplex spoken dialogue.
 - [[entities/minimax]] — MiniMax AI — Chinese AI company, M2.7 coding model scoring 56-59 on SWE-Bench Pro (open weights). Part of China's agentic coding sprint alongside Kimi K2.6 and Z.ai GLM-5.1.
 - [[entities/minimaxir-com]] — **Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at concepts/buzzfeed, where he has applied machine...
+- [[entities/mixedbread]] — Mixedbread — AI retrieval/search company. mxbai-embed series, Wholembed v3 (first semantic model to surpass BM25), Latent Terms research.
 - [[entities/mira-murati]] — **Role** | CEO & Co-founder, Thinking Machines Lab; Former CTO, OpenAI |
 - [[entities/mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
 - [[entities/mitchell-hashimoto]] — HashiCorp co-founder (Vagrant, Terraform, Vault), Ghostty creator. Left GitHub in 2026 citing instability from AI agent scale.
@@ -1323,6 +1325,7 @@
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/lambda-rlm]] — Lambda-RLM — Research combining Lambda calculus with reinforcement learning for improved machine reasoning.
 - [[concepts/langgraph]] — LangGraph — Low-level orchestration framework developed by LangChain. Provides stateful graph-based agent construction. Built-in Persistence Layer (short/long-term memory), Human-in-the-loop (interrupt/approve/time travel), Fault Tolerance, Streaming. Aims to balance high-level abstraction with low-level control under Harrison Chase's "Keras for Agents" philosophy. Designed as an antithesis to the dangers of Agent Abstractions (context hiding).
+- [[concepts/latent-terms]] — Latent Terms — Sparse features extracted from dense retrieval model activations via SAEs. Form a Zipfian-distributed vocabulary indexable with BM25. Outperforms single-vector backbones, competitive with SPLADE-v3.
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/legal-agent-benchmark]] — Legal Agent Benchmark (LAB, Harvey, May 2026): Open-source agent benchmark for complex legal tasks. All-pass grading with behavioral trace analysis. Frontier models complete <10% of tasks; self-correction is strongest success signal (+1.5 points).
 - [[concepts/lexical-search]] — Lexical Search: token-based matching against inverted index. Tokenization, query processing (AND/OR), multi-field search (DisMax, BM25F). Foundation for BM25 scoring. Doug Turnbull's "Cheat at Search Essentials" course + BM25F derivation.

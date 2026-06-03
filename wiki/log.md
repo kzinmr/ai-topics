@@ -5726,3 +5726,11 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - `2026-06-02_glean_generative-ai-stack-for-software-engineers.md`
 
 **Triage summary**: Take=2 (Harvey articles), Reference=2 (Fireworks Trilogy, Glean AI stack), Skip=5 (ElevenLabs events ×4, Simon Willison link blog). Archive saved to `wiki/raw/archived/triage/dreaming/`.
+- 2026-06-03 | create | entities/mixedbread.md | Mixedbread entity page — AI retrieval/search company, mxbai-embed series, Wholembed v3, Latent Terms research
+
+## 2026-06-03
+- **ingested** raw/articles/2026-06-02_mixedbread_latent-terms-dense-retrievers.md — Mixedbread "Latent Terms" blog post (SAE on dense retrievers → BM25-ready Zipfian vocabulary)
+- **created** concepts/latent-terms.md — concept page for Latent Terms (SAE-extracted retrieval vocabulary)
+- **created** entities/mixedbread.md — Mixedbread company entity page
+- **updated** entities/benjamin-clavie.md — added Latent Terms paper (arXiv:2605.29384) to current work and sources
+- **updated** index.md — added latent-terms, mixedbread entries

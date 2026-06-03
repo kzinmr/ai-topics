@@ -3,7 +3,7 @@ title: Benjamin Clavié
 type: entity
 aliases: [bclavie, Ben Clavie]
 created: 2026-04-10
-updated: 2026-05-22
+updated: 2026-06-03
 status: L3
 sources:
   - https://ben.clavie.eu/
@@ -20,6 +20,7 @@ sources:
   - https://parlance-labs.com/education/rag/ben.html
   - raw/articles/2026-05-20_clavie-tsukuba-ir-talk-colbert-late-interaction.md
 related:
+  - entities/mixedbread
   - colbert
   - information-retrieval
   - late-interaction
@@ -214,6 +215,8 @@ Clavié is unusually candid in the ML community about the relationship between h
 
 **Late Interaction Workshop:** Organized the first Late Interaction Workshop at ECIR 2026, playing a role in building the ColBERT family research community.
 
+**Latent Terms — SAE-extracted BM25-ready Vocabularies (2026-06):** Clavié et al. published a preprint showing that dense retrievers contain information far beyond what single-vector scoring can express. By applying Sparse Autoencoders (SAEs) to retriever activations, they extracted a sparse vocabulary ("Latent Terms") that follows a Zipfian distribution and is directly usable with BM25. Key findings: (1) Latent Terms + BM25 over Nomic outperforms SPLADE-v3; (2) Contriever's Recall@100 on LIMIT jumps from 0.053 to 0.729; (3) the structure emerges from retrieval contrastive training, not from pre-trained LMs alone. arXiv:2605.29384. [[concepts/latent-terms|Latent Terms]]
+
 **Tsukuba IR Talk (2026-05-20):** In "ColBERT and Late Interaction Retrieval: Why, How, and What Next?", Clavié provided a systematic overview of IR paradigms. Key insights: Single-Vector's limits lie not in the model itself but in the **scoring mechanism (cosine similarity)**; the Max component of MaxSim is the key to performance (SumSim/AvgSim collapses); ColBERT achieves comparable performance with one order of magnitude less data than single-vector (data efficiency); 0.13B ColBERT outperforms 8B single-vector models on BrowseComp-Plus. Open questions: oracle gap (even best retrieval ~12% of tasks still wrong), MaxSim instruction-following collapse, delayed large-scale contrastive pre-training (first appeared April 2026, standard for single-vector since 5 years ago). [[raw/articles/2026-05-20_clavie-tsukuba-ir-talk-colbert-late-interaction|slides]]
 
 **Open-Source Toolchain:** Built an ecosystem covering the entire IR toolchain: RAGatouille → rerankers → byaldi → PyLate.
@@ -267,7 +270,7 @@ Clavié is unusually candid in the ML community about the relationship between h
 
 ## Related Concepts
 
-[[concepts/colbert]], [[concepts/ragatouille]], [[concepts/modernbert]], [[concepts/information-retrieval]], [[late-interaction]], [[concepts/token-pooling]], [[concepts/synthetic-data]], [[concepts/rag-not-dead-series]], [[concepts/modern-retrieval-toolkit]],
+[[concepts/colbert]], [[concepts/ragatouille]], [[concepts/modernbert]], [[concepts/information-retrieval]], [[late-interaction]], [[concepts/token-pooling]], [[concepts/synthetic-data]], [[concepts/rag-not-dead-series]], [[concepts/modern-retrieval-toolkit]], [[concepts/latent-terms]],
 
 ## Sources
 
@@ -291,3 +294,5 @@ Clavié is unusually candid in the ML community about the relationship between h
 - https://mixedbread.ai/changelog — Mixedbread platform changelog
 - https://hamel.dev/notes/llm/rag/not_dead.html — "Stop Saying RAG Is Dead" — co-launched 7-part series with Hamel Husain (2026)
 - https://hamel.dev/notes/llm/rag/p1-intro.html — "P1: I don't use RAG, I just retrieve documents" — Part 1 presentation (2026)
+- https://arxiv.org/abs/2605.29384 — Latent Terms: Dense Retrievers Contain Trivially Extractable BM25-ready Zipfian Vocabularies (May 2026)
+- https://www.mixedbread.com/blog/latent-terms — Latent Terms blog post (June 2026)
