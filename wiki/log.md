@@ -5760,3 +5760,10 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
   - `raw/articles/2026-06-02_softwaredoug_long-running-search-agents.md`
 - **Updated**: `wiki/index.md` — Expanded "Raw Transcripts" section (1→2 pages), added `2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
 - **Updated**: `entities/doug-turnbull-projects.md` — Slide deck series now links directly to raw slide articles for Parts 1, 4, and added Part 5 (Long Running Search Agents)
+
+
+## [2026-06-03] Ingest | Cheat at Search Part 3 lecture transcript (Steering Lost Agents)
+
+- **Created**: `raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md` — Lecture transcript for Part 3: Steering Lost Agents. Covers: harness design patterns, tool calling loops, carrots and sticks steering model, file system-like tools (ls/cat/grep) on Wayfair dataset, Ralph loop, validators/stoppers, LLM judge validation, relevance feedback, few-shot priming, query expansion/skills, tool guards (ToolState/disallowing repeated queries), sub-agent delegation, BEAM search for exhaustive exploration. NDCG results: BM25=0.541, agent+FS tools greater than BM25, +few-shot further improvement, +tool guards meaningful bump.
+- **Updated**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md` — Added cross-reference to lecture transcript (frontmatter + body).
+- **Updated**: `wiki/index.md` — Raw Transcripts section (2 to 3 pages), added Part 3 transcript entry.
