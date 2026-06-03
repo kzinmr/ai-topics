@@ -1,6 +1,23 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 x-bookmarks-ingest | OPSD empirical analysis (ar0cket1) + LangChain RubricMiddleware
+
+- **Source:** X bookmarks batch (2 processable / 4 total). ar0cket1 OPSD X Article (May 12) + LangChain RubricMiddleware X Article (Jun 2)
+
+- **New entity pages:** [[entities/ar0cket1]] (pseudonymous OPSD researcher), [[entities/seshadri]] (LangChain, RubricMiddleware co-author), [[entities/sydney-runkle]] (LangChain, RubricMiddleware co-author)
+
+- **New concept page:** [[concepts/rubric-middleware]] — LangChain Deep Agents middleware for self-evaluating agent loops. Dedicated grader sub-agent (cheaper model + tools), per-criterion feedback, automatic iteration until satisfied.
+
+- **Enriched concept page:** [[concepts/on-policy-self-distillation]] — Added "Empirical KL Analysis & Stability (ar0cket1, May 2026)" section with KL divergence profile (max KL 13.249 vs OPD 3.736), Positive Pressure Token Rate analysis (83% down-weight vs OPD 80% up-weight), GEPA-based hint optimization results (KL shocks halved, 2× mean KL), continual learning economics ($10M → 1.55T effective tokens). Added "Open Problems" section. Updated frontmatter: new sources, aliases, related pages.
+
+- **Enriched concept page:** [[concepts/deep-agents]] — Added RubricMiddleware to Related section
+
+- **Raw articles saved:** raw/articles/2026-05-12_ar0cket1_on-policy-self-distillation.md, raw/articles/2026-06-02_langchain_rubric-middleware.md
+
+- **Skipped (image/video-only, no content):** Factory Router announcement, Perplexity Computer hybrid agentic inference announcement
+
+
 
 ## 2026-06-04 ingest | Doug Turnbull "Search with Agents Lesson 6 — RLMs & Ranker Coding"
 

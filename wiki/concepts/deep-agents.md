@@ -59,6 +59,9 @@ Deep agents require secure code execution environments. Options include:
 
 ## Related
 
+- [[concepts/rubric-middleware]] — Middleware for self-evaluating agent loops with per-criterion grader feedback
+- [[concepts/deep-agents-runtime]] — Production execution primitives for deep agents
+
 - [[concepts/pydantic-ai]] — Framework supporting deep agents
 - [[concepts/harness-engineering]] — Environment design for autonomous agents
 - [[concepts/code-mode]] — Code execution for deep agents

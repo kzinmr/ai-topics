@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 2352 | Indexed entries: 1712 | Concepts: 1557 | Entities: 758
+> Last updated: 2026-06-03 | Total pages: 2356 | Indexed entries: 1716 | Concepts: 1558 | Entities: 761
 
-## Entities (758 pages)
+## Entities (761 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -17,6 +17,7 @@
 - [[entities/alan-nichol]] — Alan Nichol — Co-founder and CTO of Rasa. Creator of open-source conversational AI framework spaCy. Focus on NLU and dialogue systems.
 - [[entities/antoine-chaffin]] — Antoine Chaffin — Researcher at LightOn. Lead author of DenseOn/LateOn (SOTA open retrieval models), PyLate (CIKM 2025). Late Interaction Workshop co-organizer.
 - [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H ($965B valuation) with expanded investor consortium (Capital Group, Coatue, GIC, etc.) and compute commitments (Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus). Safety-focused LLM lab founded by former OpenAI researchers.
+- [[entities/ar0cket1]] — ar0cket1 — Pseudonymous AI/ML researcher. OPSD (On-Policy Self-Distillation) empirical analysis: KL divergence profiling, positive pressure asymmetry (83% down-weight), GEPA-based hint optimization. 216 bookmarks.
 - [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
 - [[entities/ash-vardanyan]] — Ash Vardanyan — Open-source developer and performance engineer. Creator of USearch, SimSIMD, and other high-performance vector libraries.
 - [[entities/autoreason]] — Autoreason
@@ -113,10 +114,12 @@
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
 - [[entities/semianalysis]] — SemiAnalysis — Boutique AI/semiconductor research firm. Creator of ClusterMAX GPU cloud ratings (209 providers, 10 criteria, Platinum/Gold/Silver/Bronze tiers). Dylan Patel (CEO). Independent benchmark beyond $/GPU-hr.
+- [[entities/seshadri]] — Seshadri (@sseshadri43) — LangChain engineer. Co-author of RubricMiddleware for Deep Agents (self-correcting grader loops).
 - [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark for knowledge-grounded agent evaluation.
 - [[entities/siyan-zhao]] — Siyan Zhao — UCLA / Meta Superintelligence Labs researcher. Lead author of On-Policy Self-Distillation (OPSD) for LLM reasoning post-training (2026). Same-model self-distillation with privileged ground-truth context.
 - [[entities/stable-audio-3]] — Stable Audio 3.0 — Stability AI's 4-model audio generation family. Up to 6m20s tracks, 3/4 open weights. SAME autoencoder, no CFG, inpainting. May 2026.
+- [[entities/sydney-runkle]] — Sydney Runkle (@sydneyrunkle) — LangChain engineer. Co-author of RubricMiddleware for Deep Agents (self-correcting grader loops).
 - [[entities/takuya-akiba]] — Takuya Akiba (@iwiwi) — Staff Research Scientist at Sakana AI. Creator of Optuna, co-creator of ChainerMN. Kaggle Grandmaster, TopCoder legend. PhD from UTokyo.
 - [[entities/tambo]] — Tambo (tambo.co) — Open-source Generative UI toolkit for React. AI agents respond using existing components
 - [[entities/thibault-sottiaux]] — OpenAI executive. Led Codex development; May 2026 promoted to lead core product and platform teams (ChatGPT + Codex + API). Overseeing "super app" development.
@@ -1461,7 +1464,7 @@
 - [[concepts/offline-evaluation]] — Offline Evaluation — Pre-production evaluation pipelines for LLM applications.
 - [[concepts/ollama]] — Ollama
 - [[concepts/on-policy-distillation]] — On-Policy Distillation (OPD) — Post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL. Introduced by Kevin Lu / Thinking Machines Lab (Oct 2025). 9-30× compute reduction vs SFT, 50-100× vs RL.
-- [[concepts/on-policy-self-distillation]] — On-Policy Self-Distillation (OPSD) — Self-distillation where the same model serves as both student and teacher. The teacher references correct labels as privileged context and provides token-level supervision via JSD_β. Achieves equivalent or better reasoning performance at 1/64 the token cost of GRPO (Siyan Zhao, UCLA/Meta, 2026). Foundational technique for SDAR.
+- [[concepts/on-policy-self-distillation]] — On-Policy Self-Distillation (OPSD) — Same-model self-distillation with teacher seeing ground-truth as privileged context. JSD_β loss, token-level supervision. ≥ GRPO at 1/64 token cost (Siyan Zhao, UCLA/Meta, 2026). Empirical KL analysis by ar0cket1: max KL 13.25 vs OPD 3.74, 83% down-weight bias, GEPA hint optimization halves KL shocks. Foundational technique for SDAR.
 - [[concepts/one-person-unicorn]] — One-Person Unicorn — Small-team, high-value AI-native companies enabled by agentic tooling
 - [[concepts/open-source-ai]] — Open-Source AI Strategy — Strategic approaches to open-source AI development and adoption
 - [[concepts/open-source-ai-destruction]] — AI agents overwhelm open source maintainers with low-quality PRs. CHAOSS metrics broken by AI events (Nesbitt CHAOSS analysis).
@@ -1549,6 +1552,7 @@
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): RL training paradigm using external rewards from deterministic verifiers. Combined with GRPO, eliminates both reward model and critic model. 10x RL compute from o1→o3. ART·E (beats o3 for $80). Named by Tülu 3, popularized by DeepSeek-R1.
 - [[concepts/rlvr-science-limitations]] — RLVR Science Limitations — Limitations and challenges in Reinforcement Learning from Verification for scientific reasoning.
 - [[concepts/roll-rl]] — ROLL (Alibaba): RL framework for diverse users. Rich interfaces and high configuration flexibility. DeepSpeed/Megatron, GRPO+PPO, Ray orchestration.
+- [[concepts/rubric-middleware]] — RubricMiddleware: LangChain Deep Agents middleware for self-evaluating agent loops. Define a rubric, dedicated grader sub-agent evaluates per criterion with tools, agent iterates until satisfied. /goal-like pattern but with separate cheaper grader model.
 - [[concepts/runtime-opinionated-sdk]] — Concept of viewing Claude/OpenAI Agents SDK as a mini runtime. Defines "runtime-opinionated" as the state where an SDK embeds an execution model (reactive tool loop, runtime-owned tool orchestration, composable actors, native observability) rather than being a mere utility library. Essential difference from LangGraph (developer authors orchestration), comparison with PI (PI has deeper scheduler/lifecycle semantics). Source: kzinmr (2026-05-15).
 - [[concepts/saas-agent-era]] — SaaS structural transformation in the AI Agent era. From feature distribution platforms to Agent operating systems. UI thinning, artifact separation for customization, extending multi-tenancy into the Agent dimension, shift to outcome-based value units. Includes classification of dangerous vs strong SaaS.
 - [[concepts/sana-vm]] — SANA-WM — NVIDIA's 2.6B parameter open-source world model. 60-second 720p video generation on single GPU. Gated DeltaNet + Softmax hybrid. Apache 2.0.

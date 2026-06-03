@@ -2,23 +2,30 @@
 title: "On-Policy Self-Distillation (OPSD)"
 type: concept
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-06-03
 tags:
   - training
   - reasoning
+  - self-distillation
+  - evolutionary-algorithms
+  - gepa
 aliases:
   - OPSD
   - On-Policy Self-Distillation
   - Self-Distilled Reasoner
 sources:
   - raw/articles/2026-05-18_siyan-zhao_opsd-self-distilled-reasoner.md
+  - raw/articles/2026-05-12_ar0cket1_on-policy-self-distillation.md
   - https://siyan-zhao.github.io/blog/2026/opsd/
+  - https://x.com/i/article/2054081238236020736
 related:
   - concepts/on-policy-distillation
   - concepts/sdar-self-distilled-agentic-rl
   - concepts/model-distillation
   - concepts/grpo-rl-training
+  - concepts/gepa
   - entities/siyan-zhao
+  - entities/ar0cket1
 status: complete
 ---
 
@@ -128,6 +135,83 @@ Both are on-policy distillation, but differ in teacher construction:
 - Keeps GRPO as **primary objective** (OPSD is auxiliary only)
 
 See [[concepts/sdar-self-distilled-agentic-rl]] for the full SDAR method.
+
+## Empirical KL Analysis & Stability (ar0cket1, May 2026)
+
+Independent experiments by [[entities/ar0cket1|ar0cket1]] (@ar0cket1) on Olmo 3 7B (math data from Nemotron Math v2) revealed deep behavioral differences between OPSD and OPD at the token level. The experiments used 25 hand-written hint types across 10 problems, with 4 student rollouts per problem.
+
+### KL Divergence Profile
+
+| Metric | OPSD | OPD |
+|--------|------|-----|
+| Mean KL | Similar to OPD (controllable) | Similar to OPSD (controllable) |
+| **Max KL** | **13.249** | **3.736** |
+| KL mass concentration | Distributed (many moderate KL tokens) | Concentrated (few outlier high-KL tokens) |
+| Low-entropy token impact | **High** (messes with high-confidence tokens) | Low |
+
+**Key finding:** OPSD exhibits **KL shocks** — individual tokens with very high KL divergence. These are much more frequent in OPSD than OPD. While OPD concentrates its KL mass in sparse, outlier tokens, OPSD distributes KL mass more broadly. OPSD also disproportionately messes with high-confidence (low-entropy) tokens, contributing to instability.
+
+### Positive Pressure Token Rate (Critical Concern)
+
+A striking asymmetry in **directional pressure**:
+
+| Direction | OPSD | OPD |
+|-----------|------|-----|
+| **Down-weights student-chosen token** | **83%** | 20% |
+| **Up-weights student-chosen token** | 17% | **80%** |
+
+OPSD predominantly **down-weights** the tokens the student model actually chose (83% of the time), while OPD predominantly **up-weights** the student's choices (80%). This "negative bias" proved extremely stubborn — across 40 hand-written hints, ar0cket1 could not significantly budge this ratio toward OPD-like behavior. This is one of the largest concerns about OPSD in practice: the teacher is telling the student "you're wrong" far more often than "you're right" at the token level.
+
+### OPSD vs OPD: Token-Level Behavioral Analysis
+
+- **OPD** rewards productive search — using invariants, rephrasing problems productively. It functions as a "perfect PRM."
+- **OPSD** touches almost the opposite tokens. It is most active on tokens like: "problem", "Let", "First", "Alternatively", "Wait", "equation", "find." It concentrates around bringing back search paths that were already explored and skipped, and rewards tokens that reintroduce answer constraints or solution-validity checks.
+- OPSD's signal is driven by **moving the search toward the hint's suggestion**, regardless of whether that direction is productive.
+
+## Hint Optimization via GEPA (Evolutionary Prompt Engineering)
+
+Since hand-written hints consistently produced OPSD's negative-skewed KL geometry, ar0cket1 turned to **automated hint optimization** using [[concepts/gepa|GEPA]] (Genetic-Pareto Prompt Evolution):
+
+### Approaches Tried
+
+| Approach | Result |
+|----------|--------|
+| **Answer-only hint conditioning** | Worst — huge KL shocks |
+| **RL-direction + OPSD magnitudes** | Didn't create OPD-like KL geometry |
+| **Verifyable reward or token masking** | Removes KL shocks but doesn't close the OPSD-OPD geometry gap |
+| **Reversing KL direction** | Produced more OPD-like behavior (better positive/negative ratio) — interesting but likely impractical |
+| **GEPA general hint prompt optimization** (20+ hours on RTX 6000 Pro) | **Minimized KL shocks** to ~1/2 of naive OPSD, with 2× mean KL. But couldn't significantly improve positive KL pull |
+| **GEPA per-task hint optimization** (width 3, depth 8) | ~2× cost of regular OPD, 4-5× more sample efficient than RL. No major improvement over general hint gen prompt |
+| **Greedy single-problem GEPA** (40 rounds of mutation) | Could drop KL but couldn't escape the inherent negative bias |
+
+### Surprising Finding: General > Specific
+
+A counter-intuitive result: the **general hint generation prompt** (optimized on a separate dataset) outperformed GEPA optimization **specifically targeted** at individual problems. Even on the problem the specific optimization was designed for, the general prompt did better. This suggests that broad hint-generation strategies may be more robust than problem-specific fine-tuning.
+
+### Full Solution as Hint
+
+Giving the full ground-truth solution as a hint is **extremely unstable**. However, ar0cket1 found it's possible to create more stable variants that bring the KL closer to OPD's mean KL.
+
+## Continual Learning Economics
+
+ar0cket1 provides a cost analysis of OPSD-based continual learning if OPSD can be solved (unlimited upper bound like RL, 10× sample efficiency):
+
+| Spend | Effective RL-equivalent Tokens | Assessment |
+|-------|-------------------------------|------------|
+| $100,000 | 15.48B | Negligible |
+| $1,000,000 | 154.56B | Alright, not huge |
+| $10,000,000 | 1.55T | **Meaningful** |
+
+Key assumptions: ~$50/M output tokens for frontier inference, ~$65/M tokens for continual learning training (inference + backward pass, only ~$15 premium over raw inference). Model lifespan ~2 months before obsolescence.
+
+**Bottom line:** Even with solved OPSD, continual learning is viable primarily for large corporations with huge engineering teams generating high token throughput.
+
+## Open Problems
+
+1. **Does reducing KL shocks improve practical training?** The KL divergence analysis alone has limited predictive power — the reduction in shocks achieved by GEPA optimization needs direct training-run validation.
+2. **Is OPD-like behavior necessary?** Making OPSD fully OPD-like may not be the right proxy. OPSD's different geometry might work if the KL shocks can be controlled.
+3. The **positive pressure asymmetry** (83% down-weight vs OPD's 80% up-weight) appears to be an inherent property of current OPSD formulations — not fixable by hint optimization alone.
+4. Whether **reversed-KL OPSD** could work in practice remains an unexplored direction.
 
 ## Related Pages
 
