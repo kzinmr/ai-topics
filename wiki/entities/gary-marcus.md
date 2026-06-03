@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-05-30
+updated: 2026-06-03
 tags:
   - lab
   - benchmark
@@ -20,6 +20,8 @@ sources:
   - raw/articles/garymarcus.substack.com--p-could-generative-ai-could-turn-out--0880f6f7.md
   - raw/articles/garymarcus.substack.com--p-this-one-weird-trick-might-cost-your--a9a098c7.md
   - raw/articles/garymarcus.substack.com--p-breaking-bad-news-for-three-of-the--1abe3375.md
+  - raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md
+  - raw/articles/garymarcus.substack.com--p-why-things-will-eventually-fall-apart--aa0d561a.md
 ---
 
 # Gary Marcus
@@ -123,6 +125,14 @@ On May 28, 2026, Marcus argued that the **enterprise tokenmaxxing boom may alrea
 
 This analysis extends Marcus's broader critique of AI hype into concrete financial and operational territory, moving from philosophical arguments about reliability to specific market indicators of overinvestment.
 
+
+### Trump AI Preflight Checks Executive Order (Jun 2026)
+
+On June 2, 2026, President Trump signed an executive order mandating **preflight checks** (pre-deployment safety reviews) for AI models with large commercial impact — a policy Marcus had first proposed at the US Senate three years earlier. Marcus described it as "thrilling to see a dream come true." The EO aligns with Marcus's long-standing proposal for FDA-style review for frontier AI models. Source: [[raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md]]
+
+### Why Things Will Eventually Fall Apart (Jun 2026)
+
+On June 2, 2026, Marcus published a post arguing that the AI industry faces a structural economic crisis: no moats (everyone building with same data/architecture → commodity pricing), no clear winners (commodity pricing → no monopoly profits), and growing financial recognition of the problem. Key data points: Google (of all companies) raising equity financing (750K+ views on Marcus's tweet overnight), Bain's report finding "the technology worked [but] the value didn't arrive," and economist Brad DeLong supporting Marcus's thesis on multiple podcasts. This extends the [[#Enterprise Tokenmaxxing Backlash (May 2026)]] analysis with June 2026 developments. Source: [[raw/articles/garymarcus.substack.com--p-why-things-will-eventually-fall-apart--aa0d561a.md]]
 
 ### GPU Rental Price Collapse & What Happens After Tokenmaxxing (May 2026)
 

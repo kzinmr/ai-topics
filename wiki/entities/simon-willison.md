@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-28
+updated: 2026-06-03
 status: L3
-sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md]
+sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md]
 tags: [person, blogger]
 ---
 
@@ -399,3 +399,9 @@ See full article: [[raw/articles/simonwillison.net--2026-may-20-google-io--933c8
 - raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md
 
 **PyCon US 2026 Lightning Talk: "The Last Six Months in LLMs in Five Minutes"** (May 19, 2026): Simon delivered a lightning talk summarizing the LLM landscape from November 2025 to May 2026. Key themes: the November 2025 inflection point (coding agents crossing the quality barrier via RLVR), the model crown changing hands five times in one month (Sonnet 4.5 → GPT-5.1 → Gemini 3 → GPT-5.1 Codex Max → Opus 4.5), the rise of OpenClaw and the "Claws" ecosystem, open-weight models (Gemma 4, GLM-5.1) exceeding expectations, and his signature pelican-on-bicycle SVG benchmark. See [[concepts/llm-landscape-nov-2025-to-may-2026|LLM Landscape Nov 2025–May 2026]].
+
+### June 2026 Updates
+
+**datasette-agent-micropython 0.1a0** (Jun 2, 2026): Simon released an alpha of `datasette-agent-micropython`, using a WASM build of MicroPython as a sandbox for safe Python code execution within Datasette Agent. Notably, GPT-5.5 had so far failed to break out of the sandbox. Source: [[raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md]]
+
+**Microsoft MAI-Thinking-1 & MAI-Code-1-Flash** (Jun 2, 2026): Simon covered Microsoft's Build 2026 MAI model announcements, correcting initial reporting errors about model sizes (35B active ≠ 35B total) and noting the 794B-page proprietary crawl + Common Crawl training data. See [[concepts/microsoft-mai-models]].

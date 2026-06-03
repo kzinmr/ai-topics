@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-05-15
+updated: 2026-06-03
 tags:
   - person
   - blogger
@@ -14,6 +14,7 @@ tags:
   - company
 sources:
   - raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md
+  - raw/articles/martinalderson.com--posts-built-for-turbulence-podcast--40b40da5.md
 ---
 
 
@@ -151,6 +152,10 @@ This post extends his earlier writing on Anthropic's red team finding [500+ crit
 - [No, it doesn't cost Anthropic $5k per Claude Code user](https://martinalderson.com/posts/anthropic-5k-per-user/) (Mar 2026)
 - [Which web frameworks are most token-efficient for AI agents?](https://martinalderson.com/posts/web-frameworks-token-efficiency/) (Feb 2026)
 - [martinalderson.com/archive/](https://martinalderson.com/archive/)
+
+### Podcast: Built for Turbulence (Jun 2026)
+
+Martin appeared on Radical's **"Built for Turbulence"** podcast discussing AI agents' impact on software economics. Topics: 5 people with agents vs 500-person company, the **"Figma Trap"** (paying competitors through own customer usage), why AI-unaudited human-written code is becoming reckless, open weights closing up, and whether small-team-with-agents advantage is temporary. Source: [[raw/articles/martinalderson.com--posts-built-for-turbulence-podcast--40b40da5.md]]
 
 ## References
 

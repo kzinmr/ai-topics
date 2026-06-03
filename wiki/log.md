@@ -5839,3 +5839,12 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
   - `index.md` — removed duplicate skeleton entry, kept correct article + transcript
   - `entities/doug-turnbull-projects.md` — consolidated to single Part 5 entry with companion transcript link
 - **Added transcript reference** to concept page (with Q&A topics: goal mode, context vs memory, access control, taxonomy)
+
+## [2026-06-03] blog-wiki-ingest | 4 references enriched from 14-article blog triage
+
+**Action**: Processed blog triage checkpoint (19 candidates: 1 take → merged into existing pipeline, 4 reference, 14 skip). No new pages needed — microsoft-mai-models.md was already updated by a parallel pipeline earlier today. Enriched 3 entity pages with reference content.
+
+**Entity pages enriched**:
+- **`entities/simon-willison.md`** — Added June 2026 Updates section: datasette-agent-micropython 0.1a0 (MicroPython WASM sandbox, GPT-5.5 failed to escape), Microsoft MAI-Thinking-1/MAI-Code-1-Flash coverage. Updated `updated: 2026-06-03`, added 2 sources.
+- **`entities/martin-alderson.md`** — Added Built for Turbulence podcast section (5 people vs 500, Figma Trap, AI code auditing). Updated `updated: 2026-06-03`, added 1 source.
+- **`entities/gary-marcus.md`** — Added 2 sections: Trump AI Preflight Checks Executive Order (FDA-style review mandate), Why Things Will Eventually Fall Apart (Google equity raising, Bain ROI report). Updated `updated: 2026-06-03`, added 2 sources.
