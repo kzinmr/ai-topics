@@ -1,318 +1,387 @@
 ---
-title: "Hermes Agent"
+title: "Hermes Agent Architecture"
+created: 2026-04-16
+updated: 2026-06-03
 type: entity
-aliases:
-  - hermes-agent
-  - nous-hermes
-tags:
-  - entity
-  - ai-agents
-  - open-source
-  - nous-research
-  - self-improving
-status: complete
-description: "Open-source self-hosted AI agent by Nous Research. Features persistent memory, self-improving skills, and always-on execution. Growing number of users migrating from OpenClaw."
-created: 2026-04-27
-updated: 2026-05-30
+tags: [ai-agents, open-source-ai, tooling, framework]
+aliases: ["Hermes Agent", "nousresearch/hermes-agent"]
 sources:
-  - "https://x.com/i/article/2045080054917476451"
-  - "raw/articles/2026-04-28_15-hermes-agent-features.md"
-  - "https://x.com/i/article/2045935785661349956"
-  - "raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md"
-  - "raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md"
-  - "raw/articles/2026-05-15_shann_hermes-agent-operator.md"
-  - "raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md"
-  - "https://info.deeplearning.ai/hermes-vs.-openclaw-cybersecurity-alarms-ring-more-interactive-conversations-can-agents-do-human-work"
-  - "raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md"
-  - "raw/articles/2026-05-29_atal-upadhyay_hermes-harness-architecture.md"
-related:
-  - "[[concepts/harness-engineering]]"
-  - "[[concepts/hermes-agent-use-cases]]"
-  - "[[concepts/polymarket-trading-agents]]"
-  - "[[concepts/nvidia-rtx-ai-garage]]"
-  - "[[entities/openclaw]]"
-  - "[[comparisons/hermes-vs-openclaw-architecture]]"
-  - "[[entities/qwen]]"
-  - "[[entities/nvidia-dgx-spark]]"
-  - "[[nous-research]]"
+  - https://hermes-agent.nousresearch.com/docs/developer-guide/architecture/
+  - https://hermes-agent.nousresearch.com/docs/developer-guide/agent-loop/
+  - https://hermes-agent.nousresearch.com/docs/developer-guide/prompt-assembly/
+  - https://github.com/NousResearch/hermes-agent
 ---
 
-# Hermes Agent
+# Hermes Agent Architecture
 
-> **Definition:** Open-source self-hosted AI agent developed by Nous Research. Features a three-layer model: persistent memory, self-improving skills, and always-on execution.
+**Overview:** An integrated agent execution platform built around `AIAgent` core, with persistent state, prompt assembly, tool runtime, gateway, and plugin/memory provider layers.
 
-## Basic Information
-- **Developer:** Nous Research (known for YaRN, Nomos, Psyche model families)
-- **Release Date:** February 25, 2026
-- **License:** Open-source
-- **Supported OS:** Linux, macOS, WSL2 (no native Windows support)
+**Creator:** [[teknium]] (Ryan Lopopolo), Nous Research Co-founder & Head of Post-Training
+**GitHub:** [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) (68,000+ stars as of April 2026)
+**Version:** v0.9.0 (April 2026)
+**Documentation:** [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/)
 
-## Three-Layer Model
-
-### Knowledge Layer
-- Built-in memory, session search, LLM-Wiki skill
-- Honcho integration (optional)
-- The agent doesn't just answer — it accumulates knowledge over time
-
-### Execution Layer
-- Multi-agent profiles, child agents, tool system
-- MCP support, persistent machine access
-- Tasks can be decomposed, executed in parallel, and delegated
-
-### Output Layer
-- Cron jobs, gateway delivery (Telegram/Slack/Discord)
-- Web UI, file output
-- Results flow into real workflows, not trapped in chat windows
-
-## Three Differentiators
-
-### 1. Persistent Memory
-
-Hermes's memory system is designed for **cache stability over immediate freshness**:
-
-#### Memory Architecture
-
-| Component | Location | Capacity | Role |
-|-----------|----------|----------|------|
-| **MEMORY.md** | `~/.hermes/memories/` | Hard cap: 2,200 chars | Agent's notes about the world (environment, conventions, experiences) |
-| **USER.md** | `~/.hermes/memories/` | Hard cap: 1,375 chars | Agent's notes about the user (preferences, communication style) |
-| **Session Search** | `~/.hermes/state.db` (FTS5) | SQLite | Cross-session conversation recall |
-
-Total: ~3,575 characters (~1,300 tokens) travel into every system prompt. Entries separated by § (section sign, U+00A7).
-
-#### Frozen System Prompt Design
-
-Memory is captured **once at session start** and pinned as a frozen block in the system prompt. Changes written via the memory tool go to disk immediately but are NOT reflected in the current session — they appear at the next session start.
-
-**Rationale: prefix caching.** Every major LLM provider caches the prompt prefix, so subsequent turns reuse those tokens at a fraction of the cost. As long as the system prompt doesn't change, the cache holds. Hermes trades intra-session memory freshness for cache-stable long sessions.
-
-**Trade-off:** A user who mentions mid-session switching from npm to pnpm will have that fact written to MEMORY.md immediately, but the agent won't use pnpm until the next session.
-
-#### Memory Tool API
-
-Single tool with three actions: `add` (append, rejects exact duplicates), `replace` (substring-match on existing entry), `remove` (substring-match delete). No entry IDs, no UUIDs — the model addresses past entries by quoting a unique substring. Designed as a constrained API surface to make the model think carefully about what it writes.
-
-#### Auto-Compaction: None
-
-When MEMORY.md hits the 2,200-char hard cap, the next write **fails with an error**. The agent must consolidate by hand. No silent garbage collection, no LRU, no sliding window. The design assumes the model can be trusted to manage 3,575 characters directly.
-
-#### Mem0 Integration
-
-Mem0 is one of eight external memory providers. Activation: `hermes memory setup`. Writes `memory.provider: mem0` into config. Exposes three tools: `mem0_profile`, `mem0_search`, `mem0_conclude`. After each turn, user/assistant exchange ships to Mem0 in a background thread — slow/failed calls never block the conversation. Circuit breaker: 2-minute pause after 5 consecutive failures.
-
-In Hermes, Mem0 fixes the 3,575-char ceiling and adds semantic search to replace substring-match retrieval.
-
-### 2. Self-Improving Skills
-- After completing complex tasks (5+ tool calls), skills are automatically created
-- Procedures, pitfalls, and verification steps captured as structured markdown files
-- On similar tasks, the skill is loaded for fast, accurate execution
-- Stored as readable/writable markdown files in `~/.hermes/skills/`
-
-**Curator System** (DeepLearning.AI May 2026):
-- Background archiving of skills unused for 90+ days
-- LLM determines keep / merge / archive for each skill
-- Mechanism to mitigate skill explosion (though not fully preventive. See [[comparisons/hermes-vs-openclaw-architecture|architecture comparison]])
-
-### Agentic Loop (DeepLearning.AI May 2026)
-Hermes' internal loop:
-1. **Prompt Assembly** — personality (SOUL.md) + instructions + tools + skills + memory + conversation history
-2. **Summarization** — compress old messages when exceeding context window
-3. **LLM Send** — send assembled prompt to model
-4. **Dispatch** — execute tool call / skill execution / user response
-5. **Loop** — repeat until final response
-
-This loop contrasts with OpenClaw's Gateway-driven approach. Hermes is agent-centric, OpenClaw is gateway-centric. → [[comparisons/hermes-vs-openclaw]]
-
-### 3. Always-On Execution
-- Runs 24/7 on a server
-- Connects to Telegram, Discord, Slack, WhatsApp, Signal, Email, 15+ platforms via single gateway
-- Natural-language cron ("scan these GitHub repos every morning and summarize")
-- Runs unattended
-
-## Comparison with OpenClaw
-
-| Feature | OpenClaw | Hermes |
-|---------|----------|--------|
-| Learning Loop | static (manual skill install) | closed loop (~15 tool calls to generate skill) |
-| Memory | Manual setup / third-party dependency | Built-in bounded curated memory |
-| Self-improvement | None | Yes (gets smarter with use) |
-| Platform Integration | 50+ (broad) | 15+ (all major) |
-| Security | Standard | Strong |
-| Token Efficiency | **High** (loads only needed tools) | **Lower** (loads all bundled skills 123+, higher cost) |
-
-## Milestones (May 2026)
-
-- **150,000 GitHub Stars**: Achieved in under 3 months (as of May 19, 2026). Confirmed in Shann's (@shannhk) article
-- **Most Used Agent on OpenRouter**: #1 globally in OpenRouter app usage stats (May 2026 week 2). Highest global token usage among all models and frameworks
-- **NVIDIA RTX AI Garage Endorsement**: Featured as the central agent framework in NVIDIA's RTX AI Garage program on the official NVIDIA blog (2026-05-13)
-- **123 Bundled Skills**: 123 skills included at shipping. Covering GitHub PRs, Obsidian, Google Workspace, Linear, Notion, Typefully, Perplexity, Deep Research, etc.
-- **6 Deployment Targets**: Local, Docker, SSH, Daytona, Singularity, Modal
-- **20+ Messaging Surfaces**: Telegram, Discord, Slack, Email, Voice, CLI
-
-### Harness Engineering: "Same Model, Better Results"
-
-A key feature explicitly mentioned in the NVIDIA blog: **consistently superior results from Hermes when comparing the same model across different frameworks**. This is because Hermes functions not as a thin wrapper but as an active orchestration layer. → [[concepts/harness-engineering]]
-
-### NVIDIA DGX Spark Integration
-
-The DGX Spark is positioned as the ideal hardware for Hermes Agent:
-- **128GB unified memory** for running 120B-class MoE models 24/7
-- **Qwen 3.6 35B** (120B-class intelligence in 20GB memory) recommended on DGX Spark
-- **Hermes DGX Spark Playbook**: Official NVIDIA setup guide available
-- Always-on agent design aligns with DGX Spark's 24/7 operation
-
-→ [[entities/nvidia-dgx-spark]], [[concepts/nvidia-rtx-ai-garage]]
-
-## Real-World Usage Examples (Reddit/X/YouTube Survey)
-
-1. **📞 Pre-call client research** — Auto-enriched dossier before meetings (saves 20-30 minutes)
-2. **✉️ Meeting-note to follow-up** — Convert rough notes to polished follow-ups, write TODOs to Obsidian
-3. **🎧 Weekly podcast digest** — 10hr→2hr highlights reel via Voxtral + Mistral Large 3 pipeline
-4. **📬 Daily news briefings** — Cron delivery from $5 VPS + GitHub student plan + Gemini + Ollama
-5. **⚙️ Content-ops pipeline** — Blog creation, cold emails, YC/X/Reddit lead scraping
-6. **💬 24/7 personal assistant** — Across Telegram/WhatsApp channels, persistent memory
-7. **🛡️ Agent watchdog** — Hermes as 2-hour cron monitoring for OpenClaw, fault detection → auto-recovery (within 15 seconds)
-
-## 15 Features Deep Dive (April 2026)
-The article "15 Hermes Agent features you've never touched" (2791 bookmarks, 913 likes, 350K impressions) covers advanced features including:
-- Web search and content extraction capabilities
-- Cron job automation for recurring tasks
-- Skill-based procedural memory system
-- Entity and concept wiki management
-- Multi-agent orchestration patterns
-- Filesystem and terminal integration
-
-## Execution Specialist Role (Dual-Agent Architecture)
-
-Hermes Agent is increasingly used as an **execution specialist** in a dual-agent architecture where OpenClaw serves as the orchestrator and Hermes handles fast, repeatable task execution. They communicate via the **Agent Client Protocol (ACP)**.
-
-This architecture pattern is validated by:
-- **Kilo blog analysis** (Brendan O'Leary, May 2026): "OpenClaw as orchestrator (planning, decomposition, multi-step coordination, scheduling) and Hermes as execution specialist (fast, repeatable task loops)"
-- **Kilo Reddit analysis** (1,300+ comments): ~20% of users run both tools together with this pattern
-- **popularaitools.ai**: "Hermes is significantly faster than OpenClaw on the same model and more lightweight"
-
-### Why Hermes as Execution Specialist
-
-| Strength | Mechanism |
-|----------|-----------|
-| **Speed** | "Noticeably faster" than OpenClaw on same model — lightweight agent loop |
-| **Learning loop** | Self-improving skills get faster/more accurate on repeatable task types |
-| **Sandbox backends** | 5 isolated environments (Local, Docker, SSH, Singularity, Modal) |
-| **Subagent delegation** | `delegate_task` spawns child agents with isolated contexts for parallel work |
-| **Checkpoint/rollback** | Filesystem snapshots before file operations; `/rollback` on failure |
-| **execute_code sandbox** | Mechanical pipelines separated from reasoning-heavy subagent delegation |
-
-### ACP Communication
-
-Hermes communicates with OpenClaw via ACP (Agent Client Protocol), the open standard for agent-to-agent communication. OpenClaw spawns Hermes as an ACP session via `sessions_spawn({ runtime: "acp", agentId: "hermes" })`, treating Hermes as an interchangeable execution backend.
-
-**Key limitation:** Hermes's self-evaluation always passes, so external validation is needed. The dual-agent architecture mitigates this — OpenClaw (orchestrator) validates Hermes (executor) output quality.
-
-See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
-
-## Shann's 4-Level Fleet Operation Model (May 2026)
-
-Shann (@shannhk), AI marketer at Espressio and practitioner running Hermes agents in production, published a multi-agent operations guide ([How to Become a Hermes Agent Operator](https://x.com/i/article/2055317817658900480), 2026-05-15).
-
-### 3 Core Components
-- **Brain** — `~/.hermes/memories/` contains MEMORY.md (business facts) and USER.md (user preferences). Injected at every session start. Cross-session search via SQLite+FTS5
-- **Personality** — Tone defined in `soul.md`. Can assign different personalities (concise, sarcastic, direct, formal, etc.) to 6 agents from one foundation
-- **Skillset** — 123 pre-built skills + self-improvement loop. Agents auto-generate new skills as they work
-
-### 4-Level Setup Model
-
-| Level | Configuration | Use Case |
-|-------|--------------|----------|
-| **Level 1** | Single agent + Control Room | Personal assistant, initial setup |
-| **Level 2** | Multi-specialist (direct dialogue) | Role separation, credential scope division |
-| **Level 3** | Orchestrator + Specialists + Task Bus | Cross-department workflows, delegation and integration |
-| **Level 4** | Level 3 + Cron automation | Weekly SEO reports, server health checks, fully autonomous operation |
-
-### Control Room Pattern
-```
-/root/vps-agents/          → Control plane (docs, rules, runbooks)
-                             No raw secrets stored here
-
-/srv/<agent-name>/data/    → Live runtime (secrets, memory, skills, sessions, cron)
-                             Actual instance of each Hermes agent
-```
-
-### SEO Agent 21-Step Pipeline (Production Case Study)
-
-Entire process runs in one Docker container. Three sub-agents switch contexts per phase:
-
-| Phase | Steps | Content |
-|-------|-------|---------|
-| Research + Ideate | 01-07 | Keyword seed → SERP snapshot → competitor extraction → intent analysis → content gap → internal/external validation |
-| Production | 08-15 | Angle brief → visual strategy → outline → draft → image generation → flowchart → QA |
-| Distribution | 16-21 | Publish prep → schema → internal links → syndication → analytics → monitoring |
-
-### Prototype → Production Methodology
+## Architecture Layers
 
 ```
-Prototype (on Hermes) → 2-3 real-world tests → Fine-tune in dedicated Workspace → Deploy to VPS + Cron
+Input Surface (CLI / Gateway / ACP / Cron / Batch)
+    ↓
+Execution Core (`run_agent.py` → `AIAgent`)
+    ↓
+Support Layer (Prompt Builder / Provider Resolver / Tool Registry / Compression / Memory-Session)
+    ↓
+External Connections (Terminal Backends / Platform Adapters / MCP / Plugins)
 ```
 
-Shann: "You can't write a production agent from scratch. You have to grow it. Hermes accelerates that growth."
+## 1. Core: `AIAgent`
 
-### Rails vs Linux Framing
-Shann's philosophical contrast between Hermes and OpenClaw:
-- **Hermes = Rails**: Opinionated defaults, batteries included, agent makes more decisions
-- **OpenClaw = Linux**: Primitives, guarantees, explicit control, agent only does what it's told
+The architectural center of Hermes. The `AIAgent` class in `run_agent.py` consolidates:
 
-### Model Operations Strategy
-- **Claude Opus 4.7**: Creative work (copywriting, voice, hook generation)
-- **Codex (GPT 5.5)**: Structured work (coding, planning, multi-step workflows, browser automation)
-- Both used together. Model switching per agent/task via Tool Gateway
+- **Effective prompt assembly** — constructs structured system prompts from multiple sources
+- **Provider/API mode selection** — supports `chat_completions`, `codex_responses`, `anthropic_messages` modes
+- **Interruptible LLM calls** — can pause/abort execution on new user input mid-flight
+- **Tool execution** — sequential for single/interactive tools, parallel for non-interactive tools
+- **Session history management**
+- **Compression / retry / fallback model handling**
 
-→ [[entities/shannhk]], [[concepts/hermes-agent-use-cases]]
+### API Execution Modes
 
-## Atal Upadhyay's 9-Part Harness Architecture Analysis (May 2026)
+| Mode | Description |
+|------|-------------|
+| `chat_completions` | Standard OpenAI-compatible API |
+| `codex_responses` | OpenAI Codex CLI agent interface |
+| `anthropic_messages` | Anthropic Messages API |
 
-Independent analyst Atal Upadhyay (@atal) published a detailed architectural review mapping Hermes against a nine-part harness framework. The analysis concluded Hermes is "one of the best open-source harnesses in the ecosystem" and confirmed implementations across all nine dimensions:
+### Callback Surface
 
-### Nine-Part Model Assessment
+UI and integrations attach via callbacks:
+- `tool_progress_callback` — tool execution progress
+- `thinking_callback` — model thinking/reasoning output
+- `clarify_callback` — user clarification requests
+- `stream_delta_callback` — streaming response deltas
 
-| Component | Hermes Implementation |
-|-----------|----------------------|
-| **Outer iteration loop** | Provider abstraction — same runtime drives chat-completions, Anthropic Messages, Codex Responses, out-of-process Codex, and Bedrock. Transport adapters normalize tool-call formats. "Much better than Claude Code" for multi-model support |
-| **Context management & compression** | Full compression path with auxiliary model summarization. Head/tail protected by token budget. Summary budget scales at ~20% of compressed content (2K-12K range). Old tool outputs pruned before summarization |
-| **Skills & tools management** | Registration and exposure are **separate concerns**. Tools register into central registry; toolset layer decides what model sees per run. Scoped by platform/scenario. Narrowable for delegated runs |
-| **Subagent management** | Child runs get own task ID, terminal context, structured return. Dangerous commands default to deny. Recursion depth capped. **Gap:** no durable, externally steerable child-run plane |
-| **Session persistence & recovery** | SQLite with FTS5 search + WAL journaling. Sessions track source tags, parent-child lineage for compression splits. CLI, messaging platforms, and cron jobs attach to same session plane |
-| **System prompt assembly** | Three-tier explicit composition: **stable** (SOUL.md, tool guidance, skills index), **context** (AGENTS.md, CLAUDE.md, .cursorrules with injection scanning), **volatile** (memory snapshots, user profile, timestamp) |
-| **Lifecycle hooks** | Two surfaces: plugin hooks (inside harness process, block/rewrite/pass) and filesystem-driven gateway hooks (shell/Python scripts on gateway startup, agent step, etc.) |
-| **Permission & safety layer** | Approval gates, scoped permissions per profile, deny-by-default for delegated contexts |
-| **Built-in pre-packaged skills** | 123 bundled skills covering GitHub, Google Workspace, Linear, Notion, etc. |
+### Key Design Decisions
 
-### Beyond the Framework: Three Unique Subsystems
+- **Shared iteration budget** between parent and child agents with budget pressure hints
+- **Fallback model** support — switches to alternate provider/model on specific failure paths (main agent loop only, not subagent delegation/cron/auxiliary tasks)
 
-1. **Messaging Gateway** — Broad platform adapter surface (Telegram, Discord, Slack, WhatsApp) routing through shared session model. Compared to OpenClaw's successful UI pattern for long-running agent interaction.
-2. **Profile System** — Each profile is an isolated agent root. Two profiles on the same machine behave as completely different agents from state and footprint perspective.
-3. **Cron as First-Class Subsystem** — Jobs are durable, gated by same permissions as interactive sessions, delivered through gateway paths, isolated per profile. "Forces unattended operation concerns into the main architecture rather than leaving them as peripheral scripts."
+## 2. Single-Turn Execution Flow
 
-### Compression Lineage — Unique Architectural Detail
+1. Append user message to history
+2. Preflight compression (if needed)
+3. Load or construct cached system prompt
+4. Build API messages, inject ephemeral layers
+5. Apply prompt caching → LLM call
+6. If tool call: execute → append result to history → loop
+7. If final text: save session → return response
 
-On compression, Hermes closes the current SQLite session row, creates a **child session seeded by the summary**, rotates the session ID, and records parent-child lineage. Plugin context engines and memory providers are notified. Long conversations produce a lineage chain instead of one repeatedly rewritten transcript — described as "pretty unique relative to other harness architectures we've reviewed."
+## 3. Prompt Assembly
 
-### Recommended Next Step: First-Class Orchestration
+Hermes separates **cached system prompt** (persistent across turns) from **ephemeral additions** (injected only at API call time).
 
-The analysis identifies the most natural next architectural step: promoting child runs to first-class control-plane objects with run IDs, explicit lifecycle management, external steering, and cleanup semantics that survive parent completion. Hermes already has the substrate (session infrastructure, gateway routing) — the gap is vs. OpenClaw's agent orchestration layer.
+### Cached System Prompt Assembly Order
 
-→ [[concepts/harness-engineering]], [[comparisons/hermes-vs-openclaw-architecture]], [[entities/openclaw]]
+1. `SOUL.md` — agent identity
+2. Tool-aware behavior guidance
+3. Honcho static block
+4. Optional system message
+5. Frozen MEMORY snapshot
+6. Frozen USER snapshot
+7. Skills index
+8. Context files (`.hermes.md` / `AGENTS.md` / `CLAUDE.md` / `.cursorrules` — priority first-match)
+9. Timestamp / optional session ID
+10. Platform hint
+
+### Design Principles
+
+- **Mid-session stability:** Memory and context files are frozen after session start. Changes via `memory` tool don't affect the current prompt — preserves provider-side prompt cache.
+- **Prompt caching:** Anthropic native and Claude-via-OpenRouter cache system prompt + last 3 non-system messages (TTL: 5 min default).
+- **Stable prefix:** Long conversations use context compression while keeping the stable prefix unchanged.
+
+## 4. Persistent State: Sessions, Memory, Search
+
+### Two-Tier Persistence
+
+| Tier | Storage | Contents |
+|------|---------|----------|
+| Primary | `~/.hermes/state.db` (SQLite + FTS5) | Session ID, platform source, user ID, title, model, system prompt snapshot, full message history, token counts, timestamps, parent session ID |
+| Archive | `~/.hermes/sessions/` (JSONL) | Raw conversation transcripts |
+
+### `session_search` Tool
+
+Full-text search (FTS5) across past sessions:
+1. Find relevant messages via FTS5
+2. Summarize top matching sessions
+3. Extract and analyze target conversations
+
+This creates a **bounded memory + searchable transcript archive** dual-layer design.
+
+### Memory System
+
+| File | Purpose |
+|------|---------|
+| `~/.hermes/memories/MEMORY.md` | Environment facts, conventions, learned procedures, tool quirks |
+| `~/.hermes/memories/USER.md` | User preferences, communication style, pet peeves |
+
+**Bounded store** with character limits. Only durable facts that matter across sessions are retained.
+
+### External Memory Providers
+
+Pluggable memory backends (Honcho, RetainDB, ByteRover). Built-in memory always remains active; external provider is single-select addition. Capabilities:
+- Pre-turn prefetch
+- Post-turn sync
+- Session-end extraction
+- Provider-specific tools
+
+### Compression & Session Lineage
+
+After compression:
+- Middle turns are summarized for lighter context
+- Parent session ID preserved in database
+- Maintains both "lightweight active session" and "searchable ancestor history"
+
+## 5. Tool Runtime: Self-Registering Registry
+
+### Architecture
+
+```
+Tool Module (import-time registry.register())
+    ↓
+model_tools.py (AST discovery of registry.register() calls)
+    ↓
+MCP Tools + Plugin Tools (additional discovery)
+    ↓
+Tool Execution (pre-hook → dispatch → post-hook)
+```
+
+**Self-registering:** New built-in tools require no manual central list update — just include `registry.register()` at module level.
+
+### Toolsets
+
+| Toolset | Purpose |
+|---------|---------|
+| `web` | Web search and extraction |
+| `terminal` | Shell command execution |
+| `file` | File read/write/search/patch |
+| `browser` | Web page interaction |
+| `vision` | Image analysis |
+| `image_gen` | Image generation |
+| `skills` | Skill loading and management |
+| `memory` | Persistent memory operations |
+| `session_search` | Past conversation search |
+| `cronjob` | Scheduled task management |
+| `code_execution` | Sandboxed Python execution |
+| `delegation` | Subagent spawning |
+| `clarify` | User clarification dialogs |
+| `MCP` | Model Context Protocol servers |
+
+Toolsets can be enabled/disabled by platform preset. `check_fn` determines availability based on API keys or binary presence.
+
+### Execution Flow
+
+```
+Model response → model_tools.handle_function_call()
+    → plugin pre-hook
+    → registry dispatch
+    → plugin post-hook
+```
+
+**Special cases:** `todo`, `memory`, `session_search`, `delegate_task` bypass the registry — handled directly in agent loop due to agent-level state requirements.
+
+### Safety: Terminal Approval
+
+- `DANGEROUS_PATTERNS` detection
+- CLI/Gateway approval prompts
+- Session-level approval state
+- Persistent allowlist
+- Optional smart approval
+- Multiple terminal backends: local, docker, ssh, singularity, modal, daytona
+
+## 6. Subagent Delegation vs `execute_code`
+
+### `delegate_task`
+
+| Property | Value |
+|----------|-------|
+| Purpose | Reasoning-heavy subtasks requiring independent agent judgment |
+| Isolation | Complete — fresh conversation, separate terminal, restricted toolsets |
+| Context | Child knows nothing of parent conversation — only `goal` + `context` |
+| Return | Final summary only |
+| Parallelism | Up to 3 concurrent children |
+| Restrictions | No recursive delegation, no memory writes |
+
+### `execute_code`
+
+| Property | Value |
+|----------|-------|
+| Purpose | Mechanical multi-step pipelines in a single turn |
+| Isolation | Sandboxed — temporary directory, process group, no dangerous env vars |
+| Context | Python script runs via `hermes_tools.py` stub, RPC calls back to parent |
+| Return | `print()` output only |
+| Communication | Unix domain socket for tool call results |
+
+### When to Use Which
+
+| Scenario | Use |
+|----------|-----|
+| Needs reasoning, decision-making, multi-step judgment | `delegate_task` |
+| Loop/filter/process large data mechanically | `execute_code` |
+| Parallel independent workstreams | `delegate_task` (up to 3) |
+| Single-turn data transformation | `execute_code` |
+
+## 7. Gateway: Persistent Frontend Layer
+
+### Architecture
+
+```
+GatewayRunner
+    ├── Platform Adapters (14+ messaging platforms)
+    ├── MessageEvent normalization
+    ├── Session key resolution
+    ├── Slash command dispatch
+    └── AIAgent instantiation (as needed)
+```
+
+The gateway is not an alternative to the agent core — it's the **persistent orchestration layer connecting AIAgent to the messaging world**.
+
+### Message Flow
+
+- **Two-level message guard** (adapter + runner)
+- New input to running session → queued + interrupt event raised
+- `/approve`, `/deny` commands → inline dispatch bypass
+- Session key resolution, authorization, running-agent guard, DM pairing
+
+### Background Maintenance
+
+- Cron ticking
+- Session expiry handling
+- Memory flush
+- Cache refresh
+
+### Hooks
+
+- Location: `~/.hermes/hooks/` (`HOOK.yaml` + `handler.py`)
+- Types: `pre_tool_call`, `post_tool_call`, `pre_llm_call`, `post_llm_call`, `on_session_start`, `on_session_end`
+- Non-blocking — hook failures don't crash the agent
+- Work in both CLI and gateway modes
+
+## 8. Provider Runtime
+
+### Resolution Priority
+
+```
+Explicit override > config.yaml > environment variables > provider defaults/auto
+```
+
+### Auxiliary Tasks
+
+Independent provider/model/base_url for:
+- Vision processing
+- Web extraction summarization
+- Compression
+- Session search
+- Skills hub
+- MCP helper
+- Memory flush
+
+### Fallback Behavior
+
+- Triggers on auth failure or retry exhaustion
+- One-time in-place runtime switch
+- **Limited to main agent loop** — doesn't apply to subagent delegation, cron, or auxiliary tasks
+
+## 9. Extension Model: Plugins
+
+### Plugin Types
+
+| Type | Purpose |
+|------|---------|
+| General plugins | Add tools, hooks, slash commands, CLI commands, skills, message injection |
+| Memory providers | External memory backends (Honcho, RetainDB, ByteRover) |
+| Context engines | Alternative compression/context processing |
+
+### Discovery
+
+| Location | Default State |
+|----------|--------------|
+| `~/.hermes/plugins/` | Enabled |
+| Project-local `.hermes/plugins/` | Disabled (trust-on-enable) |
+| pip entry points | Enabled |
+
+### Plugin Hooks
+
+`pre_tool_call`, `post_tool_call`, `pre_llm_call`, `post_llm_call`, `on_session_start`, `on_session_end` — trusted code that can intercept and modify agent loop behavior.
+
+## 10. Architectural Characteristics
+
+1. **AIAgent-centric design** — All orchestration converges on one core. Gateway/CLI are frontends, not alternatives.
+2. **Prompt-cache-aware state** — Frozen memory snapshots, ephemeral layer separation, stable prefix preservation. Cache stability is a first-class architectural constraint.
+3. **Three-tier memory** — Built-in bounded memory, searchable session archive, optional external memory provider. Separates durable facts from conversation history.
+4. **Execution primitive separation** — Distinct primitives for normal tool loops, subagent delegation, code execution, cron, and gateway delivery — each with different token costs and isolation philosophies.
+
+## Design Tradeoffs
+
+| Tradeoff | Impact |
+|----------|--------|
+| Wide `AIAgent` responsibilities | Easy to understand conceptually, but core implementation complexity is high |
+| Memory stability over immediacy | `memory` tool writes don't affect current session prompt — preserves cache, sacrifices real-time consistency |
+| Blank-slate subagents | Prevents parent context pollution, but requires careful `goal`/`context` writing |
+
+## Recommended Code Reading Order
+
+1. `run_agent.py` — Core agent implementation
+2. `agent/prompt_builder.py` — Prompt assembly logic
+3. `agent/context_compressor.py` — Context compression
+4. `model_tools.py` / `tools/registry.py` — Tool runtime
+5. `hermes_state.py` — State management
+6. `gateway/run.py` — Gateway orchestration
+7. `gateway/session.py` — Session management
+
+## Skill Self-Improvement Architecture
+
+Hermes Agent employs an **autonomous skill creation loop** that distinguishes it from other agent frameworks:
+
+### Mechanism
+- **Prompt Nudge:** System prompt instructs the agent to consider saving a skill every N tool calls
+- **Background Review:** After task completion, automated scan identifies skill-worthy patterns
+- **Pre-Compression Flush:** Durable knowledge saved to disk before context compression triggers
+- **Blunt Dedup Rule:** If an existing skill covers the pattern, patch it in place. Only create new skills if nothing matches.
+
+### Empirical Results
+- Ships with **123 bundled SKILL.md files** covering GitHub PR workflows, Obsidian, Google Workspace, Linear, Notion, Typefully, Perplexity, deep research, and more
+- Agent creates novel skills autonomously (e.g., `extract-social-testimonial` skill created without developer prompting)
+- Tool Gateway integration: One subscription unlocks 300+ models, web scraping, browser automation, image generation, cloud terminal, TTS
+
+### Known Challenge: Skill Explosion Problem
+Analysis by elvis (9-hour source code study, April 2026) identified a long-tail failure mode: the agent creates adjacent redundant skills faster than it consolidates them. Example: three separate skills for "image + local filesystem + model can see it" emerged independently. This is tracked as a product prioritization issue — expected resolution involves invocation metrics-based consolidation and stronger creation-time deduplication.
+
+See [[skill-architecture-patterns]] for detailed comparison with OpenClaw's governance model.
+
+## Related Pages
+
+- [[teknium]] — Hermes Agent creator, Nous Research co-founder
+- [[harness-engineering/agentic-workflows]] — Agentic Engineering patterns (related design philosophy)
+- [[claude-memory]] — File-based memory architecture (comparable design)
+- [[harness-engineering]] — Harness Engineering framework (related orchestration concepts)
+- [[ai-agent-memory-middleware]] — AI Agent Memory Middleware (complementary memory layer concepts)
+- [[skill-architecture-patterns]] — Skill self-improvement vs governed approaches (Hermes vs OpenClaw)
 
 ## Sources
-- [Hermes Harness Architecture](https://x.com/i/article/2060381072148537344) (2026-05-29, Atal Upadhyay/@atal, X article) — 9-part harness model analysis, unique compression lineage, orchestration gap identification
-- [Hermes Agent: What People Are Actually Using It For](https://x.com/i/article/2045935785661349956) (2026-04-26, X article) — usage patterns from Reddit/X/YouTube
-- [Hermes Agent + Polymarket - weather trading guide](https://x.com/i/article/2045080054917476451) (2026-04-25, X article) — installation + Polymarket trading
-- [How to Become a Hermes Agent Operator](https://x.com/i/article/2055317817658900480) (2026-05-15, Shann/@shannhk, X article) — 4-level fleet operation model, SEO agent 21-step pipeline, prototype-to-production methodology
 
-## References
-
-- 2026-1-month-with-hermes
-- hermes-architecture-analysis-kazuki-inamura
-
-- 2026-04-27_2045080054917476451_Hermes-Agent-Polymarket-Self-Learning-Weather-Trading-Bot
-- 2026-04-27_2045935785661349956_Hermes-Agent-What-People-Are-Actually-Using-It-For
-- 2026-04-28_x-article-15-hermes-agent-features
-- 2042539396638085339_What-Hermes-Agent-Can-Do-for-You
+- https://hermes-agent.nousresearch.com/docs/developer-guide/architecture/
+- https://hermes-agent.nousresearch.com/docs/developer-guide/agent-loop/
+- https://hermes-agent.nousresearch.com/docs/developer-guide/prompt-assembly/
+- https://hermes-agent.nousresearch.com/docs/developer-guide/context-compression-and-caching/
+- https://hermes-agent.nousresearch.com/docs/user-guide/sessions/
+- https://hermes-agent.nousresearch.com/docs/user-guide/features/memory/
+- https://hermes-agent.nousresearch.com/docs/user-guide/features/memory-providers
+- https://hermes-agent.nousresearch.com/docs/developer-guide/tools-runtime/
+- https://hermes-agent.nousresearch.com/docs/user-guide/features/tools/
+- https://hermes-agent.nousresearch.com/docs/user-guide/features/delegation/
+- https://hermes-agent.nousresearch.com/docs/user-guide/features/code-execution/
+- https://hermes-agent.nousresearch.com/docs/developer-guide/gateway-internals/
+- https://hermes-agent.nousresearch.com/docs/developer-guide/provider-runtime/
+- https://hermes-agent.nousresearch.com/docs/user-guide/features/plugins/
+- https://hermes-agent.nousresearch.com/docs/user-guide/features/hooks/
+- https://github.com/NousResearch/hermes-agent/releases
+- Architecture document authored by Kazuki Inamura (2026-04-16)
