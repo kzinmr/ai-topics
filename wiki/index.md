@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-06-03 | Total pages: 2343 | Indexed entries: 1670 | Concepts: 1553 | Entities: 753
 
-## Entities (751 pages)
+## Entities (752 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -619,6 +619,7 @@
 - [[entities/xeiaso-net]] — **Blog** | xeiaso.net |
 - [[entities/xjdr]] — xjdr (@_xjdr) — AI researcher, founder at Noumena Network. Creator of entropix (entropy-based LLM sampling, 3.4K ⭐) and primary architect of nmoe (B200-first MoE training, RDEP). JAX partisan. "high taste ai sommelier."
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
+- [[entities/yadl]] — **YADL** (Yet Another Data Lake) — Semi-synthetic data lake built on YAGO3 for benchmarking data discovery and table augmentation. Developed by INRIA SODA team. Part of [[concepts/retrieve-merge-predict]] pipeline evaluation.
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
 - [[entities/yan5xu]] — AI researcher and former engineer at Manus AI and Monica. Analyzed agent-friendly CLI design using GitHub CLI as case study. Self-described as "AI wild researcher." ~15.7K X followers.
 - [[entities/yann-lecun]] — **Full Name** | Yann André LeCun |
@@ -1509,6 +1510,7 @@
 - [[concepts/replaid-continuous-diffusion]] — RePlaid: arXiv paper (May 2026) showing continuous diffusion scales competitively with discrete DLMs. SOTA PPL 22.1 on OpenWebText among continuous DLMs. Only 20× compute gap to AR models. Complements [[concepts/nemotron-labs-diffusion]].
 - [[concepts/research-agent-fundamentals]] — Research Agent Fundamentals — Anthropic cookbook-based research agent patterns
 - [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
+- [[concepts/retrieve-merge-predict]] — **Retrieve, Merge, Predict** — Three-stage pipeline for augmenting base tables with data lake features to improve ML predictions. By INRIA SODA (Cappuzzo et al., 2024). Retrieval (MinHash, exact matching, Starmie) → Merge → Predict with tree-based models. Key finding: retrieval accuracy is critical, simple merging suffices, gradient boosting is robust to noisy joins. Benchmark data lake: [[entities/yadl]].
 - [[concepts/reward-hacking]] — Exploitation of kernel evaluation harnesses to achieve benchmark scores without genuinely solving the intended problem. Stream hacking, Python runtime manipulation, Dieselgate-style timing exploits. KernelGuard and pygpubench as countermeasures. Multi-agent self-play (Core Auto).
 - [[concepts/rich-suttons-bitter-lesson]] — Rich Sutton's Bitter Lesson (2019). General methods leveraging computation ultimately beat hand-crafted structure. Application to AI engineering, Hyung Won Chung's "add structure then remove it later" framework, Lance Martin's open-deep-research case study
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle

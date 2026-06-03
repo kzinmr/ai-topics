@@ -1,6 +1,14 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 Retrieve, Merge, Predict: Table Augmentation Pipeline Ingestion
+
+- **Raw article saved**: `raw/articles/retrieve-merge-predict.md` — Project page extraction from soda-inria.github.io/retrieve-merge-predict/ + GitHub README + arXiv 2402.06282 abstract.
+- **Concept created**: `concepts/retrieve-merge-predict.md` — Three-stage pipeline (Retrieve → Merge → Predict) for augmenting base tables with data lake features. Covers retrieval methods (Exact Matching, MinHash/LSH, Hybrid MinHash, Starmie), key findings (retrieval accuracy critical, simple merging sufficient, tree-based models robust), YADL benchmark data lake, relation to AutoML and feature engineering.
+- **Entity created**: `entities/yadl.md` — YADL (Yet Another Data Lake): semi-synthetic data lake built on YAGO3 for benchmarking data discovery. Zenodo availability, CC BY 4.0, multiple variants.
+- **SCHEMA.md updated**: Added tags `automl`, `feature-engineering`, `data-lakes` to Techniques taxonomy.
+- **index.md updated**: Added [[entities/yadl]] and [[concepts/retrieve-merge-predict]] entries.
+
 ## 2026-06-03 Devin Desktop: Windsurf Rebrand + Agent-Neutral ACP Integration
 
 - **Raw article saved**: `raw/articles/2026-06-03_devin-desktop-windsurf-rebrand-acp-agent-neutral.md` — Comprehensive extraction from devin.ai/download, devin.ai/blog/windsurf-is-now-devin-desktop, docs.devin.ai/desktop/acp, and docs.devin.ai/desktop/acp/building-a-custom-acp-agent.
