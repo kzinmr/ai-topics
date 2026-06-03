@@ -111,6 +111,19 @@
 
 ---
 
+## Cronジョブ workdir ポリシー
+
+**全wiki書き込み系cronジョブは `workdir: /opt/data/ai-topics` を必須とする。**
+
+理由: `workdir` をセットすると `AGENTS.md` が system prompt に自動注入される。未セットの場合、AGENTS.md のグローバルルール（リッチページ上書き禁止、タグ検証等）がセッションに届かない。
+
+**新規cronジョブ作成時のチェックリスト:**
+1. wiki の `entities/` `concepts/` を書き変えるジョブか？ → `workdir: /opt/data/ai-topics` を設定
+2. `wiki-entity-enrichment-from-article` スキルをロードするか？ → スキルの `pre-write-verification.md` 従う
+3. pre-commitフックが最終ゲートとして動作する（`--no-verify` でしか回避不可）
+
+---
+
 ## Cron パイプライン全体像（27ジョブ）
 
 ### 日次データ収集パイプライン（07:00 UTC / 16:00 JST）
