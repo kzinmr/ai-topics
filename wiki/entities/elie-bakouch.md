@@ -2,7 +2,7 @@
 title: Elie Bakouch
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-05-13
+updated: 2026-06-03
 aliases: [eliebak, eliebakouch]
 status: active
 description: "ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
@@ -45,6 +45,7 @@ His research philosophy emphasizes **data quality over quantity**, **architectur
 | Feb 2026 | Created "Sparsity Viz" Hugging Face Space — interactive visualization of MoE model sparsity across many LLMs |
 | 2026 | Contributing to **SmolLM3** — smol, multilingual, long-context reasoner |
 | 2026 | Engaged in synthetic pretraining research, commenting on Motif-2.6B tech report and training methodologies |
+| Jun 2026 | Published 47-tweet deep dive analysis of [[concepts/mai-thinking-1-tech-report|Microsoft MAI-Thinking-1 tech report]] — 1,500+ likes, 1,100+ bookmarks, highlighting zero-distillation design, scaling ladder transparency, and modified GRPO |
 
 ## Core Ideas
 

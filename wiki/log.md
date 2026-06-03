@@ -1,6 +1,22 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 Ingest Elie Bakouch MAI Tech Report Megathread (X Thread #2061965825037254947)
+
+**Action**: Ingested 47-tweet X megathread by @eliebakouch analyzing the Microsoft MAI-Thinking-1 tech report. Created new concept page, updated entity page.
+
+**Created**:
+- `raw/articles/2026-06-03_eliebakouch-mai-tech-report-deep-dive.md` — Full 57-tweet thread content (raw)
+- `concepts/mai-thinking-1-tech-report.md` — Deep dive concept page covering architecture (1T MoE, 35B active, interleaved dense/MoE, LatentMoE), scaling ladder, data pipeline transparency, modified GRPO, infrastructure (SGLang, custom silicon)
+
+**Updated**:
+- `entities/elie-bakouch.md` — Added timeline entry for MAI tech report analysis (Jun 2026), updated date
+- `concepts/microsoft-mai-models.md` — Added source reference and deep dive cross-link to MAI-Thinking-1 section
+- `index.md` — Added `concepts/mai-thinking-1-tech-report` entry
+
+**Source**: https://x.com/eliebakouch/status/2061965825037254947
+**Engagement**: 1,516 likes, 1,104 bookmarks, 139K impressions
+
 ## 2026-06-03 Codex Data Science Plugin Ingestion (X Post @zswang24)
 
 - **Raw article saved**: `raw/articles/2026-06-02_zswang24-codex-data-science-plugin.md` — Note Tweet from @zswang24 (Zhanshi Wang, OpenAI researcher) announcing Codex Data Science plugin launch. Quoted OpenAI's official announcement. 312 likes, 158 bookmarks.

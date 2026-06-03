@@ -8,6 +8,7 @@ sources:
   - raw/articles/2026-04-02_geekwire-microsoft-mai-models.md
   - raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md
   - raw/newsletters/2026-06-03-ainews-microsoft-build-mai-thinking-1-and-mai-family-models.md
+  - raw/articles/2026-06-03_eliebakouch-mai-tech-report-deep-dive.md
 ---
 
 # Microsoft MAI Models
@@ -31,6 +32,8 @@ At Microsoft Build (June 2, 2026), the company announced five new/updated MAI mo
 
 ### MAI-Thinking-1
 Microsoft's first dedicated reasoning model. A 1-trillion parameter Mixture-of-Experts model with 35B active parameters (per Simon Willison's correction — initial reports misread the MoE sizes). Trained from scratch with zero distillation and zero synthetic data, using 794 billion pages from a proprietary web crawl plus Common Crawl. Accompanied by a 109-page technical report. Microsoft claims it is "preferred to Sonnet 4.6 in our blind human side-by-side evaluations." Initially available only to select early partners.
+
+> **Technical report deep dive**: See [[concepts/mai-thinking-1-tech-report]] for a detailed analysis of the architecture (interleaved dense/MoE, LatentMoE, global load balancing), the novel scaling ladder methodology, data pipeline transparency, and modified GRPO post-training approach.
 
 ### MAI-Code-1-Flash
 A code-specialist model with 137B total parameters and 5B active (MoE). Built end-to-end by Microsoft using "appropriately licensed data." Purpose-built for GitHub Copilot and VS Code to deliver high performance at lower cost. Rolling out to GitHub Copilot individual users in Visual Studio Code.
