@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hermes Agent を Second Brain として回す（前編・実装編）</title>
+
+<!-- Fonts: distinctive grotesque for display/latin, Zen Kaku Gothic for JP, mono for technical labels -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+<style>
+/* ===========================================
+   THEME — "Engineering Paper": cream paper, forest ink, burnt-orange accent
+   (carried over and elevated from the original Marp deck palette)
+   =========================================== */
+:root {
+  --bg:        #fbfaf4;   /* cream paper */
+  --panel:     #fffdf7;   /* raised panel */
+  --ink:       #18241f;   /* near-black green text */
+  --forest:    #10251c;   /* deep forest (lead bg) */
+  --forest-2:  #26372f;   /* divider bg */
+  --sage:      #2f7d6b;   /* secondary diagram accent (teal-green) */
+  --accent:    #b45f06;   /* burnt orange */
+  --accent-2:  #d98b34;   /* light orange */
+  --line:      #d9ccb0;   /* hairline border on paper */
+  --code-bg:   #efe7d0;   /* code chip */
+  --muted:     #5d6c62;   /* muted text */
+  --cream:     #fffaf0;   /* text on dark */
+
+  /* Typography */
+  --font-display: "Bricolage Grotesque", "Zen Kaku Gothic New", sans-serif;
+  --font-body:    "Zen Kaku Gothic New", "Bricolage Grotesque", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, monospace;
+
+  --title-size: clamp(1.6rem, 5.2vw, 4rem);
+  --h2-size:    clamp(1.3rem, 3.6vw, 2.6rem);
+  --h3-size:    clamp(1rem, 2.4vw, 1.7rem);
+  --body-size:  clamp(0.8rem, 1.55vw, 1.18rem);
+  --small-size: clamp(0.66rem, 1.05vw, 0.92rem);
+  --kicker-size: clamp(0.6rem, 1vw, 0.84rem);
+
+  --slide-padding: clamp(1.1rem, 4.2vw, 4.2rem);
+  --content-gap: clamp(0.6rem, 2vw, 2rem);
+  --element-gap: clamp(0.3rem, 1vw, 1rem);
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur: 0.7s;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* === PASTE: viewport-base.css (mandatory) === */
+html, body { height: 100%; overflow-x: hidden; }
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+.slide {
+  width: 100vw; height: 100vh; height: 100dvh;
+  overflow: hidden; scroll-snap-align: start;
+  display: flex; flex-direction: column; position: relative;
+}
+.slide-content {
+  flex: 1; display: flex; flex-direction: column; justify-content: center;
+  max-height: 100%; overflow: hidden; padding: var(--slide-padding);
+}
+.card, .container, .content-box { max-width: min(92vw, 1100px); max-height: min(82vh, 760px); }
+img, .image-container { max-width: 100%; max-height: min(50vh, 400px); object-fit: contain; }
+@media (max-height: 700px) {
+  :root { --slide-padding: clamp(0.75rem,3vw,2rem); --content-gap: clamp(0.4rem,1.5vw,1rem);
+          --title-size: clamp(1.25rem,4.5vw,2.5rem); --h2-size: clamp(1rem,3vw,1.75rem); }
+}
+@media (max-height: 600px) {
+  :root { --slide-padding: clamp(0.5rem,2.5vw,1.5rem); --content-gap: clamp(0.3rem,1vw,0.75rem);
+          --title-size: clamp(1.1rem,4vw,2rem); --body-size: clamp(0.7rem,1.2vw,0.95rem); }
+  .nav-dots, .keyboard-hint, .decorative { display: none; }
+}
+@media (max-height: 500px) {
+  :root { --slide-padding: clamp(0.4rem,2vw,1rem); --title-size: clamp(1rem,3.5vw,1.5rem);
+          --h2-size: clamp(0.9rem,2.5vw,1.25rem); --body-size: clamp(0.65rem,1vw,0.85rem); }
+}
+@media (max-width: 600px) { :root { --title-size: clamp(1.25rem,7vw,2.5rem); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; }
+  html { scroll-behavior: auto; }
+}
+
+/* ===========================================
+   BASE LOOK
+   =========================================== */
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+/* paper atmosphere: faint grid + warm radial + grain */
+.slide:not(.slide--dark)::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    radial-gradient(ellipse at 82% 8%, rgba(217,139,52,0.10), transparent 55%),
+    radial-gradient(ellipse at 0% 100%, rgba(47,125,107,0.08), transparent 50%),
+    linear-gradient(rgba(24,36,31,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24,36,31,0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 46px 46px, 46px 46px;
+}
+.slide-content { position: relative; z-index: 1; }
+
+h1, h2, h3 { font-family: var(--font-display); color: var(--forest); line-height: 1.12; letter-spacing: -0.01em; font-weight: 800; }
+h2 { font-size: var(--h2-size); }
+h3 { font-size: var(--h3-size); font-weight: 700; }
+p, li { font-size: var(--body-size); line-height: 1.5; color: var(--ink); }
+strong { color: var(--accent); font-weight: 700; }
+.mono { font-family: var(--font-mono); }
+code, .chip-code {
+  font-family: var(--font-mono); background: var(--code-bg); color: #2a3a2c;
+  border-radius: 5px; padding: 0.06em 0.34em; font-size: 0.88em;
+}
+
+.kicker {
+  font-family: var(--font-mono); font-size: var(--kicker-size); font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent);
+  display: inline-flex; align-items: center; gap: 0.6em;
+}
+.kicker::before { content: ""; width: clamp(18px,3vw,40px); height: 2px; background: var(--accent); display: inline-block; }
+
+.lead-in { color: var(--muted); font-size: var(--small-size); }
+
+/* ===========================================
+   SLIDE VARIANTS
+   =========================================== */
+.slide--dark { background: radial-gradient(ellipse at 75% 12%, #1c3a2c 0%, var(--forest) 60%); color: var(--cream); }
+.slide--dark h1, .slide--dark h2, .slide--dark h3 { color: var(--cream); }
+.slide--dark p, .slide--dark li { color: #d8e2da; }
+.slide--dark strong { color: var(--accent-2); }
+.slide--dark .kicker { color: var(--accent-2); }
+.slide--dark .kicker::before { background: var(--accent-2); }
+.slide--dark::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+
+.slide--divider .divider-num {
+  font-family: var(--font-mono); font-size: clamp(3.5rem, 16vw, 13rem); font-weight: 700;
+  color: rgba(217,139,52,0.16); line-height: 0.8; letter-spacing: -0.04em;
+}
+
+/* ===========================================
+   LAYOUT HELPERS
+   =========================================== */
+.eyebrow-row { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: clamp(0.5rem,1.5vh,1.1rem); }
+.title-wrap h2 { margin-bottom: clamp(0.4rem, 1.4vh, 1rem); }
+.stage { flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0; margin-top: clamp(0.4rem,1.5vh,1.2rem); }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(0.7rem,2.2vw,2rem); align-items: stretch; }
+@media (max-width: 760px){ .two-col { grid-template-columns: 1fr; } }
+
+.bullets { list-style: none; display: flex; flex-direction: column; gap: clamp(0.45rem,1.5vh,1.05rem); margin-top: clamp(0.4rem,1.5vh,1rem); }
+.bullets li { display: flex; gap: 0.7em; align-items: flex-start; }
+.bullets li::before { content: "▸"; color: var(--accent); font-family: var(--font-mono); flex: none; transform: translateY(0.05em); }
+
+.panel {
+  background: var(--panel); border: 1.5px solid var(--line); border-radius: 12px;
+  padding: clamp(0.7rem,1.8vw,1.5rem); box-shadow: 0 2px 0 rgba(24,36,31,0.04);
+  display: flex; flex-direction: column; gap: clamp(0.35rem,1vh,0.7rem);
+}
+.panel h3 { color: var(--forest); }
+.panel .tag { font-family: var(--font-mono); font-size: var(--small-size); color: var(--sage); font-weight: 700; }
+.panel.accent { border-color: var(--accent); box-shadow: 0 2px 0 rgba(180,95,6,0.12); }
+
+.note { font-size: var(--small-size); color: var(--muted); }
+.callout {
+  border-left: 6px solid var(--accent); background: rgba(217,139,52,0.10);
+  padding: clamp(0.6rem,1.6vw,1.1rem) clamp(0.8rem,2vw,1.4rem); border-radius: 0 10px 10px 0;
+  font-size: var(--body-size);
+}
+.callout.quote { font-family: var(--font-display); font-weight: 500; }
+
+/* stat dashboard */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(0.5rem,1.6vw,1.4rem); width: 100%; }
+@media (max-width: 760px){ .stats { grid-template-columns: repeat(2,1fr);} }
+.stat { background: var(--panel); border: 1.5px solid var(--line); border-radius: 12px; padding: clamp(0.7rem,2vw,1.6rem); text-align: left; }
+.stat .num { font-family: var(--font-display); font-weight: 800; color: var(--accent); font-size: clamp(1.6rem,4.5vw,3.4rem); line-height: 1; letter-spacing: -0.02em; }
+.stat .lbl { font-size: var(--small-size); color: var(--muted); margin-top: 0.4em; }
+
+/* simple table */
+table.kv { border-collapse: collapse; width: 100%; font-size: var(--body-size); }
+table.kv th, table.kv td { text-align: left; padding: clamp(0.4rem,1vw,0.7rem) clamp(0.5rem,1.2vw,0.9rem); border-bottom: 1px solid var(--line); }
+table.kv th { font-family: var(--font-mono); font-size: var(--small-size); color: var(--cream); background: var(--forest-2); text-transform: uppercase; letter-spacing: 0.08em; }
+table.kv tr:last-child td { border-bottom: none; }
+
+/* chips */
+.chips { display: flex; flex-wrap: wrap; gap: 0.4em; }
+.chip { font-family: var(--font-mono); font-size: var(--small-size); background: var(--code-bg); color: #34442f; border-radius: 999px; padding: 0.2em 0.7em; border: 1px solid var(--line); }
+.chip.on { background: var(--forest); color: var(--cream); border-color: var(--forest); }
+
+/* diagram primitives */
+svg { display: block; width: 100%; height: auto; }
+.diagram { width: min(94%, 1050px); max-height: 64vh; }
+.diagram.tall { max-height: 70vh; }
+
+/* ===========================================
+   ENTRANCE ANIMATIONS (.visible added by observer)
+   =========================================== */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease); }
+.slide.visible .reveal { opacity: 1; transform: translateY(0); }
+.slide.visible .reveal:nth-child(1){ transition-delay:.05s }
+.slide.visible .reveal:nth-child(2){ transition-delay:.15s }
+.slide.visible .reveal:nth-child(3){ transition-delay:.25s }
+.slide.visible .reveal:nth-child(4){ transition-delay:.35s }
+.slide.visible .reveal:nth-child(5){ transition-delay:.45s }
+.slide.visible .reveal:nth-child(6){ transition-delay:.55s }
+/* svg draw-in */
+.slide.visible .draw { animation: dash 1.4s var(--ease) forwards; }
+@keyframes dash { to { stroke-dashoffset: 0; } }
+.slide.visible .pop { animation: pop .6s var(--ease) both; }
+@keyframes pop { from { opacity:0; transform: scale(.82);} to {opacity:1; transform:scale(1);} }
+
+/* ===========================================
+   CHROME: progress bar, nav dots, counter, hint
+   =========================================== */
+.progress-bar { position: fixed; top: 0; left: 0; height: 4px; width: 0; background: linear-gradient(90deg, var(--accent), var(--accent-2)); z-index: 100; transition: width .4s var(--ease); }
+.nav-dots { position: fixed; right: clamp(10px,1.6vw,22px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 11px; z-index: 100; }
+.nav-dots button { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--muted); background: transparent; cursor: pointer; padding: 0; transition: all .3s var(--ease); }
+.nav-dots button.active { background: var(--accent); border-color: var(--accent); transform: scale(1.35); }
+.slide--dark ~ .nav-dots button {}
+.counter { position: fixed; left: clamp(12px,2vw,28px); bottom: clamp(12px,2.4vh,26px); font-family: var(--font-mono); font-size: var(--small-size); color: var(--muted); z-index: 100; letter-spacing: 0.1em; }
+.counter b { color: var(--accent); }
+.keyboard-hint { position: fixed; right: clamp(12px,2vw,28px); bottom: clamp(12px,2.4vh,26px); font-family: var(--font-mono); font-size: var(--small-size); color: var(--muted); z-index: 100; opacity: .8; }
+.footer-note { position: absolute; left: var(--slide-padding); bottom: clamp(0.7rem,2vh,1.4rem); font-family: var(--font-mono); font-size: clamp(0.58rem,0.95vw,0.78rem); color: var(--muted); z-index: 2; }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+<nav class="nav-dots" id="navDots" aria-label="スライド"></nav>
+<div class="counter" id="counter"></div>
+<div class="keyboard-hint">↑ ↓ / Space</div>
+
+<!-- =================================================================
+     SLIDE 1 — TITLE (lead)
+     ================================================================= -->
+<section class="slide slide--dark" data-title="表紙">
+  <div class="slide-content" style="justify-content:center;">
+    <span class="kicker reveal">Software Engineer's Guide ・ 前編 / 全2回</span>
+    <h1 class="reveal" style="font-size:var(--title-size); margin:.5rem 0 .3rem;">Hermes Agent を<br/>Second Brain として回す</h1>
+    <h2 class="reveal" style="font-weight:500; color:var(--accent-2); font-size:clamp(1.1rem,2.8vw,2rem);">設定・スキル・定期実行の実運用</h2>
+    <p class="reveal lead-in" style="margin-top:1.4rem; max-width:46ch;">AI/Agent 領域の情報を、半年間 毎日 自動でキュレーションし続けている実際の仕組み——CI/CD・IaC に馴染む開発者のための「知識の自動化」。</p>
+    <p class="reveal mono" style="margin-top:1.6rem; font-size:var(--small-size); color:#9fb3a6;">2026-06-03 ・ kzinmr (AI Engineer)</p>
+  </div>
+  <!-- subtle orchestrating glyph -->
+  <svg class="decorative" viewBox="0 0 400 400" style="position:absolute; right:-4%; bottom:-8%; width:min(46vw,460px); opacity:.13; z-index:0;" aria-hidden="true">
+    <g fill="none" stroke="#d98b34" stroke-width="1.4">
+      <circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="100"/><circle cx="200" cy="200" r="50"/>
+      <path d="M200 50 V350 M50 200 H350 M94 94 L306 306 M306 94 L94 306"/>
+    </g>
+  </svg>
+</section>
+
+<!-- =================================================================
+     SLIDE 2 — GOAL
+     ================================================================= -->
+<section class="slide" data-title="今日のゴール">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Agenda</span></div>
+    <h2 class="reveal">情報洪水の中で、何を捨てるか</h2>
+    <p class="reveal" style="margin-top:.6rem; max-width:60ch;">毎日 数十本の論文・記事・投稿・講演録が流れてくる。手で追い、整理し、引ける状態に保つのは、もはや不可能に近い。<strong>常駐エージェント</strong>に回させる。今日見せるのは——</p>
+    <ul class="bullets reveal" style="max-width:64ch;">
+      <li>設定ファイル（<code>AGENTS.md</code> / <code>SCHEMA.md</code>）はどんな構造か</li>
+      <li>pre-commit hook で <strong>Agent のミス</strong>を何で防ぐか</li>
+      <li>28本の <strong>cron ジョブ</strong>はどう連携して回り続けるか</li>
+      <li>スキルはどのように<strong>自動生成</strong>され、増えすぎを整理するか</li>
+    </ul>
+    <p class="reveal note" style="margin-top:1rem;">※ 一歩引いた地図——ハーネスという投資対象 / AWS ホスティング / 組織導入——は<strong>後編</strong>で。</p>
+  </div>
+  <div class="footer-note">前編＝実装編 ／ 後編＝投資編</div>
+</section>
+
+<!-- =================================================================
+     SLIDE 3 — DIVIDER: PART 1
+     ================================================================= -->
+<section class="slide slide--dark slide--divider" data-title="Part 1">
+  <div class="slide-content" style="justify-content:center;">
+    <div class="divider-num reveal">01</div>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 1 ・ Design</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">設計はファイルに、<br/>実行は Agent に</h2>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 4 — 3-LAYER ARCHITECTURE (hero diagram)
+     ================================================================= -->
+<section class="slide" data-title="3層アーキテクチャ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Architecture</span><span class="note">Karpathy LLM-Wiki パターン ／ ファイルシステムが永続化層</span></div>
+    <h2 class="reveal">知識ベースの3層構造</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 420" role="img" aria-label="3層アーキテクチャ図">
+        <defs>
+          <marker id="ar1" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b45f06"/></marker>
+        </defs>
+        <!-- Layer 1 raw -->
+        <g class="pop">
+          <rect x="40" y="40" width="820" height="92" rx="12" fill="#fffdf7" stroke="#2f7d6b" stroke-width="2"/>
+          <text x="64" y="74" font-family="JetBrains Mono" font-size="15" fill="#2f7d6b" font-weight="700">LAYER 1 — raw/ ・ 不変のソース素材</text>
+          <text x="64" y="104" font-family="Zen Kaku Gothic New" font-size="18" fill="#18241f">articles ・ papers ・ newsletters ・ transcripts　<tspan fill="#5d6c62" font-size="15">（Agent は読むが編集しない）</tspan></text>
+        </g>
+        <!-- arrow -->
+        <line x1="450" y1="138" x2="450" y2="168" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar1)"/>
+        <text x="466" y="160" font-family="JetBrains Mono" font-size="13" fill="#b45f06">curate</text>
+        <!-- Layer 2 wiki -->
+        <g class="pop">
+          <rect x="40" y="176" width="820" height="116" rx="12" fill="#10251c" stroke="#10251c"/>
+          <text x="64" y="208" font-family="JetBrains Mono" font-size="15" fill="#d98b34" font-weight="700">LAYER 2 — wiki ページ ・ Agent が生成・更新</text>
+          <g font-family="Zen Kaku Gothic New" font-weight="700">
+            <rect x="64" y="224" width="232" height="50" rx="8" fill="#1c3a2c"/><text x="80" y="245" font-size="15" fill="#fffaf0">entities/</text><text x="80" y="266" font-size="20" fill="#d98b34">751</text>
+            <rect x="312" y="224" width="232" height="50" rx="8" fill="#1c3a2c"/><text x="328" y="245" font-size="15" fill="#fffaf0">concepts/</text><text x="328" y="266" font-size="20" fill="#d98b34">1,550</text>
+            <rect x="560" y="224" width="232" height="50" rx="8" fill="#1c3a2c"/><text x="576" y="245" font-size="15" fill="#fffaf0">comparisons/</text><text x="576" y="266" font-size="20" fill="#d98b34">26</text>
+          </g>
+        </g>
+        <line x1="450" y1="298" x2="450" y2="328" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar1)"/>
+        <text x="466" y="320" font-family="JetBrains Mono" font-size="13" fill="#b45f06">govern</text>
+        <!-- Layer 3 schema -->
+        <g class="pop">
+          <rect x="40" y="336" width="820" height="64" rx="12" fill="#fffdf7" stroke="#b45f06" stroke-width="2"/>
+          <text x="64" y="364" font-family="JetBrains Mono" font-size="15" fill="#b45f06" font-weight="700">LAYER 3 — SCHEMA.md ・ index.md（規約・タグ分類学・全索引）</text>
+          <text x="64" y="388" font-family="Zen Kaku Gothic New" font-size="14" fill="#5d6c62">変更は規約更新時のみ ／ pre-commit で強制</text>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center; margin-top:.4rem;">合計 <strong>2,327 ページ</strong> — 手で管理するのは現実的でない。だから Agent に回させる。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 5 — AGENTIC ETL PIPELINE
+     ================================================================= -->
+<section class="slide" data-title="Agentic ETL">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Data Flow</span></div>
+    <h2 class="reveal">Agentic ETL：ソースから知識へ</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 940 300" role="img" aria-label="Agentic ETL パイプライン">
+        <defs><marker id="ar2" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <!-- nodes -->
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="20" y="110" width="150" height="80" rx="12" fill="#fffdf7" stroke="#2f7d6b" stroke-width="2"/>
+            <text x="95" y="146" font-size="17" fill="#18241f" font-weight="700">ソース</text><text x="95" y="170" font-size="13" fill="#5d6c62">RSS/X/論文/NL</text></g>
+          <g class="pop"><rect x="220" y="110" width="150" height="80" rx="12" fill="#fffdf7" stroke="#d9ccb0" stroke-width="2"/>
+            <text x="295" y="146" font-size="17" fill="#18241f" font-weight="700">inbox/ → raw/</text><text x="295" y="170" font-size="13" fill="#5d6c62">不変の保存</text></g>
+          <g class="pop"><rect x="420" y="92" width="180" height="116" rx="14" fill="#10251c"/>
+            <text x="510" y="132" font-size="13" font-family="JetBrains Mono" fill="#d98b34" font-weight="700">HERMES</text>
+            <text x="510" y="158" font-size="16" fill="#fffaf0" font-weight="700">curate</text>
+            <text x="510" y="180" font-size="12" fill="#a9c0b3">分析・統合・cross-link</text></g>
+          <g class="pop"><rect x="650" y="110" width="150" height="80" rx="12" fill="#fffdf7" stroke="#b45f06" stroke-width="2"/>
+            <text x="725" y="146" font-size="17" fill="#18241f" font-weight="700">wiki ページ</text><text x="725" y="170" font-size="13" fill="#5d6c62">concept/entity…</text></g>
+          <g class="pop"><rect x="828" y="110" width="92" height="80" rx="12" fill="#26372f"/>
+            <text x="874" y="142" font-size="13" font-family="JetBrains Mono" fill="#fffaf0">index</text><text x="874" y="164" font-size="13" font-family="JetBrains Mono" fill="#fffaf0">+ log</text></g>
+        </g>
+        <g stroke="#b45f06" stroke-width="2.6" fill="none">
+          <line x1="170" y1="150" x2="214" y2="150" marker-end="url(#ar2)"/>
+          <line x1="370" y1="150" x2="414" y2="150" marker-end="url(#ar2)"/>
+          <line x1="600" y1="150" x2="644" y2="150" marker-end="url(#ar2)"/>
+          <line x1="800" y1="150" x2="822" y2="150" marker-end="url(#ar2)"/>
+        </g>
+        <!-- git commit loop -->
+        <path class="draw" d="M874 196 C874 250 510 268 510 214" stroke="#2f7d6b" stroke-width="2" fill="none" stroke-dasharray="6 6" marker-end="url(#ar2)"/>
+        <text x="600" y="262" font-family="JetBrains Mono" font-size="12" fill="#2f7d6b">git commit &amp; push</text>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">このフロー全体が、人間の介入なしに <strong>cron で自律実行</strong>される。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 6 — AGENTS.md
+     ================================================================= -->
+<section class="slide" data-title="AGENTS.md">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Config</span></div>
+    <h2 class="reveal"><code>AGENTS.md</code> = リポジトリの Single Source of Truth</h2>
+    <div class="two-col reveal" style="margin-top:1rem;">
+      <div class="panel">
+        <span class="tag">// 人間のドキュメントではなく、Agent への指示書</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li>ディレクトリ構成とその役割</li>
+          <li>Wiki 3層の変更可能 / 不可ルール</li>
+          <li>ページ作成・更新の手順</li>
+          <li>Cron パイプライン全体図（28ジョブ）</li>
+          <li>よくある失敗とその対処法</li>
+        </ul>
+      </div>
+      <div class="panel accent" style="justify-content:center;">
+        <h3>CI/CD で例えるなら</h3>
+        <p><code>AGENTS.md</code> ＝ リポジトリの <strong>Makefile + README</strong>。</p>
+        <p class="note">Agent はこのファイルを読んで構造とルールを理解する。<strong>設定を変えたければ、このファイルを編集する。</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 7 — SCHEMA.md
+     ================================================================= -->
+<section class="slide" data-title="SCHEMA.md">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Config</span></div>
+    <h2 class="reveal"><code>SCHEMA.md</code>：タグ分類学とページ閾値</h2>
+    <div class="two-col reveal" style="margin-top:1rem;">
+      <div class="panel">
+        <h3>タグ分類学（10カテゴリ）</h3>
+        <div class="chips" style="margin-top:.3rem;">
+          <span class="chip">model</span><span class="chip">reasoning</span><span class="chip on">company</span><span class="chip">tool</span><span class="chip">rag</span><span class="chip on">agentic-engineering</span><span class="chip">multi-agent</span><span class="chip">aws</span><span class="chip on">ai-adoption</span><span class="chip">…</span>
+        </div>
+        <p class="note" style="margin-top:.5rem;">タグは必ず分類学に存在すること。新タグは <strong>先に SCHEMA へ追記</strong>してから使う（タグの散らかりを防ぐ）。</p>
+      </div>
+      <div class="panel">
+        <h3>ページ閾値</h3>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li><strong>作成</strong>：2+ ソースで言及 or 1ソースで中心的</li>
+          <li><strong>追加</strong>：既出なら既存ページを更新</li>
+          <li><strong>分割</strong>：200行超</li>
+          <li><strong>廃棄</strong>：内容が完全に superseded</li>
+        </ul>
+        <p class="note" style="margin-top:.4rem;">frontmatter 必須：<code>title/created/updated/type/tags/sources</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 8 — PRE-COMMIT HOOK (gate diagram)
+     ================================================================= -->
+<section class="slide" data-title="Pre-commit hook">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Guardrail</span></div>
+    <h2 class="reveal">Pre-commit Hook：Agent のミスをブロックする</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 270" role="img" aria-label="pre-commit hook ゲート図">
+        <defs><marker id="ar3" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <g class="pop"><rect x="20" y="100" width="170" height="70" rx="12" fill="#fffdf7" stroke="#d9ccb0" stroke-width="2"/>
+          <text x="105" y="132" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="16" fill="#18241f" font-weight="700">Agent が</text>
+          <text x="105" y="154" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="14" fill="#5d6c62">ページ作成 → commit</text></g>
+        <line x1="190" y1="135" x2="244" y2="135" stroke="#b45f06" stroke-width="2.6" marker-end="url(#ar3)"/>
+        <!-- gate -->
+        <g class="pop"><rect x="250" y="60" width="300" height="150" rx="14" fill="#10251c"/>
+          <text x="400" y="92" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#d98b34" font-weight="700">.githooks/pre-commit</text>
+          <rect x="276" y="108" width="248" height="38" rx="8" fill="#1c3a2c"/><text x="296" y="132" font-family="Zen Kaku Gothic New" font-size="15" fill="#fffaf0">① index.md は更新済みか</text>
+          <rect x="276" y="154" width="248" height="38" rx="8" fill="#1c3a2c"/><text x="296" y="178" font-family="Zen Kaku Gothic New" font-size="15" fill="#fffaf0">② tags は分類学に在るか</text></g>
+        <!-- pass / block -->
+        <path d="M550 110 H650" stroke="#2f7d6b" stroke-width="2.6" fill="none" marker-end="url(#ar3)"/>
+        <path d="M550 178 H650" stroke="#b45f06" stroke-width="2.6" fill="none" marker-end="url(#ar3)"/>
+        <g class="pop"><rect x="656" y="86" width="220" height="48" rx="10" fill="#eaf3ee" stroke="#2f7d6b" stroke-width="2"/>
+          <text x="766" y="116" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="16" fill="#2f7d6b" font-weight="700">✓ commit 通過</text></g>
+        <g class="pop"><rect x="656" y="154" width="220" height="48" rx="10" fill="#fbe9dc" stroke="#b45f06" stroke-width="2"/>
+          <text x="766" y="184" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="16" fill="#b45f06" font-weight="700">✗ commit ブロック</text></g>
+      </svg>
+    </div>
+    <div class="callout quote reveal" style="margin-top:.4rem;">「Agent makes a mistake → Engineer a solution → Agent never makes that mistake again.」— Mitchell Hashimoto（harness engineering）</div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 9 — DIVIDER: PART 2
+     ================================================================= -->
+<section class="slide slide--dark slide--divider" data-title="Part 2">
+  <div class="slide-content" style="justify-content:center;">
+    <div class="divider-num reveal">02</div>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 2 ・ Automation</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">Cron パイプライン<br/>— 28ジョブの連携</h2>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 10 — 24H CLOCK (hero diagram)
+     ================================================================= -->
+<section class="slide" data-title="1日の流れ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Scheduler</span><span class="note">自然言語 cron ／ 60秒ごとに tick ／ 配信先は任意のメッセンジャー</span></div>
+    <h2 class="reveal">知識ベースの1日（UTC）</h2>
+    <div class="stage reveal">
+      <svg class="diagram tall" viewBox="0 0 760 430" role="img" aria-label="24時間のジョブ時計">
+        <!-- clock ring -->
+        <g transform="translate(250,215)">
+          <circle r="170" fill="none" stroke="#d9ccb0" stroke-width="2"/>
+          <circle r="170" fill="none" stroke="#2f7d6b" stroke-width="6" stroke-dasharray="1068" stroke-dashoffset="0" class="draw" pathLength="1068" transform="rotate(-90)" opacity="0.35"/>
+          <circle r="120" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.4"/>
+          <text y="-12" text-anchor="middle" font-family="JetBrains Mono" font-size="14" fill="#5d6c62">24h</text>
+          <text y="14" text-anchor="middle" font-family="Bricolage Grotesque" font-size="30" font-weight="800" fill="#10251c">CRON</text>
+          <text y="40" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#b45f06">25 active / 28</text>
+          <!-- hour ticks for key jobs; angle = hour/24*360 -90 -->
+          <!-- 06:00 -> 90-90=0deg (right) ; compute manually -->
+          <!-- markers -->
+          <g class="pop">
+            <!-- 06:00 sitemap (90deg => bottom? use h*15deg from top) top=0 -->
+            <circle cx="0" cy="-170" r="7" fill="#b45f06"/>
+          </g>
+        </g>
+        <!-- labels with leader lines (right side list keyed by time) -->
+        <g font-family="JetBrains Mono" font-size="14">
+          <g class="pop"><circle cx="250" cy="45" r="6" fill="#2f7d6b"/><line x1="256" y1="45" x2="500" y2="45" stroke="#d9ccb0"/><text x="508" y="50" fill="#18241f"><tspan fill="#b45f06">06:00</tspan>  sitemap-monitor</text></g>
+          <g class="pop"><circle cx="380" cy="120" r="6" fill="#2f7d6b"/><line x1="386" y1="120" x2="500" y2="105" stroke="#d9ccb0"/><text x="508" y="110" fill="#18241f"><tspan fill="#b45f06">07:00</tspan>  blog ・ newsletter 収集→triage→ingest</text></g>
+          <g class="pop"><circle cx="420" cy="215" r="6" fill="#2f7d6b"/><line x1="426" y1="215" x2="500" y2="165" stroke="#d9ccb0"/><text x="508" y="170" fill="#18241f"><tspan fill="#b45f06">11:00</tspan>  active-crawl（hot-topics）</text></g>
+          <g class="pop"><circle cx="380" cy="310" r="6" fill="#d98b34"/><line x1="386" y1="310" x2="500" y2="225" stroke="#d9ccb0"/><text x="508" y="230" fill="#18241f"><tspan fill="#b45f06">18:00</tspan>  dreaming（夜間統合）</text></g>
+          <g class="pop"><circle cx="160" cy="330" r="6" fill="#2f7d6b"/><line x1="154" y1="330" x2="500" y2="285" stroke="#d9ccb0"/><text x="508" y="290" fill="#18241f"><tspan fill="#b45f06">22:00</tspan>  x-accounts-scan</text></g>
+          <g class="pop"><circle cx="90" cy="160" r="6" fill="#2f7d6b"/><line x1="96" y1="160" x2="500" y2="345" stroke="#d9ccb0"/><text x="508" y="350" fill="#18241f"><tspan fill="#5d6c62">随時</tspan>  Slack/Discord 配信 ・ watchdog</text></g>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">人間が起きる頃には、整理された知識と注目記事が <strong>メッセンジャーに届いている</strong>。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 11 — DAILY 3 PARALLEL PIPELINES
+     ================================================================= -->
+<section class="slide" data-title="日次収集">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">07:00 UTC</span></div>
+    <h2 class="reveal">日次収集：3パイプライン並列</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 300" role="img" aria-label="日次3パイプライン">
+        <defs><marker id="ar4" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="JetBrains Mono" font-size="13.5">
+          <!-- blog -->
+          <text x="20" y="56" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">ブログ</text>
+          <g class="pop"><rect x="120" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="59" text-anchor="middle" fill="#18241f">ingest (07:00)</text></g>
+          <g class="pop"><rect x="380" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="59" text-anchor="middle" fill="#18241f">triage (07:30)</text></g>
+          <g class="pop"><rect x="640" y="34" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="59" text-anchor="middle" fill="#fffaf0">wiki-ingest (07:50)</text></g>
+          <line x1="320" y1="54" x2="376" y2="54" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/><line x1="580" y1="54" x2="636" y2="54" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/>
+          <!-- newsletter -->
+          <text x="20" y="146" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">NL</text>
+          <g class="pop"><rect x="120" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="149" text-anchor="middle" fill="#18241f">ingest (07:10)</text></g>
+          <g class="pop"><rect x="380" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="149" text-anchor="middle" fill="#18241f">triage (07:20)</text></g>
+          <g class="pop"><rect x="640" y="124" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="149" text-anchor="middle" fill="#fffaf0">wiki-ingest (07:40)</text></g>
+          <line x1="320" y1="144" x2="376" y2="144" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/><line x1="580" y1="144" x2="636" y2="144" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/>
+          <!-- sitemap -->
+          <text x="20" y="236" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">Sitemap</text>
+          <g class="pop"><rect x="120" y="214" width="460" height="40" rx="9" fill="#fffdf7" stroke="#2f7d6b" stroke-width="1.8"/><text x="350" y="239" text-anchor="middle" fill="#18241f">sitemap-monitor (06:00) — RSSに載らない記事も拾う</text></g>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">各パイプラインは <strong>script → triage → ingest</strong> の3段。中間結果は JSON チェックポイントで保存。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 12 — DREAMING + HEALTH + DELIVERY
+     ================================================================= -->
+<section class="slide" data-title="夜間統合と健全性">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Night ・ Health ・ Delivery</span></div>
+    <h2 class="reveal">夜に束ね、整え、届ける</h2>
+    <div class="two-col reveal" style="margin-top:.8rem;">
+      <div class="panel">
+        <span class="tag">// Dreaming（18:00 UTC）</span>
+        <p style="font-family:var(--font-mono); font-size:var(--small-size); color:var(--ink);">collect&nbsp;→&nbsp;group&nbsp;→&nbsp;wiki-ingest</p>
+        <p class="note">日中バラバラに集めた記事・論文・投稿を<strong>テーマ別に束ね</strong>、重複・矛盾を検出して統合。翌朝には整理済み。</p>
+      </div>
+      <div class="panel">
+        <span class="tag">// 健全性（日次/週次）</span>
+        <ul class="bullets" style="margin-top:0;">
+          <li>watchdog-fix / health-fix（構造の自動修正）</li>
+          <li>graph-analysis（リンク・重複検出 / 週次）</li>
+          <li>tag-audit（タグ分類学の監査 / 週次）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout reveal" style="margin-top:.9rem;">配信：注目記事を <strong>Slack / Discord</strong>（1日3回）、週次ダイジェストを <strong>Telegram</strong> へ。<span class="note">結果はダッシュボードではなく、向こうから届く。</span></div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 13 — DIVIDER: PART 3
+     ================================================================= -->
+<section class="slide slide--dark slide--divider" data-title="Part 3">
+  <div class="slide-content" style="justify-content:center;">
+    <div class="divider-num reveal">03</div>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 3 ・ Skills</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">スキル<br/>— 経験をコードにする</h2>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 14 — SELF-EVOLVING SKILL LOOP (hero: loop + bars)
+     ================================================================= -->
+<section class="slide" data-title="自己進化スキルループ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Compounding</span></div>
+    <h2 class="reveal">自己進化スキルループ</h2>
+    <div class="two-col reveal" style="margin-top:.6rem; align-items:center;">
+      <!-- loop diagram -->
+      <svg viewBox="0 0 380 300" role="img" aria-label="スキル生成ループ" style="max-height:46vh;">
+        <defs><marker id="ar5" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="120" y="14" width="150" height="48" rx="10" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="195" y="44" font-size="15" fill="#18241f" font-weight="700">複雑なタスク</text></g>
+          <g class="pop"><rect x="232" y="120" width="138" height="60" rx="10" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="301" y="146" font-size="14" fill="#18241f" font-weight="700">試行錯誤</text><text x="301" y="166" font-size="12" fill="#5d6c62">失敗→成功</text></g>
+          <g class="pop"><rect x="120" y="238" width="150" height="50" rx="10" fill="#10251c"/><text x="195" y="262" font-size="14" fill="#d98b34" font-weight="700">SKILL.md 保存</text><text x="195" y="280" font-size="11" fill="#a9c0b3">trigger/手順/落とし穴</text></g>
+          <g class="pop"><rect x="14" y="120" width="138" height="60" rx="10" fill="#fffdf7" stroke="#2f7d6b" stroke-width="1.8"/><text x="83" y="146" font-size="14" fill="#2f7d6b" font-weight="700">次回 自動ロード</text><text x="83" y="166" font-size="12" fill="#5d6c62">再発見しない</text></g>
+        </g>
+        <g fill="none" stroke="#b45f06" stroke-width="2.4">
+          <path d="M256 62 C320 78 330 100 318 116" marker-end="url(#ar5)"/>
+          <path d="M280 180 C266 214 240 226 232 232" marker-end="url(#ar5)"/>
+          <path d="M120 270 C70 264 64 214 78 184" marker-end="url(#ar5)"/>
+          <path d="M96 116 C108 92 130 76 150 64" marker-end="url(#ar5)"/>
+        </g>
+      </svg>
+      <!-- bars: tool-call reduction -->
+      <div class="panel" style="justify-content:center;">
+        <h3>ツール呼び出し回数</h3>
+        <svg viewBox="0 0 320 150" role="img" aria-label="ツール呼び出しの削減" style="max-height:24vh;">
+          <g font-family="JetBrains Mono">
+            <rect class="pop" x="10" y="20" width="230" height="26" rx="5" fill="#b45f06"/><text x="248" y="39" font-size="15" fill="#18241f" font-weight="700">23</text><text x="14" y="38" font-size="12" fill="#fffaf0">1回目</text>
+            <rect class="pop" x="10" y="60" width="60" height="26" rx="5" fill="#d98b34"/><text x="78" y="79" font-size="15" fill="#18241f" font-weight="700">6</text><text x="14" y="78" font-size="12" fill="#3a2a14">3回目</text>
+            <rect class="pop" x="10" y="100" width="40" height="26" rx="5" fill="#2f7d6b"/><text x="58" y="119" font-size="15" fill="#18241f" font-weight="700">3–6</text><text x="14" y="118" font-size="12" fill="#fffaf0">以後</text>
+          </g>
+        </svg>
+        <p class="note"><strong>74%削減</strong> → 安定。複利で効く。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 15 — SKILL EXPLOSION & CURATOR
+     ================================================================= -->
+<section class="slide" data-title="スキル爆発とCurator">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Maintenance</span></div>
+    <h2 class="reveal">スキルの爆発と整理（Curator）</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 250" role="img" aria-label="スキル増殖とCuratorによる整理">
+        <!-- growth curve -->
+        <polyline class="draw" points="40,210 180,200 320,170 460,120 600,70 700,55" fill="none" stroke="#b45f06" stroke-width="3" stroke-dasharray="780" stroke-dashoffset="0" pathLength="780"/>
+        <circle class="pop" cx="700" cy="55" r="6" fill="#b45f06"/>
+        <text x="610" y="44" font-family="Zen Kaku Gothic New" font-size="14" fill="#b45f06" font-weight="700">100+ スキル / 30カテゴリ</text>
+        <line x1="40" y1="220" x2="720" y2="220" stroke="#d9ccb0" stroke-width="1.6"/>
+        <text x="40" y="240" font-family="JetBrains Mono" font-size="12" fill="#5d6c62">運用時間 →</text>
+        <!-- curator prune -->
+        <g class="pop">
+          <rect x="744" y="40" width="140" height="170" rx="12" fill="#10251c"/>
+          <text x="814" y="72" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#d98b34" font-weight="700">Curator</text>
+          <text x="814" y="104" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="13" fill="#fffaf0">30日 → stale</text>
+          <text x="814" y="130" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="13" fill="#fffaf0">90日 → archive</text>
+          <text x="814" y="162" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="13" fill="#a9c0b3">重複検出・統合</text>
+          <text x="814" y="190" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="13" fill="#2fae8e" font-weight="700">自動削除しない</text>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">スキル管理それ自体が <strong>harness engineering の対象</strong>になる——皮肉だが、実際に起きる。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 16 — FAILURE TRACES → ASSETS
+     ================================================================= -->
+<section class="slide" data-title="失敗トレース">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">The Ratchet</span></div>
+    <h2 class="reveal">失敗トレースを、改善資産にする</h2>
+    <table class="kv reveal" style="margin-top:.8rem;">
+      <tr><th>失敗例</th><th>対策（harness 側）</th></tr>
+      <tr><td>ページが重複して作られる</td><td>作成前に <code>index.md</code> 確認をスキルに追加</td></tr>
+      <tr><td>タグが散らかる</td><td>pre-commit でブロック + 分類学を整備</td></tr>
+      <tr><td>Cron 処理が失敗する</td><td>スクリプト修正 + <code>AGENTS.md</code> に記録 + スキル化</td></tr>
+      <tr><td>スキルが爆発的に増える</td><td>Curator + 週次棚卸し</td></tr>
+    </table>
+    <p class="reveal note" style="margin-top:.8rem;">Agent は <strong>設定・スクリプトを自分で直す</strong>。人間が入るのは、根本的な設計判断が要るときだけ。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 17 — NUMBERS DASHBOARD
+     ================================================================= -->
+<section class="slide" data-title="数字で見る現在">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Snapshot ・ 2026-06</span></div>
+    <h2 class="reveal">数字で見る、いまの知識ベース</h2>
+    <div class="stats reveal" style="margin-top:1.2rem;">
+      <div class="stat"><div class="num">2,327</div><div class="lbl">Wiki ページ総数</div></div>
+      <div class="stat"><div class="num">28</div><div class="lbl">Cron ジョブ（25 active）</div></div>
+      <div class="stat"><div class="num">100+</div><div class="lbl">スキル（30カテゴリ）</div></div>
+      <div class="stat"><div class="num">84</div><div class="lbl">追跡ブログ RSS</div></div>
+    </div>
+    <p class="reveal note" style="margin-top:1.4rem; text-align:center;">手で運用すれば数日で滞留し、数週間で陳腐化する。<strong>回り続けること自体に価値がある。</strong></p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 18 — 5 TAKEAWAYS
+     ================================================================= -->
+<section class="slide" data-title="5つの示唆">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Takeaways</span></div>
+    <h2 class="reveal">ソフトウェア開発者への5つの示唆</h2>
+    <ol class="bullets reveal" style="margin-top:1rem; counter-reset:t; max-width:70ch;">
+      <li><strong>設定は Markdown で書け。</strong> Agent が読み書きしやすく、人間もレビューしやすい。</li>
+      <li><strong>失敗を git に残せ。</strong> 失敗は次の改善の貴重なデータ。ログだけでなく修正の diff も。</li>
+      <li><strong>スキルは自動で生まれる。</strong> 手順書を書くのではなく、成功した作業から抽出。人間はレビューと承認。</li>
+      <li><strong>定期実行は前提で設計しろ。</strong>「呼ばれたら動く」ではなく「常に動いている」存在として。</li>
+      <li><strong>Environment を選べ。</strong> Markdown + git という<strong>検証しやすい環境</strong>こそが成功の鍵。</li>
+    </ol>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 19 — CLOSING → 後編
+     ================================================================= -->
+<section class="slide slide--dark" data-title="後編へ続く">
+  <div class="slide-content" style="justify-content:center;">
+    <span class="kicker reveal">End of Part 1 — 実装編</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.5rem;">変わったのは、<br/>「どう知識を扱うか」だ</h2>
+    <p class="reveal" style="margin-top:1rem; max-width:54ch; color:#d8e2da;">知識ベースは静的なリポジトリではなく、<strong>自律的に更新され続ける runtime 環境</strong>になった。</p>
+    <div class="callout quote reveal" style="margin-top:1.4rem; background:rgba(217,139,52,0.14); border-color:var(--accent-2); max-width:62ch;">
+      <strong style="color:var(--accent-2)">▶ 後編（投資編）へ続く。</strong> ハーネスとは何への投資か / $5 VPS から AWS Bedrock AgentCore まで / 個人の脳から組織のコントロールプレーンへ。
+    </div>
+    <p class="reveal mono" style="margin-top:1.4rem; font-size:var(--small-size); color:#9fb3a6;">blog/2026-06-03_hermes_hermes-agent-for-developers.md ・ github.com/kzinmr/ai-topics</p>
+  </div>
+</section>
+
+<script>
+/* ===========================================
+   SLIDE PRESENTATION CONTROLLER
+   scroll-snap + keyboard + touch + dots + progress
+   =========================================== */
+class SlidePresentation {
+  constructor() {
+    this.slides = Array.from(document.querySelectorAll('.slide'));
+    this.current = 0;
+    this.progress = document.getElementById('progress');
+    this.counter = document.getElementById('counter');
+    this.navDots = document.getElementById('navDots');
+    this.buildDots();
+    this.observe();
+    this.keys();
+    this.touch();
+    this.update(0);
+  }
+  buildDots() {
+    this.navDots.innerHTML = ''; // clear first (avoid duplicates on re-open)
+    this.slides.forEach((s, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('aria-label', (s.dataset.title || ('スライド ' + (i+1))));
+      b.addEventListener('click', () => this.go(i));
+      this.navDots.appendChild(b);
+    });
+    this.dots = Array.from(this.navDots.children);
+  }
+  observe() {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+          e.target.classList.add('visible');
+          this.update(this.slides.indexOf(e.target));
+        }
+      });
+    }, { threshold: [0.5] });
+    this.slides.forEach(s => io.observe(s));
+  }
+  update(i) {
+    if (i < 0) return;
+    this.current = i;
+    const pct = ((i + 1) / this.slides.length) * 100;
+    this.progress.style.width = pct + '%';
+    if (this.counter) this.counter.innerHTML = '<b>' + String(i+1).padStart(2,'0') + '</b> / ' + String(this.slides.length).padStart(2,'0');
+    this.dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+  }
+  go(i) {
+    i = Math.max(0, Math.min(this.slides.length - 1, i));
+    this.slides[i].scrollIntoView({ behavior: 'smooth' });
+  }
+  keys() {
+    window.addEventListener('keydown', (e) => {
+      if (['ArrowDown','ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); this.go(this.current + 1); }
+      else if (['ArrowUp','ArrowLeft','PageUp'].includes(e.key)) { e.preventDefault(); this.go(this.current - 1); }
+      else if (e.key === 'Home') { e.preventDefault(); this.go(0); }
+      else if (e.key === 'End') { e.preventDefault(); this.go(this.slides.length - 1); }
+    });
+  }
+  touch() {
+    let y0 = null;
+    window.addEventListener('touchstart', (e) => { y0 = e.touches[0].clientY; }, { passive: true });
+    window.addEventListener('touchend', (e) => {
+      if (y0 === null) return;
+      const dy = y0 - e.changedTouches[0].clientY;
+      if (Math.abs(dy) > 55) this.go(this.current + (dy > 0 ? 1 : -1));
+      y0 = null;
+    }, { passive: true });
+  }
+}
+new SlidePresentation();
+</script>
+</body>
+</html>

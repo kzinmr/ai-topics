@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ハーネスという投資対象（後編・投資編）</title>
+
+<!-- Fonts: same pairing as 前編 for series consistency -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+<style>
+/* ===========================================
+   THEME — identical design system to 前編 (Engineering Paper)
+   =========================================== */
+:root {
+  --bg:#fbfaf4; --panel:#fffdf7; --ink:#18241f; --forest:#10251c; --forest-2:#26372f;
+  --sage:#2f7d6b; --accent:#b45f06; --accent-2:#d98b34; --line:#d9ccb0; --code-bg:#efe7d0;
+  --muted:#5d6c62; --cream:#fffaf0;
+  --font-display:"Bricolage Grotesque","Zen Kaku Gothic New",sans-serif;
+  --font-body:"Zen Kaku Gothic New","Bricolage Grotesque",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+  --title-size:clamp(1.6rem,5.2vw,4rem); --h2-size:clamp(1.3rem,3.6vw,2.6rem);
+  --h3-size:clamp(1rem,2.4vw,1.7rem); --body-size:clamp(0.8rem,1.55vw,1.18rem);
+  --small-size:clamp(0.66rem,1.05vw,0.92rem); --kicker-size:clamp(0.6rem,1vw,0.84rem);
+  --slide-padding:clamp(1.1rem,4.2vw,4.2rem); --content-gap:clamp(0.6rem,2vw,2rem); --element-gap:clamp(0.3rem,1vw,1rem);
+  --ease:cubic-bezier(0.16,1,0.3,1); --dur:0.7s;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* === viewport-base.css (mandatory) === */
+html, body { height:100%; overflow-x:hidden; }
+html { scroll-snap-type:y mandatory; scroll-behavior:smooth; }
+.slide { width:100vw; height:100vh; height:100dvh; overflow:hidden; scroll-snap-align:start; display:flex; flex-direction:column; position:relative; }
+.slide-content { flex:1; display:flex; flex-direction:column; justify-content:center; max-height:100%; overflow:hidden; padding:var(--slide-padding); }
+.card,.container,.content-box { max-width:min(92vw,1100px); max-height:min(82vh,760px); }
+img,.image-container { max-width:100%; max-height:min(50vh,400px); object-fit:contain; }
+@media (max-height:700px){ :root{ --slide-padding:clamp(0.75rem,3vw,2rem); --content-gap:clamp(0.4rem,1.5vw,1rem); --title-size:clamp(1.25rem,4.5vw,2.5rem); --h2-size:clamp(1rem,3vw,1.75rem);} }
+@media (max-height:600px){ :root{ --slide-padding:clamp(0.5rem,2.5vw,1.5rem); --content-gap:clamp(0.3rem,1vw,0.75rem); --title-size:clamp(1.1rem,4vw,2rem); --body-size:clamp(0.7rem,1.2vw,0.95rem);} .nav-dots,.keyboard-hint,.decorative{display:none;} }
+@media (max-height:500px){ :root{ --slide-padding:clamp(0.4rem,2vw,1rem); --title-size:clamp(1rem,3.5vw,1.5rem); --h2-size:clamp(0.9rem,2.5vw,1.25rem); --body-size:clamp(0.65rem,1vw,0.85rem);} }
+@media (max-width:600px){ :root{ --title-size:clamp(1.25rem,7vw,2.5rem);} }
+@media (prefers-reduced-motion:reduce){ *,*::before,*::after{ animation-duration:0.01ms!important; transition-duration:0.2s!important;} html{scroll-behavior:auto;} }
+
+/* === base look === */
+body { background:var(--bg); color:var(--ink); font-family:var(--font-body); font-weight:400; -webkit-font-smoothing:antialiased; }
+.slide:not(.slide--dark)::before { content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+  background-image:
+    radial-gradient(ellipse at 82% 8%, rgba(217,139,52,0.10), transparent 55%),
+    radial-gradient(ellipse at 0% 100%, rgba(47,125,107,0.08), transparent 50%),
+    linear-gradient(rgba(24,36,31,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24,36,31,0.035) 1px, transparent 1px);
+  background-size:100% 100%,100% 100%,46px 46px,46px 46px; }
+.slide-content { position:relative; z-index:1; }
+h1,h2,h3 { font-family:var(--font-display); color:var(--forest); line-height:1.12; letter-spacing:-0.01em; font-weight:800; }
+h2 { font-size:var(--h2-size); } h3 { font-size:var(--h3-size); font-weight:700; }
+p,li { font-size:var(--body-size); line-height:1.5; color:var(--ink); }
+strong { color:var(--accent); font-weight:700; }
+.mono { font-family:var(--font-mono); }
+code,.chip-code { font-family:var(--font-mono); background:var(--code-bg); color:#2a3a2c; border-radius:5px; padding:0.06em 0.34em; font-size:0.88em; }
+.kicker { font-family:var(--font-mono); font-size:var(--kicker-size); font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); display:inline-flex; align-items:center; gap:0.6em; }
+.kicker::before { content:""; width:clamp(18px,3vw,40px); height:2px; background:var(--accent); display:inline-block; }
+.lead-in { color:var(--muted); font-size:var(--small-size); }
+
+/* === slide variants === */
+.slide--dark { background:radial-gradient(ellipse at 75% 12%, #1c3a2c 0%, var(--forest) 60%); color:var(--cream); }
+.slide--dark h1,.slide--dark h2,.slide--dark h3 { color:var(--cream); }
+.slide--dark p,.slide--dark li { color:#d8e2da; }
+.slide--dark strong { color:var(--accent-2); }
+.slide--dark .kicker { color:var(--accent-2); } .slide--dark .kicker::before { background:var(--accent-2); }
+.slide--dark::after { content:""; position:absolute; inset:0; pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px); background-size:46px 46px; }
+.slide--divider .divider-num { font-family:var(--font-mono); font-size:clamp(3.5rem,16vw,13rem); font-weight:700; color:rgba(217,139,52,0.16); line-height:0.8; letter-spacing:-0.04em; }
+
+/* === layout helpers === */
+.eyebrow-row { display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap; margin-bottom:clamp(0.5rem,1.5vh,1.1rem); }
+.stage { flex:1; display:flex; align-items:center; justify-content:center; min-height:0; margin-top:clamp(0.4rem,1.5vh,1.2rem); }
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:clamp(0.7rem,2.2vw,2rem); align-items:stretch; }
+@media (max-width:760px){ .two-col{ grid-template-columns:1fr; } }
+.bullets { list-style:none; display:flex; flex-direction:column; gap:clamp(0.45rem,1.5vh,1.05rem); margin-top:clamp(0.4rem,1.5vh,1rem); }
+.bullets li { display:flex; gap:0.7em; align-items:flex-start; }
+.bullets li::before { content:"▸"; color:var(--accent); font-family:var(--font-mono); flex:none; transform:translateY(0.05em); }
+.panel { background:var(--panel); border:1.5px solid var(--line); border-radius:12px; padding:clamp(0.7rem,1.8vw,1.5rem); box-shadow:0 2px 0 rgba(24,36,31,0.04); display:flex; flex-direction:column; gap:clamp(0.35rem,1vh,0.7rem); }
+.panel h3 { color:var(--forest); } .panel .tag { font-family:var(--font-mono); font-size:var(--small-size); color:var(--sage); font-weight:700; }
+.panel.accent { border-color:var(--accent); box-shadow:0 2px 0 rgba(180,95,6,0.12); }
+.panel.dark { background:var(--forest); border-color:var(--forest); } .panel.dark h3{ color:var(--cream);} .panel.dark p,.panel.dark li{ color:#d8e2da;} .panel.dark .tag{ color:var(--accent-2);}
+.note { font-size:var(--small-size); color:var(--muted); }
+.callout { border-left:6px solid var(--accent); background:rgba(217,139,52,0.10); padding:clamp(0.6rem,1.6vw,1.1rem) clamp(0.8rem,2vw,1.4rem); border-radius:0 10px 10px 0; font-size:var(--body-size); }
+.callout.quote { font-family:var(--font-display); font-weight:500; }
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(0.5rem,1.6vw,1.4rem); width:100%; }
+@media (max-width:760px){ .stats{ grid-template-columns:repeat(2,1fr);} }
+.stat { background:var(--panel); border:1.5px solid var(--line); border-radius:12px; padding:clamp(0.7rem,2vw,1.6rem); text-align:left; }
+.stat .num { font-family:var(--font-display); font-weight:800; color:var(--accent); font-size:clamp(1.6rem,4.5vw,3.4rem); line-height:1; letter-spacing:-0.02em; }
+.stat .lbl { font-size:var(--small-size); color:var(--muted); margin-top:0.4em; }
+table.kv { border-collapse:collapse; width:100%; font-size:var(--body-size); }
+table.kv th,table.kv td { text-align:left; padding:clamp(0.36rem,0.9vw,0.66rem) clamp(0.5rem,1.2vw,0.9rem); border-bottom:1px solid var(--line); }
+table.kv th { font-family:var(--font-mono); font-size:var(--small-size); color:var(--cream); background:var(--forest-2); text-transform:uppercase; letter-spacing:0.06em; }
+table.kv tr:last-child td { border-bottom:none; }
+table.kv td.hl { color:var(--accent); font-weight:700; }
+.chips { display:flex; flex-wrap:wrap; gap:0.4em; }
+.chip { font-family:var(--font-mono); font-size:var(--small-size); background:var(--code-bg); color:#34442f; border-radius:999px; padding:0.2em 0.7em; border:1px solid var(--line); }
+.chip.on { background:var(--forest); color:var(--cream); border-color:var(--forest); }
+svg { display:block; width:100%; height:auto; }
+.diagram { width:min(94%,1050px); max-height:64vh; } .diagram.tall { max-height:70vh; }
+
+/* entrance anim */
+.reveal { opacity:0; transform:translateY(26px); transition:opacity var(--dur) var(--ease), transform var(--dur) var(--ease); }
+.slide.visible .reveal { opacity:1; transform:translateY(0); }
+.slide.visible .reveal:nth-child(1){transition-delay:.05s} .slide.visible .reveal:nth-child(2){transition-delay:.15s}
+.slide.visible .reveal:nth-child(3){transition-delay:.25s} .slide.visible .reveal:nth-child(4){transition-delay:.35s}
+.slide.visible .reveal:nth-child(5){transition-delay:.45s} .slide.visible .reveal:nth-child(6){transition-delay:.55s}
+.slide.visible .draw { animation:dash 1.4s var(--ease) forwards; }
+@keyframes dash { to { stroke-dashoffset:0; } }
+.slide.visible .pop { animation:pop .6s var(--ease) both; }
+@keyframes pop { from{opacity:0; transform:scale(.82);} to{opacity:1; transform:scale(1);} }
+
+/* chrome */
+.progress-bar { position:fixed; top:0; left:0; height:4px; width:0; background:linear-gradient(90deg,var(--accent),var(--accent-2)); z-index:100; transition:width .4s var(--ease); }
+.nav-dots { position:fixed; right:clamp(10px,1.6vw,22px); top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:11px; z-index:100; }
+.nav-dots button { width:9px; height:9px; border-radius:50%; border:1.5px solid var(--muted); background:transparent; cursor:pointer; padding:0; transition:all .3s var(--ease); }
+.nav-dots button.active { background:var(--accent); border-color:var(--accent); transform:scale(1.35); }
+.counter { position:fixed; left:clamp(12px,2vw,28px); bottom:clamp(12px,2.4vh,26px); font-family:var(--font-mono); font-size:var(--small-size); color:var(--muted); z-index:100; letter-spacing:0.1em; }
+.counter b { color:var(--accent); }
+.keyboard-hint { position:fixed; right:clamp(12px,2vw,28px); bottom:clamp(12px,2.4vh,26px); font-family:var(--font-mono); font-size:var(--small-size); color:var(--muted); z-index:100; opacity:.8; }
+.footer-note { position:absolute; left:var(--slide-padding); bottom:clamp(0.7rem,2vh,1.4rem); font-family:var(--font-mono); font-size:clamp(0.58rem,0.95vw,0.78rem); color:var(--muted); z-index:2; }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+<nav class="nav-dots" id="navDots" aria-label="スライド"></nav>
+<div class="counter" id="counter"></div>
+<div class="keyboard-hint">↑ ↓ / Space</div>
+
+<!-- =================================================================
+     SLIDE 1 — TITLE
+     ================================================================= -->
+<section class="slide slide--dark" data-title="表紙">
+  <div class="slide-content" style="justify-content:center;">
+    <span class="kicker reveal">Software Engineer's Guide ・ 後編 / 全2回</span>
+    <h1 class="reveal" style="font-size:var(--title-size); margin:.5rem 0 .3rem;">ハーネスという<br/>投資対象</h1>
+    <h2 class="reveal" style="font-weight:500; color:var(--accent-2); font-size:clamp(1.1rem,2.8vw,2rem);">個人の Second Brain から、ホスティングと組織導入まで</h2>
+    <p class="reveal lead-in" style="margin-top:1.4rem; max-width:48ch;">前編の「どう作るか」を、地図の上に置き直す。モデルがコモディティ化するとき、価値はどこに残るのか。</p>
+    <p class="reveal mono" style="margin-top:1.6rem; font-size:var(--small-size); color:#9fb3a6;">2026-06-03 ・ kzinmr (AI Engineer)</p>
+  </div>
+  <svg class="decorative" viewBox="0 0 400 400" style="position:absolute; right:-4%; bottom:-8%; width:min(46vw,460px); opacity:.13; z-index:0;" aria-hidden="true">
+    <g fill="none" stroke="#d98b34" stroke-width="1.4"><circle cx="200" cy="200" r="160"/><circle cx="200" cy="200" r="116"/><circle cx="200" cy="200" r="72"/><circle cx="200" cy="200" r="28"/></g>
+  </svg>
+</section>
+
+<!-- =================================================================
+     SLIDE 2 — THROUGH-LINE: concentric rings (hero)
+     ================================================================= -->
+<section class="slide" data-title="貫く一本の糸">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">The Thesis</span></div>
+    <h2 class="reveal">モデルは燃料。価値は「まわりの層」に堆積する</h2>
+    <div class="stage reveal">
+      <svg class="diagram tall" viewBox="0 0 880 410" role="img" aria-label="モデルを中心とした4層の同心円">
+        <g transform="translate(250,205)">
+          <circle class="pop" r="190" fill="#fffdf7" stroke="#b45f06" stroke-width="2"/>
+          <circle class="pop" r="148" fill="#f3ece0" stroke="#d98b34" stroke-width="1.6"/>
+          <circle class="pop" r="106" fill="#e8efe9" stroke="#2f7d6b" stroke-width="1.6"/>
+          <circle class="pop" r="64" fill="#10251c"/>
+          <text y="-2" text-anchor="middle" font-family="Bricolage Grotesque" font-size="20" font-weight="800" fill="#fffaf0">MODEL</text>
+          <text y="22" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="12" fill="#a9c0b3">コモディティ</text>
+          <text y="-126" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#2f7d6b" font-weight="700">ハーネス</text>
+          <text y="-168" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#b86a14" font-weight="700">複利ナレッジ</text>
+          <text y="-22" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#2f7d6b" opacity="0" >.</text>
+        </g>
+        <!-- right legend mapping ring → altitude -->
+        <g font-family="Zen Kaku Gothic New" font-size="16">
+          <g class="pop"><rect x="500" y="40" width="18" height="18" rx="4" fill="#10251c"/><text x="528" y="55" fill="#18241f"><tspan font-weight="700">モデル</tspan> — コモディティ化する燃料</text></g>
+          <g class="pop"><rect x="500" y="110" width="18" height="18" rx="4" fill="#2f7d6b"/><text x="528" y="125" fill="#18241f"><tspan font-weight="700">ハーネス</tspan> — 失敗を足場に変える（前編）</text></g>
+          <g class="pop"><rect x="500" y="180" width="18" height="18" rx="4" fill="#d98b34"/><text x="528" y="195" fill="#18241f"><tspan font-weight="700">複利ナレッジ</tspan> — Markdown+git の Second Brain</text></g>
+          <g class="pop"><rect x="500" y="250" width="18" height="18" rx="4" fill="#b45f06"/><text x="528" y="265" fill="#18241f"><tspan font-weight="700">コントロールプレーン</tspan> — 組織 / 経済</text></g>
+        </g>
+        <text x="500" y="340" font-family="Zen Kaku Gothic New" font-size="15" fill="#5d6c62">個人も組織も、<tspan fill="#b45f06" font-weight="700">縮尺が違うだけで同じ形</tspan>。</text>
+        <text x="500" y="364" font-family="Zen Kaku Gothic New" font-size="15" fill="#5d6c62">前編＝作る話 ／ 後編＝守り、賭ける話。</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 3 — DIVIDER PART 1
+     ================================================================= -->
+<section class="slide slide--dark slide--divider" data-title="Part 1">
+  <div class="slide-content" style="justify-content:center;">
+    <div class="divider-num reveal">01</div>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 1 ・ The Mind</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">個人の脳<br/>— 核と複利</h2>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 4 — AGENT = MODEL + HARNESS (bar)
+     ================================================================= -->
+<section class="slide" data-title="Model + Harness">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Design ・ 1/3</span></div>
+    <h2 class="reveal">Agent = Model + Harness</h2>
+    <p class="reveal" style="margin-top:.4rem; max-width:60ch;">同じモデルでも、ハーネス次第で成績は <strong>5〜40 ポイント</strong>動く。</p>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 880 240" role="img" aria-label="ハーネスによる成績差（CORE-Bench）">
+        <text x="40" y="40" font-family="JetBrains Mono" font-size="14" fill="#5d6c62">CORE-Bench（同一モデル）</text>
+        <!-- track -->
+        <rect x="40" y="70" width="720" height="44" rx="8" fill="#efe7d0"/>
+        <rect class="pop" x="40" y="70" width="302" height="44" rx="8" fill="#9aa79c"/>
+        <text x="56" y="98" font-family="Zen Kaku Gothic New" font-size="16" fill="#fffaf0" font-weight="700">最小スキャフォルド</text>
+        <text x="356" y="98" font-family="Bricolage Grotesque" font-size="20" fill="#5d6c62" font-weight="800">42%</text>
+        <rect x="40" y="134" width="720" height="44" rx="8" fill="#efe7d0"/>
+        <rect class="pop" x="40" y="134" width="562" height="44" rx="8" fill="#b45f06"/>
+        <text x="56" y="162" font-family="Zen Kaku Gothic New" font-size="16" fill="#fffaf0" font-weight="700">Claude Code（良いハーネス）</text>
+        <text x="616" y="162" font-family="Bricolage Grotesque" font-size="20" fill="#b45f06" font-weight="800">78%</text>
+        <text x="40" y="214" font-family="Zen Kaku Gothic New" font-size="15" fill="#18241f"><tspan font-family="Bricolage Grotesque" font-weight="800" fill="#b45f06">+36pt</tspan> — モデルは天井を、ハーネスは実現率を決める。NVIDIA: "Same Model, Better Results"</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 5 — CLOSED LEARNING LOOP
+     ================================================================= -->
+<section class="slide" data-title="閉じた学習ループ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Design ・ 2/3</span></div>
+    <h2 class="reveal">学習装置としての閉ループ</h2>
+    <div class="two-col reveal" style="margin-top:.5rem; align-items:center;">
+      <svg viewBox="0 0 360 300" role="img" aria-label="閉じた学習ループ" style="max-height:46vh;">
+        <defs><marker id="al" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b45f06"/></marker></defs>
+        <circle cx="180" cy="150" r="96" fill="none" stroke="#d9ccb0" stroke-width="1.6" stroke-dasharray="4 6"/>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="120" y="14" width="120" height="44" rx="10" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="180" y="41" font-size="14" fill="#18241f" font-weight="700">Nudges</text></g>
+          <g class="pop"><rect x="256" y="128" width="96" height="44" rx="10" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="304" y="155" font-size="14" fill="#18241f" font-weight="700">Skill 生成</text></g>
+          <g class="pop"><rect x="120" y="242" width="120" height="44" rx="10" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="180" y="269" font-size="13" fill="#18241f" font-weight="700">FTS5 検索</text></g>
+          <g class="pop"><rect x="8" y="128" width="96" height="44" rx="10" fill="#10251c"/><text x="56" y="148" font-size="13" fill="#d98b34" font-weight="700">GEPA</text><text x="56" y="164" font-size="11" fill="#a9c0b3">→ PR</text></g>
+        </g>
+        <g fill="none" stroke="#b45f06" stroke-width="2.2">
+          <path d="M238 44 C290 64 300 100 308 124" marker-end="url(#al)"/>
+          <path d="M300 172 C284 220 256 236 242 250" marker-end="url(#al)"/>
+          <path d="M118 268 C66 248 58 196 56 174" marker-end="url(#al)"/>
+          <path d="M62 124 C72 92 96 64 118 48" marker-end="url(#al)"/>
+        </g>
+      </svg>
+      <div class="panel">
+        <p>価値の源泉は「賢いモデル」ではなく、<strong>経験を外部ファイルに堆積させ続ける循環</strong>。</p>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li>洞察だけメモリへ（Nudges）</li>
+          <li>成功手順を Skill に（前編で詳述）</li>
+          <li>過去会話を全文検索（FTS5）</li>
+          <li>GEPA がトレースを進化させ <strong>PR で提案</strong>（自己評価バイアスを外部検証で補正）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 6 — FROZEN MEMORY
+     ================================================================= -->
+<section class="slide" data-title="凍結メモリ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Design ・ 3/3</span></div>
+    <h2 class="reveal">凍結メモリ：キャッシュ安定性との引き換え</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 880 240" role="img" aria-label="凍結メモリ vs ライブメモリ">
+        <!-- Hermes -->
+        <text x="20" y="46" font-family="Zen Kaku Gothic New" font-size="16" font-weight="700" fill="#10251c">Hermes（凍結）</text>
+        <rect x="20" y="60" width="840" height="46" rx="9" fill="#10251c"/>
+        <text x="40" y="88" font-family="Zen Kaku Gothic New" font-size="14" fill="#fffaf0">MEMORY.md(2,200) + USER.md(1,375) ≈ 1,300トークンを <tspan fill="#d98b34" font-weight="700">先頭に固定</tspan></text>
+        <text x="640" y="88" font-family="JetBrains Mono" font-size="13" fill="#2fae8e">prefix cache ✓</text>
+        <text x="20" y="128" font-family="Zen Kaku Gothic New" font-size="13" fill="#5d6c62">書き込みは即ディスク → 反映は<tspan fill="#b45f06" font-weight="700">次セッション</tspan>。上限超過は手で consolidate。</text>
+        <!-- OpenClaw -->
+        <text x="20" y="172" font-family="Zen Kaku Gothic New" font-size="16" font-weight="700" fill="#10251c">OpenClaw（ライブ）</text>
+        <rect x="20" y="186" width="840" height="40" rx="9" fill="#efe7d0"/>
+        <g>
+          <rect x="28" y="192" width="120" height="28" rx="5" fill="#d98b34"/><rect x="156" y="192" width="120" height="28" rx="5" fill="#d98b34"/><rect x="284" y="192" width="120" height="28" rx="5" fill="#d98b34"/>
+          <text x="420" y="212" font-family="Zen Kaku Gothic New" font-size="13" fill="#3a2a14">毎ターン 約2万字を再注入（入力の20〜30%がブートストラップ）</text>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">問い：メモリは <strong>キャッシュの効く長セッション</strong>向けか、<strong>即時のライブ再呼び出し</strong>向けか。正解は一つでない。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 7 — MARKDOWN WINS + SIGNAL GATE
+     ================================================================= -->
+<section class="slide" data-title="Markdown+gitが勝つ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">なぜ効くか ・ Bitter Lesson</span></div>
+    <h2 class="reveal">「Markdown + git」は手抜きではなく設計判断</h2>
+    <div class="two-col reveal" style="margin-top:.5rem; align-items:center;">
+      <svg viewBox="0 0 380 250" role="img" aria-label="メモリ方式の勝敗（表彰台）" style="max-height:44vh;">
+        <!-- podium -->
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <rect class="pop" x="140" y="70" width="100" height="160" rx="8" fill="#b45f06"/><text x="190" y="100" font-size="13" fill="#fffaf0" font-weight="700">Markdown</text><text x="190" y="118" font-size="13" fill="#fffaf0" font-weight="700">+ bash</text><text x="190" y="150" font-family="Bricolage Grotesque" font-size="26" fill="#fffaf0" font-weight="800">勝</text>
+          <rect class="pop" x="24" y="140" width="100" height="90" rx="8" fill="#9aa79c"/><text x="74" y="168" font-size="13" fill="#fffaf0" font-weight="700">Vector DB</text><text x="74" y="200" font-size="14" fill="#fffaf0">敗</text>
+          <rect class="pop" x="256" y="155" width="100" height="75" rx="8" fill="#9aa79c"/><text x="306" y="183" font-size="12" fill="#fffaf0" font-weight="700">Knowledge</text><text x="306" y="199" font-size="12" fill="#fffaf0" font-weight="700">Graph</text><text x="306" y="220" font-size="13" fill="#fffaf0">敗</text>
+        </g>
+        <text x="190" y="246" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="12" fill="#5d6c62">単純・デバッグ可能・モデルに自然</text>
+      </svg>
+      <div class="panel accent">
+        <h3>勝敗を分けるのは「規律」</h3>
+        <p class="note">重要なのはデータ構造ではなく、<strong>読み書きの規律</strong>。特に——</p>
+        <p><strong>The Signal Gate</strong>：いつ「覚えない」か。<br/>一度きりのクエリや失敗実験でメモリを汚染させない門番。</p>
+        <p class="note"><code>SCHEMA</code> の「2ソース以上で作成 / passing mention では作らない」がこれ。cyrilxbt:「<strong>検索の速さ</strong>のために整理せよ」。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 8 — COMPOUNDING MOAT
+     ================================================================= -->
+<section class="slide" data-title="複利の堀">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">なぜ効くか ・ The Moat</span></div>
+    <h2 class="reveal">複利で育つナレッジベースこそが堀</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 880 230" role="img" aria-label="知識ベースの複利成長">
+        <line x1="60" y1="200" x2="840" y2="200" stroke="#d9ccb0" stroke-width="1.6"/>
+        <line x1="60" y1="30" x2="60" y2="200" stroke="#d9ccb0" stroke-width="1.6"/>
+        <path class="draw" d="M60 196 C300 192 520 170 680 110 S820 40 836 30" fill="none" stroke="#b45f06" stroke-width="3.4" stroke-dasharray="980" stroke-dashoffset="0" pathLength="980"/>
+        <g class="pop"><circle cx="70" cy="194" r="6" fill="#2f7d6b"/><text x="84" y="190" font-family="Zen Kaku Gothic New" font-size="13" fill="#5d6c62">Week 1：5 skills / 1,000 ページ</text></g>
+        <g class="pop"><circle cx="836" cy="30" r="7" fill="#b45f06"/><text x="690" y="24" font-family="Zen Kaku Gothic New" font-size="13" fill="#b45f06" font-weight="700">Week 24：100+ skills / 100,000 ページ</text></g>
+        <text x="430" y="225" font-family="Zen Kaku Gothic New" font-size="12" fill="#5d6c62">減衰せずに蓄積 → 全体が賢くなる唯一のアーキテクチャ</text>
+      </svg>
+    </div>
+    <div class="callout quote reveal">「未来は、中央集権的な企業AIツールを使う人々のものではない。<strong>自分自身の、複利で育つAIシステムを構築する個人</strong>のものだ。」— Garry Tan（Fat Skills, Fat Code, <strong>Thin Harness</strong>）</div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 9 — DIVIDER PART 2
+     ================================================================= -->
+<section class="slide slide--dark slide--divider" data-title="Part 2">
+  <div class="slide-content" style="justify-content:center;">
+    <div class="divider-num reveal">02</div>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 2 ・ The Bet</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">賭ける<br/>— ハーネスとインフラ</h2>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 10 — OPEN HARNESS vs FRAMEWORK
+     ================================================================= -->
+<section class="slide" data-title="Harness vs Framework">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">投資対象 ・ 1/3</span></div>
+    <h2 class="reveal">Open Harness と Framework は別物</h2>
+    <div class="two-col reveal" style="margin-top:.7rem; position:relative;">
+      <div class="panel">
+        <span class="tag">// 使う面（人間が AI を使う）</span>
+        <h3>Open Harness</h3>
+        <p class="note">Hermes / OpenClaw / OpenCode / Pi</p>
+        <ul class="bullets" style="margin-top:0;"><li>CLI・チャット・ファイル・シェル・MCP</li><li><strong>広い柔軟性</strong>（使う柔軟性）</li><li>operator safety</li></ul>
+      </div>
+      <div class="panel dark">
+        <span class="tag">// 組み込む面（AIをシステムに）</span>
+        <h3>Framework / Runtime</h3>
+        <p class="note" style="color:#a9c0b3;">Agents SDK / LangGraph / Pydantic AI</p>
+        <ul class="bullets" style="margin-top:0;"><li>typed state・graph・durable exec</li><li><strong>深い柔軟性</strong>（作る・運用する）</li><li>product / tenant safety</li></ul>
+      </div>
+    </div>
+    <p class="reveal note" style="margin-top:.8rem; text-align:center;">workflow 抽象は薄れても、<strong>runtime 抽象（state/permission/memory/policy）は重要化</strong>する。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 11 — LAYER STACK: keep assets outside the harness
+     ================================================================= -->
+<section class="slide" data-title="捨てても残る">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">投資対象 ・ 2/3</span></div>
+    <h2 class="reveal">「ハーネスを捨てても業務ロジックが残る」構成</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 880 280" role="img" aria-label="役割分離の4層アーキテクチャ">
+        <g font-family="Zen Kaku Gothic New">
+          <g class="pop"><rect x="60" y="14" width="760" height="44" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="80" y="42" font-size="15" fill="#18241f" font-weight="700">Harness 層 — Hermes / OpenClaw</text><text x="640" y="42" font-size="13" font-family="JetBrains Mono" fill="#2f7d6b">乗り換え可能</text></g>
+          <text x="440" y="78" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#5d6c62">— Tool Boundary（MCP / HTTP API）—</text>
+          <g class="pop"><rect x="60" y="88" width="760" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="80" y="113" font-size="15" fill="#18241f" font-weight="700">Agent Control 層 — LangGraph / Agents SDK</text></g>
+          <g class="pop"><rect x="60" y="136" width="760" height="56" rx="9" fill="#10251c" stroke="#b45f06" stroke-width="2.4"/><text x="80" y="162" font-size="15" fill="#d98b34" font-weight="700">★ State &amp; Governance 層 — 中核資産</text><text x="80" y="184" font-size="13" fill="#fffaf0">DB ・ audit log ・ eval dataset ・ prompt registry ・ approval</text></g>
+          <g class="pop"><rect x="60" y="200" width="760" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="80" y="225" font-size="15" fill="#18241f" font-weight="700">Execution 層 — container / sandbox / serverless</text></g>
+        </g>
+        <text x="440" y="266" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="14" fill="#b45f06" font-weight="700">中核資産をどの層にも閉じ込めない＝ハーネスを捨てても残る</text>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">注意：「モデルはハーネスに合わせて post-train される」→ メモリ/スキルは<strong>非可搬</strong>。堀は同時にロックインでもある。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 12 — HARNESS MOVES, NOT SHRINKS
+     ================================================================= -->
+<section class="slide" data-title="ハーネスは移動する">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">投資対象 ・ 3/3</span></div>
+    <h2 class="reveal">ハーネスは消えない、移動する</h2>
+    <div class="two-col reveal" style="margin-top:.5rem; align-items:center;">
+      <svg viewBox="0 0 380 240" role="img" aria-label="モデル向上で足場が新しい難所へ移動" style="max-height:42vh;">
+        <line x1="30" y1="210" x2="360" y2="210" stroke="#d9ccb0" stroke-width="1.6"/>
+        <text x="30" y="230" font-family="JetBrains Mono" font-size="11" fill="#5d6c62">モデル能力 →</text>
+        <path class="draw" d="M30 200 C140 190 200 120 360 36" fill="none" stroke="#2f7d6b" stroke-width="3" stroke-dasharray="430" stroke-dashoffset="0" pathLength="430"/>
+        <g class="pop"><circle cx="120" cy="178" r="9" fill="#efe7d0" stroke="#b45f06" stroke-width="2"/><text x="120" y="183" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#b45f06">足場</text></g>
+        <g class="pop"><circle cx="300" cy="70" r="9" fill="#efe7d0" stroke="#b45f06" stroke-width="2"/><text x="300" y="75" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#b45f06">足場</text></g>
+        <path d="M134 172 C200 150 240 110 288 78" stroke="#b45f06" stroke-width="1.6" stroke-dasharray="4 4" fill="none"/>
+        <text x="180" y="120" font-family="Zen Kaku Gothic New" font-size="12" fill="#5d6c62" transform="rotate(-22 180 120)">新しい難所へ</text>
+      </svg>
+      <div class="panel">
+        <p>良いモデルは古い足場を不要にするが、<strong>新しい難所と失敗モードを解禁</strong>する。だから一度きりの投資ではない。</p>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li><strong>検証は出力側に</strong>（テスト・閾値・自己硬化）</li>
+          <li><strong>コンテキストは希少資源</strong>（compaction / offload / 目次化）</li>
+          <li>Ratchet で<strong>足し</strong>、腐ったら<strong>消す</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 13 — HOSTING LADDER + brain/hands
+     ================================================================= -->
+<section class="slide" data-title="ホスティングの梯子">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Hosting ・ $5 → AWS</span></div>
+    <h2 class="reveal">安く始め、痛みで上げる</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 880 250" role="img" aria-label="ホスティングの梯子">
+        <g font-family="Zen Kaku Gothic New">
+          <g class="pop"><rect x="40" y="178" width="200" height="56" rx="10" fill="#fffdf7" stroke="#2f7d6b" stroke-width="2"/><text x="60" y="204" font-size="15" fill="#18241f" font-weight="700">$5 VPS / RasPi</text><text x="60" y="224" font-size="12" fill="#5d6c62">まず安く</text></g>
+          <g class="pop"><rect x="270" y="120" width="220" height="56" rx="10" fill="#fffdf7" stroke="#2f7d6b" stroke-width="2"/><text x="290" y="146" font-size="15" fill="#18241f" font-weight="700">Modal / Daytona</text><text x="290" y="166" font-size="12" fill="#5d6c62">サンドボックス分離・休眠</text></g>
+          <g class="pop"><rect x="520" y="62" width="200" height="56" rx="10" fill="#10251c"/><text x="540" y="88" font-size="15" fill="#d98b34" font-weight="700">AWS Tier 2/3</text><text x="540" y="108" font-size="12" fill="#a9c0b3">Bedrock / AgentCore</text></g>
+          <!-- step risers -->
+          <path d="M240 206 H270 V176 M490 148 H520 V118" stroke="#d9ccb0" stroke-width="2" fill="none"/>
+          <text x="540" y="44" font-family="JetBrains Mono" font-size="12" fill="#b45f06">本番</text>
+        </g>
+      </svg>
+    </div>
+    <div class="callout reveal"><strong>brain / hands split：</strong>推論（脳＝gateway, 非公開・秘密情報）と コード実行（手＝sandbox, 最小権限）を分ける。<span class="note">エンドポイントを開くたび攻撃面が増える。</span></div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 14 — AWS 3-TIER TABLE
+     ================================================================= -->
+<section class="slide" data-title="AWS 3ティア">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">AWS</span></div>
+    <h2 class="reveal">AWS にホストする：3ティアの梯子</h2>
+    <table class="kv reveal" style="margin-top:.7rem;">
+      <tr><th></th><th>Tier 1: EC2</th><th>Tier 2: ECS+Bedrock</th><th>Tier 3: AgentCore</th></tr>
+      <tr><td>サンドボックス</td><td>Lambda (15分上限)</td><td>Fargate Ephemeral</td><td class="hl">Firecracker μVM/session</td></tr>
+      <tr><td>LLM</td><td>OpenRouter</td><td class="hl">Bedrock (鍵不要)</td><td>Bedrock</td></tr>
+      <tr><td>月額目安</td><td>~$50-70</td><td>~$70-100</td><td class="hl">~$40-60</td></tr>
+    </table>
+    <div class="two-col reveal" style="margin-top:.9rem;">
+      <div class="callout">最も洗練された <strong>Tier 3 が最も安い</strong>。消費課金・アイドル無課金・NAT 不要、LLM 待ちの I/O は無課金。</div>
+      <div class="callout"><strong>Bedrock は API キー管理を消す。</strong> IAM/SigV4 + CloudTrail で全呼び出しを監査。</div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 15 — PTC
+     ================================================================= -->
+<section class="slide" data-title="PTC">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Programmatic Tool Calling</span></div>
+    <h2 class="reveal">PTC：トークンを9割削る</h2>
+    <p class="reveal" style="margin-top:.3rem; max-width:62ch;">逐次のツール呼び出しを <strong>1本の Python</strong> に束ね、最終結果だけを文脈へ返す。</p>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 880 210" role="img" aria-label="PTCによるトークン・コスト削減">
+        <text x="40" y="40" font-family="JetBrains Mono" font-size="14" fill="#5d6c62">トークン量</text>
+        <rect x="40" y="54" width="700" height="36" rx="7" fill="#efe7d0"/><rect class="pop" x="40" y="54" width="700" height="36" rx="7" fill="#9aa79c"/><text x="752" y="79" font-family="Bricolage Grotesque" font-size="17" font-weight="800" fill="#5d6c62">100%</text><text x="56" y="78" font-family="Zen Kaku Gothic New" font-size="13" fill="#fffaf0">逐次ツール呼び出し</text>
+        <rect x="40" y="100" width="700" height="36" rx="7" fill="#efe7d0"/><rect class="pop" x="40" y="100" width="84" height="36" rx="7" fill="#b45f06"/><text x="136" y="125" font-family="Bricolage Grotesque" font-size="17" font-weight="800" fill="#b45f06">8–13%</text><text x="56" y="124" font-family="Zen Kaku Gothic New" font-size="13" fill="#fffaf0">PTC</text>
+        <text x="40" y="180" font-family="Zen Kaku Gothic New" font-size="15" fill="#18241f">月額 <tspan font-family="Bricolage Grotesque" font-weight="800">$15,600 → $1,560</tspan>（~90%減）／ 非PTCはClaude系のみ正解、<tspan fill="#b45f06" font-weight="700">PTCは8モデル全て正解</tspan></text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 16 — DIVIDER PART 3
+     ================================================================= -->
+<section class="slide slide--dark slide--divider" data-title="Part 3">
+  <div class="slide-content" style="justify-content:center;">
+    <div class="divider-num reveal">03</div>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 3 ・ Scale</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">スケールする<br/>— 個人から組織へ</h2>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 17 — OPERATOR PATTERNS
+     ================================================================= -->
+<section class="slide" data-title="オペレータパターン">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Operator Patterns</span></div>
+    <h2 class="reveal">脳と体を分け、ワーカーは使い捨てに</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 880 220" role="img" aria-label="コントロールルームとワーカー艦隊">
+        <defs><marker id="ao" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b45f06"/></marker></defs>
+        <g class="pop"><rect x="40" y="70" width="220" height="86" rx="12" fill="#10251c"/><text x="150" y="104" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#d98b34" font-weight="700">Control Room（脳）</text><text x="150" y="130" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="13" fill="#fffaf0">ルール・runbook・索引</text><text x="150" y="148" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="11" fill="#a9c0b3">秘密情報は混ぜない</text></g>
+        <g stroke="#b45f06" stroke-width="2.4" fill="none"><line x1="260" y1="98" x2="330" y2="80" marker-end="url(#ao)"/><line x1="260" y1="113" x2="330" y2="113" marker-end="url(#ao)"/><line x1="260" y1="128" x2="330" y2="146" marker-end="url(#ao)"/></g>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="336" y="58" width="150" height="42" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="411" y="84" font-size="13" fill="#18241f" font-weight="700">ワーカー（体）</text></g>
+          <g class="pop"><rect x="336" y="106" width="150" height="42" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="411" y="132" font-size="13" fill="#18241f" font-weight="700">ワーカー（体）</text></g>
+          <g class="pop"><rect x="336" y="154" width="150" height="42" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="411" y="180" font-size="13" fill="#18241f" font-weight="700">ワーカー（体）</text></g>
+        </g>
+        <text x="560" y="96" font-family="Zen Kaku Gothic New" font-size="15" fill="#18241f" font-weight="700">「体は脳から再構築できる。</text>
+        <text x="560" y="122" font-family="Zen Kaku Gothic New" font-size="15" fill="#18241f" font-weight="700">　脳は体から再構築できない。」</text>
+        <text x="560" y="156" font-family="Zen Kaku Gothic New" font-size="13" fill="#b45f06">本番エージェントは書かない。<tspan font-weight="700">育てる</tspan>。</text>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">私の <code>AGENTS.md</code> + git は、個人スケールの Control Room。増設は「独自の鍵 / メモリ / 役割」が要るときだけ。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 18 — CONTROL PLANE + SAME SHAPE
+     ================================================================= -->
+<section class="slide" data-title="相似形">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Control Plane ・ 相似形</span></div>
+    <h2 class="reveal">個人と組織は、同じ形をしている</h2>
+    <table class="kv reveal" style="margin-top:.7rem;">
+      <tr><th>関心事</th><th>個人スケール（前編）</th><th>組織スケール（Control Plane）</th></tr>
+      <tr><td>巻き戻し</td><td><code>git revert</code></td><td>Rollback / 承認ゲート</td></tr>
+      <tr><td>品質ゲート</td><td>pre-commit hook</td><td>Evaluation / Audit</td></tr>
+      <tr><td>監査</td><td><code>log.md</code> + git 履歴</td><td>Execution Logs / Identity</td></tr>
+      <tr><td>複利資産</td><td class="hl">Markdown wiki の知識</td><td class="hl">デシジョン・リネージュ</td></tr>
+    </table>
+    <div class="callout quote reveal" style="margin-top:.8rem;">「会社そのものの形が堀になる」。意思決定の根拠は最も腐りやすい資産——<strong>人は去り、プロセスは変わるが、トレースは残る</strong>。</div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 19 — ECONOMICS
+     ================================================================= -->
+<section class="slide" data-title="経済">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Economics</span></div>
+    <h2 class="reveal">トークンではなく、結果で測る</h2>
+    <div class="two-col reveal" style="margin-top:.6rem;">
+      <div class="panel">
+        <h3>per token → per outcome</h3>
+        <p class="note">「トークンの請求書は、不安定な量の仕事を表す、安定した単位のコスト」。同じ処理でも <strong>5〜10倍</strong>ぶれる。</p>
+        <p><strong>MiniMax は Gemini より per-token は高いのに、成功タスクあたり 2.3倍安い。</strong>トークン価格は選定段階で誤導する。</p>
+      </div>
+      <div class="panel accent" style="justify-content:center;">
+        <h3>…と、その逆風</h3>
+        <p>2026/5 後半：AI の ROI は「正当化しづらい」（Uber COO）。FT は大手 ROI をマイナス試算。</p>
+        <p class="note">結果への帰属が要るのは、<strong>生のトークン投入が確実にリターンへ変換できていないから</strong>。出力が本当に判断を変えているか、を問い続ける。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 20 — SUMMARY: 4 ALTITUDES
+     ================================================================= -->
+<section class="slide" data-title="4つの高度">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Synthesis</span></div>
+    <h2 class="reveal">4つの高度、同じ形</h2>
+    <table class="kv reveal" style="margin-top:.8rem;">
+      <tr><th>高度</th><th>まわりの層</th><th>現れ方</th></tr>
+      <tr><td>エンジニアリング</td><td class="hl">ハーネス</td><td>失敗を足場に変える（前編）</td></tr>
+      <tr><td>個人</td><td class="hl">複利のナレッジベース</td><td>Markdown+git の Second Brain</td></tr>
+      <tr><td>組織</td><td class="hl">コントロールプレーン / 組織の形</td><td>identity・audit・複利トレース</td></tr>
+      <tr><td>経済</td><td class="hl">トークン→結果の帰属</td><td>per token ではなく per outcome</td></tr>
+    </table>
+    <p class="reveal note" style="margin-top:.9rem; text-align:center;">前編の個人の脳は一番下の小さな実装。Control Room も Ratchet も監査可能な git も、<strong>縮尺が違うだけ</strong>。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 21 — 5 TAKEAWAYS (後編)
+     ================================================================= -->
+<section class="slide" data-title="5つの持ち帰り">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Takeaways ・ 後編</span></div>
+    <h2 class="reveal">開発者への5つの持ち帰り</h2>
+    <ol class="bullets reveal" style="margin-top:1rem; max-width:72ch;">
+      <li><strong>ハーネスは薄く、知識資産は厚く、可搬に。</strong> 中核はハーネスの外（DB・git）へ。</li>
+      <li><strong>ハーネスは消えず、移動する。</strong> 足し算(Ratchet)と引き算(削除)の両方。</li>
+      <li><strong>安く始め、痛みで上げる。</strong> $5 VPS → サンドボックス分離 → AgentCore。</li>
+      <li><strong>増やすときは型に従う。</strong> Control Room、ブレイン層、そして<strong>育てる</strong>。</li>
+      <li><strong>個人と組織は相似形。</strong> 複利のファイルが堀、per outcome で測る。</li>
+    </ol>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE 22 — CLOSING
+     ================================================================= -->
+<section class="slide slide--dark" data-title="結び">
+  <div class="slide-content" style="justify-content:center;">
+    <span class="kicker reveal">End of Part 2 — 投資編</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.5rem;">道具は乗り換えてよい。<br/>ファイルは手放すな。</h2>
+    <div class="callout quote reveal" style="margin-top:1.3rem; background:rgba(217,139,52,0.14); border-color:var(--accent-2); max-width:64ch;">
+      <strong style="color:var(--accent-2)">複利で育つあなた自身のファイル群</strong>だけは、ベンダにもハーネスにも預けず、自分の手元（git）に持ち続けること。それが、モデルがどれだけ強くなっても陳腐化しない唯一の資産だ。
+    </div>
+    <p class="reveal" style="margin-top:1.2rem; color:#d8e2da;">前編はそれを「作る」話、後編はそれを「守り、賭ける」話だった。</p>
+    <p class="reveal mono" style="margin-top:1.2rem; font-size:var(--small-size); color:#9fb3a6;">blog/2026-06-03_hermes_agent-as-second-brain-and-the-harness-investment.md ・ github.com/kzinmr/ai-topics</p>
+  </div>
+</section>
+
+<script>
+/* ===========================================
+   SLIDE PRESENTATION CONTROLLER (same as 前編)
+   =========================================== */
+class SlidePresentation {
+  constructor() {
+    this.slides = Array.from(document.querySelectorAll('.slide'));
+    this.current = 0;
+    this.progress = document.getElementById('progress');
+    this.counter = document.getElementById('counter');
+    this.navDots = document.getElementById('navDots');
+    this.buildDots(); this.observe(); this.keys(); this.touch(); this.update(0);
+  }
+  buildDots() {
+    this.navDots.innerHTML = '';
+    this.slides.forEach((s, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('aria-label', (s.dataset.title || ('スライド ' + (i+1))));
+      b.addEventListener('click', () => this.go(i));
+      this.navDots.appendChild(b);
+    });
+    this.dots = Array.from(this.navDots.children);
+  }
+  observe() {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+          e.target.classList.add('visible');
+          this.update(this.slides.indexOf(e.target));
+        }
+      });
+    }, { threshold: [0.5] });
+    this.slides.forEach(s => io.observe(s));
+  }
+  update(i) {
+    if (i < 0) return;
+    this.current = i;
+    this.progress.style.width = (((i + 1) / this.slides.length) * 100) + '%';
+    if (this.counter) this.counter.innerHTML = '<b>' + String(i+1).padStart(2,'0') + '</b> / ' + String(this.slides.length).padStart(2,'0');
+    this.dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+  }
+  go(i) { i = Math.max(0, Math.min(this.slides.length - 1, i)); this.slides[i].scrollIntoView({ behavior: 'smooth' }); }
+  keys() {
+    window.addEventListener('keydown', (e) => {
+      if (['ArrowDown','ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); this.go(this.current + 1); }
+      else if (['ArrowUp','ArrowLeft','PageUp'].includes(e.key)) { e.preventDefault(); this.go(this.current - 1); }
+      else if (e.key === 'Home') { e.preventDefault(); this.go(0); }
+      else if (e.key === 'End') { e.preventDefault(); this.go(this.slides.length - 1); }
+    });
+  }
+  touch() {
+    let y0 = null;
+    window.addEventListener('touchstart', (e) => { y0 = e.touches[0].clientY; }, { passive: true });
+    window.addEventListener('touchend', (e) => {
+      if (y0 === null) return;
+      const dy = y0 - e.changedTouches[0].clientY;
+      if (Math.abs(dy) > 55) this.go(this.current + (dy > 0 ? 1 : -1));
+      y0 = null;
+    }, { passive: true });
+  }
+}
+new SlidePresentation();
+</script>
+</body>
+</html>
