@@ -11,7 +11,7 @@ tags:
   - agent-communication
   - developer-tooling
   - developer-experience
-  - html
+  - frontend
   - agent-skills
   - agent-orchestration
   - interpretability
