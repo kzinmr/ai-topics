@@ -1,7 +1,7 @@
 ---
 title: "RLM (Recursive Language Models)"
 created: 2026-04-13
-updated: 2026-05-29
+updated: 2026-06-04
 type: concept
 tags: [rlm, long-context, inference, test-time-scaling, context-rot, context-degradation, ai-agents, coding-agents, orchestration, subagents, workflow, claude-code, research, neurosymbolic]
 related: [dspy, dspy-rlm, context-engineering, gepa, lambda-rlm, programmatic-tool-calling, code-execution-with-mcp, code-mode, context-folding, anthropic-multi-agent-research, inference-time-scaling, typed-rlm, dynamic-workflows]
@@ -11,6 +11,7 @@ sources:
   - https://dspy.ai/api/modules/RLM/
   - https://github.com/alexzhang13/rlm
   - raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not.md
+  - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md
 ---
 
 # RLM (Recursive Language Models)
@@ -331,10 +332,61 @@ Source: [arXiv:2603.20105](https://arxiv.org/abs/2603.20105) (Huawei Noah's Ark 
 1. **Sequential execution:** RLM calls are synchronous; no parallel sub-call execution
 2. **Recursion depth:** Explored up to depth=3 in v3; diminishing returns observed for some model/task combinations (e.g., Qwen3-Coder on CodeQA)
 3. **Cost distribution:** Heavy tails due to very long trajectories; median RLM run cheaper than base model but mean higher
-4. **Model underutilization:** Current models not trained for RLM scaffolding show "significant performance being left untapped" — v3 shows training partly addresses this
+4. **Model underutilization:** Current models not trained for RLM scaffolding shows "significant performance being left untapped" — v3 shows training partly addresses this
 5. **Mathematical reasoning:** RLMs struggle on math-heavy tasks without specialized training (LongCoT-mini MATH subscore dropped from 26.0 to 5.6 without decomposition hints)
 6. **Latency:** 40-80% overhead from REPL operations vs single-pass; v3 shows 3× speed improvement after training
 7. **Syntax errors:** v3 quantifies this — percentage of trajectories with ≥1 syntax error; training significantly reduces this
+8. **State integrity:** Agents can mutate or delete REPL variables (including tool functions themselves). Practitioners must decide: reset state per tool call (Turnbull's compromise), use immutable tool wrappers, or accept the risk. See [[concepts/agent-driven-ranker-optimization]] for the guardrail-based approach.
+
+## Practitioner Design Decisions (Search Domain)
+
+Doug Turnbull's "Search with Agents" Lesson 6 (June 2026) demonstrates RLM applied to patent expert finding, surfacing several design decisions that the formal paper does not address:
+
+### Stateful Variables as Agent Memory
+
+The REPL is initialized with domain-specific state:
+
+```python
+repl_box.start(
+    historical_results=[],          # Mutable list — agent's search log
+    patent_search=patent_search,    # Immutable tool — external API wrapper
+    llm_query=llm_query             # Recursive LLM call — the key addition
+)
+```
+
+`historical_results` acts as **persistent, inspectable agent memory** — the agent reads it to avoid duplicate queries, appends findings, and can even ask `llm_query()` to summarize what's been found so far. Unlike context window memory, REPL variables survive across tool calls without context rot.
+
+### Generic vs Task-Specific LLM Tools
+
+A key design tension: expose a generic `llm_query(prompt)` or wrap it in domain-specific tools?
+
+| Approach | Example | Pro | Con |
+|----------|---------|-----|-----|
+| Generic `llm_query` | `llm_query("Is expert X relevant?")` | Maximum flexibility | Unpredictable usage, prompt injection risk |
+| Task-specific `judge` | `judge(expert_info, topic)` | Constrained, testable | Less exploratory, harder to iterate |
+
+Turnbull's demo uses generic `llm_query` with **usage examples in the system prompt** to guide behavior — a middle ground between freedom and control.
+
+### State Integrity Problem
+
+When `patent_search` enforces deduplication (raises error on duplicate queries), the agent could theoretically **redefine the function in the REPL** to bypass the check. Turnbull proposes forcing `repl.set(agent_state)` before each tool call — resetting protected state — as a pragmatic compromise. This is a form of **REPL-level security** that the formal RLM paper does not discuss.
+
+### Validation for REPL Outputs
+
+REPL state can become corrupted: the agent might delete entries from `historical_results` or hallucinate expert names. Turnbull's harness adds `validators=[eval_results, check_results, ...]` — a post-hoc check that can force the agent to restore state or discard the run entirely. This connects directly to the [[concepts/agent-steering|agent steering]] pattern of carrot-and-stick validation.
+
+### `harness()` as the Orchestration Primitive
+
+Turnbull's implementation uses a `harness()` function (likely from a custom framework) rather than the RLM paper's `rlm.completion()`. The harness provides:
+- `tools=[repl_tool]` — tool registration
+- `stoppers=[stop_after_N_calls]` — recursion depth control
+- `validators=[...]` — post-execution checks
+- `summary=True` — automatic context summarization
+- `text_format=str` — output formatting
+
+This suggests that practical RLM implementations often sit **inside a broader agent harness** rather than being the top-level abstraction — the RLM is the reasoning engine, the harness is the execution environment.
+
+Source: [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms|Search with Agents Lesson 6 slides]]
 
 ## Future Directions
 
