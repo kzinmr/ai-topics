@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 2336 | Indexed entries: 1657 | Not in index: 679
+> Last updated: 2026-06-03 | Total pages: 2341 | Indexed entries: 1670 | Concepts: 1553 | Entities: 751
 
-## Entities (750 pages)
+## Entities (751 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -769,6 +769,7 @@
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
 - [[concepts/@milksandmatcha]] — @MilksandMatcha
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
+- [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/abliteration]] — Abliteration: Mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. 3,500+ decensored models, 13M downloads. Automated by Heretic tool. Affects Llama, Gemma, Nemotron.
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution — Postgres-Native Durable Execution: Async processing foundation in the AI Agent context. LLM loop checkpointing, Pi Agent integration patterns, Event-driven inter-agent coordination. Includes comparison with Temporal/DBOS/PGMQ.
@@ -1098,6 +1099,7 @@
 - [[concepts/codex-knowledge-work]] — Codex for Knowledge Work — OpenAI's expansion of Codex from software development to general knowledge workers. Delegate/Collaborate modes, /goal persistent objectives, Goals vs Skills framework, Five Levels of Codex use, mobile steering via ChatGPT app, security/safety. Source: Every guide by Katie Parrott (May 2026).
 - [[concepts/codex-prompting]] — Prompt design patterns for Codex. Bias for Action, meta-prompting, standard system prompt structure, anti-patterns. Based on official OpenAI Cookbook guidance.
 - [[concepts/codex-safety-at-openai]] — Codex Safety at OpenAI
+- [[concepts/codestral]] — Codestral — Mistral AI's open-weight code generation model family (22B, May 2024). 80+ languages, FIM completion, 32K–256K context. Variants: Codestral Mamba (Apache 2.0), Codestral 25.01/25.08, Codestral Embed.
 - [[concepts/coding-agents]] — Coding Agents
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — design to turn Devin into a data analysis agent
@@ -1377,6 +1379,7 @@
 - [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
 - [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr/May 2026 → Jun 2026 Build): MAI-Thinking-1 (1T param reasoning, 35B active, zero distillation), MAI-Code-1-Flash (137B code model, 5B active), MAI-Image-2, MAI-Transcribe-1, MAI-Voice-1 + updates. Windows as agent runtime, GitHub Copilot app, Web IQ.
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA) — Sub-quadratic attention for MiniMax M3 model. Block-level selection on real KVs, 9.7× faster prefilling, 15.6× faster decoding at 1M tokens vs full attention. May 2026.
+- [[concepts/minimax-m3]] — MiniMax M3 — All-in-one multimodal 1M-context model. MiniMax Sparse Attention (MSA), Together AI preferred cloud partner with 81-125% throughput gains. Native image/video support. June 2026.
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source — Critical analysis of how "open source" is defined and measured in AI/ML.
 - [[concepts/mistral-medium-3-5]] — Mistral Medium 3.5 — 128B dense model (May 2026), 256k context, configurable reasoning effort, open weights under modified MIT. SWE-Bench 77.6%, τ³-Telecom 91.4.

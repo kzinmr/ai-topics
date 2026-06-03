@@ -1,17 +1,31 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-03] Create | Codestral concept page
+
+- **Created**: `concepts/codestral.md` — Mistral AI's Codestral code generation model family concept page. Covers: original 22B model (May 2024), Codestral Mamba (Jul 2024, Apache 2.0 Mamba2), Codestral 25.01 (Jan 2025, 256K context), Codestral 25.08 (Jul 2025), and Codestral Embed (May 2025). Performance benchmarks (HumanEval, MBPP, RepoBench, Spider, FIM), licensing (MNPL, Apache 2.0), fill-in-the-middle capability, 80+ languages. Added to index.md under Concepts. Sources: 6 raw articles (2024-05-29 original + 2026-05-10 sitemap scrapes).
+
 ## [2026-06-03] Raw Backlog Ingest — Ed Zitron "AI Doesn't Have ROI" enrichment + index fix
 
 - **Enriched**: `entities/ed-zitron.md` — Added "AI Doesn't Have ROI — Enterprise Cost Crisis (June 2026)" section documenting Uber COO $500M accidental spend, Walmart "Code Puppy" token limits, SemiAnalysis "Dark Output" critique, Bain & Co survey, Sam Altman CNBC admission, Zitron's "kalopsia" framing. Updated sources frontmatter.
 - **Enriched**: `concepts/github-copilot-billing.md` — Added real-world consequences section citing Zitron's enterprise examples. Updated `updated:` date to 2026-06-03.
 - **Enriched**: `concepts/ai-bubble-economics.md` — Added Bain & Co survey data (44% funding next wave from unrealized savings), Sam Altman CNBC interview admission, "kalopsia" framing. Updated sources frontmatter.
 - **Fixed**: `index.md` — Added missing `[[concepts/github-copilot-billing]]` entry (page existed since April 2026 but was never cataloged in index).
+## [2026-06-03] Create | MiniMax M3 concept page
+
+- **Created**: `concepts/minimax-m3.md` — MiniMax M3 all-in-one multimodal 1M-context model. Covers: MiniMax Sparse Attention (MSA) block-sparse architecture (9×+ prefilling speedup, 15×+ decoding speedup), KV-Block-Major kernel, paged attention integration, Together AI preferred cloud partnership (81–125% throughput improvements), SMG Rust gateway multimodal preprocessing, comparison with M2.7. Source: `raw/articles/2026-06-02_together-ai_minimax-m3-efficient-inference.md`.
+- **Updated**: `index.md` — Added `[[concepts/minimax-m3]]` entry.
+- **Updated**: `SCHEMA.md` — Added `sparse-attention` tag to Models taxonomy.
 ## [2026-06-03] Rename | Cheat at Search Part 4 transcript date alignment
 
 - **Renamed**: `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` → `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Date aligned with slide date (May 28, 2026).
 - **Updated frontmatter**: `date: 2026-05-28` (date_ingested unchanged)
 - **Updated references**: `index.md`, `log.md`, `concepts/llm-search-judge.md`, `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md`, `raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md`
+
+## [2026-06-03] Create | A2A Agent Protocol concept page (Active Crawl)
+
+- **Created**: `concepts/a2a-agent-protocol.md` — Google's Agent2Agent (A2A) open protocol for AI agent interoperability. Covers: 5 design principles, relationship with MCP (tools/context vs agent-to-agent), key features (Agent Cards, Task lifecycle, streaming, multimodal), enterprise partner ecosystem (50+ partners including Atlassian, Salesforce, SAP, LangChain). Source: `raw/articles/2025-04-09_google-developers_a2a-agent-protocol.md`.
+- **Updated**: `index.md` — Added `[[concepts/a2a-agent-protocol]]` entry.
 
 ## [2026-06-03] Rename | Cheat at Search Part 4 article date correction
 
