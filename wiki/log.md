@@ -14,7 +14,8 @@
 
 **Updated**:
 - `entities/doug-turnbull-speaking.md` — Added Lesson 6 entry to speaking engagements
-- `concepts/rlm-recursive-language-models.md` — Added "Practitioner Design Decisions" section (stateful variables as memory, generic vs task-specific LLM tools, state integrity problem, validation for REPL outputs, harness() as orchestration primitive) + state integrity limitation
+- `concepts/rlm-recursive-language-models.md` — Added "Practitioner Design Decisions" section (stateful variables as memory, generic vs task-specific LLM tools, state integrity problem, validation for REPL outputs, harness() as orchestration primitive) + state integrity limitation + Future Directions cross-link to rlm-for-indexing
+- `concepts/rlm-for-indexing.md` — New concept page: speculative design for RLM applied to indexing (adaptive chunking, context-aware enrichment, cross-doc reasoning, schema discovery)
 - `index.md` — Added concept page and raw article entries
 - `log.md` — This entry
 

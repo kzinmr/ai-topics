@@ -395,6 +395,7 @@ Source: [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms|S
 - **Custom data types:** Beyond strings, support structured context (graphs, databases)
 - **Long-horizon agents:** Tasks spanning weeks to months with persistent state
 - **Hybrid folding + RLM:** Combine context folding's efficiency with RLM's precision
+- **Indexing & Content Understanding:** Applying RLM to the ingestion side — adaptive chunking, context-aware enrichment with index-relative judgment, cross-document reasoning, progressive schema discovery. See [[concepts/rlm-for-indexing]] for the full design space analysis.
 
 ## Quotes
 

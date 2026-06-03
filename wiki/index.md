@@ -1544,6 +1544,7 @@
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlhf]] — RLHF
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
+- [[concepts/rlm-for-indexing]] — RLM for Indexing & Content Understanding — Speculative direction applying REPL + llm_query() to document chunking, enrichment, cross-doc reasoning, schema discovery. Hybrid with rule-based pipelines for cost control.
 - [[concepts/rlms]] — RLMs: Recursive Language Models — Self-optimizing LLMs at inference time via recursive context reading/writing
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): RL training paradigm using external rewards from deterministic verifiers. Combined with GRPO, eliminates both reward model and critic model. 10x RL compute from o1→o3. ART·E (beats o3 for $80). Named by Tülu 3, popularized by DeepSeek-R1.
 - [[concepts/rlvr-science-limitations]] — RLVR Science Limitations — Limitations and challenges in Reinforcement Learning from Verification for scientific reasoning.
