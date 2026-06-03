@@ -6026,3 +6026,9 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **`entities/elevenlabs.md`** — Added "Omnichannel routing pattern" sub-section under AI Customer Service Agents. Three-tier architecture (greeting/FAQ router to Transaction/Rebooking/Baggage Claim sub-agents via intent classification). Updated `sources`, added 1 source.
 - **`entities/anyscale.md`** — Added "Multi-Cloud and Platform Expansion (June 2026)" section covering AKS support, Global Resource Scheduler (GRS), and multi-deployment management. Updated `updated: 2026-06-03`, tags, added 1 source.
 - **`entities/glean.md`** — Added "Snowflake Data Integration (June 2026)" sub-section under Products and Technology. Glean Assistant now queries Snowflake data warehouses via natural language. Updated `updated: 2026-06-03`, added 1 source.
+
+## 2026-06-03
+
+- **updated** raw/articles/2026-06-02_mixedbread_latent-terms-dense-retrievers.md — added Ben Clavié X thread commentary on IR research culture ("LLM moment" for retrieval)
+- **updated** concepts/latent-terms.md — added Research Culture Commentary section + X sources
+- **updated** entities/benjamin-clavie.md — expanded Latent Terms section with X thread, added key quotes and X sources

@@ -217,6 +217,8 @@ Clavié is unusually candid in the ML community about the relationship between h
 
 **Latent Terms — SAE-extracted BM25-ready Vocabularies (2026-06):** Clavié et al. published a preprint showing that dense retrievers contain information far beyond what single-vector scoring can express. By applying Sparse Autoencoders (SAEs) to retriever activations, they extracted a sparse vocabulary ("Latent Terms") that follows a Zipfian distribution and is directly usable with BM25. Key findings: (1) Latent Terms + BM25 over Nomic outperforms SPLADE-v3; (2) Contriever's Recall@100 on LIMIT jumps from 0.053 to 0.729; (3) the structure emerges from retrieval contrastive training, not from pre-trained LMs alone. arXiv:2605.29384. [[concepts/latent-terms|Latent Terms]]
 
+In a widely-engaged X thread following publication ([source](https://x.com/bclavie/status/2062151045346984032), 70 likes, 28 bookmarks), Clavié framed the work as a call for research-culture reform in IR, arguing the field needs its "LLM moment" — tolerance for early-stage research that lacks production infrastructure but points toward transformative directions. He emphasized that "we understand so little about retrieval that models have an entire sparse indexable world we knew almost nothing about" ([source](https://x.com/bclavie/status/2061964415524901019)), and that "the availability of infra should have no bearing on whether an idea makes it into the world" ([source](https://x.com/bclavie/status/2062160512704815374)). Antoine Chaffin echoed the sentiment, noting the study's importance lies in "the future direction of IR" rather than the specific BM25 result ([source](https://x.com/antoine_chaffin/status/2062081232842682448)).
+
 **Tsukuba IR Talk (2026-05-20):** In "ColBERT and Late Interaction Retrieval: Why, How, and What Next?", Clavié provided a systematic overview of IR paradigms. Key insights: Single-Vector's limits lie not in the model itself but in the **scoring mechanism (cosine similarity)**; the Max component of MaxSim is the key to performance (SumSim/AvgSim collapses); ColBERT achieves comparable performance with one order of magnitude less data than single-vector (data efficiency); 0.13B ColBERT outperforms 8B single-vector models on BrowseComp-Plus. Open questions: oracle gap (even best retrieval ~12% of tasks still wrong), MaxSim instruction-following collapse, delayed large-scale contrastive pre-training (first appeared April 2026, standard for single-vector since 5 years ago). [[raw/articles/2026-05-20_clavie-tsukuba-ir-talk-colbert-late-interaction|slides]]
 
 **Open-Source Toolchain:** Built an ecosystem covering the entire IR toolchain: RAGatouille → rerankers → byaldi → PyLate.
@@ -255,6 +257,12 @@ Clavié is unusually candid in the ML community about the relationship between h
 
 > "Everyone with major achievements definitely has periods where things go less smoothly. They, too, second-guess themselves."
 > — On the universality of struggle
+
+> "we understand so little about retrieval that models have an entire sparse indexable world we knew almost nothing about. future's bright, tons of work to do."
+> — X thread on Latent Terms implications (June 2026)
+
+> "We need to encourage papers whose infra is in the future."
+> — On IR research culture (June 2026)
 
 ## Related People
 
@@ -296,3 +304,6 @@ Clavié is unusually candid in the ML community about the relationship between h
 - https://hamel.dev/notes/llm/rag/p1-intro.html — "P1: I don't use RAG, I just retrieve documents" — Part 1 presentation (2026)
 - https://arxiv.org/abs/2605.29384 — Latent Terms: Dense Retrievers Contain Trivially Extractable BM25-ready Zipfian Vocabularies (May 2026)
 - https://www.mixedbread.com/blog/latent-terms — Latent Terms blog post (June 2026)
+- https://x.com/bclavie/status/2062151045346984032 — "IR needs an LLM moment" thread (June 2026)
+- https://x.com/bclavie/status/2061964415524901019 — "sparse indexable world" reflection (June 2026)
+- https://x.com/bclavie/status/2062160512704815374 — "papers whose infra is in the future" (June 2026)

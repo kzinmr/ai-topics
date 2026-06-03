@@ -1,12 +1,15 @@
 ---
 title: Latent Terms
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 type: concept
 tags: [information-retrieval, embeddings, bm25, interpretability, mechanistic-interpretability, latent-space, retrieval, colbert]
 sources:
   - https://www.mixedbread.com/blog/latent-terms
   - https://arxiv.org/abs/2605.29384
+  - https://x.com/bclavie/status/2062151045346984032
+  - https://x.com/bclavie/status/2061964415524901019
+  - https://x.com/antoine_chaffin/status/2062081232842682448
 related:
   - entities/benjamin-clavie
   - concepts/colbert
@@ -63,6 +66,16 @@ The Latent Terms structure **does not emerge from pre-trained language models al
 - **Trivial extraction**: SAEs provide a lightweight, post-hoc method to surface this knowledge without retraining or architectural changes.
 - **Interpretability bonus**: Latent Terms are inherently interpretable — each feature can be inspected to understand what concept it represents, unlike opaque dense vectors.
 - **Hybrid retrieval**: Latent Terms offer a principled way to combine dense and sparse retrieval, potentially enabling new hybrid architectures that leverage both paradigms.
+
+## Research Culture Commentary
+
+Ben Clavié (first author) framed the Latent Terms work as evidence of a broader problem in IR research culture. In a widely-engaged X thread (70 likes, 28 bookmarks, 7.3K impressions, [source](https://x.com/bclavie/status/2062151045346984032)), he argued that retrieval research needs its "LLM moment" — a willingness to fund and publish foundational ideas even when production infrastructure doesn't yet exist:
+
+> "we understand so little about retrieval that models have an entire sparse indexable world we knew almost nothing about" ([source](https://x.com/bclavie/status/2061964415524901019))
+
+> "We need to encourage papers whose infra is in the future" ([source](https://x.com/bclavie/status/2062160512704815374))
+
+Antoine Chaffin echoed this, noting the study's importance lies in "the future direction of IR" rather than the specific BM25 result ([source](https://x.com/antoine_chaffin/status/2062081232842682448)).
 
 ## Related Concepts
 

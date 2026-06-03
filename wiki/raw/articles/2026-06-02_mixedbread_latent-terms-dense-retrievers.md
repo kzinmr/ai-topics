@@ -192,3 +192,33 @@ This reframes the relationship between dense and sparse retrieval: they are not 
 
 - Clavié, B., Lee, S., Shakir, A., & Kato, M. P. (2026). *Latent Terms: Dense Retrievers Contain Trivially Extractable BM25-ready Zipfian Vocabularies*. arXiv:2605.29384. https://arxiv.org/abs/2605.29384
 - Mixedbread Blog. https://www.mixedbread.com/blog/latent-terms
+
+---
+
+## Community Reactions: Ben Clavié on X (2026-06-03)
+
+Ben Clavié (first author) posted a reflective thread on X after publication, emphasizing the broader research-culture implications:
+
+**Main tweet** ([source](https://x.com/bclavie/status/2062151045346984032), 70 likes, 28 bookmarks, 7.3K impressions):
+
+> "I have a deeper note to make about this: we need to rethink how we approach retrieval research if we want to have an LLM moment.
+>
+> I think a problem we have as a sub-field is a lack of openness to early research that might be paving the way to what comes next, even if it's not all [there yet]."
+
+**Earlier framing tweet** ([source](https://x.com/bclavie/status/2061964415524901019)):
+
+> "my main takeaway from this isn't 'oh, this is cool! BM25 works on hidden activations!' but 'we understand so little about retrieval that models have an entire sparse indexable world we knew almost nothing about'. future's bright, tons of work to do."
+
+**Follow-up on research incentives** ([source](https://x.com/bclavie/status/2062160512704815374)):
+
+> "I really don't think the availability of infra should have any bearing whatsoever on whether an idea makes it into the world. We need to encourage papers whose infra is in the future."
+
+**Antoine Chaffin** (retweeted by Clavié) echoed the sentiment ([source](https://x.com/antoine_chaffin/status/2062081232842682448)):
+
+> "Despite being insanely cool results by itself, I think this study highlights something much more important for the future direction of IR. The goal has never been to create representations that contains all the information about the original input."
+
+Clavié credited Chaffin for inspiring the thread ([source](https://x.com/bclavie/status/2062151650354331819)).
+
+### Meta-commentary
+
+Clavié's thread frames the Latent Terms work not as a retrieval benchmark result but as evidence that the IR sub-field has a **research culture problem**: excessive gatekeeping around "production-ready" infrastructure discourages exploration of foundational ideas. He draws a parallel to the LLM field's trajectory — where early, impractical research (GPT-1/2 era) laid the groundwork for transformative breakthroughs — and argues retrieval needs the same tolerance for early-stage, infrastructure-incomplete work.
