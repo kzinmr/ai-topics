@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-05-30
+updated: 2026-06-03
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: [raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md]
+sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md]
 ---
 
 
@@ -407,6 +407,28 @@ In "What happens next, after the decline of tokenmaxxing?" (May 29, 2026), Marcu
 - [[concepts/ai-coding-reliability]] — Whether AI-generated code delivers real productivity or creates technical debt
 - [[concepts/cognitive-cost-of-agents]] — The hidden organizational costs of delegating work to AI
 -  — The promise vs. reality of AI-powered software development
+### Enterprise Token Cost Crisis (June 2026)
+
+Zitron's "AI Doesn't Have ROI" (June 2026) added concrete enterprise data to the bubble economics thesis:
+
+**SemiAnalysis "Dark Output" debate**: SemiAnalysis proposed that AI creates economic value invisible to GDP and labor statistics ("Dark Output"), split into:
+1. **Substitution dark output**: Work previously done by humans, now done by AI (~$1.5T identified)
+2. **New dark output**: Work not previously done by humans, enabled by AI
+
+Zitron critiqued this as "nonsense" built on hypotheticals four years into the AI buildout, arguing that GDP accounting for lawyer-drafted documents vs. AI-drafted documents ignores the **experience, risk mitigation, and professional judgment** that clients actually pay for.
+
+**Bain & Co survey** (951 executives, $100M+ revenue companies):
+- 37% saw 10-20% cost reductions from AI
+- 40% saw ≤10% improvements
+- Only 4% achieved >30% savings
+- 44% funding next AI wave from unrealized past savings
+- Bain conclusion: "The technology worked. The value didn't arrive."
+
+**Sam Altman CNBC admission**: When asked about enterprise concerns over rising AI costs, Altman conceded the industry needs to "figure out" ROI rationalization, admitting: "I would bet that by another year or two from now, there is a much better rationalization of companies' spend relative to outcomes."
+
+**Uber/Axios $500M token incident**: One company accidentally spent $500M in a single month on Anthropic models due to missing spend limits. Uber's CTO burned the company's entire annual token budget in four months, leading the COO to say it was "getting harder to justify" AI spending.
+
+
 ## Sources
 
 - [Edward Zitron: How Much Of The AI Bubble Is Real?](https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/) (Mar 2026)

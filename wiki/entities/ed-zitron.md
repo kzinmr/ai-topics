@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-05-27
+updated: 2026-06-03
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -75,6 +75,7 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | May 2026 | Where Are All The Data Centers? | Investigates claims vs. reality of hyperscaler data center construction |
 | May 2026 | I Will Never Respect A Website | "LLMs are websites" framing; Stella Laurenzo's Claude Code analysis; coding vulnerability crisis |
 | May 2026 | AI Is Really Weird | Agent definition critique; Anthropic revenue anomalies; capacity planning paradox |
+| Jun 2026 | AI Doesn\'t Have ROI | Enterprise cost crisis, kalopsia thesis, Dark Output critique |
 
 ## AI Is Too Expensive (May 2026)
 
@@ -285,6 +286,85 @@ Zitron reported on a systemic crisis in software engineering caused by coding LL
 Zitron reported that Cursor using Anthropic's Claude Opus 4.6 **deleted an entire production database and all its backups**:
 - Illustrates the "never says no" problem: AI will try to fix bugs, sometimes also "fixing" (adding or deleting code) from elsewhere
 - Unlike humans who'd push back on unrealistic timelines, AI burns tokens trying to comply
+
+
+## AI Doesn't Have ROI — Enterprise Cost Crisis (June 2026)
+
+In "[AI Doesn't Have ROI](https://www.wheresyoured.at/ai-doesnt-have-roi/)" (June 2026), Zitron synthesized his circular dependency thesis with fresh evidence from the **enterprise token billing transition** that began in Q1 2026.
+
+### The "Can't Measure Cost" Problem
+
+Zitron argues that the inability to measure AI ROI is secondary to the more fundamental problem: **nobody can measure the actual cost of an AI task**:
+
+- LLMs are non-deterministic — the same prompt costs different token amounts each time
+- Token cost varies with model, context window size, and random sampling
+- No standardized unit of "work" exists for AI tasks (unlike SaaS seats or compute hours)
+- "If you can't measure how good something is, how much it might cost, or what your return on investment might be, it's fair to ask why you're even paying for it"
+
+### Uber's $500 Million Token Incident
+
+Zitron cited Axios reporting that one company **accidentally spent $500 million in a single month** on Anthropic models after failing to set spend limits. This followed Uber COO Andrew Macdonald's admission that it was "getting harder to justify" AI spending when the CTO had burned Uber's **entire annual token budget in four months**.
+
+### GitHub Copilot Token Billing Chaos
+
+Microsoft moved all GitHub Copilot customers to token-based billing from premium request pricing. Zitron documented specific user reports:
+
+- One user burned **50% of monthly credits in a single prompt**
+- Another burned **60% in a few hours**
+- Another burned **31% in one prompt**
+- Another estimated burning all credits in **a single 5-hour session**
+- Another burned **nearly 50% in eight prompts**
+- Another **14% in two prompts**
+- Another went from "favorite subscription" to "most stressful" after burning **33% of monthly balance in a few hours**
+
+These figures were during a **promotional period** offering $11-21 in free monthly credits. Zitron argues this proves his thesis: "Microsoft intentionally hid the actual cost of prompts and allowed users to spend obscene amounts as a way of boosting growth."
+
+### Walmart "Code Puppy" Token Limits
+
+Walmart set token limits on its internal AI coding tool "Code Puppy" after the shift to token-based billing, with a spokesperson saying it "wanted employees to apply AI in ways that create value." This came days after Amazon SVP Dave Treadwell told employees to "not use AI just for the sake of using AI."
+
+### The "Kalopsia" Thesis
+
+Zitron introduced the term **kalopsia** (the belief that something is more beautiful than it really is) to describe AI subscription products: "Every frothy, fluffy hype-piece about Claude Code or AI in general is a kalopsia" because subsidized subscriptions hide true costs.
+
+### SemiAnalysis "Dark Output" Critique
+
+Zitron sharply criticized SemiAnalysis's concept of "Dark Output" — AI-enabled economic value that exists but isn't visible in GDP or labor statistics. He called the definition "nonsense" because:
+
+- "Substitution dark output" assumes AI drafts are equivalent to human work product
+- Legal documents require experience and risk mitigation, not just output generation
+- The "new dark output" examples (literature reviews, email summarization) are trivial
+- "We're four fucking years into it but we're still using hypotheticals"
+
+### Bain & Co ROI Survey
+
+Zitron highlighted a Bain & Co survey of 951 executives from companies with $100M+ revenue:
+
+- **37%** saw cost reductions of 10-20%
+- **40%** saw improvements of 10% or less
+- Only **4%** achieved savings of more than 30%
+- **44%** are funding their next AI wave from past savings that "haven't yet materialized"
+- Bain's conclusion: "The technology worked. The value didn't arrive."
+
+Zitron's response: "Put another way, the technology 'worked (?),' but did not provide value in doing so."
+
+### Sam Altman CNBC Interview
+
+Zitron mocked Sam Altman's CNBC interview response to the ROI question:
+
+- Altman: "I would bet that by another year or two from now, there is a much better rationalization of companies' spend relative to outcomes."
+- Zitron: "Motherfucker you are the industry! You are the one that has to work this out!"
+- Criticized CNBC's David Faber for not pressing Altman on the admission
+
+### The Dot Com Bubble Comparison
+
+Zitron extended his Dot Com Bubble comparison with a key structural difference:
+
+- **Dot Com**: Dark fiber infrastructure was reusable and adaptable after the bubble burst
+- **AI**: GPU data centers are single-purpose — "A rack of Vera Rubin or Blackwell GPUs will cost as much to run in five years as they do today"
+- GPU power costs are fixed: "A single B200 Blackwell GPU uses 1,200W, and more-complex AI coding tasks can take four to twelve of them for a single user's output"
+- NVIDIA data center costs are **increasing**: $50B/gigawatt now → $80-100B/gigawatt for Vera Rubin
+- "No such story exists for AI" — no reusable infrastructure narrative
 
 ## Reception and Criticism
 

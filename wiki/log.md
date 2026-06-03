@@ -1,6 +1,12 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-03] Raw Backlog Ingest — Ed Zitron "AI Doesn't Have ROI" enrichment + index fix
+
+- **Enriched**: `entities/ed-zitron.md` — Added "AI Doesn't Have ROI — Enterprise Cost Crisis (June 2026)" section documenting Uber COO $500M accidental spend, Walmart "Code Puppy" token limits, SemiAnalysis "Dark Output" critique, Bain & Co survey, Sam Altman CNBC admission, Zitron's "kalopsia" framing. Updated sources frontmatter.
+- **Enriched**: `concepts/github-copilot-billing.md` — Added real-world consequences section citing Zitron's enterprise examples. Updated `updated:` date to 2026-06-03.
+- **Enriched**: `concepts/ai-bubble-economics.md` — Added Bain & Co survey data (44% funding next wave from unrealized savings), Sam Altman CNBC interview admission, "kalopsia" framing. Updated sources frontmatter.
+- **Fixed**: `index.md` — Added missing `[[concepts/github-copilot-billing]]` entry (page existed since April 2026 but was never cataloged in index).
 ## [2026-06-03] Rename | Cheat at Search Part 4 transcript date alignment
 
 - **Renamed**: `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` → `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Date aligned with slide date (May 28, 2026).

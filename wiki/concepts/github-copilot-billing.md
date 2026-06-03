@@ -2,7 +2,7 @@
 title: "GitHub Copilot Token-Based Billing"
 tags: [github-copilot]
 created: 2026-04-24
-updated: 2026-04-30
+updated: 2026-06-03
 type: concept
 ---
 
@@ -108,3 +108,35 @@ This move follows similar actions by other AI companies:
 
 - [Where's Your Ed At: Exclusive Report](https://www.wheresyoured.at/news-microsoft-to-shift-github-copilot-users-to-token-based-billing-reduce-rate-limits-2/)
 - [Official GitHub Blog: Changes to Copilot Plans](https://github.blog/changelog/2026-04-20-changes-to-github-copilot-plans-for-individuals/)
+## Enterprise Impact: June 2026 Token Billing Crisis
+
+Ed Zitron's "AI Doesn't Have ROI" (June 2026) documented the real-world consequences of the token billing transition across multiple enterprises, confirming concerns about cost visibility and user experience that were theoretical in April 2026.
+
+### GitHub Copilot User Reports
+
+After Microsoft's shift to token-based billing, users reported extreme cost spikes during a promotional period ($11-21 free monthly credits):
+
+| Report | Token Burn |
+|--------|-----------|
+| Single prompt | 50% of monthly credits |
+| Few hours of use | 60% of monthly credits |
+| Single prompt (alternate user) | 31% of monthly credits |
+| Five-hour session | 100% of monthly credits (estimated) |
+| Eight prompts | Nearly 50% of monthly credits |
+| Two prompts | 14% of monthly credits |
+| Few hours (alternate user) | 33% of monthly credits |
+
+### The Subsidy Cliff
+
+Zitron argues that the previous request-based billing model created a **subsidy illusion**: Microsoft absorbed the cost of excessive token usage to drive adoption, training users to treat AI interactions as "free." When the true cost became visible through token-based billing, users experienced sticker shock because they had no model for how much a "task" should cost.
+
+Key insight: "Microsoft intentionally hid the actual cost of prompts and allowed users to spend obscene amounts as a way of boosting growth for GitHub Copilot."
+
+### Enterprise Response: Walmart Code Puppy
+
+Walmart responded to the token billing transition by setting explicit token limits on its internal AI coding tool "Code Puppy," with a spokesperson stating the company "wanted employees to apply AI in ways that create value." Amazon SVP Dave Treadwell similarly told employees to "not use AI just for the sake of using AI."
+
+### The Uber $500M Incident
+
+While not directly about Copilot, the parallel incident of one company accidentally spending $500M/month on Anthropic tokens (reported by Axios) and Uber burning its entire annual token budget in four months demonstrates the same fundamental issue: **token-based billing without cost awareness tools leads to uncontrolled spending**.
+

@@ -1266,6 +1266,7 @@
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer) — Anthropic's show_widget system for rendering interactive HTML widgets inline in claude.ai. Progressive disclosure pattern (read_me), streaming DOM injection, design guidelines. Recreated for terminal agents using Glimpse + morphdom.
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
 - [[concepts/github-copilot-agent-platform]] — GitHub's evolution from Copilot code completion to agent platform. AI-generated PRs (Waymo analogy), Windows sandboxing for agents, WorkIQ scaling, Spark low-code platform. Microsoft Build 2026.
+- [[concepts/github-copilot-billing]] — GitHub Copilot Token-Based Billing Transition — Microsoft's April 2026 shift from request-based to token-based Copilot pricing. Enterprise cost crisis (Uber $500M accidental spend, Walmart Code Puppy rate limits), end of subsidized AI era.
 - [[concepts/gguf-quantization]] — GGUF Quantization
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/glut-of-circuits]] — niplav's (2026) GLUT-of-Circuits model: LLMs are giant lookup-table-like collections of depth-limited, composable error-correcting circuits computed in superposition. Implications for the Agent structure problem, AI alignment, token bottlenecks, and CoT.
