@@ -29,6 +29,14 @@ if [ -n "$STAGED_WIKI" ]; then
     fi
 fi
 
+# Content regression check — block overwrites of rich entity/concept pages
+if git diff --cached --name-only --diff-filter=ACM | grep -qE '^wiki/(entities|concepts)/.*\.md$'; then
+    python3 "$SCRIPT_DIR/.githooks/pre-commit-content-regression.py"
+    if [ $? -ne 0 ]; then
+        exit 1
+    fi
+fi
+
 # Japanese content check — block JP introduction to clean wiki files
 STAGED_WIKI_JP=$(git diff --cached --name-only --diff-filter=ACM | grep '^wiki/.*\.md$' | grep -v '^wiki/raw/')
 if [ -n "$STAGED_WIKI_JP" ]; then
