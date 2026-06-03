@@ -1,6 +1,20 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-06-02] X Article ingestion — Dynamic Workflows in Claude Code
+
+**Action**: Ingested X Article by Thariq Shihipar (@trq212) on dynamic workflows in Claude Code. Fetched full article body via xurl OAuth2 API (`tweet.fields=article`). Created 1 raw article, 1 new concept page, 1 new entity page. Updated index.md.
+
+**Wiki pages created**:
+- **NEW**: `raw/articles/2026-06-02_trq212_dynamic-workflows-claude-code.md` — Full X Article text (14KB). "A harness for every task: dynamic workflows in Claude Code." Covers workflow patterns, use cases, integration tips.
+- **NEW**: `concepts/dynamic-workflows.md` — Structured concept page covering 6 workflow patterns (classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament, loop-until-done), use cases, dynamic vs static comparison, failure modes mitigated (agentic laziness, self-preferential bias, goal drift).
+- **NEW**: `entities/thariq-shihipar.md` — Entity page (skeleton) for Thariq Shihipar, MTS at Anthropic on Claude Code. Previously YC W20, South Park Commons, MIT Media Lab.
+
+**Wiki pages updated**:
+- **UPDATED**: `index.md` — Added `entities/thariq-shihipar` entry; updated `concepts/dynamic-workflows` description from stale May 2026 entry to accurate Jun 2026 content.
+
+**Source**: https://x.com/trq212/status/2061907337154367865 (X Article: https://x.com/i/article/2061850535708483585)
+
 ## [2026-06-02] Sean Goedecke entity enrichment — "Build agents, not pipelines"
 
 **Action**: Enriched entity page `entities/seangoedecke-com.md` with new article from Sean Goedecke blog (May 31, 2026). Article argues agents > pipelines for LLM systems due to context-gathering difficulty. Concept page `concepts/agent-vs-pipeline-architecture.md` already existed; updated `updated` field.

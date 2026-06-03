@@ -1,16 +1,20 @@
 {
   "urls": [
+    "http://www.paulgraham.com/popular.html",
     "http://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
     "http://xania.org/202605/walking-the-dog?utm_source=feed&utm_medium=rss",
     "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
     "https://berthub.eu/articles/posts/het-solvinity-besluit-gevolgen/",
     "https://berthub.eu/articles/posts/keynote-opening-digital-commons-edic-eu/",
+    "https://blog.llvm.org/posts/2025-03-11-flang-new/",
+    "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-5---advanced-many-to-many-relationships",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---solutions-to-the-exercises",
     "https://brutecat.com/articles/google-cloud-rce",
     "https://buttondown.com/archive/assumptions-weaken-properties/",
     "https://buttondown.com/hillelwayne/archive/knowing-about-things-is-cheaper-than-knowing/",
     "https://cohere.com/blog/guide-to-mcp",
+    "https://danluu.com/cache-incidents/",
     "https://danluu.com/nothing-works/",
     "https://daringfireball.net/2026/05/the_fonts_of_the_us_federal_courts",
     "https://daringfireball.net/2026/05/what_is_a_dickover",
@@ -39,6 +43,10 @@
     "https://dfarq.homeip.net/why-people-say-crts-dont-have-pixels/",
     "https://dfarq.homeip.net/why-people-say-crts-dont-have-pixels/?utm_source=rss&utm_medium=rss&utm_campaign=why-people-say-crts-dont-have-pixels",
     "https://dynomight.net/crc-rates/",
+    "https://elevenlabs.io/blog/elevenlabs-summit-warszawy",
+    "https://elevenlabs.io/blog/lot-polish-airlines-announcement",
+    "https://elevenlabs.io/blog/warsaw-summit-homecoming",
+    "https://elevenlabs.io/blog/webinar-recap-deploying-agents-across-every-channel",
     "https://eli.thegreenplace.net/2026/notes-on-fourier-series/",
     "https://email.beehiivstatus.com/40efd0c2afdac2d7302f63a8aec092b48fc6d956/hclick",
     "https://entropicthoughts.com/is-monaco-decided-at-qualifying",
@@ -48,6 +56,7 @@
     "https://exe.dev/?df",
     "https://feed.tedium.co/link/15204/17345764/plex-price-increase-self-hosting",
     "https://feed.tedium.co/link/15204/17351430/google-ai-udm14-reflection",
+    "https://fireworks.ai/blog/Trilogy",
     "https://garymarcus.substack.com/p/breaking-bad-news-for-three-of-the",
     "https://garymarcus.substack.com/p/could-generative-ai-could-turn-out",
     "https://garymarcus.substack.com/p/if-enough-other-companies-report",
@@ -186,6 +195,7 @@
     "https://shkspr.mobi/blog/2026/05/the-uk-governments-low-value-purchase-system-is-a-waste-of-time/",
     "https://shkspr.mobi/blog/2026/05/whale-fall/",
     "https://sierra.ai/blog/ai-native-product-localization",
+    "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/",
     "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
     "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
     "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything",
@@ -244,6 +254,7 @@
     "https://www.filfre.net/2026/05/planescape-torment-part-1-from-the-tabletop/",
     "https://www.gilesthomas.com/2026/05/10g-ethernet-sfpplus-mini-heatsinks",
     "https://www.gilesthomas.com/2026/05/on-first-looking-into-jax",
+    "https://www.glean.com/blog/generative-ai-stack-for-software-engineers",
     "https://www.hamiltonnolan.com/p/if-you-take-the-weasel-job-then-you?r=qy6gq",
     "https://www.jeffgeerling.com/blog/2026/i-patched-iozone-for-better-disk-benchmarks-on-modern-macos/",
     "https://www.jeffgeerling.com/blog/2026/its-hard-to-justify-framework-12/",
@@ -288,5 +299,5 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/",
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-redhat-javascript-clients/"
   ],
-  "updated": "2026-06-02T08:02:35.208066+00:00"
+  "updated": "2026-06-03T00:02:11.167927+00:00"
 }

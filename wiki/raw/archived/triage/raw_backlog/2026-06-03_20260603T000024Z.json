@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-06-03T00:02:11.167731+00:00",
+  "triage_run_id": "20260603T000024Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest: 5 articles evaluated. All skipped as outside AI/LLM scope. Paul Graham (2001 programming language essay), Dan Luu (Twitter cache incidents), brutecat.com (Google Cloud RCE, already archived), LLVM blog (Flang/MLIR compiler), Miguel Grinberg (SQLAlchemy tutorial). No wiki pages created or updated.",
+  "decisions": [
+    {
+      "item_id": "paulgraham.com--popular-html--c633a6dc",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "Being Popular",
+      "url": "http://www.paulgraham.com/popular.html",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "2001年のプログラミング言語の人気要因に関するエッセイ。AI/LLMスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "A friend of mine once told an eminent operating systems expert that he wanted to design a really good programming language..."
+    },
+    {
+      "item_id": "danluu.com--cache-incidents--1d05e743",
+      "source": "raw_backlog",
+      "source_name": "Dan Luu",
+      "title": "A decade of major cache incidents at Twitter",
+      "url": "https://danluu.com/cache-incidents/",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/danluu.com--cache-incidents--1d05e743.md",
+      "recommended_action": "skip",
+      "reason_ja": "Twitterのキャッシュインシデント(SEV-0/SEV-1)分析。分散システムの事例研究だがAI/LLMスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is a collection of information on severe (SEV-0 or SEV-1) incidents at Twitter that were at least partially attributed to cache from 2012 to 2022..."
+    },
+    {
+      "item_id": "blog.llvm.org--posts-2025-03-11-flang-new--8f37a052",
+      "source": "raw_backlog",
+      "source_name": "LLVM Blog",
+      "title": "LLVM Fortran Levels Up: Goodbye flang-new, Hello flang!",
+      "url": "https://blog.llvm.org/posts/2025-03-11-flang-new/",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md",
+      "recommended_action": "skip",
+      "reason_ja": "LLVM Fortranコンパイラ(flang)のマイルストーン記事。コンパイラ開発ドメインでAI/LLMスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "LLVM has included a Fortran compiler Flang since LLVM 11 in late 2020. However, until recently the Flang binary was not flang but instead flang-new..."
+    },
+    {
+      "item_id": "blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-3--38c6d188",
+      "source": "raw_backlog",
+      "source_name": "miguelgrinberg.com",
+      "title": "SQLAlchemy 2 In Practice - Chapter 3 - One-To-Many Relationships",
+      "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-3-one-to-many-relation--38c6d188.md",
+      "recommended_action": "skip",
+      "reason_ja": "データベースORMチュートリアルの第3章。AI/LLMスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is the third chapter of my SQLAlchemy 2 in Practice book. In this chapter you are going to learn how to eliminate duplication by creating multiple related tables..."
+    }
+  ]
+}

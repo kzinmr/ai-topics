@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-06-02T18:16:17.043352+00:00",
+  "triage_run_id": "20260602T180014Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming 0-article補完: raw/articles/から53件の未処理記事をスクリーリング。AI/LLM/Agent関連5件を特定。Harveyのクラウドエージェント基盤記事（multi-model routing、ZDR、コスト最適化）とコントラクトレビュー記事（500+ agents、25K workflows）をTAKEとして推薦。Fireworks TrilogyケーススタディとGlean AI StackをREFERENCE。ElevenLabsイベント告知3件とSimon WillisonリンクブログをSKIP。take=2, reference=2, skip=5。",
+  "decisions": [
+    {
+      "item_id": "fireworks-trilogy-case-study",
+      "source": "dreaming",
+      "source_name": "Fireworks AI Blog",
+      "title": "Trilogy Validates Open-Weight AI Models for Enterprise Workloads with Fireworks AI",
+      "url": "https://fireworks.ai/blog/Trilogy",
+      "raw_path": "raw/articles/2026-06-02_fireworks-ai_Trilogy.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Fireworks AIのエンタープライズケーススタディ。TrilogyのAI COEが数百社のポートフォリオ企業でオープン推論モデルを検証。OpenSymphony（マルチエージェントオーケストレーション）、93.6%キャッシュヒット率、150 tok/sec、75K tok/req、プロプライエタリ比1/5コスト。Cerebras/OpenRouter比較もあり。entities/fireworks-ai.mdは既にベンチマークデータを豊富に持つが、このケーススタディの具体的な数値は未記載。軽微なエンリッチメント候補。",
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "glean-ai-stack",
+      "source": "dreaming",
+      "source_name": "Glean Blog",
+      "title": "Generative AI for software engineers: Build the right AI stack",
+      "url": "https://www.glean.com/blog/generative-ai-stack-for-software-engineers",
+      "raw_path": "raw/articles/2026-06-02_glean_generative-ai-stack-for-software-engineers.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ GleanのAIプラットフォーム包括解説。Agent Builder、Agent Governance、Agent Orchestration、Agent Library、Enterprise Graph、Personal Graph、Hybrid Search、Model Hub、Agentic Engineの全コンポーネントを網羅。entities/glean.mdはMCPベンチマークのみで、プラットフォームアーキテクチャの記述が薄い。ただし製品概要記事であり深掘り技術内容は限定的。軽微なエンリッチメント候補。",
+      "candidate_wiki_path": "entities/glean.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "elevenlabs-omnichannel",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Webinar Recap: Deploying Agents Across Every Channel",
+      "url": "https://elevenlabs.io/blog/webinar-recap-deploying-agents-across-every-channel",
+      "raw_path": "raw/articles/2026-06-02_elevenlabs_webinar-recap-deploying-agents-across-every-channel.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ElevenLabsのオムニチャネルエージェント展開のウェビナーまとめ。SMS/ボイス/アプリ内デモ、チャネル統合アーキテクチャ（ロジック層 vs チャネル層分離）、ボイスの特殊性。entities/elevenlabs.mdは既にClaude Code統合をカバー済み。ウェビナー要約は情報密度が低く、マーケティング色が強い。Wiki価値限定的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "simonwillison-meta-ai-hack",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts",
+      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/",
+      "raw_path": "raw/articles/simonwillison.net--2026-jun-1-hackers-simply-asked-meta-ai--9abda8fb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Meta AIサポートボットを悪用したInstagramアカウント乗っ取り事件のリンクブログ。krebsonsecurity.comの同一件記事で既にentities/krebsonsecurity-com.mdに記載済み。Willisonのコメントは18行のみで技術的深掘りなし。重複カバレッジ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "elevenlabs-lot-airlines",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "LOT Polish Airlines Announcement",
+      "url": "https://elevenlabs.io/blog/lot-polish-airlines-announcement",
+      "raw_path": "raw/articles/2026-06-02_elevenlabs_lot-polish-airlines-announcement.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabsのLOT Polish Airlines提携発表。パートナーシップ告知のみで技術的内容なし。Wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "elevenlabs-warsaw-summit",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Warsaw Summit Homecoming",
+      "url": "https://elevenlabs.io/blog/warsaw-summit-homecoming",
+      "raw_path": "raw/articles/2026-06-02_elevenlabs_warsaw-summit-homecoming.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabs Warsaw Summitイベント告知。技術的内容なし。Wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "elevenlabs-summit-warszawy",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "ElevenLabs Summit Warszawy",
+      "url": "https://elevenlabs.io/blog/elevenlabs-summit-warszawy",
+      "raw_path": "raw/articles/2026-06-02_elevenlabs_elevenlabs-summit-warszawy.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabs Summit Warsaw開催報告。イベントレポートのみで技術的内容なし。Wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
