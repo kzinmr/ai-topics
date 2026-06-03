@@ -2,7 +2,7 @@
 title: LLM Search Judge
 type: concept
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-06-03
 aliases:
   - llm relevance judge
   - llm-as-a-judge for search
@@ -15,6 +15,7 @@ tags:
 sources:
   - raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md
   - raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md
+  - raw/articles/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md
 related:
   - concepts/ndcg
   - concepts/query-understanding
@@ -27,6 +28,8 @@ related:
 **LLM Search Judge** is the practice of using large language models to automatically evaluate search result relevance, replacing or supplementing expensive human labelers. It enables computation of standard IR metrics ([[concepts/ndcg|NDCG]]) on unlabeled real-world query traffic, dramatically reducing the cost and turnaround time of relevance evaluation.
 
 The technique was systematized by **Doug Turnbull** in Part 4 of his *Cheat at Search* course (2026), building on the Umbrella framework by Lin et al. and drawing on the broader "LLM as a Judge" paradigm (MT-Bench, AlpacaEval). The key insight is that while LLMs are not perfect judges (~73% pointwise agreement with humans), they are **consistent enough at a fraction of the cost** to enable rapid search iteration.
+
+A "bitter lesson" from Turnbull's experiments: even a **naive judge** with zero domain-specific tuning ("is this relevant or not?") significantly improved search quality — suggesting that the bottleneck is not prompt engineering but the availability of any automated evaluation signal at all.
 
 ## Core Problem
 
@@ -104,7 +107,42 @@ model.fit(X, y)
 
 **Why a decision tree?** Trees produce **explainable scoring flowcharts** that stakeholders can read and trust — a major advantage over black-box models when evaluation methodology needs to be defensible.
 
-**Reported results:** 0.831 overall precision, translating to "tens of thousands in cost reduction per year" for an e-commerce search team.
+**Reported results (from live lecture experiments):**
+
+| Configuration | Precision | Coverage | Notes |
+|---|---|---|---|
+| 3 features (name, desc, class) | 0.91 | 0.75 | At 80% confidence threshold |
+| 4 features (+ product features) | 0.904 | 0.80 | Precision maintained, coverage ↑5% |
+
+**Key insight — weak judges combine into strong predictions:** Individual pairwise judges achieve only ~73% accuracy, but when their outputs are combined as features in a decision tree, the ensemble reaches **91% precision** at an 80% confidence threshold on 75% of the data. This is the core "aha moment" — no single judge is reliable, but the combination is.
+
+**Cheap models suffice:** Individual pairwise comparisons ("which product title is more relevant?") are simple enough for small local models (e.g., Qwen). Frontier models are only needed for complex reasoning; the per-comparison task is deliberately kept trivial.
+
+**Decision tree as feature importance / opportunity analysis:** The tree's split structure reveals which attributes most affect relevance. When a new attribute (e.g., product features) is added as a judge:
+- If precision holds and coverage increases → the attribute matters for search quality
+- If precision drops → the attribute adds noise
+- This doubles as a signal for **which product attributes to invest in** for the actual search index
+
+## ELO-Based Pairwise → Pointwise Conversion
+
+To bridge pairwise results back to pointwise metrics like NDCG, Turnbull uses **ELO rating** (chess tournament scoring):
+
+1. Start each search result at ELO 100
+2. Run pairwise "matches" — winner takes a portion of loser's ELO
+3. Formula: `Δ = K × 1/(1 + 10^((loser_elo - winner_elo)/400))`
+4. After many matches, ELO converges to a pointwise relevance score
+5. Results in the demo converged to ELO range 50–150
+
+This enables **back-and-forth between pairwise and pointwise universes** — pairwise for accurate comparisons, ELO-derived pointwise for NDCG computation.
+
+## Recall Expansion via Diverse Queries
+
+A critical limitation of LLM judges: they can only evaluate what they see. Poor recall means the best results may never be presented to the judge. Turnbull's mitigation:
+
+- Require **minimum 4 BM25 tool calls**, all with different queries (duplicates = failure)
+- This broadens recall so the judge sees more of the result space
+- Analogous to **explore/exploit** in clickstream-based learning-to-rank
+- **List-wise judging** (present a large set, ask LLM to re-rank) is theoretically more powerful for recall but remains untested
 
 ## Workflow Integration
 
@@ -131,6 +169,25 @@ Both are part of Doug Turnbull's Cheat at Search framework. LLM search judging e
 ### Model-as-Judge (broader paradigm)
 LLM Search Judge is a domain-specific instance of the broader **model-as-judge** pattern (MT-Bench for chatbots, AlpacaEval for instruction following, LLM-as-RAG-judge for retrieval). The search variant adds domain-specific concerns: position-aware metrics (NDCG discount), product attribute hierarchies, and double-checking for pairwise consistency.
 
+## Domain Adaptation Guidance
+
+When applying LLM Search Judge to non-e-commerce domains (legal RAG, job matching, etc.), Turnbull recommends:
+
+1. **Start with 10 queries** from the target domain
+2. Find an **"expert user"** — a domain specialist who can sit beside you and label results (e.g., a legal colleague for case law search)
+3. Extract **pairs** from labeled data: "for this query, case A is more relevant than case B"
+4. Prompt-engineer an LLM to reproduce the expert's pairwise judgments
+5. **Relevance is domain-specific**: legal = case applicability, e-commerce = product match, social media = popularity. The evaluation attributes (product name, description) must be replaced with domain-relevant fields (e.g., job skills, case citations, document sections)
+
+## Implicit vs. Explicit Judgment
+
+Turnbull distinguishes between LLM judges and implicit user signals (clicks, engagement):
+
+- **Trust implicit judgments** where available — they capture behavioral patterns LLMs cannot know (e.g., Shopify fashion users preferring plain black items over floral patterns)
+- **Use LLM judges for tail queries** where click data is sparse — long-tail or novel queries have insufficient implicit signal
+- **Implicit judgments have biases**: "lizard brain" click behavior (visual appeal, position bias) does not always equal relevance
+- The two signals are **complementary**, not competing
+
 ## Pitfalls & Limitations
 
 - **Position bias in LLM outputs:** LLMs may systematically prefer LHS or RHS regardless of relevance. Double-checking with swapped positions mitigates this.
@@ -141,6 +198,7 @@ LLM Search Judge is a domain-specific instance of the broader **model-as-judge**
 ## References
 
 - **Doug Turnbull**, *Cheat at Search Part 4: LLM as a Judge* (slides), 2026 — [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge]]
+- **Doug Turnbull**, *Cheat at Search Part 4: LLM as a Judge* (lecture transcript), 2026 — [[raw/articles/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture]]
 - **Doug Turnbull**, *Search Evaluation: NDCG* (blog), 2026 — [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg]]
 - **Lin et al.**, *Umbrella: A Framework for LLM-based Search Evaluation*
 - **Turnbull & Grainger**, *AI-Powered Search* (Manning, 2025)
