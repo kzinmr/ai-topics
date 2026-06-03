@@ -1693,7 +1693,8 @@
 - [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]] — LLM Query Understanding — Cheat at Search. Google Slides covering embedding collapse, structured QU vs pure embeddings, synonym extraction with Pydantic, category classification, dynamic enums. Companion: [[raw/transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture]]
 - [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents]] — Steering Lost Agents — Cheat at Search Part 3. 65-slide deep dive: two-loop architecture, carrot-and-stick steering, 7 steering patterns, filesystem-like search tools, BEAM search. Companion: [[concepts/agent-steering]]
 - [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge]] — LLM as a Judge — Cheat at Search Part 4. Google Slides covering pointwise/pairwise LLM judges, double-checking swap, multi-judge ensemble + decision tree (73%→91% precision). Companion: [[raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture]], [[concepts/llm-search-judge]]
-- [[raw/articles/2026-06-02_softwaredoug_long-running-search-agents]] — Long Running Search Agents — Cheat at Search. Google Slides covering 7 strategies for persistent agents, context compaction, local index memory, frontier prompts.
+- [[raw/articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search]] — Long Running Search Agents — Cheat at Search. Google Slides covering 7 strategies for persistent agents, context compaction, local index memory, frontier prompts.
+- [[raw/transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
 
 ## Raw Transcripts (3 pages)
 
