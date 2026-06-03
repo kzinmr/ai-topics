@@ -1,7 +1,7 @@
 ---
 title: "Every (company)"
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-03
 type: entity
 tags:
   - entity
@@ -21,6 +21,8 @@ sources:
   - "raw/articles/2026-05-21_after-automation.md"
   - "raw/articles/2026-05-02_guide-to-agent-native-product-management.md"
   - "raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md"
+  - "raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md"
+  - "https://github.com/EveryInc/compound-engineering-plugin"
 ---
 
 # Every
@@ -69,6 +71,15 @@ Every pioneered [[concepts/compound-engineering-every|Compound Engineering]] —
 - The loop compounds over time, building institutional knowledge
 
 Key insight: **"The folder is the agent"** — a project directory with CLAUDE.md, skills, and accumulated context transforms a general model into a specialist [[concepts/folder-is-the-agent|Folder Is the Agent pattern]].
+### Compound Engineering Plugin & Ecosystem (June 2026)
+
+The open-source plugin on GitHub (`EveryInc/compound-engineering-plugin`) has grown past 14,000 stars. Key contributors include Kieran Klaassen, Trevin Chow, and [[entities/matt-van-horn|Matt Van Horn]] (#3 contributor as of June 2026). Van Horn documented the internal `/ce-plan` mechanics in "Every Agentic Engineering Hack I Know": parallel research agents fan out to read codebase conventions, search past solutions, and research external docs simultaneously.
+
+**Compound Engineering-inspired projects by Van Horn:**
+- **last30days** (27K stars) -- Multi-platform research tool (Reddit, X, YouTube, TikTok, HN, GitHub, web in parallel)
+- **Printing Press** (3.7K stars, 320+ PRs) -- CLI factory for agent-native service wrappers (Tesla, Instacart, ESPN, Alaska Airlines)
+- **AgentMail** -- Open-sourced Claude Code email integration (github.com/mvanhorn/agentmail-to-claude-code)
+- **Agent Cookie** -- Browser session sync for agent CLIs across machines
 
 ## Agent-Native Architecture
 

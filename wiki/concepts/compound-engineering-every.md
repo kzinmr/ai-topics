@@ -1,7 +1,7 @@
 ---
 title: "Compound Engineering (Every)"
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-03
 type: concept
 tags:
   - concept
@@ -14,6 +14,7 @@ tags:
 sources:
   - "https://every.to/guides/compound-engineering"
   - "raw/articles/2026-04-17_every-to_folder-is-the-agent.md"
+  - "raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md"
   - "https://github.com/steipete/openclaw"
 ---
 
@@ -64,6 +65,31 @@ Every released an open-source plugin (7,000+ → 14,000+ GitHub stars) that impl
 - Agent skill definitions
 - Workflow orchestration patterns
 
+### /ce-plan Internals (from Van Horn's June 2026 deep-dive)
+
+[[entities/matt-van-horn|Matt Van Horn]] (#3 contributor, June 2026) documented the internal mechanics of Compound Engineering's core commands:
+
+- **`/ce-plan`** — Fans out parallel research agents simultaneously: one reads the codebase for patterns and conventions, one searches past solutions for learnings, and more research external docs and best practices. All results consolidate into a structured plan.md with: problem statement, approach, files to touch, acceptance criteria with checkboxes, and patterns grounded in the user's actual repo conventions.
+- **`/ce-brainstorm`** — For fuzzy ideas where the user doesn't yet know what they want. Think through the problem with the agent first, then `/ce-plan` once sharp.
+- **`/ce-work`** — Takes the plan.md and builds it. Context blows up? Start a new session, point it at the plan, pick up where you left off. The plan is the durable checkpoint.
+- **`/ce-work --codex`** — Delegates the build phase directly to Codex from inside the Compound Engineering loop, without leaving the Claude session.
+
+### "Plan for the Plan" Pattern
+
+For non-code deep work (strategy docs, product specs, competitive analysis, board updates), the technique is to make the first plan a meta-plan:
+
+> "/ce-plan make a plan for the plan. I'm about to hand you a PDF and a meeting transcript. I want a thoughtful plan for how these come together into a document. Do not write that document now. Writing it is the work. Right now I only want the plan for how you'll produce a great document."
+
+This is the single best trick for preventing LLM laziness — asking for the deliverable directly causes corner-cutting; asking the agent to first plan how it will produce the deliverable forces deep work every time.
+
+### Contributor Ecosystem
+
+Van Horn's open source contributions illustrate how Compound Engineering creates a self-reinforcing ecosystem:
+- **last30days** (27K stars) — Started as a skill he wanted for himself; now a multi-platform research tool
+- **Printing Press** (3.7K stars, 320+ PRs) — CLI factory for agent-native service wrappers
+- **AgentMail** — Open-sourced Claude Code email integration
+- **Compound Engineering plugin** — #3 contributor behind core team
+
 ## Results at Every
 
 - Team of ~30 runs 5 software products + media operation
@@ -90,3 +116,5 @@ This pattern influenced:
 - [[concepts/agent-native-architecture]] — Design principles this embodies
 - [[openclaw]] — Compatible agent platform
 - [[concepts/human-sandwich]] — Human-AI collaboration pattern
+- [[entities/matt-van-horn]] — #3 contributor, documented /ce-plan internals
+- [[concepts/agentic-engineering]] — The broader practice Compound Engineering enables

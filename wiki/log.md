@@ -1,6 +1,21 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-03 X Bookmarks Ingest: Every Agentic Engineering Hack I Know (June 2026)
+
+Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (June 2026)" -- X Article with full body fetched.
+
+**Raw article saved**: [[raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack]]
+
+**Wiki enrichments:**
+- E: **[[entities/matt-van-horn]]** -- Major update: Claude Code Workflow section expanded to March->June 2026 timeline, added OSS contributions (last30days 27K stars, Printing Press 3.7K stars/320+ PRs, AgentMail, Agent Cookie), top contributor rankings, new Key Theses (Human Signal, Voice, Plan-first), related cross-references to agentic-engineering, compound-engineering, every-inc
+- E: **[[concepts/agentic-engineering]]** -- Added Van Horn's Agentic Engineering Stack (Section 12): plan-first discipline, "Don't Read the plan.md", "Plan for the Plan", Voice-Driven Interface, Human Signal, Dual-Engine Setup, Knowledge Base Integration, Real-World Agentic Engineering, AI Psychosis. Added 9 new tools to Key Tools and Projects. Added Van Horn to Key Practitioners.
+- E: **[[concepts/compound-engineering-every]]** -- Added /ce-plan Internals section (parallel research agents, /ce-brainstorm, /ce-work --codex), "Plan for the Plan" pattern, Contributor Ecosystem subsection. Cross-referenced to Van Horn and agentic-engineering.
+- E: **[[entities/every-inc]]** -- Added Compound Engineering Plugin & Ecosystem section with June 2026 stats, Van Horn contributions, and Compound Engineering-inspired projects.
+- E: **[[concepts/anti-patterns-in-agentic-engineering]]** -- Enriched from stub: AI Psychosis / Agent Addiction section with symptoms, mitigations, and context from Van Horn's June 2026 article.
+
+**Key concepts documented:** Human Signal pattern, "Plan for the Plan" meta-planning, Voice-Pilled workflow, Dual-Engine setup (Claude Code + Codex), parallel session strategy (cmux), AI Psychosis awareness, Real-World Agentic Engineering (Printing Press CLIs wrapping Tesla/Instacart/ESPN/Alaska Airlines)
+
 ## [2026-06-03] Create | Codestral concept page
 
 - **Created**: `concepts/codestral.md` — Mistral AI's Codestral code generation model family concept page. Covers: original 22B model (May 2024), Codestral Mamba (Jul 2024, Apache 2.0 Mamba2), Codestral 25.01 (Jan 2025, 256K context), Codestral 25.08 (Jul 2025), and Codestral Embed (May 2025). Performance benchmarks (HumanEval, MBPP, RepoBench, Spider, FIM), licensing (MNPL, Apache 2.0), fill-in-the-middle capability, 80+ languages. Added to index.md under Concepts. Sources: 6 raw articles (2024-05-29 original + 2026-05-10 sitemap scrapes).

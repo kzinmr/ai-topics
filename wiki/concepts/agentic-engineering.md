@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-05-29
+updated: 2026-06-03
 type: concept
 tags:
   - concept
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
   - raw/articles/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - raw/articles/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
+  - raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md
 ---
 
 # Agentic Engineering
@@ -140,6 +141,7 @@ This mirrors the Amish barn-raising analogy from [[entities/tomasz-tunguz]]: ado
 
 ## Key Practitioners
 
+- **[[entities/matt-van-horn|Matt Van Horn]]** -- "Every Agentic Engineering Hack I Know" (June 2026, 22 hacks). Voice-driven plan-first workflow: /ce-plan -> /ce-work universal loop, dual-engine (Claude Code + Codex), 4-6 parallel sessions, Human Signal philosophy, knowledge base integration. Creator of last30days (27K stars), Printing Press (3.7K stars), AgentMail, Agent Cookie. #3 contributor to Compound Engineering.
 - **[[entities/wes-mckinney]]** — Software factory with RoboRev, Agents View, Middleman. 1M+ lines generated.
 - **[[entities/jeremiah-lowin]]** — Second brain architecture, voice memo pipeline, explain skill anchor
 - **[[entities/randy-olson]]** — Tufte-encoding verifier skills, digital twin thought partner, generator-evaluator workflows
@@ -161,6 +163,48 @@ This mirrors the Amish barn-raising analogy from [[entities/tomasz-tunguz]]: ado
 - [[entities/prefab]] — Generative UI DSL in Python
 - [[entities/opencode]] — Agent harness with deep memory customization
 - [[entities/openclaw]] — Agent harness for memory management
+- [[concepts/compound-engineering-every|Compound Engineering]] — Every's AI-native development plugin (14K+ stars), /ce-plan + /ce-work loop
+- **last30days** — Matt Van Horn's multi-platform research tool (27K stars): Reddit, X, YouTube, TikTok, HN, GitHub in parallel
+- **Printing Press** — CLI factory for agent-native service wrappers (3.7K stars, 320+ PRs): Tesla, Instacart, ESPN, Alaska Airlines
+- **AgentMail** — Gives Claude Code an email address: daemon → AgentMail inbox → fresh Claude session per email
+- **Agent Cookie** — Browser session syncing for CLIs so agents act as authenticated users
+- **cmux** — Terminal multiplexer for running 4-6 parallel agent sessions
+- **Proof** — Plan.md sharing/review tool for non-terminal coworkers (Every product)
+- **Granola** — Meeting transcription with raw transcript → /ce-plan pipeline
+- **HyperFrames** — Agent-built video via HTML → MP4 rendering
+
+### 12. Van Horn's Agentic Engineering Stack (June 2026)
+
+[[entities/matt-van-horn|Matt Van Horn]] published a comprehensive update to his agentic engineering workflow, representing the most detailed public documentation of a production agentic engineering setup. Key patterns:
+
+#### Plan-First Discipline (Hacks 1-3)
+- **/ce-plan for everything**: Every idea, bug screenshot, error message, Slack thread -- immediately create a plan.md via Compound Engineering. The plan fans out parallel research agents that read codebase conventions, search past solutions, and research external docs.
+- **"Don't Read the plan.md"**: Plans are for agents, not humans. Skim the title, ask inline questions ("TLDR?", "eli5 this plan"), and trust the plan as a quality leash that prevents agent laziness.
+- **"Plan for the Plan"**: For non-code deep work (strategy docs, competitive analysis, board updates), the first plan is a meta-plan describing how to read the source material and produce the deliverable. This forces the LLM to do thorough work instead of cutting corners.
+
+#### Voice-Driven Interface (Hack 4)
+Voice-to-LLM works because the LLM fills transcription gaps contextually. Setup: Monologue or Wispr Flow on Mac, Apple dictation on phone, gooseneck mic. The transcription doesn't need to be perfect.
+
+#### Parallel Session Strategy (Hack 5)
+4-6 cmux tabs, each a separate session. While /ce-plan runs research in one, /ce-work builds in another. By the time you cycle back, the first one is done. This is parallel CI for the individual developer.
+
+#### Dual-Engine Setup (Hack 9)
+Claude Code for planning ($200 Max, reasoning xhigh, fast mode off) + Codex for building ($200, reasoning xhigh, fast mode on). Work handed to Codex via IDE extension or /ce-work --codex -- never opening the Codex CLI directly.
+
+#### Human Signal (Hack 12)
+With 6 agents running, the human's role is taste, direction, and the react-and-redirect loop. "Be the taste. Let them be the hands." The rare, valuable thing is human judgment, not typing speed.
+
+#### Knowledge Base Integration (Hack 14)
+Bear CLI (decade of notes), gbrain (synced brain), supermemory (memory layer). The principle: pick a notes tool with CLI/API and point the agent at it. Personal RAG without calling it that.
+
+#### Real-World Agentic Engineering (Hack 20)
+Printing Press CLIs wrap real-world services (Tesla preheat, Instacart ordering, ESPN game polling, Alaska Airlines booking) so agents handle non-code errands. Agent Cookie delivers browser sessions to CLIs for authenticated actions. This extends agentic engineering beyond software into daily life.
+
+#### AI Psychosis (Hack 21)
+Acknowledged the mental health dimension: "Building with agents is the greatest video game ever made." The addiction loop is real. Advice: take breaks, talk to loved ones, build things people want.
+
+**Source**: [[raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md]]
+
 
 ## Related Concepts
 
@@ -169,3 +213,7 @@ This mirrors the Amish barn-raising analogy from [[entities/tomasz-tunguz]]: ado
 - [[concepts/context-engineering]] — Building agent memory substrates
 - [[concepts/harness-engineering]] — Building thin agent harnesses
 - [[concepts/generator-evaluator-workflow]] — Generator-evaluator architecture
+- [[concepts/compound-engineering-every]] — The methodology underpinning Van Horn's /ce-plan → /ce-work loop
+- [[entities/matt-van-horn]] — Leading practitioner, author of "Every Agentic Engineering Hack I Know"
+- [[concepts/vibe-coding]] — The ad-hoc predecessor to agentic engineering
+- [[concepts/anti-patterns-in-agentic-engineering]] — AI Psychosis and other failure modes
