@@ -2,6 +2,28 @@
 > Chronological record of all wiki actions. Append-only.
 
 
+## 2026-06-04 ingest | Doug Turnbull "Search with Agents Lesson 6 — RLMs & Ranker Coding"
+
+**Source**: Google Slides — [Search with Agents Lesson 6](https://docs.google.com/presentation/d/1EtWXoelu8paM9m_XLYn0rrjnDiJGgJMdRHoD9LbQ1Eo/edit) (Doug Turnbull, June 4, 2026)
+
+**Action**: Ingested Lesson 6 of the "Search with Agents" / "Cheat at Search" series. Two-part lecture: (1) RLMs applied to search — REPL-based agents with stateful variables, patent_search function, recursive llm_query() for expert finding. (2) Agent-Driven Ranker Optimization — coding agent iteratively patches rerank_wands() via structured Edit model, evaluates NDCG on train/test splits, constrained by guardrails (overfitting detection, length limits, post-change holdout validation).
+
+**Created**:
+- `raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md` — Raw slide text (Google Slides export)
+- `concepts/agent-driven-ranker-optimization.md` — New concept page: iterative code editing + eval loop + guardrails for search ranking
+
+**Updated**:
+- `entities/doug-turnbull-speaking.md` — Added Lesson 6 entry to speaking engagements
+- `index.md` — Added concept page and raw article entries
+- `log.md` — This entry
+
+**Cross-references**:
+- → [[concepts/rlm-recursive-language-models]] (existing, comprehensive — this lecture applies RLMs to search)
+- → [[concepts/autoresearch-bm25-msmarco]] (existing — Lesson 6 generalizes this pattern)
+- → [[concepts/agent-steering]] (existing — guardrails are a steering pattern)
+- → [[concepts/agentic-search]] (existing — ranker optimization is the coding agent layer)
+- → [[concepts/eval-loops]] (existing — same three-part structure)
+
 ## 2026-06-03 enriched | thariq-shihipar entity page (skeleton -> full profile)
 
 **Action**: Enriched [[entities/thariq-shihipar]] from `status: skeleton` to full profile via multi-source research. Read 16 raw articles from thariq.io blog and X Articles. Compiled biographical details (YC W20, MIT Media Lab, South Park Commons), all key contributions (Dynamic Workflows, HTML-first output, Skills system, Interpretability, Entropix explainer, Computer Use, Playgrounds, TrueSkill sorting), philosophical writing dimension, and Lenny's Podcast appearance. Added 15 blog entries timeline table, Graph Structure Query section, and extensive cross-references to 8 concept pages and 6 entity pages.
