@@ -5995,3 +5995,11 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Section headers**: Entities (752→755), Concepts (1547→1555) — now consistent with filesystem including `_index.md` files
 - **Pipeline watchdog**: `x_accounts` stale 26h — requires human review (stale >24h)
 - **Log separators**: 86 consecutive headers without `---` — deferred (single-file bulk edit, skipped to stay within safe batch size)
+
+---
+## [2026-06-03] watchdog | Orphan page reconciliation (20 concepts)
+
+- **Added 20 orphan index entries**: agent-runtime, esmfold2, 9 fine-tuning sub-pages (axolotl, grpo-rl-training, instruction-fine-tuning, peft-lora-qlora, pytorch-fsdp, quantization-overview, rlhf-dpo-preference, trl, unsloth), freshstack-benchmark, fused-kernels, generative-app-evolution, generic-agent-self-evolving, glass-slipper-effect, glm-5-1, gpt-5.5-spud, halo-loss-attention-sinks, harness-engineering/agentic-engineering
+- **Index summary**: Indexed entries 1677→1707
+- **Validation**: `validate_index.py` clean ✅
+- **Orphans remaining**: ~635 (of 655 non-_index) — batch complete

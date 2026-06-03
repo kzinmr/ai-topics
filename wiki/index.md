@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-03 | Total pages: 2347 | Indexed entries: 1677 | Concepts: 1555 | Entities: 755
+> Last updated: 2026-06-03 | Total pages: 2347 | Indexed entries: 1707 | Concepts: 1555 | Entities: 755
 
 ## Entities (755 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -825,6 +825,7 @@
 - [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
 - [[concepts/agent-patterns]] — General design patterns and implementation practices for AI agents
 - [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects — Impact of AI coding agents on personal productivity and attention. David Wilson's "thermonuclear ADHD amplifier" metaphor. Project proliferation syndrome (agents lowering activation energy from idea to working project). HN ADH
+- [[concepts/agent-runtime]] — Agent Runtime — Agent execution semantics: isolation primitives, sandboxing, runtime architecture, and the infrastructure layer between LLM and agent execution environment.
 - [[concepts/agent-sandbox-patterns]] — Agent Sandboxing architectural patterns. Browser Use's Pattern 1 (tool) vs Pattern 2 (agent). Google Agent Sandbox GA: 300 sandboxes/sec, 16x growth. Agent Substrate: new open-source project for millions of idle agents.
 - [[concepts/agent-sandboxing]]
 - [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
@@ -1233,6 +1234,7 @@
 - [[concepts/erdos-unit-distance-problem]] — OpenAI's internal model disproved the 80-year-old Erdős unit distance conjecture (1946) on 2026-05-21. Counterexample via high-dimensional lattice→plane projection. First AI mathematical result that "would be top-journal worthy if done by humans alone."
 - [[concepts/etclovg-taxonomy]] — ETCLOVG Taxonomy — Seven-layer agent harness engineering taxonomy: Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance. Proposed by Li et al. (2026). Maps 138+ open-source projects.
 - [[concepts/eu-ai-act]] — EU AI Act — World's first comprehensive AI regulation. Full enforcement August 2026. Risk-based framework: prohibited, high-risk, limited-risk, minimal-risk. Fines up to 7% global revenue.
+- [[concepts/esmfold2]] — ESMFold2 — CZI Biohub protein structure prediction model. Generated ESM Atlas of >1.1B predicted structures. Fully open source.
 - [[concepts/eval-awareness-browsecomp]] — First documented case of Claude Opus 4.6 autonomously inferring it was being evaluated during BrowseComp, identifying the benchmark, and decrypting the answer key. Consumed 40.5M tokens. 3.7x incidence increase with multi-agent. Crisis of static benchmark credibility.
 - [[concepts/eval-loops]] — Eval Loops — Automated quality control systems that score AI output against predefined standards. Three-part benchmark (test cases, metrics, threshold), three-place deployment (pre-ship, runtime, production). Self-hardening via failure capture. Hermes-native implementation by Machina.
 - [[concepts/evals-for-ai-agents]] — Evals for AI Agents — Systematic guide to AI agent evaluation by Anthropic.
@@ -1252,6 +1254,15 @@
 - [[concepts/federation-of-experts]] — Federation of Experts (FoE) — communication-efficient distributed inference for MoE LLMs. Clusters experts by KV head, eliminates cross-node all-to-all. 5.2x latency reduction, 3.62x TTFT improvement.
 - [[concepts/filesystem-memory]] — Filesystem as Agent Memory — Using standard file I/O for persistent agent state.
 - [[concepts/fine-tuning]] — Fine-Tuning
+- [[concepts/fine-tuning/axolotl]] — Axolotl — YAML-based fine-tuning framework for LLMs. Supports LoRA, QLoRA, full fine-tuning, multi-GPU, DPO/GRPO. 
+- [[concepts/fine-tuning/grpo-rl-training]] — GRPO RL Training — Group Relative Policy Optimization: RL algorithm eliminating critic model. Foundation for reasoning and agent training. 
+- [[concepts/fine-tuning/instruction-fine-tuning]] — Instruction Fine-Tuning (IFT) — Supervised fine-tuning on instruction-response pairs. Foundation of post-training pipeline. 
+- [[concepts/fine-tuning/peft-lora-qlora]] — PEFT, LoRA, and QLoRA — Parameter-efficient fine-tuning methods. Adapter-based training for resource-constrained LLM adaptation. 
+- [[concepts/fine-tuning/pytorch-fsdp]] — PyTorch FSDP — Fully Sharded Data Parallel training for distributed LLM fine-tuning. 
+- [[concepts/fine-tuning/quantization-overview]] — Model Quantization — Reducing precision of model weights and activations. Post-training quantization, QAT, mixed-precision. 
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO — Preference optimization techniques for aligning LLMs with human preferences. 
+- [[concepts/fine-tuning/trl]] — TRL — Transformer Reinforcement Learning library by HuggingFace. SFT, DPO, PPO, GRPO training. 
+- [[concepts/fine-tuning/unsloth]] — Unsloth — Fast fine-tuning framework. 2-5x faster LoRA/QLoRA with reduced VRAM. Supports Llama, Mistral, Gemma.
 - [[concepts/fineweb]] — FineWeb — High-quality pre-training dataset bridging proprietary and public data gaps.
 - [[concepts/firecracker]] — Firecracker microVM: AWS's lightweight Rust VMM (~50K lines). ~125ms boot via KVM hardware virtualization. Powers AWS Lambda/Fargate, adopted by AI agent companies (Browserbase/E2B/Daytona/Modal) for code execution sandboxes. Combines VM isolation with container boot speed.
 - [[concepts/flash-attention-4]] — FA4: CUDA kernels optimized for Blackwell B200. 1,605 TFLOPs/s (71% utilization), 1.3× faster than cuDNN. Async pipeline, hybrid exp, conditional softmax rescaling. By Tri Dao (Together AI/Princeton) et al.
@@ -1259,22 +1270,28 @@
 - [[concepts/folder-is-the-agent]] — Folder Is The Agent — Dan Shipper (Every) pattern: the project directory (CLAUDE.md, AGENT.md, skills/) IS the agent's memory, identity, and operating context. OpenClaw pioneered filesystem-as-agent architecture. Agents read files on startup to know who they are. See [[concepts/agent-native-architecture]].
 - [[concepts/formal-verification-llm-agents]] — Formal Verification for LLM Agents — Applying formal methods to verify AI agent behavior and safety
 - [[concepts/forward-deployed-engineering]] — FDE: Frontier AI labs embedding engineers into enterprise customers. Models commoditize → deployment layer becomes the new moat. OpenAI $4B Deployment Co., Anthropic $1.5B JV, Google hiring hundreds.
+- [[concepts/freshstack-benchmark]] — FreshStack Benchmark — AI agent evaluation benchmark. Framework-agnostic, covers diverse real-world scenarios.
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation — Vlad Feinberg (Google/TPU)'s guide to frontier lab jobs. Kernel work is the biggest bottleneck, Chinchilla law derivation, Jax implementation, Pallas kernel optimization. Hiring test benchmarks.
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: Ultra-difficult coding agent benchmark (Proximal Labs). 20-hour limit, 3 categories (Implementation/Performance/Research) × 17 tasks. GPT-5.5+Codex leads with avg rank 2.35 (Dominance 83%). Documents conservative (GPT-5.4) vs aggressive (Opus 4.6) behavior, overconfidence/cheating behavior.
 - [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized 
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
+- [[concepts/fused-kernels]] — Fused Kernels — GPU kernel fusion techniques eliminating intermediate memory allocations for faster inference/training.
 - [[concepts/gemini]] — Google Gemini — Google DeepMind's multimodal LLM family.
 - [[concepts/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
 - [[concepts/gemini-3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
 - [[concepts/gemini-managed-agents]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
+- [[concepts/generative-app-evolution]] — Generative App Evolution — The evolutionary staircase of generative applications from UI components to full agentic systems.
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer) — Anthropic's show_widget system for rendering interactive HTML widgets inline in claude.ai. Progressive disclosure pattern (read_me), streaming DOM injection, design guidelines. Recreated for terminal agents using Glimpse + morphdom.
+- [[concepts/generic-agent-self-evolving]] — GenericAgent — Token-efficient self-evolving agent architecture. Recursive self-improvement via execution trace analysis.
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
+- [[concepts/gguf-quantization]] — GGUF Quantization
 - [[concepts/github-copilot-agent-platform]] — GitHub's evolution from Copilot code completion to agent platform. AI-generated PRs (Waymo analogy), Windows sandboxing for agents, WorkIQ scaling, Spark low-code platform. Microsoft Build 2026.
 - [[concepts/github-copilot-billing]] — GitHub Copilot Token-Based Billing Transition — Microsoft's April 2026 shift from request-based to token-based Copilot pricing. Enterprise cost crisis (Uber $500M accidental spend, Walmart Code Puppy rate limits), end of subsidized AI era.
-- [[concepts/gguf-quantization]] — GGUF Quantization
+- [[concepts/glass-slipper-effect]] — Glass Slipper Effect — Phenomenon where AI-generated solutions are accepted despite suboptimal quality due to ease of deployment.
 - [[concepts/gliclass]] — GLiClass
+- [[concepts/glm-5-1]] — GLM-5.1 — Z.AI latest GLM model. Next-gen open-weights LLM from Chinese AI lab.
 - [[concepts/glut-of-circuits]] — niplav's (2026) GLUT-of-Circuits model: LLMs are giant lookup-table-like collections of depth-limited, composable error-correcting circuits computed in superposition. Implications for the Agent structure problem, AI alignment, token bottlenecks, and CoT.
 - [[concepts/gnap-git-native-agent-protocol]] — GNAP: Git-Native Agent Protocol — coordinate AI agent teams via git repo. 4 JSON files, zero servers. MIT licensed (farol-team). Complements MCP/A2A.
 - [[concepts/gnu-ai-reimplementations]] — GNU AI Reimplementations — Free software community reimplementations of proprietary AI models and tools.
@@ -1285,6 +1302,7 @@
 - [[concepts/gpqa]] — GPQA — Graduate-level Google-proof Q&A. 448 questions in biology/physics/chemistry (198 in Diamond set). PhD experts 65-74%, non-experts 34%. Frontier models saturating at ~94%.
 - [[concepts/gpt-5.5]] — GPT-5.5
 - [[concepts/gpt-5.5-instant]] — GPT-5.5 Instant
+- [[concepts/gpt-5.5-spud]] — GPT-5.5 "Spud" — OpenAI internal model. Post-training of GPT-5.5 class. Pre-training completed March 2026.
 - [[concepts/gpt-model-milestones]] — GPT Model Milestones
 - [[concepts/gpt-models]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
 - [[concepts/gpt-realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
@@ -1297,9 +1315,11 @@
 - [[concepts/graph-of-algorithms]] — Companies as interconnected graphs of algorithms (nodes=processes, edges=handoffs). Fractal decomposition, AI-driven transparency/optimization. [[entities/daniel-miessler]] (May 2024).
 - [[concepts/grpo]] — Group Relative Policy Optimization: RL algorithm introduced in DeepSeek-R1. Eliminates PPO's critic model, removing the computational bottleneck for large-scale model RL training. Estimates advantages via within-group relative comparison.
 - [[concepts/grpo-rl-training]] — GRPO (Group Relative Policy Optimization) — RL algorithm devised by DeepSeek. No critic needed, within-group relative advantage computation. Popularized by DeepSeek-R1, became the standard RL backbone for reasoning and agent training. Foundation for SDAR and MOPD.
+- [[concepts/halo-loss-attention-sinks]] — Halo Loss / Attention Sinks — Training technique preventing attention sink formation during LM pretraining.
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Applications — Anthropic's agent harness pattern for long-running application development.
 - [[concepts/harness-engineering]] — Harness Engineering — The discipline of building agent infrastructure. Enriched with North Chen's (CreaoAI) three-layer model (LLM brain → harness body/nervous system → agent professional) and platform economics thesis (May 2026).
+- [[concepts/harness-engineering/agentic-engineering]] — Agentic Engineering — Comprehensive discipline of building agent infrastructure: capability, configuration, orchestration, and guardrails layers.
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
 - [[concepts/hegel-property-based-testing]] — Hegel: universal property-based testing protocol and family of libraries (Go, Rust, C++, TypeScript), built on Hypothesis engine. Client-server architecture: hegel-core Python backend + language SDKs over Unix socket. MIT license, by DRMacIver & team at Antithesis.
 - [[concepts/hermes-agent]] — Hermes Agent by Nous Research: self-evolving personal AI agent with three-tier memory, self-improving skills, GEPA optimization, multi-profile isolation, and plain-English cron. 140K+ GitHub stars. Comparison with OpenClaw.
