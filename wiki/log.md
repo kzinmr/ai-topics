@@ -1,3 +1,12 @@
+## 2026-06-04 newsletter-wiki-ingest | Axiom Math "Verified Generation" + Formal Verification concept enrichment
+
+- **Source:** AINews (Latent Space / swyx) — Latent Space AI for Science podcast post: "Scaling Past Informal AI - Carina Hong, Axiom Math"
+- **Upstream:** Newsletter-ingest pipeline (triaged 2026-06-04T07:24); triage JSON saved to triage_latest.json but cron output parse failed. Recovered triage data from checkpoint file.
+- **New entity page:** [[entities/axiom-math]] — Axiom Math. Formal verification as RL reward signal. "Verified Generation" uses Lean proof assistant as deterministic reward for RL training. CEO: Carina Hong.
+- **Updated concept page:** [[concepts/formal-verification-llm-agents]] — Added "Verified Generation: Formal Proof as RL Reward Signal" section covering core insight (proof-checker-as-reward vs RLHF/GRPO), Ramanujan analogy, scaling/compounding thesis, comparison table with AlphaProof/DeepSeek-Prover/Vericoding, and AI safety relevance.
+- **Cross-references:** [[entities/axiom-math]] ↔ [[concepts/formal-verification-llm-agents]], [[concepts/ai-safety]]
+- **Archived:** newsletter triage skip/reference items archived via archive_triage.py
+
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
