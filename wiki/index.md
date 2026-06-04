@@ -1234,6 +1234,7 @@
 - [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism) — Load-balanced expert parallelism for MoE models; elastic scaling without model redistribution.
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration — Using the Erlang VM and OTP patterns for multi-agent systems.
+- [[concepts/embedding-dimension-scaling-laws]] — Embedding Dimension Scaling Laws — Power-law relationship between embedding dimensionality and dense retrieval performance. Joint law unifying model size + embedding dim. Larger model + smaller embedding often beats inverse. Killingback et al. (UMass CIIR, 2026).
 - [[concepts/embedding-long-context-degradation]] — Embedding Long-Context Degradation — Embedding models lose retrieval ability beyond ~4K tokens (AUC→0.50 at 8K). Demonstrated by Jina AI (Mar 2025) on jina-embeddings-v3. Query expansion fails; needle position is strongest predictor.
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/enterprise-agents]] — Enterprise Agents — Production AI agents in business/government. Human-agent teaming, staged actions (propose→review→commit), graded autonomy, FDE deployment model. See [[entities/palantir]].
@@ -1666,7 +1667,7 @@
 - [[concepts/reinforcement-learning]] — Reinforcement Learning — Learning through trial and error
 - [[concepts/redis]] — Redis — In-memory data structure store
 - [[concepts/rust]] — Rust — Systems programming language
-- [[concepts/scaling-laws]] — Scaling Laws — Empirical laws governing AI model scaling
+- [[concepts/scaling-laws]] — Scaling Laws — Empirical laws governing AI model scaling. Includes Kaplan/Chinchilla, InfoLaw (data quality), and [[concepts/embedding-dimension-scaling-laws|embedding dimension scaling]] for dense retrieval.
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism — Pipeline parallelism for SGLang inference
 - [[concepts/small-language-models]] — Small Language Models — Compact LLMs for edge and local deployment
 - [[concepts/test-time-compute]] — Test-Time Compute — Compute scaling at test time

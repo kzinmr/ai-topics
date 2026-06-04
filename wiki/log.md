@@ -6230,3 +6230,11 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - Created `concepts/hypencoder.md` — Query-Specific Neural Relevance via Hypernetworks
 - Updated `index.md` with new concept entry
 - Key insight: replaces inner-product similarity with dynamically generated neural network (q-net) via hypernetwork; outperforms 7B RepLLaMA with 110M params
+
+## 2026-06-04 arxiv-ingest | Embedding Dimension Scaling Laws
+
+- **Source**: https://arxiv.org/abs/2602.05062
+- **Raw paper**: `wiki/raw/papers/2602.05062-embedding-dimension-scaling-laws.md`
+- **Created concept**: `wiki/concepts/embedding-dimension-scaling-laws.md` — Power-law scaling of dense retrieval performance w.r.t. embedding dimension. Joint law with model size. Cost-aware FLOPs allocation. Killingback et al., UMass CIIR.
+- **Updated concept**: `wiki/concepts/scaling-laws.md` — Added "Embedding Dimension Scaling Laws" section
+- **Updated index**: Added to concepts section

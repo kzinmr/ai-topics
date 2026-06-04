@@ -75,8 +75,17 @@ The shift from Chinchilla (token-count) to InfoLaw (information-density) reflect
 - [[overtraining]] — Training beyond unique data
 - [[compute-optimal-training]] — Finding optimal model size / data ratios
 
+### Embedding Dimension Scaling Laws (Killingback et al., 2026)
+
+Extends scaling laws to **dense retrieval's embedding dimension** as an independent scaling axis. Derives a joint law unifying embedding dimension $D$ and model size $N$:
+
+$$L(D, N) = \frac{A}{D^\alpha} + \frac{B}{N^\beta} + \delta$$
+
+Key insight: **larger model + smaller embedding often beats smaller model + larger embedding** under fixed FLOPs. Validated across BERT and Ettin model families (4M–1B params, dims 32–28K). See [[concepts/embedding-dimension-scaling-laws]] for full details.
+
 ## Sources
 
+- [Scaling Laws for Embedding Dimension in IR](https://arxiv.org/abs/2602.05062) — Killingback et al., UMass CIIR, 2026
 - [InfoLaw: Information Scaling Laws](https://arxiv.org/abs/2605.02364) — Liu et al., ICML 2026
 - [Raw article](raw/articles/2026-05-04_infolaw-information-scaling-laws.md)
 - [Chinchilla Paper](https://arxiv.org/abs/2203.15556) — Hoffmann et al., NeurIPS 2022
