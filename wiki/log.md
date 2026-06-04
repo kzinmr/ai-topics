@@ -1,3 +1,10 @@
+## 2026-06-04 arxiv-ingest | On-Device RAG unified model paper
+
+- **Source**: https://arxiv.org/abs/2604.14403
+- **Raw article**: `wiki/raw/articles/2026-04-15_killingback_unified-model-document-representation-on-device-rag.md`
+- **Created concept**: `wiki/concepts/on-device-rag.md` — On-Device RAG concept page covering ECG model (Embed, Compress, Generate), unified representations for retrieval and compression, 16× compression ratios, privacy and offline benefits for sensitive personal information retrieval
+- **Updated**: `wiki/index.md` — Added on-device-rag concept entry
+
 ## 2026-06-04 X Note Tweet ingest | Isaac Flath — Pi Harness (RLM + Late Interaction)
 
 - **Source**: https://x.com/isaac_flath/status/2048462111567982823
