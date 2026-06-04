@@ -1,8 +1,0 @@
-{
-  "plugins": [
-    "dataview",
-    "tag-wrangler",
-    "calendar",
-    "obsidian-git"
-  ]
-}
