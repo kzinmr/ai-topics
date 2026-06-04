@@ -1,19 +1,15 @@
 ---
 name: llm-wiki
-description: "Karpathy's LLM Wiki — build and maintain a persistent, interlinked markdown knowledge base. Ingest sources, query compiled knowledge, and lint for consistency."
-version: 2.0.0
+description: "Karpathy's LLM Wiki: build/query interlinked markdown KB."
+version: 2.1.0
 author: Hermes Agent
 license: MIT
+platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [wiki, knowledge-base, research, notes, markdown, rag-alternative]
     category: research
-    related_skills: [obsidian, arxiv, agentic-research-ideas]
-    config:
-      - key: wiki.path
-        description: Path to the LLM Wiki knowledge base directory
-        default: "~/wiki"
-        prompt: Wiki directory path
+    related_skills: [obsidian, arxiv]
 ---
 
 # Karpathy's LLM Wiki
@@ -41,19 +37,16 @@ Use this skill when the user:
 
 ## Wiki Location
 
-Configured via `skills.config.wiki.path` in `~/.hermes/config.yaml` (prompted
-during `hermes config migrate` or `hermes setup`):
+**Location:** Set via `WIKI_PATH` environment variable (e.g. in `~/.hermes/.env`).
 
-```yaml
-skills:
-  config:
-    wiki:
-      path: ~/wiki
+If unset, defaults to `~/wiki`.
+
+```bash
+WIKI="${WIKI_PATH:-$HOME/wiki}"
 ```
 
-Falls back to `~/wiki` by default, and in this environment `~/wiki` should
-resolve to `~/ai-topics/wiki`. Do not silently switch to any alternate location. The resolved path is injected when this
-skill loads — check the `[Skill config: ...]` block above for the active value.
+In this environment `~/wiki` should resolve to `~/ai-topics/wiki`. Do not silently
+switch to any alternate location.
 
 The wiki is just a directory of markdown files — open it in Obsidian, VS Code, or
 any editor. No database, no special tooling required.
@@ -116,7 +109,7 @@ When the user has an existing wiki, **always orient yourself before doing anythi
 ③ **Scan recent `log.md`** — read the last 20-30 entries to understand recent activity.
 
 ```bash
-WIKI="${wiki_path:-$HOME/wiki}"
+WIKI="${WIKI_PATH:-$HOME/wiki}"
 # Orientation reads at session start
 read_file "$WIKI/SCHEMA.md"
 read_file "$WIKI/index.md"
@@ -136,7 +129,7 @@ at hand before creating anything new.
 
 When the user asks to create or start a wiki:
 
-1. Determine the wiki path (from config, env var, or ask the user; default `~/wiki`)
+1. Determine the wiki path (from `$WIKI_PATH` env var, or ask the user; default `~/wiki`)
 2. Create the directory structure above
 3. Ask the user what domain the wiki covers — be specific
 4. Write `SCHEMA.md` customized to the domain (see template below)
@@ -161,6 +154,10 @@ Adapt to the user's domain. The schema constrains agent behavior and ensures con
 - When updating a page, always bump the `updated` date
 - Every new page must be added to `index.md` under the correct section
 - Every action must be appended to `log.md`
+- **Provenance markers:** On pages that synthesize 3+ sources, append `^[raw/articles/source-file.md]`
+  at the end of paragraphs whose claims come from a specific source. This lets a reader trace each
+  claim back without re-reading the whole raw file. Optional on single-source pages where the
+  `sources:` frontmatter is enough.
 
 ## Frontmatter
   ```yaml
@@ -171,10 +168,34 @@ Adapt to the user's domain. The schema constrains agent behavior and ensures con
   type: entity | concept | comparison | query | summary
   tags: [from taxonomy below]
   sources: [raw/articles/source-name.md]
+  # Optional quality signals:
+  confidence: high | medium | low        # how well-supported the claims are
+  contested: true                        # set when the page has unresolved contradictions
+  contradictions: [other-page-slug]      # pages this one conflicts with
   ---
   ```
 
 **Required fields:** `title`, `created`, `updated`, `type`, `tags`, `sources`. Omitting `sources` is the most common frontmatter gap at scale — if you have no source to cite, use `sources: []`.
+
+`confidence` and `contested` are optional but recommended for opinion-heavy or fast-moving
+topics. Lint surfaces `contested: true` and `confidence: low` pages for review so weak claims
+don't silently harden into accepted wiki fact.
+
+### raw/ Frontmatter
+
+Raw sources ALSO get a small frontmatter block so re-ingests can detect drift:
+
+```yaml
+---
+source_url: https://example.com/article   # original URL, if applicable
+ingested: YYYY-MM-DD
+sha256: <hex digest of the raw content below the frontmatter>
+---
+```
+
+The `sha256:` lets a future re-ingest of the same URL skip processing when content is unchanged,
+and flag drift when it has changed. Compute over the body only (everything after the closing
+`---`), not the frontmatter itself.
 
 ## Tag Taxonomy
 [Define 10-20 top-level tags for the domain. Add new tags here BEFORE using them.]
@@ -281,6 +302,10 @@ When the user provides a source (URL, file, paste), integrate it into the wiki:
    - PDF → use `web_extract` (handles PDFs), save to `raw/papers/`
    - Pasted text → save to appropriate `raw/` subdirectory
    - Name the file descriptively: `raw/articles/karpathy-llm-wiki-2026.md`
+   - **Add raw frontmatter** (`source_url`, `ingested`, `sha256` of the body).
+     On re-ingest of the same URL: recompute the sha256, compare to the stored value —
+     skip if identical, flag drift and update if different. This is cheap enough to
+     do on every re-ingest and catches silent source changes.
    - **Single-page research collections**: When a research listing page shows post
      summaries but all individual post URLs return 404, extract the listing as a
      single source and supplement with GitHub repos, HuggingFace blogs, and X posts.
@@ -302,7 +327,11 @@ When the user provides a source (URL, file, paste), integrate it into the wiki:
    - **Cross-reference:** Every new or updated page must link to at least 2 other
      pages via `[[wikilinks]]`. Check that existing pages link back.
    - **Tags:** ⚠️ TAG GATE — Before writing any page, read `wiki/SCHEMA.md` and ensure ALL tags come from its taxonomy. If you need a new tag, add it to SCHEMA.md FIRST. Never use ad-hoc or composite kebab-case tags. Violations are blocked by pre-commit hook.
-   - **Sources:** ⚠️ SOURCES GATE — Every page MUST have a `sources:` frontmatter field. For raw article ingestion: `sources: [raw/articles/<filename>]`. For web extraction: list the URLs. If unsure, use `sources: []` — never omit the field entirely.
+   - **Provenance:** On pages synthesizing 3+ sources, append `^[raw/articles/source.md]`
+     markers to paragraphs whose claims trace to a specific source.
+   - **Confidence:** For opinion-heavy, fast-moving, or single-source claims, set
+     `confidence: medium` or `low` in frontmatter. Don't mark `high` unless the
+     claim is well-supported across multiple sources.
 
 ⑤ **Update navigation:**
    - Add new pages to `index.md` under the correct section, alphabetically
@@ -412,18 +441,28 @@ wiki = "<WIKI_PATH>"
    recent source that mentions the same entities.
 
 ⑥ **Contradictions:** Pages on the same topic with conflicting claims. Look for
-   pages that share tags/entities but state different facts.
+   pages that share tags/entities but state different facts. Surface all pages
+   with `contested: true` or `contradictions:` frontmatter for user review.
 
-⑦ **Page size:** Flag pages over 200 lines — candidates for splitting.
+⑦ **Quality signals:** List pages with `confidence: low` and any page that cites
+   only a single source but has no confidence field set — these are candidates
+   for either finding corroboration or demoting to `confidence: medium`.
 
-⑧ **Tag audit:** List all tags in use, flag any not in the SCHEMA.md taxonomy.
+⑧ **Source drift:** For each file in `raw/` with a `sha256:` frontmatter, recompute
+   the hash and flag mismatches. Mismatches indicate the raw file was edited
+   (shouldn't happen — raw/ is immutable) or ingested from a URL that has since
+   changed. Not a hard error, but worth reporting.
 
-⑨ **Log rotation:** If log.md exceeds 500 entries, rotate it.
+⑨ **Page size:** Flag pages over 200 lines — candidates for splitting.
 
-⑩ **Report findings** with specific file paths and suggested actions, grouped by
-   severity (broken links > orphans > stale content > style issues).
+⑩ **Tag audit:** List all tags in use, flag any not in the SCHEMA.md taxonomy.
 
-⑪ **Append to log.md:** `## [YYYY-MM-DD] lint | N issues found`
+⑪ **Log rotation:** If log.md exceeds 500 entries, rotate it.
+
+⑫ **Report findings** with specific file paths and suggested actions, grouped by
+   severity (broken links > orphans > source drift > contested pages > stale content > style issues).
+
+⑬ **Append to log.md:** `## [YYYY-MM-DD] lint | N issues found`
 
 ### Article Scanning & Prioritization Pipeline
 
@@ -535,7 +574,6 @@ When running as a scheduled cron job to discover and fill knowledge gaps
 
    **Predict the violations (active-crawl specific):** The #1 cause of tag violations in active-crawl is **new company/product names** used as tags. When you create entity pages for newly discovered companies/products (Cohere, Stability AI, Antigravity, etc.), those names MUST be in SCHEMA.md's People/Orgs or Products categories. Before writing any page, scan your planned tags for company/product identifiers and check whether SCHEMA.md already lists them. If not, add them to the relevant category line FIRST, then write the page with those tags.
 
-   **General checklist:**
    **General checklist:**
    - After writing all pages, scan each page's `tags:` line with a mental check against SCHEMA.md categories
    - Company/product tags (cohere, stability-ai, antigravity, kubernetes, etc.) → add to People/Orgs, Products, or Infrastructure BEFORE committing
@@ -684,14 +722,14 @@ git log --all --oneline -- wiki/log.md | grep -i "<keyword>"
 git show <commit-hash>:wiki/log.md
 ```
 
-③ **Fix line number corruption:** Remove lines matching the pattern `^\s*\d+\|` that were accidentally embedded:
+③ **Fix line number corruption:** Remove lines matching the pattern `^\s*\d+|` that were accidentally embedded:
 ```python
 import re
 with open("wiki/log.md") as f:
     content = f.read()
 # Remove corrupted line-number-prefixed lines
 lines = content.split('\n')
-cleaned = [line for line in lines if not re.match(r'^\s*\d+\|##', line)]
+cleaned = [line for line in lines if not re.match(r'^\s*\d+|##', line)]
 ```
 
 ④ **Restore missing section headers:** If a section lost its `## YYYY-MM-DD — Title` header (common when line-number corruption removes it), add it back before the orphaned `###` subsections.
@@ -701,7 +739,7 @@ cleaned = [line for line in lines if not re.match(r'^\s*\d+\|##', line)]
 ⑥ **Verify the fix:**
 ```bash
 # Check no more corruption patterns
-grep -c "^\s*\d+\|" wiki/log.md
+grep -c "^\s*\d+|" wiki/log.md
 # Verify section count makes sense
 grep -c "^## 2026" wiki/log.md
 ```
@@ -928,12 +966,12 @@ vault in Obsidian on your laptop/phone — changes appear within seconds.
   `os.path.exists()` via execute_code instead when locating specific wiki pages.
 - **Entity file-to-identity check — slugs are ambiguous**: `os.path.exists("pi.md")` returning true does NOT mean Pinecone has an entity page — it could be the Pi coding agent. Similarly, `contextarena.md` is a benchmark, not Arena the company. When checking whether an entity already has a page, **always read the page's title/overview** (not just check file existence) to confirm the slug maps to the expected entity. File-name collisions between unrelated entities sharing similar names are common in large wikis.
 - **Slug near-matches during cross-reference**: when checking for duplicates via `os.path.exists()`, a candidate slug like `nvidia-nemotron-3` won't match the canonical `nvidia-nemotron-3-nano-omni`. The cross-reference script must **also scan `index.md` for near-match entries** — grep for the candidate's core slug (e.g., `nvidia-nemotron`) across the index before creating a new page. The index often has the canonical full name while your simplified candidate slug misses it. Use `search_files` on the index with a substring of the candidate name as a secondary check.
-- **`|-` pipe table syntax corruption** — automated tools or scripts can render `index.md` entries as markdown table rows (`|- [[entities/foo]] — summary`). This corrupts ~200+ lines at scale. Detection: `grep -c '^|- \\[\\[' wiki/index.md`.
+- **`|-` pipe table syntax corruption** — automated tools or scripts can render `index.md` entries as markdown table rows (`|- [[entities/foo]] — summary`). This corrupts ~200+ lines at scale. Detection: `grep -c '^|- \[\[' wiki/index.md`.
   **Fix with Python (one-shot, all lines):**
   ```python
   import re
   with open("wiki/index.md") as f: content = f.read()
-  fixed = re.sub(r'^\\|-\s+\[\[(?:entities|concepts|comparisons|queries)/',
+  fixed = re.sub(r'^\|-\\s+\[\[(?:entities|concepts|comparisons|queries)/',
                  lambda m: '- [[' + m.group(0)[4:], content, flags=re.MULTILINE)
   with open("wiki/index.md", 'w') as f: f.write(fixed)
   ```
@@ -1076,7 +1114,7 @@ vault in Obsidian on your laptop/phone — changes appear within seconds.
   servers where Chrome isn't available, fall back to targeted `web_search` queries for the
   specific model/product name to supplement the truncated content with specifications,
   benchmarks, and architecture details from alternative sources. Treat `web_extract` as a fast
-  Treat `web_extract` as a fast initial pass and `browser_navigate`/`web_search` as the fallback for pages that time out.
+  initial pass and `browser_navigate`/`web_search` as the fallback for pages that time out.
   **For large arXiv papers (100K+ chars)** where `web_extract` times out on the HTML tab: download the arXiv HTML version
   with `curl`, extract section headings to understand structure, then use Python regex keyword search to find
   new/changed content. Full procedure in `references/large-paper-extraction.md`.
@@ -1235,7 +1273,7 @@ Run these diagnostics during every lint session to maintain wiki health.
 
 When running lint checks, execute in this order for maximum impact:
 
-1. **Index corruption scan** — check for `^\s*\d+\|` pattern in index.md. At 5,000+ pages, 80%+ of lines may be corrupted.
+1. **Index corruption scan** — check for `^\s*\d+|` pattern in index.md. At 5,000+ pages, 80%+ of lines may be corrupted.
 2. **Section completeness** — verify all 4 sections (Entities, Concepts, Comparisons, Queries) exist with proper headers.
 3. **File count reconciliation** — `os.walk()` counts vs index header numbers.
 4. **Broken wikilink analysis** — separate missing files from case mismatches from naming variations.
@@ -1403,3 +1441,12 @@ for line in lines:
 **Verification**: If your dedup scan says 25+ duplicates exist but the index looks well-maintained, investigate 3-5 examples. If they all follow the pattern of `slug-A` appearing in `slug-B`'s description AND vice versa, the "duplicates" are legitimate cross-references. Open 3-5 paired entries and read the actual lines to confirm before accepting the count.
 
 **Scale impact**: Observed in action on a 1,300-line wiki with 1,068 unique index entries. The `re.findall` approach flagged 29 duplicates. Investigation revealed ALL 29 were inline cross-references — zero true duplicates existed. Without this check, the dedup script would have removed legitimate cross-reference lines, breaking bidirectional wikilinks between related entity/concept pages.
+
+## Related Tools
+
+[llm-wiki-compiler](https://github.com/atomicmemory/llm-wiki-compiler) is a Node.js CLI that
+compiles sources into a concept wiki with the same Karpathy inspiration. It's Obsidian-compatible,
+so users who want a scheduled/CLI-driven compile pipeline can point it at the same vault this
+skill maintains. Trade-offs: it owns page generation (replaces the agent's judgment on page
+creation) and is tuned for small corpora. Use this skill when you want agent-in-the-loop curation;
+use llmwiki when you want batch compile of a source directory.
