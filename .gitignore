@@ -18,3 +18,8 @@ config/hermes/skills/.curator_backups/
 config/hermes/skills/.hub/
 config/hermes/skills/.usage.json.lock
 config/hermes/skills/.curator_state
+
+# Obsidian workspace (personal layout state)
+wiki/.obsidian/workspace.json
+wiki/.obsidian/workspace-mobile.json
+wiki/.obsidian/plugins/*/data.json
