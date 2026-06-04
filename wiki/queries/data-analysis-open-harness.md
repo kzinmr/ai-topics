@@ -64,6 +64,7 @@ First, let us confirm the scope of "Open Harness" as used in this Wiki (from [[c
 |---|---|---|
 | **Cognition DANA / Devin** | SWE agent data-analysis-specific persona. Connects to Redshift/Snowflake/BQ via MCP. Team sharing via Knowledge settings. DANA-specific persona (`/dana`). End-to-end (data anomaly → code cause → fix PR) | ❌ Product-type Closed Harness |
 | **OpenAI Internal Data Agent** | GPT-5.2 + Codex pipeline crawling + 6-layer context grounding (Table Usage → Human Annotation → Codex Enrichment → Institutional Knowledge → Memory → Runtime Context). 600+PB, 70k+ datasets | ❌ Internal Bespoke (not public) |
+| **Anthropic Claude Code Analytics** | Skills-first agentic analytics. 4-layer stack (Data Foundations → Sources of Truth → Skills → Validation). Semantic layer mandatory first path. 95% automation / ~95% accuracy. Skills skeleton shared publicly | △ Internal but patterns transferable |
 | **Hex Technologies** | Agentic Notebooks — AI agent embedded in polyglot (SQL/Python/R) notebooks | ❌ Product-type Notebook Harness |
 | **OpenAI Agents SDK (April 2026 evolved version)** | Configurable memory + sandbox-aware orchestration + filesystem tools + MCP. Approaching Open Harness | △ Evolving from Framework |
 
@@ -71,12 +72,12 @@ First, let us confirm the scope of "Open Harness" as used in this Wiki (from [[c
 
 The design space of data analysis agents can be organized along two axes (from [[concepts/data-analysis-agents]]):
 
-|  | Approach A: Internal Bespoke | Approach B: SWE as Data Analyst |
-|---|---|---|
-| **Representative** | OpenAI Internal Data Agent | Cognition DANA / Devin |
-| **Core Insight** | "The meaning of data lives inside pipeline code" | "SWE Agents make better analysts than SQL-only tools" |
-| **Context** | 6-layer grounding context | Full codebase search + git history |
-| **Verification** | Evals API golden SQL pairs | Final SQL + Metabase playground link |
+|  | Approach A: Internal Bespoke | Approach B: SWE as Data Analyst | Approach C: Skills-First Analytics |
+|---|---|---|---|
+| **Representative** | OpenAI Internal Data Agent | Cognition DANA / Devin | Anthropic Claude Code Analytics |
+| **Core Insight** | "The meaning of data lives inside pipeline code" | "SWE Agents make better analysts than SQL-only tools" | "Accuracy is a context + verification problem, not code gen" |
+| **Context** | 6-layer grounding context | Full codebase search + git history | Skills + semantic layer + business knowledge graph |
+| **Verification** | Evals API golden SQL pairs | Final SQL + Metabase playground link | Adversarial sub-agents + provenance footer + offline evals |
 
 ---
 

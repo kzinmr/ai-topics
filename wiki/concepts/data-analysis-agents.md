@@ -1,7 +1,7 @@
 ---
 title: "AI Data Analysis Agents"
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-06-04
 type: concept
 tags:
   - ai-agents
@@ -27,9 +27,9 @@ Data analysis agents face unique challenges compared to general coding agents:
 4. **Verification**: Queries that run successfully can still return semantically wrong results
 5. **Multi-step Reasoning**: Data questions often require chaining queries (explore → pattern → question → refine)
 
-## Two Major Approaches
+## Three Major Approaches
 
-Two dominant patterns have emerged in 2025-2026:
+Three dominant patterns have emerged in 2025-2026:
 
 ### Approach A: Internal Bespoke Agent (OpenAI Pattern)
 
@@ -53,27 +53,47 @@ Cognition's philosophy is that **an AI software engineer makes a better data ana
 
 **DANA (Data Analyst Agent):** A specialized Devin persona activated via `/dana` or `@Devin !dana` in Slack, equipped with MCP database connectors (Redshift, Snowflake, BigQuery) and Knowledge configurations.
 
+### Approach C: Skills-First Agentic Analytics (Anthropic Pattern)
+
+Anthropic's approach, documented in June 2026, achieves **95% automation of business analytics queries with ~95% accuracy** using Claude Code. The key insight: **analytics accuracy is a context and verification problem, not a code generation issue**. Data is not software — analytics has a single correct answer with no deterministic way of proving correctness.
+
+**Three failure modes addressed:**
+1. **Concept <> Entity Ambiguity**: Collapse to canonical governed datasets
+2. **Data Staleness**: Co-locate skills with transforms, CI enforces freshness
+3. **Retrieval Failure**: Skills as procedural routers narrowing the search space
+
+**Four-layer agentic analytics stack:**
+1. **Data Foundations**: Canonical datasets, enforced standards, co-located artifacts, metadata as first-class
+2. **Sources of Truth**: Semantic layer (mandatory first path) → Lineage → Query corpus (distilled, not raw) → Business context (knowledge graph)
+3. **Skills**: Knowledge skill (domain router) + Unbook skill (process: clarify → query → adversarial review). Without skills: 21% accuracy; with skills: 95%+
+4. **Validation**: Offline evals, ablation techniques, adversarial review (+6% accuracy), provenance footers, active correction harvesting
+
+**Key differentiator:** Skills as markdown files co-located in the same repo as data transforms, with CI ensuring cross-layer integrity. The semantic layer is the mandatory first path — raw SQL is fallback only.
+
 ## Common Architectural Patterns
 
 Despite different implementations, successful data analysis agents share:
 
 ### 1. Multi-Layer Context Grounding
-Both OpenAI and Cognition use layered context retrieval, mirroring how a human analyst works:
+All three approaches use layered context retrieval, mirroring how a human analyst works:
 - **Schema layer**: Table names, columns, types, relationships
 - **Code layer**: How data is computed/transformed in pipelines
 - **Business layer**: Metric definitions, tribal knowledge, naming conventions
 - **Memory layer**: Corrections and learnings from past sessions
+- **Anthropic variant**: Semantic layer → lineage → query corpus (distilled) → business context knowledge graph
 
 ### 2. Knowledge Base / Memory
 - **OpenAI**: Saves corrections and non-obvious constraints to improve future baseline performance
 - **Cognition**: Uses Knowledge configurations with macros (`!analytics`) for team-wide shared context
+- **Anthropic**: Skills as markdown files (procedural knowledge) + semantic layer (declarative knowledge) + active correction harvesting → auto-PRs
 - **BQ Golden Queries**: Curated exemplar queries as semantic grounding
 - See [[concepts/poor-mans-continuous-learning]] for the unifying pattern
 
 ### 3. Verification Loop
-Both systems emphasize verifiable outputs:
+All three systems emphasize verifiable outputs:
 - OpenAI: Exposes reasoning process, links to raw data
 - Cognition: Forces output format to include final query + Metabase playground link
+- Anthropic: Adversarial review sub-agents (+6% accuracy), provenance footer (source tier, freshness, owner), offline evals with ablation
 - The agent isn't trusted — only the **verifiable evidence it produces** is trusted
 
 ### 4. MCP / Protocol-Based Tool Access
@@ -83,16 +103,18 @@ Both use standardized protocols for database connectivity:
 
 ## Comparison: Key Systems
 
-| Aspect | OpenAI Internal Agent | Cognition DANA / Devin |
-|--------|---------------------|----------------------|
-| **Model** | GPT-5.2 | Multiple models (via Devin harness) |
-| **Data Scale** | 600+ PB, 70k+ datasets | Enterprise DW (Redshift/Snowflake/BQ) |
-| **Code Awareness** | Codex pipeline code crawling | Full codebase search + git history |
-| **Knowledge Capture** | Memory + institutional ingestion | Knowledge configs + macros |
-| **Verification** | Evals API golden SQL pairs | Final SQL + Metabase playground link |
-| **Interfaces** | Slack, Web, IDE, Codex CLI, ChatGPT | Slack, Web, CLI, API, Linear |
-| **Approach** | Bespoke internal tool | Productized agent with MCP |
-| **Key Insight** | "Meaning lives in code" | "Software Engineer > SQL Tool" |
+| Aspect | OpenAI Internal Agent | Cognition DANA / Devin | Anthropic Claude Code Analytics |
+|--------|---------------------|----------------------|--------------------------------|
+| **Model** | GPT-5.2 | Multiple models (via Devin harness) | Claude (Opus/Sonnet) |
+| **Data Scale** | 600+ PB, 70k+ datasets | Enterprise DW (Redshift/Snowflake/BQ) | Enterprise DW (internal Anthropic) |
+| **Code Awareness** | Codex pipeline code crawling | Full codebase search + git history | Skills co-located with data transforms |
+| **Knowledge Capture** | Memory + institutional ingestion | Knowledge configs + macros | Skills (markdown) + semantic layer + correction harvesting |
+| **Verification** | Evals API golden SQL pairs | Final SQL + Metabase playground link | Adversarial sub-agents + provenance footer + offline evals |
+| **Interfaces** | Slack, Web, IDE, Codex CLI, ChatGPT | Slack, Web, CLI, API, Linear | Slack, IDE, dashboards, standalone sessions |
+| **Approach** | Bespoke internal tool | Productized agent with MCP | Skills-first agentic analytics |
+| **Key Insight** | "Meaning lives in code" | "Software Engineer > SQL Tool" | "Accuracy is context + verification, not code gen" |
+| **Reported Accuracy** | Not disclosed | Not disclosed | ~95% aggregate (95% automation) |
+| **Open Source** | No | No (product) | Skills skeleton shared in blog post |
 
 ## Relationship to DWH Semantic Layers
 
@@ -129,3 +151,6 @@ This eliminates the traditional handoff between data teams and engineering teams
 - [[concepts/mcp]] — Model Context Protocol (tool access standardization)
 - [[entities/ashpreet-bedi]] — Dash self-learning data agent, PMCL originator
 - [[raw/articles/2026-01-29_openai-in-house-data-agent]] — OpenAI in-house data agent article
+- [[raw/articles/2026-06-03_anthropic-self-service-data-analytics-with-claude]] — Anthropic's skills-first analytics stack (source for Approach C)
+- [[raw/articles/2026-06-02_openai-codex-every-role-tool-workflow]] — Codex data analytics plugin launch
+- [[queries/data-analysis-open-harness]] — Query: What open harness is suitable for data analysis?

@@ -1,0 +1,104 @@
+{
+  "run_id": "20260604T071019Z",
+  "triaged_at": "2026-06-04T07:15:00Z",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "classifications": [
+    {
+      "message_id": "<20260603.165004.a2594de5@mta11>",
+      "subject": "🧠 Microsoft Builds Its Agent Stack",
+      "date": "2026-06-03",
+      "source_label": "uid=180",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-03-microsoft-builds-its-agent-stack.md",
+      "importance": "critical",
+      "reason": "Directly covers Microsoft's AI agent stack architecture — core wiki topic on AI agents, frameworks, and enterprise agent deployment. Microsoft Build 2026 context makes this highly timely.",
+      "action": "wiki-ingest",
+      "suggested_targets": [
+        {"type": "event", "title": "Microsoft Build 2026", "note": "Major AI agent announcements"},
+        {"type": "entity", "title": "Microsoft Copilot / Agent Stack", "note": "Update with 2026 agent architecture details"},
+        {"type": "concept", "title": "Agent Frameworks", "note": "Microsoft's agent orchestration approach"}
+      ],
+      "urls_need_scraping": true,
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260603171357.3.fcfee11f56046ce2@mg2.substack.com>",
+      "subject": "⚡️Satya Nadella: No Priors x Latent Space Crossover Special at Microsoft Build",
+      "date": "2026-06-03",
+      "source_label": "uid=181",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-03-satya-nadella-no-priors-x-latent-space-crossover-special-at-microsoft-build.md",
+      "importance": "critical",
+      "reason": "Podcast interview with Satya Nadella at Microsoft Build 2026, featuring swyx (No Priors × Latent Space crossover). Directly relevant to AI strategy, agent ecosystem, and enterprise AI direction. Latent Space is a key tracked blog.",
+      "action": "wiki-ingest",
+      "suggested_targets": [
+        {"type": "entity", "title": "Satya Nadella", "note": "AI strategy remarks at Build 2026"},
+        {"type": "event", "title": "Microsoft Build 2026", "note": "Nadella keynote/interview content"},
+        {"type": "entity", "title": "Latent Space", "note": "No Priors crossover episode"}
+      ],
+      "urls_need_scraping": true,
+      "article_count": 20,
+      "canonical_url": "https://open.substack.com/pub/swyx/p/satya-2026"
+    },
+    {
+      "message_id": "<20260603130746.3.ad81a1e066d260c1@mg-d0.substack.com>",
+      "subject": "To Boldly Go: The Case for Space Datacenters",
+      "date": "2026-06-03",
+      "source_label": "uid=179",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-03-to-boldly-go-the-case-for-space-datacenters.md",
+      "importance": "high",
+      "reason": "SemiAnalysis article on space-based datacenters for AI compute. Relevant to AI infrastructure, compute supply chain, and novel approaches to scaling inference/training. SemiAnalysis is a high-signal source for AI infra analysis.",
+      "action": "wiki-ingest",
+      "suggested_targets": [
+        {"type": "entity", "title": "SemiAnalysis", "note": "Update if exists, or create new entity"},
+        {"type": "concept", "title": "AI Compute Infrastructure", "note": "Space datacenters as novel infra approach"},
+        {"type": "concept", "title": "Inference Infrastructure", "note": "Edge/space compute for AI inference"}
+      ],
+      "urls_need_scraping": true,
+      "article_count": 20,
+      "canonical_url": "https://open.substack.com/pub/semianalysis/p/to-boldly-go-the-case-for-space-datacenters"
+    },
+    {
+      "message_id": "<20260603192749.3.8ff48dffca25634b@mg-d1.substack.com>",
+      "subject": "🔬Scaling Past Informal AI - Carina Hong, Axiom Math",
+      "date": "2026-06-03",
+      "source_label": "uid=182",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-03-scaling-past-informal-ai-carina-hong-axiom-math.md",
+      "importance": "high",
+      "reason": "Interview with Carina Hong of Axiom Math on formal AI reasoning and scaling beyond informal AI. Relevant to AI reasoning, formal verification, and mathematical AI — active frontier in LLM research. Latent Space/No Priors source.",
+      "action": "wiki-ingest",
+      "suggested_targets": [
+        {"type": "entity", "title": "Carina Hong", "note": "Founder of Axiom Math"},
+        {"type": "entity", "title": "Axiom Math", "note": "Formal AI for mathematics"},
+        {"type": "concept", "title": "Formal Reasoning in LLMs", "note": "Scaling past informal AI approaches"}
+      ],
+      "urls_need_scraping": true,
+      "article_count": 20,
+      "canonical_url": "https://open.substack.com/pub/swyx/p/axiom"
+    },
+    {
+      "message_id": "<20260604032407.3.1f82624d7e008eda@mg2.substack.com>",
+      "subject": "[AINews] Reve 2 and Ideogram 4: Layouts in Imagegen",
+      "date": "2026-06-04",
+      "source_label": "uid=183",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-04-ainews-reve-2-and-ideogram-4-layouts-in-imagegen.md",
+      "importance": "high",
+      "reason": "AINews coverage of two new image generation models (Reve 2, Ideogram 4) with layout control capabilities. Relevant to AI image generation as a rapidly evolving domain. swyx/AINews is a core tracked source.",
+      "action": "wiki-ingest",
+      "suggested_targets": [
+        {"type": "entity", "title": "Reve", "note": "Image generation model — v2 release"},
+        {"type": "entity", "title": "Ideogram", "note": "Image generation model — v4 with layouts"},
+        {"type": "concept", "title": "AI Image Generation", "note": "Layout-guided generation capabilities"}
+      ],
+      "urls_need_scraping": true,
+      "article_count": 20,
+      "canonical_url": "https://open.substack.com/pub/swyx/p/ainews-reve-2-and-ideogram-4-layouts"
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 3,
+    "low": 0,
+    "pending_scrape": 5,
+    "dominant_theme": "Microsoft Build 2026 — agent stack, Satya Nadella AI strategy, plus AI imagegen and formal reasoning frontier"
+  }
+}

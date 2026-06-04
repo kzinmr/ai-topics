@@ -6119,3 +6119,12 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **New transcript:** [[raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture]]
 - **Topics covered:** Recursive Language Models (RLMs) as Python REPL state management, auto-research for search ranking code optimization, overfitting guardrails (LLM-based detection, patch size limits, training/validation split), agent-coded reranker iteration
 - **Cross-references added:** [[entities/doug-turnbull]], [[concepts/rlm-recursive-language-models]], [[concepts/karpathy-loop]], [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms]]
+
+## 2026-06-04 — Anthropic Self-Service Data Analytics Article Ingestion
+- **Action:** Ingested Anthropic blog post on self-service data analytics with Claude (June 3, 2026)
+- **Raw article:** [[raw/articles/2026-06-03_anthropic-self-service-data-analytics-with-claude]]
+- **Updated concept:** [[concepts/data-analysis-agents]] — Added Approach C (Skills-First Agentic Analytics), expanded comparison table to 3 approaches, updated common patterns
+- **Updated query:** [[queries/data-analysis-open-harness]] — Added Anthropic to options matrix and architecture classification
+- **Updated index:** [[concepts/data-analysis-agents]] description updated to three approaches
+- **Key data points:** 95% automation / ~95% accuracy, skills without = 21% accuracy, adversarial review +6% accuracy
+- **Comparison:** Anthropic vs OpenAI Codex data analytics plugin vs Cognition DANA
