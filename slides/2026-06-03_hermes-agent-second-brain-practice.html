@@ -923,54 +923,193 @@ svg { display: block; width: 100%; height: auto; }
 </section>
 
 <!-- =================================================================
-     SLIDE 16 — FAILURE TRACES → ASSETS
+     SLIDE — DIVIDER: PART 4
      ================================================================= -->
-<section class="slide" data-title="失敗トレース">
-  <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">The Ratchet</span></div>
-    <h2 class="reveal">失敗トレースを、改善資産にする</h2>
-    <table class="kv reveal" style="margin-top:.8rem;">
-      <tr><th>失敗例</th><th>対策（harness 側）</th></tr>
-      <tr><td>ページが重複して作られる</td><td>作成前に <code>index.md</code> 確認をスキルに追加</td></tr>
-      <tr><td>タグが散らかる</td><td>pre-commit でブロック + タクソノミーを整備</td></tr>
-      <tr><td>Cron 処理が失敗する</td><td>スクリプト修正 + <code>AGENTS.md</code> に記録 + スキル化</td></tr>
-      <tr><td>スキルが爆発的に増える</td><td>Curator + 週次棚卸し</td></tr>
-    </table>
-    <p class="reveal note" style="margin-top:.8rem;">Agent は <strong>設定・スクリプトを自分で直す</strong>。人間が入るのは、根本的な設計判断が要るときだけ。</p>
+<section class="slide slide--dark slide--divider" data-title="Part 4">
+  <div class="slide-content" style="justify-content:center;">
+    <div class="divider-num reveal">04</div>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 4 ・ Workflow</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">日々のワークフロー・活用方法<br/>狭義RAG → 広義RAG</h2>
   </div>
 </section>
 
 <!-- =================================================================
-     SLIDE 17 — NUMBERS DASHBOARD
+     PART 4 — BIG PICTURE (narrow → broad RAG)
      ================================================================= -->
-<section class="slide" data-title="数字で見る現在">
+<section class="slide" data-title="活用の全体像">
   <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">Snapshot ・ 2026-06</span></div>
-    <h2 class="reveal">数字で見る、いまの知識ベース</h2>
-    <div class="stats reveal" style="margin-top:1.2rem;">
-      <div class="stat"><div class="num">2,327</div><div class="lbl">Wiki ページ総数</div></div>
-      <div class="stat"><div class="num">28</div><div class="lbl">Cron ジョブ（25 active）</div></div>
-      <div class="stat"><div class="num">100+</div><div class="lbl">スキル（30カテゴリ）</div></div>
-      <div class="stat"><div class="num">84</div><div class="lbl">追跡ブログ RSS</div></div>
+    <div class="eyebrow-row reveal"><span class="kicker">狭義RAG → 広義RAG</span><span class="note">wiki は「文脈の基盤」。すべてオンデマンド</span></div>
+    <h2 class="reveal">活用の全体像 — 取り込み→クエリだけではない</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 230" role="img" aria-label="狭義RAGと広義RAG">
+        <defs><marker id="r4" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="372" y="86" width="156" height="58" rx="12" fill="#10251c"/><text x="450" y="112" font-size="14" font-weight="700" fill="#d98b34">wiki</text><text x="450" y="132" font-size="12" fill="#d8e2da">＝文脈の基盤</text></g>
+          <g class="pop"><rect x="20" y="34" width="320" height="162" rx="13" fill="#eef4f0" stroke="#2f7d6b" stroke-width="2"/>
+            <text x="180" y="64" font-size="15" font-weight="700" fill="#2f7d6b">狭義RAG（取込→クエリ）</text>
+            <text x="180" y="98" font-size="13" fill="#18241f">ingest → wiki に compile</text>
+            <text x="180" y="124" font-size="13" fill="#18241f">→ 質問に関連ページを引く</text>
+            <text x="180" y="162" font-size="12" fill="#5d6c62">＝検索して答える（1モード）</text></g>
+          <line x1="340" y1="115" x2="368" y2="115" stroke="#2f7d6b" stroke-width="2.6" marker-end="url(#r4)"/>
+          <line x1="532" y1="115" x2="558" y2="115" stroke="#b45f06" stroke-width="2.6" marker-end="url(#r4)"/>
+          <g class="pop"><rect x="560" y="34" width="320" height="162" rx="13" fill="#fbeedd" stroke="#b45f06" stroke-width="2.4"/>
+            <text x="720" y="64" font-size="15" font-weight="700" fill="#b45f06">広義RAG（文脈注入→生成）</text>
+            <text x="720" y="98" font-size="13" fill="#18241f">wiki を文脈として注入し…</text>
+            <text x="720" y="124" font-size="13" fill="#18241f">report / blog / slides / code を生成</text>
+            <text x="720" y="162" font-size="12" fill="#5d6c62">＝蓄積した文脈で生成を駆動</text></g>
+        </g>
+      </svg>
     </div>
-    <p class="reveal note" style="margin-top:1.4rem; text-align:center;">手で運用すれば数日で滞留し、数週間で陳腐化する。<strong>回り続けること自体に価値がある。</strong></p>
+    <p class="reveal note" style="text-align:center;">「検索して答える」だけでなく、<strong>蓄積した文脈で生成を駆動する</strong>。この層は「自動の土台」（Part 2）の上に乗る。</p>
   </div>
 </section>
 
 <!-- =================================================================
-     SLIDE 18 — 5 TAKEAWAYS
+     PART 4 — EXTERNAL AGENTS USE THE WIKI (CLI / MCP)
      ================================================================= -->
-<section class="slide" data-title="5つの示唆">
+<section class="slide" data-title="外部エージェントからwiki">
   <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">Takeaways</span></div>
-    <h2 class="reveal">ソフトウェア開発者への5つの示唆</h2>
-    <ol class="bullets reveal" style="margin-top:1rem; counter-reset:t; max-width:70ch;">
-      <li><strong>設定は Markdown で書け。</strong> Agent が読み書きしやすく、人間もレビューしやすい。</li>
-      <li><strong>失敗を git に残せ。</strong> 失敗は次の改善の貴重なデータ。ログだけでなく修正の diff も。</li>
-      <li><strong>スキルは自動で生まれる。</strong> 手順書を書くのではなく、成功した作業から抽出。人間はレビューと承認。</li>
-      <li><strong>定期実行は前提で設計しろ。</strong>「呼ばれたら動く」ではなく「常に動いている」存在として。</li>
-      <li><strong>Environment を選べ。</strong> Markdown + git という<strong>検証しやすい環境</strong>こそが成功の鍵。</li>
+    <div class="eyebrow-row reveal"><span class="kicker">CLI / MCP</span></div>
+    <h2 class="reveal">外部エージェントから wiki を使う — CLI と MCP</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 210" role="img" aria-label="Claude Code/CodexからCLI/MCP経由でread-only wikiへ">
+        <defs><marker id="x4" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="18" y="70" width="176" height="66" rx="12" fill="#10251c"/><text x="106" y="100" font-size="14" fill="#fffaf0" font-weight="700">Claude Code</text><text x="106" y="122" font-size="13" fill="#d8e2da">/ Codex</text></g>
+          <g class="pop"><rect x="300" y="30" width="306" height="62" rx="11" fill="#fffdf7" stroke="#b45f06" stroke-width="2"/><text x="453" y="56" font-family="JetBrains Mono" font-size="13" font-weight="700" fill="#b45f06">scripts/wiki CLI</text><text x="453" y="78" font-size="12" fill="#18241f">shell-native・ripgrep・メタデータ絞り込み</text></g>
+          <g class="pop"><rect x="300" y="116" width="306" height="62" rx="11" fill="#fffdf7" stroke="#b45f06" stroke-width="2"/><text x="453" y="142" font-family="JetBrains Mono" font-size="13" font-weight="700" fill="#b45f06">MCP server</text><text x="453" y="164" font-size="12" fill="#18241f">docs/wiki-mcp.md（Docker `,ro`）</text></g>
+          <line x1="194" y1="92" x2="296" y2="61" stroke="#b45f06" stroke-width="2.4" marker-end="url(#x4)"/>
+          <line x1="194" y1="114" x2="296" y2="147" stroke="#b45f06" stroke-width="2.4" marker-end="url(#x4)"/>
+          <g class="pop"><rect x="704" y="70" width="178" height="66" rx="12" fill="#eef4f0" stroke="#2f7d6b" stroke-width="2"/><text x="793" y="98" font-size="14" font-weight="700" fill="#2f7d6b">wiki/ 🔒</text><text x="793" y="120" font-size="12" fill="#18241f">read-only</text></g>
+          <line x1="606" y1="61" x2="700" y2="92" stroke="#2f7d6b" stroke-width="2.4" marker-end="url(#x4)"/>
+          <line x1="606" y1="147" x2="700" y2="114" stroke="#2f7d6b" stroke-width="2.4" marker-end="url(#x4)"/>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">どちらも <strong>wiki を壊さない</strong>（read-only）。CLI＝shell が使える agent 向き、MCP＝MCP クライアント向き。併用可。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 4 — KNOWLEDGE QUERY (context injection example)
+     ================================================================= -->
+<section class="slide" data-title="ナレッジクエリ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">On-demand ・ 文脈注入</span></div>
+    <h2 class="reveal">ナレッジクエリ — 文脈注入の例</h2>
+    <p class="reveal" style="margin-top:.3rem;"><strong>例</strong>：「GRPO の論文と実装の関係を整理して」「先週の ○○ 周りの議論をまとめて」</p>
+    <ol class="bullets reveal" style="margin-top:.6rem; max-width:72ch;">
+      <li><code>wiki/index.md</code> から関連ページを特定（<code>concepts/</code> <code>entities/</code>）</li>
+      <li>必要なら <code>raw/</code> のソースまで遡る</li>
+      <li>回答を返す ／ 再利用可能なら <code>wiki/queries/</code> に保存</li>
     </ol>
+    <p class="reveal note" style="margin-top:.6rem;">回答が一回で消えない。Wiki ページとして残り次回は即参照 —— Karpathy の <strong>compiled knowledge</strong>。RAG の「都度再発見」とは違う。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 4 — ON-DEMAND INGEST
+     ================================================================= -->
+<section class="slide" data-title="オンデマンド取り込み">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">On-demand ・ 入力</span></div>
+    <h2 class="reveal">オンデマンド取り込み（広義の入力）</h2>
+    <p class="reveal" style="margin-top:.3rem;"><strong>例</strong>：「この記事読んで wiki に追加して」＋URL ／ 「この一連の議論を概念ページに」</p>
+    <ol class="bullets reveal" style="margin-top:.6rem; max-width:72ch;">
+      <li>ソースを <code>raw/</code> に保存（不変）</li>
+      <li><code>index.md</code> で既存ページを確認 → 更新 or 新規</li>
+      <li>frontmatter・最低2つの <code>[[wikilink]]</code>・<code>index.md</code>/<code>log.md</code> を整備</li>
+      <li>pre-commit を通して <code>git commit &amp; push</code></li>
+    </ol>
+    <p class="reveal note" style="margin-top:.6rem;"><strong>人間の介入</strong>：URL や指示を渡すだけ。取り込みも生成も、同じ wiki を介してつながる。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 4 — GENERATE FROM WIKI (reporting / blog / slides)
+     ================================================================= -->
+<section class="slide" data-title="wikiから生成">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">広義RAG ・ 出力</span></div>
+    <h2 class="reveal">wiki から生成する — 聴衆・媒体別の reporting / blog / slides</h2>
+    <div class="two-col reveal" style="margin-top:.8rem;">
+      <div class="panel">
+        <span class="tag">// reporting</span>
+        <div class="chips" style="margin-top:.3rem;">
+          <span class="chip">wiki-daily-report</span><span class="chip">trending-topics-reporting</span><span class="chip on">hermes-report-quality</span>
+        </div>
+        <p class="note" style="margin-top:.45rem;">Gwern 品質（Anti-Examples 等）で、Slack / Discord / Telegram へ媒体別に整形。</p>
+      </div>
+      <div class="panel accent">
+        <span class="tag">// blog / slides</span>
+        <div class="chips" style="margin-top:.3rem;">
+          <span class="chip">blog-writing</span><span class="chip">research-paper-writing</span><span class="chip">humanizer</span><span class="chip">claude-design</span>
+        </div>
+        <p class="note" style="margin-top:.45rem;"><code>humanizer</code> で機械臭を除去。媒体別デザインで仕上げる。</p>
+      </div>
+    </div>
+    <p class="reveal note" style="margin-top:.8rem; text-align:center;">同じ知識ベースから、<strong>聴衆（社内/一般）・媒体（chat/blog/slides）別に出し分ける</strong>。 ※この資料も wiki から生成。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 4 — CONFIG: interactive & human-reviewable
+     ================================================================= -->
+<section class="slide" data-title="設定は対話的に">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Config</span></div>
+    <h2 class="reveal">設定は対話的に・人間レビュー可能に</h2>
+    <p class="reveal note" style="margin-top:.2rem;">設定変更は<strong>対話で修正</strong>して運用。設定は<strong>保守でき・人間がレビューできる形</strong>（Markdown/YAML + git）。</p>
+    <div class="two-col reveal" style="margin-top:.7rem;">
+      <div class="panel">
+        <span class="tag">// 対話的な設定修正（オンデマンド）</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li>「追跡対象に <code>@x</code> を追加して」→ <code>config/feeds/*.yaml</code> 編集 → スケルトン生成</li>
+          <li>Cron 失敗 → ログ分析 → スクリプト修正 → <code>git commit</code></li>
+          <li><strong>人間の介入は設計判断のときだけ</strong></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <span class="tag">// 失敗は改善資産に（軽く）</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li>繰り返した失敗 → harness 側へ恒久対策（スキル / pre-commit / AGENTS.md）</li>
+          <li>「mistake → engineer a solution → never again」（Hashimoto）</li>
+        </ul>
+      </div>
+    </div>
+    <p class="reveal note" style="margin-top:.7rem; text-align:center;">すべて <strong>diff が残る</strong>。設定もスキルも cron も、git で監査・巻き戻しできる。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE — まとめ (consolidated; was Part 5)
+     ================================================================= -->
+<section class="slide" data-title="まとめ">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Wrap-up</span></div>
+    <h2 class="reveal">まとめ — 「どう知識を扱うか」</h2>
+    <p class="reveal" style="margin-top:.3rem;">半年運用して変わったのは <strong>「何を知っているか」ではなく「どう知識を扱うか」</strong>。知識ベースは静的repoでなく、<strong>自律的に更新され続ける runtime 環境</strong>になった。</p>
+    <div class="two-col reveal" style="margin-top:.7rem;">
+      <div class="panel">
+        <span class="tag">// 開発者への示唆</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li>設定は <strong>Markdown/YAML + git</strong>（人間もレビュー可）</li>
+          <li>失敗は <strong>git に残し</strong> harness で恒久対策</li>
+          <li>スキルは<strong>自動で生まれ</strong>、自分で育てる</li>
+          <li><strong>定期実行を前提</strong>に設計（常駐）</li>
+          <li>検証しやすい <strong>Environment</strong> を選ぶ</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <span class="tag">// いまの規模</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li>Wiki <strong>2,327 ページ</strong>（concepts 1,550 / entities 751）</li>
+          <li>Cron <strong>28</strong>（26 active）／ スキル <strong>100+</strong></li>
+          <li>追跡 RSS <strong>84</strong> ／ X <strong>30+</strong></li>
+        </ul>
+      </div>
+    </div>
+    <p class="reveal note" style="margin-top:.7rem; text-align:center;">LLM の外側の「設定・スキル・定期実行」こそ、<strong>モデルを仕事に変える境界</strong>。狭義RAG から広義RAG へ。</p>
   </div>
 </section>
 
