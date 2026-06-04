@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-06-03
+updated: 2026-06-04
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -24,6 +24,7 @@ sources:
   - raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md
   - raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md
   - raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
+  - raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md
 ---
 
 # Ed Zitron

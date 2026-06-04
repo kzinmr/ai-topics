@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-04T08:03:59.482733+00:00",
+  "triage_run_id": "20260604T080023Z",
+  "source": "blog",
+  "summary_ja": "5記事のバックログ処理。すべて既にアーカイブ済みまたは既存wikiページでカバー済み。MAI-Thinking-1技術レポートはconcepts/mai-thinking-1-tech-report.mdで包括的にカバー。Ed ZitronのROI記事はentities/ed-zitron.mdでkalopsia論、トークン課金問題、Uber/Google/Walmart事例を網羅。Paul Graham、Dan Luu、BruteCatの記事はAI固有のコンテンツなし。",
+  "decisions": [
+    {
+      "item_id": "mai-thinking-1-tech-report-20260603",
+      "source": "blog",
+      "source_name": "Microsoft AI Technical Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "reference",
+      "reason_ja": "既存ページでカバー済み。concepts/mai-thinking-1-tech-report.md（220行）が本PDFをソースとして包括的に記述。アーキテクチャ（interleaved dense/MoE、LatentMoE）、Scaling Ladder、modified GRPO、35B active/1T total params、benchmark結果、8K GB200訓練インフラ。MAI-Thinking-1は既に3つの概念ページで参照されている。",
+      "candidate_wiki_path": "concepts/mai-thinking-1-tech-report",
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    }
+  ]
+}

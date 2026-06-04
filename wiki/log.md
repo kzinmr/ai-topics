@@ -1,3 +1,11 @@
+## 2026-06-04 raw-backlog-ingest | 5-article batch: MAI-TechReport (already captured), Ed Zitron ROI (source add), 3 skips (PG, Luu, security)
+
+- **SKIPPED:** `raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md` — Content already captured in `entities/ed-zitron.md` (line 291: "AI Doesn't Have ROI — Enterprise Cost Crisis" section with token billing crisis, Uber $500M incident, kalopsia thesis, Dark Output critique). Added raw article path to `sources:` frontmatter. Bumped `updated` date to 2026-06-04.
+- **SKIPPED:** `raw/articles/paulgraham.com--popular-html--c633a6dc.md` — PG's May 2001 essay on programming language popularity. Not AI-related, skip.
+- **SKIPPED:** `raw/articles/danluu.com--cache-incidents--1d05e743.md` — Dan Luu on Twitter cache failures (2012-2022). Distributed systems topic, not AI. Skip.
+- **SKIPPED:** `raw/articles/brutecat.com--articles-google-cloud-rce--13889f7b.md` — Google Cloud RCE security writeup (CVE-2026-2031). Cloud security, not AI. Skip.
+- **SKIPPED:** `raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md` — Full tech report extraction (372KB, 109 pages). Already captured in `concepts/mai-thinking-1-tech-report.md` (220-line deep dive) and `concepts/microsoft-mai-models.md`. Both pages reference this raw article in sources. No action needed.
+
 ## 2026-06-04 manual-research | Augment Code Cosmos platform research and entity page enrichment
 
 - **FETCHED:** raw/articles/2026-06-04_augment-code_cosmos-platform.md — Fetched and saved full article "Hello, Cosmos: the platform for AI-native engineering teams" from augmentcode.com blog. Published 2026-06-03 by Chris Kelly (Product Lead, Cosmos).
