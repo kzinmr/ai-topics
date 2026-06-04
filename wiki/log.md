@@ -6093,3 +6093,10 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - 2026-06-03: Added raw article `raw/articles/2026-05-31_lukhuang_frontier-asynchronous-rl-solved.md`.
 - 2026-06-03: Added tags to SCHEMA.md: async-rl, importance-sampling, policy-lag, off-policy, self-distillation.
 - 2026-06-03: Updated index.md — added 2 entries (1 entity, 1 concept), bumped counts.
+
+## 2026-06-04 Cheat at Search Lesson 7 Transcript — Coding Agents and Auto Research
+
+- **Source:** Doug Turnbull Cheat at Search Maven course, Lesson 7 lecture transcript (Jun 4, 2026)
+- **New transcript:** [[raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture]]
+- **Topics covered:** Recursive Language Models (RLMs) as Python REPL state management, auto-research for search ranking code optimization, overfitting guardrails (LLM-based detection, patch size limits, training/validation split), agent-coded reranker iteration
+- **Cross-references added:** [[entities/doug-turnbull]], [[concepts/rlm-recursive-language-models]], [[concepts/karpathy-loop]], [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms]]

@@ -7,6 +7,7 @@ date_ingested: 2026-06-04
 type: slides
 series: "Cheat at Search"
 lesson: 6
+related_transcript: raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
 ---
 
 # Agents that code their own search

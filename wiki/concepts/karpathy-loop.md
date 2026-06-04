@@ -15,7 +15,8 @@ source:
   - https://www.youtube.com/watch?v=kwSVtQ7dziU
   - https://softmaxdata.com/blog/autoresearch/
   - https://rywalker.com/research/autoresearch
-sources: []
+sources:
+  - raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
 ---
 
 # The Karpathy Loop — Autonomous Experiment Design

@@ -12,6 +12,7 @@ sources:
   - https://github.com/alexzhang13/rlm
   - raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not.md
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md
+  - raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
 ---
 
 # RLM (Recursive Language Models)
