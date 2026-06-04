@@ -1,3 +1,9 @@
+## 2026-06-04 dreaming-wiki-ingest | Fireworks AI × Harvey LAB + Cohere co/plot
+
+- **Upstream:** Dreaming-group (JSON parse failed), recovered triage from `~/.hermes/cron/data/dreaming/triage_latest.json`. 25 articles: 1 take, 1 reference, 23 skips.
+- **Take (★★★★★):** `concepts/legal-agent-benchmark.md` — Fireworks AI × Harvey joint results (June 2026). Added hybrid harness results (GLM 5.1 + Opus 4.7 advisor: 18/100 all-pass at $368 vs Opus 14/100 at $954), SFT/RFT on Kimi K2.6, cost-vs-quality analysis. `entities/fireworks-ai.md` — Added LAB Benchmark Joint Research section with harness and post-training metrics. New source added to both pages.
+- **Reference (★★★☆☆):** `entities/cohere.md` — Added co/plot research visualization tool section (Tiny Aya 70+ languages, open-source release).
+- **Skipped (23):** Enterprise marketing content (Harvey blog posts, ElevenLabs customer stories, Hex content marketing, Pinecone promo), already-captured items (Glean Snowflake, Hex in Codex, Pinecone AskData, Harvey CourtListener), thin content (Factory Router 26 lines)
 ## 2026-06-04 wiki-ingest | OpenAI ChatGPT Dreaming Memory System
 
 - **Source**: https://openai.com/index/chatgpt-memory-dreaming/

@@ -118,9 +118,22 @@ The guide reinforces Cohere's North platform positioning: "North helps organizat
 
 [[concepts/mcp]] | [[concepts/agent-tooling]] | [[concepts/enterprise-ai]]
 
+## co/plot: Research Visualization Tool (June 2026)
+
+Cohere Labs built co/plot, a research visualization prototyping tool. It addresses Matplotlib's slow iteration cycle and Figma's inability to faithfully render data.
+
+- **Validated during Tiny Aya model development**: used for 70+ language evaluation visualizations
+- **Design philosophy**: "The process of making the plot matters as much as the plot itself"
+- **Open-source release**: published for the research community
+- **Author**: Thomas Euyang (Research Visual Storyteller, Cohere Labs)
+
+[[concepts/open-science]] | [[concepts/data-visualization]]
+
 ## Related
 
 - [[entities/openai]] — competitor in enterprise LLM APIs
 - [[entities/anthropic]] — competitor in enterprise-safe AI deployment
 - [[entities/voyage-ai]] — competitor in embedding/rerank models
 - [[entities/glean]] — complementary enterprise AI; Cohere provides models, Glean provides the search layer
+- [[entities/fireworks-ai]] — open-weight inference platform; Fireworks ran LAB post-training experiments
+- [[concepts/legal-agent-benchmark]] — Harvey LAB; Fireworks used Kimi K2.6 post-training (Cohere connection via shared ecosystem)

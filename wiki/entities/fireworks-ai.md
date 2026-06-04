@@ -142,9 +142,28 @@ Fireworks emphasizes **MIT-licensed open-weight models** (DeepSeek V4-Pro, V4-Fl
 - [[concepts/reinforcement-fine-tuning]] — RFT methodology detailed
 - [[concepts/fine-tuning]] — Broader fine-tuning landscape
 - [[concepts/speculative-decoding]] — Inference acceleration via draft models
+- [[concepts/legal-agent-benchmark]] — Harvey LAB benchmark joint research partner (June 2026)
+- [[concepts/harness-engineering]] — GLM 5.1 + Opus 4.7 advisor hybrid harness pattern
+
+## LAB Benchmark Joint Research (June 2026)
+
+Fireworks AI is a research partner of [[entities/harvey|Harvey]]'s Legal Agent Benchmark (LAB). In June 2026, Fireworks published joint results demonstrating two approaches to close the open-vs-closed performance gap:
+
+**Hybrid Harness** (GLM 5.1 worker + Claude Opus 4.7 advisor):
+- 18/100 all-pass at $368 vs Opus 4.7's 14/100 at $954
+- "Frontier model as callable tool, not dependency" pattern
+- Advisor invoked 0.83x/task average (sparse-but-targeted)
+
+**Post-training** (Kimi K2.6 on Fireworks):
+- SFT: 11→15/100 all-pass, mean 0.863→0.876
+- RFT: 46 rollout steps, mean 0.863→0.886
+- Bit-for-bit handoff from training to serving endpoint
+
+This positions Fireworks as more than an inference provider — the platform enables the full loop from fine-tuning → evaluation → production serving on the same infrastructure.
 
 ## Sources
 
+- [Open Source Agents Frontier Advisors](https://fireworks.ai/blog/open-source-agents-frontier-advisors) — Fireworks AI × Harvey, June 2026
 - [Software Engineering Daily, Episode 1919: Fireworks AI](https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/) — April 28, 2026
 - [Fireworks AI Platform](https://fireworks.ai)
 - [Fireworks AI Series C Announcement](https://fireworks.ai/blog/series-c)

@@ -128,7 +128,44 @@ This section informs graph queries: authored by [[entities/harvey]], relates to 
 - [[concepts/swe-bench]] — Leading coding agent benchmark (contrasting domain)
 - [[concepts/agent-observability]] — Observing agent behavior and traces
 
+## Fireworks AI × Harvey Joint Results (June 2026)
+
+Fireworks AI and Harvey jointly published June 2026 results on a 100-task slice of LAB, demonstrating two approaches to close the open-vs-closed performance gap.
+
+### Hybrid Harness: Open-Source Worker + Frontier Advisor
+
+A hybrid harness was built with GLM 5.1 as the worker and Claude Opus 4.7 as a callable advisor. The worker self-triggers the advisor on hard sub-tasks — a "frontier model as callable tool, not dependency" pattern.
+
+| Configuration | All-Pass / 100 | Total Cost (100 tasks) |
+|---|---|---|
+| Claude Opus 4.7 (end-to-end) | 14 | $954 |
+| GLM 5.1 (worker only) | 12 | $121 |
+| GLM 5.1 + Opus 4.7 advisor | **18** | **$368** |
+| Kimi K2.6 base | 11 | $75 |
+| Kimi K2.6 + SFT | 15 | $84 |
+
+- Advisor invoked 0.83x/task average (sparse-but-targeted use)
+- vs Opus 4.7 alone: **+4 tasks all-pass, -$586**
+- vs GLM 5.1 alone: **+6 tasks all-pass, +$246**
+
+### Post-Training (SFT + RFT on Kimi K2.6)
+
+**Supervised Fine-Tuning (SFT)**: LAB-passing trajectories used directly for SFT. No reward model needed.
+- All-pass: 11 → 15 / 100 (+4 tasks)
+- Mean score: 0.863 → 0.876
+
+**Reinforcement Fine-Tuning (RFT)**: LAB evaluator used directly with per-criterion rewards.
+- 46 rollout steps, mean score 0.863 → 0.886
+- Jump from 0.864 to 0.882 between steps 43–44 (surpasses SFT checkpoint 0.876)
+
+### Cost vs Quality Implications
+
+- GLM 5.1: 0.8921 mean score at **$121** (1/8 of Opus 4.7's $954 for 0.911 mean)
+- GPT-5.5: 0.892 mean score at **$560**
+- Paradigm shift: from "use the smartest model on every query" to "use frontier quality only where it changes the answer, controlled open-source for the rest"
+
 ## Sources
 - [Initial Results on Legal Agent Benchmark](https://x.com/i/article/2059284537503285248) — Harvey AI, May 2026
 - [Introducing Harvey's Legal Agent Benchmark](https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark)
 - [Harvey Labs GitHub](https://github.com/harveyai/harvey-labs)
+- [Open Source Agents Frontier Advisors](https://fireworks.ai/blog/open-source-agents-frontier-advisors) — Fireworks AI × Harvey, June 2026
