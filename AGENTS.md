@@ -22,7 +22,7 @@
 ~/ai-topics/
 ├── AGENTS.md                        ← このファイル
 ├── wiki/                            ← 知識ベース本体（3層アーキテクチャ）
-│   ├── SCHEMA.md                    ← Wiki規約・タグ分類学・ページ閾値
+│   ├── SCHEMA.md                    ← Wiki規約・タグタクソノミー・ページ閾値
 │   ├── index.md                     ← 全Wikiページのインデックス（section別・アルファベット順）
 │   ├── log.md                       ← 全Wiki操作の時系列ログ（append-only）
 │   ├── raw/                         ← Layer 1: 不変のソース素材
@@ -43,7 +43,7 @@
 ├── scripts/                         ← 自動化スクリプト（28個）
 ├── .githooks/                       ← Git pre-commit hooks
 │   ├── pre-commit                   ← index.md validate + tag validation を実行
-│   └── pre-commit-tag-validator.py  ← タグ分類学違反ブロッカー
+│   └── pre-commit-tag-validator.py  ← タグタクソノミー違反ブロッカー
 └── inbox/                           ← ニュースレターダイジェスト保存先
 ```
 
@@ -59,7 +59,7 @@
 
 ### 重要規約
 - **全WikiページにYAML frontmatter必須**: `title`, `created`, `updated`, `type`, `tags`, `sources`
-- **タグは必ず `SCHEMA.md` の分類学から**: 新規タグは必ずSCHEMA.mdに追加してから使用
+- **タグは必ず `SCHEMA.md` のタクソノミーから**: 新規タグは必ずSCHEMA.mdに追加してから使用
 - **最低2つの外部wikilink**: 新規ページは最低2つの他ページへリンク
 - **index.md 即時更新**: ページ作成・更新後は必ずindex.mdに反映
 - **log.md 即時追記**: 全操作をappend-onlyで記録
@@ -235,13 +235,13 @@ cd ~/ai-topics && git config core.hooksPath .githooks
 2つのバリデーターがコミットをブロックする可能性あり:
 
 1. **`validate_index.py`**: `wiki/index.md` の構造的破損を検出 — baked-in line numbers, `|-` corruption, `[[[` triple brackets, truncation artifacts
-2. **`pre-commit-tag-validator.py`**: 全ステージングWikiページのタグが `SCHEMA.md` 分類学に従っているか検証
+2. **`pre-commit-tag-validator.py`**: 全ステージングWikiページのタグが `SCHEMA.md` タクソノミーに従っているか検証
 
 ### ブロックされた場合の対応
 
 - **タグ違反**: `SCHEMA.md` に正規タグを追加 → `git add wiki/SCHEMA.md` → 再コミット
 - **Index破損**: `wiki-graph-health` スキルの修復手順を参照
-- **`--no-verify` は最終手段**: タグ分類学に追加できない残存ノイズのみ許容
+- **`--no-verify` は最終手段**: タグタクソノミーに追加できない残存ノイズのみ許容
 
 ### コミットメッセージ規約
 
@@ -290,7 +290,7 @@ cd ~/ai-topics && git pull --rebase && git add wiki/ && git commit -m 'wiki: <su
 - **patch の old_string に `read_file` 出力を使わない**: `sed -n 'N,Np'` か `head -N` で生の内容を確認する
 
 ### タグ
-- **タグ分類学（SCHEMA.md Tag Taxonomy）を最初に読む**
+- **タグタクソノミー（SCHEMA.md Tag Taxonomy）を最初に読む**
 - **新規タグは必ずSCHEMA.mdに追加してから使用**
 - **複合kebab-caseタグ（5語以上）は常にエラー**: 分解して個別タグに
 - **Pre-commit hookは全ステージングファイルを検査する**: 自分が変更したページ以外の違反も修正する
