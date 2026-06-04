@@ -495,7 +495,7 @@
 - [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
-- [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
+- [[entities/pratik-bhavsar]] — AI Engineer & DevRel at Galileo. Agent Leaderboard, Hallucination Index, Eval Engineer, "Mastering GenAI" series, Maxpool community.
 - [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
 - [[entities/project-glasswing]] — Project Glasswing — Anthropic cybersecurity initiative. 1,752 vulnerabilities assessed (90.6% true-positive rate), on track for 3,900+ high/critical vulns in open-source. Claude Security in public beta.
 - [[entities/promptfoo]] — Promptfoo — Open-source LLM eval & red-teaming framework by Ian Webster & Michael D'Angelo. 19.6K GitHub stars, 302.7K weekly npm downloads, 156 Fortune 500 customers. Acquired by OpenAI (2026, remains MIT). Evaluations + red teaming + code scanning + MCP support.

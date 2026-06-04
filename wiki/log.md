@@ -1,3 +1,11 @@
+## 2026-06-05 skeleton-enrichment | Pratik Bhavsar (@ptkbhv)
+
+- **Operation:** Restored rich version from git history (commit cea105b8, 202 lines) -- current file was corrupted with single characters per line from a bad scrape. Removed status: skeleton.
+- **New article added:** Continual Learning Without Evals Is Just Drift (Apr 2026) -- Pratik critiques Harrison Chase's three-layer continual learning framework, arguing that evaluated traces (not raw traces) are the primitive for reliable agent learning. Six-step cycle: Observe, Evaluate, Diagnose, Intervene, Verify, Repeat. Runtime guardrails as learning infrastructure.
+- **Raw article saved:** wiki/raw/articles/2026-04-08_pratik-bhavsar-continual-learning-without-evals.md
+- **Frontmatter updated:** Added continual-learning tag, new source, updated date to 2026-06-05
+- **index.md updated:** Replaced metadata-dump description with meaningful summary
+
 ## 2026-06-04 dreaming-wiki-ingest | Fireworks AI × Harvey LAB + Cohere co/plot
 
 - **Upstream:** Dreaming-group (JSON parse failed), recovered triage from `~/.hermes/cron/data/dreaming/triage_latest.json`. 25 articles: 1 take, 1 reference, 23 skips.
