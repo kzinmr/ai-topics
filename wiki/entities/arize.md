@@ -6,7 +6,7 @@ tags:
   - infrastructure
   - open-source
 created: 2026-04-20
-updated: 2026-05-02
+updated: 2026-06-04
 type: entity
 sources:
   - https://arize.com/
@@ -14,6 +14,7 @@ sources:
   - https://github.com/Arize-ai/phoenix
   - https://arize.com/author/jason-lopatecki/
   - https://www.prnewswire.com/news-releases/arize-ai-secures-70m-series-c-to-fix-ais-biggest-problem-making-llms-and-ai-agents-work-in-the-real-world-302381601.html
+  - "[[raw/articles/2026-06-03_arize_postgresfs-vs-skills]]"
 ---
 
 # Arize AI
@@ -97,6 +98,42 @@ Built on **OpenTelemetry** (open standard) and powered by **OpenInference** (Ari
 ```
 
 Framework agnostic — treats all integrations equally, enabling swap of approaches at any point.
+
+## PostgresFS Experiment — Agent Filesystem Abstraction vs Skills (June 2026)
+
+Arize conducted a controlled experiment testing whether wrapping databases as filesystems (the "ChromaFS pattern") beats giving agents a real query language plus a real shell. The experiment pitted **PostgresFS** (a filesystem emulation over Postgres with `ls`, `cat`, `grep` resolving to SQL) against a **skill-based approach** (a single SQL→local-file script + real Bash).
+
+### Method
+
+- **Agents**: Claude Sonnet 4.6 (agent), Claude Opus 4.7 (judge), running in Claude Agent SDK
+- **Database**: Frozen snapshot of Arize AX docs in Postgres
+- **Questions**: 10 questions across 3 tiers (simple, mid/complex with aggregation, synthesis/high locality pressure)
+- **10 runs each per approach**, median reported
+
+### Results
+
+| Metric | PostgresFS | Skill | Winner |
+|--------|-----------|-------|--------|
+| **Overall accuracy** | 93/100 | 99/100 | Skill |
+| **Simple tier** | 100% | 100% | Tie |
+| **Mid tier** | 6/10 (q7), 7/10 (q4) | 9-10/10 | Skill |
+| **Latency** | Wins on low-read-count | Wins on high-read-count | Even |
+
+### Why the Skill Won
+
+Two properties, both from the same root cause — whether the agent works from a **local copy** of data or reaches back through the abstraction on every read:
+
+1. **Locality collapse** — Every doc read through PostgresFS is a database round-trip. `grep -rl` followed by `cat` becomes N+1 queries. The skill pays one round-trip (SQL query → local file), then everything after is local.
+
+2. **Composability capped at one pass** — PostgresFS is read-only (no `/tmp`, no staging). Two-input operators (`comm`, `join`, `diff`) are dead even though present on the allowlist. The skill materializes once and reuses freely.
+
+### Key Takeaways
+
+- **Maintenance cost settles it**: With performance a tie, what matters is what you own. PostgresFS is a large custom layer (adapter, coarse-filter, cache, regex translator) that must track schema changes. The skill is a prompt and a small script.
+- **Generalizes past SQL**: The same decision applies to Chroma, Mongo, BigQuery, ClickHouse — "wrap the store as a filesystem" vs "give the model the store's real query language plus a real shell." Every time you fake a filesystem, you sign up to maintain one.
+- **Pattern connections**: Validates the broader [[concepts/agent-filesystem-abstraction]] pattern that Mintlify's ChromaFS pioneered and Vercel's Bash tool supports.
+
+Source: [[raw/articles/2026-06-03_arize_postgresfs-vs-skills]]
 
 ## Why Agent Observability Is Different from APM
 

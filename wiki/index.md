@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-04 | Total pages: 2250 | Indexed entries: 1719 | Concepts: 1460 | Entities: 753
+> Last updated: 2026-06-04 | Total pages: 2251 | Indexed entries: 1720 | Concepts: 1461 | Entities: 753
 
 ## Entities (753 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -811,6 +811,7 @@
 - [[concepts/agent-evaluation-methodology]] — Agent Evaluation Methodology — Floor raising vs benchmark maxxing framework by Ben Hylak (Raindrop). Practical guide: golden cases, code-aware evals, scale-based production monitoring (Stumbles→Issues→Signals→Experiments), and the full eval lifecycle from pre-ship to continuous improvement.
 - [[concepts/agent-execution-tax]] — Agent Execution Tax: Fireworks AI concept. Structured output reliability bottleneck discovered from 720 browser agent runs. Kimi K2.5 0.0% vs Gemini 22.9% execution tax. Reliability-Adjusted Accuracy and Cost Per Successful Task.
 - [[concepts/agent-executor]] — Agent Executor — Google's open-source distributed agent runtime. Durable execution, secure sandbox isolation, trajectory branching, connection recovery. May 2026.
+- [[concepts/agent-filesystem-abstraction]] — Agent Filesystem Abstraction — Design pattern where databases/vector stores are wrapped as virtual filesystems (ls, cat, grep) for AI agents. Pioneered by Mintlify's ChromaFS. Arize experiment (June 2026): skill-based SQL+real Bash (99/100) beats PostgresFS (93/100) on accuracy, with zero maintenance overhead.
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design — Structuring repositories and codebases for maximum AI agent comprehension and effectiveness
 - [[concepts/agent-first-design]] — Agent-First Design — Programming languages designed for AI agents as first-class users. Ronacher's framework + Vercel Zero implementation.
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...

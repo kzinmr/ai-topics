@@ -1,6 +1,21 @@
 ## 2026-06-05 skeleton-enrichment | Pratik Bhavsar (@ptkbhv)
 
 - **Operation:** Restored rich version from git history (commit cea105b8, 202 lines) -- current file was corrupted with single characters per line from a bad scrape. Removed status: skeleton.
+## 2026-06-04 X bookmarks ingest — Claude Code feedback loops + Solo AI Agency + Token Yield + PostgresFS
+
+**Sources:** 4 X Article bookmarks ingested (2026-06-03). All had full plain_text content via xurl bookmark fetch.
+
+**Bookmark 1 — Claude Code feedback loops (Anthropic):** Added "Self-Verification & Feedback Loops" section to [[entities/claude-code]]. Documented two-layer verification architecture (agentic loop + pre-merge second-agent review), skill composition pattern (/simplify + /verify + design check + PR + CI watch), frontend-verify example. Enriched [[concepts/claude-code-skills]] Composing Skills section with production team workflow example.
+
+**Bookmark 2 — Solo AI Agency / Kimi 2.6 (anonymous):** Case study of $40k MRR agency running entirely on Kimi 2.6 at ~$240/month inference. Added "Production Economics" section to [[entities/kimi]] covering economics, 3-tier model stack, Agent Swarm in production. Enriched [[concepts/model-routing]] with solo agency routing pattern (cost-of-failure heuristic). Added "Solo AI Agency Economics" to [[concepts/token-economics]].
+
+**Bookmark 3 — Token Yield (Glean):** Glean frames token yield as an architecture problem with 4 levers: context quality, model routing, continual learning, harness design. Added "Token Yield" framework section to [[concepts/token-economics]] with Glean MCP benchmark (2.5x preference, 43k vs 83k tokens). Enriched [[entities/glean]] with Token Yield Framework section.
+
+**Bookmark 4 — PostgresFS vs Skills (Arize + @SufjanFana):** Controlled experiment: Claude Sonnet 4.6 agent with PostgresFS (93/100) vs skill-based SQL+real Bash (99/100). Added experiment section to [[entities/arize]]. **Created [[concepts/agent-filesystem-abstraction]]** — new concept page covering the ChromaFS pattern, empirical comparison, maintenance tradeoff, and when-to-use guide.
+
+**Raw articles:** 4 saved to wiki/raw/articles/
+**Index:** Total pages 2250→2251, Concepts 1460→1461
+
 - **New article added:** Continual Learning Without Evals Is Just Drift (Apr 2026) -- Pratik critiques Harrison Chase's three-layer continual learning framework, arguing that evaluated traces (not raw traces) are the primitive for reliable agent learning. Six-step cycle: Observe, Evaluate, Diagnose, Intervene, Verify, Repeat. Runtime guardrails as learning infrastructure.
 - **Raw article saved:** wiki/raw/articles/2026-04-08_pratik-bhavsar-continual-learning-without-evals.md
 - **Frontmatter updated:** Added continual-learning tag, new source, updated date to 2026-06-05

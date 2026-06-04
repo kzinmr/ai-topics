@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-06-03
+updated: 2026-06-04
 tags:
   - company
   - search
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-05-21_glean_health-agents-2026.md
   - raw/articles/2026-06-02_glean_generative-ai-stack-for-software-engineers.md
   - raw/articles/2026-06-03_glean_query-snowflake-data-in-glean-assistant.md
+  - "[[raw/articles/2026-06-03_glean_token-yield-architecture]]"
 ---
 
 # Glean
@@ -58,6 +59,19 @@ The benchmark demonstrates that **context layer quality** (centralized indexing 
 
 
 Glean's platform is built on four pillars: Enterprise Context (connectors + knowledge graph), Glean Search (cross-app search), Glean Assistant (personalized AI copilot), and Glean Agents (autonomous task automation). The platform enforces agent behavior at runtime for reliability, and provides an open agent architecture for enterprise extensibility.
+
+### Token Yield Framework (June 2026)
+
+Glean published a thought leadership piece framing enterprise AI economics around **token yield** — useful outcome per token consumed. The core argument: rising token consumption without proportional business value is an architecture problem, not a model problem. Four architectural levers determine token efficiency:
+
+1. **Context quality** — Centralized indexing cuts token waste by eliminating noisy retrieval and redundant tool calls
+2. **Model routing** — Right-sizing model intelligence per step; not every step needs frontier reasoning
+3. **Continual learning** — Systems should learn from prior execution to avoid paying the same exploratory cost repeatedly
+4. **Harness design** — Context should be managed (scoped, distributed, externalized) rather than accumulated
+
+The article reframes the competitive landscape: "The real AI moat is execution efficiency" — not model access, but architecture that extracts more useful work per token.
+
+Source: [[raw/articles/2026-06-03_glean_token-yield-architecture]]
 
 ## AI Stack Architecture (June 2026)
 

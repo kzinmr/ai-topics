@@ -1,7 +1,7 @@
 ---
 title: Model Routing — Per-Turn Cost Optimization for AI Coding
 created: 2026-05-09
-updated: 2026-05-12
+updated: 2026-06-04
 tags:
   - inference
   - optimization
@@ -12,6 +12,7 @@ tags:
   - google
 sources:
   - https://x.com/i/article/2053183959341711361
+  - "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]"
 ---
 
 # Model Routing — Per-Turn Cost Optimization for AI Coding
@@ -37,6 +38,35 @@ Augment Code's **Prism** is the first production-grade per-turn model router for
 ## Why It Matters
 
 No single model wins every task within a session. Simple autocompletion doesn't need a frontier model; complex debugging might. Per-turn routing optimizes both cost and quality simultaneously, which fixed-model strategies cannot achieve.
+
+See full router config and benchmarks: [[concepts/ai-coding-cost-optimization]].
+
+## Solo Agency 3-Tier Routing (June 2026)
+
+A real-world production deployment of model routing from a solo AI agency operator running 14 clients at $40k MRR. The routing strategy pairs explicit decision rules with cost-of-failure economics:
+
+```yaml
+default: kimi-2.6
+
+routes:
+  production:     # coding, content, automations, debugging
+    model: kimi-2.6
+  high_stakes:    # architecture, security, genuinely novel problems
+    model: claude-opus-4-6
+  cleanup:        # lint, format, boilerplate
+    model: local-qwen
+```
+
+**Decision heuristic:** "If the cost of a wrong answer is more than 100x the model cost difference, use the expensive model." For 90% of production work (building, coding, content, automations), Kimi 2.6 delivers indistinguishable shipped quality at 6x lower cost. The remaining 10% — architecture decisions, security reviews, genuinely novel problems — routes to a premium model.
+
+**Economics:** ~$240/month on Kimi 2.6 for the bulk of delivery + ~$110/month on Opus for high-stakes work = ~$350 total AI inference for $40,000 in monthly revenue. Running the same load entirely on a frontier model would cost $1,500-$5,000+/month and hit rate limits.
+
+**Relationship to other routing approaches:**
+- **Augment Prism**: Automated per-turn routing with cache-awareness — the professional, managed equivalent
+- **Ronin config**: Static keyword-triggered routing with similar 3-tier pattern — the explicit, transparent equivalent
+- **Solo agency routing**: Cost-of-failure heuristic routing — the practical, economics-driven approach
+
+Source: [[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]
 
 ## Related Concepts
 

@@ -2,14 +2,14 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-06-01
+updated: 2026-06-04
 tags:
   - inference
   - optimization
   - economics
   - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md]
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]"]
 ---
 
 # Token Economics
@@ -137,6 +137,56 @@ The enterprise conversation is shifting from "cost per token" to **"cost per com
 - Internal labor is harder to benchmark: productivity gains show up as avoided hiring or diffuse capacity, not eliminated headcount
 - A claim requiring three retries, human correction, and a frontier model may be more expensive than the outsourced labor it was supposed to replace
 
+## Solo AI Agency Economics (June 2026)
+
+A real-world case study of token economics enabling a new business model — a solo operator running a $40k MRR AI automation agency with zero employees. The entire delivery engine runs on AI inference at ~$350/month.
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **Monthly revenue** | $40,000 | 14 clients across 3 retainers |
+| **Kimi 2.6 inference** | ~$240/month | 90% of all production work |
+| **Premium model (Opus)** | ~$110/month | 10% high-stakes work |
+| **Total AI inference** | ~$350/month | Replaces 3-5 person team |
+| **Infrastructure + SaaS** | ~$400/month | Hosting, platform, CRM |
+| **Effective margin** | >90% | ~$39k take-home on $40k revenue |
+
+**Key insight:** The cost of delivering the work fell through the floor while the value clients pay stayed exactly the same. The same production load on a frontier model would cost $1,500-$5,000+/month and hit rate limits — collapsing the business model. The margin exists because the delivery runs on an economics-appropriate model (Kimi 2.6 at $0.50/$2 per million), not because of clever pricing.
+
+**Implications:** This validates the token economics thesis at the extreme — when inference is cheap enough, headcount stops being leverage and becomes a liability. The agency with 20 employees isn't more powerful than the solo operator with a sharp system; it's slower, heavier, and running on a fraction of the margin.
+
+Source: [[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]
+
+## Token Yield — An Architecture Problem (Glean, June 2026)
+
+A reframing of token economics from Glean: enterprises need a better metric than raw token usage. The right question is not how many tokens a system consumes, but what useful outcome the system produces per token consumed — **token yield**.
+
+### Problem Scope
+
+Enterprise AI token spend is scaling quickly (Deloitte: average 36% of digital initiative budgets to AI; Ramp: 4x YoY increase; Uber burned through its entire 2026 AI coding budget in 4 months), but business value is not rising at the same rate. Token yield is fundamentally an **architecture** question, not just a model question — because token usage is shaped by the full system around the model: how context is retrieved, how tools are exposed, how work is decomposed, how models are routed, and how prior execution is reused.
+
+### Four Architectural Levers
+
+| # | Lever | Problem | Solution |
+|---|-------|---------|----------|
+| 1 | **Context quality** | Noisy retrieval forces reasoning over irrelevant data → token bloat | Retrieve better, not more. Centralized indexes cut tokens ~50% vs off-the-shelf MCP tools (83k vs 43k tokens for same task) |
+| 2 | **Model routing** | Frontier model default for every step → paying premium for routine work | Right-size model per step. Operational work (search, planning, validation) doesn't need frontier reasoning |
+| 3 | **Continual learning** | Solving the same class of problem from scratch every time → repeated exploratory cost | Accumulate execution traces. Skip failed paths. Each completed task should improve the economics of the next related one |
+| 4 | **Harness design** | Naive harness keeps expanding context window → cost grows with workflow | Scope tools to current step. Distribute across specialized agents. Externalize intermediate state. Give each model only the working set it needs |
+
+### Glean vs Off-the-Shelf MCP Benchmark
+
+In a Claude Cowork-style task evaluation, Glean's centralized enterprise index was:
+- Preferred **2.5x** as often as off-the-shelf MCP tools
+- Off-the-shelf MCP tools consumed ~30% more tokens
+- When MCP tools won on correctness, they needed **83k tokens vs 43k** for Glean
+
+Poor context architecture forces the system to compensate with more tool calls, more reasoning loops, and more over-fetching — a hidden tax that compounds across every task.
+
+### Key Insight
+
+> "The real AI moat is execution efficiency." The agencies/enterprises that win won't be those with the best models — they'll be those that extract the most useful work per token through superior architecture.
+
+Source: [[raw/articles/2026-06-03_glean_token-yield-architecture]]
 
 ## Hidden Self-Hosting Costs
 

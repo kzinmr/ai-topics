@@ -2,7 +2,7 @@
 title: Claude Code
 type: entity
 created: 2026-04-24
-updated: 2026-05-29
+updated: 2026-06-04
 tags:
   - product
   - coding-agent
@@ -25,6 +25,7 @@ sources:
   - "[[raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions]]"
   - "[[raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents]]"
   - raw/newsletters/2026-05-28-i-signed-up-for-another-saas.md
+  - "[[raw/articles/2026-06-03_anthropic_claude-code-feedback-loops]]"
 ---
 
 # Claude Code
@@ -225,6 +226,37 @@ Claude Code introduced a real-time security checking plugin that monitors code a
 
 The plugin operates during Claude Code's code generation, catching common risk patterns before they reach version control. It represents a shift from post-commit security scanning to **pre-commit, real-time security feedback** integrated into the agent's code generation loop.
 
+## Self-Verification & Feedback Loops (June 2026)
+
+Claude Code's approach to autonomous task completion relies on two layers of verification that reduce the need for human babysitting:
+
+### Two-Layer Verification Architecture
+
+| Layer | When | Who | What |
+|-------|------|-----|------|
+| **Layer 1: Agentic Loop** | During building | Claude (self) | Type errors, lint errors, failing tests, runtime errors, browser verification |
+| **Layer 2: Review Gate** | Before merge | Second agent (fresh context) | Unbiased code review, multi-angle diff analysis |
+
+**Layer 1 — In-loop verification:** Claude already self-verifies against deterministic signals (type errors, lint errors, failing tests, runtime errors). The key insight is that manual checks — running the dev server, opening a browser, checking for layout shift, clicking through user flows — can be encoded as reusable skills. The more of those checks you encode, the closer Claude's first response gets to the final result.
+
+**Layer 2 — Pre-merge review by a second agent:** A fresh agent with no bias from the coding conversation reviews the diff before merge. Options range from built-in `/review` (single-pass terminal review), to `/code-review` plugin (parallel subagents reviewing from different angles), to managed Claude Code Review (automatic on every PR for Team/Enterprise plans).
+
+### Skill Composition: Bundling Skills into Workflows
+
+The Claude Code team bundles multiple skills into a single feature-development workflow:
+- `/simplify` — clean up the diff
+- Custom `/verify` — confirm end-to-end functionality
+- Design check — if UI was touched
+- Open and subscribe to a PR
+- Watch CI and auto-fix failures
+
+This pattern — skills that call other skills — enables Claude to verify and execute more work end-to-end without human intervention.
+
+### Frontend Verification Example
+
+A `frontend-verify` skill demonstrates the pattern: Step 1 runs a browser verification (embedded preview in desktop app, or Chrome DevTools MCP in CLI), Step 2 runs a mobile performance audit. Domain-specific skills can encode performance budgets, accessibility checklists, design system rules, and good/bad examples as measurable criteria.
+
+Source: [[raw/articles/2026-06-03_anthropic_claude-code-feedback-loops]]
 
 ## Prompt Caching Architecture (April 2026)
 

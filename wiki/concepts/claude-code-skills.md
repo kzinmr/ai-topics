@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Skills — Mechanism and Role Patterns"
 created: 2026-05-15
-updated: 2026-05-26
+updated: 2026-06-04
 type: concept
 tags:
   - claude-code
@@ -13,6 +13,7 @@ tags:
 sources:
   - raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md
   - https://x.com/trq212/status/2033949937936085378
+  - "[[raw/articles/2026-06-03_anthropic_claude-code-feedback-loops]]"
 related:
   - agent-skills
   - skill-architecture-patterns
@@ -294,6 +295,17 @@ Annoying when always-on, but occasionally extremely useful constraints:
 Native dependency management doesn't exist yet, but referencing other Skills by name lets the model call installed ones:
 - "CSV generation Skill" references "file upload Skill"
 - Model autonomously chains execution
+
+**Production example — Claude Code team workflow (June 2026):** The team bundles multiple skills into a single feature-development workflow that rolls all manual steps into one automated pipeline:
+- `/simplify` — clean up the diff
+- Custom `/verify` — confirm the change works end-to-end (browser verification, tests)
+- Design check — if the diff touched UI
+- Open and subscribe to a PR
+- Watch CI and auto-fix failures as they come in
+
+This pattern — skills that call other skills — is the fundamental mechanism for creating feedback loops that reduce human babysitting. The key insight: "If a process is clear, encode as much of it as possible as a skill." Domain-specific verification (frontend browser checks, mobile audits, performance budgets, accessibility checklists) becomes automatable when encoded as measurable criteria that Claude can evaluate against.
+
+Source: [[raw/articles/2026-06-03_anthropic_claude-code-feedback-loops]]
 
 ### Measuring Skills
 

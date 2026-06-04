@@ -10,9 +10,9 @@ tags:
   - china
   - open-source
 created: 2026-04-30
-updated: 2026-05-08
+updated: 2026-06-04
 type: entity
-sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md"]
+sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]"]
 ---
 
 # Moonshot AI / Kimi
@@ -170,6 +170,49 @@ K2.6 is the first LLM to integrate agent swarm capabilities natively into the tr
 - **Local GGUF** — community quantizations (Q4_X variants, ~8GB VRAM)
 
 ---
+
+## Production Economics — Solo Agency Case Study (June 2026)
+
+A documented real-world case of Kimi 2.6 as a production workhorse: a solo AI automation agency operator running 14 clients ($40k MRR) with a delivery engine built almost entirely on Kimi 2.6.
+
+### Economics
+
+| Metric | Value |
+|--------|-------|
+| **Monthly revenue** | $40,000 (14 clients across 3 tiers) |
+| **Kimi 2.6 inference cost** | ~$240/month (bulk of all delivery work) |
+| **Premium model cost** (10% high-stakes) | ~$110/month |
+| **Total AI inference** | ~$350/month |
+| **Total monthly opex** | ~$750/month (including infra, SaaS) |
+| **Effective margin** | >90% |
+| **Replaced headcount** | 3-5 junior/mid-level people ($25-30k/month saved) |
+
+The cost-per-quality story: shipped output from Kimi 2.6 is **indistinguishable** from models costing 6× more. The agency's automations pass the same tests, ship to the same clients, and hold up in production exactly like output from Sonnet-class models.
+
+### Model Stack (3-Tier Routing)
+
+```
+default: kimi-2.6 (90% of all work — building, coding, content, automations, debugging)
+high_stakes: claude-opus-4-6 (10% — architecture, security, novel problems)
+cleanup: local-qwen (formatting, boilerplate, stubs)
+```
+
+### Agent Swarm in Production
+
+The operator leverages K2.6's Agent Swarm for parallel delivery:
+- **Content batch**: 15-20 sub-agents draft in parallel → QA batch → final packaging
+- **Integration builds**: Auth layer, webhook wiring, tests, docs all run simultaneously
+- **Monitoring**: Sub-agents watch support queues, error logs, data pipelines concurrently
+
+Cost advantage: 300-agent Swarm runs that would cost triple-digit dollars on a frontier model come in **under $5** on K2.6 economics. Swarm runs have been documented going for 5 straight days handling incident response autonomously.
+
+### Key Insight
+
+> "Kimi 2.6 is my production team. Five people's worth of output for about $240 a month. That one line is the whole article."
+
+The operator's core thesis: when the production layer of a service business can run on a model for a couple hundred dollars a month instead of a team costing thirty thousand, headcount stops being leverage and becomes a liability.
+
+Source: [[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]
 
 ## Technical Innovations
 
