@@ -290,122 +290,162 @@ frontmatter必須 / タグはSCHEMAから / **リッチページ上書き禁止*
 
 <!-- _class: section -->
 
-# Part 2: Cron パイプライン——28ジョブの連携
+# Part 2: Cron パイプライン
+## 28ジョブを「構造」で捉える
 
 ---
 
-# 日次データ収集: 3パイプライン並列
+# cron に何を登録できるか — 3モード
 
-毎日 JST 16:00 頃に3つのパイプラインが並列走行。
+`hermes cron` は LLM だけでなく、script と skill も登録できる。
 
-```
-ブログ (16:00→16:30→16:50):
-  blog-ingest ──→ blog-triage ──→ blog-wiki-ingest
-  (RSS取得)      (分類・優先順位)   (Wiki生成・更新)
+| モード | 指定 | 挙動 |
+|---|---|---|
+| **LLM** | `prompt` | 自然言語タスクを agent が実行（既定） |
+| **script** | `no_agent` + `script` | **LLM を起こさず**実行、stdout をそのまま配信（決定的・安価） |
+| **skill** | `skills: [...]` | <strong style="color:#b45f06">レポジトリ管理🟧</strong>の skill を名前で呼び出し、context に注入 |
 
-ニュースレター (16:10→16:20→16:40):
-  newsletter-ingest ──→ newsletter-triage ──→ newsletter-wiki-ingest
-  (Gmail IMAP取得)     (内容分類)            (Wiki生成・更新)
-
-Sitemap監視 (15:00):
-  sitemap-monitor (企業ブログの新記事検出)
-```
-
-各パイプラインは **script → triage → ingest** の3段階。
-中間結果はJSONチェックポイントとして保存される。
+ジョブの大半は **prompt + script + skills のハイブリッド**。
+skill モードは Part 1 の `_overrides`/`_custom`（git管理）を**外部呼び出し** → <strong style="color:#2f7d6b">公式同梱skill🟩</strong>と棲み分け。
 
 ---
 
-# X/Twitter とアクティブクロール
+# cron × script: 決定的な実行/コンテキスト収集
+
+- script 事後処理ではなく **pre-run（事前実行）**
+
+```
+script 実行 → stdout を "## Script Output" として
+              agent の prompt に注入 → LLM が分析
+```
+
+- 必要な時だけ高価な LLM を起こす: 変更検知・差分収集を**決定的に安く**実行
+  - 動的: script の最終行が `{"wakeAgent": false}` なら **LLM をスキップ**
+  - 静的: `no_agent` なら script が全て（stdout を verbatim 配信、LLM 不在）
+
+> 例：`sitemap-monitor` / `pipeline-watchdog` は script 主導。新着・異常があるときだけ agent を起こす。
+
+---
+
+# cron × AGENTS.md — workdir でポリシーを一元管理
+
+cron ジョブに `workdir` を設定すると、**その配下の `AGENTS.md` が system prompt に自動注入**
 
 <div class="grid">
 <div class="box">
 
-### X/Twitter
-- **x-bookmarks-ingest** (1日2回)
-  自分のブックマークから記事を取り込む
-- **x-accounts-scan** (2日毎)
-  追跡対象アカウントの新規投稿をスキャン
-- `config/feeds/x-accounts.yaml` でアカウント管理
+### 仕組み
+- `workdir` → `TERMINAL_CWD`
+- agent 起動時に `AGENTS.md` / `CLAUDE.md` を
+  **workdir から**ロード
+- first-match-wins・トップレベルのみ
 
 </div>
 <div class="box">
 
-### アクティブクロール
-- **active-crawl** (毎日 JST 20:00)
-  `config/hot-topics.yaml` ベースの
-  プロアクティブ知識探索
-- **trending-topics** (毎日 JST 21:00)
-  トレンドリサーチ
-- **raw-backlog-ingest** (4時間毎)
-  未処理 raw 記事の段階的処理
-  (5記事/バッチ × 6回/日 = 30記事/日)
+### 効果
+- **作業ディレクトリ単位でポリシー一元管理**
+- ai-topics の運用規約：「全wiki書き込み系 cron は `workdir: /opt/data/ai-topics` 必須」
+- → wiki作業のグローバルポリシーが、全てのwiki系 cron セッションに届く
 
 </div>
 </div>
 
 ---
 
-# 夜間統合: Dreaming パイプライン
+# cron の進化 — read-only から自動適用へ
 
-JST 03:00 頃（未明）、日中に集めた知識を統合する。
+action の確定性が高いと判断されるに従い、**提案→手動** から **自動適用** へ。
 
 ```
-dreaming-collect (03:00)    ← 知識断片の収集
-  → dreaming-group (03:10)  ← テーマ別グループ化
-    → dreaming-wiki-ingest (03:20)  ← Wiki ページへの統合
+[read-only / 提案]                  [自動適用]
+wiki-health (paused)      ───►      wiki-health-fix (active)
+チェック＆修正提案→人間が反映        スキャン→自動修正→修正後レポート
 ```
 
-- 日中にバラバラに収集された記事・論文・投稿を
-  テーマごとに束ねる
-- 重複や矛盾を検出し、統合された Wiki ページを生成
-- 人間が翌朝見るときには、整理された知識ベースが待っている
+- 安全のため **read-only（提案のみ）から始める**
+- 提案の確度が高いと確認できたら、確定的な action を **自動適用へ昇格**
+- 最終ゲートは pre-commit（Part 1）— 自動適用でも決定的チェックが効く
+
+> 自動化の Ratchet：信頼できると分かった範囲だけ、人間の手を外す。
 
 ---
 
-# Wiki 健全性パイプライン
+# ジョブカタログ① — ingest（受動）/ crawl（能動）
 
 <div class="grid">
 <div class="box">
 
-### 日次 (毎日)
-- **wiki-watchdog-fix** (02:35 JST)
-  構造的問題をスキャン
-- **wiki-health-fix** (02:50 JST)
-  自動修正 + 修正後レポート
+### 📥 ingest（passive）— 来たものを取り込む
+- `blog-ingest → triage → wiki-ingest` (RSS x blogwatcher cli)
+- `newsletter-ingest → triage → wiki-ingest` (Substack由来)
+- `x-bookmarks-ingest` (手で追加した新着bookmarksを取得)
+<!-- - `raw-backlog-ingest`（5件×6回/日） -->
 
 </div>
 <div class="box">
 
-### 週次
-- **wiki-graph-analysis** (土 00:00 JST)
-  ページ間リンクのグラフ分析、重複検出
-- **tag-audit-weekly** (月 19:00 JST)
-  タグタクソノミーの監査
-- **check-skill-inventory** (月 01:00 JST)
-  スキルの棚卸し
+### 🔭 crawl（active）— 自分から取りに行く
+- `active-crawl`
+  （`hot-topics.yaml` ベースの
+  プロアクティブ知識探索）
+- `trending-topics`
+  （トレンドリサーチ）
+- `sitemap-monitor`（RSS非対応サイトの監視）
+- `x-accounts-scan` (`x-accounts.yaml`内アカウントの新着投稿)
 
 </div>
 </div>
 
-検出される問題: orphan pages, duplicate pages,
-broken wikilinks, stale pages, missing tags
+ingest=RSS/NL/Xの**受動収集**、crawl=ギャップを埋める**能動探索**。
+
+各段は script(pre-run)＋skill のハイブリッド。
+
+NOTE: X API は4月から従量課金に対応。月の最低利用料 $200 から $20 程度に
 
 ---
 
-# 配信パイプライン: 知識を届ける
+# ジョブカタログ② — lint（健全性）/ report（配信）
+
+<div class="grid">
+<div class="box">
+
+### 🩺 lint（health-check）
+- `wiki-health-fix`（スキャン→自動修正）
+- `wiki-watchdog-fix`（修正後の検証）
+- `wiki-graph-analysis`（重複・リンク）
+- `tag-audit-weekly` / `check-skill-inventory`
+- `pipeline-watchdog`（no_agent 監視）
+
+</div>
+<div class="box">
+
+### 📣 report（delivery）
+- `ai-topics-slack-hot-posts`
+- `ai-topics-discord-hot-posts`（relay）
+- `Weekly AI digest` → Telegram
+
+</div>
+</div>
+
+lint=知識ベースの**自己修復**、report=結果を**メッセンジャーへ配信**（ダッシュボードを開かせない）。
+
+---
+
+# アドバンスト: dreaming — コンテンツの横断統合
+
+夜間バッチ（JST 03:00 頃）で、その日の断片を**テーマ横断で統合**する。
 
 ```
-ai-topics-slack-hot-posts (1日3回: 09:30, 15:30, 21:30 JST)
-  → ai-topics-discord-hot-posts (15分後: 09:45, 15:45, 21:45 JST)
-    ↑ script: discord_slack_relay.py (no_agent relay)
-
-Weekly AI digest (毎週月曜 09:00 JST) → Telegram
+dreaming-collect → dreaming-group → dreaming-wiki-ingest
+  (断片収集)        (意味的グループ化)   (統合・相互参照・統廃合)
 ```
 
-- 注目記事を Slack / Discord に自動配信
-- 週次ダイジェストを Telegram に送信
-- **pipeline-watchdog** (6時間毎) で全体ヘルスを監視
+- **⚠️ Claude Code の dreaming とは別物**
+  - Claude Code: セッション横断で**作業改善**を提案
+  - ai-topics: **wiki コンテンツ**のクロスリファレンス・統廃合・横断分析
+- 重複や矛盾を検出し、点在する知識を結び直す
+- こうした**横断分析は夜間バッチが効く**（日中の対話を止めない）
 
 ---
 

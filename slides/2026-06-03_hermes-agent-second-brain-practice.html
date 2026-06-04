@@ -514,13 +514,182 @@ svg { display: block; width: 100%; height: auto; }
 <section class="slide slide--dark slide--divider" data-title="Part 2">
   <div class="slide-content" style="justify-content:center;">
     <div class="divider-num reveal">02</div>
-    <span class="kicker reveal" style="margin-top:.6rem;">Part 2 ・ Automation</span>
-    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">Cron パイプライン<br/>— 28ジョブの連携</h2>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 2 ・ Cron</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">Cron パイプライン<br/>— 28ジョブを「構造」で捉える</h2>
   </div>
 </section>
 
 <!-- =================================================================
-     SLIDE 10 — 24H CLOCK (hero diagram)
+     PART 2 — CRON: 3 MODES
+     ================================================================= -->
+<section class="slide" data-title="cronの3モード">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">3 Modes</span><span class="note">cron は LLM だけでなく script / skill も登録できる</span></div>
+    <h2 class="reveal">cron に何を登録できるか — 3モード</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 200" role="img" aria-label="cronの3モード">
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <rect class="pop" x="24" y="20" width="270" height="150" rx="12" fill="#10251c"/>
+          <text x="159" y="56" font-size="20" font-weight="700" fill="#fffaf0">LLM</text>
+          <text x="159" y="86" font-family="JetBrains Mono" font-size="14" fill="#d98b34">prompt</text>
+          <text x="159" y="120" font-size="13" fill="#d8e2da">自然言語タスクを</text><text x="159" y="140" font-size="13" fill="#d8e2da">agent が実行（既定）</text>
+          <rect class="pop" x="315" y="20" width="270" height="150" rx="12" fill="#fffdf7" stroke="#2f7d6b" stroke-width="2.4"/>
+          <text x="450" y="56" font-size="20" font-weight="700" fill="#2f7d6b">script</text>
+          <text x="450" y="86" font-family="JetBrains Mono" font-size="13" fill="#5d6c62">no_agent + script</text>
+          <text x="450" y="120" font-size="13" fill="#18241f">LLM を起こさず実行</text><text x="450" y="140" font-size="12" fill="#5d6c62">stdout を配信（決定的・安価）</text>
+          <rect class="pop" x="606" y="20" width="270" height="150" rx="12" fill="#fffdf7" stroke="#b45f06" stroke-width="2.4"/>
+          <text x="741" y="56" font-size="20" font-weight="700" fill="#b45f06">skill</text>
+          <text x="741" y="86" font-family="JetBrains Mono" font-size="13" fill="#5d6c62">skills: [...]</text>
+          <text x="741" y="120" font-size="13" fill="#18241f">git管理 skill を名前で</text><text x="741" y="140" font-size="12" fill="#5d6c62">呼び出し → context 注入</text>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">ジョブの大半は <strong>prompt + script + skills のハイブリッド</strong>。skill モードは <code>_overrides</code>/<code>_custom</code>（git）を外部呼び出し → <strong style="color:#2f7d6b">公式同梱skill🟩</strong>と棲み分け。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 2 — CRON × SCRIPT (pre-run + wake-gate)
+     ================================================================= -->
+<section class="slide" data-title="cron×script">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Pre-run ・ wake-gate</span><span class="note">script は<strong>事後</strong>ではなく<strong>事前</strong>に走る</span></div>
+    <h2 class="reveal">cron × script：決定的な実行 / コンテキスト収集</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 290" role="img" aria-label="scriptの事前実行とwake-gate">
+        <defs><marker id="cs" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="16" y="120" width="150" height="64" rx="11" fill="#fffdf7" stroke="#2f7d6b" stroke-width="2"/><text x="91" y="148" font-size="15" font-weight="700" fill="#18241f">script 実行</text><text x="91" y="170" font-size="12" fill="#5d6c62">pre-run（事前）</text></g>
+          <g class="pop"><rect x="206" y="110" width="200" height="84" rx="12" fill="#10251c"/><text x="306" y="138" font-family="JetBrains Mono" font-size="12" fill="#d98b34">wake-gate</text><text x="306" y="160" font-size="13" fill="#fffaf0">stdout 最終行が</text><text x="306" y="180" font-family="JetBrains Mono" font-size="12" fill="#fffaf0">{"wakeAgent": false}?</text></g>
+        </g>
+        <line x1="166" y1="152" x2="202" y2="152" stroke="#b45f06" stroke-width="2.6" marker-end="url(#cs)"/>
+        <!-- no -> inject -->
+        <path d="M406 132 H470" stroke="#2f7d6b" stroke-width="2.6" fill="none" marker-end="url(#cs)"/><text x="438" y="122" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="12" fill="#2f7d6b">no</text>
+        <g class="pop" font-family="Zen Kaku Gothic New" text-anchor="middle"><rect x="476" y="100" width="406" height="66" rx="11" fill="#eaf3ee" stroke="#2f7d6b" stroke-width="2"/><text x="679" y="128" font-size="14" fill="#18241f">「## Script Output」として prompt に注入</text><text x="679" y="150" font-size="13" fill="#2f7d6b" font-weight="700">→ LLM が分析</text></g>
+        <!-- yes -> skip -->
+        <path d="M306 194 V236 H470" stroke="#9aa79c" stroke-width="2.4" fill="none" marker-end="url(#cs)"/><text x="330" y="224" font-family="Zen Kaku Gothic New" font-size="12" fill="#b45f06">yes</text>
+        <g class="pop" font-family="Zen Kaku Gothic New" text-anchor="middle"><rect x="476" y="210" width="406" height="56" rx="11" fill="#fbe9dc" stroke="#b45f06" stroke-width="2"/><text x="679" y="244" font-size="14" fill="#b45f06" font-weight="700">LLM をスキップ（起動も配信もなし）</text></g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">必要な時だけ高価な LLM を起こす。<code>no_agent</code> なら script が全て（stdout を verbatim 配信、LLM 不在）。例：<code>sitemap-monitor</code> / <code>pipeline-watchdog</code>。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 2 — CRON × AGENTS.md (workdir)
+     ================================================================= -->
+<section class="slide" data-title="cron×AGENTS.md">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">workdir</span></div>
+    <h2 class="reveal">cron × AGENTS.md — workdir でポリシーを一元管理</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 240" role="img" aria-label="workdirからAGENTS.mdが自動注入される流れ">
+        <defs><marker id="wd" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="20" y="78" width="210" height="84" rx="12" fill="#fffdf7" stroke="#d9ccb0" stroke-width="2"/><text x="125" y="110" font-size="15" font-weight="700" fill="#18241f">cron ジョブ</text><text x="125" y="134" font-family="JetBrains Mono" font-size="12" fill="#b45f06">workdir=/opt/data/ai-topics</text></g>
+          <g class="pop"><rect x="345" y="86" width="180" height="68" rx="11" fill="#26372f"/><text x="435" y="116" font-family="JetBrains Mono" font-size="13" fill="#d98b34">TERMINAL_CWD</text><text x="435" y="138" font-size="12" fill="#d8e2da">に橋渡し</text></g>
+          <g class="pop"><rect x="640" y="78" width="240" height="84" rx="12" fill="#10251c"/><text x="760" y="108" font-size="15" font-weight="700" fill="#fffaf0">agent system prompt</text><text x="760" y="132" font-size="12" fill="#d8e2da">← AGENTS.md を workdir から</text><text x="760" y="150" font-size="11" fill="#a9c0b3">first-match-wins・トップレベル</text></g>
+        </g>
+        <line x1="230" y1="120" x2="341" y2="120" stroke="#b45f06" stroke-width="2.6" marker-end="url(#wd)"/>
+        <line x1="525" y1="120" x2="636" y2="120" stroke="#b45f06" stroke-width="2.6" marker-end="url(#wd)"/>
+        <text x="450" y="206" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="14" fill="#18241f">→ リッチページ上書き禁止・タグ検証などの<strong>グローバルポリシーが、全 wiki 系 cron に届く</strong></text>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">ai-topics の運用規約：<strong>全 wiki 書き込み系 cron は <code>workdir</code> 必須</strong>（未設定なら AGENTS.md は読まれない）。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 2 — CRON EVOLUTION (read-only → auto-apply)
+     ================================================================= -->
+<section class="slide" data-title="cronの進化">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Evolution</span></div>
+    <h2 class="reveal">cron の進化 — read-only から自動適用へ</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 230" role="img" aria-label="提案のみから自動適用への昇格">
+        <defs><marker id="ev" markerWidth="11" markerHeight="11" refX="7" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <g class="pop"><rect x="30" y="56" width="320" height="120" rx="13" fill="#fbfaf4" stroke="#9aa79c" stroke-width="2" stroke-dasharray="7 6"/>
+            <text x="190" y="86" font-family="JetBrains Mono" font-size="14" fill="#5d6c62">wiki-health（paused）</text>
+            <text x="190" y="116" font-size="15" font-weight="700" fill="#18241f">read-only / 提案のみ</text>
+            <text x="190" y="142" font-size="13" fill="#5d6c62">チェック＆修正提案 → 人間が反映</text></g>
+          <g class="pop"><rect x="550" y="56" width="320" height="120" rx="13" fill="#10251c" stroke="#b45f06" stroke-width="2.4"/>
+            <text x="710" y="86" font-family="JetBrains Mono" font-size="14" fill="#d98b34">wiki-health-fix（active）</text>
+            <text x="710" y="116" font-size="15" font-weight="700" fill="#fffaf0">自動適用</text>
+            <text x="710" y="142" font-size="13" fill="#d8e2da">スキャン → 自動修正 → 修正後検証</text></g>
+        </g>
+        <line x1="350" y1="116" x2="546" y2="116" stroke="#b45f06" stroke-width="3" marker-end="url(#ev)"/>
+        <text x="448" y="104" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="13" fill="#b45f06" font-weight="700">確度が高いと判断</text>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">安全のため <strong>read-only から始め</strong>、確定的な action だけ<strong>自動適用へ昇格</strong>。最終ゲートは pre-commit（Part 1）。<em>自動化の Ratchet</em>。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 2 — JOB CATALOG ① ingest / crawl
+     ================================================================= -->
+<section class="slide" data-title="カタログ① ingest/crawl">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Catalog ・ 1/2</span></div>
+    <h2 class="reveal">ジョブカタログ① — ingest（受動）/ crawl（能動）</h2>
+    <div class="two-col reveal" style="margin-top:.8rem;">
+      <div class="panel">
+        <span class="tag">// 📥 ingest（passive）— 来たものを取り込む</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li><code>blog-ingest → triage → wiki-ingest</code><span class="note">（RSS × blogwatcher cli）</span></li>
+          <li><code>newsletter-ingest → … → wiki-ingest</code><span class="note">（Substack 由来）</span></li>
+          <li><code>x-bookmarks-ingest</code><span class="note">（手で追加した新着 bkm を取得）</span></li>
+        </ul>
+      </div>
+      <div class="panel accent">
+        <span class="tag">// 🔭 crawl（active）— 自分から取りに行く</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li><code>active-crawl</code><span class="note">（hot-topics.yaml ベースの探索）</span></li>
+          <li><code>trending-topics</code><span class="note">（トレンドリサーチ）</span></li>
+          <li><code>sitemap-monitor</code><span class="note">（RSS 非対応サイトの監視）</span></li>
+          <li><code>x-accounts-scan</code><span class="note">（x-accounts.yaml の新着投稿）</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="reveal note" style="margin-top:.7rem; text-align:center;">各段は <strong>script(pre-run)＋skill</strong> のハイブリッド。X API は従量課金のため <code>x-accounts-scan</code> は約10アカウントに限定（日 &lt;$1）。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 2 — JOB CATALOG ② lint / report
+     ================================================================= -->
+<section class="slide" data-title="カタログ② lint/report">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Catalog ・ 2/2</span></div>
+    <h2 class="reveal">ジョブカタログ② — lint（健全性）/ report（配信）</h2>
+    <div class="two-col reveal" style="margin-top:.8rem;">
+      <div class="panel">
+        <span class="tag">// 🩺 lint（health-check）— 自己修復</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li><code>wiki-health-fix</code>（スキャン→自動修正）</li>
+          <li><code>wiki-watchdog-fix</code>（修正後の検証）</li>
+          <li><code>wiki-graph-analysis</code>（重複・リンク）</li>
+          <li><code>tag-audit-weekly</code> / <code>check-skill-inventory</code></li>
+          <li><code>pipeline-watchdog</code>（no_agent 監視）</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <span class="tag">// 📣 report（delivery）— 向こうから届く</span>
+        <ul class="bullets" style="margin-top:.2rem;">
+          <li><code>ai-topics-slack-hot-posts</code></li>
+          <li><code>ai-topics-discord-hot-posts</code>（relay）</li>
+          <li><code>Weekly AI digest</code> → Telegram</li>
+        </ul>
+        <p class="note" style="margin-top:.4rem;">結果はダッシュボードではなく、メッセンジャーへ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     SLIDE — 24H CLOCK (hero diagram, reused)
      ================================================================= -->
 <section class="slide" data-title="1日の流れ">
   <div class="slide-content">
@@ -564,61 +733,30 @@ svg { display: block; width: 100%; height: auto; }
 </section>
 
 <!-- =================================================================
-     SLIDE 11 — DAILY 3 PARALLEL PIPELINES
+     PART 2 — DREAMING (advanced: content cross-integration)
      ================================================================= -->
-<section class="slide" data-title="日次収集">
+<section class="slide" data-title="dreaming">
   <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">16:00 JST</span></div>
-    <h2 class="reveal">日次収集：3パイプライン並列</h2>
+    <div class="eyebrow-row reveal"><span class="kicker">Advanced ・ 夜間バッチ</span><span class="note">JST 03:00 頃</span></div>
+    <h2 class="reveal">アドバンスト: dreaming — コンテンツの横断統合</h2>
     <div class="stage reveal">
-      <svg class="diagram" viewBox="0 0 900 300" role="img" aria-label="日次3パイプライン">
-        <defs><marker id="ar4" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#b45f06"/></marker></defs>
-        <g font-family="JetBrains Mono" font-size="13.5">
-          <!-- blog -->
-          <text x="20" y="56" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">ブログ</text>
-          <g class="pop"><rect x="120" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="59" text-anchor="middle" fill="#18241f">ingest (16:00)</text></g>
-          <g class="pop"><rect x="380" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="59" text-anchor="middle" fill="#18241f">triage (16:30)</text></g>
-          <g class="pop"><rect x="640" y="34" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="59" text-anchor="middle" fill="#fffaf0">wiki-ingest (16:50)</text></g>
-          <line x1="320" y1="54" x2="376" y2="54" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/><line x1="580" y1="54" x2="636" y2="54" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/>
-          <!-- newsletter -->
-          <text x="20" y="146" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">NL</text>
-          <g class="pop"><rect x="120" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="149" text-anchor="middle" fill="#18241f">ingest (16:10)</text></g>
-          <g class="pop"><rect x="380" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="149" text-anchor="middle" fill="#18241f">triage (16:20)</text></g>
-          <g class="pop"><rect x="640" y="124" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="149" text-anchor="middle" fill="#fffaf0">wiki-ingest (16:40)</text></g>
-          <line x1="320" y1="144" x2="376" y2="144" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/><line x1="580" y1="144" x2="636" y2="144" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/>
-          <!-- sitemap -->
-          <text x="20" y="236" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">Sitemap</text>
-          <g class="pop"><rect x="120" y="214" width="460" height="40" rx="9" fill="#fffdf7" stroke="#2f7d6b" stroke-width="1.8"/><text x="350" y="239" text-anchor="middle" fill="#18241f">sitemap-monitor (15:00) — RSSに載らない記事も拾う</text></g>
+      <svg class="diagram" viewBox="0 0 900 250" role="img" aria-label="dreamingの横断統合とClaude Codeとの違い">
+        <defs><marker id="dr" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <g font-family="Zen Kaku Gothic New" text-anchor="middle">
+          <!-- flow -->
+          <g class="pop"><rect x="40" y="18" width="220" height="62" rx="11" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="150" y="46" font-family="JetBrains Mono" font-size="13" fill="#18241f">dreaming-collect</text><text x="150" y="67" font-size="12" fill="#5d6c62">断片収集</text></g>
+          <g class="pop"><rect x="340" y="18" width="220" height="62" rx="11" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.8"/><text x="450" y="46" font-family="JetBrains Mono" font-size="13" fill="#18241f">dreaming-group</text><text x="450" y="67" font-size="12" fill="#5d6c62">意味的グループ化</text></g>
+          <g class="pop"><rect x="640" y="18" width="220" height="62" rx="11" fill="#10251c"/><text x="750" y="44" font-family="JetBrains Mono" font-size="12.5" fill="#d98b34">dreaming-wiki-ingest</text><text x="750" y="66" font-size="12" fill="#d8e2da">統合・相互参照・統廃合</text></g>
+          <line x1="260" y1="49" x2="336" y2="49" stroke="#b45f06" stroke-width="2.6" marker-end="url(#dr)"/>
+          <line x1="560" y1="49" x2="636" y2="49" stroke="#b45f06" stroke-width="2.6" marker-end="url(#dr)"/>
+          <!-- contrast -->
+          <g class="pop"><rect x="40" y="124" width="368" height="108" rx="12" fill="#eef4f0" stroke="#9aa79c" stroke-width="2"/><text x="224" y="154" font-size="14" font-weight="700" fill="#5d6c62">Claude Code の dreaming</text><text x="224" y="184" font-size="13" fill="#18241f">セッション横断で</text><text x="224" y="206" font-size="13" fill="#18241f"><tspan font-weight="700">作業改善</tspan>を提案</text></g>
+          <text x="449" y="186" font-size="30" font-weight="800" fill="#b45f06" font-family="Bricolage Grotesque">≠</text>
+          <g class="pop"><rect x="492" y="124" width="368" height="108" rx="12" fill="#fbeedd" stroke="#b45f06" stroke-width="2"/><text x="676" y="154" font-size="14" font-weight="700" fill="#b45f06">ai-topics の dreaming</text><text x="676" y="184" font-size="13" fill="#18241f"><tspan font-weight="700">wiki コンテンツ</tspan>の</text><text x="676" y="206" font-size="13" fill="#18241f">クロスリファレンス・統廃合</text></g>
         </g>
       </svg>
     </div>
-    <p class="reveal note" style="text-align:center;">各パイプラインは <strong>script → triage → ingest</strong> の3段。中間結果は JSON チェックポイントで保存。</p>
-  </div>
-</section>
-
-<!-- =================================================================
-     SLIDE 12 — DREAMING + HEALTH + DELIVERY
-     ================================================================= -->
-<section class="slide" data-title="夜間統合と健全性">
-  <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">Night ・ Health ・ Delivery</span></div>
-    <h2 class="reveal">夜に束ね、整え、届ける</h2>
-    <div class="two-col reveal" style="margin-top:.8rem;">
-      <div class="panel">
-        <span class="tag">// Dreaming（03:00 JST・未明）</span>
-        <p style="font-family:var(--font-mono); font-size:var(--small-size); color:var(--ink);">collect&nbsp;→&nbsp;group&nbsp;→&nbsp;wiki-ingest</p>
-        <p class="note">日中バラバラに集めた記事・論文・投稿を<strong>テーマ別に束ね</strong>、重複・矛盾を検出して統合。翌朝には整理済み。</p>
-      </div>
-      <div class="panel">
-        <span class="tag">// 健全性（日次/週次）</span>
-        <ul class="bullets" style="margin-top:0;">
-          <li>watchdog-fix / health-fix（構造の自動修正）</li>
-          <li>graph-analysis（リンク・重複検出 / 週次）</li>
-          <li>tag-audit（タグタクソノミーの監査 / 週次）</li>
-        </ul>
-      </div>
-    </div>
-    <div class="callout reveal" style="margin-top:.9rem;">配信：注目記事を <strong>Slack / Discord</strong>（1日3回）、週次ダイジェストを <strong>Telegram</strong> へ。<span class="note">結果はダッシュボードではなく、向こうから届く。</span></div>
+    <p class="reveal note" style="text-align:center;">重複や矛盾を検出し、点在する知識を結び直す。こうした<strong>横断分析は夜間バッチが効く</strong>（日中の対話を止めない）。</p>
   </div>
 </section>
 
