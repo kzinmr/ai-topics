@@ -72,22 +72,6 @@ def main() -> int:
         "output_path": str(latest_output),
         "checkpoint_path": str(latest_path),
     }
-
-    # --- Archive skip/reference items ---
-    import subprocess
-    archive_script = Path(__file__).resolve().parent / "archive_triage.py"
-    if archive_script.exists():
-        try:
-            result = subprocess.run(
-                [str(archive_script), "dreaming", "--keep-reference"],
-                capture_output=True, text=True, timeout=30,
-            )
-            archive_data = json.loads(result.stdout) if result.stdout else {}
-            payload["_archive"] = archive_data.get("dreaming", {"error": "no dreaming key"})
-        except Exception as exc:
-            payload["_archive"] = {"ok": False, "error": str(exc)}
-    # --- end archive ---
-
     print(json.dumps(payload, ensure_ascii=False, indent=2))
     return 0
 

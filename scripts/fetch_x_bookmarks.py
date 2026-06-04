@@ -15,9 +15,21 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode
 
-XURL = os.environ.get("XURL_PATH", "/opt/data/bin/xurl")
+def profile_root() -> Path:
+    return Path(os.environ.get("HERMES_PROFILE_ROOT") or os.environ.get("HERMES_SUBPROCESS_HOME") or Path.home()).expanduser()
 
-HERMES_HOME = Path(os.environ.get("HERMES_HOME", Path.home() / ".hermes"))
+
+def default_xurl() -> str:
+    root = profile_root()
+    for candidate in (root / ".hermes" / "bin" / "xurl", root / "bin" / "xurl"):
+        if candidate.exists():
+            return str(candidate)
+    return "xurl"
+
+
+XURL = os.environ.get("XURL_PATH", default_xurl())
+
+HERMES_HOME = Path(os.environ.get("HERMES_HOME", profile_root() / ".hermes")).expanduser()
 DB = HERMES_HOME / "processed_x_bookmarks.json"
 DETAIL_DIR = HERMES_HOME / "cron" / "data"
 DETAIL_FILE = DETAIL_DIR / "x_bookmarks_latest_full.json"
@@ -44,11 +56,6 @@ def _sanitize_bookmark(t):
     for key in ("text",):
         if key in t and isinstance(t[key], str):
             t[key] = _sanitize_text(t[key])
-    # Sanitize note_tweet full text if present
-    if "note_tweet" in t and isinstance(t["note_tweet"], dict):
-        for key in ("text",):
-            if key in t["note_tweet"] and isinstance(t["note_tweet"][key], str):
-                t["note_tweet"][key] = _sanitize_text(t["note_tweet"][key])
     # Also sanitize URL expanded_url fields
     for u in t.get("entities", {}).get("urls", []):
         for field in ("expanded_url", "display_url", "title", "description"):
@@ -98,7 +105,7 @@ def get_user_id(state):
 def fetch_bookmarks_page(user_id, pagination_token=None):
     params = {
         "max_results": "100",
-        "tweet.fields": "created_at,entities,referenced_tweets,note_tweet",
+        "tweet.fields": "created_at,entities,referenced_tweets",
     }
     if pagination_token:
         params["pagination_token"] = pagination_token
@@ -209,19 +216,6 @@ def _is_x_article(tweet):
     return bool(article.get("title")) and not bool(article.get("plain_text"))
 
 
-def _has_note_tweet(tweet):
-    """Check if a tweet has a Note Tweet with full text (long-form tweet)."""
-    nt = tweet.get("note_tweet") or {}
-    return bool(nt.get("text"))
-
-
-def _get_full_text(tweet):
-    """Return the full tweet text, preferring note_tweet.text over truncated text."""
-    if _has_note_tweet(tweet):
-        return tweet["note_tweet"]["text"]
-    return tweet.get("text", "")
-
-
 state, processed = load_state(DB)
 
 try:
@@ -235,7 +229,6 @@ try:
     pages_fetched = 0
     article_fetches = 0
     article_failures = 0
-    note_tweets_found = 0
     stop_reason = "end"
 
     while True:
@@ -277,12 +270,8 @@ try:
             stop_reason = "no_next_token"
             break
 
-    # ── Post-processing: extract Note Tweet full text + fetch X Article bodies ──
+    # ── Post-processing: fetch X Article bodies ──
     for t in new:
-        # Track Note Tweets (long-form tweets with full text in note_tweet.text)
-        if _has_note_tweet(t):
-            note_tweets_found += 1
-
         # Extract X Article ID from bookmark URLs for fallback retrieval
         article_id = _extract_article_id(t)
         if article_id:
@@ -326,7 +315,6 @@ payload = {
         "stop_reason": stop_reason,
         "max_pages": MAX_PAGES,
         "possibly_more_unseen": stop_reason == "max_pages",
-        "note_tweets_found": note_tweets_found,
         "x_articles_fetched": article_fetches,
         "x_articles_failed": article_failures,
     },

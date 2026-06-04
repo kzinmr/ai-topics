@@ -1,178 +1,231 @@
 #!/usr/bin/env python3
-"""Daily Inbox Collector — pre-run script for Hermes cron.
+"""Collect and checkpoint RSS/blog articles for Hermes cron pipeline.
 
-Runs blogwatcher-cli scan, queries the DB for today's new articles,
-and reads the newsletter digest. Outputs structured JSON to stdout
-for the Hermes agent to triage and process.
-
-Exit 0 even on partial failure — partial data is still useful.
+Exports:
+    TODAY              – today's date string (YYYY-MM-DD)
+    query_todays_articles() → dict  – articles keyed by source type
+    run_blogwatcher_scan() → dict   – scan results (ok / error)
 """
+
+from __future__ import annotations
+
 import json
 import os
-import sqlite3
+import re
 import subprocess
 import sys
-from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-DB_PATH = Path("/opt/data/.blogwatcher/blogwatcher.db")
-INBOX_NL = Path.home() / "ai-topics" / "inbox" / "newsletters"
-WIKI_CONCEPTS = Path.home() / "ai-topics" / "wiki" / "concepts"
-WIKI_ENTITIES = Path.home() / "ai-topics" / "wiki" / "entities"
+
+# ── Configuration ──────────────────────────────────────────────────────────
+
+PROFILE_ROOT = Path(os.environ.get("HERMES_PROFILE_ROOT") or os.environ.get("HERMES_SUBPROCESS_HOME") or Path.home()).expanduser()
+BLOGWATCHER_BIN = os.environ.get("BLOGWATCHER_BIN", str(PROFILE_ROOT / "bin" / "blogwatcher-cli"))
+# The blogwatcher CLI uses ~/.blogwatcher/blogwatcher.db (old schema, not blogwatcher-cli)
+# Use PROFILE_ROOT instead of Path.home() because cron HOME may differ from the actual user home
+_BW_HOME = PROFILE_ROOT / ".blogwatcher"
+BLOGWATCHER_DB = _BW_HOME / "blogwatcher.db"
+BLOGWATCHER_WORKERS = 8
+BLOGWATCHER_SILENT = True
+
+
+# ── Date ───────────────────────────────────────────────────────────────────
 
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
-def run_blogwatcher_scan() -> dict:
-    """Run blogwatcher-cli scan and parse stdout."""
-    result = {"ran": False, "stdout": "", "succeeded": 0, "failed": 0, "total": 0,
-              "failures": [], "new_from_scan": 0}
-    try:
-        proc = subprocess.run(
-            ["/opt/data/bin/blogwatcher-cli", "scan"],
-            capture_output=True, text=True, timeout=120,
-            env={**os.environ, "HOME": "/opt/data"},
-        )
-        result["ran"] = True
-        result["stdout"] = proc.stdout + proc.stderr
-        # Parse: "Scanning N blog(s)..." → total blogs scanned
-        # Parse: "Found N new article(s) total!" → new articles
-        # Parse: "No new articles found." → 0 new
-        import re
-        for line in result["stdout"].splitlines():
-            m = re.search(r"Scanning (\d+) blog", line)
-            if m:
-                result["total"] = int(m.group(1))
-            m = re.search(r"Found (\d+) new", line)
-            if m:
-                result["new_from_scan"] = int(m.group(1))
-        result["succeeded"] = result["total"]
-        # Parse failures
-        current_blog = None
-        for line in result["stdout"].splitlines():
-            stripped = line.strip()
-            if stripped.startswith("Error:"):
-                if current_blog:
-                    result["failures"].append({"blog": current_blog, "error": stripped})
-                    current_blog = None
-            elif stripped and not stripped.startswith("Source:") and not stripped.startswith("Found") and not stripped.startswith("Scanning") and not stripped.startswith("No "):
-                current_blog = stripped
-        result["failed"] = len(result["failures"])
-    except Exception as e:
-        result["error"] = str(e)
-    return result
+# ── Blogwatcher scan ──────────────────────────────────────────────────────
 
+def run_blogwatcher_scan() -> dict:
+    """Run `blogwatcher-cli scan` and return results as a dict.
+
+    Returns:
+        {
+            "ok": True / False,
+            "scan_done_at": "...",
+            "total_new": 0,
+            "blogs_scanned": 0,
+            "error": None | str
+        }
+    """
+    env = {**os.environ, "BLOGWATCHER_YES": "1", "HOME": str(PROFILE_ROOT)}
+    if BLOGWATCHER_SILENT:
+        env["BLOGWATCHER_SILENT"] = "1"
+
+    cmd = [
+        BLOGWATCHER_BIN, "scan",
+        "--workers", str(BLOGWATCHER_WORKERS),
+    ]
+
+    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", env=env)
+
+    if result.returncode != 0:
+        return {
+            "ok": False,
+            "error": result.stderr.strip() or f"exit code {result.returncode}",
+            "scan_done_at": datetime.now(timezone.utc).isoformat(),
+        }
+
+    stdout = result.stdout.strip()
+    if not stdout:
+        return {
+            "ok": True,
+            "total_new": 0,
+            "blogs_scanned": 0,
+            "scan_done_at": datetime.now(timezone.utc).isoformat(),
+        }
+
+    # Parse scan output like:
+    #   Scanning 3 blog(s)...
+    #   blog1   Source: RSS | Found: 2 | New: 1
+    #   blog2   Source: HTML  | Found: 0 | New: 0
+    #   blog3   Source: RSS | Found: 1 | New: 0
+    #   Found 1 new article(s) total!
+
+    new_total = 0
+    blogs_scanned = 0
+    new_articles_per_blog = {}
+
+    # Extract total
+    m = re.search(r"Found\s+(\d+)\s+new article\(s\)\s+total!", stdout)
+    if m:
+        new_total = int(m.group(1))
+
+    # Extract per-blog lines
+    for line in stdout.splitlines():
+        bm = re.match(r"^\s*(\S+)\s+Source:\s+\S+\s+\|\s+Found:\s+(\d+)\s+\|\s+New:\s+(\d+)", line)
+        if bm:
+            blog_name = bm.group(1)
+            found = int(bm.group(2))
+            new = int(bm.group(3))
+            new_total += new
+            blogs_scanned += 1
+            new_articles_per_blog[blog_name] = new
+
+    return {
+        "ok": True,
+        "total_new": new_total,
+        "blogs_scanned": blogs_scanned,
+        "new_articles_per_blog": new_articles_per_blog,
+        "scan_done_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+# ── Query articles from blogwatcher DB ────────────────────────────────────
 
 def query_todays_articles() -> dict:
-    """Query DB for articles discovered today."""
-    data = {"total": 0, "by_blog": {}, "blog_articles": [], "reddit_articles": {}}
-    if not DB_PATH.exists():
-        data["error"] = "DB not found"
-        return data
+    """Query the blogwatcher SQLite DB for TODAY's articles and return a structured dict.
+
+    Only returns articles discovered in the last 24 hours (not all unread articles).
+    Also filters out already-read articles to avoid re-processing.
+
+    Returns:
+        {
+            "blog_articles": [...],   # list of {url, title, blog}
+            "total": 0,
+            "error": None | str
+        }
+    """
+    if not BLOGWATCHER_DB.exists():
+        return {
+            "blog_articles": [],
+            "total": 0,
+            "error": "blogwatcher DB not found",
+        }
+
     try:
-        conn = sqlite3.connect(str(DB_PATH))
+        import sqlite3
+        conn = sqlite3.connect(str(BLOGWATCHER_DB))
         conn.row_factory = sqlite3.Row
-
-        # Count per blog
-        rows = conn.execute("""
-            SELECT b.name, COUNT(*) as cnt
-            FROM articles a JOIN blogs b ON a.blog_id = b.id
-            WHERE DATE(a.discovered_date) = ?
-            GROUP BY b.name ORDER BY cnt DESC;
-        """, (TODAY,)).fetchall()
-        for r in rows:
-            data["by_blog"][r["name"]] = r["cnt"]
-            data["total"] += r["cnt"]
-
-        # Non-Reddit articles (all)
-        rows = conn.execute("""
-            SELECT b.name, a.title, a.url
-            FROM articles a JOIN blogs b ON a.blog_id = b.id
-            WHERE DATE(a.discovered_date) = ?
-              AND b.name NOT LIKE 'r/%'
-            ORDER BY b.name;
-        """, (TODAY,)).fetchall()
-        data["blog_articles"] = [{"blog": r["name"], "title": r["title"], "url": r["url"]} for r in rows]
-
-        # Reddit articles (max 5 per sub)
-        for sub in ["r/LocalLLaMA", "r/LocalLLM", "r/AI_Agents"]:
-            rows = conn.execute("""
-                SELECT a.title, a.url
-                FROM articles a JOIN blogs b ON a.blog_id = b.id
-                WHERE DATE(a.discovered_date) = ? AND b.name = ?
-                ORDER BY a.id DESC LIMIT 5;
-            """, (TODAY, sub)).fetchall()
-            if rows:
-                data["reddit_articles"][sub] = [{"title": r["title"], "url": r["url"]} for r in rows]
-
-        conn.close()
     except Exception as e:
-        data["error"] = str(e)
-    return data
+        return {
+            "blog_articles": [],
+            "total": 0,
+            "error": f"sqlite connect failed: {e}",
+        }
 
-
-def read_newsletter() -> dict:
-    """Read today's newsletter digest if it exists."""
-    data = {"exists": False}
-    nl_path = INBOX_NL / f"{TODAY}-newsletter.md"
-    if not nl_path.exists():
-        return data
     try:
-        content = nl_path.read_text()
-        data["exists"] = True
-        data["path"] = str(nl_path)
-        data["size_bytes"] = len(content)
-        # Extract subject
-        for line in content.splitlines():
-            if line.startswith("**Subject:**"):
-                data["subject"] = line.replace("**Subject:**", "").strip()
-            if line.startswith("**Articles scraped:**"):
-                try:
-                    data["articles_scraped"] = int(line.split(":")[-1].strip())
-                except ValueError:
-                    pass
-        # Extract article titles and URLs (## N. Title  then - **URL:** ...)
+        cur = conn.cursor()
+
+        # Only fetch articles discovered in the last 24 hours that haven't been read yet
+        cur.execute("""
+            SELECT a.title, a.url, b.name AS blog,
+                   a.discovered_date, a.is_read
+            FROM articles a
+            JOIN blogs b ON a.blog_id = b.id
+            WHERE a.is_read = 0
+              AND a.discovered_date >= datetime('now', '-24 hours')
+            ORDER BY a.discovered_date DESC
+            LIMIT 20
+        """)
+        rows = cur.fetchall()
+
         articles = []
-        current_title = None
-        seen_titles = set()
-        for line in content.splitlines():
-            if line.startswith("## ") and line[3:4].isdigit():
-                # e.g. "## 1. The inevitable need..."
-                current_title = line.split(".", 1)[-1].strip() if "." in line else line[3:].strip()
-            elif line.strip().startswith("- **URL:**") and current_title:
-                url = line.split("**URL:**")[-1].strip()
-                if current_title not in seen_titles:
-                    articles.append({"title": current_title, "url": url})
-                    seen_titles.add(current_title)
-                current_title = None
-        data["articles"] = articles
+        seen_urls = set()
+        for row in rows:
+            url = row["url"].strip()
+            if not url or url in seen_urls:
+                continue
+            seen_urls.add(url)
+            articles.append({
+                "url": url,
+                "title": row["title"] or "",
+                "blog": row["blog"] or "",
+            })
+
+        return {
+            "blog_articles": articles,
+            "total": len(articles),
+        }
     except Exception as e:
-        data["error"] = str(e)
-    return data
+        return {
+            "blog_articles": [],
+            "total": 0,
+            "error": f"query failed: {e}",
+        }
+    finally:
+        conn.close()
 
 
-def get_existing_wiki_topics() -> set:
-    """Get set of existing wiki concept/entity filenames for dedup."""
-    topics = set()
-    for d in [WIKI_CONCEPTS, WIKI_ENTITIES]:
-        if d.exists():
-            for f in d.rglob("*.md"):
-                topics.add(f.stem)  # e.g. "claude-mythos-glasswing"
-    return topics
+def mark_articles_as_read(articles: list[dict]) -> int:
+    """Mark articles as read in the blogwatcher DB to prevent re-processing.
+    
+    Args:
+        articles: List of {url, ...} dicts to mark as read.
+    
+    Returns:
+        Number of articles marked as read.
+    """
+    if not BLOGWATCHER_DB.exists() or not articles:
+        return 0
+    
+    try:
+        import sqlite3
+        conn = sqlite3.connect(str(BLOGWATCHER_DB))
+        cur = conn.cursor()
+        urls = [a.get("url", "") for a in articles if a.get("url")]
+        placeholders = ",".join(["?"] * len(urls))
+        cur.execute(f"UPDATE articles SET is_read = 1 WHERE url IN ({placeholders})", urls)
+        count = cur.rowcount
+        conn.commit()
+        conn.close()
+        return count
+    except Exception as e:
+        import logging
+        logging.warning(f"Failed to mark articles as read: {e}")
+        return 0
 
 
-def main():
-    output = {
-        "date": TODAY,
-        "collected_at": datetime.now(timezone.utc).isoformat(),
-        "scan": run_blogwatcher_scan(),
-        "articles": query_todays_articles(),
-        "newsletter": read_newsletter(),
-        "existing_wiki_topics": sorted(get_existing_wiki_topics()),
-    }
-    json.dump(output, sys.stdout, indent=2, ensure_ascii=False)
-
+# ── Main (for standalone testing) ────────────────────────────────────────
 
 if __name__ == "__main__":
-    main()
+    scan = run_blogwatcher_scan()
+    articles = query_todays_articles()
+
+    output = {
+        "today": TODAY,
+        "scan": scan,
+        "articles": articles,
+    }
+    print(json.dumps(output, indent=2, ensure_ascii=False))

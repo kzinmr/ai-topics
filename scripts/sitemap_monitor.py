@@ -1,4 +1,4 @@
-#!/opt/data/.hermes/venv/bin/python3
+#!/usr/bin/env python3
 """
 Sitemap-based blog monitor for company tech blogs without RSS feeds.
 Currently monitors Anthropic Engineering. Extensible to other sitemap-based sources.

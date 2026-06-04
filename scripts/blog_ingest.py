@@ -15,7 +15,7 @@ import httpx
 from bs4 import BeautifulSoup
 from readability import Document
 
-from daily_inbox_collect import TODAY, query_todays_articles, run_blogwatcher_scan
+from daily_inbox_collect import TODAY, query_todays_articles, run_blogwatcher_scan, mark_articles_as_read
 
 
 HERMES_HOME = Path(os.environ.get("HERMES_HOME", Path.home() / ".hermes"))
@@ -96,6 +96,11 @@ def save_article(raw: dict, source_name: str) -> str:
     return str(path)
 
 
+def _mark_articles_as_read(items: list[dict]) -> int:
+    """Mark articles as read in blogwatcher DB to prevent re-processing."""
+    return mark_articles_as_read(items)
+
+
 def persist_blog_articles(articles: dict) -> tuple[list[dict], list[dict]]:
     items = articles.get("blog_articles", [])
     if not items:
@@ -122,6 +127,11 @@ def persist_blog_articles(articles: dict) -> tuple[list[dict], list[dict]]:
                 "url": url,
                 "raw_path": raw_path,
             })
+
+    # Mark all processed articles as read in blogwatcher DB
+    # This prevents re-processing on subsequent runs
+    if saved or unsaved:
+        _mark_articles_as_read(items)
 
     return saved, unsaved
 
