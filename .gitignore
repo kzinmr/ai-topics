@@ -19,7 +19,9 @@ config/hermes/skills/.hub/
 config/hermes/skills/.usage.json.lock
 config/hermes/skills/.curator_state
 
-# Obsidian workspace (personal layout state)
+# Obsidian workspace & personal plugin state
 wiki/.obsidian/workspace.json
 wiki/.obsidian/workspace-mobile.json
+wiki/.obsidian/hotkeys.json
 wiki/.obsidian/plugins/*/data.json
+wiki/.obsidian/plugins/*/manifest.json
