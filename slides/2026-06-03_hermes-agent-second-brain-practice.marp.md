@@ -203,35 +203,6 @@ kzinmr (AI Engineer)
 
 ---
 
-# 拡張の2チャネル: `_overrides` と `_custom`
-
-スキルは <strong style="color:#2f7d6b">🟩 公式の機構</strong>の上に、2通りで足す。
-
-<div class="grid">
-<div class="box">
-
-### 🟧→🟩 `_overrides/`
-公式skillを**ドメイン向けに上書き**
-- `llm-wiki` ・ `blog-post-writing`
-- `cron-job-management`
-- `wiki-graph-health`
-
-</div>
-<div class="box">
-
-### 🟧 `_custom/`
-**完全独自**のドメインskill
-- `dreaming` ・ `daily-rss-triage`
-- `semantic-article-grouping`
-- `wiki-ingestion-pipelines`
-
-</div>
-</div>
-
-設定の置き場所〔🟧〕: `AGENTS.md`（＝指示書 / Makefile+README）・`config/feeds/`・`hot-topics.yaml`・`SOUL.md`
-
----
-
 # Guardrails は多層 — まず skills に宿る
 
 <div class="grid">
@@ -451,105 +422,117 @@ dreaming-collect → dreaming-group → dreaming-wiki-ingest
 
 <!-- _class: section -->
 
-# Part 3: スキル——経験をコードにする
+# Part 3: スキル
+## 経験をコードにする — 公式を土台に、自分で育てる
 
 ---
 
-# スキルとは何か
+# スキルとは — agentskills.io 標準の「手順メモリ」
 
-`.hermes/skills/` 以下に SKILL.md として保存される**手順のメモリ**。
+`~/.hermes/skills/` 以下の SKILL.md（YAML frontmatter、<strong style="color:#2f7d6b">agentskills.io 互換🟩</strong>）。
 
 | 要素 | 内容 |
 |---|---|
 | トリガー条件 | いつこのスキルを使うか |
-| 手順 | 具体的なコマンドやファイルパス |
+| 手順 | 具体的なコマンド・ファイルパス |
 | 落とし穴 | よくある失敗と対処法 |
-| 検証ステップ | 成功したことを確認する方法 |
+| 検証ステップ | 成功を確認する方法 |
 
-- 現在 **30カテゴリ、100+スキル** が存在
-- Agent がタスクを実行するたびに、関連スキルを自動ロード
-- ユーザーは `skill_view()` で内容を確認・編集できる
-
----
-
-# スキルはどのように生まれるか
-
-典型的な流れ:
-
-```
-1. Agent が複雑なタスクに取り組む
-   (例: 新しいブログの RSS フィードを追加する)
-
-2. 最初の試行で失敗や非効率に遭遇する
-   (例: OPML のパースで文字化け)
-
-3. 手動で修正し、成功する
-   (例: エンコーディング指定を追加)
-
-4. 「この手順をスキルとして保存して」と依頼
-   または Agent が自ら提案する
-
-5. SKILL.md が作成される
-```
-
-**harness engineering の核心**: 失敗をスキルに変換し、
-同じ失敗を繰り返さないようにする。
+- タスク実行時に関連スキルを**自動ロード**（progressive disclosure）
+- **harness engineering の核心**：失敗を手順に変換し、二度と繰り返さない
 
 ---
 
-# 実例: llm-wiki スキル
+# 自律拡張・整理・回収 — 主体もトリガーも別の3つ
 
-最も重要なスキル。**1,400行超** の SKILL.md。
+スキルの生成・修正はセッション内実行、Curator/Cron のbackground検証で補完
+
+| 仕組み | 主体・タイミング | 何をするか |
+|---|---|---|
+| **① 自律拡張・修正** | <strong style="color:#2f7d6b">Hermes 本体🟩</strong> ／ セッション内 | 決定論ゲート（既定10反復）→ **LLM が create / patch / none** |
+| **② 整理（Curator）** | <strong style="color:#2f7d6b">Hermes 公式🟩</strong> ／ 非活動時 | スキルGC：30日 stale / 90日 archive（**削除しない**） |
+| **③ 回収（check-skill-inventory）** | <strong style="color:#b45f06">ai-topics カスタム cron🟧</strong> ／ 週次 | `~/.hermes/` の新規skillを検出 → **git backup** |
+
+① は「使いながら育つ」Hermes 自身の学習ループ。② 増殖の整理、③ カスタム資産のbackup
+
+---
+
+# 公式 × カスタム — スキルバックアップの3層構成
+
+<strong style="color:#b45f06">カスタム3層🟧</strong>を `external_dirs` で公式に重ねる。カスタムには **2つの役割** — ① 使用 と ② 更新耐性のバックアップ。
+
+| 層 | 中身 | 主な使われ方 | Git |
+|---|---|---|---|
+| `_overrides/`🟧 | 公式の改変版 | **cron が名前で参照** | ✅必須 |
+| `_custom/`🟧 | 完全新規 | **cron が名前で参照** | ✅必須 |
+| `_adhoc/`🟧 | 日常作業用 | **Hermes が自律ロード**（cron非参照） | ✅推奨 |
+| <strong style="color:#2f7d6b">公式🟩</strong> | `~/.hermes/skills/` | Hermes が自律ロード | ❌（自動更新） |
+
+cron が名前で叩く＝**決定的**に使う層と、Hermes が状況判断で**自律的**に使う層に分解、前者の保守を重視。
+公式スキルの改変か、完全新規拡張かも区別。
+3層とも git バックアップ＝**Hermes 更新でも消えない**（read-only・ローカル優先でマウント）。
+
+---
+
+# 拡張の2チャネル: `_overrides` と `_custom`
+
+カスタムskillを足す2通り。<strong style="color:#2f7d6b">🟩 公式の機構</strong>の上に重ねる。
 
 <div class="grid">
 <div class="box">
 
-### 6つのコア操作
-1. **Ingest** — 記事・論文の取り込み
-2. **Query** — 知識の引き出し
-3. **Lint** — 品質検査
-4. **Active Crawl** — プロアクティブ探索
-5. **Synthesize** — 知識の統合
-6. **JP→EN Translation** — 翻訳
+### 🟧→🟩 `_overrides/`
+公式skillを**ドメイン向けに上書き**
+- `llm-wiki` ・ `blog-post-writing`
+- `cron-job-management`
+- `wiki-graph-health`
 
 </div>
 <div class="box">
 
-### 記録されている内容
-- 3層アーキテクチャの詳細仕様
-- 記事のスコアリング・優先順位付け
-- JP→EN 翻訳ワークフローと落とし穴
-- サブディレクトリパターン
-- タグ付けの具体例
+### 🟧 `_custom/`
+**完全独自**のドメインskill
+- `dreaming` ・ `daily-rss-triage`
+- `semantic-article-grouping`
+- `wiki-ingestion-pipelines`
 
 </div>
 </div>
+
+`_overrides` は公式を**上書き＝drift管理が要る**: Hermes 更新で公式が変わっても保全するのに必要
+
+`_custom` は新規＝自由。どちらも cron が名前で参照する。
+
+`check_skill_drift.py`で週次レビュー
 
 ---
 
-# スキルの爆発と整理
+# 実例: llm-wiki — 公式を分析し、ドメインに適合
 
-運用を続けるとスキルが増殖。
+<strong style="color:#2f7d6b">🟩 公式</strong> `skills/research/llm-wiki`（**507行**）を起点に、<strong style="color:#b45f06">🟧 約3倍へ拡張</strong>（**1,405行**）。
 
 <div class="grid">
 <div class="box">
 
-### 問題
-- 2026年5月時点で **100+スキル / 30カテゴリ**
-- 重複するスキルが増える
-- 古いスキルが更新されない
+### 公式の Core Operations
+1. **Ingest** 2. **Query** 3. **Lint**
+
+（Karpathy LLM-Wiki の3操作）
 
 </div>
 <div class="box">
 
-### 対策
-- **Curator** による重複検出・統合提案
-- **check-skill-inventory** 週次ジョブ
-- `absorbed_into` で統合先を指定して削除
-- スキル管理自体が harness の対象に
+### ai-topics が足した適合
+- **4. Active Crawl**（ギャップ探索）
+- **5. Synthesize**（原稿生成）
+- **6. JP→EN Translation**（英語化）
+- 記事スコアリング / subagent batch
+- path解決・index破損リカバリ手順
 
 </div>
 </div>
+
+公式の骨格はそのまま、**このドメインの作法（収集・採点・英語wiki化）を上乗せ**した。
 
 ---
 
