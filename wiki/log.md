@@ -6187,3 +6187,24 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 - **Updated index:** [[concepts/data-analysis-agents]] description updated to three approaches
 - **Key data points:** 95% automation / ~95% accuracy, skills without = 21% accuracy, adversarial review +6% accuracy
 - **Comparison:** Anthropic vs OpenAI Codex data analytics plugin vs Cognition DANA
+
+## 2026-06-04 — Ingest X/Twitter thread: Antoine Chaffin on IR direction + Mixedbread Latent Terms
+
+### Raw Articles Created
+- `raw/articles/2026-06-02_mixedbread_dense-retrievers-know-more.md` — Mixedbread blog post "Dense Retrievers Know More Than They Can Express" (Latent Terms research)
+- `raw/articles/2026-06-03_antoine-chaffin_ir-direction-sublinear-querying.md` — Antoine Chaffin tweet thread on IR direction (sublinear querying, dense vs sparse, scoring operators) + replies from @_miven, @bclavie
+
+### Entity Pages Created
+- `entities/mixedbread.md` — Mixedbread (AI retrieval/search company, Latent Terms research)
+
+### Entity Pages Updated
+- `entities/antoine-chaffin.md` — Added IR direction philosophy (Jun 2026), Latent Terms analysis, Related section
+- `index.md` — Updated Antoine Chaffin entry with IR reframing note
+
+### Context
+User requested ingestion of https://x.com/antoine_chaffin/status/2062081232842682448 and its replies. The tweet is part of a discussion chain:
+1. @mixedbreadai announced Latent Terms (SAE-extracted BM25-ready vocabularies from dense retrievers)
+2. @bclavie reflected on how little we understand about retrieval model internals
+3. @antoine_chaffin reframed: the goal is sublinear querying, not information reconstruction
+
+Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehensively. Duplicate `entities/ben-clavie.md` was removed.
