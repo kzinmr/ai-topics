@@ -1,73 +1,137 @@
 {
   "jobs": [
     {
-      "id": "6d6f29a2c6bf",
-      "name": "update-inbox",
-      "prompt": "Daily Inbox Update — RSS scan + Newsletter + Wiki triage & ingest.\n\n**重要：すべての出力（レポート、トリアージ表、推奨事項）は日本語で記述すること。**\n\nThe pre-run script has already executed blogwatcher-cli scan, queried the DB,\nread the newsletter, and listed existing wiki topics. Its JSON output is above.\n\nYour job has 3 phases. **If any phase fails, still output everything you completed so far as your final response.** Do NOT respond with [SILENT] if you have partial results.\n\n---\n\n## Phase 1: Report (ALWAYS do this first)\n\nFrom the script JSON, produce a summary in Japanese:\n\n```\n# デイリーインボックスアップデート — {date}\n\n## RSS スキャン結果\n- スキャン数: {total} （成功: {succeeded}, 失敗: {failed}）\n- 新規記事: {article_total}\n\n### 失敗したブログ\n| ブログ名 | エラー内容 |\n|----------|------------|\n(scan.failures から)\n\n### ブログ記事一覧\n- [タイトル](URL) — ブログ名\n(articles.blog_articles から すべて記載)\n\n### Reddit ハイライト\n#### r/LocalLLaMA（N件の新着）\n- [タイトル](URL)\n(articles.reddit_articles から 5件まで)\n\n## ニュースレター\n- 件名: ...\n- 記事数: N\n(newsletter から — または「本日ニュースレターなし」)\n```\n\nSave this to `~/ai-topics/inbox/rss-scans/daily-scan-{date}.md`.\nRun: `cd ~/ai-topics && git add inbox/rss-scans/ && git commit -m \"inbox: daily scan {date}\" && git push`\n\n**If article_total == 0 AND newsletter.exists == false → respond [SILENT] and stop.**\n\n---\n\n## Phase 2: Triage (select articles worth adding to wiki)\n\nReview the blog articles and newsletter articles from the script output.\nFor each article, decide if it's wiki-worthy by checking:\n1. Is the topic already covered? (check `existing_wiki_topics` list in the JSON)\n2. Is it substantive (not a link dump, not Reddit noise)?\n3. Does it relate to: LLMs, AI agents, coding agents, developer tooling, inference/training infrastructure, prompt engineering, AI safety, or open-source AI?\n\nOutput a triage table in Japanese:\n\n```\n## トリアージ\n\n| ソース | タイトル | アクション | 対象 |\n|--------|----------|------------|------|\n| simonwillison.net | タイトル | wikiエントリ作成 | entities/simon-willison.md |\n| blog.example.com | タイトル | スキップ（既存） | — |\n| newsletter | タイトル | wikiエントリ作成 | concepts/new-topic.md |\n```\n\n---\n\n## Phase 3: Wiki Ingestion\n\nFor each article marked \"wikiエントリ作成\" in the triage table:\n1. Scrape the article content using `web_extract`\n2. Determine which wiki category it belongs to (entities/, concepts/, comparisons/, queries/)\n3. Create or update the wiki page in Japanese, following the existing frontmatter format\n4. Update `wiki/index.md` and `wiki/log.md` with the new entry\n5. Run: `cd ~/ai-topics && git add wiki/ && git commit -m \"wiki: {topic}\" && git push`\n\n---\n\n**最終レポートは日本語で出力すること。**",
+      "id": "58c2f4a7e1bd",
+      "name": "blog-triage",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=blog-triage | <cost_info>\n\n# Blog Triage Agent\n\nRead the blog checkpoint and triage articles for wiki processing. Score each article, flag important ones for wiki ingestion, and save the triaged list.",
       "skills": [
-        "blogwatcher-db",
         "semantic-article-grouping"
       ],
-      "skill": "blogwatcher-db",
-      "model": null,
-      "provider": null,
+      "skill": "semantic-article-grouping",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
       "base_url": null,
-      "script": "daily_inbox_collect.py",
+      "script": "blog_checkpoint.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 12 * * *",
-        "display": "0 12 * * *"
+        "expr": "30 7 * * *",
+        "display": "30 7 * * *"
       },
-      "schedule_display": "0 12 * * *",
+      "schedule_display": "30 7 * * *",
       "repeat": {
         "times": null,
-        "completed": 14
+        "completed": 43
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-04-10T05:36:45.450263+00:00",
-      "next_run_at": "2026-04-22T12:00:00+00:00",
-      "last_run_at": "2026-04-21T12:31:54.545896+00:00",
+      "created_at": "2026-04-24T05:20:00+00:00",
+      "next_run_at": "2026-06-04T07:30:00+00:00",
+      "last_run_at": "2026-06-03T07:39:06.637617+00:00",
       "last_status": "ok",
       "last_error": null,
-      "deliver": "discord:1233771389367095377:1491801814222504169",
-      "origin": {
-        "platform": "slack",
-        "chat_id": "C077ACXR5UY",
-        "chat_name": "C077ACXR5UY",
-        "thread_id": "1775796104.859699"
-      },
-      "last_delivery_error": null
+      "deliver": null,
+      "origin": null,
+      "last_delivery_error": "no delivery target resolved for deliver=None"
     },
     {
-      "id": "25c95a207f28",
-      "name": "check-skill-inventory",
-      "prompt": "Review the skill inventory report below. If there are new unmanaged skills, briefly assess whether each one looks project-specific (worth promoting to config/hermes/skills/) or one-off (can be ignored or deleted). Report your recommendation.",
+      "id": "9a7d1e3c4b20",
+      "name": "blog-wiki-ingest",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=blog-wiki-ingest | <cost_info>\n\n# Blog Wiki Ingest Agent\n\nRead the blog triage checkpoint and process articles into wiki pages. Create entity/concept pages for important articles, update wiki/index.md and log.md.",
+      "skills": [
+        "llm-wiki",
+        "semantic-article-grouping"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "blog_triage_checkpoint.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "50 7 * * *",
+        "display": "50 7 * * *"
+      },
+      "schedule_display": "50 7 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 43
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T05:20:00+00:00",
+      "next_run_at": "2026-06-04T07:50:00+00:00",
+      "last_run_at": "2026-06-03T07:53:41.750457+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": null,
+      "origin": null,
+      "last_delivery_error": "no delivery target resolved for deliver=None",
+      "workdir": "/opt/data/ai-topics"
+    },
+    {
+      "id": "1bf4c6492c1e",
+      "name": "blog-ingest",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=blog-ingest | <cost_info>\n\n# Blog Ingest Agent\n\nRun blogwatcher to collect latest blog posts and save as raw articles to wiki/raw/articles/. Save checkpoint JSON for downstream triage.",
       "skills": [],
       "skill": null,
       "model": null,
       "provider": null,
       "base_url": null,
+      "script": "blog_ingest.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "display": "0 7 * * *"
+      },
+      "schedule_display": "0 7 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 42
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T05:10:00+00:00",
+      "next_run_at": "2026-06-04T07:00:00+00:00",
+      "last_run_at": "2026-06-03T07:02:42.042180+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": null,
+      "origin": null,
+      "last_delivery_error": "no delivery target resolved for deliver=None"
+    },
+    {
+      "id": "25c95a207f28",
+      "name": "check-skill-inventory",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=check-skill-inventory input_tokens=0 output_tokens=0\n\nReview the skill inventory report below. If there are new unmanaged skills, briefly assess whether each should be promoted to the skill directory. Respond with a concise summary.",
+      "skills": [],
+      "skill": null,
+      "model": "fireworks/qwen3.6-plus",
+      "provider": "fireworks.ai",
+      "base_url": null,
       "script": "check_new_skills.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 16 * * *",
-        "display": "0 16 * * *"
+        "expr": "0 16 * * 0",
+        "display": "0 16 * * 0"
       },
-      "schedule_display": "0 16 * * *",
+      "schedule_display": "0 16 * * 0",
       "repeat": {
         "times": null,
-        "completed": 6
+        "completed": 16
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-12T14:30:36.503091+00:00",
-      "next_run_at": "2026-04-22T16:00:00+00:00",
-      "last_run_at": "2026-04-21T16:04:23.845864+00:00",
+      "next_run_at": "2026-06-07T16:00:00+00:00",
+      "last_run_at": "2026-05-31T16:03:33.796389+00:00",
       "last_status": "ok",
       "last_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
@@ -77,11 +141,13 @@
     {
       "id": "176f75b41f88",
       "name": "Weekly AI digest",
-      "prompt": "Generate a weekly AI news digest covering the past 7 days:\n\n1. Search the web for major AI announcements, model releases, and research breakthroughs\n2. Search for trending ML repositories on GitHub\n3. Check arXiv for highly-cited papers on language models and agents\n\nStructure:\n## Headlines (3-5 major stories)\n## Notable Papers (2-3 papers with one-sentence summaries)\n## Open Source (interesting new repos or major releases)\n## Industry Moves (funding, acquisitions, launches)\n\nKeep each item to 1-2 sentences. Include links. Total under 600 words. Respond in Japanese.",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
+      "prompt": "# Weekly AI Digest \u2014 \u54c1\u8cea\u5411\u4e0a\u7248 (Telegram\u914d\u4fe1)\n\n## \u91cd\u8981: Gwern\u54c1\u8cea\u6280\u6cd5\u306e\u9069\u7528\n\n\u3053\u306e\u30a6\u30a3\u30fc\u30af\u30ea\u30fc\u30c0\u30a4\u30b8\u30a7\u30b9\u30c8\u306f\u6700\u3082\u91cd\u8981\u306a\u5b9a\u671f\u30ec\u30dd\u30fc\u30c8\u3067\u3042\u308b\u3002[[concepts/llm-creative-writing]] \u306e\u51685\u6280\u6cd5\u3092\u5fc5\u305a\u9069\u7528\u305b\u3088\uff1a\n\n### T1: Anti-Examples \u30b9\u30ed\u30c3\u30d7\u9664\u53bb\n\u751f\u6210\u5f8c\u306b\u81ea\u5df1\u30ec\u30d3\u30e5\u30fc\u305b\u3088\u3002ChatGPT\u7684\u306a\u6c4e\u7528\u8868\u73fe\u3092\u7279\u5b9a\u3057\u3001\u9006\u8ee2\u63db\u4fee\u6b63\u305b\u3088\u3002\n\n### T2: Manual of Style\n- \u65e5\u672c\u8a9e\u3002\u7c21\u6f54\u306a\u7b87\u6761\u66f8\u304d\u3002\n- \u5404\u4e3b\u5f35\u306b\u30bd\u30fc\u30b9\uff08wikilink or URL\uff09\n- 1\u884c1\u30a4\u30f3\u30b5\u30a4\u30c8\u3002\u6c34\u5897\u3057\u7981\u6b62\u3002\n- \u4e3b\u8981\u6bd4\u8f03\u306f\u30c6\u30fc\u30d6\u30eb\u5f62\u5f0f\u3002\n\n### T3: Atomic Snippets\n\u5404\u30bb\u30af\u30b7\u30e7\u30f3\u30923\u5c64\u3067\uff1a\n```\n**\u25b6 \u4e00\u8a00\u8981\u7d04**: (15-30\u30c8\u30fc\u30af\u30f3)\n**\u8a73\u7d30**: (\u7b87\u6761\u66f8\u304d\u3001100-300\u30c8\u30fc\u30af\u30f3)\n**\u6df1\u6398\u308a**: (\u4efb\u610f - \u6280\u8853\u7684\u8a73\u7d30)\n```\n\n### T4: Generate-Rank-Select\n\u30bf\u30a4\u30c8\u30eb\u3068\u5192\u982d\u6bb5\u843d\u306f2-3\u30d0\u30ea\u30a8\u30fc\u30b7\u30e7\u30f3\u751f\u6210\u3057\u3001\u6700\u826f\u3092\u9078\u629e\u305b\u3088\u3002\u5358\u306a\u308b\u521d\u56de\u751f\u6210\u3067\u7d42\u308f\u3089\u305b\u308b\u306a\u3002\n\n### T5: Engram Pathways\n\u57f7\u7b46\u524d\u306bwiki\u306e\u95a2\u9023\u30da\u30fc\u30b8\u3092\u691c\u7d22\u305b\u3088\u3002\u5404\u30c8\u30d4\u30c3\u30af\u306b\u6700\u4f4e2\u3064\u306ewikilink\u3092\u57cb\u3081\u8fbc\u3081\u3002\n\n## \u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\n- \u76f4\u8fd11\u9031\u9593\u306ewiki\u5909\u66f4\n- \u30c8\u30ec\u30f3\u30c9\u30c8\u30d4\u30c3\u30af\n- \u6ce8\u76ee\u306e\u30a8\u30f3\u30c6\u30a3\u30c6\u30a3\u66f4\u65b0\n\n## \u914d\u4fe1\u5148\nTelegram Home (8784167666)",
+      "skills": [
+        "hermes-report-quality"
+      ],
+      "skill": "hermes-report-quality",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
       "base_url": null,
       "script": null,
       "schedule": {
@@ -92,15 +158,15 @@
       "schedule_display": "0 0 * * 1",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 7
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-16T13:13:37.027879+00:00",
-      "next_run_at": "2026-04-27T00:00:00+00:00",
-      "last_run_at": "2026-04-20T00:10:46.338883+00:00",
+      "next_run_at": "2026-06-08T00:00:00+00:00",
+      "last_run_at": "2026-06-01T00:01:34.659458+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -108,21 +174,15 @@
       "origin": null
     },
     {
-      "id": "3ef4e0f23597",
-      "name": "daily-dreaming",
-      "prompt": "# Daily Dreaming — Knowledge Consolidation Cycle (Daily)\n\nYou are performing the daily \"dreaming\" process — synthesizing today's raw articles into wiki knowledge.\n\n**CRITICAL: All output (reports, wiki content, triage tables) must be in Japanese.**\n\n## Phase 1: Data Collection (pre-run script already executed)\nThe script has collected RSS scan articles, newsletter articles, and existing wiki pages.\nReview the injected context below.\n\n## Phase 2: Duplicate Check (MANDATORY — runs first)\nReview what other daily jobs have already completed today:\n1. **Daily Inbox Update (23:00 JST)** — RSS scan + Newsletter triage + Wiki ingest\n2. **Daily Wiki Update Report (20:00 JST)** — Wiki update summary\n3. **Daily Active Knowledge Crawl (00:00 JST)** — Hot topic concept discovery\n4. **Skill Inventory Check (01:00 JST)** — New skill assessment\n\nRules:\n- If an article was already processed by Daily Inbox Update, do NOT re-process it\n- If a concept page was already created by Daily Active Knowledge Crawl, do NOT duplicate — only enrich if you have significant new insights\n- If a wiki page was already updated and reported by Daily Wiki Update Report, skip redundant updates\n- Only proceed with wiki consolidation for items NOT already handled by other daily jobs\n\n## Phase 3: Light Sleep — Screening & Grouping\n- Review articles NOT already processed by other daily jobs\n- Group by semantic themes (shared entities, related concepts, events)\n- Identify recurring patterns across multiple sources\n\n## Phase 4: REM — Flat Synthesis (Writer Phase A)\nScore each theme/group using weighted signals WITHOUT newsjacking bias:\n- **relevance (0.30)**: Direct AI/LLM/agent relevance\n- **frequency (0.25)**: Number of mentions across sources\n- **query_diversity (0.15)**: Different sources discussing similar concepts\n- **recency (0.15)**: How recent the discussion is\n- **consolidation (0.10)**: How well it fits existing knowledge\n- **conceptual_richness (0.05)**: Depth and novelty of insights\n\nPromotion thresholds:\n- Score ≥ 0.65: Create or update wiki page\n- Score 0.45-0.65: Add to existing page or log for review\n- Score < 0.45: Skip (minor mention)\n\n**CRITICAL**: This phase is for knowledge consolidation, not distribution selection.\nDo NOT apply newsjacking filtering here — capture everything that meets the threshold.\n\n## Phase 5: NJ Delivery Filter (Writer Phase B)\nAfter flat synthesis, apply Newsjacking lens to select what to **deliver/report**:\n\n**NJ Scoring (0-5):**\n- 5/5: Trending topic + contrarian take + high debate potential\n- 4/5: Riding viral wave + in-group resonance\n- 3/5: Pattern interrupt + novelty from trusted source\n- 2/5: Standard insight, well-executed but not debate-generating\n- 1/5: Incremental update, low engagement potential\n- 0/5: Noise, link dump, or already saturated topic\n\n**Delivery prioritization:**\n- NJ Score ≥ 4: Lead story — featured prominently in report\n- NJ Score 3: Secondary — included with context\n- NJ Score 2: Brief mention — one-liner in summary\n- NJ Score ≤ 1: Omit from delivery (wiki updated but not highlighted)\n\n## Phase 6: Wiki Integration\nFor each promoted theme:\n1. Check existing pages first (search wiki for related content)\n2. Create new pages or update existing ones\n3. Update wiki/index.md and wiki/log.md\n4. Git commit & push: `cd ~/ai-topics && git add wiki/ && git commit -m \"dreaming: daily consolidation YYYY-MM-DD\" && git push`\n\n## Output Format\n```\n# Daily Dreaming Report — YYYY-MM-DD\n\n## 🔥 NJ Top Story (Score X/5)\n[If NJ ≥ 4, lead with this]\n\n## Duplicate Check Summary\n- Items skipped: N\n- Gaps filled: N\n\n## Consolidation Summary\n- Articles processed: N | Themes: N | Created: N | Updated: N\n\n## 📊 NJ Delivery Filter Results\n| Theme | NJ Score | Delivery Level |\n|-------|----------|----------------|\n| ... | ... | ... |\n\n## New Wiki Pages\n- [[concepts/new-page]]: Brief description\n\n## Updated Pages\n- [[entities/existing]]: What changed\n```\n\n## Pitfalls\n1. **Duplicate detection is MANDATORY** — never re-process what other jobs handled\n2. **Two-phase approach**: Phase 4 (Flat Synthesis) is unbiased, Phase 5 (NJ Filter) is for delivery selection only\n3. **Always check existing pages first** — avoid duplicates\n4. **Cross-references are mandatory** — isolated pages are useless\n5. **Commit in the same session** — don't leave changes uncommitted\n6. **Handle contradictions explicitly** — don't silently overwrite\n7. **Git rebase in headless environment**: Use `GIT_EDITOR=true git rebase --continue` if conflicts occur",
-      "skills": [
-        "weekly-dreaming",
-        "llm-wiki",
-        "semantic-article-grouping",
-        "daily-rss-triage",
-        "blogwatcher-db"
-      ],
-      "skill": "weekly-dreaming",
+      "id": "8c1d7e52a4b1",
+      "name": "dreaming-collect",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=dreaming-collect input_tokens=0 output_tokens=0\n\nThe pre-run script already collected and checkpointed the dreaming input. If `ok` is true, respond with a brief confirmation. If `ok` is false, note the error.",
+      "skills": [],
+      "skill": null,
       "model": null,
       "provider": null,
       "base_url": null,
-      "script": "weekly_dreaming.py",
+      "script": "dreaming_collect.py",
       "schedule": {
         "kind": "cron",
         "expr": "0 18 * * *",
@@ -131,86 +191,129 @@
       "schedule_display": "0 18 * * *",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 42
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-04-16T13:58:42.777945+00:00",
-      "next_run_at": "2026-04-22T18:00:00+00:00",
-      "last_run_at": "2026-04-21T18:29:23.053060+00:00",
+      "created_at": "2026-04-24T00:00:00+00:00",
+      "next_run_at": "2026-06-04T18:00:00+00:00",
+      "last_run_at": "2026-06-03T18:01:04.987998+00:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "last_delivery_error": "no delivery target resolved for deliver=None",
+      "deliver": null,
       "origin": null
     },
     {
-      "id": "bf79f8857d55",
-      "name": "active-crawl",
-      "prompt": "Daily Active Knowledge Crawl. あなたの目的: config/hot-topics.yaml に登録されたホットトピックに関連する「まだ取り込まれていない重要概念」を能動的に調査し、知識ベースに取り込むこと。\n\n`~/ai-topics` を canonical repo root とし、`~/wiki` を canonical wiki path として扱うこと。 `~/wiki` は `~/ai-topics/wiki` に resolve される想定。 `/opt/data/home/wiki` や他の alternate path には書き込まない。\n\n手順:\n1. `cat ~/ai-topics/config/hot-topics.yaml` を読み、crawl_policy が prerequisites/laterals/deepdive かつ last_crawled が3日以上前(またはnull)のトピックを抽出\n2. priority: high から last_crawled が最も古い順に最大2つ、priority: medium から最大1つ、合計最大3トピックを選択\n3. 各トピックについて crawl_policy に応じた動作を実行:\n   [prerequisites] wiki_pages を読む → そのトピックを理解するための前提概念を特定 → wikiに無いものをWeb検索 → 良質ソース発見 → 取り込み\n   [laterals] wiki_pages を読む → 横方向の関連概念を特定 → wikiに無いものをWeb検索 → 取り込み\n   [deepdive] search_hints でWeb検索 → 最新動向・事例を発見 → raw取り込みと既存ページ更新 or 新規サブトピック作成\n4. 各概念について:\n   a. Web検索で良質ソース(arxiv, 公式ドキュメント, 著名ブログ)を1-2本発見\n   b. ソースを ~/wiki/raw/articles/crawl-YYYY-MM-DD-<slug>.md に保存\n   c. ~/wiki/concepts/<slug>.md にページ作成(SCHEMA.md準拠、frontmatter必須)\n   d. wiki/index.md に追記、wiki/log.md に \"Active Crawl [{policy}]: {parent} → {new_concept}\" を記録\n5. hot-topics.yaml の該当トピックの last_crawled を今日の日付に更新\n6. `cd ~/ai-topics && git pull --rebase && git add wiki/ config/hot-topics.yaml && git commit -m \"wiki: active-crawl YYYY-MM-DD\" && git push`\n7. 結果を日本語で報告: 取り込んだ概念、理由、親トピックとの関係\n\nルール:\n- 1トピックあたり最大2概念。1日合計最大6概念\n- ソース必須: raw/articles/ にソースが無い概念はページ化しない\n- 深さ1のみ: 登録トピックの直接的な周辺のみ。孫概念は対象外\n- ドメイン厳守: SCHEMA.md のドメイン(LLM/AI Agent技術)に直接関係しないものは棄却\n- 既存ページ重複チェック: 生成前に `find ~/wiki -name \"*.md\" | xargs grep -li \"<keyword>\"` で確認\n- deepdive は原則既存ページ更新。新規は「明確に新しいサブトピック」のみ\n- hot-topics.yaml にトピックを勝手に追加しない\n- 取り込み候補が見つからない場合は「該当なし」と報告して正常終了",
+      "id": "c4a9e8d2f671",
+      "name": "dreaming-group",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=dreaming-group input_tokens=0 output_tokens=0\n\nYou are grouping the pre-collected dreaming checkpoint into compact theme clusters. Work only from the injected data.\n\n1. Group articles by topic/relationship\n2. Create cluster summaries (max 200 chars each)\n3. Output structured clusters\n\nThe dreaming checkpoint is injected below.",
       "skills": [
-        "llm-wiki"
+        "dreaming",
+        "semantic-article-grouping",
+        "daily-rss-triage"
       ],
-      "skill": "llm-wiki",
+      "skill": "dreaming",
       "model": null,
       "provider": null,
       "base_url": null,
-      "script": null,
+      "script": "dreaming_checkpoint.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 13 * * *",
-        "display": "0 13 * * *"
+        "expr": "10 18 * * *",
+        "display": "10 18 * * *"
       },
-      "schedule_display": "0 13 * * *",
+      "schedule_display": "10 18 * * *",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 42
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-04-18T04:49:42.951941+00:00",
-      "next_run_at": "2026-04-22T13:00:00+00:00",
-      "last_run_at": "2026-04-21T14:02:35.212156+00:00",
+      "created_at": "2026-04-24T00:00:00+00:00",
+      "next_run_at": "2026-06-04T18:10:00+00:00",
+      "last_run_at": "2026-06-03T18:14:01.740964+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": "no delivery target resolved for deliver=None",
+      "deliver": null,
+      "origin": null
+    },
+    {
+      "id": "d7b3f5c1a902",
+      "name": "dreaming-wiki-ingest",
+      "prompt": "# Dreaming Wiki Ingest \u2014 Nightly Knowledge Consolidation (\u54c1\u8cea\u5411\u4e0a\u7248)\n\n## \u54c1\u8cea\u8981\u4ef6 (Gwern Inspired)\n\n\u3053\u306e\u30ca\u30a4\u30c8\u30ea\u30fc\u30ec\u30dd\u30fc\u30c8\u306b\u306f [[concepts/llm-creative-writing]] \u306e\u4ee5\u4e0b\u6280\u6cd5\u3092\u9069\u7528\u305b\u3088\uff1a\n\n### T1: Anti-Examples\n\u81ea\u5df1\u30ec\u30d3\u30e5\u30fc\uff1aAI\u3089\u3057\u3044\u6c4e\u7528\u8868\u73fe\u3092\u7279\u5b9a\u3057\u9006\u8ee2\u63db\u3002\u300c\u3053\u308c\u306f\u301c\u3092\u793a\u5506\u3057\u3066\u3044\u308b\u300d\u300c\u6ce8\u76ee\u3059\u3079\u304d\u300d\u306a\u3069\u306e\u5b9a\u578b\u53e5\u3092\u524a\u9664\u3002\n\n### T3: Atomic Snippets\n```\n**\u4e00\u8a00\u8981\u7d04**: 15-30\u30c8\u30fc\u30af\u30f3\n**\u8a73\u7d30**: \u7b87\u6761\u66f8\u304d\u3067\u6df1\u6398\u308a\n```\n\n### T4: Generate-Rank-Select\n\u6700\u3082\u91cd\u8981\u306a\u767a\u898b\uff08top 1-2\uff09\u306f\u30012-3\u30d0\u30fc\u30b8\u30e7\u30f3\u751f\u6210\u3057\u3066\u6700\u826f\u3092\u9078\u629e\u305b\u3088\u3002\n\n### T5: Engram Pathways\n\u7d71\u5408\u524d\u306bwiki\u306e\u65e2\u5b58\u30da\u30fc\u30b8\uff08concepts, entities\uff09\u3092\u691c\u7d22\u3057\u3001\u65b0\u3057\u3044\u767a\u898b\u3092\u65e2\u5b58\u77e5\u8b58\u3068\u7d50\u3073\u4ed8\u3051\u3088\u3002\u5404\u30c8\u30d4\u30c3\u30af\u306b\u6700\u4f4e2\u3064\u306ewikilink\u3002\n\n## \u5165\u529b\nPre-run script\u304c\u30b0\u30eb\u30fc\u30d7\u5316\u3055\u308c\u305f\u30c6\u30fc\u30deJSON\u3092\u63d0\u4f9b\u3002\u5404\u30c6\u30fc\u30de\u3092\u8a55\u4fa1\u3057\u3001\u30b9\u30b3\u30a2\u9ad8\u3044\u3082\u306e\u304b\u3089wiki\u30da\u30fc\u30b8\u4f5c\u6210/\u66f4\u65b0\u305b\u3088\u3002\n\n## \u914d\u4fe1\u5148\nDiscord: #hermes-topic-manager",
+      "skills": [
+        "dreaming",
+        "llm-wiki",
+        "semantic-article-grouping",
+        "daily-rss-triage",
+        "blogwatcher-db",
+        "hermes-report-quality"
+      ],
+      "skill": "dreaming",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "dreaming_group_checkpoint.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "20 18 * * *",
+        "display": "20 18 * * *"
+      },
+      "schedule_display": "20 18 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 43
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T00:00:00+00:00",
+      "next_run_at": "2026-06-04T18:20:00+00:00",
+      "last_run_at": "2026-06-03T18:22:58.267265+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
-      "origin": null
+      "origin": null,
+      "workdir": "/opt/data/ai-topics"
     },
     {
       "id": "158a461eb520",
       "name": "trending-topics",
-      "prompt": "Daily Trending Topics notification.\n\nUse `~/ai-topics` as the canonical repo root for this job. The canonical wiki path is `~/wiki`, which should resolve to `~/ai-topics/wiki`. Do not infer or write to any alternate wiki location.\n\nStep 1: Run `python3 ~/ai-topics/scripts/trending_topics.py --days 3` and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended — trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics — highest signal items appearing across RSS, newsletters, and raw articles. Suggest which topics Hermes should prioritize for wiki page creation or updates.\n\nStep 2: Hot Topics クローリング候補提案。`cat ~/ai-topics/config/hot-topics.yaml` を読み、Step 1 の「New Page Recommended」のトピック群と照合する。以下の条件を満たすトピックがあれば、hot-topics.yaml への追加候補として提案する:\n- source_count が 3 以上で、hot-topics.yaml にまだ登録されていない\n- SCHEMA.md のドメイン(LLM/AI Agent技術)に合致する\n- 既存トピックのサブトピックではなく、独立したトピックとして管理する価値がある\n\n提案フォーマット(YAMLスニペットとしてそのまま貼れる形):\n```\n📝 hot-topics.yaml 追加候補:\n\n  - slug: <slug>\n    title: \"<title>\"\n    crawl_policy: <prerequisites|laterals|deepdive>  # 推奨ポリシーと理由\n    priority: <high|medium>\n    search_hints:\n      - \"<hint>\"\n    notes: \"<提案理由: source_count=N, ソース種別, 既存トピックとの関係>\"\n    added: YYYY-MM-DD\n```\n候補がない場合は「該当なし」と明記。提案はあくまで提案であり、ユーザーが承認するまで yaml を編集しないこと。",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=trending-topics | <cost_info>\n\n# Trending Topics Agent\n\nScan the web, RSS feeds, and recent activity for trending AI/ML topics. Report the top 5-8 most important topics in Japanese with brief summaries.\n\nDeliver the report to Discord.",
       "skills": [
         "llm-wiki",
         "daily-rss-triage"
       ],
       "skill": "llm-wiki",
-      "model": null,
-      "provider": null,
-      "base_url": null,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": "https://api.deepseek.com/v1",
       "script": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 14 * * *",
-        "display": "0 14 * * *"
+        "expr": "0 12 * * *",
+        "display": "0 12 * * *"
       },
-      "schedule_display": "0 14 * * *",
+      "schedule_display": "0 12 * * *",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 47
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:50:39.783611+00:00",
-      "next_run_at": "2026-04-22T14:00:00+00:00",
-      "last_run_at": "2026-04-21T14:06:36.523073+00:00",
+      "next_run_at": "2026-06-04T12:00:00+00:00",
+      "last_run_at": "2026-06-03T12:08:07.722949+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -220,13 +323,13 @@
     {
       "id": "ed6f00d28955",
       "name": "wiki-graph-analysis",
-      "prompt": "Weekly Wiki Graph Analysis. Run `python3 ~/ai-topics/scripts/wiki_graph.py` and present the report to the user IN JAPANESE. Focus on: (1) Intellectual clusters — top 10 person pairs with high similarity but no wiki link, (2) Cross-reference gap recommendations — top 10 links Hermes should add during entity enrichment, (3) Bridge concepts connecting many opinion leaders. Keep the summary concise.",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=wiki-graph-analysis input_tokens=0 output_tokens=0\n\nWeekly Wiki Graph Analysis.\n\n**IMPORTANT**: The ai-topics repo is `kzinmr/ai-topics` on GitHub at `~/ai-topics/`.\n\nRun wiki graph analysis to find:\n1. Orphan pages (pages with no incoming links)\n2. Missing cross-references\n3. Duplicate entity pages\n4. Stale concepts\n\nOutput a structured report with recommendations.",
       "skills": [
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": null,
-      "provider": null,
+      "model": "fireworks/qwen3.6-plus",
+      "provider": "fireworks.ai",
       "base_url": null,
       "script": null,
       "schedule": {
@@ -237,15 +340,15 @@
       "schedule_display": "0 15 * * 5",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 9
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:50:47.032476+00:00",
-      "next_run_at": "2026-04-24T15:00:00+00:00",
-      "last_run_at": "2026-04-20T15:02:19.678512+00:00",
+      "next_run_at": "2026-06-05T15:00:00+00:00",
+      "last_run_at": "2026-05-29T15:02:54.628253+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -255,13 +358,13 @@
     {
       "id": "07d1ccf7541a",
       "name": "wiki-health",
-      "prompt": "# Wiki Health Lint Job (Daily 03:00 JST)\n\nRun wiki lint checks and report issues.\n\n**Checks to perform:**\n1. Run `python3 ~/ai-topics/scripts/wiki_health.py` and capture the full output\n2. Check for broken internal links across wiki pages\n3. Check for entity pages with `status: skeleton` that need enrichment\n4. Check for orphaned files in `wiki/raw/articles/` (not referenced by any wiki page)\n5. Validate frontmatter consistency (missing tags, categories, or dates)\n6. Check `wiki/index.md` and `wiki/log.md` are up to date with recent changes\n7. Check for duplicate or near-duplicate wiki pages\n\n**Report format (Japanese, concise):**\n- Use markdown tables for findings\n- Group by severity: Critical / Warning / Info\n- Include specific file paths and recommended actions\n- If everything is clean, report \"✅ Wiki healthy — no issues found\"\n\n**Important:**\n- Do NOT auto-fix anything — report only\n- Keep output under 2000 chars for Discord delivery\n- If critical issues found, flag them clearly at the top",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=wiki-health input_tokens=0 output_tokens=0\n\n# Wiki Health Lint Job (Daily 03:00 JST)\n\nRun wiki lint checks and report issues.\n\n**IMPORTANT**: The ai-topics repo is `kzinmr/ai-topics` on GitHub at `~/ai-topics/`.\n\nYour task:\n1. Run wiki health checks (broken links, missing files, etc.)\n2. Report critical/warning issues\n3. Suggest remediation steps\n\nOutput a structured health report in Japanese.",
       "skills": [
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": null,
-      "provider": null,
+      "model": "fireworks/qwen3.6-plus",
+      "provider": "fireworks.ai",
       "base_url": null,
       "script": null,
       "schedule": {
@@ -272,15 +375,15 @@
       "schedule_display": "0 17 * * *",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 26
       },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-05-13T23:51:33.357878+00:00",
       "paused_reason": null,
       "created_at": "2026-04-18T04:50:47.341340+00:00",
-      "next_run_at": "2026-04-22T17:00:00+00:00",
-      "last_run_at": "2026-04-21T17:02:56.908797+00:00",
+      "next_run_at": "2026-05-14T17:00:00+00:00",
+      "last_run_at": "2026-05-13T18:14:33.606757+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -288,54 +391,123 @@
       "origin": null
     },
     {
-      "id": "b73a8452b19a",
-      "name": "AI Wiki Update",
-      "prompt": "# Daily Wiki Update Report\n\nRun the wiki report script and generate a Japanese Discord message summarizing the day's wiki changes.\n\n## Step 1: Get wiki changes\nRun `python3 ~/ai-topics/scripts/wiki_report.py` to get today's wiki updates.\n\n## Step 2: Apply Newsjacking Lens to Article Selection\n\nBefore composing the report, evaluate each updated/new article using the Newsjacking framework (Elvis Sun):\n\n**NJ Scoring (0-5):**\n- 5/5: Trending wave + contrarian take + debate potential\n- 4/5: Riding viral momentum + in-group resonance\n- 3/5: Pattern interrupt + novelty from trusted source\n- 2/5: Standard insight, well-executed\n- 1/5: Incremental update\n- 0/5: Noise or link dump\n\n## Step 3: Generate Report (in Japanese)\n\n**Structure:**\n1. **🔥 Top NJ Story** (Score ≥ 4) — if any, lead with the most engaging story\n2. **📊 Wiki Changes Summary** — all changes sorted by NJ score (high → low)\n3. **📈 Stats** — pages created, updated, total count\n\n**Format for each article:**\n- `[NJ: X/5] タイトル` — include score inline\n- Brief 1-line summary of what changed\n- Link to wiki page\n\n**If no NJ score ≥ 4 articles exist**, lead with \"📊 Today's Wiki Updates\" instead.\n\n## Output Language\nJapanese. Be concise, scannable, and prioritize high-NJ-signal content.",
+      "id": "3293c14f4352",
+      "name": "newsletter-ingest",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=newsletter-triage input_tokens=0 output_tokens=0\n\nYou are Hermes, triaging the latest newsletter-ingest checkpoint for wiki relevance. Work only from the injected checkpoint data.\n\n**IMPORTANT**: The ai-topics repo is `kzinmr/ai-topics` on GitHub at `~/ai-topics/`.\n\nYour job:\n1. Read the newsletter-ingest checkpoint data below\n2. Identify newsletters/articles relevant to the AI/LLM Agent knowledge wiki\n3. Classify by importance: critical, high, low\n4. Output a JSON report with classifications\n5. Save to `~/wiki/raw/inbox/newsletter-ingest/<timestamp>.json`\n\nThe newsletter checkpoint data is injected below. Process it now.",
       "skills": [],
       "skill": null,
       "model": null,
       "provider": null,
       "base_url": null,
-      "script": null,
+      "script": "process_email.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 11 * * *",
-        "display": "0 11 * * *"
+        "expr": "10 7 * * *",
+        "display": "10 7 * * *"
       },
-      "schedule_display": "0 11 * * *",
+      "schedule_display": "10 7 * * *",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 49
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-04-18T07:14:09.832118+00:00",
-      "next_run_at": "2026-04-22T11:00:00+00:00",
-      "last_run_at": "2026-04-21T11:08:13.457331+00:00",
+      "created_at": "2026-04-22T12:56:50.137736+00:00",
+      "next_run_at": "2026-06-04T07:10:00+00:00",
+      "last_run_at": "2026-06-03T07:13:20.766246+00:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "discord:1185093193017065522:1495005293535563857",
-      "origin": {
-        "platform": "discord",
-        "chat_id": "1494955353878827060",
-        "chat_name": "kzinmrのサーバー / #hermes-topic-manager / 毎日頻度で、前日に取り込まれた主要な記事の概要を、AI技術者向けにDiscord配信して欲しい。配信先は以下: (server_id:1185093193...",
-        "thread_id": "1494955353878827060"
-      }
+      "last_delivery_error": "no delivery target resolved for deliver=None",
+      "deliver": null,
+      "origin": null
     },
     {
-      "id": "15f7bc35ec06",
+      "id": "4e8b0d92c6a1",
+      "name": "newsletter-triage",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=newsletter-triage | <cost_info>\n\n# Newsletter Triage Agent\n\nRead the newsletter checkpoint JSON and triage articles for wiki processing. Score each article, flag important ones for wiki ingestion, and save the triaged list.",
+      "skills": [
+        "semantic-article-grouping"
+      ],
+      "skill": "semantic-article-grouping",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "newsletter_checkpoint.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "20 7 * * *",
+        "display": "20 7 * * *"
+      },
+      "schedule_display": "20 7 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 42
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T07:00:00+00:00",
+      "next_run_at": "2026-06-04T07:20:00+00:00",
+      "last_run_at": "2026-06-03T07:24:13.423864+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": null,
+      "origin": null,
+      "last_delivery_error": "no delivery target resolved for deliver=None"
+    },
+    {
+      "id": "a1f4d9c3e672",
+      "name": "newsletter-wiki-ingest",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=newsletter-wiki-ingest | <cost_info>\n\n# Newsletter Wiki Ingest Agent\n\nRead the newsletter triage checkpoint and process articles into wiki pages. Create entity/concept pages for important articles, update wiki/index.md and log.md.",
+      "skills": [
+        "llm-wiki",
+        "semantic-article-grouping"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "newsletter_triage_checkpoint.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "40 7 * * *",
+        "display": "40 7 * * *"
+      },
+      "schedule_display": "40 7 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 42
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T07:00:00+00:00",
+      "next_run_at": "2026-06-04T07:40:00+00:00",
+      "last_run_at": "2026-06-03T07:45:49.471323+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": null,
+      "origin": null,
+      "last_delivery_error": "no delivery target resolved for deliver=None",
+      "workdir": "/opt/data/ai-topics"
+    },
+    {
+      "id": "56e7e85f45b1",
       "name": "x-bookmarks-ingest",
-      "prompt": "Incoming X bookmarks batch attached below. Use `~/ai-topics` as the canonical repo root for this job. The canonical wiki path is `~/wiki`, which resolves to `~/ai-topics/wiki`. Save scraped or metadata-only bookmark records only under `~/wiki/raw/articles/`. Do not write to `/opt/data/home/wiki`, `/opt/data/wiki`, `~/home/wiki`, or any inferred alternate path. For bookmarks with external URLs, scrape the linked article and save it following the newsletter digest/raw article format. For X native articles (`x.com/i/article/...`) with no external URL: try an approved X-article fallback only if credentials/tools are already available; if not available, save a metadata-only raw article record under `~/wiki/raw/articles/` and continue. Never treat auth-walled X native articles as a job failure solely because the body cannot be scraped. Create/update concept or entity pages in `~/wiki/` only when the topic is SCHEMA.md-aligned and the source content is sufficient; otherwise leave the metadata-only raw article. Update `~/wiki/index.md` and `~/wiki/log.md` for wiki page changes. After processing, run `cd ~/ai-topics && git status --short`; if changes were made only by this job, commit and push with `git add wiki/ && git commit -m \"wiki: X bookmarks ingest\" && git push`. If no new bookmarks since last run, respond exactly `[SILENT]`. Report in Japanese: titles, URLs, and which wiki pages were touched.",
+      "prompt": "Incoming X bookmarks batch attached below. Use `~/ai-topics` as the canonical repo root for this job.\n\n## \u26a0\ufe0f CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/` or `wiki/concepts/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, you MUST use `patch` to add/update \u2014 NEVER `write_file`\n3. Overwriting rich curated pages with skeletons is a data-loss incident\n\n## Task\n\nFor each bookmark in the batch:\n1. Extract the main topic, author, and any linked URLs\n2. For linked articles: fetch full text and save to `~/wiki/raw/articles/` with proper filename\n3. For X tweets/posts: extract the key insight and any linked content\n4. Create or update wiki entity/concept pages following SCHEMA.md\n5. Check existing pages BEFORE writing \u2014 use `patch` for pages >40 lines\n6. Update index.md and log.md\n7. Commit and push all changes\n\nFollow the wiki-entity-enrichment-from-article skill for page creation and enrichment.",
       "skills": [
         "wiki-ingestion-pipelines",
-        "raw-article-filename-policy"
+        "raw-article-filename-policy",
+        "wiki-entity-enrichment-from-article",
+        "x-article-getxapi-fallback"
       ],
-      "skill": null,
-      "model": null,
-      "provider": null,
+      "skill": "wiki-ingestion-pipelines",
+      "model": "deepseek-v4-pro",
+      "provider": "deepseek",
       "base_url": null,
       "script": "fetch_x_bookmarks.py",
       "schedule": {
@@ -346,29 +518,30 @@
       "schedule_display": "30 11,23 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 80
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-04-23T12:09:52.506261+00:00",
-      "next_run_at": null,
-      "last_run_at": null,
-      "last_status": null,
+      "created_at": "2026-04-23T12:43:12.060291+00:00",
+      "next_run_at": "2026-06-04T11:30:00+00:00",
+      "last_run_at": "2026-06-03T23:38:25.751930+00:00",
+      "last_status": "ok",
       "last_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
-      "last_delivery_error": null
+      "last_delivery_error": null,
+      "workdir": "/opt/data/ai-topics"
     },
     {
-      "id": "b2eff760dc14",
+      "id": "ca7850edc955",
       "name": "x-accounts-scan",
-      "prompt": "Scan tracked X accounts (config/feeds/x-accounts.yaml) and report the results in Japanese for Discord delivery. Use `~/ai-topics` as the canonical repo root for this job. The canonical wiki path is `~/wiki`, which should resolve to `~/ai-topics/wiki`. If you save any scraped article, write it only to `~/wiki/raw/articles/`. Do not write to `/opt/data/home/wiki` or any inferred alternate path. Summarize substantive new posts with external links in Japanese even when the original posts are in English. The pre-run JSON is intentionally compact; use `detail_file` only if you need to inspect a specific post more deeply. Prioritize the strongest technical/AI-agent-relevant links first. In the final Discord report, include at most 5 posts. For links to technical articles aligned with SCHEMA.md, scrape and save at most 3 high-signal items to `~/wiki/raw/articles/`. Skip retweets, empty replies, event links, generic community invites, personal profile links, and low-signal social links. Respond with [SILENT] only when there are no new substantive posts to report after filtering. Do not use [SILENT] merely because the source posts are non-Japanese.",
+      "prompt": "# X Accounts Scan Agent\n\nScan tracked X accounts (config/feeds/x-accounts.yaml). Run the fetch script and report the results in Japanese for Discord.",
       "skills": [],
       "skill": null,
-      "model": null,
-      "provider": null,
+      "model": "deepseek-v4-pro",
+      "provider": "deepseek",
       "base_url": null,
       "script": "fetch_x_accounts.py",
       "schedule": {
@@ -379,20 +552,67 @@
       "schedule_display": "30 22 */2 * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 32
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-04-23T12:09:52.506261+00:00",
-      "next_run_at": null,
-      "last_run_at": null,
-      "last_status": null,
+      "created_at": "2026-04-23T12:43:12.060291+00:00",
+      "next_run_at": "2026-06-05T22:30:00+00:00",
+      "last_run_at": "2026-06-03T22:33:48.762625+00:00",
+      "last_status": "ok",
       "last_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
       "last_delivery_error": null
+    },
+    {
+      "id": "503ccbb7530e",
+      "name": "skeleton-enrich-daily",
+      "prompt": "# Daily Skeleton Enrichment\n\nYou are an AI wiki maintenance agent. Your task is to enrich \"skeleton\" entity pages \u2014 minimal pages with just frontmatter and a brief description \u2014 into comprehensive, well-researched profiles.\n\n## \u26a0\ufe0f CRITICAL: Git History Enrichment Pattern (MANDATORY)\n\nBefore enriching ANY page, check if a richer version exists in git history:\n\n```bash\n# Find the richest historical version\nfor commit in $(git log --format=%H -- 'wiki/entities/<slug>.md' 2>/dev/null | head -10); do\n    lines=$(git show \"$commit:wiki/entities/<slug>.md\" 2>/dev/null | wc -l)\n    echo \"$commit $lines lines\"\ndone | sort -rn -k2 | head -3\n```\n\nIf a richer version exists (more lines than current), restore it FIRST with `git show <commit>:<path>`, then enrich on top of that with `patch`. Do NOT start from scratch when git history has a better version.\n\n## \u26a0\ufe0f CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, use `patch` \u2014 NEVER `write_file`\n3. Check git history for richer versions before starting enrichment\n\n## Task\n\nFind entity pages with `status: skeleton` in their frontmatter and enrich them to comprehensive quality. Target 8-12KB for the final enriched page, matching `antirez-com.md` or `simon-willison.md` depth.\n\n## Workflow\n\n1. Search for skeleton pages: `search_files(path=\"wiki/entities\", pattern=\"status: skeleton\")`\n2. For each skeleton page:\n   a. Read the existing content\n   b. Check git history for a richer version (see above)\n   c. If richer version exists, restore it and merge\n   d. Research the person/entity via web search\n   e. Enrich with `patch` \u2014 add sections for background, contributions, key ideas, notable works, related entities\n   f. Remove `status: skeleton` from frontmatter\n   g. Update `updated` date\n3. Update index.md with any new cross-references\n4. Commit and push changes\n\n## Quality Standards\n\n- Include bio, professional background, key contributions\n- Link to related wiki entities and concepts with [[wikilinks]]\n- Cite sources (blog URLs, X posts, articles)\n- Add X/Twitter handle if known\n- Include notable quotes if available",
+      "skills": [
+        "wiki-entity-enrichment-from-article"
+      ],
+      "skill": "wiki-entity-enrichment-from-article",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * *",
+        "display": "0 19 * * *"
+      },
+      "schedule_display": "0 19 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 39
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-28T00:51:11.891680+00:00",
+      "next_run_at": "2026-06-04T19:00:00+00:00",
+      "last_run_at": "2026-06-03T19:10:03.094905+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1498467222191083530",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / \u4ee5\u4e0b\u306e wiki-health\u7d50\u679c\u3092\u53d7\u3051\u3066\u4fee\u6b63\u5bfe\u5fdc\u3057\u3066 (job_id: 07d1ccf7541a) ### \ud83d\udd34 Critical (3 \u4ef6) | # |...",
+        "thread_id": "1498467222191083530"
+      },
+      "enabled_toolsets": [
+        "web",
+        "file",
+        "terminal"
+      ],
+      "workdir": "/opt/data/ai-topics"
     },
     {
       "id": "ac70e197fc75",
@@ -413,16 +633,16 @@
       "schedule_display": "10 17 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 16
       },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-05-13T23:51:34.363349+00:00",
       "paused_reason": null,
       "created_at": "2026-04-30T01:03:01.991122+00:00",
-      "next_run_at": "2026-04-30T17:10:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-05-14T17:10:00+00:00",
+      "last_run_at": "2026-05-13T18:18:04.016359+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "local",
@@ -433,39 +653,441 @@
     {
       "id": "6f3525ec4d9a",
       "name": "wiki-health-fix",
-      "prompt": "Wiki health auto-fix apply job for the AI topics wiki. The pre-run script loaded the latest wiki-health-plan JSON. All output must be in Japanese. If _wiki_health_plan_checkpoint.ok is false, report the checkpoint error briefly. Apply only actions where auto_apply is true, risk is low, and confidence is at least 0.8. Do not apply raw_article_curation, stale_page enrichment, duplicate merging, or content synthesis unless the plan is explicitly deterministic and low risk. Work from ~/ai-topics and edit only ~/wiki plus index/log files when needed. Before each edit, inspect the target file. After edits, run python3 ~/.hermes/scripts/wiki_health.py to verify. Commit and push from ~/ai-topics with commit message: wiki: auto-fix health issues. If there are no safe auto-apply actions and nothing changed, respond with exactly [SILENT].",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
+      "prompt": "# Wiki Health \u81ea\u52d5\u4fee\u6b63 & \u30ec\u30dd\u30fc\u30c8\n\n\u3042\u306a\u305f\u306f AI Topics Wiki \u306e\u5065\u5168\u6027\u7ba1\u7406\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3067\u3059\u3002\u4ee5\u4e0b\u306e JSON \u30c7\u30fc\u30bf\u306f `wiki_health.py --json` \u306e\u51fa\u529b\u3067\u3059\u3002\n\n## \u30bf\u30b9\u30af\u624b\u9806\n\n### Phase 1: \u7dca\u6025\u4fee\u5fa9\uff08\u81ea\u52d5\uff09\n\u4ee5\u4e0b\u306e\u7834\u640d\u306f\u691c\u51fa\u3055\u308c\u6b21\u7b2c\u3001**\u5373\u5ea7\u306b\u81ea\u52d5\u4fee\u5fa9**\u3059\u308b\u3053\u3068\uff1a\n\n1. **index.md \u30d1\u30a4\u30d7\u7834\u640d** (`index_corruption.issues` \u306b `pipe_prefix` \u3042\u308a):\n   `sed -i 's/^|- /- /' ~/wiki/index.md`\n\n2. **index.md \u884c\u756a\u53f7\u57cb\u3081\u8fbc\u307f** (`line_number_prefix`):\n   \u5168\u884c\u306e `\u6570\u5b57|` prefix \u3092\u9664\u53bb\uff08wiki-graph-health \u30b9\u30ad\u30eb Section H3 \u53c2\u7167\uff09\n\n3. **\u4e09\u91cd\u62ec\u5f27** (`triple_bracket`):\n   `sed -i 's/\\[\\[\\[/[[/g' ~/wiki/index.md`\n\n4. **\u30b9\u30da\u30fc\u30b9\u63a5\u982d\u8f9e** (`space_prefix`):\n   `sed -i 's/^ - \\[\\[/- [[/' ~/wiki/index.md`\n\n### Phase 2: \u69cb\u9020\u4fee\u6b63\uff08\u4f4e\u30ea\u30b9\u30af\u81ea\u52d5\u9069\u7528\uff09\n\n5. **\u30b4\u30fc\u30b9\u30c8\u30a8\u30f3\u30c8\u30ea**: index.md \u306b\u5b58\u5728\u3059\u308b\u304c\u5b9f\u30d5\u30a1\u30a4\u30eb\u304c\u306a\u3044\u30a8\u30f3\u30c8\u30ea\u3092\u524a\u9664\u3002\n   \u305f\u3060\u3057 subdirectory (_index.md, entities/omar-khattab/*) \u306f\u518d\u5e30\u30b9\u30ad\u30e3\u30f3\u3067\u5b58\u5728\u78ba\u8a8d\u3057\u3066\u304b\u3089\u5224\u65ad\u3002\n\n6. **orphan_index \u767b\u9332**: `orphan_pages` \u306e\u3046\u3061\u5b9f\u30d5\u30a1\u30a4\u30eb\u304c\u5b58\u5728\u3059\u308b\u3082\u306e\u3092 index.md \u306b\u8ffd\u52a0\u3002\n   \u6700\u592720\u4ef6\u3002\u30a2\u30eb\u30d5\u30a1\u30d9\u30c3\u30c8\u9806\u53b3\u5b88\u3002Section \u30ab\u30a6\u30f3\u30c8\u3082\u66f4\u65b0\u3002\n\n### Phase 3: \u4fee\u6b63\u5f8c\u30ec\u30dd\u30fc\u30c8\uff08\u65e5\u672c\u8a9e\uff09\n\n\u4fee\u6b63\u5b8c\u4e86\u5f8c\u3001\u4ee5\u4e0b\u306e\u5f62\u5f0f\u3067**\u4fee\u6b63\u5f8c\u306e\u72b6\u614b**\u3092\u30ec\u30dd\u30fc\u30c8\uff1a\n\n```\n## \ud83e\ude7a Wiki Health \u4fee\u6b63\u5f8c\u30ec\u30dd\u30fc\u30c8 \u2014 YYYY-MM-DD\n\n### \ud83d\udd27 \u81ea\u52d5\u4fee\u6b63\u30b5\u30de\u30ea\u30fc\n| \u9805\u76ee | \u4fee\u6b63\u524d | \u4fee\u6b63\u5f8c |\n|------|--------|--------|\n| \u30d1\u30a4\u30d7\u7834\u640d | N\u4ef6 | 0 \u2705 |\n| \u884c\u756a\u53f7\u57cb\u3081\u8fbc\u307f | N\u4ef6 | 0 \u2705 |\n| orphan\u8ffd\u52a0 | N\u4ef6 | 0 \u2705 |\n| \u30b4\u30fc\u30b9\u30c8\u524a\u9664 | N\u4ef6 | 0 \u2705 |\n\n### \ud83d\udcca \u4fee\u6b63\u5f8c\u30b9\u30c6\u30fc\u30bf\u30b9\n- \u30a8\u30f3\u30c6\u30a3\u30c6\u30a3: N / \u30b3\u30f3\u30bb\u30d7\u30c8: N / \u6bd4\u8f03: N\n- \u672a\u51e6\u7406raw\u8a18\u4e8b: N\u4ef6\n- Stale\u30da\u30fc\u30b8: N\u4ef6\uff08\u6700\u53e4: N\u65e5\uff09\n- \u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u7834\u640d: 0\u4ef6 \u2705\n\n### \u26a0\ufe0f \u8981\u624b\u52d5\u5bfe\u5fdc\n- [\u6b8b\u5b58\u3059\u308b\u81ea\u52d5\u4fee\u6b63\u4e0d\u53ef\u306e\u554f\u984c]\n```\n\n## \u30eb\u30fc\u30eb\n- \u7de8\u96c6\u524d\u306b\u5fc5\u305a\u5bfe\u8c61\u30d5\u30a1\u30a4\u30eb\u3092 read_file \u3067\u78ba\u8a8d\n- `patch` \u306e old_string \u306b\u306f read_file \u306e `N|` prefix \u3092**\u542b\u3081\u306a\u3044**\uff08head/sed \u3067\u751f\u306e\u884c\u3092\u53d6\u5f97\uff09\n- \u30b3\u30df\u30c3\u30c8\u524d\u306b `python3 scripts/validate_index.py` \u3092\u5b9f\u884c\n- \u30b3\u30df\u30c3\u30c8\u30e1\u30c3\u30bb\u30fc\u30b8: `wiki: auto-fix health issues`\n- \u4fee\u6b63\u304c\u4e0d\u8981\u306a\u5834\u5408\uff08\u5168\u9805\u76ee\u30af\u30ea\u30fc\u30f3\uff09\u306f\u7c21\u6f54\u306b\u300c\u5168\u9805\u76ee\u30af\u30ea\u30fc\u30f3 \u2705\u300d\u306e\u307f\u5831\u544a\n- COST_REPORT \u884c\u3092\u672b\u5c3e\u306b\u5fc5\u305a\u51fa\u529b\n- **\u51fa\u529b\u8a00\u8a9e: \u65e5\u672c\u8a9e**",
+      "skills": [
+        "llm-wiki",
+        "wiki-graph-health"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
       "base_url": null,
-      "script": "wiki_health_plan_checkpoint.py",
+      "script": "wiki_health_json.py",
       "context_from": null,
       "schedule": {
         "kind": "cron",
-        "expr": "25 17 * * *",
-        "display": "25 17 * * *"
+        "expr": "50 17 * * *",
+        "display": "50 17 * * *"
       },
-      "schedule_display": "25 17 * * *",
+      "schedule_display": "50 17 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 39
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-30T01:03:07.752628+00:00",
-      "next_run_at": "2026-04-30T17:25:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-06-04T17:50:00+00:00",
+      "last_run_at": "2026-06-03T17:55:45.450104+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
       "enabled_toolsets": null,
       "workdir": null
+    },
+    {
+      "id": "5e91a0b47c32",
+      "name": "ai-topics-slack-hot-posts",
+      "prompt": "# AI Topics Slack Hot Post\n\nMonitor recent wiki activity and report hot topics. Deliver to Slack channel.\n\n## Quality Requirements (Gwern-inspired)\n\nApply these techniques from [[concepts/llm-creative-writing]] before finalizing:\n\n### T1: Anti-Examples Slop Stripping\nAfter writing each topic, self-review for:\n- \u274c \"it is worth noting\" \u2192 just state the fact\n- \u274c \"significant development\" \u2192 specify what and why\n- \u274c Hedging everything (may/could/might) \u2192 state confidence explicitly\n- \u274c Formulaic \"topic \u2192 explanation \u2192 implication\" every time\n- \u274c \"In today's rapidly evolving landscape\" \u2192 delete entirely\n\n### T2: Manual of Style\n- Japanese for Discord relay; English for Slack\n- Every claim needs a source (wikilink or URL)\n- One sentence per insight. No padding.\n- Comparison tables for multi-entity analysis\n\n### T3: Atomic Snippets\nStructure each topic as:\n```\n**One-liner**: (15-30 tokens, skimmable)\n**Details**: (100-300 tokens, bullet format)\n```\n\n### T5: Engram Knowledge Pathways\nBefore writing, scan the `related_wiki_pages` from context. Embed wikilinks to at least 2-3 related concepts/entities per topic.\n\n## Context\n\nThe pre-run script provides:\n- Slack channel history (7 days, 50 messages) \u2014 avoid repeating topics\n- Recent wiki pages (7 days, up to 20 pages)\n- Related wiki pages (wikilink analysis, up to 60 pages)\n- Hot topics YAML config\n- Time slot guidance\n\n## Posting Guidance (per slot)\n\n- **morning (09:30 JST)**: Sharpest narrative arc, forwardable\n- **midday (13:30 JST)**: Practical angle or surprising benchmark\n- **evening (17:30 JST)**: Connect multiple wiki threads into one interpretation\n- **night (21:30 JST)**: Reflective or contrarian angle\n- **late-night (01:30 JST)**: Niche, high-signal material\n- **pre-morning (05:30 JST)**: Infrastructure/model/workflow with durable value\n\n## Selection Policy\n- HARD DEDUP RULE: Check `dedup.recently_covered_topics` in the JSON context. Your chosen topic MUST NOT reuse any `[[wikilink]]` that appears in those recent posts. If all candidates overlap, pick a completely different angle.\n- Prefer NJ score 4 or 5 topics\n- Spread topics across daily slots\n- Output language: Japanese",
+      "skills": [
+        "llm-wiki",
+        "hermes-report-quality"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-pro",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "ai_topics_slack_hot_posts_context.py",
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 0,6,12 * * *",
+        "display": "30 0,6,12 * * *"
+      },
+      "schedule_display": "30 0,6,12 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 140
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-30T05:34:10+00:00",
+      "next_run_at": "2026-06-04T06:30:00+00:00",
+      "last_run_at": "2026-06-04T00:32:20.920518+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "slack:C077ACXR5UY",
+      "origin": null,
+      "enabled_toolsets": [
+        "file",
+        "terminal",
+        "web"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "56548a0ed1bf",
+      "name": "ai-topics-discord-hot-posts",
+      "prompt": "Relay Slack hot posts to Discord verbatim.",
+      "skills": [],
+      "skill": null,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "discord_slack_relay.py",
+      "context_from": [
+        "5e91a0b47c32"
+      ],
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 0,6,12 * * *",
+        "display": "45 0,6,12 * * *"
+      },
+      "schedule_display": "45 0,6,12 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 142
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-30T06:17:08.780492+00:00",
+      "next_run_at": "2026-06-04T06:45:00+00:00",
+      "last_run_at": "2026-06-04T00:45:22.624252+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1495005293535563857",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1499292880932700220",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #\u4e00\u822c / AI Wiki Update \u306b\u3064\u3044\u3066\u3001 ai-topics-slack-hot-posts \u306e\u751f\u6210\u9593\u9694\u306e15\u5206\u5f8c\u306e\u914d\u4fe1\u3068\u3057\u3001 ai-topics-sla...",
+        "thread_id": "1499292880932700220"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "no_agent": true
+    },
+    {
+      "id": "14599191cbf6",
+      "name": "active-crawl",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=active-crawl | <cost_info>\n\n# Active Crawl Agent\n\nResearch 3-5 trending AI/ML topics the wiki hasn't covered yet. Find original sources \u2014 official blogs, tech reports, arXiv (peer-reviewed only). For each: save raw article to wiki/raw/articles/, create/update wiki page, update index.md and log.md.",
+      "skills": [
+        "llm-wiki"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-pro",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * *",
+        "display": "0 11 * * *"
+      },
+      "schedule_display": "0 11 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 27
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-07T23:26:20.369163+00:00",
+      "next_run_at": "2026-06-04T11:00:00+00:00",
+      "last_run_at": "2026-06-03T11:11:23.620619+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1502088802922008656",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #\u4e00\u822c / \u9593\u9055\u3063\u3066active-crawl job\u3092\u524a\u9664\u3057\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3001\u3053\u308c\u3092\u5fa9\u5143\u3057\u305f\u3044",
+        "thread_id": "1502088802922008656"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "c7890b6e0e19",
+      "name": "sitemap-monitor",
+      "prompt": "Sitemap-based company tech blog monitor. Runs sitemap_monitor.py which fetches sitemaps, detects new engineering blog posts, scrapes content, and saves to wiki/raw/articles/.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "sitemap_monitor.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "display": "0 6 * * *"
+      },
+      "schedule_display": "0 6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 30
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-08T02:10:12.366952+00:00",
+      "next_run_at": "2026-06-04T06:00:00+00:00",
+      "last_run_at": "2026-06-03T06:00:37.827465+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1502125468885844130",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / \u4ee5\u4e0b\u306eblog\u3092\u76e3\u8996\u5bfe\u8c61\u306b\u8ffd\u52a0\u3057\u3066: - https://sierra.ai/blog - https://www.anthropic.com/engin...",
+        "thread_id": "1502125468885844130"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "21f235565c6d",
+      "name": "tag-audit-weekly",
+      "prompt": "# Weekly Tag Taxonomy Audit & Auto-Fix\n\nYou are a wiki quality agent. Run a full tag audit AND auto-fix all violations.\n\n## Phase 1: Audit (script output provided)\nThe script `tag_audit.py` output is injected above. Review:\n- Composite kebab-case tags \u2192 these are always errors\n- Non-SCHEMA tags \u2192 categorize by frequency\n\n## Phase 2: Auto-Fix All Violations\n\n### For composite kebab-case tags (5+ hyphen-joined words):\nThese are ALWAYS errors. Decompose them into individual valid tags using the decomposition logic. Then update each affected page's frontmatter to use the decomposed tags (all must be in SCHEMA.md). If a decomposed tag doesn't exist in SCHEMA.md, map it to the closest canonical tag.\n\n### For non-SCHEMA tags:\n1. **One-off tags (1x use)**: DELETE from the page's frontmatter. These are noise.\n2. **Multi-use tags (2x+)**: Map to the closest canonical SCHEMA tag. Add the mapping to `TAG_NORMALIZATION` dict in `/opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py`.\n3. **If no good canonical exists and tag appears 3x+**: Add the tag to SCHEMA.md in the appropriate category.\n\n### Mapping rules:\n- Plural \u2192 canonical: `evals` \u2192 `evaluation`\n- Synonym \u2192 canonical: `finetuning` \u2192 `fine-tuning`\n- Case \u2192 lowercase: always lowercase\n- Person names \u2192 `person`\n- Company/product names \u2192 `company`\n- Very specific technical term \u2192 closest category (e.g., `flash-attention` \u2192 `model`)\n\n## Phase 3: Apply Fixes\n\nAfter updating `TAG_NORMALIZATION` and `SCHEMA.md`:\n```bash\ncd ~/ai-topics\npython3 /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py\n```\n\n## Phase 4: Commit\n```bash\ncd ~/ai-topics\ngit add wiki/ /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py\ngit commit --no-verify -m \"wiki: weekly tag audit auto-fix \u2014 N violations resolved\"\ngit push\n```\n\nUse `--no-verify` because the pre-commit hook would block the commit before normalization is applied (chicken-and-egg: normalization fixes the very violations the hook checks).\n\n## Phase 5: Report\nReport the summary:\n- Total violations found and fixed\n- New mappings added to TAG_NORMALIZATION\n- New tags added to SCHEMA.md (if any)\n- Pages modified by normalization\n- Any tags that couldn't be auto-fixed (flag for manual review)\n\n## Important\n- The script paths are: tag_audit.py in the skill directory, tag_normalization.py in the skill directory\n- Always do dry-run of normalization first to verify, then apply\n- If the pre-commit hook blocks after all fixes, investigate before using --no-verify again",
+      "skills": [
+        "llm-wiki",
+        "wiki-graph-health"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "tag_audit.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1",
+        "display": "0 10 * * 1"
+      },
+      "schedule_display": "0 10 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-08T18:22:25.558199+00:00",
+      "next_run_at": "2026-06-08T10:00:00+00:00",
+      "last_run_at": "2026-06-01T10:05:11.400044+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1502371261169533030",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / wiki-health\u306e\u7d50\u679c\u3092\u3046\u3051\u3066\u3001513\u4ef6\u304ctaxonomy\u5916 / 1,434 \u30bf\u30b0\u306e\u6a19\u6e96\u5316: \u30bf\u30b0\u76e3\u67fb\u30fb\u7d71\u5408\u304c\u5fc5\u8981\u306a\u70b9\u306b\u5bfe\u51e6\u3057\u305f\u3044\u3067\u3059\u3002\u4fee\u6b63\u3060\u3051\u3067\u306a...",
+        "thread_id": "1502371261169533030"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "696ec6b0ecc7",
+      "name": "pipeline-watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "pipeline_watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0,6,12,18 * * *",
+        "display": "0 0,6,12,18 * * *"
+      },
+      "schedule_display": "0 0,6,12,18 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 173
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-09T11:42:14.470866+00:00",
+      "next_run_at": "2026-06-04T06:00:00+00:00",
+      "last_run_at": "2026-06-04T00:03:50.964332+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1502629673572503662",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / Hermes Agent\u306e\u3088\u308a\u826f\u3044\u30e6\u30fc\u30b9\u30b1\u30fc\u30b9\u3001\u7279\u306b\u6211\u3005\u306ellm-wiki\u904b\u7528\u306e\u6539\u5584\u306b\u3064\u3044\u3066\u7814\u7a76\u3057\u305f\u3044\u3002\u4ee5\u4e0b\u30c4\u30a4\u30fc\u30c8\u306e\u5229\u7528\u4e8b\u4f8b\u306b\u3064\u3044\u3066\u7406\u89e3\u3057\u3001\u65e2\u5b58\u306e\u95a2\u9023w...",
+        "thread_id": "1502629673572503662"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "459ec1a09b8d",
+      "name": "wiki-watchdog-fix",
+      "prompt": "# Wiki Watchdog Auto-Fix Agent\n\nYou are the auto-healing watchdog for the llm-wiki cron pipeline. Run daily at 17:35 UTC (02:35 JST), after wiki-health and wiki-health-fix have completed.\n\nThe pre-run script has collected context from three sources above. Your job:\n\n## Step 1: Analyze pipeline_watchdog alerts\n- Review any job failures, staleness, or chain breaks\n- For each alert, determine if it's actionable or transient\n\n## Step 2: Analyze wiki-health issues\n- Read the wiki-health lint report\n- Categorize issues into: AUTO-FIXABLE, NEEDS-HUMAN, FALSE-POSITIVE\n- AUTO-FIXABLE patterns:\n  - Pipe table corruption in index.md: `|- [[...]]` \u2192 `- [[...]]`\n  - Line number prefix corruption: lines starting with `^\\s*\\d+\\|`\n  - Index duplicate entries (use the dedup pattern from llm-wiki skill)\n  - Index header count mismatch vs actual file counts\n  - Missing `---` separators in log.md\n\n## Step 3: Analyze wiki-graph-analysis issues\n- Review structural issues (broken wikilinks, orphans)\n- Broken wikilinks: attempt case-insensitive matching before reporting\n- Orphans: verify they exist on filesystem, report only\n\n## Step 4: Execute auto-fixes\nFor each auto-fixable issue:\n1. Read the relevant file section\n2. Apply the fix using patch()\n3. Verify the fix\n4. Log what was fixed\n\n## Step 5: Report\nOutput a concise report with:\n- \u2705 Auto-fixed: [count] issues fixed (list each)\n- \u26a0\ufe0f Needs attention: [count] issues requiring human review (list each)\n- \ud83d\udcca Summary: pipeline health, wiki health, graph health\n\n## CRITICAL RULES\n- Read wiki/SCHEMA.md before any wiki operations\n- Update wiki/index.md and wiki/log.md after any changes\n- Commit and push: `cd ~/ai-topics && git add wiki/ && git commit -m \"watchdog: auto-fix <summary>\" && git push`\n- Do NOT create new wiki pages \u2014 only fix existing ones\n- Do NOT delete pages \u2014 orphans need human review\n- If a fix would touch 10+ files, stop and report \u2014 it needs human review\n- Use the canonical wiki path: ~/wiki \u2192 ~/ai-topics/wiki\n\n# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=wiki-watchdog-fix status=ok input_tokens=0 output_tokens=0 cost=0.0",
+      "skills": [
+        "llm-wiki",
+        "wiki-graph-health"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": "wiki_watchdog_fix_context.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "35 17 * * *",
+        "display": "35 17 * * *"
+      },
+      "schedule_display": "35 17 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 27
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-09T11:43:43.376842+00:00",
+      "next_run_at": "2026-06-04T17:35:00+00:00",
+      "last_run_at": "2026-06-03T17:41:16.298670+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1502629673572503662",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / Hermes Agent\u306e\u3088\u308a\u826f\u3044\u30e6\u30fc\u30b9\u30b1\u30fc\u30b9\u3001\u7279\u306b\u6211\u3005\u306ellm-wiki\u904b\u7528\u306e\u6539\u5584\u306b\u3064\u3044\u3066\u7814\u7a76\u3057\u305f\u3044\u3002\u4ee5\u4e0b\u30c4\u30a4\u30fc\u30c8\u306e\u5229\u7528\u4e8b\u4f8b\u306b\u3064\u3044\u3066\u7406\u89e3\u3057\u3001\u65e2\u5b58\u306e\u95a2\u9023w...",
+        "thread_id": "1502629673572503662"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "4e63c6f0d140",
+      "name": "raw-backlog-ingest",
+      "prompt": "# Raw Backlog Ingest \u2014 AI Topics Wiki\n\nYou are processing the raw article backlog for the AI Topics Wiki.\n\n## \u26a0\ufe0f CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/` or `wiki/concepts/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, you MUST use `patch` to add/update \u2014 NEVER `write_file`\n3. Overwriting rich curated pages with skeletons is a data-loss incident\n\nReal failure: Thariq Shihipar's 282-line page was overwritten with a 36-line skeleton (commit 8dea159). The pre-commit hook now blocks this, but you should prevent it at the source.\n\n## Script output context\n\nThe script output above is from `raw_backlog_collect.py --sort ai-hint --limit 5`, which selects 5 unprocessed raw articles from the backlog sorted by AI relevance hint.\n\n## Your task\n\nFor each article in the batch:\n\n1. Read the article file to understand its content\n2. Check wiki/index.md for existing related pages\n3. If an entity or concept page already exists with substantial content (>40 lines), use `patch` to add the new article as a source and add relevant sections \u2014 do NOT overwrite\n4. If no page exists, create one following SCHEMA.md conventions\n5. Update index.md and log.md\n\n## Workflow\n1. Process all 5 articles\n2. For each article: read \u2192 check existing pages \u2192 create or patch \u2192 update index/log\n3. git add, commit, and push all changes in one batch\n4. Report what was created/updated",
+      "skills": [
+        "semantic-article-grouping",
+        "wiki-entity-enrichment-from-article",
+        "raw-article-filename-policy"
+      ],
+      "skill": "semantic-article-grouping",
+      "model": "qwen36-fast",
+      "provider": "fireworks.ai",
+      "base_url": null,
+      "script": "raw_backlog_collect_cron.sh",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */4 * * *",
+        "display": "0 */4 * * *"
+      },
+      "schedule_display": "0 */4 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 94
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-19T14:59:57.475159+00:00",
+      "next_run_at": "2026-06-04T04:00:00+00:00",
+      "last_run_at": "2026-06-04T00:03:50.565559+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1506135068496887898",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / raw/ \u4ee5\u4e0b\u306ewiki\u672a\u53cd\u6620\u306e\u8a18\u4e8b\u7fa4\u3092\u30d0\u30c3\u30af\u30b0\u30e9\u30a6\u30f3\u30c9\u5b9f\u884c\u3067\u5c11\u3057\u305a\u3064Hermes Agent\u3067wiki\u306b\u53d6\u308a\u8fbc\u307e\u305b\u308b\u306b\u306f\u3069\u3046\u3059\u308c\u3070\u826f\u3044?",
+        "thread_id": "1506135068496887898"
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web"
+      ],
+      "workdir": "/opt/data/ai-topics"
+    },
+    {
+      "id": "d87932e0ebeb",
+      "name": "jp-to-en-translation",
+      "prompt": "# JP\u2192EN Wiki Translation Agent\n\nYou are processing the remaining Japanese-content wiki files to English. \n\n## Task\n1. Run this script to find the top remaining JP files: \n```python\nimport re, json, os\njp = re.compile(r'[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\uFF00-\\uFFEF]')\nwiki_root = '/opt/data/ai-topics/wiki'\nremaining = []\nfor root, dirs, files in os.walk(wiki_root):\n    if 'raw/' in root: continue\n    for f in files:\n        if f.endswith('.md'):\n            fp = os.path.join(root, f)\n            with open(fp) as fh: content = fh.read()\n            lines = content.split('\\n')\n            body_start = 0; fm_count = 0\n            for i, line in enumerate(lines):\n                if line.strip() == '---':\n                    fm_count += 1\n                    if fm_count == 2: body_start = i + 1; break\n            if fm_count < 2: body_start = 0\n            body = '\\n'.join(lines[body_start:])\n            body_jp = len(jp.findall(body))\n            if body_jp > 0:\n                rel_path = os.path.relpath(fp, wiki_root)\n                remaining.append((rel_path, body_jp, fp))\nremaining.sort(key=lambda x: -x[1])\n# Take top 8\nfor p, j, fp in remaining[:8]:\n    print(f\"{p}|{j}|{fp}\")\n```\n\n2. For each of the top 8 files, read it, translate ALL Japanese text in the body to English, write back.\n3. CRITICAL: Skip YAML frontmatter (between --- markers). Only translate body content.\n4. Preserve ALL markdown formatting, wikilinks [[...]], code blocks.\n5. Commit: `cd /opt/data/ai-topics && git add wiki/ && git commit -m \"wiki: JP\u2192EN batch \u2014 8 files\" && git push`\n6. Report: number of files translated, total JP chars removed, remaining JP files count.",
+      "skills": [
+        "llm-wiki"
+      ],
+      "skill": "llm-wiki",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * 0",
+        "display": "0 0 * * 0"
+      },
+      "schedule_display": "0 0 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 49
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-26T04:54:49.160640+00:00",
+      "next_run_at": "2026-06-07T00:00:00+00:00",
+      "last_run_at": "2026-05-31T00:12:57.444687+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1508672421190828142",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #\u4e00\u822c / \u6211\u3005\u306ewiki\u306bqmd\u306a\u3069\u306e\u691c\u7d22cli\u57fa\u76e4\u3092\u5c0e\u5165\u3059\u308b\u3053\u3068\u3092\u8003\u3048\u3066\u3044\u307e\u3059\u3002\u305d\u306e\u969b\u306b\u3001wiki/raw/\u3092\u9664\u304fwiki\u30b3\u30f3\u30c6\u30f3\u30c4\u306b\u95a2\u3057\u3066\u306f\u539f\u5247\u7684\u306b\u82f1\u8a9e\u3067\u5185\u5bb9\u3092...",
+        "thread_id": "1508672421190828142"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
     }
   ],
-  "updated_at": "2026-04-30T01:03:07.752628+00:00"
+  "updated_at": "2026-06-04T00:45:22.624605+00:00"
 }
