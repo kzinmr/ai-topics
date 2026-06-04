@@ -12,6 +12,7 @@ tags:
 sources:
   - https://docs.google.com/presentation/d/1EqEXSIjZo-MyA7f7r5nCuzCBrQmY0pA4VHtqayXPr70/edit
   - https://colab.research.google.com/drive/1aUCvcBa1YdmsbIgYc74jlknl9_iRotp1
+  - raw/articles/2026-06-04_softwaredoug_exhaustive-search-beam-search.md
 ---
 
 # Long Running Search Agents — Design Patterns

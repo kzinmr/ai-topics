@@ -1,6 +1,16 @@
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 
+## 2026-06-04 Exhaustive Agentic Search (Cheat at Search supplement lecture)
+
+- **Source:** Google Slides — Doug Turnbull's supplement lecture for "Cheat at Search with Agents" series. https://docs.google.com/presentation/d/1CHTHMot5JNZCpGjJs7w-p1Yz-D56AFLeVFhjJky5L20
+
+- **New raw article:** [[raw/articles/2026-06-04_softwaredoug_exhaustive-search-beam-search]]
+
+- **New concept page:** [[concepts/exhaustive-agentic-search]] — Filesystem-metaphor search tools, BEAM search as systematic directory traversal, subagent-as-tool composition, orchestrator pattern, expert gathering with NAICS classification + embedding-based local search, personality tracking across runs.
+
+- **Updated:** [[concepts/agent-steering]] (added source reference + cross-link to new concept page), [[concepts/long-running-search-agents]] (added source reference), [[index.md]] (added raw article + concept page entries)
+
 ## 2026-06-03 x-bookmarks-ingest | OPSD empirical analysis (ar0cket1) + LangChain RubricMiddleware
 
 - **Source:** X bookmarks batch (2 processable / 4 total). ar0cket1 OPSD X Article (May 12) + LangChain RubricMiddleware X Article (Jun 2)

@@ -16,6 +16,7 @@ aliases:
   - harness-control-loop
 sources:
   - raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md
+  - raw/articles/2026-06-04_softwaredoug_exhaustive-search-beam-search.md
 ---
 
 # Agent Steering
@@ -207,6 +208,8 @@ Turnbull raises the question of whether "search" (randomly issuing keyword queri
 4. Implement pruning based on relevance signals
 
 This reimagines search as **systematic traversal** rather than **stochastic probing** — closer to how a human researcher explores a library than how a search engine retrieves documents.
+
+> For full implementation details (filesystem tools, subagent-as-tool composition, orchestrator pattern, expert gathering with NAICS classification, personality tracking), see [[concepts/exhaustive-agentic-search]].
 
 ## Design Principles
 
