@@ -12,6 +12,7 @@ sources:
   - https://github.com/alexzhang13/rlm
   - raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not.md
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md
+  - raw/articles/2026-04-26_isaacflath_pi-harness-rlm-late-interaction.md
   - raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
   - raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf
 ---
@@ -623,4 +624,5 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 - **[[concepts/typed-rlm]]** — Typed functional runtime variant (Huawei); formal proofs for termination, cost bounds, optimal partition
 - **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[entities/alex-zhang]]** — Primary author, RLM creator
-- **[[entities/omar-khattab]]** — Co-author, DSPy creator, ColBERT lineage
+- [[entities/omar-khattab]] — Co-author, DSPy creator, ColBERT lineage
+- [[entities/isaac-flath]] — Pi Harness: practical RLM implementation seeded with late interaction retrieval (PyLate/LightOn), REPL-as-Context pattern

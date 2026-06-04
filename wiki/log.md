@@ -1,3 +1,11 @@
+## 2026-06-04 X Note Tweet ingest | Isaac Flath — Pi Harness (RLM + Late Interaction)
+
+- **Source**: https://x.com/isaac_flath/status/2048462111567982823
+- **Raw article**: `wiki/raw/articles/2026-04-26_isaacflath_pi-harness-rlm-late-interaction.md`
+- **Created entity**: `wiki/entities/isaac-flath.md` — Isaac Flath, AI product engineer & educator. Pi Harness architecture (RLM + PyLate late interaction retrieval + REPL-as-Context). AI Engineering Club founder.
+- **Updated**: `wiki/concepts/rlm-recursive-language-models.md` — Added Isaac Flath / Pi Harness cross-reference and source link
+- **Updated**: `wiki/index.md` — Added Isaac Flath entity entry (both sections)
+
 ## 2026-06-04 youtube-ingest | Doug Turnbull "AutoReSEARCH" HaystackConf talk
 
 - **Source**: YouTube — HaystackConf 2026 (Jd2_7sVXUxA), Doug Turnbull, "AutoReSEARCH — Ranking coded by agents" (47:20)
@@ -6208,3 +6216,10 @@ User requested ingestion of https://x.com/antoine_chaffin/status/206208123284268
 3. @antoine_chaffin reframed: the goal is sublinear querying, not information reconstruction
 
 Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehensively. Duplicate `entities/ben-clavie.md` was removed.
+
+## 2026-06-04 — Hypencoder paper ingestion
+
+- Added `raw/articles/2025-02-07_arxiv_hypencoder-hypernetworks-information-retrieval.md` — SIGIR 2025 paper by Killingback, Zeng, Zamani (UMass Amherst)
+- Created `concepts/hypencoder.md` — Query-Specific Neural Relevance via Hypernetworks
+- Updated `index.md` with new concept entry
+- Key insight: replaces inner-product similarity with dynamically generated neural network (q-net) via hypernetwork; outperforms 7B RepLLaMA with 110M params
