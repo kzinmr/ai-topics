@@ -1,3 +1,34 @@
+## 2026-06-04 manual-research | Augment Code Cosmos platform research and entity page enrichment
+
+- **FETCHED:** raw/articles/2026-06-04_augment-code_cosmos-platform.md — Fetched and saved full article "Hello, Cosmos: the platform for AI-native engineering teams" from augmentcode.com blog. Published 2026-06-03 by Chris Kelly (Product Lead, Cosmos).
+- **ENRICHED:** [[entities/augment]] — Major update: Added Cosmos Platform section (announced June 2026), expanded company facts table (HQ, employees, total $252M funding, investors including Eric Schmidt), added platform capabilities (agentic SDLC, teams of agents, MCP support, shared filesystem/memory, natural language configuration, run-anywhere deployment). Added tags: product, platform, agent-platform, agent-orchestration, ai-native. Updated index entry.
+- **UPDATED:** index.md — Updated augment entry to reflect $252M total funding, platform positioning, and Cosmos launch.
+- **Community reaction:** Searched but limited results; Cosmos was just announced June 3, 2026. Early-stage community reaction not yet available on HN/Reddit/Twitter in searchable form.
+
+
+## 2026-06-04 active-crawl | 4 topics researched: GPT-Rosalind, Augment Cosmos, Frontier Safety Blueprint, Stack Benchmarking
+
+- **Upstream:** Active crawl cron job — blogwatcher DB scan (80 articles, 28 blogs) + HN search
+- **New concept page:** [[concepts/gpt-rosalind]] — OpenAI's life sciences research model series built on GPT-5.5. MedChemBench (27.5%), GeneBench (21.6%), LabWorkBench (63.2%). LifeSciBench evaluation framework. Life Sciences Research + NGS Analysis plugins via Codex. Novo Nordisk partnership. Rosalind Biodefense application.
+- **Enriched entity page:** [[entities/augment]] — Added Cosmos Platform section (June 2026 launch). Agentic SDLC, teams of agents, MCP support, natural language configuration, shared filesystem/memory. $252M total funding. Expanded company facts.
+- **New concept page:** [[concepts/frontier-safety-blueprint]] — OpenAI's June 2026 democratic governance proposal. CAISI expansion, mandatory frontier evaluations. HN: 15 points, criticism as regulatory capture, no mention of open source.
+- **New concept page:** [[concepts/stack-benchmarking]] — Ramp's custom accounting benchmark for Ramp Stack agentic accounting assistant. Frontier model evaluation, skill ablation, memory architecture. Published June 3, 2026 by Ryan Stevens.
+- **New raw articles:** raw/articles/2026-06-04_openai_gpt-rosalind-new-capabilities.md, raw/articles/2026-06-04_augment-code_cosmos-platform.md, raw/articles/2026-06-04_openai_frontier-safety-blueprint.md, raw/articles/2026-06-04_ramp_stack-benchmarking.md
+- **Content extraction notes:** OpenAI articles blocked by Cloudflare challenge; Ramp article JS-only SPA. Pages based on metadata + HN discussion + available context. Will enrich when full content accessible.
+- **Cross-references:** [[entities/openai]], [[concepts/ai-safety]], [[concepts/ai-governance]], [[concepts/agent-evaluation]], [[concepts/memory-systems]], [[entities/ramp]]
+- **index.md:** Added 4 entries, updated header counts (2245 total, 1456 concepts)
+
+
+## 2026-06-04 gpt-rosalind-research | New concept page: GPT-Rosalind + raw article from June 2026 capabilities update
+
+- **Source:** OpenAI Blog — "Introducing new capabilities to GPT-Rosalind" (June 4, 2026). https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind
+- **New raw article:** [[raw/articles/2026-06-04_openai_gpt-rosalind-new-capabilities]] — Full article content, benchmark data, case studies
+- **New concept page:** [[concepts/gpt-rosalind]] — GPT-Rosalind: OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment.
+- **Key facts:** LifeSciBench (6 workflow areas), MedChemBench (27.5% vs GPT-5.5 25.1%), GeneBench (21.6% vs 20.4%), LabWorkBench (63.2% vs 55.8%). Consistent token savings (5-31%). Life Sciences Research + NGS Analysis plugins via Codex. Novo Nordisk partnership. Rosalind Biodefense.
+- **HN reaction (April 2026 launch):** 102 points, 30 comments. Criticism: gated access, naming controversy (Franklin), benchmark selectivity vs Anthropic. Defense: LLMs already used in real research.
+- **Cross-references:** [[entities/openai]], [[entities/gpt-5.5]]
+- **index.md:** Added concept entry, updated header counts (2358 pages, 1718 indexed, 1559 concepts)
+
 ## 2026-06-04 blog-wiki-ingest | 5 pages enriched from blog triage (3 takes, 2 references)
 
 - **Upstream:** Blog-triage pipeline (triaged 2026-06-04T07:33); triage JSON recovered from checkpoint file at `~/.hermes/cron/data/blog_ingest/triage_latest.json`. 16 blog articles: 3 takes, 3 references, 10 skips.

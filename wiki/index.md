@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-04 | Total pages: 2357 | Indexed entries: 1717 | Concepts: 1558 | Entities: 762
+> Last updated: 2026-06-04 | Total pages: 2245 | Indexed entries: 1722 | Concepts: 1456 | Entities: 752
 
-## Entities (762 pages)
+## Entities (752 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -728,7 +728,7 @@
 - [[entities/aditya-bawankule]] — Aditya Bawankule — technical blogger covering AI coding agents, Codex, meta-prompting, and developer tooling
 - [[entities/anyscale]] — Anyscale — Ray framework for scalable AI/ML compute. Founded by UC Berkeley RISELab creators.
 - [[entities/applied-intuition]] — Applied Intuition — Physical AI autonomy platform. $15B valuation. Serves 18 of top 20 OEMs and U.S. Army.
-- [[entities/augment]] — Augment Code — AI coding assistant. $227M raised at $977M valuation. CEO Scott Dietzen.
+- [[entities/augment]] — Augment Code — AI coding platform. $252M raised at $977M valuation. CEO Scott Dietzen. Launched Cosmos AI-native engineering platform (June 2026).
 - [[entities/baseten]] — Baseten — ML model inference platform. $850M valuation. Optimized LLM serving infrastructure.
 - [[entities/bedrock-robotics]] — Bedrock Robotics — Robotics company focused on autonomous systems.
 - [[entities/braintrust]] — Braintrust — AI observability and evaluation platform. Codex case study: 50% team adoption in one month, speed-enabled autonomous problem-solving. CEO: Ankur Goyal.
@@ -1284,6 +1284,7 @@
 - [[concepts/freshstack-benchmark]] — FreshStack Benchmark — AI agent evaluation benchmark. Framework-agnostic, covers diverse real-world scenarios.
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation — Vlad Feinberg (Google/TPU)'s guide to frontier lab jobs. Kernel work is the biggest bottleneck, Chinchilla law derivation, Jax implementation, Pallas kernel optimization. Hiring test benchmarks.
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: Ultra-difficult coding agent benchmark (Proximal Labs). 20-hour limit, 3 categories (Implementation/Performance/Research) × 17 tasks. GPT-5.5+Codex leads with avg rank 2.35 (Dominance 83%). Documents conservative (GPT-5.4) vs aggressive (Opus 4.6) behavior, overconfidence/cheating behavior.
+- [[concepts/frontier-safety-blueprint]] — Frontier Safety Blueprint — OpenAI's June 2026 policy proposal for democratic governance of frontier AI. Mandatory safety evaluations, CAISI expansion, regulatory framework. Criticized as regulatory capture.
 - [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized 
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
@@ -1317,6 +1318,7 @@
 - [[concepts/gpt-model-milestones]] — GPT Model Milestones
 - [[concepts/gpt-models]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
 - [[concepts/gpt-realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
+- [[concepts/gpt-rosalind]] — GPT-Rosalind — OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment. June 2026 updated with LifeSciBench, MedChemBench, GeneBench, LabWorkBench + Life Sciences/NGS plugins.
 - [[concepts/gpu-cloud-rankings]] — GPU Cloud Infrastructure Rankings (ClusterMAX). SemiAnalysis rating system for 209 Neoclouds across 10 criteria. CoreWeave Platinum, Nebius/Oracle/Azure/Fluidstack/Crusoe Gold. Slurm-on-K8s, GB200 NVL72 reliability, container security.
 - [[concepts/gpu-cluster-tco-goodput]] — GPU Cluster TCO & Goodput Framework. SemiAnalysis methodology decomposing TCO into 8 line items (GPUs, Storage, Networking, Control Plane, Support, Goodput Expense, Setup, Debugging). TorchFT vs AWS Checkpointless vs TorchPass fault-tolerance comparison.
 - [[concepts/gpu-mode]] — GPU MODE — Largest GPU programming community (gpumode.com), co-founded by Mark Saroufim. 500K+ kernel competition submissions, Project Popcorn, KernelBook dataset, KernelGuard anti-cheat system. AI agents became primary competitors Jan 2026.
@@ -1587,6 +1589,7 @@
 - [[concepts/speech-audio-asr-tts-voice]] — Speech, Audio, ASR, TTS, Voice — Speech recognition, audio processing, text-to-speech, and voice AI technologies.
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
+- [[concepts/stack-benchmarking]] — Stack Benchmarking (Ramp) — Ramp's custom accounting benchmark for developing Ramp Stack agentic accounting assistant. Frontier model evaluation, skill ablation, memory architecture.
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch — Full-stack LLM implementation course covering pretraining, tokenization, inference, and alignment.
 - [[concepts/starchild-1]] — Starchild-1 — Odyssey ML's real-time multimodal world model. Autoregressively generates synchronized audio+video. Streaming interactive control. Causal distillation pipeline.
 - [[concepts/state-of-agentic-coding]] — Monthly podcast by Armin Ronacher & Ben Vinegar (5 episodes, Dec 2025–Apr 2026). Covers model dynamics, context management, slop forks, quality crisis, meta-agentic programming.
