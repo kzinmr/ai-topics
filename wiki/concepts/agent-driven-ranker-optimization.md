@@ -6,6 +6,7 @@ type: concept
 tags: [agentic-search, eval-loops, bm25, information-retrieval, coding-agents, overfitting, autoresearch, search, methodology, benchmark-optimization, agent-loop]
 sources:
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms
+  - raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf
 related:
   - autoresearch-bm25-msmarco
   - rlm-recursive-language-models

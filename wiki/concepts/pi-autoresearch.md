@@ -86,6 +86,8 @@ The key insight: humans correctly deprioritize boring optimization work. An auto
 ## Related Concepts
 
 - [[concepts/karpathy-loop]] — The original autoresearch for ML training
+- [[raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf]] — Doug Turnbull's HaystackConf talk applying autoresearch to search ranking (BM25/RRF optimization with guardrails)
+- [[concepts/agent-driven-ranker-optimization]] — Guardrail framework for agent-coded rankers
 - [[concepts/autonomous-component-optimization]] — Daniel Miessler's generalization to any knowledge work
 - [[concepts/agentic-loop]] — The canonical agent loop pattern
 - [[concepts/codex-goal]] — Codex /goal command (Ralph loop built-in)

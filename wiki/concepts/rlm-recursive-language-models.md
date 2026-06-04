@@ -13,6 +13,7 @@ sources:
   - raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not.md
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md
   - raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
+  - raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf
 ---
 
 # RLM (Recursive Language Models)

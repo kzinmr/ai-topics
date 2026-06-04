@@ -1,3 +1,11 @@
+## 2026-06-04 youtube-ingest | Doug Turnbull "AutoReSEARCH" HaystackConf talk
+
+- **Source**: YouTube — HaystackConf 2026 (Jd2_7sVXUxA), Doug Turnbull, "AutoReSEARCH — Ranking coded by agents" (47:20)
+- **Raw article**:  — Full talk transcript with structured sections covering: auto-research origins (Karpathy), dependency injection pattern for agent-coded rankers, overfitting problem (query-specific memorization), three guardrails (LLM overfit detection, patch size limits, train/validation/holdout splits), focused composition (narrow scope per round), MS Marco BM25 experiment (bigram discovery), and the Erdos analogy.
+- **Updated entities**:  — Added HaystackConf talk entry
+- **Updated concepts**:  — Added HaystackConf source;  — Added cross-references to HaystackConf talk and agent-driven-ranker-optimization;  — Added HaystackConf source
+- **Relation**: Conference version of Cheat at Search Lesson 7 (RLM and Auto Research). Complements existing raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md (classroom Q&A version).
+
 ## 2026-06-04 raw-backlog-ingest | 5-article batch: MAI-TechReport (already captured), Ed Zitron ROI (source add), 3 skips (PG, Luu, security)
 
 - **SKIPPED:** `raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md` — Content already captured in `entities/ed-zitron.md` (line 291: "AI Doesn't Have ROI — Enterprise Cost Crisis" section with token billing crisis, Uber $500M incident, kalopsia thesis, Dark Output critique). Added raw article path to `sources:` frontmatter. Bumped `updated` date to 2026-06-04.
