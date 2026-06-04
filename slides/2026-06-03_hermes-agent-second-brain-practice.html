@@ -283,18 +283,59 @@ svg { display: block; width: 100%; height: auto; }
 <section class="slide slide--dark slide--divider" data-title="Part 1">
   <div class="slide-content" style="justify-content:center;">
     <div class="divider-num reveal">01</div>
-    <span class="kicker reveal" style="margin-top:.6rem;">Part 1 ・ Design</span>
-    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">設計はファイルに、<br/>実行は Agent に</h2>
+    <span class="kicker reveal" style="margin-top:.6rem;">Part 1 ・ Architecture</span>
+    <h2 class="reveal" style="font-size:var(--title-size); margin-top:.4rem;">構成と設定<br/>— 公式ハーネス × ai-topics 拡張</h2>
   </div>
 </section>
 
 <!-- =================================================================
-     SLIDE 4 — 3-LAYER ARCHITECTURE (hero diagram)
+     PART 1 — OFFICIAL × CUSTOM MAP (hero)
      ================================================================= -->
-<section class="slide" data-title="3層アーキテクチャ">
+<section class="slide" data-title="公式×拡張の地図">
   <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">Architecture</span><span class="note">Karpathy LLM-Wiki パターン ／ ファイルシステムが永続化層</span></div>
-    <h2 class="reveal">知識ベースの3層構造</h2>
+    <div class="eyebrow-row reveal"><span class="kicker">The Map</span><span class="note"><strong style="color:#2f7d6b">🟩 公式</strong>＝機構 ／ <strong style="color:#b45f06">🟧 拡張</strong>＝ドメイン</span></div>
+    <h2 class="reveal">公式ハーネスの上に、自分のドメインを載せる</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 380" role="img" aria-label="公式ハーネスとai-topics拡張の2層地図">
+        <defs><marker id="mp" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L8,5 L0,10 Z" fill="#5d6c62"/></marker></defs>
+        <!-- 拡張 tier (top) -->
+        <rect class="pop" x="30" y="24" width="840" height="128" rx="14" fill="#fbeedd" stroke="#b45f06" stroke-width="2"/>
+        <text x="50" y="50" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#b45f06">🟧 ai-topics 拡張 — ドメイン（自分で足す）</text>
+        <g font-family="JetBrains Mono" font-size="13" text-anchor="middle">
+          <rect x="48" y="66" width="150" height="66" rx="9" fill="#fffdf7" stroke="#e3c79f"/><text x="123" y="95" fill="#18241f">wiki/ 3層</text><text x="123" y="116" fill="#5d6c62" font-size="11">+ SCHEMA.md</text>
+          <rect x="214" y="66" width="150" height="66" rx="9" fill="#fffdf7" stroke="#e3c79f"/><text x="289" y="95" fill="#18241f">_overrides/</text><text x="289" y="116" fill="#5d6c62" font-size="11">公式skill上書き</text>
+          <rect x="380" y="66" width="150" height="66" rx="9" fill="#fffdf7" stroke="#e3c79f"/><text x="455" y="95" fill="#18241f">_custom/</text><text x="455" y="116" fill="#5d6c62" font-size="11">独自skill</text>
+          <rect x="546" y="66" width="150" height="66" rx="9" fill="#fffdf7" stroke="#e3c79f"/><text x="621" y="95" fill="#18241f">config/feeds</text><text x="621" y="116" fill="#5d6c62" font-size="11">hot-topics/SOUL</text>
+          <rect x="712" y="66" width="142" height="66" rx="9" fill="#fffdf7" stroke="#e3c79f"/><text x="783" y="95" fill="#18241f">4× validator</text><text x="783" y="116" fill="#5d6c62" font-size="11">git pre-commit</text>
+        </g>
+        <!-- boundary -->
+        <line x1="30" y1="190" x2="870" y2="190" stroke="#5d6c62" stroke-width="1.4" stroke-dasharray="6 6"/>
+        <text x="450" y="184" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#5d6c62">Tool Boundary ・ 規約（AGENTS.md / MCP）</text>
+        <line x1="450" y1="152" x2="450" y2="188" stroke="#5d6c62" stroke-width="1.6" marker-end="url(#mp)"/>
+        <text x="462" y="176" font-family="Zen Kaku Gothic New" font-size="11" fill="#5d6c62">載る</text>
+        <!-- 公式 tier (bottom) -->
+        <rect class="pop" x="30" y="228" width="840" height="128" rx="14" fill="#e8efe9" stroke="#2f7d6b" stroke-width="2"/>
+        <text x="50" y="254" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#2f7d6b">🟩 Hermes 公式 — 機構（標準で備わる）</text>
+        <g font-family="JetBrains Mono" font-size="13" text-anchor="middle">
+          <rect x="48" y="270" width="150" height="66" rx="9" fill="#fffdf7" stroke="#cfe0d6"/><text x="123" y="299" fill="#18241f">AGENTS.md</text><text x="123" y="320" fill="#5d6c62" font-size="11">読み込み規約</text>
+          <rect x="214" y="270" width="150" height="66" rx="9" fill="#fffdf7" stroke="#cfe0d6"/><text x="289" y="299" fill="#18241f">skill 機構</text><text x="289" y="320" fill="#5d6c62" font-size="11">agentskills.io</text>
+          <rect x="380" y="270" width="150" height="66" rx="9" fill="#fffdf7" stroke="#cfe0d6"/><text x="455" y="299" fill="#18241f">cron / memory</text><text x="455" y="320" fill="#5d6c62" font-size="11">スケジューラ</text>
+          <rect x="546" y="270" width="150" height="66" rx="9" fill="#fffdf7" stroke="#cfe0d6"/><text x="621" y="299" fill="#18241f">permission</text><text x="621" y="320" fill="#5d6c62" font-size="11">承認 / sandbox</text>
+          <rect x="712" y="270" width="142" height="66" rx="9" fill="#fffdf7" stroke="#cfe0d6"/><text x="783" y="299" fill="#18241f">llm-wiki ほか</text><text x="783" y="320" fill="#5d6c62" font-size="11">同梱 skill</text>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal note" style="text-align:center;">ハーネスを替えても、<strong>ドメイン資産（wiki・config）は git に残る</strong>。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 1 — LLM-WIKI COMPOSITION (3-layer)
+     ================================================================= -->
+<section class="slide" data-title="llm-wikiの構成">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Composition</span><span class="note"><strong style="color:#2f7d6b">🟩</strong> skill自体は公式 ／ <strong style="color:#b45f06">🟧</strong> SCHEMA・規約で固有化</span></div>
+    <h2 class="reveal">llm-wiki の構成 — Karpathy LLM-Wiki</h2>
     <div class="stage reveal">
       <svg class="diagram" viewBox="0 0 900 420" role="img" aria-label="3層アーキテクチャ図">
         <defs>
@@ -324,12 +365,12 @@ svg { display: block; width: 100%; height: auto; }
         <!-- Layer 3 schema -->
         <g class="pop">
           <rect x="40" y="336" width="820" height="64" rx="12" fill="#fffdf7" stroke="#b45f06" stroke-width="2"/>
-          <text x="64" y="364" font-family="JetBrains Mono" font-size="15" fill="#b45f06" font-weight="700">LAYER 3 — SCHEMA.md ・ index.md（規約・タグ分類学・全索引）</text>
+          <text x="64" y="364" font-family="JetBrains Mono" font-size="15" fill="#b45f06" font-weight="700">LAYER 3 — SCHEMA.md ・ index.md（規約・タグタクソノミー・全索引）</text>
           <text x="64" y="388" font-family="Zen Kaku Gothic New" font-size="14" fill="#5d6c62">変更は規約更新時のみ ／ pre-commit で強制</text>
         </g>
       </svg>
     </div>
-    <p class="reveal note" style="text-align:center; margin-top:.4rem;">合計 <strong>2,327 ページ</strong> — 手で管理するのは現実的でない。だから Agent に回させる。</p>
+    <p class="reveal note" style="text-align:center; margin-top:.4rem;">RAG と違い知識を<strong>一度コンパイルして最新に保つ</strong>。相互参照は既に張られ、矛盾は既にフラグ済み。合計 <strong>2,327 ページ</strong>を Agent が維持。</p>
   </div>
 </section>
 
@@ -374,90 +415,96 @@ svg { display: block; width: 100%; height: auto; }
 </section>
 
 <!-- =================================================================
-     SLIDE 6 — AGENTS.md
+     PART 1 — EXTENSION CHANNELS (_overrides / _custom)
      ================================================================= -->
-<section class="slide" data-title="AGENTS.md">
+<section class="slide" data-title="拡張の2チャネル">
   <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">Config</span></div>
-    <h2 class="reveal"><code>AGENTS.md</code> = リポジトリの Single Source of Truth</h2>
-    <div class="two-col reveal" style="margin-top:1rem;">
+    <div class="eyebrow-row reveal"><span class="kicker">Extension</span><span class="note">公式の <strong style="color:#2f7d6b">skill機構🟩</strong> の上に、2通りで足す</span></div>
+    <h2 class="reveal">拡張の2チャネル：<code>_overrides</code> と <code>_custom</code></h2>
+    <div class="two-col reveal" style="margin-top:.9rem;">
       <div class="panel">
-        <span class="tag">// 人間のドキュメントではなく、Agent への指示書</span>
-        <ul class="bullets" style="margin-top:.2rem;">
-          <li>ディレクトリ構成とその役割</li>
-          <li>Wiki 3層の変更可能 / 不可ルール</li>
-          <li>ページ作成・更新の手順</li>
-          <li>Cron パイプライン全体図（28ジョブ）</li>
-          <li>よくある失敗とその対処法</li>
-        </ul>
-      </div>
-      <div class="panel accent" style="justify-content:center;">
-        <h3>CI/CD で例えるなら</h3>
-        <p><code>AGENTS.md</code> ＝ リポジトリの <strong>Makefile + README</strong>。</p>
-        <p class="note">Agent はこのファイルを読んで構造とルールを理解する。<strong>設定を変えたければ、このファイルを編集する。</strong></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =================================================================
-     SLIDE 7 — SCHEMA.md
-     ================================================================= -->
-<section class="slide" data-title="SCHEMA.md">
-  <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">Config</span></div>
-    <h2 class="reveal"><code>SCHEMA.md</code>：タグ分類学とページ閾値</h2>
-    <div class="two-col reveal" style="margin-top:1rem;">
-      <div class="panel">
-        <h3>タグ分類学（10カテゴリ）</h3>
-        <div class="chips" style="margin-top:.3rem;">
-          <span class="chip">model</span><span class="chip">reasoning</span><span class="chip on">company</span><span class="chip">tool</span><span class="chip">rag</span><span class="chip on">agentic-engineering</span><span class="chip">multi-agent</span><span class="chip">aws</span><span class="chip on">ai-adoption</span><span class="chip">…</span>
+        <span class="tag" style="color:#b45f06;">// _overrides/ — 公式skillをドメイン向けに上書き　🟧→🟩</span>
+        <div class="chips" style="margin-top:.35rem;">
+          <span class="chip on">llm-wiki</span><span class="chip">blog-post-writing</span><span class="chip">cron-job-management</span><span class="chip">wiki-graph-health</span><span class="chip">research-paper-writing</span>
         </div>
-        <p class="note" style="margin-top:.5rem;">タグは必ず分類学に存在すること。新タグは <strong>先に SCHEMA へ追記</strong>してから使う（タグの散らかりを防ぐ）。</p>
+        <p class="note" style="margin-top:.45rem;">公式skillの挙動を、この知識ベースの作法に合わせて差し替える。</p>
       </div>
-      <div class="panel">
-        <h3>ページ閾値</h3>
-        <ul class="bullets" style="margin-top:.2rem;">
-          <li><strong>作成</strong>：2+ ソースで言及 or 1ソースで中心的</li>
-          <li><strong>追加</strong>：既出なら既存ページを更新</li>
-          <li><strong>分割</strong>：200行超</li>
-          <li><strong>廃棄</strong>：内容が完全に superseded</li>
-        </ul>
-        <p class="note" style="margin-top:.4rem;">frontmatter 必須：<code>title/created/updated/type/tags/sources</code></p>
+      <div class="panel accent">
+        <span class="tag" style="color:#b45f06;">// _custom/ — 完全独自のドメインskill　🟧</span>
+        <div class="chips" style="margin-top:.35rem;">
+          <span class="chip">dreaming</span><span class="chip">daily-rss-triage</span><span class="chip">semantic-article-grouping</span><span class="chip">wiki-ingestion-pipelines</span><span class="chip">grokipedia-enrichment</span>
+        </div>
+        <p class="note" style="margin-top:.45rem;">公式に無いパイプラインを丸ごと新設する。</p>
       </div>
     </div>
+    <p class="reveal note" style="margin-top:.9rem; text-align:center;">設定の置き場所〔🟧〕：<code>AGENTS.md</code>（＝指示書 / Makefile+README）・<code>config/feeds/</code>・<code>hot-topics.yaml</code>・<code>SOUL.md</code></p>
   </div>
 </section>
 
 <!-- =================================================================
-     SLIDE 8 — PRE-COMMIT HOOK (gate diagram)
+     PART 1 — GUARDRAILS (layered: soft → hard)
      ================================================================= -->
-<section class="slide" data-title="Pre-commit hook">
+<section class="slide" data-title="Guardrails多層">
   <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">Guardrail</span></div>
-    <h2 class="reveal">Pre-commit Hook：Agent のミスをブロックする</h2>
+    <div class="eyebrow-row reveal"><span class="kicker">Guardrails</span></div>
+    <h2 class="reveal">Guardrails は多層 — まず skills に宿る</h2>
     <div class="stage reveal">
-      <svg class="diagram" viewBox="0 0 900 270" role="img" aria-label="pre-commit hook ゲート図">
-        <defs><marker id="ar3" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
-        <g class="pop"><rect x="20" y="100" width="170" height="70" rx="12" fill="#fffdf7" stroke="#d9ccb0" stroke-width="2"/>
-          <text x="105" y="132" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="16" fill="#18241f" font-weight="700">Agent が</text>
-          <text x="105" y="154" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="14" fill="#5d6c62">ページ作成 → commit</text></g>
-        <line x1="190" y1="135" x2="244" y2="135" stroke="#b45f06" stroke-width="2.6" marker-end="url(#ar3)"/>
-        <!-- gate -->
-        <g class="pop"><rect x="250" y="60" width="300" height="150" rx="14" fill="#10251c"/>
-          <text x="400" y="92" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#d98b34" font-weight="700">.githooks/pre-commit</text>
-          <rect x="276" y="108" width="248" height="38" rx="8" fill="#1c3a2c"/><text x="296" y="132" font-family="Zen Kaku Gothic New" font-size="15" fill="#fffaf0">① index.md は更新済みか</text>
-          <rect x="276" y="154" width="248" height="38" rx="8" fill="#1c3a2c"/><text x="296" y="178" font-family="Zen Kaku Gothic New" font-size="15" fill="#fffaf0">② tags は分類学に在るか</text></g>
-        <!-- pass / block -->
-        <path d="M550 110 H650" stroke="#2f7d6b" stroke-width="2.6" fill="none" marker-end="url(#ar3)"/>
-        <path d="M550 178 H650" stroke="#b45f06" stroke-width="2.6" fill="none" marker-end="url(#ar3)"/>
-        <g class="pop"><rect x="656" y="86" width="220" height="48" rx="10" fill="#eaf3ee" stroke="#2f7d6b" stroke-width="2"/>
-          <text x="766" y="116" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="16" fill="#2f7d6b" font-weight="700">✓ commit 通過</text></g>
-        <g class="pop"><rect x="656" y="154" width="220" height="48" rx="10" fill="#fbe9dc" stroke="#b45f06" stroke-width="2"/>
-          <text x="766" y="184" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="16" fill="#b45f06" font-weight="700">✗ commit ブロック</text></g>
+      <svg class="diagram" viewBox="0 0 900 320" role="img" aria-label="多層ガードレール（柔→硬）">
+        <defs><marker id="gd" markerWidth="9" markerHeight="9" refX="5" refY="6" orient="auto"><path d="M0,0 L7,6 L0,12 Z" fill="#9aa79c"/></marker></defs>
+        <!-- soft→hard axis -->
+        <line x1="40" y1="26" x2="40" y2="296" stroke="#9aa79c" stroke-width="2" marker-end="url(#gd)"/>
+        <text x="22" y="22" font-family="Zen Kaku Gothic New" font-size="12" fill="#2f7d6b">柔</text>
+        <text x="22" y="312" font-family="Zen Kaku Gothic New" font-size="12" fill="#b45f06">硬</text>
+        <g font-family="Zen Kaku Gothic New">
+          <rect class="pop" x="70" y="20" width="800" height="62" rx="10" fill="#fffdf7" stroke="#2f7d6b" stroke-width="2.4"/>
+          <text x="90" y="46" font-size="17" font-weight="700" fill="#18241f">① skills 内の検証</text><text x="90" y="69" font-size="13" fill="#5d6c62">trigger / 手順 / 落とし穴 / 検証ステップ を skill に焼き込む（例: skill-archive-safety）</text>
+          <text x="852" y="55" text-anchor="end" font-size="11" font-family="JetBrains Mono" fill="#2f7d6b">🟩機構+🟧内容</text>
+          <rect class="pop" x="70" y="92" width="800" height="56" rx="10" fill="#eef4f0" stroke="#2f7d6b" stroke-width="2"/>
+          <text x="90" y="117" font-size="17" font-weight="700" fill="#18241f">② Hermes 公式 built-in</text><text x="90" y="138" font-size="13" fill="#5d6c62">permission・承認フロー・sandbox</text>
+          <text x="852" y="124" text-anchor="end" font-size="11" font-family="JetBrains Mono" fill="#2f7d6b">🟩</text>
+          <rect class="pop" x="70" y="158" width="800" height="56" rx="10" fill="#fbeedd" stroke="#d98b34" stroke-width="2"/>
+          <text x="90" y="183" font-size="17" font-weight="700" fill="#18241f">③ AGENTS.md / SCHEMA.md 規約</text><text x="90" y="204" font-size="13" fill="#5d6c62">frontmatter必須 / タグはSCHEMAから / リッチページ上書き禁止 / 矛盾を消さない</text>
+          <text x="852" y="190" text-anchor="end" font-size="11" font-family="JetBrains Mono" fill="#b45f06">🟧</text>
+          <rect class="pop" x="70" y="224" width="800" height="64" rx="10" fill="#10251c" stroke="#b45f06" stroke-width="2.4"/>
+          <text x="90" y="252" font-size="17" font-weight="700" fill="#d98b34">④ git pre-commit（決定的）</text><text x="90" y="274" font-size="13" fill="#d8e2da">ステージ時に機械チェック — 4バリデータ（次スライド）</text>
+          <text x="852" y="261" text-anchor="end" font-size="11" font-family="JetBrains Mono" fill="#d98b34">🟧 deterministic</text>
+        </g>
       </svg>
     </div>
-    <div class="callout quote reveal" style="margin-top:.4rem;">「Agent makes a mistake → Engineer a solution → Agent never makes that mistake again.」— Mitchell Hashimoto（harness engineering）</div>
+    <p class="reveal note" style="text-align:center;"><strong>柔らかい層</strong>（skills・規約・確率的）→ <strong>硬い層</strong>（git hook・決定的）を重ねる。</p>
+  </div>
+</section>
+
+<!-- =================================================================
+     PART 1 — PRE-COMMIT (4 deterministic validators)
+     ================================================================= -->
+<section class="slide" data-title="pre-commit 4検証">
+  <div class="slide-content">
+    <div class="eyebrow-row reveal"><span class="kicker">Guardrail ・ deterministic</span><span class="note"><code style="font-size:.92em;">git config core.hooksPath .githooks</code> で有効化</span></div>
+    <h2 class="reveal">pre-commit：4つの決定的バリデータ 〔🟧〕</h2>
+    <div class="stage reveal">
+      <svg class="diagram" viewBox="0 0 900 300" role="img" aria-label="pre-commit 4バリデータのゲート図">
+        <defs><marker id="ar3" markerWidth="10" markerHeight="10" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#b45f06"/></marker></defs>
+        <g class="pop"><rect x="16" y="116" width="150" height="68" rx="12" fill="#fffdf7" stroke="#d9ccb0" stroke-width="2"/>
+          <text x="91" y="146" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="15" fill="#18241f" font-weight="700">Agent が</text>
+          <text x="91" y="168" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="13" fill="#5d6c62">wiki を commit</text></g>
+        <line x1="166" y1="150" x2="214" y2="150" stroke="#b45f06" stroke-width="2.6" marker-end="url(#ar3)"/>
+        <!-- gate with 4 checks -->
+        <g class="pop"><rect x="220" y="32" width="336" height="236" rx="14" fill="#10251c"/>
+          <text x="388" y="60" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#d98b34" font-weight="700">.githooks/pre-commit</text>
+          <rect x="242" y="74" width="292" height="40" rx="8" fill="#1c3a2c"/><text x="258" y="99" font-family="Zen Kaku Gothic New" font-size="14" fill="#fffaf0">① index.md 破損検出</text>
+          <rect x="242" y="120" width="292" height="40" rx="8" fill="#1c3a2c"/><text x="258" y="145" font-family="Zen Kaku Gothic New" font-size="14" fill="#fffaf0">② タグタクソノミー検査</text>
+          <rect x="242" y="166" width="292" height="40" rx="8" fill="#1c3a2c"/><text x="258" y="191" font-family="Zen Kaku Gothic New" font-size="14" fill="#fffaf0">③ コンテンツ退行（50%超縮小）</text>
+          <rect x="242" y="212" width="292" height="40" rx="8" fill="#1c3a2c"/><text x="258" y="237" font-family="Zen Kaku Gothic New" font-size="14" fill="#fffaf0">④ 日本語混入チェック</text></g>
+        <path d="M556 96 H656" stroke="#2f7d6b" stroke-width="2.6" fill="none" marker-end="url(#ar3)"/>
+        <path d="M556 204 H656" stroke="#b45f06" stroke-width="2.6" fill="none" marker-end="url(#ar3)"/>
+        <g class="pop"><rect x="662" y="72" width="222" height="48" rx="10" fill="#eaf3ee" stroke="#2f7d6b" stroke-width="2"/>
+          <text x="773" y="102" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="15" fill="#2f7d6b" font-weight="700">✓ 全通過 → commit</text></g>
+        <g class="pop"><rect x="662" y="180" width="222" height="48" rx="10" fill="#fbe9dc" stroke="#b45f06" stroke-width="2"/>
+          <text x="773" y="210" text-anchor="middle" font-family="Zen Kaku Gothic New" font-size="15" fill="#b45f06" font-weight="700">✗ 1つでも失敗 → ブロック</text></g>
+      </svg>
+    </div>
+    <div class="callout quote reveal" style="margin-top:.3rem;">4つとも「Agent が実際にやらかした失敗」から生まれた。<strong>失敗 → 決定的ガードレール</strong>（Ratchet, Mitchell Hashimoto）。</div>
   </div>
 </section>
 
@@ -478,34 +525,38 @@ svg { display: block; width: 100%; height: auto; }
 <section class="slide" data-title="1日の流れ">
   <div class="slide-content">
     <div class="eyebrow-row reveal"><span class="kicker">Scheduler</span><span class="note">自然言語 cron ／ 60秒ごとに tick ／ 配信先は任意のメッセンジャー</span></div>
-    <h2 class="reveal">知識ベースの1日（UTC）</h2>
+    <h2 class="reveal">知識ベースの1日（JST）</h2>
     <div class="stage reveal">
-      <svg class="diagram tall" viewBox="0 0 760 430" role="img" aria-label="24時間のジョブ時計">
-        <!-- clock ring -->
-        <g transform="translate(250,215)">
-          <circle r="170" fill="none" stroke="#d9ccb0" stroke-width="2"/>
-          <circle r="170" fill="none" stroke="#2f7d6b" stroke-width="6" stroke-dasharray="1068" stroke-dashoffset="0" class="draw" pathLength="1068" transform="rotate(-90)" opacity="0.35"/>
-          <circle r="120" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.4"/>
-          <text y="-12" text-anchor="middle" font-family="JetBrains Mono" font-size="14" fill="#5d6c62">24h</text>
-          <text y="14" text-anchor="middle" font-family="Bricolage Grotesque" font-size="30" font-weight="800" fill="#10251c">CRON</text>
-          <text y="40" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#b45f06">25 active / 28</text>
-          <!-- hour ticks for key jobs; angle = hour/24*360 -90 -->
-          <!-- 06:00 -> 90-90=0deg (right) ; compute manually -->
-          <!-- markers -->
-          <g class="pop">
-            <!-- 06:00 sitemap (90deg => bottom? use h*15deg from top) top=0 -->
-            <circle cx="0" cy="-170" r="7" fill="#b45f06"/>
-          </g>
+      <svg class="diagram tall" viewBox="0 0 760 430" role="img" aria-label="24時間のジョブ時計（JST）">
+        <!-- 24h clock ring (JST). center (240,210); markers at true angle θ = hour/24*360 from top, clockwise -->
+        <circle cx="240" cy="210" r="170" fill="none" stroke="#d9ccb0" stroke-width="2"/>
+        <circle class="draw" cx="240" cy="210" r="170" fill="none" stroke="#2f7d6b" stroke-width="6" stroke-dasharray="1068" stroke-dashoffset="1068" pathLength="1068" transform="rotate(-90 240 210)" opacity="0.30"/>
+        <circle cx="240" cy="210" r="116" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.4"/>
+        <text x="240" y="198" text-anchor="middle" font-family="JetBrains Mono" font-size="14" fill="#5d6c62">24h ・ JST</text>
+        <text x="240" y="224" text-anchor="middle" font-family="Bricolage Grotesque" font-size="30" font-weight="800" fill="#10251c">CRON</text>
+        <text x="240" y="248" text-anchor="middle" font-family="JetBrains Mono" font-size="13" fill="#b45f06">25 active / 28</text>
+        <!-- hour reference labels -->
+        <g font-family="JetBrains Mono" font-size="12" fill="#9aa79c" text-anchor="middle">
+          <text x="240" y="32">00</text><text x="424" y="214">06</text><text x="240" y="400">12</text><text x="52" y="214">18</text>
         </g>
-        <!-- labels with leader lines (right side list keyed by time) -->
-        <g font-family="JetBrains Mono" font-size="14">
-          <g class="pop"><circle cx="250" cy="45" r="6" fill="#2f7d6b"/><line x1="256" y1="45" x2="500" y2="45" stroke="#d9ccb0"/><text x="508" y="50" fill="#18241f"><tspan fill="#b45f06">06:00</tspan>  sitemap-monitor</text></g>
-          <g class="pop"><circle cx="380" cy="120" r="6" fill="#2f7d6b"/><line x1="386" y1="120" x2="500" y2="105" stroke="#d9ccb0"/><text x="508" y="110" fill="#18241f"><tspan fill="#b45f06">07:00</tspan>  blog ・ newsletter 収集→triage→ingest</text></g>
-          <g class="pop"><circle cx="420" cy="215" r="6" fill="#2f7d6b"/><line x1="426" y1="215" x2="500" y2="165" stroke="#d9ccb0"/><text x="508" y="170" fill="#18241f"><tspan fill="#b45f06">11:00</tspan>  active-crawl（hot-topics）</text></g>
-          <g class="pop"><circle cx="380" cy="310" r="6" fill="#d98b34"/><line x1="386" y1="310" x2="500" y2="225" stroke="#d9ccb0"/><text x="508" y="230" fill="#18241f"><tspan fill="#b45f06">18:00</tspan>  dreaming（夜間統合）</text></g>
-          <g class="pop"><circle cx="160" cy="330" r="6" fill="#2f7d6b"/><line x1="154" y1="330" x2="500" y2="285" stroke="#d9ccb0"/><text x="508" y="290" fill="#18241f"><tspan fill="#b45f06">22:00</tspan>  x-accounts-scan</text></g>
-          <g class="pop"><circle cx="90" cy="160" r="6" fill="#2f7d6b"/><line x1="96" y1="160" x2="500" y2="345" stroke="#d9ccb0"/><text x="508" y="350" fill="#18241f"><tspan fill="#5d6c62">随時</tspan>  Slack/Discord 配信 ・ watchdog</text></g>
+        <!-- job markers at JST angles -->
+        <g font-family="JetBrains Mono" font-size="12" font-weight="700" text-anchor="middle">
+          <circle class="pop" cx="346" cy="104" r="11" fill="#d98b34"/><text x="346" y="108" fill="#fffaf0">1</text>
+          <circle class="pop" cx="385" cy="249" r="11" fill="#2f7d6b"/><text x="385" y="253" fill="#fffaf0">2</text>
+          <circle class="pop" cx="134" cy="316" r="11" fill="#2f7d6b"/><text x="134" y="320" fill="#fffaf0">3</text>
+          <circle class="pop" cx="110" cy="285" r="11" fill="#2f7d6b"/><text x="110" y="289" fill="#fffaf0">4</text>
+          <circle class="pop" cx="110" cy="135" r="11" fill="#2f7d6b"/><text x="110" y="139" fill="#fffaf0">5</text>
         </g>
+        <!-- legend (chronological, JST) -->
+        <g font-family="Zen Kaku Gothic New" font-size="15">
+          <g class="pop"><circle cx="455" cy="62" r="9" fill="#d98b34"/><text x="455" y="66" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#fffaf0">1</text><text x="476" y="67" fill="#18241f"><tspan font-family="JetBrains Mono" fill="#b45f06">03:00</tspan>  dreaming（未明に統合）</text></g>
+          <g class="pop"><circle cx="455" cy="100" r="9" fill="#2f7d6b"/><text x="455" y="104" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#fffaf0">2</text><text x="476" y="105" fill="#18241f"><tspan font-family="JetBrains Mono" fill="#b45f06">07:00</tspan>  x-accounts-scan</text></g>
+          <g class="pop"><circle cx="455" cy="138" r="9" fill="#2f7d6b"/><text x="455" y="142" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#fffaf0">3</text><text x="476" y="143" fill="#18241f"><tspan font-family="JetBrains Mono" fill="#b45f06">15:00</tspan>  sitemap-monitor</text></g>
+          <g class="pop"><circle cx="455" cy="176" r="9" fill="#2f7d6b"/><text x="455" y="180" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#fffaf0">4</text><text x="476" y="181" fill="#18241f"><tspan font-family="JetBrains Mono" fill="#b45f06">16:00</tspan>  blog・NL 収集→ingest</text></g>
+          <g class="pop"><circle cx="455" cy="214" r="9" fill="#2f7d6b"/><text x="455" y="218" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#fffaf0">5</text><text x="476" y="215" fill="#18241f"><tspan font-family="JetBrains Mono" fill="#b45f06">20:00</tspan>  active-crawl</text></g>
+        </g>
+        <text x="448" y="262" font-family="Zen Kaku Gothic New" font-size="13" fill="#5d6c62">＋ Slack/Discord 配信・watchdog は随時</text>
+        <text x="448" y="284" font-family="Zen Kaku Gothic New" font-size="12" fill="#9aa79c">cron 定義は UTC、表示は JST（UTC+9）</text>
       </svg>
     </div>
     <p class="reveal note" style="text-align:center;">人間が起きる頃には、整理された知識と注目記事が <strong>メッセンジャーに届いている</strong>。</p>
@@ -517,7 +568,7 @@ svg { display: block; width: 100%; height: auto; }
      ================================================================= -->
 <section class="slide" data-title="日次収集">
   <div class="slide-content">
-    <div class="eyebrow-row reveal"><span class="kicker">07:00 UTC</span></div>
+    <div class="eyebrow-row reveal"><span class="kicker">16:00 JST</span></div>
     <h2 class="reveal">日次収集：3パイプライン並列</h2>
     <div class="stage reveal">
       <svg class="diagram" viewBox="0 0 900 300" role="img" aria-label="日次3パイプライン">
@@ -525,19 +576,19 @@ svg { display: block; width: 100%; height: auto; }
         <g font-family="JetBrains Mono" font-size="13.5">
           <!-- blog -->
           <text x="20" y="56" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">ブログ</text>
-          <g class="pop"><rect x="120" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="59" text-anchor="middle" fill="#18241f">ingest (07:00)</text></g>
-          <g class="pop"><rect x="380" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="59" text-anchor="middle" fill="#18241f">triage (07:30)</text></g>
-          <g class="pop"><rect x="640" y="34" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="59" text-anchor="middle" fill="#fffaf0">wiki-ingest (07:50)</text></g>
+          <g class="pop"><rect x="120" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="59" text-anchor="middle" fill="#18241f">ingest (16:00)</text></g>
+          <g class="pop"><rect x="380" y="34" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="59" text-anchor="middle" fill="#18241f">triage (16:30)</text></g>
+          <g class="pop"><rect x="640" y="34" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="59" text-anchor="middle" fill="#fffaf0">wiki-ingest (16:50)</text></g>
           <line x1="320" y1="54" x2="376" y2="54" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/><line x1="580" y1="54" x2="636" y2="54" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/>
           <!-- newsletter -->
           <text x="20" y="146" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">NL</text>
-          <g class="pop"><rect x="120" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="149" text-anchor="middle" fill="#18241f">ingest (07:10)</text></g>
-          <g class="pop"><rect x="380" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="149" text-anchor="middle" fill="#18241f">triage (07:20)</text></g>
-          <g class="pop"><rect x="640" y="124" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="149" text-anchor="middle" fill="#fffaf0">wiki-ingest (07:40)</text></g>
+          <g class="pop"><rect x="120" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="220" y="149" text-anchor="middle" fill="#18241f">ingest (16:10)</text></g>
+          <g class="pop"><rect x="380" y="124" width="200" height="40" rx="9" fill="#fffdf7" stroke="#d9ccb0" stroke-width="1.6"/><text x="480" y="149" text-anchor="middle" fill="#18241f">triage (16:20)</text></g>
+          <g class="pop"><rect x="640" y="124" width="220" height="40" rx="9" fill="#10251c"/><text x="750" y="149" text-anchor="middle" fill="#fffaf0">wiki-ingest (16:40)</text></g>
           <line x1="320" y1="144" x2="376" y2="144" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/><line x1="580" y1="144" x2="636" y2="144" stroke="#b45f06" stroke-width="2.4" marker-end="url(#ar4)"/>
           <!-- sitemap -->
           <text x="20" y="236" font-size="15" font-family="Zen Kaku Gothic New" font-weight="700" fill="#10251c">Sitemap</text>
-          <g class="pop"><rect x="120" y="214" width="460" height="40" rx="9" fill="#fffdf7" stroke="#2f7d6b" stroke-width="1.8"/><text x="350" y="239" text-anchor="middle" fill="#18241f">sitemap-monitor (06:00) — RSSに載らない記事も拾う</text></g>
+          <g class="pop"><rect x="120" y="214" width="460" height="40" rx="9" fill="#fffdf7" stroke="#2f7d6b" stroke-width="1.8"/><text x="350" y="239" text-anchor="middle" fill="#18241f">sitemap-monitor (15:00) — RSSに載らない記事も拾う</text></g>
         </g>
       </svg>
     </div>
@@ -554,7 +605,7 @@ svg { display: block; width: 100%; height: auto; }
     <h2 class="reveal">夜に束ね、整え、届ける</h2>
     <div class="two-col reveal" style="margin-top:.8rem;">
       <div class="panel">
-        <span class="tag">// Dreaming（18:00 UTC）</span>
+        <span class="tag">// Dreaming（03:00 JST・未明）</span>
         <p style="font-family:var(--font-mono); font-size:var(--small-size); color:var(--ink);">collect&nbsp;→&nbsp;group&nbsp;→&nbsp;wiki-ingest</p>
         <p class="note">日中バラバラに集めた記事・論文・投稿を<strong>テーマ別に束ね</strong>、重複・矛盾を検出して統合。翌朝には整理済み。</p>
       </div>
@@ -563,7 +614,7 @@ svg { display: block; width: 100%; height: auto; }
         <ul class="bullets" style="margin-top:0;">
           <li>watchdog-fix / health-fix（構造の自動修正）</li>
           <li>graph-analysis（リンク・重複検出 / 週次）</li>
-          <li>tag-audit（タグ分類学の監査 / 週次）</li>
+          <li>tag-audit（タグタクソノミーの監査 / 週次）</li>
         </ul>
       </div>
     </div>
@@ -662,7 +713,7 @@ svg { display: block; width: 100%; height: auto; }
     <table class="kv reveal" style="margin-top:.8rem;">
       <tr><th>失敗例</th><th>対策（harness 側）</th></tr>
       <tr><td>ページが重複して作られる</td><td>作成前に <code>index.md</code> 確認をスキルに追加</td></tr>
-      <tr><td>タグが散らかる</td><td>pre-commit でブロック + 分類学を整備</td></tr>
+      <tr><td>タグが散らかる</td><td>pre-commit でブロック + タクソノミーを整備</td></tr>
       <tr><td>Cron 処理が失敗する</td><td>スクリプト修正 + <code>AGENTS.md</code> に記録 + スキル化</td></tr>
       <tr><td>スキルが爆発的に増える</td><td>Curator + 週次棚卸し</td></tr>
     </table>

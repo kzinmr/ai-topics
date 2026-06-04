@@ -39,11 +39,11 @@ raw/         ← Layer 1: 不変のソース素材（記事、論文、ニュー
 entities/    ← Layer 2: 構造化Wikiページ（人物、組織、製品）
 concepts/    ← Layer 2: 概念ページ
 comparisons/ ← Layer 2: 横断比較
-SCHEMA.md    ← Layer 3: ページ規約・タグ分類学
+SCHEMA.md    ← Layer 3: ページ規約・タグタクソノミー
 index.md     ← Layer 3: 全ページのインデックス
 ```
 
-ポイントは2つある。1つ目は、`raw/`は不変だということだ。ソース記事を編集することはなく、Agentが読み込んでWikiページを生成・更新する。2つ目は、全WikiページにYAML frontmatterが必須で、`tags`はSCHEMA.mdの分類学に従うという制約がある。これは後述するpre-commit hookで強制される。
+ポイントは2つある。1つ目は、`raw/`は不変だということだ。ソース記事を編集することはなく、Agentが読み込んでWikiページを生成・更新する。2つ目は、全WikiページにYAML frontmatterが必須で、`tags`はSCHEMA.mdのタクソノミーに従うという制約がある。これは後述するpre-commit hookで強制される。
 
 現在の規模は以下の通り:
 
@@ -75,11 +75,11 @@ Hermes Agentの設定は、基本的にMarkdownファイルに書く。最も重
 
 CI/CDで例えれば、`AGENTS.md`はリポジトリの`Makefile`や`docker-compose.yml`に相当する。Agentはこのファイルを読んで、リポジトリの構造とルールを理解する。
 
-### 3.2 SCHEMA.md: タグ分類学とページ閾値
+### 3.2 SCHEMA.md: タグタクソノミーとページ閾値
 
 知識ベースの品質を保つための規約が`SCHEMA.md`に書かれている。内容は:
 
-- **タグ分類学**: 10のプライマリカテゴリ（Models, People/Orgs, Products, Techniques, Engineering, AI Agents, Infrastructure, Meta, Domain Concepts）と、各カテゴリの正規タグ一覧
+- **タグタクソノミー**: 10のプライマリカテゴリ（Models, People/Orgs, Products, Techniques, Engineering, AI Agents, Infrastructure, Meta, Domain Concepts）と、各カテゴリの正規タグ一覧
 - **ページ閾値**: いつ新しいページを作るか（2+ソースで言及された場合）、いつ既存ページに追加するか、いつ分割するか（200行超）
 - **frontmatter必須フィールド**: `title`, `created`, `updated`, `type`, `tags`, `sources`
 
@@ -88,7 +88,7 @@ CI/CDで例えれば、`AGENTS.md`はリポジトリの`Makefile`や`docker-comp
 .git/hooks/pre-commitに以下のバリデータを設置している:
 
 1. **index.md検証**: ページ作成後にindex.mdが更新されているか
-2. **タグ検証**: frontmatterのtagsがSCHEMA.mdの分類学に含まれているか
+2. **タグ検証**: frontmatterのtagsがSCHEMA.mdのタクソノミーに含まれているか
 
 Agentが新しいページを作ったとき、タグを新規作成してSCHEMA.mdに追加し忘れることがあった。このpre-commit hookがそのミスをgit commit前にブロックする。Mitchell Hashimotoの言葉を借りれば、これはまさに「harness engineering」——Agentが同じ失敗を繰り返さないようにする足場だ。
 
@@ -209,7 +209,7 @@ dreaming-collect (知識断片の収集)
 - **wiki-health-fix** (毎日): Wikiの構造的問題をスキャンして自動修正
 - **wiki-watchdog-fix** (毎日): 修正後の状態を確認
 - **wiki-graph-analysis** (毎週金曜): ページ間リンクのグラフ分析、重複検出
-- **tag-audit-weekly** (毎週月曜): タグ分類学の監査
+- **tag-audit-weekly** (毎週月曜): タグタクソノミーの監査
 
 ### 6.5 配信パイプライン
 
@@ -251,7 +251,7 @@ dreaming-collect (知識断片の収集)
 | 失敗例 | 対策 |
 |---|---|
 | ページが重複して作られる | 作成前に`index.md`を確認する手順をスキルに追加 |
-| タグが散らかる | pre-commit hookでブロック + SCHEMA.mdの分類学を整備 |
+| タグが散らかる | pre-commit hookでブロック + SCHEMA.mdのタクソノミーを整備 |
 | Cron処理が失敗する | スクリプト修正 + AGENTS.mdに落とし穴を記録 + スキル化 |
 | スキルが爆発的に増える | Curator + 週次棚卸しジョブ |
 
