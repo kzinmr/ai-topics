@@ -339,12 +339,60 @@ cd ~/ai-topics && git pull --rebase && git add wiki/ && git commit -m 'wiki: <su
 
 ---
 
-## スキルの修正
+## スキル管理（3層構成）
 
-リポジトリ内のカスタムスキルは `config/hermes/skills/` にあります。修正する場合:
-1. `config/hermes/skills/<category>/<name>/SKILL.md` を編集
-2. テスト: `/skill <name>` でロード確認
-3. Commit: `git add config/hermes/skills/ && git commit -m 'wiki: update skill <name>' && git push`
+### 構成
+
+```
+config/hermes/skills/
+├── _custom/      ← 完全新規スキル（このシステム固有）
+├── _overrides/   ← 公式スキルの改変版
+└── _adhoc/       ← 日常作業用（cron非参照）
+```
+
+| 層 | 説明 | Git管理 | 公式更新の影響 |
+|---|---|---|---|
+| `_custom/` | このシステムで新規作成したスキル | ✅ 必須 | なし |
+| `_overrides/` | Hermes公式スキルを改変したもの | ✅ 必須 | 差分レビュー必要 |
+| `_adhoc/` | 日常的な作業で使うスキル | ✅ 推奨 | なし |
+| 公式 | `~/.hermes/skills/` にあるHermes提供スキル | ❌ 不要 | 自動更新 |
+
+### config.yaml設定
+
+```yaml
+skills:
+  external_dirs:
+  - ~/ai-topics/config/hermes/skills/_custom
+  - ~/ai-topics/config/hermes/skills/_overrides
+  - ~/ai-topics/config/hermes/skills/_adhoc
+```
+
+### スキル無効化
+
+```bash
+# 無効化
+hermes skills disable <skill-name>
+
+# 有効化
+hermes skills enable <skill-name>
+
+# 一覧
+hermes skills list
+```
+
+SSOT: `~/.hermes/config.yaml` の `skills.disabled` セクション
+
+### 公式スキル更新時の_drift検出
+
+- cronジョブ `skill-drift-check` が毎週月曜に実行
+- `scripts/check_skill_drift.py` が公式スキルと `_overrides/` を比較
+- 差分があればDiscord通知 → `_overrides/` の内容を再レビュー
+
+### スキル追加・修正時の注意
+
+1. **cron参照スキルの削除禁止**: `scripts/check_skill_drift.py` でcron参照を確認
+2. **スキル削除前**: `skill-archive-safety` スキルのpre-flight checklistに従う
+3. **修正後**: `git add config/hermes/skills/ && git commit -m 'wiki: update skill <name>' && git push`
 
 ---
 
@@ -357,5 +405,5 @@ cd ~/ai-topics && git pull --rebase && git add wiki/ && git commit -m 'wiki: <su
 
 ---
 
-> **最終更新**: 2026-05-13
+> **最終更新**: 2026-06-04
 > **メンテナー**: Hermes Agent (kzinmr)
