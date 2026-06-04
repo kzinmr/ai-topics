@@ -6247,3 +6247,11 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - **Created concept**: `wiki/concepts/embedding-dimension-scaling-laws.md` — Power-law scaling of dense retrieval performance w.r.t. embedding dimension. Joint law with model size. Cost-aware FLOPs allocation. Killingback et al., UMass CIIR.
 - **Updated concept**: `wiki/concepts/scaling-laws.md` — Added "Embedding Dimension Scaling Laws" section
 - **Updated index**: Added to concepts section
+
+## 2026-06-04 watchdog-fix | Index header recalibration
+
+- **Fixed**: `wiki/index.md` — Calibrated header counts to match filesystem
+- **Fixed**: Section headers: Entities (752→753), Concepts (1557→1568)
+- **No alerts** from pipeline watchdog
+- **Reported**: 20 pages missing updated frontmatter (threshold exceeded)
+- **Reported**: 604 orphans, 821 broken wikilinks pending human review
