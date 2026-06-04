@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-06-03
+updated: 2026-06-04
 tags:
   - person
   - blogger
@@ -15,6 +15,7 @@ tags:
 sources:
   - raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md
   - raw/articles/martinalderson.com--posts-built-for-turbulence-podcast--40b40da5.md
+  - raw/articles/martinalderson.com--posts-is-datacentre-sovereignty-really-that-important--8195ad72.md
 ---
 
 
@@ -125,6 +126,17 @@ Martin's August 2026 post "[29th August 2026: a scenario](https://martinalderson
 3. **Democratization of sophisticated attacks** — "Everyone is worried about nation states. Most of the big incidents that have actually happened turned out to be a kid, a misconfiguration, or someone who didn't really understand what they were doing. The threat model in most boards' heads assumes a sophisticated adversary. The thing that's actually arriving is an unsophervised adversary holding tools that are now sophisticated for them."
 
 This post extends his earlier writing on Anthropic's red team finding [500+ critical vulnerabilities](https://martinalderson.com/posts/anthropic-found-500-zero-days/) in abandoned software — the coordination problem of "who fixes the zero-days AI finds?"
+
+### Datacentre Sovereignty Skepticism (June 2026)
+
+Martin published a UK-centric analysis arguing that **data centre sovereignty is significantly overvalued** in political discourse. Key arguments:
+
+- **Latency is negligible for most AI use**: Round-trip from UK to US East Coast is ~80ms vs 1.6-3.6s first-token latency for frontier models. European data centres already ensure <20ms for voice/video applications. Northern Scottish data centres would have *worse* latency for densely populated southern England than Paris or Amsterdam.
+- **Tax revenue is a rounding error**: A 1GW data centre generates ~GBP 100M/yr in business rates — only 0.2% of UK government spending even if *all* 30GW of global data centre construction were moved to the UK. Jobs are equally minimal (~few dozen per 100MW site).
+- **Actual control requires contracts, not geography**: Physical location of a data centre does not guarantee preferential compute access — hyperscalers serve global demand from any facility. Contractual compute lock-in is the real leverage, regardless of geography.
+- **Seizure scenarios do not survive contact**: AI models decay rapidly in value (a seized 2025-era data centre would be outclassed by 2026 laptop models). Remote wiping by frontier labs would precede any physical seizure. The supporting operational infrastructure is not collocated with the models.
+
+Martin's conclusion: the UK should focus on attracting frontier lab offices and talent rather than obsessing over physical data centre placement. The international AI infrastructure market already provides adequate latency, resilience, and access for nearly all use cases.
 
 ## Key Quotes
 

@@ -1,3 +1,15 @@
+## 2026-06-04 blog-wiki-ingest | 5 pages enriched from blog triage (3 takes, 2 references)
+
+- **Upstream:** Blog-triage pipeline (triaged 2026-06-04T07:33); triage JSON recovered from checkpoint file at `~/.hermes/cron/data/blog_ingest/triage_latest.json`. 16 blog articles: 3 takes, 3 references, 10 skips.
+- **ENRICHED:** [[entities/andrew-nesbitt]] — Added "Agent Skills Registry Threat Models (June 2026)" section covering code execution at load time, prompt injection via skill descriptions, version pinning guarantees, auto-update risk, skill name identity transitions, dependency confusion across multiple sources, and tool permission inheritance. Source: raw/articles/nesbitt.io--2026-06-03-skills-registry-threat-models-html--63b9387d.md
+- **ENRICHED:** [[entities/seangoedecke-com]] — Added "Anti-AI Nostalgia and Fascist Rhetoric (June 2026)" Core Ideas section. Umberto Eco's Ur-Fascism framework applied to anti-AI rhetoric (tradition-cult, modernism-rejection). Luddite historiography correction. Disillusioned elite engineer danger analysis. Added Timeline entry (2026-06-03), Recent Articles entry, Sources, References.
+- **ENRICHED:** [[concepts/outcome-based-pricing]] — Added Sierra's Agency × Attribution 2×2 matrix framework (4 quadrants: seat-based SaaS, API pricing, seat+consumption hybrids, pure outcome-based). "Saaspocalypse" concept (S&P 500 +30% vs WCLD -15%). Sierra co-located outcome-based pricing example.
+- **ENRICHED:** [[entities/sierra]] — Added "Outcomemaxxing / Outcome-Based Pricing" section. Sierra's Agency × Attribution 2×2 matrix (Bottom-Left seat SaaS → Top-Right pure outcome). "Saaspocalypse" market shift analysis. Operational insight: outcome-based pricing rewires company incentives around customer success.
+- **ENRICHED:** [[entities/simon-willison]] — Updated Uber cap from April budget blow to include June 3 follow-up: $1,500/month per tool caps, $36K/year per engineer (~11% of $330K median comp). Added raw article to sources.
+- **ENRICHED:** [[entities/martin-alderson]] — Added "Datacentre Sovereignty Skepticism (June 2026)" section. Latency/tax/jobs/seizure scenario analysis of UK data centre politics. Conclusion: infrastructure sovereignty is overvalued vs contracting, talent, and regulatory approaches.
+- **Archived:** blog triage skip/reference items via archive_triage.py (all already archived/deduped)
+
+## 2026-06-04 newsletter-wiki-ingest | Axiom Math "Verified Generation" + Formal Verification concept enrichment
 ## 2026-06-04 newsletter-wiki-ingest | Axiom Math "Verified Generation" + Formal Verification concept enrichment
 
 - **Source:** AINews (Latent Space / swyx) — Latent Space AI for Science podcast post: "Scaling Past Informal AI - Carina Hong, Axiom Math"

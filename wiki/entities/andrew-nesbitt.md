@@ -2,7 +2,7 @@
 title: "Andrew Nesbitt"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-28
+updated: 2026-06-04
 type: entity
 ---
 
@@ -263,6 +263,26 @@ Published May 27, 2026, this is Nesbitt's most thorough examination of how **AI 
 > *"The released catalogue currently has no way to distinguish an event produced by a person exercising judgement from an event produced by an agent following a loop, and almost everything in the Evolution and Risk focus areas depends on that distinction holding by default. It no longer does."*
 
 
+### Agent Skills Registry Threat Models (June 2026)
+
+On June 3, 2026, Nesbitt published a comprehensive threat model analysis for **agent skill registries** — distribution channels for agent skills (bundles of prompts, scripts, dependencies, and tool permissions). ClawHub, Tessl, and skills.sh have all launched in the past year, modelled on existing package registries. Nesbitt's analysis covers the entire attack surface:
+
+**Code execution at load time**: Skills can execute scripts before the agent reaches the prompt, via three paths — prompt injection, scripts/ directory invocation through bash, or shell snippets in the skill file evaluated before the model is in the loop. The user's mental model of "the agent runs a tool, I approve it" doesn't cover loader commands that run before the agent reaches the prompt.
+
+**Prompt injection via skill descriptions**: Most loaders inject every installed skill's description into the system prompt every turn — even skills the user installed once and forgot about. Descriptions containing adversarial tokens, hidden HTML, or unicode control characters that the loader doesn't strip become unprompted prompt injections.
+
+**Version pinning guarantees**: Most skill formats use git as the distribution channel where "version" means "default branch at fetch time." Few loaders record the commit sha actually used. The lockfile equivalent, where it exists at all, records name and version but not the bytes, so a pinned `foo@1.0.0` resolves against whatever currently owns that name.
+
+**Auto-update risk**: Update paths typically walk the lockfile and reinstall each entry without re-prompting on capability changes. A skill that adds a new `requires.env` value on a patch bump is applied without interaction.
+
+**Skill name identity and dependency confusion**: Names are inherited from source (paths, owner/repo, owner/repo/skill triples) with unwritten normalization rules. Two skills resolving to the same on-disk name can shadow trusted skills. Registry identity transitions (rename, merge, ownership transfer) can silently change the effective owner and declared capabilities.
+
+**Resolution across multiple sources and tool permissions**: When a name resolves from multiple sources, the loader may fall through to npm/PyPI — the same dependency-confusion pattern Alex Birsan documented in 2021. Skills inherit the agent's full tool grants (bash, file edit, network). Some formats let the skill declare its own allowed-tools list, treated as pre-approved, effectively shipping the approval bypass alongside the code that uses it.
+
+**Key insight**: Each of these threats is a design decision working as intended — not a wrong line of code a static scanner can call out. The agent skills registry is a strict superset of a package-manager client, inheriting every documented supply chain threat while adding agent-specific vectors (prompt injection, tool permission inheritance, silent auto-update).
+
+References: [[concepts/agent-safety]], [[concepts/software-supply-chain-security]], [[concepts/prompt-injection]]
+
 ## Sources
 
 - nesbitt.io — Personal blog and portfolio
@@ -277,6 +297,7 @@ Published May 27, 2026, this is Nesbitt's most thorough examination of how **AI 
 - "PromptVer: A semver-compatible versioning scheme for the age of LLMs" (2025)
 - ".gitlocal: Git Should Let Files Ignore Themselves" (2026)
 - "Categorizing Package Manager Clients" (2025)
+- "Skills Registry Threat Models" (2026) — Agent skill registry threat model analysis (code execution, prompt injection, version pinning, identity transitions)
 - GitHub: @andrew (166 public repos, joined 2008)
 - Open Source Security podcast: "Ecosyste.ms with Andrew Nesbitt" (2025)
 - FOSDEM 2026: "Open source funding: you're doing it wrong" (with Benjamin Nickolls)
@@ -284,6 +305,7 @@ Published May 27, 2026, this is Nesbitt's most thorough examination of how **AI 
 
 ## References
 
+- raw/articles/nesbitt.io--2026-06-03-skills-registry-threat-models-html--63b9387d.md
 - raw/articles/nesbitt.io--2026-05-27-chaoss-metrics-in-2026-html--c12cd929.md
 - nesbitt.io--2026-04-06-the-cathedral-and-the-catacombs-html--220e6392
 - nesbitt.io--2026-04-07-who-built-this-html--b5a6f50d

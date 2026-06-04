@@ -2,13 +2,14 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-02
+updated: 2026-06-04
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
   - raw/articles/seangoedecke.com--prompts-are-technical-debt-too--2bd50f80.md
   - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
   - raw/articles/seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c.md
+  - raw/articles/seangoedecke.com--anti-ai-nostalgia--c80b7b06.md
   - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
 ---
 
@@ -52,6 +53,7 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | **2026-05-17** | Publishes "DeepSeek-V4-Flash means LLM steering is interesting again" — explores activation engineering and steering vectors for influencing model behavior |
 || **2026-05-22** | Publishes "The famous o3 'GeoGuessr' prompt did not work" — constructs a 200-image benchmark to test Kelsey Piper's famous GeoGuessr prompt, finding the elaborate prompt performed worse than the default (median 83.2km vs 102.3km). GPT-5.4/5.5 lack o3's geolocation ability. Demonstrates how easily prompt engineers can fool themselves without benchmarks |
 || **2026-05-22** | Publishes "Weird projects I shipped with AI" — catalogs 5 personal projects (Skifreedle, Autodeck, Endless Wiki, VicFlora Offline, gh-standup) built with LLM assistance, arguing they are "existence proofs" that AI enables projects that would not otherwise exist |
+||| **2026-06-03** | Publishes "Anti-AI nostalgia and the cult of the past" — philosophical analysis of anti-AI rhetoric through Umberto Eco's Ur-Fascism framework. Maps "real programmers" nostalgia onto fascist patterns of tradition-cult and modernism-rejection. Challenges popular Luddite historiography. Warns that disillusioned elite engineers are susceptible to movements promising a return to idealized past. |
 || **2026-05-31** | Publishes "Build agents, not pipelines" — comprehensive comparison of pipeline vs agent architectures for LLM systems. Recommends "when in doubt, use agents" based on context-gathering difficulty, future-proofing, and one-directional migration pattern. References [[concepts/agent-vs-pipeline-architecture]] |
 | **2026-05-17** | Publishes "The just-say-no engineer was a ZIRP phenomenon" — argues the "just-say-no" engineering archetype thrived under zero-interest-rate conditions and is now endangered by AI, but AI is not the root cause |
 
@@ -175,8 +177,19 @@ Goedecke constructed a rigorous 200-image benchmark to test whether Kelsey Piper
 
 [[concepts/prompt-engineering-evaluation]] — Full concept page on the case study and its implications for prompt engineering methodology.
 
+### Anti-AI Nostalgia and Fascist Rhetoric (June 2026)
 
+On June 3, 2026, Goedecke published "[Anti-AI nostalgia and the cult of the past](https://seangoedecke.com/anti-ai-nostalgia/)" — his most philosophically ambitious post. He argues that **anti-AI rhetoric structurally parallels fascist rhetorical patterns** as defined by Umberto Eco's *Ur-Fascism*, specifically the "cult of tradition" and "rejection of modernism."
 
+**The Ur-Fascism framework**: Goedecke quotes Eco's first two defining features of fascism — the cult of tradition and the rejection of modernism — and maps them onto anti-AI discourse: the nostalgic "real programmers" narrative, the framing of AI as a corrupting modern influence, and the call to return to an idealized past. He cites Ezra Pound's anti-usury poems, Julius Evola's traditionalist philosophy, and Hitler's speeches as examples of the same rhetorical structure: mourning a lost spiritual integrity and blaming it on degenerate modern forces.
+
+**Luddite historiography correction**: Goedecke challenges the popular left-wing framing of the Luddites as a proto-feminist, anti-capitalist movement. Actual Luddite threats explicitly targeted female workers (threatening to "discharge the bitches and take men into your employ again"). The Luddites were fundamentally conservative — wounded masculine elite identity protecting all-male guild privileges, not a progressive movement against automation.
+
+**The disillusioned elite danger**: Goedecke's central concern is that software engineers whose skills are devalued by AI will form the same kind of "disillusioned elite" that historically gravitated toward fascism. Engineers who believed their job was "to be excellent at their craft" rather than "producing shareholder value" are now confronting the end of ZIRP and AI disruption simultaneously — a susceptible audience for movements promising a return to an idealized past.
+
+References: [[concepts/ai-criticism-politics]]
+
+> "If you are good at code review, you will be good at using AI agents."
 > "If you are good at code review, you will be good at using AI agents."
 
 > "AI can write your code. It can't do your job."
@@ -235,6 +248,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - Regular podcast guest on engineering and AI topics
 
 ## Recent Articles
+
+- **Anti-AI nostalgia and the cult of the past** (2026-06-03): Philosophical analysis of anti-AI rhetoric through Umberto Eco's Ur-Fascism framework. Warns that disillusioned elite software engineers are susceptible to fascist-adjacent movements promising return to an idealized past. References: [[concepts/ai-criticism-politics]]
 
 - **Build agents, not pipelines** (2026-05-31): Argues there are only two ways to use LLMs — as a pipeline (control flow in code) or as an agent (control flow delegated to LLM). Compares tradeoffs: pipelines are more predictable and cost-bounded, agents are smarter and more flexible. Key insight: context-gathering is far harder for pipelines than agents, which is why RAG failed to replace agentic retrieval. Recommends "when in doubt, use agents" — migration from pipelines to agents is one-directional. Proposes hybrid architecture for large-scale analysis: cheap pipeline for initial flagging, agent fleet for deep investigation. Links: [[concepts/agent-vs-pipeline-architecture]]
 
@@ -311,4 +326,5 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 |- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad
 ||- seangoedecke.com--the-left-wing-case-for-ai--363b6e35
 |- seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c
+|- seangoedecke.com--anti-ai-nostalgia--c80b7b06
 |- seangoedecke.com--build-agents-not-pipelines--43a57b4a

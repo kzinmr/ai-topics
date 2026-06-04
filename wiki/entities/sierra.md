@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-05-14
+updated: 2026-06-04
 type: entity
 tags:
   - company
@@ -17,6 +17,7 @@ sources:
   - https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html
   - https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/
   - raw/articles/sierra.ai--blog-tau-knowledge--5dda7a09.md
+  - raw/articles/sierra.ai--blog-outcomemaxxing--0bc34aec.md
 ---
 
 # Sierra
@@ -36,6 +37,17 @@ Sierra is an AI-powered customer service platform that deploys conversational AI
 ### Ghostwriter (Agent as a Service, April 2026)
 
 Sierra launched **Ghostwriter**, an "agent as a service" tool. Users describe what they need in natural language, and Ghostwriter autonomously creates and deploys a specialized agent. This extends Sierra's platform beyond customer-facing agents into internal business process automation.
+
+### Outcomemaxxing / Outcome-Based Pricing (June 2026)
+
+Sierra published a detailed framework for **outcome-based pricing** centered on an **Agency × Attribution 2×2 matrix** (from Madhavan Ramanujam's *Charging for Intelligence*):
+
+- **Bottom-Left (Low Agency, Low Attribution)**: Classic seat-based SaaS (Salesforce, Office 365) — users log in, software assists, attribution is fuzzy
+- **Top-Left (High Agency, Low Attribution)**: API pricing (OpenAI, AWS) — autonomous work but no clean outcome attribution
+- **Bottom-Right (Low Agency, High Attribution)**: Seat + consumption hybrids (Cursor) — human-managed, AI consumption informs pricing
+- **Top-Right (High Agency, High Attribution)**: Sierra's position — agents deliver complete outcomes (resolved cases, processed claims) directly attributable to the software
+
+Sierra also coined the **"Saaspocalypse"** concept: since December 2024 the S&P 500 is up ~30% while WCLD (SaaS index) is down ~15%, reflecting market recognition that AI agents delivering outcomes will displace productivity tools for teams. Key operational insight: outcome-based pricing rewires the entire company around delivering results, since customer success is baked into the P&L — sales, product, support, and marketing all share the same incentive.
 
 ## Product
 

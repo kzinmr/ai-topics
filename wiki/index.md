@@ -117,7 +117,7 @@
 - [[entities/semianalysis]] — SemiAnalysis — Boutique AI/semiconductor research firm. Creator of ClusterMAX GPU cloud ratings (209 providers, 10 criteria, Platinum/Gold/Silver/Bronze tiers). Dylan Patel (CEO). Independent benchmark beyond $/GPU-hr.
 - [[entities/seshadri]] — Seshadri (@sseshadri43) — LangChain engineer. Co-author of RubricMiddleware for Deep Agents (self-correcting grader loops).
 - [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
-- [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark for knowledge-grounded agent evaluation.
+- [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark; Outcomemaxxing outcome-based pricing framework (Agency x Attribution 2x2 matrix).
 - [[entities/siyan-zhao]] — Siyan Zhao — UCLA / Meta Superintelligence Labs researcher. Lead author of On-Policy Self-Distillation (OPSD) for LLM reasoning post-training (2026). Same-model self-distillation with privileged ground-truth context.
 - [[entities/stable-audio-3]] — Stable Audio 3.0 — Stability AI's 4-model audio generation family. Up to 6m20s tracks, 3/4 open weights. SAME autoencoder, no CFG, inpainting. May 2026.
 - [[entities/sydney-runkle]] — Sydney Runkle (@sydneyrunkle) — LangChain engineer. Co-author of RubricMiddleware for Deep Agents (self-correcting grader loops).
@@ -144,7 +144,7 @@
 - [[entities/amazon-bedrock-agentcore]] — AWS's fully-managed agentic AI platform for building, deploying, and operating AI agents at scale. Framework-agnostic, composable services.
 - [[entities/amp]] — **Amp** — Coding agent CLI developed at Sourcegraph by Thorsten Ball. Frontier-chasing philosophy: editor extensions killed Feb 2026, CLI rebuilt as Neo (May 2026) with auto-compaction, Plugin API, remote control. Author of "The Coding Agent Is Dead" manifesto.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia). Co-founder OpenAI, Tesla AI, Eureka Labs. Joined Anthropic pre-training team (May 2026). Coined vibe coding / agentic engineering.
-- [[entities/andrew-nesbitt]] — OSS metadata expert (Ecosyste.ms). Supply chain security, package management. CHAOSS metrics AI-broken-metrics analysis published May 2026.
+- [[entities/andrew-nesbitt]] — OSS metadata expert (Ecosyste.ms). Supply chain security, package management, agent skills registry threat models. CHAOSS metrics AI-broken-metrics analysis published May 2026.
 - [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-ai]]
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
@@ -408,7 +408,7 @@
 - [[entities/manus]]
 - [[entities/mario-zechner]] — **X** | @badlogicgames |
 - [[entities/mark-chen]] — **Role** | Chief Research Officer, OpenAI |
-- [[entities/martin-alderson]] — **Blog** | martinalderson.com |
+- [[entities/martin-alderson]] — **Blog** | martinalderson.com | AI economics, SaaS disruption, supply chain security, datacentre sovereignty skepticism.
 - [[entities/martin-kleppmann]] — Associate Professor, University of Cambridge Department of Computer Science and Technology. Researches distributed systems, local-first collaborative software, and cryptographic protocols.
 - [[entities/matduggan-com]] — **URL:** https://matduggan.com
 - [[entities/mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
@@ -1490,7 +1490,7 @@
 - [[concepts/orchestration-tax]] — Orchestration Tax: The structural cost of coordinating multiple AI agents through a single human bottleneck. Coined by Richard Seroter at Google I/O 2026, expanded by Addy Osmani. Human as GIL of AI agents, Amdahl's Law applied to agent development, busy ≠ productive. Five strategies: backpressure, sort work, batch reviews, spend attention only on judgment, protect serial time.
 - [[concepts/organizational-moat]] — Organizational Moat: Proposed by Jaya Gupta (Foundation Capital). Argues that in the AI era, products, code, and categories are all imitable — only a company's "shape" (hiring, power distribution, status hierarchy) remains as the last durable competitive advantage. 5 structural validation tests. 3.2M views.
 - [[concepts/orthrus-parallel-generation]] — Orthrus — Dual-architecture Transformer: frozen AR backbone + trainable diffusion head over shared KV cache. Up to 7.8× speedup, O(1) KV-cache overhead, 16% trainable params, lossless output guarantee.
-- [[concepts/outcome-based-pricing]] — Outcome-based pricing models for AI Agents. Transition from seat-based to outcome-based billing (resolutions, completed workflows, time saved). Zendesk Outcome-Based Pricing and Salesforce Agentforce Flex Credits are pioneering examples.
+- [[concepts/outcome-based-pricing]] — Outcome-based pricing models for AI Agents. Transition from seat-based to outcome-based billing. Sierra Agency × Attribution 2×2 matrix and "Saaspocalypse" concept. Zendesk Outcome-Based Pricing and Salesforce Agentforce Flex Credits are pioneering examples.
 - [[concepts/palantir-ai-fde]] — AI FDE (Foundry Decision Engine) — Palantir's data integration engine (50+ source connectors) and AI agent natural-language interface roadmap. From raw ingestion to Ontology binding. Contrasts with RAG and MCP approaches. See [[entities/palantir]].
 - [[concepts/pass-k-metric]] — pass^k: Agent reliability metric introduced by the τ-bench family. Requires all k independent trials of the same task to succeed, measuring consistency. Exposes fragility: GPT-4o pass@1 ~45% but pass^8 <25%. Foundation for [[concepts/tau-bench|τ-bench]] production reliability.
 - [[concepts/pentagon-ai-contracts-2026]] — Pentagon signs AI deals with 8 companies (May 2026): SpaceX, OpenAI, Google, Microsoft, NVIDIA, AWS, Oracle, Reflection. Anthropic excluded over AI safety stance — under litigation. Google DeepMind UK staff 98% unionize over Pentagon contract.

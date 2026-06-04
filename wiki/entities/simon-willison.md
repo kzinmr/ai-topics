@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-06-03
+updated: 2026-06-04
 status: L3
-sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md]
+sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md]
 tags: [person, blogger]
 ---
 
@@ -245,7 +245,7 @@ On May 27, 2026, Simon published "[I think Anthropic and OpenAI have found produ
 - Simon used Claude Code to scrape their job sites and Datasette Agent for analysis — "Dogfood!"
 
 **AI-Failure Stories Deconstructed**:
-- **Uber**: CTO indicated they "maxed out full year AI budget" just months into 2026, mostly via Claude Code. Simon notes the budget was set in 2025 *before* agents got good in November. COO's full remarks were far more nuanced: "25% of our code commits were via Claude Code last quarter... but it's very hard to draw a line."
+- **Uber** (June 3 follow-up): CTO indicated they "maxed out full year AI budget" just months into 2026, mostly via Claude Code. Simon notes the budget was set in 2025 *before* agents got good in November. COO's full remarks were far more nuanced: "25% of our code commits were via Claude Code last quarter... but it's very hard to draw a line." By June, Uber instituted **$1,500/month per AI coding tool caps** for all employees — $36K/year per engineer assuming two tools, roughly **11% of median $330K comp** (Levels.fyi). Simon notes the caps are "a rational policy response" far more sensible than tokenmaxxing leaderboards.
 - **Microsoft Claude Code cancellations**: Ostensibly to dogfood Copilot CLI, but The Verge reports financial motivators (June 30 end of FY). Simon: "Both stories support my product-market fit hypothesis. The best pricing advice I ever heard: your customer should **suck air through their teeth** and then say yes."
 
 **The $1.25B/month Compute Deal**: The SpaceX S-1 filing revealed Anthropic agreed to pay **$1.25 billion per month** through May 2029 for Colossus compute capacity. Anthropic said this would "increase our usage limits for Claude Code and the Claude API," implying the deal funds inference, not training. Simon: "The fact that they're willing to spend $1.25 billion per month from just one vendor hints at how big these inference budgets have become."
