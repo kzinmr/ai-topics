@@ -1672,6 +1672,7 @@
 - [[concepts/small-language-models]] — Small Language Models — Compact LLMs for edge and local deployment
 - [[concepts/test-time-compute]] — Test-Time Compute — Compute scaling at test time
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
+- [[concepts/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming Memory System — Async consolidation pipeline (3-tier: Buffer/Consolidation Engine/Long-Term Index), knowledge graph, temporal decay, 73% hallucination reduction
 - [[concepts/claude-47-tokenizer]] — Claude 4.7 Tokenizer Change
 - [[concepts/claude-agent-sdk-sre-patterns]] — Claude Agent SDK — SRE Agent Pattern
 - [[concepts/claude-code-best-practices]] — Claude Code Best Practices
@@ -1706,7 +1707,7 @@
 ## Comparisons (26 pages)
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Agent Harnesses compared across architecture, routing, and execution
-- [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — Memory architecture comparison of 4 harnesses: OpenClaw/Claude Code/Codex/Hermes. File-first common philosophy, vector search vs full-text search, async vs sync vs Bounded Snapshot, Pre-Compaction Flush, Bustamante 3-type classification, with selection guide.
+- [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — Memory architecture comparison of 5 systems: OpenClaw/Claude Code/Codex/Hermes/ChatGPT Dreaming. File-first common philosophy vs database-backed async consolidation, vector search vs full-text search, Bustamante classification extended with Async Consolidation Pipeline type.
 - [[comparisons/openclaw-pi-hermes-state-management]] — OpenClaw, Pi, and Hermes Agent State Management — Data Flow and State Management comparison: OpenClaw as Gateway/control-plane source of truth, Pi as runtime substrate, Hermes as capability-accumulating personal agent.
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing — Comparison of sandboxing approaches for AI coding agents: Docker, microVM, in-process sandboxes, capability-based security

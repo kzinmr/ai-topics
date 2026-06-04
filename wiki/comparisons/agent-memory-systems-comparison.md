@@ -1,11 +1,12 @@
 ---
-title: "Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes"
+title: "Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes vs ChatGPT Dreaming"
 type: comparison
 aliases:
   - agent-memory-systems-comparison
   - harness-memory-comparison
+  - chatgpt-dreaming-memory-comparison
 created: 2026-05-17
-updated: 2026-05-29
+updated: 2026-06-04
 tags:
   - concept
   - memory-systems
@@ -21,17 +22,18 @@ sources:
   - https://hermes-agent.nousresearch.com/docs/
   - raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering.md
   - raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md
+  - raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md
 ---
 
-# Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes
+# Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes vs ChatGPT Dreaming
 
-An architectural comparison of memory systems across four major coding agent harnesses. While all harnesses share the **Markdown file-based memory strategy** as their most important commonality, their approaches to retrieval, embedding strategy, and context retention differ significantly.
+An architectural comparison of memory systems across five major agent platforms. While coding agent harnesses share the **Markdown file-based memory strategy** as their most important commonality, ChatGPT's Dreaming system introduces a fundamentally different **database-backed async consolidation** approach. Their approaches to retrieval, embedding strategy, and context retention differ significantly.
 
 ---
 
 ## Common Ground: File-First Philosophy
 
-All four harnesses share the design philosophy that **"files are the sole source of truth":**
+Coding agent harnesses share the design philosophy that **"files are the sole of truth"** — but ChatGPT Dreaming takes a different path with database-backed async consolidation:
 
 | Harness | Primary Storage | Human-readable? | Version-controllable? |
 |---------|----------------|-----------------|----------------------|
@@ -39,8 +41,9 @@ All four harnesses share the design philosophy that **"files are the sole source
 | **Claude Code** | `CLAUDE.md`, `MEMORY.md`, `.claude/rules/*.md`, auto-memory dir | ✅ Human-readable Markdown | ✅ git-manageable |
 | **Codex CLI** | `~/.codex/memories/*.md`, `AGENTS.md` | ✅ Human-readable Markdown | ✅ Only AGENTS.md git-shareable |
 | **Hermes Agent** | `~/.hermes/MEMORY.md`, `USER.md`, `SOUL.md`, SQLite DB + JSONL | ✅ Human-readable Markdown + SQLite | ✅ git-manageable |
+| **ChatGPT Dreaming** | Proprietary knowledge graph (vector DB + consolidation engine) | ❌ Opaque (dashboard view only) | ❌ Not user-versionable |
 
-This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent memory — simple, human-readable, auditable files win over complex retrieval architectures in the long run.
+This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent memory — simple, human-readable, auditable files win over complex retrieval architectures in the long run. ChatGPT Dreaming challenges this by arguing that **async offline consolidation** can outperform file-first approaches for general-purpose assistants.
 
 **Notable**: Hermes goes a step further by separating **SOUL.md** (agent persona and behavioral guidelines) as system prompt slot #1, clearly distinguishing memory from identity.
 
@@ -58,6 +61,8 @@ This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent me
 | **Conversation history** | `sessions/YYYY-MM-DD-<slug>.md` (full-text searchable, indexable) | Indirectly via CLAUDE.md | `memory_summary.md` (summary only) | SQLite FTS5 + JSONL (full-text search, summarization, retrieval) |
 | **External memory** | ❌ | ❌ | ❌ | ✅ **8 pluggable providers** (Honcho etc.), only 1 active at a time |
 | **Procedural memory** | ❌ | ❌ | ✅ `skills/<name>/SKILL.md` (Codex per-skill memory) | ✅ **Self-Evolving Skills** (`~/.hermes/skills/`, auto-generated + Curator-maintained) |
+| **Consolidation** | Pre-compaction flush | 5-layer compaction | 2-phase async extraction | Bounded snapshot + FTS5 | **Async "Dreaming" cycle** (offline consolidation engine) |
+| **Knowledge graph** | ❌ | ❌ | ❌ | ❌ | ✅ **Structured knowledge graph** with temporal decay + relationship mapping |
 
 ### Retrieval & Recall Methods
 
@@ -68,6 +73,7 @@ This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent me
 | **Hybrid search** | ✅ BM25 + vector (70:30 weighting) | ❌ | ❌ | ❌ |
 | **Recall method** | `memory_search` tool (~700 char snippets + relevance scores) | Full file loading | Full `memory_summary.md` load → `grep` as needed | **session_search** tool (SQLite FTS5 → LLM summary) + MEMORY.md injected every session |
 | **Progressive Disclosure** | ❌ snippet-based | ❌ full file load | ❌ full file load | ✅ **3-level** (name only → full content → reference files) |
+| **ChatGPT Dreaming** | ✅ Vector-optimized index (sub-ms) | ❌ (proprietary retrieval) | ✅ Relevance + recency + priority index | **Knowledge graph query** with recall receipts |
 
 **Biggest difference**: Only OpenClaw implements vector search. Hermes and OpenClaw share FTS5 full-text search, but Hermes specializes in conversation history search while OpenClaw uses hybrid search across memory files + sessions.
 
@@ -79,6 +85,7 @@ This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent me
 | **Provider** | Local → OpenAI → Gemini auto-fallback | N/A | N/A | N/A (can be covered by external providers) |
 | **Cache** | ✅ SHA-256 hash based | N/A | N/A | N/A |
 | **Batch optimization** | ✅ OpenAI/Gemini Batch API (50% cost reduction) | N/A | N/A | N/A |
+| **ChatGPT Dreaming** | ✅ Yes (for retrieval + consolidation) | OpenAI proprietary | ✅ Compressed knowledge graph | ✅ Offline consolidation (lightweight models) |
 
 ### Memory Generation & Updates
 
@@ -90,6 +97,7 @@ This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent me
 | **Limits & pruning** | Unlimited (filesystem capacity dependent) | Unlimited (filesystem capacity dependent) | 256 rollout limit / 30 days unused → deleted | **Capacity limited** (MEMORY.md 2,200 chars / USER.md 1,375 chars) + **Curator** (30 days stale / 90 days archive) |
 | **Sensitive info removal** | ❌ | ❌ | ✅ Built-in credential scrubbing | ❌ |
 | **External verification** | ❌ | ❌ | ❌ | ✅ **GEPA** (offline optimization pipeline, via PR) |
+| **ChatGPT Dreaming** | Async idle/overnight "dreaming" cycle | Dedicated consolidation + summarization models | ✅ Auto (temporal decay + conflict resolution) | ✅ Dashboard + edit/prune + recall receipts |
 
 ### Context Retention & Compaction
 
@@ -98,10 +106,18 @@ This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent me
 | **Pre-compaction flush** | ✅ Auto (~80% context usage, silent turn) | ❌ (5-layer compaction pipeline but no pre-flush) | ❌ (not directly relevant due to async generation) | ✅ **Pre-compression memory flush** (flushes memory before context compression) |
 | **Compaction method** | Appends Markdown summary to `memory/` | 5-layer pipeline (gradual summarization) | Extraction → integration 2-phase pipeline | Bounded snapshot + FTS5 search (triggers new skill generation and memory update after compression) |
 | **Context injection** | Today + yesterday daily logs + search results | CLAUDE.md + MEMORY.md injected every session | `memory_summary.md` injected every session (token truncated) | MEMORY.md + USER.md frozen snapshot (**prefix cache optimized** — all memory bytes in the initial prompt) |
+| **ChatGPT Dreaming** | N/A (decoupled from active context) | N/A (consolidated offline) | Knowledge graph injected via retrieval index | **Fully decoupled**: memory processing never competes with conversation for compute |
 
 ---
 
 ## Selection Guide: Which Memory System to Choose
+### Best for ChatGPT Dreaming
+
+- **General-purpose assistants**: Optimized for non-technical users who need persistent personalization without managing files
+- **Long-term user relationships**: Temporal decay + knowledge graph ideal for evolving preferences over months/years
+- **Privacy-conscious users**: End-to-end encryption, never used for training, full dashboard transparency
+- **Team collaboration**: Collaborative Memory (roadmap) enables shared context layers
+
 
 ### Best for OpenClaw
 
@@ -144,6 +160,7 @@ This shared philosophy suggests a **"Bitter Lesson" convergence** in AI agent me
 | **Scalability** | High (search handles large memory) | Limited (depends on full file loading) | Medium (256 rollout limit, periodic pruning) | **Bounded**: Intentionally limited (2,200 chars) — precision over scale |
 | **Portability** | High (Markdown files + SQLite) | High (Markdown files only) | Medium (depends on `~/.codex/`, no cross-machine sync) | High (Markdown + SQLite + JSONL, though model-dependent) |
 | **Prefix Cache efficiency** | Medium (search results vary per turn) | Low (full file load introduces variability) | Low (summary regenerated every session) | **Highest** — all memory bytes in initial prompt, maximum cache hit rate |
+| **ChatGPT Dreaming** | "Sleep-like consolidation" — async offline processing mimics human memory | High (dedicated consolidation engine + knowledge graph) | Low (decoupled from active sessions) | High (compressed knowledge graph + vector index) | N/A (consumer product, not developer tool) |
 
 ---
 
@@ -157,6 +174,7 @@ Mapping Nicolas Bustamante's (Microsoft) 3-type classification to the four harne
 | **Typed Live Writes** | **Claude Code** | Directly writes typed Markdown during session, age-aware reminders |
 | **Two-Phase Async Pipeline** | **Codex CLI** | Async 2-phase: extraction (small model) → integration (large model) |
 | **Hybrid Search + Flush** | **OpenClaw** | Doesn't fully fit any of the above 3 types — hybrid search + Pre-Compaction Flush unique path |
+| **Async Consolidation Pipeline** | **ChatGPT Dreaming** | Decoupled 3-tier architecture: Buffer → Consolidation Engine → Long-Term Index. Inspired by human sleep-based memory processing. Unique among agent memory systems. |
 
 ---
 
@@ -178,13 +196,19 @@ Neither is wrong — they're different bets about what a developer using the too
 
 ## Common Limitations
 
-Constraints shared by all four harnesses:
+Constraints shared by coding agent harnesses (ChatGPT Dreaming has different trade-offs):
 
 1. **Lack of cross-file context**: Concepts spanning multiple files are not connected without explicit cross-references
-2. **Embedding drift**: Provider changes require reindexing (OpenClaw has tracking mechanism, others N/A)
-3. **Storage growth**: Long-term use leads to linear increase in file count and index size (Hermes mitigates with bounded design)
-4. **Multi-machine sync**: None have built-in cross-machine sync mechanisms (Codex explicitly states "none")
+2. **Embedding drift**: Provider changes require reindexing (OpenClaw has tracking mechanism, others N/A). ChatGPT Dreaming handles this internally.
+3. **Storage growth**: Long-term use leads to linear increase in file count and index size (Hermes mitigates with bounded design). Dreaming uses temporal decay.
+4. **Multi-machine sync**: None have built-in cross-machine sync mechanisms (Codex explicitly states "none"). Dreaming has Cross-Workspace Sync on roadmap.
 5. **Model dependence**: Bustamante notes — "models are post-trained on their harness," making memory behavior non-portable between harnesses
+
+**ChatGPT Dreaming's unique limitations**:
+- **Opaque internals**: Knowledge graph is not user-inspectable beyond the dashboard
+- **Proprietary lock-in**: No export/import yet (on roadmap); memory is trapped in OpenAI's infrastructure
+- **Not developer-oriented**: No file-based API, no git integration, no programmatic access
+- **Async latency**: Memory updates are not instant — must wait for dreaming cycle
 
 ---
 
@@ -198,6 +222,8 @@ Constraints shared by all four harnesses:
 - [[concepts/hermes-agent-architecture]] — Hermes Agent architecture (Prompt Assembly, Persistent State)
 - [[concepts/claude-perfect-memory]] — Claude Code file-based memory design philosophy
 - [[concepts/agent-memory-engineering]] — Nicolas Bustamante's 3-type classification
+- [[concepts/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming detailed architecture
+- [[concepts/chatgpt-memory-bitter-lesson]] — Bitter Lesson critique of ChatGPT memory
 - [[raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli]] — Codex CLI memory details
 - [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] — OpenClaw memory details
 - [[raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering]] — Bustamante primary source

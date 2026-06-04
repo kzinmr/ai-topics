@@ -1,3 +1,12 @@
+## 2026-06-04 wiki-ingest | OpenAI ChatGPT Dreaming Memory System
+
+- **Source**: https://openai.com/index/chatgpt-memory-dreaming/
+- **Raw article**: `wiki/raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md`
+- **Created concept**: `wiki/concepts/chatgpt-dreaming-memory-system.md` — ChatGPT's async consolidation memory system (3-tier: Buffer/Consolidation Engine/Long-Term Index), knowledge graph, temporal decay, 73% hallucination reduction, comparison with Claude Code file-first approach
+- **Updated**: `wiki/comparisons/agent-memory-systems-comparison.md` — Added ChatGPT Dreaming as 5th memory system (5→ comparison), new Async Consolidation Pipeline architecture type, selection guide, unique limitations
+- **Updated**: `wiki/concepts/chatgpt-memory-bitter-lesson.md` — Added "OpenAI's Response: Dreaming" section analyzing how Dreaming partially addresses the Bitter Lesson critique
+- **Updated**: `wiki/index.md` — Added chatgpt-dreaming-memory-system entry, updated agent-memory-systems-comparison description
+
 ## 2026-06-04 arxiv-ingest | On-Device RAG unified model paper
 
 - **Source**: https://arxiv.org/abs/2604.14403
