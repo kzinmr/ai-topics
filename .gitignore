@@ -12,3 +12,9 @@ scripts/cache/
 
 # Claude Code local (personal) settings — keep shared skills tracked
 .claude/settings.local.json
+
+# Hermes skills internal state (not version-controlled)
+config/hermes/skills/.curator_backups/
+config/hermes/skills/.hub/
+config/hermes/skills/.usage.json.lock
+config/hermes/skills/.curator_state

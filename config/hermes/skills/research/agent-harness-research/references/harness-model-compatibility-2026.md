@@ -91,3 +91,7 @@ Sources compiled from multiple independent tests (thoughts.jock.pl, grigio.org, 
 
 > "Anthropic does not allow 3rd-party harnesses (like Pi) to use Claude Max subscription credits. Users must pay API rates on top of subscriptions."
 > — thoughts.jock.pl, on the "Anthropic Wall"
+
+## Domain-Specific Harness Selection Guides
+
+- **Data Analysis Harnesses**: See `queries/data-analysis-open-harness` — comprehensive decision matrix for choosing an Open Harness (or product) for data analysis workloads. Key finding: no true Open Harness purpose-built for data analysis exists yet; best current option is OpenCode/Pi + MCP DB connectors. Closed products (Cognition DANA, Hex) are alternatives for productized use cases.

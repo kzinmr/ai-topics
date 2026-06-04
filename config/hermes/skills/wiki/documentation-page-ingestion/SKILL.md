@@ -162,11 +162,47 @@ wc -l /tmp/slides.txt && wc -c /tmp/slides.txt
   entities/claude-code.md                               → 新セクション「Session Management (Agent SDK)」
 ```
 
+## Batch Blog Ingestion Pattern (sitemap → raw → concepts)
+
+When ingesting an entire blog (e.g. developers.openai.com/blog, anthropic.com/engineering):
+
+1. **Extract article list from sitemap** — `curl /sitemap-0.xml | grep '<loc>' | grep '/blog/'`. RSS feeds often mix blog posts with docs/cookbook/guides — sitemap filtering by path prefix is more accurate.
+2. **Save all raw articles** — Use `delegate_task` with 2 parallel subagents (split URLs evenly). Each subagent fetches via curl, extracts article body, saves with YAML frontmatter to `wiki/raw/articles/`.
+3. **Cross-reference with existing wiki** — Search wiki for URL paths (not generic words). Searching for bare slugs like `intro` or `responses-api` matches unrelated content. Use the full URL or `developers.openai.com/blog/<slug>` pattern.
+4. **Prioritize by cross-vendor comparison** — When a competitor's blog is already ingested (e.g. Anthropic engineering), map each new article to its equivalent. This prevents priority drift and reveals coverage gaps. Create a comparison table: topic area → vendor A article → vendor B article → wiki page status.
+5. **Create wiki pages in parallel** — `delegate_task` with batch of 3 subagents. Each reads raw articles + existing cross-reference pages, creates concept pages, updates index entries.
+6. **Fix index.md section structure** — After adding entries, verify section counts: `awk '/^## Concepts/{s="c"} /^## Events/{s="e"} /^- \[\[/{counts[s]++} END{for(k in counts) print k": "counts[k]}' index.md`. Pre-existing misplacement bugs are common (concept entries under wrong section headers).
+7. **Tag taxonomy check before commit** — Pre-commit hook blocks on tags not in SCHEMA.md. Add missing tags to SCHEMA.md taxonomy lines BEFORE committing. Common additions needed: product names, engineering concepts, company names.
+
 ### 注意点
 
 - ドキュメントを機械的にミラーリングしない。マッピングと分析が本体であり、APIリファレンスの再掲は最小限に留める
 - マッピング表は必ず含める（読者が一目で関係を把握できる）
 - 「設計上の含意」セクションで、なぜこのマッピングが重要なのかを論じる
+
+## シリーズ物のドキュメントを扱う場合
+
+同じ著者・同じシリーズから複数回ドキュメントを取り込む場合（例: Doug Turnbull "Cheat at Search" シリーズ）、以下の作業を推奨：
+
+1. **既存の関連ページを確認**: シリーズの過去の講義が既にwikiに取り込まれていないか検索する
+2. **シリーズ間の接続を明記**: 新しい概念ページに、同じシリーズの関連ページへの相互リンクを追加する
+3. **概念的進化を追跡**: 前回までの話題と今回の新話題がどう接続するかを「過去の講義との接続点」として記録する
+4. **エンティティページも更新**: 著者のエンティティページに今回の講義を追加し、シリーズ全体のタイムラインを維持する
+
+例: 5回の「Cheat at Search」講義を取り込んだ後、`agentic-search.md` に全5回の比較表（収量/呼び出し比）を追加し、各概念ページ間で双方向リンクを張った。
+
+## Lecture Series / Transcript Cross-References
+
+レクチャーシリーズ（例: Cheat at Search）の transcript を新規作成する場合、**既存の鄰接 transcript の "Related transcripts" セクションも更新する**。新規 transcript に既存へのリンクを張るだけでなく、双方向リンクにする。
+
+**手順:**
+1. 新規 transcript を作成（フロントマター + 本文 + Companion Resources）
+2. `wiki/raw/transcripts/` で既存の同シリーズ transcript を確認（`search_files` で author/date パターン一致）
+3. 隣接 transcript（前回・次回）の "Related transcripts" セクションに新規ファイルへの wikilink を追加
+4. 同様に `wiki/raw/articles/` の対応スライド記事もあればリンク確認
+5. 全ファイルを同じコミットに含める
+
+**ピットフォール:** transcript のみ新規作成してスライド記事の存在確認を忘れると、片方向リンクになる。必ず `search_files` でシリーズ全体を把握してから作業を始める。
 
 ## コミット・プッシュ時の Git 競合
 

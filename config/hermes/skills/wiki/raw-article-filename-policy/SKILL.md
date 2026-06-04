@@ -29,6 +29,8 @@ If you create a new file, register it: `python3 scripts/papers_index.py --add <f
 
 The index is at `wiki/raw/papers/.papers_index.json` and maps identifiers to canonical filenames.
 
+**Full pipeline reference:** `references/papers_index_workflow.md` — step-by-step from date discovery through commit/push.
+
 ### Examples
 
 | Paper | Source Date | Filename |
@@ -38,6 +40,17 @@ The index is at `wiki/raw/papers/.papers_index.json` and maps identifiers to can
 | GEPA (arXiv:2507.19457) | 2025-07-25 | `2025-07-25_2507.19457_gepa-reflective-prompt-evolution.md` |
 | DeepSeek-V4 (HuggingFace) | 2026-04-xx | `2026-04-xx_deepseek-v4-technical-report.md` |
 
+## Lecture Transcripts (`wiki/raw/transcripts/`)
+
+**Filename = `{YYYY-MM-DD}_{source-slug}_{content-slug}-lecture.md`**
+
+Same date and source-slug rules as articles. Add `-lecture` suffix to distinguish from the companion slides article.
+
+- Frontmatter: `type: transcript`, include `date` (lecture date) and `date_ingested`
+- Always include `related_article:` pointing to the companion slides article wikilink path
+- Example: `2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture.md`
+  - Companion: `articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search.md`
+
 ## Original `wiki/raw/articles/` Policy
 
 **Filename = `{YYYY-MM-DD}_{source-slug}_{content-slug}.md`**
@@ -46,6 +59,17 @@ Where:
 - `YYYY-MM-DD` = the ACTUAL publication date of the article (verified from the source, NOT today's date)
 - `source-slug` = abbreviated domain or source name (lowercase, no dots: `interconnects`, `pelayoarbues`, `simonwillison`, `arxiv`, `anthropic`)
 - `content-slug` = 2-5 word descriptive title (lowercase, hyphenated, 30 chars max)
+
+## Transcripts (`wiki/raw/transcripts/`)
+
+**Filename = `{YYYY-MM-DD}_{source-slug}_{content-slug}.md`** (same pattern as articles)
+
+Where:
+- `YYYY-MM-DD` = the lecture/presentation date (not ingestion date)
+- `source-slug` = author handle (e.g., `softwaredoug`)
+- `content-slug` = descriptive slug
+- `type: transcript` in frontmatter
+- See `wiki-entity-enrichment-from-article` → `references/transcript-ingestion.md` for full workflow
 
 ## Examples
 
@@ -97,9 +121,28 @@ for m in re.finditer(r'"datePublished"\s*:\s*"([^"]+)"', html):
     print("JSON-LD datePublished:", m.group(1))
 ```
 
+## Raw Article Rename Workflow
+
+When a raw article filename needs correction (wrong date, typo, etc.), follow this reference-update pattern. See `references/raw-article-rename-workflow.md` for the full checklist.
+
+**Quick version:**
+1. `search_files` for the old filename across `wiki/` to find ALL references
+2. `terminal mv` to rename the file
+3. Update frontmatter (`date`, etc.) via `patch`
+4. Batch-update all references in `index.md`, `log.md`, `entities/`, `concepts/`, `raw/transcripts/`
+5. Leave archived triage JSONs untouched (historical snapshots)
+6. Append a rename log entry to `log.md`
+7. Commit + push
+
+**User preference:** When correcting dates or metadata, the user expects a *thorough* reference update — not just the frontmatter, but all wikilinks, index entries, log entries, and cross-references in related pages.
+
+---
+
 ## Pitfalls
 
 - **DO NOT use today's date** — the filename must reflect when the content was published, not when you processed it
+- **Blogwatcher URLs may have incorrect slugs** — the URL from blogwatcher DB may 404 (e.g., "with-open-source-models" vs "without-regrets"). Before saving a raw article, fetch the URL to verify it resolves. If 404, check the source's RSS feed for the correct URL. Do NOT save with an unverified blogwatcher URL.
+- **Source-slug from blogwatcher**: When using blogwatcher-discovered URLs, the `source-slug` should come from the verified domain (`together-ai`, `google-developers`), not from the potentially inaccurate blogwatcher URL path.
 - **Slides/presentations** — Google Slides, Canva, Figma decks, and similar presentation formats rarely embed a creation date in metadata. Use the ingestion date as the filename date, but add `date_ingested: YYYY-MM-DD` in the YAML frontmatter (not `date` or `date_published`) to distinguish it from a verified publication date.
 - **Newsletters** — If the article is from a newsletter digest, the newsletter date ≠ article date. Find the article's original publication date on the source site.
 - **Republished content** — If an article was republished on a different platform (e.g., cross-posted to Substack and Medium), use the EARLIEST publication date.

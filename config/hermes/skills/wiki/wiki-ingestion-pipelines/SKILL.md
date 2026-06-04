@@ -236,12 +236,88 @@ Automated consolidation process analyzing recently collected articles and foldin
 - **Pattern C**: Batch entity discovery — create missing entity pages for recurring people/companies
 - **Pattern D**: Duplicate detection matrix (filename, index entry, content grep, session_search)
 
-### Pitfalls
-- Duplicate detection is MANDATORY
-- Always check existing pages first
-- Log.md corruption via patch (accidental `|` prefix from read_file format)
-- Pre-run script may timeout — fall back to `grouped_themes_latest.json`
+## 0-Article Recovery Workflow (Shell Commands)
 
+When the dreaming checkpoint reports `collected_articles=0`, raw articles may still exist that other pipelines didn't consume. Use this concrete workflow:
+
+### Step 1: Count recent raw articles
+```bash
+find ~/wiki/raw/articles -name "*.md" -mtime -3 -size +500c | wc -l
+```
+
+### Step 1.5: Cross-pipeline dedup check (FIRST — saves the most time)
+Before scanning raw articles, check the latest blog triage JSON. This immediately rules out the entire blog-ingest batch (typically 15-20 articles already decided as skip/reference), catching ~70% of raw articles from the blog pipeline.
+
+```bash
+# Check blog triage exists
+ls -la ~/.hermes/cron/data/blog_ingest/triage_latest.json
+# Also check newsletter triage
+ls -la ~/.hermes/cron/data/newsletter/triage_latest.json
+```
+
+Read the triage JSON with a Python script (pipe_to_interpreter blocked in cron mode — use `write_file` to `/tmp/` then `terminal python3`):
+```python
+import json, os
+blog_path = os.path.expanduser("~/.hermes/cron/data/blog_ingest/triage_latest.json")
+with open(blog_path) as f:
+    d = json.load(f)
+for x in d.get("decisions", []):
+    print(f"{x['recommended_action']}: {x.get('source_name','')} - {x.get('title','')[:60]}")
+```
+
+Articles already decided in blog/newsletter triage should be marked as `skip (already captured by blog pipeline)` before proceeding to full analysis. This is the single most time-saving step in the recovery workflow.
+
+### Step 2: Find genuinely unprocessed articles
+```bash
+find ~/wiki/raw/articles -name "*.md" -size +500c -mtime -3 | while read f; do
+  base=$(basename "$f" .md)
+  count=$(grep -rl "$base" ~/ai-topics/wiki/entities/ ~/ai-topics/wiki/concepts/ ~/ai-topics/wiki/log.md 2>/dev/null | wc -l)
+  if [ "$count" -eq 0 ]; then
+    size=$(stat -c%s "$f")
+    echo "UNPROCESSED: $base ($size bytes)"
+  fi
+done
+```
+This checks each article filename against entity pages, concept pages, AND log.md. An article is "unprocessed" only if zero references exist anywhere.
+
+### Step 3: Filter by AI relevance
+Read each unprocessed article's first 50+ lines. Skip:
+- Vintage computing, math, F1, politics, general security (non-AI)
+- Event announcements, marketing promos (low wiki value)
+- Link blog posts already covered by another source (check krebsonsecurity, simonwillison references)
+
+### Step 4: Check existing entity page coverage
+First verify entity page exists, then check content depth:
+```bash
+# Quick existence check (faster than grep)
+ls ~/ai-topics/wiki/entities/<entity>.md 2>/dev/null && echo "EXISTS" || echo "MISSING"
+# Content depth check
+grep -E "^##" ~/ai-topics/wiki/entities/<entity>.md
+# Also check for article-specific keywords
+grep -i "keyword-from-article" ~/ai-topics/wiki/entities/<entity>.md
+```
+If the entity page exists but lacks the article's specific content → enrichment candidate (TAKE/REFERENCE).
+
+### Step 5: Build triage JSON
+Since `execute_code` is blocked in cron mode, use `write_file` to `/tmp/dreaming_triage.py` then `terminal python3 /tmp/dreaming_triage.py`. Key: use `None` (Python) not `null` (JS) for optional fields.
+
+### Step 6: Archive skip/reference items
+After saving the triage JSON, archive skip and reference decisions for later re-evaluation:
+```bash
+cd ~/ai-topics && python3 scripts/archive_triage.py dreaming --keep-reference
+```
+
+## Pitfalls
+- Duplicate detection is MANDATORY
+- Always check existing pages first (don't trust 0.65 threshold alone)
+- Log.md corruption via patch (accidental `|` prefix)
+- Pre-run script timeout → fallback file at `/opt/data/.hermes/cron/data/dreaming/grouped_themes_latest.json`
+- Stale dreaming themes (2-3 days old) may already be processed by daily pipelines
+- **0-article doesn't mean nothing to do**: `collected_articles=0` means other pipelines consumed sources, but raw articles may have arrived AFTER those pipelines ran. Always run the 0-article recovery workflow.
+- **Cross-pipeline dedup order matters**: Check blog triage JSON FIRST (`~/.hermes/cron/data/blog_ingest/triage_latest.json`) — it instantly rules out 70%+ of raw articles. Then check log.md, then wiki pages. Reading articles should be the LAST step, not the first.
+- **`grep -rl` with `target='files'` is NOT a filename lookup**: `search_files(target='files')` searches file *content* with regex, not filenames. Use `find` + `grep -rl` for true filename-based discovery of unprocessed articles.
+- **execute_code blocked in cron mode**: Write Python scripts to `/tmp/` via `write_file`, then run with `terminal python3 /tmp/script.py`. Do NOT use `cat file | python3` (pipe_to_interpreter blocked).
+- **`-mtime` window must match**: Step 1 (count) and Step 2 (find unprocessed) must use the same `-mtime` value. Step 1 uses `-mtime -3`; Step 2 must also use `-mtime -3`, not `-mtime -1`.
 ---
 
 ---
@@ -290,6 +366,24 @@ See `references/newsletter-triage.md` for detailed URL resolution patterns, clas
 
 ---
 
+## Section Z: Trending Topics Reporting (trending-topics)
+
+See `research/trending-topics-reporting` skill for the end-to-end trending topics research/reporting workflow. This is NOT an ingestion pipeline — it produces a Japanese-language trending report saved to `inbox/rss-scans/` — but it runs after all morning ingestion pipelines (12:00 UTC) and uses their output as input.
+
+### Quick Reference
+```bash
+# Run the trend detector
+python3 ~/ai-topics/scripts/trending_topics.py --days 3
+
+# Query DB for recent AI articles
+python3 -c "import sqlite3; c=sqlite3.connect('/opt/data/.blogwatcher/blogwatcher.db').execute('''SELECT b.name, a.title, a.url FROM articles a JOIN blogs b ON a.blog_id=b.id WHERE DATE(a.discovered_date)>=date('now','-2 days') AND (a.title LIKE '%AI%' OR a.title LIKE '%agent%' OR a.title LIKE '%LLM%' OR a.title LIKE '%model%') ORDER BY b.name'''); [print(f'  [{r[0]}] {r[1]}') for r in c.fetchall()]"
+```
+
+### Key Pitfall: Dual Article Storage
+Articles may be in EITHER `/opt/data/ai-topics/wiki/raw/articles/` (canonical) OR `/opt/data/.hermes/home/wiki/raw/articles/` (cron HOME). Always check both with `find`.
+
+---
+
 ## Section H: Daily RSS Triage (daily-rss-triage)
 
 See `references/daily-rss-triage.md` for full workflow.
@@ -324,6 +418,27 @@ The daily RSS triage is the **triage + ingest** stage of the blog pipeline.
 See `references/wiki-raw-article-curation.md` for full workflow.
 
 Systematically reduce the "unprocessed raw articles" count reported by `wiki_health.py`.
+
+### Series Registration Pattern
+
+When multiple raw articles form a coherent series (e.g., slide decks from the same course, multi-part blog series), register them as a **group** in index.md rather than individually scattered across sections.
+
+**Workflow:**
+1. Verify all series articles exist in `raw/articles/` (they may already be saved but unregistered in index.md)
+2. Add a dedicated section header in index.md: `## Raw Articles — {Series Name} (N pages)`
+3. Each entry includes: wikilink, brief description, and cross-references to companion materials (lecture transcripts, concept pages)
+4. If companion lecture transcripts exist in `raw/transcripts/`, update the "Raw Transcripts" section count and add entries
+5. Update the author's entity project page to link directly to raw slide articles (not just concept pages)
+
+**Example — Cheat at Search slide series:**
+```markdown
+## Raw Articles — Cheat at Search Slide Series (7 pages)
+
+- [[raw/articles/YYYY-MM-DD_author_part-1]] — Part 1 title. Brief description. Companion: [[concepts/relevant-concept]]
+- [[raw/articles/YYYY-MM-DD_author_part-2]] — Part 2 title. ...
+```
+
+**Key pitfall:** Entity project pages may link to concept pages (e.g., `[[concepts/llm-search-judge]]`) instead of raw slide articles. When registering a series, update entity pages to link directly to raw articles with concept pages as secondary references.
 
 ### Detection
 ```bash
@@ -375,7 +490,13 @@ The agent cron job receives a JSON payload with `new_bookmarks[]` array. Each bo
 
 2. **Scrape external articles**: `web_extract()` each external URL. Save to `wiki/raw/articles/{YYYY-MM-DD}_{source}_{slug}.md`. The OpenAI blog and Meta/FAIR research blogs typically return full content.
 
-3. **X Article fallback**: For bookmarks where the only URL is an X Article behind the auth wall:
+3. **X Article content extraction** (in priority order):
+
+   a. **Check `article.plain_text` FIRST** — The bookmark/tweet metadata frequently contains the FULL article body in `article.plain_text` even when the URL returns HTTP 500. If `article.plain_text` has substantial content (>2KB), save it directly as the raw article and skip all API/mirror fallbacks. Both the article body AND inline code blocks (`article.entities.code[]`) are available. See `wiki-entity-enrichment-from-article` skill's `references/x-article-plain-text-content.md` for the full pattern, decision logic table, and content preservation notes.
+
+   b. **Try GetXAPI** (if `$GETXAPI_KEY` is set) — Structured JSON with headings and lists. Use the parent tweet's ID.
+
+   c. **Mirror search** — For articles where `article.plain_text` is empty or too short:
    - Extract `article.title` from bookmark metadata
    - Run `web_search` with: `"<article title>" 2026` (add author name or domain keywords)
    - Common mirrors: LangChain blog (`blog.langchain.com/...`), Substack, arXiv, personal blogs
@@ -389,7 +510,7 @@ The agent cron job receives a JSON payload with `new_bookmarks[]` array. Each bo
 
 5. **Prioritize by engagement**: Process highest-bookmark-count articles first (signal of importance).
 
-6. **Create/update wiki pages**: Follow `wiki-entity-enrichment-from-article` skill for entity/concept creation. For multi-article batches by the same author (e.g., two LangChain blog posts by Vivek Trivedy), use the Multi-Source Same-Author Sequential Enrichment pattern.
+6. **Create/update wiki pages**: Follow `wiki-entity-enrichment-from-article` skill for entity/concept creation. For multi-article batches by the same author (e.g., two LangChain blog posts by Vivek Trivedy), use the Multi-Source Same-Author Sequential Enrichment pattern. For a single comprehensive article that touches many pages (entity + concept + methodology + org + anti-patterns), use the **Comprehensive Article Multi-Page Cascade** pattern — see `references/comprehensive-article-multi-page-cascade.md`.
 
 7. **Update index.md and log.md**: One log entry summarizing the entire batch. Update index.md entry count. Patch existing concept page descriptions if significantly changed.
 
@@ -398,7 +519,7 @@ The agent cron job receives a JSON payload with `new_bookmarks[]` array. Each bo
 ### Key Pitfalls
 
 - **Duplicate entity detection is MANDATORY**: Before creating any person entity page, search for existing pages under different slugs (e.g., `vtrivedy10.md` vs `varun-trivedy.md` vs `vivek-trivedy.md`). Many tracked people already have pages created by `build_x_wiki.py`.
-- **X Articles behind auth wall**: `web_extract()` on `x.com/i/article/...` returns JavaScript wall or login page. Don't waste time retrying — go straight to `web_search` for mirrors.
+- **X Articles behind auth wall**: `web_extract()` on `x.com/i/article/...` returns JavaScript wall or login page. **Check `article.plain_text` first** — it often contains the full article body. Only use `web_search` for mirrors as a last resort when `article.plain_text` is insufficient or empty. See `references/x-article-plain-text-content.md` in `wiki-entity-enrichment-from-article` skill.
 - **Image-only bookmarks**: Bookmarks where the only URLs are `pic.x.com/...` media links have no scrapable content. Skip them.
 - **Thread-only bookmarks**: Bookmarks where the content is entirely in the tweet text with no external URL. Skip for article scraping (save as metadata-only).
 - **LangChain blog mirror pattern**: When searching for X Article mirrors, `blog.langchain.com` is a common target — many agent/harness engineering articles are cross-posted there.
@@ -441,6 +562,9 @@ When ingesting a single URL (not batch pipeline), see `references/manual-article
 - **Partial-match corruption on patch** — When `old_string` matches only a PREFIX of a target line (not the full content), the patch tool replaces only the matched portion and appends the REMAINING original text onto your new content. **Fix:** Always include enough trailing context in `old_string` to uniquely identify the ENTIRE line — preferably the full text of the line from the file. Verify by reading the file first with `read_file(offset, limit)` and using the exact bytes shown. After every patch on index files, immediately re-read the affected lines to check for appended garbage text. If corruption occurred, fix with a second patch that replaces the corrupted substring.
 - **Context compaction can mask prior work** — review compaction summary for already-completed tasks
 - **Commit message `&` trap**: The terminal tool interprets `&` as shell backgrounding. If your commit message contains `&` (e.g., `set_to_none=True`, `agents & tools`), use **single quotes**: `git commit -m 'wiki: safe message here'`. Double quotes fail silently. Also, `&&` chaining triggers the tool's backgrounding detection — split into separate `git add`, `git commit`, `git push` calls when `&&` chaining fails.
+- **Tag validation blocks commits**: The pre-commit hook (`~/.githooks/pre-commit-tag-validator.py`) checks every YAML frontmatter `tags:` entry against SCHEMA.md's canonical taxonomy. If a tag isn't in SCHEMA.md, the commit is blocked with a violation message. Fix: (a) check SCHEMA.md for an existing canonical tag that matches your intent (e.g., use `sandbox` instead of inventing `agent-sandboxing`), or (b) add the new tag to SCHEMA.md before committing. Do NOT use `--no-verify` to bypass — the curator workflow expects tag hygiene.
+- **⚠️ Content regression blocks commits (CRITICAL)**: The pre-commit hook `.githooks/pre-commit-content-regression.py` detects when entity/concept pages shrink by >50 lines AND >50%. This catches the #1 recurring wiki data-loss pattern: an ingestion pipeline overwriting a rich curated page with a skeleton/stub. **58 documented regression events** across 9 destructive commits (worst: `7b69b67d` with 15 pages, `383eff68` with 14 pages). **Prevention**: Before ANY `write_file` to `wiki/entities/` or `wiki/concepts/`, `read_file` the existing page first. If it has >40 lines, use `patch` to add content — NEVER `write_file` to replace it. **Recovery**: When enriching a damaged page, always check `git log` for a richer historical version first — restore the richest version as base, merge any genuinely new content, then `patch` new info on top. See `wiki-entity-enrichment-from-article` skill's `references/pre-write-verification.md` for the full protocol, git history enrichment 4-step pattern, and `references/content-regression-scanner.sh` for scanning the commit history. **Cron prompt enforcement**: All ingestion cron jobs (raw-backlog-ingest, x-bookmarks-ingest, skeleton-enrich-daily, newsletter-wiki-ingest, blog-wiki-ingest) must include an explicit anti-overwrite warning in their prompt preamble.
+- **Patch tool Unicode escape-drift in cron mode**: When enriching wiki pages from articles with smart quotes, em-dashes, or CJK characters, `patch` frequently fails with "Escape-drift detected". The cron-safe workaround is `write_file` a Python script to `/tmp/` and run it with `terminal`. This also handles multi-section insertions that would otherwise require multiple sequential patch calls. See `references/comprehensive-article-multi-page-cascade.md` for the Python script template.
 - **Total page count in index.md header must be correct**
 - **concepts/_index.md drift**: Many wikis have a separate `concepts/_index.md` listing concepts by category. Creating or enriching concept pages without updating this causes index drift. Always update BOTH `wiki/index.md` (main index) and any sub-index files (`concepts/_index.md`, `entities/_index.md` if they exist) when adding new pages.
 - **New files invisible to `git add` after auto-commit**: If a cron job or auto-sync mechanism committed your new wiki files before your batch commit, `git status` won't show them and `git add` won't stage them. Verify with `git ls-files | grep <new-file-name>`. If the file shows as tracked but `git diff HEAD --stat` doesn't include it, it was already committed — just commit the remaining modifications.

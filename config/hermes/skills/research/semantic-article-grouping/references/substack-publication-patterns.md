@@ -13,7 +13,7 @@ Known substack publication URL behaviors discovered during newsletter-triage ses
 | **Gary Marcus** | `garymarcus` | (unknown) | `open.substack.com/pub/garymarcus/p/{slug}` | `garymarcus.substack.com/p/{slug}` | Direct redirect. |
 | **Simon Willison** | `simonw` | 1173386 | `open.substack.com/pub/simonw/p/{slug}` | `simonw.substack.com/p/{slug}` | Django co-creator's personal newsletter. Full content accessible free. Often cross-posts from simonwillison.net. |
 | **Hyperdimensional (Dean Ball)** | `hyperdimensional` | 2244049 | `open.substack.com/pub/hyperdimensional/p/{slug}` | `hyperdimensional.substack.com/p/{slug}` | AI policy analysis by Dean W. Ball (FAI). Deep essays on physical AI, regulation. |
-| **Ben's Bites** | `bensbites` | 4379299 | `open.substack.com/pub/bensbites/p/{slug}` | `bensbites.substack.com/p/{slug}` | Daily AI news by Ben Tossell. Short form, link-heavy, often includes sponsored content. |
+| **Ben's Bites** | `bensbites` | 4379299 | `open.substack.com/pub/bensbites/p/{slug}` | `bensbites.substack.com/p/{slug}` and `www.bensbites.com/p/{slug}` | Daily AI news by Ben Tossell. Short form, link-heavy, often includes sponsored content. **Custom domain alias**: `www.bensbites.com/p/{slug}` redirects to the same post. The `open.substack.com/pub/bensbites/p/{slug}` URL also works. The `available-content` div is typically very short (~150 chars intro); most content is in the external links extracted from href patterns. Intros are informal ("I'm spending as much time as possible off Twitter...") and not wiki-worthy — focus on the curated links. |
 | **AI by Aakash** | `aibyaakash` | 5747120 | `open.substack.com/pub/aibyaakash/p/{slug}` | `aibyaakash.substack.com/p/{slug}` | Weekly AI news by Aakash. Covers funding rounds, model releases, tool launches. Often promotes GBrain system. |
 | **True Positive Weekly** | `aiweekly` | 61455 | `open.substack.com/pub/aiweekly/p/{slug}` | `aiweekly.substack.com/p/{slug}` | Curated AI/ML links by Andriy Burkov. Link-heavy format: headlines only with short descriptions. web_extract often returns truncated content (headlines visible, link URLs inaccessible). |
 | **SemiAnalysis** | `semianalysis` | 6349492 | Sent as individual emails (one article per email) | `semianalysis.com/p/{slug}` | **Not a standard substack newsletter** — each article sends as its own email. Heavy paywall. See `references/semianalysis-paywall-patterns.md`. |
@@ -98,6 +98,7 @@ Paywalled substack posts still provide value:
 
 ### AINews Specific
 - Publication is published by `swyx` (Shawn Wang / swyxio)
+- **Paywalled but `<article>` tag yields 25K+ chars**: Even when `isAccessibleForFree: false`, the raw HTML `<article>` tag extraction (`re.findall(r'<article[^>]*>(.*?)</article>', html, re.DOTALL)`) returns ~25K characters of usable content. This includes the free preview, embedded X/Twitter post text, model names, technical details with benchmark numbers, section headers, and publication author mentions. Observed June 2026 with the Microsoft Build MAI-Thinking-1 post. This is sufficient for full triage (metadata extraction, topic identification, coverage gap analysis) without needing to bypass the paywall.
 - Owns `latent.space` domain, which is the canonical home
 - Also at `www.latent.space/s/ainews/`
 - Heavy use of X/Twitter embeds for source curation

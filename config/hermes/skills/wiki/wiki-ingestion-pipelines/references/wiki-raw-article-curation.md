@@ -50,3 +50,29 @@ Search: `grep -r "unique-phrase" wiki/entities/ wiki/concepts/ --include="*.md" 
 - Don't overwrite L2 page content — always append
 - Escape-drift on YAML frontmatter patches — use markdown References section
 - Verify after each batch — count should drop monotonically
+
+## Series Registration (slide decks, multi-part series)
+
+When raw articles form a series (e.g., course slide decks, multi-part blog posts), they often get saved individually but never registered as a group in index.md. This makes them invisible to wiki navigation despite existing in `raw/articles/`.
+
+### Detection
+```bash
+# Find unregistered raw articles by author
+ls ~/ai-topics/wiki/raw/articles/*{author}* 2>/dev/null
+# Check if any are in index.md
+grep "{author}" ~/ai-topics/wiki/index.md
+```
+
+### Registration Steps
+1. Count articles in series → section header: `## Raw Articles — {Series Name} (N pages)`
+2. Each entry: `[[raw/articles/filename]] — Title. Brief desc. Companion: [[link]]`
+3. Cross-ref companion transcripts in `raw/transcripts/` (update count in section header)
+4. Update author entity project page to link raw articles directly (not just concept pages)
+5. Update log.md with batch entry
+6. Commit: `git add wiki/index.md wiki/log.md wiki/entities/ && git commit -m "wiki: register {series} raw articles" && git push`
+
+### Entity Page Direct Linking
+Entity project pages often link to concept pages (e.g., `[[concepts/llm-search-judge]]`) instead of raw articles. When registering a series, update the entity page to link directly to raw articles with concept pages as secondary references:
+```markdown
+- Part 4: [[raw/articles/...|LLM as a Judge]] — description (see also [[concepts/llm-search-judge]])
+```

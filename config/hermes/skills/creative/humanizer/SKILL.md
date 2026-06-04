@@ -478,6 +478,141 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 ---
 
+## JAPANESE-SPECIFIC AI WRITING PATTERNS
+
+The 29 patterns above were designed for English text. Japanese AI-generated text has its own distinct tells. When humanizing Japanese prose, scan for these additional patterns.
+
+### J1. Double-Width Dash Overuse (——)
+
+**Problem:** Japanese LLMs heavily overuse `——` (U+2014 EM DASH repeated, or the fullwidth equivalent) in titles, section headers, and as a dramatic sentence connector. Human Japanese writers use it sparingly; AI slathers it on.
+
+**Before:**
+> ## 1. 構造パラドックス —— 「長期的に良いものは、今は常に悪く見える」
+> ## 2. Bitter Lesson —— スケールは設計を喰う
+> ## 3. Scaling Hypothesis —— 「シミュレーションはエージェントそのもの」
+
+**After:**
+> ## 1. 構造パラドックス
+> ## 2. Bitter Lesson
+> ## 3. シミュレーションは、いつか本体になる
+
+### J2. Boldface Overuse
+
+**Problem:** Japanese AI output mechanically bolds every key phrase, often multiple times per paragraph. The **triple combo** —— `——` + `**bold**` + `である調` —— is a near-certain AI signature.
+
+**Before:**
+> **「頭が良くなればなるほど、言うことを聞かなくなる」** —— これ、AIモデルの世界では単なるジョークではなく、**深い技術的真実**を含んでいる。モデルは**より有能になった**が、同時に**より不透明で、より制御しづらく**なった。
+
+**After:**
+> 頭が良くなればなるほど、言うことを聞かなくなる。これ、AIモデルの世界ではただのジョークじゃない。GPT-2の頃はまだ素直だった。でもGPT-3、GPT-4、Claude Mythosとスケールしていくうちに、何かが変わった。モデルは圧倒的に有能になった。そして同時に、不透明で、扱いづらくなった。
+
+**Rule of thumb:** If more than one bold phrase appears per section, it's probably AI. Keep at most 2-3 bold phrases in an entire article, and use them only for genuinely surprising or central claims.
+
+### J3. Uniform である調
+
+**Problem:** Japanese AI defaults to rigid `である調` (formal written register) throughout the entire text, never varying to `だ調` (plain) or `です・ます調` (polite). Human writers mix registers naturally, especially in blog posts.
+
+**Before (uniform):**
+> これがTransformerアーキテクチャの歴史そのものである。スケールするにつれて足枷に変わっていく。その繰り返しである。双方向アテンションは理にかなった設計であった。
+
+**After (natural mix):**
+> これがTransformerアーキテクチャの歴史そのものだと言うのだ。スケールするにつれて足枷に変わっていく。その繰り返し。双方向アテンションは理にかなった設計だった。
+
+**Fixes:**
+- End some sentences with `〜だ`, `〜だった`, `〜と思う`, `〜だろう`
+- Use sentence-final particles sparingly: `〜のだ` (at most once per section)
+- Drop the copula entirely for punchy sentences: 「その繰り返し。」not 「その繰り返しである。」
+- In a blog post, `です・ます調` is acceptable for direct reader address
+
+### J4. Explanatory 〜のである / 〜のだ Overuse
+
+**Problem:** Japanese AI appends `〜のである` or `〜のだ` to too many sentences, manufacturing a false "explanatory" tone.
+
+**Before:**
+> スケールがそれを不要にしたとき、我々は同時にモデル内部への窓も失ったのである。予測精度を追い求めることは、暗黙のうちにエージェンシーを追い求めることでもあるのだ。
+
+**After:**
+> スケールがそれを不要にしたとき、モデル内部への窓も一緒に閉じた。予測精度を追い求めることは、そのまま主体性を追求することだ。
+
+### J5. Even Paragraph Length Rhythm
+
+**Problem:** Japanese AI produces paragraphs of near-identical length (typically 3-5 medium-length sentences each), creating a monotonous rhythm. Human writing is messier — some paragraphs are one sentence, others are long and winding.
+
+**Fix:** After writing, check paragraph lengths. If they're all similar, deliberately vary them. Insert a one-sentence paragraph. Let one idea run long.
+
+### J6. Formulaic Transition Words
+
+**Problem:** Japanese AI distributes transition words evenly and predictably: `一方`、`しかし`、`つまり`、`むしろ` appear at regular intervals like clockwork. Humans use them irregularly, or skip them entirely.
+
+**Before:**
+> 一方、潜在推論はモデルが内部のベクトル空間で考える。しかし、外からは何も見えない。つまり、どう結論に至ったか誰にもわからない。
+
+**After:**
+> 潜在推論はモデルが内部のベクトル空間で考える。帯域は桁違いに広い。でも外からは何も見えない。モデルがどうやって結論にたどり着いたか、誰にもわからない。
+
+### J7. Japanese Signposting
+
+**Japanese phrases to watch:** 〜ていこう、〜てみよう、〜見ていこう、本稿では〜、具体例を見てみよう、いくつかの方向性が見えている
+
+**Problem:** Same as English signposting (pattern 28). LLMs announce what they're about to do instead of doing it.
+
+**Before:**
+> 具体例を見てみよう。本稿ではこのトレードオフを多角的に巡っていく。
+
+**After:**
+> （削除。いきなり具体例や本題に入る。）
+
+### J8. Abstract Philosophical Endings
+
+**Japanese phrases to watch:** 〜なのである、〜に他ならない、〜という問いかけなのだ、〜の宣言でもある
+
+**Problem:** Japanese AI conclusions inflate into abstract philosophy that doesn't match the body's tone. These endings read like a different author took over for the last paragraph.
+
+**Before:**
+> これは警告であると同時に、可能性の宣言でもある。我々がスケールを追い求める限り、制御できない何かが出現する。それを恐れるのではなく、より成熟した制御の形を模索すること —— それが、このトレードオフが我々に課す最も深い問いかけなのだ。
+
+**After:**
+> これは警告であり、同時にほとんど諦念に近い。スケールを追い求める限り、制御できない何かは出てくる。それを止めることはできないし、止めるべきでもないだろう。たぶんそれで十分じゃない。でも、今ある中では一番マシな答えだと思う。
+
+### Japanese-Specific Pitfalls
+
+**Don't over-correct.** Japanese prose is culturally more structured than English. A Japanese blog post with numbered sections and clear transitions is not an AI tell — it's the norm. The goal is to remove *mechanical* AI patterns, not to make Japanese writing sound like English writing.
+
+Specifically:
+- **保留するダッシュ**: `——` in running text (not headers) at a rate of 1-2 per article is fine. Japanese writers use it for emphasis. The AI tell is *every header* using it.
+- **保留する太字**: 2-4 bold phrases in a long Japanese article is normal, especially for key terminology. The AI tell is *every paragraph* having bold.
+- **保留する構造**: Numbered sections (1., 2., 3.) with clear sub-headings are standard Japanese technical blog form. Don't destroy the structure — just make the *voice within* it sound human.
+- **文体の選択は文脈次第**: If the user's blog is a technical deep-dive, `である調` throughout may be appropriate. If it's a personal blog, mix registers. Ask the user which register they prefer if unsure.
+
+**User feedback integration pattern:** When the user gives multi-round feedback on a blog post (e.g., "reduce emphasis on X," "fold Y into Z," "add a new section on W"), treat each round as a structural edit, not a full rewrite. Preserve the voice you've already established. The user is steering content and emphasis, not rejecting the tone.
+
+### Japanese Humanizer Process
+
+When humanizing Japanese text, apply both the English patterns (1-29, adapted where needed) and the Japanese patterns (J1-J8). The process is otherwise the same:
+
+1. Read the text (use `read_file` if it's a file)
+2. Identify all instances of English patterns AND Japanese patterns
+3. Rewrite problematic sections
+4. Present a draft humanized version
+5. Ask: "What makes this so obviously AI generated?" (answer in the target language)
+6. Revise one more time
+7. Present final version
+
+### Japanese Before/After Quick Reference
+
+| Signal | AI Tells | Human Fix |
+|--------|---------|-----------|
+| Dashes | Every header has `——` | Remove from headers; keep at most 1-2 in body |
+| Bold | 30+ bold phrases | At most 2-3 in entire article |
+| Register | 100% である調 | Mix in だ調, drop copulas, add と思う/だろう |
+| Endings | のである/のだ overuse | One per section max |
+| Paragraphs | All 3-5 sentences | Vary wildly: 1-sentence punch, long ramble, medium |
+| Transitions | 一方/しかし/つまり evenly spaced | Use irregularly; skip half of them |
+| Signposting | 〜ていこう/〜てみよう | Delete; jump straight in |
+| Conclusion | Abstract philosophy | Concrete doubt / uncertainty / personal take |
+
+---
+
 ## Process
 
 1. Read the input text carefully (use `read_file` if it's a file).

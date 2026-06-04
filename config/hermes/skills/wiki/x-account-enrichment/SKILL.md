@@ -10,6 +10,9 @@ Enrich skeleton entity pages for X/Twitter accounts tracked in `~/x-accounts.yam
 
 ## Workflow
 
+> **⚠️ CRITICAL: Git History Check First**
+> Before enriching ANY page, check if a richer version exists in git history. Use `bash config/hermes/skills/wiki/wiki-entity-enrichment-from-article/references/find-richest-version.sh wiki/entities/<handle>.md 3`. If the richest version has >50 more lines than current, restore it first, then enrich on top. See `wiki-entity-enrichment-from-article` → `references/pre-write-verification.md` → "Git History Enrichment" for the full pattern.
+
 1. **Audit current state:**
    ```bash
    python3 -c "

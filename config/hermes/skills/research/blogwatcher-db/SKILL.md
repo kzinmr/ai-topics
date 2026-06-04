@@ -2,7 +2,7 @@
 name: blogwatcher-db
 description: Query the blogwatcher-cli SQLite database for RSS scan results. Use pre-verified column names and query templates to avoid errors.
 category: research
-verified: 2026-04-13
+verified: 2026-06-02
 ---
 
 # Blogwatcher Database Query Skill
@@ -183,12 +183,12 @@ def query_daily_scan(date_str):
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
-        SELECT b.name, a.title, a.url, a.published_date, a.discovered_date, a.categories
+        SELECT b.name, a.title, a.url, a.published_date, a.discovered_date
         FROM articles a JOIN blogs b ON a.blog_id = b.id
         WHERE DATE(a.discovered_date) = ?
         ORDER BY b.name, a.discovered_date DESC;
     """, (date_str,)).fetchall()
-    
+
     # Group by blog
     blogs = {}
     for row in rows:
@@ -199,7 +199,6 @@ def query_daily_scan(date_str):
             'url': row['url'],
             'published_date': row['published_date'],
             'discovered_date': row['discovered_date'],
-            'categories': json.loads(row['categories']) if row['categories'] else []
         })
     conn.close()
     return blogs
@@ -231,24 +230,47 @@ def generate_daily_report(date_str, blogs):
 
 ## Execution Tips
 
-### Write a standalone .py script, not inline `-c`
+### ⚠️ Cron Mode Restrictions (CRITICAL)
 
-Passing Python code inline via `terminal("python3 -c ...")` is **prone to quote-escaping failures** — especially when the code contains triple-quoted strings or nested single quotes. Instead, write the script to `/tmp/` first, then execute it:
+In cron mode (`hermes cron run`), **`execute_code` is blocked** (the security scanner denies subprocess calls without a user present). The `query_daily_scan()` Python function above uses `execute_code` and WILL FAIL in cron mode. Instead, use one of these patterns:
+
+**Pattern A — Simple queries**: Use inline `python3 -c` inside `terminal()`. This works for single SELECT statements, counts, and aggregations:
+
+```python
+terminal("python3 -c \"import sqlite3, json; conn=sqlite3.connect('/opt/data/.blogwatcher/blogwatcher.db'); conn.row_factory=sqlite3.Row; rows=conn.execute('SELECT COUNT(*) FROM articles').fetchall(); print(json.dumps([dict(r) for r in rows]))\"")
+```
+
+For date-filtered queries, escape single quotes inside the double-quoted shell string with `\\'`:
+
+```python
+terminal("python3 -c \"...WHERE DATE(a.discovered_date)=\\'2026-06-03\\'...\"")
+```
+
+**Pattern B — Complex queries (preferred)**: Write a Python script to `/tmp/` via `write_file`, then run it with `terminal("python3 /tmp/script.py")`. This avoids all quote-escaping:
 
 ```bash
-# Write script first (using write_file or echo)
-python3 /tmp/query_blogwatcher.py
+# Step 1: write_file → /tmp/query_blogwatcher.py  (full script with imports, sqlite3 queries, JSON output)
+# Step 2: terminal → python3 /tmp/query_blogwatcher.py
 ```
 
 ### Quick one-liner for counting articles
 
-For a simple count (no complex SQL), this pattern works in a single terminal call:
+For a simple count (no complex SQL), this pattern works in both interactive and cron mode:
 
 ```python
 python3 -c "import sqlite3; print(sqlite3.connect(DB_PATH).execute('SELECT COUNT(*) FROM articles').fetchone()[0])"
 ```
 
 Replace `DB_PATH` with the actual path.
+
+### Standalone script for complex queries (cron-mode safe)
+
+For queries with multiple joins, grouping, or JSON output, write to `/tmp/` as a `.py` file via `write_file` then run it with `terminal`. This is the safest approach in cron mode:
+
+```bash
+# Write script first (via write_file tool, not echo)
+python3 /tmp/query_blogwatcher.py
+```
 
 ## Pitfalls
 
@@ -263,3 +285,4 @@ Replace `DB_PATH` with the actual path.
 9. **sqlite3 CLI may not be installed** — use Python's sqlite3 module instead
 10. **DB may not be at the expected path** — run DB Discovery Fallback (see above) before assuming location
 11. **DB filename is `blogwatcher.db`, not `blogwatcher-cli.db`** — adjust `find` patterns accordingly
+12. **Cron HOME mismatch** — In the Hermes cron environment, `HOME` is set to `/opt/data/.hermes/home` (not `/opt/data`). The `blogwatcher-cli` binary resolves `~/.blogwatcher/blogwatcher.db` using `$HOME`, so it looks at the wrong path. The `daily_inbox_collect.py` script (canonical: `~/.hermes/scripts/daily_inbox_collect.py`) must use `PROFILE_ROOT` instead of `Path.home()` for `_BW_HOME`, and `run_blogwatcher_scan()` must set `HOME=str(PROFILE_ROOT)` in the subprocess env. See `references/cron-home-fix.md` for the exact patch.

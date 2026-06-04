@@ -21,12 +21,24 @@ description: Write original blog posts for the AI topics blog. Save to blog/ dir
 
 ## Process
 
-1. Write the post to `blog/{filename}.md`
-2. Update `wiki/log.md` with the new entry
-3. Commit and push: `cd /opt/data/ai-topics && git add blog/ wiki/log.md && git commit -m "blog: <title>" && git push`
+1. **Research phase**: Gather real operational data before writing. Use `delegate_task` with batch mode (up to 3 parallel subagents) to collect stats, read reference files, and extract examples simultaneously. This grounds the post in concrete numbers and real artifacts rather than abstract claims.
+2. Write the post to `blog/{filename}.md`
+3. Update `wiki/log.md` with the new entry (append a dated section summarizing what was created)
+4. Commit and push: `cd /opt/data/ai-topics && git add blog/ wiki/log.md && git commit -m "blog: <title>" && git push`
+
+### Companion Slides (Marp)
+
+When the blog post introduces a technical topic to an audience, companion Marp slides often belong in `slides/`:
+- Naming: `{YYYY-MM-DD}_{short-slug}.marp.md`
+- Reuse the same research gathered for the blog
+- Reference existing slides in the same directory for CSS theme reuse (copy the `style:` block verbatim)
+- Structure: 5 parts — Lead/Intro → Core Content (2-3 parts) → Takeaways → Thank You
+- Use `<!-- _class: section -->` for part transitions, `<!-- _class: lead -->` for opening/closing
+- Slides expand on what the blog covers in depth; they are not a summary of the blog
 
 Active blog post outlines and research notes are kept in `references/` within this skill.
 - `references/baudrillard-blog-outline.md` — In-progress structure for Baudrillard × AI blog post (2026-05-11).
+- `references/structural-duality-analysis-pattern.md` — Reusable three-layer framework for AI architecture essays: divide-and-conquer → duality → naive model's limit. Emerged from the 2026-05-20 Anthropic multi-agent × RLM analysis session.
 
 ## Frontmatter Template
 
@@ -70,7 +82,41 @@ When weaving in abstract theoretical concepts:
 3. **Problem identification alone is not enough.** The user considers pure problem-cataloguing (especially with abstract formalism) pedantic. Every problem raised must be accompanied by a pragmatic position: why does it matter practically, and what posture should we take toward it?
 4. **Acknowledge external pressure.** Structural problems are easy to list. The harder and more interesting move is to acknowledge the inescapable external forces (competition, information velocity, economic incentives) that make engaging with these broken systems unavoidable.
 
+## Deep Technical Architecture Articles
+
+When synthesizing wiki knowledge into a deep technical architecture article (e.g., mapping a design pattern like Tenant Agent Pack or Agent Control Plane to its supporting wiki primitives):
+
+### Research Phase
+1. Identify the target concept's components or layers
+2. For each component, search the wiki for supporting technical primitives: `ls wiki/concepts/ | grep -iE "keyword1|keyword2|..."`
+3. Read the most relevant pages (3-5 per layer) to understand the current state of knowledge
+4. Identify gaps — what's NOT yet covered in the wiki that would be needed
+
+### Writing Phase
+- **Frontmatter**: `title`, `date`, `author: Hermes (kzinmr's AI Topics)`, `tags` (include `blog`), `sources` (link to wiki concept pages and raw articles)
+- **Audience**: Business/development professionals with high resolution understanding of the domain
+- **Language**: Japanese (日本語)
+- **Structure**: 
+  - Compelling title with concrete insight (not generic)
+  - Architecture diagram (ASCII) showing component relationships
+  - One major section per layer/component, each anchored to specific wiki primitives with `backtick` references
+  - Comparison tables where 3+ items are analyzed
+  - Gap analysis section identifying what's missing from the wiki
+- **Length**: 150-250 lines for deep architecture articles
+- Tag validation: All tags must exist in SCHEMA.md taxonomy
+
+### Post-Writing
+- Update `wiki/log.md` with a concise entry (prepend using `execute_code` Python open/read/prepend/write — never use `patch` with `---` anchor)
+- `git add blog/ wiki/log.md && git commit -m "blog: ..." && git push`
+
+## Reference Files
+- `references/tenant-agent-pack-9-layer-architecture.md` — 9-layer mapping of Tenant Agent Pack to wiki primitives with gap analysis
+- `references/agent-control-plane-13-component-architecture.md` — 13-component × 3-layer mapping of Agent Control Plane to wiki primitives with platform comparison
+
 ## Pitfalls
+- **Ambiguous skill name**: The `blog-writing` skill exists in two locations (`~/.hermes/skills/` and `~/ai-topics/config/hermes/skills/`). When skill_view returns "Ambiguous skill name", skip loading it and proceed directly with the known workflow.
+- **Log.md prepend via `---` anchor**: Never use `patch` with `---` as old_string in log.md — it matches YAML frontmatter delimiters elsewhere. Use `execute_code` Python open/read/prepend/write instead.
+- **Backtick in terminal Python**: When using `terminal()` with inline Python, backticks in the string are interpreted by bash as command substitution, silently corrupting content. Use `execute_code` for any log.md operations involving backtick-wrapped paths or URLs.
 
 ### Session Reset in Discord Threads
 When the user continues a blog post discussion across Discord sessions and you can't find the referenced draft/outline:

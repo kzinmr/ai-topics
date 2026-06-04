@@ -78,6 +78,7 @@ Load this skill in any workflow that creates wiki pages:
 ### ❌ Wrong routing (historically corrected)
 | Page | Where it was | Where it belongs | Fixed |
 |------|-------------|-----------------|-------|
+| `agent-memory-systems-comparison.md` | `concepts/` | `comparisons/` | ✅ 2026-05-17 (same-session fix) |
 | `ai-eval-tools-comparison.md` | `concepts/` | `comparisons/` | 2026-05-11 |
 | `eval-tools-comparison.md` | `concepts/` | `comparisons/` | 2026-05-11 |
 | `openclaw-vs-hermes-architecture-comparison.md` | `concepts/` | `comparisons/` | 2026-05-11 |
@@ -126,9 +127,21 @@ In every ingestion section (newsletter, blog, X bookmarks, X accounts scan, acti
 > **Before creating a concept page**: Check if the article is a comparison/survey of 3+ items.
 > If yes → route to `wiki/comparisons/`, not `wiki/concepts/`.
 
+### `wiki-entity-enrichment-from-article`
+
+After Step 0 (Page Placement Decision), and before creating any concept page, add a routing check:
+
+> **Comparison routing check**: Is the article comparing 3+ items or is the user explicitly asking for a comparison across multiple tools/harnesses/systems?
+> - YES → Create at `wiki/comparisons/<name>.md` with `type: comparison`
+> - NO → Create at `wiki/concepts/<name>.md`
+>
+> **Litmus test**: If all comparison tables were removed, would the page still be a coherent concept page? If NO → `comparisons/`.
+
 ## Pitfalls
 
 - **Don't move single-concept pages to comparisons/** — pages like `agent-sandboxing.md` (technology spectrum analysis) are concepts, not comparisons
 - **Don't create comparison stubs in concepts/ "for later"** — they accumulate and require cleanup. Create in `comparisons/` from the start
 - **Head-to-heads ARE comparisons** — "A vs B" belongs in `comparisons/`, not `entities/` or `concepts/`
 - **Comparison portals ≠ entity pages** — individual tool pages go to `entities/`; the comparison of all tools goes to `comparisons/`
+- **Entity enrichment sessions often spawn comparison pages** — When enriching an entity page (e.g., OpenClaw) and the user simultaneously asks for a comparison (e.g., "compare memory systems with Claude Code and Codex"), the comparison page must go to `comparisons/`, even though the primary task was entity enrichment. The entity page gets updated sections; the comparison is a separate page in `comparisons/`.
+- **Memory/harness-system comparisons specifically** — comparisons of agent memory architectures, context management approaches, or harness features across 3+ harnesses are comparison pages, not concept pages. Validated 2026-05-17: `agent-memory-systems-comparison` (OpenClaw/Claude Code/Codex/Hermes) was initially created in `concepts/`, user corrected, moved to `comparisons/` in same session. The pattern: entity enrichment + comparison → entity page updated, comparison page in `comparisons/`.
