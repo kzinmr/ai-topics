@@ -4,7 +4,7 @@ thumbnail: /blog/assets/hf-skills-training/thumbnail.png
 authors:
 - user: burtenshaw
 - user: evalstate
-date: 2026-06-04
+date: 2025-12-04
 url: "https://huggingface.co/blog/hf-skills-training"
 source: huggingface-blog
 ---

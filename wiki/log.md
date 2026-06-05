@@ -6442,4 +6442,4 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - **Updated**: `wiki/entities/hugging-face.md` — Added "Hugging Face Skills (2026)" section, source URLs.
 - **Updated**: `wiki/concepts/hf-cli.md` — Added cross-reference to huggingface-skills.
 - **Updated**: `wiki/index.md` — Added huggingface-skills concept entry, bumped page counts.
-- **Sources**: https://huggingface.co/blog/hf-skills-training (burtenshaw, evalstate), https://github.com/huggingface/skills
+- **Sources**: https://huggingface.co/blog/hf-skills-training (burtenshaw, evalstate, 2025-12-04), https://github.com/huggingface/skills

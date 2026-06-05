@@ -13,7 +13,7 @@ tags:
   - agent-architecture
   - open-source
 sources:
-  - raw/articles/2026-06-04_hf-skills-training.md
+  - raw/articles/2025-12-04_hf-skills-training.md
   - raw/articles/2026-06-05_huggingface-skills-repo.md
   - https://github.com/huggingface/skills
 ---
