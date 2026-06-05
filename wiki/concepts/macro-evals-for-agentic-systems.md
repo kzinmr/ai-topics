@@ -21,6 +21,7 @@ related:
   - infrastructure-noise-agent-evals
   - harness-engineering
   - ai-resistant-evaluations
+  - active-observability
 status: active
 ---
 

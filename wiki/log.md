@@ -1,6 +1,23 @@
 
 ## 2026-06-05 Raw Backlog Ingest (Batch 20260605T200022Z)
 
+## 2026-06-05 X Bookmarks Ingest — Braintrust Topics
+
+**Operation:** X bookmark ingest: 1 bookmark processed from Braintrust (Ankur Goyal).
+
+**New concept page:**
+- [[concepts/active-observability]] — Active Observability: Clio-inspired 6-stage pipeline (preprocess → facet → embed → cluster → name → classify) for continuous automated trace intelligence. HDBSCAN + UMAP clustering on facet summaries, not raw traces. ~100ms classification without LLM calls.
+
+**Enriched entity:**
+- [[entities/braintrust]] — Added Topics feature section (June 2026): architecture, 6-stage pipeline, active observability concept, batch facet optimization, clustering/classification details. Updated frontmatter: bumped date, added trace-analysis tag, added raw article source.
+
+**Updated concept pages (cross-references):**
+- [[concepts/agent-observability]] — Added cross-reference to active-observability
+- [[concepts/macro-evals-for-agentic-systems]] — Added active-observability to related frontmatter
+
+**Raw article:** `raw/articles/2026-06-04_braintrust-topics-continuous-trace-intelligence.md`
+
+
 **Operation:** Raw backlog ingest — 5 articles from backlog (ai-hint sorted). 1 take, 4 skip.
 
 **Take:**

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 2263 | Indexed entries: 1725 | Concepts: 952 | Entities: 773
+> Last updated: 2026-06-05 | Total pages: 2264 | Indexed entries: 1726 | Concepts: 953 | Entities: 773
 
 ## Entities (773 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -741,7 +741,7 @@
 - [[entities/augment]] — Augment Code — AI coding platform. $252M raised at $977M valuation. CEO Scott Dietzen. Launched Cosmos AI-native engineering platform (June 2026).
 - [[entities/baseten]] — Baseten — ML model inference platform. $850M valuation. Optimized LLM serving infrastructure.
 - [[entities/bedrock-robotics]] — Bedrock Robotics — Robotics company focused on autonomous systems.
-- [[entities/braintrust]] — Braintrust — AI observability and evaluation platform. Codex case study: 50% team adoption in one month, speed-enabled autonomous problem-solving. CEO: Ankur Goyal.
+- [[entities/braintrust]] — Braintrust — AI observability and evaluation platform. Topics: continuous trace intelligence via Clio-inspired 6-stage facet→embed→cluster pipeline. Brainstore storage layer. Codex case study: 50% team adoption in one month. CEO: Ankur Goyal.
 - [[entities/brain-co]] — Brain Co. — AI for institutions. Founded 2024 by Jared Kushner and Elad Gil.
 - [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
 - [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
@@ -784,7 +784,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (949 pages)
+## Concepts (950 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -797,6 +797,7 @@
 - [[concepts/accelerate]]
 - [[concepts/activation-steering]] — Activation Steering: Technique for controlling behavior by manipulating feature activation strength during LLM inference. Unlike RLHF, it intervenes at inference time. Goodfire.ai, Golden Gate Claude, Abliteration. Applied to spam classification, style control, and user preference persistence.
 - [[concepts/activegraph]] — Event-Sourced Reactive Graph for agentic systems (arXiv:2605.21997). Inverts conventional architecture: append-only event log as source of truth, graph as deterministic projection, behaviours react to graph-shape changes. Three unique properties: deterministic replay (content-addressed cache), cheap forking (branch at any event), end-to-end lineage. Open source (Apache-2.0): `pip install activegraph`. Created by Yohei Nakajima.
+- [[concepts/active-observability]] — Active Observability: Braintrust Topics methodology for continuous automated trace intelligence. 6-stage pipeline (preprocess → facet → embed → cluster → name → classify). Clio-inspired: LLM summarizes traces along single dimensions, embed the facet output (not raw trace), HDBSCAN+UMAP clustering. ~100ms classification without LLM calls.
 - [[concepts/activitypub]] — ActivityPub — W3C decentralized social networking protocol (2018). Mastodon, Threads, PeerTube. Used for federated AI agent communication
 - [[concepts/adam-optimizer]] — Adam (Adaptive Moment Estimation): The most widely used adaptive optimization algorithm in deep learning. Adaptively controls learning rates via exponential moving averages of first and second moments. AdamW separates weight decay to improve generalization. The standard for LLM training.→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
 - [[concepts/advanced-tool-use]] — Advanced Tool Use

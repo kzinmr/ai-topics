@@ -60,6 +60,7 @@ Major observability platforms (LangSmith, etc.) support frameworks beyond their 
 
 ## Related Concepts
 
+- [[concepts/active-observability]] — Braintrust Topics: continuous automated trace intelligence via facet summarization + clustering
 - [[entities/harrison-chase]] — LangChain CEO, author of the feedback-powered observability thesis
 - [[entities/langchain]] — LangSmith observability platform provider
 
