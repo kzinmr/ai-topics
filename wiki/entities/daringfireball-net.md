@@ -2,7 +2,7 @@
 title: "John Gruber"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-18
+updated: 2026-06-05
 type: entity
 ---
 
@@ -167,3 +167,4 @@ Daring Fireball has operated as an independent publication for over two decades.
 - daringfireball.net--2026-04-nyt-wrong-crossword-grid--f77c4b38
 - daringfireball.net--2026-05-ai-is-technology-not-a-product--d7845d6d
 - daringfireball.net--feeds-sponsors--a706ab2f
+- theverge.com--ai-artificial-intelligence-942242-microsoft-build-ai-agents---018557f0

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 2253 | Indexed entries: 1718 | Concepts: 945 | Entities: 773
+> Last updated: 2026-06-05 | Total pages: 2254 | Indexed entries: 1719 | Concepts: 946 | Entities: 773
 
 ## Entities (773 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -784,7 +784,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (945 pages)
+## Concepts (946 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -893,6 +893,7 @@
 - [[concepts/agents-self-improvement-learning]] — agents, self-improvement, learning
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves — A paradigm where agents write their own tools and execute them immediately via hot reload. Systematized by Hugo Bowne-Anderson + Ivan Leo in a February 2026 workshop. Factory pattern + hot reload + hooks + markdown memory compaction. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[concepts/agno]] — agno
+- [[concepts/agi-economics]] — AGI Economics: Economic implications of AGI — labor share, relational sector, optimal taxation, messy middle scenario, von Neumann probes. Alex Imas (DeepMind) & Phil Trammell (Epoch). See also [[entities/dwarkesh-patel]].
 - [[concepts/agreement-is-a-bug]] — Agreement is a Bug
 - [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns
 - [[concepts/ai-agent-architecture]] — AI Agent Architecture

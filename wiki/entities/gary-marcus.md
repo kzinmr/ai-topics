@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-03
+updated: 2026-06-05
 tags:
   - lab
   - benchmark
@@ -15,6 +15,7 @@ tags:
   - agent-safety
 sources:
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
+  - raw/articles/garymarcus.substack.com--p-no-need-to-panic-about-anthropics--1d1bcf86.md
   - raw/articles/garymarcus.substack.com--p-the-illusion-of-generative-ai-the--9225b4e4.md
   - raw/articles/garymarcus.substack.com--p-the-ai-trial-of-the-century-ends--dfc0b54e.md
   - raw/articles/garymarcus.substack.com--p-could-generative-ai-could-turn-out--0880f6f7.md
@@ -145,6 +146,16 @@ On May 30, 2026, Marcus published "What happens next, after the decline of token
 Marcus's thesis: when the fundamental commodity (GPU compute) collapses in price this quickly, it signals either a **demand shortfall** (nobody needs more GPUs) or a **supply glut** (too many came online at once). Both scenarios challenge the prevailing AI growth narrative.
 
 
+### Anthropic RSI Response: "No need to panic" (Jun 2026)
+
+On June 4, 2026, Anthropic published a blog post titled "When AI builds itself" — reporting that Claude is accelerating AI development, suggesting a possible path to recursive self-improvement (RSI). Marcus responded with a sharp critique arguing that **AGI ≠ RSI**:
+
+- **The bait and switch**: Marcus argues Anthropic's blog is "trying to strike terror into everyone's hearts" by conflating RSI (useful coding tool) with AGI (machine can do anything a human can do). The results show faster coding under human control, not autonomous general intelligence.
+- **Neurosymbolic rescue thesis**: Marcus argues the coding improvements come from integrating symbolic tools (code interpreters, verification) — which is neurosymbolic AI, not pure deep learning scaling. He reiterates his long-standing position: *"Pure deep learning has largely hit a wall; neurosymbolic AI is rescuing it."*
+- **S&P 500 rules win**: Marcus also reports that S&P Dow Jones Indices officially declined to change inclusion rules for megacap IPOs (SpaceX, OpenAI), a policy outcome he advocated for in his May 2026 essay "This one weird trick might cost your retirement fund billions." He celebrates this as a win for retail investor protection.
+
+Source: [[raw/articles/garymarcus.substack.com--p-no-need-to-panic-about-anthropics--1d1bcf86.md]]
+
 ### Key Works
 
 ### Newsletter: Marcus on AI
@@ -169,10 +180,11 @@ Marcus has published extensively on AI limitations and the need for hybrid appro
 - [[entities/ernest-davis]] — NYU collaborator on AI evaluation criticism
 - [[entities/metr]] — Think tank whose benchmark methodology Marcus critiques
 - [[entities/claude-mythos]] — Anthropic model central to the 50% vs 80% success debate
+- [[concepts/recursive-self-improvement]] — Marcus's critique of Anthropic's RSI framing
 
 ## References
 
 - [Misplaced panic over AI progress](https://garymarcus.substack.com/p/misplaced-panic-over-ai-progress) (May 2026)
 - [The illusion of Generative AI, the insanity of massive bets on hyperscaling, and the case for world models and neurosymbolic AI](https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the) (May 2026)
 - [The AI trial of the century ends with a whimper](https://garymarcus.substack.com/p/the-ai-trial-of-the-century-ends) (May 19, 2026) — On the OpenAI vs Musk trial verdict: jury rejected Musk's claims on statute of limitations grounds, never weighed in on OpenAI's legitimacy. See [[events/openai-musk-trial-verdict-2026|OpenAI vs Musk Trial Verdict]].
-- Marcus on AI Substack newsletter
+- [No need to panic about Anthropic's new blog](https://garymarcus.substack.com/p/no-need-to-panic-about-anthropics) (June 4, 2026) — Marcus argues AGI ≠ RSI, Anthropic conflating coding speed with general intelligence; neurosymbolic AI rescue thesis

@@ -1,3 +1,10 @@
+## 2026-06-05 Blog Wiki Ingest — AGI Economics, Gary Marcus Anthropic RSI, Daring Fireball MS Build
+- `concepts/agi-economics.md` — Created new concept page. AGI Economics: labor share, relational sector, optimal taxation, messy middle, von Neumann probes. Based on Dwarkesh Podcast with Alex Imas (DeepMind) and Phil Trammell (Epoch). 
+- `entities/dwarkesh-patel.md` — Added Jun 2026 Imas/Trammell interview to career timeline. Added source reference and [[concepts/agi-economics]] cross-link. Updated to 2026-06-05.
+- `entities/gary-marcus.md` — Added "Anthropic RSI Response: No need to panic" section: AGI≠RSI critique, neurosymbolic rescue thesis, S&P 500 rules win. Added source and [[concepts/recursive-self-improvement]] cross-link. Updated to 2026-06-05.
+- `entities/daringfireball-net.md` — Added The Verge/MS Build article (Microsoft-OpenAI competition, MAI-Thinking-1, Suleyman interview) as reference. Updated to 2026-06-05.
+- `wiki/index.md` — Added agi-economics entry, updated counts (Concepts: 946, Total: 2254).
+
 ## 2026-06-05 Newsletter Wiki Ingest — Andon Labs, VendingBench, Microsoft Scout, VoidZero, Nemotron 3 Ultra
 
 **Operation:** Processed 5 take + 4 reference decisions from newsletter-triage (6 newsletters batch: Ben's Bites, Latent Space/AINews, True Positive Weekly, Betting on Humans, AI Bioweapons).

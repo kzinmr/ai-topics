@@ -2,8 +2,8 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-05-17
-sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/]
+updated: 2026-06-05
+sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md]
 tags:
   - person
   - blogger
@@ -55,6 +55,7 @@ As of early 2026, the Dwarkesh Podcast has published approximately 115 episodes 
 | **May 2026** | Interview with Michael Nielsen: "How do we recognize scientific progress?" — RLVR limitations for science, parallel discovery patterns |
 | **May 2026** | Published "The mistake of conflating intelligence and power" — critiques AI safety's definition of intelligence |
 | **May 2026** | Published "Notes on pretraining parallelisms and failed training runs" — FSDP, pipeline parallelism, causality-breaking bugs |
+| **Jun 2026** | Interviewed Alex Imas (Dir. AGI Economics, DeepMind) & Phil Trammell (Head of Economics, Epoch): "What remains scarce after AGI?" — labor share, relational sector, taxation, messy middle, von Neumann probes → [[concepts/agi-economics]] |
 
 ## Key Projects
 
@@ -176,6 +177,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[concepts/intelligence-conflation]] — Dwarkesh's critique of conflating intelligence with power
 - [[concepts/world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
 - [[concepts/multi-agent-autonomy-scale]] — His vision of future AI architecture
+- [[concepts/agi-economics]] — Alex Imas & Phil Trammell podcast on AGI economics
 - [[entities/gary-marcus]] — Both critique current AI approaches from different angles
 - [[entities/anthropic]] — Frequent interview subject (Dario Amodei episodes)
 - [[entities/jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
@@ -203,6 +205,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [RLVR might be disproportionately bad at science (May 2026)](https://www.dwarkesh.com/p/rlvr-might-be-disproportionately)
 - [Notes on pretraining parallelisms and failed training runs (May 2026)](https://www.dwarkesh.com/p/notes-on-pretraining-parallelisms)
 - [The mistake of conflating intelligence and power (May 2026)](https://www.dwarkesh.com/p/the-mistake-of-conflating-intelligence)
+- [Alex Imas & Phil Trammell — \"What remains scarce after AGI?\" (Jun 2026)](https://www.dwarkesh.com/p/alex-imas-phil-trammell)
 
 ## References
 
