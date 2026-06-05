@@ -1,3 +1,19 @@
+## 2026-06-05 State of Agentic Coding ep1-6 — YouTube文字起こし取得・配置
+
+**Operation:** yt-dlpで6エピソードの英語字幕を取得、`wiki/transcripts/` に配置
+
+**Files created (12 files: 6 .md + 6 .vtt):**
+- `transcripts/2025-12-15_state-of-agentic-coding-ep1.md` + `.en.vtt` (1,427 segments, 51K chars)
+- `transcripts/2026-01-22_state-of-agentic-coding-ep2.md` + `.en.vtt` (1,516 segments, 55K chars)
+- `transcripts/2026-02-16_state-of-agentic-coding-ep3.md` + `.en.vtt` (1,591 segments, 57K chars)
+- `transcripts/2026-03-12_state-of-agentic-coding-ep4.md` + `.en.vtt` (1,146 segments, 39K chars)
+- `transcripts/2026-04-10_state-of-agentic-coding-ep5.md` + `.en.vtt` (2,895 segments, 99K chars)
+- `transcripts/2026-05-11_state-of-agentic-coding-ep6.md` + `.en.vtt` (2,753 segments, 100K chars)
+
+**index.md updated:** Transcripts section expanded 13 → 19 pages
+
+---
+
 ## 2026-06-05 YouTube文字起こしファイルの整理・移動
 
 **Operation:** `wiki/raw/transcripts/` → `wiki/transcripts/` へ移動、`wiki/raw/articles/` の `type: transcript` ファイルも移動

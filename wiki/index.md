@@ -1778,7 +1778,7 @@
 - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
 - [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/llm-search-judge]], [[concepts/llm-as-judge]]
 
-## Transcripts (13 pages)
+## Transcripts (19 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
 - [[transcripts/2024-12-13_ilyasutskever-transcript]] — Sequence to Sequence Learning with Neural Networks: What a Decade — Ilya Sutskever (NeurIPS 2024). Full transcript. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]
@@ -1792,4 +1792,10 @@
 - [[transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4]] — Show Us Your Agent Skills Ep. 4 — Doug Turnbull, Chris Fonnesbeck, John Berryman. Search harnesses, data analysis agents. Full VTT: `transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.en.vtt`
 - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Cheat at Search — Long Running Search Agents (Lecture Transcript). Persistent agent strategies, context compaction, frontier prompts. Companion: [[raw/articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search]]
 - [[transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture]] — Cheat at Search — Coding Agents & Auto Research (Lecture Transcript). Recursive Language Models (RLMs), AutoReSEARCH for search ranking. Companion: [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms]]
+- [[transcripts/2025-12-15_state-of-agentic-coding-ep1]] — State of Agentic Coding #1 — Armin Ronacher and Ben Vinegar. First episode: coding agent fundamentals, context management, model capabilities, predictions. Companion: [[raw/articles/2025-12-15_state-of-agentic-coding-ep1]]
+- [[transcripts/2026-01-22_state-of-agentic-coding-ep2]] — State of Agentic Coding #2 — Model evolution, subscription access, agentic engineering practices. Companion: [[raw/articles/2026-01-22_state-of-agentic-coding-ep2]]
+- [[transcripts/2026-02-16_state-of-agentic-coding-ep3]] — State of Agentic Coding #3 — OpenClaw, developer tooling, agent interaction with CI/CD. Companion: [[raw/articles/2026-02-16_state-of-agentic-coding-ep3]]
+- [[transcripts/2026-03-12_state-of-agentic-coding-ep4]] — State of Agentic Coding #4 — Model progression, open-source AI tooling, software engineering with agents. Companion: [[raw/articles/2026-03-12_state-of-agentic-coding-ep4]]
+- [[transcripts/2026-04-10_state-of-agentic-coding-ep5]] — State of Agentic Coding #5 — Security implications, AI safety, developer tooling maturation. Companion: [[raw/articles/2026-04-10_state-of-agentic-coding-ep5]]
+- [[transcripts/2026-05-11_state-of-agentic-coding-ep6]] — State of Agentic Coding #6 — AI pricing correction, Pi/Earendil, Cursor/xAI, coding traces as training gold. Companion: [[raw/articles/2026-05-11_state-of-agentic-coding-ep6]]
 
