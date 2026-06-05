@@ -1,3 +1,17 @@
+## 2026-06-05 dsprrr記事取り込み: RLM実装比較 + Context Rot + Decision Framework
+
+**Operation:** James H. Wade の "How the Recursive Language Model (RLM) Works" (dsprrr ドキュメント, 2026-06-03) を取り込み。RLMのR言語実装 (dsprrr) と4実装比較、Context Rot定義、When-to-Use判断フレームワークを整理。
+
+**Files created:**
+- `raw/articles/2026-06-03_jameshwade_how-rlm-works-dsprrr.md` — 原文クリッピング（dsprrr RLMドキュメント）
+- `entities/dsprrr.md` — dsprrrエンティティページ（R-native DSPy/RLM、callr + ellmer、比較表）
+
+**Files updated:**
+- `concepts/rlm-recursive-language-models.md` — (1) Context Rotセクション追加、(2) dsprrr + Google ADK + community実装をエコシステムに追加、(3) 4実装比較表（dsprrr/DSPy/Official rlm/Google ADK）、(4) When to Use RLMs判断フレームワーク、(5) dsprrr entity cross-link。updated: 2026-06-05
+- `index.md` — dsprrr entity + raw article追加
+
+**Key insight:** Context Rot（コンテキスト腐敗）はMIT研究者によるRLMの動機となる経験的観察。dsprrrはR言語唯一のRLM実装で、callrサブプロセス分離 + ellmer構造化出力が特徴。4実装比較ではREPL言語・sandbox・最適化手法が主要差異軸。RLM使用判断は「context長さ・task定義度・cost感度・データ品質」の4軸で整理可能。
+
 ## 2026-06-05 kmad.ai記事取り込み: RLM + DataFrame + Sandbox
 
 **Operation:** Kevin Madura (kmad.ai) の "A Data Scientist RLM That Lives in Your Program" (2026-03-22) を取り込み。RLM×DataFrame×Agent Sandboxingの交差点を整理。

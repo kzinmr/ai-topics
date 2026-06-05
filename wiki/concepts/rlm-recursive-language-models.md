@@ -1,7 +1,7 @@
 ---
 title: "RLM (Recursive Language Models)"
 created: 2026-04-13
-updated: 2026-06-04
+updated: 2026-06-05
 type: concept
 tags: [rlm, long-context, inference, test-time-scaling, context-rot, context-degradation, ai-agents, coding-agents, orchestration, subagents, workflow, claude-code, research, neurosymbolic]
 related: [dspy, dspy-rlm, context-engineering, gepa, lambda-rlm, programmatic-tool-calling, code-execution-with-mcp, code-mode, context-folding, anthropic-multi-agent-research, inference-time-scaling, typed-rlm, dynamic-workflows]
@@ -15,6 +15,8 @@ sources:
   - raw/articles/2026-04-26_isaacflath_pi-harness-rlm-late-interaction.md
   - transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
   - raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf
+  - https://jameshwade.github.io/dsprrr/articles/how-rlm-works.html
+  - raw/articles/2026-06-03_jameshwade_how-rlm-works-dsprrr.md
 ---
 
 # RLM (Recursive Language Models)
@@ -29,6 +31,17 @@ Recursive Language Models (RLMs) are a task-agnostic inference paradigm proposed
 - **Minimal:** [github.com/alexzhang13/rlm-minimal](https://github.com/alexzhang13/rlm-minimal) (749 stars)
 - **Docs:** [alexzhang13.github.io/rlm](https://alexzhang13.github.io/rlm/)
 - **PyPI:** `rlms` — 6,034 downloads/month
+
+## Context Rot: The Core Problem
+
+The empirical observation motivating RLMs is called **context rot**: output quality deteriorates as prompts grow, even when the relevant information is technically within the window. The term was introduced by the MIT researchers (Zhang, Kraska, Khattab) who proposed RLMs. Two compounding factors:
+
+1. **Degradation with length** — as context grows, the model misses what it needs with increasing frequency; details get lost and answers go wrong.
+2. **No adaptive retrieval** — the model cannot decide to re-read section 14 after discovering something relevant in section 42. It processes the entire input in one pass and produces output from whatever signal survived.
+
+RLMs solve context rot by treating context as an **environment variable** rather than prompt input. See [[#core-architecture]].
+
+Source: [[raw/articles/2026-06-03_jameshwade_how-rlm-works-dsprrr.md|How the RLM Works (dsprrr, Wade 2026)]]
 
 ## What RLM Is and Is Not (Author Clarifications)
 
@@ -329,6 +342,24 @@ Source: [arXiv:2603.20105](https://arxiv.org/abs/2603.20105) (Huawei Noah's Ark 
 - **DSPy:** Omar Khattab (co-author) plans an `RLM` module that could subsume CoT/ReAct
 - **Open Source:** Full codebase released, 20+ contributors, v0.1.1a release (Feb 2026)
 - **Sandbox Support:** Modal, Daytona, Prime Sandboxes, local Python REPL
+- **dsprrr (R):** James H. Wade's R-native RLM implementation using callr subprocess isolation + ellmer structured outputs. The only R-language RLM, optimized for R data contexts (data frames, model objects, package source code). Inherits dsprrr's teleprompter/grid-search optimization infrastructure. See [[raw/articles/2026-06-03_jameshwade_how-rlm-works-dsprrr.md|How the RLM Works (dsprrr)]]
+- **Google ADK:** Google's Agent Development Kit re-implemented the RLM pattern with Gemini models
+- **Community:** [recursive-llm](https://github.com/ysz/recursive-llm) community implementation
+
+### RLM Implementation Comparison (4 Frameworks)
+
+| | dsprrr (R) | DSPy (Python) | Official rlm (Python) | Google ADK (Python) |
+|---|---|---|---|---|
+| **REPL Language** | R via callr | Python via Pyodide/WASM | Python (isolated or not) | Python via ADK |
+| **Sandbox** | Subprocess (callr) | Deno/WASM | Configurable | ADK orchestration |
+| **Structured output** | ellmer types | DSPy signatures | Freeform | ADK tools |
+| **Recursive calls** | `llm_query()` | Built-in | Built-in | Child agents |
+| **Optimization** | Teleprompters, grid search | DSPy optimizers | Manual | Manual |
+| **Batched sub-calls** | `llm_query_batched()` | — | — | — |
+
+**dsprrr differentiators:** Only R-language implementation. REPL tools include `peek(var, start, end)` (dual-dispatch: element indices for vectors, character positions for strings), `search(var, pattern)` (Perl-compatible regex returning matches), `SUBMIT(...)` (sentinel class `rlm_final` terminates loop), and `llm_query()` / `llm_query_batched()` (marker-based recursive sub-queries — returns `rlm_query_request` object intercepted by parent process, not executed in subprocess). Subprocess isolation via `callr::r()` with package allowlist + dangerous-call pattern scanner (`system()`, `unlink()`, `quit()`, `download.file()` blocked). Cold-start cost: 200–400ms per iteration. Fallback: if `SUBMIT()` never called within `max_iterations`, entire trajectory fed back for synthesis via two-phase structured/unstructured output extraction.
+
+Source: [[raw/articles/2026-06-03_jameshwade_how-rlm-works-dsprrr.md|How the RLM Works (dsprrr, Wade 2026)]]
 
 ## Limitations & Open Problems
 
@@ -390,6 +421,27 @@ Turnbull's implementation uses a `harness()` function (likely from a custom fram
 This suggests that practical RLM implementations often sit **inside a broader agent harness** rather than being the top-level abstraction — the RLM is the reasoning engine, the harness is the execution environment.
 
 Source: [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms|Search with Agents Lesson 6 slides]]
+
+## When to Use RLMs (Decision Framework)
+
+RLMs trade **latency for reach**. They can explore contexts that no model handles well in a single pass. The decision matrix:
+
+| Approach | Best for | Latency | Context limit |
+|---|---|---|---|
+| PredictModule / direct prompt | Short, self-contained tasks | Low | Context window |
+| chain_of_thought() | Complex reasoning, known context | Medium | Context window |
+| rag_module() | Lookup in large corpora | Medium | Chunk size |
+| **rlm_module()** | **Exploration of large, interconnected data** | **High** | **Unlimited*** |
+
+*\*Bounded by max_iterations and max_llm_calls, not by context window size.*
+
+**Skip RLMs when:**
+- **Context is short** — fits comfortably in the context window; a PredictModule or chain_of_thought() is faster and cheaper.
+- **Task is well-defined** — you know what you are looking for (e.g., extracting a specific field from a known document format); a prompt-optimized module will outperform.
+- **Cost-per-query matters** — an RLM with 15 iterations makes ≥15 calls + recursive sub-queries; for high-volume production pipelines, the cost multiplier may not be justified.
+- **Context contains bad information** — RLMs gather more evidence, which increases surface area for misleading content; chain_of_thought() with curated context gives explicit control.
+
+Source: [[raw/articles/2026-06-03_jameshwade_how-rlm-works-dsprrr.md|How the RLM Works (dsprrr, Wade 2026)]]
 
 ## Future Directions
 
@@ -626,3 +678,4 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 - **[[entities/alex-zhang]]** — Primary author, RLM creator
 - [[entities/omar-khattab]] — Co-author, DSPy creator, ColBERT lineage
 - [[entities/isaac-flath]] — Pi Harness: practical RLM implementation seeded with late interaction retrieval (PyLate/LightOn), REPL-as-Context pattern
+- [[entities/dsprrr]] — R-native DSPy/RLM implementation by James H. Wade; callr subprocess isolation + ellmer structured outputs
