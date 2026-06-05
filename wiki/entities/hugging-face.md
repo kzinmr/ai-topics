@@ -3,7 +3,7 @@ title: Hugging Face
 type: entity
 aliases: [HuggingFace, HF]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-05
 status: active
 tags:
   - company
@@ -22,6 +22,7 @@ sources:
   - https://huggingface.co/blog/transformers-v5
   - https://hyperion-consulting.io/en/insights/hugging-face-enterprise-guide-2026
   - https://techcrunch.com/2025/11/18/hugging-face-ceo-says-were-in-an-llm-bubble-not-an-ai-bubble
+  - https://huggingface.co/blog/hf-cli-for-agents
 ---
 
 # Hugging Face
@@ -133,7 +134,12 @@ Delangue's Nov 2025 statement is notable: he distinguishes between an "LLM bubbl
 ## Security Incident (2026)
 In early 2026, hackers compromised the Hugging Face platform, distributing Android-targeted malware capable of full system takeover. This is a significant security event for a platform hosting 900K+ models and used by 13M users.
 
+## hf CLI & Agent Optimization (2026)
+
+In June 2026, Hugging Face published details of the [[concepts/hf-cli|hf CLI]] redesign optimized for coding agents. The CLI auto-detects agent environments (Claude Code, Codex, Cursor, etc.) via environment variables and switches to agent-friendly output: TSV instead of tables, full values instead of truncated, no ANSI codes, hints on stderr. Benchmarking showed the `hf` CLI uses **1.3–6× fewer tokens** than curl/SDK baselines on multi-step Hub tasks, with higher success rates (0.93–0.94 vs 0.84–0.92). The companion `hf-cli skill` reduces agent tool calls by ~30%. Agent traffic tracking started April 2026: Claude Code ~40k users / ~49M requests.
+
 ## Related Entities
+- [[concepts/hf-cli]] — Agent-optimized CLI for the Hub
 - [[concepts/transformers-library]]
 - [[entities/anthropic]]
 - [[entities/openai]]

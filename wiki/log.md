@@ -6427,3 +6427,11 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - **No alerts** from pipeline watchdog
 - **Reported**: 20 pages missing updated frontmatter (threshold exceeded)
 - **Reported**: 604 orphans, 821 broken wikilinks pending human review
+
+## 2026-06-05 — Ingest: HuggingFace hf CLI for Agents
+
+- **Created**: `wiki/concepts/hf-cli.md` — Agent-optimized CLI for the Hugging Face Hub. Auto-detects coding agents, TSV output, 1.3-6x token savings vs curl/SDK, companion skill for agent context.
+- **Updated**: `wiki/entities/hugging-face.md` — Added "hf CLI & Agent Optimization (2026)" section, source URL, bumped updated date.
+- **Updated**: `wiki/concepts/agent-ergonomics.md` — Added backlink to hf-cli as CLI design case study.
+- **Updated**: `wiki/index.md` — Added hf-cli concept entry, bumped page counts.
+- **Source**: https://huggingface.co/blog/hf-cli-for-agents (Célina Hanouti, Lucain Pouget, Jun 4 2026)

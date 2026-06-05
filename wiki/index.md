@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-04 | Total pages: 2251 | Indexed entries: 1720 | Concepts: 1461 | Entities: 753
+> Last updated: 2026-06-05 | Total pages: 2252 | Indexed entries: 1721 | Concepts: 1462 | Entities: 753
 
 ## Entities (753 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -1380,6 +1380,7 @@
 - [[concepts/hermes-agent-use-cases]] — Hermes Agent's 7 standard use cases (30-day community analysis). 3 Shared Properties (Scheduled/File-based/Push to messenger), Self-Evolving Skill Loop.
 - [[concepts/hermes-codex-app-server-runtime]] — Hermes Codex App-Server Runtime — Hermes's official opt-in runtime backend powered by Codex App Server. Hermes becomes the shell layer (sessions DB, gateway, memory, skill review); Codex handles execution (shell, apply_patch, plugins) via JSON-RPC. Bidirectional MCP callbacks: Codex can invoke Hermes' browser, vision, and skills tools. /goal and Kanban supported. Swappable via /codex-runtime auto.
 - [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence — paradigm of routing AI subtasks to optimal model+hardware combinations. Principle of Maximum Heterogeneity. Three evolutionary phases (mild → increased → co-evolution). Callosum: shift from homogeneous to heterogeneous intelligence.
+- [[concepts/hf-cli]] — hf CLI (Hugging Face CLI) — Agent-optimized CLI for the Hugging Face Hub. Auto-detects coding agents (Claude Code, Codex, Cursor) via env vars, switches to TSV output with full values. 1.3–6× token savings vs curl/SDK on multi-step tasks. Companion skill reduces tool calls ~30%. Agent traffic: Claude Code ~40k users / ~49M requests (Apr 2026).
 - [[concepts/high-frequency-software]] — High-Frequency Software — Scott Stevenson's HFT-to-software analogy: 10x AI acceleration as a phase shift. Ten parallel predictions including edge funds (startup+VC hybrids), front running, AI fracking, and winner-takes-all amplification.
 - [[concepts/hle]] — Humanity's Last Exam (HLE) — 2,500 questions across 100+ disciplines. $500K prize pool. Rigorous filtering pipeline. Score evolution from 3%→65%. Published in Nature.
 - [[concepts/hornet]] — Hornet: retrieval engine purpose-built for AI agent workloads. Founded by ex-Vespa engineers (Jo Kristian Bergum). Model-agnostic, open-source, schema-first APIs, self-hosted. June 2026 benchmark: 8.4x serving capacity swing from human→agent query workloads; Hornet 1.6x throughput vs competitors on agent queries (384 vs ~230 QPS at 500ms p99, 100M docs).
