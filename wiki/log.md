@@ -1,3 +1,16 @@
+## 2026-06-05 Builders Unscripted ep1-2, Pragmatic Engineer — YouTube字幕取得
+
+**Operation:** yt-dlpで3本の字幕取得、`wiki/transcripts/` に配置
+
+**Files created (6 files: 3 .md + 3 .vtt):**
+- `transcripts/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger.md` + `.en.vtt` (958 segments, 31K chars)
+- `transcripts/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes.md` + `.en.vtt` (944 segments, 34K chars)
+- `transcripts/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md` + `.en.vtt` (1,509 segments, 56K chars)
+
+**index.md updated:** Transcripts section expanded 18 → 21 pages
+
+---
+
 ## 2026-06-05 State of Agentic Coding ep1-6 — YouTube文字起こし取得・配置
 
 **Operation:** yt-dlpで6エピソードの英語字幕を取得、`wiki/transcripts/` に配置

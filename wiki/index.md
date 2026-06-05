@@ -1778,7 +1778,7 @@
 - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
 - [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/llm-search-judge]], [[concepts/llm-as-judge]]
 
-## Transcripts (18 pages)
+## Transcripts (21 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
 - [[transcripts/2024-12-13_ilyasutskever-transcript]] — Sequence to Sequence Learning with Neural Networks: What a Decade — Ilya Sutskever (NeurIPS 2024). Full transcript. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]
@@ -1798,4 +1798,7 @@
 - [[transcripts/2026-03-12_state-of-agentic-coding-ep4]] — State of Agentic Coding #4 — Model progression, open-source AI tooling, software engineering with agents. Companion: [[raw/articles/2026-03-12_state-of-agentic-coding-ep4]]
 - [[transcripts/2026-04-10_state-of-agentic-coding-ep5]] — State of Agentic Coding #5 — Security implications, AI safety, developer tooling maturation. Companion: [[raw/articles/2026-04-10_state-of-agentic-coding-ep5]]
 - [[transcripts/2026-05-11_state-of-agentic-coding-ep6]] — State of Agentic Coding #6 — AI pricing correction, Pi/Earendil, Cursor/xAI, coding traces as training gold. Companion: [[raw/articles/2026-05-11_state-of-agentic-coding-ep6]]
+- [[transcripts/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]] — Builders Unscripted Ep. 1 — Peter Steinberger on building OpenClaw, open-source agent harness, Codex. Companion: [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+- [[transcripts/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes]] — Builders Unscripted Ep. 2 — Ashe Magalhaes on Hearth AI, personal AI platforms. Companion: [[raw/articles/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes]]
+- [[transcripts/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai]] — Pragmatic Engineer — Farhan Thawar on Shopify's AI adoption, Claude Code, MCP. Companion: [[raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai]]
 
