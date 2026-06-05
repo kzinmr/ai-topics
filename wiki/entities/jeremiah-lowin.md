@@ -1,150 +1,134 @@
 ---
 title: Jeremiah Lowin
 type: entity
-entity_type: person
+aliases: [jeremiahlowin, jlowin]
+created: 2026-06-05
+updated: 2026-06-05
 status: L2
-created: 2026-05-14
-updated: 2026-05-24
 tags:
   - person
   - ai-agents
   - agent-skills
-  - context-engineering
-  - developer-tooling
-  - open-source
+  - memory-systems
+  - personal-software
   - mcp
+  - open-source
   - prefect
 sources:
-  - https://www.jlowin.dev/about
-  - https://github.com/jlowin
-  - https://jlowin.dev/blog/fastmcp-3
-  - https://jlowin.dev/blog/fastmcp-3-launch
-  - https://jlowin.dev/blog/fastmcp-3-2
-  - https://github.com/PrefectHQ/fastmcp/releases/tag/v3.3.0
-  - https://jlowin.dev/blog/prefab
-  - https://jlowin.dev/blog/ten-years-of-real-good-coffee
-  - https://hugobowne.substack.com/p/agentic-engineering-and-the-lost
-  - https://www.prefect.io/blog/how-jeremiah-lowin-turned-a-life-long-question-into-an-industry-leading-startup
-  - https://news.ycombinator.com/item?id=47697566
-  - https://www.youtube.com/watch?v=oVopa_3uZdo
-  - https://softwareengineeringdaily.com/2026/04/07/fastmcp-with-adam-azzam-and-jeremiah-lowin/
-description: "Founder & CEO of Prefect (data/AI workflow orchestration). Creator of FastMCP (standard Python MCP framework). Built Prefab (generative UI DSL), Cardboard (ephemeral presentation tool). Strategic adviser to Spotify, Positive Sum, OSV. Global Ambassador of Compass Coffee."
+  - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
+  - https://hugobowne.substack.com/p/the-agentic-software-factory
 ---
 
 # Jeremiah Lowin
 
-**Jeremiah Lowin** (@jlowin) is the Founder & CEO of **Prefect**, a data and AI workflow orchestration platform. He is the creator of **FastMCP**, the most popular Python framework for building [[concepts/model-context-protocol-mcp|Model Context Protocol (MCP)]] servers and clients (~25K GitHub stars). He is a leading voice in [[concepts/agent-skills|agent skills]], [[concepts/context-engineering|context engineering]], and [[concepts/generative-ui|generative UI]].
+**Founder and CEO of Prefect, core maintainer of FastMCP, builder of personal software with AI agents.** Jeremiah is a practitioner who uses AI agents as a "second brain," feeding context through voice memos into an editable memory substrate (OpenClaw) and building bespoke tools for his own workflow.
 
-Based in Washington, DC, Lowin's work sits at the intersection of data engineering, AI agents, and developer tooling. His tagline: *"Mostly harmless."*
+## Quick Facts
 
-## Career
+| | |
+|---|---|
+| **X/Twitter** | [@jeremiahlowin](https://x.com/jeremiahlowin) |
+| **GitHub** | [jlowin](https://github.com/jlowin) |
+| **Role** | Founder/CEO, [Prefect](https://prefect.io) |
+| **Notable projects** | FastMCP (core maintainer), Cardboard, Prefab, OpenClaw skills |
 
-### Early Career & Risk Management
-Before founding Prefect, Lowin spent his career overseeing risk and data for some of the largest buy-side investment firms in the world. His background is in **statistics and machine learning**. He attended **Harvard University**.
+## Workflow Philosophy
 
-He was a **founding PMC member of Apache Airflow**, the widely-used open-source workflow scheduler, giving him deep insight into the limitations of existing orchestration tools — and the motivation to build something better.
+### Agent as Second Brain
 
-### Prefect (2018–present)
-In 2018, Lowin founded **Prefect** (Prefect Technologies, Inc.), a Python-based orchestration platform that empowers data teams to build resilient, adaptable data pipelines and workflows. Key aspects:
+Jeremiah's central practice is **pouring information into agents and extracting it when needed**. He starts each workday with a voice memo — recorded during his commute or at his desk — talking through what he's thinking, what he wants to do, and what's on the horizon. The transcript drops into OpenClaw's memory substrate, where agents read from it asynchronously.
 
-- **Philosophy**: Prefect was founded with an obsession on *failure*. Lowin argued that "when an automated workflow fails, it can be catastrophic" — so Prefect was designed to be maximally helpful when code crashes, not just when it succeeds.
-- **Co-founder**: Chris White, introduced by a mutual friend, became Prefect's first employee and now serves as CTO.
-- **Scale**: Prefect orchestrates *a millennium* of compute every month.
-- **FastMCP integration**: In February 2026, FastMCP moved from Lowin's personal GitHub (`jlowin/fastmcp`) to `PrefectHQ/fastmcp`, becoming a core pillar of Prefect's **Horizon** platform.
-- **Advisory**: Lowin serves as a strategic adviser to **Spotify**, **Positive Sum** (Prefect investor), and **OSV**.
+> *"That's what I really love, is just pouring information in and then working to get it out."* — Show Us Your Agent Skills, Ep. 1
 
-### Marvin (2023)
-Lowin open-sourced **Marvin** (~6K GitHub stars), a framework for AI engineering that introduced *AI Functions* — minimalist functions with no source code that generate typed outputs using AI. Described as "no-code... in your code."
+The leverage comes from **feeding context for weeks or months before the moment you need an answer**:
 
-### ControlFlow (2024, archived)
-A Python framework for building agentic AI workflows, later archived as focus shifted to FastMCP and Prefect's Horizon platform.
+> *"There's a talk I'm giving in three weeks for PyData London, so I can feed in something tonight, close it, don't worry about it, talk to the agent about 1,000 other things, and then I can come back and we can actually pick right up because of the memory substrate there."*
 
-## Key Agentic Work
+### Three Daily States
 
-### FastMCP
-**FastMCP** is Lowin's most impactful open-source contribution to the AI agent ecosystem. Built "over a weekend in late 2024," it has become the *standard Python framework* for working with the [[concepts/model-context-protocol-mcp|MCP protocol]]:
+1. **Morning** — Voice memo recorded during commute or at home. Talk through the day. Drop into OpenClaw.
+2. **Through the day** — Agents work in background, reading from the same memory layer.
+3. **When you come back** — Threads pick up via memory substrate; conversations resume where they left off.
 
-- **v2.6 (Jun 2025)**: Introduced Bearer token authentication for MCP servers and clients
-- **v3.0 (Jan 2026)**: Major re-architecture — support for custom providers (filesystems, REST APIs), component-level authorization, agent skills over MCP, composable servers, CLI tooling (`fastmcp list`, `fastmcp call`, `fastmcp discover`, `fastmcp generate-cli`), hot reload, and more
-- **v3.0 GA (Feb 2026)**: Moved from `jlowin/fastmcp` to `PrefectHQ/fastmcp`; FastMCP Cloud launched for MCP-native deployment
-- **v3.2 (Apr 2026)**: Introduced **MCP Apps** — a second protocol channel returning interactive applications (charts, dashboards, forms) instead of plain structured data. Integrated **Prefab** (generative Python UI framework) natively. Added five built-in providers: FileUpload, FormInput, Approval, Choice, GenerativeUI. Security hardening pass (SSRF, JWT alg restrictions, OAuth scope enforcement). Dev server with browser-based app preview and MCP message inspector. Install: `pip install "fastmcp[apps]"`.
-- **v3.3 "Slim Reaper" (May 2026)**: Shipped `fastmcp-slim` — a lightweight client-only distribution for CI/agent environments (`pip install fastmcp-slim[client]`). OAuth silent consent hardening, redirect URI allowlist matching, cache partitioned by access token. AzureB2CProvider. OTEL compliance with MCP semantic conventions. Thread affinity control (`run_in_thread=False`). 13 new contributors this release.
-- **v3.4.0b1 "Remote Possibility" (May 2026)**: Beta release for `fastmcp-remote` package, host compatibility, and remote authentication behavior.
-- **Key talks**: "Your MCP Server is Bad (and you should feel bad)" at AI Engineer Code Summit (2025) and ODSC AI East (2026); "Model Context Pragmatism" at MCP Dev Summit (2026)
+### Editable Memory as Key Criterion
 
-Lowin describes the MCP era as moving past "tool servers" toward the **context era**: source from anywhere, compose and transform freely, personalize per-user, track state across sessions, control access, run long operations, version APIs, observe everything.
+Jeremiah chose OpenClaw specifically because he can **reach into the agent's memory and change what it remembers**:
 
-### Prefab
-Announced at the MCP Dev Summit (April 2026), **Prefab** is a generative UI framework that enables building interactive applications in Python:
+> *"This is one of the reasons that I use an OpenClaw, for example, so that I can go muck around with its memory, in a way that works for me."*
 
-- **100+ shadcn components** composed using Python context managers
-- **Python DSL**: Context managers express component hierarchy — indentation *is* the layout
-- **Reactive state**: `Rx` variables handle live bindings (even through f-strings)
-- **Agent-friendly**: Python is token-efficient and streaming-compatible; LLMs already know Python, so they grok the DSL quickly
-- **JSON protocol**: Serializes to a JSON format that renders as a real React application with full client-side interactivity and no JavaScript required
-- **FastMCP integration**: Built into FastMCP 3.2 for MCP Apps — agents write Prefab code, it executes in a sandbox, and renders UIs on the fly
-- **Show HN**: Featured on Hacker News (April 2026) as "the generative UI framework that even humans can use"
+If the operator can't edit what the agent remembers, the second brain is the vendor's, not theirs.
+
+### Separate Tools for Thinking vs. Coding
+
+- **OpenClaw** — main personal interface for thinking, planning, and accumulated context
+- **Claude Desktop / Codex Desktop** — for writing code
+
+> *"I use OpenClaw as my main personal interface because of how I've customized its memory. When I'm working on code, I use Claude Desktop and Codex Desktop, which I migrated to from the CLIs mostly because of how much better it is at managing parallel sessions."*
+
+## Agent Skills Design
+
+### Anatomy of a Skill
+
+A skill is a markdown file with two pieces of frontmatter: **name** (used to invoke it) and **description** (always visible to the agent). The body is hidden until the agent decides to invoke the skill — this **progressive disclosure** is the key mechanism.
+
+> *"Skills are shockingly simple for how effective they are. They have two front matter: a name, that's really important, that's how you invoke it; and a description. And the description is always going to be seen by the agent."*
+
+### Key Skills
+
+| Skill | Purpose |
+|-------|---------|
+| **ship-it** | Polite note telling Claude that "ship it" means *open a pull request*, not merge |
+| **explain** | Referenced by every other skill; produces a guided tour (conceptual model → formal behavior → what changed → future work), explicitly bans line-level diff narration |
+| **skill-creator** | Meta-skill for creating new skills |
+| **github-reply** | Uses explain as a building block for responding to PRs |
+
+> *"This skill has become my workhorse. It is referenced in every other skill I have."* — on `explain`
+
+### Skills vs. MCPs
+
+> *"Skills are awesome ways to steer behavior. They go into the agent's brain in the exact same way that a message from you does... MCPs are great ways to distribute business logic from a central place."*
+
+## Personal Software Projects
 
 ### Cardboard
-An ephemeral presentation tool — part of Lowin's "just for me" software philosophy. Agents create temporary, throwaway presentations for immediate communication needs rather than polished, persistent artifacts.
+Custom slide software that lays out talks as **acts → beats → slides** with a fixed colour scheme for speaker notes. The screen is read-only by design — Jeremiah interacts entirely via API or MCP server from any agent.
 
-### Copychat
-A utility for copying multiple files into an LLM-compatible format, reflecting Lowin's focus on practical developer tooling.
+> *"Purely for me, like no one else should use it."*
 
-## Agent Philosophy: "Second Brain"
+### Prefab
+Python front-end framework for MCP apps, no backend required. Spun out of FastMCP. For building dashboards rather than one-off tools.
 
-Lowin is a prominent practitioner of **agent engineering as context engineering**. His personal agent workflow, detailed on the *Vanishing Gradients* podcast (May 2026), treats his agent as a **"second brain"**:
+> *"I desperately wanted to create MCP apps in Python, and that meant I needed a Python front-end framework that didn't require a backend."*
 
-- **Voice memo pipeline**: Voice notes and recorded meetings are transcribed and trickled into the agent's memory substrate
-- **Morning briefs**: Daily briefs are fed into the agent, building a persistent, evolving knowledge base
-- **Context engineering over prompt engineering**: Lowin has spent years engineering the context that his agents operate within, treating memory as a durable substrate rather than a per-session prompt
-- **OpenCode**: Chosen specifically for how deeply he can customize its memory system
-- **OpenClaw**: Used alongside OpenCode as part of his multi-agent workflow, routing agent interactions through [[entities/openclaw|OpenClaw]]'s gateway architecture
+## FastMCP
 
-### The "Explain" Skill
-Lowin's anchor skill is an **"explain" skill** — a meta-skill that anchors every other skill he uses. When an agent encounters something new or unclear, the explain skill activates first, ensuring the agent builds understanding before taking action. This pattern exemplifies the [[concepts/agent-skills|progressive disclosure]] architecture of agent skills.
+Jeremiah is the **core maintainer of FastMCP**, a Python framework for building MCP servers. He manages the volume of open-source contributions by running 10+ agents in parallel:
 
-## Other Affiliations
+> *"Code is so cheap and it's just kind of getting lobbed over. There's this real imbalance as a maintainer."*
 
-### Compass Coffee
-Lowin is the self-described **"Global Ambassador" of Compass Coffee**, a Washington, DC-based coffee chain founded by two Marine officers. His involvement spans over a decade of "cheerful, unpaid labor" — from being the guinea pig for the founders' first latte to negotiating leases, troubleshooting IT, and filling in as a baker. The relationship between Compass and Prefect deepened over time: at Prefect's first conference in 2018, they had "no product to show — just 9 gallons of Compass Coffee and a banner." Today, Compass has 20+ cafes and a wholesale business on Whole Foods shelves.
+## Related People
 
-### Strategic Advisory
-Lowin serves as a strategic adviser to:
-- **Spotify** — audio streaming platform
-- **Positive Sum** — venture capital firm and Prefect investor
-- **OSV** — venture capital firm
+| Person | Connection |
+|--------|-----------|
+| **[[entities/wes-mckinney\|Wes McKinney]]** | Fellow guest on Show Us Your Agent Skills Ep. 1 |
+| **[[entities/randy-olson\|Randy Olson]]** | Fellow guest; generator-evaluator pattern |
+| **[[entities/hugo-bowne-anderson\|Hugo Bowne-Anderson]]** | Host of Show Us Your Agent Skills |
+| **Peter Steinberger** | OpenClaw creator (Jeremiah's memory substrate) |
 
-## Selected Talks & Keynotes
+## See Also
 
-| Year | Event | Talk |
-|------|-------|------|
-| 2026 | PyData London | Keynote |
-| 2026 | ODSC AI East | Keynote — "Your MCP Server is Bad (and you should feel bad)" |
-| 2026 | MCP Dev Summit | "Model Context Pragmatism" |
-| 2026 | PyAI | Keynote — "Build Reasonable Software" |
-| 2026 | Software Engineering Daily | "FastMCP with Adam Azzam and Jeremiah Lowin" — MCP origin story, 3 pillars, 3.0 architecture |
-| 2025 | AI Engineer Code Summit | "Your MCP Server is Bad (and you should feel bad)" |
-| 2025 | First Commit with Nina | MCP as a standardized handshake for the AI era |
+- [[entities/wes-mckinney]]
+- [[entities/randy-olson]]
+- [[entities/openclaw]]
+- [[entities/fastmcp]]
+- [[concepts/personal-software]]
+- [[concepts/generator-evaluator-pattern]]
 
-## Open-Source Projects
+## References
 
-| Project | Stars | Description |
-|---------|-------|-------------|
-| [FastMCP](https://github.com/PrefectHQ/fastmcp) | ~25K | Pythonic way to build MCP servers and clients |
-| [Prefect](https://github.com/PrefectHQ/prefect) | ~22K | Dynamic workflow automation for data pipelines |
-| [Marvin](https://github.com/PrefectHQ/marvin) | ~6K | AI engineering framework with AI Functions |
-| [ControlFlow](https://github.com/PrefectHQ/controlflow) | ~1.4K | Agentic AI workflows (archived) |
-| [Prefab](https://github.com/PrefectHQ/prefab) | ~430 | Generative UI framework in Python |
-| [Copychat](https://github.com/jlowin/copychat) | ~60 | Multi-file copy utility for LLMs |
+- [The Agentic Software Factory](https://hugobowne.substack.com/p/the-agentic-software-factory) (Vanishing Gradients, May 2026)
+- Show Us Your Agent Skills, Episode 1 (May 2026)
 
-## Related Pages
+## Log
 
-- [[entities/opencode]] — OpenCode, Lowin's primary coding agent
-- [[entities/openclaw]] — OpenClaw, used in his multi-agent workflow
-- [[concepts/model-context-protocol-mcp]] — The MCP protocol that FastMCP implements
-- [[concepts/agent-skills]] — The agent skills standard; Lowin's "explain" skill pattern
-- [[concepts/context-engineering]] — The discipline Lowin has practiced for years
-- [[concepts/generative-ui]] — Generative UI, the domain of Prefab
-- [[entities/chris-white-prefect]] — Chris White, Prefect co-founder & CTO
-- [[entities/wes-mckinney]] — Wes McKinney, fellow panelist on Show Us Your Agent Skills
+- **2026-06-05**: Initial entity page created from "The Agentic Software Factory" article.

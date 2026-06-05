@@ -108,6 +108,7 @@
 - [[entities/riley-walz]] — Riley Walz (@rtwlz) — Software engineer and internet artist. Bop Spotter, Jmail, IMG_0001, Find My Parking Cops. OAI Labs at OpenAI (2026–). First peoplereadmes persona subject.
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
 - [[entities/roocode]] — RooCode — AI-powered VS Code extension (shut down May 15, 2026). Community fork Zoo Code continues development. 24K stars, Steer Mode for local models.
+- [[entities/roborev]] — RoboRev — Continuous background code review daemon by [[entities/wes-mckinney|Wes McKinney]]. Post-commit hook, AI-powered review via Codex/GPT 5.5, per-repo ledger. Go. 55+ releases.
 - [[entities/sairahul1]] — Rahul (@sairahul1): AI engineer, Claude Code 7-agent Software Factory author. Pixxel, Hyderabad.
 - [[entities/sakana-ai]] — Sakana AI — Tokyo-based AI research lab founded 2023 by David Ha, Llion Jones, Ren Ito. Nature-inspired intelligence, evolutionary model merging, AI Scientist. Japan's most valuable startup (~$2.65B).
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
@@ -283,6 +284,7 @@
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
 - [[entities/factory]] — Factory (Factory AI) — Autonomous coding agents ("Droids") for enterprise. $1.5B valuation. Deferred Context Engine: 40% context reduction via selective tool loading (May 2026).
 - [[entities/factory-ai]] — Autonomous coding agent platform. Factory Router (June 2026): private research preview, frontier performance at lower cost.
+- [[entities/fastmcp]] — FastMCP — Python framework for building MCP servers. Core maintained by [[entities/jeremiah-lowin|Jeremiah Lowin]]. Spun off Prefab (Python front-end for MCP apps).
 - [[entities/farhan-thawar]] — Farhan Thawar — Head of Engineering (VP Engineering) at Shopify. Leads 23,000-engineer AI transformation toward 90% autonomous coding. Philosophy: "pair with smart people on problems." Championed 1,000-intern program and Code Red tech debt elimination.
 - [[entities/fei-fei-li]] — **Full Name** | Fei-Fei Li |
 - [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
@@ -653,6 +655,8 @@
 - [[entities/periodic-ai]] — AI research company with physical lab focused on RL scaling for frontier LLMs (1T+ parameters).
 - [[entities/mimo]] — Xiaomi's open-source LLM family. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context, hybrid attention with learnable sink bias.
 - [[entities/supermemory]] — Company building SMFS (Supermemory Filesystem) — a mountable filesystem designed for AI agents, replacing RAG pipelines.
+- [[entities/superpowers]] — Superpowers — Agent skills framework by Jesse Vincent. Progressive disclosure, detailed spec interviews, sub-agent execution. Used by [[entities/wes-mckinney|Wes McKinney]] for parallel agentic engineering.
+- [[entities/show-us-your-agent-skills]] — Show Us Your Agent Skills — Live show by Hugo Bowne-Anderson & Thomas Wiecki. Builders demo agent tools, skills, and habits. Ep. 1: Wes McKinney, Jeremiah Lowin, Randy Olson.
 
  — Entities directory index page
 - [[entities/alex-volkov]] — Alexander Volkov — AI researcher and contributor
@@ -1330,6 +1334,7 @@
 - [[concepts/generative-app-evolution]] — Generative App Evolution — The evolutionary staircase of generative applications from UI components to full agentic systems.
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer) — Anthropic's show_widget system for rendering interactive HTML widgets inline in claude.ai. Progressive disclosure pattern (read_me), streaming DOM injection, design guidelines. Recreated for terminal agents using Glimpse + morphdom.
 - [[concepts/generic-agent-self-evolving]] — GenericAgent — Token-efficient self-evolving agent architecture. Recursive self-improvement via execution trace analysis.
+- [[concepts/generator-evaluator-pattern]] — Generator-Evaluator Pattern — Generate outputs, verify against explicit criteria (deterministic scripts + LLM-as-judge), iterate. Used by Randy Olson (data viz) and Wes McKinney (code review via RoboRev).
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
 - [[concepts/gguf-quantization]] — GGUF Quantization
 - [[concepts/github-copilot-agent-platform]] — GitHub's evolution from Copilot code completion to agent platform. AI-generated PRs (Waymo analogy), Windows sandboxing for agents, WorkIQ scaling, Spark low-code platform. Microsoft Build 2026.
@@ -1548,6 +1553,7 @@
 - [[concepts/perceptron-mk1]] — Perceptron Mk1 — Physical AI model for video understanding + embodied reasoning (May 2026). Matches frontier labs (Google, Anthropic, OpenAI, Qwen) at lower cost. API + OpenRouter.
 - [[concepts/personal-os-for-ai-agents]] — Personal OS for AI Agents — File-based personal operating system living inside a Git repository, replacing databases and vector stores with filesystem-as-database.
 - [[concepts/personal-superintelligence]] — Personal Superintelligence — The evolution of personal AI assistants into superintelligent agents, philosophical tensions.
+- [[concepts/personal-software]] — Personal Software — Software built for one user's workflow, made newly cheap by AI agents. Examples: Cardboard (Jeremiah Lowin), Middleman (Wes McKinney), Randy Olson's data-viz skill.
 - [[concepts/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/pgr]] — pgr: Entire's Rust MCP agent-oriented code search tool. Definitions-first, path-aware ranking improved first-query MRR from 0.32→0.41, Hit@1 from 26%→34%. Demonstrates that ranking quality, not search speed, improves agent performance.
 - [[concepts/pi-autoresearch]] — pi-autoresearch (Shopify) — Generalizes Karpathy's Autoresearch from ML training to arbitrary metric optimization. 3,600+ GitHub stars. 65% faster builds, 300x faster tests, 40+ metrics improved.- [[concepts/llm-creative-writing]]

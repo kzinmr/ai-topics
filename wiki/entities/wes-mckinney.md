@@ -3,7 +3,7 @@ title: Wes McKinney
 type: entity
 aliases: [wesm, wesmckinn]
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-06-05
 status: L2
 tags:
   - person
@@ -16,6 +16,7 @@ tags:
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
   - https://wesmckinney.com/
   - https://en.wikipedia.org/wiki/Wes_McKinney
   - https://posit.co/blog/the-prolific-output-of-wes-mckinney-in-the-age-of-agentic-engineering
@@ -131,7 +132,15 @@ A local GitHub dashboard — an alternative interface to GitHub that gives McKin
 
 ### Kata
 
-A project mentioned as part of McKinney's local-first agentic toolchain. Details are still emerging as of May 2026.
+A local issue tracker, built after Beads "destroyed some of my Git repositories, very annoyingly" (ep-1 @ 13:25). Part of McKinney's local-first toolchain replacing GitHub's web-based workflow.
+
+### The Automated Software Factory
+
+McKinney describes his ambition to scale agentic engineering into a full software factory:
+
+> *"I'm thinking about ideas for how I could turn this into more of an automated software factory and build even more software, but the trouble is that I'm bandwidth limited in terms of my ability to make decisions throughout the day. And so I feel like I'm already in all these spec interviews, like I'm already at my decision-making bandwidth. Like I can't make any more decisions."* — *Show Us Your Agent Skills*, Ep. 1
+
+The bottleneck is no longer code generation or even line-by-line code review — it's the builder's **structural decision-making capacity** throughout the day.
 
 ### msgvault
 [msgvault.io](https://msgvault.io) | [GitHub](https://github.com/wesm/msgvault) | **DuckDB-powered**
@@ -241,3 +250,16 @@ This aligns with McKinney's broader philosophy: the **harness** should be minima
 - Agents View: [https://agentsview.io](https://agentsview.io)
 - msgvault: [https://msgvault.io](https://msgvault.io)
 - Superpowers: [https://github.com/obra/superpowers](https://github.com/obra/superpowers)
+
+## See Also
+
+- [[entities/roborev]]
+- [[entities/superpowers]]
+- [[entities/show-us-your-agent-skills]]
+- [[concepts/generator-evaluator-pattern]]
+- [[concepts/personal-software]]
+
+## Log
+
+- **2026-06-05**: Enriched with details from "The Agentic Software Factory" article. Updated Kata description, added "Automated Software Factory" section with quotes, added See Also links for new entities/concepts.
+- **2026-05-14**: Initial entity page creation (L2 depth).

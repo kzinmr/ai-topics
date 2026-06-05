@@ -1,3 +1,29 @@
+## 2026-06-05 Article ingestion — "The Agentic Software Factory" (Hugo Bowne-Anderson)
+
+**Source:** https://hugobowne.substack.com/p/the-agentic-software-factory (Vanishing Gradients, May 27, 2026)
+
+**Raw article:** `raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md`
+
+**New entities created (6):**
+- [[entities/jeremiah-lowin]] — Prefect founder, FastMCP maintainer, OpenClaw user, personal software builder (Cardboard, Prefab)
+- [[entities/randy-olson]] — Good Eye Labs co-founder, data-viz generator-evaluator workflow, r/dataisbeautiful moderator
+- [[entities/fastmcp]] — Python MCP framework, core maintained by Jeremiah Lowin
+- [[entities/roborev]] — Continuous background code review daemon by Wes McKinney, Go
+- [[entities/superpowers]] — Agent skills framework by Jesse Vincent, progressive disclosure + spec interviews
+- [[entities/show-us-your-agent-skills]] — Live show by Hugo Bowne-Anderson & Thomas Wiecki
+
+**New concepts created (2):**
+- [[concepts/generator-evaluator-pattern]] — Generate-verify loop: deterministic scripts + LLM-as-judge
+- [[concepts/personal-software]] — Bespoke software for one user, enabled by AI agents
+
+**Enriched entities (2):**
+- [[entities/hugo-bowne-anderson]] — Added SUAYS Ep. 1 to podcast table, Jeremiah Lowin + Randy Olson to Related People
+- [[entities/wes-mckinney]] — Updated Kata description, added "Automated Software Factory" section, added See Also links
+
+**Index:** Updated `index.md` with all new entries.
+
+---
+
 ## 2026-06-05 skeleton-enrichment | Pratik Bhavsar (@ptkbhv)
 
 - **Operation:** Restored rich version from git history (commit cea105b8, 202 lines) -- current file was corrupted with single characters per line from a bad scrape. Removed status: skeleton.

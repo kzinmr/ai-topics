@@ -4,7 +4,7 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-06-03
+updated: 2026-06-05
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 5, 13), 'notes': "Added Privacy Engineering + Agent Harness Engineering sections from 2026 content"}
 tags:
   - person
@@ -19,6 +19,7 @@ tags:
   - blogger
 sources:
   - raw/articles/2026-05-04_15-privacy-questions-ai-builder.md
+  - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
   - https://open-racer-a67.notion.site/The-agent-harness-reading-list-35e14bb7e4a2805d881ae261573ff76f
 ---
 
@@ -90,6 +91,7 @@ Independent podcast focused on **practical AI building**. Notable guests include
 
 | Episode | Guest | Topic |
 |---|---|---|
+| SUAYS Ep. 1 | Wes McKinney, Jeremiah Lowin, Randy Olson | "The Agentic Software Factory" — verification, personal software, agent skills |
 | 72 | Bryan Bischof | "Why Agents Solve the Wrong Problem (and What Data Scientists Do Instead)" |
 | 71 | Samuel Colvin (Pydantic) | "Durable Agents — How to Build AI Systems That Survive a Crash" |
 | 70 | Eric J. Ma (Moderna) | "1,400 Production AI Deployments" |
@@ -191,6 +193,8 @@ From Episode 66 with Eric J. Ma (Moderna): The most productive AI systems in ent
 | **Alan Nichol** | Co-author "Beyond Prompt-and-Pray" | Structured automation, conversational AI |
 | **Duncan Gilchrist** | Co-author on Human-Centered AI articles | AI policy, human-centered design |
 | **Ryan Lopopolo** | Indirect: Harness Engineering ↔ Structured Automation | Control vs. autonomy, eval-first |
+| **Jeremiah Lowin** | Show Us Your Agent Skills Ep. 1 guest; Prefect founder | Personal software, agent skills, OpenClaw memory |
+| **Randy Olson** | Show Us Your Agent Skills Ep. 1 guest; Good Eye Labs | Generator-evaluator pattern, data visualization |
 | **Andrej Karpathy** | Wiki entity; "agentic engineering" | Building with AI, education |
 | **Ivan Leo** | Co-author "Building Agents That Build Themselves" | Google DeepMind, ex-Manus, self-extending agents |
 | **Jeff Huber** | Podcast guest (Ep. 65); co-author harness engineering | Chroma CEO, context engineering |
@@ -295,11 +299,13 @@ Hugo's harness engineering work bridges two critical tensions in the field:
 
 ## Log
 
+- **2026-06-05**: Added "The Agentic Software Factory" article (Show Us Your Agent Skills Ep. 1). Added Jeremiah Lowin and Randy Olson to Related People. Added Show Us Your Agent Skills entity link.
 - **2026-05-13**: Major enrichment — Added Privacy Engineering section (from "15 Privacy Questions" with Katharine Jarmul), Agent Harness Engineering section (Harness Reading List, Lance Martin's Reduce/Offload/Isolate, Jeff Huber context engineering, Ivan Leo self-extending agents, Doug Turnbull agentic search). Added 5 new Related People entries. Merged duplicate `hugo-bowne.md` stub. Added `@hugobowne` to x-accounts.yaml.
 - **2026-04-14**: Initial entity page creation (L3 depth). Core philosophy, career timeline, podcast episodes, O'Reilly articles, conceptual frameworks, related people mapping.
 
 ## See Also
 
+- [[entities/show-us-your-agent-skills]]
 - [[entities/_index]]
 - [[concepts/agent-harness-comparison]]
 - [[concepts/harness-commoditization]]
