@@ -60,6 +60,31 @@ Under Thawar's leadership, Shopify:
 - "No one has it figured out. No one's there yet."
 - "You should not be penny pinching on AI tools because the productivity gains are there."
 
+## AI Tool Adoption Timeline (from Pragmatic Engineer Transcript)
+
+The Pragmatic Engineer interview provides granular detail on Shopify's AI tool progression:
+
+- **2021 — GitHub Copilot**: Shopify was the first company outside GitHub to deploy Copilot. Thawar emailed GitHub's CEO Thomas Dohmke the day he became CEO: "I would like GitHub Copilot deployed for all Shopify engineers as soon as humanly possible." It took about a month. Shopify wasn't charged for 2 years because "there was not a SKU to charge us" — in exchange, they provided extensive feedback
+- **Cursor adoption**: Deployed internally alongside Copilot; about a year into using Cursor at the time of recording. Growth in Cursor "is happening a lot outside of engineering" — finance, sales, and support teams are using it
+- **Claude Code**: Thawar paired for an hour with an engineer at Anthropic working on the Claude Code team to learn internal usage patterns
+- **No cost limits**: "Shopify has no cost limit on how much an engineer or team can spend on AI tokens"
+
+## The "Chief Wi-Fi Officer" Story
+
+The transcript reveals Thawar's hands-on approach through an anecdote: at Shopify Summit (7,000-person employee event), the Wi-Fi failed. Thawar spent all 3 days fixing it personally, earning the nickname "Chief Wi-Fi Officer." The following year, he deployed 300 Ubiquiti access points and 800 switches to ensure it wouldn't happen again — then published all the memes the team had made about the Wi-Fi failure.
+
+## Hiring 10,000 Interns
+
+From the transcript: Shopify planned to hire 10,000 interns (350 per term, ~10% of engineering). The core hypothesis: interns are "AI reflexive" — they grew up with LLMs and change internal culture through osmosis. The company describes interns as "the secret weapon" because "the company learns more from them than vice versa."
+
+## Pairing Culture
+
+Thawar's philosophy — "hire smart people and pair with them on problems" — extends to how Shopify works with AI labs:
+
+- He personally pairs with engineers at Anthropic and OpenAI to learn how they use AI tools internally
+- Records pairing sessions and shares them internally as case studies
+- Treats AI labs as development partners, not just vendors
+
 ## See Also
 
 - [[entities/shopify]] — Shopify's AI-first engineering transformation

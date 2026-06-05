@@ -35,6 +35,31 @@ Key insight: > *"Our users didn't care that LLMs were new. They wanted to see th
 
 Hearth AI started as a CRM but evolved toward a broader vision of **agentic personal operating systems** — personal AI agents that manage context, memory, and follow-through across all domains of life. This evolution reflects Ashe's belief that AI agents are instruments for **presence and intentionality**, not just productivity.
 
+## Ashe Magalhaes' Background
+
+From the Builders Unscripted Ep. 2 transcript, Magalhaes' path to founding Hearth AI reveals an unusually diverse technical background:
+
+- **Stanford solar car team**: Spent 2 years on Stanford's solar car team (with strong ties to Tesla and SpaceX), working on telemetry, CAD modeling, meshing, and autocross driving. Shipped the car to Australia for the **Bridgestone World Solar Challenge** — a 5-day race from Darwin to Adelaide, camping in the Australian Outback for 3 months
+- **Safety-critical engineering**: Cambridge's team crashed during the race, heightening awareness that "I had spent 2 years building something with the team that I would put my body into." This instilled a visceral understanding of risk management: "How do you make safe decisions and also really push the bounds of what's technically possible?"
+- **NASA**: Worked on satellites
+- **Airbnb**: ML engineer during the deep learning commercialization wave
+- **ML-first founder**: "My history was as an ML engineer. I'd been studying and I really rode the wave of deep learning and the commercialization of deep learning"
+
+## Early Technical Challenges (from Transcript)
+
+- Building on GPT-3.5 in 2023 meant working with "non-deterministic" outputs and trying to "stabilize within a product experience because our users didn't care that LLMs were new"
+- The Hearth AI team was "tearing down our agentic stack every couple of weeks" as the underlying systems evolved rapidly
+- Pushed OpenAI for structured outputs and JSON schema retrieval "before we even had them" — described by Romain Huet as "super early"
+- "There were so many norms that were being disrupted"
+
+## Founder's Philosophy
+
+Magalhaes frames building as fundamentally an artistic act:
+
+> *"I view the builder archetype as quite close to the artist archetype. I think I'm happiest viewing myself as like a conduit for creativity, and I think engineering for me has always felt like a tool for creating and incarnating."*
+
+He views engineering across mediums — "satellites and cars and code, but also like poetry and videos" — as "such an energizing way to spend every day." The through-line is curiosity: "Curiosity is such a magical part of the history of being an engineer."
+
 ## Related
 
 - [[entities/ashe-magalhaes]] — Founder

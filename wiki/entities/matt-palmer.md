@@ -32,6 +32,35 @@ Advocates for **managed-service stacks over VPS** for personal AI agent hosting.
 - "I'm not a security researcher. I want to spend my time building cool agents."
 - Defense in depth through multiple service boundaries beats a single-server security posture
 
+## Deployment Walkthrough Details (from Transcript)
+
+The 67-minute companion video covers the full end-to-end deployment in detail:
+
+### Architecture Flow
+
+1. **Chat interface** (Open WebUI) deployed on a custom domain via Fly.io — accepts user input
+2. Input passes to a **Modal backend** where a **sandbox spins up** for code execution
+3. The sandbox executes code in a **secure environment** and passes results back to the agent
+4. Results return to the **Open WebUI chat instance**, gated behind **Cloudflare Access**
+
+> *"End to end, that's exactly how you should deploy a Hermes agent."*
+
+### Prerequisites
+
+- Fly CLI + Docker installed locally (`brew install flyctl`, `fly auth login`)
+- Cloudflare account with a domain (Palmer used `mattpalmer.io`)
+- Modal account for sandboxed execution
+- OpenRouter API key as the LLM provider
+
+### VPS vs. Managed Stack (from Transcript)
+
+Palmer explicitly argues against the "$5 VPS" approach popular in DevOps communities:
+
+- **Cost reality**: Managed solution runs $30–50/month depending on power — "not that much more than a VPS"
+- **Time is the real cost**: "Do we have the time to manage an entire solution ourselves? It's kind of a build versus buy trade-off"
+- **Security expertise gap**: "Part of expertise I would even say is security. A VPS can be secure if you know what you're doing and you have the time to do so"
+- **Defense in depth**: Multiple managed service boundaries provide layered security that a single VPS cannot match
+
 ### Key Design Principles
 
 - **Agent ↔ terminal separation**: The agent gateway should never run on the same environment as code execution

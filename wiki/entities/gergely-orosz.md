@@ -37,6 +37,25 @@ Orosz has been a leading chronicler of the AI transformation in software enginee
 - Deep dives into "vibe coding," AI tooling infrastructure, and the changing role of software engineers
 - Emphasizes practitioner reality over vendor narratives
 
+## Interview Style (from Transcript)
+
+The Pragmatic Engineer Farhan Thawar episode reveals Orosz's distinctive interview approach:
+
+- **Pre-interview research**: Orosz spoke with multiple Shopify engineers before the interview, allowing him to ask pointed questions like "Engineers told me that they see you in everything. You have reworked Shopify's intern hiring program." This pre-work surfaces details that generic questions would miss
+- **Live podcast format**: Episodes are sometimes recorded as live events — the Thawar episode was recorded at **LDX3 in London** before a live audience
+- **Detailed episode previews**: Opens each episode with a structured summary of exactly what will be covered, giving listeners a roadmap: "In this episode, we discuss how Shopify works closely with AI labs and why Farhan paired for an hour with an engineer at Anthropic"
+- **Accountability tracking**: References previous predictions and holds guests accountable — e.g., Dan Shipper's earlier Claude Code prediction was "unbelievably right," setting up a follow-up episode to check new predictions
+- **Hands-on details over hype**: Asks questions that surface operational specifics — not "what's your AI strategy?" but "what does a head of engineering do at Shopify and specifically what do you not do?"
+
+## The Pragmatic Engineer Format
+
+The podcast distinguishes itself through:
+
+- **Hour-long deep dives** rather than surface-level soundbites
+- **Practitioner interviews** with engineering leaders who are actively implementing, not just theorizing
+- **Engineering culture focus**: leveling systems, hiring practices, Wi-Fi infrastructure at company events (the "Chief Wi-Fi Officer" story about Thawar)
+- **Data-backed analysis**: Uses the newsletter to provide quantitative context for qualitative interviews
+
 ## See Also
 
 - [[entities/farhan-thawar]] — Interview guest on The Pragmatic Engineer, Head of Engineering at Shopify

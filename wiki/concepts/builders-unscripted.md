@@ -29,6 +29,35 @@ Each episode features an unscripted conversation between Huet and a builder who 
 | 1 | Peter Steinberger, Creator of OpenClaw | **Peter Steinberger** (@steipete) | Feb 24, 2026 | 31:28 | OpenClaw's viral growth, building with Codex, "vibe coding" critique, open source philosophy, AI-native solo development |
 | 2 | Ashe Magalhaes, Founder of Hearth AI | **Ashe Magalhaes** | Apr 10, 2026 | 33:38 | First agentic CRM, builder-as-artist, solar car racing, AI and human connection, build in public, agentic personal OS |
 
+## Transcript Highlights
+
+### Ep. 1 — Peter Steinberger
+
+From the transcript, additional details emerge about Steinberger's journey:
+
+- **PSPDFKit origins**: Steinberger built PSPDFKit (a PDF framework for iOS) starting in 2011-2012, born from Nokia development days and friends needing the tool — a "weird butterfly effect." He describes the PDF framework as "minus 100 on my interest list" initially
+- **The dopamine hit**: His first experience with Claude Code had a "maybe 30% or 40% chance" of getting things right, but it was "literally mind-blowing" because he realized "now I can just build anything"
+- **Tool chain revolution**: "The entire tool chain is changing" and "the definition of what it is to be a developer is also changing. And anyone can build anything"
+- **OpenClaw as playground**: Before becoming a global phenomenon, OpenClaw was "my little playground" — he spent the year "just marveling at what's possible now"
+- **Builder's paradise**: "If you're a builder, this is like what a time to be alive"
+
+### Ep. 2 — Ashe Magalhaes
+
+From the transcript, Magalhaes shares the full arc of his career and philosophy:
+
+- **Stanford solar car team**: Spent 2 years building a solar-powered car with Stanford's team (with ties to Tesla and SpaceX), handling telemetry, CAD modeling, meshing, and autocross driving. Shipped the car to Australia for the Bridgestone World Solar Challenge — 5 days, Darwin to Adelaide, camping in the Australian Outback for 3 months
+- **Safety-critical mindset**: Cambridge's team crashed during the race. "I had spent 2 years building something with the team that I would put my body into. That level of rigor really played into later experiences"
+- **Builder as artist**: "I view the builder archetype as quite close to the artist archetype. I think I'm happiest viewing myself as like a conduit for creativity"
+- **Early AI challenges**: The Hearth AI team was "tearing down our agentic stack every couple of weeks" as the underlying systems evolved. "There were so many norms that were being disrupted"
+- **ML background**: Rode "the wave of deep learning and the commercialization of deep learning" before pivoting to agentic products when LLMs emerged
+
+## Series Metadata
+
+- **Host**: [[entities/romain-huet]] — Head of Developer Experience at OpenAI
+- **Production**: OpenAI YouTube channel
+- **Format**: In-person interviews at OpenAI offices, unscripted
+- **Tagline**: *"You can just build things."*
+
 ### Ep. 1 — Peter Steinberger, Creator of OpenClaw
 
 Romain Huet interviews Peter Steinberger, creator of OpenClaw, prior to Steinberger joining OpenAI. Key themes:
