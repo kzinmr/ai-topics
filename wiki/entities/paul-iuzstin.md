@@ -13,7 +13,7 @@ tags:
 aliases:
   - @pauliusztin
 sources:
-  - raw/articles/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - https://www.pauliusztin.ai/
   - https://substack.com/@pauliusztin
   - https://www.decodingai.com/

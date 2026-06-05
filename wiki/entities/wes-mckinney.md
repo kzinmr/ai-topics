@@ -15,7 +15,7 @@ tags:
   - open-source
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
-  - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - raw/transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
   - https://wesmckinney.com/
   - https://en.wikipedia.org/wiki/Wes_McKinney

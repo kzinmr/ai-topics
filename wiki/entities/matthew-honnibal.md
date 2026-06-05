@@ -15,7 +15,7 @@ aliases:
   - Matt Honnibal
   - @honnibal
 sources:
-  - raw/articles/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - https://github.com/honnibal
   - https://explosion.ai/
   - https://github.com/honnibal/claude-skills

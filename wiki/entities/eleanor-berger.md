@@ -13,7 +13,7 @@ tags:
 aliases:
   - intellectronica
 sources:
-  - raw/articles/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - https://maven.com/agentic-ventures/ai-coding
   - https://agentic-ventures.com/
   - https://okigu.com/eleanor

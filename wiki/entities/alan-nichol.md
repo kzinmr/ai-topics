@@ -14,7 +14,7 @@ aliases:
   - Dr. Alan Nichol
   - amn41
 sources:
-  - raw/articles/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - https://alannichol.com/
   - https://pydata.org/global2024/schedule/speaker/AJT8R7/
   - https://councils.forbes.com/profile/Alan-Nichol-Co-Founder-CTO-Rasa/
