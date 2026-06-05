@@ -42,7 +42,7 @@ sources:
 | 1 | 2026-05-08 | 103:45 | [[entities/wes-mckinney\|Wes McKinney]], [[entities/jeremiah-lowin\|Jeremiah Lowin]], [[entities/randy-olson\|Randy Olson]] | [link](https://www.youtube.com/live/Pq3xuChdwxQ) | RoboRev code review, second brain with OpenClaw, generator-evaluator data viz |
 | 2 | 2026-05-15 | 139:00 | [[entities/hilary-mason\|Hilary Mason]], [[entities/bryan-bischof\|Bryan Bischof]], [[entities/eric-ma\|Eric Ma]], [[entities/tomasz-tunguz\|Tomasz Tunguz]] | [link](https://www.youtube.com/watch?v=l37PR-OkYKA) | Agentic data science, context engineering, local models, creative AI |
 | 3 | 2026-05-21 | 198:20 | Paul Iusztin, [[entities/eleanor-berger\|Eleanor Berger]], [[entities/vincent-warmerdam\|Vincent Warmerdam]], [[entities/alan-nichol\|Alan Nichol]], Nico Gerold, [[entities/matthew-honnibal\|Matthew Honnibal]] | [link](https://www.youtube.com/watch?v=ud2WzkKeDZs) | Agent harness, coding agents, NLP, cron-job agents |
-| 4 | 2026-05-29 | 122:30 | [[entities/hamel-husain\|Hamel Husain]], [[entities/chris-fonnesbeck\|Chris Fonnesbeck]], [[entities/doug-turnbull\|Doug Turnbull]] | [link](https://www.youtube.com/watch?v=XaYQFtca798) | Code review, search, evaluation, agent harness |
+| 4 | 2026-05-29 | 122:30 | [[entities/hamel-husain\|Hamel Husain]], [[entities/chris-fonnesbeck\|Chris Fonnesbeck]], [[entities/doug-turnbull\|Doug Turnbull]], [[entities/john-berryman\|John Berryman]] | [link](https://www.youtube.com/live/XaYQFtca798) | Code review, search, evaluation, agent harness |
 
 ## Key Themes (Ep. 1)
 
@@ -76,7 +76,7 @@ Each episode features practitioners who:
 - Paul Iusztin, [[entities/eleanor-berger]], [[entities/vincent-warmerdam]], [[entities/alan-nichol]], Nico Gerold, [[entities/matthew-honnibal]]
 
 ### Ep. 4 Guests
-- [[entities/hamel-husain]], [[entities/chris-fonnesbeck]], [[entities/doug-turnbull]]
+- [[entities/hamel-husain]], [[entities/chris-fonnesbeck]], [[entities/doug-turnbull]], [[entities/john-berryman]]
 
 ### Hosts
 - [[entities/hugo-bowne-anderson]] — Host

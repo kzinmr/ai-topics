@@ -1,11 +1,11 @@
 ---
-title: "Show Us Your (Agent) Skills Episode 4 — Hamel Husain, Chris Fonnesbeck, Doug Turnbull"
+title: "Show Us Your (Agent) Skills Episode 4 — Hamel Husain, Chris Fonnesbeck, Doug Turnbull, John Berryman"
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-05
 author: Hugo Bowne-Anderson, Thomas Wiecki (hosts)
-guests: [Hamel Husain, Chris Fonnesbeck, Doug Turnbull]
+guests: [Hamel Husain, Chris Fonnesbeck, Doug Turnbull, John Berryman]
 source: YouTube (Vanishing Gradients)
-url: https://www.youtube.com/watch?v=XaYQFtca798
+url: https://www.youtube.com/live/XaYQFtca798
 type: talk
 duration: "122:30"
 tags: [ai-agents, agent-skills, agent-harness, ai-safety, code-review, context-engineering, developer-tooling, coding-agents, search, evaluation]
@@ -19,14 +19,13 @@ tags: [ai-agents, agent-skills, agent-harness, ai-safety, code-review, context-e
 - **Published**: 2026-05-29
 - **Duration**: 122:30
 - **Hosts**: Hugo Bowne-Anderson, Thomas Wiecki (PyMC Labs)
-- **Guests**: Hamel Husain (Parlance Labs), Chris Fonnesbeck (PyMC Labs, veteran analyst for Phillies/Yankees/Brewers), Doug Turnbull (led Search at Shopify and Reddit)
+- **Guests**: Hamel Husain (Parlance Labs), Chris Fonnesbeck (PyMC Labs, veteran analyst for Phillies/Yankees/Brewers), Doug Turnbull (led Search at Shopify and Reddit), John Berryman (interlocutor, Arcturus Labs)
 - **GitHub**: https://github.com/hugobowne/show-us-your-agent-skills
+- **Full transcript**: `raw/transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.en.vtt`
 
 ## Episode Overview
 
-The Season 1 finale. Three guests spanning agent skill ecosystems, Bayesian statistics, and search — each at the top of their respective fields. The episode covers the skills security nightmare, the Codex Desktop transition, Socratic code review, auto-research agents for search ranking, and lab journals as agent memory.
-
-> **Note**: No captions were available for this episode at time of ingestion. Content below is based on the YouTube chapter markers, description, and cross-referencing with the speakers' published work. This page will be enriched when transcript becomes available.
+The Season 1 finale. Three main guests plus John Berryman as interlocutor, spanning agent skill ecosystems, Bayesian statistics, and search. The episode covers skills skepticism, the Codex Desktop transition, Socratic code review, auto-research agents for search ranking, and lab journals as agent memory.
 
 ## Chapter Summary
 
@@ -61,35 +60,29 @@ The Season 1 finale. Three guests spanning agent skill ecosystems, Bayesian stat
 | 1:55:31 | An LLM Judge as User Message Beats Its Own Reasoning |
 | 2:00:28 | Next Up: John Berryman's Agent That Follows You Everywhere |
 
-## Key Insights
+## Key Insights (Verified from Transcript)
 
-### Hamel Husain (Parlance Labs) — Skills Ecosystems, Security, and Codex Desktop
+### Hamel Husain (Parlance Labs) — Skills Skepticism and Codex Desktop
 
-Hamel, creator of the influential `superpowers` skills framework and a central figure in the agent skills movement, delivered hard-won lessons:
+> *"I never thought I would leave the terminal. And then I tried Codex Desktop app, and I was like, 'Wow, this is actually better.' It shocked me."* — [08:35]
 
-- **Codex Desktop over Claude Code**: Switched from Claude Code to Codex Desktop. The vendor harness (Codex) won over open/hackable harnesses (OpenClaw) because it "just works" and gets the integration details right.
-- **Skills are decompressed prompts**: "Always read the prompt" — skills don't add magic, they're structured context. The skill file is a compressed representation that the agent decompresses at runtime.
+- **Codex Desktop over Claude Code**: Hamel switched from Claude Code to Codex Desktop for its polished UI, native computer use on Mac, headless Mac Mini sessions visible in the sidebar, and excellent phone support. "I never thought I would say that."
+- **Skills are decompressed prompts**: Skills don't add magic — they're structured context that the agent decompresses at runtime. "Always read the prompt."
 - **"Fuck Your Skills"**: Radical skepticism toward skills. A third of the top 300 skills on GitHub have exactly one commit — most are abandonware. Be skeptical even of Hamel's own published skills.
-- **Killed his eval skill for an MCP**: MCP (Model Context Protocol) provides a more structured, testable interface than skill files for evaluation tasks.
+- **Killed his eval skill for an MCP**: MCP provides a more structured, testable interface than skill files for evaluation tasks.
 - **Skills security nightmare**: Hidden HTML in `.md` skill files can inject instructions. The skill supply chain is a massive unexamined attack surface.
-- **Reverse-engineering sites without APIs**: Hamel's favorite skill. The agent inspects network traffic, reverse-engineers internal APIs, and builds clients for sites that have no public API.
+- **Reverse-engineering sites without APIs**: Hamel's favorite skill — the agent inspects network traffic, reverse-engineers internal APIs, and builds clients for sites with no public API.
 - **AI writing is slop**: Unless you're fully in the loop — reading, editing, verifying — AI-generated writing is inevitably mediocre. The human has to be an active editor, not a passive approver.
-- **Devin's UX comeback**: Devin's proof-of-work model (showing what it did, not just the result) is a UX pattern that matters for eval.
 
 ### Chris Fonnesbeck (PyMC Labs) — Bayesian Skepticism, Pi TUI, and Socratic Review
 
-Chris, a Bayesian statistician who consults for MLB teams, brought statistical rigor to agent workflows:
-
 - **Agents are seductive and dangerous**: The ease of getting an answer from an agent masks the difficulty of verifying it. Statistical thinking — quantifying uncertainty, checking assumptions — is more critical with agents, not less.
-- **Switched to Pi**: A TUI (Terminal User Interface) agent that can rewrite its own source code. The self-modifying capability changes the trust model.
+- **Switched to Pi**: A TUI agent that can rewrite its own source code. The self-modifying capability changes the trust model.
 - **Socratic review — Pi's Grill-Me skill**: Instead of just reviewing code, the agent Socratic-dialogues the author — asking probing questions that expose weak assumptions. This mirrors Chris's Bayesian approach: prior elicitation through questioning.
 - **Zed as agent multiplexer**: Uses Zed editor as the coordination point for multiple agents, with marimo notebooks, vim keybindings, and Rust tooling all integrated.
 - **Left VS Code for Zed**: The shift was driven by the agent workflow — Zed's speed and multi-agent support matter more than VS Code's extension ecosystem.
-- **Half-flat distributions**: A Bayesian prior that Chris demonstrated live — the statistical machinery behind his agent's decision-making.
 
 ### Doug Turnbull (Search at Shopify/Reddit) — Auto-Research and Agentic Search
-
-Doug, author of "Relevant Search" and "AI-Powered Search," demonstrated agents doing genuine search research:
 
 - **Auto-research: Can an agent find a better BM25?**: Doug tasked an agent with discovering ranking improvements. Not just implementing known techniques — actually researching and testing novel approaches.
 - **BM25 as the hundred-dollar bill on the floor**: BM25 is so effective that it's the baseline no one can beat. The agent's job is to find improvements on top of it, not replace it.
@@ -102,7 +95,11 @@ Doug, author of "Relevant Search" and "AI-Powered Search," demonstrated agents d
 
 - [[concepts/agentic-engineering]] — Hamel's skills ecosystem critique; Doug's auto-research workflow
 - [[concepts/ai-safety]] — Hamel's skills security nightmare and invisible HTML problem
-- [[concepts/search]] — Doug's BM25 auto-research and MS Marco eval loop
-- [[concepts/evaluation]] — Hamel's MCP over skill files for eval; Chris's Socratic review pattern
 - [[concepts/context-engineering]] — Hamel's "skills are decompressed prompts" framing
-- [[entities/hermes-agent]] — Implicitly referenced as the harness Hamel's skills ecosystem targets
+- [[concepts/generator-evaluator-pattern]] — Doug's auto-research eval loop; LLM judge as user message
+- [[concepts/personal-software]] — Chris's Pi TUI; Hamel's reverse-engineering skill
+
+## Links
+
+- [GitHub: show-us-your-agent-skills](https://github.com/hugobowne/show-us-your-agent-skills)
+- [Vanishing Gradients Substack](https://hugobowne.substack.com/)
