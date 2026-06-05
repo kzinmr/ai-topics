@@ -114,6 +114,17 @@ Uses NVIDIA's **EAGLE-3** draft model for Kimi K2.5, particularly effective for 
 
 See: [[concepts/cloudflare-llm-infrastructure]]
 
+## VoidZero Acquisition (June 2026)
+
+Cloudflare acquired **VoidZero**, the team behind the Vite ecosystem:
+- **Vite** — Next-generation frontend build tool (MIT, remains vendor-neutral)
+- **Vitest** — Unit test framework built on Vite
+- **Rolldown** — Rust-based bundler (Vite's next-gen build backend)
+- **Oxc** — Rust-based JavaScript/TypeScript toolchain (parser, linter, formatter)
+- **Vite+** — Vite extension ecosystem
+
+Cloudflare committed **$1M to an OSS fund** for the independent Vite ecosystem. Developer commentary positioned this as Cloudflare assembling a tightly integrated, agent-friendly full-stack platform: frontend/build tooling, runtime (Workers), storage (R2, D1), inference (Workers AI), deployment (Pages), and security — all in one platform. See [[concepts/cloudflare-voidzero]].
+
 ## Strategic Positioning
 
 Cloudflare's bet: the containerless, serverless Workers platform (launched 2018) was purpose-built for the agent era. Unlike [[entities/anthropic]] (developer-owns-harness) or [[entities/openai]] (managed containers), Cloudflare provides the infrastructure layer — agents run on Cloudflare, not inside it.
@@ -126,7 +137,8 @@ Cloudflare's bet: the containerless, serverless Workers platform (launched 2018)
 | Apr 16, 2026 | High-performance LLM infrastructure blog post |
 | Apr 20, 2026 | Agents Week 2026 — full agentic cloud stack unveiled |
 | Apr 20, 2026 | Internal AI Engineering Stack (iMARS) published |
-| Apr 30, 2026 | Stripe Projects integration — agents provision Cloudflare autonomously |
+|| Apr 30, 2026 | Stripe Projects integration — agents provision Cloudflare autonomously |
+|| Jun 4, 2026 | Acquires VoidZero (Vite, Vitest, Rolldown, Oxc, Vite+) — agent-friendly application stack |
 
 ## Relationships
 

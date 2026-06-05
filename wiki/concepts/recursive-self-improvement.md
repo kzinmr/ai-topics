@@ -1,10 +1,10 @@
 ---
 title: "Recursive Self-Improvement"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-06-05
 type: concept
 tags: [prediction, safety, alignment, training, benchmark, automation]
-sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md]
+sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-06-05-ainews-not-much-happened-today.md]
 ---
 
 # Recursive Self-Improvement

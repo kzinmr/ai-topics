@@ -1,0 +1,130 @@
+{
+  "run_id": "20260605T071059Z",
+  "triaged_at": "2026-06-05T07:15:00Z",
+  "source": "newsletter-ingest checkpoint",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 6,
+  "total_articles": 120,
+  "classification_summary": {
+    "critical": 0,
+    "high": 3,
+    "medium": 2,
+    "low": 1
+  },
+  "newsletters": [
+    {
+      "id": "uid=186",
+      "subject": "🧬 AI Labs Unite Against Bioweapons",
+      "date": "2026-06-04",
+      "source_type": "beehiiv",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-04-ai-labs-unite-against-bioweapons.md",
+      "article_count": 20,
+      "classification": "high",
+      "reason": "AI safety / biosecurity topic — multiple major AI labs collaborating on bioweapons prevention is a significant AI safety governance event. Directly relevant to wiki concepts on AI safety, responsible AI, and biosecurity. All links are beehiiv tracking redirects requiring resolution.",
+      "action": "resolve_redirects_and_ingest",
+      "topics": ["ai-safety", "biosecurity", "ai-governance", "responsible-ai"],
+      "priority_score": 9
+    },
+    {
+      "id": "uid=185",
+      "subject": "Build tools, to build more",
+      "date": "2026-06-04",
+      "source_type": "substack",
+      "source_publication": "bensbites (publication_id=4379299)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-04-build-tools-to-build-more.md",
+      "article_count": 20,
+      "classification": "high",
+      "reason": "Ben's Bites is a well-known AI newsletter. Title 'Build tools, to build more' suggests AI developer tooling / infrastructure content. Core wiki domain. Main article URL: https://open.substack.com/pub/bensbites/p/build-tools-to-build-more",
+      "action": "resolve_redirects_and_ingest",
+      "topics": ["ai-developer-tools", "ai-infrastructure", "llm-frameworks"],
+      "priority_score": 8,
+      "direct_url": "https://open.substack.com/pub/bensbites/p/build-tools-to-build-more"
+    },
+    {
+      "id": "uid=188",
+      "subject": "Reality: The Final Eval — Lukas Petersson and Axel Backlund of Andon Labs",
+      "date": "2026-06-04",
+      "source_type": "substack",
+      "source_publication": "swyx / Latent Space (publication_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-04-reality-the-final-eval-lukas-petersson-and-axel-backlund-of-andon-labs.md",
+      "article_count": 20,
+      "classification": "high",
+      "reason": "Latent Space podcast by swyx — high-signal AI engineering content. Episode about Andon Labs and 'Reality: The Final Eval' suggests AI evaluation/benchmarks in real-world settings. Podcast format (audio links dominant). Main article URL: https://open.substack.com/pub/swyx/p/andon. Andon Labs, Lukas Petersson, Axel Backlund may need entity pages.",
+      "action": "scrape_main_article_and_ingest",
+      "topics": ["ai-evaluation", "ai-benchmarks", "ai-agents", "latent-space-podcast"],
+      "priority_score": 8,
+      "direct_url": "https://open.substack.com/pub/swyx/p/andon",
+      "new_entities": ["Andon Labs", "Lukas Petersson", "Axel Backlund"]
+    },
+    {
+      "id": "uid=187",
+      "subject": "True Positive Weekly #164",
+      "date": "2026-06-04",
+      "source_type": "substack",
+      "source_publication": "AI Weekly (publication_id=61455, @aiweekly)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-04-true-positive-weekly-164.md",
+      "article_count": 20,
+      "classification": "medium",
+      "reason": "AI Weekly recurring digest. 'True Positive' branding suggests curated AI/ML news. Standard weekly roundup format — likely contains multiple linked articles worth triaging individually. Main URL: https://open.substack.com/pub/aiweekly/p/true-positive-weekly-164",
+      "action": "resolve_redirects_and_ingest",
+      "topics": ["ai-news", "ml-research", "weekly-digest"],
+      "priority_score": 6,
+      "direct_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-164"
+    },
+    {
+      "id": "uid=184",
+      "subject": "Betting on Humans",
+      "date": "2026-06-04",
+      "source_type": "substack",
+      "source_publication": "Anton Leicht (publication_id=3834218, @antonleicht), mentions Dean W. Ball (@deanwball)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-04-betting-on-humans.md",
+      "article_count": 20,
+      "classification": "medium",
+      "reason": "AI governance/opinion piece by Anton Leicht, referencing Dean W. Ball. Title suggests human-centric AI or AI augmentation perspective. Potential entity pages needed for authors. Main URL: https://open.substack.com/pub/antonleicht/p/betting-on-humans",
+      "action": "scrape_main_article_and_ingest",
+      "topics": ["ai-governance", "ai-philosophy", "human-ai-collaboration"],
+      "priority_score": 5,
+      "direct_url": "https://open.substack.com/pub/antonleicht/p/betting-on-humans",
+      "new_entities": ["Anton Leicht", "Dean W. Ball"]
+    },
+    {
+      "id": "uid=189",
+      "subject": "[AINews] not much happened today",
+      "date": "2026-06-05",
+      "source_type": "substack",
+      "source_publication": "swyx / Latent Space (publication_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-05-ainews-not-much-happened-today.md",
+      "article_count": 20,
+      "classification": "low",
+      "reason": "swyx's daily AINews digest, self-described as 'not much happened today'. Low-signal day. Still worth skimming for any missed items. Main URL: https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-7a8",
+      "action": "skim_if_time_permits",
+      "topics": ["ai-news", "daily-digest"],
+      "priority_score": 3,
+      "direct_url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-7a8"
+    }
+  ],
+  "downstream_recommendations": {
+    "newsletter-wiki-ingest": {
+      "high_priority_articles": [
+        "uid=186 (AI Labs Unite Against Bioweapons) — resolve beehiiv redirects, scrape and create/update ai-safety and biosecurity concept pages",
+        "uid=185 (Build tools, to build more) — scrape bensbites article, update ai-developer-tools concept page",
+        "uid=188 (Reality: The Final Eval) — scrape latent space podcast page, create Andon Labs entity page if warranted"
+      ],
+      "new_entity_candidates": [
+        "Andon Labs (AI evaluation company)",
+        "Lukas Petersson (Andon Labs co-founder)",
+        "Axel Backlund (Andon Labs co-founder)",
+        "Anton Leicht (AI governance writer)",
+        "Dean W. Ball (AI policy writer)"
+      ],
+      "new_concept_candidates": [
+        "AI bioweapons safety / biosecurity governance",
+        "Real-world AI evaluation (Reality as eval)"
+      ],
+      "known_entity_updates": [
+        "swyx — check for new podcast episodes / content",
+        "Ben's Bites — update with latest newsletter content"
+      ]
+    }
+  }
+}

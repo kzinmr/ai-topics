@@ -147,6 +147,7 @@ Harvey released the **Legal Agent Benchmark (LAB)**, an open-source benchmark fo
 - **Cost at frontier**: Opus 4.7 costs ~$50.90/task at ~22 min latency; GPT-5.5 is ~3x cheaper
 - **Self-correction is the strongest signal**: Agents that verify AND revise after drafting improve by +1.5 points on all-pass
 - **Partnership with Artificial Analysis** for a regularly-updated leaderboard
+- **Kimi 2.6 agent (June 2026)**: Harvey deployed a [[entities/kimi|Kimi 2.6]]-powered agent that beat Opus 4.7 on Harvey's internal legal benchmark at ~11x lower cost — demonstrating the cost-efficiency advantage of routing to specialized models
 
 ### Behavioral Findings
 - **Positive behaviors**: Thorough research (+0.4), post-draft validation (+0.8), verifying and revising (+1.5), targeted retrieval (+0.3), structured analysis (+0.3)

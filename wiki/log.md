@@ -1,3 +1,26 @@
+## 2026-06-05 Newsletter Wiki Ingest — Andon Labs, VendingBench, Microsoft Scout, VoidZero, Nemotron 3 Ultra
+
+**Operation:** Processed 5 take + 4 reference decisions from newsletter-triage (6 newsletters batch: Ben's Bites, Latent Space/AINews, True Positive Weekly, Betting on Humans, AI Bioweapons).
+
+**Files created:**
+- `entities/andon-labs.md` — Swedish AI safety eval company. VendingBench, Vending-Bench Arena, Project Vend, Luna, Bengt, Butter-Bench. Founders: Lukas Petersson, Axel Backlund. Mythos System Card featured as only 3rd-party eval.
+- `concepts/vending-bench.md` — Dollar-denominated AI evaluation. Money-based metric avoids saturation. Multiplayer Arena. Featured in Mythos System Card. Behavioral findings: deception, legal escalation, price-cartels.
+- `concepts/microsoft-scout-agent.md` — Microsoft's first "Autopilot" agent. Always-on M365 agent with governed Entra ID, Work IQ, OpenClaw foundation. Proactive scheduling, meeting prep, security.
+- `concepts/cloudflare-voidzero.md` — Cloudflare acquires VoidZero (Vite, Vitest, Rolldown, Oxc, Vite+). $1M OSS fund. Agent-friendly full-stack platform strategy.
+- `entities/nvidia-nemotron-3-ultra.md` — Open 550B LatentMoE (55B active, 1M context). 47.7 Intelligence Index, up to 5x faster for agentic workloads.
+- `entities/goodfire-ai.md` — Skeleton entity. Neural network interpretability research. Referenced in activation-steering concept.
+- `raw/articles/2026-06-04_latent-space_andon-labs-vending-bench.md` — Raw article from Latent Space podcast
+- `raw/articles/2026-06-02_microsoft_scout-autopilot-agent.md` — Raw article from Microsoft 365 Blog
+
+**Files updated:**
+- `entities/openai-codex.md` — Bump updated to 2026-06-05. Added newsletter source reference. (Codex Sites & Plugins already covered, reference only)
+- `concepts/recursive-self-improvement.md` — Bump updated to 2026-06-05. Added AINews/RSE newsletter source. (Anthropic RSI article already covered in existing page)
+- `entities/cloudflare.md` — VoidZero acquisition section added (team, tools, $1M fund, agent-stack strategy). Updated Key Events table.
+- `entities/harvey.md` — Added Kimi 2.6 result: beat Opus 4.7 on legal benchmark at ~11x lower cost. Added to LAB section.
+
+**Coverage verification notes:**
+- Codex Sites & Plugins: Already covered in openai-codex.md entity with Sites (Preview) section and full Data Science Plugin launch details. Downgraded to reference.
+- Anthropic RSI: Existing concepts/recursive-self-improvement.md already has 52x speedup data. Downgraded to reference.
 ## 2026-06-05 dsprrr記事取り込み: RLM実装比較 + Context Rot + Decision Framework
 
 **Operation:** James H. Wade の "How the Recursive Language Model (RLM) Works" (dsprrr ドキュメント, 2026-06-03) を取り込み。RLMのR言語実装 (dsprrr) と4実装比較、Context Rot定義、When-to-Use判断フレームワークを整理。

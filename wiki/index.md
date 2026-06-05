@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 2253 | Indexed entries: 1722 | Concepts: 1463 | Entities: 753
+> Last updated: 2026-06-05 | Total pages: 2253 | Indexed entries: 1718 | Concepts: 945 | Entities: 773
 
-## Entities (753 pages)
+## Entities (773 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -15,6 +15,7 @@
 - [[entities/ai21-labs]] — AI21 Labs — Israeli AI company. Shut down model team in May 2026 and pivoted entirely to agents, representing "Model Lab → Agent Lab" industry shift alongside DeepSeek Harness team.
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
 - [[entities/alan-nichol]] — Alan Nichol — Co-founder and CTO of Rasa. Creator of open-source conversational AI framework spaCy. Focus on NLU and dialogue systems.
+- [[entities/andon-labs]] — Andon Labs — Swedish AI safety evaluation company. Created VendingBench (money-based real-world AI evaluation, featured in Mythos System Card). Founders: Lukas Petersson, Axel Backlund. Covered on Latent Space (Jun 2026).
 - [[entities/antoine-chaffin]] — Antoine Chaffin — Researcher at LightOn. Lead author of DenseOn/LateOn (SOTA open retrieval models), PyLate (CIKM 2025). Late Interaction Workshop co-organizer. Reframed IR direction: sublinear querying over information reconstruction (Jun 2026).
 - [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H ($965B valuation) with expanded investor consortium (Capital Group, Coatue, GIC, etc.) and compute commitments (Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus). Safety-focused LLM lab founded by former OpenAI researchers.
 - [[entities/ar0cket1]] — ar0cket1 — Pseudonymous AI/ML researcher. OPSD (On-Policy Self-Distillation) empirical analysis: KL divergence profiling, positive pressure asymmetry (83% down-weight), GEPA-based hint optimization. 216 bookmarks.
@@ -53,6 +54,7 @@
 - [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/glimpse]] — Glimpse — Native macOS WKWebView micro-UI library (Node.js bindings). Sub-50ms window startup, bidirectional JSON. Used for generative UI in terminal-based coding agents.
+- [[entities/goodfire-ai]] — Goodfire AI — Neural network interpretability research. Studies neural geometry for model understanding and control. Referenced in activation-steering concept. Skeleton page (Jun 2026).
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
@@ -460,6 +462,7 @@
 - [[entities/nvidia-openshell]] — NVIDIA OpenShell: secure agent execution environment providing OS-level sandboxing, deny-by-default security policies, YAML-based access control. Reference implementation of the "Open Runtime" layer in Harrison Chase's framework.
 - [[entities/nvidia-nemotron-labs-diffusion]] — NVIDIA's tri-mode LM (3B/8B/14B): AR + diffusion + self-speculation decoding in one checkpoint, 6× tokens/forward over Qwen3-8B
 - [[entities/nvidia-nemotron-3-nano-omni]] — NVIDIA Nemotron 3 Nano Omni: fully open-source multimodal MoE model (30B-A3B) unifying video, audio, image, and text. Functions as perception sub-agent in agentic systems.
+- [[entities/nvidia-nemotron-3-ultra]] — NVIDIA Nemotron 3 Ultra: open 550B LatentMoE model (55B active, 1M context). 47.7 Intelligence Index, R1-style Long CoT, up to 5x faster for agentic workloads. Part of Nemotron 3 family alongside Nano Omni.
 - [[entities/nvidia-sana-wm]] — NVIDIA's 2.6B open-source world model: 720p 60s video generation on single GPU, hybrid linear attention, precise 6-DoF camera control
 - [[entities/nvidia]] — NVIDIA — Semiconductor and AI infrastructure company. Q1 FY2027: $81.6B revenue (+85% YoY), $75.2B Data Center (+92%), $91B guidance. Segment reorg: Hyperscale/ACIE/Edge.
 - [[entities/notion]] — Knowledge work decacorn. Custom Agents (4-5 rebuilds), Agent Lab thesis, three-tier evals. Meeting Notes as growth loop. CLI + MCP for agent-native workspace.
@@ -781,7 +784,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1587 pages)
+## Concepts (945 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1129,7 +1132,9 @@
 - [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.
 - [[concepts/cloudflare-email-sending]] — Cloudflare Email Service (beta, April 2026) — transactional email API via REST or Workers bindings. $354/mo at 1M emails, 3.4× cheaper than Postmark. Auto-managed SPF/DKIM/DMARC, suppression lists.
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
+- [[concepts/cloudflare-voidzero]] — Cloudflare VoidZero Acquisition (Jun 2026) — Cloudflare acquired the team behind Vite, Vitest, Rolldown, Oxc, Vite+. $1M OSS fund. Agent-friendly full-stack: frontend/build tooling + runtime + storage + inference + deployment + security.
 - [[concepts/cmu-llms-methods-applications]] — CMU LLMs: Methods and Applications: CMU graduate LLM course (covers latest: GRPO, Deep Research, Multi-agent, etc.).
+- [[concepts/codex-goal]] — Codex /goal — A persistent objective directive for Codex CLI sessions.
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents — Unified framework for agent cognitive architectures.
 - [[concepts/coalitional-agency]] — Richard Ngo's "scale-free theory of intelligent agency." Intelligence emerges as coalitions of sub-agents that compete and cooperate, and this principle applies universally from neurons to civilizations. Critically integrates both EUM and Active Inference. Proposes internal coordination mechanisms via prediction markets, auctions, and voting.
 - [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution agents latency, Monty, Pydantic AI, sandbox
@@ -1469,6 +1474,7 @@
 - [[concepts/metadata-retrieval]] — Metadata Retrieval — 3rd retrieval paradigm alongside lexical and embedding search. Structured attribute matching with explainable, testable ranking rules. Doug Turnbull's "Cheat at Search" framework enabled by LLM-powered query understanding.
 - [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
 - [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr/May 2026 → Jun 2026 Build): MAI-Thinking-1 (1T param reasoning, 35B active, zero distillation), MAI-Code-1-Flash (137B code model, 5B active), MAI-Image-2, MAI-Transcribe-1, MAI-Voice-1 + updates. Windows as agent runtime, GitHub Copilot app, Web IQ.
+- [[concepts/microsoft-scout-agent]] — Microsoft Scout (Jun 2026) — Microsoft's first "Autopilot" agent. Always-on M365 agent with governed Entra ID identity, Work IQ, built on OpenClaw. Proactive scheduling, meeting prep, M365 integration. Built with enterprise-grade security.
 - [[concepts/minimax-m3]] — MiniMax M3 — All-in-one multimodal 1M-context model. MiniMax Sparse Attention (MSA), Together AI preferred cloud partner with 81-125% throughput gains. Native image/video support. June 2026.
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA) — Sub-quadratic attention for MiniMax M3 model. Block-level selection on real KVs, 9.7× faster prefilling, 15.6× faster decoding at 1M tokens vs full attention. May 2026.
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
@@ -1707,6 +1713,7 @@
 - [[concepts/us-china-ai-competition]] — US-China AI Competition — Anthropic's framework: four fronts (Intelligence, Domestic adoption, Global distribution, Resilience), compute as central battleground, export controls, distillation attacks, and two 2028 scenarios
 - [[concepts/vector-search]] — Approximate Nearest Neighbor (ANN) search in high-dimensional embedding space. HNSW hierarchical graphs, k-means clustering, ScANN/DiskANN, filtered similarity (ACORN1/turbopuffer), hybrid BM25+vector strategies. Doug Turnbull's Maven course.
 - [[concepts/verifiers-rl]] — Verifiers: TRL-based multi-turn RL framework. GRPO on HuggingFace Trainer, supports environments and multi-turn tool use. Popular for research.
+- [[concepts/vending-bench]] — VendingBench — Dollar-denominated AI evaluation by Andon Labs. AI agents operate simulated vending machine businesses. Featured in Mythos System Card. Multiplayer Arena variant. Unsaturated real-world benchmark.
 - [[concepts/vibe-coding]] — Vibe Coding — Development style defined by Simon Willison: coding where you pay no attention to implementation details.
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
 - [[concepts/vibe-eval]] — Vibe-Eval — Reka AI's personalized multimodal eval. 269 expert-created prompts. >50% of hard problems unsolved by all frontier models. Exhibits inverse scaling.

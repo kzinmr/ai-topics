@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-06-02
+updated: 2026-06-05
 tags:
   - product
   - coding-agent
@@ -32,6 +32,7 @@ sources:
   - raw/articles/2026-05-26_every_codex-knowledge-work.md
   - raw/articles/2026-06-02_zswang24-codex-data-science-plugin.md
   - raw/articles/2026-06-02_openai-codex-every-role-tool-workflow.md
+  - raw/newsletters/2026-06-04-build-tools-to-build-more.md
 ---
 
 # OpenAI Codex
