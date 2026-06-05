@@ -1,3 +1,17 @@
+## 2026-06-05 kmad.ai記事取り込み: RLM + DataFrame + Sandbox
+
+**Operation:** Kevin Madura (kmad.ai) の "A Data Scientist RLM That Lives in Your Program" (2026-03-22) を取り込み。RLM×DataFrame×Agent Sandboxingの交差点を整理。
+
+**Files created:**
+- `raw/articles/2026-03-22_kmad_ai-data-scientist-rlm-dataframe.md` — 原文クリッピング
+
+**Files updated:**
+- `concepts/dspy-rlm.md` — SandboxSerializableプロトコル（DataFrameサポート）、InfiAgent-DABenchベンチマーク結果（87%精度）、データ分析エージェントとしてのRLMの位置づけを追加。updated: 2026-06-05
+- `concepts/agent-sandboxing.md` — WASM Sandbox (Deno+Pyodide) セクションを分離技術スペクトラムに追加。RLM固有のsandboxing手法として文脈化。updated: 2026-06-05
+- `index.md` — dspy-rlmとagent-sandboxingの記述を充実
+
+**Key insight:** RLMのREPL sandbox (Deno+Pyodide WASM) は、Docker/gVisor/Firecrackerとは異なる「言語ランタイムレベル」の分離。SandboxSerializableプロトコルによりDataFrame等のカスタム型を安全にREPLに公開できる。コーディングエージェント（対話型）vs RLM（プログラマブル）の二項対立を、「インテリジェンスのインライン化」という第3の軸で整理可能。
+
 ## 2026-06-05 残り6本 — YouTube字幕取得（Vanishing Gradients, Sutskever, Lenny, Matt Palmer）
 
 **Operation:** yt-dlpで残り6本の字幕取得、`wiki/transcripts/` に配置

@@ -2,7 +2,7 @@
 title: "Agent Sandboxing: Isolation Technologies for AI Agent Code Execution"
 description: "Agent Sandboxing is a spectrum of isolation technologies for secure AI agent dynamic code execution. It covers isolation technologies such as gVisor, Firecracker microVM, and WASM. Standard containers are insufficient due to shared kernels."
 created: 2026-04-20
-updated: 2026-05-31
+updated: 2026-06-05
 type: concept
 status: complete
 depth_tracking:
@@ -15,6 +15,7 @@ tags:
 sources:
   - raw/articles/agent-sandboxing-2026-northflank.md
   - raw/articles/simonwillison.net--2026-may-30-how-we-contain-claude--6b2ad650.md
+  - raw/articles/2026-03-22_kmad_ai-data-scientist-rlm-dataframe.md
 related:
  - agentic-engineering
  - ai-agent-engineering
@@ -70,6 +71,21 @@ AI agents are fundamentally different from traditional applications:
 | **Use Case** | Multi-tenant, production, untrusted code |
 
 **Use Cases:** AWS Lambda, AWS Fargate's isolation guarantees
+
+### WASM Sandbox (Deno + Pyodide)
+| Dimension | Assessment |
+|------|------|
+| **Isolation** | Language-level (WebAssembly sandbox) |
+| **Kernel** | No direct kernel access |
+| **Startup** | Sub-second |
+| **Overhead** | Low (in-process) |
+| **Use Case** | LLM REPL execution (DSPy RLM, code generation) |
+
+**How it works:** DSPy's RLM executes LLM-generated Python code inside a **Deno + Pyodide** WASM sandbox. The code runs in a WebAssembly environment with no direct filesystem or network access. Built-in tools (`llm_query`, `SUBMIT`, `print`) are the only escape hatches. The `SandboxSerializable` protocol (2026-03) extends this to support custom types like DataFrames — specifying imports (`pandas`, `pyarrow`) that the sandbox pre-loads.
+
+**Key distinction from infrastructure sandboxes:** WASM sandboxing isolates at the *language runtime* level rather than the OS/hypervisor level. It's lighter weight (no VM startup) but provides a narrower security boundary — suitable for code-generation REPL loops where the primary risk is uncontrolled I/O, not kernel exploits.
+
+> See [[concepts/dspy-rlm]] for the full RLM architecture and [[concepts/sandbox/in-process]] for the in-process sandbox pattern.
 
 ### Kata Containers (VM Partitioning via VMM)
 | Dimension | Assessment |

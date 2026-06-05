@@ -842,7 +842,7 @@
 - [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects — Impact of AI coding agents on personal productivity and attention. David Wilson's "thermonuclear ADHD amplifier" metaphor. Project proliferation syndrome (agents lowering activation energy from idea to working project). HN ADH
 - [[concepts/agent-runtime]] — Agent Runtime — Agent execution semantics: isolation primitives, sandboxing, runtime architecture, and the infrastructure layer between LLM and agent execution environment.
 - [[concepts/agent-sandbox-patterns]] — Agent Sandboxing architectural patterns. Browser Use's Pattern 1 (tool) vs Pattern 2 (agent). Google Agent Sandbox GA: 300 sandboxes/sec, 16x growth. Agent Substrate: new open-source project for millions of idle agents.
-- [[concepts/agent-sandboxing]]
+- [[concepts/agent-sandboxing]] — Agent Sandboxing: Isolation Technologies — Docker, gVisor, Firecracker, WASM (Deno+Pyodide), capability-based security spectrum
 - [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
 - [[concepts/agent-security-patterns]] — Agent Security Patterns — Security best practices for AI agent deployments: sandboxing, authentication, authorization, threat modeling
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
@@ -1249,7 +1249,7 @@
 - [[concepts/dspy-architecture]] — DSPy Architecture — Three Abstractions: Signatures, Modules, and Optimizers in the DSPy framework
 - [[concepts/dspy-modules]] — DSPy Modules Reference — ChainOfThought, ReAct, MultiChainComparison and other DSPy module patterns
 - [[concepts/dspy-optimization]] — DSPy Optimization — Teleprompters, Assertions, Fine-tuning strategies for DSPy programs
-- [[concepts/dspy-rlm]] — DSPy.RLM
+- [[concepts/dspy-rlm]] — DSPy.RLM (Recursive Language Model) — REPL-based context exploration, SandboxSerializable protocol for DataFrame support, InfiAgent-DABench benchmark (87% accuracy), Deno+Pyodide WASM sandbox
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/dual-process-theory]] — Dual Process Theory (AI) — Applying Kahneman's System 1/System 2 model to LLM reasoning frameworks
 - [[concepts/durable-execution]] — Durable Execution — State persistence and recovery patterns for long-running AI agent workflows

@@ -23,11 +23,12 @@ related:
   - long-context-coding-agents
   - concepts/codeact
 created: 2026-04-21
-updated: 2026-04-30
+updated: 2026-06-05
 sources:
   - https://dspy.ai/api/modules/RLM/
   - https://github.com/alexzhang13/rlm
   - https://dspy.ai/tutorials/rl_ai_program/
+  - https://kmad.ai/A-Data-Analysis-Agent-That-Lives-in-Your-Program
 ---
 
 # DSPy.RLM (Recursive Language Model)
@@ -606,6 +607,67 @@ Design-wise, **Option A (PTC in RLM)** is superior:
 - pydantic-ai-harness (Monty + CodeMode) is closest to this architecture in implementation
 
 The shortest implementation path: upgrade RLM environment's `tools` parameter from "a list of plain Python functions" to "a PTC tool collection with async support, allowed_callers, and automatic result filtering." This is achievable either as a DSPy.RLM change or as an independent implementation on pydantic-ai-harness.
+
+## DataFrame Support via SandboxSerializable Protocol
+
+RLM initially focused on strings as REPL variables, but the approach extends naturally to **structured data types like DataFrames**. A community PR (2026-03) introduces the `SandboxSerializable` protocol (`typing.Protocol`) for defining how custom types are exposed to the RLM sandbox.
+
+### Protocol Methods
+
+| Method | Purpose |
+|--------|---------|
+| `sandbox_setup` | Specify imports needed in the sandbox (e.g., `pandas`, `pyarrow`) |
+| `to_sandbox` | Serialize the object for the REPL |
+| `sandbox_assignment` | Define how the object is assigned as a REPL variable |
+| `rlm_preview` | Generate a preview shown to the LLM in its prompt |
+
+Any type implementing this protocol automatically inherits `to_repl_variable()`, standardizing type→REPL interaction. The sandbox runs on **Deno + Pyodide (WASM)**, which supports `pyarrow` and `pandas` out of the box.
+
+### DataFrame RLM Usage
+
+```python
+import pandas as pd, dspy
+from dataframe import DataFrame  # SandboxSerializable wrapper
+
+users = DataFrame(pd.read_parquet("users.parquet"))
+
+class CohortRetentionAnalysis(dspy.Signature):
+    """Analyze why user retention is dropping."""
+    users: DataFrame = dspy.InputField(desc="User profiles")
+    overall_churn_rate: float = dspy.OutputField()
+    worst_channel: str = dspy.OutputField()
+    key_finding: str = dspy.OutputField()
+
+rlm = dspy.RLM(CohortRetentionAnalysis, max_iterations=15)
+result = rlm(users=users)  # RLM iteratively explores the DataFrame
+```
+
+The LLM receives an `rlm_preview` (schema + sample rows) and iteratively writes pandas code to explore, filter, aggregate, and analyze the data — producing typed outputs without manual scripting.
+
+### InfiAgent-DABench Results
+
+Benchmarked against [InfiAgent-DABench](https://github.com/InfiAgent/InfiAgent-DABench) (257 data analysis questions, 68 CSV files):
+
+| Model | Accuracy | Avg Iterations | Avg Time |
+|-------|----------|----------------|----------|
+| Qwen 3.5 397B | **86.8%** | 2.8 | 24.4s |
+| MiniMax M2.7 | **86.4%** | 6.1 | 73.7s |
+
+Both models reach ~87% with the same generic solver — no special prompting per question type. Qwen is significantly more efficient (2.8 vs 6.1 iterations), suggesting better upfront planning vs MiniMax's exploratory approach. Tasks both struggle with tend to involve ambiguous ground truth (e.g., population vs sample standard deviation).
+
+> **Source**: Kevin Madura, "A Data Scientist RLM That Lives in Your Program" (2026-03-22). See [[raw/articles/2026-03-22_kmad_ai-data-scientist-rlm-dataframe]].
+
+### Implications for Data Analysis Agents
+
+This approach represents a middle ground between two existing paradigms:
+
+| Approach | Strengths | Weaknesses |
+|----------|-----------|------------|
+| **Coding Agent** (Claude Code, Codex) | Interactive, flexible | Brittle for pipelines, not programmable |
+| **RLM + DataFrame** | Inline, composable, typed outputs | Limited to sandbox-supported types |
+| **Traditional pandas script** | Deterministic, fast | No intelligence, manual logic |
+
+The RLM+DataFrame pattern is most valuable for **"inline intelligence"** — embedding data analysis into pipelines where you need LLM reasoning but want programmatic (not interactive) control. This connects to the broader [[concepts/dspy-rlm|RLM]] paradigm of treating data as symbolic objects the model can explore.
 
 ## Status & Known Issues
 
