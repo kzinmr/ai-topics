@@ -1,3 +1,24 @@
+## 2026-06-05 Active Crawl — ChatGPT Dreaming, Agent Arena, Enterprise AI Cost Management
+
+**Operation:** Active crawl discovered 3 trending AI topics not yet covered in wiki. Sources: blogwatcher RSS feed (last 3 days), HN Algolia cross-reference, wiki gap analysis.
+
+**Files created:**
+- `concepts/chatgpt-dreaming.md` — ChatGPT Dreaming (Memory Synthesis): OpenAI's background memory system V3 (June 4, 2026). Evolution from Saved Memories (Apr 2024) through Dreaming V0 (Apr 2025) to standalone V3. Architecture, three eval objectives, rollout details.
+- `concepts/agent-arena.md` — Agent Arena (Causal Agent Evaluation): Arena AI's new methodology treating agents as multi-component systems with causal tracing (τ̂). Five signals (Confirmed success, Praise vs complaint, Steerability, Bash recovery, Tool hallucination). Scale: 160K tasks, 2M tool calls, 40M LoC in 7 days. Cost-performance frontier analysis.
+- `concepts/enterprise-ai-cost-management.md` — Enterprise AI Tool Cost Management: Uber's $1,500/month per-tool cap on AI coding tools after blowing 2026 budget. ~$36K/year/engineer = ~11% of median comp. Simon Willison analysis contrasting with "tokenmaxxing."
+- `raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md` — Raw source article from OpenAI
+- `raw/articles/2026-06-04_arena-ai_agent-arena-methodology.md` — Raw source from Arena AI
+- `raw/articles/2026-06-03_simonwillison_uber-caps-ai-tool-costs.md` — Raw source from Simon Willison
+
+**Files updated:**
+- `entities/openai.md` — Added Dreaming V3 section (June 2026). Updated to 2026-06-05.
+- `entities/arena-ai.md` — Added Agent Arena / causal tracing section. Updated to 2026-06-05.
+- `entities/simon-willison.md` — Added Uber AI cost analysis entry to June 2026 Updates.
+- `index.md` — Added 3 new concept entries, updated counts (Total: 2260, Concepts: 949)
+
+**Skipped:** OpenAI Biodefense (raw article saved but JS-rendered page had minimal content; insufficient for standalone concept page).
+
+---
 ## 2026-06-05 Blog Wiki Ingest — AGI Economics, Gary Marcus Anthropic RSI, Daring Fireball MS Build
 - `concepts/agi-economics.md` — Created new concept page. AGI Economics: labor share, relational sector, optimal taxation, messy middle, von Neumann probes. Based on Dwarkesh Podcast with Alex Imas (DeepMind) and Phil Trammell (Epoch). 
 - `entities/dwarkesh-patel.md` — Added Jun 2026 Imas/Trammell interview to career timeline. Added source reference and [[concepts/agi-economics]] cross-link. Updated to 2026-06-05.

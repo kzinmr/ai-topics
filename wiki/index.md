@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 2254 | Indexed entries: 1719 | Concepts: 946 | Entities: 773
+> Last updated: 2026-06-05 | Total pages: 2260 | Indexed entries: 1722 | Concepts: 949 | Entities: 773
 
 ## Entities (773 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -1086,6 +1086,7 @@
 - [[concepts/chartqa]] — ChartQA — Chart understanding QA benchmark. Real charts sourced from Statista/Pew/OECD. 32.7K QA pairs. Noisy test data is a problem.
 - [[concepts/chatferry]] — ChatFerry — TypeScript CLI for coding agents to prompt ChatGPT/Claude through browser sessions without API keys. Uses Playwright + Chromium, daemon with 3 concurrent prompts per provider, markdown exports. Created by [[entities/shloked]].
 - [[concepts/chatgpt-app-design-patterns]] — ChatGPT App Design Patterns — UX patterns for great ChatGPT apps: streaming, tool use visualization, error handling. 15 practical lessons from Alpic. GPT-5.4 frontend design with canvas.
+- [[concepts/chatgpt-dreaming]] — ChatGPT Dreaming (Memory Synthesis) — OpenAI's background memory system (Dreaming V3, June 2026). Evolution: Saved Memories (Apr 2024) → Dreaming V0 (Apr 2025) → Dreaming V3 standalone (Jun 2026). Compute-efficient architecture for hundreds of millions of users. Three eval objectives: context carry-forward, preference following, temporal currency.
 - [[concepts/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming Memory System — Async consolidation pipeline (3-tier: Buffer/Consolidation Engine/Long-Term Index), knowledge graph, temporal decay, 73% hallucination reduction
 - [[concepts/chatgpt-images-2.0]] — ChatGPT Images 2.0: OpenAI's second-generation image generation feature (GPT Image 2).
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson

@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-27
+updated: 2026-06-05
 tags:
   - company
   - model
@@ -23,6 +23,7 @@ sources:
   - raw/articles/openai.com--signals-research-2026q1-update--45f994a1.md
   - raw/newsletters/2026-05-15-codex-goes-everywhere.md
   - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
+  - raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md
 ---
 
 # OpenAI
@@ -195,6 +196,19 @@ Next-generation voice AI model. Key features:
 - **Streaming Transcription**: Real-time text conversion of speech
 - Positioned as a new foundation model for voice interaction
 
+
+### Dreaming V3 — Memory Synthesis (June 2026)
+
+On June 4, 2026, OpenAI launched **Dreaming V3**, a significantly improved memory system that graduates from a supplemental system to a standalone memory architecture for ChatGPT:
+
+- **Evolution**: Saved memories (Apr 2024) → Dreaming V0 + saved memories (Apr 2025) → Dreaming V3 standalone (Jun 2026)
+- **Architecture**: Background process that automatically curates and synthesizes memory state from chat history, without requiring explicit "remember" instructions
+- **Evaluation**: Three objectives — carry forward useful context, follow preferences/constraints, stay current over time
+- **Scale**: Compute-efficient design for hundreds of millions of users and multi-year time horizons
+- **Reviewability**: Users can review memory summaries, add/update information, and instruct ChatGPT on what topics to surface
+- **Rollout**: Plus and Pro users (US), expanding to additional countries and Free/Go users
+
+See [[concepts/chatgpt-dreaming]] for full details.
 
 ### Daybreak — Cybersecurity Initiative (May 2026)
 
