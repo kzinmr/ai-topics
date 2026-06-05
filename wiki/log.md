@@ -10,7 +10,7 @@
 - `transcripts/2026-04-10_state-of-agentic-coding-ep5.md` + `.en.vtt` (2,895 segments, 99K chars)
 - `transcripts/2026-05-11_state-of-agentic-coding-ep6.md` + `.en.vtt` (2,753 segments, 100K chars)
 
-**index.md updated:** Transcripts section expanded 13 → 19 pages
+**index.md updated:** Transcripts section expanded 13 → 18 pages
 
 ---
 
