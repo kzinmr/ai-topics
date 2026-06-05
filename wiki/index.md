@@ -1778,7 +1778,7 @@
 - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
 - [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/llm-search-judge]], [[concepts/llm-as-judge]]
 
-## Transcripts (26 pages)
+## Transcripts (32 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
 - [[transcripts/2024-12-13_ilyasutskever-transcript]] — Sequence to Sequence Learning with Neural Networks: What a Decade — Ilya Sutskever (NeurIPS 2024). Full transcript. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]
@@ -1806,4 +1806,10 @@
 - [[transcripts/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]] — RAG is the What, Agentic Search is the How — Doug Turnbull. Companion: [[raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]]
 - [[transcripts/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]] — Why 2026 is The Year of Agentic Search — Doug Turnbull and Jo Kristian Bergum (Vespa.ai). Companion: [[raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]]
 - [[transcripts/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf]] — AutoReSEARCH — Ranking Coded by Agents (HaystackConf 2026). RLM approach for search ranking. Companion: [[raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf]]
+- [[transcripts/2024-04-11_hyungwonchung-shaping-future-ai-transformer]] — Shaping the Future of AI from the History of Transformer — Hyung Won Chung (Stanford CS25). Scaling hypothesis, bitter lesson. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
+- [[transcripts/2024-12-13_ilyasutskever-seq2seq-decade]] — Seq2Seq: What a Decade — Ilya Sutskever (NeurIPS 2024). Scaling hypothesis, pretraining, superintelligence. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]
+- [[transcripts/2026-02-28_youtube_openclaw-from-scratch-workshop]] — Building Your Own OpenClaw from Scratch — Vanishing Gradients workshop. Agent harness, self-improving loops. Companion: [[raw/articles/2026-02-28_youtube_openclaw-from-scratch-workshop]]
+- [[transcripts/2026-03-28_youtube_deep-research-agent-workshop]] — Build Your Own Deep Research Agent — Ivan Leo (Google DeepMind) workshop. Phase swapping, parallel sub-agents. Companion: [[raw/articles/2026-03-28_youtube_deep-research-agent-workshop]]
+- [[transcripts/2026-05-24_lenny-podcast-dan-shipper-ai-paradox]] — Lenny's Podcast — Dan Shipper: The AI Paradox. 12 predictions on AI future. Companion: [[raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox]]
+- [[transcripts/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal]] — Deploy a Hermes Agent with Fly, Modal, OpenRouter — Matt Palmer. Companion: [[raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal]]
 

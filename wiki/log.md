@@ -1,3 +1,21 @@
+## 2026-06-05 残り6本 — YouTube字幕取得（Vanishing Gradients, Sutskever, Lenny, Matt Palmer）
+
+**Operation:** yt-dlpで残り6本の字幕取得、`wiki/transcripts/` に配置
+
+**Files created (12 files: 6 .md + 6 .vtt):**
+- `transcripts/2024-04-11_hyungwonchung-shaping-future-ai-transformer.md` + `.en.vtt` (908 segments, 34K chars)
+- `transcripts/2024-12-13_ilyasutskever-seq2seq-decade.md` + `.en.vtt` (557 segments, 19K chars)
+- `transcripts/2026-02-28_youtube_openclaw-from-scratch-workshop.md` + `.en.vtt` (2,670 segments, 97K chars)
+- `transcripts/2026-03-28_youtube_deep-research-agent-workshop.md` + `.en.vtt` (2,776 segments, 93K chars)
+- `transcripts/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md` + `.en.vtt` (2,806 segments, 94K chars)
+- `transcripts/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md` + `.en.vtt` (1,677 segments, 59K chars)
+
+**index.md updated:** Transcripts section expanded 26 → 32 pages
+
+**Final status:** All YouTube-sourced articles in raw/articles/ now have companion transcripts in wiki/transcripts/. 0 remaining.
+
+---
+
 ## 2026-06-05 Doug Turnbull talks (5本) — YouTube字幕取得
 
 **Operation:** yt-dlpでDoug Turnbull系列5本の字幕取得、`wiki/transcripts/` に配置
