@@ -172,4 +172,4 @@ model.fit(X, y)
 - **Course:** [Cheat at Search (Maven)](https://maven.com/softwaredoug/cheatatsearch)
 - **Author:** [softwaredoug.com](http://softwaredoug.com)
 - **Related raw articles:** [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg]], [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]], [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents]]
-- **Lecture transcript:** [[raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture]] (p7+ deep dive: pairwise, decision tree, ELO)
+- **Lecture transcript:** [[transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture]] (p7+ deep dive: pairwise, decision tree, ELO)

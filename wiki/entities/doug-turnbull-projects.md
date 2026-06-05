@@ -46,7 +46,7 @@ Live, cohort-based training course on search engineering with LLMs and agents. R
 - Part 2: [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search|LLM Query Understanding]] — structured attribute extraction from free-text queries
 - Part 3: [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents|Steering Lost Agents]] — agentic design patterns for search
 - Part 4: [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge|LLM as a Judge]] — automated search relevance evaluation with LLMs (see also [[concepts/llm-search-judge]])
-- Part 5: [[raw/articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search|Long Running Search Agents]] — persistent agent strategies, context compaction, frontier prompts. Companion: [[raw/transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]]
+- Part 5: [[raw/articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search|Long Running Search Agents]] — persistent agent strategies, context compaction, frontier prompts. Companion: [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]]
 
 ### Consulting & Training
 Turnbull offers $12,000 team training courses (up to 12 participants) covering:

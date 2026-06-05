@@ -12,7 +12,7 @@ tags:
   - open-source
   - sports-analytics
 sources:
-  - raw/transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
+  - transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
   - https://www.pymc-labs.com/team-detail/christopher-fonnesbeck
   - https://github.com/fonnesbeck
 ---

@@ -27,9 +27,9 @@ tags:
 **Date:** May 14, 2026 (uploaded)
 **Duration:** 47:20
 **Companion notebook:** [search-experiments repo](https://github.com/softwaredoug/search-experiments)
-**Related Cheat at Search lectures:** [[raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture|Lesson 7: Coding Agents & Auto Research]], [[raw/transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture|Lesson 5: Long Running Search Agents]]
+**Related Cheat at Search lectures:** [[transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture|Lesson 7: Coding Agents & Auto Research]], [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture|Lesson 5: Long Running Search Agents]]
 
-> **Note:** This is a conference version of concepts Doug teaches in the Cheat at Search Maven course. The Cheat at Search Lesson 7 (June 4, 2026) covers the same material in a classroom setting with Q&A. See [[raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture]] for the course version.
+> **Note:** This is a conference version of concepts Doug teaches in the Cheat at Search Maven course. The Cheat at Search Lesson 7 (June 4, 2026) covers the same material in a classroom setting with Q&A. See [[transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture]] for the course version.
 
 ---
 

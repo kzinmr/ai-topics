@@ -31,7 +31,7 @@ sources:
   - raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack.md
   - raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search.md
   - raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level.md
-  - raw/transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search.md
+  - transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search.md
   - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
   - raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
   - raw/papers/2026-05-03_2605.05242_direct-corpus-interaction.md
@@ -656,7 +656,7 @@ Sources: [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]]
 
 ### Berryman's 5-Level Agentic Search Maturity Model (January 2026)
 
-In Vanishing Gradients Ep. 68 [[raw/transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], John Berryman ([[entities/john-berryman]]) presented a **practical maturity model** for incrementally adopting AI in search applications. Published in full detail on the Arcturus Labs blog [[raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level]], the model provides a low-risk roadmap from traditional search to conversational AI agents.
+In Vanishing Gradients Ep. 68 [[transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], John Berryman ([[entities/john-berryman]]) presented a **practical maturity model** for incrementally adopting AI in search applications. Published in full detail on the Arcturus Labs blog [[raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level]], the model provides a low-risk roadmap from traditional search to conversational AI agents.
 
 #### Core Philosophy
 
@@ -704,7 +704,7 @@ Berryman's model is a **practitioner adoption roadmap**, not an architectural ta
 | Risk model | Architectural complexity | Business UX risk |
 | Key metric | NDCG, recall, accuracy | Click-through rate, conversion, bounce rate |
 
-Sources: [[raw/transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level]]
+Sources: [[transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level]]
 
 ### Revealed Preferences: The Fundamental Limit of LLM-as-Judge (November 2025 — January 2026)
 
@@ -757,7 +757,7 @@ Turnbull's recommendation: reposition LLMs from *judges* to *analysts*:
 
 This practitioner critique complements the academic best practices documented in [[concepts/llm-as-judge]]. Where the academic literature focuses on *how* to do LLM-as-judge well (rubric design, bias mitigation, inter-rater reliability), Turnbull and Berryman question *whether* LLM-as-judge is appropriate for search evaluation at all — arguing that behavioral signals (clicks, purchases, dwell time) are the only reliable measure of what users actually want.
 
-Sources: [[raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut]], [[raw/transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[concepts/llm-as-judge]]
+Sources: [[raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut]], [[transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[concepts/llm-as-judge]]
 
 ### Discussion: "Will Agents Replace Search Teams?" (January 2026)
 

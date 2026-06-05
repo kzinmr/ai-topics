@@ -17,7 +17,7 @@ aliases:
 sources:
   - raw/newsletters/2026-05-20-agent-harness-ipynb.md
   - https://open.substack.com/pub/hugobowne/p/agent-harnessipynb
-  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
 ---
 
 # Vincent Warmerdam (@koaning)

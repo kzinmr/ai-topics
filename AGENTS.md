@@ -34,6 +34,7 @@
 │   ├── comparisons/                 ← Layer 2: 横断比較ページ
 │   ├── queries/                     ← Layer 2: 再利用可能な調査・回答
 │   └── events/                      ← Layer 2: 重要イベント・リリース
+├── transcripts/                     ← YouTube文字起こし（raw/から分離）
 ├── config/
 │   ├── feeds/
 │   │   ├── x-accounts.yaml          ← 追跡対象X/Twitterアカウント一覧
@@ -53,7 +54,7 @@
 
 | 層 | ディレクトリ | 変更可能？ | 内容 |
 |---|---|---|---|
-| **Layer 1** | `raw/` | ❌ 不変 | ソース記事・論文・トランスクリプト |
+| **Layer 1** | `raw/` `transcripts/` | ❌ 不変 | ソース記事・論文・トランスクリプト |
 | **Layer 2** | `entities/` `concepts/` `comparisons/` `queries/` `events/` | ✅ Agentが管理 | 構造化Wikiページ |
 | **Layer 3** | `SCHEMA.md` `index.md` | ✅ 規約更新時のみ | スキーマ・ナビゲーション |
 
@@ -63,7 +64,7 @@
 - **最低2つの外部wikilink**: 新規ページは最低2つの他ページへリンク
 - **index.md 即時更新**: ページ作成・更新後は必ずindex.mdに反映
 - **log.md 即時追記**: 全操作をappend-onlyで記録
-- **`raw/` 内のファイルを編集しない**: ソース素材は不変
+- **`raw/` と `transcripts/` 内のファイルを編集しない**: ソース素材は不変
 - **200行以上で分割**: 長大ページはサブページに分割
 - **既存ページ優先**: 重複ページを作る前に `index.md` と関連ページを確認し、原則として既存ページへ統合
 - **矛盾を消さない**: 新情報が旧情報と衝突する場合は、古い解釈を削除せず日付・出典つきで contested / superseded として残す

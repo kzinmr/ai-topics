@@ -254,11 +254,11 @@ Pandas extension array for BM25-powered lexical search. 304 stars. Makes search 
 Live, cohort-based training course on search engineering with LLMs and agents. Rated 4.7/5 from 74+ reviews. Covers information retrieval as an agentic process, LLM query understanding, BM25 + lexical retrieval, embedding retrieval, hybrid search, evaluation/NDCG, and agentic search. Priced at $1,300 per student with free "Essentials" lightning lessons available.
 
 #### Lecture Transcripts (wiki)
-- [[raw/transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Lesson 2: LLM Query Understanding]]
-- [[raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture|Lesson 3: Steering Lost Agents]]
-- [[raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture|Lesson 4: LLM as Judge]]
-- [[raw/transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture|Lesson 5: Long Running Search Agents]]
-- [[raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture|Lesson 7: Coding Agents & Auto Research]]
+- [[transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Lesson 2: LLM Query Understanding]]
+- [[transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture|Lesson 3: Steering Lost Agents]]
+- [[transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture|Lesson 4: LLM as Judge]]
+- [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture|Lesson 5: Long Running Search Agents]]
+- [[transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture|Lesson 7: Coding Agents & Auto Research]]
 
 ### local-llm-judge (softwaredoug/local-llm-judge)
 Python project enabling local LLMs to serve as search relevance judges. 28 stars. Runs hundreds of relevance judgment pairs per minute on a MacBook, democratizing search evaluation without cloud API costs.

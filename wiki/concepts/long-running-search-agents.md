@@ -223,4 +223,4 @@ resp, inputs = harness(
 ## Related Raw Articles
 
 - [[raw/articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search]] — This lecture (Google Slides source)
-- [[raw/transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Lecture transcript (with audience Q&A on goal mode, context vs memory, access control, taxonomy)
+- [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Lecture transcript (with audience Q&A on goal mode, context vs memory, access control, taxonomy)

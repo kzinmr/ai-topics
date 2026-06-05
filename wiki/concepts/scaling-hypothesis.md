@@ -17,9 +17,9 @@ tags:
 sources:
   - raw/articles/2020-05-28_gwern-scaling-hypothesis.md
   - raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer.md
-  - raw/articles/2024-04-11_hyungwonchung-transcript.md
+  - transcripts/2024-04-11_hyungwonchung-transcript.md
   - raw/articles/2024-12-13_ilyasutskever-seq2seq-decade.md
-  - raw/articles/2024-12-13_ilyasutskever-transcript.md
+  - transcripts/2024-12-13_ilyasutskever-transcript.md
   - raw/articles/2024-12-16_danielhanchen-post-pretraining.md
   - https://gwern.net/scaling-hypothesis
   - https://www.youtube.com/watch?v=orDKvo8h71o
@@ -204,7 +204,7 @@ Chung's talk demonstrates that the Scaling Hypothesis is not just about model si
 
 Sources:
 - [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]] — Slides summary
-- [[raw/articles/2024-04-11_hyungwonchung-transcript]] — Full talk transcript
+- [[transcripts/2024-04-11_hyungwonchung-transcript]] — Full talk transcript
 - [Stanford CS25: Hyung Won Chung](https://www.youtube.com/watch?v=orDKvo8h71o) (YouTube)
 
 ## Ilya Sutskever: The End of Pretraining (NeurIPS 2024)
@@ -256,7 +256,7 @@ This represents an important evolution of the scaling hypothesis from its 2020 f
 
 Sources:
 - [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]] — Talk summary
-- [[raw/articles/2024-12-13_ilyasutskever-transcript]] — Full transcript
+- [[transcripts/2024-12-13_ilyasutskever-transcript]] — Full transcript
 - [NeurIPS 2024: Ilya Sutskever](https://www.youtube.com/watch?v=1yvBqasHLZs) (YouTube)
 
 ## Post-Pretraining Playbook: Daniel Han's Analysis

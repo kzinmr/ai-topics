@@ -1,3 +1,30 @@
+## 2026-06-05 YouTube文字起こしファイルの整理・移動
+
+**Operation:** `wiki/raw/transcripts/` → `wiki/transcripts/` へ移動、`wiki/raw/articles/` の `type: transcript` ファイルも移動
+
+**Files moved (13 files):**
+- `raw/transcripts/` → `transcripts/` (11 .md + 1 .vtt):
+  - `2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search.md`
+  - `2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md`
+  - `2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md`
+  - `2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture.md`
+  - `2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md`
+  - `2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md`
+  - `2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
+  - `2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md`
+  - `2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.en.vtt`
+  - `2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture.md`
+  - `2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md`
+- `raw/articles/` → `transcripts/` (2 files, `type: transcript`):
+  - `2024-04-11_hyungwonchung-transcript.md`
+  - `2024-12-13_ilyasutskever-transcript.md`
+
+**References updated:** 35 files (`raw/transcripts/` → `transcripts/`), 1 file (`raw/articles/...transcript` → `transcripts/...transcript`), 2 internal refs in transcript files
+
+**AGENTS.md updated:** directory tree, Layer 1 table, immutability rule
+
+---
+
 ## 2026-06-05 Article ingestion — "The Agentic Software Factory" (Hugo Bowne-Anderson)
 
 **Source:** https://hugobowne.substack.com/p/the-agentic-software-factory (Vanishing Gradients, May 27, 2026)
@@ -83,7 +110,7 @@
 - **Raw article**:  — Full talk transcript with structured sections covering: auto-research origins (Karpathy), dependency injection pattern for agent-coded rankers, overfitting problem (query-specific memorization), three guardrails (LLM overfit detection, patch size limits, train/validation/holdout splits), focused composition (narrow scope per round), MS Marco BM25 experiment (bigram discovery), and the Erdos analogy.
 - **Updated entities**:  — Added HaystackConf talk entry
 - **Updated concepts**:  — Added HaystackConf source;  — Added cross-references to HaystackConf talk and agent-driven-ranker-optimization;  — Added HaystackConf source
-- **Relation**: Conference version of Cheat at Search Lesson 7 (RLM and Auto Research). Complements existing raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md (classroom Q&A version).
+- **Relation**: Conference version of Cheat at Search Lesson 7 (RLM and Auto Research). Complements existing transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md (classroom Q&A version).
 
 ## 2026-06-04 raw-backlog-ingest | 5-article batch: MAI-TechReport (already captured), Ed Zitron ROI (source add), 3 skips (PG, Luu, security)
 
@@ -341,9 +368,9 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 - **Updated**: `SCHEMA.md` — Added `sparse-attention` tag to Models taxonomy.
 ## [2026-06-03] Rename | Cheat at Search Part 4 transcript date alignment
 
-- **Renamed**: `raw/transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` → `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Date aligned with slide date (May 28, 2026).
+- **Renamed**: `transcripts/2026-06-03_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` → `transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Date aligned with slide date (May 28, 2026).
 - **Updated frontmatter**: `date: 2026-05-28` (date_ingested unchanged)
-- **Updated references**: `index.md`, `log.md`, `concepts/llm-search-judge.md`, `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md`, `raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md`
+- **Updated references**: `index.md`, `log.md`, `concepts/llm-search-judge.md`, `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md`, `transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md`
 
 ## [2026-06-03] Create | A2A Agent Protocol concept page (Active Crawl)
 
@@ -354,18 +381,18 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 
 - **Renamed**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-llm-as-judge.md` → `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md` — Date corrected from May 27 to May 28, 2026 per user request (actual lecture date).
 - **Updated frontmatter**: `date: 2026-05-28`
-- **Updated references**: `index.md`, `log.md`, `entities/doug-turnbull-projects.md`, `concepts/llm-search-judge.md`, `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
+- **Updated references**: `index.md`, `log.md`, `entities/doug-turnbull-projects.md`, `concepts/llm-search-judge.md`, `transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md`
 
 ## [2026-06-03] Ingest | Cheat at Search Part 2 lecture transcript (LLM Query Understanding)
 
-- **Created**: `raw/transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture.md` — Lecture transcript for Part 2: LLM Query Understanding. Covers: query understanding definition, managed vocabularies, embedding collapse/hubness, 5 QU approaches (rules/historical/ML/embedding/prompt-based), synonym extraction with Pydantic structured outputs (gpt-4.1-nano), category classification (few-label and deep multi-label), dynamic Pydantic enums for cost optimization (search-then-classify), hypothetical categories (hallucinated → entity resolution via embeddings), ground truth construction from eval data, category precision ≠ NDCG insight, semantic caching, layered search approach.
+- **Created**: `transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture.md` — Lecture transcript for Part 2: LLM Query Understanding. Covers: query understanding definition, managed vocabularies, embedding collapse/hubness, 5 QU approaches (rules/historical/ML/embedding/prompt-based), synonym extraction with Pydantic structured outputs (gpt-4.1-nano), category classification (few-label and deep multi-label), dynamic Pydantic enums for cost optimization (search-then-classify), hypothetical categories (hallucinated → entity resolution via embeddings), ground truth construction from eval data, category precision ≠ NDCG insight, semantic caching, layered search approach.
 - **Updated**: `raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search.md` — Added cross-reference to lecture transcript.
 - **Updated**: `index.md` — Added "Raw Transcripts" section with transcript entry.
 
 ## [2026-06-03] Ingest | Cheat at Search Part 4 lecture transcript → update llm-search-judge concept
 
-- **Raw article**: `raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Live lecture transcript (Q&A/discussion) for Part 4: LLM as a Judge. Covers pairwise→decision tree pipeline (73% individual → 91% ensemble precision), ELO-based pointwise recovery, recall expansion via diverse BM25 calls, domain adaptation guidance, implicit vs explicit judgment tradeoffs.
-- **Moved**: from `raw/articles/` to `raw/transcripts/` — properly categorized as transcript type.
+- **Raw article**: `transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md` — Live lecture transcript (Q&A/discussion) for Part 4: LLM as a Judge. Covers pairwise→decision tree pipeline (73% individual → 91% ensemble precision), ELO-based pointwise recovery, recall expansion via diverse BM25 calls, domain adaptation guidance, implicit vs explicit judgment tradeoffs.
+- **Moved**: from `raw/articles/` to `transcripts/` — properly categorized as transcript type.
 - **Updated**: `raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md` — Added cross-reference to lecture transcript.
 - **Updated**: `concepts/llm-search-judge.md` — Added: naive judge "bitter lesson", decision tree precision/coverage table (91%/75%), cheap local models (Qwen), feature-as-opportunity-analysis, ELO conversion section, recall expansion section, domain adaptation guidance (legal RAG Q&A), implicit vs explicit judgment section. Updated sources and references.
 
@@ -6144,7 +6171,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 
 ## [2026-06-03] Ingest | Cheat at Search Part 3 lecture transcript (Steering Lost Agents)
 
-- **Created**: `raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md` — Lecture transcript for Part 3: Steering Lost Agents. Covers: harness design patterns, tool calling loops, carrots and sticks steering model, file system-like tools (ls/cat/grep) on Wayfair dataset, Ralph loop, validators/stoppers, LLM judge validation, relevance feedback, few-shot priming, query expansion/skills, tool guards (ToolState/disallowing repeated queries), sub-agent delegation, BEAM search for exhaustive exploration. NDCG results: BM25=0.541, agent+FS tools greater than BM25, +few-shot further improvement, +tool guards meaningful bump.
+- **Created**: `transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md` — Lecture transcript for Part 3: Steering Lost Agents. Covers: harness design patterns, tool calling loops, carrots and sticks steering model, file system-like tools (ls/cat/grep) on Wayfair dataset, Ralph loop, validators/stoppers, LLM judge validation, relevance feedback, few-shot priming, query expansion/skills, tool guards (ToolState/disallowing repeated queries), sub-agent delegation, BEAM search for exhaustive exploration. NDCG results: BM25=0.541, agent+FS tools greater than BM25, +few-shot further improvement, +tool guards meaningful bump.
 - **Updated**: `raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md` — Added cross-reference to lecture transcript (frontmatter + body).
 - **Updated**: `wiki/index.md` — Raw Transcripts section (2 to 3 pages), added Part 3 transcript entry.
 
@@ -6254,7 +6281,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 ## 2026-06-04 Cheat at Search Lesson 7 Transcript — Coding Agents and Auto Research
 
 - **Source:** Doug Turnbull Cheat at Search Maven course, Lesson 7 lecture transcript (Jun 4, 2026)
-- **New transcript:** [[raw/transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture]]
+- **New transcript:** [[transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture]]
 - **Topics covered:** Recursive Language Models (RLMs) as Python REPL state management, auto-research for search ranking code optimization, overfitting guardrails (LLM-based detection, patch size limits, training/validation split), agent-coded reranker iteration
 - **Cross-references added:** [[entities/doug-turnbull]], [[concepts/rlm-recursive-language-models]], [[concepts/karpathy-loop]], [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms]]
 

@@ -13,11 +13,11 @@ tags:
   - developer-tooling
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
-  - raw/transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
   - raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md
-  - raw/transcripts/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
-  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
-  - raw/transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
+  - transcripts/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
+  - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
   - raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md
 ---
 

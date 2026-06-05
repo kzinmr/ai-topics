@@ -13,7 +13,7 @@ tags:
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/newsletters/2026-05-25-the-future-of-agentic-data-science.md
-  - raw/transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
   - raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md
   - https://twiecki.io/
   - https://www.pymc-labs.com/team-detail/thomas-wiecki

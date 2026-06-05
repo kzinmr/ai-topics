@@ -14,7 +14,7 @@ aliases:
   - Nicolay Gerold
   - nicolaygerold
 sources:
-  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - https://www.nicolaygerold.com/
   - https://github.com/nicolaygerold
   - https://ampcode.com/

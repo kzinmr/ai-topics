@@ -15,7 +15,7 @@ tags:
   - agent-skills
   - youtube
 sources:
-  - raw/transcripts/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
+  - transcripts/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
 ---
 
 

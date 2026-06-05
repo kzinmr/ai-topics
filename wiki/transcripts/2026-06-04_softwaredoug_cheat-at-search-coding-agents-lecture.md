@@ -27,7 +27,7 @@ tags:
 **Context:** Live lecture for the Cheat at Search Maven course. Lesson 7 — Recursive Language Models (RLMs) and Auto Research for search ranking.
 **Companion slides:** [[articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms|Search with Agents Lesson 6: Recursive Language Models]]
 **Companion course:** [Cheat at Search (Maven)](https://maven.com/softwaredoug/cheatatsearch)
-**Prior lectures:** [[raw/transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture|Lesson 5: Long Running Search Agents]], [[raw/transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture|Lesson 4: LLM as Judge]], [[raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture|Lesson 3: Steering Lost Agents]], [[raw/transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Lesson 2: LLM Query Understanding]]
+**Prior lectures:** [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture|Lesson 5: Long Running Search Agents]], [[transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture|Lesson 4: LLM as Judge]], [[transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture|Lesson 3: Steering Lost Agents]], [[transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Lesson 2: LLM Query Understanding]]
 
 ---
 

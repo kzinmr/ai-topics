@@ -13,10 +13,10 @@ tags:
   - content-creator
 sources:
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
-  - raw/transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
-  - raw/transcripts/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
-  - raw/transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
-  - raw/transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
+  - transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - transcripts/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
+  - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
   - https://hugobowne.substack.com/p/the-agentic-software-factory
 ---
 

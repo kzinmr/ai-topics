@@ -14,7 +14,7 @@ tags:
   - tool-use
 sources:
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
-  - raw/transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
   - https://hugobowne.substack.com/p/the-agentic-software-factory
 ---
 

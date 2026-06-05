@@ -4,7 +4,7 @@ type: raw-article
 source: https://docs.google.com/presentation/d/1N7WqZ7vVgh60qi7Tt269XPXXPzrHb4cqvXvAAWbqqeM
 author: Doug Turnbull (@softwaredoug)
 date: 2026-05-27
-lecture_transcript: raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md
+lecture_transcript: transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture.md
 tags:
   - agentic-search
   - agent-steering
@@ -18,7 +18,7 @@ tags:
 
 **Source:** Google Slides presentation by SoftwareDoug LLC (65 slides)
 **Context:** Part 3 of the Cheat at Search series. Part 1 covered NDCG/search evaluation. Part 2 covered LLM Query Understanding. This part covers agent steering patterns.
-**Lecture transcript:** [[raw/transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture|Cheat at Search — Steering Lost Agents (Lecture Transcript)]]
+**Lecture transcript:** [[transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture|Cheat at Search — Steering Lost Agents (Lecture Transcript)]]
 
 ---
 

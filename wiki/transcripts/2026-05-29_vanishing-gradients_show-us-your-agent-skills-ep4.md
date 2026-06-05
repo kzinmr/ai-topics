@@ -21,7 +21,7 @@ tags: [ai-agents, agent-skills, agent-harness, ai-safety, code-review, context-e
 - **Hosts**: Hugo Bowne-Anderson, Thomas Wiecki (PyMC Labs)
 - **Guests**: Hamel Husain (Parlance Labs), Chris Fonnesbeck (PyMC Labs, veteran analyst for Phillies/Yankees/Brewers), Doug Turnbull (led Search at Shopify and Reddit), John Berryman (interlocutor, Arcturus Labs)
 - **GitHub**: https://github.com/hugobowne/show-us-your-agent-skills
-- **Full transcript**: `raw/transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.en.vtt`
+- **Full transcript**: `transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.en.vtt`
 
 ## Episode Overview
 

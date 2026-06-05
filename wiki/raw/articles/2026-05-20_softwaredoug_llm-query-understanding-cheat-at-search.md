@@ -22,7 +22,7 @@ tags:
 **Context:** Guest lecture for Turnbull & Trey Grainger's AI-powered search class, May 2026
 **Source:** [Google Slides](https://docs.google.com/presentation/d/1sAmb4NoDOFWXM3WiQGmgbU4e0X5Za6gAMbv1coYLYuw/edit)
 **Companion course:** [Cheat at Search (Maven)](https://maven.com/softwaredoug/cheatatsearch) — rated 4.7/5 from 74+ reviews
-**Lecture transcript:** [[raw/transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Cheat at Search — LLM Query Understanding (Lecture Transcript)]]
+**Lecture transcript:** [[transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Cheat at Search — LLM Query Understanding (Lecture Transcript)]]
 
 ## Goals
 
