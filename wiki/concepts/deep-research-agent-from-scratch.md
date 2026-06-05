@@ -1,7 +1,7 @@
 ---
 title: "Deep Research Agent from Scratch"
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-06-05
 type: concept
 tags:
   - deep-research
@@ -14,6 +14,7 @@ aliases: [build-your-own-deep-research-agent, deep-research-from-scratch, resear
 sources:
   - raw/articles/2026-03-28_youtube_deep-research-agent-workshop.md
   - raw/articles/2026-03-28_github_deep-research-agent-readme.md
+  - transcripts/2026-03-28_youtube_deep-research-agent-workshop.md
 ---
 
 # Deep Research Agent from Scratch
@@ -235,3 +236,70 @@ Step 10 agent output example -> [`airpods_report.md`](https://github.com/hugobow
 - [GitHub: build-your-own-deep-research-agent](https://github.com/hugobowne/build-your-own-deep-research-agent) - 10-step companion code
 - [[entities/hugo-bowne-anderson]] - Host, Vanishing Gradients
 - [[entities/ivan-leo]] - Co-host, Google DeepMind (ex-Manus)
+
+## Transcript Insights (Mar 2026 Workshop)
+
+### Ivan Leo on When Deep Research Makes Sense
+
+Drawing from his experience at Manus/Manifold, Ivan explained the decision framework for deep research vs. simpler agents:
+
+> *"The most important thing to think about is what is the metric that matters the most for your users. For customer service support agents, really what they want is something that can quickly retrieve the relevant data, answer very quickly. And honestly, for something that's just saying, 'Hey, what are your opening hours?' — that's a single-turn sort of agent."*
+
+Deep research is appropriate when the search path **evolves during exploration** — you don't know upfront how many sources you need or what questions to ask. For tasks where the path is known (e.g., generate an email reply, check opening hours), a lightweight workflow with 2-3 tool calls is sufficient.
+
+### Meta-Prompting: Using Gemini to Improve Its Own System Prompts
+
+A key technique Ivan demonstrated was using the LLM to iteratively improve its own instructions:
+
+> *"A lot of the prompt [from step 8 to step 9] got a lot more detail. A lot of it was me just asking Gemini, 'Hey, here are some examples of writing I like. You try to do a simple rewrite.' And then I would basically say, 'Based on the initial information that you understood, the final result that I wanted, how could we make our instructions clearer? How could we provide better examples?' And then Gemini actually gave some great examples."*
+
+This technique extends to tool design: Ivan recommended asking the model what tool descriptions it needs, what information is missing from the system prompt, and how to describe tools more effectively. This was not feasible even a year prior to the workshop.
+
+### Context vs. Capabilities Framework
+
+Ivan's mental model (attributed to Jason Liu) for thinking about agent design:
+
+- **Context** = information available in the prompt (e.g., the current date is in the system prompt)
+- **Capabilities** = tools the model can call to obtain information (e.g., a bash tool to run `date`)
+
+> *"If you ask the model, 'Hey, what's the date today?' And it doesn't have the date in the prompt or a bash tool to run it on your local computer, it can never really answer the question. That's a capability. A capability is a tool it can execute to get the date. And a context would be, well, the date is in the prompt."*
+
+For deep research, this means thinking carefully about what context the planning agent needs vs. what capabilities (search tools, file tools) the execution sub-agents need.
+
+### "Spend Today for the Models of Tomorrow"
+
+Ivan's philosophy on model selection — inverting the classical ML approach of starting with baselines:
+
+> *"A lot of people try to apply those same concepts [from classical ML]. Really what you want to investigate when it comes to building agents is whether or not this task is possible for a language model to create. Often times you can do a lot less prompting when you use a really powerful model. A lot of it is just verifying that the task can be done. And then afterwards optimizing it for a production use case."*
+
+> *"If you spend money for the models of tomorrow, you just want to use the best models to make sure it's possible — to make sure this specific very hard case is being catered for. Often times you can find very surprising results and then when the model prices drop again, then it's beautiful."*
+
+### The Nudge Mechanism: How Deterministic Guardrails Actually Work
+
+The workshop transcript reveals the specific implementation of the guardrail system:
+
+> *"In many agent implementations where you try to nudge the model in different ways, these are like very ephemeral messages that [guide behavior]."*
+
+The guardrail works by checking `state.is_incomplete()` after every model response. When the model attempts to respond with text while todos remain, the system injects a nudge message (not visible to the user) that forces another iteration. This is **deterministic** — not probabilistic prompt engineering, but harness-level enforcement.
+
+### Cache Invalidation: A Production Lesson from Manus
+
+Ivan warned about a subtle production failure mode:
+
+- Changing a tool's `description` field breaks the model's learned tool selection patterns
+- Cached function calling schemas become invalidated when tool definitions change
+- **Backward compatibility of tool definitions is crucial** in production systems that serve at scale
+
+### On Dreaming Big with Agent Capabilities
+
+Hugo shared an anecdote about Nicholas Moy (head of AI research at Windsurf, now at DeepMind): they built the first multi-hop agent, but the models at the time couldn't support it. They kept the architecture ready anyway. When a new Claude release came out, it suddenly worked, and user adoption exploded.
+
+> *"Dream big and let your models and agents fly."* — Hugo Bowne-Anderson
+
+### Sub-Agent Coordination: Not Just Three Fixed Agents
+
+Ivan emphasized that the deep research agent doesn't use a fixed number of sub-agents:
+
+> *"Instead of just a single run of sub-agents, really what we've done is we just written a way that the model can just spawn as many sub-agents as it needs on demand. And so, it can do this as much as it needs. It's kind of a thing you can just tune in the prompt to see how many rounds of iteration you want to do. Maybe you want the model to stop and ask more questions before it spawns more sub-agents."*
+
+The number of sub-agents and their coordination is **emergent** — determined by the research plan's Todo list, not hardcoded. Each sub-agent has its own iteration budget (default 5 turns) and can independently search, read, and synthesize before returning results to the parent.

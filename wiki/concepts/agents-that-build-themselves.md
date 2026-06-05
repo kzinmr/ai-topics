@@ -1,7 +1,7 @@
 ---
 title: "Agents That Build Themselves"
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-06-05
 type: concept
 tags:
   - self-improving
@@ -12,6 +12,7 @@ tags:
 sources:
   - raw/articles/2026-02-28_substack_agents-that-build-themselves.md
   - raw/articles/2026-02-28_youtube_openclaw-from-scratch-workshop.md
+  - transcripts/2026-02-28_youtube_openclaw-from-scratch-workshop.md
 aliases: [self-extending-agents, self-building-agents, self-writing-tools, software-building-software]
 ---
 
@@ -277,3 +278,83 @@ This establishes an autonomous improvement loop of "iterate until it works." Com
 - [[concepts/hermes-agent-architecture]] — Hermes Agent architecture (capability accumulation, self-generating skills)
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson
 - [[entities/ivan-leo]] — Ivan Leo
+
+## Transcript Insights (Feb 2026 Workshop)
+
+### Ivan Leo's "Context and Capabilities" Framework
+
+The OpenClaw workshop transcript reveals the mental model Ivan uses for all agent design, attributed to Jason Liu:
+
+> *"If you don't take anything away from today's talk, keep this idea at the back of your head of like context and capabilities. I got this idea from Jason and it's really helped me shape a lot of how I think about building agents."*
+
+- **Context** = what information the model has access to (in the prompt, in memory files, in daily summaries)
+- **Capabilities** = what the model can *do* (tools it can call, skills it can load, extensions it can create)
+
+This framework directly motivates the self-extension pattern: when the model lacks a *capability*, it writes a new tool. When it lacks *context*, it reads memory files or creates daily summaries.
+
+### "Build Software to Build Software" — The Core Philosophy
+
+Ivan articulated the fundamental principle behind agents that build themselves:
+
+> *"A lot of it comes down to the fact that you want to build software to build software. And so being able to add whether it's skills, whether it's modifying system prompt, whether it's tools, MCPs — at the end of the day, when you're building an agent, what you're thinking about is: can I give the agent better context?"*
+
+This reframes agent development: you're not building an agent that does task X. You're building an **agent-building system** — a meta-agent that can acquire new capabilities on demand.
+
+### Memory Compaction: How OpenClaw's Daily Files Actually Work
+
+The workshop transcript reveals the specific compaction mechanism:
+
+> *"What happens is that you actually append it to a memory file and so what the model sees is that you interact with it throughout the day — it has a timestamp memory where let's say for example now at 8:47 a.m. in Singapore you might see a simple markdown file with 8:47 a.m. — this is what we did, this is what we discussed with the user, we ran into these issues."*
+
+The compaction flow:
+1. Conversation reaches context limit → trigger summarization via a separate LLM call
+2. Summary appended to a timestamped Markdown file in the `memory/` folder
+3. Raw JSON traces (full conversation) remain accessible to the model
+4. At startup or on demand, the model reads both the summary and raw traces
+
+> *"A lot of the love that OpenClaw has is just because the model can see the raw chats and the model can see the summaries."*
+
+### Why Flash Is Good Enough for Self-Extending Agents
+
+Ivan chose Gemini Flash over more expensive models for the workshop, with a practical justification:
+
+> *"Flash is fast enough that it feels like it's almost instant. And so for the use cases of this, and it's also pretty cheap, so I thought I would give it a try."*
+
+This matters for self-extending agents because the tool-writing loop (write → reload → test) requires **many rapid iterations**. A fast, cheap model that can generate valid Python tool classes is preferable to a slow, expensive one for this pattern. The quality bar for tool-writing is lower than for complex reasoning.
+
+### Hugo's Desktop Cleanup Demo: General-Purpose Computer Use
+
+The workshop's opening demo reframed "coding agents" as general-purpose computer-use agents:
+
+> *"We should stop referring to them as coding agents because they really are computer use agents that happen to be good at coding or great at writing code when you give them a bash tool."*
+
+Hugo ran a 133-line agent with 4 tools (read/write/edit/bash) and asked it to organize his messy desktop folder. The agent successfully created a folder hierarchy and moved files — demonstrating that self-extending agents aren't limited to code. Any task expressible as file operations or shell commands is within scope.
+
+### General-Purpose Agents in 133 Lines of Code
+
+The workshop demonstrated that the entire agent loop + tool calling + conversational interface fits in ~133 lines of Python:
+
+> *"You can actually build a general purpose agent in 133 lines of Python code. With four tools: read, write, edit, bash."*
+
+This minimalism is the enabler for self-extension — when the agent's own codebase is small and well-structured, it can understand and modify its own tool definitions without getting lost in framework abstractions.
+
+### Skills and Progressive Disclosure in Practice
+
+The workshop walked through OpenClaw's skill system, which implements progressive disclosure practically:
+
+- Skills are loaded on-demand based on user intent (not all at startup)
+- Each skill can register its own tools, hooks, and system prompt extensions
+- The agent can discover and load skills dynamically, or the user can request a specific skill
+
+> *"Imagine if someone gave you 200 tools to choose from every time you had to make a decision. You wouldn't even be able to finish reading all of the tools before you had to give a response."* — Hugo Bowne-Anderson
+
+### Sandboxing Self-Extension: Modal Workers
+
+The workshop covered deployment to Modal with sandboxed execution — critical for safety when agents write and execute their own code:
+
+- **Modal Sandbox** isolates agent execution from the host system
+- **modal.Queue** provides per-chat-id message routing
+- **FastAPI webhook server** bridges external inputs (Telegram, web) to the agent loop
+- The agent can write tools, hot-reload them, and execute them — all within the sandbox
+
+This addresses the key safety concern of self-extending agents: the agent's code modifications don't escape the sandbox.

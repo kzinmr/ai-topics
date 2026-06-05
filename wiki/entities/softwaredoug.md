@@ -94,6 +94,36 @@ Doug's recent work increasingly focuses on the intersection of search and AI age
 - Connects RAG blind spots to agent-based approaches for iterative retrieval
 - His "Cheat at Search Essentials" course rethinks the entire search stack with LLMs
 
+## Talks & Presentations (2026)
+
+### AutoReSEARCH — Ranking Coded by Agents (HaystackConf 2026, May 14)
+
+Turnbull's signature 2026 presentation, demonstrating how coding agents can iteratively generate and optimize search ranking code. Key contributions from this talk:
+
+- **Agent-coded rankers with dependency injection** — agents assemble ranking functions from injected primitives (BM25, vector search) rather than modifying search infrastructure
+- **The overfitting problem in agent-generated code** — without guardrails, agents produce query-specific lookup tables; Turnbull identified three guardrails: LLM-based overfit detection, patch size limits (10 lines, 120 chars), and train/validation/holdout splits
+- **Focused composition** — a staged approach where each round narrows scope (first optimize retrieval, then add query rewriting), preventing combinatorial overwhelm
+- **AutoReSEARCH IS machine learning** — the central thesis: "We still need to take our eval data, have good splits, and control the visibility of that data to the model"
+- **The Erdos analogy** — agents exhaustively explore human knowledge (like LLMs finding forgotten proofs), picking the "least offensive" solution within defined boundaries
+
+> *"I've done search at like probably a hundred places in some capacity in the past. I like to say I'm still trying to figure out how search works, because it's honestly something that keeps changing all the time."*
+
+### RAG is the What. Agentic Search is the How. (April 22)
+
+Turnbull's central thesis talk arguing that RAG was just a "thicc daddy search system" and the paradigm has shifted to agentic search where complexity moves from the retrieval layer to the agent+harness layer. Core argument progression: structured attributes → tool calling → agent reasoning → dumb retrievers. Key quote: *"Don't waste too much time on the original RAG paradigm. AI has moved on."*
+
+### Why 2026 is The Year of Agentic Search (May 1, with Jo Kristian Bergum)
+
+Joint talk with Vespa.ai's Jo Kristian Bergum (now CEO of Hornet) making the case that 2026 is the breakout year for agentic search. Covers LLM query understanding, AutoReSEARCH, search harnesses, and LLM-as-judge. Turnbull hosts weekly Maven events roughly once a week, featuring guests from across the search community.
+
+## Teaching Philosophy
+
+From the transcripts, Turnbull's teaching approach is characterized by:
+- **"Embarrassing myself as a service"** — he prioritizes honesty and transparency, openly sharing what doesn't work alongside what does
+- **"Grug-brained" simplicity** — start with the dumbest thing that can work, then iterate
+- **Practical over theoretical** — his HaystackConf talk included live demos of overfitting behavior and guardrail failures, not just success stories
+- **Course structure: "Cheat at Search"** — Maven-based lightning lessons, each ~1 hour, covering topics from NDCG to coding agents; the AutoReSEARCH material appears in Lesson 7 (Coding Agents & Auto Research)
+
 ## See Also
 
 - [[ndcg]] — Detailed concept page on NDCG and search evaluation metrics

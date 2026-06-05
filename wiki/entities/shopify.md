@@ -1,10 +1,10 @@
 ---
 title: "Shopify"
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-06-05
 type: entity
 tags: [company, shopify, ai-adoption, ai-coding, ai-agents, agentic-engineering, coding-agents, claude-code, github-copilot, cursor, mcp, llm-proxy, vibe-coding, infrastructure, developer-experience, internship, career, leadership, product, platform]
-sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md, raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--32394213.md, raw/articles/substack.com--app-link-post--2aba2f39.md]
+sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md, raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--32394213.md, raw/articles/substack.com--app-link-post--2aba2f39.md, transcripts/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
 ---
 
 # Shopify
@@ -84,6 +84,43 @@ Shopify expanded from ~25 interns per term to **1,000 interns** (~350 per term, 
 - **"The secret weapon"**: Company learns more from interns than interns learn from the company
 - Internship may become the **only entry-level path** into Shopify engineering
 - Interns inject AI-native thinking throughout the organization through osmosis
+
+### Farhan Thawar's Philosophy & Approach (Pragmatic Engineer, May 2026)
+
+#### Proactive Tool Adoption
+Farhan personally emails tool company CEOs on their first day. When Thomas Dohmke became GitHub CEO, Farhan emailed him the same day: "I would like GitHub Copilot deployed for all Shopify engineers as soon as humanly possible." Copilot wasn't commercially available yet — Shopify got 2 years free in exchange for feedback.
+
+#### Pairing with AI Lab Engineers
+- Spent 1 hour pairing with an Anthropic applied AI engineer to learn how they use Claude Code internally
+- Records pairing sessions and shares internally as case studies
+- Philosophy: **"Hire smart people and pair with them on problems"** — not the traditional "hire smart people and get out of their way"
+
+#### Code Red Initiative (Nov 2024 – May 2025)
+Shopify ran a 7-month **"Code Red"** to eliminate tech debt:
+- 30–50% of engineering focused on reducing exceptions, segfaults, unique exception counts
+- Tracked via 28-day rolling averages across 4 reliability surfaces
+- Core contributors to Ruby and MySQL (2nd largest MySQL fleet outside Meta)
+- Best engineers used AI for infrastructure work they "always wanted to do but never had time"
+
+#### AI Unleashed in Parallel
+Engineers now unleash agents in parallel — one refactoring auth, another writing tests, a third updating docs. They review PRs like they have a team. Not afraid to try things that may fail — "unleash for 24 hours, delete if garbage."
+
+#### Coding Interviews for Leadership
+Added coding interviews for ALL engineering director and VP hires. Candidates pair-program with Farhan; AI tools allowed and encouraged. "If they don't use a co-pilot, they usually get creamed by someone who does." Tests ability to discern good AI-generated code from bad.
+
+#### Role Modeling & Culture
+- **#1 adoption lever**: Leaders must code and share their AI workflows publicly
+- Internal **prompt library** where engineers share prompts that worked
+- Hackathons focused on AI with senior people embracing Claude Code
+- Farhan's hiring philosophy: "We're not a swim lane company — we don't try to put people into roles where you only think about product or only think about engineering. We're curious problem solvers."
+- "I want you to come to work with an LLM and a brain, not one or the other."
+- "No one has it figured out. No one's there yet." — Farhan on the state of AI adoption
+
+#### What Changed with AI
+- Best engineers using AI for infrastructure work they always wanted to do but "never had time" — tech debt reduction, refactoring, readability improvements
+- Engineers unleashing agents in parallel, reviewing PRs like they have a team
+- Not afraid to try things that may fail — unleash for 24 hours, delete if garbage
+- "The engineer's job shifts from writing code to reviewing and merging agent outputs — orchestrating intelligent systems."
 
 ## GSD: Internal Project Management
 

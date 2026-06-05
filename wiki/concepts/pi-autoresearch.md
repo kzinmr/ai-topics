@@ -83,6 +83,24 @@ Tobi contributed a 32-commit PR adding:
 
 The key insight: humans correctly deprioritize boring optimization work. An autonomous agent doesn't get bored, doesn't need ROI justification, and has no deadline pulling it elsewhere. This is a **different kind of work**, not a faster version of human work.
 
+## Connection to Turnbull's AutoReSEARCH (HaystackConf 2026)
+
+Doug Turnbull's AutoReSEARCH applies the same generalized metric loop to **search ranking code**, creating a direct parallel to pi-autoresearch:
+
+| Aspect | pi-autoresearch (Shopify) | AutoReSEARCH (Turnbull) |
+|--------|---------------------------|-------------------------|
+| **Target metric** | Build time, render speed | NDCG on search judgments |
+| **Code surface** | Any file in codebase | Single `rerank_wands()` function |
+| **Primitive injection** | Build tools, test harness | BM25, vector search, query categorization |
+| **Overfitting guard** | Crash = discard | LLM overfit detector + patch limits + holdout split |
+| **Iteration feedback** | Faster/slower/crash | Per-query NDCG deltas |
+
+Turnbull's implementation adds a critical insight absent from pi-autoresearch: **focused composition**. Rather than letting the agent optimize everything at once, each round narrows scope — first optimize retrieval, then hide that result behind a single tool and add query rewriting as the new capability. This staged approach prevents combinatorial explosion and yields higher metrics faster.
+
+> *"Deep learning is a universal function approximator — it's really just linear algebra being optimized. AutoReSEARCH is just a different sort of putty being optimized, but in the same sort of harness."* — Doug Turnbull, HaystackConf 2026
+
+Both implementations confirm the same philosophical principle: the agent does work humans correctly deprioritize. Turnbull notes that his agent discovered **reciprocal rank fusion** — the "least offensive" hybrid search solution — by exhaustively exploring within human search knowledge, similar to how pi-autoresearch finds micro-optimizations humans wouldn't bother attempting.
+
 ## Related Concepts
 
 - [[concepts/karpathy-loop]] — The original autoresearch for ML training

@@ -167,6 +167,38 @@ Turnbull frames this as a natural extension of [[concepts/rlm-recursive-language
 - **Environment constraints** — Unlike Claude Code in the wild, the agent can't install dependencies or access external data.
 - **Overfitting remains** — Even with guardrails, the agent optimizes against a fixed judgment set that may not represent production queries.
 
+## HaystackConf 2026: Live Demonstration Insights
+
+Turnbull's HaystackConf talk (May 14, 2026) provided concrete empirical evidence for the framework, including several insights not captured in the Lesson 6 material:
+
+### What Overfitting Actually Looks Like
+
+Without guardrails, the agent generates query-specific rules: *"If query is 'red shoes', return these exact results ranked by this order"* — hundreds of lines of if-then-else for specific queries. The agent produces code that's essentially a **lookup table** for the 480 training queries. Training NDCG climbs but holdout performance degrades.
+
+> *"Coding agents scour for information to achieve their goal. It's pretty frequent that someone tries to optimize search with Claude Code and you'll see stuff like this happen all the time."*
+
+### The Exploration vs. Exploitation Problem
+
+A critical discovery: LLMs **default to well-known patterns**. Given BM25 + embeddings, the agent almost always produces reciprocal rank fusion (RRF) — because that's the standard approach in its training data. The agent isn't creative; it exhaustively explores within known solutions.
+
+Turnbull's solution — **focused composition** — addresses this by narrowing scope per round:
+1. **Round 1:** Optimize retrieval only → produces optimized RRF code
+2. **Round 2:** Hide Round 1's code behind a single `search` tool, introduce query rewriting as the new dimension
+
+This staged approach yields higher NDCG faster and prevents combinatorial overwhelm.
+
+### MS Marco BM25 Experiment
+
+Turnbull attempted auto-research of a **better BM25** on MS Marco — starting with raw BM25 code (term frequency, document frequency, raw stats) and hints to explore bigrams and collocations. On a mini-MS Marco subset, the agent made real improvements (stop word handling, bigram weighting). But on the **full MS Marco**, those improvements plateaued — the mini-Marco optimizations overfit to the specific sample.
+
+> *"This is another big problem in machine learning which you can overfit to your validation data."*
+
+Interesting finding: the agent discovered **bigram-based BM25** — adding stop words back and weighting by bigram term frequency. A novel approach that didn't generalize from the small dataset to the full one.
+
+### The Erdos Analogy
+
+Turnbull draws a parallel to how LLMs help solve Erdos problems (impossibly hard math problems): the LLM finds **analogous proofs** in forgotten 1980s papers; a proof solver applies those analogies to the current problem. Similarly, auto-research provides **inspiration and guidance** (hypothesis hints, focused scope), sets **boundaries** (guardrails, patch limits), and lets the LLM exhaustively explore within its training knowledge — picking the "least offensive" solution.
+
 ## See Also
 
 - [[concepts/autoresearch-bm25-msmarco]] — Earlier case study (same author, same pattern)

@@ -150,6 +150,30 @@ All three interpretations converge on the same philosophy: **optimize the code a
 - Harness improvements transfer across models
 - Harness optimization is automatable via agentic search
 
+### AutoReSEARCH as a Meta-Harness Pattern
+
+Doug Turnbull's **AutoReSEARCH** (HaystackConf 2026) provides a concrete practitioner-level demonstration of the meta-harness principle applied to search ranking. It fits the meta-harness taxonomy precisely:
+
+- **Fixed model weights** — The coding agent (GPT-5, Claude) is the fixed "brain"; its weights never change
+- **Optimized harness code** — The ranking function (`rerank_wands`) is the harness that gets iteratively improved
+- **Dependency injection as harness boundary** — The agent receives primitives (BM25, vector search) as parameters it cannot modify, constraining optimization to the ranking logic — exactly the "optimize the harness, not the engine" principle
+- **Eval harness as filesystem feedback** — Per-query NDCG deltas serve the same role as execution traces in the Stanford/MIT paper: concrete evidence the optimizer inspects to diagnose failure modes
+
+The key architectural insight from Turnbull that generalizes beyond search: **focused composition**. Rather than searching over the entire harness space at once, AutoReSEARCH narrows the optimization surface per round — first optimize retrieval, hide that behind a single tool, then introduce query rewriting. This staged approach mirrors how the Stanford/MIT meta-harness reads a median of 82 files per iteration but constrains its proposals to specific harness components rather than rewriting everything.
+
+Turnbull's guardrails map directly to meta-harness safety patterns:
+
+| AutoReSEARCH Guardrail | Meta-Harness Equivalent |
+|--------------------------|-------------------------|
+| Patch size limits (10 lines) | Constrained mutation space |
+| LLM overfit detector | Automated quality gate |
+| Train/validation/holdout split | Progressive benchmark disclosure |
+| Dependency injection | Fixed execution backend |
+
+> *"This apply_patch is almost more like a commit function. And these checks are almost like pre-commit checks."* — Doug Turnbull, HaystackConf 2026
+
+The deployment advantage Turnbull emphasizes — "no new inference service needed, you're just improving code you already deploy" — is the practical payoff of the meta-harness philosophy: harness optimization is cheaper, faster, and lower-risk than any model-level change.
+
 ### Filesystem as the Universal Interface
 Both the Stanford/MIT paper and howdymary's implementation use the **filesystem as the feedback channel**:
 - Execution traces, scores, and harness code all live as files

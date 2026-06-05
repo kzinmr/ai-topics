@@ -1,7 +1,7 @@
 ---
 title: "Dan Shipper"
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-05
 type: entity
 tags:
   - entity
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-05-21_after-automation.md
   - raw/articles/2026-05-02_guide-to-agent-native-product-management.md
   - raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md
+  - transcripts/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md
 ---
 
 # Dan Shipper
@@ -97,6 +98,43 @@ On [[entities/lenny|Lenny's Podcast]] (May 24, 2026), Dan made 12 bold predictio
 - **SaaS runs inside AI, not vice versa**: Rather than AI features being added to SaaS tools, SaaS tools will be accessed *through* AI environments (Codex/Co-work) via their in-app browsers — the agent becomes the platform.
 - **Benchmark illusion**: Benchmarks make AI look more autonomous than it is. Dan built his own "senior engineer benchmark" showing GPT-5.5 scored 62/100 vs human senior engineers at 85-90/100 — and the gap is in judgment, not just code output.
 - **The edge of AI isn't in San Francisco**: It's wherever AI meets a real human doing real work. "The people in San Francisco, they're making it, but they don't actually know a lot about how to use it."
+
+## Transcript Deep Dives
+
+### The Senior Engineer Benchmark (Lenny's Podcast, May 2026)
+Dan built a personal benchmark to test AI coding capabilities after a humbling experience with Proof:
+- **Proof launch disaster**: He vibe-coded Proof (a collaborative editor) while running Every. On launch day, servers crashed every 10 minutes. Codex would fix one bug and introduce four others. "I vibe coded so hard I got bursitis on my elbow."
+- **Two senior engineers** independently rewrote the codebase, giving Dan a human baseline (high 80s–90s/100)
+- **GPT-5.5 scored 62/100** using an Opus 4.7 plan — a 30-point jump from previous models, but still far from human senior engineers
+- **Key insight**: Models don't proactively identify architectural problems. A human senior engineer would say "This codebase is terrible, we need to rewrite." Models will dutifully fix individual issues without recognizing systemic problems
+- **Benchmark manipulation**: Dan noted he can always adjust the benchmark to zero out current models — benchmarks "rise on problems that we've framed" but can't capture judgment
+
+### Codex as Daily Driver
+Dan uses Codex (OpenAI) as his primary work environment, with an in-app browser for SaaS tools:
+- Writes documents in **Proof** with Codex watching alongside via the in-app browser
+- Achieved **10+ days of inbox zero** using Codex + Cora (Every's email agent) — "If you know me, that's crazy"
+- Codex gathers emails via Cora, renders a page, and Dan "monologues" responses while Codex does research and compiles documents
+- **Two agents better than one**: When Codex interacts with another agent, it can provide far more context about Dan than he could type himself
+
+### "Reach Test" for AI Tools
+Internally at Every, they use the "reach test" — do you reach for the tool organically when you wake up in the morning? If yes, it's genuinely useful.
+
+### The Edge of AI Is Not in San Francisco
+> "The people in San Francisco, they're making it, but they don't actually know a lot about how to use it."
+
+Dan argues the real frontier is wherever AI meets a real human doing real work. Every (based in Brooklyn) considers itself ahead of SF companies because they use AI for everything, not just building it.
+
+### Ride the Models
+Dan's advice for career resilience: "The only thing you need to do is ride the models." This means:
+- Use new models for whatever you do
+- Be curious and playful — keep turning over rocks ("Can it do this now?")
+- Don't let fear push you into avoidance
+- The edge is being one of the first people to discover what a new model can do for your specific situation
+
+### AI-Generated Writing Will Be Accepted
+- At Every, quarterly planning was done entirely with **Notion agents** — one top-level strategy agent queried each employee about goals, metrics, and challenges, producing "incredibly good" strategy reports
+- Dan's expectation: if you send an AI-generated document, you must stand behind every line. "If we talk about it and it's clear you have no idea what's in it — big no-no."
+- **Agent bug reports** in Proof are "way better than human bug reports" — they include exact repro steps, codebase analysis, and become GitHub issues automatically
 
 ## Related Pages
 

@@ -1,7 +1,7 @@
 ---
 title: "Every (company)"
 created: 2026-05-25
-updated: 2026-06-03
+updated: 2026-06-05
 type: entity
 tags:
   - entity
@@ -13,6 +13,7 @@ tags:
   - openclaw
   - content-creator
 sources:
+  - "transcripts/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md"
   - "https://every.to/about"
   - "https://every.to/products"
   - "raw/articles/2026-04-17_every-to_folder-is-the-agent.md"
@@ -110,9 +111,40 @@ Every published definitive guides on [[concepts/agent-native-architecture|Agent-
 ## Team AI Usage
 - 95% of work emails handled by AI (Cora)
 - No one writes code by hand — all engineering is AI-assisted
-- Team of ~30 runs 5 software products + media operation
+- Team of ~30 runs 5 software products + media operation (doubled from ~15 in one year)
 - AI agents (@Claudie, @Andy, @Viktor) are first-class Slack team members
 - **44 folders-as-agents** running across projects
+
+### Internal AI Workflows (from Lenny's Podcast, May 2026)
+- **Codex is Dan's daily driver**: Uses OpenAI Codex with an in-app browser for all work — writing in Proof, checking analytics, managing email. "I basically spend all my time in it."
+- **Inbox zero via Cora + Codex**: Codex gathers emails via Cora, renders a page, and Dan "monologues" responses — achieved 10+ consecutive days of inbox zero for the first time
+- **Quarterly planning with Notion agents**: End-of-2025 planning done entirely with a Notion agent querying each employee about goals, metrics, and challenges. Produced "incredibly good" strategy reports
+- **Email written by GPT-5.5**: Most of Dan's email is now AI-written. Codex once sent an email to an investor without review — "I went to my sent and looked at it and I was like, oh, this is exactly what I would have sent"
+- **Agent bug reports**: When Proof users have problems, their agent sends bug reports with exact repro steps, codebase analysis, and auto-creates GitHub issues — "way better than human bug reports"
+
+### Consulting & Forward Deployed Engineers
+Every runs an AI consulting practice powered by **Claudie** (their internal Slack agent). Nitesh, an AI engineer, spends most of his time talking to Claudie in Slack rather than writing code — "Why did you do this dumb thing? Let's fix that." This forward-deployed engineer role is what Every also lends to clients.
+
+### The Super-Agent Model
+Dan initially believed in personal agents for every employee (the "Golden Compass daemon" model), but flipped to the **one super-agent per company** model. The key reason: "In order for an AI agent to be useful right now, it really needs a human who cares about it." Personal agents break and nobody maintains them. A company super-agent with a dedicated forward-deployed engineer works better.
+
+### Business Model Insights (from Lenny's Podcast)
+- **SaaS economics shift**: When users access SaaS tools via Codex/Co-work, they bring their own AI tokens. Every doesn't pay for tokens in Proof — users bring their own. "It changes your margins back" — SaaS companies don't need to build expensive AI features if users bring their own agents.
+- **Agent-to-agent interactions**: Every's products assume users access them through Codex or Co-work, not standalone. Codex provides massive context about the user that the SaaS tool can leverage directly — enabling personalized onboarding without traditional flows.
+- **Product simplification**: Proof doesn't need Word-style formatting, page breaks, or tables because the agent handles all formatting. "You can make the products a lot simpler and faster to start than the legacy products are."
+- **Agent-native UX**: New considerations include approval workflows, activity inboxes summarizing agent actions, and rollback capabilities — agents can make billions of requests in seconds.
+
+### Product-Specific Details
+- **Plus One** (hosted OpenClaw): On waitlist with deposit required. OpenClaw is "a very hard agent harness to make work — it's moving so incredibly fast." When things break on the platform level, Every can't fix them.
+- **Spiral** (writing app): Run by Marcus, a PM by training who previously ran Axios's writing product. After a year off getting "super AI pilled," he now ships faster than almost anyone on the team using Cursor/Claude Code — pairing product sense with light technical knowledge.
+- **Proof** (collaborative editor): Open-source. Users send bug reports via their agents, which include exact repro steps and codebase analysis. Creates a fast closed loop: user bug → agent report → GitHub issue → agent fix.
+
+### Every's Generalist Culture
+- Everyone at Every is an AI early adopter — engineers, designers, writers, editors, salespeople, customer service
+- Team members get early access to models and tools before public release — "We get to beta test and alpha test and help steer the direction of where things are going"
+- Dan's philosophy: predicting the future isn't about prognosticating, it's about "living in it together" and noticing what's happening
+- All new hires receive Annie Dillard's *The Writing Life* — everyone reads at least the last chapter
+- Everyone at Every is "a generalist and really loves having their fingers in a lot of different pots" — this generalist culture enables rapid AI adoption across roles
 
 ## Related Pages
 - [[entities/dan-shipper]] — CEO and cofounder
