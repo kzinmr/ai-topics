@@ -6494,3 +6494,11 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - **Updated**: `wiki/concepts/hf-cli.md` — Added cross-reference to huggingface-skills.
 - **Updated**: `wiki/index.md` — Added huggingface-skills concept entry, bumped page counts.
 - **Sources**: https://huggingface.co/blog/hf-skills-training (burtenshaw, evalstate, 2025-12-04), https://github.com/huggingface/skills
+
+## 2026-06-05 Dreaming Wiki Ingest — Multi-Agent Kernel Optimization, Targeted RL, Cursor 3 Biodefense ElevenLabs Flows
+- **Created**: `wiki/concepts/multi-agent-kernel-optimization.md` — Cursor × NVIDIA collaboration: multi-agent system optimized 235 CUDA kernels on Blackwell B200 GPUs (38% geomean speedup, 3 weeks). SOL-ExecBench, planner+worker harness architecture. Three optimization strategies: BF16 GQA, NVFP4 MoE, BF16 GEMM.
+- **Created**: `wiki/concepts/targeted-rl-textual-feedback.md` — Cursor Composer 2.5's novel RL training technique: localized on-policy distillation KL loss at specific error points in long rollouts. 25× synthetic task scaling, Sharded Muon, dual mesh HSDP.
+- **Enriched**: `wiki/entities/cursor-3.md` — Added "third era of software development" framing, release date (Apr 2, 2026), source reference. Updated to 2026-06-05.
+- **Enriched**: `wiki/entities/openai.md` — Added "Biodefense Action Plan (June 2026)" section: GPT-Rosalind, Rosalind Biodefense, action plan for AI-powered biological resilience. Cross-linked to [[concepts/gpt-rosalind]] and [[concepts/trusted-access-biodefense]].
+- **Enriched**: `wiki/entities/elevenlabs.md` — Added "ElevenCreative Flows Agent (June 2026)" section: conversational AI assistant for creative workflow pipeline, assist mode, background execution, multiplayer. Updated to 2026-06-05.
+- **Updated**: `wiki/index.md` — Added 2 concept entries, bumped concept count (947→949) and total count (2261→2263).

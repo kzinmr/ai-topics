@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-06-03
+updated: 2026-06-05
 tags:
   - company
   - voice-ai
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-05-22_elevenlabs_elevenreader-launches-premium-audiobooks.md
   - raw/articles/2026-05-23_elevenlabs_22-million-earned-by-voice-creators-on-elevenlabs.md
   - raw/articles/2026-06-02_elevenlabs_webinar-recap-deploying-agents-across-every-channel.md
+  - raw/articles/2026-06-05_elevenlabs_introducing-flows-agent.md
 ---
 
 # ElevenLabs
@@ -145,6 +146,24 @@ PhysicsWallah reports **90%+ of student doubts already resolved by AI**. The bro
 > — Sandeep Varma, Head of Data Science & Engineering, PhysicsWallah
 
 Source: raw/articles/2026-06-03_elevenlabs_physicswallah.md
+
+### ElevenCreative Flows Agent (June 2026)
+
+Flows Agent is a conversational AI assistant within ElevenLabs' creative canvas, ElevenCreative Flows — a node-based workspace connecting 50+ image and video models alongside all ElevenLabs audio models into a single visual pipeline.
+
+**How it works**: Describe the desired output in natural language (e.g., "Build me a podcast intro with custom music and voiceover") and the agent selects appropriate models, creates and connects nodes, and executes the full generation pipeline. The agent asks clarifying questions before committing to expensive operations.
+
+**Key features:**
+- **Conversational iteration**: Modify outputs through natural language — "Try a warmer voice," "Swap the background to an office," "Make a version in Spanish" — the agent modifies the existing pipeline and re-runs without rebuilding from scratch.
+- **Assist mode**: Approval control over costly operations; agent pauses before expensive runs requiring confirmation.
+- **Background execution**: Start a complex workflow, close the tab, and return to a completed flow.
+- **Multiplayer**: Collaborators in the same workspace can see the agent building nodes and executing generations in real time.
+
+**Significance**: Flows Agent marks ElevenLabs' transition from a voice-synthesis platform to a multi-modal creative agent orchestrator, competing with Runway's Gen-3, Pika, and Adobe Firefly in the AI creative workflow space while leveraging ElevenLabs' audio-native advantages.
+
+Source: raw/articles/2026-06-05_elevenlabs_introducing-flows-agent.md
+
+---
 
 ## Related
 - [[entities/openai]] — Competitor via GPT-4o voice and TTS capabilities

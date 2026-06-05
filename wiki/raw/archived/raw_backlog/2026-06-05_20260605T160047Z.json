@@ -1,0 +1,63 @@
+{
+  "archived_at": "2026-06-05T16:00:47+00:00",
+  "checkpoint_run_id": "20260605T160047Z",
+  "source": "raw-backlog",
+  "items": [
+    {
+      "item_id": "raw-backlog-1",
+      "source": "raw-article",
+      "source_name": "microsoft-mai-thinking-1-tech-report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に処理済み。concepts/mai-thinking-1-tech-report.mdとconcepts/microsoft-mai-models.mdで包括的にカバー。",
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: PDF — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE"
+    },
+    {
+      "item_id": "raw-backlog-2",
+      "source": "raw-article",
+      "source_name": "dwarkesh.com",
+      "title": "Alex Imas and Phil Trammell - What remains scarce after AGI?",
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に処理済み。concepts/agi-economics.mdとentities/dwarkesh-patel.mdに記録済み。",
+      "body_excerpt": "Economics of AGI episode w Alex Imas and Phil Trammell. What remains scarce after AGI?"
+    },
+    {
+      "item_id": "raw-backlog-3",
+      "source": "raw-article",
+      "source_name": "wheresyoured.at",
+      "title": "AI Doesn't Have ROI",
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に処理済み。entities/ed-zitron.mdにAI Doesn't Have ROIセクションが存在。",
+      "body_excerpt": "AI Doesn't Have ROI — Enterprise Cost Crisis analysis of token billing, Uber $500M incident."
+    },
+    {
+      "item_id": "raw-backlog-4",
+      "source": "raw-article",
+      "source_name": "paulgraham.com",
+      "title": "Being Popular",
+      "url": "http://www.paulgraham.com/popular.html",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "非AIコンテンツ。2001年5月のプログラミング言語の人気に関するエッセイ。",
+      "body_excerpt": "May 2001 essay on why programming languages become popular."
+    },
+    {
+      "item_id": "raw-backlog-5",
+      "source": "raw-article",
+      "source_name": "danluu.com",
+      "title": "A decade of major cache incidents at Twitter",
+      "url": "https://danluu.com/cache-incidents/",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/danluu.com--cache-incidents--1d05e743.md",
+      "recommended_action": "skip",
+      "reason_ja": "非AIコンテンツ。分散システム/キャッシュ障害分析。",
+      "body_excerpt": "Collection of SEV-0/SEV-1 cache incidents at Twitter from 2012-2022."
+    }
+  ],
+  "count": 5
+}

@@ -1,0 +1,31 @@
+{
+  "checkpoint_run_id": "20260605T083411Z",
+  "summary_ja": "2026-06-05 raw backlog batch (5 articles). 3-ken wa kizon wiki page de sude ni covered (MAI-Thinking-1 report, Dwarkesh AGI Economics, Ed Zitron ROI article). 2-ken wa AI/LLM koyuu no topic de wanai (Paul Graham no programming language ron, Dan Luu no Twitter cache incident analysis). Zenken skip, action nashi.",
+  "decisions": [
+    {
+      "filename": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "action": "skip",
+      "reason": "Already captured in concepts/mai-thinking-1-tech-report.md and concepts/microsoft-mai-models.md. Previously archived 2026-06-04."
+    },
+    {
+      "filename": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "action": "skip",
+      "reason": "Already captured. concepts/agi-economics.md created today 2026-06-05, entities/dwarkesh-patel.md updated with interview reference."
+    },
+    {
+      "filename": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "action": "skip",
+      "reason": "Already captured in entities/ed-zitron.md with dedicated ROI section, source reference, and blog posts table entry."
+    },
+    {
+      "filename": "paulgraham.com--popular-html--c633a6dc.md",
+      "action": "skip",
+      "reason": "Out of scope. 2001 essay about programming language popularity, not AI/LLM/agent-specific."
+    },
+    {
+      "filename": "danluu.com--cache-incidents--1d05e743.md",
+      "action": "skip",
+      "reason": "Out of scope. Twitter cache incident analysis (2012-2022), distributed systems engineering, not AI/LLM-relevant."
+    }
+  ]
+}

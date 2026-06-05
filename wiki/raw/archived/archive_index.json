@@ -26,5 +26,13 @@
     "archited_at": "2026-05-26T12:09:54.756258+00:00",
     "source": "backlog",
     "run_id": "20260526T120515Z"
-  }
+  },
+  "raw_backlog": [
+    {
+      "date": "2026-06-05",
+      "run_id": "20260605T160047Z",
+      "path": "/opt/data/.hermes/home/ai-topics/wiki/raw/archived/raw_backlog/2026-06-05_20260605T160047Z.json",
+      "count": 5
+    }
+  ]
 }

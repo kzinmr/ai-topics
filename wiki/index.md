@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 2261 | Indexed entries: 1723 | Concepts: 950 | Entities: 773
+> Last updated: 2026-06-05 | Total pages: 2263 | Indexed entries: 1725 | Concepts: 952 | Entities: 773
 
 ## Entities (773 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -784,7 +784,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (947 pages)
+## Concepts (949 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1506,6 +1506,7 @@
 - [[concepts/multi-agent-consensus-patterns]] — Multi-Agent Consensus Patterns — Architectures and protocols for consensus among multiple AI agents.
 - [[concepts/multi-agent-orchestration]] — Multi-Agent Orchestration
 - [[concepts/multi-agent-orchestration-patterns]] — Multi-Agent Orchestration Patterns — Production patterns for coordinating multiple AI agents
+- [[concepts/multi-agent-kernel-optimization]] — Multi-Agent Kernel Optimization — Cursor × NVIDIA collaboration: multi-agent system autonomously optimized 235 CUDA kernels on Blackwell B200 GPUs, achieving 38% geomean speedup in 3 weeks. SOL-ExecBench, three optimization strategies (BF16 GQA, NVFP4 MoE, BF16 GEMM), planner+worker harness architecture.
 - [[concepts/multi-agent-research-system]] — Multi-Agent Research System (Anthropic) — Anthropic's multi-agent research architecture
 - [[concepts/multi-agent-systems]] — Multi-Agent Systems — Theoretical foundations for multi-agent architectures. Three-layer structural decoupling (Topology → Isolation → Verification) from [[structured-test-time-scaling]]. Covers why MAS bypass linear collapse: span compression, scope isolation, decoupled verification. System mapping table and practical constraints.
 - [[concepts/multi-agents-whats-actually-working]] — Multi-Agents: What's Actually Working — Survey of effective multi-agent patterns in production.
@@ -1686,6 +1687,7 @@
 - [[concepts/swe-bench-agent-scaffolding]] — Agent design when Claude 3.5 Sonnet achieved 49% on SWE-bench Verified. Philosophy: "cede as much control to the model as possible, minimize scaffolding." Bash Tool + Edit Tool + minimal prompt. Demonstrates the importance of scaffolding optimization for the same model.
 - [[concepts/synthetic-data]] — Synthetic Data — Artificially generated training data for ML models, including distillation, self-play, and data augmentation.
 - [[concepts/synthid]] — SynthID: Google DeepMind's digital watermarking for AI-generated content. Cross-industry standard adopted by OpenAI, Kakao, ElevenLabs. 100B+ watermarked. Chrome/Search/Gemini integration.
+- [[concepts/targeted-rl-textual-feedback]] — Targeted RL with Textual Feedback — Cursor Composer 2.5's novel RL training technique: localized on-policy distillation KL loss at specific error points in long rollouts. 25× synthetic task scaling, Sharded Muon optimizer, dual mesh HSDP. Credit assignment solution for 100K+ token trajectories.
 - [[concepts/tau-bench]] — τ-bench: Sierra AI Research's AI agent evaluation benchmark suite. Evaluates across three axes: multi-turn dialogue, domain policy compliance, and pass^k reliability. Evolution: τ-bench (2024/airline+retail)→τ²-bench (2025/Telecom dual-control)→τ³-Bench (2026/τ-Knowledge+τ-Voice). Quantifies reality: GPT-4o <50%, pass^8 <25%, voice agents 26-38%. The industry-standard de facto evaluation foundation.
 - [[concepts/tau-knowledge]] — τ-Knowledge: τ-Bench extension, evaluates agents on unstructured knowledge bases (698 documents/21 categories/195K tokens). τ-Banking domain. GPT-5.2 achieves pass^1~25.5%, ~40% even with required documents provided. Quantifies the knowledge retrieval + reasoning integration bottleneck.
 - [[concepts/tau-squared-bench]] — τ²-bench: Dual-control benchmark. Dec-POMDP environment where both agent and user use tools. Telecom domain. Up to -25pt from Solo→Interactive. Quantifies the difficulty of cooperation and guidance.

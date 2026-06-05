@@ -24,6 +24,7 @@ sources:
   - raw/newsletters/2026-05-15-codex-goes-everywhere.md
   - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
   - raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md
+  - raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md
 ---
 
 # OpenAI
@@ -267,7 +268,20 @@ OpenAI's GPT-5.5+ (estimated GPT-5.6) solved the 1946 Erdős plane unit distance
 - **Cost**: Under $1,000 / 32 hours of compute
 - **Output**: 125-page solution
 - **Timothy Gowers** (Fields Medalist): 'First really clear example of AI solving a well-known open math problem'
-- **Implication**: Paradigm shift for test-time reasoning scaling
+|- **Implication**: Paradigm shift for test-time reasoning scaling
+
+### Biodefense Action Plan (June 2026)
+
+OpenAI launched a comprehensive biodefense action plan on June 4, 2026, aimed at building AI-powered biological resilience. The plan centers on two key initiatives:
+
+- **GPT-Rosalind** (Apr 2026) — Frontier reasoning model purpose-built for biology, drug discovery, and translational medicine research. See [[concepts/gpt-rosalind]] for full details.
+- **Rosalind Biodefense** (May 2026) — Trusted developer program providing advanced AI capabilities for biodefense and pandemic preparedness. See [[concepts/trusted-access-biodefense]] for program details.
+
+**Core thesis**: The same AI capabilities advancing biological science also have implications for biological security. OpenAI's approach is to equip responsible defenders with advanced capabilities while developing safeguards, evidence, and governance for safe deployment.
+
+**Strategic goals**: Enable societies to detect biological threats sooner, develop countermeasures more rapidly, and respond to crises with greater confidence and coordination.
+
+Source: [raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md](https://openai.com/index/biodefense-in-the-intelligence-age/)
 
 ## Security Architecture
 

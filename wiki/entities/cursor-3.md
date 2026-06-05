@@ -3,7 +3,7 @@
 title: Cursor 3
 type: entity
 created: 2026-04-10
-updated: 2026-05-01
+updated: 2026-06-05
 tags:
   - entity
   - developer-tooling
@@ -17,12 +17,13 @@ related:
 - spacex
 sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
+  - raw/articles/2026-06-05_cursor_cursor-3.md
 
 ---
 
 # Cursor 3
 
-Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
+Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development. Released April 2, 2026, Cursor 3 represents the "third era of software development" — from manual editing → agents writing code → fleets of agents working autonomously to ship improvements. (Source: raw/articles/2026-06-05_cursor_cursor-3.md)
 
 ## Key Features
 
