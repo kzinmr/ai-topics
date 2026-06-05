@@ -1,6 +1,22 @@
+
+## 2026-06-05 Raw Backlog Ingest (Batch 20260605T200022Z)
+
+**Operation:** Raw backlog ingest — 5 articles from backlog (ai-hint sorted). 1 take, 4 skip.
+
+**Take:**
+- [[entities/paulgraham-com]] — Enriched with "Being Popular" (May 2001) essay covering programming language popularity theory: expert hackers drive adoption, trojan horse strategy for language adoption, critical mass threshold (~20 users). Connected to modern AI tooling ecosystem (Cursor/Copilot trojan horse adoption pattern). Raw: `raw/articles/paulgraham.com--popular-html--c633a6dc.md`
+
+**Skip (already captured):**
+- MAI-Thinking-1 Tech Report → already in `concepts/mai-thinking-1-tech-report.md` (220 lines)
+- Dwarkesh AGI Economics podcast → already in `entities/dwarkesh-patel.md` + `concepts/agi-economics.md`
+- Ed Zitron AI ROI → already in `entities/ed-zitron.md` (40-line section)
+- Dan Luu Cache Incidents → pre-AI distributed systems, out of scope
+
+
 ## 2026-06-05 Skeleton Enrichment — Goodfire AI Entity Page
 
 **Operation:** Skeleton enrichment: Goodfire AI entity page enriched from 33-line skeleton to comprehensive 10.5KB profile.
+
 
 **Files modified:**
 - `entities/goodfire-ai.md` — Enriched from skeleton to comprehensive profile. Added: founding team ($59M, Menlo Ventures/Lightspeed/Anthropic), three-pillar research agenda (Understand/Debug/Design), Silico product, RLFR hallucination reduction (58% reduction, 90x cheaper), Alzheimer's biomarker discovery (Nature), Evo 2 interpretation (Nature), neural geometry thesis, key people, customers (Arc Institute, Mayo Clinic, Microsoft, Rakuten).

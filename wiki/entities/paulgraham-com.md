@@ -2,7 +2,7 @@
 title: Paul Graham
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-06-05
 tags:
   - person
   - blogger
@@ -12,7 +12,9 @@ tags:
 aliases:
 - paulgraham.com
 - pg
-sources: []
+sources:
+  - http://www.paulgraham.com/popular.html
+  - raw/articles/paulgraham.com--popular-html--c633a6dc.md
 ---
 
 # Paul Graham
@@ -142,10 +144,36 @@ Graham distinguishes sharply between "work" (your portable intellectual output) 
 - Don't equate work with a job; treat your output as your identity
 - Develop a **habit of working on your own projects** even while employed
 
+## Programming Language Popularity Theory (May 2001)
+
+In "Being Popular" (May 2001), Graham developed a theory of programming language adoption that remains relevant to modern AI tool ecosystems:
+
+### Expert Hackers as the Driver of Popularity
+Graham argues that **expert hackers** — not the majority of programmers — determine which languages succeed:
+- Most programmers are told what language to use by someone else (bosses, faculty advisors)
+- Expert hackers are a tiny minority but write all the good software and influence the rest
+- "Expert hackers can tell a good language when they see one, and they'll use it"
+- Given critical mass and time, a language becomes "about as popular as it deserves to be"
+
+### Critical Mass and the Trojan Horse Strategy
+- **Critical mass threshold**: Graham estimates ~20 independent users are needed for a language to become "real"
+- "It's harder to get from zero to twenty than from twenty to a thousand"
+- **Trojan horse strategy**: The best way to gain initial users is to build an application people want, written in the new language (e.g., Viaweb was the Trojan horse for Arc)
+
+### "A Language Has to Be Popular to Be Good"
+Graham inverts the conventional causality: popularity drives goodness, not the other way around:
+- Popular languages get feedback from real users, which drives improvement
+- Languages without large user bases stagnate (Lisp hasn't changed much since the mid-1980s at MIT because its user base shrank)
+- External factors (legacy software, hype) matter but expert opinion is the dominant force long-term
+
+### AI Relevance
+This essay anticipates the modern AI tooling ecosystem: AI coding tools (Cursor, Copilot) gained adoption by being the Trojan horse — solving a real problem (code completion) — rather than by marketing. The expert hackers (early adopters) influenced mainstream adoption, following Graham's model exactly.
+
 ## Recent Themes
 
 | Period | Focus | Key Essays |
 |--------|-------|------------|
+| **2001** | Programming language adoption, expert influence | "Being Popular" |
 | **2023** | Superlinear returns, compounding dynamics | "Superlinear Returns" |
 | **2024** | How to do great work, founder management, essay theory | "How to Do Great Work", "Founder Mode", "The Best Essay" |
 | **2025** | Writing philosophy, essay audience theory | "Good Writing", "Fierce Nerds", "The Shape of the Essay Field" |

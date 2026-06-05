@@ -483,7 +483,7 @@
 - [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
 - [[entities/overreacted-io]] — **URL:** https://overreacted.io
 - [[entities/paul-hoekstra]] — Data engineer and author of Paul's Pipeline (Substack). Defined the 4-layer Agentic Engineering framework (Configuration → Capability → Orchestration → Guardrails) for coding agents like Claude Code and Codex.
-- [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
+- [[entities/paulgraham-com]] — **Blog** | paulgraham.com | Co-founder of Y Combinator. Essays on programming language popularity (expert hackers drive adoption, trojan horse strategy), founder management, and superlinear returns.
 - [[entities/perceptron-ai]] — Perceptron AI — Physical AI research lab. Perceptron Mk1: video understanding + embodied reasoning model matching frontier labs at lower cost. Founded Nov 2024 by Armen Aghajanyan & Akshat Shrivastava (ex-FAIR).
 - [[entities/perplexity-comet]] — Perplexity Comet is an AI-native browser developed by Perplexity AI. Released on Windows/macOS in July 2025, Android in November 2025, and iOS in March 2026. The flagship product in the "turn the browser into an AI agent" strategy.
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. Pioneer of **AI-native development** and **personal agent stacks** (Codex + gogcli/wacli/imsg + Google Drive as source of truth + skill-based procedural memory + approval gates).

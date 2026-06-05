@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-05T20:06:31.168912+00:00",
+  "triage_run_id": "20260605T200022Z",
+  "source": "blog",
+  "summary_ja": "raw backlogバッチ（5記事）のトリアージ。Paul Grahamの2001年エッセイ「Being Popular」は既存entityページに本文の要約がなく、ギャップと判定してenrichment実行。MAI-Thinking-1 Tech Reportは既にconcepts/mai-thinking-1-tech-report.mdで220行カバー済み。Dwarkesh AGI Economicsポッドキャストは既にentities/dwarkesh-patel.md + concepts/agi-economics.mdで対応済み。Ed Zitron AI ROIは既にentities/ed-zitron.mdに40行の専用セクションあり。Dan Luu Cache IncidentsはAI/LLMスコープ外の分散システム記事。結果: Take=1, Skip=4。",
+  "decisions": [
+    {
+      "item_id": "raw-article-3",
+      "source": "blog",
+      "source_name": "dwarkesh.com",
+      "title": "Alex Imas and Phil Trammell - What remains scarce after AGI?",
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "raw_path": "raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ 既にentities/dwarkesh-patel.mdに2026年6月のインタビューエントリーとして記載済み。concepts/agi-economics.mdが本日作成され、リレーショナルセクター、労働シェア、キャピタル分配、UBI vs NIT vs 普遍的基本資本の議論まで完全にカバー。重複不要。",
+      "candidate_wiki_path": "concepts/agi-economics.md",
+      "body_excerpt": ""
+    }
+  ]
+}
