@@ -99,6 +99,7 @@ This aligns with the broader trend of [[concepts/agent-ergonomics|agent ergonomi
 ## Related Pages
 
 - [[entities/hugging-face]] — Parent organization
+- [[concepts/huggingface-skills]] — Standardized agent skill repository (includes `hf-cli` skill)
 - [[concepts/agent-ergonomics]] — Tool/language design for AI agents
 - [[concepts/cli-first-development]] — CLI-first design philosophy
 - [[entities/clefourrier]] — HuggingFace team member (evaluation, benchmarks)

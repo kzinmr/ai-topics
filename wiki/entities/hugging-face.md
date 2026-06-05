@@ -23,6 +23,8 @@ sources:
   - https://hyperion-consulting.io/en/insights/hugging-face-enterprise-guide-2026
   - https://techcrunch.com/2025/11/18/hugging-face-ceo-says-were-in-an-llm-bubble-not-an-ai-bubble
   - https://huggingface.co/blog/hf-cli-for-agents
+  - https://huggingface.co/blog/hf-skills-training
+  - https://github.com/huggingface/skills
 ---
 
 # Hugging Face
@@ -138,8 +140,13 @@ In early 2026, hackers compromised the Hugging Face platform, distributing Andro
 
 In June 2026, Hugging Face published details of the [[concepts/hf-cli|hf CLI]] redesign optimized for coding agents. The CLI auto-detects agent environments (Claude Code, Codex, Cursor, etc.) via environment variables and switches to agent-friendly output: TSV instead of tables, full values instead of truncated, no ANSI codes, hints on stderr. Benchmarking showed the `hf` CLI uses **1.3–6× fewer tokens** than curl/SDK baselines on multi-step Hub tasks, with higher success rates (0.93–0.94 vs 0.84–0.92). The companion `hf-cli skill` reduces agent tool calls by ~30%. Agent traffic tracking started April 2026: Claude Code ~40k users / ~49M requests.
 
+## Hugging Face Skills (2026)
+
+The [[concepts/huggingface-skills|Hugging Face Skills]] repository ([github.com/huggingface/skills](https://github.com/huggingface/skills)) provides 16 standardized agent skill definitions for AI/ML tasks — model training, dataset management, evaluation, deployment. Skills follow the open [Agent Skills](https://agentskills.io) standard and are compatible with Claude Code, Codex, Gemini CLI, and Cursor. The flagship `hf-llm-trainer` skill enables coding agents to handle the full model fine-tuning lifecycle (SFT, DPO, GRPO) through natural language, submitting jobs to HF Jobs cloud GPU infrastructure with Trackio monitoring. Skills are also available via Cursor Marketplace and Codex Plugins Directory.
+
 ## Related Entities
 - [[concepts/hf-cli]] — Agent-optimized CLI for the Hub
+- [[concepts/huggingface-skills]] — Standardized agent skill definitions for ML tasks
 - [[concepts/transformers-library]]
 - [[entities/anthropic]]
 - [[entities/openai]]

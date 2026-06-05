@@ -6435,3 +6435,11 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - **Updated**: `wiki/concepts/agent-ergonomics.md` — Added backlink to hf-cli as CLI design case study.
 - **Updated**: `wiki/index.md` — Added hf-cli concept entry, bumped page counts.
 - **Source**: https://huggingface.co/blog/hf-cli-for-agents (Célina Hanouti, Lucain Pouget, Jun 4 2026)
+
+## 2026-06-05 — Ingest: HuggingFace Skills ecosystem
+
+- **Created**: `wiki/concepts/huggingface-skills.md` — HF Skills repository: 16 standardized agent skill definitions for ML tasks. Agent Skills standard, multi-agent compatibility, hf-llm-trainer fine-tuning pipeline (SFT/DPO/GRPO), HF Jobs cloud GPU, Trackio monitoring.
+- **Updated**: `wiki/entities/hugging-face.md` — Added "Hugging Face Skills (2026)" section, source URLs.
+- **Updated**: `wiki/concepts/hf-cli.md` — Added cross-reference to huggingface-skills.
+- **Updated**: `wiki/index.md` — Added huggingface-skills concept entry, bumped page counts.
+- **Sources**: https://huggingface.co/blog/hf-skills-training (burtenshaw, evalstate), https://github.com/huggingface/skills
