@@ -1,3 +1,18 @@
+## 2026-06-05 Doug Turnbull talks (5本) — YouTube字幕取得
+
+**Operation:** yt-dlpでDoug Turnbull系列5本の字幕取得、`wiki/transcripts/` に配置
+
+**Files created (10 files: 5 .md + 5 .vtt):**
+- `transcripts/2026-01-29_doug-turnbull_will-agents-replace-search-teams.md` + `.en.vtt` (1,362 segments, 49K chars)
+- `transcripts/2026-02-20_doug-turnbull-build-first-agentic-search-app.md` + `.en.vtt` (909 segments, 34K chars)
+- `transcripts/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how.md` + `.en.vtt` (1,254 segments, 44K chars)
+- `transcripts/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search.md` + `.en.vtt` (1,555 segments, 55K chars)
+- `transcripts/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf.md` + `.en.vtt` (1,185 segments, 42K chars)
+
+**index.md updated:** Transcripts section expanded 21 → 26 pages
+
+---
+
 ## 2026-06-05 Builders Unscripted ep1-2, Pragmatic Engineer — YouTube字幕取得
 
 **Operation:** yt-dlpで3本の字幕取得、`wiki/transcripts/` に配置

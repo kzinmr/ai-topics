@@ -1778,7 +1778,7 @@
 - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
 - [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/llm-search-judge]], [[concepts/llm-as-judge]]
 
-## Transcripts (21 pages)
+## Transcripts (26 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
 - [[transcripts/2024-12-13_ilyasutskever-transcript]] — Sequence to Sequence Learning with Neural Networks: What a Decade — Ilya Sutskever (NeurIPS 2024). Full transcript. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]
@@ -1801,4 +1801,9 @@
 - [[transcripts/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]] — Builders Unscripted Ep. 1 — Peter Steinberger on building OpenClaw, open-source agent harness, Codex. Companion: [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
 - [[transcripts/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes]] — Builders Unscripted Ep. 2 — Ashe Magalhaes on Hearth AI, personal AI platforms. Companion: [[raw/articles/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes]]
 - [[transcripts/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai]] — Pragmatic Engineer — Farhan Thawar on Shopify's AI adoption, Claude Code, MCP. Companion: [[raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai]]
+- [[transcripts/2026-01-29_doug-turnbull_will-agents-replace-search-teams]] — Will Agents Replace Search Teams? — Doug Turnbull and Daniel Tunkelang discussion. Companion: [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
+- [[transcripts/2026-02-20_doug-turnbull-build-first-agentic-search-app]] — How To Build Your First Agentic Search App — Doug Turnbull on Vanishing Gradients. Tool-calling, BM25, LLM-as-judge. Companion: [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]]
+- [[transcripts/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]] — RAG is the What, Agentic Search is the How — Doug Turnbull. Companion: [[raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]]
+- [[transcripts/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]] — Why 2026 is The Year of Agentic Search — Doug Turnbull and Jo Kristian Bergum (Vespa.ai). Companion: [[raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]]
+- [[transcripts/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf]] — AutoReSEARCH — Ranking Coded by Agents (HaystackConf 2026). RLM approach for search ranking. Companion: [[raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf]]
 
