@@ -54,7 +54,7 @@
 - [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/glimpse]] — Glimpse — Native macOS WKWebView micro-UI library (Node.js bindings). Sub-50ms window startup, bidirectional JSON. Used for generative UI in terminal-based coding agents.
-- [[entities/goodfire-ai]] — Goodfire AI — Neural network interpretability research. Studies neural geometry for model understanding and control. Referenced in activation-steering concept. Skeleton page (Jun 2026).
+- [[entities/goodfire-ai]] — Goodfire AI — AI interpretability research lab. $59M funded. Silico platform for intentional model design. Neural geometry, RLFR hallucination reduction (58%), Alzheimer's biomarker discovery (Nature).
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
