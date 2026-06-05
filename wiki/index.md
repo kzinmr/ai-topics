@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-05 | Total pages: 2260 | Indexed entries: 1722 | Concepts: 949 | Entities: 773
+> Last updated: 2026-06-05 | Total pages: 2261 | Indexed entries: 1723 | Concepts: 950 | Entities: 773
 
 ## Entities (773 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -784,7 +784,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (946 pages)
+## Concepts (947 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -804,6 +804,7 @@
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
 - [[concepts/after-automation]] — After Automation Paradox — Dan Shipper's thesis that more automation creates more expert human work, not less. 5-step feedback loop: commoditization → abundance → sameness → demand for difference → demand for experts. Includes the Human Sandwich pattern, Zeno's Paradox of AI benchmarks, and the concept of slop as "visible sameness."
 - [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
+- [[concepts/agent-arena]] — Agent Arena (Causal Agent Evaluation) — Real-world agent evaluation system using causal tracing methodology. Ranks agent performance by randomized component selection for causal treatment effect estimation. Released June 4, 2026 by Arena AI.
 - [[concepts/agent-client-protocol]] — Agent Client Protocol (ACP): Open standard (JSON-RPC 2.0 over stdio) for editors/IDEs to interact with AI coding agents. Enables agent-neutral harness swapping. Adopted by Zed, JetBrains, OpenClaw (orchestrator spawning), Devin Desktop (IDE-native agent command center), Mastra. Core methods: session/new, session/prompt, session/update. Building custom ACP agents via manifest JSON.
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-communication-standards]] — Standard protocols for multi-agent communication including ACP, A2A, BeeAI, and others
@@ -1785,7 +1786,6 @@
 - [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents]] — Steering Lost Agents — Cheat at Search Part 3. 65-slide deep dive: two-loop architecture, carrot-and-stick steering, 7 steering patterns, filesystem-like search tools, BEAM search. Companion: [[concepts/agent-steering]]
 - [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge]] — LLM as a Judge — Cheat at Search Part 4. Google Slides covering pointwise/pairwise LLM judges, double-checking swap, multi-judge ensemble + decision tree (73%→91% precision). Companion: [[transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture]], [[concepts/llm-search-judge]]
 - [[raw/articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search]] — Long Running Search Agents — Cheat at Search. Google Slides covering 7 strategies for persistent agents, context compaction, local index memory, frontier prompts.
-- [[raw/articles/2026-06-03_jameshwade_how-rlm-works-dsprrr.md]] — How the Recursive Language Model (RLM) Works — dsprrr (James H. Wade). Context rot problem, context-as-environment paradigm, R-native RLM implementation (callr + ellmer), 4-framework comparison table (dsprrr/DSPy/Official rlm/Google ADK), when-to-use decision framework. Companion: [[concepts/rlm-recursive-language-models]], [[entities/dsprrr]]
 - [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms]] — Search with Agents Lesson 6: Recursive Language Models. Two-part lecture: (1) RLMs applied to search — REPL-based agents with stateful variables, patent search, recursive `llm_query()`. (2) Agent-Driven Ranker Optimization — iterative code editing with Edit model, NDCG eval on train/test splits, guardrails against overfitting. Companion: [[concepts/agent-driven-ranker-optimization]], [[concepts/rlm-recursive-language-models]]
 - [[raw/articles/2026-06-04_softwaredoug_exhaustive-search-beam-search]] — Exhaustive Search (Supplement Lecture) — Cheat at Search with Agents. Generalized harness (stoppers/validators/tools), filesystem-metaphor search (ls/grep/cat/find), BEAM search as systematic directory traversal, subagent-as-tool composition, orchestrator pattern, expert gathering with patent search + NAICS classification + embedding-based local search, personality tracking across runs. Companion: [[concepts/exhaustive-agentic-search]]
 - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
