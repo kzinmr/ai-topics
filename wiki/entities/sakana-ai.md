@@ -118,6 +118,9 @@ Generalized evolutionary code-search engine for discovering algorithms and agent
 ### 10. AB-MCTS
 Monte Carlo Tree Search-based inference orchestration that routes between different AI providers at inference time, selecting the best model for each sub-problem.
 
+### 11. RSI Lab Tokyo (June 2026)
+Sakana AI launched a dedicated **Recursive Self-Improvement (RSI) Lab** in Tokyo, formalizing their research into self-improving AI systems. The lab ties together prior projects — [[concepts/ai-scientist]] (fully automatic scientific discovery), the Darwin Gödel Machine, and ShinkaEvolve (evolutionary code-search engine) — under an explicit claim that self-improving systems can be built under compute constraints by prioritizing **sample efficiency** over raw scale. This positions Sakana AI as the first major lab with an org-level RSI commitment, in contrast to Western labs' more cautious RSI timelines.
+
 ## Competitive Position
 
 ### Differentiation

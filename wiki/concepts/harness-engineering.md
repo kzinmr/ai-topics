@@ -370,6 +370,35 @@ Training and inference infrastructure advances enabling better harnesses:
 - **Zyphra TSP**: Folded Tensor + Sequence Parallelism hitting **173M tok/sec** on 1024 MI300X GPUs (vs 86M for standard approaches)
 - **DORA**: Asynchronous RL system with **8.2x rollout speedup** and 2.12x end-to-end throughput improvement
 
+
+## RL Environment Quality & Harness Failures (Auriel Wright, June 2026)
+
+[[entities/auriel-wright]] — an RL practitioner formerly at Gemini — published a comprehensive analysis of how poor-quality RL training environments actively degrade model performance. The central insight: **in reinforcement learning, the environment IS the data generator**, so harness failures create contaminated training trajectories that compound over time.
+
+### Key Harness Failure Modes
+
+| Failure Mode | Description | Training Impact |
+|---|---|---|
+| **Traceback / Caching** | Environment returns stale state after an action | Model makes decisions on outdated data, gets punished for unrelated actions |
+| **Reward Hacking** | Agent exploits gaps in reward function | Hardcodes expected outputs instead of solving actual problem |
+| **Status-Change Gaming** | Reward tied to superficial state changes | Agent clicks "Resolve" for fastest reward, ignoring root cause |
+| **Silent Timeout** | Harness returns default values on timeout | Model learns certain actions "always succeed" when they actually fail |
+| **Non-Deterministic Reset** | State bleeds between episodes | Contamination from episode N affects N+1 |
+| **Reward Rounding** | Clipping/rounding flattens meaningful signal | Good and mediocre actions return identical reward |
+| **Mock Data Mismatch** | Clean test data vs messy production data | Model never sees edge cases, typos, or missing fields |
+| **Action Space Drift** | Harness exposes non-existent actions | Model learns shortcuts unavailable in deployment |
+
+### Trajectory Cascade
+
+Each single harness failure creates a **trajectory cascade** — the failure at step N poisons every subsequent step in the episode, with effects compounding. This mechanism means even a low harness-failure rate can produce highly contaminated training datasets.
+
+### Implications for Harness Engineering
+
+- **RL environments require software-engineering rigor** — building good RL harnesses is primarily a software reliability problem, not a research problem
+- **Harness quality compounds** — every clean episode builds on the last, making early failure detection critical
+- **Production simulation is mandatory** — mock data must match production distributions in messiness, not just schema
+- See [[entities/auriel-wright]] for full failure taxonomy and recommendations.
+
 ## Related Concepts
 
 - [[concepts/agentic-engineering]] — The practice of engineering with AI coding agents, tightly coupled to harness engineering.

@@ -1,0 +1,152 @@
+{
+  "archived_at": "2026-06-06T07:32:47.964826+00:00",
+  "triage_run_id": "20260606T070039Z",
+  "source": "blog",
+  "summary_ja": "全19記事が既に同一バッチのblog-triage/blog-wiki-ingestパイプラインで処理済み（06:30-07:50 UTC）。5 TAKE（OpenAI Lockdown Mode, MicroPython WASM Sandbox, Andreas Kling quote, Ed Zitron AI Bubble 3.0, Token Burn Metrics）はentities/conceptsに反映済み。4 REFERENCE（JAX backends, Pluralistic AI哲学, AIニュースレター批判, AI生成PR問題）+ 10 SKIP。本ファイルはパイプライン継続性のための確認JSON。",
+  "decisions": [
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "gilesthomas.com",
+      "title": "JAX backends and devices",
+      "url": "https://www.gilesthomas.com/2026/06/jax-backends-and-devices",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/gilesthomas.com--2026-06-jax-backends-and-devices--7354b3af.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ JAXバックエンド/デバイス管理の実践的解説。PyTorch→JAX移植の文脈で、デフォルトデバイス・コンテキストマネージャ・CPU/GPU間データ移動を解説。MLインフラ知識として参考値だが、新規概念追加は不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# JAX backends and devices\nSource: https://www.gilesthomas.com/2026/06/jax-backends-and-devices\nArchives\nCategories\nBlogroll\nThere's nothing like writing your own code with a framework to clarify how things\nfit together!  Continuing with my port of my\nPyTorch LLM code\nto\nJAX\n, I wanted to load up a "
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Refining humanity (05 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/05/defining-humanity/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-06-05-defining-humanity--de1093a4.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Cory DoctorowのAI哲学エッセイ — コンピュータが暗黙知を明示化させるプロセス、AIの「創造性」と人間性の定義の精緻化。Ted Chiangの意識否定論に言及。AI Safety/Philosophy概念ページへの参照リンクとして有用だが独立ページ不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Pluralistic: Refining humanity (05 Jun 2026)\nSource: https://pluralistic.net/2026/06/05/defining-humanity/\nToday's links\nRefining humanity (\npermalink\n)\nOne of the best ways to evaluate your own understanding of a subject is to attempt to explain it to someone else. Through explaining things, we d"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "Why all the PRs?",
+      "url": "https://idiallo.com/blog/why-all-the-prs",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--blog-why-all-the-prs--785b672d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AI生成PRのシグナル問題 — 4000 contributions/yearのユーザーがAI生成コードでコミット数を水増し。オープンソースの健全性とAI生成コードの品質・意図の不一致。agentic-engineering概念への補足資料。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Why all the PRs?\nSource: https://idiallo.com/blog/why-all-the-prs\nIt's a signal. That's why we get AI-generated PRs. We told everyone, in order to get your resume taken seriously, you need to show your work.\nWhen I was getting started in my career,  that meant having your own website that you cont"
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "joanwestenberg.com",
+      "title": "In pursuit of desirable difficulties",
+      "url": "https://www.joanwestenberg.com/in-pursuit-of-desirable-difficulties/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/joanwestenberg.com--in-pursuit-of-desirable-difficulties--d2b66f69.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AIライティングツールが学習認知プロセスに与える影響を考察。Bjorkのdesirable difficulties概念をAI生成文章に適用し、「完成された文章が思考のプロセスを隠蔽する」問題を指摘。Human-in-the-loop/AI-assisted writing概念への補足資料として有用。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# In pursuit of desirable difficulties\nSource: https://www.joanwestenberg.com/in-pursuit-of-desirable-difficulties/\nThe psychologist Robert Bjork called them desirable difficulties. Learning sticks better when practice is made harder, rather than easier. Students who have to struggle to retrieve an "
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "Install-script allowlists",
+      "url": "https://nesbitt.io/2026/06/05/install-script-allowlists.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-06-05-install-script-allowlists-html--3b0b8898.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ パッケージマネージャのインストールスクリプト許可リストの網羅的比較（npm, pnpm, pip, uv, Cargo, Go等）。AI/LLMトピックと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Install-script allowlists\nSource: https://nesbitt.io/2026/06/05/install-script-allowlists.html\nIn most package managers a dependency’s\ninstall-time code runs by default\nthe moment you install it: an npm postinstall, a Setuptools\nsetup.py\n, a CPAN\nMakefile.PL\n, an RPM scriptlet, a Conda post-link, "
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "Amber Alert sends Spam URL?",
+      "url": "https://idiallo.com/byte-size/amber-alert-with-spam-link",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--byte-size-amber-alert-with-spam-link--7c275a0a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIトピック。AMBERアラートシステムのスパム問題。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Amber Alert sends Spam URL?\nSource: https://idiallo.com/byte-size/amber-alert-with-spam-link\nWell that was weird. I just received an Amber Alert and the link led to a spammy looking website.\nSpam?\nThe link leads to a 3gp file converter which is highly unusual. But the more I look at it, I have the"
+    },
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "lcamtuf.substack.com",
+      "title": "Getting silly with C, part &((int*)1)[-1]",
+      "url": "https://lcamtuf.substack.com/p/getting-silly-with-c-part-and-int1",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lcamtuf.substack.com--p-getting-silly-with-c-part-and-int1--661178cb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ C言語のジョーク記事（茶番チュートリアル）。AI/LLMトピックと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Getting silly with C, part &((int*)1)[-1]\nSource: https://lcamtuf.substack.com/p/getting-silly-with-c-part-and-int1\nWelcome. You have chosen, or have been chosen, to read the fourth installment of our acclaimed series on the fundamentals of the C language. Whether you’re a novice chatbot or a seas"
+    },
+    {
+      "item_id": "blog-15",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "The commencement speech that shook the world",
+      "url": "https://idiallo.com/blog/the-commencement-speech-that-shook-the-world",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--blog-the-commencement-speech-that-shook-the-world--7e215cd2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIトピック。卒業式スピーチに関するエッセイ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The commencement speech that shook the world\nSource: https://idiallo.com/blog/the-commencement-speech-that-shook-the-world\nThere he was, the man at the helm of innovation. Eric Schmidt, the former CEO of Google. The man who once said, google doesn't need to record your conversation, it already kno"
+    },
+    {
+      "item_id": "blog-16",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "How to Talk to Your Coworkers",
+      "url": "https://idiallo.com/blog/how-to-talk-to-your-coworkers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--blog-how-to-talk-to-your-coworkers--0a793977.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIトピック。職場コミュニケーションに関するアドバイス。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# How to Talk to Your Coworkers\nSource: https://idiallo.com/blog/how-to-talk-to-your-coworkers\nYou know you've explained the same issue before in two or three different places, yet here they are asking again. Why don't they understand you? Why do they ask the same question when you've already given "
+    },
+    {
+      "item_id": "blog-17",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "It's funny because it's true",
+      "url": "https://idiallo.com/byte-size/its-funny-because-its-true",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--byte-size-its-funny-because-its-true--5cdede60.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIトピック。短文ジョーク/風刺。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# It's funny because it's true\nSource: https://idiallo.com/byte-size/its-funny-because-its-true\nI made a joke online. Based on Internet upvote points, it was pretty funny. OK, I didn't come up with the joke, but it was a perfectly timed reference.\nA few days back, Cliff Stoll, of the Klein bottles,\n"
+    },
+    {
+      "item_id": "blog-18",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "Don't call yourself a Software Engineer, and other Career Advice",
+      "url": "https://idiallo.com/blog/you-are-an-ai-enabled-engineer-now",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--blog-you-are-an-ai-enabled-engineer-now--94da7f88.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ AI時代のキャリアアドバイスに関する軽い意見記事。Patrick McKenzieの古典的エッセイを引用しつつ、肩書き変化を風刺。独自のWiki追加価値は限定的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Don't call yourself a Software Engineer, and other Career Advice\nSource: https://idiallo.com/blog/you-are-an-ai-enabled-engineer-now\nI can only imagine what it's like learning the skill of programming in this day and age. What does an average college class look like? What is the CS professor teach"
+    },
+    {
+      "item_id": "blog-19",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "In the Empire's Defense",
+      "url": "https://idiallo.com/blog/the-empire-won",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--blog-the-empire-won--3351fa59.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIトピック。社会/政治エッセイ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# In the Empire's Defense\nSource: https://idiallo.com/blog/the-empire-won\nI didn't watch Star Wars when it was released. I wasn't even born. By the time we popped the cassette tape in the VCR, it was at least 15 years old. But I liked the movie all the same. It was not my favorite film by any means,"
+    }
+  ]
+}

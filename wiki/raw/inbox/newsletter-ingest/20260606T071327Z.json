@@ -1,0 +1,112 @@
+{
+  "run_id": "20260606T071327Z",
+  "triaged_at": "2026-06-06T07:15:00Z",
+  "newsletters": [
+    {
+      "message_id": "<20260605143505.9188a608@mta29>",
+      "subject": "🔁 Claude Starts Building Claude",
+      "date": "2026-06-05",
+      "source_label": "uid=191",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-05-claude-starts-building-claude.md",
+      "classification": "critical",
+      "reason": "Claude (Anthropic) being used to develop/iterate on itself — recursive AI development, self-improvement loops, AI agents building AI agents. Core wiki topic touching [[claude]], [[anthropic]], [[ai-agents]], and potentially a new concept page for recursive AI development.",
+      "primary_url": null,
+      "primary_url_note": "Beehiiv tracking links could not be resolved to final destination. Subject line alone provides strong signal.",
+      "author": null,
+      "publication": "Beehiiv newsletter (unknown source)",
+      "topics": ["claude", "anthropic", "ai-agents", "self-improvement", "recursive-ai", "ai-development"],
+      "action": "fetch_article_content"
+    },
+    {
+      "message_id": "<20260605184940.3.3881e80e8c4e8eb9@mg-d0.substack.com>",
+      "subject": "How to Stop Shipping Low-Quality RL Environments (with Examples)",
+      "date": "2026-06-05",
+      "source_label": "uid=192",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-05-how-to-stop-shipping-low-quality-rl-environments-with-examples.md",
+      "classification": "critical",
+      "reason": "RL environment quality for training — directly relevant to [[rlhf]], [[reinforcement-learning]], model training infrastructure, and AI agent training. Practical guide with examples. From swyx/latent.space, a high-signal source.",
+      "primary_url": "https://www.latent.space/p/bad-envs",
+      "author": "Auriel Wright (via swyx's AINews)",
+      "publication": "Latent Space / AINews",
+      "topics": ["reinforcement-learning", "rlhf", "training-environments", "model-training", "ai-safety"],
+      "action": "fetch_article_content"
+    },
+    {
+      "message_id": "<20260606044502.3.7b2c42f226935f57@mg2.substack.com>",
+      "subject": "Running Python code in a sandbox with MicroPython and WASM",
+      "date": "2026-06-06",
+      "source_label": "uid=195",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-06-running-python-code-in-a-sandbox-with-micropython-and-wasm.md",
+      "classification": "critical",
+      "reason": "Simon Willison on sandboxed Python execution via MicroPython+WASM — directly relevant to code execution tools in AI agents, sandboxed tool environments, and developer tooling. Simon is a tracked entity; this is a core technique for safe agent code execution.",
+      "primary_url": "https://simonw.substack.com/p/running-python-code-in-a-sandbox",
+      "author": "Simon Willison",
+      "publication": "Simon Willison's Weblog",
+      "topics": ["python", "wasm", "sandboxing", "code-execution", "ai-agent-tools", "developer-tooling", "micropython"],
+      "action": "fetch_article_content"
+    },
+    {
+      "message_id": "<20260605132525.3.a842a4b173a615c8@mg-d1.substack.com>",
+      "subject": "You're Generating AI Workslop",
+      "date": "2026-06-05",
+      "source_label": "uid=190",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-05-you-re-generating-ai-workslop.md",
+      "classification": "high",
+      "reason": "AI output quality / 'workslop' concept — relevant to prompt engineering quality, AI output critique, and AI adoption challenges. Could contribute to a concept page on AI output quality or the human-AI collaboration topic.",
+      "primary_url": "https://thesignal.substack.com/p/youre-generating-ai-workslop",
+      "author": "Alex Banks",
+      "publication": "The Signal",
+      "topics": ["ai-quality", "ai-output", "prompt-engineering", "ai-critique", "ai-adoption"],
+      "action": "fetch_article_content"
+    },
+    {
+      "message_id": "<20260605211433.3.301aa1f31039cc22@mg2.substack.com>",
+      "subject": "Your AI strategy has a trust problem, not a tooling problem",
+      "date": "2026-06-05",
+      "source_label": "uid=193",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-05-your-ai-strategy-has-a-trust-problem-not-a-tooling-problem.md",
+      "classification": "high",
+      "reason": "AI adoption strategy focusing on trust vs tooling gap — relevant to enterprise AI deployment, AI safety perception, and organizational AI adoption. Could feed into a concept page on AI trust or enterprise AI strategy.",
+      "primary_url": "https://www.elenaverna.com/p/your-ai-strategy-has-a-trust-problem",
+      "author": "Elena Verna (@plgrowth)",
+      "publication": "elenaverna.com",
+      "topics": ["ai-adoption", "enterprise-ai", "ai-trust", "ai-strategy", "organizational-change"],
+      "action": "fetch_article_content"
+    },
+    {
+      "message_id": "<20260606043447.3.2c54863859744b9f@mg-d1.substack.com>",
+      "subject": "[AINews] not much happened today",
+      "date": "2026-06-06",
+      "source_label": "uid=194",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-06-ainews-not-much-happened-today.md",
+      "classification": "high",
+      "reason": "Daily AI news digest from swyx/latent.space — aggregate of multiple AI developments. The 20 linked articles likely contain individually wiki-relevant items. Worth scanning for additional article links.",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-6b8",
+      "author": "swyx / Auriel Wright",
+      "publication": "Latent Space / AINews",
+      "topics": ["ai-news", "daily-digest", "ai-ecosystem"],
+      "action": "scan_for_linked_articles"
+    }
+  ],
+  "summary": {
+    "total_newsletters": 6,
+    "critical": 3,
+    "high": 3,
+    "low": 0,
+    "key_themes": [
+      "Recursive AI development — Claude building itself (Anthropic)",
+      "RL environment quality for model training",
+      "Sandboxed Python execution via MicroPython+WASM (Simon Willison)",
+      "AI output quality and 'workslop' critique",
+      "Enterprise AI trust vs tooling gap",
+      "Daily AI news aggregation (swyx)"
+    ],
+    "recommended_wiki_actions": [
+      "Fetch and ingest Claude self-building article → potential concept page: recursive-ai-development",
+      "Fetch and ingest RL environments article → enrich training/rlhf concepts",
+      "Fetch and ingest Simon Willison sandbox article → enrich code-execution/sandboxing concepts",
+      "Fetch and ingest AI workslop article → potential concept page: ai-output-quality",
+      "Scan AINews digest for additional linked articles worth ingesting"
+    ]
+  }
+}

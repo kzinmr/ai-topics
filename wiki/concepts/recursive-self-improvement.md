@@ -38,7 +38,7 @@ Recursive self-improvement (RSI) refers to the capability of an AI system to aut
 |-----|------|----------|
 | OpenAI | "Automated AI research intern" | Sept 2026 |
 | Anthropic | "Automated Alignment Researchers" | Ongoing |
-| Recursive Superintelligence | Dedicated RSI startup | $500M raised |
+| Sakana AI | RSI Lab Tokyo — sample-efficiency-focused RSI | June 2026 |
 | Mirendil | Dedicated RSI startup | Active |
 
 ## Jack Clark's Probabilistic Forecast

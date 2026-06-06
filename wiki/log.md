@@ -1,3 +1,12 @@
+## 2026-06-06 Newsletter Wiki Ingest — RL Environment Quality & AINews Digests
+
+- **Triage recovery**: Newsletter-triage JSON saved correctly but cron output parse failed. Recovered from `triage_latest.json` (Case C). 116 decisions processed: 2 TAKE, 2 REFERENCE, 112 SKIP.
+- **NEW: [[entities/auriel-wright]]** — Auriel Wright (RL practitioner, formerly at Gemini). Created entity page with full RL harness failure taxonomy (8 failure modes: traceback/caching, reward hacking, status-change gaming, silent timeout, non-deterministic reset, reward rounding, mock data mismatch, action space drift). Trajectory cascade concept. Source: Latent Space guest post "How to Stop Shipping Low-Quality RL Environments (with Examples)".
+- **UPDATED: [[concepts/harness-engineering]]** — Added RL Environment Quality & Harness Failures section with table of failure modes, trajectory cascade mechanism, and implications for harness engineering. Cross-linked to Auriel Wright entity.
+- **UPDATED: [[entities/sakana-ai]]** — Added RSI Lab Tokyo (June 2026) as project #11 under Key Research. Sakana AI's dedicated Recursive Self-Improvement lab, sample-efficiency-focused approach.
+- **UPDATED: [[concepts/recursive-self-improvement]]** — Updated Industry Targets table: added Sakana AI RSI Lab Tokyo entry.
+- **UPDATED: [[concepts/swe-bench]]** — Added SWE-Marathon section (rishi_desai2, June 2026): 1B token budget long-horizon coding task evaluation, bridging the gap between single-issue SWE-bench and real-world extended sessions.
+
 ## 2026-06-06 Blog Ingest & Triage (Batch 20260606T070039Z)
 
 - 20 blog articles collected from RSS feeds, 19 saved as raw articles.

@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-06 | Total pages: 2264 | Indexed entries: 1726 | Concepts: 953 | Entities: 773
+> Last updated: 2026-06-06 | Total pages: 2265 | Indexed entries: 1727 | Concepts: 953 | Entities: 774
 
-## Entities (773 pages)
+## Entities (774 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -20,6 +20,7 @@
 - [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H ($965B valuation) with expanded investor consortium (Capital Group, Coatue, GIC, etc.) and compute commitments (Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus). Safety-focused LLM lab founded by former OpenAI researchers.
 - [[entities/ar0cket1]] — ar0cket1 — Pseudonymous AI/ML researcher. OPSD (On-Policy Self-Distillation) empirical analysis: KL divergence profiling, positive pressure asymmetry (83% down-weight), GEPA-based hint optimization. 216 bookmarks.
 - [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
+- [[entities/auriel-wright]] — Auriel Wright — Reinforcement learning practitioner, RL harness failure taxonomy, formerly at Gemini.
 - [[entities/ash-vardanyan]] — Ash Vardanyan — Open-source developer and performance engineer. Creator of USearch, SimSIMD, and other high-performance vector libraries.
 - [[entities/autoreason]] — Autoreason
 - [[entities/axiom-math]] — Axiom Math — Formal verification as RL reward signal. \"Verified Generation\" uses Lean proof assistant as deterministic reward for RL training. CEO: Carina Hong.

@@ -173,6 +173,10 @@ DeepSWE prevents this by shipping only a shallow clone with the base commit. Thi
 
 DeepSWE demands ~5.5× more code with half the prompt length, closer to real-world delegation where engineers specify intent without spelling out the solution.
 
+## SWE-Marathon (June 2026)
+
+Introduced by rishi_desai2, **SWE-Marathon** extends SWE-bench evaluation to **long-horizon coding tasks** with a 1 billion token budget. Whereas standard SWE-bench evaluates single-issue fixes under short time constraints, SWE-Marathon tests agents' ability to sustain coherent work across extended sessions — requiring planning, context management, and recovery from intermediate failures across multiple files and issues. This addresses a key gap in coding agent evaluation: real-world software engineering often involves hours-long sessions with no pre-segmented task boundaries.
+
 ## Historical Score Progression
 
 | Date | System | Score | Notes |
