@@ -1,3 +1,11 @@
+## 2026-06-06 Active Crawl — Nemotron 3 Ultra, Outcomemaxxing, Agent Arena Enrichment
+
+- **NEW: [[concepts/nemotron-3-ultra]]** — Nemotron 3 Ultra (NVIDIA): 550B total / 55B active open hybrid Transformer-Mamba MoE model for long-running autonomous agents. 5× faster inference, up to 1M context. Designed for coding agents, deep research, enterprise workflows. Deployed on Fireworks AI with day-zero support (June 4, 2026). Source: Fireworks AI blog, raw article `2026-06-05_fireworks-ai_nemotron-3-ultra.md`.
+- **NEW: [[concepts/outcomemaxxing]]** — Outcomemaxxing: Sierra AI's outcome-based pricing philosophy for enterprise AI agents. Based on Ramanujam's 2×2 framework (agency × attribution). The Saaspocalypse context: S&P 500 +30% vs WCLD -15% since Dec 2024. Source: Sierra blog (June 3, 2026), raw article `2026-06-03_sierra_outcomemaxxing.md`.
+- **ENRICHED: [[concepts/agent-arena]]** — Added Agent Mode details (task distribution, user control patterns), headline leaderboard top 10 (GPT 5.5 High #1 at +10.66%), cost-efficiency analysis with realized-vs-listed cost discrepancies. Source: Arena AI blog posts, raw articles `2026-06-04_arena-ai_agent-arena-methodology.md` and `2026-06-04_arena-ai_agent-mode.md`.
+- **Discovery**: Multi-source scan (HN Algolia, X/Twitter, blogwatcher DB, web search) identified 30+ AI trending topics. Top HN story: "Do transformers need three projections?" (214pts). X trending: Agent security/sandboxing, Gemma 4 12B local AI, AI labs biosecurity cooperation.
+- **Saved raw articles**: `2026-06-04_arena-ai_agent-arena-methodology.md` (90KB), `2026-06-04_arena-ai_agent-mode.md` (7.8KB), `2026-06-03_sierra_outcomemaxxing.md` (6.5KB). OpenAI articles 403-blocked; used existing pipeline-saved `2026-06-04_openai_chatgpt-memory-dreaming.md`.
+
 ## 2026-06-06 Blog Wiki Ingest — Pipeline Recovery (Batch 20260606T070039Z)
 
 - **Recovery path**: Blog-wiki-ingest cron ran after blog-triage completed. Blog triage saved JSON correctly to `triage_latest.json` but cron output parse failed (wrapped in markdown by scheduler). Recovered from checkpoint file (Case C).

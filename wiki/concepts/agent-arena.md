@@ -1,7 +1,7 @@
 ---
 title: "Agent Arena (Causal Agent Evaluation)"
 created: "2026-06-05"
-updated: "2026-06-05"
+updated: "2026-06-06"
 type: concept
 tags: [agent-evaluation, benchmark, evaluation, methodology, arena-ai]
 sources:
@@ -72,6 +72,49 @@ Heavy Agent Mode sessions in a single week included:
 - Autonomous underwater vehicle autopilot (ROS/Gazebo, Russian)
 - Financial research RAG pipeline
 - Live study-tracking platform
+
+## Agent Mode
+
+Released alongside the Agent Arena leaderboard (June 4, 2026), **Agent Mode** is Arena's agentic workflow interface at arena.ai/agent. Unlike Battle Mode's isolated single-prompt interactions, Agent Mode autonomously builds a plan and uses built-in tools (web search, image generation, coding/bash sandbox, file attachments) to execute multi-step workflows in a single session.
+
+**Task distribution** from early Agent Mode usage (128K+ sessions):
+- **Coding**: 29% (cumulative: code writing 17.5% + debugging 8.9% + scripting)
+- **Research & Planning**: 11% each
+- **Image/Video**: 10.2%
+- **Document creation**: 9.1%
+- **Workflow automation**: 3.9% (emerging high-value category)
+- Long tail: data analysis, translation, media analysis
+
+**User control patterns**: Most users delegate specific tasks rather than handing over complete control. Twice as many users tighten controls vs. loosen them on follow-up turns — treating the agent like an employee with "hands-on" management.
+
+## Headline Leaderboard (June 2026)
+
+Top 10 orchestrator models ranked by net improvement (τ̂, causal treatment effect vs. baseline):
+
+| Rank | Model | Net Improvement |
+|------|-------|----------------|
+| 1 | GPT 5.5 (High) | +10.66% |
+| 2 | Claude Opus 4.7 (Thinking) | +9.47% |
+| 3 | GPT 5.4 (High) | +8.92% |
+| 4 | Claude Opus 4.6 | +8.14% |
+| 5 | GPT 5.5 | +7.47% |
+| 6 | Claude Opus 4.7 | +6.95% |
+| 7 | Claude Sonnet 4.6 | +4.59% |
+| 8 | GLM 5.1 | +3.38% |
+| 9 | Gemini 3.1 Pro Preview | +1.38% |
+| 10 | Gemini 3.5 Flash | +0.40% |
+
+Models below baseline: Kimi K2.6 (-0.56%), DeepSeek V4 Pro (-1.88%), Qwen 3.6 Plus (-3.40%), Gemma 4 31B (-8.52%), Grok 4.3 (-25.15%).
+
+## Cost-Efficiency Analysis
+
+Agent Arena calculates **realized post-deployment costs** — actual costs incurred during user sessions — which can differ significantly from on-paper per-token pricing due to:
+
+1. **Model behavior**: Some models take more steps per turn or produce longer responses, driving up realized cost
+2. **Induced user behavior**: Models requiring more corrections or follow-ups increase total session cost
+3. **Pareto frontier**: A cost-performance chart identifies models that deliver the best net improvement per dollar spent
+
+This analysis reveals that cheaper on-paper models can be more expensive in practice when factoring in agentic behavior patterns.
 
 ## Related Pages
 

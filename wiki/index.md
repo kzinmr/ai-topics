@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-06 | Total pages: 2265 | Indexed entries: 1727 | Concepts: 953 | Entities: 774
+> Last updated: 2026-06-06 | Total pages: 2267 | Indexed entries: 1729 | Concepts: 955 | Entities: 774
 
 ## Entities (774 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -785,7 +785,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (950 pages)
+## Concepts (955 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1520,6 +1520,7 @@
 - [[concepts/natural-language-autoencoders]] — Anthropic's interpretability technique (May 2026): converts model activations into human-readable text. Round-trip reconstruction scoring. Used to understand Claude's internal behavior, safety testing, and debugging.
 - [[concepts/ndcg]] — NDCG (Normalized Discounted Cumulative Gain): de facto search relevance metric. Measures ranked result quality against human judgments. Covers DCG, iDCG, judgment sources (human/clickstream/LLM), limitations, and the "grug-brained" evaluation philosophy.
 - [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): RL framework with clean interfaces and modular design. Multi-turn RL support, SFT+DPO+GRPO, FSDP/Megatron.
+- [[concepts/nemotron-3-ultra]] — Nemotron 3 Ultra (NVIDIA): 550B total / 55B active open hybrid Transformer-Mamba MoE model. Designed for long-running autonomous agents: coding, deep research, enterprise workflows. 5× faster inference, up to 1M context. Available on Fireworks AI (June 2026).
 - [[concepts/neurosymbolic-ai]] — Neurosymbolic AI — Integration of neural networks with symbolic reasoning for robust AI systems.
 - [[concepts/nextpad-ai-development]] — Nextpad++ case study: AI multi-agent development quality challenges, "uncanny valley" of functional but poor UX software. — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 - [[concepts/normalization-of-deviance-in-ai-coding]]
@@ -1542,6 +1543,7 @@
 - [[concepts/open-swe]] — Open SWE: LangChain's open-source internal coding agent framework. Based on Deep Agents + LangGraph. Implements the convergent architecture of Stripe Minions/Ramp Inspect/Coinbase Cloudbot under MIT license. AGENTS.md, sandboxes, Slack/Linear/GitHub integration.
 - [[concepts/open-vs-closed-model-gap]] — Open vs. closed model capability gap measured via ECI. 4-month time lag (Jan–May 2026), 8 ECI point gap. Chinese-dominated open-weight frontier (Kimi K2.6, GLM-5.1, DeepSeek-V4 Pro). Business implications for enterprise vs. developer trade-offs.
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
+- [[concepts/outcomemaxxing]] — Outcomemaxxing: Sierra AI's philosophy advocating outcome-based pricing over consumption/seat models for enterprise AI agents. The Saaspocalypse — market shift from productivity tools to outcome-delivering agents. Based on Ramanujam's 2×2 pricing framework.
 - [[concepts/openai-agents-sdk]] — OpenAI Agents SDK (v0.14.0) — OpenAI's official SDK for building AI agent applications
 - [[concepts/openai-codex-superapp]] — OpenAI Codex Superapp — OpenAI's unified coding agent platform
 - [[concepts/openai-frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
