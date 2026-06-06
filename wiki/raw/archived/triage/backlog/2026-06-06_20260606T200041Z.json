@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260606T200041Z",
+  "summary_ja": "raw-backlog-ingestバッチ(5記事)のトリアージ結果。MAI-Thinking-1レポートは既存conceptページに完全にカバー済み。Dwarkesh/AGI Economics対談はagi-economics概念ページとdwarkesh-patelエンティティページに反映済み。Ed Zitron「AI Doesn't Have ROI」はai-bubble-economics概念ページとed-zitronエンティティページに詳細記載済み。Paul Graham「Being Popular」はpaulgraham-comエンティティページに完全カバー。Dan Luu「Twitter cache incidents」は分散システム障害の技術記事でAI/LLM wikiの範囲外。本バッチのtake候補は0件。",
+  "decisions": [
+    {
+      "item_id": "backlog-1",
+      "source": "raw_article",
+      "source_name": "MAI-Thinking-1 Tech Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページにカバー済み。concepts/mai-thinking-1-tech-report.md(220行)が本レポートの全内容(MoEアーキテクチャ、33.5Tトークン学習、RLレシピ、ベンチマーク結果)を詳細に文書化。sources frontmatterに本raw記事パスも含まれている。新規作成や更新の必要なし。",
+      "candidate_wiki_path": "concepts/mai-thinking-1-tech-report.md",
+      "body_excerpt": "MAI-Thinking-1: Building a Hill-Climbing Machine. The Microsoft AI Team. 109 pages, June 2, 2026. Model: 35B active / 1T total parameter MoE. Progress in AI is driven not by a single model, but by the ability to continually improve upon the current state of models..."
+    },
+    {
+      "item_id": "backlog-2",
+      "source": "raw_article",
+      "source_name": "Dwarkesh Patel Podcast",
+      "title": "Alex Imas and Phil Trammell - What remains scarce after AGI?",
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページにカバー済み。concepts/agi-economics.md(93行)が本エピソードの全テーマ(労働分配率、資本飽和、UBI/税金、Messy Middleシナリオ、Oリング理論)を文書化。entities/dwarkesh-patel.mdのタイムラインにも「Jun 2026 Interviewed Alex Imas & Phil Trammell」として記録済み。",
+      "candidate_wiki_path": "concepts/agi-economics.md",
+      "body_excerpt": "Economics of AGI episode w Alex Imas and Phil Trammell. There's a bunch of important questions about how we deal with AI that only economics can answer. What is the optimal way to tax and redistribute the wealth that will be generated?..."
+    },
+    {
+      "item_id": "backlog-3",
+      "source": "raw_article",
+      "source_name": "Where's Your Ed At",
+      "title": "AI Doesn't Have ROI",
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページにカバー済み。concepts/ai-bubble-economics.md(446行)が本記事のテーマ(AI ROI測定不能性、GitHub Copilotトークン課金問題、Uber CTOの予算枯渇報告)を詳細に文書化。entities/ed-zitron.md(398行)のNotable Articlesテーブルにも「Jun 2026 AI Doesn't Have ROI」として記録済み。sources frontmatterにも本raw記事パスが含まれている。",
+      "candidate_wiki_path": "concepts/ai-bubble-economics.md",
+      "body_excerpt": "Over the last three weeks, I've published an exhaustive three-part guide to how the AI bubble might collapse... Something changed in the last week. Shortly after Uber COO Andrew Macdonald said that it was 'getting harder to justify' spending money on AI..."
+    },
+    {
+      "item_id": "backlog-4",
+      "source": "raw_article",
+      "source_name": "Paul Graham Essays",
+      "title": "Being Popular",
+      "url": "http://www.paulgraham.com/popular.html",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページにカバー済み。entities/paulgraham-com.md(466行)に「Programming Language Popularity Theory (May 2001)」セクションとして本エッセイの全主要テーゼ(Expert Hackers Driver, Critical Mass/Trojan Horse Strategy, Popularity→Goodness因果関係の逆転)が詳細に文書化済み。sources frontmatterにも本raw記事パスとURLが含まれている。",
+      "candidate_wiki_path": "entities/paulgraham-com.md",
+      "body_excerpt": "May 2001. (This article was written as a kind of business plan for a new language. So it is missing the most important feature of a good programming language: very powerful abstractions.) A friend of mine once told an eminent operating systems expert that he wanted to design a really good programming language..."
+    },
+    {
+      "item_id": "backlog-5",
+      "source": "raw_article",
+      "source_name": "Dan Luu",
+      "title": "A decade of major cache incidents at Twitter",
+      "url": "https://danluu.com/cache-incidents/",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/danluu.com--cache-incidents--1d05e743.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AI/LLM wikiの範囲外。本記事はTwitterのmemcached障害インシデント(2012-2022)に関する分散システム信頼性エンジニアリングの技術記録。キャッシュ一貫性、IRQ affinity、packet loss、host ejectionなどのインフラストラクチャトピックであり、LLM/AI Agent/開発者ツールという本wikiの主要テーマから外れる。Dan LuuのAI関連記事(ROI批判など)は既にwikiに取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This was co-authored with Yao Yue. This is a collection of information on severe (SEV-0 or SEV-1) incidents at Twitter that were at least partially attributed to cache from the time Twitter started using its current incident tracking JIRA (2012) to date (2022)..."
+    }
+  ]
+}

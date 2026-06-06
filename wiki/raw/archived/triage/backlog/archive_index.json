@@ -158,5 +158,20 @@
     "decision": "skip",
     "reason": "Out of scope: 2001 programming language essay, not AI-specific",
     "source": "backlog"
+  },
+  "https://www.dwarkesh.com/p/alex-imas-phil-trammell": {
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+    "action": "skip",
+    "date": "2026-06-06"
+  },
+  "https://www.wheresyoured.at/ai-doesnt-have-roi/": {
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+    "action": "skip",
+    "date": "2026-06-06"
+  },
+  "https://danluu.com/cache-incidents/": {
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/danluu.com--cache-incidents--1d05e743.md",
+    "action": "skip",
+    "date": "2026-06-06"
   }
 }

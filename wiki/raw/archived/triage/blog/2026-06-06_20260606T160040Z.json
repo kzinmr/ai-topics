@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-06-06T16:02:02.432757+00:00",
+  "triage_run_id": "20260606T160040Z",
+  "source": "blog",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）のトリアージ。全記事が過去のバッチラン（2026-06-05/06-06）で既に処理済みまたはスコープ外と判定。新規takeなし。",
+  "decisions": [
+    {
+      "item_id": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "source": "blog",
+      "source_name": "2026-06-03_microsoft-mai-thinking-1-tech-report",
+      "title": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にconcepts/mai-thinking-1-tech-report.mdとconcepts/microsoft-mai-models.mdで完全にカバー済み。前回のraw-backlog-ingestでスキップ判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "source": "blog",
+      "source_name": "dwarkesh",
+      "title": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "recommended_action": "skip",
+      "reason_ja": "entities/dwarkesh-patel.mdのキャリアタイムラインとconcepts/agi-economics.mdに既に収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Alex Imas and Phil Trammell - What remains scarce after AGI?\nSource: https://www.dwarkesh.com/p/alex-imas-phil-trammell\nEconomics of AGI episode w\nAlex Imas\nand\nPhil Trammell\n.\nThere’s a bunch of important questions about how we deal with AI that only economics can answer.\nWhat is the optimal way "
+    },
+    {
+      "item_id": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "source": "blog",
+      "source_name": "wheresyoured",
+      "title": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "recommended_action": "skip",
+      "reason_ja": "entities/ed-zitron.mdに「AI Doesnt Have ROI - Enterprise Cost Crisis」専用セクションとして既に収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# AI Doesn't Have ROI\nSource: https://www.wheresyoured.at/ai-doesnt-have-roi/\nIf you liked this piece, you should subscribe to my premium newsletter. It’s $70 a year, or $7 a month, and in return you get a weekly newsletter that’s usually anywhere from 5,000 to 18,000 words, including vast, detailed"
+    },
+    {
+      "item_id": "paulgraham.com--popular-html--c633a6dc.md",
+      "source": "blog",
+      "source_name": "paulgraham",
+      "title": "paulgraham.com--popular-html--c633a6dc.md",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "entities/paulgraham-com.mdに「Being Popular」エッセイ要約として既にenrichment済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Being Popular\nSource: http://www.paulgraham.com/popular.html\nMay 2001\n(This article was written as a kind of business plan for a\nnew language\n.\nSo it is missing (because it takes for granted) the most important\nfeature of a good programming language: very powerful abstractions.)\nA friend of mine o"
+    },
+    {
+      "item_id": "danluu.com--cache-incidents--1d05e743.md",
+      "source": "blog",
+      "source_name": "danluu",
+      "title": "danluu.com--cache-incidents--1d05e743.md",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--cache-incidents--1d05e743.md",
+      "recommended_action": "skip",
+      "reason_ja": "AI/LLMスコープ外の分散システム記事（Twitter cache incidents 2012-2022）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# A decade of major cache incidents at Twitter\nSource: https://danluu.com/cache-incidents/\nThis was co-authored with Yao Yue\nThis is a collection of information on severe (\nSEV-0\nor\nSEV-1\n, the most severe incident classifications) incidents at Twitter that were at least partially attributed to cach"
+    }
+  ]
+}

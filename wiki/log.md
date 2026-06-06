@@ -1,5 +1,16 @@
 |---
 ## 2026-06-06 Dreaming Wiki Ingest — Pinecone Nexus Benchmarks, Hebbia June Updates, Glean MCP Gateway, Nesbitt Security Survey
+## 2026-06-06 raw-backlog-ingest Triage (Batch 20260606T200041Z)
+
+5 articles triaged from raw backlog. Takes=0 (all skip).
+
+- MAI-Thinking-1 Tech Report (microsoft.ai, 109p) -> skip: concepts/mai-thinking-1-tech-report.md fully covers (MoE architecture, 33.5T tokens, RL recipe, benchmarks)
+- Dwarkesh/Imas/Trammell AGI Economics (dwarkesh.com) -> skip: concepts/agi-economics.md has all topics + entities/dwarkesh-patel.md timeline updated
+- AI Doesnt Have ROI (wheresyoured.at) -> skip: concepts/ai-bubble-economics.md detailed coverage + entities/ed-zitron.md Notable Articles
+- Being Popular (paulgraham.com, May 2001) -> skip: entities/paulgraham-com.md Programming Language Popularity Theory section
+- Twitter Cache Incidents (danluu.com) -> skip: out of scope (distributed systems reliability, not AI/LLM)
+
+Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 
 - **Enriched**: `entities/pinecone.md` — Added "Nexus Customer Benchmark Results (June 2026)" section: 3 enterprise customer benchmarks (Melange SEP search: 97% fewer tokens, 77% faster, 25% more accurate; FinTech M&A due diligence: 92% fewer tokens, 48% faster, 14% more accurate; E-commerce revenue intelligence: 85% fewer tokens, 18% faster, 94% more accurate). Source: raw/articles/2026-06-06_pinecone_nexus-ea-benchmarks.md.
 - **Enriched**: `entities/hebbia.md` — Added "June 2026 Updates" section: Hebbia API + MCP server, 4 new data integrations (Fitch, ICE, Intralinks, Salesforce), Tick-and-Tie agent for figure verification, Agent Run Controls, Expandable Tables, CSV uploads. Updated from 47 to 71 lines. Source: raw/articles/2026-06-06_hebbia_whats-new-june-disclosure-2026.md.

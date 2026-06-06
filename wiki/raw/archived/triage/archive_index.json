@@ -25,6 +25,7 @@
     "https://chromeisbad.com/",
     "https://cohere.com/blog/coplot",
     "https://cohere.com/blog/guide-to-mcp",
+    "https://cohere.com/blog/unpacking-ai-safety",
     "https://cursor.com/blog/composer-2-technical-report",
     "https://cursor.com/blog/cursor-leads-gartner-mq-2026",
     "https://cursor.com/blog/may-2026-bugbot-changes",
@@ -76,6 +77,7 @@
     "https://elevenlabs.io/blog/ebury",
     "https://elevenlabs.io/blog/elevenlabs-summit-warszawy",
     "https://elevenlabs.io/blog/hasbro",
+    "https://elevenlabs.io/blog/introducing-flows-agent",
     "https://elevenlabs.io/blog/lot-polish-airlines-announcement",
     "https://elevenlabs.io/blog/physicswallah",
     "https://elevenlabs.io/blog/warsaw-summit-homecoming",
@@ -104,6 +106,8 @@
     "https://garymarcus.substack.com/p/why-things-will-eventually-fall-apart",
     "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
     "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
+    "https://gilesthomas.com/2026/06/flax-and-safetensors/",
+    "https://gilesthomas.com/2026/06/jax-backends-and-devices/",
     "https://gizmodo.com/meta-has-a-ridiculous-amount-of-smart-glasses-planned-for-this-year-2000765741",
     "https://grantslatton.com/solving-quoridor",
     "https://herman.bearblog.dev/resurfacing-posts/",
@@ -135,6 +139,7 @@
     "https://it-notes.dragas.net/2026/05/26/copying-remote-command-output-to-your-macos-clipboard/",
     "https://it-notes.dragas.net/2026/06/05/aggressive_caching_for_a_mastodon_reverse_proxy/",
     "https://jasonzweig.com/three-ways-to-get-paid/",
+    "https://joanwestenberg.com/ai-indecision-is-a-recursive-trap-dont-get-stuck",
     "https://kieranhealy.org/blog/archives/2026/05/21/zero-sum-problems/",
     "https://krebsonsecurity.com/2026/05/alleged-kimwolf-botmaster-dort-arrested-charged-in-u-s-and-canada/",
     "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/",
@@ -517,5 +522,5 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-art-template/",
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-redhat-javascript-clients/"
   ],
-  "updated": "2026-06-06T07:32:47.965068+00:00"
+  "updated": "2026-06-06T18:26:55.902806+00:00"
 }
