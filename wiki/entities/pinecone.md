@@ -2,7 +2,7 @@
 title: "Pinecone"
 type: entity
 created: 2026-05-08
-updated: 2026-06-03
+updated: 2026-06-06
 tags:
   - company
   - vector-search
@@ -15,6 +15,7 @@ aliases:
 sources:
   - https://www.pinecone.io/
   - https://www.pinecone.io/blog/
+  - raw/articles/2026-06-06_pinecone_nexus-ea-benchmarks.md
 ---
 
 # Pinecone
@@ -82,6 +83,44 @@ Nexus introduces several key primitives:
 2. **Fewer tools, better agents**: Collapsing 6 tools to 2 cut input-token spread by ~4×
 3. **Structured data tells you *what*, unstructured tells you *why***: The warehouse gives numbers, but business rationale lives in Slack threads, Gong transcripts, runbooks
 4. **Same accuracy, fraction of the budget**: V2 matched V1's 68.3% accuracy on the 101-question regression set
+
+### Nexus Customer Benchmark Results (June 2026)
+
+Three customer benchmarks from Nexus's early-access program demonstrate consistent improvements across different domains:
+
+**1. Melange Technologies (Patent Search/SEP)**
+- **Domain**: IP/Patent Litigation, Standard Essential Patent (SEP) claim validation against 3GPP standards
+- **Corpus**: 3GPP Release 18, ~1,800 .docx/.doc files, ~2.3 GB (pilot: 29-spec 5G NR slice, ~31 MB)
+- **Eval**: 30 SEP-candidacy questions
+- **Nexus vs Agentic RAG**: Accuracy 52.7% → 66% (25% more accurate), Latency 187s → 44s (77% faster), Token cost 201K → 5.9K (97% fewer tokens)
+- **Quote (Joshua Beck, CEO Melange)**: "These early results are genuinely exciting: a 34x reduction in token cost..."
+- **Business impact**: cost-prohibitive autonomous patent search becomes viable; sub-minute latency fits litigation timelines
+
+**2. FinTech (M&A Due Diligence)**
+- **Domain**: Financial Technology / Investment Management
+- **Corpus**: 90 documents across 10 category folders (PDFs, XLSX, markdown) — full synthetic M&A dataroom for a $42M ARR SaaS company
+- **Eval**: 30 multi-hop M&A diligence queries
+- **Nexus vs Agentic RAG**: Accuracy 57% → 65% (14% more accurate), Latency 61s → 32s (48% faster), Token cost 66K → 5K (92% fewer tokens)
+- **Nexus resolved each question in a single retrieval vs ~10 iterative steps**
+- **Business impact**: workflows requiring analyst hours now complete in seconds
+
+**3. SMS/E-commerce SaaS (Revenue Intelligence from Gong Transcripts)**
+- **Domain**: SMS Marketing / E-commerce SaaS
+- **Corpus**: 217 Gong call transcripts, ~45 MB structured JSON
+- **Eval**: 40 revenue intelligence queries requiring cross-call synthesis
+- **Nexus vs Agentic RAG**: Accuracy 36% → 70% (94% more accurate), Latency 28s → 23s (18% faster), Token cost 27K → 4K (85% fewer tokens)
+- **Key insight**: Agentic RAG cannot see across the full corpus simultaneously; Nexus derives structured representations making cross-call patterns directly addressable
+- **Business impact**: largest accuracy improvement across all benchmarks
+
+**Summary Table**
+
+| Customer/Domain | Use Case | Outcome |
+|---|---|---|
+| Melange / IP & Patent Litigation | SEP claim validation | 97% fewer tokens, 77% faster, 25% more accurate |
+| FinTech / Investment Mgmt | M&A due diligence | 92% fewer tokens, 48% faster, 14% more accurate |
+| SMS SaaS / E-commerce | Revenue intelligence | 85% fewer tokens, 18% faster, 94% more accurate |
+
+**Key Insight**: Across all three cases, the same architectural dynamic appears — Nexus compiles structured artifacts before queries arrive, eliminating the agentic RAG retrieval loop that burns tokens and latency.
 
 ### Demo
 

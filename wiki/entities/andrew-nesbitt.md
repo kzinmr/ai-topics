@@ -2,7 +2,7 @@
 title: "Andrew Nesbitt"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-04
+updated: 2026-06-06
 type: entity
 ---
 
@@ -283,6 +283,70 @@ On June 3, 2026, Nesbitt published a comprehensive threat model analysis for **a
 
 References: [[concepts/agent-safety]], [[concepts/software-supply-chain-security]], [[concepts/prompt-injection]]
 
+---
+
+### gittuf — A Signed Log for Git Refs
+
+Published June 4, 2026. Nesbitt examines **gittuf**, a Reference State Log (RSL) for Git that addresses the gap between commit signatures and forge-enforced branch protection.
+
+**The Problem**: Commit signatures verify individual commits but don't protect against ref-level attacks. Branch protection is a row in a forge database — it doesn't follow the repository when cloned, and forge admin roles can change it without leaving a Git record. Real attacks exploiting this gap:
+
+- **2021 php-src**: Two commits falsely attributed to Rasmus Lerdorf and Nikita Popov were pushed onto the self-hosted PHP Git server. Commit signing alone wouldn't have stopped this — the commits weren't signed, and nothing would have forced a check.
+- **2018 Gentoo GitHub takeover**: An administrator's leaked password led to org takeover. The attacker removed legitimate developers and pushed malicious `rm -rf` ebuilds. Malicious refs sat at `master` for 8-10 hours. Branch protection was enforced by the same forge admin role the attacker held.
+- **2025 tj-actions/changed-files**: A leaked PAT let an attacker create one malicious commit and retarget ~23,000 repos' tags. Tag objects are immutable but the refs pointing at them are just pointers — a force push moves them if the forge accepts it.
+
+A 2016 USENIX paper described the fundamental pattern: a hostile server can roll a ref back to an earlier commit, or swap it for a different valid commit. The client gets a verifiably correct commit — just not the legitimate tip.
+
+**gittuf's Solution** (2025 NDSS paper): The **Reference State Log (RSL)** records every ref update as a signed entry in a hash chain stored under `refs/gittuf/reference-state-log`. Each entry names a ref, the new commit hash, and the hash of the previous entry, signed by policy-authorized keys. Verification walks the RSL forward, checking each ref movement against the policy in force at the time. If a clone's tip doesn't match the RSL's last entry for that ref, a non-maintainer served a ref that wasn't signed for.
+
+**Key Properties**:
+- Verification runs **outside the forge** against policy and keys the forge doesn't hold
+- Policy lives at `refs/gittuf/policy` in TUF-derived metadata format, supporting delegated rules and **M-of-N threshold signatures**
+- Reviews and approvals are separate signed attestations alongside the RSL, not folded into ref-advancement entries
+- Tag moves are ref updates too — the tj-actions attack would leave an inconsistent log or require attacker-held keys
+- Chains naturally with Sigstore and in-toto attestations to connect artifact provenance back through build state to an authorized ref
+
+> *"I'd like to see forges build gittuf in directly, so the workflows people rely on produce signed RSL entries on the maintainer's behalf."*
+
+Related: [[concepts/software-supply-chain-security]], [[concepts/git-internals]]
+
+---
+
+### Install-Script Allowlists
+
+Published June 5, 2026. A comprehensive survey of **install-time code execution controls** across every major package manager ecosystem. Nesbitt documents which tools allow install scripts by default, which require per-package opt-in, and which constrain execution through sandboxing.
+
+**The Landscape**: Most package managers allow a dependency's install-time code to run by default: npm postinstall, Setuptools setup.py, CPAN Makefile.PL, RPM scriptlets, Conda post-link, Debian postinst. A small but growing number require explicit per-package opt-in via **allowlists** or **trusted-dependencies lists**.
+
+**Per-Package Allowlists**:
+- **npm 11.10.0** (February 2026) shipped `allowScripts` in `package.json` via `npm approve-scripts`/`npm deny-scripts`. Entries pinned to a specific version (`[email protected]: true`) by default. Behaviour in 11.x is advisory — scripts still execute, hard block planned for future release
+- **pnpm v10** (January 2025) blocked install scripts by default using `onlyBuiltDependencies`/`neverBuiltDependencies`. v11 consolidated into `allowBuilds` with `dangerouslyAllowAllBuilds` as escape hatch. `strictDepBuilds` (v11 default) fails installs for unlisted packages
+- **Bun** blocks install scripts by default with a built-in default allowlist of well-known packages (esbuild, fsevents). `trustedDependencies` overrides the default list
+- **Deno** never runs npm lifecycle scripts without explicit approval via `--allow-scripts=` or `deno approve-scripts` (Deno 2.6, December 2025)
+- **Composer 2.2** (2021) made plugin activation explicit via `allow-plugins` config key
+- **Yarn Berry (v2+)** uses declarative `dependenciesMeta.<pkg>.built: true` with `enableScripts: false` globally
+
+**Global Sandboxing**:
+- **opam** (OCaml) wraps build/install commands with bubblewrap/sandbox-exec (opam 2.0, 2018)
+- **Swift Package Manager** runs manifest evaluation and plugins inside sandbox-exec with no network access by default, with `PluginPermission` declarations for elevated access
+- **Nix/Guix** run every derivation's builder inside a chroot with isolated PID/network/mount namespaces and no network except fixed-output derivations
+- **Portage** (Gentoo) uses LD_PRELOAD-based sandbox intercepting filesystem syscalls
+
+**Identity/Signature Verification**: RubyGems trust policies, Gradle dependency verification metadata, NuGet trustedSigners, and apt-secure gate which artifacts can be installed — they don't control what the code does post-install.
+
+**Structural Distinctions**:
+- **Cargo** `build.rs` and proc-macros run as native code during every build — structurally compile-time, not install-time, but functionally equivalent on fresh builds. No per-package allowlist for build scripts
+- **JVM** build files (Gradle Groovy/Kotlin, Maven plugin goals, SBT Scala) execute at configuration time, before project source touches the compiler
+- **Python wheels** conventionally have no install-time hooks, but sdist builds execute PEP 517 backends. Pip has no per-package allowlist; uv provides `no-build-package`/`no-binary-package` controls
+- **Go modules** don't run downloaded code beyond compiling it — the only major ecosystem without an install-time execution surface
+- **Bazel** BUILD files run in Starlark (a Python dialect with no clock, no recursion, no mutable global state) and build actions execute in per-action sandboxes
+
+**Survey Coverage**: 30+ package managers across JavaScript, Python, Ruby, Perl, PHP, Rust, Go, Zig, JVM, .NET, OCaml, Elixir, Erlang, Haskell, Dart, Lua, Nim, Raku, Crystal, Julia, R, C/C++, and all major OS distribution package managers (dpkg, RPM, pacman, apk), plus userland tools (Homebrew, MacPorts, Scoop, Chocolatey, winget) and version managers (asdf, mise).
+
+Related: [[concepts/software-supply-chain-security]], [[concepts/package-management]]
+
+---
+
 ## Sources
 
 - nesbitt.io — Personal blog and portfolio
@@ -302,6 +366,8 @@ References: [[concepts/agent-safety]], [[concepts/software-supply-chain-security
 - Open Source Security podcast: "Ecosyste.ms with Andrew Nesbitt" (2025)
 - FOSDEM 2026: "Open source funding: you're doing it wrong" (with Benjamin Nickolls)
 - OSS Summit NA 2026 panel: "The Impact of Funding" (with Georg Link, Dawn Foster, Alyssa Wright)
+- "gittuf — a signed log for git refs" (2026) — Reference State Log for Git ref security, bridging commit signatures and forge-enforced branch protection
+- "Install-script allowlists" (2026) — Comprehensive survey of install-time code execution controls across every major package manager ecosystem
 
 ## References
 
@@ -321,3 +387,5 @@ References: [[concepts/agent-safety]], [[concepts/software-supply-chain-security
 - nesbitt.io--2026-04-28-github-actions-is-the-weakest-link-html--0c77c59b
 - nesbitt.io--2026-05-09-the-mismeasure-of-open-source-html--ab1e120e
 - nesbitt.io--2026-05-12-not-a-security-issue-html--c464f9c9
+- raw/articles/nesbitt.io--2026-06-04-gittuf-a-signed-log-for-git-refs-html--db92e96b.md
+- raw/articles/nesbitt.io--2026-06-05-install-script-allowlists-html--3b0b8898.md

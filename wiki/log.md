@@ -1,3 +1,12 @@
+|---
+## 2026-06-06 Dreaming Wiki Ingest — Pinecone Nexus Benchmarks, Hebbia June Updates, Glean MCP Gateway, Nesbitt Security Survey
+
+- **Enriched**: `entities/pinecone.md` — Added "Nexus Customer Benchmark Results (June 2026)" section: 3 enterprise customer benchmarks (Melange SEP search: 97% fewer tokens, 77% faster, 25% more accurate; FinTech M&A due diligence: 92% fewer tokens, 48% faster, 14% more accurate; E-commerce revenue intelligence: 85% fewer tokens, 18% faster, 94% more accurate). Source: raw/articles/2026-06-06_pinecone_nexus-ea-benchmarks.md.
+- **Enriched**: `entities/hebbia.md` — Added "June 2026 Updates" section: Hebbia API + MCP server, 4 new data integrations (Fitch, ICE, Intralinks, Salesforce), Tick-and-Tie agent for figure verification, Agent Run Controls, Expandable Tables, CSV uploads. Updated from 47 to 71 lines. Source: raw/articles/2026-06-06_hebbia_whats-new-june-disclosure-2026.md.
+- **Enriched**: `entities/glean.md` — Added "Glean MCP Gateway" section: enterprise-grade context layer on top of MCP (precomputed indexes, IdP-backed OAuth, permission-enforced connectors, centralized MDM rollout, insights dashboard). Source: raw/articles/2026-06-04_glean_introducing-glean-mcp-gateway.md.
+- **Enriched**: `entities/glean.md` — Added AI Productivity Paradox research (RCT: 19% slower with AI, 46% distrust, 45% high-severity vulnerabilities, LinkedIn $2.4M savings). Source: raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-more-than-code-completion.md.
+- **Enriched**: `entities/andrew-nesbitt.md` — Added "Install-Script Allowlists" section: comprehensive survey across 30+ package managers (npm 11.10.0 allowScripts, pnpm v10 default block, Cargo build.rs, JVM build-time, LavaMoat). Source: raw/articles/nesbitt.io--2026-06-05-install-script-allowlists-html--3b0b8898.md.
+- **Enriched**: `entities/andrew-nesbitt.md` — Added "gittuf - A Signed Log for Git Refs" section: RSL hash chain, TUF-derived policy, M-of-N threshold signatures, real-world attacks (php-src 2021, Gentoo 2018, tj-actions 2025). Source: raw/articles/nesbitt.io--2026-06-04-gittuf-a-signed-log-for-git-refs-html--db92e96b.md.
 ---
 ## 2026-06-06 Watchdog Auto-Fix — Index header counts + Log separators
 
