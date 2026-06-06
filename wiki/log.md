@@ -1,3 +1,10 @@
+## 2026-06-06 Blog Wiki Ingest — Pipeline Recovery (Batch 20260606T070039Z)
+
+- **Recovery path**: Blog-wiki-ingest cron ran after blog-triage completed. Blog triage saved JSON correctly to `triage_latest.json` but cron output parse failed (wrapped in markdown by scheduler). Recovered from checkpoint file (Case C).
+- **Verification**: All 5 TAKE decisions already wiki-ingested by prior blog-triage run (confirmed via log.md, entity/concept page content grep). 5 entity/concept pages with matching keywords verified.
+- **Action**: 0 new takes. Archive: all skip/reference items already archived (dedup). No uncommitted wiki changes.
+- **Pipeline status**: Blog ingest commit `f8a5041e` pushed successfully.
+
 ## 2026-06-06 Newsletter Wiki Ingest — RL Environment Quality & AINews Digests
 
 - **Triage recovery**: Newsletter-triage JSON saved correctly but cron output parse failed. Recovered from `triage_latest.json` (Case C). 116 decisions processed: 2 TAKE, 2 REFERENCE, 112 SKIP.
