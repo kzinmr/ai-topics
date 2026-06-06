@@ -7,6 +7,7 @@
 - **HEALTH**: No pipe corruption, no duplicate entries, no ghost entries, no triple brackets
 - **PIPELINE**: Watchdog alerts: 0 (all clean)
 - **STALE NOTES**: 1254 stale pages (>30d), 4057 unprocessed raw articles, 611 orphan pages — not auto-fixable, need human review
+---
 ## 2026-06-06 Active Crawl — Nemotron 3 Ultra, Outcomemaxxing, Agent Arena Enrichment
 
 - **NEW: [[concepts/nemotron-3-ultra]]** — Nemotron 3 Ultra (NVIDIA): 550B total / 55B active open hybrid Transformer-Mamba MoE model for long-running autonomous agents. 5× faster inference, up to 1M context. Designed for coding agents, deep research, enterprise workflows. Deployed on Fireworks AI with day-zero support (June 4, 2026). Source: Fireworks AI blog, raw article `2026-06-05_fireworks-ai_nemotron-3-ultra.md`.
@@ -6706,3 +6707,20 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - **Enriched**: `wiki/entities/openai.md` — Added "Biodefense Action Plan (June 2026)" section: GPT-Rosalind, Rosalind Biodefense, action plan for AI-powered biological resilience. Cross-linked to [[concepts/gpt-rosalind]] and [[concepts/trusted-access-biodefense]].
 - **Enriched**: `wiki/entities/elevenlabs.md` — Added "ElevenCreative Flows Agent (June 2026)" section: conversational AI assistant for creative workflow pipeline, assist mode, background execution, multiplayer. Updated to 2026-06-05.
 - **Updated**: `wiki/index.md` — Added 2 concept entries, bumped concept count (947→949) and total count (2261→2263).
+---
+
+## 2026-06-06 Wiki Health Auto-Fix — Index reconstruction + Log separators
+
+### 🔧 Changes Applied
+- **log.md**: Added 1 missing `---` separator (line 10 gap: Watchdog → Active Crawl)
+- **index.md — Orphan addition**: Added 20 substantive concept pages to index (enterprise-ai-cost-management, formal-logic-foundation, gold-diff-distillation, google-photo-scanning-ai, grok-computer, 15x harness-engineering/* pages)
+- **index.md — Duplicate merge**: Merged concepts/claude-opus-4-7.md → claude-opus-4.7.md (rich content over stub), deleted duplicate file
+- **index.md — Summary line fix**: Indexed entries updated: 1826
+
+### 📊 Verification
+- Ghost entries: 0
+- Pipe/line-number/triple-bracket/space-prefix corruption: 0
+- log.md missing separators: 0 (422 sections, 1 fixed)
+- validate_index.py: PASS
+- Concepts entries in index: 972 (951 existing + 20 new)
+- Entities: 774 / Concepts: 1585 / Comparisons: 26
