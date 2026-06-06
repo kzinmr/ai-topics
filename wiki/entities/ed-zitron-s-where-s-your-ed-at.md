@@ -2,7 +2,7 @@
 title: Ed Zitron
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-06-06
 tags:
   - person
   - blogger
@@ -29,6 +29,7 @@ sources:
   - raw/articles/wheresyoured.at--hatersguide-adobe--37ba8c0e.md
   - raw/articles/wheresyoured.at--exclusive-microsoft-moving-all-github-copilot-subscribers-to--7951c0ff.md
   - raw/articles/fortune.com--2026-03-26-anthropic-says-testing-mythos-powerful-new-ai-mod--e63c44b8.md
+  - raw/articles/wheresyoured.at--premium-the-haters-guide-to-the-ai-bubble-3-0--7c85a50e.md
 ---
 
 > **Note**: This is a duplicate entity page. The canonical Ed Zitron page is at [[entities/ed-zitron|ed-zitron.md]]. Content from this page has been merged into the canonical version.
@@ -100,6 +101,22 @@ Zitron's most significant ongoing reporting project — first raised in Septembe
 - Data centers: $178.5B debt raised, only 5GW of 200GW under construction
 
 **"Pale Horses of the AIpocalypse"** — Zitron's updated warning signs (Apr 2026): AI lab price hikes, data center deal collapses, CoreWeave debt issues, SoftBank over-leverage ($40B debt due in 1 year), ARM stock decline, NVIDIA earnings, and Blue Owl financial stability.
+
+### The Hater's Guide to the AI Bubble 3.0 (June 5, 2026)
+
+The third installment of Zitron's AI Bubble series delivers what he frames as the definitive case that the AI industry is a concentrated, debt-fueled bubble with an unsustainable economic structure.
+
+**Revenue Concentration**: Zitron argues that 89%+ of all AI revenues and 90%+ of compute demand flow to just two companies — OpenAI and Anthropic — both of which lose billions per year with no clear path to profitability. The total AI industry revenue barely reaches $100B in 2026, a figure that includes compute infrastructure and NVIDIA-related deals, far short of the trillions promised by boosters.
+
+**NVIDIA Customer Concentration**: 54% of NVIDIA's last quarter revenue came from just 3 customers, highlighting the fragility of the AI hardware supply chain's dependence on a handful of cash-burning AI labs.
+
+**Enterprise Token Budget Blowouts**: Companies that adopted AI tools are burning through their annual AI budgets in months. Token-based billing only started in Q1 2026, replacing earlier subsidized subscription models, and enterprises are discovering that real-world AI usage costs far exceed projections.
+
+**Data Center Debt Crisis**: US data center debt reached $178.5B in 2025, with $50B in construction in April 2026 alone — yet Microsoft has finished zero data centers from its 2023 groundbreakings, and 60% of planned 2027 capacity hasn't even started construction. Zitron frames this as a speculative buildout disconnected from actual demand.
+
+**IPO Rush Without Readiness**: Anthropic has filed to go public, with OpenAI not far behind. Zitron argues neither company is fit for public investors — their products remain inconsistent and unreliable, and the gap between their valuations and their actual business fundamentals would be exposed under public market scrutiny.
+
+**AI in Practice — The Reality Gap**: Spotify claims AI is writing "most" of its code, but nobody can explain what that actually means in practice. Meanwhile, AI systems have broken AWS multiple times and deleted an entire company's database, underscoring the gap between AI marketing claims and operational reality.
 
 See the full [[concepts/ai-subprime]] concept page for complete analysis.
 

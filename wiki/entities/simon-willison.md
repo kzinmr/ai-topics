@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-06-04
+updated: 2026-06-06
 status: L3
-sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md]
+sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md, raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md, raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md, raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md]
 tags: [person, blogger]
 ---
 
@@ -407,3 +407,17 @@ See full article: [[raw/articles/simonwillison.net--2026-may-20-google-io--933c8
 **Microsoft MAI-Thinking-1 & MAI-Code-1-Flash** (Jun 2, 2026): Simon covered Microsoft's Build 2026 MAI model announcements, correcting initial reporting errors about model sizes (35B active ≠ 35B total) and noting the 794B-page proprietary crawl + Common Crawl training data. See [[concepts/microsoft-mai-models]].
 
 **Uber Caps AI Tool Costs** (Jun 3, 2026): Simon analyzed Uber's $1,500/month per-tool cap on AI coding tools (Claude Code, Cursor) after the company blew through its 2026 AI budget in four months. He framed the ~$36K/year cap per engineer as ~11% of median compensation, contextualized against his own usage (~$1,000/month per provider with individual subsidies), and contrasted the policy with "tokenmaxxing" competitive usage leaderboards. See [[concepts/enterprise-ai-cost-management]].
+
+**micropython-wasm 0.1a2** (Jun 6, 2026): Simon released `micropython-wasm`, a Python sandbox using WebAssembly (WASM) for safe code execution. Uses MicroPython compiled to WASM via wasmtime. Key features:
+- Memory and CPU limits (fuel-based execution limiting)
+- Controlled filesystem and network access
+- Host function support (78 lines of C compiled into 362KB WASM blob)
+- Persistent interpreter state via thread-based request queue
+- Built using GPT-5.5 Pro for research, Codex Desktop and GPT-5.5 high for implementation
+- Alpha release on PyPI, CLI mode via `uvx micropython-wasm`
+- GPT-5.5 xhigh challenged to break out of sandbox and failed so far
+- Companion plugin: `datasette-agent-micropython` for Datasette Agent
+
+Source: raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md
+
+**Andreas Kling on AI-Generated Code** (Jun 5, 2026): Simon highlighted Andreas Kling's announcement that the Ladybird browser project will stop accepting public pull requests due to the volume of AI-generated code submissions. This reflects a growing trend of open-source projects restricting contributions to maintain code quality in the face of low-effort AI-generated PRs. Source: raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md

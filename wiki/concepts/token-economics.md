@@ -2,14 +2,14 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-06-04
+updated: 2026-06-06
 tags:
   - inference
   - optimization
   - economics
   - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]"]
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md]
 ---
 
 # Token Economics
@@ -187,6 +187,18 @@ Poor context architecture forces the system to compensate with more tool calls, 
 > "The real AI moat is execution efficiency." The agencies/enterprises that win won't be those with the best models — they'll be those that extract the most useful work per token through superior architecture.
 
 Source: [[raw/articles/2026-06-03_glean_token-yield-architecture]]
+
+## Token Burn as Productivity Metric — Anti-Pattern (June 2026)
+
+Ibrahim Diallo critiqued the emerging practice of tracking AI token consumption as a developer productivity metric, drawing parallels to the discredited 'lines of code' metric:
+
+- Enterprise productivity dashboards now track per-developer AI token usage and display leaderboards
+- A $50K/year tool tracks developer AI code generation with pie charts showing individual contributions
+- Token counts are easily gamed: accidentally selecting 'planning mode' burned tokens without writing code
+- AI companies promote token usage as productivity because they directly benefit from consumption
+- Best engineers write less code, not more — measuring output volume mistakes 'exhaust for the engine'
+
+Source: raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md
 
 ## Hidden Self-Hosting Costs
 

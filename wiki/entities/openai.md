@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-05
+updated: 2026-06-06
 tags:
   - company
   - model
@@ -25,6 +25,7 @@ sources:
   - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
   - raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md
   - raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md
+  - raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md
 ---
 
 # OpenAI
@@ -282,6 +283,19 @@ OpenAI launched a comprehensive biodefense action plan on June 4, 2026, aimed at
 **Strategic goals**: Enable societies to detect biological threats sooner, develop countermeasures more rapidly, and respond to crises with greater confidence and coordination.
 
 Source: [raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md](https://openai.com/index/biodefense-in-the-intelligence-age/)
+
+### ChatGPT Lockdown Mode (June 2026)
+
+OpenAI rolled out **ChatGPT Lockdown Mode** in June 2026, a deterministic security feature designed to prevent the final stage of prompt injection attacks — **data exfiltration** — by limiting outbound network requests that a model can make.
+
+- **Scope**: Rolling out to Free, Go, Plus, Pro, and self-serve ChatGPT Business accounts
+- **What it does**: Blocks outbound network requests (e.g., fetching attacker-controlled URLs with stolen data embedded in query parameters), preventing exfiltration of private data accessed during a session
+- **What it does NOT do**: Does not prevent prompt injections from appearing in content — injected instructions can still be present in documents, web pages, and other untrusted inputs. Lockdown Mode only blocks the exfiltration vector
+- **Simon Willison's analysis**: Directly attacks the "Lethal Trifecta" — the three conditions required for a prompt injection exploit to succeed: (1) access to private data, (2) exposure to untrusted content, and (3) an exfiltration vector. Lockdown Mode cuts off the easiest leg of this triangle
+- **Key implication**: Default ChatGPT settings do **not** provide robust protection against data exfiltration. Users must actively enable Lockdown Mode
+- **Mechanism**: Uses deterministic mechanisms (network-level restrictions), not AI-evaluated rules, making it a hard security boundary rather than a probabilistic one
+
+Source: [raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md](https://simonwillison.net/2026/Jun/5/chatgpt-lockdown-mode/)
 
 ## Security Architecture
 
