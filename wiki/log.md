@@ -1,3 +1,13 @@
+## 2026-06-06 Raw Backlog Ingest (Batch 20260606T040056Z)
+
+- 5 articles evaluated. All previously processed or out of scope.
+- **SKIPPED:** `raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md` — Full tech report (372KB, 109 pages) already fully captured in `concepts/mai-thinking-1-tech-report.md` and `concepts/microsoft-mai-models.md`.
+- **SKIPPED:** `raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md` — AGI Economics interview already captured in `entities/dwarkesh-patel.md` (timeline entry) and `concepts/agi-economics.md`.
+- **SKIPPED:** `raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md` — Already captured in `entities/ed-zitron.md` with dedicated ROI section.
+- **SKIPPED:** `raw/articles/paulgraham.com--popular-html--c633a6dc.md` — Out of scope: 2001 essay on programming language popularity, not AI/LLM-specific.
+- **SKIPPED:** `raw/articles/danluu.com--cache-incidents--1d05e743.md` — Out of scope: Twitter cache incident analysis (2012-2022), distributed systems engineering.
+
+
 
 ## 2026-06-05 Raw Backlog Ingest (Batch 20260605T200022Z)
 

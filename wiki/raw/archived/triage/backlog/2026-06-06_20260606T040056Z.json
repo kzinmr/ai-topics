@@ -1,0 +1,41 @@
+{
+  "checkpoint_run_id": "20260606T040056Z",
+  "summary_ja": "2026-06-06 raw backlog batch (5 articles). 全記事が過去のパイプライン実行またはトリアージ済み。MAI-Thinking-1レポートはconcepts/mai-thinking-1-tech-report.mdで完全にキャプ済み。Dwarkesh AGI Economicsインタビューはentities/dwarkesh-patel.md更新済み。Ed Zitron ROI記事はentities/ed-zitron.mdに専用セクションあり。Paul Graham（2001年プログラミング言語論）とDan Luu（Twitterキャッシュインシデント）はAI/LLMスコープ外。全件skip、アクションなし。",
+  "decisions": [
+    {
+      "filename": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "url": null,
+      "action": "skip",
+      "reason": "Already captured in concepts/mai-thinking-1-tech-report.md and concepts/microsoft-mai-models.md. 372KB tech report fully ingested 2026-06-03.",
+      "body_excerpt": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Team, June 2, 2026. 109-page tech report. 1T MoE / 35B active params, LatentMoE architecture, modified GRPO with adaptive entropy control, 8K GB200 training."
+    },
+    {
+      "filename": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "action": "skip",
+      "reason": "Already captured. entities/dwarkesh-patel.md updated with interview reference 2026-06-05. concepts/agi-economics.md exists.",
+      "body_excerpt": "AGI Economics podcast episode with Alex Imas (Jane Street, Director of AGI Economics) and Phil Trammell. Topics: capital share post-AGI, taxing AI wealth, developing country positioning."
+    },
+    {
+      "filename": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "action": "skip",
+      "reason": "Already captured in entities/ed-zitron.md with dedicated 'AI Doesn't Have ROI — Enterprise Cost Crisis' section.",
+      "body_excerpt": "Ed Zitron on AI ROI: Uber COO 'getting harder to justify' AI spend, $500M accidental Anthropic spend, tokenmaxxing backlash, enterprise AI cost scrutiny."
+    },
+    {
+      "filename": "paulgraham.com--popular-html--c633a6dc.md",
+      "url": "http://www.paulgraham.com/popular.html",
+      "action": "skip",
+      "reason": "Out of scope. 2001 essay about programming language popularity factors (merits vs external forces, hacker preferences), not AI/LLM-specific.",
+      "body_excerpt": "Paul Graham essay on why programming languages become popular. 'Programming languages are tools, designed for people.' Analysis of hacker preferences vs language designer priorities."
+    },
+    {
+      "filename": "danluu.com--cache-incidents--1d05e743.md",
+      "url": "https://danluu.com/cache-incidents/",
+      "action": "skip",
+      "reason": "Out of scope. Twitter cache incident analysis (2012-2022), distributed systems engineering, memcached failure modes — not AI/LLM-relevant.",
+      "body_excerpt": "Dan Luu + Yao Yue co-authored analysis of SEV-0/SEV-1 cache incidents at Twitter. 6 SEV-0s, 6 SEV-1s over 10 years. Knowledge preservation and distributed systems failure pattern analysis."
+    }
+  ]
+}
