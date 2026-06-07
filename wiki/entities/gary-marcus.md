@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-05
+updated: 2026-06-07
 tags:
   - lab
   - benchmark
@@ -23,6 +23,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-breaking-bad-news-for-three-of-the--1abe3375.md
   - raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md
   - raw/articles/garymarcus.substack.com--p-why-things-will-eventually-fall-apart--aa0d561a.md
+  - raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md
 ---
 
 # Gary Marcus
@@ -155,6 +156,19 @@ On June 4, 2026, Anthropic published a blog post titled "When AI builds itself" 
 - **S&P 500 rules win**: Marcus also reports that S&P Dow Jones Indices officially declined to change inclusion rules for megacap IPOs (SpaceX, OpenAI), a policy outcome he advocated for in his May 2026 essay "This one weird trick might cost your retirement fund billions." He celebrates this as a win for retail investor protection.
 
 Source: [[raw/articles/garymarcus.substack.com--p-no-need-to-panic-about-anthropics--1d1bcf86.md]]
+
+### AI's Black Friday — Market Crash & Government Bailouts (Jun 2026)
+
+On June 5-6, 2026, Marcus published "AI's Black Friday" documenting a **$500 billion+ one-day market value wipeout** across AI and semiconductor stocks:
+
+- **Broadcom catalyst**: Broadcom's disappointing earnings forecast on Thursday June 5 triggered a cascading selloff across chip and AI stocks (NVIDIA, Micron, GPU leasers CoreWeave and Nebius, plus Oracle, Microsoft, Meta)
+- **South Korea rout**: The KOSPI plunged -5.5% on Friday with Samsung Electronics falling -6.4% and SK Hynix collapsing -9.9% — described as first visible cracks in the Asian AI-driven stock market bubble
+- **Government bailout discussions**: Simultaneously, the Trump administration was reported discussing possible government equity stakes in AI startups. Marcus presciently flagged this as validating his January 2025 prediction that LLMs would be declared "too big to fail," with arguments about needing to "not lose to China" justifying multibillion-dollar bailouts
+- **No path to profitability**: Marcus argued the government equity discussions prove AI companies have no path to profitability on their own — they need to "socialize losses" by selling stakes to the government
+
+Marcus's core thesis: the market is starting to price in the gap between AI narrative and financial reality. Government bailout discussions are a **leading indicator that the private sector can no longer sustain the current AI investment trajectory**.
+
+Source: [[raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md]]
 
 ### Key Works
 

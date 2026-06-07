@@ -4,7 +4,7 @@ created: 2026-05-05
 updated: 2026-06-07
 type: concept
 tags: [prediction, safety, alignment, training, benchmark, automation]
-sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-06-05-ainews-not-much-happened-today.md, raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md]
+sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-06-05-ainews-not-much-happened-today.md, raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md, raw/articles/2026-06-07_anthropic_recursive-self-improvement.md]
 ---
 
 # Recursive Self-Improvement
@@ -116,6 +116,35 @@ The concept of an "intelligence explosion" was first formalized by I.J. Good in 
 > "Let an ultraintelligent machine be defined as a machine that can far surpass all the intellectual activities of any man however clever. Since the design of machines is one of these intellectual activities, an ultraintelligent machine could design even better machines; there would then unquestionably be an 'intelligence explosion,' and the intelligence of man would be left far behind."
 
 The 80% code self-writing milestone represents the most concrete empirical evidence to date that Good's theoretical framework may be materializing in practice, at least for the first several iterations of the loop.
+
+## Anthropic Official Declaration (June 2026)
+
+On June 4, 2026, the Anthropic Institute published "When AI builds itself" — an official declaration of their stance on recursive self-improvement as their path forward. Authored by Marina Favaro and Jack Clark, the article represents the first time a frontier AI lab has publicly and comprehensively framed RSI as both a strategic imperative and a near-term trajectory.
+
+### Key Declarations
+
+1. **RSI as official path forward**: Anthropic explicitly states it is "delegating a growing share of AI development to AI systems themselves" and frames this as a trend pointing toward "an AI system capable of fully autonomously designing and developing its own successor." While noting RSI is "not inevitable," they argue "it could come sooner than most institutions are prepared for."
+
+2. **8x code output with Claude's autonomous help**: Engineers now ship 8x as much code per quarter compared to 2021-2025. More than 80% of code merged into Anthropic's codebase is authored by Claude (May 2026). Internal polling of 130 researchers found median estimated 4x productivity gain with Mythos Preview. Claude shipped over 800 bug fixes in one month that reduced a class of API errors 10-fold.
+
+3. **Research automation advancing**: Claude's success rate on open-ended engineering tasks reached 76% in May 2026 (up 50pp in six months). In April 2026, Anthropic published the first demonstration of a Claude-powered agent running an open-ended research project end-to-end in AI safety. Claude judged better than human researchers at steering ~40% of research decision points.
+
+4. **Trillion-dollar valuation narrative**: The article's framing serves dual purposes — it is simultaneously a technical roadmap and a valuation narrative supporting Anthropic's ~$1T valuation target and imminent IPO (S-1 filed June 2026). By articulating RSI as their explicit strategy, Anthropic positions itself as the lab best positioned to capture the compounding returns of AI-accelerated AI development.
+
+5. **AGI-timeline accelerator**: The evidence presented collapses timelines. METR task horizons show doubling every 4 months (up from 7 months). If sustained, AI systems could handle tasks taking a skilled person *weeks* by 2027. The article outlines three scenarios: Continuation (steady acceleration), Acceleration (fast takeoff surpassing human AI R&D), and Failure (plateau from fundamental limitations).
+
+6. **Policy stance on pausing**: Anthropic expresses desire for a "meaningful slowdown or pause" option but acknowledges practical barriers — requiring multiple well-resourced labs in multiple countries agreeing to stop under verifiable conditions. They commit to organizing conversations with policymakers, researchers, and civil society.
+
+### Community Response
+
+The article sparked a **692-comment Hacker News discussion** ([thread](https://news.ycombinator.com/item?id=...)), indicating the scale of community engagement and concern. Key themes included:
+
+- **Skepticism about "8x"**: Many commenters questioned whether lines-of-code is a meaningful productivity metric, noting that AI-generated code may require more review and refactoring
+- **Gary Marcus's critique**: Characterized the capability as "faster coding — entirely under human control," arguing true AGI/RSI requires more than code generation speed
+- **Safety concerns**: Debates about whether Anthropic's safety-first framing is genuine or a competitive positioning strategy
+- **Governance urgency**: Recognition that verification regimes (like INF Treaty) took decades to build — time the AI community may not have
+
+This official declaration elevates RSI from a theoretical concept discussed by researchers to a stated corporate strategy with trillions of dollars of capital aligned behind it.
 
 
 ## Related

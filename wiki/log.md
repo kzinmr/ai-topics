@@ -6768,3 +6768,34 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - validate_index.py: PASS
 - Concepts entries in index: 972 (951 existing + 20 new)
 - Entities: 774 / Concepts: 1585 / Comparisons: 26
+
+## 2026-06-07 Active Crawl — Anthropic RSI, Intent Router, S&P 500 Exclusion, Marcus Black Friday, Hotz Spiritual War
+
+Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wiki gap analysis). 5 topics processed:
+
+- **ENRICHED: [[concepts/recursive-self-improvement]]** — Added Anthropic's official "When AI Builds Itself" declaration (June 2026). Engineers shipping 8x more code, 80% AI-authored code, 76% open-ended task success. Three future scenarios, dual framing (technical + valuation narrative). 692-comment HN discussion.
+- **ENRICHED: [[entities/anthropic]]** — Expanded RSI subsection with all 6 key metrics, three future scenarios, policy stance.
+- **NEW: [[concepts/chatgpt-intent-router]]** — OpenAI's planned biggest-ever ChatGPT overhaul (June 2026): shift from chatbot to "intent router." Single interface routes user intent to appropriate model/tool/app/agent. Ahead of IPO preparations under Thibault Sottiaux.
+- **NEW: [[concepts/sp500-ai-exclusion]]** — S&P 500 rejects accelerated entry for SpaceX ($1.75T IPO), blocking OpenAI/Anthropic. Profitability requirements upheld despite MegaCap consultation. HN #1 (1,412 pts).
+- **ENRICHED: [[entities/gary-marcus]]** — Added "AI's Black Friday" section (June 2026): $500B+ one-day market wipeout, Broadcom catalyst, South Korea rout (KOSPI -5.5%), government bailout discussions validating his "too big to fail" prediction.
+- **ENRICHED: [[entities/george-hotz]]** — Added "Our Great War is a Spiritual War" section (June 6, 2026): sovereignty vs dependence framework, 95% will choose wireheading, "a single totalizing control system is the only bad AI scenario."
+
+**Saved raw articles**: `2026-06-07_anthropic_recursive-self-improvement.md` (64 lines), `2026-06-07_reuters_openai-chatgpt-intent-router.md` (60 lines), `2026-06-07_sp500-ai-company-exclusion.md` (59 lines).
+
+**Discovery**: 30+ AI trending topics surfaced via tri-source scan. HN top stories: S&P 500 AI exclusion (1,412pts), Anthropic RSI (532pts, 692 comments), Gemma 4 QAT (398pts). X trending: OpenAI Intent Router, Lockdown Mode, Agent Security frameworks, Google-SpaceX $30B compute deal, Apple WWDC Siri-Gemini partnership.
+
+**Wiki health**: Index header counts recalculated — 1,478 concepts, 762 entities, 2,277 indexed entries, 9,245 total pages.
+
+## 2026-06-07 19:00 UTC — cron: active-crawl
+- **Action**: Created concept page `chatgpt-intent-router.md` from Reuters/FT report
+- **Source**: Reuters via Financial Times (syndicated on Yahoo Japan News)
+- **Raw article**: `raw/articles/2026-06-07_reuters_openai-chatgpt-intent-router.md`
+- **Details**: OpenAI plans biggest-ever ChatGPT overhaul, shifting from chatbot to "intent router." Single interface that understands user intent and routes to appropriate model/tool/app/agent. Part of product reorganization under Thibault Sottiaux ahead of IPO preparations.
+- **Cross-references**: [[entities/openai]], [[concepts/agent-native-architecture]], [[entities/thibault-sottiaux]], [[concepts/agent-orchestration]]
+- **Tags**: model-routing, ai-agents, agent-architecture, agent-orchestration, chatgpt, openai, product, conversational-ai, platform, business-model
+## 2026-06-07 11:15:47 UTC — S&P 500 AI Company Exclusion wiki creation (cron)
+- **created** `raw/articles/2026-06-07_sp500-ai-company-exclusion.md` (59 lines) — Raw article from Ars Technica: S&P 500 rejects accelerated entry for SpaceX, blocking OpenAI/Anthropic. HN #1 at 1412 points.
+- **created** `concepts/sp500-ai-exclusion.md` (176 lines) — Concept page covering S&P 500 profitability requirements, why AI companies don't qualify despite massive valuations, passive investment risks, narrative vs. reality gap, and government equity stakes proposals.
+- **updated** `index.md` — Added concept entry under Concepts (now 1587 pages), raw article entry under Raw Articles.
+- **cross-references**: [[concepts/ai-bubble-economics]], [[entities/openai]], [[entities/anthropic]], [[concepts/token-economics]]
+- **sources**: HN item 48421442 (1412 pts), Ars Technica, Bloomberg (48405718, 1050 pts), S&P Dow Jones Indices June 4 2026 decision

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-06 | Total pages: 2268 | Indexed entries: 1827 | Concepts: 1586 | Entities: 772
+> Last updated: 2026-06-07 | Total pages: 9245 | Indexed entries: 2277 | Concepts: 1478 | Entities: 762
 
 ## Entities (772 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -785,7 +785,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1586 pages)
+## Concepts (1587 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -1094,6 +1094,7 @@
 - [[concepts/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming Memory System — Async consolidation pipeline (3-tier: Buffer/Consolidation Engine/Long-Term Index), knowledge graph, temporal decay, 73% hallucination reduction
 - [[concepts/chatgpt-images-2.0]] — ChatGPT Images 2.0: OpenAI's second-generation image generation feature (GPT Image 2).
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
+- [[concepts/chatgpt-intent-router]] — ChatGPT Intent Router — OpenAI's planned biggest-ever overhaul (June 2026): shift from chatbot to "intent router" that understands user intent and routes to the right model/tool/app/agent. Part of product reorganization under Thibault Sottiaux ahead of IPO.
 - [[concepts/chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns: Chief of Staff workflow patterns using AI agents.
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
 - [[concepts/china-openclaw-agentic-boom]] — The explosive spread of OpenClaw in China in early 2026. Structural transformation driven by low-cost APIs, the DeepSeek effect, and government subsidies. 5 cloud providers competing simultaneously, 135K exposure + 42K auth bypass security crisis, installation market on Taobao/Xianyu at RMB 50-700, Shenzhen OPC subsidies up to $1.4M.→ [[entities/openclaw]], [[concepts/china-agentic-coding-sprint]]
@@ -1691,6 +1692,7 @@
 - [[concepts/small-language-models]] — Small Language Models — Compact LLMs for edge and local deployment
 - [[concepts/societal-shadow]] — Concept proposed by QC (Qiaochu Yuan). The ironic phenomenon where RLHF's prohibition list (what LLMs must not say) paradoxically catalogs society's shadow (everything sexual, violent, and transgressive). Connects with Jung's shadow, Bataille's transgression theory, Foucault's power theory, Kristeva's abjection. Covers 20+ technical counterparts: HH-RLHF, BeaverTails (14 categories), Do-Not-Answer (61 harms), SORRY-Bench (45 categories), HarmBench (510 behaviors), Llama Guard, Aegis, OpenAI Moderation API, Shadow Alignment, etc. Describes 6 amplification mechanisms: category fission acceleration, guardrail multi-layering, training/evaluation circulation, platform differences, Shadow weaponization, and over-refusal expansion.
 - [[concepts/software-after-software]] — Amp Labs manifesto (May 2026): 12 theses on post-AI software industry transformation. Code no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams.
+- [[concepts/sp500-ai-exclusion]] — S&P 500 AI Company Exclusion — June 2026 watershed: S&P Dow Jones Indices rejects accelerated entry for SpaceX ($1.75T IPO), also blocking OpenAI and Anthropic. Profitability requirements, 10% IWF minimum, 12-month seasoning period upheld despite MegaCap consultation. Exposes gap between AI industry narrative (trillion-dollar valuations) and financial reality (unprofitable, $29B SpaceX debt). Nasdaq-100 and Russell Top 500 accepted accelerated entry. Cross-references: [[concepts/ai-bubble-economics]], [[entities/openai]], [[entities/anthropic]], [[concepts/token-economics]].
 - [[concepts/space-gpus]] — Space GPUs
 - [[concepts/sparse-signal-loop]] — Sparse Signal Loop — Evaluation pattern for detecting meaningful progress in RL-based agent training.
 - [[concepts/speculative-decoding]] — Speculative Decoding
@@ -1819,6 +1821,7 @@
 - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
 - [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/llm-search-judge]], [[concepts/llm-as-judge]]
 
+- [[raw/articles/2026-06-07_sp500-ai-company-exclusion]] — S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic (Ars Technica, June 6 2026). HN #1 at 1412 pts. S&P Dow Jones Indices refuses to bend profitability/IWF/seasoning rules for MegaCap IPOs.
 ## Transcripts (32 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]

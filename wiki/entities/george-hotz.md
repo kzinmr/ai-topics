@@ -6,17 +6,17 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-06-03
+updated: 2026-06-07
 tags:
   - entity
   - person
   - security
   - open-source
-  - autonomous-driving
   - model
   - infrastructure
 sources:
   - entities/geohot-github-io
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-06-our-great-war-html--b0d9abd3.md
 ---
 
 # George Hotz
@@ -107,7 +107,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2023 (May)** | tiny corp raises $5.1M for ML hardware and tinygrad development. |
 | **2025** | openpilot supports 300+ vehicle models with 100M+ miles driven. |
 | **2025 (Nov)** | Departs comma.ai entirely. |
-| **2026** | Active on tinygrad, tinybox, and blogging prolifically at geohot.github.io. |
+| **2026 (Jun 6)** | Publishes "Our Great War is a Spiritual War" — warns that totalizing AI control systems represent "the only bad AI scenario"; advocates for sovereignty over dependence. |
 
 ---
 
@@ -173,6 +173,21 @@ In his May 2026 blog post ["AI will create jobs"](https://geohot.github.io//blog
 - **"There will be more to do than ever before"**: Hotz's conclusion is that AI agents, like immigrants, create new categories of work that are currently unimaginable, and that total employment will increase, not decrease.
 
 This post connects to his broader [[concepts/bitter-lesson|Bitter Lesson]] philosophy — that leveraging raw computation (and by extension, AI agents) beats hand-optimization — and extends it into labor economics.
+
+### Our Great War is a Spiritual War — Sovereignty vs Dependence (Jun 2026)
+
+In his June 6, 2026 post ["Our Great War is a Spiritual War"](https://geohot.github.io//blog/jekyll/update/2026/06/06/our-great-war.html), Hotz frames the AI future as an existential choice between **sovereignty and dependence**:
+
+- **Core question**: Why do people want the centralized world, the administered reality, to be managed? The answer — they prioritize convenience, safety, and comfort — will kill them in the coming world
+- **Technology removes natural friction**: Machines will do all work, eliminate forced human interaction, and remove all natural checks (disease, cold, violence). The people who lean into this will become "purposeless serfs in a neo-feudal empire" — valued only by a "sadistic desire by their master to control others"
+- **"Outsourcing the self" — death by wireheading**: Hotz describes a person whose agentic loop is entirely managed by external systems as "no longer an alive human being. This is simply death" — cells may replicate and hearts beat, but "there's no longer a you"
+- **95% will choose dependence**: Hotz accepts this majority choice, comparing it to the right to suicide. "The sooner the aspiring wireheads go their own way, the better"
+- **The only bad AI scenario**: A single totalizing control system, "regardless of how well-intentioned the builders think they are." He asks: "Why would you possibly help build it?"
+- **Binary framing**: Inside every person there is the "citizen and the serf." Technology either makes people more sovereign or lures them into dependence. "The current incarnation of the machine God will set you free only in the same way a fentanyl overdose will"
+
+This essay represents Hotz's most dramatic philosophical statement on AI, extending his earlier contrarian AI safety views (concentration of power as the real risk) toward a stark libertarian warning: **structural exit must be preserved**, or the only outcome is universal dependence followed by spiritual death.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-06-our-great-war-html--b0d9abd3.md]]
 
 ---
 

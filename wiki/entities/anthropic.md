@@ -32,6 +32,7 @@ sources: [
   - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
   - raw/newsletters/2026-05-26-the-pope-and-anthropic-partner-on-the-ai-ethics-debate.md
   - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
+  - raw/articles/2026-06-07_anthropic_recursive-self-improvement.md
 ]
 related: []
 ---
@@ -94,13 +95,34 @@ Directory now exceeds **200 connectors** total.
 
 ### Recursive Self-Improvement & Code Self-Generation (June 2026)
 
-In June 2026, Anthropic disclosed that **Claude now writes more than 80% of the code merged into its own codebase** — a significant milestone toward [[concepts/recursive-self-improvement]]. The revelation came via a company post titled "When AI builds itself" (June 4, 2026) which stated:
+On June 4, 2026, the Anthropic Institute published **"When AI builds itself"** — the company's official declaration framing recursive self-improvement as its explicit strategic path forward. Authored by Marina Favaro and Jack Clark, the article represents the most comprehensive public disclosure by any frontier lab of internal AI-accelerated development metrics.
 
-> "Our internal data shows Claude is accelerating AI development — a possible path to recursive self-improvement, or AI autonomously building a more capable successor."
+**Official declaration**: Anthropic explicitly states it is "delegating a growing share of AI development to AI systems themselves" and frames this as trending toward "an AI system capable of fully autonomously designing and developing its own successor." While noting RSI is "not inevitable," they argue "it could come sooner than most institutions are prepared for."
 
-The 80% figure was met with both alarm and skepticism. [[entities/gary-marcus]] characterized the post as describing "faster coding — entirely under human control" and argued that the results demonstrate RSI (AI as a useful coding tool) rather than AGI. The internal data suggests Claude's role in Anthropic's own development pipeline has crossed a critical threshold where the majority of code contributions are now AI-generated.
+**Key metrics disclosed**:
+- **8x code output**: Engineers ship 8x as much code per quarter vs. 2021-2025 baseline
+- **>80% AI-authored code**: Claude writes >80% of code merged into Anthropic's codebase (May 2026), up from low single digits before Claude Code (Feb 2025)
+- **4x productivity**: Internal poll of 130 researchers found median ~4x output gain with Mythos Preview
+- **76% open-ended task success**: Claude's success rate on hardest engineering tasks reached 76% (up 50pp in 6 months)
+- **40% research steering**: Claude judged better than human researchers at ~40% of research decision points (n=129)
+- **800+ bug fixes**: Claude shipped 800+ fixes in April 2026, reducing a class of API errors 10-fold
+
+**Three future scenarios outlined**: (1) Continuation — steady acceleration with AI handling more of AI dev, (2) Acceleration — fast takeoff surpassing human AI R&D capabilities, (3) Failure — plateau from fundamental limitations.
+
+**Dual framing**: The article serves simultaneously as technical roadmap and valuation narrative supporting Anthropic's ~$1T valuation target and imminent IPO (S-1 filed June 2026). By articulating RSI as explicit strategy, Anthropic positions itself to capture compounding returns of AI-accelerated AI development.
+
+**Policy stance**: Anthropic expresses desire for a "meaningful slowdown or pause" option but acknowledges practical barriers requiring multi-lab, multi-country coordination. They commit to organizing policy conversations about RSI governance.
+
+**Community response**: The article sparked a **692-comment Hacker News discussion**, reflecting intense community engagement. Key reactions:
+- **Skepticism**: [[entities/gary-marcus]] characterized results as "faster coding — entirely under human control" rather than true AGI/RSI
+- **Metric debates**: Lines-of-code as productivity proxy heavily contested; some argued AI-generated code requires more review
+- **Governance urgency**: Verification regimes for complex tech (e.g., INF Treaty) took decades — time the AI community may not have
+
+The 80% code self-generation figure was met with both alarm and skepticism. Marcus argued the results demonstrate RSI (AI as a useful coding tool) rather than AGI. The internal data suggests Claude's role in Anthropic's own development pipeline has crossed a critical threshold where the majority of code contributions are now AI-generated.
 
 This development sits alongside Claude's [[concepts/agentic-engineering]] capabilities and [[concepts/claude-managed-agents]] platform as part of a broader acceleration in Anthropic's internal AI R&D pipeline.
+
+> Full article: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement]]
 
 ### Claude Design (Apr 2026)
 
