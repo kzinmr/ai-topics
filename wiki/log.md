@@ -7,12 +7,14 @@
 - Being Popular (paulgraham.com, 2001) → skip: out of scope (programming language popularity theory, not AI/LLM)
 - Twitter Cache Incidents (danluu.com) → skip: out of scope (distributed systems reliability, not AI/LLM)
 
+---
 ## 2026-06-07 Blog Wiki Ingest (Eli Bendersky Greenfield Agent Workflow)
 
 - Created: [[concepts/llm-assisted-development]] — Stub enriched to full page (greenfield vs rewrite paradigms, CL discipline, test-first strategy, Go advantage, junior/senior guidance)
 - Updated: [[entities/eli-thegreenplace-net]] — Added watgo timeline entry, Greenfield Agent Workflow subsection, Recent Themes update
 - Source: raw/articles/eli.thegreenplace.net--2026-thoughts-on-starting-new-projects-with-llm-agents--7d421bbe.md
 
+---
 ## 2026-06-07 Newsletter Wiki Ingest (Superintelligence RSI)
 
 - Created: —
@@ -22,8 +24,11 @@
 - Source: raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
 
 |---
+---
 ## 2026-06-06 Dreaming Wiki Ingest — Pinecone Nexus Benchmarks, Hebbia June Updates, Glean MCP Gateway, Nesbitt Security Survey
+---
 ## 2026-06-06 raw-backlog-ingest Triage (Batch 20260606T200041Z)
+---
 ## 2026-06-07 raw-backlog-ingest Triage (Batch 20260607T040041Z)
 
 5 articles triaged from raw backlog. Takes=0 (all skip).
@@ -6778,6 +6783,7 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - Concepts entries in index: 972 (951 existing + 20 new)
 - Entities: 774 / Concepts: 1585 / Comparisons: 26
 
+---
 ## 2026-06-07 Active Crawl — Anthropic RSI, Intent Router, S&P 500 Exclusion, Marcus Black Friday, Hotz Spiritual War
 
 Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wiki gap analysis). 5 topics processed:
@@ -6795,6 +6801,7 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 
 **Wiki health**: Index header counts recalculated — 1,478 concepts, 762 entities, 2,277 indexed entries, 9,245 total pages.
 
+---
 ## 2026-06-07 19:00 UTC — cron: active-crawl
 - **Action**: Created concept page `chatgpt-intent-router.md` from Reuters/FT report
 - **Source**: Reuters via Financial Times (syndicated on Yahoo Japan News)
@@ -6802,9 +6809,45 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Details**: OpenAI plans biggest-ever ChatGPT overhaul, shifting from chatbot to "intent router." Single interface that understands user intent and routes to appropriate model/tool/app/agent. Part of product reorganization under Thibault Sottiaux ahead of IPO preparations.
 - **Cross-references**: [[entities/openai]], [[concepts/agent-native-architecture]], [[entities/thibault-sottiaux]], [[concepts/agent-orchestration]]
 - **Tags**: model-routing, ai-agents, agent-architecture, agent-orchestration, chatgpt, openai, product, conversational-ai, platform, business-model
+---
 ## 2026-06-07 11:15:47 UTC — S&P 500 AI Company Exclusion wiki creation (cron)
 - **created** `raw/articles/2026-06-07_sp500-ai-company-exclusion.md` (59 lines) — Raw article from Ars Technica: S&P 500 rejects accelerated entry for SpaceX, blocking OpenAI/Anthropic. HN #1 at 1412 points.
 - **created** `concepts/sp500-ai-exclusion.md` (176 lines) — Concept page covering S&P 500 profitability requirements, why AI companies don't qualify despite massive valuations, passive investment risks, narrative vs. reality gap, and government equity stakes proposals.
 - **updated** `index.md` — Added concept entry under Concepts (now 1587 pages), raw article entry under Raw Articles.
 - **cross-references**: [[concepts/ai-bubble-economics]], [[entities/openai]], [[entities/anthropic]], [[concepts/token-economics]]
 - **sources**: HN item 48421442 (1412 pts), Ars Technica, Bloomberg (48405718, 1050 pts), S&P Dow Jones Indices June 4 2026 decision
+
+## 2026-06-07 17:35 UTC — Watchdog Auto-Fix
+
+### Pipeline Watchdog
+- **x_accounts** stale(26h): FALSE POSITIVE — job runs every 48h (*/2 schedule). No action needed.
+- No pipeline chain breaks detected.
+
+### Wiki Health
+- Entities: 772 pages (filesystem) ✅
+- Concepts: 1586 pages (filesystem) ✅
+- Comparisons: 26 pages ✅
+- Queries: 3 pages ✅
+- Events: 8 pages ✅
+- Total L2 pages: 2395
+- Stale pages: 1265 (>30 days, report only)
+- Unprocessed raw articles: 4064 of 6850 (report only)
+- Orphan pages: 589 (report only, not in index)
+
+### Auto-Fixes Applied
+- ✅ Log.md: Added 8 missing `---` separators between consecutive `##` date headers
+- ✅ Index.md summary line: Updated counts — Indexed entries 2277→1830, Concepts 1478→1586, Entities 762→772
+- ✅ Index.md Concepts header: 1587→1586 (aligned with filesystem count)
+
+### No Corruption Found
+- Pipe table corruption: 0
+- Line prefix corruption: 0
+- Triple brackets: 0
+- Exact duplicate index entries: 0
+- Missing log separators: 0 (was 8, now fixed)
+
+### Notes
+- **koylan-ai** vs **muratcan-koylan** duplicate flagged by graph analysis: both entities exist, likely same person (@koylanai). Requires human review for merge decision.
+- 589 orphan pages — too many for batch addition, requires triage
+- Concepts header off by 1 (1587 vs 1586 fs count) — corrected
+- Summary line counts were significantly stale — corrected
