@@ -1,3 +1,12 @@
+## 2026-06-07 raw-backlog-ingest Triage (Batch 20260607T120040Z)
+
+5 articles triaged from raw backlog. Takes=0 (all skip).
+- MAI-Thinking-1 Tech Report (microsoft.ai, 109p) → skip: concepts/mai-thinking-1-tech-report.md fully covers (MoE architecture, 33.5T tokens, RL recipe, benchmarks)
+- AGI Economics Interview (dwarkesh.com) → skip: concepts/agi-economics.md created from this source (relational sector, labor share, tax/redistribution, Jevons paradox, O-ring theory)
+- Ed Zitron AI ROI (wheresyoured.at) → skip: entities/ed-zitron.md has dedicated ROI section (Uber $500M, Walmart Code Puppy, Bain & Co survey, SemiAnalysis Dark Output)
+- Being Popular (paulgraham.com, 2001) → skip: out of scope (programming language popularity theory, not AI/LLM)
+- Twitter Cache Incidents (danluu.com) → skip: out of scope (distributed systems reliability, not AI/LLM)
+
 ## 2026-06-07 Blog Wiki Ingest (Eli Bendersky Greenfield Agent Workflow)
 
 - Created: [[concepts/llm-assisted-development]] — Stub enriched to full page (greenfield vs rewrite paradigms, CL discipline, test-first strategy, Go advantage, junior/senior guidance)
