@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-07 | Total pages: 9245 | Indexed entries: 1830 | Concepts: 1586 | Entities: 772
+> Last updated: 2026-06-07 | Total pages: 9245 | Indexed entries: 1850 | Concepts: 1586 | Entities: 772
 
 ## Entities (772 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -1404,6 +1404,26 @@
 - [[concepts/harness-engineering/agentic-workflows/context-window-management]] — Context Window Management
 - [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — First Run the Tests
 - [[concepts/harness-engineering/agentic-workflows/hoard-things-you-know]] — Hoard Things You Know How to Do
+- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] -- How Coding Agents Work
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] -- Interactive Explanations
+- [[concepts/harness-engineering/agentic-workflows/karpathy-rl-agents]] -- Karpathy RL Agents -- Agentic Research Loop
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] -- Linear Walkthroughs
+- [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] -- Prompt-Driven Development
+- [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] -- Red/Green TDD
+- [[concepts/harness-engineering/agentic-workflows/rodney]] -- Rodney -- Browser Automation CLI for Agents
+- [[concepts/harness-engineering/agentic-workflows/showboat]] -- Showboat
+- [[concepts/harness-engineering/agentic-workflows/subagents]] -- Subagents -- Parallel AI Agent Delegation
+- [[concepts/harness-engineering/agentic-workflows/throw-away-draft-pattern]] -- Throw-Away First Draft Pattern
+- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] -- Using Git with Coding Agents
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding]] -- Vibe Coding
+- [[concepts/harness-engineering/context-engineering]] -- Context Engineering -- Unified Framework for Context Optimization in AI Agent Systems
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] -- Advanced Tool Use
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] -- Agent Loop Orchestration
+- [[concepts/harness-engineering/system-architecture/agent-security-patterns]] -- Agent Security Patterns
+- [[concepts/harness-engineering/system-architecture/agent-skills]] -- Agent Skills (SKILL.md)
+- [[concepts/harness-engineering/system-architecture/ai-memory-systems]] -- AI Memory Systems -- ChatGPT vs Claude vs Cognition
+- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] -- Anthropic Memory Tool -- Cognition Strategic Follow-Up
+- [[concepts/harness-engineering/system-architecture/building-effective-agents]] -- Building Effective Agents
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
 - [[concepts/hegel-property-based-testing]] — Hegel: universal property-based testing protocol and family of libraries (Go, Rust, C++, TypeScript), built on Hypothesis engine. Client-server architecture: hegel-core Python backend + language SDKs over Unix socket. MIT license, by DRMacIver & team at Antithesis.
 - [[concepts/hermes-agent]] — Hermes Agent by Nous Research: self-evolving personal AI agent with three-tier memory, self-improving skills, GEPA optimization, multi-profile isolation, and plain-English cron. 140K+ GitHub stars. Comparison with OpenClaw.

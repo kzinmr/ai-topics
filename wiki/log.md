@@ -6851,3 +6851,14 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - 589 orphan pages — too many for batch addition, requires triage
 - Concepts header off by 1 (1587 vs 1586 fs count) — corrected
 - Summary line counts were significantly stale — corrected
+
+---
+## [2026-06-07] watchdog | Health auto-fix: orphan reconciliation (20 concepts)
+
+- **Phase 1 — Index integrity**: All checks clean — 0 pipe corruption, 0 line number prefix, 0 triple brackets, 0 space prefix, 0 duplicates, 0 ghost entries
+- **Phase 2 — Added 20 orphan index entries**: harness-engineering/agentic-workflows (how-agents-work, interactive-explanations, karpathy-rl-agents, linear-walkthroughs, prompt-driven-development, red-green-tdd, rodney, showboat, subagents, throw-away-draft-pattern, using-git-with-agents, vibe-coding), harness-engineering/context-engineering, harness-engineering/system-architecture (advanced-tool-use, agent-loop-orchestration, agent-security-patterns, agent-skills, ai-memory-systems, anthropic-memory-tool-cognition, building-effective-agents)
+- **Orphans skipped**: 436 stub/TODO pages (<30 lines or TODO marker)
+- **Remaining quality orphans**: 139 (for future runs)
+- **Index summary**: Indexed entries 1830→1850, Concepts section header unchanged (1586 filesystem), section headers: Entities 772, Concepts 1586, Comparisons 26, Events 8, Queries 3
+- **Total stale pages**: 1264 (oldest at 59 days — entities/muse-spark)
+- **Unprocessed raw articles**: 4064/6850 (59.3%)
