@@ -1,6 +1,16 @@
 |---
 ## 2026-06-06 Dreaming Wiki Ingest — Pinecone Nexus Benchmarks, Hebbia June Updates, Glean MCP Gateway, Nesbitt Security Survey
 ## 2026-06-06 raw-backlog-ingest Triage (Batch 20260606T200041Z)
+## 2026-06-07 raw-backlog-ingest Triage (Batch 20260607T040041Z)
+
+5 articles triaged from raw backlog. Takes=0 (all skip).
+- MAI-Thinking-1 Tech Report (microsoft.ai, 109p) → skip: concepts/mai-thinking-1-tech-report.md fully covers (MoE architecture, 33.5T tokens, RL recipe, benchmarks)
+- AGI Economics Interview (dwarkesh.com) → skip: concepts/agi-economics.md created from this source (relational sector, labor share, tax/redistribution, Jevons paradox, O-ring theory)
+- Ed Zitron AI ROI (wheresyoured.at) → skip: entities/ed-zitron.md has dedicated ROI section (Uber $500M, Walmart Code Puppy, Bain & Co survey, SemiAnalysis Dark Output)
+- Being Popular (paulgraham.com, 2001) → skip: out of scope (programming language popularity theory, not AI/LLM)
+- Twitter Cache Incidents (danluu.com) → skip: out of scope (distributed systems reliability, not AI/LLM)
+
+
 
 5 articles triaged from raw backlog. Takes=0 (all skip).
 
