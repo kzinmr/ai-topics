@@ -4,7 +4,7 @@ tags:
   - lab
   - search
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-07
 type: sub-entity
 ---
 
@@ -31,6 +31,19 @@ Instead of encoding queries and documents into single vectors (as in standard de
 | **PLAID** | CIKM 2022 | Efficient engine for late interaction retrieval (co-first with Santhanam) |
 | **WARP** | SIGIR 2025 | Efficient multi-vector retrieval engine (🏆 Best Paper) |
 | **ColBERT-serve** | ECIR 2025 | Multi-stage memory-mapped scoring for production scale |
+
+## Hypernetwork Vision (2024)
+
+In December 2024, Khattab revealed that the original vision for ColBERT went beyond late interaction — toward **hypernetwork-based, pruning-capable retrieval indexes**:
+
+> *"When building ColBERT, I assumed it will pave the way for hypernetwork-based, pruning-capable retrieval indexes. The big insight in ColBERT is that we can encode each document upfront *not* into a vector, but into a rich scoring function, f: query → float."*
+> — Omar Khattab (@lateinteraction), Dec 2024
+
+In this framing, ColBERT's document encoder acts as a **hypernetwork** — a network that generates the parameters of another network (the query-conditional scoring function). This is a deeper architectural claim than the standard "late interaction" narrative: each document is parameterized as a learned function, and retrieval indexes should be pruning-capable (selectively evaluating only promising documents) rather than brute-force scanning all candidates.
+
+This connects to Khattab's broader [[entities/omar-khattab/philosophy|Decomposition Philosophy]]: decomposing the monolithic "single vector per document" paradigm into compositional scoring functions that can be selectively evaluated.
+
+Source: [[raw/articles/2024-12-31_omar-khattab_colbert-hypernetwork-retrieval]]
 
 ## Impact
 

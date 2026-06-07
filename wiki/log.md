@@ -1,3 +1,19 @@
+## 2026-06-07 X Bookmarks Ingest — Omar Khattab ColBERT Hypernetwork Vision
+
+Batch of 2 bookmarks. 1 processed (new enrichment), 1 already-processed (skip).
+
+**Omar Khattab — ColBERT Hypernetwork Vision (★★★☆☆):**
+- Saved: [[raw/articles/2024-12-31_omar-khattab_colbert-hypernetwork-retrieval]] — 2024 thread fragment (truncated, full thread not accessible)
+- Enriched: [[entities/omar-khattab/colbert]] — Added "Hypernetwork Vision (2024)" section documenting the original vision: documents as rich scoring functions (not vectors), hypernetwork-based pruning-capable retrieval indexes, connection to Decomposition Philosophy (40→56 lines)
+- Engagement: 266 bookmarks, 332 likes
+- Note: Thread from 2024-12-31; API search returns empty, Nitter mirrors down — only first tweet available
+
+**Vivek Trivedy — The Anatomy of an Agent Harness (already processed):**
+- Article: "The Anatomy of an Agent Harness" (2026-03-10, LangChain blog, 5,208 bookmarks)
+- Already in wiki: [[raw/articles/2026-04-25-langchain-anatomy-agent-harness]], [[raw/articles/2041146899319971922_the-anatomy-of-an-agent-harness-]], [[entities/vtrivedy10]] (Timeline + Blog section), [[concepts/harness-engineering]]
+- Action: Skip (fully ingested by prior pipeline)
+
+Wiki pages: +1 raw article, +1 sub-entity enriched. Total pages: 9250 (raw articles not counted in total).
 ## 2026-06-07 X Accounts Scan — van Strien (polars-hf, uv-scripts-for-ai), Yan (security harness), Bakouch (Marin), Martin (Opus 4.8 tips)
 
 Batch of 11 new posts from X accounts scan (accounts_scanned=12, substantive_candidates=11). 8 AI-relevant posts processed across 4 contributors; 3 non-AI (Jonathan Whitaker DIY bio/music) skipped.
