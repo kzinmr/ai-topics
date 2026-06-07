@@ -2,7 +2,7 @@
 title: "Eli Bendersky"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-07
 type: entity
 ---
 
@@ -42,6 +42,7 @@ Bendersky's writing is characterized by methodical depth, mathematical rigor, an
 | 2026 | Published "Rewriting pycparser with the help of an LLM" — collaborating with Codex to replace PLY with a hand-written recursive-descent parser |
 | 2026 | Published "Compiling Scheme to WebAssembly" — adding WASM GC target to the Bob project |
 | 2026 | Published mathematical notes on Lagrange interpolating polynomials and linear algebra for polynomials |
+| 2026 | Published "Thoughts on starting new projects with LLM agents" — greenfield Go WASM project (watgo) methodology and agent workflow insights |
 
 ## Core Ideas
 
@@ -66,6 +67,18 @@ This philosophy directly motivated his 2026 pycparser rewrite: replacing the PLY
 ### LLMs as Collaborative Partners, Not Replacements
 
 Bendersky's 2026 post "Rewriting pycparser with the help of an LLM" is one of the most nuanced accounts of AI-assisted programming from an experienced systems programmer. He didn't ask an LLM to write the parser — he designed the approach, wrote the conformance tests, set up the prompts, reviewed the output iteratively, and made the architectural decisions:
+
+### Greenfield Agent Workflow (watgo Experience)
+
+In June 2026, Bendersky published a follow-up article documenting his experience with **watgo**, a from-scratch Go WASM tool built entirely with LLM agent collaboration. Unlike the pycparser rewrite (which had an existing codebase and test suite), watgo required a fundamentally different methodology:
+
+- **Design-first**: He iterated on the project design with the agent using a committed Markdown design document — creating a shared reference that persists across context windows
+- **CL discipline**: Kept change lists small and reviewable, using iterative refactoring rounds after each commit. Source control branches serve as safety nets for complex scenarios
+- **Test-suite-first**: The very first task was adapting the WASM spec test suites and wabt project tests — building the safety net before any production code
+- **Local CLI agent + VSCode diff**: Runs the agent in the repo terminal while reviewing changes in VSCode's diff view, manually committing only when satisfied
+- **Language advantage**: Found Go's readability ideology particularly beneficial for agent collaboration because humans spend ~99% reading agent code vs 1% writing it
+
+This greenfield methodology represents a distinct addition to his earlier rewrite-focused insights. The same core principles apply (conformance testing, human review, small CLs), but the execution order is reversed: design → test suite → implementation (greenfield) vs test suite → implementation (rewrite).
 
 > "Could I have done this myself, without an agent's help? Sure. But it would have taken me much longer, assuming that I could even muster the will and concentration to engage in this project. I estimate it would take me at least a week of full-time work."
 
@@ -164,7 +177,7 @@ This reflects his broader philosophy: claims without evidence are just opinions.
 
 ## Recent Themes (2024–2026)
 
-- **LLM-assisted development**: Using Codex for complex refactoring projects (pycparser rewrite)
+- **LLM-assisted development**: Using Codex for complex refactoring projects (pycparser rewrite, watgo greenfield Go WASM project)
 - **WebAssembly compilation**: Scheme → WASM, Go → WASM, C → WASM ABI exploration
 - **Compiler education**: Translating classic compiler tutorials to modern languages and targets
 - **Boring technology advocacy**: Arguing for proven tools augmented by LLMs over shiny new alternatives
@@ -199,3 +212,4 @@ This reflects his broader philosophy: claims without evidence are just opinions.
 ## References
 
 - eli.thegreenplace.net--2026-thoughts-on-webassembly-as-a-stack-machine--370f4288
+- raw/articles/eli.thegreenplace.net--2026-thoughts-on-starting-new-projects-with-llm-agents--7d421bbe.md

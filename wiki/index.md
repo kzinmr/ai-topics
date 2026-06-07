@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-06 | Total pages: 2267 | Indexed entries: 1826 | Concepts: 1585 | Entities: 772
+> Last updated: 2026-06-06 | Total pages: 2268 | Indexed entries: 1827 | Concepts: 1586 | Entities: 772
 
 ## Entities (772 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -785,7 +785,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1585 pages)
+## Concepts (1586 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -1456,6 +1456,7 @@
 - [[concepts/livecodebench]] — LiveCodeBench — contamination-free coding eval regularly sourced from LeetCode/AtCoder/CodeForces. 4 scenarios: code generation, self-repair, execution prediction. ICLR 2025 Poster.
 - [[concepts/llm-as-judge]] — LLM-as-Judge: Evaluation Frameworks & Bias Mitigation — Using LLMs to evaluate LLM outputs with known bias types
 - [[concepts/llm-as-judge-skills]] — Murat Can Koylan's reusable skills for LLM output evaluation. Part of Agent-Skills-for-Context-Engineering (15.5k stars). Context engineering approach to eval.
+- [[concepts/llm-assisted-development]] — LLM-Assisted Development — Methodology for using LLM coding agents in software development. Covers greenfield vs rewrite paradigms, CL size discipline, test-first strategy, language choice (Go advantage), human-in-the-loop categories, and junior vs senior guidance. Based on Eli Bendersky's pycparser rewrite and watgo greenfield project experiences.
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
 - [[concepts/llm-augmented-knowledge-retrieval]] — LLM-Augmented Knowledge Retrieval — Pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Retrieval-first organization for LLM-queryable vaults. Related: Claude Code + Obsidian integration, Karpathy's LLM Wiki concept.
 - [[concepts/llm-core]] — LLM Core

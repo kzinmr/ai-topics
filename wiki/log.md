@@ -1,3 +1,9 @@
+## 2026-06-07 Blog Wiki Ingest (Eli Bendersky Greenfield Agent Workflow)
+
+- Created: [[concepts/llm-assisted-development]] — Stub enriched to full page (greenfield vs rewrite paradigms, CL discipline, test-first strategy, Go advantage, junior/senior guidance)
+- Updated: [[entities/eli-thegreenplace-net]] — Added watgo timeline entry, Greenfield Agent Workflow subsection, Recent Themes update
+- Source: raw/articles/eli.thegreenplace.net--2026-thoughts-on-starting-new-projects-with-llm-agents--7d421bbe.md
+
 ## 2026-06-07 Newsletter Wiki Ingest (Superintelligence RSI)
 
 - Created: —
