@@ -1,0 +1,82 @@
+{
+  "run_id": "20260607T071055Z",
+  "triaged_at": "2026-06-07T07:15:00Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletter": {
+    "subject": "RSI - When AI Starts Building Its Own Successors",
+    "date": "2026-06-06",
+    "source_label": "uid=196",
+    "source_name": "Superintelligence (getsuperintel.site)",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md"
+  },
+  "link_resolution": {
+    "total_links": 17,
+    "article_links": 1,
+    "social_links": 8,
+    "footer_links": 8,
+    "details": {
+      "article": {
+        "url": "https://getsuperintel.site/p/rsi-when-ai-starts-building-its-own-successors",
+        "title": "RSI - When AI Starts Building Its Own Successors",
+        "paywalled": true,
+        "excerpt_available": true
+      },
+      "social": [
+        "https://x.com/kimmonismus",
+        "https://x.com/getsuperintel",
+        "https://www.instagram.com/getsuperintel",
+        "https://www.threads.com/@getsuperintel",
+        "https://www.youtube.com/channel/UCWrhMixNbAMghzS-SNiA3Ug",
+        "https://www.tiktok.com/@superintel_daily",
+        "https://www.linkedin.com/company/getsuperintel"
+      ]
+    }
+  },
+  "articles": [
+    {
+      "id": "a1",
+      "title": "RSI - When AI Starts Building Its Own Successors",
+      "url": "https://getsuperintel.site/p/rsi-when-ai-starts-building-its-own-successors",
+      "source": "Superintelligence newsletter",
+      "date": "2026-06-06",
+      "importance": "high",
+      "confidence": 0.8,
+      "paywalled": true,
+      "summary": "Analysis of Recursive Self-Improvement (RSI) in AI. Reports that Claude now writes >80% of code merged into its own codebase. References Anthropic's June 4, 2026 piece 'When AI builds itself' and Sam Altman's 'The Gentle Singularity' (June 2025). Distinguishes three gradations of RSI: broad (AI-assisted AI dev, already common), middle (AI automating significant chunks of AI research/engineering, key for 2026), and hard (full autonomous self-improvement, not yet demonstrated). Discusses I.J. Good's 1965 intelligence explosion concept.",
+      "wiki_relevance": {
+        "existing_pages_to_update": [
+          "entities/anthropic.md",
+          "entities/openai.md"
+        ],
+        "new_pages_suggested": [
+          "concepts/recursive-self-improvement"
+        ],
+        "tags": ["rsi", "recursive-self-improvement", "ai-safety", "ai-agents", "coding-agents", "anthropic", "claude", "intelligence-explosion"]
+      },
+      "key_claims": [
+        "Claude writes >80% of code merged into its own codebase (as of June 2026)",
+        "Anthropic published 'When AI builds itself' on June 4, 2026",
+        "Sam Altman referenced 'larval version of recursive self-improvement' in 'The Gentle Singularity' (June 2025)",
+        "Three gradations of RSI: broad, middle, hard",
+        "I.J. Good's 1965 intelligence explosion concept now seeing practical manifestations"
+      ],
+      "action_needed": "Full article behind paywall. Consider finding coverage of Anthropic's June 4, 2026 'When AI builds itself' piece from other sources. Update anthropic entity page with RSI claims. Create or update concepts/recursive-self-improvement page if corroborated by other sources."
+    }
+  ],
+  "summary": {
+    "total_articles": 1,
+    "critical": 0,
+    "high": 1,
+    "low": 0,
+    "skipped_social_links": 8,
+    "skipped_footer_links": 8,
+    "notes": [
+      "Only 1 substantive article in this newsletter (15 of 17 links were social media profiles and footer/subscription links)",
+      "Article is paywalled - only excerpt available (~1/3 of content)",
+      "Topic (RSI / recursive self-improvement) is highly relevant to wiki's AI safety and coding agents coverage",
+      "Source is 'Superintelligence' newsletter by getsuperintel.site - not yet in tracked sources",
+      "Key corroborating source to find: Anthropic's 'When AI builds itself' (June 4, 2026)"
+    ]
+  }
+}
