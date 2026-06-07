@@ -8,7 +8,7 @@ type: entity
 handle: "@realmcore_"
 name: Akira (Random Labs)
 created: 2026-04-13
-updated: 2026-06-03
+updated: 2026-06-07
 status: complete
 tags:
   - person
@@ -27,80 +27,80 @@ sources: []
 | **Blog** | [randomlabs.ai/blog](https://randomlabs.ai/blog) |
 | **Company** | Random Labs (YC S24, founded 2024 by Kiran & Mihir Chintawar) |
 | **Known for** | Slate: Thread Weaving, Episodic Memory, Swarm Orchestration, Skill Chaining |
-| **Bio** | Random LabsのAIエンジニアリングチーム。Slateの開発をリード。「RLM for coding」を提唱し、ReActとRLMを超える第3のアーキテクチャを構築。 |
+| **Bio** | AI engineering team at Random Labs. Leads Slate development. Advocates for "RLM for coding," building a third architecture beyond ReAct and RLM. |
 
 ## Overview
 
-Akira (@realmcore_) は Random Labs のAIエンジニアリングチームの中心的な声。同社は2024年設立、YC S24バッチのスタートアップで、創設者は **Kiran** と **Mihir Chintawar**。
+Akira (@realmcore_) is a key voice on the AI engineering team at **Random Labs**. The company was founded in 2024 as a YC S24 startup by **Kiran** and **Mihir Chintawar**.
 
-Random Labsは「ソフトウェア開発の次の2000万人のエンジニアをオンラインにする」ことをミッションとし、Slateをそのためのプラットフォームとして開発している。
+Random Labs' mission is "to bring the next 20 million engineers online for software development" and is building Slate as the platform to achieve this.
 
 ## Core Ideas
 
-### 1. Thread Weaving — エピソード記憶を持つSwarmアーキテクチャ
+### 1. Thread Weaving — A Swarm Architecture with Episodic Memory
 
-Slateの核心は**Thread Weaving**。OSのカーネルがプロセスを管理するように、LLMオーケストレーターがスレッドを管理する。
+The core of Slate is **Thread Weaving**. Just as an OS kernel manages processes, an LLM orchestrator manages threads.
 
 > "Instead of letting RAM fill until the process crashes, each thread return is a natural opportunity to decide what gets retained, what gets compressed, and what gets discarded."
 
-**スレッド**: 一度に1アクションを実行する汎用作業員。永続的なサブエージェントとは異なり、スレッドは一時停止して制御をオーケストレーターに戻す。コンテキストは**共有・合成可能**で、メッセージパッシングによる隔離ではない。
+**Threads**: General-purpose workers executing one action at a time. Unlike persistent sub-agents, threads can pause and return control to the orchestrator. Context is **shared and composable**, not isolated via message passing.
 
-**エピソード**: スレッドの完了したアクションシーケンスの圧縮表現。**真のエピソード記憶**として機能し、自然な圧縮境界となる。
+**Episodes**: Compressed representations of a thread's completed action sequences. They function as **true episodic memory** and serve as natural compression boundaries.
 
-**スレッド・ウィービング**: オーケストレーターがスレッドをディスパッチ → スレッド実行 → エピソード返却 → エピソードが後続スレッドの入力となる。静的な計画ではなく、**暗黙的で適応的なタスク分解**を可能にする。
+**Thread Weaving**: The orchestrator dispatches threads → threads execute → episodes are returned → episodes become input for subsequent threads. This enables **implicit, adaptive task decomposition** rather than static planning.
 
-### 2. RLM for Coding — RLMの実践的適用と批判的改良
+### 2. RLM for Coding — Practical Application and Critical Refinement
 
-Alex ZhangのRLM (Recursive Language Models) をコーディングエージェントに適用しつつ、その限界も認識している。
+Akira applies Alex Zhang's RLM (Recursive Language Models) to coding agents while also recognizing its limitations.
 
 > "We built RLM for coding. And it F*cking rocks. Swarm native agents are here to stay."
 
-**RLMの限界認識**:
-- RLM: 「Blind N-step execution」— 中間フィードバックなしでフルシーケンスをコミット
-- Slate: Thread Weavingで**中間状態の保持**を実現
+**RLM's recognized limitations**:
+- RLM: "Blind N-step execution" — commits full sequences without intermediate feedback
+- Slate: Thread Weaving provides **intermediate state preservation**
 
-**Random Labsの批判的立場** (Agent Wars 2026-03-13):
+**Random Labs' critical stance** (Agent Wars 2026-03-13):
 > "Random Labs says coding agents are patching over a problem they should be solving... both paradigms [RLM and ReAct] treat context management as an afterthought. RLMs externalize data into a Python REPL and hand analysis off to sub-LLMs. ReAct agents interleave reasoning traces with action steps. Random Labs argues that neither was built for the multi-hour, multi-file sessions that real software engineering demands."
 
 ### 3. Three Foundational Problems
 
-Random Labsが特定した現代のエージェントの3つの根本問題:
+Random Labs has identified three fundamental problems with modern agents:
 
-| 問題 | 説明 | 洞察 |
+| Problem | Description | Insight |
 |---|---|---|
-| **Long-Horizon Tasks** | パス依存のタスク（例: 複数ファイルに跨る変更） | 動的ワーキングメモリ、戦略的計画、中間適応が必要 |
-| **Working Memory & "Dumb Zone"** | コンテキストウィンドウが埋まるにつれLLMの注意力が非一様に劣化 | 「右端のDumb Zone — ウィンドウが埋まるほど注意力の質が劣化」全てのフロンティアモデルが suffer |
-| **Strategy vs. Tactics** | 戦略 = オープンエンドな計画 vs 戦術 = 局所実行シーケンス | ソフトウェア工学はこのスペクトラム全体をカバー: `bashコマンド実行`(戦術) vs `後方互換性のあるスキーマ設計`(戦略) |
+| **Long-Horizon Tasks** | Path-dependent tasks (e.g., changes spanning multiple files) | Requires dynamic working memory, strategic planning, and intermediate adaptation |
+| **Working Memory & "Dumb Zone"** | As the context window fills, LLM attention degrades non-uniformly | "The dumb zone at the right edge — attention quality degrades as the window fills." All frontier models suffer from this |
+| **Strategy vs. Tactics** | Strategy = open-ended planning vs Tactics = local execution sequences | Software engineering spans this entire spectrum: `bash command execution` (tactics) vs `backward-compatible schema design` (strategy) |
 
 ### 4. Prior Approaches & Critical Failure Modes
 
-| アプローチ | メカニズム | 致命的な失敗モード |
+| Approach | Mechanism | Critical Failure Mode |
 |---|---|---|
-| **Compaction** | 定期的にコンテキストをドロップ/要約 | **Lossy & unpredictable.** クリティカルな状態をドロップするリスク (Claude Code, Ralph Wiggum loop, Amp handoffs) |
-| **Subagents** | コンテキストを別エージェントインスタンスに隔離 | **Poor cross-context transfer.** レスポンスメッセージのみ返却; 中間状態の共有に失敗 |
-| **Markdown Planning** | 構造化ファイルによる事前計画の強制 | **3つの失敗モード:** 仕様不足の計画、不完全な実行、適応/更新の失敗。「knowledge overhang」に制限 |
-| **Task Trees (Direct Decomposition)** | リジッドなゲート付きステップ実行グラフ | **低表現力 & 非柔軟。** 新しい情報に適応不可; 自然言語の柔軟性を構造的硬直性とトレード |
-| **RLM (Recursive LM)** | Python REPLでの反復的・再帰的実行 | **Blind N-step execution.** 中間フィードバックなし; モデルがフルシーケンスを事前にコミット |
-| **Multi-Agent (Devin/Manus/Altera/Codex)** | 戦略化 → 委任 → 圧縮 → 同期 | **同期のボトルネック。** Sync = 遅い; Async = 調整の問題。圧縮境界がクリティカルな状態をドロップ |
+| **Compaction** | Periodically drop/summarize context | **Lossy & unpredictable.** Risk of dropping critical state (Claude Code, Ralph Wiggum loop, Amp handoffs) |
+| **Subagents** | Isolate context in separate agent instances | **Poor cross-context transfer.** Returns only response messages; fails to share intermediate state |
+| **Markdown Planning** | Enforce pre-planned structure via files | **3 failure modes:** under-specified plans, incomplete execution, failure to adapt/update. Limited by "knowledge overhang" |
+| **Task Trees (Direct Decomposition)** | Rigid gated step execution graph | **Low expressiveness & inflexibility.** Cannot adapt to new information; trades natural language flexibility for structural rigidity |
+| **RLM (Recursive LM)** | Iterative/recursive execution in Python REPL | **Blind N-step execution.** No intermediate feedback; model commits full sequence upfront |
+| **Multi-Agent (Devin/Manus/Altera/Codex)** | Strategize → Delegate → Compress → Synchronize | **Synchronization bottleneck.** Sync = slow; Async = coordination issues. Compression boundaries drop critical state |
 
-### 5. Knowledge Overhang — 潜在知識の解放
+### 5. Knowledge Overhang — Unlocking Latent Knowledge
 
 > "The gap between what an LLM *knows* and what it *chooses* to do."
 
-モデルが持つ潜在的な知能を、適切なコンテキスト管理とルーティングで引き出すアプローチ。Skillsは**プログレッシブ・ディスクロージャー**でアクティブ化/非アクティブ化され、限られたコンテキストスペース(200kトークン未満)を保護する。
+An approach that draws out the model's latent intelligence through proper context management and routing. Skills are activated/deactivated via **progressive disclosure** to protect the limited context space (under 200k tokens).
 
-### 6. Skill Chaining — 動的スキル定義
+### 6. Skill Chaining — Dynamic Skill Definition
 
-従来の「静的プロンプト」としてのスキル定義を批判:
+Critiques the traditional approach of skills as "static prompts":
 > "A skill should be something the agent does not something the agent reads."
 
-**Orchestration Skills**: ユーザーがアクティブ化するスキルが、他のスキルを参照して条件付きアクティベーションシーケンスを定義。プログラム的な自動化ワークフローを実現。
+**Orchestration Skills**: User-activated skills that reference other skills to define conditional activation sequences. Enables programmatic automation workflows.
 
 **Context Forking**:
-- インタラクティブスキル → **Fork** (ブロッキング、UI乗っ取り)
-- 自律スキル → **Thread** (バックグラウンド実行、分離コンテキスト)
+- Interactive skills → **Fork** (blocking, UI hijack)
+- Autonomous skills → **Thread** (background execution, isolated context)
 
-⚠️ **Status**: As of April 1, 2026, forking is in **ALPHA** (信頼性確保のため延期)
+⚠️ **Status**: As of April 1, 2026, forking is in **ALPHA** (delayed for reliability)
 
 ## Slate Architecture: OS Analogy (Karpathy's LLM OS Framing)
 
@@ -125,32 +125,32 @@ Random Labsが特定した現代のエージェントの3つの根本問題:
 ## Key Work
 
 ### Slate V1 (March 12, 2026)
-- **Terminal Bench**: make-mips-interpreter taskで2/3テスト合格 (変化する環境での安定性実証)
-- **実世界タスク**: オープンソースライブラリのTypeScript移植を$58.32で完了
-- **インストール**: `npm i -g @randomlabs/slate`
-- **Config**: `slate.json` でモデルスロット、権限、MCPサーバー、カスタムコマンドを定義
+- **Terminal Bench**: 2/3 tests passed on make-mips-interpreter task (demonstrated stability in changing environments)
+- **Real-world task**: TypeScript port of open-source library completed for $58.32
+- **Install**: `npm i -g @randomlabs/slate`
+- **Config**: `slate.json` defines model slots, permissions, MCP servers, and custom commands
 
 ### RLM for Coding
-- Alex ZhangのRLMアーキテクチャをコーディングエージェントに適用・改良
-- Thread WeavingでRLMの中間フィードバック欠如を解決
+- Applied and refined Alex Zhang's RLM architecture for coding agents
+- Thread Weaving solves RLM's lack of intermediate feedback
 
 ### Skill Chaining (April 1, 2026)
-- スキルを動的にチェーンし、条件付き実行シーケンスを定義
-- Orchestration Skillsによる自動化ワークフロー
+- Dynamically chain skills to define conditional execution sequences
+- Automation workflows via Orchestration Skills
 - Context Forking (Alpha)
 
 ## Connection to Harness Engineering & Agentic Engineering
 
-AkiraのSlateは[[concepts/harness-engineering]]の文脈で重要な位置を占める:
+Akira's Slate occupies an important position in the context of [[concepts/harness-engineering]]:
 
-1. **Slate as a Meta-Harness**: Slate自体が大規模なharness — モデル間のルーティング、コンテキスト管理、権限制御を統合
-2. **Thread Weaving as Harness Pattern**: 各スレッドが独立したharnessインスタンスとして機能し、エピソードで結果を合成
-3. **Skill Chaining as Dynamic Harness**: 静的なharness定義ではなく、条件付きでスキルをチェーンする動的アプローチ
-4. **Knowledge Overhang as Harness Insight**: 「モデルが知っていること」と「モデルが実際に使うこと」のギャップを埋めるのがharnessの役割
+1. **Slate as a Meta-Harness**: Slate itself is a large-scale harness — integrating model routing, context management, and permission control
+2. **Thread Weaving as Harness Pattern**: Each thread operates as an independent harness instance, synthesizing results via episodes
+3. **Skill Chaining as Dynamic Harness**: A dynamic approach that chains skills conditionally, rather than static harness definitions
+4. **Knowledge Overhang as Harness Insight**: The harness's role is to bridge the gap between "what the model knows" and "what the model actually uses"
 
 > "Slate is not merely a wrapper or a chatbot with file access; it is an implementation of a 'hive mind' philosophy designed to scale agentic work with the complexity of a human organization."
 
-Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パラダイムの先駆的実装。DevinやCodexのような単一エージェントモデルから、複数モデルの並列協調への移行を体現している。
+Slate is a pioneering implementation of the "swarm orchestration" paradigm in [[concepts/agentic-engineering]], embodying the shift from single-agent models (like Devin or Codex) to parallel collaboration across multiple models.
 
 ## Related People
 
@@ -158,10 +158,10 @@ Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パ
 |---|---|---|
 | [[concepts/kiran-random-labs]] | Random Labs co-founder | — |
 |  | Random Labs co-founder, CTO | — |
-| (@a1zhang) | RLM開発者。SlateはRLMを改良して適用 | [[entities/alex-zhang]] |
-| [[entities/andrej-karpathy]] | LLM OS concept — SlateのOSアナロジーの源流 | [[entities/andrej-karpathy]] |
-| [[entities/peter-steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[entities/peter-steinberger]] |
-| [[entities/nader-dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
+| (@a1zhang) | RLM developer. Slate adapts and improves RLM | [[entities/alex-zhang]] |
+| [[entities/andrej-karpathy]] | LLM OS concept — origin of Slate's OS analogy | [[entities/andrej-karpathy]] |
+| [[entities/peter-steinberger]](@steipete) | OpenClaw developer; related via parallel agent approach | [[entities/peter-steinberger]] |
+| [[entities/nader-dabit]](@dabit3) | Cloud agents / agent fleet; related in long-running agent context | — |
 
 ## Related
 
@@ -174,12 +174,12 @@ Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パ
 
 | Theme | Content |
 |---|---|
-| **Thread Weaving** | Slateのアーキテクチャ解説、OS analogy、エピソード記憶 |
-| **RLM for Coding** | RLMの実践的適用と限界の認識 |
-| **Swarm Orchestration** | マルチモデル並列実行、hive mind哲学 |
-| **Knowledge Overhang** | モデルの潜在知識の解放、コンテキスト管理の重要性 |
-| **Skill Chaining** | 動的スキル定義、Orchestration Skills |
-| **Critique of Existing Agents** | ReAct/RLMの限界、コンテキスト管理の重要性 |
+| **Thread Weaving** | Slate architecture explanations, OS analogy, episodic memory |
+| **RLM for Coding** | Practical application and recognition of RLM's limitations |
+| **Swarm Orchestration** | Multi-model parallel execution, hive mind philosophy |
+| **Knowledge Overhang** | Unlocking latent model knowledge, importance of context management |
+| **Skill Chaining** | Dynamic skill definition, Orchestration Skills |
+| **Critique of Existing Agents** | ReAct/RLM limitations, importance of context management |
 
 ## Sources
 

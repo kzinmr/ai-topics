@@ -5,7 +5,7 @@ aliases:
   - agent-autofix
   - write-catch-fix-merge
 created: 2026-04-13
-updated: 2026-06-03
+updated: 2026-06-07
 tags:
   - concept
   - agentic-engineering
@@ -25,26 +25,28 @@ sources:
 
 # Closing the Agent Loop — Write/Catch/Fix/Merge
 
-Cognitionが2026年1月〜2月に発表した、コーディングエージェントとレビュープロセスの完全自動化ループ。
+A fully automated loop for coding agents and review processes, published by Cognition in January–February 2026.
 
-## 背景：レビューが新しいボトルネックに
+## Background: Review Becomes the New Bottleneck
 
 > *"Agents are generating code faster than teams can review them. The human bottleneck shifts from writing code to reviewing it."*
 > — "Closing the Agent Loop"
 
-Devin Review（2026年1月）の発見:
-- PR数が増えるほど、レビュー品質が低下する「Lazy LGTM問題」
-- 「Never in the field of software engineering has so much code been created by so many, yet shipped to so few」
-- 従来のGitHub PRレビューは小さなPRを前提としており、大規模なAI生成コードに対応できない
+Findings from Devin Review (January 2026):
 
-## Write → Catch → Fix → Merge ループ
+- The **"Lazy LGTM problem"** — as PR volume increases, review quality degrades
+- "Never in the field of software engineering has so much code been created by so many, yet shipped to so few"
+- Traditional GitHub PR reviews assume small PRs and cannot cope with large-scale AI-generated code
+
+## Write → Catch → Fix → Merge Loop
 
 ```
 ┌─────────┐    ┌──────────┐    ┌─────────┐    ┌──────────┐
 │  WRITE   │───▶│  CATCH   │───▶│  FIX    │───▶│  MERGE   │
-│  Devinが  │    │ レビュー  │    │ Devinが  │    │ 人間が    │
-│  コードを  │    │ ボットが  │    │ 自動修正  │    │ 判断のみ  │
-│  生成     │    │ 問題を発見 │    │         │    │          │
+│  Devin   │    │  Review  │    │  Devin  │    │  Human   │
+│  writes  │    │  bots    │    │  auto-  │    │  decides │
+│  code    │    │  find    │    │  fixes  │    │          │
+│          │    │  issues  │    │         │    │          │
 └─────────┘    └──────────┘    └─────────┘    └──────────┘
                      │                │
               ┌──────┴────────────────┴──────┐
@@ -53,59 +55,60 @@ Devin Review（2026年1月）の発見:
               └──────────────────────────────┘
 ```
 
-### 各ステップの詳細
+### Step Details
 
-| ステップ | 担当者 | 内容 |
+| Step | Owner | Description |
 |---------|--------|------|
-| **Write** | Devin（コーディングエージェント） | 計画→実装→自己テスト→PR作成 |
-| **Catch** | Devin Review + ボット群 | インテリジェントなdiff整理、AIバグ検出（Red/Yellow/Gray）、Lint/CI/セキュリティ |
-| **Fix** | Devin（自動） | ボットコメントをトリガーに自動修正。人間の手を借りない |
-| **Merge** | 人間（判断のみ） | アーキテクチャ、プロダクト方向性、エッジケースの最終確認 |
+| **Write** | Devin (coding agent) | Plan → Implement → Self-test → Create PR |
+| **Catch** | Devin Review + bot swarm | Intelligent diff organization, AI bug detection (Red/Yellow/Gray), Lint/CI/Security |
+| **Fix** | Devin (automatic) | Auto-fix triggered by bot comments. No human intervention |
+| **Merge** | Human (judgment only) | Final review of architecture, product direction, edge cases |
 
 ### Bot Triggers
 
-Devinが自動対応できるボット:
-- **Linter** — コードスタイル、構文エラー
-- **CI/CD** — テスト失敗、ビルドエラー
-- **Security Scanner** — 脆弱性、依存関係の問題
-- **Dependency Manager** — アップデート、互換性
+Bots that Devin can automatically handle:
+
+- **Linter** — Code style, syntax errors
+- **CI/CD** — Test failures, build errors
+- **Security Scanner** — Vulnerabilities, dependency issues
+- **Dependency Manager** — Updates, compatibility
 
 > *"No human in the loop for mechanical fixes."*
 
-## なぜ2つのエージェントが必要か
+## Why Two Agents Are Needed
 
 > *"Why couldn't the code just be correct the first time? Even the best engineers might not catch everything on their first pass — you're focused on solving the problem, not stress-testing the solution."*
 
-- **Writing Agent**: 問題解決に集中。最初のパスでは全てをカバーできない
-- **Reviewing Agent**: diff完了後に集中的な検証。元の計画から逸脱した問題を発見
-- この分離により「書いてから検証する」という人間のコードレビュープロセスを模倣
+- **Writing Agent**: Focused on problem-solving. Cannot cover everything on the first pass
+- **Reviewing Agent**: Intensive validation after diff completion. Catches issues that deviate from the original plan
+- This separation mimics the human code review process of "write then verify"
 
-## Devin Review の3つの機能
+## Devin Review's Three Capabilities
 
-1. **Intelligent Diff Organization** — アルファベット順ではなく論理的なグループで変更を整理
-2. **Interactive Chat** — PR内でDevinに質問（コードベース全体を理解）
-3. **AI Bug Detection** — Red（確実なバグ）、Yellow（警告）、Gray（FYI）で分類
+1. **Intelligent Diff Organization** — Organizes changes by logical groups rather than alphabetical order
+2. **Interactive Chat** — Ask Devin questions within the PR (understands the entire codebase)
+3. **AI Bug Detection** — Classified as Red (definite bug), Yellow (warning), Gray (FYI)
 
-## 未解決のギャップ
+## Unresolved Gaps
 
 > *"There's still a gap: running the app, clicking through flows, writing unit tests. We're closing it."*
 
-- アプリの実行・UIフローのテスト
-- ユニットテストの自動生成
-- これらもDevin 2.2でComputer Useとして対応済み
+- Running the app and testing UI flows
+- Auto-generating unit tests
+- These have been addressed in Devin 2.2 via Computer Use
 
-## Simon Willisonとの比較
+## Comparison with Simon Willison
 
-| 次元 | Cognition（Write/Catch/Fix/Merge） | Simon Willison |
+| Dimension | Cognition (Write/Catch/Fix/Merge) | Simon Willison |
 |------|-----------------------------------|----------------|
-| テスト | AIバグ検出 + Bot Autofix | Red/Green TDD + First Run Tests |
-| レビュー | Devin Review（AI整理） | Human review with context |
-| 自動化 | 全面的にエージェントに委譲 | 人間が中心、エージェントは支援 |
-| 品質 | "No human in the loop for mechanical fixes" | "You remain responsible for final correctness" |
+| Testing | AI bug detection + Bot Autofix | Red/Green TDD + First Run Tests |
+| Review | Devin Review (AI-organized) | Human review with context |
+| Automation | Full delegation to agents | Human-centric, agent-assisted |
+| Quality | "No human in the loop for mechanical fixes" | "You remain responsible for final correctness" |
 
-## 関連
+## Related
 
-- [[cognition-devin-philosophy]] — Cognitionの全体哲学
-- [[agentic-engineering-patterns]] — Agentic Engineeringのパターン集
-- [[evals-for-ai-agents]] — エージェント評価
-- [[ai-agent-engineering/_index]] — AI Agent Engineeringのシステム設計
+- [[cognition-devin-philosophy]] — Cognition's overall philosophy
+- [[agentic-engineering-patterns]] — Agentic Engineering pattern collection
+- [[evals-for-ai-agents]] — Agent evaluation
+- [[ai-agent-engineering/_index]] — AI Agent Engineering system design

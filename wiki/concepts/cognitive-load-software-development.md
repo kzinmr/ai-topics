@@ -20,279 +20,279 @@ sources:
 
 # Cognitive Load in Software Development
 
-Artem Zakirullinの **"Cognitive load is what matters"** — GitHubで12,000+スターを獲得したソフトウェア設計における認知負荷の体系的フレームワーク。
+Artem Zakirullin's **"Cognitive load is what matters"** — A systematic framework for cognitive load in software design that has gained 12,000+ stars on GitHub.
 
-## 核心定理
+## Core Theorem
 
 > "Confusion costs time and money. Confusion is caused by high cognitive load. It's not some fancy abstract concept, but rather **a fundamental human constraint.**"
 
-- 開発者はコードを書く時間より**読む時間**の方が圧倒的に長い
-- 人間のワーキングメモリは約**4チャンク**しか保持できない
-- この閾値を超えると混乱（🤯）が発生し、生産性と品質が低下する
+- Developers spend overwhelmingly more time **reading** code than writing it
+- Human working memory can only hold about **4 chunks**
+- Exceeding this threshold causes confusion (🤯), reducing productivity and quality
 
-## 認知負荷の2類型
+## Two Types of Cognitive Load
 
-| 類型 | 説明 | 制御可能性 |
-|------|------|-----------|
-| **Intrinsic Load** | タスク/ドメイン固有の本質的な難しさ | 削減不可 |
-| **Extraneous Load** | 提示方法、不要な抽象化、作者の癖 | **削減可能（ここに注目すべき）** |
+| Type | Description | Controllability |
+|------|-------------|----------------|
+| **Intrinsic Load** | Inherent difficulty specific to the task/domain | Cannot be reduced |
+| **Extraneous Load** | Presentation, unnecessary abstractions, author's quirks | **Reducible (this is where to focus)** |
 
-### 負荷表記法
-- 🧠 = 新鮮なワーキングメモリ、ゼロ負荷
-- 🧠++ = 2つのファクトを保持中、負荷増加
-- 🤯 = 認知オーバーロード、4つ以上のファクト
+### Load Notation
+- 🧠 = Fresh working memory, zero load
+- 🧠++ = Holding 2 facts, load increasing
+- 🤯 = Cognitive overload, 4+ facts
 
-## コードレベルのアンチパターンと解決策
+## Code-Level Antipatterns and Solutions
 
-### 複雑な条件分岐
+### Complex Conditionals
 ```go
-// Before 🤯 — 複数の論理状態を同時追跡
+// Before 🤯 — Tracking multiple logical states simultaneously
 if val > someConstant
     && (condition2 || condition3)
     && (condition4 && !condition5) { ... }
 
-// After 🧠 — 記述的な中間変数を導入
+// After 🧠 — Introduce descriptive intermediate variables
 isValid = val > someConstant
 isAllowed = condition2 || condition3
 isSecure = condition4 && !condition5
 if isValid && isAllowed && isSecure { ... }
 ```
 
-### ネストされた if 文
+### Nested If Statements
 ```go
-// Before — 前提条件を mental tracking
+// Before — Mental tracking of preconditions
 if isValid {
     if isSecure {
         stuff
     }
 }
 
-// After — Early returns (guard clauses) でハッピーパスに集中
+// After — Early returns (guard clauses) let you focus on the happy path
 if !isValid return
 if !isSecure return
-// 🧠 — 前提条件はクリア、本処理に集中可能
+// 🧠 — Preconditions cleared, can focus on main logic
 stuff
 ```
 
-### 深い継承チェーン
+### Deep Inheritance Chains
 `BaseController → GuestController → UserController → AdminController → SuperuserController`
-- 子クラスを修正するたびに親クラスをmental traverseする必要がある → 🤯
-- **解決策:** 継承よりコンポジションを優先
+- Every time you modify a child class, you need to mentally traverse the parent classes → 🤯
+- **Solution:** Prefer composition over inheritance
 
-## アーキテクチャレベルの洞察
+## Architecture-Level Insights
 
 ### Deep vs. Shallow Modules
 
-| 類型 | インターフェース | 内部 | 認知負荷 |
-|------|-----------------|------|---------|
-| **Deep Module** | 単純 | 複雑（隠蔽） | 🧠 低い |
-| **Shallow Module** | 複雑 | 単純 | 🤯 高い（相互作用の追跡が必要） |
+| Type | Interface | Internals | Cognitive Load |
+|------|-----------|-----------|----------------|
+| **Deep Module** | Simple | Complex (hidden) | 🧠 Low |
+| **Shallow Module** | Complex | Simple | 🤯 High (requires tracking interactions) |
 
-**Unix I/Oの例:** わずか5つのシステムコール(`open`, `read`, `write`, `lseek`, `close`)で数十万行の複雑さを隠蔽
+**Unix I/O Example:** Just 5 system calls (`open`, `read`, `write`, `lseek`, `close`) hide hundreds of thousands of lines of complexity
 
 > "Important things should be big." — Carson Gross
-> クリティカルな関数は大きくても良い。目立つ = 重要、というシグナルになる。
+> Critical functions can be large. Being prominent signals importance.
 
-### SRPの再解釈
+### Reinterpreting SRP
 
-- **誤解:** 「モジュールは1つのことだけを行うべき」→ `MetricsProviderFactoryFactory` のようなshallow factoryの量産
-- **正しい解釈:** 「モジュールは**1人のユーザー/ステークホルダー**にのみ責任を持つべき」
-- バグ修正時に2つのビジネス領域から苦情が来たらSRP違反
+- **Misunderstanding:** "A module should do only one thing" → proliferation of shallow factories like `MetricsProviderFactoryFactory`
+- **Correct interpretation:** "A module should be responsible to **only one user/stakeholder**"
+- If bug fixes draw complaints from two business domains, that's an SRP violation
 
-### マイクロサービスの落とし穴
+### Microservices Pitfalls
 
-- 過度な分割 → **分散モノリス**
-- ケーススタディ: 5名の開発者、17マイクロサービス → 10ヶ月遅延、全ての変更に4+サービスが影響
-- **原則:** 個別デプロイが本当に必要になるまで分割を遅らせる
-- 歴史的教訓: Linux（モノリシック）が支配的、GNU Hurd（マイクロカーネル）はニッチ
+- Excessive decomposition → **Distributed Monolith**
+- Case study: 5 developers, 17 microservices → 10-month delay, every change affects 4+ services
+- **Principle:** Delay splitting until individual deployment is truly needed
+- Historical lesson: Linux (monolithic) dominates, GNU Hurd (microkernel) remains niche
 
-### レイヤーアーキテクチャ（Hexagonal/Onion）
+### Layered Architecture (Hexagonal/Onion)
 
-- 間接参照の追加 ≠ 真の抽象化
-- デバッグ時に層を跨ぐexponentialなmental tracingが必要
-- 移行コストの節約は~10%程度、実際の苦しみはデータモデルの非互換性と**Hyrum's Law**（暗黙的動作が依存関係になる）
+- Adding indirection ≠ true abstraction
+- Debugging requires exponential mental tracing across layers
+- Migration cost savings are only ~10%; the real pain comes from data model incompatibility and **Hyrum's Law** (implicit behaviors become dependencies)
 
-### DDDの適用範囲
+### Scope of DDD
 
-- DDDは**問題空間**（ユビキタス言語、境界づけられたコンテキスト、イベントストーミング）には優秀
-- **解決空間**（ディレクトリ構造、リポジトリパターン）に誤適用すると主観的なmental modelが断片化
-- 代替: **Team Topologies** — チーム間の認知負荷分散の明確なフレームワーク
+- DDD excels in the **problem space** (ubiquitous language, bounded contexts, event storming)
+- Misapplied to the **solution space** (directory structure, repository patterns), subjective mental models become fragmented
+- Alternative: **Team Topologies** — a clear framework for distributing cognitive load across teams
 
-## 言語・依存関係
+## Languages and Dependencies
 
-### 選択 overload
-- 言語機能が多すぎると「なぜこの構築体が選ばれたか？」のreverse-engineeringが必要
-- C++: 21種類の初期化方法、文脈依存の`||`演算子（制約 vs 論理）
+### Choice Overload
+- Too many language features require reverse-engineering "why was this construct chosen?"
+- C++: 21 initialization methods, context-dependent `||` operator (constraints vs logic)
 - Rob Pike: "Reduce cognitive load by limiting the number of choices."
 
-### HTTPステータスコード vs 自己記述的レスポンス
-- カスタムステータスマッピング（401 vs 403 vs 418）は暗記を強制
-- 解決策: レスポンスボディに自己記述的文字列 `{"code": "jwt_has_expired"}`
+### HTTP Status Codes vs Self-Descriptive Responses
+- Custom status mapping (401 vs 403 vs 418) forces rote memorization
+- Solution: Self-descriptive strings in the response body `{"code": "jwt_has_expired"}`
 
-### DRYの誤用
--  premature abstraction → 無関係なコンポーネント間のtight coupling
+### DRY Misuse
+- Premature abstraction → tight coupling between unrelated components
 - Rob Pike: "A little copying is better than a little dependency."
-- 依存関係は全て自分のコードになる。10+レベルのimportスタックトレースのデバッグは苦痛
+- All dependencies become your code. Debugging 10+ levels of import stack traces is painful
 
-## メンタルモデルとオンボーディング
+## Mental Models and Onboarding
 
-### 馴染みのあるプロジェクト
-- mental modelが長期記憶に内部化されている → 認知負荷は低い
-- 固有のmental modelが多いほど、新規開発者のバリュー提供までが遅くなる
+### Familiar Projects
+- Mental models internalized in long-term memory → cognitive load is low
+- The more unique mental models, the longer it takes new developers to deliver value
 
-### 40分ルール
+### The 40-Minute Rule
 > "If they're confused for more than ~40 minutes in a row — you've got things to improve in your code."
 
-- 認知負荷を低く保てば、新项目参加者は数時間で貢献可能
-- 「退屈な」システム（Unix, Kubernetes, Chrome, Redis）が成功する理由：認知負荷を最小化
+- If cognitive load is kept low, new project members can contribute within hours
+- "Boring" systems (Unix, Kubernetes, Chrome, Redis) succeed because they minimize cognitive load
 
-## Agentic Engineering への示唆
+## Implications for Agentic Engineering
 
-Zakirullinの認知負荷フレームワークは、AIコーディングエージェントの時代において**新しい次元**を獲得する：
+Zakirullin's cognitive load framework takes on **new dimensions** in the age of AI coding agents:
 
-### 1. エージェントは認知負荷を「転嫁」する
-- [[concepts/cognitive-cost-of-agents]]（Simon Willison）が指摘するように、エージェントは作業を**減らす**のではなく**再分配**する
-- Zakirullinの定理：extraneous loadは削減可能 → エージェントの出力を読む際のextraneous loadを最小化するharness設計が重要
+### 1. Agents "Transfer" Cognitive Load
+- As [[concepts/cognitive-cost-of-agents]] (Simon Willison) points out, agents don't **reduce** work — they **redistribute** it
+- Zakirullin's theorem: extraneous load is reducible → harness design that minimizes extraneous load when reading agent output is critical
 
-### 2. AGENTS.md は Deep Module であるべき
-- [[concepts/harness-engineering]] のAGENTS.mdパターン（~100行の目次 + docs/配下の詳細）はZakirullinのdeep module原則に適合
-- 浅いAGENTS.mdの乱立 = shallow modulesのアンチパターンをエージェントコンテキストで再現
+### 2. AGENTS.md Should Be a Deep Module
+- The AGENTS.md pattern from [[concepts/harness-engineering]] (~100 line TOC + details under docs/) aligns with Zakirullin's deep module principle
+- Proliferation of shallow AGENTS.md files = reproducing shallow module antipatterns in agent context
 
-### 3. Symphonyのthroughputと認知オーバーロード
-- ハーネスが1日数千PRを生成する時代、人間のレビュアーは🤯状態に陥りやすい
-- Zakirullinの4チャンク定理: エージェント出力のレビューは、人間が保持できるコンテキスト量を超えやすい
+### 3. Symphony Throughput and Cognitive Overload
+- In an era where harnesses generate thousands of PRs per day, human reviewers easily fall into a 🤯 state
+- Zakirullin's 4-chunk theorem: reviewing agent output easily exceeds the amount of context humans can hold
 
-### 4. 「退屈な」エージェントパイプラインが勝つ
-- Unix/Kubernetes/Redisが「退屈だから成功した」のと同じく
-- シンプルなインターフェース + 複雑な内部隠蔽 = エージェントにとっても人間にとっても理解しやすい
+### 4. "Boring" Agent Pipelines Win
+- Just as Unix/Kubernetes/Redis succeeded because they were "boring"
+- Simple interface + complex internals hidden = easy to understand for both agents and humans
 
-## HNコメント分析（104件のトップレベルコメント、362件の総コメント）
+## HN Comment Analysis (104 top-level comments, 362 total comments)
 
-[HNスレッド](https://news.ycombinator.com/item?id=45074248) — Score: 1,582、104件のトップレベルコメントから抽出した主要洞察。
+[HN Thread](https://news.ycombinator.com/item?id=45074248) — Score: 1,582, key insights extracted from 104 top-level comments.
 
-### 1. 「読みやすさ vs 正確性」のトレードオフ（hackrmn, 3,995 chars）
+### 1. The "Readability vs Correctness" Trade-off (hackrmn, 3,995 chars)
 
-> 「読みやすいコードを書くことと、正しく動作するコードを書くことは、しばしば相互に排他的」
+> "Writing readable code and writing correct code are often mutually exclusive"
 
-- **FP vs OOPの根本的対立**: 関数型プログラミングは「変数への代入」そのものを排除する。OOP/命令型は変数状態のmental trackingを強制する
-- **Agentic Engineeringへの示唆**: LLMエージェントが生成するコードは「動作するが読めない」or「読めるが壊れやすい」の二極化。harness側が**両方を保証する**ガードレールが必要
-- エージェント出力にearly return guard + 記述的変数名を強制するルールは、hackrmnの言う「正確性＋読みやすさ」の両立に寄与
+- **FP vs OOP Fundamental Conflict**: Functional programming eliminates variable assignment itself. OOP/imperative programming forces mental tracking of variable state
+- **Implication for Agentic Engineering**: LLM agent-generated code polarizes into "works but is unreadable" or "readable but fragile." Harnesses need guardrails that **guarantee both**
+- Rules enforcing early return guards + descriptive variable names in agent output help balance "correctness + readability" as hackrmn describes
 
-### 2. メンタルモデル依存性（weiliddat, 2,334 chars）
+### 2. Mental Model Dependency (weiliddat, 2,334 chars)
 
-> 「認知負荷の低減は真空では起きない。単純な言語構成が常に抽象化に勝るわけではない」
+> "Cognitive load reduction doesn't happen in a vacuum. Simple language constructs don't always beat abstraction"
 
-- 認知負荷は**読者の既存メンタルモデル**に依存。フレームワークに精通した人にとっては、フレームワークの方が`pile of if`より低負荷
-- **ハーネス設計への教訓**: 「シンプルなほうが常に良い」という前提は危険。対象開発者（or エージェント）のトレーニング分布を考慮する
-- weiliddatの再反論: 「同じメンバーで長く働く場合、暗黙的知識が蓄積し、認知負荷は下がる。新規メンバーの頻繁な入れ替えが前提の企業環境だけの問題ではない」
+- Cognitive load depends on the **reader's existing mental models**. For someone familiar with a framework, the framework has lower load than a `pile of if`
+- **Lesson for harness design**: The assumption that "simpler is always better" is dangerous. Consider the training distribution of the target developer (or agent)
+- weiliddat's counter-rebuttal: "When working with the same team long-term, tacit knowledge accumulates and cognitive load decreases. This isn't just a problem for corporate environments that assume frequent churn of new members."
 
-### 3. 「ifの山アーキテクチャ」への批判（Buttons840, 1,876 chars）
+### 3. Critique of "Pile of If" Architecture (Buttons840, 1,876 chars)
 
-> 「自分が『quirksのあるスマートデベロッパー』であることを自覚している。abstractionを構築してしまう」
+> "I'm aware that I'm a 'quirky smart developer.' I end up building abstractions"
 
-- タスク割り当て → 関連箇所探索 → ifを追加 → テスト失敗 → ifを追加 → PR送信。これが現代の主流パターン
-- **abstractionの再評価**: 「abstractionは悪」ではなく「**誤ったabstraction**が悪い」。正しいabstractionは認知負荷を劇的に下げる
-- **エージェント時代のパラドックス**: LLMはabstractionを大量生成できるが、人間がレビューする際の認知負荷はabstractionの深さに比例して増加。harness設計者が「どのレベルのabstractionまで許容するか」の閾値設定が必要
+- Task assignment → search relevant code → add if → test fails → add if → send PR. This is the modern mainstream pattern
+- **Reevaluating abstraction**: It's not that "abstraction is bad" but rather "**wrong abstractions** are bad." Correct abstractions dramatically reduce cognitive load
+- **Agent-era paradox**: LLMs can generate abstractions in bulk, but the cognitive load on human reviewers increases proportionally with abstraction depth. Harness designers need to set thresholds for "how much abstraction is acceptable"
 
-### 4. Noyceの法則（pessimizer, 1,585 chars）
+### 4. Noyce's Law (pessimizer, 1,585 chars)
 
-> 「冗長性は私のような人間に『何かを見落としたのでは？』という不安を抱かせ、前進を台無しにする」
+> "Redundancy makes someone like me anxious — 'did I miss something?' — and ruins forward progress"
 
-- 重複したコードや設定を見ると「何か意図があるはず」と推測してしまう認知バイアス
-- **DRYの再解釈**: DRYは文字列の圧縮ではなく、**概念の重複排除**。しかしpessimizerの指摘は逆のケース — 「正当な理由のない重複」はそれ自体が認知ノイズ
-- **Agentic Engineering**: エージェントが生成したコードの不要な重複をhuman reviewerが「意図がある？」と推測するコスト。linter/CIでautomate可能なチェックは自動化すべき
+- A cognitive bias where seeing duplicated code or config triggers speculation that "there must be some intention behind it"
+- **Reinterpreting DRY**: DRY is not string compression, but **deduplication of concepts**. However pessimizer's point is the reverse case — "unjustified duplication" is itself cognitive noise
+- **Agentic Engineering**: The cost of human reviewers wondering "is there an intention?" about unnecessary duplication in agent-generated code. Checks that can be automated via linter/CI should be automated
 
-### 5. Programming as Theory-building（physidev, 1,913 chars）
+### 5. Programming as Theory-building (physidev, 1,913 chars)
 
-> 「科学者、数学者、ソフトウェアエンジニアは皆同じことをしている：何かを理解し、言語で記述する」
+> "Scientists, mathematicians, and software engineers all do the same thing: understand something and describe it in language"
 
-- Peter Naurの「Programming as Theory-building」論文との接続
-- コードは単なる命令の羅列ではなく、**ドメイン理解の形式化**。理論が失われるとコードは意味を失う
-- **ハーネス設計**: エージェントに「コードを生成させる」だけでなく「ドメイン理論をメンテさせる」視点。AGENTS.mdやプロンプトにドメイン文脈を注入する意義の再確認
+- Connection to Peter Naur's "Programming as Theory-building" paper
+- Code is not just a list of instructions, but a **formalization of domain understanding**. When the theory is lost, the code loses meaning
+- **Harness design**: The perspective of having agents not just "generate code" but also "maintain domain theory." Reaffirming the value of injecting domain context into AGENTS.md and prompts
 
-### 6. Microsoft DevDivの4ペルソナ（noen, 2,092 chars）
+### 6. Microsoft DevDiv's 4 Personas (noen, 2,092 chars)
 
-| ペルソナ | 焦点 | 強み | リスク |
-|----------|------|------|--------|
-| **Mort** | ビジネス成果 | 速く仕上げる | 技術的負債、「ifの山」 |
-| **Elvis** | 新技術 | イノベーション駆動 | 過剰工学、不安定 |
-| **Einstein** | アルゴリズム的正確性 | 高性能、厳密 | 過剰抽象化、遅いデリバリー |
-| **Amanda** | 長期メンテナンス性 | 明確、レビュー可能 | 必要な複雑さを拒否 |
+| Persona | Focus | Strength | Risk |
+|---------|-------|----------|------|
+| **Mort** | Business outcomes | Ships fast | Technical debt, "pile of ifs" |
+| **Elvis** | New technology | Innovation-driven | Over-engineering, instability |
+| **Einstein** | Algorithmic correctness | High performance, rigorous | Over-abstraction, slow delivery |
+| **Amanda** | Long-term maintainability | Clear, reviewable | Rejects necessary complexity |
 
-> 「低自我 → 既存の慣習に従う → それらに馴染む → シンプルに感じる」
+> "Low ego → follow existing conventions → become familiar with them → they feel simple"
 
-- **チーム構成への教訓**: 理想的なチームは4ペルソナのバランス。コード品質を「後付けの要件」ではなく「必須要件」にする
-- **エージェントのペルソナ**: LLMはプロンプト次第でMortにもEinsteinにもなる。harness設計者が「どのペルソナで動作させるか」を明示的に制御できるべき
+- **Lesson for team composition**: The ideal team balances all 4 personas. Make code quality a "hard requirement" not a "nice-to-have"
+- **Agent persona**: LLMs can be Mort or Einstein depending on the prompt. Harness designers should be able to explicitly control "which persona to operate with"
 
-### 7. early return の是非（mattmanser, 1,687 chars）
+### 7. The Merits of Early Return (mattmanser, 1,687 chars)
 
-> 「成功値は常に関数の最後に返すべき。早期returnはエラーやnull結果にのみ使う」
+> "Success values should always be returned at the end of a function. Early returns should only be used for errors or null results"
 
-- **反論**: Zakirullin/Goコミュニティはearly returnをguard clauseとして推奨
-- **トレードオフ**: early return of success = 複数の出口 = 読者が全exit pointをtrackする必要がある
-- **Agentic Engineering**: エージェントに「single exit point」か「early return」のどちらを優先させるかは、harnessのコーディング規約で明示する必要がある
+- **Counterpoint**: Zakirullin/Go community recommends early return as guard clauses
+- **Trade-off**: early return of success = multiple exits = reader needs to track all exit points
+- **Agentic Engineering**: Whether to prioritize "single exit point" or "early return" for agents needs to be explicit in harness coding conventions
 
-### 8. 家の整理アナロジー（gnramires, 2,762 chars）
+### 8. House Organization Analogy (gnramires, 2,762 chars)
 
-> 「ペンのコレクションを家中に散らかすべきではない。だが、$0.50のペン用に特化した彫刻済みのニッチを作る必要があるわけではない」
+> "You shouldn't scatter your pen collection all over the house. But you don't need a dedicated engraved niche for a $0.50 pen either"
 
-- **abstractionの適切なレベル**: 過度な整理（over-engineering）も、放置（technical debt）もダメ
-- **Rule of Three**: 3回目の複製からabstractionを検討。1-2回は複製のままが認知負荷が低い場合がある
+- **Appropriate level of abstraction**: Neither over-organization (over-engineering) nor neglect (technical debt) is good
+- **Rule of Three**: Consider abstraction from the third duplication. For the 1st-2nd time, keeping duplication may have lower cognitive load
 
-### 9. 複数言語のドメイン階層（RossBencina, 2,485 chars）
+### 9. Multi-Language Domain Hierarchy (RossBencina, 2,485 chars)
 
-> 「John Ousterhoutの thesis は、異なるレベルのドメインで複数のプログラミング言語が連携することに真の価値がある」
+> "John Ousterhout's thesis is that there's real value in multiple programming languages working together at different levels of domain"
 
-- TCL/Java/C（John Ousterhoutの例）→ 現代では Rust + Python + LLMプロンプト の階層にマップ
-- **ハーネス設計**: エージェントharnessは「異なる言語/ツールの間を接続するglue」。各レイヤーが適切な抽象化レベルを持つことが重要
+- TCL/Java/C (John Ousterhout's example) → maps to the Rust + Python + LLM prompt hierarchy in modern times
+- **Harness design**: Agent harnesses are "glue connecting different languages/tools." Each layer having the right abstraction level is critical
 
-### 10. 「完璧なアイデア」妄想への批判（0xbadcafebee, 1,992 chars）
+### 10. Critique of the "Perfect Idea" Delusion (0xbadcafebee, 1,992 chars)
 
-> 「なぜソフトウェア人間は『15分考えれば絶対に正しいアイデアが浮かぶ』と思い込むのか？」
+> "Why do software people delude themselves into thinking 'if I think for 15 minutes, the absolutely correct idea will come to me'?"
 
-- 科学的検証 ≠ ソフトウェア設計。科学は反復的テスト、ソフトウェアは「とりあえず動く」で進んでしまう
-- **エージェント時代**: LLMは「もっともらしいが間違っている」コードを生成する。harness側がテスト/検証を**自動化**しないと、認知負荷は人間側に転嫁される
+- Scientific verification ≠ software design. Science relies on iterative testing; software moves forward with "it works for now"
+- **Agent era**: LLMs generate code that's "plausible but wrong." If the harness doesn't **automate** testing/verification, cognitive load is transferred to humans
 
-### 11. cyclomatic complexity と関数署名設計（safety1st, 1,898 chars）
+### 11. Cyclomatic Complexity and Function Signature Design (safety1st, 1,898 chars)
 
-- チーム標準: 関数のcyclomatic complexityを低く抑える
-- 関数ヘッダーコメントで「開発者の意図」を記述
-- **レビュー重点**: 関数シグネチャの可読性とsensibilityを最も重視
-- **Agentic Engineering**: エージェント生成コードの自動linting + シグネチャレビューをharnessに組み込む
+- Team standard: Keep function cyclomatic complexity low
+- Use function header comments to describe "developer intent"
+- **Review focus**: Prioritize readability and sensibility of function signatures above all
+- **Agentic Engineering**: Incorporate automated linting + signature review of agent-generated code into the harness
 
-### 12. コーポレート環境とエンジニアの短任期（atomicnumber3, 1,656 chars）
+### 12. Corporate Environment and Engineer Short Tenure (atomicnumber3, 1,656 chars)
 
-> 「企業は構造的に『気にかけられない環境』を作る。エンジニアの任期が短いことを考慮せよ」
+> "Corporations structurally create a 'can't care' environment. Account for engineers' short tenures"
 
-- 3世代以上の「owner」を経て、ビジネスロジックが劣化する
-- **Agentic Engineering**: エージェントは「短任期」の極致 — 文脈を引き継がない。harnessが**session persistence + context continuity**を担保する必要がある
+- After 3+ generations of "owners," business logic degrades
+- **Agentic Engineering**: Agents are the extreme of "short tenure" — they don't carry over context. The harness needs to guarantee **session persistence + context continuity**
 
-### 13. 実践的データモデリング（sfn42, 1,548 chars）
+### 13. Practical Data Modeling (sfn42, 1,548 chars)
 
-> 「orderが複数のaddressに配送？relationship tableを追加して、既存コードに影響ないv2 APIを公開すれば良い」
+> "Order shipped to multiple addresses? Add a relationship table and expose a v2 API that doesn't affect existing code"
 
-- 過度なabstractionではなく、データモデルの変更で解決
-- **教訓**: 認知負荷を下げる最善の方法は、**データ構造を正しく設計すること**
+- Solving through data model changes rather than excessive abstraction
+- **Lesson**: The best way to reduce cognitive load is to **design data structures correctly**
 
-### 14. 簡潔サマリー（nathane280, 1,549 chars）
+### 14. Concise Summary (nathane280, 1,549 chars)
 
-HNコメントのTL;DR:
-1. **条件分岐の簡素化** — 記述的中间変数
-2. **Early Returns** — guard clausesでハッピーパスを明確に
-3. **Deep Modules** — 単純なインターフェース + 複雑な内部
-4. **コンポジション > 継承** — 隠れた相互作用を排除
-5. **DRYは概念の重複排除** — 文字列の圧縮ではない
-6. **コードは人間のために書く** — コメントは「why」を記述
-7. **チームバランス** — Mort/Elvis/Einstein/Amandaの適切な混合
+HN Comments TL;DR:
+1. **Simplify conditionals** — Descriptive intermediate variables
+2. **Early Returns** — Guard clauses clarify the happy path
+3. **Deep Modules** — Simple interface + complex internals
+4. **Composition > Inheritance** — Eliminate hidden interactions
+5. **DRY = Deduplication of concepts** — Not string compression
+6. **Write code for humans** — Comments describe the "why"
+7. **Team balance** — Right mix of Mort/Elvis/Einstein/Amanda
 
-## 関連概念
+## Related Concepts
 
-- [[comparisons/aposd-vs-clean-code]] — Ousterhout vs Martinの設計哲学対比。Deep/Small、コメント有無、TDD/Bundlingの議論をCognitive Load観点で統合
-- [[concepts/cognitive-cost-of-agents]] — Willisonの認知負債理論（エージェント時代の認知コスト）
-- [[concepts/harness-engineering]] — Lopopoloのエージェント環境設計
-- [[concepts/harness-engineering]] — 開発者ワークフローパターン
-- [[concepts/context-window-management]] — コンテキスト制約の管理
-- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — エージェント向けコード設計
+- [[comparisons/aposd-vs-clean-code]] — Contrast of Ousterhout vs Martin design philosophies. Integrates Deep/Small, comments/no-comments, TDD/Bundling debates from a Cognitive Load perspective
+- [[concepts/cognitive-cost-of-agents]] — Willison's cognitive debt theory (cognitive cost in the agent era)
+- [[concepts/harness-engineering]] — Lopopolo's agent environment design
+- [[concepts/harness-engineering]] — Developer workflow patterns
+- [[concepts/context-window-management]] — Context constraint management
+- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Code design for agents
 
 ## Sources
 
