@@ -3,7 +3,7 @@ title: Lance Martin
 type: entity
 handle: "@RLanceMartin"
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-06-07
 tags:
   - person
   - model
@@ -15,10 +15,15 @@ tags:
   - open-source
   - ambient-agents
   - agent-training
+  - model
+  - prompting
+  - coding-agents
 sources:
   - "[[raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents]]"
   - "[[raw/articles/2026-01-09_rlancemartin_agent-design-patterns]]"
   - "[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]"
+  - "[[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]]"
+  - "[[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]]"
 ---
 
 
@@ -150,3 +155,39 @@ On the High Signal podcast (Dec 2025), Martin articulated a three-part playbook 
 - **Open-source advocacy** — Promoting community tools, sharing code, and encouraging collaboration
 - **Developer education** — Tutorials, frameworks, and practical guidance for building AI agents
 - **Conference talks** — Sharing presentations from AI engineering events and meetups
+
+## Claude Opus 4.8 Tips (May 2026)
+
+Martin shared a series of practical tips for Claude Opus 4.8 usage on X, drawing on his deep experience with Anthropic's API and agent harness engineering. These tips focus on three areas: mid-conversation system messages, long-horizon agent patterns, and tool triggering.
+
+### Mid-Conversation System Messages Without Breaking Prompt Cache
+
+Martin highlighted a key Claude Opus 4.8 feature: **mid-conversation system messages**. Unlike the top-level `system` field (which sits at the beginning of the prompt and whose modification invalidates the entire cached prefix), mid-conversation system messages are appended as `{"role": "system"}` messages at the point in the conversation where the new instruction becomes relevant. This preserves the prompt cache for everything before the new instruction. See [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages|the Claude Platform docs]] for full details.
+
+Key use cases Martin emphasized:
+- **Mid-session policy changes** — Adding constraints ("write all SQL as parameterized queries") after dozens of cached turns without re-processing history
+- **Per-turn authoritative context** — Injecting freshness notes, session deadlines, or tool-availability changes with system-level weight
+- **State changes observed by the application** — Files changed on disk, auto-approve toggles, remaining token budget thresholds
+- **User input during agentic loops** — Folding follow-up user input into ongoing work without interrupting tool execution
+
+### Long-Horizon Work: Pair Opus 4.8 with Outcomes or /goal
+
+For long-horizon autonomous coding work, Martin recommends pairing Claude Opus 4.8 with explicit **outcome specifications** (such as the `/goal` directive in Claude Code or structured Outcomes documents). Opus 4.8's adaptive thinking and high effort settings enable it to maintain coherence across extended multi-step trajectories.
+
+Martin's production observations:
+- **Start at xhigh effort** for most coding and agentic use cases — this is the best single setting for quality
+- **Set a large max output token budget** (64k tokens minimum) at max or xhigh effort so the model has room to think and act across sub-agents and tool calls
+- **High effort as minimum** — for most intelligence-sensitive use cases, use at least `high` effort
+- Opus 4.8 calibrates response length to task complexity rather than defaulting to fixed verbosity, which benefits long-horizon work
+- The model provides more regular, higher-quality progress updates throughout long agentic traces; remove scaffolding that forces interim status messages
+
+### Explicit Triggering Guidance for Custom Tools and Sub-Agents
+
+Martin noted that Claude Opus 4.8 has a tendency to favor reasoning over tool calls, which produces better results in most cases but requires **explicit prompting** when you want more tool use. His recommendations:
+
+- **Effort as the primary lever** — `high` or `xhigh` effort settings show substantially more tool usage in agentic search and coding
+- **Explicit instruction in prompts** — When you find the model is not using tools enough, clearly describe why and how it should use them. For example, for web search tools: "When the user asks a question about recent events, use the web search tool to get current information before answering."
+- **Literal instruction following** — Opus 4.8 interprets prompts literally and explicitly, particularly at lower effort levels. It does not silently generalize instructions from one item to another. This means tool-triggering guidance must be explicit and comprehensive.
+- **Adaptive thinking steering** — The triggering behavior for adaptive thinking is steerable. If the model thinks more often than desired (which can happen with large or complex system prompts), add guidance: "Thinking adds latency and should only be used when it will meaningfully improve answer quality — typically for problems that require multi-step reasoning. When in doubt, respond directly."
+
+These tips align with Martin's broader **context engineering** and **reduce-offload-isolate** frameworks, particularly the principle of providing agents with precise, context-appropriate instructions rather than overloading the top-level system prompt. See [[concepts/reduce-offload-isolate]] for the full framework.

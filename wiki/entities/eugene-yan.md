@@ -2,7 +2,7 @@
 title: "Eugene Yan (Ziyou Yan)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-03
+updated: 2026-06-07
 type: entity
 ---
 
@@ -64,6 +64,8 @@ His career philosophy centers on three principles: continuous self-learning, del
 | 2025 | Built AI Coach prototype — talk to "Tara," an AI coach at +1 (206) 558-8782 |
 | 2025 | Transitioned from Amazon to **Anthropic** as Member of Technical Staff |
 | 2026–Present | Member of Technical Staff at Anthropic — working to bridge the field and the frontier, building safe, reliable AI systems at scale |
+| 2026-05 | Co-authored "Using LLMs to Secure Source Code" (Anthropic blog) with Henna Dattani — comprehensive guide on the find-and-fix loop for vulnerability discovery, verification, triage, and patching |
+| 2026-05 | Open-sourced [[concepts/defending-code-reference-harness|defending-code-reference-harness]] — reference implementation with Claude Code skills (`/threat-model`, `/vuln-scan`, `/triage`, `/patch`, `/customize`) and an autonomous 7-stage pipeline for vulnerability discovery → verification → remediation |
 
 ## Core Ideas
 
@@ -301,6 +303,7 @@ This reflects his own career arc: at Amazon, he transitioned from hands-on IC wo
 - **Public prototyping**: Building AI tools in public (AI Coach, News Agents, AlignEval, Obsidian-Copilot) as learning and sharing exercises
 - **Synthetic data for fine-tuning**: Practical guidance on generating and using synthetic training data
 - **Prompting fundamentals**: Systematic approaches to effective instruction design for LLMs
+- **Code security & vulnerability detection**: Co-authored Anthropic's guide on using LLMs to secure source code; open-sourced defending-code-reference-harness with the find-and-fix loop (threat model → sandbox → discovery → verification → triage → patching) and a 7-stage autonomous pipeline
 
 ## Related Concepts
 
@@ -310,6 +313,7 @@ This reflects his own career arc: at Amazon, he transitioned from hands-on IC wo
 - [[concepts/retrieval-augmented-generation]] — One of his seven core LLM integration patterns
 - [[concepts/applied-ml]] — His most-starred GitHub repository (28.7K stars)
 - [[concepts/open-llms]] — His curated list of commercially usable open LLMs (12.7K stars)
+- [[concepts/defending-code-reference-harness]] — His work on LLM-driven vulnerability detection and remediation
 -  — His work on AI-powered products and prototypes
 -  — His master's program and the FAQ he wrote for it
 -  — His methodology for building AI products
@@ -343,3 +347,5 @@ This reflects his own career arc: at Amazon, he transitioned from hands-on IC wo
 - https://eugeneyan.com/writing/semantic-ids-recsys/ — Training an LLM-RecSys Hybrid for Steerable Recs with Semantic IDs
 - https://eugeneyan.com/writing/llm-bio/ — LLM-powered Biographies
 - https://eugeneyan.com/speaking/sharing-at-singapore-management-university-on-data-analytics-talk/ — SMU talk on data analytics
+- https://claude.com/blog/using-llms-to-secure-source-code — Using LLMs to Secure Source Code (co-authored with Henna Dattani, May 2026)
+- https://github.com/anthropics/defending-code-reference-harness — Defending Code Reference Harness (open-sourced May 2026)

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-07 | Total pages: 9245 | Indexed entries: 1850 | Concepts: 1586 | Entities: 772
+> Last updated: 2026-06-07 | Total pages: 9250 | Indexed entries: 1851 | Concepts: 1589 | Entities: 772
 
 ## Entities (772 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -41,7 +41,7 @@
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Founder of HumanLayer. Key voice in context engineering for coding agents. Creator of Frequent Intentional Compaction (FIC) workflow and 12-Factor Agents framework. Y Combinator speaker (August 2025).
 - [[entities/doug-turnbull]] — Doug Turnbull (softwaredoug) — Search and information retrieval expert. "Metadata: the 3rd kind of retrieval" framework, "Cheat at Search" methodology for LLM-powered query understanding.
 - [[entities/eleanor-berger]] — Eleanor Berger — AI researcher, author, and entrepreneur focused on AI safety, alignment, and responsible AI development.
-- [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
+- [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Endorsed Stanford's Marin framework. Latent Space podcast guest.
 - [[entities/ethan-he]] — Ethan He — Lead of Grok Imagine at xAI. Previously lead of NVIDIA Cosmos World Model. Built Grok Imagine from zero to one in 3 months. Video agent architecture, generative UI vision.
 - [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
 - [[entities/dynomight-net]] — Dynomight — Data science & society blog
@@ -233,7 +233,7 @@
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization, Intent-Based Engineering, Graph of Algorithms, and The Scaffolding Ratio concepts.
 - [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | **Medium** | [dtunkelang.medium.com](https://dtunkelang.medium.com/) | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Bag-of-documents model (2023–2026): distills retrieval pipelines into single embedding model. Advises Etsy, Flipkart. RSS monitored via blogwatcher. [[concepts/query-understanding]] [[concepts/information-retrieval]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
-- [[entities/daniel-van-strien]] — Daniel van Strien — Machine Learning Librarian at Hugging Face. Focuses on datasets, GLAM+AI bridge, and data curation. Former British Library Digital Curator (Living with Machines). Creator of awesome-synthetic-datasets. Author of AI Design Patterns for Information Professionals.
+- [[entities/daniel-van-strien]] — Daniel van Strien — ML Librarian at Hugging Face. Creator of polars-hf (HF Buckets IO plugin), uv-scripts-for-ai (30+ OCR models, one command each), AI Patterns for GLAM book, hub-semantic-search-mcp. Datasets, synthetic data, community evals.
 - [[entities/datacurve]] — Datacurve — AI evaluation startup ($17.7M raised). Creator of DeepSWE benchmark (113 tasks, 91 repos, 5 languages). Exposed ~32% verifier error rate in SWE-Bench Pro and Claude Opus git-history exploitation.
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
@@ -280,7 +280,7 @@
 - [[entities/epoch-ai]] — Epoch AI — Independent research institute analyzing trends in AI compute, data, and labor
 - [[entities/ericmigi]] — **URL:** https://ericmigi.com
 - [[entities/ethan-mollick]] — **URL:** https://www.oneusefulthing.org
-- [[entities/eugene-yan]] — **URL:** https://eugeneyan.com
+- [[entities/eugene-yan]] — Eugene Yan (Ziyou Yan) — Anthropic MTS, bridging field and frontier. Applied ML practitioner (Amazon), eval-driven development, LLM patterns. Author of defending-code-reference-harness (May 2026). applied-ml (28.7K ★), open-llms (12.7K ★).
 - [[entities/eugeneyan]] — **X** | @eugeneyan |
 - [[entities/every-inc]] — AI-native media & software company. Publishers of the daily newsletter, creators of Compound Engineering philosophy (open-source plugin 14K+ stars), Folder-Is-The-Agent pattern, Agent-Native Architecture framework. Products: Spiral, Cora, Sparkle, Monologue, Lex, OpenClaw. CEO: Dan Shipper. Team: ~30 running 5 products + media.
 - [[entities/evanhahn-com]] — **Blog** | evanhahn.com |
@@ -397,7 +397,7 @@
 - [[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
 - [[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
 - [[entities/kyle-jeong]] — Kyle Jeong (@kylejeong) — Growth Engineer at Browserbase, UCLA CS/Math student. KP Fellow. Writes about AI infra: Firecracker microVMs, agent sandboxing, browser automation, Kubernetes, Transformers.
-- [[entities/lance-martin]] — Lance Martin — Anthropic MTS (Applied AI), previously LangChain. Author of context engineering 4-strategy taxonomy (Write/Select/Compress/Isolate), agent design patterns. Co-author of Anthropic's managed agents and context engineering posts. PhD Stanford.
+- [[entities/lance-martin]] — Lance Martin — Anthropic MTS (Applied AI), previously LangChain. Author of context engineering 4-strategy taxonomy (Write/Select/Compress/Isolate), agent design patterns, reduce-offload-isolate framework. Claude Opus 4.8 tips: mid-conversation system messages, xhigh effort for long-horizon agents, explicit tool triggering. Co-author of Anthropic's managed agents and context engineering posts. PhD Stanford.
 - [[entities/late-interaction]] — **URL:** https://www.lateinteraction.com
 - [[entities/lcamtuf]] — **URL:** https://lcamtuf.coredump.cx
 - [[entities/larsen-cundric]] — **X** | @larsencc | **Company** | Browser Use Founding Engineer | Agent sandboxing architecture (Pattern 2: isolate the agent with control plane)
@@ -785,7 +785,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1586 pages)
+## Concepts (1589 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -1112,7 +1112,7 @@
 - [[concepts/claude-code-sandboxing]] — Claude Code's OS-level sandbox. Filesystem + network isolation via Linux bubblewrap/macOS seatbelt. 84% reduction in permission prompts. Includes Claude Code on the Web (cloud-isolated execution). Open-sourced.
 - [[concepts/claude-code-skills]] — Claude Code Skills — Mechanisms and role patterns. Skills are folders, with mechanisms of Progressive Disclosure, dynamic Hooks, and memory persistence. 9 role patterns: Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops. Anthropic internal practice knowledge by Thariq Shihipar.
 - [[concepts/claude-code-source-patterns]] — Claude Code Source Patterns — Leaked Source Analysis
-- [[concepts/claude-code-tips]] — Claude Code Tips
+- [[concepts/claude-code-tips]] — Claude Code Tips — Docker/VSCode Dev Container setup for Claude Code with security isolation. Claude Opus 4.8 techniques: mid-conversation system messages, effort parameter tuning (xhigh for long-horizon agents), explicit tool/sub-agent triggering, adaptive thinking steering.
 - [[concepts/claude-design]] — Claude Design
 - [[concepts/claude-diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
 - [[concepts/claude-managed-agents]] — Anthropic's REST API-based platform for cloud-hosted autonomous agents at scale. Architecture: "decouple the brain from the hands" — agent loop on Anthropic side, code execution in self-hosted sandboxes (Cloudflare/Modal/Vercel/Daytona). Launched April 2026 with sandbox partnerships announced May 19, 2026.
@@ -1229,6 +1229,7 @@
 - [[concepts/deep-research]] — Deep Research: fundamentally a retrieval problem (BrowseComp-Plus oracle evidence). GPT-4.1 93%→15% accuracy gap. Three evaluation layers (one-shot/session/end-to-end). Part 1+2 of Hornet agentic retrieval series. Academic validation: Meng et al. (arXiv:2602.21456) — BM25 outperforms neural rankers, Q2Q reformulation +7.95%, passage > document retrieval.
 - [[concepts/deep-research-agent-from-scratch]] — Deep Research Agent from Scratch — Build a full research agent in 10 steps starting from raw Gemini API calls. Phase swapping (plan/execute mode switching), deterministic guardrails, dynamic parallel sub-agent launch (Exa search). Ivan Leo (Google DeepMind) + Hugo Bowne-Anderson workshop, March 2026. [[raw/articles/2026-03-28_youtube_deep-research-agent-workshop]]
 - [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
+- [[concepts/defending-code-reference-harness]] — Defending Code Reference Harness — Anthropic's open-source reference implementation for autonomous vulnerability discovery and remediation with Claude. 7-stage pipeline (build → recon → find → verify → dedupe → report → patch). Claude Code skills: /threat-model, /vuln-scan, /triage, /patch, /customize. 5.1K+ stars. Authored by Eugene Yan, Henna Dattani. May 2026.
 - [[concepts/deepseek-r1]] — DeepSeek-R1: First large-scale demonstration of reasoning capability emergence via pure RL (GRPO). Published in Nature. R1-Zero (pure RL) / R1 (4-stage pipeline) / distilled models. Self-verification and aha moments. AIME 79.8%, MATH-500 97.3%. o1-level performance for $294K.
 - [[concepts/deepseek-v3]] — DeepSeek-V3: 671B MoE model (37B active/token). Introduces multiple innovations: MLA, auxiliary-loss-free load balancing, MTP, FP8 training, DualPipe. Trained on 14.8T tokens at $5.576M. Landmark paper achieving GPT-4o-class performance (arXiv:2412.19437, Dec 2024).
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2: 685B parameters. Three innovations: DSA (learnable sparse attention, $O(L^2)→O(Lk)$), scalable RL (enhanced GRPO), large-scale agent task synthesis (1,827 environments, 85K prompts). V3.2-Speciale won IMO 2025 and IOI 2025 gold medals, ICPC World Finals 2nd place. Approaches GPT-5/Gemini-3.0-Pro (arXiv:2512.02556, Dec 2025).
@@ -1509,6 +1510,7 @@
 - [[concepts/managed-agents]] — Managed Agents
 - [[concepts/managed-agents-sre-incident-response]] — Managed Agents — SRE Incident Response Pattern using AI agents for automated incident management.
 - [[concepts/mandate-equinox]] — Mandate Equinox — The concept of a competitive cycle in the coding agent market where OpenAI and Anthropic trade dominance roughly every 6 months. Proposed by DanB (@irl_danB).
+- [[concepts/marin]] — Marin — Open-source framework from Stanford CRFM for foundation model research and training. Reproducible end-to-end pipeline, open development on GitHub (1.1k stars). Trained first open-source 8B to beat Llama 3.1 8B.
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents — Run ACP-compatible coding agents as Mastra tools/sub-agents. Supports supervisor delegation and workflow steps. @mastra/acp@0.1.0 (May 2026).
 - [[concepts/mcp]]
 - [[concepts/mcp-desktop-extensions]] — MCP Desktop Extensions (.mcpb). MCP 2026-07-28 RC: protocol made stateless (no handshake, no session ID). MCP Apps/Tasks extensions. Single ZIP archive file. Double-click install.
@@ -1616,6 +1618,8 @@
 - [[concepts/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/pgr]] — pgr: Entire's Rust MCP agent-oriented code search tool. Definitions-first, path-aware ranking improved first-query MRR from 0.32→0.41, Hit@1 from 26%→34%. Demonstrates that ranking quality, not search speed, improves agent performance.
 - [[concepts/pi-autoresearch]] — pi-autoresearch (Shopify) — Generalizes Karpathy's Autoresearch from ML training to arbitrary metric optimization. 3,600+ GitHub stars. 65% faster builds, 300x faster tests, 40+ metrics improved.- [[concepts/llm-creative-writing]]
+- [[concepts/polars]] — Polars — High-performance DataFrame library for Python/Rust. Lazy query engine with Apache Arrow backend. Native Hugging Face Hub support. Extended by [[concepts/polars-hf|polars-hf]] for HF Buckets.
+- [[concepts/polars-hf]] — polars-hf — Pure-Python IO plugin enabling Polars to read/write Hugging Face Hub Buckets. Created by [[entities/daniel-van-strien|Daniel van Strien]] (June 2026).
 - [[concepts/polymarket-trading-agents]] — Polymarket Trading Agents — AI agents autonomously trading on prediction markets, using LLMs for market analysis, probability estimation, and automated trading.
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: Design pattern where LLM agents improve without updating model weights by accumulating successful outputs, user corrections, and domain knowledge in external knowledge bases. Proposed by Ashpreet Bedi in the Text-to-SQL context. Similar approach to BQ Golden Queries, dbt Semantic Layer, LPE-SQL.
 - [[concepts/post-training]] — Post-Training — RLHF, SFT, and alignment techniques applied after pre-training
@@ -1763,6 +1767,7 @@
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].
 - [[concepts/us-china-ai-competition]] — US-China AI Competition — Anthropic's framework: four fronts (Intelligence, Domestic adoption, Global distribution, Resilience), compute as central battleground, export controls, distillation attacks, and two 2028 scenarios
+- [[concepts/uv-scripts-for-ai]] — uv-scripts-for-ai — Repository of self-contained PEP 723 UV scripts for AI/ML: OCR (30+ models), vision, audio, embeddings, inference. Created by [[entities/daniel-van-strien|Daniel van Strien]] (June 2026). 43 stars.
 - [[concepts/vector-search]] — Approximate Nearest Neighbor (ANN) search in high-dimensional embedding space. HNSW hierarchical graphs, k-means clustering, ScANN/DiskANN, filtered similarity (ACORN1/turbopuffer), hybrid BM25+vector strategies. Doug Turnbull's Maven course.
 - [[concepts/vending-bench]] — VendingBench — Dollar-denominated AI evaluation by Andon Labs. AI agents operate simulated vending machine businesses. Featured in Mythos System Card. Multiplayer Arena variant. Unsaturated real-world benchmark.
 - [[concepts/verifiers-rl]] — Verifiers: TRL-based multi-turn RL framework. GRPO on HuggingFace Trainer, supports environments and multi-turn tool use. Popular for research.
@@ -1842,6 +1847,8 @@
 - [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/llm-search-judge]], [[concepts/llm-as-judge]]
 
 - [[raw/articles/2026-06-07_sp500-ai-company-exclusion]] — S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic (Ars Technica, June 6 2026). HN #1 at 1412 pts. S&P Dow Jones Indices refuses to bend profitability/IWF/seasoning rules for MegaCap IPOs.
+- [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]] — Claude Platform Docs: Mid-conversation system messages — Add or update system instructions partway through a conversation without invalidating the cached prefix. Opus 4.8 only. Use cases: mid-session policy changes, per-turn authoritative context, user input during agentic loops. Companion: [[entities/lance-martin]], [[concepts/claude-code-tips]]
+- [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]] — Claude Platform Docs: Prompting best practices for Claude Opus 4.8. Covers effort parameter tuning (xhigh for coding agents, high as minimum), adaptive thinking migration, tool use triggering, literal instruction following, long-horizon agent patterns. Companion: [[entities/lance-martin]], [[concepts/claude-code-tips]]
 ## Transcripts (32 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]

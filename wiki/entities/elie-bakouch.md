@@ -2,7 +2,7 @@
 title: Elie Bakouch
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-06-03
+updated: 2026-06-07
 aliases: [eliebak, eliebakouch]
 status: active
 description: "ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
@@ -11,7 +11,8 @@ tags:
   - optimization
   - open-source
   - training
-sources: []
+sources:
+  - raw/articles/2026-06-07_eliebakouch_marin.md
 ---
 
 
@@ -46,6 +47,7 @@ His research philosophy emphasizes **data quality over quantity**, **architectur
 | 2026 | Contributing to **SmolLM3** — smol, multilingual, long-context reasoner |
 | 2026 | Engaged in synthetic pretraining research, commenting on Motif-2.6B tech report and training methodologies |
 | Jun 2026 | Published 47-tweet deep dive analysis of [[concepts/mai-thinking-1-tech-report|Microsoft MAI-Thinking-1 tech report]] — 1,500+ likes, 1,100+ bookmarks, highlighting zero-distillation design, scaling ladder transparency, and modified GRPO |
+| Jun 2026 | Endorsed [[concepts/marin|Marin]], Stanford's open-source foundation model training framework, praising its scientific approach and fully open development process |
 
 ## Core Ideas
 
@@ -99,11 +101,15 @@ Bakouch is active in the open-source ML community through Hugging Face AMAs, pub
 
 He has participated in the r/LocalLLaMA community, answering questions about SmolLM training, FineWeb dataset curation, and other research topics. This community engagement reflects his belief that open science requires not just open code and data, but also open discussion and knowledge sharing.
 
+In June 2026, Bakouch publicly endorsed the [[concepts/marin|Marin]] framework from Stanford, highlighting its "scientific approach to training," willingness to take risks, and fully open development process — praising that "you can follow everything on GitHub."
+
 ## Key Quotes
 
 > "Motif 2.6B tech report is pretty insane, first time i see a model with differential attention and polynorm trained at scale!"
 
 > "It's trained on 2.5T of token, with a 'data mixture schedule' to continuously adjust the mixture over training."
+
+> "one of my favorite projects is Marin from the stanford folks, they have a scientific approach to training, are ready to take risks and are fully open (even open development where you can follow everything on github!)"
 
 ## Key Projects
 
@@ -133,8 +139,9 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 - [[concepts/mixture-of-experts]] — His research focus area
 - [[concepts/scaling-laws]] — Compute-optimal training research
 - [[concepts/fineweb]] — Training dataset he helped curate
--  — His training philosophy-  — Community he actively participates in
--  — Emerging training methodology he follows
+- [[concepts/marin]] — Stanford open-source training framework he endorsed
+- [[concepts/synthetic-data]] — Training methodology he follows
+- [[concepts/mai-thinking-1-tech-report]] — Tech report he analyzed in depth
 
 ## Sources
 
@@ -147,3 +154,4 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 - [Motif-2.6B Tech Report Discussion](https://huggingface.co/Motif-Technologies/Motif-2.6B)
 - [Sparsity Viz Space](https://huggingface.co/spaces/eliebak/sparsity-viz)
 - [Hugging Face r/LocalLLaMA AMA](https://www.reddit.com/r/LocalLLaMA/)
+- [Marin Framework GitHub](https://github.com/marin-community/marin) — endorsed by Bakouch in June 2026

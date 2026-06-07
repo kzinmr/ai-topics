@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-07T18:27:14.914937+00:00",
+  "triage_run_id": "20260607T180000Z",
+  "source": "dreaming",
+  "summary_ja": "夢のパイプライン：全記事が日次パイプラインで処理済み。289件の生記事をクロスリファレンスした結果、5/31〜6/7の全重要コンテンツ（Cursor multi-agent kernel optimization、Targeted RL、ElevenLabs Flows Agent、Cohere co/plot、Nemotron 3 Ultra、Glean MCP Gateway、Pinecone Nexus benchmarks、Hebbia June updates、Sierra Outcomemaxxing、Anthropic RSI、ChatGPT Intent Router、S&P 500 AI exclusion、その他）がblog-ingest、newsletter-ingest、raw-backlog-ingest、active-crawl、過去の夢パイプラインのいずれかで既にWiki処理済み。新たなテイクはなし。",
+  "decisions": [
+    {
+      "item_id": "null-scan",
+      "source": "dreaming",
+      "source_name": "Dreaming Pipeline (Zero-Article Check)",
+      "title": "日次パイプラインクロスリファレンス — 全記事処理済み",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ dreaming_collectのtotal_articles=0。289件のrecent_raw_articlesをlog.md/entity/conceptページと突合した結果、全重要記事がblog-ingest/newsletter-ingest/raw-backlog-ingest/active-crawl/過去dreaming処理のいずれかで既にWiki処理済み。新たなテイクはなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "2026-06-07 dreaming cross-reference: 289 raw articles checked, all covered by daily pipelines."
+    }
+  ]
+}

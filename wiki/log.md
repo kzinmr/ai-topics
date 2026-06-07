@@ -1,3 +1,61 @@
+## 2026-06-07 X Accounts Scan — van Strien (polars-hf, uv-scripts-for-ai), Yan (security harness), Bakouch (Marin), Martin (Opus 4.8 tips)
+
+Batch of 11 new posts from X accounts scan (accounts_scanned=12, substantive_candidates=11). 8 AI-relevant posts processed across 4 contributors; 3 non-AI (Jonathan Whitaker DIY bio/music) skipped.
+
+**Daniel van Strien (3 posts — polars-hf + uv-scripts-for-ai):**
+- Created: [[concepts/polars-hf]] — Pure-Python IO plugin for HF Buckets with Polars (87 lines)
+- Created: [[concepts/uv-scripts-for-ai]] — Self-contained PEP 723 UV scripts for OCR/vision/audio/inference (81 lines)
+- Enriched: [[concepts/polars]] — Upgraded from 24-line stub to 58-line full page
+- Enriched: [[entities/daniel-van-strien]] — Added 2 timeline entries, 2 tools, X theme, Related Concepts (151→166 lines)
+- Sources: [[raw/articles/2026-06-03_vanstriendaniel_polars-hf]], [[raw/articles/2026-06-05_vanstriendaniel_uv-scripts-for-ai]]
+
+**Eugene Yan (2 posts — defending-code-reference-harness):**
+- Created: [[concepts/defending-code-reference-harness]] — Anthropic's 7-stage autonomous vuln find→verify→patch pipeline (116 lines)
+- Enriched: [[entities/eugene-yan]] — Timeline entries, Recent Themes, Related Concepts (345→351 lines)
+- Source: [[raw/articles/2026-06-03_eugeneyan_defending-code-reference-harness]]
+
+**Elie Bakouch (1 post — Marin framework):**
+- Created: [[concepts/marin]] — Stanford CRFM open-source foundation model training framework (180 lines)
+- Enriched: [[entities/elie-bakouch]] — Timeline, Key Quotes, Community Engagement, wikilinks (149→157 lines)
+- Source: [[raw/articles/2026-06-07_eliebakouch_marin]]
+
+**Lance Martin (2 posts — Claude Opus 4.8 tips):**
+- Enriched: [[entities/lance-martin]] — Opus 4.8 Tips section (mid-conversation system messages, long-horizon patterns, tool triggering) (152→193 lines)
+- Enriched: [[concepts/claude-code-tips]] — Opus 4.8 Techniques section (126→183 lines)
+- Sources: [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]], [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]]
+
+**Skipped (non-AI):**
+- Jonathan Whitaker ×3: magenta-realtime looper (music), DIY bio YouTube channels — out of scope
+
+Wiki pages: +4 concepts (polars-hf, uv-scripts-for-ai, defending-code-reference-harness, marin), +2 concept enriched (polars, claude-code-tips), +4 entity enriched. Total pages: 9248→9250.
+
+## 2026-06-07 Lance Martin Claude Opus 4.8 Tips — Entity + Concept Enrichment
+
+- **Scraped**: Two Claude Platform docs pages saved as raw articles
+  - [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]] — Mid-conversation system messages: add/update system instructions without breaking prompt cache. Opus 4.8 only.
+  - [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]] — Prompting best practices for Opus 4.8: effort parameter tuning, adaptive thinking, tool use triggering, literal instruction following.
+- **Enriched**: [[entities/lance-martin]] — Added "Claude Opus 4.8 Tips (May 2026)" section with three subsections: (1) Mid-Conversation System Messages Without Breaking Prompt Cache, (2) Long-Horizon Work: Pair Opus 4.8 with Outcomes or /goal, (3) Explicit Triggering Guidance for Custom Tools and Sub-Agents. Updated frontmatter: +3 tags (claude-opus, prompt-engineering, coding-agents), +2 sources, bumped date to 2026-06-07. File grew from 152 to ~191 lines.
+- **Enriched**: [[concepts/claude-code-tips]] — Added "Claude Opus 4.8 Techniques (Lance Martin Tips)" section with four subsections: (1) Mid-Conversation System Messages, (2) Long-Horizon Agent Patterns (technique/recommendation table), (3) Tool Use and Sub-Agent Triggering, (4) Effort Level Quick Reference table. Updated frontmatter: +3 tags, +2 sources, +2 related pages, bumped date. File grew from 126 to ~188 lines.
+- **Updated**: index.md — Enriched lance-martin and claude-code-tips descriptions. Added 2 raw article entries. Updated header: 9245→9248 total pages.
+- **Sources**: X accounts scan → Lance Martin posts about Opus 4.8 tips; scraped platform.claude.com/docs for mid-conversation-system-messages and prompting-best-practices.
+
+---
+## 2026-06-07 Cron: Elie Bakouch — Marin Framework Endorsement (X accounts scan)
+
+- **Raw article saved**: [[raw/articles/2026-06-07_eliebakouch_marin.md]] — Scraped from https://github.com/marin-community/marin (README, docs, API metadata, retrospective reports). 1.1k stars, 126 forks, Apache 2.0.
+- **Created**: [[concepts/marin]] — New concept page: Stanford CRFM open-source framework for foundation model training. Reproducible end-to-end pipeline, "Tootsie Roll" adaptive training, first open-source 8B to beat Llama 3.1 8B, 32B scale-up with QK-Norm, open development on GitHub. Tags: training, open-source, foundation-models, stanford, model-training, framework, pretraining, llm.
+- **Updated**: [[entities/elie-bakouch]] — Added timeline entry (Jun 2026 Marin endorsement), Key Quote, Community Engagement paragraph, Related Wikilinks (concepts/marin, concepts/synthetic-data, concepts/mai-thinking-1-tech-report), Sources entry, frontmatter updated to 2026-06-07 with raw article source.
+- **Source**: Elie Bakouch X post: "one of my favorite projects is Marin from the stanford folks, they have a scientific approach to training, are ready to take risks and are fully open (even open development where you can follow everything on github!)"
+
+---
+## 2026-06-07 Cron: Eugene Yan — Defending Code Reference Harness (X accounts scan)
+
+- **Raw article saved**: [[raw/articles/2026-06-03_eugeneyan_defending-code-reference-harness.md]] — Combined scrape of Anthropic blog post "Using LLMs to Secure Source Code" and GitHub repo defending-code-reference-harness
+- **Created**: [[concepts/defending-code-reference-harness]] — New concept page: Anthropic's open-source reference implementation for autonomous vulnerability discovery and remediation with Claude Opus. 7-stage pipeline, Claude Code skills (/threat-model, /vuln-scan, /triage, /patch, /customize). 5.1K+ stars. Find-and-fix loop (threat model, sandbox, discovery, verification, triage, patching).
+- **Updated**: [[entities/eugene-yan]] — Added timeline entries for May 2026 blog post and GitHub repo open-source; added Recent Themes entry for code security & vulnerability detection; added Related Concepts link to defending-code-reference-harness; added sources; updated frontmatter date
+- **Source**: https://claude.com/blog/using-llms-to-secure-source-code (+ Eugene Yan's X post: "Stronger models have made finding vulnerabilities easier, and the bottleneck has shifted to verification, triage, patching")
+
+---
 ## 2026-06-07 raw-backlog-ingest Triage (Batch 20260607T120040Z)
 
 5 articles triaged from raw backlog. Takes=0 (all skip).

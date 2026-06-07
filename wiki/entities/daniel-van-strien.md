@@ -7,7 +7,7 @@ title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-06-07
 tags:
   - person
   - model
@@ -18,6 +18,8 @@ tags:
 sources:
   - https://danielvanstrien.xyz/ai-patterns-for-glam/
   - https://danielvanstrien.xyz/ai-patterns-for-glam/intro.html
+  - https://github.com/davanstrien/polars-hf
+  - https://github.com/davanstrien/uv-scripts-for-ai
 ---
 
 
@@ -95,6 +97,8 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 
 ### Tools & Infrastructure
 
+- **polars-hf** — A pure-Python IO plugin for [[concepts/polars]] that enables reading and writing Hugging Face Hub Buckets (HF's S3 alternative for private/working data) with native LazyFrame scan, pushdown, and streaming. Fills the gap while native `hf://buckets/...` support is proposed upstream in Polars.
+- **uv-scripts-for-ai** — A repository of self-contained PEP 723 UV scripts for data & ML tasks: OCR (30+ models), vision, audio transcription, embeddings, inference, synthetic data generation, and more. Each script is one portable file runnable via `uv run` locally or `hf jobs uv run` on managed GPUs. Ships a ready-to-use agent skill for AI agents to discover, run, and adapt recipes.
 - **hub-semantic-search-mcp** — An [[concepts/mcp]] server for semantic search across the Hugging Face Hub, enabling natural language queries like "Find around 10 reasoning Hugging Face datasets published in 2025 focusing on topics other than maths and science."
 - **Genstruct 7B** — Contributed to an instruction-generation model designed to create valid instructions given raw text, part of the synthetic data generation ecosystem.
 - **ColPali + Qdrant pipelines** — Built multivector indexing and search systems for specialized document datasets (e.g., UFO document collections).
@@ -110,6 +114,8 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 
 | Date | Title | Topic |
 |------|-------|-------|
+| Jun 2026 | **polars-hf** — Read & Write HF Hub Buckets with Polars | Pure-Python IO plugin for HF Buckets; PEP 723 scripts for HF Jobs |
+| Jun 2026 | **uv-scripts-for-ai** — 30+ OCR models, one command each | Self-contained UV scripts for OCR, vision, audio, embeddings, inference — built for humans and agents |
 | Feb 2026 | Re-OCR Your Digitised Collections for ~$0.002/Page | Open-source VLM-based OCR for GLAM collections |
 | Jan 2026 | Train on Massive Datasets Without Downloading | HF Streaming + Unsloth for disk-free LLM training |
 | Mar 2026 | **[[concepts/ai-patterns-for-glam\|AI Design Patterns for Information Professionals]]** | Book (WIP): practical AI design patterns for GLAM and information professionals |
@@ -141,7 +147,16 @@ Daniel's X activity (@vanstriendaniel) centers on:
 4. **Open Source Advocacy** — Promoting open-source models, datasets, and tools; emphasizing community-driven development over closed systems.
 5. **Reasoning Models & Synthetic Data** — Discussing the latest developments in reasoning models (DeepSeek, QwQ) and their applications for synthetic data generation.
 6. **Hugging Face Ecosystem** — Regular updates on new HF features, datasets, models, and community initiatives; active participation in HF community discussions.
-7. **Cost-Efficient ML** — Sharing techniques for running ML workloads on free/cheap infrastructure (Colab, Kaggle, HF Jobs) to democratize access to AI capabilities.
+7. **Cost-Efficient ML** — Sharing techniques for running ML workloads on free/cheap infrastructure
+8. **Agent-Ready Tooling** — Building tools designed for both human and AI agent use: UV scripts with `--help`, PEP 723 metadata, and `hf jobs uv run` sandboxing; polars plugins with native LazyFrame APIs; agent skills for recipe discovery and execution. (Colab, Kaggle, HF Jobs) to democratize access to AI capabilities.
+
+## Related Concepts
+
+- [[concepts/polars]] — The Polars DataFrame library that polars-hf extends with HF Bucket support
+- [[concepts/uv-scripts-for-ai]] — Daniel's companion project of self-contained UV scripts for AI/ML
+- [[concepts/uv]] — The uv Python package manager (Astral) that powers the script ecosystem
+- [[concepts/pep-723]] — Inline script metadata standard enabling self-contained UV scripts
+- [[concepts/huggingface-jobs]] — HF Jobs: managed GPU infrastructure for running UV scripts
 
 ## See Also
 
