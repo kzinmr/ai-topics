@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-06
+updated: 2026-06-07
 tags:
   - company
   - model
@@ -26,6 +26,7 @@ sources:
   - raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md
   - raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md
   - raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md
+  - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
 ---
 
 # OpenAI
@@ -73,6 +74,11 @@ OpenAI is a leading AI research and product company known for developing the GPT
 
 - **ChatGPT for PowerPoint (May 2026 Beta)**: Create slides, update existing decks, turn source material into presentations. Available for ChatGPT Business, Enterprise, Edu, Free, Go, Pro, Plus users. Users must review formatting, claims, and numbers before sharing.
  OpenAI aggressively targeting non-technical users. Migration tools to import from Claude Cowork. Workplace features (slides, sheets). iMessage handoff skill. `/pet` fun feature. See [[concepts/vibe-physics]] for scientific Codex applications.
+
+
+### Sam Altman's "The Gentle Singularity" (June 2025)
+
+In his essay "The Gentle Singularity" (June 2025), CEO [[entities/sam-altman]] described early signs of AI systems accelerating AI development, referring to a "larval version of recursive self-improvement." The essay anticipated that AI would increasingly contribute to its own advancement, a dynamic that became more concretely measurable in 2026 with competitors like Anthropic reporting >80% code self-generation (see [[concepts/recursive-self-improvement]]). 
 
 ### Other Products
 - **ChatGPT** — Conversational AI interface

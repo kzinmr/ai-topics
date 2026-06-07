@@ -1,3 +1,11 @@
+## 2026-06-07 Newsletter Wiki Ingest (Superintelligence RSI)
+
+- Created: —
+- Updated: [[concepts/recursive-self-improvement]] — Claude 80% code stat, RSI 3-stage classification, Anthropic "When AI builds itself", Sam Altman Gentle Singularity
+- Updated: [[entities/anthropic]] — RSI and code self-generation section
+- Updated: [[entities/openai]] — Sam Altman Gentle Singularity reference
+- Source: raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
+
 |---
 ## 2026-06-06 Dreaming Wiki Ingest — Pinecone Nexus Benchmarks, Hebbia June Updates, Glean MCP Gateway, Nesbitt Security Survey
 ## 2026-06-06 raw-backlog-ingest Triage (Batch 20260606T200041Z)

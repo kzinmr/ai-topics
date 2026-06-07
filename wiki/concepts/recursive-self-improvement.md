@@ -1,10 +1,10 @@
 ---
 title: "Recursive Self-Improvement"
 created: 2026-05-05
-updated: 2026-06-05
+updated: 2026-06-07
 type: concept
 tags: [prediction, safety, alignment, training, benchmark, automation]
-sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-06-05-ainews-not-much-happened-today.md]
+sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-06-05-ainews-not-much-happened-today.md, raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md]
 ---
 
 # Recursive Self-Improvement
@@ -78,6 +78,45 @@ As AI accelerates digital work, physical-world bottlenecks (drug trials, manufac
 
 ### The Machine Economy
 Potential emergence of capital-heavy, human-light corporations where AI-run entities trade with each other, creating a parallel economy challenging traditional governance and redistribution models.
+
+## Industry Evidence (June 2026)
+
+### Claude Self-Writes >80% of Code
+
+In June 2026, Anthropic revealed that **Claude now writes more than 80% of the code merged into its own codebase** — a milestone in recursive self-improvement. The company's internal data shows Claude is accelerating AI development along a "possible path to recursive self-improvement, or AI autonomously building a more capable successor" ([[entities/anthropic]], June 4, 2026).
+
+### RSI Three-Stage Classification
+
+The Superintelligence newsletter (Kim Isenberg, June 6, 2026) proposes a three-stage taxonomy for understanding RSI progress:
+
+| Stage | Name | Status | Description |
+|-------|------|--------|-------------|
+| **Broad RSI** | AI-assisted AI development | Already mainstream | Humans use AI tools (Claude Code, Codex) to accelerate AI research and engineering — the current reality |
+| **Middle RSI** | AI-automated AI R&D | **2026's critical frontier** | AI systems autonomously conduct the majority of AI research and engineering tasks, with humans in supervisory roles |
+| **Hard RSI** | Fully autonomous self-improvement | **Not yet demonstrated** | AI designs and deploys its own successor without meaningful human involvement |
+
+Middle RSI is identified as the most consequential threshold for 2026 — the point at which AI development transitions from human-driven to AI-driven acceleration.
+
+### Anthropic's "When AI builds itself" (June 4, 2026)
+
+Anthropic published a post through their official account (June 4, 2026, 238K views) stating:
+
+> "Our internal data shows Claude is accelerating AI development — a possible path to recursive self-improvement, or AI autonomously building a more capable successor."
+
+The post sparked significant debate, with [[entities/gary-marcus]] arguing that the results demonstrated "faster coding — entirely under human control" rather than true AGI, and that "AGI is harder than recursive self-improvement."
+
+### Sam Altman's "The Gentle Singularity" (June 2025)
+
+[[entities/openai]] CEO Sam Altman referenced a "larval version of recursive self-improvement" in his essay "The Gentle Singularity" (June 2025), describing early signs of AI systems accelerating AI development before the phenomenon became widely recognized.
+
+### Historical Context
+
+The concept of an "intelligence explosion" was first formalized by I.J. Good in 1965:
+
+> "Let an ultraintelligent machine be defined as a machine that can far surpass all the intellectual activities of any man however clever. Since the design of machines is one of these intellectual activities, an ultraintelligent machine could design even better machines; there would then unquestionably be an 'intelligence explosion,' and the intelligence of man would be left far behind."
+
+The 80% code self-writing milestone represents the most concrete empirical evidence to date that Good's theoretical framework may be materializing in practice, at least for the first several iterations of the loop.
+
 
 ## Related
 

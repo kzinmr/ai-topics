@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-06-03
+updated: 2026-06-07
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -31,6 +31,7 @@ sources: [
   - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
   - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
   - raw/newsletters/2026-05-26-the-pope-and-anthropic-partner-on-the-ai-ethics-debate.md
+  - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
 ]
 related: []
 ---
@@ -89,6 +90,17 @@ Anthropic introduced **live artifacts** in Cowork mode (Apr 2026):
 Claude now integrates with 15 new everyday consumer apps:
 Booking.com, Resy, Spotify, Audible, Instacart, AllTrails, Thumbtack, TurboTax, Uber, and more.
 Directory now exceeds **200 connectors** total.
+
+
+### Recursive Self-Improvement & Code Self-Generation (June 2026)
+
+In June 2026, Anthropic disclosed that **Claude now writes more than 80% of the code merged into its own codebase** — a significant milestone toward [[concepts/recursive-self-improvement]]. The revelation came via a company post titled "When AI builds itself" (June 4, 2026) which stated:
+
+> "Our internal data shows Claude is accelerating AI development — a possible path to recursive self-improvement, or AI autonomously building a more capable successor."
+
+The 80% figure was met with both alarm and skepticism. [[entities/gary-marcus]] characterized the post as describing "faster coding — entirely under human control" and argued that the results demonstrate RSI (AI as a useful coding tool) rather than AGI. The internal data suggests Claude's role in Anthropic's own development pipeline has crossed a critical threshold where the majority of code contributions are now AI-generated.
+
+This development sits alongside Claude's [[concepts/agentic-engineering]] capabilities and [[concepts/claude-managed-agents]] platform as part of a broader acceleration in Anthropic's internal AI R&D pipeline.
 
 ### Claude Design (Apr 2026)
 
