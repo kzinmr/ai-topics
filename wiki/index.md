@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-07 | Total pages: 9250 | Indexed entries: 1851 | Concepts: 1590 | Entities: 772
+> Last updated: 2026-06-07 | Total pages: 9251 | Indexed entries: 1852 | Concepts: 1590 | Entities: 773
 
 ## Entities (772 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -234,6 +234,7 @@
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization, Intent-Based Engineering, Graph of Algorithms, and The Scaffolding Ratio concepts.
 - [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | **Medium** | [dtunkelang.medium.com](https://dtunkelang.medium.com/) | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Bag-of-documents model (2023–2026): distills retrieval pipelines into single embedding model. Advises Etsy, Flipkart. RSS monitored via blogwatcher. [[concepts/query-understanding]] [[concepts/information-retrieval]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 - [[entities/daniel-van-strien]] — Daniel van Strien — ML Librarian at Hugging Face. Creator of polars-hf (HF Buckets IO plugin), uv-scripts-for-ai (30+ OCR models, one command each), AI Patterns for GLAM book, hub-semantic-search-mcp. Datasets, synthetic data, community evals.
+- [[entities/dan-luu]] — Software reliability engineer known for systematic incident analysis. Twitter cache failure study (2012-2022) with 6 SEV-0/SEV-1 cache incidents documented. [[raw/articles/danluu.com--cache-incidents--1d05e743.md]]
 - [[entities/datacurve]] — Datacurve — AI evaluation startup ($17.7M raised). Creator of DeepSWE benchmark (113 tasks, 91 repos, 5 languages). Exposed ~32% verifier error rate in SWE-Bench Pro and Claude Opus git-history exploitation.
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.

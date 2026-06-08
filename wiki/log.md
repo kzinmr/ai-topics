@@ -1,3 +1,17 @@
+## [2026-06-08] raw-backlog-ingest batch: 5 articles processed
+
+**Batch ID:** 20260608T040013Z | **5 articles** from backlog sorted by AI relevance.
+
+| Article | Action | Detail |
+|---------|--------|--------|
+| MAI-Thinking-1 Tech Report (372KB) | skip (already captured) | 109-page Microsoft tech report. Comprehensive concept page exists: `concepts/mai-thinking-1-tech-report.md` (220 lines). All architecture, benchmarks, GRPO modifications, data pipeline, safety sections already present. Source in frontmatter. |
+| Dwarkesh × Alex Imas & Phil Trammell | skip (already captured) | AGI economics interview. Entity page `entities/dwarkesh-patel.md` has timeline entry, cross-reference to `concepts/agi-economics.md`, dedicated reference link. Concept page `concepts/agi-economics.md` (93 lines) covers relational sector, capital satiation, labor share, taxation. |
+| Ed Zitron: AI Doesn't Have ROI | skip (already captured) | Full 70-line analysis section in `entities/ed-zitron.md`. Source in frontmatter, Notable Articles table entry, dedicated section covering Uber $500M token incident, GitHub Copilot billing chaos, kalopsia thesis, Bain survey, SemiAnalysis Dark Output critique. |
+| Paul Graham: Being Popular (2001) | skip (already captured) | Comprehensive coverage in `entities/paulgraham-com.md` (150+ lines). Source in frontmatter, AI relevance section covering Trojan horse strategy and expert hacker influence model. |
+| Dan Luu: Twitter Cache Incidents | **NEW ENTITY PAGE** | Created `entities/dan-luu.md` (4269 bytes). 6 SEV-0/SEV-1 cache incidents (2012-2022). Cascading failure modes, positive feedback loops, memcached architecture, knowledge loss patterns. Relevant to AI infrastructure (KV cache, distributed inference, prompt caching). Added to index.md (Entities: 773). |
+
+**Summary:** 1 new entity page created, 4 articles already captured. Dan Luu entity page adds systematic incident analysis expertise and cache failure mode documentation relevant to modern AI serving architectures.
+
 ## [2026-06-08] blog: VISION.md Bitter Lesson
 
 - **Blog post created**: `blog/2026-06-08_hermes_vision-md-bitter-lesson.md`
