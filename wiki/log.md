@@ -1,3 +1,13 @@
+## [2026-06-08] active-crawl — 3 new concept pages + DeepSeek-V4 enrichment
+- **Created:** `concepts/google-spacex-ai-compute-deal.md` — Google pays SpaceX $920M/month for 110K NVIDIA GPUs, 32-month deal; Anthropic's earlier Colossus 1 deal; SpaceX-xAI merger context ($1.25T valuation); Cursor $60B acquisition option
+- **Created:** `concepts/llms-eroding-software-careers.md` — Bearblog viral essay (991 HN pts, 948 comments): domain expertise, debugging, and code architecture systematically eroded by LLMs/coding agents across Claude 4.5→4.7, GPT-5.5, Opus 4.8 progression
+- **Created:** `concepts/ai-slop-productivity-paradox.md` — Gary Marcus essay: AI floods output without GDP impact; book/music/science/app slop evidence; coding providers may lose $1000 per $100 user payment; Leiden Declaration on AI math proofs
+- **Enriched:** `concepts/deepseek-v4.md` — Added V4 Pro vs GPT-5.5 Pro precision benchmark comparison (RuntimeWire, June 2026); DeepSeek beats GPT-5.5 Pro on precision tasks; open-weight models closing gap with proprietary
+- **Raw articles saved:** `2026-06-05_google-spacex-ai-compute-deal.md`, `2026-06-07_llms-eroding-software-careers.md`, `2026-06-07_deepseek-v4-pro-vs-gpt-5-5-pro.md`, `2026-06-07_gary-marcus-ai-slop-productivity.md`
+- **Index updated:** Concepts 1491 (corrected from stale 1591 header), +3 new entries
+- **Crawl sources:** HN Algolia (15 trending AI articles), X/Twitter xurl (10 trending results), Wiki gap analysis (30 coverage gaps identified), Blogwatcher DB (50 recent articles)
+- **Top HN stories:** S&P 500 blocking AI firms (1457 pts), LLMs eroding SWE careers (991 pts), Meta AI chatbot hacked (696 pts), Anthropic vulnerability discovery (534 pts), Google-SpaceX compute deal (414 pts), DeepSeek V4 Pro benchmarks (284 pts)
+
 ## [2026-06-08] blog-wiki-ingest — antirez LLM QA testing + Apple AI Philosophy + 3 reference enrichments
 - **Take 1**: Enriched [[entities/antirez-com]] — LLM Agents as QA Engineers section (Jun 7, 2026)
 - **Take 2**: Enriched [[concepts/apple]] — 24-line stub → 96-line concept page (Apple AI Philosophy, Pascal's Wager framework, $14B Capex analysis)

@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-05-23
+updated: 2026-06-08
 type: concept
 tags:
   - model
@@ -18,6 +18,8 @@ sources:
   - https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf
   - raw/newsletters/2026-05-22-tpweek162-deepseek-v4.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
+  - raw/articles/2026-06-07_deepseek-v4-pro-vs-gpt-5-5-pro.md
+  - https://runtimewire.com/article/deepseek-v4-pro-beats-gpt-5-5-pro-on-precision
 ---
 
 # DeepSeek-V4
@@ -289,6 +291,19 @@ On May 22-23 2026, DeepSeek announced a **permanent 75% price reduction** for V4
 This pricing move is directly connected to [[concepts/model-labs-to-agent-labs]] thesis — when model inference costs collapse, model providers must differentiate on [[entities/greg-brockman|agent platforms]] rather than benchmark scores.
 
 **See also**: [[concepts/model-labs-to-agent-labs]] for the industry context of model economics deflation.
+
+## V4 Pro vs GPT-5.5 Pro: Precision Benchmarks (June 2026)
+
+In June 2026, RuntimeWire reported that **DeepSeek V4 Pro beat GPT-5.5 Pro on precision benchmarks**, a significant milestone for open-weight models competing with proprietary frontier models.
+
+| Benchmark | DeepSeek V4 Pro | GPT-5.5 Pro | Notes |
+|-----------|----------------|-------------|-------|
+| Precision tasks | **Higher** | Lower | V4 Pro demonstrated superior accuracy on precision-oriented evaluations |
+| General reasoning | Competitive | Competitive | Both models perform at frontier level |
+
+This result reinforces the [[concepts/model-labs-to-agent-labs|model-labs-to-agent-labs]] thesis: open-weight models are closing the capability gap with proprietary alternatives, accelerating the commoditization of model quality.
+
+**Source**: [RuntimeWire](https://runtimewire.com/article/deepseek-v4-pro-beats-gpt-5-5-pro-on-precision) (June 7, 2026), HN discussion (284 points, 135 comments)
 
 ## Historical Significance
 
