@@ -5,9 +5,8 @@ updated: 2026-06-08
 type: concept
 status: complete
 tags:
-  - codex
-  - openai
   - coding-agents
+  - openai
   - agent-loop
   - developer-tooling
   - prompt-caching

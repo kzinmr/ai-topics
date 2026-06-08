@@ -6,7 +6,6 @@ updated: 2026-05-26
 tags:
   - promptfoo
   - evaluation
-  - agent-evaluation
   - tool
   - testing
   - security

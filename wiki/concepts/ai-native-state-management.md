@@ -8,13 +8,12 @@ tags:
   - ai-agents
   - state-management
   - architecture
-  - agent-architecture
   - context-engineering
   - memory-systems
   - orchestration
   - event-sourcing
   - durable-execution
-  - design-patterns
+  - methodology
   - agentic-engineering
   - data-flow
   - rag

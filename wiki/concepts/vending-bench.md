@@ -6,7 +6,7 @@ updated: 2026-06-05
 tags:
   - evaluation
   - benchmark
-  - ai-safety
+  - agent-safety
   - ai-agents
 aliases: [Vending-Bench, VendingBench Arena, Dollar-Denominated Evaluation]
 sources:

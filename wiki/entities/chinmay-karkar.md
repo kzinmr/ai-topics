@@ -5,10 +5,8 @@ created: 2026-06-08
 updated: 2026-06-08
 tags:
   - person
-  - researcher
   - blogger
   - training
-  - distillation
   - reinforcement-learning
   - microsoft
 aliases:

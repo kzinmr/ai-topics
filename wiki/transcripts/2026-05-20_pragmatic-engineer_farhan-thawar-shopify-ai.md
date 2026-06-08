@@ -7,7 +7,7 @@ source: YouTube (The Pragmatic Engineer)
 url: https://www.youtube.com/watch?v=u-3IILWQPRM
 type: transcript
 duration: "47:03"
-tags: [claude-code, ai-coding, ai-agents, transcript]
+tags: [claude-code, coding-agents, ai-agents, transcript]
 ---
 
 # Pragmatic Engineer — Farhan Thawar on Shopify AI — Transcript

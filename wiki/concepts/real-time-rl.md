@@ -8,7 +8,7 @@ tags:
   - coding-agents
   - model
   - training
-  - rlhf
+  - fine-tuning
 aliases:
   - "real-time-rl"
   - "real-time reinforcement learning"

@@ -9,8 +9,7 @@ tags:
   - human-in-the-loop
   - agent-governance
   - agent-safety
-  - agent-security
-  - enterprise-ai
+  - company
   - ai-adoption
 sources:
   - raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md

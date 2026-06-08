@@ -6,9 +6,7 @@ updated: 2026-06-03
 tags:
   - person
   - langchain
-  - python
   - developer-tooling
-  - pydantic
 aliases:
   - sydneyrunkle
   - "@sydneyrunkle"

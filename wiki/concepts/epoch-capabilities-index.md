@@ -3,7 +3,11 @@ title: "Epoch Capabilities Index (ECI)"
 created: 2026-05-30
 updated: 2026-05-30
 type: concept
-tags: [benchmark, evaluation, methodology, research]
+tags:
+  - benchmark
+  - evaluation
+  - methodology
+  - lab
 sources: []
 ---
 

@@ -5,10 +5,8 @@ updated: 2026-06-04
 type: entity
 tags:
   - person
-  - researcher
-  - information-retrieval
+  - search
   - late-interaction
-  - colbert
   - open-source
   - france
 sources:

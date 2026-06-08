@@ -7,15 +7,13 @@ tags:
   - concept
   - multi-agent
   - orchestration
-  - agent-architecture
+  - architecture
   - agent-coordination
   - ai-agents
-  - agents
   - coding-agents
-  - subagents
   - verification
   - test-time-scaling
-  - reliability
+  - infrastructure
 aliases:
   - multi-agent-systems
   - mas

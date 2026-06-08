@@ -3,7 +3,12 @@ title: "AlphaProof Nexus"
 created: 2026-05-31
 updated: 2026-05-31
 type: concept
-tags: [deepmind, formal-verification, mathematics, agent-architecture, neurosymbolic]
+tags:
+  - google
+  - formal-verification
+  - education
+  - architecture
+  - neurosymbolic
 sources:
   - https://wpnews.pro/news/how-deepmind-alphaproof-nexus-cracks-56-year-old-math-agentic-llm-loops-and-lean
 ---

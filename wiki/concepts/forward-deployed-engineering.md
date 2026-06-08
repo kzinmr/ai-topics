@@ -6,7 +6,6 @@ tags:
   - company
   - strategy
   - ecosystem
-  - enterprise-ai
 sources:
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/articles/2026-05-20_varick_forward-deployed-engineering-101.md

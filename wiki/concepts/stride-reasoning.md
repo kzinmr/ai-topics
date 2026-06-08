@@ -3,7 +3,13 @@ title: STRIDE (Learnable Stepwise Language Feedback)
 created: 2026-05-28
 updated: 2026-05-28
 type: concept
-tags: [concept, reinforcement-learning, reasoning, training, deep-learning, chain-of-thought, evaluation]
+tags:
+  - concept
+  - reinforcement-learning
+  - reasoning
+  - training
+  - model
+  - evaluation
 sources:
   - raw/articles/2026-05-21_arxiv_stride-reasoning.md
   - https://arxiv.org/abs/2605.18851

@@ -4,13 +4,12 @@ type: concept
 created: 2026-05-25
 updated: 2026-05-25
 tags:
-  - saas
+  - product
   - ai-agents
-  - enterprise-ai
+  - company
   - business-model
-  - pricing
+  - economics
   - multi-tenancy
-  - agent-infrastructure
   - career-strategy
   - fde
 sources:

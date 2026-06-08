@@ -3,7 +3,14 @@ title: LLM Development Paradigm
 created: 2026-05-19
 updated: 2026-05-19
 type: concept
-tags: [training, post-training, alignment, dpo, rlhf, synthetic-data, scaling, peft, fine-tuning, llm, benchmark, evaluation]
+tags:
+  - training
+  - alignment
+  - fine-tuning
+  - optimization
+  - model
+  - benchmark
+  - evaluation
 aliases: [two-stage training, pre-training post-training pipeline]
 sources:
   - raw/papers/2024-07-23_2407.21783_llama-3-herd-of-models.md

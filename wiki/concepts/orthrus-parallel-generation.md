@@ -3,7 +3,14 @@ title: Orthrus (Parallel Token Generation)
 created: 2026-05-22
 updated: 2026-05-22
 type: concept
-tags: [concept, inference, optimization, kv-cache, speculative-decoding, llm, training, diffusion]
+tags:
+  - concept
+  - inference
+  - optimization
+  - kv-cache
+  - model
+  - training
+  - diffusion
 sources: [raw/articles/2026-05-22_orthrus-parallel-token-generation.md, https://arxiv.org/html/2605.12825]
 ---
 

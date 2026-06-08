@@ -13,11 +13,10 @@ aliases:
   - mfpiccolo
 tags:
   - person
-  - founder
   - open-source
   - harness-engineering
   - backend-engineering
-  - agent-orchestration
+  - orchestration
   - ai-agents
 sources:
   - https://iii.dev

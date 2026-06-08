@@ -6,10 +6,10 @@ updated: 2026-05-22
 tags:
   - company
   - database
-  - vector-search
+  - search
   - ai-agents
   - platform
-  - ai-infrastructure
+  - infrastructure
 aliases: ["Weaviate Inc."]
 sources:
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md

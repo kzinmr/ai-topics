@@ -9,9 +9,8 @@ created: 2026-05-24
 updated: 2026-05-24
 tags:
   - person
-  - researcher
   - agentic-engineering
-  - cli
+  - developer-tooling
   - china
 sources:
   - https://x.com/yan5xu

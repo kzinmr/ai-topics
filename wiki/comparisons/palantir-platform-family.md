@@ -7,7 +7,7 @@ tags:
   - comparison
   - palantir
   - platform
-  - enterprise-ai
+  - company
   - decision-centric
   - ai-agents
 sources:

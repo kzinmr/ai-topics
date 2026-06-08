@@ -3,7 +3,15 @@ title: Ling 2.6-1T
 created: 2026-05-27
 updated: 2026-05-27
 type: entity
-tags: [entity, model, llm, mixture-of-experts, moe, open-source, china, ant-group, text-generation, coding-agents, agentic-engineering]
+tags:
+  - entity
+  - model
+  - open-source
+  - china
+  - ant-group
+  - text-generation
+  - coding-agents
+  - agentic-engineering
 sources:
   - raw/articles/2026-05-27_ling-2-6-1t-ant-group.md
   - https://www.i-scoop.eu/ling-2-6-1t-by-ant-group/

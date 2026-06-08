@@ -3,7 +3,14 @@ title: Gemini CLI
 created: 2026-05-24
 updated: 2026-05-24
 type: entity
-tags: [product, google, open-source, cli, coding-agent, developer-tooling, api, gemini, controversy, antigravity]
+tags:
+  - product
+  - google
+  - open-source
+  - developer-tooling
+  - coding-agent
+  - controversy
+  - antigravity
 sources: [raw/articles/2026-05-19_google-gemini-cli-sunset.md]
 ---
 

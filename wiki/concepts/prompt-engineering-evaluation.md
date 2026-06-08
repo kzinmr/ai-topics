@@ -7,7 +7,7 @@ tags:
   - evaluation
   - benchmark
   - methodology
-  - chain-of-thought
+  - reasoning
   - metaprompting
 status: active
 description: "The importance of rigorous benchmark-based evaluation of prompt engineering claims, demonstrated by Sean Goedecke's study showing Kelsey Piper's famous o3 GeoGuessr prompt performed worse than a simple default prompt."

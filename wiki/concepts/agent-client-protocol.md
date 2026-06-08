@@ -7,7 +7,6 @@ tags:
   - protocol
   - mcp
   - coding-agents
-  - acp
   - agent-communication
   - harness-engineering
 aliases:

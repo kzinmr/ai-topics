@@ -5,10 +5,10 @@ created: 2026-05-28
 updated: 2026-05-28
 tags:
   - methodology
-  - agent-evaluation
+  - evaluation
   - ai-product
   - probabilistic-systems
-  - reliability
+  - infrastructure
 aliases:
   - probabilistic-era
   - probabilistic-software

@@ -9,7 +9,7 @@ tags:
   - ai-native
   - agent-native
   - blog
-  - podcast
+  - writing
   - openclaw
   - content-creator
 sources:

@@ -5,7 +5,7 @@ created: 2026-05-25
 updated: 2026-05-25
 tags:
   - person
-  - ai-infrastructure
+  - infrastructure
   - shopify
   - company
   - leadership

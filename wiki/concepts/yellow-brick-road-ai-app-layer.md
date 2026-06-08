@@ -6,7 +6,7 @@ type: concept
 tags:
   - concept
   - strategy
-  - enterprise-ai
+  - company
   - ai-agents
   - governance
 aliases:

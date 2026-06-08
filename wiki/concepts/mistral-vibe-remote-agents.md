@@ -3,7 +3,14 @@ title: Mistral Vibe Remote Agents
 created: 2026-05-22
 updated: 2026-05-31
 type: concept
-tags: [coding-agents, orchestration, cloud, developer-tooling, ai-agents, autonomous-agents, mistral, model]
+tags:
+  - coding-agents
+  - orchestration
+  - infrastructure
+  - developer-tooling
+  - ai-agents
+  - mistral
+  - model
 sources:
   - raw/articles/2026-05-10_mistral-ai_vibe-remote-agents-mistral-medium-3-5.md
   - raw/articles/mistral-medium-3-5-vibe-remote-agents.md

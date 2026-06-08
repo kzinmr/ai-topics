@@ -3,7 +3,14 @@ title: "Microsoft MAI-Thinking-1 Technical Report Deep Dive"
 created: 2026-06-03
 updated: 2026-06-03
 type: concept
-tags: [microsoft, moe, scaling, training, post-training, reinforcement-learning, grpo, datasets, reasoning-model]
+tags:
+  - microsoft
+  - model
+  - optimization
+  - training
+  - reinforcement-learning
+  - datasets
+  - reasoning-model
 sources:
   - raw/articles/2026-06-03_eliebakouch-mai-tech-report-deep-dive.md
   - raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md

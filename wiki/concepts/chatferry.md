@@ -3,7 +3,14 @@ title: "ChatFerry"
 created: 2026-05-21
 updated: 2026-05-21
 type: concept
-tags: [tool, cli, browser-automation, coding-agents, typescript, open-source, agent-tooling, ai-agents]
+tags:
+  - tool
+  - developer-tooling
+  - browser-agent
+  - coding-agents
+  - open-source
+  - agent-tooling
+  - ai-agents
 sources: [https://github.com/shlokkhemani/chatferry, raw/articles/2026-05-20_shloked_chatferry.md]
 ---
 

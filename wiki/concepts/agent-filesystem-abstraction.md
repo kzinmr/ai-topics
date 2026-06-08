@@ -5,12 +5,12 @@ updated: 2026-06-04
 type: concept
 tags:
   - agent-skills
-  - agent-architecture
+  - architecture
   - agent-design-patterns
-  - filesystem
+  - developer-tooling
   - database
   - harness-engineering
-  - tool-use
+  - tool
 aliases: ["ChromaFS pattern", "virtual-filesystem-for-agents", "PostgresFS"]
 related:
   - agent-skills

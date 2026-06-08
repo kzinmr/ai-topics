@@ -11,12 +11,11 @@ tags:
   - tokyo
   - evolutionary-algorithms
   - model-merging
-  - ai-research
   - open-source
   - nature-inspired
   - collective-intelligence
   - foundation-models
-  - llm
+  - model
   - vlm
 sources:
   - https://sakana.ai/

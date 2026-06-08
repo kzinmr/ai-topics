@@ -3,7 +3,19 @@ title: Qdrant
 created: 2026-06-03
 updated: 2026-06-03
 type: entity
-tags: [company, product, platform, tool, vector-search, embeddings, hnsw, ann, retrieval, search, infrastructure, rust, open-source]
+tags:
+  - company
+  - product
+  - platform
+  - tool
+  - search
+  - model
+  - hnsw
+  - ann
+  - rag
+  - infrastructure
+  - developer-tooling
+  - open-source
 sources:
   - https://qdrant.tech/documentation/tutorials-search-engineering/branch-aware-search/
   - raw/articles/2026-06-03_zayarni-qdrant-branch-aware-vector-search.md

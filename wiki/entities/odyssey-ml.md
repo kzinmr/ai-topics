@@ -3,7 +3,15 @@ title: Odyssey ML
 created: 2026-05-19
 updated: 2026-05-19
 type: entity
-tags: [company, world-models, multimodal, video-generation, audio-generation, realtime, ai-research, open-source]
+tags:
+  - company
+  - world-models
+  - multimodal
+  - video-generation
+  - audio-generation
+  - realtime
+  - lab
+  - open-source
 sources: [raw/articles/2026-05-17_odyssey-starchild-1.md, https://odyssey.ml/introducing-starchild-1]
 ---
 

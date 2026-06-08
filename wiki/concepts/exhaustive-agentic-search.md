@@ -4,13 +4,10 @@ type: concept
 created: 2026-06-04
 updated: 2026-06-04
 tags:
-  - agentic-search
   - search
   - ai-agents
   - harness-engineering
-  - agents
   - evaluation
-  - information-retrieval
 aliases:
   - beam-search-agents
   - directory-search-agents

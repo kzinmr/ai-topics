@@ -3,7 +3,17 @@ title: "RLM for Indexing & Content Understanding"
 created: 2026-06-04
 updated: 2026-06-04
 type: concept
-tags: [rlm, information-retrieval, chunking, embeddings, agentic-retrieval, context-management, coding-agents, inference, search, methodology, emerging]
+tags:
+  - rlm
+  - search
+  - chunking
+  - model
+  - agentic-retrieval
+  - context-management
+  - coding-agents
+  - inference
+  - methodology
+  - emerging
 sources:
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md
 related:

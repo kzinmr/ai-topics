@@ -7,8 +7,8 @@ tags:
   - ai-content-detection
   - ai-transparency
   - content-moderation
-  - generative-ai
-  - ai-ethics
+  - model
+  - ethics
   - platform-policy
 sources:
   - https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/

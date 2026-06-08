@@ -3,7 +3,15 @@ title: Mastra ACP Agents
 created: 2026-05-19
 updated: 2026-05-19
 type: concept
-tags: [concept, ai-agents, agent-framework, acp, agent-communication-protocol, coding-agents, tool-use, subagents, typescript, workflow]
+tags:
+  - concept
+  - ai-agents
+  - protocol
+  - agent-communication-protocol
+  - coding-agents
+  - tool
+  - developer-tooling
+  - workflow
 sources: [raw/articles/2026-05-14_mastra-acp-agents.md, https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.34.0]
 ---
 

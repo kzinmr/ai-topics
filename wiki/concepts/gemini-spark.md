@@ -3,7 +3,17 @@ title: Gemini Spark
 created: 2026-05-23
 updated: 2026-05-23
 type: concept
-tags: [concept, product, google, ai-agents, agentic-engineering, personal-ai, ambient-agents, multi-agent, automation, gemini, proactive]
+tags:
+  - concept
+  - product
+  - google
+  - ai-agents
+  - agentic-engineering
+  - personal-ai
+  - ambient-agents
+  - multi-agent
+  - automation
+  - proactive
 sources: [https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/, https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/]
 ---
 

@@ -8,14 +8,13 @@ depth: 22000
 tags:
   - person
   - x-account
-  - ai
+  - model
   - harness-engineering
   - openai
-  - codex
+  - coding-agents
   - ai-agents
   - agentic-engineering
-  - elixir
-  - symphony
+  - developer-tooling
 sources: []
 ---
 

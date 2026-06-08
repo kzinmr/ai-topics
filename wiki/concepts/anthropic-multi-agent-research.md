@@ -7,9 +7,8 @@ tags:
   - multi-agent
   - ai-agents
   - anthropic
-  - agent-architecture
-  - agent-orchestration
-  - subagents
+  - architecture
+  - orchestration
   - prompting
   - deep-research
 aliases:

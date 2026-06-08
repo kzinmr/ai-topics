@@ -5,12 +5,11 @@ updated: 2026-06-01
 type: concept
 tags:
   - concept
-  - ai-coding
   - coding-agents
   - agent-ergonomics
   - psychology
   - mental-health
-  - productivity
+  - developer-tooling
 sources:
   - raw/articles/simonwillison.net--2026-may-31-the-solution-might-be-cancelling-my-ai-subscript--a94e18e9.md
 ---

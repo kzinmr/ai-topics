@@ -3,7 +3,16 @@ title: NVIDIA SANA-WM
 created: 2026-05-21
 updated: 2026-05-21
 type: entity
-tags: [model, nvidia, video-generation, world-models, open-source, diffusion, multimodal, gpu, training-efficiency]
+tags:
+  - model
+  - nvidia
+  - video-generation
+  - world-models
+  - open-source
+  - diffusion
+  - multimodal
+  - hardware
+  - training-efficiency
 sources: [raw/articles/2026-05-16_nvidia-sana-wm.md]
 ---
 

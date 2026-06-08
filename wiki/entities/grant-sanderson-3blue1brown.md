@@ -5,7 +5,6 @@ created: 2026-05-04
 updated: 2026-05-25
 tags:
   - person
-  - educator
   - content-creator
   - youtube
   - open-source

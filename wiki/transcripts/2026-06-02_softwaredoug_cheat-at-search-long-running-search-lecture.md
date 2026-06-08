@@ -6,16 +6,12 @@ date_ingested: 2026-06-02
 related_article: articles/2026-06-02_softwaredoug_cheat-at-search-long-running-search
 type: transcript
 tags:
-  - agentic-search
-  - long-running-agents
+  - search
   - context-management
-  - memory
+  - memory-systems
   - harness-engineering
   - search
   - ai-agents
-  - crawling
-  - local-index
-  - topic-modeling
 ---
 
 # Cheat at Search — Long Running Search Agents (Lecture Transcript)

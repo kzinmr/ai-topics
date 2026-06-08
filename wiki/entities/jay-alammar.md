@@ -5,10 +5,9 @@ created: 2026-05-04
 updated: 2026-05-25
 tags:
   - person
-  - educator
   - education
   - transformers
-  - llm
+  - model
   - cohere
   - blogger
   - open-source

@@ -5,12 +5,11 @@ description: "Metadata retrieval is a distinct retrieval paradigm alongside lexi
 category: concepts
 sub_category: Information Retrieval
 tags:
-  - information-retrieval
+  - search
   - metadata-retrieval
   - explainable-ranking
   - lexical-search
   - query-understanding
-  - search
 status: complete
 related:
   - bm25

@@ -4,11 +4,11 @@ created: 2026-05-27
 query_date: 2026-05-27
 type: query
 tags:
-  - saas
+  - product
   - ai-agents
   - career-strategy
   - harness-engineering
-  - service-as-software
+  - ai-adoption
   - fde
   - agent-native
   - mcp

@@ -5,7 +5,11 @@ created: 2026-04-27
 updated: 2026-05-26
 status: L2
 sources: ["https://khemaridh.substack.com/p/how-to-get-your-company-ai-pilled (status: pending)", "https://x.com/elvis_"]
-tags: [ai-adoption, enterprise-ai, token-economics]
+tags:
+  - ai-adoption
+  - company
+  - token-economics
+
 ---
 
 # Company AI Pilled

@@ -13,7 +13,6 @@ tags:
   - coding-agents
   - agent-safety
   - programmatic-tool-calling
-  - pydantic
 status: complete
 sources:
   - url: "https://github.com/pydantic/monty"

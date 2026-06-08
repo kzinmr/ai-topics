@@ -3,7 +3,13 @@ title: Protestware for Coding Agents
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [ai-agents, coding-agents, agent-security, agent-safety, supply-chain, prompt-injection, vulnerability, developer-tooling]
+tags:
+  - ai-agents
+  - coding-agents
+  - agent-safety
+  - supply-chain
+  - vulnerability
+  - developer-tooling
 sources: [raw/articles/nesbitt.io--2026-05-28-protestware-for-coding-agents-html--b8f9f89a.md]
 ---
 

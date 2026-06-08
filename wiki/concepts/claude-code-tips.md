@@ -3,7 +3,16 @@ title: "Claude Code Tips — Running Inside Docker with VSCode Dev Containers"
 type: concept
 created: 2026-04-27
 updated: 2026-06-07
-tags: [concept, claude-code, docker, security, sandbox, model, prompting, context-engineering, coding-agents]
+tags:
+  - concept
+  - claude-code
+  - developer-tooling
+  - security
+  - sandbox
+  - model
+  - prompting
+  - context-engineering
+  - coding-agents
 aliases: [claude-in-docker, claude-code-docker-setup, claude-opus-4.8-tips]
 sources:
   - "https://timsh.org/claude-inside-docker/"

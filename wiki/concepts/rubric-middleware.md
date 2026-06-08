@@ -5,13 +5,12 @@ created: 2026-06-03
 updated: 2026-06-03
 tags:
   - ai-agents
-  - agent-evaluation
+  - evaluation
   - coding-agents
   - self-improving
   - middleware
   - langchain
   - deep-agents
-  - llm-as-judge
 aliases:
   - rubric-middleware
   - Rubric Middleware

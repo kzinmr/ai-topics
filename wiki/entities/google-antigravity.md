@@ -3,7 +3,19 @@ title: Google Antigravity
 created: 2026-05-23
 updated: 2026-05-27
 type: entity
-tags: [entity, product, google, platform, agentic-engineering, coding-agents, ai-agents, agent-sdk, agent-framework, multi-agent, orchestration, developer-tooling, cli, infrastructure]
+tags:
+  - entity
+  - product
+  - google
+  - platform
+  - agentic-engineering
+  - coding-agents
+  - ai-agents
+  - agent-sdk
+  - multi-agent
+  - orchestration
+  - developer-tooling
+  - infrastructure
 sources:
   - https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
   - https://ai.google.dev/gemini-api/docs/antigravity-agent

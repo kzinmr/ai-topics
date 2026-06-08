@@ -3,7 +3,10 @@ title: "Project Glasswing"
 created: 2026-05-31
 updated: 2026-05-31
 type: entity
-tags: [anthropic, agent-safety, security, cybersecurity]
+tags:
+  - anthropic
+  - agent-safety
+  - security
 sources:
   - https://nathanlubchenco.substack.com/p/state-of-ai-mid-2026
   - https://the-agent-report.com/2026/05/anthropic-claude-opus-48-agent-upgrade-may-2026/

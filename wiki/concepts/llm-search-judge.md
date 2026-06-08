@@ -9,9 +9,8 @@ aliases:
 tags:
   - evaluation
   - search
-  - llm
+  - model
   - structured-outputs
-  - information-retrieval
 sources:
   - raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge.md
   - raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md

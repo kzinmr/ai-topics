@@ -5,7 +5,7 @@ created: 2026-06-05
 updated: 2026-06-05
 tags:
   - company
-  - ai-safety
+  - agent-safety
   - evaluation
   - benchmark
   - ai-agents

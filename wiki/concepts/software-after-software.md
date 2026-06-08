@@ -8,7 +8,6 @@ tags:
   - agentic-engineering
   - coding-agents
   - economics
-  - vibe-coding
   - harness-engineering
 aliases:
   - software-after-software-manifesto

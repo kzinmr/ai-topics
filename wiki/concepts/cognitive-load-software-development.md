@@ -10,7 +10,7 @@ tags:
   - concept
   - methodology
   - software-engineering
-  - cognitive-science
+  - psychology
   - agentic-engineering
 status: active
 sources:

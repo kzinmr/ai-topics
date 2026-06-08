@@ -8,8 +8,6 @@ updated: 2026-06-03
 tags:
   - concept
   - agentic-retrieval
-  - agentic-search
-  - information-retrieval
   - search
   - deep-research
   - ai-agents

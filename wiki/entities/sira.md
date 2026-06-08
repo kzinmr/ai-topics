@@ -4,14 +4,14 @@ type: entity
 created: 2026-05-29
 updated: 2026-05-29
 tags:
-  - information-retrieval
+  - search
   - lexical-search
   - bm25
   - query-expansion
   - agentic-retrieval
-  - meta
-  - research
-  - llm
+  - methodology
+  - lab
+  - model
   - open-source
 sources:
   - raw/papers/sira-2605.06647.md

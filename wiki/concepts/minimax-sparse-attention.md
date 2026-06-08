@@ -3,7 +3,14 @@ title: MiniMax Sparse Attention (MSA)
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [concept, architecture, inference, optimization, long-context, model, china]
+tags:
+  - concept
+  - architecture
+  - inference
+  - optimization
+  - context-management
+  - model
+  - china
 sources: [raw/articles/2026-05-27_minimax-m3-sparse-attention.md]
 ---
 

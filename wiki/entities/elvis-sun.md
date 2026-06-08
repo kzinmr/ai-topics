@@ -3,7 +3,10 @@ title: Elvis Sun
 created: 2026-04-18
 updated: 2026-06-03
 type: entity
-tags: [person, entrepreneurship, ai, growth, pr, bootstrapping, cold-email, marketing]
+tags:
+  - person
+  - company
+  - model
 aliases: ["elvis sun", "elvissun"]
 sources:
   - "https://www.elvis.so"

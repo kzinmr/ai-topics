@@ -3,7 +3,15 @@ title: CodeAct
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [code-act, ai-agents, agent-architecture, tool-use, plan-then-execute, sandbox, python, agent-framework, microsoft]
+tags:
+  - code-act
+  - ai-agents
+  - architecture
+  - tool
+  - plan-then-execute
+  - sandbox
+  - developer-tooling
+  - microsoft
 aliases: [Executable Code Actions, code-as-action]
 related: [concepts/programmatic-tool-calling, concepts/dspy-rlm, concepts/agentic-loop, concepts/agent-sandboxing, concepts/agent-architecture-decomposition, concepts/code-mode]
 sources: [raw/papers/2024-02-01_2402.01030_codeact.md, raw/articles/2026-05-20_microsoft_codeact-agent-framework.md]

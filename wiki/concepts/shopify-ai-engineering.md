@@ -3,7 +3,25 @@ title: "Shopify's AI-First Engineering"
 created: 2026-05-20
 updated: 2026-05-20
 type: concept
-tags: [shopify, ai-adoption, ai-infrastructure, llm-proxy, claude-code, ai-coding, coding-agents, agentic-engineering, strategy-execution, strategy, leadership, product-management, cost-optimization, developer-experience, career, education, startup, vibe-coding, mcp, code-review, multi-agent]
+tags:
+  - shopify
+  - ai-adoption
+  - infrastructure
+  - llm-proxy
+  - claude-code
+  - coding-agents
+  - agentic-engineering
+  - strategy-execution
+  - strategy
+  - leadership
+  - product-management
+  - optimization
+  - developer-experience
+  - career
+  - education
+  - company
+  - mcp
+  - multi-agent
 sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md, raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--32394213.md]
 ---
 

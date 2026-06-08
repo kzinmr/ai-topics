@@ -6,9 +6,9 @@ updated: 2026-05-25
 tags:
   - company
   - non-transformer
-  - llm
+  - model
   - shopify
-  - ai-infrastructure
+  - infrastructure
 aliases:
   - Liquid
   - Liquid Foundation Models

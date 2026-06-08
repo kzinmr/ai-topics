@@ -8,9 +8,9 @@ tags:
   - company
   - ai-adoption
   - model
-  - agent-evaluation
+  - evaluation
   - benchmark
-  - agent-harness
+  - harness-engineering
 aliases:
   - "Harvey Agentic SOC" ["Harvey AI", "Counsel AI Corporation"]
 sources:

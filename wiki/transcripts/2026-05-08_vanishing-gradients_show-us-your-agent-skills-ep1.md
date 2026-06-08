@@ -8,7 +8,7 @@ source: YouTube (Vanishing Gradients)
 url: https://www.youtube.com/live/Pq3xuChdwxQ
 type: talk
 duration: "103:45"
-tags: [ai-agents, agent-skills, code-review, verification, developer-tooling, harness-engineering, context-engineering, data-visualization]
+tags: [ai-agents, agent-skills, coding-agents, verification, developer-tooling, harness-engineering, context-engineering, developer-tooling]
 ---
 
 # Show Us Your (Agent) Skills — Episode 1

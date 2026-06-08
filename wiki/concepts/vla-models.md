@@ -3,7 +3,11 @@ title: "Vision-Language-Action Models (VLA)"
 created: 2026-05-31
 updated: 2026-05-31
 type: concept
-tags: [robotics, multimodal, model, physical-ai, reinforcement-learning]
+tags:
+  - robotics
+  - multimodal
+  - model
+  - reinforcement-learning
 sources:
   - https://openvla.github.io/
   - https://arxiv.org/html/2604.19728v1

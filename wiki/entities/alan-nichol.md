@@ -9,7 +9,7 @@ tags:
   - agent-skills
   - conversational-ai
   - open-source
-  - enterprise-ai
+  - company
 aliases:
   - Dr. Alan Nichol
   - amn41

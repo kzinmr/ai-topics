@@ -3,7 +3,14 @@ title: AI-Native Product Localization
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [ai-native, translation, ai-coding, agentic-engineering, developer-tooling, software-engineering, feedback-loop]
+tags:
+  - ai-native
+  - translation
+  - coding-agents
+  - agentic-engineering
+  - developer-tooling
+  - software-engineering
+  - feedback-loop
 sources: [raw/articles/sierra.ai--blog-ai-native-product-localization--763f5456.md]
 ---
 

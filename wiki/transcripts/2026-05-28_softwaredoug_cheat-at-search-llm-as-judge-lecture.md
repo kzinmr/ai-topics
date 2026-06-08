@@ -8,12 +8,9 @@ type: transcript
 tags:
   - search
   - evaluation
-  - llm
-  - pairwise-judging
-  - decision-trees
-  - elo
-  - ndcg
-  - information-retrieval
+  - model
+  - evaluation
+  - search
 ---
 
 # Cheat at Search Part 4 — LLM as a Judge (Lecture Transcript)

@@ -8,9 +8,9 @@ tags:
   - mcp
   - developer-tooling
   - claude-code
-  - codex
+  - coding-agents
   - openai
-  - agent-evaluation
+  - evaluation
   - harness-engineering
   - ci-cd
 aliases:

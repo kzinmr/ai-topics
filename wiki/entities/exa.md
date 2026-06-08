@@ -8,7 +8,7 @@ tags:
   - search
   - ai-agents
   - platform
-  - ai-infrastructure
+  - infrastructure
 aliases: ["Exa AI"]
 sources:
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md

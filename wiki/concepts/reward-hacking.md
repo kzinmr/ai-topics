@@ -10,10 +10,10 @@ updated: 2026-05-29
 tags:
   - concept
   - reward-hacking
-  - adversarial
+  - agent-safety
   - self-play
   - benchmark-optimization
-  - gpu
+  - hardware
   - evaluation
   - security
 sources:

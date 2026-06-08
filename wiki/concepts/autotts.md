@@ -3,7 +3,17 @@ title: AutoTTS (Agent-Discovered Test-Time Scaling)
 created: 2026-05-25
 updated: 2026-05-25
 type: concept
-tags: [concept, test-time-scaling, ai-agents, coding-agents, research, optimization, inference, scaling, chain-of-thought, self-improving, recursive-self-improvement]
+tags:
+  - concept
+  - test-time-scaling
+  - ai-agents
+  - coding-agents
+  - lab
+  - optimization
+  - inference
+  - reasoning
+  - self-improving
+  - recursive-self-improvement
 sources: [raw/articles/2026-05-24_autotts-claude-code-discovers-scaling.md, https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed/]
 ---
 

@@ -8,7 +8,7 @@ type: transcript
 tags:
   - transcript
   - scaling-hypothesis
-  - transformer
+  - model
   - encoder-decoder
 ---
 

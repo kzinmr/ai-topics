@@ -6,7 +6,12 @@ aliases:
   - local-first
   - local-first software
   - local-first sync
-tags: [architecture, web-development, performance, local-first, distributed-systems]
+tags:
+  - architecture
+  - web-development
+  - optimization
+  - developer-tooling
+
 ---
 
 # Local-First Architecture

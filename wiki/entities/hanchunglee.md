@@ -3,7 +3,15 @@ title: "Hanchung Lee (Han Lee, @hanchunglee)"
 created: 2026-05-23
 updated: 2026-05-23
 type: entity
-tags: [person, agent-runtime, sandbox, isolation, agent-architecture, agent-security, technical-debt, infrastructure]
+tags:
+  - person
+  - agent-runtime
+  - sandbox
+  - isolation
+  - architecture
+  - agent-safety
+  - technical-debt
+  - infrastructure
 sources:
   - "https://leehanchung.github.io/blogs/2026/04/24/hidden-technical-debt-agent-runtime/"
   - "raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime.md"

@@ -3,7 +3,19 @@ title: "Farhan Thawar"
 created: 2026-05-20
 updated: 2026-05-20
 type: entity
-tags: [person, shopify, ai-adoption, leadership, coding-agents, agentic-engineering, claude-code, github-copilot, cursor, mcp, ai-coding, internship, developer-experience, llm-proxy]
+tags:
+  - person
+  - shopify
+  - ai-adoption
+  - leadership
+  - coding-agents
+  - agentic-engineering
+  - claude-code
+  - github-copilot
+  - mcp
+  - internship
+  - developer-experience
+  - llm-proxy
 sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
 ---
 

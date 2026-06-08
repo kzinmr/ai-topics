@@ -6,14 +6,10 @@ date_ingested: 2026-06-03
 related_article: articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents
 type: transcript
 tags:
-  - agentic-search
-  - agent-steering
+  - search
   - harness-engineering
   - search
   - ai-agents
-  - file-system-search
-  - tool-guards
-  - sub-agents
 ---
 
 # Cheat at Search — Steering Lost Agents (Lecture Transcript)

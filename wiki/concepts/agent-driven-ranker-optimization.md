@@ -3,7 +3,16 @@ title: "Agent-Driven Ranker Optimization"
 created: 2026-06-04
 updated: 2026-06-04
 type: concept
-tags: [agentic-search, eval-loops, bm25, information-retrieval, coding-agents, overfitting, autoresearch, search, methodology, benchmark-optimization, agent-loop]
+tags:
+  - search
+  - eval-loops
+  - bm25
+  - coding-agents
+  - overfitting
+  - autoresearch
+  - methodology
+  - benchmark-optimization
+  - agent-loop
 sources:
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms
   - raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf

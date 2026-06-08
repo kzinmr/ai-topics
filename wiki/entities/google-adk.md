@@ -3,7 +3,15 @@ title: Google Agent Development Kit (ADK)
 created: 2026-05-21
 updated: 2026-05-21
 type: entity
-tags: [google, ai-agents, multi-agent, framework, agent-framework, open-source, agent-architecture, python, orchestration]
+tags:
+  - google
+  - ai-agents
+  - multi-agent
+  - framework
+  - open-source
+  - architecture
+  - developer-tooling
+  - orchestration
 sources: [raw/articles/2026-05-19_google-adk-v2.md]
 ---
 

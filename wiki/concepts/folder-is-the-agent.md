@@ -5,10 +5,10 @@ updated: 2026-05-25
 type: concept
 tags:
   - concept
-  - agent-architecture
+  - architecture
   - agent-design-patterns
   - context-engineering
-  - filesystem
+  - developer-tooling
   - agent-tooling
 sources:
   - "raw/articles/2026-04-17_every-to_folder-is-the-agent.md"

@@ -5,9 +5,8 @@ created: 2026-05-25
 updated: 2026-05-25
 tags:
   - person
-  - entrepreneur
   - company
-  - post-training
+  - training
 aliases:
   - Mark McQuade
 sources:

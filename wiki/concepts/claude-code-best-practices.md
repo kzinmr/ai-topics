@@ -10,7 +10,6 @@ tags:
   - ai-agent-engineering
   - context-engineering
   - developer-tooling
-  - ai-coding
   - ci-cd
   - agent-safety
   - harness-engineering

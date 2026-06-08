@@ -11,7 +11,6 @@ tags:
   - concept
   - agentic-engineering
   - developer-tooling
-  - cli
   - agent-ergonomics
 sources:
   - raw/articles/2026-05-23_yan5xu_agent-friendly-cli-design.md

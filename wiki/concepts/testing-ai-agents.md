@@ -8,7 +8,7 @@ tags:
   - testing
   - evaluation
   - mcp
-  - reliability
+  - infrastructure
   - workflow
 sources:
   - https://www.merge.dev/blog/testing-ai-agents

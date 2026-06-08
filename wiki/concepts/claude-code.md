@@ -3,7 +3,23 @@ title: "Claude Code as a Coding Agent"
 created: 2026-05-20
 updated: 2026-06-01
 type: concept
-tags: [claude-code, ai-coding, coding-agents, ai-agents, multi-agent, agent-orchestration, agent-safety, agentic-engineering, mcp, prompting, infrastructure, developer-experience, ai-adoption, strategy-execution, code-review, feedback-loop, shopify, ai-infrastructure, cost-optimization, vibe-coding]
+tags:
+  - claude-code
+  - coding-agents
+  - ai-agents
+  - multi-agent
+  - orchestration
+  - agent-safety
+  - agentic-engineering
+  - mcp
+  - prompting
+  - infrastructure
+  - developer-experience
+  - ai-adoption
+  - strategy-execution
+  - feedback-loop
+  - shopify
+  - optimization
 sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md, raw/articles/2026-05-28_anthropic-claude-code-dynamic-workflows.md]
 ---
 

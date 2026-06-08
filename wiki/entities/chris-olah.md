@@ -3,7 +3,13 @@ title: Chris Olah
 created: 2026-05-25
 updated: 2026-05-25
 type: entity
-tags: [person, anthropic, researcher, interpretability, mechanistic-interpretability, ai-safety, x-account]
+tags:
+  - person
+  - anthropic
+  - interpretability
+  - mechanistic-interpretability
+  - agent-safety
+  - x-account
 sources:
   - raw/articles/2026-05-25_chris-olah_magnifica-humanitas-remarks.md
   - https://en.wikipedia.org/wiki/Chris_Olah

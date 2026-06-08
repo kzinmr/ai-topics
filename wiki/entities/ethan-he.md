@@ -3,7 +3,12 @@ title: "Ethan He"
 created: 2026-06-02
 updated: 2026-06-02
 type: entity
-tags: [person, xai, video-generation, world-models, grok, researcher]
+tags:
+  - person
+  - xai
+  - video-generation
+  - world-models
+  - model
 sources:
   - raw/newsletters/2026-06-01-why-video-agent-models-are-next-ethan-he-xai-grok-imagine-lead.md
 ---

@@ -11,7 +11,7 @@ tags:
   - agentic-engineering
   - developer-tooling
   - harness-engineering
-  - ai-coding
+  - coding-agents
 sources:
   - raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md
   - raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md

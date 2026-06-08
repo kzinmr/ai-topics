@@ -8,10 +8,9 @@ tags:
   - person
   - ceo
   - blogger
-  - entrepreneur
   - ai-native
   - ai-commentary
-  - podcast
+  - writing
 sources:
   - raw/articles/2026-05-21_after-automation.md
   - raw/articles/2026-05-02_guide-to-agent-native-product-management.md

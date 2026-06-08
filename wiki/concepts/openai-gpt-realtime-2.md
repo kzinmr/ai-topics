@@ -3,7 +3,15 @@ title: "OpenAI GPT-Realtime-2"
 created: 2026-05-20
 updated: 2026-05-20
 type: concept
-tags: [openai, voice-ai, realtime, model, translation, api, inference, streaming]
+tags:
+  - openai
+  - voice-ai
+  - realtime
+  - model
+  - translation
+  - developer-tooling
+  - inference
+  - streaming
 sources: [raw/articles/2026-05-20_openai_gpt-realtime-2.md]
 ---
 

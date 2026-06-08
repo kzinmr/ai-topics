@@ -7,7 +7,7 @@ tags:
   - anthropic
   - security
   - agent-safety
-  - cloudflare
+  - company
 aliases: ["project-glasswing", "mythos-preview"]
 sources:
   - raw/articles/blog.cloudflare.com--2026-05-18_cyber-frontier-models--9cce0b5a.md

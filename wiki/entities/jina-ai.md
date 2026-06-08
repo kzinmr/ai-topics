@@ -6,9 +6,8 @@ type: entity
 tags:
   - company
   - search
-  - embeddings
+  - model
   - open-source
-  - information-retrieval
   - rag
 sources:
   - raw/articles/2025-03-07_jina_long-context-embedding-models-blind-beyond-4k.md

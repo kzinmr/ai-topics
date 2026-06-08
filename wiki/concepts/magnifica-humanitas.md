@@ -3,7 +3,17 @@ title: Magnifica Humanitas
 created: 2026-05-25
 updated: 2026-05-25
 type: concept
-tags: [ai-safety, ai-governance, ethics, philosophy, religion, event, ai-society, policy, regulation, ai-adoption]
+tags:
+  - agent-safety
+  - ai-governance
+  - ethics
+  - philosophy
+  - religion
+  - event
+  - ai-society
+  - policy
+  - regulation
+  - ai-adoption
 sources:
   - raw/articles/2026-05-15_vatican_magnifica-humanitas-encyclical.md
   - raw/articles/2026-05-25_chris-olah_magnifica-humanitas-remarks.md

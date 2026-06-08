@@ -7,7 +7,7 @@ source: "x-account"
 tags:
   - person
   - x-account
-  - ai
+  - model
   - coding-agents
   - web-development
   - developer-experience

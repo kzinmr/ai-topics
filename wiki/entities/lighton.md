@@ -6,10 +6,9 @@ type: entity
 tags:
   - company
   - open-source
-  - embeddings
-  - information-retrieval
+  - model
+  - search
   - late-interaction
-  - colbert
   - france
 sources:
   - raw/articles/2026-04-21_antoine-chaffin_denseon-lateon-open-sota-retrieval.md

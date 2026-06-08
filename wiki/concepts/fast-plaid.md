@@ -4,13 +4,12 @@ created: 2026-05-28
 updated: 2026-05-28
 type: concept
 tags:
-  - colbert
+  - search
   - late-interaction
-  - retrieval
-  - information-retrieval
-  - rust
+  - rag
+  - developer-tooling
   - open-source
-  - performance
+  - optimization
 sources:
   - raw/articles/2025-06-01_lighton_fast-plaid-github.md
   - https://github.com/lightonai/fast-plaid

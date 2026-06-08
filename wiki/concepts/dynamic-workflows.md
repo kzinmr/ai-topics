@@ -3,7 +3,15 @@ title: "Dynamic Workflows in Claude Code"
 created: 2026-06-02
 updated: 2026-06-02
 type: concept
-tags: [claude-code, harness-engineering, coding-agents, multi-agent, subagents, workflow, agent-orchestration, anthropic]
+tags:
+  - claude-code
+  - harness-engineering
+  - coding-agents
+  - multi-agent
+  - ai-agents
+  - workflow
+  - orchestration
+  - anthropic
 sources: [raw/articles/2026-06-02_trq212_dynamic-workflows-claude-code.md]
 ---
 

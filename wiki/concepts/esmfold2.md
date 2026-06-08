@@ -3,7 +3,11 @@ title: "ESMFold2"
 created: 2026-05-31
 updated: 2026-05-31
 type: concept
-tags: [model, ai-research, open-source, biology, deep-learning]
+tags:
+  - model
+  - lab
+  - open-source
+  - biology
 sources:
   - https://www.scientificamerican.com/article/new-protein-folding-ai-vastly-expands-on-alphafolds-efforts/
 ---

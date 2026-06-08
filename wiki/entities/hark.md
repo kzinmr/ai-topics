@@ -7,7 +7,6 @@ tags:
   - company
   - infrastructure
   - hardware
-  - ai-infrastructure
 aliases: ["Hark AI"]
 sources:
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md

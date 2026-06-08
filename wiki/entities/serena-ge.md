@@ -5,8 +5,7 @@ updated: 2026-05-27
 type: entity
 tags:
   - person
-  - researcher
-  - agent-evaluation
+  - evaluation
   - benchmark
 aliases:
   - "@serenaa_ge"

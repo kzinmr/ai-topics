@@ -10,9 +10,7 @@ updated: 2026-05-20
 tags:
   - concept
   - evaluation
-  - agent-evaluation
-  - observability
-  - ml-engineering
+  - infrastructure
   - testing
 related:
   - [[concepts/llm-as-judge]]

@@ -9,7 +9,7 @@ tags:
   - ai-agents
   - trace-analysis
   - clustering
-  - observability
+  - infrastructure
   - openai
 sources:
   - raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md

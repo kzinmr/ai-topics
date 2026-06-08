@@ -7,13 +7,13 @@ tags:
   - openai
   - event
   - ai-agents
-  - api
+  - developer-tooling
   - developer-tooling
   - platform
   - reasoning
   - multimodal
   - coding-agents
-  - tool-use
+  - tool
 sources:
   - raw/articles/2026-01-01_openai-developers-blog_openai-for-developers-2025.md
 related:

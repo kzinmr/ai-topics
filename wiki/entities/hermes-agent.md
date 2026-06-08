@@ -3,7 +3,11 @@ title: "Hermes Agent Architecture"
 created: 2026-04-16
 updated: 2026-06-03
 type: entity
-tags: [ai-agents, open-source-ai, tooling, framework]
+tags:
+  - ai-agents
+  - open-source
+  - tool
+  - framework
 aliases: ["Hermes Agent", "nousresearch/hermes-agent"]
 sources:
   - https://hermes-agent.nousresearch.com/docs/developer-guide/architecture/

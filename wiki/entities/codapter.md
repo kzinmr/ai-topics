@@ -6,7 +6,7 @@ type: entity
 status: complete
 tags:
   - protocol
-  - agent-architecture
+  - architecture
   - open-source
   - coding-agents
 aliases:

@@ -5,10 +5,10 @@ created: 2026-05-28
 updated: 2026-05-28
 tags:
   - methodology
-  - agent-evaluation
+  - evaluation
   - probabilistic-systems
-  - agent-architecture
-  - epistemology
+  - architecture
+  - philosophy
 aliases:
   - inverted-stack
   - trace-native-engineering

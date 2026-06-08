@@ -5,12 +5,10 @@ updated: 2026-05-28
 type: concept
 tags:
   - rag
-  - colbert
+  - search
   - late-interaction
-  - information-retrieval
-  - embeddings
+  - model
   - open-source
-  - retrieval
 aliases:
   - ragatouille
 sources:

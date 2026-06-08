@@ -4,7 +4,16 @@ type: concept
 created: 2026-05-19
 updated: 2026-05-26
 status: L2
-tags: [concept, openclaw, china, agent-security, ai-adoption, geopolitics, enterprise-ai, policy, agent-architecture]
+tags:
+  - concept
+  - openclaw
+  - china
+  - agent-safety
+  - ai-adoption
+  - geopolitics
+  - company
+  - policy
+  - architecture
 sources:
   - raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom.md
   - https://www.china-briefing.com/news/china-agentic-ai-openclaw-boom/

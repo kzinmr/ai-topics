@@ -6,7 +6,7 @@ source: YouTube (Vanishing Gradients channel)
 url: https://www.youtube.com/watch?v=AJPH9kpN3Sc
 type: transcript
 duration: "35:23"
-tags: [agentic-search, tool-calling, harness-engineering, transcript]
+tags: [search, tool, harness-engineering, transcript]
 ---
 
 # How To Build Your First Agentic Search Application — Transcript

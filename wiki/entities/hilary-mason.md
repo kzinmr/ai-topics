@@ -8,9 +8,7 @@ tags:
   - person
   - ai-agents
   - agent-skills
-  - agent-harness
-  - entrepreneur
-  - founder
+  - harness-engineering
   - ceo
   - ai-adoption
   - ai-product

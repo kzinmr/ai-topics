@@ -6,12 +6,7 @@ updated: 2026-06-03
 tags:
   - person
   - blogger
-  - historian
-  - hacker
-  - GLAM
-  - digital-humanities
-  - web-archiving
-  - Jupyter
+  - education
   - open-data
 sources: []
 ---

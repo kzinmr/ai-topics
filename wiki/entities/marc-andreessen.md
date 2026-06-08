@@ -6,8 +6,7 @@ updated: 2026-05-20
 tags:
   - person
   - ai-commentary
-  - entrepreneur
-  - podcast
+  - writing
 aliases:
   - Marc Andreessen
   - pmarca

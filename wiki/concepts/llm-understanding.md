@@ -5,11 +5,10 @@ updated: 2026-06-01
 type: concept
 tags:
   - concept
-  - ai
-  - epistemology
-  - controversy
+  - model
   - philosophy
-  - ai-safety
+  - controversy
+  - agent-safety
   - interpretability
 sources:
   - raw/articles/garymarcus.substack.com--p-the-pope-appears-to-understand-ai--083d05aa.md

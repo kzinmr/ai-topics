@@ -6,9 +6,8 @@ updated: 2026-05-26
 tags:
   - ai-agents
   - multi-tenancy
-  - saas
-  - enterprise-ai
-  - agent-infrastructure
+  - product
+  - company
   - fde
 sources:
   - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md

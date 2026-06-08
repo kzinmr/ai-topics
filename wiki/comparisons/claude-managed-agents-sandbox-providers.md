@@ -5,18 +5,15 @@ updated: 2026-05-19
 type: comparison
 tags:
   - comparison
-  - managed-agents
-  - sandbox
   - ai-agents
-  - agent-architecture
-  - agent-security
-  - cloudflare
-  - vercel
+  - sandbox
+  - architecture
+  - agent-safety
+  - company
   - anthropic
   - infrastructure
   - security
   - orchestration
-  - ai-infrastructure
 sources:
   - raw/articles/2026-05-19_cloudflare_claude-managed-agents-sandbox.md
   - raw/articles/2026-05-19_daytona_claude-managed-agents-sandbox.md

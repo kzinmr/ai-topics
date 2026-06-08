@@ -4,11 +4,11 @@ type: concept
 created: 2026-06-01
 updated: 2026-06-01
 tags:
-  - saas
+  - product
   - strategy
   - business-model
   - ai-native
-  - vc
+  - company
   - software-engineering
   - economics
 aliases: ["HFS", "HFT analogy for software", "AI-accelerated SaaS"]

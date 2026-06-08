@@ -8,7 +8,6 @@ tags:
   - ai-agents
   - evaluation
   - inference
-  - agent-harness
   - harness-engineering
   - browser-agent
 sources:

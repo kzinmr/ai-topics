@@ -6,14 +6,13 @@ updated: 2026-05-20
 tags:
   - concept
   - ai-agents
-  - autonomous-agents
   - infrastructure
   - platform
   - protocol
   - economics
   - governance
   - security
-  - agent-architecture
+  - architecture
 aliases:
   - agent-marketplace-stack
   - agentic-capital-markets

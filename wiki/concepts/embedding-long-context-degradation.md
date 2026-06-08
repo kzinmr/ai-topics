@@ -4,11 +4,11 @@ created: 2026-05-28
 updated: 2026-05-28
 type: concept
 tags:
-  - embeddings
-  - long-context
+  - model
+  - context-management
   - evaluation
   - benchmark
-  - information-retrieval
+  - search
   - rag
   - needle-in-haystack
   - context-rot

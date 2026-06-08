@@ -1,6 +1,6 @@
 ---
 title: "Industrial-Scale Distillation Attacks Accusation"
-tags: [anthropic, china, geopolitics, distillation]
+tags: [anthropic, china, geopolitics, training]
 created: 2026-04-24
 updated: 2026-05-17
 type: event

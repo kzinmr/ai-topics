@@ -8,11 +8,10 @@ tags:
   - decision-centric
   - ai-agents
   - enterprise-agents
-  - enterprise-ai
   - ai-adoption
   - agent-governance
   - ai-governance
-  - agent-security
+  - agent-safety
 sources:
   - raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md
   - https://x.com/i/article/2049136883528011954

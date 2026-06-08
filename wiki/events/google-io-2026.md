@@ -3,7 +3,7 @@ title: Google I/O 2026
 created: 2026-05-21
 updated: 2026-05-21
 type: event
-tags: [google, gemini, ai-agents, agent-safety, cli, coding-agents, product, announcement, open-source, prompt-injection]
+tags: [google, google, ai-agents, agent-safety, developer-tooling, coding-agents, product, announcement, open-source, agent-safety]
 sources: [raw/articles/simonwillison.net--2026-may-20-google-io--933c8dde.md, raw/articles/theverge.com--tech-933415-google-io-2026-biggest-announcements-ai-gemini--e73abf5d.md]
 ---
 

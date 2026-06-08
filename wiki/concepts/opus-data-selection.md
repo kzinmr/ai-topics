@@ -12,7 +12,6 @@ tags:
   - optimization
   - datasets
   - training-efficiency
-  - scaling
 related:
   - concepts/fineweb
   - concepts/scaling-hypothesis

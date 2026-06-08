@@ -5,8 +5,7 @@ updated: 2026-05-29
 type: entity
 tags:
   - person
-  - researcher
-  - post-training
+  - training
   - agent-training
   - coding-agents
 aliases:

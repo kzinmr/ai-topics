@@ -3,7 +3,12 @@ title: "EU AI Act"
 created: 2026-05-31
 updated: 2026-05-31
 type: concept
-tags: [governance, regulation, policy, ai-safety, europe]
+tags:
+  - governance
+  - regulation
+  - policy
+  - agent-safety
+  - europe
 sources:
   - https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act
   - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai

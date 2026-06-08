@@ -6,7 +6,15 @@ created: 2026-05-13
 updated: 2026-05-13
 status: L2
 sources: [https://www.sid.ai/research/sid-1, https://www.sid.ai/research/sid-1-technical-report, https://x.com/maxrumpf, https://ycombinator.com/companies/sid]
-tags: [model, information-retrieval, reinforcement-learning, grpo, rag, agentic-engineering, subagents]
+tags:
+  - model
+  - search
+  - reinforcement-learning
+  - training
+  - rag
+  - agentic-engineering
+  - ai-agents
+
 ---
 
 # SID-1

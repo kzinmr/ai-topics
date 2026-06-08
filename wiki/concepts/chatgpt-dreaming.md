@@ -3,7 +3,12 @@ title: "ChatGPT Dreaming (Memory Synthesis)"
 created: "2026-06-05"
 updated: "2026-06-05"
 type: concept
-tags: [openai, chatgpt, memory-systems, personal-ai, announcement, product]
+tags:
+  - openai
+  - memory-systems
+  - personal-ai
+  - announcement
+  - product
 sources:
   - "raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md"
   - https://openai.com/index/chatgpt-memory-dreaming/

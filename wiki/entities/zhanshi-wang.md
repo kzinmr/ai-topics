@@ -7,8 +7,6 @@ tags:
   - person
   - openai
   - data-science
-  - ai-researcher
-  - founder
 aliases:
   - zswang24
   - Jason Wang

@@ -3,7 +3,16 @@ title: Generative UI (Claude Visualizer)
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [generative-ui, anthropic, streaming, progressive-disclosure, reverse-engineering, terminal, webview, agent-tooling, design-patterns]
+tags:
+  - developer-tooling
+  - anthropic
+  - streaming
+  - progressive-disclosure
+  - reverse-engineering
+  - terminal
+  - webview
+  - agent-tooling
+  - methodology
 sources: [raw/articles/2026-03-13_michaellivs_reverse-engineering-claude-generative-ui.md]
 ---
 

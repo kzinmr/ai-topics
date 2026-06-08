@@ -5,10 +5,9 @@ created: 2026-06-02
 updated: 2026-06-02
 tags:
   - openai
-  - chatgpt
-  - design-patterns
-  - tool-use
-  - generative-ui
+  - methodology
+  - tool
+  - developer-tooling
   - frontend
   - streaming
   - developer-experience

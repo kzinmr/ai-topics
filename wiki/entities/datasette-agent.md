@@ -7,8 +7,7 @@ tags:
   - product
   - tool
   - sqlite
-  - llm
-  - datasette
+  - model
   - plugins
   - data-science
   - developer-tooling

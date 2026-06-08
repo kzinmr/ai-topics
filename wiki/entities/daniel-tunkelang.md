@@ -6,7 +6,6 @@ updated: 2026-05-19
 tags:
   - person
   - search
-  - information-retrieval
   - data-science
   - query-understanding
 aliases:

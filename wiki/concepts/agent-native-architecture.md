@@ -5,11 +5,11 @@ updated: 2026-05-25
 type: concept
 tags:
   - concept
-  - agent-architecture
+  - architecture
   - agent-design-patterns
   - agent-native
   - ai-native
-  - tool-use
+  - tool
 sources:
   - "raw/articles/2026-01-17_every-to_agent-native-architectures.md"
   - "https://every.to/guides/agent-native"

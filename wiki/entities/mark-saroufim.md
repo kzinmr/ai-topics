@@ -5,9 +5,7 @@ updated: 2026-05-29
 type: entity
 tags:
   - person
-  - ai-researcher
-  - entrepreneur
-  - gpu
+  - hardware
   - performance-engineering
   - self-play
   - reward-hacking

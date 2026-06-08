@@ -3,7 +3,14 @@ title: Latent Terms
 created: 2026-06-02
 updated: 2026-06-03
 type: concept
-tags: [information-retrieval, embeddings, bm25, interpretability, mechanistic-interpretability, latent-space, retrieval, colbert]
+tags:
+  - search
+  - model
+  - bm25
+  - interpretability
+  - mechanistic-interpretability
+  - latent-space
+  - rag
 sources:
   - https://www.mixedbread.com/blog/latent-terms
   - https://arxiv.org/abs/2605.29384

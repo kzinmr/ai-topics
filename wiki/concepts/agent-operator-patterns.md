@@ -5,15 +5,13 @@ updated: 2026-05-20
 type: concept
 tags:
   - ai-agents
-  - agent-architecture
+  - architecture
   - agent-ergonomics
   - orchestration
-  - hermes-agent
   - governance
   - methodology
   - durable-execution
   - multi-agent
-  - design-patterns
 sources:
   - raw/articles/2026-05-15_shann_hermes-agent-operator.md
 related:

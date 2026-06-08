@@ -6,8 +6,8 @@ updated: 2026-05-28
 tags:
   - blogger
   - content-creator
-  - agent-evaluation
-  - observability
+  - evaluation
+  - infrastructure
 aliases:
   - ben-hylak
   - Benjamin Hylak

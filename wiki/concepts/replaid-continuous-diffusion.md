@@ -3,7 +3,15 @@ title: RePlaid (Continuous Diffusion Scaling)
 created: 2026-05-26
 updated: 2026-05-26
 type: concept
-tags: [concept, diffusion, model, research, scaling, non-transformer, open-source, training, optimization]
+tags:
+  - concept
+  - diffusion
+  - model
+  - lab
+  - optimization
+  - non-transformer
+  - open-source
+  - training
 sources: [raw/articles/2026-05-18_replaid-continuous-diffusion-scaling.md]
 ---
 

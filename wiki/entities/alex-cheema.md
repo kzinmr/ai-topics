@@ -3,7 +3,12 @@ title: Alex Cheema
 type: entity
 created: 2026-06-02
 updated: 2026-06-02
-tags: [person, ai-researcher, local-llm, hardware, personal-ai, nvidia, apple-silicon]
+tags:
+  - person
+  - local-llm
+  - hardware
+  - personal-ai
+  - nvidia
 sources:
   - https://x.com/alexocheema/status/2061550254961639454
   - https://x.com/alexocheema

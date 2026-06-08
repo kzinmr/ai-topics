@@ -8,7 +8,6 @@ tags:
   - architecture
   - infrastructure
   - agent-safety
-  - agent-security
   - isolation
   - sandbox
   - harness-engineering

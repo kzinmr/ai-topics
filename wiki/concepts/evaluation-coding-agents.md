@@ -9,7 +9,7 @@ tags:
   - ai-agents
   - coding-agents
   - memory-systems
-  - long-context
+  - context-management
 sources:
   - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
 ---

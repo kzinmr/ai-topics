@@ -3,7 +3,16 @@ title: "Shlok Khemani (@shloked)"
 created: 2026-05-21
 updated: 2026-05-21
 type: entity
-tags: [person, tool, indie-maker, open-source, cli, browser-automation, coding-agents, typescript, memory-systems, agent-tooling]
+tags:
+  - person
+  - tool
+  - indie-maker
+  - open-source
+  - developer-tooling
+  - browser-agent
+  - coding-agents
+  - memory-systems
+  - agent-tooling
 sources: [https://github.com/shlokkhemani, https://github.com/shlokkhemani/chatferry, https://www.shloked.com/, raw/articles/2026-05-20_shloked_chatferry.md]
 ---
 

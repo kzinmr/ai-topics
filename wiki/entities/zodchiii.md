@@ -3,7 +3,17 @@ title: "zodchiii"
 created: 2026-05-20
 updated: 2026-05-20
 type: entity
-tags: [person, pseudonymous, content-creator, blogger, x-account, ai-coding, vibe-coding, fintech, claude-code, ai-agents, shopify]
+tags:
+  - person
+  - pseudonymous
+  - content-creator
+  - blogger
+  - x-account
+  - coding-agents
+  - fintech
+  - claude-code
+  - ai-agents
+  - shopify
 sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md]
 ---
 

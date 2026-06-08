@@ -3,7 +3,14 @@ title: NVIDIA Vera Rubin
 created: 2026-05-27
 updated: 2026-05-27
 type: entity
-tags: [entity, nvidia, hardware, gpu, infrastructure, inference, training, performance]
+tags:
+  - entity
+  - nvidia
+  - hardware
+  - infrastructure
+  - inference
+  - training
+  - optimization
 sources: []
 ---
 

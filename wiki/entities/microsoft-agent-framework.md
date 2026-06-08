@@ -3,7 +3,17 @@ title: Microsoft Agent Framework
 created: 2026-05-21
 updated: 2026-05-21
 type: entity
-tags: [microsoft, ai-agents, multi-agent, framework, agent-framework, mcp, orchestration, open-source, enterprise-ai, python, dotnet]
+tags:
+  - microsoft
+  - ai-agents
+  - multi-agent
+  - framework
+  - mcp
+  - orchestration
+  - open-source
+  - company
+  - developer-tooling
+  - dotnet
 sources: [raw/articles/2026-04-08_microsoft-agent-framework-v1.md]
 ---
 

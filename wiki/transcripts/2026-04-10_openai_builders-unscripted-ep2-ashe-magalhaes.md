@@ -7,7 +7,7 @@ source: YouTube (OpenAI)
 url: https://www.youtube.com/watch?v=flweA_I-VKE
 type: transcript
 duration: "33:38"
-tags: [hearth-ai, codex, agentic-engineering, personal-ai, transcript]
+tags: [hearth-ai, coding-agents, agentic-engineering, personal-ai, transcript]
 ---
 
 # Builders Unscripted: Ep. 2 — Ashe Magalhaes — Transcript

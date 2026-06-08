@@ -6,7 +6,13 @@ created: 2026-05-11
 updated: 2026-05-18
 status: L2
 sources: [raw/articles/2026-01-20_wesmckinney_agent-ergonomics.md, https://wesmckinney.com/blog/agent-ergonomics/, raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md, https://lucumr.pocoo.org/2026/2/9/a-language-for-agents/, raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md, https://github.com/vercel-labs/zero]
-tags: [agentic-engineering, software-engineering, developer-tooling, programming-language, ai-coding]
+tags:
+  - agentic-engineering
+  - software-engineering
+  - developer-tooling
+  - programming-language
+  - coding-agents
+
 ---
 
 # Agent Ergonomics

@@ -10,8 +10,8 @@ tags:
   - concept
   - safety
   - alignment
-  - ai-safety
-  - rlhf
+  - agent-safety
+  - fine-tuning
   - evaluation
 sources:
   - raw/papers/2025-08-25_2508.18255_hermes-4-technical-report.md

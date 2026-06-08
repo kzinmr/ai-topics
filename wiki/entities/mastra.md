@@ -3,7 +3,19 @@ title: Mastra
 created: 2026-05-19
 updated: 2026-05-28
 type: entity
-tags: [product, framework, ai-agents, agent-framework, typescript, open-source, developer-tooling, workflow, voice-ai, enterprise-ai, multi-agent, harness-engineering, slack, discord]
+tags:
+  - product
+  - framework
+  - ai-agents
+  - developer-tooling
+  - open-source
+  - workflow
+  - voice-ai
+  - company
+  - multi-agent
+  - harness-engineering
+  - slack
+  - discord
 sources: [raw/articles/2026-05-14_mastra-acp-agents.md, https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.34.0, raw/articles/2026-05-28_mastra-multi-user-multi-channel-agents.md, https://x.com/i/article/2059808126468243457]
 ---
 

@@ -7,10 +7,9 @@ aliases:
 created: 2026-04-25
 updated: 2026-05-19
 tags:
-  - information-retrieval
   - search
   - evaluation
-  - embeddings
+  - model
   - query-understanding
   - query-expansion
   - lexical-search

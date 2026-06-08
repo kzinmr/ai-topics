@@ -5,10 +5,10 @@ updated: 2026-05-22
 type: concept
 tags:
   - ai-agents
-  - agent-architecture
+  - architecture
   - event-sourcing
   - reactive-systems
-  - knowledge-graph
+  - rag
   - state-management
   - durable-execution
   - deterministic

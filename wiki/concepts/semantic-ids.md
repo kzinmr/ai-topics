@@ -6,11 +6,10 @@ type: concept
 tags:
   - semantic-ids
   - generative-retrieval
-  - embeddings
-  - information-retrieval
+  - model
+  - search
   - tokenization
-  - llm
-  - retrieval
+  - rag
   - dense-retrieval
 sources:
   - raw/articles/2025-09-18_spotify-research_semantic-ids-generative-sr.md

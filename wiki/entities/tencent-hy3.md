@@ -3,7 +3,19 @@ title: Tencent Hy3 Preview
 created: 2026-05-25
 updated: 2026-05-27
 type: entity
-tags: [entity, model, llm, text-generation, reasoning, ai-agents, open-source, moe, tencent, china, infrastructure, coding-agents, agent-framework, openrouter, pricing]
+tags:
+  - entity
+  - model
+  - text-generation
+  - reasoning
+  - ai-agents
+  - open-source
+  - tencent
+  - china
+  - infrastructure
+  - coding-agents
+  - openrouter
+  - economics
 sources: [raw/articles/2026-05-20_tencent-hy3-preview.md, https://www.tencent.com/en-us/articles/2202320.html, raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md]
 ---
 

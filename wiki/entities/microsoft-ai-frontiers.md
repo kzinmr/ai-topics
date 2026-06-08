@@ -3,7 +3,13 @@ title: Microsoft AI Frontiers
 type: entity
 created: 2026-05-26
 updated: 2026-05-26
-tags: [company, lab, microsoft, research, reinforcement-learning, agent-training, ai-agents]
+tags:
+  - company
+  - lab
+  - microsoft
+  - reinforcement-learning
+  - agent-training
+  - ai-agents
 sources:
   - raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md
   - raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models.md

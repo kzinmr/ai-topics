@@ -3,7 +3,11 @@ title: "Agent Arena (Causal Agent Evaluation)"
 created: "2026-06-05"
 updated: "2026-06-06"
 type: concept
-tags: [agent-evaluation, benchmark, evaluation, methodology, arena-ai]
+tags:
+  - evaluation
+  - benchmark
+  - methodology
+  - arena-ai
 sources:
   - "raw/articles/2026-06-04_arena-ai_agent-arena-methodology.md"
   - https://arena.ai/blog/agent-arena-methodology/

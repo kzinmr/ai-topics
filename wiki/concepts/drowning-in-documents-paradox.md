@@ -4,7 +4,13 @@ type: concept
 aliases: [curse-of-density, dense-retrieval-false-positives]
 created: 2026-05-26
 updated: 2026-05-26
-tags: [concept, information-retrieval, embeddings, drowning-in-documents, multi-vector, benchmark]
+tags:
+  - concept
+  - search
+  - model
+  - drowning-in-documents
+  - multi-vector
+  - benchmark
 related:
   - entities/embeddings
   - concepts/colbert

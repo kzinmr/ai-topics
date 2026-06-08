@@ -7,7 +7,7 @@ tags:
   - ai-software-engineering
   - domain-expertise
   - ai-moat
-  - ai-coding
+  - coding-agents
   - software-development
 sources:
   - https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/

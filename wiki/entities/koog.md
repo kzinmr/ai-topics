@@ -3,7 +3,14 @@ title: Koog
 created: 2026-05-28
 updated: 2026-05-28
 type: entity
-tags: [entity, ai-agents, agent-framework, kotlin, java, jetbrains, open-source, enterprise-ai]
+tags:
+  - entity
+  - ai-agents
+  - kotlin
+  - java
+  - jetbrains
+  - open-source
+  - company
 sources:
   - raw/articles/2026-05-21_jetbrains_koog-1-0.md
   - https://github.com/JetBrains/koog/releases/tag/1.0.0

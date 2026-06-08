@@ -3,7 +3,11 @@ title: "GPU Cloud Infrastructure Rankings (ClusterMAX)"
 type: concept
 created: 2026-05-20
 updated: 2026-05-29
-tags: [gpu, cloud, ai-infrastructure, nvidia, ai-research]
+tags:
+  - hardware
+  - infrastructure
+  - nvidia
+  - lab
 related:
   - [[entities/semianalysis]]
   - [[entities/dylan-patel]]

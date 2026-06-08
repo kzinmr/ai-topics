@@ -3,7 +3,13 @@ title: "Stack Benchmarking (Ramp)"
 created: 2026-06-04
 updated: 2026-06-04
 type: concept
-tags: [benchmark, evals, agent-evaluation, ai-agents, memory-systems, agent-memory, fintech, frontier-models]
+tags:
+  - benchmark
+  - evaluation
+  - ai-agents
+  - memory-systems
+  - fintech
+  - model
 sources:
   - raw/articles/2026-06-04_ramp_stack-benchmarking.md
   - https://builders.ramp.com/post/stack-benchmarking

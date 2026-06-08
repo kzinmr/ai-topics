@@ -7,7 +7,6 @@ tags:
   - search
   - evaluation
   - methodology
-  - information-retrieval
   - benchmark
 sources: [raw/articles/2021-02-21_softwaredoug_judgment-list.md]
 ---

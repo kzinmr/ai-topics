@@ -5,7 +5,7 @@ updated: 2026-05-29
 type: concept
 tags:
   - ai-agents
-  - agent-orchestration
+  - orchestration
   - cognition
   - human-in-the-loop
   - software-engineering

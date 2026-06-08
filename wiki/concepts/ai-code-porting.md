@@ -5,10 +5,9 @@ created: 2026-06-02
 updated: 2026-06-02
 tags:
   - coding-agents
-  - ai-coding
   - software-engineering
   - open-source
-  - case-study
+  - methodology
   - law
 sources:
   - https://www.aboutcode.org/blog/agentic-scancode-port-case-study/

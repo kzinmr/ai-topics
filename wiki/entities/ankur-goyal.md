@@ -2,7 +2,7 @@
 title: "Ankur Goyal"
 tags:
   - person
-  - agent-evaluation
+  - evaluation
 created: 2026-04-24
 updated: 2026-05-28
 type: entity

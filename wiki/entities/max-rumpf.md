@@ -6,7 +6,16 @@ created: 2026-05-13
 updated: 2026-05-13
 status: L2
 sources: [https://maxrumpf.com/, https://www.sid.ai/, https://www.sid.ai/research/sid-1, https://www.sid.ai/research/sid-1-technical-report, https://x.com/maxrumpf, https://ycombinator.com/companies/sid]
-tags: [person, ai-research, information-retrieval, reinforcement-learning, grpo, blogger, x-account, ycombinator]
+tags:
+  - person
+  - lab
+  - search
+  - reinforcement-learning
+  - training
+  - blogger
+  - x-account
+  - ycombinator
+
 ---
 
 # Max Rumpf

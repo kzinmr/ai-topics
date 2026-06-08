@@ -5,10 +5,10 @@ created: 2026-05-25
 updated: 2026-05-25
 tags:
   - ai-agents
-  - enterprise-ai
+  - company
   - decision-centric
   - data-integration
-  - tool-use
+  - tool
   - rag
 sources:
   - raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md

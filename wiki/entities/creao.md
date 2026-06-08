@@ -5,11 +5,10 @@ updated: "2026-05-31"
 type: entity
 tags:
   - company
-  - agent-harness
-  - agent-platform
   - harness-engineering
+  - agent-platform
   - enterprise-saas
-  - service-as-software
+  - ai-adoption
   - multi-agent
   - platform-economics
 sources:

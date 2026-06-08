@@ -3,7 +3,19 @@ title: Gemini 3.5 Flash
 created: 2026-05-22
 updated: 2026-05-23
 type: entity
-tags: [entity, model, google, multimodal, llm, text-generation, agentic-engineering, inference, agent-sdk, coding-agents, ai-agents, orchestration, multi-agent]
+tags:
+  - entity
+  - model
+  - google
+  - multimodal
+  - text-generation
+  - agentic-engineering
+  - inference
+  - agent-sdk
+  - coding-agents
+  - ai-agents
+  - orchestration
+  - multi-agent
 sources:
   - raw/articles/2026-05-19_google-gemini-3-5-flash.md
   - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/

@@ -6,7 +6,7 @@ updated: 2026-06-05
 tags:
   - event
   - announcement
-  - cloudflare
+  - company
   - open-source
   - infrastructure
   - developer-tooling

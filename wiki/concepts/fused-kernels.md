@@ -6,9 +6,8 @@ updated: 2026-05-27
 tags:
   - optimization
   - fused-kernels
-  - memory-efficiency
   - simd
-  - colbert
+  - search
   - maxsim
   - performance-engineering
 related:

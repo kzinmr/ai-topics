@@ -3,7 +3,12 @@ title: Piero Kauffmann
 type: person
 created: 2026-05-26
 updated: 2026-05-26
-tags: [person, researcher, microsoft, reinforcement-learning, agent-training, ai-infrastructure]
+tags:
+  - person
+  - microsoft
+  - reinforcement-learning
+  - agent-training
+  - infrastructure
 sources:
   - raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md
   - https://arxiv.org/abs/2605.24517

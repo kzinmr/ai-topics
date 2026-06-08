@@ -5,7 +5,7 @@ updated: 2026-06-08
 type: entity
 tags:
   - company
-  - ai-infrastructure
+  - infrastructure
   - developer-tooling
   - coding-agents
   - verification

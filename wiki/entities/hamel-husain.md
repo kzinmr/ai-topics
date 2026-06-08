@@ -4,7 +4,7 @@ tags:
   - person
   - ai-agents
   - agent-skills
-  - agent-security
+  - agent-safety
   - evaluation
   - harness-engineering
   - developer-tooling

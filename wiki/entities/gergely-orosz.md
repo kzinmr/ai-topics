@@ -3,7 +3,18 @@ title: "Gergely Orosz"
 created: 2026-05-20
 updated: 2026-05-20
 type: entity
-tags: [person, blogger, content-creator, podcast, youtube, blog, software-engineering, ai-adoption, career, startup, leadership]
+tags:
+  - person
+  - blogger
+  - content-creator
+  - writing
+  - youtube
+  - blog
+  - software-engineering
+  - ai-adoption
+  - career
+  - company
+  - leadership
 sources: [raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
 ---
 

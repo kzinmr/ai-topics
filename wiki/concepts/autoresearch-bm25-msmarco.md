@@ -8,10 +8,8 @@ tags:
   - agent-loop
   - bm25
   - lexical-search
-  - information-retrieval
-  - agentic-search
-  - evaluation
   - search
+  - evaluation
   - methodology
   - overfitting
 sources: [raw/articles/2026-05-17_softwaredoug-com_autoresearching-better-msmarco-bm25.md]

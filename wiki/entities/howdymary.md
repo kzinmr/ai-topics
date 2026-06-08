@@ -4,7 +4,14 @@ handle: "@howdymary"
 type: entity
 created: 2026-05-25
 updated: 2026-05-25
-tags: [person, meta-harness, hermes-agent, agent-runtime, benchmark-optimization, coding-agents, open-source]
+tags:
+  - person
+  - meta-harness
+  - ai-agents
+  - agent-runtime
+  - benchmark-optimization
+  - coding-agents
+  - open-source
 aliases: ["howdymary", "mary"]
 sources:
   - https://x.com/howdymary

@@ -5,10 +5,8 @@ updated: 2026-05-28
 type: entity
 tags:
   - model
-  - embeddings
-  - information-retrieval
+  - search
   - late-interaction
-  - colbert
   - open-source
   - benchmark
   - beir

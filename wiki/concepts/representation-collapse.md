@@ -9,7 +9,6 @@ tags:
   - model
   - memetics
   - controversy
-  - epistemology
 aliases:
   - representation-collapse
   - baudrillard-and-ai

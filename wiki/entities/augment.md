@@ -10,7 +10,7 @@ tags:
   - product
   - platform
   - agent-platform
-  - agent-orchestration
+  - orchestration
   - ai-native
 aliases: ["Augment", "Augment Inc."]
 sources:

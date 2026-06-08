@@ -8,11 +8,8 @@ type: transcript
 tags:
   - query-understanding
   - search
-  - embeddings
-  - llm
-  - ecommerce-search
-  - synonym-extraction
-  - category-classification
+  - model
+  - model
   - bm25
   - transcript
 related_article: articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search.md

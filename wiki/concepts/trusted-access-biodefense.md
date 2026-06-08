@@ -4,7 +4,7 @@ type: concept
 created: 2026-05-30
 updated: 2026-06-08
 tags:
-  - ai-safety
+  - agent-safety
   - evaluation
   - openai
   - announcement

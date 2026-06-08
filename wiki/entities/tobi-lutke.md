@@ -6,7 +6,6 @@ type: entity
 status: L2
 tags:
   - person
-  - entrepreneur
   - ceo
   - shopify
   - coding-agents

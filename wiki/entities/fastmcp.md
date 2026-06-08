@@ -8,10 +8,9 @@ status: L2
 tags:
   - mcp
   - framework
-  - python
-  - open-source
   - developer-tooling
-  - tool-use
+  - open-source
+  - tool
 sources:
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
   - transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md

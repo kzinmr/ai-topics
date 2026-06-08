@@ -7,7 +7,7 @@ source: YouTube
 url: https://www.youtube.com/watch?v=4D3hDmGhFhA
 type: transcript
 duration: "94:06"
-tags: [podcast, ai-adoption, transcript]
+tags: [writing, ai-adoption, transcript]
 ---
 
 # Lenny's Podcast — Dan Shipper: The AI Paradox — Transcript

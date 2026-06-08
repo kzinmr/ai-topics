@@ -3,7 +3,12 @@ title: World Models for AI Agents
 type: concept
 created: 2026-05-19
 updated: 2026-05-19
-tags: [reinforcement-learning, agent-training, world-models, research, ai-agents]
+tags:
+  - reinforcement-learning
+  - agent-training
+  - world-models
+  - lab
+  - ai-agents
 sources:
   - raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models.md
   - https://arxiv.org/abs/2510.16907

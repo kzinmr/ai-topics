@@ -5,11 +5,10 @@ updated: 2026-05-27
 type: concept
 status: complete
 tags:
-  - codex
-  - openai
   - coding-agents
-  - agent-architecture
-  - hermes-agent
+  - openai
+  - architecture
+  - ai-agents
   - protocol
 aliases:
   - hermes-codex-runtime

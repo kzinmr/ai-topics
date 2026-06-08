@@ -8,7 +8,6 @@ tags:
   - person
   - open-source
   - company
-  - researcher
 aliases:
   - Justine Tunney
   - jart

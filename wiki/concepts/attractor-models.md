@@ -3,7 +3,14 @@ title: Attractor Models
 created: 2026-05-22
 updated: 2026-05-22
 type: concept
-tags: [concept, transformer-architecture, training, optimization, reasoning, llm, benchmark]
+tags:
+  - concept
+  - transformer-architecture
+  - training
+  - optimization
+  - reasoning
+  - model
+  - benchmark
 sources: [raw/articles/2026-05-12_attractor-models-language-reasoning.md, https://arxiv.org/html/2605.12466]
 ---
 

@@ -10,7 +10,7 @@ updated: 2026-05-26
 tags:
   - concept
   - agentic-engineering
-  - information-retrieval
+  - search
 status: draft
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know/"

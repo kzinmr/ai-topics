@@ -3,7 +3,14 @@ title: GPT-Rosalind
 created: 2026-06-04
 updated: 2026-06-04
 type: concept
-tags: [model, gpt, openai, biotech, frontier-models, announcement, benchmark, evals, reasoning]
+tags:
+  - model
+  - openai
+  - biotech
+  - announcement
+  - benchmark
+  - evaluation
+  - reasoning
 sources: [raw/articles/2026-06-04_openai_gpt-rosalind-new-capabilities.md]
 ---
 

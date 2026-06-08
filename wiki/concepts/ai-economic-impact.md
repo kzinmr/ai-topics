@@ -3,7 +3,14 @@ title: AI Economic Impact
 created: 2026-06-01
 updated: 2026-06-01
 type: concept
-tags: [concept, economics, ai-adoption, prediction, automation, labor, consulting]
+tags:
+  - concept
+  - economics
+  - ai-adoption
+  - prediction
+  - automation
+  - labor
+  - company
 sources:
   - raw/articles/2026-06-01_benedict-evans-1997-internet-moment.md
 ---

@@ -4,7 +4,13 @@ type: concept
 aliases: [late-interaction, multi-vector-retrieval, MaxSim]
 created: 2026-05-22
 updated: 2026-05-27
-tags: [colbert, late-interaction, maxsim, multi-vector, information-retrieval, embeddings, benchmark]
+tags:
+  - search
+  - late-interaction
+  - maxsim
+  - multi-vector
+  - model
+  - benchmark
 related:
   - entities/omar-khattab
   - entities/benjamin-clavie

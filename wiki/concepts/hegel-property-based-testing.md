@@ -15,13 +15,13 @@ sources:
 tags:
   - concept
   - testing
-  - property-based-testing
+  - developer-tooling
   - framework
   - protocol
   - formal-methods
   - go
-  - developer-tooling
   - open-source
+
 ---
 
 # Hegel: Universal Property-Based Testing Protocol

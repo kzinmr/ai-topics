@@ -4,11 +4,9 @@ type: concept
 created: 2026-05-29
 updated: 2026-05-29
 tags:
-  - gpu
-  - cloud
-  - ai-infrastructure
+  - hardware
+  - infrastructure
   - economics
-  - reliability
   - training
 related:
   - [[concepts/gpu-cloud-rankings]]

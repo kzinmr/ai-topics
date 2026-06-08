@@ -8,7 +8,6 @@ tags:
   - memory-systems
   - ai-agents
   - rag
-  - enterprise-ai
 aliases: ["Sentra", "sentra-app"]
 sources:
   - https://sentra.app

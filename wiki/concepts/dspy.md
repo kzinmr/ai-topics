@@ -1,6 +1,13 @@
 ---
 title: "DSPy — Declarative Self-improving Python for LMs"
-tags: [training, concept, ai-agents, llm, prompting, rag, evaluations]
+tags:
+  - training
+  - concept
+  - ai-agents
+  - model
+  - prompting
+  - rag
+  - evaluation
 created: 2026-04-24
 updated: 2026-06-03
 type: concept

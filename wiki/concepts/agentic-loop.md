@@ -12,7 +12,7 @@ tags:
   - multi-agent
   - orchestration
   - ralph-loop
-  - cost-optimization
+  - optimization
   - cron
 created: 2026-05-13
 updated: 2026-06-08

@@ -9,8 +9,7 @@ tags:
   - agent-skills
   - ai-agents
   - framework
-  - agent-harness
-  - agent-skills
+  - harness-engineering
   - agent-design-patterns
   - open-source
 sources:

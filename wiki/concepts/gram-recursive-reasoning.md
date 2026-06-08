@@ -3,7 +3,14 @@ title: GRAM (Generative Recursive Reasoning)
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [concept, reasoning, research, architecture, agent-foundations, model, recursive-self-improvement]
+tags:
+  - concept
+  - reasoning
+  - lab
+  - architecture
+  - agent-foundations
+  - model
+  - recursive-self-improvement
 sources: [raw/articles/2026-05-19_gram-recursive-reasoning.md]
 ---
 

@@ -6,7 +6,7 @@ tags:
   - benchmark
   - methodology
   - reasoning
-  - research
+  - lab
   - multimodal
   - model
   - evaluation

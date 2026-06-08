@@ -3,7 +3,14 @@ title: ScheduleFree+
 created: 2026-05-22
 updated: 2026-05-22
 type: concept
-tags: [concept, training, optimization, fine-tuning, scaling, llm, meta, benchmark]
+tags:
+  - concept
+  - training
+  - optimization
+  - fine-tuning
+  - model
+  - methodology
+  - benchmark
 sources: [raw/articles/2026-05-18_schedulefree-plus-llm-training.md, https://arxiv.org/html/2605.19095v1]
 ---
 

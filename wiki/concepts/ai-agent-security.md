@@ -10,7 +10,6 @@ tags:
   - agent-safety
   - ai-agents
   - openclaw
-  - prompt-injection
 sources:
   - raw/articles/garymarcus.substack.com--p-breaking-autonomous-agents-are-a--cab06f2c.md
   - raw/articles/simonwillison.net--2026-may-26-copilot-cowork-exfiltrates-files--696365c2.md

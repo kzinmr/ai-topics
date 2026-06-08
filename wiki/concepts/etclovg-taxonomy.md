@@ -8,8 +8,7 @@ tags:
   - ai-agents
   - taxonomy
   - survey
-  - agent-architecture
-  - agent-infrastructure
+  - architecture
 aliases:
   - "ETCLOVG"
   - "agent-harness-taxonomy"

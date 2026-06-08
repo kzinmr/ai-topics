@@ -8,10 +8,10 @@ created: 2026-04-25
 updated: 2026-06-02
 tags:
   - philosophy
-  - ai-safety
+  - agent-safety
   - religion
   - ethics
-  - llm-as-judge
+  - evaluation
 sources:
   - https://garymarcus.substack.com/p/the-pope-appears-to-understand-ai
   - https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html

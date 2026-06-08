@@ -3,7 +3,13 @@ title: Kore.ai
 created: 2026-05-26
 updated: 2026-05-26
 type: entity
-tags: [entity, company, enterprise-ai, agent-platform, multi-agent, governance, microsoft]
+tags:
+  - entity
+  - company
+  - agent-platform
+  - multi-agent
+  - governance
+  - microsoft
 sources: [raw/articles/2026-05-26_kore-ai-artemis-agent-platform.md]
 ---
 

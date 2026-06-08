@@ -3,7 +3,20 @@ title: "RLM (Recursive Language Models)"
 created: 2026-04-13
 updated: 2026-06-05
 type: concept
-tags: [rlm, long-context, inference, test-time-scaling, context-rot, context-degradation, ai-agents, coding-agents, orchestration, subagents, workflow, claude-code, research, neurosymbolic]
+tags:
+  - rlm
+  - context-management
+  - inference
+  - test-time-scaling
+  - context-rot
+  - context-degradation
+  - ai-agents
+  - coding-agents
+  - orchestration
+  - workflow
+  - claude-code
+  - lab
+  - neurosymbolic
 related: [dspy, dspy-rlm, context-engineering, gepa, lambda-rlm, programmatic-tool-calling, code-execution-with-mcp, code-mode, context-folding, anthropic-multi-agent-research, inference-time-scaling, typed-rlm, dynamic-workflows]
 sources:
   - https://arxiv.org/abs/2512.24601

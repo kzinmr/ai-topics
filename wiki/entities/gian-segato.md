@@ -6,7 +6,7 @@ updated: 2026-05-28
 tags:
   - blogger
   - content-creator
-  - agent-evaluation
+  - evaluation
   - methodology
   - ai-product
 aliases:

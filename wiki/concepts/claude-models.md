@@ -3,7 +3,15 @@ title: Claude Models
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [model, text-generation, llm, anthropic, pricing, ai-safety, prompt-caching, agentic-engineering, reasoning]
+tags:
+  - model
+  - text-generation
+  - anthropic
+  - economics
+  - agent-safety
+  - prompt-caching
+  - agentic-engineering
+  - reasoning
 sources: [raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md, raw/articles/simonwillison.net--2026-may-28-llm-anthropic--93579451.md]
 ---
 

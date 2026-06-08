@@ -7,8 +7,7 @@ tags:
   - product
   - microsoft
   - ai-agents
-  - managed-agents
-  - enterprise-ai
+  - company
 aliases: [Scout, Microsoft Scout Agent, Autopilot Agent, M365 Scout]
 sources:
   - raw/articles/2026-06-02_microsoft_scout-autopilot-agent.md

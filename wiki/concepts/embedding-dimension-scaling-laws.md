@@ -5,9 +5,9 @@ created: 2026-06-04
 updated: 2026-06-04
 tags:
   - concept
-  - retrieval
+  - rag
   - scaling-laws
-  - embeddings
+  - model
 sources:
   - raw/papers/2602.05062-embedding-dimension-scaling-laws.md
 related:

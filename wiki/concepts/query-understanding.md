@@ -5,12 +5,9 @@ created: 2026-05-19
 updated: 2026-05-20
 tags:
   - search
-  - information-retrieval
   - tokenization
   - lexical-search
-  - embeddings
-  - agentic-search
-  - llm
+  - model
 sources:
   - raw/articles/2016-10-28_daniel-tunkelang_query-understanding-introduction.md
   - raw/articles/2017-02-16_daniel-tunkelang_query-rewriting-overview.md

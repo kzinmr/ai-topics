@@ -5,10 +5,9 @@ updated: 2026-05-27
 type: entity
 tags:
   - company
-  - agent-evaluation
+  - evaluation
   - benchmark
   - coding-agents
-  - startup
 aliases:
   - Datacurve AI
 sources:

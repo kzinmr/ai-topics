@@ -5,12 +5,9 @@ updated: 2026-05-20
 type: entity
 tags:
   - company
-  - ai-research
+  - lab
   - search
-  - information-retrieval
-  - agentic-search
   - reinforcement-learning
-  - grpo
   - training
   - product
   - platform

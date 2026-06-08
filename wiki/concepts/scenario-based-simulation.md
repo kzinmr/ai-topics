@@ -7,9 +7,9 @@ tags:
   - ai-agents
   - agent-design-patterns
   - decision-centric
-  - enterprise-ai
+  - company
   - human-in-the-loop
-  - simulation
+  - robotics
 sources:
   - raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md
   - https://palantir.com/docs/foundry/architecture-center/ontology-system/

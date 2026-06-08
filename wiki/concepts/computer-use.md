@@ -3,7 +3,11 @@ title: "Computer Use Agents"
 created: 2026-05-31
 updated: 2026-05-31
 type: concept
-tags: [computer-use, agents, automation, benchmark, pointer]
+tags:
+  - ai-agents
+  - automation
+  - benchmark
+  - pointer
 sources:
   - https://www.pointer.ai/blog/sota
   - https://uncensoredhub.ai/news/2026-05-29-claude-opus-4-8-orchestrates-hundreds-of-parallel-subagents-hits-84-on-browser-a

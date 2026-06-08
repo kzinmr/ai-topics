@@ -3,7 +3,12 @@ title: "Probe&Prefill"
 created: 2026-06-01
 updated: 2026-06-01
 type: concept
-tags: [inference, optimization, tool-use, evaluation, agentic-search]
+tags:
+  - inference
+  - optimization
+  - tool
+  - evaluation
+  - search
 sources:
   - https://arxiv.org/abs/2605.09252
   - raw/articles/2026-06-01_active-crawl-probe-prefill-mythos-autoscientist-rsi.md

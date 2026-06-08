@@ -7,10 +7,9 @@ created: 2026-04-25
 updated: 2026-05-29
 tags:
   - concept
-  - code-review
+  - coding-agents
   - developer-tooling
   - agent-native
-  - coding-agents
 status: active
 sources:
   - raw/articles/linear.app--code-review-should-be-fast--2026-05-28.md

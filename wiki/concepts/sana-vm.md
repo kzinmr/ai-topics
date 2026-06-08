@@ -3,7 +3,16 @@ title: SANA-WM
 created: 2026-05-19
 updated: 2026-05-19
 type: concept
-tags: [concept, world-models, video-generation, open-source, gpu, diffusion, hybrid-architecture, training-efficiency, nvidia]
+tags:
+  - concept
+  - world-models
+  - video-generation
+  - open-source
+  - hardware
+  - diffusion
+  - hybrid-architecture
+  - training-efficiency
+  - nvidia
 sources: [raw/articles/2026-05-16_nvidia-sana-wm.md, https://www.marktechpost.com/2026/05/16/nvidia-introduces-sana-wm-a-2-6b-parameter-open-source-world-model-that-generates-minute-scale-720p-video-on-a-single-gpu/]
 ---
 

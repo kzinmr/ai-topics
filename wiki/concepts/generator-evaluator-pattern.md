@@ -9,8 +9,7 @@ tags:
   - agent-skills
   - evaluation
   - verification
-  - llm-as-judge
-  - data-visualization
+  - developer-tooling
   - agent-design-patterns
 sources:
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md

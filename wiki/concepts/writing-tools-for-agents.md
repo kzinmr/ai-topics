@@ -4,10 +4,10 @@ type: concept
 created: 2026-06-02
 updated: 2026-06-02
 tags:
-  - tool-use
+  - tool
   - ai-agent-engineering
   - context-engineering
-  - agent-evaluation
+  - evaluation
   - mcp
   - agent-ergonomics
   - prompting

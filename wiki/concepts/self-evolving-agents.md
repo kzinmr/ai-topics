@@ -2,7 +2,6 @@
 title: "Self-Evolving Agents"
 tags:
   - self-improving
-  - codex
   - coding-agents
   - harness-engineering
   - architecture

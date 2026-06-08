@@ -5,13 +5,10 @@ created: 2026-04-10
 updated: 2026-06-03
 tags:
   - person
-  - developer
-  - ai
+  - developer-tooling
+  - model
   - search
-  - information-retrieval
-  - relevance
   - open-source
-  - author
   - consultant
 sources: []
 ---

@@ -8,7 +8,7 @@ tags:
   - training
   - training-efficiency
   - reinforcement-learning
-  - scaling
+  - optimization
   - entity
 sources:
   - raw/newsletters/2026-05-19-ainews-how-to-land-a-job-at-a-frontier-lab-on-pretraining.md

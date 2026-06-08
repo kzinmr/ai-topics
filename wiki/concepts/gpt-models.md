@@ -1,7 +1,9 @@
 ---
 title: "GPT Models"
 type: concept
-tags: [llm, openai, gpt, transformer, chatgpt, frontier-models]
+tags:
+  - model
+  - openai
 status: active
 created: 2026-04-20
 updated: 2026-06-03

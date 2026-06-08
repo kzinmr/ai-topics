@@ -4,13 +4,10 @@ type: concept
 created: 2026-05-28
 updated: 2026-05-29
 tags:
-  - agent-evaluation
   - evaluation
   - benchmark
   - methodology
-  - reliability
-  - observability
-  - monitoring
+  - infrastructure
 aliases:
   - agent-eval-methodology
   - floor-raising

@@ -3,7 +3,21 @@ title: Qwen 3.7 Max
 created: 2026-05-23
 updated: 2026-05-23
 type: entity
-tags: [entity, model, llm, text-generation, reasoning, ai-agents, coding-agents, agentic-engineering, multi-agent, inference, alibaba, qwen, china, long-context, agent-orchestration]
+tags:
+  - entity
+  - model
+  - text-generation
+  - reasoning
+  - ai-agents
+  - coding-agents
+  - agentic-engineering
+  - multi-agent
+  - inference
+  - alibaba
+  - qwen
+  - china
+  - context-management
+  - orchestration
 sources: [https://explainx.ai/blog/qwen-3-7-max-agent-frontier-long-horizon-autonomy, https://ai-trends.today/qwen-introduces-qwen3-7-max-a-reasoning-agent-model-with-a-1m-token-context-window/]
 ---
 

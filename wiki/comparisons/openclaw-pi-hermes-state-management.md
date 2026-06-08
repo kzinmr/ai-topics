@@ -9,20 +9,16 @@ tags:
   - architecture
   - state-management
   - data-flow
-  - agent-architecture
   - agent-runtime
-  - agent-harness
+  - harness-engineering
   - openclaw
-  - hermes-agent
   - context-engineering
   - memory-systems
-  - agent-memory
   - orchestration
   - durable-execution
   - control-plane
   - sqlite
   - streaming
-  - subagents
 sources:
   - concepts/ai-native-state-management.md
   - concepts/openclaw-architecture.md

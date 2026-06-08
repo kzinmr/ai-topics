@@ -5,10 +5,9 @@ updated: 2026-06-04
 type: entity
 tags:
   - company
-  - information-retrieval
-  - embeddings
   - search
-  - api
+  - model
+  - developer-tooling
   - open-source
 sources:
   - raw/articles/2026-06-02_mixedbread_dense-retrievers-know-more.md

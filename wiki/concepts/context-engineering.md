@@ -4,6 +4,22 @@ created: 2026-05-20
 updated: 2026-06-02
 type: concept
 tags:
+  - context-engineering
+  - context-management
+  - ai-agent-engineering
+  - ai-agents
+  - prompting
+  - architecture
+  - memory-systems
+  - rag
+  - prompt-caching
+  - token-economics
+  - agentic-engineering
+  - progressive-disclosure
+  - agent-design-patterns
+  - enterprise-agents
+  - agent-identity
+  - agent-governance
   [context-engineering, context-management, ai-agent-engineering, ai-agents, prompting, agent-architecture, memory-systems, agent-memory, subagents, rag, prompt-caching, token-economics, agentic-engineering, progressive-disclosure, agent-design-patterns, enterprise-agents, agent-identity, agent-governance]
 sources:
   [raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md, raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md, raw/articles/2026-01-09_lancemartin_agent-design-patterns.md, raw/articles/substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md]

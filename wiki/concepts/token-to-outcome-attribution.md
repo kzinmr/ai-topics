@@ -5,8 +5,8 @@ created: 2026-06-01
 updated: 2026-06-01
 tags:
   - token-economics
-  - enterprise-ai
-  - cost-optimization
+  - company
+  - optimization
   - enterprise-saas
   - economics
   - ai-adoption

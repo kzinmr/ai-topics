@@ -7,9 +7,9 @@ tags:
   - company
   - ai-agents
   - coding-agent
-  - acp
-  - agent-harness
-  - ide
+  - protocol
+  - harness-engineering
+  - developer-tooling
 aliases:
   - cognition-devin
   - cognition-ai

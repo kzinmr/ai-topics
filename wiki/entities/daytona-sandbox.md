@@ -6,12 +6,10 @@ type: entity
 tags:
   - entity
   - sandbox
-  - managed-agents
   - ai-agents
-  - agent-architecture
+  - architecture
   - infrastructure
   - developer-tooling
-  - docker
   - orchestration
   - self-hosted
   - daytona

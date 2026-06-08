@@ -8,11 +8,10 @@ tags:
   - person
   - ai-agents
   - agent-skills
-  - vc
-  - investor
+  - company
   - local-llm
   - supply-chain
-  - ai-safety
+  - agent-safety
   - blogger
   - ai-adoption
   - youtube

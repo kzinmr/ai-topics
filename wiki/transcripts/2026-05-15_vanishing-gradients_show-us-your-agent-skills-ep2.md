@@ -8,7 +8,7 @@ source: YouTube (Vanishing Gradients)
 url: https://www.youtube.com/watch?v=l37PR-OkYKA
 type: talk
 duration: "139:00"
-tags: [ai-agents, agent-skills, agentic-data-science, context-engineering, developer-tooling, ai-safety, local-models, data-visualization, creative-ai, agent-harness]
+tags: [ai-agents, agent-skills, data-science, context-engineering, developer-tooling, agent-safety, local-llm, developer-tooling, harness-engineering]
 ---
 
 # Show Us Your (Agent) Skills — Episode 2

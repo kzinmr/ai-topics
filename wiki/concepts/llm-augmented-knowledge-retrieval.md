@@ -3,7 +3,15 @@ title: "LLM-Augmented Knowledge Retrieval"
 created: 2026-05-27
 updated: 2026-05-27
 type: concept
-tags: [concept, information-retrieval, agentic-retrieval, mcp, claude-code, filesystem, knowledge-management, context-engineering]
+tags:
+  - concept
+  - search
+  - agentic-retrieval
+  - mcp
+  - claude-code
+  - developer-tooling
+  - information-retrieval
+  - context-engineering
 sources:
   - raw/articles/2026-05-24_cyrilxbt_obsidian-vault-organization-guide.md
   - https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f

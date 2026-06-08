@@ -6,7 +6,6 @@ type: entity
 tags:
   - entity
   - person
-  - ai-researcher
 
   - multi-agent
   - test-time-scaling

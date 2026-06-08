@@ -6,9 +6,9 @@ updated: 2026-05-27
 tags:
   - person
   - simd-optimization
-  - vector-search
+  - search
   - open-source
-  - ml-infrastructure
+  - infrastructure
 aliases:
   - ashvardanian
   - Ash Vardanyan

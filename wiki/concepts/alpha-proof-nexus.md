@@ -6,7 +6,6 @@ type: concept
 tags:
   - concept
   - google
-  - deepmind
   - formal-methods
   - ai-agents
   - agentic-engineering
@@ -14,7 +13,7 @@ tags:
   - reinforcement-learning
   - benchmark
   - open-source
-  - research
+  - lab
 sources:
   - raw/newsletters/2026-05-25-alphaproof-nexus-takes-ai-math-beyond-olympiads.md
   - https://arxiv.org/abs/2605.22763

@@ -3,7 +3,15 @@ title: Search as Code (SaC)
 created: 2026-06-02
 updated: 2026-06-02
 type: concept
-tags: [agentic-search, programmatic-tool-calling, agent-harness, agent-sdk, sandbox, orchestration, search, inference, code-act]
+tags:
+  - search
+  - programmatic-tool-calling
+  - harness-engineering
+  - agent-sdk
+  - sandbox
+  - orchestration
+  - inference
+  - code-act
 aliases: [SaC, programmable-search, composable-search]
 related: [concepts/programmatic-tool-calling, concepts/agentic-search, concepts/codeact, concepts/agent-harness, concepts/code-mode, concepts/rlm-recursive-language-models]
 sources: [raw/articles/2026-06-01_perplexity-rethinking-search-as-code-generation.md]

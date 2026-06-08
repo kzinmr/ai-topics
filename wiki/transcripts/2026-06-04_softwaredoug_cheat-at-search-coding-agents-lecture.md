@@ -6,15 +6,12 @@ date_ingested: 2026-06-04
 related_article: articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms
 type: transcript
 tags:
-  - agentic-search
+  - search
   - rlm
-  - recursive-language-models
-  - auto-research
   - coding-agents
   - overfitting
-  - guardrails
   - search-ranking
-  - ndcg
+  - evaluation
   - context-management
   - harness-engineering
   - search

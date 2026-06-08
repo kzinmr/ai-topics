@@ -7,8 +7,7 @@ tags:
   - company
   - infrastructure
   - open-source
-  - cloud
-  - kubernetes
+  - developer-tooling
 sources:
   - https://www.anyscale.com
   - raw/articles/anyscale.com--blog-aks-support-multi-cloud-global-resource-scheduler--1149a504.md

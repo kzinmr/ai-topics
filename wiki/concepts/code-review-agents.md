@@ -4,9 +4,8 @@ created: 2026-05-26
 updated: 2026-05-26
 type: concept
 tags:
-  - code-review
-  - ai-agents
   - coding-agents
+  - ai-agents
   - multi-agent
   - software-engineering
   - methodology

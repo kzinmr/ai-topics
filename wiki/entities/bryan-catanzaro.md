@@ -6,10 +6,8 @@ updated: 2026-05-26
 tags:
   - person
   - nvidia
-  - researcher
   - open-source
-  - ai-infrastructure
-  - ml-engineering
+  - infrastructure
 aliases:
   - @ctnzr
 sources:

@@ -5,10 +5,9 @@ created: 2026-05-25
 updated: 2026-05-25
 tags:
   - person
-  - ml-engineering
-  - moe
-  - post-training
-  - distributed-training
+  - infrastructure
+  - model
+  - training
 aliases:
   - Lucas Atkins
 sources:

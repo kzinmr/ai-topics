@@ -3,7 +3,11 @@ title: "Enterprise AI Tool Cost Management"
 created: "2026-06-05"
 updated: "2026-06-05"
 type: concept
-tags: [enterprise-ai, pricing, coding-agents, claude-code, cursor]
+tags:
+  - company
+  - economics
+  - coding-agents
+  - claude-code
 sources:
   - "raw/articles/2026-06-03_simonwillison_uber-caps-ai-tool-costs.md"
   - https://simonwillison.net/2026/Jun/3/uber-caps-usage/

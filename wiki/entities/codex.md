@@ -12,8 +12,8 @@ tags:
   - open-source
   - developer-tooling
   - ai-agents
-  - enterprise-ai
-  - case-study
+  - company
+  - methodology
   - mcp
   - figma
   - frontend

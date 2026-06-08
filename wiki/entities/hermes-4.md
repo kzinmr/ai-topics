@@ -6,12 +6,10 @@ type: entity
 tags:
   - model
   - reasoning
-  - llm
   - text-generation
   - open-source
   - nous-research
-  - synthetic-data
-  - post-training
+  - training
   - hybrid-reasoning
   - rlvr
 sources:

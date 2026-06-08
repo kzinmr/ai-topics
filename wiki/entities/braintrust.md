@@ -6,9 +6,9 @@ updated: 2026-06-05
 tags:
   - company
   - evaluation
-  - observability
+  - infrastructure
   - developer-tooling
-  - codex
+  - coding-agents
   - trace-analysis
 aliases: ["Braintrust AI"]
 sources:

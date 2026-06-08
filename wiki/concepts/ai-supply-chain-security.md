@@ -6,8 +6,8 @@ type: concept
 tags:
   - concept
   - security
-  - ai-safety
-  - devops
+  - agent-safety
+  - developer-tooling
   - governance
   - open-source
 aliases: []

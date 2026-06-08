@@ -9,7 +9,7 @@ tags:
   - person
   - ai-agents
   - agent-skills
-  - data-visualization
+  - developer-tooling
   - data-science
   - evaluation
   - personal-software

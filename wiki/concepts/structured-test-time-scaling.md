@@ -8,12 +8,12 @@ tags:
   - test-time-scaling
   - multi-agent
   - orchestration
-  - agent-architecture
+  - architecture
   - hierarchical
   - verification
   - inference
   - reasoning
-  - reliability
+  - infrastructure
   - rlm
   - isolation
 aliases:

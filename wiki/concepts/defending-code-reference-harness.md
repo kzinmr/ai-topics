@@ -3,7 +3,14 @@ title: "Defending Code Reference Harness"
 created: 2026-06-07
 updated: 2026-06-07
 type: concept
-tags: [ai-safety, coding-agents, security, vulnerability, open-source, anthropic, model]
+tags:
+  - agent-safety
+  - coding-agents
+  - security
+  - vulnerability
+  - open-source
+  - anthropic
+  - model
 sources:
   - https://claude.com/blog/using-llms-to-secure-source-code
   - https://github.com/anthropics/defending-code-reference-harness

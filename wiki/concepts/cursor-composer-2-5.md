@@ -3,7 +3,14 @@ title: "Cursor Composer 2.5"
 created: 2026-05-20
 updated: 2026-05-20
 type: concept
-tags: [coding-agent, cursor, reinforcement-learning, model, training, rlvr, ai-coding, code-intelligence]
+tags:
+  - coding-agent
+  - coding-agents
+  - reinforcement-learning
+  - model
+  - training
+  - rlvr
+  - code-intelligence
 sources: [raw/articles/2026-05-20_cursor_composer-2-5.md]
 ---
 

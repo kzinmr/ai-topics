@@ -12,7 +12,7 @@ tags:
   - benchmark-framing
   - zeno-paradox
   - feedback-loop
-  - saas
+  - product
   - product-management
 sources:
   - raw/articles/2026-05-21_after-automation.md

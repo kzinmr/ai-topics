@@ -3,7 +3,14 @@ title: "Frontier Safety Blueprint"
 created: 2026-06-04
 updated: 2026-06-04
 type: concept
-tags: [frontier-models, ai-governance, ai-safety, policy, regulation, openai, announcement]
+tags:
+  - model
+  - ai-governance
+  - agent-safety
+  - policy
+  - regulation
+  - openai
+  - announcement
 sources:
   - raw/articles/2026-06-04_openai_frontier-safety-blueprint.md
   - https://openai.com/index/frontier-safety-blueprint/

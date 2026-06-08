@@ -4,12 +4,11 @@ type: concept
 created: 2026-06-05
 updated: 2026-06-05
 tags:
-  - cli
   - developer-tooling
   - huggingface
   - ai-agents
   - coding-agents
-  - tool-use
+  - tool
   - agent-ergonomics
   - benchmark
 sources:

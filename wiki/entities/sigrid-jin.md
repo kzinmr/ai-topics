@@ -3,7 +3,14 @@ title: "Sigrid Jin"
 type: entity
 created: 2026-05-03
 updated: 2026-05-29
-tags: [person, developer-tooling, coding-agents, open-source, multi-agent, agent-coordination, philosophy, entrepreneur]
+tags:
+  - person
+  - developer-tooling
+  - coding-agents
+  - open-source
+  - multi-agent
+  - agent-coordination
+  - philosophy
 aliases: ["realsigridjin", "sigrid jin", "instructkr"]
 sources:
   - https://github.com/ultraworkers/claw-code

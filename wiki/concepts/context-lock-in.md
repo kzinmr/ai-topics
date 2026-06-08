@@ -4,7 +4,7 @@ type: concept
 created: 2026-05-19
 updated: 2026-05-26
 tags:
-  - enterprise-ai
+  - company
   - context-management
   - vendor-lock-in
   - platform-economics

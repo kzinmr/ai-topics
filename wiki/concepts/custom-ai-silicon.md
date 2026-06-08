@@ -6,10 +6,9 @@ type: concept
 tags:
   - concept
   - hardware
-  - gpu
   - inference
   - training
-  - performance
+  - optimization
   - nvidia
   - amd
   - industry

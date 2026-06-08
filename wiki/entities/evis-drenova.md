@@ -6,7 +6,6 @@ updated: 2026-05-23
 status: L2
 tags:
   - person
-  - entrepreneur
   - coding-agents
   - search
   - infrastructure

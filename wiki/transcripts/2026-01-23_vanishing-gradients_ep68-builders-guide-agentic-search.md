@@ -8,7 +8,7 @@ url: https://hugobowne.substack.com/p/episode-68-a-builders-guide-to-agentic
 youtube_url: https://youtube.com/live/H6ua9HjGq60
 type: podcast
 duration: 1:28:41
-tags: [agentic-search, maturity-model, llm-as-judge, evaluation, search, rag, conversational-ai, revealed-preferences]
+tags: [search, evaluation, evaluation, search, rag, conversational-ai]
 ---
 
 # Episode Overview

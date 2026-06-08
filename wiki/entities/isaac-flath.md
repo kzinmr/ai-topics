@@ -3,7 +3,15 @@ title: Isaac Flath
 created: 2026-06-04
 updated: 2026-06-04
 type: entity
-tags: [person, harness-engineering, retrieval, rlm, context-engineering, educator, ai-product, ai-agent-engineering, indie-maker]
+tags:
+  - person
+  - harness-engineering
+  - rag
+  - rlm
+  - context-engineering
+  - ai-product
+  - ai-agent-engineering
+  - indie-maker
 sources:
   - https://x.com/isaac_flath/status/2048462111567982823
   - https://isaacflath.com

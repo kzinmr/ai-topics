@@ -11,7 +11,6 @@ tags:
   - controversy
   - technical-debt
   - ai-adoption
-  - code-review
   - eval-loops
 sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-05-24-the-eternal-sloptember-html--06dfb1d8.md

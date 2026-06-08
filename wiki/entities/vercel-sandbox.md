@@ -5,16 +5,13 @@ updated: 2026-05-19
 type: entity
 tags:
   - entity
-  - vercel
+  - company
   - sandbox
-  - managed-agents
   - ai-agents
-  - agent-architecture
-  - agent-security
+  - architecture
+  - agent-safety
   - infrastructure
-  - serverless
-  - typescript
-  - ai-infrastructure
+  - developer-tooling
   - security
   - web-development
   - orchestration

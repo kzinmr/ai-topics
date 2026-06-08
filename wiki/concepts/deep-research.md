@@ -8,11 +8,9 @@ updated: 2026-06-02
 tags:
   - concept
   - deep-research
-  - information-retrieval
-  - agentic-retrieval
   - search
+  - agentic-retrieval
   - ai-agents
-  - agentic-search
   - benchmark
   - evaluation
   - bm25

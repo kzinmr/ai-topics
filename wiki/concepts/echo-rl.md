@@ -3,7 +3,14 @@ title: ECHO (RL Training Method)
 type: concept
 created: 2026-05-19
 updated: 2026-05-26
-tags: [reinforcement-learning, grpo, agent-training, ai-agents, world-models, research, cli]
+tags:
+  - reinforcement-learning
+  - training
+  - agent-training
+  - ai-agents
+  - world-models
+  - lab
+  - developer-tooling
 sources:
   - raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models.md
   - raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md

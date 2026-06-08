@@ -5,11 +5,10 @@ updated: 2026-06-05
 type: concept
 tags:
   - concept
-  - observability
+  - infrastructure
   - trace-analysis
   - clustering
   - bertopic
-  - agent-observability
   - methodology
 aliases: [continuous-trace-intelligence, braintrust-topics, clio-inspired-observability]
 related:

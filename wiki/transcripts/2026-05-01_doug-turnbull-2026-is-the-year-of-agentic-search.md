@@ -7,7 +7,7 @@ source: YouTube
 url: https://www.youtube.com/watch?v=h370222tnAQ
 type: transcript
 duration: "65:52"
-tags: [agentic-search, llm-query-understanding, transcript]
+tags: [search, llm-query-understanding, transcript]
 ---
 
 # Why 2026 is The Year of Agentic Search — Transcript

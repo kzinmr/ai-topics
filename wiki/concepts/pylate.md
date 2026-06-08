@@ -4,13 +4,12 @@ created: 2026-05-28
 updated: 2026-05-28
 type: concept
 tags:
-  - colbert
+  - search
   - late-interaction
   - training
-  - retrieval
-  - distillation
+  - rag
   - open-source
-  - embeddings
+  - model
 sources:
   - raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate.md
   - raw/articles/2025-06-01_lighton_pylate-github.md

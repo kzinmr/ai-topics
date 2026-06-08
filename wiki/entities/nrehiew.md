@@ -8,8 +8,8 @@ tags:
   - person
   - blogger
   - x-account
-  - ai-research
-  - post-training
+  - lab
+  - training
   - reinforcement-learning
   - coding-agents
   - evaluation

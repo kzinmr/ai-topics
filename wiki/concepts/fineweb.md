@@ -9,7 +9,7 @@ updated: 2026-05-25
 tags:
   - datasets
   - training
-  - scaling
+  - optimization
 related:
   - concepts/opus-data-selection
   - concepts/synthetic-data

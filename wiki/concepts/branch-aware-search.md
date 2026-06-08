@@ -3,7 +3,13 @@ title: Branch-Aware Search
 created: 2026-06-03
 updated: 2026-06-03
 type: concept
-tags: [vector-search, retrieval, branching, versioning, design-patterns, information-retrieval, architecture]
+tags:
+  - search
+  - rag
+  - branching
+  - versioning
+  - methodology
+  - architecture
 sources:
   - raw/articles/2026-06-03_zayarni-qdrant-branch-aware-vector-search.md
   - https://qdrant.tech/documentation/tutorials-search-engineering/branch-aware-search/

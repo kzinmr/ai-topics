@@ -5,10 +5,10 @@ created: 2026-06-02
 updated: 2026-06-02
 tags:
   - openai
-  - api
+  - developer-tooling
   - ai-agents
-  - agent-architecture
-  - tool-use
+  - architecture
+  - tool
   - state-management
   - reasoning
   - streaming

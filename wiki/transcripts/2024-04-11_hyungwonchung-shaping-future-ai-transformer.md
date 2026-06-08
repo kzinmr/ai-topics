@@ -7,7 +7,7 @@ slides: https://docs.google.com/presentation/d/1u05yQQaw4QXLVYGLI6o3YoFHv6eC3YN8
 event: Stanford CS25 — Transformers United, Spring 2024
 duration: "36:30"
 type: transcript
-tags: [scaling-hypothesis, bitter-lesson, transformer-architecture, transcript]
+tags: [scaling-hypothesis, methodology, transformer-architecture, transcript]
 ---
 
 # Shaping the Future of AI from the History of Transformer — Transcript

@@ -3,7 +3,12 @@ title: "Heterogeneous Intelligence"
 type: concept
 created: 2026-05-25
 updated: 2026-05-25
-tags: [concept, inference, optimization, architecture, ai-infrastructure]
+tags:
+  - concept
+  - inference
+  - optimization
+  - architecture
+  - infrastructure
 sources: [raw/articles/2026-05-25_callosum-heterogeneous-intelligence-youtube.md]
 ---
 

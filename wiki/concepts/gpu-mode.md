@@ -8,7 +8,7 @@ created: 2026-04-25
 updated: 2026-05-29
 tags:
   - concept
-  - gpu
+  - hardware
   - community
   - performance-engineering
   - fused-kernels

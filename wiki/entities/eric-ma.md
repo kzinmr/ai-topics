@@ -9,9 +9,8 @@ tags:
   - ai-agents
   - agent-skills
   - data-science
-  - python
+  - developer-tooling
   - bayesian
-  - researcher
   - biotech
   - ai-adoption
   - blogger

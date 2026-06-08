@@ -10,7 +10,7 @@ tags:
   - developer-tooling
   - fine-tuning
   - training
-  - agent-architecture
+  - architecture
   - open-source
 sources:
   - raw/articles/2025-12-04_hf-skills-training.md

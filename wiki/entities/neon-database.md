@@ -3,7 +3,14 @@ title: Neon Database
 created: 2026-06-03
 updated: 2026-06-03
 type: entity
-tags: [company, product, platform, database, serverless, postgres, cloud, infrastructure, open-source]
+tags:
+  - company
+  - product
+  - platform
+  - database
+  - infrastructure
+  - postgres
+  - open-source
 sources:
   - https://neon.com/docs/introduction/branching
 ---

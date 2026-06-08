@@ -9,9 +9,8 @@ tags:
   - harness-engineering
   - anthropic
   - ai-agents
-  - agent-architecture
   - workflow
-  - tool-use
+  - tool
 aliases:
   - building-effective-agents
   - agent-design-patterns

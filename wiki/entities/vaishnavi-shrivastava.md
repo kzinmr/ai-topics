@@ -3,7 +3,12 @@ title: Vaishnavi Shrivastava
 type: person
 created: 2026-05-19
 updated: 2026-05-26
-tags: [person, researcher, microsoft, reinforcement-learning, agent-training, world-models]
+tags:
+  - person
+  - microsoft
+  - reinforcement-learning
+  - agent-training
+  - world-models
 sources:
   - raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models.md
   - raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md

@@ -3,7 +3,12 @@ title: "AXPO (Agent eXplorative Policy Optimization)"
 created: 2026-05-31
 updated: 2026-05-31
 type: concept
-tags: [reinforcement-learning, training, tool-use, optimization, qwen]
+tags:
+  - reinforcement-learning
+  - training
+  - tool
+  - optimization
+  - qwen
 sources:
   - https://arxiv.org/abs/2605.28774
 ---

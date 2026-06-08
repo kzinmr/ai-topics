@@ -5,10 +5,10 @@ created: 2026-05-25
 updated: 2026-05-25
 tags:
   - agent-ontology
-  - knowledge-graph
-  - agent-memory
+  - rag
+  - ai-agents
   - memory-systems
-  - enterprise-ai
+  - company
   - lineage-tracking
   - decision-centric
 sources:

@@ -3,7 +3,24 @@ title: "Shopify"
 created: 2026-05-20
 updated: 2026-06-05
 type: entity
-tags: [company, shopify, ai-adoption, ai-coding, ai-agents, agentic-engineering, coding-agents, claude-code, github-copilot, cursor, mcp, llm-proxy, vibe-coding, infrastructure, developer-experience, internship, career, leadership, product, platform]
+tags:
+  - company
+  - shopify
+  - ai-adoption
+  - coding-agents
+  - ai-agents
+  - agentic-engineering
+  - claude-code
+  - github-copilot
+  - mcp
+  - llm-proxy
+  - infrastructure
+  - developer-experience
+  - internship
+  - career
+  - leadership
+  - product
+  - platform
 sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md, raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--32394213.md, raw/articles/substack.com--app-link-post--2aba2f39.md, transcripts/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
 ---
 

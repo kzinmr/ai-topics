@@ -4,10 +4,10 @@ type: concept
 created: 2026-06-02
 updated: 2026-06-02
 tags:
-  - agentic-search
+  - search
   - durable-execution
   - context-management
-  - agents
+  - ai-agents
   - evaluation
 sources:
   - https://docs.google.com/presentation/d/1EqEXSIjZo-MyA7f7r5nCuzCBrQmY0pA4VHtqayXPr70/edit

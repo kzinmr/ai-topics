@@ -3,7 +3,6 @@ title: "turbopuffer"
 tags:
   - entity
   - service
-  - vector-search
   - search
   - protocol
 created: 2026-05-07

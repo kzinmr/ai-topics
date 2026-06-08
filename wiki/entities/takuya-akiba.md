@@ -5,18 +5,16 @@ updated: 2026-05-28
 type: entity
 tags:
   - person
-  - researcher
   - sakana-ai
   - optuna
   - japan
   - kaggle
   - competitive-programming
-  - deep-learning
-  - distributed-training
+  - model
+  - training
   - evolutionary-algorithms
   - training-efficiency
   - open-source
-  - llm
 sources:
   - https://takiba.net/
   - https://www.s.u-tokyo.ac.jp/en/rigakuru/alumni/gc4Ne8rw/

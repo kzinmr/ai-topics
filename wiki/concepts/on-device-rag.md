@@ -3,7 +3,14 @@ title: On-Device RAG
 created: 2026-06-04
 updated: 2026-06-04
 type: concept
-tags: [rag, on-device, edge-ai, context-compression, retrieval, embeddings, privacy, local-llm]
+tags:
+  - rag
+  - on-device
+  - edge-ai
+  - context-compression
+  - model
+  - privacy
+  - local-llm
 sources:
   - raw/articles/2026-04-15_killingback_unified-model-document-representation-on-device-rag.md
 ---

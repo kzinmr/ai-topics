@@ -7,7 +7,6 @@ tags:
   - company
   - product
   - ai-native
-  - enterprise-ai
   - developer-tooling
 aliases:
   - Notion Labs

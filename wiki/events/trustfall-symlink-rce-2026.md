@@ -3,7 +3,7 @@ title: TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 created: 2026-05-27
 updated: 2026-05-27
 type: event
-tags: [agent-security, security, coding-agents, prompt-injection, event, vulnerability, supply-chain, mcp, claude-code, cursor, github-copilot, gemini, antigravity, grok]
+tags: [agent-safety, security, coding-agents, agent-safety, event, vulnerability, supply-chain, mcp, claude-code, coding-agents, github-copilot, google, antigravity, model]
 sources: [raw/articles/adversa-ai-trustfall-2026.md, raw/articles/adversa-ai-symjack-2026.md, raw/articles/securityweek-symjack-2026.md]
 ---
 

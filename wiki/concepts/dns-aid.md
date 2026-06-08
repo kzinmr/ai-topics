@@ -3,7 +3,13 @@ title: DNS-AID
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [concept, protocol, infrastructure, ai-agents, mcp, security, agent-infrastructure]
+tags:
+  - concept
+  - protocol
+  - infrastructure
+  - ai-agents
+  - mcp
+  - security
 sources: [raw/articles/2026-05-27_linux-foundation-dns-aid.md]
 ---
 

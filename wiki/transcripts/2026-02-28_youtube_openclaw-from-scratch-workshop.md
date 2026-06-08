@@ -7,7 +7,7 @@ date: 2026-02-28
 duration: "96:39"
 url: https://www.youtube.com/watch?v=dDQ4rKXeHRw
 type: transcript
-tags: [agent-harness, self-improving, openclaw, transcript]
+tags: [harness-engineering, self-improving, openclaw, transcript]
 ---
 
 # Building Your Own OpenClaw from Scratch — Transcript

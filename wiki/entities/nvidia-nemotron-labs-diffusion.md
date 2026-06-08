@@ -3,7 +3,15 @@ title: NVIDIA Nemotron-Labs-Diffusion
 created: 2026-05-21
 updated: 2026-05-21
 type: entity
-tags: [model, nvidia, text-generation, multimodal, vlm, inference, optimization, open-source, speculative-decoding]
+tags:
+  - model
+  - nvidia
+  - text-generation
+  - multimodal
+  - vlm
+  - inference
+  - optimization
+  - open-source
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md]
 ---
 

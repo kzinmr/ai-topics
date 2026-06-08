@@ -3,7 +3,13 @@ title: EAGLE 3.1
 created: 2026-05-28
 updated: 2026-05-28
 type: concept
-tags: [concept, speculative-decoding, inference, optimization, vllm, torchspec, benchmark]
+tags:
+  - concept
+  - inference
+  - optimization
+  - vllm
+  - torchspec
+  - benchmark
 sources:
   - raw/articles/2026-05-26_vllm_eagle-3-1.md
   - https://vllm.ai/blog/2026-05-26-eagle-3-1

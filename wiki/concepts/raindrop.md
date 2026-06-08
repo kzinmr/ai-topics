@@ -7,7 +7,6 @@ tags:
   - infrastructure
   - evaluation
   - comparison
-  - agent-evaluation
 aliases:
   - raindrop-ai
   - raindrop-monitoring

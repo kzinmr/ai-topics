@@ -9,7 +9,6 @@ tags:
   - mcp
   - developer-tooling
   - ai-agents
-  - enterprise-ai
 sources:
   - https://www.merge.dev/blog/github-mcp-cursor
   - https://www.merge.dev/blog/trello-mcp-cursor

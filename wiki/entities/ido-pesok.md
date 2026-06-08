@@ -5,8 +5,7 @@ updated: 2026-06-08
 type: entity
 tags:
   - person
-  - founder
-  - ai-infrastructure
+  - infrastructure
   - verification
   - agentic-engineering
   - coding-agents

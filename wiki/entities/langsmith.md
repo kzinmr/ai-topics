@@ -8,7 +8,7 @@ tags:
   - langchain
   - developer-tooling
   - evaluation
-  - observability
+  - infrastructure
   - mlops
 aliases:
   - LangSmith Engine

@@ -3,7 +3,15 @@ title: Seirênes (Adversarial Self-Play for LLM Reasoning)
 created: 2026-05-21
 updated: 2026-05-21
 type: concept
-tags: [concept, reasoning, reinforcement-learning, adversarial, training, grpo, robustness, self-play, evaluation]
+tags:
+  - concept
+  - reasoning
+  - reinforcement-learning
+  - agent-safety
+  - training
+  - robustness
+  - self-play
+  - evaluation
 sources: [raw/articles/2026-05-21_seirenes.md]
 ---
 

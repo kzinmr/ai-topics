@@ -7,7 +7,7 @@ date: 2026-03-28
 duration: "89:34"
 url: https://www.youtube.com/watch?v=LUfqQgz1-Os
 type: transcript
-tags: [deep-research, subagents, planning-agent, transcript]
+tags: [deep-research, ai-agents, planning-agent, transcript]
 ---
 
 # Build Your Own Deep Research Agent — Transcript

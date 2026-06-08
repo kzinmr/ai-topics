@@ -3,7 +3,12 @@ title: "Tool Use Examples — Semantic Conventions Beyond Schema"
 type: concept
 created: 2026-06-02
 updated: 2026-06-02
-tags: [tool-use, mcp, context-engineering, prompting, agent-harness]
+tags:
+  - tool
+  - mcp
+  - context-engineering
+  - prompting
+  - harness-engineering
 aliases: [input-examples, tool-semantic-layer, usage-pattern-specification, schema-plus-examples]
 related: [concepts/advanced-tool-use, concepts/tool-search-tool, concepts/programmatic-tool-calling, concepts/rlm-recursive-language-models, concepts/code-execution-with-mcp, concepts/dspy-rlm]
 sources:

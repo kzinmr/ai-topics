@@ -3,7 +3,11 @@ title: "Chan Zuckerberg Initiative (CZI)"
 created: 2026-05-31
 updated: 2026-05-31
 type: entity
-tags: [company, open-source, biology, research]
+tags:
+  - company
+  - open-source
+  - biology
+  - lab
 sources:
   - https://www.scientificamerican.com/article/new-protein-folding-ai-vastly-expands-on-alphafolds-efforts/
 ---

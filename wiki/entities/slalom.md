@@ -5,9 +5,7 @@ created: 2026-05-25
 updated: 2026-05-26
 tags:
   - company
-  - consulting
   - ai-consulting
-  - enterprise-ai
 sources:
   - https://www.slalom.com/
   - https://en.wikipedia.org/wiki/Slalom_Inc

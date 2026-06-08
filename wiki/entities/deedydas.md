@@ -4,7 +4,14 @@ handle: "@deedydas"
 type: entity
 created: 2026-05-25
 updated: 2026-05-25
-tags: [person, vc, meta-harness, agentic-engineering, coding-agents, investor, ai-adoption, ai-product]
+tags:
+  - person
+  - company
+  - meta-harness
+  - agentic-engineering
+  - coding-agents
+  - ai-adoption
+  - ai-product
 aliases: ["deedydas", "Deedy"]
 sources:
   - https://x.com/deedydas

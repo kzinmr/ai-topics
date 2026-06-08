@@ -5,8 +5,7 @@ created: 2026-05-19
 updated: 2026-05-19
 tags:
   - search
-  - information-retrieval
-  - embeddings
+  - model
   - lexical-search
 sources:
   - raw/articles/2021-11-01_daniel-tunkelang_what-is-content-understanding.md

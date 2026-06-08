@@ -6,11 +6,8 @@ type: entity
 tags:
   - person
   - ai-agents
-  - autonomous-agents
-  - agent-architecture
-  - agent-memory
+  - architecture
   - open-source
-  - entrepreneur
   - self-improving
   - x-account
 sources:

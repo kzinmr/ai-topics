@@ -7,10 +7,8 @@ tags:
   - search
   - ai-agents
   - deep-research
-  - embeddings
+  - model
   - training
-  - information-retrieval
-  - agentic-search
   - rag
   - benchmark
   - methodology

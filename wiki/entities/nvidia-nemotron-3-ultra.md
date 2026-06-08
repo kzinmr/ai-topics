@@ -9,7 +9,6 @@ tags:
   - nvidia
   - ai-agents
   - inference
-  - llm
 aliases: [Nemotron 3 Ultra, Nemotron-3-Ultra]
 sources:
   - raw/newsletters/2026-06-05-ainews-not-much-happened-today.md

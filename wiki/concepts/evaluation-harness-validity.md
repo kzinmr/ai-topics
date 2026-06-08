@@ -5,8 +5,8 @@ created: 2026-05-30
 updated: 2026-05-30
 tags:
   - evaluation
-  - agent-harness
-  - ai-safety
+  - harness-engineering
+  - agent-safety
   - benchmark
   - openai
 sources:

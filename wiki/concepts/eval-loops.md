@@ -9,8 +9,7 @@ tags:
   - feedback-loop
   - quality-assurance
   - ai-slop
-  - hermes-agent
-  - llm-as-judge
+  - ai-agents
 aliases: ["AI eval loops", "eval-loop", "AI quality gate", "AI output testing"]
 related:
   - concepts/ai-slop

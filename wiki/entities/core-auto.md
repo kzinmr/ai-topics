@@ -6,11 +6,10 @@ type: entity
 tags:
   - company
   - lab
-  - ai-research
   - self-play
-  - gpu
+  - hardware
   - reward-hacking
-  - ai-infrastructure
+  - infrastructure
   - non-transformer
 aliases:
   - "Core Automation"

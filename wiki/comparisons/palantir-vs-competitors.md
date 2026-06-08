@@ -6,7 +6,7 @@ updated: 2026-05-25
 tags:
   - comparison
   - palantir
-  - enterprise-ai
+  - company
   - decision-centric
   - platform
   - databricks

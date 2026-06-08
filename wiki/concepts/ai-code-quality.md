@@ -5,7 +5,7 @@ created: 2026-04-25
 updated: 2026-05-26
 tags:
   - concept
-  - ai-coding
+  - coding-agents
   - code-quality
   - software-engineering
   - developer-tooling

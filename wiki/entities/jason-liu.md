@@ -7,15 +7,12 @@ updated: 2026-06-03
 tags:
   - person
   - x-account
-  - ai
+  - model
   - structured-outputs
-  - pydantic
-  - instructor
-  - llm-engineering
-  - developer-tools
+  - developer-tooling
   - rag
   - context-engineering
-  - evals
+  - evaluation
 sources: []
 ---
 

@@ -9,14 +9,12 @@ tags:
   - concept
   - product
   - platform
-  - ai-infrastructure
-  - information-retrieval
-  - agentic-search
+  - infrastructure
+  - search
   - agentic-retrieval
   - open-source
-  - search
   - deep-research
-  - cost-optimization
+  - optimization
   - performance-engineering
 sources:
   - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md

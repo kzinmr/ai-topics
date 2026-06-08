@@ -3,7 +3,12 @@ title: "Recursive Superintelligence"
 created: 2026-06-01
 updated: 2026-06-01
 type: entity
-tags: [company, ai-research, recursive-self-improvement, training, automation]
+tags:
+  - company
+  - lab
+  - recursive-self-improvement
+  - training
+  - automation
 sources:
   - raw/articles/2026-06-01_active-crawl-probe-prefill-mythos-autoscientist-rsi.md
   - https://techcrunch.com/2026/05/28/rsi-is-the-new-agi-and-its-just-as-hard-to-pin-down/

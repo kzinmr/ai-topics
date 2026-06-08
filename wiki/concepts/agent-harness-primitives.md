@@ -6,7 +6,7 @@ type: concept
 tags:
   - training
   - framework
-  - design-patterns
+  - methodology
 sources: [raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/2026-04-25-harness-engineering-era-3.md]
 ---
 

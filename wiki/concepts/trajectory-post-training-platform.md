@@ -3,7 +3,13 @@ title: "Trajectory — Post-Training Platform"
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [concept, training, post-training, inference, platform, fine-tuning, ai-agents]
+tags:
+  - concept
+  - training
+  - inference
+  - platform
+  - fine-tuning
+  - ai-agents
 sources: [raw/newsletters/2026-05-28-ainews-cognition-raises-1b-in-26b-series-d.md]
 ---
 

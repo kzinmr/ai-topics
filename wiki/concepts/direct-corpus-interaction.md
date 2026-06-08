@@ -5,15 +5,13 @@ updated: 2026-05-29
 type: concept
 tags:
   - direct-corpus-interaction
-  - agentic-search
-  - information-retrieval
+  - search
   - lexical-search
   - coding-agents
   - ai-agents
-  - tool-use
+  - tool
   - benchmark
   - terminal
-  - search
 aliases:
   - DCI
   - grep-based retrieval

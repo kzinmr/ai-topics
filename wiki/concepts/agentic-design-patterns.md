@@ -5,7 +5,7 @@ updated: 2026-04-25
 type: concept
 tags:
   - framework
-  - design-patterns
+  - methodology
   - architecture
 sources: [raw/articles/2026-04-25-agentic-design-patterns-arxiv.md]
 ---

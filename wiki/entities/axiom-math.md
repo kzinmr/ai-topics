@@ -7,7 +7,7 @@ tags:
   - entity
   - company
   - formal-methods
-  - ai-safety
+  - agent-safety
   - reinforcement-learning
 sources:
   - path: raw/newsletters/2026-06-03-scaling-past-informal-ai-carina-hong-axiom-math.md

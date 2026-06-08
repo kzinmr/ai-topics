@@ -10,8 +10,7 @@ tags:
   - concept
   - agentic-engineering
   - cognition
-  - devin
-  - code-review
+  - coding-agents
   - automation
 related:
   - "[[cognition-devin-philosophy]]"

@@ -7,7 +7,7 @@ source: YouTube (OpenAI)
 url: https://www.youtube.com/watch?v=9jgcT0Fqt7U
 type: transcript
 duration: "31:28"
-tags: [openclaw, codex, agentic-engineering, transcript]
+tags: [openclaw, coding-agents, agentic-engineering, transcript]
 ---
 
 # Builders Unscripted: Ep. 1 — Peter Steinberger — Transcript

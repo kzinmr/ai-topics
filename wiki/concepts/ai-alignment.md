@@ -7,7 +7,7 @@ created: 2026-04-25
 updated: 2026-05-19
 tags:
   - alignment
-  - ai-safety
+  - agent-safety
   - governance
   - ethics
   - philosophy

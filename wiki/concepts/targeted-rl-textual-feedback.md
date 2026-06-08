@@ -5,12 +5,10 @@ created: 2026-06-05
 updated: 2026-06-05
 tags:
   - reinforcement-learning
-  - rlhf
+  - fine-tuning
   - training
   - model-training
-  - cursor
-  - synthetic-data
-  - distillation
+  - coding-agents
 sources:
   - raw/articles/2026-06-05_cursor_composer-2-5.md
 related:

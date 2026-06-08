@@ -6,11 +6,10 @@ updated: 2026-06-04
 tags:
   - memory-systems
   - openai
-  - chatgpt
   - architecture
   - context-engineering
   - ai-agents
-  - knowledge-graph
+  - rag
 sources:
   - https://openai.com/index/chatgpt-memory-dreaming/
   - raw/articles/2026-06-04_openai_chatgpt-memory-dreaming.md

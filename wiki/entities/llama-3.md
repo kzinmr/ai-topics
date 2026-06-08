@@ -3,7 +3,22 @@ title: Llama 3
 created: 2026-05-19
 updated: 2026-05-19
 type: entity
-tags: [model, llm, text-generation, open-source, meta, training, post-training, alignment, multimodal, vlm, voice-ai, scaling, dpo, rlhf, benchmark, evaluation, ai-safety, tool-use, synthetic-data]
+tags:
+  - model
+  - text-generation
+  - open-source
+  - methodology
+  - training
+  - alignment
+  - multimodal
+  - vlm
+  - voice-ai
+  - optimization
+  - fine-tuning
+  - benchmark
+  - evaluation
+  - agent-safety
+  - tool
 aliases: [Llama 3.1, Llama 3 Herd of Models]
 sources:
   - raw/papers/2024-07-23_2407.21783_llama-3-herd-of-models.md

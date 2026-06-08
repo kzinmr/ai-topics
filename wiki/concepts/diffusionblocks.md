@@ -6,13 +6,12 @@ type: concept
 tags:
   - diffusion
   - training-efficiency
-  - memory-efficiency
+  - optimization
   - score-matching
   - transformers
   - residual-networks
   - block-wise-training
   - training
-  - optimization
 sources:
   - wiki/raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training.md
   - https://arxiv.org/abs/2506.14202

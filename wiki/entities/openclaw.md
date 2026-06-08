@@ -17,7 +17,19 @@ sources:
   - raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom.md
   - raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md
   - https://x.com/i/article/2059652660022910976
-tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration, memory-systems, china, agent-security, mem0]
+tags:
+  - entity
+  - framework
+  - local-llm
+  - open-source
+  - agent-communication
+  - architecture
+  - orchestration
+  - memory-systems
+  - china
+  - agent-safety
+  - mem0
+
 ---
 
 # OpenClaw

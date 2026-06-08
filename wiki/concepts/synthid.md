@@ -6,11 +6,11 @@ type: concept
 tags:
   - concept
   - google
-  - ai-safety
+  - agent-safety
   - content-quality
   - ethics
   - governance
-  - ai
+  - model
   - inference
 sources:
   - raw/articles/2026-05-27_google-synthid-c2pa-expansion.md

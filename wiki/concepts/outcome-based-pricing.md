@@ -4,11 +4,11 @@ type: concept
 created: 2026-05-25
 updated: 2026-06-04
 tags:
-  - pricing
+  - economics
   - business-model
   - ai-agents
-  - enterprise-ai
-  - saas
+  - company
+  - product
 sources:
   - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
   - raw/articles/sierra.ai--blog-outcomemaxxing--0bc34aec.md

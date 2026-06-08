@@ -6,7 +6,7 @@ source: YouTube
 url: https://www.youtube.com/watch?v=UXQ916WRK0A
 type: transcript
 duration: "54:49"
-tags: [agentic-search, rag, information-retrieval, transcript]
+tags: [search, rag, search, transcript]
 ---
 
 # RAG is the What. Agentic Search is the How. — Transcript

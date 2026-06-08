@@ -11,8 +11,7 @@ tags:
   - ai-agents
   - self-improving
   - gepa
-  - post-training
-  - synthetic-data
+  - training
   - hybrid-reasoning
 sources:
   - "https://nousresearch.com/"

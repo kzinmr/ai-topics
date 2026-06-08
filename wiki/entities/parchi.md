@@ -12,7 +12,6 @@ tags:
   - ai-agents
   - open-source
   - developer-tooling
-  - browser-automation
 sources:
   - https://github.com/0xSero/parchi
   - https://parchi.ai/

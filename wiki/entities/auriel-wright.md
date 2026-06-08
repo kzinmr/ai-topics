@@ -6,7 +6,7 @@ type: entity
 tags:
   - person
   - reinforcement-learning
-  - generative-ai
+  - model
   - training
   - evaluation
   - harness-engineering

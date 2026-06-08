@@ -8,9 +8,8 @@ tags:
   - developer-tooling
   - product-management
   - code-intelligence
-  - performance
-  - local-first
-  - code-review
+  - optimization
+  - coding-agents
 aliases: ["Linear.app"]
 sources:
   - https://linear.app

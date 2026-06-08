@@ -3,7 +3,16 @@ title: Agent Executor
 created: 2026-05-24
 updated: 2026-05-24
 type: concept
-tags: [ai-agents, infrastructure, open-source, google, agent-runtime, durable-execution, orchestration, sandbox, kubernetes]
+tags:
+  - ai-agents
+  - infrastructure
+  - open-source
+  - google
+  - agent-runtime
+  - durable-execution
+  - orchestration
+  - sandbox
+  - developer-tooling
 sources: [raw/articles/2026-05-20_google-agent-executor.md]
 ---
 

@@ -5,9 +5,8 @@ updated: 2026-05-21
 type: concept
 tags:
   - concept
-  - ai-infrastructure
-  - cloud
-  - devops
+  - infrastructure
+  - developer-tooling
   - automation
 aliases: []
 sources:

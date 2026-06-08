@@ -5,11 +5,11 @@ created: 2026-05-28
 updated: 2026-05-28
 tags:
   - methodology
-  - agent-evaluation
+  - evaluation
   - probabilistic-systems
   - comparison
   - survey
-  - reliability
+  - infrastructure
 aliases:
   - practice-evolution
   - eval-practices-portal

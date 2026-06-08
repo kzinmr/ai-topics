@@ -5,16 +5,13 @@ updated: 2026-05-19
 type: entity
 tags:
   - entity
-  - cloudflare
+  - company
   - sandbox
-  - managed-agents
   - ai-agents
-  - agent-architecture
-  - agent-security
+  - architecture
+  - agent-safety
   - infrastructure
-  - ai-infrastructure
-  - browser-automation
-  - serverless
+  - browser-agent
   - virtualization
   - agent-sdk
   - security

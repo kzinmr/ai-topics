@@ -3,7 +3,16 @@ title: Project Lightwell
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [concept, security, open-source, infrastructure, company, governance, supply-chain, ibm, ai-safety]
+tags:
+  - concept
+  - security
+  - open-source
+  - infrastructure
+  - company
+  - governance
+  - supply-chain
+  - ibm
+  - agent-safety
 sources: [raw/articles/2026-05-28_ibm-redhat-project-lightwell.md]
 ---
 

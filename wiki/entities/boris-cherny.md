@@ -6,13 +6,13 @@ updated: 2026-06-03
 tags:
   - person
   - x-account
-  - ai
+  - model
   - coding-agents
   - claude-code
   - openai
-  - typescript
+  - developer-tooling
   - anthropic
-  - meta
+  - methodology
 sources: []
 ---
 

@@ -5,9 +5,8 @@ updated: 2026-05-27
 type: concept
 tags:
   - ai-agents
-  - agentic-search
-  - harness-engineering
   - search
+  - harness-engineering
   - coding-agents
 aliases:
   - agent-guidance

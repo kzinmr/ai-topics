@@ -8,7 +8,7 @@ tags:
   - anthropic
   - model
   - coding-agents
-  - agent-orchestration
+  - orchestration
   - workflow
   - test-time-scaling
   - agent-communication

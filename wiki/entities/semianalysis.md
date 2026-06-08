@@ -3,7 +3,11 @@ title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
 updated: 2026-05-29
-tags: [ai-research, gpu, economics, reliability, ai-infrastructure]
+tags:
+  - lab
+  - hardware
+  - economics
+  - infrastructure
 aliases: [semianalysis-research]
 related:
   - [[entities/dylan-patel]]

@@ -3,7 +3,15 @@ title: "Retrieve, Merge, Predict (Table Augmentation Pipeline)"
 created: 2026-06-03
 updated: 2026-06-03
 type: concept
-tags: [automl, feature-engineering, data-lakes, information-retrieval, datasets, benchmark, data-science, data-integration]
+tags:
+  - automl
+  - infrastructure
+  - data-lakes
+  - search
+  - datasets
+  - benchmark
+  - data-science
+  - data-integration
 sources: [raw/articles/retrieve-merge-predict.md]
 ---
 

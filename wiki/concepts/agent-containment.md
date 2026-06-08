@@ -9,7 +9,6 @@ tags:
   - sandbox
   - isolation
   - security
-  - prompt-injection
   - anthropic
   - ai-agents
 sources:

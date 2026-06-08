@@ -9,7 +9,6 @@ tags:
   - ai-agents
   - open-source
   - product
-  - agent-framework
   - context-engineering
 aliases:
   - mem0ai

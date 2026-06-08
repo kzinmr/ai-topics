@@ -7,9 +7,9 @@ tags:
   - person
   - open-source
   - web-development
-  - performance
+  - optimization
   - ai-agents
-  - code-review
+  - coding-agents
 aliases:
   - nolanlawson
   - Read the Tea Leaves

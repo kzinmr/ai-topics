@@ -19,13 +19,10 @@ quote_count: 11
 status: complete
 tags:
   - person
-  - ai
+  - model
   - evaluation
-  - llm
   - huggingface
-  - benchmarks
-  - lighteval
-  - gaia
+  - benchmark
 sources: []
 ---
 

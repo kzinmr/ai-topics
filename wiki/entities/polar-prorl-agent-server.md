@@ -6,10 +6,10 @@ type: entity
 tags:
   - nvidia
   - reinforcement-learning
-  - grpo
+  - training
   - agent-training
-  - agent-infrastructure
-  - agent-harness
+  - ai-agents
+  - harness-engineering
   - coding-agents
   - infrastructure
   - llm-proxy

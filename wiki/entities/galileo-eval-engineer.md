@@ -7,10 +7,8 @@ tags:
   - evaluation
   - coding-agents
   - claude-code
-  - codex
-  - agent-evaluation
   - agent-skills
-  - observability
+  - infrastructure
   - developer-tooling
 sources:
   - raw/articles/2026-05-19_galileo_eval-engineer-for-claude-codex.md

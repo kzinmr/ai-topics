@@ -8,7 +8,7 @@ tags:
   - coding-agents
   - tool
   - voice-ai
-  - apple-silicon
+  - hardware
 aliases: []
 sources:
   - raw/newsletters/2026-05-20-clicky.md

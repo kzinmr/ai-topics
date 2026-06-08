@@ -9,7 +9,7 @@ tags:
   - ai-agents
   - agent-skills
   - education
-  - podcast
+  - writing
   - content-creator
 sources:
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md

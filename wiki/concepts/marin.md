@@ -13,8 +13,7 @@ tags:
   - stanford
   - model-training
   - framework
-  - pretraining
-  - llm
+  - model
 sources:
   - raw/articles/2026-06-07_eliebakouch_marin.md
 ---

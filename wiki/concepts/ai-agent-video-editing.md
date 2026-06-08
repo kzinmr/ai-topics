@@ -7,7 +7,7 @@ tags:
   - concept
   - ai-agents
   - coding-agents
-  - tool-use
+  - tool
   - agent-skills
   - multimodal
 sources:

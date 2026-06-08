@@ -12,11 +12,10 @@ aliases:
 tags:
   - person
   - content-creator
-  - hermes-agent
-  - agent-architecture
+  - ai-agents
+  - architecture
   - ai-product
-  - startup
-  - entrepreneur
+  - company
 sources:
   - raw/articles/2026-05-15_shann_hermes-agent-operator.md
   - "https://x.com/i/article/2055317817658900480"

@@ -9,10 +9,7 @@ tags:
   - entity
   - model
   - search
-  - information-retrieval
-  - embeddings
   - multi-vector
-  - colbert
   - late-interaction
 aliases:
   - Single-Vector Embeddings

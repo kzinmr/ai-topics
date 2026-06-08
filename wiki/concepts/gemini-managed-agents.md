@@ -8,14 +8,13 @@ created: 2026-05-29
 updated: 2026-05-29
 tags:
   - concept
-  - managed-agents
+  - ai-agents
   - antigravity
-  - gemini
   - google
   - coding-agents
   - agent-runtime
   - sandbox
-  - api
+  - developer-tooling
 sources:
   - raw/articles/ai.google.dev--managed-agents-quickstart--2026-05-29.md
   - https://ai.google.dev/gemini-api/docs/managed-agents-quickstart

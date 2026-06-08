@@ -8,9 +8,8 @@ tags:
   - data-science
   - ai-agents
   - bayesian
-  - agent-orchestration
-  - verification
   - orchestration
+  - verification
 sources:
   - raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md
 ---

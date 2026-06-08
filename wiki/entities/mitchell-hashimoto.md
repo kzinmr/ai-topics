@@ -9,17 +9,12 @@ status: L3
 tags:
   - person
   - x-account
-  - ai
+  - model
   - agentic-engineering
   - harness-engineering
-  - ghostty
-  - zig
-  - hashicorp
-  - terraform
-  - terminal-emulator
-  - building-block-economy
-  - libghostty
-  - vibe-coding
+  - developer-tooling
+  - company
+  - coding-agents
 sources: []
 ---
 

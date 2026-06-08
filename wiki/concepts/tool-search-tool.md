@@ -3,7 +3,13 @@ title: "Tool Search Tool — On-Demand Tool Discovery via Progressive Disclosure
 type: concept
 created: 2026-06-02
 updated: 2026-06-02
-tags: [tool-use, mcp, context-engineering, token-economics, agent-harness, progressive-disclosure]
+tags:
+  - tool
+  - mcp
+  - context-engineering
+  - token-economics
+  - harness-engineering
+  - progressive-disclosure
 aliases: [deferred-tool-loading, on-demand-tool-discovery]
 related: [concepts/advanced-tool-use, concepts/code-execution-with-mcp, concepts/code-mode, concepts/programmatic-tool-calling, concepts/context-engineering, concepts/agentic-search]
 sources:

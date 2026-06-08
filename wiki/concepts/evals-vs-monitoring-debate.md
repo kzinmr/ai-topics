@@ -4,12 +4,10 @@ type: concept
 created: 2026-05-28
 updated: 2026-05-28
 tags:
-  - agent-evaluation
   - evaluation
   - methodology
   - controversy
-  - observability
-  - monitoring
+  - infrastructure
 aliases:
   - evals-are-dead
   - evals-vs-ab-testing

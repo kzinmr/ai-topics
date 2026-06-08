@@ -3,7 +3,15 @@ title: AI-Generated Issues in Open Source
 created: 2026-05-25
 updated: 2026-05-25
 type: concept
-tags: [ai-agents, open-source, content-quality, ai-safety, software-engineering, ai-automation, agent-safety, governance, community]
+tags:
+  - ai-agents
+  - open-source
+  - content-quality
+  - agent-safety
+  - software-engineering
+  - ai-automation
+  - governance
+  - community
 sources: [raw/articles/2026-05-24_lucumr_building-pi-with-pi.md]
 aliases: [slop-issues]
 ---

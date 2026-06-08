@@ -5,9 +5,8 @@ created: 2026-06-08
 updated: 2026-06-08
 tags:
   - training
-  - distillation
   - failure-modes
-  - research
+  - lab
 aliases:
   - OPD failure modes
   - distillation failure modes

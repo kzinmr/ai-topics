@@ -3,7 +3,14 @@ title: Pointer
 created: 2026-05-29
 updated: 2026-05-29
 type: entity
-tags: [entity, company, open-source, computer-use, ai-agents, agent-harness, agent-architecture, browser-automation]
+tags:
+  - entity
+  - company
+  - open-source
+  - ai-agents
+  - harness-engineering
+  - architecture
+  - browser-agent
 sources: [raw/articles/2026-05-26_pointer-osworld-sota.md]
 ---
 

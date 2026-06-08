@@ -19,11 +19,9 @@ sources:
   - https://github.com/HypothesisWorks/hypothesis
 tags:
   - person
-  - opinion-leader
-  - property-based-testing
+  - developer-tooling
   - evaluation
   - coding-agents
-  - software-correctness
 
 ---
 

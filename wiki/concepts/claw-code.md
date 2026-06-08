@@ -10,7 +10,7 @@ tags:
   - multi-agent
   - developer-tooling
   - agent-coordination
-  - autonomous-agents
+  - ai-agents
 aliases: ["claw-code", "claw CLI", "UltraWorkers claw"]
 sources:
   - raw/articles/2026-05-03_claw-code-overview.md

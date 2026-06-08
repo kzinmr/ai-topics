@@ -7,8 +7,7 @@ tags:
   - concept
   - philosophy
   - memetics
-  - epistemology
-  - knowledge-management
+  - information-retrieval
 aliases:
   - representation-collapse-moc
   - baudrillard-moc

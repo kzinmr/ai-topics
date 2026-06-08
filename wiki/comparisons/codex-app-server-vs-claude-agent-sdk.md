@@ -5,9 +5,8 @@ updated: 2026-05-27
 type: comparison
 tags:
   - protocol
-  - agent-architecture
+  - architecture
   - coding-agents
-  - codex
   - openai
   - anthropic
   - comparison

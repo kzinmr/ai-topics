@@ -8,7 +8,6 @@ updated: 2026-06-05
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 5, 13), 'notes': "Added Privacy Engineering + Agent Harness Engineering sections from 2026 content"}
 tags:
   - person
-  - agent-harness
   - harness-engineering
   - data-science
   - mlops

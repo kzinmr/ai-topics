@@ -3,7 +3,10 @@ title: "Pointer AI"
 created: 2026-05-31
 updated: 2026-05-31
 type: entity
-tags: [company, computer-use, open-source, agents]
+tags:
+  - company
+  - ai-agents
+  - open-source
 sources:
   - https://www.pointer.ai/blog/sota
 ---

@@ -7,7 +7,7 @@ tags:
   - person
   - anthropic
   - claude-code
-  - managed-agents
+  - ai-agents
   - agent-runtime
   - sandbox
   - developer-experience

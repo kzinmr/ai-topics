@@ -9,7 +9,6 @@ tags:
   - memory-systems
   - company
   - context-management
-  - enterprise-ai
 aliases: ["ashwingop", "Ashwin Gopinath", "AG"]
 sources:
   - https://nanothoughts.substack.com/p/memory-is-state-not-a-service

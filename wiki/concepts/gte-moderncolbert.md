@@ -3,7 +3,15 @@ title: "GTE-ModernColBERT"
 type: concept
 created: 2026-06-08
 updated: 2026-06-08
-tags: [colbert, late-interaction, multi-vector, retrieval, distillation, open-source, embeddings, information-retrieval, model, beir]
+tags:
+  - search
+  - late-interaction
+  - multi-vector
+  - rag
+  - training
+  - open-source
+  - model
+  - beir
 sources:
   - raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate.md
 related:

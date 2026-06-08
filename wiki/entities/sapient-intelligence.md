@@ -3,7 +3,15 @@ title: Sapient Intelligence
 created: 2026-05-19
 updated: 2026-05-19
 type: entity
-tags: [company, ai-research, reasoning, open-source, non-transformer, edge-ai, agi, china, startup]
+tags:
+  - company
+  - lab
+  - reasoning
+  - open-source
+  - non-transformer
+  - edge-ai
+  - agi
+  - china
 sources: [raw/articles/2026-05-18_sapient-intelligence-hrm-text.md, https://www.prnewswire.com/news-releases/sapient-intelligence-launches-hrm-text-challenging-the-llm-monopoly-with-a-brain-inspired-foundation-model-trained-on-up-to-1000x-fewer-tokens-302774638.html]
 ---
 

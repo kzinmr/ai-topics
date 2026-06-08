@@ -6,7 +6,7 @@ source: YouTube
 url: https://www.youtube.com/watch?v=USmG-RXYzd8
 type: transcript
 duration: "67:31"
-tags: [hermes-agent, cloudflare, modal, agent-infrastructure, transcript]
+tags: [ai-agents, company, modal, ai-agents, transcript]
 ---
 
 # Deploy a Hermes Agent — Matt Palmer — Transcript

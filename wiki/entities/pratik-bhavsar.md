@@ -11,9 +11,8 @@ tags:
   - rag
   - coding-agents
   - claude-code
-  - codex
   - agent-skills
-  - continual-learning
+  - training
 sources:
   - raw/articles/2026-05-19_galileo_eval-engineer-for-claude-codex.md
   - raw/articles/2026-04-08_pratik-bhavsar-continual-learning-without-evals.md

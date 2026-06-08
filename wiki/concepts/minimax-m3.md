@@ -6,9 +6,7 @@ type: concept
 tags:
   - model
   - multimodal
-  - mixture-of-experts
-  - sparse-attention
-  - long-context
+  - context-management
   - inference
 aliases:
   - "MiniMax-M3"

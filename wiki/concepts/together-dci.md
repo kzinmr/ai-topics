@@ -5,10 +5,10 @@ created: 2026-05-10
 updated: 2026-06-03
 tags:
   - inference
-  - gpu
+  - hardware
   - huggingface
-  - serverless
-  - docker
+  - infrastructure
+  - developer-tooling
   - workflow
 sources:
   - https://www.together.ai/blog/deploy-and-inference-any-model-from-huggingface

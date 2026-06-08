@@ -6,8 +6,6 @@ updated: 2026-06-03
 tags:
   - person
   - pseudonymous
-  - ai-researcher
-  - researcher
   - training
   - reasoning
 aliases:

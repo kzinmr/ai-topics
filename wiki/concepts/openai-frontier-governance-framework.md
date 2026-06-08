@@ -3,7 +3,14 @@ title: OpenAI Frontier Governance Framework
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [ai-safety, ai-governance, governance, regulation, policy, openai, transparency]
+tags:
+  - agent-safety
+  - ai-governance
+  - governance
+  - regulation
+  - policy
+  - openai
+  - transparency
 sources: [https://openai.com/index/openai-frontier-governance-framework]
 ---
 

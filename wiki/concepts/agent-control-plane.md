@@ -4,19 +4,17 @@ type: concept
 created: 2026-05-25
 updated: 2026-05-25
 tags:
-  - agent-infrastructure
-  - control-plane
   - ai-agents
-  - enterprise-ai
+  - control-plane
+  - company
   - governance
   - audit
   - security
-  - monitoring
+  - infrastructure
   - multi-tenancy
   - agent-identity
   - agent-governance
-  - cost-optimization
-  - observability
+  - optimization
 sources:
   - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
 related:

@@ -9,7 +9,6 @@ tags:
   - open-source
   - fine-tuning
   - training
-  - enterprise-ai
 aliases:
   - Fireworks
   - Fireworks AI Inc.

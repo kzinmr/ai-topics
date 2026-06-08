@@ -3,7 +3,14 @@ title: "@cyrilxbt"
 created: 2026-05-27
 updated: 2026-05-27
 type: entity
-tags: [person, content-creator, obsidian, claude-code, mcp, knowledge-management, x-account]
+tags:
+  - person
+  - content-creator
+  - obsidian
+  - claude-code
+  - mcp
+  - information-retrieval
+  - x-account
 sources:
   - raw/articles/2026-05-24_cyrilxbt_obsidian-vault-organization-guide.md
   - https://x.com/cyrilxbt

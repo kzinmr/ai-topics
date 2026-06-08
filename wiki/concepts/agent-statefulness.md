@@ -5,19 +5,18 @@ updated: 2026-05-19
 type: concept
 tags:
   - ai-agents
-  - agent-architecture
+  - architecture
   - memory-systems
-  - agent-memory
   - state-management
-  - filesystem
+  - developer-tooling
   - context-engineering
   - token-economics
-  - design-patterns
+  - methodology
   - agent-runtime
   - infrastructure
   - durable-execution
   - event-sourcing
-  - knowledge-graph
+  - rag
   - self-improving
   - philosophy
 aliases: [agent-state-management, filesystem-as-context, agent-persistence, stateful-agents]

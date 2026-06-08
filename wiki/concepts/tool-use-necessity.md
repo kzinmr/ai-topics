@@ -3,7 +3,12 @@ title: "Tool Use Necessity Detection"
 created: 2026-05-31
 updated: 2026-05-31
 type: concept
-tags: [tool-use, optimization, reasoning, interpretability, agent-architecture]
+tags:
+  - tool
+  - optimization
+  - reasoning
+  - interpretability
+  - architecture
 sources:
   - https://www.agentupdate.ai/news/llm-agents-tool-necessity-hidden-states/
 ---

@@ -3,7 +3,14 @@ title: Erdős Unit Distance Problem (AI Solution)
 created: 2026-05-23
 updated: 2026-05-23
 type: event
-tags: [event, openai, reasoning, research, model, ai, announcement, interpretability]
+tags:
+  - event
+  - openai
+  - reasoning
+  - lab
+  - model
+  - announcement
+  - interpretability
 sources: [https://www.scientificamerican.com/article/ai-just-solved-an-80-year-old-erdos-problem-and-mathematicians-are-amazed/]
 ---
 

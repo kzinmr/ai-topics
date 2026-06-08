@@ -3,7 +3,14 @@ title: Michael Lively
 created: 2026-05-29
 updated: 2026-05-29
 type: entity
-tags: [person, blogger, reverse-engineering, terminal, generative-ui, anthropic, coding-agents, developer-tooling]
+tags:
+  - person
+  - blogger
+  - reverse-engineering
+  - terminal
+  - developer-tooling
+  - anthropic
+  - coding-agents
 sources: [raw/articles/2026-03-13_michaellivs_reverse-engineering-claude-generative-ui.md]
 ---
 

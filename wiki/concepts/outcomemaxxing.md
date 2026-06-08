@@ -3,7 +3,14 @@ title: "Outcomemaxxing"
 created: "2026-06-06"
 updated: "2026-06-06"
 type: concept
-tags: [pricing, business-model, enterprise-saas, service-as-software, ai-native, enterprise-ai, methodology]
+tags:
+  - economics
+  - business-model
+  - enterprise-saas
+  - ai-adoption
+  - ai-native
+  - company
+  - methodology
 sources:
   - "raw/articles/2026-06-03_sierra_outcomemaxxing.md"
   - https://sierra.ai/blog/outcomemaxxing

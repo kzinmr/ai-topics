@@ -3,7 +3,13 @@ title: "Functional Emotions in LLMs"
 type: concept
 created: 2026-04-09
 updated: 2026-05-20
-tags: [interpretability, alignment, anthropic, ai-research, post-training, benchmark]
+tags:
+  - interpretability
+  - alignment
+  - anthropic
+  - lab
+  - training
+  - benchmark
 related: [mechanistic-interpretability, alignment, claude-sonnet, agentic-misalignment, character-simulation]
 sources:
   - raw/articles/2026-05-20_anthropic-emotion-concepts-function-llm.md

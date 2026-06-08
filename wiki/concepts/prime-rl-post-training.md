@@ -4,7 +4,18 @@ created: 2026-05-14
 updated: 2026-05-14
 type: concept
 sources: [raw/articles/2026-05-07_RampLabs_building-fast-accurate-agents-with-prime-rl-post-t.md]
-tags: [post-training, reinforcement-learning, grpo, subagents, tool-use, verification, synthetic-data, qwen, prime-intellect, agent-training, agent-evaluation, information-retrieval]
+tags:
+  - training
+  - reinforcement-learning
+  - ai-agents
+  - tool
+  - verification
+  - qwen
+  - company
+  - agent-training
+  - evaluation
+  - search
+
 ---
 
 # Prime-RL Post-Training for Subagents

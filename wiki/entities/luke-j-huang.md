@@ -3,7 +3,10 @@ title: "Luke J. Huang"
 created: 2026-06-03
 updated: 2026-06-03
 type: entity
-tags: [person, researcher, reinforcement-learning, async-rl]
+tags:
+  - person
+  - reinforcement-learning
+  - async-rl
 sources: [raw/articles/2026-05-31_lukhuang_frontier-asynchronous-rl-solved.md]
 ---
 

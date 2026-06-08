@@ -7,7 +7,7 @@ tags:
   - person
   - infrastructure
   - agent-runtime
-  - agent-harness
+  - harness-engineering
   - technical-debt
   - evaluation
   - ai-adoption

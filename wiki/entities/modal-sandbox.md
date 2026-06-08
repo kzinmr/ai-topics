@@ -7,14 +7,10 @@ tags:
   - entity
   - modal
   - sandbox
-  - managed-agents
   - ai-agents
-  - agent-architecture
+  - architecture
   - infrastructure
-  - serverless
-  - gpu
-  - ai-infrastructure
-  - cloud
+  - hardware
   - security
 sources:
   - raw/articles/2026-05-19_modal_claude-managed-agents-sandbox.md

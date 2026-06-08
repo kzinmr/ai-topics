@@ -3,7 +3,13 @@ title: "Nemotron 3 Ultra (NVIDIA)"
 created: "2026-06-06"
 updated: "2026-06-06"
 type: concept
-tags: [model, open-source, mixture-of-experts, moe, frontier-models, nvidia, reasoning, coding-agents, hybrid-architecture]
+tags:
+  - model
+  - open-source
+  - nvidia
+  - reasoning
+  - coding-agents
+  - hybrid-architecture
 sources:
   - "raw/articles/2026-06-05_fireworks-ai_nemotron-3-ultra.md"
   - https://fireworks.ai/blog/nemotron-3-ultra

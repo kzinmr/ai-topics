@@ -5,12 +5,11 @@ created: 2026-06-03
 updated: 2026-06-03
 tags:
   - openai
-  - codex
-  - knowledge-management
+  - coding-agents
+  - information-retrieval
   - ai-agents
   - developer-tooling
   - workflow
-  - productivity
 aliases:
   - Codex for knowledge workers
   - Codex knowledge work

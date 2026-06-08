@@ -4,13 +4,12 @@ type: concept
 created: 2026-05-25
 updated: 2026-05-26
 tags:
-  - agent-evaluation
   - evaluation
   - trace-analysis
   - bertopic
   - clustering
   - promptfoo
-  - observability
+  - infrastructure
   - multi-agent
   - methodology
 sources:

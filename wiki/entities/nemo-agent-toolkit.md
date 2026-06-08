@@ -3,7 +3,16 @@ title: NVIDIA NeMo Agent Toolkit
 created: 2026-05-27
 updated: 2026-05-27
 type: entity
-tags: [entity, platform, nvidia, ai-agents, agent-framework, multi-agent, orchestration, observability, open-source, mcp]
+tags:
+  - entity
+  - platform
+  - nvidia
+  - ai-agents
+  - multi-agent
+  - orchestration
+  - infrastructure
+  - open-source
+  - mcp
 sources:
   - raw/articles/2026-05-27_nemo-agent-toolkit-v1-7-0.md
   - https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases/tag/v1.7.0

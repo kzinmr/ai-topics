@@ -8,7 +8,7 @@ updated: 2026-06-03
 tags:
   - concept
   - agentic-engineering
-  - ai-safety
+  - agent-safety
   - mental-health
   - coding-agents
   - anti-pattern

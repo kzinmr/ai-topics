@@ -7,9 +7,7 @@ tags:
   - person
   - training
   - reasoning
-  - distillation
-  - post-training
-  - llm
+  - model
 sources:
   - raw/articles/2026-05-18_opsd-blog-siyan-zhao.md
   - https://siyan-zhao.github.io/

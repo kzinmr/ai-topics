@@ -7,7 +7,7 @@ tags:
   - enterprise-saas
   - ai-agents
   - agent-governance
-  - file-storage
+  - protocol
   - cloud-infrastructure
 aliases:
   - box-com

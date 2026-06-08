@@ -5,13 +5,10 @@ updated: 2026-05-27
 type: concept
 status: complete
 tags:
-  - codex
-  - openai
   - coding-agents
+  - openai
   - protocol
-  - agent-architecture
-  - cli
-  - api
+  - architecture
   - developer-tooling
 aliases:
   - codex-app-server

@@ -9,7 +9,7 @@ tags:
   - transcript
   - ilya-sutskever
   - scaling-hypothesis
-  - pretraining
+  - training
   - superintelligence
   - neurips-2024
 ---

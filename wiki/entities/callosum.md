@@ -3,7 +3,12 @@ title: "Callosum"
 type: entity
 created: 2026-05-25
 updated: 2026-05-25
-tags: [entity, company, inference, optimization, ai-infrastructure]
+tags:
+  - entity
+  - company
+  - inference
+  - optimization
+  - infrastructure
 aliases: ["Callosum AI"]
 sources: [raw/articles/2026-05-25_callosum-heterogeneous-intelligence-youtube.md]
 ---

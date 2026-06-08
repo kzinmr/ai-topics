@@ -3,7 +3,12 @@ title: AI21 Labs
 created: 2026-05-24
 updated: 2026-05-24
 type: entity
-tags: [company, model, ai-agents, agent-harness, open-source, startup]
+tags:
+  - company
+  - model
+  - ai-agents
+  - harness-engineering
+  - open-source
 sources:
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - https://www.latent.space/p/ainews-all-model-labs-are-now-agent

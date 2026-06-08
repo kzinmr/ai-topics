@@ -5,8 +5,8 @@ created: 2026-05-20
 updated: 2026-05-20
 tags:
   - person
-  - ml-engineering
-  - enterprise-ai
+  - infrastructure
+  - company
 aliases:
   - Sarah M Sachs
 sources:

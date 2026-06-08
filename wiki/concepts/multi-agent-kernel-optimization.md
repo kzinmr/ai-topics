@@ -5,12 +5,11 @@ created: 2026-06-05
 updated: 2026-06-05
 tags:
   - multi-agent
-  - gpu
+  - hardware
   - harness-engineering
   - coding-agents
   - optimization
   - nvidia
-  - cursor
   - fused-kernels
 sources:
   - raw/articles/2026-06-05_cursor_multi-agent-kernels.md

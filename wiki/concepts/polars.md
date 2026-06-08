@@ -7,9 +7,8 @@ created: 2026-04-25
 updated: 2026-06-07
 tags:
   - data-science
-  - data-science
   - open-source
-  - python
+  - developer-tooling
 sources:
   - https://pola.rs
   - https://github.com/davanstrien/polars-hf

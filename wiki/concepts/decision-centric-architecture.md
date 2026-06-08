@@ -6,10 +6,9 @@ updated: 2026-05-25
 tags:
   - decision-centric
   - architecture
-  - enterprise-ai
+  - company
   - ai-agents
-  - agent-architecture
-  - knowledge-graph
+  - rag
 sources:
   - raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md
   - https://x.com/i/article/2049136883528011954

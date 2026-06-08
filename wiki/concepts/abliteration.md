@@ -4,12 +4,11 @@ created: 2026-05-27
 updated: 2026-05-27
 type: concept
 tags:
-  - ai-safety
+  - agent-safety
   - alignment
   - fine-tuning
   - open-source
   - controversy
-  - llm
   - model
   - inference
   - safety

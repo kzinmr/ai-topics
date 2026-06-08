@@ -3,7 +3,16 @@ title: "LLM Landscape: November 2025 – May 2026"
 created: 2026-05-19
 updated: 2026-05-19
 type: concept
-tags: [llm, timeline, model, reasoning, coding-agents, openclaw, local-llm, open-source, rlvr, comparison]
+tags:
+  - model
+  - timeline
+  - reasoning
+  - coding-agents
+  - openclaw
+  - local-llm
+  - open-source
+  - rlvr
+  - comparison
 sources:
   - raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md
 ---

@@ -3,7 +3,14 @@ title: Grok Build
 created: 2026-05-27
 updated: 2026-05-29
 type: entity
-tags: [entity, product, xai, coding-agents, ai-agents, cli, agent-sdk]
+tags:
+  - entity
+  - product
+  - xai
+  - coding-agents
+  - ai-agents
+  - developer-tooling
+  - agent-sdk
 sources: [raw/newsletters/2026-05-28-gbrain.md]
 ---
 

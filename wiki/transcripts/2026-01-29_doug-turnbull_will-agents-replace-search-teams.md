@@ -7,7 +7,7 @@ source: YouTube
 url: https://www.youtube.com/watch?v=OGnW2Pu2uVE
 type: transcript
 duration: "55:55"
-tags: [agentic-search, search-teams, transcript]
+tags: [search, search-teams, transcript]
 ---
 
 # Will Agents Replace Search Teams? — Transcript

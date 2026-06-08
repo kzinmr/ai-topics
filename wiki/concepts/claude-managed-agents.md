@@ -4,17 +4,15 @@ created: 2026-05-23
 updated: 2026-05-23
 type: concept
 tags:
-  - managed-agents
+  - ai-agents
   - claude-code
   - anthropic
   - sandbox
   - agent-runtime
-  - agent-architecture
-  - agent-framework
+  - architecture
   - self-hosted
-  - cloudflare
+  - company
   - modal
-  - vercel
   - daytona
   - isolation
 sources:

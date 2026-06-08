@@ -3,7 +3,15 @@ title: Command A+
 created: 2026-05-24
 updated: 2026-05-27
 type: entity
-tags: [model, multimodal, moe, open-source, company, cohere, inference, quantization, enterprise-ai, agentic-engineering]
+tags:
+  - model
+  - multimodal
+  - open-source
+  - company
+  - cohere
+  - inference
+  - quantization
+  - agentic-engineering
 sources: [raw/articles/2026-05-20_cohere-command-a-plus.md]
 ---
 

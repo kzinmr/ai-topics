@@ -7,7 +7,7 @@ tags:
   - economics
   - agi
   - labor
-  - podcast
+  - writing
 sources:
   - raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md
 ---

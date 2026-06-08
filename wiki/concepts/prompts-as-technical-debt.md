@@ -3,7 +3,17 @@ title: Prompts as Technical Debt
 created: 2026-05-21
 updated: 2026-05-21
 type: concept
-tags: [prompting, technical-debt, ai-agent-engineering, agentic-engineering, metaprompting, agent-harness, coding-agents, model, software-engineering, multi-llm]
+tags:
+  - prompting
+  - technical-debt
+  - ai-agent-engineering
+  - agentic-engineering
+  - metaprompting
+  - harness-engineering
+  - coding-agents
+  - model
+  - software-engineering
+  - multi-llm
 sources: [raw/articles/seangoedecke.com--prompts-are-technical-debt-too--2bd50f80.md]
 ---
 

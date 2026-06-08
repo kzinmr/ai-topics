@@ -3,7 +3,12 @@ title: "Epoch AI"
 created: 2026-05-30
 updated: 2026-05-30
 type: entity
-tags: [ai-research, benchmark, evaluation, open-source, ai-safety, research]
+tags:
+  - lab
+  - benchmark
+  - evaluation
+  - open-source
+  - agent-safety
 sources: []
 ---
 

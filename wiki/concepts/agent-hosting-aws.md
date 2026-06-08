@@ -3,7 +3,16 @@ title: Agent Hosting on AWS
 created: 2026-05-29
 updated: 2026-05-29
 type: concept
-tags: [aws, ai-infrastructure, agent-infrastructure, hermes-agent, cloud, serverless, sandbox, isolation, architecture, security, agent-security, comparison]
+tags:
+  - aws
+  - infrastructure
+  - ai-agents
+  - sandbox
+  - isolation
+  - architecture
+  - security
+  - agent-safety
+  - comparison
 aliases: [hermes-agent-aws-deployment, agent-hosting-architecture]
 related: [concepts/agent-sandboxing, concepts/programmatic-tool-calling, entities/hermes-agent]
 sources: [raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md, raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md]

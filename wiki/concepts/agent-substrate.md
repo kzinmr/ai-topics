@@ -3,7 +3,15 @@ title: Agent Substrate
 created: 2026-05-26
 updated: 2026-05-26
 type: concept
-tags: [concept, agent-infrastructure, kubernetes, google, open-source, sandbox, agent-runtime, infrastructure, cloud]
+tags:
+  - concept
+  - ai-agents
+  - developer-tooling
+  - google
+  - open-source
+  - sandbox
+  - agent-runtime
+  - infrastructure
 sources: [raw/articles/2026-05-20_google-agent-substrate-gke.md]
 ---
 

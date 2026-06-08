@@ -5,10 +5,8 @@ created: 2026-06-01
 updated: 2026-06-01
 tags:
   - person
-  - founder
-  - entrepreneur
   - x-account
-  - saas
+  - product
 aliases:
   - "@scottastevenson"
   - "Scott Stevenson"

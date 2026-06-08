@@ -3,7 +3,15 @@ title: Self-Replicating LLMs
 created: 2026-05-27
 updated: 2026-05-28
 type: concept
-tags: [concept, ai-safety, security, agent-safety, autonomous-agents, self-replicating, qwen, research, adversarial, evaluation]
+tags:
+  - concept
+  - agent-safety
+  - security
+  - ai-agents
+  - self-replicating
+  - qwen
+  - lab
+  - evaluation
 sources:
   - raw/articles/2026-05-27_self-replicating-llm-arxiv.md
   - https://arxiv.org/abs/2605.06760

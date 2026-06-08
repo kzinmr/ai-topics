@@ -6,9 +6,8 @@ type: concept
 tags:
   - model-routing
   - ai-agents
-  - agent-architecture
-  - agent-orchestration
-  - chatgpt
+  - architecture
+  - orchestration
   - openai
   - product
   - conversational-ai
