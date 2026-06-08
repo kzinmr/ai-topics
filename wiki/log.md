@@ -1,3 +1,15 @@
+## 2026-06-08 Gemma 4 12B Unified Addition
+
+**Action**: Added Gemma 4 12B Unified model information to gemma-4 entity page.
+
+**Updated**:
+- `entities/gemma-4.md` — Added 12B Unified to model specs table (11.95B dense, encoder-free, 256K context, Text/Image/Audio). New section: architecture details (encoder-free = raw patches/waveforms projected directly), full benchmark table vs all models, ecosystem links (434K HF downloads, 568K GGUF, official QAT quantization from June 5). Sources updated with 12B model card + launch blog.
+- `index.md` — Updated gemma-4 entry to reflect 5-model lineup including 12B Unified.
+
+**Source**: HuggingFace model card (google/gemma-4-12B-it), released 2026-05-23
+
+---
+
 ## 2026-06-08 Gemma 4 E4B Daily Driver Ingest — @xeophon Tweet
 
 **Action**: Ingested @xeophon's tweet endorsing Gemma 4 E4B 6-bit as 24/7 local model on Mac via LM Studio.

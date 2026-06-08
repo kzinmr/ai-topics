@@ -305,7 +305,7 @@
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
 - [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16th (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
 - [[concepts/gemini-spark]] — Google's 24/7 personal AI agent (I/O 2026). Runs on Gemini 3.5 Flash + Antigravity harness. Scheduled tasks, custom skill learning, deep Workspace integration. Cloud-resident.
-- [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. E4B adopted as daily local model (6-bit GGUF on Mac via LM Studio). MTP drafters (May 2026) deliver 3x faster inference.
+- [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 5 models: E2B/E4B/12B Unified/26B A4B/31B. 12B is encoder-free multimodal (May 2026). E4B adopted as daily local model.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
 - [[entities/geoffreylitt-com]] — **URL:** https://geoffreylitt.com
