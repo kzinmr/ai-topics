@@ -76,3 +76,4 @@ The shift from SFT → RL → OPD represents progressively better alignment betw
 - [[concepts/on-policy-distillation]]
 - [[concepts/grpo]]
 - [[concepts/distillation]]
+- [[concepts/on-policy-vs-off-policy-rl]] — Fundamental distinction explained with Goldberg's 2023 analysis as historical anchor

@@ -2,12 +2,11 @@
 title: Yoav Goldberg
 type: entity
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-06-08
 tags:
   - nlp
   - person
-  - lab
-  - curriculum
+  - researcher
   - education
 aliases: ["yoavg"]
 url: https://www.cs.bgu.ac.il/~yoavg/
@@ -23,6 +22,7 @@ Yoav Goldberg is a prominent NLP researcher, known for his work on the theoretic
 - **[Learning LLMs in 2025](https://gist.githubusercontent.com/yoavg/95bbc5768cacd2bf07187779fada4867/raw/bcb8ff287e03a7e49f7ae5daedc03d04c11d8a71/llm-materials-2025.md)** — Curated curriculum of academic materials for learning LLMs beyond ML algorithms
 - Research on provable limitations of learning meaning from ungrounded form (with Merrill, Schwartz, Smith)
 - Research on syntactic knowledge in neural network language models
+- **[Reinforcement Learning for Language Models](https://gist.githubusercontent.com/yoavg/6bff0fecd65950898eba1bb321cfbd81/raw/5ab0bb27909cc625e02c611117a0a2f3a026cb56/rl-for-llms.md)** (April 2023) — Influential analysis of why RL is necessary (not merely preferable) for LLM alignment, building on John Schulman's argument. Established the "hallucination-as-SFT-failure" thesis: supervised training provably teaches models to fabricate answers for knowledge-seeking queries because we cannot know what the model knows. Predicted the emergence of RL without human feedback. See [[concepts/on-policy-vs-off-policy-rl]].
 
 ## Curriculum Curation
 

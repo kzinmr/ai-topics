@@ -1,3 +1,13 @@
+## [2026-06-08] On-Policy vs Off-Policy RL — Goldberg Analysis Ingestion
+
+- **Source**: Yoav Goldberg, "Reinforcement Learning for Language Models" (April 2023)
+- **Saved**: `raw/articles/2023-04-09_yoavg-rl-for-llms.md` — Goldberg's foundational analysis of why RL is necessary for LLM alignment (gist from Discord #一般 thread)
+- **Created**: `concepts/on-policy-vs-off-policy-rl.md` — Concept page: on-policy vs off-policy distinction in RL for LLM post-training. Integrates Goldberg's hallucination-as-SFT-failure thesis, exposure bias, Brown's α×λ unified taxonomy, 2026 method landscape (GRPO, OPD, DPO, SDAR).
+- **Updated**: `entities/yoav-goldberg.md` — Added RL-for-LLMs gist (2023) as key contribution; updated tags (lab→researcher, removed curriculum)
+- **Updated**: `concepts/post-training-distributional-view.md` — Added cross-reference to new concept page
+- **Updated**: `SCHEMA.md` — Added `on-policy` tag to taxonomy
+- **Updated**: `index.md` — Added concept entry + updated Goldberg entity summary
+
 ## [2026-06-08] Microsoft Build BRK245 — Build the Thing That Builds the Thing
 
 - **Source**: https://build.microsoft.com/en-US/sessions/BRK245 (Microsoft Build 2025, Peter Steinberger)
