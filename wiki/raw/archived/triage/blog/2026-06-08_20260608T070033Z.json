@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-06-08T08:05:30.330109+00:00",
+  "triage_run_id": "20260608T070033Z",
+  "source": "blog",
+  "summary_ja": "2026-06-08のブログトリアージ。13件の候補を分析 (4件の未保存YouTube動画含む)。antirezの「A new era for software testing」(LLMエージェントによる自動QA手法)と、The Algorithmic Bridgeの「Appleが知っているAI業界の実態」(AppleのPascal's Wager論)の2件が既存ページ更新が必要な★★★☆☆以上。DaringFireball SwiftUI、John D. Cookの数学記事×3、Ken ShirriffのIBM 604、Sean Goedeckeのキャリアアドバイス、Jim Nielsenのコーディング哲学、Maurycy Zの天体写真はAI無関係のためスキップ。Simon Willisonのdatasette-agent-edit、Gary Marcusのslop論、George Hotzのsingularity論は参照追加レベル。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette-agent-edit 0.1a0",
+      "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-7-datasette-agent-edit--01ceb2d8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Simon WillisonがDatasette Agent用のテキスト編集プラグインを公開。Claude Text Editorパターン(view/str_replace/insert)を再利用可能なベースプラグインとして実装。エージェントツール設計の実践例だが、31行の短い発表記事。既存のentities/simon-willison.md (423行, L3)のJune 2026 Updatesに簡易追記可能。新規コンセプトページ作成には値しない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# datasette-agent-edit 0.1a0\nSource: https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything\nI'm planning several plugins for\nDatasette Agent\nwhich can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG f"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "garymarcus.substack.com",
+      "title": "Slop, productivity, and why the AI-fueled world is going nowhere mighty fast",
+      "url": "https://garymarcus.substack.com/p/slop-productivity-and-why-the-ai",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Gary MarcusがFTのBurn-MurdochグラフとWashington Postのデータを用いてAIの生産性パラドックスを論じる。新規データポイント：(1) Leiden Declaration—数学者のAI slop懸念の公開書簡、(2) Gerben Wierdaの分析「Anthropicは$100に対して$1000支払っている可能性」、(3) 書籍/音楽/特許/論文のAI生成量急増と品質停滞。既存のentities/gary-marcus.md (204行)はトークンマキシングや経済批判をカバーするが、これらの具体的データは未収録。参照追記レベル。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Slop, productivity, and why the AI-fueled world is going nowhere mighty fast\nSource: https://garymarcus.substack.com/p/slop-productivity-and-why-the-ai\nJust saw a graph at the FT from John Burn-Murdoch that really distills something I have been trying to articulate. AI generates a lot of output (w"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "geohot.github.io",
+      "title": "the singularity is nearer",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/06/07/stairway-to-heaven.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-06-07-stairway-to-heaven-html--62c1cbd3.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ George HotzがAIを「統計的模倣モデル」と断じ、ブランドの文化創造とのアナロジーで論じる哲学的エッセイ。「テスト可能な性質を最適化すると、それらは良い指標でなくなる」という報酬ハッキング論、「生命を創造して自由にせよ」という倫理的主張を含む。既存のentities/george-hotz.md (271行)は6/6の『Our Great War』を詳細カバーしており、本稿(6/7)は同テーマの延長。ai-slop.mdでもHotzの「Eternal Sloptember」論点は既収録。参照追記レベル。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/06/07/stairway-to-heaven.html\nThey are a highly sophisticated statistical model designed to mimic the distribution of programming. The output is broken, but in a way that’s getting harder and harder to detect. Whic"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Aitken acceleration before Aitken",
+      "url": "https://www.johndcook.com/blog/2026/06/07/aitkin-acceleration-kepler/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-07-aitkin-acceleration-kepler--c89ed932.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 数学史（Kepler方程式の数値解法、Petersの1891年アルゴリズムがAitken加速の先駆け）。LLM/AI Agentと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "A crank formula for π",
+      "url": "https://www.johndcook.com/blog/2026/06/07/a-crank-formula-for-%cf%80/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-07-a-crank-formula-for-cf-80--28f987eb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 物理定数からπを導出するクランク公式の検証。数学エンターテイメント。LLM/AI Agentと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "SwiftUI Only Makes It Easy to Develop Bad Apps",
+      "url": "https://daringfireball.net/2026/06/swiftui_only_makes_it_easy_to_develop_bad_apps",
+      "raw_path": "~/ai-topics/wiki/raw/articles/daringfireball.net--2026-06-swiftui-only-makes-it-easy-to-develop-bad-apps--a227dcb0.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Apple SwiftUIのUIフレームワーク批判（Undo/Redoのバグ、ネイティブMacアプリ開発の困難）。WWDC前のプラットフォーム批評。LLM/AI Agentと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "righto.com",
+      "title": "Powering up a module from the IBM 604: an electronic calculator from 1948",
+      "url": "http://www.righto.com/2026/06/ibm-604-thyraton-tube-module.html",
+      "raw_path": "~/ai-topics/wiki/raw/articles/righto.com--2026-06-ibm-604-thyraton-tube-module-html--c59736ff.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ IBM 604 (1948年製真空管式電子計算機)のプラグインモジュールの動作検証。計算機史アーカイブ。LLM/AI Agentと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "The Laplace limit",
+      "url": "https://www.johndcook.com/blog/2026/06/07/the-laplace-limit/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-07-the-laplace-limit--30e14f03.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Kepler方程式のLaplace極限（級数収束半径0.6627...）の数学解説。LLM/AI Agentと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Coding Is Designing",
+      "url": "https://blog.jim-nielsen.com/2026/code-is-design/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-code-is-design--3fd74b6e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ コードは設計の実装手段ではなく設計そのものという短い哲学的考察。AI関連の記述はなく、エージェント工学との接続も弱い。25行の短い記事。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "seangoedecke.com",
+      "title": "Doing nothing at work",
+      "url": "https://seangoedecke.com/doing-nothing-at-work/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/seangoedecke.com--doing-nothing-at-work--d78b0c3a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ソフトウェアエンジニアの時間管理とキャリア戦略についての一般的なアドバイス（80%稼働、高インパクト機会への待機、グルー仕事の回避）。AIに特化した分析は含まれず、既存のentities/seangoedecke-com.md (330行)はAI関連の実践的知見（エージェント、サイコファンシー、プロンプトの技術的負債）をカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "maurycyz.com",
+      "title": "(Maurycy's blog)",
+      "url": "https://maurycyz.com/astro/arp297/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/maurycyz.com--astro-arp297--e1f46cb2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Arp 297銀河群の天体写真（NGC 5754/5752/5755/5753）。3.4時間露光の天文画像。LLM/AI Agentと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

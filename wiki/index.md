@@ -199,7 +199,7 @@
 - [[entities/cats-with-power-tools]] — **URL:** https://blog.pixelmelt.dev (primary), https://blog.exploit.cat (secondary)
 - [[entities/chad-nauseam-home]] — **Blog** | chadnauseam.com |
 - [[entities/charles-frye]] — **X** | @charles_irl |
-- [[entities/chinmay-karkar]] — Chinmay Karkar — Researcher and blogger. Published comprehensive OPD survey (June 2026) covering ~40 papers on On-Policy Distillation in LLM training. Blog: chinmaykarkar.com
+- [[entities/chinmay-karkar]] — Chinmay Karkar (@chinmaykak) — 21yo researcher @ Microsoft Research India. RL & agents for LLMs. OPD survey (June 2026), LLM forecasting paper (AAAI 2026). Aryabhatta 1.0 (90.2% JEE math). Blog: chinmaykarkar.com
 - [[entities/chiark-greenend-org-uk-sgtatham]] — **Born** | 3 May 1977, United Kingdom (via Grokipedia) | RSS excluded (2026-05-20, AI content rare)
 - [[entities/china-ai-industry]] — China has emerged as the world's dominant force in AI implementation, robotics deployment, and embodied AI. While the U.S. leads in foundational AI models and semiconductor design, China excels at ...
 - [[entities/chip-huyen]] — **URL:** https://huyenchip.com/

@@ -22,6 +22,12 @@
 - **Updated**: `wiki/concepts/agentic-loop.md` — added 5-stage loop evolution spectrum, Boris Cherny's 3 personal stages, "cron + decision-maker" framing, loop economics (Uber case study), skills > loops thesis, production hard stops
 - **Updated**: `wiki/index.md` — refreshed agentic-loop entry description
 
+## [2026-06-08] Enriched: Chinmay Karkar entity page
+
+- **Updated**: `wiki/entities/chinmay-karkar.md` (skeleton → full)
+- **Sources**: https://chinmaykarkar.com, https://x.com/chinmaykak, https://github.com/ChinmayK0607, https://arxiv.org/abs/2511.18394
+- **Added**: Profile (MSR India, career history), publications (AAAI 2026 workshop), projects (heiretsu, komorebi), blog posts, X/Twitter activity, research interests
+
 ## [2026-06-08] Ingested: Chinmay Karkar OPD Survey ("The Imitation Game")
 
 - **Raw article**: `wiki/raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md`
