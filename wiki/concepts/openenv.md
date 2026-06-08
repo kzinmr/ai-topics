@@ -60,9 +60,14 @@ env.close()         # Clean up
 
 | RFC | Contents |
 |-----|----------|
-| RFC 001 | Architecture of core components (Environment, Agent, Task) |
-| RFC 002 | Base environment interface, packaging, isolation, communication |
+| RFC 001 | Baseline API and interface specifications |
+| RFC 002 | Discoverability of environment tools by agents |
 | RFC 003 | MCP tool encapsulation and isolation boundaries |
+| RFC 004 | Delayed rewards support (trajectory-based scoring) |
+| RFC 005 | Agentic Harness Integration |
+| RFC 006 | Tasksets via datasets |
+| RFC 007 | External rewards |
+| RFC 008 | Auto-validation to measure environment quality |
 
 ## Use Cases
 
@@ -81,6 +86,25 @@ env.close()         # Clean up
 - **SkyRL**
 - **Unsloth**
 
+## Community Governance (2026-06-08)
+
+OpenEnv is now coordinated by a committee of 9 organizations:
+- **Hugging Face** (lead, repo at `huggingface/OpenEnv`)
+- **Meta-PyTorch**
+- **Reflection AI**
+- **Unsloth**
+- **Modal**
+- **Prime Intellect**
+- **NVIDIA**
+- **Mercor**
+- **Fleet AI**
+
+Additional supporters: PyTorch Foundation, vLLM, SkyRL (UCB), Lightning AI, Axolotl AI, Stanford Scaling Intelligence Lab, Mithril, OpenMined, Scaler AI Labs, Scale AI, Patronus AI, Surge AI, Halluminate, Turing, Scorecard, Snorkel AI
+
+## Design Philosophy
+
+**A protocol layer, not a reward framework.** OpenEnv standardizes how environments are published, deployed, and consumed by agents. It does NOT dictate how rewards are defined or how training loops work — those belong in specialized libraries (TRL, Unsloth, etc.). OpenEnv is the common socket they all plug into.
+
 ## Ecosystem
 
 An [Environment Hub](https://huggingface.co/openenv) hosted on Hugging Face:
@@ -92,5 +116,7 @@ An [Environment Hub](https://huggingface.co/openenv) hosted on Hugging Face:
 ## References
 
 - [OpenEnv Blog — Hugging Face](https://huggingface.co/blog/openenv) (2025-10-23)
-- [OpenEnv GitHub](https://github.com/meta-pytorch/OpenEnv)
+- [The Open Source Community is backing OpenEnv for Agentic RL](https://huggingface.co/blog/openenv-agentic-rl) (2026-06-08)
+- [OpenEnv GitHub](https://github.com/huggingface/OpenEnv)
 - [OpenEnv Hub](https://huggingface.co/openenv)
+- [Ben Burtenshaw announcement tweet](https://x.com/ben_burtenshaw/status/2063991191415267492) (2026-06-08)

@@ -7194,3 +7194,5 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Backward compatibility:** `baudrillard-and-ai` retained as alias in frontmatter
 
 - **2026-06-08**: Weekly tag audit auto-fix. Added `optimization` to SCHEMA.md taxonomy (113 uses), mapped `agentic-data-science` → `data-science` and `ndcg` → `evaluation` in TAG_NORMALIZATION. Deleted 18 one-off non-SCHEMA tags. Normalized 433 wiki pages via tag_normalization.py. Fixed 24 additional files (transcripts, queries, events). Removed `]` artifact from entities/xjdr.md. Total: 467 files modified, zero non-SCHEMA tags remaining.
+
+- **2026-06-08**: Updated `wiki/concepts/openenv.md` with 2026-06-08 blog post (HuggingFace). Added: community governance (9-org committee), RFCs 004-008, "protocol not reward framework" design philosophy, new supporters list, raw article `2026-06-08_huggingface_openenv-agentic-rl.md`. Updated GitHub URL from meta-pytorch to huggingface/OpenEnv. Updated `wiki/index.md` entry.

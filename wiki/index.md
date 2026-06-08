@@ -1610,7 +1610,7 @@
 - [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
 - [[concepts/openclaw-architecture]] — OpenClaw architecture details
 - [[concepts/openclaw-ecosystem]] — OpenClaw Ecosystem — Peter Hayes' open-source AI agent platform ecosystem: gateway, skills library, tool server, community-contributed agents and integrations.
-- [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
+- [[concepts/openenv]] — Protocol/interoperability layer for agentic RL environments. 9-org committee (HF, Meta-PyTorch, Unsloth, Modal, NVIDIA, etc.). Gymnasium-style API, Docker packaging, MCP support. GitHub: huggingface/OpenEnv.
 - [[concepts/openrlhf]] — OpenRLHF: One of the earliest OSS RLHF libraries. DeepSpeed-based, robust reward model support. Supports async training (--async_train).
 - [[concepts/openrouter-state-of-ai-2025]] — OpenRouter State of AI 2025 — Industry-wide AI ecosystem overview and trends
 - [[concepts/opus-data-selection]] — OPUS: Optimizer-induced Projected Utility Selection — Dynamic data selection framework. Scores training samples aligned with AdamW/Muon optimization geometry. 4.7% overhead via Ghost+CountSketch. 6× data efficiency improvement (Qwen3-8B continued pre-training).
