@@ -1,3 +1,10 @@
+## [2026-06-08] Updated: Agentic Loop — Loop Evolution Spectrum + Economics
+
+- **Source**: Matt Van Horn X Article "WTF Is a Loop? Peter Steinberger vs. Boris Cherny" (via @mvanhorn)
+- **Raw article**: `wiki/raw/articles/2026-06-08_mvanhorn_wtf-is-a-loop.md`
+- **Updated**: `wiki/concepts/agentic-loop.md` — added 5-stage loop evolution spectrum, Boris Cherny's 3 personal stages, "cron + decision-maker" framing, loop economics (Uber case study), skills > loops thesis, production hard stops
+- **Updated**: `wiki/index.md` — refreshed agentic-loop entry description
+
 ## [2026-06-08] Ingested: Chinmay Karkar OPD Survey ("The Imitation Game")
 
 - **Raw article**: `wiki/raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md`

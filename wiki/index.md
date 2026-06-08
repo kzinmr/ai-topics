@@ -883,7 +883,7 @@
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering: Cognition and Devin Workflows — Cognitive architectures for agentic engineering: Devin's approach and alternatives
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns — Design patterns for agentic software engineering: planning, execution, verification loops
 - [[concepts/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
-- [[concepts/agentic-loop]] — Agentic Loop — The canonical AI agent execution pattern: decide → act → observe. Every major agent framework converges on this same loop. ReAct, Ralph Wiggum, /goal variants.
+- [[concepts/agentic-loop]] — Agentic Loop — The canonical AI agent execution pattern: decide → act → observe. 5-stage evolution spectrum from ReAct (2022) through AutoGPT, ralph, /goal to orchestration loops (2026). Cron + decision-maker framing, loop economics, skills > loops thesis.
 - [[concepts/agentic-manual-testing]] — Agentic Manual Testing — Using AI agents to automate exploratory and manual testing workflows
 - [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis)
 - [[concepts/agentic-rag]] — Agentic RAG — Integrates autonomous AI agents into the RAG pipeline for dynamic retrieval and adaptive workflows.

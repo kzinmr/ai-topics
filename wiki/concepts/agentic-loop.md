@@ -9,14 +9,20 @@ tags:
   - architecture
   - tool
   - cognition
+  - multi-agent
+  - orchestration
+  - ralph-loop
+  - cost-optimization
+  - cron
 created: 2026-05-13
-updated: 2026-05-30
+updated: 2026-06-08
 aliases: [agent loop, ReAct loop, decide-act-observe, agent execution cycle]
 sources:
   - https://stevekinney.com/writing/agent-loops
   - https://agentic.ai/what-is-agentic-ai
   - https://www.anthropic.com/research/building-effective-agents
   - raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex.md
+  - raw/articles/2026-06-08_mvanhorn_wtf-is-a-loop.md
   - https://thriveholdings.com
 ---
 
@@ -67,6 +73,77 @@ This is sometimes called the **Perceive → Reason → Act → Observe** cycle i
 | **/goal Loop (Claude Code)** | Claude Code | Condition-driven; evaluator model (Haiku) judges completion from transcript |
 | **/goal Loop (Codex)** | Codex CLI | Persisted goal with runtime continuation prompts + `update_goal` tool |
 | **Autoresearch Loop** | General optimization | Continuous improvement against a measurable target |
+
+## Loop Evolution Spectrum (2022–2026)
+
+Matt Van Horn's research synthesis (June 2026) identifies five stages in the evolution of agent loops:
+
+| Stage | Era | Pattern | Key Innovation | Limitation |
+|-------|-----|---------|----------------|------------|
+| **1. ReAct** | 2022 | Academic while-loop | Reasoning + acting interleaving | One model, one loop, human watching |
+| **2. AutoGPT** | 2023 | Goal-driven self-prompting | Autonomous goal pursuit | Infamous for spinning forever; seeded "agents are a toy" |
+| **3. Ralph** | Jul 2025 | Bash one-liner piping prompt file | Context reset to anchor files each iteration | Terminal must stay open; single-agent |
+| **4. /goal** | Spring 2026 | Validator-gated loop | Small model (Haiku) judges completion | Still single-agent, human-kicked |
+| **5. Orchestration** | 2026 | Multi-loop supervision | Scheduling, durability, concurrent dispatch | Cost management; verification gaps |
+
+> "Single-agent ralph is old hat; multi-agent supervision is the new layer." — synthesis from Van Horn's research, June 2026
+
+Stage 5 introduced four structural changes: (1) the loop became the unit of work, not the task; (2) loops supervise other loops concurrently and on schedule; (3) scheduling replaces human kickoff — runs on infrastructure time, not attention; (4) durability becomes explicit with git-backed state and crash recovery.
+
+### Boris Cherny's Three Personal Stages
+
+Boris Cherny (Claude Code creator, Anthropic) described his own progression at WorkOS Acquired Unplugged (June 2, 2026):
+
+1. **Manual + autocomplete** — write code by hand
+2. **Parallel sessions** — run 5–10 Claude sessions, prompt each one
+3. **Loop author** — don't prompt at all; write loops that prompt Claude; ~200 agents read GitHub/Slack/Twitter and decide what to build
+
+> "I don't prompt Claude anymore. My job is to write loops." — Boris Cherny, June 2026
+
+He landed 259 PRs in 30 days with 100% of contributions written by Claude Code (reported December 2025).
+
+## The "Cron + Decision-Maker" Framing
+
+A persistent skeptic argument: "loops are just cron jobs rebranded." The honest answer is half-right:
+
+- **Yes**, the scheduling layer is cron. Boris runs his on cron. Claude Code's `/loop` uses cron under the hood.
+- **No**, cron never had a decision-maker in the body. A cron job runs a fixed script. A loop runs a model that observes current state, decides next action, executes, verifies, and decides whether to continue.
+
+```
+Cron:     timer → fixed script → output
+Loop:     timer → model(observes, decides, acts, verifies) → continue or stop
+Orchestration: timer → model(dispatches sub-loops, supervises, aggregates) → durable state
+```
+
+The interesting engineering is everything you wrap around that decision-maker so it "does not run off a cliff."
+
+## Economics: The Loop Is Now the Expensive Part
+
+As the model cost of writing code approaches zero, the cost of running the loop has become the dominant expense:
+
+> "Every ai agent i shipped this year is a for-loop, an llm call, and a try/catch around the json parsing. The only thing agentic about it is the anthropic bill at the end of the month." — @rohit_jsfreaky, June 2026
+
+**Case study:** Uber capped engineers at **$1,500/person/month** for Claude Code + Cursor after burning its annual AI budget in four months.
+
+> "The costliest thing in AI coding is no longer writing code, it's managing the agent loop." — @runes_leo, June 2026
+
+### Three Hard Stops for Production Loops
+
+| Guard | Purpose |
+|-------|---------|
+| **Maximum iteration count** | Prevent infinite loops |
+| **No-progress detection** | Abort when agent is stuck |
+| **Token/dollar budget ceiling** | Hard cost cap per run |
+
+Without guardrails: "infinite loops and billing surprises orders of magnitude over budget" (@cv_usk, June 2026).
+
+## Skills > Loops
+
+Peter Steinberger's complementary thesis: the reusable unit inside the loop is a **skill**, not a prompt. A loop with no reusable skills is `while(true)` around a stranger. A loop that calls a library of sharp, tested, named skills is a system that compounds.
+
+> "If you do something more than once, turn it into an automated skill. If you do something hard, turn it into a skill afterward so next time is free." — @steipete, recurring thesis, June 2026
+
+This connects to the [[concepts/agentic-engineering|agentic engineering]] practice of building reusable [[concepts/agent-skills|agent skills]] as the durable asset, with loops as the plumbing that invokes them.
 
 ## What Separates Agents from Chatbots
 
@@ -162,3 +239,7 @@ The real engineering challenges are around the loop:
 - [What Is Agentic AI?](https://agentic.ai/what-is-agentic-ai) — Agentic.ai guide
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — Yao et al., 2022
 - [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — Anthropic, 2024
+- [WTF Is a Loop? Peter Steinberger vs. Boris Cherny](https://x.com/i/article/2063850827694096385) — Matt Van Horn, June 2026
+- [Boris Cherny: Why Coding Is Solved, and What Comes Next](https://www.youtube.com/watch?v=RkQQ7WEor7w) — Sequoia AI Ascent / WorkOS Acquired Unplugged, June 2026
+- [Ralph Loop](https://ghuntley.com/ralph/) — Geoffrey Huntley, July 2025
+- [Gas Town](https://github.com/gastownhall/gastown) — Steve Yegge, January 2026
