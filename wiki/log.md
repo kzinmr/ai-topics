@@ -2,7 +2,7 @@
 
 - **Source**: https://build.microsoft.com/en-US/sessions/BRK245 (Microsoft Build 2025, Peter Steinberger)
 - **Created**: `raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing.md` — Session transcript/summary with video link
-- **Created**: `concepts/build-the-thing-meta-development.md` — Meta-development pattern: build automation tools that enhance agent-driven development. Close Reaper, Octopus, Crab Box, Auto Review, Core Patch, Crab Fleet.
+- **Created**: `concepts/build-the-thing-meta-development.md` — Meta-development pattern: build automation tools that enhance agent-driven development. ClawSweeper, Octopus, Crab Box, Auto Review, Core Patch, Crab Fleet.
 - **Updated**: `entities/peter-steinberger.md` — Added BRK245 media appearance, new source
 - **Updated**: `index.md` — Added concept page + raw article entries
 

@@ -38,8 +38,8 @@ In the age of coding agents, the bottleneck shifts from "writing code faster" to
 
 ## The Tool Ecosystem
 
-### Close Reaper — Automated Issue Management
-When OpenClaw's GitHub issues exploded beyond 10,000, Steinberger built **Close Reaper** to automatically review, group, and close issues. By integrating project vision documents and clear automated rules, the system closed ~15,000 issues autonomously. It updates weekly through continuous code-agent reevaluation, ensuring lingering issues are resolved without direct human review.
+### ClawSweeper — Automated Issue Management
+When OpenClaw's GitHub issues exploded beyond 10,000, Steinberger built **ClawSweeper** to automatically review, group, and close issues. By integrating project vision documents and clear automated rules, the system closed ~15,000 issues autonomously. It updates weekly through continuous code-agent reevaluation, ensuring lingering issues are resolved without direct human review.
 
 ### Disk Crawl — Discord Community Crawler
 To collect data from community chats, built a Discord crawler that stores structured outputs directly in GitHub repositories for transparency and safe backup. This enables better management dashboards integrating both GitHub and Discord discussions to highlight true maintenance contribution beyond code commits.

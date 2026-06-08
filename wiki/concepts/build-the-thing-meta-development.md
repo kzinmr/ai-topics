@@ -42,7 +42,7 @@ Tools don't need to be production-quality. Small, rough prototypes that work acc
 The pattern produces tools across several categories, each addressing a different bottleneck:
 
 ### Issue & Project Management
-- **Close Reaper** — Automated issue triage using project vision docs + rules. Closed ~15,000 issues autonomously on OpenClaw. Weekly re-evaluation by code agents ensures lingering issues get resolved.
+- **ClawSweeper** — Automated issue triage using project vision docs + rules. Closed ~15,000 issues autonomously on OpenClaw. Weekly re-evaluation by code agents ensures lingering issues get resolved.
 - **Disk Crawl** — Discord community crawler. Stores structured outputs in GitHub for transparency. Enables dashboards integrating GitHub + Discord contribution metrics.
 
 ### API & Infrastructure Scaling
@@ -67,7 +67,7 @@ This pattern is a **meta-layer** of agentic engineering. While agentic engineeri
 
 ### Connection to [[concepts/agentic-loop|Agentic Loop]]
 Each tool in the ecosystem tightens a specific feedback loop:
-- Close Reaper tightens the **issue → resolution** loop
+- ClawSweeper tightens the **issue → resolution** loop
 - Auto Review tightens the **code → quality** loop
 - Crab Box tightens the **test → pass/fail** loop
 - Octopus tightens the **agent → API** loop

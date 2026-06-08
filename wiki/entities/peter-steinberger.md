@@ -183,7 +183,7 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 
 ### Talks & Interviews
 
-- **"Build the Thing That Builds the Thing"** (Jun 2026, Microsoft Build BRK245): 45-min breakout on the meta-development philosophy behind OpenClaw's automation ecosystem — Close Reaper (auto-closing 15K issues), Octopus (API token balancing), Crab Box (isolated cloud test infra), Auto Review (iterative agent self-review), Core Patch (parallel audits), Crab Fleet (multiplayer agent dev). [[raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing]]
+- **"Build the Thing That Builds the Thing"** (Jun 2026, Microsoft Build BRK245): 45-min breakout on the meta-development philosophy behind OpenClaw's automation ecosystem — ClawSweeper (auto-closing 15K issues), Octopus (API token balancing), Crab Box (isolated cloud test infra), Auto Review (iterative agent self-review), Core Patch (parallel audits), Crab Fleet (multiplayer agent dev). [[raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing]]
 - **"Builders Unscripted: Ep. 1 — Peter Steinberger, Creator of OpenClaw"** (Feb 2026): 31-min interview with Romain Huet (OpenAI). Covers OpenClaw's viral growth, building with Codex, "vibe coding" critique, and open source philosophy. Recorded prior to joining OpenAI. [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
 
 ## Related
