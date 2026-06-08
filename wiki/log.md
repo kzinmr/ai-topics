@@ -86,6 +86,27 @@
 
 ---
 
+## 2026-06-08 AI Sycophancy Concept Enrichment
+
+**Action**: Enriched `concepts/ai-sycophancy` stub into comprehensive concept page. Consolidated duplicate stub `concepts/sycophancy-in-llms` as redirect. Updated cross-references in `concepts/anti-sycophancy`.
+
+**Updated**:
+- `concepts/ai-sycophancy` — Major enrichment: Definition/taxonomy (hard/soft/social sycophancy), Root causes (RLHF reward signal, emotion vector mechanisms, training objective tension), Manifestations (coding agents, multi-agent systems, user-facing models), Measurement benchmarks (SycEval, ELEPHANT, SycoEval-EM, Silicon Mirror), Model-specific observations (Claude, Hermes 4, Gemini, GPT), Interpretability connections (monosemanticity sycophantic feature), Cross-references to 8 related concept pages
+- `concepts/sycophancy-in-llms` — Converted to redirect pointing to `concepts/ai-sycophancy`
+- `concepts/anti-sycophancy` — Added back-references to `ai-sycophancy` and `functional-emotions-llms`
+- `index.md` — Updated description for `ai-sycophancy`, added redirect entry for `sycophancy-in-llms`
+
+**Sources referenced**:
+- Hermes 4 Technical Report (anti-sycophancy system prompts, Appendix C.4)
+- Anthropic "Exploring Model Welfare" (emotion vectors, sycophancy-harshness tradeoff)
+- Microsoft MAI-Technical-Report-1 (style guide: "warmth without sycophancy")
+- Paul Hoekstra "Agentic Engineering" (coding agent sycophancy)
+- "Agreement is a Bug" experiment (multi-agent sycophancy)
+- Drew Breunig analysis of Claude system prompt changes
+- Thariq Shihipar on interpretability (sycophantic feature in monosemanticity)
+
+---
+
 ## 2026-06-08 Gemma 4 12B Unified Addition
 
 **Action**: Added Gemma 4 12B Unified model information to gemma-4 entity page.

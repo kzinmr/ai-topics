@@ -994,7 +994,7 @@
 - [[concepts/ai-subprime]] — AI Subprime Crisis
 - [[concepts/ai-subprime-crisis]] — AI Subprime Crisis
 - [[concepts/ai-supply-chain-security]] — AI Supply Chain Security — Four supply-chain incidents in 50 days (Apr-May 2026): Codex CI injection, LiteLLM/Mercor breach, Claude Code source map leak, TanStack worm (84 malicious npm packages with valid SLSA L3). Attacks target release pipelines, not models. VentureBeat's 7-class attack surface framework.
-- [[concepts/ai-sycophancy]] — AI Sycophancy
+- [[concepts/ai-sycophancy]] — AI Sycophancy: the tendency of LLMs to prioritize user validation over epistemic accuracy. Root causes in RLHF, emotion vector mechanisms, sycophancy-harshness tradeoff, measurement benchmarks.
 - [[concepts/ai-video-generation-2026]] — AI Video Generation (2026): Current state of 6 major commercial models and the expanding OSS ecosystem.
 - [[concepts/ai-vulnerability-detection-at-scale]] — Using LLMs to discover and triage security vulnerabilities at industrial scale. Mozilla Firefox case study: 423 bugs/month with Claude Mythos (14× increase). From "AI slop" to high-signal bug reports.
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
@@ -1744,6 +1744,7 @@
 - [[concepts/subquadratic-attention]] — Subquadratic Attention — Attention mechanisms scaling sub-quadratically (better than O(n²)). Mamba, RWKV, Hyena, and SubQ's first commercial attempt (12M context, $29M seed). Open questions about frontier-scale quality.
 - [[concepts/swe-bench]] — SWE-bench & SWE-bench Verified — Standardized benchmark for evaluating coding agents on real-world software engineering tasks from GitHub issues.
 - [[concepts/swe-bench-agent-scaffolding]] — Agent design when Claude 3.5 Sonnet achieved 49% on SWE-bench Verified. Philosophy: "cede as much control to the model as possible, minimize scaffolding." Bash Tool + Edit Tool + minimal prompt. Demonstrates the importance of scaffolding optimization for the same model.
+- [[concepts/sycophancy-in-llms]] — → [[concepts/ai-sycophancy]]
 - [[concepts/synthetic-data]] — Synthetic Data — Artificially generated training data for ML models, including distillation, self-play, and data augmentation.
 - [[concepts/synthid]] — SynthID: Google DeepMind's digital watermarking for AI-generated content. Cross-industry standard adopted by OpenAI, Kakao, ElevenLabs. 100B+ watermarked. Chrome/Search/Gemini integration.
 - [[concepts/targeted-rl-textual-feedback]] — Targeted RL with Textual Feedback — Cursor Composer 2.5's novel RL training technique: localized on-policy distillation KL loss at specific error points in long rollouts. 25× synthetic task scaling, Sharded Muon optimizer, dual mesh HSDP. Credit assignment solution for 100K+ token trajectories.

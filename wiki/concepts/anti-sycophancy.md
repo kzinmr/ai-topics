@@ -85,8 +85,10 @@ For agent builders deploying LLMs in high-stakes contexts (medical, legal, finan
 - How does anti-sycophancy interact with [[concepts/ai-autonomy-debate|agent autonomy]] — should agents actively push back against user misconceptions?
 
 ## Related
+- [[concepts/ai-sycophancy]] — the sycophancy phenomenon itself (causes, taxonomy, measurement)
 - [[concepts/ai-safety]] — broader safety landscape
 - [[concepts/alignment]] — the alignment problem
 - [[entities/anthropic]] — leading safety research; Claude shows lowest baseline sycophancy
 - [[concepts/agent-safety]] — safety patterns for autonomous agents
 - [[concepts/rlhf]] — reinforcement learning from human feedback (root cause)
+- [[concepts/functional-emotions-llms]] — emotion vectors and the sycophancy-harshness tradeoff
