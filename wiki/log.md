@@ -1,3 +1,11 @@
+## [2026-06-08] Microsoft Build BRK245 — Build the Thing That Builds the Thing
+
+- **Source**: https://build.microsoft.com/en-US/sessions/BRK245 (Microsoft Build 2025, Peter Steinberger)
+- **Created**: `raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing.md` — Session transcript/summary with video link
+- **Created**: `concepts/build-the-thing-meta-development.md` — Meta-development pattern: build automation tools that enhance agent-driven development. Close Reaper, Octopus, Crab Box, Auto Review, Core Patch, Crab Fleet.
+- **Updated**: `entities/peter-steinberger.md` — Added BRK245 media appearance, new source
+- **Updated**: `index.md` — Added concept page + raw article entries
+
 ## [2026-06-08] X Article Ingest — Kilo Code: Claude Opus 4.8 vs MiniMax M3 Code Audit Benchmark
 
 - **Source**: https://x.com/kilocode/status/2063719228499542327 (X Article, 293 likes, 138 bookmarks)
