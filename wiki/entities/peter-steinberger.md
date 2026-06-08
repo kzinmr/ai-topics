@@ -4,8 +4,8 @@ type: entity
 entity_type: person
 status: L3
 created: 2026-04-13
-updated: 2026-04-13
-sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md]
+updated: 2026-06-08
+sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md, raw/articles/2026-06-07_steipete-design-loops-dont-prompt.md]
 tags:
   - person
   - ai-agents
@@ -41,6 +41,15 @@ Peter Steinberger grew up in rural Austria and bootstrapped **PSPDFKit**, a mobi
 | 2026 | Prolific Open-Source | 15k+ GitHub stars across projects; 46k+ GitHub followers |
 
 ## Core Ideas
+
+### "Design Loops, Don't Prompt Agents" (Jun 2026)
+> "Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents." — @steipete, June 7, 2026
+
+Steinberger's progression from manual prompting to loop authoring mirrors Boris Cherny's three-stage evolution: from manual + autocomplete → parallel sessions → loop author. The key insight: **the reusable unit inside the loop is a skill, not a prompt**. A loop with no reusable skills is `while(true)` around a stranger. A loop that calls a library of sharp, tested, named skills is a system that compounds. This connects directly to his "Skills > Loops" thesis and [[concepts/agentic-loop|the broader loop evolution spectrum]].
+
+### Token Privilege & The Loop Access Gap (Jun 2026)
+
+In June 2026, a prominent tech commentator quoted Steinberger's loop thesis and added a structural observation: **perspectives on AI usage differ dramatically depending on whether you are token-rich or token-poor.** The idea of designing loops — running agents continuously on infrastructure time — comes from a place of incredible privilege: unlimited token budgets, AI startup access, and the freedom to let agents run indefinitely. For developers operating under tight token budgets or enterprise cost controls, loops are a luxury, not a default. This introduces a **loop access gap** that may stratify the developer community as agent infrastructure matures.
 
 ### "Ship Beats Perfect" — The AI-Native Developer Philosophy
 > "I don't read code anymore. I weave it."

@@ -127,6 +127,14 @@ As the model cost of writing code approaches zero, the cost of running the loop 
 
 > "The costliest thing in AI coding is no longer writing code, it's managing the agent loop." — @runes_leo, June 2026
 
+### The Loop Access Gap: Token-Rich vs Token-Poor
+
+In June 2026, a structural observation emerged around loop economics: **perspectives on AI usage differ dramatically depending on whether you are token-rich or token-poor.** The idea of designing loops — running agents continuously on infrastructure time, as advocated by [[entities/peter-steinberger|@steipete]] and [[entities/boris-cherny|Boris Cherny]] — comes from a place of significant privilege: unlimited token budgets, AI startup access, and the freedom to let agents run indefinitely. For developers operating under tight token budgets, enterprise cost controls, or in regions where API access is restricted, loops are a luxury, not a default.
+
+This introduces a **loop access gap** that may stratify the developer community as agent infrastructure matures: token-rich developers compound productivity through autonomous loop infrastructure, while token-poor developers remain constrained to single-shot prompting. The gap mirrors earlier infrastructure divides (broadband, cloud compute, GPU access) but may compound faster due to AI's multiplicative productivity effects.
+
+> "The idea of looping comes from a place of incredible privilege. Recommending that someone who works at an AI startup with unlimited tokens should design loops ignores that most developers don't have that luxury." — tech commentator, June 2026
+
 ### Three Hard Stops for Production Loops
 
 | Guard | Purpose |

@@ -2,7 +2,7 @@
 title: "Karpathy Writings & Blog Posts"
 tags: [person, writing]
 created: 2026-04-27
-updated: 2026-05-03
+updated: 2026-06-08
 type: entity
 ---
 
@@ -68,6 +68,13 @@ Single text note system in Apple Notes — no folders, no tagging, just CTRL+F. 
 
 ### Digital hygiene (Mar 2025)
 Systematic approach to digital security: 1Password + YubiKey + Brave + Signal + privacy.com + FileVault + NextDNS. Guiding principle: *"I wish to pay for the software I use so that incentives are aligned and so that I am the customer."* Covers authentication, browsing, email hygiene, financial privacy, device security.
+
+## X Articles (2026)
+
+### Do AGENTS.md Files Actually Help Coding Agents? (Jun 2026)
+Review of the paper "Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?" (arXiv:2602.11988). Key finding: LLM-generated context files don't improve task success — the agent harness generates necessary context on the fly. Developer-written context files are better than LLM-generated ones. Most surprising: using no context files is cheapest and most efficient. Context files primarily help with cross-session efficiency, not per-task accuracy. → [[concepts/agents-md-evaluation]]
+
+[[raw/articles/2026-06-07_karpathy-do-agents-md-help.md]]
 
 ## Older Blogs (karpathy.github.io)
 

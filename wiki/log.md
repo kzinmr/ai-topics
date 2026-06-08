@@ -1,3 +1,17 @@
+## [2026-06-08] X Bookmarks Ingest — AGENTS.md evaluation + Super-Agent thesis + Loop access gap
+
+- **Bookmark 1 — Karpathy AGENTS.md Evaluation (★★★★★):** Created `concepts/agents-md-evaluation.md` — Karpathy's review of arXiv:2602.11988 ("Evaluating AGENTS.md"). Key findings: LLM-generated context files don't improve task success (agent generates context dynamically); developer-written beat LLM-generated; no context file is cheapest. Introduced AGENTBENCH benchmark. Two-axis model: context files help cross-session efficiency, not per-task accuracy. Enriched `entities/karpathy-writings.md` with X Article entry.
+- **Bookmark 2 — Super-Agent Platform Thesis (★★★★★):** Created `concepts/super-agent-platform-thesis.md` — X Article (author unknown) analyzing the US super-agent vs Chinese super-app paradigm. B2B/B2C trust divide, "bilingual in trust" companies (MSFT/GOOG/AAPL vs Meta), Apple's permission moat (ATT cost Meta $10B, PCC, on-device), Palantir's efficacy-as-permission, permissioned agent layer concept.
+- **Bookmarks 3-4 — @steipete Loops + Token Privilege (★★★★☆):** Enriched `entities/peter-steinberger.md` with "Design Loops, Don't Prompt Agents" philosophy and "Token Privilege & The Loop Access Gap" section. Enriched `concepts/agentic-loop.md` with Loop Access Gap subsection: structural observation that designing loops requires token privilege, stratifying developer community.
+- **Bookmark 5 — LLM Workflow Tool Wishlist (★☆☆☆☆):** Skipped — feature wishlist with no external article URL, no scrapable content.
+
+- **Raw articles saved:** `2026-06-07_karpathy-do-agents-md-help.md`, `2026-06-04_super-agent-us-platform-thesis.md`, `2026-06-07_steipete-design-loops-dont-prompt.md`
+- **New concepts:** `agents-md-evaluation`, `super-agent-platform-thesis` (+2)
+- **Enriched entities:** `karpathy-writings`, `peter-steinberger`
+- **Enriched concepts:** `agentic-loop` (Loop Access Gap)
+- **Index updated:** Concepts 1491→1493, Total pages 2294→2296, Indexed entries 1788→1790
+- **Author note:** Bookmark 2 author unknown (xurl article lookup failed) — marked as "author unknown (X Article)" in concept page
+
 ## [2026-06-08] active-crawl — 3 new concept pages + DeepSeek-V4 enrichment
 - **Created:** `concepts/google-spacex-ai-compute-deal.md` — Google pays SpaceX $920M/month for 110K NVIDIA GPUs, 32-month deal; Anthropic's earlier Colossus 1 deal; SpaceX-xAI merger context ($1.25T valuation); Cursor $60B acquisition option
 - **Created:** `concepts/llms-eroding-software-careers.md` — Bearblog viral essay (991 HN pts, 948 comments): domain expertise, debugging, and code architecture systematically eroded by LLMs/coding agents across Claude 4.5→4.7, GPT-5.5, Opus 4.8 progression

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 2294 | Indexed entries: 1788 | Concepts: 1491 | Entities: 766
+> Last updated: 2026-06-08 | Total pages: 2296 | Indexed entries: 1790 | Concepts: 1493 | Entities: 766
 
 ## Entities (766 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -789,7 +789,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1491 pages)
+## Concepts (1493 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -896,6 +896,7 @@
 - [[concepts/agentic-web]] — Agentic Web — Web paradigm shift from human-facing to agent-facing
 - [[concepts/agentic-workflow-patterns]] — Agentic Workflow Patterns — 3 Levels, 4 Components, Archi...
 - [[concepts/agents-architecture-scaffolding]] — agents, architecture, scaffolding
+- [[concepts/agents-md-evaluation]] — AGENTS.md Evaluation — Do context files help coding agents? Karpathy's review of arXiv:2602.11988: LLM-generated context files don't improve task success (agent generates context dynamically); developer-written files beat LLM-generated; no context file is cheapest. Context files help cross-session efficiency, not per-task accuracy. Introduces AGENTBENCH benchmark.
 - [[concepts/agents-planning-orchestration]] — agents, planning, orchestration
 - [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] — agents, scaffolding, composition, inference-scaling, hypo...
 - [[concepts/agents-self-improvement-learning]] — agents, self-improvement, learning
@@ -1747,6 +1748,7 @@
 - [[concepts/subagent-patterns]] — How Agents Manage Other Agents: Four Subagent Patterns in 2026 — Survey of 4 dominant subagent coordination patterns: hierarchical, peer-to-peer, swarm, and manager-worker. Analysis by Sarah Chieng (@MilksandMatcha). Practical patterns from Claude Code, Codex, Devin, and OpenCode.
 - [[concepts/subagents]] — Subagents — Parallel AI Agent Delegation — Architecture pattern where a primary agent delegates sub-tasks to specialized sub-agents.
 - [[concepts/subquadratic-attention]] — Subquadratic Attention — Attention mechanisms scaling sub-quadratically (better than O(n²)). Mamba, RWKV, Hyena, and SubQ's first commercial attempt (12M context, $29M seed). Open questions about frontier-scale quality.
+- [[concepts/super-agent-platform-thesis]] — Super-Agent Platform Thesis — US AI's answer to the Chinese super-app: a permissioned agent layer bridging B2B/B2C trust divide. Apple's permission moat (ATT, PCC, on-device), Palantir's efficacy-as-permission, bilingual-trust companies (MSFT, GOOG, AAPL), platform divides (OS, payments, antitrust).
 - [[concepts/swe-bench-agent-scaffolding]] — Agent design when Claude 3.5 Sonnet achieved 49% on SWE-bench Verified. Philosophy: "cede as much control to the model as possible, minimize scaffolding." Bash Tool + Edit Tool + minimal prompt. Demonstrates the importance of scaffolding optimization for the same model.
 - [[concepts/swe-bench]] — SWE-bench & SWE-bench Verified — Standardized benchmark for evaluating coding agents on real-world software engineering tasks from GitHub issues.
 - [[concepts/sycophancy-in-llms]] — → [[concepts/ai-sycophancy]]
