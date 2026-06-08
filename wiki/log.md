@@ -7019,3 +7019,15 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Index summary**: Indexed entries 1830→1850, Concepts section header unchanged (1586 filesystem), section headers: Entities 772, Concepts 1586, Comparisons 26, Events 8, Queries 3
 - **Total stale pages**: 1264 (oldest at 59 days — entities/muse-spark)
 - **Unprocessed raw articles**: 4064/6850 (59.3%)
+
+## 2026-06-08 — LinkedIn article ingestion: Ido Pesok / Spice AI
+
+- **Source**: https://www.linkedin.com/pulse/verifying-agentic-development-scale-ido-pesok-meohc
+- **Raw article saved**: `raw/articles/2026-06-08_linkedin-ido-pesok_verifying-agentic-development-at-scale.md`
+- **New entity pages**:
+  - `entities/ido-pesok.md` — Co-founder Spice AI, later Cognition/Devin verification
+  - `entities/spice-ai.md` — Real-time verification platform for agentic code generation
+- **Updated pages**:
+  - `concepts/agentic-engineering.md` — Added source, Spice AI to tools, Ido Pesok to practitioners
+  - `index.md` — Added 2 entity entries, updated counts (773→775 entities, 1852→1854 indexed)
+- **Note**: Existing raw article `2026-05-29_ido-cognition_verifying-agentic-development-at-scale.md` covers the X/Devin version (Cognition). This LinkedIn article is the Spice AI version — same author, different company/stage.

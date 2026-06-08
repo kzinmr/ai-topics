@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-06-03
+updated: 2026-06-08
 type: concept
 tags:
   - concept
@@ -19,6 +19,7 @@ sources:
   - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
   - raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md
+  - raw/articles/2026-06-08_linkedin-ido-pesok_verifying-agentic-development-at-scale.md
 ---
 
 # Agentic Engineering
@@ -153,10 +154,12 @@ This mirrors the Amish barn-raising analogy from [[entities/tomasz-tunguz]]: ado
 - **[[entities/nico-gerold]]** — Cloud-background agent execution, skills as capabilities, postmortem introspection
 - **[[entities/bryan-bischof]]** — BBplot eval-driven development, scene graph, three-variations pattern
 - **[[entities/hamel-husain]]** — Skills ecosystem skepticism, MCP over skill files, skills security audit
+- **[[entities/ido-pesok]]** — Co-founder Spice AI; real-time verification stack (syntax, semantic, architectural); later Cognition/Devin cloud verification
 - **[[entities/matthew-honnibal]]** — Multi-pass agent architecture, effective context window findings, reward hacking detection
 
 ## Key Tools and Projects
 
+- [[entities/spice-ai]] — Real-time verification layer for agentic code generation (syntax, semantic, architectural compliance)
 - [[entities/roborev]] — Background code reviewer daemon (GPT-5.5)
 - [[entities/superpowers]] — Skills framework (Jesse Vincent)
 - [[entities/fastmcp]] — MCP tooling framework

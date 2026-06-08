@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-07 | Total pages: 9251 | Indexed entries: 1852 | Concepts: 1590 | Entities: 773
+> Last updated: 2026-06-08 | Total pages: 9253 | Indexed entries: 1854 | Concepts: 1590 | Entities: 775
 
-## Entities (772 pages)
+## Entities (774 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -356,6 +356,7 @@
 - [[entities/ian-nuttall]] — **URL:** https://ian.is
 - [[entities/ibrahim-diallo]] — **Ibrahim Diallo** (idiallo.com) — Software engineer, storyteller, and blogger. "The Machine Fired Me" essay (2017). Critiques AI token burn as productivity metric (May 2026). Pragmatic AI stance: "a capable tool, not a solution."
 - [[entities/iii-platform]] — Open-source backend engine that collapses distributed infrastructure into three primitives: Function, Trigger, Worker. Core thesis: the agent harness should BE the backend.
+- [[entities/ido-pesok]] — Co-founder Spice AI. Built real-time verification stack for agentic code generation. Later joined Cognition for Devin cloud verification.
 - [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever
 - [[entities/ibm]] — IBM (AI / watsonx) — Think 2026: watsonx Orchestrate agentic control plane, IBM Bob agentic dev partner, AI Operating Model (Agents/Data/Automation/Hybrid). Enterprise multi-agent governance.
 - [[entities/ibm-granite-embedding]] — IBM's dense embedding models (311M params, 32K context, ModernBERT architecture). Matryoshka Representation Learning support. Apache 2.0. 200+ languages, 9 programming languages.
@@ -572,6 +573,7 @@
 - [[entities/solo-founder-stack]] — Solo Founder Stack
 - [[entities/soundstream]] — **SoundStream (Google)** | Foundational neural audio codec. Fully convolutional encoder-decoder + RVQ, 3–18 kbps variable bitrate. Prototype for EnCodec, DAC, and later tokenizers.
 - [[entities/speech-tokenizer]] — **SpeechTokenizer (Fudan)** | Unified semantic + acoustic speech tokenizer. HuBERT-distilled layer 1 for semantic, remaining layers for acoustic. ~50 Hz, ~4 kbps. Designed for speech LLMs.
+- [[entities/spice-ai]] — Real-time verification platform for agentic code generation. Three-layer stack: syntax/type, semantic (LLM-based), architectural compliance. 94% catch rate. Co-founded by [[entities/ido-pesok]].
 - [[entities/spike]] — **URL:** https://supaiku.com
 - [[entities/sriraam-27upon2]] — Sriraam (@27upon2) — AI researcher, post-training research @ Chakra AI. Built rollouts CLI for open-source continual learning of coding agents using Prime Intellect + OpenCode + prime-rl, inspired by Cursor's real-time RL. See: [[concepts/real-time-rl|real-time-rl]], [[concepts/continual-learning|continual-learning]].
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
