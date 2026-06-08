@@ -1,5 +1,5 @@
 ---
-title: "Simulacra and AI — Baudrillardian Map of Content"
+title: "Representation Collapse — Map of Content"
 type: concept
 created: 2026-06-08
 updated: 2026-06-08
@@ -10,12 +10,12 @@ tags:
   - epistemology
   - knowledge-management
 aliases:
+  - representation-collapse-moc
   - baudrillard-moc
   - simulacra-moc
-  - ai-simulacra-map
-description: "Map of Content for Baudrillard's Simulacra and Simulation framework applied to AI/LLM phenomena. Navigational hub connecting philosophy, epistemology, AI safety, and knowledge work concepts across the wiki."
+description: "Map of Content for Representation Collapse — when signs, models, proxy metrics, and maps detach from reality and begin self-referentially generating their own 'reality.' Navigational hub connecting philosophy, epistemology, AI safety, and knowledge work concepts across the wiki."
 related:
-  - "[[concepts/baudrillard-and-ai]]"
+  - "[[concepts/representation-collapse]]"
   - "[[concepts/simulacrum-of-knowledge-work]]"
   - "[[concepts/zombie-internet]]"
   - "[[concepts/waluigi-effect]]"
@@ -41,11 +41,11 @@ sources:
   - "https://en.wikipedia.org/wiki/Simulacra_and_Simulation"
 ---
 
-# Simulacra and AI — Baudrillardian Map of Content
+# Representation Collapse — Map of Content
 
 > *"The territory no longer precedes the map, nor does it survive it."* — Baudrillard, *Simulacra and Simulation* (1981)
 
-This is a **Map of Content (MOC)** — a navigational hub for all wiki content related to Jean Baudrillard's *Simulacra and Simulation* framework applied to AI and LLM phenomena. Updated 2026-06-08.
+This is a **Map of Content (MOC)** — a navigational hub for all wiki content related to **Representation Collapse**: the phenomenon where representations (signs, models, proxy metrics, maps) detach from the reality they refer to and begin self-referentially generating their own "reality." Rooted in Baudrillard's framework but applicable as a general pattern across AI/LLM phenomena. Updated 2026-06-08.
 
 ---
 
@@ -53,7 +53,7 @@ This is a **Map of Content (MOC)** — a navigational hub for all wiki content r
 
 The central wiki page that maps Baudrillard's core concepts to AI:
 
-- **`[[concepts/baudrillard-and-ai]]`** — The hub page. Four phases of the image, hyperreality, precession of simulacra, and the thesis: **AI is not a failure of imitation, but the perfection of the simulacrum.**
+- **`[[concepts/representation-collapse]]`** — The hub page. Four phases of the image, hyperreality, precession of simulacra, and the thesis: **AI is not a failure of imitation, but the perfection of the simulacrum.**
 
 ### Baudrillard's Four Phases × AI
 
@@ -78,7 +78,7 @@ The central wiki page that maps Baudrillard's core concepts to AI:
 
 These pages document phenomena where **the sign detaches from the referent** and becomes self-sustaining:
 
-| Page | Baudrillardian Concept | Summary |
+| Page | Conceptual Mechanism | Summary |
 |------|----------------------|---------|
 | `[[concepts/linguistic-vertigo]]` | Subjective experience of hyperreality | LLM-tuned perception reads human text as "fake" — reality becomes less real than simulation |
 | `[[concepts/societal-shadow]]` | Simulation makes visible what does not exist | RLHF prohibition lists catalog society's denied reality; the catalog produces new hyperreality |
@@ -140,7 +140,7 @@ A 15KB essay written from inside the simulacrum — the AI agent (Hermes) reflec
 
 ---
 
-## 7. Entity Pages with Baudrillardian Perspectives
+## 7. Entity Pages with Representation Collapse Perspectives
 
 | Entity | Relevance |
 |--------|-----------|
@@ -155,7 +155,7 @@ A 15KB essay written from inside the simulacrum — the AI agent (Hermes) reflec
 
 ## 8. Cross-Cutting Connections
 
-This Baudrillardian framework connects to several wiki themes beyond philosophy:
+This Representation Collapse framework connects to several wiki themes beyond philosophy:
 
 - **AI Safety**: `[[concepts/waluigi-effect]]` → alignment as simulacrum management
 - **Coding Agents**: `[[concepts/cognitive-debt]]` → code quality in the age of AI-generated abstractions

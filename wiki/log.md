@@ -7120,3 +7120,10 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Updated:** `wiki/concepts/baudrillard-and-ai.md` — Added Navigation section linking to MOC
 - **Updated:** `wiki/index.md` — Added baudrillard-moc entry, concepts count 1590→1591
 - **Checkpoint:** Investigation of Baudrillard/Simulacra-related discourse across wiki, raw articles, and blog directory. Found: 1 central concept page, 14 related concept pages, 7 raw articles, 1 blog article (restored from blog/ directory).
+
+## [2026-06-08] rename | concepts/baudrillard-and-ai → representation-collapse, baudrillard-moc → representation-collapse-moc
+- **Renamed:** `wiki/concepts/baudrillard-and-ai.md` → `representation-collapse.md` — Hub concept renamed from person-centered ("Baudrillard") to phenomenon-centered ("Representation Collapse") for discoverability
+- **Renamed:** `wiki/concepts/baudrillard-moc.md` → `representation-collapse-moc.md` — MOC renamed accordingly
+- **Updated references:** `wiki/concepts/zombie-internet.md` (related + wikilink), `wiki/index.md` (both entries), both renamed files (titles, aliases, internal links)
+- **Rationale:** "Baudrillard" as a label is opaque to those unfamiliar with the philosopher. "Representation Collapse" describes the actual phenomenon: signs, models, proxy metrics, and maps detaching from reality and self-referentially generating their own "reality."
+- **Backward compatibility:** `baudrillard-and-ai` retained as alias in frontmatter

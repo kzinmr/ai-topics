@@ -1,20 +1,23 @@
 ---
-title: "Baudrillard and AI — Simulacra and Simulation in the Age of AI"
+title: "Representation Collapse — When Models, Maps, and Proxies Replace Reality"
 type: concept
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-06-08
 tags:
   - concept
   - philosophy
   - model
   - memetics
   - controversy
+  - epistemology
 aliases:
+  - representation-collapse
   - baudrillard-and-ai
   - AI and Simulacra
   - LLM-hyperreality
-description: "How Jean Baudrillard's concepts from 'Simulacra and Simulation' (1981) — the four phases of the image, hyperreality, the map preceding the territory ('precession of simulacra') — anticipate and explain AI phenomena in the LLM era. AI is not a failure of imitation, but the perfection of the simulacrum."
+description: "How representations (signs, models, proxy metrics, maps) detach from the reality they refer to and begin self-referentially generating their own 'reality.' Rooted in Baudrillard's Simulacra and Simulation (1981): the four phases of the image, hyperreality, and the precession of simulacra. Applied to LLM phenomena: hallucination is not a bug but an essential function of the simulacrum."
 related:
+  - "[[concepts/representation-collapse-moc]]"
   - "[[concepts/simulacrum-of-knowledge-work]]"
   - "[[concepts/waluigi-effect]]"
   - "[[concepts/illusion-of-thinking]]"
@@ -30,9 +33,9 @@ sources:
   - "https://en.wikipedia.org/wiki/Simulacra_and_Simulation"
 ---
 
-# Baudrillard and AI — Simulacra and Simulation in the Age of AI
+# Representation Collapse — When Models, Maps, and Proxies Replace Reality
 
-## Why Baudrillard
+## Why This Matters
 
 In 2026, Jimmy Maher (filfre.net) commented on Anthropic's experiment giving Claude control of a vending machine as follows:
 
@@ -163,7 +166,7 @@ The act of accumulating knowledge through dialogue with AI itself risks transfor
 
 ## Navigation
 
-→ **[[concepts/baudrillard-moc]]** — Baudrillardian Map of Content (MOC) — full navigational hub for all simulacra-related wiki pages.
+→ **[[concepts/representation-collapse-moc]]** — Representation Collapse Map of Content — full navigational hub for all related wiki pages.
 
 ---
 

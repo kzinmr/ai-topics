@@ -1060,8 +1060,8 @@
 - [[concepts/background-coding-agent]] — Background Coding Agent
 - [[concepts/base-consistency]] — BASE Consistency Model
 - [[concepts/base-consistency-model]] — BASE Consistency Model (redirect)
-- [[concepts/baudrillard-and-ai]] — Baudrillard and AI — The manifestation of Simulacra and Simulation in the AI era. Baudrillard's four-stage image theory, hyperreality, and the "precession of simulacra" (the map preceding the territory) applied to the LLM era. AI is not a failure of imitation but the perfected form of the simulacrum.
-- [[concepts/baudrillard-moc]] — Simulacra and AI — Baudrillardian Map of Content. Navigational hub connecting 15 wiki pages across 5 thematic clusters: philosophical framework, hyperreality, map-and-territory, illusions, and counter-strategies. Includes source articles, entity pages, and cross-cutting connections.
+- [[concepts/representation-collapse]] — Representation Collapse — When representations (signs, models, proxy metrics, maps) detach from reality and begin self-referentially generating their own "reality." Baudrillard's four-stage image theory, hyperreality, and the precession of simulacra applied to the LLM era. AI is not a failure of imitation but the perfected form of the simulacrum.
+- [[concepts/representation-collapse-moc]] — Representation Collapse — Map of Content. Navigational hub connecting 15 wiki pages across 5 thematic clusters: hyperreality, map-and-territory, illusions, counter-strategies, and epistemological inversion. Includes source articles, entity pages, and cross-cutting connections.
 - [[concepts/bayesian-agent-orchestration]] — ICML 2026 position paper: agentic AI orchestration should use Bayesian decision theory at the control layer. Maintain calibrated beliefs, update from human feedback, choose utility-maximizing actions. Addresses the "when to escalate to human" problem.
 - [[concepts/bayesian-reasoning]] — Bayesian Reasoning — Probabilistic inference framework
 - [[concepts/behavioral-trait-transmission]] — Subliminal Learning/Self-Reference in LLMs

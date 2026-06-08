@@ -19,7 +19,7 @@ related:
   - concepts/ai-slop
   - concepts/illusion-of-thinking
   - concepts/simulacrum-of-knowledge-work
-  - concepts/baudrillard-and-ai
+  - concepts/representation-collapse
 sources:
   - raw/articles/simonwillison.net--2026-may-11-zombie-internet--0bfce25b.md
   - https://simonwillison.net/2026/May/11/zombie-internet/
@@ -78,4 +78,4 @@ The Zombie Internet is closely related to the concept of [[concepts/ai-slop]] �
 
 - [[concepts/ai-slop]] — Low-quality AI-generated content
 - [[concepts/simulacrum-of-knowledge-work]] — Baudrillardian analysis of AI as knowledge simulacrum
-- [[concepts/baudrillard-and-ai]] — Philosophical framework for AI as simulation
+- [[concepts/representation-collapse]] — Philosophical framework for AI as simulation
