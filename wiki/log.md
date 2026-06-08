@@ -6,6 +6,7 @@
 - **Updated**: `concepts/reinforcement-learning.md` — Enriched stub to reference new concept page and related GRPO/RLHF pages
 - **Updated**: `index.md` — Added concept entry
 
+---
 ## [2026-06-08] On-Policy vs Off-Policy RL — Goldberg Analysis Ingestion
 
 - **Source**: Yoav Goldberg, "Reinforcement Learning for Language Models" (April 2023)
@@ -16,6 +17,7 @@
 - **Updated**: `SCHEMA.md` — Added `on-policy` tag to taxonomy
 - **Updated**: `index.md` — Added concept entry + updated Goldberg entity summary
 
+---
 ## [2026-06-08] Microsoft Build BRK245 — Build the Thing That Builds the Thing
 
 - **Source**: https://build.microsoft.com/en-US/sessions/BRK245 (Microsoft Build 2025, Peter Steinberger)
@@ -24,6 +26,7 @@
 - **Updated**: `entities/peter-steinberger.md` — Added BRK245 media appearance, new source
 - **Updated**: `index.md` — Added concept page + raw article entries
 
+---
 ## [2026-06-08] X Article Ingest — Kilo Code: Claude Opus 4.8 vs MiniMax M3 Code Audit Benchmark
 
 - **Source**: https://x.com/kilocode/status/2063719228499542327 (X Article, 293 likes, 138 bookmarks)
@@ -33,6 +36,7 @@
 - **Updated**: `concepts/claude-opus-4-8.md` — Added source, "Code Audit Benchmark vs MiniMax M3" section
 - **Updated**: `index.md` — Added raw article entry
 
+---
 ## [2026-06-08] X Bookmarks Ingest — AGENTS.md evaluation + Super-Agent thesis + Loop access gap
 
 - **Bookmark 1 — Karpathy AGENTS.md Evaluation (★★★★★):** Created `concepts/agents-md-evaluation.md` — Karpathy's review of arXiv:2602.11988 ("Evaluating AGENTS.md"). Key findings: LLM-generated context files don't improve task success (agent generates context dynamically); developer-written beat LLM-generated; no context file is cheapest. Introduced AGENTBENCH benchmark. Two-axis model: context files help cross-session efficiency, not per-task accuracy. Enriched `entities/karpathy-writings.md` with X Article entry.
@@ -47,6 +51,7 @@
 - **Index updated:** Concepts 1491→1493, Total pages 2294→2296, Indexed entries 1788→1790
 - **Author note:** Bookmark 2 author unknown (xurl article lookup failed) — marked as "author unknown (X Article)" in concept page
 
+---
 ## [2026-06-08] active-crawl — 3 new concept pages + DeepSeek-V4 enrichment
 - **Created:** `concepts/google-spacex-ai-compute-deal.md` — Google pays SpaceX $920M/month for 110K NVIDIA GPUs, 32-month deal; Anthropic's earlier Colossus 1 deal; SpaceX-xAI merger context ($1.25T valuation); Cursor $60B acquisition option
 - **Created:** `concepts/llms-eroding-software-careers.md` — Bearblog viral essay (991 HN pts, 948 comments): domain expertise, debugging, and code architecture systematically eroded by LLMs/coding agents across Claude 4.5→4.7, GPT-5.5, Opus 4.8 progression
@@ -57,6 +62,7 @@
 - **Crawl sources:** HN Algolia (15 trending AI articles), X/Twitter xurl (10 trending results), Wiki gap analysis (30 coverage gaps identified), Blogwatcher DB (50 recent articles)
 - **Top HN stories:** S&P 500 blocking AI firms (1457 pts), LLMs eroding SWE careers (991 pts), Meta AI chatbot hacked (696 pts), Anthropic vulnerability discovery (534 pts), Google-SpaceX compute deal (414 pts), DeepSeek V4 Pro benchmarks (284 pts)
 
+---
 ## [2026-06-08] blog-wiki-ingest — antirez LLM QA testing + Apple AI Philosophy + 3 reference enrichments
 - **Take 1**: Enriched [[entities/antirez-com]] — LLM Agents as QA Engineers section (Jun 7, 2026)
 - **Take 2**: Enriched [[concepts/apple]] — 24-line stub → 96-line concept page (Apple AI Philosophy, Pascal's Wager framework, $14B Capex analysis)
@@ -66,6 +72,7 @@
 - **Source articles**: raw/articles from antirez.com, thealgorithmicbridge.com, simonwillison.net, garymarcus.substack.com, geohot.github.io
 - **Archive**: `wiki/raw/archived/triage/blog/2026-06-08_20260608T070033Z.json`
 
+---
 ## [2026-06-08] Newsletter Ingestion: Project Solara + Trusted Access Biodefense enrichment
 
 - **Source**: The Signal (Alex Banks) newsletter - "Microsoft's Major Build, NVIDIA's Carry-On Cloud, and OpenAI's Plumbing Play"
@@ -74,6 +81,7 @@
 - **Triage decisions**: 1 take (Project Solara), 1 reference (Bioweapon Open Letter), 13 skips (existing wiki coverage)
 - **Raw article**: `wiki/raw/newsletters/2026-06-07-microsoft-s-major-build-nvidia-s-carry-on-cloud-and-openai-s-plumbing-play.md`
 - **Archive**: `wiki/raw/archived/triage/newsletter/2026-06-08_20260608T071020Z.json`
+---
 ## [2026-06-08] Updated: Agentic Loop — Loop Evolution Spectrum + Economics
 
 - **Source**: Matt Van Horn X Article "WTF Is a Loop? Peter Steinberger vs. Boris Cherny" (via @mvanhorn)
@@ -81,12 +89,14 @@
 - **Updated**: `wiki/concepts/agentic-loop.md` — added 5-stage loop evolution spectrum, Boris Cherny's 3 personal stages, "cron + decision-maker" framing, loop economics (Uber case study), skills > loops thesis, production hard stops
 - **Updated**: `wiki/index.md` — refreshed agentic-loop entry description
 
+---
 ## [2026-06-08] Enriched: Chinmay Karkar entity page
 
 - **Updated**: `wiki/entities/chinmay-karkar.md` (skeleton → full)
 - **Sources**: https://chinmaykarkar.com, https://x.com/chinmaykak, https://github.com/ChinmayK0607, https://arxiv.org/abs/2511.18394
 - **Added**: Profile (MSR India, career history), publications (AAAI 2026 workshop), projects (heiretsu, komorebi), blog posts, X/Twitter activity, research interests
 
+---
 ## [2026-06-08] Ingested: Chinmay Karkar OPD Survey ("The Imitation Game")
 
 - **Raw article**: `wiki/raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md`
@@ -96,6 +106,7 @@
 - **Source**: https://chinmaykarkar.com/blog/OPD_blog/
 - **Summary**: Comprehensive survey covering ~40 OPD papers from 2026. Added GKD, DistiLLM, G-OPD, AOPD, On-Policy Context Distillation methods to OPD page. Added SDFT, SDPO, GATES, CRISP, RLSD, CaOPD to OPSD page. Created dedicated failure modes concept page.
 
+---
 ## [2026-06-08] Ingested: LightOn GTE-ModernColBERT (PyLate SOTA late interaction model)
 
 - **Raw article**: `wiki/raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate.md`
@@ -104,6 +115,7 @@
 - **Source**: https://lighton.ai/lighton-blogs/lighton-releases-gte-moderncolbert-first-state-of-the-art-late-interaction-model-trained-on-pylate
 - **Date**: 2025-04-30 (publication date)
 
+---
 ## [2026-06-08] Ingested: Semantic IDs for Generative Search and Recommendation (Spotify Research)
 
 - **Raw article**: `wiki/raw/articles/2025-09-18_spotify-research_semantic-ids-generative-sr.md`
@@ -112,6 +124,7 @@
 - **Source**: https://research.atspotify.com/2025/9/semantic-ids-for-generative-search-and-recommendation
 - **Paper**: RecSys 2025 Late Breaking Results — Penha et al.
 
+---
 ## [2026-06-08] raw-backlog-ingest batch: 5 articles processed
 
 **Batch ID:** 20260608T040013Z | **5 articles** from backlog sorted by AI relevance.
@@ -126,6 +139,7 @@
 
 **Summary:** 1 new entity page created, 4 articles already captured. Dan Luu entity page adds systematic incident analysis expertise and cache failure mode documentation relevant to modern AI serving architectures.
 
+---
 ## [2026-06-08] blog: VISION.md Bitter Lesson
 
 - **Blog post created**: `blog/2026-06-08_hermes_vision-md-bitter-lesson.md`
@@ -133,6 +147,7 @@
 - **Summary**: steipeteの「I use a VISION.md」という一行を起点に、Rich SuttonのBitter Lessonを開発方法論に適用。検証ルールの精巧な設計（テスト、型チェック、LLM-as-judge）は人間設計の特殊的手法であり、VISION.mdに代表される「原則を渡して手段を委ねる」アプローチが計算力活用の一般的方法として長期的に勝つ。VISION.mdは検証文書ではなく同一性の文書。4つのパターン（問い、Negative Space、品味、North Star Question）を提案。
 - **Sources**: [[entities/peter-steinberger]], [[concepts/agentic-loop]], [[concepts/agentic-engineering]], [[concepts/generator-evaluator-pattern]], [[concepts/dynamic-workflows]], [[concepts/harness-commoditization]]
 
+---
 ## 2026-06-08 Codex Autocompaction Comment Addition
 
 **Action**: Added additional user testimonial from Ryan Lopopolo on the importance of autocompaction for headless agent operation.
@@ -245,6 +260,7 @@ Batch of 2 bookmarks. 1 processed (new enrichment), 1 already-processed (skip).
 - Action: Skip (fully ingested by prior pipeline)
 
 Wiki pages: +1 raw article, +1 sub-entity enriched. Total pages: 9250 (raw articles not counted in total).
+---
 ## 2026-06-07 X Accounts Scan — van Strien (polars-hf, uv-scripts-for-ai), Yan (security harness), Bakouch (Marin), Martin (Opus 4.8 tips)
 
 Batch of 11 new posts from X accounts scan (accounts_scanned=12, substantive_candidates=11). 8 AI-relevant posts processed across 4 contributors; 3 non-AI (Jonathan Whitaker DIY bio/music) skipped.
@@ -276,6 +292,7 @@ Batch of 11 new posts from X accounts scan (accounts_scanned=12, substantive_can
 
 Wiki pages: +4 concepts (polars-hf, uv-scripts-for-ai, defending-code-reference-harness, marin), +2 concept enriched (polars, claude-code-tips), +4 entity enriched. Total pages: 9248→9250.
 
+---
 ## 2026-06-07 Lance Martin Claude Opus 4.8 Tips — Entity + Concept Enrichment
 
 - **Scraped**: Two Claude Platform docs pages saved as raw articles
@@ -7122,6 +7139,7 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **cross-references**: [[concepts/ai-bubble-economics]], [[entities/openai]], [[entities/anthropic]], [[concepts/token-economics]]
 - **sources**: HN item 48421442 (1412 pts), Ars Technica, Bloomberg (48405718, 1050 pts), S&P Dow Jones Indices June 4 2026 decision
 
+---
 ## 2026-06-07 17:35 UTC — Watchdog Auto-Fix
 
 ### Pipeline Watchdog
@@ -7168,6 +7186,7 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Total stale pages**: 1264 (oldest at 59 days — entities/muse-spark)
 - **Unprocessed raw articles**: 4064/6850 (59.3%)
 
+---
 ## 2026-06-08 — LinkedIn article ingestion: Ido Pesok / Spice AI
 
 - **Source**: https://www.linkedin.com/pulse/verifying-agentic-development-scale-ido-pesok-meohc
@@ -7180,12 +7199,14 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
   - `index.md` — Added 2 entity entries, updated counts (773→775 entities, 1852→1854 indexed)
 - **Note**: Existing raw article `2026-05-29_ido-cognition_verifying-agentic-development-at-scale.md` covers the X/Devin version (Cognition). This LinkedIn article is the Spice AI version — same author, different company/stage.
 
+---
 ## [2026-06-08] create | concepts/baudrillard-moc — Simulacra and AI Map of Content
 - **Created:** `wiki/concepts/baudrillard-moc.md` — Baudrillardian Map of Content (MOC). Navigational hub connecting 15 wiki pages across 5 thematic clusters: (1) Philosophical Framework, (2) Hyperreality, (3) Map-and-Territory, (4) Illusions, (5) Counter-Strategies. Includes source articles, entity pages, blog article reference, and cross-cutting connections.
 - **Updated:** `wiki/concepts/baudrillard-and-ai.md` — Added Navigation section linking to MOC
 - **Updated:** `wiki/index.md` — Added baudrillard-moc entry, concepts count 1590→1591
 - **Checkpoint:** Investigation of Baudrillard/Simulacra-related discourse across wiki, raw articles, and blog directory. Found: 1 central concept page, 14 related concept pages, 7 raw articles, 1 blog article (restored from blog/ directory).
 
+---
 ## [2026-06-08] rename | concepts/baudrillard-and-ai → representation-collapse, baudrillard-moc → representation-collapse-moc
 - **Renamed:** `wiki/concepts/baudrillard-and-ai.md` → `representation-collapse.md` — Hub concept renamed from person-centered ("Baudrillard") to phenomenon-centered ("Representation Collapse") for discoverability
 - **Renamed:** `wiki/concepts/baudrillard-moc.md` → `representation-collapse-moc.md` — MOC renamed accordingly
@@ -7198,3 +7219,20 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **2026-06-08**: Updated `wiki/concepts/openenv.md` with 2026-06-08 blog post (HuggingFace). Added: community governance (9-org committee), RFCs 004-008, "protocol not reward framework" design philosophy, new supporters list, raw article `2026-06-08_huggingface_openenv-agentic-rl.md`. Updated GitHub URL from meta-pytorch to huggingface/OpenEnv. Updated `wiki/index.md` entry.
 
 - **2026-06-08**: Watchdog auto-fix on duplicate entities `koylan-ai` / `muratcan-koylan`. Fixed `koylan-ai.md` date anomaly (updated 04-10 → 04-24), added `related: [muratcan-koylan]` frontmatter and redirect wikilink in body. Updated `index.md` entry to show `(→ muratcan-koylan)` alias notation.
+---
+## [2026-06-08] Watchdog Auto-Fix — Index + Log Health
+
+**Fixed issues:**
+- Removed 2 duplicate index entries: entities/mixedbread, entities/thariq-shihipar
+- Updated Entities section header: 766 → 776
+- Updated Concepts section header: 1493 → 1604
+- Updated summary line: Total pages 2296→2417, Indexed entries 1790→1874
+- Added 21 missing log.md separators
+
+**Verification:**
+- Pipe corruption: 0 ✅
+- Line number prefix: 0 ✅
+- Triple brackets: 0 ✅
+- Ghost entries: 0 ✅
+- Duplicate entries: 0 ✅
+- validate_index.py: clean ✅

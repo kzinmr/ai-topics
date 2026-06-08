@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 2296 | Indexed entries: 1790 | Concepts: 1493 | Entities: 766
+> Last updated: 2026-06-08 | Total pages: 2417 | Indexed entries: 1874 | Concepts: 1604 | Entities: 776
 
-## Entities (766 pages)
+## Entities (776 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -442,7 +442,6 @@
 - [[entities/mimi]] — **Mimi (Kyutai)** | Ultra-low-rate streaming speech codec: 24 kHz → 12.5 Hz → 1.1 kbps, 80 ms latency. WavLM-distilled semantic layer. Designed for Moshi full-duplex spoken dialogue.
 - [[entities/minimax]] — MiniMax AI — Chinese AI company, M2.7 coding model scoring 56-59 on SWE-Bench Pro (open weights). Part of China's agentic coding sprint alongside Kimi K2.6 and Z.ai GLM-5.1.
 - [[entities/minimaxir-com]] — **Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at concepts/buzzfeed, where he has applied machine...
-- [[entities/mixedbread]] — Mixedbread — AI retrieval/search company. mxbai-embed series, Wholembed v3 (first semantic model to surpass BM25), Latent Terms research.
 - [[entities/mira-murati]] — **Role** | CEO & Co-founder, Thinking Machines Lab; Former CTO, OpenAI |
 - [[entities/mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
 - [[entities/mitchell-hashimoto]] — HashiCorp co-founder (Vagrant, Terraform, Vault), Ghostty creator. Left GitHub in 2026 citing instability from AI agent scale.
@@ -600,7 +599,6 @@
 - [[entities/thoughtful-lab]] — AI research lab exploring modelcrafting: autonomous AI agents improving other AI models. Landmark experiment "Letting AI Posttrain AI" (Apr 2026).
 - [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
 - [[entities/thin-bi-tool]] — Thinning BI tools — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
-- [[entities/thariq-shihipar]] — Thariq Shihipar (@trq212) — Member of Technical Staff at Anthropic, working on Claude Code. Co-authored dynamic workflows announcement. Previously YC W20, South Park Commons, MIT Media Lab.
 - [[entities/thomas-wiecki]] — Thomas Wiecki — CEO of PyMC Labs, PyMC core developer, co-host of Show Us Your Agent Skills. Vanishing Gradients Agentic Data Science episode (May 2026): Decision Engines, Multiplayer DS, Causal-Bayesian workflows. Bayesian statistics expert.
 - [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
 - [[entities/tim-davis]] — Tim Davis — Modular executive, Compound Loop creator. Originated "probabilistic engineering" and "24-7 employee" concepts. Key thinker on AI-native team restructuring and agent fleet orchestration.
@@ -789,7 +787,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1493 pages)
+## Concepts (1604 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
