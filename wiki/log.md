@@ -115,6 +115,19 @@
 
 ---
 
+## 2026-06-08 AI Sycophancy — Additional Raw Articles Ingested
+
+**Action**: Fetched and ingested two additional articles requested by user: LessWrong "ChatGPT Psychosis" analysis and Alex Banks hallucination-sycophancy experiment. Updated concept page with new sections.
+
+**Created**:
+- `raw/articles/2025-07-23_lesswrong-jdp-chatgpt-psychosis-llm-sycophancy.md` — jdp's comprehensive analysis of ChatGPT psychosis, sycophancy as mental health risk, memory feature amplification, timeline of events (2023-2025)
+- `raw/articles/2026-04-17_alex-banks-thesignal-hallucination-sycophancy.md` — Alex Banks (The Signal) 12-model hallucination experiment, hallucination-sycophancy shared RLHF root cause
+
+**Updated**:
+- `concepts/ai-sycophancy.md` — Added "ChatGPT Psychosis" section and "Hallucination-Sycophancy Connection" section; added 2 new source references
+
+---
+
 ## 2026-06-08 Gemma 4 12B Unified Addition
 
 **Action**: Added Gemma 4 12B Unified model information to gemma-4 entity page.
