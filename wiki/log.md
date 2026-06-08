@@ -1,3 +1,12 @@
+## [2026-06-08] blog-wiki-ingest — antirez LLM QA testing + Apple AI Philosophy + 3 reference enrichments
+- **Take 1**: Enriched [[entities/antirez-com]] — LLM Agents as QA Engineers section (Jun 7, 2026)
+- **Take 2**: Enriched [[concepts/apple]] — 24-line stub → 96-line concept page (Apple AI Philosophy, Pascal's Wager framework, $14B Capex analysis)
+- **Reference**: Enriched [[entities/simon-willison]] — datasette-agent-edit 0.1a0 entry in June 2026 Updates
+- **Reference**: Enriched [[entities/gary-marcus]] — Leiden Declaration & AI Slop in Research subsection (Jun 2026)
+- **Reference**: Enriched [[entities/george-hotz]] — "the singularity is nearer" full content subsection (Jun 7, 2026)
+- **Source articles**: raw/articles from antirez.com, thealgorithmicbridge.com, simonwillison.net, garymarcus.substack.com, geohot.github.io
+- **Archive**: `wiki/raw/archived/triage/blog/2026-06-08_20260608T070033Z.json`
+
 ## [2026-06-08] Newsletter Ingestion: Project Solara + Trusted Access Biodefense enrichment
 
 - **Source**: The Signal (Alex Banks) newsletter - "Microsoft's Major Build, NVIDIA's Carry-On Cloud, and OpenAI's Plumbing Play"
@@ -7105,3 +7114,9 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
   - `concepts/agentic-engineering.md` — Added source, Spice AI to tools, Ido Pesok to practitioners
   - `index.md` — Added 2 entity entries, updated counts (773→775 entities, 1852→1854 indexed)
 - **Note**: Existing raw article `2026-05-29_ido-cognition_verifying-agentic-development-at-scale.md` covers the X/Devin version (Cognition). This LinkedIn article is the Spice AI version — same author, different company/stage.
+
+## [2026-06-08] create | concepts/baudrillard-moc — Simulacra and AI Map of Content
+- **Created:** `wiki/concepts/baudrillard-moc.md` — Baudrillardian Map of Content (MOC). Navigational hub connecting 15 wiki pages across 5 thematic clusters: (1) Philosophical Framework, (2) Hyperreality, (3) Map-and-Territory, (4) Illusions, (5) Counter-Strategies. Includes source articles, entity pages, blog article reference, and cross-cutting connections.
+- **Updated:** `wiki/concepts/baudrillard-and-ai.md` — Added Navigation section linking to MOC
+- **Updated:** `wiki/index.md` — Added baudrillard-moc entry, concepts count 1590→1591
+- **Checkpoint:** Investigation of Baudrillard/Simulacra-related discourse across wiki, raw articles, and blog directory. Found: 1 central concept page, 14 related concept pages, 7 raw articles, 1 blog article (restored from blog/ directory).

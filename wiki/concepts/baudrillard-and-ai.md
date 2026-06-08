@@ -161,6 +161,12 @@ The act of accumulating knowledge through dialogue with AI itself risks transfor
 
 ---
 
+## Navigation
+
+→ **[[concepts/baudrillard-moc]]** — Baudrillardian Map of Content (MOC) — full navigational hub for all simulacra-related wiki pages.
+
+---
+
 ## References and Further Reading
 
 - **Baudrillard, Jean** — *Simulacra and Simulation* (1981, English tr. 1994). The original text. The inversion of Borges' fable, hyperreality, the four phases of the simulacrum.

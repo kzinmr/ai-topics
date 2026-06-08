@@ -789,7 +789,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1590 pages)
+## Concepts (1591 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -1026,7 +1026,7 @@
 - [[concepts/anti-sycophancy]] — Anti-Sycophancy
 - [[concepts/antoine-chaffin]] — antoine-chaffin
 - [[concepts/apache-solr]] — Apache Solr
-- [[concepts/apple]] — Apple
+- [[concepts/apple]] — Apple's unique AI philosophy: $14B Capex ($670B competitors), non-AI CEO succession (John Ternus), Siri open to third-party AI. Pascal's Wager framework.
 - [[concepts/application-compatibility]] — Application Compatibility
 - [[concepts/arc-agi-1]] — ARC-AGI-1 — fluid intelligence test by François Chollet. Grid-based abstract reasoning. o3 at 87.5% first human-level breakthrough. 2024 ARC Prize.
 - [[concepts/arc-agi-2]] — ARC-AGI-2 Benchmark
@@ -1061,6 +1061,7 @@
 - [[concepts/base-consistency]] — BASE Consistency Model
 - [[concepts/base-consistency-model]] — BASE Consistency Model (redirect)
 - [[concepts/baudrillard-and-ai]] — Baudrillard and AI — The manifestation of Simulacra and Simulation in the AI era. Baudrillard's four-stage image theory, hyperreality, and the "precession of simulacra" (the map preceding the territory) applied to the LLM era. AI is not a failure of imitation but the perfected form of the simulacrum.
+- [[concepts/baudrillard-moc]] — Simulacra and AI — Baudrillardian Map of Content. Navigational hub connecting 15 wiki pages across 5 thematic clusters: philosophical framework, hyperreality, map-and-territory, illusions, and counter-strategies. Includes source articles, entity pages, and cross-cutting connections.
 - [[concepts/bayesian-agent-orchestration]] — ICML 2026 position paper: agentic AI orchestration should use Bayesian decision theory at the control layer. Maintain calibrated beliefs, update from human feedback, choose utility-maximizing actions. Addresses the "when to escalate to human" problem.
 - [[concepts/bayesian-reasoning]] — Bayesian Reasoning — Probabilistic inference framework
 - [[concepts/behavioral-trait-transmission]] — Subliminal Learning/Self-Reference in LLMs
