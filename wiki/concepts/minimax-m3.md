@@ -1,7 +1,7 @@
 ---
 title: "MiniMax M3"
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-08
 type: concept
 tags:
   - model
@@ -13,6 +13,7 @@ aliases:
   - "M3"
 sources:
   - raw/articles/2026-06-02_together-ai_minimax-m3-efficient-inference.md
+  - raw/articles/2026-06-07_kilocode_audit-claude-opus-4-8-vs-minimax-m3.md
 ---
 
 # MiniMax M3
@@ -77,6 +78,22 @@ M2.7 was notable for self-directed improvement through autonomous experimentatio
 Together AI is actively working on:
 - **Kernel fusion** — MSA introduces many smaller kernels (top-k over KV blocks, q-kv remapping) with fusion opportunities. Their Kernel Agent Research team is developing agents that write production-grade kernels
 - **Disaggregated KV cache** — CPU offloading of k-index separately from KV cache, with on-demand loading based on top-k selection
+
+## Code Audit Benchmark vs Claude Opus 4.8 (June 2026)
+
+[[entities/kilo|Kilo Code]] ran a controlled code-audit benchmark comparing M3 against [[concepts/claude-opus-4-8|Claude Opus 4.8]] at four reasoning levels on a TypeScript webhook delivery service with 17 known issues ([source](https://x.com/kilocode/status/2063719228499542327)).
+
+| Model | Issues Found | Cost | Cost/Issue |
+|-------|-------------|------|------------|
+| **MiniMax M3** | 13/17 | $0.07 | $0.005 |
+| Opus 4.8 medium | 13/17 | $1.30 | $0.10 |
+| Opus 4.8 high | 13/17 | $1.93 | $0.15 |
+| Opus 4.8 xhigh | 15/17 | $2.03 | $0.14 |
+| Opus 4.8 max | 15/17 | $3.39 | $0.23 |
+
+M3 matched Opus 4.8 at medium and high (13/17) at ~1/18th the cost. It missed 3 issues that Opus caught (invalid JSON 500, import-time DB setup, async-in-sync transaction), but caught issues the cheaper Opus runs missed (secret-returning endpoint, delivery-list filter bug). M3 used 41–53% fewer tokens than any Opus run.
+
+**Key limitation**: M3 does not expose reasoning-level controls like Opus 4.8's Effort Control. Its single data point represents default behavior only.
 
 ## See Also
 

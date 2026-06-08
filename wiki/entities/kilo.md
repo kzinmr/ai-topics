@@ -3,7 +3,7 @@ title: Kilo (Kilo Code)
 type: entity
 aliases: [kilo-code, kilocode, kilo-ai, kilocli, kilo-cli, kiloclaw]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-08
 status: L2
 tags:
   - entity
@@ -18,6 +18,7 @@ sources:
   - https://kilo.ai/docs/code-with-ai/platforms/cli
   - https://kilo.ai/features
   - https://kilo.ai/features/cloud-agents
+  - https://x.com/kilocode/status/2063719228499542327
 related:
   - "[[entities/opencode]]"
   - "[[entities/openclaw]]"
@@ -120,6 +121,22 @@ Built-in marketplace for discovering and using MCP servers to extend agent capab
 | Cloud Agents | ✅ | ✅ (limited) | ❌ |
 | Code Review | ✅ Kilo Code Reviewer | ✅ GitHub integration | ✅ Auto-Review |
 | Enterprise | ✅ Teams + SSO | ❌ | ✅ (OpenAI) |
+
+## Research & Benchmarks
+
+### Code Audit: Claude Opus 4.8 vs MiniMax M3 (June 2026)
+
+Kilo Code published a controlled benchmark ([X Article](https://x.com/kilocode/status/2063719228499542327), 138 bookmarks) comparing [[concepts/claude-opus-4-8|Claude Opus 4.8]] at four reasoning levels against [[concepts/minimax-m3|MiniMax M3]] on a fixed TypeScript webhook service codebase with 17 known issues.
+
+| Model | Issues | Cost | Time |
+|-------|--------|------|------|
+| MiniMax M3 | 13/17 | $0.07 | 5m 03s |
+| Opus 4.8 medium | 13/17 | $1.30 | 3m 53s |
+| Opus 4.8 high | 13/17 | $1.93 | 4m 33s |
+| Opus 4.8 xhigh | 15/17 | $2.03 | 7m 26s |
+| Opus 4.8 max | 15/17 | $3.39 | 9m 24s |
+
+Key insight: raising reasoning level changed *where* the model focused attention more than *how much* it checked. MiniMax M3 achieved the same count as Opus medium/high at ~1/18th the cost. See [[raw/articles/2026-06-07_kilocode_audit-claude-opus-4-8-vs-minimax-m3]].
 
 ## KiloClaw (Hosted OpenClaw)
 

@@ -2,7 +2,7 @@
 title: "Claude Opus 4.8"
 type: concept
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-06-08
 tags:
   - concept
   - anthropic
@@ -15,6 +15,7 @@ tags:
 sources:
   - https://www.anthropic.com/news/claude-opus-4-8
   - raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.md
+  - raw/articles/2026-06-07_kilocode_audit-claude-opus-4-8-vs-minimax-m3.md
 ---
 
 # Claude Opus 4.8
@@ -82,6 +83,24 @@ The Messages API now accepts **system entries inside the messages array**. This 
 - Dynamically adjust permissions, token budgets, or environment context as an agent runs
 
 **Significance**: Previously, system prompts were fixed at session start. This change enables **dynamic agent reconfiguration** during long-running tasks — essential for [[concepts/agent-orchestration|agent orchestration]] workflows where permissions or constraints need to change based on intermediate results.
+
+## Code Audit Benchmark vs MiniMax M3 (June 2026)
+
+[[entities/kilo|Kilo Code]] ran a controlled code-audit benchmark comparing Opus 4.8 at four reasoning levels against [[concepts/minimax-m3|MiniMax M3]] on a TypeScript webhook delivery service with 17 known issues ([source](https://x.com/kilocode/status/2063719228499542327)).
+
+| Reasoning Level | Issues Found | Cost | Time |
+|----------------|-------------|------|------|
+| medium | 13/17 | $1.30 | 3m 53s |
+| high | 13/17 | $1.93 | 4m 33s |
+| xhigh | 15/17 | $2.03 | 7m 26s |
+| max | 15/17 | $3.39 | 9m 24s |
+
+**Key findings:**
+- **xhigh was the sweet spot** — best coverage (15/17) at reasonable cost ($2.03)
+- **max was not justified** — matched xhigh's count, cost 67% more, missed one finding xhigh caught
+- **Reasoning level changed attention focus, not just depth** — medium/high caught async-in-sync-transaction (xhigh/max missed it); xhigh caught secret-returning endpoint (max missed it)
+- **vs MiniMax M3** ($0.07, 13/17): M3 matched medium/high at ~1/18th the cost but trailed xhigh/max by 2 issues
+- Effort Control (introduced with Opus 4.8) was central to this experiment's design
 
 ## Related
 

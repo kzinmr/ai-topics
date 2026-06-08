@@ -1,3 +1,12 @@
+## [2026-06-08] X Article Ingest — Kilo Code: Claude Opus 4.8 vs MiniMax M3 Code Audit Benchmark
+
+- **Source**: https://x.com/kilocode/status/2063719228499542327 (X Article, 293 likes, 138 bookmarks)
+- **Created**: `raw/articles/2026-06-07_kilocode_audit-claude-opus-4-8-vs-minimax-m3.md` — Full article text from X Article API (tweet.fields=article)
+- **Updated**: `entities/kilo.md` — Added source, "Research & Benchmarks" section with code audit comparison table
+- **Updated**: `concepts/minimax-m3.md` — Added source, "Code Audit Benchmark vs Claude Opus 4.8" section
+- **Updated**: `concepts/claude-opus-4-8.md` — Added source, "Code Audit Benchmark vs MiniMax M3" section
+- **Updated**: `index.md` — Added raw article entry
+
 ## [2026-06-08] X Bookmarks Ingest — AGENTS.md evaluation + Super-Agent thesis + Loop access gap
 
 - **Bookmark 1 — Karpathy AGENTS.md Evaluation (★★★★★):** Created `concepts/agents-md-evaluation.md` — Karpathy's review of arXiv:2602.11988 ("Evaluating AGENTS.md"). Key findings: LLM-generated context files don't improve task success (agent generates context dynamically); developer-written beat LLM-generated; no context file is cheapest. Introduced AGENTBENCH benchmark. Two-axis model: context files help cross-session efficiency, not per-task accuracy. Enriched `entities/karpathy-writings.md` with X Article entry.
