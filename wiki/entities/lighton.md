@@ -13,6 +13,7 @@ tags:
   - france
 sources:
   - raw/articles/2026-04-21_antoine-chaffin_denseon-lateon-open-sota-retrieval.md
+  - raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate.md
   - https://lighton.ai/about-us
   - https://nextomoro.com/lighton/
 status: active
@@ -41,7 +42,7 @@ LightOn is a French enterprise AI company founded in 2016 by **Igor Carron** and
 - **[[entities/denseon-lateon|LateOn]]** (Apr 2026): Multi-vector ColBERT-style retriever, BEIR 57.22 — first ColBERT to break 57
 - **[[entities/denseon-lateon|DenseOn]]** (Apr 2026): Single-vector dense retriever, BEIR 56.20 — first <150M model past 56
 - **ColBERT-Zero**: Unsupervised ColBERT model, prior SOTA at 55.32
-- **GTE-ModernColBERT-v1**: Bi-directional late interaction improvements (2025)
+- **[[concepts/gte-moderncolbert|GTE-ModernColBERT-v1]]**: First SOTA late interaction model trained on PyLate, 8K context, BEIR 54.75 (2025)
 
 ### Tools & Libraries
 

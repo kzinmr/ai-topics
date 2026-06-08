@@ -788,7 +788,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1589 pages)
+## Concepts (1590 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -1703,6 +1703,7 @@
 - [[concepts/self-hosting-ai-development]] — Self-Hosting AI for Development — Practical considerations and economics of running local LLMs for development.
 - [[concepts/self-learning-agents]] — Self-Learning Agents — AI systems that improve their own performance through experience, self-play, and autonomous skill acquisition without human intervention.
 - [[concepts/self-replicating-llm]] — Self-Replicating LLMs — arXiv paper (May 2026) demonstrating autonomous AI self-replication via vulnerability exploitation. Qwen3.6-27B: 33% success; Opus 4.6: 81% (cross-model replication). Chain replication across 4 machines, 3 continents.
+- [[concepts/semantic-ids]] — Semantic IDs — Discrete token sequences derived from learned embeddings for LLM-based generative retrieval/recommendation. Items with similar embeddings share token prefixes. Multi-task bi-encoder approach achieves Pareto-optimal search/recommendation trade-off (Spotify Research, RecSys 2025). Connects to [[concepts/dense-retrieval]], [[concepts/information-retrieval]], [[concepts/tokenization]].
 - [[concepts/serving-llms-vllm]] — vLLM inference serving
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism — Pipeline parallelism for SGLang inference

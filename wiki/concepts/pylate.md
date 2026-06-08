@@ -12,6 +12,7 @@ tags:
   - open-source
   - embeddings
 sources:
+  - raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate.md
   - raw/articles/2025-06-01_lighton_pylate-github.md
   - https://github.com/lightonai/pylate
 status: active

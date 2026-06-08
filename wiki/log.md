@@ -1,3 +1,11 @@
+## [2026-06-08] Ingested: Semantic IDs for Generative Search and Recommendation (Spotify Research)
+
+- **Raw article**: `wiki/raw/articles/2025-09-18_spotify-research_semantic-ids-generative-sr.md`
+- **Concept page created**: `wiki/concepts/semantic-ids.md`
+- **Tags added to SCHEMA.md**: `spotify`, `recsys-2025`, `semantic-ids`, `generative-retrieval`
+- **Source**: https://research.atspotify.com/2025/9/semantic-ids-for-generative-search-and-recommendation
+- **Paper**: RecSys 2025 Late Breaking Results — Penha et al.
+
 ## [2026-06-08] raw-backlog-ingest batch: 5 articles processed
 
 **Batch ID:** 20260608T040013Z | **5 articles** from backlog sorted by AI relevance.

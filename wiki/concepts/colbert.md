@@ -152,7 +152,7 @@ Even the best ColBERT models leave a significant gap vs. perfect retrieval: ~12%
 | 2024 | **ColPali** | Late interaction for visual document retrieval (PDF images) |
 | 2025 | **answerai-colbert-small-v1** | 33M params, token pooling research |
 | 2025 | **mxbai-edge-colbert-v0** | 17M/32M params, CPU-practical ColBERT |
-| 2025 | **GTE-ModernColBERT-v1** | LightOn bi-directional improvements |
+| 2025 | **[[concepts/gte-moderncolbert\|GTE-ModernColBERT-v1]]** | First SOTA ColBERT on PyLate; first to beat ColBERT-small on BEIR; 8K context |
 | 2025 | **PyLate** | Flexible training + retrieval library |
 | 2026-03 | **Wholembed v3** | First semantic search exceeding BM25 (LIMIT Recall@5: 92.45) |
 | 2026-04 | **LIR Workshop @ ECIR 2026** | First academic workshop on late interaction |
