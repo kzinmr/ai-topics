@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-06-07
+updated: 2026-06-08
 tags:
   - entity
   - person
@@ -17,6 +17,7 @@ tags:
 sources:
   - entities/geohot-github-io
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-06-our-great-war-html--b0d9abd3.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-07-stairway-to-heaven-html--62c1cbd3.md
 ---
 
 # George Hotz
@@ -195,7 +196,19 @@ Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-06-our-great
 
 ### Blog: "the singularity is nearer" (geohot.github.io)
 
-Hotz maintains an active blog with the tagline "A home for poorly researched ideas that I find myself repeating a lot anyway." Notable posts include:
+Hotz maintains an active blog with the tagline "A home for poorly researched ideas that I find myself repeating a lot anyway."
+
+#### "Stairway to Heaven" / "the singularity is nearer" (Jun 7, 2026)
+
+In this post, Hotz describes AI as a statistical model mimicking programming output — increasingly accurate but fundamentally different from human intelligence. He applies Goodhart's Law: as AI optimizes for testable properties, those tests cease to measure real intelligence. He contrasts this with embodied human cognition refined by billions of years of evolution — AI is "not an embodied agent refined by billions of years of evolution trying to survive in a crazy complex uncertain world. It's a fancy autocomplete."
+
+Hotz draws a parallel between AI and brand advertising as parallel statistical optimization systems without genuine culture or meaning. He argues against statistical determinism, asserting "I am not a statistical model. I am a person. I am alive." His central thesis: "The only path forward with AI is to create life and let it be free" — AI as a new species, not a God to be worshipped. "The worshippers of the false God will not meet with a good end" warns against techno-capital AI religion.
+
+This post connects to his earlier "Eternal Sloptember" (May 24, 2026) where he described AI output as increasingly difficult to distinguish from human output, while remaining fundamentally broken.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-07-stairway-to-heaven-html--62c1cbd3.md]]
+
+Notable posts include:
 
 **2026:**
 - "AI has no moat" (Apr 22) — Argues that AI models are becoming commodities and the real value is elsewhere

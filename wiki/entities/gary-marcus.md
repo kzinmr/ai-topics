@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-07
+updated: 2026-06-08
 tags:
   - lab
   - benchmark
@@ -24,6 +24,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md
   - raw/articles/garymarcus.substack.com--p-why-things-will-eventually-fall-apart--aa0d561a.md
   - raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md
+  - raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md
 ---
 
 # Gary Marcus
@@ -127,6 +128,26 @@ On May 28, 2026, Marcus argued that the **enterprise tokenmaxxing boom may alrea
 
 This analysis extends Marcus's broader critique of AI hype into concrete financial and operational territory, moving from philosophical arguments about reliability to specific market indicators of overinvestment.
 
+### Leiden Declaration & AI Slop in Research (Jun 2026)
+
+On June 7, 2026, Marcus published "Slop, productivity, and why the AI-fueled world is going nowhere mighty fast," extending his critique of AI-generated content to the concept of productivity itself. Marcus argued that "AI generates a lot of output (which fits many people's informal notion of productivity), but it hasn't yielded much in the way of RoI for many companies," citing studies from MIT, McKinsey, Bain, and others showing no material GDP change.
+
+**Leiden Declaration (Jun 2026)**: A group of mathematicians published an open letter warning that "current automated techniques can produce plausible but unreliable (or even incorrect) arguments which are difficult to distinguish from correct mathematical proofs," as reported by the New York Times. Marcus cited this as evidence that his "slop" frame now extends to mathematics — AI-generated math slop threatening the peer review system.
+
+**Washington Post Data**: Marcus drew on Washington Post data showing similar patterns of volume-without-value across multiple domains:
+- **Books**: More books published but sales declined slightly over the same period
+- **Music**: Rise in music tracks uploaded without corresponding quality or revenue gains
+- **Scientific papers**: More papers submitted without evidence of improved science
+- **Self-represented lawsuits**: Increased filings without better legal outcomes
+- **Web content**: Explosion of AI-generated web content
+
+Marcus summarized the pattern: "we are being flooded with AI-generated content, from apps to music to scientific papers, but that doesn't make any of it any good."
+
+**Gerben Wierda Negative ROI Analysis**: In a new analysis, Gerben Wierda argued that Anthropic and OpenAI "may actually pay $1000 for every $100 you pay them" — a stark quantification of the negative unit economics for AI model providers. Marcus noted that providers (OpenAI, Anthropic, Cursor) "lose tons of money, and are scrambling to raise prices," while customers balk at new usage models. He connected this to the [[#Enterprise Tokenmaxxing Backlash (May 2026)|FT ROI data]] already documented on this page: "the one possible major productivity story (coding) also happens to be the one burning the most cash."
+
+Marcus also noted that Paul Krugman and Paul Kedrosky reached similar conclusions from different angles.
+
+Source: [[raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md]]
 
 ### Trump AI Preflight Checks Executive Order (Jun 2026)
 

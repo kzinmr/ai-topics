@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-06-06
+updated: 2026-06-08
 status: L3
-sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md, raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md, raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md, raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md]
+sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md, raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md, raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md, raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md, raw/articles/simonwillison.net--2026-jun-7-datasette-agent-edit--01ceb2d8.md]
 tags: [person, blogger]
 ---
 
@@ -421,3 +421,5 @@ See full article: [[raw/articles/simonwillison.net--2026-may-20-google-io--933c8
 Source: raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md
 
 **Andreas Kling on AI-Generated Code** (Jun 5, 2026): Simon highlighted Andreas Kling's announcement that the Ladybird browser project will stop accepting public pull requests due to the volume of AI-generated code submissions. This reflects a growing trend of open-source projects restricting contributions to maintain code quality in the face of low-effort AI-generated PRs. Source: raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md
+
+**datasette-agent-edit 0.1a0** (Jun 7, 2026): Simon released `datasette-agent-edit`, a base plugin for Datasette Agent implementing the Claude Text Editor pattern (view, str_replace, insert) for reusable agentic text editing. Designed as a plugin foundation for collaborative Markdown editing, large SQL query updates, and SVG file editing. Source: [[raw/articles/simonwillison.net--2026-jun-7-datasette-agent-edit--01ceb2d8.md]]

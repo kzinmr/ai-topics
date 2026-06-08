@@ -2,11 +2,12 @@
 title: "Salvatore Sanfilippo (antirez)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-26
+updated: 2026-06-08
 type: entity
 sources:
   - raw/articles/antirez.com--news-166--c7f12317.md
   - raw/articles/antirez.com--news-167--b10c3d4e.md
+  - raw/articles/antirez.com--news-168--a2772c92.md
 ---
 
 # Salvatore Sanfilippo (antirez)
@@ -253,6 +254,36 @@ This approach has the property that each model brings a "different perspective,"
 
 #### Source
 - raw/articles/antirez.com--news-167--b10c3d4e.md
+### LLM Agents as QA Engineers (June 2026)
+
+In "A new era for software testing" (June 7, 2026), antirez introduces LLM agents as an automated QA methodology — a practical response to the challenge of maintaining software quality in an era of AI-assisted programming.
+
+#### The Methodology
+
+The core approach is strikingly simple:
+
+1. **Create a Markdown file** describing QA tasks for an AI agent
+2. **Agent works as a QA engineer**, performing manual testing on new releases
+3. **For DwarfStar (DS4)**: The agent checks new commits, performs distributed inference tests across MacBooks, and checks for speed regressions (no need to specify expected speed — it's a moving target)
+4. **For Redis Arrays**: The agent builds an array-based application, sets up a production environment with replication and persistency, then simulates days of usage with many users
+5. **Psychological quality evaluation**: The agent identifies surprising features, undocumented behavior, and sloppy UX — "all things that needed to be executed manually before, and that most of the times were mostly skipped"
+
+#### Core Thesis
+
+> "LLMs offer a new way to do QA on top of the existing testing methodologies."
+
+antirez argues that automatic QA may raise the bar for software quality and compensate for lower code quality resulting from AI-assisted programming. As code is generated faster, the bottleneck shifts from writing to verification — and LLM agents, with their ability to understand context and exercise software like a human tester, fill a gap that traditional automated testing cannot cover.
+
+#### Significance
+
+- This is a concrete, pragmatic methodology — not a theoretical proposal — already applied to DS4 and Redis Arrays
+- The psychological quality dimension (identifying surprising features, undocumented behavior) is something traditional testing frameworks cannot do
+- It directly addresses the concern antirez himself raised about AI-assisted programming degrading code quality: if AI helps write code faster, AI can also help verify that code more thoroughly
+- Positions LLM agents as a complement to, not a replacement for, traditional testing frameworks
+
+#### Source
+- raw/articles/antirez.com--news-168--a2772c92.md
+
 
 - [[concepts/redis]] — His defining creation, the in-memory data store
 - [[concepts/systems-programming]] — His domain of expertise: C, memory management, performance
