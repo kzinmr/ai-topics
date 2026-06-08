@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-07 | Total pages: 9250 | Indexed entries: 1851 | Concepts: 1589 | Entities: 772
+> Last updated: 2026-06-07 | Total pages: 9250 | Indexed entries: 1851 | Concepts: 1590 | Entities: 772
 
 ## Entities (772 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -1060,6 +1060,7 @@
 - [[concepts/bayesian-agent-orchestration]] — ICML 2026 position paper: agentic AI orchestration should use Bayesian decision theory at the control layer. Maintain calibrated beliefs, update from human feedback, choose utility-maximizing actions. Addresses the "when to escalate to human" problem.
 - [[concepts/bayesian-reasoning]] — Bayesian Reasoning — Probabilistic inference framework
 - [[concepts/behavioral-trait-transmission]] — Subliminal Learning/Self-Reference in LLMs
+- [[concepts/benchmaxxing]] — Benchmaxxing — Community slang for models optimized for benchmark performance at the expense of real-world instruction following. Applied to Gemini, Qwen, and others. Rooted in Goodhart's Law dynamics.
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
 - [[concepts/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3. Multi-turn, multi-step function calling evaluation. State-based verification. GLM 4.5 leads at 76.7%.
 - [[concepts/bitsandbytes]] — bitsandbytes: Efficient LLM training library via NF4 quantization and double quantization.

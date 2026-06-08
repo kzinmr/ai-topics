@@ -3,7 +3,7 @@ title: Florian Brand
 type: entity
 handle: "@xeophon"
 created: 2026-04-10
-updated: 2026-05-13
+updated: 2026-06-08
 tags:
   - person
   - model
@@ -181,3 +181,4 @@ Brand's X activity (@xeophon) typically covers:
 3. **Infrastructure commentary** — Thoughts on compute access, GPU constraints, and the economics of AI training
 4. **Developer tools** — Recommendations for Python tooling, dependency management, and LLM-assisted workflows
 5. **Agentic development** — Observations on how AI agents are changing software engineering practices
+6. **Benchmaxxing criticism** — Calling out models (especially Gemini) where benchmark scores diverge from real-world instruction-following quality (e.g., [June 2026 post on Gemini](https://x.com/xeophon/status/2063157398450130963))

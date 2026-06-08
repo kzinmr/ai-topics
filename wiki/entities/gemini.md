@@ -2,7 +2,7 @@
 title: "Gemini"
 type: entity
 created: 2026-04-25
-updated: 2026-05-25
+updated: 2026-06-08
 tags: [model, multimodal, text-generation, image-generation, video-generation, google, world-models, ai-agents]
 aliases: ["Gemini models", "Google Gemini"]
 sources:
@@ -11,6 +11,7 @@ sources:
   - raw/articles/simonwillison.net--2026-may-19-gemini-35-flash--d5349c1f.md
   - raw/articles/2026-05-20_google_gemini-app-agentic.md
   - raw/articles/2026-05-20_google_gemini-omni.md
+- raw/articles/2026-06-08_xeophon-gemini-benchmaxxed-instruction-following.md
 ---
 # Gemini
 
@@ -202,6 +203,23 @@ Meanwhile, Anthropic has **Claude Code** and OpenAI has **Codex** — clean, foc
 ### Alderson's Verdict
 
 Google is playing a **genuinely different game** to OpenAI and Anthropic. Gemini 3.5 Flash only looks strange if you assume it's competing in the same race. With TPU advantage, research depth, and internal scale, Google could be "very hard to beat" — **if** it sorts out the agent-facing surface.
+
+## Benchmaxxing & Instruction-Following Criticism (2026)
+
+Gemini models have faced persistent community criticism for **high benchmark scores coupled with poor real-world instruction following** — a pattern the community calls [[concepts/benchmaxxing|benchmaxxing]].
+
+**Florian Brand (@xeophon)** (June 8, 2026):
+> "Gemini is an amazing model, the benchmarks don't lie. It's super smart. But it is very stubborn; it isn't good at instruction following and does things its way. That's why people say it's benchmaxxed."
+
+The core tension: Gemini scores well on standardized [[concepts/ifeval|IFEval]] and other benchmarks, but in practice users report that it frequently:
+- Ignores format or structure requests
+- Adds unsolicited content or takes its own approach
+- Struggles with multi-step agentic tasks requiring precise instruction compliance
+- Underperforms on tool use compared to benchmark expectations
+
+This aligns with Martin Alderson's analysis of Google's **coding agent confusion** — without a coherent, focused agent product (like Claude Code or Codex), Google lacks the real-world feedback loop (telemetry, user corrections) that helps competing models improve instruction following.
+
+The benchmaxxing label has also been applied to Gemini 3 Pro specifically, with users noting that "benchmarks don't reflect real-world experiences, especially regarding tool use."
 
 ## Competition with OpenAI
 

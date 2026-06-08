@@ -1,3 +1,18 @@
+## 2026-06-08 Benchmaxxing Concept + Gemini Critique
+
+**Action**: Ingested @xeophon tweet on Gemini's benchmaxxing problem. Created benchmaxxing concept page, updated Gemini entity with instruction-following criticism, updated Florian Brand entity.
+
+**Created**:
+- `concepts/benchmaxxing` — New concept page explaining benchmark over-optimization phenomenon
+- `raw/articles/2026-06-08_xeophon-gemini-benchmaxxed-instruction-following.md` — Raw source
+
+**Updated**:
+- `entities/gemini` — Added "Benchmaxxing & Instruction-Following Criticism" section
+- `entities/florian-brand` — Added benchmaxxing criticism to X Activity Themes
+- `index.md` — Added benchmaxxing concept entry
+
+---
+
 ## 2026-06-08 Gemma 4 12B Unified Addition
 
 **Action**: Added Gemma 4 12B Unified model information to gemma-4 entity page.
