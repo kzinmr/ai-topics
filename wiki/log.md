@@ -7133,3 +7133,5 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Updated references:** `wiki/concepts/zombie-internet.md` (related + wikilink), `wiki/index.md` (both entries), both renamed files (titles, aliases, internal links)
 - **Rationale:** "Baudrillard" as a label is opaque to those unfamiliar with the philosopher. "Representation Collapse" describes the actual phenomenon: signs, models, proxy metrics, and maps detaching from reality and self-referentially generating their own "reality."
 - **Backward compatibility:** `baudrillard-and-ai` retained as alias in frontmatter
+
+- **2026-06-08**: Weekly tag audit auto-fix. Added `optimization` to SCHEMA.md taxonomy (113 uses), mapped `agentic-data-science` → `data-science` and `ndcg` → `evaluation` in TAG_NORMALIZATION. Deleted 18 one-off non-SCHEMA tags. Normalized 433 wiki pages via tag_normalization.py. Fixed 24 additional files (transcripts, queries, events). Removed `]` artifact from entities/xjdr.md. Total: 467 files modified, zero non-SCHEMA tags remaining.
