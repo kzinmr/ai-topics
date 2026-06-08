@@ -23,6 +23,7 @@ related:
 sources:
   - raw/articles/2026-01-23_openai-unrolling-the-codex-agent-loop.md
   - https://x.com/_lopopolo/status/2042626474750988487
+  - https://x.com/_lopopolo/status/2046606006470533299
   - https://x.com/trekedge/status/2042444753980330398
 ---
 
@@ -155,6 +156,7 @@ The compacted block **replaces** the original history, freeing context window sp
 ### User Testimonials
 
 - **Ryan Lopopolo** ([@_lopopolo](https://x.com/_lopopolo), April 2026): "This is the truth. Autocompaction in Codex is so good I never think about context windows anymore."
+- **Ryan Lopopolo** ([@_lopopolo](https://x.com/_lopopolo), April 2026): "The reason Codex’s autocompaction is so important is it means you can run agents headlessly w/o a HITL with very long horizons and still get high quality output. Imagine if you had to closely supervise everyone on your team to delete their brain when they got stupid. Ridiculous!"
 - **Daniel Steigman** ([@trekedge](https://x.com/trekedge), April 2026): "Pro tip: keep the same thread running as long as you want codex will handle context for you. My oldest thread is 60+ days old and over 59MB"
 
 ---
