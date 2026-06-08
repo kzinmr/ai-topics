@@ -2,11 +2,15 @@
 title: "Muratcan Koylan (Koylan AI)"
 tags: [context-engineering]
 created: 2026-04-24
-updated: 2026-04-10
+updated: 2026-04-24
 type: entity
+related:
+  - muratcan-koylan
 ---
 
 # Muratcan Koylan (Koylan AI)
+
+> **Redirect/alias:** This page is a duplicate of [[entities/muratcan-koylan]]. The canonical page has more complete metadata and coverage. Please update links to point to `muratcan-koylan` instead.
 
 **URL:** https://muratcankoylan.com
 **Blog:** muratcankoylan.com

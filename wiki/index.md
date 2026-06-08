@@ -397,7 +397,7 @@
 - [[entities/khe-hy]] — Khe Hy is a writer and thinker focused on organizational AI adoption strategies.
 - [[entities/kieran-klaassen]] — General Manager of Cora, Every's AI email assistant. Author of "Compound Engineering: The Definitive Guide", creator of the compound-engineering-plugin (7K+ stars).
 - [[entities/kilo]] — Open-source AI coding platform forked from OpenCode. Apache-2.0, VS Code + JetBrains + CLI, 500+ models (Kilo Gateway), hosted OpenClaw (KiloClaw). Teams/SSO/Analytics. Inline completions, Cloud Agents, code review.
-- [[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
+- [[entities/koylan-ai]] — (→ [[entities/muratcan-koylan]] — duplicate/alias)
 - [[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
 - [[entities/kyle-jeong]] — Kyle Jeong (@kylejeong) — Growth Engineer at Browserbase, UCLA CS/Math student. KP Fellow. Writes about AI infra: Firecracker microVMs, agent sandboxing, browser automation, Kubernetes, Transformers.
 - [[entities/lance-martin]] — Lance Martin — Anthropic MTS (Applied AI), previously LangChain. Author of context engineering 4-strategy taxonomy (Write/Select/Compress/Isolate), agent design patterns, reduce-offload-isolate framework. Claude Opus 4.8 tips: mid-conversation system messages, xhigh effort for long-horizon agents, explicit tool triggering. Co-author of Anthropic's managed agents and context engineering posts. PhD Stanford.
