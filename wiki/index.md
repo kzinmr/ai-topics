@@ -1175,6 +1175,7 @@
 - [[concepts/cognitive-load-tool-support]] — Cognitive Load Tool Support — Agentic Engineering & Tooling
 - [[concepts/cognitive-surrender]] — Cognitive Surrender: The psychological mechanism by which AI output becomes one's own output without verification. Shaw & Nave (Wharton 2026) + Addy Osmani. The individual-level mechanism of simulacrum-ification and cognitive debt formation.
 - [[concepts/colbert]] — ColBERT (Late Interaction Retrieval): neural IR architecture with MaxSim token-level scoring. Outperforms single-vector models with 1/60th the parameters on agentic search (BrowseComp-Plus), superior OOD generalization (ViDoRe), and order-of-magnitude data efficiency. Key tradeoffs: 32x storage, two-step retrieval pipeline.
+- [[concepts/gte-moderncolbert]] — GTE-ModernColBERT: LightOn's open-source multi-vector retrieval model (2025). First SOTA ColBERT trained on PyLate, first to beat ColBERT-small on BEIR (54.75). 8K context via ModernBERT architecture + knowledge distillation on MS MARCO.
 - [[concepts/company-ai-pilled]] — Company AI-Pilled
 - [[concepts/compound-engineering-every]] — Compound Engineering (Every) — Dan Shipper/Every framework: AI-native development where existing components are orchestrated rather than rebuilt. Single-person teams ship multi-component products. Open-source compound-engineering-plugin (14K+ stars). See [[concepts/agent-native-architecture]] and [[concepts/folder-is-the-agent]].
 - [[concepts/compound-engineering-loop]] — Compound Engineering Loop
@@ -1854,6 +1855,8 @@
 - [[raw/articles/2026-06-07_sp500-ai-company-exclusion]] — S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic (Ars Technica, June 6 2026). HN #1 at 1412 pts. S&P Dow Jones Indices refuses to bend profitability/IWF/seasoning rules for MegaCap IPOs.
 - [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]] — Claude Platform Docs: Mid-conversation system messages — Add or update system instructions partway through a conversation without invalidating the cached prefix. Opus 4.8 only. Use cases: mid-session policy changes, per-turn authoritative context, user input during agentic loops. Companion: [[entities/lance-martin]], [[concepts/claude-code-tips]]
 - [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]] — Claude Platform Docs: Prompting best practices for Claude Opus 4.8. Covers effort parameter tuning (xhigh for coding agents, high as minimum), adaptive thinking migration, tool use triggering, literal instruction following, long-horizon agent patterns. Companion: [[entities/lance-martin]], [[concepts/claude-code-tips]]
+- [[raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate]] — LightOn Releases GTE-ModernColBERT — First SOTA late-interaction model trained on PyLate. 8K context, first to beat ColBERT-small on BEIR. ModernBERT + knowledge distillation on MS MARCO. Companion: [[concepts/gte-moderncolbert]], [[entities/lighton]]
+
 ## Transcripts (32 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]

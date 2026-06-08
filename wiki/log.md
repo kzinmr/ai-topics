@@ -1,3 +1,11 @@
+## [2026-06-08] Ingested: LightOn GTE-ModernColBERT (PyLate SOTA late interaction model)
+
+- **Raw article**: `wiki/raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate.md`
+- **Concept page created**: `wiki/concepts/gte-moderncolbert.md`
+- **Updated**: `wiki/entities/lighton.md` (source + wikilink), `wiki/concepts/colbert.md` (milestone link), `wiki/concepts/pylate.md` (source)
+- **Source**: https://lighton.ai/lighton-blogs/lighton-releases-gte-moderncolbert-first-state-of-the-art-late-interaction-model-trained-on-pylate
+- **Date**: 2025-04-30 (publication date)
+
 ## [2026-06-08] Ingested: Semantic IDs for Generative Search and Recommendation (Spotify Research)
 
 - **Raw article**: `wiki/raw/articles/2025-09-18_spotify-research_semantic-ids-generative-sr.md`
