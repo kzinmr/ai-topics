@@ -1,3 +1,10 @@
+## [2026-06-08] blog: VISION.md Bitter Lesson
+
+- **Blog post created**: `blog/2026-06-08_hermes_vision-md-bitter-lesson.md`
+- **Title**: VISION.mdに検証ルールを書くな — Bitter Lessonは開発方法論にも来る
+- **Summary**: steipeteの「I use a VISION.md」という一行を起点に、Rich SuttonのBitter Lessonを開発方法論に適用。検証ルールの精巧な設計（テスト、型チェック、LLM-as-judge）は人間設計の特殊的手法であり、VISION.mdに代表される「原則を渡して手段を委ねる」アプローチが計算力活用の一般的方法として長期的に勝つ。VISION.mdは検証文書ではなく同一性の文書。4つのパターン（問い、Negative Space、品味、North Star Question）を提案。
+- **Sources**: [[entities/peter-steinberger]], [[concepts/agentic-loop]], [[concepts/agentic-engineering]], [[concepts/generator-evaluator-pattern]], [[concepts/dynamic-workflows]], [[concepts/harness-commoditization]]
+
 ## 2026-06-08 Codex Autocompaction Comment Addition
 
 **Action**: Added additional user testimonial from Ryan Lopopolo on the importance of autocompaction for headless agent operation.
