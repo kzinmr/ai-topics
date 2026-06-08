@@ -1,3 +1,11 @@
+## [2026-06-08] Newsletter Ingestion: Project Solara + Trusted Access Biodefense enrichment
+
+- **Source**: The Signal (Alex Banks) newsletter - "Microsoft's Major Build, NVIDIA's Carry-On Cloud, and OpenAI's Plumbing Play"
+- **Created**: `wiki/concepts/project-solara.md` - Microsoft's chip-to-cloud platform for agent-first devices (Build 2026). Qualcomm wearable badge + MediaTek desk hub reference designs. Just-in-time UI. Multi-agent ecosystem. Pilots with Best Buy, CVS Health, Target.
+- **Updated**: `wiki/concepts/trusted-access-biodefense.md` - Added DNA Screening Open Letter section (Sam Altman, Dario Amodei, Demis Hassabis joint letter to Congress on synthetic DNA screening mandate)
+- **Triage decisions**: 1 take (Project Solara), 1 reference (Bioweapon Open Letter), 13 skips (existing wiki coverage)
+- **Raw article**: `wiki/raw/newsletters/2026-06-07-microsoft-s-major-build-nvidia-s-carry-on-cloud-and-openai-s-plumbing-play.md`
+- **Archive**: `wiki/raw/archived/triage/newsletter/2026-06-08_20260608T071020Z.json`
 ## [2026-06-08] Updated: Agentic Loop — Loop Evolution Spectrum + Economics
 
 - **Source**: Matt Van Horn X Article "WTF Is a Loop? Peter Steinberger vs. Boris Cherny" (via @mvanhorn)

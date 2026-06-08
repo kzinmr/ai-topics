@@ -2,7 +2,7 @@
 title: "Trusted Access Biodefense"
 type: concept
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-06-08
 tags:
   - ai-safety
   - evaluation
@@ -70,9 +70,24 @@ The Rosalind Biodefense initiative reflects OpenAI's broader strategy of **trust
 
 > "We believe frontier AI should meaningfully advantage those defenders—and that doing so requires responsible deployment structures and trusted access models that put advanced capabilities in the hands of vetted partners."
 
+## DNA Screening Open Letter (June 2026)
+
+On June 2026, the CEOs of the three leading AI labs — **Sam Altman** (OpenAI), **Dario Amodei** (Anthropic), and **Demis Hassabis** (Google DeepMind) — issued a joint open letter to the U.S. Congress urging mandatory screening of synthetic DNA orders. The letter argues:
+
+- AI models can now **outperform PhD-level virologists** on highly technical laboratory questions
+- This could erode the **knowledge barrier** that long kept bioweapons out of reach
+- Capability is spread across rival labs — **safety refusals cannot be relied upon** at the model level
+- The **manufacturing chokepoint** is synthetic DNA: screening DNA orders sits outside the AI and provides a verifiable control point
+- Recommended policy is mandatory screening of all synthetic DNA orders rather than relying on voluntary compliance
+
+> "Screening the DNA works because it sits outside the AI."
+
+The letter represents a rare instance of **cross-competitor cooperation** on biosecurity policy, with the three CEOs coordinating their message to Congress rather than competing on safety positioning.
+
 ## Related
 
 - [[entities/openai]] — Parent organization
 - [[concepts/evaluation-harness-validity]] — Evaluation methodology for frontier models
 - [[entities/caisi]] — U.S. AI standards partner
 - [[concepts/ai-safety]] — Broader safety framework
+- [[concepts/gpt-rosalind]] — OpenAI's life sciences research model for biodefense

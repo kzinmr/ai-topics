@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 9253 | Indexed entries: 1854 | Concepts: 1590 | Entities: 775
+> Last updated: 2026-06-08 | Total pages: 9254 | Indexed entries: 1855 | Concepts: 1591 | Entities: 775
 
 ## Entities (774 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -1640,6 +1640,7 @@
 - [[concepts/process-reward-models-agent-eval]] — Process Reward Models for Agent Evaluation — PRM-based evaluation
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling (PTC) — LLMs write Python code to orchestrate multiple tool calls in sandboxes instead of sequential per-tool round-trips. 87-92% token reduction, 3 AWS implementations (ECS+Docker, AgentCore, Anthropic proxy).
 - [[concepts/project-lightwell]] — Project Lightwell — IBM and Red Hat $5B open-source security initiative with 20,000+ AI-augmented engineers. Trusted Enterprise Clearinghouse model. Early adopters: 11 major banks. May 2026.
+- [[concepts/project-solara]] — Project Solara — Chip-to-cloud platform from Microsoft for agent-first devices. Qualcomm wearable badge + MediaTek desk hub reference designs. Just-in-time UI. Multi-agent ecosystem. Pilots with Best Buy, CVS Health, Target. Announced Build 2026.
 - [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.
 - [[concepts/prompt-engineering-evaluation]] — The need for quantitative evaluation of prompt engineering. Sean Goedecke's o3 GeoGuessr experiment: benchmark proof that famous "magic prompts" underperform simple default prompts.
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt — Prompts decay silently with model upgrades, making them a worse form of technical debt than code. Minimal prompting philosophy vs. harness engineering debate. Sean Goedecke (May 2026).
