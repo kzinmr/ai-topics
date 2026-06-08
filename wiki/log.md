@@ -1,3 +1,13 @@
+## 2026-06-08 Codex Autocompaction User Testimonials
+
+**Action**: Ingested user testimonials from X/Twitter praising Codex's autocompaction feature. Updated `concepts/codex-agent-loop.md` with new sources and user feedback section.
+
+**Updated**:
+- `concepts/codex-agent-loop.md` — Added user testimonials section with quotes from Ryan Lopopolo and Daniel Steigman, added X/Twitter sources
+- `log.md` — Added this entry
+
+---
+
 ## 2026-06-08 Benchmaxxing Concept + Gemini Critique
 
 **Action**: Ingested @xeophon tweet on Gemini's benchmaxxing problem. Created benchmaxxing concept page, updated Gemini entity with instruction-following criticism, updated Florian Brand entity.
