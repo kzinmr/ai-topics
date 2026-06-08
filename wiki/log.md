@@ -1,3 +1,18 @@
+## 2026-06-08 Gemma 4 E4B Daily Driver Ingest — @xeophon Tweet
+
+**Action**: Ingested @xeophon's tweet endorsing Gemma 4 E4B 6-bit as 24/7 local model on Mac via LM Studio.
+
+**Raw article created**:
+- `raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md` — Tweet + use case analysis (rewrite/summarize/translate as killer local use case)
+
+**Entity pages updated**:
+- `entities/gemma-4.md` — Added full 4-model lineup (E2B/E4B/26B A4B/31B) specs table, E4B benchmarks vs Gemma 3 27B, GGUF quantization details (lmstudio-community, 1M+ downloads), daily-driver adoption section with @xeophon quote. Updated sources and See Also links.
+- `index.md` — Updated gemma-4 entry summary to reflect E4B daily-driver adoption
+
+**Source**: https://x.com/xeophon/status/2063581687590649888 (691 likes, 423 bookmarks, 55K impressions)
+
+---
+
 ## 2026-06-07 X Bookmarks Ingest — Omar Khattab ColBERT Hypernetwork Vision
 
 Batch of 2 bookmarks. 1 processed (new enrichment), 1 already-processed (skip).

@@ -2,7 +2,7 @@
 title: Google Gemma 4
 type: entity
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-06-08
 tags:
   - entity
   - model
@@ -25,7 +25,10 @@ related:
 - speculative-decoding
 sources:
 - raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
+- raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md
 - https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
+- https://huggingface.co/google/gemma-4-E4B-it
+- https://huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF
 ---
 
 # Google Gemma 4
@@ -34,10 +37,14 @@ Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-d
 
 ## Model Specifications
 
-| Model | Type | Parameters | Use Case |
-|-------|------|------------|----------|
-| Gemma 4 26B | MoE | 26 billion | Advanced reasoning, agentic workflows |
-| Gemma 4 31B | Dense | 31 billion | High-performance local deployment |
+| Model | Architecture | Parameters | Context | Modalities | Use Case |
+|-------|-------------|------------|---------|------------|----------|
+| Gemma 4 E2B | Dense + PLE | 2.3B effective (5.1B w/ embeddings) | 128K | Text, Image, Audio | On-device / mobile |
+| Gemma 4 E4B | Dense + PLE | 4.5B effective (8B w/ embeddings) | 128K | Text, Image, Audio | On-device / laptop daily driver |
+| Gemma 4 26B A4B | MoE | 25.2B total (3.8B active) | 256K | Text, Image | Local coding / agentic workflows |
+| Gemma 4 31B | Dense | 30.7B | 256K | Text, Image | Workstation-grade reasoning |
+
+The "E" in E2B/E4B stands for "effective" parameters — Per-Layer Embeddings (PLE) give each decoder layer its own small embedding table, maximizing parameter efficiency for on-device deployment. The "A" in 26B A4B stands for "active" parameters (8 active / 128 total experts + 1 shared).
 
 ## Key Capabilities
 
@@ -64,6 +71,47 @@ Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-d
 - Competitive response to proprietary models
 - Part of Google's open model strategy
 - Apache 2.0 licensing removes barriers compared to Meta's restrictive Llama license
+
+## Gemma 4 E4B: The On-Device Sweet Spot
+
+The E4B variant has emerged as a practical daily-driver model for on-device use, particularly on Apple Silicon via LM Studio.
+
+### Benchmark Performance (E4B)
+
+| Benchmark | E4B | E2B | Gemma 3 27B (no think) |
+|-----------|-----|-----|------------------------|
+| MMLU Pro | 69.4% | 60.0% | 67.6% |
+| AIME 2026 (no tools) | 42.5% | 37.5% | 20.8% |
+| LiveCodeBench v6 | 52.0% | 44.0% | 29.1% |
+| GPQA Diamond | 58.6% | 43.4% | 42.4% |
+| MMMLU | 76.6% | 67.4% | 70.7% |
+| MATH-Vision | 59.5% | 52.4% | 46.0% |
+
+Notably, E4B outperforms the previous-generation Gemma 3 27B across all benchmarks despite having ~6× fewer effective parameters.
+
+### GGUF Quantization (lmstudio-community)
+
+The [lmstudio-community GGUF](https://huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF) package provides three quantization levels:
+
+| Quantization | Use Case | Downloads |
+|---|---|---|
+| Q4_K_M | Minimum VRAM | — |
+| Q6_K | Quality/speed sweet spot | — |
+| Q8_0 | Maximum fidelity | — |
+
+Total downloads: 1M+ (as of June 2026). Also includes `mmproj-gemma-4-E4B-it-BF16.gguf` for vision support.
+
+### Daily Driver Adoption (June 2026)
+
+Florian Brand (@xeophon, Research Engineer at Prime Intellect, Interconnects editor) publicly switched to Gemma 4 E4B 6-bit as his always-loaded local model on Mac via LM Studio, replacing Qwen3 and 3.5 4B after ~9 months of usage:
+
+> *"Gemma 4 E4B 6bit is now the local model of my choice and loaded 24/7 on my Mac (using @lmstudio), replacing Qwen3, 3.5 4B after ~9 months of usage"*
+
+The killer use case for local models was identified as latency-sensitive text transformation tasks: **rewrite, summarize, translate** — where local models "win in latency" over cloud alternatives.
+
+This represents a notable endorsement: an ML practitioner with deep benchmark expertise choosing a model not for benchmark scores but for practical daily utility on consumer hardware.
+
+**Source**: [raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md](raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md), [@xeophon on X](https://x.com/xeophon/status/2063581687590649888) (691 likes, 423 bookmarks)
 
 ## What Makes an Open Model Succeed
 
@@ -157,15 +205,21 @@ See also: [[concepts/speculative-decoding]], [Google Blog: Accelerating Gemma 4 
 
 ## Sources
 |- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
+|- raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md
 |- 
 |- Google DeepMind announcement
+|- Google Gemma 4 E4B model card: huggingface.co/google/gemma-4-E4B-it
+|- lmstudio-community GGUF: huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF
 |- Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
 |- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
+|- Florian Brand (@xeophon), X post on Gemma 4 E4B daily driver (June 7, 2026)
 
 ## See Also
 
+- [[florian-brand]] — Research Engineer who endorsed Gemma 4 E4B as daily local model.
 - [[pi-coding-agent]] — Minimal coding agent by Mario Zechner that runs with Gemma 4 via LM Studio.
 - [[mistral-ai]] — Competing open-weight model provider with Mistral Medium 3.5.
 - [[open-models]] — Open-weight model ecosystem and licensing landscape.
 - [[concepts/coding-agents]] — AI agents for software engineering tasks.
+- [[concepts/local-llm]] — Local LLM deployment patterns and use cases.
 - [[lmstudio]] — Local model serving tool for running Gemma 4 on consumer hardware.
