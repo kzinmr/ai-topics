@@ -1,19 +1,37 @@
 ---
 title: "Reinforcement Learning"
 type: concept
-tags: [concept]
+tags:
+  - concept
+  - reinforcement-learning
 status: complete
-description: "Fundamental concepts of RL. See rlhf.md for details."
+description: "Fundamental concepts of RL applied to LLM training."
 created: 2026-04-14
-updated: 2026-04-24
+updated: 2026-06-08
 related:
   - "[[concepts/rlhf]]"
   - "[[concepts/chatgpt-memory-bitter-lesson]]"
-sources: []
+sources:
+  - raw/articles/2026-06-08_arjunkocher_rl-algorithm-questions.md
 ---
 
 # Reinforcement Learning
 
-> **Moved:** Content moved to [[concepts/rlhf]]. 
+> Core RL concepts as applied to LLM post-training and alignment.
 
-Details: [[concepts/rlhf]]
+## Overview
+
+Reinforcement Learning in the LLM context covers policy optimization (PPO, GRPO, DPO), reward design (verifiable, LLM-as-judge, process vs outcome), advantage estimation (GAE, group-normalized), and the exploration-exploitation trade-off between training-time and test-time scaling.
+
+## Key Topics
+
+- [[concepts/rl-algorithms-for-llm-training]] — Comprehensive Q&A covering Actor-Critic, PPO, GRPO, KL divergence, advantage estimation, reward design, and algorithm variants
+- [[concepts/grpo]] — Group Relative Policy Optimization (DeepSeek-R1)
+- [[concepts/grpo-rl-training]] — GRPO as an RL backbone with method variants
+- [[concepts/rlhf]] — Reinforcement Learning from Human Feedback
+- [[concepts/trl-transformer-reinforcement-learning]] — TRL library for RL-based LLM training
+
+## Related Pages
+
+- [[concepts/reward-hacking]] — Reward hacking vulnerabilities in RL training
+- [[concepts/chatgpt-memory-bitter-lesson]] — The Bitter Lesson applied to RL

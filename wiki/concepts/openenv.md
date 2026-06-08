@@ -2,7 +2,7 @@
 title: "OpenEnv (Agent Environments Standard)"
 type: concept
 created: 2026-05-09
-updated: 2026-05-26
+updated: 2026-06-08
 status: L2
 tags:
   - ai-agents
@@ -11,8 +11,11 @@ tags:
   - open-source
   - huggingface
   - evaluation
+  - protocol
+  - agent-training
 sources:
   - "[[raw/articles/2025-10-23_huggingface_openenv]]"
+  - "[[raw/articles/2026-06-08_huggingface_openenv-agentic-rl]]"
 related:
   - "[[concepts/agent-environments]]"
   - "[[concepts/reinforcement-learning]]"

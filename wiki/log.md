@@ -1,3 +1,11 @@
+## [2026-06-08] RL Algorithm Questions — Arjun Kocher (@arjunkocher)
+
+- **Source**: https://www.k-a.in/rl-algo.html — Comprehensive Q&A on RL algorithms for LLM training, based on Xiuyu Li's question compilation
+- **Created**: `raw/articles/2026-06-08_arjunkocher_rl-algorithm-questions.md` — Full article text (262 lines, KaTeX math + code)
+- **Created**: `concepts/rl-algorithms-for-llm-training.md` — Concept page covering Actor-Critic vs pure policy, KL/cross-entropy/MLE equivalence, reward design taxonomy, importance/rejection sampling, PPO vs GRPO advantage estimation, PPO clipping mechanics (CISPO), KL penalty rationale (DAPO/GSPO removal), RL training vs test-time scaling exploration
+- **Updated**: `concepts/reinforcement-learning.md` — Enriched stub to reference new concept page and related GRPO/RLHF pages
+- **Updated**: `index.md` — Added concept entry
+
 ## [2026-06-08] On-Policy vs Off-Policy RL — Goldberg Analysis Ingestion
 
 - **Source**: Yoav Goldberg, "Reinforcement Learning for Language Models" (April 2023)
