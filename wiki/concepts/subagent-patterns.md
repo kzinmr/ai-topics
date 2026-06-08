@@ -1,7 +1,7 @@
 ---
 title: "Subagent Patterns"
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-06-08
 type: concept
 tags:
   - ai-agents
@@ -23,6 +23,7 @@ sources:
   - https://www.philschmid.de/subagent-patterns-2026
   - https://spring.io/blog/2026/01/27/spring-ai-agentic-patterns-4-task-subagents/
   - https://nevo.systems/blogs/nevo-journal/ai-subagents
+  - raw/articles/2026-06-02_irldanb_fan-out-fan-in-subagent-pattern.md
 description: "Architectural patterns for how main agents manage and coordinate subagents, ranging from simple inline tool calls to persistent multi-agent teams with direct inter-agent communication."
 ---
 
@@ -53,6 +54,8 @@ The main agent dispatches multiple tasks and independently decides when to colle
 - **Best For:** Multiple independent concurrent tasks with no intermediate result dependencies
 - **Limitations:** Model must know when to wait; calling `wait_agent` immediately after spawning negates parallelism
 - **Model Requirements:** Works with smaller models, but needs good planning capability
+
+**Fan-out-fan-in insight (irl_danB, Jun 2026):** The deeper value of fan-out isn't just parallel execution speed ("token spraying"), but **parallel reasoning diversity**. Each branch explores the same problem from a different angle or methodology, and results are merged. The branches aren't just doing independent work — they're providing diverse perspectives on the same problem. This is closer to ensemble methods than simple parallelism. (@irl_danB, quoting @dexhorthy)
 
 ### Pattern 3: Agent Pool — Persistent Messaging
 
@@ -103,3 +106,4 @@ The main agent acts as a high-level supervisor. It sets up the team and steps ba
 - [Philipp Schmid — "How Agents Manage Other Agents: Four Subagent Patterns in 2026"](https://www.philschmid.de/subagent-patterns-2026)
 - [Spring AI — "Agentic Patterns Part 4: Subagent Orchestration"](https://spring.io/blog/2026/01/27/spring-ai-agentic-patterns-4-task-subagents/)
 - [Nevo Systems — "AI Subagents: What They Are, How They Work & Why They Matter"](https://nevo.systems/blogs/nevo-journal/ai-subagents)
+- [@irl_danB — "Fan-out-fan-in: the more important subagent pattern"](https://x.com/irl_danB/status/2061605758551335081) (Jun 2026) — Insight that fan-out's deeper value is parallel reasoning diversity, not just parallel execution speed

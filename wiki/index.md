@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 2417 | Indexed entries: 1874 | Concepts: 1604 | Entities: 776
+> Last updated: 2026-06-08 | Total pages: 2420 | Indexed entries: 1875 | Concepts: 1604 | Entities: 777
 
-## Entities (776 pages)
+## Entities (777 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -61,6 +61,7 @@
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/isaac-flath]] — Isaac Flath — AI product engineer, educator. Pi Harness: RLM + late interaction retrieval (PyLate) + REPL-as-Context. "Retrieval First Agentic Systems." AI Engineering Club founder.
 - [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
+- [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum

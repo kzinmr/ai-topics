@@ -1,3 +1,15 @@
+## [2026-06-08] X Bookmarks Ingest — RLHF deep-dive + subagent fan-out insight
+
+- **Bookmark 1**: X Article "What every programmer should know about RLHF" by @itsreallyvivek (Vivek)
+- **Saved**: `raw/articles/2026-06-07_itsreallyvivek_rlhf-what-every-programmer-should-know.md` — Full 10KB article via `article.plain_text`
+- **Enriched**: `concepts/rlhf.md` (102→157 lines) — Added reward model training internals (Bradley-Terry model with formulas), RL loop KL penalty rationale (actor-critic metaphor), failure modes section (reward hacking, distributional shift, labeler bias), and post-RLHF landscape (DPO, Constitutional AI, RLAIF)
+- **Created**: `entities/itsreallyvivek.md` — New person entity for the RLHF article author
+- **Updated**: `index.md` — Added itsreallyvivek entity entry; bumped counts (Entities: 776→777, Indexed: 1874→1875, Pages: 2417→2420)
+
+- **Bookmark 2**: @irl_danB tweet on subagent fan-out-fan-in pattern (quoting @dexhorthy)
+- **Saved**: `raw/articles/2026-06-02_irldanb_fan-out-fan-in-subagent-pattern.md` — Insight that fan-out's deeper value is parallel reasoning diversity, not just parallel execution
+- **Enriched**: `concepts/subagent-patterns.md` — Added fan-out-fan-in insight under Pattern 2 (Fan-Out); updated frontmatter (source, date)
+
 ## [2026-06-08] RL Algorithm Questions — Arjun Kocher (@arjunkocher)
 
 - **Source**: https://www.k-a.in/rl-algo.html — Comprehensive Q&A on RL algorithms for LLM training, based on Xiuyu Li's question compilation
