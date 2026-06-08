@@ -199,6 +199,7 @@
 - [[entities/cats-with-power-tools]] — **URL:** https://blog.pixelmelt.dev (primary), https://blog.exploit.cat (secondary)
 - [[entities/chad-nauseam-home]] — **Blog** | chadnauseam.com |
 - [[entities/charles-frye]] — **X** | @charles_irl |
+- [[entities/chinmay-karkar]] — Chinmay Karkar — Researcher and blogger. Published comprehensive OPD survey (June 2026) covering ~40 papers on On-Policy Distillation in LLM training. Blog: chinmaykarkar.com
 - [[entities/chiark-greenend-org-uk-sgtatham]] — **Born** | 3 May 1977, United Kingdom (via Grokipedia) | RSS excluded (2026-05-20, AI content rare)
 - [[entities/china-ai-industry]] — China has emerged as the world's dominant force in AI implementation, robotics deployment, and embodied AI. While the U.S. leads in foundational AI models and semiconductor design, China excels at ...
 - [[entities/chip-huyen]] — **URL:** https://huyenchip.com/
@@ -1586,6 +1587,7 @@
 - [[concepts/on-device-rag]] — On-Device RAG — Executing the entire RAG pipeline locally on user devices for privacy, offline availability, and reduced latency. ECG model (Killingback et al., 2026) unifies retrieval and context compression with shared representations, achieving 16× compression while matching standard RAG reader performance.
 - [[concepts/on-policy-distillation]] — On-Policy Distillation (OPD) — Post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL. Introduced by Kevin Lu / Thinking Machines Lab (Oct 2025). 9-30× compute reduction vs SFT, 50-100× vs RL.
 - [[concepts/on-policy-self-distillation]] — On-Policy Self-Distillation (OPSD) — Same-model self-distillation with teacher seeing ground-truth as privileged context. JSD_β loss, token-level supervision. ≥ GRPO at 1/64 token cost (Siyan Zhao, UCLA/Meta, 2026). Empirical KL analysis by ar0cket1: max KL 13.25 vs OPD 3.74, 83% down-weight bias, GEPA hint optimization halves KL shocks. Foundational technique for SDAR.
+- [[concepts/opd-failure-modes]] — OPD Failure Modes — Recurring failure patterns in On-Policy Distillation: token-level KL bias, prefix drift, local teachability collapse, Rock Tokens, diversity collapse, PI gap. Surveyed by Chinmay Karkar (June 2026).
 - [[concepts/one-person-unicorn]] — One-Person Unicorn — Small-team, high-value AI-native companies enabled by agentic tooling
 - [[concepts/open-source-ai]] — Open-Source AI Strategy — Strategic approaches to open-source AI development and adoption
 - [[concepts/open-source-ai-destruction]] — AI agents overwhelm open source maintainers with low-quality PRs. CHAOSS metrics broken by AI events (Nesbitt CHAOSS analysis).

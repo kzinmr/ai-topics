@@ -1,3 +1,12 @@
+## [2026-06-08] Ingested: Chinmay Karkar OPD Survey ("The Imitation Game")
+
+- **Raw article**: `wiki/raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md`
+- **Entity page created**: `wiki/entities/chinmay-karkar.md`
+- **Concept page created**: `wiki/concepts/opd-failure-modes.md`
+- **Updated**: `wiki/concepts/on-policy-distillation.md` (sources + method variants), `wiki/concepts/on-policy-self-distillation.md` (sources + additional OPSD variants), `wiki/concepts/multi-teacher-on-policy-distillation.md` (sources)
+- **Source**: https://chinmaykarkar.com/blog/OPD_blog/
+- **Summary**: Comprehensive survey covering ~40 OPD papers from 2026. Added GKD, DistiLLM, G-OPD, AOPD, On-Policy Context Distillation methods to OPD page. Added SDFT, SDPO, GATES, CRISP, RLSD, CaOPD to OPSD page. Created dedicated failure modes concept page.
+
 ## [2026-06-08] Ingested: LightOn GTE-ModernColBERT (PyLate SOTA late interaction model)
 
 - **Raw article**: `wiki/raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate.md`

@@ -16,6 +16,8 @@ sources:
   - https://thinkingmachines.ai/blog/on-policy-distillation/
   - raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation.md
   - https://x.com/willccbb/status/2050038277454143918
+  - raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md
+  - https://chinmaykarkar.com/blog/OPD_blog/
 related:
   - concepts/multi-teacher-on-policy-distillation
   - concepts/model-distillation
@@ -24,6 +26,7 @@ related:
   - entities/thinking-machines-lab
   - entities/will-brown
   - entities/nrehiew
+  - entities/chinmay-karkar
 ---
 
 # On-Policy Distillation (OPD)
@@ -124,6 +127,25 @@ OPD draws from and extends:
 - **Agarwal et al. (2023)** — original "On-Policy Distillation of Language Models" paper
 - **MiniLLM** (Gu et al, 2023) — reverse KL for knowledge distillation
 - **Qwen3 Technical Report (2025)** — demonstrated 74.4% AIME'24 with OPD at 1/10 the cost of RL
+
+## Method Variants (Chinmay Karkar Survey, June 2026)
+
+Chinmay Karkar's comprehensive survey covers several important OPD variants:
+
+### GKD (Agarwal et al., 2023)
+Interpolates between dataset-supervised KD and on-policy KD with a single knob λ. Treats divergence (FKL, RKL, JSD) as a separate hyperparameter. Extends cleanly into RL fine-tuning by adding a distillation regularizer.
+
+### DistiLLM (Ko et al., 2024)
+Proposes **skew KL** to handle instability when teacher/student distributions barely overlap. Uses an **adaptive off-policy schedule** that starts heavily off-policy and shifts toward student rollouts as training stabilizes.
+
+### G-OPD/ExOPD (Yang et al., 2026)
+Brings a third **reference model** into the objective. The log-ratio reward resembles DPO's implicit-reward form. With λ > 1, the student can **surpass the teacher** — the teacher is no longer a hard ceiling.
+
+### AOPD (Ye et al., 2026)
+**Asymmetric treatment** of positive and negative tokens. Uses top-K forward KL on negative/zero-advantage tokens and standard OPD on the rest. Addresses heavy-tailed negative gradients that destabilize training.
+
+### On-Policy Context Distillation
+Teacher and student are the **same weights**, differing only in prompt context. Useful for baking in-context knowledge into weights for free inference.
 
 ## Distinction from Multi-Teacher OPD (MOPD)
 

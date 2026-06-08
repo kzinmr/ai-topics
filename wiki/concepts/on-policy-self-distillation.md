@@ -18,6 +18,8 @@ sources:
   - raw/articles/2026-05-12_ar0cket1_on-policy-self-distillation.md
   - https://siyan-zhao.github.io/blog/2026/opsd/
   - https://x.com/i/article/2054081238236020736
+  - raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md
+  - https://chinmaykarkar.com/blog/OPD_blog/
 related:
   - concepts/on-policy-distillation
   - concepts/sdar-self-distilled-agentic-rl
@@ -26,6 +28,7 @@ related:
   - concepts/gepa
   - entities/siyan-zhao
   - entities/ar0cket1
+  - entities/chinmay-karkar
 status: complete
 ---
 
@@ -205,6 +208,28 @@ ar0cket1 provides a cost analysis of OPSD-based continual learning if OPSD can b
 Key assumptions: ~$50/M output tokens for frontier inference, ~$65/M tokens for continual learning training (inference + backward pass, only ~$15 premium over raw inference). Model lifespan ~2 months before obsolescence.
 
 **Bottom line:** Even with solved OPSD, continual learning is viable primarily for large corporations with huge engineering teams generating high token throughput.
+
+## Additional OPSD Variants (Chinmay Karkar Survey, June 2026)
+
+Chinmay Karkar's survey covers several important OPSD extensions:
+
+### SDFT (Shenfeld et al., 2026)
+Reframes OPSD for **continual learning**. Uses an **EMA-updated teacher checkpoint** as the PI-conditioned view, avoiding stale guidance from frozen checkpoints and noise chasing from fully live checkpoints.
+
+### SDPO (Hübotter et al., 2026)
+Stretches what PI is allowed to be: uses **environment's own textual feedback** (runtime errors, judge critiques, test traces) as PI instead of reference solutions. Works at test time too — same objective doubles as training-time and inference-time procedure.
+
+### GATES (Stein et al., 2026)
+Targets document-grounded QA where the PI-conditioned teacher is sometimes wrong. Derives reliability signal online via **consensus gating** — only distills when multiple PI-conditioned rollouts agree on the same answer.
+
+### CRISP (Sang et al., 2026)
+Most stripped-down PI: a single **"be concise" instruction**. Automatically compresses easy problems hard and leaves deliberation on hard ones intact. Reverse KL between with-instruction and without-instruction views.
+
+### RLSD (Yang et al., 2026)
+Pushes back on pure self-distillation. Takes **update magnitudes from self-distillation** and **update directions from RLVR** (verifier correctness). Prevents "severe information leakage and unstable long-term training" from pure OPSD.
+
+### CaOPD (Zhang et al., 2026)
+First paper to take the **capability vs calibration** split seriously. Reveals that teacher-conditioned success is not a valid target for deployment-time confidence.
 
 ## Open Problems
 

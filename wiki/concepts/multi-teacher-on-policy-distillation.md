@@ -15,6 +15,8 @@ aliases:
 sources:
   - raw/articles/2026-05-04_multi-teacher-on-policy-distillation.md
   - https://yumoxu.notion.site/multi-teacher-on-policy-distillation
+  - raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md
+  - https://chinmaykarkar.com/blog/OPD_blog/
 ---
 
 
