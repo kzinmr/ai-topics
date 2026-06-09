@@ -2,13 +2,14 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-09 | Total pages: 2421 | Indexed entries: 1876 | Concepts: 1605 | Entities: 777
+> Last updated: 2026-06-09 | Total pages: 2424 | Indexed entries: 1879 | Concepts: 1607 | Entities: 778
 
-## Entities (777 pages)
+## Entities (778 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering, Cognitive Surrender, Orchestration Tax frameworks
+- [[entities/aman-sanger]] — Aman Sanger — Co-founder and CTO of Cursor. Pioneered self-driving codebases vision, async cloud agents, artifacts-based review paradigm. GTC 2026 speaker.
 - [[entities/agentmemory]] — Persistent memory for AI coding agents built on iii-engine. 12 hooks auto-capture, BM25+vector+graph retrieval (R@5: 95.2%), 4-tier memory consolidation. Works with Claude Code, Codex, Cursor, Hermes, any MCP client.
 - [[entities/agreement-bug]] — Agreement is a Bug
 - [[entities/ahmed-awadallah]] — Ahmed Awadallah — Research manager at Microsoft Research AI Frontiers, leads the team behind [[echo-rl|ECHO]] agent RL research.
@@ -789,7 +790,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1605 pages)
+## Concepts (1607 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -840,6 +841,7 @@
 - [[concepts/agent-loop-orchestration]]
 - [[concepts/agent-media]] — Agent Media — Evolution from wiki to multi-channel Autoresearch Desk. Design philosophy for audience-aware knowledge distribution system integrating Khairallah's Context Engineering + Ronin's Skill Graph.
 - [[concepts/agent-memory-engineering]] — Agent Memory Engineering: Nicolas Bustamante (Microsoft)'s comparison of Claude Code/Codex/Hermes memory architectures. "Every clever architecture lost. What won was LLM + Markdown + bash." Memory is not portable across harnesses because models are post-trained on their harnesses. Codex Memory Pipeline (Mem0, May 2026): two-phase async pipeline, markdown storage, grep search.
+- [[concepts/async-coding-agents]] — Async Coding Agents — Cloud-hosted coding agents that run independently on dedicated compute, report results like colleagues. Three eras: autocomplete → sync agents → async agents. Multi-agent hierarchy (planner/sub-planner/worker), model specialization (OpenAI planning, Anthropic/Gemini computer use), artifacts-based review.
 - [[concepts/agent-memory]] — Agent Memory (Redirect)
 - [[concepts/agent-native-architecture]] — Agent-Native Architecture — Dan Shipper/Every framework: 5 principles (Parity, Granularity, Composability, Emergent Capability, Improvement Over Time) for designing software where agents are first-class citizens. Co-authored with Claude.
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud — Infrastructure paradigm designed for AI agents: version control beyond Git, observability at 1000x, orchestration beyond K8s, safe production forks, self-replicating infrastructure. Championed by Railway (Jake Cooper).
@@ -1719,6 +1721,7 @@
 - [[concepts/self-hosting-ai-development]] — Self-Hosting AI for Development — Practical considerations and economics of running local LLMs for development.
 - [[concepts/self-learning-agents]] — Self-Learning Agents — AI systems that improve their own performance through experience, self-play, and autonomous skill acquisition without human intervention.
 - [[concepts/self-replicating-llm]] — Self-Replicating LLMs — arXiv paper (May 2026) demonstrating autonomous AI self-replication via vulnerability exploitation. Qwen3.6-27B: 33% success; Opus 4.6: 81% (cross-model replication). Chain replication across 4 machines, 3 continents.
+- [[concepts/self-driving-codebases]] — Self-Driving Codebases — Terminal state of async coding agents: autonomous self-healing, full-project building, no human-written code. Aman Sanger (Cursor) GTC 2026 vision. Recursive planner/sub-planner/worker architecture, automations (issue tracker, on-call, training monitoring), artifacts-based review.
 - [[concepts/semantic-ids]] — Semantic IDs — Discrete token sequences derived from learned embeddings for LLM-based generative retrieval/recommendation. Items with similar embeddings share token prefixes. Multi-task bi-encoder approach achieves Pareto-optimal search/recommendation trade-off (Spotify Research, RecSys 2025). Connects to [[concepts/dense-retrieval]], [[concepts/information-retrieval]], [[concepts/tokenization]].
 - [[concepts/serving-llms-vllm]] — vLLM inference serving
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management

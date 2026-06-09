@@ -1,3 +1,13 @@
+
+## [2026-06-09] YouTube Ingestion — Aman Sanger GTC 2026 (Self-Driving Codebases)
+
+- **Created**: `wiki/raw/transcripts/2026-04-12_aman-sanger_cursor-self-driving-codebases.txt` — YouTube transcript (964 segments, 40K chars)
+- **Created**: `wiki/raw/articles/2026-04-12_aman-sanger-cursor-self-driving-codebases-gtc.md` — Raw article with full talk summary
+- **Created**: `wiki/entities/aman-sanger.md` — Aman Sanger entity page (Cursor co-founder/CTO)
+- **Created**: `wiki/concepts/self-driving-codebases.md` — Self-Driving Codebases concept (autonomous codebase maintenance vision)
+- **Created**: `wiki/concepts/async-coding-agents.md` — Async Coding Agents concept (cloud-hosted long-running agent paradigm)
+- **Enriched**: `wiki/entities/cursor-ai.md` — Added Self-Driving Codebases Vision (GTC 2026) section: three eras, multi-agent architecture, model specialization, automations, engineer's new role
+- **Updated**: `wiki/index.md` — Added 3 new entries, updated page counts
 ## [2026-06-09] Apple WWDC 2026 + LLM Code Quality Concept
 
 - **Enriched**: `concepts/apple.md` — Added WWDC 2026 section: Siri AI (custom Gemini model, Vision LLMs, iOS 27 beta), PCC on Google Cloud (NVIDIA GPUs, same security architecture), Core AI library (PyTorch integration via coreai-torch). Source: Simon Willison Jun 8 2026.

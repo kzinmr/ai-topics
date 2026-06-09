@@ -1,0 +1,965 @@
+[00:00] [applause]
+[00:06] &gt;&gt; Hey guys, I'm Aman. I'm one of the
+[00:08] founders of Cursor, and today I'm going
+[00:10] to be talking about what we think the
+[00:13] future of AI coding will look like.
+[00:16] In particular, talking about async
+[00:18] agents and this future that we believe
+[00:21] will look like self-driving code bases.
+[00:24] I'm going to start by walking through
+[00:25] how coding has changed over the last
+[00:28] several months and years, and then go
+[00:30] through each of these future eras. What
+[00:33] will async agents look like, and what
+[00:35] will self-driving code bases look like?
+[00:38] Finally, I'm going to end by talking
+[00:40] through what the role of the engineer
+[00:42] looks like in a world where code bases
+[00:43] are fully self-driving.
+[00:46] So, way back in 2021, 2022,
+[00:51] the primary way that people were coding
+[00:53] was just using IDEs with effectively no
+[00:57] AI.
+[00:58] Uh no autocomplete even though the the
+[01:01] only autocomplete was IntelliSense level
+[01:03] things.
+[01:04] But, around that time, language models
+[01:06] started getting much, much better at
+[01:09] coding, both generating code and
+[01:11] understanding code. And so, the first AI
+[01:15] coding application that started to work
+[01:17] was autocomplete or tab complete.
+[01:21] This is around the time that Cursor
+[01:23] burst onto the scene. And so, roughly
+[01:25] the way that this works is by looking at
+[01:27] the last however many minutes of work
+[01:30] you've been doing inside of your editor,
+[01:32] and then
+[01:34] uh understanding that, models can
+[01:36] predict what the next few minutes of
+[01:38] edits, places you're going to jump to,
+[01:40] will look like. And so, it looks like
+[01:42] this autocomplete uh predicting the next
+[01:44] edits, and so on and so forth.
+[01:47] But, models continue to get much better
+[01:49] at code. And they got better at being
+[01:53] able to generate more complex changes,
+[01:56] potentially whole features.
+[01:58] Um and they got strong enough that you
+[02:00] could ask with natural language
+[02:02] instructions for agents to be able to
+[02:06] implement full changes. And so, that
+[02:08] brings us to the next era, the era we're
+[02:10] currently in, where synchronous code
+[02:12] coding agents have quickly become the
+[02:14] dominant way of programming and coding
+[02:17] with AI.
+[02:20] And you see this in the data. 2025 was
+[02:23] really the year of coding agents uh
+[02:25] completely taking off. Where at the
+[02:27] start of the year, the models become
+[02:29] good enough and the harnesses around
+[02:31] them become good enough that you can
+[02:32] actually start to use coding agents for
+[02:35] the first time for a lot of your work.
+[02:37] And then by the end of the year,
+[02:39] we're at a point where the vast, vast
+[02:41] majority of code written in Cursor is
+[02:44] coming from agents rather than people
+[02:47] using tab. And this graph is actually
+[02:49] astounding because it's not just
+[02:50] tracking users using agents versus tab,
+[02:53] but it is agent requests versus tab
+[02:55] accepts. And with tab, effectively every
+[02:59] keystroke can potentially trigger a tab
+[03:01] request and get a request. So, so you
+[03:03] end up seeing so many more people
+[03:06] actually submitting whole prompts and
+[03:08] pressing enter than even writing
+[03:10] keystrokes in the editor.
+[03:14] Now,
+[03:15] synchronous agents work quite well, but
+[03:18] there are a lot of limitations. You're
+[03:19] mostly running these things on your
+[03:21] local machines, so they eat up a lot of
+[03:24] resources. And if we want to be able to
+[03:27] write more and more code, um and kind of
+[03:29] increase the throughput, uh we're not
+[03:31] going to be able to run tens of agents
+[03:33] on our local machine.
+[03:35] And so, that brings us here.
+[03:39] We are in the second era of AI coding
+[03:42] and slowly moving towards this third era
+[03:46] of async agents.
+[03:48] We believe async agents uh will need
+[03:51] their own computers and cloud
+[03:53] environments to run.
+[03:55] If you want these agents to run for a
+[03:57] very long time, they're going to need to
+[03:59] be able to test their work, um and this
+[04:01] means doing things like computer use or
+[04:03] running lots of tests that may be
+[04:05] extremely resource intensive. You can
+[04:07] maybe scale this locally to a few
+[04:10] agents, but scaling to tens at a time is
+[04:12] just not going to be possible.
+[04:15] And agents should have the full suite of
+[04:17] tools that a developer has. Um and in
+[04:20] these cloud environments, they should be
+[04:21] able to do whatever you could do
+[04:23] locally.
+[04:26] And so, here you can see uh the Cursor
+[04:29] Cloud Agent product, where we've given
+[04:32] our agent access to this VM um and a
+[04:35] full desktop.
+[04:37] And it can use the desktop in the ways
+[04:39] described before, and one of the more
+[04:41] interesting ways that it does use it is
+[04:43] via
+[04:44] being able to use the computer and
+[04:46] actually test out features. Now, I'll
+[04:48] talk more about that later.
+[04:52] And internally, we've seen rapid
+[04:55] adoption of cloud agents.
+[04:57] This is a chart that tracks until the
+[05:00] end of February, and it's quickly
+[05:02] becoming the dominant way of coding
+[05:04] within our company. We're now 30% of
+[05:07] merged PRs are coming from cloud agents.
+[05:12] And there's one pretty uh actually, I'll
+[05:15] talk about a few examples of these PRs
+[05:17] because it isn't just these trivial bug
+[05:19] fixes. One change made was there was a
+[05:22] pretty big refactor for video rendering
+[05:25] that made things 25x faster and migrated
+[05:28] things from React to Rust. Um and it
+[05:31] took 8 hours. And here, the computer was
+[05:33] extremely useful for the agent to have
+[05:35] because it could iterate because it
+[05:36] could iterate on making a change, uh
+[05:39] actually running it, measuring the
+[05:40] latency of that, and then continuing to
+[05:42] do it over and over again.
+[05:45] Another example was implementing this
+[05:47] 10,000-line PR of adding network policy
+[05:51] controls for sandbox processes.
+[05:55] So, what started to cause this
+[05:57] inflection point? Because you can see
+[05:58] that around when uh it says here,
+[06:01] "Artifacts are released internally," you
+[06:04] you you see this uptick in growth.
+[06:06] When we were using early versions of
+[06:09] cloud agents,
+[06:10] it started to become really, really
+[06:12] tricky to review all the changes that
+[06:15] agents were producing. We're now
+[06:17] operating in a regime where agents were
+[06:20] producing two, three, four x more code
+[06:22] than they could have uh if just running
+[06:24] locally in a synchronous manner.
+[06:27] And reviewing all those code changes and
+[06:30] then iterating with the agent uh when
+[06:32] reviewing code manually uh just doesn't
+[06:35] become tractable uh at larger and larger
+[06:37] levels of throughput.
+[06:40] And so, in the same way that a manager
+[06:43] might uh do a mix of code review, but
+[06:46] then also review the work of their
+[06:49] engineers' output, we think it's really
+[06:51] important that when using cloud agents,
+[06:53] engineers can review the outputs of the
+[06:56] model. And we call these outputs
+[06:58] artifacts.
+[07:00] One example of this is video artifacts.
+[07:03] So, you can see here that after
+[07:04] implementing a feature,
+[07:06] we have
+[07:07] Cursor go in and actually take a video
+[07:10] of the fully functioning feature.
+[07:13] If there's a bug in how it implemented
+[07:15] it, you can just look at this video and
+[07:18] then follow up with the agent. Or if it
+[07:20] implemented it in a way that didn't
+[07:22] follow exactly how you specified,
+[07:25] similarly, you can reprompt it without
+[07:27] having to look at the code to understand
+[07:29] what's going on. Then, when you get to a
+[07:31] working demo of what you think your
+[07:34] feature should look like, you can take a
+[07:35] pass at the code and review that and
+[07:37] merge it in if things look good.
+[07:41] Similarly, for
+[07:44] ML research, we found it pretty useful
+[07:46] for very small-scale experiments,
+[07:49] having models go out and build a
+[07:52] research report. So, this is the output
+[07:54] of what maybe a researcher might do. And
+[07:56] so, you're not just reviewing the code
+[07:58] changes made by uh this this agent, but
+[08:02] you're reviewing a report, which is far
+[08:04] easier to grok quickly and understand.
+[08:07] And again, it lets you iterate far more
+[08:08] quickly and then go to the code changes
+[08:10] only when you've extreme confidence that
+[08:13] it's done the right set of things.
+[08:16] We're still figuring out what this looks
+[08:18] like for places outside of research and
+[08:22] pure product.
+[08:23] A few additional ways that we think it
+[08:25] could be helpful for back end and infra
+[08:28] might be iterating more so on things
+[08:30] like architecture diagrams, iterating
+[08:32] more on plans. Um it's possible that you
+[08:35] want the models to overtest your code,
+[08:38] and
+[08:39] tests wouldn't be things that are
+[08:41] actually checked into the code base, but
+[08:43] they exist as artifacts that let you
+[08:46] understand if the agent did the right
+[08:47] thing or not. Um and can be effectively
+[08:50] thrown away.
+[08:52] But, we haven't quite figured out what
+[08:54] it looks like for those other domains
+[08:56] outside of product and research yet, but
+[08:58] we're working on it.
+[09:00] So, how do we build cloud agents and
+[09:03] make them extremely good at long-running
+[09:06] tasks? Because this is uh the only way
+[09:09] in which cloud agents and async agents
+[09:11] become useful if you can actually trust
+[09:13] that they can run for a pretty long time
+[09:15] and do a better job than if they're
+[09:16] running quickly locally.
+[09:20] So, I want to introduce this concept of
+[09:23] uh train time versus test time.
+[09:27] The way that these agents are trained,
+[09:30] uh one of the main ways in which these
+[09:31] agents are trained is using RL,
+[09:33] reinforcement learning.
+[09:35] And it will see a task in training, try
+[09:38] to solve it many different times, and
+[09:40] then the times that it succeeded, uh
+[09:43] those attempts will get positively
+[09:45] reinforced by the model, so the model
+[09:47] will learn to act more like that, and
+[09:49] learn to act less like the failure
+[09:51] attempts.
+[09:52] And generally, if when you deploy your
+[09:55] agent in the real world, those problems
+[09:57] that it sees, those tasks it sees, are
+[10:00] very similar to the task that it's been
+[10:02] trained on, your agent's going to
+[10:04] perform a lot better. So, you want this
+[10:06] train time test time match. And if
+[10:09] there's a mismatch, you're going to see
+[10:10] a dumb some degradation of performance.
+[10:16] So,
+[10:17] if you were to naively just have an
+[10:20] agent work for a very, very long time,
+[10:23] it's going to have to run trajectories
+[10:25] that span not just hundreds of thousands
+[10:27] of tokens, but millions, potentially
+[10:29] tens of millions of tokens.
+[10:31] And then this starts to get outside of
+[10:33] the bounds of how these models and
+[10:35] agents are trained, where it is just
+[10:38] intractable to train an RL agent for
+[10:41] things outside of hundreds of thousands,
+[10:43] maybe millions of tokens. So, as you go
+[10:46] to high millions or tens of millions,
+[10:48] they'll just fall apart. And you guys
+[10:50] may have observed this from using code
+[10:51] agents that run for extremely long
+[10:53] times. Um but they'll lose track of
+[10:55] things, kind of not be able to go in
+[10:57] enough detail in certain parts.
+[11:00] Um
+[11:01] And this is where we find the concept of
+[11:04] multi-agent to be extremely useful.
+[11:07] Multi-agent is a broad term that
+[11:09] effectively covers any system that uses
+[11:11] multiple agents in any way. The simplest
+[11:14] version of this is just the main agent
+[11:16] and sub-agents.
+[11:17] Um and this is one of the key reasons
+[11:20] why we believe sub-agents work works
+[11:22] extremely well for longer-running tasks,
+[11:25] where each of these subtasks is now a
+[11:27] much simpler task that is well within
+[11:30] the distribution of how these models are
+[11:32] trained.
+[11:33] Um and then the actual outer model that
+[11:37] is calling all these sub-agents is not
+[11:40] running for as long a time, right?
+[11:41] Instead of running for tens of millions
+[11:42] of tokens,
+[11:44] uh it's running for maybe a few hundred
+[11:45] thousand.
+[11:46] Um and then calling sub-agents, kind of
+[11:48] fanning out the work that way. And so,
+[11:50] you get this nicer match where the
+[11:52] models aren't kind of overextended in
+[11:55] how long they run versus how they're
+[12:00] Another benefit of the multi-agent
+[12:02] system is that you're starting to see
+[12:04] some kind of
+[12:06] specialization or divergence in
+[12:09] capabilities of models for different
+[12:10] things. And what do I mean that by this?
+[12:12] Um we found that OpenAI models tend to
+[12:15] be the strongest when it comes to
+[12:17] higher-level planning and orchestration.
+[12:20] Um but when it comes to things like
+[12:22] computer use or multi-modal
+[12:24] understanding, Gemini and Anthropic
+[12:26] models are stronger. Or when it comes to
+[12:28] creating better UIs, Anthropic models uh
+[12:31] tend to be stronger.
+[12:33] And so, the way that our cloud agents
+[12:35] work is we generally use OpenAI models
+[12:38] as the planner, and then we'll use other
+[12:40] better multi-modal models and computer
+[12:42] use computer using models to actually
+[12:44] record the videos or use the features
+[12:47] and prove to you that things are
+[12:48] working.
+[12:51] I think another interesting way that
+[12:53] sub-agents can be useful
+[12:55] are s- at a certain point, sub-agent
+[12:58] tasks
+[12:59] uh are not complicated enough that you
+[13:01] need the absolute largest, slowest
+[13:04] models for it.
+[13:06] And you can use much faster models and
+[13:08] get the exact same performance for
+[13:10] simpler sub-agent tasks.
+[13:12] And so, we also end up doing this in the
+[13:14] product and get the same performance
+[13:16] while delivering results much, much
+[13:18] faster.
+[13:23] what are the weaknesses of this system?
+[13:26] In the same way that the single agent
+[13:28] running for a long time
+[13:30] uh would fall over at at long task
+[13:33] durations,
+[13:34] th- this system also works, but then as
+[13:36] the task
+[13:38] as the task length also gets longer,
+[13:40] eventually it will hit hit its limit,
+[13:42] where the planning steps and the outer
+[13:44] agent will start to go for millions,
+[13:46] maybe tens of millions of tokens, and
+[13:48] then it will fall apart again.
+[13:51] Um and models
+[13:53] still aren't trained super well to be
+[13:56] excellent orchestrators of agents. And I
+[13:59] think there's that there the way that RL
+[14:01] works really benefits for kind of the
+[14:03] worker level task, but there's a lot of
+[14:05] work to do to make models much better at
+[14:07] this kind of orchestration layer.
+[14:10] It's something that we're very focused
+[14:12] on when training the next generation of
+[14:14] our own models as well, especially in be
+[14:16] able being able to call out to multiple
+[14:18] different models.
+[14:22] And I think another piece that is
+[14:25] underrated is the value of what we call
+[14:29] model UX. And this is kind of the
+[14:31] reviewability of the model's outputs.
+[14:35] If we're starting to trust the artifacts
+[14:37] produced by the model
+[14:39] more than the code itself than the code
+[14:41] changes,
+[14:42] um then the model needs to do a really
+[14:44] good job of creating those artifacts for
+[14:46] you.
+[14:47] In particular, if it recorded a video of
+[14:50] a useless part of the feature that it
+[14:53] was building or the part part of the
+[14:55] product that it was building, it
+[14:56] wouldn't be helpful at all, and you'd
+[14:57] have to go and read the code anyways.
+[14:59] So, models need to learn how to produce
+[15:02] really useful and understandable
+[15:05] Already we see this at a kind of
+[15:08] lower level with
+[15:10] uh certain models will w- if different
+[15:12] models produce the same kind of markdown
+[15:14] answer, uh it's much easier to
+[15:16] understand when it's nicely formatted.
+[15:18] Uh and if it's this densely packed set
+[15:20] of paragraphs,
+[15:22] um it's going to take a lot longer to
+[15:23] grok. So,
+[15:26] understanding the actual thing that the
+[15:28] model did, making the model really good
+[15:31] at at doing that, will matter a lot,
+[15:33] especially as models get arbitrarily
+[15:36] good at given a well-defined spec
+[15:39] producing a correct answer.
+[15:44] So, now I want to talk about what we
+[15:47] call self-driving codebases. And we view
+[15:50] this as somewhat of a kind of terminal
+[15:53] state
+[15:55] of what async agents look like looks
+[15:57] like.
+[15:58] &gt;&gt; [snorts]
+[16:00] &gt;&gt; And self-driving codebases, I think it
+[16:03] involves a few details.
+[16:05] One is we want self-healing and fixing.
+[16:10] And this means that there are changes
+[16:13] being made that no human is ever
+[16:15] reviewing.
+[16:17] Once more, as we go from local to async,
+[16:20] you know, you're increasing the number
+[16:22] of agents per person from a few to tens.
+[16:25] But at a certain point, if you want to
+[16:27] increase your productivity and have more
+[16:28] and more done, it's going to be too many
+[16:30] agents running for
+[16:32] people to review some agents' outputs.
+[16:35] And so, you want some changes that just
+[16:37] automatically get into main. And you can
+[16:39] imagine this looks like an issue
+[16:40] tracker, where issues are reported and
+[16:43] some issues are easy enough to fix, and
+[16:47] models and agents have high enough
+[16:48] confidence that they can go, make the
+[16:50] fix, and can get into main, and no one's
+[16:52] ever looked at it.
+[16:56] Then the the other piece is being able
+[16:58] to significantly increase the scope of
+[17:01] what your agents can do. In particular,
+[17:03] building full projects or products or
+[17:06] extremely large features with little to
+[17:09] no human intervention. Think of like
+[17:12] excellent products like uh
+[17:15] I think of Notion or PowerPoint and
+[17:17] whatnot. Can you have models do
+[17:18] something like build PowerPoint with
+[17:21] little to no human intervention? It will
+[17:23] take time to get there, but I think
+[17:24] something like this might be possible.
+[17:29] And in this world, we believe there's
+[17:31] going to be no human-written code.
+[17:35] So, first let's talk about self-healing
+[17:38] and fixing.
+[17:41] One of our [clears throat and snorts]
+[17:41] early attempts here at at creating a
+[17:43] product that that that can do this is
+[17:47] what we call automations.
+[17:49] And so, you can trigger these things in
+[17:51] certain events, like the issue tracker
+[17:54] case that I mentioned before, where you
+[17:55] can have agents on every issue proposing
+[17:58] a potential fix.
+[18:00] But you can also have agents running at
+[18:03] other really valuable events, like every
+[18:06] time you get paged in the middle of the
+[18:08] night, we have an agent going,
+[18:11] investigating the issue, and then
+[18:13] proposing a potential solution. So, if
+[18:15] you're waking up groggily at 2:00 or
+[18:18] 3:00 a.m.,
+[18:19] uh you might just need to do fix you
+[18:21] might just need a single click to fix
+[18:23] the problem.
+[18:25] Eventually, we'd like to get to a spot
+[18:26] where
+[18:27] agents can always be the primary
+[18:29] on-call.
+[18:31] And there are issues that will pop up in
+[18:33] the middle of the night that an agent
+[18:35] will fix, and no human will ever get
+[18:37] paged. Humans will just be escalated to
+[18:40] as a secondary.
+[18:43] Already we're using this in research.
+[18:47] For our training runs, we have agents
+[18:49] running every few steps, looking at the
+[18:51] logs in the clusters, looking at weights
+[18:54] and biases to understand what's going on
+[18:57] with all the metrics, and it's flagging
+[19:00] potential issues. This lets us catch
+[19:03] potential failures in training earlier,
+[19:05] so it doesn't silently degrade the
+[19:07] model, and then it lets us catch uh
+[19:09] issues that could lead to runs crashing,
+[19:12] preventing anyone from getting paged or
+[19:14] losing valuable training time.
+[19:18] We also do this for code review and for
+[19:22] security.
+[19:23] Um where we're able to find a huge
+[19:25] number of PRs with vulnerabilities that
+[19:27] would have otherwise gotten shipped. So,
+[19:29] having these agents just always running
+[19:30] in all these events
+[19:32] um has already started to show serious
+[19:34] signs of life.
+[19:39] Now, I want to talk about what
+[19:42] that second part of self-driving
+[19:45] codebases looks like, meaning building
+[19:47] full projects, having really, really
+[19:49] long-running agents with little to no
+[19:52] human intervention.
+[19:54] The browser was one of our attempts at
+[19:56] this. A browser is an extremely
+[19:58] complicated piece of software on the
+[20:00] level of or harder than an OS.
+[20:03] Um it requires a rendering engine that
+[20:05] can take arbitrary HTML and CSS and turn
+[20:08] it to pixels, handling animations as
+[20:11] well. It requires being able to run
+[20:13] arbitrary JavaScript in the sandbox
+[20:15] environment, and lots of other uh
+[20:18] complicated things.
+[20:20] And so,
+[20:21] it's a really daunting, challenging task
+[20:23] where the ceiling can be quite high.
+[20:25] Um and we want to see if we could get
+[20:28] agents to actually build some kind of
+[20:31] working browser.
+[20:32] Um this was a 1-week run that took
+[20:36] billions of tokens, on the order of tens
+[20:38] of thousands of dollars worth of
+[20:40] compute. Um and it produced something
+[20:42] that works, uh but it's still quite far
+[20:45] from real production browsers.
+[20:50] You can see an example of the browser
+[20:53] here, where it's able to render lots of
+[20:56] arbitrary pages pages.
+[20:58] Um there's still several hiccups that
+[21:02] don't make it a fully functioning
+[21:03] browser, but it's extremely impressive
+[21:06] that agents are able to do something
+[21:08] like this today.
+[21:11] So, how did we actually build a harness
+[21:14] to make something like this work?
+[21:17] It extended the harness that we were
+[21:19] using for async agents and used the same
+[21:21] concept of multi-agent.
+[21:26] we don't want to let a given agent run
+[21:28] for far too long because it's just going
+[21:30] to go off the rails.
+[21:32] And so, what we do is we have a
+[21:33] high-level planner that can then call
+[21:36] out to sub-planners, and it's this
+[21:38] recursive like thing where the
+[21:40] sub-planner itself can call other
+[21:41] sub-planners, and at the lowest level or
+[21:44] the leaf nodes, you have workers.
+[21:46] Um and we found this uh architecture. We
+[21:49] tried a bunch of different ones, and
+[21:51] this one ended up working the best. And
+[21:54] it's a good bit simpler than kind of any
+[21:57] of the other ones we tried, and really
+[21:58] does leverage uh that same concept of
+[22:01] compressing the amount of tokens a given
+[22:04] agent needs to run for.
+[22:07] The thing that we're pretty excited
+[22:08] about is trying to make this uh
+[22:11] multimodal as well,
+[22:12] where you can leverage those same
+[22:14] strengths of different models that we
+[22:16] mentioned earlier, um where for the
+[22:18] computer using pieces, you'd use a
+[22:20] different set of models
+[22:21] uh as you would for planning, and as you
+[22:24] would for UI.
+[22:28] we're really excited about also training
+[22:29] our models to be quite good at these
+[22:32] tasks.
+[22:33] Um I don't think any model has been
+[22:35] trained with the
+[22:37] uh idea of being able to use it in this
+[22:39] extremely long long-running harness. Um
+[22:42] and we're pretty excited about training
+[22:43] a model to act as this planner or
+[22:45] sub-planner and be really good at
+[22:47] calling out to itself or other models.
+[22:54] So, now
+[22:55] uh
+[22:56] we have this harness that [snorts] works
+[22:58] pretty well. It's still early days, and
+[22:59] it'll take a lot of time to get to
+[23:02] something truly shippable.
+[23:04] But what does the right user interface
+[23:06] look like in the world where we have
+[23:09] these self-driving code-based systems?
+[23:14] Right now, we're you have to do
+[23:16] something that looks like what prompt
+[23:18] engineering was a year and a half or a
+[23:21] few years ago for getting these agents
+[23:23] to work. You have to write a really,
+[23:25] really detailed spec, and that goes into
+[23:27] detail how it should think about
+[23:29] breaking down problems, um really sets a
+[23:32] clear rubric of what defines
+[23:34] correctness.
+[23:35] Um and it just takes a lot of attempts
+[23:38] and kind of nudging the harness to get
+[23:40] it to work really well. So, the UX
+[23:42] isn't there yet. We expect that as
+[23:47] agents get better,
+[23:49] you'll be able to the burden of uh
+[23:53] how good the spec needs to be uh will
+[23:56] decrease, and you'll be able to work
+[23:58] with models as well on building out
+[24:00] really good specs for building these
+[24:02] entire projects.
+[24:05] And then when you have agents building
+[24:09] entire products, what is the right level
+[24:12] of review? It would suck to do this uh
+[24:15] many tens of thousands of dollar run for
+[24:17] a week, and then come back, and the
+[24:20] output is garbage. Uh you want to be
+[24:22] able to intervene at some points in the
+[24:24] middle.
+[24:25] I think it looks fairly similar to the
+[24:28] same interfaces that work for normal
+[24:30] cloud agents, where you'll want the
+[24:32] model to be able to produce these
+[24:34] artifacts in the middle, uh like videos
+[24:37] of various features. Uh the model's
+[24:39] going to need to be it's going to need
+[24:41] to get much better at that piece of
+[24:43] model UX,
+[24:44] because there's such a large surface
+[24:46] area of what one could test, what one
+[24:49] could record, what one could try to show
+[24:50] to the user, and it needs to work on the
+[24:52] areas of kind of maximum ambiguity,
+[24:56] where the user didn't specify enough,
+[24:58] where it's most unclear what the right
+[25:00] choice is, to have the user go in, to
+[25:03] have the engineer go in, and resolve
+[25:05] that.
+[25:07] But this is still an open question, and
+[25:09] we're working on figuring that out.
+[25:14] So, what does Cursor look like in this
+[25:17] world where you're running these agents
+[25:20] for extremely long time horizons,
+[25:22] they're tackling full products, uh full
+[25:25] projects, and kind of automatically
+[25:28] healing your code base?
+[25:30] Well, in the same way
+[25:32] that
+[25:33] the old generation of clouds kind of
+[25:36] acts as what we call a cost of goods
+[25:38] sold cloud, um
+[25:41] in delivering your service your [snorts]
+[25:43] your product to users, um the old clouds
+[25:47] delivered the infrastructure such that
+[25:48] you can do this.
+[25:50] Cursor aims to be a new kind of cloud
+[25:53] that uh is we're building an R&amp;D cloud
+[25:56] that helps enterprises build more
+[25:58] ambitious software.
+[26:02] And
+[26:03] what does engineering become?
+[26:07] It's an interesting question, and
+[26:09] we've thought about this a good bit.
+[26:12] I'll I'll preface it by saying like we
+[26:14] don't have a
+[26:16] fantastic answer,
+[26:18] and it's really hard to predict exactly
+[26:21] what it will look like.
+[26:23] But
+[26:24] the things that will be missing from
+[26:26] agents and models for a while,
+[26:29] ironically, is kind of real agency of
+[26:31] deciding what should get built. There'll
+[26:33] be details on product taste that are
+[26:35] really hard to learn.
+[26:37] Um but ultimately, deciding what are the
+[26:40] right things to build that matter in the
+[26:42] world are the most important pieces.
+[26:45] And this is where we're investing really
+[26:46] heavily
+[26:47] uh in growing head count ourselves.
+[26:50] Um we're scaling engineering 3x this
+[26:52] year, and we don't think that just
+[26:54] because our engineers are getting more
+[26:56] productive with AI, we want to keep that
+[26:59] same level of productivity, but cut head
+[27:01] count by certain amount. Instead, we
+[27:03] want to tackle more ambitious things. We
+[27:05] want to increase our productivity, and
+[27:07] compound really excellent engineers with
+[27:10] excellent tools like Cursor.
+[27:14] Thanks. Um now I'll kick it over to the
+[27:17] audience for a quick Q&amp;A.
+[27:19] Excellent. Any questions for Aman?
+[27:22] Yeah. Oh.
+[27:23] &gt;&gt; [applause]
+[27:26] &gt;&gt; Hi, Aman. Uh my name is Michael Weild.
+[27:28] I'm a student at Tulane University. I
+[27:30] have one semester left. Um
+[27:32] just 2 weeks ago, I was actually taking
+[27:35] a midterm in my class for an artificial
+[27:38] intelligence class,
+[27:40] and um well, over 90% of the class, I
+[27:43] want to say, was cheating.
+[27:44] Cheating using, you know, artificial
+[27:46] intelligence tools, large language
+[27:47] models to effectively answer questions
+[27:50] about well, how does AI work, and how
+[27:53] can we build agents for certain
+[27:54] problems. So, I think it's illustrating
+[27:56] that like, as you said,
+[27:58] um
+[28:00] the role of writing programs is
+[28:02] definitely changing. How do you think
+[28:04] Cursor, you know, perhaps aligns with
+[28:07] the vision of, say,
+[28:09] what someone's learning in education,
+[28:11] and I don't know, where do you think,
+[28:13] say, for instance, someone that's
+[28:14] studying computer science or is studying
+[28:16] to do something like software engineer,
+[28:17] how that's changing, and how Cursor is
+[28:20] changing that.
+[28:23] Yeah, I think
+[28:26] education
+[28:28] uh adapts extremely slowly to these
+[28:31] rapid technological changes. So, I think
+[28:33] lots of different organizations will be
+[28:34] at uh different places and how far along
+[28:37] they are in and in and trying to use
+[28:38] these. I think you kind of need to allow
+[28:41] people to use AI for their applications
+[28:45] just because uh that's not what things
+[28:47] will look like in the real world. And
+[28:50] today, you definitely still need to
+[28:52] really understand the details of the
+[28:54] code when operating in big company code
+[28:56] bases, but I think that will probably be
+[28:59] less and less the case in the future. Um
+[29:03] so, I do think that organizations should
+[29:06] try to and educational organizations
+[29:08] should try to adapt the way that they
+[29:09] teach to account for this future.
+[29:13] Great question. Any Oh, way in the back.
+[29:24] That's all right. Hi there. Uh thanks
+[29:27] for the talk. Really appreciated it. Um
+[29:29] there's a lot of discourse around uh
+[29:31] taste these days. You were mentioning it
+[29:33] as well. Um it's interesting cuz like uh
+[29:37] people are also learning a lot from
+[29:39] these models and and using them as well.
+[29:42] How do you guys think about uh both
+[29:44] protecting taste, uh
+[29:47] you know, as people learn or develop or
+[29:49] cultivating taste
+[29:51] as well,
+[29:52] you know, in in what you build.
+[29:55] I think it's really important to not
+[29:59] lose to slop.
+[30:02] you need to make sure that like people
+[30:06] still design and spend a lot of thought
+[30:10] on what the shape of the UX will look
+[30:13] like and what the shape of the product
+[30:14] will look like and making sure you don't
+[30:16] just let velocity take over that because
+[30:20] I I think like taste matters in a few
+[30:21] places. There is the product side of
+[30:24] making sure you're building the right
+[30:26] features, the right UX and then I think
+[30:28] taste also matters in the architectural
+[30:30] and infra side and will matter for a
+[30:31] while. Of making sure that you don't
+[30:33] just merge slop code changes and kind of
+[30:37] really really bad architecture or kind
+[30:40] of code design. Um
+[30:42] So just making sure that you really
+[30:45] value that as a company and and kind of
+[30:47] state this clearly is important and just
+[30:50] like don't lose the battle to slop.
+[30:55] Question here. I'm on great talk. Thank
+[30:59] Regarding
+[31:00] you know, generating code is great but
+[31:02] what about code reviews? Like do you
+[31:03] have any
+[31:05] thoughts on that?
+[31:06] Yeah, I mean I think in the same way
+[31:08] that models will get much better
+[31:10] producing that new code. They're going
+[31:12] to get a lot better at reviewing code
+[31:15] and reviewing code for humans is most of
+[31:18] the time a lot less fun
+[31:20] than writing code and so now you have
+[31:23] this this interesting thing where uh
+[31:25] it's it's an activity that humans prefer
+[31:26] not to do and models can be really
+[31:28] really great at. Um
+[31:32] I think we still
+[31:33] need to get better at it. It's really
+[31:36] easy to train models to be good at kind
+[31:38] of writing code given the way that these
+[31:40] training systems work. I think we need
+[31:42] to get better at figuring out how to do
+[31:44] that for code review. Already they're
+[31:45] they're decent but I think there's just
+[31:47] more work ahead of us
+[31:49] on the RL side in particular.
+[31:54] Hey, we from EAI.
+[31:56] Uh you said you're scaling your
+[31:58] engineering 3X so as as you're assessing
+[32:00] the folks you're
+[32:02] looking to bring on board for that
+[32:03] agency skill and agent building skills,
+[32:06] like how are you assessing them or
+[32:08] what's what's your mechanism for
+[32:10] figuring that out?
+[32:11] So the final stage of the interview
+[32:13] process um is a two-day one or two-day
+[32:18] onsite project where they get to use
+[32:20] cursor. So they get to use agents as
+[32:22] much as they want and the difficulty
+[32:24] there is we've had to
+[32:26] consistently
+[32:28] increase the scope of what that project
+[32:31] demands
+[32:33] um as the products have gotten as agents
+[32:35] have gotten much much better. But we
+[32:37] find that to be an excellent way of
+[32:39] testing whether people can use agents
+[32:42] effectively and and we test for the
+[32:43] things that matter which are yeah, that
+[32:46] agency piece and making like the correct
+[32:47] decisions with respect to the
+[32:49] architecture of the code or product
+[32:50] taste or so on and so forth for for
+[32:52] other disciplines.
+[32:55] Great question.
+[32:57] Hi Aman, thank you for the session.
+[32:59] Suresh from United Health Group. So
+[33:01] definitely like the concept the way you
+[33:03] explain the planners and planner and
+[33:05] then worker agents. So have you thought
+[33:07] about if you look at the enterprise,
+[33:09] right? We still have large code bases
+[33:11] sitting on legacy like AS400s
+[33:14] mainframes, right? So it's very
+[33:15] difficult to understand. It's really
+[33:17] what we really need agencies to
+[33:20] understand the concept and decompose and
+[33:23] write even provide some kind of a design
+[33:25] even before start coding. Yeah.
+[33:29] So for code understanding
+[33:32] uh and I I think there's two pieces
+[33:34] there. There's code understanding and
+[33:36] then there's how do you actively make
+[33:37] your code base better.
+[33:39] One other part of a self-healing code
+[33:41] base and self-driving code base that I
+[33:43] didn't mention is while you're sleeping,
+[33:47] while you're not actively using these
+[33:48] agents, they should be actively
+[33:50] improving the code base. Just there's
+[33:52] tech debt or pieces of code that are
+[33:54] really gnarly, complicated, hard to
+[33:56] understand. They should be going in and
+[33:58] just cleaning those up with the spare
+[34:00] compute and off-peak hours.
+[34:04] And then yeah, I think agents have been
+[34:06] excellent for understanding code. Uh
+[34:09] A lot of the time the way that people
+[34:12] work for
+[34:13] do engineering at cursor they spend a
+[34:15] lot of time working with the agent to
+[34:16] understand some part of the code base
+[34:18] before actually writing a plan and then
+[34:20] having the agent implement that. Um so
+[34:23] it's something we care a lot about
+[34:26] and similarly for understanding harder
+[34:28] parts of the code base,
+[34:30] we think you know, spending more
+[34:31] computer scaling this thing up in the
+[34:32] multi-agent way could help.
+[34:35] Great question. I think we have time for
+[34:37] two more questions. So here you are.
+[34:40] Hey, thanks for the presentation.
+[34:42] Just a quick question on uh
+[34:46] on the enterprise software realm, right?
+[34:48] As coding gets easier, agents are doing
+[34:51] more coding. Do you think there'll be a
+[34:53] proliferation of enterprise software?
+[34:55] Like there'll be more software companies
+[34:58] more you know, more agents of record
+[35:00] things like that.
+[35:01] Um yeah, I think you're going to see
+[35:05] it easier and easier to create net new
+[35:07] software, to maintain
+[35:10] complex software and so I expect that
+[35:13] you'll be more bottlenecked by the
+[35:15] quality of your ideas and deciding what
+[35:18] to build than anything else and this
+[35:20] allows a lot more companies to pop up,
+[35:23] startups to pop up, people to and
+[35:25] existing companies also to build more
+[35:27] more products and enterprise additional
+[35:29] enterprise offerings. So I see this kind
+[35:32] of you know, affecting all players in
+[35:33] the space and what they can do.
+[35:40] Hi,
+[35:42] I'm Joe Felder, software engineer at
+[35:44] Nasdaq.
+[35:45] And I had a question about um
+[35:48] the shift of the engineer's role
+[35:51] and what you think of this that
+[35:53] uh in the past the best engineers can
+[35:56] pay attention to details, can hold a lot
+[35:58] of things in their head, develop
+[36:00] algorithms, all that sort of thing and
+[36:01] that was a really important skill for a
+[36:03] good engineer as well as you know,
+[36:05] top-down versus bottom-up looking at
+[36:07] things and all that. Um what do you
+[36:09] think will be the next big skill
+[36:12] for this new way of doing things that an
+[36:15] engineer would need to have since they
+[36:17] don't have to focus on the details that
+[36:18] way anymore?
+[36:20] So I think like
+[36:22] there are the skills that I had
+[36:24] mentioned earlier of taste and
+[36:26] architecture and product. Um but I think
+[36:29] the same initial two things that you
+[36:31] mentioned still apply. So holding a lot
+[36:34] in your head is extremely valuable. Now
+[36:36] just the bar has kind of increased or
+[36:38] like the the types of things that you
+[36:39] hold in your head maybe change. So maybe
+[36:42] you instead of an engineer holding a lot
+[36:44] of a particular part of the code base in
+[36:46] their head uh an engineer may need to
+[36:49] hold the entire code base in their head
+[36:50] but not need enough detail of the lowest
+[36:53] levels that they're holding in their
+[36:54] head. So actually I think holding a lot
+[36:55] in your head will still be quite
+[36:58] valuable to be effective in working with
+[37:01] these agents.
+[37:02] And then attention to detail, I just
+[37:04] think like the
+[37:06] what the details are will change but I
+[37:09] do think that same attention to detail
+[37:11] matters, right? On the product side,
+[37:13] models will still make you know,
+[37:14] mistakes in various ways and
+[37:16] misunderstanding what the user wants and
+[37:19] will do and have being able to pay
+[37:21] attention to detail there or maybe they
+[37:23] just don't have sufficient contacts in
+[37:24] making the right architectural decisions
+[37:27] and being able to pay attention there in
+[37:29] what the model is proposing to you and
+[37:31] its outputs and the artifacts will still
+[37:33] be quite valuable.
+[37:36] Fantastic. I think those were some of
+[37:38] the best questions we've had in sessions
+[37:39] all day. So I want to take a moment and
+[37:41] thank Aman so much for a fantastic
+[37:43] presentation. Everyone put your hands
+[37:45] together.
