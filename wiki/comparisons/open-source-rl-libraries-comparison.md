@@ -110,3 +110,4 @@ New generation (2025):
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF/DPO methods
 - [[concepts/hybrid-flow]] — veRL's HybridFlow architecture
 - [[concepts/fine-tuning/trl]] — TRL implementation details and code examples
+- [[concepts/hands-on-modern-rl]] — Hands-On Modern RL curriculum for learning these algorithms

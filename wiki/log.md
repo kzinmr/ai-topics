@@ -1,3 +1,10 @@
+## [2026-06-09] Ingested: Hands-On Modern RL Curriculum
+
+- **Raw article**: `wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md`
+- **Source**: [GitHub Repository](https://github.com/walkinglabs/hands-on-modern-rl) | [Online Course](https://walkinglabs.github.io/hands-on-modern-rl/)
+- **Created**: `wiki/concepts/hands-on-modern-rl.md` — Open-source, practice-first curriculum for modern reinforcement learning
+- **Updated**: `wiki/index.md` — added hands-on-modern-rl entry
+
 ## [2026-06-09] Ingested: Avi Chawla "System Prompt Learning" X Article
 
 - **Raw article**: `wiki/raw/articles/avichawla-rl-agents-karpathy-system-prompt-learning-2026-04-28.md`
