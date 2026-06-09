@@ -34,5 +34,38 @@
       "path": "/opt/data/.hermes/home/ai-topics/wiki/raw/archived/raw_backlog/2026-06-05_20260605T160047Z.json",
       "count": 5
     }
-  ]
+  ],
+  "entries": [
+    {
+      "filename": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "content_hash": "fe910cb238bd",
+      "archived_at": "2026-06-09",
+      "reason": "★☆☆☆☆ 既存ページで完全にカバー済み。concepts/mai-thinking-1-tech-report.md（227行）、concepts/micro"
+    },
+    {
+      "filename": "2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "content_hash": "65e59f08b7d1",
+      "archived_at": "2026-06-09",
+      "reason": "★☆☆☆☆ 既存ページで完全にカバー済み。concepts/hands-on-modern-rl.md（156行、本日作成）が本記事の全内容（RLHF/DPO/"
+    },
+    {
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "filename": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "archived_at": "2026-06-09",
+      "reason": "★☆☆☆☆ 既存ページで完全にカバー済み。concepts/agi-economics.md（93行、2026-06-05作成）がImas/Trammell対談"
+    },
+    {
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "filename": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "archived_at": "2026-06-09",
+      "reason": "★☆☆☆☆ 既存エンティティページで完全にカバー済み。entities/ed-zitron.mdに「AI Doesn't Have ROI — Enterpri"
+    },
+    {
+      "url": "http://www.paulgraham.com/popular.html",
+      "filename": "paulgraham.com--popular-html--c633a6dc.md",
+      "archived_at": "2026-06-09",
+      "reason": "★☆☆☆☆ 既存エンティティページで完全にカバー済み。entities/paulgraham-com.mdに「Programming Language Popu"
+    }
+  ],
+  "total_archived": 5
 }

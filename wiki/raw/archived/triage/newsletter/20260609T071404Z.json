@@ -1,0 +1,38 @@
+[
+  {
+    "item_id": "<20260608163536.3.c0054368da028f88@mg2.substack.com>",
+    "source": "newsletter",
+    "source_name": "SemiAnalysis (Dylan Patel, Reyk Knuhtsen)",
+    "title": "China's Unitree Will Dominate Global Robotics",
+    "url": "https://open.substack.com/pub/semianalysis/p/chinas-unitree-will-dominate-global-robotics",
+    "raw_path": "wiki/raw/newsletters/2026-06-08-china-s-unitree-will-dominate-global-robotics.md",
+    "recommended_action": "reference",
+    "reason_ja": "★★★☆☆ SemiAnalysisのUnitree Robotics分析。entities/unitree-robotics.mdは既に存在するが2026-04-26作成で情報が古い（G1/H1/H2/R1製品リスト、5,500台出荷実績まで）。SemiAnalysisの最新分析（Boston Dynamics、Figure AIとの比較、中国製造サプライチェーンの優位性）はentityページの更新候補。ただしPaywalled SemiAnalysisのため本文抽出不可。トピックレベルでreference判断 — entities/unitree-robotics.mdの「Market Impact」セクション更新に使用可能。",
+    "candidate_wiki_path": "entities/unitree-robotics.md",
+    "body_excerpt": "（Cloudflare challengeにより本文抽出不可。SemiAnalysisは通常paywalled。トピック：Unitreeのグローバルhumanoid robotics市場支配予測、コスト優位性、中国製造エコシステム、Boston Dynamics/Figure AIとの競合分析）"
+  },
+  {
+    "item_id": "<20260608150121.3.1c835eb145e62f34@mg-d1.substack.com>",
+    "source": "newsletter",
+    "source_name": "Lenny's Newsletter (Lenny Rachitsky)",
+    "title": "🎙️ How I AI: Gemini Omni: Clone yourself with AI in under 15 minutes & Shopping with Claude",
+    "url": "https://open.substack.com/pub/lenny/p/how-i-ai-gemini-omni-clone-clone-yourself",
+    "raw_path": "wiki/raw/newsletters/2026-06-08-how-i-ai-gemini-omni-clone-yourself-with-ai-in-under-15-minutes-shopping-with-cl.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ Lenny Rachitskyの実用AIワークフロー紹介。Gemini Omniでの自分クローン作成、Claudeでのショッピング活用。チュートリアル/生産性寄りのコンテンツで、wikiの技術知識ベース focus とは乖離。AI agent patternsの参考事例としてはbookmark価値ありだが、wikiページ作成/更新には不適切。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "（Cloudflare challengeにより本文抽出不可。Gemini Omni自己クローン作成チュートリアル、Claudeショッピング活用 — 実用AIワークフロー中心のコンテンツ）"
+  },
+  {
+    "item_id": "<20260608.183107.8cbf5e22@mta9>",
+    "source": "newsletter",
+    "source_name": "Unknown (beehiiv)",
+    "title": "📉 Panic hits the AI trade",
+    "url": "https://link.mail.beehiiv.com/v1/c/...",
+    "raw_path": "wiki/raw/newsletters/2026-06-08-panic-hits-the-ai-trade.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ AI市場・投資パニックに関するニュースレター。マーケット/金融分析中心でwikiの技術知識ベース focus と直接関連なし。beehiiv トラッキングURL20本すべてが個別リンクだが、金融市場分析はwikiスコープ外。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "（beehiivトラッキングURLのみ。AIセクターの市場パニックに関する金融分析 — wikiスコープ外）"
+  }
+]

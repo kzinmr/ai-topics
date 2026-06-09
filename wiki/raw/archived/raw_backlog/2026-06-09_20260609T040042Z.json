@@ -1,0 +1,68 @@
+{
+  "collect_run_id": "20260609T040042Z",
+  "created_at": "2026-06-09T04:00:42Z",
+  "summary_ja": "2026-06-09 raw-backlog-ingestバッチ（5記事）。全記事が既存wikiページで完全にカバー済み。MAI-Thinking-1レポートは227行のconceptページ+関連ページ群、Hands-On Modern RLは本日作成のconceptページ、Dwarkesh AGI Economicsはagi-economics概念ページ+dwarkesh-patelエンティティページ、Ed Zitron ROI記事はed-zitronエンティティページに専用セクション、Paul Graham Being Popularはpaulgraham-comエンティティページ。全件skip、アクションなし。",
+  "decisions": [
+    {
+      "filename": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "size_bytes": 372471,
+      "content_hash": "fe910cb238bd",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既存ページで完全にカバー済み。concepts/mai-thinking-1-tech-report.md（227行）、concepts/microsoft-mai-models.md、entities/simon-willison.md、entities/elie-bakouch.mdが既に本記事の全内容（MoEアーキテクチャ、35B/1Tパラメータ、GRPO改良、30Tトークン前学習、ベンチマーク結果）を網羅。",
+      "candidate_wiki_path": "concepts/mai-thinking-1-tech-report.md",
+      "body_excerpt": "MAI-Thinking-1: Building a Hill-Climbing Machine. 109-page Microsoft AI technical report. 35B active / 1T total parameter MoE reasoning model. Zero synthetic data, zero distillation. 30T pre-training tokens from clean enterprise-grade data. 52.8% SWE-Bench Pro, 97.0% AIME 2025, 87.7% LiveCodeBench v6. Three specialist models: STEM reasoning, agentic coding, helpfulness/safety."
+    },
+    {
+      "filename": "2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "size_bytes": 44977,
+      "content_hash": "65e59f08b7d1",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既存ページで完全にカバー済み。concepts/hands-on-modern-rl.md（156行、本日作成）が本記事の全内容（RLHF/DPO/GRPO/RLVR/Agentic RLのハンズオンカリキュラム）を網羅。sourcesにraw/articleパスも含まれる。",
+      "candidate_wiki_path": "concepts/hands-on-modern-rl.md",
+      "body_excerpt": "Hands-On Modern RL: A Practice-First Guide. Open-source curriculum bridging classic RL to LLM post-training, RLVR, multimodal agents. PPO/DPO/GRPO implementations, training metric visualization, Agentic RL experiments."
+    },
+    {
+      "filename": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "size_bytes": 71061,
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "content_hash": "087980164c6c",
+      "archive_status": "already_archived",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既存ページで完全にカバー済み。concepts/agi-economics.md（93行、2026-06-05作成）がImas/Trammell対談の全内容（Relational Sector、capital satiation、O-ring理論、Pessimistic Moore's Law、Man-Not-Horse principle）を網羅。entities/dwarkesh-patel.mdにも参照済み。archive_status: already_archived。",
+      "candidate_wiki_path": "concepts/agi-economics.md",
+      "body_excerpt": "Alex Imas (Google DeepMind AGI Economics Director, U Chicago) and Phil Trammell (Epoch Head of Economics, Stanford) on Dwarkesh Podcast. Topics: capital share post-AGI, messy middle scenario, UBI vs Universal Basic Capital, relational sector, Jevons Paradox, O-ring automation theory."
+    },
+    {
+      "filename": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "size_bytes": 46667,
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "content_hash": "6f9a75116931",
+      "archive_status": "already_archived",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既存エンティティページで完全にカバー済み。entities/ed-zitron.mdに「AI Doesn't Have ROI — Enterprise Cost Crisis (June 2026)」専用セクションがあり、Uber/Amazon/Walmartの事例、GitHub Copilotトークン課金移行、Bain ROIサーベイ、kalopsia thesisを網羅。sourcesにもraw/articleパス登録済み。archive_status: already_archived。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": "Ed Zitron: AI Doesn't Have ROI. Enterprise token billing chaos, GitHub Copilot moved to token-based pricing, users burning thousands on $39/mo subscription. Uber burned entire annual token budget in 4 months. Nobody can measure AI ROI or cost per task."
+    },
+    {
+      "filename": "paulgraham.com--popular-html--c633a6dc.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "size_bytes": 43641,
+      "url": "http://www.paulgraham.com/popular.html",
+      "content_hash": "33f61cc76e8b",
+      "archive_status": "already_archived",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既存エンティティページで完全にカバー済み。entities/paulgraham-com.mdに「Programming Language Popularity Theory (May 2001)」セクションがあり、Being Popularエッセイの全内容（Expert Hackers as Driver, Hacker's Idea of Good Language, Language Design for Hackers, Popular Language as a Moving Target, The Blub Paradox）を網羅。sourcesにもraw/articleパス登録済み。archive_status: already_archived。",
+      "candidate_wiki_path": "entities/paulgraham-com.md",
+      "body_excerpt": "Paul Graham: Being Popular (May 2001). Programming languages are tools for hackers. Expert hackers drive language adoption. Popular languages get feedback which drives improvement. The Blub paradox: programmers are satisfied with whatever language they know."
+    }
+  ],
+  "actions_taken": {
+    "take": 0,
+    "reference": 0,
+    "skip": 5
+  }
+}

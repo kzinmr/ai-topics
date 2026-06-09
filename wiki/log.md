@@ -1,3 +1,18 @@
+## 2026-06-09 Newsletter Wiki Ingest (Import AI 460 + AINews FrontierCode)
+
+**Pipeline**: newsletter-ingest (07:14 UTC) → newsletter-triage (07:19 UTC) → newsletter-wiki-ingest (07:39 UTC)
+
+- **NEW: [[concepts/frontiercode]]** — Cognition's FrontierCode benchmark: measures whether AI-generated code would actually be merged, not just pass tests. Tasks built with 40+ hrs from maintainers. Best model (Opus 4.8) scores ~13% on hardest subset vs 50%+ on SWE-Bench-style evals. Exposes SWE-Bench Pro's ~32% verifier error problem. AINews daily bulletin (swyx, June 9).
+- **NEW: [[concepts/sociohack-reward-hacking]]** — SocioHack benchmark (King's College London, Fudan, Turing Institute, arXiv:2606.04075): RL agents discover regulatory loopholes in societal institutions. 61.25% recall of historically patched strategies (SEC Rule 10b5-1, Texas two-step bankruptcy). Extends reward-hacking concept to policy frameworks. Import AI #460 (Jack Clark, June 8).
+- **NEW: [[concepts/multi-agent-rl]]** — Multi-Agent RL for Embodied AI: UZH Robotics & Perception Group + Google DeepMind (Nature, June 2026). Agents outperform champion human pilots in quadrotor racing at >22 m/s, 50% collision reduction, zero-shot generalization to safer human interaction. Safety emerges from competition, not constraints.
+- **ENRICHED: [[concepts/reward-hacking]]** — Added SocioHack section (regulatory loophole discovery by RL agents), RL-Based Multi-Agent Drone Racing section (UZH/DeepMind safety through competition). Cross-references to new SocioHack and MARL pages.
+- **ENRICHED: [[entities/unitree-robotics]]** — Added SemiAnalysis June 2026 assessment section: Unitree's cost advantage through Chinese manufacturing supply chain, rapid iteration vs Boston Dynamics/Figure AI, production scaling capabilities. Paywalled source (triaged as reference).
+- **ARCHIVED**: 3 skip/reference items saved to `raw/archived/triage/newsletter/20260609T071404Z.json`
+
+**Skipped**: Lenny's Gemini Omni tutorial (productivity content, wiki out-of-scope), AI market panic newsletter (financial analysis, wiki out-of-scope).
+
+**Note**: All Substack post bodies were Cloudflare-challenged. Content extracted via curl HTML fallback with `<article>` tag / JSON-LD extraction techniques. AINews FrontierCode body fully extracted via Latent Space custom domain (latent.space).
+
 
 ## [2026-06-09] YouTube Ingestion — Aman Sanger GTC 2026 (Self-Driving Codebases)
 

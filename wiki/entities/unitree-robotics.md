@@ -4,7 +4,13 @@ created: 2026-04-26
 updated: 2026-04-26
 type: entity
 tags: [company, product]
-sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md]
+  - "raw/newsletters/2026-06-08-china-s-unitree-will-dominate-global-robotics.md"
+related:
+  - entities/china-ai-industry
+  - entities/dji
+  - entities/agi-bot
+  - ubtech-robotics
+  - fourier-intelligence
 ---
 
 # Unitree Robotics
@@ -50,6 +56,14 @@ Core conviction: humanoid robots only matter at scale if affordable at scale. Ag
 - Reshaped price floor for humanoid robots from $90,000+ range down to $4,900
 - Morgan Stanley revised 2026 China sales forecast to 28,000 units
 - Goldman Sachs revised 2035 global market forecast to $38B (6x upward revision)
+
+### SemiAnalysis Assessment (June 2026)
+
+SemiAnalysis published an analysis arguing that **Unitree will dominate the global robotics market**, citing:
+- **Cost advantage** through China's manufacturing supply chain ecosystem
+- **Rapid iteration cycle** compared to Western competitors (Boston Dynamics, Figure AI)
+- **Production scaling** capabilities that Western firms cannot match at similar price points
+- The analysis positions Unitree as the primary beneficiary of the humanoid robotics market expansion, with advantages that compound over time through manufacturing learning curves and supply chain integration.
 
 ## Relationships
 
