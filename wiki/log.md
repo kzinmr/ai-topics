@@ -1,3 +1,12 @@
+## [2026-06-09] Created: LLM API Pricing Comparison (US vs China)
+
+- **Created**: `wiki/comparisons/llm-api-pricing-2026-06.md` — Comprehensive per-million-token pricing comparison across 14 US and Chinese LLM API providers
+- **Coverage**: OpenAI, Anthropic, Google, Cohere, Amazon, DeepSeek, Qwen, Xiaomi, Tencent, ByteDance, Moonshot, Zhipu, Baidu
+- **Key data points**: DeepSeek V4-Pro 75% permanent discount ($0.435/$0.87), GPT-5 lineup ($0.05-$15.00 input range), Gemini 2.5 Pro ($1.25/$10.00), Claude Opus 4.1 ($15/$75)
+- **Features**: Price-performance matrix, cache pricing analysis, batch discount comparison, context window economics, 5 key trends analysis
+- **Monitoring**: `llm-pricing-monitor` cron job set up for weekly pricing page checks
+- **Updated**: `wiki/index.md` — added llm-api-pricing-2026-06 entry (Comparisons: 27 pages)
+
 ## [2026-06-09] Ingested: Reinforcing Recursive Language Models
 
 - **Raw article**: `wiki/raw/articles/2026-06-09_alphaxiv_reinforcement-learning-for-rlms.md`

@@ -1820,7 +1820,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 
-## Comparisons (26 pages)
+## Comparisons (27 pages)
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Agent Harnesses compared across architecture, routing, and execution
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — Memory architecture comparison of 5 systems: OpenClaw/Claude Code/Codex/Hermes/ChatGPT Dreaming. File-first common philosophy vs database-backed async consolidation, vector search vs full-text search, Bustamante classification extended with Async Consolidation Pipeline type.
@@ -1837,6 +1837,7 @@
 - [[comparisons/harness-backend-routing]] — Harness Backend Routing — OpenClaw vs Hermes vs Codex App Server vs Devin Desktop as harness adapter/proxy. Compares dynamic routing (sessions_spawn vs /codex-runtime vs codapter), execution control (/acp steer), tool interop (bidirectional MCP), persistent memory, and gateway support. Proposes 4-layer stack: OpenClaw (routing) + Hermes (memory/tools) + Devin Desktop (IDE/workspace) + Codex App Server (execution).
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison. elvis's 9-hour source code analysis. Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP). Control Plane Depth analysis (session visibility, scheduling determinism, child agent lifecycle, lane isolation, debugging determinism — the essence of orchestrator advantage beyond ACP and channel count). DeepLearning.AI 2026-05 analysis + Kilo blog.
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw. 9-dimension comparison table + Traction Signal (OpenRouter leaderboard reversal) + Agentic Loop + Caveats (token efficiency, skill explosion, maturity) + verdict + dual-agent architecture ([[comparisons/hermes-vs-openclaw-architecture|architecture details]]). DeepLearning.AI 2026-05 analysis + Kilo blog + Shann practical report.
+- [[comparisons/llm-api-pricing-2026-06]] — LLM API Pricing Comparison — US vs China Providers (June 2026). Per-million-token pricing across 14 providers: OpenAI, Anthropic, Google, Cohere, Amazon, DeepSeek, Qwen, Xiaomi, Tencent, ByteDance, Moonshot, Zhipu, Baidu. Price-performance matrix, cache pricing, batch discounts, context window economics. DeepSeek V4-Pro 75% permanent discount analysis.
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
 - [[comparisons/local-llm-models-april-2026]] — Local Llm Models April 2026
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API alternatives comparison: Parallel Search, Exa AI, SerpAPI, Tavily (2026)
