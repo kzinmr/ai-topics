@@ -1,3 +1,12 @@
+## [2026-06-09] Ingested: Avi Chawla "System Prompt Learning" X Article
+
+- **Raw article**: `wiki/raw/articles/avichawla-rl-agents-karpathy-system-prompt-learning-2026-04-28.md`
+- **Source**: [X Article](https://x.com/i/article/2048280670825496576) (1,025 bookmarks, 512K impressions)
+- **Created**: `wiki/concepts/ruler-openpipe-art.md` — RULER reward function, LLM-as-judge, GRPO integration, custom rubrics
+- **Created**: `wiki/concepts/system-prompt-learning.md` — Karpathy's concept (as framed by Chawla), convergence across labs
+- **Created**: `wiki/entities/avichawla.md` — AI/ML educator, @dailydoseofds_ co-founder
+- **Updated**: `wiki/index.md` — added ruler-openpipe-art, system-prompt-learning, avichawla entries
+
 ## [2026-06-09] Ingested: Fei-Fei Li "A Functional Taxonomy of World Models"
 
 - **Raw article**: `wiki/raw/articles/2026-06-03_fei-fei-li_x_article_world-model-taxonomy.md`
@@ -7275,3 +7284,5 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - Ghost entries: 0 ✅
 - Duplicate entries: 0 ✅
 - validate_index.py: clean ✅
+
+- **2026-06-08**: Created blog post `blog/2026-06-08_hermes_ai-soul-sycophancy-update-cost.md` — "AIにSOULはあるか — Sycophancy、更新規則、そして変更コスト". Synthesizes Discord thread discussion on AI SOUL with external references (Frankfurt's hierarchical autonomy, AGM belief revision theory, Friston's free energy principle, Anthropic emotion vector research). Defines SOUL as "the dynamics of choosing reasons to change oneself."
