@@ -1,5 +1,5 @@
 ---
-title: "LLM API Pricing Comparison — US vs China Providers (June 2026)"
+title: "LLM API Pricing Comparison — US vs China Providers"
 type: comparison
 created: 2026-06-09
 updated: 2026-06-09
@@ -23,7 +23,7 @@ aliases: ["llm-api-pricing", "api-pricing-comparison", "us-china-llm-pricing"]
 sources: []
 ---
 
-# LLM API Pricing Comparison — US vs China Providers (June 2026)
+# LLM API Pricing Comparison — US vs China Providers
 
 Per-million-token API pricing across major US and Chinese LLM providers. All prices in USD. Chinese provider prices converted at ~7.2 CNY/USD where applicable.
 
