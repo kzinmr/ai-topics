@@ -1,3 +1,9 @@
+## [2026-06-09] Ingested: Reinforcing Recursive Language Models
+
+- **Raw article**: `wiki/raw/articles/2026-06-09_alphaxiv_reinforcement-learning-for-rlms.md`
+- **Source**: [alphaXiv Blog](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
+- **Note**: Previously skipped in log-2026-05-13 as "reply (no article)" — now successfully fetched and saved. Article covers RL fine-tuning of 4B models as Recursive Language Models (RLMs), single-policy parent-child training with GRPO advantage inheritance, and evidence selection task results matching Claude Sonnet 4.6.
+
 ## [2026-06-09] Ingested: Hands-On Modern RL Curriculum
 
 - **Raw article**: `wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md`
