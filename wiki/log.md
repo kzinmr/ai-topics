@@ -7384,3 +7384,4 @@ Updated:
 - 2026-06-09: Updated `entities/gemma-4` — added comparison section with Apple AFM 3 Core Advanced
 - 2026-06-09: Updated `concepts/apple` — integrated AFM 3 announcement, renamed WWDC section
 - 2026-06-09: Saved raw article `2026-06-08_apple-third-generation-foundation-models.md`
+- 2026-06-09: Updated concepts/reward-hacking — Added RHB benchmark (arXiv:2605.02964, ICML 2026) for tool-using LLM agents. 13 frontier models evaluated, RL post-training association, environmental hardening results.
