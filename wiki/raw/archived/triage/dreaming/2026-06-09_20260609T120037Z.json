@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-09T12:02:12.312728+00:00",
+  "triage_run_id": "20260609T120037Z",
+  "source": "dreaming",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）のトリアージ。全記事が既存wikiページで完全にカバー済み、またはAI/LLMスコープ外。Takes=0、References=0、Skips=5。Hands-On Modern RLはconcepts/hands-on-modern-rl.md（156行）で本日作成済み。MAI-Thinking-1 Tech Reportはconcepts/mai-thinking-1-tech-report.md（227行）+ concepts/microsoft-mai-models.mdで包括的coverage。Dwarkesh AGI Economics対談はconcepts/agi-economics.md（93行）+ entities/dwarkesh-patel.mdに収録。Ed Zitron「AI Doesn't Have ROI」はentities/ed-zitron.mdに70行の専用セクションあり。Paul Graham「Being Popular」(2001)はentities/paulgraham-com.mdにAI関連セクションとして収録済み。",
+  "decisions": [
+    {
+      "item_id": "2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "source": "backlog",
+      "source_name": "Walking Labs Hands-On Modern RL",
+      "title": "Hands-On Modern RL: A Practice-First Guide to Modern Reinforcement Learning",
+      "url": "https://github.com/walkinglabs/hands-on-modern-rl",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既存ページで完全にカバー済み。concepts/hands-on-modern-rl.md（156行、本日作成）が本記事の全内容（RLHF/DPO/GRPO/RLVR/Agentic RLのハンズオンカリキュラム）を網羅。sourcesにraw/articleパスも含まれる。",
+      "candidate_wiki_path": "concepts/hands-on-modern-rl.md",
+      "body_excerpt": "# Hands-On Modern RL: A Practice-First Guide to Modern Reinforcement Learning\n**Source**: [GitHub Repository](https://github.com/walkinglabs/hands-on-modern-rl) | [Online Course](https://walkinglabs.github.io/hands-on-modern-rl/)\n**Description**: A practice-first guide to modern RL, from classic con"
+    }
+  ]
+}

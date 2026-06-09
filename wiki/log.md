@@ -7428,3 +7428,10 @@ Updated:
 - **Total pages**: 2436 — possible drift (filesystem: 2441 L2 pages), flagged for review
 - **Graph analysis**: Not actionable — stale (98.5h)
 - **Duplicates flagged**: koylan-ai / muratcan-koylan — from stale graph data, defer to next graph analysis run
+
+- **2026-06-09 17:50 UTC** — Wiki Health Auto-Fix: Index cleanup and orphan page registration.
+  - **CLEAN**: index.md — no pipe corruption, line number prefixes, triple brackets, or space prefix issues found.
+  - **FIXED**: 4 misplaced concept entries moved from Events section to correct alphabetical position in Concepts section.
+  - **REGISTERED**: 20 orphan concept pages added to index.md with proper alphabetical ordering.
+  - **VALIDATION** — validate_index.py: clean (1922 lines).
+  - **GHOST ENTRIES** — 0 ghost entries found. All 1899 indexed pages verified on disk.
