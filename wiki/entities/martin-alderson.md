@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-06-04
+updated: 2026-06-09
 tags:
   - person
   - blogger
@@ -16,6 +16,7 @@ sources:
   - raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md
   - raw/articles/martinalderson.com--posts-built-for-turbulence-podcast--40b40da5.md
   - raw/articles/martinalderson.com--posts-is-datacentre-sovereignty-really-that-important--8195ad72.md
+  - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
 ---
 
 
@@ -71,6 +72,19 @@ Martin consistently applies rigorous arithmetic to debunk AI hype and uncover ge
 - **"The Coming AI Compute Crunch"** — argued DRAM shortages (not capital expenditure) will define AI infrastructure growth through 2027
 - **"Are we really repeating the telecoms crash with AI datacenters?"** — compared token demand growth and capacity utilization to the 2000s telecom bubble, finding the economics don't match
 - **"Are OpenAI and Anthropic Really Losing Money on Inference?"** — deconstructed real costs, suggesting economics may be far more profitable than commonly claimed
+
+### xAI as Datacentre REIT (June 2026)
+
+Martin analyzed xAI's unexpected partnerships with **Anthropic** ($1.25bn/month for 300MW ~ 220K GPUs from Colossus 1, May 2026) and **Google** ($920mn/month for 110K GPUs, June 2026) — deals so lucrative that xAI would recoup its entire datacentre capex within **18 months** while retaining hundreds of MW of spare GPU capacity. Key structural points:
+
+- **Anthropic's compute bind as catalyst**: Anthropic's peak-hour restrictions (5am–11am PT / 1pm–7pm GMT) and chronic capacity issues — especially during Europe/Americas overlapping work hours — created demand that xAI's underutilised Colossus 1 could absorb at enormous scale.
+- **xAI's competitive moat in build speed**: The original Colossus 1 was built in **122 days** — a pace that hyperscalers cannot match (their projects take years). This construction speed advantage, inherited from SpaceX's infrastructure execution culture, is a structural edge in a world where every competitor is behind schedule on compute buildout. Even OpenAI's Stargate UAE faces disruption from the Iran conflict.
+- **Grok de-prioritisation**: Most of xAI's GPU capacity is now leased to direct competitors, signalling a strategic retreat from Grok as a frontier-tier model — or that xAI over-specified capacity relative to Grok inference demand and is monetising the surplus.
+- **Three-way thesis**: Martin argues all three explanations are simultaneously true to varying degrees — financial engineering (Musk/OpenAI legal battle, Google's SpaceX stake motivation), genuine compute shortage, and xAI/SpaceX's structural build-speed advantage. The magnitude of each will determine the success of the largest IPO in North American history.
+
+> *"The more I look at it, the more xAI is starting to resemble a datacentre REIT with a frontier lab attached, rather than the other way around."*
+
+Source: [[raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md]]
 
 ### Agentic Coding Tool Analysis
 

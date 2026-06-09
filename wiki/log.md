@@ -1,3 +1,13 @@
+---
+## [2026-06-09] Dreaming Wiki Ingest — Enriched Martin Alderson (xAI Datacentre REIT)
+
+**Pipeline**: dreaming-collect (18:00) → dreaming-group (18:10) → dreaming-wiki-ingest (18:20)
+**Source batch**: 6 RSS articles from June 9 scan
+
+- **ENRICHED: [[entities/martin-alderson.md]]** — Added "xAI as Datacentre REIT (June 2026)" section: Anthropic ($1.25bn/month, 300MW) and Google ($920mn/month, 110K GPUs) partnerships, 122-day Colossus 1 build speed, Grok de-prioritisation signal, three-way thesis on financial engineering / compute shortage / build-speed advantage. Source: [[raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md]]
+- **Skips=5**: All other candidates already captured by today's pipelines (sample-efficiency, Ed Zitron, Simon Willison WWDC, entropicthoughts LLM code quality, Gary Marcus)
+- **Takes=0**: Pipeline saturation confirmed — daily pipeline stack (blog-ingest, newsletter-ingest, active-crawl, X-bookmarks, raw-backlog) processed all AI-relevant content before 18:00
+
 - **2026-06-09 11:30 UTC** — X Bookmarks Ingest: Processed 3 bookmarks (3 X Articles) with full plain_text content available.
   - **ENRICHED: [[concepts/test-time-scaling]]** — Added "Evaluation & Safety Implications" section: scalar benchmark problem (GPT-5.5 case study), performance-vs-compute curves, AI preparedness implications, Gemini 3 Deep Think scaffolding equivalency, specific recommendations for labs/RSPs. Source: [[raw/articles/2026-06-09_x-article_implications-of-large-scale-test-time-compute.md]]
   - **ENRICHED: [[entities/pi]]** — Added "Project Trust Approval System" section: AGENTS.md injection threat model, once-per-project approval design, cross-agent comparison (Claude Code, Codex CLI). Source: [[raw/articles/2026-06-08_x-article_pi-new-approval-system.md]]
