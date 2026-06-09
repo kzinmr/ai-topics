@@ -4,6 +4,8 @@
   - Skips=18 (5 already-captured by newsletter/blog-wiki-ingest, 8 non-AI, 1 parody, 5 unsaved_articles)
   - Archive: all items already deduped in existing archive
 
+- **2026-06-09 09:00 UTC** — X post ingestion: Created OpenEnv entity page from Viv's (@vtrivedy10) analysis of model-harness-task fit. Key insights: tight model-harness coupling problem, multi-harness training via Nemotron Ultra, OpenEnv's standardized interface for harness-agnostic RL post-training. Source: https://x.com/Vtrivedy10/status/2064006338301087772
+
 ## 2026-06-09 Newsletter Wiki Ingest (Import AI 460 + AINews FrontierCode)
 
 **Pipeline**: newsletter-ingest (07:14 UTC) → newsletter-triage (07:19 UTC) → newsletter-wiki-ingest (07:39 UTC)
