@@ -25,6 +25,7 @@
 
 - **2026-06-09 09:00 UTC** — X post ingestion: Created OpenEnv entity page from Viv's (@vtrivedy10) analysis of model-harness-task fit. Key insights: tight model-harness coupling problem, multi-harness training via Nemotron Ultra, OpenEnv's standardized interface for harness-agnostic RL post-training. Source: https://x.com/Vtrivedy10/status/2064006338301087772
 
+---
 ## 2026-06-09 Newsletter Wiki Ingest (Import AI 460 + AINews FrontierCode)
 
 **Pipeline**: newsletter-ingest (07:14 UTC) → newsletter-triage (07:19 UTC) → newsletter-wiki-ingest (07:39 UTC)
@@ -41,6 +42,7 @@
 **Note**: All Substack post bodies were Cloudflare-challenged. Content extracted via curl HTML fallback with `<article>` tag / JSON-LD extraction techniques. AINews FrontierCode body fully extracted via Latent Space custom domain (latent.space).
 
 
+---
 ## [2026-06-09] YouTube Ingestion — Aman Sanger GTC 2026 (Self-Driving Codebases)
 
 - **Created**: `wiki/raw/transcripts/2026-04-12_aman-sanger_cursor-self-driving-codebases.txt` — YouTube transcript (964 segments, 40K chars)
@@ -50,11 +52,13 @@
 - **Created**: `wiki/concepts/async-coding-agents.md` — Async Coding Agents concept (cloud-hosted long-running agent paradigm)
 - **Enriched**: `wiki/entities/cursor-ai.md` — Added Self-Driving Codebases Vision (GTC 2026) section: three eras, multi-agent architecture, model specialization, automations, engineer's new role
 - **Updated**: `wiki/index.md` — Added 3 new entries, updated page counts
+---
 ## [2026-06-09] Apple WWDC 2026 + LLM Code Quality Concept
 
 - **Enriched**: `concepts/apple.md` — Added WWDC 2026 section: Siri AI (custom Gemini model, Vision LLMs, iOS 27 beta), PCC on Google Cloud (NVIDIA GPUs, same security architecture), Core AI library (PyTorch integration via coreai-torch). Source: Simon Willison Jun 8 2026.
 - **Created**: `concepts/llm-code-quality.md` — LLM code ~10% more complex than necessary. Maintenance implications of "almost good" quality. Source: entropicthoughts.com.
 
+---
 ## [2026-06-09] Model Hub Pages — Frontier Pricing Standardization
 
 - **Enriched**: `concepts/gemini.md` — Added Frontier Models pricing table (Gemini 3.5 Flash/3.1 Pro/Flash/Flash-Lite) + Legacy table (2.5/2.0/1.5 series). Removed stub status. Added `frontier-models` tag.
@@ -64,6 +68,7 @@
 - **Enriched**: `concepts/qwen.md` — Added API Pricing section (Qwen 3.7 Max/3.6 Plus/3 Plus/3 Turbo via DashScope).
 - **Standardized format**: All hub pages now have `## Frontier Models (June 2026)` section with consistent column layout: Model, In $/1M, Out $/1M, Cache Read, Ctx.
 
+---
 ## [2026-06-09] Created: LLM API Pricing Comparison (US vs China)
 
 - **Created**: `wiki/comparisons/llm-api-pricing-2026-06.md` — Comprehensive per-million-token pricing comparison across 14 US and Chinese LLM API providers
@@ -73,12 +78,14 @@
 - **Monitoring**: `llm-pricing-monitor` cron job set up for weekly pricing page checks
 - **Updated**: `wiki/index.md` — added llm-api-pricing-2026-06 entry (Comparisons: 27 pages)
 
+---
 ## [2026-06-09] Ingested: Reinforcing Recursive Language Models
 
 - **Raw article**: `wiki/raw/articles/2026-06-09_alphaxiv_reinforcement-learning-for-rlms.md`
 - **Source**: [alphaXiv Blog](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
 - **Note**: Previously skipped in log-2026-05-13 as "reply (no article)" — now successfully fetched and saved. Article covers RL fine-tuning of 4B models as Recursive Language Models (RLMs), single-policy parent-child training with GRPO advantage inheritance, and evidence selection task results matching Claude Sonnet 4.6.
 
+---
 ## [2026-06-09] Ingested: Hands-On Modern RL Curriculum
 
 - **Raw article**: `wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md`
@@ -86,6 +93,7 @@
 - **Created**: `wiki/concepts/hands-on-modern-rl.md` — Open-source, practice-first curriculum for modern reinforcement learning
 - **Updated**: `wiki/index.md` — added hands-on-modern-rl entry
 
+---
 ## [2026-06-09] Ingested: Avi Chawla "System Prompt Learning" X Article
 
 - **Raw article**: `wiki/raw/articles/avichawla-rl-agents-karpathy-system-prompt-learning-2026-04-28.md`
@@ -95,6 +103,7 @@
 - **Created**: `wiki/entities/avichawla.md` — AI/ML educator, @dailydoseofds_ co-founder
 - **Updated**: `wiki/index.md` — added ruler-openpipe-art, system-prompt-learning, avichawla entries
 
+---
 ## [2026-06-09] Ingested: Fei-Fei Li "A Functional Taxonomy of World Models"
 
 - **Raw article**: `wiki/raw/articles/2026-06-03_fei-fei-li_x_article_world-model-taxonomy.md`
@@ -104,15 +113,18 @@
 - **Updated**: `wiki/SCHEMA.md` — added `spatial-intelligence` tag
 - **Updated**: `wiki/index.md` — added world-model-taxonomy entry
 
+---
 ## [2026-06-08] Ingested: Addy Osmani "Loop Engineering"
 
 - **Raw article**: `wiki/raw/articles/2026-06-08_addyosmani_loop-engineering.md`
 - **Updated**: `wiki/concepts/agentic-loop.md` — added 5 building blocks (Automations, Worktrees, Skills, Connectors, Sub-agents + Memory), three dangers of loops (verification debt, comprehension debt, cognitive surrender), Codex vs Claude Code feature convergence
 - **Updated**: `wiki/index.md` — refreshed agentic-loop entry
 
+---
 ## [2026-06-08] X Bookmarks Ingest — RLHF deep-dive + subagent fan-out insight
 
 - **Bookmark 1**: X Article "What every programmer should know about RLHF" by @itsreallyvivek (Vivek)
+---
 ## [2026-06-09] Raw Backlog Ingest — All 5 candidates already processed
 
 **Batch:** raw_backlog_collect 2026-06-09T00:00:31Z (5 articles selected from 6,699 backlog)
@@ -134,6 +146,7 @@ Pipeline saturation pattern confirmed: daily pipelines (blog-ingest, newsletter-
 - **Saved**: `raw/articles/2026-06-02_irldanb_fan-out-fan-in-subagent-pattern.md` — Insight that fan-out's deeper value is parallel reasoning diversity, not just parallel execution
 - **Enriched**: `concepts/subagent-patterns.md` — Added fan-out-fan-in insight under Pattern 2 (Fan-Out); updated frontmatter (source, date)
 
+---
 ## [2026-06-08] RL Algorithm Questions — Arjun Kocher (@arjunkocher)
 
 - **Source**: https://www.k-a.in/rl-algo.html — Comprehensive Q&A on RL algorithms for LLM training, based on Xiuyu Li's question compilation
@@ -7404,3 +7417,14 @@ Updated:
 - 2026-06-09: Updated `concepts/apple` — integrated AFM 3 announcement, renamed WWDC section
 - 2026-06-09: Saved raw article `2026-06-08_apple-third-generation-foundation-models.md`
 - 2026-06-09: Updated concepts/reward-hacking — Added RHB benchmark (arXiv:2605.02964, ICML 2026) for tool-using LLM agents. 13 frontier models evaluated, RL post-training association, environmental hardening results.
+---
+
+## [2026-06-09] Watchdog Auto-Fix
+- **Entities section header**: 780 → 782 pages (+2 files on disk)
+- **Concepts section header**: 1617 → 1621 pages (+4 files on disk)
+- **Summary line**: Indexed entries 1888 → 1901, Concepts 1617 → 1621, Entities 780 → 782
+- **Log.md separators**: Fixed 12 missing `---` separators
+- **Job alerts**: x-accounts-scan (43h stale, false positive — runs on */2 day schedule)
+- **Total pages**: 2436 — possible drift (filesystem: 2441 L2 pages), flagged for review
+- **Graph analysis**: Not actionable — stale (98.5h)
+- **Duplicates flagged**: koylan-ai / muratcan-koylan — from stale graph data, defer to next graph analysis run
