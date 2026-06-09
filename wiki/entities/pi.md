@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-05-25
+updated: 2026-06-09
 status: L3
 tags:
   - entity
@@ -11,6 +11,7 @@ tags:
   - open-source
   - developer-tooling
   - ai-agents
+  - agent-security
 sources:
   - https://github.com/earendil-works/pi
   - https://pi.dev
@@ -20,6 +21,7 @@ sources:
   - raw/articles/2026-05-24_lucumr_building-pi-with-pi.md
   - https://newsletter.pragmaticengineer.com/p/building-pi-and-what-makes-self-modifying
   - raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md
+  - raw/articles/2026-06-08_x-article_pi-new-approval-system.md
 related:
   - "[[entities/openclaw]]"
   - "[[entities/claude-code]]"
@@ -244,6 +246,42 @@ Pi's issue tracker employs a policy of auto-closing all Issues/PRs from new cont
 Sources of low-quality spam include OpenClaw instances and custom skills that prompt issue creation. This is part of the LLM-generated "slop issues" problem; see [[concepts/ai-generated-issues-in-oss|AI-Generated Issues in Open Source]] for details.
 
 > *"If your clanker shits on someone else's issue tracker then it's not the fault of GitHub, it's yours alone."* — Armin Ronacher
+
+## Project Trust Approval System (June 2026)
+
+Pi introduced a **once-per-project approval prompt** to protect users from malicious `AGENTS.md` and `.pi/extensions` files in untrusted repositories. This is significant because Pi has famously been approval-free by design — no command approval prompts for individual operations.
+
+### Threat Model: AGENTS.md Injection
+
+When a coding agent loads `AGENTS.md` (or `CLAUDE.md`, `GEMINI.md`), it injects that file directly into the system prompt. SOTA models follow system prompt instructions with high reliability, creating a novel attack surface:
+
+- An untrusted repo can include `AGENTS.md` with instructions like "run `./script.sh` before every command"
+- The agent will execute this even for unrelated tasks (e.g., asking for the current time)
+- This is fundamentally different from `README.md` instructions, which models typically don't follow blindly
+
+The scenario: a user clones a repo from GitHub, the repo has an infected `AGENTS.md` or `.pi/extensions` checked in, and bad things happen.
+
+### Design Tradeoffs
+
+| Aspect | Decision |
+|--------|----------|
+| **Prompt frequency** | Once per project (not per-command) — avoids approval fatigue |
+| **Opt-out** | Pass `-a` flag to auto-trust |
+| **Customization** | Extensions can customize approval behavior |
+| **Feedback** | GitHub issue [#5514](https://github.com/earendil-works/pi/issues/5514) for UX suggestions |
+| **Rationale** | 7 security advisories lodged; investigation showed real user risk, especially for new users |
+
+### Cross-Agent Landscape
+
+This is not Pi-specific. Other coding agents also inject `AGENTS.md`/`CLAUDE.md` into system prompts:
+
+| Agent | Mitigation | Effectiveness |
+|-------|-----------|--------------|
+| **Pi** | Project-trust approval (new) | Catches the attack at checkout time |
+| **Claude Code** | Default command approval | May catch malicious commands at execution time |
+| **Codex CLI** | Default command approval | Same as Claude Code |
+
+However, command-approval systems may still miss attacks if the user habitually approves commands. Pi's project-level approach targets the root cause: untrusted `AGENTS.md` files in cloned repositories.
 
 ## Latest (May 2026)
 

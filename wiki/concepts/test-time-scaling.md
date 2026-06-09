@@ -6,7 +6,7 @@ aliases:
   - test-time-compute
   - inference-time-compute
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-06-09
 type: concept
 tags:
   - concept
@@ -16,6 +16,8 @@ tags:
   - optimization
   - training
   - rlvr
+  - ai-safety
+  - benchmark-framing
 sources:
   - https://arxiv.org/abs/2408.03314
   - https://arxiv.org/abs/2408.00724
@@ -23,6 +25,7 @@ sources:
   - https://arxiv.org/abs/2412.09078
   - https://testtimescaling.github.io/
   - https://openai.com/index/introducing-o3-and-o4-mini/
+  - raw/articles/2026-06-09_x-article_implications-of-large-scale-test-time-compute.md
 related:
   - scaling-hypothesis
   - scaling-laws
@@ -228,6 +231,51 @@ This implies test-time scaling is not simply "think longer = better" — there a
 - **Inference cost explosion**: Reasoning models can consume 10–100× more tokens than standard LLMs
 - **Revenue opportunities**: Higher pricing for "thinking" tiers (o1-pro at $200/month vs ChatGPT Plus at $20/month)
 - **Hardware implications**: Drives demand for high-throughput inference hardware (see [[concepts/nvidia-vera-rubin]])
+
+## Evaluation & Safety Implications
+
+> **Key insight (June 2026)**: As models improve, benchmark scores become increasingly a function of test-time compute budget. Single-number benchmarks obscure this, creating a gap between reported and actual capability. This has direct implications for AI safety evaluation. [Source: [[raw/articles/2026-06-09_x-article_implications-of-large-scale-test-time-compute.md]]]
+
+### The Scalar Benchmark Problem
+
+When GPT-5.5 was released, initial reactions were skeptical — the benchmark grid showed only marginal improvements over GPT-5.4. However, once people controlled for test-time compute (comparing performance at equal token budgets), GPT-5.5 showed a substantial lead. The scalar benchmark failed because it compared unequal inference budgets.
+
+The core issue: **modern models have no observable performance plateau at practical budgets.** Andrej Karpathy's autoresearch experiment showed continued improvement even after hundreds of experiments. The UK AI Security Institute's cyber evaluation showed Mythos and GPT-5.5 improving rapidly even at 100M tokens. Stronger models appear to be more effective at operating over longer horizons, pushing the plateau further out — potentially to infinity.
+
+### Performance-vs-Compute Curves
+
+The recommended alternative: **benchmarks should report performance curves** with tokens, cost, or wall-clock time on the x-axis:
+
+| X-Axis | Advantage | Limitation |
+|--------|-----------|-----------|
+| **Tokens** | Directly comparable within a model family | Tokenizers differ between models |
+| **Cost ($)** | Aligns incentives, user-relevant | Depends on batching, hardware utilization |
+| **Wall-clock time** | Human-meaningful | Best-of-N techniques scale compute without increasing latency |
+
+ARC-AGI has already moved to score-vs-cost reporting. Other benchmarks should follow.
+
+### AI Preparedness & Safety Implications
+
+The scalar benchmark problem extends directly to AI safety evaluation:
+
+1. **Current practice gap**: Most safety evaluations (model cards, system cards) report single-scalar results without specifying the inference budget used
+2. **Gemini 3 Deep Think case study**: When released with strong benchmark scores but no model card evaluating risks, outrage followed. But the deeper issue was that labs don't consistently account for test-time compute in safety evaluations
+3. **Scaffolding equivalency**: Deep Think's capabilities were likely available to anyone willing to pay for equivalent inference by scaffolding existing models. The convenience of the product wrapper obscured this
+4. **State-actor budgets**: A dedicated actor could apply $10M+ of inference to a single task — well beyond typical evaluation budgets
+
+### Recommendations
+
+1. **Labs should publish performance-vs-compute curves** for new models, not just scalar benchmark scores
+2. **Benchmarks should track inference budget on leaderboards** or adopt explicit token/cost/time budgets
+3. **Preparedness Frameworks (RSPs) should account for inference compute** — set safety thresholds based on projected capability at multiple inference budgets, with stated uncertainty
+4. **Evaluate at multiple inference budgets** and extrapolate to higher budgets (with uncertainty), since evaluating every rollout at state-actor budgets is impractical
+5. **Long-horizon evaluation challenge**: Agent operating horizons may soon exceed model development cycles, making pre-release evaluation impossible at maximum operating lifetime
+
+### The Persistence Problem
+
+Nearly two years after the o1 announcement (September 2024) demonstrated that reasoning model performance scales with inference compute, frontier AI labs still commonly report single-number benchmarks. Safety orgs are still surprised when scaffolds achieve better performance with 100× the inference budget. RSPs still often ignore inference compute usage when determining critical capability thresholds.
+
+> **Bottom line**: As models improve at leveraging test-time compute, scalar benchmarks become increasingly misleading. Inference budget must become a first-class dimension of both capability measurement and safety policy.
 
 ## Open Questions
 

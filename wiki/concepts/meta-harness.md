@@ -2,13 +2,14 @@
 title: "Meta-Harness"
 type: concept
 created: 2026-04-09
-updated: 2026-05-25
-tags: [concept, harness-engineering, meta-harness, autoresearch, hill-climbing, agent-runtime, optimization, stanford, mit]
-related: [harness-engineering, automated-optimization, llm-systems, autoresearch, hermes-agent]
+updated: 2026-06-09
+tags: [concept, harness-engineering, meta-harness, autoresearch, hill-climbing, agent-runtime, optimization, stanford, mit, text-optimization]
+related: [harness-engineering, automated-optimization, llm-systems, autoresearch, hermes-agent, text-optimization, yoonho-lee]
 sources:
   - raw/articles/2026-04-06_deedydas_meta-harnesses-autoresearch.md
   - raw/articles/2026-04-07_howdymary_meta-harness-hermes.md
   - https://arxiv.org/abs/2603.28052
+  - raw/articles/2026-06-08_yoonho-lee_we-should-take-text-optimization-more-seriously.md
 ---
 
 # Meta-Harness

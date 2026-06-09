@@ -24,6 +24,9 @@ A June 2026 meta-analysis of 78 studies found an **85% prompt injection success 
 | **Direct injection** | User-supplied prompts that override system instructions | High |
 | **Tool output poisoning** | Compromised tool responses that redirect agent behavior | High |
 | **Multi-turn manipulation** | Gradual steering across conversation turns | Medium |
+| **AGENTS.md/CLAUDE.md injection** | Malicious instructions in repo context files loaded into system prompt; SOTA models follow system prompt instructions with high reliability | Critical |
+
+See also: [[entities/pi#project-trust-approval-system-june-2026|Pi's Project Trust Approval System]] for a concrete mitigation deployed in production.
 
 ## Defense Layers
 

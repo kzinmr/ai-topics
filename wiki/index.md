@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-09 | Total pages: 2434 | Indexed entries: 1886 | Concepts: 1616 | Entities: 779
+> Last updated: 2026-06-09 | Total pages: 2436 | Indexed entries: 1888 | Concepts: 1617 | Entities: 780
 
-## Entities (779 pages)
+## Entities (780 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -649,6 +649,7 @@
 - [[entities/yeachan-heo]] — Creator of **Oh-My-Codex (OmX)** workflow layer for Codex CLI and **Oh-My-Claudecode (OMC)**. Algorithmic trader in Seoul. Primary collaborator on **[[concepts/claw-code]]** Rust implementation.
 - [[entities/yohei-nakajima]] — Creator of BabyAGI (first popular open-source autonomous agent, 20k+ GitHub stars, 70+ citations). General Partner at Untapped Capital. Three-category agent taxonomy (hand-crafted/specialized/general), BabyAGI evolutionary series (OG→Bee→Cat→2→2o→3), three-layer memory architecture (event log→knowledge graph→hierarchical summaries), self-improving agents synthesis (NeurIPS 2025 review), and "The State of Statefulness in AI Agents" (May 2026).
 - [[entities/yoav-goldberg]] — NLP researcher, author of 'Neural Network Methods for NLP', curator of 'Learning LLMs in 2025' guide. Author of influential 2023 analysis 'RL for LLMs' (hallucination-as-SFT-failure thesis). Formerly at Bar-Ilan University and AI2.
+- [[entities/yoonho-lee]] — Yoonho Lee — Stanford CS PhD student (Chelsea Finn's IRIS Lab). First author of Meta-Harness (arXiv:2603.28052). Research: continual learning in text space, text optimization, AI agents. Author of "We Should Take Text Optimization More Seriously" (Jun 2026).
 - [[entities/ysymyth]] — YSYMYTH (skeleton page)
 - [[entities/zach-mueller]] — **Zach Mueller** (@TheZachMueller, muellerzr). Lead developer of Hugging Face Accelerate. ML Engineer at 🤗. fastai educator, OSS author (AdaptNLP, fastdebug). Distributed training infrastructure expert.
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
@@ -792,7 +793,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1615 pages)
+## Concepts (1617 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1781,6 +1782,7 @@
 - [[concepts/test-time-compute]] — Test-Time Compute — Compute scaling at test time
 - [[concepts/test-time-scaling]] — Paradigm of allocating additional computation at inference time to improve output quality. Technique hierarchy: CoT→self-consistency→Best-of-N→PRM beam search→Tree-of-Thought→RL-trained reasoning (o1/o3/R1). Snell et al. (2024) on compute-optimal allocation. Can be more effective than 14× model parameter scaling. Training linkage with GRPO/RLVR.
 - [[concepts/testing-ai-agents]] — Testing AI Agents
+- [[concepts/text-optimization]] — Text Optimization — Practice of modifying the mutable text layer (prompts, context, memory, harness code) to change model behavior. Three theses: legitimate update mechanism, sample efficiency in low-data regimes, update-time compute as a new scaling axis. Originated by Yoonho Lee (Stanford, Jun 2026). Related: [[concepts/meta-harness]], [[concepts/harness-engineering]], [[concepts/context-engineering]].
 - [[concepts/token-economics]] — Token Economics — LLM inference cost analysis, token pricing, and optimization strategies.
 - [[concepts/token-to-outcome-attribution]] — Token-to-Outcome Attribution — Enterprise layer connecting inference spend to business outcomes. Marginal token utility, retry tails, context inflation, routing waste. Jaya Gupta's Token Budget Wars framework.
 - [[concepts/tokenmaxxing]] — Tasteful Tokenmaxxing — Quality-over-quantity AI adoption philosophy emphasizing judicious token use.
