@@ -1,7 +1,7 @@
 ---
 title: Qwen Model Family
 created: 2026-04-25
-updated: 2026-05-23
+updated: 2026-06-09
 type: concept
 tags:
   - model
@@ -19,6 +19,19 @@ sources:
 # Qwen Model Family
 
 Open-source large language model family from [[entities/alibaba|Alibaba]]'s Qwen Team. Known for efficient architectures, strong multilingual performance, and permissive licensing (Apache 2.0 for most releases).
+
+## API Pricing (June 2026)
+
+Prices via Alibaba Cloud DashScope. Converted at ~7.2 CNY/USD.
+
+| Model | In $/1M | Out $/1M | Ctx | Tier | Notes |
+|-------|---------|----------|-----|------|-------|
+| **Qwen 3.7 Max** | ~$1.30 | ~$7.80 | 128K | Frontier | AA Intelligence Index 56.6 |
+| **Qwen 3.6 Plus** | ~$0.50 | ~$2.00 | 128K | Mid | API-only, proprietary |
+| **Qwen 3 Plus** | ~$0.50 | ~$2.00 | 128K | Mid | |
+| **Qwen 3 Turbo** | ~$0.15 | ~$0.60 | 128K | Budget | |
+
+> Cache/batch pricing: Not published by Alibaba Cloud.
 
 ## Model Generations
 

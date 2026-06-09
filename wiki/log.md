@@ -1,3 +1,12 @@
+## [2026-06-09] Model Hub Pages — Frontier Pricing Standardization
+
+- **Enriched**: `concepts/gemini.md` — Added Frontier Models pricing table (Gemini 3.5 Flash/3.1 Pro/Flash/Flash-Lite) + Legacy table (2.5/2.0/1.5 series). Removed stub status. Added `frontier-models` tag.
+- **Deleted**: `concepts/google-gemini.md` — Duplicate of `concepts/gemini.md`, merged content.
+- **Enriched**: `concepts/claude-models.md` — Added Frontier Models pricing table (Opus 4.8/Sonnet 4.6/Haiku 4.5) + pricing history (Opus 4.1→4.8 3x price drop). Added `frontier-models` tag.
+- **Enriched**: `concepts/gpt-models.md` — Added Frontier Models pricing table (GPT-5.5/5.1/o4-mini/o3) + Legacy table (GPT-5 series/GPT-4.1 series). Added `frontier-models` tag.
+- **Enriched**: `concepts/qwen.md` — Added API Pricing section (Qwen 3.7 Max/3.6 Plus/3 Plus/3 Turbo via DashScope).
+- **Standardized format**: All hub pages now have `## Frontier Models (June 2026)` section with consistent column layout: Model, In $/1M, Out $/1M, Cache Read, Ctx.
+
 ## [2026-06-09] Created: LLM API Pricing Comparison (US vs China)
 
 - **Created**: `wiki/comparisons/llm-api-pricing-2026-06.md` — Comprehensive per-million-token pricing comparison across 14 US and Chinese LLM API providers

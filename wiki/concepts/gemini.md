@@ -2,12 +2,13 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-04-24
+updated: 2026-06-09
 tags:
   - concept
   - google
   - model
   - multimodal
+  - frontier-models
 aliases: ["gemini", "google gemini", "gemini 3", "gemini pro"]
 related:
   - concepts/frontier-models-2026-04
@@ -21,6 +22,28 @@ sources: []
 **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations to become one of the frontier model families alongside GPT and Claude.
 
 > *"AI has evolved from simply reading text and images to reading the room."* — **Sundar Pichai, CEO, Google & Alphabet**
+
+## Frontier Models (June 2026)
+
+| Model | In $/1M | Out $/1M | Cache Read | Ctx | GA Date | Source |
+|-------|---------|----------|------------|-----|---------|--------|
+| **Gemini 3.5 Flash** | $1.50 | $9.00 | $0.15 | 1M | May 2026 | [[entities/gemini-3-5-flash]] |
+| **Gemini 3.1 Pro** | $2.50 | $10.00 | $0.25 | 1M | Apr 2026 | |
+| **Gemini 3.1 Flash** | ~$0.30 | ~$2.50 | ~$0.03 | 1M | Apr 2026 | |
+| **Gemini 3.1 Flash-Lite** | ~$0.10 | ~$0.40 | ~$0.01 | 1M | May 2026 | [[concepts/gemini-3-1-flash-lite]] |
+
+> Cache: 90% discount on reads via Context Caching API. No cache write premium.
+
+### Legacy Models
+
+| Model | In $/1M | Out $/1M | Cache Read | Ctx | Notes |
+|-------|---------|----------|------------|-----|-------|
+| Gemini 2.5 Pro | $1.25 | $10.00 | $0.125 | 1M+ | $2.50 >200K |
+| Gemini 2.5 Flash | $0.30 | $2.50 | $0.03 | 1M | |
+| Gemini 2.5 Flash Lite | $0.10 | $0.40 | $0.01 | 1M | |
+| Gemini 2.0 Pro | $0.10 | $0.40 | $0.025 | 2M | |
+| Gemini 1.5 Pro | $1.25 | $5.00 | $0.3125 | 2M | |
+| Gemini 1.5 Flash | $0.075 | $0.30 | $0.01875 | 128K | |
 
 ## Gemini 3 (November 2025)
 

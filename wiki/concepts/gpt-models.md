@@ -4,6 +4,7 @@ type: concept
 tags:
   - model
   - openai
+  - frontier-models
 status: active
 created: 2026-04-20
 updated: 2026-06-03
@@ -39,6 +40,30 @@ The **GPT** (Generative Pre-trained Transformer) series, developed by OpenAI, re
 | **GPT-5.5** | Apr 23, 2026 | — | First fully retrained base model since GPT-4.5; codename "Spud"; 82.7% Terminal-Bench 2.0 |
 | **GPT Image 2.0** | Apr 21, 2026 | — | Next-gen image generation with text rendering, 2K resolution |
 | **Codex** | 2025–2026 | — | OpenAI's coding agent; evolving into super app |
+
+## Frontier Models (June 2026)
+
+| Model | In $/1M | Out $/1M | Cache Read | Batch In | Batch Out | Ctx | Max Out | Tier |
+|-------|---------|----------|------------|----------|-----------|-----|---------|------|
+| **GPT-5.5** | ~$1.25 | ~$10.00 | ~$0.625 | ~$0.625 | ~$5.00 | 400K | 128K | Frontier |
+| **GPT-5.1** | $1.25 | $10.00 | $0.625 | $0.625 | $5.00 | 400K | 128K | Frontier |
+| **o4-mini** | $1.10 | $4.40 | $0.55 | $0.55 | $2.20 | 200K | 100K | Reasoning |
+| **o3** | $2.00 | $8.00 | $1.00 | $1.00 | $4.00 | 200K | 100K | Reasoning |
+
+> Cache: 50% discount (automatic prefix matching). Batch: 50% discount (24h SLA).
+
+### Legacy Models (still available)
+
+| Model | In $/1M | Out $/1M | Cache Read | Batch In | Batch Out | Ctx | Notes |
+|-------|---------|----------|------------|----------|-----------|-----|-------|
+| GPT-5 Pro | $15.00 | $120.00 | $7.50 | $7.50 | $60.00 | 400K | 272K max output |
+| GPT-5 | $1.25 | $10.00 | $0.625 | $0.625 | $5.00 | 400K | Superseded by 5.1/5.5 |
+| GPT-5 Mini | $0.25 | $2.00 | $0.125 | $0.125 | $1.00 | 400K | Budget |
+| GPT-5 Nano | $0.05 | $0.40 | $0.025 | $0.025 | $0.20 | 400K | Cheapest |
+| o3-mini | $1.10 | $4.40 | $0.55 | $0.55 | $2.20 | 200K | Budget reasoning |
+| GPT-4.1 | $2.00 | $8.00 | $1.00 | $1.00 | $4.00 | 1M | Pre-GPT-5 |
+| GPT-4.1 Mini | $0.40 | $1.60 | $0.20 | $0.20 | $0.80 | 1M | |
+| GPT-4.1 Nano | $0.10 | $0.40 | $0.05 | $0.05 | $0.20 | 1M | |
 
 ## Model Architecture
 

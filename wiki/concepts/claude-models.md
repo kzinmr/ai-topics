@@ -1,13 +1,14 @@
 ---
 title: Claude Models
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-09
 type: concept
 tags:
   - model
   - text-generation
   - anthropic
   - economics
+  - frontier-models
   - agent-safety
   - prompt-caching
   - agentic-engineering
@@ -18,6 +19,27 @@ sources: [raw/articles/simonwillison.net--2026-may-28-claude-opus-4-8--8d05463f.
 # Claude Models
 
 Family of large language models developed by [[Anthropic]]. Named after Claude Shannon. Known for emphasis on safety, honesty, and helpfulness.
+
+## Frontier Models (June 2026)
+
+| Model | In $/1M | Out $/1M | Cache Read | Cache Write | Batch In | Batch Out | Ctx | Max Out |
+|-------|---------|----------|------------|-------------|----------|-----------|-----|---------|
+| **Claude Opus 4.8** | $5.00 | $25.00 | $0.50 | $6.25 | $2.50 | $12.50 | 1M | 128K |
+| **Claude Opus 4.8 (fast)** | $10.00 | $50.00 | — | — | — | — | 1M | 128K |
+| **Claude Sonnet 4.6** | ~$3.00 | ~$15.00 | ~$0.30 | ~$3.75 | ~$1.50 | ~$7.50 | 200K | — |
+| **Claude Haiku 4.5** | $1.00 | $5.00 | $0.10 | $1.25 | $0.50 | $2.50 | 200K | — |
+
+> Cache: 90% discount on reads, +25% on writes. Break-even: ~1.4 calls. Batch: 50% discount (24h SLA).
+
+### Pricing History
+
+The Opus line saw a **3x price drop** from 4.1 to 4.7:
+
+| Model | In $/1M | Out $/1M | Era |
+|-------|---------|----------|-----|
+| Claude Opus 4.1 | $15.00 | $75.00 | Early 2026 |
+| Claude Opus 4.5–4.6 | ~$15.00 | ~$75.00 | Fast mode: $30/$150 |
+| Claude Opus 4.7–4.8 | **$5.00** | **$25.00** | Apr–May 2026 |
 
 ## Model Versions
 
