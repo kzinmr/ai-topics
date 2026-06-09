@@ -1,7 +1,7 @@
 ---
 title: Doug Turnbull (softwaredoug)
 created: 2026-05-17
-updated: 2026-05-28
+updated: 2026-06-09
 type: entity
 tags:
   - person
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md
   - raw/articles/2026-05-17_softwaredoug-com_autoresearching-better-msmarco-bm25.md
   - raw/articles/2025-09-18_softwaredoug_bm25f-from-scratch.md
+  - raw/articles/2026-06-08_softwaredoug_three-kinds-of-agentic-search.md
 ---
 
 # Doug Turnbull (softwaredoug)
@@ -75,6 +76,7 @@ Doug advocates for a pragmatic, "grug-brained" approach to search evaluation:
 
 ## Notable Blog Posts (2025–2026)
 
+- "Three kinds of agentic search" (2026-06-08) — Practitioner taxonomy: Agent-Assisted → Agent-Driven → Agent-Native search paradigms
 - "BM25F from scratch" (2025-09-18) — Full derivation of multi-field BM25: building blocks, IDF distortion problem, TF double-counting, two-step correction. Foundation for Elasticsearch `cross_fields` and beyond.
 - "Autoresearching BM25 on MSMarco" (2026-05-17) — Agent-driven BM25 tuning on passage retrieval, dual-gate evaluation, overfitting lessons
 - "Agentic search models" (2026-05-11) — Agents, not APIs, as the future of search

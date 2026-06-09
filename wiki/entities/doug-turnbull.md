@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-06-09
 tags:
   - person
   - developer-tooling
@@ -308,6 +308,8 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 - **[Reasoning Agents Need Bad Search](https://softwaredoug.com/blog/2025/09/22/reasoning-agents-need-bad-search)** (Sep 2025) — Argues that traditional "thick" search APIs are counterproductive for AI agents. Agents perform better with simple, predictable BM25 keyword search because they can iteratively refine queries and reason transparently about results. Introduces patterns for LLM self-evaluation, semantic caching, and building a "knowledge graph of user intent" from agent interaction logs. Identifies the "clickstream blindspot" — agents lack access to implicit human behavior signals that traditional search relies on.
 
 - **[Semantic Search Without Embeddings](https://softwaredoug.com/blog/2026/01/08/semantic-search-without-embeddings)** (Jan 2026) — Decomposes semantic search into three pillars: representation, similarity, and match criteria. Argues embeddings fail at the third pillar (explicit inclusion/exclusion). Proposes hierarchical taxonomies as the alternative — tokenizing category paths and feeding them into BM25 for natural specificity scoring. Demonstrates LLM-augmented taxonomy building: prompting small models to "creatively generate" plausible taxonomy paths before mapping to real ones.
+
+- **[Three kinds of agentic search](https://softwaredoug.com/blog/2026/06/08/three-kinds-of-agentic-search)** (Jun 2026) — Proposes a practitioner taxonomy of three agentic search paradigms by degree of agent agency: (1) **Agent-Assisted** — agent improves queries, search engine unchanged (where most "AI search" is today); (2) **Agent-Driven** — agent orchestrates multi-step retrieval loops, mixing search with computation (Perplexity, AI Overviews); (3) **Agent-Native** — search infrastructure designed from scratch for agent consumption: structured results, APIs over scraping, semantic indexing at the fact level, provenance tracking, composable primitives. Key insight: organizations need all three simultaneously, and "search quality becomes agent quality" in the agent-driven paradigm.
 
 ## Related
 - [[elasticsearch]] — Primary search engine in his early work

@@ -3,6 +3,11 @@
   - **NEW: [[concepts/agent-security-landscape-2026]]** — 85% prompt injection success rate (78-study meta-analysis), defense layers (sandboxing, DLP, runtime enforcement), industry initiatives. Source: [[raw/articles/2026-06-09_agent-security-prompt-injection-landscape.md]]
   - **NEW: [[concepts/model-merging]]** — SLERP, TIES-Merging, DARE, Sakana AI evolutionary merging, mergekit ecosystem. Source: [[raw/articles/2026-06-09_model-merging-evolutionary-techniques.md]]
   - **NEW: [[concepts/apple-gemini-ai-architecture]]** — Apple's June 2026 strategic shift to Google Gemini models (611 HN pts). Source: [[raw/articles/2026-06-09_apple-gemini-ai-architecture.md]]
+- **2026-06-09** — Ingested Doug Turnbull's "Three kinds of agentic search" blog post.
+  - **NEW: [[raw/articles/2026-06-08_softwaredoug_three-kinds-of-agentic-search]]** — Practitioner taxonomy: Agent-Assisted → Agent-Driven → Agent-Native paradigms.
+  - **UPDATED: [[concepts/agentic-search]]** — Added Turnbull's three-paradigm framework section with mapping to existing Level 1-5 taxonomy. Updated sources.
+  - **UPDATED: [[entities/doug-turnbull]]** — Added blog post to Key Articles on softwaredoug.com.
+  - **UPDATED: [[entities/softwaredoug]]** — Added blog post to Notable Blog Posts and sources.
   - Discovery: 3 parallel subagents scanned HN Algolia (97 unique stories, 27 AI-relevant), X/Twitter (10 trending discussions), and wiki gap analysis (13 gaps identified). 4 topics selected for page creation.
   - JS-blocked sources: Meta AI blog (llama-4), MacRumors (Apple/Gemini) — metadata + HN discussion used. Pages marked for future enrichment.
 - **2026-06-09 08:06 UTC** — blog-wiki-ingest (blog-triage recovery): Enriched 2 entity pages from blog-triage checkpoint `20260609T070039Z`. Takes=0 (all already captured by prior pipelines), References=2.

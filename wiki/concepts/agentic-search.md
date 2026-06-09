@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-29
+updated: 2026-06-09
 type: concept
 tags:
   - search
@@ -35,6 +35,7 @@ sources:
   - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
   - raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval.md
   - raw/papers/2026-05-03_2605.05242_direct-corpus-interaction.md
+  - raw/articles/2026-06-08_softwaredoug_three-kinds-of-agentic-search.md
   - https://arxiv.org/abs/2603.04384
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
@@ -1108,6 +1109,42 @@ Perplexity runs a continuous autoresearch loop over the SDK, proposing and valid
 SaC tested filesystem-based serde vs REPL for persisting state across turns. Filesystem serde was selected for better reliability on long trajectories — requiring models to convey state declaratively rather than implicitly improves state management effectiveness.
 
 Sources: [[raw/articles/2026-06-01_perplexity-rethinking-search-as-code-generation]], [[concepts/programmatic-tool-calling]], [[concepts/search-as-code]]
+
+### Three Paradigms of Agentic Search (Turnbull, June 2026)
+
+Doug Turnbull's *Three kinds of agentic search* [[raw/articles/2026-06-08_softwaredoug_three-kinds-of-agentic-search]] offers a practitioner taxonomy that complements the academic frameworks above. Rather than organizing by IR layer or harness architecture, Turnbull categorizes by **how much agency the agent has over the search process**.
+
+#### Paradigm 1: Agent-Assisted Search
+
+The most familiar pattern — an agent refines, expands, or disambiguates queries before passing them to a traditional search engine. The search engine itself doesn't change; the agent is a wrapper that improves the **query side** of the equation. Examples: query reformulation, clarification questions, multi-query decomposition.
+
+> This is where most "AI search" products are today. Valuable but incremental — you're still fundamentally doing keyword/BM25/vector retrieval.
+
+#### Paradigm 2: Agent-Driven Search
+
+The agent decides **what** to search, **when** to search, and **how** to search. It orchestrates multiple retrieval steps in a loop: *think → decide whether to search → search → observe → think again*. It can mix search with computation, code execution, or API calls, and maintains working memory across iterations.
+
+Examples: Perplexity's research mode, Google's AI Overviews.
+
+> The challenge: **search quality becomes agent quality**. A bad agent with a great search engine will produce worse results than a great agent with a mediocre search engine.
+
+#### Paradigm 3: Agent-Native Search
+
+The paradigm shift — search infrastructure designed **from the ground up** for agent consumption, not human consumption. Structured, machine-readable results instead of HTML; APIs over scraping; semantic indexing at the fact/claim level (not document level); provenance tracking; composable search primitives.
+
+> If 30% of your traffic comes from agents (and it will), you'll start optimizing for agents the way you optimized for Google's crawler.
+
+#### Architecture Implications
+
+| Paradigm | Investment Focus | Existing Concept Page Mapping |
+|----------|-----------------|-------------------------------|
+| **Agent-assisted** | Query understanding | Level 1 (IR): Q2Q reformulation, query expansion |
+| **Agent-driven** | Orchestration | Level 2 (Harness): Two-loop architecture, steering patterns, SaC |
+| **Agent-native** | Data layer | Level 3 (Externalized Processing): DCI, structured APIs, composable primitives |
+
+Turnbull's key insight: most organizations will need all three simultaneously. The dirty secret is that these aren't just "search with AI sprinkled on top" — they're fundamentally different interaction patterns requiring different infrastructure, different quality metrics, and different product thinking.
+
+> *Start with agent-assisted. It's the easiest win. But start planning for agent-native now, because the web of 2028 will look very different from the web of 2024.*
 
 ---
 
