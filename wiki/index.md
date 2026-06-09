@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-09 | Total pages: 2430 | Indexed entries: 1882 | Concepts: 1612 | Entities: 779
+> Last updated: 2026-06-09 | Total pages: 2434 | Indexed entries: 1886 | Concepts: 1616 | Entities: 779
 
 ## Entities (779 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -792,7 +792,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1611 pages)
+## Concepts (1615 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1826,6 +1826,10 @@
 - [[events/google-io-2026]] — Google I/O 2026 (2026-05-20) — Gemini Spark (personal AI agent), Antigravity platform, Gemini 3.5 Flash announced. OpenCLaw competitor. Gemini CLI→Antigravity CLI migration (OSS→proprietary). Agent security (prompt injection) concerns.
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
+- [[concepts/agent-security-landscape-2026]] — Agent Security Landscape (2026): 85% prompt injection success rate against coding agents, defense layers (sandboxing, DLP, runtime enforcement), industry initiatives (Microsoft, Alibaba, Anthropic).
+- [[concepts/apple-gemini-ai-architecture]] — Apple-Gemini AI Architecture: Apple's June 2026 strategic shift to Google Gemini models for next-gen AI, competitive dynamics in the Big Tech AI alliance landscape.
+- [[concepts/llama-4]] — LLaMA 4: Meta's April 2026 open-weight multimodal model family, Scout (compact) and Maverick (flagship) variants, competitive with DeepSeek V4 and Qwen 3.7.
+- [[concepts/model-merging]] — Model Merging: Combining neural network weights without training — SLERP, TIES-Merging, DARE, evolutionary merging (Sakana AI), mergekit ecosystem, 1000+ merged models on Hugging Face.
 
 ## Comparisons (27 pages)
 
