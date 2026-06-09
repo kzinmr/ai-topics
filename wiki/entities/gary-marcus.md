@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-08
+updated: 2026-06-09
 tags:
   - lab
   - benchmark
@@ -25,6 +25,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-why-things-will-eventually-fall-apart--aa0d561a.md
   - raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md
   - raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md
+  - raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md
 ---
 
 # Gary Marcus
@@ -148,6 +149,31 @@ Marcus summarized the pattern: "we are being flooded with AI-generated content, 
 Marcus also noted that Paul Krugman and Paul Kedrosky reached similar conclusions from different angles.
 
 Source: [[raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md]]
+
+### Jensen Huang's IPO Math and the Wachter Productivity Paper (June 2026)
+
+On June 8, 2026, Marcus published a sharp critique of **Jensen Huang's comparison of upcoming AI IPOs (SpaceX, OpenAI, Anthropic) to Amazon, Google, and Meta**:
+
+**The SpaceX Math Problem:**
+- $1,000 in Google's IPO → ~$139,000 today. Amazon returned **2,538x** the original investment.
+- If SpaceX were to match Amazon's 2,538x return, its market cap would be **$4,442 trillion** — **36× the current total world GDP**.
+- Marcus: "That is absolutely not going to happen. It's insane."
+
+**Wachter Productivity Paper (Wharton/Point 72):**
+Marcus highlighted a new study by **Jessica Wachter (Wharton)** and **Jonathan Wachter (Point 72)** that calculated the productivity growth required to justify current AI investment levels:
+
+- AI must increase productivity by **2.7×** across the entire economy, and quickly, or tech companies risk bankruptcy
+- The 2.7× multiple applies to the "AI sector, broadly defined" — not just individual companies
+- Large companies with low debt have "some leeway" in how long the productivity increase takes to materialize
+- The authors assume it would occur by **2028** — which Marcus and the paper both flag as extremely aggressive
+- Key quote from the paper: **"a productivity boom that is in investment data, but not yet in productivity data. If the boom fails to materialize, the current buildout will be the largest misallocation of capital in history"**
+
+Marcus connected this to his earlier analysis: if the productivity boom doesn't materialize at the required scale and speed, the entire AI investment thesis collapses. He also noted **isaiprofitable.com** — a real-time tracker of AI capital waste that shows millions of dollars burned per minute.
+
+**Post Hoc Fallacy Critique:**
+Marcus argued that Jensen Huang's comparison suffers from a **post hoc fallacy** — taking the most extreme outliers in financial history (Amazon, Google, Meta) and projecting that new entrants will achieve similar returns, ignoring survivorship bias and the fundamental mathematical impossibility of multiple $4T+ companies in the same sector.
+
+Source: [[raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md]]
 
 ### Trump AI Preflight Checks Executive Order (Jun 2026)
 

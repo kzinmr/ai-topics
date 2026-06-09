@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-06-04
+updated: 2026-06-09
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -25,6 +25,7 @@ sources:
   - raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md
   - raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
   - raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md
+  - raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md
 ---
 
 # Ed Zitron
@@ -348,6 +349,75 @@ Zitron highlighted a Bain & Co survey of 951 executives from companies with $100
 - Bain's conclusion: "The technology worked. The value didn't arrive."
 
 Zitron's response: "Put another way, the technology 'worked (?),' but did not provide value in doing so."
+
+### "AI Is Slowing Down" — Infrastructure Math Demands 10x Revenue (June 2026)
+
+In "[AI Is Slowing Down](https://www.wheresyoured.at/ai-is-slowing-down/)" (June 2026), Zitron presented his most detailed **infrastructure-level mathematical analysis** of why AI cannot sustain its current investment trajectory, arguing that the gap between compute commitments and revenue demand is fundamentally unbridgeable.
+
+#### The $15 Trillion Compute Problem
+
+- **190GW of data centers planned** (Sightline data), at **$80-100B/GW** (Jensen Huang's stated costs) = **$9.5-15 trillion total buildout**. Bloomberg incorrectly reported this as "$3 trillion."
+- **Anthropic's compute commitments**: $330B across Google, Amazon, Microsoft + $30B (CoreWeave) + $15B (SpaceX) = $375B total. To pay for this, Anthropic must reach **$174B/year revenue by 2029**.
+- **OpenAI's projected burn**: **$852B through end of 2030**, with $770B+ in compute commitments across Microsoft, Amazon, CoreWeave, Cerebras, Oracle.
+- **Conclusion**: AI infrastructure being built demands that generative AI generate **over $2 trillion in annual revenue by 2030** — or none of the capex makes economic sense.
+
+#### The Revenue Growth Gap
+
+- OpenAI and Anthropic combined projected revenues for 2026: **~$60B**
+- Required by 2029: **$358B** (OpenAI $184B + Anthropic $174B)
+- **Growth needed**: 496% in 3 years
+- **OpenAI and Anthropic make up 89% of all AI startup revenues** (The Information)
+- Microsoft's $37B AI ARR is predominantly OpenAI's compute; the rest (~$8B) is Copilot
+- **No other major purchasers** of AI compute exist outside these ecosystems at scale
+
+#### Mustafa Suleyman Contradiction
+
+Zitron highlighted Microsoft AI CEO Mustafa Suleyman's statement that **Anthropic's models are too expensive** and Microsoft intends to reduce usage to zero — directly contradicting the demand growth narrative: "You can't do that Mustafa! We need every cent of demand, otherwise everything falls apart!"
+
+#### The "Loop" Problem
+
+Zitron critiqued the emerging industry push for **agent "loops"** — designing systems where agents autonomously burn tokens without human prompting:
+
+- **Boris Cherny** (Claude Code chief) and **Peter Steinberger** (OpenClaw) both urging users to "design loops for their agents"
+- Zitron interprets this as an attempt to **artificially inflate token consumption** to sustain revenue growth
+- When users pay per-token, AI mistakes (loops, hallucinations, wasted computation) become expensive rather than free
+- **"You must burn more tokens, because otherwise you won't be doing AI coding right"**
+
+#### Enterprise Token Budget Cuts
+
+Zitron documented the shift from AI enthusiasm to cost containment:
+
+| Organization | Action |
+|---|---|
+| **Uber** | Capped employee spend at **$1,500/month per user** after burning annual token budget in one quarter |
+| **T-Mobile** | Capped at **$2,000/month per user**, moving to tiered system |
+| **Brex** | Engineers: **$500/week** in tokens. Non-engineers: **$5/week** |
+| **Amazon** | SVP Dave Treadwell: "don't use AI just for the sake of using AI" |
+| **Walmart** | Set token limits on "Code Puppy" internal tool |
+
+#### The Giant Metal Spider Analogy
+
+Zitron introduced an extended analogy comparing current AI to the **giant mechanical spider from Wild Wild West** — a million-dollar machine that sometimes makes you coffee but sometimes smashes the kitchen:
+
+- $1M purchase price, $40K fuel per use
+- Sometimes works, sometimes causes catastrophic damage
+- Companies subsidize the experience ($200/month) to hide true costs
+- Media declares it will "change everything"
+- Every improvement costs hundreds of millions and isn't always effective
+- **The core problem**: you can't predict when it will fail, despite everyone calling it "smart"
+
+#### Circular Economy Argument
+
+Zitron argued the AI industry is a **circular economy that needs real demand at some point**:
+
+- AI labs keep costs high to feed money to hyperscaler partners
+- Hyperscalers reinvest in AI labs (equity stakes)
+- Labs buy more NVIDIA GPUs
+- **"Efficiency" and "cost reduction" run counter to the growth narrative** — if AI becomes more efficient, demand for compute falls, breaking the cycle
+- The industry needs **at least two more OpenAI-scale companies** to justify the $1.1T in remaining hyperscaler performance obligations
+
+Zitron concluded by teasing a **future exposé** in the next two weeks from a tech industry source that could "possibly burst the AI bubble," calling it "the information I've wanted for years."
+
 
 ### Sam Altman CNBC Interview
 

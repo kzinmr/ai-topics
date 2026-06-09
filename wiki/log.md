@@ -1,3 +1,9 @@
+- **2026-06-09 08:06 UTC** — blog-wiki-ingest (blog-triage recovery): Enriched 2 entity pages from blog-triage checkpoint `20260609T070039Z`. Takes=0 (all already captured by prior pipelines), References=2.
+  - `entities/ed-zitron.md`: Added "AI Is Slowing Down" section — $9.5-15T data center buildout, Anthropic $174B/2029 revenue target, OpenAI $852B burn through 2030, 496% growth needed, enterprise token budget caps (Uber $1500/mo, T-Mobile $2000/mo, Brex $500/wk), Suleyman/Anthropic cost contradiction, "loop" critique, Giant Metal Spider analogy, circular economy thesis. Source: [[raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md]]
+  - `entities/gary-marcus.md`: Added "Jensen Huang's IPO Math and Wachter Productivity Paper" section — SpaceX 2538x return = $4,442T (36× world GDP), Wachter paper's 2.7× productivity requirement by 2028, isaiprofitable.com tracker, post hoc fallacy critique. Source: [[raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md]]
+  - Skips=18 (5 already-captured by newsletter/blog-wiki-ingest, 8 non-AI, 1 parody, 5 unsaved_articles)
+  - Archive: all items already deduped in existing archive
+
 ## 2026-06-09 Newsletter Wiki Ingest (Import AI 460 + AINews FrontierCode)
 
 **Pipeline**: newsletter-ingest (07:14 UTC) → newsletter-triage (07:19 UTC) → newsletter-wiki-ingest (07:39 UTC)
