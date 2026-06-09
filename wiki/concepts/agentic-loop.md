@@ -16,13 +16,14 @@ tags:
   - cron
 created: 2026-05-13
 updated: 2026-06-08
-aliases: [agent loop, ReAct loop, decide-act-observe, agent execution cycle]
+aliases: [agent loop, ReAct loop, decide-act-observe, agent execution cycle, loop engineering]
 sources:
   - https://stevekinney.com/writing/agent-loops
   - https://agentic.ai/what-is-agentic-ai
   - https://www.anthropic.com/research/building-effective-agents
   - raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex.md
   - raw/articles/2026-06-08_mvanhorn_wtf-is-a-loop.md
+  - raw/articles/2026-06-08_addyosmani_loop-engineering.md
   - https://thriveholdings.com
 ---
 
@@ -153,6 +154,36 @@ Peter Steinberger's complementary thesis: the reusable unit inside the loop is a
 
 This connects to the [[concepts/agentic-engineering|agentic engineering]] practice of building reusable [[concepts/agent-skills|agent skills]] as the durable asset, with loops as the plumbing that invokes them.
 
+## The Five Building Blocks of a Loop (Osmani, June 2026)
+
+Addy Osmani's "Loop Engineering" article identifies five components that both Codex and Claude Code now ship natively. The convergence of both tools on the same primitives suggests these are the canonical building blocks:
+
+| # | Block | Purpose | Codex | Claude Code |
+|---|-------|---------|-------|-------------|
+| 1 | **Automations** | Scheduled discovery + triage | Automations tab, background worktrees | `/loop`, `/goal`, cron, hooks |
+| 2 | **Worktrees** | Parallel isolation | Built-in worktree support | `--worktree`, `isolation: worktree` |
+| 3 | **Skills** | Persistent project knowledge | `$skill-name`, `/skills` | `SKILL.md` + scripts/refs |
+| 4 | **Connectors** | Real tool integration (MCP) | MCP connectors | MCP connectors |
+| 5 | **Sub-agents** | Maker-checker separation | `.codex/agents/` TOML | `.claude/agents/`, agent teams |
+
+Plus **memory** — a markdown file, Linear board, or any durable store that lives outside the conversation. "The agent forgets, the repo doesn't."
+
+### Why This Matters
+
+> "A year ago if you wanted a loop you wrote a pile of bash and you maintained that pile forever. Now the pieces just ship inside the products." — Osmani
+
+The convergence means loop design is no longer tool-specific. The shape is the same in Codex and Claude Code; you design a loop that works regardless of which tool you happen to be sitting in.
+
+### The Three Dangers of Loops
+
+Osmani identifies three risks that sharpen (not ease) as loops improve:
+
+1. **Verification debt** — unattended loops make unattended mistakes. "Done" is a claim, not a proof.
+2. **Comprehension debt** — the faster the loop ships code you didn't write, the bigger the gap between what exists and what you understand.
+3. **Cognitive surrender** — the temptation to stop having an opinion and accept whatever the loop produces. "Designing the loop is the cure when you do it with judgment and the accelerant when you do it to avoid thinking."
+
+> "Two people can build the exact same loop and get completely opposite results. One uses it to move faster on work they understand deeply. The other uses it to avoid understanding the work at all." — Osmani
+
 ## What Separates Agents from Chatbots
 
 | Capability | Chatbot | Agentic AI |
@@ -251,3 +282,4 @@ The real engineering challenges are around the loop:
 - [Boris Cherny: Why Coding Is Solved, and What Comes Next](https://www.youtube.com/watch?v=RkQQ7WEor7w) — Sequoia AI Ascent / WorkOS Acquired Unplugged, June 2026
 - [Ralph Loop](https://ghuntley.com/ralph/) — Geoffrey Huntley, July 2025
 - [Gas Town](https://github.com/gastownhall/gastown) — Steve Yegge, January 2026
+- [Loop Engineering](https://x.com/i/article/2064127981161959567) — Addy Osmani, June 2026

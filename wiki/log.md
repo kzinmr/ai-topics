@@ -1,3 +1,9 @@
+## [2026-06-08] Ingested: Addy Osmani "Loop Engineering"
+
+- **Raw article**: `wiki/raw/articles/2026-06-08_addyosmani_loop-engineering.md`
+- **Updated**: `wiki/concepts/agentic-loop.md` — added 5 building blocks (Automations, Worktrees, Skills, Connectors, Sub-agents + Memory), three dangers of loops (verification debt, comprehension debt, cognitive surrender), Codex vs Claude Code feature convergence
+- **Updated**: `wiki/index.md` — refreshed agentic-loop entry
+
 ## [2026-06-08] X Bookmarks Ingest — RLHF deep-dive + subagent fan-out insight
 
 - **Bookmark 1**: X Article "What every programmer should know about RLHF" by @itsreallyvivek (Vivek)
