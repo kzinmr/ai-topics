@@ -4,7 +4,7 @@ type: concept
 aliases:
   - apple
 created: 2026-04-25
-updated: 2026-06-08
+updated: 2026-06-09
 tags:
   - concept
   - company
@@ -59,6 +59,30 @@ Apple's AI CapEx represents approximately **2%** of what its four largest peers 
 
 When [[entities/tim-cook]] announced his departure in April 2026, his successor was [[entities/john-ternus]] — a **25-year hardware engineering veteran**, not an AI expert. This choice is widely interpreted as a definitive statement: Apple will remain a **hardware company first**. Cook could have selected a CEO who would reorient Apple around AI. Instead, he chose continuity of Apple's hardware-centric identity.
 
+## WWDC 2026: Siri AI and Core AI
+
+Per Simon Willison (Jun 8, 2026):
+
+### Siri AI
+- Apple licensing a custom Gemini-derived model for Private Cloud Compute (PCC)
+- Vision LLMs extract information from user's screen — sidesteps need for per-app integration code
+- Vision LLMs were much less mature at 2024 WWDC; now feasible
+- iOS 27 Developer Beta available with waitlist for new Siri AI access
+
+### Private Cloud Compute on Google Cloud
+- PCC extended to Google Cloud systems using NVIDIA GPUs
+- Same architectural security patterns as PCC on Apple silicon:
+  - Dedicated process per request in own namespace
+  - Shared inference software recycled with short TTL
+  - Attested keys in separate confidential VM isolated from external inputs
+- All binaries published for public inspection
+
+### Core AI Library
+- Enables developers to take full advantage of Apple hardware for running models
+- Integrates with Meta's PyTorch ecosystem via `coreai-torch` Python package
+- Bridges PyTorch `ExportedProgram` → Core AI `AIProgram`
+- Maps ATen operators to Core AI operations node-by-node
+
 ### Siri Opens to Third-Party AI
 
 In March 2026, Bloomberg reported that Apple would open Siri to third-party AI models. Users will be able to route queries to ChatGPT or Claude directly from Siri, choosing which AI powers their assistant.
@@ -92,5 +116,6 @@ The article identifies **Anthropic** as the only AI lab with conviction comparab
 ## Sources
 
 - The Algorithmic Bridge, "What Apple Knows About AI That Silicon Valley Won't Admit" — [[raw/articles/thealgorithmicbridge.com--p-what-apple-knows-about-ai-that-silicon--18e593fc.md]]
+- Simon Willison, WWDC 2026 Siri AI details — [[raw/articles/simonwillison.net--2026-jun-8-wwdc--b8b98dfb.md]]
 - Bloomberg, "Apple Opens Siri to Third-Party AI Models" (March 2026)
 - Apple Q2 2026 Earnings Report (April 2026)

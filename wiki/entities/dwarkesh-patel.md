@@ -2,8 +2,8 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-06-05
-sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md]
+updated: 2026-06-09
+sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md]
 tags:
   - person
   - blogger
@@ -56,6 +56,7 @@ As of early 2026, the Dwarkesh Podcast has published approximately 115 episodes 
 | **May 2026** | Published "The mistake of conflating intelligence and power" — critiques AI safety's definition of intelligence |
 | **May 2026** | Published "Notes on pretraining parallelisms and failed training runs" — FSDP, pipeline parallelism, causality-breaking bugs |
 | **Jun 2026** | Interviewed Alex Imas (Dir. AGI Economics, DeepMind) & Phil Trammell (Head of Economics, Epoch): "What remains scarce after AGI?" — labor share, relational sector, taxation, messy middle, von Neumann probes → [[concepts/agi-economics]] |
+| **Jun 2026** | Published "The sample efficiency black hole" — argues humans are 1000x-1Mx more sample efficient than LLMs; data (not architecture) drives progress; Chinchilla scaling laws can't bridge the gap |
 
 ## Key Projects
 
@@ -83,6 +84,7 @@ Production features video recordings integrated with audio releases, distributed
 - **"Notes on Pretraining Parallelisms" (May 2026)** — Deep technical analysis of FSDP, pipeline parallelism, causality-breaking bugs in MoE routing (Llama 4 underperformance). Emphasizes that bias compounds while variance averages out; FP16 collective bugs during GPT-4 training; pretraining flops equation (6ND).
 - **"RLVR Might Be Disproportionately Bad at Science" (May 2026)** — From interview with Michael Nielsen. Argues that scientific verification loops span decades/centuries, making RL reward signals inadequate. Historical examples: Copernicus less accurate than Ptolemy initially; Mercury anomaly → Einstein GR; Prout's atomic weight hypothesis.
 - **"The Mistake of Conflating Intelligence and Power" (May 2026)** — Critiques the AI safety definition of intelligence. Argues that current AI development (training better coders/coworkers) is not strongly correlated with power-seeking. Uses Garett Jones's individual vs. national IQ analysis; historical examples (Trevithick died poor, George III went mad but Britain thrived).
+- **"The Sample Efficiency Black Hole" (Jun 2026)** — Humans are 1,000×–1,000,000× more sample efficient than LLMs. Main driver of progress is more/better data, not architectural innovation. Chinchilla scaling laws show even infinite parameters only reduce data need by ~10×. RL is best understood as synthetic data generation (compute → verifier → good data → train model). Robotics gap: humans learn teleoperation in hours, driving in ~20 hours. Genome is only 3GB — not enough for model parameters, implying a qualitatively different learning algorithm. → [[concepts/sample-efficiency]]
 
 ## Core Ideas
 
@@ -178,6 +180,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[concepts/world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
 - [[concepts/multi-agent-autonomy-scale]] — His vision of future AI architecture
 - [[concepts/agi-economics]] — Alex Imas & Phil Trammell podcast on AGI economics
+- [[concepts/sample-efficiency]] — "The sample efficiency black hole" thesis: data firehose, not architecture, drives progress
 - [[entities/gary-marcus]] — Both critique current AI approaches from different angles
 - [[entities/anthropic]] — Frequent interview subject (Dario Amodei episodes)
 - [[entities/jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
@@ -206,6 +209,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [Notes on pretraining parallelisms and failed training runs (May 2026)](https://www.dwarkesh.com/p/notes-on-pretraining-parallelisms)
 - [The mistake of conflating intelligence and power (May 2026)](https://www.dwarkesh.com/p/the-mistake-of-conflating-intelligence)
 - [Alex Imas & Phil Trammell — \"What remains scarce after AGI?\" (Jun 2026)](https://www.dwarkesh.com/p/alex-imas-phil-trammell)
+- [The sample efficiency black hole (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole)
 
 ## References
 

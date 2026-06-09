@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-06-09
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md]
+sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md]
 ---
 
 
@@ -427,6 +427,43 @@ Zitron critiqued this as "nonsense" built on hypotheticals four years into the A
 **Sam Altman CNBC admission**: When asked about enterprise concerns over rising AI costs, Altman conceded the industry needs to "figure out" ROI rationalization, admitting: "I would bet that by another year or two from now, there is a much better rationalization of companies' spend relative to outcomes."
 
 **Uber/Axios $500M token incident**: One company accidentally spent $500M in a single month on Anthropic models due to missing spend limits. Uber's CTO burned the company's entire annual token budget in four months, leading the COO to say it was "getting harder to justify" AI spending.
+
+
+## June 2026 Update: Capex Acceleration
+
+### Datacenter Scale ($9.5-15 Trillion)
+Per Ed Zitron (Jun 8, 2026):
+- 190GW of data centers planned globally
+- At $80-100B per GW, total cost: $9.5-15 trillion
+- Bloomberg incorrectly frames this as "$3 trillion" buildout
+
+### Anthropic's Compute Commitments
+- $330B in compute/chip commitments (Google, Amazon, Microsoft)
+- Additional $30B with CoreWeave, $15B with SpaceX
+- Must reach $174B/year revenue by 2029
+- Raised $95B across rounds (Feb, Apr, May 2026) — insufficient
+- Needs another ~$200B in next year
+
+### OpenAI's Burn Rate
+- $852B projected burn through end of 2030
+- $770B+ in compute commitments (Microsoft, Amazon, CoreWeave, Cerebras, Oracle)
+- $122B funding round (Mar 2026) — insufficient
+- Needs another ~$250B by end of year
+- $50B compute spend in 2026 alone
+
+### Revenue Reality
+- OpenAI + Anthropic = 70-90% of all AI compute demand
+- Combined projected 2029 revenue: $358B ($184B + $174B)
+- 140GW critical IT load at $12.5M/MW = $1.75T annual revenue needed
+- Barely a few billion in demand outside these two companies
+
+### Wharton Productivity Study
+Jessica Wachter (Wharton) & Jonathan Wachter (Point 72):
+- AI must increase productivity 2.7x — quickly — or tech companies risk bankruptcy
+- Applies to AI sector broadly defined
+- Assumed by 2028
+- "A productivity boom that is in investment data, but not yet in productivity data"
+- If boom fails: "largest misallocation of capital in history"
 
 
 ## Sources

@@ -1,7 +1,7 @@
 ---
 title: xAI
 created: 2026-05-02
-updated: 2026-05-21
+updated: 2026-06-09
 type: entity
 tags:
   - company
@@ -11,6 +11,7 @@ sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md
   - raw/articles/2026-02-02_spacex-acquires-xai-merger.md
   - https://wccftech.com/xai-using-just-11-percent-gpus/
+  - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
 ---
 
 # xAI
@@ -64,6 +65,35 @@ xAI entered the coding agent market with **Grok Build**, a terminal-based AI cod
 - Parallel subagent execution indicates architectural maturity comparable to Codex and Claude Code
 
 Source: Aakash's Clicky newsletter (May 2026)
+
+## Datacenter-as-a-Service Pivot (June 2026)
+
+xAI has pivoted from pure frontier lab to datacenter infrastructure provider:
+
+### Capacity Deals
+| Partner | Monthly Fee | GPUs | Capacity |
+|---------|------------|------|----------|
+| Anthropic | $1.25B/month | ~220k GPUs | 300MW |
+| Google | $920M/month | 110k GPUs | — |
+
+- Anthropic deal enabled reversal of peak-hour usage restrictions
+- Both deals have 90-day cancellation clauses after initial lock-in
+- If deals continue 18 months, xAI recoups all capex and retains hundreds of MW of GPUs
+
+### Competitive Advantage
+- SpaceX/xAI built Colossus 1 in 122 days
+- Hyperscalers typically take years for equivalent builds
+- Many planned datacenters still years away from completion
+- Even OpenAI's Stargate UAE datacenter threatened by Iran conflict
+
+### Grok Implications
+- Capacity destined for Grok training/inference now leased to competitors
+- Serious retreat from frontier-class lab status
+- xAI + Cursor deal further muddies waters
+
+Per Martin Alderson: "xAI is starting to resemble a datacentre REIT with a frontier lab attached, rather than the other way around."
+
+Source: Martin Alderson (Jun 2026)
 
 ## SpaceX Acquisition (Feb 2026)
 

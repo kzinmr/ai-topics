@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-08 | Total pages: 2420 | Indexed entries: 1875 | Concepts: 1604 | Entities: 777
+> Last updated: 2026-06-09 | Total pages: 2421 | Indexed entries: 1876 | Concepts: 1605 | Entities: 777
 
 ## Entities (777 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -264,7 +264,7 @@
 - [[entities/droid]] — Factory AI-built enterprise coding agent. Multi-platform across CLI/IDE/Slack/Linear/CI/CD. Specification Mode + 3-stage Auto-Run. SOC-2 compliant, $20-50/mo. Specialized sub-agents (CodeDroid/Review Droid/QA Droid).
 - [[entities/dspy]] — DSPy (Declare + Optimize) is an open-source framework developed by Stanford's NLP group for building systems that use large language models. Instead of writing hand-crafted prompts, developers decl...
 - [[entities/dsprrr]] — dsprrr: R-native DSPy/RLM implementation by James H. Wade. callr subprocess isolation, ellmer structured outputs, teleprompter/grid-search optimization. Only R-language RLM.
-- [[entities/dwarkesh-patel]] — **Born** | August 19, 2000, United States |
+- [[entities/dwarkesh-patel]] — Dwarkesh Patel — American podcaster, writer, technology journalist. Host of Dwarkesh Podcast (~115 episodes, 63K+ Substack subscribers). TIME 100 Most Influential People in AI (2024). Author of *The Scaling Era* (Stripe Press, 2025). Signature framing: short-term bearish, long-term explosively bullish on AGI. Latest: "The sample efficiency black hole" (Jun 2026).
 - [[entities/dylan-patel]] — **Role** | Founder, CEO, and Chief Analyst at SemiAnalysis |
 - [[entities/eric-jang]] — Former VP of AI at 1X Technologies, Google Brain researcher. Reinforcement learning and robotics expert. AlphaGo analysis, automated AI research.
 - [[entities/eric-hartford]] — **X** | @QuixiAI |
@@ -789,7 +789,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1604 pages)
+## Concepts (1605 pages)
 
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
@@ -1028,7 +1028,7 @@
 - [[concepts/anti-sycophancy]] — Anti-Sycophancy
 - [[concepts/antoine-chaffin]] — antoine-chaffin
 - [[concepts/apache-solr]] — Apache Solr
-- [[concepts/apple]] — Apple's unique AI philosophy: $14B Capex ($670B competitors), non-AI CEO succession (John Ternus), Siri open to third-party AI. Pascal's Wager framework.
+- [[concepts/apple]] — Apple's unique AI philosophy: $14B Capex ($670B competitors), non-AI CEO succession (John Ternus), Siri open to third-party AI. Pascal's Wager framework. WWDC 2026: custom Gemini model for Siri AI, PCC on Google Cloud with NVIDIA GPUs, Core AI library with PyTorch integration.
 - [[concepts/application-compatibility]] — Application Compatibility
 - [[concepts/arc-agi-1]] — ARC-AGI-1 — fluid intelligence test by François Chollet. Grid-based abstract reasoning. o3 at 87.5% first human-level breakthrough. 2024 ARC Prize.
 - [[concepts/arc-agi-2-benchmark]] — ARC-AGI-2 Benchmark
@@ -1491,6 +1491,7 @@
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development — Methodology for using LLM coding agents in software development. Covers greenfield vs rewrite paradigms, CL size discipline, test-first strategy, language choice (Go advantage), human-in-the-loop categories, and junior vs senior guidance. Based on Eli Bendersky's pycparser rewrite and watgo greenfield project experiences.
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
 - [[concepts/llm-augmented-knowledge-retrieval]] — LLM-Augmented Knowledge Retrieval — Pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Retrieval-first organization for LLM-queryable vaults. Related: Claude Code + Obsidian integration, Karpathy's LLM Wiki concept.
+- [[concepts/llm-code-quality]] — LLM Code Quality — LLM-generated code is ~10% more complex than necessary even on easy tasks. "Almost good" quality accepted too easily, creates long-term technical debt. Case study: Haskell HTTP header encoding.
 - [[concepts/llm-core]] — LLM Core
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm — Two-stage development approach: pre-training → post-training (SFT+RS+DPO). Established in the Llama 3 paper.
@@ -1705,6 +1706,7 @@
 - [[concepts/saas-agent-era]] — SaaS structural transformation in the AI Agent era. From feature distribution platforms to Agent operating systems. UI thinning, artifact separation for customization, extending multi-tenancy into the Agent dimension, shift to outcome-based value units. Includes classification of dangerous vs strong SaaS.
 - [[concepts/sana-vm]] — SANA-WM — NVIDIA's 2.6B parameter open-source world model. 60-second 720p video generation on single GPU. Gated DeltaNet + Softmax hybrid. Apache 2.0.
 - [[concepts/scaffold-vs-rl-debate]] — Scaffold vs RL Debate — Debate over whether agent performance gains come from better scaffolding (prompts, tools) or reinforcement learning (training).
+- [[concepts/sample-efficiency]] — LLM Sample Efficiency — How much data LLMs need vs. humans (~1M× gap). Data, not architecture, drives progress. Chinchilla scaling limits. RL as synthetic data generation. Humans on a qualitatively different scaling curve. From Dwarkesh Patel "The sample efficiency black hole" (Jun 2026).
 - [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
 - [[concepts/scaling-laws]] — Scaling Laws — Empirical laws governing AI model scaling. Includes Kaplan/Chinchilla, InfoLaw (data quality), and [[concepts/embedding-dimension-scaling-laws|embedding dimension scaling]] for dense retrieval.
 - [[concepts/scaling-without-slop]] — Scaling without Slop — Approach to scaling AI models while maintaining quality, avoiding low-quality output proliferation at larger scales.

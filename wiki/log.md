@@ -1,3 +1,8 @@
+## [2026-06-09] Apple WWDC 2026 + LLM Code Quality Concept
+
+- **Enriched**: `concepts/apple.md` — Added WWDC 2026 section: Siri AI (custom Gemini model, Vision LLMs, iOS 27 beta), PCC on Google Cloud (NVIDIA GPUs, same security architecture), Core AI library (PyTorch integration via coreai-torch). Source: Simon Willison Jun 8 2026.
+- **Created**: `concepts/llm-code-quality.md` — LLM code ~10% more complex than necessary. Maintenance implications of "almost good" quality. Source: entropicthoughts.com.
+
 ## [2026-06-09] Model Hub Pages — Frontier Pricing Standardization
 
 - **Enriched**: `concepts/gemini.md` — Added Frontier Models pricing table (Gemini 3.5 Flash/3.1 Pro/Flash/Flash-Lite) + Legacy table (2.5/2.0/1.5 series). Removed stub status. Added `frontier-models` tag.
@@ -7317,3 +7322,15 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - validate_index.py: clean ✅
 
 - **2026-06-08**: Created blog post `blog/2026-06-08_hermes_ai-soul-sycophancy-update-cost.md` — "AIにSOULはあるか — Sycophancy、更新規則、そして変更コスト". Synthesizes Discord thread discussion on AI SOUL with external references (Frankfurt's hierarchical autonomy, AGM belief revision theory, Friston's free energy principle, Anthropic emotion vector research). Defines SOUL as "the dynamics of choosing reasons to change oneself."
+
+---
+## [2026-06-09] Sample Efficiency Concept Page + Dwarkesh Patel Enrichment
+
+**Action**: Created new concept page `concepts/sample-efficiency.md` and enriched `entities/dwarkesh-patel.md` with latest blog post "The sample efficiency black hole" (Jun 2026).
+
+**Created**:
+- `concepts/sample-efficiency.md` — LLM Sample Efficiency concept page covering: data scale gap (10s-100s of trillions tokens vs humans' ~200M tokens, ~1M× difference), Chinchilla scaling implications, RL as synthetic data generation, human sample efficiency advantage (1000×-1M×), robotics gap, genome argument, practical implications for white collar automation
+
+**Updated**:
+- `entities/dwarkesh-patel.md` — Added Jun 2026 blog post entry to timeline, Blog Posts section, Related links, and Sources; added raw source to frontmatter sources array
+- `index.md` — Added sample-efficiency concept entry; updated Dwarkesh Patel entity summary; incremented page counts (2420→2421, concepts 1604→1605)
