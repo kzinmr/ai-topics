@@ -1,7 +1,7 @@
 ---
 title: "Spice AI"
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-06-09
 type: entity
 tags:
   - company
@@ -10,20 +10,44 @@ tags:
   - coding-agents
   - verification
   - agentic-engineering
+  - open-source
+  - sql
+  - search
+  - llm-inference
+  - data-platform
+aliases:
+  - Spice.ai
+  - Spice AI
+  - spice-ai
 sources:
   - https://spice.ai/
+  - https://spice.ai/blog
+  - https://github.com/spiceai/spiceai
   - raw/articles/2026-06-08_linkedin-ido-pesok_verifying-agentic-development-at-scale.md
-description: "AI developer platform focused on real-time verification of agentic code generation, ensuring correctness, security, and architectural compliance at scale."
-status: stub
+description: "Data and AI platform combining federated SQL query, hybrid search, and LLM inference in a portable, open-source runtime. Also built real-time code verification for agentic development."
 ---
 
 # Spice AI
 
-**Spice AI** is a developer platform company focused on solving the **verification problem** in agentic software development. Co-founded by [[entities/ido-pesok]], the company builds infrastructure that enables organizations to scale AI-assisted code generation while maintaining quality, security, and architectural compliance.
+**Spice AI** (founded 2021) is a data and AI platform company that provides a portable, open-source runtime combining **federated SQL query**, **hybrid search**, and **LLM inference** in a unified engine. Written in Rust and licensed under Apache-2.0, the platform powers data-grounded AI applications and agents. The company also developed a pioneering real-time code verification system for agentic development, led by [[entities/ido-pesok]].
+
+## Platform
+
+Spice AI's core product is a unified SQL query, search, and LLM inference engine (2,950+ GitHub stars):
+
+- **SQL Federation & Acceleration** — Query across operational and analytical data sources with local acceleration, supporting PostgreSQL, MySQL, DuckDB, SQLite, Apache Iceberg, S3, and 30+ other connectors
+- **Hybrid SQL Search** — Combine vector similarity, full-text (BM25), and keyword search in a single SQL query using Reciprocal Rank Fusion (RRF)
+- **LLM Inference** — Call local or hosted LLMs from the Spice query engine
+- **MCP Server & Gateway** — Run MCP servers locally or over SSE for agentic AI architectures
+- **Spice Cayenne** — Next-generation data accelerator built on Vortex for high-scale data lake workloads
+- **Real-Time Change Data Capture** — Sync accelerated datasets with DynamoDB Streams and other CDC sources
+- **Edge to Cloud Deployments** — Portable runtime deployable anywhere
+
+The platform was rebuilt from the ground up in Rust in 2024, delivering performance, safety, and portability for production data infrastructure. Partners include AWS, Databricks, NetApp, and NVIDIA.
 
 ## Verification Stack
 
-Spice AI's core product is a multi-layered verification system for AI-generated code that operates at three levels:
+Beyond the core platform, Spice AI built a pioneering multi-layered verification system for AI-generated code that operates at three levels:
 
 1. **Syntax and Type Checking** — immediate compilation and type-checking of generated code
 2. **Semantic Verification** — LLM-based verification that generated code matches the intent of the request, checking API usage, data flows, and pattern adherence
@@ -57,4 +81,25 @@ Spice AI's approach embodies the [[concepts/agentic-engineering]] principle that
 
 See also: [[concepts/code-review-agents]], [[concepts/vibe-coding]]
 
-> **Note**: Ido Pesok, co-founder of Spice AI, later joined [[entities/cognition-ai]] to work on verification capabilities in [[entities/devin]]'s virtual machine. The LinkedIn article (Spice AI) and the X article (Cognition/Devin) cover related but distinct approaches to the same problem.
+> **Note**: Ido Pesok led the verification initiative at Spice AI and later joined [[entities/cognition-ai]] to work on verification capabilities in [[entities/devin]]'s virtual machine. Official founders (per Spice AI's structured data): Luke Kim and Phillip LeBlanc.
+
+## Company Info
+
+- **Founded**: 2021
+- **Founders**: Luke Kim, Phillip LeBlanc
+- **Core Stack**: Rust (Apache DataFusion, Apache Arrow, Vortex)
+- **License**: Apache-2.0 (open source)
+- **GitHub**: [github.com/spiceai/spiceai](https://github.com/spiceai/spiceai) — 2,950+ stars, 200+ forks
+- **X/Twitter**: [@spice_ai](https://x.com/spice_ai)
+- **Slack**: [spiceai.org/slack](https://spiceai.org/slack)
+- **SOC 2**: Type II compliant
+- **Partners**: AWS, Databricks, NetApp, NVIDIA
+
+## Related
+
+- [[entities/ido-pesok]] — Led verification initiative at Spice AI
+- [[entities/cognition-ai]] — Company he later joined for Devin work
+- [[entities/devin]] — The AI software engineer with autonomous verification
+- [[concepts/agentic-engineering]] — The discipline his verification work exemplifies
+- [[concepts/code-review-agents]] — Adjacent concept
+- [[concepts/vibe-coding]] — Related development paradigm

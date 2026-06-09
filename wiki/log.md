@@ -1,5 +1,16 @@
 ---
+
+## [2026-06-09] Daily Skeleton Enrichment — Enriched Ido Pesok & Spice AI (status: stub to complete)
+
+**Action**: Regular skeleton enrichment. No 'status: skeleton' entity pages found. Enriched 2 'status: stub' entity pages as fallback.
+
+- **ENRICHED: [[entities/ido-pesok.md]]** — Removed 'status: stub'. Updated frontmatter (removed duplicate 'infrastructure' tag, added 'ai-agents' tag, added 'aliases', added raw article source). Added Background section framing his thesis. Added Graph Structure Query section. Fixed Related section for accuracy.
+- **ENRICHED: [[entities/spice-ai.md]]** — Removed 'status: stub'. Expanded from 60 to 105 lines. Added full Platform section (SQL federation, hybrid search, LLM inference, MCP, Cayenne, CDC, edge-to-cloud). Added Company Info block (founded 2021, founders Luke Kim/Phillip LeBlanc, Rust/DataFusion stack, Apache-2.0 license, 2,950+ GitHub stars, SOC 2 Type II, partners). Expanded tags. Added Related section.
+
 ## [2026-06-09] Dreaming Wiki Ingest — Enriched Martin Alderson (xAI Datacentre REIT)
+\n## [2026-06-09] Daily Skeleton Enrichment — Enriched Ido Pesok & Spice AI (status: stub to complete)
+\n
+**Action**: Regular skeleton enrichment. No `status: skeleton` entity pages found. Enriched 2 `status: stub` entity pages as fallback.
 
 **Pipeline**: dreaming-collect (18:00) → dreaming-group (18:10) → dreaming-wiki-ingest (18:20)
 **Source batch**: 6 RSS articles from June 9 scan

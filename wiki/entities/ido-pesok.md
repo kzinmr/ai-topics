@@ -1,7 +1,7 @@
 ---
 title: "Ido Pesok"
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-06-09
 type: entity
 tags:
   - person
@@ -9,16 +9,23 @@ tags:
   - verification
   - agentic-engineering
   - coding-agents
+  - ai-agents
+aliases:
+  - ido-pesok
 sources:
   - https://www.linkedin.com/pulse/verifying-agentic-development-scale-ido-pesok-meohc
   - https://spice.ai/blog/verifying-agentic-development-at-scale
-description: "Co-founder of Spice AI, later joined Cognition to build end-to-end verification for Devin. Focused on real-time verification of AI-generated code at scale."
-status: stub
+  - raw/articles/2026-06-08_linkedin-ido-pesok_verifying-agentic-development-at-scale.md
+description: "AI infrastructure engineer focused on real-time verification of agentic code generation. Built multi-layered verification stack at Spice AI, later joined Cognition to build Devin's autonomous verification system."
 ---
 
 # Ido Pesok
 
-**Ido Pesok** is an AI infrastructure entrepreneur focused on **verification of agentic code generation**. He co-founded [[entities/spice-ai]], where he built a multi-layered verification system for AI-generated code, and later joined [[entities/cognition-ai]] to develop end-to-end testing capabilities in [[entities/devin]]'s virtual machine.
+**Ido Pesok** is an AI infrastructure engineer focused on **verification of agentic code generation**. He led the development of a multi-layered verification system for AI-generated code at [[entities/spice-ai]], and later joined [[entities/cognition-ai]] to build end-to-end testing capabilities in [[entities/devin]]'s virtual machine.
+
+## Background
+
+Pesok's work sits at the intersection of three converging trends: the explosion of AI-generated code volume, the inadequacy of traditional CI/CD pipelines for real-time verification, and the need for self-correcting agents. His core thesis — that verification, not generation, is the bottleneck in agentic development — has become a defining principle in the [[concepts/agentic-engineering]] discipline.
 
 ## Key Contributions
 
@@ -47,10 +54,20 @@ After joining Cognition, Pesok focused on Devin's autonomous verification capabi
 
 Pesok's work spans the transition from ad-hoc "vibe coding" to systematic [[concepts/agentic-engineering]], where the engineer's role shifts from writing code to **designing verification systems**.
 
+## Graph Structure Query
+
+```
+[ido-pesok] ──author──→ [entity: spice-ai]  (verification system)
+[ido-pesok] ──author──→ [entity: cognition-ai]  (Devin verification)
+[ido-pesok] ──teaches──→ [concept: agentic-engineering]  (verification thesis)
+[ido-pesok] ──contrasts──→ [concept: vibe-coding]  (systematic vs ad-hoc)
+```
+
 ## Related
 
-- [[entities/spice-ai]] — company he co-founded
+- [[entities/spice-ai]] — built verification system at this company
 - [[entities/cognition-ai]] — company he joined for Devin work
 - [[entities/devin]] — the AI software engineer he helped verify
 - [[concepts/agentic-engineering]] — the discipline his work exemplifies
 - [[concepts/code-review-agents]] — adjacent concept
+- [[concepts/vibe-coding]] — contrast paradigm

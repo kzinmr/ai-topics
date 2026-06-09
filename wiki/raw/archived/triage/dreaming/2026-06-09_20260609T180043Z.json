@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-09T18:14:00.204956+00:00",
+  "triage_run_id": "20260609T180043Z",
+  "source": "dreaming",
+  "summary_ja": "夢見収集グループ: 6記事をセマンティック分析。5件は本日の各パイプラインで既処理済み（sample-efficiency概念ページ作成済, ed-zitron更新済, apple/WWDC更新済, llm-code-quality作成済, gary-marcus更新済）。Martin AldersonのxAI datacentre REIT記事のみ未カバー→entities/martin-alderson.mdへのenrichment機会。Takes=0, References=1, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "dreaming-willison-wwdc-siri",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Siri AI at WWDC 2026",
+      "url": "https://simonwillison.net/2026/Jun/8/wwdc/",
+      "raw_path": "~/wiki/raw/articles/simonwillison.net--2026-jun-8-wwdc--b3b8b71e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ concepts/apple.mdが本日(2026-06-09) blog-wiki-ingestでWWDC 2026セクション追加済み。Siri AI（カスタムGeminiモデル）、Vision LLMs、PCC on Google Cloud、Core AI libraryをカバー。concepts/apple-foundation-models.mdも新規作成済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
