@@ -2,7 +2,7 @@
 title: "Fei-Fei Li"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-09
 type: entity
 ---
 
@@ -107,6 +107,7 @@ type: entity
 
 ## 📖 Key Publications
 
+- **A Functional Taxonomy of World Models (2026)**: X Article proposing renderer/simulator/planner classification for world models. 5,774 bookmarks, 890K impressions. ([raw](raw/articles/2026-06-03_fei-fei-li_x_article_world-model-taxonomy.md))
 - **ImageNet Paper (2009)**: "ImageNet: A Large-Scale Hierarchical Image Database" (49,000+ citations)
 - **Computer Vision: A Modern Approach (2012)**: Co-authored with Forsyth & Ponce, 2nd edition.
 - **Deep Learning for Computer Vision (2017)**: CS 231n textbook.
@@ -134,3 +135,4 @@ type: entity
 - [[imageNet]] — Large-scale image dataset created by Fei-Fei Li. Catalyst for the deep learning revolution.
 - [[stanford-hai]] — Human-centered AI institute co-founded by Li.
 - [[world-labs]] — Spatial intelligence startup co-founded by Li in 2024.
+- [[world-model-taxonomy]] — Li's framework classifying world models into renderers, simulators, and planners.

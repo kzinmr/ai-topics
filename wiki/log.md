@@ -1,3 +1,12 @@
+## [2026-06-09] Ingested: Fei-Fei Li "A Functional Taxonomy of World Models"
+
+- **Raw article**: `wiki/raw/articles/2026-06-03_fei-fei-li_x_article_world-model-taxonomy.md`
+- **Source**: [X Article](https://x.com/drfeifei/status/2062247238143996275) (5,774 bookmarks, 890K impressions)
+- **Created**: `wiki/concepts/world-model-taxonomy.md` — renderer/simulator/planner taxonomy, POMDP loop grounding, convergence thesis, World Labs Marble
+- **Updated**: `wiki/entities/fei-fei-li.md` — added 2026 publication (Functional Taxonomy of World Models), updated date
+- **Updated**: `wiki/SCHEMA.md` — added `spatial-intelligence` tag
+- **Updated**: `wiki/index.md` — added world-model-taxonomy entry
+
 ## [2026-06-08] Ingested: Addy Osmani "Loop Engineering"
 
 - **Raw article**: `wiki/raw/articles/2026-06-08_addyosmani_loop-engineering.md`
