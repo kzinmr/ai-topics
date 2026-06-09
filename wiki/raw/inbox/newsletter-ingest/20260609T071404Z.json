@@ -1,0 +1,119 @@
+{
+  "triage_run_id": "20260609T071404Z",
+  "triaged_at": "2026-06-09T07:15:30Z",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "medium": 2,
+    "low": 1
+  },
+  "results": [
+    {
+      "message_id": "<20260608123132.3.4b79e919d5630dcc@mg-d0.substack.com>",
+      "subject": "Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing",
+      "date": "2026-06-08",
+      "source": "Import AI (Jack Clark)",
+      "raw_path": "wiki/raw/newsletters/2026-06-08-import-ai-460-reward-hacking-society-rsi-data-from-anthropic-and-rl-based-quadco.md",
+      "importance": "high",
+      "action": "process",
+      "wiki_relevance_score": 0.9,
+      "categories": ["ai-safety", "reward-hacking", "reinforcement-learning", "anthropic", "alignment"],
+      "key_topics": [
+        "Reward hacking in AI systems mirroring institutional gaming",
+        "Recursive self-improvement (RSI) data from Anthropic",
+        "RL-based quadcopter racing as a benchmark/testbed"
+      ],
+      "potential_wiki_pages": [
+        "concepts/reward-hacking",
+        "entities/anthropic",
+        "concepts/recursive-self-improvement"
+      ],
+      "notes": "Jack Clark's Import AI newsletter #460. Covers reward hacking as both an AI phenomenon and societal mirror — directly relevant to AI safety and alignment wiki coverage. Anthropic RSI data is a notable research data point. RL quadcopter racing as applied RL benchmark."
+    },
+    {
+      "message_id": "<20260609061233.3.d89b38c1e52561cf@mg2.substack.com>",
+      "subject": "[AINews] FrontierCode: Benchmarking for Code Quality over Slop",
+      "date": "2026-06-09",
+      "source": "AINews / Latent Space (swyx)",
+      "raw_path": "wiki/raw/newsletters/2026-06-09-ainews-frontiercode-benchmarking-for-code-quality-over-slop.md",
+      "importance": "high",
+      "action": "process",
+      "wiki_relevance_score": 0.85,
+      "categories": ["code-generation", "benchmarking", "llm-evaluation", "ai-coding-agents"],
+      "key_topics": [
+        "FrontierCode benchmark for evaluating code quality",
+        "Coding assistant evaluation: Cursor, Windsurf, Devin",
+        "SWE-bench evolution and real-world software engineering tasks",
+        "Code quality vs 'slop' in LLM-generated code"
+      ],
+      "potential_wiki_pages": [
+        "concepts/code-generation-benchmarks",
+        "comparisons/ai-coding-agents",
+        "entities/cursor",
+        "entities/devin"
+      ],
+      "notes": "swyx's AINews covering FrontierCode benchmark. Directly relevant to wiki coverage of code generation benchmarks and AI coding agents. The 'quality over slop' framing addresses a key debate in the AI coding space."
+    },
+    {
+      "message_id": "<20260608163536.3.c0054368da028f88@mg2.substack.com>",
+      "subject": "China's Unitree Will Dominate Global Robotics",
+      "date": "2026-06-08",
+      "source": "SemiAnalysis (Dylan Patel, Reyk Knuhtsen)",
+      "raw_path": "wiki/raw/newsletters/2026-06-08-china-s-unitree-will-dominate-global-robotics.md",
+      "importance": "medium",
+      "action": "process",
+      "wiki_relevance_score": 0.65,
+      "categories": ["robotics", "embodied-ai", "china-ai", "hardware"],
+      "key_topics": [
+        "Unitree G1 humanoid robot and cost advantages vs Western competitors",
+        "China's manufacturing ecosystem advantages in robotics",
+        "Competition with Boston Dynamics and Figure AI"
+      ],
+      "potential_wiki_pages": [
+        "entities/unitree",
+        "concepts/embodied-ai",
+        "entities/figure-ai"
+      ],
+      "notes": "SemiAnalysis deep dive on Unitree's robotics dominance. Embodied AI is tangentially related to the wiki's AI agent focus — worth tracking but not core. The China tech ecosystem angle is relevant for competitive landscape pages."
+    },
+    {
+      "message_id": "<20260608150121.3.1c835eb145e62f34@mg-d1.substack.com>",
+      "subject": "🎙️ How I AI: Gemini Omni: Clone yourself with AI in under 15 minutes & Shopping with Claude",
+      "date": "2026-06-08",
+      "source": "Lenny's Newsletter (Lenny Rachitsky)",
+      "raw_path": "wiki/raw/newsletters/2026-06-08-how-i-ai-gemini-omni-clone-yourself-with-ai-in-under-15-minutes-shopping-with-cl.md",
+      "importance": "medium",
+      "action": "skim",
+      "wiki_relevance_score": 0.5,
+      "categories": ["practical-ai", "ai-agents", "gemini", "claude", "productivity"],
+      "key_topics": [
+        "Creating AI 'clones' of yourself for task delegation",
+        "Google Gemini practical workflows",
+        "Shopping use cases with Claude"
+      ],
+      "potential_wiki_pages": [
+        "concepts/ai-agent-patterns"
+      ],
+      "notes": "Practical/productivity content from Lenny Rachitsky. The 'clone yourself' concept and shopping agent use cases are relevant to AI agent patterns, but the content is more tutorial/productivity-focused than research-oriented. Skim for novel agent patterns only."
+    },
+    {
+      "message_id": "<20260608.183107.8cbf5e22@mta9>",
+      "subject": "📉 Panic hits the AI trade",
+      "date": "2026-06-08",
+      "source": "Unknown (beehiiv)",
+      "raw_path": "wiki/raw/newsletters/2026-06-08-panic-hits-the-ai-trade.md",
+      "importance": "low",
+      "action": "skip",
+      "wiki_relevance_score": 0.2,
+      "categories": ["ai-market", "investment", "finance"],
+      "key_topics": [
+        "AI investment/market panic",
+        "AI trade sentiment"
+      ],
+      "potential_wiki_pages": [],
+      "notes": "Market/financial analysis of AI sector. Low direct wiki relevance — the wiki focuses on technical knowledge, not market dynamics. Only worth processing if it contains specific company/product developments that would affect wiki entities."
+    }
+  ]
+}
