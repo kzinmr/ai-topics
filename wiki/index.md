@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-09 | Total pages: 2427 | Indexed entries: 1879 | Concepts: 1610 | Entities: 778
+> Last updated: 2026-06-09 | Total pages: 2430 | Indexed entries: 1882 | Concepts: 1612 | Entities: 779
 
-## Entities (778 pages)
+## Entities (779 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -479,6 +479,7 @@
 - [[entities/omri-weinstein]] — Co-founder & CEO, Pearl Research Labs. Creator of Pearl Network (Proof of Useful Work protocol). Together AI partnership for AI inference cost reduction.
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml programmer and technology writer.
 - [[entities/openai-cua]] — OpenAI's **CUA (Computer-Using Agent)** model combines GPT-4o's vision capabilities with reinforcement learning to create an agent that views screenshots and operates GUIs. Released as "Operator" in January 2025, it was fully integrated into ChatGPT agents by July 2025.
+- [[entities/openai-foundation]] — OpenAI Foundation — Nonprofit arm of OpenAI. $1B+ commitment across People-First AI Fund ($50M+), AI for Alzheimer's ($100M+), Economic Futures ($250M), AI Resilience ($130M+). Chair: Bret Taylor. Head of AI Resilience: Wojciech Zaremba.
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai-codex]] — OpenAI's AI coding agent, now positioned as general-purpose knowledge work platform (Delegate/Collaborate modes, Goals/Skills framework, 5 levels of use). CLI-based OSS, gpt-5.3-codex model. Autonomous execution and compaction. Codex Thursday No.6: Appshots, /goal, remote computer use, annotation mode, plugin sharing. Loop features: Steering/Queuing/voice input, Durable Threads, Thread Automations, Goals, side panel, shared memory (Obsidian vault), mobile support. **Jun 2026: Data Science plugin launched** — dedicated DS workflow plugin (dashboards, metric diagnosis, reports). 100% user satisfaction on speed-to-insight. Source: [[entities/zhanshi-wang]]. See [[concepts/codex-prompting]] for prompt design.
 - [[entities/openai]] — AI Research & Product Company (2015). GPT-5.6 solved 1946 Erdos problem ($1K/32h, 125 pages, T. Gowers: "first clear example of AI solving open math problem").
@@ -790,7 +791,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1610 pages)
+## Concepts (1611 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
 - [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
@@ -1027,7 +1028,8 @@
 - [[concepts/anti-sycophancy]] — Anti-Sycophancy
 - [[concepts/antoine-chaffin]] — antoine-chaffin
 - [[concepts/apache-solr]] — Apache Solr
-- [[concepts/apple]] — Apple's unique AI philosophy: $14B Capex ($670B competitors), non-AI CEO succession (John Ternus), Siri open to third-party AI. Pascal's Wager framework. WWDC 2026: custom Gemini model for Siri AI, PCC on Google Cloud with NVIDIA GPUs, Core AI library with PyTorch integration.
+- [[concepts/apple]] — Apple's unique AI philosophy: $14B Capex ($670B competitors), non-AI CEO succession (John Ternus), Siri open to third-party AI. Pascal's Wager framework. WWDC 2026: AFM 3rd-gen models, custom Gemini model for Siri AI, PCC on Google Cloud with NVIDIA GPUs, Core AI library with PyTorch integration.
+- [[concepts/apple-foundation-models]] — Apple Foundation Models (AFM 3): 5-model family (3rd gen, June 2026). On-device: AFM 3 Core (3B dense), AFM 3 Core Advanced (20B sparse, IFP architecture). Server: AFM 3 Cloud, ADM 3 Cloud, AFM 3 Cloud Pro (NVIDIA GPUs on Google Cloud PCC). Built with Google.
 - [[concepts/application-compatibility]] — Application Compatibility
 - [[concepts/arc-agi-1]] — ARC-AGI-1 — fluid intelligence test by François Chollet. Grid-based abstract reasoning. o3 at 87.5% first human-level breakthrough. 2024 ARC Prize.
 - [[concepts/arc-agi-2]] — ARC-AGI-2 Benchmark
@@ -1625,6 +1627,7 @@
 - [[concepts/pass-k-metric]] — pass^k: Agent reliability metric introduced by the τ-bench family. Requires all k independent trials of the same task to succeed, measuring consistency. Exposes fragility: GPT-4o pass@1 ~45% but pass^8 <25%. Foundation for [[concepts/tau-bench|τ-bench]] production reliability.
 - [[concepts/pentagon-ai-contracts-2026]] — Pentagon signs AI deals with 8 companies (May 2026): SpaceX, OpenAI, Google, Microsoft, NVIDIA, AWS, Oracle, Reflection. Anthropic excluded over AI safety stance — under litigation. Google DeepMind UK staff 98% unionize over Pentagon contract.
 - [[concepts/peoplereadmes]] — Open-source framework by Muratcan Koylan for creating persona context systems to study how exceptional technical builders operate. Pipeline: public evidence → source map → project analysis → tacit-knowledge extraction → technical model → prompt system → eval rubric. First persona: Riley Walz.
+- [[concepts/people-first-ai-fund]] — People-First AI Fund — OpenAI Foundation's $50M+ philanthropic grant program for nonprofits. $40.5M first wave (208 organizations, Dec 2025), $9.5M second wave (Jun 2026), additional $50M for 2026. Health, journalism, community focus.
 - [[concepts/perceptron-mk1]] — Perceptron Mk1 — Physical AI model for video understanding + embodied reasoning (May 2026). Matches frontier labs (Google, Anthropic, OpenAI, Qwen) at lower cost. API + OpenRouter.
 - [[concepts/personal-os-for-ai-agents]] — Personal OS for AI Agents — File-based personal operating system living inside a Git repository, replacing databases and vector stores with filesystem-as-database.
 - [[concepts/personal-software]] — Personal Software — Software built for one user's workflow, made newly cheap by AI agents. Examples: Cardboard (Jeremiah Lowin), Middleman (Wes McKinney), Randy Olson's data-viz skill.

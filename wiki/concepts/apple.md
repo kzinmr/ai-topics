@@ -59,9 +59,17 @@ Apple's AI CapEx represents approximately **2%** of what its four largest peers 
 
 When [[entities/tim-cook]] announced his departure in April 2026, his successor was [[entities/john-ternus]] — a **25-year hardware engineering veteran**, not an AI expert. This choice is widely interpreted as a definitive statement: Apple will remain a **hardware company first**. Cook could have selected a CEO who would reorient Apple around AI. Instead, he chose continuity of Apple's hardware-centric identity.
 
-## WWDC 2026: Siri AI and Core AI
+## WWDC 2026: Apple Foundation Models 3rd Generation
 
-Per Simon Willison (Jun 8, 2026):
+On June 8, 2026, Apple announced its third-generation foundation models (AFM 3) — a family of five models built in collaboration with Google. This represents Apple's most significant AI infrastructure investment to date, while maintaining its privacy-first philosophy.
+
+See: [[concepts/apple-foundation-models]] for full technical details.
+
+Key highlights:
+- **AFM 3 Core Advanced**: 20B sparse on-device model with novel Instruction-Following Pruning (IFP) architecture — stores full model in NAND flash, loads selected experts into DRAM
+- **AFM 3 Cloud Pro**: Server model running on NVIDIA GPUs in Google Cloud — first time PCC extends beyond Apple Silicon
+- **Google collaboration**: Custom models built with Google, not off-the-shelf Gemini
+- **No public benchmarks**: Human evaluation only; technical report coming summer 2026
 
 ### Siri AI
 - Apple licensing a custom Gemini-derived model for Private Cloud Compute (PCC)
@@ -116,6 +124,7 @@ The article identifies **Anthropic** as the only AI lab with conviction comparab
 ## Sources
 
 - The Algorithmic Bridge, "What Apple Knows About AI That Silicon Valley Won't Admit" — [[raw/articles/thealgorithmicbridge.com--p-what-apple-knows-about-ai-that-silicon--18e593fc.md]]
+- Apple ML Research, "Introducing the Third Generation of Apple's Foundation Models" (June 8, 2026) — [[raw/articles/2026-06-08_apple-third-generation-foundation-models.md]]
 - Simon Willison, WWDC 2026 Siri AI details — [[raw/articles/simonwillison.net--2026-jun-8-wwdc--b8b98dfb.md]]
 - Bloomberg, "Apple Opens Siri to Third-Party AI Models" (March 2026)
 - Apple Q2 2026 Earnings Report (April 2026)

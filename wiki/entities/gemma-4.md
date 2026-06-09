@@ -2,7 +2,7 @@
 title: Google Gemma 4
 type: entity
 created: 2026-04-10
-updated: 2026-06-08
+updated: 2026-06-09
 tags:
   - entity
   - model
@@ -259,6 +259,37 @@ Google released specialized **MTP drafters** for the entire Gemma 4 family, achi
 The MTP drafters are released under **Apache 2.0** and are available in the [Gemma 4 HuggingFace Collection](https://huggingface.co/collections/google/gemma-4).
 
 See also: [[concepts/speculative-decoding]], [Google Blog: Accelerating Gemma 4 with MTP](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
+
+## Gemma 4 26B A4B vs Apple AFM 3 Core Advanced (June 2026)
+
+Apple announced its third-generation foundation models at WWDC 2026 (June 8). The on-device flagship **AFM 3 Core Advanced** (20B sparse, 1-4B active) directly competes with Gemma 4 26B A4B for on-device AI supremacy.
+
+### Architecture Comparison
+
+| Dimension | Gemma 4 26B A4B | AFM 3 Core Advanced |
+|-----------|-----------------|-------------------|
+| Total Params | 25.2B | 20B |
+| Active Params | 3.8B (fixed) | 1-4B (adaptive per use case) |
+| Architecture | Standard MoE (per-token routing) | IFP sparse (per-prompt routing) |
+| Weight Storage | All in DRAM | NAND flash + selective DRAM loading |
+| Context | 256K tokens | Not disclosed |
+| Modalities | Text, Image | Text, Audio, Image |
+| License | Apache 2.0 | Proprietary |
+| Hardware | Any (Apple, NVIDIA, CPU) | Apple Silicon only |
+| Deployment | LM Studio, Ollama, vLLM, etc. | iOS/macOS system integration |
+
+### Key Architectural Difference
+
+Gemma 4 uses standard MoE with **per-token routing** — all 26B weights must reside in DRAM for fast expert switching (~18GB VRAM for Q4_K_M). AFM 3 Core Advanced uses **Instruction-Following Pruning (IFP)** with **per-prompt routing** — the full 20B model lives in NAND flash, with only selected experts loaded into DRAM. This enables a larger effective model on memory-constrained devices but sacrifices per-token routing granularity.
+
+### Practical Trade-offs for Mac Users
+
+- **Gemma 4 26B A4B**: Open, customizable, runs via LM Studio/Ollama, fine-tunable, community GGUF quantizations available. Requires ~18GB VRAM. Best for users who want control and cross-platform flexibility.
+- **AFM 3 Core Advanced**: Integrated into iOS/macOS, no setup required, adaptive activation, NAND-based loading enables larger model on same hardware. Locked to Apple ecosystem, no customization. Best for users who want seamless system-level AI without configuration.
+
+Apple's evaluation uses human graders only (no public benchmarks like MMLU or HumanEval), making direct benchmark comparison impossible. A summer 2026 technical report may provide more data.
+
+See also: [[concepts/apple-foundation-models]]
 
 ## Sources
 |- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md

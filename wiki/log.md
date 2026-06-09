@@ -7365,3 +7365,20 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 **Updated**:
 - `entities/dwarkesh-patel.md` — Added Jun 2026 blog post entry to timeline, Blog Posts section, Related links, and Sources; added raw source to frontmatter sources array
 - `index.md` — Added sample-efficiency concept entry; updated Dwarkesh Patel entity summary; incremented page counts (2420→2421, concepts 1604→1605)
+
+**2026-06-09 — OpenAI Foundation wiki ingestion**
+Created:
+- `entities/openai-foundation.md` — OpenAI Foundation entity page: nonprofit arm of OpenAI, $1B+ commitment, People-First AI Fund, AI for Alzheimer's ($100M+), Economic Futures ($250M), AI Resilience ($130M+). Leadership: Bret Taylor (Chair), Wojciech Zaremba (Head of AI Resilience).
+- `concepts/people-first-ai-fund.md` — People-First AI Fund concept page: $50M+ philanthropic grant program, 208 organizations funded (Dec 2025), $9.5M second wave (Jun 2026), additional $50M for 2026.
+- `raw/articles/2026-03-24_openaifoundation_update-on-the-openai-foundation.md`
+- `raw/articles/2026-04-08_openaifoundation_ai-for-alzheimers.md`
+- `raw/articles/2026-05-27_openaifoundation_economic-futures-age-of-ai.md`
+- `raw/articles/2026-06-01_openaifoundation_resilience-in-the-age-of-ai.md`
+- `raw/articles/2026-06-04_openaifoundation_update-people-first-ai-fund.md`
+Updated:
+- `SCHEMA.md` — Added `philanthropy` tag to Meta taxonomy
+- `index.md` — Added openai-foundation entity and people-first-ai-fund concept; incremented counts (2427→2429, entities 778→779, concepts 1610→1611, indexed 1879→1881)
+- 2026-06-09: Created `concepts/apple-foundation-models` — AFM 3 family (5 models, WWDC 2026), IFP architecture, comparison with Gemma 4 26B A4B
+- 2026-06-09: Updated `entities/gemma-4` — added comparison section with Apple AFM 3 Core Advanced
+- 2026-06-09: Updated `concepts/apple` — integrated AFM 3 announcement, renamed WWDC section
+- 2026-06-09: Saved raw article `2026-06-08_apple-third-generation-foundation-models.md`
