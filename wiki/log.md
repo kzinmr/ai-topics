@@ -1,6 +1,18 @@
 ## [2026-06-08] X Bookmarks Ingest — RLHF deep-dive + subagent fan-out insight
 
 - **Bookmark 1**: X Article "What every programmer should know about RLHF" by @itsreallyvivek (Vivek)
+## [2026-06-09] Raw Backlog Ingest — All 5 candidates already processed
+
+**Batch:** raw_backlog_collect 2026-06-09T00:00:31Z (5 articles selected from 6,699 backlog)
+**Result:** Takes=0, References=0, Skips=5 (all already captured by prior pipeline runs)
+- **MAI-Thinking-1 Tech Report** → concepts/mai-thinking-1-tech-report.md (comprehensive 227-line coverage)
+- **Dwarkesh: Imas/Trammell AGI economics interview** → entities/dwarkesh-patel.md + concepts/agi-economics.md
+- **Ed Zitron: "AI Doesn't Have ROI"** → entities/ed-zitron.md (lines 292-370, full coverage)
+- **Paul Graham: "Being Popular" (2001)** → entities/paulgraham-com.md (programming language adoption theory)
+- **Dan Luu: Twitter cache incidents** → entities/dan-luu.md (62-line comprehensive incident analysis)
+
+Pipeline saturation pattern confirmed: daily pipelines (blog-ingest, newsletter-ingest, active-crawl, x-bookmarks) already processed all AI-relevant content. Archive: 5 items saved to raw/archived/triage/backlog/.
+
 - **Saved**: `raw/articles/2026-06-07_itsreallyvivek_rlhf-what-every-programmer-should-know.md` — Full 10KB article via `article.plain_text`
 - **Enriched**: `concepts/rlhf.md` (102→157 lines) — Added reward model training internals (Bradley-Terry model with formulas), RL loop KL penalty rationale (actor-critic metaphor), failure modes section (reward hacking, distributional shift, labeler bias), and post-RLHF landscape (DPO, Constitutional AI, RLAIF)
 - **Created**: `entities/itsreallyvivek.md` — New person entity for the RLHF article author

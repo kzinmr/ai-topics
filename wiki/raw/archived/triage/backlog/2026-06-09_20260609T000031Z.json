@@ -1,0 +1,53 @@
+{
+  "checkpoint_run_id": "20260609T000031Z",
+  "archived_at": "2026-06-09T00:02:53.094836+00:00",
+  "total_decisions": 5,
+  "new_archived": 5,
+  "candidates": [
+    {
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "source_name": "raw/articles",
+      "reason": "★☆☆☆☆ concepts/mai-thinking-1-tech-report.md に包括的 coverage（モデル仕様、アーキテクチャ、RL climb、ベンチマーク、hill-climbing machine哲学）。raw記事は既にsourcesに登録済み。",
+      "body_excerpt": "MAI-Thinking-1: 35B active / 1T total parameter MoE reasoning model by Microsoft AI. Hill-climbing machine framework: treating model development as system-level optimization with data pipelines, RL environments, evals, safety tests. 30T pre-training tokens from clean enterprise-grade data, no synthetic data, 256K context. Three specialist models: STEM reasoning, agentic coding, helpfulness/safety. 52.8% SWE-Bench Pro, 97.0% AIME 2025, 87.7% LiveCodeBench v6.",
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "archived_at": "2026-06-09T00:02:53.094729+00:00"
+    },
+    {
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "title": "Alex Imas and Phil Trammell - What remains scarce after AGI?",
+      "source_name": "dwarkesh.com",
+      "reason": "★☆☆☆☆ 既にarchive済み。entities/dwarkesh-patel.md のタイムライン（Jun 2026）+ concepts/agi-economics.md（93行、relational sector、labor share、capital satiation、messy middle）で包括的coverage。",
+      "body_excerpt": "Dwarkesh Patel interviews Alex Imas (Dir. AGI Economics, Google DeepMind) and Phil Trammell (Head of Economics, Epoch). Core question: what remains scarce after AGI? Relational sector theory (human-in-the-loop services retain scarcity value). Kaldor facts on labor share stability (~60%). Capital satiation vs accumulation. Computational scarcity (H100 rental costs rising despite Moore's Law). Messy middle scenario analysis.",
+      "raw_path": "raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "archived_at": "2026-06-09T00:02:53.094747+00:00"
+    },
+    {
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "title": "AI Doesn't Have ROI",
+      "source_name": "wheresyoured.at",
+      "reason": "★☆☆☆☆ 既にarchive済み。entities/ed-zitron.md に「AI Doesn't Have ROI」セクション（lines 292-370）で全主要クレームを包括: Uber $500M token incident、GitHub Copilot token billing chaos、Walmart Code Puppy、kalopsia thesis、Bain ROI survey、Dot Com bubble comparison。raw記事はsources登録済み。",
+      "body_excerpt": "Ed Zitron's analysis of enterprise AI cost crisis post-token-billing transition. Uber COO: 'getting harder to justify' AI spend after burning annual token budget in 4 months. Company accidentally spent $500M/month on Anthropic without spend limits. GitHub Copilot users burning 50% credits in single prompt. Walmart 'Code Puppy' tool got token limits. Bain survey: 44% funding next AI wave from unrealized savings. Kalopsia thesis: subsidized subscriptions hide true costs.",
+      "raw_path": "raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "archived_at": "2026-06-09T00:02:53.094750+00:00"
+    },
+    {
+      "url": "http://www.paulgraham.com/popular.html",
+      "title": "Being Popular",
+      "source_name": "paulgraham.com",
+      "reason": "★☆☆☆☆ 既にarchive済み。entities/paulgraham-com.md でcoverage（expert hackers as adoption drivers, trojan horse strategy, programming languages as scripting languages of popular systems）。2001年のエッセイで直接AI関連性は低い。",
+      "body_excerpt": "Paul Graham essay from May 2001 on programming language popularity. Theory: expert hackers drive adoption, not committees. Trojan horse strategy for initial users. Languages must be scripting languages of popular systems. Brevity and hackability as key design principles. Legacy software and hype also play roles. Relevance to modern AI tool ecosystem adoption patterns.",
+      "raw_path": "raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "archived_at": "2026-06-09T00:02:53.094752+00:00"
+    },
+    {
+      "url": "https://danluu.com/cache-incidents/",
+      "title": "A decade of major cache incidents at Twitter",
+      "source_name": "danluu.com",
+      "reason": "★☆☆☆☆ 既にarchive済み。entities/dan-luu.md（62行）で包括的coverage: Twitter cache incidents分析（SEV-0/SEV-1）、knowledge loss patterns、Gresham's law of stories、cache as failure amplifier、AI infrastructure relevance（KV cache、distributed inference、prompt caching）。raw記事はsources登録済み。",
+      "body_excerpt": "Dan Luu and Yao Yue co-authored analysis of 6 SEV-0 + 6 SEV-1 cache incidents at Twitter (2012-2022). Key patterns: knowledge loss (90%+ link failure rate for pre-2012), Gresham's law of stories, cache as failure amplifier (positive feedback loops, death spirals), BMC health check causing periodic packet drops, host ejection inconsistency. Relevance to AI infrastructure: KV cache management, distributed inference serving, prompt caching.",
+      "raw_path": "raw/articles/danluu.com--cache-incidents--1d05e743.md",
+      "archived_at": "2026-06-09T00:02:53.094757+00:00"
+    }
+  ]
+}
