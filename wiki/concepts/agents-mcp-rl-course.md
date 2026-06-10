@@ -128,9 +128,9 @@ Inaugural lecture establishing the central thesis: RL and agents are two sides o
 
 ### Lesson 2: MCP + Production-Grade Agents (Jun 19)
 
-Bridges prototyping to production. Covers type hints as defense against silent LM output bugs, async processing (`asyncio.gather` + semaphores for ~7-8x speedup), agentic RAG vs prefetch RAG, MCP architecture ("FastAPI but LM-shaped"), logging frameworks (Logfire, Weave, MLflow, Arize), security (sandboxing, codifying patterns as tools), and the N×M→N+M problem MCP solves. Strong stance: A2A is premature, MCP is the standard to build on.
+Bridges prototyping to production. Covers type hints as defense against silent LM output bugs, async processing (`asyncio.gather` + semaphores for ~7-8x speedup), agentic RAG vs prefetch RAG, MCP architecture ("FastAPI but LM-shaped"), logging frameworks (Logfire, Weave, MLflow, Arize), security (sandboxing, codifying patterns as tools), and the N×M→N+M problem MCP solves. Strong stance: A2A is premature, MCP is the standard to build on. Repeat session added: reward hacking, read-only defaults, GRPO/KL penalty details, entropy collapse, structured generation during training, agent evaluation deep dive.
 
-**Transcript:** [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] · **Summary:** [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]] · **Notebook:** [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb)
+**Transcript:** [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] · **Summary:** [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]] · **Repeat:** [[raw/articles/2025-06-21_willbrown_agents-mcp-rl-lesson2-repeat]] · **Notebook:** [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb)
 
 ### Lesson 3: Agent Evals and Optimization (Jun 24)
 
