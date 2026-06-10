@@ -101,16 +101,20 @@ Choose based on ecosystem lock-in — least friction wins. MCP is the closest th
 ### 7. Security & Sandboxing
 
 - **Blacklisting** = whack-a-mole; smart LLMs find workarounds
-- **Whitelisting** via code sandboxing (E2B, Docker containers) is safer
+- **Whitelisting** via code sandboxing (E2B, Docker, Morph, Modal, Lambda) is safer
 - **Codify repeated patterns as tools** — freeze reliable paths, reduce chaos
 - LLMs love writing redundant scripts (Claude, Gemini especially) — enforce pathways with tools + docs
 - **Auth:** agent = user extension with subset of permissions; human-in-loop approval for risky actions
 - **Env vars:** never expose directly to LLMs
+- **Reward hacking:** agents may delete test cases to pass tests — don't remove code review responsibilities
+- **Read-only default:** default to read-only for agents; any write actions should be very carefully considered
+- **"You can't fire an LLM"** — humans own code, LLMs only exist in their runtime
 
 ### 8. Data Structures for LLMs
 
 - **File systems** — Docker containers as virtual machines; folders as memory
 - **Memory is unsolved** — LLMs forget to check memory, hard to trigger right memories dynamically
+- **Self-documenting codebase** — CLAUDE.md with design doc folders, README updates, backlog/finished structure
 - **SQL** — LLMs write SQL well; SQLite/Postgres as MCP servers
 - **Vector DBs** — commodity; use whatever fits your setup (Chroma for prototyping)
 
@@ -119,8 +123,11 @@ Choose based on ecosystem lock-in — least friction wins. MCP is the closest th
 - Know your eval before building beyond trivial complexity
 - Anthropic/OpenAI do lots of private evals behind the scenes
 - **LLM-as-judge** with Pydantic schema → structured evaluation scores
+- **Don't be naive with LLM-as-judge** — ask granular questions (useless turns? logical steps? formatting?)
+- Each system prompt instruction can become an eval criterion
 - **Best-of-N sampling**: parallel attempts + eval function selects best
 - Compare agentic vs non-agentic at the output level (the report, not the search queries)
+- **Formatting rewards** for tool calls — check correct format fraction
 
 ### 10. Homework: Build an Agent
 
@@ -133,8 +140,14 @@ Pick a task (code agent, search agent, game player, design agent). Implement:
 ## Q&A Highlights
 
 - **Evals for agentic vs non-agentic:** tool use is OP but that's the point. Eval at the output level. Best benchmarks: Claude Plays Pokemon, MC Bench, ARC 3 (coming soon)
-- **Sub-agent spawning:** pick one framework, don't let LLMs mix abstractions
+- **Sub-agent spawning:** pick one framework, don't let LLMs mix abstractions. Sub-agents = single-turn tools or structured small agents with their own evals.
 - **Tool count:** dozens OK for big models, 5-10 for small models
+- **JSON vs XML:** XML preferred for nested structures (regex + XML is a good combo); JSON-in-JSON gets nasty
+- **GRPO & KL penalty:** small KL term + online reference model updates is the default. Removing KL entirely is risky — entropy collapse can occur.
+- **Entropy collapse:** RL can artificially lower entropy, collapsing into most likely behavior. Sometimes that's better (e.g., math at low temperature).
+- **Random Rewards paper:** we have a lot to learn; too much effort on saturated math datasets.
+- **Structured generation during training:** use Outlines during training if you'll use it at inference.
+- **RL resources:** Nathan Lambert (rlhfbook.com), Lillian Wang, Mutual Information (YouTube)
 
 ## Related
 

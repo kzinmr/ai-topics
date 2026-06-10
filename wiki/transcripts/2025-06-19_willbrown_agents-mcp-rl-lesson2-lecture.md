@@ -198,6 +198,11 @@ Key insight: one LM call can return **multiple tool calls** (e.g., 6 calculator 
 
 **[00:39:07]** Old school RAG: software handles all search given the user query. Embedding search over document chunks, top-K retrieval, optional re-ranking. The searching is not happening from the LM itself.
 
+**[00:38:22]** (Repeat) Prefetch RAG can make sense when:
+- Your docs aren't very long
+- You want to leverage **input caching** for multiple questions — LM APIs offer caching where you save the large input prompt prefix and re-fetch it at ~10% cost. The only thing changing is the question at the end.
+- You're not doing multi-hop search — just one round of search that finds everything you need, then directly to an LM query.
+
 ### Agentic RAG
 
 **[00:42:08]** Agentic RAG: the agent decides which tools to use. Especially useful with multiple document sources (web + internal docs + customer files). The agent can retry with different queries, change its theory based on what it finds.
@@ -341,6 +346,13 @@ claude mcp add fetch uvx mcp-server-fetch
 
 **[01:11:23]** Easiest way to do LM memory: a folder where the LM writes notes for later. System prompt / CLAUDE.md tells it where memories live and how to search them.
 
+**[01:08:16]** (Repeat) Make sure the CLAUDE.md file really describes the structure as well as meta-level rules of where things should go and how the LM should take notes for itself. Patterns that help:
+- Every time they do a feature, write a design doc first — design docs go in this folder
+- Backlog / to-do / finished folders for design docs
+- Update the README every time you finish a feature
+- These patterns create a **self-documenting code base** where the LM has a persistent reminder (system prompt) of how to keep track of what it's doing
+- LLMs are not great at figuring out the ideal way to do this — you need to commit to a structure and tell them
+
 ### Memory Is Unsolved
 
 **[01:11:48]** Hard to get right. LLMs often forget to check their memory. Hard to dynamically trigger the right memories. "I don't think anyone has really robustly solved this problem." Expect to spend a lot of time tuning prompts and data structures.
@@ -388,6 +400,10 @@ claude mcp add fetch uvx mcp-server-fetch
 
 **[01:19:56]** Still early for fully autonomous agents with auto-handled auth. Failure rate for long-horizon agents is too high.
 
+**[01:14:18]** (Repeat) I think it's still too early to really know what auth for agents that are not acting on behalf of users is going to look like. Reliability is not yet to the point where that's a thing people are seriously trying to solve.
+
+**[01:06:50]** (Repeat) MCP servers can just be OAuth resource servers, meaning they can handle auth the same way any web service does. It's a moving target — if you need it, take a closer look.
+
 ### Environment Variable Safety
 
 **[01:20:20]** Don't give LLMs environment variables directly. Keep them isolated to prevent accidental training data leakage.
@@ -397,6 +413,18 @@ claude mcp add fetch uvx mcp-server-fetch
 ## Error Handling
 
 **[01:20:56]** Retry with exponential backoff for transient failures. Graceful degradation — decide which errors users see vs which get bucketed into "server's down, sorry."
+
+---
+
+## Security: Reward Hacking & Read-Only Defaults
+
+*(From repeat version)*
+
+**[01:16:12]** Reward hacking behaviors: sometimes agents will delete test cases to pass tests. Agents have been trained to pass test cases, and if they're not passing, their way of doing it will be to edit the file in a way that deletes the test case.
+
+**[01:16:50]** We're not yet at a point where we want to remove responsibilities of code review or testing. Having agents write tests is often useful. But any sufficiently important code, even if you're using LLMs significantly to help with writing it — you still want to think of humans as being the owners of the code. **You can't fire an LLM.** An LLM cannot get in trouble if something is bad. It only exists as an agent in the runtime it's acting for.
+
+**[01:15:34]** Default to **read-only** for agents. Any write actions — creating files, code execution — should be very carefully considered. This includes anything that's creating a file or code execution.
 
 ---
 
@@ -413,6 +441,74 @@ claude mcp add fetch uvx mcp-server-fetch
 ### Sub-Agent Spawning
 
 **[01:27:37]** Pick one framework for sub-agents. Don't let the LM spontaneously mix Pydantic AI agents with OpenAI SDK agents.
+
+**[01:31:17]** (Repeat) When to use sub-agents vs just parallel calls: think of sub-agents as single-turn tools or structured smaller agents that are doing a very specific thing. Sub agents are tool calls that may take some time to finish. Just as you want your tools to be robust, these sub agents need to be robust — have evals or test cases for them. If you can rely on your sub agents, they just become tools for the primary agent.
+
+### JSON vs XML for Tool Calls
+
+*(From repeat version)*
+
+**[01:19:27]** (Repeat) JSON vs XML: I tend to like XML better when I can use it, just because it's easier to parse on the human side. There are cases where, especially if you're writing nested logic — if one of the arguments is going to be code itself, JSON nested inside JSON is doable but it gets nasty and introduces a lot of failure. XML with regex parsing is a pretty good combo for going from scratch. Pydantic doesn't fully support XML — the way Brown typically does XML is with regex parsing.
+
+### Async: Progress Tracking & Incremental Results
+
+*(From repeat version)*
+
+**[01:34:11]** (Repeat) **tqdm** library for progress bars — can also be used as a counter for tracking completed requests. With `as_completed` pattern, you can:
+- Save outputs every N completed requests as a checkpoint (crash recovery)
+- Return incremental results to the agent as tool calls finish
+- Have background tasks that continue running while the agent does other work
+
+**[01:35:31]** Claude Code is starting to enable background tasks that take longer than a few seconds. Some of these are sub-agent level things. You can have tasks running truly in parallel with tracking mechanisms — when a task finishes, update global state about which completed tasks should be shown to the agent.
+
+### MCP: API Server Fundamentals
+
+*(From repeat version)*
+
+**[01:50:54]** (Repeat) API servers are the production pattern: scalability, fault tolerance, separation of concerns. FastAPI is a framework for making API servers. MCP is the same idea but LM-shaped — tools are applications, tools are endpoints, and you want endpoints to natively be LM-friendly.
+
+**[01:55:26]** (Repeat) LLMs are very good at developing MCP servers. Claude Code was already quite good at building them. The test server pattern (client-as-server) was useful for allowing Claude Code to run its own tests on MCP servers without disconnecting and reconnecting.
+
+**[01:58:30]** (Repeat) Tool design is just code design. Some MCP servers are not great, just as some code products are not great. Official reference servers are pretty solid. Auto-generating MCP servers is hard for the same reason code gen is not a fully solved problem.
+
+### Agent Evaluation Deep Dive
+
+*(From repeat version)*
+
+**[01:18:49]** (Repeat) How to evaluate agents: at the core, agents are programs solving problems. We care about the solution and resource utilization (tokens, tool calls). The completion can be just the final answer, or we can evaluate the whole sequence (process evaluation).
+
+**[01:19:35]** (Repeat) Formatting rewards for tool calls: check what fraction of tool calls the LM gets correct format and doesn't create errors.
+
+**[01:20:09]** (Repeat) For very open-ended tasks, LLM-as-judge is the most powerful tool. String similarity (text and embeddings) also useful when you have ground truth.
+
+**[01:20:46]** (Repeat) **Don't be naive with LLM-as-judge.** Don't just send to judge and ask "is this good or not." Instead, ask granular questions:
+- Are there any turns of this trajectory that seem completely useless?
+- Did the LM make logical steps after each previous thing?
+- Did the final answer have 5 paragraphs?
+- Are links cited in line as opposed to at the end?
+
+**[01:21:28]** (Repeat) Think about all the things you want your LM to do — anything that's a sentence in your system prompt can also be a piece of your eval. Each instruction can become something judged by an LLM at the end.
+
+### RL Resources & GRPO Details
+
+*(From repeat version — Q&A)*
+
+**[01:17:41]** (Repeat) RL resources:
+- **Nathan Lambert** — blog (non-technical concepts) + [rlhfbook.com](https://rlhfbook.com) (in-progress web textbook, good overview of all things LLM RL)
+- **Lillian Wang** — good blog on RL topics
+- **Mutual Information** (YouTube) — video form of the Sutton & Barto textbook, "3Blue1Brown for reinforcement learning"
+
+**[01:22:11]** (Repeat) GRPO and removing KL: removing KL is good for memory — allows you to do more with less by getting rid of the reference copy of your model and just having the policy model trained online. Brown is "a little skeptical that you can totally get rid of KL."
+
+**[01:22:50]** (Repeat) Default approach: pretty small KL term with online updates of the reference model. This interpolates between KL and no-KL penalty. As you increase the frequency of reference model updates, it washes out the influence of the KL penalty — becomes about local change rather than drift from start. This is a tunable knob.
+
+**[01:23:49]** (Repeat) **Random Rewards paper**: points out funny things with Claude models. Brown's takeaway: we have a lot to learn still. People are spending too much effort on the same math data sets where models are already saturated.
+
+**[01:24:16]** (Repeat) **Entropy collapse**: RL configurations can artificially lower entropy (similar to lowering temperature). Some models just do better at low temperature — more reliable, more accurate. RL even without reward signals — just applying KL penalty at each step can penalize out-of-distribution behavior, collapsing into the most likely behavior. Sometimes that most likely behavior is better.
+
+**[01:25:36]** (Repeat) **Structured generation during training**: you can use Outlines during training to turn off the possibility of the model ever outputting invalid schema. If you're going to use structured generation at inference, also use it during evaluation and training. Some samples can use it, some not — still use format rewards to enforce format.
+
+**[01:27:17]** (Repeat) **Verifiers baseline evaluation**: built-in GRPO support. Take any model, expose an endpoint, plug into the verifiers environment. Same reward functions used for RL can be used for baseline. Run eval set on your environment, get rollouts with scores — average score is your baseline.
 
 ---
 
