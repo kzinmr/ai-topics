@@ -1,3 +1,7 @@
+## [2026-06-10] Blog wiki-ingest recovery — triage already committed inline by blog-triage agent
+
+**Status**: No-op recovery. Blog-triage agent (commit 75c1c94b, 07:13 UTC) performed combined triage+wiki-ingest inline — created `concepts/siri-ai.md`, enriched `concepts/claude/fable-5.md` and `concepts/claude/mythos.md`, saved all raw articles. The triage checkpoint file at `.hermes/cron/data/blog_ingest/triage_latest.json` was valid but all 3 takes and 5 references were already processed. Archive confirmed dedup (0 new items). No additional wiki actions needed.
+
 ## [2026-06-10] Newsletter wiki-ingest — SemiAnalysis DeepSeek V4 perf, Lambert/AINews Fable 5 safety critique & RSI suppression
 
 **Action**: Enriched `concepts/deepseek-v4.md` with SemiAnalysis Day 0-43 deployment performance tracking (InferenceX, ROCm 100× improvement, TRT-LLM bug). Enriched `concepts/claude/fable-5.md` with Nathan Lambert external safety critique (uneven policy, invisible restrictions as deception) and AINews RSI suppression coverage (No ZDR naming, invisible frontier-LLM restrictions, Karpathy assessment). 2 pages enriched, 0 pages created.
