@@ -101,7 +101,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 - [[concepts/macro-evals-for-agentic-systems]] — OpenAI's population-level analysis
 - [[concepts/infrastructure-noise-agent-evals]] — Segato on eval reliability
 - [[concepts/eval-awareness-browsecomp]] — When models detect they're being evaluated
-- [[comparisons/llm-evaluation-tools]] — Tool comparison
+- [[comparisons/eval-tools-comparison]] — Tool comparison
 - [[concepts/ai-evaluation]] — General evaluation landscape
 
 ### 3. A/B Testing & Experimentation
@@ -210,7 +210,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 ### Path B: The New Toolbox
 1. [[concepts/agent-evaluation-methodology]] — Floor raising framework
 2. [[concepts/agent-observability-feedback]] — The feedback loop
-3. [[comparisons/llm-evaluation-tools]] — Tool comparison
+3. [[comparisons/eval-tools-comparison]] — Tool comparison
 
 ### Path C: Practitioner Perspectives
 1. [[entities/ben-hylak]] — Raindrop founder's position
@@ -251,7 +251,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 ### Comparisons
 - [[comparisons/eval-tools-comparison]] — Eval tools compared
-- [[comparisons/llm-evaluation-tools]] — Major platform comparison
+- [[comparisons/eval-tools-comparison]] — Major platform comparison
 - [[comparisons/agent-orchestration-frameworks]] — Framework landscape
 
 ### Entities

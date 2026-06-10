@@ -1302,7 +1302,6 @@
 - [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (M
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel — OpenAI pattern cycling evaluation and improvement for AI product development.
 - [[concepts/evaluation-harness-validity]] — OpenAI's framework for trustworthy third-party evaluations (May 2026). Harness choice determines whether capability appears in evaluation. Three claim types: capability elicitation, controlled comparison, safeguard performance.
-- [[comparisons/llm-evaluation-tools]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
 - [[concepts/event-driven-architecture]] — Event-Driven Architecture — Software design pattern for asynchronous, decoupled service communication.
 - [[concepts/excessive-agency]] — Excessive Agency — OWASP Top 10 for LLMs entry on AI agents taking unintended actions.
 - [[concepts/exec-plans]] — Execution Plans — Pattern where agents create a plan before executing tasks.
@@ -1605,6 +1604,7 @@
 - [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): o3-based agentic web browsing. All Preparedness categories LOW.
 - [[concepts/gpt/gpt-oss-model-card]] — gpt-oss Model Card (Aug 2025): Apache 2.0 open-weight (120B/20B). Adversarial fine-tuning tested, not reaching High.
 - [[concepts/gpt/gpt-rosalind-5-5-system-card]] — GPT-Rosalind-5.5 System Card (Jun 2026): Bio/drug discovery domain-specific. Bio/Chem High. Research-only deployment.
+- [[concepts/gpt/gpt-system-card-milestones]] — OpenAI System Cards Key Milestones Timeline: 11 milestones across 4 phases (Feb 2025–Jun 2026). Safe-completions paradigm, first Bio/Chem High, first Cyber High, dual-High Instant models, zero sandbagging, domain-restricted deployment. Trend analysis of safety level escalation and capability-safety co-evolution.
 - [[concepts/gpt/gpt-sora-2-system-card]] — Sora 2 System Card (Sep 2025): Video generation. Nonconsensual likeness risks, photorealistic person restrictions.
 - [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): OpenAI's first agentic browsing product. Fine-tuned o3 with autonomous web browsing loop (search→browse→note→iterate→report). All Preparedness categories LOW. Key risks: prompt injection (extensive red-teaming), sandboxed browsing (no code execution, no downloads). HLE ~26.6%. Predecessor to ChatGPT Agent.
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
@@ -1848,7 +1848,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
 
-## Comparisons (29 pages)
+## Comparisons (28 pages)
 
 - [[comparisons/claude-opus-4x-comparison]] — Claude Opus 4.6 vs 4.7 vs 4.8 System Card Comparison — Capability growth and safety evolution Feb–May 2026. RSP thresholds (AI R&D-4, CBRN-4), cyber evaluations (Cybench→ExploitBench→OSS-Fuzz), alignment trends (evaluation awareness→grader speculation). Opus 4.8: 0% misreporting rate (first model), but prompt injection robustness regressed.
 - [[comparisons/claude-sonnet46-vs-opus46]] — Claude Sonnet 4.6 vs Opus 4.6 — Mid-tier approaches frontier on SWE-bench (79.6% vs 80.8%) and OSWorld (72.5% vs 72.7%). Sonnet 4.6: best alignment scores of any Claude model, lower over-refusal (0.41% vs 0.66%). Gaps in reasoning: ARC-AGI-2 (-10.5%), Terminal-Bench (-6.3%). Both ASL-3.

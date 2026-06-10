@@ -20,7 +20,7 @@ sources:
 related:
   - "[[concepts/ai-observability]]"
   - "[[concepts/agent-evaluation-methodology]]"
-  - "[[comparisons/llm-evaluation-tools]]"
+  - "[[comparisons/eval-tools-comparison]]"
   - "[[concepts/logfire]]"
   - "[[concepts/ai-infrastructure-engineering/llm-observability]]"
   - "[[concepts/openai/symphony]]"
@@ -207,7 +207,7 @@ Raindrop Workshop embodies the **code-aware eval** philosophy from [[concepts/ag
 - [[concepts/ai-observability]] — Broader AI observability landscape
 - [[concepts/agent-evaluation-methodology]] — Ben Hylak's floor raising framework
 - [[entities/ben-hylak]] — Ben Hylak, Raindrop co-founder & CTO
-- [[comparisons/llm-evaluation-tools]] — Eval tool comparison
+- [[comparisons/eval-tools-comparison]] — Eval tool comparison
 - [[concepts/logfire]] — Pydantic Logfire (Python-native observability)
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — LLM inference metrics
 - [[concepts/openai/symphony]] — OpenAI Symphony orchestration

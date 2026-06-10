@@ -7809,3 +7809,5 @@ Updated:
 - **CREATED**: `concepts/siri-ai.md` — Apple's reimagined voice assistant (June 2026 press release). Personal context understanding, broad world knowledge, onscreen awareness, Visual Intelligence, Writing Tools, dedicated Siri app, on-device + Private Cloud Compute architecture, supported devices and availability.
 - **UPDATED**: `index.md` — Added `concepts/siri-ai` entry in alphabetical order (between sitecove-ship and skill-architecture-patterns)
 - Sources: raw/articles/apple.com--newsroom-2026-06-apple-introduces-siri-ai-a-profoundly-more---6ef8c2d4.md
+
+- 2026-06-10 | concept | gpt-system-card-milestones | OpenAI System Cards Key Milestones Timeline — 11 milestones, 4 phases, trend analysis. Source: synthesized from 20 system card pages
