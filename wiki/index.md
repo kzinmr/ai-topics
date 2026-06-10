@@ -796,7 +796,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (999 pages)
+## Concepts (998 pages)
 - [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
@@ -1848,7 +1848,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
 
-## Comparisons (28 pages)
+## Comparisons (29 pages)
 
 - [[comparisons/claude-opus-4x-comparison]] — Claude Opus 4.6 vs 4.7 vs 4.8 System Card Comparison — Capability growth and safety evolution Feb–May 2026. RSP thresholds (AI R&D-4, CBRN-4), cyber evaluations (Cybench→ExploitBench→OSS-Fuzz), alignment trends (evaluation awareness→grader speculation). Opus 4.8: 0% misreporting rate (first model), but prompt injection robustness regressed.
 - [[comparisons/claude-sonnet46-vs-opus46]] — Claude Sonnet 4.6 vs Opus 4.6 — Mid-tier approaches frontier on SWE-bench (79.6% vs 80.8%) and OSWorld (72.5% vs 72.7%). Sonnet 4.6: best alignment scores of any Claude model, lower over-refusal (0.41% vs 0.66%). Gaps in reasoning: ARC-AGI-2 (-10.5%), Terminal-Bench (-6.3%). Both ASL-3.

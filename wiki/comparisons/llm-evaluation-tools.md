@@ -1,8 +1,9 @@
 ---
 title: "Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI"
-type: concept
+type: comparison
 aliases:
   - evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai
+  - eval-tools-langsmith-braintrust
 created: 2026-04-25
 updated: 2026-05-02
 tags:
@@ -67,7 +68,6 @@ A free course teaching practical eval methodology. See [[concepts/ai-evals#Brain
 ## See Also
 - [[concepts/ai-evals]] — AI evaluation general concept
 - [[concepts/evaluation-flywheel]] — Iterative eval improvement cycle
-- [[comparisons/eval-tools-comparison]] — Alternative stub comparison page
-- [[comparisons/eval-tools-comparison]] — Alternative stub comparison page
+- [[comparisons/eval-tools-comparison]] — Broader eval tools comparison (data scientist panel testing)
 - [[concepts/arize]] — Arize AI entity page
 - [[entities/anthropic]] — Anthropic (Promptfoo)

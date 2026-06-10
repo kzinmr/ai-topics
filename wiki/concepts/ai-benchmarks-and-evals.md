@@ -241,7 +241,7 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | Tool/Platform | Summary | Wiki Page |
 |---|---|---|
 | Langfuse Academy | Trace → Monitor → Dataset → Experiment → Evaluate | [[concepts/ai-evaluation]] |
-| LangSmith / Braintrust / Arize Phoenix | Evaluation tool comparison | [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] |
+| LangSmith / Braintrust / Arize Phoenix | Evaluation tool comparison | [[comparisons/llm-evaluation-tools]] |
 | Lighteval | Hugging Face evaluation library | [[concepts/ai-benchmarks/lighteval]] |
 | Galileo Eval Engineer | Evaluation engineering | [[entities/galileo-eval-engineer]] |
 | Raindrop | Agent monitoring | [[concepts/evals-vs-monitoring-debate]] |

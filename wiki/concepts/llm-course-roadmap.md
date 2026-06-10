@@ -174,7 +174,7 @@ Covers production applications, RAG, agents, and deployment. Since this Wiki is 
 | MLC LLM (Edge) | — | Not covered |
 | Prompt Injection Defense | [[concepts/prompt-engineering-resilience-design-patterns]], [[concepts/resilient-prompt-engineering]], [[concepts/red-teaming-adversarial-eval]] | Covered |
 | Garak (Red Teaming) | — | No individual tool page |
-| Langfuse (Observability) | [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] | Indirect mention |
+| Langfuse (Observability) | [[comparisons/llm-evaluation-tools]] | Indirect mention |
 
 > **Coverage Rate:** ~60% (agent area is very rich, gaps in RAG and deployment tools)
 
