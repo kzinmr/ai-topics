@@ -31,6 +31,7 @@
 │   │   └── newsletters/             ← ニュースレターダイジェスト
 │   ├── entities/                    ← Layer 2: 人物・組織・製品ページ
 │   ├── concepts/                    ← Layer 2: 概念・トピックページ
+│   │   └── ai-benchmarks/           ← AI benchmark個別ページ（全benchmarkはここに配置）
 │   ├── comparisons/                 ← Layer 2: 横断比較ページ
 │   ├── queries/                     ← Layer 2: 再利用可能な調査・回答
 │   └── events/                      ← Layer 2: 重要イベント・リリース
@@ -47,6 +48,11 @@
 │   └── pre-commit-tag-validator.py  ← タグタクソノミー違反ブロッカー
 └── inbox/                           ← ニュースレターダイジェスト保存先
 ```
+
+### ディレクトリ配置規約
+
+- **AI benchmark個別ページ**: `concepts/ai-benchmarks/` 配下に配置（`concepts/` 直下には置かない）。個別ベンチマーク、ベンチマーク生態系（τ-bench, SWE-bench）、メトリクス（pass-k, NDCG）、ベンチマークメタ手法（benchmaxxing）を含む。
+- **Evaluation方法論ページ**: `concepts/` 直下に配置（ai-evaluation, evals-vs-monitoring, llm-evaluation-harness 等）。評価の「方法論」であり個別ベンチマークではないため。
 
 ---
 

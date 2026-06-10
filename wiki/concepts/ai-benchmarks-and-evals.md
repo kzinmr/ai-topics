@@ -143,8 +143,8 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | SWE-bench / Verified | Real GitHub issue resolution | [[concepts/ai-benchmarks/swe-bench]] |
 | DeepSWE Benchmark | Deep SWE evaluation | [[concepts/ai-benchmarks/deepswe-benchmark]] |
 | Frontier SWE Benchmark | Frontier SWE capability | [[concepts/ai-benchmarks/frontier-swe-benchmark]] |
-| FrontierCode | Code quality | [[concepts/frontiercode]] |
-| Stack Benchmarking | Tech stack evaluation | [[concepts/stack-benchmarking]] |
+| FrontierCode | Code quality | [[concepts/ai-benchmarks/frontiercode]] |
+| Stack Benchmarking | Tech stack evaluation | [[concepts/ai-benchmarks/stack-benchmarking]] |
 
 ### Multimodal
 

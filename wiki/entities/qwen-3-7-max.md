@@ -45,7 +45,7 @@ Qwen 3.7 Max is described by Alibaba as their "most sophisticated and comprehens
 
 ### Artificial Analysis Intelligence Index v4.0
 - **Score: 56.6** — ranked **#5 overall**, up 4.8 points from Qwen 3.6 Max Preview (51.8)
-- Ahead of: [[entities/gemini-3-5-flash|Gemini 3.5 Flash]] (55.3), [[entities/gpt-5-5|GPT-5.5]] (55.2)
+- Ahead of: [[entities/gemini-3-5-flash|Gemini 3.5 Flash]] (55.3), [[concepts/gpt/5-5|GPT-5.5]] (55.2)
 - Behind: Claude Opus 4.7 (57.3), Gemini 3.1 Preview (57.2)
 
 ### Agentic Coding Benchmarks

@@ -7656,3 +7656,13 @@ Updated:
 - 2026-06-10 | updated | concepts/gemini | Added Model Cards section with 9 Gemini model card links (1.5–2.5 + Robotics On-Device). Note: most PDFs return NoSuchKey from GCS bucket. Added model-card tag.
 - 2026-06-10 | updated | entities/gemini | Added Model Cards section with DeepMind model card index. Updated tags and sources with model-card references.
 - 2026-06-10 | created | concepts/gemma-family | Full Gemma model family concept page. 13 models across 4 generations (2024–2026): Gemma 1–4, CodeGemma, PaliGemma 1–2, ShieldGemma 1–2, RecurrentGemma, EmbeddingGemma, FunctionGemma, Gemma 3n. All model card links. Apache 2.0 licensing.
+
+## 2026-06-10 (GPT/OpenAI Wiki Reorganization)
+- **REORGANIZED**: Created `concepts/gpt/` subdirectory (37 pages moved from flat concepts/ and entities/)
+- **MOVED**: 34 concept pages → `concepts/gpt/` (GPT models, ChatGPT features, OpenAI platform, system cards)
+- **MOVED**: 1 entity page → `concepts/gpt/` (gpt-oss)
+- **MERGED**: 2 entity pages into concept pages (gpt-5.5 → gpt/5-5, gpt-5-5-instant → gpt/5-5-instant)
+- **ARCHIVED**: 2 news aggregation pages → `concepts/gpt/_archive/`
+- **UPDATED**: 72 files, 177 wikilink replacements across wiki
+- **CREATED**: `concepts/gpt/index.md` MOC (was concepts/gpt-models.md)
+- **NOTE**: entities/openai.md, entities/openai-codex.md, entities/openai-foundation.md etc. remain as entities (org/product pages)

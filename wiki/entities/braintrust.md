@@ -108,4 +108,4 @@ Topics implements **active observability**: running the intelligence layer over 
 - [[concepts/macro-evals-for-agentic-systems]] — OpenAI × Slalom macro eval pipeline (BERTopic-style)
 - [[entities/codex]] — OpenAI's coding agent used by Braintrust
 - [[entities/openai]] — Platform provider
-- [[entities/gpt-5-5]] — Model powering the Codex workflow
+- [[concepts/gpt/5-5]] — Model powering the Codex workflow

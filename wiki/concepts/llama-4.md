@@ -22,7 +22,7 @@ LLaMA 4 represents Meta's continued commitment to open-weight AI research, offer
 The compact variant optimized for edge deployment and resource-constrained environments. Designed for on-device inference with competitive performance at smaller parameter counts.
 
 ### LLaMA 4 Maverick
-The full-scale flagship model delivering state-of-the-art performance across benchmarks. Targets the frontier model tier alongside [[concepts/deepseek-v4|DeepSeek-V4]], [[concepts/gpt-5-5|GPT-5.5]], and [[concepts/claude-opus|Claude Opus 4.8]].
+The full-scale flagship model delivering state-of-the-art performance across benchmarks. Targets the frontier model tier alongside [[concepts/deepseek-v4|DeepSeek-V4]], [[concepts/gpt/5-5|GPT-5.5]], and [[concepts/claude-opus|Claude Opus 4.8]].
 
 ## Architecture
 

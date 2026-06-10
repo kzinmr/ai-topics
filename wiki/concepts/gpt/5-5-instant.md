@@ -110,7 +110,7 @@ GPT-5.5 Instant lands amid OpenAI's fastest-ever release cadence:
 
 ## Related Pages
 - [[entities/openai]] — OpenAI company overview
-- [[entities/gpt-5-5]] — GPT-5.5 main release
+- [[concepts/gpt/5-5]] — GPT-5.5 main release
 - [[concepts/hallucination]] — Hallucination reduction techniques
 - [[concepts/model-reliability]] — Model reliability and factuality
 - [[concepts/personalization]] — AI personalization approaches

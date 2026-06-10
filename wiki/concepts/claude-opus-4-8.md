@@ -38,7 +38,7 @@ sources:
 
 Opus 4.8 is described as "a modest but tangible improvement" over Opus 4.7. Notable results:
 
-- **Super-Agent benchmark**: Only model to complete every case end-to-end, beating prior Opus models and [[concepts/gpt-5-5|GPT-5.5]] at parity on cost
+- **Super-Agent benchmark**: Only model to complete every case end-to-end, beating prior Opus models and [[concepts/gpt/5-5|GPT-5.5]] at parity on cost
 - **CursorBench**: Exceeds prior Opus models across every effort level; more efficient tool calling (fewer steps for same intelligence)
 - **Online-Mind2Web** (computer-use/browser-agent): 84% score — "meaningful jump" over Opus 4.7 and GPT-5.5
 - **Legal Agent Benchmark**: Highest score recorded; first model to break 10% overall on the all-pass standard
@@ -109,4 +109,4 @@ The Messages API now accepts **system entries inside the messages array**. This 
 - [[concepts/dynamic-workflows]] — new architectural pattern introduced with Opus 4.8
 - [[concepts/effort-control]] — user-controllable compute scaling
 - [[entities/cognition]] — competitor's async agents architecture (similar concept, different implementation)
-- [[concepts/gpt-5-5]] — competing model from OpenAI
+- [[concepts/gpt/5-5]] — competing model from OpenAI
