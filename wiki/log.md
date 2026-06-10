@@ -7501,3 +7501,15 @@ Updated:
   - **REGISTERED**: 20 orphan concept pages added to index.md with proper alphabetical ordering.
   - **VALIDATION** — validate_index.py: clean (1922 lines).
   - **GHOST ENTRIES** — 0 ghost entries found. All 1899 indexed pages verified on disk.
+
+## [2026-06-10] Cohere North Mini Code Ingestion
+
+**Action**: Ingested Cohere's first open-source coding model announcement (2026-06-09). Raw article saved from HuggingFace blog. Entity pages created for North Mini Code and Cohere. Command A+ already existed.
+
+**Files created/modified**:
+- `raw/articles/2026-06-09_hf-blog_cohere-north-mini-code.md` — raw blog post
+- `entities/north-mini-code.md` — 30B MoE (3B active) coding model, Apache 2.0, cross-harness SFT + async RLVR
+- `entities/cohere.md` — company entity (was missing despite being referenced from command-a-plus)
+- `index.md` — added North Mini Code entry, updated Cohere entry, incremented page counts
+
+**Source**: https://x.com/cohere/status/2064378058329526556 → https://huggingface.co/blog/CohereLabs/introducing-north-mini-code

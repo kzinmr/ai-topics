@@ -2,13 +2,15 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-05-30
+updated: 2026-06-10
 tags:
   - company
   - model
   - nlp
   - mcp
   - enterprise-saas
+  - code-model
+  - mixture-of-experts
 aliases: ["Cohere Inc.", "Cohere AI"]
 sources:
   - https://cohere.com/
@@ -16,6 +18,8 @@ sources:
   - raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
   - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
   - raw/articles/2026-05-21_cohere_cohere-announces-strategic-mous-with-indragroup-and-multiverse-computing.md
+  - https://huggingface.co/blog/CohereLabs/introducing-north-mini-code
+  - https://x.com/cohere/status/2064378058329526556
 ---
 
 # Cohere
@@ -129,8 +133,29 @@ Cohere Labs built co/plot, a research visualization prototyping tool. It address
 
 [[concepts/open-science]] | [[concepts/data-visualization]]
 
+## North Family — Developer-Focused Models (June 2026)
+
+Cohere launched the "North" model family, targeting developers and agentic coding workflows.
+
+### North Mini Code (June 2026)
+
+Cohere's first open-source coding model. A 30B-parameter sparse MoE (3B active) trained specifically for agentic software engineering tasks.
+
+| Detail | Value |
+|--------|-------|
+| **Parameters** | 30B MoE / 3B active (128 experts, 8 per token) |
+| **License** | Apache 2.0 |
+| **Training** | Two-stage SFT + async RLVR (CISPO algorithm) |
+| **Context** | 128K tokens |
+| **Benchmark** | AA Coding Index 33.4 — outperforms models 4-40× larger |
+| **Harness** | Cross-harness robustness (SWE-Agent, mini-SWE-Agent, OpenCode, Terminus 2) |
+| **Weights** | [BF16](https://huggingface.co/CohereLabs/North-Mini-Code-1.0), [FP8](https://huggingface.co/CohereLabs/North-Mini-Code-1.0-fp8) |
+
+See [[entities/north-mini-code]] for full details.
+
 ## Related
 
+- [[entities/north-mini-code]] — first North family model (coding MoE)
 - [[entities/openai]] — competitor in enterprise LLM APIs
 - [[entities/anthropic]] — competitor in enterprise-safe AI deployment
 - [[entities/voyage-ai]] — competitor in embedding/rerank models

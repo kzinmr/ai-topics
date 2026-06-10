@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2437 | Indexed entries: 1894 | Concepts: 1022 | Entities: 782
+> Last updated: 2026-06-10 | Total pages: 2439 | Indexed entries: 1896 | Concepts: 1022 | Entities: 784
 
-## Entities (782 pages)
+## Entities (784 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -463,6 +463,7 @@
 - [[entities/niplav]] — niplav — LessWrong contributor, AI alignment researcher. Author of the [[concepts/glut-of-circuits|GLUT-of-circuits]] model of LLMs (2026). Agent structure problem, computation in superposition, circuit-level alignment.
 - [[entities/noam-brown]] — **Role** | Research Scientist, OpenAI |
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "fail...
+- [[entities/north-mini-code]] — Cohere's first coding model (30B MoE, 3B active). Apache 2.0. Trained with cross-harness SFT + async RLVR for agentic coding. AA Coding Index 33.4 — outperforms 4× larger models.
 - [[entities/nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Offi...
 - [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles **OpenShell** (sandbox runtime), **OpenClaw** (agent framework)...
 - [[entities/nvidia-openshell]] — NVIDIA OpenShell: secure agent execution environment providing OS-level sandboxing, deny-by-default security policies, YAML-based access control. Reference implementation of the "Open Runtime" layer in Harrison Chase's framework.
@@ -755,7 +756,7 @@
 - [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
 - [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
 - [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE. Rebranded Windsurf to **Devin Desktop** (Jun 2026) with agent-neutral ACP integration.
-- [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100). Published comprehensive MCP guide (client-server architecture, enterprise use cases, security). Strategic MOUs with Indra Group (sovereign AI Spain/Canada) and Multiverse Computing (quantum-inspired optimization).
+- [[entities/cohere]] — Cohere — Canadian AI company (Aidan Gomez, Nick Frosst, Ivan Zhang). Sovereign AI strategy. Models: [[entities/command-a-plus|Command A+]] (218B MoE, Apache 2.0), [[entities/north-mini-code|North Mini Code]] (30B coding MoE, first North family model). Apache 2.0 all components. 48 languages.
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
 - [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents. $22M Voice Marketplace (doubled in 6mo, 10,400+ creators).
 - [[entities/eventual]] — Eventual — Data and AI platform.
