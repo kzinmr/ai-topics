@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement"
 created: 2026-05-05
-updated: 2026-06-07
+updated: 2026-06-10
 type: concept
 tags: [prediction, safety, alignment, training, benchmark, automation]
 sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-06-05-ainews-not-much-happened-today.md, raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md, raw/articles/2026-06-07_anthropic_recursive-self-improvement.md]
@@ -133,7 +133,15 @@ On June 4, 2026, the Anthropic Institute published "When AI builds itself" — a
 
 5. **AGI-timeline accelerator**: The evidence presented collapses timelines. METR task horizons show doubling every 4 months (up from 7 months). If sustained, AI systems could handle tasks taking a skilled person *weeks* by 2027. The article outlines three scenarios: Continuation (steady acceleration), Acceleration (fast takeoff surpassing human AI R&D), and Failure (plateau from fundamental limitations).
 
-6. **Policy stance on pausing**: Anthropic expresses desire for a "meaningful slowdown or pause" option but acknowledges practical barriers — requiring multiple well-resourced labs in multiple countries agreeing to stop under verifiable conditions. They commit to organizing conversations with policymakers, researchers, and civil society.
+6. **Policy stance on pausing**: Anthropic expresses desire for a "meaningful slowdown or pause" option but acknowledges practical barriers — requiring multiple well-resourced labs in multiple countries agreeing to stop under verifiable conditions. AI training runs are far easier to conceal than missile silos or centrifuges, making detectability much harder than with other technologies. The world has built verification regimes for other complex technologies (e.g., INF Treaty), but those took decades — "we don't have that long." A unilateral pause is achievable immediately but accomplishes much less. They commit to organizing conversations with policymakers, researchers, and civil society.
+
+7. **The narrowing human role**: As AI capabilities advance, the human role narrows at each step — from writing code to reviewing it to choosing which experiments to run. Human review may become the bottleneck as Claude generates code faster than humans can review it. Research taste and judgment (choosing which problems matter, which results to trust) remains a human comparative advantage, but even this may improve in AI systems over time.
+
+8. **Code quality approaching parity**: Claude's success rate on open-ended tasks reached 76% (May 2026, up 50pp in 6 months). Many Anthropic staff believe Claude-written code quality was worse than human in late 2025 but is roughly at parity today, expected to surpass within the year. An automated Claude code reviewer would have caught roughly a third of bugs behind past incidents on claude.ai before production.
+
+9. **Training speedup capability**: Claude Mythos Preview achieved ~52x speedup on CPU-only training implementation (vs. ~4x from a skilled human in 4-8 hours). Like-for-like improvement across models: ~3x to ~52x over the past year.
+
+10. **Infrastructure strain**: GitHub saw ~1 billion commits in all of 2025; by mid-2026 it saw 275 million per week (~14 billion/year pace), "pushing incredibly hard" on capacity.
 
 ### Community Response
 

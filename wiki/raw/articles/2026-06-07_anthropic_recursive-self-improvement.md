@@ -58,7 +58,62 @@ Anthropic outlines three possible futures:
 
 Anthropic believes it would be good for the world to have the *option* to slow or temporarily pause frontier AI development. However, they acknowledge a unilateral pause could let less cautious actors catch up. They will organize conversations with policymakers, researchers, and civil society about full recursive self-improvement and coordination mechanisms.
 
+## The Nature of Incremental Progress
+
+The article argues that AI is rarely advanced by "eureka" moments. While paradigm-shifting ideas like the Transformer architecture or mixture-of-expers models arrive years apart, most progress is incremental: scaling something up, seeing what breaks, fixing it, and trying again. Edison's maxim — "1% inspiration and 99% perspiration" — frames the argument that even without creative genius, AI excels at the 99% perspiration of experimentation.
+
+## The Narrowing Human Role
+
+The evidence suggests the human role is narrowing at each step in the AI development process:
+
+- Once human- and AI-authored code quality reach parity, humans will stop writing code entirely and shift to only reviewing it
+- If humans can't review code as quickly as Claude can generate it, human review becomes the bottleneck
+- Once Claude can run experiments, the question shifts to "Which experiments are worth running?"
+- Research taste and judgment — choosing which problems matter, which results to trust, and when an approach is a dead end — remains an area of human comparative advantage (for now)
+
+## Code Quality Progress
+
+- The rate at which Anthropic staff correct, redirect, or take over mid-task from Claude has been falling steadily for a year
+- On the most open-ended tasks, Claude's success rate reached 76% in May 2026 (up 50pp in six months)
+- Example: A routine upgrade crashed tens of thousands of training jobs; Claude isolated the single obscure debugging flag by working through running jobs and testing environment settings one at a time
+- Many Anthropic staff believe Claude-written code was still worse than human code in late 2025, but is roughly at parity today; expected to surpass within the year
+
+## Automated Code Review
+
+Anthropic now uses an automated Claude reviewer for all proposed codebase changes, checking for bugs, security flaws, and defects. A retrospective analysis found this tool would have caught roughly a third of the bugs behind past incidents on claude.ai before they reached production.
+
+## Training Speedup Experiments
+
+Every time Anthropic releases a model, they run the same test: give Claude code that trains a small AI model and ask it to make the code run as fast as possible. Claude Mythos Preview achieved ~52x speedup on a CPU-only training implementation (vs. ~4x expected from a skilled human in 4-8 hours). The like-for-like comparison across models shows improvement from ~3x to ~52x over the past year.
+
+## Research Judgment Steering
+
+When examining real Claude Code sessions (January–March 2026) where researchers worked with Claude on open-ended problems, Anthropic found moments where the human's next move had room for improvement (n=129). Models' suggestions were judged better ~40% of the time on Opus 4.6 (up from 51% on Opus 4.5 in November 2025). A check on judge bias using 127 moments where the human's next move was already strong showed models' suggestions were better only ~20% of the time.
+
+## Scaling and Infrastructure Strain
+
+The surge in code production is straining shared infrastructure. GitHub saw roughly one billion code commits in all of 2025; by mid-2026 it saw 275 million a week (~14 billion/year pace). GitHub's COO has said the company is "pushing incredibly hard" on capacity.
+
+## The "Research Taste" Debate
+
+A natural objection is that the work still in human hands — choosing which problems to work on — is what matters most. Without that judgment, Claude is a capable assistant but not a system that could drive AI progress on its own. However, even a conservative reading implies compounding acceleration: if humans focus on direction-setting while Claude handles the rest, each engineer steers far more work than before. The less conservative reading is that "research taste" might be another AI capability that systems fail at for a time, then get good at — similar to explaining jokes, demonstrating theory of mind, and solving linguistic riddles.
+
+## Verification and Pause Mechanisms
+
+- A meaningful slowdown/pause would require multiple well-resourced labs at or near the frontier, in multiple countries, agreeing to stop under verifiable conditions
+- AI training runs are far easier to conceal than missile silos or centrifuges, making detectability much harder than with other technologies
+- The world has built verification regimes for other complex technologies (e.g., INF Treaty), but those took decades — "we don't have that long"
+- A unilateral pause is achievable immediately but accomplishes much less: it changes who the front-runner is but doesn't create wider deliberation
+- The Anthropic Institute will organize conversations with policymakers, researchers, civil society, and other AI companies
+
 ## Notes
 
 - Marina Favaro and Jack Clark co-authored, with editorial support from Santi Ruiz.
+- Shan Carter, Romello Goodman, and Nikki Makagiansar created the visuals from data collected by Brian Calvert and Jun Shern Chan.
+- Feedback from: Daniel Freeman, Jim Baker, Max Young, Sarah Pollack, Francesco Mosconi, Holden Karnofsky, Andy Jones, Kevin Troy, Anton Korinek, Meg Tong, Andrew Ho, Dan Altman, Drake Thomas, Jack Shen, Sasha de Marigny, and Avital Balwit.
 - Quotes from Anthropic employees are from internal discussions, used with permission. They reflect individual views as of May 2026, not official company positions.
+- Footnote: METR's key measure is the time horizon over which AI systems can be 50% reliable at a basket of tasks.
+- Footnote: Benchmarks often saturate below 100% due to errors in question and answer sets.
+- Footnote: Anthropic leadership have publicly estimated that 90%+ of code is written by Claude (including scripts and experimental code). The >80% figure measures share of lines merged to production attributed to Claude — a more conservative measurement.
+- Footnote: Additional methodology details in section 2.3.5 of the Claude Opus 4.7 System Card.
+- Footnote: Recent research by METR shows developer estimates of AI productivity uplift can be overestimated.

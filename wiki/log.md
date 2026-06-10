@@ -7563,3 +7563,10 @@ Updated:
 
 - **UPDATED: [[entities/claude-mythos.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "Frontier LLM Development Restrictions (System Card)" subsection under Capability Limitation Debate with full quote and key design choices (invisible safeguards, PEFT/steering vectors, ~0.03% traffic impact).
 - **UPDATED: [[entities/claude-fable-5.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "System Card Evidence: Frontier LLM Development Restrictions" subsection under Controversy with system card quote confirming intentional invisible restrictions on frontier LLM development tasks.
+
+### 2026-06-10 — Enriched Anthropic "When AI builds itself" article ingestion
+
+**Action**: Re-ingested full text from `https://www.anthropic.com/institute/recursive-self-improvement` and enriched both raw article and concept page.
+
+- **UPDATED: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement.md]]** — Added 7 new sections: The Nature of Incremental Progress, The Narrowing Human Role, Code Quality Progress, Automated Code Review, Training Speedup Experiments, Research Judgment Steering, Scaling and Infrastructure Strain, The "Research Taste" Debate, Verification and Pause Mechanisms. Added footnotes, contributor list, and methodology notes.
+- **UPDATED: [[concepts/recursive-self-improvement.md]]** — Added items 7-10 to Anthropic Official Declaration: narrowing human role, code quality approaching parity (~52x training speedup), and infrastructure strain (GitHub 275M commits/week). Updated policy stance with verification regime details.
