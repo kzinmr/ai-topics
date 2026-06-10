@@ -46,6 +46,34 @@ The hub provides:
 | 18 | [4o Native Image Generation](https://deploymentsafety.openai.com/4o-native-image-generation) | 2025-03-25 | Image generation | Addendum to GPT-4o; photorealistic output |
 | 19 | [Deep Research](https://deploymentsafety.openai.com/deep-research) | 2025-02-25 | Agentic | Multi-step web research; o3-based; privacy protections |
 
+
+## Individual System Card Pages
+
+Each system card now has a dedicated wiki page with detailed analysis:
+
+| # | System Card | Wiki Page |
+|---|---|---|
+| 0 | o3 and o4-mini (Apr 2025) | [[concepts/gpt/gpt-o3-o4-mini-system-card]] |
+| 1 | Deep Research (Feb 2025) | [[concepts/gpt/gpt-deep-research-system-card]] |
+| 2 | 4o Native Image Generation (Mar 2025) | [[concepts/gpt/gpt-4o-native-image-generation-system-card]] |
+| 3 | ChatGPT Agent (Jul 2025) | [[concepts/gpt/gpt-chatgpt-agent-system-card]] |
+| 4 | gpt-oss (Aug 2025) | [[concepts/gpt/gpt-oss-model-card]] |
+| 5 | GPT-5 (Aug 2025) | [[concepts/gpt/gpt-5-system-card]] |
+| 6 | Sora 2 (Sep 2025) | [[concepts/gpt/gpt-sora-2-system-card]] |
+| 7 | GPT-5-Codex (Oct 2025) | [[concepts/gpt/gpt-5-codex-system-card]] |
+| 8 | GPT-5.1-Codex (Oct 2025) | [[concepts/gpt/gpt-5-1-codex-system-card]] |
+| 9 | GPT-5.1 Instant & Thinking (Nov 2025) | [[concepts/gpt/gpt-5-1-system-card]] |
+| 10 | GPT-5.1-Codex-Max (Nov 2025) | [[concepts/gpt/gpt-5-1-codex-max-system-card]] |
+| 11 | GPT-5.2 (Dec 2025) | [[concepts/gpt/gpt-5-2-system-card]] |
+| 12 | GPT-5.2-Codex (Dec 2025) | *(addendum to GPT-5.2)* |
+| 13 | GPT-5.3-Codex (Feb 2026) | [[concepts/gpt/gpt-5-3-codex-system-card]] |
+| 14 | GPT-5.3 Instant (Mar 2026) | [[concepts/gpt/gpt-5-3-instant-system-card]] |
+| 15 | GPT-5.4 Thinking (Mar 2026) | [[concepts/gpt/gpt-5-4-thinking-system-card]] |
+| 16 | ChatGPT Images 2.0 (Apr 2026) | [[concepts/gpt/gpt-chatgpt-images-2-0-system-card]] |
+| 17 | GPT-5.5 (Apr 2026) | [[concepts/gpt/gpt-5-5-system-card]] |
+| 18 | GPT-5.5 Instant (May 2026) | [[concepts/gpt/gpt-5-5-instant-system-card]] |
+| 19 | GPT-Rosalind-5.5 (Jun 2026) | [[concepts/gpt/gpt-rosalind-5-5-system-card]] |
+
 ## Preparedness Framework Categories
 
 OpenAI evaluates models under its **Preparedness Framework** across three tracked categories:

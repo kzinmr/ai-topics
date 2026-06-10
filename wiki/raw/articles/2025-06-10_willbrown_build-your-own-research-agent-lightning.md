@@ -21,7 +21,7 @@ tags:
 **Date:** June 10, 2025 (pre-course Lightning Lesson)
 **Companion course:** [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
 **Lecture notebook:** [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook|Notebook Walkthrough]]
-**GitHub repo:** [research-agent-lesson](https://github.com/willccbb/research-agent-lesson)
+**GitHub repo:** [agent-engineering](https://github.com/willccbb/agent-engineering) (lightning-lessons/agents.ipynb)
 **Maven page:** [Build Your Own AI Research Agent](https://maven.com/p/193c6f/build-your-own-ai-research-agent)
 
 ## Summary

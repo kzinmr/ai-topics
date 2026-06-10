@@ -7775,3 +7775,14 @@ Updated:
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lightning Lessons section, sources, related links
 - **UPDATED**: `wiki/index.md` — Added transcript entry
 - Sources: Maven (https://maven.com/p/193c6f/build-your-own-ai-research-agent), GitHub (willccbb/research-agent-lesson)
+
+## 2026-06-10 (GPT System Cards Batch Ingestion)
+- **CREATED**: 18 system card concept pages under `concepts/gpt/` (19 including pre-existing o3/o4-mini)
+- **COVERAGE**: All 20 cards from OpenAI Deployment Safety Hub now have individual wiki pages
+  - Deep Research (Feb 2025), 4o Native Image Gen (Mar 2025), o3/o4-mini (Apr 2025)
+  - ChatGPT Agent (Jul 2025), gpt-oss (Aug 2025), GPT-5 (Aug 2025), Sora 2 (Sep 2025)
+  - GPT-5-Codex (Oct 2025), GPT-5.1-Codex (Oct 2025), GPT-5.1 (Nov 2025), GPT-5.1-Codex-Max (Nov 2025)
+  - GPT-5.2 (Dec 2025), GPT-5.3-Codex (Feb 2026), GPT-5.3 Instant (Mar 2026), GPT-5.4 Thinking (Mar 2026)
+  - ChatGPT Images 2.0 (Apr 2026), GPT-5.5 (Apr 2026), GPT-5.5 Instant (May 2026), GPT-Rosalind-5.5 (Jun 2026)
+- **UPDATED**: gpt-deployment-safety-hub.md — added Individual System Card Pages section with links to all 20 pages
+- **UPDATED**: index.md — added 18 system card entries

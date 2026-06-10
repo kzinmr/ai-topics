@@ -1598,6 +1598,24 @@
 - [[concepts/openai/astral-acquisition]] — "OpenAI Acquires Astral — Codex Toolchain Strategy"
 - [[concepts/openai/codex-superapp]] — OpenAI Codex Superapp — OpenAI's unified coding agent platform
 - [[concepts/gpt/gpt-deployment-safety-hub]] — OpenAI Deployment Safety Hub (deploymentsafety.openai.com): Central index for all 19 OpenAI system cards (Feb 2025–Jun 2026). Preparedness Framework evaluations across Bio/Chem, Cybersecurity, AI Self-Improvement. Key trends: safety level escalation (first Cyber High with GPT-5.3-Codex), agentic model proliferation (5 Codex cards), domain-specific deployment (GPT-Rosalind-5.5).
+- [[concepts/gpt/gpt-4o-native-image-generation-system-card]] — 4o Native Image Generation System Card (Mar 2025): Addendum to GPT-4o. Photorealistic native image gen in omnimodal model. C2PA provenance metadata.
+- [[concepts/gpt/gpt-5-1-codex-max-system-card]] — GPT-5.1-Codex-Max System Card (Nov 2025): Agent sandboxing, configurable network access. METR time-horizon 2h42m.
+- [[concepts/gpt/gpt-5-1-codex-system-card]] — GPT-5.1-Codex System Card (Oct 2025): Agentic coding model.
+- [[concepts/gpt/gpt-5-1-system-card]] — GPT-5.1 Instant & Thinking System Card (Nov 2025): Adaptive reasoning, StrongReject 0.683→0.976.
+- [[concepts/gpt/gpt-5-2-system-card]] — GPT-5.2 System Card (Dec 2025): GPT-5 family update, same safety approach as GPT-5.1.
+- [[concepts/gpt/gpt-5-3-codex-system-card]] — GPT-5.3-Codex System Card (Feb 2026): FIRST Cybersecurity High treatment. Precautionary approach.
+- [[concepts/gpt/gpt-5-3-instant-system-card]] — GPT-5.3 Instant System Card (Mar 2026): Dynamic multi-turn mental health evaluations.
+- [[concepts/gpt/gpt-5-4-thinking-system-card]] — GPT-5.4 Thinking System Card (Mar 2026): FIRST general-purpose model with High Cyber mitigations.
+- [[concepts/gpt/gpt-5-5-instant-system-card]] — GPT-5.5 Instant System Card (May 2026): First Instant model at High in both Cyber + Bio/Chem.
+- [[concepts/gpt/gpt-5-5-system-card]] — GPT-5.5 System Card (Apr 2026): Complex real-world work. First model with zero sandbagging (Apollo Research).
+- [[concepts/gpt/gpt-5-codex-system-card]] — GPT-5-Codex System Card (Oct 2025): RL-trained coding agent, sandboxing (Seatbelt/seccomp+landlock).
+- [[concepts/gpt/gpt-5-system-card]] — GPT-5 System Card (Aug 2025): Unified system (fast+reasoning+router). Safe-completions. Bio/Chem High.
+- [[concepts/gpt/gpt-chatgpt-agent-system-card]] — ChatGPT Agent System Card (Jul 2025): Deep Research + Operator + Terminal. Bio/Chem High (precautionary).
+- [[concepts/gpt/gpt-chatgpt-images-2-0-system-card]] — ChatGPT Images 2.0 System Card (Apr 2026): Thinking mode for image gen, web search integration.
+- [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): o3-based agentic web browsing. All Preparedness categories LOW.
+- [[concepts/gpt/gpt-oss-model-card]] — gpt-oss Model Card (Aug 2025): Apache 2.0 open-weight (120B/20B). Adversarial fine-tuning tested, not reaching High.
+- [[concepts/gpt/gpt-rosalind-5-5-system-card]] — GPT-Rosalind-5.5 System Card (Jun 2026): Bio/drug discovery domain-specific. Bio/Chem High. Research-only deployment.
+- [[concepts/gpt/gpt-sora-2-system-card]] — Sora 2 System Card (Sep 2025): Video generation. Nonconsensual likeness risks, photorealistic person restrictions.
 - [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): OpenAI's first agentic browsing product. Fine-tuned o3 with autonomous web browsing loop (search→browse→note→iterate→report). All Preparedness categories LOW. Key risks: prompt injection (extensive red-teaming), sandboxed browsing (no code execution, no downloads). HLE ~26.6%. Predecessor to ChatGPT Agent.
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
 - [[concepts/openai/realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
