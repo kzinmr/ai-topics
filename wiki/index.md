@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-09 | Total pages: 2436 | Indexed entries: 1893 | Concepts: 1022 | Entities: 782
+> Last updated: 2026-06-10 | Total pages: 2437 | Indexed entries: 1894 | Concepts: 1022 | Entities: 782
 
 ## Entities (782 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -1817,7 +1817,7 @@
 - [[concepts/zero-trust-agentic-ai]] — Zero Trust for Agentic AI — Applied Zero Trust security model: assume no request is safe by default, verify every action, minimize blast radius of compromised agents.
 - [[concepts/zombie-internet]] — Zombie Internet: AI-contaminated web where humans and bots coexist in complex interaction patterns, causing cognitive overload and writing style distortion. Coined by Jason Koebler, highlighted by Simon Willison (May 2026).
 
-## Events (8 pages)
+## Events (9 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
 - [[events/openai-may-2026-reorg]] — OpenAI's May 2026 product reorganization. Greg Brockman oversees all products, ChatGPT and Codex integrated, Thibault Sottiaux named core product lead. Fidji Simo on medical leave.
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — Anthropic announces new products enhancing Claude Code (2026-05-06)
@@ -1826,6 +1826,7 @@
 - [[events/google-io-2026]] — Google I/O 2026 (2026-05-20) — Gemini Spark (personal AI agent), Antigravity platform, Gemini 3.5 Flash announced. OpenCLaw competitor. Gemini CLI→Antigravity CLI migration (OSS→proprietary). Agent security (prompt injection) concerns.
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
+- [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
 
 ## Comparisons (27 pages)
 

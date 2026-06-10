@@ -1,5 +1,17 @@
 ---
 
+## [2026-06-10] OpenAI "Built to Benefit Everyone" Plan Ingestion
+
+**Action**: Ingested OpenAI strategic vision article (2026-06-08). Raw article saved, event page created, OpenAI entity page updated with new source.
+
+**Files created/modified**:
+- `raw/articles/2026-06-08_openai-built-to-benefit-everyone.md` (new)
+- `events/2026-06-08-openai-built-to-benefit-everyone.md` (new)
+- `entities/openai.md` (source added, updated date)
+- `index.md` (event entry added)
+
+---
+
 ## [2026-06-09] X Article Ingest — Lance Martin "Designing loops with Fable 5"
 
 **Action**: Ingested X Article from @rlancemartin (Lance Martin) about Claude Fable 5 loop design patterns.

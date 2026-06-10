@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-07
+updated: 2026-06-10
 tags:
   - company
   - model
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md
   - raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md
   - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
+  - raw/articles/2026-06-08_openai-built-to-benefit-everyone.md
 ---
 
 # OpenAI
