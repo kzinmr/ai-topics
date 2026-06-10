@@ -27,17 +27,17 @@ Google's next-generation Flash-tier model, discovered running in leaked builds o
 | Model | Input ($/1M tokens) | Output ($/1M tokens) |
 |---|---|---|
 | Gemini 3.2 Flash | $0.25 | $2.00 |
-| [[concepts/gemini/3-1-flash-lite]] | $0.25 | $1.00 |
+| [[concepts/gemini/gemini-3-1-flash-lite]] | $0.25 | $1.00 |
 | Gemini 3 Flash | $0.50 | $3.00 |
 
 Positioned as mid-tier: Lite-level input pricing, below-Flash output pricing. Appears to deliver near-[[concepts/gemini-3-1-pro]] performance on coding and creative tasks at Flash latency.
 
 ## Relationship to Flash Family
-- Sits above [[concepts/gemini/3-1-flash-lite]] in hierarchy
+- Sits above [[concepts/gemini/gemini-3-1-flash-lite]] in hierarchy
 - Faster and cheaper than [[concepts/gemini-3-1-pro]] while targeting near-Pro quality
 - Continues the Flash branding tradition: Pro-level intelligence at Flash-level latency/cost (pioneered by Gemini 3 Flash)
 
 ## Related
 - [[entities/google]] — Google company page
-- [[concepts/gemini/3-1-flash-lite]] — Current cost-leader Flash model
+- [[concepts/gemini/gemini-3-1-flash-lite]] — Current cost-leader Flash model
 - [[events/google-io-2026]] — Expected announcement venue

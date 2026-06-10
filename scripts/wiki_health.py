@@ -7,6 +7,7 @@ Usage:  python scripts/wiki_health.py          # prints report to stdout
 
 import datetime
 import os
+import re
 import subprocess
 import sys
 from collections import Counter
@@ -357,6 +358,141 @@ def section_tag_distribution(l2: dict) -> str:
     return "\n".join(lines)
 
 # ---------------------------------------------------------------------------
+# Page name policy
+# ---------------------------------------------------------------------------
+
+# CJK Unicode ranges (Hiragana, Katakana, CJK Unified Ideographs)
+_CJK_RE = re.compile(r"[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]")
+
+# A filename that starts with a date prefix looks like a raw article title leak
+_DATE_PREFIX_RE = re.compile(r"^20\d{2}-\d{2}-\d{2}")
+
+# Hyphen-separated "tag pile" detection: words that look like a keyword list
+# rather than a coherent page name (e.g. "claude-code-prompt-engineering-...")
+_TAG_PILE_INDICATORS = re.compile(
+    r"^(background-agent|claude-code-prompt|ai-agents-framework|"
+    r"company-startup|evaluation-llm|data-validation|"
+    r"concept-context-graph|code-execution-agents|"
+    r"memory-systems-claude|llm-output-formatting)"
+)
+
+# Policy thresholds
+WORD_COUNT_WARN = 8   # slug word count >= this triggers WARN
+WORD_COUNT_ERROR = 11  # >= this triggers ERROR
+HYPHEN_COUNT_WARN = 8  # hyphen count >= this triggers WARN
+HYPHEN_COUNT_ERROR = 11  # >= this triggers ERROR
+
+
+def _slug_stem(path: Path, base: Path) -> str:
+    """Return just the filename stem (no dirs, no .md)."""
+    return path.stem
+
+
+def _word_count(slug: str) -> int:
+    """Count words in a hyphen-separated slug."""
+    return len(slug.split("-"))
+
+
+def _hyphen_count(slug: str) -> int:
+    return slug.count("-")
+
+
+def section_page_name_policy(l2: dict) -> tuple[str, list[dict]]:
+    """Check L2 page filenames against naming policy.
+
+    Returns (markdown_section_text, violations_list_for_json).
+    """
+    lines = ["## 📏 Page Name Policy\n"]
+
+    errors: list[tuple[str, str, str]] = []   # (severity, slug, reason)
+    warnings: list[tuple[str, str, str]] = []
+    violations_json: list[dict] = []
+
+    for cat, pages in l2.items():
+        for path, fm in pages:
+            slug = _slug_stem(path, WIKI_ROOT / cat)
+            rel = f"{cat}/{slug}"
+
+            # Skip _index files and _archive dirs
+            if slug == "_index":
+                continue
+            if "_archive" in str(path):
+                continue
+
+            # --- Check 1: CJK characters in filename ---
+            if _CJK_RE.search(slug):
+                errors.append((
+                    "ERROR", rel,
+                    "CJK characters in filename — use English-only slugs"
+                ))
+
+            # --- Check 2: Date-prefix slug (raw article title leak) ---
+            if _DATE_PREFIX_RE.match(slug):
+                errors.append((
+                    "ERROR", rel,
+                    "Date-prefixed slug — looks like raw article title leak"
+                ))
+
+            # --- Check 3: Word count ---
+            wc = _word_count(slug)
+            if wc >= WORD_COUNT_ERROR:
+                errors.append((
+                    "ERROR", rel,
+                    f"Slug has {wc} words (limit {WORD_COUNT_ERROR}) — too long, likely a tag pile"
+                ))
+            elif wc >= WORD_COUNT_WARN:
+                warnings.append((
+                    "WARN", rel,
+                    f"Slug has {wc} words (limit {WORD_COUNT_WARN}) — consider shortening"
+                ))
+
+            # --- Check 4: Hyphen count ---
+            hc = _hyphen_count(slug)
+            if hc >= HYPHEN_COUNT_ERROR and wc < WORD_COUNT_ERROR:
+                errors.append((
+                    "ERROR", rel,
+                    f"Slug has {hc} hyphens (limit {HYPHEN_COUNT_ERROR}) — likely tag pile"
+                ))
+            elif hc >= HYPHEN_COUNT_WARN and wc < WORD_COUNT_WARN:
+                warnings.append((
+                    "WARN", rel,
+                    f"Slug has {hc} hyphens (limit {HYPHEN_COUNT_WARN}) — consider shortening"
+                ))
+
+    # Build report
+    all_issues = errors + warnings
+    all_issues.sort(key=lambda x: (0 if x[0] == "ERROR" else 1, -_word_count(x[1].split("/")[-1])))
+
+    if not all_issues:
+        lines.append("_All page names pass the naming policy._ ✅\n")
+        return "\n".join(lines), []
+
+    lines.append(f"**{len(errors)} errors**, **{len(warnings)}** warnings.\n")
+    lines.append("| Severity | Page | Issue |")
+    lines.append("|----------|------|-------|")
+    for sev, rel, reason in all_issues:
+        icon = "🔴" if sev == "ERROR" else "🟡"
+        lines.append(f"| {icon} {sev} | `{rel}` | {reason} |")
+        violations_json.append({
+            "severity": sev.lower(),
+            "page": rel,
+            "reason": reason,
+            "word_count": _word_count(rel.split("/")[-1]),
+            "hyphen_count": _hyphen_count(rel.split("/")[-1]),
+        })
+
+    lines.append("")
+    lines.append("**Policy rules**:")
+    lines.append(f"- CJK characters in filenames → ERROR")
+    lines.append(f"- Date-prefix slugs (YYYY-MM-DD) → ERROR")
+    lines.append(f"- Word count ≥ {WORD_COUNT_ERROR} → ERROR, ≥ {WORD_COUNT_WARN} → WARN")
+    lines.append(f"- Hyphen count ≥ {HYPHEN_COUNT_ERROR} → ERROR, ≥ {HYPHEN_COUNT_WARN} → WARN")
+    lines.append("")
+
+    return "\n".join(lines), violations_json
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -364,9 +500,12 @@ def main() -> None:
     l2 = load_l2_pages()
     raw = load_raw_articles()
 
+    name_policy_text, name_policy_violations = section_page_name_policy(l2)
+
     report_parts = [
         f"# 🩺 Wiki Health Digest — {TODAY.strftime('%Y-%m-%d')}\n",
         section_overview(l2, raw),
+        name_policy_text,
         section_stale_pages(l2),
         section_unprocessed_raw(l2, raw),
         section_orphan_pages(l2),
@@ -374,6 +513,50 @@ def main() -> None:
         section_tag_distribution(l2),
         "---\n_Generated by `scripts/wiki_health.py`_",
     ]
+
+    # JSON mode (--json flag)
+    if "--json" in sys.argv:
+        import json as _json
+
+        # Recompute counts for JSON
+        overview = {}
+        for cat in ("entities", "concepts", "comparisons"):
+            overview[cat] = len(l2.get(cat, []))
+        overview["raw_articles"] = len(raw)
+        overview["total_l2"] = sum(overview[c] for c in ("entities", "concepts", "comparisons"))
+
+        skeleton_count = sum(
+            1
+            for _, fm in l2.get("entities", [])
+            if str(fm.get("status", "")).strip().lower() == "skeleton"
+        )
+        overview["skeleton_entities"] = skeleton_count
+
+        # Orphan count
+        orphans = []
+        try:
+            index_text = INDEX_FILE.read_text(encoding="utf-8", errors="replace")
+            for cat, pages in l2.items():
+                for path, _ in pages:
+                    rel = str(path.relative_to(WIKI_ROOT).with_suffix(""))
+                    if rel not in index_text:
+                        orphans.append(rel)
+        except OSError:
+            pass
+
+        payload = {
+            "date": TODAY.isoformat(),
+            "overview": overview,
+            "page_name_policy": {
+                "violations": name_policy_violations,
+                "error_count": sum(1 for v in name_policy_violations if v["severity"] == "error"),
+                "warn_count": sum(1 for v in name_policy_violations if v["severity"] == "warn"),
+            },
+            "orphan_count": len(orphans),
+            "orphans": sorted(orphans)[:30],
+        }
+        print(_json.dumps(payload, indent=2, ensure_ascii=False))
+        return
 
     print("\n\n".join(report_parts))
 

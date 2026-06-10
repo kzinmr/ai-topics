@@ -47,7 +47,9 @@ if [ -n "$STAGED_WIKI_JP" ]; then
 fi
 
 # Page name policy — block CJK in filenames and date-prefix slugs for NEW wiki files
-STAGED_WIKI_NEW=$(git diff --cached --name-only --diff-filter=A | grep -E '^wiki/(entities|concepts|comparisons)/.*\.md$' | grep -v '/_index\.md$' | grep -v '/_archive/')
+# NOTE: core.quotepath=false is required so git outputs unquoted UTF-8 filenames
+# (without it, CJK filenames become \xxx escape sequences invisible to grep -P)
+STAGED_WIKI_NEW=$(git -c core.quotepath=false diff --cached --name-only --diff-filter=A | grep -E '^wiki/(entities|concepts|comparisons)/.*\.md$' | grep -v '/_index\.md$' | grep -v '/_archive/')
 if [ -n "$STAGED_WIKI_NEW" ]; then
     NAME_VIOLATIONS=0
     for f in $STAGED_WIKI_NEW; do

@@ -9,7 +9,7 @@ sources: [raw/articles/simonwillison.net--2026-may-20-google-io--933c8dde.md, ra
 
 # Google I/O 2026
 
-Google I/O 2026 (May 20, 2026) marked Google's major push into AI agents and agentic computing, anchored by three major announcements: [[concepts/gemini/3-5-flash]], [[concepts/gemini/spark]], and [[antigravity]].
+Google I/O 2026 (May 20, 2026) marked Google's major push into AI agents and agentic computing, anchored by three major announcements: [[concepts/gemini/gemini-3-5-flash]], [[concepts/gemini/gemini-spark]], and [[antigravity]].
 
 ## Key Announcements
 
@@ -34,7 +34,7 @@ Antigravity is a multi-surface AI agent platform:
 - **Antigravity IDE** (VS Code fork — the original)
 
 ### Gemini CLI → Antigravity CLI Transition
-Google announced that the open-source [[concepts/gemini/cli]] (Apache 2.0 licensed, TypeScript) will **stop working** with AI subscription plans on **June 18, 2026**, replaced by the closed-source Antigravity CLI. This is a significant shift from open-source to proprietary tooling.
+Google announced that the open-source [[concepts/gemini/gemini-cli]] (Apache 2.0 licensed, TypeScript) will **stop working** with AI subscription plans on **June 18, 2026**, replaced by the closed-source Antigravity CLI. This is a significant shift from open-source to proprietary tooling.
 
 ## The Verge's 13 Biggest Announcements
 Per [The Verge's coverage](https://www.theverge.com/tech/933415/google-io-2026-biggest-announcements-ai-gemini), the event featured 13 major announcements spanning AI, cloud, and consumer products. See [[theverge.com--tech-933415-google-io-2026-biggest-announcements-ai-gemini--e73abf5d]] for full details.
@@ -51,10 +51,10 @@ The Gemini CLI → Antigravity CLI transition mirrors a broader industry pattern
 Gemini Spark positions Google directly against [[openclaw]] (OpenAI's agent) and [[claude-code]] (Anthropic's coding agent), escalating the AI agent platform competition. Each takes a different approach to trust, sandboxing, and user data access.
 
 ## See Also
-- [[concepts/gemini/spark]] — Google's personal AI agent
+- [[concepts/gemini/gemini-spark]] — Google's personal AI agent
 - [[antigravity]] — The underlying agent platform
-- [[concepts/gemini/3-5-flash]] — The model powering Gemini Spark
-- [[concepts/gemini/cli]] — The deprecated open-source CLI
+- [[concepts/gemini/gemini-3-5-flash]] — The model powering Gemini Spark
+- [[concepts/gemini/gemini-cli]] — The deprecated open-source CLI
 - [[simon-willison]] — Analysis and security concerns
 - [[openclaw]] — OpenAI's competing agent product
 - [[agent-safety]] — Broader AI agent safety landscape

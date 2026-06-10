@@ -25,13 +25,13 @@ sources:
 
 # Google Antigravity
 
-Google's **agent-first development platform**, announced at I/O 2026 (May 19, 2026). Antigravity is the unified runtime, harness, and SDK for building, managing, and deploying AI agents powered by [[concepts/gemini/3-5-flash|Gemini 3.5 Flash]]. It represents Google's bet that the developer experience of the future is agent-native, not app-native.
+Google's **agent-first development platform**, announced at I/O 2026 (May 19, 2026). Antigravity is the unified runtime, harness, and SDK for building, managing, and deploying AI agents powered by [[concepts/gemini/gemini-3-5-flash|Gemini 3.5 Flash]]. It represents Google's bet that the developer experience of the future is agent-native, not app-native.
 
 ## Overview
 
 > "Google Antigravity is our agent-first development platform for developers to take an idea and turn it into a production-ready app."
 
-Antigravity provides three surfaces — desktop, CLI, and SDK — all sharing the same agent harness that powers Google's own products including [[concepts/gemini/spark|Gemini Spark]], Daily Brief, and AI Mode in Search.
+Antigravity provides three surfaces — desktop, CLI, and SDK — all sharing the same agent harness that powers Google's own products including [[concepts/gemini/gemini-spark|Gemini Spark]], Daily Brief, and AI Mode in Search.
 
 ## Platform Components
 
@@ -95,7 +95,7 @@ At Google I/O 2026 (May 2026), Antigravity 2.0 was showcased with major updates:
 - **Feature parity with Claude Code and Codex**: Antigravity 2.0 closes the gap with leading coding agents
 - **AI Studio Workspace integration**: Seamless integration with Google's AI development platform
 
-See also: [[concepts/gemini/3-5-flash]] (powering Antigravity).
+See also: [[concepts/gemini/gemini-3-5-flash]] (powering Antigravity).
 
 
 ## Technical Details
@@ -189,9 +189,9 @@ New **Google AI Ultra** subscription tier at **$100/month** offers 5× higher us
 
 ## Related
 
-- [[concepts/gemini/3-5-flash|Gemini 3.5 Flash]] — the default model powering Antigravity
-- [[concepts/gemini/spark|Gemini Spark]] — 24/7 personal agent built on Antigravity
-- [[concepts/gemini/enterprise-agent-platform|Gemini Enterprise Agent Platform]]
+- [[concepts/gemini/gemini-3-5-flash|Gemini 3.5 Flash]] — the default model powering Antigravity
+- [[concepts/gemini/gemini-spark|Gemini Spark]] — 24/7 personal agent built on Antigravity
+- [[concepts/gemini/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]]
 - [[entities/google-adk|Google ADK 2.0]]
 - [[concepts/coding-agents|Coding Agents]]
 - [[concepts/agentic-engineering|Agentic Engineering]]

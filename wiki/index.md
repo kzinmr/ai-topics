@@ -51,7 +51,7 @@
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer — Open-source skill bundle for Claude Code and Codex that brings professional evaluation engineering into coding agent workflows. Created by Pratik Bhavsar at Galileo Agent Labs (May 2026).
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
-- [[concepts/gemini/cli]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.
+- [[concepts/gemini/gemini-cli]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.
 - [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/glimpse]] — Glimpse — Native macOS WKWebView micro-UI library (Node.js bindings). Sub-50ms window startup, bidirectional JSON. Used for generative UI in terminal-based coding agents.
@@ -309,9 +309,9 @@
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
 - [[concepts/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash (Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster at half cost), Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. AI Mode: 1B monthly users. Hassabis: Omni is "a step toward AGI." Powered by Antigravity harness.
-- [[concepts/gemini/enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
-- [[concepts/gemini/3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16th (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
-- [[concepts/gemini/spark]] — Google's 24/7 personal AI agent (I/O 2026). Runs on Gemini 3.5 Flash + Antigravity harness. Scheduled tasks, custom skill learning, deep Workspace integration. Cloud-resident.
+- [[concepts/gemini/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
+- [[concepts/gemini/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16th (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
+- [[concepts/gemini/gemini-spark]] — Google's 24/7 personal AI agent (I/O 2026). Runs on Gemini 3.5 Flash + Antigravity harness. Scheduled tasks, custom skill learning, deep Workspace integration. Cloud-resident.
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 5 models: E2B/E4B/12B Unified/26B A4B/31B. 12B is encoder-free multimodal (May 2026). E4B adopted as daily local model.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
@@ -1355,9 +1355,9 @@
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 - [[concepts/fused-kernels]] — Fused Kernels — GPU kernel fusion techniques eliminating intermediate memory allocations for faster inference/training.
 - [[concepts/gemma-family]] — Gemma Model Family — Google DeepMind's open model family (Apache 2.0). 13 model cards: Gemma 1–4, CodeGemma, PaliGemma 1–2, ShieldGemma 1–2, RecurrentGemma, EmbeddingGemma, FunctionGemma, Gemma 3n. Derived from Gemini research.
-- [[concepts/gemini/3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
-- [[concepts/gemini/3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
-- [[concepts/gemini/managed-agents]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
+- [[concepts/gemini/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
+- [[concepts/gemini/gemini-3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
+- [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
 - [[concepts/gemini]] — Google Gemini — Google DeepMind's multimodal LLM family.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/generative-app-evolution]] — Generative App Evolution — The evolutionary staircase of generative applications from UI components to full agentic systems.
