@@ -285,6 +285,10 @@ The RL-harness lifecycle suggests focusing on:
 - **[[agent-harness]]** — Specific implementations of model-environment interfaces
 - **[[concepts/reinforcement-learning]]** — The training paradigm that internalizes harness patterns
 - **[[concepts/chain-of-thought]]** — Historical example of harness-to-capability evolution
+
+## Related Course Materials
+
+- **Production-Ready Agent Engineering** (Maven, Will Brown & Kyle Corbitt) — This course directly operationalizes the RL-harness lifecycle thesis: MCP tool design (harness) and GRPO optimization (RL) taught as complementary skills. See [[concepts/agents-mcp-rl-course]].
 - **[[react-pattern]]** — Reasoning-acting interleaving as trainable behavior
 - **[[agent-delegation]]** — Subagent patterns and their internalization potential
 - **[[concepts/context-management]]** — Compaction, memory, and state preservation challenges

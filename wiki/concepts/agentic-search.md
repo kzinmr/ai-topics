@@ -1157,6 +1157,16 @@ Turnbull's key insight: most organizations will need all three simultaneously. T
 - [[concepts/s3-first-architecture]] — Where skills files are stored
 - [[concepts/agent-harness]] — Agentic search is part of the harness layer
 
+## Related Course Materials
+
+- **Cheat at Search** (Maven, Doug Turnbull) — The definitive practitioner course on search with LLMs and agents. Lecture transcripts in wiki:
+  - [[transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Lesson 2: LLM Query Understanding]]
+  - [[transcripts/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents-lecture|Lesson 3: Steering Lost Agents]]
+  - [[transcripts/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture|Lesson 4: LLM as Judge]]
+  - [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture|Lesson 5: Long Running Search Agents]]
+  - [[transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture|Lesson 7: Coding Agents & Auto Research]]
+- **Production-Ready Agent Engineering** (Maven, Will Brown & Kyle Corbitt) — Companion course on RL for agents. See [[concepts/agents-mcp-rl-course]].
+
 ## Related Entities
 
 - [[entities/doug-turnbull-core-ideas]] — Practitioner perspective on agentic search

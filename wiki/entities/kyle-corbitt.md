@@ -43,6 +43,7 @@ See [[concepts/agents-mcp-rl-course]] for full course details.
 
 - [[entities/will-brown]] — Co-instructor, Research Lead at Prime Intellect
 - [[concepts/agents-mcp-rl-course]] — Their joint Maven course
+- [[entities/openpipe]] — Corbitt's company (RL post-training)
 - [[concepts/agentic-rl]] — Core topic of the course
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught
 - [[entities/prime-intellect]] — Partner organization providing GPU credits

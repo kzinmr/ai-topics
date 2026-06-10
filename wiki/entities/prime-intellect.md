@@ -126,3 +126,4 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 - [[florian-brand]] — evals research
 - [[elie-bakouch]] — LLM training
 - [[entities/grad|Fares Obeid (Grad)]] — Research Engineer
+- [[concepts/agents-mcp-rl-course]] — Maven course by Will Brown & Kyle Corbitt (verifiers/GRPO education)

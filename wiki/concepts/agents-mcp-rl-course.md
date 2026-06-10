@@ -125,7 +125,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 
 - [[entities/will-brown]] — Primary instructor
 - [[concepts/corbett-kyle-corbitt]] — Co-instructor
-- [[entities/prime-intellect]] — Will Brown's organization
+- [[entities/prime-intellect]] — Will Brown's organization (verifiers, PRIME-RL)
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
-- [[concepts/agentic-search]] — Related: agentic retrieval patterns
+- [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))

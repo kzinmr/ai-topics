@@ -7704,3 +7704,12 @@ Updated:
 - **CREATED**: `concepts/gpt/index.md` MOC (was concepts/gpt-models.md)
 - **NOTE**: entities/openai.md, entities/openai-codex.md, entities/openai-foundation.md remain as entities (org/product pages)
 - 2026-06-10 | reorg | concepts/claude/ | Moved 26 Claude model/platform/feature pages from concepts/, entities/ to concepts/claude/ hierarchy. Updated wikilinks across 80+ files. Created hub page at concepts/claude/index.md.
+
+## 2026-06-10 — Ecosystem Linking (RL for Agents)
+
+- **CREATED**: `entities/openpipe.md` — OpenPipe entity page (RL post-training company, acquired by CoreWeave with W&B)
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Ecosystem Context section (Prime Intellect ↔ verifiers, OpenPipe ↔ RL post-training, W&B ↔ experiment tracking, RL-harness lifecycle connection)
+- **UPDATED**: `concepts/agentic-search.md` — Added Related Course Materials section with Cheat at Search lecture transcripts and Agents MCP RL course link
+- **UPDATED**: `concepts/rl-harness-lifecycle.md` — Added Related Course Materials section linking to Agents MCP RL course
+- **UPDATED**: `entities/prime-intellect.md` — Added agents-mcp-rl-course link in Related Pages
+- **UPDATED**: `entities/kyle-corbitt.md` — Added openpipe entity link in Related
