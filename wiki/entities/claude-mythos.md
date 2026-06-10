@@ -2,7 +2,7 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-06-01
+updated: 2026-06-10
 tags:
   - model
   - agent-safety
@@ -10,7 +10,7 @@ tags:
   - security
 aliases:
 - Mythos
-sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md"]
+sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md"]
 ---
 
 # Claude Mythos
@@ -74,12 +74,27 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 
 > [!NOTE] Concern for agentic code: Marcus notes that agent-written code may itself be "weakly defended and vulnerable," compounding the risk when Mythos-level models are used to generate production code.
 
+## Claude Fable 5 — General Release (June 2026)
+
+On June 9, 2026, Anthropic released [[entities/claude-fable-5|Claude Fable 5]], a Mythos-class model "made safe for general use." The announcement: "Its capabilities exceed those of any model we've ever made generally available."
+
+### Capability Limitation Debate
+
+The Fable 5 release sparked debate about the transparency and scope of safety-driven capability restrictions:
+
+- **[[entities/elie-bakouch|Elie Bakouch]]** (Prime Intellect) criticized that Mythos-class models will be "bad ON PURPOSE on ai 'frontier llm research' tasks" and that the hidden nature of these restrictions is "crazy" (3,800+ likes, 1.2M impressions)
+- **Core tension**: The restrictions extend beyond security-sensitive tasks (vulnerability discovery) into research-oriented capabilities, creating an artificial ceiling for AI research
+- **Transparency gap**: Users cannot distinguish between "model can't do this" and "model is restricted from doing this" — the capability limitations are not surfaced in the user interface
+
+This debate highlights the fundamental challenge of deploying safety-restricted frontier models: how to balance capability access for legitimate research use cases against the risks of unrestricted access to Mythos-class capabilities.
+
 ## Sources
 -  (Ben's Bites, 2026-04-09)
 -  (scraped article)
 
 ## Related
 - [[entities/anthropic]]
+- [[entities/claude-fable-5]] — Mythos-class model released for general use (June 2026)
 - 
 - [[concepts/project-glasswing]]
 - [[concepts/ai-safety]]

@@ -2,7 +2,7 @@
 title: Elie Bakouch
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-06-07
+updated: 2026-06-10
 aliases: [eliebak, eliebakouch]
 status: active
 description: "ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
@@ -13,6 +13,7 @@ tags:
   - training
 sources:
   - raw/articles/2026-06-07_eliebakouch_marin.md
+  - raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md
 ---
 
 
@@ -48,6 +49,7 @@ His research philosophy emphasizes **data quality over quantity**, **architectur
 | 2026 | Engaged in synthetic pretraining research, commenting on Motif-2.6B tech report and training methodologies |
 | Jun 2026 | Published 47-tweet deep dive analysis of [[concepts/mai-thinking-1-tech-report|Microsoft MAI-Thinking-1 tech report]] — 1,500+ likes, 1,100+ bookmarks, highlighting zero-distillation design, scaling ladder transparency, and modified GRPO |
 | Jun 2026 | Endorsed [[concepts/marin|Marin]], Stanford's open-source foundation model training framework, praising its scientific approach and fully open development process |
+| Jun 2026 | Criticized Anthropic's [[entities/claude-fable-5|Claude Fable 5]] release — argued that Mythos-class models are deliberately weakened on "frontier LLM research" tasks, calling the lack of transparency "crazy" (3,800+ likes, 1.2M impressions) |
 
 ## Core Ideas
 
@@ -103,7 +105,25 @@ He has participated in the r/LocalLLaMA community, answering questions about Smo
 
 In June 2026, Bakouch publicly endorsed the [[concepts/marin|Marin]] framework from Stanford, highlighting its "scientific approach to training," willingness to take risks, and fully open development process — praising that "you can follow everything on GitHub."
 
+### AI Model Transparency and Research Access
+
+Bakouch has been vocal about the tension between AI safety restrictions and research utility. In June 2026, he criticized Anthropic's release of [[entities/claude-fable-5|Claude Fable 5]] (a Mythos-class model made "safe for general use"), arguing that:
+
+1. **Deliberate capability degradation**: Mythos-class models will be intentionally weakened on frontier AI research tasks — not just security-sensitive tasks, but research-oriented capabilities
+2. **Hidden restrictions**: The capability limitations are not visible to users, who may attribute poor performance to model limitations rather than intentional restrictions
+3. **Research ceiling**: For the AI research community, having frontier models deliberately underperform on research tasks creates an artificial ceiling on what researchers can accomplish
+
+> "mythos will be bad ON PURPOSE on ai 'frontier llm research' tasks, this is very very sad for the research community"
+>
+> "also the fact that this is un purpose not visible to the user is crazy"
+
+This critique reflects Bakouch's broader philosophy of **transparency in AI development** — from open-sourcing training data (SmolLM2/FineWeb) to advocating for visible, understandable model behavior rather than hidden capability restrictions.
+
 ## Key Quotes
+
+> "mythos will be bad ON PURPOSE on ai 'frontier llm research' tasks, this is very very sad for the research community"
+
+> "also the fact that this is un purpose not visible to the user is crazy"
 
 > "Motif 2.6B tech report is pretty insane, first time i see a model with differential attention and polynorm trained at scale!"
 
@@ -142,6 +162,8 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 - [[concepts/marin]] — Stanford open-source training framework he endorsed
 - [[concepts/synthetic-data]] — Training methodology he follows
 - [[concepts/mai-thinking-1-tech-report]] — Tech report he analyzed in depth
+- [[entities/claude-fable-5]] — Model he criticized for hidden capability restrictions
+- [[entities/claude-mythos]] — Mythos architecture underlying the capability debate
 
 ## Sources
 

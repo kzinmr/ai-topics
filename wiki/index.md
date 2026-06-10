@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2439 | Indexed entries: 1896 | Concepts: 1022 | Entities: 784
+> Last updated: 2026-06-10 | Total pages: 2440 | Indexed entries: 1897 | Concepts: 1022 | Entities: 785
 
-## Entities (784 pages)
+## Entities (785 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -42,7 +42,7 @@
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Founder of HumanLayer. Key voice in context engineering for coding agents. Creator of Frequent Intentional Compaction (FIC) workflow and 12-Factor Agents framework. Y Combinator speaker (August 2025).
 - [[entities/doug-turnbull]] — Doug Turnbull (softwaredoug) — Search and information retrieval expert. "Metadata: the 3rd kind of retrieval" framework, "Cheat at Search" methodology for LLM-powered query understanding.
 - [[entities/eleanor-berger]] — Eleanor Berger — AI researcher, author, and entrepreneur focused on AI safety, alignment, and responsible AI development.
-- [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Endorsed Stanford's Marin framework. Latent Space podcast guest.
+- [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Endorsed Stanford's Marin framework. Criticized Fable 5's hidden capability restrictions. Latent Space podcast guest.
 - [[entities/ethan-he]] — Ethan He — Lead of Grok Imagine at xAI. Previously lead of NVIDIA Cosmos World Model. Built Grok Imagine from zero to one in 3 months. Video agent architecture, generative UI vision.
 - [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
 - [[entities/dynomight-net]] — Dynomight — Data science & society blog
@@ -213,6 +213,7 @@
 - [[entities/chris-olah]] — Chris Olah (@ch402) — Anthropic co-founder, mechanistic interpretability pioneer. DeepDream, Circuits/Transformer Circuits research, TIME100 AI 2024. Spoke at Vatican for Magnifica Humanitas encyclical (May 2026).
 - [[entities/claude-code]] — Anthropic's AI coding agent. Operates across CLI, desktop app, VS Code/JetBrains extensions, Web, iOS, and Slack as a multi-surface agent. Developed by Boris Cherny and transferred from Anthropic to OpenAI in July 2025.
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
+- [[entities/claude-fable-5]] — Claude Fable 5 — Anthropic's Mythos-class model released for general use (June 2026). Safety-restricted capabilities. Design patterns by Lance Martin; capability limitation critique by Elie Bakouch.
 - [[entities/claude-mythos]] — Claude Mythos — Anthropic's next-gen model. Initially withheld (security). Mythos Preview (May 2026): general assistant positioned to substitute L4 engineers.
 - [[entities/claude-orbit]] — Claude Orbit — Anthropic's proactive AI assistant, leaked May 5, 2026 inside Claude Cowork. Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma without prompting. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/

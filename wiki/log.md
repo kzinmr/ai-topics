@@ -1,5 +1,18 @@
 ---
 
+## [2026-06-10] X Post Ingest — Elie Bakouch Fable 5 Mythos capability limitation critique
+
+**Action**: Ingested X post from @eliebakouch criticizing Anthropic's Claude Fable 5 release for hidden capability restrictions on frontier research tasks.
+
+- **NEW: [[raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md]]** — Regular tweet (not Note Tweet) with high engagement (3,879 likes, 914 bookmarks, 1.28M impressions). Critiques that Mythos-class models are deliberately weakened on "frontier LLM research" tasks and that restrictions are hidden from users.
+- **NEW: [[entities/claude-fable-5.md]]** — Created entity page for Claude Fable 5 (Mythos-class model released June 2026). Includes overview, performance benchmarks (Parameter Golf, Continual Learning), design patterns, and capability limitation controversy.
+- **UPDATED: [[entities/elie-bakouch.md]]** — Added Timeline entry (Jun 2026 Fable 5 critique), new "AI Model Transparency and Research Access" Core Ideas section, new Key Quotes, updated sources and related wikilinks.
+- **UPDATED: [[concepts/designing-loops-with-fable-5.md]]** — Added "Community Response" section with capability limitation critique context. Added new source and related wikilink.
+- **UPDATED: [[entities/claude-mythos.md]]** — Added "Claude Fable 5 — General Release" section with capability limitation debate. Updated sources and related wikilinks.
+- **UPDATED: [[index.md]]** — Added claude-fable-5 entity entry, updated elie-bakouch description.
+
+---
+
 ## [2026-06-10] OpenAI "Built to Benefit Everyone" Plan Ingestion
 
 **Action**: Ingested OpenAI strategic vision article (2026-06-08). Raw article saved, event page created, OpenAI entity page updated with new source.
