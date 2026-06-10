@@ -122,4 +122,4 @@ The database the UI reads from lives in the browser via IndexedDB. The server is
 - [[entities/atlassian]] — Jira is Linear's primary incumbent competitor
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence (May 2026)
 - [[concepts/code-review]] — Code review as a concept and its evolution in the AI agent era
-- [[concepts/gemini/managed-agents]]] — Competing managed agent infrastructure from Google
+- [[concepts/gemini/managed-agents]] — Competing managed agent infrastructure from Google

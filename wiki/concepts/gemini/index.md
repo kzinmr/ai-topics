@@ -30,10 +30,10 @@ sources:
 
 | Model | In $/1M | Out $/1M | Cache Read | Ctx | GA Date | Source |
 |-------|---------|----------|------------|-----|---------|--------|
-| **Gemini 3.5 Flash** | $1.50 | $9.00 | $0.15 | 1M | May 2026 | [[entities/gemini-3-5-flash]] |
+| **Gemini 3.5 Flash** | $1.50 | $9.00 | $0.15 | 1M | May 2026 | [[concepts/gemini/3-5-flash]] |
 | **Gemini 3.1 Pro** | $2.50 | $10.00 | $0.25 | 1M | Apr 2026 | |
 | **Gemini 3.1 Flash** | ~$0.30 | ~$2.50 | ~$0.03 | 1M | Apr 2026 | |
-| **Gemini 3.1 Flash-Lite** | ~$0.10 | ~$0.40 | ~$0.01 | 1M | May 2026 | [[concepts/gemini-3-1-flash-lite]] |
+| **Gemini 3.1 Flash-Lite** | ~$0.10 | ~$0.40 | ~$0.01 | 1M | May 2026 | [[concepts/gemini/3-1-flash-lite]] |
 
 > Cache: 90% discount on reads via Context Caching API. No cache write premium.
 

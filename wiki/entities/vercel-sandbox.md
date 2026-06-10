@@ -21,7 +21,7 @@ sources:
 
 # Vercel Sandbox (Claude Managed Agents)
 
-**Vercel Sandbox** is Vercel's self-hosted sandbox environment for [[concepts/claude/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026. It uses a Next.js-based control plane and Vercel Sandbox microVMs to provide a TypeScript-native execution layer for CMA tool calls, with a standout security model based on firewall-level credential brokering.
+**Vercel Sandbox** is Vercel's self-hosted sandbox environment for [[concepts/anthropic/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026. It uses a Next.js-based control plane and Vercel Sandbox microVMs to provide a TypeScript-native execution layer for CMA tool calls, with a standout security model based on firewall-level credential brokering.
 
 ## Architecture: Two-Plane Design
 
@@ -88,7 +88,7 @@ Vercel Sandbox runs on the same microVM infrastructure that has powered Vercel's
 
 ## Related Pages
 
-- [[concepts/claude/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
+- [[concepts/anthropic/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
 - [[comparisons/claude-managed-agents-sandbox-providers|CMA Sandbox Providers Comparison]] — Side-by-side comparison of all four providers
 - [[entities/anthropic|Anthropic]] — Platform partner
 - [[concepts/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns

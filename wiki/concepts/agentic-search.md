@@ -866,7 +866,7 @@ This talk is best read as a **live-recorded version** of the same thesis Turnbul
 
 ### Production Implementation: Claude's Dynamic Web Search Filtering (Anthropic)
 
-> **Related**: Anthropic's multi-agent research architecture ([[concepts/anthropic-multi-agent-research]]) extends this further with parallel subagents — see also their orchestrator-worker pattern and 8 prompt engineering principles for production agents.
+> **Related**: Anthropic's multi-agent research architecture ([[concepts/anthropic/multi-agent-research]]) extends this further with parallel subagents — see also their orchestrator-worker pattern and 8 prompt engineering principles for production agents.
 
 Anthropic's **Dynamic Filtering** (March 2026) for Claude Web Search is a production-grade embodiment of the externalized processing paradigm. Instead of loading raw HTML into the context window, Claude writes and executes code to pre-process web results *before* they enter the model's reasoning context.
 

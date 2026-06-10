@@ -15,7 +15,7 @@ type: comparison
 
 **Date:** April 10, 2026
 **Source:** Reddit discussion — "Top 7 AI Agent Orchestration Frameworks"
-**Related:** [[concepts/agentic-engineering]], [[concepts/anthropic-managed-agents]], [[concepts/cognitive-cost-of-agents]]
+**Related:** [[concepts/agentic-engineering]], [[concepts/anthropic/managed-agents]], [[concepts/cognitive-cost-of-agents]]
 
 ---
 
@@ -152,7 +152,7 @@ Agent orchestration frameworks are the **infrastructure layer** that enables [[c
 Key intersections:
 - **Execution-first verification** (from [[concepts/agentic-engineering]]) applies to orchestration — agents must validate each other's outputs
 - **Cognitive cost** increases with orchestration complexity — more agents means more coordination overhead
-- **Managed agents** ([[concepts/anthropic-managed-agents]]) may abstract away orchestration complexity for users
+- **Managed agents** ([[concepts/anthropic/managed-agents]]) may abstract away orchestration complexity for users
 
 ---
 
@@ -188,7 +188,7 @@ These amplify the concerns raised in [[concepts/cognitive-cost-of-agents]] — a
 
 - [[concepts/agentic-engineering]] — The practice framework that orchestration tools enable
 - [[concepts/cognitive-cost-of-agents]] — Orchestration adds coordination overhead to cognitive load
-- [[concepts/anthropic-managed-agents]] — Managed services may include orchestration capabilities
+- [[concepts/anthropic/managed-agents]] — Managed services may include orchestration capabilities
 -  — More powerful models improve individual agent capabilities, reducing need for orchestration in some cases
 -  — AI-generated reimplementations may themselves require orchestration
 

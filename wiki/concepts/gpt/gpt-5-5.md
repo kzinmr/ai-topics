@@ -83,7 +83,7 @@ GPT-5.5's agentic mode shows **1000x token consumption** compared to traditional
 
 - [[concepts/gpt/index]] — The full GPT model family series
 - [[entities/openai]] — OpenAI entity page
-- [[concepts/gpt/gpt-workspace-agents]] — Codex-powered shared agents for enterprise
+- [[concepts/openai/workspace-agents]] — Codex-powered shared agents for enterprise
 - [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2 announced alongside GPT-5.5
 - [[concepts/agentic-engineering]] — Developer patterns for autonomous agents
 - [[concepts/agent-economics]] — Token economics of agentic AI workflows

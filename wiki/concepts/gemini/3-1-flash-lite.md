@@ -36,5 +36,5 @@ Google's fastest and most cost-efficient Gemini 3 series model, reaching general
 ## Model Family Context
 - [[concepts/gemini-3-1-pro]] — Most advanced reasoning + multimodal
 - [[concepts/gemini-3-flash]] — Default Flash-tier speed/efficiency
-- [[concepts/gemini-3-2-flash]] — Next-gen Flash (leaked, unreleased)
+- [[concepts/gemini/3-2-flash]] — Next-gen Flash (leaked, unreleased)
 - [[entities/google]] — Google company page

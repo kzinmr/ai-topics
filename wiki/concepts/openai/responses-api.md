@@ -164,7 +164,7 @@ OpenAI expects Responses to become the default way developers build with its mod
 
 ## Related Pages
 
-- [[concepts/gpt/gpt-agents-sdk]] — SDK framework that uses the Responses API for agent orchestration
+- [[concepts/openai/agents-sdk]] — SDK framework that uses the Responses API for agent orchestration
 - [[entities/openai]] — Developer and maintainer
 - [[entities/codex]] — Coding agent built on Responses API infrastructure
 - [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — General agent loop patterns that Responses implements

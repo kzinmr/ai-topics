@@ -41,7 +41,7 @@ Early 2025 saw reasoning models as a distinct family — **o1**, **o3**, **o4-mi
 By end of 2025, multimodal meant building end-to-end products across modalities — often in a single workflow:
 
 - **Audio**: Next-gen audio models and the **Realtime API** going GA enabled production-grade voice pipelines with low-latency bidirectional streaming.
-- **Images**: **GPT Image 1**, **GPT Image 1 mini**, and **GPT Image 1.5** made native image generation a practical default. Image generation as a tool in the [[concepts/gpt/gpt-responses-api]] enabled creation within multi-turn conversations.
+- **Images**: **GPT Image 1**, **GPT Image 1 mini**, and **GPT Image 1.5** made native image generation a practical default. Image generation as a tool in the [[concepts/openai/responses-api]] enabled creation within multi-turn conversations.
 - **Video**: **Sora 2 / Sora 2 Pro** and the new **Video API** (`/v1/videos`) made video a first-class modality.
 - **PDFs**: PDF inputs and PDF-by-URL enabled document-heavy workflows directly in the API.
 
@@ -49,8 +49,8 @@ By end of 2025, multimodal meant building end-to-end products across modalities 
 
 One of the most important platform changes was the move toward **agent-native APIs**:
 
-- The [[concepts/gpt/gpt-responses-api]] (`/v1/responses`) launched as the successor to Chat Completions and the Assistants API, supporting multiple inputs/outputs, reasoning controls, and better tool calling.
-- The open-source **[[concepts/gpt/gpt-agents-sdk]]** (Python and TypeScript) and **AgentKit** provided higher-level building blocks for orchestrating agents.
+- The [[concepts/openai/responses-api]] (`/v1/responses`) launched as the successor to Chat Completions and the Assistants API, supporting multiple inputs/outputs, reasoning controls, and better tool calling.
+- The open-source **[[concepts/openai/agents-sdk]]** (Python and TypeScript) and **AgentKit** provided higher-level building blocks for orchestrating agents.
 - **Conversation state** and the **Conversations API** made durable threads and replayable state easier to manage.
 - **Connectors** and **MCP servers** enabled external context and trusted tool surfaces.
 
@@ -126,5 +126,5 @@ The foundation set in 2025 directly enabled the more aggressive platform expansi
 
 - [[entities/openai]] — The company behind the developer platform
 - [[entities/codex]] — AI coding agent that matured in 2025
-- [[concepts/gpt/gpt-responses-api]] — Agent-native API launched in 2025
-- [[concepts/gpt/gpt-agents-sdk]] — Open-source agent framework released in 2025
+- [[concepts/openai/responses-api]] — Agent-native API launched in 2025
+- [[concepts/openai/agents-sdk]] — Open-source agent framework released in 2025

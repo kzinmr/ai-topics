@@ -24,7 +24,7 @@ Built on the Nemotron-Nano-V3 base model and post-trained using **Cascade RL** a
 - **30B total, 3B active per token** — 10× compute reduction vs dense 30B model
 - 24GB VRAM, 256K context window
 - Available via Ollama: `ollama run nemotron-cascade-2`
-- Compatible with [[entities/claude-code]], [[concepts/gpt/gpt-codex-superapp|Codex]], OpenCode, [[entities/openclaw]]
+- Compatible with [[entities/claude-code]], [[concepts/openai/codex-superapp|Codex]], OpenCode, [[entities/openclaw]]
 
 ## Post-Training Pipeline
 

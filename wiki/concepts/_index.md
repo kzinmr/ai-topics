@@ -269,11 +269,11 @@ AI and LLM concept pages organized by topic.
 
 ## Anthropic-Managed-Agents
 
-- [[concepts/anthropic-managed-agents]] — Anthropic Managed Agents is a platform that accelerates AI agent development from prototype to production by 10x. It delegates infrastructure setup (sandboxes, authentication, permissions, checkpoints, error recovery) to Claude, allowing developers to focus on task definition, tools, and guardrail design.
+- [[concepts/anthropic/managed-agents]] — Anthropic Managed Agents is a platform that accelerates AI agent development from prototype to production by 10x. It delegates infrastructure setup (sandboxes, authentication, permissions, checkpoints, error recovery) to Claude, allowing developers to focus on task definition, tools, and guardrail design.
 
 ## Anthropic-Openclaw-Conflict
 
-- [[concepts/anthropic-openclaw-conflict]] — In April 2026, Anthropic blocked third-party AI agent frameworks (including OpenClaw) from accessing Claude models through flat-rate subscription plans (Pro/Max). This decision triggered a significant controversy.
+- [[concepts/anthropic/openclaw-conflict]] — In April 2026, Anthropic blocked third-party AI agent frameworks (including OpenClaw) from accessing Claude models through flat-rate subscription plans (Pro/Max). This decision triggered a significant controversy.
 
 ## Attention-Mechanism-Variants
 
@@ -333,7 +333,7 @@ AI and LLM concept pages organized by topic.
 
 ## Claude-Agent-Sdk-Sre-Patterns
 
-- [[concepts/claude/agent-sdk-sre-patterns]] — Anthropic cookbook: [The Site Reliability Agent](https://platform.claude.com/cookbook/claude-agent-sdk-03-the-site-reliability-agent)
+- [[concepts/anthropic/agent-sdk-sre-patterns]] — Anthropic cookbook: [The Site Reliability Agent](https://platform.claude.com/cookbook/claude-agent-sdk-03-the-site-reliability-agent)
 
 ## Claude-Code-Best-Practices
 
@@ -473,7 +473,7 @@ AI and LLM concept pages organized by topic.
 
 ## Elixir-Beam-Agent-Orchestration
 
-- [[concepts/elixir-beam-agent-orchestration]] — Patterns for leveraging Elixir/BEAM (Erlang VM) for AI agent orchestration. The approach adopted by [[concepts/gpt/gpt-symphony]]'s Ryan Lopopolo.
+- [[concepts/elixir-beam-agent-orchestration]] — Patterns for leveraging Elixir/BEAM (Erlang VM) for AI agent orchestration. The approach adopted by [[concepts/openai/symphony]]'s Ryan Lopopolo.
 
 ## Evaluation-Flywheel
 

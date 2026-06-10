@@ -318,8 +318,8 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 > — **Rachael Burns**, Staff Engineer & AI Tech Lead, Oscar Health
 
 ## Related Concepts
-- [[concepts/gpt/gpt-agents-sdk]] — OpenAI's agent development framework
-- [[concepts/gpt/gpt-workspace-agents]] — Codex-powered enterprise shared agents
+- [[concepts/openai/agents-sdk]] — OpenAI's agent development framework
+- [[concepts/openai/workspace-agents]] — Codex-powered enterprise shared agents
 - [[concepts/gpt/gpt-5-5]] — First fully retrained base model since GPT-4.5
 - [[concepts/harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
 - [[concepts/sandbox]] — AI agent sandbox isolation technologies
@@ -351,7 +351,7 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 
 ### TanStack npm Supply Chain Attack — Mini Shai-Hulud (May 2026)
 
-OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack targeting the npm ecosystem (May 2026). Hackers published **84 malicious versions** of TanStack packages during a **six-minute window**; a researcher detected the attack within 20 minutes. The malware was designed to steal credentials from infected computers and **self-propagate** to other systems. Two employee corporate devices downloaded a malicious TanStack npm package, resulting in unauthorized access to internal source code repositories and exfiltration of limited credential material including code-signing certificates for iOS, macOS, Windows, and Android products. No customer data or production systems were compromised. All certificates were rotated; macOS users must update apps by June 12, 2026. See [[concepts/gpt/gpt-tanstack-supply-chain-2026]] for full details.
+OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack targeting the npm ecosystem (May 2026). Hackers published **84 malicious versions** of TanStack packages during a **six-minute window**; a researcher detected the attack within 20 minutes. The malware was designed to steal credentials from infected computers and **self-propagate** to other systems. Two employee corporate devices downloaded a malicious TanStack npm package, resulting in unauthorized access to internal source code repositories and exfiltration of limited credential material including code-signing certificates for iOS, macOS, Windows, and Android products. No customer data or production systems were compromised. All certificates were rotated; macOS users must update apps by June 12, 2026. See [[concepts/openai/tanstack-supply-chain-2026]] for full details.
 
 ## OpenAI Foundation
 

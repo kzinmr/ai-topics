@@ -51,7 +51,7 @@
 **Action**: Created concept page for the Anthropic–DoD dispute (ongoing legal confrontation over military use of Claude). Saved raw articles from Wikipedia and Semafor. Updated Anthropic entity page Pentagon Blacklisting section with legal proceedings and June 2026 status. Updated index.md.
 
 **Pages created**:
-- `concepts/anthropic-dod-dispute.md`
+- `concepts/anthropic/dod-dispute.md`
 - `raw/articles/2026-06-10_anthropic-dod-dispute-wikipedia.md`
 - `raw/articles/2026-02-17_semafor-anthropic-pentagon-palantir-rift.md`
 
@@ -2750,7 +2750,7 @@ The article's framing offers transferable patterns for wiki management:
 - concepts/skill-architecture-patterns.md — Japanese text translated to `Concept Cluster Map (Parent Page)`
 - concepts/agentic-ai-skills.md — Japanese text translated to `Concept Cluster Map (Parent Page)`
 - concepts/thin-bi.md — `stable Co., Ltd.` (previously in Japanese)
-- concepts/anthropics-memory-tool-cognition-strategic-follow.md — `Strategic Follow` (previously in Japanese, file renamed from JP filename)
+- concepts/anthropic/memory-tool-cognition-strategic-follow.md — `Strategic Follow` (previously in Japanese, file renamed from JP filename)
 - concepts/memory-scaling.md — `Memory Scaling` (previously in Japanese)
 
 ### Files Deleted
@@ -3333,7 +3333,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[concepts/evals-for-ai-agents]] — Agent evaluation guide (984 JP chars removed)
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design (935 JP chars removed)
 - [[comparisons/agent-harnesses]] — 9-harness comparison (1024 JP chars removed)
-- [[concepts/gpt/gpt-symphony]] — OpenAI Symphony page (993 JP chars removed)
+- [[concepts/openai/symphony]] — OpenAI Symphony page (993 JP chars removed)
 - [[concepts/sid-1]] — SID-1 agentic retrieval model (1014 JP chars removed)
 - [[concepts/mcp]] — Model Context Protocol (1000 JP chars removed)
 
@@ -3506,7 +3506,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[comparisons/open-harness-vs-agent-framework]] — JP→EN, 2891 JP chars removed
 - [[entities/openai-codex]] — JP→EN, 2883 JP chars removed
 - [[concepts/back-of-house-multi-agent-patterns]] — JP→EN, 2878 JP chars removed
-- [[concepts/anthropic-multi-agent-research]] — JP→EN, 2841 JP chars removed
+- [[concepts/anthropic/multi-agent-research]] — JP→EN, 2841 JP chars removed
 - [[concepts/societal-shadow]] — JP→EN, 2839 JP chars removed
 - [[concepts/programmatic-tool-calling]] — JP→EN, 2833 JP chars removed
 
@@ -4437,7 +4437,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 
 ### Pages Added to Index
 - **Entities**: [[entities/aaron-levie]], [[entities/box-com]], [[entities/marc-andreessen]]
-- **Concepts**: [[concepts/swe-bench]], [[concepts/mismeasure-of-open-source]], [[concepts/gpt/gpt-symphony]], [[concepts/fsdp-qlora]], [[concepts/personal-superintelligence]], [[concepts/gnu-ai-reimplementations]], [[concepts/model-context-protocol-mcp]], [[concepts/gpt/index]], [[concepts/synthetic-data]], [[concepts/speech-audio-asr-tts-voice]], [[concepts/stanford-cs336-language-modeling-from-scratch]], [[concepts/subagents]], [[concepts/gemini]], [[concepts/coala]], [[concepts/cognitive-cost-of-agents]], [[concepts/reasoning-compression]], [[concepts/memory-systems-design-patterns]]
+- **Concepts**: [[concepts/swe-bench]], [[concepts/mismeasure-of-open-source]], [[concepts/openai/symphony]], [[concepts/fsdp-qlora]], [[concepts/personal-superintelligence]], [[concepts/gnu-ai-reimplementations]], [[concepts/model-context-protocol-mcp]], [[concepts/gpt/index]], [[concepts/synthetic-data]], [[concepts/speech-audio-asr-tts-voice]], [[concepts/stanford-cs336-language-modeling-from-scratch]], [[concepts/subagents]], [[concepts/gemini]], [[concepts/coala]], [[concepts/cognitive-cost-of-agents]], [[concepts/reasoning-compression]], [[concepts/memory-systems-design-patterns]]
 - All pages verified: >800 bytes, non-TODO, real content
 - Index structure: clean (validate_index.py ✅)
 
@@ -4848,7 +4848,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - Fundamental LLM-era insight: "information need and information satisfaction are merely gradients in the same token space"
 
 ---
-## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md — Agent-Context Duality (homologous to IR query-document duality)
+## [2026-05-20] enrich | concepts/anthropic/multi-agent-research.md — Agent-Context Duality (homologous to IR query-document duality)
 - User insight: the agent-context relationship has a structure similar to IR's query-document duality
 - Mapping table: sub-agent task(objective)↔query, search result(context)↔document, interleaved thinking↔relevance feedback
 - Reinterpreted "search is compression" through duality: objective→search→thinking→objective update = query→document→relevance FB→query expansion, same loop
@@ -4868,14 +4868,14 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - Sources: raw/articles/2026-05-15_shann_hermes-agent-operator.md
 
 ---
-## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md + concepts/rlm-recursive-language-models.md — Multi-Agent × RLM Structural Similarity Patterns
+## [2026-05-20] enrich | concepts/anthropic/multi-agent-research.md + concepts/rlm-recursive-language-models.md — Multi-Agent × RLM Structural Similarity Patterns
 - User insight: Multi-Agent's horizontal task split (MapReduce) and RLM's input depth split (recursion) are the same divide-and-conquer idea
 - Added "Structural Similarity Patterns" section to anthropic-multi-agent-research.md: 7-dimension comparison table (split target, split direction, pattern, constraint breakthrough, scaling, aggregation method, essence)
 - Added cross-reference to Related Concepts in rlm-recursive-language-models.md
 - Both are different manifestations of the same fundamental pattern: "overcoming single context window constraints through divide and conquer"
 
 ---
-## [2026-05-20] create | concepts/anthropic-multi-agent-research.md — Anthropic Claude Research Multi-Agent System
+## [2026-05-20] create | concepts/anthropic/multi-agent-research.md — Anthropic Claude Research Multi-Agent System
 - Fully ingested Anthropic Engineering Blog (2025-06-13) 'How We Built Our Multi-Agent Research System' and Simon Willison's annotated article (2025-06-14)
 - New concept page: Orchestrator-Worker pattern, Memory mechanism, CitationAgent, parallelization strategy, 8 Prompt Engineering principles, Tool-Testing Agent (40% time reduction), token economics (15× vs chat)
 - Quantitative findings: 90.2% outperformance over single Opus 4, token usage explains 80% of performance variance
@@ -4949,7 +4949,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 ### Concept Pages Created
 - [[concepts/cursor-composer-2-5]] — Agentic coding model built on Kimi K2.5. Targeted RL, 25× synthetic data, reward hacking, Sharded Muon optimizer
 - [[concepts/nvidia-sana-wm]] — 2.6B open-source world model (Apache 2.0). Hybrid GDN+softmax, dual-branch camera. 36× throughput vs LingBot-World
-- [[concepts/gpt/gpt-realtime-2]] — Three realtime voice models: reasoning voice, live translation (70+→13 languages), streaming Whisper
+- [[concepts/openai/realtime-2]] — Three realtime voice models: reasoning voice, live translation (70+→13 languages), streaming Whisper
 
 ### index.md
 - Updated Entities section: gemini entry now reflects I/O 2026 announcements
@@ -5504,7 +5504,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - [[entities/perceptron-ai]] — Physical AI research lab, Perceptron Mk1 model
 - [[concepts/perceptron-mk1]] — Video understanding + embodied reasoning model
 - [[entities/sap-business-ai-platform]] — SAP's unified enterprise AI platform
-- [[concepts/gpt/gpt-aws-bedrock-partnership]] — OpenAI models on Bedrock, Bedrock Managed Agents
+- [[concepts/openai/aws-bedrock-partnership]] — OpenAI models on Bedrock, Bedrock Managed Agents
 - [[concepts/aws-agent-toolkit]] — 40+ agent skills, managed MCP server for AWS
 - [[concepts/google-ai-pointer]] — DeepMind's AI-enabled pointer (Magic Pointer)
 
@@ -6702,11 +6702,11 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Pages Created
 
-- **[[entities/rlancemartin]]** — Lance Martin (@rlancemartin) entity page. DevRel/DX engineer at Anthropic. Covers his role maintaining the claude-api skill, authoring self-hosted sandbox cookbooks, and evangelizing the Claude Managed Agents "brain/hands" architecture. Sections: Overview, Core Ideas (decouple brain from hands, self-hosted sandboxes, skills as onboarding surface, context engineering), Key Work (claude-api skill, self-hosted sandbox cookbooks, sandbox partner launch comparison table), X Activity Themes, Related People/Entities. 8,033 bytes. Cross-referenced with [[entities/lance-martin]] and [[concepts/claude/managed-agents]].
+- **[[entities/rlancemartin]]** — Lance Martin (@rlancemartin) entity page. DevRel/DX engineer at Anthropic. Covers his role maintaining the claude-api skill, authoring self-hosted sandbox cookbooks, and evangelizing the Claude Managed Agents "brain/hands" architecture. Sections: Overview, Core Ideas (decouple brain from hands, self-hosted sandboxes, skills as onboarding surface, context engineering), Key Work (claude-api skill, self-hosted sandbox cookbooks, sandbox partner launch comparison table), X Activity Themes, Related People/Entities. 8,033 bytes. Cross-referenced with [[entities/lance-martin]] and [[concepts/anthropic/managed-agents]].
 
 - **[[entities/trq212]]** — Thariq Shihipar (@trq212) entity page. MTS at Anthropic on Claude Code. Focused on his HTML-first philosophy from the May 20, 2026 blog post "Using Claude Code: The unreasonable effectiveness of HTML." Sections: Overview, Core Ideas (5 reasons: information density, visual clarity, sharing, interactivity, data ingestion; output surface as design problem; disposable micro-apps), Key Work (blog post, companion site, use cases table), X Activity Themes. 7,859 bytes. Cross-referenced with [[entities/thariq-shihipar]].
 
-- **[[concepts/claude/managed-agents]]** — Claude Managed Agents concept page. Anthropic's REST API-based platform for cloud-hosted autonomous agents. Architecture: brain/hands separation, session-based durable context, tool dispatch split. Includes sandbox provider comparison table (Cloudflare/Modal/Vercel/Daytona — 12 dimensions), self-hosted environment model, orchestration modes, credential security spectrum, tools and capabilities, getting started guide. 16,052 bytes. Cross-referenced with [[comparisons/claude-managed-agents-sandbox-providers]].
+- **[[concepts/anthropic/managed-agents]]** — Claude Managed Agents concept page. Anthropic's REST API-based platform for cloud-hosted autonomous agents. Architecture: brain/hands separation, session-based durable context, tool dispatch split. Includes sandbox provider comparison table (Cloudflare/Modal/Vercel/Daytona — 12 dimensions), self-hosted environment model, orchestration modes, credential security spectrum, tools and capabilities, getting started guide. 16,052 bytes. Cross-referenced with [[comparisons/claude-managed-agents-sandbox-providers]].
 
 ### Index Updates
 
@@ -7713,3 +7713,18 @@ Updated:
 - **UPDATED**: `concepts/rl-harness-lifecycle.md` — Added Related Course Materials section linking to Agents MCP RL course
 - **UPDATED**: `entities/prime-intellect.md` — Added agents-mcp-rl-course link in Related Pages
 - **UPDATED**: `entities/kyle-corbitt.md` — Added openpipe entity link in Related
+- 2026-06-10 | restructured | concepts/gemini/ | Moved 8 scattered gemini pages into concepts/gemini/ hierarchy. concepts/gemini.md→index.md, concepts/gemini-3-1-flash-lite.md→3-1-flash-lite.md, concepts/gemini-3-2-flash.md→3-2-flash.md, concepts/gemini-managed-agents.md→managed-agents.md, concepts/gemini-spark.md→spark.md, entities/gemini-3-5-flash.md→3-5-flash.md, entities/gemini-cli.md→cli.md, entities/gemini-enterprise-agent-platform.md→enterprise-agent-platform.md. Merged entities/gemini.md content (Image Gen, Omni, Daily Brief, Alderson critique, Benchmaxxing, Competition) into index.md. Updated 77+ backlinks across wiki. Removed entities/gemini.md.
+
+## 2026-06-10 (Platform Split: gpt/ → openai/, claude/ → anthropic/)
+- **SPLIT**: `concepts/gpt/` プラットフォーム系14ページ → `concepts/openai/` に分離
+  - API: responses-api, realtime-api, realtime-2, realtime-voice-models, whisper-asr
+  - SDK: agents-sdk, symphony, workspace-agents
+  - Codex: codex-superapp, codex-safety
+  - Business: aws-bedrock-partnership, astral-acquisition
+  - Governance: frontier-governance-framework, tanstack-supply-chain-2026
+- **SPLIT**: `concepts/claude/` プラットフォーム系4ページ → `concepts/anthropic/` に分離
+  - managed-agents, agent-sdk-sre-patterns, orbit, transparency-hub
+- **MOVED**: 既存 `anthropic-*` 概念ページ7件 → `concepts/anthropic/` に統合
+- **CREATED**: `concepts/openai/index.md` (Platform MOC), `concepts/anthropic/index.md` (Platform MOC)
+- **UPDATED**: 81ファイルのwikilink更新
+- **DESIGN**: gpt/ = モデル+ChatGPT製品, openai/ = プラットフォーム/API/SDK. claude/ = モデル+Claude製品, anthropic/ = プラットフォーム/ビジネス

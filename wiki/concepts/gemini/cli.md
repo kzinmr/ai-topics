@@ -46,7 +46,7 @@ The transition was widely labeled a "bait and switch": open-source release to at
 ## Related Pages
 
 - [[entities/google-antigravity]] — Antigravity platform (replacement)
-- [[entities/gemini]] — Gemini model family
+- [[concepts/gemini/index]] — Gemini model family
 - [[concepts/open-source]] — open-source dynamics
 - [[entities/claude-code]] — Claude Code (alternative)
 - [[concepts/coding-agents]] — coding agent tools

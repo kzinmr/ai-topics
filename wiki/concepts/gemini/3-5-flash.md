@@ -30,7 +30,7 @@ Google DeepMind's frontier model combining intelligence with action. Announced M
 
 ## Overview
 
-Gemini 3.5 Flash delivers **frontier-level intelligence at Flash-series speed** — 4× faster output tokens per second than other frontier models, while outperforming [[entities/gemini-3-1-flash-lite|Gemini 3.1 Pro]] on all major agentic and coding benchmarks. It lands in the top-right quadrant of the Artificial Analysis Index, eliminating the quality-latency tradeoff.
+Gemini 3.5 Flash delivers **frontier-level intelligence at Flash-series speed** — 4× faster output tokens per second than other frontier models, while outperforming [[concepts/gemini/index]]-3-1-flash-lite|Gemini 3.1 Pro]] on all major agentic and coding benchmarks. It lands in the top-right quadrant of the Artificial Analysis Index, eliminating the quality-latency tradeoff.
 
 ## Key Benchmarks
 
@@ -44,7 +44,7 @@ Gemini 3.5 Flash delivers **frontier-level intelligence at Flash-series speed** 
 
 ## Antigravity Harness
 
-The updated **[[entities/google-antigravity|Antigravity harness]]** powering Gemini 3.5 Flash enables **collaborative subagents** for enterprise-scale multi-step workflows under supervision. Antigravity is Google's agent-first development platform with desktop (Antigravity 2.0), CLI, and SDK surfaces — all sharing the same harness powering [[concepts/gemini-spark|Gemini Spark]] and AI Mode in Search.
+The updated **[[entities/google-antigravity|Antigravity harness]]** powering Gemini 3.5 Flash enables **collaborative subagents** for enterprise-scale multi-step workflows under supervision. Antigravity is Google's agent-first development platform with desktop (Antigravity 2.0), CLI, and SDK surfaces — all sharing the same harness powering [[concepts/gemini/spark|Gemini Spark]] and AI Mode in Search.
 
 ### Managed Agents in Gemini API
 
@@ -70,7 +70,7 @@ Demo scenarios include:
 
 ## Gemini Spark
 
-**[[concepts/gemini-spark|Gemini Spark]]** is a 24/7 personal AI agent running on Gemini 3.5 Flash, powered by the Antigravity harness. Cloud-based — continues working even when the user closes their laptop. Deeply integrated with Workspace (Gmail, Docs, Slides). Supports:
+**[[concepts/gemini/spark|Gemini Spark]]** is a 24/7 personal AI agent running on Gemini 3.5 Flash, powered by the Antigravity harness. Cloud-based — continues working even when the user closes their laptop. Deeply integrated with Workspace (Gmail, Docs, Slides). Supports:
 
 - **Recurring tasks**: "Flag hidden subscription fees in monthly credit card statements"
 - **Teach new skills**: Custom workflows like school update digesting
@@ -108,7 +108,7 @@ Approximately 4× faster output than competing frontier models at competitive pr
 ## Availability
 
 - Google Antigravity, Gemini API, Google AI Studio, Android Studio
-- [[entities/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]] and Gemini Enterprise
+- [[concepts/gemini/enterprise-agent-platform|Gemini Enterprise Agent Platform]] and Gemini Enterprise
 - Gemini app and AI Mode in Search (billions of users)
 - Now **Generally Available** (GA) as of May 2026
 - Coming: Gemini 3.5 Pro (internal use already, public June 2026)
@@ -128,9 +128,9 @@ This pattern echoes broader concerns about benchmark specialization in the model
 
 ## Related
 
-- [[entities/google-gemini|Google Gemini]] — broader Gemini model family
-- [[entities/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]]
-- [[entities/gemini-3-1-flash-lite|Gemini 3.1 Flash-Lite]]
+- [[concepts/gemini|Google Gemini]] — broader Gemini model family
+- [[concepts/gemini/enterprise-agent-platform|Gemini Enterprise Agent Platform]]
+- [[concepts/gemini/index]]-3-1-flash-lite|Gemini 3.1 Flash-Lite]]
 - [[concepts/coding-agents|Coding Agents]]
 - [[concepts/ai-agents|AI Agents]]
 - [[concepts/agentic-engineering|Agentic Engineering]]

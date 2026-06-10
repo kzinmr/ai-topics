@@ -71,13 +71,13 @@ Operates across cloud, desktop, and web, connecting to:
 
 ## Strategic Positioning
 
-Microsoft Scout contrasts with [[concepts/google-ai-gemini-spark|Gemini Spark]] (Google's always-on agent) — Scout emphasizes enterprise identity governance (Entra ID) and deep M365 integration, while adopting the open-source OpenClaw framework rather than building a proprietary runtime.
+Microsoft Scout contrasts with [[concepts/gemini/spark|Gemini Spark]] (Google's always-on agent) — Scout emphasizes enterprise identity governance (Entra ID) and deep M365 integration, while adopting the open-source OpenClaw framework rather than building a proprietary runtime.
 
 ## Related
 
 - [[entities/microsoft]] — Parent company
 - [[concepts/openclaw-agent]] — Open-source agent runtime foundation
 - [[concepts/microsoft-agent-365]] — M365 Copilot agent ecosystem
-- [[concepts/google-ai-gemini-spark|Gemini Spark]] — Competitive always-on agent from Google
+- [[concepts/gemini/spark|Gemini Spark]] — Competitive always-on agent from Google
 - [[concepts/microsoft-mai-models]] — Microsoft's AI model family
 - [[concepts/agentic-engineering]] — Developer-agent workflow patterns

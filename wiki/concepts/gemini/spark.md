@@ -19,7 +19,7 @@ sources: [https://blog.google/innovation-and-ai/products/gemini-app/next-evoluti
 
 # Gemini Spark
 
-Google's **24/7 personal AI agent** announced at I/O 2026 (May 19, 2026). Gemini Spark represents a fundamental shift from AI as a responsive assistant to AI as a **proactive, continuously running digital helper** that takes action on the user's behalf. It runs on [[entities/gemini-3-5-flash|Gemini 3.5 Flash]] and is powered by the [[entities/google-antigravity|Antigravity]] harness.
+Google's **24/7 personal AI agent** announced at I/O 2026 (May 19, 2026). Gemini Spark represents a fundamental shift from AI as a responsive assistant to AI as a **proactive, continuously running digital helper** that takes action on the user's behalf. It runs on [[concepts/gemini/3-5-flash|Gemini 3.5 Flash]] and is powered by the [[entities/google-antigravity|Antigravity]] harness.
 
 ## Overview
 
@@ -44,7 +44,7 @@ End-to-end task execution spanning multiple apps:
 
 ## Technical Foundation
 
-- **Model**: [[entities/gemini-3-5-flash|Gemini 3.5 Flash]]
+- **Model**: [[concepts/gemini/3-5-flash|Gemini 3.5 Flash]]
 - **Harness**: [[entities/google-antigravity|Antigravity]] — Google's agent-first development platform
 - **Architecture**: Cloud-based agent, always-on
 - **Integration**: Deep Workspace integration (Gmail, Docs, Slides, Calendar)
@@ -78,8 +78,8 @@ Gemini Spark is among the first mainstream consumer products to deliver on the *
 ## Related
 
 - [[entities/google-antigravity|Google Antigravity]] — the agent harness powering Spark
-- [[entities/gemini-3-5-flash|Gemini 3.5 Flash]] — the model foundation
-- [[entities/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]]
+- [[concepts/gemini/3-5-flash|Gemini 3.5 Flash]] — the model foundation
+- [[concepts/gemini/enterprise-agent-platform|Gemini Enterprise Agent Platform]]
 - [[concepts/ambient-agents|Ambient Agents]]
 - [[concepts/ai-agents|AI Agents]]
 - [[concepts/personal-ai|Personal AI]]

@@ -12,7 +12,7 @@ tags:
   - google
 aliases: ["AI Digital NATO", "Frontier Model Forum distillation alliance", "adversarial distillation", "US labs cooperation against China AI"]
 related:
-  - concepts/anthropic-openclaw-conflict
+  - concepts/anthropic/openclaw-conflict
   - concepts/open-model-consortium
   - concepts/meta-muse-spark
   - concepts/claude-mythos-preview
@@ -124,7 +124,7 @@ If Chinese competitors successfully replicate GPT-4 or Claude-class capability a
 
 ## Related
 
-- [[concepts/anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
+- [[concepts/anthropic/openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[concepts/open-model-consortium]] — Contrast: open model coalition vs. closed model alliance
 - [[concepts/meta-muse-spark]] — Meta's strategic shift to closed-source
 - [[concepts/claude/mythos-preview]] — Anthropic's cautious release approach

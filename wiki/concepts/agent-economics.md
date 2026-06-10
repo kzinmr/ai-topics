@@ -70,7 +70,7 @@ The economic value of agents comes from:
 - [[concepts/agent-team-swarm]]: Multi-agent systems amplify economic impact through parallelization
 - [[concepts/harness-engineering]]: Efficient agent hosting reduces infrastructure costs
 - [[physical-ai]]: Physical AI systems face additional economic constraints (hardware costs, safety certification)
-- [[concepts/gpt/gpt-symphony]]: Symphony's pipeline approach optimizes for throughput vs. per-task cost
+- [[concepts/openai/symphony]]: Symphony's pipeline approach optimizes for throughput vs. per-task cost
 
 ## Open Questions
 

@@ -55,6 +55,20 @@ add it here first, then use it. This prevents tag sprawl.
 - **Split a page** when it exceeds ~200 lines — break into sub-topics with cross-links
 - **Archive a page** when its content is fully superseded — move to `_archive/`, remove from index
 
+## Naming Policy (Page Filenames)
+Wiki filenames (slugs) must be concise, English-only, and descriptive. Enforced by pre-commit hook and `wiki_health.py`.
+
+- **English only**: No CJK characters in filenames (content can be any language)
+- **No date-prefix slugs**: `2026-04-23-something` is a raw article title leak, not a concept name
+- **Max 10 words** (ERROR at ≥11): If your slug has 11+ hyphen-separated words, it's a tag pile — pick a focused concept name
+- **Warn at ≥8 words**: Consider shortening. Descriptive names like `a-philosophy-of-software-design-vs-clean-code` are acceptable; tag piles like `claude-code-prompt-engineering-context-management-caching-agent-architecture` are not
+- **Good names**: `claude-code`, `agentic-engineering`, `back-of-house-multi-agent-patterns`, `mcp`
+- **Bad names**: `background-agent-orchestration-linear-github-workflow-automation-graph-based` (tag pile), `ai-memory-systems-chatgpt-vs-coding-agent-design-philosophy-comparison` (was CJK, now anglicized)
+
+Checked automatically:
+- **Pre-commit hook**: Blocks NEW files with CJK, date-prefix, or ≥11 hyphens
+- **wiki_health.py**: Reports all violations (ERROR/WARN) in weekly health digest
+
 ## Entity Pages
 One page per notable entity. Include:
 - Overview / what it is

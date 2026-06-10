@@ -21,7 +21,7 @@ related:
   - "[[entities/openai]]"
   - "[[concepts/agent-skills]]"
   - "[[concepts/building-effective-agents]]"
-  - "[[concepts/gpt/gpt-codex-superapp]]"
+  - "[[concepts/openai/codex-superapp]]"
 ---
 
 # Codex for Knowledge Work
@@ -167,4 +167,4 @@ OpenAI's published guidance on running Codex safely (sandboxing, approval polici
 - [[entities/openai]] — OpenAI as the developer of Codex
 - [[concepts/agent-skills]] — The reusable skill packages that power Codex workflows
 - [[concepts/building-effective-agents]] — General principles for constructing effective agent interactions
-- [[concepts/gpt/gpt-codex-superapp]] — The broader thesis of Codex as an emerging superapp
+- [[concepts/openai/codex-superapp]] — The broader thesis of Codex as an emerging superapp

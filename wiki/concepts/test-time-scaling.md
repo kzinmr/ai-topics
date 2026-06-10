@@ -234,7 +234,7 @@ This implies test-time scaling is not simply "think longer = better" — there a
 
 ## Evaluation & Safety Implications
 
-> **Key insight (June 2026)**: As models improve, benchmark scores become increasingly a function of test-time compute budget. Single-number benchmarks obscure this, creating a gap between reported and actual capability. This has direct implications for AI safety evaluation. [Source: [[raw/articles/2026-06-09_x-article_implications-of-large-scale-test-time-compute.md]]]
+> **Key insight (June 2026)**: As models improve, benchmark scores become increasingly a function of test-time compute budget. Single-number benchmarks obscure this, creating a gap between reported and actual capability. This has direct implications for AI safety evaluation. [Source: [[raw/articles/2026-06-09_x-article_implications-of-large-scale-test-time-compute.md]]
 
 ### The Scalar Benchmark Problem
 

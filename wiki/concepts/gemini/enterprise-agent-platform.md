@@ -91,7 +91,7 @@ Gemini Managed Agents competes directly with:
 
 ## Related
 - [[entities/google]] — parent company and broader AI strategy
-- [[entities/gemini]] — underlying model family
+- [[concepts/gemini/index]] — underlying model family
 - [[concepts/ai-agent-engineering]] — platform architecture patterns
 - [[concepts/agent-harness]] — agent execution infrastructure
 - [[concepts/agent-governance]] — governance patterns

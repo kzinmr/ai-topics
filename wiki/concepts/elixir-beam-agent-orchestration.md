@@ -166,7 +166,7 @@ Harness Engineering builds agent execution environments. Elixir/BEAM provides th
 
 ## See Also
 - [[concepts/harness-engineering]]
-- [[concepts/gpt/gpt-symphony]]
+- [[concepts/openai/symphony]]
 - [[concepts/multi-agent-orchestration]]
 - [[concepts/agent-lifecycle]]
 - [[concepts/agent-orchestration-patterns]]

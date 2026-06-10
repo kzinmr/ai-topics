@@ -134,7 +134,7 @@ See also: [[concepts/open-source-vs-closed]]
 - [[concepts/meta-capacity-efficiency-agents]] — Unified AI agents for infrastructure
 - [[concepts/kernel-evolve]] — Agentic kernel authoring
 - [[concepts/ranking-engineer-agent]] — Autonomous ML lifecycle management
-- [[concepts/anthropic-openclaw-conflict]] — Platform control vs open access
+- [[concepts/anthropic/openclaw-conflict]] — Platform control vs open access
 - [[concepts/inference/llama-cpp]]
 - [[entities/anthropic]]
 - [[entities/openai]]

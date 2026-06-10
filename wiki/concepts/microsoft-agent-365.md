@@ -56,6 +56,6 @@ Enterprise IT and security teams. Not designed for individual users or small bus
 
 - [[concepts/agent-governance]] — Broader agent governance framework
 - [[entities/microsoft]] — Microsoft's AI strategy
-- [[concepts/gemini/enterprise-agent-platform]]] — Google's competing platform
+- [[concepts/gemini/enterprise-agent-platform]] — Google's competing platform
 - [[concepts/ai-agent-engineering]] — Platform architecture for agent execution
 - [[concepts/agent-iam]] — Identity & access management for AI agents

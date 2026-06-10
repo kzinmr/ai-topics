@@ -117,6 +117,6 @@ Cloudsail provides **per-task Cloudflare sandboxes** with:
 - **Zero token exposure** — No credentials leaked to the sandbox environment
 - Per-task isolation: each agent run gets a fresh sandbox
 
-This is part of the broader trend where [[concepts/agent-harness|agent harness]] infrastructure is being offered as a managed service rather than requiring in-house engineering, alongside [[concepts/gemini/enterprise-agent-platform|Gemini Managed Agents]]] and [[concepts/agent-sandbox-patterns|traditional Docker/Unikraft setups]].
+This is part of the broader trend where [[concepts/agent-harness|agent harness]] infrastructure is being offered as a managed service rather than requiring in-house engineering, alongside [[concepts/gemini/enterprise-agent-platform|Gemini Managed Agents]] and [[concepts/agent-sandbox-patterns|traditional Docker/Unikraft setups]].
 
 > Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)

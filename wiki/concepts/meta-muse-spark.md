@@ -9,7 +9,7 @@ tags:
   - model
 aliases: ["muse spark", "meta superintelligence labs", "meta avocado"]
 related:
-  - concepts/anthropic-openclaw-conflict
+  - concepts/anthropic/openclaw-conflict
   - concepts/open-model-consortium
   - concepts/claude-mythos-preview
 sources: []

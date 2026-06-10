@@ -35,13 +35,13 @@ sources: [
 - **Architecture**: Task board → Agent spawn → Isolated workspace → PR submission → Human review
 - **Philosophy**: "Manage work, not agents" — humans define workflows, agents execute
 - **Status**: Open source (Apache 2.0), multiple community implementations
-- **Details**: See [[concepts/gpt/gpt-symphony]]
+- **Details**: See [[concepts/openai/symphony]]
 
 ### Anthropic Managed Agents
 
 - **Architecture**: Brain/Hands/Session separation with persistent memory stores
 - **Features**: Real-time sync between agents, file-based memory, enterprise security
-- **Details**: See [[concepts/anthropic-managed-agents]]
+- **Details**: See [[concepts/anthropic/managed-agents]]
 
 ### Sakana AI Conductor
 
@@ -96,8 +96,8 @@ The emergence of multi-agent systems creates new economic patterns:
 
 ## Related Pages
 
-- [[concepts/gpt/gpt-symphony]] — OpenAI's orchestration platform
-- [[concepts/anthropic-managed-agents]] — Anthropic's enterprise agent platform
+- [[concepts/openai/symphony]] — OpenAI's orchestration platform
+- [[concepts/anthropic/managed-agents]] — Anthropic's enterprise agent platform
 - [[concepts/harness-engineering]] — Safety and constraint patterns for agents
 - [[dark-factory-software-factory]] — Fully autonomous development
 - [[concepts/agentic-engineering]] — Developer patterns for working with agents

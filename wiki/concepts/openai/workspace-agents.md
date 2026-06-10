@@ -58,7 +58,7 @@ OpenAI launched four products in one week, indicating a coordinated push:
 ## Competitive Positioning
 
 OpenAI Workspace Agents directly compete with:
-- **[[concepts/anthropic-managed-agents]]** — Anthropic's Claude Managed Agents with similar enterprise focus but different memory architecture (filesystem-based text files vs. OpenAI's approach)
+- **[[concepts/anthropic/managed-agents]]** — Anthropic's Claude Managed Agents with similar enterprise focus but different memory architecture (filesystem-based text files vs. OpenAI's approach)
 - **Cognition Devin** — autonomous AI software engineer
 
 ## Related Pages
@@ -66,5 +66,5 @@ OpenAI Workspace Agents directly compete with:
 - [[entities/openai]] — OpenAI entity page
 - [[concepts/gpt/gpt-5-5]] — Announced alongside Workspace Agents
 - [[concepts/gpt/chatgpt-images-2-0]] — Announced alongside Workspace Agents
-- [[concepts/anthropic-managed-agents]] — Direct competitor
+- [[concepts/anthropic/managed-agents]] — Direct competitor
 - [[concepts/agent-team-swarm]] — Multi-agent coordination patterns

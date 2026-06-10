@@ -144,6 +144,6 @@ async with ClaudeSDKClient(options=...) as agent:
 
 ## Related
 
-- [[concepts/claude/agent-sdk-sre-patterns]] — MCP integration and safety guardrails
+- [[concepts/anthropic/agent-sdk-sre-patterns]] — MCP integration and safety guardrails
 - [[concepts/chief-of-staff-agent-patterns]] — Subagent orchestration and plan mode
 - [[concepts/managed-agents-sre-incident-response]] — Human-in-the-loop approval patterns

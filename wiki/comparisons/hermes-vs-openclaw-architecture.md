@@ -274,7 +274,7 @@ OpenClaw can run external coding harnesses (Claude Code, Codex, OpenCode, Gemini
 - [[entities/teknium]] — Hermes Agent architect
 - [[concepts/skill-architecture-patterns]] — Skill management comparison
 - [[concepts/harness-engineering]] — Harness Engineering framework
-- [[concepts/anthropic-openclaw-conflict]] — Open-source vs platform risk
+- [[concepts/anthropic/openclaw-conflict]] — Open-source vs platform risk
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-first codebase design
 - [[concepts/hermes-agent-architecture]] — Hermes Agent architecture deep-dive (official docs)
 - [[concepts/openclaw-architecture]] — OpenClaw architecture deep-dive (official docs)

@@ -19,7 +19,7 @@ sources:
 
 # Daytona Sandbox (Claude Managed Agents)
 
-**Daytona Sandbox** is Daytona's self-hosted sandbox environment for [[concepts/claude/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026. It moves the agent's container layer from Anthropic-operated cloud containers to Daytona-managed sandbox containers running on the user's own infrastructure, while the agent loop, prompt caching, model calls, event stream, and session history all remain on Anthropic's platform.
+**Daytona Sandbox** is Daytona's self-hosted sandbox environment for [[concepts/anthropic/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026. It moves the agent's container layer from Anthropic-operated cloud containers to Daytona-managed sandbox containers running on the user's own infrastructure, while the agent loop, prompt caching, model calls, event stream, and session history all remain on Anthropic's platform.
 
 Daytona was co-founded by [[entities/ivan-burazin|Ivan Burazin]], who coined the term "composable computers for agents." Daytona's platform provisions fast, stateful development environments — popularly called "AI sandboxes" — that give agents full CPU, RAM, disk, and OS access.
 
@@ -76,7 +76,7 @@ Daytona provides fast, stateful composable computing environments provisioned in
 
 ## Related Pages
 
-- [[concepts/claude/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
+- [[concepts/anthropic/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
 - [[comparisons/claude-managed-agents-sandbox-providers|CMA Sandbox Providers Comparison]] — Side-by-side comparison of all four providers
 - [[entities/ivan-burazin|Ivan Burazin]] — Daytona Co-Founder & CEO
 - [[entities/daytona-io|Daytona]] — Daytona platform and company

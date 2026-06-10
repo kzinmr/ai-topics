@@ -22,7 +22,7 @@ sources:
   - https://www.adityabawankule.io/blog/claude-code-vs-codex-vs-cursor
 related:
   - "[[concepts/codex-goal-meta-prompting]]"
-  - "[[concepts/gpt/gpt-codex-superapp]]"
+  - "[[concepts/openai/codex-superapp]]"
   - "[[entities/claude-code]]"
 ---
 
@@ -81,7 +81,7 @@ Aditya's writing is characterized by:
 ## Cross-References
 
 - [[concepts/codex-goal-meta-prompting]] — His most influential technique: using AI to write better /goal prompts
-- [[concepts/gpt/gpt-codex-superapp]] — Broader context of Codex as a coding superapp
+- [[concepts/openai/codex-superapp]] — Broader context of Codex as a coding superapp
 - [[entities/claude-code]] — His primary daily driver coding tool
 - [[concepts/vibe-coding]] — The broader paradigm his work exemplifies
 - [[entities/simon-willison]] — Similar style of tool-agnostic, production-grounded writing

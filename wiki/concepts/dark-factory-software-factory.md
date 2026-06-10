@@ -20,7 +20,7 @@ sources:
 
 **Source:** Simon Willison's Weblog (2026-01-28, 2026-02-07)
 **Practitioners:** StrongDM AI Team (Justin McCarthy, Jay Taylor, Navan Chauhan)
-**Related:** [[concepts/agent-team-swarm]], [[concepts/gpt/gpt-symphony]], [[concepts/anthropic-managed-agents]]
+**Related:** [[concepts/agent-team-swarm]], [[concepts/openai/symphony]], [[concepts/anthropic/managed-agents]]
 
 ---
 
@@ -176,8 +176,8 @@ Source: [[raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agent
 ## Related
 
 - [[concepts/agent-team-swarm]] — Higher-level concept of multi-Agent coordination
-- [[concepts/gpt/gpt-symphony]] — Orchestrator enabling Level 4
-- [[concepts/anthropic-managed-agents]] — Platform foundation for Level 4
+- [[concepts/openai/symphony]] — Orchestrator enabling Level 4
+- [[concepts/anthropic/managed-agents]] — Platform foundation for Level 4
 - [[concepts/harness-engineering]] — Foundation for execution environment design across all levels
 - [[entities/sairahul1]] — Originator of the 7-Agent Factory
 

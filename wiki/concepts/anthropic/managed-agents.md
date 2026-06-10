@@ -217,3 +217,82 @@ The sandbox runner can download and install **Anthropic Skills packages** from t
 - [[concepts/agent-runtime]] — The execution environment layer in AI agent architecture
 - [[concepts/context-engineering]] — Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate)
 - [[concepts/firecracker]] — Firecracker microVM technology used by Modal and Vercel
+
+---
+
+*Merged from :*
+
+
+# Anthropic Managed Agents
+
+**Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
+**Status:** Public Beta on Claude Platform
+**Related:** [[concepts/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/meta-harness]]
+
+
+## Architecture: Brain/Hands/Session Separation
+
+Core thesis from the Anthropic Engineering Blog post "[Scaling Managed Agents: Decoupling the brain from the hands](https://www.anthropic.com/engineering/managed-agents)":
+
+> Agent harnesses inevitably encode assumptions about current model limitations. As AI capabilities improve, these assumptions become obsolete.
+
+In the initial design, Session, Harness, and Sandbox were coupled in a single container ("pets"). The current design fully decouples these three elements ("cattle"):
+
+| Element | Role | Benefit of Separation |
+|---|---|---|
+| **Brain** | Claude + Harness | Stateless → horizontally scalable |
+| **Hands** | Sandbox/Tools | Provisioned on demand, recreated on failure |
+| **Session** | Event Log (persistent) | State management beyond context window |
+
+### Key Interfaces
+
+```
+Sandbox Execution:  execute(name, input) → string
+Container Lifecycle: provision({resources})
+Harness Recovery:   wake(sessionId) → reboot stateless harness
+                    getSession(id) → retrieve durable event log
+                    emitEvent(id, event) → append to session
+Context Query:      getEvents() → fetch positional slices
+```
+
+### Meta-Harness Philosophy
+
+> "We're opinionated about the shape of these interfaces, not about what runs behind them."
+
+Managed Agents is designed as a **meta-harness** (see [[concepts/meta-harness]]). It doesn't prescribe specific implementations — it strictly defines interface boundaries.
+
+
+## Multi-Agent Coordination → Expanded Features (May 2026)
+
+Four new features of Managed Agents were released as GA/Research Preview. See [[concepts/anthropic/managed-agents]] for details.
+
+1. **Multi-Agent Orchestration (GA)** — Coordinator agent manages up to 20 specialized sub-agents. Shared filesystem + isolated context windows. Up to 25 parallel threads.
+2. **Outcomes Loop (GA)** — Rubric-driven self-improvement cycle. An independent Grader agent evaluates → feedback loop (up to 20 iterations).
+3. **Dreams (Research Preview)** — Reviews past sessions to optimize Memory Store (deduplication, conflict resolution, pattern extraction). Non-destructive.
+4. **Webhooks (GA)** — Push-based state change notifications. `whsec_` signature verification, lightweight payload (event type + id only).
+
+
+## Performance Impact
+
+| Metric | Improvement | Reason |
+|---|---|---|
+| TTFT p50 | ~60% reduction | Inference starts immediately, Sandbox on demand |
+| TTFT p95 | >90% reduction | Same as above |
+| Horizontal Scale | Many Brains | Stateless Harness enables parallel execution |
+| Tool Context | Many Hands | Operates across multiple execution contexts |
+
+
+## Pricing
+
+- Standard Claude Platform token rates
+- **+$0.08/session hour** (active runtime)
+
+
+## Related
+
+- [[concepts/agent-team-swarm]] — Higher-level concept of multi-agent coordination
+- [[concepts/harness-engineering]] — Single-agent execution environment design
+- [[concepts/meta-harness]] — Interface-centric design philosophy
+- [[concepts/openai/symphony]] — Competitor's Agent Team orchestrator
+- [[concepts/dark-factory-software-factory]] — Cutting-edge fully autonomous development
+

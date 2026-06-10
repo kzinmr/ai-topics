@@ -54,7 +54,7 @@ The main agent is a high-level supervisor. After setting up the team, sub-agents
 
 ### 5. Orchestrator-Worker — Research via Parallel Sub-agents (Anthropic, 2025)
 
-A production pattern adopted by Anthropic's Claude Research (see [[concepts/anthropic-multi-agent-research]]).
+A production pattern adopted by Anthropic's Claude Research (see [[concepts/anthropic/multi-agent-research]]).
 
 - **LeadResearcher (Opus 4)**: Query analysis → strategy formulation → save to Memory → spawn sub-agents in parallel
 - **Subagents (Sonnet 4)**: Independent context windows, parallel search, interleaved thinking for result evaluation, compressed results returned to lead

@@ -12,7 +12,7 @@ tags:
   - company
 aliases: ["mythos preview", "anthropic frontier red team 2026"]
 related:
-  - concepts/anthropic-openclaw-conflict
+  - concepts/anthropic/openclaw-conflict
   - entities/dario-amodei
   - concepts/ai-agent-engineering
   - entities/mozilla
@@ -141,7 +141,7 @@ The [[concepts/ai-vulnerability-discovery|Calif team]] leveraged **Claude Mythos
 ## Related
 
 - [[concepts/ai-vulnerability-discovery]] — AI-assisted exploit development
-- [[concepts/anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
+- [[concepts/anthropic/openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[entities/dario-amodei]] — Anthropic CEO, announced Mythos Preview
 -  — Dual-use risk management framework-  — Project Vend, Project Fetch
 ## Sources

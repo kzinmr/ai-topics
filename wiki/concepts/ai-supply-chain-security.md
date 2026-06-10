@@ -70,6 +70,6 @@ Organizations are responding with:
 ## Related Pages
 - [[concepts/ai-safety]] — Broader AI safety framework
 - [[entities/openai-codex]] — Codex command injection incident
-- [[concepts/gpt/gpt-tanstack-supply-chain-2026]] — TanStack worm detailed analysis
+- [[concepts/openai/tanstack-supply-chain-2026]] — TanStack worm detailed analysis
 - [[events/distillation-attacks-2026]] — Related: supply chain concerns in model distillation
 - [[entities/anthropic]] — Claude Code source map leak

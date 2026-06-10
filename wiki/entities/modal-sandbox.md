@@ -18,7 +18,7 @@ sources:
 
 # Modal Sandbox (Claude Managed Agents)
 
-**Modal Sandbox** is Modal's self-hosted sandbox environment for [[concepts/claude/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026 in collaboration with [[entities/anthropic|Anthropic]]. Modal is a cloud platform built for AI workloads, with a custom container runtime and orchestration layer designed for fast, flexible, isolated compute. The CMA integration lets developers run all tool calls in a self-hosted Modal Sandbox while benefiting from Modal's fast cold-starts, custom images, snapshotting techniques, and cost-efficient bursting — all while maintaining Anthropic's managed agent loop.
+**Modal Sandbox** is Modal's self-hosted sandbox environment for [[concepts/anthropic/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026 in collaboration with [[entities/anthropic|Anthropic]]. Modal is a cloud platform built for AI workloads, with a custom container runtime and orchestration layer designed for fast, flexible, isolated compute. The CMA integration lets developers run all tool calls in a self-hosted Modal Sandbox while benefiting from Modal's fast cold-starts, custom images, snapshotting techniques, and cost-efficient bursting — all while maintaining Anthropic's managed agent loop.
 
 Modal was founded with the thesis that separating the agent loop from code execution is the winning architectural pattern, because it makes security boundaries easier to reason about and gives teams more control over observability, failure handling, and scale.
 
@@ -93,7 +93,7 @@ Modal shipped two reference examples: a CLI agent and a Slack bot, both on the s
 
 ## Related Pages
 
-- [[concepts/claude/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
+- [[concepts/anthropic/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
 - [[comparisons/claude-managed-agents-sandbox-providers|CMA Sandbox Providers Comparison]] — Side-by-side comparison of all four providers
 - [[entities/anthropic|Anthropic]] — Platform partner
 - [[concepts/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns

@@ -152,7 +152,7 @@ An instructive failure case from the field: a developer asking for PHP code and 
 - [[concepts/cognitive-debt]] — Isolation mitigates the risk of agents operating beyond your understanding
 - [[concepts/ai-abstraction-costs]] — Containers restore a level of visibility that high-level abstractions remove
 - [[concepts/self-hosting-ai-development]] — Deploy your isolated dev environment alongside your production apps
-- [[concepts/anthropic-managed-agents]] — Enterprise-grade agent isolation (Anthropic's approach)
+- [[concepts/anthropic/managed-agents]] — Enterprise-grade agent isolation (Anthropic's approach)
 
 ## References
 

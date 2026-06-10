@@ -67,7 +67,7 @@ In contrast, the local AI community focuses on **existing hardware** (consumer G
 
 ### ③ Open vs Closed — "who controls the model?"
 
-Meta's Muse Spark (announced April 2026) is **closed-source**. The community notes a break from the Llama family's open philosophy ("rip LLaMA"). Meanwhile, as seen in [[concepts/anthropic-openclaw-conflict]], Anthropic is also moving toward excluding third-party agents from its subscription.
+Meta's Muse Spark (announced April 2026) is **closed-source**. The community notes a break from the Llama family's open philosophy ("rip LLaMA"). Meanwhile, as seen in [[concepts/anthropic/openclaw-conflict]], Anthropic is also moving toward excluding third-party agents from its subscription.
 
 **Ironic convergence**: Meta (open-source origins) and Anthropic (originally closed) are moving in the same "platform control" direction for different reasons.
 
@@ -96,7 +96,7 @@ Meta plans **$115B-$135B** in capital expenditure for 2026. Cutting VR/Reality L
 
 ### 4. Data Sovereignty Movement
 
-The OpenClaw community, Sero's "Freedom Tech," and local LLM enthusiasts advocate for **"the user's right to own their agent and data."** [[concepts/anthropic-openclaw-conflict]] was a turning point for this movement.
+The OpenClaw community, Sero's "Freedom Tech," and local LLM enthusiasts advocate for **"the user's right to own their agent and data."** [[concepts/anthropic/openclaw-conflict]] was a turning point for this movement.
 
 ## Concept Map
 
@@ -139,7 +139,7 @@ Personal Superintelligence
 ## Related Concepts
 
 - [[concepts/death-of-browser]] — Browser depersonalization (agents operating UI)
-- [[concepts/anthropic-openclaw-conflict]] — Platform control vs open access
+- [[concepts/anthropic/openclaw-conflict]] — Platform control vs open access
 - [[concepts/openclaw-ecosystem]] — OpenClaw and personal AI agent movement
 - [[concepts/meta-muse-spark]] — Muse Spark model details
 - [[concepts/local-llm]] — Local LLM inference
@@ -163,5 +163,5 @@ Personal Superintelligence
 - [VisionClaw: Turning Ray-Ban Meta Glasses into an Autonomous Super-Agent (Elluminate Me, Feb 2026)](https://elluminateme.com/artificial-intelligence/visionclaw/)
 - [Meta's Ray-Ban Display turns AI agents into a hands-free OS (The Relay, 2025)](https://therelaymag.com/metas-ray-ban-display-turns-ai-agents-into-a-hands-free-os/)
 - [Meta Positions AI Glasses and Personal Agents at Center of Growth (AI Insider, Jan 2026)](https://theaiinsider.tech/2026/01/29/meta-positions-ai-glasses-and-personal-agents-at-the-center-of-its-next-growth-phase/)
-- [Anthropic-OpenClaw Conflict (Apr 2026)](~/wiki/concepts/anthropic-openclaw-conflict.md)
+- [Anthropic-OpenClaw Conflict (Apr 2026)](~/wiki/concepts/anthropic/openclaw-conflict.md)
 - [Shlok Khemani — Personal AI Research](~/wiki/entities/shlok-khemani.md)

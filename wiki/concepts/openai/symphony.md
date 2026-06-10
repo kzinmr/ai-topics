@@ -152,7 +152,7 @@ The two are complementary: Symphony manages "which agent runs which task when," 
 - [[concepts/agent-team-swarm]] — Higher-level concept of multi-agent coordination
 - [[concepts/harness-engineering]] — The development practices Symphony assumes
 - [[concepts/dark-factory-software-factory]] — Next step toward fully autonomous development
-- [[concepts/anthropic-managed-agents]] — Competing managed agent platform
+- [[concepts/anthropic/managed-agents]] — Competing managed agent platform
 - [[concepts/multi-agent-autonomy-scale]] — Research on large-scale agent coordination
 - [[entities/ryan-lopopolo]] — Symphony's author, Harness Engineering proponent. Led 1M LOC agent-only experiments at OpenAI Frontier.
 

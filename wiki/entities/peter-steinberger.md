@@ -189,7 +189,7 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 ## Related
 
 - [[concepts/openclaw-ecosystem]] — The framework he created
-- [[concepts/anthropic-openclaw-conflict]] — The April 2026 policy dispute
+- [[concepts/anthropic/openclaw-conflict]] — The April 2026 policy dispute
 - [[concepts/agentic-engineering]] — AI-assisted software development patterns
 -  — The protocol his tooling ecosystem is built on
 - [[concepts/skill-architecture-patterns]] — Skill governance model (OpenClaw's primitives-first approach)

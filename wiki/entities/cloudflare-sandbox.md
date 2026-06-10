@@ -22,7 +22,7 @@ sources:
 
 # Cloudflare Sandbox (Claude Managed Agents)
 
-**Cloudflare Sandbox** is Cloudflare's self-hosted sandbox environment for [[concepts/claude/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026 in collaboration with [[entities/anthropic|Anthropic]]. It provides a Workers-based control plane that decouples the agent loop (running on Anthropic's platform) from code execution (running on Cloudflare's infrastructure), giving developers full control over sandbox security, observability, and tooling.
+**Cloudflare Sandbox** is Cloudflare's self-hosted sandbox environment for [[concepts/anthropic/managed-agents|Claude Managed Agents]] (CMA), launched May 19, 2026 in collaboration with [[entities/anthropic|Anthropic]]. It provides a Workers-based control plane that decouples the agent loop (running on Anthropic's platform) from code execution (running on Cloudflare's infrastructure), giving developers full control over sandbox security, observability, and tooling.
 
 Note: this page covers Cloudflare's **external-facing CMA sandbox product**. For Cloudflare's internal AI engineering stack (iMARS), see [[concepts/cloudflare-agents]].
 
@@ -70,7 +70,7 @@ The CMA sandbox integration leverages Cloudflare's broader Developer Platform: W
 
 ## Related Pages
 
-- [[concepts/claude/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
+- [[concepts/anthropic/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
 - [[comparisons/claude-managed-agents-sandbox-providers|CMA Sandbox Providers Comparison]] — Side-by-side comparison of all four providers
 - [[concepts/cloudflare-agents|Cloudflare Agents (iMARS)]] — Cloudflare's internal AI engineering stack
 - [[entities/cloudflare|Cloudflare]] — Parent organization

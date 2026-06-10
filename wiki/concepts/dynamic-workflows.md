@@ -111,7 +111,7 @@ Dynamic workflows are not needed for every task and use significantly more token
 - [[concepts/claude/opus-4-8|Claude Opus 4.8]] — the model that makes dynamic workflows intelligent enough to generate custom harnesses
 - [[concepts/claude-code-goal|Claude Code /goal]]
 - [[concepts/claude-code-skills|Claude Code Skills]]
-- [[concepts/anthropic-multi-agent-research|Anthropic Multi-Agent Research System]]
+- [[concepts/anthropic/multi-agent-research|Anthropic Multi-Agent Research System]]
 - [[concepts/claude-code-best-practices|Claude Code Best Practices]]
 
 ## Authors

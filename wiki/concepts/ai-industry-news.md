@@ -50,7 +50,7 @@ OpenAI shipped four major products in a single week, marking one of the most agg
 - Codex-powered shared agents for **Business/Enterprise** plans
 - Integrates Slack, Salesforce, Notion, Google Drive
 - Features persistent memory and role-based governance
-- See: [[concepts/gpt/gpt-workspace-agents]]
+- See: [[concepts/openai/workspace-agents]]
 
 ### 4. ChatGPT for Clinicians
 - Free tool for verified US physicians, NPs, PAs, and pharmacists
@@ -99,5 +99,5 @@ SpaceX has deepened its partnership with **Cursor**, the AI-native code editor, 
 - [[entities/anthropic]] — Anthropic company entity page
 - [[concepts/gpt/chatgpt-images-2-0]] — Deep dive on ChatGPT Images 2.0
 - [[concepts/gpt/gpt-5-5]] — Deep dive on GPT-5.5
-- [[concepts/gpt/gpt-workspace-agents]] — Deep dive on Workspace Agents
+- [[concepts/openai/workspace-agents]] — Deep dive on Workspace Agents
 - [[cursor-ide]] — Cursor IDE and its industry role

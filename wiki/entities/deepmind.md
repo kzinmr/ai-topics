@@ -111,7 +111,7 @@ The AI Pointer represents a shift from **chat-box AI** to **ambient/operating-la
 - [[entities/sara-hooker]] — Researcher; "The Hardware Lottery" author
 - [[entities/ivan-leo]] — Google DeepMind researcher; self-extending agents
 - [[entities/gemma-4]] — Open-weight model family from DeepMind
-- [[concepts/gemini/enterprise-agent-platform]]] — Google Cloud's enterprise AI agent platform
+- [[concepts/gemini/enterprise-agent-platform]] — Google Cloud's enterprise AI agent platform
 
 ## Related Concepts
 

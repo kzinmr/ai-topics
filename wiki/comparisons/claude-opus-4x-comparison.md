@@ -211,5 +211,5 @@ Across ~5,600 internal sessions (Opus 4.8), five failure patterns recur:
 ## See Also
 
 - [[concepts/claude/system-cards]] — Full index of all Anthropic system cards
-- [[concepts/claude/transparency-hub]] — Transparency Hub (Model Report, System Trust, Voluntary Commitments)
+- [[concepts/anthropic/transparency-hub]] — Transparency Hub (Model Report, System Trust, Voluntary Commitments)
 - [[entities/anthropic]] — Parent entity page

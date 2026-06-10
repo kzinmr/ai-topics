@@ -196,7 +196,7 @@ The current practical implementations target **verifiable coding benchmarks** (T
 - [[concepts/context-engineering]] — Lance Martin's taxonomy: Write/Select/Compress/Isolate
 - [[concepts/autoresearch]] — Karpathy's original self-directed research pattern
 - [[concepts/hermes-agent]] — Nous Research's self-improving agent runtime
-- [[concepts/anthropic-managed-agents]] — Anthropic's meta-harness architecture for managed agents
+- [[concepts/anthropic/managed-agents]] — Anthropic's meta-harness architecture for managed agents
 
 ## Entities
 

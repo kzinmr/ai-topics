@@ -23,7 +23,7 @@ related:
   - "[[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]]"
   - "[[concepts/logfire]]"
   - "[[concepts/ai-infrastructure-engineering/llm-observability]]"
-  - "[[concepts/gpt/gpt-symphony]]"
+  - "[[concepts/openai/symphony]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/ben-hylak]]"
 ---
@@ -210,7 +210,7 @@ Raindrop Workshop embodies the **code-aware eval** philosophy from [[concepts/ag
 - [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval tool comparison
 - [[concepts/logfire]] — Pydantic Logfire (Python-native observability)
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — LLM inference metrics
-- [[concepts/gpt/gpt-symphony]] — OpenAI Symphony orchestration
+- [[concepts/openai/symphony]] — OpenAI Symphony orchestration
 - [[concepts/harness-engineering]] — Foundational agent reliability practice
 - [[entities/arize]] — Arize AI entity
 - [[entities/langchain]] — LangChain entity (parent of LangSmith)

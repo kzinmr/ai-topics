@@ -35,8 +35,8 @@ Hub page for [[entities/anthropic|Anthropic]]'s Claude model family. All model-s
 ## Platform & Safety
 
 - [[concepts/claude/system-cards]] — Anthropic System Cards index (15 models, Claude 2 → Opus 4.8).
-- [[concepts/claude/transparency-hub]] — Anthropic Transparency Hub (Model Report, System Trust, Voluntary Commitments).
-- [[concepts/claude/managed-agents]] — Claude Managed Agents platform. Cloud-hosted autonomous agents.
+- [[concepts/anthropic/transparency-hub]] — Anthropic Transparency Hub (Model Report, System Trust, Voluntary Commitments).
+- [[concepts/anthropic/managed-agents]] — Claude Managed Agents platform. Cloud-hosted autonomous agents.
 
 ## Features & Tools
 
@@ -47,7 +47,7 @@ Hub page for [[entities/anthropic|Anthropic]]'s Claude model family. All model-s
 - [[concepts/claude/diary]] — Lance Martin's Claude Code diary plugin.
 - [[concepts/claude/effort-control]] — User-controllable compute scaling (Opus 4.8).
 - [[concepts/claude/tokenizer-47]] — Claude 4.7 tokenizer changes.
-- [[concepts/claude/agent-sdk-sre-patterns]] — Claude Agent SDK SRE patterns.
+- [[concepts/anthropic/agent-sdk-sre-patterns]] — Claude Agent SDK SRE patterns.
 - [[concepts/claude/designing-loops-with-fable-5]] — Fable 5 loop design patterns (Lance Martin).
 
 ## See Also
@@ -55,4 +55,4 @@ Hub page for [[entities/anthropic|Anthropic]]'s Claude model family. All model-s
 - [[entities/anthropic]] — Anthropic entity page
 - [[concepts/claude-code]] — Claude Code (coding agent, separate product)
 - [[concepts/claude/design-entity]] — Claude Design (visual design product)
-- [[concepts/claude/orbit]] — Claude Orbit (proactive assistant)
+- [[concepts/anthropic/orbit]] — Claude Orbit (proactive assistant)
