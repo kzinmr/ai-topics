@@ -18,7 +18,7 @@ System cards are [[entities/anthropic|Anthropic]]'s official model documentation
 | Claude Opus 4.8 | May 2026 | ASL-3 | [PDF](https://www-cdn.anthropic.com/0b4915911bb0d19eca5b5ee635c80fef830a37ea.pdf) |
 | Claude Opus 4.7 | Apr 2026 | ASL-3 | [PDF](https://cdn.sanity.io/files/4zrzovbb/website/037f06850df7fbe871e206dad004c3db5fd50340.pdf) |
 | Mythos Preview | Apr 2026 | RSP v3.0 (limited) | [PDF](https://www.anthropic.com/claude-mythos-preview-system-card) |
-| Claude Sonnet 4.6 | Feb 2026 | ASL-3 | [PDF](http://anthropic.com/claude-sonnet-4-6-system-card) |
+| Claude Sonnet 4.6 | Feb 2026 | ASL-3 | [PDF](https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf) |
 | Claude Opus 4.6 | Feb 2026 | ASL-3 | [PDF](https://anthropic.com/claude-opus-4-6-system-card) |
 | Claude Opus 4.5 | Nov 2025 | ASL-3 | [PDF](https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf) |
 | Claude Haiku 4.5 | Oct 2025 | ASL-2 | [PDF](https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970.pdf) |

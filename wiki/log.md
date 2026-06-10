@@ -7620,3 +7620,4 @@ Updated:
 - **raw/papers**: Ingested Claude Mythos Preview System Card (Apr 2026, 245 pages) from Anthropic CDN
 - **comparisons**: Created claude-mythos-preview-vs-mythos5-fable5.md — Preview vs Mythos 5/Fable 5 comparison
 - **index.md**: Added comparison page, updated count 27-28
+- 2026-06-10 | comparison | claude-sonnet46-vs-opus46 | Claude Sonnet 4.6 vs Opus 4.6 system card comparison. Source: https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf
