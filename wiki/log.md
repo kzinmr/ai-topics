@@ -1,3 +1,12 @@
+## [2026-06-10] Florian Brand: Open Model Safety
+
+**Action**: Saved raw article. Created `concepts/open-model-safety.md`. Updated `entities/florian-brand.md` (blog posts, X Activity Themes, sources, tags). Updated `index.md`.
+
+**Pages created**: `raw/articles/florian-brand-open-model-safety.md`, `concepts/open-model-safety.md`
+**Pages modified**: `entities/florian-brand.md`, `index.md`
+
+---
+
 ## [2026-06-10] Semi Analysis: Scaling RL infrastructure — reward hacking, environment engineering, non-verifiable domains
 
 **Action**: Saved raw article. Enriched `concepts/reward-hacking.md` with LLM RL training examples (Claude 3.7 test-editing, o3 hallucinations, GPT-4o sycophancy, AlphaChip case study, non-verifiable domain solutions). Added "Supplementary Reading" section to `concepts/agents-mcp-rl-course.md` linking RL infrastructure context to the course curriculum. Updated `index.md` entries for both pages.

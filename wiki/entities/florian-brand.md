@@ -3,7 +3,7 @@ title: Florian Brand
 type: entity
 handle: "@xeophon"
 created: 2026-04-10
-updated: 2026-06-08
+updated: 2026-06-10
 tags:
   - person
   - model
@@ -13,7 +13,9 @@ tags:
   - evaluation
   - company
   - benchmark
-sources: []
+  - ai-safety
+sources:
+  - raw/articles/florian-brand-open-model-safety.md
 ---
 
 
@@ -162,6 +164,7 @@ Key message: Benchmarks indicate relative strengths and general progress, not ab
 | 2025-12 | 2025 Open Models Year in Review (w/ N. Lambert) | Comprehensive review of open model progress, highlighting DeepSeek R1, Olmo 3, and ecosystem growth |
 | 2025-11 | Latest Open Artifacts #16 (w/ N. Lambert) | US vs China open model landscape, resurgence of open source |
 | 2025-08 | Latest Open Artifacts #13 (w/ N. Lambert) | "The abundance era" — open model ecosystem matures into a functioning marketplace |
+| 2025-02 | [Open Model Safety](https://florianbrand.com/posts/open-model-safety) | Case for formalizing open model safety: pre-release evals, post-release monitoring, standardized reporting ([[concepts/open-model-safety]]) |
 | N/A | Living in the Agentic Era | How agentic workflows are becoming standard in software development |
 | N/A | Local models are (not) cope | Nuanced analysis of local vs. cloud model trade-offs |
 
@@ -181,4 +184,5 @@ Brand's X activity (@xeophon) typically covers:
 3. **Infrastructure commentary** — Thoughts on compute access, GPU constraints, and the economics of AI training
 4. **Developer tools** — Recommendations for Python tooling, dependency management, and LLM-assisted workflows
 5. **Agentic development** — Observations on how AI agents are changing software engineering practices
-6. **Benchmaxxing criticism** — Calling out models (especially Gemini) where benchmark scores diverge from real-world instruction-following quality (e.g., [June 2026 post on Gemini](https://x.com/xeophon/status/2063157398450130963))
+6. **Open model safety** — Advocates for formalized safety evaluation of open-weight models ([[concepts/open-model-safety]])
+7. **Benchmaxxing criticism** — Calling out models (especially Gemini) where benchmark scores diverge from real-world instruction-following quality (e.g., [June 2026 post on Gemini](https://x.com/xeophon/status/2063157398450130963))

@@ -1627,6 +1627,7 @@
 - [[concepts/openai/responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
 - [[concepts/openai/symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
 - [[concepts/openai/tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
+- [[concepts/open-model-safety]] — Open Model Safety: Evaluating and mitigating risks of openly released AI models. Asymmetry of fine-tuning (easy to remove safety, hard to add). Pre-release evals, post-release monitoring, standardized reporting, red-teaming at scale. (Florian Brand, 2025)
 - [[concepts/openclaw-architecture]] — OpenClaw architecture details
 - [[concepts/openclaw-ecosystem]] — OpenClaw Ecosystem — Peter Hayes' open-source AI agent platform ecosystem: gateway, skills library, tool server, community-contributed agents and integrations.
 - [[concepts/openenv]] — Protocol/interoperability layer for agentic RL environments. 9-org committee (HF, Meta-PyTorch, Unsloth, Modal, NVIDIA, etc.). Gymnasium-style API, Docker packaging, MCP support. GitHub: huggingface/OpenEnv.
