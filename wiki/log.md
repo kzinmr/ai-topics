@@ -7,6 +7,13 @@
 **Sources**: `raw/newsletters/2026-06-09-deepseekv4-1-6t-day-0-to-day-43-performance-over-time-huawei-gb300-nvl72-mi355x-` (SemiAnalysis), `raw/newsletters/2026-06-09-claude-fable-5-and-new-ai-safety-fables` (Nathan Lambert/Interconnects), `raw/newsletters/2026-06-10-ainews-anthropic-claude-fable-5-mythos-but-safe-with-controversial-terms` (AINews/swyx)
 
 
+## [2026-06-10] Claude System Card milestones timeline — chronological analysis page created
+
+**Action**: Created `concepts/claude/system-card-milestones.md` — chronological analysis of 12 major safety milestones across 17 system cards (Jul 2023–Jun 2026). 5 phases: Basic Documentation → ASL Formalization → Interpretability → Cybersecurity → Mythos-Class. Includes trend analysis: safety level escalation, capability-safety co-evolution, evaluation sophistication growth, emerging concerns.
+
+**Pages created**: `concepts/claude/system-card-milestones.md`
+**Pages linked**: `concepts/claude/system-cards`, `concepts/model-cards-system-cards`, `concepts/gpt/gpt-system-card-milestones`, `concepts/claude-code--history`
+
 ## [2026-06-10] Claude Code history update — Sonnet 3.7 adoption, Opus 4 agentic shift
 
 **Action**: Updated `entities/claude-code--history.md` with Sonnet 3.7 (Feb 2025) as the first wave of practical adoption and Opus 4 (May 2025) as the agentic inflection point. Updated `concepts/claude/system-cards.md` milestones to include Claude Code GA and "strategy-first" shift.
