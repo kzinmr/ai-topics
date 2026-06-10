@@ -1,5 +1,40 @@
 ---
 
+## [2026-06-09] X Article Ingest — Lance Martin "Designing loops with Fable 5"
+
+**Action**: Ingested X Article from @rlancemartin (Lance Martin) about Claude Fable 5 loop design patterns.
+
+- **NEW: [[raw/articles/2026-06-09_rlancemartin_designing-loops-with-fable-5.md]]** — Full article content retrieved via xurl `tweet.fields=article`. Covers self-correction loops, memory as outer loop, Parameter Golf benchmark (Fable 5 vs Opus 4.7), verifier sub-agents, and memory progression patterns.
+- **UPDATED: [[entities/rlancemartin.md]]** — Added "Designing Loops with Fable 5 (June 2026)" section to Core Ideas. Updated sources and bumped updated date.
+- **NEW: [[concepts/designing-loops-with-fable-5]]** — Comprehensive concept page covering self-correction loops, memory as outer loop, model comparison tables (Parameter Golf, Continual Learning Bench 1.0), design principles, and implementation guidance for Claude Code and CMA.
+
+**Source**: https://x.com/rlancemartin/status/2064397389189071163
+
+---
+
+## [2026-06-10] Raw Backlog Ingest — Batch 20260610T000053Z (Takes=0, All Skipped)
+
+**Action**: Processed 2 unprocessed raw articles from backlog (ai-hint sorted). Both skipped as already captured:
+
+- **SKIPPED:** `raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md` — Full tech report (372KB, 109 pages) already fully captured in `concepts/mai-thinking-1-tech-report.md` (227 lines) and `concepts/microsoft-mai-models.md`. This is the 5th+ time this article has appeared in backlog batches.
+- **SKIPPED:** `raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md` — Already captured in `concepts/hands-on-modern-rl.md` (156 lines, created 2026-06-09).
+
+3 other articles in this batch were previously archived (Dwarkesh AGI Economics, Ed Zitron AI ROI, Paul Graham Being Popular).
+
+
+## [2026-06-09] Raw Backlog Ingest — Batch 20260609T200050Z (Takes=0, All Skipped)
+
+**Action**: Processed 5 raw articles from backlog (ai-hint sorted). All skipped as already captured or out-of-scope:
+
+- **SKIPPED:** `raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md` — Full tech report (372KB, 109 pages) already fully captured in `concepts/mai-thinking-1-tech-report.md` and `concepts/microsoft-mai-models.md`.
+- **SKIPPED:** `raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md` — Already captured in `concepts/hands-on-modern-rl.md` (156 lines, created earlier today).
+- **SKIPPED:** `raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md` — Ed Zitron article already in `entities/ed-zitron.md` Notable Articles table + sources frontmatter.
+- **SKIPPED:** `raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md` — AGI economics content captured in `concepts/agi-economics.md` + `entities/dwarkesh-patel.md`.
+- **SKIPPED:** `raw/articles/paulgraham.com--popular-html--c633a6dc.md` — Out of scope (2001 programming language essay, not AI/LLM related).
+
+**Pipeline status**: Saturation pattern confirmed — full daily pipeline has consumed all AI-relevant backlog content. Remaining backlog is duplicates + non-AI content.
+
+---
 ## [2026-06-09] Daily Skeleton Enrichment — Enriched Ido Pesok & Spice AI (status: stub to complete)
 
 **Action**: Regular skeleton enrichment. No 'status: skeleton' entity pages found. Enriched 2 'status: stub' entity pages as fallback.
@@ -7,10 +42,8 @@
 - **ENRICHED: [[entities/ido-pesok.md]]** — Removed 'status: stub'. Updated frontmatter (removed duplicate 'infrastructure' tag, added 'ai-agents' tag, added 'aliases', added raw article source). Added Background section framing his thesis. Added Graph Structure Query section. Fixed Related section for accuracy.
 - **ENRICHED: [[entities/spice-ai.md]]** — Removed 'status: stub'. Expanded from 60 to 105 lines. Added full Platform section (SQL federation, hybrid search, LLM inference, MCP, Cayenne, CDC, edge-to-cloud). Added Company Info block (founded 2021, founders Luke Kim/Phillip LeBlanc, Rust/DataFusion stack, Apache-2.0 license, 2,950+ GitHub stars, SOC 2 Type II, partners). Expanded tags. Added Related section.
 
+---
 ## [2026-06-09] Dreaming Wiki Ingest — Enriched Martin Alderson (xAI Datacentre REIT)
-\n## [2026-06-09] Daily Skeleton Enrichment — Enriched Ido Pesok & Spice AI (status: stub to complete)
-\n
-**Action**: Regular skeleton enrichment. No `status: skeleton` entity pages found. Enriched 2 `status: stub` entity pages as fallback.
 
 **Pipeline**: dreaming-collect (18:00) → dreaming-group (18:10) → dreaming-wiki-ingest (18:20)
 **Source batch**: 6 RSS articles from June 9 scan

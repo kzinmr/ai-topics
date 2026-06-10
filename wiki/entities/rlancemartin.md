@@ -1,7 +1,7 @@
 ---
 title: "Lance Martin (@rlancemartin)"
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-09
 type: entity
 tags:
   - person
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-05-19_modal_claude-managed-agents-sandboxes.md
   - raw/articles/2026-05-19_vercel_claude-managed-agents-sandbox.md
   - raw/articles/2026-05-19_daytona_claude-managed-agents.md
+  - raw/articles/2026-06-09_rlancemartin_designing-loops-with-fable-5.md
   - https://github.com/anthropics/skills/tree/main/skills/claude-api
   - https://github.com/anthropics/claude-cookbooks/tree/main/managed_agents/self_hosted_sandboxes
 ---
@@ -53,6 +54,19 @@ Martin maintains the `claude-api` skill — a modular package in Anthropic's ski
 ### Context Engineering for Production Agents
 
 Co-author of Anthropic's "Effective Context Engineering for AI Agents" (see [[entities/lance-martin|full profile]]), Martin's context engineering framework — the **Write/Select/Compress/Isolate taxonomy** — directly informs his work on Managed Agents. Self-hosted sandboxes embody the "Isolate" strategy: physically separating execution context from reasoning context.
+
+### Designing Loops with Fable 5 (June 2026)
+
+Martin's June 9, 2026 X article "Designing loops with Fable 5" articulates two core patterns for maximizing Claude Fable 5's capabilities:
+
+1. **Self-correction loops**: Using `/goal` in Claude Code and Outcomes in Claude Managed Agents as primitives that provide environment feedback for model hillclimbing. Fable 5 excels at self-correcting when given well-designed goals or rubrics.
+
+2. **Memory as outer loop**: Memory spans across sessions — Claude writes to memory during a session and retrieves it in future sessions. Fable 5 demonstrates superior memory progression: fail → investigate → verify → distill → consult.
+
+Key findings from his experiments:
+- **Parameter Golf benchmark**: Fable 5 improved the training pipeline ~6x more than Opus 4.7, betting on larger structural changes and showing resilience through regressions.
+- **Verifier sub-agent**: A verifier sub-agent outperforms self-critique because grading happens in an independent context window.
+- **Memory progression**: Fable 5 achieves up to 73% verification coverage (vs Opus 4.7's 7-33%) and distills learnings into general rules for future tasks.
 
 ## Key Work
 

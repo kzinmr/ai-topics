@@ -1251,6 +1251,7 @@
 - [[concepts/delta-channels]] — LangGraph DeltaChannel (beta v1.2, May 2026) — incremental checkpoint storage for long-running agents. Writes only deltas per step, full snapshots every K steps. Bounds resume cost for production agents running thousands of steps.
 - [[concepts/delta-updates-redis]] — Delta Updates via Redis: Pattern for real-time incremental update distribution between agents via Redis.
 - [[concepts/designing-ml-systems]] — Designing ML Systems
+- [[concepts/designing-loops-with-fable-5]] — Designing loops with Fable 5 — Lance Martin's patterns for maximizing Claude Fable 5 through self-correction loops and memory-managed sessions. Parameter Golf benchmark: Fable 5 improved ~6x more than Opus 4.7. Memory progression: fail → investigate → verify → distill → consult.
 - [[concepts/dflash-ggml]] — DFlash on ggml: ggml port of DFlash speculative decoding.
 - [[concepts/dflash]] — DFlash: flash speculative decoding via lightweight block diffusion model.
 - [[concepts/dgx-spark-local-llm-server]] — DGX Spark Local LLM Server
