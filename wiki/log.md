@@ -7693,3 +7693,13 @@ Updated:
 - `concepts/claude/model-family.md`: long-name stub → `concepts/claude-code`
 - `concepts/llm-course-roadmap.md`: long-name stub → `concepts/claude-code`
 - `index.md`: removed 4 entries, updated count 1022→1018
+
+## 2026-06-10 (GPT/OpenAI Wiki Reorganization)
+- **REORGANIZED**: Created `concepts/gpt/` subdirectory — 37 pages moved from flat concepts/ and entities/
+- **MOVED**: 34 concept pages → `concepts/gpt/` (GPT models, ChatGPT features, OpenAI platform, system cards)
+- **MOVED**: 1 entity page → `concepts/gpt/` (gpt-oss, type changed entity→concept)
+- **MERGED**: 2 entity pages into concept pages (gpt-5.5 → gpt/5-5, gpt-5-5-instant → gpt/5-5-instant)
+- **ARCHIVED**: 2 news aggregation pages → `concepts/gpt/_archive/`
+- **UPDATED**: 72 files, 177 wikilink replacements across wiki
+- **CREATED**: `concepts/gpt/index.md` MOC (was concepts/gpt-models.md)
+- **NOTE**: entities/openai.md, entities/openai-codex.md, entities/openai-foundation.md remain as entities (org/product pages)

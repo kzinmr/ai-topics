@@ -30,7 +30,6 @@
 - [[entities/box-com]] — Box (box.com) — Enterprise cloud content management platform. AI-native platform with Box AI, Box Hubs, Box Canvas. Aaron Levie CEO.
 - [[entities/centaur]] — Centaur — Paradigm/Tempo open-source (Apache 2.0) multiplayer self-hosted agent runtime. Iron Proxy credential isolation, Slack integration, durable execution since Jan 2026.
 - [[entities/cerebras-systems]] — Cerebras Systems — Wafer-scale AI chips, CS-3 system, 1.2M cores on single wafer
-- [[concepts/claude/perfect-memory]] — Claude Perfect Memory
 - [[entities/command-a-plus]] — Command A+ — Cohere's 218B MoE model, first fully Apache 2.0 licensed. 25B active params, 48 languages, W4A4 quantization, 2× H100 deployment. May 2026.
 - [[entities/company-ai-pilled]] — Company AI Pilled
 - [[entities/content-engine]] — Content Engine
