@@ -7554,3 +7554,12 @@ Updated:
   - Capabilities: State-of-the-art on wide range of benchmarks
 
 **Source**: https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf
+
+---
+
+## [2026-06-10] Entity Update — System Card references for Claude Mythos & Fable 5
+
+**Action**: Added system card references and frontier LLM development restriction details to both entity pages.
+
+- **UPDATED: [[entities/claude-mythos.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "Frontier LLM Development Restrictions (System Card)" subsection under Capability Limitation Debate with full quote and key design choices (invisible safeguards, PEFT/steering vectors, ~0.03% traffic impact).
+- **UPDATED: [[entities/claude-fable-5.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "System Card Evidence: Frontier LLM Development Restrictions" subsection under Controversy with system card quote confirming intentional invisible restrictions on frontier LLM development tasks.

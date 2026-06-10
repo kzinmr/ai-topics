@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md
   - raw/articles/2026-06-09_rlancemartin_designing-loops-with-fable-5.md
   - raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md
+  - raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md
   - https://x.com/claudeai/status/2064394146916229443
 ---
 
@@ -150,6 +151,19 @@ The release of Fable 5 sparked debate about the transparency and scope of safety
 - **[[entities/elie-bakouch]]** (Prime Intellect) criticized that Mythos-class models will be "bad ON PURPOSE on ai 'frontier llm research' tasks" and that the hidden nature of these restrictions is "crazy" (3,800+ likes, 1.2M impressions)
 - **Research community concerns**: The deliberate weakening of frontier models on research tasks creates an artificial ceiling for AI research
 - **Transparency gap**: Users cannot tell whether poor performance on research tasks is due to model limitations or intentional restrictions
+
+### System Card Evidence: Frontier LLM Development Restrictions
+
+The [[raw/papers/2026-06-09_claude-fable5-mythos5-system-card|System Card]] confirms these restrictions are intentional and documents their implementation:
+
+> "We've implemented new interventions that limit Claude's effectiveness for requests targeting frontier LLM development (for example, on building pretraining pipelines, distributed training infrastructure, or ML accelerator design). Using Claude to develop competing models already violates our Terms of Service, but enforcing this restriction through our safeguards avoids accelerating the actors most willing to violate these terms."
+
+Critical details from the System Card:
+- **Invisible safeguards**: Unlike cyber/bio/distillation classifiers (which fall back to Opus 4.8), these restrictions are NOT visible to users — no model switch, no error message
+- **Mechanisms**: Prompt modification, steering vectors, or parameter-efficient fine-tuning (PEFT)
+- **Estimated impact**: ~0.03% of traffic, concentrated in <0.1% of organizations
+- **Rationale**: Preventing acceleration of AI development without commensurate safeguards — Anthropic's concern from their February 2026 Risk Report about "accelerating other AI developers in building powerful AI systems that pose similar risks"
+- **User experience**: Claude still responds helpfully; effectiveness is silently limited only for frontier LLM development tasks
 
 ## Availability
 
