@@ -80,11 +80,17 @@ participants:
 
 **[00:11:05]** Especially as we get towards the RL section, I am a very big fan of DeepSeek. The newest DeepSeek V3 model — not R1. R1 is good for some things, but for the things that I think will be useful to most people, it's good to have a model that's not just a reasoner model.
 
+> **Supplementary notes (from course materials):** DeepSeek V3-0324 — cheap, reliable, solid all-around (comparable to Sonnet 3.5 / GPT-4o). Not a "reasoner" by default but works with `<think>` prompting (trained on R1 data). Free + automatic prefix caching via deepseek.ai. Available from many providers (Bedrock, Azure Foundry, Together, Fireworks, OpenRouter). **No restrictions on distillation/training** — critical for RL workflows where you train on model outputs.
+
 **[00:11:25]** DeepSeek V3 is nice because it's super cheap — about the cost between GPT 4.1 Mini and 4.1 Nano. It's a dirt cheap model as far as smart models go. It's also a model that you are very permissively allowed to train on the outputs of. This is a thing that comes up a lot in practice, especially if you're working in enterprise settings where if you want to do fine tuning, you do have to be careful about where you're getting your data from.
 
 **[00:12:15]** GPT 4.1 is probably a very good starting agent model for many people. Chain of thought is really useful as a reasoning pattern. But it's not always the sort of thing where you really want to use a heavy duty reasoner model for everything — because that incurs higher costs as well as latency. As you go up towards scaling many tool calls, sometimes the tools are essentially taking the place of chain of thought where the reasoning chain is not just one long message, but it's lots and lots of small ones.
 
+> **Supplementary notes:** GPT 4.1 — more "agentic" / less "chatty" alternative to GPT-4o. Good default for capable non-reasoner, especially in OpenAI-centric workflows.
+
 **[00:13:19]** The other 2 that are kind of very popular in the middle models are Claude Sonnet and Gemini 2.5 Pro. People have very strong preferences about these models. I think you should just pick one that you like that works for you and your budget, but also in terms of which providers you're able to access.
+
+> **Supplementary notes:** Claude 4 Sonnet and Gemini 2.5 Pro — very strong all-around agentic models. Popular in code editors (Cursor, Windsurf, Claude Code). Both support configurable thinking budgets.
 
 **[00:14:07]** Most of what you care about is having a model that is very good at being an LLM. More so than a model that has all the answers to every question in the universe. Because what we care about is models that are doing work. And a lot of the work people want models to do is not actually that intellectually difficult, but it requires interacting with complex systems. And so the ability to reliably call tools is really important.
 
@@ -100,6 +106,13 @@ participants:
 
 **[00:17:28]** The Qwen models are nice. They're very popular among researchers who are doing fine tuning, partly because they're really good on benchmarks out of the box. Gemma is similar. For doing research experiments, it's nice to have access to a model suite where you can measure how things change as you go up the model suite. This is one big reason why the Qwen models are very popular — they have lots of sizes, from 0.6B up to 200 something.
 
+> **Supplementary notes (from course materials):**
+> - Mistral Small 3.1 (24B): very permissive license; popular as a finetuning base
+> - Qwen 2.5/3: many variants + sizes; Qwen3 models are "thinking optional"
+> - Gemma 3: mini/open versions of Gemini (2B–27B); good model suite for scaling experiments
+> - Llama 3.1 8B: still perfectly fine as a small helper; widely hosted by inference providers
+> - Phi-4: non-reasoning small model; decent for simple helper methods
+
 ### Reasoner Models
 
 **[00:19:17]** Models that are good to know about and have their place but don't use all the time are the reasoners. The big Claude Opus.
@@ -107,6 +120,12 @@ participants:
 **[00:19:29]** The reasoner models are really nice as single hard problems, like as a chatbot in an interface where you want to be typing a question and having a model think really hard about the context you give it and give you a really great answer at the end. In the context of an agent pipeline, you want to be very surgical with using them, because they will add a lot of latency. And if you're doing things that involve many tool calls, some of these models are not very good at managing context or not thinking too much.
 
 **[00:20:13]** It's maybe hard to justify for anything that's a consumer facing agent where you were hoping to charge reasonable amounts.
+
+> **Supplementary notes (from course materials):**
+> - o3, o4-mini: generally slow, expensive, prone to overthinking. Often overkill if you require low latency + many tool calls. *o4-mini supports the RFT API for reinforcement learning.*
+> - DeepSeek R1: good for hard reasoning tasks; not for primary agent use
+> - Claude 4 Opus: one of the strongest models ever made, but very expensive
+> - Llama 4 (Scout / Maverick): fast inference + multimodal + openly available + fairly strong. Lots of RAM needed for self-hosting; similar license to Llama models.
 
 ---
 

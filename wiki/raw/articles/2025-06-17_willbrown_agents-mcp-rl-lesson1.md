@@ -29,12 +29,40 @@ The inaugural lecture establishes the course's central thesis: **RL and agents a
 
 ### 1. Model Ecosystem Recommendations
 
-| Category | Recommended Models | Notes |
-|----------|-------------------|-------|
-| **Primary Agent** | GPT 4.1, DeepSeek V3, Claude Sonnet, Gemini 2.5 Pro | Prioritize tool-use reliability over raw intelligence |
-| **Helper (cheap)** | GPT 4.1 Mini/Nano, Gemini Flash, Haiku, Mistral Small 3.1, Qwen | For bulk processing, LLM-as-judge, synthetic data |
-| **Reasoner (surgical)** | Claude Opus, DeepSeek R1 | Use sparingly for hard problems; high latency in multi-tool pipelines |
-| **Open (fine-tunable)** | Qwen (0.6B–200B+), Gemma 3 (2B–27B), Mistral Small 3.1 | Permissive licensing for training on outputs |
+#### Primary Agent Models
+
+| Model | Strengths | Notes |
+|-------|-----------|-------|
+| **DeepSeek V3-0324** | Cheap, reliable, solid all-around (comparable to Sonnet 3.5 / GPT-4o) | Not a "reasoner" by default but works with `<think>` prompting (trained on R1 data). Free + automatic prefix caching via deepseek.ai. Available from many providers (Bedrock, Azure Foundry, Together, Fireworks, OpenRouter). **No restrictions on distillation/training.** |
+| **GPT 4.1** | More "agentic" / less "chatty" than GPT-4o | Good default for capable non-reasoner, especially in OpenAI-centric workflows |
+| **Claude 4 Sonnet** | Very strong all-around agentic model | Popular in code editors (Cursor, Windsurf, Claude Code). Configurable thinking budgets. |
+| **Gemini 2.5 Pro** | Very strong all-around agentic model | Configurable thinking budgets. Popular alongside Sonnet. |
+
+**Selection principle:** Prioritize tool-use reliability over raw intelligence. *"Most of what you care about is having a model that is very good at being an LLM. More so than a model that has all the answers to every question in the universe."*
+
+#### Helper Models (cheap, bulk processing)
+
+| Model | Notes |
+|-------|-------|
+| **GPT 4.1 Mini / Nano** | Good default helpers for OpenAI users |
+| **Gemini 2.5 Flash** | Google's fast/cheap option |
+| **Claude 3.5 Haiku** | Anthropic's fast/cheap option |
+| **Mistral Small 3.1 (24B)** | Very permissive license; popular as a finetuning base. *"If you were going to pick only one open model to do everything with, that's a pretty good one."* |
+| **Qwen 2.5/3** | Many variants + sizes (0.6B–200B+). Popular for finetuning + self-hosting. Qwen3 models are "thinking optional." |
+| **Gemma 3** | Mini/open versions of Gemini (2B–27B). Good model suite for scaling experiments. |
+| **Llama 3.1 8B** | Still perfectly fine as a small helper; widely hosted by inference providers |
+| **Phi-4** | Non-reasoning small model; decent for simple helper methods |
+
+#### Reasoner Models (use surgically)
+
+| Model | Notes |
+|-------|-------|
+| **o3, o4-mini** | Generally slow, expensive, prone to overthinking. Often overkill if you require low latency + many tool calls. *o4-mini supports the RFT API for reinforcement learning.* |
+| **DeepSeek R1** | Good for hard reasoning tasks; not for primary agent use |
+| **Claude 4 Opus** | One of the strongest models ever made, but very expensive |
+| **Llama 4 (Scout / Maverick)** | Fast inference + multimodal + openly available + fairly strong. Lots of RAM needed for self-hosting; similar license to Llama models. |
+
+> *"In the context of an agent pipeline, you want to be very surgical with using reasoner models, because they will add a lot of latency. And if you're doing things that involve many tool calls, some of these models are not very good at managing context or not thinking too much."*
 
 ### 2. Tool Calling & Structured Outputs
 
