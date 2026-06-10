@@ -1,4 +1,11 @@
 
+## [2026-06-10] Claude Code history update — Sonnet 3.7 adoption, Opus 4 agentic shift
+
+**Action**: Updated `entities/claude-code--history.md` with Sonnet 3.7 (Feb 2025) as the first wave of practical adoption and Opus 4 (May 2025) as the agentic inflection point. Updated `concepts/claude/system-cards.md` milestones to include Claude Code GA and "strategy-first" shift.
+
+**Pages updated**: `entities/claude-code--history.md` (Sonnet 3.7 adoption, Opus 4 agentic shift), `concepts/claude/system-cards.md` (milestone 2)
+**Source**: Existing wiki context (Claude Code history, System Cards evolution)
+
 ## [2026-06-10] Claude System Cards index update — Fable 5 & Mythos 5 added, milestone evolution summary
 
 **Action**: Updated `concepts/claude/system-cards.md` with Fable 5 and Mythos 5 entries (17 total system cards). Added "Major Milestones in System Card Evolution" section covering 6 phases: Introduction (2023-2024), ASL Formalization (2024-2025), Interpretability & Alignment (2025-2026), Cybersecurity & Agentic Safety (2026), Mythos-Class & Safety Classifiers (2026), Key Structural Innovations.

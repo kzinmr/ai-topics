@@ -78,8 +78,8 @@ Modern system cards (Opus 4.6+) follow a consistent structure:
 
 ### 2. Formalization of Safety Levels (2024-2025)
 - **Claude Haiku 3.5 & Sonnet 3.5 (Oct 2024)**: Introduction of **ASL-2** classification. First formal safety level assignment.
-- **Claude Sonnet 3.7 (Feb 2025)**: Continued ASL-2 classification.
-- **Claude Sonnet 4 & Opus 4 (May 2025)**: First **ASL-3** release. Introduction of **alignment assessment** section. Major expansion of evaluation scope.
+- **Claude Sonnet 3.7 (Feb 2025)**: Continued ASL-2 classification. **First wave of practical Claude Code adoption** — improved instruction following and code generation made Claude Code viable for real-world development tasks. Internal adoption at Anthropic became near-universal. The "parallel agents" pattern emerged.
+- **Claude Sonnet 4 & Opus 4 (May 2025)**: First **ASL-3** release. Introduction of **alignment assessment** section. Major expansion of evaluation scope. **Claude Code reached General Availability** — Opus 4's improved agentic capabilities (longer task execution, better tool use, more reliable multi-step reasoning) made autonomous workflows viable. Organizations began reporting the "strategy-first" shift (70% strategy / 30% execution).
 
 ### 3. Interpretability and Alignment Assessment (2025-2026)
 - **Claude Opus 4.1 (Aug 2025)**: Continued ASL-3. Refinement of alignment assessment methodology.

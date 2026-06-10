@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-06-10T07:35:46.815670+00:00",
+  "triage_run_id": "20260610T071540Z",
+  "source": "newsletter",
+  "summary_ja": "2026-06-10 ニュースレター・トリアージ結果: 7ニュースレター（SemiAnalysis、Ben's Bites、Lenny's Podcast×2（書籍/Claude Fable 5）、Superintel、Interconnects（Nathan Lambert）、AINews（swyx））を処理。3件のtake（既存ページ更新推奨）、3件のreference、1件のskip。\n主な発見:\n• SemiAnalysisのDeepSeek V4 1.6T 43日間パフォーマンス追跡 — 既存deepseek-v4.mdに動作実績データが不足\n• Nathan LambertのFable 5安全性批判的分析 — 既存fable-5.mdに批判的安全論評が欠如\n• AINewsのFable 5 RSI抑制論争 — 既存fable-5.mdにRSI（Recursive Self-Improvement）抑制の記述が完全欠落\n• SuperintelのSiri AI欧州規制摩擦 — 既存siri-ai.mdは規制面の深堀りが不足（参照レベル）\n• Ben's Bitesはニュースラウンドアップ（ほとんど既存カバレッジと重複）",
+  "decisions": [
+    {
+      "item_id": "<20260609.165730.a5388ae6@mta27>-1",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "Siri AI Hits Europe's Wall",
+      "url": "https://getsuperintel.site/p/siri-ai-hits-europe-s-wall",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-siri-ai-hits-europe-s-wall.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存concepts/siri-ai.md参照: Siri AIの欧州規制摩擦（DMA/AI Act）。現行Siri AIページはEU制限を1行で記載するのみ（Mac/AVPのみ利用可、iOS不可）。Superintel分析は規制面の深堀りを提供する可能性があるが、beehiivトラッキングURLが期限切れ（403）で全文取得不可のため、inbox事前トリアージ要約のみに基づく判断。",
+      "candidate_wiki_path": "concepts/siri-ai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-09\n**Subject:** 🍎 Siri AI Hits Europe’s Wall\n**Collected:** 2026-06-10T07:15:35.465829+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/tDCaMWZXcumODuvc5xEYYdbTJU8onAw%2FXAyo9iD9vXK7TdCm9GOKFcQcay%2BE%0ALauTLXH8AjLEj0xRQWzINsSevt2Pf"
+    },
+    {
+      "item_id": "<20260609130218.3.75db277ede466cf1@mg-d1.substack.com>-6",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Hey Siri, meet AI",
+      "url": "https://www.bensbites.com/p/hey-siri-meet-ai",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-hey-siri-meet-ai.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ エンティティ更新の参照: Ben's BitesのAIニュースラウンドアップ。Siri AI（既存ページでカバー済）、ChatGPT Dreaming v3メモリ、Anthropic 8xコード生産性主張、OpenAI S-1提出、NotebookLM Antigravityアップグレード、FrontierCode eval、Firecrawl Workflows、Fin Voice 2。個別には既存カバレッジと重複するが、agent loop設計の議論（plan.md駆動、スキル設計）はagentic-engineering概念への軽い参照として有用。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-09\n**Subject:** Hey Siri, meet AI\n**Collected:** 2026-06-10T07:15:33.068418+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2"
+    },
+    {
+      "item_id": "<20260609200704.3.22ad5e7b554b29cf@mg2.substack.com>-4",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "Claude Fable 5 review: what the new Mythos model gets right (and very wrong)",
+      "url": "https://www.lennysnewsletter.com/p/claude-fable-5-review-what-the-new",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-claude-fable-5-review-what-the-new-mythos-model-gets-right-and-very-wrong.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ ポッドキャスト番組ノートのみ（46段落中、実質的な内容は10行のタイムスタンプ要約、26個のオーディオUI要素）。@clairevoによるFable 5のレビュー（長所と短所）だが、独立した記事本文は存在せず、ポッドキャストのショーノートのみ。Fable 5エンティティページへの軽い参照としてのみ有用。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-09\n**Subject:** Claude Fable 5 review: what the new Mythos model gets right (and very wrong)\n**Collected:** 2026-06-10T07:15:36.810416+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20"
+    },
+    {
+      "item_id": "<20260609131130.3.50b19a88022d3f99@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "Essential books for product builders—part 2",
+      "url": "https://open.substack.com/pub/lenny/p/essential-books-for-product-builderspart-611",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-essential-books-for-product-builders-part-2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ: プロダクトビルダー向けの書籍推薦（パート2）。LLM/AI Agent技術とは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-09\n**Subject:** Essential books for product builders—part 2\n**Collected:** 2026-06-10T07:15:34.273394+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1h"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "archived_at": "2026-06-10T07:37:45.755222+00:00",
+  "triage_run_id": "20260610T073745Z",
+  "source": "blog",
+  "summary_ja": "",
+  "decisions": [
+    {
+      "title": "A quote from Andrej Karpathy",
+      "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/#atom-everything",
+      "blog": "simonwillison.net",
+      "raw_path": "raw/articles/simonwillison.net--2026-jun-9-andrej-karpathy--fa08e356.md",
+      "star_rating": 3,
+      "recommended_action": "reference",
+      "wiki_target": "entities/andrej-karpathy.md",
+      "action_type": "enrich",
+      "reason": "Karpathy quote on Fable 5 — Jevons paradox for software demand, 'tap' to generate working software. Notable but brief.",
+      "body_excerpt": ""
+    },
+    {
+      "title": "The revenge of Claude Mythos",
+      "url": "https://garymarcus.substack.com/p/the-revenge-of-claude-mythos",
+      "blog": "garymarcus.substack.com",
+      "raw_path": "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md",
+      "star_rating": 3,
+      "recommended_action": "reference",
+      "wiki_target": "concepts/claude/mythos.md",
+      "action_type": "enrich",
+      "reason": "Gary Marcus's critique of Anthropic's 'scare, hype, release' pattern — provides counterpoint perspective to existing Mythos page.",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Setting a custom price for a model in AgentsView",
+      "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything",
+      "blog": "simonwillison.net",
+      "raw_path": "raw/articles/simonwillison.net--2026-jun-9-agentsview-custom-model-price--0f8a71af.md",
+      "star_rating": 2,
+      "recommended_action": "reference",
+      "wiki_target": "entities/wes-mckinney.md",
+      "action_type": "enrich",
+      "reason": "Brief mention of AgentsView tool for token usage tracking. Existing entity page already covers it.",
+      "body_excerpt": ""
+    },
+    {
+      "title": "llm 0.32a3",
+      "url": "https://simonwillison.net/2026/Jun/9/llm/#atom-everything",
+      "blog": "simonwillison.net",
+      "star_rating": 2,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "LLM tool version update — already covered by Simon Willison entity page timeline. Not saved by ingest."
+    },
+    {
+      "title": "Weekly Update 507",
+      "url": "https://www.troyhunt.com/weekly-update-507/",
+      "blog": "troyhunt.com",
+      "star_rating": 1,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Security roundup — not AI/LLM relevant."
+    },
+    {
+      "title": "Pluralistic: Naomi Kritzer's Obstetrix",
+      "url": "https://pluralistic.net/2026/06/09/deliver-us/",
+      "blog": "pluralistic.net",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Copyright/culture post — not AI/LLM relevant."
+    },
+    {
+      "title": "Incorruptible",
+      "url": "https://steveblank.com/2026/06/09/incorruptible/",
+      "blog": "steveblank.com",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Startup/governance post — not AI/LLM relevant."
+    },
+    {
+      "title": "Forms of Open Source Government",
+      "url": "https://nesbitt.io/2026/06/09/forms-of-open-source-government.html",
+      "blog": "nesbitt.io",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Open source governance — not AI/LLM relevant."
+    },
+    {
+      "title": "CSS: Unavoidable Bad Parts",
+      "url": "https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html",
+      "blog": "matklad.github.io",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "CSS technical post — not AI/LLM relevant."
+    },
+    {
+      "title": "A Record-Breaking Patch Tuesday for June 2026",
+      "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+      "blog": "krebsonsecurity.com",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Security patching — not AI/LLM relevant."
+    },
+    {
+      "title": "Active recall",
+      "url": "https://herman.bearblog.dev/active-recall/",
+      "blog": "herman.bearblog.dev",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Learning technique post — not AI/LLM relevant."
+    },
+    {
+      "title": "Stop eating Lady Gaga's Oreos",
+      "url": "https://www.experimental-history.com/p/stop-eating-lady-gagas-oreos",
+      "blog": "experimental-history.com",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Culture/social commentary — not AI/LLM relevant."
+    },
+    {
+      "title": "Apple II: Launched June 10, 1977",
+      "url": "https://dfarq.homeip.net/apple-ii-launched-june-10-1977/",
+      "blog": "dfarq.homeip.net",
+      "star_rating": 0,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Vintage computing history — not AI/LLM relevant."
+    },
+    {
+      "title": "WWDC26 - The Small Things",
+      "url": "https://blog.oneberri.com/posts/wwdc26-the-small-things",
+      "blog": "daringfireball.net",
+      "star_rating": 2,
+      "recommended_action": "reference",
+      "wiki_target": "concepts/apple-gemini-ai-architecture.md",
+      "action_type": "enrich",
+      "reason": "WWDC small features roundup — could enrich Apple AI coverage but low priority."
+    },
+    {
+      "title": "Apple's WWDC AI demos looked more real after $250M false ad settlement",
+      "url": "https://techcrunch.com/2026/06/08/apples-wwdc-ai-demos-looked-more-real-after-250m-false-ad-settlement/",
+      "blog": "daringfireball.net",
+      "raw_path": "raw/articles/techcrunch.com--2026-06-08-apples-wwdc-ai-demos-looked-more-real-after-250m---66efa84f.md",
+      "star_rating": 2,
+      "recommended_action": "reference",
+      "wiki_target": "concepts/apple-gemini-ai-architecture.md",
+      "action_type": "enrich",
+      "reason": "Context on Apple AI demo credibility — background reference.",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Making sure you're not a bot!",
+      "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-45447/",
+      "blog": "xeiaso.net",
+      "raw_path": "raw/articles/xeiaso.net--shitposts-no-way-to-prevent-this-memory-safety-cve-2026-4544--1d00f2c6.md",
+      "star_rating": 1,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "Memory safety satire — not AI/LLM relevant.",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Apple WWDC 2026 Keynote",
+      "url": "https://www.youtube.com/watch?v=hF8swzNR1-o",
+      "blog": "daringfireball.net",
+      "star_rating": 2,
+      "recommended_action": "skip",
+      "wiki_target": null,
+      "action_type": null,
+      "reason": "YouTube keynote video — not scrapable as text article."
+    }
+  ]
+}

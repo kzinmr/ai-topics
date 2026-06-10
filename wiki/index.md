@@ -679,7 +679,7 @@
 - [[entities/boris-cherny--key-work]] — Boris Cherny key contributions and projects
 - [[entities/claude-code--architecture]] — Claude Code architecture and design patterns
 - [[entities/claude-code--capabilities]] — Claude Code capabilities and feature set
-- [[entities/claude-code--history]] — Claude Code development history and evolution
+- [[entities/claude-code--history]] — Claude Code development history: Origins (Sep 2024), internal dogfooding (Nov 2024, 50% adoption in 5 days), Sonnet 3.7 first wave (Feb 2025), Opus 4 agentic shift & GA (May 2025), Agent Teams GA (2026), source code leak (Mar 2026).
 - [[entities/clefourrier--core-ideas]] — Clefourrier core ideas on software development
 - [[entities/clefourrier--influence]] — Clefourrier influence on the developer community
 - [[entities/clefourrier--key-quotes]] — Notable quotes from Clefourrier
