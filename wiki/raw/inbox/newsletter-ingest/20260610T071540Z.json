@@ -1,0 +1,132 @@
+{
+  "run_id": "20260610T071540Z",
+  "triaged_at": "2026-06-10T07:20:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 7,
+  "summary": {
+    "critical": 4,
+    "high": 2,
+    "low": 1
+  },
+  "key_themes": [
+    "Anthropic Claude Fable 5 / Mythos model release (3 newsletters covering review, safety angle, and AINews aggregation with ToS controversy)",
+    "DeepSeek V4 1.6T multi-hardware performance tracking (SemiAnalysis)",
+    "Apple Siri AI integration + European regulatory friction"
+  ],
+  "results": [
+    {
+      "uid": "uid=204",
+      "subject": "DeepSeekV4 1.6T Day 0 to Day 43 Performance Over Time - Huawei, GB300 NVL72, MI355X, B200",
+      "date": "2026-06-09",
+      "classification": "critical",
+      "reason": "SemiAnalysis deep-dive on DeepSeek V4 1.6T model training performance across Huawei, NVIDIA GB300 NVL72, AMD MI355X, and B200 accelerators over 43 days. Core AI infrastructure and hardware benchmarking content.",
+      "source": "SemiAnalysis (substack)",
+      "wiki_targets": [
+        "entities/deepseek.md",
+        "concepts/model-training-infrastructure.md",
+        "comparisons/accelerator-benchmarks.md"
+      ],
+      "tags": ["deepseek", "hardware", "training", "accelerators", "semianalysis", "benchmarking"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-deepseekv4-1-6t-day-0-to-day-43-performance-over-time-huawei-gb300-nvl72-mi355x-.md",
+      "article_count": 20
+    },
+    {
+      "uid": "uid=205",
+      "subject": "Hey Siri, meet AI",
+      "date": "2026-06-09",
+      "classification": "high",
+      "reason": "Ben's Bites coverage of Apple Siri AI integration. Major tech company AI assistant strategy — relevant for consumer AI entity and concept pages.",
+      "source": "Ben's Bites (substack)",
+      "wiki_targets": [
+        "entities/apple.md",
+        "concepts/ai-assistants.md"
+      ],
+      "tags": ["apple", "siri", "ai-assistants", "consumer-ai"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-hey-siri-meet-ai.md",
+      "article_count": 20
+    },
+    {
+      "uid": "uid=206",
+      "subject": "Essential books for product builders—part 2",
+      "date": "2026-06-09",
+      "classification": "low",
+      "reason": "Lenny's Newsletter on product management books. Not directly relevant to AI/LLM/Agent wiki scope.",
+      "source": "Lenny's Newsletter (substack)",
+      "wiki_targets": [],
+      "tags": ["product-management", "books", "not-ai-focused"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-essential-books-for-product-builders-part-2.md",
+      "article_count": 20
+    },
+    {
+      "uid": "uid=207",
+      "subject": "Siri AI Hits Europe's Wall",
+      "date": "2026-06-09",
+      "classification": "high",
+      "reason": "European regulatory friction with Apple Siri AI deployment. Relevant for AI regulation/policy and Apple entity pages.",
+      "source": "Super Intel (beehiiv)",
+      "wiki_targets": [
+        "entities/apple.md",
+        "concepts/ai-regulation.md"
+      ],
+      "tags": ["apple", "siri", "eu-regulation", "ai-act", "consumer-ai"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-siri-ai-hits-europe-s-wall.md",
+      "article_count": 20
+    },
+    {
+      "uid": "uid=208",
+      "subject": "Claude Fable 5 review: what the new Mythos model gets right (and very wrong)",
+      "date": "2026-06-09",
+      "classification": "critical",
+      "reason": "Review of Anthropic's Claude Fable 5 / Mythos model — new major model release with critical analysis of strengths and weaknesses. Key for model landscape updates.",
+      "source": "Lenny's Newsletter (substack) — via @clairevo",
+      "wiki_targets": [
+        "entities/anthropic.md",
+        "entities/claude.md",
+        "concepts/model-evaluations.md"
+      ],
+      "tags": ["anthropic", "claude", "model-releases", "mythos", "reviews"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-claude-fable-5-review-what-the-new-mythos-model-gets-right-and-very-wrong.md",
+      "article_count": 20
+    },
+    {
+      "uid": "uid=209",
+      "subject": "Claude Fable 5 and new AI safety fables",
+      "date": "2026-06-09",
+      "classification": "critical",
+      "reason": "Nato Lambert's analysis of Claude Fable 5 with focus on AI safety implications and 'fables' framing. Dual relevance for Anthropic entity and AI safety concepts.",
+      "source": "Robotic / Nato Lambert (substack)",
+      "wiki_targets": [
+        "entities/anthropic.md",
+        "entities/claude.md",
+        "concepts/ai-safety.md",
+        "concepts/alignment.md"
+      ],
+      "tags": ["anthropic", "claude", "ai-safety", "alignment", "mythos"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-09-claude-fable-5-and-new-ai-safety-fables.md",
+      "article_count": 20
+    },
+    {
+      "uid": "uid=210",
+      "subject": "[AINews] Anthropic Claude Fable 5 — Mythos but Safe, with Controversial Terms",
+      "date": "2026-06-10",
+      "classification": "critical",
+      "reason": "swyx's AINews aggregation of Claude Fable 5 release with emphasis on controversial terms of service. Community consensus view plus ToS controversy — important for entity and policy tracking.",
+      "source": "AINews / swyx (substack)",
+      "wiki_targets": [
+        "entities/anthropic.md",
+        "entities/claude.md",
+        "concepts/ai-safety.md",
+        "concepts/terms-of-service.md"
+      ],
+      "tags": ["anthropic", "claude", "ainews", "terms-of-service", "controversy", "mythos"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-10-ainews-anthropic-claude-fable-5-mythos-but-safe-with-controversial-terms.md",
+      "article_count": 20
+    }
+  ],
+  "processing_notes": [
+    "3 newsletters cover Claude Fable 5 from different angles (review, safety, AINews aggregation) — consolidate during wiki-ingest",
+    "DeepSeek V4 hardware comparison is SemiAnalysis content — high-value for accelerator benchmarks page",
+    "2 Apple Siri newsletters (integration + EU regulation) can be merged during wiki-ingest",
+    "1 newsletter (books) classified low — skip during wiki-ingest"
+  ]
+}
