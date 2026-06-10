@@ -7910,3 +7910,5 @@ Updated:
 - 2026-06-10 | concept | ai-benchmarks/obliq-bench | OBLIQ-Bench: Oblique retrieval benchmark (MIT, May 2026). 5 tasks testing latent/implicit query retrieval. All retrievers near zero NDCG@10, reasoning LLMs verify easily. Authors: Tchuindjo, Shah, Khattab.
 - 2026-06-10 | updated | ai-benchmarks/index.md | Added OBLIQ-Bench to Search & Retrieval section
 - 2026-06-10 | updated | wiki/index.md | Added OBLIQ-Bench entry
+- 2026-06-10 | entity | textarena | TextArena: 100+ competitive text-based games for LLM benchmarking and RL training. OpenAI Gym-style interface, online leaderboard with TrueSkill, SPIRAL self-play training paradigm. arXiv:2504.11442. Source: https://www.textarena.ai/blog
+- 2026-06-10 | concept | ai-benchmarks/unstable-baselines | UnstableBaselines: Async, online, multi-agent RL library for training reasoning models on TextArena games. ~1.2K LOC, LoRA-first, REINFORCE + A2C. vLLM hot-swapping for opponent sampling. Source: https://github.com/TextArena/UnstableBaselines
