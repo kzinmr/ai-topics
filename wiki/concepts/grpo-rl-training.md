@@ -79,3 +79,6 @@ Key insight: **SDAR does not modify GRPO's advantage computation**. The auxiliar
 - [[concepts/model-distillation]] — Broader distillation category
 - [[concepts/deepseek-r1]] — DeepSeek-R1, which popularized GRPO for reasoning RL
 - [[concepts/_index]]
+
+
+- [[concepts/hands-on-modern-rl]] — walkinglabs open-source curriculum with line-by-line GRPO code implementations

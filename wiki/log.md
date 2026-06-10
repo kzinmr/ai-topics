@@ -2,6 +2,14 @@
 
 **Action**: Saved raw article. Created `concepts/open-model-safety.md`. Updated `entities/florian-brand.md` (blog posts, X Activity Themes, sources, tags). Updated `index.md`.
 
+## [2026-06-10] raw-backlog-ingest — walkinglabs Hands-On Modern RL curriculum
+
+**Action**: Ingested walkinglabs open-source hands-on RL curriculum (475 lines, bilingual Chinese/English). Covers RL fundamentals (MDP, Q-Learning, DQN, PPO) through LLM alignment (RLHF, DPO, GRPO, RLVR) to frontier topics (Agentic RL, VLM, Embodied AI). Features line-by-line code labs and training curve visualizations.
+
+**Pages enriched**: `concepts/hands-on-modern-rl.md` (comparison table, cross-references to agents-mcp-rl-course and rl-algorithms-for-llm-training), `concepts/rlvr.md` (cross-ref), `concepts/grpo-rl-training.md` (cross-ref), `wiki/index.md` (count adjusted)
+**Tags**: `reinforcement-learning`, `education`, `open-source`, `rlvr`, `grpo`, `dpo`, `agentic-rl`
+**Source**: `raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md`
+
 **Pages created**: `raw/articles/florian-brand-open-model-safety.md`, `concepts/open-model-safety.md`
 **Pages modified**: `entities/florian-brand.md`, `index.md`
 

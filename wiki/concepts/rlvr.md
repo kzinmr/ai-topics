@@ -135,3 +135,8 @@ OpenAI explicitly stated (o3 announcement, Apr 2025): *"Large-scale reinforcemen
 - [ART·E blog post] — https://openpipe.ai/blog/art-e-mail-agent
 - [How Well Does RL Scale? (Toby Ord)] — LessWrong, Oct 2025
 - [RLHF Book, Ch.14 (Nathan Lambert)] — https://rlhfbook.com/c/14-reasoning
+
+
+## Related Pages
+
+- [[concepts/hands-on-modern-rl]] — walkinglabs open-source RL curriculum covering RLVR with hands-on code labs

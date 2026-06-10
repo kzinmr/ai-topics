@@ -2,10 +2,11 @@
 title: "Hands-On Modern RL"
 type: concept
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-10
 tags:
   - reinforcement-learning
   - education
+  - open-source
   - llm
   - rlhf
   - dpo
@@ -18,6 +19,8 @@ related:
   - "[[concepts/open-source-rl-libraries-comparison]]"
   - "[[concepts/fine-tuning/rlhf-dpo-preference]]"
   - "[[concepts/fine-tuning/trl]]"
+  - "[[concepts/agents-mcp-rl-course]]"
+  - "[[concepts/rl-algorithms-for-llm-training]]"
 sources:
   - "[[raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl]]"
   - "https://github.com/walkinglabs/hands-on-modern-rl"
@@ -101,6 +104,8 @@ This curriculum complements other RL and LLM training resources:
 - **[[concepts/open-source-rl-libraries-comparison]]** — While that page compares RL *libraries* (TRL, Verl, OpenRLHF), this curriculum teaches the *concepts and algorithms* behind them
 - **[[concepts/fine-tuning/rlhf-dpo-preference]]** — Provides theoretical background on preference learning methods
 - **[[concepts/fine-tuning/trl]]** — Hugging Face's TRL library implementation details
+- **[[concepts/agents-mcp-rl-course]]** — Will Brown's Maven course covers similar RL territory (GRPO, evals, agent training) but through a paid cohort format; walkinglabs provides the open-source, self-paced equivalent
+- **[[concepts/rl-algorithms-for-llm-training]]** — Algorithm taxonomy (PPO, GRPO, DAPO, CISPO) complemented by this curriculum's hands-on code implementations
 
 ## Learning Outcomes
 
@@ -150,6 +155,18 @@ This makes it an invaluable resource for:
 - **Researchers** wanting to understand modern RL applications
 - **Students** seeking practical RL experience
 - **Practitioners** building agentic systems
+
+## Comparison with Other RL Education Resources
+
+| Resource | Type | RLHF/DPO/GRPO? | Hands-On Code? | LLM-Focused? | Open-Source? |
+|----------|------|----------------|----------------|-------------|-------------|
+| **Hands-On Modern RL** | Curriculum | ✅ | ✅ (line-by-line) | ✅ (Ch 8–10) | ✅ |
+| Sutton & Barto (Textbook) | Book | ❌ | ❌ | ❌ | ❌ |
+| [Stanford CS336](https://stanford-cs336.github.io/) | Course | Partial | ✅ (assignments) | Partial | ✅ |
+| [Princeton COS597R](https://www.princeton.edu/~cos597r/) | Course | Partial | ❌ | Partial | ✅ |
+| [[concepts/agents-mcp-rl-course\|Agents MCP+RL (Maven)]] | Course | ✅ (GRPO focus) | ✅ (notebooks) | ✅ | Paid ($1,400) |
+
+The walkinglabs curriculum is unique in being **both open-source and LLM-alignment-focused**, covering the full trajectory from CartPole to DeepSeek-R1-Zero with runnable code at every stage.
 
 ---
 
