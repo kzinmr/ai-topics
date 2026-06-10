@@ -116,6 +116,8 @@ participants:
 
 **[00:22:13]** OpenAI chat completions — this is what we're going to be using in a lot of the applications for the course, just because it's very standard. Almost every LLM is accessible via chat completions. It's missing some bells and whistles, but it's also a nice clean slate of pieces for building whatever you want on top of it.
 
+> **⚠️ Note (2026-06):** This recommendation reflects the landscape as of June 2025. With GPT-5 and later models, OpenAI has shifted toward the Responses API as the primary interface, and Chat Completions support may be incomplete or deprecated for newer models. The portability argument still holds for non-OpenAI providers, but for OpenAI-native workflows, Responses API is now the expected path.
+
 **[00:22:55]** Multi-turn interaction with the system is kind of what makes something an agent as opposed to just a question answer or single turn chatbot. And so state is something that we'll need to be very careful about. If you don't manage your state, and you try to treat something like a chatbot without giving it the information it needs to know where it is, it's just a language model that has been given some context in a vacuum.
 
 **[00:24:07]** OpenAI Responses API — it has some pros and cons. There are some very nice convenient features for abstracting away some of the state management, especially for things like tool calls and for models that have thinking summaries.

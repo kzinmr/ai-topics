@@ -39,6 +39,7 @@ The inaugural lecture establishes the course's central thesis: **RL and agents a
 ### 2. Tool Calling & Structured Outputs
 
 - **Chat Completions > Responses API** — portable across providers (OpenAI, DeepSeek, Gemini, Claude all support it); Responses API is OpenAI-only
+  - ⚠️ *As of GPT-5+, OpenAI has shifted to Responses API as primary; Completions support may be incomplete for newer models. Portability argument still holds for non-OpenAI providers.*
 - **Pydantic for structured outputs** — typed schemas ensure reliable parsing
 - **Thinking-first ordering** — chain of thought fields must precede action fields in schema (transformers are autoregressive; planning must happen before execution)
 - **Outlines & XGrammar** — token-level constrained decoding backends for self-hosted models (vLLM, SGLang)
