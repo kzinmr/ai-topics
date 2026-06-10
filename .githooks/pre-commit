@@ -45,3 +45,38 @@ if [ -n "$STAGED_WIKI_JP" ]; then
         exit 1
     fi
 fi
+
+# Page name policy — block CJK in filenames and date-prefix slugs for NEW wiki files
+STAGED_WIKI_NEW=$(git diff --cached --name-only --diff-filter=A | grep -E '^wiki/(entities|concepts|comparisons)/.*\.md$' | grep -v '/_index\.md$' | grep -v '/_archive/')
+if [ -n "$STAGED_WIKI_NEW" ]; then
+    NAME_VIOLATIONS=0
+    for f in $STAGED_WIKI_NEW; do
+        basename=$(basename "$f" .md)
+        # Check CJK characters in filename (Hiragana, Katakana, CJK Unified)
+        if echo "$basename" | grep -qP '[\x{3040}-\x{309F}\x{30A0}-\x{30FF}\x{4E00}-\x{9FFF}]'; then
+            echo "🔴 ERROR: CJK characters in filename: $f"
+            echo "   Wiki filenames must be English-only slugs."
+            NAME_VIOLATIONS=1
+        fi
+        # Check date-prefix slug (YYYY-MM-DD)
+        if echo "$basename" | grep -qE '^20[0-9]{2}-[0-9]{2}-[0-9]{2}'; then
+            echo "🔴 ERROR: Date-prefixed slug: $f"
+            echo "   Looks like a raw article title leak. Use a descriptive concept name."
+            NAME_VIOLATIONS=1
+        fi
+        # Check excessive hyphens (>=11 = likely tag pile)
+        hcount=$(echo "$basename" | tr -cd '-' | wc -c)
+        if [ "$hcount" -ge 11 ]; then
+            echo "🔴 ERROR: Slug has $hcount hyphens (>=11): $f"
+            echo "   Likely a tag pile. Use a concise concept name."
+            NAME_VIOLATIONS=1
+        fi
+    done
+    if [ "$NAME_VIOLATIONS" -ne 0 ]; then
+        echo ""
+        echo "❌ Page name policy violations detected."
+        echo "   Rename files to use concise English slugs."
+        echo "   To skip: git commit --no-verify"
+        exit 1
+    fi
+fi
