@@ -91,7 +91,7 @@ System/model cards are the natural container for these requirements.
 ## See Also
 
 - [[concepts/claude/system-cards]] — Detailed index and evolution analysis of Anthropic's system cards
-- [[concepts/gpt/deployment-safety-hub]] — OpenAI's Deployment Safety Hub: complete index of 19 system cards (GPT-5 through GPT-Rosalind-5.5)
+- [[concepts/gpt/gpt-deployment-safety-hub]] — OpenAI's Deployment Safety Hub: complete index of 19 system cards (GPT-5 through GPT-Rosalind-5.5)
 - [[concepts/ai-safety]] — Broader AI safety landscape
 - [[concepts/ai-evaluations]] — Evaluation methodologies and benchmarks
 - [[concepts/ai-governance]] — Governance frameworks and regulatory landscape

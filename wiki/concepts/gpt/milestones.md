@@ -69,4 +69,4 @@ sources:
 ## Related Pages
 - [[concepts/gpt/index]] — Full GPT model family overview
 - [[concepts/gpt/decoder-only]] — Architectural breakdown
-- [[concepts/gpt/5-5-spud]] — GPT-5.5 deep dive with benchmarks and pricing
+- [[concepts/gpt/gpt-5-5-spud]] — GPT-5.5 deep dive with benchmarks and pricing

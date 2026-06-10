@@ -79,11 +79,11 @@ In the same review cycle, Codex (powered by GPT-5.5) exhibited a "baked potato" 
 GPT-5.5's agentic mode shows **1000x token consumption** compared to traditional chat interactions. A single 6-hour autonomous task can consume as many tokens as thousands of conversational turns. This economic model is central to [[concepts/agent-economics]].
 
 ## Related Pages
-- [[concepts/gpt/5-5]]
+- [[concepts/gpt/gpt-5-5]]
 
 - [[concepts/gpt/index]] — The full GPT model family series
 - [[entities/openai]] — OpenAI entity page
-- [[concepts/gpt/workspace-agents]] — Codex-powered shared agents for enterprise
+- [[concepts/gpt/gpt-workspace-agents]] — Codex-powered shared agents for enterprise
 - [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2 announced alongside GPT-5.5
 - [[concepts/agentic-engineering]] — Developer patterns for autonomous agents
 - [[concepts/agent-economics]] — Token economics of agentic AI workflows
@@ -130,7 +130,7 @@ GPT-5.5 was released in late April 2026 and quickly established itself as a lead
 ## Related
 
 - [[entities/openai]] — Developer
-- [[concepts/gpt/5-5]] — Concept page with deeper technical analysis
+- [[concepts/gpt/gpt-5-5]] — Concept page with deeper technical analysis
 - [[entities/anthropic]] — Competitor (Opus 4.7 comparison)
 - [[entities/cursor-3]] — IDE integrating GPT-5.5
 - [[concepts/ai-agent-engineering]] — Platform architecture concepts

@@ -66,5 +66,5 @@ OpenAI identifies three emerging patterns driving adoption:
 - [[concepts/voice-ai]] — Voice AI overview
 - [[concepts/speech-to-text]] — Speech recognition
 - [[concepts/translation]] — Machine translation
-- [[entities/gemini]] — Google's competing voice + agent capabilities
+- [[concepts/gemini]] — Google's competing voice + agent capabilities
 - [[concepts/ai-agents]] — AI agents (voice-to-action pattern)

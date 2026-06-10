@@ -166,7 +166,7 @@ These patterns directly relate to AI coding agents:
 
 - [[concepts/agent-team-swarm]] — Multi-agent team orchestration
 - [[concepts/harness-engineering]] — Single agent execution environment design
-- [[concepts/gpt/symphony]] — Ryan Lopopolo's Symphony project
+- [[concepts/gpt/gpt-symphony]] — Ryan Lopopolo's Symphony project
 - [[concepts/back-of-house-multi-agent-patterns]] — Kitchen metaphor multi-agent patterns
 
 ## Sources

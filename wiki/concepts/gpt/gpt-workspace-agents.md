@@ -64,7 +64,7 @@ OpenAI Workspace Agents directly compete with:
 ## Related Pages
 
 - [[entities/openai]] — OpenAI entity page
-- [[concepts/gpt/5-5]] — Announced alongside Workspace Agents
+- [[concepts/gpt/gpt-5-5]] — Announced alongside Workspace Agents
 - [[concepts/gpt/chatgpt-images-2-0]] — Announced alongside Workspace Agents
 - [[concepts/anthropic-managed-agents]] — Direct competitor
 - [[concepts/agent-team-swarm]] — Multi-agent coordination patterns

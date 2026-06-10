@@ -28,7 +28,7 @@ status: active
 
 ## Overview
 
-ChatGPT Apps are interactive experiences that run inside ChatGPT conversations, built with the Apps SDK and backed by [[concepts/gpt/agents-sdk|MCP servers]]. Unlike traditional apps where users navigate to your product, ChatGPT Apps are **capabilities the model can call** -- they surface inside ongoing conversations as one of several tools the model orchestrates.
+ChatGPT Apps are interactive experiences that run inside ChatGPT conversations, built with the Apps SDK and backed by [[concepts/gpt/gpt-agents-sdk|MCP servers]]. Unlike traditional apps where users navigate to your product, ChatGPT Apps are **capabilities the model can call** -- they surface inside ongoing conversations as one of several tools the model orchestrates.
 
 A ChatGPT app is best understood as a set of well-defined tools that perform tasks, trigger interactions, or access data. The "unit of value" is not your full product but the specific capabilities you offer at the right moment in conversation. This paradigm shift from "we own the screen" to "we are a capability the model calls" drives all design decisions.
 
@@ -120,6 +120,6 @@ GPT-5.4 can generate production-ready frontends incorporating subtle interaction
 
 ## Related Pages
 
-- [[concepts/gpt/responses-api]] -- API foundation for ChatGPT App tool calls and state management
-- [[concepts/gpt/agents-sdk]] -- Agent framework with sandbox execution for app backends
+- [[concepts/gpt/gpt-responses-api]] -- API foundation for ChatGPT App tool calls and state management
+- [[concepts/gpt/gpt-agents-sdk]] -- Agent framework with sandbox execution for app backends
 - [[entities/openai]] -- Platform provider; ChatGPT Apps SDK and App Directory launched May 2026

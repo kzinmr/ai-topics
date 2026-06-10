@@ -473,7 +473,7 @@ AI and LLM concept pages organized by topic.
 
 ## Elixir-Beam-Agent-Orchestration
 
-- [[concepts/elixir-beam-agent-orchestration]] — Patterns for leveraging Elixir/BEAM (Erlang VM) for AI agent orchestration. The approach adopted by [[concepts/gpt/symphony]]'s Ryan Lopopolo.
+- [[concepts/elixir-beam-agent-orchestration]] — Patterns for leveraging Elixir/BEAM (Erlang VM) for AI agent orchestration. The approach adopted by [[concepts/gpt/gpt-symphony]]'s Ryan Lopopolo.
 
 ## Evaluation-Flywheel
 

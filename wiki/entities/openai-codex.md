@@ -165,7 +165,7 @@ A new canvas type for Codex — interactive, hosted websites and apps shared via
 
 Point-to-refine interaction model extended from code to documents, spreadsheets, slides, and sites. Select a specific part (chart, claim, UI element) and describe the change — Codex focuses the update on that part only.
 
-**Significance**: This is Codex's most comprehensive platform expansion — moving from coding agent to **general-purpose knowledge work platform** with domain-specific plugins. Aligns with [[concepts/gpt/codex-superapp]] trajectory and [[concepts/model-labs-to-agent-labs]] thesis.
+**Significance**: This is Codex's most comprehensive platform expansion — moving from coding agent to **general-purpose knowledge work platform** with domain-specific plugins. Aligns with [[concepts/gpt/gpt-codex-superapp]] trajectory and [[concepts/model-labs-to-agent-labs]] thesis.
 
 ### For Business Operations Teams
 

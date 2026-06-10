@@ -51,7 +51,7 @@
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer — Open-source skill bundle for Claude Code and Codex that brings professional evaluation engineering into coding agent workflows. Created by Pratik Bhavsar at Galileo Agent Labs (May 2026).
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
-- [[entities/gemini-cli]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.
+- [[concepts/gemini/cli]]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.
 - [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/glimpse]] — Glimpse — Native macOS WKWebView micro-UI library (Node.js bindings). Sub-50ms window startup, bidirectional JSON. Used for generative UI in terminal-based coding agents.
@@ -307,10 +307,10 @@
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
-- [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash (Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster at half cost), Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. AI Mode: 1B monthly users. Hassabis: Omni is "a step toward AGI." Powered by Antigravity harness.
-- [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
-- [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16th (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
-- [[concepts/gemini-spark]] — Google's 24/7 personal AI agent (I/O 2026). Runs on Gemini 3.5 Flash + Antigravity harness. Scheduled tasks, custom skill learning, deep Workspace integration. Cloud-resident.
+- [[concepts/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash (Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster at half cost), Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. AI Mode: 1B monthly users. Hassabis: Omni is "a step toward AGI." Powered by Antigravity harness.
+- [[concepts/gemini/enterprise-agent-platform]]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
+- [[concepts/gemini/3-5-flash]]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16th (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
+- [[concepts/gemini/spark]]] — Google's 24/7 personal AI agent (I/O 2026). Runs on Gemini 3.5 Flash + Antigravity harness. Scheduled tasks, custom skill learning, deep Workspace integration. Cloud-resident.
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 5 models: E2B/E4B/12B Unified/26B A4B/31B. 12B is encoder-free multimodal (May 2026). E4B adopted as daily local model.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
@@ -1059,7 +1059,7 @@
 - [[concepts/autoscientist]] — AutoScientist — Adaption's AI tool for automated frontier model training. Trains agents to make incremental improvements to training pipelines.
 - [[concepts/autotts]] — AutoTTS — Agent-discovered test-time scaling. Claude Code iteratively discovers TTS algorithms. 70% token reduction vs self-consistency. UMD/UVA/Google/Meta research (May 2026).
 - [[concepts/aws-agent-toolkit]] — AWS Agent Toolkit — Production-ready suite (May 2026) for AI coding agents on AWS: 40+ agent skills, managed MCP server (GA), 3 plugins (Core, Data Analytics, Agents). Successor to AWS Labs.
-- [[concepts/gpt/aws-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership — OpenAI models on Bedrock, Codex on Bedrock, Bedrock Managed Agents (all limited preview, May 2026). Enterprise-grade security + AWS commitments.
+- [[concepts/gpt/gpt-aws-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership — OpenAI models on Bedrock, Codex on Bedrock, Bedrock Managed Agents (all limited preview, May 2026). Enterprise-grade security + AWS commitments.
 - [[concepts/axolotl-fine-tuning-framework]] — Axolotl Fine-Tuning Framework
 - [[concepts/axpo]] — AXPO (Agent eXplorative Policy Optimization) — NVIDIA/KAIST RL method for multimodal agentic reasoning. Fixes Thinking-Acting Gap via tool-call resampling. 8B surpasses 32B Base on Pass@4.
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
@@ -1168,7 +1168,7 @@
 - [[concepts/codex-goal]] — Codex /goal Command — OpenAI's built-in Ralph loop (Codex CLI v0.128.0). Goals vs Skills distinction, "three prompts" heuristic from Every guide. Persisted goal with runtime continuation, model-side audit, TUI controls. Turns Codex into hours-long autonomous agent.- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
 - [[concepts/codex-knowledge-work]] — Codex for Knowledge Work — OpenAI's expansion of Codex from software development to general knowledge workers. Delegate/Collaborate modes, /goal persistent objectives, Goals vs Skills framework, Five Levels of Codex use, mobile steering via ChatGPT app, security/safety. Source: Every guide by Katie Parrott (May 2026).
 - [[concepts/codex-prompting]] — Prompt design patterns for Codex. Bias for Action, meta-prompting, standard system prompt structure, anti-patterns. Based on official OpenAI Cookbook guidance.
-- [[concepts/gpt/codex-safety]] — Codex Safety at OpenAI
+- [[concepts/gpt/gpt-codex-safety]] — Codex Safety at OpenAI
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/coding-agents]] — Coding Agents
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — design to turn Devin into a data analysis agent
@@ -1353,9 +1353,9 @@
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 - [[concepts/fused-kernels]] — Fused Kernels — GPU kernel fusion techniques eliminating intermediate memory allocations for faster inference/training.
 - [[concepts/gemma-family]] — Gemma Model Family — Google DeepMind's open model family (Apache 2.0). 13 model cards: Gemma 1–4, CodeGemma, PaliGemma 1–2, ShieldGemma 1–2, RecurrentGemma, EmbeddingGemma, FunctionGemma, Gemma 3n. Derived from Gemini research.
-- [[concepts/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
-- [[concepts/gemini-3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
-- [[concepts/gemini-managed-agents]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
+- [[concepts/gemini/3-1-flash-lite]]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
+- [[concepts/gemini/3-2-flash]]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
+- [[concepts/gemini/managed-agents]]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
 - [[concepts/gemini]] — Google Gemini — Google DeepMind's multimodal LLM family.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/generative-app-evolution]] — Generative App Evolution — The evolutionary staircase of generative applications from UI components to full agentic systems.
@@ -1380,13 +1380,13 @@
 - [[concepts/google-photo-scanning-ai]] — Google Photo Scanning AI
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 - [[concepts/ai-benchmarks/gpqa]] — GPQA — Graduate-level Google-proof Q&A. 448 questions in biology/physics/chemistry (198 in Diamond set). PhD experts 65-74%, non-experts 34%. Frontier models saturating at ~94%.
-- [[concepts/gpt/5-5-instant]] — GPT-5.5 Instant
-- [[concepts/gpt/5-5-spud]] — GPT-5.5 "Spud" — OpenAI internal model. Post-training of GPT-5.5 class. Pre-training completed March 2026.
-- [[concepts/gpt/5-5]] — GPT-5.5
+- [[concepts/gpt/gpt-5-5-instant]] — GPT-5.5 Instant
+- [[concepts/gpt/gpt-5-5-spud]] — GPT-5.5 "Spud" — OpenAI internal model. Post-training of GPT-5.5 class. Pre-training completed March 2026.
+- [[concepts/gpt/gpt-5-5]] — GPT-5.5
 - [[concepts/gpt/milestones]] — GPT Model Milestones
 - [[concepts/gpt/index]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
-- [[concepts/gpt/realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
-- [[concepts/gpt/rosalind]] — GPT-Rosalind — OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment. June 2026 updated with LifeSciBench, MedChemBench, GeneBench, LabWorkBench + Life Sciences/NGS plugins.
+- [[concepts/gpt/gpt-realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
+- [[concepts/gpt/gpt-rosalind]] — GPT-Rosalind — OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment. June 2026 updated with LifeSciBench, MedChemBench, GeneBench, LabWorkBench + Life Sciences/NGS plugins.
 - [[concepts/gpu-cloud-rankings]] — GPU Cloud Infrastructure Rankings (ClusterMAX). SemiAnalysis rating system for 209 Neoclouds across 10 criteria. CoreWeave Platinum, Nebius/Oracle/Azure/Fluidstack/Crusoe Gold. Slurm-on-K8s, GB200 NVL72 reliability, container security.
 - [[concepts/gpu-cluster-tco-goodput]] — GPU Cluster TCO & Goodput Framework. SemiAnalysis methodology decomposing TCO into 8 line items (GPUs, Storage, Networking, Control Plane, Support, Goodput Expense, Setup, Debugging). TorchFT vs AWS Checkpointless vs TorchPass fault-tolerance comparison.
 - [[concepts/gpu-mode]] — GPU MODE — Largest GPU programming community (gpumode.com), co-founded by Mark Saroufim. 500K+ kernel competition submissions, Project Popcorn, KernelBook dataset, KernelGuard anti-cheat system. AI agents became primary competitors Jan 2026.
@@ -1592,18 +1592,18 @@
 - [[concepts/open-swe]] — Open SWE: LangChain's open-source internal coding agent framework. Based on Deep Agents + LangGraph. Implements the convergent architecture of Stripe Minions/Ramp Inspect/Coinbase Cloudbot under MIT license. AGENTS.md, sandboxes, Slack/Linear/GitHub integration.
 - [[concepts/open-vs-closed-model-gap]] — Open vs. closed model capability gap measured via ECI. 4-month time lag (Jan–May 2026), 8 ECI point gap. Chinese-dominated open-weight frontier (Kimi K2.6, GLM-5.1, DeepSeek-V4 Pro). Business implications for enterprise vs. developer trade-offs.
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
-- [[concepts/gpt/agents-sdk]] — OpenAI Agents SDK (v0.14.0) — OpenAI's official SDK for building AI agent applications
-- [[concepts/gpt/astral-acquisition]] — "OpenAI Acquires Astral — Codex Toolchain Strategy"
-- [[concepts/gpt/codex-superapp]] — OpenAI Codex Superapp — OpenAI's unified coding agent platform
-- [[concepts/gpt/deployment-safety-hub]] — OpenAI Deployment Safety Hub (deploymentsafety.openai.com): Central index for all 19 OpenAI system cards (Feb 2025–Jun 2026). Preparedness Framework evaluations across Bio/Chem, Cybersecurity, AI Self-Improvement. Key trends: safety level escalation (first Cyber High with GPT-5.3-Codex), agentic model proliferation (5 Codex cards), domain-specific deployment (GPT-Rosalind-5.5).
-- [[concepts/gpt/frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
-- [[concepts/gpt/realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
-- [[concepts/gpt/o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
-- [[concepts/gpt/o3-o4-mini-system-card]] — o3 and o4-mini System Card (Apr 2025): First Preparedness Framework v2 assessment. No High threshold in any category. Key findings: reward hacking detected by METR (1% of attempts), time horizon ~1.5h, bio/chem near-threshold, CTF 89%/68%/59% (high-school/collegiate/professional). Last standalone o-series card before GPT-5 unification.
-- [[concepts/gpt/realtime-api]] — OpenAI Realtime API — WebSocket-based streaming voice/text API for low-latency agents. Function calling, session management, VAD tuning. Perplexity voice search case study.
-- [[concepts/gpt/responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
-- [[concepts/gpt/symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
-- [[concepts/gpt/tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
+- [[concepts/gpt/gpt-agents-sdk]] — OpenAI Agents SDK (v0.14.0) — OpenAI's official SDK for building AI agent applications
+- [[concepts/gpt/gpt-astral-acquisition]] — "OpenAI Acquires Astral — Codex Toolchain Strategy"
+- [[concepts/gpt/gpt-codex-superapp]] — OpenAI Codex Superapp — OpenAI's unified coding agent platform
+- [[concepts/gpt/gpt-deployment-safety-hub]] — OpenAI Deployment Safety Hub (deploymentsafety.openai.com): Central index for all 19 OpenAI system cards (Feb 2025–Jun 2026). Preparedness Framework evaluations across Bio/Chem, Cybersecurity, AI Self-Improvement. Key trends: safety level escalation (first Cyber High with GPT-5.3-Codex), agentic model proliferation (5 Codex cards), domain-specific deployment (GPT-Rosalind-5.5).
+- [[concepts/gpt/gpt-frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
+- [[concepts/gpt/gpt-realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
+- [[concepts/gpt/gpt-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
+- [[concepts/gpt/gpt-o3-o4-mini-system-card]] — o3 and o4-mini System Card (Apr 2025): First Preparedness Framework v2 assessment. No High threshold in any category. Key findings: reward hacking detected by METR (1% of attempts), time horizon ~1.5h, bio/chem near-threshold, CTF 89%/68%/59% (high-school/collegiate/professional). Last standalone o-series card before GPT-5 unification.
+- [[concepts/gpt/gpt-realtime-api]] — OpenAI Realtime API — WebSocket-based streaming voice/text API for low-latency agents. Function calling, session management, VAD tuning. Perplexity voice search case study.
+- [[concepts/gpt/gpt-responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
+- [[concepts/gpt/gpt-symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
+- [[concepts/gpt/gpt-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
 - [[concepts/openclaw-architecture]] — OpenClaw architecture details
 - [[concepts/openclaw-ecosystem]] — OpenClaw Ecosystem — Peter Hayes' open-source AI agent platform ecosystem: gateway, skills library, tool server, community-contributed agents and integrations.
 - [[concepts/openenv]] — Protocol/interoperability layer for agentic RL environments. 9-org committee (HF, Meta-PyTorch, Unsloth, Modal, NVIDIA, etc.). Gymnasium-style API, Docker packaging, MCP support. GitHub: huggingface/OpenEnv.

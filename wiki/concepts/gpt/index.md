@@ -242,7 +242,7 @@ Codex began as OpenAI's agentic coding CLI (evolved from GitHub Copilot) and, by
 
 > "We're actually doing the sneaky thing where we're building the super app out in the open and evolving it out of Codex." — **Thibault Sottiaux, Codex Lead**
 
-See [[concepts/gpt/codex-superapp]] for the full Codex details.
+See [[concepts/gpt/gpt-codex-superapp]] for the full Codex details.
 
 ### Codex Architecture
 
@@ -336,8 +336,8 @@ GPT models are foundational to the AI agent ecosystem:
 - **Symphony:** Multi-agent orchestration using OpenAI models
 - **GPT-5.5:** Powers agentic coding, knowledge work, scientific research
 
-See [[concepts/gpt/agents-sdk]] for the Agents SDK architecture.
-See [[concepts/gpt/codex-superapp]] for Codex as super app.
+See [[concepts/gpt/gpt-agents-sdk]] for the Agents SDK architecture.
+See [[concepts/gpt/gpt-codex-superapp]] for Codex as super app.
 See [[concepts/gpt/chatgpt-images-2-0]] for GPT Image 2.0.
 
 ## Related Concepts
@@ -348,7 +348,7 @@ See [[concepts/gpt/chatgpt-images-2-0]] for GPT Image 2.0.
 - [[concepts/reasoning-models]] — o-series extended thinking models
 - [[concepts/local-llm]] — Running open-weight alternatives locally
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis
-- [[concepts/gpt/codex-superapp]] — Codex as super app
+- [[concepts/gpt/gpt-codex-superapp]] — Codex as super app
 - [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2.0 image generation
 
 ## References

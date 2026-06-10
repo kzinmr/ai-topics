@@ -90,13 +90,13 @@ Beyond coding, Codex is being used for:
 
 This aligns with the broader trend of [[concepts/ai-agent-engineering]] where agent interfaces swallow multiple productivity verticals.
 
-See [[concepts/gpt/index]] for GPT model details, [[entities/openai]] for company context, [[concepts/gpt/agents-sdk]] for the official SDK approach.
+See [[concepts/gpt/index]] for GPT model details, [[entities/openai]] for company context, [[concepts/gpt/gpt-agents-sdk]] for the official SDK approach.
 
 ## Related Concepts
 
 - [[concepts/gpt/index]] — GPT-5.5 and the GPT model series
 - [[entities/openai]] — OpenAI company and products
-- [[concepts/gpt/agents-sdk]] — Official Agents SDK (alternative to subscription hooking)
+- [[concepts/gpt/gpt-agents-sdk]] — Official Agents SDK (alternative to subscription hooking)
 - [[concepts/harness-engineering]] — Harness engineering philosophy
 - [[entities/anthropic]] — Anthropic (competitor who blocked OpenClaw)
 

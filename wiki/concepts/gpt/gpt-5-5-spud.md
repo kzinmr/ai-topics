@@ -20,7 +20,7 @@ sources:
 
 GPT-5.5 is the newest model in the GPT series, released April 23, 2026, codenamed internally **"Spud"**. It is the first fully retrained base model since GPT-4.5, co-designed with and served on **NVIDIA GB200 and GB300 NVL72 systems**.
 
-See [[concepts/gpt/5-5]] for the general overview.
+See [[concepts/gpt/gpt-5-5]] for the general overview.
 
 ## Key Differentiators
 - **Agency-first design:** Excels at multi-part autonomous tasks with minimal prompting — "understands intent faster, carries more of the work" (OpenAI)
@@ -85,5 +85,5 @@ See [[concepts/gpt/5-5]] for the general overview.
 
 ## Related Pages
 - [[concepts/gpt/index]] — Full GPT model family overview
-- [[concepts/gpt/5-5]] — General GPT-5.5 overview
+- [[concepts/gpt/gpt-5-5]] — General GPT-5.5 overview
 - [[concepts/gpt/milestones]] — History of GPT model generations

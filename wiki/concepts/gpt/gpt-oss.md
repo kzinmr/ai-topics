@@ -67,4 +67,4 @@ OpenAI itself recommends hosted API for multimodal support or managed tools, but
 - [[concepts/mixture-of-experts]] — MoE architecture principles
 - [[concepts/local-llm]] — local deployment landscape
 - [[entities/gemma-4]] — Google's competing open model family
-- [[concepts/gpt/5-5]] — OpenAI's latest proprietary model
+- [[concepts/gpt/gpt-5-5]] — OpenAI's latest proprietary model

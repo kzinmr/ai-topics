@@ -40,7 +40,7 @@ sources:
   - raw/concepts/openai-codex-superapp.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 related:
-  - "[[concepts/gpt/codex-superapp]]"
+  - "[[concepts/gpt/gpt-codex-superapp]]"
   - "[[entities/claude-code]]"
   - "[[entities/opencode]]"
   - "[[entities/pi]]"

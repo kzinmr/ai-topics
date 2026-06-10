@@ -165,7 +165,7 @@ with client.beta.sessions.events.stream(session.id) as stream:
 - [[concepts/agent-team-swarm]] — Higher-level concept of multi-agent coordination
 - [[concepts/harness-engineering]] — Single-agent execution environment design
 - [[concepts/meta-harness]] — Interface-centric design philosophy
-- [[concepts/gpt/symphony]] — Competitor's Agent Team orchestrator
+- [[concepts/gpt/gpt-symphony]] — Competitor's Agent Team orchestrator
 - [[concepts/dark-factory-software-factory]] — Cutting-edge fully autonomous development
 
 ---
