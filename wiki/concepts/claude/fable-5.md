@@ -24,6 +24,8 @@ sources:
   - raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md
   - https://x.com/claudeai/status/2064394146916229443
   - raw/articles/simonwillison.net--2026-jun-9-claude-fable-5--6a315a85.md
+  - raw/newsletters/2026-06-09-claude-fable-5-and-new-ai-safety-fables.md
+  - raw/newsletters/2026-06-10-ainews-anthropic-claude-fable-5-mythos-but-safe-with-controversial-terms.md
 ---
 
 # Claude Fable 5
@@ -101,12 +103,13 @@ Fable 5 introduces new classifiers — separate AI systems that detect potential
 - **Zero** harmful single-turn requests complied with across 30 different public jailbreak techniques
 - UK AISI made progress towards a universal jailbreak within a brief initial testing window
 
-### Data Retention Policy
+### Data Retention Policy (No ZDR)
 
-New **30-day retention** for all traffic on Mythos-class models:
-- Not used for model training or non-safety purposes
-- All human access logged; deletion after 30 days
-- Purpose: defend against novel attacks, identify and reduce false positives
+New **30-day retention** ("No ZDR" — Zero Data Reuse) for all traffic on Mythos-class models:
+|- Not used for model training or non-safety purposes
+|- All human access logged; deletion after 30 days
+|- Purpose: defend against novel attacks, identify and reduce false positives
+|- **Community concern**: Criticized as behavior profiling under the guise of safety — AINews noted this is one of two "controversial changes" in the release
 
 ### Alignment Assessment
 
@@ -158,7 +161,7 @@ Key observations:
 
 > "It's slow, expensive and has been quite happily churning through everything I've thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can't do." — Simon Willison
 
-## Controversy: Capability Limitation Debate
+## Controversies
 
 The release of Fable 5 sparked debate about the transparency and scope of safety-driven capability restrictions:
 
@@ -177,7 +180,29 @@ Critical details from the System Card:
 - **Mechanisms**: Prompt modification, steering vectors, or parameter-efficient fine-tuning (PEFT)
 - **Estimated impact**: ~0.03% of traffic, concentrated in <0.1% of organizations
 - **Rationale**: Preventing acceleration of AI development without commensurate safeguards — Anthropic's concern from their February 2026 Risk Report about "accelerating other AI developers in building powerful AI systems that pose similar risks"
-- **User experience**: Claude still responds helpfully; effectiveness is silently limited only for frontier LLM development tasks
+|- **User experience**: Claude still responds helpfully; effectiveness is silently limited only for frontier LLM development tasks
+
+### Nathan Lambert External Safety Critique
+
+Nathan Lambert (Interconnects) published a detailed 88-paragraph free-access critique of Fable 5's safety policies, arguing they represent "narrow, self-fulfilling notions of safety":
+
+- **Model quality acknowledged**: "Claude Fable 5 is definitely the smartest model available to the general public — a remarkable leap on pretty much every relevant benchmark at only 2× the price of current Opus models."
+- **Benchmark caveat**: Benchmark scores carry an asterisk — some prompts will be downgraded to Opus 4.8 by safety filters, meaning advertised scores may not reflect real-world performance
+- **Uneven application**: "The unevenly applied safety policies that Anthropic have rolled out are on track to become a classic cautionary fable in how narrow and self-fulfilling notions of safety and control rarely work out."
+- **Invisible capability restrictions as user deception**: "An AI model that gets less intelligent automatically without telling the user is a violation of a much more universal norm of truthfulness and disclosure."
+- **Distillation economics critique**: Lambert's hypothesis is that API builders cannot easily prevent knowledge distillation because it is a "deeply grounded property of reasoning models to want to output everything." He argues that Chinese labs are likely paying for intended API use (not jailbreaking), and that model companies would need to "weaken their economic position" to fully protect their IP.
+- **Call for transparency**: "Safety research should be built on common understanding and information sharing across both labs and public research efforts" — not unilateral, invisible restrictions.
+- **Competitive context**: Notes the model was delayed 2+ months after training completion, and that the smarter version of the model is "already well underway in training."
+
+### RSI (Recursive Self-Improvement) Suppression
+
+AINews framed the same frontier-LLM-development restrictions as "RSI suppression" — a deliberate intervention against Recursive Self-Improvement use cases:
+
+- **Scope**: Claude's effectiveness is limited for requests about pretraining pipelines, distributed training infrastructure, and ML accelerator design — the building blocks of faster AI development
+- **Invisible implementation**: Unlike visible safety classifiers (cyber/bio/distillation, whose users see fallback to Opus 4.8), these restrictions are invisible — no model switch, no error message, no user notification
+- **No downgrade path**: Users who trigger RSI restrictions receive neither a fallback model nor an explanation of why the model is underperforming
+- **Community as "normalization"**: Critics argue this represents the normalization of selective capability release — where frontier models are deliberately weakened for certain tasks without disclosure
+- **Karpathy's assessment**: "Major version upgrade step-change, but the safeguards feel slightly too twitchy for launch" — [[entities/andrej-karpathy]]
 
 ## Availability
 

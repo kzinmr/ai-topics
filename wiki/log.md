@@ -1,3 +1,11 @@
+## [2026-06-10] Newsletter wiki-ingest — SemiAnalysis DeepSeek V4 perf, Lambert/AINews Fable 5 safety critique & RSI suppression
+
+**Action**: Enriched `concepts/deepseek-v4.md` with SemiAnalysis Day 0-43 deployment performance tracking (InferenceX, ROCm 100× improvement, TRT-LLM bug). Enriched `concepts/claude/fable-5.md` with Nathan Lambert external safety critique (uneven policy, invisible restrictions as deception) and AINews RSI suppression coverage (No ZDR naming, invisible frontier-LLM restrictions, Karpathy assessment). 2 pages enriched, 0 pages created.
+
+**Pages updated**: `concepts/deepseek-v4.md` (+30 lines, Deployment Performance section), `concepts/claude/fable-5.md` (+25 lines, No ZDR naming, Lambert critique, RSI suppression subsection)
+
+**Sources**: `raw/newsletters/2026-06-09-deepseekv4-1-6t-day-0-to-day-43-performance-over-time-huawei-gb300-nvl72-mi355x-` (SemiAnalysis), `raw/newsletters/2026-06-09-claude-fable-5-and-new-ai-safety-fables` (Nathan Lambert/Interconnects), `raw/newsletters/2026-06-10-ainews-anthropic-claude-fable-5-mythos-but-safe-with-controversial-terms` (AINews/swyx)
+
 
 ## [2026-06-10] Claude Code history update — Sonnet 3.7 adoption, Opus 4 agentic shift
 

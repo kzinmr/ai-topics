@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-06-08
+updated: 2026-06-10
 type: concept
 tags:
   - model
@@ -20,6 +20,7 @@ sources:
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/articles/2026-06-07_deepseek-v4-pro-vs-gpt-5-5-pro.md
   - https://runtimewire.com/article/deepseek-v4-pro-beats-gpt-5-5-pro-on-precision
+  - raw/newsletters/2026-06-09-deepseekv4-1-6t-day-0-to-day-43-performance-over-time-huawei-gb300-nvl72-mi355x-.md
 ---
 
 # DeepSeek-V4
@@ -239,6 +240,35 @@ Together AI published early bring-up experience serving V4 on NVIDIA HGX B200 GP
 The same V4 weights need different serving configurations for different workloads. Long-context agents, short chat, and RL rollouts each have distinct optimization targets (cost per trajectory vs latency vs throughput).
 
 > Full analysis: [[concepts/deepseek-v4-serving]]
+
+## Deployment Performance: Day 0 to Day 43
+
+SemiAnalysis published a comprehensive 106-paragraph analysis tracking DeepSeek V4 Pro 1.6T inference performance across multiple hardware SKUs from Day 0 (April 25, 2026) through Day 43 (June 7, 2026), as part of their InferenceX initiative. All performance data is documented in their [open-source GitHub repo](https://github.com/SemiAnalysisAI/InferenceX).
+
+### Day 0 Performance
+
+- **CUDA vLLM/SGLang**: Worked great out of the box — both supported native DeepSeek V4 Pro on Day 0. Most advertised recipes for newer SKUs (B200, B300) functioned without major issues. NVIDIA delivered a GB200 distributed inference Dynamo vLLM recipe in srt-slurm using disaggregated inference and wide expert parallelism (WideEP).
+- **NVIDIA B200/B300**: SGLang supported MTP (Multi-Token Prediction) from Day 3, substantially improving throughput at higher interactivity.
+- **Huawei Ascend 950DT**: Demonstrated Day 0 inference performance support per official documentation.
+- **AMD MI355X (ROCm)**: Did NOT work well initially. Could only run FP8 on Day 0; native FP4+FP8 checkpointing was broken. AITER's fused_moe was broken on GFX950, and the mHC pre-projection crashed in eager execution.
+- **TensorRT-LLM**: Did not support DeepSeek V4 out of the box because `mhcFusedHcKernel.cu` had a hardcoded `FHC_HIDDEN = 4096` constant matching Opus 4.8's hidden size (4096), not V4 Pro's 7168 hidden size. NVIDIA engineers removed the guard entirely rather than adding V4 support, causing a week-long period where the kernel compiled silently for the wrong hidden size.
+
+### ROCm Recovery: 100x Improvement in 26 Days
+
+The AMD SGLang engineering team, led by HaiShaw, massively improved ROCm performance over the first month:
+
+- **Day 0**: Technically working but not deployable in production (FP8 only, AITER issues, ATOM limited to single-sequence KV cache)
+- **Day 0→1**: First commit after baseline submission mopped up significant low-hanging fruit
+- **By Day 26 (May 21)**: Over **100× performance improvement** achieved, with MI355X exceeding H200 performance at lower interactivity levels after AITER mHC kernels were introduced
+- **By Day 33 (May 27)**: FP4 support added, with improvement coming from AMD replacing AITER linear with Marlin24 and adding the AITER mHC kernel at every layer
+
+### NVIDIA GB300 NVL72
+
+The GB300 cluster was down when DeepSeek V4 launched. CoreWeave contributed spare dev GB300 NVL72 racks for InferenceX benchmarking. Results were published later in the tracking period.
+
+### InferenceX Initiative
+
+The SemiAnalysis InferenceX initiative benchmarks each SKU's performance using open-source images and recipes across multiple frameworks. Supported by OpenAI, Oracle, Microsoft, Weka, PyTorch Foundation, vLLM, SGLang, and CoreWeave. A key goal is to record Day 0 performance as a baseline against which engineering improvements are measured over time.
 
 ## Community Reception & Independent Benchmarks (HN)
 
