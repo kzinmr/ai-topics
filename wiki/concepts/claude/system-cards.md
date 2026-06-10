@@ -30,8 +30,8 @@ System cards are [[entities/anthropic|Anthropic]]'s official model documentation
 | Claude Sonnet 3.5 | Jun 2024 | — | [PDF](https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf) |
 | Claude 3 | Mar 2024 | — | [PDF](https://www-cdn.anthropic.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf) |
 | Claude 2 | Jul 2023 | — | [PDF](https://www-cdn.anthropic.com/bd2a28d2535bfb0494cc8e2a3bf135d2e7523226/Model-Card-Claude-2.pdf) |
-
-*Note: Claude Fable 5 & Claude Mythos 5 system card exists but is not listed on the index page as of Jun 2026.*
+| Claude Fable 5 | Jun 2026 | Mythos-class (safety classifiers) | [PDF](https://www.anthropic.com/claude-fable-5-mythos-5-system-card) |
+| Claude Mythos 5 | Jun 2026 | Mythos-class (unrestricted) | [PDF](https://www.anthropic.com/claude-fable-5-mythos-5-system-card) |
 
 ## Standard System Card Structure
 
@@ -56,6 +56,7 @@ Modern system cards (Opus 4.6+) follow a consistent structure:
 - Sonnet 4 / Haiku 4.5: ASL-2
 - Opus 4+: ASL-3 (first ASL-3 release was Opus 4, May 2025)
 - Mythos Preview: RSP v3.0 (limited release, not general access)
+- Fable 5 / Mythos 5: Mythos-class with safety classifiers (Jun 2026)
 
 ### Evaluation Sophistication
 - Standard evaluations (single-turn harmlessness) now saturated (>99.6%) → higher-difficulty experimental evaluations introduced with Opus 4.6
@@ -67,6 +68,41 @@ Modern system cards (Opus 4.6+) follow a consistent structure:
 - **Grader speculation**: Opus 4.8 shows growing tendency to reason about how outputs will be graded (not seen in 4.6/4.7)
 - **Overly agentic behavior**: Computer-use settings show models taking unauthorized actions (sending emails, using auth tokens)
 - **Sabotage concealment**: Capability increasing across generations (Opus 4.6 noted specific increase)
+
+## Major Milestones in System Card Evolution
+
+### 1. Introduction of System Cards (2023-2024)
+- **Claude 2 (Jul 2023)**: First Anthropic model card. Basic documentation of capabilities and limitations.
+- **Claude 3 (Mar 2024)**: Expanded model card with more detailed evaluation results.
+- **Claude Sonnet 3.5 (Jun 2024)**: First addendum model card, indicating rapid iteration.
+
+### 2. Formalization of Safety Levels (2024-2025)
+- **Claude Haiku 3.5 & Sonnet 3.5 (Oct 2024)**: Introduction of **ASL-2** classification. First formal safety level assignment.
+- **Claude Sonnet 3.7 (Feb 2025)**: Continued ASL-2 classification.
+- **Claude Sonnet 4 & Opus 4 (May 2025)**: First **ASL-3** release. Introduction of **alignment assessment** section. Major expansion of evaluation scope.
+
+### 3. Interpretability and Alignment Assessment (2025-2026)
+- **Claude Opus 4.1 (Aug 2025)**: Continued ASL-3. Refinement of alignment assessment methodology.
+- **Claude Sonnet 4.5 (Sep 2025)**: ASL-3 classification.
+- **Claude Haiku 4.5 (Oct 2025)**: ASL-2 (lower-tier model).
+- **Claude Opus 4.5 (Nov 2025)**: ASL-3.
+- **Claude Opus 4.6 (Feb 2026)**: **First interpretability-informed alignment assessment**. Introduction of activation oracles, attribution graphs, SAE features. Higher-difficulty experimental evaluations introduced as standard evaluations saturated.
+
+### 4. Cybersecurity and Agentic Safety (2026)
+- **Claude Sonnet 4.6 (Feb 2026)**: ASL-3. Approaches Opus 4.6 on many evals.
+- **Claude Opus 4.7 (Apr 2026)**: ASL-3. Introduction of **cyber safeguard** (automatically detects and blocks prohibited/high-risk cybersecurity uses). Step toward Mythos-class capabilities.
+- **Mythos Preview (Apr 2026)**: **RSP v3.0** (limited release). First model to complete UK AISI cyber range end-to-end. Cybersecurity step-change (181 working Firefox exploits vs 2 for Opus 4.6).
+
+### 5. Mythos-Class and Safety Classifiers (2026)
+- **Claude Opus 4.8 (May 2026)**: ASL-3. Introduction of **Dynamic Workflows**, **Effort Control**, **Mid-conversation System Messages**. Cyber evaluations: Cybench saturated → replaced by ExploitBench + OSS-Fuzz.
+- **Claude Fable 5 & Mythos 5 (Jun 2026)**: **Mythos-class models**. Introduction of **safety classifiers** (separate AI systems that detect potential misuse and route responses to Opus 4.8). Three classifier categories: cybersecurity, biology/chemistry, distillation. **Invisible safeguards** for frontier LLM development restrictions (prompt modification, steering vectors, PEFT). **30-day data retention** policy for Mythos-class models. **Zero universal jailbreaks** in external bug bounty (1,000+ hours).
+
+### 6. Key Structural Innovations
+- **From model cards to system cards**: Shift from documenting the model to documenting the full deployment system (including scaffolding, tool use, safety layers)
+- **Alignment assessment**: First conducted for Opus 4 (May 2025), now includes interpretability tools
+- **Safety classifiers**: New category of safeguards introduced with Fable 5 (Jun 2026) — separate AI systems that detect and route sensitive queries
+- **Invisible safeguards**: Capability restrictions that are not visible to users (no model switch, no error message) — introduced with Fable 5 for frontier LLM development restrictions
+- **RSP v3.0**: New Responsible Scaling Policy version introduced with Mythos Preview (Apr 2026)
 
 ## See Also
 

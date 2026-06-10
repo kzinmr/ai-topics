@@ -1,4 +1,11 @@
 
+## [2026-06-10] Claude System Cards index update — Fable 5 & Mythos 5 added, milestone evolution summary
+
+**Action**: Updated `concepts/claude/system-cards.md` with Fable 5 and Mythos 5 entries (17 total system cards). Added "Major Milestones in System Card Evolution" section covering 6 phases: Introduction (2023-2024), ASL Formalization (2024-2025), Interpretability & Alignment (2025-2026), Cybersecurity & Agentic Safety (2026), Mythos-Class & Safety Classifiers (2026), Key Structural Innovations.
+
+**Pages updated**: `concepts/claude/system-cards.md` (index + milestone summary)
+**Source**: Existing wiki pages (`concepts/claude/fable-5.md`, `concepts/claude/mythos.md`, `concepts/claude/opus-4-8.md`)
+
 ## [2026-06-10] Blog ingest triage — Claude Fable 5 impressions, Siri AI, Gary Marcus critique
 
 **Action**: Processed 20 blog articles from daily RSS ingest. 3 takes, 5 references, 12 skips. Created Siri AI concept page (Apple WWDC 2026). Enriched Claude Fable 5 page with Simon Willison's hands-on impressions. Enriched Claude Mythos page with Gary Marcus 'scare, hype, release' critique perspective. Added Karpathy quote reference.
