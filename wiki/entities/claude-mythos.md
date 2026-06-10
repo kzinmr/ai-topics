@@ -10,7 +10,7 @@ tags:
   - security
 aliases:
 - Mythos
-sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md"]
+sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md"]
 ---
 
 # Claude Mythos
@@ -74,9 +74,37 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 
 > [!NOTE] Concern for agentic code: Marcus notes that agent-written code may itself be "weakly defended and vulnerable," compounding the risk when Mythos-level models are used to generate production code.
 
-## Claude Fable 5 — General Release (June 2026)
+## Claude Fable 5 & Mythos 5 — Dual Launch (June 2026)
 
-On June 9, 2026, Anthropic released [[entities/claude-fable-5|Claude Fable 5]], a Mythos-class model "made safe for general use." The announcement: "Its capabilities exceed those of any model we've ever made generally available."
+On June 9, 2026, Anthropic launched two Mythos-class models simultaneously:
+
+- **[[entities/claude-fable-5|Claude Fable 5]]**: Mythos-class model made safe for general use. Safety classifiers fall back to Opus 4.8 on cybersecurity, biology/chemistry, and distillation queries. **>95% of sessions involve no fallback.**
+- **Claude Mythos 5**: Same underlying model with safeguards lifted. Restricted to [[concepts/project-glasswing|Project Glasswing]] cyber defenders and select biology researchers.
+
+**Pricing:** $10/MTok input, $50/MTok output — less than half the price of Claude Mythos Preview.
+
+### Mythos 5 — Life Sciences Capabilities
+
+Mythos 5 demonstrated breakthrough capabilities in life sciences research:
+
+| Capability | Result |
+|-----------|--------|
+| **Drug design** | Internal protein design experts accelerated drug design ~10×. Mythos 5 with tools matches or beats skilled human operators. 9/14 protein targets yielded strong candidates under investigation |
+| **Novel hypotheses** | First model to consistently produce novel, compelling scientific hypotheses. Scientists preferred Mythos hypotheses ~80% over Opus-class in blinded comparisons. One hypothesis (novel E. coli protein mechanism) independently corroborated |
+| **Genomics research** | Week-long largely autonomous work. Assembled single-cell data for millions of cells spanning 138 animal species. Custom ML model outperformed a recent *Science* publication while being 100× smaller |
+
+### Trusted Access Programs
+- **Cybersecurity**: Expanding Glasswing partners, pursuing systematic application process
+- **Biology**: Opening program for select researchers — Fable 5 with biology/chemistry safeguards removed (cyber safeguards still in place)
+
+### Safety Architecture (Fable 5)
+
+Fable 5's classifiers detect and route to Opus 4.8 on:
+1. **Cybersecurity**: External bug bounty (1,000+ hours) produced zero universal jailbreaks
+2. **Biology/chemistry**: Extended beyond narrow bioweapons blocking
+3. **Distillation**: Blocks large-scale capability extraction
+
+External partner found Fable 5's cyber safeguards were the **most robust of any model tested** (including Opus 4.8 and 4.7).
 
 ### Capability Limitation Debate
 

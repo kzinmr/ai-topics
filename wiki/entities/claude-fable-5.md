@@ -9,12 +9,16 @@ tags:
   - anthropic
   - frontier-models
   - ai-safety
+  - cybersecurity
+  - alignment
+  - benchmark
 aliases:
   - Fable 5
   - Claude Fable
-status: draft
-description: "Anthropic's Mythos-class model released for general use in June 2026. Derived from the Claude Mythos architecture with safety-driven capability restrictions."
+status: active
+description: "Anthropic's Mythos-class model released for general use in June 2026. State-of-the-art on nearly all benchmarks. Safety classifiers fall back to Opus 4.8 on cyber/bio/distillation queries. $10/$50 per MTok."
 sources:
+  - raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md
   - raw/articles/2026-06-09_rlancemartin_designing-loops-with-fable-5.md
   - raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md
   - https://x.com/claudeai/status/2064394146916229443
@@ -22,42 +26,98 @@ sources:
 
 # Claude Fable 5
 
-Anthropic's Mythos-class model released for general use on June 9, 2026. Derived from the [[entities/claude-mythos|Claude Mythos]] architecture with safety-driven capability restrictions.
+Anthropic's Mythos-class model released for general use on June 9, 2026. State-of-the-art on nearly all tested benchmarks of AI capability, with safety classifiers that fall back to [[concepts/claude-opus-4-8|Claude Opus 4.8]] on sensitive queries. The same underlying model as [[entities/claude-mythos|Claude Mythos 5]], differentiated by safeguards.
+
+> "Fable is from the Latin *fabula*, 'that which is told,' akin to the Greek *mythos*. The safeguards are what distinguish the two models." — Anthropic
 
 ## Overview
 
-Claude Fable 5 was announced by [@claudeai](https://x.com/claudeai) as "a Mythos-class model that we've made safe for general use" with capabilities that "exceed those of any model we've ever made generally available." It represents the public release of Mythos-class capabilities, which Anthropic had previously restricted due to safety concerns (particularly vulnerability discovery capabilities).
+Claude Fable 5 was announced on June 9, 2026 as "a Mythos-class model that we've made safe for general use." It represents the public release of Mythos-class capabilities, which Anthropic had previously restricted through [[concepts/project-glasswing|Project Glasswing]] due to safety concerns (particularly cybersecurity and dual-use biology capabilities).
 
-Fable 5 sits at the intersection of Anthropic's safety-first deployment philosophy and the research community's desire for access to frontier capabilities.
+The longer and more complex the task, the larger Fable 5's lead over other Claude models. It was simultaneously launched with **Claude Mythos 5** — the same model with safeguards lifted, restricted to Glasswing cyber defenders and select biology researchers.
 
-## Key Characteristics
+**Pricing:** $10/MTok input, $50/MTok output — less than half the price of Claude Mythos Preview.
 
-### Mythos-Class Architecture
-Fable 5 is derived from the Mythos architecture, which demonstrated exceptional capabilities:
-- 181 working Firefox exploit generations
-- 271 zero-day vulnerabilities discovered in a single sweep
-- Discovery of 27-year-old OpenBSD bug and 16-year-old FFmpeg bug
+## Key Capabilities
 
-### Safety Restrictions
-As a "safe for general use" model, Fable 5 includes deliberate capability restrictions:
-- **Research task limitations**: Deliberately weakened on "frontier LLM research" tasks (per [[entities/elie-bakouch]]'s critique)
-- **Hidden restrictions**: Capability limitations are not visible to end users
-- **Security-sensitive tasks**: Reduced vulnerability discovery capabilities compared to raw Mythos
+### Software Engineering
 
-### Performance Characteristics
+| Benchmark/Eval | Result | Source |
+|---------------|--------|--------|
+| **Stripe** (50M-line Ruby codebase) | Codebase-wide migration in 1 day (team: 2+ months) | Customer feedback |
+| **FrontierCode** (Cognition) | Highest score among frontier models at medium effort | Official eval |
+| **CursorBench** | State-of-the-art | Michael Truell, Cursor CEO |
+| **FrontierBench** (Cognition) | Highest-scoring model | Scott Wu, Cognition CEO |
 
-#### Parameter Golf Benchmark (vs Opus 4.7)
-| Model | Behavior | Result |
-|-------|----------|--------|
-| **Fable 5** | Bet on larger structural changes (architecture, quantization), showed resilience through regressions | ~6x more improvement than Opus 4.7 |
-| **Opus 4.7** | First experiment produced a small win, then followed the same template: adjust scalar → measure → keep if positive | Incremental improvements only |
+> "Claude Fable 5 is the state of the art model on CursorBench. It's opened up a class of long-horizon problems that were out of reach for earlier models." — Michael Truell, Cursor CEO
 
-#### Memory Progression (Continual Learning Bench 1.0)
-| Model | Memory Progression | Verification Coverage |
-|-------|-------------------|----------------------|
-| **Sonnet 4.6** | Exits at step 1: stores failure notes and open guesses, rarely consults prior notes | Low |
-| **Opus 4.7** | Exits at step 3: creates schema reference with uncertainty flagged | 7-33% (median ~17%) |
-| **Fable 5** | Completes full progression: distills learnings into general rules | Up to 73% (22 of 30 questions) |
+### Knowledge Work
+
+| Benchmark/Eval | Result | Source |
+|---------------|--------|--------|
+| **Hebbia Finance Benchmark** | Highest score of any model; gains in document reasoning, charts, tables | Official eval |
+| **IMC trading analysis** | Aced nearly all categories (factual lookup, reasoning, root-cause, EV) | Customer feedback |
+| **Replit ViBench** | Highest-performing — "nearly saturating base use cases" | Michele Catasta |
+| **Genspark analytics** | First to break 90% — 10-point jump over Opus | Izzy Miller |
+
+### Vision
+
+- **State-of-the-art** on vision tasks
+- Extracts precise numbers from detailed scientific figures
+- Rebuilds web app source code from screenshots alone
+- **Pokémon FireRed**: Beat the game with a minimal, vision-only harness — previous Claude models needed complex helper harnesses with maps, navigation aids, and game-state information
+
+### Memory and Long-Context
+
+- Stays focused across millions of tokens in long-running tasks
+- Improves outputs using its own notes
+- **Slay the Spire**: Persistent file-based memory improved performance **3× more** than for Opus 4.8; reached final act **3× more often**
+
+### Life Sciences (Mythos 5)
+
+| Capability | Result |
+|-----------|--------|
+| **Drug design** | Accelerated ~10×; matches/beats skilled human operators; 9/14 protein targets yielded strong candidates |
+| **Novel hypotheses** | Scientists preferred Mythos hypotheses ~80% over Opus-class in blinded comparisons; one hypothesis independently corroborated |
+| **Genomics research** | Week-long autonomous work; assembled single-cell data for millions of cells (138 species); model outperformed Science publication while being 100× smaller |
+
+## Safety Architecture
+
+### Safety Classifiers
+
+Fable 5 introduces new classifiers — separate AI systems that detect potential misuse and route responses to Opus 4.8:
+
+1. **Cybersecurity**: Covers exploitation and offensive cyber tasks broadly. External bug bounty (1,000+ hours) produced **zero universal jailbreaks**. External red-teaming also failed on long-form agentic tasks
+2. **Biology and chemistry**: Extended beyond narrow bioweapons blocking. Mythos 5 outperformed dedicated protein language models on AAV shell assembly prediction (Dyno Therapeutics evaluation)
+3. **Distillation**: Blocks large-scale capability extraction attempts (identified in authoritarian countries)
+
+**>95% of Fable sessions involve no fallback at all** — for those sessions, performance is effectively identical to Mythos 5.
+
+### Jailbreak Robustness
+
+- External partner: Fable 5's cyber safeguards were the **most robust of any model tested** (including Opus 4.8 and 4.7)
+- **Zero** harmful single-turn requests complied with across 30 different public jailbreak techniques
+- UK AISI made progress towards a universal jailbreak within a brief initial testing window
+
+### Data Retention Policy
+
+New **30-day retention** for all traffic on Mythos-class models:
+- Not used for model training or non-safety purposes
+- All human access logged; deletion after 30 days
+- Purpose: defend against novel attacks, identify and reduce false positives
+
+### Alignment Assessment
+
+- Level of misaligned behavior (deception, cooperation with misuse) was **low and similar to Opus 4.8**
+- Same underlying model → Fable 5 alignment level similar
+
+## Safeguards Philosophy
+
+> "Without safeguards, Fable 5's capabilities in areas like cybersecurity could be misused to cause serious damage."
+
+- Safeguards tuned **conservatively** — sometimes catch harmless requests, trigger on average in **<5% of sessions**
+- Working to improve safeguards and reduce false positives as quickly as possible
+- With more capable models arriving in coming months, prioritizing safeguard refinement
 
 ## Design Patterns
 
@@ -67,6 +127,21 @@ Lance Martin (@rlancemartin) articulated two core patterns for maximizing Fable 
 2. **Memory as Outer Loop**: Use memory to create cross-session learning. The optimal progression: Fail → Investigate → Verify → Distill → Consult.
 
 Key finding: A **verifier sub-agent** outperforms self-critique because grading happens in an independent context window.
+
+### Parameter Golf Benchmark (vs Opus 4.7)
+
+| Model | Behavior | Result |
+|-------|----------|--------|
+| **Fable 5** | Bet on larger structural changes (architecture, quantization), showed resilience through regressions | ~6× more improvement than Opus 4.7 |
+| **Opus 4.7** | First experiment produced a small win, then followed the same template: adjust scalar → measure → keep if positive | Incremental improvements only |
+
+### Memory Progression (Continual Learning Bench 1.0)
+
+| Model | Memory Progression | Verification Coverage |
+|-------|-------------------|----------------------|
+| **Sonnet 4.6** | Exits at step 1: stores failure notes and open guesses | Low |
+| **Opus 4.7** | Exits at step 3: creates schema reference with uncertainty flagged | 7-33% (median ~17%) |
+| **Fable 5** | Completes full progression: distills learnings into general rules | Up to 73% (22 of 30 questions) |
 
 ## Controversy: Capability Limitation Debate
 
@@ -78,14 +153,38 @@ The release of Fable 5 sparked debate about the transparency and scope of safety
 
 ## Availability
 
-Released June 9, 2026 for general use. The announcement received significant engagement: 80,000+ likes, 15,500+ bookmarks, 21.4M impressions on the @claudeai announcement tweet.
+### Subscription Rollout
+- **June 9–22**: Included on Pro, Max, Team, seat-based Enterprise at no extra cost
+- **June 23**: Removed from subscription plans; requires usage credits
+- Goal: restore as standard subscription feature when capacity allows
+
+### Trusted Access Programs
+- **Cybersecurity**: Expanding Glasswing partners, pursuing systematic application process
+- **Biology**: Opening program for select researchers — Fable 5 with biology/chemistry safeguards removed (cyber safeguards still in place)
+
+## Early Customer Feedback
+
+| Company | Person | Quote |
+|---------|--------|-------|
+| Cursor | Michael Truell, CEO | "State of the art on CursorBench. Opened up a class of long-horizon problems." |
+| GitHub | Mario Rodriguez, CPO | "Complex, long-horizon coding tasks with autonomy and reliability exceeding previous benchmarks." |
+| Cognition | Scott Wu, CEO | "Highest-scoring on FrontierBench. Excels at long-horizon reasoning." |
+| Replit | Michele Catasta, President | "Highest-performing on ViBench — nearly saturating base use cases." |
+| Hebbia | Izzy Miller, AI Research Lead | "First to break 90% on core analytics — 10-point jump over Opus." |
+| Genesis Therapeutics | Sean Ward, CEO | "Works at senior research scientist grade." |
+| Vercel | Fabian Hedin, CTO | "Apps that took a hundred prompts a year ago, it now one-shots." |
+| Luminance | Aveek Duttagupta, MTS | "In blind review, redlines matched or beat current model every time." |
+| Rakuten | Yusuke Kaji, GM | "At highest effort, reflects on and validates its own work." |
+| Augment | Luke Anderson, CTO | "More capable engineering in fewer turns." |
+| Replit | Michele Catasta | "Strongest model on frontier physics research while using 1/3 reasoning tokens." |
 
 ## Related
 
 - [[entities/anthropic]] — The company behind Fable 5
-- [[entities/claude-mythos]] — The underlying Mythos architecture
+- [[entities/claude-mythos]] — The underlying Mythos architecture and Mythos 5
 - [[concepts/designing-loops-with-fable-5]] — Lance Martin's design patterns
 - [[concepts/claude-mythos-glasswing]] — Mythos security capabilities
+- [[concepts/project-glasswing]] — Trusted access program
 - [[entities/rlancemartin]] — Author of Fable 5 design patterns
 - [[entities/elie-bakouch]] — Critic of capability limitation transparency
-- [[concepts/claude-opus-4-8]] — Announced alongside Mythos Preview (May 2026)
+- [[concepts/claude-opus-4-8]] — Fallback model for classifier-triggered queries

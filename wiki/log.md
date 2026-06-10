@@ -1,5 +1,16 @@
 ---
 
+## [2026-06-10] Enrich Claude Fable 5 entity — Anthropic official blog post
+
+**Action**: Enriched Claude Fable 5 entity page with full content from Anthropic's official announcement blog post.
+
+- **NEW: [[raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md]]** — Full Anthropic blog post. Covers dual Fable 5/Mythos 5 launch, safety classifiers (cyber/bio/distillation), jailbreak robustness, pricing ($10/$50 MTok), customer feedback (14 companies), life sciences breakthroughs.
+- **UPDATED: [[entities/claude-fable-5.md]]** — Complete rewrite from draft to full entity. Added: official benchmarks (FrontierCode, CursorBench, Hebbia, ViBench), safety architecture details, customer feedback table, availability/subscription rollout, trusted access programs.
+- **UPDATED: [[entities/claude-mythos.md]]** — Added Mythos 5 section: drug design (10× acceleration), novel hypotheses (80% preference over Opus), genomics research (100× smaller than Science paper model). Updated safety architecture details.
+- **UPDATED: [[index.md]]** — Updated descriptions for claude-fable-5 and claude-mythos entries.
+
+---
+
 ## [2026-06-10] X Post Ingest — Elie Bakouch Fable 5 Mythos capability limitation critique
 
 **Action**: Ingested X post from @eliebakouch criticizing Anthropic's Claude Fable 5 release for hidden capability restrictions on frontier research tasks.

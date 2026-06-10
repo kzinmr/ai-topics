@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2440 | Indexed entries: 1897 | Concepts: 1022 | Entities: 785
+> Last updated: 2026-06-10 | Total pages: 2441 | Indexed entries: 1897 | Concepts: 1022 | Entities: 785
 
 ## Entities (785 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -213,8 +213,8 @@
 - [[entities/chris-olah]] — Chris Olah (@ch402) — Anthropic co-founder, mechanistic interpretability pioneer. DeepDream, Circuits/Transformer Circuits research, TIME100 AI 2024. Spoke at Vatican for Magnifica Humanitas encyclical (May 2026).
 - [[entities/claude-code]] — Anthropic's AI coding agent. Operates across CLI, desktop app, VS Code/JetBrains extensions, Web, iOS, and Slack as a multi-surface agent. Developed by Boris Cherny and transferred from Anthropic to OpenAI in July 2025.
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
-- [[entities/claude-fable-5]] — Claude Fable 5 — Anthropic's Mythos-class model released for general use (June 2026). Safety-restricted capabilities. Design patterns by Lance Martin; capability limitation critique by Elie Bakouch.
-- [[entities/claude-mythos]] — Claude Mythos — Anthropic's next-gen model. Initially withheld (security). Mythos Preview (May 2026): general assistant positioned to substitute L4 engineers.
+- [[entities/claude-fable-5]] — Claude Fable 5 — Anthropic's Mythos-class model for general use (June 2026). SOTA on nearly all benchmarks. Safety classifiers fall back to Opus 4.8 on cyber/bio/distillation queries. $10/$50 MTok. Pokemon FireRed with vision-only harness.
+- [[entities/claude-mythos]] — Claude Mythos — Anthropic's next-gen model. Initially withheld (security). Mythos Preview (May 2026). Mythos 5: same as Fable 5 with safeguards lifted. Life sciences breakthroughs (drug design 10×, genomics > Science paper).
 - [[entities/claude-orbit]] — Claude Orbit — Anthropic's proactive AI assistant, leaked May 5, 2026 inside Claude Cowork. Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma without prompting. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
 - [[entities/clicky]] — Clicky — Free macOS AI assistant by Farza. Voice + screen capture → Claude → blue triangle pointing. No account/API key needed. Built in 3 weeks. Same approach as Google Magic Pointer (independently discovered same week).
