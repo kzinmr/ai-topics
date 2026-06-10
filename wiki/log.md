@@ -7612,3 +7612,4 @@ Updated:
 
 - **UPDATED: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement.md]]** — Added 7 new sections: The Nature of Incremental Progress, The Narrowing Human Role, Code Quality Progress, Automated Code Review, Training Speedup Experiments, Research Judgment Steering, Scaling and Infrastructure Strain, The "Research Taste" Debate, Verification and Pause Mechanisms. Added footnotes, contributor list, and methodology notes.
 - **UPDATED: [[concepts/recursive-self-improvement.md]]** — Added items 7-10 to Anthropic Official Declaration: narrowing human role, code quality approaching parity (~52x training speedup), and infrastructure strain (GitHub 275M commits/week). Updated policy stance with verification regime details.
+- 2026-06-10 | concept | anthropic-transparency-hub | Anthropic's Transparency Hub — Model Report, System Trust & Reporting, Voluntary Commitments. Source: https://www.anthropic.com/transparency

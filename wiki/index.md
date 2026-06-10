@@ -1023,6 +1023,7 @@
 - [[concepts/anthropic-managed-agents]] — Anthropic Managed Agents: Fully managed platform that accelerates prototype-to-production by 10×.
 - [[concepts/anthropic-multi-agent-research]] — Anthropic Multi-Agent Research System (Claude Research): Orchestrator-Worker pattern, parallel sub-agents, memory mechanism, Tool-Testing Agent. 90.2% performance improvement over single agent, 8 prompt engineering principles, token usage explains 80% of performance variance.
 - [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict
+- [[concepts/anthropic-transparency-hub]] — Anthropic Transparency Hub: Model Report (per-model safety evaluations for 10 Claude models, ASL levels, system cards), System Trust and Reporting (1.45M banned accounts, NCMEC reporting, threat intel), and Voluntary Commitments (G7 Hiroshima, Seoul Summit, Christchurch Call, Munich Elections Accord, Thorn child safety, etc.)
 - [[concepts/anthropics-memory-tool-cognition-strategic-follow]] — Anthropic's Memory Tool: Cognition's strategic follow-up
 - [[concepts/anti-ai-arguments-are-conservative-arguments]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/anti-patterns-in-agentic-engineering]] — Anti-patterns in Agentic Engineering
