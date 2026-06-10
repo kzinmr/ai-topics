@@ -1,7 +1,7 @@
 ---
 title: "Production-Ready Agent Engineering — Lesson 1: Agent Patterns and Principles"
 author: Will Brown
-date: 2025-06-18
+date: 2025-06-17
 date_ingested: 2026-06-10
 source: https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
 type: lecture-summary
@@ -16,9 +16,10 @@ tags:
 # Production-Ready Agent Engineering — Lesson 1: Agent Patterns and Principles
 
 **Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])
-**Date:** June 18, 2025
+**Date:** June 17, 2025
 **Companion course:** [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
-**Lecture transcript:** [[transcripts/2025-06-18_willbrown_agents-mcp-rl-agent-patterns-lecture|Agent Patterns and Principles (Lecture Transcript)]]
+**Lecture transcript:** [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture|Agent Patterns and Principles (Lecture Transcript)]]
+**Notebook:** [agent_patterns.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec1-agent-patterns/agent_patterns.ipynb)
 
 ## Summary
 
@@ -57,7 +58,15 @@ The inaugural lecture establishes the course's central thesis: **RL and agents a
 - BFCL v3 multi-turn: the standard multi-turn tool calling benchmark
 - Claude's Pokemon: a surprisingly good agent capability test
 
-### 5. Course Logistics
+### 5. Agent Patterns (from notebook)
+
+- **ReAct** (Reasoning + Acting) — seminal pattern for interleaving thinking and tool use; multiple flavors covered
+- **Doc Search Agent** — ChromaDB-backed retrieval agent with tool calling
+- **Instructor library** — structured outputs via Pydantic for non-OpenAI providers (DeepInfra etc.)
+- **XML-based tool parsing** — using verifiers library for XML-formatted tool calls
+- **Self-hosted structured outputs** — vLLM + SGLang with Outlines / XGrammar backends
+
+### 6. Course Logistics
 
 - UV package manager recommended (faster than pip, better dependency resolution)
 - Python 3.11–3.13 recommended

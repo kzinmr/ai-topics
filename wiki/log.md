@@ -7748,3 +7748,9 @@ Updated:
 **Policy thresholds**: word_count_warn=8, word_count_error=11, hyphen_count_warn=8, hyphen_count_error=11.
 
 **Current violations**: 2 errors (CJK file, 12-word tag pile), 20 warnings (8-10 word names). Existing violations are reported but not blocked; only new files are blocked by pre-commit.
+
+## 2025-06-17 — Date correction: Lesson 1 (6/18→6/17)
+
+- **RENAMED**: transcript and raw article filenames from 2025-06-18 to 2025-06-17 (actual lecture date)
+- **UPDATED**: All cross-references in portal page, index.md, frontmatter
+- **ADDED**: ReAct, Doc Search Agent, Instructor library, XML parsing, self-hosted structured outputs to lesson summary

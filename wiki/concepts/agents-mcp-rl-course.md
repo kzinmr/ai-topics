@@ -23,7 +23,7 @@ sources:
 
 A live, cohort-based training course on **[Maven](https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl)** taught by [[entities/will-brown]] (Research Lead, [[entities/prime-intellect]]) and [[concepts/corbett-kyle-corbitt|Kyle Corbitt]] (CTO, OpenPipe). Covers the full stack of production agent engineering — from tool design via Model Context Protocol to reinforcement learning optimization with GRPO.
 
-**Schedule:** June 18 – July 2025 (2x weekly lectures)
+**Schedule:** June 17 – July 2025 (2x weekly lectures)
 **Time Commitment:** 4–6 hours/week | **Price:** $1,400
 
 ## Course Overview
@@ -69,7 +69,7 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 
 | Date | Lecture | Transcript |
 |------|---------|------------|
-| Jun 18 | [[transcripts/2025-06-18_willbrown_agents-mcp-rl-agent-patterns-lecture\|Lesson 1: Agent Patterns & Principles]] | [[raw/articles/2025-06-18_willbrown_agents-mcp-rl-lesson1\|Summary]] |
+| Jun 17 | [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture\|Lesson 1: Agent Patterns & Principles]] | [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1\|Summary]] |
 | TBD | Lecture 2 | *pending* |
 | TBD | Lecture 3 | *pending* |
 | TBD | Lecture 4 | *pending* |

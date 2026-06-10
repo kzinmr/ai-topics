@@ -1984,4 +1984,4 @@
 - [[transcripts/2026-05-24_lenny-podcast-dan-shipper-ai-paradox]] — Lenny's Podcast — Dan Shipper: The AI Paradox. 12 predictions on AI future. Companion: [[raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox]]
 - [[transcripts/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal]] — Deploy a Hermes Agent with Fly, Modal, OpenRouter — Matt Palmer. Companion: [[raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal]]
 
-- [[transcripts/2025-06-18_willbrown_agents-mcp-rl-agent-patterns-lecture]] — Production-Ready Agent Engineering Lesson 1: Agent Patterns & Principles — Will Brown (Prime Intellect). Model ecosystem, tool calling, structured outputs, multi-turn state. Companion: [[raw/articles/2025-06-18_willbrown_agents-mcp-rl-lesson1]]
+- [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture]] — Production-Ready Agent Engineering Lesson 1: Agent Patterns & Principles — Will Brown (Prime Intellect). Model ecosystem, tool calling, structured outputs, multi-turn state. Companion: [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1]]

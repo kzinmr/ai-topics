@@ -1,7 +1,7 @@
 ---
 title: "Production-Ready Agent Engineering — Lesson 1: Agent Patterns and Principles (Lecture Transcript)"
 author: Will Brown
-date: 2025-06-18
+date: 2025-06-17
 date_ingested: 2026-06-10
 source: https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
 type: transcript
@@ -12,7 +12,7 @@ tags:
   - context-engineering
   - education
   - transcript
-related_article: articles/2025-06-18_willbrown_agents-mcp-rl-lesson1.md
+related_article: articles/2025-06-17_willbrown_agents-mcp-rl-lesson1.md
 participants:
   - Will Brown (instructor)
   - Raymond Weitekamp (co-host)
@@ -21,7 +21,7 @@ participants:
 # Production-Ready Agent Engineering — Lesson 1: Agent Patterns and Principles (Lecture Transcript)
 
 **Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])
-**Date:** June 18, 2025
+**Date:** June 17, 2025
 **Companion course:** [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
 
 ---
