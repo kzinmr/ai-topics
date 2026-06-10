@@ -17,8 +17,10 @@ tags:
 sources:
   - raw/articles/2026-06-10_maven_agents-mcp-rl-course-overview.md
   - raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md
+  - raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://maven.com/p/193c6f/build-your-own-ai-research-agent
+  - https://maven.com/p/c3950c/training-agents-with-reinforcement-learning
 ---
 
 # Production-Ready Agent Engineering: From MCP to RL
@@ -72,7 +74,7 @@ Free, standalone workshops offered before the main course cohort begins. Each fo
 | Date | Lightning Lesson | Resources |
 |------|-----------------|-----------|
 | Jun 10 | [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning\|Build Your Own AI Research Agent]] (Will Brown) | [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook\|Notebook]] · [GitHub](https://github.com/willccbb/agent-engineering/blob/main/lightning-lessons/agents.ipynb) · [Maven](https://maven.com/p/193c6f/build-your-own-ai-research-agent) |
-| TBD | Build Your (Custom) AI Agent with MCP (Shaw Talebi) | *pending* · [Maven](https://maven.com/p/18214c/build-your-custom-ai-agent-with-mcp) |
+| Jun 10 | [[raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning\|Training Agents with Reinforcement Learning]] (Will Brown) | [[transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook\|Notebook]] · [GitHub](https://github.com/willccbb/agent-engineering/blob/main/lightning-lessons/search.ipynb) · [Maven](https://maven.com/p/c3950c/training-agents-with-reinforcement-learning) |
 
 ### Lightning Lesson 1: Build Your Own AI Research Agent
 
@@ -85,6 +87,17 @@ A ~75-minute workshop building a deep research agent from scratch. Covers:
 - Evaluating agent output and connecting to RL reward signals
 
 **Key takeaway:** Agents and RL are two sides of the same coin. Building agents from scratch (without frameworks) teaches the core loop that RL optimizes.
+
+### Lightning Lesson 2: Training Agents with Reinforcement Learning
+
+A ~65-minute workshop bridging agent building and RL training. Builds a **Wikipedia search agent** end-to-end:
+- Local search tools (ChromaDB + embeddings) for deterministic evaluation
+- Synthetic QA dataset generation (trivia-style, GPT-4.1 Mini)
+- Baseline evaluation with LLM judges via [verifiers](https://github.com/PrimeIntellect-ai/verifiers)
+- Live GRPO training — group-relative advantage computation, no critic model needed
+- Case study: Wordle-playing agent
+
+**Key takeaway:** RL gives you tools for actually improving agent models to be performant and cost-effective without relying on closed-source APIs. GRPO is sample-efficient — training takes hours, not days.
 
 ## Lecture Schedule
 
@@ -151,6 +164,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[entities/prime-intellect]] — Will Brown's organization (verifiers, PRIME-RL)
 - [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning]] — Lightning Lesson 1: Build Your Own AI Research Agent
 - [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook]] — Lightning Lesson 1 notebook walkthrough
+- [[raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning]] — Lightning Lesson 2: Training Agents with RL
+- [[transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook]] — Lightning Lesson 2 notebook walkthrough
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))

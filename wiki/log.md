@@ -1,4 +1,21 @@
+
+## [2026-06-10] Blog ingest triage — Claude Fable 5 impressions, Siri AI, Gary Marcus critique
+
+**Action**: Processed 20 blog articles from daily RSS ingest. 3 takes, 5 references, 12 skips. Created Siri AI concept page (Apple WWDC 2026). Enriched Claude Fable 5 page with Simon Willison's hands-on impressions. Enriched Claude Mythos page with Gary Marcus 'scare, hype, release' critique perspective. Added Karpathy quote reference.
+
+**Files**: `concepts/siri-ai.md` (NEW), `concepts/claude/fable-5.md` (+14 lines), `concepts/claude/mythos.md` (+12 lines)
+**Tags**: `apple`, `siri-ai`, `claude-fable-5`, `claude-mythos`, `ai-safety`, `anthropic`, `on-device-ai`
+**Source**: blog-ingest pipeline, 2026-06-10 scan (36 new articles, 20 blog articles)
+
 ---
+
+## [2026-06-10] Training Agents with RL — Notebook Walkthrough transcript created
+
+**Action**: Created comprehensive notebook walkthrough transcript for Will Brown's "Training Agents with Reinforcement Learning" Lightning Lesson. Covers 8 sections: setup, ChromaDB vector search, search tools (search_pages/view_sections/read_section), synthetic QA generation with GPT-4.1 Mini, verifiers framework (vf.ToolEnv, JudgeRubric), baseline evaluation with DeepSeek V3, GRPO training loop. Includes code blocks with commentary, pipeline diagram, and key takeaways. Updated index.md.
+
+**Files**: `transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook.md`
+**Tags**: `ai-agents`, `reinforcement-learning`, `grpo`, `tool-calling`, `agent-evaluation`, `verifiers`, `education`, `transcript`
+**Source**: https://github.com/willccbb/agent-engineering/blob/main/lightning-lessons/search.ipynb
 
 ## [2026-06-10] Deep Research System Card wiki page created
 

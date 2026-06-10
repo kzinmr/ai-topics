@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2423 | Indexed entries: 1880 | Concepts: 998 | Entities: 784
+> Last updated: 2026-06-10 | Total pages: 2424 | Indexed entries: 1881 | Concepts: 999 | Entities: 784
 
 ## Entities (784 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -796,7 +796,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (998 pages)
+## Concepts (999 pages)
 - [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
@@ -1740,6 +1740,7 @@
 - [[concepts/simulacrum-of-knowledge-work]] — "Simulacrum of Knowledge Work"
 - [[concepts/single-agent-ceiling]] — Single-Agent Ceiling — Hypothesis that single-agent architectures hit a performance ceiling, necessitating multi-agent orchestration for complex tasks.
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
+- [[concepts/siri-ai]] — Siri AI — Apple's reimagined voice assistant (June 2026), powered by next-gen Apple Intelligence. Personal context understanding, broad world knowledge, onscreen awareness, Visual Intelligence, Writing Tools, dedicated Siri app. On-device models + Private Cloud Compute architecture.
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns — Comparative taxonomy of skill architectures: self-authored vs governed/safety-filtered.
 - [[concepts/skill-graph]] — Skill Graph — AI agent playbook using interconnected Markdown files. Ronin's 17-file, 4-folder architecture. Wikilinks navigation, Platform-Native Repurposing, Litmus Test.
 - [[concepts/skill-retrieval-augmentation]] — Skill Retrieval Augmentation — Augmenting agent skills with retrieval-based knowledge.
@@ -1997,3 +1998,4 @@
 - [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture]] — Production-Ready Agent Engineering Lesson 1: Agent Patterns & Principles — Will Brown (Prime Intellect). Model ecosystem, tool calling, structured outputs, multi-turn state. Companion: [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1]]
 
 - [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook]] — Build Your Own AI Research Agent — Lightning Lesson notebook walkthrough. V1/V2 agent loop, search/fetch tools, sub-models as tools, MCP crash course, Claude Code deep research. Companion: [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning]]
+- [[transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook]] — Training Agents with Reinforcement Learning — Lightning Lesson notebook walkthrough. ChromaDB search tools, synthetic QA generation, verifiers framework, GRPO training. Companion: [[raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning]]
