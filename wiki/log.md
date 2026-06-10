@@ -2,6 +2,7 @@
 
 **Action**: Saved raw article. Created `concepts/open-model-safety.md`. Updated `entities/florian-brand.md` (blog posts, X Activity Themes, sources, tags). Updated `index.md`.
 
+---
 ## [2026-06-10] raw-backlog-ingest — walkinglabs Hands-On Modern RL curriculum
 
 **Action**: Ingested walkinglabs open-source hands-on RL curriculum (475 lines, bilingual Chinese/English). Covers RL fundamentals (MDP, Q-Learning, DQN, PPO) through LLM alignment (RLHF, DPO, GRPO, RLVR) to frontier topics (Agentic RL, VLM, Embodied AI). Features line-by-line code labs and training curve visualizations.
@@ -26,10 +27,12 @@
 **Sources**: [Semi Analysis: Scaling Reinforcement Learning](https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data) — Dylan Patel, June 2026
 
 
+---
 ## [2026-06-10] Blog wiki-ingest recovery — triage already committed inline by blog-triage agent
 
 **Status**: No-op recovery. Blog-triage agent (commit 75c1c94b, 07:13 UTC) performed combined triage+wiki-ingest inline — created `concepts/siri-ai.md`, enriched `concepts/claude/fable-5.md` and `concepts/claude/mythos.md`, saved all raw articles. The triage checkpoint file at `.hermes/cron/data/blog_ingest/triage_latest.json` was valid but all 3 takes and 5 references were already processed. Archive confirmed dedup (0 new items). No additional wiki actions needed.
 
+---
 ## [2026-06-10] raw-backlog-ingest — 5 articles, all skip
 
 **Status**: Saturation confirmed. All 5 selected articles were already comprehensively processed in prior pipeline runs.
@@ -45,6 +48,7 @@
 **Pipeline saturation**: 6804 total raw articles, 247 already processed, 658 archived, 6615 remaining.
 
 
+---
 ## [2026-06-10] Newsletter wiki-ingest — SemiAnalysis DeepSeek V4 perf, Lambert/AINews Fable 5 safety critique & RSI suppression
 
 **Action**: Enriched `concepts/deepseek-v4.md` with SemiAnalysis Day 0-43 deployment performance tracking (InferenceX, ROCm 100× improvement, TRT-LLM bug). Enriched `concepts/claude/fable-5.md` with Nathan Lambert external safety critique (uneven policy, invisible restrictions as deception) and AINews RSI suppression coverage (No ZDR naming, invisible frontier-LLM restrictions, Karpathy assessment). 2 pages enriched, 0 pages created.
@@ -54,6 +58,7 @@
 **Sources**: `raw/newsletters/2026-06-09-deepseekv4-1-6t-day-0-to-day-43-performance-over-time-huawei-gb300-nvl72-mi355x-` (SemiAnalysis), `raw/newsletters/2026-06-09-claude-fable-5-and-new-ai-safety-fables` (Nathan Lambert/Interconnects), `raw/newsletters/2026-06-10-ainews-anthropic-claude-fable-5-mythos-but-safe-with-controversial-terms` (AINews/swyx)
 
 
+---
 ## [2026-06-10] Claude System Card milestones timeline — chronological analysis page created
 
 **Action**: Created `concepts/claude/system-card-milestones.md` — chronological analysis of 12 major safety milestones across 17 system cards (Jul 2023–Jun 2026). 5 phases: Basic Documentation → ASL Formalization → Interpretability → Cybersecurity → Mythos-Class. Includes trend analysis: safety level escalation, capability-safety co-evolution, evaluation sophistication growth, emerging concerns.
@@ -61,6 +66,7 @@
 **Pages created**: `concepts/claude/system-card-milestones.md`
 **Pages linked**: `concepts/claude/system-cards`, `concepts/model-cards-system-cards`, `concepts/gpt/gpt-system-card-milestones`, `concepts/claude-code--history`
 
+---
 ## [2026-06-10] Claude Code history update — Sonnet 3.7 adoption, Opus 4 agentic shift
 
 **Action**: Updated `entities/claude-code--history.md` with Sonnet 3.7 (Feb 2025) as the first wave of practical adoption and Opus 4 (May 2025) as the agentic inflection point. Updated `concepts/claude/system-cards.md` milestones to include Claude Code GA and "strategy-first" shift.
@@ -68,6 +74,7 @@
 **Pages updated**: `entities/claude-code--history.md` (Sonnet 3.7 adoption, Opus 4 agentic shift), `concepts/claude/system-cards.md` (milestone 2)
 **Source**: Existing wiki context (Claude Code history, System Cards evolution)
 
+---
 ## [2026-06-10] Claude System Cards index update — Fable 5 & Mythos 5 added, milestone evolution summary
 
 **Action**: Updated `concepts/claude/system-cards.md` with Fable 5 and Mythos 5 entries (17 total system cards). Added "Major Milestones in System Card Evolution" section covering 6 phases: Introduction (2023-2024), ASL Formalization (2024-2025), Interpretability & Alignment (2025-2026), Cybersecurity & Agentic Safety (2026), Mythos-Class & Safety Classifiers (2026), Key Structural Innovations.
@@ -75,6 +82,7 @@
 **Pages updated**: `concepts/claude/system-cards.md` (index + milestone summary)
 **Source**: Existing wiki pages (`concepts/claude/fable-5.md`, `concepts/claude/mythos.md`, `concepts/claude/opus-4-8.md`)
 
+---
 ## [2026-06-10] Blog ingest triage — Claude Fable 5 impressions, Siri AI, Gary Marcus critique
 
 **Action**: Processed 20 blog articles from daily RSS ingest. 3 takes, 5 references, 12 skips. Created Siri AI concept page (Apple WWDC 2026). Enriched Claude Fable 5 page with Simon Willison's hands-on impressions. Enriched Claude Mythos page with Gary Marcus 'scare, hype, release' critique perspective. Added Karpathy quote reference.
@@ -93,6 +101,7 @@
 **Tags**: `ai-agents`, `reinforcement-learning`, `grpo`, `tool-calling`, `agent-evaluation`, `verifiers`, `education`, `transcript`
 **Source**: https://github.com/willccbb/agent-engineering/blob/main/lightning-lessons/search.ipynb
 
+---
 ## [2026-06-10] Deep Research System Card wiki page created
 
 **Action**: Created wiki concept page for OpenAI Deep Research System Card (Feb 2025). Documented agentic browsing architecture (fine-tuned o3), Preparedness LOW ratings, browsing-specific risks, HLE benchmark (~26.6%), privacy model, and successor relationship to ChatGPT Agent. Updated index.md.
@@ -100,6 +109,7 @@
 **Files**: `concepts/gpt/gpt-deep-research-system-card.md`
 
 
+---
 ## [2026-06-10] Sarah Guo "The Untrainable" article ingestion
 
 **Action**: Ingested Sarah Guo's essay "The Untrainable" (2026-06-10) from saranormous.substack.com. Created entity page for Sarah Guo (Conviction.com founder, AI investor) and concept page for "The Untrainable" framework (legible vs illegible work, absorption frontier, private ground truth, permission & accountability).
@@ -109,6 +119,7 @@
 **Tags used**: `person`, `vc`, `investor`, `ai-investment`, `founder`, `conviction`, `ai-moat`, `private-data`, `evaluation`, `enterprise-ai`, `absorption-frontier`, `legible-work`
 **Source**: https://saranormous.substack.com/p/the-untrainable
 
+---
 ## [2026-06-10] Model Cards / System Cards concept page + Rob Hoeijmakers entity
 
 **Action**: Ingested Rob Hoeijmakers' article "Model Cards, System Cards and What They're Quietly Becoming" (2025-08-05). Created concept page with 7 analysis perspectives for system card / model card review: capability-disclaimer gap, benchmark selection bias, safety layer architecture, absence as signal, regulatory alignment, evolution tracking, political nature.
@@ -119,6 +130,7 @@
 **Tags added**: `model-card`, `system-card` (new in SCHEMA.md)
 **Source**: https://hoeijmakers.net/model-cards-system-cards/
 
+---
 ## [2026-06-10] TileRT "breaking-1000-tps" deep-dive article ingestion
 
 **Action**: Ingested TileRT's detailed technical deep-dive "Two Leaps to 1000 Tokens/s on a 1T-Parameter Model" (2026-06-08). Adds microsecond-scale bottleneck triage details (RMSNorm, RoPE, KV Cache writes as bottlenecks), two-leap framing (execution model revolution + co-design), and MiMo×TileRT co-design specifics.
@@ -126,6 +138,7 @@
 **Raw article saved**: `raw/articles/2026-06-08_tilert_breaking-1000-tps.md`
 **Pages updated**: `entities/tilert.md` (added Two Leaps section, co-design details, new source), `concepts/speed-as-scaling-law.md` (new source)
 
+---
 ## [2026-06-10] TileRT + Speed as Scaling Law ingestion
 
 **Action**: Ingested 3 articles about TileRT inference engine and speed-as-scaling-law concept:
@@ -146,6 +159,7 @@
 - `raw/articles/2026-06-08_xiaomi-mimo-tilert-1000tps.md`
 - `raw/articles/2026-05-21_zrdianjiao-glm51-highspeed-tilert.md`
 
+---
 ## [2026-06-10] Anthropic–DoD Dispute concept page
 
 **Action**: Created concept page for the Anthropic–DoD dispute (ongoing legal confrontation over military use of Claude). Saved raw articles from Wikipedia and Semafor. Updated Anthropic entity page Pentagon Blacklisting section with legal proceedings and June 2026 status. Updated index.md.
@@ -219,6 +233,7 @@
 3 other articles in this batch were previously archived (Dwarkesh AGI Economics, Ed Zitron AI ROI, Paul Graham Being Popular).
 
 
+---
 ## [2026-06-09] Raw Backlog Ingest — Batch 20260609T200050Z (Takes=0, All Skipped)
 
 **Action**: Processed 5 raw articles from backlog (ai-hint sorted). All skipped as already captured or out-of-scope:
@@ -7687,6 +7702,7 @@ Updated:
   - **VALIDATION** — validate_index.py: clean (1922 lines).
   - **GHOST ENTRIES** — 0 ghost entries found. All 1899 indexed pages verified on disk.
 
+---
 ## [2026-06-10] Cohere North Mini Code Ingestion
 
 **Action**: Ingested Cohere's first open-source coding model announcement (2026-06-09). Raw article saved from HuggingFace blog. Entity pages created for North Mini Code and Cohere. Command A+ already existed.
@@ -7735,6 +7751,7 @@ Updated:
 - 2026-06-10 | concept | anthropic-system-cards | Anthropic System Cards index — 15 models from Claude 2 to Opus 4.8. Source: https://www.anthropic.com/system-cards
 - 2026-06-10 | comparison | claude-opus-4x-comparison | Claude Opus 4.6 vs 4.7 vs 4.8 system card comparison. Sources: 3 official PDFs
 
+---
 ## 2026-06-10
 - **raw/papers**: Ingested Claude Mythos Preview System Card (Apr 2026, 245 pages) from Anthropic CDN
 - **comparisons**: Created claude-mythos-preview-vs-mythos5-fable5.md — Preview vs Mythos 5/Fable 5 comparison
@@ -7757,6 +7774,7 @@ Updated:
 - 2026-06-10 | updated | entities/gemini | Added Model Cards section with DeepMind model card index. Updated tags and sources with model-card references.
 - 2026-06-10 | created | concepts/gemma-family | Full Gemma model family concept page. 13 models across 4 generations (2024–2026): Gemma 1–4, CodeGemma, PaliGemma 1–2, ShieldGemma 1–2, RecurrentGemma, EmbeddingGemma, FunctionGemma, Gemma 3n. All model card links. Apache 2.0 licensing.
 
+---
 ## 2026-06-10 (GPT/OpenAI Wiki Reorganization)
 - **REORGANIZED**: Created `concepts/gpt/` subdirectory (37 pages moved from flat concepts/ and entities/)
 - **MOVED**: 34 concept pages → `concepts/gpt/` (GPT models, ChatGPT features, OpenAI platform, system cards)
@@ -7767,6 +7785,7 @@ Updated:
 - **CREATED**: `concepts/gpt/index.md` MOC (was concepts/gpt-models.md)
 - **NOTE**: entities/openai.md, entities/openai-codex.md, entities/openai-foundation.md etc. remain as entities (org/product pages)
 
+---
 ## 2026-06-10 — Agents MCP RL Course Portal Page
 
 - **CREATED**: `concepts/agents-mcp-rl-course.md` — Portal page for "Production-Ready Agent Engineering: From MCP to RL" Maven course (Will Brown & Kyle Corbitt)
@@ -7776,6 +7795,7 @@ Updated:
 - **UPDATED**: `entities/will-brown.md` — Added Maven course section and related link
 - **UPDATED**: `index.md` — Added kyle-corbitt entity and agents-mcp-rl-course concept
 
+---
 ## 2026-06-10 — Concept Stubs Cleanup (misplaced pages)
 
 **Action**: Removed 5 misplaced/stub concept pages and updated all backlinks.
@@ -7794,6 +7814,7 @@ Updated:
 - `concepts/llm-course-roadmap.md`: long-name stub → `concepts/claude-code`
 - `index.md`: removed 4 entries, updated count 1022→1018
 
+---
 ## 2026-06-10 (GPT/OpenAI Wiki Reorganization)
 - **REORGANIZED**: Created `concepts/gpt/` subdirectory — 37 pages moved from flat concepts/ and entities/
 - **MOVED**: 34 concept pages → `concepts/gpt/` (GPT models, ChatGPT features, OpenAI platform, system cards)
@@ -7805,6 +7826,7 @@ Updated:
 - **NOTE**: entities/openai.md, entities/openai-codex.md, entities/openai-foundation.md remain as entities (org/product pages)
 - 2026-06-10 | reorg | concepts/claude/ | Moved 26 Claude model/platform/feature pages from concepts/, entities/ to concepts/claude/ hierarchy. Updated wikilinks across 80+ files. Created hub page at concepts/claude/index.md.
 
+---
 ## 2026-06-10 — Ecosystem Linking (RL for Agents)
 
 - **CREATED**: `entities/openpipe.md` — OpenPipe entity page (RL post-training company, acquired by CoreWeave with W&B)
@@ -7815,6 +7837,7 @@ Updated:
 - **UPDATED**: `entities/kyle-corbitt.md` — Added openpipe entity link in Related
 - 2026-06-10 | restructured | concepts/gemini/ | Moved 8 scattered gemini pages into concepts/gemini/ hierarchy. concepts/gemini.md→index.md, concepts/gemini-3-1-flash-lite.md→3-1-flash-lite.md, concepts/gemini-3-2-flash.md→3-2-flash.md, concepts/gemini-managed-agents.md→managed-agents.md, concepts/gemini-spark.md→spark.md, entities/gemini-3-5-flash.md→3-5-flash.md, entities/gemini-cli.md→cli.md, entities/gemini-enterprise-agent-platform.md→enterprise-agent-platform.md. Merged entities/gemini.md content (Image Gen, Omni, Daily Brief, Alderson critique, Benchmaxxing, Competition) into index.md. Updated 77+ backlinks across wiki. Removed entities/gemini.md.
 
+---
 ## 2026-06-10 (Platform Split: gpt/ → openai/, claude/ → anthropic/)
 - **SPLIT**: `concepts/gpt/` プラットフォーム系14ページ → `concepts/openai/` に分離
   - API: responses-api, realtime-api, realtime-2, realtime-voice-models, whisper-asr
@@ -7829,6 +7852,7 @@ Updated:
 - **UPDATED**: 81ファイルのwikilink更新
 - **DESIGN**: gpt/ = モデル+ChatGPT製品, openai/ = プラットフォーム/API/SDK. claude/ = モデル+Claude製品, anthropic/ = プラットフォーム/ビジネス
 
+---
 ## 2025-06-18 — Agents MCP RL Lesson 1 Transcript Ingestion
 
 - **CREATED**: `transcripts/2025-06-18_willbrown_agents-mcp-rl-agent-patterns-lecture.md` — Lesson 1 lecture transcript (Agent Patterns & Principles)
@@ -7836,6 +7860,7 @@ Updated:
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Lecture table: Lesson 1 linked to transcript and summary
 - **UPDATED**: `index.md` — Added transcript entry
 
+---
 ## 2026-06-10 — Page Name Policy (wiki_health.py + pre-commit)
 
 **Action**: Added automated page naming policy checks to wiki health system.
@@ -7849,18 +7874,21 @@ Updated:
 
 **Current violations**: 2 errors (CJK file, 12-word tag pile), 20 warnings (8-10 word names). Existing violations are reported but not blocked; only new files are blocked by pre-commit.
 
+---
 ## 2025-06-17 — Date correction: Lesson 1 (6/18→6/17)
 
 - **RENAMED**: transcript and raw article filenames from 2025-06-18 to 2025-06-17 (actual lecture date)
 - **UPDATED**: All cross-references in portal page, index.md, frontmatter
 - **ADDED**: ReAct, Doc Search Agent, Instructor library, XML parsing, self-hosted structured outputs to lesson summary
 
+---
 ## 2026-06-10 — GPT-5 System Card wiki page created
 
 - **CREATED**: `concepts/gpt/gpt-5-system-card.md` — GPT-5 System Card (Aug 2025) concept page
 - Covers: unified architecture (main+thinking+router), safe completions, Preparedness Framework (Bio/Chem High), key evaluations, deployment safeguards, external evaluators
 - **UPDATED**: `wiki/index.md` — added gpt-5-system-card entry
 
+---
 ## 2026-06-10 — Lightning Lesson 1: Build Your Own AI Research Agent
 
 - **CREATED**: `raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md` — Lightning Lesson summary (Maven page + content summary)
@@ -7869,6 +7897,7 @@ Updated:
 - **UPDATED**: `wiki/index.md` — Added transcript entry
 - Sources: Maven (https://maven.com/p/193c6f/build-your-own-ai-research-agent), GitHub (willccbb/research-agent-lesson)
 
+---
 ## 2026-06-10 (GPT System Cards Batch Ingestion)
 - **CREATED**: 18 system card concept pages under `concepts/gpt/` (19 including pre-existing o3/o4-mini)
 - **COVERAGE**: All 20 cards from OpenAI Deployment Safety Hub now have individual wiki pages
@@ -7880,6 +7909,7 @@ Updated:
 - **UPDATED**: gpt-deployment-safety-hub.md — added Individual System Card Pages section with links to all 20 pages
 - **UPDATED**: index.md — added 18 system card entries
 
+---
 ## 2026-06-10 — Siri AI concept page
 
 - **CREATED**: `concepts/siri-ai.md` — Apple's reimagined voice assistant (June 2026 press release). Personal context understanding, broad world knowledge, onscreen awareness, Visual Intelligence, Writing Tools, dedicated Siri app, on-device + Private Cloud Compute architecture, supported devices and availability.
@@ -7888,6 +7918,7 @@ Updated:
 
 - 2026-06-10 | concept | gpt-system-card-milestones | OpenAI System Cards Key Milestones Timeline — 11 milestones, 4 phases, trend analysis. Source: synthesized from 20 system card pages
 
+---
 ## [2026-06-10] OpenAI Model Spec Ingestion
 
 **Action**: Ingested OpenAI Model Spec (2025-12-18) into wiki. Created concept page with full analysis of chain of command hierarchy, content restriction framework, behavioral principles, and comparison with model cards/system cards and Claude Constitution.
@@ -7896,6 +7927,7 @@ Updated:
 **Pages updated**: `concepts/openai/index.md` (added model-spec to Governance section), `concepts/model-cards-system-cards.md` (added cross-reference), `index.md` (added entry)
 **Sources**: https://model-spec.openai.com/2025-12-18.html, https://github.com/openai/model_spec
 
+---
 ## 2026-06-10 (Pre-2025 System Cards)
 - **CREATED**: gpt-4o-system-card.md (GPT-4o, May 2024) — first omni-modal safety assessment
 - **CREATED**: gpt-o1-system-card.md (o1, Dec 2024) — first reasoning model, deliberative alignment
@@ -7903,6 +7935,7 @@ Updated:
 - **UPDATED**: gpt-system-card-milestones.md — added Phase 0 (GPT-4o, o1)
 - **NOTE**: GPT-4, GPT-4V, o1-preview, o1-mini, o3-mini system cards exist at openai.com but inaccessible (403/Cloudflare). GPT-4o-mini system card also inaccessible.
 
+---
 ## 2026-06-10 — Lesson 2 Transcript Ingestion (MCP + Production-Grade Agents)
 
 - **CREATED**: `raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md` — Full raw transcript of Lesson 2 (MCP + Production-Grade Agents)
@@ -7911,6 +7944,7 @@ Updated:
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 2 to Lecture Schedule, Lesson Summaries section, sources, related links
 - **UPDATED**: `index.md` — Added Lesson 2 transcript entry
 
+---
 ## 2026-06-10 — Lesson 3 Transcript Ingestion (Agent Evals and Optimization)
 
 - **CREATED**: `transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture.md` — Structured transcript of Lesson 3 with timestamps, 11 sections covering evals, benchmarks, model spec, deterministic evals, LM judges, SFT, GRPO deep dive
@@ -7930,6 +7964,7 @@ Updated:
 - 2026-06-10 | entity | textarena | TextArena: 100+ competitive text-based games for LLM benchmarking and RL training. OpenAI Gym-style interface, online leaderboard with TrueSkill, SPIRAL self-play training paradigm. arXiv:2504.11442. Source: https://www.textarena.ai/blog
 - 2026-06-10 | concept | ai-benchmarks/unstable-baselines | UnstableBaselines: Async, online, multi-agent RL library for training reasoning models on TextArena games. ~1.2K LOC, LoRA-first, REINFORCE + A2C. vLLM hot-swapping for opponent sampling. Source: https://github.com/TextArena/UnstableBaselines
 
+---
 ## 2026-06-10 — Active Crawl: 5 New Pages
 
 - **CREATED**: concepts/agent-safety-interventions.md — Silent safety interventions (steering vectors, prompt modification) disclosed in Claude Fable 5 system card
@@ -7947,3 +7982,18 @@ Updated:
 - raw/articles/2026-06-09_simonwillison_agentsview-custom-pricing.md
 
 **Sources**: HN Algolia trending scan, X/Twitter search via xurl, blogwatcher DB, Simon Willison's Weblog, GitHub, NVIDIA Technical Blog
+---
+
+## [2026-06-10] Watchdog Auto-Fix — Index ghost entries + header counts + log separators
+
+**Auto-fixed**:
+- index.md: Fixed 10 ghost wikilink paths (benchmark slugs moved to ai-benchmarks/ namespace, claude/design → claude-design, arc-agi-2-benchmark → arc-agi-2)
+- index.md: Removed duplicate [[concepts/gemini]] entry (was 2 identical wikilinks with different descriptions)
+- index.md: Updated section headers — Entities 788→781, Concepts 1000→1645, Comparisons 28→30
+- index.md: Updated summary line — Indexed entries 1881→1983, Concepts 1000→1645, Entities 788→781
+- log.md: Added 35 missing --- separators between consecutive ## sections
+
+**Needs attention**:
+- concepts/gemini: ghost entry — no file on disk (has valuable I/O 2026 content, needs file creation or removal)
+- 30 misplaced entries across sections (11 concept entries in Entities, 1 in Events, 18 raw articles in Queries)
+- 576 orphan concept pages not in index (most are auto-generated stubs)

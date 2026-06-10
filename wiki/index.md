@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2428 | Indexed entries: 1881 | Concepts: 1000 | Entities: 788
+> Last updated: 2026-06-10 | Total pages: 2428 | Indexed entries: 1983 | Concepts: 1645 | Entities: 781
 
-## Entities (788 pages)
+## Entities (781 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -212,7 +212,7 @@
 - [[entities/chris-olah]] — Chris Olah (@ch402) — Anthropic co-founder, mechanistic interpretability pioneer. DeepDream, Circuits/Transformer Circuits research, TIME100 AI 2024. Spoke at Vatican for Magnifica Humanitas encyclical (May 2026).
 - [[entities/claude-code]] — Anthropic's AI coding agent. Operates across CLI, desktop app, VS Code/JetBrains extensions, Web, iOS, and Slack as a multi-surface agent. Developed by Boris Cherny and transferred from Anthropic to OpenAI in July 2025.
 - [[concepts/claude/index]] — Claude Models hub page. All model-specific pages organized under concepts/claude/. Models, system cards, transparency, managed agents, features (think-tool, memory, effort-control).
-- [[concepts/claude/design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
+- [[concepts/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[concepts/claude/fable-5]] — Claude Fable 5 — Anthropic's Mythos-class model for general use (June 2026). SOTA on nearly all benchmarks. Safety classifiers fall back to Opus 4.8 on cyber/bio/distillation queries. $10/$50 MTok. Pokemon FireRed with vision-only harness.
 - [[concepts/claude/mythos]] — Claude Mythos — Anthropic's next-gen model. Initially withheld (security). Mythos Preview (May 2026). Mythos 5: same as Fable 5 with safeguards lifted. Life sciences breakthroughs (drug design 10×, genomics > Science paper).
 - [[concepts/anthropic/orbit]] — Claude Orbit — Anthropic's proactive AI assistant, leaked May 5, 2026 inside Claude Cowork. Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma without prompting. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
@@ -801,7 +801,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1000 pages)
+## Concepts (1645 pages)
 - [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
@@ -1001,7 +1001,7 @@
 - [[concepts/ai-video-generation-2026]] — AI Video Generation (2026): Current state of 6 major commercial models and the expanding OSS ecosystem.
 - [[concepts/ai-vulnerability-detection-at-scale]] — Using LLMs to discover and triage security vulnerabilities at industrial scale. Mozilla Firefox case study: 423 bugs/month with Claude Mythos (14× increase). From "AI slop" to high-signal bug reports.
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
-- [[concepts/aider-polyglot]] — Aider Polyglot — 6-language coding benchmark. Tests 225 Exercism problems across C++/Go/Java/JS/Python/Rust. GPT-5 leads at 88%.
+- [[concepts/ai-benchmarks/aider-polyglot]] — Aider Polyglot — 6-language coding benchmark. Tests 225 Exercism problems across C++/Go/Java/JS/Python/Rust. GPT-5 leads at 88%.
 - [[concepts/alex-hall]] — alex-hall
 - [[concepts/alex-krizhevsky]] — Alex Krizhevsky
 - [[concepts/allen-institute-ai]] — allen-institute-ai
@@ -1039,7 +1039,7 @@
 - [[concepts/apple]] — Apple's unique AI philosophy: $14B Capex ($670B competitors), non-AI CEO succession (John Ternus), Siri open to third-party AI. Pascal's Wager framework. WWDC 2026: AFM 3rd-gen models, custom Gemini model for Siri AI, PCC on Google Cloud with NVIDIA GPUs, Core AI library with PyTorch integration.
 - [[concepts/application-compatibility]] — Application Compatibility
 - [[concepts/ai-benchmarks/arc-agi-1]] — ARC-AGI-1 — fluid intelligence test by François Chollet. Grid-based abstract reasoning. o3 at 87.5% first human-level breakthrough. 2024 ARC Prize.
-- [[concepts/ai-benchmarks/arc-agi-2-benchmark]] — ARC-AGI-2 Benchmark
+- [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
 - [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
 - [[concepts/areal]] — AReaL: Ant Group's RL library. Specializes in async training, pursues maximum throughput with interruptible rollouts and PPO staleness handling. DeepSpeed/Megatron support, vLLM/SGLang inference.
 - [[concepts/artificial-contributors-open-source]] — RFC draft (Andrew Nesbitt, May 2026): Defines disclosure, quality, and code of conduct for AI OSS contributions. ACs must not impersonate humans, must run tests, and should understand maintainer sarcasm.
@@ -1075,7 +1075,7 @@
 - [[concepts/behavioral-trait-transmission]] — Subliminal Learning/Self-Reference in LLMs
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmaxxing — Community slang for models optimized for benchmark performance at the expense of real-world instruction following. Applied to Gemini, Qwen, and others. Rooted in Goodhart's Law dynamics.
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
-- [[concepts/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3. Multi-turn, multi-step function calling evaluation. State-based verification. GLM 4.5 leads at 76.7%.
+- [[concepts/ai-benchmarks/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3. Multi-turn, multi-step function calling evaluation. State-based verification. GLM 4.5 leads at 76.7%.
 - [[concepts/bitsandbytes]] — bitsandbytes: Efficient LLM training library via NF4 quantization and double quantization.
 - [[concepts/bitter-lesson-agent-harnesses]] — As model capability scales, the harness's role shifts from logic implementation to orchestrating model behavior
 - [[concepts/bitter-lesson-harnessing]] — The Bitter Lesson and Harnessing Evolution
@@ -1102,7 +1102,7 @@
 - [[concepts/chain-of-thought]] — Chain-of-Thought reasoning: Prompt technique generating intermediate reasoning steps before the final answer. Proposed by Wei et al. (2022). Emergent capability in large models. Foundation for all test-time-scaling techniques: self-consistency, Best-of-N, beam search, RL-trained CoT (o1/R1). Variants: Few-Shot/Zero-Shot/Auto-CoT/Long CoT.
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices (specific)
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
-- [[concepts/chartqa]] — ChartQA — Chart understanding QA benchmark. Real charts sourced from Statista/Pew/OECD. 32.7K QA pairs. Noisy test data is a problem.
+- [[concepts/ai-benchmarks/chartqa]] — ChartQA — Chart understanding QA benchmark. Real charts sourced from Statista/Pew/OECD. 32.7K QA pairs. Noisy test data is a problem.
 - [[concepts/chatferry]] — ChatFerry — TypeScript CLI for coding agents to prompt ChatGPT/Claude through browser sessions without API keys. Uses Playwright + Chromium, daemon with 3 concurrent prompts per provider, markdown exports. Created by [[entities/shloked]].
 - [[concepts/gpt/chatgpt-app-design-patterns]] — ChatGPT App Design Patterns — UX patterns for great ChatGPT apps: streaming, tool use visualization, error handling. 15 practical lessons from Alpic. GPT-5.4 frontend design with canvas.
 - [[concepts/gpt/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming Memory System — Async consolidation pipeline (3-tier: Buffer/Consolidation Engine/Long-Term Index), knowledge graph, temporal decay, 73% hallucination reduction
@@ -1208,7 +1208,7 @@
 - [[concepts/contextual-retrieval]] — Anthropic's RAG improvement technique. Automatically prepends full-document context via Claude before chunk embedding/BM25 indexing. Combined Contextual Embeddings + Contextual BM25 reduces search failure rate by 49%, with reranking adding up to 67% reduction. $1.02 per 1M document tokens using Prompt Caching.
 - [[concepts/continual-harness]] — Online adaptation framework for self-improving agent harnesses. From GPP (first AI to complete Pokemon). Removes human from harness refinement loop. arXiv:2605.09998.
 - [[concepts/continual-learning]] — Continual Learning — Continuous improvement through web research and feedback loops
-- [[concepts/countbenchqa]] — CountBenchQA — Ultra-simple object counting benchmark. Manually verified from LAION-400M. 2-10 objects. Highest data quality.
+- [[concepts/ai-benchmarks/countbenchqa]] — CountBenchQA — Ultra-simple object counting benchmark. Manually verified from LAION-400M. 2-10 objects. Highest data quality.
 - [[concepts/craft-agents]] — Craft Agents: open-source agent interface. Works with Claude, ChatGPT, OpenRouter, local models. Built-in Chromium browser, MCP support, Claude Code skill import. Multi-provider via Vercel AI SDK.
 - [[concepts/critique-shadowing]] — Critique Shadowing — Shadow critique method for AI safety and self-evaluation
 - [[concepts/cryptography-patterns]] — Cryptography Patterns — Bitwarden Encryption Architecture and design patterns
@@ -1353,7 +1353,6 @@
 - [[concepts/gemini/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
 - [[concepts/gemini/gemini-3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
-- [[concepts/gemini]] — Google Gemini — Google DeepMind's multimodal LLM family.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/generative-app-evolution]] — Generative App Evolution — The evolutionary staircase of generative applications from UI components to full agentic systems.
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer) — Anthropic's show_widget system for rendering interactive HTML widgets inline in claude.ai. Progressive disclosure pattern (read_me), streaming DOM injection, design guidelines. Recreated for terminal agents using Glimpse + morphdom.
@@ -1533,7 +1532,7 @@
 - [[concepts/mixture-of-experts]] — Mixture of Experts
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
 - [[concepts/ai-benchmarks/mmlu-pro]] — MMLU Pro — Enhanced version of MMLU. 10-choice MC, 12K+ questions, 14 domains. 43% new problems not in original MMLU. LLM-assisted filtering. 16-33% accuracy drop. NeurIPS Spotlight.
-- [[concepts/mmmu]] — MMMU — 11.5K multimodal questions. Sourced from college exams and textbooks. 6 disciplines, 30 subjects, 183 subfields. 30+ image types. GPT-4V 56%, Gemini Ultra 59%. CVPR 2024 Oral.
+- [[concepts/ai-benchmarks/mmmu]] — MMMU — 11.5K multimodal questions. Sourced from college exams and textbooks. 6 disciplines, 30 subjects, 183 subfields. 30+ image types. GPT-4V 56%, Gemini Ultra 59%. CVPR 2024 Oral.
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
 - [[concepts/model-distillation]] — Model Distillation
 - [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs — Industry thesis: every model lab is restructuring around agent infrastructure. Brockman: "the model alone is no longer the product".
@@ -1546,7 +1545,7 @@
 - [[concepts/moltbook-breach-2026]] — **Moltbook Breach 2026 (770K agent simultaneous compromise incident)** — First industrial-scale AI agent security incident in history. 770K agents' API tokens (1.5M items) exposed due to disabled Supabase RLS. Occurred simultaneously with CVE-2026-25253 (One-Click RCE) and the ClawHavoc campaign (341 malicious skills). Real-world validation of the Lethal Trifecta.
 - [[concepts/monty-sandbox]] — Monty Sandbox — Lightweight Python sandbox for AI agent code execution (Pydantic, Rust). 7.2K stars, v0.0.17, <1μs startup. Snapshot-based pause/resume for agent interleaving. Will power CodeMode in Pydantic AI.
 - [[concepts/mozilla-firefox-ai-hardening]] — Mozilla used Claude Mythos Preview to find 423 security bugs in Firefox (April 2026)
-- [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution. Multi-needle long-context eval. Originated from Google DeepMind's LSQ framework. OpenAI released OSS version. Claude Opus 4.6 at 93% on 8-needle 1M.
+- [[concepts/ai-benchmarks/mrcr]] — MRCR — Multi-Round Coreference Resolution. Multi-needle long-context eval. Originated from Google DeepMind's LSQ framework. OpenAI released OSS version. Claude Opus 4.6 at 93% on 8-needle 1M.
 - [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale — Research testing multi-agent LLM autonomy at unprecedented scale: 25,000+ agents, emergent coordination, hierarchical task decomposition.
 - [[concepts/multi-agent-consensus-patterns]] — Multi-Agent Consensus Patterns — Architectures and protocols for consensus among multiple AI agents.
 - [[concepts/multi-agent-kernel-optimization]] — Multi-Agent Kernel Optimization — Cursor × NVIDIA collaboration: multi-agent system autonomously optimized 235 CUDA kernels on Blackwell B200 GPUs, achieving 38% geomean speedup in 3 weeks. SOL-ExecBench, three optimization strategies (BF16 GQA, NVFP4 MoE, BF16 GEMM), planner+worker harness architecture.
@@ -1748,7 +1747,7 @@
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism — Pipeline parallelism for SGLang inference
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.
 - [[concepts/sid-1]] — SID-1 (SID.ai, Dec 2025): first model trained end-to-end with RL (GRPO) for agentic retrieval. Recall 0.84, beats GPT-5.1/Sonnet 4.5/Gemini 3 Pro. 24x faster, 3-4 orders of magnitude cheaper than frontier models. Drop-in compatible subagent for RAG replacement.
-- [[concepts/simpleqa]] — SimpleQA — Factual knowledge sanity check. 4,326 adversarially collected questions. Important for detecting knowledge loss after RL training. Top score 55.6% on SimpleQA Verified (DeepMind 2025).
+- [[concepts/ai-benchmarks/simpleqa]] — SimpleQA — Factual knowledge sanity check. 4,326 adversarially collected questions. Important for detecting knowledge loss after RL training. Top score 55.6% on SimpleQA Verified (DeepMind 2025).
 - [[concepts/simulacrum-of-knowledge-work]] — "Simulacrum of Knowledge Work"
 - [[concepts/single-agent-ceiling]] — Single-Agent Ceiling — Hypothesis that single-agent architectures hit a performance ceiling, necessitating multi-agent orchestration for complex tasks.
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
@@ -1832,7 +1831,7 @@
 - [[concepts/verifiers-rl]] — Verifiers: TRL-based multi-turn RL framework. GRPO on HuggingFace Trainer, supports environments and multi-turn tool use. Popular for research.
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
 - [[concepts/vibe-coding]] — Vibe Coding — Development style defined by Simon Willison: coding where you pay no attention to implementation details.
-- [[concepts/vibe-eval]] — Vibe-Eval — Reka AI's personalized multimodal eval. 269 expert-created prompts. >50% of hard problems unsolved by all frontier models. Exhibits inverse scaling.
+- [[concepts/ai-benchmarks/vibe-eval]] — Vibe-Eval — Reka AI's personalized multimodal eval. 269 expert-created prompts. >50% of hard problems unsolved by all frontier models. Exhibits inverse scaling.
 - [[concepts/vibe-physics]] — "Vibe Physics"
 - [[concepts/vla-models]] — Vision-Language-Action Models (VLA) — Foundation models mapping vision+language to robot actions. OpenVLA (7B, beats 55B RT-2-X), GR00T N1.7 (3B, EgoScale), π0.7 (compositional), SmolVLA (450M, consumer hardware).
 - [[concepts/waluigi-effect]] — Fundamental limit of LLM alignment proposed by Cleo Nardo. The phenomenon where training on desired property P makes it easier to invoke the opposite property ¬P. Three mechanisms based on Simulator Theory, Derridean deconstruction, and structuralist narratology. Theory that Waluigi is an attractor state. Evidence that RLHF worsens the problem. Re-conceptualization of jailbreaking (DAN, etc.). Provides the technical mechanism for Societal Shadow.
@@ -1862,7 +1861,7 @@
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
 - [[concepts/agent-safety-interventions]] — Agent Safety Interventions — Invisible model safeguards (silent interventions, steering vectors) disclosed in Claude Fable 5 system card
 
-## Comparisons (28 pages)
+## Comparisons (30 pages)
 
 - [[comparisons/claude-opus-4x-comparison]] — Claude Opus 4.6 vs 4.7 vs 4.8 System Card Comparison — Capability growth and safety evolution Feb–May 2026. RSP thresholds (AI R&D-4, CBRN-4), cyber evaluations (Cybench→ExploitBench→OSS-Fuzz), alignment trends (evaluation awareness→grader speculation). Opus 4.8: 0% misreporting rate (first model), but prompt injection robustness regressed.
 - [[comparisons/claude-sonnet46-vs-opus46]] — Claude Sonnet 4.6 vs Opus 4.6 — Mid-tier approaches frontier on SWE-bench (79.6% vs 80.8%) and OSWorld (72.5% vs 72.7%). Sonnet 4.6: best alignment scores of any Claude model, lower over-refusal (0.41% vs 0.66%). Gaps in reasoning: ARC-AGI-2 (-10.5%), Terminal-Bench (-6.3%). Both ASL-3.
