@@ -319,7 +319,7 @@ Devin Desktop's ACP integration positions Cognition as an **agent orchestrator p
 - [[entities/claude-code]] — Primary competitor (Anthropic/OpenAI)
 - [[windsurf]] — Acquired by Cognition (Jul 2025); agentic AI IDE
 - [[concepts/cognition-devin-philosophy]] — Core philosophy: context continuity, 100x capability growth, closing the loop
-- [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]] — Competitive analysis with Claude Code
+- [[concepts/cognition-devin-philosophy]] — Competitive analysis with Claude Code
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Multi-agent orchestration patterns
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Devin workflow architecture
 - [[concepts/multi-agents-cognition-devin-orchestration]] — Multi-agent coordination designs

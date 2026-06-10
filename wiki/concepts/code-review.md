@@ -55,4 +55,4 @@ See [[concepts/code-review-agents]]
 - [[entities/linear]] — Linear Diffs brings code review into the Linear workspace
 - [[concepts/code-review-agents]] — AI-powered automated code review
 - [[concepts/linear-agent-code-intelligence]] — Linear's codebase-aware AI agent
-- [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution in agent contexts
+- [[concepts/programmatic-tool-calling]] — Code execution in agent contexts

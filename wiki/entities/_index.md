@@ -93,7 +93,7 @@
               87|- [[entities/dwarkesh-patel]] — Dwarkesh Patel (born August 19, 2000) is an American podcaster, writer, and technology journalist best known for the Dwarkesh Podcast and his 2025 book The Scaling Era: An Oral History of AI, 2019–202
               88|- [[entities/dylan-patel]] — tags:
               89|- [[dynomight-net]] — Dynomight is a pseudonymous writer who produces long-form essays on topics ranging from AI safety and the philosophy of consciousness to tactical parenting, tea optimization, and the statistical analy
-              90|- [[ed-zitron-s-where-s-your-ed-at]] — Ed Zitron was born in the United Kingdom and grew up in West London, initially in the White City area before his family relocated to Hammersmith (via Grokipedia). His father worked in management consu
+              90|- [[ed-zitron]] — Ed Zitron was born in the United Kingdom and grew up in West London, initially in the White City area before his family relocated to Hammersmith (via Grokipedia). His father worked in management consu
               91|- [[eli-thegreenplace-net]] — Eli Bendersky is a systems programmer, compiler enthusiast, and one of the most consistent technical bloggers in the industry. His website thegreenplace.net has been publishing since 2004, accumulatin
               92|- [[elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
               93|- [[elvis-sun]] — Elvis spent 8 years at Google building Firebase before becoming a generalist founder who can build the entire business — product, code, ops, marketing, sales. In the AI era, he argues one person can b

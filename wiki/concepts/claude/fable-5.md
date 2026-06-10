@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md
   - raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md
   - https://x.com/claudeai/status/2064394146916229443
+  - raw/articles/simonwillison.net--2026-jun-9-claude-fable-5--6a315a85.md
 ---
 
 # Claude Fable 5
@@ -143,6 +144,19 @@ Key finding: A **verifier sub-agent** outperforms self-critique because grading 
 | **Sonnet 4.6** | Exits at step 1: stores failure notes and open guesses | Low |
 | **Opus 4.7** | Exits at step 3: creates schema reference with uncertainty flagged | 7-33% (median ~17%) |
 | **Fable 5** | Completes full progression: distills learnings into general rules | Up to 73% (22 of 30 questions) |
+
+## Independent Review: Simon Willison
+
+Simon Willison published detailed initial impressions after ~5.5 hours of testing Fable 5 on June 9, 2026.
+
+Key observations:
+- **The 'big model smell'**: Fable 5 feels notably larger in knowledge scope than Opus 4.8. When asked to list Simon Willison's open source projects, Opus 4.8 listed ~5 projects cautiously; Fable 5 produced a comprehensive list with dates, recognizing the typo 'Simon Willion' and covering files-to-prompt, datasette-extract, LLM, Datasette, sqlite-utils, Django, shot-scraper, and more.
+- **Speed and cost tradeoff**: $10/MTok input, $50/MTok output — twice the price of Opus 4.5-4.8. The model is slower but handles everything thrown at it.
+- **Context window**: 1 million tokens input, 128,000 maximum output tokens, January 2026 knowledge cutoff.
+- **Safety classifiers**: New mechanisms for indicating when guardrails trigger, with automatic fallback option to another model.
+- **Mythos 5 parallel launch**: Same model without safety classifiers, restricted to select researchers.
+
+> "It's slow, expensive and has been quite happily churning through everything I've thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can't do." — Simon Willison
 
 ## Controversy: Capability Limitation Debate
 

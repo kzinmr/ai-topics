@@ -157,4 +157,4 @@ The key differentiator is **fully managed infrastructure** — no local setup, n
 - [[concepts/agent-runtime]] — General concept of agent execution environments
 - [[concepts/agent-loop-orchestration]] — How agent loops are structured
 - [[concepts/programmatic-tool-calling]] — The paradigm of agents writing code to interact with tools
-- [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Comparison of code execution approaches
+- [[concepts/programmatic-tool-calling]] — Comparison of code execution approaches

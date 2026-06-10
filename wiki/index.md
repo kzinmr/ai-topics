@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2443 | Indexed entries: 1899 | Concepts: 1023 | Entities: 786
+> Last updated: 2026-06-10 | Total pages: 2423 | Indexed entries: 1880 | Concepts: 998 | Entities: 784
 
-## Entities (785 pages)
+## Entities (784 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -46,7 +46,6 @@
 - [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
 - [[entities/dynomight-net]] — Dynomight — Data science & society blog
 - [[entities/fintool]] — Fintool
-- [[entities/ed-zitron-s-where-s-your-ed-at]] — Ed Zitron (Where’s Your Ed At) — AI industry, business critique
 - [[entities/florian-brand]] — Florian Brand (@xeophon) — Research Engineer at Prime Intellect (evals). Editor at Interconnects (open models). OSWorld critique.
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer — Open-source skill bundle for Claude Code and Codex that brings professional evaluation engineering into coding agent workflows. Created by Pratik Bhavsar at Galileo Agent Labs (May 2026).
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
@@ -797,10 +796,9 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1016 pages)
+## Concepts (998 pages)
 - [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
-- [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/abliteration]] — Abliteration: Mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. 3,500+ decensored models, 13M downloads. Automated by Heretic tool. Affects Llama, Gemma, Nemotron.
@@ -916,8 +914,6 @@
 - [[concepts/ai-agent-security]] — AI Agent Security — Security vulnerabilities unique to AI agents: tool-chaining attacks (91%), goal drift (89%), memory poisoning (94%). Real-world incidents: Moltbook (770K agents), Microsoft Copilot Cowork exfiltration, curl AI-flooded vulnerability reports.
 - [[concepts/ai-agent-traps]] — AI Agent Traps
 - [[concepts/ai-agent-video-editing]] — AI Agent Video Editing — Meta-pattern of using AI coding agents to build automated video editing pipelines. Agent watches a tutorial → replicates process → packages as skill. Self-referential quality loop (the walkthrough video is edited by the tool it describes). AssemblyAI speech-to-text with word-level timestamps for automated cutting. Arcturus Labs, May 2026.
-- [[concepts/ai-agents-autonomy-planning-file-operations-delegation-sandbox]] — "ai-agents, autonomy, planning, file-operations, delegation, sandbox"
-- [[concepts/ai-agents-framework-python-type-safety-structured-outputs-pydantic]] — "ai-agents, framework, python, type-safety, structured-outputs, pydantic"
 - [[concepts/ai-agents]] — AI Agents
 - [[concepts/ai-alignment]] — AI Alignment: Two axes — Negative alignment (safety constraints, harm prevention) and Positive Alignment (Oxford/DeepMind/OpenAI/Anthropic/Stanford, arXiv:2605.10310). Polycentric, pluralistic approach actively supporting human and ecosystem flourishing.
 - [[concepts/ai-alliance]] — "AI Alliance"
@@ -943,7 +939,6 @@
 - [[concepts/ai-content-transparency]] — AI Content Transparency — Platform policies and detection technologies for AI-generated content. YouTube's May 2026 auto-detection and simplified labeling. Platform comparison across YouTube, Meta, TikTok, X/Twitter.
 - [[concepts/ai-criticism-politics]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
-- [[concepts/ai-digital-nato-frontier-model-forum-distillation-alliance]] — "AI Digital NATO — Frontier Model Forum Distillation Alliance"
 - [[concepts/ai-digital-nato]] — AI Digital NATO: Threat intelligence sharing coalition concept by the Frontier Model Forum (OpenAI/Anthropic/Google).
 - [[concepts/ai-economic-impact]] — AI Economic Impact — Benedict Evans' framings on AI economics: Jevons paradox (cheaper AI → more usage), task vs job automation, value accrual in AI stack, distribution as moat, "1997 internet moment" comparison, anti-AI backlash, consulting/services boom. Sources: [[raw/articles/2026-06-01_benedict-evans-1997-internet-moment.md]]
 - [[concepts/ai-economics-bubble-venture-capital-subprime]] — "ai-economics, bubble, venture-capital, subprime"
@@ -1113,7 +1108,6 @@
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
 - [[concepts/china-openclaw-agentic-boom]] — The explosive spread of OpenClaw in China in early 2026. Structural transformation driven by low-cost APIs, the DeepSeek effect, and government subsidies. 5 cloud providers competing simultaneously, 135K exposure + 42K auth bypass security crisis, installation market on Taobao/Xianyu at RMB 50-700, Shenzhen OPC subsidies up to $1.4M.→ [[entities/openclaw]], [[concepts/china-agentic-coding-sprint]]
 - [[concepts/claude/tokenizer-47]] — Claude 4.7 Tokenizer Change
-- [[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]] — claude-agent-sdk orchestration, hooks, subagents, plan-mode
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — Claude Agent SDK — SRE Agent Pattern
 - [[concepts/claude-certified-architect-domains]] — Claude Certified Architect comprehensive knowledge of all 5 domains (based on @hooeem article). Domain 1: Agentic Architecture & Orchestration (27%) — stop_reason, hub-and-spoke, hooks, task decomposition. Domain 2: Tool Design & MCP (18%) — tool description design, tool_choice. Domain 3: Claude Code Configuration (20%) — CLAUDE.md hierarchy, path-specific rules, plan mode. Domain 4: Prompt Engineering (20%) — explicitness, few-shot, JSON schemas, Batches API. Domain 5: Context Management (15%) — progressive summarization traps, lost in middle, escalation triggers, error propagation, information provenance.
 - [[concepts/claude-code-auto-mode]] — Claude Code's auto mode. A Sonnet 4.6-based 2-stage transcript classifier (Stage 1: fast single-token filter → Stage 2: CoT reasoning) replaces human approver. Two-layer defense with prompt injection probe blocks dangerous actions while minimizing permission prompts. FPR 0.4%, captures 83% of actual overeager behavior. Deny-and-continue design.
@@ -1156,7 +1150,6 @@
 - [[concepts/cmu-llms-methods-applications]] — CMU LLMs: Methods and Applications: CMU graduate LLM course (covers latest: GRPO, Deep Research, Multi-agent, etc.).
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents — Unified framework for agent cognitive architectures.
 - [[concepts/coalitional-agency]] — Richard Ngo's "scale-free theory of intelligent agency." Intelligence emerges as coalitions of sub-agents that compete and cooperate, and this principle applies universally from neurons to civilizations. Critically integrates both EUM and Active Inference. Proposes internal coordination mechanisms via prediction markets, auctions, and voting.
-- [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution agents latency, Monty, Pydantic AI, sandbox
 - [[concepts/code-execution-with-mcp]] — Code Execution with MCP — Treating MCP Servers as Code APIs
 - [[concepts/code-intelligence-for-llms]] — Code Intelligence for LLMs
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
@@ -1174,7 +1167,6 @@
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/coding-agents]] — Coding Agents
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — design to turn Devin into a data analysis agent
-- [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]] — Cognition Devin memory tool, Claude Code competitive analysis
 - [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents — The overhead of reasoning, planning, and verification when using AI coding agents.
 - [[concepts/cognitive-debt]] — Cognitive Debt
@@ -1189,7 +1181,6 @@
 - [[concepts/compound-engineering-loop]] — Compound Engineering Loop
 - [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks
 - [[concepts/computer-use]] — Computer Use Agents — AI systems that operate computers like humans (clicking, typing, navigating). OSWorld benchmark (360+ tasks, human baseline 72.4%). SOTA: Pointer AI 83.6% with Claude Opus 4.7.
-- [[concepts/concept-context-graph-decision-trace-system-of-record-foundation-capital]] — Context graph, decision trace, system of record — Foundation Capital
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 - [[concepts/constrained-decoding]] — Constrained Decoding
 - [[concepts/content-engine]] — Content Engine
@@ -1225,7 +1216,6 @@
 - [[concepts/data-analysis-agents]] — Comprehensive concept of AI data analysis agents. Pipeline: data exploration→schema understanding→query generation→execution→verification→visualization→reporting. Compares three major approaches: OpenAI's internal data agent (GPT-5.2), Cognition DANA/Devin, and Anthropic's skills-first analytics (Claude Code, 95% automation). Also covers Codex data analytics plugin, relationships with DWH semantic layers, and golden queries.
 - [[concepts/data-engineering-for-ml]] — Data Engineering for ML
 - [[concepts/data-engineering]] — Data Engineering: Practical engineering discipline for data pipeline design, construction, and maintenance.
-- [[concepts/data-validation-python-type-hints-rust-web-frameworks-fastapi]] — Data Validation, Python Type Hints, Rust Web Frameworks, FastAPI
 - [[concepts/dataset-engineering]] — Dataset Engineering: Emerging field of systematic curation and quality management for AI training datasets.
 - [[concepts/datasette-agent]] — datasette-agent — AI agent interface for Datasette, enabling LLM-powered database exploration
 - [[concepts/datasette-llm]] — datasette-llm: Datasette LLM integration plugin by Simon Willison.

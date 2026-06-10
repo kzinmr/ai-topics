@@ -89,5 +89,5 @@ An alternative perspective: Chinese labs' reliance on API exploitation may be st
 - [[events/distillation-attacks-2026]] — Anthropic's April 2026 accusations
 - [[entities/nathan-lambert]] — Author of "The Distillation Panic"
 - [[raw/articles/2026-05-04_interconnects_distillation-panic]] — Raw article
-- [[concepts/ai-digital-nato-frontier-model-forum-distillation-alliance]] — Related policy alliance
+- [[concepts/ai-digital-nato]] — Related policy alliance
 - [[concepts/industrial-scale-distillation-attacks-accusation]] — The specific accusation event

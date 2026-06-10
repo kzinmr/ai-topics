@@ -10,7 +10,7 @@ tags:
   - security
 aliases:
 - Mythos
-sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md"]
+sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md"]
 ---
 
 # Claude Mythos
@@ -128,6 +128,18 @@ Key design choices:
 - **Scope**: Estimated ~0.03% of traffic, <0.1% of organizations
 - **Rationale**: Concern about "accelerating other AI developers in building powerful AI systems that pose similar risks [...] without necessarily having commensurate safeguards"
 - **Behavioral impact**: Minimal except limiting frontier LLM development effectiveness; Claude still responds helpfully
+
+## Critical Perspective: Gary Marcus 'Scare, Hype, Release' Pattern
+
+Gary Marcus argued (June 2026) that Anthropic's Mythos release follows a deliberate pattern he traces back to OpenAI's GPT-2 'too dangerous to release' strategy in 2019:
+
+1. **Scare**: Anthropic held 'hushed meetings in Washington' about Mythos being 'too dangerous to release' (April 2026). Media amplified concerns — Axios reported officials believed Mythos could 'bring down a Fortune 100 company' or 'cripple swaths of the internet'
+2. **Hype**: Anthropic's valuation leapt after the safety narrative generated media interest
+3. **Release**: Two months later, with guardrails added, Mythos-class capabilities became available to anyone at the right price — coinciding with companies beginning to limit AI token budgets ('tokenmaxxing')
+
+Marcus notes that several authors of the original 2019 GPT-2 safety post (including Dario Amodei, Daniele Amodei, and Jack Clark) went on to found Anthropic, and argues they have been 'running literally the same play for seven years.'
+
+> "Anthropic once again played the media like a fiddle. And so many folks ate it all up." — Gary Marcus
 
 ## Sources
 -  (Ben's Bites, 2026-04-09)

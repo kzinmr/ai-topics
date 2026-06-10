@@ -7786,3 +7786,9 @@ Updated:
   - ChatGPT Images 2.0 (Apr 2026), GPT-5.5 (Apr 2026), GPT-5.5 Instant (May 2026), GPT-Rosalind-5.5 (Jun 2026)
 - **UPDATED**: gpt-deployment-safety-hub.md — added Individual System Card Pages section with links to all 20 pages
 - **UPDATED**: index.md — added 18 system card entries
+
+## 2026-06-10 — Siri AI concept page
+
+- **CREATED**: `concepts/siri-ai.md` — Apple's reimagined voice assistant (June 2026 press release). Personal context understanding, broad world knowledge, onscreen awareness, Visual Intelligence, Writing Tools, dedicated Siri app, on-device + Private Cloud Compute architecture, supported devices and availability.
+- **UPDATED**: `index.md` — Added `concepts/siri-ai` entry in alphabetical order (between sitecove-ship and skill-architecture-patterns)
+- Sources: raw/articles/apple.com--newsroom-2026-06-apple-introduces-siri-ai-a-profoundly-more---6ef8c2d4.md

@@ -124,7 +124,7 @@ Anthropic supports international AI safety dialogue with Chinese experts, but ar
 - [[model-distillation]] — Technical mechanism behind distillation attacks
 - [[industrial-scale-distillation-attacks-accusation]] — April 2026 event: Anthropic's accusations against DeepSeek, Moonshot, MiniMax
 - [[ai-governance]] — Broader AI governance frameworks
-- [[ai-digital-nato-frontier-model-forum-distillation-alliance]] — Industry coalition against distillation
+- [[ai-digital-nato]] — Industry coalition against distillation
 
 ## Related Entities
 

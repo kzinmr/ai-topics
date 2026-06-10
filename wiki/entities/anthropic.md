@@ -459,7 +459,7 @@ On May 21, 2026, the Wall Street Journal reported on Anthropic's "first profitab
 - Q2 2026 Operating Profit: **$559M** (EBITDA basis)
 - Wall Street Journal's own footnote: "Accounting standards are unclear as the company is private"
 
-However, detailed analysis by Ed Zitron ([[entities/ed-zitron-s-where-s-your-ed-at]]) revealed that this "profitability" is essentially an **accounting construct**:
+However, detailed analysis by Ed Zitron ([[entities/ed-zitron]]) revealed that this "profitability" is essentially an **accounting construct**:
 
 #### SpaceX Discount Structure
 

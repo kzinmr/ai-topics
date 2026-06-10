@@ -43,7 +43,7 @@ related:
   - "[[concepts/claude/memory-tool]]"
   - "[[concepts/extended-thinking]]"
   - "[[concepts/prompt-caching]]"
-  - "[[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]"
+  - "[[concepts/anthropic/agent-sdk-sre-patterns]]"
   - "[[concepts/ai-safety-military-governance-claude]]"
   - "[[concepts/coding-agents]]"
 ---
@@ -252,5 +252,5 @@ For model-specific details, see sub-pages: [[claude-opus-4-7]], [[claude-sonnet-
 - **[[concepts/mcp]]** — Model Context Protocol
 - **[[concepts/ai-safety-military-governance-claude]]** — Safety and governance
 - **[[concepts/coding-agents]]** — AI coding agent ecosystem
-- **[[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]** — Agent SDK
+- **[[concepts/anthropic/agent-sdk-sre-patterns]]** — Agent SDK
 - **[[concepts/claude/memory-tool]]** — Memory tool

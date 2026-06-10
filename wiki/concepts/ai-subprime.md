@@ -16,7 +16,7 @@ sources:
   - raw/articles/wheresyoured.at--the-subprime-ai-crisis-is-here--278f66de.md
   - https://www.wheresyoured.at/the-subprime-ai-crisis-is-here/
 related:
-  - entities/ed-zitron-s-where-s-your-ed-at
+  - entities/ed-zitron
   - entities/ben-boyter
   - concepts/ais-economics-dont-make-sense
   - concepts/agent-harness
@@ -171,7 +171,7 @@ The crisis is self-reinforcing: raising prices → user anger → churn to cheap
 
 ## Critical Perspectives
 
-- **[[entities/ed-zitron-s-where-s-your-ed-at|Ed Zitron]]** — Primary analyst, originated the "Subprime AI Crisis" framing in Sept 2024. Also author of "The AI Industry Is Lying to You" and "Four Horsemen of the AIpocalypse."
+- **[[entities/ed-zitron|Ed Zitron]]** — Primary analyst, originated the "Subprime AI Crisis" framing in Sept 2024. Also author of "The AI Industry Is Lying to You" and "Four Horsemen of the AIpocalypse."
 - **[[entities/ben-boyter|Ben Boyter]]** — Also critiques AI economics from the B2A perspective, though focuses on token efficiency for agents rather than macroeconomics.
 
 ## Graph Structure Query
@@ -187,11 +187,11 @@ The crisis is self-reinforcing: raising prices → user anger → churn to cheap
 [ai-subprime] ──warns-about──→ [entity: cursor]
 ```
 
-Authored by [[entities/ed-zitron-s-where-s-your-ed-at|Ed Zitron]], contrasts with mainstream AI productivity optimism, relates to the [[concepts/agent-harness]] economics (how much harness infrastructure costs) and broader AI industry financial analysis.
+Authored by [[entities/ed-zitron|Ed Zitron]], contrasts with mainstream AI productivity optimism, relates to the [[concepts/agent-harness]] economics (how much harness infrastructure costs) and broader AI industry financial analysis.
 
 ## Related Concepts
 
-- [[entities/ed-zitron-s-where-s-your-ed-at]] — Ed Zitron, the primary analyst
+- [[entities/ed-zitron]] — Ed Zitron, the primary analyst
 - [[concepts/agent-harness]] — Harness economics relate to the cost structure Zitron critiques
 - [[entities/ben-boyter]] — Token efficiency perspective on AI economics
 - [[concepts/ai-economics]] — Broader AI industry economics

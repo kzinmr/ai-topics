@@ -20,7 +20,7 @@ aliases:
 related:
   - concepts/agent-economics
   - concepts/bitter-lesson-harnessing
-  - entities/ed-zitron-s-where-s-your-ed-at
+  - entities/ed-zitron
   - entities/ethan-mollick
   - entities/westenberg
 sources:
@@ -151,7 +151,7 @@ Even Yarvin acknowledges: technological accelerationism is a "harmless, prosocia
 ## See Also
 
 - [[concepts/agent-economics]] — Economic implications of AI agents, including labor displacement
-- [[entities/ed-zitron-s-where-s-your-ed-at]] — Another AI critic who takes a skeptical view of the technology industry's promises
+- [[entities/ed-zitron]] — Another AI critic who takes a skeptical view of the technology industry's promises
 - [[entities/ethan-mollick]] — Pragmatic middle ground between techno-optimism and skepticism
 - [[entities/westenberg]] — "Soft-landing manual" for AI disruption; rejects both extremes
 - [Marc Andreessen's The Techno-Optimist Manifesto](https://a16z.com/the-techno-optimist-manifesto/) — The original text being rebutted
