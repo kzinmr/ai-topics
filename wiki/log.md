@@ -7874,3 +7874,16 @@ Updated:
 - **UPDATED**: gpt-deployment-safety-hub.md — added Pre-2025 section (GPT-4o, o1)
 - **UPDATED**: gpt-system-card-milestones.md — added Phase 0 (GPT-4o, o1)
 - **NOTE**: GPT-4, GPT-4V, o1-preview, o1-mini, o3-mini system cards exist at openai.com but inaccessible (403/Cloudflare). GPT-4o-mini system card also inaccessible.
+
+## 2026-06-10 — Lesson 2 Transcript Ingestion (MCP + Production-Grade Agents)
+
+- **CREATED**: `raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md` — Full raw transcript of Lesson 2 (MCP + Production-Grade Agents)
+- **CREATED**: `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` — Structured transcript with timestamps, sections, key takeaways
+- **CREATED**: `raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2.md` — Lesson 2 summary article
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 2 to Lecture Schedule, Lesson Summaries section, sources, related links
+- **UPDATED**: `index.md` — Added Lesson 2 transcript entry
+
+- 2026-06-10 | raw/papers | 2023-03-27_openai-gpt-4-system-card.pdf | Saved GPT-4 System Card PDF (60 pages, 1MB)
+- 2026-06-10 | concept | gpt-4-system-card | GPT-4 System Card (Mar 2023): Genesis of system card practice. 12 risk categories, 50+ red teamers, ARC eval, RBRMs. Source: https://cdn.openai.com/papers/gpt-4-system-card.pdf
+- 2026-06-10 | updated | gpt-deployment-safety-hub | Added GPT-4 to Pre-2025 section
+- 2026-06-10 | updated | gpt-system-card-milestones | Added Phase -1 (GPT-4 foundation)

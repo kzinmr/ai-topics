@@ -54,6 +54,7 @@ These earlier system cards predate the Deployment Safety Hub but establish the f
 
 | System Card | Date | Key Safety Theme |
 |---|---|---|
+| [GPT-4](https://openai.com/index/gpt-4-system-card/) | Mar 2023 | First major system card; 12-category risk taxonomy; 50+ domain expert red teaming; ARC autonomous replication eval |
 | [GPT-4o](https://openai.com/index/gpt-4o-system-card/) | May 2024 | First omni-modal model; Preparedness Overall Medium; audio/multimodal safety |
 | [o1](https://openai.com/index/openai-o1-system-card/) | Dec 2024 | First reasoning model; deliberative alignment introduced; Cyber/Chem/Persuasion Medium |
 

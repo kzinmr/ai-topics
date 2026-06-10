@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-06-10_maven_agents-mcp-rl-course-overview.md
   - raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md
   - raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning.md
+  - raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://maven.com/p/193c6f/build-your-own-ai-research-agent
   - https://maven.com/p/c3950c/training-agents-with-reinforcement-learning
@@ -106,11 +107,25 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 | Date | Lecture | Transcript |
 |------|---------|------------|
 | Jun 17 | [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture\|Lesson 1: Agent Patterns & Principles]] | [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1\|Summary]] |
-| TBD | Lecture 2 | *pending* |
+| Jun 19 | [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture\|Lesson 2: MCP + Production-Grade Agents]] | [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2\|Summary]] |
 | TBD | Lecture 3 | *pending* |
 | TBD | Lecture 4 | *pending* |
 | TBD | Lecture 5 | *pending* |
 | TBD | Lecture 6 | *pending* |
+
+## Lesson Summaries
+
+### Lesson 1: Agent Patterns & Principles (Jun 17)
+
+Inaugural lecture establishing the central thesis: RL and agents are two sides of the same coin. Covers model ecosystem (DeepSeek V3, GPT 4.1, Claude Sonnet, Gemini 2.5 Pro), tool calling patterns, structured outputs via Pydantic, and multi-turn state management. Key insight: prioritize tool-use reliability over raw intelligence.
+
+**Transcript:** [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture]] · **Summary:** [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1]]
+
+### Lesson 2: MCP + Production-Grade Agents (Jun 19)
+
+Bridges prototyping to production. Covers type hints as defense against silent LM output bugs, async processing (`asyncio.gather` + semaphores for ~7-8x speedup), agentic RAG vs prefetch RAG, MCP architecture ("FastAPI but LM-shaped"), logging frameworks (Logfire, Weave, MLflow, Arize), security (sandboxing, codifying patterns as tools), and the N×M→N+M problem MCP solves. Strong stance: A2A is premature, MCP is the standard to build on.
+
+**Transcript:** [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] · **Summary:** [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]]
 
 ## Included Credits
 
@@ -166,6 +181,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook]] — Lightning Lesson 1 notebook walkthrough
 - [[raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning]] — Lightning Lesson 2: Training Agents with RL
 - [[transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook]] — Lightning Lesson 2 notebook walkthrough
+- [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]] — Lesson 2: MCP + Production-Grade Agents
+- [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] — Lesson 2 transcript
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))

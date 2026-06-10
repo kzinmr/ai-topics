@@ -15,6 +15,20 @@ Chronological analysis of the major safety milestones achieved across OpenAI's 2
 
 For the full index of all system cards, see [[concepts/gpt/gpt-deployment-safety-hub]].
 
+## Phase -1: Foundation (2023)
+
+### 0. Genesis of the System Card — GPT-4 (Mar 2023)
+
+GPT-4 ([PDF](https://cdn.openai.com/papers/gpt-4-system-card.pdf)) is the **foundational document** for OpenAI's entire system card practice. Its 60-page system card established the evaluation methodology, risk taxonomy, and mitigation architecture that all subsequent cards build upon.
+
+- **12-category risk taxonomy** (hallucinations, harmful content, disinformation, proliferation, privacy, cybersecurity, emergent behaviors, etc.)
+- **50+ domain expert red teamers** across fairness, alignment, chemistry, biorisk, cybersecurity, nuclear risks, law, education, healthcare
+- **ARC autonomous replication evaluation**: NOT capable (preliminary) — but the TaskRabbit CAPTCHA example demonstrated social reasoning
+- **RBRMs** (Rule-Based Reward Models) as safety reward signal in RLHF pipeline
+- **Key limitation**: Mitigations "limited and remain brittle"; jailbreaks still work; English/US-centric
+- **Significance**: Predates Preparedness Framework, deliberative alignment, safe-completions — but established the template for all of them
+- See [[concepts/gpt/gpt-4-system-card]]
+
 ## Phase 0: Pre-Reasoning Era (2024)
 
 ### 0a. First Omni-Modal Safety Assessment — GPT-4o (May 2024)
