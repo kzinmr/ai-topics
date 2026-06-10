@@ -1,0 +1,70 @@
+{
+  "checkpoint_run_id": "20260610T080022Z",
+  "pipeline": "raw-backlog",
+  "archived_at": "2026-06-10T08:00:22Z",
+  "total_candidates": 5,
+  "dedup_skipped": 0,
+  "new_archived": 5,
+  "items": [
+    {
+      "item_id": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "source": "raw-backlog",
+      "source_name": "Microsoft AI Technical Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 概念ページ `concepts/mai-thinking-1-tech-report.md`（227行）が109ページ全文を包括的にカバー。MoEアーキテクチャ、30Tトークン事前学習、GRPO RLレシピ、SWE-Bench Pro 52.8%/AIME 2025 97.0%/LiveCodeBench v6 87.7%のベンチマーク、3つのドメイン特化モデル（STEM/Agentic/Helpfulness）、安全性・有用性のバランス、hill-climbing machineフレームワーク — 全て収録済み。",
+      "candidate_wiki_path": "concepts/mai-thinking-1-tech-report.md",
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-1: Building a Hill-Climbing Machine\nThe Microsoft AI Team 1\nAbstract\nProgress in AI is driven not by a single model, but by the ability to continually improve upon the current state of models.\nAchieving this requires treating model development as a system-level optimization problem, for which the solution is\nbuilding a hill-climbing machine for rapid improvement."
+    },
+    {
+      "item_id": "2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "source": "raw-backlog",
+      "source_name": "walkinglabs",
+      "title": "Hands-On Modern RL: A Practice-First Guide to Modern Reinforcement Learning",
+      "url": "https://github.com/walkinglabs/hands-on-modern-rl",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 概念ページ `concepts/hands-on-modern-rl.md`（156行、2026-06-09作成済み）が全カリキュラム内容をカバー。Bitter Lessonからの導入、PPO/DPO/GRPO実装、LLM後学習パイプライン、RLVR、Agentic RL、マルチモーダルエージェント — 全て収録済み。",
+      "candidate_wiki_path": "concepts/hands-on-modern-rl.md",
+      "body_excerpt": "# Hands-On Modern RL: A Practice-First Guide to Modern Reinforcement Learning\n**Source**: [GitHub Repository](https://github.com/walkinglabs/hands-on-modern-rl) | [Online Course](https://walkinglabs.github.io/hands-on-modern-rl/)\n**Description**: A practice-first guide to modern RL, from classic control to LLM post-training, RLVR, and multimodal agents.\n## Overview\nThis is an open-source, hands-on curriculum that bridges the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems."
+    },
+    {
+      "item_id": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "source": "raw-backlog",
+      "source_name": "dwarkesh.com",
+      "title": "Alex Imas and Phil Trammell - What remains scarce after AGI?",
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 概念ページ `concepts/agi-economics.md`（93行）がAGIエコノミクスの全トピックをカバー。Relational Sector、Capital satiation、Labor share dynamics、Jevons paradox、O-ring theory。エンティティページ `entities/dwarkesh-patel.md`にもタイムラインエントリーあり。",
+      "candidate_wiki_path": "concepts/agi-economics.md",
+      "body_excerpt": "# Alex Imas and Phil Trammell - What remains scarce after AGI?\nSource: https://www.dwarkesh.com/p/alex-imas-phil-trammell\nEconomics of AGI episode with Alex Imas and Phil Trammell.\nThere's a bunch of important questions about how we deal with AI that only economics can answer.\nWhat is the optimal way to tax and redistribute the wealth that will be generated? How should countries not in the AI supply chain index into the gains?"
+    },
+    {
+      "item_id": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "source": "raw-backlog",
+      "source_name": "wheresyoured.at",
+      "title": "AI Doesn't Have ROI",
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ エンティティページ `entities/ed-zitron.md`に専用セクション（70行）として収録済み。Uber $500Mトークン事故、GitHub Copilotトークン課金混乱、kalopsia thesis、Bain & Co survey、SemiAnalysis Dark Output critique — Ed ZitronのAI ROI批判の全データが既にカバー。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": "# AI Doesn't Have ROI\nSource: https://www.wheresyoured.at/ai-doesnt-have-roi/\nIf you liked this piece, you should subscribe to my premium newsletter. It's $70 a year, or $7 a month, and in return you get a weekly newsletter that's usually anywhere from 5,000 to 18,000 words, including vast, detailed analyses of NVIDIA, Anthropic and OpenAI's finances, and the AI bubble writ large."
+    },
+    {
+      "item_id": "paulgraham.com--popular-html--c633a6dc.md",
+      "source": "raw-backlog",
+      "source_name": "paulgraham.com",
+      "title": "Being Popular",
+      "url": "http://www.paulgraham.com/popular.html",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 2001年のプログラミング言語普及論エッセイ。AI/LLM関連性なし。エンティティページ `entities/paulgraham-com.md`のProgramming Language Popularity Theoryセクションで既に収録済み（トロイの木馬戦略、エキスパートハッカー影響モデル、クリティカルマス閾値）。",
+      "candidate_wiki_path": "entities/paulgraham-com.md",
+      "body_excerpt": "# Being Popular\nSource: http://www.paulgraham.com/popular.html\nMay 2001\n(This article was written as a kind of business plan for a new language.\nSo it is missing (because it takes for granted) the most important feature of a good programming language: very powerful abstractions.)\nA friend of mine once told an eminent operating systems expert that he wanted to design a really good programming language."
+    }
+  ]
+}

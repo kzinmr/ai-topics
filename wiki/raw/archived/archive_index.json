@@ -67,5 +67,37 @@
       "reason": "★☆☆☆☆ 既存エンティティページで完全にカバー済み。entities/paulgraham-com.mdに「Programming Language Popu"
     }
   ],
-  "total_archived": 5
+  "total_archived": 5,
+  "urls": {
+    "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "action": "skip",
+      "reason": "★☆☆☆☆ 概念ページ `concepts/mai-thinking-1-tech-report.md`（227行）が109ページ全文を包括的にカバー。MoEアーキテクチャ、30Tトークン事前学習、GRPO RLレシピ、SWE-Bench Pro 52.8%/AIME 2025 97.0%/LiveCodeBench v6 87.7%のベンチマーク、3つのドメイン特化モデル（STEM/Agentic/Helpfulness）、安全性・有用性のバランス、hill-climbing machineフレームワーク — 全て収録済み。",
+      "archived_at": "2026-06-10"
+    },
+    "https://github.com/walkinglabs/hands-on-modern-rl": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "action": "skip",
+      "reason": "★☆☆☆☆ 概念ページ `concepts/hands-on-modern-rl.md`（156行、2026-06-09作成済み）が全カリキュラム内容をカバー。Bitter Lessonからの導入、PPO/DPO/GRPO実装、LLM後学習パイプライン、RLVR、Agentic RL、マルチモーダルエージェント — 全て収録済み。",
+      "archived_at": "2026-06-10"
+    },
+    "https://www.dwarkesh.com/p/alex-imas-phil-trammell": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "action": "skip",
+      "reason": "★☆☆☆☆ 概念ページ `concepts/agi-economics.md`（93行）がAGIエコノミクスの全トピックをカバー。Relational Sector、Capital satiation、Labor share dynamics、Jevons paradox、O-ring theory。エンティティページ `entities/dwarkesh-patel.md`にもタイムラインエントリーあり。",
+      "archived_at": "2026-06-10"
+    },
+    "https://www.wheresyoured.at/ai-doesnt-have-roi/": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "action": "skip",
+      "reason": "★☆☆☆☆ エンティティページ `entities/ed-zitron.md`に専用セクション（70行）として収録済み。Uber $500Mトークン事故、GitHub Copilotトークン課金混乱、kalopsia thesis、Bain & Co survey、SemiAnalysis Dark Output critique — Ed ZitronのAI ROI批判の全データが既にカバー。",
+      "archived_at": "2026-06-10"
+    },
+    "http://www.paulgraham.com/popular.html": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+      "action": "skip",
+      "reason": "★☆☆☆☆ 2001年のプログラミング言語普及論エッセイ。AI/LLM関連性なし。エンティティページ `entities/paulgraham-com.md`のProgramming Language Popularity Theoryセクションで既に収録済み（トロイの木馬戦略、エキスパートハッカー影響モデル、クリティカルマス閾値）。",
+      "archived_at": "2026-06-10"
+    }
+  }
 }

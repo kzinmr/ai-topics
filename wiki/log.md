@@ -2,6 +2,21 @@
 
 **Status**: No-op recovery. Blog-triage agent (commit 75c1c94b, 07:13 UTC) performed combined triage+wiki-ingest inline — created `concepts/siri-ai.md`, enriched `concepts/claude/fable-5.md` and `concepts/claude/mythos.md`, saved all raw articles. The triage checkpoint file at `.hermes/cron/data/blog_ingest/triage_latest.json` was valid but all 3 takes and 5 references were already processed. Archive confirmed dedup (0 new items). No additional wiki actions needed.
 
+## [2026-06-10] raw-backlog-ingest — 5 articles, all skip
+
+**Status**: Saturation confirmed. All 5 selected articles were already comprehensively processed in prior pipeline runs.
+
+**Articles processed:**
+- MAI-Thinking-1 Tech Report (microsoft.ai, 109p) → skip: `concepts/mai-thinking-1-tech-report.md` (227 lines, complete coverage)
+- Hands-On Modern RL (walkinglabs) → skip: `concepts/hands-on-modern-rl.md` (156 lines, created 2026-06-09)
+- Dwarkesh AGI Economics (Imas/Trammell) → skip: `concepts/agi-economics.md` + `entities/dwarkesh-patel.md`
+- Ed Zitron "AI Doesnt Have ROI" → skip: `entities/ed-zitron.md` (70-line dedicated section)
+- Paul Graham "Being Popular" (2001) → skip: `entities/paulgraham-com.md` (non-AI, already captured)
+
+**Archive**: 5 items saved to `wiki/raw/archived/raw_backlog/2026-06-10_20260610T080022Z.json`, archive_index.json updated (5 total URLs).
+**Pipeline saturation**: 6804 total raw articles, 247 already processed, 658 archived, 6615 remaining.
+
+
 ## [2026-06-10] Newsletter wiki-ingest — SemiAnalysis DeepSeek V4 perf, Lambert/AINews Fable 5 safety critique & RSI suppression
 
 **Action**: Enriched `concepts/deepseek-v4.md` with SemiAnalysis Day 0-43 deployment performance tracking (InferenceX, ROCm 100× improvement, TRT-LLM bug). Enriched `concepts/claude/fable-5.md` with Nathan Lambert external safety critique (uneven policy, invisible restrictions as deception) and AINews RSI suppression coverage (No ZDR naming, invisible frontier-LLM restrictions, Karpathy assessment). 2 pages enriched, 0 pages created.
@@ -7844,3 +7859,11 @@ Updated:
 - Sources: raw/articles/apple.com--newsroom-2026-06-apple-introduces-siri-ai-a-profoundly-more---6ef8c2d4.md
 
 - 2026-06-10 | concept | gpt-system-card-milestones | OpenAI System Cards Key Milestones Timeline — 11 milestones, 4 phases, trend analysis. Source: synthesized from 20 system card pages
+
+## [2026-06-10] OpenAI Model Spec Ingestion
+
+**Action**: Ingested OpenAI Model Spec (2025-12-18) into wiki. Created concept page with full analysis of chain of command hierarchy, content restriction framework, behavioral principles, and comparison with model cards/system cards and Claude Constitution.
+
+**Pages created**: `concepts/openai/model-spec.md` (concept), `raw/articles/2025-12-18_openai-model-spec.md` (raw)
+**Pages updated**: `concepts/openai/index.md` (added model-spec to Governance section), `concepts/model-cards-system-cards.md` (added cross-reference), `index.md` (added entry)
+**Sources**: https://model-spec.openai.com/2025-12-18.html, https://github.com/openai/model_spec
