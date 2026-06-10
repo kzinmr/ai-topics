@@ -7867,3 +7867,10 @@ Updated:
 **Pages created**: `concepts/openai/model-spec.md` (concept), `raw/articles/2025-12-18_openai-model-spec.md` (raw)
 **Pages updated**: `concepts/openai/index.md` (added model-spec to Governance section), `concepts/model-cards-system-cards.md` (added cross-reference), `index.md` (added entry)
 **Sources**: https://model-spec.openai.com/2025-12-18.html, https://github.com/openai/model_spec
+
+## 2026-06-10 (Pre-2025 System Cards)
+- **CREATED**: gpt-4o-system-card.md (GPT-4o, May 2024) — first omni-modal safety assessment
+- **CREATED**: gpt-o1-system-card.md (o1, Dec 2024) — first reasoning model, deliberative alignment
+- **UPDATED**: gpt-deployment-safety-hub.md — added Pre-2025 section (GPT-4o, o1)
+- **UPDATED**: gpt-system-card-milestones.md — added Phase 0 (GPT-4o, o1)
+- **NOTE**: GPT-4, GPT-4V, o1-preview, o1-mini, o3-mini system cards exist at openai.com but inaccessible (403/Cloudflare). GPT-4o-mini system card also inaccessible.

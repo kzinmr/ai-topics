@@ -15,6 +15,26 @@ Chronological analysis of the major safety milestones achieved across OpenAI's 2
 
 For the full index of all system cards, see [[concepts/gpt/gpt-deployment-safety-hub]].
 
+## Phase 0: Pre-Reasoning Era (2024)
+
+### 0a. First Omni-Modal Safety Assessment — GPT-4o (May 2024)
+
+GPT-4o ([page](https://openai.com/index/gpt-4o-system-card/)) was the first model to evaluate multimodal safety across text, audio, image, and video simultaneously.
+
+- **Preparedness**: Cyber Low, Bio/Chem Medium, Persuasion Medium, Autonomy Low → **Overall Medium**
+- **Key innovation**: Audio-specific safety (voice cloning risk, real-time conversation manipulation), multimodal attack vectors (image-based prompt injection)
+- **Significance**: Established the multimodal safety evaluation framework; set the baseline (Medium) that GPT-5 series would escalate from
+- See [[concepts/gpt/gpt-4o-system-card]]
+
+### 0b. Deliberative Alignment — o1 (Dec 2024)
+
+o1 ([page](https://openai.com/index/openai-o1-system-card/)) introduced **deliberative alignment** — reasoning about safety specifications during chain of thought.
+
+- **Preparedness**: Cyber Medium, Bio/Chem Medium, Persuasion Medium, Autonomy Low
+- **Key innovation**: Safety reasoning becomes explicit in CoT, not implicit in weights; context-sensitive adaptation
+- **Significance**: Foundation for all subsequent reasoning model safety; enabled CoT monitoring (formalized in GPT-5)
+- See [[concepts/gpt/gpt-o1-system-card]]
+
 ## Phase 1: o-series Extension (2025 H1)
 
 ### 1. First Agentic Research System — Deep Research (Feb 2025)
@@ -131,6 +151,8 @@ GPT-Rosalind-5.5 ([page](https://deploymentsafety.openai.com/gpt-rosalind-5-5)) 
 ### Safety Level Escalation
 
 ```
+May 2024  GPT-4o                 Overall MEDIUM (first multimodal)
+Dec 2024  o1                     Cyber/Bio/Persuasion MEDIUM (deliberative alignment)
 Feb 2025  Deep Research          ALL LOW
 Apr 2025  o3/o4-mini             ALL LOW (but "on the cusp" warning)
 Jul 2025  ChatGPT Agent          Bio/Chem HIGH ← first High

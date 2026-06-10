@@ -47,6 +47,16 @@ The hub provides:
 | 19 | [Deep Research](https://deploymentsafety.openai.com/deep-research) | 2025-02-25 | Agentic | Multi-step web research; o3-based; privacy protections |
 
 
+
+### Pre-2025 System Cards (on openai.com)
+
+These earlier system cards predate the Deployment Safety Hub but establish the foundation:
+
+| System Card | Date | Key Safety Theme |
+|---|---|---|
+| [GPT-4o](https://openai.com/index/gpt-4o-system-card/) | May 2024 | First omni-modal model; Preparedness Overall Medium; audio/multimodal safety |
+| [o1](https://openai.com/index/openai-o1-system-card/) | Dec 2024 | First reasoning model; deliberative alignment introduced; Cyber/Chem/Persuasion Medium |
+
 ## Individual System Card Pages
 
 Each system card now has a dedicated wiki page with detailed analysis:
