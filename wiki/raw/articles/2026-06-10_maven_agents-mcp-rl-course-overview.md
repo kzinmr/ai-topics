@@ -19,7 +19,7 @@ tags:
 
 **Platform:** [Maven](https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl)
 **Instructors:** Will Brown (Research Lead, Prime Intellect) & Kyle Corbitt (CTO, OpenPipe)
-**Schedule:** June 17 – July 3, 2026 (Tuesdays & Thursdays, 5:00–6:30 PM EST)
+**Schedule:** June 18 – July 2025 (2x weekly lectures)
 **Time Commitment:** 4–6 hours per week (lectures + projects)
 **Price:** $1,400
 **Tagline:** "Gain the key skills for designing effective agents and optimizing their performance. Dive deep into evaluations, tools, MCP, and RL."
