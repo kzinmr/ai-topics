@@ -81,7 +81,7 @@ Together AI is actively working on:
 
 ## Code Audit Benchmark vs Claude Opus 4.8 (June 2026)
 
-[[entities/kilo|Kilo Code]] ran a controlled code-audit benchmark comparing M3 against [[concepts/claude-opus-4-8|Claude Opus 4.8]] at four reasoning levels on a TypeScript webhook delivery service with 17 known issues ([source](https://x.com/kilocode/status/2063719228499542327)).
+[[entities/kilo|Kilo Code]] ran a controlled code-audit benchmark comparing M3 against [[concepts/claude/opus-4-8|Claude Opus 4.8]] at four reasoning levels on a TypeScript webhook delivery service with 17 known issues ([source](https://x.com/kilocode/status/2063719228499542327)).
 
 | Model | Issues Found | Cost | Cost/Issue |
 |-------|-------------|------|------------|

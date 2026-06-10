@@ -37,7 +37,7 @@ See also: [[concepts/personal-superintelligence]]
 
 ### Muse Spark
 
-Meta's April 2026 model announcement. Position: between [[concepts/claude-sonnet-4.6]] and [[concepts/claude-opus-4-6]] in capability. **Closed-source** API access, marking a departure from the LLaMA open-source tradition. Community commentary noted "rip LLaMA" — questioning Meta's commitment to open models.
+Meta's April 2026 model announcement. Position: between [[concepts/claude/sonnet-4-6]] and [[concepts/claude/opus-4-6]] in capability. **Closed-source** API access, marking a departure from the LLaMA open-source tradition. Community commentary noted "rip LLaMA" — questioning Meta's commitment to open models.
 
 The Muse Spark model powers Meta's personal agent features, including the Ray-Ban glasses AI and agentic commerce on Instagram/WhatsApp.
 

@@ -68,7 +68,7 @@ Compare cards across model generations to detect:
 - **Evaluation sophistication** changes
 - **Emerging concerns** (evaluation awareness, grader speculation, sabotage concealment)
 
-See [[concepts/anthropic-system-cards]] for a detailed evolution analysis of Anthropic's system cards from Claude 2 to Opus 4.8.
+See [[concepts/claude/system-cards]] for a detailed evolution analysis of Anthropic's system cards from Claude 2 to Opus 4.8.
 
 ### 7. Political Nature
 All cards are political documents. They reveal or conceal design choices and values. A card that emphasizes capability benchmarks while minimizing safety discussion makes a statement; so does one that leads with alignment philosophy.
@@ -90,7 +90,7 @@ System/model cards are the natural container for these requirements.
 
 ## See Also
 
-- [[concepts/anthropic-system-cards]] — Detailed index and evolution analysis of Anthropic's system cards
+- [[concepts/claude/system-cards]] — Detailed index and evolution analysis of Anthropic's system cards
 - [[concepts/gpt/deployment-safety-hub]] — OpenAI's Deployment Safety Hub: complete index of 19 system cards (GPT-5 through GPT-Rosalind-5.5)
 - [[concepts/ai-safety]] — Broader AI safety landscape
 - [[concepts/ai-evaluations]] — Evaluation methodologies and benchmarks

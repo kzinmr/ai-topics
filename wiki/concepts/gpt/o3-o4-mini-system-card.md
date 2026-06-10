@@ -133,6 +133,6 @@ This system card is important in the o-series timeline:
 - [[concepts/gpt/deployment-safety-hub]] — Complete index of all OpenAI system cards
 - [[concepts/gpt/o-series-gpt5-unification]] — How o3 was absorbed into GPT-5 Thinking
 - [[concepts/model-cards-system-cards]] — General framework for model/system cards
-- [[concepts/anthropic-system-cards]] — Anthropic's parallel system card index
+- [[concepts/claude/system-cards]] — Anthropic's parallel system card index
 - [[entities/openai]] — OpenAI entity page
 - [[raw/articles/2025-04-16_openai-o3-test-time-scaling]] — o3 test-time compute scaling analysis

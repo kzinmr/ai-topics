@@ -118,7 +118,7 @@ Lance Martin's X presence (@rlancemartin) centers on:
 
 - [[entities/lance-martin]] — His broader research profile (context engineering, agent design patterns)
 - [[entities/anthropic]] — His organization and employer
-- [[concepts/claude-managed-agents]] — The platform he evangelizes and documents
+- [[concepts/claude/managed-agents]] — The platform he evangelizes and documents
 - [[entities/claude-code]] — The coding agent central to his DevRel work
 - [[entities/cloudflare-sandbox]] — Cloudflare sandbox integration for Managed Agents
 - [[entities/modal-sandbox]] — Modal sandbox integration for Managed Agents

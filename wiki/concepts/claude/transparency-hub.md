@@ -122,7 +122,7 @@ Anthropic participates in multiple international frameworks (last updated: Jan 2
 ## See Also
 
 - [[entities/anthropic]] — Parent entity page
-- [[concepts/anthropic-system-cards]] — Full index of all 15 Anthropic system cards with evolution analysis
+- [[concepts/claude/system-cards]] — Full index of all 15 Anthropic system cards with evolution analysis
 - [[concepts/anthropic-managed-agents]] — Anthropic's managed agents architecture
 - [[concepts/anthropic-multi-agent-research]] — Multi-agent research directions
 - [Responsible Scaling Policy](https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy)

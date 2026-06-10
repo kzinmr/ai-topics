@@ -107,6 +107,6 @@ The Messages API now accepts **system entries inside the messages array**. This 
 - [[concepts/claude-opus-4-7]] — predecessor model
 - [[entities/anthropic]] — developer
 - [[concepts/dynamic-workflows]] — new architectural pattern introduced with Opus 4.8
-- [[concepts/effort-control]] — user-controllable compute scaling
+- [[concepts/claude/effort-control]] — user-controllable compute scaling
 - [[entities/cognition]] — competitor's async agents architecture (similar concept, different implementation)
 - [[concepts/gpt/5-5]] — competing model from OpenAI

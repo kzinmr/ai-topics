@@ -329,7 +329,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 - [[entities/deepseek]] — DeepSeek V4 pricing strategy and KV cache economics
 - [[entities/xiaomi-mimo]] — MiMo-V2.5 pricing details
 - [[entities/tencent-hy3]] — Tencent Hy3 pricing via OpenRouter
-- [[concepts/claude-models]] — Claude model family (Opus 4.5→4.8)
+- [[concepts/claude/models]] — Claude model family (Opus 4.5→4.8)
 - [[concepts/token-economics]] — Token pricing theory and trends
 - [[concepts/prompt-caching]] — How prompt caching works under the hood
 - [[comparisons/frontier-models-2026-04]] — Capability comparison (April 2026)

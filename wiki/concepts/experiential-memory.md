@@ -93,8 +93,8 @@ Context Fragment Loading (just-in-time retrieval)
 
 ## Related Implementations
 
-- **Claude Memory** ([[concepts/claude-memory]]) — File-based L2 memory
-- **Claude Memory Tool** ([[concepts/claude-memory-tool]]) — Cognition's memory implementation
+- **Claude Memory** ([[concepts/claude/memory]]) — File-based L2 memory
+- **Claude Memory Tool** ([[concepts/claude/memory-tool]]) — Cognition's memory implementation
 - **AI Agent Memory Middleware** ([[concepts/ai-agent-memory-middleware]]) — L3 cloud storage layer
 - **Memory Systems Design Patterns** ([[concepts/memory-systems-design-patterns]]) — Cross-cutting design patterns
 
@@ -103,7 +103,7 @@ Context Fragment Loading (just-in-time retrieval)
 - [[concepts/context-fragments]] — Context window fragmentation
 - [[concepts/harness-engineering]] — Extended harness design
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson and memory
-- [[concepts/claude-memory]] — File-based memory (L2 implementation)
+- [[concepts/claude/memory]] — File-based memory (L2 implementation)
 - [[concepts/ai-agent-memory-middleware]] — Cloud-scale memory (L3 implementation)
 - [[concepts/memory-systems-design-patterns]] — Cross-cutting memory design pattern analysis
 - [[concepts/rlm-recursive-language-models]] — Origins of externalized objects

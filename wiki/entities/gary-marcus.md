@@ -240,7 +240,7 @@ Marcus has published extensively on AI limitations and the need for hybrid appro
 
 - [[entities/ernest-davis]] — NYU collaborator on AI evaluation criticism
 - [[entities/metr]] — Think tank whose benchmark methodology Marcus critiques
-- [[entities/claude-mythos]] — Anthropic model central to the 50% vs 80% success debate
+- [[concepts/claude/mythos]] — Anthropic model central to the 50% vs 80% success debate
 - [[concepts/recursive-self-improvement]] — Marcus's critique of Anthropic's RSI framing
 
 ## References

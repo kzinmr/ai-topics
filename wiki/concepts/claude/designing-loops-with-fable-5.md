@@ -111,10 +111,10 @@ Martin's article was well-received by the agent engineering community, with the 
 - [[concepts/agentic-loop]] — The canonical agent execution pattern that loops build upon
 - [[concepts/eval-loops]] — Evaluation-driven improvement cycles
 - [[concepts/context-engineering]] — The broader discipline of managing agent context
-- [[concepts/claude-managed-agents]] — The platform that implements these loop patterns
+- [[concepts/claude/managed-agents]] — The platform that implements these loop patterns
 - [[concepts/agent-loop-orchestration]] — Patterns for orchestrating multiple loops
 - [[entities/rlancemartin]] — Author of the original article
-- [[entities/claude-fable-5]] — The model these patterns are designed for
+- [[concepts/claude/fable-5]] — The model these patterns are designed for
 - [[entities/elie-bakouch]] — Critic of capability limitation transparency
 
 ## References

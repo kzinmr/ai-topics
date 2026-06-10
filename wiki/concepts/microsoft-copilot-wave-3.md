@@ -80,7 +80,7 @@ Anthropic models disabled by default in EU/UK/EFTA tenants due to regulatory com
 ## Related Pages
 - [[entities/anthropic]] — Technology partner for Copilot Cowork
 - [[entities/claude-code]] — Anthropic's standalone coding agent
-- [[concepts/claude-managed-agents]] — Anthropic's enterprise agent deployment
+- [[concepts/claude/managed-agents]] — Anthropic's enterprise agent deployment
 - [[entities/xai]] / [[entities/grok-4-3]] — Competing enterprise AI
 - [[concepts/grok-computer]] — xAI's desktop automation agent
 - [[concepts/ai-agents]] — Broader AI agents landscape

@@ -45,7 +45,7 @@ Multimodal AI refers to artificial intelligence systems capable of processing, u
 
 - [[gemini]]
 - [[gpt-models]]
-- [[entities/claude-design]]
+- [[concepts/claude/design]]
 - [[speech]]
 - [[chatgpt-images-2.0]]
 

@@ -146,6 +146,12 @@ A simple, reproducible script that trains a 1.5B parameter model on GSM8K using 
 
 A comprehensive learning roadmap for generative AI, covering everything from basic neural networks to cutting-edge RL techniques. Written in an accessible, practitioner-oriented style.
 
+### Production-Ready Agent Engineering (Maven Course)
+
+In 2026, Brown co-created and co-teaches **"Production-Ready Agent Engineering: From MCP to RL"** with Kyle Corbitt (CTO, OpenPipe) on Maven. The course covers agent design patterns, MCP tool building, research agent implementation, RL fundamentals, and GRPO optimization. Brown contributes his expertise in verifiers, GRPO training, and multi-turn agent RL.
+
+See [[concepts/agents-mcp-rl-course]] for full course details and lecture transcripts.
+
 ## Key Quotes
 
 > "RLHF is like SGD — it works, it's the original, and it's also become kind of a generic catch-all term for the class of algorithms that have followed it. Perhaps DPO is AdaGrad."
@@ -176,6 +182,7 @@ See [[concepts/rl-harness-lifecycle]] for the full analysis.
 
 ## Related
 
+- [[concepts/agents-mcp-rl-course]] — Maven course co-taught with Kyle Corbitt
 - [[concepts/on-policy-distillation]] — Brown's deep gradient-geometric analysis of OPD vs SFT vs RL
 - [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
 - [[concepts/rl-harness-lifecycle]] — Co-evolutionary cycle of harnesses and RL training, coined by Brown

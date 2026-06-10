@@ -329,11 +329,11 @@ AI and LLM concept pages organized by topic.
 
 ## Claude-47-Tokenizer
 
-- [[concepts/claude-47-tokenizer]] — Claude Opus 4.7 was released on April 16, 2026, marking the first tokenizer change. This change results in the same input text being mapped to 40% more tokens.
+- [[concepts/claude/tokenizer-47]] — Claude Opus 4.7 was released on April 16, 2026, marking the first tokenizer change. This change results in the same input text being mapped to 40% more tokens.
 
 ## Claude-Agent-Sdk-Sre-Patterns
 
-- [[concepts/claude-agent-sdk-sre-patterns]] — Anthropic cookbook: [The Site Reliability Agent](https://platform.claude.com/cookbook/claude-agent-sdk-03-the-site-reliability-agent)
+- [[concepts/claude/agent-sdk-sre-patterns]] — Anthropic cookbook: [The Site Reliability Agent](https://platform.claude.com/cookbook/claude-agent-sdk-03-the-site-reliability-agent)
 
 ## Claude-Code-Best-Practices
 
@@ -345,19 +345,19 @@ AI and LLM concept pages organized by topic.
 
 ## Claude-Memory-Tool
 
-- [[concepts/claude-memory-tool]] — Analysis of how Cognition (makers of Devin) is adopting Claude's memory approach — and what this reveals about competitive dynamics in the coding agent space.
+- [[concepts/claude/memory-tool]] — Analysis of how Cognition (makers of Devin) is adopting Claude's memory approach — and what this reveals about competitive dynamics in the coding agent space.
 
 ## Claude-Memory
 
-- [[concepts/claude-memory]] — Analysis of Claude's memory system design — how Anthropic uses filesystem-based memory (`CLAUDE.md`, `.agent/` directories) instead of proprietary databases, treating the filesystem as the single source of truth for agent context.
+- [[concepts/claude/memory]] — Analysis of Claude's memory system design — how Anthropic uses filesystem-based memory (`CLAUDE.md`, `.agent/` directories) instead of proprietary databases, treating the filesystem as the single source of truth for agent context.
 
 ## Claude-Mythos-Glasswing
 
-- [[concepts/claude-mythos-glasswing]] — The model was revealed via a CMS misconfiguration leak on March 26, 2026, when security researchers discovered ~3,000 unpublished Anthropic assets publicly accessible. Anthropic confirmed the leak was accidental and contained pre-release model artifacts.
+- [[concepts/claude/mythos-glasswing]] — The model was revealed via a CMS misconfiguration leak on March 26, 2026, when security researchers discovered ~3,000 unpublished Anthropic assets publicly accessible. Anthropic confirmed the leak was accidental and contained pre-release model artifacts.
 
 ## Claude-Mythos-Preview
 
-- [[concepts/claude-mythos-preview]] — Anthropic did not release Claude Mythos publicly. The preview is restricted to frontier red team research and select partners. This decision was characterized by The Signal Newsletter as a "lockdown" of the most capable AI systems.
+- [[concepts/claude/mythos-preview]] — Anthropic did not release Claude Mythos publicly. The preview is restricted to frontier red team research and select partners. This decision was characterized by The Signal Newsletter as a "lockdown" of the most capable AI systems.
 
 ## Cli-Over-Mcp-Pattern
 

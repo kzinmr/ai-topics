@@ -127,7 +127,7 @@ paths: ["src/api/**/*.ts"]
 Claude Perfect Memory became a **catalyst for widespread awareness of the importance of agent cross-session memory**. The 8,194 bookmarks demonstrate that 'context engineering' is becoming a core skill for solo founders and AI engineers.
 
 ## Related Concepts
-- [[concepts/claude-perfect-memory]]
+- [[concepts/claude/perfect-memory]]
 
 - [Solo Founder Stack](solo-founder-stack.md) — Context engineering is a core solo founder skill
 - [CLAUDE.md](claude-md-pattern.md) — Structured memory file pattern

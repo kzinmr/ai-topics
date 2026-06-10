@@ -181,6 +181,6 @@ Eventually subsumed by fully-learned, end-to-end memory approaches represented i
 - [[concepts/ai-agent-memory-middleware]] — Cross-platform comparison of agent memory storage
 - [[concepts/ai-agent-memory-two-camps]] — Memory Backends vs Context Substrates classification
 - [[concepts/ai-memory-systems]] — OpenAI vs Anthropic vs Cognition memory design comparison
-- [[concepts/claude-memory]] — Claude's filesystem-based memory approach
+- [[concepts/claude/memory]] — Claude's filesystem-based memory approach
 - [[concepts/context-engineering]] — Managing what the model sees and when
 - [[entities/grant-slatton]] — Author

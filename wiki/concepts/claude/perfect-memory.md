@@ -59,4 +59,4 @@ Three architectural advantages over embedding-based systems:
 
 ## See Also
 
-- [[entities/claude-perfect-memory]]
+- [[concepts/claude/perfect-memory]]

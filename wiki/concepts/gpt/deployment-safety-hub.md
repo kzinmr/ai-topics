@@ -13,7 +13,7 @@ sources: [raw/articles/2026-06-10_openai-deployment-safety-hub.md]
 
 ## Hub as Central Index
 
-Unlike [[concepts/anthropic-system-cards]] which lives on Anthropic's main blog, OpenAI maintains a dedicated standalone domain for deployment safety. This architectural choice signals that system cards are treated as a distinct product surface — not blog posts, not press releases, but a structured safety documentation corpus with **20 system cards** spanning from the o-series through the GPT-5 era.
+Unlike [[concepts/claude/system-cards]] which lives on Anthropic's main blog, OpenAI maintains a dedicated standalone domain for deployment safety. This architectural choice signals that system cards are treated as a distinct product surface — not blog posts, not press releases, but a structured safety documentation corpus with **20 system cards** spanning from the o-series through the GPT-5 era.
 
 The hub provides:
 - **Chronological listing** of all system cards (newest first)
@@ -85,7 +85,7 @@ GPT-Rosalind-5.5 (biology/drug discovery) represents a new pattern: **domain-res
 
 ## Comparison with Anthropic System Cards
 
-| Dimension | OpenAI | [[concepts/anthropic-system-cards\|Anthropic]] |
+| Dimension | OpenAI | [[concepts/claude/system-cards\|Anthropic]] |
 |---|---|---|
 | **Hosting** | Dedicated subdomain (deploymentsafety.openai.com) | Main site (anthropic.com/system-cards) |
 | **Naming** | "System Card" (all models) | "System Card" (all models) |
@@ -99,7 +99,7 @@ GPT-Rosalind-5.5 (biology/drug discovery) represents a new pattern: **domain-res
 ## See Also
 
 - [[concepts/model-cards-system-cards]] — General framework for model/system cards
-- [[concepts/anthropic-system-cards]] — Anthropic's parallel system card index
+- [[concepts/claude/system-cards]] — Anthropic's parallel system card index
 - [[entities/openai]] — OpenAI entity page
 - [[concepts/gpt/frontier-governance-framework]] — OpenAI's governance approach
 - [[concepts/gpt/codex-safety]] — Codex-specific safety considerations

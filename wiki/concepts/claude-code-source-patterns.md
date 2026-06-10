@@ -85,7 +85,7 @@ Analysis of tactical engineering patterns found in Claude Code's leaked source c
 ## See Also
 
 - [[concepts/_index]]
-- [[concepts/claude-memory-tool]]
+- [[concepts/claude/memory-tool]]
 - [[concepts/memory-systems-design-patterns]]
-- [[concepts/claude-mythos-preview]]
+- [[concepts/claude/mythos-preview]]
 - [[concepts/claude-code-leak]]

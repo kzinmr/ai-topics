@@ -77,7 +77,7 @@ The filesystem-as-memory pattern is closely related to [Koylan AI's](/wiki/entit
 
 - [[concepts/agent-memory]] — General agent memory patterns
 - [[concepts/context-engineering]] — Koylan AI's context management discipline
-- [[concepts/claude-managed-agents]] — Anthropic's implementation
+- [[concepts/claude/managed-agents]] — Anthropic's implementation
 - [[concepts/personal-os-for-ai-agents]] — Personal Brain OS concept
 
 ## Sources

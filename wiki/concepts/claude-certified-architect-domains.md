@@ -20,7 +20,7 @@ aliases:
   - Claude Certification
 related:
   - "[[concepts/claude-code-best-practices]]"
-  - "[[concepts/claude-agent-sdk-sre-patterns]]"
+  - "[[concepts/claude/agent-sdk-sre-patterns]]"
   - "[[concepts/subagents]]"
   - "[[concepts/claude-md-rules]]"
   - "[[concepts/multi-agent-orchestration]]"

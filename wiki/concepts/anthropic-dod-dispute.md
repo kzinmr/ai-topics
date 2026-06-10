@@ -64,7 +64,7 @@ All seven companies that eventually signed Pentagon agreements (SpaceX/xAI, Open
 
 ### Phase 5: Continued Exclusion (May–Jun 2026)
 - May 1: Pentagon signed 7 AI companies for classified military work — Anthropic excluded
-- DOD CTO Emil Michael called [[entities/claude-mythos|Mythos]] a "separate national security moment"
+- DOD CTO Emil Michael called [[concepts/claude/mythos|Mythos]] a "separate national security moment"
 - NSA reportedly using Claude despite the blacklist
 
 ## Status as of June 2026
@@ -90,7 +90,7 @@ This dispute represents the most visible clash between AI safety principles and 
 - Anthropic's exclusion from $50B+ in defense contracts impacts its $900B valuation target
 
 ### The Mythos Paradox
-Anthropic's [[entities/claude-mythos|Mythos]] model — too dangerous for public release but too valuable for the Pentagon to completely exclude — highlights the fundamental tension. The NSA reportedly uses it despite the formal blacklist.
+Anthropic's [[concepts/claude/mythos|Mythos]] model — too dangerous for public release but too valuable for the Pentagon to completely exclude — highlights the fundamental tension. The NSA reportedly uses it despite the formal blacklist.
 
 ### Precedent for AI Governance
 The outcome of this dispute will set precedent for:

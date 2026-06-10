@@ -126,7 +126,7 @@ Built-in marketplace for discovering and using MCP servers to extend agent capab
 
 ### Code Audit: Claude Opus 4.8 vs MiniMax M3 (June 2026)
 
-Kilo Code published a controlled benchmark ([X Article](https://x.com/kilocode/status/2063719228499542327), 138 bookmarks) comparing [[concepts/claude-opus-4-8|Claude Opus 4.8]] at four reasoning levels against [[concepts/minimax-m3|MiniMax M3]] on a fixed TypeScript webhook service codebase with 17 known issues.
+Kilo Code published a controlled benchmark ([X Article](https://x.com/kilocode/status/2063719228499542327), 138 bookmarks) comparing [[concepts/claude/opus-4-8|Claude Opus 4.8]] at four reasoning levels against [[concepts/minimax-m3|MiniMax M3]] on a fixed TypeScript webhook service codebase with 17 known issues.
 
 | Model | Issues | Cost | Time |
 |-------|--------|------|------|

@@ -137,7 +137,7 @@ Evaluation criteria for designing agent memory systems:
 ## See Also
 
 - [[concepts/_index]]
-- [[concepts/claude-memory-tool]]
+- [[concepts/claude/memory-tool]]
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/knowledge-graph-memory-agents]]
 - [[concepts/ai-agent-memory-two-camps]]

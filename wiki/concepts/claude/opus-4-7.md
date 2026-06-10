@@ -83,7 +83,7 @@ Opus 4.7 uses an updated tokenizer:
 ## Related Concepts
 
 - [[concepts/claude-code-best-practices]] — Claude Code best practices
-- [[concepts/claude-perfect-memory]] — Claude Code persistent memory
+- [[concepts/claude/perfect-memory]] — Claude Code persistent memory
 
 ## Sources
 

@@ -147,7 +147,7 @@ This vulnerability pattern affects many local AI development tools that listen o
 
 ## Related Concepts
 
-- [[concepts/claude-mythos-glasswing]] — Anthropic's approach to agent security and data handling
+- [[concepts/claude/mythos-glasswing]] — Anthropic's approach to agent security and data handling
 - [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment and design
 - [[concepts/agent-sandboxing]] — Isolation technologies for safe agent execution
 - [[concepts/anthropic-managed-agents]] — Managed agent services and their security approaches

@@ -111,7 +111,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 
 | Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| Tokenization (BPE) | [[concepts/claude-47-tokenizer]] | Focused on Claude 4.7 tokenizer changes. General BPE explanation is insufficient |
+| Tokenization (BPE) | [[concepts/claude/tokenizer-47]] | Focused on Claude 4.7 tokenizer changes. General BPE explanation is insufficient |
 | Positional Encoding (RoPE) | [[concepts/transformer-architecture]] | Partially covered within the Transformer architecture page |
 | Mixture-of-Experts | [[concepts/mixture-of-experts]] | Covered |
 | Scaling Laws | [[concepts/scaling-laws]] | Covered |

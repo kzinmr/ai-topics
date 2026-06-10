@@ -53,7 +53,7 @@ OSWorld is the standard benchmark for computer use agents, spanning 360+ tasks a
 
 ## Dynamic Workflows Impact
 
-[[concepts/dynamic-workflows|Dynamic Workflows]] in [[concepts/claude-opus-4-8|Claude Opus 4.8]] extends computer use to codebase-scale migrations across hundreds of thousands of lines, with parallel subagent orchestration.
+[[concepts/dynamic-workflows|Dynamic Workflows]] in [[concepts/claude/opus-4-8|Claude Opus 4.8]] extends computer use to codebase-scale migrations across hundreds of thousands of lines, with parallel subagent orchestration.
 
 ## Related Pages
 - [[entities/pointer-ai]] — Pointer AI, SOTA computer use agent developer

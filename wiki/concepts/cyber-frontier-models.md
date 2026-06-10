@@ -15,7 +15,7 @@ sources:
 
 # Cyber Frontier Models
 
-**Cyber frontier models** are a class of LLMs specifically designed or demonstrated to excel at cybersecurity tasks — vulnerability discovery, exploit generation, and security analysis — at a level that represents a qualitative "step change" from general-purpose frontier models. The term was popularized by Cloudflare CSO Grant Bourzikas in his May 2026 analysis of [[entities/claude-mythos|Anthropic's Mythos Preview]].
+**Cyber frontier models** are a class of LLMs specifically designed or demonstrated to excel at cybersecurity tasks — vulnerability discovery, exploit generation, and security analysis — at a level that represents a qualitative "step change" from general-purpose frontier models. The term was popularized by Cloudflare CSO Grant Bourzikas in his May 2026 analysis of [[concepts/claude/mythos|Anthropic's Mythos Preview]].
 
 ## Defining Characteristics
 
@@ -59,7 +59,7 @@ A recurring finding across Cloudflare, Mozilla, and other early testers: a cyber
 
 ## Related
 
-- [[concepts/claude-mythos-glasswing]] — Project Glasswing, the first cyber frontier model program
+- [[concepts/claude/mythos-glasswing]] — Project Glasswing, the first cyber frontier model program
 - [[concepts/ai-vulnerability-detection-at-scale]] — Operational patterns for AI-powered vulnerability discovery
 - [[entities/cloudflare]] — Published the definitive harness architecture for cyber frontier models
 - [[entities/mozilla]] — Firefox hardening case study

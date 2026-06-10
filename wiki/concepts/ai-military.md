@@ -50,7 +50,7 @@ On May 1, 2026, the Pentagon signed agreements with **7 AI companies** to deploy
 | **Microsoft** | Azure cloud infrastructure |
 | **AWS** | Cloud infrastructure |
 
-**Anthropic excluded**: The company was blacklisted as a "supply chain risk" in February 2026 after refusing the "any lawful use" clause due to concerns about autonomous weapons and domestic surveillance. However, the NSA is reportedly using Anthropic's [[entities/claude-mythos|Mythos]] model on classified networks despite the broader dispute, for vulnerability assessment.
+**Anthropic excluded**: The company was blacklisted as a "supply chain risk" in February 2026 after refusing the "any lawful use" clause due to concerns about autonomous weapons and domestic surveillance. However, the NSA is reportedly using Anthropic's [[concepts/claude/mythos|Mythos]] model on classified networks despite the broader dispute, for vulnerability assessment.
 
 **Budget**: $54B requested for autonomous weapons; $961.6B total 2026 defense budget. GenAI.mil platform serves 1.3M personnel.
 

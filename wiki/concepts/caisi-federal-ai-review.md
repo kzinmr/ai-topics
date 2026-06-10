@@ -57,7 +57,7 @@ An interagency group of experts focused on AI national security concerns. Partic
 ## Why It Matters
 
 ### The Mythos Catalyst
-Anthropic's [[entities/claude-mythos|Claude Mythos]] model demonstrated unprecedented autonomous vulnerability discovery capabilities in early 2026. This created an ad-hoc "informal licensing" situation where the government informally asked Anthropic not to release broadly — highlighting the absence of a formal evaluation framework.
+Anthropic's [[concepts/claude/mythos|Claude Mythos]] model demonstrated unprecedented autonomous vulnerability discovery capabilities in early 2026. This created an ad-hoc "informal licensing" situation where the government informally asked Anthropic not to release broadly — highlighting the absence of a formal evaluation framework.
 
 ### From Informal to Institutional
 CAISI transforms ad-hoc government-industry AI safety coordination into formal agreement-based evaluation. This represents a middle path between:

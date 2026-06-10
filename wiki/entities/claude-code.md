@@ -70,7 +70,7 @@ Achieves 72.7% on SWE-bench Verified. As of April 2026, the industry-leading cod
 
 - [[entities/boris-cherny]] — Creator
 - [[entities/anthropic]] — Developer
-- [[entities/claude-mythos]] — Withheld high-security model
+- [[concepts/claude/mythos]] — Withheld high-security model
 - [[concepts/project-glasswing]] — Safety initiative
 - [[concepts/harness-engineering]]
 

@@ -4,21 +4,14 @@ type: concept
 aliases:
   - corbett-kyle-corbitt
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-06-10
 tags:
-  - concept
-status: stub
-
+  - person
+status: redirect
 ---
 
 # Corbett (Kyle Corbitt)
 
-> **TODO**: Enrich this page.
+> **→ Redirected to [[entities/kyle-corbitt]]**
 
-## Overview
-
-Stub page for Corbett (Kyle Corbitt).
-
-## Related Pages
-
-- [[concepts/_index]]
+This stub has been superseded by the full entity page at [[entities/kyle-corbitt]].

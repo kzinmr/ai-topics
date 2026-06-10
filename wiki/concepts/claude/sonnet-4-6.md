@@ -15,8 +15,8 @@ sources:
   - url: "https://www.anthropic.com/news"
     title: "Anthropic News (Claude Sonnet 4.6 Announcement, Feb 17, 2026)"
 related:
-  - "[[concepts/claude-model-family]]"
-  - "[[concepts/claude-opus-4-6]]"
+  - "[[concepts/claude/model-family]]"
+  - "[[concepts/claude/opus-4-6]]"
   - "[[concepts/claude-opus-4-7]]"
 ---
 
@@ -47,6 +47,6 @@ Sonnet is positioned as the mid-tier (balanced) model in the Claude family and i
 
 ## Related Pages
 
-- [[concepts/claude-model-family]] — Claude model family overview
-- [[concepts/claude-opus-4-6]] — Opus released at the same time
+- [[concepts/claude/model-family]] — Claude model family overview
+- [[concepts/claude/opus-4-6]] — Opus released at the same time
 - [[concepts/claude-opus-4-7]] — Opus 4.7 (latest flagship)

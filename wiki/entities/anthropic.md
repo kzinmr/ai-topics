@@ -67,7 +67,7 @@ Claude Managed Agents now supports persistent **memory stores** (April 2026):
 
 The filesystem-as-memory approach was validated through [DavidSHershey's Claude Plays Pokémon experiment](https://x.com/DavidSHershey), showing that later models (Opus 4.6) learn to organize memory files much more effectively than earlier ones (Sonnet 3.5).
 
-See [[concepts/claude-managed-agents]] for full details.
+See [[concepts/claude/managed-agents]] for full details.
 
 
 ### Ed Zitron's Profitability Critique (May 2026)
@@ -120,7 +120,7 @@ On June 4, 2026, the Anthropic Institute published **"When AI builds itself"** �
 
 The 80% code self-generation figure was met with both alarm and skepticism. Marcus argued the results demonstrate RSI (AI as a useful coding tool) rather than AGI. The internal data suggests Claude's role in Anthropic's own development pipeline has crossed a critical threshold where the majority of code contributions are now AI-generated.
 
-This development sits alongside Claude's [[concepts/agentic-engineering]] capabilities and [[concepts/claude-managed-agents]] platform as part of a broader acceleration in Anthropic's internal AI R&D pipeline.
+This development sits alongside Claude's [[concepts/agentic-engineering]] capabilities and [[concepts/claude/managed-agents]] platform as part of a broader acceleration in Anthropic's internal AI R&D pipeline.
 
 > Full article: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement]]
 
@@ -686,10 +686,10 @@ Training philosophy: train models to avoid unsupported claims and flag uncertain
 ## Related
 - [[entities/anthropic]] — The model family
 - [[entities/claude-code]] — Claude Code CLI agent
-- [[entities/claude-mythos]] — Claude Mythos model (used by Claude Security)
+- [[concepts/claude/mythos]] — Claude Mythos model (used by Claude Security)
 - [[entities/foundation-capital]] — Partner in Claude Managed Agents
 - [[entities/sap-business-ai-platform]] — SAP partnership (May 2026)
-- [[concepts/claude-managed-agents]] — Managed Agents platform details
+- [[concepts/claude/managed-agents]] — Managed Agents platform details
 - [[concepts/project-glasswing]] — Defensive security initiative
 
 ## References

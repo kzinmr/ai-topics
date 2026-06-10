@@ -144,6 +144,6 @@ Sonnet 4.6 showed stronger safety properties than:
 
 ## See Also
 
-- [[concepts/anthropic-system-cards]] — Full index of all Anthropic system cards
+- [[concepts/claude/system-cards]] — Full index of all Anthropic system cards
 - [[comparisons/claude-opus-4x-comparison]] — Claude Opus 4.6 vs 4.7 vs 4.8 comparison
 - [[entities/anthropic]] — Parent entity page

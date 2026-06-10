@@ -27,7 +27,7 @@ sources:
 
 # Claude Fable 5
 
-Anthropic's Mythos-class model released for general use on June 9, 2026. State-of-the-art on nearly all tested benchmarks of AI capability, with safety classifiers that fall back to [[concepts/claude-opus-4-8|Claude Opus 4.8]] on sensitive queries. The same underlying model as [[entities/claude-mythos|Claude Mythos 5]], differentiated by safeguards.
+Anthropic's Mythos-class model released for general use on June 9, 2026. State-of-the-art on nearly all tested benchmarks of AI capability, with safety classifiers that fall back to [[concepts/claude/opus-4-8|Claude Opus 4.8]] on sensitive queries. The same underlying model as [[concepts/claude/mythos|Claude Mythos 5]], differentiated by safeguards.
 
 > "Fable is from the Latin *fabula*, 'that which is told,' akin to the Greek *mythos*. The safeguards are what distinguish the two models." — Anthropic
 
@@ -122,7 +122,7 @@ New **30-day retention** for all traffic on Mythos-class models:
 
 ## Design Patterns
 
-Lance Martin (@rlancemartin) articulated two core patterns for maximizing Fable 5's capabilities (see [[concepts/designing-loops-with-fable-5]]):
+Lance Martin (@rlancemartin) articulated two core patterns for maximizing Fable 5's capabilities (see [[concepts/claude/designing-loops-with-fable-5]]):
 
 1. **Self-Correction Loops**: Let the model iterate on environment feedback rather than direct prompting. Use `/goal` in Claude Code or Outcomes in Claude Managed Agents.
 2. **Memory as Outer Loop**: Use memory to create cross-session learning. The optimal progression: Fail → Investigate → Verify → Distill → Consult.
@@ -195,10 +195,10 @@ Critical details from the System Card:
 ## Related
 
 - [[entities/anthropic]] — The company behind Fable 5
-- [[entities/claude-mythos]] — The underlying Mythos architecture and Mythos 5
-- [[concepts/designing-loops-with-fable-5]] — Lance Martin's design patterns
-- [[concepts/claude-mythos-glasswing]] — Mythos security capabilities
+- [[concepts/claude/mythos]] — The underlying Mythos architecture and Mythos 5
+- [[concepts/claude/designing-loops-with-fable-5]] — Lance Martin's design patterns
+- [[concepts/claude/mythos-glasswing]] — Mythos security capabilities
 - [[concepts/project-glasswing]] — Trusted access program
 - [[entities/rlancemartin]] — Author of Fable 5 design patterns
 - [[entities/elie-bakouch]] — Critic of capability limitation transparency
-- [[concepts/claude-opus-4-8]] — Fallback model for classifier-triggered queries
+- [[concepts/claude/opus-4-8]] — Fallback model for classifier-triggered queries

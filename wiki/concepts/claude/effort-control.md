@@ -15,7 +15,7 @@ sources:
 
 # Effort Control
 
-**Effort Control** is a feature introduced with [[concepts/claude-opus-4-8|Claude Opus 4.8]] (May 28, 2026) in claude.ai and Cowork. It provides users with a UI control to dial the amount of computational effort Claude expends on a task.
+**Effort Control** is a feature introduced with [[concepts/claude/opus-4-8|Claude Opus 4.8]] (May 28, 2026) in claude.ai and Cowork. It provides users with a UI control to dial the amount of computational effort Claude expends on a task.
 
 ## How It Works
 
@@ -43,7 +43,7 @@ Unlike reasoning models where the amount of "thinking" is fixed by the model arc
 
 ## Related
 
-- [[concepts/claude-opus-4-8]] — model that introduced this feature
+- [[concepts/claude/opus-4-8]] — model that introduced this feature
 - [[concepts/reasoning]] — reasoning models with fixed test-time scaling
 - [[concepts/test-time-scaling]] — broader research area
 - [[concepts/token-economics]] — cost implications of effort scaling

@@ -15,8 +15,8 @@ sources:
   - url: "https://www.anthropic.com/news"
     title: "Anthropic News (Claude Opus 4.6 Announcement, Feb 5, 2026)"
 related:
-  - "[[concepts/claude-model-family]]"
-  - "[[concepts/claude-sonnet-4.6]]"
+  - "[[concepts/claude/model-family]]"
+  - "[[concepts/claude/sonnet-4-6]]"
   - "[[concepts/claude-opus-4-7]]"
 ---
 
@@ -47,6 +47,6 @@ Opus is the highest tier in the Claude model family, designed for state-of-the-a
 
 ## Related Pages
 
-- [[concepts/claude-model-family]] — The Claude model family overview
-- [[concepts/claude-sonnet-4.6]] — The contemporaneous Sonnet release
+- [[concepts/claude/model-family]] — The Claude model family overview
+- [[concepts/claude/sonnet-4-6]] — The contemporaneous Sonnet release
 - [[concepts/claude-opus-4-7]] — Opus 4.7 (latest successor model)

@@ -109,7 +109,7 @@ TPU 8t/8i are core components of Google's **AI Hypercomputer** architecture — 
 - [[entities/google-tpu]] — Google's broader AI infrastructure
 - [[concepts/gemini]] — Google's Gemini model family
 - [[entities/openai]] — OpenAI's competing infrastructure approaches
-- [[concepts/claude-memory]] — Anthropic's approach (competitor context)
+- [[concepts/claude/memory]] — Anthropic's approach (competitor context)
 
 
 ## April 2028 Deep Dive Updates

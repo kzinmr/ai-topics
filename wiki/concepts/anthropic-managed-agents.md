@@ -74,7 +74,7 @@ Managed Agents is designed as a **meta-harness** (see [[concepts/meta-harness]])
 
 ## Multi-Agent Coordination → Expanded Features (May 2026)
 
-Four new features of Managed Agents were released as GA/Research Preview. See [[concepts/claude-managed-agents]] for details.
+Four new features of Managed Agents were released as GA/Research Preview. See [[concepts/claude/managed-agents]] for details.
 
 1. **Multi-Agent Orchestration (GA)** — Coordinator agent manages up to 20 specialized sub-agents. Shared filesystem + isolated context windows. Up to 25 parallel threads.
 2. **Outcomes Loop (GA)** — Rubric-driven self-improvement cycle. An independent Grader agent evaluates → feedback loop (up to 20 iterations).

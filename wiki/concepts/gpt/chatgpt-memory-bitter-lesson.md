@@ -86,7 +86,7 @@ For coding agents like Claude Code and Codex:
 ## See Also
 
 - [[concepts/_index]]
-- [[concepts/claude-memory-tool]]
+- [[concepts/claude/memory-tool]]
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/memory-systems-design-patterns]]
 - [[concepts/knowledge-graph-memory-agents]]

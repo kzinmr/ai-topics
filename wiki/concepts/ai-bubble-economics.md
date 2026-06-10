@@ -403,7 +403,7 @@ In "What happens next, after the decline of tokenmaxxing?" (May 29, 2026), Marcu
 
 ## Related Concepts
 
-- [[concepts/claude-mythos-glasswing]] — Frontier model release and the cost of safety-gated access
+- [[concepts/claude/mythos-glasswing]] — Frontier model release and the cost of safety-gated access
 - [[concepts/ai-coding-reliability]] — Whether AI-generated code delivers real productivity or creates technical debt
 - [[concepts/cognitive-cost-of-agents]] — The hidden organizational costs of delegating work to AI
 -  — The promise vs. reality of AI-powered software development

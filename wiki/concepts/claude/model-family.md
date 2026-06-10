@@ -35,12 +35,12 @@ sources:
 related:
   - "[[entities/anthropic]]"
   - "[[entities/claude-code]]"
-  - "[[entities/claude-design]]"
+  - "[[concepts/claude/design]]"
   - "[[claude-managed-agents]]"
   - "[[concepts/mcp]]"
   - "[[claude-opus-4-7]]"
   - "[[concepts/anthropic-computer-use]]"
-  - "[[concepts/claude-memory-tool]]"
+  - "[[concepts/claude/memory-tool]]"
   - "[[concepts/extended-thinking]]"
   - "[[concepts/prompt-caching]]"
   - "[[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]"
@@ -218,7 +218,7 @@ For model-specific details, see sub-pages: [[claude-opus-4-7]], [[claude-sonnet-
 |---|---|---|
 | **Claude.ai** | Official Web/Mobile chat. Subscription-based. | Projects, file attachments, 200K context |
 | **[[entities/claude-code]]** | Autonomous coding agent (CLI/IDE/Web/Mobile/Slack) | SWE-bench 72.7%, 7.6x deployment improvement |
-| **[[entities/claude-design]]** | Visual design collaboration tool (April 2026 research preview) | Powered by Opus 4.7 vision model |
+| **[[concepts/claude/design]]** | Visual design collaboration tool (April 2026 research preview) | Powered by Opus 4.7 vision model |
 | **[[claude-managed-agents]]** | Enterprise managed agent platform | Memory store, multi-agent, Outcomes Loop |
 | **[[concepts/mcp]]** | Model Context Protocol — open standard for tool connectivity | Adopted by OpenAI/Google/Microsoft/Red Hat |
 | **Claude Agent SDK** | Node.js SDK (`@anthropic-ai/claude-agent-sdk`) | Hooks, Subagents, Plan Mode |
@@ -245,7 +245,7 @@ For model-specific details, see sub-pages: [[claude-opus-4-7]], [[claude-sonnet-
 - **[[entities/anthropic]]** — The company behind Claude
 - **[[entities/claude-code]]** — AI coding agent
 - **[[claude-code--capabilities]]** — Claude Code capabilities detail
-- **[[entities/claude-design]]** — Visual design tool
+- **[[concepts/claude/design]]** — Visual design tool
 - **[[claude-managed-agents]]** — Enterprise agent platform
 - **[[claude-opus-4-7]]** — Latest Opus model details
 - **[[concepts/anthropic-computer-use]]** — GUI operation capability
@@ -253,4 +253,4 @@ For model-specific details, see sub-pages: [[claude-opus-4-7]], [[claude-sonnet-
 - **[[concepts/ai-safety-military-governance-claude]]** — Safety and governance
 - **[[concepts/coding-agents]]** — AI coding agent ecosystem
 - **[[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]** — Agent SDK
-- **[[concepts/claude-memory-tool]]** — Memory tool
+- **[[concepts/claude/memory-tool]]** — Memory tool

@@ -18,7 +18,7 @@ type: concept
 Classification of AI memory/context tools into two fundamentally different paradigms: Memory Backends vs Context Substrates.
 
 **Source:** @witcheer analysis of 450+ "agent-memory" repos and 460+ "context-management" repos (2026-04-16)
-**Related:** [[concepts/memory-systems-design-patterns]], [[concepts/context-engineering]], [[concepts/claude-memory]]
+**Related:** [[concepts/memory-systems-design-patterns]], [[concepts/context-engineering]], [[concepts/claude/memory]]
 
 ## The Two Camps
 

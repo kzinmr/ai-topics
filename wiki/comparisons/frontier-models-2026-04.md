@@ -110,7 +110,7 @@ Available in Google AI Studio, Vertex AI, and Google Vids.
 
 ## Related
 - [[entities/anthropic]]
-- [[entities/claude-mythos]]
+- [[concepts/claude/mythos]]
 - [[entities/meta]]
 - [[muse-spark]]
 - [[concepts/project-glasswing]]

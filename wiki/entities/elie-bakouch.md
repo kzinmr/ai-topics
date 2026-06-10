@@ -49,7 +49,7 @@ His research philosophy emphasizes **data quality over quantity**, **architectur
 | 2026 | Engaged in synthetic pretraining research, commenting on Motif-2.6B tech report and training methodologies |
 | Jun 2026 | Published 47-tweet deep dive analysis of [[concepts/mai-thinking-1-tech-report|Microsoft MAI-Thinking-1 tech report]] — 1,500+ likes, 1,100+ bookmarks, highlighting zero-distillation design, scaling ladder transparency, and modified GRPO |
 | Jun 2026 | Endorsed [[concepts/marin|Marin]], Stanford's open-source foundation model training framework, praising its scientific approach and fully open development process |
-| Jun 2026 | Criticized Anthropic's [[entities/claude-fable-5|Claude Fable 5]] release — argued that Mythos-class models are deliberately weakened on "frontier LLM research" tasks, calling the lack of transparency "crazy" (3,800+ likes, 1.2M impressions) |
+| Jun 2026 | Criticized Anthropic's [[concepts/claude/fable-5|Claude Fable 5]] release — argued that Mythos-class models are deliberately weakened on "frontier LLM research" tasks, calling the lack of transparency "crazy" (3,800+ likes, 1.2M impressions) |
 
 ## Core Ideas
 
@@ -107,7 +107,7 @@ In June 2026, Bakouch publicly endorsed the [[concepts/marin|Marin]] framework f
 
 ### AI Model Transparency and Research Access
 
-Bakouch has been vocal about the tension between AI safety restrictions and research utility. In June 2026, he criticized Anthropic's release of [[entities/claude-fable-5|Claude Fable 5]] (a Mythos-class model made "safe for general use"), arguing that:
+Bakouch has been vocal about the tension between AI safety restrictions and research utility. In June 2026, he criticized Anthropic's release of [[concepts/claude/fable-5|Claude Fable 5]] (a Mythos-class model made "safe for general use"), arguing that:
 
 1. **Deliberate capability degradation**: Mythos-class models will be intentionally weakened on frontier AI research tasks — not just security-sensitive tasks, but research-oriented capabilities
 2. **Hidden restrictions**: The capability limitations are not visible to users, who may attribute poor performance to model limitations rather than intentional restrictions
@@ -162,8 +162,8 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 - [[concepts/marin]] — Stanford open-source training framework he endorsed
 - [[concepts/synthetic-data]] — Training methodology he follows
 - [[concepts/mai-thinking-1-tech-report]] — Tech report he analyzed in depth
-- [[entities/claude-fable-5]] — Model he criticized for hidden capability restrictions
-- [[entities/claude-mythos]] — Mythos architecture underlying the capability debate
+- [[concepts/claude/fable-5]] — Model he criticized for hidden capability restrictions
+- [[concepts/claude/mythos]] — Mythos architecture underlying the capability debate
 
 ## Sources
 

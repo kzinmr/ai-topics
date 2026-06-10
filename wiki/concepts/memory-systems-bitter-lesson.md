@@ -48,7 +48,7 @@ Applied to memory systems:
 
 ## Claude Perfect Memory Case Study
 
-[[concepts/claude-perfect-memory]] demonstrates the Bitter Lesson in practice:
+[[concepts/claude/perfect-memory]] demonstrates the Bitter Lesson in practice:
 - **CLAUDE.md** — Plain text (file) for configuration
 - **MEMORY.md** — File-based persistent memory
 - **Slash Commands** — Simple I/O operations
@@ -63,7 +63,7 @@ Applying the Bitter Lesson to memory systems is debatable:
 
 ## Related Concepts
 
-- [[concepts/claude-perfect-memory]] — File-based memory in practice
+- [[concepts/claude/perfect-memory]] — File-based memory in practice
 - [[concepts/company-ai-pilled]] — AI adoption maturity model
 - [[concepts/autoreason]] — Self-improving reasoning
 

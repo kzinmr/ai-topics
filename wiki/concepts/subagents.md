@@ -140,4 +140,4 @@ If the coordinator insufficiently decomposes a task, the failure is the **coordi
 
 - [[concepts/claude-certified-architect-domains]] — Comprehensive knowledge of all 5 domains
 - [[concepts/claude-code-best-practices]] — CLAUDE.md configuration patterns
-- [[concepts/claude-agent-sdk-sre-patterns]] — Agent SDK + MCP SRE patterns
+- [[concepts/claude/agent-sdk-sre-patterns]] — Agent SDK + MCP SRE patterns

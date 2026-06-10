@@ -66,8 +66,8 @@
 **Action**: Enriched Claude Fable 5 entity page with full content from Anthropic's official announcement blog post.
 
 - **NEW: [[raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md]]** — Full Anthropic blog post. Covers dual Fable 5/Mythos 5 launch, safety classifiers (cyber/bio/distillation), jailbreak robustness, pricing ($10/$50 MTok), customer feedback (14 companies), life sciences breakthroughs.
-- **UPDATED: [[entities/claude-fable-5.md]]** — Complete rewrite from draft to full entity. Added: official benchmarks (FrontierCode, CursorBench, Hebbia, ViBench), safety architecture details, customer feedback table, availability/subscription rollout, trusted access programs.
-- **UPDATED: [[entities/claude-mythos.md]]** — Added Mythos 5 section: drug design (10× acceleration), novel hypotheses (80% preference over Opus), genomics research (100× smaller than Science paper model). Updated safety architecture details.
+- **UPDATED: [[concepts/claude/fable-5.md]]** — Complete rewrite from draft to full entity. Added: official benchmarks (FrontierCode, CursorBench, Hebbia, ViBench), safety architecture details, customer feedback table, availability/subscription rollout, trusted access programs.
+- **UPDATED: [[concepts/claude/mythos.md]]** — Added Mythos 5 section: drug design (10× acceleration), novel hypotheses (80% preference over Opus), genomics research (100× smaller than Science paper model). Updated safety architecture details.
 - **UPDATED: [[index.md]]** — Updated descriptions for claude-fable-5 and claude-mythos entries.
 
 ---
@@ -77,10 +77,10 @@
 **Action**: Ingested X post from @eliebakouch criticizing Anthropic's Claude Fable 5 release for hidden capability restrictions on frontier research tasks.
 
 - **NEW: [[raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md]]** — Regular tweet (not Note Tweet) with high engagement (3,879 likes, 914 bookmarks, 1.28M impressions). Critiques that Mythos-class models are deliberately weakened on "frontier LLM research" tasks and that restrictions are hidden from users.
-- **NEW: [[entities/claude-fable-5.md]]** — Created entity page for Claude Fable 5 (Mythos-class model released June 2026). Includes overview, performance benchmarks (Parameter Golf, Continual Learning), design patterns, and capability limitation controversy.
+- **NEW: [[concepts/claude/fable-5.md]]** — Created entity page for Claude Fable 5 (Mythos-class model released June 2026). Includes overview, performance benchmarks (Parameter Golf, Continual Learning), design patterns, and capability limitation controversy.
 - **UPDATED: [[entities/elie-bakouch.md]]** — Added Timeline entry (Jun 2026 Fable 5 critique), new "AI Model Transparency and Research Access" Core Ideas section, new Key Quotes, updated sources and related wikilinks.
-- **UPDATED: [[concepts/designing-loops-with-fable-5.md]]** — Added "Community Response" section with capability limitation critique context. Added new source and related wikilink.
-- **UPDATED: [[entities/claude-mythos.md]]** — Added "Claude Fable 5 — General Release" section with capability limitation debate. Updated sources and related wikilinks.
+- **UPDATED: [[concepts/claude/designing-loops-with-fable-5.md]]** — Added "Community Response" section with capability limitation critique context. Added new source and related wikilink.
+- **UPDATED: [[concepts/claude/mythos.md]]** — Added "Claude Fable 5 — General Release" section with capability limitation debate. Updated sources and related wikilinks.
 - **UPDATED: [[index.md]]** — Added claude-fable-5 entity entry, updated elie-bakouch description.
 
 ---
@@ -103,7 +103,7 @@
 
 - **NEW: [[raw/articles/2026-06-09_rlancemartin_designing-loops-with-fable-5.md]]** — Full article content retrieved via xurl `tweet.fields=article`. Covers self-correction loops, memory as outer loop, Parameter Golf benchmark (Fable 5 vs Opus 4.7), verifier sub-agents, and memory progression patterns.
 - **UPDATED: [[entities/rlancemartin.md]]** — Added "Designing Loops with Fable 5 (June 2026)" section to Core Ideas. Updated sources and bumped updated date.
-- **NEW: [[concepts/designing-loops-with-fable-5]]** — Comprehensive concept page covering self-correction loops, memory as outer loop, model comparison tables (Parameter Golf, Continual Learning Bench 1.0), design principles, and implementation guidance for Claude Code and CMA.
+- **NEW: [[concepts/claude/designing-loops-with-fable-5]]** — Comprehensive concept page covering self-correction loops, memory as outer loop, model comparison tables (Parameter Golf, Continual Learning Bench 1.0), design principles, and implementation guidance for Claude Code and CMA.
 
 **Source**: https://x.com/rlancemartin/status/2064397389189071163
 
@@ -1567,7 +1567,7 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 - [[entities/recursive-superintelligence]] — Richard Socher's RSI-focused company
 
 ### Pages Enriched
-- [[entities/claude-mythos]] — Added Mythos Preview (May 2026) section: general assistant, L4 engineer substitution, RSI context
+- [[concepts/claude/mythos]] — Added Mythos Preview (May 2026) section: general assistant, L4 engineer substitution, RSI context
 
 ### Raw Articles Referenced
 - raw/articles/2026-06-01_active-crawl-probe-prefill-mythos-autoscientist-rsi.md
@@ -2913,7 +2913,7 @@ The article's framing offers transferable patterns for wiki management:
 
 - [[concepts/resilient-prompt-engineering.md]] — 317 chars → 0
 
-- [[concepts/claude-opus-4-6.md]] — 316 chars → 0
+- [[concepts/claude/opus-4-6.md]] — 316 chars → 0
 
 - [[concepts/flashattention-pytorch-educational.md]] — 306 chars → 0
 
@@ -2974,7 +2974,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop.md]] — 376 chars -> 0
 - [[concepts/mcp-desktop-extensions.md]] — 374 chars -> 0
 - [[entities/claude-code--history.md]] — 374 chars -> 0
-- [[concepts/claude-sonnet-4.6.md]] — 372 chars -> 0
+- [[concepts/claude/sonnet-4-6.md]] — 372 chars -> 0
 - [[concepts/pytorch-fsdp-distributed-training.md]] — 356 chars -> 0
 - [[entities/qwen3-6-plus.md]] — 356 chars -> 0
 - [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs.md]] — 353 chars -> 0
@@ -3199,7 +3199,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[concepts/continual-learning.md]] — 858 chars -> 0
 - [[concepts/llm-as-judge.md]] — 858 chars -> 0
 - [[concepts/openclaw/five-tier-precedence.md]] — 855 chars -> 0
-- [[concepts/claude-mythos-preview.md]] — 843 chars -> 0
+- [[concepts/claude/mythos-preview.md]] — 843 chars -> 0
 - [[entities/china-ai-industry.md]] — 841 chars -> 0
 - [[concepts/harness-engineering/agentic-workflows/cli-first-development.md]] — 833 chars -> 0
 
@@ -3267,7 +3267,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[concepts/harness-engineering/agentic-workflows/context-window-management.md]] — 939 chars → 0
 - [[concepts/meta-meta-prompting.md]] — 935 chars → 0
 - [[concepts/harness-engineering/agentic-workflows/how-agents-work.md]] — 931 chars → 0
-- [[entities/claude-perfect-memory.md]] — 929 chars → 0
+- [[concepts/claude/perfect-memory.md]] — 929 chars → 0
 - [[concepts/tenant-agent-pack.md]] — 923 chars → 0
 
 ### Stats
@@ -5178,7 +5178,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - **Raw article ingested**: `blog.cloudflare.com--2026-05-18_cyber-frontier-models--9cce0b5a.md` — Cloudflare CSO Grant Bourzikas: Project Glasswing experience with Mythos Preview on 50+ internal repos
 - **NEW entity page**: [[entities/cloudflare]] — Global cloud platform, Project Glasswing participant, published definitive harness architecture (Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report)
 - **NEW concept page**: [[concepts/cyber-frontier-models]] — Class of security-focused frontier LLMs with exploit chain construction + PoC generation; coined by Cloudflare
-- **Enriched**: [[concepts/claude-mythos-glasswing]] — Added Cloudflare Testing Results (May 2026) section: key findings, organic refusals inconsistency, signal-to-noise problem, harness architecture, why generic coding agents fail
+- **Enriched**: [[concepts/claude/mythos-glasswing]] — Added Cloudflare Testing Results (May 2026) section: key findings, organic refusals inconsistency, signal-to-noise problem, harness architecture, why generic coding agents fail
 - **Enriched**: [[concepts/ai-vulnerability-detection-at-scale]] — Added Cloudflare Case Study (May 2026): 8-stage harness design, 4 core harness principles, "patch faster isn't enough" argument
 - **Wiki index**: +2 pages (2025→2028 total), updated cloudflare description
 
@@ -6702,11 +6702,11 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Pages Created
 
-- **[[entities/rlancemartin]]** — Lance Martin (@rlancemartin) entity page. DevRel/DX engineer at Anthropic. Covers his role maintaining the claude-api skill, authoring self-hosted sandbox cookbooks, and evangelizing the Claude Managed Agents "brain/hands" architecture. Sections: Overview, Core Ideas (decouple brain from hands, self-hosted sandboxes, skills as onboarding surface, context engineering), Key Work (claude-api skill, self-hosted sandbox cookbooks, sandbox partner launch comparison table), X Activity Themes, Related People/Entities. 8,033 bytes. Cross-referenced with [[entities/lance-martin]] and [[concepts/claude-managed-agents]].
+- **[[entities/rlancemartin]]** — Lance Martin (@rlancemartin) entity page. DevRel/DX engineer at Anthropic. Covers his role maintaining the claude-api skill, authoring self-hosted sandbox cookbooks, and evangelizing the Claude Managed Agents "brain/hands" architecture. Sections: Overview, Core Ideas (decouple brain from hands, self-hosted sandboxes, skills as onboarding surface, context engineering), Key Work (claude-api skill, self-hosted sandbox cookbooks, sandbox partner launch comparison table), X Activity Themes, Related People/Entities. 8,033 bytes. Cross-referenced with [[entities/lance-martin]] and [[concepts/claude/managed-agents]].
 
 - **[[entities/trq212]]** — Thariq Shihipar (@trq212) entity page. MTS at Anthropic on Claude Code. Focused on his HTML-first philosophy from the May 20, 2026 blog post "Using Claude Code: The unreasonable effectiveness of HTML." Sections: Overview, Core Ideas (5 reasons: information density, visual clarity, sharing, interactivity, data ingestion; output surface as design problem; disposable micro-apps), Key Work (blog post, companion site, use cases table), X Activity Themes. 7,859 bytes. Cross-referenced with [[entities/thariq-shihipar]].
 
-- **[[concepts/claude-managed-agents]]** — Claude Managed Agents concept page. Anthropic's REST API-based platform for cloud-hosted autonomous agents. Architecture: brain/hands separation, session-based durable context, tool dispatch split. Includes sandbox provider comparison table (Cloudflare/Modal/Vercel/Daytona — 12 dimensions), self-hosted environment model, orchestration modes, credential security spectrum, tools and capabilities, getting started guide. 16,052 bytes. Cross-referenced with [[comparisons/claude-managed-agents-sandbox-providers]].
+- **[[concepts/claude/managed-agents]]** — Claude Managed Agents concept page. Anthropic's REST API-based platform for cloud-hosted autonomous agents. Architecture: brain/hands separation, session-based durable context, tool dispatch split. Includes sandbox provider comparison table (Cloudflare/Modal/Vercel/Daytona — 12 dimensions), self-hosted environment model, orchestration modes, credential security spectrum, tools and capabilities, getting started guide. 16,052 bytes. Cross-referenced with [[comparisons/claude-managed-agents-sandbox-providers]].
 
 ### Index Updates
 
@@ -6964,9 +6964,9 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 ## [2026-05-30] active-crawl | AI/ML Trending Topics — May 2026
 
 ### Pages Created
-- [[concepts/claude-opus-4-8]] — Claude Opus 4.8: Anthropic's May 2026 model with Dynamic Workflows, Effort Control, and Mid-conversation System Messages
+- [[concepts/claude/opus-4-8]] — Claude Opus 4.8: Anthropic's May 2026 model with Dynamic Workflows, Effort Control, and Mid-conversation System Messages
 - [[entities/openai-neptune-acquisition]] — OpenAI's acquisition of neptune.ai for training observability
-- [[concepts/effort-control]] — User-controllable compute scaling introduced with Opus 4.8
+- [[concepts/claude/effort-control]] — User-controllable compute scaling introduced with Opus 4.8
 - [[concepts/dynamic-workflows]] — Claude Code's multi-agent orchestration within a single session
 
 ### Pages Updated
@@ -7622,8 +7622,8 @@ Updated:
 
 **Action**: Added system card references and frontier LLM development restriction details to both entity pages.
 
-- **UPDATED: [[entities/claude-mythos.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "Frontier LLM Development Restrictions (System Card)" subsection under Capability Limitation Debate with full quote and key design choices (invisible safeguards, PEFT/steering vectors, ~0.03% traffic impact).
-- **UPDATED: [[entities/claude-fable-5.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "System Card Evidence: Frontier LLM Development Restrictions" subsection under Controversy with system card quote confirming intentional invisible restrictions on frontier LLM development tasks.
+- **UPDATED: [[concepts/claude/mythos.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "Frontier LLM Development Restrictions (System Card)" subsection under Capability Limitation Debate with full quote and key design choices (invisible safeguards, PEFT/steering vectors, ~0.03% traffic impact).
+- **UPDATED: [[concepts/claude/fable-5.md]]** — Added `raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md` to sources. Added "System Card Evidence: Frontier LLM Development Restrictions" subsection under Controversy with system card quote confirming intentional invisible restrictions on frontier LLM development tasks.
 
 ### 2026-06-10 — Enriched Anthropic "When AI builds itself" article ingestion
 
@@ -7666,3 +7666,12 @@ Updated:
 - **UPDATED**: 72 files, 177 wikilink replacements across wiki
 - **CREATED**: `concepts/gpt/index.md` MOC (was concepts/gpt-models.md)
 - **NOTE**: entities/openai.md, entities/openai-codex.md, entities/openai-foundation.md etc. remain as entities (org/product pages)
+
+## 2026-06-10 — Agents MCP RL Course Portal Page
+
+- **CREATED**: `concepts/agents-mcp-rl-course.md` — Portal page for "Production-Ready Agent Engineering: From MCP to RL" Maven course (Will Brown & Kyle Corbitt)
+- **CREATED**: `entities/kyle-corbitt.md` — Kyle Corbitt entity page (CTO, OpenPipe)
+- **CREATED**: `raw/articles/2026-06-10_maven_agents-mcp-rl-course-overview.md` — Course overview metadata
+- **UPDATED**: `concepts/corbett-kyle-corbitt.md` — Stub redirected to entities/kyle-corbitt
+- **UPDATED**: `entities/will-brown.md` — Added Maven course section and related link
+- **UPDATED**: `index.md` — Added kyle-corbitt entity and agents-mcp-rl-course concept

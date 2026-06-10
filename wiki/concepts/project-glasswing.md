@@ -14,7 +14,7 @@ sources: []
 
 # Project Glasswing
 
-Anthropic's initiative to use [[entities/claude-mythos]] for defensive security research — finding and patching vulnerabilities in critical software.
+Anthropic's initiative to use [[concepts/claude/mythos]] for defensive security research — finding and patching vulnerabilities in critical software.
 
 ## Overview
 
@@ -49,6 +49,6 @@ Project Glasswing represents a novel approach to AI safety — rather than withh
 -  (Ben's Bites, 2026-04-09)
 
 ## Related
-- [[entities/claude-mythos]]
+- [[concepts/claude/mythos]]
 - [[entities/anthropic]]
 - [[concepts/ai-safety]]

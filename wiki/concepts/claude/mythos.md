@@ -53,12 +53,12 @@ Anthropic's decision to withhold Mythos reflects their AI safety-first approach.
 
 ## Mythos Preview — General Intelligence Assistant (May 2026)
 
-Announced alongside [[concepts/claude-opus-4-8|Claude Opus 4.8]] on May 28, 2026, Mythos Preview evolved from a security-focused model into a general-purpose AI assistant. General release expected "in coming weeks."
+Announced alongside [[concepts/claude/opus-4-8|Claude Opus 4.8]] on May 28, 2026, Mythos Preview evolved from a security-focused model into a general-purpose AI assistant. General release expected "in coming weeks."
 
 Key developments:
 - **L4 Engineer Substitution**: In an internal Anthropic survey, **5 out of 18 engineers** believed that with harness improvements, Mythos could substitute for an **L4 engineer** — a mid-level programmer capable of handling involved projects without supervision
 - **Recursive Self-Improvement Context**: Anthropic engineers reported "close to 100%" of Claude Code's code was written by the tool itself — Mythos represents the next step toward [[concepts/recursive-self-improvement|recursive self-improvement]]
-- **Positioning**: Mythos now sits alongside [[concepts/effort-control|Effort Control]] and [[concepts/dynamic-workflows|Dynamic Workflows]] as part of Anthropic's May 2026 agentic AI push
+- **Positioning**: Mythos now sits alongside [[concepts/claude/effort-control|Effort Control]] and [[concepts/dynamic-workflows|Dynamic Workflows]] as part of Anthropic's May 2026 agentic AI push
 
 ## UK AI Security Institute (AISI) Evaluation
 
@@ -78,7 +78,7 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 
 On June 9, 2026, Anthropic launched two Mythos-class models simultaneously:
 
-- **[[entities/claude-fable-5|Claude Fable 5]]**: Mythos-class model made safe for general use. Safety classifiers fall back to Opus 4.8 on cybersecurity, biology/chemistry, and distillation queries. **>95% of sessions involve no fallback.**
+- **[[concepts/claude/fable-5|Claude Fable 5]]**: Mythos-class model made safe for general use. Safety classifiers fall back to Opus 4.8 on cybersecurity, biology/chemistry, and distillation queries. **>95% of sessions involve no fallback.**
 - **Claude Mythos 5**: Same underlying model with safeguards lifted. Restricted to [[concepts/project-glasswing|Project Glasswing]] cyber defenders and select biology researchers.
 
 **Pricing:** $10/MTok input, $50/MTok output — less than half the price of Claude Mythos Preview.
@@ -135,7 +135,7 @@ Key design choices:
 
 ## Related
 - [[entities/anthropic]]
-- [[entities/claude-fable-5]] — Mythos-class model released for general use (June 2026)
+- [[concepts/claude/fable-5]] — Mythos-class model released for general use (June 2026)
 - 
 - [[concepts/project-glasswing]]
 - [[concepts/ai-safety]]

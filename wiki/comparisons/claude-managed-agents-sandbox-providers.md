@@ -23,7 +23,7 @@ sources:
 
 # Claude Managed Agents Self-Hosted Sandbox Providers
 
-A comparison of the four self-hosted sandbox providers that integrate with [[concepts/claude-managed-agents|Claude Managed Agents]], [[entities/anthropic|Anthropic]]'s enterprise agent platform. All four were announced on May 19, 2026 as part of Anthropic's "decouple the brain from the hands" initiative — the agent loop (brain) runs on Anthropic's platform, while code execution and tool calls (hands) run in your infrastructure of choice.
+A comparison of the four self-hosted sandbox providers that integrate with [[concepts/claude/managed-agents|Claude Managed Agents]], [[entities/anthropic|Anthropic]]'s enterprise agent platform. All four were announced on May 19, 2026 as part of Anthropic's "decouple the brain from the hands" initiative — the agent loop (brain) runs on Anthropic's platform, while code execution and tool calls (hands) run in your infrastructure of choice.
 
 ## Summary Comparison Table
 
@@ -221,7 +221,7 @@ VERCEL:
 
 ## Related Pages
 
-- [[concepts/claude-managed-agents|Claude Managed Agents]] — The Anthropic platform these sandbox providers integrate with
+- [[concepts/claude/managed-agents|Claude Managed Agents]] — The Anthropic platform these sandbox providers integrate with
 - [[concepts/modal-sandboxes|Modal Sandboxes]] — Modal's sandbox technology and use cases (pre-dates CMA integration)
 - [[comparisons/agent-sandboxing|Agent Sandboxing]] — Broader comparison of agent sandboxing approaches
 - [[entities/cloudflare-sandbox|Cloudflare]] — Cloudflare's platform and AI security research

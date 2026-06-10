@@ -90,7 +90,7 @@ This positions Muse Spark not just as a model, but as a **distribution moat** �
 ## Related
 
 - [[concepts/open-model-consortium]] — Contrast with Meta's traditional open-source Llama strategy
-- [[concepts/claude-mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
+- [[concepts/claude/mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
 -  — MSL leader, Scale AI founder-  — Meta CEO, strategic direction
 ## Sources
 

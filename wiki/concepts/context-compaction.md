@@ -73,5 +73,5 @@ An innovative approach implemented by OpenClaw. As the conversation approaches t
 - [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex memory system comparison
 - [[entities/openclaw]] — OpenClaw entity (Pre-Compaction Flush details in Memory System section)
 - [[entities/claude-code--architecture]] — Claude Code 5-layer compaction pipeline
-- [[concepts/claude-perfect-memory]] — Claude Code's memory design philosophy
+- [[concepts/claude/perfect-memory]] — Claude Code's memory design philosophy
 - [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] — Original article
