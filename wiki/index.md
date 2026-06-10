@@ -327,9 +327,6 @@
 - [[entities/google-adk]] — Google Agent Development Kit (ADK) 2.0: graph-based workflow engine for multi-agent AI, GA May 2026, 20K ⭐
 - [[entities/google-antigravity]] — Google's agent-first development platform (I/O 2026). Antigravity 2.0 desktop, CLI, SDK. Managed Agents API (isolated Linux sandbox, AGENTS.md/SKILL.md customization). Optimized for Gemini 3.5 Flash.
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
-- [[concepts/gpt/5-5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
-- [[concepts/gpt/5-5-instant]] — OpenAI's updated default ChatGPT model (May 2026). 52.5% fewer hallucinations, improved STEM/vision, self-correction capability.
-- [[concepts/gpt/oss]] — OpenAI's first open-weight model release since GPT-2 (Apache 2.0). Two MoE variants: 120B (5.1B active) and 20B (3.6B active). Near-o4-mini reasoning with configurable effort levels, native MXFP4 quantization.
 - [[entities/google]] — **Type** | AI Research & Product Company |
 - [[entities/gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series **"Writing an LLM from scratch"** — a comprehensive, iterative exploration of building and training large lan...
 - [[entities/grad]] — **X/Twitter** | @Grad62304977 |
@@ -1238,7 +1235,6 @@
 - [[concepts/death-of-browser]] — Death of the Browser: Web access paradigm shift in the AI agent era
 - [[concepts/decision-centric-architecture]] — Decision-Centric Architecture — Software design paradigm modeling enterprises around decisions (Data+Logic+Action+Security). Palantir Ontology origin. Complements [[concepts/harness-engineering]].
 - [[concepts/gpt/decoder-only-architecture]] — Decoder-Only GPT Architecture
-- [[concepts/gpt/decoder-only]] — Decoder-Only GPT Architecture
 - [[concepts/deep-agents-runtime]] — Deep Agents Runtime: Production execution foundation for deep agents (durable execution, memory, multi-agent).
 - [[concepts/deep-agents]] — Deep Agents: Autonomous AI agents combining multiple architecture patterns.
 - [[concepts/deep-learning]] — Deep Learning — Neural network-based machine learning paradigm
@@ -1354,7 +1350,7 @@
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation — Vlad Feinberg (Google/TPU)'s guide to frontier lab jobs. Kernel work is the biggest bottleneck, Chinchilla law derivation, Jax implementation, Pallas kernel optimization. Hiring test benchmarks.
 - [[concepts/frontier-safety-blueprint]] — Frontier Safety Blueprint — OpenAI's June 2026 policy proposal for democratic governance of frontier AI. Mandatory safety evaluations, CAISI expansion, regulatory framework. Criticized as regulatory capture.
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — FrontierSWE: Ultra-difficult coding agent benchmark (Proximal Labs). 20-hour limit, 3 categories (Implementation/Performance/Research) × 17 tasks. GPT-5.5+Codex leads with avg rank 2.35 (Dominance 83%). Documents conservative (GPT-5.4) vs aggressive (Opus 4.6) behavior, overconfidence/cheating behavior.
-- [[concepts/frontiercode]] — FrontierCode: Cognition's coding eval measuring mergeability over test-passing. Tasks require 40+ hrs from maintainers. Best model (Opus 4.8) scores ~13% on hardest subset vs 50%+ on SWE-Bench. 'War on Slop' framework.
+- [[concepts/ai-benchmarks/frontiercode]] — FrontierCode: Cognition's coding eval measuring mergeability over test-passing. Tasks require 40+ hrs from maintainers. Best model (Opus 4.8) scores ~13% on hardest subset vs 50%+ on SWE-Bench. 'War on Slop' framework.
 - [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
@@ -1754,7 +1750,7 @@
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
 - [[concepts/speed-as-scaling-law]] — Speed as the Next Scaling Law — Inference latency becoming a primary axis of AI capability. Three eras: Chat (quality) → Agentic (throughput) → Autonomous (SPEED). Persistent kernels, DFlash speculative decoding, FP4 quantization. Landmarks: GLM-5.1-HighSpeed 400 tok/s, MiMo UltraSpeed 1000 tok/s.
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
-- [[concepts/stack-benchmarking]] — Stack Benchmarking (Ramp) — Ramp's custom accounting benchmark for developing Ramp Stack agentic accounting assistant. Frontier model evaluation, skill ablation, memory architecture.
+- [[concepts/ai-benchmarks/stack-benchmarking]] — Stack Benchmarking (Ramp) — Ramp's custom accounting benchmark for developing Ramp Stack agentic accounting assistant. Frontier model evaluation, skill ablation, memory architecture.
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch — Full-stack LLM implementation course covering pretraining, tokenization, inference, and alignment.
 - [[concepts/starchild-1]] — Starchild-1 — Odyssey ML's real-time multimodal world model. Autoregressively generates synchronized audio+video. Streaming interactive control. Causal distillation pipeline.
 - [[concepts/state-of-agentic-coding]] — Monthly podcast by Armin Ronacher & Ben Vinegar (5 episodes, Dec 2025–Apr 2026). Covers model dynamics, context management, slop forks, quality crisis, meta-agentic programming.
