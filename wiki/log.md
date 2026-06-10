@@ -7675,3 +7675,21 @@ Updated:
 - **UPDATED**: `concepts/corbett-kyle-corbitt.md` — Stub redirected to entities/kyle-corbitt
 - **UPDATED**: `entities/will-brown.md` — Added Maven course section and related link
 - **UPDATED**: `index.md` — Added kyle-corbitt entity and agents-mcp-rl-course concept
+
+## 2026-06-10 — Concept Stubs Cleanup (misplaced pages)
+
+**Action**: Removed 5 misplaced/stub concept pages and updated all backlinks.
+
+**Deleted** (git rm):
+- `concepts/@milksandmatcha.md` — person stub duplicate (entities/milksandmatcha.md is the real page)
+- `concepts/ai-memory-systems-チャット-vs-コーディングエージェントの設計哲学比較.md` — Japanese-named stub duplicate of `concepts/ai-memory-systems.md`
+- `concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc.md` — raw article title slug stub
+- `concepts/background-agent-orchestration-linear-github-workflow-automation-graph-based.md` — tag-pile stub
+- `concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture.md` — tag-pile stub (covered by `concepts/claude-code.md`)
+
+**Backlink updates**:
+- `concepts/_index.md`: `concepts/@milksandmatcha` → `entities/milksandmatcha`
+- `concepts/back-of-house-multi-agent-patterns.md`: `concepts/@milksandmatcha` → `entities/milksandmatcha`
+- `concepts/claude/model-family.md`: long-name stub → `concepts/claude-code`
+- `concepts/llm-course-roadmap.md`: long-name stub → `concepts/claude-code`
+- `index.md`: removed 4 entries, updated count 1022→1018

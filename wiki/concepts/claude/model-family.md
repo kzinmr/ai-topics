@@ -145,7 +145,7 @@ Function to reliably ensure model output conforms to a JSON schema.
 
 - JSON mode guarantees schema compliance via validation
 - Improves reliability of agent control, eliminates need for subsequent parsing
-- Reference: [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]]
+- Reference: [[concepts/claude-code]]
 
 ---
 

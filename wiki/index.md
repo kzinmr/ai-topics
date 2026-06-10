@@ -796,11 +796,9 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1022 pages)
-- [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
+## Concepts (1018 pages)
 - [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
-- [[concepts/@milksandmatcha]] — @MilksandMatcha
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
@@ -1067,7 +1065,6 @@
 - [[concepts/axpo]] — AXPO (Agent eXplorative Policy Optimization) — NVIDIA/KAIST RL method for multimodal agentic reasoning. Fixes Thinking-Acting Gap via tool-call resampling. 8B surpasses 32B Base on Pass@4.
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
 - [[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
-- [[concepts/background-agent-orchestration-linear-github-workflow-automation-graph-based]] — Background Agent: Orchestration, GitHub, Workflow Automation
 - [[concepts/background-coding-agent]] — Background Coding Agent
 - [[concepts/base-consistency-model]] — BASE Consistency Model (redirect)
 - [[concepts/base-consistency]] — BASE Consistency Model
@@ -1122,7 +1119,6 @@
 - [[concepts/claude-code-best-practices]] — Claude Code Best Practices
 - [[concepts/claude-code-goal]] — Claude Code /goal Command — Goal-driven autonomous workflow via prompt-based Stop hook + evaluator model (Haiku). Condition-driven multi-turn execution: set a completion condition, Claude works until evaluator confirms it is met. Complementary to /loop and auto mode.
 - [[concepts/claude-code-leak]] — Claude Code Source Leak
-- [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]] — claude-code prompt engineering, context management, caching, agent architecture
 - [[concepts/claude-code-routines]] — Claude Code Routines
 - [[concepts/claude-code-sandboxing]] — Claude Code's OS-level sandbox. Filesystem + network isolation via Linux bubblewrap/macOS seatbelt. 84% reduction in permission prompts. Includes Claude Code on the Web (cloud-isolated execution). Open-sourced.
 - [[concepts/claude-code-skills]] — Claude Code Skills — Mechanisms and role patterns. Skills are folders, with mechanisms of Progressive Disclosure, dynamic Hooks, and memory persistence. 9 role patterns: Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops. Anthropic internal practice knowledge by Thariq Shihipar.

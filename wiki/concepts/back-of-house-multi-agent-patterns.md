@@ -10,7 +10,7 @@ sources: []
 
 # Back of House Multi-Agent Patterns
 
-Multi-agent workflow patterns using the kitchen metaphor. Proposed by Sarah Chieng ([[concepts/@milksandmatcha]]) and [@0xSero] in April 2026.
+Multi-agent workflow patterns using the kitchen metaphor. Proposed by Sarah Chieng ([[entities/milksandmatcha]]) and [@0xSero] in April 2026.
 
 ## Single-Agent Ceiling
 

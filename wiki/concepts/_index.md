@@ -281,7 +281,7 @@ AI and LLM concept pages organized by topic.
 
 ## Back-Of-House-Multi-Agent-Patterns
 
-- [[concepts/back-of-house-multi-agent-patterns]] — Multi-agent workflow patterns using the kitchen metaphor. Proposed by Sarah Chieng ([[concepts/@milksandmatcha]]) and [@0xSero] in April 2026.
+- [[concepts/back-of-house-multi-agent-patterns]] — Multi-agent workflow patterns using the kitchen metaphor. Proposed by Sarah Chieng ([[entities/milksandmatcha]]) and [@0xSero] in April 2026.
 
 ## Back-Of-House-Patterns
 
