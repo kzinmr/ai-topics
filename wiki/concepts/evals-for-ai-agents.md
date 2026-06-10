@@ -95,7 +95,7 @@ A systematic guide to AI agent evaluation by Anthropic. "Without evals, you can 
 ## See Also
 
 - [[concepts/building-effective-agents]] — Building effective agents (redirects to harness-engineering)
-- [[concepts/swe-bench]] — SWE-bench coding benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-bench coding benchmark
 - [[concepts/ai-resistant-evaluations]] — AI-resistant evaluation design
 - [[concepts/infrastructure-noise-agent-evals]] — Infrastructure noise in evals
 - [[concepts/macro-evals-for-agentic-systems]] — Macro evals: population-level behavior pattern discovery (OpenAI × Slalom)

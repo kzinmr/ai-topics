@@ -38,5 +38,5 @@ The company focuses on multimodal AI and has significant backing from Chinese an
 - [[concepts/china-agentic-coding-sprint]]
 - [[entities/kimi]]
 - [[entities/china-ai-industry]]
-- [[concepts/swe-bench]]
+- [[concepts/ai-benchmarks/swe-bench]]
 - [[entities/coding-agents]]

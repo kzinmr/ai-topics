@@ -74,7 +74,7 @@ Uses a rubric-based evaluation framework with 7,399 rubrics covering both final 
 
 | Benchmark | Focus | Scale |
 |-----------|-------|-------|
-| [[concepts/swe-bench]] | PR-level code fixes | Small scope |
+| [[concepts/ai-benchmarks/swe-bench]] | PR-level code fixes | Small scope |
 | [[concepts/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
 | **Workspace-Bench** | Multi-file workspace navigation | 20,476 files, 74 types |
 | [[concepts/kernelbench]] | Kernel-level optimization | Specialized |
@@ -87,7 +87,7 @@ Workspace-Bench shifts evaluation focus from "can the model write code" to "can 
 ## See Also
 
 - [[concepts/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark (20h tasks)
-- [[concepts/swe-bench]] — Standard PR-level coding benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
 - [[concepts/harness-engineering]] — Agent execution environment design
 - [[concepts/ai-evals]] — AI evaluation landscape
 - [[concepts/evals-for-ai-agents]] — Agent-specific evaluation approaches

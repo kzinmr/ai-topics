@@ -16,7 +16,7 @@ sources:
   - https://github.com/vis-nlp/ChartQA
   - https://huggingface.co/datasets/ahmed-masry/ChartQA
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/multimodal/_index
 related_entities:
   - entities/florian-brand
@@ -93,7 +93,7 @@ Xeophon recommends retiring ChartQA in favor of newer alternatives. The benchmar
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
+- [[concepts/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/multimodal/_index|Multimodal AI]] — Broader multimodal model evaluation landscape
 
 ## Sources

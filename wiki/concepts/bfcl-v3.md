@@ -7,7 +7,7 @@ tags:
   - tool
   - evaluation
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/bfcl-v1
   - concepts/bfcl-v2
   - concepts/bfcl-v4
@@ -126,7 +126,7 @@ No formal human baseline is published. The tasks are designed to be straightforw
 
 ## Related Wiki Pages
 
-- `concepts/ai-benchmarks-evals-overview` — Overview of the AI benchmarks and evals landscape
+- `concepts/ai-benchmarks-and-evals` — Overview of the AI benchmarks and evals landscape
 - `concepts/bfcl-v1` — BFCL V1, the original single-turn function calling leaderboard
 - `concepts/bfcl-v2` — BFCL V2, introducing enterprise-contributed live data
 - `concepts/bfcl-v4` — BFCL V4, extending to holistic agentic evaluation

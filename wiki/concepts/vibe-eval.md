@@ -7,7 +7,7 @@ tags:
   - multimodal
   - evaluation
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/mmmu
   - concepts/chatbot-arena
   - concepts/multimodal-evaluation
@@ -157,7 +157,7 @@ This finding has implications for model deployment: sometimes a smaller, cheaper
 
 ## Related Wiki Pages
 
-- `concepts/ai-benchmarks-evals-overview` — Overview of the AI benchmarks and evals landscape
+- `concepts/ai-benchmarks-and-evals` — Overview of the AI benchmarks and evals landscape
 - `concepts/mmmu` — MMMU, the multiple-choice multimodal benchmark that Vibe-Eval complements
 - `concepts/chatbot-arena` — Chatbot Arena, the human-preference platform Vibe-Eval complements
 - `concepts/multimodal-evaluation` — Overview of multimodal evaluation approaches

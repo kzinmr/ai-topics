@@ -43,7 +43,7 @@ Ge has articulated several principles behind DeepSWE's design:
 ## Cross-References
 - [[entities/datacurve]] — Company behind DeepSWE
 - [[concepts/deepswe-benchmark]] — The benchmark Ge co-authored
-- [[concepts/swe-bench]] — The benchmark DeepSWE critiques
+- [[concepts/ai-benchmarks/swe-bench]] — The benchmark DeepSWE critiques
 - [[concepts/evals-for-ai-agents]] — Broader agent evaluation context
 
 ## Sources

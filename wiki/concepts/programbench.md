@@ -12,7 +12,7 @@ tags:
 aliases:
   - "ProgramBench (Meta)"
 related:
-  - "concepts/swe-bench]]"
+  - "concepts/ai-benchmarks/swe-bench]]"
   - "concepts/coding-benchmarks]]"
   - "entities/meta]]"
 sources:
@@ -66,7 +66,7 @@ The 0% accuracy suggests that while AI can assist developers within established 
 
 ## Related Concepts
 
-- [[concepts/swe-bench]] — Standard benchmark for bug-fixing in existing codebases
+- [[concepts/ai-benchmarks/swe-bench]] — Standard benchmark for bug-fixing in existing codebases
 - [[concepts/coding-benchmarks]] — Overview of LLM coding evaluation
 - [[entities/meta]] — Publisher of ProgramBench
 - [[entities/cursor-ai]] — Cursor CI-fix agents (complementary capability)

@@ -11,7 +11,7 @@ tags:
   - evaluation
   - company
 related:
-  - "[[concepts/tau-bench]]"
+  - "[[concepts/ai-benchmarks/tau-bench]]"
   - "[[concepts/tau-squared-bench]]"
   - "[[concepts/tau-knowledge]]"
   - "[[concepts/pass-k-metric]]"
@@ -127,7 +127,7 @@ This result is significant. The bottleneck for voice agents is not **speech reco
 
 ## Related Pages
 
-- [[concepts/tau-bench]] — Overview of the τ-bench ecosystem
+- [[concepts/ai-benchmarks/tau-bench]] — Overview of the τ-bench ecosystem
 - [[concepts/tau-squared-bench]] — Dual-control benchmark (foundation of τ-Voice)
 - [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
 - [[concepts/pass-k-metric]] — Reliability evaluation metric

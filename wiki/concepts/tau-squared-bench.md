@@ -12,7 +12,7 @@ tags:
   - coordination
   - company
 related:
-  - "[[concepts/tau-bench]]"
+  - "[[concepts/ai-benchmarks/tau-bench]]"
   - "[[concepts/tau-knowledge]]"
   - "[[concepts/tau-voice]]"
   - "[[concepts/pass-k-metric]]"
@@ -134,7 +134,7 @@ Unlike conventional LM-based user simulators, τ²-bench's user simulator is **c
 
 ## Related Pages
 
-- [[concepts/tau-bench]] — τ-bench ecosystem overview
+- [[concepts/ai-benchmarks/tau-bench]] — τ-bench ecosystem overview
 - [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
 - [[concepts/tau-voice]] — Full-duplex voice agent evaluation
 - [[concepts/pass-k-metric]] — Reliability evaluation metric

@@ -22,10 +22,10 @@ sources:
 related_entities:
   - entities/florian-brand.md
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview.md
+  - concepts/ai-benchmarks-and-evals.md
   - concepts/llm-evaluation.md
-  - concepts/mmlu-pro.md
-  - concepts/gpqa.md
+  - concepts/ai-benchmarks/mmlu-pro.md
+  - concepts/ai-benchmarks/gpqa.md
 ---
 
 # MMMU (Massive Multi-discipline Multimodal Understanding and Reasoning)
@@ -192,10 +192,10 @@ MMMU-Pro is now the **preferred variant** for rigorous multimodal evaluation. Th
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview]] — Full 18-part benchmark series overview
+- [[concepts/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
-- [[concepts/mmlu-pro]] — MMLU Pro (text-only equivalent)
-- [[concepts/gpqa]] — GPQA (text-only, deeper science)
+- [[concepts/ai-benchmarks/mmlu-pro]] — MMLU Pro (text-only equivalent)
+- [[concepts/ai-benchmarks/gpqa]] — GPQA (text-only, deeper science)
 - [[concepts/llm-evaluation]] — LLM evaluation landscape
 
 ---

@@ -211,7 +211,7 @@ Gemini models have faced persistent community criticism for **high benchmark sco
 **Florian Brand (@xeophon)** (June 8, 2026):
 > "Gemini is an amazing model, the benchmarks don't lie. It's super smart. But it is very stubborn; it isn't good at instruction following and does things its way. That's why people say it's benchmaxxed."
 
-The core tension: Gemini scores well on standardized [[concepts/ifeval|IFEval]] and other benchmarks, but in practice users report that it frequently:
+The core tension: Gemini scores well on standardized [[concepts/ai-benchmarks/ifeval|IFEval]] and other benchmarks, but in practice users report that it frequently:
 - Ignores format or structure requests
 - Adds unsolicited content or takes its own approach
 - Struggles with multi-step agentic tasks requiring precise instruction compliance

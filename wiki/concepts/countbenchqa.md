@@ -15,7 +15,7 @@ sources:
   - https://arxiv.org/abs/2407.07726
   - https://huggingface.co/datasets/vikhyatk/CountBenchQA
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/multimodal/_index
 related_entities:
   - entities/florian-brand
@@ -106,13 +106,13 @@ dataset = load_dataset("vikhyatk/CountBenchQA", split="test")
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
+- [[concepts/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/multimodal/_index|Multimodal AI]] — Broader vision-language model evaluation landscape
 
 ## See Also
 
 - [[concepts/chartqa]] — Another vision-language benchmark with more complex chart reasoning (but noisier data)
-- [[concepts/hle]] — The opposite end of the spectrum: extremely hard, multi-domain reasoning
+- [[concepts/ai-benchmarks/hle]] — The opposite end of the spectrum: extremely hard, multi-domain reasoning
 
 ## Sources
 

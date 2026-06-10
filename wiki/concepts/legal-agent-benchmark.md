@@ -119,13 +119,13 @@ LAB will grow on three fronts:
 [legal-agent-benchmark] ──contrasts──→ [concept: swe-bench]
 ```
 
-This section informs graph queries: authored by [[entities/harvey]], relates to [[concepts/evals-for-ai-agents]] and [[concepts/ai-evaluation]], embodies the [[concepts/jagged-intelligence]] phenomenon, and contrasts with coding-focused benchmarks like [[concepts/swe-bench]].
+This section informs graph queries: authored by [[entities/harvey]], relates to [[concepts/evals-for-ai-agents]] and [[concepts/ai-evaluation]], embodies the [[concepts/jagged-intelligence]] phenomenon, and contrasts with coding-focused benchmarks like [[concepts/ai-benchmarks/swe-bench]].
 
 ## Related Concepts
 - [[concepts/evals-for-ai-agents]] — Broader framework for agent evaluation
 - [[concepts/ai-evaluation]] — AI model evaluation methodologies
 - [[concepts/jagged-intelligence]] — Uneven LLM capability profiles
-- [[concepts/swe-bench]] — Leading coding agent benchmark (contrasting domain)
+- [[concepts/ai-benchmarks/swe-bench]] — Leading coding agent benchmark (contrasting domain)
 - [[concepts/agent-observability]] — Observing agent behavior and traces
 
 ## Fireworks AI × Harvey Joint Results (June 2026)

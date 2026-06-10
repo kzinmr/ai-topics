@@ -187,8 +187,8 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 - **[[concepts/tree-of-thoughts]]** — Search-based deliberation for LLMs
 - **[[concepts/reflexion]]** — Verbal reinforcement learning
 - **[[concepts/coala]]** — Cognitive architectures for language agents
-- **[[concepts/swe-bench]]** / **[[concepts/swe-agent]]** — Real-world code evaluation
-- **[[concepts/tau-bench]]** — Tool-Agent-User interaction benchmark
+- **[[concepts/ai-benchmarks/swe-bench]]** / **[[concepts/swe-agent]]** — Real-world code evaluation
+- **[[concepts/ai-benchmarks/tau-bench]]** — Tool-Agent-User interaction benchmark
 - **[[concepts/computer-using-agent]]** — Yao's current work at OpenAI
 - **** — Designing environments for agents
 - **** — Yao argues for environment-first RL design

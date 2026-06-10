@@ -62,7 +62,7 @@ Isolating agent tool execution environments using:
 1. **Verification gap**: No formal verification of agent behavior under adversarial conditions
 2. **Composition attacks**: Multi-agent systems where sub-agents can attack each other
 3. **Supply chain risks**: Malicious MCP servers, compromised tools, poisoned plugins
-4. **Benchmarking**: No standardized agent security benchmark (unlike [[concepts/swe-bench|SWE-Bench]] for coding)
+4. **Benchmarking**: No standardized agent security benchmark (unlike [[concepts/ai-benchmarks/swe-bench|SWE-Bench]] for coding)
 
 ## See Also
 

@@ -21,10 +21,10 @@ sources:
 related_entities:
   - entities/florian-brand.md
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview.md
+  - concepts/ai-benchmarks-and-evals.md
   - concepts/llm-evaluation.md
-  - concepts/livecodebench.md
-  - concepts/swe-bench.md
+  - concepts/ai-benchmarks/livecodebench.md
+  - concepts/ai-benchmarks/swe-bench.md
 ---
 
 # Aider Polyglot Benchmark
@@ -152,10 +152,10 @@ From the Part 3 analysis (May 1, 2025):
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview]] — Full 18-part benchmark series overview
+- [[concepts/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
-- [[concepts/livecodebench]] — LiveCodeBench (contamination-free competition coding)
-- [[concepts/swe-bench]] — SWE-Bench (real-world software engineering)
+- [[concepts/ai-benchmarks/livecodebench]] — LiveCodeBench (contamination-free competition coding)
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-Bench (real-world software engineering)
 - [[concepts/llm-evaluation]] — LLM evaluation landscape
 
 ---

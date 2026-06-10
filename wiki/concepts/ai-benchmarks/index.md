@@ -13,6 +13,7 @@ status: active
 # AI Benchmarks Index
 
 > Sub-index of individual AI benchmark pages. Part of the [[concepts/ai-benchmarks-and-evals|MOC]].
+> All benchmark pages are in the `concepts/ai-benchmarks/` directory.
 
 ---
 
@@ -21,17 +22,17 @@ status: active
 Individual benchmark pages from @xeophon's "Popular Benchmarks / Evals" series:
 
 ### Knowledge & Science
-- [[concepts/gpqa]] — Part 1: Graduate-level Google-proof Q&A
-- [[concepts/mmlu-pro]] — Part 4: Improved MMLU (10-choice, reasoning-focused)
+- [[concepts/ai-benchmarks/gpqa]] — Part 1: Graduate-level Google-proof Q&A
+- [[concepts/ai-benchmarks/mmlu-pro]] — Part 4: Improved MMLU (10-choice, reasoning-focused)
 - [[concepts/ai-benchmarks/simpleqa]] — Part 7: Factual accuracy sanity check
-- [[concepts/hle]] — Part 13: Humanity's Last Exam (hardest MMLU-style)
+- [[concepts/ai-benchmarks/hle]] — Part 13: Humanity's Last Exam (hardest MMLU-style)
 
 ### Coding
-- [[concepts/livecodebench]] — Part 2: Contamination-free rolling code eval
+- [[concepts/ai-benchmarks/livecodebench]] — Part 2: Contamination-free rolling code eval
 - [[concepts/ai-benchmarks/aider-polyglot]] — Part 3: Multi-language code editing
 
 ### Software Engineering
-- [[concepts/swe-bench]] — Part 17: Real GitHub issue resolution (first agentic benchmark)
+- [[concepts/ai-benchmarks/swe-bench]] — Part 17: Real GitHub issue resolution (first agentic benchmark)
 
 ### Multimodal
 - [[concepts/ai-benchmarks/mmmu]] — Part 5: College-level multimodal understanding
@@ -39,14 +40,15 @@ Individual benchmark pages from @xeophon's "Popular Benchmarks / Evals" series:
 
 ### Function Calling & Instruction Following
 - [[concepts/ai-benchmarks/bfcl-v3]] — Part 9: Berkeley Function Calling Leaderboard
-- [[concepts/ifeval]] — Part 10: Instruction following (verifiable)
-- [[concepts/tau-bench]] — Part 12: Function calling with LLM-simulated users
+- [[concepts/ai-benchmarks/ifeval]] — Part 10: Instruction following (verifiable)
+- [[concepts/ai-benchmarks/tau-bench]] — Part 12: Function calling with LLM-simulated users
 
 ### Long Context
 - [[concepts/ai-benchmarks/mrcr]] — Part 6: Multi-round coreference resolution
 
 ### Abstract Reasoning
-- [[concepts/arc-agi-2-benchmark]] — Parts 15-16: ARC-AGI (Chollet's fluid intelligence)
+- [[concepts/ai-benchmarks/arc-agi-1]] — Part 15: ARC-AGI (Chollet's fluid intelligence)
+- [[concepts/ai-benchmarks/arc-agi-2-benchmark]] — Part 16: ARC-AGI 2 (human-validated)
 
 ### Counting
 - [[concepts/ai-benchmarks/countbenchqa]] — Part 14: Ultra-simple counting
@@ -55,7 +57,7 @@ Individual benchmark pages from @xeophon's "Popular Benchmarks / Evals" series:
 - [[concepts/ai-benchmarks/vibe-eval]] — Part 8: Custom prompt evaluation
 
 ### Game-based Agent
-- [[concepts/factorio-learning-environment]] — Part 18: Factory automation via code+REPL
+- [[concepts/ai-benchmarks/factorio-learning-environment]] — Part 18: Factory automation via code+REPL
 
 ---
 
@@ -71,7 +73,7 @@ Individual benchmark pages from @xeophon's "Popular Benchmarks / Evals" series:
 - [[concepts/gaia-benchmark]] — General AI assistant
 - [[concepts/freshstack-benchmark]] — RAG evaluation (Hamel Husain)
 
-### Coding & SWE
+### Coding & SWE (non-xeophon)
 - [[concepts/deepswe-benchmark]] — Deep SWE evaluation (DataCurve)
 - [[concepts/frontier-swe-benchmark]] — Frontier SWE capability
 - [[concepts/frontiercode]] — Code quality (slop avoidance)

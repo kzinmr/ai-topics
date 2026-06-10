@@ -7,7 +7,7 @@ tags:
   - evaluation
   - methodology
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/triviaqa
   - concepts/natural-questions
   - concepts/freshqa
@@ -154,7 +154,7 @@ On SimpleQA Verified, Gemini 2.5 Pro achieves a state-of-the-art F1-score of 55.
 
 ## Related Wiki Pages
 
-- `concepts/ai-benchmarks-evals-overview` — Overview of the AI benchmarks and evals landscape
+- `concepts/ai-benchmarks-and-evals` — Overview of the AI benchmarks and evals landscape
 - `concepts/triviaqa` — TriviaQA, an earlier factuality benchmark now largely saturated
 - `concepts/natural-questions` — Natural Questions, another predecessor
 - `concepts/freshqa` — FreshQA, testing factuality on fast-changing knowledge

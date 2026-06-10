@@ -90,5 +90,5 @@ Codestral's FIM performance, combined with its low latency and 256K context (in 
 
 - [[entities/mistral-ai]] — Mistral AI company overview and model portfolio
 - [[concepts/coding-agents]] — AI coding agent tools and workflows
-- [[concepts/swe-bench]] — SWE-Bench benchmark for software engineering evaluation
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-Bench benchmark for software engineering evaluation
 - [[concepts/evaluation-coding-agents]] — Evaluating AI coding agent performance

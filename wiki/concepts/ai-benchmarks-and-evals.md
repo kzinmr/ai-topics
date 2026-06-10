@@ -124,13 +124,13 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | Benchmark | What It Tests | Wiki Page |
 |---|---|---|
 | MMLU | Academic knowledge (57 subjects) | — |
-| MMLU Pro | Improved MMLU (10 choices, 43% new) | [[concepts/mmlu-pro]] |
-| GPQA | Graduate-level science Q&A | [[concepts/gpqa]] |
-| HLE | Humanity's Last Exam | [[concepts/hle]] |
+| MMLU Pro | Improved MMLU (10 choices, 43% new) | [[concepts/ai-benchmarks/mmlu-pro]] |
+| GPQA | Graduate-level science Q&A | [[concepts/ai-benchmarks/gpqa]] |
+| HLE | Humanity's Last Exam | [[concepts/ai-benchmarks/hle]] |
 | SimpleQA | Factual knowledge check | [[concepts/ai-benchmarks/simpleqa]] |
 | TruthfulQA | Resistance to falsehoods | — |
 | ARC | Commonsense science reasoning | — |
-| ARC-AGI / 2 | Abstract fluid intelligence | [[concepts/arc-agi-2-benchmark]] |
+| ARC-AGI / 2 | Abstract fluid intelligence | [[concepts/ai-benchmarks/arc-agi-2-benchmark]] |
 | BBQ | QA bias detection | — |
 
 ### Coding & Software Engineering
@@ -138,9 +138,9 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | Benchmark | What It Tests | Wiki Page |
 |---|---|---|
 | HumanEval | Python code generation | — |
-| LiveCodeBench | Rolling problems (contamination-free) | [[concepts/livecodebench]] |
+| LiveCodeBench | Rolling problems (contamination-free) | [[concepts/ai-benchmarks/livecodebench]] |
 | Aider Polyglot | 6-language code editing | [[concepts/ai-benchmarks/aider-polyglot]] |
-| SWE-bench / Verified | Real GitHub issue resolution | [[concepts/swe-bench]] |
+| SWE-bench / Verified | Real GitHub issue resolution | [[concepts/ai-benchmarks/swe-bench]] |
 | DeepSWE Benchmark | Deep SWE evaluation | [[concepts/deepswe-benchmark]] |
 | Frontier SWE Benchmark | Frontier SWE capability | [[concepts/frontier-swe-benchmark]] |
 | FrontierCode | Code quality | [[concepts/frontiercode]] |
@@ -158,8 +158,8 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | Benchmark | What It Tests | Wiki Page |
 |---|---|---|
 | BFCL V3 | Berkeley Function Calling | [[concepts/ai-benchmarks/bfcl-v3]] |
-| IFEval | Instruction following | [[concepts/ifeval]] |
-| Tau-Bench | Function calling (LLM simulates users) | [[concepts/tau-bench]] |
+| IFEval | Instruction following | [[concepts/ai-benchmarks/ifeval]] |
+| Tau-Bench | Function calling (LLM simulates users) | [[concepts/ai-benchmarks/tau-bench]] |
 | Tau-Voice | Voice agent evaluation | [[concepts/tau-voice]] |
 | Tau-Knowledge | Knowledge-based evaluation | [[concepts/tau-knowledge]] |
 
@@ -177,7 +177,7 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 
 | Benchmark | What It Tests | Wiki Page |
 |---|---|---|
-| Factorio LE | Factory automation via code+REPL | [[concepts/factorio-learning-environment]] |
+| Factorio LE | Factory automation via code+REPL | [[concepts/ai-benchmarks/factorio-learning-environment]] |
 | Agent Survival | Agent survival under PvP pressure | [[concepts/agent-survival-benchmark]] |
 | Vending Bench | Vending machine operation | [[concepts/vending-bench]] |
 | Agent Arena | Causal tracing agent comparison | [[concepts/agent-arena]] |
@@ -297,7 +297,7 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 - [[concepts/llm-evaluation-harness]] — EleutherAI lm-eval
 - [[concepts/benchmaxxing]] — Benchmark over-optimization
 - [[concepts/agent-evaluation-methodology]] — Agent evaluation lifecycle
-- [[concepts/swe-bench]] — SWE-bench (origin of agentic benchmarks)
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-bench (origin of agentic benchmarks)
 - [[concepts/agent-arena]] — Agent Arena (causal inference-based)
 - [[concepts/evals-for-ai-agents]] — Agent eval practices
 - [[concepts/evaluation-flywheel]] — Continuous evaluation cycle

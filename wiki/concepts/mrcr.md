@@ -7,7 +7,7 @@ tags:
   - context-management
   - evaluation
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/niah
   - concepts/longbench
   - concepts/ruler
@@ -139,7 +139,7 @@ The benchmark's ability to expose "context rot" — the degradation of model per
 
 ## Related Wiki Pages
 
-- `concepts/ai-benchmarks-evals-overview` — Overview of the AI benchmarks and evals landscape
+- `concepts/ai-benchmarks-and-evals` — Overview of the AI benchmarks and evals landscape
 - `concepts/niah` — Needle-in-a-Haystack, the simpler predecessor to MRCR
 - `concepts/longbench` — LongBench v2, a complementary long-context benchmark with real-world tasks
 - `concepts/ruler` — RULER, another multi-needle long-context evaluation

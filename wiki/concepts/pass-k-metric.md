@@ -12,7 +12,7 @@ tags:
   - infrastructure
   - evaluation
 related:
-  - "[[concepts/tau-bench]]"
+  - "[[concepts/ai-benchmarks/tau-bench]]"
   - "[[concepts/tau-squared-bench]]"
   - "[[concepts/tau-knowledge]]"
   - "[[concepts/tau-voice]]"
@@ -99,5 +99,5 @@ This method is efficient (no LLM-as-judge required) and highly faithful.
 
 ## Related Pages
 
-- [[concepts/tau-bench]] — The original benchmark where pass^k was introduced
+- [[concepts/ai-benchmarks/tau-bench]] — The original benchmark where pass^k was introduced
 - [[entities/shunyu-yao]] — Designer of τ-bench and pass^k

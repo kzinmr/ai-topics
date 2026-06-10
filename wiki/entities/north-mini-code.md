@@ -86,6 +86,6 @@ Trained on multiple scaffolds (SWE-Agent, mini-SWE-Agent, OpenCode, Terminus 2) 
 - [[entities/cohere]] — Parent company
 - [[entities/command-a-plus]] — Cohere's frontier general model (218B MoE)
 - [[concepts/mixture-of-experts]] — MoE architecture
-- [[concepts/swe-bench]] — Key evaluation benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — Key evaluation benchmark
 - [[concepts/agentic-engineering]] — Agentic coding paradigm
 - [[concepts/rlm]] — Reinforcement Learning from Execution Feedback (related RLVR approach)

@@ -88,6 +88,6 @@ The original test is publicly available with no time limit:
 ## See Also
 
 - [[concepts/eval-awareness-browsecomp]] — Eval awareness and benchmark contamination
-- [[concepts/swe-bench]] — SWE-bench benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-bench benchmark
 - [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
 - [[concepts/infrastructure-noise-agent-evals]] — Infrastructure noise in agent evals

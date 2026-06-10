@@ -11,7 +11,7 @@ aliases:
   - DeepSWE
   - Datacurve DeepSWE
 related:
-  - concepts/swe-bench
+  - concepts/ai-benchmarks/swe-bench
   - concepts/frontier-swe-benchmark
   - concepts/evals-for-ai-agents
   - entities/datacurve
@@ -24,7 +24,7 @@ sources:
 
 > **Disambiguation**: This page covers the **DeepSWE benchmark** by Datacurve (released May 2026). Not to be confused with the DeepSWE coding agent by Together AI / Agentica (an RL-trained model based on Qwen3-32B, released July 2025).
 
-**DeepSWE** is a coding agent benchmark developed by [[entities/datacurve|Datacurve]], released in May 2026. It consists of 113 tasks spanning 91 open-source repositories and 5 programming languages. DeepSWE was designed to address critical flaws in existing benchmarks like [[concepts/swe-bench|SWE-Bench Pro]]: data contamination from public GitHub issues, verifier unreliability, and compressed model rankings that don't reflect real-world developer experience.
+**DeepSWE** is a coding agent benchmark developed by [[entities/datacurve|Datacurve]], released in May 2026. It consists of 113 tasks spanning 91 open-source repositories and 5 programming languages. DeepSWE was designed to address critical flaws in existing benchmarks like [[concepts/ai-benchmarks/swe-bench|SWE-Bench Pro]]: data contamination from public GitHub issues, verifier unreliability, and compressed model rankings that don't reflect real-world developer experience.
 
 ## Why DeepSWE Matters
 
@@ -119,10 +119,10 @@ DeepSWE arrives as the benchmark market becomes a strategic battleground. Scale 
 [deepswe-benchmark] ──embodies──→ [concept: jagged-intelligence]
 ```
 
-This section informs graph queries: authored by [[entities/datacurve]] and [[entities/serena-ge]], directly contrasts with [[concepts/swe-bench]], relates to [[concepts/frontier-swe-benchmark]] and [[concepts/evals-for-ai-agents]].
+This section informs graph queries: authored by [[entities/datacurve]] and [[entities/serena-ge]], directly contrasts with [[concepts/ai-benchmarks/swe-bench]], relates to [[concepts/frontier-swe-benchmark]] and [[concepts/evals-for-ai-agents]].
 
 ## Related Concepts
-- [[concepts/swe-bench]] — The benchmark DeepSWE critiques and improves upon
+- [[concepts/ai-benchmarks/swe-bench]] — The benchmark DeepSWE critiques and improves upon
 - [[concepts/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark by Proximal
 - [[concepts/evals-for-ai-agents]] — Broader agent evaluation framework
 - [[concepts/swe-bench-agent-scaffolding]] — Agent harness design for SWE-bench tasks

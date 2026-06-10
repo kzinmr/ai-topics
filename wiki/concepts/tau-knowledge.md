@@ -18,7 +18,7 @@ sources:
 
 # τ-Knowledge
 
-**τ-Knowledge** extends [[concepts/tau-bench|τ-Bench]] to evaluate conversational agents' ability to search, reason, and combine information from **unstructured knowledge bases** (internal documents, policy manuals, product catalogs, etc.) with tool operations to complete tasks. Published in March 2026 by Quan Shi, Alexandra Zytek, Pedram Razavi, Karthik Narasimhan, and Victor Barres.
+**τ-Knowledge** extends [[concepts/ai-benchmarks/tau-bench|τ-Bench]] to evaluate conversational agents' ability to search, reason, and combine information from **unstructured knowledge bases** (internal documents, policy manuals, product catalogs, etc.) with tool operations to complete tasks. Published in March 2026 by Quan Shi, Alexandra Zytek, Pedram Razavi, Karthik Narasimhan, and Victor Barres.
 
 > Paper: [arXiv:2603.04370](https://arxiv.org/abs/2603.04370) "τ-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge"
 
@@ -120,7 +120,7 @@ The 40% result in the oracle condition (providing correct documents) reveals the
 
 | Benchmark | Focus |
 |-----------|-------|
-| [[concepts/tau-bench\|τ-Bench]] | Conversational agent evaluation with structured tools |
+| [[concepts/ai-benchmarks/tau-bench\|τ-Bench]] | Conversational agent evaluation with structured tools |
 | **τ-Knowledge** | Information retrieval and reasoning from unstructured knowledge bases |
 | [[concepts/tau-squared-bench\|τ²-Bench]] | More complex multi-agent, multi-tool scenarios |
 | [[concepts/tau-voice\|τ-Voice]] | Evaluation including voice interaction |
@@ -143,7 +143,7 @@ The new evaluation axis τ-Knowledge adds is "knowledge discovery," an essential
 
 ## Related Pages
 
-- [[concepts/tau-bench]] — The base conversational agent benchmark
+- [[concepts/ai-benchmarks/tau-bench]] — The base conversational agent benchmark
 - [[concepts/tau-squared-bench]] — τ²-Bench: More advanced evaluation suite
 - [[concepts/tau-voice]] — Voice interaction evaluation
 - [[concepts/_index]]

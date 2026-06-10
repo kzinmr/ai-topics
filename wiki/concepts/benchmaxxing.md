@@ -42,7 +42,7 @@ This highlights a key asymmetry:
 
 Several structural properties of standard benchmarks create blind spots:
 
-1. **Verifiable constraints are easy to game**: Benchmarks like [[concepts/ifeval|IFEval]] test simple, programmatic constraints (word count, keyword presence). Models can learn to satisfy these patterns without developing general instruction-following ability.
+1. **Verifiable constraints are easy to game**: Benchmarks like [[concepts/ai-benchmarks/ifeval|IFEval]] test simple, programmatic constraints (word count, keyword presence). Models can learn to satisfy these patterns without developing general instruction-following ability.
 
 2. **Closed-form answers reward recall over compliance**: Knowledge benchmarks (GPQA, MMLU Pro) test whether a model *knows* the answer, not whether it *follows* the user's requested format, scope, or approach.
 
@@ -89,7 +89,7 @@ Practitioners identify benchmaxxed models through several signals:
 
 ## Related Concepts
 
-- [[concepts/ifeval]] — Instruction Following Eval; tests verifiable constraints but misses nuanced compliance
+- [[concepts/ai-benchmarks/ifeval]] — Instruction Following Eval; tests verifiable constraints but misses nuanced compliance
 - [[concepts/ai-benchmarks-and-evals]] — Comprehensive benchmark landscape overview
 - [[concepts/vibe-eval]] — Vibe-Eval; explicitly designed to capture subjective quality beyond benchmarks
 - `overfitting` — The statistical phenomenon underlying benchmaxxing
@@ -99,4 +99,4 @@ Practitioners identify benchmaxxed models through several signals:
 
 - [[entities/gemini]] — Model frequently described as benchmaxxed
 - [[entities/florian-brand]] — Benchmark analyst who popularized the term in AI discourse
-- [[concepts/swe-bench]] — Agent benchmark where practical capability diverges from scores
+- [[concepts/ai-benchmarks/swe-bench]] — Agent benchmark where practical capability diverges from scores

@@ -66,7 +66,7 @@ The benchmark explicitly measures harness impact — results are reported by **(
 
 ## Relationship to Other Benchmarks
 
-FrontierSWE complements rather than replaces [[concepts/swe-bench]]:
+FrontierSWE complements rather than replaces [[concepts/ai-benchmarks/swe-bench]]:
 - **SWE-Bench**: Short-horizon PR fixes on open-source repos
 - **FrontierSWE**: 20-hour ultra-long-horizon challenges in implementation, performance, and ML research
 - **[[concepts/workspace-bench]]**: Multi-file workspace navigation (74 file types, 20,476 files — different dimension of complexity)
@@ -78,7 +78,7 @@ FrontierSWE reveals that even frontier models remain far from saturated on hard 
 
 ## See Also
 
-- [[concepts/swe-bench]] — Standard PR-level coding benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
 - [[concepts/workspace-bench]] — Multi-file workspace learning benchmark
 - [[concepts/harness-engineering]] — How execution environments shape agent performance
 - [[concepts/ai-evals]] — AI evaluation landscape overview

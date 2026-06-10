@@ -155,7 +155,7 @@ Cursor disclosed training a **larger model from scratch** in partnership with **
 ## Related Concepts
 
 - [[concepts/programbench]] — Meta's full-repo generation benchmark (0% top accuracy, complementary to Cursor's existing-code focus)
-- [[concepts/swe-bench]] — Standard coding benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — Standard coding benchmark
 - [[entities/openai]] — Codex and Agents SDK competitor
 - [[entities/anthropic]] — Claude Code competitor
 
