@@ -7728,3 +7728,10 @@ Updated:
 - **CREATED**: `concepts/openai/index.md` (Platform MOC), `concepts/anthropic/index.md` (Platform MOC)
 - **UPDATED**: 81ファイルのwikilink更新
 - **DESIGN**: gpt/ = モデル+ChatGPT製品, openai/ = プラットフォーム/API/SDK. claude/ = モデル+Claude製品, anthropic/ = プラットフォーム/ビジネス
+
+## 2025-06-18 — Agents MCP RL Lesson 1 Transcript Ingestion
+
+- **CREATED**: `transcripts/2025-06-18_willbrown_agents-mcp-rl-agent-patterns-lecture.md` — Lesson 1 lecture transcript (Agent Patterns & Principles)
+- **CREATED**: `raw/articles/2025-06-18_willbrown_agents-mcp-rl-lesson1.md` — Lesson 1 summary with model recommendations table
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Lecture table: Lesson 1 linked to transcript and summary
+- **UPDATED**: `index.md` — Added transcript entry

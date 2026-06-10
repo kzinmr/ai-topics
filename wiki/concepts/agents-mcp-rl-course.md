@@ -69,7 +69,7 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 
 | Date | Lecture | Transcript |
 |------|---------|------------|
-| Jun 18 | Lecture 1 | *pending* |
+| Jun 18 | [[transcripts/2025-06-18_willbrown_agents-mcp-rl-agent-patterns-lecture\|Lesson 1: Agent Patterns & Principles]] | [[raw/articles/2025-06-18_willbrown_agents-mcp-rl-lesson1\|Summary]] |
 | TBD | Lecture 2 | *pending* |
 | TBD | Lecture 3 | *pending* |
 | TBD | Lecture 4 | *pending* |
