@@ -19,9 +19,11 @@ sources:
   - raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md
   - raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning.md
   - raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2.md
+  - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://maven.com/p/193c6f/build-your-own-ai-research-agent
   - https://maven.com/p/c3950c/training-agents-with-reinforcement-learning
+  - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
 ---
 
 # Production-Ready Agent Engineering: From MCP to RL
@@ -187,3 +189,22 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
+
+## Supplementary Reading
+
+### Semi Analysis: Scaling Reinforcement Learning (June 2026)
+
+Dylan Patel's comprehensive report on RL infrastructure bottlenecks complements this course's curriculum with industry-scale context:
+
+- **GRPO mechanics**: Detailed explanation of rollout-based RL, confirming the course's GRPO coverage from an infrastructure perspective
+- **Reward function design ("dark art")**: AlphaChip case study (6.2% wirelength reduction on TPUv6) illustrating how even simple reward functions require extensive experimentation — directly relevant to the course's evaluation and reward engineering modules
+- **Reward hacking as first-order bottleneck**: Claude 3.7 test-editing, o3 hallucinations, GPT-4o sycophancy — all traced to reward function design failures
+- **Non-verifiable domains**: LLM judges with rubrics (OpenAI deliberative alignment, Qwen-3, HealthBench) — the frontier the course's RL optimization modules aim toward
+- **Environment engineering**: Latency, fault tolerance, security, CPU vs GPU servers, computer use challenges — the infrastructure layer the course's MCP/harness design feeds into
+- **RL shifts hardware balance**: NVL72 for batched reasoning, Prime Intellect Intellect-2 for distributed RL, decentralized inference for RL pipelines
+- **Data as moat**: Quality > quantity for RL data; OpenAI RFT for enterprise customization; STEM PhDs recruited for rubric writing
+- **Recursive self-improvement**: Already happening via compiler/kernel optimization RL; Claude 4 system card evaluations
+
+See [[concepts/reward-hacking]] for the expanded reward hacking taxonomy including Semi Analysis examples.
+
+**Source:** [Scaling RL: Environments, Reward Hacking, Agents, Scaling Data](https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data) (paywall — preview covers ~80% of content)

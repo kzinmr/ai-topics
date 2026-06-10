@@ -1,3 +1,14 @@
+## [2026-06-10] Semi Analysis: Scaling RL infrastructure — reward hacking, environment engineering, non-verifiable domains
+
+**Action**: Saved raw article. Enriched `concepts/reward-hacking.md` with LLM RL training examples (Claude 3.7 test-editing, o3 hallucinations, GPT-4o sycophancy, AlphaChip case study, non-verifiable domain solutions). Added "Supplementary Reading" section to `concepts/agents-mcp-rl-course.md` linking RL infrastructure context to the course curriculum. Updated `index.md` entries for both pages.
+
+**Pages created**: `raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md` (365 lines, ~80% preview due to paywall)
+
+**Pages updated**: `concepts/reward-hacking.md` (+36 lines, LLM RL Training section), `concepts/agents-mcp-rl-course.md` (+19 lines, Supplementary Reading)
+
+**Sources**: [Semi Analysis: Scaling Reinforcement Learning](https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data) — Dylan Patel, June 2026
+
+
 ## [2026-06-10] Blog wiki-ingest recovery — triage already committed inline by blog-triage agent
 
 **Status**: No-op recovery. Blog-triage agent (commit 75c1c94b, 07:13 UTC) performed combined triage+wiki-ingest inline — created `concepts/siri-ai.md`, enriched `concepts/claude/fable-5.md` and `concepts/claude/mythos.md`, saved all raw articles. The triage checkpoint file at `.hermes/cron/data/blog_ingest/triage_latest.json` was valid but all 3 takes and 5 references were already processed. Archive confirmed dedup (0 new items). No additional wiki actions needed.

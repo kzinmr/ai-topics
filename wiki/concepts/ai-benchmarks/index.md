@@ -105,6 +105,11 @@ status: active
 - [[concepts/ai-benchmarks/ram-relative-adoption-metric]] — Relative adoption metric
 
 ## Benchmark Methodology & Meta
+- [[concepts/ai-benchmarks/obliq-bench]] — Oblique retrieval: latent & implicit queries that defeat all retrievers
+
+## Search & Retrieval
+
+- [[concepts/ai-benchmarks/obliq-bench]] — Oblique retrieval benchmark (5 tasks: implicit stance, failure modes, proof strategies, authorship, tip-of-tongue)
 
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmark over-optimization trap
 - [[concepts/ai-benchmarks/ai-resistant-evaluations]] — AI-resistant evaluation design
