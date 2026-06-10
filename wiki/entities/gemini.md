@@ -2,8 +2,8 @@
 title: "Gemini"
 type: entity
 created: 2026-04-25
-updated: 2026-06-08
-tags: [model, multimodal, text-generation, image-generation, video-generation, google, world-models, ai-agents]
+updated: 2026-06-10
+tags: [model, multimodal, text-generation, image-generation, video-generation, google, world-models, ai-agents, model-card]
 aliases: ["Gemini models", "Google Gemini"]
 sources:
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
@@ -12,6 +12,8 @@ sources:
   - raw/articles/2026-05-20_google_gemini-app-agentic.md
   - raw/articles/2026-05-20_google_gemini-omni.md
 - raw/articles/2026-06-08_xeophon-gemini-benchmaxxed-instruction-following.md
+- raw/articles/2026-06-10_deepmind-model-cards-page.md
+- https://deepmind.google/models/model-cards/
 ---
 # Gemini
 
@@ -37,6 +39,24 @@ Gemini is Google's multimodal AI model family, developed by Google DeepMind and 
 - **Gemini Spark** — 24/7 personal AI agent. Cloud-based, Antigravity harness, Workspace integration. Proactive task execution.
 - **Daily Brief** — Personalized morning digest agent. Summarizes and prioritizes across connected apps.
 - **Gemini Everywhere** — Google's push to integrate Gemini across all products
+
+## Model Cards (Google DeepMind)
+
+Google DeepMind publishes structured model cards for all Gemini models. Full index at [deepmind.google/models/model-cards](https://deepmind.google/models/model-cards/).
+
+| Model | Updated | Card |
+|-------|---------|------|
+| Gemini 2.5 Pro | 2025-05-14 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini_2_5_Pro_Model_Card.pdf) |
+| Gemini 2.5 Flash | 2025-06-20 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.5-Flash-Model-Card.pdf) |
+| Gemini 2.5 Flash Lite | 2025-06-27 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.5-Flash-Lite-Model-Card.pdf) |
+| Gemini 2.0 Flash | 2025-02-05 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.0-Flash-Model-Card.pdf) |
+| Gemini 2.0 Flash-Lite | 2025-02-05 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.0-Flash-Lite-Model-Card.pdf) |
+| Gemini 2.0 Pro | 2025-03-28 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.0-Pro-Model-Card.pdf) |
+| Gemini 1.5 Pro | 2025-05-14 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini_1_5_Pro_Model_Card.pdf) |
+| Gemini 1.5 Flash | 2025-05-14 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini_1_5_Flash_Model_Card.pdf) |
+| Gemini Robotics On-Device | 2025-07-01 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-Robotics-On-Device-Model-Card.pdf) |
+
+See also: [[concepts/model-cards-system-cards]], [[concepts/gemini]]
 
 ## Gemini 3.5 Flash
 
@@ -236,10 +256,10 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 ## Relationships
 - [[google]] — Parent company (AI/ML division)
 - [[concepts/nano-banana-2]] — NB2 image generation model
-- [[concepts/chatgpt-images-2.0]] — OpenAI's competitor
+- [[concepts/gpt/chatgpt-images-2-0]] — OpenAI's competitor
 - [[concepts/ai-image-generation]] — AI image generation overview
 - [[concepts/nvidia-sana-wm]] — Competing open-source world model
-- [[concepts/openai-gpt-realtime-2]] — Competing voice AI
+- [[concepts/gpt/realtime-2]] — Competing voice AI
 - [[concepts/cursor-composer-2-5]] — Coding agent using Antigravity-harness pattern
 - [[concepts/gemini]] — Concept-level overview
 

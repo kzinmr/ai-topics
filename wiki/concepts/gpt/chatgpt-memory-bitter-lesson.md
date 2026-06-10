@@ -58,7 +58,7 @@ Applied to memory systems:
 
 ## OpenAI's Response: Dreaming (June 2026)
 
-In June 2026, OpenAI launched [[concepts/chatgpt-dreaming-memory-system|Dreaming]], a redesigned memory system that partially addresses the Bitter Lesson critique:
+In June 2026, OpenAI launched [[concepts/gpt/chatgpt-dreaming-memory-system|Dreaming]], a redesigned memory system that partially addresses the Bitter Lesson critique:
 
 - **Compute over curation**: The consolidation engine uses lightweight models offline to organize memories automatically, rather than relying on manual curation
 - **Temporal decay**: Irrelevant memories are automatically pruned, reducing the maintenance overhead the Bitter Lesson critique highlighted
@@ -91,5 +91,5 @@ For coding agents like Claude Code and Codex:
 - [[concepts/memory-systems-design-patterns]]
 - [[concepts/knowledge-graph-memory-agents]]
 - [[concepts/reinforcement-learning]]
-- [[concepts/chatgpt-dreaming-memory-system]] — Dreaming: OpenAI's response to these critiques
+- [[concepts/gpt/chatgpt-dreaming-memory-system]] — Dreaming: OpenAI's response to these critiques
 - [[comparisons/agent-memory-systems-comparison]] — 5-system architectural comparison

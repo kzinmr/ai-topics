@@ -51,7 +51,7 @@ StrongDM practices this Level 5, while Anthropic Managed Agents and OpenAI Symph
 - Provide SPEC.md → Implementable in any language (reference implementation in Elixir)
 - A paradigm of "managing work" rather than "managing coding agents"
 - Developed by Ryan Lopopolo at OpenAI Frontier. Track record: 3-5 PRs/day → 75 PRs/week
-- Details: [[concepts/openai-symphony]], [[entities/ryan-lopopolo]]
+- Details: [[concepts/gpt/symphony]], [[entities/ryan-lopopolo]]
 
 ### StrongDM Attractor / Dark Factory
 - Non-interactive development: Spec + scenarios → Agent creates code → Tests → Convergence

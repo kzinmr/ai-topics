@@ -67,10 +67,50 @@ GPT-5.5 Instant's designation as the default model signals OpenAI's confidence i
 ## Related
 
 - [[entities/openai]] — Developer company
-- [[concepts/chatgpt-images-2.0]] — Image generation capabilities in the same release cycle
+- [[concepts/gpt/chatgpt-images-2-0]] — Image generation capabilities in the same release cycle
 - [[concepts/vibe-physics]] — Scientific discovery use cases enabled by GPT-5.x reasoning capabilities
 
 ## Sources
 
 - [AINews: Silicon Valley gets Serious about Services (swyx)](https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious) — May 6, 2026
 - OpenAI API documentation — GPT-5.5 Instant model release
+
+---
+
+*Merged from  — entity page content below:*
+
+
+# GPT-5.5 Instant
+
+OpenAI's updated default model for ChatGPT, released May 5, 2026. The daily driver for hundreds of millions of users — positioned as a smarter, more accurate, and more personalized experience compared to GPT-5.3 Instant.
+
+## Key Improvements
+
+### Accuracy & Factuality
+- **52.5% fewer hallucinated claims** vs GPT-5.3 Instant on high-stakes domains (medicine, law, finance)
+- **37.3% fewer inaccurate claims** on user-flagged challenging conversations
+- Self-correction capability: catches its own initial mistakes by rechecking work — a notable step forward in reasoning reliability
+
+### Capability Gains
+- Stronger visual reasoning — analyzing photo and image uploads
+- Better STEM question answering (math, science)
+- Smarter web search decisions — knows when to look things up
+
+### User Experience
+- **Tighter, more concise responses** without losing substance or warmth
+- **Better personalization** — uses shared context more effectively
+- Maintains the conversational personality that makes ChatGPT engaging
+
+## Context: OpenAI's Rapid Release Cycle
+GPT-5.5 Instant lands amid OpenAI's fastest-ever release cadence:
+- **GPT-5.5** — April 23, 2026 (major release with agentic coding gains)
+- **GPT-5.5-Cyber** — April 30, 2026 (cybersecurity variant, Trusted Access for Cyber program)
+- **GPT-5.5 Instant** — May 5, 2026 (default ChatGPT model update)
+- OpenAI surpassed $25B annualized revenue, exploring public listing
+
+## Related Pages
+- [[entities/openai]] — OpenAI company overview
+- [[entities/gpt-5-5]] — GPT-5.5 main release
+- [[concepts/hallucination]] — Hallucination reduction techniques
+- [[concepts/model-reliability]] — Model reliability and factuality
+- [[concepts/personalization]] — AI personalization approaches

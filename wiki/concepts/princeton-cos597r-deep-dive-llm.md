@@ -104,7 +104,7 @@ sources:
 
 - [[concepts/learning-llms-in-2025]] — Yoav Goldberg's comprehensive guide
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — The implementation-focused counterpart
-- [[concepts/decoder-only-gpt]] — The underlying architecture for the entire course
+- [[concepts/gpt/decoder-only]] — The underlying architecture for the entire course
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization (Week 6)
 - [[concepts/grpo-rl-training]] — Follow-up on test-time compute (extension of Week 9)
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention (Week 13)

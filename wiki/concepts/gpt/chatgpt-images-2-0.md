@@ -96,7 +96,7 @@ Alex Banks (primary LLM user for knowledge work uses Claude) has pivoted to Open
 ## Related
 
 - [[entities/openai]] — Parent company
-- [[concepts/gpt-models]] — Underlying model series
+- [[concepts/gpt/index]] — Underlying model series
 - [[concepts/nano-banana-2]] — Google's NB2 competitor
 - [[concepts/ai-image-generation]] — AI image generation overview
 - [[concepts/gemini]] — Google's model family

@@ -128,5 +128,5 @@ Per-second generation costs have dropped dramatically. Seedance 2.0 Fast at $0.0
 ## Related Pages
 - [[concepts/ai-image-generation]] — Predecessor technology (text-to-image)
 - [[concepts/nano-banana-2]] — Google's image generation model
-- [[concepts/chatgpt-images-2.0]] — OpenAI's image generation
+- [[concepts/gpt/chatgpt-images-2-0]] — OpenAI's image generation
 - [[concepts/_index]]

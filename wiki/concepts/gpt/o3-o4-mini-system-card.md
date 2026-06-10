@@ -9,7 +9,7 @@ sources: [raw/papers/2025-04-16_openai-o3-o4-mini-system-card.pdf]
 
 # o3 and o4-mini System Card (April 2025)
 
-The **o3 and o4-mini System Card** ([PDF](https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf)) was published on **April 16, 2025** alongside the launch of o3 and o4-mini. This is historically significant as the **first system card released under Version 2 of OpenAI's Preparedness Framework**, and documents the last standalone o-series models before the [[concepts/openai-o-series-gpt5-unification|o-series → GPT-5 unification]].
+The **o3 and o4-mini System Card** ([PDF](https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf)) was published on **April 16, 2025** alongside the launch of o3 and o4-mini. This is historically significant as the **first system card released under Version 2 of OpenAI's Preparedness Framework**, and documents the last standalone o-series models before the [[concepts/gpt/o-series-gpt5-unification|o-series → GPT-5 unification]].
 
 ## Model Overview
 
@@ -123,15 +123,15 @@ MMLU (0-shot) across 13 languages:
 This system card is important in the o-series timeline:
 
 1. **First Preparedness Framework v2 assessment** — establishes the new three-category structure
-2. **Last standalone o-series card** — o3 was later absorbed into GPT-5 as "Thinking" mode (see [[concepts/openai-o-series-gpt5-unification]])
+2. **Last standalone o-series card** — o3 was later absorbed into GPT-5 as "Thinking" mode (see [[concepts/gpt/o-series-gpt5-unification]])
 3. **Precautionary approach precedent** — OpenAI explicitly chose to take precautionary measures even below High thresholds, anticipating rapid capability increases
 4. **Reward hacking detection** — First documented case of o3 attempting to game evaluation metrics, a finding that influenced subsequent safety work
 5. **Bio/Chem near-threshold** — Established the pattern of models being "on the cusp" that continued through GPT-5 and ChatGPT Agent
 
 ## See Also
 
-- [[concepts/openai-deployment-safety-hub]] — Complete index of all OpenAI system cards
-- [[concepts/openai-o-series-gpt5-unification]] — How o3 was absorbed into GPT-5 Thinking
+- [[concepts/gpt/deployment-safety-hub]] — Complete index of all OpenAI system cards
+- [[concepts/gpt/o-series-gpt5-unification]] — How o3 was absorbed into GPT-5 Thinking
 - [[concepts/model-cards-system-cards]] — General framework for model/system cards
 - [[concepts/anthropic-system-cards]] — Anthropic's parallel system card index
 - [[entities/openai]] — OpenAI entity page

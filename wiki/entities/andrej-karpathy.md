@@ -541,4 +541,4 @@ Future coding will resemble resource management games — setting up systems, de
 -  — PhD research area
 - [[simon-willison]] — Fellow AI educator and blogger
 -  — Teaching LLMs from first principles
-- [[concepts/decoder-only-gpt]] — Complete GPT architecture explanation from microgpt
+- [[concepts/gpt/decoder-only]] — Complete GPT architecture explanation from microgpt

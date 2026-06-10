@@ -191,7 +191,7 @@ Agents generate large volumes of data (Traces) with each interaction. Viv treats
 
 > *"As we deploy agents in our world over year timescales, there is going to be a hyper-exponential in the amount of data produced by those agents."*
 
-Viv applies Rich Sutton's [[concepts/chatgpt-memory-bitter-lesson]] to agent memory:
+Viv applies Rich Sutton's [[concepts/gpt/chatgpt-memory-bitter-lesson]] to agent memory:
 
 1. **Own the data** — Open ecosystems are critical
 2. **Use the data** — Search, distillation, and organization are essential

@@ -76,7 +76,7 @@ Input tokens → Token Embedding + Positional Embedding
             → LM Head → Logits → Next Token
 ```
 
-See [[concepts/decoder-only-gpt]] for the complete architectural breakdown.
+See [[concepts/gpt/decoder-only]] for the complete architectural breakdown.
 
 ## Key Milestones
 
@@ -231,7 +231,7 @@ Released two days before GPT-5.5, GPT Image 2.0 (marketed as ChatGPT Images 2.0)
 - **Speed:** Slower than text chat; complex tasks (multi-panel comics) take a few minutes
 
 ### Related
-- [[concepts/chatgpt-images-2.0]] — Detailed page on Images 2.0
+- [[concepts/gpt/chatgpt-images-2-0]] — Detailed page on Images 2.0
 - `gpt-image-2` on [OpenAI API](https://developers.openai.com/api/docs/models/gpt-image-2)
 
 ---
@@ -242,7 +242,7 @@ Codex began as OpenAI's agentic coding CLI (evolved from GitHub Copilot) and, by
 
 > "We're actually doing the sneaky thing where we're building the super app out in the open and evolving it out of Codex." — **Thibault Sottiaux, Codex Lead**
 
-See [[concepts/openai-codex-superapp]] for the full Codex details.
+See [[concepts/gpt/codex-superapp]] for the full Codex details.
 
 ### Codex Architecture
 
@@ -336,20 +336,20 @@ GPT models are foundational to the AI agent ecosystem:
 - **Symphony:** Multi-agent orchestration using OpenAI models
 - **GPT-5.5:** Powers agentic coding, knowledge work, scientific research
 
-See [[concepts/openai-agents-sdk]] for the Agents SDK architecture.
-See [[concepts/openai-codex-superapp]] for Codex as super app.
-See [[concepts/chatgpt-images-2.0]] for GPT Image 2.0.
+See [[concepts/gpt/agents-sdk]] for the Agents SDK architecture.
+See [[concepts/gpt/codex-superapp]] for Codex as super app.
+See [[concepts/gpt/chatgpt-images-2-0]] for GPT Image 2.0.
 
 ## Related Concepts
 
-- [[concepts/decoder-only-gpt]] — Complete architectural breakdown
+- [[concepts/gpt/decoder-only]] — Complete architectural breakdown
 - [[openai]] — OpenAI company and product ecosystem
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
 - [[concepts/reasoning-models]] — o-series extended thinking models
 - [[concepts/local-llm]] — Running open-weight alternatives locally
-- [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis
-- [[concepts/openai-codex-superapp]] — Codex as super app
-- [[concepts/chatgpt-images-2.0]] — GPT Image 2.0 image generation
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis
+- [[concepts/gpt/codex-superapp]] — Codex as super app
+- [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2.0 image generation
 
 ## References
 

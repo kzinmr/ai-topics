@@ -114,5 +114,5 @@ HN discussion on the original April 2026 announcement (102 points, 30 comments):
 ## Related Pages
 
 - [[entities/openai]] — OpenAI company page
-- [[entities/gpt-5.5]] — Base model powering GPT-Rosalind's agentic capabilities
+- [[concepts/gpt/5-5]] — Base model powering GPT-Rosalind's agentic capabilities
 - [[raw/articles/2026-06-04_openai_gpt-rosalind-new-capabilities.md]] — Full raw article

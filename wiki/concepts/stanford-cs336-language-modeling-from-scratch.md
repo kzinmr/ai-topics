@@ -116,7 +116,7 @@ Listed in Yoav Goldberg's guide as the only course given special treatment for b
 
 - [[concepts/llm-course-roadmap]] — Similarities with Maxime Labonne's LLM Course (overlaps with Part 2: The Scientist)
 - [[concepts/learning-llms-in-2025]] — Yoav Goldberg's comprehensive guide
-- [[concepts/decoder-only-gpt]] — Architecture implemented in Assignment 1
+- [[concepts/gpt/decoder-only]] — Architecture implemented in Assignment 1
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention implemented in Assignment 2
 - [[concepts/grpo-rl-training]] — RL method implemented in Assignment 5
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization covered in Assignment 5

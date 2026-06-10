@@ -58,7 +58,7 @@ Only delays of 20+ minutes would justify reconsidering the trade-off.
 - **NB2** is accessible via Google AI Studio and the Gemini App (with reduced controls on mobile)
 
 ## Related
-- [[concepts/chatgpt-images-2.0]] — GPT Image 2 details
+- [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2 details
 - [[concepts/nano-banana-2]] — NB2 details
 - [[entities/openai]] — OpenAI company page
 - [[google]] — Google AI/ML company page

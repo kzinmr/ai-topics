@@ -101,5 +101,5 @@ GPT-Rosalind-5.5 (biology/drug discovery) represents a new pattern: **domain-res
 - [[concepts/model-cards-system-cards]] — General framework for model/system cards
 - [[concepts/anthropic-system-cards]] — Anthropic's parallel system card index
 - [[entities/openai]] — OpenAI entity page
-- [[concepts/openai-frontier-governance-framework]] — OpenAI's governance approach
-- [[concepts/codex-safety-at-openai]] — Codex-specific safety considerations
+- [[concepts/gpt/frontier-governance-framework]] — OpenAI's governance approach
+- [[concepts/gpt/codex-safety]] — Codex-specific safety considerations

@@ -107,7 +107,7 @@ Perplexity used the Realtime API (Realtime-1.5) to power millions of monthly voi
 
 - [[concepts/speech-audio-asr-tts-voice]] — Broader speech/audio landscape and comparison with other providers
 - [[entities/openai]] — OpenAI entity page
-- [[concepts/openai-agents-sdk]] — OpenAI's agent framework (can use Realtime API as voice backend)
+- [[concepts/gpt/agents-sdk]] — OpenAI's agent framework (can use Realtime API as voice backend)
 
 ## Sources
 

@@ -52,6 +52,6 @@ No additional charge — pay only for AWS resources used by agents.
 ## Related Pages
 - [[concepts/model-context-protocol-mcp]] — MCP
 - [[entities/amazon-bedrock-agentcore]] — Bedrock AgentCore
-- [[concepts/aws-openai-bedrock-partnership]] — AWS-OpenAI partnership
+- [[concepts/gpt/aws-bedrock-partnership]] — AWS-OpenAI partnership
 - [[concepts/agent-skills]] — Agent skills concept
 - [[concepts/ai-coding]] — AI coding agents

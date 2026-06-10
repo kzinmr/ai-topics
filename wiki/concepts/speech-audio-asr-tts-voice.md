@@ -129,7 +129,7 @@ Small models (≤4B params) can run on edge devices:
 - Voice-capable agents use the ASR → LLM → TTS pipeline with checkpointing for reliability
 
 ### In OpenAI Ecosystem
-- **[[concepts/openai-realtime-api|Realtime API]]** supports multimodal (text + audio) conversations natively via WebSocket — see dedicated page for architecture, Perplexity case study, and session configuration
+- **[[concepts/gpt/realtime-api|Realtime API]]** supports multimodal (text + audio) conversations natively via WebSocket — see dedicated page for architecture, Perplexity case study, and session configuration
 - **Assistant API** can use voice as input/output modality
 - **GPT-5.5** improved audio reasoning capabilities over prior generations
 
@@ -156,7 +156,7 @@ Small models (≤4B params) can run on edge devices:
 - [[concepts/_index]]
 - [[whisper]] — OpenAI's speech recognition model
 - [[concepts/ai-agent-engineering]] — Voice agent architecture patterns
-- [[concepts/openai-realtime-api]] — OpenAI's Realtime API for native speech-to-speech agents
+- [[concepts/gpt/realtime-api]] — OpenAI's Realtime API for native speech-to-speech agents
 - [[entities/openai]] — OpenAI's TTS and Realtime API
 - [[entities/anthropic]] — Claude ecosystem (no native TTS, but voice-capable via API integration)
 

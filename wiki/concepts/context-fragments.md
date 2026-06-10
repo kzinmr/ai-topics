@@ -92,7 +92,7 @@ Open questions raised by Viv:
 
 - [[concepts/harness-engineering]] — Extended version of Harness Design
 - [[concepts/experiential-memory]] — Agent experience accumulation memory
-- [[concepts/chatgpt-memory-bitter-lesson]] — Bitter Lesson and memory
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson and memory
 - [[concepts/claude-memory]] — File-based memory (L2 implementation)
 - [[concepts/ai-agent-memory-middleware]] — Cloud-scale memory (L3 implementation)
 - [[concepts/memory-systems-design-patterns]] — Cross-cutting memory design pattern analysis

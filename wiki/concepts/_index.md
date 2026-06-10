@@ -321,7 +321,7 @@ AI and LLM concept pages organized by topic.
 
 ## Chatgpt-Memory-Bitter-Lesson
 
-- [[concepts/chatgpt-memory-bitter-lesson]] — Analysis of ChatGPT's memory system through the lens of Rich Sutton's Bitter Lesson — arguing that the best way to build agent memory is not to build one at all, but to embrace stateless, context-window-based approaches.
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Analysis of ChatGPT's memory system through the lens of Rich Sutton's Bitter Lesson — arguing that the best way to build agent memory is not to build one at all, but to embrace stateless, context-window-based approaches.
 
 ## Chief-Of-Staff-Agent-Patterns
 
@@ -449,7 +449,7 @@ AI and LLM concept pages organized by topic.
 
 ## Decoder-Only-Gpt
 
-- [[concepts/decoder-only-gpt]] — The decoder-only GPT (Generative Pre-trained Transformer) is the dominant architecture behind modern large language models (ChatGPT, Claude, Gemini, etc.). Andrej Karpathy's microgpt project (February 2026) provides an educational implementation.
+- [[concepts/gpt/decoder-only]] — The decoder-only GPT (Generative Pre-trained Transformer) is the dominant architecture behind modern large language models (ChatGPT, Claude, Gemini, etc.). Andrej Karpathy's microgpt project (February 2026) provides an educational implementation.
 
 ## Deep-Agents
 
@@ -473,7 +473,7 @@ AI and LLM concept pages organized by topic.
 
 ## Elixir-Beam-Agent-Orchestration
 
-- [[concepts/elixir-beam-agent-orchestration]] — Patterns for leveraging Elixir/BEAM (Erlang VM) for AI agent orchestration. The approach adopted by [[concepts/openai-symphony]]'s Ryan Lopopolo.
+- [[concepts/elixir-beam-agent-orchestration]] — Patterns for leveraging Elixir/BEAM (Erlang VM) for AI agent orchestration. The approach adopted by [[concepts/gpt/symphony]]'s Ryan Lopopolo.
 
 ## Evaluation-Flywheel
 

@@ -2,19 +2,22 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-06-09
+updated: 2026-06-10
 tags:
   - concept
   - google
   - model
   - multimodal
   - frontier-models
+  - model-card
 aliases: ["gemini", "google gemini", "gemini 3", "gemini pro"]
 related:
   - concepts/frontier-models-2026-04
   - concepts/local-llm/model-distillation
   - concepts/inference-speed-development
-sources: []
+sources:
+  - raw/articles/2026-06-10_deepmind-model-cards-page.md
+  - https://deepmind.google/models/model-cards/
 ---
 
 # Google Gemini
@@ -131,6 +134,28 @@ Google introduced tiered AI plans with cloud storage integration, allowing users
 
 - **TPU 8t and TPU 8i**: New TPU generations supporting Gemini model training and inference
 - Technical deep dive on TPU architecture improvements for multimodal workloads
+
+## Model Cards (Google DeepMind)
+
+Google DeepMind publishes structured model cards for all Gemini models at [deepmind.google/models/model-cards](https://deepmind.google/models/model-cards/).
+
+### Gemini 2.x Model Cards
+
+| Model | Updated | Model Card |
+|-------|---------|------------|
+| Gemini 2.5 Pro | 2025-05-14 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini_2_5_Pro_Model_Card.pdf) |
+| Gemini 2.5 Flash | 2025-06-20 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.5-Flash-Model-Card.pdf) |
+| Gemini 2.5 Flash Lite | 2025-06-27 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.5-Flash-Lite-Model-Card.pdf) |
+| Gemini 2.0 Flash | 2025-02-05 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.0-Flash-Model-Card.pdf) |
+| Gemini 2.0 Flash-Lite | 2025-02-05 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.0-Flash-Lite-Model-Card.pdf) |
+| Gemini 2.0 Pro | 2025-03-28 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2.0-Pro-Model-Card.pdf) (experimental only) |
+| Gemini 1.5 Pro | 2025-05-14 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini_1_5_Pro_Model_Card.pdf) |
+| Gemini 1.5 Flash | 2025-05-14 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini_1_5_Flash_Model_Card.pdf) |
+| Gemini Robotics On-Device | 2025-07-01 | [PDF](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-Robotics-On-Device-Model-Card.pdf) |
+
+> **Note**: As of 2026-06-10, most Gemini 2.x model card PDFs return NoSuchKey from the GCS bucket. Only the Gemini Robotics On-Device card (412KB) is confirmed accessible. Model cards were previously hosted on modelcards.withgoogle.com.
+
+See also: [[concepts/model-cards-system-cards]] for analysis framework on reading model cards.
 
 ## Related Models
 - [[entities/gemini]]

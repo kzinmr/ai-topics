@@ -94,7 +94,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 | LSTMs / GRUs | — | Missing |
 | Embeddings / Word2Vec | [[entities/embeddings]] | Entity page has an overview of embeddings |
 | Transformer (Encoder-Decoder) | [[concepts/transformer-architecture]] | Covered |
-| Decoder-Only Transformers | [[concepts/decoder-only-gpt]] | Covered |
+| Decoder-Only Transformers | [[concepts/gpt/decoder-only]] | Covered |
 
 **Resource Evaluation:**
 - 🟢 **Karpathy "Let's build GPT"** — The best resource for grasping the full Transformer picture in 2 hours. Its value remains unchanged as of 2026.

@@ -10,7 +10,7 @@ created: 2026-04-14
 updated: 2026-06-08
 related:
   - "[[concepts/rlhf]]"
-  - "[[concepts/chatgpt-memory-bitter-lesson]]"
+  - "[[concepts/gpt/chatgpt-memory-bitter-lesson]]"
 sources:
   - raw/articles/2026-06-08_arjunkocher_rl-algorithm-questions.md
 ---
@@ -34,4 +34,4 @@ Reinforcement Learning in the LLM context covers policy optimization (PPO, GRPO,
 ## Related Pages
 
 - [[concepts/reward-hacking]] — Reward hacking vulnerabilities in RL training
-- [[concepts/chatgpt-memory-bitter-lesson]] — The Bitter Lesson applied to RL
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — The Bitter Lesson applied to RL

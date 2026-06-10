@@ -327,9 +327,9 @@
 - [[entities/google-adk]] — Google Agent Development Kit (ADK) 2.0: graph-based workflow engine for multi-agent AI, GA May 2026, 20K ⭐
 - [[entities/google-antigravity]] — Google's agent-first development platform (I/O 2026). Antigravity 2.0 desktop, CLI, SDK. Managed Agents API (isolated Linux sandbox, AGENTS.md/SKILL.md customization). Optimized for Gemini 3.5 Flash.
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
-- [[entities/gpt-5.5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
-- [[entities/gpt-5-5-instant]] — OpenAI's updated default ChatGPT model (May 2026). 52.5% fewer hallucinations, improved STEM/vision, self-correction capability.
-- [[entities/gpt-oss]] — OpenAI's first open-weight model release since GPT-2 (Apache 2.0). Two MoE variants: 120B (5.1B active) and 20B (3.6B active). Near-o4-mini reasoning with configurable effort levels, native MXFP4 quantization.
+- [[concepts/gpt/5-5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
+- [[concepts/gpt/5-5-instant]] — OpenAI's updated default ChatGPT model (May 2026). 52.5% fewer hallucinations, improved STEM/vision, self-correction capability.
+- [[concepts/gpt/oss]] — OpenAI's first open-weight model release since GPT-2 (Apache 2.0). Two MoE variants: 120B (5.1B active) and 20B (3.6B active). Near-o4-mini reasoning with configurable effort levels, native MXFP4 quantization.
 - [[entities/google]] — **Type** | AI Research & Product Company |
 - [[entities/gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series **"Writing an LLM from scratch"** — a comprehensive, iterative exploration of building and training large lan...
 - [[entities/grad]] — **X/Twitter** | @Grad62304977 |
@@ -549,6 +549,7 @@
 - [[entities/sap-business-ai-platform]] — SAP Business AI Platform — Unified enterprise AI foundation announced at SAP Sapphire 2026. SAP Knowledge Graph, Joule Studio, Autonomous Suite. Anthropic Claude as primary reasoning engine for Joule agents.
 - [[entities/sara-hooker]] — Researcher at Google DeepMind. Author of **"The Hardware Lottery"** — foundational framework on how hardware availability determines AI research direction. Advocate for cross-disciplinary hardware/software/ML collaboration.
 - [[entities/sarah-sachs]] — Engineering leader at Notion, Core AI (~50 people). Three-tier eval framework. Model Behavior Engineer role.
+- [[entities/sarah-guo]] — Sarah Guo — Founder and GP of [[entities/conviction|Conviction]]. AI investment strategy, enterprise AI, the "untrainable" concept. Substack: saranormous.
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
 - [[entities/scott-alexander]] — Scott Alexander (Scott Alexander Siskind) — Psychiatrist and blogger. Slate Star Codex / Astral Codex Ten. Author of "Meditations On Moloch" (2014), popularizing the concept of multipolar traps. Central figure in rationalist community and AI safety discourse.
 - [[entities/scott-stevenson]] — Scott Stevenson (@scottastevenson) — CEO of Spellbook Legal. Author of "High-Frequency Software" — HFT-to-software analogy predicting edge funds, front running, and AI fracking dynamics.
@@ -799,8 +800,8 @@
 
 ## Concepts (1022 pages)
 - [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — 2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc
-- [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
-- [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
+- [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
+- [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
 - [[concepts/@milksandmatcha]] — @MilksandMatcha
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
@@ -966,7 +967,7 @@
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
 - [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
 - [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling: Profiling techniques for GPU memory optimization.
-- [[concepts/ai-memory-systems-chatgpt-vs-claude-vs-cognition]] — AI Memory Systems: ChatGPT vs Claude vs Cognition design comparison
+- [[concepts/gpt/memory-systems-chatgpt-vs-claude-vs-cognition]] — AI Memory Systems: ChatGPT vs Claude vs Cognition design comparison
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design philosophy comparison: chat vs coding agents
 - [[concepts/ai-military]] — AI in Military Wargames
 - [[concepts/ai-native-product-localization]] — AI-Native Product Localization — Using AI agents for product localization. Sierra case study: 10-person/9–12 month Slack project reduced to 1 engineer/4 months. Three-phase evolution (IDE→Cloud→Batch). Context window coevolution pitfall. Dynamic string description generation.
@@ -1062,7 +1063,7 @@
 - [[concepts/autoscientist]] — AutoScientist — Adaption's AI tool for automated frontier model training. Trains agents to make incremental improvements to training pipelines.
 - [[concepts/autotts]] — AutoTTS — Agent-discovered test-time scaling. Claude Code iteratively discovers TTS algorithms. 70% token reduction vs self-consistency. UMD/UVA/Google/Meta research (May 2026).
 - [[concepts/aws-agent-toolkit]] — AWS Agent Toolkit — Production-ready suite (May 2026) for AI coding agents on AWS: 40+ agent skills, managed MCP server (GA), 3 plugins (Core, Data Analytics, Agents). Successor to AWS Labs.
-- [[concepts/aws-openai-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership — OpenAI models on Bedrock, Codex on Bedrock, Bedrock Managed Agents (all limited preview, May 2026). Enterprise-grade security + AWS commitments.
+- [[concepts/gpt/aws-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership — OpenAI models on Bedrock, Codex on Bedrock, Bedrock Managed Agents (all limited preview, May 2026). Enterprise-grade security + AWS commitments.
 - [[concepts/axolotl-fine-tuning-framework]] — Axolotl Fine-Tuning Framework
 - [[concepts/axpo]] — AXPO (Agent eXplorative Policy Optimization) — NVIDIA/KAIST RL method for multimodal agentic reasoning. Fixes Thinking-Acting Gap via tool-call resampling. 8B surpasses 32B Base on Pass@4.
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
@@ -1105,12 +1106,12 @@
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
 - [[concepts/chartqa]] — ChartQA — Chart understanding QA benchmark. Real charts sourced from Statista/Pew/OECD. 32.7K QA pairs. Noisy test data is a problem.
 - [[concepts/chatferry]] — ChatFerry — TypeScript CLI for coding agents to prompt ChatGPT/Claude through browser sessions without API keys. Uses Playwright + Chromium, daemon with 3 concurrent prompts per provider, markdown exports. Created by [[entities/shloked]].
-- [[concepts/chatgpt-app-design-patterns]] — ChatGPT App Design Patterns — UX patterns for great ChatGPT apps: streaming, tool use visualization, error handling. 15 practical lessons from Alpic. GPT-5.4 frontend design with canvas.
-- [[concepts/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming Memory System — Async consolidation pipeline (3-tier: Buffer/Consolidation Engine/Long-Term Index), knowledge graph, temporal decay, 73% hallucination reduction
-- [[concepts/chatgpt-dreaming]] — ChatGPT Dreaming (Memory Synthesis) — OpenAI's background memory system (Dreaming V3, June 2026). Evolution: Saved Memories (Apr 2024) → Dreaming V0 (Apr 2025) → Dreaming V3 standalone (Jun 2026). Compute-efficient architecture for hundreds of millions of users. Three eval objectives: context carry-forward, preference following, temporal currency.
-- [[concepts/chatgpt-images-2.0]] — ChatGPT Images 2.0: OpenAI's second-generation image generation feature (GPT Image 2).
-- [[concepts/chatgpt-intent-router]] — ChatGPT Intent Router — OpenAI's planned biggest-ever overhaul (June 2026): shift from chatbot to "intent router" that understands user intent and routes to the right model/tool/app/agent. Part of product reorganization under Thibault Sottiaux ahead of IPO.
-- [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
+- [[concepts/gpt/chatgpt-app-design-patterns]] — ChatGPT App Design Patterns — UX patterns for great ChatGPT apps: streaming, tool use visualization, error handling. 15 practical lessons from Alpic. GPT-5.4 frontend design with canvas.
+- [[concepts/gpt/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming Memory System — Async consolidation pipeline (3-tier: Buffer/Consolidation Engine/Long-Term Index), knowledge graph, temporal decay, 73% hallucination reduction
+- [[concepts/gpt/chatgpt-dreaming]] — ChatGPT Dreaming (Memory Synthesis) — OpenAI's background memory system (Dreaming V3, June 2026). Evolution: Saved Memories (Apr 2024) → Dreaming V0 (Apr 2025) → Dreaming V3 standalone (Jun 2026). Compute-efficient architecture for hundreds of millions of users. Three eval objectives: context carry-forward, preference following, temporal currency.
+- [[concepts/gpt/chatgpt-images-2-0]] — ChatGPT Images 2.0: OpenAI's second-generation image generation feature (GPT Image 2).
+- [[concepts/gpt/chatgpt-intent-router]] — ChatGPT Intent Router — OpenAI's planned biggest-ever overhaul (June 2026): shift from chatbot to "intent router" that understands user intent and routes to the right model/tool/app/agent. Part of product reorganization under Thibault Sottiaux ahead of IPO.
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
 - [[concepts/chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns: Chief of Staff workflow patterns using AI agents.
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
 - [[concepts/china-openclaw-agentic-boom]] — The explosive spread of OpenClaw in China in early 2026. Structural transformation driven by low-cost APIs, the DeepSeek effect, and government subsidies. 5 cloud providers competing simultaneously, 135K exposure + 42K auth bypass security crisis, installation market on Taobao/Xianyu at RMB 50-700, Shenzhen OPC subsidies up to $1.4M.→ [[entities/openclaw]], [[concepts/china-agentic-coding-sprint]]
@@ -1173,7 +1174,7 @@
 - [[concepts/codex-goal]] — Codex /goal Command — OpenAI's built-in Ralph loop (Codex CLI v0.128.0). Goals vs Skills distinction, "three prompts" heuristic from Every guide. Persisted goal with runtime continuation, model-side audit, TUI controls. Turns Codex into hours-long autonomous agent.- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
 - [[concepts/codex-knowledge-work]] — Codex for Knowledge Work — OpenAI's expansion of Codex from software development to general knowledge workers. Delegate/Collaborate modes, /goal persistent objectives, Goals vs Skills framework, Five Levels of Codex use, mobile steering via ChatGPT app, security/safety. Source: Every guide by Katie Parrott (May 2026).
 - [[concepts/codex-prompting]] — Prompt design patterns for Codex. Bias for Action, meta-prompting, standard system prompt structure, anti-patterns. Based on official OpenAI Cookbook guidance.
-- [[concepts/codex-safety-at-openai]] — Codex Safety at OpenAI
+- [[concepts/gpt/codex-safety]] — Codex Safety at OpenAI
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/coding-agents]] — Coding Agents
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — design to turn Devin into a data analysis agent
@@ -1236,8 +1237,8 @@
 - [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + Postgres for Agent Workflows: AI agent workflow foundation integrating filesystem and PostgreSQL.
 - [[concepts/death-of-browser]] — Death of the Browser: Web access paradigm shift in the AI agent era
 - [[concepts/decision-centric-architecture]] — Decision-Centric Architecture — Software design paradigm modeling enterprises around decisions (Data+Logic+Action+Security). Palantir Ontology origin. Complements [[concepts/harness-engineering]].
-- [[concepts/decoder-only-gpt-architecture]] — Decoder-Only GPT Architecture
-- [[concepts/decoder-only-gpt]] — Decoder-Only GPT Architecture
+- [[concepts/gpt/decoder-only-architecture]] — Decoder-Only GPT Architecture
+- [[concepts/gpt/decoder-only]] — Decoder-Only GPT Architecture
 - [[concepts/deep-agents-runtime]] — Deep Agents Runtime: Production execution foundation for deep agents (durable execution, memory, multi-agent).
 - [[concepts/deep-agents]] — Deep Agents: Autonomous AI agents combining multiple architecture patterns.
 - [[concepts/deep-learning]] — Deep Learning — Neural network-based machine learning paradigm
@@ -1358,6 +1359,7 @@
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 - [[concepts/fused-kernels]] — Fused Kernels — GPU kernel fusion techniques eliminating intermediate memory allocations for faster inference/training.
+- [[concepts/gemma-family]] — Gemma Model Family — Google DeepMind's open model family (Apache 2.0). 13 model cards: Gemma 1–4, CodeGemma, PaliGemma 1–2, ShieldGemma 1–2, RecurrentGemma, EmbeddingGemma, FunctionGemma, Gemma 3n. Derived from Gemini research.
 - [[concepts/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
 - [[concepts/gemini-3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
 - [[concepts/gemini-managed-agents]] — Gemini Managed Agents — Google's hosted agent runtime API (May 2026). Single API call provisions sandboxed Linux environment, runs Antigravity agent loop (code+browser+shell), streaming, multi-turn with auto context compaction at 135K tokens, custom agent persistence and sharing.
@@ -1385,13 +1387,13 @@
 - [[concepts/google-photo-scanning-ai]] — Google Photo Scanning AI
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 - [[concepts/ai-benchmarks/gpqa]] — GPQA — Graduate-level Google-proof Q&A. 448 questions in biology/physics/chemistry (198 in Diamond set). PhD experts 65-74%, non-experts 34%. Frontier models saturating at ~94%.
-- [[concepts/gpt-5.5-instant]] — GPT-5.5 Instant
-- [[concepts/gpt-5.5-spud]] — GPT-5.5 "Spud" — OpenAI internal model. Post-training of GPT-5.5 class. Pre-training completed March 2026.
-- [[concepts/gpt-5.5]] — GPT-5.5
-- [[concepts/gpt-model-milestones]] — GPT Model Milestones
-- [[concepts/gpt-models]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
-- [[concepts/gpt-realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
-- [[concepts/gpt-rosalind]] — GPT-Rosalind — OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment. June 2026 updated with LifeSciBench, MedChemBench, GeneBench, LabWorkBench + Life Sciences/NGS plugins.
+- [[concepts/gpt/5-5-instant]] — GPT-5.5 Instant
+- [[concepts/gpt/5-5-spud]] — GPT-5.5 "Spud" — OpenAI internal model. Post-training of GPT-5.5 class. Pre-training completed March 2026.
+- [[concepts/gpt/5-5]] — GPT-5.5
+- [[concepts/gpt/milestones]] — GPT Model Milestones
+- [[concepts/gpt/index]] — GPT Models — Evolution of OpenAI's Generative Pre-trained Transformer model family from GPT-1 through GPT-5.5.
+- [[concepts/gpt/realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
+- [[concepts/gpt/rosalind]] — GPT-Rosalind — OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment. June 2026 updated with LifeSciBench, MedChemBench, GeneBench, LabWorkBench + Life Sciences/NGS plugins.
 - [[concepts/gpu-cloud-rankings]] — GPU Cloud Infrastructure Rankings (ClusterMAX). SemiAnalysis rating system for 209 Neoclouds across 10 criteria. CoreWeave Platinum, Nebius/Oracle/Azure/Fluidstack/Crusoe Gold. Slurm-on-K8s, GB200 NVL72 reliability, container security.
 - [[concepts/gpu-cluster-tco-goodput]] — GPU Cluster TCO & Goodput Framework. SemiAnalysis methodology decomposing TCO into 8 line items (GPUs, Storage, Networking, Control Plane, Support, Goodput Expense, Setup, Debugging). TorchFT vs AWS Checkpointless vs TorchPass fault-tolerance comparison.
 - [[concepts/gpu-mode]] — GPU MODE — Largest GPU programming community (gpumode.com), co-founded by Mark Saroufim. 500K+ kernel competition submissions, Project Popcorn, KernelBook dataset, KernelGuard anti-cheat system. AI agents became primary competitors Jan 2026.
@@ -1597,18 +1599,18 @@
 - [[concepts/open-swe]] — Open SWE: LangChain's open-source internal coding agent framework. Based on Deep Agents + LangGraph. Implements the convergent architecture of Stripe Minions/Ramp Inspect/Coinbase Cloudbot under MIT license. AGENTS.md, sandboxes, Slack/Linear/GitHub integration.
 - [[concepts/open-vs-closed-model-gap]] — Open vs. closed model capability gap measured via ECI. 4-month time lag (Jan–May 2026), 8 ECI point gap. Chinese-dominated open-weight frontier (Kimi K2.6, GLM-5.1, DeepSeek-V4 Pro). Business implications for enterprise vs. developer trade-offs.
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
-- [[concepts/openai-agents-sdk]] — OpenAI Agents SDK (v0.14.0) — OpenAI's official SDK for building AI agent applications
-- [[concepts/openai-astral-acquisition]] — "OpenAI Acquires Astral — Codex Toolchain Strategy"
-- [[concepts/openai-codex-superapp]] — OpenAI Codex Superapp — OpenAI's unified coding agent platform
-- [[concepts/openai-deployment-safety-hub]] — OpenAI Deployment Safety Hub (deploymentsafety.openai.com): Central index for all 19 OpenAI system cards (Feb 2025–Jun 2026). Preparedness Framework evaluations across Bio/Chem, Cybersecurity, AI Self-Improvement. Key trends: safety level escalation (first Cyber High with GPT-5.3-Codex), agentic model proliferation (5 Codex cards), domain-specific deployment (GPT-Rosalind-5.5).
-- [[concepts/openai-frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
-- [[concepts/openai-gpt-realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
-- [[concepts/openai-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
-- [[concepts/o3-o4-mini-system-card]] — o3 and o4-mini System Card (Apr 2025): First Preparedness Framework v2 assessment. No High threshold in any category. Key findings: reward hacking detected by METR (1% of attempts), time horizon ~1.5h, bio/chem near-threshold, CTF 89%/68%/59% (high-school/collegiate/professional). Last standalone o-series card before GPT-5 unification.
-- [[concepts/openai-realtime-api]] — OpenAI Realtime API — WebSocket-based streaming voice/text API for low-latency agents. Function calling, session management, VAD tuning. Perplexity voice search case study.
-- [[concepts/openai-responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
-- [[concepts/openai-symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
-- [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
+- [[concepts/gpt/agents-sdk]] — OpenAI Agents SDK (v0.14.0) — OpenAI's official SDK for building AI agent applications
+- [[concepts/gpt/astral-acquisition]] — "OpenAI Acquires Astral — Codex Toolchain Strategy"
+- [[concepts/gpt/codex-superapp]] — OpenAI Codex Superapp — OpenAI's unified coding agent platform
+- [[concepts/gpt/deployment-safety-hub]] — OpenAI Deployment Safety Hub (deploymentsafety.openai.com): Central index for all 19 OpenAI system cards (Feb 2025–Jun 2026). Preparedness Framework evaluations across Bio/Chem, Cybersecurity, AI Self-Improvement. Key trends: safety level escalation (first Cyber High with GPT-5.3-Codex), agentic model proliferation (5 Codex cards), domain-specific deployment (GPT-Rosalind-5.5).
+- [[concepts/gpt/frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
+- [[concepts/gpt/realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
+- [[concepts/gpt/o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
+- [[concepts/gpt/o3-o4-mini-system-card]] — o3 and o4-mini System Card (Apr 2025): First Preparedness Framework v2 assessment. No High threshold in any category. Key findings: reward hacking detected by METR (1% of attempts), time horizon ~1.5h, bio/chem near-threshold, CTF 89%/68%/59% (high-school/collegiate/professional). Last standalone o-series card before GPT-5 unification.
+- [[concepts/gpt/realtime-api]] — OpenAI Realtime API — WebSocket-based streaming voice/text API for low-latency agents. Function calling, session management, VAD tuning. Perplexity voice search case study.
+- [[concepts/gpt/responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
+- [[concepts/gpt/symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
+- [[concepts/gpt/tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
 - [[concepts/openclaw-architecture]] — OpenClaw architecture details
 - [[concepts/openclaw-ecosystem]] — OpenClaw Ecosystem — Peter Hayes' open-source AI agent platform ecosystem: gateway, skills library, tool server, community-contributed agents and integrations.
 - [[concepts/openenv]] — Protocol/interoperability layer for agentic RL environments. 9-org committee (HF, Meta-PyTorch, Unsloth, Modal, NVIDIA, etc.). Gymnasium-style API, Docker packaging, MCP support. GitHub: huggingface/OpenEnv.
@@ -1799,6 +1801,7 @@
 - [[concepts/turbopuffer-rank-by-attribute]] — TurboPuffer — Rank by Attribute — Vector database feature for ranking results by metadata attributes.
 - [[concepts/turing-completeness-emergence]] — Emergent Turing Completeness: Gwern's insight that TC inevitably emerges in sufficiently complex systems. Catalog of TC in "non-computational" systems: CSS, Minecraft, MTG. Weird Machines, Unseeing, Greenspun's Tenth Rule. Includes extension to [[concepts/ambient-agency|Ambient Agency]]. Deep implications for security and AI safety.
 - [[concepts/typed-rlm]] — λ-RLM (Typed Recursive Reasoning)
+- [[concepts/the-untrainable]] — The Untrainable — Sarah Guo's framework: frontier work whose correctness exists only in private data, walled off from external evaluation. 2x2 of legible/illegible work × saturated/frontier tasks. Absorption frontier, permission & accountability as bottlenecks, not intelligence.
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/ungrounded-meaning]] — "Ungrounded Meaning"
 - [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].

@@ -83,7 +83,7 @@ In his essay "The Gentle Singularity" (June 2025), CEO [[entities/sam-altman]] d
 
 ### Other Products
 - **ChatGPT** — Conversational AI interface
-- **GPT Image 2 (ChatGPT Images 2.0)** — Second-generation image generation integrated into ChatGPT. Includes **Thinking mode** with web search mid-generation. 2K resolution with legible non-Latin scripts. Hit #1 on all Image Arena leaderboards; beat Google's Nano Banana models by +242 points (largest gap ever) in Text-to-Image. See [[concepts/chatgpt-images-2.0]] for full details.
+- **GPT Image 2 (ChatGPT Images 2.0)** — Second-generation image generation integrated into ChatGPT. Includes **Thinking mode** with web search mid-generation. 2K resolution with legible non-Latin scripts. Hit #1 on all Image Arena leaderboards; beat Google's Nano Banana models by +242 points (largest gap ever) in Text-to-Image. See [[concepts/gpt/chatgpt-images-2-0]] for full details.
 - **ChatGPT for Clinicians** (Apr 2026) — Free tool for verified US physicians, NPs, PAs, pharmacists. Includes cited medical sources and HIPAA-compliant options.
 - **DALL-E** — Text-to-image generation
 - **Whisper** — Speech recognition
@@ -217,7 +217,7 @@ On June 4, 2026, OpenAI launched **Dreaming V3**, a significantly improved memor
 - **Reviewability**: Users can review memory summaries, add/update information, and instruct ChatGPT on what topics to surface
 - **Rollout**: Plus and Pro users (US), expanding to additional countries and Free/Go users
 
-See [[concepts/chatgpt-dreaming]] for full details.
+See [[concepts/gpt/chatgpt-dreaming]] for full details.
 
 ### Daybreak — Cybersecurity Initiative (May 2026)
 
@@ -282,7 +282,7 @@ OpenAI's GPT-5.5+ (estimated GPT-5.6) solved the 1946 Erdős plane unit distance
 
 OpenAI launched a comprehensive biodefense action plan on June 4, 2026, aimed at building AI-powered biological resilience. The plan centers on two key initiatives:
 
-- **GPT-Rosalind** (Apr 2026) — Frontier reasoning model purpose-built for biology, drug discovery, and translational medicine research. See [[concepts/gpt-rosalind]] for full details.
+- **GPT-Rosalind** (Apr 2026) — Frontier reasoning model purpose-built for biology, drug discovery, and translational medicine research. See [[concepts/gpt/rosalind]] for full details.
 - **Rosalind Biodefense** (May 2026) — Trusted developer program providing advanced AI capabilities for biodefense and pandemic preparedness. See [[concepts/trusted-access-biodefense]] for program details.
 
 **Core thesis**: The same AI capabilities advancing biological science also have implications for biological security. OpenAI's approach is to equip responsible defenders with advanced capabilities while developing safeguards, evidence, and governance for safe deployment.
@@ -318,12 +318,12 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 > — **Rachael Burns**, Staff Engineer & AI Tech Lead, Oscar Health
 
 ## Related Concepts
-- [[concepts/openai-agents-sdk]] — OpenAI's agent development framework
-- [[concepts/openai-workspace-agents]] — Codex-powered enterprise shared agents
-- [[concepts/gpt-5.5]] — First fully retrained base model since GPT-4.5
+- [[concepts/gpt/agents-sdk]] — OpenAI's agent development framework
+- [[concepts/gpt/workspace-agents]] — Codex-powered enterprise shared agents
+- [[concepts/gpt/5-5]] — First fully retrained base model since GPT-4.5
 - [[concepts/harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
 - [[concepts/sandbox]] — AI agent sandbox isolation technologies
-- [[concepts/chatgpt-images-2.0]] — GPT Image 2 image generation
+- [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2 image generation
 - [[concepts/nano-banana-2]] — Google's NB2 image generation competitor
 
 ### OpenAI-related articles
@@ -351,7 +351,7 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 
 ### TanStack npm Supply Chain Attack — Mini Shai-Hulud (May 2026)
 
-OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack targeting the npm ecosystem (May 2026). Hackers published **84 malicious versions** of TanStack packages during a **six-minute window**; a researcher detected the attack within 20 minutes. The malware was designed to steal credentials from infected computers and **self-propagate** to other systems. Two employee corporate devices downloaded a malicious TanStack npm package, resulting in unauthorized access to internal source code repositories and exfiltration of limited credential material including code-signing certificates for iOS, macOS, Windows, and Android products. No customer data or production systems were compromised. All certificates were rotated; macOS users must update apps by June 12, 2026. See [[concepts/openai-tanstack-supply-chain-2026]] for full details.
+OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack targeting the npm ecosystem (May 2026). Hackers published **84 malicious versions** of TanStack packages during a **six-minute window**; a researcher detected the attack within 20 minutes. The malware was designed to steal credentials from infected computers and **self-propagate** to other systems. Two employee corporate devices downloaded a malicious TanStack npm package, resulting in unauthorized access to internal source code repositories and exfiltration of limited credential material including code-signing certificates for iOS, macOS, Windows, and Android products. No customer data or production systems were compromised. All certificates were rotated; macOS users must update apps by June 12, 2026. See [[concepts/gpt/tanstack-supply-chain-2026]] for full details.
 
 ## OpenAI Foundation
 

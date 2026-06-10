@@ -40,13 +40,13 @@ sources:
   - raw/concepts/openai-codex-superapp.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 related:
-  - "[[concepts/openai-codex-superapp]]"
+  - "[[concepts/gpt/codex-superapp]]"
   - "[[entities/claude-code]]"
   - "[[entities/opencode]]"
   - "[[entities/pi]]"
   - "[[entities/openai]]"
   - "[[comparisons/agent-harnesses]]"
-  - "[[concepts/gpt-models]]"
+  - "[[concepts/gpt/index]]"
 ---
 
 # OpenAI Codex (AI coding agent)

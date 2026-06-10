@@ -70,7 +70,7 @@ This represents a new class of "design-to-code" routines where the design review
 ## Related
 
 - [[concepts/claude-code-best-practices]] — Claude Code best practices and patterns
-- [[concepts/openai-codex-superapp]] — OpenAI's competing platform
+- [[concepts/gpt/codex-superapp]] — OpenAI's competing platform
 - [[concepts/harness-engineering]] — Agent execution environment design
 - [[entities/anthropic]] — Anthropic company context
 

@@ -110,7 +110,7 @@
 ## 2026-05-13 08:15 UTC — RLVR concept page + o1/o3 → GPT-5 consolidated timeline + MCP practical origins (3 new pages created)
 
 - **📄 New concept pages created**: `[[concepts/rlvr]]` — Comprehensive RLVR concept page. Standard pairing with GRPO, test-time-scaling connection, verifier design space (3 types), ART·E $80 case study, o1→o3 10x RL compute scaling, comparison with RLHF/DPO. 27KB research base.
-- **📄 New concept pages created**: `[[concepts/openai-o-series-gpt5-unification]]` — Complete timeline: o1 (Sep 2024) → o3 (Dec 2024) → o3 cancelled on Altman roadmap shift (Feb 2025) → GPT-5 unification (Aug 2025). GPT-5 3-component architecture, strategic rationale (model picker complexity + DeepSeek R1 competition).
+- **📄 New concept pages created**: `[[concepts/gpt/o-series-gpt5-unification]]` — Complete timeline: o1 (Sep 2024) → o3 (Dec 2024) → o3 cancelled on Altman roadmap shift (Feb 2025) → GPT-5 unification (Aug 2025). GPT-5 3-component architecture, strategic rationale (model picker complexity + DeepSeek R1 competition).
 - **📄 New concept pages created**: `[[concepts/mcp]]` — Comprehensive MCP concept page. Two-layer origin story: David Soria Parra's personal frustration (copy-paste hell) and John Welsh's organizational chaos (integration chaos). M×N problem, 3 primitives, industry timeline.
 - **🏷️ SCHEMA updated**: `rlvr`, `test-time-scaling` tag categories added to Techniques. 
 - **📋 Index updated**: 3 entries added,, stale `mcp-protocol` + `model-context-protocol-mcp` consolidated replacement. 

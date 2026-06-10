@@ -37,20 +37,20 @@ OpenAI shipped four major products in a single week, marking one of the most agg
 - **2K resolution** with legible text across non-Latin scripts
 - **Thinking mode** with live web search mid-generation
 - Hit **#1 on all Image Arena leaderboards**; beat Google's Nano Banana models by +242 points (largest gap ever recorded) on Text-to-Image
-- See: [[concepts/chatgpt-images-2.0]]
+- See: [[concepts/gpt/chatgpt-images-2-0]]
 
 ### 2. GPT-5.5
 - **First fully retrained base model since GPT-4.5**
 - Designed for multi-step work: planning, tool use, self-checking
 - Scored **82.7% on Terminal-Bench 2.0**
 - Key unlock for agent deployment — can carry tasks through to completion
-- See: [[concepts/gpt-5.5]]
+- See: [[concepts/gpt/5-5]]
 
 ### 3. Workspace Agents
 - Codex-powered shared agents for **Business/Enterprise** plans
 - Integrates Slack, Salesforce, Notion, Google Drive
 - Features persistent memory and role-based governance
-- See: [[concepts/openai-workspace-agents]]
+- See: [[concepts/gpt/workspace-agents]]
 
 ### 4. ChatGPT for Clinicians
 - Free tool for verified US physicians, NPs, PAs, and pharmacists
@@ -97,7 +97,7 @@ SpaceX has deepened its partnership with **Cursor**, the AI-native code editor, 
 
 - [[entities/openai]] — OpenAI company entity page
 - [[entities/anthropic]] — Anthropic company entity page
-- [[concepts/chatgpt-images-2.0]] — Deep dive on ChatGPT Images 2.0
-- [[concepts/gpt-5.5]] — Deep dive on GPT-5.5
-- [[concepts/openai-workspace-agents]] — Deep dive on Workspace Agents
+- [[concepts/gpt/chatgpt-images-2-0]] — Deep dive on ChatGPT Images 2.0
+- [[concepts/gpt/5-5]] — Deep dive on GPT-5.5
+- [[concepts/gpt/workspace-agents]] — Deep dive on Workspace Agents
 - [[cursor-ide]] — Cursor IDE and its industry role

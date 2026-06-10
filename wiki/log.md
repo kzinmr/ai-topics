@@ -1,5 +1,14 @@
 ---
 
+## [2026-06-10] Sarah Guo "The Untrainable" article ingestion
+
+**Action**: Ingested Sarah Guo's essay "The Untrainable" (2026-06-10) from saranormous.substack.com. Created entity page for Sarah Guo (Conviction.com founder, AI investor) and concept page for "The Untrainable" framework (legible vs illegible work, absorption frontier, private ground truth, permission & accountability).
+
+**Raw article saved**: `raw/articles/2026-06-10-the-untrainable-sarah-guo.md`
+**Pages created**: `entities/sarah-guo.md` (entity), `concepts/the-untrainable.md` (concept)
+**Tags used**: `person`, `vc`, `investor`, `ai-investment`, `founder`, `conviction`, `ai-moat`, `private-data`, `evaluation`, `enterprise-ai`, `absorption-frontier`, `legible-work`
+**Source**: https://saranormous.substack.com/p/the-untrainable
+
 ## [2026-06-10] Model Cards / System Cards concept page + Rob Hoeijmakers entity
 
 **Action**: Ingested Rob Hoeijmakers' article "Model Cards, System Cards and What They're Quietly Becoming" (2025-08-05). Created concept page with 7 analysis perspectives for system card / model card review: capability-disclaimer gap, benchmark selection bias, safety layer architecture, absence as signal, regulatory alignment, evolution tracking, political nature.
@@ -1041,7 +1050,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 ## 2026-06-04 active-crawl | 4 topics researched: GPT-Rosalind, Augment Cosmos, Frontier Safety Blueprint, Stack Benchmarking
 
 - **Upstream:** Active crawl cron job — blogwatcher DB scan (80 articles, 28 blogs) + HN search
-- **New concept page:** [[concepts/gpt-rosalind]] — OpenAI's life sciences research model series built on GPT-5.5. MedChemBench (27.5%), GeneBench (21.6%), LabWorkBench (63.2%). LifeSciBench evaluation framework. Life Sciences Research + NGS Analysis plugins via Codex. Novo Nordisk partnership. Rosalind Biodefense application.
+- **New concept page:** [[concepts/gpt/rosalind]] — OpenAI's life sciences research model series built on GPT-5.5. MedChemBench (27.5%), GeneBench (21.6%), LabWorkBench (63.2%). LifeSciBench evaluation framework. Life Sciences Research + NGS Analysis plugins via Codex. Novo Nordisk partnership. Rosalind Biodefense application.
 - **Enriched entity page:** [[entities/augment]] — Added Cosmos Platform section (June 2026 launch). Agentic SDLC, teams of agents, MCP support, natural language configuration, shared filesystem/memory. $252M total funding. Expanded company facts.
 - **New concept page:** [[concepts/frontier-safety-blueprint]] — OpenAI's June 2026 democratic governance proposal. CAISI expansion, mandatory frontier evaluations. HN: 15 points, criticism as regulatory capture, no mention of open source.
 - **New concept page:** [[concepts/stack-benchmarking]] — Ramp's custom accounting benchmark for Ramp Stack agentic accounting assistant. Frontier model evaluation, skill ablation, memory architecture. Published June 3, 2026 by Ryan Stevens.
@@ -1056,10 +1065,10 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 
 - **Source:** OpenAI Blog — "Introducing new capabilities to GPT-Rosalind" (June 4, 2026). https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind
 - **New raw article:** [[raw/articles/2026-06-04_openai_gpt-rosalind-new-capabilities]] — Full article content, benchmark data, case studies
-- **New concept page:** [[concepts/gpt-rosalind]] — GPT-Rosalind: OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment.
+- **New concept page:** [[concepts/gpt/rosalind]] — GPT-Rosalind: OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment.
 - **Key facts:** LifeSciBench (6 workflow areas), MedChemBench (27.5% vs GPT-5.5 25.1%), GeneBench (21.6% vs 20.4%), LabWorkBench (63.2% vs 55.8%). Consistent token savings (5-31%). Life Sciences Research + NGS Analysis plugins via Codex. Novo Nordisk partnership. Rosalind Biodefense.
 - **HN reaction (April 2026 launch):** 102 points, 30 comments. Criticism: gated access, naming controversy (Franklin), benchmark selectivity vs Anthropic. Defense: LLMs already used in real research.
-- **Cross-references:** [[entities/openai]], [[entities/gpt-5.5]]
+- **Cross-references:** [[entities/openai]], [[concepts/gpt/5-5]]
 - **index.md:** Added concept entry, updated header counts (2358 pages, 1718 indexed, 1559 concepts)
 
 ---
@@ -3324,7 +3333,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[concepts/evals-for-ai-agents]] — Agent evaluation guide (984 JP chars removed)
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design (935 JP chars removed)
 - [[comparisons/agent-harnesses]] — 9-harness comparison (1024 JP chars removed)
-- [[concepts/openai-symphony]] — OpenAI Symphony page (993 JP chars removed)
+- [[concepts/gpt/symphony]] — OpenAI Symphony page (993 JP chars removed)
 - [[concepts/sid-1]] — SID-1 agentic retrieval model (1014 JP chars removed)
 - [[concepts/mcp]] — Model Context Protocol (1000 JP chars removed)
 
@@ -4428,7 +4437,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 
 ### Pages Added to Index
 - **Entities**: [[entities/aaron-levie]], [[entities/box-com]], [[entities/marc-andreessen]]
-- **Concepts**: [[concepts/swe-bench]], [[concepts/mismeasure-of-open-source]], [[concepts/openai-symphony]], [[concepts/fsdp-qlora]], [[concepts/personal-superintelligence]], [[concepts/gnu-ai-reimplementations]], [[concepts/model-context-protocol-mcp]], [[concepts/gpt-models]], [[concepts/synthetic-data]], [[concepts/speech-audio-asr-tts-voice]], [[concepts/stanford-cs336-language-modeling-from-scratch]], [[concepts/subagents]], [[concepts/gemini]], [[concepts/coala]], [[concepts/cognitive-cost-of-agents]], [[concepts/reasoning-compression]], [[concepts/memory-systems-design-patterns]]
+- **Concepts**: [[concepts/swe-bench]], [[concepts/mismeasure-of-open-source]], [[concepts/gpt/symphony]], [[concepts/fsdp-qlora]], [[concepts/personal-superintelligence]], [[concepts/gnu-ai-reimplementations]], [[concepts/model-context-protocol-mcp]], [[concepts/gpt/index]], [[concepts/synthetic-data]], [[concepts/speech-audio-asr-tts-voice]], [[concepts/stanford-cs336-language-modeling-from-scratch]], [[concepts/subagents]], [[concepts/gemini]], [[concepts/coala]], [[concepts/cognitive-cost-of-agents]], [[concepts/reasoning-compression]], [[concepts/memory-systems-design-patterns]]
 - All pages verified: >800 bytes, non-TODO, real content
 - Index structure: clean (validate_index.py ✅)
 
@@ -4940,7 +4949,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 ### Concept Pages Created
 - [[concepts/cursor-composer-2-5]] — Agentic coding model built on Kimi K2.5. Targeted RL, 25× synthetic data, reward hacking, Sharded Muon optimizer
 - [[concepts/nvidia-sana-wm]] — 2.6B open-source world model (Apache 2.0). Hybrid GDN+softmax, dual-branch camera. 36× throughput vs LingBot-World
-- [[concepts/openai-gpt-realtime-2]] — Three realtime voice models: reasoning voice, live translation (70+→13 languages), streaming Whisper
+- [[concepts/gpt/realtime-2]] — Three realtime voice models: reasoning voice, live translation (70+→13 languages), streaming Whisper
 
 ### index.md
 - Updated Entities section: gemini entry now reflects I/O 2026 announcements
@@ -5495,7 +5504,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - [[entities/perceptron-ai]] — Physical AI research lab, Perceptron Mk1 model
 - [[concepts/perceptron-mk1]] — Video understanding + embodied reasoning model
 - [[entities/sap-business-ai-platform]] — SAP's unified enterprise AI platform
-- [[concepts/aws-openai-bedrock-partnership]] — OpenAI models on Bedrock, Bedrock Managed Agents
+- [[concepts/gpt/aws-bedrock-partnership]] — OpenAI models on Bedrock, Bedrock Managed Agents
 - [[concepts/aws-agent-toolkit]] — 40+ agent skills, managed MCP server for AWS
 - [[concepts/google-ai-pointer]] — DeepMind's AI-enabled pointer (Magic Pointer)
 
@@ -7375,7 +7384,7 @@ Existing `entities/benjamin-clavie.md` (309 lines) already covered this comprehe
 - **Created**: `wiki/concepts/multi-agent-kernel-optimization.md` — Cursor × NVIDIA collaboration: multi-agent system optimized 235 CUDA kernels on Blackwell B200 GPUs (38% geomean speedup, 3 weeks). SOL-ExecBench, planner+worker harness architecture. Three optimization strategies: BF16 GQA, NVFP4 MoE, BF16 GEMM.
 - **Created**: `wiki/concepts/targeted-rl-textual-feedback.md` — Cursor Composer 2.5's novel RL training technique: localized on-policy distillation KL loss at specific error points in long rollouts. 25× synthetic task scaling, Sharded Muon, dual mesh HSDP.
 - **Enriched**: `wiki/entities/cursor-3.md` — Added "third era of software development" framing, release date (Apr 2, 2026), source reference. Updated to 2026-06-05.
-- **Enriched**: `wiki/entities/openai.md` — Added "Biodefense Action Plan (June 2026)" section: GPT-Rosalind, Rosalind Biodefense, action plan for AI-powered biological resilience. Cross-linked to [[concepts/gpt-rosalind]] and [[concepts/trusted-access-biodefense]].
+- **Enriched**: `wiki/entities/openai.md` — Added "Biodefense Action Plan (June 2026)" section: GPT-Rosalind, Rosalind Biodefense, action plan for AI-powered biological resilience. Cross-linked to [[concepts/gpt/rosalind]] and [[concepts/trusted-access-biodefense]].
 - **Enriched**: `wiki/entities/elevenlabs.md` — Added "ElevenCreative Flows Agent (June 2026)" section: conversational AI assistant for creative workflow pipeline, assist mode, background execution, multiplayer. Updated to 2026-06-05.
 - **Updated**: `wiki/index.md` — Added 2 concept entries, bumped concept count (947→949) and total count (2261→2263).
 ---
@@ -7403,7 +7412,7 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 
 - **ENRICHED: [[concepts/recursive-self-improvement]]** — Added Anthropic's official "When AI Builds Itself" declaration (June 2026). Engineers shipping 8x more code, 80% AI-authored code, 76% open-ended task success. Three future scenarios, dual framing (technical + valuation narrative). 692-comment HN discussion.
 - **ENRICHED: [[entities/anthropic]]** — Expanded RSI subsection with all 6 key metrics, three future scenarios, policy stance.
-- **NEW: [[concepts/chatgpt-intent-router]]** — OpenAI's planned biggest-ever ChatGPT overhaul (June 2026): shift from chatbot to "intent router." Single interface routes user intent to appropriate model/tool/app/agent. Ahead of IPO preparations under Thibault Sottiaux.
+- **NEW: [[concepts/gpt/chatgpt-intent-router]]** — OpenAI's planned biggest-ever ChatGPT overhaul (June 2026): shift from chatbot to "intent router." Single interface routes user intent to appropriate model/tool/app/agent. Ahead of IPO preparations under Thibault Sottiaux.
 - **NEW: [[concepts/sp500-ai-exclusion]]** — S&P 500 rejects accelerated entry for SpaceX ($1.75T IPO), blocking OpenAI/Anthropic. Profitability requirements upheld despite MegaCap consultation. HN #1 (1,412 pts).
 - **ENRICHED: [[entities/gary-marcus]]** — Added "AI's Black Friday" section (June 2026): $500B+ one-day market wipeout, Broadcom catalyst, South Korea rout (KOSPI -5.5%), government bailout discussions validating his "too big to fail" prediction.
 - **ENRICHED: [[entities/george-hotz]]** — Added "Our Great War is a Spiritual War" section (June 6, 2026): sovereignty vs dependence framework, 95% will choose wireheading, "a single totalizing control system is the only bad AI scenario."

@@ -2,7 +2,7 @@
 title: GPT-OSS (OpenAI Open Models)
 created: 2026-05-01
 updated: 2026-05-01
-type: entity
+type: concept
 tags:
   - model
   - open-source
@@ -67,4 +67,4 @@ OpenAI itself recommends hosted API for multimodal support or managed tools, but
 - [[concepts/mixture-of-experts]] — MoE architecture principles
 - [[concepts/local-llm]] — local deployment landscape
 - [[entities/gemma-4]] — Google's competing open model family
-- [[entities/gpt-5.5]] — OpenAI's latest proprietary model
+- [[concepts/gpt/5-5]] — OpenAI's latest proprietary model

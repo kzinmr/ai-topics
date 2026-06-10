@@ -102,7 +102,7 @@ Context Fragment Loading (just-in-time retrieval)
 
 - [[concepts/context-fragments]] — Context window fragmentation
 - [[concepts/harness-engineering]] — Extended harness design
-- [[concepts/chatgpt-memory-bitter-lesson]] — Bitter Lesson and memory
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson and memory
 - [[concepts/claude-memory]] — File-based memory (L2 implementation)
 - [[concepts/ai-agent-memory-middleware]] — Cloud-scale memory (L3 implementation)
 - [[concepts/memory-systems-design-patterns]] — Cross-cutting memory design pattern analysis

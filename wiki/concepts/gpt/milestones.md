@@ -67,6 +67,6 @@ sources:
 - **Note:** GPT-4o and GPT-4.1 retired (February 13, 2026)
 
 ## Related Pages
-- [[concepts/gpt-models]] — Full GPT model family overview
-- [[concepts/decoder-only-gpt]] — Architectural breakdown
-- [[concepts/gpt-5.5-spud]] — GPT-5.5 deep dive with benchmarks and pricing
+- [[concepts/gpt/index]] — Full GPT model family overview
+- [[concepts/gpt/decoder-only]] — Architectural breakdown
+- [[concepts/gpt/5-5-spud]] — GPT-5.5 deep dive with benchmarks and pricing

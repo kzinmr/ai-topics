@@ -96,7 +96,7 @@ See [[comparisons/agent-memory-systems-comparison]] for the full 5-system archit
 
 ## Relationship to Bitter Lesson Critique
 
-The previous ChatGPT memory system was criticized for violating [[concepts/chatgpt-memory-bitter-lesson|the Bitter Lesson]] — storing facts in a proprietary database rather than leveraging compute (larger context windows). Dreaming partially addresses this by:
+The previous ChatGPT memory system was criticized for violating [[concepts/gpt/chatgpt-memory-bitter-lesson|the Bitter Lesson]] — storing facts in a proprietary database rather than leveraging compute (larger context windows). Dreaming partially addresses this by:
 
 - **Decoupling compute from storage**: The consolidation engine uses lightweight models offline, leveraging computation to organize memory rather than relying on manual curation
 - **Temporal decay**: Automatically prunes irrelevant memories, reducing the maintenance overhead that the Bitter Lesson critique highlighted
@@ -106,8 +106,8 @@ However, Dreaming remains a **stateful, proprietary system** — it still introd
 
 ## Related
 
-- [[concepts/chatgpt-memory-bitter-lesson]] — Bitter Lesson critique of the previous system
-- [[concepts/ai-memory-systems-chatgpt-vs-claude-vs-cognition]] — Three-way comparison (stub)
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson critique of the previous system
+- [[concepts/gpt/memory-systems-chatgpt-vs-claude-vs-cognition]] — Three-way comparison (stub)
 - [[comparisons/agent-memory-systems-comparison]] — 5-system architectural comparison (OpenClaw/Claude Code/Codex/Hermes/ChatGPT)
 - [[concepts/context-compaction]] — Claude Code's context management approach
 - [[concepts/agent-memory-engineering]] — Nicolas Bustamante's memory architecture classification

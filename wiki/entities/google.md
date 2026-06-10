@@ -269,7 +269,7 @@ This "Platform + FDE" combination follows a dual approach similar to **OpenAI** 
 - [[concepts/nano-banana-2]] — Google's NB2 image generation model
 - [[concepts/alphaevolve]] — Evolutionary coding agent for algorithm discovery
 - [[entities/openai]] — Primary competitor in AI/ML
-- [[concepts/chatgpt-images-2.0]] — OpenAI's GPT Image 2
+- [[concepts/gpt/chatgpt-images-2-0]] — OpenAI's GPT Image 2
 
 ## Sources
 - [Google: The Gemini app is now on Mac](https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/) (2026-04-22) — macOS desktop app announcement
