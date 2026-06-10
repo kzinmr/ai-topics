@@ -1024,6 +1024,7 @@
 - [[concepts/anthropic-multi-agent-research]] — Anthropic Multi-Agent Research System (Claude Research): Orchestrator-Worker pattern, parallel sub-agents, memory mechanism, Tool-Testing Agent. 90.2% performance improvement over single agent, 8 prompt engineering principles, token usage explains 80% of performance variance.
 - [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict
 - [[concepts/anthropic-transparency-hub]] — Anthropic Transparency Hub: Model Report (per-model safety evaluations for 10 Claude models, ASL levels, system cards), System Trust and Reporting (1.45M banned accounts, NCMEC reporting, threat intel), and Voluntary Commitments (G7 Hiroshima, Seoul Summit, Christchurch Call, Munich Elections Accord, Thorn child safety, etc.)
+- [[concepts/anthropic-system-cards]] — Anthropic System Cards: Official model documentation for all Claude models (Claude 2 through Opus 4.8). 15 system cards indexed. Standard structure covers RSP evaluations, cyber, safeguards, agentic safety, alignment, model welfare, capabilities. Key trends: evaluation saturation, growing evaluation awareness, grader speculation.
 - [[concepts/anthropics-memory-tool-cognition-strategic-follow]] — Anthropic's Memory Tool: Cognition's strategic follow-up
 - [[concepts/anti-ai-arguments-are-conservative-arguments]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/anti-patterns-in-agentic-engineering]] — Anti-patterns in Agentic Engineering
@@ -1834,8 +1835,10 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
 
-## Comparisons (27 pages)
+## Comparisons (28 pages)
 
+- [[comparisons/claude-opus-4x-comparison]] — Claude Opus 4.6 vs 4.7 vs 4.8 System Card Comparison — Capability growth and safety evolution Feb–May 2026. RSP thresholds (AI R&D-4, CBRN-4), cyber evaluations (Cybench→ExploitBench→OSS-Fuzz), alignment trends (evaluation awareness→grader speculation). Opus 4.8: 0% misreporting rate (first model), but prompt injection robustness regressed.
+- [[comparisons/claude-mythos-preview-vs-mythos5-fable5]] — Claude Mythos Preview vs Mythos 5 & Fable 5 System Card Comparison — Evolution from single model (Preview, Apr 2026) to dual-configuration (Fable 5 + Mythos 5, Jun 2026). CB risk assessment intensifying, white-box interpretability expansion, model welfare deepening, evaluation awareness measurement refinement.
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Agent Harnesses compared across architecture, routing, and execution
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — Memory architecture comparison of 5 systems: OpenClaw/Claude Code/Codex/Hermes/ChatGPT Dreaming. File-first common philosophy vs database-backed async consolidation, vector search vs full-text search, Bustamante classification extended with Async Consolidation Pipeline type.
 - [[comparisons/openclaw-pi-hermes-state-management]] — OpenClaw, Pi, and Hermes Agent State Management — Data Flow and State Management comparison: OpenClaw as Gateway/control-plane source of truth, Pi as runtime substrate, Hermes as capability-accumulating personal agent.

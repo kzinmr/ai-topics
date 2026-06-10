@@ -7613,3 +7613,10 @@ Updated:
 - **UPDATED: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement.md]]** — Added 7 new sections: The Nature of Incremental Progress, The Narrowing Human Role, Code Quality Progress, Automated Code Review, Training Speedup Experiments, Research Judgment Steering, Scaling and Infrastructure Strain, The "Research Taste" Debate, Verification and Pause Mechanisms. Added footnotes, contributor list, and methodology notes.
 - **UPDATED: [[concepts/recursive-self-improvement.md]]** — Added items 7-10 to Anthropic Official Declaration: narrowing human role, code quality approaching parity (~52x training speedup), and infrastructure strain (GitHub 275M commits/week). Updated policy stance with verification regime details.
 - 2026-06-10 | concept | anthropic-transparency-hub | Anthropic's Transparency Hub — Model Report, System Trust & Reporting, Voluntary Commitments. Source: https://www.anthropic.com/transparency
+- 2026-06-10 | concept | anthropic-system-cards | Anthropic System Cards index — 15 models from Claude 2 to Opus 4.8. Source: https://www.anthropic.com/system-cards
+- 2026-06-10 | comparison | claude-opus-4x-comparison | Claude Opus 4.6 vs 4.7 vs 4.8 system card comparison. Sources: 3 official PDFs
+
+## 2026-06-10
+- **raw/papers**: Ingested Claude Mythos Preview System Card (Apr 2026, 245 pages) from Anthropic CDN
+- **comparisons**: Created claude-mythos-preview-vs-mythos5-fable5.md — Preview vs Mythos 5/Fable 5 comparison
+- **index.md**: Added comparison page, updated count 27-28
