@@ -7735,3 +7735,16 @@ Updated:
 - **CREATED**: `raw/articles/2025-06-18_willbrown_agents-mcp-rl-lesson1.md` — Lesson 1 summary with model recommendations table
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Lecture table: Lesson 1 linked to transcript and summary
 - **UPDATED**: `index.md` — Added transcript entry
+
+## 2026-06-10 — Page Name Policy (wiki_health.py + pre-commit)
+
+**Action**: Added automated page naming policy checks to wiki health system.
+
+**Modified**:
+- `scripts/wiki_health.py`: Added `section_page_name_policy()` — checks CJK in filenames, date-prefix slugs, word count (WARN ≥8, ERROR ≥11), hyphen count. Also added `--json` mode for cron pipeline.
+- `.githooks/pre-commit`: Added page name policy gate — blocks NEW files with CJK characters, date-prefix slugs, or ≥11 hyphens. Uses `core.quotepath=false` to handle non-ASCII filenames correctly.
+- `wiki/SCHEMA.md`: Added "Naming Policy" section documenting the rules.
+
+**Policy thresholds**: word_count_warn=8, word_count_error=11, hyphen_count_warn=8, hyphen_count_error=11.
+
+**Current violations**: 2 errors (CJK file, 12-word tag pile), 20 warnings (8-10 word names). Existing violations are reported but not blocked; only new files are blocked by pre-commit.
