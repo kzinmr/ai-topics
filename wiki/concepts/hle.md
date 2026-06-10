@@ -20,7 +20,7 @@ sources:
   - https://github.com/centerforaisafety/hle
   - https://huggingface.co/datasets/cais/hle
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/ai-safety
 related_entities:
   - entities/florian-brand
@@ -112,7 +112,7 @@ Xeophon highlights HLE's rigorous quality control and incentive design as best p
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
+- [[concepts/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/ai-safety|AI Safety]] — Center for AI Safety's broader safety research program
 
 ## See Also

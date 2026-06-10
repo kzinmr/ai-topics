@@ -21,7 +21,7 @@ sources:
 related_entities:
   - entities/florian-brand.md
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview.md
+  - concepts/ai-benchmarks-and-evals.md
   - concepts/llm-evaluation.md
   - concepts/gpqa.md
   - concepts/mmmu.md
@@ -165,7 +165,7 @@ From the Part 4 analysis (May 2, 2025):
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview]] — Full 18-part benchmark series overview
+- [[concepts/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 - [[concepts/gpqa]] — GPQA (narrower, deeper science reasoning)
 - [[concepts/mmmu]] — MMMU (multimodal equivalent for vision + text)

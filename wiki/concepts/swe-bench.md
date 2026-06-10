@@ -20,7 +20,7 @@ sources:
   - https://openai.com/index/introducing-swe-bench-verified/
   - https://github.com/SWE-bench/SWE-bench
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/frontier-swe-benchmark
 related_entities:
   - entities/florian-brand
@@ -220,7 +220,7 @@ However, OpenAI's retirement of SWE-bench Verified as a frontier evaluation, com
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
+- [[concepts/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
 - [[concepts/harness-engineering|Harness Engineering]] — How execution environments shape agent performance
 - [[concepts/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation

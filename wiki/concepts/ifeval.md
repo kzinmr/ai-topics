@@ -6,7 +6,7 @@ tags:
   - benchmark
   - evaluation
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/codeif-bench
   - concepts/ifeval-fc
   - concepts/logic-ifeval
@@ -151,7 +151,7 @@ The progression from GPT-4's ~83% (Nov 2023) to Qwen3.5-27B's 95% (2026) shows s
 
 ## Related Wiki Pages
 
-- `concepts/ai-benchmarks-evals-overview` — Overview of the AI benchmarks and evals landscape
+- `concepts/ai-benchmarks-and-evals` — Overview of the AI benchmarks and evals landscape
 - `concepts/codeif-bench` — CodeIF-Bench, extending verifiable instruction evaluation to code generation
 - `concepts/ifeval-fc` — IFEval-FC, verifiable instruction following in function calling
 - `concepts/logic-ifeval` — LogicIFEval, complex logical instruction following

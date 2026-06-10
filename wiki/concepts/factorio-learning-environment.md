@@ -16,7 +16,7 @@ sources:
   - https://jackhopkins.github.io/factorio-learning-environment/
   - https://github.com/JackHopkins/factorio-learning-environment
 related_concepts:
-  - concepts/ai-benchmarks-evals-overview
+  - concepts/ai-benchmarks-and-evals
   - concepts/swe-bench
 related_entities:
   - entities/florian-brand
@@ -102,7 +102,7 @@ The original FLE paper evaluated six frontier LLMs and found:
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-evals-overview|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
+- [[concepts/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/swe-bench|SWE-Bench]] — Another agent-based evaluation, focused on software engineering bug fixes
 - [[concepts/frontier-swe-benchmark|FrontierSWE]] — Ultra-long-horizon coding benchmark (20 hours per task)
 
