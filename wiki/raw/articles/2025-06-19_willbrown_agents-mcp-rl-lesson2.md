@@ -23,7 +23,7 @@ tags:
 **Date:** June 19, 2025
 **Companion course:** [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
 **Lecture transcript:** [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture|MCP + Production-Grade Agents (Lecture Transcript)]]
-**Notebook:** [ai-agent-engineering repo](https://github.com/willccbb/ai-agent-engineering)
+**Notebook:** [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb)
 
 ## Summary
 

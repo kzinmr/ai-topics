@@ -40,11 +40,17 @@ participants:
 
 ---
 
-## Type Hints & Strong Typing
+### 1. Type Hints & Strong Typing
 
 **[00:04:25]** Revisiting type hints from Lesson 1.
 
 **[00:04:47]** Python does not require you to use types. But it's very good practice to use strong type hints, especially for production code.
+
+**Notebook details:**
+- Enable **Pylance (Pyright)** in your IDE — shows linter errors to LLMs during assisted development
+- Use **Ruff** for code quality linting
+- `Any` is an escape hatch if needed, but `Union` is preferable
+- Type hints ensure reliable composability across your codebase
 
 ### The String Multiplication Bug
 
@@ -68,6 +74,19 @@ A cumulative product function — taking returns and multiplying them cumulative
 - **Open models** → Outlines
 - **OpenAI-only** → OpenAI's default structured outputs
 - **Portable across providers** → Instructor
+
+**Notebook code pattern:**
+```python
+instructor_oai = instructor.from_openai(oai)
+response = instructor_oai.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[{"role": "user", "content": prompt}],
+    response_model=GrowthMultiplier,
+)
+# response.growth_multiplier is guaranteed float
+```
+
+Alternatives listed in notebook: `outlines`, `openai.beta.chat.completions.parse`, `openai.responses.create`, JSON mode.
 
 ### Constrained Generation (Grammar Masking)
 
@@ -130,6 +149,35 @@ Async (gather): **2.6 seconds** — same logic, same order, just parallel.
 
 **[00:33:12]** Same pattern applies to tool calls. Multiple sub-agents doing search in parallel. Trade-off: speed vs task decomposition.
 
+**Notebook pattern — Parallel Tool Execution:**
+```python
+class ToolCall(BaseModel):
+    name: str
+    args: dict
+
+class ToolCalls(BaseModel):
+    thinking: str           # thinking FIRST (autoregressive ordering)
+    tool_calls: list[ToolCall]
+
+# Single LM call returns multiple tool calls
+response = instructor_oai.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[{"role": "user", "content": multi_question_prompt}],
+    response_model=ToolCalls,
+)
+
+# Execute all tool calls in parallel
+async def execute_tool(func, args) -> str:
+    return func(**args)
+
+async def main():
+    tasks = [execute_tool(calculator, tc.args) for tc in response.tool_calls]
+    results = await asyncio.gather(*tasks)
+    return results
+```
+
+Key insight: one LM call can return **multiple tool calls** (e.g., 6 calculator expressions from 6 questions), then execute them all in parallel. The `thinking` field comes first in the schema to ensure autoregressive ordering.
+
 ### Timeout Patterns
 
 **[00:37:13]** You can set timeouts on parallel functions. Maybe only 17 of 20 sub-agents finish in time — you roll with what you have. Or you signal the agent: "you're running out of time, get final answer now."
@@ -139,6 +187,12 @@ Async (gather): **2.6 seconds** — same logic, same order, just parallel.
 ---
 
 ## RAG Patterns: Old School vs Agentic
+
+**Notebook definitions:**
+- **Pre-Fetch RAG**: search *before* LLM calls. The "helper agent" pattern from Lightning Lesson 1 is pre-fetch RAG. Common confusion: vector DBs ≠ RAG. Good if: docs aren't too long, you want to cache docs for multiple questions, no need for "multi-hop" search.
+- **Agentic RAG**: retrieved info isn't determined by "always on" program logic. Good for: leveraging existing DB indexes/search tools, retries/adaptive queries are native, combining multiple data sources.
+- **Pro tips:** Markdown docs are LLM-friendly (OCR/markdownify are great). Leverage natural file system + link structures. LLMs are great at clever plaintext search.
+- **Generally recommended as default pattern.**
 
 ### Embedding-Based Prefetch RAG
 
@@ -174,6 +228,22 @@ Async (gather): **2.6 seconds** — same logic, same order, just parallel.
 | **MLflow Tracing** | Want an open-source W&B alternative |
 | **Arize Phoenix** | Popular general option |
 
+**Notebook — Pydantic AI + Logfire integration:**
+```python
+import logfire
+logfire.configure()
+
+calculator_agent = Agent(
+    "openai:gpt-4.1-mini",
+    deps_type=CalculatorDependencies,
+    output_type=CalculatorResponse,
+    system_prompt="You are a helpful assistant...",
+    instrument=True  # ← enables Logfire tracing
+)
+```
+
+The `instrument=True` flag automatically captures all tool calls, inputs, outputs, and latencies into Logfire's dashboard.
+
 **[00:53:04]** Choose based on least friction — what ecosystem are you already embedded in? AWS → AWS version. W&B → Weave. Pydantic AI → Logfire. OpenAI Agents SDK → OpenAI's monitoring.
 
 ### Lock-in and MCP
@@ -195,6 +265,26 @@ Async (gather): **2.6 seconds** — same logic, same order, just parallel.
 - **Portability across applications** — same tool works in Cursor, Claude Code, ChatGPT
 - **Internal data sources** with multiple consumers — N×M → N+M problem
 - **Building a service with an API** → probably should have an MCP server for it
+
+**Notebook — MCP setup commands:**
+```bash
+# JS/TS servers
+claude mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem $CLAUDE_FILESYSTEM_PATH
+claude mcp add brave-search -e BRAVE_API_KEY=*** -- npx -y @modelcontextprotocol/server-brave-search
+claude mcp add e2b -e E2B_API_KEY=*** -- npx -y @e2b/mcp-server
+
+# Python servers
+claude mcp add fetch uvx mcp-server-fetch
+```
+
+**Transport protocols:**
+- **stdio** — local-friendly
+- **Streamable HTTP** — primary remote protocol (streaming, long-lived connections, interrupt handling)
+- **SSE** — original remote protocol, MCP is moving away from it
+
+**MCP repositories:** [official servers](https://github.com/modelcontextprotocol/servers), [smithery.ai](https://smithery.ai/), [mcp.so](https://mcp.so/)
+
+**Brown's related projects:** [claude-code-mcp](https://github.com/willccbb/claude-code-mcp), [claude-deep-research](https://github.com/willccbb/claude-deep-research), [mcp-client-server](https://github.com/willccbb/mcp-client-server)
 
 ### N×M vs N+M
 
@@ -238,6 +328,11 @@ Async (gather): **2.6 seconds** — same logic, same order, just parallel.
 
 ## Data Structures for LLMs
 
+**Notebook — Database options:**
+- **File systems** (e.g. Docker) — tools: grep, sed, ls, cd, pwd, etc.
+- **SQL databases** — tools: SQL query access (or limited wrappers, e.g. read-only, id lookup, no joins). SQLite, Postgres.
+- **Vector databases** — tools: querying for embedding similarity, ids. Chroma, Weaviate, Pinecone, Milvus, MongoDB Atlas.
+
 ### Docker Containers as Sandboxes
 
 **[01:10:50]** Docker containers are not infinitely safe but usually good for testing. Give your LLMs a virtual machine where they can run around, make folders and files.
@@ -263,6 +358,15 @@ Async (gather): **2.6 seconds** — same logic, same order, just parallel.
 ---
 
 ## Security Considerations
+
+**Notebook — Tools as Action Whitelists:**
+- Tempting: give your agent a terminal
+- Challenges: workspace management (excess scripts), bad practices, deleting important files
+- Workaround: "whitelist" certain code paths, explicit tools for common actions (e.g. fetching a website and converting to markdown)
+
+**Code sandbox providers (from notebook):**
+- **E2B** — [MCP server](https://github.com/e2b-dev/mcp-server)
+- **Morph, Modal, AWS Lambda** — serverless sandbox alternatives
 
 ### Whitelist vs Blacklist
 

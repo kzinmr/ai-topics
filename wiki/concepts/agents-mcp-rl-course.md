@@ -65,6 +65,7 @@ CTO of **OpenPipe**, the RL post-training company that helps companies train cus
 |----------|-------------|
 | [ai-agent-engineering](https://github.com/willccbb/ai-agent-engineering) | Course files (71+ stars) |
 | [research-agent-lesson](https://github.com/willccbb/research-agent-lesson) | "Build Your Own AI Research Agent" lesson files |
+| [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb) | Lesson 2 notebook: production-grade agent patterns |
 | [verifiers](https://github.com/PrimeIntellect-ai/verifiers) | RL environment library for training and evaluating LLMs |
 | [mcp-client-server](https://github.com/willccbb/mcp-client-server) | MCP Server that's also an MCP Client |
 
@@ -125,7 +126,7 @@ Inaugural lecture establishing the central thesis: RL and agents are two sides o
 
 Bridges prototyping to production. Covers type hints as defense against silent LM output bugs, async processing (`asyncio.gather` + semaphores for ~7-8x speedup), agentic RAG vs prefetch RAG, MCP architecture ("FastAPI but LM-shaped"), logging frameworks (Logfire, Weave, MLflow, Arize), security (sandboxing, codifying patterns as tools), and the N×M→N+M problem MCP solves. Strong stance: A2A is premature, MCP is the standard to build on.
 
-**Transcript:** [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] · **Summary:** [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]]
+**Transcript:** [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] · **Summary:** [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]] · **Notebook:** [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb)
 
 ## Included Credits
 
