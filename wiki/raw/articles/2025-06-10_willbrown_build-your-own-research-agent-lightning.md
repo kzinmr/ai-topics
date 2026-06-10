@@ -132,8 +132,9 @@ The companion repo includes [EXAMPLE_REPORT.md](https://github.com/willccbb/rese
 
 | Resource | Description |
 |----------|-------------|
-| [research-agent-lesson](https://github.com/willccbb/research-agent-lesson) | Lesson files (notebook, MCP server, example report) |
-| [agents.ipynb](https://github.com/willccbb/research-agent-lesson/blob/main/agents.ipynb) | Main lesson notebook |
+| [agent-engineering/lightning-lessons](https://github.com/willccbb/agent-engineering/tree/main/lightning-lessons) | Lightning lesson notebooks (agents.ipynb, search.ipynb) |
+| [agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lightning-lessons/agents.ipynb) | Main lesson notebook |
+| [research-agent-lesson](https://github.com/willccbb/research-agent-lesson) | Companion repo (MCP server, example report, CLAUDE.md) |
 | [server_example.py](https://github.com/willccbb/research-agent-lesson/blob/main/server_example.py) | MCP Fetch server implementation |
 | [EXAMPLE_REPORT.md](https://github.com/willccbb/research-agent-lesson/blob/main/EXAMPLE_REPORT.md) | Report generation guidelines |
 | [CLAUDE.md](https://github.com/willccbb/research-agent-lesson/blob/main/CLAUDE.md) | Report generation guidelines (MCP version) |

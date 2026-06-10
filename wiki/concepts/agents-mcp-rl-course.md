@@ -71,7 +71,7 @@ Free, standalone workshops offered before the main course cohort begins. Each fo
 
 | Date | Lightning Lesson | Resources |
 |------|-----------------|-----------|
-| Jun 10 | [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning\|Build Your Own AI Research Agent]] (Will Brown) | [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook\|Notebook]] · [GitHub](https://github.com/willccbb/research-agent-lesson) · [Maven](https://maven.com/p/193c6f/build-your-own-ai-research-agent) |
+| Jun 10 | [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning\|Build Your Own AI Research Agent]] (Will Brown) | [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook\|Notebook]] · [GitHub](https://github.com/willccbb/agent-engineering/blob/main/lightning-lessons/agents.ipynb) · [Maven](https://maven.com/p/193c6f/build-your-own-ai-research-agent) |
 | TBD | Build Your (Custom) AI Agent with MCP (Shaw Talebi) | *pending* · [Maven](https://maven.com/p/18214c/build-your-custom-ai-agent-with-mcp) |
 
 ### Lightning Lesson 1: Build Your Own AI Research Agent

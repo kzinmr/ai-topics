@@ -23,7 +23,7 @@ participants:
 **Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])
 **Date:** June 10, 2025
 **Companion course:** [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
-**GitHub:** [research-agent-lesson](https://github.com/willccbb/research-agent-lesson)
+**GitHub:** [agent-engineering/lightning-lessons/agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lightning-lessons/agents.ipynb)
 **Related summary:** [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning|Lightning Lesson Summary]]
 
 ---
