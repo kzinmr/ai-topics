@@ -6,6 +6,7 @@ type: concept
 tags: [concept, openai, model, reasoning, rlvr, timeline]
 aliases: [o1-to-gpt5, o3-cancellation, gpt5-unification]
 sources: ["https://openai.com/index/introducing-gpt-5/", "https://x.com/sama/status/1889755723078443244", "https://openai.com/index/introducing-o3-and-o4-mini/"]
+related: [[concepts/o3-o4-mini-system-card]]
 ---
 
 

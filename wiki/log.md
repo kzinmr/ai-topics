@@ -7637,3 +7637,7 @@ Updated:
 - 2026-06-10 | concept | openai-deployment-safety-hub | OpenAI Deployment Safety Hub: Complete index of 19 system cards (Feb 2025–Jun 2026). Preparedness Framework (Bio/Chem, Cyber, AI Self-Improvement). Safety level escalation, agentic proliferation, domain-specific deployment. Source: https://deploymentsafety.openai.com/
 - 2026-06-10 | updated | model-cards-system-cards | Added cross-reference to openai-deployment-safety-hub
 - 2026-06-10 | updated | anthropic-system-cards | Added cross-reference to openai-deployment-safety-hub
+- 2026-06-10 | raw/papers | 2025-04-16_openai-o3-o4-mini-system-card.pdf | Saved o3 and o4-mini System Card PDF (33 pages, 6.7MB)
+- 2026-06-10 | concept | o3-o4-mini-system-card | o3 and o4-mini System Card (Apr 2025): First Preparedness Framework v2. No High threshold. METR reward hacking (1%), Apollo scheming, Pattern Labs cyber. Last standalone o-series card. Source: https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf
+- 2026-06-10 | updated | openai-deployment-safety-hub | Added o3/o4-mini (Apr 2025) to system card index; updated count to 20
+- 2026-06-10 | updated | openai-o-series-gpt5-unification | Added related link to o3-o4-mini-system-card

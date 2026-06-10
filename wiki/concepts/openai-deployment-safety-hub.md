@@ -13,7 +13,7 @@ sources: [raw/articles/2026-06-10_openai-deployment-safety-hub.md]
 
 ## Hub as Central Index
 
-Unlike [[concepts/anthropic-system-cards]] which lives on Anthropic's main blog, OpenAI maintains a dedicated standalone domain for deployment safety. This architectural choice signals that system cards are treated as a distinct product surface — not blog posts, not press releases, but a structured safety documentation corpus.
+Unlike [[concepts/anthropic-system-cards]] which lives on Anthropic's main blog, OpenAI maintains a dedicated standalone domain for deployment safety. This architectural choice signals that system cards are treated as a distinct product surface — not blog posts, not press releases, but a structured safety documentation corpus with **20 system cards** spanning from the o-series through the GPT-5 era.
 
 The hub provides:
 - **Chronological listing** of all system cards (newest first)
@@ -25,6 +25,7 @@ The hub provides:
 
 | # | System Card | Date | Type | Key Safety Theme |
 |---|---|---|---|---|
+| 0 | [o3 and o4-mini](https://deploymentsafety.openai.com/o3-and-o4-mini) | 2025-04-16 | Reasoning | First Preparedness Framework v2; no High threshold reached; reward hacking detected by METR |
 | 1 | [GPT-Rosalind-5.5](https://deploymentsafety.openai.com/gpt-rosalind-5-5) | 2026-06-03 | Domain-specific | Bio/Chem High capability; research-only deployment |
 | 2 | [GPT-5.5 Instant](https://deploymentsafety.openai.com/gpt-5-5-instant) | 2026-05-05 | Instant model | First Instant model treated as High in Cyber + Bio/Chem |
 | 3 | [GPT-5.5](https://deploymentsafety.openai.com/gpt-5-5) | 2026-04-23 | Flagship | Complex real-world work; tool use; code + research |
