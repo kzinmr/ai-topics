@@ -13,6 +13,7 @@ tags:
 sources:
   - raw/articles/2026-05-21_tilert_speed-as-the-next-scaling-law.md
   - raw/articles/2026-06-08_xiaomi-mimo-tilert-1000tps.md
+  - raw/articles/2026-06-08_tilert_breaking-1000-tps.md
 related:
   - "[[entities/tilert]]"
   - "[[entities/xiaomi-mimo]]"

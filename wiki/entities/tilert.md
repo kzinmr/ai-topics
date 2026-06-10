@@ -12,6 +12,7 @@ tags:
 sources:
   - raw/articles/2026-05-21_tilert_speed-as-the-next-scaling-law.md
   - raw/articles/2026-06-08_xiaomi-mimo-tilert-1000tps.md
+  - raw/articles/2026-06-08_tilert_breaking-1000-tps.md
   - raw/articles/2026-05-21_zrdianjiao-glm51-highspeed-tilert.md
 related:
   - "[[entities/xiaomi-mimo]]"
@@ -52,6 +53,32 @@ TileRT's key insight: once runtime orchestration enters the critical path, the a
 - Combined with FP4 quantization (MoE Experts only) + DFlash speculative decoding
 - 3× price, 10× output speed vs standard MiMo-V2.5-Pro
 
+## The Two Leaps to 1000 TPS
+
+TileRT's path from dozens of TPS to 1000+ TPS required two paradigm leaps (detailed in their June 2026 deep-dive):
+
+### First Leap: Execution Model Revolution
+- **Problem**: Execution stream constantly fractured at microsecond scale by disjointed operator boundaries
+- Traditional frameworks: every kernel launch carries host-side launch latency, hardware synchronization, global memory round-trips
+- Under ultra-low latency, these gaps become the **Execution Gap** — the dominant bottleneck
+- **Solution**: Persistent Engine paradigm — entire pipeline consolidated into a single GPU-resident engine
+- End-to-end continuous prefetching: while current Tile processes, next data already flowing through memory hierarchy
+- GPU evolves from homogeneous parallel compute → **continuously flowing, orchestrated heterogeneous execution system**
+
+### Second Leap: Microsecond-Scale Bottleneck Triage
+- At 1000+ TPS, individual operator lifespan compressed to microseconds
+- A **single microsecond** of overhead = percentage points of end-to-end performance jitter
+- Previously trivial operators resurface as devastating bottlenecks:
+  - RMSNorm, RoPE, KV Cache writes, hardware syncs, metadata overhead
+  - In Attention: ultimate throttle is often not the Attention kernel but fragmented auxiliary operations
+  - MTP extra LM Head: dozens of microseconds overhead — heavy enough at 1000 TPS to severely drag efficiency
+- **Only path**: Hardware-Software Co-Design (System-Model Co-design)
+
+### MiMo × TileRT Co-Design
+1. **I/O optimization**: FP4 quantization exclusively on MoE Experts, FP8 for rest — deliberate joint trade-off based on hardware physics
+2. **DFlash production deployment**: High acceptance rate while strictly converging LLM Head compute footprint; both teams stripped microsecond-level redundancies across module structures, sliding window sizes, Attention Sinks, acceptance lengths vs verification costs
+3. **Anticipatory design**: System-level challenges anticipated during model design phase; model's structural skeleton determines actual hardware execution efficiency
+
 ## Version History
 
 | Version | Key Changes |
@@ -73,5 +100,6 @@ Unlike Cerebras (wafer-scale) or Groq (pure SRAM), TileRT achieves extreme speed
 
 - Website: https://tilert.ai
 - Blog: https://www.tilert.ai/blog/speed-as-the-next-scaling-law.html
+- Blog: https://www.tilert.ai/blog/breaking-1000-tps.html
 - GitHub: https://github.com/tile-ai/TileRT
 - Contact: tile-ai@outlook.com

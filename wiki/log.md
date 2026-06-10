@@ -1,5 +1,12 @@
 ---
 
+## [2026-06-10] TileRT "breaking-1000-tps" deep-dive article ingestion
+
+**Action**: Ingested TileRT's detailed technical deep-dive "Two Leaps to 1000 Tokens/s on a 1T-Parameter Model" (2026-06-08). Adds microsecond-scale bottleneck triage details (RMSNorm, RoPE, KV Cache writes as bottlenecks), two-leap framing (execution model revolution + co-design), and MiMo×TileRT co-design specifics.
+
+**Raw article saved**: `raw/articles/2026-06-08_tilert_breaking-1000-tps.md`
+**Pages updated**: `entities/tilert.md` (added Two Leaps section, co-design details, new source), `concepts/speed-as-scaling-law.md` (new source)
+
 ## [2026-06-10] TileRT + Speed as Scaling Law ingestion
 
 **Action**: Ingested 3 articles about TileRT inference engine and speed-as-scaling-law concept:
