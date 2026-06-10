@@ -35,7 +35,7 @@ sources: [
 - **Architecture**: Task board → Agent spawn → Isolated workspace → PR submission → Human review
 - **Philosophy**: "Manage work, not agents" — humans define workflows, agents execute
 - **Status**: Open source (Apache 2.0), multiple community implementations
-- **Details**: See [[concepts/gpt/symphony]]
+- **Details**: See [[concepts/gpt/gpt-symphony]]
 
 ### Anthropic Managed Agents
 
@@ -96,7 +96,7 @@ The emergence of multi-agent systems creates new economic patterns:
 
 ## Related Pages
 
-- [[concepts/gpt/symphony]] — OpenAI's orchestration platform
+- [[concepts/gpt/gpt-symphony]] — OpenAI's orchestration platform
 - [[concepts/anthropic-managed-agents]] — Anthropic's enterprise agent platform
 - [[concepts/harness-engineering]] — Safety and constraint patterns for agents
 - [[dark-factory-software-factory]] — Fully autonomous development

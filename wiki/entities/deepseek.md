@@ -134,7 +134,7 @@ In May 2026, DeepSeek made a **permanent 75% discount** on V4-Pro pricing, trigg
 | **Blended** | **~$0.18/M tokens** (75% below previous) |
 
 **Cost comparison vs competitors (blended):**
-- ~3× cheaper than [[entities/gemini|Gemini 3.1 Pro Preview]]
+- ~3× cheaper than [[concepts/gemini]]|Gemini 3.1 Pro Preview]]
 - ~12× cheaper than GPT-5.5
 - ~19× cheaper than [[entities/anthropic|Claude Opus 4.7]]
 

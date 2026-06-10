@@ -62,7 +62,7 @@ Combines two complementary approaches for precise 6-DoF trajectory adherence:
 
 ## Relationships
 - [[entities/nvidia]] — NVIDIA, the creator
-- [[entities/gemini]] — Google's Gemini Omni (competing world model)
+- [[concepts/gemini]] — Google's Gemini Omni (competing world model)
 - [[concepts/world-model]] — World models concept
 - [[concepts/video-generation]] — Video generation overview
 - [[concepts/diffusion]] — Diffusion model foundations

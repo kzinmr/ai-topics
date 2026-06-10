@@ -7703,3 +7703,4 @@ Updated:
 - **UPDATED**: 72 files, 177 wikilink replacements across wiki
 - **CREATED**: `concepts/gpt/index.md` MOC (was concepts/gpt-models.md)
 - **NOTE**: entities/openai.md, entities/openai-codex.md, entities/openai-foundation.md remain as entities (org/product pages)
+- 2026-06-10 | reorg | concepts/claude/ | Moved 26 Claude model/platform/feature pages from concepts/, entities/ to concepts/claude/ hierarchy. Updated wikilinks across 80+ files. Created hub page at concepts/claude/index.md.

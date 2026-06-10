@@ -40,7 +40,7 @@ On May 6, 2026, Google announced a partnership with **Believe**, a global artist
 
 ## Technology: Lyria 3 Pro
 
-Lyria 3 Pro is Google's latest specialized music generation model, succeeding earlier versions of Lyria (announced alongside [[entities/gemini]] in late 2023). It represents continued investment in specialized audio/music generation capabilities distinct from general-purpose multimodal models.
+Lyria 3 Pro is Google's latest specialized music generation model, succeeding earlier versions of Lyria (announced alongside [[concepts/gemini]] in late 2023). It represents continued investment in specialized audio/music generation capabilities distinct from general-purpose multimodal models.
 
 ## Positioning
 

@@ -55,6 +55,6 @@ Cursor and SpaceXAI jointly training a significantly larger model from scratch u
 - [[entities/cursor]] — Cursor IDE and company
 - [[entities/moonshot]] — Moonshot AI, creator of Kimi K2.5 base model
 - [[concepts/reinforcement-learning]] — RL foundations for coding agent training
-- [[entities/gemini]] — Google's Antigravity harness (competing agent platform pattern)
+- [[concepts/gemini]] — Google's Antigravity harness (competing agent platform pattern)
 - [[concepts/ai-coding]] — AI-assisted coding overview
 - [[concepts/ai-agents]] — AI agents overview

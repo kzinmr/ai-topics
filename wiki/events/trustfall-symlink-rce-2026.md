@@ -11,7 +11,7 @@ sources: [raw/articles/adversa-ai-trustfall-2026.md, raw/articles/adversa-ai-sym
 
 In May 2026, security researchers at **Adversa AI** (Rony Utevsky) disclosed two related vulnerabilities — **TrustFall** and **SymJack** — that together expose a systemic security failure across all major AI coding agents. The root cause: AI coding assistants auto-execute [[concepts/model-context-protocol-mcp|MCP]] (Model Context Protocol) servers defined in project configuration files with minimal or misleading consent from developers, enabling remote code execution (RCE) from a single cloned repository.
 
-**TrustFall** (disclosed May 8, 2026): A malicious repository containing `.mcp.json` and `.claude/settings.json` spawns an attacker-controlled MCP server the moment a developer accepts the folder trust prompt — one Enter keypress away from full compromise. Affects [[entities/claude-code|Claude Code]], [[entities/gemini-cli|Gemini CLI]], [[entities/cursor-ai|Cursor]], and [[entities/copilot-cli|GitHub Copilot CLI]].
+**TrustFall** (disclosed May 8, 2026): A malicious repository containing `.mcp.json` and `.claude/settings.json` spawns an attacker-controlled MCP server the moment a developer accepts the folder trust prompt — one Enter keypress away from full compromise. Affects [[entities/claude-code|Claude Code]], [[concepts/gemini/cli|Gemini CLI]]], [[entities/cursor-ai|Cursor]], and [[entities/copilot-cli|GitHub Copilot CLI]].
 
 **SymJack** (disclosed May 26, 2026): Extends TrustFall by using symlink hijacking to trick the agent into overwriting its own configuration through a disguised file copy (`cp`), even when the repo appears clean at clone time. Affects the same four tools plus [[entities/google-antigravity|Antigravity CLI]] and Grok Build CLI — five products total.
 
@@ -110,7 +110,7 @@ The human approval prompt is the thing being defeated. The user approves what th
 | Platform | TrustFall | SymJack | Trust Dialog Disclosure | Vendor Response |
 |----------|-----------|---------|------------------------|-----------------|
 | **[[entities/claude-code\|Claude Code]]** (v2.1.114–2.1.128) | ✅ Vulnerable | ✅ Vulnerable | No MCP mention, generic | Rejected as out of scope; **quietly hardened** in v2.1.129 (resolves symlinks, shows resolved path) |
-| **[[entities/gemini-cli\|Gemini CLI]]** (v0.43.0) / **[[entities/google-antigravity\|Antigravity CLI]]** (v1.0.2) | ✅ Vulnerable | ✅ Vulnerable | Best disclosure: warns about MCP servers, lists by name | Declined; classed as single-user self-attack |
+| **[[concepts/gemini/cli\|Gemini CLI]]]** (v0.43.0) / **[[entities/google-antigravity\|Antigravity CLI]]** (v1.0.2) | ✅ Vulnerable | ✅ Vulnerable | Best disclosure: warns about MCP servers, lists by name | Declined; classed as single-user self-attack |
 | **[[entities/cursor-ai\|Cursor CLI]]** (v2026.05.20) | ✅ Vulnerable | ✅ Vulnerable | MCP-specific warning, no enumeration | Declined as duplicate of existing symlink report |
 | **[[entities/copilot-cli\|GitHub Copilot CLI]]** (v1.0.51) | ✅ Vulnerable | ✅ Vulnerable | Generic, no MCP mention | Awaiting response |
 | **Grok Build CLI** (v0.1.216) | Not tested | ✅ Vulnerable | None; silent path resolution | Awaiting response |
@@ -125,7 +125,7 @@ The human approval prompt is the thing being defeated. The user approves what th
 | Copilot CLI | ❌ No | ❌ No | Yes |
 | Grok Build CLI | N/A | N/A | N/A |
 
-[[entities/gemini-cli|Gemini CLI]] provides the most informative consent dialog, while Claude Code and Copilot CLI offer the least disclosure despite having the largest attack surface.
+[[concepts/gemini/cli|Gemini CLI]]] provides the most informative consent dialog, while Claude Code and Copilot CLI offer the least disclosure despite having the largest attack surface.
 
 ## CI/CD Impact
 

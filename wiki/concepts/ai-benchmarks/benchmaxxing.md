@@ -29,7 +29,7 @@ The term is a portmanteau of "benchmark" and "maxing" (or "maxxing"), implying t
 
 The benchmaxxing critique rests on a specific observation: **a model can score highly on standardized benchmarks while being poor at following user instructions in practice.**
 
-[[entities/florian-brand|Florian Brand]] (@xeophon) articulated this clearly in the case of [[entities/gemini|Gemini]] (June 2026):
+[[entities/florian-brand|Florian Brand]] (@xeophon) articulated this clearly in the case of [[concepts/gemini]]|Gemini]] (June 2026):
 
 > "Gemini is an amazing model, the benchmarks don't lie. It's super smart. But it is very stubborn; it isn't good at instruction following and does things its way. That's why people say it's benchmaxxed."
 
@@ -97,6 +97,6 @@ Practitioners identify benchmaxxed models through several signals:
 
 ## See Also
 
-- [[entities/gemini]] — Model frequently described as benchmaxxed
+- [[concepts/gemini]] — Model frequently described as benchmaxxed
 - [[entities/florian-brand]] — Benchmark analyst who popularized the term in AI discourse
 - [[concepts/ai-benchmarks/swe-bench]] — Agent benchmark where practical capability diverges from scores

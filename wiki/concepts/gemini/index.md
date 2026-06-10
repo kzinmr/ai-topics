@@ -157,88 +157,121 @@ Google DeepMind publishes structured model cards for all Gemini models at [deepm
 
 See also: [[concepts/model-cards-system-cards]] for analysis framework on reading model cards.
 
-## Related Models
-- [[entities/gemini]]
+## Image Generation
 
-- **Gemini 3.1 Flash**: Base multimodal model
-- **Lyria 3**: Google's music/song generation model
-- **Gemini 3.1 Pro**: Higher-capability variant
+Google's Gemini models power image generation through multiple channels:
 
+- **Nano Banana 2 (NB2)** via Google AI Studio — The primary image generation product
+  - Resolution: 512px through 4K
+  - Aspect ratios: 1:1, 16:9, 9:16, 3:4, 4:5, 4:1, etc.
+  - Speed: 20–25 seconds per generation
+  - Weaker iteration control (natural language only)
+  - Higher hallucination rate in complex layouts
 
-## Google Antigravity
+- **Gemini App** — Mobile image generation path
+  - Loses aspect-ratio control compared to AI Studio
+  - Adds watermark in bottom-right corner
 
-New agentic development platform that reimagines developer workflow with an **AI-first IDE**:
+## Gemini Omni (World Model)
 
-- Agents independently plan, code, execute, and validate end-to-end software tasks
-- Integrated models: Gemini 3 Pro (reasoning/coding), Gemini 2.5 Computer Use (browser control), Nano Banana / Gemini 2.5 Image (image editing)
+Released at Google I/O 2026. A natively multimodal generative model that combines Gemini's reasoning with creative video generation.
 
-## Gemini Agent
+**Key capabilities:**
+- **Multi-turn video editing** via natural language conversation
+- **Physics-grounded generation**: improved intuitive physics (gravity, fluid dynamics, kinetic energy)
+- **Reference-based creation**: synchronize text, image, video, and audio inputs into cohesive clips
+- **Digital Avatars**: create videos with your own voice and face
+- **SynthID watermark**: imperceptible digital watermark on all generated videos
 
-Autonomous agent that can navigate complex tasks (booking services, organizing inboxes) under user guidance. Available for Google AI Ultra subscribers.
+**Availability:**
+- **Gemini Omni Flash** — Rolling out to Google AI Plus/Pro/Ultra subscribers globally (Gemini app, Google Flow)
+- YouTube Shorts & YouTube Create App — No cost
+- Developer & enterprise APIs — Coming weeks
 
-## Ecosystem Integration
+See also: [[concepts/nvidia-sana-wm]] (competing open-source world model)
 
-| Platform | Status |
-|----------|--------|
-| Gemini App | ✅ Available now |
-| AI Mode in Search | ✅ Available now (first day-one Gemini integration in Search) |
-| Developers (AI Studio, Vertex AI, CLI, Antigravity) | ✅ Available now |
-| Enterprise (Vertex AI, Gemini Enterprise) | ✅ Available now |
-| Deep Think Mode | 🔄 Coming soon to AI Ultra subscribers |
+## Daily Brief
 
-## Gemini in the Open-Source Ecosystem
+Personalized morning digest agent. Opt-in. Works across connected apps (Gmail, Calendar) in background. Gathers urgent emails, upcoming events, follow-ups into skimmable briefing. Prioritizes based on user goals. Learnable via thumbs up/down.
 
-Google has actively contributed to the open-source AI ecosystem:
+## Martin Alderson's Critique: What's Going On With Gemini? (May 2026)
 
-- **Gemma models** — Open-weight models derived from Gemini architecture (Gemma 4 31B mentioned in Simon Willison's workflows)
-- **llm-gemini** — Simon Willison's LLM CLI plugin for Gemini API access
-- **Gemini CLI** — Command-line interface for Gemini models
-- **Cursor, GitHub, JetBrains, Replit, Manus** — Third-party platforms with Gemini integration
+In "What's going on with Gemini?" (May 30, 2026), developer and analyst **[[entities/martin-alderson|Martin Alderson]]** provides a sharp assessment of Google's AI strategy:
 
-## Comparison with Frontier Models
+### The TPU Advantage
 
-Gemini 3 competes directly with:
-- **Claude Opus 4.5/4.7** (Anthropic) — particularly in coding and reasoning
-- **GPT-5.x** (OpenAI) — particularly in multimodal understanding
-- **Qwen 3.6 Plus** — open-weight alternative for local inference
+The most significant development is that Gemini 3.5 Flash appears to **run on a single TPU 8i card** (Google's latest custom inference hardware). This is Google's **structural moat**: it's the only frontier lab that designs its own AI silicon.
 
-Gemini's distinctive advantages:
-- Native 1M-token context window
-- Strong multimodal processing (video, audio, images)
-- Deep integration with Google ecosystem (Search, Workspace, Vertex AI)
-- Antigravity agentic IDE
+> "While other labs certainly optimize their models to the hardware, and also no doubt have a lot of say in driving the Nvidia/AMD roadmaps to their specifications, the model teams and hardware teams in Google almost certainly collaborate to a far greater level than the other labs."
 
-## Gemini Embedding API as Multimodal Encoder
+This deep integration matters for **inference efficiency** — the key driver of actual unit economics in AI. Google DeepMind research can flow directly into the hardware roadmap without external negotiations, giving Google an outsized advantage in cost-per-inference.
 
-Research by [krafton-ai](https://github.com/krafton-ai/Can-Gemini-Embeddings-Be-a-Multimodal-Encoder-for-LLMs-) (2026-03) demonstrates repurposing `gemini-embedding-2-preview` as a universal multimodal encoder for frozen LLMs:
+### The Pricing Problem
 
-### Architecture
+Gemini 3.5 Flash at **$9/MTok output** is confusing from a market perspective:
+- **3× more expensive** than previous Flash releases
+- Vastly more expensive than best-in-class Chinese models (GLM 5.1, Qwen 3.7)
+- If you want best-in-class intelligence, you pay extra for Opus/GPT-5.5
+- If you want cheap but capable, Chinese models fit the bill (self-hostable via OpenRouter)
 
-```
-Input (image/audio) → Gemini Embedding API (3072-d vector) → MLP Adaptor (17M params) → Qwen3-4B → Output
-```
+**Alderson's hypothesis**: The model isn't designed for external use in the same way OpenAI/Anthropic models are. It's **priced and tuned for Google's own gigantic internal token consumption** (AI Mode, Gmail, etc.). The actual serving cost Google pays is "almost certainly a fraction of the external facing price."
 
-- **Frozen** Gemini Embedding API (one API call)
-- **Learned** MLP adaptor (17M params) projects into k virtual tokens
-- **Frozen** Qwen3-4B takes virtual tokens + text prompt
+### The Coding Agent Confusion
 
-Only the MLP adaptor is trained — no LLM fine-tuning needed. Training takes under 1 minute on a single GPU.
+Google's biggest weakness: **a smorgasbord of competing coding tools**:
+- Antigravity
+- Jules
+- Gemini Code Assist
+- Gemini CLI (being discontinued, folded into Antigravity)
+- AI Studio
+- Android Studio agentic tools
 
-### Tasks
+Meanwhile, Anthropic has **Claude Code** and OpenAI has **Codex** — clean, focused products. Alderson "very rarely comes across any developer using Google-based SWE tooling." This creates a **data flywheel disadvantage**: Claude Code and Codex generate detailed telemetry and training data to improve models. Without a coherent agent strategy, Google misses this feedback loop.
 
-- Image classification: (image, label) pairs as supervision
-- Speech-to-text: (audio, transcript) as supervision
-- Cross-modal search, classification, clustering across 100+ languages
+> "Because Google has such bespoke internal software development workflows, their isolation from what 'the rest of the industry' does in software is so large it's perhaps hard for them to really reason about agentic tooling for the rest of the industry."
 
-See: [kangwooklee.com](https://kangwooklee.com/blogs/gemini_embedding_as_universal_multimodal_encoder_for_LLMs.html)
+### Alderson's Verdict
 
-## Sources
+Google is playing a **genuinely different game** to OpenAI and Anthropic. Gemini 3.5 Flash only looks strange if you assume it's competing in the same race. With TPU advantage, research depth, and internal scale, Google could be "very hard to beat" — **if** it sorts out the agent-facing surface.
 
-- [Google Blog: Gemini 3 Announcement](https://blog.google/products-and-platforms/products/gemini/gemini-3/)
-- [Gemini 3 Model Card](http://deepmind.google/models/model-cards/gemini-3-pro)
-- Simon Willison newsletters (llm-gemini plugin coverage)
-- Reddit Google employee comment: "Over 40K SWEs use agentic coding weekly here" with internal Gemini CLI and MCP tools
-- [Gemini Embeddings as Universal Multimodal Encoder for LLMs](https://kangwooklee.com/blogs/gemini_embedding_as_universal_multimodal_encoder_for_LLMs.html) (2026-03, krafton-ai) — Using gemini-embedding-2-preview with frozen Qwen3-4B
+## Benchmaxxing & Instruction-Following Criticism (2026)
+
+Gemini models have faced persistent community criticism for **high benchmark scores coupled with poor real-world instruction following** — a pattern the community calls [[concepts/ai-benchmarks/benchmaxxing|benchmaxxing]].
+
+**Florian Brand (@xeophon)** (June 8, 2026):
+> "Gemini is an amazing model, the benchmarks don't lie. It's super smart. But it is very stubborn; it isn't good at instruction following and does things its way. That's why people say it's benchmaxxed."
+
+The core tension: Gemini scores well on standardized [[concepts/ai-benchmarks/ifeval|IFEval]] and other benchmarks, but in practice users report that it frequently:
+- Ignores format or structure requests
+- Adds unsolicited content or takes its own approach
+- Struggles with multi-step agentic tasks requiring precise instruction compliance
+- Underperforms on tool use compared to benchmark expectations
+
+## Competition with OpenAI
+
+Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 2 (ChatGPT Images 2.0):
+
+| Dimension | Gemini/NB2 (Google) | GPT Image 2 (OpenAI) |
+|-----------|--------------------|---------------------|
+| Speed | 20–25s (faster) | 40–60s (slower) |
+| Resolution | 512px–4K (flexible) | Not documented |
+| Aesthetic | "Cartoonist" default | Professional, clean |
+| Iteration | Natural language only | Select lasso + aspect ratio |
+| Hallucinations | Higher | Significantly lower |
+
+## Related
+
+- [[concepts/gemini/3-5-flash]] — Gemini 3.5 Flash detailed model page
+- [[concepts/gemini/spark]] — Gemini Spark (24/7 AI agent)
+- [[concepts/gemini/enterprise-agent-platform]] — Gemini Enterprise Agent Platform
+- [[concepts/gemini/cli]] — Gemini CLI (deprecated)
+- [[concepts/gemini/managed-agents]] — Gemini Managed Agents API
+- [[concepts/gemini/3-1-flash-lite]] — Gemini 3.1 Flash-Lite
+- [[concepts/gemini/3-2-flash]] — Gemini 3.2 Flash (leaked)
+- [[concepts/gemma-family]] — Gemma open model family (derived from Gemini)
+- [[entities/deepmind]] — Developer organization
+- [[entities/google-antigravity]] — Agent-first development platform
+- [[concepts/model-cards-system-cards]] — Model card analysis framework
 
 ## See Also
 

@@ -139,4 +139,4 @@ AlphaProof Nexus is more systematic and scalable, but tackles a different goal: 
 - [[concepts/formal-methods]] — Formal verification in computing
 - [[concepts/formal-verification-llm-agents]] — Formal verification for LLM agent safety
 - [[concepts/agentic-engineering]] — Agent design patterns and loops
-- [[entities/gemini]] — Gemini model family
+- [[concepts/gemini]] — Gemini model family

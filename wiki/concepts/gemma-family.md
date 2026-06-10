@@ -86,7 +86,7 @@ Gemma models run on:
 ## Relationships
 - [[entities/deepmind]] — Developer organization
 - [[entities/gemma-4]] — Detailed entity page for Gemma 4 family
-- [[entities/gemini]] — Parent model family from which Gemma is derived
+- [[concepts/gemini]] — Parent model family from which Gemma is derived
 - [[concepts/model-cards-system-cards]] — Model card analysis framework
 - [[concepts/local-llm]] — Local LLM deployment patterns
 - [[concepts/speculative-decoding]] — MTP drafter technique used in Gemma 4

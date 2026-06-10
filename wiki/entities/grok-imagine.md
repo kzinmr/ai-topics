@@ -105,7 +105,7 @@ Ethan He takes the **Flipbook** project seriously as the future of interfaces:
 - [[entities/xai]] — xAI company overview
 - [[entities/ethan-he]] — Lead developer, Grok Imagine
 - [[concepts/ai-image-generation]] — AI image/video generation landscape
-- [[entities/gemini]] — Google's competing Veo video generation
+- [[concepts/gemini]] — Google's competing Veo video generation
 - [[entities/openai]] — OpenAI's competing Sora
 - [[concepts/ai-bubble-economics]] — The economics of AI infrastructure
 - [[concepts/video-generation]] — Video AI landscape
