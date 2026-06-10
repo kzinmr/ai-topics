@@ -114,6 +114,7 @@
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
 - [[entities/roocode]] — RooCode — AI-powered VS Code extension (shut down May 15, 2026). Community fork Zoo Code continues development. 24K stars, Steer Mode for local models.
 - [[entities/roborev]] — RoboRev — Continuous background code review daemon by [[entities/wes-mckinney|Wes McKinney]]. Post-commit hook, AI-powered review via Codex/GPT 5.5, per-repo ledger. Go. 55+ releases.
+- [[entities/rob-hoeijmakers]] — Rob Hoeijmakers — Dutch web strategist and AI governance writer. Blog: hoeijmakers.net. Focus: EU AI Act, AI transparency, model/system cards. Schmuki Digital & AI Agency.
 - [[entities/sairahul1]] — Rahul (@sairahul1): AI engineer, Claude Code 7-agent Software Factory author. Pixxel, Hyderabad.
 - [[entities/sakana-ai]] — Sakana AI — Tokyo-based AI research lab founded 2023 by David Ha, Llion Jones, Ren Ito. Nature-inspired intelligence, evolutionary model merging, AI Scientist. Japan's most valuable startup (~$2.65B).
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
@@ -1025,6 +1026,7 @@
 - [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict
 - [[concepts/anthropic-transparency-hub]] — Anthropic Transparency Hub: Model Report (per-model safety evaluations for 10 Claude models, ASL levels, system cards), System Trust and Reporting (1.45M banned accounts, NCMEC reporting, threat intel), and Voluntary Commitments (G7 Hiroshima, Seoul Summit, Christchurch Call, Munich Elections Accord, Thorn child safety, etc.)
 - [[concepts/anthropic-system-cards]] — Anthropic System Cards: Official model documentation for all Claude models (Claude 2 through Opus 4.8). 15 system cards indexed. Standard structure covers RSP evaluations, cyber, safeguards, agentic safety, alignment, model welfare, capabilities. Key trends: evaluation saturation, growing evaluation awareness, grader speculation.
+- [[concepts/model-cards-system-cards]] — Model Cards and System Cards: Transparency documents published by AI developers describing capabilities, testing, limitations, and safeguards. Analysis perspectives: capability-disclaimer gap, benchmark selection bias, safety layer architecture, absence as signal, regulatory alignment.
 - [[concepts/anthropics-memory-tool-cognition-strategic-follow]] — Anthropic's Memory Tool: Cognition's strategic follow-up
 - [[concepts/anti-ai-arguments-are-conservative-arguments]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/anti-patterns-in-agentic-engineering]] — Anti-patterns in Agentic Engineering

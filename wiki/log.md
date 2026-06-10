@@ -1,5 +1,15 @@
 ---
 
+## [2026-06-10] Model Cards / System Cards concept page + Rob Hoeijmakers entity
+
+**Action**: Ingested Rob Hoeijmakers' article "Model Cards, System Cards and What They're Quietly Becoming" (2025-08-05). Created concept page with 7 analysis perspectives for system card / model card review: capability-disclaimer gap, benchmark selection bias, safety layer architecture, absence as signal, regulatory alignment, evolution tracking, political nature.
+
+**Raw article saved**: `raw/articles/2025-08-05_model-cards-system-cards-hoeijmakers.md`
+**Pages created**: `concepts/model-cards-system-cards.md` (concept), `entities/rob-hoeijmakers.md` (entity)
+**Pages linked**: `concepts/anthropic-system-cards` (cross-reference)
+**Tags added**: `model-card`, `system-card` (new in SCHEMA.md)
+**Source**: https://hoeijmakers.net/model-cards-system-cards/
+
 ## [2026-06-10] TileRT "breaking-1000-tps" deep-dive article ingestion
 
 **Action**: Ingested TileRT's detailed technical deep-dive "Two Leaps to 1000 Tokens/s on a 1T-Parameter Model" (2026-06-08). Adds microsecond-scale bottleneck triage details (RMSNorm, RoPE, KV Cache writes as bottlenecks), two-leap framing (execution model revolution + co-design), and MiMo×TileRT co-design specifics.
