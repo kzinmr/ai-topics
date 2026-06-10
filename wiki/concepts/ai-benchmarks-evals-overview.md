@@ -156,6 +156,7 @@ Positions SWE-Bench Verified as "the first (?) agentic benchmark," suggesting a 
 
 ## Related Pages
 
+- [[concepts/ai-benchmarks-and-community]] - AI Benchmarks & Evals MOC (systematic navigation of all benchmark/eval pages)
 - [[entities/florian-brand]] - Florian Brand (@xeophon) entity page
 - [[concepts/llm-evaluation]] - LLM evaluation overview
 - [[concepts/swe-bench]] - SWE-bench details

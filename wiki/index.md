@@ -928,7 +928,7 @@
 - [[concepts/ai-as-abstraction-layer]] — "ai-as-abstraction-layer"
 - [[concepts/ai-assisted-development]] — AI-Assisted Development
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
-- [[concepts/ai-benchmarks-and-community]] — AI Benchmarks and Community
+- [[concepts/ai-benchmarks-and-community]] — AI Benchmarks & Evals MOC — Systematic navigation of all benchmark/eval wiki pages. Uses Hoeijmakers' Benchmarks→Evals framework; covers 20+ benchmarks (knowledge, coding, multimodal, agent), evaluation methodology (LLM-as-Judge, eval vs monitoring), tools (Langfuse, Braintrust, Raindrop), and agent evaluation evolution.
 - [[concepts/ai-benchmarks-evals-overview]] — Comprehensive summary of Florian Brand (@xeophon)'s 18-part series on AI benchmarks and evaluation metrics. Covers design philosophy, data sourcing, strengths, and weaknesses of GPQA, LiveCodeBench, Aider Polyglot, MMLU Pro, MMMU, MRCR, SimpleQA, Vibe-Eval, BFCL V3, IFEval, ChartQA, Tau-Bench, HLE, CountBenchQA, ARC-AGI, and more.
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics — Analysis of the structural unsustainability of AI industry economics. Covers subsidy models, circular financing, the subprime AI crisis thesis, Doctorow's internet-vs-AI bubble comparison, and Zitron's "Business Idiot" thesis on management-driven AI hype.
 - [[concepts/ai-bubble]] — The AI Bubble thesis: speculative investment disconnected from fundamentals. Circular revenue dependencies (OpenAI-hyperscaler), unrealistic projections, infrastructure misalignment. Ed Zitron's primary chronicler role.

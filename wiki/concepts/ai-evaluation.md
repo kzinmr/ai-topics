@@ -93,6 +93,7 @@ See [[raw/articles/2026-05-19_langfuse-academy-evals-explained.md]] for the full
 - [[concepts/llm-as-judge]] — Detailed methodology for LLM-based evaluation
 - [[concepts/evaluation-flywheel]] — Evaluation as a continuous improvement loop
 - [[concepts/offline-evaluation]] — Offline evaluation techniques
+- [[concepts/ai-benchmarks-and-community]] — AI Benchmarks & Evals MOC (systematic navigation of all benchmark/eval pages)
 - [[concepts/ai-benchmarks-evals-overview]] — Broader benchmarks landscape
 
 ## Sources

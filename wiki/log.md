@@ -7631,3 +7631,5 @@ Updated:
 - **comparisons**: Created claude-mythos-preview-vs-mythos5-fable5.md — Preview vs Mythos 5/Fable 5 comparison
 - **index.md**: Added comparison page, updated count 27-28
 - 2026-06-10 | comparison | claude-sonnet46-vs-opus46 | Claude Sonnet 4.6 vs Opus 4.6 system card comparison. Source: https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf
+- 2026-06-10 | raw/articles | 2025-08-03_hoeijmakers_benchmarks-to-evals-guide.md | Ingested Hoeijmakers "From Benchmarks to Evals" guide
+- 2026-06-10 | concepts/ai-benchmarks-and-community | Upgraded from stub to AI Benchmarks & Evals MOC — comprehensive navigation page covering 20+ benchmarks, eval methodology, tools, and agent evaluation evolution
