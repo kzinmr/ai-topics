@@ -797,7 +797,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1018 pages)
+## Concepts (1016 pages)
 - [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1598,10 +1598,12 @@
 - [[concepts/openai/astral-acquisition]] — "OpenAI Acquires Astral — Codex Toolchain Strategy"
 - [[concepts/openai/codex-superapp]] — OpenAI Codex Superapp — OpenAI's unified coding agent platform
 - [[concepts/gpt/gpt-deployment-safety-hub]] — OpenAI Deployment Safety Hub (deploymentsafety.openai.com): Central index for all 19 OpenAI system cards (Feb 2025–Jun 2026). Preparedness Framework evaluations across Bio/Chem, Cybersecurity, AI Self-Improvement. Key trends: safety level escalation (first Cyber High with GPT-5.3-Codex), agentic model proliferation (5 Codex cards), domain-specific deployment (GPT-Rosalind-5.5).
+- [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): OpenAI's first agentic browsing product. Fine-tuned o3 with autonomous web browsing loop (search→browse→note→iterate→report). All Preparedness categories LOW. Key risks: prompt injection (extensive red-teaming), sandboxed browsing (no code execution, no downloads). HLE ~26.6%. Predecessor to ChatGPT Agent.
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework — Published May 28, 2026. Public governance document aligning OpenAI's safety practices with California's Transparency in Frontier AI Act and the EU AI Act's Code of Practice. Covers cyber, CBRN, manipulation, and loss-of-control risks.
 - [[concepts/openai/realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
 - [[concepts/gpt/gpt-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
 - [[concepts/gpt/gpt-o3-o4-mini-system-card]] — o3 and o4-mini System Card (Apr 2025): First Preparedness Framework v2 assessment. No High threshold in any category. Key findings: reward hacking detected by METR (1% of attempts), time horizon ~1.5h, bio/chem near-threshold, CTF 89%/68%/59% (high-school/collegiate/professional). Last standalone o-series card before GPT-5 unification.
+- [[concepts/gpt/gpt-5-system-card]] — GPT-5 System Card (Aug 2025): Unified system architecture (gpt-5-main + gpt-5-thinking + router). Introduces safe completions replacing hard refusals. First model to classify gpt-5-thinking as Bio/Chem High (precautionary). Preparedness Framework: Bio/Chem High, Cyber/Self-Improvement below High. CoT monitorability evaluations, sandbagging research update. External evals by SecureBio, METR, Apollo Research, Pattern Labs, government red teaming.
 - [[concepts/openai/realtime-api]] — OpenAI Realtime API — WebSocket-based streaming voice/text API for low-latency agents. Function calling, session management, VAD tuning. Perplexity voice search case study.
 - [[concepts/openai/responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
 - [[concepts/openai/symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.

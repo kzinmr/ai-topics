@@ -224,7 +224,7 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | Macro Evals for Agentic Systems | Large-scale agentic eval | [[concepts/macro-evals-for-agentic-systems]] |
 | Infrastructure Noise in Agent Evals | Infra noise quantification | [[concepts/infrastructure-noise-agent-evals]] |
 | Process Reward Models | PRM-based agent evaluation | [[concepts/process-reward-models-agent-eval]] |
-| Harness Design Patterns | Multi-agent GAN loop etc. | [[concepts/harness-design-multi-agent-gan-loop-context-reset-sprint-contracts-evaluator-pattern]] |
+| Harness Design Patterns | Multi-agent GAN loop etc. | [[concepts/agent-harness-primitives]] |
 
 ### Metrics
 
