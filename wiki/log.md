@@ -7912,3 +7912,21 @@ Updated:
 - 2026-06-10 | updated | wiki/index.md | Added OBLIQ-Bench entry
 - 2026-06-10 | entity | textarena | TextArena: 100+ competitive text-based games for LLM benchmarking and RL training. OpenAI Gym-style interface, online leaderboard with TrueSkill, SPIRAL self-play training paradigm. arXiv:2504.11442. Source: https://www.textarena.ai/blog
 - 2026-06-10 | concept | ai-benchmarks/unstable-baselines | UnstableBaselines: Async, online, multi-agent RL library for training reasoning models on TextArena games. ~1.2K LOC, LoRA-first, REINFORCE + A2C. vLLM hot-swapping for opponent sampling. Source: https://github.com/TextArena/UnstableBaselines
+
+## 2026-06-10 — Active Crawl: 5 New Pages
+
+- **CREATED**: concepts/agent-safety-interventions.md — Silent safety interventions (steering vectors, prompt modification) disclosed in Claude Fable 5 system card
+- **CREATED**: entities/command-center.md — cc.dev AI-native multi-agent coding environment (Show HN, 62 pts)
+- **CREATED**: entities/nightwatch.md — ninoxAI/nightwatch open-source read-only AI SRE (Show HN, 33 pts)
+- **CREATED**: entities/nvidia-cosmos-3.md — NVIDIA Cosmos 3 unified physical AI platform (GTC Taipei 2026)
+- **CREATED**: entities/agentsview.md — AgentsView LLM observability platform with custom model pricing
+- **UPDATED**: SCHEMA.md — Added `silent-intervention`, `prompt-modification` to tag taxonomy
+
+**Raw articles saved**:
+- raw/articles/2026-06-10_simonwillison_claude-fable-silent-refusal.md
+- raw/articles/2026-06-08_ccdev_command-center-ai-coding-env.md
+- raw/articles/2026-06-07_ninoxai_nightwatch-ai-sre.md
+- raw/articles/2026-06-10_nvidia_cosmos-3-platform.md
+- raw/articles/2026-06-09_simonwillison_agentsview-custom-pricing.md
+
+**Sources**: HN Algolia trending scan, X/Twitter search via xurl, blogwatcher DB, Simon Willison's Weblog, GitHub, NVIDIA Technical Blog
