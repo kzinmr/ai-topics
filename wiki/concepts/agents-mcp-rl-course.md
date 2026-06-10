@@ -16,7 +16,9 @@ tags:
   - tool-calling
 sources:
   - raw/articles/2026-06-10_maven_agents-mcp-rl-course-overview.md
+  - raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
+  - https://maven.com/p/193c6f/build-your-own-ai-research-agent
 ---
 
 # Production-Ready Agent Engineering: From MCP to RL
@@ -62,6 +64,27 @@ CTO of **OpenPipe**, the RL post-training company that helps companies train cus
 | [research-agent-lesson](https://github.com/willccbb/research-agent-lesson) | "Build Your Own AI Research Agent" lesson files |
 | [verifiers](https://github.com/PrimeIntellect-ai/verifiers) | RL environment library for training and evaluating LLMs |
 | [mcp-client-server](https://github.com/willccbb/mcp-client-server) | MCP Server that's also an MCP Client |
+
+## Lightning Lessons (Pre-Course Workshops)
+
+Free, standalone workshops offered before the main course cohort begins. Each focuses on a single topic and can be watched independently.
+
+| Date | Lightning Lesson | Resources |
+|------|-----------------|-----------|
+| Jun 10 | [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning\|Build Your Own AI Research Agent]] (Will Brown) | [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook\|Notebook]] · [GitHub](https://github.com/willccbb/research-agent-lesson) · [Maven](https://maven.com/p/193c6f/build-your-own-ai-research-agent) |
+| TBD | Build Your (Custom) AI Agent with MCP (Shaw Talebi) | *pending* · [Maven](https://maven.com/p/18214c/build-your-custom-ai-agent-with-mcp) |
+
+### Lightning Lesson 1: Build Your Own AI Research Agent
+
+A ~75-minute workshop building a deep research agent from scratch. Covers:
+- Agent definitions (LLM + tool calls in a while loop)
+- V1 agent: regex-based XML parsing with search/fetch tools
+- V2 agent: sub-models as tools (helper models for bulk reading)
+- MCP crash course: client/server architecture, standardized tool interface
+- Deep research via Claude Code with MCP servers
+- Evaluating agent output and connecting to RL reward signals
+
+**Key takeaway:** Agents and RL are two sides of the same coin. Building agents from scratch (without frameworks) teaches the core loop that RL optimizes.
 
 ## Lecture Schedule
 
@@ -126,6 +149,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[entities/will-brown]] — Primary instructor
 - [[concepts/corbett-kyle-corbitt]] — Co-instructor
 - [[entities/prime-intellect]] — Will Brown's organization (verifiers, PRIME-RL)
+- [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning]] — Lightning Lesson 1: Build Your Own AI Research Agent
+- [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook]] — Lightning Lesson 1 notebook walkthrough
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))

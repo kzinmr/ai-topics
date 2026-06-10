@@ -1,5 +1,12 @@
 ---
 
+## [2026-06-10] Deep Research System Card wiki page created
+
+**Action**: Created wiki concept page for OpenAI Deep Research System Card (Feb 2025). Documented agentic browsing architecture (fine-tuned o3), Preparedness LOW ratings, browsing-specific risks, HLE benchmark (~26.6%), privacy model, and successor relationship to ChatGPT Agent. Updated index.md.
+
+**Files**: `concepts/gpt/gpt-deep-research-system-card.md`
+
+
 ## [2026-06-10] Sarah Guo "The Untrainable" article ingestion
 
 **Action**: Ingested Sarah Guo's essay "The Untrainable" (2026-06-10) from saranormous.substack.com. Created entity page for Sarah Guo (Conviction.com founder, AI investor) and concept page for "The Untrainable" framework (legible vs illegible work, absorption frontier, private ground truth, permission & accountability).
@@ -7754,3 +7761,17 @@ Updated:
 - **RENAMED**: transcript and raw article filenames from 2025-06-18 to 2025-06-17 (actual lecture date)
 - **UPDATED**: All cross-references in portal page, index.md, frontmatter
 - **ADDED**: ReAct, Doc Search Agent, Instructor library, XML parsing, self-hosted structured outputs to lesson summary
+
+## 2026-06-10 — GPT-5 System Card wiki page created
+
+- **CREATED**: `concepts/gpt/gpt-5-system-card.md` — GPT-5 System Card (Aug 2025) concept page
+- Covers: unified architecture (main+thinking+router), safe completions, Preparedness Framework (Bio/Chem High), key evaluations, deployment safeguards, external evaluators
+- **UPDATED**: `wiki/index.md` — added gpt-5-system-card entry
+
+## 2026-06-10 — Lightning Lesson 1: Build Your Own AI Research Agent
+
+- **CREATED**: `raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md` — Lightning Lesson summary (Maven page + content summary)
+- **CREATED**: `transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook.md` — Notebook walkthrough (agents.ipynb from research-agent-lesson repo)
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lightning Lessons section, sources, related links
+- **UPDATED**: `wiki/index.md` — Added transcript entry
+- Sources: Maven (https://maven.com/p/193c6f/build-your-own-ai-research-agent), GitHub (willccbb/research-agent-lesson)
