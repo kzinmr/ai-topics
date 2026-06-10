@@ -19,6 +19,7 @@ sources:
   - raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md
   - raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning.md
   - raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2.md
+  - raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://maven.com/p/193c6f/build-your-own-ai-research-agent
@@ -68,6 +69,7 @@ CTO of **OpenPipe**, the RL post-training company that helps companies train cus
 | [ai-agent-engineering](https://github.com/willccbb/ai-agent-engineering) | Course files (71+ stars) |
 | [research-agent-lesson](https://github.com/willccbb/research-agent-lesson) | "Build Your Own AI Research Agent" lesson files |
 | [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb) | Lesson 2 notebook: production-grade agent patterns |
+| [evals_optimization.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec3-evals-optimization/evals_optimization.ipynb) | Lesson 3 notebook: evals, SFT, and GRPO |
 | [verifiers](https://github.com/PrimeIntellect-ai/verifiers) | RL environment library for training and evaluating LLMs |
 | [mcp-client-server](https://github.com/willccbb/mcp-client-server) | MCP Server that's also an MCP Client |
 
@@ -111,7 +113,7 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 |------|---------|------------|
 | Jun 17 | [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture\|Lesson 1: Agent Patterns & Principles]] | [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1\|Summary]] |
 | Jun 19 | [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture\|Lesson 2: MCP + Production-Grade Agents]] | [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2\|Summary]] |
-| TBD | Lecture 3 | *pending* |
+| Jun 24 | [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture|Lesson 3: Agent Evals and Optimization]] | [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3|Summary]] |
 | TBD | Lecture 4 | *pending* |
 | TBD | Lecture 5 | *pending* |
 | TBD | Lecture 6 | *pending* |
@@ -129,6 +131,14 @@ Inaugural lecture establishing the central thesis: RL and agents are two sides o
 Bridges prototyping to production. Covers type hints as defense against silent LM output bugs, async processing (`asyncio.gather` + semaphores for ~7-8x speedup), agentic RAG vs prefetch RAG, MCP architecture ("FastAPI but LM-shaped"), logging frameworks (Logfire, Weave, MLflow, Arize), security (sandboxing, codifying patterns as tools), and the N×M→N+M problem MCP solves. Strong stance: A2A is premature, MCP is the standard to build on.
 
 **Transcript:** [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] · **Summary:** [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]] · **Notebook:** [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb)
+
+### Lesson 3: Agent Evals and Optimization (Jun 24)
+
+The third lecture focuses on **evaluation methodology** as the foundation for RL optimization. Covers the benchmark landscape (Artificial Analysis, BFCL v3, TAO Bench), **model spec** as the starting point for eval design, deterministic evals (format parsing, instruction following via IFEval, set-product test generation), LM judges (calibration across models, pairwise comparison with position bias randomization, confidence intervals), **supervised fine-tuning** (TRL/Axolotl/Unsloth/Torchtune, LoRA vs full fine-tuning, curriculum learning by difficulty sorting), and a deep dive into **GRPO** mechanics (reference models, KL divergence penalty in token space, on-policy vs off-policy tradeoffs, online reference model updates).
+
+**Key insight:** SFT is the gateway to RL — it validates that your task is learnable before expensive RL runs. Write a model spec before writing evals; use deterministic evals first (format, tool calls, instruction following); calibrate LM judges by comparing multiple models; for GRPO, start slow and safe with online reference updates.
+
+**Transcript:** [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture]] · **Summary:** [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3]] · **Notebook:** [evals_optimization.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec3-evals-optimization/evals_optimization.ipynb)
 
 ## Included Credits
 
@@ -186,6 +196,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook]] — Lightning Lesson 2 notebook walkthrough
 - [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2]] — Lesson 2: MCP + Production-Grade Agents
 - [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] — Lesson 2 transcript
+- [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3]] — Lesson 3: Agent Evals and Optimization
+- [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture]] — Lesson 3 transcript
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))

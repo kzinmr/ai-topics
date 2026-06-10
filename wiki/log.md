@@ -7894,7 +7894,19 @@ Updated:
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 2 to Lecture Schedule, Lesson Summaries section, sources, related links
 - **UPDATED**: `index.md` — Added Lesson 2 transcript entry
 
+## 2026-06-10 — Lesson 3 Transcript Ingestion (Agent Evals and Optimization)
+
+- **CREATED**: `transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture.md` — Structured transcript of Lesson 3 with timestamps, 11 sections covering evals, benchmarks, model spec, deterministic evals, LM judges, SFT, GRPO deep dive
+- **CREATED**: `raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3.md` — Lesson 3 summary article with benchmark table, SFT library comparison, key takeaways
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 3 to Lecture Schedule, Lesson Summaries section, companion resources, sources, related links
+- **UPDATED**: `index.md` — Added Lesson 3 transcript entry
+- **NOTEBOOK**: https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec3-evals-optimization/evals_optimization.ipynb
+
 - 2026-06-10 | raw/papers | 2023-03-27_openai-gpt-4-system-card.pdf | Saved GPT-4 System Card PDF (60 pages, 1MB)
 - 2026-06-10 | concept | gpt-4-system-card | GPT-4 System Card (Mar 2023): Genesis of system card practice. 12 risk categories, 50+ red teamers, ARC eval, RBRMs. Source: https://cdn.openai.com/papers/gpt-4-system-card.pdf
 - 2026-06-10 | updated | gpt-deployment-safety-hub | Added GPT-4 to Pre-2025 section
 - 2026-06-10 | updated | gpt-system-card-milestones | Added Phase -1 (GPT-4 foundation)
+- 2026-06-10 | raw/article | 2026-05-06_dianetc_obliq-bench-latent-implicit-queries.md | OBLIQ-Bench X announcement by @dianetc_ + arxiv link (2605.06235)
+- 2026-06-10 | concept | ai-benchmarks/obliq-bench | OBLIQ-Bench: Oblique retrieval benchmark (MIT, May 2026). 5 tasks testing latent/implicit query retrieval. All retrievers near zero NDCG@10, reasoning LLMs verify easily. Authors: Tchuindjo, Shah, Khattab.
+- 2026-06-10 | updated | ai-benchmarks/index.md | Added OBLIQ-Bench to Search & Retrieval section
+- 2026-06-10 | updated | wiki/index.md | Added OBLIQ-Bench entry
