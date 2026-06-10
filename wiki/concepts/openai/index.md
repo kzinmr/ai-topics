@@ -25,6 +25,7 @@ Platform, API, SDK, and business pages for [[entities/openai|OpenAI]]. Model-cen
 - [[concepts/openai/codex-safety]] — Codex safety measures
 
 ## Governance & Security
+- [[concepts/openai/model-spec]] — OpenAI Model Spec — behavioral specification for all models (chain of command, content restrictions, agentic scope)
 - [[concepts/openai/frontier-governance-framework]] — Transparency in Frontier AI Act alignment
 - [[concepts/openai/tanstack-supply-chain-2026]] — npm supply chain attack response
 
