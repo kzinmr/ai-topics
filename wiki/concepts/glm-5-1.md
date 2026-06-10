@@ -1,7 +1,7 @@
 ---
 title: "GLM-5.1"
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-06-10
 type: concept
 tags:
   - model
@@ -16,6 +16,8 @@ related:
   - "concepts/agentic-engineering]]"
 sources:
   - raw/articles/glm-5-1-zhipu-2026.md
+  - raw/articles/2026-05-21_zrdianjiao-glm51-highspeed-tilert.md
+  - raw/articles/2026-05-21_tilert_speed-as-the-next-scaling-law.md
   - https://www.bentoml.com/blog/navigating-the-world-of-open-source-large-language-models
 ---
 
@@ -46,11 +48,23 @@ GLM-5.1 can maintain productive work across **hundreds of rounds and thousands o
 
 The MoE architecture (only 40B active params out of 744B total) makes GLM-5.1 one of the most cost-efficient models at this scale for agentic deployments.
 
+## GLM-5.1-HighSpeed (May 2026)
+
+Ultra-low-latency inference variant powered by [[entities/tilert|TileRT]]. Achieves **400 tokens/s** — a new speed ceiling for flagship-tier LLM APIs.
+
+- Not a smaller model traded for speed; the same flagship 744B MoE model
+- Backend: TileRT persistent engine kernel with tile-level execution pipeline
+- Attention layer decomposed into heterogeneous workers: GPU0 = Sparse Indexer, GPUs 1-7 = MLA Workers
+- Announced by zR (@zRdianjiao), Algorithm Engineer at Z.AI
+- Technical deep-dive: https://www.tilert.ai/blog/speed-as-the-next-scaling-law.html
+
 ## Related Concepts
 
 - [[entities/zhipu-ai]] — Developer company
 - [[concepts/agent-harness-primitives]] — Agentic infrastructure patterns
 - [[concepts/agentic-engineering]] — Software development with AI agents
+- [[entities/tilert]] — TileRT inference engine (HighSpeed backend)
+- [[concepts/speed-as-scaling-law]] — Speed as the next scaling law
 
 ## Sources
 

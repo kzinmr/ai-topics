@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2441 | Indexed entries: 1897 | Concepts: 1022 | Entities: 785
+> Last updated: 2026-06-10 | Total pages: 2443 | Indexed entries: 1899 | Concepts: 1023 | Entities: 786
 
 ## Entities (785 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -608,6 +608,7 @@
 - [[entities/thin-bi-tool]] — Thinning BI tools — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
 - [[entities/thomas-wiecki]] — Thomas Wiecki — CEO of PyMC Labs, PyMC core developer, co-host of Show Us Your Agent Skills. Vanishing Gradients Agentic Data Science episode (May 2026): Decision Engines, Multiplayer DS, Causal-Bayesian workflows. Bayesian statistics expert.
 - [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
+- [[entities/tilert]] — TileRT — Next-gen AI inference execution engine. Persistent kernel, tile pipeline, warp specialization for ultra-low-latency inference on commodity GPUs. Powers GLM-5.1-HighSpeed (400 tok/s) and MiMo-V2.5-Pro-UltraSpeed (1000 tok/s).
 - [[entities/tim-davis]] — Tim Davis — Modular executive, Compound Loop creator. Originated "probabilistic engineering" and "24-7 employee" concepts. Key thinker on AI-native team restructuring and agent fleet orchestration.
 - [[entities/tim-dettmers]] — Researcher (UW), creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference), and QLoRA (4-bit fine-tuning). Discovered 6.7B parameter phase shift for emergent outlier features.
 - [[entities/tim-oreilly]] — O'Reilly Media founder, technology thinker. Coined "Web 2.0", framed Vibe Coding/CHOP in historical abstraction context, articulated Agent Engineer role and need for agent infrastructure protocols.
@@ -1743,6 +1744,7 @@
 - [[concepts/speculative-decoding]] — Speculative Decoding
 - [[concepts/speech-audio-asr-tts-voice]] — Speech, Audio, ASR, TTS, Voice — Speech recognition, audio processing, text-to-speech, and voice AI technologies.
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
+- [[concepts/speed-as-scaling-law]] — Speed as the Next Scaling Law — Inference latency becoming a primary axis of AI capability. Three eras: Chat (quality) → Agentic (throughput) → Autonomous (SPEED). Persistent kernels, DFlash speculative decoding, FP4 quantization. Landmarks: GLM-5.1-HighSpeed 400 tok/s, MiMo UltraSpeed 1000 tok/s.
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
 - [[concepts/stack-benchmarking]] — Stack Benchmarking (Ramp) — Ramp's custom accounting benchmark for developing Ramp Stack agentic accounting assistant. Frontier model evaluation, skill ablation, memory architecture.
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch — Full-stack LLM implementation course covering pretraining, tokenization, inference, and alignment.

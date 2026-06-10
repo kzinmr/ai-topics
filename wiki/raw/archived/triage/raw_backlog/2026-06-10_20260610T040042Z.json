@@ -1,0 +1,62 @@
+[
+  {
+    "item_id": "2026-06-03_microsoft-mai-thinking-1-tech-report",
+    "source": "raw-backlog",
+    "source_name": "Microsoft AI Technical Report",
+    "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+    "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ `concepts/mai-thinking-1-tech-report.md`（227行）にアーキテクチャ、GRPO改良、ベンチマーク、インフラ全て収録済み。5回目の出現。",
+    "candidate_wiki_path": "concepts/mai-thinking-1-tech-report.md",
+    "body_excerpt": "109-page tech report. 35B active / 1T total MoE. Modified GRPO with adaptive entropy control. 8K GB200 GPUs, 90% goodput. MAIA-200 inference silicon. Full architecture ladder (L12-L78), LatentMoE, dropless MoE, RMSNorm init findings."
+  },
+  {
+    "item_id": "2026-05-02_walkinglabs_hands-on-modern-rl",
+    "source": "raw-backlog",
+    "source_name": "Walking Labs",
+    "title": "Hands-On Modern RL: A Practice-First Guide",
+    "url": "https://github.com/walkinglabs/hands-on-modern-rl",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ `concepts/hands-on-modern-rl.md`（156行）にカリキュラム全体収録済み。RLHF/DPO/GRPO/RLVR/Agentic RL全てカバー。",
+    "candidate_wiki_path": "concepts/hands-on-modern-rl.md",
+    "body_excerpt": "Open-source RL curriculum bridging CartPole to LLM post-training. Line-by-line code for PPO/DPO/GRPO. Bilingual (CN/EN). Agentic RL experiments with DeepCoder-style GRPO curves. GPU sponsorship sought."
+  },
+  {
+    "item_id": "dwarkesh-alex-imas-phil-trammell",
+    "source": "raw-backlog",
+    "source_name": "Dwarkesh Podcast",
+    "title": "Alex Imas and Phil Trammell - What remains scarce after AGI?",
+    "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ already_archived。`entities/dwarkesh-patel.md`のReferencesに収録済み。AGI後の希少資源に関する経済学議論。",
+    "candidate_wiki_path": "entities/dwarkesh-patel.md",
+    "body_excerpt": "Economics of AGI episode. Optimal taxation and redistribution of AI-generated wealth. Country-level AI supply chain positioning. Scarcity post-AGI analysis."
+  },
+  {
+    "item_id": "wheresyoured-ai-roi",
+    "source": "raw-backlog",
+    "source_name": "Where's Your Ed At",
+    "title": "AI Doesn't Have ROI",
+    "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ already_archived。Ed FeltenのAI投資収益率に関する批評記事。previous triageでskip判断済み。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "Critical analysis of AI ROI claims. Questions enterprise AI investment returns. Examines NVIDIA, Anthropic, OpenAI financials in context of AI bubble."
+  },
+  {
+    "item_id": "paulgraham-popular",
+    "source": "raw-backlog",
+    "source_name": "Paul Graham",
+    "title": "Being Popular",
+    "url": "http://www.paulgraham.com/popular.html",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/paulgraham.com--popular-html--c633a6dc.md",
+    "recommended_action": "skip",
+    "reason_ja": "★☆☆☆☆ already_archived。2001年のプログラミング言語設計に関するエッセイ。AIトピックではなくwikiスコープ外。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "May 2001 essay on programming language design. Discusses powerful abstractions as the key feature of good languages. Business plan context for a new language."
+  }
+]

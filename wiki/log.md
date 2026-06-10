@@ -1,5 +1,25 @@
 ---
 
+## [2026-06-10] TileRT + Speed as Scaling Law ingestion
+
+**Action**: Ingested 3 articles about TileRT inference engine and speed-as-scaling-law concept:
+1. TileRT blog: "Speed as the Next Scaling Law" (2026-05-21) — persistent kernel architecture, GLM-5.1-HighSpeed 400 tok/s
+2. Xiaomi MiMo blog: "MiMo-V2.5-Pro-UltraSpeed" (2026-06-08) — 1000 tok/s on 1T model via FP4 + DFlash + TileRT
+3. X post by @zRdianjiao (Zhipu AI) — GLM-5.1-HighSpeed announcement
+
+**Pages created**:
+- `entities/tilert.md` — TileRT inference engine entity page
+- `concepts/speed-as-scaling-law.md` — Speed as the next scaling law concept page
+
+**Pages updated**:
+- `entities/xiaomi-mimo.md` — Added UltraSpeed model variant, FP4/DFlash/TileRT section, updated sources and related links
+- `concepts/glm-5-1.md` — Added GLM-5.1-HighSpeed section with TileRT backend details, updated sources and related links
+
+**Raw articles saved**:
+- `raw/articles/2026-05-21_tilert_speed-as-the-next-scaling-law.md`
+- `raw/articles/2026-06-08_xiaomi-mimo-tilert-1000tps.md`
+- `raw/articles/2026-05-21_zrdianjiao-glm51-highspeed-tilert.md`
+
 ## [2026-06-10] Anthropic–DoD Dispute concept page
 
 **Action**: Created concept page for the Anthropic–DoD dispute (ongoing legal confrontation over military use of Claude). Saved raw articles from Wikipedia and Semafor. Updated Anthropic entity page Pentagon Blacklisting section with legal proceedings and June 2026 status. Updated index.md.
