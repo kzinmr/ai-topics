@@ -7633,3 +7633,7 @@ Updated:
 - 2026-06-10 | comparison | claude-sonnet46-vs-opus46 | Claude Sonnet 4.6 vs Opus 4.6 system card comparison. Source: https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75.pdf
 - 2026-06-10 | raw/articles | 2025-08-03_hoeijmakers_benchmarks-to-evals-guide.md | Ingested Hoeijmakers "From Benchmarks to Evals" guide
 - 2026-06-10 | concepts/ai-benchmarks-and-community | Upgraded from stub to AI Benchmarks & Evals MOC — comprehensive navigation page covering 20+ benchmarks, eval methodology, tools, and agent evaluation evolution
+- 2026-06-10 | raw/articles | 2026-06-10_openai-deployment-safety-hub.md | Ingested OpenAI Deployment Safety Hub (deploymentsafety.openai.com) — central index for all 19 system cards
+- 2026-06-10 | concept | openai-deployment-safety-hub | OpenAI Deployment Safety Hub: Complete index of 19 system cards (Feb 2025–Jun 2026). Preparedness Framework (Bio/Chem, Cyber, AI Self-Improvement). Safety level escalation, agentic proliferation, domain-specific deployment. Source: https://deploymentsafety.openai.com/
+- 2026-06-10 | updated | model-cards-system-cards | Added cross-reference to openai-deployment-safety-hub
+- 2026-06-10 | updated | anthropic-system-cards | Added cross-reference to openai-deployment-safety-hub
