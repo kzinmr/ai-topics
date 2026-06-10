@@ -55,7 +55,7 @@ CourtListener provides a REST API for accessing legal data programmatically:
 ## Related
 
 - [[entities/harvey]] — integrated CourtListener's 9M+ opinions into AI legal platform
-- [[concepts/legal-agent-benchmark]] — benchmark for legal AI agents that depends on authoritative case law sources
+- [[concepts/ai-benchmarks/legal-agent-benchmark]] — benchmark for legal AI agents that depends on authoritative case law sources
 
 ## Sources
 

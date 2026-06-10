@@ -81,7 +81,7 @@ Open-source library by Antoine Chaffin extending Sentence Transformers for multi
 - [[concepts/rag-not-dead-series]] — Part 4 of the series
 - [[concepts/modern-retrieval-toolkit]] — Part 1: Ben Clavié's thesis; late-interaction is a key part of the modern toolkit
 - [[concepts/reasoning-retrieval]] — Part 3: complementary paradigm; reasoning + late-interaction are the two new retrieval pillars
-- [[concepts/freshstack-benchmark]] — Part 2: evaluation methods for these models
+- [[concepts/ai-benchmarks/freshstack-benchmark]] — Part 2: evaluation methods for these models
 
 ## Sources
 

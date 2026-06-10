@@ -99,7 +99,7 @@ As CEO Mark McQuade (ex-Hugging Face monetization) puts it: they're proving that
 
 ## Relationship to ATOM Project
 
-Arcee AI is one of the key participants responding to [[entities/nathan-lambert|Nathan Lambert]]'s **[[concepts/ram-relative-adoption-metric|ATOM Project]]** call to action for U.S.-based open model development. They are among the handful of companies (alongside Prime Intellect, Nous, Moondream, Pleias, Jina, Hugging Face pretraining team, Allen AI, Eleuther) building open AI infrastructure.
+Arcee AI is one of the key participants responding to [[entities/nathan-lambert|Nathan Lambert]]'s **[[concepts/ai-benchmarks/ram-relative-adoption-metric|ATOM Project]]** call to action for U.S.-based open model development. They are among the handful of companies (alongside Prime Intellect, Nous, Moondream, Pleias, Jina, Hugging Face pretraining team, Allen AI, Eleuther) building open AI infrastructure.
 
 ## Timeline
 

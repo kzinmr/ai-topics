@@ -161,4 +161,4 @@ See [[entities/north-mini-code]] for full details.
 - [[entities/voyage-ai]] — competitor in embedding/rerank models
 - [[entities/glean]] — complementary enterprise AI; Cohere provides models, Glean provides the search layer
 - [[entities/fireworks-ai]] — open-weight inference platform; Fireworks ran LAB post-training experiments
-- [[concepts/legal-agent-benchmark]] — Harvey LAB; Fireworks used Kimi K2.6 post-training (Cohere connection via shared ecosystem)
+- [[concepts/ai-benchmarks/legal-agent-benchmark]] — Harvey LAB; Fireworks used Kimi K2.6 post-training (Cohere connection via shared ecosystem)

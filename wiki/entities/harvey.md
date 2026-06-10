@@ -55,7 +55,7 @@ Harvey built its own cloud agent runtime rather than relying on managed platform
 
 Law firms face a novel constraint: **client conflicts over model providers**. A firm that represents a model-provider client (e.g., a company building its own models) cannot send that client's matters through a competitor's model. As more enterprises train their own models, the set of firms caught by this constraint grows quickly.
 
-Beyond conflicts, quality and cost optimization demand multi-model access. Harvey's [[concepts/legal-agent-benchmark]] shows clear separation by practice area and task type — different models lead in different domains. The industry is shifting from "Which model is best?" to "Which model is most efficient for this specific task?"
+Beyond conflicts, quality and cost optimization demand multi-model access. Harvey's [[concepts/ai-benchmarks/legal-agent-benchmark]] shows clear separation by practice area and task type — different models lead in different domains. The industry is shifting from "Which model is best?" to "Which model is most efficient for this specific task?"
 
 Platform risk is another driver. Committing to a single managed runtime means lock-in at the agent-workforce level — agents built in one provider's format cannot be moved. Pereyra distinguishes between frontier-lab runtimes (maximum lock-in, tied to one model family) and cloud-provider runtimes (model-flexible but lag on newest models). Harvey operates an **abstraction layer** that normalizes the harness, sandbox, and behavioral differences beneath a single interface, making the choice of model a routing decision.
 
@@ -137,7 +137,7 @@ The agentic SOC operates on top of Harvey's trust boundary, separate from Spectr
 
 ## Legal Agent Benchmark (LAB) — May 2026
 
-Harvey released the **Legal Agent Benchmark (LAB)**, an open-source benchmark for evaluating AI agents on complex, long-horizon legal tasks. See [[concepts/legal-agent-benchmark]] for full details.
+Harvey released the **Legal Agent Benchmark (LAB)**, an open-source benchmark for evaluating AI agents on complex, long-horizon legal tasks. See [[concepts/ai-benchmarks/legal-agent-benchmark]] for full details.
 
 ### Key Highlights
 - **All-pass grading**: Expert-curated rubrics require every criterion to pass — mirroring strict legal review standards

@@ -17,7 +17,7 @@ sources:
   - raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge-lecture.md
   - raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge.md
 related:
-  - concepts/ndcg
+  - concepts/ai-benchmarks/ndcg
   - concepts/query-understanding
   - concepts/bm25
   - entities/doug-turnbull
@@ -26,7 +26,7 @@ related:
 
 # LLM Search Judge
 
-**LLM Search Judge** is the practice of using large language models to automatically evaluate search result relevance, replacing or supplementing expensive human labelers. It enables computation of standard IR metrics ([[concepts/ndcg|NDCG]]) on unlabeled real-world query traffic, dramatically reducing the cost and turnaround time of relevance evaluation.
+**LLM Search Judge** is the practice of using large language models to automatically evaluate search result relevance, replacing or supplementing expensive human labelers. It enables computation of standard IR metrics ([[concepts/ai-benchmarks/ndcg|NDCG]]) on unlabeled real-world query traffic, dramatically reducing the cost and turnaround time of relevance evaluation.
 
 The technique was systematized by **Doug Turnbull** in Part 4 of his *Cheat at Search* course (2026), building on the Umbrella framework by Lin et al. and drawing on the broader "LLM as a Judge" paradigm (MT-Bench, AlpacaEval). The key insight is that while LLMs are not perfect judges (~73% pointwise agreement with humans), they are **consistent enough at a fraction of the cost** to enable rapid search iteration.
 
@@ -161,7 +161,7 @@ This enables **continuous evaluation** — every ranking change can be immediate
 
 ## Relationship to Other Concepts
 
-### [[concepts/ndcg|NDCG]]
+### [[concepts/ai-benchmarks/ndcg|NDCG]]
 NDCG is the target metric; LLM search judging is the **label-generation method** that enables NDCG computation without human annotations. The two form a complete evaluation stack: LLM judges produce grades, NDCG normalizes and aggregates them.
 
 ### [[concepts/query-understanding|Query Understanding]]

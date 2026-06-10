@@ -229,6 +229,6 @@ This reimagines search as **systematic traversal** rather than **stochastic prob
 - [[concepts/agent-engineering-guide-2026]] — Orchestrator-subagent pattern and harness mindset
 - [[concepts/harness-engineering/agentic-engineering-guardrails-layer]] — Guardrails as a harness layer
 - [[concepts/query-understanding]] — LLM query understanding (Part 2 of Cheat at Search)
-- [[concepts/ndcg]] — NDCG evaluation metric (Part 1 of Cheat at Search)
+- [[concepts/ai-benchmarks/ndcg]] — NDCG evaluation metric (Part 1 of Cheat at Search)
 - [[entities/doug-turnbull]] — Doug Turnbull, creator of the Cheat at Search series
 - [[entities/doug-turnbull-speaking]] — Complete list of Turnbull's talks/lectures

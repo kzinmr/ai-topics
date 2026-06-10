@@ -38,7 +38,7 @@ The 2023 version of RAG (chunk → vector DB → cosine similarity → LLM) fail
 | Part | Title | Expert | Key Concept |
 |------|-------|--------|-------------|
 | 1 | [[concepts/modern-retrieval-toolkit\|I don't use RAG, I just retrieve documents]] | Ben Clavié | Why naive single-vector search is dead; the modern retrieval toolkit (BM25, ColBERT, agentic search) |
-| 2 | [[concepts/freshstack-benchmark\|Modern IR Evals For RAG]] | Nandan Thakur | FreshStack: multi-dimensional eval (Coverage, Diversity, Relevance) replacing contaminated BEIR/MTEB |
+| 2 | [[concepts/ai-benchmarks/freshstack-benchmark\|Modern IR Evals For RAG]] | Nandan Thakur | FreshStack: multi-dimensional eval (Coverage, Diversity, Relevance) replacing contaminated BEIR/MTEB |
 | 3 | [[concepts/reasoning-retrieval\|Optimizing Retrieval with Reasoning Models]] | Orion Weller | Promptriever (instruction-aware bi-encoder) + Rank1 (reasoning-based reranker with CoT) |
 | 4 | [[concepts/late-interaction-retrieval|Late Interaction Models For RAG]] | Antoine Chaffin | ColBERT-style MaxSim preserving token-level detail; 150M model outperforming 7B dense models on reasoning |
 | 5 | [[concepts/multiple-representations-rag|RAG with Multiple Representations]] | Bryan Bischof & Ayush Chaurasia | "The Map is Not the Territory" — create multiple specialized maps instead of one perfect embedding |
@@ -140,7 +140,7 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 ## Related Concepts
 
 - [[concepts/modern-retrieval-toolkit]] — Part 1: modern retrieval pipeline replacing naive RAG
-- [[concepts/freshstack-benchmark]] — Part 2: multi-dimensional RAG evaluation
+- [[concepts/ai-benchmarks/freshstack-benchmark]] — Part 2: multi-dimensional RAG evaluation
 - [[concepts/reasoning-retrieval]] — Part 3: instruction-aware + reasoning-based retrieval
 - [[concepts/late-interaction-retrieval]] — Part 4: ColBERT/MaxSim preserving token-level detail; 150M model beats 7B dense
 - [[concepts/multiple-representations-rag]] — Part 5: "The Map is Not the Territory" — create multiple specialized maps instead of one universal embedding

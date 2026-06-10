@@ -148,7 +148,7 @@ AI and LLM concept pages organized by topic.
 
 ## Agent-Survival-Benchmark
 
-- [[concepts/agent-survival-benchmark]] — An open-source benchmark measuring LLM agent survivability and performance under PvP (player vs player) pressure.
+- [[concepts/ai-benchmarks/agent-survival-benchmark]] — An open-source benchmark measuring LLM agent survivability and performance under PvP (player vs player) pressure.
 
 ## Agent-Team-Swarm
 

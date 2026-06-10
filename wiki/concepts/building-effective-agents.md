@@ -168,7 +168,7 @@ He found the **Evaluator-Optimizer** pattern "especially fun" and strongly agree
 - [[concepts/managed-agents]] — Meta-harness architecture
 - [[concepts/multi-agent-research-system]] — Orchestrator-workers in production
 - [[concepts/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation of these principles
-- [[concepts/swe-bench-agent-scaffolding]] — SWE-bench agent implementation details
+- [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — SWE-bench agent implementation details
 - [[concepts/agentic-loop]] — The core agent execution loop
 
 ## Sources

@@ -59,7 +59,7 @@ Live, cohort-based training course on search engineering with LLMs and agents. R
 | Lesson 7 | **AutoReSEARCH — Ranking Coded by Agents** | Using coding agents to iteratively optimize search ranking code. Dependency injection pattern (inject BM25/vector primitives, let agent assemble ranking functions), three guardrails against overfitting, focused composition (narrow scope per round), MS Marco BM25 experiment. Conference version presented at HaystackConf 2026. [[raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf]] |
 
 **Slide deck series (2026):**
-- Part 1: [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg|NDCG / Search Evaluation]] — graded relevance, DCG, NDCG, precision@k, MAP, MRR (see also [[concepts/ndcg]])
+- Part 1: [[raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg|NDCG / Search Evaluation]] — graded relevance, DCG, NDCG, precision@k, MAP, MRR (see also [[concepts/ai-benchmarks/ndcg]])
 - Part 2: [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search|LLM Query Understanding]] — structured attribute extraction from free-text queries
 - Part 3: [[raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents|Steering Lost Agents]] — agentic design patterns for search
 - Part 4: [[raw/articles/2026-05-28_softwaredoug_cheat-at-search-llm-as-judge|LLM as a Judge]] — automated search relevance evaluation with LLMs (see also [[concepts/llm-search-judge]])

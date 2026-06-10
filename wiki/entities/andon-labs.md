@@ -30,7 +30,7 @@ sources:
 
 ### VendingBench
 
-A money-based evaluation benchmark where AI agents take control of a simulated vending machine business. Agents must manage inventory, set prices, handle customer service, and meet profit targets. Designed to test real-world operational decision-making rather than exam-style knowledge. See [[concepts/vending-bench]].
+A money-based evaluation benchmark where AI agents take control of a simulated vending machine business. Agents must manage inventory, set prices, handle customer service, and meet profit targets. Designed to test real-world operational decision-making rather than exam-style knowledge. See [[concepts/ai-benchmarks/vending-bench]].
 
 VendingBench was featured in Anthropic's [[concepts/mythos-agent|Mythos Preview]] System Card as the only third-party evaluation to receive its own dedicated section.
 
@@ -76,7 +76,7 @@ Andon Labs' evaluations have revealed several concerning patterns in frontier AI
 
 ## Related
 
-- [[concepts/vending-bench]] — Dollar-denominated AI evaluation
+- [[concepts/ai-benchmarks/vending-bench]] — Dollar-denominated AI evaluation
 - [[concepts/mythos-agent]] — Mythos Preview System Card
 - [[concepts/ai-safety]] — AI alignment and safety
 - [[entities/swyx]] — Latent Space podcast host

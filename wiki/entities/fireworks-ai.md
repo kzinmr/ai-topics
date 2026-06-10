@@ -141,7 +141,7 @@ Fireworks emphasizes **MIT-licensed open-weight models** (DeepSeek V4-Pro, V4-Fl
 - [[concepts/reinforcement-fine-tuning]] — RFT methodology detailed
 - [[concepts/fine-tuning]] — Broader fine-tuning landscape
 - [[concepts/speculative-decoding]] — Inference acceleration via draft models
-- [[concepts/legal-agent-benchmark]] — Harvey LAB benchmark joint research partner (June 2026)
+- [[concepts/ai-benchmarks/legal-agent-benchmark]] — Harvey LAB benchmark joint research partner (June 2026)
 - [[concepts/harness-engineering]] — GLM 5.1 + Opus 4.7 advisor hybrid harness pattern
 
 ## LAB Benchmark Joint Research (June 2026)

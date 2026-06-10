@@ -206,7 +206,7 @@ Google is playing a **genuinely different game** to OpenAI and Anthropic. Gemini
 
 ## Benchmaxxing & Instruction-Following Criticism (2026)
 
-Gemini models have faced persistent community criticism for **high benchmark scores coupled with poor real-world instruction following** — a pattern the community calls [[concepts/benchmaxxing|benchmaxxing]].
+Gemini models have faced persistent community criticism for **high benchmark scores coupled with poor real-world instruction following** — a pattern the community calls [[concepts/ai-benchmarks/benchmaxxing|benchmaxxing]].
 
 **Florian Brand (@xeophon)** (June 8, 2026):
 > "Gemini is an amazing model, the benchmarks don't lie. It's super smart. But it is very stubborn; it isn't good at instruction following and does things its way. That's why people say it's benchmaxxed."

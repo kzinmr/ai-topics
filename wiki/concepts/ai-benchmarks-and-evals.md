@@ -141,8 +141,8 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | LiveCodeBench | Rolling problems (contamination-free) | [[concepts/ai-benchmarks/livecodebench]] |
 | Aider Polyglot | 6-language code editing | [[concepts/ai-benchmarks/aider-polyglot]] |
 | SWE-bench / Verified | Real GitHub issue resolution | [[concepts/ai-benchmarks/swe-bench]] |
-| DeepSWE Benchmark | Deep SWE evaluation | [[concepts/deepswe-benchmark]] |
-| Frontier SWE Benchmark | Frontier SWE capability | [[concepts/frontier-swe-benchmark]] |
+| DeepSWE Benchmark | Deep SWE evaluation | [[concepts/ai-benchmarks/deepswe-benchmark]] |
+| Frontier SWE Benchmark | Frontier SWE capability | [[concepts/ai-benchmarks/frontier-swe-benchmark]] |
 | FrontierCode | Code quality | [[concepts/frontiercode]] |
 | Stack Benchmarking | Tech stack evaluation | [[concepts/stack-benchmarking]] |
 
@@ -160,8 +160,8 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | BFCL V3 | Berkeley Function Calling | [[concepts/ai-benchmarks/bfcl-v3]] |
 | IFEval | Instruction following | [[concepts/ai-benchmarks/ifeval]] |
 | Tau-Bench | Function calling (LLM simulates users) | [[concepts/ai-benchmarks/tau-bench]] |
-| Tau-Voice | Voice agent evaluation | [[concepts/tau-voice]] |
-| Tau-Knowledge | Knowledge-based evaluation | [[concepts/tau-knowledge]] |
+| Tau-Voice | Voice agent evaluation | [[concepts/ai-benchmarks/tau-voice]] |
+| Tau-Knowledge | Knowledge-based evaluation | [[concepts/ai-benchmarks/tau-knowledge]] |
 
 ### Long Context & Numerical Reasoning
 
@@ -178,17 +178,17 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | Benchmark | What It Tests | Wiki Page |
 |---|---|---|
 | Factorio LE | Factory automation via code+REPL | [[concepts/ai-benchmarks/factorio-learning-environment]] |
-| Agent Survival | Agent survival under PvP pressure | [[concepts/agent-survival-benchmark]] |
-| Vending Bench | Vending machine operation | [[concepts/vending-bench]] |
-| Agent Arena | Causal tracing agent comparison | [[concepts/agent-arena]] |
+| Agent Survival | Agent survival under PvP pressure | [[concepts/ai-benchmarks/agent-survival-benchmark]] |
+| Vending Bench | Vending machine operation | [[concepts/ai-benchmarks/vending-bench]] |
+| Agent Arena | Causal tracing agent comparison | [[concepts/ai-benchmarks/agent-arena]] |
 
 ### Domain-Specific
 
 | Benchmark | What It Tests | Wiki Page |
 |---|---|---|
-| Legal Agent Benchmark | Legal agent evaluation | [[concepts/legal-agent-benchmark]] |
-| GAIA | General AI assistant | [[concepts/gaia-benchmark]] |
-| FreshStack | RAG evaluation | [[concepts/freshstack-benchmark]] |
+| Legal Agent Benchmark | Legal agent evaluation | [[concepts/ai-benchmarks/legal-agent-benchmark]] |
+| GAIA | General AI assistant | [[concepts/ai-benchmarks/gaia-benchmark]] |
+| FreshStack | RAG evaluation | [[concepts/ai-benchmarks/freshstack-benchmark]] |
 | EQ-Bench | Emotional intelligence | — |
 
 ---
@@ -211,8 +211,8 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 |---|---|---|
 | Evals vs Monitoring | Offline eval vs production monitoring | [[concepts/evals-vs-monitoring-debate]] |
 | Evaluation Harness Validity | Harness design determines capability | [[concepts/evaluation-harness-validity]] |
-| Benchmaxxing | Benchmark over-optimization trap | [[concepts/benchmaxxing]] |
-| AI Resistant Evaluations | AI-resistant evaluation design | [[concepts/ai-resistant-evaluations]] |
+| Benchmaxxing | Benchmark over-optimization trap | [[concepts/ai-benchmarks/benchmaxxing]] |
+| AI Resistant Evaluations | AI-resistant evaluation design | [[concepts/ai-benchmarks/ai-resistant-evaluations]] |
 
 ### Agent Evaluation
 
@@ -231,8 +231,8 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 | Metric | Summary | Wiki Page |
 |---|---|---|
 | LLM-as-Judge | Automated LLM evaluation | [[concepts/llm-as-judge]] |
-| Pass@k | Code generation success rate | [[concepts/pass-k-metric]] |
-| NDCG | Search ranking metric | [[concepts/ndcg]] |
+| Pass@k | Code generation success rate | [[concepts/ai-benchmarks/pass-k-metric]] |
+| NDCG | Search ranking metric | [[concepts/ai-benchmarks/ndcg]] |
 
 ---
 
@@ -242,7 +242,7 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 |---|---|---|
 | Langfuse Academy | Trace → Monitor → Dataset → Experiment → Evaluate | [[concepts/ai-evaluation]] |
 | LangSmith / Braintrust / Arize Phoenix | Evaluation tool comparison | [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] |
-| Lighteval | Hugging Face evaluation library | [[concepts/lighteval]] |
+| Lighteval | Hugging Face evaluation library | [[concepts/ai-benchmarks/lighteval]] |
 | Galileo Eval Engineer | Evaluation engineering | [[entities/galileo-eval-engineer]] |
 | Raindrop | Agent monitoring | [[concepts/evals-vs-monitoring-debate]] |
 | Braintrust | Eval platform | [[concepts/evals-vs-monitoring-debate]] |
@@ -295,10 +295,10 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 - [[concepts/evals-vs-monitoring-debate]] — Evals vs monitoring debate
 - [[concepts/evaluation-harness-validity]] — OpenAI harness design framework
 - [[concepts/llm-evaluation-harness]] — EleutherAI lm-eval
-- [[concepts/benchmaxxing]] — Benchmark over-optimization
+- [[concepts/ai-benchmarks/benchmaxxing]] — Benchmark over-optimization
 - [[concepts/agent-evaluation-methodology]] — Agent evaluation lifecycle
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench (origin of agentic benchmarks)
-- [[concepts/agent-arena]] — Agent Arena (causal inference-based)
+- [[concepts/ai-benchmarks/agent-arena]] — Agent Arena (causal inference-based)
 - [[concepts/evals-for-ai-agents]] — Agent eval practices
 - [[concepts/evaluation-flywheel]] — Continuous evaluation cycle
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author

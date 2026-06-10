@@ -14,8 +14,8 @@ related:
   - concepts/scaling-laws
   - concepts/ai-coding-reliability
   - concepts/ai-evals
-  - concepts/frontier-swe-benchmark
-  - concepts/workspace-bench
+  - concepts/ai-benchmarks/frontier-swe-benchmark
+  - concepts/ai-benchmarks/workspace-bench
   - concepts/tool-use-tax
 sources:
   - raw/articles/seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad.md
@@ -89,8 +89,8 @@ This model explains why:
 - [[concepts/tool-use-tax]] — Performance degradation from tool-calling protocol overhead
 - [[concepts/ai-coding-reliability]] — Measurement of AI coding agent performance
 - [[concepts/ai-evals]] — Frameworks for evaluating AI model capabilities
-- [[concepts/frontier-swe-benchmark]] — High-difficulty coding agent evaluation
-- [[concepts/workspace-bench]] — Multi-file dependency evaluation benchmark
+- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — High-difficulty coding agent evaluation
+- [[concepts/ai-benchmarks/workspace-bench]] — Multi-file dependency evaluation benchmark
 
 ## Sources
 

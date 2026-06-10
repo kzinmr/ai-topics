@@ -12,14 +12,13 @@ status: active
 
 # AI Benchmarks Index
 
-> Sub-index of individual AI benchmark pages. Part of the [[concepts/ai-benchmarks-and-evals|MOC]].
-> All benchmark pages are in the `concepts/ai-benchmarks/` directory.
+> Sub-index of all individual AI benchmark, metric, and benchmark-methodology pages.
+> Part of the [[concepts/ai-benchmarks-and-evals|MOC]].
+> All pages are in the `concepts/ai-benchmarks/` directory.
 
 ---
 
 ## Xeophon Series (18 Parts)
-
-Individual benchmark pages from @xeophon's "Popular Benchmarks / Evals" series:
 
 ### Knowledge & Science
 - [[concepts/ai-benchmarks/gpqa]] — Part 1: Graduate-level Google-proof Q&A
@@ -48,7 +47,7 @@ Individual benchmark pages from @xeophon's "Popular Benchmarks / Evals" series:
 
 ### Abstract Reasoning
 - [[concepts/ai-benchmarks/arc-agi-1]] — Part 15: ARC-AGI (Chollet's fluid intelligence)
-- [[concepts/ai-benchmarks/arc-agi-2-benchmark]] — Part 16: ARC-AGI 2 (human-validated)
+- [[concepts/ai-benchmarks/arc-agi-2]] — Part 16: ARC-AGI 2 (human-validated improvement)
 
 ### Counting
 - [[concepts/ai-benchmarks/countbenchqa]] — Part 14: Ultra-simple counting
@@ -61,29 +60,52 @@ Individual benchmark pages from @xeophon's "Popular Benchmarks / Evals" series:
 
 ---
 
-## Other Benchmarks (Wiki Pages)
+## τ-bench Ecosystem
 
-### Agent Evaluation
-- [[concepts/agent-survival-benchmark]] — Agent survival under PvP pressure
-- [[concepts/agent-arena]] — Causal tracing agent comparison (Arena AI)
-- [[concepts/vending-bench]] — Vending machine operation task
+- [[concepts/ai-benchmarks/tau-bench]] — Base benchmark (airline + retail, 2024)
+- [[concepts/ai-benchmarks/tau-squared-bench]] — τ²-bench: Dual control evaluation (telecom, 2025)
+- [[concepts/ai-benchmarks/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation (banking, 2026)
+- [[concepts/ai-benchmarks/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation (2026)
+- [[concepts/ai-benchmarks/pass-k-metric]] — pass^k reliability metric
 
-### Domain-Specific
-- [[concepts/legal-agent-benchmark]] — Legal agent evaluation (Harvey AI)
-- [[concepts/gaia-benchmark]] — General AI assistant
-- [[concepts/freshstack-benchmark]] — RAG evaluation (Hamel Husain)
+## SWE-bench Ecosystem
 
-### Coding & SWE (non-xeophon)
-- [[concepts/deepswe-benchmark]] — Deep SWE evaluation (DataCurve)
-- [[concepts/frontier-swe-benchmark]] — Frontier SWE capability
-- [[concepts/frontiercode]] — Code quality (slop avoidance)
-- [[concepts/stack-benchmarking]] — Ramp's tech stack evaluation
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-bench & SWE-bench Verified
+- [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — Harness design impact analysis
+- [[concepts/ai-benchmarks/deepswe-benchmark]] — Deep SWE evaluation (DataCurve)
+- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE capability
 
-### Metrics
-- [[concepts/pass-k-metric]] — Code generation success rate
-- [[concepts/ndcg]] — Search ranking quality
+## Agent & Game Environments
 
-### Meta / Methodology
-- [[concepts/benchmaxxing]] — Benchmark over-optimization trap
-- [[concepts/evaluation-harness-validity]] — Harness design determines capability
-- [[concepts/ai-resistant-evaluations]] — AI-resistant evaluation design
+- [[concepts/ai-benchmarks/agent-survival-benchmark]] — Agent survival under PvP pressure
+- [[concepts/ai-benchmarks/agent-arena]] — Causal tracing agent comparison (Arena AI)
+- [[concepts/ai-benchmarks/vending-bench]] — Vending machine operation task
+- [[concepts/ai-benchmarks/factorio-learning-environment]] — Factory automation via code+REPL
+
+## Domain-Specific
+
+- [[concepts/ai-benchmarks/legal-agent-benchmark]] — Legal agent evaluation (Harvey AI)
+- [[concepts/ai-benchmarks/gaia-benchmark]] — General AI assistant
+- [[concepts/ai-benchmarks/freshstack-benchmark]] — RAG evaluation (Hamel Husain)
+
+## Coding (non-xeophon)
+
+- [[concepts/ai-benchmarks/frontiercode]] — Code quality (slop avoidance)
+- [[concepts/ai-benchmarks/stack-benchmarking]] — Ramp's tech stack evaluation
+- [[concepts/ai-benchmarks/workspace-bench]] — Workspace-level coding benchmark
+- [[concepts/ai-benchmarks/kernelbench]] — Kernel-level benchmark
+- [[concepts/ai-benchmarks/programbench]] — Program-level benchmark
+- [[concepts/ai-benchmarks/openbenches]] — Open benchmarks collection
+- [[concepts/ai-benchmarks/yourbench]] — Your custom benchmark
+
+## Metrics
+
+- [[concepts/ai-benchmarks/pass-k-metric]] — Code generation success rate
+- [[concepts/ai-benchmarks/ndcg]] — Search ranking quality
+- [[concepts/ai-benchmarks/ram-relative-adoption-metric]] — Relative adoption metric
+
+## Benchmark Methodology & Meta
+
+- [[concepts/ai-benchmarks/benchmaxxing]] — Benchmark over-optimization trap
+- [[concepts/ai-benchmarks/ai-resistant-evaluations]] — AI-resistant evaluation design
+- [[concepts/ai-benchmarks/lighteval]] — Hugging Face evaluation library

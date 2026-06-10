@@ -190,7 +190,7 @@ Prime Intellect synthesizes both:
 - **[[entities/omar-khattab]]** — PhD advisor, ColBERT/DSPy creator
 - **[[concepts/tim-kraska]]** — PhD co-advisor, MIT DSG, ML systems
 - **[[concepts/gpu-mode]]** — Benchmarking leadership
-- **[[concepts/kernelbench]]** — ICML 2025 Best Paper
+- **[[concepts/ai-benchmarks/kernelbench]]** — ICML 2025 Best Paper
 - **[[concepts/scaffold-vs-rl-debate]]** — Both Zhang and Yao argue for trained scaffolds
 - **** — RLM as a new ACI paradigm
 - **** — RLM scales computation, not parameters

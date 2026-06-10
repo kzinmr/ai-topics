@@ -88,7 +88,7 @@ Comparison with identical model (Claude), same harness, same task set.
 ## See Also
 
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench benchmark
-- [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
-- [[concepts/ai-resistant-evaluations]] — AI-resistant evaluation design
+- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE benchmark
+- [[concepts/ai-benchmarks/ai-resistant-evaluations]] — AI-resistant evaluation design
 - [[concepts/eval-awareness-browsecomp]] — Eval awareness and contamination
 - [[swe-bench-agent-scaffolding]] — Agent scaffolding for SWE-bench

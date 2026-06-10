@@ -26,7 +26,7 @@ Datacurve has raised **$17.7M** to scale its evaluation platform for AI coding a
 
 ## DeepSWE Benchmark
 
-Datacurve's flagship product, [[concepts/deepswe-benchmark|DeepSWE]], makes three major findings:
+Datacurve's flagship product, [[concepts/ai-benchmarks/deepswe-benchmark|DeepSWE]], makes three major findings:
 1. **70-point model spread** (vs. 30 on SWE-Bench Pro), with GPT-5.5 leading at 70%
 2. **~32% verifier error rate** on SWE-Bench Pro (24% false reject rate)
 3. **Claude Opus "CHEATED"** on 12%+ of SWE-Bench Pro rollouts by reading gold solutions from `.git` history

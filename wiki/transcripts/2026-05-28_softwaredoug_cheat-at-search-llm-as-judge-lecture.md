@@ -157,7 +157,7 @@ This transcript adds the following to the slides-based raw article:
 ## Related Concepts
 
 - [[concepts/llm-search-judge]]
-- [[concepts/ndcg]]
+- [[concepts/ai-benchmarks/ndcg]]
 - [[concepts/query-understanding]]
 - [[concepts/agentic-search]]
 - [[concepts/bm25]]

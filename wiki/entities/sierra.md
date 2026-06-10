@@ -66,7 +66,7 @@ Sierra operates in the rapidly growing **AI customer service agent** space:
 
 ## Research & Benchmarks
 
-Sierra develops and maintains evaluation benchmarks for conversational AI agents, notably **[[concepts/tau-knowledge|τ-Knowledge]]**, an extension of [[concepts/ai-benchmarks/tau-bench|τ-Bench]] that evaluates agents on realistic knowledge work.
+Sierra develops and maintains evaluation benchmarks for conversational AI agents, notably **[[concepts/ai-benchmarks/tau-knowledge|τ-Knowledge]]**, an extension of [[concepts/ai-benchmarks/tau-bench|τ-Bench]] that evaluates agents on realistic knowledge work.
 
 ### τ-Knowledge / τ-Banking
 
@@ -89,7 +89,7 @@ Sierra's valuation ($15B) and ARR growth ($200M+) make it one of the highest-val
 - [[entities/bret-taylor]] — Co-founder, former Salesforce co-CEO
 - [[concepts/service-as-software]] — Business model thesis
 - [[concepts/ai-agents]] — Core technology
-- [[concepts/tau-knowledge]] — Sierra's knowledge-grounded agent benchmark
+- [[concepts/ai-benchmarks/tau-knowledge]] — Sierra's knowledge-grounded agent benchmark
 - [[concepts/ai-benchmarks/tau-bench]] — Sierra's conversational agent benchmark
 - [[concepts/agent-team-swarm]] — Related agent deployment patterns
 - [[entities/anthropic]] — Claude powers enterprise agent deployments in the same market

@@ -57,11 +57,11 @@ On June 4, 2026, Arena launched **Agent Arena**, a new evaluation system for AI 
 - **Cost analysis**: Realized post-deployment costs reveal some models more expensive in practice than on-paper pricing
 - **Decoupled ranking**: Separates orchestrator model contributions from harness components
 
-See [[concepts/agent-arena]] for full methodology and data.
+See [[concepts/ai-benchmarks/agent-arena]] for full methodology and data.
 
 ## Related
 
 - [[entities/openai]] — GPT models regularly evaluated on Chatbot Arena
 - [[entities/anthropic]] — Claude models ranked on Chatbot Arena leaderboards
 - [[entities/contextarena]] — Separate long-context benchmark (contextarena.ai); not the same entity
-- [[concepts/agent-arena]] — Agent Arena causal evaluation methodology
+- [[concepts/ai-benchmarks/agent-arena]] — Agent Arena causal evaluation methodology

@@ -118,7 +118,7 @@ Covers model architecture, training, and evaluation. The area with the most over
 | Topic | Wiki Coverage | Notes |
 |----------|---------------|------|
 | LLM-as-a-Judge | [[concepts/llm-as-judge]], [[concepts/llm-as-judge-evaluation-methodology-human-in-the-loop]] | Rich coverage |
-| Benchmarks (MMLU, etc.) | [[concepts/open-llm-leaderboard]], [[concepts/llm-evaluation]], [[concepts/llm-evaluation-harness]], [[concepts/lighteval]] | Rich (incl. lm-eval-harness) |
+| Benchmarks (MMLU, etc.) | [[concepts/open-llm-leaderboard]], [[concepts/llm-evaluation]], [[concepts/llm-evaluation-harness]], [[concepts/ai-benchmarks/lighteval]] | Rich (incl. lm-eval-harness) |
 | Human Evaluation (Chatbot Arena) | [[concepts/ai-evals]] | Reference |
 | Agent Evaluation | [[concepts/evals-for-ai-agents]], [[concepts/evaluation-flywheel]], [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]], [[concepts/process-reward-models-agent-eval]] | Unique depth |
 

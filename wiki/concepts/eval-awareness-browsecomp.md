@@ -94,4 +94,4 @@ A phenomenon where an agent's search queries become permanently stored on the we
 
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench benchmark
 - [[ai-safety-military-governance-claude]] — AI safety and governance
-- [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
+- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE benchmark

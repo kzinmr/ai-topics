@@ -206,7 +206,7 @@ Eden's response is typically pragmatic: file the FOI, get the data, publish the 
 
 [[concepts/uk-government-digital-service]] — Eden's former employer; shaped UK government digital policy
 [[concepts/activitypub]] — Decentralized social networking protocol; Eden built ActivityBot
-[[concepts/openbenches]] — Eden's crowdsourced memorial bench database (40,000+ benches)
+[[concepts/ai-benchmarks/openbenches]] — Eden's crowdsourced memorial bench database (40,000+ benches)
 [[concepts/open-data]] — Eden's advocacy area; published personal solar and energy consumption data
 [[concepts/foaf]] — Friend of a Friend trust model Eden has analyzed
 [[concepts/mastodon]] — Fediverse platform; Eden's bots interact with it via ActivityPub
