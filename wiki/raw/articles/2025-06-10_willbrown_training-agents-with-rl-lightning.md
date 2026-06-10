@@ -11,7 +11,7 @@ tags:
   - grpo
   - tool-calling
   - agent-evaluation
-  - verifiers
+  - reinforcement-learning
   - education
 ---
 

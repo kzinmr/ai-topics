@@ -1302,7 +1302,7 @@
 - [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (M
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel — OpenAI pattern cycling evaluation and improvement for AI product development.
 - [[concepts/evaluation-harness-validity]] — OpenAI's framework for trustworthy third-party evaluations (May 2026). Harness choice determines whether capability appears in evaluation. Three claim types: capability elicitation, controlled comparison, safeguard performance.
-- [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
+- [[comparisons/llm-evaluation-tools]] — Eval Tools Comparison: LangSmith, Braintrust, Arize Phoenix, Inspect AI.
 - [[concepts/event-driven-architecture]] — Event-Driven Architecture — Software design pattern for asynchronous, decoupled service communication.
 - [[concepts/excessive-agency]] — Excessive Agency — OWASP Top 10 for LLMs entry on AI agents taking unintended actions.
 - [[concepts/exec-plans]] — Execution Plans — Pattern where agents create a plan before executing tasks.

@@ -11,7 +11,7 @@ tags:
   - grpo
   - tool-calling
   - agent-evaluation
-  - verifiers
+  - reinforcement-learning
   - education
   - transcript
 related_article: articles/2025-06-10_willbrown_training-agents-with-rl-lightning.md
