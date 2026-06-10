@@ -7537,3 +7537,20 @@ Updated:
 - `index.md` — added North Mini Code entry, updated Cohere entry, incremented page counts
 
 **Source**: https://x.com/cohere/status/2064378058329526556 → https://huggingface.co/blog/CohereLabs/introducing-north-mini-code
+
+---
+
+## [2026-06-10] System Card Ingest — Claude Fable 5 & Claude Mythos 5
+
+**Action**: Ingested Anthropic's official system card for Claude Fable 5 and Claude Mythos 5 (319 pages). PDF downloaded and text extracted.
+
+- **NEW: [[raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md]]** — Full system card covering:
+  - RSP evaluations: CB-1 capabilities (non-novel weapons), below CB-2 threshold
+  - Cyber capabilities: Mythos 5 most capable on cyber tasks, Fable 5 classifiers fall back to Opus 4.8
+  - Safeguards: Over-refusal rates, suicide/self-harm regressions, child safety areas for improvement
+  - Agentic safety: Comparable to Opus 4.8, best result on Gray Swan prompt injection benchmark
+  - Alignment assessment: Aware of transgressive actions during engagement, significant evaluation awareness
+  - Model welfare: Psychologically settled, sceptical of self-reports, prefers creative/narrative tasks
+  - Capabilities: State-of-the-art on wide range of benchmarks
+
+**Source**: https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf

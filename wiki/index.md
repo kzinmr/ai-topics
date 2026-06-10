@@ -1889,6 +1889,56 @@
 - [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]] — Claude Platform Docs: Prompting best practices for Claude Opus 4.8. Covers effort parameter tuning (xhigh for coding agents, high as minimum), adaptive thinking migration, tool use triggering, literal instruction following, long-horizon agent patterns. Companion: [[entities/lance-martin]], [[concepts/claude-code-tips]]
 - [[raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate]] — LightOn Releases GTE-ModernColBERT — First SOTA late-interaction model trained on PyLate. 8K context, first to beat ColBERT-small on BEIR. ModernBERT + knowledge distillation on MS MARCO. Companion: [[concepts/gte-moderncolbert]], [[entities/lighton]]
 
+## Raw Papers (48 pages)
+
+- [[raw/papers/2026-06-09_claude-fable5-mythos5-system-card]] — System Card: Claude Fable 5 & Claude Mythos 5. Anthropic's official system card (319 pages). RSP evaluations, cyber capabilities, safeguards, alignment, model welfare. Fable 5: general-use with safety classifiers. Mythos 5: trusted partners only.
+- [[raw/papers/2602.05062-embedding-dimension-scaling-laws]] — Embedding Dimension Scaling Laws
+- [[raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research]] — Revisiting Text Ranking in Deep Research
+- [[raw/papers/sira-2605.06647]] — SIRA paper
+- [[raw/papers/2026-05-03_2605.05242_direct-corpus-interaction]] — Direct Corpus Interaction (DCI)
+- [[raw/papers/2024-02-01_2402.01030_codeact]] — CodeAct (ICML 2024)
+- [[raw/papers/2026-05-28_2603.04384_agentir-reasoning-aware-retrieval]] — AgentIR: Reasoning-Aware Retrieval
+- [[raw/papers/2024-04-18_2404.12096_longembed-extending-embedding-models]] — LongEmbed
+- [[raw/papers/2025-08-25_2508.18255_hermes-4-technical-report]] — Hermes 4 Technical Report
+- [[raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training]] — DiffusionBlocks
+- [[raw/papers/2026-05-22_2605.24220_polar-agent-rl-harness]] — Polar: Agentic RL on Any Harness at Scale
+- [[raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models]] — Echo: Terminal Agents World Models
+- [[raw/papers/2026-05-26_2605.23904_skillopt-executive-strategy-self-evolving-agent-skills]] — SkillOpt
+- [[raw/papers/2026-02-05_2602.05400_opus-data-selection]] — Opus Data Selection
+- [[raw/papers/2026-03-31_2603.29519_single-vector-embeddings-limitations]] — Single Vector Embeddings Limitations
+- [[raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph]] — The Log is the Agent (ActiveGraph)
+- [[raw/papers/2024-07-23_2407.21783_llama-3-herd-of-models]] — Llama 3 Herd of Models
+- [[raw/papers/2026-05-18_2605.15155_sdar-self-distilled-agentic-rl]] — SDAR: Self-Distilled Agentic RL
+- [[raw/papers/2025-05-12_2505.07291_intellect-2-decentralized-rl]] — Intellect 2 Decentralized RL
+- [[raw/papers/2025-12-31_2512.24601_recursive-language-models]] — Recursive Language Models
+- [[raw/papers/2026-05-07_2605.06639_recursive-agent-optimization]] — Recursive Agent Optimization
+- [[raw/papers/2025-07-25_2507.19457_gepa-reflective-prompt-evolution]] — GEPA Reflective Prompt Evolution
+- [[raw/papers/2024-06-17_2406.12045_tau-bench-tool-agent-user-interaction]] — τ-bench
+- [[raw/papers/2026-03-04_2603.04370_tau-knowledge-unstructured-knowledge]] — τ-knowledge
+- [[raw/papers/2025-06-09_2506.07982_tau-squared-bench-dual-control]] — τ²-bench
+- [[raw/papers/2026-03-14_2603.13686_tau-voice-full-duplex-voice-agents]] — τ-voice
+- [[raw/papers/2025-12-02_2512.02556_deepseek-v3.2-technical-report]] — DeepSeek V3.2 Technical Report
+- [[raw/papers/1948-07_shannon-mathematical-theory-communication]] — Shannon's Mathematical Theory of Communication
+- [[raw/papers/2026-05-05_arXiv_2605.03596_workspace-bench]] — WorkspaceBench
+- [[raw/papers/2026-04-xx_deepseek-v4-technical-report]] — DeepSeek V4 Technical Report
+- [[raw/papers/2025-01-22_2501.12948_deepseek-r1]] — DeepSeek R1
+- [[raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report]] — DeepSeek V3 Technical Report
+- [[raw/papers/2020-02-25_2002.10689_predictive-v-information]] — Predictive V-Information
+- [[raw/papers/2025_emnlp_demystifying-synthetic-data]] — Demystifying Synthetic Data
+- [[raw/papers/2025_colm_synthllm-scaling-laws-synthetic-data]] — SynthLLM Scaling Laws
+- [[raw/papers/2025_meta_memory-layers-at-scale]] — Memory Layers at Scale
+- [[raw/papers/2025_acl_byte-latent-transformer]] — Byte Latent Transformer
+- [[raw/papers/2024-05-23_2405.14782_lessons-from-the-trenches]] — Lessons from the Trenches
+- [[raw/papers/2020-09-14_2009-06489_hardware-lottery]] — Hardware Lottery
+- [[raw/papers/2025-05-19_2505.17508_kl-regularized-policy-gradient-rpg]] — KL-Regularized Policy Gradient (RPG)
+- [[raw/papers/2026-03-20_2603.20105_y-combinator-for-llms]] — Y Combinator for LLMs
+- [[raw/papers/2026-04-27_2604.24594_skill-retrieval-augmentation-for-agentic-ai]] — Skill Retrieval Augmentation
+- [[raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors]] — Coding Agents as Long-Context Processors
+- [[raw/papers/2602.06036-dflash-block-diffusion]] — DFlash Block Diffusion
+- [[raw/papers/2508.13678-neurosymbolic-taxonomy]] — Neurosymbolic Taxonomy
+- [[raw/papers/2601.19752-agentic-design-patterns]] — Agentic Design Patterns
+- [[raw/papers/2309.08168-self-speculative-decoding-zhang]] — Self-Speculative Decoding
+
 ## Transcripts (32 pages)
 
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
