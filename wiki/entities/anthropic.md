@@ -305,12 +305,23 @@ Anthropic was designated a **"supply chain risk"** by the Pentagon in February 2
 - **Autonomous lethal weapons**: Claude models could potentially pilot drones or make targeting decisions
 - **Domestic mass surveillance**: "Lawful use" could extend to monitoring U.S. citizens
 
+### Trigger: Palantir AIP Incident
+The dispute was directly triggered when Claude appeared on screens of officials monitoring the Venezuela Maduro seizure operation via [[entities/palantir]]'s AI Platform. During a routine check-in, Anthropic representatives expressed concerns; Palantir reported this to the Pentagon.
+
 ### Escalation Timeline
-- **Feb 2026**: Pentagon blacklists Anthropic; OpenAI strikes deal hours later (Altman: "opportunistic and sloppy")
-- **Mar 2026**: Anthropic sues in San Francisco and Washington D.C. to reverse blacklisting
-- **Apr 2026**: [[entities/claude-mythos|Mythos]] demonstrated finding 271 Firefox zero-days; White House reopens discussions
+- **Feb 2026**: Pentagon blacklists Anthropic; OpenAI strikes deal hours later
+- **Mar 9, 2026**: Anthropic files suit in N.D. California (*Anthropic PBC v. Department of War*)
+- **Mar 26, 2026**: Judge Rita F. Lin issues injunction against supply chain risk designation (First Amendment ruling)
+- **Apr 3, 2026**: GSA restores Anthropic technology per presidential directive
+- **Apr 8, 2026**: D.C. Circuit denies emergency motion to lift FASCSA designation
 - **May 1, 2026**: Pentagon signs 7 AI companies (SpaceX, OpenAI, Google, Nvidia, Microsoft, AWS, [[entities/reflection-ai|Reflection AI]]) — Anthropic excluded
 - **May 2026**: DOD CTO Emil Michael says Mythos is a "separate national security moment"; NSA reportedly using it despite the blacklist
+
+### Current Status (June 2026)
+- **No settlement reached** — litigation ongoing in D.C. Circuit
+- Judge Lin's injunction remains in effect (supply chain risk partially blocked)
+- FASCSA 180-day exclusion timeline proceeding for DoD target systems
+- Anthropic cannot serve as primary contractor/subcontractor on DoD systems
 
 ### Implications
 - **Anthropic losing $50B+ defense contracts** while competitors profit
@@ -318,7 +329,7 @@ Anthropic was designated a **"supply chain risk"** by the Pentagon in February 2
 - **$900B valuation target**: May be impacted by defense revenue exclusion
 - Dario Amodei met with White House Chief of Staff Susie Wiles; Trump says deal is "possible"
 
-See [[concepts/ai-military]] for broader context.
+See [[concepts/anthropic-dod-dispute]] for full analysis and [[concepts/ai-military]] for broader context.
 
 ## Claude Cowork Philosophy — Felix Rieseberg (May 2026)
 

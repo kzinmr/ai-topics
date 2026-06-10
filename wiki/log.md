@@ -1,5 +1,20 @@
 ---
 
+## [2026-06-10] Anthropic–DoD Dispute concept page
+
+**Action**: Created concept page for the Anthropic–DoD dispute (ongoing legal confrontation over military use of Claude). Saved raw articles from Wikipedia and Semafor. Updated Anthropic entity page Pentagon Blacklisting section with legal proceedings and June 2026 status. Updated index.md.
+
+**Pages created**:
+- `concepts/anthropic-dod-dispute.md`
+- `raw/articles/2026-06-10_anthropic-dod-dispute-wikipedia.md`
+- `raw/articles/2026-02-17_semafor-anthropic-pentagon-palantir-rift.md`
+
+**Pages modified**:
+- `entities/anthropic.md` (Pentagon Blacklisting section expanded)
+- `index.md`
+
+---
+
 ## [2026-06-10] Enrich Claude Fable 5 entity — Anthropic official blog post
 
 **Action**: Enriched Claude Fable 5 entity page with full content from Anthropic's official announcement blog post.
