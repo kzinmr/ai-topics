@@ -66,6 +66,6 @@ The **Principle of Maximum Heterogeneity** has formal proofs across neuroscience
 
 - [[concepts/heterogeneous-intelligence]] — The heterogeneous intelligence paradigm
 - [[concepts/inference]] — AI model inference
-- [[concepts/model-routing]] — Routing queries to optimal models
+- [[concepts/coding-agents/model-routing]] — Routing queries to optimal models
 - [[entities/nvidia]] — Dominant GPU era being challenged
 - [[entities/cerebras-systems]] — Competing inference hardware

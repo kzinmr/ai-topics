@@ -20,7 +20,7 @@ AgentsView allows users to set custom prices for models, enabling accurate cost 
 - Using models through proxies or [[concepts/llm-proxy|LLM proxies]] with different pricing than the official API
 - Running models on custom infrastructure with different cost structures
 - Using fine-tuned or self-hosted models where token costs differ from base model pricing
-- Integrating models from [[concepts/model-routing|model routers]] that blend multiple providers
+- Integrating models from [[concepts/coding-agents/model-routing|model routers]] that blend multiple providers
 
 ### Token Tracking and Cost Attribution
 - Per-request token counting across [[entities/openai|OpenAI]], [[entities/anthropic|Anthropic]], and other providers
@@ -48,7 +48,7 @@ Unlike general-purpose LLM observability tools that focus on single API calls, A
 
 From Simon Willison's TIL (June 2026): "I've been experimenting with using dozens of different models via OpenRouter and wanted accurate cost tracking. AgentsView lets me set the exact per-token price for each model, so my cost dashboards reflect what I'm actually paying, not what the model's official API charges."
 
-This feature is particularly valuable in the [[concepts/model-routing|model routing]] ecosystem where:
+This feature is particularly valuable in the [[concepts/coding-agents/model-routing|model routing]] ecosystem where:
 - Multiple providers offer the same model at different prices
 - Proxy services add their own margins
 - Self-hosted models have infrastructure costs rather than per-token pricing
@@ -59,7 +59,7 @@ This feature is particularly valuable in the [[concepts/model-routing|model rout
 - [[entities/langsmith]] — LangChain's LLM observability platform
 - [[entities/braintrust]] — Braintrust eval and observability
 - [[concepts/token-economics]] — Token cost analysis and optimization
-- [[concepts/model-routing]] — Model routing and multi-provider strategies
+- [[concepts/coding-agents/model-routing]] — Model routing and multi-provider strategies
 - [[concepts/llm-proxy]] — LLM proxy services
 
 ## Sources

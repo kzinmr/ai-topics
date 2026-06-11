@@ -119,7 +119,7 @@ Ramp's internal AI agent for software development that:
 
 - [[entities/inspect]] — Ramp's background coding agent
 - [[entities/opencode]] — Agent framework used by Ramp
-- [[concepts/background-coding-agent]] — Concept pioneered by Inspect
+- [[concepts/coding-agents/background-coding-agent]] — Concept pioneered by Inspect
 - [[concepts/modal-sandboxes]] — Execution layer
 - [[entities/openai]] — AI model provider (GPT models used in Inspect)
 - [[entities/anthropic]] — AI model provider (Claude models used in Inspect)

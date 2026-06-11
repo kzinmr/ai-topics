@@ -106,7 +106,7 @@ Modem targets the gap between agent-generated code and engineering team workflow
 ## Cross-References
 
 - [[entities/armin-ronacher]] — 10-year colleague at Sentry, podcast co-host
-- [[concepts/state-of-agentic-coding]] — Podcast series overview
+- [[concepts/coding-agents/state-of-agentic-coding]] — Podcast series overview
 - [[entities/modem]] — Agentic PM tool (with Leos email agent)
 - [[concepts/agentic-engineering]] — Quality concerns, pacing philosophy
 - [[concepts/harness-engineering]] — Model selection debate (manual vs. automatic)

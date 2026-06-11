@@ -88,7 +88,7 @@ Both patterns highlight that **AI excels at scaffolding but struggles with authe
 ## Related Concepts
 
 - [[concepts/harness-engineering/agentic-workflows/vibe-coding]]
-- [[concepts/coding-agents]]
+- [[concepts/coding-agents/coding-agents]]
 - [[concepts/human-in-the-loop]]
 - [[concepts/ai-generated-content]]
 

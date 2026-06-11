@@ -212,7 +212,7 @@ Acknowledged the mental health dimension: "Building with agents is the greatest 
 ## Related Concepts
 
 - [[concepts/agent-skills]] — Reusable patterns for coding agents
-- [[concepts/code-review-agents]] — Background verification daemons
+- [[concepts/coding-agents/code-review-agents]] — Background verification daemons
 - [[concepts/context-engineering|Context Engineering]] — Building agent memory substrates
 - [[concepts/harness-engineering]] — Building thin agent harnesses
 - [[concepts/generator-evaluator-workflow]] — Generator-evaluator architecture

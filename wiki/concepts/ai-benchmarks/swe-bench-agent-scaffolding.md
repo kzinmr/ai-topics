@@ -91,4 +91,4 @@ Open-source developers and startups have achieved significant improvements by op
 - [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
 - [[agent-harnesses]] — Agent harness comparison
 - [[concepts/building-effective-agents]] — Building effective agents (Anthropic)
-- [[concepts/coding-agents]] — Coding agents overview
+- [[concepts/coding-agents/coding-agents]] — Coding agents overview

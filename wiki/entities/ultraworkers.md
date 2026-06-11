@@ -12,7 +12,7 @@ sources:
 
 # UltraWorkers
 
-UltraWorkers (ULW) is the GitHub organization that hosts the canonical **[[concepts/claw-code]]** repository. The organization was created to house the Rust implementation of the `claw` CLI agent harness, which is the primary product surface of the Claw Code project.
+UltraWorkers (ULW) is the GitHub organization that hosts the canonical **[[concepts/coding-agents/claw-code]]** repository. The organization was created to house the Rust implementation of the `claw` CLI agent harness, which is the primary product surface of the Claw Code project.
 
 ## Repository
 

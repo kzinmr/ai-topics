@@ -73,7 +73,7 @@ In May 2026, Lawson published "[Using AI to Write Better Code More Slowly](https
 - **Slow coding methodology:** Deliberately using AI to find bugs rather than generate code fast — a deliberate counterpoint to "vibe coding" and "slop cannons"
 - **Advocacy for context clearing:** Waiting for all sub-agents to finish before doing independent review to prevent anchoring bias
 
-His approach aligns with [[concepts/agentic-engineering]] and extends [[concepts/code-review-agents]] patterns into practical multi-agent workflows.
+His approach aligns with [[concepts/agentic-engineering]] and extends [[concepts/coding-agents/code-review-agents]] patterns into practical multi-agent workflows.
 
 ## Writing and Influence
 
@@ -86,5 +86,5 @@ Lawson's blog has been a consistent source of deep technical writing on:
 ## Related Entities
 
 - [[concepts/agentic-engineering]] — Lawson's slow-coding approach is a methodology within agentic engineering
-- [[concepts/code-review-agents]] — Multi-agent parallel review technique
+- [[concepts/coding-agents/code-review-agents]] — Multi-agent parallel review technique
 - [[concepts/web-performance]] — Core area of Lawson's professional expertise

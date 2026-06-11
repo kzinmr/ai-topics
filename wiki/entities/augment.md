@@ -73,7 +73,7 @@ AI coding platform originally built for software engineers working on complex, l
 - Author of announcement: Chris Kelly (Product Lead, Cosmos), formerly at New Relic, GitHub, Salesforce, and FireHydrant
 
 ## Related
-- [[concepts/coding-agents]] — Coding agents category
+- [[concepts/coding-agents/coding-agents]] — Coding agents category
 - [[concepts/multi-agents/agent-orchestration]] — Multi-agent coordination patterns
 - [[concepts/agent-platform]] — Agent platform category
 - [[entities/github]] — GitHub Copilot competes in AI coding assistant space

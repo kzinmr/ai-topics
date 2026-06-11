@@ -58,7 +58,7 @@ Justin Lebar — a compiler engineer with experience on CUDA in clang, XLA:GPU, 
 
 ## Related Concepts
 
-- [[concepts/coding-agents]] — The coding agents used for this work
+- [[concepts/coding-agents/coding-agents]] — The coding agents used for this work
 - [[concepts/agent-verification]] — Verification of agent outputs
 - [[concepts/inference]] — The cost of inference at scale
 - [[entities/semianalysis]] — SemiAnalysis funded this research

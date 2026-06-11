@@ -89,7 +89,7 @@ Multiple agents collaborate in a single conversation thread:
 - [[concepts/multi-agents/agent-swarms]] — Emergent multi-agent systems
 - [[concepts/claude-code/claude-code-best-practices]] — Agent loop utilization in Claude Code
 - [[concepts/autoreason]] — Self-improving reasoning loop
-- [[concepts/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation. Minimal agent loop with 3 tools (read_file/list_files/edit_file)
+- [[concepts/coding-agents/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation. Minimal agent loop with 3 tools (read_file/list_files/edit_file)
 
 ## Sources
 

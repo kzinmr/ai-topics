@@ -227,7 +227,7 @@ Step 10 agent output example -> [`airpods_report.md`](https://github.com/hugobow
 - [[concepts/subagents]] - Sub-agent parallel delegation patterns
 - [[concepts/research-agent-fundamentals]] - Anthropic Claude Agent SDK research agent
 - [[concepts/harness-engineering/agentic-loop]] - Agent loop basics
-- [[concepts/pi-autoresearch]] - Pi autoresearch feature
+- [[concepts/coding-agents/pi-autoresearch]] - Pi autoresearch feature
 - [[concepts/karpathy-rl-agents-agentic-research-loop]] - Karpathy RL agents + research loop
 
 ## References

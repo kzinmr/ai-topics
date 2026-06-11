@@ -89,7 +89,7 @@ Ronin documented his complete system for cutting AI coding bills from $4,200/mon
 
 The core insight: Kimi 2.6 matches Sonnet 4.6 on shipped code quality at 1/6 the cost, making Sonnet a poor default in 2026. Premium models (Opus, GPT-5) should be reserved for the 10% of decisions that truly compound.
 
-See: [[concepts/ai-coding-cost-optimization]] for the full synthesis.
+See: [[concepts/coding-agents/ai-coding-cost-optimization]] for the full synthesis.
 
 ## Relevance to Wiki
 

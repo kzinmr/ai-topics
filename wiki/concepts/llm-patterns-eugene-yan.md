@@ -162,7 +162,7 @@ Validates LLM output from syntactic, safety, and factual accuracy perspectives.
 
 **Related Wiki Pages:**
 - [[concepts/structured-outputs]] — Structured output methods
-- [[concepts/ai-coding-reliability]] — AI coding reliability
+- [[concepts/coding-agents/ai-coding-reliability]] — AI coding reliability
 
 ---
 
@@ -312,4 +312,4 @@ The O'Reilly guide (commonly known as "Applied LLMs") is available at [applied-l
 - [[concepts/fine-tuning/peft-lora-qlora]] — PEFT/LoRA/QLoRA
 - [[concepts/fine-tuning/instruction-fine-tuning]] — Instruction tuning
 - [[concepts/structured-outputs]] — Structured outputs
-- [[concepts/ai-coding-reliability]] — AI coding reliability and guardrails
+- [[concepts/coding-agents/ai-coding-reliability]] — AI coding reliability and guardrails

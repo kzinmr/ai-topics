@@ -135,4 +135,4 @@ The effectiveness of prompts depends heavily on tool implementation:
 - [[concepts/metaprompting]] — Metaprompting
 - [[concepts/harness-engineering/agent-harness]] — Agent harness design
 - [[concepts/prompt-engineering]] — General prompt engineering
-- [[concepts/coding-agents]] — Coding agent comparison
+- [[concepts/coding-agents/coding-agents]] — Coding agent comparison

@@ -33,7 +33,7 @@ related:
   - "[[concepts/inference-speed-development]]"
   - "[[concepts/claude-code/claude-code-source-patterns]]"
   - "[[concepts/context-engineering/context-window-management|Context Window Management]]"
-  - "[[concepts/ai-coding-reliability]]"
+  - "[[concepts/coding-agents/ai-coding-reliability]]"
   - "[[concepts/harness-engineering/agentic-workflows/using-git-with-agents]]"
   - "[[concepts/harness-engineering/agentic-workflows/interactive-explanations]]"
 ---
@@ -373,7 +373,7 @@ These best practices embody the agentic engineering philosophy:
 - [[concepts/inference-speed-development]] — Fast iteration development
 - [[concepts/claude-code/claude-code-source-patterns]] — Claude Code internal patterns
 - [[concepts/context-engineering/context-window-management|Context Window Management]] — Context management
-- [[concepts/ai-coding-reliability]] — AI coding reliability
+- [[concepts/coding-agents/ai-coding-reliability]] — AI coding reliability
 
 ## Sources
 

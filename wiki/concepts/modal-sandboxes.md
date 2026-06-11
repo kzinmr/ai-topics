@@ -49,7 +49,7 @@ User types prompt → Modal sandbox warms up (pre-cloned image)
 
 ## Related Concepts
 
-- [[background-coding-agent]] — Modal is the execution layer for background agents
+- [[concepts/coding-agents/background-coding-agent]] — Modal is the execution layer for background agents
 - [[warm-start-optimization]] — Modal snapshots enable fast warm starts
 - [[sandbox/infrastructure]] — Modal is an infrastructure-level sandboxing technology
 

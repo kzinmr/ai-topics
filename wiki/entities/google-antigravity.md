@@ -193,5 +193,5 @@ New **Google AI Ultra** subscription tier at **$100/month** offers 5× higher us
 - [[concepts/gemini/gemini-spark|Gemini Spark]] — 24/7 personal agent built on Antigravity
 - [[concepts/gemini/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]]
 - [[entities/google-adk|Google ADK 2.0]]
-- [[concepts/coding-agents|Coding Agents]]
+- [[concepts/coding-agents/coding-agents|Coding Agents]]
 - [[concepts/agentic-engineering|Agentic Engineering]]

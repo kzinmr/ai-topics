@@ -59,6 +59,6 @@ This work suggests that [[concepts/tool-use]] optimization can be achieved witho
 
 - [[concepts/programmatic-tool-calling]] — Programmatic tool calling in LLMs
 - [[concepts/agentic-search]] — Agentic approaches to retrieval and tool use
-- [[concepts/ai-coding-cost-optimization]] — Cost optimization for AI coding
+- [[concepts/coding-agents/ai-coding-cost-optimization]] — Cost optimization for AI coding
 - [[concepts/interpretability]] — Understanding model internals
 - [[concepts/inference]] — LLM inference optimization

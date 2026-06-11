@@ -69,11 +69,11 @@ Cursor engineer [[entities/eric-zakariasson|Eric Zakariasson]] articulated a fra
 - Testing checklist: Can the agent start local env? Run tests? Pull external context? Verify own work?
 
 ## Related Concepts
-- [[concepts/coding-agents]] — The broader concept page on coding agents
+- [[concepts/coding-agents/coding-agents]] — The broader concept page on coding agents
 - [[concepts/harness-engineering/agent-harness]] — Infrastructure layer wrapping LLMs for agent execution
 - [[concepts/claude-code/claude-code-best-practices]] — Best practices for Claude Code usage
 - [[concepts/agentic-scaffolding]] — Safety infrastructure for production agents
 
 ## References
-- [[concepts/coding-agents]] — Concept page with detailed optimization patterns
+- [[concepts/coding-agents/coding-agents]] — Concept page with detailed optimization patterns
 - Eric Zakariasson's X article (April 2026) on optimizing dev environments for coding agents

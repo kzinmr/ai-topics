@@ -99,5 +99,5 @@ Nico demonstrated Amp's agent architecture with a focus on **feedback loops, val
 - [[entities/pi-agent-harness]] — Pi harness that Amp's plugin system is inspired by
 - [[entities/vincent-warmerdam]] — marimo Pair; shared agent-notebook paradigm in same episode
 - [[entities/hugo-bowne-anderson]] — Vanishing Gradients host; co-hosting "How to Build a Coding Agent" workshop
-- [[concepts/coding-agents]] — Coding agent landscape
+- [[concepts/coding-agents/coding-agents]] — Coding agent landscape
 - [[concepts/agent-skills]] — Skill design patterns

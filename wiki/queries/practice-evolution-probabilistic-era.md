@@ -99,7 +99,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 - [[concepts/evals-vs-monitoring-debate]] — The defining intellectual conflict
 - [[concepts/agent-evaluation-methodology]] — Floor raising framework
 - [[concepts/macro-evals-for-agentic-systems]] — OpenAI's population-level analysis
-- [[concepts/infrastructure-noise-agent-evals]] — Segato on eval reliability
+- [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Segato on eval reliability
 - [[concepts/eval-awareness-browsecomp]] — When models detect they're being evaluated
 - [[comparisons/eval-tools-comparison]] — Tool comparison
 - [[concepts/ai-evaluation]] — General evaluation landscape
@@ -221,7 +221,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 ### Path D: Technical Deep Dives
 1. [[concepts/macro-evals-for-agentic-systems]] — Population-level eval patterns
-2. [[concepts/infrastructure-noise-agent-evals]] — Eval reliability quantification
+2. [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Eval reliability quantification
 3. [[concepts/eval-awareness-browsecomp]] — Models detecting evaluation
 4. [[concepts/testing-ai-agents]] — Non-determinism testing challenges
 5. [[concepts/ai-evals]] — Hamel Husain's 3-level framework
@@ -239,11 +239,11 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 - [[concepts/ai-evaluation]] — General evaluation landscape
 - [[concepts/evaluation-flywheel]] — OpenAI's cycle
 - [[concepts/macro-evals-for-agentic-systems]] — Population-level analysis
-- [[concepts/infrastructure-noise-agent-evals]] — Eval reliability
+- [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Eval reliability
 - [[concepts/eval-awareness-browsecomp]] — Models detecting evaluation
 - [[concepts/testing-ai-agents]] — Non-determinism testing
 - [[concepts/evals-for-ai-agents]] — Anthropic's eval guide
-- [[concepts/evaluation-coding-agents]] — Coding agent benchmarks
+- [[concepts/coding-agents/evaluation-coding-agents]] — Coding agent benchmarks
 - [[concepts/llm-evaluation-harness]] — lm-eval-harness
 - [[concepts/harness-engineering]] — The harness philosophy
 - [[concepts/ai-observability]] — Observability landscape

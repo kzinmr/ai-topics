@@ -136,7 +136,7 @@ User ← Verifiable answer (numbers + charts + SQL + links)
 
 ## Connections to Related Cognition Philosophy
 
-- [[concepts/closing-agent-loop]] — Write→Catch→Fix→Merge loop. Data analysis version: Query→Validate→Visualize→Report
+- [[concepts/coding-agents/closing-agent-loop]] — Write→Catch→Fix→Merge loop. Data analysis version: Query→Validate→Visualize→Report
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Pattern exposing MCP as a code API. In data analysis, acts as the SQL execution environment
 - [[concepts/cognition-devin-philosophy]] — Single-agent context continuity. Same principle applies to data analysis (explore→analyze→visualize in the same context)
 - [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — Knowledge configuration functions as the agent's "file-based memory"
@@ -171,7 +171,7 @@ This is a practical example of **Agent Specialization** — defining different K
 
 ### Related
 - [[concepts/harness-engineering/agent-patterns]] — Practical examples of agent specialization patterns
-- [[concepts/closing-agent-loop]] — Closed-loop specialized for data analysis
+- [[concepts/coding-agents/closing-agent-loop]] — Closed-loop specialized for data analysis
 
 ## End-to-End Bug Debugging — Merging Data Analysis and Engineering
 

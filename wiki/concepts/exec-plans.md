@@ -81,4 +81,4 @@ Persist plans for reuse:
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/openai/symphony]] — OpenAI Symphony (WORKFLOW.md-driven)
 - [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — Compound Engineering Loop
-- [[concepts/closing-agent-loop]] — Closing the Agent Loop
+- [[concepts/coding-agents/closing-agent-loop]] — Closing the Agent Loop

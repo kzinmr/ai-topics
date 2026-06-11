@@ -77,5 +77,5 @@ The agent-built controller uses a counter-intuitive strategy:
 - [[concepts/chain-of-thought|Chain of Thought]]
 - [[concepts/recursive-self-improvement|Self-Improving AI]]
 - [[entities/claude-code|Claude Code]]
-- [[concepts/coding-agents|Coding Agents]]
+- [[concepts/coding-agents/coding-agents|Coding Agents]]
 - [[concepts/recursive-self-improvement|Recursive Self-Improvement]]

@@ -148,7 +148,7 @@ Inference Speed Development amplifies both productivity and risk:
 - **Less human typing** doesn't mean less human responsibility
 - **More iterations** doesn't guarantee correctness — only faster convergence
 
-This connects directly to [[concepts/ai-coding-reliability]]: the Amazon outages demonstrate what happens when inference-speed shipping bypasses reliability gates.
+This connects directly to [[concepts/coding-agents/ai-coding-reliability]]: the Amazon outages demonstrate what happens when inference-speed shipping bypasses reliability gates.
 
 ---
 
@@ -172,7 +172,7 @@ The key insight: **AI doesn't need to be right on the first attempt — it needs
 
 -  — The broader methodology shift this enables- [[concepts/claude-code/claude-code-best-practices]] — Practical patterns for Claude Code users
 - [[concepts/cognitive-cost-of-agents]] — The hidden cost of reviewing vs. writing
-- [[concepts/ai-coding-reliability]] — Why speed without reliability gates causes outages
+- [[concepts/coding-agents/ai-coding-reliability]] — Why speed without reliability gates causes outages
 - [[concepts/claude-code/claude-code-source-patterns]] — How Anthropic engineers inference-speed patterns into Claude Code itself
 
 ## Sources

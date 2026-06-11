@@ -324,7 +324,7 @@ Devin Desktop's ACP integration positions Cognition as an **agent orchestrator p
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Devin workflow architecture
 - [[concepts/multi-agents/multi-agents-cognition-devin-orchestration]] — Multi-agent coordination designs
 - [[concepts/managed-devins]] — Devin 2.2 managed sub-agent architecture
-- [[concepts/closing-agent-loop]] — Full development cycle (Write→Catch→Fix→Merge)
+- [[concepts/coding-agents/closing-agent-loop]] — Full development cycle (Write→Catch→Fix→Merge)
 - [[concepts/harness-engineering/system-architecture/context-anxiety]] — Context window limits and model-specific thresholds
 
 ## References

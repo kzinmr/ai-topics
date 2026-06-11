@@ -54,6 +54,6 @@ Ryan McCann, CEO of Claris (Apple company), authored the announcement.
 
 ## Related Concepts
 
-- [[agentic-coding]] — AI-assisted software development
+- [[concepts/coding-agents/agentic-coding]] — AI-assisted software development
 - [[low-code-platforms]] — visual/rapid application development tools
 - [[enterprise-ai-adoption]] — how enterprises integrate AI into workflows

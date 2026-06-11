@@ -70,7 +70,7 @@
               64|- [[chris-tate]] — Chris Tate is a software engineer at Vercel and a prolific open-source creator focused on developer tools and AI-assisted workflows. He is the creator of three notable open-source projects:
               65|- [[concepts/claude/mythos]] — Anthropic's next-generation model, developed after [[concepts/claude/opus-4-6]]. Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
               66|- [[entities/clefourrier]] — Clémentine Fourrier is a research scientist who, between 2023 and 2025, led Hugging Face's evaluation efforts and collaborations on LLMs and AI agents. She is one of the most influential figures in th
-              67|- [[concepts/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
+              67|- [[concepts/coding-agents/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
               68|- [[construction-physics-com]] — Brian Potter is the author of Construction Physics, a Substack newsletter that examines the technology and economics of building construction with a focus on understanding why construction productivit
               69|- [[corbett]] — Kyle Corbitt (known as "Corbett" on X/Twitter, handle @corbtt) is a serial entrepreneur and engineer focused on making AI model fine-tuning and reinforcement learning accessible to developers. He is c
               70|- [[cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.

@@ -93,7 +93,7 @@ The flagship skill — `hf-llm-trainer` — enables coding agents to handle the 
 
 Hugging Face Skills is a significant contribution to the emerging **agent skills** ecosystem:
 - Follows the open [Agent Skills](https://agentskills.io) standard — not vendor-locked
-- Skills are **domain-specific instruction bundles** — a pattern complementary to [[concepts/hf-cli|hf CLI]] (which is a tool, not a skill)
+- Skills are **domain-specific instruction bundles** — a pattern complementary to [[concepts/coding-agents/hf-cli|hf CLI]] (which is a tool, not a skill)
 - The `hf-cli` skill is the recommended first install — it teaches agents the full Hub command surface
 - Marketplace integrations (Cursor, Codex) lower adoption friction
 
@@ -102,7 +102,7 @@ This represents Hugging Face's strategy of making the Hub **the default infrastr
 ## Related Pages
 
 - [[entities/hugging-face]] — Parent organization and Hub infrastructure
-- [[concepts/hf-cli]] — The CLI tool that the `hf-cli` skill wraps
+- [[concepts/coding-agents/hf-cli]] — The CLI tool that the `hf-cli` skill wraps
 - [[concepts/harness-engineering/agent-ergonomics]] — Agent-oriented tool design principles
 - [[concepts/cli-first-development]] — CLI-first design philosophy
 - [[entities/clefourrier]] — HuggingFace team (evaluation)

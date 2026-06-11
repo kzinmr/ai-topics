@@ -86,7 +86,7 @@ MiMo-V2.5-Pro demonstrates that open-source models can achieve frontier-level ag
 ## Related Pages
 - [[entities/xiaomi]] — Xiaomi company
 - [[concepts/mixture-of-experts]] — MoE architecture
-- [[concepts/coding-agents]] — AI coding agents
+- [[concepts/coding-agents/coding-agents]] — AI coding agents
 - [[concepts/glm-5-1]] — GLM-5.1 (competing open-source coding model)
 - [[entities/deepseek]] — DeepSeek V4
 - [[concepts/qwen]] — Qwen model family

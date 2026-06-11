@@ -174,5 +174,5 @@ As of 2026, the industry trend is strongly **one-directional**: multiple project
 - [[concepts/programmatic-tool-calling]] — PTC: agent-generated code orchestrating tool calls in sandboxes
 - [[concepts/search-as-code]] — Perplexity's SaC: PTC applied to search, composable SDK primitives
 - [[concepts/rlm-recursive-language-models]] — RLM: recursive context decomposition for near-infinite context
-- [[concepts/codeact]] — Code-as-action paradigm that underlies PTC and SaC
+- [[concepts/coding-agents/codeact]] — Code-as-action paradigm that underlies PTC and SaC
 - [[concepts/agentic-search]] — Evolution of search from keyword to SaC (Level 5)

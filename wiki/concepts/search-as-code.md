@@ -197,7 +197,7 @@ The future direction Perplexity envisions:
 
 - [[concepts/programmatic-tool-calling]] — General pattern of code-orchestrated tool calls (PTC is SaC's cousin)
 - [[concepts/agentic-search]] — Broader agentic search landscape that SaC advances
-- [[concepts/codeact]] — Code-as-action pattern that SaC builds upon
+- [[concepts/coding-agents/codeact]] — Code-as-action pattern that SaC builds upon
 - [[concepts/code-mode]] — Model code generation as primary interaction mode
 - [[concepts/harness-engineering/agent-harness]] — SaC implements harness patterns at the SDK level
 - [[concepts/rlm-recursive-language-models]] — Context-as-variable pattern that SaC's sandbox state management addresses

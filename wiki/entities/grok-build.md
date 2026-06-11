@@ -55,5 +55,5 @@ Grok Build was one of the coding agents identified as vulnerable to the [[events
 - [[entities/claude-code]] — Anthropic's coding agent
 - [[entities/cursor-ai]] — Cursor IDE and agent
 - [[entities/github-copilot]] — GitHub Copilot
-- [[concepts/coding-agents]] — AI coding agents concept
+- [[concepts/coding-agents/coding-agents]] — AI coding agents concept
 - [[events/trustfall-symlink-rce-2026]] — shared MCP vulnerability

@@ -20,7 +20,7 @@ sources:
   - https://x.com/alex_chernysh
 related:
   - "[[entities/bernstein]]"
-  - "[[concepts/bernstein]]"
+  - "[[concepts/coding-agents/bernstein]]"
   - "[[concepts/multi-agents/multi-agent-orchestration]]"
 ---
 

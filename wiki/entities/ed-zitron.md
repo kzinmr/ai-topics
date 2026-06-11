@@ -456,7 +456,7 @@ Zitron extended his Dot Com Bubble comparison with a key structural difference:
 - [[entities/meta]] — Zitron's "AI psychosis" analysis of Meta's $158B capex spend
 - [[concepts/neocloud]] — Category Zitron argues is unsustainable
 - [[entities/coreweave]], [[entities/nebius]], [[entities/nscale]] — Neoclouds dependent on OpenAI/Anthropic demand
-- [[concepts/ai-coding-agent-criticism]] — Zitron's reporting on code quality crisis and Cursor vulnerabilities
+- [[concepts/coding-agents/ai-coding-agent-criticism]] — Zitron's reporting on code quality crisis and Cursor vulnerabilities
 - [[concepts/agentic-engineering]] — Zitron's critique of "agentic" terminology as deceptive
 
 ## References

@@ -49,10 +49,10 @@ AI-assisted code review tools that automatically analyze PRs for:
 - Performance issues
 - Style violations
 - Test coverage gaps
-See [[concepts/code-review-agents]]
+See [[concepts/coding-agents/code-review-agents]]
 
 ## Related Pages
 - [[entities/linear]] — Linear Diffs brings code review into the Linear workspace
-- [[concepts/code-review-agents]] — AI-powered automated code review
+- [[concepts/coding-agents/code-review-agents]] — AI-powered automated code review
 - [[concepts/linear-agent-code-intelligence]] — Linear's codebase-aware AI agent
 - [[concepts/programmatic-tool-calling]] — Code execution in agent contexts

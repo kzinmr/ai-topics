@@ -59,7 +59,7 @@ The term **tokenmaxxing** describes competitive internal leaderboards where empl
 ## Related Pages
 
 - [[concepts/claude-code/claude-code]] — Anthropic's Claude Code
-- [[concepts/coding-agents]] — AI coding agent landscape
+- [[concepts/coding-agents/coding-agents]] — AI coding agent landscape
 - [[entities/simon-willison]] — Simon Willison's analysis
 - [[concepts/ai-tool-pricing]] — AI tool pricing models
 - [[entities/uber]] — Uber entity

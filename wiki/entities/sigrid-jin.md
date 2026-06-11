@@ -21,7 +21,7 @@ sources:
 
 # Sigrid Jin
 
-Sigrid Jin (@realsigridjin) is the creator of **[[concepts/claw-code]]**, the open-source clean-room reimplementation of Claude Code's agent harness that became the fastest repository in GitHub history to surpass 100K stars (March 2026).
+Sigrid Jin (@realsigridjin) is the creator of **[[concepts/coding-agents/claw-code]]**, the open-source clean-room reimplementation of Claude Code's agent harness that became the fastest repository in GitHub history to surpass 100K stars (March 2026).
 
 ## Background
 
@@ -80,6 +80,6 @@ Jin identifies two camps reacting to AI coding agents:
 Her conclusion: what does not commoditize is **taste, conviction, and a specific point of view**. Products like Figma, Notion, and Linear succeed not because their code is better, but because their creators had a clear vision of the experience and refused to compromise. AI gives the first draft; founders provide the judgment to push past it.
 
 ## Related
-- [[concepts/claw-code]] — Claw Code concept page
+- [[concepts/coding-agents/claw-code]] — Claw Code concept page
 - [[yeachan-heo]] — Bellman, collaborator and creator of oh-my-codex
 - [[ultraworkers]] — GitHub organization hosting claw-code

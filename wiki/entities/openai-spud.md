@@ -55,5 +55,5 @@ Internal codename for OpenAI's next major language model (potentially GPT-6 or G
 ## See Also
 
 - [[entities/openai]] — OpenAI's GPT model family and company background.
-- [[concepts/coding-agents]] — OpenAI Codex and agent tooling.
+- [[concepts/coding-agents/coding-agents]] — OpenAI Codex and agent tooling.
 - [[entities/anthropic]] — Competing AI lab with Claude models.

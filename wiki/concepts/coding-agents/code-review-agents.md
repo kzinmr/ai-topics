@@ -17,7 +17,7 @@ aliases:
 related:
   - [[concepts/agentic-engineering]]
   - [[concepts/subagent-patterns]]
-  - [[concepts/ai-coding-reliability]]
+  - [[concepts/coding-agents/ai-coding-reliability]]
   - [[entities/nolan-lawson]]
   - [[entities/roborev]]
 sources:
@@ -102,7 +102,7 @@ Agents can also be used to **understand** a PR before merging:
 
 - [[concepts/agentic-engineering]] — The broader discipline of agent-driven software development, where code review agents are a core component
 - [[concepts/subagent-patterns]] — The multi-agent parallel review is a concrete instantiation of the Inline Tool subagent pattern
-- [[concepts/ai-coding-reliability]] — Addresses the reliability crisis that code review agents help mitigate
+- [[concepts/coding-agents/ai-coding-reliability]] — Addresses the reliability crisis that code review agents help mitigate
 - [[concepts/generator-evaluator-workflow]] — Generator-evaluator architecture, of which code review agents are the evaluator side
 
 ## Key Practitioners

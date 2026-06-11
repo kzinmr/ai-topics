@@ -24,7 +24,7 @@ Created by [[entities/shloked]] (Shlok Khemani). MIT license. First release v0.1
 
 ## Definition
 
-ChatFerry is a **browser-automation CLI for AI coding agents** that bridges the gap between terminal-based agent workflows and web-based LLM interfaces. Instead of requiring API keys and paying per-token pricing, it leverages the user's existing paid ChatGPT and/or Claude subscriptions via automated browser sessions. This makes it particularly useful for coding agents ([[concepts/coding-agents]]) that need to send prompts to frontier models (GPT-5.5 Pro, Claude Opus 4.5, etc.) through feature-rich web UIs that expose canvas, artifacts, extended thinking, and other capabilities not available via API.
+ChatFerry is a **browser-automation CLI for AI coding agents** that bridges the gap between terminal-based agent workflows and web-based LLM interfaces. Instead of requiring API keys and paying per-token pricing, it leverages the user's existing paid ChatGPT and/or Claude subscriptions via automated browser sessions. This makes it particularly useful for coding agents ([[concepts/coding-agents/coding-agents]]) that need to send prompts to frontier models (GPT-5.5 Pro, Claude Opus 4.5, etc.) through feature-rich web UIs that expose canvas, artifacts, extended thinking, and other capabilities not available via API.
 
 ## Key Features
 
@@ -196,7 +196,7 @@ chatferry result $RUN_ID --json | jq -r '.response' > claude_analysis.md
 
 ## Related Concepts
 
-- [[concepts/coding-agents]] — The primary consumers of ChatFerry: Claude Code, Codex, Cursor, and other coding agents that need web UI model access
+- [[concepts/coding-agents/coding-agents]] — The primary consumers of ChatFerry: Claude Code, Codex, Cursor, and other coding agents that need web UI model access
 - [[entities/claude-code]] — Anthropic's agentic coding CLI; ChatFerry can send prompts to Claude's web UI for features not in the API
 - [[entities/openai-codex]] — OpenAI's coding agent platform; ChatFerry targets ChatGPT web UI for Codex-compatible workflows
 - [[concepts/browser-automation]] — The broader technique ChatFerry employs (Playwright + Chromium for web UI interaction)

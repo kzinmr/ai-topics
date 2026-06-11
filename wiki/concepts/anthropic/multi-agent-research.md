@@ -212,7 +212,7 @@ Unsuitable areas:
 - [[concepts/rlm-recursive-language-models]] — RLM: Overcoming context length constraints through recursive decomposition (structurally similar pattern)
 - [[comparisons/agent-orchestration-frameworks]] — Comparison of orchestration frameworks (LangGraph, CrewAI, etc.)
 - [[concepts/ai-operating-model]] — Multi-agent as an AI operating model
-- [[concepts/coding-agents]] — Coding agent design patterns
+- [[concepts/coding-agents/coding-agents]] — Coding agent design patterns
 
 ## Structural Similarity Pattern: Multi-Agent × RLM — Divide and Conquer of Context Constraints
 

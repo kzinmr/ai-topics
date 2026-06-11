@@ -25,7 +25,7 @@ Thorsten Ball is a software engineer, technical author, and newsletter writer ba
 
 - **Books**: *Writing An Interpreter In Go* (2016) and *Writing A Compiler In Go* — self-published, widely praised for clarity and hands-on approach
 - **Newsletter**: [Register Spill](https://registerspill.thorstenball.com) — weekly digest of software engineering insights (8,000+ subscribers)
-- **Current**: Works remotely at [[entities/sourcegraph]] on [[entities/amp|Amp]] (ampcode.com), where he leads the coding agent product. Authored the influential "[[concepts/harness-commoditization|The Coding Agent Is Dead]]" manifesto (Feb 2026) and architected the [[concepts/amp-neo|Amp Neo]] rebuild (May 2026).
+- **Current**: Works remotely at [[entities/sourcegraph]] on [[entities/amp|Amp]] (ampcode.com), where he leads the coding agent product. Authored the influential "[[concepts/harness-commoditization|The Coding Agent Is Dead]]" manifesto (Feb 2026) and architected the [[concepts/coding-agents/amp-neo|Amp Neo]] rebuild (May 2026).
 - **Previous**: Worked at [[entities/zed|Zed]] on the Zed code editor
 - **Social**: [@thorstenball](https://twitter.com/thorstenball) on X/Twitter, @mrnugget on GitHub/Mastodon
 
@@ -52,9 +52,9 @@ Notable issues:
 
 Thorsten Ball is the primary author of Amp's strategic communications and technical direction. His writings have shaped the coding agent discourse:
 
-- **"How to Build a Code-Editing Agent"** (April 2025) — [[concepts/minimal-coding-agent]] pattern: 400 lines of Go, three tools, heartbeat loop. Demonstrated agent harness simplicity.
+- **"How to Build a Code-Editing Agent"** (April 2025) — [[concepts/coding-agents/minimal-coding-agent]] pattern: 400 lines of Go, three tools, heartbeat loop. Demonstrated agent harness simplicity.
 - **"The Coding Agent Is Dead"** (February 2026) — Articulated the [[concepts/harness-commoditization]] thesis: frontier models have become so capable that harness differentiation is shrinking. Announced Amp's pivot from editor extensions to CLI-only.
-- **"Amp, Rebuilt"** (May 2026) — Launched [[concepts/amp-neo|Amp Neo]]: remote-controllable, auto-compaction, Plugin API, 79% less CPU.
+- **"Amp, Rebuilt"** (May 2026) — Launched [[concepts/coding-agents/amp-neo|Amp Neo]]: remote-controllable, auto-compaction, Plugin API, 79% less CPU.
 
 ## Related
 

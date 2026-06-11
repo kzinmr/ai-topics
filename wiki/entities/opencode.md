@@ -23,7 +23,7 @@ related:
   - "[[entities/claude-code]]"
   - "[[comparisons/agent-harnesses]]"
   - "[[concepts/modal-sandboxes]]"
-  - "[[concepts/background-coding-agent]]"
+  - "[[concepts/coding-agents/background-coding-agent]]"
 ---
 
 # OpenCode

@@ -38,4 +38,4 @@ The "experience tax" is the individual-level manifestation of the organizational
 - [[concepts/reflexive-ai]]
 - [[concepts/solo-founder-stack]]
 - [[vibe-coding]]
-- [[ai-coding-reliability]]
+- [[concepts/coding-agents/ai-coding-reliability]]

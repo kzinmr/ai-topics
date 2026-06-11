@@ -88,7 +88,7 @@ Mid-2026 approximate pricing:
 
 ## Router Architecture (Manual, Config-Based)
 
-Unlike [[concepts/model-routing|Augment Prism]]'s automated per-turn routing, Ronin's approach uses a static config that routes based on task type keywords:
+Unlike [[concepts/coding-agents/model-routing|Augment Prism]]'s automated per-turn routing, Ronin's approach uses a static config that routes based on task type keywords:
 
 ```yaml
 default: kimi-2.6-instruct
@@ -162,7 +162,7 @@ Always use Opus/GPT-5 for:
 
 ## Related Concepts
 
-- [[concepts/model-routing]] — Augment Prism: automated per-turn routing vs Ronin's manual config-based approach
+- [[concepts/coding-agents/model-routing]] — Augment Prism: automated per-turn routing vs Ronin's manual config-based approach
 - [[concepts/tokenmaxxing]] — Quality-over-quantity philosophy; Ronin's system is the practical implementation
 - [[concepts/token-economics]] — Token cost framework underlying routing decisions
 - [[concepts/prompt-caching]] — Technical deep-dive on how prompt caching works

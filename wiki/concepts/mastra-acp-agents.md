@@ -65,4 +65,4 @@ See also: [[concepts/acp-agent-communication-protocol]] for the underlying proto
 - [[concepts/acp-agent-communication-protocol]] — ACP protocol
 - [[entities/claude-code]] — ACP-compatible coding agent
 - [[concepts/agent-framework]] — Agent framework landscape
-- [[concepts/coding-agents]] — Coding agent ecosystem
+- [[concepts/coding-agents/coding-agents]] — Coding agent ecosystem

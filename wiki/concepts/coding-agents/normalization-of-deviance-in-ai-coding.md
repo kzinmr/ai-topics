@@ -48,7 +48,7 @@ Real-world usage over time becomes a more reliable signal than superficial code 
 
 - [[vibe-coding-vs-agentic-engineering]] — the distinction (and blurring) between AI-assisted coding approaches
 - [[ai-safety]] — broader AI safety considerations
-- [[concepts/coding-agents]] — AI coding agent tools and their capabilities
+- [[concepts/coding-agents/coding-agents]] — AI coding agent tools and their capabilities
 - [[software-quality-signals]] — how we evaluate software quality in an AI-generated code world
 
 ## Sources

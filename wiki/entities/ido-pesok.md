@@ -69,5 +69,5 @@ Pesok's work spans the transition from ad-hoc "vibe coding" to systematic [[conc
 - [[entities/cognition-ai]] — company he joined for Devin work
 - [[entities/devin]] — the AI software engineer he helped verify
 - [[concepts/agentic-engineering]] — the discipline his work exemplifies
-- [[concepts/code-review-agents]] — adjacent concept
+- [[concepts/coding-agents/code-review-agents]] — adjacent concept
 - [[concepts/vibe-coding]] — contrast paradigm

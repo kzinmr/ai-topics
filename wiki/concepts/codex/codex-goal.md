@@ -157,7 +157,7 @@ The Ralphable blog recommends **token budget over iteration count**:
 
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern
 - [[concepts/karpathy-loop]] — Autonomous ML research variant
-- [[concepts/pi-autoresearch]] — Generalized metric optimization (Shopify)
+- [[concepts/coding-agents/pi-autoresearch]] — Generalized metric optimization (Shopify)
 - [[concepts/codex/codex-goal-meta-prompting]] — Using AI to generate better /goal prompts
 - [[concepts/claude-code/claude-code-goal]] — Claude Code's /goal implemention (evaluator model architecture)
 - [[concepts/ralph-loop]] — The Ralph Wiggum loop pattern (if exists)

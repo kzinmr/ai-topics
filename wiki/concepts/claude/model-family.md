@@ -45,7 +45,7 @@ related:
   - "[[concepts/prompt-caching]]"
   - "[[concepts/anthropic/agent-sdk-sre-patterns]]"
   - "[[concepts/ai-safety-military-governance-claude]]"
-  - "[[concepts/coding-agents]]"
+  - "[[concepts/coding-agents/coding-agents]]"
 ---
 
 # Build with Claude — Developer Guide
@@ -251,6 +251,6 @@ For model-specific details, see sub-pages: [[claude-opus-4-7]], [[claude-sonnet-
 - **[[concepts/anthropic-computer-use]]** — GUI operation capability
 - **[[concepts/mcp]]** — Model Context Protocol
 - **[[concepts/ai-safety-military-governance-claude]]** — Safety and governance
-- **[[concepts/coding-agents]]** — AI coding agent ecosystem
+- **[[concepts/coding-agents/coding-agents]]** — AI coding agent ecosystem
 - **[[concepts/anthropic/agent-sdk-sre-patterns]]** — Agent SDK
 - **[[concepts/claude/memory-tool]]** — Memory tool

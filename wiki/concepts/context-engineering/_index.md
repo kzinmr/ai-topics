@@ -336,7 +336,7 @@ Building an agent? Consider each dimension:
 - [[concepts/multi-agents/multi-agent]] — Sub-agent delegation patterns
 - [[managed-agents]] — Anthropic's meta-harness architecture
 - [[ralph-loop]] — The delegation loop pattern
-- [[codeact]] — Code-as-action pattern
+- [[concepts/coding-agents/codeact]] — Code-as-action pattern
 - [[progressive-disclosure]] — The progressive disclosure pattern
 - [[prompt-caching]] — Token economics and caching strategies
 

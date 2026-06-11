@@ -54,7 +54,7 @@ See [[entities/callosum|Callosum entity page]] for benchmark results (7-12× cos
 
 - [[entities/callosum]] — Leading implementer of heterogeneous inference
 - [[entities/cerebras-systems]] — Wafer-scale inference hardware
-- [[concepts/model-routing]] — Routing queries to optimal models
+- [[concepts/coding-agents/model-routing]] — Routing queries to optimal models
 - [[concepts/mixture-of-experts]] — Similar concept within a single model
 - [[concepts/inference|Inference]] — The broader inference domain
 - [[concepts/ai-infrastructure]] — AI compute infrastructure

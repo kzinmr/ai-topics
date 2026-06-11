@@ -108,5 +108,5 @@ Detailed postmortem analyses of two major quality degradation incidents publishe
 ## See Also
 
 - [[entities/anthropic]] — Anthropic entity
-- [[concepts/infrastructure-noise-agent-evals]] — Infrastructure noise in agent evals
+- [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Infrastructure noise in agent evals
 - [[concepts/ai-benchmarks/ai-resistant-evaluations]] — AI-resistant evaluation design

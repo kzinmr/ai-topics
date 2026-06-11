@@ -79,7 +79,7 @@ The platform supports organization-wide deployment with:
 
 Spice AI's approach embodies the [[concepts/agentic-engineering]] principle that verification — not code reading — is the critical skill in agent-driven development. The company's verification stack is a concrete implementation of the multi-layer verification pipeline described in the agentic engineering literature.
 
-See also: [[concepts/code-review-agents]], [[concepts/vibe-coding]]
+See also: [[concepts/coding-agents/code-review-agents]], [[concepts/vibe-coding]]
 
 > **Note**: Ido Pesok led the verification initiative at Spice AI and later joined [[entities/cognition-ai]] to work on verification capabilities in [[entities/devin]]'s virtual machine. Official founders (per Spice AI's structured data): Luke Kim and Phillip LeBlanc.
 
@@ -101,5 +101,5 @@ See also: [[concepts/code-review-agents]], [[concepts/vibe-coding]]
 - [[entities/cognition-ai]] — Company he later joined for Devin work
 - [[entities/devin]] — The AI software engineer with autonomous verification
 - [[concepts/agentic-engineering]] — The discipline his verification work exemplifies
-- [[concepts/code-review-agents]] — Adjacent concept
+- [[concepts/coding-agents/code-review-agents]] — Adjacent concept
 - [[concepts/vibe-coding]] — Related development paradigm

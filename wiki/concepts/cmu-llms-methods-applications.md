@@ -144,7 +144,7 @@ flowchart TD
 - [[concepts/ai-safety]] — Safety (week 10)
 - [[concepts/fine-tuning/peft-lora-qlora]] — Fine-tuning (weeks 3-4)
 - [[concepts/context-engineering|Context Engineering]] — Prompt engineering (weeks 2-3)
-- [[concepts/coding-agents]] — Code generation (week 11)
+- [[concepts/coding-agents/coding-agents]] — Code generation (week 11)
 
 ---
 

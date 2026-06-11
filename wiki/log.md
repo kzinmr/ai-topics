@@ -1213,7 +1213,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 
 **Bookmark 1 — Claude Code feedback loops (Anthropic):** Added "Self-Verification & Feedback Loops" section to [[entities/claude-code]]. Documented two-layer verification architecture (agentic loop + pre-merge second-agent review), skill composition pattern (/simplify + /verify + design check + PR + CI watch), frontend-verify example. Enriched [[concepts/claude-code/claude-code-skills]] Composing Skills section with production team workflow example.
 
-**Bookmark 2 — Solo AI Agency / Kimi 2.6 (anonymous):** Case study of $40k MRR agency running entirely on Kimi 2.6 at ~$240/month inference. Added "Production Economics" section to [[entities/kimi]] covering economics, 3-tier model stack, Agent Swarm in production. Enriched [[concepts/model-routing]] with solo agency routing pattern (cost-of-failure heuristic). Added "Solo AI Agency Economics" to [[concepts/token-economics]].
+**Bookmark 2 — Solo AI Agency / Kimi 2.6 (anonymous):** Case study of $40k MRR agency running entirely on Kimi 2.6 at ~$240/month inference. Added "Production Economics" section to [[entities/kimi]] covering economics, 3-tier model stack, Agent Swarm in production. Enriched [[concepts/coding-agents/model-routing]] with solo agency routing pattern (cost-of-failure heuristic). Added "Solo AI Agency Economics" to [[concepts/token-economics]].
 
 **Bookmark 3 — Token Yield (Glean):** Glean frames token yield as an architecture problem with 4 levers: context quality, model routing, continual learning, harness design. Added "Token Yield" framework section to [[concepts/token-economics]] with Glean MCP benchmark (2.5x preference, 43k vs 83k tokens). Enriched [[entities/glean]] with Token Yield Framework section.
 
@@ -1508,7 +1508,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 - MiniMax M3 model details — [[concepts/minimax-m3]] already created
 - Microsoft MAI models — [[concepts/microsoft-mai-models]] already created, Simon Willison analysis in sources
 - Google A2A protocol — [[concepts/a2a-agent-protocol]] already created
-- Mistral Codestral — [[concepts/codestral]] already created
+- Mistral Codestral — [[concepts/coding-agents/codestral]] already created
 
 **Skipped (out of scope):**
 - 2026-06-03_trending-topics-research.md — meta-document recording prior wiki creation
@@ -2322,10 +2322,10 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 ---
 ## [2026-05-29] CodeAct concept page created — Executable Code Actions paradigm
 
-- **Created concept page**: [[concepts/codeact]] — CodeAct (Executable Code Actions) paradigm: LLM agents use Python code as unified action space. ICML 2024 paper by Wang et al. (up to 20% higher success rate over JSON/text). Plan-then-Execute pattern. Relationship to PTC (Programmatic Tool Calling) and RLM (Recursive Language Models) documented. Coverage of Microsoft Agent Framework Hyperlight CodeAct connector. Tags: code-act, plan-then-execute (new tags).
+- **Created concept page**: [[concepts/coding-agents/codeact]] — CodeAct (Executable Code Actions) paradigm: LLM agents use Python code as unified action space. ICML 2024 paper by Wang et al. (up to 20% higher success rate over JSON/text). Plan-then-Execute pattern. Relationship to PTC (Programmatic Tool Calling) and RLM (Recursive Language Models) documented. Coverage of Microsoft Agent Framework Hyperlight CodeAct connector. Tags: code-act, plan-then-execute (new tags).
 - **Added tags to SCHEMA.md**: `code-act`, `plan-then-execute` under AI Agents category
 - **Cross-references added**: PTC page ([[concepts/programmatic-tool-calling]]) and RLM page ([[concepts/dspy-rlm]]) now link to CodeAct
-- **Updated index.md**: Added [[concepts/codeact]] under Concepts section
+- **Updated index.md**: Added [[concepts/coding-agents/codeact]] under Concepts section
 - **Saved raw sources**:
   - `raw/papers/2024-02-01_2402.01030_codeact.md` — arXiv:2402.01030 (ICML 2024)
   - `raw/articles/2026-05-20_microsoft_codeact-agent-framework.md` — Microsoft Learn documentation
@@ -2472,7 +2472,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 ## [2026-05-29] add | Ingest Sigrid Jin X Article "What you need to learn from claw-code repo" → entity + concept enrichment
 - Raw article: `raw/articles/2026-04-01_realsigridjin_what-you-need-to-learn-from-claw-code.md` (X Article, type: x_article, 794 likes / 1056 bookmarks)
 - [[entities/sigrid-jin]] — Expanded Philosophy section: Discord-native workflow, Ralphthon/OmOCon, GitHub stars social dynamics, "Two Kinds of People" framework (Establishment vs Independents). Added agent-coordination, multi-agent, philosophy, entrepreneur tags. Source added.
-- [[concepts/claw-code]] — Rebuilt Three-Part Meta-System into table format (OmX/clawhip/oh-my-openagent). Added Agent Role Cycle (Architect → Executor → Reviewer), Discord-Native Workflow section, Ralphthon Lesson. Expanded Autonomous Development Thesis with "stop staring at the files" thesis. Added agent-coordination, autonomous-agents tags. Source added.
+- [[concepts/coding-agents/claw-code]] — Rebuilt Three-Part Meta-System into table format (OmX/clawhip/oh-my-openagent). Added Agent Role Cycle (Architect → Executor → Reviewer), Discord-Native Workflow section, Ralphthon Lesson. Expanded Autonomous Development Thesis with "stop staring at the files" thesis. Added agent-coordination, autonomous-agents tags. Source added.
 - Pages Updated: 3 (1 raw article, 2 enriched)
 
 ---
@@ -3483,7 +3483,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[concepts/nvidia-ai-q]] — Added middleware & reliability section (tool sanitization, reasoning-aware retry), cross-references
 - [[concepts/multi-agents/agent-executor]] — Added cross-references to sandbox-patterns and nvidia-ai-q
 - [[concepts/security-and-governance/agent-sandbox-patterns]] — Added Google Agent Sandbox GA section (300/sec provisioning, 16× growth) and Agent Substrate open-source project
-- [[concepts/ai-code-quality]] — Full rewrite from stub: Nolan Lawson quality-first approach, multi-model PR review, slop cannon debate
+- [[concepts/coding-agents/ai-code-quality]] — Full rewrite from stub: Nolan Lawson quality-first approach, multi-model PR review, slop cannon debate
 - [[concepts/multi-agents/agent-orchestration]] — Added DeepMind Antigravity IDE/Darwinian skills library section and Google's new agent infrastructure stack
 - [[entities/deepmind]] — Added Agents at Scale panel: Antigravity IDE, token quotas, skills library, model mixing (Gemma 4 + advanced)
 - [[entities/nolan-lawson]] — Added AI coding quality section: multi-agent review skill, slow workflow, near-zero false positives
@@ -5189,7 +5189,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - [[entities/gemini]] — Added Gemini Omni (world model), Gemini Spark (24/7 AI agent), Daily Brief sections. Updated infobox, model family list, relationships. Added 2 raw sources.
 
 ### Concept Pages Created
-- [[concepts/cursor-composer-2-5]] — Agentic coding model built on Kimi K2.5. Targeted RL, 25× synthetic data, reward hacking, Sharded Muon optimizer
+- [[concepts/coding-agents/cursor-composer-2-5]] — Agentic coding model built on Kimi K2.5. Targeted RL, 25× synthetic data, reward hacking, Sharded Muon optimizer
 - [[concepts/nvidia-sana-wm]] — 2.6B open-source world model (Apache 2.0). Hybrid GDN+softmax, dual-branch camera. 36× throughput vs LingBot-World
 - [[concepts/openai/realtime-2]] — Three realtime voice models: reasoning voice, live translation (70+→13 languages), streaming Whisper
 

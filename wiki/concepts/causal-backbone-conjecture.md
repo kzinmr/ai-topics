@@ -68,7 +68,7 @@ Because all agents track the backbone, its components become tightly coupled. Th
 
 - **[[concepts/good-regulator-theorem]]** (Original + Gooder): The parent selection theorem this conjecture responds to. The Gooder Regulator claims task diversity + information bottleneck forces model-building; the Causal Backbone argues resource constraints, NOT task diversity, is the real driver.
 - **[[concepts/world-models-science]]**: Argues against exhaustive world modeling in favor of sparse, strategically-relevant modeling
-- **[[concepts/agentic-coding]]**: Agentic coding systems implicitly operate on backbone principles — prioritizing high-leverage code modifications over exhaustive codebase understanding
+- **[[concepts/coding-agents/agentic-coding]]**: Agentic coding systems implicitly operate on backbone principles — prioritizing high-leverage code modifications over exhaustive codebase understanding
 - **[[concepts/information-bottleneck]]**: The natural filtering mechanism — information bottlenecks (context windows, attention budgets) force the agent to identify backbone-relevant signals
 - **[[concepts/karpathy-loop]]**: The loop implicitly operates on causal backbones — which experiments to run is determined by resource-weighted hypotheses
 

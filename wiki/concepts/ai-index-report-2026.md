@@ -156,7 +156,7 @@ The annual AI Index report published by Stanford University's HAI (Human-Centere
 - [[concepts/_index]]
 - [[concepts/neurosymbolic-ai]]
 - [[concepts/headless-ai-services]]
-- [[concepts/ai-coding-reliability]]
+- [[concepts/coding-agents/ai-coding-reliability]]
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/ai-governance]]
 - [[concepts/agentic-ai]]

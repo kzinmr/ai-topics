@@ -35,5 +35,5 @@ A Haskell function to safely encode arbitrary strings as HTTP header values was 
 
 ## Related Concepts
 - [[concepts/ai-coding]] — broader AI-assisted development practices
-- [[concepts/coding-agents]] — autonomous coding agent systems
+- [[concepts/coding-agents/coding-agents]] — autonomous coding agent systems
 - [[concepts/technical-debt]] — accumulated complexity costs

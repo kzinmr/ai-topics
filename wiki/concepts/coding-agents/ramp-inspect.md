@@ -15,7 +15,7 @@ sources:
 related:
   - "[[concepts/background-agents]]"
   - "[[concepts/autonomous-agents]]"
-  - "[[concepts/closing-the-software-loop]]"
+  - "[[concepts/coding-agents/closing-the-software-loop]]"
   - "[[entities/ramp]]"
 ---
 

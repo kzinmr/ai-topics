@@ -205,7 +205,7 @@ On May 13, 2026, Anthropic announced a major pricing change via [@ClaudeDevs](ht
 
 The announcement was met with mixed reactions: framed as a "rug pull" by some users who relied on the historical subsidy, but viewed by Anthropic as rationalizing a pricing model that was never sustainable for third-party harness usage. OpenClaw and OpenCode had already been selectively targeted; the new policy makes metering universal and transparent.
 
-**Context**: This coincides with OpenAI's launch of an [enterprise switch promo](https://x.com/OpenAIDevs/status/2054586214112780518) the same day. Anthropic is consolidating its most favorable pricing behind its own tools (Claude Code, Claude.ai) now that its brand is established, while OpenAI Codex as the challenger maintains more liberal usage policies. See [[concepts/mandate-equinox]] for the broader competitive cycle.
+**Context**: This coincides with OpenAI's launch of an [enterprise switch promo](https://x.com/OpenAIDevs/status/2054586214112780518) the same day. Anthropic is consolidating its most favorable pricing behind its own tools (Claude Code, Claude.ai) now that its brand is established, while OpenAI Codex as the challenger maintains more liberal usage policies. See [[concepts/coding-agents/mandate-equinox]] for the broader competitive cycle.
 
 Sources: [@ClaudeDevs — May 13, 2026](https://x.com/ClaudeDevs/status/2054610152817619388), [AINews: Codex Rises, Claude Meters Programmatic Usage](https://www.latent.space/p/ainews-codex-rises-claude-meters)
 | **Pro** | $17/mo annual or $20/mo monthly | Claude Code included; Sonnet 4.6 + Opus 4.7 |

@@ -64,6 +64,6 @@ This reflects the enterprise preference for proven, reliable software over DIY a
 
 ## Related Concepts
 
-- [[normalization-of-deviance-in-ai-coding]] — risk of trusting AI outputs without review
-- [[concepts/coding-agents]] — AI coding agent tools and capabilities
+- [[concepts/coding-agents/normalization-of-deviance-in-ai-coding]] — risk of trusting AI outputs without review
+- [[concepts/coding-agents/coding-agents]] — AI coding agent tools and capabilities
 - [[software-development-lifecycle]] — how SDLC adapts to AI-generated code

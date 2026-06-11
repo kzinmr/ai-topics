@@ -65,7 +65,7 @@ This demonstrates a subtle form of **data leakage**: any validation gate in a br
 This experiment sits at the intersection of two trends:
 
 1. **[[karpathy-loop|Karpathy's autoresearch]]**: autonomous loops for ML hyperparameter optimization
-2. **[[pi-autoresearch|Shopify's pi-autoresearch]]**: generalizing autoresearch beyond ML to arbitrary metrics
+2. **[[concepts/coding-agents/pi-autoresearch|Shopify's pi-autoresearch]]**: generalizing autoresearch beyond ML to arbitrary metrics
 
 Doug's work applies the pattern specifically to **search ranking**, where the metric (NDCG) and the optimization surface (BM25 parameters + heuristics) differ from ML training loops.
 
@@ -84,6 +84,6 @@ Despite the overfitting issues, Doug argues the approach is a **useful tuning to
 - [[softwaredoug]] — Doug Turnbull entity page
 - [[autonomous-component-optimization]] — The broader pattern of agent-driven metric optimization
 - [[karpathy-loop]] — Karpathy's original autoresearch concept
-- [[pi-autoresearch]] — Shopify's generalized autoresearch
+- [[concepts/coding-agents/pi-autoresearch]] — Shopify's generalized autoresearch
 - [[ndcg]] — Normalized Discounted Cumulative Gain, the metric used
 - [[concepts/harness-engineering/agentic-loop]] — The underlying agent loop pattern

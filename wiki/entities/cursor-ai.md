@@ -127,7 +127,7 @@ Real-time RL is susceptible to reward hacking. Documented fixes:
 
 Real users serve as a natural check — each reward hack becomes a bug report for improving the training system.
 
-See: [[concepts/real-time-rl]], [cursor.com/blog/real-time-rl-for-composer](https://cursor.com/blog/real-time-rl-for-composer)
+See: [[concepts/coding-agents/real-time-rl]], [cursor.com/blog/real-time-rl-for-composer](https://cursor.com/blog/real-time-rl-for-composer)
 
 ## SpaceX-Cursor Connection
 
@@ -269,7 +269,7 @@ Aman Sanger presented at NVIDIA GTC 2026 (Apr 12, 2026) outlining Cursor's termi
 - Old clouds = "cost of goods sold cloud" (infrastructure)
 - Cursor = "R&D cloud" helping enterprises build more ambitious software
 
-See also: [[concepts/self-driving-codebases]], [[concepts/async-coding-agents]]
+See also: [[concepts/self-driving-codebases]], [[concepts/coding-agents/async-coding-agents]]
 
 ---
 

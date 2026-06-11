@@ -65,5 +65,5 @@ Unlike cloud-hosted coding agents like [[entities/claude-code]], [[concepts/code
 - [[entities/claude-code]] — Anthropic's coding agent
 - [[concepts/codex]] — OpenAI's coding agent
 - [[entities/cursor]] — AI code editor
-- [[concepts/coding-agents]] — General coding agent concept
+- [[concepts/coding-agents/coding-agents]] — General coding agent concept
 - [[concepts/agent-security]] — Agent security and governance

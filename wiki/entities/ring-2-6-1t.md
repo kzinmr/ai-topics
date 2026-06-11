@@ -74,5 +74,5 @@ Ring-2.6-1T enters a competitive landscape of MoE models:
 
 - **[[entities/inclusionai]]**: Parent company, limited public information
 - **[[concepts/mixture-of-experts]]**: MoE architecture enabling 1T parameters with 63B active
-- **[[concepts/coding-agents]]**: Primary target use case
+- **[[concepts/coding-agents/coding-agents]]**: Primary target use case
 - **[[entities/openrouter]]**: Distribution platform

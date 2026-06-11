@@ -225,11 +225,11 @@ AI and LLM concept pages organized by topic.
 
 ## Ai-Coding-Agent-Criticism
 
-- [[concepts/ai-coding-agent-criticism]] — Armin Ronacher (lucumr.pocoo.org) identified a structural asymmetry in how AI coding agents are debated:
+- [[concepts/coding-agents/ai-coding-agent-criticism]] — Armin Ronacher (lucumr.pocoo.org) identified a structural asymmetry in how AI coding agents are debated:
 
 ## Ai-Coding-Reliability
 
-- [[concepts/ai-coding-reliability]] — The central tension: AI tools can write code faster than any human, but writing code is not the same as shipping reliable software. The industry is discovering this distinction at scale in 2026.
+- [[concepts/coding-agents/ai-coding-reliability]] — The central tension: AI tools can write code faster than any human, but writing code is not the same as shipping reliable software. The industry is discovering this distinction at scale in 2026.
 
 ## Ai-Digital-Nato
 
@@ -365,7 +365,7 @@ AI and LLM concept pages organized by topic.
 
 ## Closing-Agent-Loop
 
-- [[concepts/closing-agent-loop]] — Cognition's philosophy for autonomous development: Devin doesn't just write code — it handles the entire development loop.
+- [[concepts/coding-agents/closing-agent-loop]] — Cognition's philosophy for autonomous development: Devin doesn't just write code — it handles the entire development loop.
 
 ## Coala
 

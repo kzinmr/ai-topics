@@ -60,7 +60,7 @@ The piece went viral (991 HN points) and sparked intense discussion:
 
 ## Related Pages
 
-- [[concepts/coding-agents|Coding Agents]]
+- [[concepts/coding-agents/coding-agents|Coding Agents]]
 - [[concepts/harness-engineering|Harness Engineering]]
 - [[concepts/ai-slop-productivity-paradox|AI Slop and the Productivity Paradox]]
 - [[concepts/agentic-engineering|Agentic Engineering]]

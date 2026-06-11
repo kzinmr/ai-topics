@@ -18,8 +18,8 @@ related:
   - "[[entities/thorsten-ball]]"
   - "[[entities/sourcegraph]]"
   - "[[concepts/harness-commoditization]]"
-  - "[[concepts/amp-neo]]"
-  - "[[concepts/minimal-coding-agent]]"
+  - "[[concepts/coding-agents/amp-neo]]"
+  - "[[concepts/coding-agents/minimal-coding-agent]]"
 sources:
   - raw/articles/2026-02-19_ampcode-coding-agent-is-dead.md
   - raw/articles/2026-05-06_ampcode-neo-rebuilt.md
@@ -72,7 +72,7 @@ In February 2026, Amp announced "The Coding Agent Is Dead" — arguing that fron
 
 ## Key Writings
 
-- **"How to Build a Code-Editing Agent"** (April 2025) — Articulated the [[concepts/minimal-coding-agent]] pattern: ~400 lines of Go, three tools, heartbeat loop
+- **"How to Build a Code-Editing Agent"** (April 2025) — Articulated the [[concepts/coding-agents/minimal-coding-agent]] pattern: ~400 lines of Go, three tools, heartbeat loop
 - **"The Coding Agent Is Dead"** (February 2026) — Argued that [[concepts/harness-commoditization|model capability has commoditized agent harnesses]]; announced editor extension shutdown
 - **"Amp, Rebuilt"** (May 2026) — Neo launch: remote control, auto-compaction, Plugin API, performance overhaul
 - **"Software After Software"** (May 2026) — [[concepts/software-after-software|Amp Labs manifesto]]: 12 theses on how AI transforms the software industry. Code is no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams.

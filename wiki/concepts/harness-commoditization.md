@@ -15,7 +15,7 @@ aliases:
   - harness-commoditization-thesis
   - post-editor-agent-era
 related:
-  - "[[concepts/minimal-coding-agent]]"
+  - "[[concepts/coding-agents/minimal-coding-agent]]"
   - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/unharnessed-agents]]"
   - "[[concepts/harness-engineering]]"

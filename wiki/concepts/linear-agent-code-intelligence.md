@@ -70,7 +70,7 @@ Code Intelligence represents a step toward **agent-native product development** 
 - [[entities/linear]] — Linear, the project management and issue tracking platform
 - [[entities/karri-saarinen]] — Karri Saarinen, Co-Founder & CEO of Linear
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern
-- [[concepts/coding-agents]] — The broader category of AI coding agents
+- [[concepts/coding-agents/coding-agents]] — The broader category of AI coding agents
 - [[concepts/context-engineering|Context Engineering]] — Managing agent context for effective reasoning
 
 ## References

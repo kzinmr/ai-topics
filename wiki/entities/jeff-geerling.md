@@ -188,7 +188,7 @@ Source: [Bambu Lab is abusing the open source social contract](https://www.jeffg
 - [[concepts/raspberry-pi]] — His main platform for hardware experimentation and community projects
 - [[concepts/homelab]] — His philosophy of self-hosted, local-first computing infrastructure
 - [[concepts/open-source-sustainability]] — His advocacy for addressing maintainer burnout
-- [[concepts/ai-code-quality]] — His critique of AI-generated code and its impact on open-source ecosystems
+- [[concepts/coding-agents/ai-code-quality]] — His critique of AI-generated code and its impact on open-source ecosystems
 - [[concepts/local-first-computing]] — Running services on your own hardware, not in the cloud
 -  — His analysis of the death of corporate-sponsored open-source licensing
 -  — Running AI inference on constrained hardware like Raspberry Pi and RISC-V-  — His open-source compact homelab rack design

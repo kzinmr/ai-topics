@@ -86,7 +86,7 @@ FrontierCode represents a maturation of coding agent evaluation:
 
 ## Related Concepts
 
-- [[concepts/ai-code-quality]] — The broader "quality vs slop" debate in AI coding
+- [[concepts/coding-agents/ai-code-quality]] — The broader "quality vs slop" debate in AI coding
 - [[concepts/ai-benchmarks/swe-bench]] — The benchmark FrontierCode builds upon and critiques
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Another "hardest tasks" benchmark for coding agents
 - [[concepts/ai-benchmarks/deepswe-benchmark]] — Datacurve's benchmark exposing SWE-Bench Pro verifier errors

@@ -167,7 +167,7 @@ Both products converged on goal-driven autonomous loops within weeks of each oth
 - [[concepts/codex/codex-goal]] — OpenAI Codex's `/goal` (Ralph loop++)
 - [[concepts/codex/codex-goal-meta-prompting]] — Using AI to generate better goal prompts
 - [[concepts/karpathy-loop]] — Karpathy's fixed-budget autonomous ML research loop
-- [[concepts/pi-autoresearch]] — Shopify's generalized metric optimization loop
+- [[concepts/coding-agents/pi-autoresearch]] — Shopify's generalized metric optimization loop
 - [[concepts/harness-engineering]] — Runtime infrastructure that makes goal loops reliable
 - [[entities/claude-code--capabilities]] — Full Claude Code feature catalog
 

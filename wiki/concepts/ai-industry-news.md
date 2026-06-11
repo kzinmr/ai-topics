@@ -89,7 +89,7 @@ SpaceX has deepened its partnership with **Cursor**, the AI-native code editor, 
 - Cursor's own model **Composer 2** was built on Moonshot's Kimi; community reception was lukewarm
 - Access to a million H100 equivalents via SpaceX's **Colossus** cluster gives Cursor a real shot at training a frontier model
 - Analyst **Kevin Kwok** observed: top coding labs now need to own **both** model and product — distribution without a model is a rental agreement
-- See: [[cursor-ide]]
+- See: [[concepts/coding-agents/cursor-ide]]
 
 ---
 
@@ -100,4 +100,4 @@ SpaceX has deepened its partnership with **Cursor**, the AI-native code editor, 
 - [[concepts/gpt/chatgpt-images-2-0]] — Deep dive on ChatGPT Images 2.0
 - [[concepts/gpt/gpt-5-5]] — Deep dive on GPT-5.5
 - [[concepts/openai/workspace-agents]] — Deep dive on Workspace Agents
-- [[cursor-ide]] — Cursor IDE and its industry role
+- [[concepts/coding-agents/cursor-ide]] — Cursor IDE and its industry role

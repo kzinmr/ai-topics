@@ -53,7 +53,7 @@ Nightwatch represents the emerging category of **agentic SRE tools** — AI agen
 
 - **vs Traditional Monitoring** ([[concepts/observability|Datadog, Grafana]]): Goes beyond dashboards to automated investigation
 - **vs AIOps Platforms** ([[concepts/aiops|PagerDuty, BigPanda]]): Local-first, open-source, read-only by design
-- **vs [[concepts/coding-agents|Coding Agents]]**: Specialized for production operations rather than software development
+- **vs [[concepts/coding-agents/coding-agents|Coding Agents]]**: Specialized for production operations rather than software development
 - **vs [[concepts/ai-agents|General AI Agents]]**: Domain-specific to SRE workflows with guardrails
 
 ## Related Pages

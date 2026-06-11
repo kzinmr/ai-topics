@@ -157,7 +157,7 @@ export OPENAI_BASE_URL="http://127.0.0.1:11434/v1"
 Claw Code occupies a unique position: it is simultaneously an **architecture reference**, a **working coding agent harness**, and a **demo of autonomous development** (since the repo itself was built by AI agents).
 
 - Compared to **[[concepts/harness-engineering]]** frameworks, Claw Code is a concrete implementation whose architecture reveals the same patterns (tool systems, permission models, context management) that harness engineering formalizes
-- Compared to **[[concepts/minimal-coding-agent]]** (Thorsten Ball's ~400-line Go agent), Claw Code demonstrates the opposite end of the spectrum — a full-featured 11-crate Rust workspace
+- Compared to **[[concepts/coding-agents/minimal-coding-agent]]** (Thorsten Ball's ~400-line Go agent), Claw Code demonstrates the opposite end of the spectrum — a full-featured 11-crate Rust workspace
 
 ## The Autonomous Development Thesis
 
@@ -196,4 +196,4 @@ At Ralphthon and OmOCon events, participants who built good agent coordination, 
 - [[entities/yeachan-heo]] — Creator of OmX, primary collaborator
 - [[entities/ultraworkers]] — GitHub organization
 - [[concepts/harness-engineering]] — Broader harness engineering framework
-- [[concepts/minimal-coding-agent]] — Minimal agent pattern (opposite extreme)
+- [[concepts/coding-agents/minimal-coding-agent]] — Minimal agent pattern (opposite extreme)

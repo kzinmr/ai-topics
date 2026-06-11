@@ -49,5 +49,5 @@ The transition was widely labeled a "bait and switch": open-source release to at
 - [[concepts/gemini/index]] — Gemini model family
 - [[concepts/open-source]] — open-source dynamics
 - [[entities/claude-code]] — Claude Code (alternative)
-- [[concepts/coding-agents]] — coding agent tools
+- [[concepts/coding-agents/coding-agents]] — coding agent tools
 - [[events/google-io-2026]] — Google I/O 2026 event

@@ -150,7 +150,7 @@ Lambert and others warn that anti-distillation regulation could backfire:
 ## See Also
 
 - [[concepts/multi-teacher-on-policy-distillation]] — MOPD, the frontier distillation technique for post-training
-- [[concepts/gold-diff-distillation]] — Gold-Diff, a distillation variant
+- [[concepts/coding-agents/gold-diff-distillation]] — Gold-Diff, a distillation variant
 - [[concepts/grpo-rl-training]] — GRPO, the RL framework underlying on-policy distillation
 - [[concepts/synthetic-data]] — Synthetic data generation, a key distillation application
 - [[concepts/ai-api-abuse]] — The API exploitation behavior commonly conflated with distillation

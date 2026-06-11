@@ -313,4 +313,4 @@ Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technolo
 - [[concepts/harness-engineering/agent-harness]] — Agent harness design
 - [[concepts/metaprompting]] — Metaprompting (self-improving prompts)
 - [[entities/openai]] — OpenAI
-- [[concepts/coding-agents]] — Coding agents general
+- [[concepts/coding-agents/coding-agents]] — Coding agents general

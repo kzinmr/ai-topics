@@ -39,7 +39,7 @@ Augment Code's **Prism** is the first production-grade per-turn model router for
 
 No single model wins every task within a session. Simple autocompletion doesn't need a frontier model; complex debugging might. Per-turn routing optimizes both cost and quality simultaneously, which fixed-model strategies cannot achieve.
 
-See full router config and benchmarks: [[concepts/ai-coding-cost-optimization]].
+See full router config and benchmarks: [[concepts/coding-agents/ai-coding-cost-optimization]].
 
 ## Solo Agency 3-Tier Routing (June 2026)
 
@@ -73,7 +73,7 @@ Source: [[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]
 - [[concepts/inference-optimization]]
 - [[entities/augment]]
 - [[concepts/llm-cost-optimization]]
-- [[concepts/ai-coding-cost-optimization]] — Ronin's complete system with manual config-based router
+- [[concepts/coding-agents/ai-coding-cost-optimization]] — Ronin's complete system with manual config-based router
 
 ## Manual Router Architecture (Ronin, May 2026)
 
@@ -90,4 +90,4 @@ Key difference from Prism: Ronin's router uses **explicit keyword matching** aga
 
 The core insight: Kimi 2.6 matches Sonnet 4.6 on shipped code quality at 1/6 the cost, making Sonnet a poor default in 2026. The router is complementary to Augment Prism — Prism automates the routing that Ronin's config manually encodes.
 
-See full router config and benchmarks: [[concepts/ai-coding-cost-optimization]].
+See full router config and benchmarks: [[concepts/coding-agents/ai-coding-cost-optimization]].

@@ -310,6 +310,6 @@ See also: [[concepts/apple-foundation-models]]
 - [[pi-coding-agent]] — Minimal coding agent by Mario Zechner that runs with Gemma 4 via LM Studio.
 - [[mistral-ai]] — Competing open-weight model provider with Mistral Medium 3.5.
 - [[open-models]] — Open-weight model ecosystem and licensing landscape.
-- [[concepts/coding-agents]] — AI agents for software engineering tasks.
+- [[concepts/coding-agents/coding-agents]] — AI agents for software engineering tasks.
 - [[concepts/local-llm]] — Local LLM deployment patterns and use cases.
 - [[lmstudio]] — Local model serving tool for running Gemma 4 on consumer hardware.

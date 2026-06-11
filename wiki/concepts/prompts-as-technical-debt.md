@@ -77,7 +77,7 @@ This tension between "minimal prompting" and "engineering the harness" is one of
 - [[concepts/harness-engineering/agent-architecture-decomposition]] — How agent systems distribute prompting across components
 - [[ralph-loop]] — A specific agent workflow pattern (a form of prompting)
 - [[ai-agent-engineering]] — The engineering discipline around AI agents
-- [[model-routing]] — Choosing which model to use (a prompt-level decision)
+- [[concepts/coding-agents/model-routing]] — Choosing which model to use (a prompt-level decision)
 
 ## Source
 Based on Sean Goedecke's blog post "Prompts are technical debt too" (May 2026). See [[seangoedecke.com--prompts-are-technical-debt-too--2bd50f80]] for the full article.

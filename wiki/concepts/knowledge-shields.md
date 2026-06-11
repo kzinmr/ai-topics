@@ -129,7 +129,7 @@ The hypothesis-invalidation loop is the correct methodology for debugging misbeh
 | [[concepts/cognitive-debt]] | Knowledge shields accumulate cognitive debt — the longer a flawed model persists, the more debt is accrued before correction |
 | [[concepts/illusion-of-thinking]] | Self-verification as the antidote to the illusion of thinking — verification externalizes the thinking process |
 | [[concepts/harness-engineering/agentic-design-patterns]] | The hypothesis-invalidation loop is itself an agentic design pattern for system understanding and debugging |
-| [[concepts/ai-coding-reliability]] | Productive vs. unproductive error classification is essential for reliability engineering in AI coding systems |
+| [[concepts/coding-agents/ai-coding-reliability]] | Productive vs. unproductive error classification is essential for reliability engineering in AI coding systems |
 
 ## Key Insight
 

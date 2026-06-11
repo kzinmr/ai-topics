@@ -51,7 +51,7 @@ Inspect's advantages over commercial tools:
 
 - [[entities/ramp]] — Parent company
 - [[entities/opencode]] — Agent framework used
-- [[concepts/background-coding-agent]] — The architectural pattern Inspect embodies
+- [[concepts/coding-agents/background-coding-agent]] — The architectural pattern Inspect embodies
 - [[concepts/modal-sandboxes]] — Execution environment
 - [[concepts/warm-start-optimization]] — Performance technique used
 

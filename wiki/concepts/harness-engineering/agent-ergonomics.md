@@ -189,4 +189,4 @@ Key differentiator vs McKinney's Go/Rust framing: Zero is a **new language**, no
 - [[entities/wes-mckinney]] — Author of the agent ergonomics thesis (ecosystem/tooling perspective)
 - [[entities/armin-ronacher]] — Language syntax/feature design perspective on agent-oriented languages
 - [[concepts/programming-languages]] — Type systems, compilers, language design
-- [[concepts/hf-cli]] — Agent-optimized CLI design case study (Hugging Face)
+- [[concepts/coding-agents/hf-cli]] — Agent-optimized CLI design case study (Hugging Face)

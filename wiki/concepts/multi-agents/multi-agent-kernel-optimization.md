@@ -89,7 +89,7 @@ Cursor released the optimized kernels as a public repository containing all 235 
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — The multi-agent coordination pattern enabling autonomous optimization
-- [[concepts/cursor-ide]] — The Cursor IDE platform that hosts the agent infrastructure
+- [[concepts/coding-agents/cursor-ide]] — The Cursor IDE platform that hosts the agent infrastructure
 - [[concepts/ai-agent-engineering]] — Engineering patterns for autonomous agent execution and eval loops
 - [[concepts/autonomous-component-optimization]] — The broader concept of self-improving systems
 

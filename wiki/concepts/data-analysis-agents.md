@@ -147,7 +147,7 @@ This eliminates the traditional handoff between data teams and engineering teams
 
 - [[concepts/cognition-ai-data-analyst]] — Detailed Cognition/Devin data analyst architecture
 - [[concepts/poor-mans-continuous-learning]] — Knowledge-based continuous improvement pattern
-- [[concepts/closing-agent-loop]] — Write→Catch→Fix→Merge cycle (data analysis variant)
+- [[concepts/coding-agents/closing-agent-loop]] — Write→Catch→Fix→Merge cycle (data analysis variant)
 - [[concepts/mcp]] — Model Context Protocol (tool access standardization)
 - [[entities/ashpreet-bedi]] — Dash self-learning data agent, PMCL originator
 - [[raw/articles/2026-01-29_openai-in-house-data-agent]] — OpenAI in-house data agent article

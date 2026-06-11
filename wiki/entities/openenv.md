@@ -135,7 +135,7 @@ Researchers can use OpenEnv to:
 
 - [[harness-engineering]] — Engineering the supporting infrastructure around AI models for agent systems
 - [[rl-algorithms-for-llm-training]] — Overview of RL algorithms used in LLM post-training
-- [[coding-agents]] — AI coding agents and their harness architectures
+- [[concepts/coding-agents/coding-agents]] — AI coding agents and their harness architectures
 - [[grpo]] — Group Relative Policy Optimization, a common RL algorithm for LLMs
 - [[post-training]] — General post-training techniques including RLHF
 

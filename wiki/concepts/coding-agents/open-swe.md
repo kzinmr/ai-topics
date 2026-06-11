@@ -68,5 +68,5 @@ Deterministic safety nets around the agentic loop: `ToolErrorMiddleware`, messag
 - [[concepts/deep-agents]] — Deep Agents framework
 - [[entities/inspect]] — Ramp's Inspect
 - [[concepts/claude-code/claude-md-rules]] — CLAUDE.md — analogous to AGENTS.md for Claude Code
-- [[concepts/coding-agents]] — Coding agents overview
+- [[concepts/coding-agents/coding-agents]] — Coding agents overview
 - [[concepts/agentic-engineering]] — Agent-centric engineering

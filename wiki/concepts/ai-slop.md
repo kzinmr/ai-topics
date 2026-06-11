@@ -90,4 +90,4 @@ This perspective reframes the slop discussion from "can it be fixed?" to "here i
 - [[concepts/pi-agent-harness]] — The agent harness experiencing this slop problem firsthand
 - [[entities/gary-marcus]] — LLM skepticism, "Gullibility Gap"
 - [[concepts/open-source-ai-destruction]] — Broader tension between AI and open source
-- [[concepts/ai-coding-reliability]] — Reliability challenges in AI-assisted coding
+- [[concepts/coding-agents/ai-coding-reliability]] — Reliability challenges in AI-assisted coding

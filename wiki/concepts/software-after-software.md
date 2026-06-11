@@ -19,7 +19,7 @@ related:
   - "[[concepts/vibe-coding]]"
   - "[[concepts/agentic-engineering]]"
   - "[[concepts/harness-commoditization]]"
-  - "[[concepts/coding-agents]]"
+  - "[[concepts/coding-agents/coding-agents]]"
   - "[[entities/amp]]"
   - "[[entities/thorsten-ball]]"
 ---
@@ -133,7 +133,7 @@ What distinguishes "Software After Software" is its **economic and organizationa
 - [[concepts/vibe-coding]] — The individual developer practice this manifesto extrapolates to industry scale
 - [[concepts/agentic-engineering]] — The engineering discipline for building and working with AI agents
 - [[concepts/harness-commoditization]] — The thesis that agent harnesses become commodities as models improve
-- [[concepts/coding-agents]] — The product category (Claude Code, Amp, Cursor, Codex) that enables this transformation
+- [[concepts/coding-agents/coding-agents]] — The product category (Claude Code, Amp, Cursor, Codex) that enables this transformation
 
 ## Sources
 

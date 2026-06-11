@@ -179,7 +179,7 @@ Specialist agents: Orchestrator → validation, supply risk, procurement, capaci
 | Approach | Scope | Relationship |
 |----------|-------|-------------|
 | [[evals-for-ai-agents]] (Anthropic) | Basic structure, pitfalls, and scoring methods for agent evaluations | Foundation. Macro evals build the population layer on top |
-| [[infrastructure-noise-agent-evals]] | Impact of infrastructure noise on agent evaluations | Complementary perspective on evaluation infrastructure reliability |
+| [[concepts/coding-agents/infrastructure-noise-agent-evals]] | Impact of infrastructure noise on agent evaluations | Complementary perspective on evaluation infrastructure reliability |
 | [[ai-resistant-evaluations]] | Robustness design of evaluations themselves | Lower-level eval design principles |
 | [[comparisons/evals-skills]] | Evaluation skills for coding agents | Different approach: MCP + skills for evaluation automation |
 | [[concepts/harness-engineering]] | OpenAI's AI-assisted development approach | Inspiration source for self-verification using traces |

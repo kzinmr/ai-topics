@@ -43,7 +43,7 @@ AINews (May 14, 2026 edition) identifies the following factors:
 
 ## Related Concepts
 
-- [[concepts/coding-agents]] — The overall coding agent market
+- [[concepts/coding-agents/coding-agents]] — The overall coding agent market
 - [[entities/claude-code]] — Anthropic's coding agent
 - [[entities/openai-codex]] — OpenAI's coding agent
 - [[entities/anthropic]] — Anthropic

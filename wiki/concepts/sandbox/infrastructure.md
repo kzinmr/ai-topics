@@ -236,7 +236,7 @@ As Blake Crosley's analysis notes: *"The minimum viable defense is a URL allowli
 ## Related Concepts
 
 - [[concepts/anthropic/managed-agents]] — Managed agent services and their sandboxing approaches
-- [[concepts/ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
+- [[concepts/coding-agents/ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
 -  — The practice of directing AI agents in software development- [[concepts/claude/mythos-glasswing]] — Anthropic's internal agent architecture
 - [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment
 

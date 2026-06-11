@@ -20,7 +20,7 @@ related:
   - "[[entities/opencode]]"
   - "[[entities/cursor-ai]]"
   - "[[entities/codex]]"
-  - "[[concepts/real-time-rl]]"
+  - "[[concepts/coding-agents/real-time-rl]]"
   - "[[concepts/continual-learning]]"
 ---
 
@@ -70,7 +70,7 @@ Created a forkable [Prime Intellect environment](https://app.primeintellect.ai/d
 
 ## Related Pages
 
-- [[concepts/real-time-rl]] — Cursor's approach that inspired this work
+- [[concepts/coding-agents/real-time-rl]] — Cursor's approach that inspired this work
 - [[concepts/continual-learning]] — Three-layer learning framework
 - [[entities/prime-intellect]] — Hosted training platform used
 - [[entities/opencode]] — Coding agent used as the harness

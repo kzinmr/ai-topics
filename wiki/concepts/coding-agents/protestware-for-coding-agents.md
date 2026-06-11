@@ -87,4 +87,4 @@ jqwik is the first case where protestware text is aimed at a program rather than
 - [[prompt-injection]] — The underlying attack technique
 - [[agent-security]] — Broader AI agent security concerns
 - [[supply-chain-security]] — Traditional package supply chain risks
-- [[coding-agents]] — AI coding assistants as targets
+- [[concepts/coding-agents/coding-agents]] — AI coding assistants as targets

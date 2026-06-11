@@ -39,7 +39,7 @@ sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-serv
 
 ## Related Concepts
 
-- [[background-coding-agent]] — uses Modal snapshots for similar persistence goals
+- [[concepts/coding-agents/background-coding-agent]] — uses Modal snapshots for similar persistence goals
 - [[concepts/modal-sandboxes]] — cloud execution environments that pair well with S3-first storage
 - [[markdown-based-skills]] — skills stored as .md files in S3
 

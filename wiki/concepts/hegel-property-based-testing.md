@@ -173,7 +173,7 @@ See: [[entities/drmaciver#Blog and Recent Posts]]
 - [[entities/antithesis]] — Company behind Hegel, deterministic simulation testing
 - [[entities/claude-code]] — The AI coding agent used to write ~90% of Hegel's code
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Hegel exemplifies design-led, test-verified AI-assisted development
-- [[concepts/ai-coding-reliability]] — The 100% coverage philosophy applied to AI-generated code
+- [[concepts/coding-agents/ai-coding-reliability]] — The 100% coverage philosophy applied to AI-generated code
 
 ## Sources
 

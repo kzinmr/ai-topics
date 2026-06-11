@@ -47,7 +47,7 @@ The key insight is that **agent traces contain the richest signal for agent mode
 ## Related
 
 - [[concepts/continual-learning]] — Broader paradigm of ongoing model improvement
-- [[concepts/real-time-rl]] — Cursor's production-feedback RL training (~5h cycle)
+- [[concepts/coding-agents/real-time-rl]] — Cursor's production-feedback RL training (~5h cycle)
 - [[concepts/post-training]] — Fine-tuning and instruction tuning category
 - [[concepts/agent-evaluation]] — How agent performance is measured
 - [[entities/cognition]] — Devin agents could be both users and training data sources

@@ -82,6 +82,6 @@ Qwen3.7 Max represents Alibaba's frontier push. The 56.6 AA Intelligence Index s
 - [[entities/alibaba]] — Alibaba (parent company)
 - [[concepts/mixture-of-experts]] — MoE architecture
 - [[concepts/local-ai]] — Local model inference
-- [[concepts/coding-agents]] — AI coding agents
+- [[concepts/coding-agents/coding-agents]] — AI coding agents
 - [[entities/xiaomi-mimo]] — MiMo-V2.5-Pro
 - [[concepts/glm-5-1]] — GLM-5.1

@@ -125,5 +125,5 @@ Qwen 3.7 Max generates internal chain-of-thought (CoT) before answering. On Qwen
 - [[concepts/gemini/gemini-3-5-flash|Gemini 3.5 Flash]] — competing agent-first model
 - [[entities/deepseek-v4|DeepSeek V4 Pro]] — competing agent model
 - [[concepts/agentic-engineering|Agentic Engineering]]
-- [[concepts/coding-agents|Coding Agents]]
+- [[concepts/coding-agents/coding-agents|Coding Agents]]
 - [[concepts/multi-agents/multi-agent|Multi-Agent Systems]]

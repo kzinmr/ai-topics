@@ -67,7 +67,7 @@ AI coding workflows focus on process optimization. Domain expertise is the subst
 
 ### vs. AI Code Porting
 
-[[concepts/ai-code-porting]] demonstrates what happens when AI operates without domain understanding — the ScanCode port reproduced code patterns but missed the community context and legal obligations.
+[[concepts/coding-agents/ai-code-porting]] demonstrates what happens when AI operates without domain understanding — the ScanCode port reproduced code patterns but missed the community context and legal obligations.
 
 ## Industry Validation
 
@@ -86,5 +86,5 @@ AI coding workflows focus on process optimization. Domain expertise is the subst
 - [[concepts/ai-coding-workflows]] — Process patterns for AI-assisted development
 - [[concepts/context-engineering|Context Engineering]] — Structuring information for AI agents
 - [[concepts/software-engineering]] — Broader AI impact on software
-- [[concepts/ai-code-porting]] — Case study in AI code translation
+- [[concepts/coding-agents/ai-code-porting]] — Case study in AI code translation
 - [[entities/jaya-gupta]] — Organizational moat theory

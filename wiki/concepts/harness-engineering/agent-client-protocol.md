@@ -310,5 +310,5 @@ By standardizing the agent-client interface:
 - [[entities/phil-schmid]] — Author of the ACP overview (2026)
 - [[entities/devin]] — Devin Desktop with ACP integration
 - [[concepts/mastra-acp-agents]] — ACP agents in Mastra framework
-- [[concepts/ai-coding-agent-criticism]] — Critical perspectives on AI coding agents
+- [[concepts/coding-agents/ai-coding-agent-criticism]] — Critical perspectives on AI coding agents
 - [[concepts/harness-engineering/agent-harness]] — Infrastructure layer wrapping raw models

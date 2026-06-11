@@ -80,7 +80,7 @@ These findings are **not contradictory** — they address different types of con
 - [[concepts/claude-code/claude-md-rules]] — Karpathy's behavioral guidelines for coding agents (rules ≠ context)
 - [[concepts/context-engineering|Context Engineering]] — The broader discipline of managing agent context
 - [[concepts/agent-skills]] — Skills as an alternative to static context files
-- [[concepts/evaluation-coding-agents]] — Coding agent evaluation benchmarks and methodologies
+- [[concepts/coding-agents/evaluation-coding-agents]] — Coding agent evaluation benchmarks and methodologies
 
 ## Sources
 

@@ -104,7 +104,7 @@ Rather than building guardrails and constraints first, give the LLM near-human f
 - [[concepts/harness-engineering/agentic-engineering]] — Broader agent engineering practices
 - [[concepts/ai-agent-traps]] — Common pitfalls in agent development
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson applied to memory systems
-- [[concepts/ai-coding-agent-criticism]] — Criticisms of current agent approaches
+- [[concepts/coding-agents/ai-coding-agent-criticism]] — Criticisms of current agent approaches
 
 ## Key Sources
 

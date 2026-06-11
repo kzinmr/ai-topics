@@ -47,5 +47,5 @@ hyperbo domain articles and content.
 ## See Also
 
 - [[substack]] — Newsletter and content publishing platform.
-- [[concepts/coding-agents]] — Topics covered in hyperbo's writing on AI and software engineering.
+- [[concepts/coding-agents/coding-agents]] — Topics covered in hyperbo's writing on AI and software engineering.
 - [[software-engineering]] — Software development practices and engineering culture.
