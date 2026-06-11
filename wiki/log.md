@@ -43,6 +43,20 @@
 
 ---
 
+## [2026-06-11] _archive/nous-research.md 削除
+
+**Action**: `wiki/_archive/nous-research.md` を削除。entities/nous-research.md が本体として存在するため、スタブのアーカイブは不要。
+
+**削除ファイル**:
+- `wiki/_archive/nous-research.md` — スタブページ（24行）
+
+**確認事項**:
+- `entities/nous-research.md` が存在することを確認（78行、充実したページ）
+- 被リンク: `log.md` の1件のみ（ログ記録、削除不要）
+- `index.md` 未登録
+
+---
+
 ## [2026-06-11] MCP-RL Course 講義内容の詳細サマリー展開と概念ページ分解
 
 **Action**: agents-mcp-rl-course.md の Lesson 1-6 + Office Hours の講義内容を詳細に分析し、コースページの Detailed Technical Notes セクションを追加。論点ごとに4つの新規概念ページを作成し、既存2ページを充実させた。
