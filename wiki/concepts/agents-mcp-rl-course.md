@@ -115,9 +115,10 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 | Date | Lecture | Transcript |
 |------|---------|------------|
 | Jun 17 | [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture\|Lesson 1: Agent Patterns & Principles]] | [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1\|Summary]] |
-| Jun 19 | [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture\|Lesson 2: MCP + Production-Grade Agents]] | [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2\|Summary]] |
-| Jun 24 | [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture|Lesson 3: Agent Evals and Optimization]] | [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3|Summary]] |
-| Jun 26 | [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture|Lesson 4: Introduction to Reinforcement Learning]] | [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4|Summary]] |
+| Jun 19 | [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture\|Lesson 2: MCP + Production-Grade Agents]] | [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2\|Summary]] · [[raw/articles/2025-06-21_willbrown_agents-mcp-rl-lesson2-repeat\|Repeat]] |
+| Jun 21 | [[raw/articles/2025-06-21_willbrown_agents-mcp-rl-office-hours-week1\|Office Hours (Week 1)]] | *Q&A transcript* |
+| Jun 24 | [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture\|Lesson 3: Agent Evals and Optimization]] | [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3\|Summary]] |
+| Jun 26 | [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture\|Lesson 4: Introduction to Reinforcement Learning]] | [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4\|Summary]] |
 | Jun 27 | [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Office Hours with Kyle Corbitt]] | [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Summary]] |
 | TBD | Lecture 5 | *pending* |
 | TBD | Lecture 6 | *pending* |
