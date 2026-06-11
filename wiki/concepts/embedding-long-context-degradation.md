@@ -116,7 +116,7 @@ However, embedding degradation is even **more severe** — while LLM context rot
 
 ## Relationship to LongEmbed
 
-[[concepts/longembed|LongEmbed]] (arXiv:2404.12096, Apr 2024) provides the **extension mechanism** that makes 8K+ embedding models possible — through position interpolation, NTK-aware scaling, and SelfExtend for RoPE models. But this study reveals that **extension ≠ retrieval quality**: a model technically capable of encoding 8K tokens still degrades to random-chance retrieval at just ~4K. Two complementary findings:
+[[concepts/evaluation/longembed|LongEmbed]] (arXiv:2404.12096, Apr 2024) provides the **extension mechanism** that makes 8K+ embedding models possible — through position interpolation, NTK-aware scaling, and SelfExtend for RoPE models. But this study reveals that **extension ≠ retrieval quality**: a model technically capable of encoding 8K tokens still degrades to random-chance retrieval at just ~4K. Two complementary findings:
 
 | Dimension | LongEmbed (2024) | This Study (2025) |
 |-----------|-----------------|-------------------|

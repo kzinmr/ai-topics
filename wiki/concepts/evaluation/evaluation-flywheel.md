@@ -63,7 +63,7 @@ Rather than a single score, evaluate across multiple dimensions:
 
 ## Related
 
-- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
-- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
+- [[concepts/evaluation/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+- [[concepts/evaluation/llm-evaluation-harness]] — LLM Evaluation Harness
 - [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison
 - [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — Infrastructure Noise in Agentic Evals

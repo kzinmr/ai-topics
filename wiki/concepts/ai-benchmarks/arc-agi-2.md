@@ -58,8 +58,8 @@ Håvard Tveit Ihle's WeirdML benchmark received a v2 update, adding a new dimens
 ## Related
 
 - [[concepts/gemini]] — Gemini 3 Deep Think performance
-- [[concepts/ai-evals]] — AI evaluation benchmarks overview
-- [[concepts/llm-evaluation-harness]] — Evaluation framework details
+- [[concepts/evaluation/ai-evals]] — AI evaluation benchmarks overview
+- [[concepts/evaluation/llm-evaluation-harness]] — Evaluation framework details
 - [[concepts/agent-survival-benchmark]] — Other agent-focused benchmarks
 
 ## Sources

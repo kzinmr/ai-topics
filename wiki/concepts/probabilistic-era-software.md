@@ -17,8 +17,8 @@ sources:
   - raw/articles/2025-08_gian-segato_probabilistic-era.md
   - https://giansegato.com/essays/probabilistic-era
 related:
-  - "[[concepts/evals-vs-monitoring-debate]]"
-  - "[[concepts/agent-evaluation-methodology]]"
+  - "[[concepts/evaluation/evals-vs-monitoring-debate]]"
+  - "[[concepts/evaluation/agent-evaluation-methodology]]"
   - "[[entities/gian-segato]]"
   - "[[entities/ben-hylak]]"
 ---
@@ -121,7 +121,7 @@ A 20% shift from game-building users to professional web apps can mean the diffe
 
 ## Connection to the Evals vs Monitoring Debate
 
-Segato's essay provides the **ontological foundation** for [[concepts/evals-vs-monitoring-debate|Ben Hylak's argument against eval-centric development]]:
+Segato's essay provides the **ontological foundation** for [[concepts/evaluation/evals-vs-monitoring-debate|Ben Hylak's argument against eval-centric development]]:
 
 | Segato's Insight | Hylak's Argument |
 |---|---|
@@ -157,5 +157,5 @@ Both arrive at the same conclusion from different angles: Segato from the **onto
 
 - **[Agency is Eating the World](https://giansegato.com/essays/agency-is-eating-the-world)** — Segato on the rise of agents and solo-founder companies
 - **[Quantifying Infrastructure Noise in Agentic Coding Evals](https://anthropic.com/engineering/infrastructure-noise)** — Segato's Anthropic engineering post on eval reliability
-- **[[concepts/evals-vs-monitoring-debate]]** — Hylak vs Goyal on evals vs production monitoring
-- **[[concepts/agent-evaluation-methodology]]** — Floor raising framework incorporating probabilistic-era insights
+- **[[concepts/evaluation/evals-vs-monitoring-debate]]** — Hylak vs Goyal on evals vs production monitoring
+- **[[concepts/evaluation/agent-evaluation-methodology]]** — Floor raising framework incorporating probabilistic-era insights

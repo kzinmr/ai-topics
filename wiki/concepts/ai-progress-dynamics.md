@@ -88,7 +88,7 @@ This model explains why:
 - [[concepts/bitter-lesson]] — Rich Sutton's thesis that general methods leveraging compute win
 - [[concepts/tool-use-tax]] — Performance degradation from tool-calling protocol overhead
 - [[concepts/coding-agents/ai-coding-reliability]] — Measurement of AI coding agent performance
-- [[concepts/ai-evals]] — Frameworks for evaluating AI model capabilities
+- [[concepts/evaluation/ai-evals]] — Frameworks for evaluating AI model capabilities
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — High-difficulty coding agent evaluation
 - [[concepts/ai-benchmarks/workspace-bench]] — Multi-file dependency evaluation benchmark
 

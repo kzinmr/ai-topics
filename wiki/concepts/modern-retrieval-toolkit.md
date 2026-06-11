@@ -87,7 +87,7 @@ The best results come from **combining** methods: keyword search + semantic sear
 - [[concepts/graph-db-overengineering-rag]] — Part 7: complementary perspective on not over-engineering retrieval
 - [[concepts/context-engineering/context-graph|Context Graph]] — Context engineering; relates to "context rot" when stuffing everything
 - [[concepts/harness-engineering]] — Measure-first design; retrieval should be evaluated, not assumed
-- [[concepts/ai-evals]] — Evaluating retrieval quality beyond BEIR/MTEB
+- [[concepts/evaluation/ai-evals]] — Evaluating retrieval quality beyond BEIR/MTEB
 
 ## Sources
 

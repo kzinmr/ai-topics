@@ -17,7 +17,7 @@ sources:
   - https://www.raindrop.ai/blog/thoughts-on-evals/
   - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md
 related:
-  - "[[concepts/agent-evaluation-methodology]]"
+  - "[[concepts/evaluation/agent-evaluation-methodology]]"
   - "[[concepts/probabilistic-era-software]]"
   - "[[concepts/raindrop]]"
   - "[[entities/ben-hylak]]"
@@ -101,7 +101,7 @@ Despite the heated rhetoric, both positions share common ground:
 
 ## Resolution: Complementary, Not Competing
 
-The most productive framing treats evals and monitoring as **complementary layers** in the [[concepts/agent-evaluation-methodology|agent evaluation lifecycle]]:
+The most productive framing treats evals and monitoring as **complementary layers** in the [[concepts/evaluation/agent-evaluation-methodology|agent evaluation lifecycle]]:
 
 | Phase | Tool | Approach |
 |---|---|---|
@@ -127,4 +127,4 @@ The most productive framing treats evals and monitoring as **complementary layer
 - **[Your AI Product Needs Evals](https://hamel.dev/blog/posts/eval-tools/)** — Hamel Husain on error analysis
 - **[Replit's A/B Testing Blog](https://blog.replit.com/ai-ab-testing)** — Founding engineer on why eval datasets lag behind production
 - **[[concepts/probabilistic-era-software]]** — Gian Segato's ontological framework: why deterministic playbooks break with AI
-- **[[concepts/agent-evaluation-methodology]]** — Full lifecycle framework incorporating both perspectives
+- **[[concepts/evaluation/agent-evaluation-methodology]]** — Full lifecycle framework incorporating both perspectives

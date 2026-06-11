@@ -160,5 +160,5 @@ The annual AI Index report published by Stanford University's HAI (Human-Centere
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/ai-governance]]
 - [[concepts/agentic-ai]]
-- [[concepts/ai-evals]]
+- [[concepts/evaluation/ai-evals]]
 - [[entities/fei-fei-li]] — HAI co-director

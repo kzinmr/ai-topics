@@ -123,7 +123,7 @@ Jeremiah is the **core maintainer of FastMCP**, a Python framework for building 
 - [[entities/openclaw]]
 - [[entities/fastmcp]]
 - [[concepts/personal-software]]
-- [[concepts/generator-evaluator-pattern]]
+- [[concepts/evaluation/generator-evaluator-pattern]]
 
 ## References
 

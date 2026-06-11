@@ -175,7 +175,7 @@ Goedecke constructed a rigorous 200-image benchmark to test whether Kelsey Piper
 
 **Why nobody checked**: Geolocation was only the story for about a week before the discourse moved on. Better AI tooling (GPT-5.5 doing the heavy lifting) now makes rigorous evaluation much cheaper.
 
-[[concepts/prompt-engineering-evaluation]] — Full concept page on the case study and its implications for prompt engineering methodology.
+[[concepts/evaluation/prompt-engineering-evaluation]] — Full concept page on the case study and its implications for prompt engineering methodology.
 
 ### Anti-AI Nostalgia and Fascist Rhetoric (June 2026)
 
@@ -233,7 +233,7 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## Related
 
-- [[concepts/prompt-engineering-evaluation]] — The o3 GeoGuessr prompt illusion and quantitative evaluation methodology
+- [[concepts/evaluation/prompt-engineering-evaluation]] — The o3 GeoGuessr prompt illusion and quantitative evaluation methodology
 - [[concepts/ai-coding-tools]] — Code review as the meta-skill for AI-assisted development
 - [[concepts/software-engineering]] — Career progression, system design, tech industry dynamics
 - [[concepts/ai-sycophancy]] — AI models agreeing with users even when wrong

@@ -184,6 +184,6 @@ BrowseComp evaluates browsing agents on hard factual search. OBLIQ-Bench evaluat
 - [[concepts/query-understanding]] — Oblique queries challenge the assumption that query intent can be surface-level understood
 - [[concepts/agentic-search]] — Agentic multi-hop search evaluated; helps only when obliqueness is decomposable
 - [[concepts/dense-retrieval]] — Dense retrievers (DPR family, Qwen3, Gemini) score near zero on oblique tasks
-- [[concepts/ai-benchmarks/ndcg]] — NDCG@10 is the primary evaluation metric
+- [[concepts/evaluation/ndcg]] — NDCG@10 is the primary evaluation metric
 - [[concepts/reasoning-aware-retrieval]] — OBLIQ-Bench motivates architectures that make latent attributes searchable
 - [[entities/omar-khattab]] — Senior author (DSPy creator, ColBERT inventor), connects to late-interaction lineage

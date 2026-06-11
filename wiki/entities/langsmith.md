@@ -70,6 +70,6 @@ This mirrors similar moves by other platform providers (e.g., Weights & Biases, 
 ## Related
 
 - [[entities/langchain]] — Parent company; LLM application framework
-- [[concepts/agent-observability]] — Agent observability concept
+- [[concepts/evaluation/agent-observability]] — Agent observability concept
 - [[concepts/evaluation]] — LLM evaluation practices
 - [[entities/arize]] — Competitor; AI observability platform

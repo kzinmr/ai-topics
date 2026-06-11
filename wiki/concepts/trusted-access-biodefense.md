@@ -87,7 +87,7 @@ The letter represents a rare instance of **cross-competitor cooperation** on bio
 ## Related
 
 - [[entities/openai]] — Parent organization
-- [[concepts/evaluation-harness-validity]] — Evaluation methodology for frontier models
+- [[concepts/evaluation/evaluation-harness-validity]] — Evaluation methodology for frontier models
 - [[entities/caisi]] — U.S. AI standards partner
 - [[concepts/ai-safety]] — Broader safety framework
 - [[concepts/gpt/gpt-rosalind]] — OpenAI's life sciences research model for biodefense

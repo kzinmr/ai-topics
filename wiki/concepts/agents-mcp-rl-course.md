@@ -227,10 +227,10 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[concepts/grpo-rl-training]] — Group Relative Policy Optimization
 - [[concepts/grpo-infrastructure]] — VRAM math, GPU architecture, LoRA, async RL
 - [[concepts/reward-engineering]] — Reward function design for agent RL training
-- [[concepts/lm-as-judge-reward-signal]] — LM-as-judge evaluation methodology for RL rewards (see also [[concepts/llm-as-judge]])
+- [[concepts/evaluation/lm-as-judge-reward-signal]] — LM-as-judge evaluation methodology for RL rewards (see also [[concepts/evaluation/llm-as-judge]])
 - [[concepts/harness-engineering/agent-design-patterns]] — Model selection, tool calling, async patterns
 - [[concepts/mcp]] — Model Context Protocol for tool integration
-- [[concepts/agent-evaluation-methodology]] — Evaluating agent performance for RL reward signals
+- [[concepts/evaluation/agent-evaluation-methodology]] — Evaluating agent performance for RL reward signals
 - [[concepts/context-engineering|Context Engineering]] — Designing effective agent contexts
 - [[concepts/reasoning-models]] — Models with extended reasoning capabilities
 
@@ -254,7 +254,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 
 **SFT as Gateway**: Validates that a task is learnable before expensive RL runs. 1K-10K examples sweet spot. Tools: TRL, Unsloth, Axolotl, Torchtune. LoRA sufficient for most task-specific use cases. Curriculum learning: sort by difficulty, keep "sometimes right, sometimes wrong" problems.
 
-**LM Judge Calibration**: Compare multiple judge models (O3, GPT-4, Claude) for consistency. Pairwise comparison with position bias randomization. Confidence intervals. See [[concepts/lm-as-judge-reward-signal]].
+**LM Judge Calibration**: Compare multiple judge models (O3, GPT-4, Claude) for consistency. Pairwise comparison with position bias randomization. Confidence intervals. See [[concepts/evaluation/lm-as-judge-reward-signal]].
 
 **Reward Hacking Mitigation**: Iterative process — observe rollouts → identify hacks (usually "not subtle") → add LM judge penalties → checkpoint rollback. ~10 SFT examples usually sufficient to bypass safety alignment ("pretty superficial"). See [[concepts/reward-hacking]].
 

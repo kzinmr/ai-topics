@@ -96,6 +96,6 @@ Alaska Airlines, Allstate, eBay, Hyatt, Microsoft, REI, and other Global 1000 co
 
 ## See Also
 
-- [[concepts/macro-evals-for-agentic-systems]]
+- [[concepts/evaluation/macro-evals-for-agentic-systems]]
 - [[entities/openai]]
 - [[concepts/evals-for-ai-agents]]

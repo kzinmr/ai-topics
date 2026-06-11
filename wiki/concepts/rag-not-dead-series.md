@@ -146,7 +146,7 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 - [[concepts/multiple-representations-rag]] — Part 5: "The Map is Not the Territory" — create multiple specialized maps instead of one universal embedding
 - [[concepts/graph-db-overengineering-rag]] — Part 7: GraphRAG as technique, not technology
 - [[concepts/harness-engineering]] — Measure-first philosophy across the series
-- [[concepts/ai-evals]] — Evaluation methodology for AI systems
+- [[concepts/evaluation/ai-evals]] — Evaluation methodology for AI systems
 - [[concepts/agentic-rag]] — Broader taxonomy of agentic retrieval
 - [[concepts/context-engineering/context-rot|Context Rot]] — Context engineering and context degradation in long-context scenarios
 

@@ -19,7 +19,7 @@ sources:
   - https://www.howtoeval.com/
 related:
   - "[[concepts/ai-observability]]"
-  - "[[concepts/agent-evaluation-methodology]]"
+  - "[[concepts/evaluation/agent-evaluation-methodology]]"
   - "[[comparisons/eval-tools-comparison]]"
   - "[[concepts/logfire]]"
   - "[[concepts/training-infra/llm-observability]]"
@@ -200,12 +200,12 @@ Raindrop Workshop is a **free, completely open-source** tool for local agent tra
 - **Codex/Claude annotation** — Have coding agents annotate runs with pass/fail assessments and specific commentary
 - **Store evals in markdown** — Keep eval cases as simple markdown files, run them by asking Codex
 
-Raindrop Workshop embodies the **code-aware eval** philosophy from [[concepts/agent-evaluation-methodology|Ben Hylak's evaluation framework]]: test the running agent path (tools, state, files, side effects), not just prompt outputs.
+Raindrop Workshop embodies the **code-aware eval** philosophy from [[concepts/evaluation/agent-evaluation-methodology|Ben Hylak's evaluation framework]]: test the running agent path (tools, state, files, side effects), not just prompt outputs.
 
 ## Related Concepts
 
 - [[concepts/ai-observability]] — Broader AI observability landscape
-- [[concepts/agent-evaluation-methodology]] — Ben Hylak's floor raising framework
+- [[concepts/evaluation/agent-evaluation-methodology]] — Ben Hylak's floor raising framework
 - [[entities/ben-hylak]] — Ben Hylak, Raindrop co-founder & CTO
 - [[comparisons/eval-tools-comparison]] — Eval tool comparison
 - [[concepts/logfire]] — Pydantic Logfire (Python-native observability)

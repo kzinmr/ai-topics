@@ -237,7 +237,7 @@ AI and LLM concept pages organized by topic.
 
 ## Ai-Evals
 
-- [[concepts/ai-evals]] — Product-specific evaluation systems for measuring whether an AI application works correctly on real tasks with real data. Not foundation model benchmarks like MMLU, HELM, or GPQA.
+- [[concepts/evaluation/ai-evals]] — Product-specific evaluation systems for measuring whether an AI application works correctly on real tasks with real data. Not foundation model benchmarks like MMLU, HELM, or GPQA.
 
 ## Ai-Index-Report-2026
 
@@ -433,7 +433,7 @@ AI and LLM concept pages organized by topic.
 
 ## Critique-Shadowing
 
-- [[concepts/critique-shadowing]] — A 7-step iterative methodology for building aligned LLM-as-Judge evaluators, coined by Hamel Husain. The core insight: the process of building an LLM judge forces domain experts to carefully examine their own definition of quality, revealing assumptions that were previously implicit.
+- [[concepts/evaluation/critique-shadowing]] — A 7-step iterative methodology for building aligned LLM-as-Judge evaluators, coined by Hamel Husain. The core insight: the process of building an LLM judge forces domain experts to carefully examine their own definition of quality, revealing assumptions that were previously implicit.
 
 ## Cybersecurity-Proof-Of-Work
 
@@ -477,7 +477,7 @@ AI and LLM concept pages organized by topic.
 
 ## Evaluation-Flywheel
 
-- [[concepts/evaluation-flywheel]] — A development pattern from OpenAI's cookbook that cycles through evaluation and improvement.
+- [[concepts/evaluation/evaluation-flywheel]] — A development pattern from OpenAI's cookbook that cycles through evaluation and improvement.
 
 ## Event-Driven-Architecture
 

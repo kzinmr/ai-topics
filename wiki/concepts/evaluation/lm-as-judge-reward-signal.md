@@ -55,7 +55,7 @@ Many important tasks lack programmatically checkable answers — creative writin
 
 - **Tournament/Elo-based evaluation**: Pit model outputs against each other in head-to-head comparisons, accumulating Elo ratings over many matchups. This sidesteps the need for absolute scoring.
 - **LM-as-judge tournaments**: Replace human judges with LM judges in tournament evaluation for subjective quality assessment. The relative comparison format is well-suited to LM capabilities.
-- **Frontier research direction**: Using LM judges as reward signals for RL in non-verifiable domains is an active frontier. The [[concepts/agent-evaluation-methodology]] challenge is especially acute for agentic tasks where success criteria are ambiguous.
+- **Frontier research direction**: Using LM judges as reward signals for RL in non-verifiable domains is an active frontier. The [[concepts/evaluation/agent-evaluation-methodology]] challenge is especially acute for agentic tasks where success criteria are ambiguous.
 
 ## RULER (Relative Universal LLM-Elicited Rewards)
 
@@ -67,4 +67,4 @@ RULER is a methodology that takes LM-as-Judge to its logical extreme:
 
 RULER represents a paradigm shift in [[concepts/reward-engineering]]: instead of investing effort in crafting reward functions, leverage the emergent judgment capabilities of LLMs themselves. See also [[concepts/agents-mcp-rl-course]] for practical applications of these techniques in agent training.
 
-> **Note**: For general LM-as-Judge evaluation frameworks, bias types, and best practices, see [[concepts/llm-as-judge]]. This page focuses specifically on using LM judges as RL reward signals.
+> **Note**: For general LM-as-Judge evaluation frameworks, bias types, and best practices, see [[concepts/evaluation/llm-as-judge]]. This page focuses specifically on using LM judges as RL reward signals.

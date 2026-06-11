@@ -53,7 +53,7 @@ Compare agent outputs against **known correct answers**. This is the gold standa
 
 ### LM-as-Judge
 
-When ground truth is unavailable or evaluation is subjective, use a **strong language model to evaluate outputs**. The judge model scores rollouts based on a rubric prompt. See [[concepts/lm-as-judge-reward-signal]] for detailed patterns on judge design, prompt engineering, and failure modes.
+When ground truth is unavailable or evaluation is subjective, use a **strong language model to evaluate outputs**. The judge model scores rollouts based on a rubric prompt. See [[concepts/evaluation/lm-as-judge-reward-signal]] for detailed patterns on judge design, prompt engineering, and failure modes.
 
 ### Hybrid Rewards
 
@@ -100,7 +100,7 @@ Reward hacking mitigation is inherently **iterative**, not a one-time design exe
 
 ### LM Judge Patching
 
-When using [[concepts/lm-as-judge-reward-signal]], the judge prompt itself can be hacked. The mitigation cycle for judges:
+When using [[concepts/evaluation/lm-as-judge-reward-signal]], the judge prompt itself can be hacked. The mitigation cycle for judges:
 
 1. Run evaluations and collect cases where the judge gives incorrect scores
 2. Analyze failure modes (e.g., judge rewards confident tone over accuracy)

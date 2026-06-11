@@ -138,7 +138,7 @@ flowchart TD
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Another recommendation (implementation-focused)
 - [[concepts/princeton-cos597r-deep-dive-llm]] — Another recommendation (research-focused)
 - [[concepts/agentic-rag]] — RAG (weeks 5-7)
-- [[concepts/llm-as-judge]] — LLM evaluation (week 9)
+- [[concepts/evaluation/llm-as-judge]] — LLM evaluation (week 9)
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Multi-agent (week 9)
 - [[concepts/ai-image-generation]] — Multimodal (week 11)
 - [[concepts/ai-safety]] — Safety (week 10)

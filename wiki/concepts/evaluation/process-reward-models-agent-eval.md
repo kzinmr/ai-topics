@@ -78,12 +78,12 @@ PRMs slot between **binary unit tests** (outcome-based, fast) and **human evalua
 - **Training signal** for RL-based agent improvement
 - **Test-time compute scaling** via guided search
 
-PRMs are a key enabler of the [[concepts/evaluation-flywheel]] — they close the loop by providing the dense feedback signal needed to improve agents iteration over iteration.
+PRMs are a key enabler of the [[concepts/evaluation/evaluation-flywheel]] — they close the loop by providing the dense feedback signal needed to improve agents iteration over iteration.
 
 ## Related Concepts
 
-- [[concepts/ai-evals]] — AI evaluation three-level framework
+- [[concepts/evaluation/ai-evals]] — AI evaluation three-level framework
 - [[concepts/agentic-pbt]] — Property-based testing for agentic code
-- [[concepts/evaluation-flywheel]] — Iterative feedback-driven improvement
-- [[concepts/llm-as-judge]] — LLM-based evaluation approaches
-- [[concepts/offline-evaluation]] — Evaluation without live deployment
+- [[concepts/evaluation/evaluation-flywheel]] — Iterative feedback-driven improvement
+- [[concepts/evaluation/llm-as-judge]] — LLM-based evaluation approaches
+- [[concepts/evaluation/offline-evaluation]] — Evaluation without live deployment

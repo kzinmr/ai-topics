@@ -232,4 +232,4 @@ SIRA achieves SoTA on 10 BEIR benchmarks, outperforming all baselines including 
 - [[concepts/bm25]] — The classic lexical retrieval baseline
 - [[concepts/rag]] — Retrieval-Augmented Generation
 - [[concepts/pseudo-relevance-feedback]] — Traditional query refinement via top-K results
-- [[concepts/judgment-list]] — Search relevance evaluation methodology
+- [[concepts/evaluation/judgment-list]] — Search relevance evaluation methodology

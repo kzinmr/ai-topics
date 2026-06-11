@@ -124,7 +124,7 @@ Husain's estimate that the majority of LLM development time should be spent on e
 [harness-engineering] ──coauthor──→ [entity: shreya-shankar]
 ```
 
-This concept was popularized by [[entities/hamel-husain|Hamel Husain]], contrasts with vibe-based engineering, extends the broader [[concepts/ai-evals]] framework, and is taught through methods like [[concepts/critique-shadowing]].
+This concept was popularized by [[entities/hamel-husain|Hamel Husain]], contrasts with vibe-based engineering, extends the broader [[concepts/evaluation/ai-evals]] framework, and is taught through methods like [[concepts/evaluation/critique-shadowing]].
 
 
 
@@ -292,7 +292,7 @@ On May 6, 2026, [[entities/vtrivedy10|Viv Trivedy]] published an 8-point manifes
 | 1 | **Harness > Model** | Formalizes the LangChain finding: harness optimization (prompts, tools, skills, hooks) outperforms model swapping. Optimization is becoming agent-driven. |
 | 2-3 | **No general purpose agent** | Challenges the notion of a universal agent; what exists is a tradeoff between customization and performance |
 | 4 | **Convergence on Skills** | Harness optimization packages into Skills as models improve at in-context learning — reducing harness complexity over time |
-| 5 | **Evals as a moat** | Extends the [[concepts/ai-evals]] framework with a business moat thesis: data to produce evals is a competitive advantage |
+| 5 | **Evals as a moat** | Extends the [[concepts/evaluation/ai-evals]] framework with a business moat thesis: data to produce evals is a competitive advantage |
 | 6 | **Open model cost advantage** | 20x+ cost reduction from open models drives harness engineering investment — aligning with the Context Pipelines finding above |
 | 7 | **Context window drives architecture** | Most task decomposition exists because usable context is 50-100k — directly ties [[concepts/context-engineering|Context Engineering]] to architectural decisions |
 | 8 | **Age of Unbundled Agents** | Subagents as Tools within a harness — see [[concepts/unbundled-agents]] |
@@ -402,9 +402,9 @@ Each single harness failure creates a **trajectory cascade** — the failure at 
 ## Related Concepts
 
 - [[concepts/agentic-engineering]] — The practice of engineering with AI coding agents, tightly coupled to harness engineering.
-- [[concepts/ai-evals]] — The broader evaluation framework that harness engineering operationalizes.
-- [[concepts/critique-shadowing]] — Husain's methodology for building aligned LLM judges.
-- [[concepts/llm-as-judge]] — Core technique that requires harness validation.
+- [[concepts/evaluation/ai-evals]] — The broader evaluation framework that harness engineering operationalizes.
+- [[concepts/evaluation/critique-shadowing]] — Husain's methodology for building aligned LLM judges.
+- [[concepts/evaluation/llm-as-judge]] — Core technique that requires harness validation.
 - [[concepts/ai-evals-people]] — The community of practitioners
 - [[concepts/context-engineering|Context Engineering]] — The practice of optimizing context windows for LLM agents, a cross-cutting component of harness engineering.
 - [[concepts/unbundled-agents]] — Viv Trivedy's pattern of specialist subagents as Tools within a harness.

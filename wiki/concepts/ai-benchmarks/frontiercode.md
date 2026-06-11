@@ -91,7 +91,7 @@ FrontierCode represents a maturation of coding agent evaluation:
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Another "hardest tasks" benchmark for coding agents
 - [[concepts/ai-benchmarks/deepswe-benchmark]] — Datacurve's benchmark exposing SWE-Bench Pro verifier errors
 - [[concepts/ai-benchmarks/agent-arena]] — Arena AI's causal evaluation methodology
-- [[concepts/ai-evals]] — Broader evaluation landscape
+- [[concepts/evaluation/ai-evals]] — Broader evaluation landscape
 
 ## Sources
 

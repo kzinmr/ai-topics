@@ -15,7 +15,7 @@ related:
   - "[[concepts/ai-benchmarks/tau-bench]]"
   - "[[concepts/tau-knowledge]]"
   - "[[concepts/tau-voice]]"
-  - "[[concepts/pass-k-metric]]"
+  - "[[concepts/evaluation/pass-k-metric]]"
 sources:
   - raw/papers/2025-06-09_2506.07982_tau-squared-bench-dual-control.md
 ---
@@ -137,5 +137,5 @@ Unlike conventional LM-based user simulators, τ²-bench's user simulator is **c
 - [[concepts/ai-benchmarks/tau-bench]] — τ-bench ecosystem overview
 - [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
 - [[concepts/tau-voice]] — Full-duplex voice agent evaluation
-- [[concepts/pass-k-metric]] — Reliability evaluation metric
+- [[concepts/evaluation/pass-k-metric]] — Reliability evaluation metric
 - [[entities/shunyu-yao]] — τ-bench original author

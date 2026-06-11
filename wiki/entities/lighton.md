@@ -63,4 +63,4 @@ LightOn is a French enterprise AI company founded in 2016 by **Igor Carron** and
 
 - **Key researchers**: Antoine Chaffin, Benjamin Clavié (Mixedbread AI collaborator)
 - **Peers**: [[entities/mistral-ai|Mistral AI]], Aleph Alpha (European data-sovereignty AI)
-- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/longembed|LongEmbed]], [[concepts/embeddings|Embeddings]]
+- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/evaluation/longembed|LongEmbed]], [[concepts/embeddings|Embeddings]]

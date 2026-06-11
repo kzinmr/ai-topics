@@ -88,7 +88,7 @@ Epoch AI regularly publishes data-driven insights on their website (epoch.ai/dat
 
 ## See Also
 
-- [[concepts/epoch-capabilities-index]] — ECI methodology and interpretation
+- [[concepts/evaluation/epoch-capabilities-index]] — ECI methodology and interpretation
 - [[concepts/benchmark-optimization]] — The broader benchmark landscape and saturation dynamics
 - [[entities/met]] — METR (co-developer of MirrorCode)
 - [[concepts/open-vs-closed-model-gap]] — The 4-month capability lag analysis

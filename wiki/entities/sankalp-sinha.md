@@ -119,7 +119,7 @@ Sankalp's approach to AI engineering can be summarized as:
 
 - [[entities/claude-code]] — Primary coding agent he uses and writes about
 - [[concepts/coding-agents/long-context-coding-agents]] — Focus area of his research and writing
--  — Open-source agent operating system he contributes to- [[concepts/llm-evaluation-harness]] — Interest in measuring and improving AI system quality
+-  — Open-source agent operating system he contributes to- [[concepts/evaluation/llm-evaluation-harness]] — Interest in measuring and improving AI system quality
 -  — His professional focus
 -  — AI coding tool he evaluates and discusses- [[cursor-3]] — IDE he compares in his writing
 - [[entities/teknium]] — Fellow open-source AI developer

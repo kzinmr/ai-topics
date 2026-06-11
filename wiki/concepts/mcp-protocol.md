@@ -51,7 +51,7 @@ Hit rate = percentage of time an agent calls the correct MCP tool for a given sc
 - Where tool definitions need improvement
 
 ## Related
-- [[concepts/testing-ai-agents]] — Comprehensive AI agent testing practices
+- [[concepts/evaluation/testing-ai-agents]] — Comprehensive AI agent testing practices
 - [[entities/merge-dev]] — Merge platform providing Agent Handler testing tools
 - [[concepts/mcp]] — Model Context Protocol fundamentals
 - [[concepts/agent-security]] — Security patterns for AI agent systems

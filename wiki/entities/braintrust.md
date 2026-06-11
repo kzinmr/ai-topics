@@ -104,8 +104,8 @@ Topics implements **active observability**: running the intelligence layer over 
 ## Related
 
 - [[concepts/active-observability]] — Braintrust's active trace intelligence methodology
-- [[concepts/agent-observability]] — Feedback-powered observability cycle (Harrison Chase / LangChain)
-- [[concepts/macro-evals-for-agentic-systems]] — OpenAI × Slalom macro eval pipeline (BERTopic-style)
+- [[concepts/evaluation/agent-observability]] — Feedback-powered observability cycle (Harrison Chase / LangChain)
+- [[concepts/evaluation/macro-evals-for-agentic-systems]] — OpenAI × Slalom macro eval pipeline (BERTopic-style)
 - [[entities/codex]] — OpenAI's coding agent used by Braintrust
 - [[entities/openai]] — Platform provider
 - [[concepts/gpt/gpt-5-5]] — Model powering the Codex workflow

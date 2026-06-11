@@ -161,8 +161,8 @@ def quality_metric(example, pred, trace=None):
 
 ## See Also
 
-- [[concepts/ai-evals]] — General evaluation concept page
-- [[concepts/evaluation-flywheel]] — Iterative evaluation improvement cycle
-- [[concepts/offline-evaluation]] — Pre-production evaluation pipeline
+- [[concepts/evaluation/ai-evals]] — General evaluation concept page
+- [[concepts/evaluation/evaluation-flywheel]] — Iterative evaluation improvement cycle
+- [[concepts/evaluation/offline-evaluation]] — Pre-production evaluation pipeline
 - [[concepts/dspy]] — Evaluation integration with DSPy
 - [[comparisons/eval-tools-comparison]] — Evaluation tool comparison

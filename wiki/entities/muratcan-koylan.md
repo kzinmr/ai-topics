@@ -149,7 +149,7 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 - [[peoplereadmes]] — Koylan's open-source persona context systems framework
 - [[concepts/context-engineering|Context Engineering]] — His primary discipline
 - [[concepts/agent-skills]] — His open-source skill collection
-- [[concepts/llm-as-judge-skills]] — His evaluation skills (part of Agent Skills repo)
+- [[concepts/evaluation/llm-as-judge-skills]] — His evaluation skills (part of Agent Skills repo)
 
 ## Sources
 

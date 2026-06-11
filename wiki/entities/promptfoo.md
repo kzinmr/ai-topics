@@ -136,7 +136,7 @@ Supports integration with MCP servers and agent frameworks.
 
 ## Usage in OpenAI Macro Evals
 
-In the [[concepts/macro-evals-for-agentic-systems]] Cookbook, five lower-level rubrics (`final_decision_quality`, `policy_compliance_correctness`, `routing_specialist_activation`, `market_drift_awareness`, `review_appropriateness`) are implemented in Promptfoo, generating pass/fail on 1,000 synthetic traces. These lower-level signals feed into a BERTopic-style macro discovery pipeline.
+In the [[concepts/evaluation/macro-evals-for-agentic-systems]] Cookbook, five lower-level rubrics (`final_decision_quality`, `policy_compliance_correctness`, `routing_specialist_activation`, `market_drift_awareness`, `review_appropriateness`) are implemented in Promptfoo, generating pass/fail on 1,000 synthetic traces. These lower-level signals feed into a BERTopic-style macro discovery pipeline.
 
 ## Competitors & Related Tools
 
@@ -164,6 +164,6 @@ In the [[concepts/macro-evals-for-agentic-systems]] Cookbook, five lower-level r
 
 ## See Also
 
-- [[concepts/macro-evals-for-agentic-systems]]
+- [[concepts/evaluation/macro-evals-for-agentic-systems]]
 - [[concepts/evals-for-ai-agents]]
 - [[comparisons/evals-skills]]

@@ -103,4 +103,4 @@ As model capabilities improve, harness complexity is systematically reduced:
 - [[concepts/memory-systems-design-patterns]]
 - [[concepts/meta-harness]]
 - [[concepts/coding-agents/long-context-coding-agents]]
-- [[concepts/llm-evaluation-harness]]
+- [[concepts/evaluation/llm-evaluation-harness]]

@@ -13,9 +13,9 @@ tags:
   - infrastructure
   - testing
 related:
-  - [[concepts/llm-as-judge]]
-  - [[concepts/evaluation-flywheel]]
-  - [[concepts/offline-evaluation]]
+  - [[concepts/evaluation/llm-as-judge]]
+  - [[concepts/evaluation/evaluation-flywheel]]
+  - [[concepts/evaluation/offline-evaluation]]
   - [[concepts/ai-benchmarks-and-evals]]
 sources:
   - raw/articles/2026-05-19_langfuse-academy-evals-explained.md
@@ -90,9 +90,9 @@ See [[raw/articles/2026-05-19_langfuse-academy-evals-explained.md]] for the full
 
 ## Related Concepts
 
-- [[concepts/llm-as-judge]] — Detailed methodology for LLM-based evaluation
-- [[concepts/evaluation-flywheel]] — Evaluation as a continuous improvement loop
-- [[concepts/offline-evaluation]] — Offline evaluation techniques
+- [[concepts/evaluation/llm-as-judge]] — Detailed methodology for LLM-based evaluation
+- [[concepts/evaluation/evaluation-flywheel]] — Evaluation as a continuous improvement loop
+- [[concepts/evaluation/offline-evaluation]] — Offline evaluation techniques
 - [[concepts/ai-benchmarks-and-evals]] — AI Benchmarks & Evals MOC (systematic navigation of all benchmark/eval pages)
 - [[concepts/ai-benchmarks-and-evals]] — Broader benchmarks landscape
 

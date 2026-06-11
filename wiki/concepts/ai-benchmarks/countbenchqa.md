@@ -67,7 +67,7 @@ Counting may seem trivial, but it reveals important model behaviors:
 
 - [[concepts/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
 - [[concepts/ifeval]] — IFEval (another focused, simple benchmark)
-- [[concepts/pass-k-metric]] — Pass@k metric
+- [[concepts/evaluation/pass-k-metric]] — Pass@k metric
 
 ## Sources
 

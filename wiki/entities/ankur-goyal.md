@@ -89,7 +89,7 @@ This represents a meta-insight: the very tools being evaluated are now capable o
 
 ### Evals vs Monitoring Debate (Sep 2025)
 
-In August 2025, Goyal published a blog post claiming "A/B testing is no longer sufficient for AI product optimization — the future is evals." This sparked the [[concepts/evals-vs-monitoring-debate|Evals vs Monitoring Debate]] when Ben Hylak (Raindrop) published a point-by-point rebuttal, *"Thoughts on Evals,"* arguing that production monitoring with semantic signals is more informative than offline evals for agent products.
+In August 2025, Goyal published a blog post claiming "A/B testing is no longer sufficient for AI product optimization — the future is evals." This sparked the [[concepts/evaluation/evals-vs-monitoring-debate|Evals vs Monitoring Debate]] when Ben Hylak (Raindrop) published a point-by-point rebuttal, *"Thoughts on Evals,"* arguing that production monitoring with semantic signals is more informative than offline evals for agent products.
 
 Goyal's position: evals provide systematic quality measurement before shipping; A/B testing is slow, expensive, and doesn't scale to AI's combinatorial complexity. Hylak's counter: evals are adversarially selected (you only test what you already know is broken); production truth reveals what you can't imagine.
 
@@ -131,10 +131,10 @@ A key lesson from his Impira experience was recognizing that go-to-market succes
 
 ## Related
 
-- [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring debate with Ben Hylak (Raindrop)
+- [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs Monitoring debate with Ben Hylak (Raindrop)
 -  — Goyal's LLM evaluation platform- [[figma]] — Acquired Impira; Goyal led AI team post-acquisition
 -  — Goyal's first startup, acquired by Figma
-- [[concepts/llm-evaluation-harness]] — Braintrust's core product category
+- [[concepts/evaluation/llm-evaluation-harness]] — Braintrust's core product category
 -  — Key investor and advisor to Braintrust
 -  — Model breakthrough that enabled Loop (Claude 4)
 ## Sources

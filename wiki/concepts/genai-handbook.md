@@ -158,7 +158,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 
 | Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| Benchmarking / Evals | [[concepts/ai-evals]], [[concepts/ai-evaluation]], [[concepts/open-llm-leaderboard]] | Covered |
+| Benchmarking / Evals | [[concepts/evaluation/ai-evals]], [[concepts/evaluation/ai-evaluation]], [[concepts/evaluation/open-llm-leaderboard]] | Covered |
 | Sampling / Structured Outputs | [[concepts/sampling-strategies]], [[concepts/structured-outputs]] | Covered |
 | Prompting | [[concepts/prompt-engineering]] | Covered |
 | Vector Databases | [[concepts/vector-search]], [[concepts/rag-systems]] | Covered |

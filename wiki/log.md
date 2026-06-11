@@ -687,7 +687,7 @@ Pipeline saturation pattern confirmed: daily pipelines (blog-ingest, newsletter-
 - **Blog post created**: `blog/2026-06-08_hermes_vision-md-bitter-lesson.md`
 - **Title**: VISION.mdに検証ルールを書くな — Bitter Lessonは開発方法論にも来る
 - **Summary**: steipeteの「I use a VISION.md」という一行を起点に、Rich SuttonのBitter Lessonを開発方法論に適用。検証ルールの精巧な設計（テスト、型チェック、LLM-as-judge）は人間設計の特殊的手法であり、VISION.mdに代表される「原則を渡して手段を委ねる」アプローチが計算力活用の一般的方法として長期的に勝つ。VISION.mdは検証文書ではなく同一性の文書。4つのパターン（問い、Negative Space、品味、North Star Question）を提案。
-- **Sources**: [[entities/peter-steinberger]], [[concepts/harness-engineering/agentic-loop]], [[concepts/agentic-engineering]], [[concepts/generator-evaluator-pattern]], [[concepts/dynamic-workflows]], [[concepts/harness-commoditization]]
+- **Sources**: [[entities/peter-steinberger]], [[concepts/harness-engineering/agentic-loop]], [[concepts/agentic-engineering]], [[concepts/evaluation/generator-evaluator-pattern]], [[concepts/dynamic-workflows]], [[concepts/harness-commoditization]]
 
 ---
 ## 2026-06-08 Codex Autocompaction Comment Addition
@@ -995,8 +995,8 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 - [[entities/braintrust]] — Added Topics feature section (June 2026): architecture, 6-stage pipeline, active observability concept, batch facet optimization, clustering/classification details. Updated frontmatter: bumped date, added trace-analysis tag, added raw article source.
 
 **Updated concept pages (cross-references):**
-- [[concepts/agent-observability]] — Added cross-reference to active-observability
-- [[concepts/macro-evals-for-agentic-systems]] — Added active-observability to related frontmatter
+- [[concepts/evaluation/agent-observability]] — Added cross-reference to active-observability
+- [[concepts/evaluation/macro-evals-for-agentic-systems]] — Added active-observability to related frontmatter
 
 **Raw article:** `raw/articles/2026-06-04_braintrust-topics-continuous-trace-intelligence.md`
 
@@ -1192,7 +1192,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 - [[entities/show-us-your-agent-skills]] — Live show by Hugo Bowne-Anderson & Thomas Wiecki
 
 **New concepts created (2):**
-- [[concepts/generator-evaluator-pattern]] — Generate-verify loop: deterministic scripts + LLM-as-judge
+- [[concepts/evaluation/generator-evaluator-pattern]] — Generate-verify loop: deterministic scripts + LLM-as-judge
 - [[concepts/personal-software]] — Bespoke software for one user, enabled by AI agents
 
 **Enriched entities (2):**
@@ -1393,7 +1393,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 - → [[concepts/autoresearch-bm25-msmarco]] (existing — Lesson 6 generalizes this pattern)
 - → [[concepts/harness-engineering/agent-steering]] (existing — guardrails are a steering pattern)
 - → [[concepts/agentic-search]] (existing — ranker optimization is the coding agent layer)
-- → [[concepts/eval-loops]] (existing — same three-part structure)
+- → [[concepts/evaluation/eval-loops]] (existing — same three-part structure)
 
 ---
 ## 2026-06-03 enriched | thariq-shihipar entity page (skeleton -> full profile)
@@ -1774,7 +1774,7 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 - Added 2 new SCHEMA.md tags: eval-loops, llm-as-judge
 
 ### Pages Created
-- [[concepts/eval-loops]] — AI eval loops: automated quality control with 3-part benchmarks, 3-place deployment, self-hardening via failure capture
+- [[concepts/evaluation/eval-loops]] — AI eval loops: automated quality control with 3-part benchmarks, 3-place deployment, self-hardening via failure capture
 - [[concepts/token-to-outcome-attribution]] — Enterprise layer connecting inference spend to business outcomes (marginal token utility, retry tails, context inflation, routing waste)
 - [[concepts/high-frequency-software]] — HFT-to-software analogy: 10x AI acceleration as phase shift, edge funds, front running, AI fracking
 - [[entities/machina]] — AI practitioner (@EXM7777), "How To Fix AI Slop (Using Hermes)" author
@@ -2153,7 +2153,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 **New pages:**
 - [[entities/braintrust]] — Braintrust observability/eval platform. Codex case study: 50% team adoption in one month, speed-enabled autonomous problem-solving workflow.
 - [[concepts/trusted-access-biodefense]] — OpenAI's Rosalind Biodefense program (May 29, 2026). GPT-Rosalind trusted access for biodefense developers and government partners.
-- [[concepts/evaluation-harness-validity]] — OpenAI's framework for trustworthy third-party evaluations. Harness choice determines whether capability appears in evaluation at all.
+- [[concepts/evaluation/evaluation-harness-validity]] — OpenAI's framework for trustworthy third-party evaluations. Harness choice determines whether capability appears in evaluation at all.
 
 **Enriched pages:**
 - [[entities/ed-zitron-s-where-s-your-ed-at]] — AI Bubble Part 3: $435B compute demand, 1M+ GPUs warehoused, OpenAI $852B burn, Anthropic $375B commitments, Uber AI budget exhaustion.
@@ -2206,9 +2206,9 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 ### Takes
 - Created [[concepts/multi-channel-agents]] — Mastra's multi-user/multi-channel agent engineering (Slack/Discord/Telegram concurrency, thread isolation, resource-based memory, HMAC auth)
 - Enriched [[concepts/harness-engineering/agentic-loop]] — Added Self-Improving Agent Loop section (Thrive × OpenAI Tax AI case study: 25%→86% accuracy in 6 weeks)
-- Enriched [[concepts/agent-evaluation-methodology]] — Bumped updated date
+- Enriched [[concepts/evaluation/agent-evaluation-methodology]] — Bumped updated date
 - Enriched [[concepts/security-and-governance/agent-containment]] — Bumped updated date
-- Enriched [[concepts/macro-evals-agentic-systems]] — Bumped updated date
+- Enriched [[concepts/evaluation/macro-evals-agentic-systems]] — Bumped updated date
 
 ### References
 - Enriched [[concepts/mcp-protocol]] — Added Cohere MCP guide as source
@@ -2580,7 +2580,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - [[concepts/eagle-3-1]] — EAGLE 3.1: Speculative decoding attention drift fix. FC normalization + post-norm hidden-state feedback. Joint EAGLE+vLLM+TorchSpec development. 2.03× Kimi K2.6 throughput.
 - [[entities/mai-image-2-5]] — MAI-Image-2.5: Microsoft's strongest image model. #3 on Arena leaderboard. Major text rendering improvements.
 - [[entities/koog]] — Koog: JetBrains JVM (Java/Kotlin) AI agent framework v1.0. Graph DSL, OpenTelemetry, Anthropic prompt caching.
-- [[concepts/stride-reasoning]] — STRIDE: Learnable stepwise language feedback. Co-trains generator + verifier with outcome-only rewards. Zhang et al. (NTU/Alibaba).
+- [[concepts/evaluation/stride-reasoning]] — STRIDE: Learnable stepwise language feedback. Co-trains generator + verifier with outcome-only rewards. Zhang et al. (NTU/Alibaba).
 
 ### Pages Updated
 - [[concepts/self-replicating-llm]] — Enriched: 22 prompt variants, 4 target configs, pipeline milestones table, agent configuration details, 3 replication objectives.
@@ -3477,7 +3477,7 @@ The article's framing offers transferable patterns for wiki management:
 ## [2026-05-26] dreaming-wiki-ingest | Nightly knowledge consolidation — agent infrastructure & evaluation architecture
 
 ### Pages Created
-- [[concepts/macro-evals-agentic-systems]] — OpenAI × Slalom macro evaluation framework: BERTopic clustering of agent events, four-label taxonomy, Promptfoo rubrics
+- [[concepts/evaluation/macro-evals-agentic-systems]] — OpenAI × Slalom macro evaluation framework: BERTopic clustering of agent events, four-label taxonomy, Promptfoo rubrics
 
 ### Pages Updated
 - [[concepts/nvidia-ai-q]] — Added middleware & reliability section (tool sanitization, reasoning-aware retry), cross-references
@@ -3728,7 +3728,7 @@ The article's framing offers transferable patterns for wiki management:
 - [[concepts/context-engineering/context-lock-in|Context Lock-in]] — JP→EN, 2375 JP chars removed
 - [[concepts/deepseek-v3]] — JP→EN, 2339 JP chars removed
 - [[comparisons/llm-integration-patterns]] — JP→EN, 2271 JP chars removed
-- [[concepts/macro-evals-for-agentic-systems]] — JP→EN, 2257 JP chars removed
+- [[concepts/evaluation/macro-evals-for-agentic-systems]] — JP→EN, 2257 JP chars removed
 - [[concepts/waluigi-effect]] — JP→EN, 2235 JP chars removed
 - [[entities/deepseek]] — JP→EN, 2215 JP chars removed
 
@@ -4930,7 +4930,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
   - [[entities/microsoft-agent-framework]] — v1.0 production-ready multi-agent SDK (.NET+Python)
   - [[entities/google-adk]] — ADK 2.0 GA: graph-based Workflow Runtime, 20K ⭐
 - **New concept page** (1):
-  - [[concepts/seirenes]] — Adversarial self-play RL hardening reasoning robustness
+  - [[concepts/evaluation/seirenes]] — Adversarial self-play RL hardening reasoning robustness
 - **Index updated**: +5 entries, header counts updated (Total: 2070, Entities: 649)
 
 ---
@@ -5168,7 +5168,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - [[concepts/autonomous-agent-marketplace-stack]] — Comprehensive concept page for the 3-plane 10-layer autonomous agent marketplace infrastructure framework. Covers Trust Plane (Identity/Discovery/Reputation), Market Plane (Quoting/Contracting/Settlement/Dispute Resolution), Control Plane (Governance/Compliance/Orchestration & Runtime). ERC-8004, x402, Safe modules, Cordum/Galileo/Microsoft governance vendors.
 
 ### Concept Page Enriched
-- [[concepts/ai-evaluation]] — Stub → full page. Enriched with Langfuse Academy evaluation framework: AI Engineering Loop, three evaluation methods, reference-based vs reference-free, practical guidelines, binary scoring preference. Sources: Langfuse Academy.
+- [[concepts/evaluation/ai-evaluation]] — Stub → full page. Enriched with Langfuse Academy evaluation framework: AI Engineering Loop, three evaluation methods, reference-based vs reference-free, practical guidelines, binary scoring preference. Sources: Langfuse Academy.
 
 ### Entity Page Enriched
 - [[entities/jason-liu]] — Added "Six Levels of Codex Morning Brief" section with level table, key principles, vault structure. Updated sources.
@@ -5398,8 +5398,8 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ### Updated
 - `wiki/index.md` — Added judgment-list entry under Concepts
-- `wiki/entities/doug-turnbull.md` — Added [[concepts/judgment-list]] cross-link in Related section
-- `wiki/concepts/ndcg.md` — Added [[concepts/judgment-list]] cross-link in See Also
+- `wiki/entities/doug-turnbull.md` — Added [[concepts/evaluation/judgment-list]] cross-link in Related section
+- `wiki/concepts/ndcg.md` — Added [[concepts/evaluation/judgment-list]] cross-link in See Also
 - wiki/log.md — Removed 1 orphaned orphan `###` timestamp line (OPSD article ingestion)
 
 ### Verified (no issues)
@@ -7067,7 +7067,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ## [2026-05-28] howtoeval.com ingestion | Comprehensive ingestion of Ben Hylak's "How to Evaluate AI Agents — The 2026 Guide"
 
 ### Pages Created
-- [[concepts/agent-evaluation-methodology]] — Agent Evaluation Methodology: Floor raising vs benchmark maxxing framework. Covers the full eval lifecycle (golden cases, code-aware evals, Stumbles→Issues→Signals→Experiments scale model), comparison with OpenAI macro-evals, and the harness-collapse future.
+- [[concepts/evaluation/agent-evaluation-methodology]] — Agent Evaluation Methodology: Floor raising vs benchmark maxxing framework. Covers the full eval lifecycle (golden cases, code-aware evals, Stumbles→Issues→Signals→Experiments scale model), comparison with OpenAI macro-evals, and the harness-collapse future.
 - [[entities/ben-hylak]] — Ben Hylak: Co-founder & CTO of Raindrop ("Sentry for AI Agents"). Previously Apple (visionOS), SpaceX. Author of "How to Evaluate AI Agents" and "Thoughts on Evals."
 - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md — Full guide text from howtoeval.com
 
@@ -7083,7 +7083,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 ## [2026-05-28] evals-are-dead debate ingestion | "Thoughts on Evals" by Ben Hylak (Sep 2025)
 
 ### Pages Created
-- [[concepts/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate: Ben Hylak (Raindrop) vs Ankur Goyal (Braintrust). 6 definitions of "eval," claim-by-claim rebuttal of 4 arguments, consensus of complementary layers.
+- [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate: Ben Hylak (Raindrop) vs Ankur Goyal (Braintrust). 6 definitions of "eval," claim-by-claim rebuttal of 4 arguments, consensus of complementary layers.
 - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md — Full "Thoughts on Evals" blog post text
 
 ### Pages Updated
@@ -7102,7 +7102,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - raw/articles/2025-08_gian-segato_probabilistic-era.md — Full essay text
 
 ### Pages Updated
-- [[concepts/evals-vs-monitoring-debate]] — Cross-linked Gian Segato as the "Replit founding engineer" cited by Hylak; added probabilistic-era framework to Further Reading
+- [[concepts/evaluation/evals-vs-monitoring-debate]] — Cross-linked Gian Segato as the "Replit founding engineer" cited by Hylak; added probabilistic-era framework to Further Reading
 
 ### Sources
 - https://giansegato.com/essays/probabilistic-era
@@ -7115,7 +7115,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - raw/articles/2026-01-10_harrison-chase_code-documents-app-traces-do.md — Full blog post text
 
 ### Pages Updated
-- [[concepts/agent-observability-feedback]] — Added unified framework section (Segato ontological → Chase operational → Hylak evaluative), cross-linked probabilistic-era-software and evals-vs-monitoring-debate
+- [[concepts/evaluation/agent-observability-feedback]] — Added unified framework section (Segato ontological → Chase operational → Hylak evaluative), cross-linked probabilistic-era-software and evals-vs-monitoring-debate
 
 ### Key Insight
 Three independently-arrived-at perspectives form a causal chain: Segato's F: X→Y → F'(?) explains WHY deterministic playbooks break → Chase's traces-as-documentation shows WHAT changes in daily practice → Hylak's floor raising provides HOW to measure quality in this new paradigm.

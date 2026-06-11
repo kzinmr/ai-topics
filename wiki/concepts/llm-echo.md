@@ -44,7 +44,7 @@ llm-echo embodies the principle of **"evaluation first"** that Simon advocates i
 - [[entities/llm]] — CLI tool that llm-echo extends
 - [[entities/simon-willison]] — Creator
 - [[concepts/agentic-engineering]] — Evaluation-first development philosophy
-- [[concepts/llm-evaluation-harness]] — Related evaluation concepts
+- [[concepts/evaluation/llm-evaluation-harness]] — Related evaluation concepts
 
 ## Sources
 

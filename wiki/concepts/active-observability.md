@@ -104,9 +104,9 @@ No LLM call happens at classification time. The entire step is ~100ms per trace.
 
 | Approach | Scope | Relationship |
 |----------|-------|-------------|
-| [[concepts/agent-observability]] (Harrison Chase) | Feedback-powered loop: collect traces → enrich with evals → identify failures → apply changes → validate | Active observability is the "collect and enrich" layer automated — it provides the signal that feeds the feedback loop |
-| [[concepts/agent-observability-feedback]] (Arize) | Feedback as the missing link between monitoring and agent learning | Active observability automates the monitoring layer; feedback still requires evaluation design |
-| [[concepts/macro-evals-for-agentic-systems]] (OpenAI × Slalom) | BERTopic-style clustering on lower-level eval results for multi-agent patterns | Same tool family (UMAP + HDBSCAN + c-TF-IDF) but different input: macro-evals cluster eval findings; active observability clusters facet summaries of raw traces |
+| [[concepts/evaluation/agent-observability]] (Harrison Chase) | Feedback-powered loop: collect traces → enrich with evals → identify failures → apply changes → validate | Active observability is the "collect and enrich" layer automated — it provides the signal that feeds the feedback loop |
+| [[concepts/evaluation/agent-observability-feedback]] (Arize) | Feedback as the missing link between monitoring and agent learning | Active observability automates the monitoring layer; feedback still requires evaluation design |
+| [[concepts/evaluation/macro-evals-for-agentic-systems]] (OpenAI × Slalom) | BERTopic-style clustering on lower-level eval results for multi-agent patterns | Same tool family (UMAP + HDBSCAN + c-TF-IDF) but different input: macro-evals cluster eval findings; active observability clusters facet summaries of raw traces |
 | Anthropic Clio | Privacy-preserving aggregate usage analysis | Architectural inspiration for "summarize then cluster" but applied to observability rather than privacy auditing |
 
 ## Production Design Properties
@@ -120,9 +120,9 @@ No LLM call happens at classification time. The entire step is ~100ms per trace.
 
 ## Related Concepts
 
-- [[concepts/agent-observability]] — Feedback-powered observability cycle
-- [[concepts/agent-observability-feedback]] — Feedback as missing link (Arize)
-- [[concepts/macro-evals-for-agentic-systems]] — OpenAI × Slalom BERTopic-style macro eval pipeline
+- [[concepts/evaluation/agent-observability]] — Feedback-powered observability cycle
+- [[concepts/evaluation/agent-observability-feedback]] — Feedback as missing link (Arize)
+- [[concepts/evaluation/macro-evals-for-agentic-systems]] — OpenAI × Slalom BERTopic-style macro eval pipeline
 - [[concepts/ai-observability]] — General AI observability
 - [[concepts/bertopic]] — Topic modeling framework using UMAP + HDBSCAN + c-TF-IDF
 - [[entities/braintrust]] — Braintrust platform (Topics creator)
@@ -137,7 +137,7 @@ No LLM call happens at classification time. The entire step is ~100ms per trace.
 [active-observability] ──contrasts──→ [concept: agent-observability-feedback]
 ```
 
-This section informs graph queries: authored by [[entities/braintrust|Braintrust]], embodies [[concepts/agent-observability]], relates to [[concepts/macro-evals-for-agentic-systems]] via shared BERTopic tool family, contrasts with [[concepts/agent-observability-feedback]] (active discovery vs feedback-driven improvement).
+This section informs graph queries: authored by [[entities/braintrust|Braintrust]], embodies [[concepts/evaluation/agent-observability]], relates to [[concepts/evaluation/macro-evals-for-agentic-systems]] via shared BERTopic tool family, contrasts with [[concepts/evaluation/agent-observability-feedback]] (active discovery vs feedback-driven improvement).
 
 ## Sources
 

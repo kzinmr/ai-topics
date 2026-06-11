@@ -117,10 +117,10 @@ Covers model architecture, training, and evaluation. The area with the most over
 
 | Topic | Wiki Coverage | Notes |
 |----------|---------------|------|
-| LLM-as-a-Judge | [[concepts/llm-as-judge]] | Rich coverage |
-| Benchmarks (MMLU, etc.) | [[concepts/open-llm-leaderboard]], [[concepts/llm-evaluation]], [[concepts/llm-evaluation-harness]], [[concepts/ai-benchmarks/lighteval]] | Rich (incl. lm-eval-harness) |
-| Human Evaluation (Chatbot Arena) | [[concepts/ai-evals]] | Reference |
-| Agent Evaluation | [[concepts/evals-for-ai-agents]], [[concepts/evaluation-flywheel]], [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]], [[concepts/process-reward-models-agent-eval]] | Unique depth |
+| LLM-as-a-Judge | [[concepts/evaluation/llm-as-judge]] | Rich coverage |
+| Benchmarks (MMLU, etc.) | [[concepts/evaluation/open-llm-leaderboard]], [[concepts/llm-evaluation]], [[concepts/evaluation/llm-evaluation-harness]], [[concepts/ai-benchmarks/lighteval]] | Rich (incl. lm-eval-harness) |
+| Human Evaluation (Chatbot Arena) | [[concepts/evaluation/ai-evals]] | Reference |
+| Agent Evaluation | [[concepts/evals-for-ai-agents]], [[concepts/evaluation/evaluation-flywheel]], [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]], [[concepts/evaluation/process-reward-models-agent-eval]] | Unique depth |
 
 **Quantization**
 
@@ -172,7 +172,7 @@ Covers production applications, RAG, agents, and deployment. Since this Wiki is 
 | TGI | [[concepts/inference/tgi]] | Covered (new) |
 | LM Studio / Ollama | [[concepts/ollama-local-llm-runner]], [[concepts/local-llm]] | Covered |
 | MLC LLM (Edge) | — | Not covered |
-| Prompt Injection Defense | [[concepts/prompt-engineering-resilience-design-patterns]], [[concepts/resilient-prompt-engineering]], [[concepts/red-teaming-adversarial-eval]] | Covered |
+| Prompt Injection Defense | [[concepts/prompt-engineering-resilience-design-patterns]], [[concepts/resilient-prompt-engineering]], [[concepts/evaluation/red-teaming-adversarial-eval]] | Covered |
 | Garak (Red Teaming) | — | No individual tool page |
 | Langfuse (Observability) | [[comparisons/eval-tools-comparison]] | Indirect mention |
 
@@ -205,7 +205,7 @@ Colab notebooks provided by Labonne alongside the Course. This Wiki doesn't have
 
 | Tool | Purpose | Related Wiki Concept |
 |--------|------|-------------|
-| [LLM AutoEval](https://github.com/mlabonne/llm-autoeval) | Automated evaluation pipeline (RunPod) | [[concepts/llm-evaluation-harness]] |
+| [LLM AutoEval](https://github.com/mlabonne/llm-autoeval) | Automated evaluation pipeline (RunPod) | [[concepts/evaluation/llm-evaluation-harness]] |
 | [LazyMergekit](https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb) | One-click model merge Colab | — |
 | [LazyAxolotl](https://colab.research.google.com/drive/1TsDKNo2riwVmU55gjuBgB1AXVtRRfRHW) | Cloud fine-tuning | [[concepts/axolotl-fine-tuning-framework]] |
 | [AutoQuant](https://colab.research.google.com/drive/1b6nqC7UZVt8bx4MksX7s656GXPM-eWw4) | GGUF/GPTQ/EXL2/AWQ/HQQ quantization | [[concepts/model-quantization]] |

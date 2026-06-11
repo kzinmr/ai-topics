@@ -93,7 +93,7 @@ The LLM judge evaluates charts against Edward Tufte's principles:
 
 - [[entities/jeremiah-lowin]]
 - [[entities/wes-mckinney]]
-- [[concepts/generator-evaluator-pattern]]
+- [[concepts/evaluation/generator-evaluator-pattern]]
 - [[concepts/personal-software]]
 
 ## References

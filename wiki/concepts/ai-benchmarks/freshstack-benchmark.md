@@ -67,7 +67,7 @@ Traditional IR metrics (MRR, NDCG) were designed for search engines ranking a si
 ## Related Concepts
 
 - [[concepts/rag-not-dead-series]] — The 7-part series this is part of
-- [[concepts/ai-evals]] — Broader AI evaluation methodology
+- [[concepts/evaluation/ai-evals]] — Broader AI evaluation methodology
 - [[concepts/modern-retrieval-toolkit]] — Part 1: the retrieval tools being evaluated
 - [[concepts/reasoning-retrieval]] — Part 3: complementary retrieval evaluation direction
 

@@ -91,4 +91,4 @@ This framework challenges the validity of many existing benchmark comparisons:
 - [[entities/codex]] — Recommended open-source harness for coding agent evaluations
 - [[concepts/trusted-access-biodefense]] — OpenAI's broader evaluation ecosystem initiative
 - [[entities/metr]] — Independent evaluation organization
-- [[concepts/ai-evaluation]] — General evaluation concepts
+- [[concepts/evaluation/ai-evaluation]] — General evaluation concepts

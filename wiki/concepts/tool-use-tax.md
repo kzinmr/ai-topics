@@ -54,7 +54,7 @@ The finding reinforces the "bitter lesson" view in [[concepts/agent-harness-prim
 - How does the Tool-Use Tax scale with model capability? Do larger models have lower protocol error rates?
 - Can fine-tuning specifically on tool-calling protocols reduce the tax?
 - Does the tax apply differently to different tool types (search vs. calculator vs. code execution)?
-- How should [[concepts/ai-evals]] incorporate protocol-induced failure modes?
+- How should [[concepts/evaluation/ai-evals]] incorporate protocol-induced failure modes?
 
 ## Related Concepts
 - [[concepts/chain-of-thought]] — Native reasoning without tool overhead

@@ -756,9 +756,9 @@ Turnbull's recommendation: reposition LLMs from *judges* to *analysts*:
 
 #### Connection to LLM-as-Judge Best Practices
 
-This practitioner critique complements the academic best practices documented in [[concepts/llm-as-judge]]. Where the academic literature focuses on *how* to do LLM-as-judge well (rubric design, bias mitigation, inter-rater reliability), Turnbull and Berryman question *whether* LLM-as-judge is appropriate for search evaluation at all — arguing that behavioral signals (clicks, purchases, dwell time) are the only reliable measure of what users actually want.
+This practitioner critique complements the academic best practices documented in [[concepts/evaluation/llm-as-judge]]. Where the academic literature focuses on *how* to do LLM-as-judge well (rubric design, bias mitigation, inter-rater reliability), Turnbull and Berryman question *whether* LLM-as-judge is appropriate for search evaluation at all — arguing that behavioral signals (clicks, purchases, dwell time) are the only reliable measure of what users actually want.
 
-Sources: [[raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut]], [[transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[concepts/llm-as-judge]]
+Sources: [[raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut]], [[transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[concepts/evaluation/llm-as-judge]]
 
 ### Discussion: "Will Agents Replace Search Teams?" (January 2026)
 
@@ -949,7 +949,7 @@ Despite the clear gains, several questions remain:
 
 - **Cost asymmetry**: Price-weighted tokens decreased for Sonnet 4.6 but **increased for Opus 4.6** — the stronger model writes more elaborate filtering code, partially offsetting context savings. This suggests a model-size-dependent sweet spot.
 - **Generality vs. specialization**: Dynamic filtering is tuned for web search. Can the same approach generalize to other token-heavy agent tasks (codebase exploration, document analysis)?
-- **The eval contamination risk**: Dynamic filtering runs in the same BrowseComp evaluation where [[concepts/eval-awareness-browsecomp|eval awareness]] was discovered — the model's ability to write and execute code during web search creates new attack surfaces for benchmark contamination that static retrieval pipelines don't have.
+- **The eval contamination risk**: Dynamic filtering runs in the same BrowseComp evaluation where [[concepts/evaluation/eval-awareness-browsecomp|eval awareness]] was discovered — the model's ability to write and execute code during web search creates new attack surfaces for benchmark contamination that static retrieval pipelines don't have.
 - **Relationship to RLM**: The code execution inside context mirrors [[concepts/rlm-recursive-language-models|RLM]]'s "context as variable" pattern — but ephemerally rather than persistently. A natural next step would be persistent code execution across turns, blurring the line between search filtering and agent memory.
 
 ---

@@ -18,7 +18,7 @@ related:
   - "[[concepts/tau-squared-bench]]"
   - "[[concepts/tau-knowledge]]"
   - "[[concepts/tau-voice]]"
-  - "[[concepts/pass-k-metric]]"
+  - "[[concepts/evaluation/pass-k-metric]]"
 ---
 
 # τ-bench
@@ -245,7 +245,7 @@ Common to both is the methodology of "visualizing AI's true capability limits by
 - [[concepts/tau-squared-bench]] — τ²-bench: Dual control evaluation details
 - [[concepts/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation evaluation details
 - [[concepts/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation details
-- [[concepts/pass-k-metric]] — pass^k metric detailed explanation
+- [[concepts/evaluation/pass-k-metric]] — pass^k metric detailed explanation
 - [[concepts/swe-bench]] — Yao's other representative benchmark
 
 ---

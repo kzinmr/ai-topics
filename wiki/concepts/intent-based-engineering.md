@@ -46,9 +46,9 @@ The core practice: taking a fuzzy business requirement or creative vision and re
 ## Relationship to Other Concepts
 
 - [[concepts/autonomous-component-optimization]] — The cycle that consumes intent-based criteria as input to its Map phase
-- [[concepts/ai-evals]] — Intent-based engineering produces the eval criteria that drive optimization
+- [[concepts/evaluation/ai-evals]] — Intent-based engineering produces the eval criteria that drive optimization
 - [[concepts/resilient-prompt-engineering]] — Prompt engineering as enabling reliable AI interaction; intent-based engineering is the higher-level framing of what to ask for
-- [[concepts/critique-shadowing]] — The LLM-as-Judge methodology that validates whether criteria are met
+- [[concepts/evaluation/critique-shadowing]] — The LLM-as-Judge methodology that validates whether criteria are met
 - [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — Anthropic's evals framework
 
 ## References

@@ -166,7 +166,7 @@
 - **Index updated**: jeff-huber entities section added (jeff-geerling and jensen-huang 's between). Total pages: 1783→1784, Indexed entries: 837→838, Entities: 558→559. 
 ## [2026-05-13] enrich | Agentic Search: Berryman 5-Level Model + Revealed Preferences + Ep.68
 - id: concept-agentic-search-berryman-ep68-2026-05-13
-- summary: Saved 3 raw articles (Berryman's 5-level maturity model blog, Turnbull's LLM-judges critique, Ep.68 show notes). Added two major sections to [[concepts/agentic-search]]: "Berryman's 5-Level Agentic Search Maturity Model" (Level 0-4: Trad Search → Beginner AI → Intermediate AI → Conversational Assistant → Async Research Agent) with comparison table vs 3-level framework, and "Revealed Preferences: The Fundamental Limit of LLM-as-Judge" (engagement blindness, hard negative blindness, sneaky overfitting, LLMs-as-analysts-not-judges). Added Jan 2026 blog post entry to [[entities/john-berryman]]. Cross-linked with [[concepts/llm-as-judge]].
+- summary: Saved 3 raw articles (Berryman's 5-level maturity model blog, Turnbull's LLM-judges critique, Ep.68 show notes). Added two major sections to [[concepts/agentic-search]]: "Berryman's 5-Level Agentic Search Maturity Model" (Level 0-4: Trad Search → Beginner AI → Intermediate AI → Conversational Assistant → Async Research Agent) with comparison table vs 3-level framework, and "Revealed Preferences: The Fundamental Limit of LLM-as-Judge" (engagement blindness, hard negative blindness, sneaky overfitting, LLMs-as-analysts-not-judges). Added Jan 2026 blog post entry to [[entities/john-berryman]]. Cross-linked with [[concepts/evaluation/llm-as-judge]].
 - touched:
  - [[concepts/agentic-search]]
  - [[entities/john-berryman]]

@@ -64,7 +64,7 @@ Doug advocates for a pragmatic, "grug-brained" approach to search evaluation:
 
 ## Key Concepts Covered in His Work
 
-- [[ndcg]] — Normalized Discounted Cumulative Gain, central to search evaluation
+- [[concepts/evaluation/ndcg]] — Normalized Discounted Cumulative Gain, central to search evaluation
 - **BM25** — Lexical search scoring, including Bayesian BM25 and calibration
 - **Click models** — COEC (clicks over expected clicks), turning user behavior into relevance judgments
 - **LLM as a judge** — Using LLMs for instant search result labeling
@@ -128,6 +128,6 @@ From the transcripts, Turnbull's teaching approach is characterized by:
 
 ## See Also
 
-- [[ndcg]] — Detailed concept page on NDCG and search evaluation metrics
+- [[concepts/evaluation/ndcg]] — Detailed concept page on NDCG and search evaluation metrics
 - [[autoresearch-bm25-msmarco]] — Case study of autoresearch applied to BM25 optimization
 - [Doug Turnbull's Blog](http://softwaredoug.com) — Regular posts on search, BM25, RAG, and agents

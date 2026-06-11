@@ -59,7 +59,7 @@ The framework closes the loop: flagged bad outputs automatically become new perm
 
 ## Cross-References
 
-- [[concepts/eval-loops]] — The core concept page for AI eval loops
+- [[concepts/evaluation/eval-loops]] — The core concept page for AI eval loops
 - [[concepts/ai-slop]] — The problem that eval loops are designed to solve
 - [[entities/hermes-agent]] — The agent platform used for the reference implementation
 

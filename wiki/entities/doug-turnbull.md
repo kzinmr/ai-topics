@@ -317,7 +317,7 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 - [[learning-to-rank]] — ML approach to combining ranking signals
 -  — Retrieval-Augmented Generation
 - [[bm25]] — Probabilistic ranking function
-- [[ndcg]] — Normalized Discounted Cumulative Gain
+- [[concepts/evaluation/ndcg]] — Normalized Discounted Cumulative Gain
 - [[quepid]] — Open-source search relevance testing workbench
 - [[searcharray]] — Pandas-based BM25 search library
 - [[trey-grainger]] — Co-author of AI-Powered Search

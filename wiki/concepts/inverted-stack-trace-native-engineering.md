@@ -21,9 +21,9 @@ sources:
   - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md
 related:
   - "[[concepts/probabilistic-era-software]]"
-  - "[[concepts/agent-observability-feedback]]"
-  - "[[concepts/evals-vs-monitoring-debate]]"
-  - "[[concepts/agent-evaluation-methodology]]"
+  - "[[concepts/evaluation/agent-observability-feedback]]"
+  - "[[concepts/evaluation/evals-vs-monitoring-debate]]"
+  - "[[concepts/evaluation/agent-evaluation-methodology]]"
   - "[[queries/practice-evolution-probabilistic-era]]"
   - "[[entities/gian-segato]]"
   - "[[entities/harrison-chase]]"
@@ -176,7 +176,7 @@ Every practice shift described in the [[queries/practice-evolution-probabilistic
 ## Further Reading
 
 - **[[concepts/probabilistic-era-software]]** — Segato's original essay (pre-inversion framing; still the best account of *why* old playbooks break)
-- **[[concepts/agent-observability-feedback]]** — Chase's operational translation: code→traces
-- **[[concepts/evals-vs-monitoring-debate]]** — Hylak vs Goyal: the evaluative consequence of the inversion
+- **[[concepts/evaluation/agent-observability-feedback]]** — Chase's operational translation: code→traces
+- **[[concepts/evaluation/evals-vs-monitoring-debate]]** — Hylak vs Goyal: the evaluative consequence of the inversion
 - **[[queries/practice-evolution-probabilistic-era]]** — Full portal: practice-by-practice transformation
 - **[Why is Machine Learning 'Hard'?](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html)** — Zayd Enam (2016): the classic ML baseline

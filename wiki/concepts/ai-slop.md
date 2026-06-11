@@ -81,7 +81,7 @@ The emerging consensus is that AI slop is fundamentally a **systems problem**, n
 - **Self-hardening**: When bad output is flagged, it becomes a new permanent test case. The quality floor rises automatically.
 - **Hermes-native implementation**: The article provides a concrete 6-move build using Hermes Agent's primitives (skills, memory, cron, approval buttons) — no external tooling required.
 
-This perspective reframes the slop discussion from "can it be fixed?" to "here is the layer that was never built." See [[concepts/eval-loops]] for the full framework.
+This perspective reframes the slop discussion from "can it be fixed?" to "here is the layer that was never built." See [[concepts/evaluation/eval-loops]] for the full framework.
 
 ## Related
 

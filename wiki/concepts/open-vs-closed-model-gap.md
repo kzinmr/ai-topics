@@ -10,7 +10,7 @@ sources:
 
 # Open vs. Closed Model Capability Gap
 
-The open vs. closed model capability gap measures how far behind open-weight models lag the most capable proprietary (closed-weight) models, expressed in both **time** (months of delay) and **capability** (ECI points). This is tracked by [[entities/epoch-ai]] using the [[concepts/epoch-capabilities-index|Epoch Capabilities Index (ECI)]].
+The open vs. closed model capability gap measures how far behind open-weight models lag the most capable proprietary (closed-weight) models, expressed in both **time** (months of delay) and **capability** (ECI points). This is tracked by [[entities/epoch-ai]] using the [[concepts/evaluation/epoch-capabilities-index|Epoch Capabilities Index (ECI)]].
 
 ## Current State (May 2026)
 
@@ -79,7 +79,7 @@ Epoch AI's analysis **likely understates the true gap** because:
 ## Related Pages
 
 - [[entities/epoch-ai]] — Organization behind the ECI and this analysis
-- [[concepts/epoch-capabilities-index]] — The measurement methodology
+- [[concepts/evaluation/epoch-capabilities-index]] — The measurement methodology
 - [[comparisons/frontier-models-2026-04]] — Frontier model landscape (Apr 2026)
 - [[concepts/open-weights-licensing-tightening]] — Related trend of license tightening
 - [[concepts/harness-commoditization]] — How frontier capability commoditizes agent harnesses

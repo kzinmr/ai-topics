@@ -62,7 +62,7 @@ NAT is built around a modular agent framework supporting:
 ## Related
 
 - [[entities/nvidia]] — NVIDIA ecosystem
-- [[concepts/agent-observability]] — agent observability
+- [[concepts/evaluation/agent-observability]] — agent observability
 - [[concepts/mcp]] — Model Context Protocol
 - [[entities/microsoft-agent-framework]] — Microsoft's agent framework
 - [[entities/google-adk]] — Google's Agent Development Kit

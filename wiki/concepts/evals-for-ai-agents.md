@@ -98,4 +98,4 @@ A systematic guide to AI agent evaluation by Anthropic. "Without evals, you can 
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench coding benchmark
 - [[concepts/ai-benchmarks/ai-resistant-evaluations]] — AI-resistant evaluation design
 - [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Infrastructure noise in evals
-- [[concepts/macro-evals-for-agentic-systems]] — Macro evals: population-level behavior pattern discovery (OpenAI × Slalom)
+- [[concepts/evaluation/macro-evals-for-agentic-systems]] — Macro evals: population-level behavior pattern discovery (OpenAI × Slalom)

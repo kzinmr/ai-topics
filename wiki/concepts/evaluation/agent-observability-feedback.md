@@ -18,7 +18,7 @@ related:
   - "[[concepts/subagent-patterns]]"
   - "[[concepts/evaluating-llms-harness]]"
   - "[[concepts/probabilistic-era-software]]"
-  - "[[concepts/evals-vs-monitoring-debate]]"
+  - "[[concepts/evaluation/evals-vs-monitoring-debate]]"
 sources:
   - raw/articles/2026-01-10_harrison-chase_code-documents-app-traces-do.md
   - raw/articles/2026-05-05-agent-observability-needs-feedback-to-power-learning.md
@@ -147,7 +147,7 @@ Effective agent observability programs run both offline and online evaluations. 
 - [[concepts/subagent-patterns]] — As agents manage more subagents (Patterns 3-4), observability becomes critical for understanding coordination failures and agent loops.
 - [[concepts/evaluating-llms-harness]] — LLM-as-judge evaluation is a key technique within the observability feedback loop.
 - [[concepts/probabilistic-era-software]] — Chase's thesis that "code no longer documents the app" is the practical manifestation of Segato's ontological shift (`F: X→Y` → `F'(?)`). Traces replace code as documentation precisely because input space is infinite and outputs are stochastic.
-- [[concepts/evals-vs-monitoring-debate]] — Chase bridges the debate: offline evals (trace datasets) + online evals (production trace monitoring) are both necessary. LangSmith is built for both, unlike Braintrust (offline-first) or Raindrop (monitoring-first).
+- [[concepts/evaluation/evals-vs-monitoring-debate]] — Chase bridges the debate: offline evals (trace datasets) + online evals (production trace monitoring) are both necessary. LangSmith is built for both, unlike Braintrust (offline-first) or Raindrop (monitoring-first).
 
 ## The Three Articles: A Unified Framework
 

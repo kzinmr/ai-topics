@@ -127,7 +127,7 @@ OpenTelemetry logs can be centralized in **SIEM** and compliance logging systems
 
 - [[entities/codex]] — OpenAI Codex coding agent
 - [[concepts/ai-agent-safety]] — Broader AI agent safety practices
-- [[concepts/testing-ai-agents]] — Testing agents before deployment
+- [[concepts/evaluation/testing-ai-agents]] — Testing agents before deployment
 - [[concepts/supply-chain-security]] — Software supply chain security
 
 ## References

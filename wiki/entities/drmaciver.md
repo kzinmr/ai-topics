@@ -255,7 +255,7 @@ His Substack "Overthinking Everything" is unified by a theme of **empirical curi
 - [[entities/mitchell-hashimoto]] — HashiCorp co-founder; coined harness engineering
 - [[entities/daniel-de-laney]] — Designer and developer; AI tools UX critique
 -  — His primary domain of expertise
-- [[concepts/ai-evals]] — Foundational LLM evaluations using PBT methodology
+- [[concepts/evaluation/ai-evals]] — Foundational LLM evaluations using PBT methodology
 - [[concepts/ai-evals-people]] — drmaciver, shreya-shankar, hamel-husain collaborate on eval frameworks
 - [[concepts/harness-engineering]] — Hegel as a test harness for multi-language PBT
 - [[concepts/agentic-engineering]] — AI-assisted coding with rigorous review practices

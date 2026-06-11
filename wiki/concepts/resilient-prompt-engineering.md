@@ -84,5 +84,5 @@ Design prompts as reusable templates:
 ## Related
 
 - [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy
-- [[concepts/evaluation-flywheel]] — Evaluation Flywheel
+- [[concepts/evaluation/evaluation-flywheel]] — Evaluation Flywheel
 - [[concepts/agentic-scaffolding]] — Agentic Scaffolding

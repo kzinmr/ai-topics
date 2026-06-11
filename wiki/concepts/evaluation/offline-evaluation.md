@@ -157,7 +157,7 @@ LLM-as-Judge plays a critical role as the **metric computation layer** in offlin
 
 ## See Also
 
-- [[concepts/ai-evals]] — AI Evaluation Overview
-- [[concepts/llm-as-judge]] — LLM-as-Judge Detailed Bias Analysis
-- [[concepts/evaluation-flywheel]] — Continuous Evaluation Improvement Cycle
+- [[concepts/evaluation/ai-evals]] — AI Evaluation Overview
+- [[concepts/evaluation/llm-as-judge]] — LLM-as-Judge Detailed Bias Analysis
+- [[concepts/evaluation/evaluation-flywheel]] — Continuous Evaluation Improvement Cycle
 - [[concepts/dspy]] — Eval Integration in DSPy

@@ -23,7 +23,7 @@ sources:
 
 # LM Evaluation Harness (lm-eval)
 
-**lm-eval** is the industry-standard open-source framework for reproducible evaluation of Large Language Models, developed and maintained by [[entities/eleutherai|EleutherAI]]. It provides a unified interface for evaluating LLMs across 60+ academic benchmarks (200+ subtasks) and powers the Hugging Face [[concepts/open-llm-leaderboard|Open LLM Leaderboard]].
+**lm-eval** is the industry-standard open-source framework for reproducible evaluation of Large Language Models, developed and maintained by [[entities/eleutherai|EleutherAI]]. It provides a unified interface for evaluating LLMs across 60+ academic benchmarks (200+ subtasks) and powers the Hugging Face [[concepts/evaluation/open-llm-leaderboard|Open LLM Leaderboard]].
 
 ## Overview
 
@@ -120,18 +120,18 @@ The paper demonstrates how evaluation setup flips model rankings:
 
 ## Connection to AI Evals
 
-While lm-eval focuses on **model-level** evaluation (standardized benchmarks, academic metrics), modern [[concepts/ai-evals]] extend to:
+While lm-eval focuses on **model-level** evaluation (standardized benchmarks, academic metrics), modern [[concepts/evaluation/ai-evals]] extend to:
 - **Application-level:** Real user traces, product-specific failure modes
 - **Continuous:** Ongoing monitoring vs. one-time evaluation
 - **LLM-as-judge:** Subjective quality assessment
 
 ## Related Concepts
 
-- [[concepts/open-llm-leaderboard]] — Primary leaderboard powered by lm-eval
+- [[concepts/evaluation/open-llm-leaderboard]] — Primary leaderboard powered by lm-eval
 - [[entities/eleutherai]] — Development collective
 - [[entities/hailey-schoelkopf]] — Primary maintainer
 - [[entities/stella-biderman]] — Co-author and EleutherAI director
-- [[concepts/ai-evals]] — Broader evaluation methodology
+- [[concepts/evaluation/ai-evals]] — Broader evaluation methodology
 
 ## Example: YAML Task Configuration
 

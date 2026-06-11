@@ -5,12 +5,12 @@ handle: "@clefourrier"
 created: 2026-04-10
 updated: 2026-06-03
 related:
-  - [[open-llm-leaderboard]]
+  - [[concepts/evaluation/open-llm-leaderboard]]
   - 
   - [[gaia]]
   - [[yourbench]]
   - [[lighteval]]
-  - [[llm-evaluation-harness]]
+  - [[concepts/evaluation/llm-evaluation-harness]]
   - [[bloom]]
   - [[zephyr]]
   - [[smollm2]]
@@ -239,7 +239,7 @@ Fourrier's work consistently emphasizes **openness, transparency, and reproducib
 ## Related
 
 - [[lighteval]] — Open-source LLM evaluation toolkit from Hugging Face
-- [[open-llm-leaderboard]] — Community-standard ranking of open language models
+- [[concepts/evaluation/open-llm-leaderboard]] — Community-standard ranking of open language models
 - [[gaia-benchmark]] — Benchmark for General AI Assistants (Meta × Hugging Face × AutoGPT)
 - [[llm-evaluation]] — Methodology for assessing language model capabilities
 - [[bloom]] — 176B-parameter open-access multilingual language model (BigScience)

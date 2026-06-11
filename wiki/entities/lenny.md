@@ -151,8 +151,8 @@ The following raw articles in the wiki reference Lenny Rachitsky or Lenny's Podc
 - [[entities/dan-shipper]] — CEO of Every, guest on Lenny's Podcast (May 2026) with 12 predictions on AI & work
 - [[entities/hamel-husain]] — Guest on Lenny's Podcast for the AI evals episode; expert on AI engineering and evaluation methodology
 - [[entities/shreya-shankar]] — Guest on Lenny's Podcast for the AI evals episode; Berkeley PhD researcher on AI evaluation and DocETL creator
-- [[concepts/ai-evals]] — Core topic covered on Lenny's Podcast, the evaluation framework for AI products
-- [[concepts/llm-as-judge]] — Evaluation technique discussed in the AI evals episode
+- [[concepts/evaluation/ai-evals]] — Core topic covered on Lenny's Podcast, the evaluation framework for AI products
+- [[concepts/evaluation/llm-as-judge]] — Evaluation technique discussed in the AI evals episode
 - [[concepts/ai-economic-impact]] — AI economic framings from Benedict Evans episode on Lenny's Podcast
 
 ## Sources

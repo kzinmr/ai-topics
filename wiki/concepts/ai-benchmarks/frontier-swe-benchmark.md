@@ -81,5 +81,5 @@ FrontierSWE reveals that even frontier models remain far from saturated on hard 
 - [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
 - [[concepts/workspace-bench]] — Multi-file workspace learning benchmark
 - [[concepts/harness-engineering]] — How execution environments shape agent performance
-- [[concepts/ai-evals]] — AI evaluation landscape overview
+- [[concepts/evaluation/ai-evals]] — AI evaluation landscape overview
 - [[concepts/agent-survival-benchmark]] — Human-normalized agent benchmark

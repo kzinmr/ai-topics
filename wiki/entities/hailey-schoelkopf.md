@@ -26,7 +26,7 @@ sources:
 
 # Hailey Schoelkopf
 
-**Hailey Schoelkopf** (she/her) is a Research Scientist at [[entities/eleutherai|EleutherAI]] and currently a Member of Technical Staff at Anthropic. She is the primary maintainer of the [[concepts/llm-evaluation-harness|LM Evaluation Harness]] (lm-eval), the industry-standard tool for reproducible LLM evaluation.
+**Hailey Schoelkopf** (she/her) is a Research Scientist at [[entities/eleutherai|EleutherAI]] and currently a Member of Technical Staff at Anthropic. She is the primary maintainer of the [[concepts/evaluation/llm-evaluation-harness|LM Evaluation Harness]] (lm-eval), the industry-standard tool for reproducible LLM evaluation.
 
 ## Overview
 

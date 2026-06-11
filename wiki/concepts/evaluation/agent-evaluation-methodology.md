@@ -18,7 +18,7 @@ sources:
   - https://www.howtoeval.com/
   - raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md
 related:
-  - "[[concepts/macro-evals-for-agentic-systems]]"
+  - "[[concepts/evaluation/macro-evals-for-agentic-systems]]"
   - "[[concepts/raindrop]]"
   - "[[concepts/harness-engineering]]"
   - "[[concepts/ai-observability]]"
@@ -125,7 +125,7 @@ describeEval('refund agent', { harness: refundAgentHarness() }, (it) => {
 
 This pattern is known by different names:
 - **Sentry**: "harness-backed" evals (vitest-evals)
-- **OpenAI**: "macro evals" (see [[concepts/macro-evals-for-agentic-systems]])
+- **OpenAI**: "macro evals" (see [[concepts/evaluation/macro-evals-for-agentic-systems]])
 - **Raindrop Workshop**: trajectory-based eval with Codex/Claude annotation
 
 **Avoid hosted eval dashboards for running agent evals.** The report UI is the easy part. What should be tightly coupled with your product is the eval logic itself. Start with a local HTML viewer showing pass/fail.
@@ -198,7 +198,7 @@ As models become more capable and agentic, the distinction between "model" and "
 | **Tooling** | Raindrop, Raindrop Workshop, vitest-evals | Promptfoo, AgentTrace execution graphs |
 | **Complementarity** | Operational: "is my agent reliable?" | Analytical: "what patterns emerge at scale?" |
 
-See [[concepts/macro-evals-for-agentic-systems]] for the full macro evals methodology.
+See [[concepts/evaluation/macro-evals-for-agentic-systems]] for the full macro evals methodology.
 
 ## Further Reading
 
@@ -206,5 +206,5 @@ See [[concepts/macro-evals-for-agentic-systems]] for the full macro evals method
 - **Your AI Product Needs Evals** — Hamel Husain (error analysis as highest-ROI activity)
 - **Eval Awareness in Claude Opus 4.6** — Anthropic
 - **How We Monitor Internal Coding Agents** — OpenAI
-- **Macro Evals for Agentic Systems** — OpenAI Cookbook ([[concepts/macro-evals-for-agentic-systems]])
+- **Macro Evals for Agentic Systems** — OpenAI Cookbook ([[concepts/evaluation/macro-evals-for-agentic-systems]])
 - **Raindrop documentation** — https://www.raindrop.ai/docs

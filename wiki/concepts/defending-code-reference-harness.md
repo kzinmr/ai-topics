@@ -120,4 +120,4 @@ Models tend to write overly restrictive patches; minimal, root-cause fixes are p
 - [[entities/anthropic]] — Anthropic, the company behind this harness
 - [[entities/eugene-yan]] — Eugene Yan, co-author of the blog post and harness
 - [[concepts/vulnerability-detection]] — AI-driven vulnerability detection
-- [[concepts/llm-evaluation-harness]] — Eugene Yan's broader work on eval-driven development
+- [[concepts/evaluation/llm-evaluation-harness]] — Eugene Yan's broader work on eval-driven development

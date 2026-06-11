@@ -309,7 +309,7 @@ This reflects his own career arc: at Amazon, he transitioned from hands-on IC wo
 
 - [[concepts/machine-learning-in-production]] — His primary domain: shipping ML systems that work at scale
 - [[concepts/recommendation-systems]] — His deep expertise from Lazada and Amazon
-- [[concepts/llm-evaluation-harness]] — His work on eval-driven development and LLM-as-judge
+- [[concepts/evaluation/llm-evaluation-harness]] — His work on eval-driven development and LLM-as-judge
 - [[concepts/retrieval-augmented-generation]] — One of his seven core LLM integration patterns
 - [[concepts/applied-ml]] — His most-starred GitHub repository (28.7K stars)
 - [[concepts/open-llms]] — His curated list of commercially usable open LLMs (12.7K stars)

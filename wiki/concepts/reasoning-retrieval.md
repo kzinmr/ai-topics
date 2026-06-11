@@ -84,7 +84,7 @@ Rank1 scores poorly on old benchmarks (DL19/DL20) because it finds **relevant do
 - [[concepts/rag-not-dead-series]] — The 7-part series this is part of
 - [[concepts/modern-retrieval-toolkit]] — Part 1: the broader modern retrieval toolkit that reasoning retrieval extends
 - [[concepts/ai-benchmarks/freshstack-benchmark]] — Part 2: evaluation dimension; reasoning retrievers need new eval approaches
-- [[concepts/llm-as-judge]] — Parallel to Rank1's judge-like reasoning; both use LLMs for evaluation
+- [[concepts/evaluation/llm-as-judge]] — Parallel to Rank1's judge-like reasoning; both use LLMs for evaluation
 - [[concepts/harness-engineering]] — Measure-first; reasoning traces make retrieval auditable
 
 ## Sources

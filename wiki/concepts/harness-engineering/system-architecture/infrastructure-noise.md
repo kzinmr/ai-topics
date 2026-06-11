@@ -86,5 +86,5 @@ A study quantifying the impact of infrastructure configuration alone on agentic 
 - [[concepts/harness-engineering]] — Parent index
 - [[comparisons/evals-skills]] — Evaluation skills
 - [[concepts/harness-design-long-running-apps]] — Harness design
-- [[concepts/ai-evals]] — AI evaluation concepts
+- [[concepts/evaluation/ai-evals]] — AI evaluation concepts
 

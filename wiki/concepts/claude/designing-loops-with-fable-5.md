@@ -109,7 +109,7 @@ Martin's article was well-received by the agent engineering community, with the 
 ## Related Concepts
 
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern that loops build upon
-- [[concepts/eval-loops]] — Evaluation-driven improvement cycles
+- [[concepts/evaluation/eval-loops]] — Evaluation-driven improvement cycles
 - [[concepts/context-engineering|Context Engineering]] — The broader discipline of managing agent context
 - [[concepts/anthropic/managed-agents]] — The platform that implements these loop patterns
 - [[concepts/agent-loop-orchestration]] — Patterns for orchestrating multiple loops

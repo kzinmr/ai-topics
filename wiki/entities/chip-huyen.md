@@ -187,7 +187,7 @@ In a widely-discussed LinkedIn post (referenced in Lenny's Podcast), Huyen ident
 - [[concepts/designing-ml-systems]] — Framework for production-ready ML architecture
 - [[concepts/rag-systems]] — Retrieval-Augmented Generation for knowledge-grounded AI
 - [[concepts/ai-agents]] — Autonomous systems with tools, planning, and reflection capabilities
-- [[concepts/ai-evaluation]] — Benchmarks, AI-as-a-judge, and systematic testing methodologies
+- [[concepts/evaluation/ai-evaluation]] — Benchmarks, AI-as-a-judge, and systematic testing methodologies
 - [[concepts/prompt-engineering]] — Treating prompts as an engineering discipline
 - [[concepts/data-engineering-for-ml]] — Pipelines, labeling, weak supervision, and dataset curation
 - [[concepts/stanford-cs329s]] — Machine Learning Systems Design course

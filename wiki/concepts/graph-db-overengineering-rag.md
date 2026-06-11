@@ -129,7 +129,7 @@ This concept page is designed to serve as a **graph traversal node** in the wiki
 - [[concepts/agentic-alternative-to-graphrag]] — Contextual AI's metadata search approach; both argue against static graph DBs but propose different alternatives (metadata index vs HNSW expansion)
 - [[concepts/context-engineering/context-graph|Context Graph]] — Enterprise context graphs; complementary perspective on graphs as decision traces rather than retrieval infrastructure
 - [[concepts/harness-engineering]] — Measure-first philosophy embodied in the evaluation prerequisite
-- [[concepts/ai-evals]] — Golden dataset approach to validating retrieval improvements
+- [[concepts/evaluation/ai-evals]] — Golden dataset approach to validating retrieval improvements
 - [[concepts/agentic-rag]] — Broader taxonomy of agentic retrieval
 
 ## Sources

@@ -19,8 +19,8 @@ sources:
   - raw/articles/2025-08_gian-segato_probabilistic-era.md
 related:
   - "[[concepts/probabilistic-era-software]]"
-  - "[[concepts/evals-vs-monitoring-debate]]"
-  - "[[concepts/agent-evaluation-methodology]]"
+  - "[[concepts/evaluation/evals-vs-monitoring-debate]]"
+  - "[[concepts/evaluation/agent-evaluation-methodology]]"
   - "[[entities/ben-hylak]]"
 ---
 
@@ -64,7 +64,7 @@ In *[Agency is Eating the World](https://giansegato.com/essays/agency-is-eating-
 
 ### Infrastructure Noise in Agentic Coding Evals
 
-Published on the [Anthropic Engineering blog](https://anthropic.com/engineering/infrastructure-noise), this work quantifies how infrastructure-level noise (network latency, sandbox startup time, file I/O variability) affects the reliability of coding agent evaluations — a critical insight for the [[concepts/evals-vs-monitoring-debate|evals vs monitoring debate]].
+Published on the [Anthropic Engineering blog](https://anthropic.com/engineering/infrastructure-noise), this work quantifies how infrastructure-level noise (network latency, sandbox startup time, file I/O variability) affects the reliability of coding agent evaluations — a critical insight for the [[concepts/evaluation/evals-vs-monitoring-debate|evals vs monitoring debate]].
 
 ## Writing
 
@@ -75,7 +75,7 @@ Published on the [Anthropic Engineering blog](https://anthropic.com/engineering/
 
 ## Ecosystem Connections
 
-- **Ben Hylak** (Raindrop) — Hylak cited Segato's essay (as "Replit's founding engineer") in his *Thoughts on Evals* rebuttal to support the argument that eval datasets lag behind production reality. See [[concepts/evals-vs-monitoring-debate]].
+- **Ben Hylak** (Raindrop) — Hylak cited Segato's essay (as "Replit's founding engineer") in his *Thoughts on Evals* rebuttal to support the argument that eval datasets lag behind production reality. See [[concepts/evaluation/evals-vs-monitoring-debate]].
 - **Replit** — Segato's experience shipping the first coding agent at Replit directly informs his skepticism of static evals and advocacy for production testing
 - **Anthropic** — Current research role; authored the infrastructure-noise eval methodology
 - **Michele (Replit President)** — Segato cites Michele's decision to rewrite Replit from scratch when Sonnet 3.7 dropped as the canonical example of probabilistic-era thinking

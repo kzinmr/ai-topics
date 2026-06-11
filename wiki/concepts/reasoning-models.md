@@ -51,7 +51,7 @@ Reasoning models use neural architectures with emergent or trained reasoning cap
 ## Related wikilinks
 
 - [[concepts/neurosymbolic-ai]] — Alternative reasoning approach (symbolic + neural)
-- [[concepts/ai-evals]] — How to evaluate reasoning quality
+- [[concepts/evaluation/ai-evals]] — How to evaluate reasoning quality
 - [[concepts/illusion-of-thinking]] — Karpathy's critique (if page exists)
 
 ## Sources

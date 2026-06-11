@@ -82,7 +82,7 @@ RoboRev handles line-by-line correctness. The human focuses on structural questi
 - [[entities/wes-mckinney]] — Creator
 - [[entities/agents-view]] — Companion session viewer
 - [[entities/middleman]] — Companion local GitHub dashboard
-- [[concepts/generator-evaluator-pattern]] — RoboRev as the "evaluator" half
+- [[concepts/evaluation/generator-evaluator-pattern]] — RoboRev as the "evaluator" half
 
 ## References
 

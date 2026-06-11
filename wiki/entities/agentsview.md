@@ -54,7 +54,7 @@ This feature is particularly valuable in the [[concepts/coding-agents/model-rout
 - Self-hosted models have infrastructure costs rather than per-token pricing
 
 ## Related Pages
-- [[concepts/agent-observability]] — Observability for AI agents
+- [[concepts/evaluation/agent-observability]] — Observability for AI agents
 - [[concepts/observability]] — General observability platforms
 - [[entities/langsmith]] — LangChain's LLM observability platform
 - [[entities/braintrust]] — Braintrust eval and observability

@@ -32,7 +32,7 @@ sources:
 - **Llemma** — Open language model for mathematics
 
 ### Infrastructure
-- **[[concepts/llm-evaluation-harness|LM Evaluation Harness]]** (lm-eval) — Industry-standard evaluation library for LLMs (200+ tasks)
+- **[[concepts/evaluation/llm-evaluation-harness|LM Evaluation Harness]]** (lm-eval) — Industry-standard evaluation library for LLMs (200+ tasks)
 - **The Pile** — 800GB diverse text dataset for language modeling
 - **OpenFold** — Open-source protein folding model
 
@@ -44,7 +44,7 @@ sources:
 ## Impact
 
 EleutherAI's tools and models have become foundational infrastructure for open-source AI research:
-- lm-eval powers the Hugging Face [[concepts/open-llm-leaderboard|Open LLM Leaderboard]]
+- lm-eval powers the Hugging Face [[concepts/evaluation/open-llm-leaderboard|Open LLM Leaderboard]]
 - The Pile is the most widely used open training corpus
 - Pythia enabled systematic study of LLM training dynamics at ICML 2023
 - Over 4,500 datasets in the Open LLM Leaderboard ecosystem
@@ -53,5 +53,5 @@ EleutherAI's tools and models have become foundational infrastructure for open-s
 
 - **[[entities/stella-biderman]]** — Executive Director
 - **[[entities/hailey-schoelkopf]]** — Research Scientist
-- **[[concepts/llm-evaluation-harness]]** — Flagship tool
-- **[[concepts/open-llm-leaderboard]]** — Uses EleutherAI's lm-eval
+- **[[concepts/evaluation/llm-evaluation-harness]]** — Flagship tool
+- **[[concepts/evaluation/open-llm-leaderboard]]** — Uses EleutherAI's lm-eval

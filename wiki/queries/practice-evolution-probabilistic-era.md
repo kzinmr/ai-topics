@@ -18,9 +18,9 @@ aliases:
 related:
   - "[[concepts/inverted-stack-trace-native-engineering]]"
   - "[[concepts/probabilistic-era-software]]"
-  - "[[concepts/agent-evaluation-methodology]]"
-  - "[[concepts/evals-vs-monitoring-debate]]"
-  - "[[concepts/agent-observability-feedback]]"
+  - "[[concepts/evaluation/agent-evaluation-methodology]]"
+  - "[[concepts/evaluation/evals-vs-monitoring-debate]]"
+  - "[[concepts/evaluation/agent-observability-feedback]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/ben-hylak]]"
   - "[[entities/gian-segato]]"
@@ -75,9 +75,9 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 **Transition path:** TDD → **Eval-Driven Development** (Chase) → **Error Analysis** (Husain) → **Floor Raising** (Hylak). The eval suite becomes "a memory of bugs you refuse to reintroduce," built *after* you discover failures in production, not *before* you write code.
 
 **Wiki pages:**
-- [[concepts/ai-evals]] — Hamel Husain's 3-level eval framework
-- [[concepts/testing-ai-agents]] — Non-determinism challenges
-- [[concepts/evaluation-flywheel]] — OpenAI's continuous improvement cycle
+- [[concepts/evaluation/ai-evals]] — Hamel Husain's 3-level eval framework
+- [[concepts/evaluation/testing-ai-agents]] — Non-determinism challenges
+- [[concepts/evaluation/evaluation-flywheel]] — OpenAI's continuous improvement cycle
 
 ### 2. Evals (Offline Evaluation)
 
@@ -96,13 +96,13 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 **Transition path:** Synthetic evals → **Code-aware evals** (test the full agent path, not just prompts) → **Trace-based evals** (datasets from production) → **Complementary layers** (offline for regression, online for discovery).
 
 **Wiki pages:**
-- [[concepts/evals-vs-monitoring-debate]] — The defining intellectual conflict
-- [[concepts/agent-evaluation-methodology]] — Floor raising framework
-- [[concepts/macro-evals-for-agentic-systems]] — OpenAI's population-level analysis
+- [[concepts/evaluation/evals-vs-monitoring-debate]] — The defining intellectual conflict
+- [[concepts/evaluation/agent-evaluation-methodology]] — Floor raising framework
+- [[concepts/evaluation/macro-evals-for-agentic-systems]] — OpenAI's population-level analysis
 - [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Segato on eval reliability
-- [[concepts/eval-awareness-browsecomp]] — When models detect they're being evaluated
+- [[concepts/evaluation/eval-awareness-browsecomp]] — When models detect they're being evaluated
 - [[comparisons/eval-tools-comparison]] — Tool comparison
-- [[concepts/ai-evaluation]] — General evaluation landscape
+- [[concepts/evaluation/ai-evaluation]] — General evaluation landscape
 
 ### 3. A/B Testing & Experimentation
 
@@ -137,7 +137,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 **Transition path:** Infrastructure monitoring → **Semantic signals** (custom tiny models detecting problematic patterns) → **Self-diagnostics** (agents reporting their own failures) → **Holistic system view** (marketing attribution + observability + A/B testing collapsed into one).
 
 **Wiki pages:**
-- [[concepts/agent-observability-feedback]] — The feedback loop
+- [[concepts/evaluation/agent-observability-feedback]] — The feedback loop
 - [[concepts/raindrop]] — "Sentry for AI Agents"
 - [[concepts/ai-observability]] — Broader observability landscape
 
@@ -156,8 +156,8 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 **You can't set a breakpoint in reasoning.** Traditional breakpoints are meaningless because decisions happen inside the model. Instead: open a trace right before the bad decision, load that exact state into a playground, iterate on prompt/context, and see if the agent makes a better choice.
 
 **Wiki pages:**
-- [[concepts/agent-observability-feedback]] — Full feedback loop architecture
-- [[concepts/agent-observability]] — Enterprise observability patterns
+- [[concepts/evaluation/agent-observability-feedback]] — Full feedback loop architecture
+- [[concepts/evaluation/agent-observability]] — Enterprise observability patterns
 - [[concepts/observability-monitoring-ai-opentelemetry-python-production]] — OTel-based approach
 - [[concepts/observability-monitoring-tracing-opentelemetry-llm-agents-debugging]] — Tracing for LLM agents
 
@@ -205,11 +205,11 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 ### Path A: Why Old Practices Break
 1. [[concepts/probabilistic-era-software]] — The ontological shift
 2. [[concepts/agent-observability-feedback#the-three-articles-a-unified-framework]] — The causal chain
-3. [[concepts/evals-vs-monitoring-debate]] — The defining conflict
+3. [[concepts/evaluation/evals-vs-monitoring-debate]] — The defining conflict
 
 ### Path B: The New Toolbox
-1. [[concepts/agent-evaluation-methodology]] — Floor raising framework
-2. [[concepts/agent-observability-feedback]] — The feedback loop
+1. [[concepts/evaluation/agent-evaluation-methodology]] — Floor raising framework
+2. [[concepts/evaluation/agent-observability-feedback]] — The feedback loop
 3. [[comparisons/eval-tools-comparison]] — Tool comparison
 
 ### Path C: Practitioner Perspectives
@@ -220,34 +220,34 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 5. [[entities/hamel-husain]] — Error analysis pioneer
 
 ### Path D: Technical Deep Dives
-1. [[concepts/macro-evals-for-agentic-systems]] — Population-level eval patterns
+1. [[concepts/evaluation/macro-evals-for-agentic-systems]] — Population-level eval patterns
 2. [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Eval reliability quantification
-3. [[concepts/eval-awareness-browsecomp]] — Models detecting evaluation
-4. [[concepts/testing-ai-agents]] — Non-determinism testing challenges
-5. [[concepts/ai-evals]] — Hamel Husain's 3-level framework
+3. [[concepts/evaluation/eval-awareness-browsecomp]] — Models detecting evaluation
+4. [[concepts/evaluation/testing-ai-agents]] — Non-determinism testing challenges
+5. [[concepts/evaluation/ai-evals]] — Hamel Husain's 3-level framework
 
 ---
 
 ## Index: All Wiki Pages on This Topic
 
 ### Concepts — Eval Practices
-- [[concepts/agent-evaluation-methodology]] — Floor raising vs benchmark maxxing
-- [[concepts/evals-vs-monitoring-debate]] — Hylak vs Goyal
+- [[concepts/evaluation/agent-evaluation-methodology]] — Floor raising vs benchmark maxxing
+- [[concepts/evaluation/evals-vs-monitoring-debate]] — Hylak vs Goyal
 - [[concepts/probabilistic-era-software]] — The ontological shift
-- [[concepts/agent-observability-feedback]] — Feedback loop architecture
-- [[concepts/ai-evals]] — Husain's evaluation framework
-- [[concepts/ai-evaluation]] — General evaluation landscape
-- [[concepts/evaluation-flywheel]] — OpenAI's cycle
-- [[concepts/macro-evals-for-agentic-systems]] — Population-level analysis
+- [[concepts/evaluation/agent-observability-feedback]] — Feedback loop architecture
+- [[concepts/evaluation/ai-evals]] — Husain's evaluation framework
+- [[concepts/evaluation/ai-evaluation]] — General evaluation landscape
+- [[concepts/evaluation/evaluation-flywheel]] — OpenAI's cycle
+- [[concepts/evaluation/macro-evals-for-agentic-systems]] — Population-level analysis
 - [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Eval reliability
-- [[concepts/eval-awareness-browsecomp]] — Models detecting evaluation
-- [[concepts/testing-ai-agents]] — Non-determinism testing
+- [[concepts/evaluation/eval-awareness-browsecomp]] — Models detecting evaluation
+- [[concepts/evaluation/testing-ai-agents]] — Non-determinism testing
 - [[concepts/evals-for-ai-agents]] — Anthropic's eval guide
 - [[concepts/coding-agents/evaluation-coding-agents]] — Coding agent benchmarks
-- [[concepts/llm-evaluation-harness]] — lm-eval-harness
+- [[concepts/evaluation/llm-evaluation-harness]] — lm-eval-harness
 - [[concepts/harness-engineering]] — The harness philosophy
 - [[concepts/ai-observability]] — Observability landscape
-- [[concepts/agent-observability]] — Enterprise observability
+- [[concepts/evaluation/agent-observability]] — Enterprise observability
 
 ### Comparisons
 - [[comparisons/eval-tools-comparison]] — Eval tools compared

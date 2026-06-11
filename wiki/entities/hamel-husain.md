@@ -179,12 +179,12 @@ Hamel appeared as a guest on the Season 1 finale of [[entities/hugo-bowne-anders
 -   [[entities/shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
 -   [[entities/eugene-yan]] — Co-author on Applied LLMs guide, shared evals philosophy.
 -    — Mentor/collaborator at fast.ai and AnswerAI.
--   [[concepts/ai-evals]] — The evaluation framework he teaches.
+-   [[concepts/evaluation/ai-evals]] — The evaluation framework he teaches.
 -   [[entities/drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design.
 -   [[entities/shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
 -   [[concepts/harness-engineering]] — His core engineering philosophy.
--   [[concepts/critique-shadowing]] — His signature methodology.
--   [[concepts/llm-as-judge]] — Core evaluation technique he critiques and teaches.
+-   [[concepts/evaluation/critique-shadowing]] — His signature methodology.
+-   [[concepts/evaluation/llm-as-judge]] — Core evaluation technique he critiques and teaches.
 -   [[entities/ben-clavie]] — Co-author of the "RAG Is Not Dead" series; featured expert in Part 1 on the modern retrieval toolkit.
 -   [[concepts/rag-not-dead-series]] — Open 7-part series with Ben Clavié arguing RAG is not dead.
 -   [[concepts/modern-retrieval-toolkit]] — Part 1: the modern retrieval toolkit replacing naive single-vector search.

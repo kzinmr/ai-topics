@@ -116,4 +116,4 @@ A single LLM call producing a 0.0-1.0 score with pass-fail judgment showed the h
 - [[concepts/managed-agents]] — Managed Agents platform
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[concepts/carlini-c-compiler-agents]] — Carlini's parallel agent experiment
-- [[concepts/eval-awareness-browsecomp]] — BrowseComp eval awareness
+- [[concepts/evaluation/eval-awareness-browsecomp]] — BrowseComp eval awareness

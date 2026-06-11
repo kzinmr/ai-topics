@@ -199,18 +199,18 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 
 | Concept | Summary | Wiki Page |
 |---|---|---|
-| AI Evaluation | Manual → code-based → LLM-as-Judge | [[concepts/ai-evaluation]] |
-| LM Evaluation Harness | EleutherAI's 60+ benchmark framework | [[concepts/llm-evaluation-harness]] |
-| Evaluation Flywheel | Data → eval → analysis → improvement | [[concepts/evaluation-flywheel]] |
-| Eval Loops | Automated quality control scoring | [[concepts/eval-loops]] |
-| Offline Evaluation | Offline evaluation techniques | [[concepts/offline-evaluation]] |
+| AI Evaluation | Manual → code-based → LLM-as-Judge | [[concepts/evaluation/ai-evaluation]] |
+| LM Evaluation Harness | EleutherAI's 60+ benchmark framework | [[concepts/evaluation/llm-evaluation-harness]] |
+| Evaluation Flywheel | Data → eval → analysis → improvement | [[concepts/evaluation/evaluation-flywheel]] |
+| Eval Loops | Automated quality control scoring | [[concepts/evaluation/eval-loops]] |
+| Offline Evaluation | Offline evaluation techniques | [[concepts/evaluation/offline-evaluation]] |
 
 ### Philosophy & Debate
 
 | Concept | Summary | Wiki Page |
 |---|---|---|
-| Evals vs Monitoring | Offline eval vs production monitoring | [[concepts/evals-vs-monitoring-debate]] |
-| Evaluation Harness Validity | Harness design determines capability | [[concepts/evaluation-harness-validity]] |
+| Evals vs Monitoring | Offline eval vs production monitoring | [[concepts/evaluation/evals-vs-monitoring-debate]] |
+| Evaluation Harness Validity | Harness design determines capability | [[concepts/evaluation/evaluation-harness-validity]] |
 | Benchmaxxing | Benchmark over-optimization trap | [[concepts/ai-benchmarks/benchmaxxing]] |
 | AI Resistant Evaluations | AI-resistant evaluation design | [[concepts/ai-benchmarks/ai-resistant-evaluations]] |
 
@@ -218,21 +218,21 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 
 | Concept | Summary | Wiki Page |
 |---|---|---|
-| Agent Evaluation Methodology | Agent evaluation lifecycle | [[concepts/agent-evaluation-methodology]] |
+| Agent Evaluation Methodology | Agent evaluation lifecycle | [[concepts/evaluation/agent-evaluation-methodology]] |
 | Coding Agent Evaluation | Coding agent eval design | [[concepts/coding-agents/evaluation-coding-agents]] |
 | Evals for AI Agents | AI agent eval practices | [[concepts/evals-for-ai-agents]] |
-| Macro Evals for Agentic Systems | Large-scale agentic eval | [[concepts/macro-evals-for-agentic-systems]] |
+| Macro Evals for Agentic Systems | Large-scale agentic eval | [[concepts/evaluation/macro-evals-for-agentic-systems]] |
 | Infrastructure Noise in Agent Evals | Infra noise quantification | [[concepts/coding-agents/infrastructure-noise-agent-evals]] |
-| Process Reward Models | PRM-based agent evaluation | [[concepts/process-reward-models-agent-eval]] |
+| Process Reward Models | PRM-based agent evaluation | [[concepts/evaluation/process-reward-models-agent-eval]] |
 | Harness Design Patterns | Multi-agent GAN loop etc. | [[concepts/agent-harness-primitives]] |
 
 ### Metrics
 
 | Metric | Summary | Wiki Page |
 |---|---|---|
-| LLM-as-Judge | Automated LLM evaluation | [[concepts/llm-as-judge]] |
-| Pass@k | Code generation success rate | [[concepts/ai-benchmarks/pass-k-metric]] |
-| NDCG | Search ranking metric | [[concepts/ai-benchmarks/ndcg]] |
+| LLM-as-Judge | Automated LLM evaluation | [[concepts/evaluation/llm-as-judge]] |
+| Pass@k | Code generation success rate | [[concepts/evaluation/pass-k-metric]] |
+| NDCG | Search ranking metric | [[concepts/evaluation/ndcg]] |
 
 ---
 
@@ -240,12 +240,12 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 
 | Tool/Platform | Summary | Wiki Page |
 |---|---|---|
-| Langfuse Academy | Trace → Monitor → Dataset → Experiment → Evaluate | [[concepts/ai-evaluation]] |
+| Langfuse Academy | Trace → Monitor → Dataset → Experiment → Evaluate | [[concepts/evaluation/ai-evaluation]] |
 | LangSmith / Braintrust / Arize Phoenix | Evaluation tool comparison | [[comparisons/eval-tools-comparison]] |
 | Lighteval | Hugging Face evaluation library | [[concepts/ai-benchmarks/lighteval]] |
 | Galileo Eval Engineer | Evaluation engineering | [[entities/galileo-eval-engineer]] |
-| Raindrop | Agent monitoring | [[concepts/evals-vs-monitoring-debate]] |
-| Braintrust | Eval platform | [[concepts/evals-vs-monitoring-debate]] |
+| Raindrop | Agent monitoring | [[concepts/evaluation/evals-vs-monitoring-debate]] |
+| Braintrust | Eval platform | [[concepts/evaluation/evals-vs-monitoring-debate]] |
 
 ---
 
@@ -291,14 +291,14 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 ## Cross-Reference Links
 
 - [[concepts/ai-benchmarks/index]] — Individual benchmark page index
-- [[concepts/ai-evaluation]] — Evaluation methodology (Langfuse Academy)
-- [[concepts/evals-vs-monitoring-debate]] — Evals vs monitoring debate
-- [[concepts/evaluation-harness-validity]] — OpenAI harness design framework
-- [[concepts/llm-evaluation-harness]] — EleutherAI lm-eval
+- [[concepts/evaluation/ai-evaluation]] — Evaluation methodology (Langfuse Academy)
+- [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs monitoring debate
+- [[concepts/evaluation/evaluation-harness-validity]] — OpenAI harness design framework
+- [[concepts/evaluation/llm-evaluation-harness]] — EleutherAI lm-eval
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmark over-optimization
-- [[concepts/agent-evaluation-methodology]] — Agent evaluation lifecycle
+- [[concepts/evaluation/agent-evaluation-methodology]] — Agent evaluation lifecycle
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench (origin of agentic benchmarks)
 - [[concepts/ai-benchmarks/agent-arena]] — Agent Arena (causal inference-based)
 - [[concepts/evals-for-ai-agents]] — Agent eval practices
-- [[concepts/evaluation-flywheel]] — Continuous evaluation cycle
+- [[concepts/evaluation/evaluation-flywheel]] — Continuous evaluation cycle
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author

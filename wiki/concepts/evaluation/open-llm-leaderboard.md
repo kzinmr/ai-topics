@@ -19,7 +19,7 @@ sources:
 
 # Open LLM Leaderboard
 
-The **Open LLM Leaderboard** is a centralized hub on Hugging Face for tracking, ranking, and evaluating open-source Large Language Models (LLMs) and chatbots. It is the primary authority for comparing open LLM performance across standardized benchmarks, using [[concepts/llm-evaluation-harness|lm-eval]] (EleutherAI) as its evaluation backend.
+The **Open LLM Leaderboard** is a centralized hub on Hugging Face for tracking, ranking, and evaluating open-source Large Language Models (LLMs) and chatbots. It is the primary authority for comparing open LLM performance across standardized benchmarks, using [[concepts/evaluation/llm-evaluation-harness|lm-eval]] (EleutherAI) as its evaluation backend.
 
 ## Overview
 
@@ -60,7 +60,7 @@ Updated with improved benchmarks, expanded model coverage, and refined evaluatio
 
 ## Relationship to lm-eval
 
-The Open LLM Leaderboard is the most prominent deployment of [[concepts/llm-evaluation-harness|lm-eval]]. While lm-eval provides the evaluation engine, the leaderboard adds:
+The Open LLM Leaderboard is the most prominent deployment of [[concepts/evaluation/llm-evaluation-harness|lm-eval]]. While lm-eval provides the evaluation engine, the leaderboard adds:
 - A public ranking interface and UX
 - Automated submission and evaluation pipeline
 - Community governance for benchmark selection
@@ -72,7 +72,7 @@ Recent high-activity models include variants of DeepSeek-R1-Distill, Qwen-14B/32
 
 ## Related Concepts
 
-- [[concepts/llm-evaluation-harness]] — Evaluation engine powering the leaderboard
+- [[concepts/evaluation/llm-evaluation-harness]] — Evaluation engine powering the leaderboard
 - [[entities/eleutherai]] — Creators of lm-eval
 - [[entities/hailey-schoelkopf]] — lm-eval maintainer
 - [[entities/clefourrier]] — Hugging Face lead for the leaderboard

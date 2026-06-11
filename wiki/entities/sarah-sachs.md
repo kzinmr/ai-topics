@@ -69,7 +69,7 @@ Key principles Sachs promotes:
 ## Cross-References
 
 - **[[entities/notion]]** — Current employer, leads AI engineering
-- **[[concepts/ai-evals]]** — Pioneering three-tier evaluation framework at Notion
+- **[[concepts/evaluation/ai-evals]]** — Pioneering three-tier evaluation framework at Notion
 - **[[entities/simon-last]]** — Close collaborator on agent harness architecture
 
 ## Sources

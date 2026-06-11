@@ -66,7 +66,7 @@ status: active
 - [[concepts/ai-benchmarks/tau-squared-bench]] — τ²-bench: Dual control evaluation (telecom, 2025)
 - [[concepts/ai-benchmarks/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation (banking, 2026)
 - [[concepts/ai-benchmarks/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation (2026)
-- [[concepts/ai-benchmarks/pass-k-metric]] — pass^k reliability metric
+- [[concepts/evaluation/pass-k-metric]] — pass^k reliability metric
 
 ## SWE-bench Ecosystem
 
@@ -100,11 +100,9 @@ status: active
 - [[concepts/ai-benchmarks/openbenches]] — Open benchmarks collection
 - [[concepts/ai-benchmarks/yourbench]] — Your custom benchmark
 
-## Metrics
+## Metrics (→ [[concepts/evaluation/_index|Evaluation]])
 
-- [[concepts/ai-benchmarks/pass-k-metric]] — Code generation success rate
-- [[concepts/ai-benchmarks/ndcg]] — Search ranking quality
-- [[concepts/ai-benchmarks/ram-relative-adoption-metric]] — Relative adoption metric
+- [[concepts/evaluation/ram-relative-adoption-metric]] — Relative adoption metric
 
 ## Search & Retrieval
 

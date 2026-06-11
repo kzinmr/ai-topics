@@ -61,7 +61,7 @@ The intuition:
 For the poor ranking `[0, 0, 1, 1]` at position 4: **DCG@4 = 0.58**
 For the ideal ranking `[1, 1, 0, 0]` at position 4: **DCG@4 = 1.5**
 
-> The full normalized metric is [[concepts/ai-benchmarks/ndcg]] (Normalized DCG), which divides DCG by the ideal DCG to produce a 0–1 score.
+> The full normalized metric is [[concepts/evaluation/ndcg]] (Normalized DCG), which divides DCG by the ideal DCG to produce a 0–1 score.
 
 ## Sources of Judgments
 
@@ -113,7 +113,7 @@ A judgment list enables **test-driven search engineering**, analogous to unit te
 
 1. **Define** what "relevant" means for your use case
 2. **Build** a judgment list of query-document-grade triples
-3. **Measure** current quality via [[concepts/ai-benchmarks/ndcg]]
+3. **Measure** current quality via [[concepts/evaluation/ndcg]]
 4. **Iterate** on ranking signals, re-running evaluation each time
 5. **Ship** only changes that improve or maintain overall DCG
 
@@ -155,7 +155,7 @@ Judgment lists remain relevant even as search evolves toward AI-powered and agen
 
 ## See Also
 
-- [[concepts/ai-benchmarks/ndcg]] — The normalized metric built on judgment lists
+- [[concepts/evaluation/ndcg]] — The normalized metric built on judgment lists
 - [[concepts/learning-to-rank]] — ML-based ranking that trains on judgment lists
 - [[concepts/bm25]] — Lexical retrieval baseline often evaluated against judgment lists
 - [[concepts/quepid]] — Open-source workbench for judgment list management and evaluation

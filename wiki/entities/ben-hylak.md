@@ -20,11 +20,11 @@ sources:
   - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md
   - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md
 related:
-  - "[[concepts/agent-evaluation-methodology]]"
-  - "[[concepts/evals-vs-monitoring-debate]]"
+  - "[[concepts/evaluation/agent-evaluation-methodology]]"
+  - "[[concepts/evaluation/evals-vs-monitoring-debate]]"
   - "[[concepts/raindrop]]"
   - "[[concepts/harness-engineering]]"
-  - "[[concepts/macro-evals-for-agentic-systems]]"
+  - "[[concepts/evaluation/macro-evals-for-agentic-systems]]"
   - "[[entities/ankur-goyal]]"
 ---
 
@@ -50,7 +50,7 @@ Earlier, he completed two avionics engineering internships at SpaceX and demonst
 
 Hylak's central thesis, elaborated in *How to Evaluate AI Agents* (May 2026), is that most product teams should pursue **floor raising** (making agents reliable where mistakes are expensive) rather than **benchmark maxxing** (maximizing abstract pass rates). The framework draws a spectrum from human-reviewed tools (Autocomplete) to fully autonomous agents (AI Doctor), with evaluation strategy shifting accordingly.
 
-See [[concepts/agent-evaluation-methodology]] for the full framework.
+See [[concepts/evaluation/agent-evaluation-methodology]] for the full framework.
 
 ### Code-Aware Evals
 
@@ -64,7 +64,7 @@ In a September 2025 blog post on the Raindrop blog, Hylak directly challenged Br
 - Personalization trends make static evals even less useful over time
 - Raindrop is "just a type of online evals" — but distinct from the common pattern of running offline-evals on sampled production data
 
-This sparked the [[concepts/evals-vs-monitoring-debate|Evals vs Monitoring Debate]], a defining intellectual conflict in AI evaluation between offline testing and production observability.
+This sparked the [[concepts/evaluation/evals-vs-monitoring-debate|Evals vs Monitoring Debate]], a defining intellectual conflict in AI evaluation between offline testing and production observability.
 
 ### On o1 and Reasoning Models
 

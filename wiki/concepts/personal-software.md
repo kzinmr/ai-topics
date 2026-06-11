@@ -73,7 +73,7 @@ The choice of substrate, memory system, and tool composition is itself personal.
 ## Related Concepts
 
 - [[concepts/agentic-engineering]] — The discipline that makes personal software viable
-- [[concepts/generator-evaluator-pattern]] — Skills encode personal taste and judgment
+- [[concepts/evaluation/generator-evaluator-pattern]] — Skills encode personal taste and judgment
 - [[concepts/personal-ai]] — Broader category of AI assistants customized per user
 - [[concepts/harness-engineering]] — The infrastructure layer under personal software
 

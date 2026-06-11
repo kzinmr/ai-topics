@@ -313,7 +313,7 @@ The **pairwise + decision tree** approach achieves ~83% precision by combining m
 Unlabeled queries → LLM Judge(s) → Synthetic relevance labels → NDCG
 ```
 
-This enables **continuous evaluation** — every ranking change can be immediately assessed on production query traffic without waiting for human labelers. See [[concepts/llm-search-judge]] for the full technique.
+This enables **continuous evaluation** — every ranking change can be immediately assessed on production query traffic without waiting for human labelers. See [[concepts/evaluation/llm-search-judge]] for the full technique.
 
 ## Summary
 
@@ -321,7 +321,7 @@ NDCG is the industry-standard metric for search relevance, but it's a tool with 
 
 ## See Also
 
-- [[concepts/judgment-list]] — The foundational data structure that NDCG evaluates against
+- [[concepts/evaluation/judgment-list]] — The foundational data structure that NDCG evaluates against
 - [[entities/softwaredoug]] — Doug Turnbull, author of the "Cheat at Search Essentials" training
 - [Search Evaluation Slides](https://docs.google.com/presentation/d/1WJknXxaim_Z8aiVuQx6wr7W6MAWeaUJK0-NrgcEVQfQ) — Source presentation
 - [Maven: Cheat at Search Essentials](https://maven.com/softwaredoug/cheat-at-search) — Course with promo code `ndcgrocks`
