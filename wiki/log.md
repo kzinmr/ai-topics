@@ -7997,3 +7997,24 @@ Updated:
 - concepts/gemini: ghost entry — no file on disk (has valuable I/O 2026 content, needs file creation or removal)
 - 30 misplaced entries across sections (11 concept entries in Entities, 1 in Events, 18 raw articles in Queries)
 - 576 orphan concept pages not in index (most are auto-generated stubs)
+
+---
+## [2026-06-10] wiki-health-auto-fix — Ghost entries & orphan registration
+
+**Action**: Fixed ghost entry `[[concepts/gemini]]` → `[[concepts/gemini/index|Google Gemini]]`. Created stub pages: `concepts/dense-retrieval.md`, `concepts/tokenization.md`, `entities/conviction.md`. Fixed broken wikilink in `gemini-3-5-flash.md` (`[[concepts/gemini/index]]-3-1-flash-lite` → `[[concepts/gemini/gemini-3-1-flash-lite]]`). Added 20 orphan concept pages to index.
+
+**Pages added to index**: agent-iam, agent-identity-verification, agent-loop-orchestration, agent-runtime, agent-statefulness, agent-team-swarm/_index, agentic-search, ai-agent-memory-middleware, ai-benchmarks/agent-survival-benchmark, ai-slop-productivity-paradox, death-of-browser/_index, google-spacex-ai-compute-deal, harness-engineering/_index, memory-scaling, multi-agent-orchestration-architecture, normalization-of-deviance-in-ai-coding, project-glasswing, sandbox/_index, vibe-ceo, world-models-science
+
+**Removed duplicates**: 4 old entries that overlapped with new ones (agent-runtime, agent-statefulness, agent-team-swarm, death-of-browser)
+
+**Counts**: Concepts 1046→1062 (+16 net), Total pages 2428→2448 (+20)
+
+
+---
+## [2026-06-11] Lesson 4 Transcript \& Summary Ingestion
+
+- **CREATED**: `transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture.md` — Structured transcript of Lesson 4 with timestamps, 8 sections covering RL fundamentals, multi-armed bandit, GRPO for LLMs, live-coded Art E agent, tool design patterns
+- **CREATED**: `raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4.md` — Lesson 4 summary article
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 4 to Lecture Schedule, Lesson Summaries, companion resources, sources, related links
+- **UPDATED**: `index.md` — Added Lesson 4 transcript entry
+- **NOTEBOOK**: https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec4-rl/grpo_intro.ipynb

@@ -2,7 +2,7 @@
 title: "Production-Ready Agent Engineering: From MCP to RL"
 type: concept
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-11
 tags:
   - ai-agents
   - reinforcement-learning
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning.md
   - raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2.md
   - raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3.md
+  - raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://maven.com/p/193c6f/build-your-own-ai-research-agent
@@ -70,6 +71,7 @@ CTO of **OpenPipe**, the RL post-training company that helps companies train cus
 | [research-agent-lesson](https://github.com/willccbb/research-agent-lesson) | "Build Your Own AI Research Agent" lesson files |
 | [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb) | Lesson 2 notebook: production-grade agent patterns |
 | [evals_optimization.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec3-evals-optimization/evals_optimization.ipynb) | Lesson 3 notebook: evals, SFT, and GRPO |
+| [grpo_intro.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec4-rl/grpo_intro.ipynb) | Lesson 4 notebook: multi-armed bandit + GRPO batch demo |
 | [verifiers](https://github.com/PrimeIntellect-ai/verifiers) | RL environment library for training and evaluating LLMs |
 | [mcp-client-server](https://github.com/willccbb/mcp-client-server) | MCP Server that's also an MCP Client |
 
@@ -114,7 +116,7 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 | Jun 17 | [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture\|Lesson 1: Agent Patterns & Principles]] | [[raw/articles/2025-06-17_willbrown_agents-mcp-rl-lesson1\|Summary]] |
 | Jun 19 | [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture\|Lesson 2: MCP + Production-Grade Agents]] | [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2\|Summary]] |
 | Jun 24 | [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture|Lesson 3: Agent Evals and Optimization]] | [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3|Summary]] |
-| TBD | Lecture 4 | *pending* |
+| Jun 26 | [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture|Lesson 4: Introduction to Reinforcement Learning]] | [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4|Summary]] |
 | TBD | Lecture 5 | *pending* |
 | TBD | Lecture 6 | *pending* |
 
@@ -139,6 +141,14 @@ The third lecture focuses on **evaluation methodology** as the foundation for RL
 **Key insight:** SFT is the gateway to RL — it validates that your task is learnable before expensive RL runs. Write a model spec before writing evals; use deterministic evals first (format, tool calls, instruction following); calibrate LM judges by comparing multiple models; for GRPO, start slow and safe with online reference updates.
 
 **Transcript:** [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture]] · **Summary:** [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3]] · **Notebook:** [evals_optimization.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec3-evals-optimization/evals_optimization.ipynb)
+
+### Lesson 4: Introduction to Reinforcement Learning (Jun 26)
+
+Bridges RL theory and LLM agent training. Will Brown delivers a crash course on RL fundamentals — MDPs, policy gradient, advantage estimation — through a **multi-armed bandit demonstration** (100-action single-turn game), then maps these concepts directly to LLM token generation (state = context, action = next token, policy = next-token distribution). Introduces GRPO mechanics: group = multiple rollouts per prompt, advantage = reward normalized within group. Kyle Corbitt follows with a live-coding session building **Art E** — an agentic RAG email search agent using SQLite + FTS5, demonstrating tool design patterns (wrapper functions), agent loop architecture, synthetic QA data generation, and benchmarking methodology. Key result: agentic keyword search significantly outperforms vector RAG. Sets up GRPO training for the next lesson.
+
+**Key insight:** RL is finicky — small changes in learning rate/batch size cause dramatically different outcomes. The LLM-as-policy mapping is natural but requires careful tool design as a foundation before RL can converge.
+
+**Transcript:** [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture]] · **Summary:** [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4]] · **Notebook:** [grpo_intro.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec4-rl/grpo_intro.ipynb)
 
 ## Included Credits
 
@@ -198,6 +208,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture]] — Lesson 2 transcript
 - [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3]] — Lesson 3: Agent Evals and Optimization
 - [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture]] — Lesson 3 transcript
+- [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4]] — Lesson 4: Introduction to Reinforcement Learning
+- [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture]] — Lesson 4 transcript
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
