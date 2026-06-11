@@ -243,7 +243,7 @@
 - [[entities/datacurve]] — Datacurve — AI evaluation startup ($17.7M raised). Creator of DeepSWE benchmark (113 tasks, 91 repos, 5 languages). Exposed ~32% verifier error rate in SWE-Bench Pro and Claude Opus git-history exploitation.
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
-- [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic | Davos 2026: "10% growth and 10% unemployment at the same time" thesis on AI macroeconomic impact.
+- [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic | Author of "Policy on the AI Exponential" (June 2026): comprehensive 5-area policy framework (regulation, macroeconomics, biomedical acceleration, civil liberties, democratic geopolitics). FAA-style mandatory model testing proposal.
 - [[entities/datasette-agent]] — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026). 0.1a4: Jump to menu integration in Datasette 1.0a30. Conversational SQL generation, chart plugins, LLM library integration. Live demo at agent.datasette.io.
 - [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
@@ -1008,6 +1008,7 @@
 - [[concepts/training-infra/model-serving-autoscaling]] — "Model Serving & Autoscaling"
 - [[concepts/training-infra/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling: Profiling techniques for GPU memory optimization.
 - [[concepts/ai-lab-subscription-vs-api-economics]] — AI Lab Subscription vs API Economics — Empirical analysis of subscription utilization vs API margins. SemiAnalysis finding: $200/mo plans far more generous than $2,000 API-equivalent assumption. Labs likely to gate new models/features from subscriptions rather than cap usage. Mythos as API-only test case.
+- [[concepts/ai-labor-displacement]] — AI Labor Displacement & Economic Impact — "Hypergrowth, hyper-inequality" thesis. Amodei framework: measurement/tracking, pro-employment incentives (wage insurance, retention tax credits), long-term support (UBI). Enduring job displacement as intrinsic property of AI. International macroeconomic cooperation proposed.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design philosophy comparison: chat vs coding agents
 - [[concepts/ai-military]] — AI in Military Wargames
 - [[concepts/ai-native-product-localization]] — AI-Native Product Localization — Using AI agents for product localization. Sierra case study: 10-person/9–12 month Slack project reduced to 1 engineer/4 months. Three-phase evolution (IDE→Cloud→Batch). Context window coevolution pitfall. Dynamic string description generation.
@@ -1027,7 +1028,7 @@
 - [[concepts/ai-progress-dynamics]] — AI Progress Dynamics: Why training efficiency defies horizon predictions
 - [[concepts/ai-ready-apis]] — AI-Ready APIs (API design for AI agents). Concept of API design treating AI agents as API consumers. Machine-readable schemas, agent-aware security, importance of contract testing. Includes AI-API gap analysis from the Postman 2025 survey (5,700 respondents).
 - [[concepts/ai-red-teaming-careers]] — Comprehensive guide to AI red teaming/prompt injection careers. Roles (AI Red Teamer $130K-250K, Adversarial ML Researcher, AI PenTester), employers (OpenAI/Anthropic/DeepMind/Meta/HiddenLayer), required skills, tools (PyRIT/Garak/Promptfoo), career paths.
-- [[concepts/ai-regulation-2026]] — AI Regulation (2026): Accelerating trends in generative AI regulation across nations.
+- [[concepts/ai-regulation-2026]] — AI Regulation (2026): 1,500+ state bills, CA SB 53, NY RAISE Act, EU AI Act phased implementation. Now includes Anthropic's FAA-style mandatory testing proposal (June 2026) — third-party evaluation in 4 risk domains, government deployment blocking power.
 - [[concepts/ai-retail-experiments]] — Experiments where autonomous AI agents manage real-world physical businesses (cafes, retail stores) with minimal human oversight. Andon Labs AI cafe in Stockholm, ordering errors, ethical concerns.
 - [[concepts/security-and-governance/ai-safety]] — AI Safety: Techniques and philosophy for ensuring the safety of increasingly advanced AI systems.
 - [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — AI Safety, Alignment, RLHF, Scalable Oversight, Interpretability
@@ -1846,7 +1847,7 @@
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/ungrounded-meaning]] — "Ungrounded Meaning"
 - [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].
-- [[concepts/us-china-ai-competition]] — US-China AI Competition — Anthropic's framework: four fronts (Intelligence, Domestic adoption, Global distribution, Resilience), compute as central battleground, export controls, distillation attacks, and two 2028 scenarios
+- [[concepts/us-china-ai-competition]] — US-China AI Competition — Anthropic's four-front framework + Amodei's democratic coalition proposal (June 2026): supply chain management, coordinated risk mitigation, mutual defense, reject AI-powered repression, macroeconomic cooperation.
 - [[concepts/uv-scripts-for-ai]] — uv-scripts-for-ai — Repository of self-contained PEP 723 UV scripts for AI/ML: OCR (30+ models), vision, audio, embeddings, inference. Created by [[entities/daniel-van-strien|Daniel van Strien]] (June 2026). 43 stars.
 - [[concepts/vajra-background-agent]] — "Vajra — Open-Source Background Coding Agent"
 - [[concepts/vector-search]] — Approximate Nearest Neighbor (ANN) search in high-dimensional embedding space. HNSW hierarchical graphs, k-means clustering, ScANN/DiskANN, filtered similarity (ACORN1/turbopuffer), hybrid BM25+vector strategies. Doug Turnbull's Maven course.

@@ -1,11 +1,12 @@
 ---
 title: "US-China AI Competition"
 created: 2026-05-17
-updated: 2026-05-17
+updated: 2026-06-11
 type: concept
 tags: [geopolitics, china, policy, anthropic, governance, ai-governance, prediction]
 sources:
   - raw/articles/2026-05-14_anthropic_2028-ai-leadership-scenarios.md
+  - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
 ---
 
 # US-China AI Competition
@@ -118,6 +119,25 @@ Mythos Preview (April 2026, Project Glasswing) demonstrated the acceleration per
 Anthropic supports international AI safety dialogue with Chinese experts, but argues:
 - Prospects for productive engagement are best when US maintains a large capabilities advantage
 - A commanding lead provides leverage to incentivize cooperation from Beijing on AI governance, strategic competition, and trade
+
+## Amodei's Democratic Coalition Proposal (June 2026)
+
+In "Policy on the AI Exponential," Dario Amodei proposed a comprehensive geopolitical framework extending beyond the four-front model:
+
+**Core argument**: AI is "the dominant source of military and economic power for any nation" — comparable to nuclear weapons but potentially more transformative. A nation with powerful AI vs. one without is "WWII Marines vs. medieval swordsmen."
+
+**Six operating principles for a democratic AI coalition:**
+
+1. **Manage the AI supply chain** — Freely share chips/SME among coalition members, deny to adversaries. Expand/tighten US export controls (MATCH, OVERWATCH legislation)
+2. **Coordinate risk mitigation** — Internationally compatible safety standards for bio, cyber, and autonomy risks
+3. **Share AI's benefits** — Diffuse economic benefits within coalition, harmonize medical approval regimes
+4. **Mutual defense** — Collective AI-led cyberdefense, AI-powered drones, classified AI compute sharing
+5. **Reject AI-powered repression** — Coalition members must reject AI-enabled authoritarianism
+6. **Macroeconomic cooperation** — Coordinate employment stabilization policies across borders
+
+**Growth model**: Start with ideologically aligned democracies, progressively welcome others who meet coalition standards. Goal: make membership attractive and remaining outside costly.
+
+**Contrast with prior Anthropic position**: This goes beyond the May 2026 four-front analysis by proposing concrete institutional mechanisms (supply chain lock-down, mutual defense pact) rather than just analytical frameworks.
 
 ## Related Concepts
 

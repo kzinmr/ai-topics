@@ -1,3 +1,17 @@
+## [2026-06-11] Ingest: Dario Amodei "Policy on the AI Exponential"
+
+**Source**: https://darioamodei.com/post/policy-on-the-ai-exponential (June 2026)
+
+**Raw article saved**: `raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md`
+
+**Pages updated/created**:
+- `entities/dario-amodei.md` — Added "Policy on the AI Exponential" (June 2026) to publications table and Recent Commentary section. 5-area policy framework with key quotes.
+- `concepts/ai-regulation-2026.md` — Added "Anthropic's FAA-Style Regulatory Proposal" section: mandatory third-party testing in 4 risk domains, government deployment blocking power, regulatory markets approach.
+- `concepts/us-china-ai-competition.md` — Added "Amodei's Democratic Coalition Proposal" section: 6 operating principles (supply chain, risk coordination, benefit sharing, mutual defense, anti-repression, macroeconomic cooperation).
+- `concepts/ai-labor-displacement.md` — **NEW PAGE**. "Hypergrowth, hyper-inequality" thesis, 3-tier policy intervention framework (measurement, incentives, long-term support), meaning problem, international dimension.
+- `index.md` — Updated descriptions for dario-amodei, ai-regulation-2026, us-china-ai-competition. Added ai-labor-displacement entry.
+- `log.md` — This entry.
+
 ## [2026-06-11] Blog wiki-ingest: Anthropic walkback, datasette-agent 0.2a0, Section 230, Claude+Lean, DiffusionGemma
 
 **Pipeline**: blog-wiki-ingest (triage checkpoint recovered from Case C parse failure)

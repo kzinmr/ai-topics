@@ -2,7 +2,7 @@
 title: Dario Amodei
 type: entity
 created: 2026-04-14
-updated: 2026-05-25
+updated: 2026-06-11
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -12,6 +12,7 @@ tags:
   - interpretability
 sources:
   - raw/newsletters/2026-05-24-google-goes-agentic-hark-s-big-bet-and-starbucks-milk-run.md
+  - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
 ---
 
 
@@ -148,6 +149,9 @@ At the **India AI Impact Summit** (February 2026):
 | "Language Models are Few-Shot Learners" (GPT-3) | 2020 | Co-author |
 | Constitutional AI papers | 2023 | Anthropic's alignment framework |
 | Anthropic RSP documentation | 2023–2026 | Responsible Scaling Policy |
+| "Machines of Loving Grace" | 2024 | Essay on AI's transformative potential |
+| "The Adolescence of Technology" | 2025 | Essay on AI governance challenges |
+| "Policy on the AI Exponential" | June 2026 | Comprehensive 5-area policy framework |
 
 ## Awards and Recognition
 
@@ -180,4 +184,28 @@ At the World Economic Forum in Davos, Dario Amodei offered a provocative macroec
 > *"10% growth and 10% unemployment at the same time."*
 
 The thesis: AI could simultaneously boost GDP growth to historically high levels while destroying jobs faster than workers can transition. This challenges the traditional tradeoff between growth and employment, suggesting AI creates a decoupling where benefits (growth) and costs (displacement) accrue to different populations. Pew Research data: 50% of Americans more concerned than excited about AI (up from 37% in 2021).
+
+### "Policy on the AI Exponential" (June 2026)
+
+Amodei's most comprehensive policy essay to date, structured around five areas requiring urgent action as AI capabilities accelerate exponentially. Published alongside Anthropic's legislative proposal on frontier model testing and a policy framework for job displacement.
+
+**Core thesis**: AI's exponential progress has outpaced the policy apparatus's ability to respond. The "Treebeard" metaphor — political institutions move at tree-speed while AI moves at hobbit-speed. The window for proactive policy is now open because Mythos Preview has made AI's risks undeniable.
+
+**Five policy areas:**
+
+1. **Regulation & Public Safety** — Move beyond transparency to FAA-style mandatory testing. Frontier models must pass third-party evaluation in four risk domains (cybersecurity, bio weapons, loss of control, automated R&D). Government power to block deployment of unsafe models. References the [[concepts/security-and-governance/ai-safety-and-alignment]] framework.
+
+2. **Macroeconomics & Tax Policy** — AI may break the growth-equality tradeoff, creating "hypergrowth, hyper-inequality." Three interventions: measurement/tracking (Anthropic Economic Index), pro-employment incentives (wage insurance, retention tax credits), and long-term support (UBI funded by AI taxes/capital gains). Key insight: enduring job displacement may be an *intrinsic* property of the technology.
+
+3. **Accelerating AI's Positive Impact** — Regulatory systems (FDA/EMA) designed for slower innovation pace will bottleneck AI-driven biomedical breakthroughs. Proposes AI-based PD/PK modeling, synthetic control arms, surrogate endpoints, and accelerated approval mechanisms. 7-8 year drug pipeline may need structural reform.
+
+4. **State & Civil Liberties** — AI as "ultimate tool of autocracy." Proposals: accountability rules for autonomous weapons, ban domestic use of autonomous weapons, close bulk collection/data broker loophole, public rights to AI advice during adverse government action. Warns about corporate power capture (Gilded Age analogy). References Anthropic's Long-Term Benefit Trust as governance model.
+
+5. **Geopolitics & Democratic Leadership** — AI as dominant source of military/economic power (nuclear weapons analogy). Proposes democratic coalition: share chips/SME among allies, deny to adversaries. Six operating principles: manage supply chain, coordinate risk mitigation, share benefits, mutual defense, reject AI-powered repression, macroeconomic cooperation. Extends [[concepts/us-china-ai-competition]] framework.
+
+**Key quotes:**
+- *"Frontier AI models, like airplanes, should be required to go through technical testing and auditing, and their release should be blocked or reversed as a threat to public safety if they do not meet high standards of safety."*
+- *"The key challenge in such a world won't be incentivizing growth, but finding a way for everyone to share in the benefits."*
+- *"AI is likely to be the dominant source of military and economic power for any nation."*
+- *"I worry that [AI] cannot safely be fully entrusted to either governments or companies, and there must be checks and balances on each."*
 

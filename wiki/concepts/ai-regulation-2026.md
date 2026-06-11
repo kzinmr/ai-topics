@@ -2,7 +2,7 @@
 title: "AI Regulation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-06-11
 tags:
   - concept
   - regulation
@@ -26,6 +26,7 @@ sources:
     title: "New York RAISE Act Gets a California Makeover"
   - url: "https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database"
     title: "NCSL AI Legislation Database"
+  - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
 ---
 
 # AI Regulation (2026)
@@ -105,6 +106,21 @@ The pace is accelerating dramatically. The most active areas: generative AI regu
 - Government focusing on "AI Growth Zones" and "AI Growth Labs" (regulatory sandboxes)
 - AI Minister Kanishka Narayan: existing laws (data protection, competition, equality, online safety) already apply
 - Copyright and AI: ongoing debate on training data licensing
+
+## Anthropic's FAA-Style Regulatory Proposal (June 2026)
+
+In "Policy on the AI Exponential" (June 2026), Dario Amodei articulated Anthropic's most detailed regulatory proposal to date, arguing that AI regulation should move beyond transparency to mandatory testing modeled on the FAA:
+
+**Key elements:**
+- **Mandatory third-party testing** for models above a compute threshold in four risk domains: cybersecurity, biological weapons, loss of control, and automated R&D acceleration
+- **Government power to block deployment** of models presenting unacceptable risks (scoped to the four domains with protections against political abuse)
+- **"Regulatory markets" approach**: evaluation by either a government agency (FAA model) or authorized/inspected private organizations
+- **Strong security standards** for model weights, regular red teaming and penetration testing, collaboration with government against major threat actors
+- **Prompt safety incident reporting** in the four critical areas
+
+**Regulatory trajectory**: Amodei acknowledged this may need to escalate to "nuclear material"-level controls if AI capabilities continue advancing. The essay explicitly frames the current moment as the transition from transparency-era (2023-2025) to binding regulation era (2026+).
+
+**Bipartisan framing**: Amodei positions these proposals as having "common-sense appeal across the political spectrum," rejecting the framing that AI's problem is "better marketing."
 
 ## Implications for Developers and Enterprises
 
