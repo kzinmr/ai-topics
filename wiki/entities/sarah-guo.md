@@ -1,11 +1,12 @@
 ---
 title: Sarah Guo
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-11
 type: entity
 tags: [person, vc, investor, ai-investment, founder, conviction]
 sources:
   - raw/articles/2026-06-10-the-untrainable-sarah-guo.md
+  - raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md
 ---
 
 # Sarah Guo
@@ -29,6 +30,7 @@ Sarah's latest essay argues against the "AI despair" that nothing is investable 
 - **Legible vs Illegible Work**: Anything measurable becomes commodity; valuable work is illegible by construction
 - **Private Ground Truth**: The most defensible AI companies operate where correctness exists only in private data
 - **Absorption Frontier**: Labs are pulling model scaffolding into the weights, but this doesn't eliminate the value layer
+- **Model Labs vs Agent Labs**: AINews framed Guo's essay as drawing a distinction between labs that build general intelligence (training compute) and labs that build agentic scaffolding (applied systems) — the latter being where investor conviction is hardest to build
 - **Permission & Accountability**: Intelligence isn't the bottleneck — being let in the door and putting your name on outcomes is
 
 ### Not A Normal Market (2024-10-23)

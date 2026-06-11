@@ -2,7 +2,7 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-05-31
+updated: 2026-06-11
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
@@ -14,7 +14,9 @@ sources: [
   raw/articles/2025-12-10_google-cloud_alphaevolve.md,
   raw/newsletters/2026-05-20-ainews-google-i-o-2026-gemini-3-5-flash-omni-nanobanana-for-video-spark-backgrou.md,
   raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md,
-  raw/articles/feed.tedium.co--link-15204-17351430-google-ai-udm14-reflection--5563d9f3.md
+  raw/articles/feed.tedium.co--link-15204-17351430-google-ai-udm14-reflection--5563d9f3.md,
+  raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md,
+  raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md
 ]
 ---
 # Google (AI/ML)
@@ -127,6 +129,19 @@ Google's I/O 2026 keynote covered a broad range of AI product announcements beyo
 | **SynthID in Chrome** | AI detection tools: right-click images in Chrome to see provenance via SynthID + C2PA | Expanding |
 | **Beam/Sophie** | Lifelike AI video agents for meetings: Sophie reads documents, handles restaurant recs, group calls via Meet/Zoom | Experimental |
 
+### DiffusionGemma — Open Diffusion Text Model (June 2026)
+
+Google released **DiffusionGemma** (`google/diffusiongemma-26B-A4B-it`), an experimental 26B MoE diffusion text model built on [[concepts/gemma|Gemma 4]] and released with open weights under **Apache 2.0**:
+
+- **Architecture**: 26B MoE (26 billion parameters, ~4 billion active per token), based on Gemma 4 foundation
+- **License**: Apache 2.0 — fully open weights, available on [Hugging Face](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
+- **Performance**: vLLM native support enables **1,200+ output tok/s** at batch-1; Simon Willison measured ~500+ tok/s via NVIDIA NIM API (2,409 tokens in 4.4s)
+- **NVIDIA NIM**: Free hosting on [NVIDIA's cloud API](https://build.nvidia.com/google/diffusiongemma-26b-a4b-it)
+- **Research implications**: Diffusion-style text generation revives questions around iterative refinement, constrained editing, fill-in-the-middle, and error correction — a fundamentally different paradigm from autoregressive token prediction
+
+This marks the first diffusion-style LLM to receive native vLLM support, and represents Google's strategy of releasing research models openly under the Gemma family while keeping frontier capabilities in the Gemini product line.
+
+Sources: [Simon Willison](https://simonwillison.net/2026/Jun/10/diffusiongemma/), [AINews (Latent Space)](https://www.latent.space/p/ainews-open-models-model-labs-vs), [Google Blog](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/)
 
 ## Image Generation Strategy
 

@@ -1,3 +1,13 @@
+## [2026-06-11] Newsletter wiki-ingest: DiffusionGemma + Sarah Guo enrichment
+
+**Pipeline**: newsletter-wiki-ingest (triage checkpoint recovered)
+
+**Enriched**:
+- `entities/google.md` -- Added DiffusionGemma section: 26B MoE open diffusion text model (Apache 2.0), vLLM native (1,200+ tok/s), NVIDIA NIM hosting, research implications (iterative refinement, fill-in-the-middle). Sources: Simon Willison, AINews, Google Blog. Updated frontmatter (date+sources).
+- `entities/sarah-guo.md` -- Added Model Labs vs Agent Labs framing as supplement to The Untrainable essay. Updated frontmatter (date+sources).
+
+**Sources**: AINews (Latent Space) 2026-06-11, raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md
+
 ## [2026-06-11] concepts/death-of-browser を concepts/browser-agent/death-of-browser へ移動
 
 **Action**: `concepts/death-of-browser/_index.md` を `concepts/browser-agent/death-of-browser.md` に移動。被リンク17件を更新。`browser-agent/` 階層を新設。
