@@ -121,4 +121,4 @@ Solara is Microsoft's bet that the ecosystem is ready for the **third structure*
 - [[concepts/microsoft-mai-models]] — Microsoft's first-party model family
 - [[concepts/agent-first-devices]] (stub) — Emerging device category
 - [[entities/microsoft]] — Parent organization
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Multi-agent orchestration patterns
+- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration patterns

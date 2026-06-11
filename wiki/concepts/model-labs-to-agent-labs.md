@@ -98,5 +98,5 @@ The thesis: frontier model quality is plateauing or becoming commoditized. The d
 - [[entities/greg-brockman]] — Origins of the thesis quote
 - [[entities/openai-codex]] — OpenAI's agent platform
 - [[concepts/deepseek-v4]] — Model economics deflation
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Multi-agent orchestration
+- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration
 - [[entities/ryan-lopopolo]] — Harness Engineering originator at OpenAI

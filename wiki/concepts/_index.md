@@ -152,8 +152,8 @@ AI and LLM concept pages organized by topic.
 
 ## Agent-Team-Swarm
 
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Agent team swarm refers to coordination patterns where multiple AI agents work together in distributed, emergent structures rather than rigid hierarchies.
-- [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
+- [[concepts/multi-agents/agent-team-swarm]] — Agent team swarm refers to coordination patterns where multiple AI agents work together in distributed, emergent structures rather than rigid hierarchies.
+- [[concepts/multi-agents/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 
 ## Agentic-Alternative-To-Graphrag
 
@@ -197,7 +197,7 @@ AI and LLM concept pages organized by topic.
 
 ## Agentic-Workflow-Patterns
 
-- [[concepts/agent-team-swarm/agentic-workflow-patterns]] — (content needed)
+- [[concepts/multi-agents/agentic-workflow-patterns]] — (content needed)
 
 ## Ai-Addiction-Burnout
 

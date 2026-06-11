@@ -139,7 +139,7 @@ Editorial Review Board of JMLR. PyCon and SciPy Financial Aid team member.
 ## Related Concepts
 
 - [[entities/marimo]] — Reactive notebooks as agent substrate; the platform Eric uses for agentic data science
-- [[concepts/agent-team-swarm/agentic-data-science]] — Eric's two-bucket framework and Marimo Pair workflow as a new pattern for agent-assisted science
+- [[concepts/multi-agents/agentic-data-science]] — Eric's two-bucket framework and Marimo Pair workflow as a new pattern for agent-assisted science
 - [[entities/pymc]] — Probabilistic programming library Eric contributes to; Bayesian methods for drug discovery
 
 ## Related People

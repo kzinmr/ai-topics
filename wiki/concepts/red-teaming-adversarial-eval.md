@@ -107,5 +107,5 @@ Any successful data exfiltration (agent sending data to unauthorized external en
 - [[concepts/ai-evals]] — AI Evaluation Systems
 - [[concepts/evaluation-flywheel]] — Continuous improvement loop
 - [[concepts/zero-trust-agentic-ai]] — Security framework that red teaming validates
-- [[concepts/agent-team-swarm/agentic-conflict-resolution]] — Detecting agent disagreements as attack surface
+- [[concepts/multi-agents/agentic-conflict-resolution]] — Detecting agent disagreements as attack surface
 - [[concepts/security-and-governance/agent-sandboxing]] — Isolation as defense-in-depth

@@ -105,8 +105,8 @@ OpenClaw's autonomous agent capabilities are drawing attention particularly in:
 
 ## Related Concepts
 
-- [[concepts/agent-team-swarm/agent-orchestration-frameworks]] — Agent orchestration comparison
-- [[concepts/agent-team-swarm/agent-swarms]] — Multi-agent emergent behavior
+- [[concepts/multi-agents/agent-orchestration-frameworks]] — Agent orchestration comparison
+- [[concepts/multi-agents/agent-swarms]] — Multi-agent emergent behavior
 - [[concepts/telegram-managed-bots]] — Telegram bot ecosystem
 - [[concepts/monty-sandbox]] — Code execution sandbox
 

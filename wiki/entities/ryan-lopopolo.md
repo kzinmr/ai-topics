@@ -284,8 +284,8 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 ## Related Concepts
 
 - **[[harness-engineering]]** — Ryanが提唱したAIコーディングエージェントの体系的実行環境設計
-- **[[concepts/agent-team-swarm/agent-team-swarm]]** — Symphonyはagent team/swarmの実装パターン（Level 4: The Engineering Team）
-- **[[agent-team-swarm/managed-devins]]** — Cognitionの条件付きサブエージェントspawnとSymphonyの比較
+- **[[concepts/multi-agents/agent-team-swarm]]** — Symphonyはagent team/swarmの実装パターン（Level 4: The Engineering Team）
+- **[[concepts/multi-agents/managed-devins]]** — Cognitionの条件付きサブエージェントspawnとSymphonyの比較
 - **[[openai-symphony]]** — OpenAI Symphonyの詳細（Elixir実装、SPEC.md）
 - **[[multi-agent-autonomy-scale]]** — 256エージェント規模の自律協調研究
 - **[[harness-engineering/agentic-engineering]]** — AIエージェントを活用したソフトウェア開発手法全般

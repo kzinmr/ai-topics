@@ -38,7 +38,7 @@ The **Managed Bots** feature allows bots to programmatically create and manage o
 - Manager receives `managed_bot` update events
 - Token management via `getManagedBotToken`
 
-This enables **bot orchestration** patterns where an AI agent can spawn, configure, and manage sub-bots for specialized tasks — relevant to [[concepts/agent-team-swarm/agent-swarms]] and multi-agent coordination.
+This enables **bot orchestration** patterns where an AI agent can spawn, configure, and manage sub-bots for specialized tasks — relevant to [[concepts/multi-agents/agent-swarms]] and multi-agent coordination.
 
 ### Bot Management
 - **Privacy Mode:** Bots only see commands, service messages, and forwarded messages in groups
@@ -56,7 +56,7 @@ Telegram bots are increasingly used for AI-powered services:
 
 ## Related Concepts
 
-- [[concepts/agent-team-swarm/agent-swarms]] — Multi-agent coordination (bot-to-bot patterns)
+- [[concepts/multi-agents/agent-swarms]] — Multi-agent coordination (bot-to-bot patterns)
 - [[concepts/memory-architecture]] — Agent memory in multi-bot systems
 - [[entities/claude-code]] — Agentic coding platforms
 - [[telegram]] — Parent platform entity

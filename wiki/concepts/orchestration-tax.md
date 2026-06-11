@@ -119,5 +119,5 @@ The concept was discussed at a Google I/O 2026 panel featuring:
 - [[concepts/cognitive-surrender]] — Individual failure mode enabled by unpaid orchestration tax
 - [[concepts/cognitive-debt]] — What accumulates when the tax is paid unintentionally
 - [[concepts/harness-engineering]] — Structural countermeasures: move verification from human to automated gates
-- [[concepts/agent-team-swarm/agent-orchestration]] — Broader discipline of coordinating and governing multiple AI agents
+- [[concepts/multi-agents/agent-orchestration]] — Broader discipline of coordinating and governing multiple AI agents
 - [[concepts/multi-agent-orchestration]] — Multi-agent orchestration patterns and architectures

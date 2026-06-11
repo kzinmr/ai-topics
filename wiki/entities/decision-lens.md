@@ -31,12 +31,12 @@ Decision Lens bridges the gap between sophisticated causal/Bayesian analysis (pe
 
 ## Role in Agentic Data Science
 
-Decision Lens operates at the orchestration and observability layers of the [[concepts/agent-team-swarm/agentic-data-science|agentic data science]] stack. It provides the human-facing interface that completes the loop from data → analysis → decision. Non-technical stakeholders gain agency over the analytical process without needing to understand the underlying Bayesian machinery.
+Decision Lens operates at the orchestration and observability layers of the [[concepts/multi-agents/agentic-data-science|agentic data science]] stack. It provides the human-facing interface that completes the loop from data → analysis → decision. Non-technical stakeholders gain agency over the analytical process without needing to understand the underlying Bayesian machinery.
 
 ## Related Concepts
 
-- [[concepts/agent-team-swarm/agentic-data-science]] — The broader paradigm of AI agents doing data science work
-- [[concepts/agent-team-swarm/agent-orchestration]] — Coordinating AI agents for complex workflows
+- [[concepts/multi-agents/agentic-data-science]] — The broader paradigm of AI agents doing data science work
+- [[concepts/multi-agents/agent-orchestration]] — Coordinating AI agents for complex workflows
 
 ## Related Entities
 

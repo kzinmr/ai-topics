@@ -136,7 +136,7 @@ The PI reviews and signs off:
 - [[concepts/bayesian-methods]] — Probabilistic modeling approach central to the stack
 - [[concepts/causal-reasoning]] — Causal inference frameworks
 - [[concepts/vibe-coding]] — The less rigorous counterpart
-- [[concepts/agent-team-swarm/agent-orchestration]] — Coordinating multiple agents
+- [[concepts/multi-agents/agent-orchestration]] — Coordinating multiple agents
 - [[concepts/agent-skills]] — Reusable patterns for agent tasks
 - [[concepts/verification]] — Verification strategies for AI outputs
 - [[concepts/harness-engineering]] — Building agent infrastructure

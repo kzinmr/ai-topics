@@ -157,9 +157,9 @@ Covers production applications, RAG, agents, and deployment. Since this Wiki is 
 | Topic | Wiki Coverage | Notes |
 |----------|---------------|------|
 | Thought → Action → Observation Loop | [[concepts/agent-loop-orchestration]], [[concepts/agentic-scaffolding]], [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] | Rich coverage |
-| MCP (Model Context Protocol) | [[concepts/agent-team-swarm/agent-communication-protocols]], [[concepts/agent-communication-standards]] | Covered |
-| LangGraph / CrewAI / AutoGen | [[concepts/agent-team-swarm/agent-orchestration-frameworks]] | Compared |
-| Multi-Agent | [[concepts/agent-team-swarm/agent-swarms]], [[concepts/agent-team-swarm/agent-team-swarm]] | Covered |
+| MCP (Model Context Protocol) | [[concepts/multi-agents/agent-communication-protocols]], [[concepts/agent-communication-standards]] | Covered |
+| LangGraph / CrewAI / AutoGen | [[concepts/multi-agents/agent-orchestration-frameworks]] | Compared |
+| Multi-Agent | [[concepts/multi-agents/agent-swarms]], [[concepts/multi-agents/agent-team-swarm]] | Covered |
 | Coding Agents | [[concepts/agentic-coding]], [[concepts/agentic-engineering]], [[concepts/agentic-engineering-patterns]], [[concepts/claude-code]] | Very rich |
 
 ### Section 3: Deployment & Security

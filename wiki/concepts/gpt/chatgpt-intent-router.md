@@ -67,7 +67,7 @@ This is OpenAI's move from being a model/chat provider to becoming an **agent pl
 The intent router represents [[concepts/harness-engineering/agent-native-architecture|agent-native architecture]] applied at the consumer-product level. It's the same principle — agents as first-class citizens — built into the primary user interface used by hundreds of millions of people.
 
 ### 3. Orchestration as a Consumer Feature
-[[concepts/agent-team-swarm/agent-orchestration|Agent orchestration]], previously a developer concern, becomes a consumer-facing capability. The router handles the complexity of multi-agent coordination invisibly.
+[[concepts/multi-agents/agent-orchestration|Agent orchestration]], previously a developer concern, becomes a consumer-facing capability. The router handles the complexity of multi-agent coordination invisibly.
 
 ### 4. Competition Becomes Platform-vs-Platform
 If successful, the intent router shifts competition from "whose model is better" to "whose ecosystem is more integrated." This favors large players with diverse product portfolios and disadvantages pure-play model providers.
@@ -86,6 +86,6 @@ OpenAI appears to be adopting the super-app model pioneered by WeChat in China �
 ## Related Concepts
 
 - [[concepts/harness-engineering/agent-native-architecture]] — The architectural philosophy of treating agents as first-class primitives
-- [[concepts/agent-team-swarm/agent-orchestration]] — Multi-agent coordination patterns
+- [[concepts/multi-agents/agent-orchestration]] — Multi-agent coordination patterns
 - [[entities/thibault-sottiaux]] — OpenAI product lead overseeing the reorganization
 - [[entities/openai]] — Company overview and history

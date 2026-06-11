@@ -60,4 +60,4 @@ Excessive agency is the problem; [[concepts/zero-trust-agentic-ai]] is the solut
 - [[concepts/zero-trust-agentic-ai]] — Comprehensive security framework
 - [[concepts/security-and-governance/agent-sandboxing]] — Isolation as complementary defense
 - [[concepts/red-teaming-adversarial-eval]] — Testing for excessive agency vulnerabilities
-- [[concepts/agent-team-swarm/agentic-conflict-resolution]] — Governance patterns that prevent agency conflicts
+- [[concepts/multi-agents/agentic-conflict-resolution]] — Governance patterns that prevent agency conflicts

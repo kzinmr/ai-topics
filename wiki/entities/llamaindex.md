@@ -137,7 +137,7 @@ LlamaIndex extends beyond passive retrieval into autonomous reasoning and action
 ## Related Concepts
 - [[langchain]] — Competing general-purpose LLM application framework
 - [[concepts/rags]] — Retrieval-Augmented Generation patterns and techniques
-- [[concepts/agent-team-swarm/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
+- [[concepts/multi-agents/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
 - [[concepts/context-engineering|Context Engineering]] — Discipline popularized by LlamaIndex
 - [[llamaparse]] — Enterprise document parsing
 - [[llamacloud]] — Managed deployment platform

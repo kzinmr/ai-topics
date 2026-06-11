@@ -16,11 +16,11 @@ status: complete
 
 **Agent Swarms (emergent behavior of autonomous, decentralized agents)** is a pattern where multiple agents, without a central coordinator, produce collective intelligence or order from local interactions.
 
-Unlike existing [[concepts/agent-team-swarm/agent-team-swarm]] (hierarchical orchestration, managed team coordination), this focuses on an **autonomous, decentralized** approach inspired by biological swarms (flocking birds, ant colony behavior).
+Unlike existing [[concepts/multi-agents/agent-team-swarm]] (hierarchical orchestration, managed team coordination), this focuses on an **autonomous, decentralized** approach inspired by biological swarms (flocking birds, ant colony behavior).
 
 ## Comparison with agent-team-swarm
 
-| Aspect | Agent Team / Swarm ([[concepts/agent-team-swarm/agent-team-swarm]]) | Agent Swarms (Emergent Behavior) |
+| Aspect | Agent Team / Swarm ([[concepts/multi-agents/agent-team-swarm]]) | Agent Swarms (Emergent Behavior) |
 |---|---|---|
 | Architecture | Hierarchical, orchestrator-driven | Decentralized, peer-to-peer |
 | Control | Central manager decomposes/assigns tasks | Emergence from local rules |
@@ -191,7 +191,7 @@ Measurement methods proposed by the MAEBE framework ([arXiv:2506.03053](https://
 ## Related Concepts
 
 - [[concepts/multi-agent-consensus-patterns]] — Decentralized consensus formation protocols
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Hierarchical, managed multi-agent coordination
+- [[concepts/multi-agents/agent-team-swarm]] — Hierarchical, managed multi-agent coordination
 - [[concepts/agentic-engineering]] — Higher-level concept of agent-driven development
 - [[concepts/self-evolving-agents]] — Self-improving agents
 - [[concepts/multi-agent-orchestration-patterns]] — Multi-agent orchestration

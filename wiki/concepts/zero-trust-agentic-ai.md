@@ -74,6 +74,6 @@ Zero Trust security model applied to AI agents: assume no request is safe by def
 
 - [[concepts/security-and-governance/agent-sandboxing]] — Isolation as a complementary security layer
 - [[concepts/sandbox]] — Execution environment security
-- [[concepts/agent-team-swarm/agentic-conflict-resolution]] — Governance patterns for multi-agent systems
-- [[concepts/agent-team-swarm/agent-communication-protocols]] — Secure protocol design
+- [[concepts/multi-agents/agentic-conflict-resolution]] — Governance patterns for multi-agent systems
+- [[concepts/multi-agents/agent-communication-protocols]] — Secure protocol design
 - [[concepts/excessive-agency]] — The core vulnerability this addresses

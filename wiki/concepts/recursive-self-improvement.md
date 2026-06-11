@@ -162,5 +162,5 @@ This official declaration elevates RSI from a theoretical concept discussed by r
 - [[concepts/ai-safety]] — Alignment risks
 - [[concepts/automated-alignment-research]] — Anthropic's AAR program
 - [[concepts/model-distillation]] — Related capability advancement pathway
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Multi-agent orchestration as enabling capability
+- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration as enabling capability
 - [[entities/openai]] — "Automated AI research intern" target

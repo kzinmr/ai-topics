@@ -40,7 +40,7 @@ ACP is to AI agents what **LSP (Language Server Protocol)** is to code editors �
 
 **Key distinction:** ACP governs **agent-to-client (UI)** communication, whereas [[concepts/mcp]] governs **agent-to-tool** communication. They are complementary protocols serving different layers of the agent stack.
 
-> **⚠️ Naming conflict:** "ACP" also refers to the former **Agent Communication Protocol** (IBM/I Am Bee), which **merged into A2A** under the Linux Foundation in August 2025. This page covers **Agent Client Protocol** only. For the merged A2A standard, see [[concepts/agent-team-swarm/agent-communication-protocols]].
+> **⚠️ Naming conflict:** "ACP" also refers to the former **Agent Communication Protocol** (IBM/I Am Bee), which **merged into A2A** under the Linux Foundation in August 2025. This page covers **Agent Client Protocol** only. For the merged A2A standard, see [[concepts/multi-agents/agent-communication-protocols]].
 
 ---
 
@@ -300,7 +300,7 @@ By standardizing the agent-client interface:
 
 ## See Also
 
-- [[concepts/agent-team-swarm/agent-communication-protocols]] — Broader protocol landscape (MCP/A2A/ACP comparison)
+- [[concepts/multi-agents/agent-communication-protocols]] — Broader protocol landscape (MCP/A2A/ACP comparison)
 - [[concepts/agent-communication-standards]] — Standard protocols for multi-agent communication
 - [[concepts/mcp]] — Model Context Protocol for agent-to-tool communication
 - [[comparisons/codex-app-server-vs-agent-protocols]] — Multi-protocol landscape comparison

@@ -175,6 +175,6 @@ Take off your apron and put on your chef's coat. You run the kitchen, and your b
 ## Related Concepts
 
 - [[concepts/single-agent-ceiling]] — Limits of single agents and the "Sloperator" anti-pattern
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Hierarchical orchestration of multi-agent teams
+- [[concepts/multi-agents/agent-team-swarm]] — Hierarchical orchestration of multi-agent teams
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — Sub-agent delegation patterns
 - X thread by @MilksandMatcha (April 2026)

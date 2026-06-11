@@ -64,7 +64,7 @@ Network policies prevent containers from accessing secrets service directly or t
 ## Related
 
 - Paradigm — creator
-- [[concepts/agent-team-swarm/agent-executor|Agent Executor]] — Google's distributed agent runtime
+- [[concepts/multi-agents/agent-executor|Agent Executor]] — Google's distributed agent runtime
 - [[concepts/harness-engineering/agent-runtime|Agent Runtime]] — concept overview
 - [[concepts/managed-agents|Managed Agents]] — Google's managed agents approach
 - [[concepts/multi-agent|Multi-Agent Systems]]

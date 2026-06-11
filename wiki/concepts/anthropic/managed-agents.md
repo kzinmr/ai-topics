@@ -227,7 +227,7 @@ The sandbox runner can download and install **Anthropic Skills packages** from t
 
 **Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
 **Status:** Public Beta on Claude Platform
-**Related:** [[concepts/agent-team-swarm/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/meta-harness]]
+**Related:** [[concepts/multi-agents/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/meta-harness]]
 
 
 ## Architecture: Brain/Hands/Session Separation
@@ -290,7 +290,7 @@ Four new features of Managed Agents were released as GA/Research Preview. See [[
 
 ## Related
 
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Higher-level concept of multi-agent coordination
+- [[concepts/multi-agents/agent-team-swarm]] — Higher-level concept of multi-agent coordination
 - [[concepts/harness-engineering]] — Single-agent execution environment design
 - [[concepts/meta-harness]] — Interface-centric design philosophy
 - [[concepts/openai/symphony]] — Competitor's Agent Team orchestrator

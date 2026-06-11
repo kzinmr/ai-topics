@@ -55,7 +55,7 @@ JIT provisioning with TTL-based agent identities. Agents treated as independent 
 Real-time dashboards for agent-data interaction. Currently only **21% of enterprises** have runtime visibility into agent actions.
 
 ### IV. Interoperability
-Governance across ecosystems (Microsoft, open-source). Relies on [[concepts/model-context-protocol-mcp|MCP]] for tool connections and [[concepts/agent-team-swarm/agent-communication-protocols|A2A]] for inter-agent communication.
+Governance across ecosystems (Microsoft, open-source). Relies on [[concepts/model-context-protocol-mcp|MCP]] for tool connections and [[concepts/multi-agents/agent-communication-protocols|A2A]] for inter-agent communication.
 
 ### V. Security
 Runtime enforcement and behavioral anomaly detection — stopping agents the moment they act outside expected parameters. See: [[concepts/security-and-governance/agentic-security|Agentic Security]].

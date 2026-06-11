@@ -88,7 +88,7 @@ The A2A Technical Steering Committee now includes representatives from: Google, 
 ## Related Concepts
 
 - [[concepts/harness-engineering/agent-client-protocol]] — Agent Client Protocol (editor-to-agent communication, JSON-RPC 2.0)
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Multi-agent coordination patterns
+- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent coordination patterns
 - [[concepts/multi-agent-orchestration-patterns]] — How protocols enable different orchestration styles
-- [[concepts/agent-team-swarm/agentic-conflict-resolution]] — Protocol-level conflict detection and resolution
+- [[concepts/multi-agents/agentic-conflict-resolution]] — Protocol-level conflict detection and resolution
 - [[concepts/security-and-governance/agent-identity-verification]] — A2A AgentCard identity and sigstore signing

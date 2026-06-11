@@ -68,11 +68,11 @@ Physical AI extends [[concepts/agentic-engineering]] into the real world. The sa
 
 - An agent that "figures it out" for 6 hours is powerful in code; in a factory or vehicle, the same autonomy requires hard fail-safes
 - [[concepts/harness-engineering]] patterns become critical: how to constrain physical AI agents while allowing useful autonomy
-- [[concepts/agent-team-swarm/agent-team-swarm]] patterns apply to fleet coordination and multi-robot systems
+- [[concepts/multi-agents/agent-team-swarm]] patterns apply to fleet coordination and multi-robot systems
 
 ## Related Pages
 
 - [[applied-intuition]] — Company building Physical AI infrastructure
 - [[concepts/agentic-engineering]] — Developer patterns for autonomous agents
 - [[concepts/harness-engineering]] — Constraining and guiding agent behavior
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Multi-agent coordination (relevant for fleet management)
+- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent coordination (relevant for fleet management)

@@ -57,6 +57,6 @@ Default config uses Nemotron-3-Nano (30B) + GPT-OSS-120B. Fine-tuned weights opt
 - [[concepts/deep-research]] — The broader deep research paradigm
 - [[concepts/multi-agent]] — Multi-agent orchestration patterns
 - [[concepts/agent-substrate]] — Google's agent infrastructure for scale
-- [[concepts/agent-team-swarm/agent-executor]] — Google's distributed agent runtime
+- [[concepts/multi-agents/agent-executor]] — Google's distributed agent runtime
 - [[concepts/macro-evals-agentic-systems]] — Evaluating agent systems at scale with behavioral pattern extraction
-- [[concepts/agent-team-swarm/agent-orchestration]] — Broader orchestration patterns for multi-agent systems
+- [[concepts/multi-agents/agent-orchestration]] — Broader orchestration patterns for multi-agent systems

@@ -46,7 +46,7 @@ Tool orchestration is the architectural pattern governing how AI agents discover
 ## Related Concepts
 
 - [[concepts/agent-harness-primitives]]
-- [[concepts/agent-team-swarm/agent-communication-protocols]]
+- [[concepts/multi-agents/agent-communication-protocols]]
 - [[cli-over-mcp-pattern]]
 - [[agentic-scaffolding]]
 - [[code-mode]]

@@ -94,5 +94,5 @@ A critical distinction: not all dynamic systems achieve true span compression. S
 - [[multi-agent-orchestration-architecture]] — Architectural approaches
 - [[rlm-recursive-language-models]] — Recursive LM paradigm
 - [[concepts/harness-engineering/agent-architecture-decomposition]] — Agent architecture components
-- [[agent-swarm]] / [[concepts/agent-team-swarm/agent-team-swarm]] — Swarm and team patterns
+- [[agent-swarm]] / [[concepts/multi-agents/agent-team-swarm]] — Swarm and team patterns
 - [[reduce-offload-isolate]] — Context engineering taxonomy

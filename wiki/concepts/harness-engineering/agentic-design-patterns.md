@@ -102,7 +102,7 @@ The paper demonstrates the framework on the ReAct framework (Reasoning + Acting)
 
 - [[concepts/harness-engineering]] — Ryan Lopopolo's harness engineering thesis
 - [[concepts/agent-harness-primitives]] — Agent = Model + Harness; 6 core primitives
-- [[concepts/agent-team-swarm/agentic-workflow-patterns]] — 3 Levels of agentic architectures, 4 Core Components
+- [[concepts/multi-agents/agentic-workflow-patterns]] — 3 Levels of agentic architectures, 4 Core Components
 - [[concepts/multi-agent-orchestration-patterns]] — Multi-Agent Orchestration Patterns
 - [[concepts/context-engineering|Context Engineering]] — Context Engineering: feeding the AI information
 - [[concepts/harness-engineering/system-architecture/multi-agent-research-system]] — Anthropic's multi-agent research system

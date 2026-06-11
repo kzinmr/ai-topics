@@ -99,8 +99,8 @@ Architectural patterns for coordinating multiple AI agents to solve complex prob
 
 ## Related Concepts
 
-- [[concepts/agent-team-swarm/agent-team-swarm]] — Agent team coordination patterns
-- [[concepts/agent-team-swarm/agent-communication-protocols]] — How agents talk to each other
-- [[concepts/agent-team-swarm/agentic-conflict-resolution]] — Resolving disputes between agents
+- [[concepts/multi-agents/agent-team-swarm]] — Agent team coordination patterns
+- [[concepts/multi-agents/agent-communication-protocols]] — How agents talk to each other
+- [[concepts/multi-agents/agentic-conflict-resolution]] — Resolving disputes between agents
 - [[concepts/zero-trust-agentic-ai]] — Security for multi-agent systems
 - [[concepts/harness-engineering]] — Foundation for single-agent execution

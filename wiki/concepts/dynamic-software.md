@@ -15,7 +15,7 @@ sources:
   - raw/articles/2026-05-02_ashpreetbedi_dynamic-software.md
 related:
   - "[[concepts/agentic-engineering]]"
-  - "[[concepts/agent-team-swarm/agentic-workflow-patterns]]"
+  - "[[concepts/multi-agents/agentic-workflow-patterns]]"
   - "[[concepts/deep-agents-runtime]]"
   - "[[concepts/agentic-theory]]"
   - "[[entities/ashpreet-bedi]]"

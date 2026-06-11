@@ -141,7 +141,7 @@ Legal foundations, financial infrastructure, and practical getting-started guida
 - [[entities/jason-liu]] — Author and creator
 - [[concepts/evaluation-flywheel]] — Similar iterative improvement pattern applied to AI evaluation
 - [[concepts/ai-organization/ai-org-context-as-moat]] — Context as competitive moat aligns with the consulting positioning framework
-- [[concepts/agent-team-swarm/agentic-workflow-patterns]] — Structural patterns that complement the consulting playbook's systematization approach
+- [[concepts/multi-agents/agentic-workflow-patterns]] — Structural patterns that complement the consulting playbook's systematization approach
 
 ## TODO: Enrichment Items
 

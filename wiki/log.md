@@ -3467,10 +3467,10 @@ The article's framing offers transferable patterns for wiki management:
 
 ### Pages Updated
 - [[concepts/nvidia-ai-q]] — Added middleware & reliability section (tool sanitization, reasoning-aware retry), cross-references
-- [[concepts/agent-team-swarm/agent-executor]] — Added cross-references to sandbox-patterns and nvidia-ai-q
+- [[concepts/multi-agents/agent-executor]] — Added cross-references to sandbox-patterns and nvidia-ai-q
 - [[concepts/security-and-governance/agent-sandbox-patterns]] — Added Google Agent Sandbox GA section (300/sec provisioning, 16× growth) and Agent Substrate open-source project
 - [[concepts/ai-code-quality]] — Full rewrite from stub: Nolan Lawson quality-first approach, multi-model PR review, slop cannon debate
-- [[concepts/agent-team-swarm/agent-orchestration]] — Added DeepMind Antigravity IDE/Darwinian skills library section and Google's new agent infrastructure stack
+- [[concepts/multi-agents/agent-orchestration]] — Added DeepMind Antigravity IDE/Darwinian skills library section and Google's new agent infrastructure stack
 - [[entities/deepmind]] — Added Agents at Scale panel: Antigravity IDE, token quotas, skills library, model mixing (Gemma 4 + advanced)
 - [[entities/nolan-lawson]] — Added AI coding quality section: multi-agent review skill, slow workflow, near-zero false positives
 
@@ -4375,7 +4375,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 ### Pages Created
 - **[[entities/command-a-plus]]** — Cohere's 218B MoE model, first fully Apache 2.0 licensed. 25B active params, 48 languages, W4A4 lossless quantization. Consolidates 5 Command family models. May 2026 release.
 - **[[concepts/nemotron-labs-diffusion]]** — NVIDIA's diffusion language model family (3B/8B/14B). Block-wise attention enables non-autoregressive inference via iterative denoising. Up to 6.4× faster than AR decoding. Converted from pretrained AR checkpoints. SGLang serving.
-- **[[concepts/agent-team-swarm/agent-executor]]** — Google's open-source distributed agent runtime (May 20, 2026). Durable execution (event log + snapshotting), secure sandbox isolation, trajectory branching, connection recovery. Companion Agent Substrate project for Kubernetes.
+- **[[concepts/multi-agents/agent-executor]]** — Google's open-source distributed agent runtime (May 20, 2026). Durable execution (event log + snapshotting), secure sandbox isolation, trajectory branching, connection recovery. Companion Agent Substrate project for Kubernetes.
 - **[[entities/gemini-cli]]** — Google's open-source AI coding agent CLI. 100K+ GitHub stars, 6,000+ community PRs. Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI. Community labels it "bait and switch."
 - **[[entities/stable-audio-3]]** — Stability AI's 4-model audio generation family. Up to 6m20s tracks, Medium (1.4B) open weights. SAME autoencoder for semantic structure, no CFG for 2× speedup. Fully licensed training data (AudioSparx + Freesound).
 
@@ -7240,7 +7240,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 
 - **New entity**: [[entities/decision-lab]] — Open-source causal/Bayesian analysis tool by PyMC Labs. Garden of forking paths architecture for robust analysis. Tags: company, open-source, data-science, bayesian, ai-agents.
 - **New entity**: [[entities/decision-lens]] — Agentic dashboard for stakeholders by PyMC Labs. Natural language interaction with agentic data science outputs. Tags: company, tool, data-science, bayesian, agent-orchestration.
-- **New concept**: [[concepts/agent-team-swarm/agentic-data-science]] — Comprehensive concept page covering: definition (AI agents doing data science work), 4-layer stack (harness/runtime, skills, orchestration, observability), PI model (human as Principal Investigator, agents as grad students), Garden of Forking Paths architecture, Daemon agent (Claude Code Agent SDK in multiplayer chat), three-tier verification (programmatic, agentic, human), and escaping "vibe science." Tags: concept, data-science, ai-agents, bayesian, agent-orchestration, verification, orchestration.
+- **New concept**: [[concepts/multi-agents/agentic-data-science]] — Comprehensive concept page covering: definition (AI agents doing data science work), 4-layer stack (harness/runtime, skills, orchestration, observability), PI model (human as Principal Investigator, agents as grad students), Garden of Forking Paths architecture, Daemon agent (Claude Code Agent SDK in multiplayer chat), three-tier verification (programmatic, agentic, human), and escaping "vibe science." Tags: concept, data-science, ai-agents, bayesian, agent-orchestration, verification, orchestration.
 - **Enriched**: [[entities/thomas-wiecki]] — Added "### Daemon Agent and Decision Tools" section covering Daemon agent, Decision Lab, Decision Lens, and garden of forking paths architecture. Bumped updated to 2026-06-01. Added source: raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md.
 - **Updated**: index.md — Added entries for decision-lab, decision-lens (entities section), agentic-data-science (concepts section). Updated counts (Entities: 734, Concepts: 817, Total: 2187, Indexed: 1596).
 - **Source**: raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md
@@ -7657,7 +7657,7 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Source**: Reuters via Financial Times (syndicated on Yahoo Japan News)
 - **Raw article**: `raw/articles/2026-06-07_reuters_openai-chatgpt-intent-router.md`
 - **Details**: OpenAI plans biggest-ever ChatGPT overhaul, shifting from chatbot to "intent router." Single interface that understands user intent and routes to appropriate model/tool/app/agent. Part of product reorganization under Thibault Sottiaux ahead of IPO preparations.
-- **Cross-references**: [[entities/openai]], [[concepts/harness-engineering/agent-native-architecture]], [[entities/thibault-sottiaux]], [[concepts/agent-team-swarm/agent-orchestration]]
+- **Cross-references**: [[entities/openai]], [[concepts/harness-engineering/agent-native-architecture]], [[entities/thibault-sottiaux]], [[concepts/multi-agents/agent-orchestration]]
 - **Tags**: model-routing, ai-agents, agent-architecture, agent-orchestration, chatgpt, openai, product, conversational-ai, platform, business-model
 ---
 ## 2026-06-07 11:15:47 UTC — S&P 500 AI Company Exclusion wiki creation (cron)

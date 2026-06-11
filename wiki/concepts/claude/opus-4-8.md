@@ -82,7 +82,7 @@ The Messages API now accepts **system entries inside the messages array**. This 
 - Route updates **without going through a user turn**
 - Dynamically adjust permissions, token budgets, or environment context as an agent runs
 
-**Significance**: Previously, system prompts were fixed at session start. This change enables **dynamic agent reconfiguration** during long-running tasks — essential for [[concepts/agent-team-swarm/agent-orchestration|agent orchestration]] workflows where permissions or constraints need to change based on intermediate results.
+**Significance**: Previously, system prompts were fixed at session start. This change enables **dynamic agent reconfiguration** during long-running tasks — essential for [[concepts/multi-agents/agent-orchestration|agent orchestration]] workflows where permissions or constraints need to change based on intermediate results.
 
 ## Code Audit Benchmark vs MiniMax M3 (June 2026)
 

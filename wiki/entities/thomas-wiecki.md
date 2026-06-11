@@ -69,7 +69,7 @@ In the June 2026 Vanishing Gradients episode "The Agentic Data Science Research 
 - **[[entities/decision-lens|Decision Lens]]** — Agentic dashboard allowing non-technical stakeholders to interact with agentic data science outputs, ask what-if questions, and explore results via natural language.
 - **Garden of Forking Paths** — Architecture that tracks every analytical decision point as a branching path, runs multiple plausible analyses in parallel, and aggregates results to assess robustness. AI agents automatically identify forking points, spawn parallel analyses, and surface robustness assessments.
 
-This ecosystem embodies the [[concepts/agent-team-swarm/agentic-data-science|agentic data science]] paradigm: the 4-layer stack (harness/runtime → skills → orchestration → observability), the PI model (human as Principal Investigator, agents as grad students), and three-tier verification (programmatic, agentic, human).
+This ecosystem embodies the [[concepts/multi-agents/agentic-data-science|agentic data science]] paradigm: the 4-layer stack (harness/runtime → skills → orchestration → observability), the PI model (human as Principal Investigator, agents as grad students), and three-tier verification (programmatic, agentic, human).
 
 ## Key Philosophy
 
