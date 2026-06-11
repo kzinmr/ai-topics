@@ -60,6 +60,7 @@ Outer control, access management, and enterprise governance. These pages address
 
 ### Governance and Control
 
+- [[concepts/agent-safety-incidents-open-source]] — AI agent safety incidents in open-source communities (Fedora incident, insecure code completions)
 - [[concepts/security-and-governance/agent-control-plane]] — Agent control plane architecture
 - [[concepts/security-and-governance/agent-governance]] — Agent governance frameworks
 - [[concepts/security-and-governance/agentic-ai-governance]] — Agentic AI governance

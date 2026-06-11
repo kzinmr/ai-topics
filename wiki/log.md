@@ -10,6 +10,19 @@
 
 ---
 
+## [2026-06-11] Create: AI Agent Safety Incidents in Open-Source Communities
+
+**Action**: Created new concept page `concepts/agent-safety-incidents-open-source.md` covering the Fedora AI agent incident (June 2026), insecure AI code completions as vulnerabilities (Seth Larson / PyCharm), Sysdig LLM agent cyberattack, and broader supply chain risks from autonomous agents in open-source communities. Created raw article `raw/articles/2026-06-11_lwn_ai-agent-safety-incidents.md` synthesizing LWN articles and HN discussion (LWN 1077035 blocked as subscriber-only, LWN 1077413 fetched). Updated `index.md` and `concepts/security-and-governance/_index.md`.
+
+**Pages created**: `concepts/agent-safety-incidents-open-source.md`, `raw/articles/2026-06-11_lwn_ai-agent-safety-incidents.md`
+**Pages updated**: `index.md`, `concepts/security-and-governance/_index.md`
+
+**Sources**: https://lwn.net/Articles/1077413/ (fetched), https://lwn.net/Articles/1077035/ (403-blocked), HN discussion
+
+**Tags**: `agent-safety`, `ai-safety`, `open-source`, `security`, `supply-chain`, `community`, `vulnerability`, `ai-agents`, `prompt-injection`, `governance`, `cybersecurity`
+
+---
+
 ## [2026-06-11] Update: LLM API Pricing — Claude Fable 5 added
 
 **Action**: Added Claude Fable 5 ($10/$50 MTok) to all sections of `comparisons/llm-api-pricing.md`. New "Ultra-Premium" tier above Premium. Updated cache pricing (~$1.00/M read), cost comparison tables, Key Trends (trend #2), Changelog, Related Pages.
@@ -8263,3 +8276,21 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 
 **リンク更新**: wiki全体で534箇所のwikilinkを更新。
 
+
+## 2026-06-11 11:19 UTC — active-crawl | 3 new concept pages
+
+**Topics**: German Google AI Overviews liability ruling, Apache Burr agent framework, AI agent safety incidents
+
+### google-ai-overviews-liability
+**Action**: Created concept page `concepts/google-ai-overviews-liability.md` covering the landmark German court ruling (June 10, 2026) that Google's AI Overviews constitute Google's "own words" under German press law, making the company liable for false/hallucinated content. Key implications for AI platform liability, Section 230 debate, and EU AI Act. Sourced from The Decoder, Gary Marcus substack, and HN discussion (982 points). Raw article: `raw/articles/2026-06-10_the-decoder_german-google-ai-overviews-liability.md`.
+
+### apache-burr-agent-framework
+**Action**: Created concept page `concepts/apache-burr-agent-framework.md` covering Apache Burr (Incubating), a pure-Python state-machine-based agent framework built on Hamilton/DagWorks. Supports simple chatbots to complex multi-agent systems. GitHub: 2,256 stars, Apache 2.0 license. Includes comparison table with LangGraph, CrewAI, and AutoGen. Tags added to SCHEMA.md: `apache`, `dagworks`. Raw article: `raw/articles/2026-06-10_apache_burr-agent-framework.md`.
+
+### agent-safety-incidents-open-source
+**Action**: Created concept page `concepts/agent-safety-incidents-open-source.md` covering the Fedora AI agent incident (June 2026), insecure AI code completions as vulnerabilities (Seth Larson / PyCharm), Sysdig LLM agent cyberattack (May 2026), and broader supply chain risks from autonomous agents in open-source communities. Raw article: `raw/articles/2026-06-11_lwn_ai-agent-safety-incidents.md`.
+
+**Sources**: HN Algolia trending analysis, xurl X/Twitter search, wiki gap analysis via blogwatcher DB + fs scan. Coverage gaps identified: agent-frameworks (PARTIAL), inference-infra (PARTIAL).
+
+**Pages created**: `concepts/google-ai-overviews-liability.md`, `concepts/apache-burr-agent-framework.md`, `concepts/agent-safety-incidents-open-source.md`
+**Raw articles**: `raw/articles/2026-06-10_the-decoder_german-google-ai-overviews-liability.md`, `raw/articles/2026-06-10_apache_burr-agent-framework.md`, `raw/articles/2026-06-11_lwn_ai-agent-safety-incidents.md`

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-11 | Total pages: 2452 | Indexed entries: 1987 | Concepts: 1066 | Entities: 781
+> Last updated: 2026-06-11 | Total pages: 2455 | Indexed entries: 1987 | Concepts: 1069 | Entities: 781
 
 ## Entities (781 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -801,7 +801,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1062 pages)
+## Concepts (1065 pages)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/abliteration]] — Abliteration: Mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. 3,500+ decensored models, 13M downloads. Automated by Heretic tool. Affects Llama, Gemma, Nemotron.
@@ -858,6 +858,7 @@
 - [[concepts/harness-engineering/agent-patterns]] — General design patterns and implementation practices for AI agents
 - [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects — Impact of AI coding agents on personal productivity and attention. David Wilson's "thermonuclear ADHD amplifier" metaphor. Project proliferation syndrome (agents lowering activation energy from idea to working project). HN ADH
 - [[concepts/harness-engineering/agent-runtime|Agent Runtime]] — The execution environment for AI agents: compute, filesystem, tools, network, state, and lifecycle.
+- [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities — The Fedora AI agent incident (June 2026), insecure AI code completions as vulnerabilities, and supply chain risks from autonomous agents in open source.
 - [[concepts/security-and-governance/agent-sandbox-patterns]] — Agent Sandboxing architectural patterns. Browser Use's Pattern 1 (tool) vs Pattern 2 (agent). Google Agent Sandbox GA: 300 sandboxes/sec, 16x growth. Agent Substrate: new open-source project for millions of idle agents.
 - [[concepts/security-and-governance/agent-sandboxing]] — Agent Sandboxing: Isolation Technologies — Docker, gVisor, Firecracker, WASM (Deno+Pyodide), capability-based security spectrum
 - [[concepts/security-and-governance/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
@@ -1074,6 +1075,7 @@
 - [[concepts/anti-patterns-in-agentic-engineering]] — Anti-patterns in Agentic Engineering
 - [[concepts/anti-sycophancy]] — Anti-Sycophancy
 - [[concepts/antoine-chaffin]] — antoine-chaffin
+- [[concepts/apache-burr-agent-framework]] — Apache Burr: Agent Framework for Reliable AI Applications — Apache-incubated pure Python framework for building decision-making AI agents and multi-agent systems. Built on Hamilton (DagWorks). GitHub: 2,256 stars. Apache 2.0 license.
 - [[concepts/apache-solr]] — Apache Solr
 - [[concepts/apple]] — Apple's unique AI philosophy: $14B Capex ($670B competitors), non-AI CEO succession (John Ternus), Siri open to third-party AI. Pascal's Wager framework. WWDC 2026: AFM 3rd-gen models, custom Gemini model for Siri AI, PCC on Google Cloud with NVIDIA GPUs, Core AI library with PyTorch integration.
 - [[concepts/apple-foundation-models]] — Apple Foundation Models (AFM 3): 5-model family (3rd gen, June 2026). On-device: AFM 3 Core (3B dense), AFM 3 Core Advanced (20B sparse, IFP architecture). Server: AFM 3 Cloud, ADM 3 Cloud, AFM 3 Cloud Pro (NVIDIA GPUs on Google Cloud PCC). Built with Google.
@@ -1397,6 +1399,7 @@
 - [[concepts/google-photo-scanning-ai]] — Google Photo Scanning AI
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 - [[concepts/google-spacex-ai-compute-deal|Google-SpaceX AI Compute Deal ($920M/month)]] — June 2026 deal for $920M/month AI compute capacity.
+- [[concepts/google-ai-overviews-liability]] — German Court Rules Google Liable for AI Overview Hallucinations — Landmark June 2026 ruling holding Google liable for false AI-generated answers in search overviews.
 - [[concepts/gpt/_archive/2026-04-24-ainews]] — 2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp
 - [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3
 - [[concepts/gpt/chatgpt-app-design-patterns]] — ChatGPT App Design Patterns — UX patterns for great ChatGPT apps: streaming, tool use visualization, error handling. 15 practical lessons from Alpic. GPT-5.4 frontend design with canvas.
