@@ -21,6 +21,15 @@
 
 ---
 
+## [2026-06-11] OpenAI Deep Research (o3) の browser-agent 文脈での補足
+
+**Action**: `concepts/browser-agent/death-of-browser.md` に OpenAI Deep Research の o3 ベースのアーキテクチャを追加。技術アプローチ分類に「Agentic Browsing Loop (Research-First)」を新設。比較マトリックスに Deep Research を追加。関連概念に Deep Research System Card へのリンクを追加。
+
+**更新ページ**:
+- `concepts/browser-agent/death-of-browser.md` — 5つ目の技術アプローチとして追加、Key Player Map の OpenAI 行を更新、比較マトリックスに追加、関連概念にリンク追加
+
+---
+
 ## [2026-06-11] MCP-RL Course 講義内容の詳細サマリー展開と概念ページ分解
 
 **Action**: agents-mcp-rl-course.md の Lesson 1-6 + Office Hours の講義内容を詳細に分析し、コースページの Detailed Technical Notes セクションを追加。論点ごとに4つの新規概念ページを作成し、既存2ページを充実させた。

@@ -7,7 +7,7 @@ aliases:
   - ai-native-browser
   - browser-agent-trends
 created: 2026-04-13
-updated: 2026-05-26
+updated: 2026-06-11
 tags:
   - concept
   - methodology
@@ -44,7 +44,7 @@ Human operates →   AI assists    →   AI acts on behalf
 | Player | Product | Approach | Status |
 ||---|---|---|---|
 | **Anthropic** | Computer Use | Screenshot + Vision | Significantly improved with Claude Sonnet 4.6 |
-| **OpenAI** | CUA / Operator | Screenshot + RL | Integrated into ChatGPT agent |
+| **OpenAI** | CUA / Operator, Deep Research | Screenshot + RL, Agentic browsing (o3) | Integrated into ChatGPT agent; Deep Research: fine-tuned o3 for autonomous web research |
 | **Google** | WebMCP (Chrome) | Structured API standard | Early preview in Chrome 146 |
 | **Microsoft** | WebMCP (Edge) | Structured API standard | W3C joint development |
 | **Perplexity** | Comet | Search-integrated AI browser | 4 platforms supported |
@@ -118,6 +118,23 @@ Task → DOM first → Vision fallback → Structured API (if available)
 > "The future of browser agents lies not in vision or structure alone, but in orchestrating both intelligently."
 > — InfoWorld, November 2025
 
+### 5. Agentic Browsing Loop (Research-First)
+**Representative: OpenAI Deep Research (fine-tuned o3)**
+
+```
+Research question → Reason about search strategy → Browse web (text, PDF, images) →
+Take notes → Iterate search-browse-synthesize cycles → Produce comprehensive report
+```
+
+| Pros | Cons |
+|---|---|
+| Autonomous multi-source synthesis | Long execution time (dozens of minutes) |
+| Citation-rich output | High compute cost |
+| Handles complex research tasks | Limited to public web content |
+| No reliance on parametric knowledge alone | Requires fine-tuned model (o3) |
+
+**Key insight**: Deep Research represents a distinct browser agent pattern — not focused on UI interaction or transaction execution, but on **autonomous information gathering and synthesis**. The model decides what to search, browses autonomously, and produces comprehensive reports. This "research-first" approach complements the "action-first" patterns of Operator/Computer Use.
+
 ## Key Trends (2026)
 
 ### 1. Browser Agent Standardization
@@ -156,6 +173,7 @@ Task → DOM first → Vision fallback → Structured API (if available)
 | Stagehand | Natural language commands | N/A | N/A | Inspector | OSS |
 | Manus | Hybrid | N/A | N/A | Local auth | Proprietary |
 | Comet | Search-integrated | N/A | N/A | CometJacking fix | Proprietary |
+| Deep Research | Agentic browsing loop | N/A | N/A | Sandboxed browsing | Proprietary |
 
 ## Market Projections
 
@@ -191,6 +209,7 @@ Task → DOM first → Vision fallback → Structured API (if available)
 - [[concepts/agent-driven-development]] — Software development using agents
 - [[concepts/managed-agent-architecture]] — Managed agent architecture
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol
+- [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): fine-tuned o3 for autonomous web research
 
 ## Related Entities
 
