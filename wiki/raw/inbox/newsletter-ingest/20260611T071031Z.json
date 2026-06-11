@@ -1,0 +1,91 @@
+{
+  "run_id": "20260611T071031Z",
+  "triaged_at": "2026-06-11T07:20:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 4,
+  "summary": {
+    "critical": 2,
+    "high": 1,
+    "low": 1
+  },
+  "key_themes": [
+    "Latent Space AINews: Open Models ecosystem, Model Labs vs Agent Labs distinction, Sarah Guo on what's untrainable (industry structure analysis)",
+    "Anthropic Claude Fable 5 / Mythos continued coverage (beehiiv newsletter)",
+    "The Signal: AI job displacement analysis (Alex Banks)"
+  ],
+  "results": [
+    {
+      "uid": "uid=214",
+      "subject": "[AINews] Open Models, Model Labs vs Agent Labs, and What's Untrainable — Sarah Guo",
+      "date": "2026-06-11",
+      "classification": "critical",
+      "reason": "Latent Space (swyx) AINews covering three fundamental AI industry topics: (1) open models ecosystem evolution, (2) the structural distinction between Model Labs and Agent Labs, and (3) Sarah Guo's perspective on what aspects of AI are untrainable. Sarah Guo is founder of Conviction, a leading AI-focused VC. Latent Space is one of the most important AI engineering newsletters. The Model Labs vs Agent Labs framing is a key industry structural insight for the wiki.",
+      "source": "Latent Space / swyx (substack, publication_id=1084089)",
+      "resolved_url": "https://www.latent.space/p/ainews-open-models-model-labs-vs",
+      "wiki_targets": [
+        "concepts/open-models.md",
+        "entities/sarah-guo.md",
+        "concepts/model-labs-vs-agent-labs.md",
+        "entities/swyx.md",
+        "concepts/ai-training-limitations.md"
+      ],
+      "tags": ["open-models", "agent-labs", "model-labs", "sarah-guo", "latent-space", "swyx", "industry-structure", "trainability"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md",
+      "article_count": 20,
+      "ingest_action": "scrape_article_and_create_pages",
+      "priority": 1
+    },
+    {
+      "uid": "uid=213",
+      "subject": "🔥 Anthropic's Claude Fable 5 changes everything!",
+      "date": "2026-06-10",
+      "classification": "critical",
+      "reason": "Continuing coverage of Anthropic's Claude Fable 5 / Mythos model. Previous day's triage (20260610T071540Z) already flagged 3 newsletters about Claude Fable 5 as critical. This appears to be a fourth newsletter covering the same model release, likely from a different angle or with additional analysis. Beehiiv tracking links prevent direct URL resolution — all 20 links are beehiiv tracking redirects.",
+      "source": "Unknown beehiiv newsletter (tracking links only, unable to resolve source publication)",
+      "wiki_targets": [
+        "entities/anthropic.md",
+        "concepts/claude-models.md",
+        "events/claude-fable-5-release.md"
+      ],
+      "tags": ["anthropic", "claude", "fable-5", "mythos", "model-release"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-10-anthropic-s-claude-fable-5-changes-everything.md",
+      "article_count": 20,
+      "ingest_action": "manual_review_beehiiv_links_unresolvable",
+      "ingest_note": "All 20 links are beehiiv tracking redirects that could not be resolved via curl (Cloudflare protection). Content could not be scraped. Consider adding this beehiiv sender to the known sources list for future tracking.",
+      "priority": 2
+    },
+    {
+      "uid": "uid=211",
+      "subject": "Where AI is really taking jobs",
+      "date": "2026-06-10",
+      "classification": "high",
+      "reason": "The Signal (Alex Banks) analysis of where AI is actually displacing jobs. Description: 'Stop guessing whether yours is next.' Relevant for AI's real-world economic impact — a recurring wiki topic covering workforce disruption, AI automation effects, and the gap between AI hype and actual job displacement patterns.",
+      "source": "The Signal / Alex Banks (substack, publication_id=293154)",
+      "resolved_url": "https://thesignal.substack.com/p/where-ai-is-really-taking-jobs",
+      "wiki_targets": [
+        "concepts/ai-employment-impact.md",
+        "concepts/ai-automation.md"
+      ],
+      "tags": ["ai-employment", "job-displacement", "automation", "economic-impact", "workforce"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-10-where-ai-is-really-taking-jobs.md",
+      "article_count": 20,
+      "ingest_action": "scrape_article",
+      "priority": 3
+    },
+    {
+      "uid": "uid=212",
+      "subject": "5 Career Questions Your Old Playbook Can't Answer",
+      "date": "2026-06-10",
+      "classification": "low",
+      "reason": "The Skip (theskip.substack.com, publication_id=92860) — career advice podcast content. Not directly relevant to AI/LLM/Agent wiki scope. Generic career coaching material without specific AI technology focus.",
+      "source": "The Skip (substack)",
+      "resolved_url": "https://theskip.substack.com/p/5-career-questions-your-old-playbook",
+      "wiki_targets": [],
+      "tags": ["career-advice", "podcast", "not-ai-focused"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-10-5-career-questions-your-old-playbook-can-t-answer.md",
+      "article_count": 20,
+      "ingest_action": "skip",
+      "priority": 4
+    }
+  ]
+}

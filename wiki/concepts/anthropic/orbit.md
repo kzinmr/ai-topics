@@ -34,7 +34,7 @@ The March 31, 2026 Claude Code source leak revealed four unreleased feature flag
 
 ## Related
 - [[entities/anthropic]] — Anthropic company page
-- [[concepts/claude-code]] — Claude Code (source of leaked capabilities)
+- [[concepts/claude-code/claude-code]] — Claude Code (source of leaked capabilities)
 - [[concepts/claude-cowork]] — Claude Cowork (host product)
 - [[concepts/autonomous-agents]] — Autonomous agent landscape
 - [[concepts/proactive-ai]] — Proactive AI assistants

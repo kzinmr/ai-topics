@@ -38,7 +38,7 @@ Writes cross-disciplinary analysis on AI and society at [chrishayduk.com](https:
 
 ### AI Agent / Loop Commentary
 
-Active in the AI agent and agentic coding community. Posts on X about agent loops, OpenAI's [[concepts/codex-goal|/goal]] command, and [[concepts/harness-engineering/agentic-loop|agentic architecture]].
+Active in the AI agent and agentic coding community. Posts on X about agent loops, OpenAI's [[concepts/codex/codex-goal|/goal]] command, and [[concepts/harness-engineering/agentic-loop|agentic architecture]].
 
 ## Academic Background
 
@@ -58,5 +58,5 @@ Active in the AI agent and agentic coding community. Posts on X about agent loop
 ## Related Concepts
 
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern he writes about
-- [[concepts/codex-goal]] — Codex /goal command (Ralph loop)
+- [[concepts/codex/codex-goal]] — Codex /goal command (Ralph loop)
 - [[concepts/karpathy-loop]] — Karpathy's Autoresearch

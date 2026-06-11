@@ -87,7 +87,7 @@ Local LLM refers to the practice of running large language models on personal ha
 - [[entities/gguf]] — Quantization format enabling consumer hardware inference
 - [[entities/georgi-gerganov]] — llama.cpp creator
 - [[entities/nous-research]] — Open-weight model developers
-- [[concepts/claude-code-leak]] — Open-source model transparency vs proprietary
+- [[concepts/claude-code/claude-code-leak]] — Open-source model transparency vs proprietary
 - [[concepts/project-glasswing]] — Privacy considerations in AI deployment
 - [[entities/anthropic]] — Anthropic's stance on model transparency
 - [[entities/openai-spud]] — OpenAI hardware integration plans

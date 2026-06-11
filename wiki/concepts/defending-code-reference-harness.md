@@ -115,7 +115,7 @@ Models tend to write overly restrictive patches; minimal, root-cause fixes are p
 ## Related Concepts
 
 - [[concepts/security-and-governance/agent-sandboxing]] — Sandbox isolation patterns for AI agents
-- [[concepts/claude-code]] — Claude Code, the coding agent platform that runs these skills
+- [[concepts/claude-code/claude-code]] — Claude Code, the coding agent platform that runs these skills
 - [[concepts/threat-modeling]] — Threat modeling in AI/security contexts
 - [[entities/anthropic]] — Anthropic, the company behind this harness
 - [[entities/eugene-yan]] — Eugene Yan, co-author of the blog post and harness

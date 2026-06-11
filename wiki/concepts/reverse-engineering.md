@@ -66,7 +66,7 @@ Reverse engineering has two sides in AI security:
 ## Related Concepts
 
 - [[concepts/monty-sandbox]] — Sandbox security model
-- [[concepts/claude-code-best-practices]] — Secure code execution
+- [[concepts/claude-code/claude-code-best-practices]] — Secure code execution
 - [[concepts/agent-loop-orchestration]] — Agent security
 
 ## Sources

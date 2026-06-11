@@ -826,7 +826,7 @@ Batch of 11 new posts from X accounts scan (accounts_scanned=12, substantive_can
 
 **Lance Martin (2 posts — Claude Opus 4.8 tips):**
 - Enriched: [[entities/lance-martin]] — Opus 4.8 Tips section (mid-conversation system messages, long-horizon patterns, tool triggering) (152→193 lines)
-- Enriched: [[concepts/claude-code-tips]] — Opus 4.8 Techniques section (126→183 lines)
+- Enriched: [[concepts/claude-code/claude-code-tips]] — Opus 4.8 Techniques section (126→183 lines)
 - Sources: [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]], [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]]
 
 **Skipped (non-AI):**
@@ -841,7 +841,7 @@ Wiki pages: +4 concepts (polars-hf, uv-scripts-for-ai, defending-code-reference-
   - [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]] — Mid-conversation system messages: add/update system instructions without breaking prompt cache. Opus 4.8 only.
   - [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]] — Prompting best practices for Opus 4.8: effort parameter tuning, adaptive thinking, tool use triggering, literal instruction following.
 - **Enriched**: [[entities/lance-martin]] — Added "Claude Opus 4.8 Tips (May 2026)" section with three subsections: (1) Mid-Conversation System Messages Without Breaking Prompt Cache, (2) Long-Horizon Work: Pair Opus 4.8 with Outcomes or /goal, (3) Explicit Triggering Guidance for Custom Tools and Sub-Agents. Updated frontmatter: +3 tags (claude-opus, prompt-engineering, coding-agents), +2 sources, bumped date to 2026-06-07. File grew from 152 to ~191 lines.
-- **Enriched**: [[concepts/claude-code-tips]] — Added "Claude Opus 4.8 Techniques (Lance Martin Tips)" section with four subsections: (1) Mid-Conversation System Messages, (2) Long-Horizon Agent Patterns (technique/recommendation table), (3) Tool Use and Sub-Agent Triggering, (4) Effort Level Quick Reference table. Updated frontmatter: +3 tags, +2 sources, +2 related pages, bumped date. File grew from 126 to ~188 lines.
+- **Enriched**: [[concepts/claude-code/claude-code-tips]] — Added "Claude Opus 4.8 Techniques (Lance Martin Tips)" section with four subsections: (1) Mid-Conversation System Messages, (2) Long-Horizon Agent Patterns (technique/recommendation table), (3) Tool Use and Sub-Agent Triggering, (4) Effort Level Quick Reference table. Updated frontmatter: +3 tags, +2 sources, +2 related pages, bumped date. File grew from 126 to ~188 lines.
 - **Updated**: index.md — Enriched lance-martin and claude-code-tips descriptions. Added 2 raw article entries. Updated header: 9245→9248 total pages.
 - **Sources**: X accounts scan → Lance Martin posts about Opus 4.8 tips; scraped platform.claude.com/docs for mid-conversation-system-messages and prompting-best-practices.
 
@@ -1211,7 +1211,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 
 **Sources:** 4 X Article bookmarks ingested (2026-06-03). All had full plain_text content via xurl bookmark fetch.
 
-**Bookmark 1 — Claude Code feedback loops (Anthropic):** Added "Self-Verification & Feedback Loops" section to [[entities/claude-code]]. Documented two-layer verification architecture (agentic loop + pre-merge second-agent review), skill composition pattern (/simplify + /verify + design check + PR + CI watch), frontend-verify example. Enriched [[concepts/claude-code-skills]] Composing Skills section with production team workflow example.
+**Bookmark 1 — Claude Code feedback loops (Anthropic):** Added "Self-Verification & Feedback Loops" section to [[entities/claude-code]]. Documented two-layer verification architecture (agentic loop + pre-merge second-agent review), skill composition pattern (/simplify + /verify + design check + PR + CI watch), frontend-verify example. Enriched [[concepts/claude-code/claude-code-skills]] Composing Skills section with production team workflow example.
 
 **Bookmark 2 — Solo AI Agency / Kimi 2.6 (anonymous):** Case study of $40k MRR agency running entirely on Kimi 2.6 at ~$240/month inference. Added "Production Economics" section to [[entities/kimi]] covering economics, 3-tier model stack, Agent Swarm in production. Enriched [[concepts/model-routing]] with solo agency routing pattern (cost-of-failure heuristic). Added "Solo AI Agency Economics" to [[concepts/token-economics]].
 
@@ -2976,7 +2976,7 @@ All 15 remaining files with CJK characters contain only:
 
 ### Pages Enriched
 - **[[entities/openai-codex]]** — Added "Codex as a Knowledge Work Platform" section: Delegate vs Collaborate modes, Goals vs Skills distinction, "three prompts" heuristic, five levels of Codex use structure, knowledge work day-in-the-life vision.
-- **[[concepts/codex-goal]]** — Added Goals vs Skills distinction and "three prompts in a row" heuristic from Every guide.
+- **[[concepts/codex/codex-goal]]** — Added Goals vs Skills distinction and "three prompts in a row" heuristic from Every guide.
 
 ### Wiki Management Takeaways
 The article's framing offers transferable patterns for wiki management:
@@ -5000,7 +5000,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **Source**: https://x.com/jxnlco/status/2057153744630890620 (X Article, published 2026-05-20)
 - **Raw article saved**: `raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md`
 - **Updated entity**: [[entities/jason-liu]] — Added "Getting the Most Out of Codex (May 2026)" section with capability catalog table (durable threads, voice input, steering, queuing, $browser/@chrome/@computer, MCP+Connectors, Skills, mobile, thread automations, Goals, side panel, shared memory). Added human-in-the-loop architectural insight. New tags: agent-harness, workflow, human-in-the-loop.
-- **Updated entity**: [[entities/openai-codex]] — Added comprehensive "Codex App: Human-in-the-Loop Capabilities" section (64 lines) covering: Control model (Steering/Queuing/Voice input), Reach layers ($browser/@chrome/@computer tool hierarchy + MCP + Skills), Long-running execution and autonomy (Durable threads/Thread automations/Goals), Side panels (4 roles + effective surfaces), Shared memory (Obsidian vault + AGENTS.md + Codex Memories + Chronicle), Mobile (Work from Anywhere). New tags: human-in-the-loop, workflow, voice-ai. Added [[entities/jason-liu]] and [[concepts/codex-goal]] to Related Topics.
+- **Updated entity**: [[entities/openai-codex]] — Added comprehensive "Codex App: Human-in-the-Loop Capabilities" section (64 lines) covering: Control model (Steering/Queuing/Voice input), Reach layers ($browser/@chrome/@computer tool hierarchy + MCP + Skills), Long-running execution and autonomy (Durable threads/Thread automations/Goals), Side panels (4 roles + effective surfaces), Shared memory (Obsidian vault + AGENTS.md + Codex Memories + Chronicle), Mobile (Work from Anywhere). New tags: human-in-the-loop, workflow, voice-ai. Added [[entities/jason-liu]] and [[concepts/codex/codex-goal]] to Related Topics.
 - **Index updated**: Updated descriptions for [[entities/jason-liu]] and [[entities/openai-codex]] with new capabilities.
 
 ---
@@ -7244,7 +7244,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 ## [2026-06-01] the-signal-ingest | Anthropic Series H, Claude Code Dynamic Workflows, Figure Catalyst Brands
 
 - **Enriched**: [[entities/anthropic]] — Added "### Series H — Expanded Detail" section with new co-lead investors (Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, XN), strategic partners (Micron, Samsung, SK hynix), compute commitments (Amazon up to 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus access). Bumped updated date to 2026-06-01. Added source: raw/articles/2026-05-28_anthropic-series-h-65b.md
-- **Enriched**: [[concepts/claude-code]] — Added "### Dynamic Workflows (May 2026)" section after "## The Infrastructure Layer" explaining Claude Code's hundreds of parallel subagents per session for codebase-scale migrations. Bumped updated date to 2026-06-01. Added source: raw/articles/2026-05-28_anthropic-claude-code-dynamic-workflows.md
+- **Enriched**: [[concepts/claude-code/claude-code]] — Added "### Dynamic Workflows (May 2026)" section after "## The Infrastructure Layer" explaining Claude Code's hundreds of parallel subagents per session for codebase-scale migrations. Bumped updated date to 2026-06-01. Added source: raw/articles/2026-05-28_anthropic-claude-code-dynamic-workflows.md
 - **Enriched**: [[entities/figure-ai]] — Added "### Commercial Agreement with Catalyst Brands (May 2026)" section: Catalyst Brands operates JCPenney, Aéropostale, Brooks Brothers; Reno, Nevada deployment; first commercial bridge between Figure and Brookfield portfolio company with Brookfield as shared investor. Bumped updated date to 2026-06-01. Added source referencing raw newsletter.
 - **Updated**: index.md — Enhanced entries for entities/anthropic, entities/figure-ai, and concepts/claude-code with expanded descriptions reflecting new content.
 - **Source**: The Signal newsletter (Alex Banks, 2026-05-31)

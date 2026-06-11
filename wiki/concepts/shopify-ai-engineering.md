@@ -52,7 +52,7 @@ Shopify's AI tool adoption has been aggressive and early:
 | **2021** | GitHub Copilot | First company outside GitHub to deploy Copilot — negotiated via direct email to GitHub's CEO, got 2 years free in exchange for feedback |
 | **2022** | ChatGPT release | Continued Copilot expansion |
 | **~2024** | Cursor | Deployed company-wide; notable that Cursor growth happened *outside* engineering — finance, sales, support teams using it for [[vibe-coding]] MCP servers |
-| **2025** | Claude Code | Primary coding agent; [[concepts/claude-code|6 operational patterns]] emerged |
+| **2025** | Claude Code | Primary coding agent; [[concepts/claude-code/claude-code|6 operational patterns]] emerged |
 | **2025** | Devin, Gumloop | Experimental adoption, evaluating next-generation tools |
 | **Nov 2024 – May 2025** | "Code Red" | 7-month tech debt elimination sprint (30-50% of engineering) |
 | **Apr 2026** | Shopify MCP server | Open-sourced MCP server connecting Claude Code to Shopify APIs |
@@ -180,7 +180,7 @@ Shopify's engineers deploy Claude Code in two complementary modes:
 
 **Extended critique loops** — for complex architectural decisions, a single agent runs through propose→critique→revise→critique→finalize cycles, forcing Claude to argue with itself. This produces dramatically better results than single-pass prompting.
 
-Both patterns are documented in detail at [[concepts/claude-code]].
+Both patterns are documented in detail at [[concepts/claude-code/claude-code]].
 
 ## Safe Autonomy with Guardrails
 
@@ -216,7 +216,7 @@ Shopify's AI-first culture is driven by several reinforcing practices:
 
 ## See Also
 
-- [[concepts/claude-code]] — Claude Code as a coding agent: patterns and guardrails
+- [[concepts/claude-code/claude-code]] — Claude Code as a coding agent: patterns and guardrails
 - [[entities/shopify]] — Shopify entity overview
 - [[entities/claude-code]] — Claude Code entity overview
 - [[entities/farhan-thawar]] — Farhan Thawar (VP Engineering, Shopify)

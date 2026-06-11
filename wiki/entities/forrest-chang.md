@@ -24,6 +24,6 @@ The repo hit 5,828 stars in its first day, 60,000 bookmarks in two weeks, and 12
 
 ## Related
 
-- [[concepts/claude-md-rules]] — The CLAUDE.md behavioral guidelines
+- [[concepts/claude-code/claude-md-rules]] — The CLAUDE.md behavioral guidelines
 - [[entities/andrej-karpathy]] — Originator of the observations
 - [[entities/claude-code]] — Claude Code

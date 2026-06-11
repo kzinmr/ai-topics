@@ -42,7 +42,7 @@ Daniel Dines stated: *"The emergence of coding agents signals a fundamental shif
 - Enables non-technical users (business analysts, process owners, domain experts) to create automations through natural language conversation with coding agents
 - Removes manual handoffs between coding agent output and enterprise deployment pipelines
 - Automations continue running when models are replaced or developers move on
-- Initial support for [[concepts/claude-code]] and [[concepts/codex]], with more integrations planned for 2026
+- Initial support for [[concepts/claude-code/claude-code]] and [[concepts/codex]], with more integrations planned for 2026
 
 ## Market Position
 
@@ -55,5 +55,5 @@ This is distinct from developer-focused coding agent platforms like [[entities/c
 - [[concepts/orchestration]] — Core UiPath capability
 - [[concepts/enterprise-agents]] — Target market segment
 - [[entities/coder]] — Competing self-hosted agent platform
-- [[concepts/claude-code]] — Supported coding agent on UiPath platform
+- [[concepts/claude-code/claude-code]] — Supported coding agent on UiPath platform
 - [[concepts/codex]] — Supported coding agent on UiPath platform

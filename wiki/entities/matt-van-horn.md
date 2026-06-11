@@ -30,7 +30,7 @@ related:
   - "[[concepts/compound-engineering-every]]"
   - "[[entities/every-inc]]"
   - "[[entities/tobi-lutke]]"
-  - "[[concepts/claude-code-goal]]"
+  - "[[concepts/claude-code/claude-code-goal]]"
 ---
 
 # Matt Van Horn

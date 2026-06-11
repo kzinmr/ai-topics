@@ -57,6 +57,6 @@ This aligns with a broader pattern: **the model is better at structuring instruc
 
 ## Related Concepts
 
-- [[concepts/openai/codex-superapp]] — Codex as primary ChatGPT interface
+- [[concepts/codex/codex-superapp]] — Codex as primary ChatGPT interface
 - [[comparisons/agent-harnesses]] — Comparison of Codex with other agent harnesses
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Where /goal fits in the coding spectrum

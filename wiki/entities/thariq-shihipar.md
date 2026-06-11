@@ -140,7 +140,7 @@ A comprehensive 1h53m workshop that became one of the most-viewed technical tuto
 
 A viral article (16K+ likes, 6.8M+ views on X) detailing the **9 role patterns** of Skills and the mechanism design principles:
 
-- [[concepts/claude-code-skills]] — Mechanism (folder structure, Progressive Disclosure, Hooks, memory persistence) structured into 9 role patterns
+- [[concepts/claude-code/claude-code-skills]] — Mechanism (folder structure, Progressive Disclosure, Hooks, memory persistence) structured into 9 role patterns
 - 9 real-world application scenarios for Skills
 - High-level design principles for modular AI capabilities
 - Common pitfalls and how to avoid them

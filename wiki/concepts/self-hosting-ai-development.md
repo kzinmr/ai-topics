@@ -72,6 +72,6 @@ Storage:       40GB SSD + optional 400GB volume (€5/mo)
 ## Related Pages
 
 - [[concepts/vibe-coding]] — AI-generated application development
-- [[concepts/claude-code-tips]] — Claude Code setup guide (Docker-based)
+- [[concepts/claude-code/claude-code-tips]] — Claude Code setup guide (Docker-based)
 - [[concepts/harness-engineering/agentic-engineering]] — Agentic engineering practices
 - [[entities/xeiaso-net]] — Xe Iaso's perspective on small internet and self-hosting

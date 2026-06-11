@@ -53,6 +53,6 @@ Hub page for [[entities/anthropic|Anthropic]]'s Claude model family. All model-s
 ## See Also
 
 - [[entities/anthropic]] — Anthropic entity page
-- [[concepts/claude-code]] — Claude Code (coding agent, separate product)
+- [[concepts/claude-code/claude-code]] — Claude Code (coding agent, separate product)
 - [[concepts/claude/design-entity]] — Claude Design (visual design product)
 - [[concepts/anthropic/orbit]] — Claude Orbit (proactive assistant)

@@ -20,7 +20,7 @@ sources:
 
 **Origin**: Dan Shipper (co-authored with Claude), [[entities/every-inc|Every]], January 2026
 
-Agent-Native Architecture is a software design philosophy where **agents are first-class citizens** rather than afterthoughts. The same architecture that powers coding agents (like [[claude-code]]) can be applied to any domain — email management, file organization, content creation, and more.
+Agent-Native Architecture is a software design philosophy where **agents are first-class citizens** rather than afterthoughts. The same architecture that powers coding agents (like [[concepts/claude-code/claude-code]]) can be applied to any domain — email management, file organization, content creation, and more.
 
 ## Core Thesis
 
@@ -109,7 +109,7 @@ Ensuring agents can Create, Read, Update, and Delete all domain entities — not
 
 - **[[concepts/folder-is-the-agent|Folder Is the Agent]]** — The filesystem IS the agent's context layer, implementing all five principles
 - **[[concepts/compound-engineering-every|Compound Engineering]]** — The iterative improvement loop that makes agent-native apps better over time
-- **[[claude-code]]** — The proof-of-concept that coding agents can be general-purpose agents
+- **[[concepts/claude-code/claude-code]]** — The proof-of-concept that coding agents can be general-purpose agents
 - **[[openclaw]]** — The hosted implementation of agent-native architecture
 
 ## Industry Impact
@@ -125,5 +125,5 @@ This philosophy underpins:
 - [[entities/dan-shipper]] — Philosophy author
 - [[concepts/folder-is-the-agent]] — Implementation pattern
 - [[concepts/compound-engineering-every]] — Iterative improvement methodology
-- [[claude-code]] — Proof-of-concept coding agent
+- [[concepts/claude-code/claude-code]] — Proof-of-concept coding agent
 - [[openclaw]] — Hosted agent platform

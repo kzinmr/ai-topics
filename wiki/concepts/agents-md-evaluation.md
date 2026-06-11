@@ -6,7 +6,7 @@ type: concept
 tags: [coding-agents, context-engineering, evaluation, benchmark, swere-bench, agents-md]
 aliases: ["AGENTS.md evaluation", "Evaluating AGENTS.md paper", "AGENTBENCH"]
 sources: [raw/articles/2026-06-07_karpathy-do-agents-md-help.md, https://arxiv.org/abs/2602.11988]
-related: [[concepts/claude-md-rules]], [[concepts/context-engineering|Context Engineering]], [[concepts/agent-skills]], [[entities/andrej-karpathy]]
+related: [[concepts/claude-code/claude-md-rules]], [[concepts/context-engineering|Context Engineering]], [[concepts/agent-skills]], [[entities/andrej-karpathy]]
 ---
 
 # AGENTS.md Evaluation — Do Context Files Help Coding Agents?
@@ -56,7 +56,7 @@ This implies a **two-axis model** for context files:
 
 ## Comparison: CLAUDE.md Rules vs AGENTS.md Evaluation
 
-| Aspect | [[concepts/claude-md-rules]] | This Paper |
+| Aspect | [[concepts/claude-code/claude-md-rules]] | This Paper |
 |--------|------------------------------|------------|
 | **Focus** | Behavioral guardrails (simplicity, scope) | Instruction files (repo conventions, setup) |
 | **Finding** | Rules reduce mistake rate 41% → 3% | Context files don't improve task success |
@@ -69,7 +69,7 @@ These findings are **not contradictory** — they address different types of con
 
 ```
 [agents-md-evaluation] ──author──→ [[entities/andrej-karpathy]]
-[agents-md-evaluation] ──contrasts──→ [[concepts/claude-md-rules]]
+[agents-md-evaluation] ──contrasts──→ [[concepts/claude-code/claude-md-rules]]
 [agents-md-evaluation] ──relates-to──→ [[concepts/context-engineering|Context Engineering]]
 [agents-md-evaluation] ──relates-to──→ [[concepts/agent-skills]]
 [agents-md-evaluation] ──embodies──→ [[concepts/context-engineering|Context Engineering]]
@@ -77,7 +77,7 @@ These findings are **not contradictory** — they address different types of con
 
 ## Related Concepts
 
-- [[concepts/claude-md-rules]] — Karpathy's behavioral guidelines for coding agents (rules ≠ context)
+- [[concepts/claude-code/claude-md-rules]] — Karpathy's behavioral guidelines for coding agents (rules ≠ context)
 - [[concepts/context-engineering|Context Engineering]] — The broader discipline of managing agent context
 - [[concepts/agent-skills]] — Skills as an alternative to static context files
 - [[concepts/evaluation-coding-agents]] — Coding agent evaluation benchmarks and methodologies

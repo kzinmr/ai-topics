@@ -261,5 +261,5 @@ tools = [
 - [[concepts/security-and-governance/agent-sandboxing]] — Comparison table of isolation technologies
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Code execution patterns via MCP
 - [[concepts/agentic-engineering]] — Agent engineering overview
-- [[concepts/claude-code-sandboxing]] — Anthropic's containment architecture for Claude Code
+- [[concepts/claude-code/claude-code-sandboxing]] — Anthropic's containment architecture for Claude Code
 - [[entities/anthropic]] — Anthropic entity page

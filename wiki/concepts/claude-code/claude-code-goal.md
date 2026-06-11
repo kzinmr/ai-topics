@@ -159,13 +159,13 @@ Both products converged on goal-driven autonomous loops within weeks of each oth
 | **Budget mechanism** | Turn/time clauses in condition | Configurable token budget in `config.toml` |
 | **Architecture philosophy** | "Evaluator judges agent" | "Agent knows its own state" |
 
-→ See [[concepts/codex-goal]] for Codex `/goal` details and [[concepts/codex-goal-meta-prompting]] for meta-prompting workflows.
+→ See [[concepts/codex/codex-goal]] for Codex `/goal` details and [[concepts/codex/codex-goal-meta-prompting]] for meta-prompting workflows.
 
 ## Related Concepts
 
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern all goal loops implement
-- [[concepts/codex-goal]] — OpenAI Codex's `/goal` (Ralph loop++)
-- [[concepts/codex-goal-meta-prompting]] — Using AI to generate better goal prompts
+- [[concepts/codex/codex-goal]] — OpenAI Codex's `/goal` (Ralph loop++)
+- [[concepts/codex/codex-goal-meta-prompting]] — Using AI to generate better goal prompts
 - [[concepts/karpathy-loop]] — Karpathy's fixed-budget autonomous ML research loop
 - [[concepts/pi-autoresearch]] — Shopify's generalized metric optimization loop
 - [[concepts/harness-engineering]] — Runtime infrastructure that makes goal loops reliable

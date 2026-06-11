@@ -246,7 +246,7 @@ This was a pioneering framework that later materialized as standards like MCP (M
 - [[concepts/agentic-engineering]] — Contrasting development style
 - [[concepts/cognitive-debt]] — Major risk of Vibe Coding
 - [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Method for repaying cognitive debt
-- [[concepts/claude-code-tips]] — Claude Code setup guide
+- [[concepts/claude-code/claude-code-tips]] — Claude Code setup guide
 - [[concepts/self-hosting-ai-development]] — Self-hosting vibe-coded apps
 - [[concepts/mcp]] — Inter-agent communication protocol (materialization of O'Reilly's protocol standardization vision)
 

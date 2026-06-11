@@ -103,7 +103,7 @@ What remains unresolved is whether this hybrid approach scales to AGI, or whethe
 - [[entities/gary-marcus]] — Primary advocate and critic
 - [[concepts/scaling-without-slop]] — Complementary critique of pure scaling
 - [[concepts/world-models-science]] — Marcus's proposed next step beyond neurosymbolic
-- [[concepts/claude-code-source-patterns]] — Technical analysis of Claude Code's architecture
+- [[concepts/claude-code/claude-code-source-patterns]] — Technical analysis of Claude Code's architecture
 - [[concepts/differential-symbolic-modules]] — Differentiable symbolic modules (Hybrid NeSy technique)
 - [[concepts/formal-logic-foundation]] — Symbolic reasoning foundation
 - [[concepts/security-and-governance/agent-governance]] — Governance layer for agent systems using NeSy principles

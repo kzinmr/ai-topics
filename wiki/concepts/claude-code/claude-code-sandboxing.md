@@ -86,7 +86,7 @@ Claude Code's sandboxing feature. It uses OS-level isolation (Linux bubblewrap /
 ## See Also
 
 - [[entities/claude-code]] — Claude Code agent harness
-- [[claude-code-auto-mode]] — Auto mode permission classifier
+- [[concepts/claude-code/claude-code-auto-mode]] — Auto mode permission classifier
 - [[concepts/security-and-governance/agent-sandboxing]] — General agent sandboxing patterns
-- [[concepts/claude-code-best-practices]] — Claude Code best practices
+- [[concepts/claude-code/claude-code-best-practices]] — Claude Code best practices
 - [[concepts/code-execution-with-mcp]] — Code execution with MCP

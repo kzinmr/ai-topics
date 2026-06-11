@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-06-11T07:23:43.370125+00:00",
+  "triage_run_id": "20260611T071031Z",
+  "source": "newsletter",
+  "summary_ja": "4つのニュースレターをトリアージ。AINews（Latent Space/swyx）が最も重要なソースで、DiffusionGemma（Googleの26B MoE拡散テキストモデル）が主要なウィキギャップ。The SignalのAI雇用分析は有料壁のため参考程度。SuperintelのClaude Fable 5ニュースレターとThe Skipのキャリアポッドキャストはスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260610130351.3.7365d17d85dc4946@mg-d1.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "Where AI is really taking jobs",
+      "title": "The Signal: Where AI is really taking jobs",
+      "url": "https://thesignal.substack.com/p/where-ai-is-really-taking-jobs",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-10-where-ai-is-really-taking-jobs.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ Alex Banks（The Signal）によるAI雇用影響分析。WEF Future of Jobs 2025、Stanford Digital Economy Lab、NY Fedのデータを引用して、若年層知識労働者の雇用リスクを分析。ただし有料壁のため具体的な推奨内容は取得不可。entities/alex-banks.md（130行）に雇用分析のセクションは未存在だが、有料壁のため参考記録のみ。entityページのRelationshipsやCoverageに軽く追加可能。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-10\n**Subject:** Where AI is really taking jobs\n**Collected:** 2026-06-11T07:10:24.590704+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wY"
+    },
+    {
+      "item_id": "ainews-agent-arena",
+      "source": "newsletter",
+      "source_name": "[AINews] Open Models, Model Labs vs Agent Labs, and What's Untrainable — Sarah Guo",
+      "title": "Agent Arena: trace-based agent metrics mining",
+      "url": "https://www.latent.space/p/ainews-open-models-model-labs-vs",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ Agent Arenaのベンチマーク手法について簡潔な言及：bash errors, tool hallucination, insanity検出など。concepts/ai-benchmarks/agent-arena.mdは未存在だが、AINews本文での言及は2文のみで十分な詳細なし。期待ベンチマーク生態系の進化として認識し、トピック監視対象とする。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-11\n**Subject:** [AINews] Open Models, Model Labs vs Agent Labs, and What's Untrainable — Sarah Guo\n**Collected:** 2026-06-11T07:10:29.953809+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1Y"
+    },
+    {
+      "item_id": "<20260610.174559.1e125f95@mta27>-1",
+      "source": "newsletter",
+      "source_name": "🔥 Anthropic's Claude Fable 5 changes everything!",
+      "title": "Superintel Claude Fable 5 coverage (beehiiv)",
+      "url": "https://link.mail.beehiiv.com/v1/c/sSlzu2WiZJR6xKr5%2FLTi%2FMTCn8o5i%2FSAfVFvxDBovwF%2F5faYM%2BQSeqZry5ei%0AX1wEjEZSjQelt8%2B6Ka8UffGupdSSPVbWVG3OADAPXb6Kk%2BVZrLz3ktgMaxUz%0AMBS0KB%2Fmc97biU06Mest%2Fe8HUc6hDOnuw952oq4VAk0FKLrn8lukj8njXKpz%0ADmELfgNoj1i1%2BEk8UybjeJ%2BiwymIkPL7IQ%3D%3D%0A",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-10-anthropic-s-claude-fable-5-changes-everything.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Beehiivニュースレター、全20リンクがCloudflare保護のbeehiivトラッキングURL。curlでresolvedできず。前日（June 10）のトリアージでも同ニュースレターがcriticalと判定されたが内容取得不可。Claude Fable 5は既にraw記事多数・concepts/claude/fable-5.md（243行）・entities/anthropic.md（701行）でextensiveにカバー済み。重複判断。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-10\n**Subject:** 🔥 Anthropic’s Claude Fable 5 changes everything!\n**Collected:** 2026-06-11T07:10:28.559668+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/sSlzu2WiZJR6xKr5%2FLTi%2FMTCn8o5i%2FSAfVFvxDBovwF%2F5faYM%2BQSeqZry5ei%0AX1w"
+    },
+    {
+      "item_id": "<20260610162545.3.fde16da883f8a324@mg2.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "5 Career Questions Your Old Playbook Can't Answer",
+      "title": "The Skip: Career podcast — non-AI",
+      "url": "https://theskip.substack.com/p/5-career-questions-your-old-playbook",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-10-5-career-questions-your-old-playbook-can-t-answer.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ The Skip（career advice podcast, publication_id=92860）。全リンクがplay_audio/podcast UI。pure-podcast publicationで本文なし。AI/LLM/Agentと無関係のキャリアアドバイス。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-10\n**Subject:** 5 Career Questions Your Old Playbook Can’t Answer\n**Collected:** 2026-06-11T07:10:27.375301+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/bf97ff7f-6dc9-465d-b340-08b1818cd526?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1"
+    }
+  ]
+}

@@ -95,7 +95,7 @@ Concrete implementations and patterns across specific platforms and providers.
 
 | Page | Focus | Source |
 |--------|------|--------|
-| **[[concepts/claude-code-skills]]** | Claude Code Skills — **Mechanism** (folder structure, Progressive Disclosure, dynamic Hooks, memory persistence) and **9 role patterns** (Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops). Design Tips, distribution patterns, marketplace operations | Thariq Shihipar (@trq212), Anthropic |
+| **[[concepts/claude-code/claude-code-skills]]** | Claude Code Skills — **Mechanism** (folder structure, Progressive Disclosure, dynamic Hooks, memory persistence) and **9 role patterns** (Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops). Design Tips, distribution patterns, marketplace operations | Thariq Shihipar (@trq212), Anthropic |
 | **[[concepts/harness-engineering/system-architecture/agent-skills]]** | Agent Skills SKILL.md bundles — OpenAI's SKILL.md. Deterministic 3-stage loading sequence (metadata → bundle retrieval → context update), version management, container-based exploratory execution | OpenAI |
 | **[[concepts/skill-graph]]** | Skill Graph — Playbook architecture using interconnected Markdown files. Knowledge nodes joined via `[[wikilinks]]`, agents traverse only needed nodes from index.md. "1 flat .md = TOOL, graph = TEAM". 17-file model (platforms/voice/engine/audience/) | Ronin (@DeRonin_) |
 | **[[concepts/llm-as-judge-skills]]** | LLM-as-Judge Skills — Reusable skills for evaluating LLM output with LLMs themselves. Application of Context Engineering (GitHub: muratcankoylan/Agent-Skills-for-Context-Engineering, 15.5k stars) | Murat Can Koylan |
@@ -141,10 +141,10 @@ These pages are stubs — substantive content exists in other pages:
 ### Beginners (Basic Understanding)
 1. [[concepts/agent-skills]] — What are Skills? (format, standards)
 2. [[concepts/harness-engineering/agentic-ai-skills]] — 10 design principles for good Skills
-3. [[concepts/claude-code-skills]] — How they are actually used (9 role patterns)
+3. [[concepts/claude-code/claude-code-skills]] — How they are actually used (9 role patterns)
 
 ### Practitioners (Deployment & Operations)
-1. [[concepts/claude-code-skills]] — Inventory your organization's Skills from the 9 role patterns
+1. [[concepts/claude-code/claude-code-skills]] — Inventory your organization's Skills from the 9 role patterns
 2. [[concepts/skill-graph]] — Building scalable playbooks with interconnected Markdown
 3. [[concepts/markdown-based-skills]] — Skill design editable by non-engineers
 

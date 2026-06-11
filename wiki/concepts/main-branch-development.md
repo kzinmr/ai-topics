@@ -152,7 +152,7 @@ Both patterns reject unnecessary complexity:
 - Skip the branching → main commits
 - Trust the agent + git to keep things safe
 
-### [[concepts/claude-code-best-practices]]
+### [[concepts/claude-code/claude-code-best-practices]]
 Complements Claude Code patterns:
 - Sub-agents work on isolated tasks → atomic commits
 - Human reviews output → post-commit validation
@@ -183,7 +183,7 @@ Complements Claude Code patterns:
 
 - [[concepts/inference-speed-development]] — Why fast iteration requires simple branching
 - [[concepts/direct-prompting-philosophy]] — Anti-complexity mindset applied to Git
-- [[concepts/claude-code-best-practices]] — Atomic commits enable sub-agent delegation
+- [[concepts/claude-code/claude-code-best-practices]] — Atomic commits enable sub-agent delegation
 -  — How AI changes traditional development workflows
 ## Sources
 

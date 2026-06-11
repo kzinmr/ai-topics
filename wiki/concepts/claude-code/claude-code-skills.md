@@ -320,6 +320,6 @@ Use PreToolUse hooks to log Skill usage:
 - [[concepts/skill-architecture-patterns]] — Self-Authored vs Governed (Hermes Agent vs OpenClaw)
 - [[concepts/harness-engineering/agent-harness]] — Agent Harness overview
 - [[concepts/mcp]] — Model Context Protocol
-- [[concepts/claude-code-best-practices]] — Claude Code operational best practices
+- [[concepts/claude-code/claude-code-best-practices]] — Claude Code operational best practices
 - [[entities/thariq-shihipar]] — Author
 - [[concepts/skill-graph]] — Skill Graph architecture

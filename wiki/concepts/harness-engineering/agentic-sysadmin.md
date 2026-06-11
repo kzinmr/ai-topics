@@ -94,6 +94,6 @@ Works well for small teams. Launch Claude in the parent folder and ask cross-cut
 ## Related Pages
 
 - [[concepts/harness-engineering/agentic-engineering]] — parent concept
-- [[concepts/claude-code-tips]] — Claude Code usage patterns
+- [[concepts/claude-code/claude-code-tips]] — Claude Code usage patterns
 - [[concepts/security-and-governance/agentic-security]] — security considerations for agents
 - [[entities/martin-alderson]] — pattern originator

@@ -39,13 +39,13 @@ Unlike code, where technical debt manifests as errors or slowdowns, prompts can 
 ### Model-Specific Fragility
 Each new model release requires "re-learning how to hold the model." AI companies spend significant effort tweaking prompts for each model iteration. Individual engineers' bespoke prompt setups don't get the same attention:
 - A prompt crafted in January may be harmful by February
-- "Switching tools or workflows is a form of prompting" — choosing [[claude-code]] over [[openai-codex-cli]], or adopting a [[ralph-loop]] pattern, is also a prompt-level decision
+- "Switching tools or workflows is a form of prompting" — choosing [[concepts/claude-code/claude-code]] over [[openai-codex-cli]], or adopting a [[ralph-loop]] pattern, is also a prompt-level decision
 
 ## Implications for AI Agent Engineering
 
 ### Keep Agent Setups Minimal
 Goedecke recommends:
-- Pick a third-party AI coding tool ([[claude-code]], [[openai-codex-cli]], [[cursor]], [[github-copilot]]) and leave it **as unconfigured as possible**
+- Pick a third-party AI coding tool ([[concepts/claude-code/claude-code]], [[openai-codex-cli]], [[cursor]], [[github-copilot]]) and leave it **as unconfigured as possible**
 - Piggyback on the work of teams who evaluate and tweak prompts for each model release
 - **Avoid MCP and skills unless absolutely necessary**, and keep them off by default
 

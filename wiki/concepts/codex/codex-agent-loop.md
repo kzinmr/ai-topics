@@ -28,7 +28,7 @@ sources:
 
 # Codex Agent Loop
 
-The **agent loop** (a.k.a. the **Codex harness**) is the central orchestration logic inside Codex CLI that drives all interactions between the user, the language model, and tools. It is the shared engine powering every Codex surface — CLI, VS Code extension, macOS desktop app, web app, and partner IDEs — through the [[concepts/codex-app-server|App Server]].
+The **agent loop** (a.k.a. the **Codex harness**) is the central orchestration logic inside Codex CLI that drives all interactions between the user, the language model, and tools. It is the shared engine powering every Codex surface — CLI, VS Code extension, macOS desktop app, web app, and partner IDEs — through the [[concepts/codex/codex-app-server|App Server]].
 
 ---
 

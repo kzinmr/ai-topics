@@ -19,10 +19,10 @@ aliases:
   - Claude Certified Architect
   - Claude Certification
 related:
-  - "[[concepts/claude-code-best-practices]]"
+  - "[[concepts/claude-code/claude-code-best-practices]]"
   - "[[concepts/anthropic/agent-sdk-sre-patterns]]"
   - "[[concepts/subagents]]"
-  - "[[concepts/claude-md-rules]]"
+  - "[[concepts/claude-code/claude-md-rules]]"
   - "[[concepts/multi-agent-orchestration]]"
   - "[[entities/claude-code]]"
 ---

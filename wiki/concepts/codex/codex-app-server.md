@@ -35,7 +35,7 @@ sources:
 The implementation is open-source in the [openai/codex](https://github.com/openai/codex) repository under `codex-rs/app-server`.
 
 > **When to use `codex app-server`:** when embedding a **full Codex experience** inside your product (IDE, web app, custom client).
-> **When NOT to use it:** for automating jobs or running Codex in CI — use the **Codex SDK** instead. For simple one-shot tasks, use the [[concepts/codex-goal|Codex CLI]] directly.
+> **When NOT to use it:** for automating jobs or running Codex in CI — use the **Codex SDK** instead. For simple one-shot tasks, use the [[concepts/codex/codex-goal|Codex CLI]] directly.
 
 ---
 

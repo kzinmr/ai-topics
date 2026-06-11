@@ -64,4 +64,4 @@ Criticism from non-use tends to be more abstract:
 - [[entities/armin-ronacher]] — Primary analyst of center bias
 - [[entities/mario-zechner]] — Creator of Pi, exemplifies grounded criticism
 - [[concepts/harness-engineering/agentic-engineering]] — The practice being debated
-- [[concepts/claude-code-source-patterns]] — Technical analysis of agent internals
+- [[concepts/claude-code/claude-code-source-patterns]] — Technical analysis of agent internals

@@ -71,7 +71,7 @@ Cursor engineer [[entities/eric-zakariasson|Eric Zakariasson]] articulated a fra
 ## Related Concepts
 - [[concepts/coding-agents]] — The broader concept page on coding agents
 - [[concepts/harness-engineering/agent-harness]] — Infrastructure layer wrapping LLMs for agent execution
-- [[concepts/claude-code-best-practices]] — Best practices for Claude Code usage
+- [[concepts/claude-code/claude-code-best-practices]] — Best practices for Claude Code usage
 - [[concepts/agentic-scaffolding]] — Safety infrastructure for production agents
 
 ## References

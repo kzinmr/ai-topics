@@ -166,5 +166,5 @@ Claude Code wraps every memory file read with an age warning in `<system-reminde
 - [[entities/nicolas-bustamante]]
 - [[concepts/harness-engineering]]
 - [[concepts/model-harness-fit]]
-- [[concepts/claude-md-rules]]
+- [[concepts/claude-code/claude-md-rules]]
 - [[concepts/memory-systems]]

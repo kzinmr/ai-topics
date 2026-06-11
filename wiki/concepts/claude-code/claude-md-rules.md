@@ -71,4 +71,4 @@ The broader lesson: behavioral constraints beat feature checklists for directing
 - [[entities/claude-code]] — Claude Code
 - [[concepts/context-engineering|Context Engineering]] — Context engineering discipline
 - [[concepts/agentic-engineering]] — Agent-centric software engineering
-- [[concepts/claude-code-auto-mode]] — Claude Code auto mode
+- [[concepts/claude-code/claude-code-auto-mode]] — Claude Code auto mode

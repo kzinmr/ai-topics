@@ -21,8 +21,8 @@ sources:
   - https://www.adityabawankule.io/blog/codex-goal-meta-prompting
   - https://www.adityabawankule.io/blog/claude-code-vs-codex-vs-cursor
 related:
-  - "[[concepts/codex-goal-meta-prompting]]"
-  - "[[concepts/openai/codex-superapp]]"
+  - "[[concepts/codex/codex-goal-meta-prompting]]"
+  - "[[concepts/codex/codex-superapp]]"
   - "[[entities/claude-code]]"
 ---
 
@@ -41,7 +41,7 @@ Aditya's blog at adityabawankule.io is a hands-on guide to AI-assisted software 
 ## Notable Content
 
 ### Codex /goal Meta-Prompting (May 4, 2026)
-Pioneered a technique of using a second AI to generate high-quality `/goal` prompts for OpenAI Codex, enabling days of autonomous work. The method: open an AI session with project context, ask it to research /goal's actual behavior, inspect the codebase for high-leverage missions, and produce three complete /goal prompts with scope, constraints, files, and definitions of done. → [[concepts/codex-goal-meta-prompting]]
+Pioneered a technique of using a second AI to generate high-quality `/goal` prompts for OpenAI Codex, enabling days of autonomous work. The method: open an AI session with project context, ask it to research /goal's actual behavior, inspect the codebase for high-leverage missions, and produce three complete /goal prompts with scope, constraints, files, and definitions of done. → [[concepts/codex/codex-goal-meta-prompting]]
 
 ### Claude Code vs Codex vs Cursor Comparison (Feb 21, 2026)
 A detailed, daily-user comparison of the three major AI coding tools. Key findings:
@@ -80,8 +80,8 @@ Aditya's writing is characterized by:
 
 ## Cross-References
 
-- [[concepts/codex-goal-meta-prompting]] — His most influential technique: using AI to write better /goal prompts
-- [[concepts/openai/codex-superapp]] — Broader context of Codex as a coding superapp
+- [[concepts/codex/codex-goal-meta-prompting]] — His most influential technique: using AI to write better /goal prompts
+- [[concepts/codex/codex-superapp]] — Broader context of Codex as a coding superapp
 - [[entities/claude-code]] — His primary daily driver coding tool
 - [[concepts/vibe-coding]] — The broader paradigm his work exemplifies
 - [[entities/simon-willison]] — Similar style of tool-agnostic, production-grounded writing

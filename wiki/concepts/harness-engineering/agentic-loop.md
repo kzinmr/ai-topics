@@ -266,8 +266,8 @@ The real engineering challenges are around the loop:
 
 - [[concepts/karpathy-loop]] — Autonomous ML research variant
 - [[concepts/pi-autoresearch]] — Generalized metric optimization variant
-- [[concepts/codex-goal]] — Codex built-in Ralph loop (`/goal`)
-- [[concepts/claude-code-goal]] — Claude Code goal-driven autonomous workflow (`/goal`)
+- [[concepts/codex/codex-goal]] — Codex built-in Ralph loop (`/goal`)
+- [[concepts/claude-code/claude-code-goal]] — Claude Code goal-driven autonomous workflow (`/goal`)
 - [[concepts/self-improving-agents]] — Agents that improve themselves over runs
 - [[concepts/agentic-engineering/_index]] — Broader agentic engineering cluster
 - [[concepts/reasoning-models]] — Chain-of-thought, tree-of-thought reasoning

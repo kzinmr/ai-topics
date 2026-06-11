@@ -148,7 +148,7 @@ The skill behind Claude's document editing capabilities:
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
 - [[concepts/mcp]] — Model Context Protocol
-- [[concepts/claude-code-best-practices]] — Claude Code best practices
+- [[concepts/claude-code/claude-code-best-practices]] — Claude Code best practices
 - [[agent-skills-skillmd]] — SKILL.md format details
 - [[codex]] — OpenAI Codex
 - [[evals-for-ai-agents]] — Evals for AI agents

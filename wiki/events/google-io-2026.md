@@ -48,7 +48,7 @@ This event marks the moment when major tech companies are shipping AI agents tha
 The Gemini CLI → Antigravity CLI transition mirrors a broader industry pattern of companies moving from open-source developer tools to proprietary agent platforms. Compare with [[openai-codex-cli]] and [[cursor]] which have taken different approaches to openness.
 
 ### The Agent Platform War
-Gemini Spark positions Google directly against [[openclaw]] (OpenAI's agent) and [[claude-code]] (Anthropic's coding agent), escalating the AI agent platform competition. Each takes a different approach to trust, sandboxing, and user data access.
+Gemini Spark positions Google directly against [[openclaw]] (OpenAI's agent) and [[concepts/claude-code/claude-code]] (Anthropic's coding agent), escalating the AI agent platform competition. Each takes a different approach to trust, sandboxing, and user data access.
 
 ## See Also
 - [[concepts/gemini/gemini-spark]] — Google's personal AI agent

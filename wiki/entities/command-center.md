@@ -36,7 +36,7 @@ Command Center sits at the intersection of several trends:
 
 | Category | How Command Center Fits |
 |----------|------------------------|
-| **[[concepts/ai-coding-tools|AI Coding Tools]]** | Alternative to [[concepts/copilot|GitHub Copilot]], [[concepts/claude-code|Claude Code]], [[concepts/codex|Codex]] |
+| **[[concepts/ai-coding-tools|AI Coding Tools]]** | Alternative to [[concepts/copilot|GitHub Copilot]], [[concepts/claude-code/claude-code|Claude Code]], [[concepts/codex|Codex]] |
 | **[[concepts/agent-platform|Agent Platforms]]** | Agent-native environment vs IDE plugin approach |
 | **[[concepts/multi-agent|Multi-Agent Systems]]** | Parallel agent orchestration with conflict resolution |
 | **[[concepts/code-review|Code Review]]** | AI-generated code review as first-class workflow |
@@ -60,7 +60,7 @@ Command Center sits at the intersection of several trends:
 
 ## Related Pages
 - [[concepts/ai-coding-tools]] — Overview of AI coding tool landscape
-- [[concepts/claude-code]] — Anthropic's agentic coding CLI
+- [[concepts/claude-code/claude-code]] — Anthropic's agentic coding CLI
 - [[concepts/codex]] — OpenAI's coding agent platform
 - [[concepts/multi-agent]] — Multi-agent system patterns
 - [[concepts/agent-platform]] — Agent platform design patterns

@@ -31,7 +31,7 @@ related:
   - "[[concepts/building-effective-agents]]"
   - "[[concepts/harness-engineering/agentic-engineering]]"
   - "[[concepts/inference-speed-development]]"
-  - "[[concepts/claude-code-source-patterns]]"
+  - "[[concepts/claude-code/claude-code-source-patterns]]"
   - "[[concepts/context-engineering/context-window-management|Context Window Management]]"
   - "[[concepts/ai-coding-reliability]]"
   - "[[concepts/harness-engineering/agentic-workflows/using-git-with-agents]]"
@@ -371,7 +371,7 @@ These best practices embody the agentic engineering philosophy:
 - [[concepts/building-effective-agents]] — Foundational principles of agent building
 - [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Using Git with agents
 - [[concepts/inference-speed-development]] — Fast iteration development
-- [[concepts/claude-code-source-patterns]] — Claude Code internal patterns
+- [[concepts/claude-code/claude-code-source-patterns]] — Claude Code internal patterns
 - [[concepts/context-engineering/context-window-management|Context Window Management]] — Context management
 - [[concepts/ai-coding-reliability]] — AI coding reliability
 

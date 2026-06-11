@@ -114,11 +114,11 @@ Claude Code integrates into CI pipelines via non-interactive mode. Use `claude -
 
 Three approaches to reduce approval fatigue while maintaining safety:
 
-- **[[concepts/claude-code-auto-mode|Auto mode]]**: Classifier model reviews commands, blocks risky actions (0.4% false positive rate), lets routine work proceed unattended
+- **[[concepts/claude-code/claude-code-auto-mode|Auto mode]]**: Classifier model reviews commands, blocks risky actions (0.4% false positive rate), lets routine work proceed unattended
 - **Permission allowlists**: Permit specific known-safe commands (e.g., `npm run lint`, `git commit`) via `/permissions`
-- **[[concepts/claude-code-sandboxing|Sandboxing]]**: OS-level isolation (Linux bubblewrap / macOS seatbelt) restricting filesystem and network access
+- **[[concepts/claude-code/claude-code-sandboxing|Sandboxing]]**: OS-level isolation (Linux bubblewrap / macOS seatbelt) restricting filesystem and network access
 
-See [[concepts/claude-code-auto-mode]] for the two-layer defense architecture and [[concepts/claude-code-sandboxing]] for sandbox implementation details.
+See [[concepts/claude-code/claude-code-auto-mode]] for the two-layer defense architecture and [[concepts/claude-code/claude-code-sandboxing]] for sandbox implementation details.
 
 ## Context Management Techniques
 
@@ -152,8 +152,8 @@ For deeper context engineering theory, see [[concepts/context-engineering|Contex
 ## See Also
 
 - [[entities/claude-code]] — Claude Code entity page (metrics, architecture, history)
-- [[concepts/claude-code-auto-mode]] — Auto mode permission classifier
-- [[concepts/claude-code-sandboxing]] — OS-level sandboxing implementation
+- [[concepts/claude-code/claude-code-auto-mode]] — Auto mode permission classifier
+- [[concepts/claude-code/claude-code-sandboxing]] — OS-level sandboxing implementation
 - [[concepts/context-engineering|Context Engineering]] — Context management theory and frameworks
 - [[concepts/agent-skills]] — Skills standard and progressive disclosure
 - [[concepts/harness-engineering]] — Harness engineering discipline

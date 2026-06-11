@@ -134,7 +134,7 @@ Use AI to write better `/goal` prompts:
 3. Have it inspect your codebase for high-leverage missions
 4. Ask it to produce complete goal prompts with scope, constraints, and definitions of done
 
-→ See [[concepts/codex-goal-meta-prompting|Codex /goal Meta-Prompting]] (Aditya Bawankule's workflow)
+→ See [[concepts/codex/codex-goal-meta-prompting|Codex /goal Meta-Prompting]] (Aditya Bawankule's workflow)
 
 ### 5. Practical Guardrails
 
@@ -158,8 +158,8 @@ The Ralphable blog recommends **token budget over iteration count**:
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern
 - [[concepts/karpathy-loop]] — Autonomous ML research variant
 - [[concepts/pi-autoresearch]] — Generalized metric optimization (Shopify)
-- [[concepts/codex-goal-meta-prompting]] — Using AI to generate better /goal prompts
-- [[concepts/claude-code-goal]] — Claude Code's /goal implemention (evaluator model architecture)
+- [[concepts/codex/codex-goal-meta-prompting]] — Using AI to generate better /goal prompts
+- [[concepts/claude-code/claude-code-goal]] — Claude Code's /goal implemention (evaluator model architecture)
 - [[concepts/ralph-loop]] — The Ralph Wiggum loop pattern (if exists)
 - [[concepts/self-improving-agents]] — Agents that improve over multiple runs
 - [[entities/hermes-agent]] — Nous Research's Hermes Agent also adopted /goal mode in May 2026

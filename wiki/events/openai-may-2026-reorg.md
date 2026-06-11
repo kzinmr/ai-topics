@@ -60,4 +60,4 @@ In May 2026, OpenAI announced its **most sweeping product reorganization** since
 - [[entities/fidji-simo]] — Fidji Simo profile
 - [[entities/thibault-sottiaux]] — Thibault Sottiaux profile
 - [[entities/openai-codex]] — OpenAI Codex product
-- [[concepts/codex-prompting]] — Codex prompting strategies
+- [[concepts/codex/codex-prompting]] — Codex prompting strategies

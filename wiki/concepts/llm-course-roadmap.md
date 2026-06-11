@@ -160,7 +160,7 @@ Covers production applications, RAG, agents, and deployment. Since this Wiki is 
 | MCP (Model Context Protocol) | [[concepts/multi-agents/agent-communication-protocols]], [[concepts/agent-communication-standards]] | Covered |
 | LangGraph / CrewAI / AutoGen | [[concepts/multi-agents/agent-orchestration-frameworks]] | Compared |
 | Multi-Agent | [[concepts/multi-agents/agent-swarms]], [[concepts/multi-agents/agent-team-swarm]] | Covered |
-| Coding Agents | [[concepts/agentic-coding]], [[concepts/agentic-engineering]], [[concepts/agentic-engineering-patterns]], [[concepts/claude-code]] | Very rich |
+| Coding Agents | [[concepts/agentic-coding]], [[concepts/agentic-engineering]], [[concepts/agentic-engineering-patterns]], [[concepts/claude-code/claude-code]] | Very rich |
 
 ### Section 3: Deployment & Security
 

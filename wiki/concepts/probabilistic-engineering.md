@@ -77,6 +77,6 @@ But Jevons' second lesson: **when supply explodes, selection becomes everything*
 - [[entities/tim-davis]] — Author of the concept, Modular executive
 - [[concepts/compound-engineering-loop]] — Davis's Compound Loop system
 - [[concepts/agentic-engineering]] — Agent-centric engineering discipline
-- [[concepts/claude-md-rules]] — CLAUDE.md rules — behavioral guardrails for coding agents
+- [[concepts/claude-code/claude-md-rules]] — CLAUDE.md rules — behavioral guardrails for coding agents
 - [[concepts/ai-coding-reliability]] — AI coding reliability challenges
 - [[concepts/coding-agents-complexity-budgets]] — Abstraction costs in the AI agent era

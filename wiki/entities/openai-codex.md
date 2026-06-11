@@ -91,7 +91,7 @@ The Every guide frames Codex usage around two fundamental modes:
 
 ### Goals vs. Skills
 
-The Every article provides a crisp distinction that complements [[concepts/codex-goal|Codex /goal]]:
+The Every article provides a crisp distinction that complements [[concepts/codex/codex-goal|Codex /goal]]:
 
 | Concept | Definition | Scope |
 |---------|-----------|-------|
@@ -165,7 +165,7 @@ A new canvas type for Codex — interactive, hosted websites and apps shared via
 
 Point-to-refine interaction model extended from code to documents, spreadsheets, slides, and sites. Select a specific part (chart, claim, UI element) and describe the change — Codex focuses the update on that part only.
 
-**Significance**: This is Codex's most comprehensive platform expansion — moving from coding agent to **general-purpose knowledge work platform** with domain-specific plugins. Aligns with [[concepts/openai/codex-superapp]] trajectory and [[concepts/model-labs-to-agent-labs]] thesis.
+**Significance**: This is Codex's most comprehensive platform expansion — moving from coding agent to **general-purpose knowledge work platform** with domain-specific plugins. Aligns with [[concepts/codex/codex-superapp]] trajectory and [[concepts/model-labs-to-agent-labs]] thesis.
 
 ### For Business Operations Teams
 
@@ -275,7 +275,7 @@ Source: Jason Liu X article (May 2026), Aakash's Clicky newsletter
 
 ## Prompt Design Characteristics
 
-See [[concepts/codex-prompting]]. Key characteristics:
+See [[concepts/codex/codex-prompting]]. Key characteristics:
 
 - **No explicit plan output**: The model plans internally; writing plans out causes early stopping
 - **No-confirmation autonomy**: Does not wait for user confirmation unless unable to resolve an error
@@ -308,8 +308,8 @@ Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technolo
 ## Related Topics
 
 - [[entities/jason-liu]] — Jason Liu (Codex team DX engineer, author of this guide)
-- [[concepts/codex-prompting]] — Codex prompt design patterns
-- [[concepts/codex-goal]] — Codex Goals design and operation
+- [[concepts/codex/codex-prompting]] — Codex prompt design patterns
+- [[concepts/codex/codex-goal]] — Codex Goals design and operation
 - [[concepts/harness-engineering/agent-harness]] — Agent harness design
 - [[concepts/metaprompting]] — Metaprompting (self-improving prompts)
 - [[entities/openai]] — OpenAI

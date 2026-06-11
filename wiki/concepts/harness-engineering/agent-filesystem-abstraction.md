@@ -121,7 +121,7 @@ The constant: every time you fake a filesystem, you sign up to maintain one. The
 ## Related Concepts
 
 - [[concepts/agent-skills]] — The skill-based alternative to filesystem abstractions
-- [[concepts/claude-code-skills]] — Skills as the mechanism for giving agents structured capabilities
+- [[concepts/claude-code/claude-code-skills]] — Skills as the mechanism for giving agents structured capabilities
 - [[concepts/harness-engineering/agent-harness]] — The harness determines how tools and filesystem abstractions are presented
 - [[concepts/tool-use]] — The broader pattern of exposing capabilities to agents
 - [[filesystem-memory]] — Using filesystem patterns for agent memory (related but distinct)

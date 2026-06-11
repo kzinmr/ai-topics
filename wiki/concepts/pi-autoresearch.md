@@ -108,7 +108,7 @@ Both implementations confirm the same philosophical principle: the agent does wo
 - [[concepts/agent-driven-ranker-optimization]] — Guardrail framework for agent-coded rankers
 - [[concepts/autonomous-component-optimization]] — Daniel Miessler's generalization to any knowledge work
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent loop pattern
-- [[concepts/codex-goal]] — Codex /goal command (Ralph loop built-in)
+- [[concepts/codex/codex-goal]] — Codex /goal command (Ralph loop built-in)
 - [[concepts/self-improving-agents]] — Broader self-improving agent category
 
 ## References

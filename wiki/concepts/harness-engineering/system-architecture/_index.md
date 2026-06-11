@@ -67,7 +67,7 @@ The Anthropic Engineering blog and OpenAI Cookbook are the primary sources. Cove
 |-------|------|------|
 | [[concepts/harness-design-long-running-apps]] | GAN-inspired Generator-Evaluator loop, context reset | Anthropic |
 | [[concepts/harness-engineering/system-architecture/effective-harnesses-for-long-running-agents]] | Harness design for long-running agents | Anthropic |
-| [[concepts/claude-code-best-practices]] | Claude Code practical best practices | Sankalp + Anthropic |
+| [[concepts/claude-code/claude-code-best-practices]] | Claude Code practical best practices | Sankalp + Anthropic |
 
 ## Differences from Agentic Workflows
 

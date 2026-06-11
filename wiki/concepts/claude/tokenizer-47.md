@@ -77,6 +77,6 @@ The 3x token increase for large images is **entirely due to higher-resolution su
 
 - [[concepts/_index]]
 - [[concepts/claude/memory-tool]]
-- [[concepts/claude-code-source-patterns]]
+- [[concepts/claude-code/claude-code-source-patterns]]
 - [[concepts/claude/mythos-preview]]
-- [[concepts/claude-code-leak]]
+- [[concepts/claude-code/claude-code-leak]]

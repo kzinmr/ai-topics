@@ -92,5 +92,5 @@ Generated artifacts:
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[harness-design-long-running-apps]] — Harness design for long-running apps
 - [[concepts/agent-skills]] — Equipping agents with skills
-- [[concepts/claude-code-best-practices]] — Claude Code best practices
+- [[concepts/claude-code/claude-code-best-practices]] — Claude Code best practices
 - [[concepts/carlini-c-compiler-agents]] — Carlini's parallel agent experiment

@@ -21,8 +21,8 @@ Platform, API, SDK, and business pages for [[entities/openai|OpenAI]]. Model-cen
 - [[concepts/openai/agent-sdk]] — OpenAI Agents SDK (v0.14.0)
 - [[concepts/openai/symphony]] — Multi-agent orchestration framework
 - [[concepts/openai/workspace-agents]] — Workspace agents
-- [[concepts/openai/codex-superapp]] — Unified coding agent platform
-- [[concepts/openai/codex-safety]] — Codex safety measures
+- [[concepts/codex/codex-superapp]] — Unified coding agent platform
+- [[concepts/codex/codex-safety]] — Codex safety measures
 
 ## Governance & Security
 - [[concepts/openai/model-spec]] — OpenAI Model Spec — behavioral specification for all models (chain of command, content restrictions, agentic scope)
@@ -31,7 +31,7 @@ Platform, API, SDK, and business pages for [[entities/openai|OpenAI]]. Model-cen
 
 ## Business & Partnerships
 - [[concepts/openai/aws-bedrock-partnership]] — OpenAI models on AWS Bedrock
-- [[concepts/openai/astral-acquisition]] — Astral acquisition (Codex toolchain)
+- [[concepts/codex/astral-acquisition]] — Astral acquisition (Codex toolchain)
 
 ## See Also
 - [[concepts/gpt/index]] — GPT Models (model-centric pages)

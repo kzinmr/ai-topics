@@ -138,7 +138,7 @@ Programmatic Tool Calling (API mechanism)
 - [[concepts/code-execution-with-mcp]] — An architecture pattern treating MCP as a code API, with Monty as its execution foundation
 - [[concepts/code-mode]] — PydanticAI's CodeMode feature powered by Monty
 - [[concepts/agent-loop-orchestration]] — Code execution within the agent loop
-- [[concepts/claude-code-best-practices]] — Claude Code best practices
+- [[concepts/claude-code/claude-code-best-practices]] — Claude Code best practices
 - [[concepts/reverse-engineering]] — Sandbox evasion and security research
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Code execution in agent frameworks
 

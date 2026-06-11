@@ -146,6 +146,6 @@ with progressively-parsed `arguments`. This means the streaming approach works i
 
 - [[anthropic|Anthropic]] — company behind Claude and generative UI
 - [[claude-models|Claude Models]] — the LLM family powering the visualizer
-- [[claude-code|Claude Code]] — Anthropic's coding agent with different UI paradigm
+- [[concepts/claude-code/claude-code|Claude Code]] — Anthropic's coding agent with different UI paradigm
 - [[glimpse|Glimpse]] — macOS WKWebView library enabling the terminal reimplementation
 - Agent tool design patterns: [[progressive-disclosure]], [[streaming]]

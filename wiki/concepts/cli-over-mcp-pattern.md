@@ -150,7 +150,7 @@ Both patterns share the core principle: **reduce overhead, increase direct engag
 ## Related Concepts
 
 - [[concepts/direct-prompting-philosophy]] — The anti-overengineering mindset this serves
-- [[concepts/claude-code-best-practices]] — Practical implementation patterns
+- [[concepts/claude-code/claude-code-best-practices]] — Practical implementation patterns
 - [[concepts/context-engineering/context-window-management|Context Window Management]] — How CLIs preserve precious context
 -  — The broader methodology
 ## Sources
