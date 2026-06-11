@@ -1,3 +1,12 @@
+## [2026-06-11] Bonus Lesson: GRPO Details (Will Brown 文字起こし・要約)
+
+**Action**: Ingested Bonus Lesson 5.5 transcript from message_1.txt. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, lesson summary, related links).
+
+- `transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture.md` — Bonus Lesson transcript (RL infrastructure, VRAM math, async RL, GRPO gotchas, frontier research)
+- `raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5.md` — Bonus Lesson summary article
+
+---
+
 ## [2026-06-11] Lesson 5: Formulating Business Problems as RL Tasks (文字起こし・要約・Notebook)
 
 **Action**: Ingested Lesson 5 transcript from message.txt. Saved raw notebook from GitHub. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, lesson summary, companion resources, related links).

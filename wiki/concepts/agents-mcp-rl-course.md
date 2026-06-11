@@ -132,6 +132,7 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 | Jun 26 | [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture\|Lesson 4: Introduction to Reinforcement Learning]] | [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4\|Summary]] |
 | Jun 27 | [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Office Hours with Kyle Corbitt]] | [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Summary]] |
 | Jul 2 | [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture\|Lesson 5: Formulating Business Problems as RL Tasks]] | [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5\|Summary]] |
+| Jul 3 | [[transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture\|Bonus Lesson: GRPO Details]] | [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5\|Summary]] |
 | TBD | Lecture 6 | *pending* |
 
 ## Lesson Summaries
@@ -177,6 +178,12 @@ Unscripted Q&A session. Deep dives on: reward hacking mitigation (iterative proc
 Kyle Corbitt delivers a live-coding lecture completing the agent → RL pipeline. Refactors the email agent into a scenario-based architecture with a `return_final_answer` tool for structured output (answer + source message IDs). Builds an LM-as-judge reward signal with iterative prompt engineering, parallelized benchmarking with Weave tracing, then implements the full GRPO training loop using OpenPipe's ART framework: `TrainableModel` (Qwen 2.5 14B), `LocalBackend` with vLLM, trajectory groups (4 rollouts per scenario), and `model.train()` weight updates. Launches remote H100 training via SkyPilot. Key findings: 4 rollouts per group (smaller than typical) works well, temperature 1 is mandatory, reward std dev collapse indicates output saturation. Will Brown previews Lecture 5.5 notebook covering GRPO infrastructure details (VRAM math, tool call masking, KL penalties, dynamic sampling, VinePPO).
 
 **Transcript:** [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture]] · **Summary:** [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5]] · **Notebook:** [grpo_details.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec5-grpo-details/grpo_details.ipynb)
+
+### Bonus Lesson: GRPO Details (Jul 3)
+
+Will Brown delivers a survey-style lecture on GRPO implementation details and the RL infrastructure ecosystem. Covers VRAM napkin math (10× model size rule, AdamW optimizer memory), PPO vs GRPO tradeoffs (critic model elimination, memory savings), GPU architecture patterns (swapping/ART vs overlapping/Verifiers, vLLM LoRA hot-swap), async RL (off-policy staleness, multi-turn async inference via vLLM micro-batching), key GRPO gotchas (beta=0 safe with LoRA, temperature 1 mandatory, reward std dev collapse), frontier research directions (VinePPO tree search, REINFORCE batch approach, think token removal, test-time training, LM-as-judge tournaments for non-verifiable domains), and RL-as-a-service skepticism (GPU market rates, service evaluation criteria).
+
+**Transcript:** [[transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture]] · **Summary:** [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5]] · **Notebook:** [grpo_details.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec5-grpo-details/grpo_details.ipynb)
 
 ## Included Credits
 
@@ -242,6 +249,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] — Office Hours transcript
 - [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5]] — Lesson 5: Formulating Business Problems as RL Tasks
 - [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture]] — Lesson 5 transcript
+- [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5]] — Bonus Lesson: GRPO Details
+- [[transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture]] — Bonus Lesson transcript
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
