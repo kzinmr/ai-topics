@@ -8018,3 +8018,11 @@ Updated:
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 4 to Lecture Schedule, Lesson Summaries, companion resources, sources, related links
 - **UPDATED**: `index.md` — Added Lesson 4 transcript entry
 - **NOTEBOOK**: https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec4-rl/grpo_intro.ipynb
+
+---
+## [2026-06-11] Office Hours Transcript Ingestion
+
+- **CREATED**: `transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md` — Structured transcript of Kyle Corbitt office hours, 11 sections covering reward hacking, RLHF, custom reward models, agent frameworks, RL vs prompt engineering
+- **CREATED**: `raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md` — Office hours summary article
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Office Hours to Lecture Schedule, Lesson Summaries, sources, related links
+- **UPDATED**: `index.md` — Added Office Hours transcript entry

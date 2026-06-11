@@ -2032,5 +2032,7 @@
 
 - [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture]] — Production-Ready Agent Engineering Lesson 4: Introduction to Reinforcement Learning — Will Brown (Prime Intellect) & Kyle Corbitt (OpenPipe). RL crash course (MDPs, policy gradient, advantage estimation), multi-armed bandit demo, GRPO for LLMs, live-coded agentic RAG email agent (Art E), tool design patterns, agentic vs vector RAG. Companion: [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4]]
 
+- [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] — Production-Ready Agent Engineering Office Hours with Kyle Corbitt — Reward hacking mitigation, RLHF for low-volume feedback, custom reward model training (HN titles), RL vs prompt engineering, agent frameworks. Companion: [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]]
+
 - [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook]] — Build Your Own AI Research Agent — Lightning Lesson notebook walkthrough. V1/V2 agent loop, search/fetch tools, sub-models as tools, MCP crash course, Claude Code deep research. Companion: [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning]]
 - [[transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook]] — Training Agents with Reinforcement Learning — Lightning Lesson notebook walkthrough. ChromaDB search tools, synthetic QA generation, verifiers framework, GRPO training. Companion: [[raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning]]

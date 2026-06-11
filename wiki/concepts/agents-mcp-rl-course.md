@@ -21,6 +21,7 @@ sources:
   - raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2.md
   - raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3.md
   - raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4.md
+  - raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://maven.com/p/193c6f/build-your-own-ai-research-agent
@@ -117,6 +118,7 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 | Jun 19 | [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture\|Lesson 2: MCP + Production-Grade Agents]] | [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2\|Summary]] |
 | Jun 24 | [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture|Lesson 3: Agent Evals and Optimization]] | [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3|Summary]] |
 | Jun 26 | [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture|Lesson 4: Introduction to Reinforcement Learning]] | [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4|Summary]] |
+| Jun 27 | [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Office Hours with Kyle Corbitt]] | [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Summary]] |
 | TBD | Lecture 5 | *pending* |
 | TBD | Lecture 6 | *pending* |
 
@@ -149,6 +151,14 @@ Bridges RL theory and LLM agent training. Will Brown delivers a crash course on 
 **Key insight:** RL is finicky — small changes in learning rate/batch size cause dramatically different outcomes. The LLM-as-policy mapping is natural but requires careful tool design as a foundation before RL can converge.
 
 **Transcript:** [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture]] · **Summary:** [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4]] · **Notebook:** [grpo_intro.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec4-rl/grpo_intro.ipynb)
+
+### Office Hours with Kyle Corbitt (Jun 27)
+
+Unscripted Q&A session. Deep dives on: reward hacking mitigation (iterative process, LM judge patching, checkpoint rollback), RLHF workflow for low-volume human feedback (sales quoting agent use case), custom reward model training (HN title predictor — Llama 3.1 8B, log-score prediction, Liger Kernel), RL vs prompt engineering decision criteria, agent framework tradeoffs, jailbreaking via SFT (~10 examples usually sufficient).
+
+**Key insight:** "Much more bullish on not needing to do any of this stuff" — ungrounded LM judges work well as reward models for many tasks. For human feedback, start with context extraction before thinking about RL.
+
+**Transcript:** [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] · **Summary:** [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]]
 
 ## Included Credits
 
@@ -210,6 +220,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture]] — Lesson 3 transcript
 - [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4]] — Lesson 4: Introduction to Reinforcement Learning
 - [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture]] — Lesson 4 transcript
+- [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] — Office Hours with Kyle Corbitt
+- [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] — Office Hours transcript
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
