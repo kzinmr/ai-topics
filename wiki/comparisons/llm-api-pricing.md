@@ -330,6 +330,19 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 
 ## Monitoring & Update Policy
 
+> **⚠️ IMPORTANT**: Pricing data MUST be fetched directly from each provider's **official pricing page** at update time. Do NOT use cached wiki data, raw articles, or previously scraped snapshots as the source of truth. Always verify against the live page.
+
+### Fetch Procedure
+
+1. **Primary source**: `curl` each provider's pricing page and parse embedded JSON/HTML
+   - OpenAI: `curl -s 'https://developers.openai.com/api/docs/pricing' | grep -oP` on the embedded `__NEXT_DATA__` JSON (SPA — browser rendering may return stale data)
+   - Anthropic: `curl -s 'https://www.anthropic.com/pricing'`
+   - Google: `curl -s 'https://ai.google.dev/pricing'`
+   - DeepSeek: `curl -s 'https://platform.deepseek.com'`
+2. **Verify "last updated" date** on each page before writing prices
+3. **Cross-check**: if a price looks suspicious, compare against OpenRouter or provider blog announcements
+4. **Log source timestamp** in Changelog entry
+
 `llm-pricing-monitor` cron (weekly Monday 10:00 UTC) checks for:
 - New model releases from tracked providers
 - Permanent price changes
