@@ -77,4 +77,4 @@ The Foundation is legally separate from [[entities/openai|OpenAI Inc.]] but clos
 
 - [[concepts/people-first-ai-fund]] — Detailed fund overview
 - [[entities/openai]] — Parent organization
-- [[concepts/ai-safety]] — AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — AI safety landscape

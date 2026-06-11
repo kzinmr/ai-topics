@@ -101,7 +101,7 @@ Constitutional AI is closely tied to **[[concepts/synthetic-data|synthetic data]
 
 - [[entities/boaz-barak]] — Author of the comparative analysis of Claude Constitution vs. OpenAI Model Spec
 - [[entities/anthropic]] — Company behind Claude and Constitutional AI
-- [[concepts/ai-safety-and-alignment]] — Broader AI safety context
+- [[concepts/security-and-governance/ai-safety-and-alignment]] — Broader AI safety context
 - [[concepts/synthetic-data]] — CAI's role in synthetic data generation
 - [[concepts/rlaif]] — Reinforcement Learning from AI Feedback
 - [[concepts/anti-sycophancy]] — Related behavioral alignment challenge

@@ -137,7 +137,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 |-------|-------------|------|
 | Instruct Fine-Tuning | [[concepts/fine-tuning]], [[concepts/post-training]] | Both covered |
 | LoRA | [[concepts/peft-lora-and-qlora]], [[concepts/qlora]], [[entities/lora-fine-tuning]] | Well-covered with 3 pages |
-| RLHF | [[concepts/rlhf]], [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
+| RLHF | [[concepts/rlhf]], [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
 | DPO | [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] | Covered (including KTO/ORPO) |
 | Context Scaling (YaRN) | — | Missing |
 | Distillation | [[concepts/model-distillation]] | Covered |

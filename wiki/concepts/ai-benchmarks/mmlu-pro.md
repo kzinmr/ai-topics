@@ -165,7 +165,7 @@ From the Part 4 analysis (May 2, 2025):
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 - [[concepts/gpqa]] — GPQA (narrower, deeper science reasoning)
 - [[concepts/mmmu]] — MMMU (multimodal equivalent for vision + text)

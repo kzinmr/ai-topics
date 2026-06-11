@@ -78,7 +78,7 @@ Ball identifies a spectrum of regulatory challenges:
 ## Related
 
 - [[entities/anthropic]] — Mythos model developer
-- [[concepts/ai-safety]] — Core governance domain
+- [[concepts/security-and-governance/ai-safety]] — Core governance domain
 - [[entities/jack-clark]] — Anthropic policy lead, parallel AI governance voice
 - [[concepts/recursive-self-improvement]] — Related capability trajectory concerns
 - [[concepts/mythos-model]] — The model that triggered Ball's analysis

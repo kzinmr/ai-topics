@@ -77,6 +77,6 @@ The techno-optimist Singularitarian framework borrows religious structure withou
 - [[entities/eliezer-yudkowsky]] — The central figure
 - [[concepts/technological-singularity]] — The event itself
 - [[concepts/techno-pessimism]] — The counterpoint
-- [[concepts/ai-safety]] — The existential risk dimension
+- [[concepts/security-and-governance/ai-safety]] — The existential risk dimension
 - [[concepts/intelligence-explosion]] — The mechanism
 - [[concepts/recursive-self-improvement]] — The engine

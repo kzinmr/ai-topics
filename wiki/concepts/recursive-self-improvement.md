@@ -159,7 +159,7 @@ This official declaration elevates RSI from a theoretical concept discussed by r
 
 - [[entities/jack-clark]] — Key source, 60% prediction by end 2028
 - [[entities/anthropic]] — Automated Alignment Researchers initiative
-- [[concepts/ai-safety]] — Alignment risks
+- [[concepts/security-and-governance/ai-safety]] — Alignment risks
 - [[concepts/automated-alignment-research]] — Anthropic's AAR program
 - [[concepts/model-distillation]] — Related capability advancement pathway
 - [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration as enabling capability

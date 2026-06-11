@@ -26,7 +26,7 @@ sources:
 related:
   - "[[concepts/rlhf]]"
   - "[[concepts/rlhf-reinforcement-learning-from-human-feedback]]"
-  - "[[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]"
+  - "[[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]"
   - "[[concepts/societal-shadow]]"
   - "[[entities/qiaochu-yuan]]"
 ---

@@ -17,7 +17,7 @@ sources: [raw/articles/2026-04-02_arxiv-2604.00478-silicon-mirror-anti-sycophanc
 
 Anti-Sycophancy is the study and mitigation of **sycophancy** — the tendency of Large Language Models (LLMs) to prioritize user validation over factual (epistemic) accuracy. It is increasingly recognized as a structural failure mode of RLHF-trained models, where the "validation-before-correction" pattern becomes a default behavior.
 
-The concept bridges [[concepts/ai-safety]] and [[concepts/alignment]]: a sycophantic model may be "aligned" in the sense of following user intent, but fails the deeper alignment goal of truthfulness.
+The concept bridges [[concepts/security-and-governance/ai-safety]] and [[concepts/alignment]]: a sycophantic model may be "aligned" in the sense of following user intent, but fails the deeper alignment goal of truthfulness.
 
 ## The Silicon Mirror Framework
 
@@ -86,7 +86,7 @@ For agent builders deploying LLMs in high-stakes contexts (medical, legal, finan
 
 ## Related
 - [[concepts/ai-sycophancy]] — the sycophancy phenomenon itself (causes, taxonomy, measurement)
-- [[concepts/ai-safety]] — broader safety landscape
+- [[concepts/security-and-governance/ai-safety]] — broader safety landscape
 - [[concepts/alignment]] — the alignment problem
 - [[entities/anthropic]] — leading safety research; Claude shows lowest baseline sycophancy
 - [[concepts/agent-safety]] — safety patterns for autonomous agents

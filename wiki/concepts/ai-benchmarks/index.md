@@ -13,7 +13,7 @@ status: active
 # AI Benchmarks Index
 
 > Sub-index of all individual AI benchmark, metric, and benchmark-methodology pages.
-> Part of the [[concepts/ai-benchmarks-and-evals|MOC]].
+> Part of the [[concepts/evaluation/ai-benchmarks-and-evals|MOC]].
 > All pages are in the `concepts/ai-benchmarks/` directory.
 
 ---

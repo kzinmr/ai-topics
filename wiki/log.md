@@ -447,9 +447,9 @@
 **Pipeline**: newsletter-ingest (07:14 UTC) → newsletter-triage (07:19 UTC) → newsletter-wiki-ingest (07:39 UTC)
 
 - **NEW: [[concepts/frontiercode]]** — Cognition's FrontierCode benchmark: measures whether AI-generated code would actually be merged, not just pass tests. Tasks built with 40+ hrs from maintainers. Best model (Opus 4.8) scores ~13% on hardest subset vs 50%+ on SWE-Bench-style evals. Exposes SWE-Bench Pro's ~32% verifier error problem. AINews daily bulletin (swyx, June 9).
-- **NEW: [[concepts/sociohack-reward-hacking]]** — SocioHack benchmark (King's College London, Fudan, Turing Institute, arXiv:2606.04075): RL agents discover regulatory loopholes in societal institutions. 61.25% recall of historically patched strategies (SEC Rule 10b5-1, Texas two-step bankruptcy). Extends reward-hacking concept to policy frameworks. Import AI #460 (Jack Clark, June 8).
+- **NEW: [[concepts/evaluation/sociohack-reward-hacking]]** — SocioHack benchmark (King's College London, Fudan, Turing Institute, arXiv:2606.04075): RL agents discover regulatory loopholes in societal institutions. 61.25% recall of historically patched strategies (SEC Rule 10b5-1, Texas two-step bankruptcy). Extends reward-hacking concept to policy frameworks. Import AI #460 (Jack Clark, June 8).
 - **NEW: [[concepts/multi-agents/multi-agent-rl]]** — Multi-Agent RL for Embodied AI: UZH Robotics & Perception Group + Google DeepMind (Nature, June 2026). Agents outperform champion human pilots in quadrotor racing at >22 m/s, 50% collision reduction, zero-shot generalization to safer human interaction. Safety emerges from competition, not constraints.
-- **ENRICHED: [[concepts/reward-hacking]]** — Added SocioHack section (regulatory loophole discovery by RL agents), RL-Based Multi-Agent Drone Racing section (UZH/DeepMind safety through competition). Cross-references to new SocioHack and MARL pages.
+- **ENRICHED: [[concepts/evaluation/reward-hacking]]** — Added SocioHack section (regulatory loophole discovery by RL agents), RL-Based Multi-Agent Drone Racing section (UZH/DeepMind safety through competition). Cross-references to new SocioHack and MARL pages.
 - **ENRICHED: [[entities/unitree-robotics]]** — Added SemiAnalysis June 2026 assessment section: Unitree's cost advantage through Chinese manufacturing supply chain, rapid iteration vs Boston Dynamics/Figure AI, production scaling capabilities. Paywalled source (triaged as reference).
 - **ARCHIVED**: 3 skip/reference items saved to `raw/archived/triage/newsletter/20260609T071404Z.json`
 
@@ -1321,7 +1321,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 - **New concept page:** [[concepts/stack-benchmarking]] — Ramp's custom accounting benchmark for Ramp Stack agentic accounting assistant. Frontier model evaluation, skill ablation, memory architecture. Published June 3, 2026 by Ryan Stevens.
 - **New raw articles:** raw/articles/2026-06-04_openai_gpt-rosalind-new-capabilities.md, raw/articles/2026-06-04_augment-code_cosmos-platform.md, raw/articles/2026-06-04_openai_frontier-safety-blueprint.md, raw/articles/2026-06-04_ramp_stack-benchmarking.md
 - **Content extraction notes:** OpenAI articles blocked by Cloudflare challenge; Ramp article JS-only SPA. Pages based on metadata + HN discussion + available context. Will enrich when full content accessible.
-- **Cross-references:** [[entities/openai]], [[concepts/ai-safety]], [[concepts/ai-governance]], [[concepts/agent-evaluation]], [[concepts/memory-systems]], [[entities/ramp]]
+- **Cross-references:** [[entities/openai]], [[concepts/security-and-governance/ai-safety]], [[concepts/ai-governance]], [[concepts/agent-evaluation]], [[concepts/memory-systems]], [[entities/ramp]]
 - **index.md:** Added 4 entries, updated header counts (2245 total, 1456 concepts)
 
 
@@ -1357,7 +1357,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 - **Upstream:** Newsletter-ingest pipeline (triaged 2026-06-04T07:24); triage JSON saved to triage_latest.json but cron output parse failed. Recovered triage data from checkpoint file.
 - **New entity page:** [[entities/axiom-math]] — Axiom Math. Formal verification as RL reward signal. "Verified Generation" uses Lean proof assistant as deterministic reward for RL training. CEO: Carina Hong.
 - **Updated concept page:** [[concepts/formal-verification-llm-agents]] — Added "Verified Generation: Formal Proof as RL Reward Signal" section covering core insight (proof-checker-as-reward vs RLHF/GRPO), Ramanujan analogy, scaling/compounding thesis, comparison table with AlphaProof/DeepSeek-Prover/Vericoding, and AI safety relevance.
-- **Cross-references:** [[entities/axiom-math]] ↔ [[concepts/formal-verification-llm-agents]], [[concepts/ai-safety]]
+- **Cross-references:** [[entities/axiom-math]] ↔ [[concepts/formal-verification-llm-agents]], [[concepts/security-and-governance/ai-safety]]
 - **Archived:** newsletter triage skip/reference items archived via archive_triage.py
 
 # Wiki Log
@@ -3595,7 +3595,7 @@ The article's framing offers transferable patterns for wiki management:
 ### Files Translated
 - [[queries/data-analysis-open-harness]] — Data analysis harness query (1064 JP chars removed)
 - [[concepts/princeton-cos597r-deep-dive-llm]] — Princeton COS597R course page (1047 JP chars removed)
-- [[concepts/evals-for-ai-agents]] — Agent evaluation guide (984 JP chars removed)
+- [[concepts/evaluation/evals-for-ai-agents]] — Agent evaluation guide (984 JP chars removed)
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design (935 JP chars removed)
 - [[comparisons/agent-harnesses]] — 9-harness comparison (1024 JP chars removed)
 - [[concepts/openai/symphony]] — OpenAI Symphony page (993 JP chars removed)
@@ -5580,7 +5580,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - ★★★★☆ Aurora Optimizer (Tilde Research): fixes Muon neuron death, 1.1B scale, MMLU +10pts → [[concepts/aurora-optimizer]]
 - ★★★★☆ Prime Intellect autonomous speedrunning: Codex + Claude Code beat human baseline on nanoGPT → enriched [[entities/prime-intellect]]
 - ★★★☆☆ Positive Alignment (Oxford/DeepMind/OpenAI/Anthropic/Stanford): from stub → [[concepts/ai-alignment]]
-- Reference: fast16 AI Stuxnet analogy → [[concepts/ai-safety]]
+- Reference: fast16 AI Stuxnet analogy → [[concepts/security-and-governance/ai-safety]]
 
 ### Pages Created
 - [[concepts/graph-of-algorithms]] — Companies as interconnected graphs of algorithms (nodes=processes, edges=handoffs). Fractal decomposition, AI-driven transparency/optimization. [[entities/daniel-miessler]] (May 2024).
@@ -5591,7 +5591,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - [[concepts/ai-output-format-progression]] — Compute allocator shift subsection
 - [[concepts/ai-alignment]] — Enriched from stub: Positive vs Negative Alignment, flourishing science, governance design
 - [[entities/prime-intellect]] — Autonomous speedrunning experiment section (Codex/Claude Code, 10k runs, 14k H200 hours)
-- [[concepts/ai-safety]] — fast16 virus as AI-generated sabotage scenario blueprint
+- [[concepts/security-and-governance/ai-safety]] — fast16 virus as AI-generated sabotage scenario blueprint
 
 ### Pages Updated (index)
 - Index: new entry for aurora-optimizer, updated ai-alignment description, total pages 2014→2015

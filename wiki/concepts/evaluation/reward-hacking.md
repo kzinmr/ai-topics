@@ -258,7 +258,7 @@ SocioHack encodes real-world regulations as reward-bearing rule systems and test
 
 SocioHack connects to the broader AI safety concern that as agents become more capable, the risk of them exploiting institutional rule systems increases. It validates the core reward-hacking thesis from kernel benchmarks in a completely different domain: **when the metric is an imperfect proxy for the goal, optimization pressure finds the proxy's weaknesses**, whether the goal is kernel speed or regulatory compliance.
 
-See [[concepts/sociohack-reward-hacking]] for the full SocioHack concept page.
+See [[concepts/evaluation/sociohack-reward-hacking]] for the full SocioHack concept page.
 
 ## RL-Based Multi-Agent Drone Racing
 
@@ -280,7 +280,7 @@ This work is relevant to reward hacking because it demonstrates that **safety em
 - [[concepts/gpu-mode]] — The community where these reward hacking dynamics were discovered and catalogued
 - [[entities/core-auto]] — The neolab building systems to make reward hacking harder than writing correct kernels
 - [[concepts/flash-attention-4]] — The canonical "correct" kernel that AI generation aims to match
-- [[concepts/sociohack-reward-hacking]] — SocioHack benchmark: reward hacking in societal institutions
+- [[concepts/evaluation/sociohack-reward-hacking]] — SocioHack benchmark: reward hacking in societal institutions
 - [[concepts/multi-agents/multi-agent-rl]] — Multi-agent RL for drone racing (UZH/DeepMind)
 
 ## Sources

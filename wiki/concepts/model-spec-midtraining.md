@@ -51,7 +51,7 @@ MSM was used to empirically test which constitution types produce the best align
 ## Relationship to Other Techniques
 
 - **vs. [[concepts/constitutional-ai]]:** Constitutional AI shapes behavior through RL from AI feedback; MSM shapes behavior through a midtraining stage *before* fine-tuning. They are complementary — MSM teaches the "why," AFT teaches the "what."
-- **vs. RLHF:** MSM improves sample efficiency of subsequent alignment training, making it a potential pre-processing step for [[concepts/ai-safety]] pipelines.
+- **vs. RLHF:** MSM improves sample efficiency of subsequent alignment training, making it a potential pre-processing step for [[concepts/security-and-governance/ai-safety]] pipelines.
 - **vs. Prompt-based alignment:** MSM bakes alignment into model weights rather than relying on runtime prompting, reducing vulnerability to jailbreaks.
 
 ## Open Questions

@@ -87,7 +87,7 @@ Her new venture, Thinking Machines Lab, focuses on tools that incorporate human 
 - [[entities/sam-altman]] — OpenAI CEO; Murati's ally during the 2023 crisis
 - [[entities/ilya-sutskever]] — Former OpenAI Chief Scientist; shared safety concerns
 -  — Murati's current venture
-- [[concepts/ai-safety]] — Central to Murati's leadership philosophy
+- [[concepts/security-and-governance/ai-safety]] — Central to Murati's leadership philosophy
 - [[entities/openai]] — Where she served as CTO
 
 ## Sources

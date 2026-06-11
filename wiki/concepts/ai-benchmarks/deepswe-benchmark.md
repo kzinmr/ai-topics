@@ -119,12 +119,12 @@ DeepSWE arrives as the benchmark market becomes a strategic battleground. Scale 
 [deepswe-benchmark] ──embodies──→ [concept: jagged-intelligence]
 ```
 
-This section informs graph queries: authored by [[entities/datacurve]] and [[entities/serena-ge]], directly contrasts with [[concepts/ai-benchmarks/swe-bench]], relates to [[concepts/frontier-swe-benchmark]] and [[concepts/evals-for-ai-agents]].
+This section informs graph queries: authored by [[entities/datacurve]] and [[entities/serena-ge]], directly contrasts with [[concepts/ai-benchmarks/swe-bench]], relates to [[concepts/frontier-swe-benchmark]] and [[concepts/evaluation/evals-for-ai-agents]].
 
 ## Related Concepts
 - [[concepts/ai-benchmarks/swe-bench]] — The benchmark DeepSWE critiques and improves upon
 - [[concepts/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark by Proximal
-- [[concepts/evals-for-ai-agents]] — Broader agent evaluation framework
+- [[concepts/evaluation/evals-for-ai-agents]] — Broader agent evaluation framework
 - [[concepts/swe-bench-agent-scaffolding]] — Agent harness design for SWE-bench tasks
 - [[concepts/jagged-intelligence]] — Uneven capability profiles exposed by better benchmarks
 

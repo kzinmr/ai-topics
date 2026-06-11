@@ -17,7 +17,7 @@ sources:
   - raw/newsletters/2026-05-10-trustworthy-ai-is-really-about-delegated-agency.md
 related:
   - "[[concepts/security-and-governance/agent-governance]]"
-  - "[[concepts/ai-safety]]"
+  - "[[concepts/security-and-governance/ai-safety]]"
   - "[[concepts/security-and-governance/agentic-security]]"
   - "[[concepts/security-and-governance/agent-iam]]"
   - "[[entities/anthropic]]"
@@ -162,7 +162,7 @@ Enterprise vendors (e.g., Appier) report blocking 80% of risky agent responses t
 
 ## Related
 - [[concepts/security-and-governance/agent-governance]] — Broader agent governance concepts
-- [[concepts/ai-safety]] — AI safety research and frameworks
+- [[concepts/security-and-governance/ai-safety]] — AI safety research and frameworks
 - [[concepts/security-and-governance/agentic-security]] — Security patterns for agent systems
 - [[concepts/security-and-governance/agent-iam]] — Identity and access management for agents
 - [[concepts/security-and-governance/agent-identity-verification]] — Verifying agent identities

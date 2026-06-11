@@ -214,7 +214,7 @@ Jun 2026  Fable 5/Mythos 5      Mythos-class + safety classifiers
 ## See Also
 
 - [[concepts/claude/system-cards]] — Full index of all 17 system cards
-- [[concepts/model-cards-system-cards]] — General framework for model/system cards
+- [[concepts/security-and-governance/model-cards-system-cards]] — General framework for model/system cards
 - [[concepts/gpt/gpt-system-card-milestones]] — OpenAI's parallel system card milestones (comparison)
 - [[concepts/claude-code--history]] — Claude Code development history (adoption timeline)
 - [[entities/anthropic]] — Anthropic entity page

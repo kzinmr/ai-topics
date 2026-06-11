@@ -19,7 +19,7 @@ sources:
   - https://www.textarena.ai/blog
   - https://arxiv.org/abs/2504.11442
 related:
-  - "[[concepts/ai-benchmarks-and-evals]]"
+  - "[[concepts/evaluation/ai-benchmarks-and-evals]]"
   - "[[concepts/ai-benchmarks/unstable-baselines]]"
 ---
 
@@ -171,7 +171,7 @@ Complements other game-based benchmarks like [[concepts/ai-benchmarks/factorio-l
 - [[concepts/ai-benchmarks/unstable-baselines]] — UnstableBaselines RL library for TextArena
 - [[concepts/ai-benchmarks/factorio-learning-environment]] — Another game-based agent evaluation
 - [[concepts/ai-benchmarks/agent-survival-benchmark]] — PvP agent survival
-- [[concepts/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
 - [[entities/florian-brand]] — @xeophon, benchmark analyst who tracks game-based evals
 
 ## Sources

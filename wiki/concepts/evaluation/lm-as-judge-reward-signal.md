@@ -17,7 +17,7 @@ sources:
 
 LM-as-Judge uses a strong LLM to evaluate the outputs of another model, replacing or augmenting human evaluators and deterministic metrics. Rather than relying on exact-match or hand-crafted reward functions, a capable model is prompted to judge quality, correctness, or preference between candidate outputs. This approach is especially powerful for domains where ground-truth labels are expensive, unavailable, or inherently subjective.
 
-The methodology is central to [[concepts/reward-engineering]] for tasks that lack verifiable answers, and serves as a scalable alternative to human annotation pipelines.
+The methodology is central to [[concepts/evaluation/reward-engineering]] for tasks that lack verifiable answers, and serves as a scalable alternative to human annotation pipelines.
 
 ## Calibration Methodology
 
@@ -44,10 +44,10 @@ LM judges serve as reward signals in [[concepts/grpo-rl-training]] and other rei
 - **Reward signal for GRPO**: The judge scores or ranks multiple rollouts per training group, providing the relative preference signal that GRPO requires.
 - **Without ground truth**: In experiments, O3 comparing 4 rollouts per group converged faster than training with ground-truth-based rewards. The judge's relative comparison signal proved more efficient than absolute correctness labels for many tasks.
 - **Cost profile**: Judge inference costs approximately $1,000 per run, compared to $30–50 for the training compute itself. This makes the judge the dominant cost, but the quality gains often justify it.
-- **Ungrounded judges work surprisingly well**: Kyle Corbitt noted being "much more bullish on not needing custom reward models" — off-the-shelf LM judges without task-specific fine-tuning provide effective reward signals across diverse tasks. This simplifies [[concepts/reward-engineering]] significantly.
+- **Ungrounded judges work surprisingly well**: Kyle Corbitt noted being "much more bullish on not needing custom reward models" — off-the-shelf LM judges without task-specific fine-tuning provide effective reward signals across diverse tasks. This simplifies [[concepts/evaluation/reward-engineering]] significantly.
 - **Model choice matters**: Not all models serve as reliable judges. Qwen 3 32B collapsed as a judge, producing unreliable evaluations. Judge selection requires empirical validation on your task domain.
 
-Beware of [[concepts/reward-hacking]] when using LM judges at scale — models may learn to exploit judge biases (e.g., verbosity preference, specific formatting patterns) rather than genuinely improving task performance.
+Beware of [[concepts/evaluation/reward-hacking]] when using LM judges at scale — models may learn to exploit judge biases (e.g., verbosity preference, specific formatting patterns) rather than genuinely improving task performance.
 
 ## For Non-Verifiable Domains
 
@@ -65,6 +65,6 @@ RULER is a methodology that takes LM-as-Judge to its logical extreme:
 - **Core insight**: Comparing multiple solutions side-by-side is a fundamentally easier task for LLMs than assigning absolute scores to individual outputs. Relative judgment is more robust and requires less calibration.
 - **Remarkable results**: Qwen 2.5 + RULER beats O3 on 4/4 evaluation tasks and beats hand-written rewards on 3/4 tasks. This demonstrates that a well-designed relative comparison framework can outperform both stronger models with ground-truth rewards and carefully engineered custom reward functions.
 
-RULER represents a paradigm shift in [[concepts/reward-engineering]]: instead of investing effort in crafting reward functions, leverage the emergent judgment capabilities of LLMs themselves. See also [[concepts/agents-mcp-rl-course]] for practical applications of these techniques in agent training.
+RULER represents a paradigm shift in [[concepts/evaluation/reward-engineering]]: instead of investing effort in crafting reward functions, leverage the emergent judgment capabilities of LLMs themselves. See also [[concepts/agents-mcp-rl-course]] for practical applications of these techniques in agent training.
 
 > **Note**: For general LM-as-Judge evaluation frameworks, bias types, and best practices, see [[concepts/evaluation/llm-as-judge]]. This page focuses specifically on using LM judges as RL reward signals.

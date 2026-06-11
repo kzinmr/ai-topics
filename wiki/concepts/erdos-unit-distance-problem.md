@@ -78,4 +78,4 @@ The result demonstrates a specific AI advantage in mathematics: **bias-free expl
 - [[entities/openai|OpenAI]] — the company behind the model
 - [[concepts/reasoning|Reasoning]] — the capability demonstrated
 - [[concepts/mathematical-ai|AI in Mathematics]]
-- [[concepts/ai-safety|AI Safety]] — implications for autonomous capability
+- [[concepts/security-and-governance/ai-safety|AI Safety]] — implications for autonomous capability

@@ -109,5 +109,5 @@ If a service charges significantly above market GPU rates without clear added va
 - [[concepts/grpo-rl-training]] — the GRPO algorithm and training loop
 - [[concepts/agents-mcp-rl-course]] — the course these notes derive from
 - [[concepts/peft-lora-and-qlora]] — LoRA fundamentals and quantized variants
-- [[concepts/reward-engineering]] — designing reward signals for RL training
+- [[concepts/evaluation/reward-engineering]] — designing reward signals for RL training
 - [[entities/openpipe]] — GRPO infrastructure provider

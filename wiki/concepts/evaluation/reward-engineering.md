@@ -77,7 +77,7 @@ Process rewards require more annotation effort but can dramatically improve samp
 
 ## Reward Hacking Mitigation
 
-Reward hacking — where the agent finds unintended shortcuts to maximize reward without actually solving the task — is the central challenge of reward engineering. See [[concepts/reward-hacking]] for a comprehensive taxonomy.
+Reward hacking — where the agent finds unintended shortcuts to maximize reward without actually solving the task — is the central challenge of reward engineering. See [[concepts/evaluation/reward-hacking]] for a comprehensive taxonomy.
 
 ### The Iterative Mitigation Cycle
 

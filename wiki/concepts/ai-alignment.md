@@ -55,7 +55,7 @@ A position paper from **Oxford, Google DeepMind, OpenAI, Anthropic, Stanford, Tu
 
 ## Related Pages
 
-- [[concepts/ai-safety]] — Safety engineering approaches
+- [[concepts/security-and-governance/ai-safety]] — Safety engineering approaches
 - [[concepts/rlhf]] — Primary alignment technique
 - [[concepts/constitutional-ai]] — Encoding principles rather than learning from feedback
 - [[concepts/moloch-multipolar-trap]] — Coordination problems underlying AI risk

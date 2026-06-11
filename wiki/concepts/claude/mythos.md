@@ -158,7 +158,7 @@ Marcus notes that several authors of the original 2019 GPT-2 safety post (includ
 - [[concepts/claude/fable-5]] — Mythos-class model released for general use (June 2026)
 - 
 - [[concepts/project-glasswing]]
-- [[concepts/ai-safety]]
+- [[concepts/security-and-governance/ai-safety]]
 
 ## References
 

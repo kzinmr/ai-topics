@@ -86,7 +86,7 @@ The Singularity functions as a secular eschatology within transhumanist thought.
 - [[entities/eliezer-yudkowsky]] — The thinker who articulated this vision
 - [[concepts/techno-optimism]] — Techno-optimism as worldview
 - [[concepts/techno-pessimism]] — The counterpoint
-- [[concepts/ai-safety]] — Why the Singularity might kill us
+- [[concepts/security-and-governance/ai-safety]] — Why the Singularity might kill us
 - [[concepts/intelligence-explosion]] — The core dynamic in detail
 - [[concepts/recursive-self-improvement]] — The engine of Singularity
 - [[entities/vernor-vinge]] — Coined the term

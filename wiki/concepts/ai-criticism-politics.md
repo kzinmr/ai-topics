@@ -47,7 +47,7 @@ This adds a layer to the political dimensions of AI criticism — the framing an
 - [[concepts/ai-autonomy-debate]] — Broader debate about AI autonomy levels
 - [[concepts/coding-agents/ai-coding-agent-criticism]] — Specific critiques of AI coding agents
 - [[concepts/excessive-agency]] — AI agents taking too much control
-- [[concepts/ai-safety]] — AI safety concerns
+- [[concepts/security-and-governance/ai-safety]] — AI safety concerns
 
 ## Sources
 

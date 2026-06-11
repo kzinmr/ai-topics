@@ -112,7 +112,7 @@ OpenAI uses Codex with skills to maintain the Agents SDK repos (Python + TypeScr
 
 ### Systematic Eval Methodology
 
-OpenAI recommends evaluating skills with the same rigor as any prompt. The methodology from their [[evals-for-ai-agents|evals framework]]:
+OpenAI recommends evaluating skills with the same rigor as any prompt. The methodology from their [[concepts/evaluation/evals-for-ai-agents|evals framework]]:
 
 1. **Define success** -- outcome goals, process goals, style goals, efficiency goals
 2. **Create targeted prompts** -- 10-20 prompts covering explicit invocation, implicit invocation, and negative controls (`should_trigger=false`)
@@ -151,7 +151,7 @@ The skill behind Claude's document editing capabilities:
 - [[concepts/claude-code/claude-code-best-practices]] — Claude Code best practices
 - [[agent-skills-skillmd]] — SKILL.md format details
 - [[codex]] — OpenAI Codex
-- [[evals-for-ai-agents]] — Evals for AI agents
+- [[concepts/evaluation/evals-for-ai-agents]] — Evals for AI agents
 - [[harness-engineering]] — Harness engineering
 
 ## Skills Ecosystem: Practitioner Perspectives

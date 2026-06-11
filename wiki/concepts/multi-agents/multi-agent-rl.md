@@ -69,7 +69,7 @@ Multi-agent RL differs from the single-agent RLHF and GRPO paradigms dominant in
 
 ## Related Concepts
 
-- [[concepts/reward-hacking]] — MARL provides an alternative to reward hacking mitigation through emergent safety
+- [[concepts/evaluation/reward-hacking]] — MARL provides an alternative to reward hacking mitigation through emergent safety
 - [[concepts/rlhf]] — Single-agent RL paradigm that MARL extends
 - [[concepts/grpo]] — Rule-based reward paradigm
 - [[concepts/agentic-engineering]] — How agents are controlled and orchestrated

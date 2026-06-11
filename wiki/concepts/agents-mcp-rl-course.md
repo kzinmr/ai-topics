@@ -226,7 +226,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[concepts/agentic-rl]] — Applying RL to train LLM agents
 - [[concepts/grpo-rl-training]] — Group Relative Policy Optimization
 - [[concepts/grpo-infrastructure]] — VRAM math, GPU architecture, LoRA, async RL
-- [[concepts/reward-engineering]] — Reward function design for agent RL training
+- [[concepts/evaluation/reward-engineering]] — Reward function design for agent RL training
 - [[concepts/evaluation/lm-as-judge-reward-signal]] — LM-as-judge evaluation methodology for RL rewards (see also [[concepts/evaluation/llm-as-judge]])
 - [[concepts/harness-engineering/agent-design-patterns]] — Model selection, tool calling, async patterns
 - [[concepts/mcp]] — Model Context Protocol for tool integration
@@ -256,7 +256,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 
 **LM Judge Calibration**: Compare multiple judge models (O3, GPT-4, Claude) for consistency. Pairwise comparison with position bias randomization. Confidence intervals. See [[concepts/evaluation/lm-as-judge-reward-signal]].
 
-**Reward Hacking Mitigation**: Iterative process — observe rollouts → identify hacks (usually "not subtle") → add LM judge penalties → checkpoint rollback. ~10 SFT examples usually sufficient to bypass safety alignment ("pretty superficial"). See [[concepts/reward-hacking]].
+**Reward Hacking Mitigation**: Iterative process — observe rollouts → identify hacks (usually "not subtle") → add LM judge penalties → checkpoint rollback. ~10 SFT examples usually sufficient to bypass safety alignment ("pretty superficial"). See [[concepts/evaluation/reward-hacking]].
 
 ### RL Training Pipeline (Lessons 4-6)
 
@@ -331,7 +331,7 @@ Dylan Patel's comprehensive report on RL infrastructure bottlenecks complements 
 - **Data as moat**: Quality > quantity for RL data; OpenAI RFT for enterprise customization; STEM PhDs recruited for rubric writing
 - **Recursive self-improvement**: Already happening via compiler/kernel optimization RL; Claude 4 system card evaluations
 
-See [[concepts/reward-hacking]] for the expanded reward hacking taxonomy including Semi Analysis examples.
+See [[concepts/evaluation/reward-hacking]] for the expanded reward hacking taxonomy including Semi Analysis examples.
 
 **Source:** [Scaling RL: Environments, Reward Hacking, Agents, Scaling Data](https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data) (paywall — preview covers ~80% of content)
 

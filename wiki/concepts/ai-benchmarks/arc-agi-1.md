@@ -116,7 +116,7 @@ This definition separates intelligence from:
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
+- [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/arc-agi-2|ARC-AGI-2]] — The successor benchmark (released 2025)
 - [[concepts/hle|Humanity's Last Exam]] — Another benchmark designed to resist memorization
 

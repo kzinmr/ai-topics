@@ -208,7 +208,7 @@
 - touched:
  - [[entities/hugo-bowne-anderson]]
  - [[entities/hugo-bowne]] (deleted)
- - [[concepts/ai-safety]]
+ - [[concepts/security-and-governance/ai-safety]]
  - [[config/feeds/x-accounts.yaml]]
 
 ## [2026-05-13] update | Max Rumpf entity page + SID-1 concept page created

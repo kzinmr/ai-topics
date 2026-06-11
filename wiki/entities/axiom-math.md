@@ -47,4 +47,4 @@ Axiom Math is a company developing **Verified Generation**, a methodology that u
 
 ## Relevance
 
-Connects to [[concepts/formal-verification-llm-agents]] (formally verified code for LLM agents) and [[concepts/ai-safety]] (deterministic vs statistical alignment guarantees).
+Connects to [[concepts/formal-verification-llm-agents]] (formally verified code for LLM agents) and [[concepts/security-and-governance/ai-safety]] (deterministic vs statistical alignment guarantees).

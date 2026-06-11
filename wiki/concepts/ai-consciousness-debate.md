@@ -103,5 +103,5 @@ Pope Leo XIV's May 2026 encyclical *Magnifica Humanitas* addressed AI and human 
 
 - [[entities/gary-marcus]] — Cognitive scientist, LLM critic
 - [[entities/anthropic]] — Creator of Claude
-- [[concepts/ai-safety-and-alignment]] — AI safety frameworks
+- [[concepts/security-and-governance/ai-safety-and-alignment]] — AI safety frameworks
 - [[concepts/llm-evaluation]] — Understanding LLM capabilities and limits

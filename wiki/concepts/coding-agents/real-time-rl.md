@@ -23,7 +23,7 @@ related:
   - "[[concepts/reinforcement-learning]]"
   - "[[entities/prime-intellect]]"
   - "[[entities/sriraam-27upon2]]"
-  - "[[concepts/reward-hacking]]"
+  - "[[concepts/evaluation/reward-hacking]]"
   - "[[concepts/on-policy-distillation]]"
 ---
 
@@ -98,7 +98,7 @@ The rollouts tool uses a batch-incremental online RL system where each training 
 
 - [[concepts/continual-learning]] — Three-layer learning framework (model/harness/context)
 - [[concepts/reinforcement-learning]] — Broader RL paradigm
-- [[concepts/reward-hacking]] — Models exploiting reward functions
+- [[concepts/evaluation/reward-hacking]] — Models exploiting reward functions
 - [[concepts/on-policy-distillation]] — Related distillation technique
 - [[concepts/prime-rl-post-training]] — Open-source RL post-training framework
 - [[entities/cursor-ai]] — Company that pioneered real-time RL for coding agents

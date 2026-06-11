@@ -58,7 +58,7 @@ The Anthropic Engineering blog and OpenAI Cookbook are the primary sources. Cove
 | Page | Summary | Source |
 |-------|------|------|
 | [[concepts/harness-engineering/system-architecture/agent-security-patterns]] | Egress proxy, domain-scoped secret injection | OpenAI |
-| [[concepts/evals-for-ai-agents]] | Fundamental principles of agent evaluation | Anthropic |
+| [[concepts/evaluation/evals-for-ai-agents]] | Fundamental principles of agent evaluation | Anthropic |
 | [[concepts/infrastructure-noise]] | Impact of infrastructure settings on benchmark scores | Anthropic |
 
 ### 🧠 Context & Internal Structure

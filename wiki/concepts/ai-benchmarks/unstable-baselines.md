@@ -20,7 +20,7 @@ sources:
   - https://arxiv.org/abs/2504.11442
 related:
   - "[[entities/textarena]]"
-  - "[[concepts/ai-benchmarks-and-evals]]"
+  - "[[concepts/evaluation/ai-benchmarks-and-evals]]"
   - "[[concepts/ai-benchmarks/factorio-learning-environment]]"
 ---
 
@@ -231,7 +231,7 @@ From the documented example training Qwen3-1.7B-Base:
 ## Related Pages
 
 - [[entities/textarena]] — TextArena platform (games, evaluation, MindGames competition)
-- [[concepts/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
 - [[concepts/ai-benchmarks/factorio-learning-environment]] — Another game-based agent evaluation
 - [[concepts/ai-benchmarks/agent-survival-benchmark]] — PvP agent survival benchmark
 - [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — Agent scaffolding design (contrast: text games vs. software engineering)

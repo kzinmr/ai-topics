@@ -109,7 +109,7 @@ Alexander's transhumanist position: build a **Friendly superintelligence** that 
 
 ## Connections to Existing Wiki Concepts
 
-### [[concepts/ai-safety]] — The Engineering Approach
+### [[concepts/security-and-governance/ai-safety]] — The Engineering Approach
 The AI safety community's focus on alignment, interpretability, and scalable oversight is a direct response to the Moloch problem. Without coordination, a superintelligence race would be the ultimate multipolar trap.
 
 ### [[concepts/techno-pessimism]] — Coordination Problems Are Primary

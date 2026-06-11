@@ -16,7 +16,7 @@ sources:
   - https://arxiv.org/abs/2405.02716
   - wiki/raw/articles/2025-04-29_xeophon-ai-benchmark-eval-series.md
 related:
-  - "[[concepts/ai-benchmarks-and-evals]]"
+  - "[[concepts/evaluation/ai-benchmarks-and-evals]]"
   - "[[concepts/evaluation/ai-evaluation]]"
 ---
 
@@ -72,7 +72,7 @@ Xeophon frames Vibe-Eval as a philosophical statement as much as a benchmark. Th
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
 - [[concepts/evaluation/ai-evaluation]] — AI evaluation methods (Langfuse Academy)
 - [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs monitoring debate
 - [[concepts/evaluation/evaluation-flywheel]] — Evaluation as continuous improvement

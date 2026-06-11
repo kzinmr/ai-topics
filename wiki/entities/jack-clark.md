@@ -93,7 +93,7 @@ Clark writes with a distinctive combination of technical precision and literary 
 - [[entities/anthropic]] — Co-founder and Head of Policy
 - [[entities/dario-amodei]] — Anthropic CEO, co-founder
 - [[concepts/recursive-self-improvement]] — Core concept advanced in Import AI 455
-- [[concepts/ai-safety]] — Policy and alignment work
+- [[concepts/security-and-governance/ai-safety]] — Policy and alignment work
 - [[concepts/automated-alignment-research]] — Anthropic's AAR initiative
 - [[concepts/model-distillation]] — Related policy debates
 

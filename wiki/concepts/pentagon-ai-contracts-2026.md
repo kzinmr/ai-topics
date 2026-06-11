@@ -36,5 +36,5 @@ The Pentagon's exclusion of Anthropic despite its leading technical capabilities
 ## Related Pages
 - [[entities/anthropic]] — Anthropic's safety-first stance
 - [[entities/openai]] — OpenAI government contracts
-- [[concepts/ai-safety]] — AI safety debates
+- [[concepts/security-and-governance/ai-safety]] — AI safety debates
 - [[concepts/ai-governance]] — AI governance frameworks

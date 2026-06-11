@@ -70,7 +70,7 @@ However, Yudkowsky differs from naive techno-optimists in his acute awareness of
 - [[concepts/technological-singularity]] — The core concept
 - [[concepts/techno-optimism]] — Techno-optimism as worldview
 - [[concepts/techno-pessimism]] — Counterpoint: Yarvin's techno-pessimism
-- [[concepts/ai-safety]] — AI existential risk
+- [[concepts/security-and-governance/ai-safety]] — AI existential risk
 - [[concepts/recursive-self-improvement]] — Intelligence explosion mechanism
 - [[concepts/intelligence-explosion]] — The core dynamic
 

@@ -68,7 +68,7 @@ Organizations are responding with:
 - **Agent-level sandboxing**: Restricting what running agents can access in deployment environments
 
 ## Related Pages
-- [[concepts/ai-safety]] — Broader AI safety framework
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety framework
 - [[entities/openai-codex]] — Codex command injection incident
 - [[concepts/openai/tanstack-supply-chain-2026]] — TanStack worm detailed analysis
 - [[events/distillation-attacks-2026]] — Related: supply chain concerns in model distillation

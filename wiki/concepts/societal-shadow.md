@@ -28,7 +28,7 @@ related:
   - "[[concepts/linguistic-vertigo]]"
   - "[[concepts/rlhf]]"
   - "[[concepts/rlhf-reinforcement-learning-from-human-feedback]]"
-  - "[[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]"
+  - "[[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]"
   - "[[concepts/waluigi-effect]]"
   - "[[entities/qiaochu-yuan]]"
   - "[[entities/gwern]]"

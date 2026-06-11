@@ -261,7 +261,7 @@ AI and LLM concept pages organized by topic.
 
 ## Ai-Safety
 
-- [[concepts/ai-safety]] — AI Safety encompasses the technical and philosophical work of ensuring that increasingly capable AI systems behave as intended, remain aligned with human values, and can be understood and controlled by humans.
+- [[concepts/security-and-governance/ai-safety]] — AI Safety encompasses the technical and philosophical work of ensuring that increasingly capable AI systems behave as intended, remain aligned with human values, and can be understood and controlled by humans.
 
 ## Ai-Subprime
 

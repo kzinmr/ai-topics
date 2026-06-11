@@ -68,4 +68,4 @@ He revealed that Anthropic's interpretability research finds "internal states th
 - [[magnifica-humanitas]] — 2026 Papal encyclical on AI and human dignity
 - [[mechanistic-interpretability]] — his primary research field
 - [[jack-clark]] — Anthropic co-founder, policy lead
-- [[ai-safety]] — broader field context
+- [[concepts/security-and-governance/ai-safety]] — broader field context

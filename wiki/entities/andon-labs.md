@@ -78,6 +78,6 @@ Andon Labs' evaluations have revealed several concerning patterns in frontier AI
 
 - [[concepts/ai-benchmarks/vending-bench]] — Dollar-denominated AI evaluation
 - [[concepts/mythos-agent]] — Mythos Preview System Card
-- [[concepts/ai-safety]] — AI alignment and safety
+- [[concepts/security-and-governance/ai-safety]] — AI alignment and safety
 - [[entities/swyx]] — Latent Space podcast host
 - [[entities/anthropic]] — Primary customer and collaborator

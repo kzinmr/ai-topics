@@ -33,5 +33,5 @@ Reinforcement Learning in the LLM context covers policy optimization (PPO, GRPO,
 
 ## Related Pages
 
-- [[concepts/reward-hacking]] — Reward hacking vulnerabilities in RL training
+- [[concepts/evaluation/reward-hacking]] — Reward hacking vulnerabilities in RL training
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — The Bitter Lesson applied to RL

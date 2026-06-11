@@ -199,6 +199,6 @@ Jun 2026  GPT-Rosalind-5.5       Bio/Chem HIGH (domain-restricted)
 ## See Also
 
 - [[concepts/gpt/gpt-deployment-safety-hub]] — Full index of all 20 system cards
-- [[concepts/model-cards-system-cards]] — General framework for model/system cards
+- [[concepts/security-and-governance/model-cards-system-cards]] — General framework for model/system cards
 - [[concepts/anthropic-system-cards]] — Anthropic's parallel system card index (comparison)
 - [[concepts/gpt/gpt-o-series-gpt5-unification]] — o-series → GPT-5 unification timeline

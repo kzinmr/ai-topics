@@ -155,7 +155,7 @@ Google DeepMind publishes structured model cards for all Gemini models at [deepm
 
 > **Note**: As of 2026-06-10, most Gemini 2.x model card PDFs return NoSuchKey from the GCS bucket. Only the Gemini Robotics On-Device card (412KB) is confirmed accessible. Model cards were previously hosted on modelcards.withgoogle.com.
 
-See also: [[concepts/model-cards-system-cards]] for analysis framework on reading model cards.
+See also: [[concepts/security-and-governance/model-cards-system-cards]] for analysis framework on reading model cards.
 
 ## Image Generation
 
@@ -271,7 +271,7 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 - [[concepts/gemma-family]] — Gemma open model family (derived from Gemini)
 - [[entities/deepmind]] — Developer organization
 - [[entities/google-antigravity]] — Agent-first development platform
-- [[concepts/model-cards-system-cards]] — Model card analysis framework
+- [[concepts/security-and-governance/model-cards-system-cards]] — Model card analysis framework
 
 ## See Also
 

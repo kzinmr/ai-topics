@@ -90,7 +90,7 @@ Practitioners identify benchmaxxed models through several signals:
 ## Related Concepts
 
 - [[concepts/ai-benchmarks/ifeval]] — Instruction Following Eval; tests verifiable constraints but misses nuanced compliance
-- [[concepts/ai-benchmarks-and-evals]] — Comprehensive benchmark landscape overview
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Comprehensive benchmark landscape overview
 - [[concepts/vibe-eval]] — Vibe-Eval; explicitly designed to capture subjective quality beyond benchmarks
 - `overfitting` — The statistical phenomenon underlying benchmaxxing
 - `benchmark-framing` — How benchmark results are framed in public discourse

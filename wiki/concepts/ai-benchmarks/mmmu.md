@@ -192,7 +192,7 @@ MMMU-Pro is now the **preferred variant** for rigorous multimodal evaluation. Th
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 - [[concepts/ai-benchmarks/mmlu-pro]] — MMLU Pro (text-only equivalent)
 - [[concepts/ai-benchmarks/gpqa]] — GPQA (text-only, deeper science)

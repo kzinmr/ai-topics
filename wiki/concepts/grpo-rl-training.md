@@ -130,7 +130,7 @@ ART provides the simplest loop: define a `TrainableModel`, attach a `LocalBacken
 - [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture]]
 - [[transcripts/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6-lecture]]
 
-See also: [[concepts/agents-mcp-rl-course]], [[concepts/grpo-infrastructure]], [[concepts/reward-engineering]]
+See also: [[concepts/agents-mcp-rl-course]], [[concepts/grpo-infrastructure]], [[concepts/evaluation/reward-engineering]]
 
 ## Related Pages
 

@@ -160,10 +160,10 @@ These principles directly inform [[concepts/harness-engineering]] practices and 
 
 ## See Also
 
-- [[concepts/model-cards-system-cards]] — Overview of model cards vs. system cards as transparency documents
+- [[concepts/security-and-governance/model-cards-system-cards]] — Overview of model cards vs. system cards as transparency documents
 - [[concepts/constitutional-ai]] — Anthropic's alignment approach, compared with Model Spec by Boaz Barak
 - [[concepts/model-spec-midtraining]] — Anthropic's research on training models *on* spec documents
-- [[concepts/ai-safety]] — Broader AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety landscape
 - [[concepts/openai/frontier-governance-framework]] — OpenAI's governance document for California/EU compliance
 - [[entities/openai]] — OpenAI entity page
 - [[entities/boaz-barak]] — Boaz Barak's analysis of Model Spec vs. Claude Constitution

@@ -152,7 +152,7 @@ From the Part 3 analysis (May 1, 2025):
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 - [[concepts/ai-benchmarks/livecodebench]] — LiveCodeBench (contamination-free competition coding)
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-Bench (real-world software engineering)

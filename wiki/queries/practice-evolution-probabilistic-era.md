@@ -242,7 +242,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 - [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Eval reliability
 - [[concepts/evaluation/eval-awareness-browsecomp]] — Models detecting evaluation
 - [[concepts/evaluation/testing-ai-agents]] — Non-determinism testing
-- [[concepts/evals-for-ai-agents]] — Anthropic's eval guide
+- [[concepts/evaluation/evals-for-ai-agents]] — Anthropic's eval guide
 - [[concepts/coding-agents/evaluation-coding-agents]] — Coding agent benchmarks
 - [[concepts/evaluation/llm-evaluation-harness]] — lm-eval-harness
 - [[concepts/harness-engineering]] — The harness philosophy

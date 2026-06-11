@@ -103,7 +103,7 @@ Appeared as a guest on the Season 1 finale of Hugo Bowne-Anderson and Thomas Wie
 
 - [[concepts/bayesian-methods]] — Core methodology
 - [[concepts/agent-skills]] — Pi TUI skills, Grill-Me Socratic review
-- [[concepts/ai-safety]] — Agents are seductive and dangerous
+- [[concepts/security-and-governance/ai-safety]] — Agents are seductive and dangerous
 - [[concepts/agentic-engineering]] — Agent workflows, Zed multiplexer pattern
 
 ## Sources

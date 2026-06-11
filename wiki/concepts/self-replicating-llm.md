@@ -107,7 +107,7 @@ Four vulnerable targets (single vulnerability each, no defenses):
 
 ## Related Concepts
 
-- [[concepts/ai-safety]] — broader AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — broader AI safety landscape
 - [[concepts/agent-safety]] — agent-specific safety considerations
 - [[concepts/autonomous-agents]] — autonomous agent capabilities
 - [[entities/qwen]] — Qwen model family

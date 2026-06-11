@@ -127,7 +127,7 @@ Goodfire positions this as complementary to (and more powerful than) sparse auto
 
 - [[concepts/activation-steering]] — Feature-level model control; Goodfire's manifold steering is a more precise alternative to linear steering vectors
 - [[concepts/mechanistic-interpretability]] — Understanding model internals; Goodfire's neural geometry approach operates at the representation level rather than circuit level
-- [[concepts/ai-safety]] — AI alignment and safety; Goodfire's intentional design agenda is an alignment technique for steering training outcomes
+- [[concepts/security-and-governance/ai-safety]] — AI alignment and safety; Goodfire's intentional design agenda is an alignment technique for steering training outcomes
 - **intentional-design** — Goodfire's paradigm for using interpretability during training (no standalone concept page yet)
 - **neural-geometry** — The study of curved geometric structure in neural network representations (no standalone concept page yet)
 

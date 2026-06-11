@@ -109,7 +109,7 @@ sources:
 - [[concepts/grpo-rl-training]] — Follow-up on test-time compute (extension of Week 9)
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention (Week 13)
 - [[concepts/agentic-rag]] — RAG (Week 11)
-- [[concepts/ai-safety]] — Constitutional AI (Week 7)
+- [[concepts/security-and-governance/ai-safety]] — Constitutional AI (Week 7)
 - [[concepts/kv-cache]] — Long context (Week 8)
 - [[concepts/attention-mechanism-variants]] — RoPE (Week 8)
 

@@ -186,7 +186,7 @@ Hinton has mentored many of the leading figures in modern AI:
 - [[entities/yann-lecun]] — Turing Award co-recipient; CNN pioneer
 - [[entities/google-tpu]] — Former employer (2013–2023)
 -  — Current affiliation-  — Hinton's foundational field
--  — Hinton's most influential algorithm- [[concepts/ai-safety]] — Hinton's current advocacy focus
+-  — Hinton's most influential algorithm- [[concepts/security-and-governance/ai-safety]] — Hinton's current advocacy focus
 
 ## Sources
 

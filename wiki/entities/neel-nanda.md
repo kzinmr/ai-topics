@@ -43,4 +43,4 @@ These resources are cited as a 🟢 top-tier resource in the [[concepts/genai-ha
 
 - [[concepts/mechanistic-interpretability]] — MI concept page
 - [[concepts/genai-handbook]] — Evaluated as a top-tier resource
-- [[concepts/ai-safety-and-alignment]]
+- [[concepts/security-and-governance/ai-safety-and-alignment]]

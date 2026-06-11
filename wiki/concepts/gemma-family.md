@@ -102,7 +102,7 @@ Gemma models run on:
 - [[entities/deepmind]] — Developer organization
 - [[entities/gemma-4]] — Detailed entity page for Gemma 4 family
 - [[concepts/gemini]] — Parent model family from which Gemma is derived
-- [[concepts/model-cards-system-cards]] — Model card analysis framework
+- [[concepts/security-and-governance/model-cards-system-cards]] — Model card analysis framework
 - [[concepts/local-llm/_index]] — Local LLM deployment patterns
 - [[concepts/speculative-decoding]] — MTP drafter technique used in Gemma 4
 - [[concepts/open-weight-models]] — Open model ecosystem and licensing landscape

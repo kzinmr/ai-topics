@@ -73,7 +73,7 @@ The foundation of LLM engineering. Without evaluation, you're "flying blind."
 - **Mitigating LLM bias:** LLMs favor first answers (Position bias), longer answers (Verbosity bias), and their own outputs (Self-enhancement bias). Swap answer order during evaluation to counter Position bias
 
 **Related Wiki Pages:**
-- [[concepts/evals-for-ai-agents]] — Evaluation for AI agents (needs expansion)
+- [[concepts/evaluation/evals-for-ai-agents]] — Evaluation for AI agents (needs expansion)
 - [[eugene-yan--core-ideas]] — Eugene Yan's EDD philosophy and AlignEval
 
 #### NLI-based Hallucination Detection (OOD Finetuning)
@@ -307,7 +307,7 @@ The O'Reilly guide (commonly known as "Applied LLMs") is available at [applied-l
 - [[entities/hamel-husain]] — Applied LLMs Guide co-author
 - [[entities/jason-liu]] — Applied LLMs Guide co-author (Instructor library author)
 - [[entities/shreya-shankar]] — Applied LLMs Guide co-author
-- [[concepts/evals-for-ai-agents]] — AI agent evaluation (needs expansion)
+- [[concepts/evaluation/evals-for-ai-agents]] — AI agent evaluation (needs expansion)
 - [[concepts/agentic-rag]] — RAG's agentic evolution
 - [[concepts/fine-tuning/peft-lora-qlora]] — PEFT/LoRA/QLoRA
 - [[concepts/fine-tuning/instruction-fine-tuning]] — Instruction tuning

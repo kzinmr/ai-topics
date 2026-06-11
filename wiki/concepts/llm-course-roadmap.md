@@ -109,7 +109,7 @@ Covers model architecture, training, and evaluation. The area with the most over
 |----------|---------------|------|
 | DPO (Direct Preference Optimization) | [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] | Comprehensive coverage of DPO/ORPO/KTO |
 | PPO / GRPO | [[concepts/grpo-rl-training]] | GRPO well-covered in DeepSeek context |
-| RLHF Overall | [[concepts/ai-safety-and-alignment]], [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
+| RLHF Overall | [[concepts/security-and-governance/ai-safety-and-alignment]], [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
 
 ### Section 3: Evaluation & Quantization
 
@@ -120,7 +120,7 @@ Covers model architecture, training, and evaluation. The area with the most over
 | LLM-as-a-Judge | [[concepts/evaluation/llm-as-judge]] | Rich coverage |
 | Benchmarks (MMLU, etc.) | [[concepts/evaluation/open-llm-leaderboard]], [[concepts/llm-evaluation]], [[concepts/evaluation/llm-evaluation-harness]], [[concepts/ai-benchmarks/lighteval]] | Rich (incl. lm-eval-harness) |
 | Human Evaluation (Chatbot Arena) | [[concepts/evaluation/ai-evals]] | Reference |
-| Agent Evaluation | [[concepts/evals-for-ai-agents]], [[concepts/evaluation/evaluation-flywheel]], [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]], [[concepts/evaluation/process-reward-models-agent-eval]] | Unique depth |
+| Agent Evaluation | [[concepts/evaluation/evals-for-ai-agents]], [[concepts/evaluation/evaluation-flywheel]], [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]], [[concepts/evaluation/process-reward-models-agent-eval]] | Unique depth |
 
 **Quantization**
 

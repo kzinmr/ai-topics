@@ -140,10 +140,10 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 
 ## Related Concepts
 
-- [[concepts/ai-safety-and-alignment]] — Her primary research focus at OpenAI
+- [[concepts/security-and-governance/ai-safety-and-alignment]] — Her primary research focus at OpenAI
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Frameworks she analyzed in "LLM Powered Autonomous Agents"
 - [[concepts/test-time-compute]] — The "thinking time" paradigm she surveyed in "Why We Think"
-- [[concepts/reward-hacking]] — Her November 2024 deep-dive topic
+- [[concepts/evaluation/reward-hacking]] — Her November 2024 deep-dive topic
 - [[concepts/chain-of-thought-reasoning]] — Central to her analysis of test-time compute
 - [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
 -  — Her April 2024 analysis of video generation

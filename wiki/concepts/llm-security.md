@@ -75,7 +75,7 @@ AISI uses a **ReAct agent scaffold** with Bash and Python tools inside a **Kali 
 
 ## Related Concepts
 
-- [[concepts/ai-safety]] — Broader safety landscape
+- [[concepts/security-and-governance/ai-safety]] — Broader safety landscape
 - [[concepts/red-teaming]] — Adversarial evaluation
 - [[concepts/jailbreaking]] — Prompt-based safety bypasses
 - [[concepts/cybersecurity]] — Traditional security context

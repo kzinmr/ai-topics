@@ -135,5 +135,5 @@ Despite the momentum, significant challenges remain:
 - [[entities/google]] — Google's AI ecosystem, including Gemini and DeepMind
 - [[entities/openai]] — OpenAI's role in AI governance and content labeling
 - [[entities/deepmind]] — Google DeepMind, creator of SynthID
-- [[concepts/ai-safety]] — AI safety and governance frameworks
+- [[concepts/security-and-governance/ai-safety]] — AI safety and governance frameworks
 - [[concepts/ai-detection]] — AI-generated content detection methods

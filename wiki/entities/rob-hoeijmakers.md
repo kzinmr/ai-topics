@@ -14,7 +14,7 @@ Rob Hoeijmakers is a Dutch web strategist and AI governance writer who runs the 
 ## Key Themes
 
 - **AI Governance & Regulation** — Deep dives into the EU AI Act, documentation obligations, and how regulatory frameworks are shaping AI deployment
-- **AI Transparency** — Analysis of [[concepts/model-cards-system-cards|model cards and system cards]] as proto-regulatory documents
+- **AI Transparency** — Analysis of [[concepts/security-and-governance/model-cards-system-cards|model cards and system cards]] as proto-regulatory documents
 - **AI Strategy** — Practical guidance on working with AI tools and policy
 - **Future of Work** — How AI is changing organizational practices
 - **Europe & Digital Policy** — EU-specific perspective on AI regulation and digital identity
@@ -35,6 +35,6 @@ Rob Hoeijmakers is a Dutch web strategist and AI governance writer who runs the 
 
 ## See Also
 
-- [[concepts/model-cards-system-cards]] — His analysis of model/system cards as transparency documents
+- [[concepts/security-and-governance/model-cards-system-cards]] — His analysis of model/system cards as transparency documents
 - [[concepts/ai-governance]] — Broader governance landscape
 - [[concepts/ai-transparency]] — Transparency practices in AI

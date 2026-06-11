@@ -82,7 +82,7 @@ Every team that ships reliable agents has evals. Every team that doesn't, doesn'
 
 The mental model: **an eval is a unit test that holds the agent honest while everything else changes underneath it.**
 
-See also: [[concepts/evals-for-ai-agents]], [[concepts/evaluation/evaluation-flywheel]], [[concepts/evaluation/llm-as-judge]]
+See also: [[concepts/evaluation/evals-for-ai-agents]], [[concepts/evaluation/evaluation-flywheel]], [[concepts/evaluation/llm-as-judge]]
 
 ### File-System-as-State and the Think-Act-Observe Loop
 

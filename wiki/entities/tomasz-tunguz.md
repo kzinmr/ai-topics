@@ -165,7 +165,7 @@ Product manager managing a billion-dollar business unit. Built product intuition
 ## Related Concepts
 
 - [[concepts/local-models]] — Tom's local-first agent philosophy and Qwen 35B workflow
-- [[concepts/ai-safety]] — Supply chain paranoia, 14-day npm rule, and BYOD agent security
+- [[concepts/security-and-governance/ai-safety]] — Supply chain paranoia, 14-day npm rule, and BYOD agent security
 - [[entities/bryan-bischof]] — Fellow Episode 2 guest and Theory Ventures colleague; Tom's BBplot eval demo was run during Tom's own segment
 
 ## Related People

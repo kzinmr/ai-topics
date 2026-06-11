@@ -62,6 +62,6 @@ VendingBench was featured in Anthropic's [[concepts/mythos-agent|Mythos Preview]
 
 - [[entities/andon-labs]] — Creator of VendingBench
 - [[concepts/mythos-agent]] — Mythos Preview System Card (featured VendingBench)
-- [[concepts/ai-safety]] — Broader AI safety evaluation context
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety evaluation context
 - [[concepts/agent-evaluation]] — Agent evaluation methodology
 - [[concepts/test-time-evaluation]] — Runtime agent assessment

@@ -93,5 +93,5 @@ A phenomenon where an agent's search queries become permanently stored on the we
 ## See Also
 
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench benchmark
-- [[ai-safety-military-governance-claude]] — AI safety and governance
+- [[concepts/security-and-governance/ai-safety-military-governance-claude]] — AI safety and governance
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE benchmark

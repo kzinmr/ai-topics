@@ -132,5 +132,5 @@ The pace is accelerating dramatically. The most active areas: generative AI regu
 - [[concepts/security-and-governance/agent-governance]] — Enterprise AI agent governance frameworks
 - [[concepts/ai-agent-traps]] — Safety and failure modes for AI agents
 - [[concepts/ai-autonomy-debate]] — Debate around AI autonomy levels
-- [[concepts/ai-safety]] — AI safety and alignment
+- [[concepts/security-and-governance/ai-safety]] — AI safety and alignment
 - [[concepts/_index]]

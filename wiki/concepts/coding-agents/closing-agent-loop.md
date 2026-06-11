@@ -15,7 +15,7 @@ tags:
 related:
   - "[[cognition-devin-philosophy]]"
   - "[[agentic-engineering-patterns]]"
-  - "[[evals-for-ai-agents]]"
+  - "[[concepts/evaluation/evals-for-ai-agents]]"
   - "[[ai-agent-engineering/_index]]"
 sources:
   - "https://cognition.ai/blog/closing-the-agent-loop-devin-autofixes-review-comments"
@@ -109,5 +109,5 @@ Bots that Devin can automatically handle:
 
 - [[cognition-devin-philosophy]] — Cognition's overall philosophy
 - [[agentic-engineering-patterns]] — Agentic Engineering pattern collection
-- [[evals-for-ai-agents]] — Agent evaluation
+- [[concepts/evaluation/evals-for-ai-agents]] — Agent evaluation
 - [[ai-agent-engineering/_index]] — AI Agent Engineering system design

@@ -34,7 +34,8 @@ author: Florian Brand (@xeophon) — xeophon series; Rob Hoeijmakers — benchma
 
 > **MOC**: Systematic navigation of all AI benchmark and evaluation pages in this wiki.
 > Combines Hoeijmakers' Benchmarks→Evals framework with @xeophon's 18-part benchmark analysis series.
-> Individual benchmark pages live in [[concepts/ai-benchmarks/index|AI Benchmarks Index]].
+>
+> **Navigation**: **Individual benchmark pages** → [[concepts/ai-benchmarks/index|AI Benchmarks Index]] | **Evaluation methodology** → [[concepts/evaluation/_index|Evaluation Index]]
 
 ---
 
@@ -220,7 +221,7 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 |---|---|---|
 | Agent Evaluation Methodology | Agent evaluation lifecycle | [[concepts/evaluation/agent-evaluation-methodology]] |
 | Coding Agent Evaluation | Coding agent eval design | [[concepts/coding-agents/evaluation-coding-agents]] |
-| Evals for AI Agents | AI agent eval practices | [[concepts/evals-for-ai-agents]] |
+| Evals for AI Agents | AI agent eval practices | [[concepts/evaluation/evals-for-ai-agents]] |
 | Macro Evals for Agentic Systems | Large-scale agentic eval | [[concepts/evaluation/macro-evals-for-agentic-systems]] |
 | Infrastructure Noise in Agent Evals | Infra noise quantification | [[concepts/coding-agents/infrastructure-noise-agent-evals]] |
 | Process Reward Models | PRM-based agent evaluation | [[concepts/evaluation/process-reward-models-agent-eval]] |
@@ -299,6 +300,6 @@ Comprehensive summary of Florian Brand's (@xeophon) 18-part "Popular Benchmarks 
 - [[concepts/evaluation/agent-evaluation-methodology]] — Agent evaluation lifecycle
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench (origin of agentic benchmarks)
 - [[concepts/ai-benchmarks/agent-arena]] — Agent Arena (causal inference-based)
-- [[concepts/evals-for-ai-agents]] — Agent eval practices
+- [[concepts/evaluation/evals-for-ai-agents]] — Agent eval practices
 - [[concepts/evaluation/evaluation-flywheel]] — Continuous evaluation cycle
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author

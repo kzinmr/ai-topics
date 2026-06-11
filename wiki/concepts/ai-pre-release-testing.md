@@ -50,6 +50,6 @@ The [[entities/caisi]] (Center for AI Standards and Innovation) within NIST sign
 
 ## Related
 - [[entities/caisi]] — Center for AI Standards and Innovation
-- [[concepts/ai-safety]] — AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — AI safety landscape
 - [[concepts/claude-mythos]] — The model that triggered this policy shift
 - [[entities/anthropic]] — Anthropic's safety-first approach

@@ -159,5 +159,5 @@ The [[concepts/advanced-tool-use|Advanced Tool Use]] features (Tool Search Tool,
 
 - [[concepts/advanced-tool-use]] — Anthropic platform features for scaling tool use (Tool Search, Programmatic Calling)
 - [[concepts/context-engineering|Context Engineering]] — Context management strategies for agents
-- [[concepts/evals-for-ai-agents]] — Systematic agent evaluation methodology
+- [[concepts/evaluation/evals-for-ai-agents]] — Systematic agent evaluation methodology
 - [[concepts/agent-skills]] — Open standard for domain-specific agent capabilities

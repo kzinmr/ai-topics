@@ -138,7 +138,7 @@ See [[concepts/anti-sycophancy]] for detailed mitigation strategies including:
 - [[concepts/anti-sycophancy]] — mitigation strategies and frameworks
 - [[concepts/rlhf]] — root cause training methodology
 - [[concepts/alignment]] — the broader alignment problem
-- [[concepts/ai-safety]] — safety landscape
+- [[concepts/security-and-governance/ai-safety]] — safety landscape
 - [[concepts/knowledge-shields]] — sycophancy as a form of knowledge shielding
 - [[concepts/functional-emotions-llms]] — emotion vectors and the sycophancy-harshness tradeoff
 - [[concepts/llm-steering]] — inference-time steering including sycophantic feature deactivation

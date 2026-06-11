@@ -120,7 +120,7 @@ The fundamental distinction: AlphaProof/DeepSeek-Prover search for proofs; Veric
 
 ### Relevance to AI Safety
 
-Verified Generation offers an alternative safety path: instead of relying on learned reward models that can be gamed, use formal verification as the training signal. This connects to [[concepts/ai-safety]] debates about whether learned or symbolic approaches provide better alignment guarantees.
+Verified Generation offers an alternative safety path: instead of relying on learned reward models that can be gamed, use formal verification as the training signal. This connects to [[concepts/security-and-governance/ai-safety]] debates about whether learned or symbolic approaches provide better alignment guarantees.
 
 See also: [[entities/axiom-math]] for company details and Carina Hong's broader thesis.
 
@@ -146,7 +146,7 @@ For AI coding agents, formal verification is particularly relevant because:
 - [[concepts/intent-formalization]] — The complementary challenge
 - [[concepts/formal-methods]] — Foundational formal methods practice and theory
 - [[concepts/neurosymbolic-ai]] — Symbolic reasoning (formal logic) combined with neural networks
-- [[concepts/ai-safety]] — Alignment and oversight for AI agents
+- [[concepts/security-and-governance/ai-safety]] — Alignment and oversight for AI agents
 - [[concepts/security-and-governance/agent-sandboxing]] — Isolation for untrusted code (complementary safety approach)
 - [[entities/hillel-wayne]] — Formal methods practitioner bridging academic and industry
 - [[entities/john-d-cook-applied-mathematics-consulting]] — Formal verification in high-stakes engineering

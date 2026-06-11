@@ -151,7 +151,7 @@ From the Part 1 analysis (Apr 29, 2025):
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
+- [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 - [[concepts/llm-evaluation]] — LLM evaluation landscape
 - [[concepts/hle]] — Humanity's Last Exam (similar data creation approach)

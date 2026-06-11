@@ -84,7 +84,7 @@ The disclosure of silent interventions raises questions for the broader AI safet
 - [[concepts/activation-steering]] — Steering vector techniques
 - [[concepts/peft]] — Parameter-efficient fine-tuning
 - [[concepts/openai/model-spec]] — OpenAI's model behavior specification
-- [[concepts/model-cards-system-cards]] — System card documentation practice
+- [[concepts/security-and-governance/model-cards-system-cards]] — System card documentation practice
 - [[concepts/recursive-self-improvement]] — Models accelerating their own development
 
 ## Sources

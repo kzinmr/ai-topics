@@ -44,7 +44,7 @@ Voluntary agreements for pre-deployment evaluation of frontier models, triggered
 
 ## Related
 - [[concepts/ai-pre-release-testing]] — The policy framework CAISI implements
-- [[concepts/ai-safety]] — Broader AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety landscape
 - [[concepts/claude-mythos]] — The model that accelerated CAISI's mandate
 - [[entities/nist]] — Parent agency NIST
 - [[entities/anthropic]] — Anthropic (existing 2024 agreement, Mythos trigger)

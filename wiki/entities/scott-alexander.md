@@ -74,7 +74,7 @@ Alexander is a **transhumanist and AI alignment advocate**. His connection to th
 Alexander's conceptual framework is **directly relevant** to several wiki concept pages:
 
 - [[concepts/moloch-multipolar-trap]] — The central concept from this essay
-- [[concepts/ai-safety]] — Alignment research as an attempt to forestall the superintelligence trap
+- [[concepts/security-and-governance/ai-safety]] — Alignment research as an attempt to forestall the superintelligence trap
 - [[concepts/techno-pessimism]] — Coordination problems as primary barriers to beneficial AI
 - [[concepts/agent-economics]] — Organizational Moloch at L4 autonomous agent level
 - [[concepts/grpo-rl-training]] — Competitive group dynamics within model training as a micro-Moloch

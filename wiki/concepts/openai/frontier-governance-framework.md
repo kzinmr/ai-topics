@@ -49,7 +49,7 @@ OpenAI expects the framework to continue evolving as:
 - Regulatory requirements develop
 
 ## Related Pages
-- [[ai-safety]] — Broader AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety landscape
 - [[ai-governance]] — AI governance frameworks and regulation
 - [[OpenAI]] — Company behind the framework
 - [[Anthropic]] — Competitor with comparable safety frameworks

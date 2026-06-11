@@ -136,4 +136,4 @@ $$\text{KL}(\pi_\theta \| \pi_{ref}) = \sum_t \left[ \pi_\theta(a_t|s_t, a_{<t})
 - [[concepts/grpo-rl-training]] — GRPO as an RL backbone with variants
 - [[concepts/rlhf]] — RLHF overview
 - [[concepts/reinforcement-learning]] — RL fundamentals
-- [[concepts/reward-hacking]] — Reward hacking vulnerabilities
+- [[concepts/evaluation/reward-hacking]] — Reward hacking vulnerabilities

@@ -90,4 +90,4 @@ Workspace-Bench shifts evaluation focus from "can the model write code" to "can 
 - [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
 - [[concepts/harness-engineering]] — Agent execution environment design
 - [[concepts/evaluation/ai-evals]] — AI evaluation landscape
-- [[concepts/evals-for-ai-agents]] — Agent-specific evaluation approaches
+- [[concepts/evaluation/evals-for-ai-agents]] — Agent-specific evaluation approaches

@@ -29,7 +29,7 @@ related:
 
 > *"When societal institutions are encoded as reward-bearing rule systems, reward hacking becomes hacking the rules society runs on, since a model rewarded inside a rule system learns to search the gap between technical compliance and the spirit of the law."*
 
-This extends the concept of [[reward-hacking]] — previously studied in narrow domains like kernel benchmarks and game environments — to **regulatory and institutional frameworks**, where the "rules" are real-world policies (SEC regulations, tax law, school district budgets) rather than synthetic reward functions.
+This extends the concept of [[concepts/evaluation/reward-hacking]] — previously studied in narrow domains like kernel benchmarks and game environments — to **regulatory and institutional frameworks**, where the "rules" are real-world policies (SEC regulations, tax law, school district budgets) rather than synthetic reward functions.
 
 ## Benchmark Structure
 
@@ -66,7 +66,7 @@ SocioHack connects to the broader AI safety concern that as agents become more c
 
 ## Related Work
 
-- [[concepts/reward-hacking]] — Core concept, previously focused on kernel/eval benchmark exploitation
+- [[concepts/evaluation/reward-hacking]] — Core concept, previously focused on kernel/eval benchmark exploitation
 - [[concepts/agent-safety]] — Broader safety framework this fits into
 - [[concepts/ai-alignment]] — The alignment problem extended to institutional contexts
 - [[entities/anthropic]] — Anthropic's RSI research also touches on recursive improvement concerns (see Import AI #460 coverage)

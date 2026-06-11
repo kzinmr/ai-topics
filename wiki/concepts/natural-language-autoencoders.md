@@ -31,7 +31,7 @@ This is one of the most important [[interpretability]] advances in years. Unlike
 
 ## Related Pages
 - [[concepts/mechanistic-interpretability]] — Understanding model internals
-- [[concepts/ai-safety]] — Broader AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety landscape
 - [[entities/anthropic]] — Anthropic's safety-focused approach
 - [[concepts/evaluation/petri-alignment]] — Petri alignment testing tool (donated to Meridian Labs)
 - [[entities/meridian-labs]] — Independent AI evaluation nonprofit

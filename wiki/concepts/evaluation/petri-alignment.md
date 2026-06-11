@@ -34,6 +34,6 @@ Petri is part of Anthropic's broader safety infrastructure alongside:
 ## Related Pages
 - [[entities/anthropic]] — Company overview
 - [[entities/meridian-labs]] — Petri's new home
-- [[concepts/ai-safety]] — Safety evaluation landscape
+- [[concepts/security-and-governance/ai-safety]] — Safety evaluation landscape
 - [[concepts/model-evaluation]] — Evaluation methodologies
 - [[concepts/ai-governance]] — AI governance frameworks

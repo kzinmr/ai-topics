@@ -55,5 +55,5 @@ The controversy emerged alongside broader discussions about:
 ## See Also
 
 - [[concepts/ai-privacy-tools]] — Techniques and vulnerabilities around AI data access
-- [[concepts/ai-safety]] — AI safety and alignment considerations
+- [[concepts/security-and-governance/ai-safety]] — AI safety and alignment considerations
 - [[entities/meta]] — Meta's AI products and strategies

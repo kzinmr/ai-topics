@@ -96,7 +96,7 @@ The encyclical explicitly positions itself within the tradition of Catholic Soci
 ## See Also
 - [[chris-olah]] — Anthropic co-founder who spoke at the encyclical's presentation
 - [[anthropic]] — AI safety lab co-founded by Olah
-- [[ai-safety]] — the broader safety research ecosystem
+- [[concepts/security-and-governance/ai-safety]] — the broader safety research ecosystem
 - [[ai-governance]] — regulatory and governance frameworks for AI
 - [[mechanistic-interpretability]] — Olah's primary research field
 - [[jack-clark]] — Anthropic co-founder focused on AI policy

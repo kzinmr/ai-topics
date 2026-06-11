@@ -58,4 +58,4 @@ The fund reflects the Foundation's belief that "AI should be shaped by the commu
 
 - [[entities/openai-foundation]] — Operating foundation
 - [[entities/openai]] — Parent organization
-- [[concepts/ai-safety]] — Broader AI safety context
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety context

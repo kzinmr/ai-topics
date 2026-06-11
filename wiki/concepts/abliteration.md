@@ -87,7 +87,7 @@ Abliteration works on virtually any open-weight transformer-based model, includi
 - **NVIDIA Nemotron**: Abliterated by Alice Lab. 100% refusal → 100% compliance.
 - **Most dense transformer models**: Heretic supports most dense architectures, including multimodal models and several MoE architectures. It does not yet support SSM/hybrid models, models with inhomogeneous layers, or novel attention systems.
 
-The technique cannot easily be applied to **proprietary models** like [[concepts/ai-safety|OpenAI's ChatGPT]] or [[concepts/ai-alignment|Anthropic's Claude]], where model weights are not accessible. However, this is a narrowing distinction: open-source models have historically closed the capability gap with proprietary leaders within 6-12 months.
+The technique cannot easily be applied to **proprietary models** like [[concepts/security-and-governance/ai-safety|OpenAI's ChatGPT]] or [[concepts/ai-alignment|Anthropic's Claude]], where model weights are not accessible. However, this is a narrowing distinction: open-source models have historically closed the capability gap with proprietary leaders within 6-12 months.
 
 ## Proprietary vs. Open Models
 

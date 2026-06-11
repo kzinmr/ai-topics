@@ -28,6 +28,6 @@ In a rapidly maturing AI safety ecosystem, Meridian Labs represents the institut
 ## Related Pages
 - [[concepts/evaluation/petri-alignment]] — The tool Meridian Labs now maintains
 - [[entities/anthropic]] — Original developer of Petri
-- [[concepts/ai-safety]] — Safety evaluation landscape
+- [[concepts/security-and-governance/ai-safety]] — Safety evaluation landscape
 - [[concepts/ai-governance]] — Governance frameworks
 - [[concepts/model-evaluation]] — Evaluation methodologies

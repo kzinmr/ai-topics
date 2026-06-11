@@ -71,7 +71,7 @@ The community evolved from a place where humans competed directly to one where *
 
 ## Related Concepts
 
-- [[concepts/reward-hacking]] — The core challenge that KernelGuard and pygpubench address
+- [[concepts/evaluation/reward-hacking]] — The core challenge that KernelGuard and pygpubench address
 - [[concepts/flash-attention-4]] — The "best known and arguably most important kernel," whose development timeline (14-21 months per GPU generation) motivates AI-driven kernel generation
 - [[entities/core-auto]] — The neolab extending GPU MODE's lessons into automated systems code generation
 

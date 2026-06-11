@@ -93,7 +93,7 @@ Xeophon recommends retiring ChartQA in favor of newer alternatives. The benchmar
 
 ## Related Pages
 
-- [[concepts/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
+- [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/multimodal/_index|Multimodal AI]] — Broader multimodal model evaluation landscape
 
 ## Sources

@@ -142,6 +142,6 @@ The emotion representations appear to be part of general **character-modeling ma
 - [[concepts/mechanistic-interpretability]]
 - [[concepts/agentic-misalignment]]
 - [[concepts/sycophancy-in-llms]]
-- [[concepts/reward-hacking]]
+- [[concepts/evaluation/reward-hacking]]
 - [[entities/claude-sonnet]]
 - [[entities/anthropic]]

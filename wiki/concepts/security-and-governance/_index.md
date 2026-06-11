@@ -39,3 +39,15 @@ Part of the broader [[concepts/agent-engineering-guide-2026|Agent Engineering]] 
 - [[concepts/security-and-governance/agentic-identity]] — Modeling AI agents as financial actors
 - [[concepts/security-and-governance/agentic-security]] — Agentic security patterns
 - [[concepts/security-and-governance/agent-security-landscape-2026]] — Security landscape overview (2026)
+
+## AI Safety
+
+- [[concepts/security-and-governance/ai-safety]] — AI safety overview
+- [[concepts/security-and-governance/ai-safety-and-alignment]] — AI safety and alignment
+- [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — Alignment, RLHF, scalable oversight, interpretability
+- [[concepts/security-and-governance/ai-safety-military-governance-claude]] — Military governance (Claude)
+- [[concepts/security-and-governance/open-model-safety]] — Open model safety
+
+## Model Governance
+
+- [[concepts/security-and-governance/model-cards-system-cards]] — Model cards and system cards

@@ -141,7 +141,7 @@ flowchart TD
 - [[concepts/evaluation/llm-as-judge]] — LLM evaluation (week 9)
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Multi-agent (week 9)
 - [[concepts/ai-image-generation]] — Multimodal (week 11)
-- [[concepts/ai-safety]] — Safety (week 10)
+- [[concepts/security-and-governance/ai-safety]] — Safety (week 10)
 - [[concepts/fine-tuning/peft-lora-qlora]] — Fine-tuning (weeks 3-4)
 - [[concepts/context-engineering|Context Engineering]] — Prompt engineering (weeks 2-3)
 - [[concepts/coding-agents/coding-agents]] — Code generation (week 11)

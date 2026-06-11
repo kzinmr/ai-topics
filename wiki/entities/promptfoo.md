@@ -165,5 +165,5 @@ In the [[concepts/evaluation/macro-evals-for-agentic-systems]] Cookbook, five lo
 ## See Also
 
 - [[concepts/evaluation/macro-evals-for-agentic-systems]]
-- [[concepts/evals-for-ai-agents]]
+- [[concepts/evaluation/evals-for-ai-agents]]
 - [[comparisons/evals-skills]]

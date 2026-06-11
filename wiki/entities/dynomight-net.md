@@ -167,7 +167,7 @@ The willingness to be wrong publicly is a core part of Dynomight's intellectual 
 
 ## Related
 
-- [[concepts/ai-safety]] — Dynomight's primary area of philosophical contribution
+- [[concepts/security-and-governance/ai-safety]] — Dynomight's primary area of philosophical contribution
 - [[concepts/ai-alignment]] — The "wanting" problem as the central challenge
 - [[concepts/consciousness]] — The "meta problem" and the limits of empirical investigation
 - [[concepts/prediction-markets]] — Critique of futarchy and causal inference from market data
