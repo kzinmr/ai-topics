@@ -22,8 +22,8 @@ related:
   - "[[concepts/inference/sglang]]"
   - "[[concepts/kv-cache]]"
   - "[[concepts/prompt-caching]]"
-  - "[[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
+  - "[[concepts/training-infra/gpu-vram-fundamentals]]"
+  - "[[concepts/training-infra/_index]]"
 ---
 
 # Model Serving & Autoscaling
@@ -141,8 +141,8 @@ LLM server scaling faces these challenges:
 - [[concepts/inference/sglang]] — SGLang for agent workloads
 - [[concepts/kv-cache]] — VRAM management fundamentals
 - [[concepts/prompt-caching]] — Cost optimization strategies
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — Hardware constraints
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page
+- [[concepts/training-infra/gpu-vram-fundamentals]] — Hardware constraints
+- [[concepts/training-infra/_index]] — Parent page
 
 ## Skills Reference
 

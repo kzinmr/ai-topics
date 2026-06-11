@@ -1001,12 +1001,12 @@
 - [[concepts/ai-in-military-wargames]] — "AI in Military Wargames"
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-industry-news]] — "AI Industry News (The Signal — Apr 26)"
-- [[concepts/ai-infrastructure-engineering/distributed-training]] — Distributed Training: Practical guide to DDP/FSDP/DeepSpeed distributed training.
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — "GPU / VRAM Fundamentals"
-- [[concepts/ai-infrastructure-engineering/hardware-lottery]] — Hardware Lottery: Analysis of hardware factors determining AI research direction (Sara Hooker).
-- [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
-- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
-- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling: Profiling techniques for GPU memory optimization.
+- [[concepts/training-infra/distributed-training]] — Distributed Training: Practical guide to DDP/FSDP/DeepSpeed distributed training.
+- [[concepts/training-infra/gpu-vram-fundamentals]] — "GPU / VRAM Fundamentals"
+- [[concepts/training-infra/hardware-lottery]] — Hardware Lottery: Analysis of hardware factors determining AI research direction (Sara Hooker).
+- [[concepts/training-infra/llm-observability]] — "LLM Observability"
+- [[concepts/training-infra/model-serving-autoscaling]] — "Model Serving & Autoscaling"
+- [[concepts/training-infra/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling: Profiling techniques for GPU memory optimization.
 - [[concepts/ai-lab-subscription-vs-api-economics]] — AI Lab Subscription vs API Economics — Empirical analysis of subscription utilization vs API margins. SemiAnalysis finding: $200/mo plans far more generous than $2,000 API-equivalent assumption. Labs likely to gate new models/features from subscriptions rather than cap usage. Mythos as API-only test case.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design philosophy comparison: chat vs coding agents
 - [[concepts/ai-military]] — AI in Military Wargames

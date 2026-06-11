@@ -19,11 +19,11 @@ related:
   - "[[concepts/gguf-quantization]]"
   - "[[concepts/local-llm/model-quantization]]"
   - "[[concepts/fine-tuning/quantization-overview]]"
-  - "[[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]]"
+  - "[[concepts/training-infra/gpu-vram-fundamentals]]"
   - "[[concepts/inference/vllm]]"
   - "[[concepts/tensorrt-llm]]"
   - "[[concepts/emergent-features-llm]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
+  - "[[concepts/training-infra/_index]]"
   - "[[entities/tim-dettmers]]"
   - "[[entities/maarten-grootendorst]]"
 ---
@@ -390,10 +390,10 @@ from optimum.fx import FxQuantizer             # PyTorch graph-mode quantization
 - [[concepts/gguf-quantization]] — GGUF format deep-dive
 - [[concepts/local-llm/model-quantization]] — Local LLM quantization specifics
 - [[concepts/fine-tuning/quantization-overview]] — Fine-tuning quantization
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — VRAM requirements by quantization
+- [[concepts/training-infra/gpu-vram-fundamentals]] — VRAM requirements by quantization
 - [[concepts/inference/vllm]]#TurboQuant — vLLM 2-bit KV cache
 - [[concepts/tensorrt-llm]] — NVIDIA FP8/FP4 inference
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page
+- [[concepts/training-infra/_index]] — Parent page
 - [[entities/tim-dettmers]] — bitsandbytes, LLM.int8(), QLoRA
 - [[entities/maarten-grootendorst]] — Visual quantization guide
 

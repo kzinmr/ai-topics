@@ -38,37 +38,37 @@ This category covers the following areas comprehensively:
 
 | Layer | Topic | Coverage |
 |----------|----------|-----------|
-| **Hardware** | GPU/VRAM fundamentals, Memory Bandwidth, HBM | [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] ⬜ L1 |
+| **Hardware** | GPU/VRAM fundamentals, Memory Bandwidth, HBM | [[concepts/training-infra/gpu-vram-fundamentals]] ⬜ L1 |
 | **Quantization** | FP4/FP8/INT4/INT8, AWQ/GPTQ/GGUF | [[concepts/model-quantization]] ⬜ stub |
 | **Inference Engines** | vLLM, TensorRT-LLM, SGLang, llama.cpp | [[concepts/inference/_index]] ✅ LIVE |
 | **Inference Optimization** | KV Cache, Speculative Decoding, Continuous Batching | [[concepts/kv-cache]], [[concepts/speculative-decoding]] ✅ LIVE |
-| **Distributed Training** | DDP, FSDP, DeepSpeed, 3D Parallelism | [[concepts/ai-infrastructure-engineering/distributed-training]] ⬜ L1 |
-| **Model Serving** | Autoscaling, Load Balancing, Prefix Caching | [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] ⬜ L1 |
+| **Distributed Training** | DDP, FSDP, DeepSpeed, 3D Parallelism | [[concepts/training-infra/distributed-training]] ⬜ L1 |
+| **Model Serving** | Autoscaling, Load Balancing, Prefix Caching | [[concepts/training-infra/model-serving-autoscaling]] ⬜ L1 |
 | **Cost Optimization** | Prompt Caching, Batch Orchestration, Token Economics | [[concepts/prompt-caching]] ✅ LIVE |
-| **Observability** | Traces, Metrics, Logs, Evals | [[concepts/ai-infrastructure-engineering/llm-observability]] ⬜ L1 |
-| **Memory Debugging** | PyTorch Memory Snapshot, Memory Profiler, OOM Debugging | [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] 🟢 L1 |
-| **Research Frameworks** | Hardware Lottery, Path Dependency, Infrastructure Decision Theory | [[concepts/ai-infrastructure-engineering/hardware-lottery]] 🟢 L2 |
+| **Observability** | Traces, Metrics, Logs, Evals | [[concepts/training-infra/llm-observability]] ⬜ L1 |
+| **Memory Debugging** | PyTorch Memory Snapshot, Memory Profiler, OOM Debugging | [[concepts/training-infra/pytorch-gpu-memory-profiling]] 🟢 L1 |
+| **Research Frameworks** | Hardware Lottery, Path Dependency, Infrastructure Decision Theory | [[concepts/training-infra/hardware-lottery]] 🟢 L2 |
 
 ## Learning Roadmap
 
 Recommended learning paths by goal:
 
 ### 🏗️ Model Serving Engineer (For API Production)
-1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — Essential foundation for understanding GPU capacity
+1. [[concepts/training-infra/gpu-vram-fundamentals]] — Essential foundation for understanding GPU capacity
 2. [[concepts/inference/_index]] — Engine comparison and selection criteria
 3. [[concepts/kv-cache]] — Root cause of memory bottlenecks
 4. [[concepts/serving-llms-vllm]] — vLLM in practice
-5. [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — Production scaling
-6. [[concepts/ai-infrastructure-engineering/llm-observability]] — Monitoring and operations
+5. [[concepts/training-infra/model-serving-autoscaling]] — Production scaling
+6. [[concepts/training-infra/llm-observability]] — Monitoring and operations
 
 ### 🚀 Training Infra Engineer (For Training Pipelines)
-1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU memory hierarchy
-2. [[concepts/ai-infrastructure-engineering/distributed-training]] — DDP → FSDP → DeepSpeed
+1. [[concepts/training-infra/gpu-vram-fundamentals]] — GPU memory hierarchy
+2. [[concepts/training-infra/distributed-training]] — DDP → FSDP → DeepSpeed
 3. [[concepts/model-quantization]] — Quantization fundamentals (FP8 training support)
 4. [[concepts/llm-inference]] — Fundamental theory of inference optimization
 
 ### 💰 Cost Optimization (API Cost Reduction)
-1. [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — Relationship between VRAM and cost
+1. [[concepts/training-infra/gpu-vram-fundamentals]] — Relationship between VRAM and cost
 2. [[concepts/prompt-caching]] — Caching strategies
 3. [[concepts/speculative-decoding]] — Throughput improvement with speculative decoding
 4. [[concepts/inference/vllm]]#TurboQuant — Efficiency via KV Cache quantization

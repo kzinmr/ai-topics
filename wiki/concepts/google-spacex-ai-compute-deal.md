@@ -71,7 +71,7 @@ This deal demonstrates:
 
 ## Related Pages
 
-- [[concepts/ai-infrastructure-engineering|AI Infrastructure Engineering]]
+- [[concepts/training-infra|AI Infrastructure Engineering]]
 - [[concepts/compute-scaling-bottlenecks|Compute Scaling Bottlenecks]]
 - [[concepts/gpu-cloud-rankings|GPU Cloud Rankings]]
 - [[entities/xai|xAI]]

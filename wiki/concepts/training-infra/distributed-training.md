@@ -19,8 +19,8 @@ related:
   - "[[concepts/fine-tuning/pytorch-fsdp]]"
   - "[[concepts/fine-tuning/peft-lora-qlora]]"
   - "[[concepts/llm-inference]]"
-  - "[[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
+  - "[[concepts/training-infra/gpu-vram-fundamentals]]"
+  - "[[concepts/training-infra/_index]]"
 ---
 
 # Distributed Training — DDP / FSDP / DeepSpeed
@@ -133,8 +133,8 @@ Microsoft DeepSpeed's three-stage optimization:
 - [[concepts/fine-tuning/pytorch-fsdp]] — FSDP fine-tuning specifics
 - [[concepts/fine-tuning/peft-lora-qlora]] — Combining with PEFT methods
 - [[concepts/fine-tuning/trl]] — TRL training with distributed configs
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU VRAM constraint fundamentals
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page
+- [[concepts/training-infra/gpu-vram-fundamentals]] — GPU VRAM constraint fundamentals
+- [[concepts/training-infra/_index]] — Parent page
 
 ## Skills Reference
 

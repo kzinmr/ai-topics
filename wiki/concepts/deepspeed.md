@@ -271,7 +271,7 @@ These are transparent in FSDP (handled automatically by accelerate).
 - **[[concepts/pytorch-fsdp]]** — PyTorch's native FSDP, the primary alternative to DeepSpeed ZeRO
 - **[[concepts/fsdp-qlora]]** — FSDP combined with Q-LoRA for memory-efficient fine-tuning
 - **[[concepts/accelerate]]** — Hugging Face Accelerate, which provides plugins for both FSDP and DeepSpeed
-- **[[concepts/ai-infrastructure-engineering/distributed-training]]** — Distributed training methodologies overview
+- **[[concepts/training-infra/distributed-training]]** — Distributed training methodologies overview
 - **[[concepts/fine-tuning/peft-lora-qlora]]** — PEFT methods commonly used alongside DeepSpeed
 
 ---

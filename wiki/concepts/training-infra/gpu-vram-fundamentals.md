@@ -18,8 +18,8 @@ related:
   - "[[concepts/local-llm/inference-hardware]]"
   - "[[concepts/llm-inference]]"
   - "[[concepts/model-quantization]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
-  - "[[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]]"
+  - "[[concepts/training-infra/_index]]"
+  - "[[concepts/training-infra/pytorch-gpu-memory-profiling]]"
 ---
 
 # GPU / VRAM Fundamentals
@@ -117,9 +117,9 @@ In LLM inference, the GPU is not just a "fast calculator." **Memory bandwidth** 
 
 ## Related Pages
 
-- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorch built-in GPU memory debugging tool
+- [[concepts/training-infra/pytorch-gpu-memory-profiling]] — PyTorch built-in GPU memory debugging tool
 - [[concepts/llm-inference]] — Roofline analysis, batch size economics
 - [[concepts/local-llm/inference-hardware]] — Consumer hardware specifics
 - [[concepts/model-quantization]] — Quantization methods & tradeoffs
 - [[concepts/kv-cache]] — Major consumer of VRAM
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page
+- [[concepts/training-infra/_index]] — Parent page

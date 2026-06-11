@@ -235,7 +235,7 @@ Accelerate connects multiple existing concept pages as the **unified orchestrati
 - **[[concepts/qlora]]** — Mentions Accelerate integration for distributed Q-LoRA training.
 - **[[concepts/fine-tuning/peft-lora-qlora]]** — PEFT works alongside Accelerate; the `Accelerator` prepares model, optimizer, and dataloader for distributed PEFT training.
 - **[[concepts/fine-tuning/pytorch-fsdp]]** — Fine-tuning-specific FSDP configs (Axolotl) that run via Accelerate's launch system.
-- **[[concepts/ai-infrastructure-engineering/distributed-training]]** — Higher-level overview of DDP/FSDP/DeepSpeed paradigms; Accelerate is the tool that operationalizes them.
+- **[[concepts/training-infra/distributed-training]]** — Higher-level overview of DDP/FSDP/DeepSpeed paradigms; Accelerate is the tool that operationalizes them.
 - **[[concepts/inference/vllm]]** — Mentions Accelerate for FSDP configuration in training workflows that feed into vLLM serving.
 
 ---
@@ -247,7 +247,7 @@ Accelerate connects multiple existing concept pages as the **unified orchestrati
 - **[[concepts/qlora]]** — Quantized Low-Rank Adaptation, often used with Accelerate for distributed training
 - **[[concepts/fine-tuning/peft-lora-qlora]]** — PEFT methods that integrate with Accelerate's distributed training
 - **[[concepts/fine-tuning/pytorch-fsdp]]** — FSDP configuration for fine-tuning workflows (Axolotl, etc.)
-- **[[concepts/ai-infrastructure-engineering/distributed-training]]** — Higher-level overview of DDP, FSDP, and DeepSpeed paradigms
+- **[[concepts/training-infra/distributed-training]]** — Higher-level overview of DDP, FSDP, and DeepSpeed paradigms
 - **[[concepts/inference/vllm]]** — Production inference serving (Accelerate for FSDP training → vLLM serving pipeline)
 
 ---

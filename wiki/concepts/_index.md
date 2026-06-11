@@ -122,11 +122,11 @@ AI and LLM concept pages organized by topic.
 
 ## Ai-Infrastructure-Engineering
 
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page: AI Infrastructure Engineering. GPU/VRAM fundamentals, distributed training, model serving, observability, cost optimization.
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU memory hierarchy, VRAM requirement calculation, roofline model, batching economics, quantization effects.
-- [[concepts/ai-infrastructure-engineering/distributed-training]] — DDP → FSDP → DeepSpeed ZeRO stages, 3D parallelism (TP/PP/EP), strategy selection guide.
-- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — Deployment architectures, autoscaling strategies (HPA, predictive, serverless), load balancing, cost optimization.
-- [[concepts/ai-infrastructure-engineering/llm-observability]] — Inference metrics (TTFT, TPOT, ITL), GPU/VRAM monitoring, cost attribution, production patterns, vLLM OTel integration.
+- [[concepts/training-infra/_index]] — Parent page: AI Infrastructure Engineering. GPU/VRAM fundamentals, distributed training, model serving, observability, cost optimization.
+- [[concepts/training-infra/gpu-vram-fundamentals]] — GPU memory hierarchy, VRAM requirement calculation, roofline model, batching economics, quantization effects.
+- [[concepts/training-infra/distributed-training]] — DDP → FSDP → DeepSpeed ZeRO stages, 3D parallelism (TP/PP/EP), strategy selection guide.
+- [[concepts/training-infra/model-serving-autoscaling]] — Deployment architectures, autoscaling strategies (HPA, predictive, serverless), load balancing, cost optimization.
+- [[concepts/training-infra/llm-observability]] — Inference metrics (TTFT, TPOT, ITL), GPU/VRAM monitoring, cost attribution, production patterns, vLLM OTel integration.
 
 ## Web-Filesystem
 

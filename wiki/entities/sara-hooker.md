@@ -34,5 +34,5 @@ sources:
 Hooker advocates for reducing the cost of exploring new hardware-software-algorithm combinations. Her work highlights that the performance of algorithms is inseparably tied to the hardware they run on — a critical insight for AI infrastructure engineering.
 
 ## Cross-References
-- [[concepts/ai-infrastructure-engineering/hardware-lottery]] — The concept page for her seminal essay
+- [[concepts/training-infra/hardware-lottery]] — The concept page for her seminal essay
 - [[entities/google]] — Google DeepMind, her research home

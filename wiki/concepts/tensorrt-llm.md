@@ -20,9 +20,9 @@ related:
   - "[[concepts/inference/sglang]]"
   - "[[concepts/serving-llms-vllm]]"
   - "[[concepts/kv-cache]]"
-  - "[[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]]"
-  - "[[concepts/ai-infrastructure-engineering/model-serving-autoscaling]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
+  - "[[concepts/training-infra/gpu-vram-fundamentals]]"
+  - "[[concepts/training-infra/model-serving-autoscaling]]"
+  - "[[concepts/training-infra/_index]]"
 ---
 
 # TensorRT-LLM — NVIDIA Inference Optimization Engine
@@ -130,9 +130,9 @@ TensorRT-LLM aims for **absolute lowest latency** and **highest hardware efficie
 - [[concepts/inference/vllm]] — vLLM (primary competitor)
 - [[concepts/inference/sglang]] — SGLang (agent-optimized)
 - [[concepts/serving-llms-vllm]] — vLLM serving patterns
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — NVIDIA GPU capabilities
-- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — Production serving infrastructure
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page
+- [[concepts/training-infra/gpu-vram-fundamentals]] — NVIDIA GPU capabilities
+- [[concepts/training-infra/model-serving-autoscaling]] — Production serving infrastructure
+- [[concepts/training-infra/_index]] — Parent page
 
 ## TODO
 

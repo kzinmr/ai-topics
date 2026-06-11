@@ -18,7 +18,7 @@ related:
   - "[[entities/google]]"
   - "[[entities/microsoft]]"
   - "[[entities/meta]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
+  - "[[concepts/training-infra/_index]]"
 ---
 
 # MIT-IBM Computing Research Lab
@@ -73,4 +73,4 @@ The lab works alongside the MIT Schwarzman College of Computing, MIT Generative 
 ## Related
 - [[entities/google]] — Competitor in quantum computing (Google Quantum AI)
 - [[entities/microsoft]] — Quantum computing research (Azure Quantum)
-- [[concepts/ai-infrastructure-engineering/_index]] — AI infrastructure engineering overview
+- [[concepts/training-infra/_index]] — AI infrastructure engineering overview

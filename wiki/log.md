@@ -3491,7 +3491,7 @@ The article's framing offers transferable patterns for wiki management:
 ### Files Translated
 - [[concepts/cognitive-load-software-development.md]] — 956 chars → 0
 - [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]] — 950 chars → 0
-- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling.md]] — 940 chars → 0
+- [[concepts/training-infra/model-serving-autoscaling.md]] — 940 chars → 0
 - [[concepts/harness-engineering/agentic-workflows/context-window-management.md]] — 939 chars → 0
 - [[concepts/meta-meta-prompting.md]] — 935 chars → 0
 - [[concepts/harness-engineering/agentic-workflows/how-agents-work.md]] — 931 chars → 0
@@ -3614,7 +3614,7 @@ The article's framing offers transferable patterns for wiki management:
 ## [2026-05-26] translate | JP→EN batch — 8 concept files
 
 ### Files Translated
-- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling.md]] — 1,651 JP chars removed
+- [[concepts/training-infra/pytorch-gpu-memory-profiling.md]] — 1,651 JP chars removed
 - [[concepts/gliclass.md]] — 1,655 JP chars removed
 - [[concepts/harness-engineering/agentic-engineering-patterns.md]] — 1,655 JP chars removed
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition.md]] — 1,644 JP chars removed

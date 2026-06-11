@@ -22,7 +22,7 @@ related:
   - "[[concepts/agent-evaluation-methodology]]"
   - "[[comparisons/eval-tools-comparison]]"
   - "[[concepts/logfire]]"
-  - "[[concepts/ai-infrastructure-engineering/llm-observability]]"
+  - "[[concepts/training-infra/llm-observability]]"
   - "[[concepts/openai/symphony]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/ben-hylak]]"
@@ -209,7 +209,7 @@ Raindrop Workshop embodies the **code-aware eval** philosophy from [[concepts/ag
 - [[entities/ben-hylak]] — Ben Hylak, Raindrop co-founder & CTO
 - [[comparisons/eval-tools-comparison]] — Eval tool comparison
 - [[concepts/logfire]] — Pydantic Logfire (Python-native observability)
-- [[concepts/ai-infrastructure-engineering/llm-observability]] — LLM inference metrics
+- [[concepts/training-infra/llm-observability]] — LLM inference metrics
 - [[concepts/openai/symphony]] — OpenAI Symphony orchestration
 - [[concepts/harness-engineering]] — Foundational agent reliability practice
 - [[entities/arize]] — Arize AI entity

@@ -16,8 +16,8 @@ sources:
   - https://arxiv.org/abs/2009.06489
   - https://dl.acm.org/doi/10.1145/3467017
 related:
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
-  - "[[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]]"
+  - "[[concepts/training-infra/_index]]"
+  - "[[concepts/training-infra/gpu-vram-fundamentals]]"
   - "[[concepts/inference/_index]]"
   - "[[entities/google]]"
   - "[[entities/nvidia]]"
@@ -108,8 +108,8 @@ Even if hardware is neutral, software ecosystems create their own lottery:
 The hardware lottery framework predicts that as AI infrastructure becomes more specialized, **intermediate representations** (MLIR, ONNX, Triton IR) will become critical for maintaining research diversity — they allow algorithmic innovation without requiring new hardware.
 
 ## Related Concepts
-- [[concepts/ai-infrastructure-engineering/_index]] — AI Infrastructure Engineering umbrella
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU memory fundamentals (hardware lottery territory)
+- [[concepts/training-infra/_index]] — AI Infrastructure Engineering umbrella
+- [[concepts/training-infra/gpu-vram-fundamentals]] — GPU memory fundamentals (hardware lottery territory)
 - [[concepts/inference/_index]] — Inference engine comparison (demonstrates hardware lottery in action)
 - [[concepts/model-quantization]] — Quantization as a hardware-dependent optimization
 - [[entities/google]] — TPUs as infrastructure lock-in

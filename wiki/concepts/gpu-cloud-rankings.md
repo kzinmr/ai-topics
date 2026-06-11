@@ -189,7 +189,7 @@ Providers offering both AMD and NVIDIA consistently have worse AMD cloud quality
 - [[entities/nebius]] — Gold-tier GPU cloud, KubeVirt architecture
 - [[concepts/kubernetes]] — Container orchestration for AI workloads
 - [[concepts/slurm]] — HPC job scheduler, Slurm-on-K8s trend
-- [[concepts/ai-infrastructure-engineering]] — Broader infrastructure practices
+- [[concepts/training-infra]] — Broader infrastructure practices
 
 ## Sources
 - [[entities/semianalysis]] — "ClusterMAX 2.0: The Industry Standard GPU Cloud Rating System" (November 2025, 46,000+ words)

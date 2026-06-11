@@ -22,9 +22,9 @@ sources:
   - "https://pytorch.org/blog/understanding-gpu-memory-1/"
   - "https://dev-discuss.pytorch.org/t/how-to-measure-memory-usage-from-your-model-without-running-it/"
 related:
-  - "[[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
-  - "[[concepts/ai-infrastructure-engineering/llm-observability]]"
+  - "[[concepts/training-infra/gpu-vram-fundamentals]]"
+  - "[[concepts/training-infra/_index]]"
+  - "[[concepts/training-infra/llm-observability]]"
   - "[[concepts/llm-inference]]"
   - "[[concepts/kv-cache]]"
 ---
@@ -248,8 +248,8 @@ The PyTorch team is planning a major refactoring of the device cache allocator:
 
 ## Related Pages
 
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU memory hierarchy fundamentals
-- [[concepts/ai-infrastructure-engineering/llm-observability]] — LLM observability (TTFT, TPOT, etc.)
+- [[concepts/training-infra/gpu-vram-fundamentals]] — GPU memory hierarchy fundamentals
+- [[concepts/training-infra/llm-observability]] — LLM observability (TTFT, TPOT, etc.)
 - [[concepts/llm-inference]] — Roofline analysis, batch economics
 - [[concepts/kv-cache]] — Primary VRAM consumer
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page
+- [[concepts/training-infra/_index]] — Parent page

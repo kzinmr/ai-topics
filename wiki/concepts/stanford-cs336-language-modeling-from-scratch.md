@@ -120,7 +120,7 @@ Listed in Yoav Goldberg's guide as the only course given special treatment for b
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention implemented in Assignment 2
 - [[concepts/grpo-rl-training]] — RL method implemented in Assignment 5
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization covered in Assignment 5
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — Prerequisite knowledge for Assignment 2
+- [[concepts/training-infra/gpu-vram-fundamentals]] — Prerequisite knowledge for Assignment 2
 - [[concepts/fine-tuning/trl]] — HuggingFace TRL used in Assignment 5
 
 ---

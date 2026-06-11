@@ -16,8 +16,8 @@ sources: []
 related:
   - "[[concepts/ai-observability]]"
   - "[[concepts/serving-llms-vllm]]"
-  - "[[concepts/ai-infrastructure-engineering/model-serving-autoscaling]]"
-  - "[[concepts/ai-infrastructure-engineering/_index]]"
+  - "[[concepts/training-infra/model-serving-autoscaling]]"
+  - "[[concepts/training-infra/_index]]"
 ---
 
 # LLM Observability
@@ -115,9 +115,9 @@ This page is a superset of [[concepts/ai-observability]], organizing LLM observa
 
 - [[concepts/ai-observability]] — Detailed LLM observability guide (quality, agent tracing)
 - [[concepts/serving-llms-vllm]] — vLLM metrics & monitoring
-- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — Metrics as scaling signals
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU resource monitoring fundamentals
-- [[concepts/ai-infrastructure-engineering/_index]] — Parent page
+- [[concepts/training-infra/model-serving-autoscaling]] — Metrics as scaling signals
+- [[concepts/training-infra/gpu-vram-fundamentals]] — GPU resource monitoring fundamentals
+- [[concepts/training-infra/_index]] — Parent page
 
 ## TODO
 
