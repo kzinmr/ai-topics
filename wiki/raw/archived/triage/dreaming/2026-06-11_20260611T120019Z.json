@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-11T12:01:37.945899+00:00",
+  "triage_run_id": "20260611T120019Z",
+  "source": "dreaming",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）のトリアージ。全記事が既存wikiページで完全にカバー済み、またはAI/LLMスコープ外。Takes=0、References=0、Skips=5。MAI-Thinking-1 Tech Reportはconcepts/mai-thinking-1-tech-report.md（227行）+ concepts/microsoft-mai-models.mdで包括的coverage。Dwarkesh AGI Economics対談はconcepts/agi-economics.md（93行）+ entities/dwarkesh-patel.mdに収録。Ed Zitron「AI Doesn't Have ROI」はentities/ed-zitron.mdに70行の専用セクションあり。Will Brown Lesson 2トランスクリプトはconcepts/agents-mcp-rl-courseエコシステムの既存トランスクリプト群に含まれる。Hands-On Modern RLはconcepts/hands-on-modern-rl.md（173行）で本日作成済み。",
+  "decisions": [
+    {
+      "item_id": "2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "source": "raw_article",
+      "source_name": "Will Brown / Kyle Corbitt",
+      "title": "Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)",
+      "url": "https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページでカバー済み。concepts/agents-mcp-rl-course（コースポータルページ）が本コースのエントリーポイント。同じコースのトランスクリプトが既に複数処理済み（Lesson 1-6、office hours 3回）。本記事はLesson 2のrawトランスクリプトで、type hints/strong typingの議論やMCPのproduction化に関する内容は既存トランスクリプト群の文脈に含まれる。entities/will-brown.mdにもインストラクターとして言及済み。",
+      "candidate_wiki_path": "concepts/agents-mcp-rl-course",
+      "body_excerpt": "# Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)\n**Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])\n**Co-instructor:** Kyle Corbitt (CTO, OpenPipe)\n**Date:** June 19, 2025\n**Companion course:** [[concepts/agents-mcp-rl-course|Produ"
+    }
+  ]
+}

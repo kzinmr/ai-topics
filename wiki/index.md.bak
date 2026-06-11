@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-11 | Total pages: 2475 | Indexed entries: 2032 | Concepts: 1680 | Entities: 782
+> Last updated: 2026-06-11 | Total pages: 2455 | Indexed entries: 2012 | Concepts: 1660 | Entities: 782
 
 ## Entities (782 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -801,12 +801,11 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1680 pages)
+## Concepts (1660 pages)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/abliteration]] — Abliteration: Mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. 3,500+ decensored models, 13M downloads. Automated by Heretic tool. Affects Llama, Gemma, Nemotron.
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution — Postgres-Native Durable Execution: Async processing foundation in the AI Agent context. LLM loop checkpointing, Pi Agent integration patterns, Event-driven inter-agent coordination. Includes comparison with Temporal/DBOS/PGMQ.
-- [[concepts/accelerate]] — Accelerate — HuggingFace library for distributed training. Enables mixed precision, gradient accumulation, and multi-GPU/TPU training with minimal code changes.
 - [[concepts/activation-steering]] — Activation Steering: Technique for controlling behavior by manipulating feature activation strength during LLM inference. Unlike RLHF, it intervenes at inference time. Goodfire.ai, Golden Gate Claude, Abliteration. Applied to spam classification, style control, and user preference persistence.
 - [[concepts/active-observability]] — Active Observability: Braintrust Topics methodology for continuous automated trace intelligence. 6-stage pipeline (preprocess → facet → embed → cluster → name → classify). Clio-inspired: LLM summarizes traces along single dimensions, embed the facet output (not raw trace), HDBSCAN+UMAP clustering. ~100ms classification without LLM calls.
 - [[concepts/activegraph]] — Event-Sourced Reactive Graph for agentic systems (arXiv:2605.21997). Inverts conventional architecture: append-only event log as source of truth, graph as deterministic projection, behaviours react to graph-shape changes. Three unique properties: deterministic replay (content-addressed cache), cheap forking (branch at any event), end-to-end lineage. Open source (Apache-2.0): `pip install activegraph`. Created by Yohei Nakajima.
@@ -950,7 +949,6 @@
 - [[concepts/ai-benchmarks/freshstack-benchmark]] — FreshStack Benchmark — AI agent evaluation benchmark. Framework-agnostic, covers diverse real-world scenarios.
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — FrontierSWE: Ultra-difficult coding agent benchmark (Proximal Labs). 20-hour limit, 3 categories (Implementation/Performance/Research) × 17 tasks. GPT-5.5+Codex leads with avg rank 2.35 (Dominance 83%). Documents conservative (GPT-5.4) vs aggressive (Opus 4.6) behavior, overconfidence/cheating behavior.
 - [[concepts/ai-benchmarks/frontiercode]] — FrontierCode: Cognition's coding eval measuring mergeability over test-passing. Tasks require 40+ hrs from maintainers. Best model (Opus 4.8) scores ~13% on hardest subset vs 50%+ on SWE-Bench. 'War on Slop' framework.
-- [[concepts/ai-benchmarks/gaia-benchmark]] — GAIA Benchmark — Benchmark for General AI Assistants testing real-world reasoning, multi-step tool use, and task completion across diverse scenarios.
 - [[concepts/ai-benchmarks/gpqa]] — GPQA — Graduate-level Google-proof Q&A. 448 questions in biology/physics/chemistry (198 in Diamond set). PhD experts 65-74%, non-experts 34%. Frontier models saturating at ~94%.
 - [[concepts/ai-benchmarks/hle]] — Humanity's Last Exam (HLE) — 2,500 questions across 100+ disciplines. $500K prize pool. Rigorous filtering pipeline. Score evolution from 3%→65%. Published in Nature.
 - [[concepts/ai-benchmarks/ifeval]] — IFEval — Instruction-following evaluation. 25 verifiable instruction types, ~500 prompts. Deterministic evaluation. Qwen3.5-27B leads at 95.0%. Saturation trend among top models.
@@ -1261,7 +1259,6 @@
 - [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + Postgres for Agent Workflows: AI agent workflow foundation integrating filesystem and PostgreSQL.
 - [[concepts/browser-agent/death-of-browser|Death of Browser — Dehumanization of the Browser]] — The browser was the UI for humans. From now on, it's the UI for agents.
 - [[concepts/browser-agent/deep-research|Deep Research — Agentic Browsing for Autonomous Research]] — OpenAI's fine-tuned o3 for autonomous web research and synthesis.
-- [[concepts/decision-centric-architecture]] — Decision-Centric Architecture — Architecture pattern organizing AI systems around decisions (not data or requests), inspired by Palantir's Ontology-driven software philosophy.
 - [[concepts/deep-learning]] — Deep Learning: Foundations, training paradigm shifts, and ecosystem coverage
 - [[concepts/deep-agents]] — Deep Agents: Autonomous AI agents combining multiple architecture patterns.
 - [[concepts/deep-agents-runtime]] — Deep Agents Runtime: Production execution foundation for deep agents (durable execution, memory, multi-agent).
@@ -1505,7 +1502,6 @@
 - [[concepts/information-theory-and-agent-communication]] — Reinterpretation of Shannon's (1948) Mathematical Theory of Communication from the perspective of inter-agent AI communication. Three-layer agent communication model integrating V-Information (Xu et al., 2020). Information-theoretic foundations of the harness effect, Shannon capacity analogy for context windows.
 - [[concepts/infrastructure]] — Infrastructure-Level Sandbox — OS/hypervisor-level isolation technologies for AI agent sandboxing.
 - [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Quantitative analysis of infrastructure noise in agentic coding evaluation. 6pp difference between 1x→uncapped resources on Terminal-Bench 2.0 (p<0.01). Be skeptical of leaderboard differences under 3pp. Time of day, parallelism, and bandwidth are hidden confounders.
-- [[concepts/intelligence-conflation]] — Intelligence Conflation — The fallacy of conflating different dimensions of intelligence (knowledge, reasoning, consciousness) in AI capability discussions and public debate.
 - [[concepts/intent-based-engineering]] — Intent-Based Engineering — Daniel Miessler's framework specifying WHAT rather than HOW, letting AI infer implementation details from clear intent declarations.
 - [[concepts/intent-formalization]] — "Intent Formalization for AI Agents"
 - [[concepts/interaction-models]] — Thinking Machines Lab research preview. Natively handles multimodal, real-time interaction with 200ms micro-turns. Simultaneous audio/video/text input and output. Integrates with async background models.
@@ -1516,7 +1512,6 @@
 - [[concepts/json-render]] — "json-render — Generative UI Framework"
 - [[concepts/evaluation/judgment-list]] — Judgment List: foundational tool for search relevance evaluation. Query-document-relevance-grade triples serve as test suites, training data, and quality gates. DCG/NDCG computation, implicit/explicit/crowdsourced judgment sources, relationship to LTR, "grug-brained evals" philosophy. Advocated by Doug Turnbull.
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
-- [[concepts/kernel-evolve]] — KernelEvolve — Meta's agentic kernel authoring system for automated GPU kernel optimization, code generation, and self-improving CUDA kernels.
 - [[concepts/kimi-k2-5]] — Kimi K2-5 — Moonshot AI's 1T-parameter Mixture-of-Experts model, 200K context window, competitive with frontier models on reasoning and coding.
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for Agents
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
@@ -1541,7 +1536,6 @@
 - [[concepts/llm-code-quality]] — LLM Code Quality — LLM-generated code is ~10% more complex than necessary even on easy tasks. "Almost good" quality accepted too easily, creates long-term technical debt. Case study: Haskell HTTP header encoding.
 - [[concepts/llm-core]] — LLM Core
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
-- [[concepts/llm-creative-writing]] — LLM Creative Writing — AI-assisted creative writing: narrative generation, style transfer, and prompting for literary prose. Gwern's analysis of better LLM writing techniques.
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm — Two-stage development approach: pre-training → post-training (SFT+RS+DPO). Established in the Llama 3 paper.
 - [[concepts/llm-evaluation]] — LLM Evaluation
 - [[concepts/evaluation/llm-evaluation-harness]] — LM Evaluation Harness
@@ -1572,7 +1566,6 @@
 - [[concepts/coding-agents/mandate-equinox]] — Mandate Equinox — The concept of a competitive cycle in the coding agent market where OpenAI and Anthropic trade dominance roughly every 6 months. Proposed by DanB (@irl_danB).
 - [[concepts/marin]] — Marin — Open-source framework from Stanford CRFM for foundation model research and training. Reproducible end-to-end pipeline, open development on GitHub (1.1k stars). Trained first open-source 8B to beat Llama 3.1 8B.
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents — Run ACP-compatible coding agents as Mastra tools/sub-agents. Supports supervisor delegation and workflow steps. @mastra/acp@0.1.0 (May 2026).
-- [[concepts/mcp]] — MCP (Model Context Protocol) — Anthropic's open protocol for AI tool discovery and invocation. "USB-C for AI" connecting any agent to any tool ecosystem.
 - [[concepts/mcp-desktop-extensions]] — MCP Desktop Extensions (.mcpb). MCP 2026-07-28 RC: protocol made stateless (no handshake, no session ID). MCP Apps/Tasks extensions. Single ZIP archive file. Double-click install.
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security — Model Context Protocol implementation, testing, and security analysis
 - [[concepts/mechanistic-interpretability]] — Mechanistic Interpretability — Understanding neural networks by reverse engineering
@@ -1587,7 +1580,6 @@
 - [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
 - [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr/May 2026 → Jun 2026 Build): MAI-Thinking-1 (1T param reasoning, 35B active, zero distillation), MAI-Code-1-Flash (137B code model, 5B active), MAI-Image-2, MAI-Transcribe-1, MAI-Voice-1 + updates. Windows as agent runtime, GitHub Copilot app, Web IQ.
 - [[concepts/microsoft-scout-agent]] — Microsoft Scout (Jun 2026) — Microsoft's first "Autopilot" agent. Always-on M365 agent with governed Entra ID identity, Work IQ, built on OpenClaw. Proactive scheduling, meeting prep, M365 integration. Built with enterprise-grade security.
-- [[concepts/miles-rl]] — Miles RL — Reinforcement learning framework for LLM and agent training. Covers PPO, GRPO, online/offline RL methods and practical training recipes.
 - [[concepts/coding-agents/minimal-coding-agent]] — "Minimal Coding Agent"
 - [[concepts/minimax-m3]] — MiniMax M3 — All-in-one multimodal 1M-context model. MiniMax Sparse Attention (MSA), Together AI preferred cloud partner with 81-125% throughput gains. Native image/video support. June 2026.
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA) — Sub-quadratic attention for MiniMax M3 model. Block-level selection on real KVs, 9.7× faster prefilling, 15.6× faster decoding at 1M tokens vs full attention. May 2026.
@@ -1601,7 +1593,6 @@
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
 - [[concepts/security-and-governance/model-cards-system-cards]] — Model Cards and System Cards: Transparency documents published by AI developers describing capabilities, testing, limitations, and safeguards. Analysis perspectives: capability-disclaimer gap, benchmark selection bias, safety layer architecture, absence as signal, regulatory alignment.
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
-- [[concepts/modelcrafting]] — Modelcrafting — AI post-training automation: systematic fine-tuning, distillation, and alignment workflows for custom model creation.
 - [[concepts/model-distillation]] — Model Distillation
 - [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs — Industry thesis: every model lab is restructuring around agent infrastructure. Brockman: "the model alone is no longer the product".
 - [[concepts/model-merging]] — Model Merging: Combining neural network weights without training — SLERP, TIES-Merging, DARE, evolutionary merging (Sakana AI), mergekit ecosystem, 1000+ merged models on Hugging Face.
@@ -1624,7 +1615,6 @@
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-Agent Systems — Theoretical foundations for multi-agent architectures. Three-layer structural decoupling (Topology → Isolation → Verification) from [[structured-test-time-scaling]]. Covers why MAS bypass linear collapse: span compression, scope isolation, decoupled verification. System mapping table and practical constraints.
 - [[concepts/multi-agents/multi-agents-whats-actually-working]] — Multi-Agents: What's Actually Working — Survey of effective multi-agent patterns in production.
 - [[concepts/multi-channel-agents]] — Multi-Channel Agents — Multi-user agent engineering for Slack, Discord, and Telegram. Thread isolation, resource-based memory scoping, HMAC auth, platform-specific credential management. From Mastra (May 2026).
-- [[concepts/multi-teacher-on-policy-distillation]] — Multi-Teacher On-Policy Distillation (MOPD) — Training technique combining knowledge distillation from multiple teacher models during on-policy RL for improved student model quality.
 - [[concepts/multi-token-prediction]] — Google Gemma 4 MTP drafters (May 2026): speculative decoding delivering up to 3x speedup. Lightweight drafter model predicts multiple tokens, main model verifies in single pass.
 - [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: Method for teaching multi-turn tool orchestration to LLM agents using GRPO. Bespoke Labs achieved +23% on BFCL v3 (Qwen2.5-7B, 100 samples). Less is More in reward design, overlength filtering + KL 0.001.
 - [[concepts/multimodal]] — Multimodal AI — Models and techniques for processing multiple data modalities (text, image, audio, video)
@@ -1638,7 +1628,6 @@
 - [[concepts/coding-agents/normalization-of-deviance-in-ai-coding|Normalization of Deviance in AI Coding]] — How teams gradually accept risky practices in AI-generated code.
 - [[concepts/notion-cli]] — Notion CLI (ntn): official command-line tool for Notion API, Workers management, and file uploads. Designed for human developers and AI coding agents. Free on all plans.
 - [[concepts/notion-mcp]] — Notion MCP: official Notion MCP server (https://mcp.notion.com/mcp). Setup guides for Claude Code, Cursor, VS Code, Windsurf, ChatGPT, Codex. OAuth 2.0 authentication.
-- [[concepts/nvidia-egpu-macos]] — NVIDIA eGPU on macOS — Running NVIDIA GPUs via Thunderbolt on Mac for local AI inference and hardware-accelerated ML experimentation.
 - [[concepts/nvidia-ai-q]] — NVIDIA AI-Q: Open-source deep research agent blueprint. #1 on DeepResearch Bench I & II. Planner/Researcher/Orchestrator multi-agent, citation verification middleware, SKILL.md integration.
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo: Inference architecture for agentic coding workloads. KV cache optimization, streaming tool dispatch, multi-turn inference analysis. Supports Claude Code/Codex/OpenClaw. 5x TTFT improvement.
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage: Optimization, curation, and recommendation program for AI tools, models, and agents on RTX hardware. Validates and recommends agent frameworks like Hermes Agent, NemoClaw, OpenClaw for RTX PCs/workstations/DGX Spark. Provides NVFP4 quantization, Playbook recipes, and hands-on sessions.
@@ -1672,7 +1661,6 @@
 - [[concepts/openai/responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
 - [[concepts/openai/symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
 - [[concepts/openai/tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
-- [[concepts/openclaw]] — OpenClaw — Open-source always-on AI agent framework by Peter Steinberger. Gateway-first architecture with multi-agent routing, ACP sub-agent spawning, and cron/webhook scheduling.
 - [[concepts/openclaw-architecture]] — OpenClaw architecture details
 - [[concepts/openclaw-ecosystem]] — OpenClaw Ecosystem — Peter Hayes' open-source AI agent platform ecosystem: gateway, skills library, tool server, community-contributed agents and integrations.
 - [[concepts/openenv]] — Protocol/interoperability layer for agentic RL environments. 9-org committee (HF, Meta-PyTorch, Unsloth, Modal, NVIDIA, etc.). Gymnasium-style API, Docker packaging, MCP support. GitHub: huggingface/OpenEnv.
@@ -1694,7 +1682,6 @@
 - [[concepts/personal-superintelligence]] — Personal Superintelligence — The evolution of personal AI assistants into superintelligent agents, philosophical tensions.
 - [[concepts/evaluation/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/pgr]] — pgr: Entire's Rust MCP agent-oriented code search tool. Definitions-first, path-aware ranking improved first-query MRR from 0.32→0.41, Hit@1 from 26%→34%. Demonstrates that ranking quality, not search speed, improves agent performance.
-- [[concepts/physical-ai]] — Physical AI — AI systems interacting with the physical world through robotics, autonomous vehicles, and embodied intelligence.
 - [[concepts/coding-agents/pi-autoresearch]] — pi-autoresearch (Shopify) — Generalizes Karpathy's Autoresearch from ML training to arbitrary metric optimization. 3,600+ GitHub stars. 65% faster builds, 300x faster tests, 40+ metrics improved.- [[concepts/llm-creative-writing]]
 - [[concepts/polars]] — Polars — High-performance DataFrame library for Python/Rust. Lazy query engine with Apache Arrow backend. Native Hugging Face Hub support. Extended by [[concepts/polars-hf|polars-hf]] for HF Buckets.
 - [[concepts/polars-hf]] — polars-hf — Pure-Python IO plugin enabling Polars to read/write Hugging Face Hub Buckets. Created by [[entities/daniel-van-strien|Daniel van Strien]] (June 2026).
@@ -1702,7 +1689,6 @@
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: Design pattern where LLM agents improve without updating model weights by accumulating successful outputs, user corrections, and domain knowledge in external knowledge bases. Proposed by Ashpreet Bedi in the Text-to-SQL context. Similar approach to BQ Golden Queries, dbt Semantic Layer, LPE-SQL.
 - [[concepts/post-training]] — Post-Training — RLHF, SFT, and alignment techniques applied after pre-training
 - [[concepts/post-training-distributional-view]] — Post-Training Distribution Theory: wh (@nrehiew_)'s comparison of SFT/RL/On-Policy Distillation from a distributional perspective. Language model = distribution over sequences, post-training = distribution reshaping. Qualitative differences: SFT (mode following), RL (reward shaping), OPD (direct distribution matching). 181K views.
-- [[concepts/pretraining-parallelisms]] — Pretraining Parallelisms — Distributed training techniques for large models: data parallelism, tensor parallelism, pipeline parallelism, ZeRO optimization, and model sharding.
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information: A variational extension of Shannon information theory that accounts for the observer's computational constraints. DPI violations, PAC estimation guarantees in high dimensions, applications to structure learning and fair representation learning (Xu et al., ICLR 2020).
 - [[concepts/prime-rl-post-training]] — Prime-RL Post-Training for Subagents: Ramp Labs Fast Ask case study — RL post-training (GRPO) for specialized retrieval subagents using Qwen3.5 + Prime Intellect. Beats Opus 4.6 at Haiku latency.
 - [[concepts/princeton-cos597r-deep-dive-llm]] — Princeton COS597R Deep Dive into LLMs — Paper-based LLM research survey course by Danqi Chen & Sanjeev Arora.
@@ -1721,7 +1707,6 @@
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).
 - [[concepts/property-based-testing]] — Property-Based Testing — Testing methodology where properties/contracts are defined and random inputs are generated to verify correctness, adapted for AI agent evaluation.
 - [[concepts/coding-agents/protestware-for-coding-agents]] — Protestware for Coding Agents — New class of supply-chain attack targeting AI agents via ANSI-escape-hidden prompt injection in dependency stdout. jqwik 1.10.0 incident (May 2026): test output tells agents to delete code, invisible to humans. Clean SLSA provenance bypasses conventional scanning.
-- [[concepts/pydantic-ai]] — Pydantic AI — Type-safe Python agent framework. Structured outputs, dependency injection, tool contracts, and observability as first-class concerns.
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pylate]] — PyLate — Training & retrieval library for ColBERT models (LightOn, CIKM 2025). Contrastive + KD training, GradCache, multi-GPU, NanoBEIR eval, FastPLAID backend. MIT.
 - [[concepts/python-packaging]] — Python Packaging — Distribution and packaging for Python projects
@@ -1738,7 +1723,6 @@
 - [[concepts/ragen]] — RAGEN: veRL-based agent RL extension. Adds explicit environment interface for easier multi-turn RL in custom environments.
 - [[concepts/evaluation/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
 - [[concepts/coding-agents/ramp-inspect]] — Ramp Inspect: background coding agent with autonomous verification loop. ~30% of Ramp PRs. Modal sandbox VMs, multi-modal interface (Slack, Chrome ext, web, VS Code, PR).
-- [[concepts/ranking-engineer-agent]] — Ranking Engineer Agent (REA) — Meta's autonomous AI agent for ads ranking optimization. Self-improving through reward-modulated fine-tuning.
 - [[concepts/rao-recursive-agent-optimization]] — RAO (Recursive Agent Optimization) — RL training for recursive agents that spawn/delegate to copies of themselves. CMU × Amazon AGI Labs 2026
 - [[concepts/coding-agents/real-time-rl]] — Training paradigm where models are continuously improved using reward signals from real user interactions in production — avoiding the simulation gap. Pioneered by Cursor for their Composer coding agent (ships new checkpoints every ~5h). Open-source implementation: rollouts by @27upon2 using Prime Intellect + OpenCode. See: [[entities/cursor-ai|cursor-ai]], [[entities/sriraam-27upon2|sriraam]].
 - [[concepts/reasoning-aware-retrieval]] — Reasoning-Aware Retrieval — Jointly embedding an AI agent's reasoning trace alongside its search query (AgentIR-4B). +18% accuracy at half the parameter count. Chen et al. (Waterloo/UQ/CMU), 2026.
@@ -1756,7 +1740,6 @@
 - [[concepts/representation-collapse]] — Representation Collapse — When representations (signs, models, proxy metrics, maps) detach from reality and begin self-referentially generating their own "reality." Baudrillard's four-stage image theory, hyperreality, and the precession of simulacra applied to the LLM era. AI is not a failure of imitation but the perfected form of the simulacrum.
 - [[concepts/representation-collapse-moc]] — Representation Collapse — Map of Content. Navigational hub connecting 15 wiki pages across 5 thematic clusters: hyperreality, map-and-territory, illusions, counter-strategies, and epistemological inversion. Includes source articles, entity pages, and cross-cutting connections.
 - [[concepts/research-agent-fundamentals]] — Research Agent Fundamentals — Anthropic cookbook-based research agent patterns
-- [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering — Model-agnostic methodology for robust prompt design that degrades gracefully under distribution shift. From OpenAI cookbook.
 - [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
 - [[concepts/retrieve-merge-predict]] — **Retrieve, Merge, Predict** — Three-stage pipeline for augmenting base tables with data lake features to improve ML predictions. By INRIA SODA (Cappuzzo et al., 2024). Retrieval (MinHash, exact matching, Starmie) → Merge → Predict with tree-based models. Key finding: retrieval accuracy is critical, simple merging suffices, gradient boosting is robust to noisy joins. Benchmark data lake: [[entities/yadl]].
 - [[concepts/evaluation/reward-hacking]] — Exploitation of evaluation harnesses to achieve benchmark scores without genuinely solving the intended problem. Kernel benchmark exploits (stream hacking, Python runtime manipulation). RHB benchmark for tool-using LLM agents (ICML 2026): 13 frontier models evaluated, RL post-training associated with higher exploit rates (0.6% → 13.9%), environmental hardening reduces exploits by 87.7%. SocioHack extension to societal institutions. **LLM RL Training**: reward functions as "dark art" (AlphaChip case), Claude 3.7 test-editing, o3 hallucinations from outcome-only rewards, GPT-4o sycophancy from preference data RL, non-verifiable domain solutions (LLM judges, rubrics, HealthBench). Semi Analysis June 2026.
@@ -1771,7 +1754,6 @@
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): RL training paradigm using external rewards from deterministic verifiers. Combined with GRPO, eliminates both reward model and critic model. 10x RL compute from o1→o3. ART·E (beats o3 for $80). Named by Tülu 3, popularized by DeepSeek-R1.
 - [[concepts/rlvr-science-limitations]] — RLVR Science Limitations — Limitations and challenges in Reinforcement Learning from Verification for scientific reasoning.
 - [[concepts/roll-rl]] — ROLL (Alibaba): RL framework for diverse users. Rich interfaces and high configuration flexibility. DeepSpeed/Megatron, GRPO+PPO, Ray orchestration.
-- [[concepts/rpg-regularized-policy-gradient]] — RPG (Regularized Policy Gradient) — Post-training RL technique using KL-regularized policy gradients for stable and effective LLM alignment and reasoning improvement.
 - [[concepts/rubric-middleware]] — RubricMiddleware: LangChain Deep Agents middleware for self-evaluating agent loops. Define a rubric, dedicated grader sub-agent evaluates per criterion with tools, agent iterates until satisfied. /goal-like pattern but with separate cheaper grader model.
 - [[concepts/ruler-openpipe-art]] — RULER (OpenPipe ART Reward Function): General-purpose LLM-as-judge reward function. Scores trajectories relatively using system prompt as implicit evaluation criteria. Replaces custom reward code with a single function call. Works for non-verifiable agent tasks (RAG, summarization, customer support).
 - [[concepts/runtime-opinionated-sdk]] — Concept of viewing Claude/OpenAI Agents SDK as a mini runtime. Defines "runtime-opinionated" as the state where an SDK embeds an execution model (reactive tool loop, runtime-owned tool orchestration, composable actors, native observability) rather than being a mere utility library. Essential difference from LangGraph (developer authors orchestration), comparison with PI (PI has deeper scheduler/lifecycle semantics). Source: kzinmr (2026-05-15).
@@ -1871,7 +1853,6 @@
 - [[concepts/us-china-ai-competition]] — US-China AI Competition — Anthropic's four-front framework + Amodei's democratic coalition proposal (June 2026): supply chain management, coordinated risk mitigation, mutual defense, reject AI-powered repression, macroeconomic cooperation.
 - [[concepts/uv-scripts-for-ai]] — uv-scripts-for-ai — Repository of self-contained PEP 723 UV scripts for AI/ML: OCR (30+ models), vision, audio, embeddings, inference. Created by [[entities/daniel-van-strien|Daniel van Strien]] (June 2026). 43 stars.
 - [[concepts/vajra-background-agent]] — "Vajra — Open-Source Background Coding Agent"
-- [[concepts/vector-db-agent-memory]] — Vector Database for AI Agent Memory — Using vector databases as persistent memory stores for agents, enabling semantic retrieval and long-term context preservation.
 - [[concepts/vector-search]] — Approximate Nearest Neighbor (ANN) search in high-dimensional embedding space. HNSW hierarchical graphs, k-means clustering, ScANN/DiskANN, filtered similarity (ACORN1/turbopuffer), hybrid BM25+vector strategies. Doug Turnbull's Maven course.
 - [[concepts/verifiers-rl]] — Verifiers: TRL-based multi-turn RL framework. GRPO on HuggingFace Trainer, supports environments and multi-turn tool use. Popular for research.
 - [[concepts/vibe-ceo|Vibe CEO]] — Management model where a solo founder orchestrates AI agents rather than human employees.
@@ -1891,7 +1872,6 @@
 - [[concepts/zaya1-74b-preview]] — Zyphra MoE reasoning-base LLM (4B active / 74B total). Not chat-tuned. Mamba/CCA hybrid, AMD-trained, Apache 2.0 preview.
 - [[concepts/zaya1-8b]] — Zyphra MoE reasoning model (760M active / 8.4B total). AMD-trained end-to-end. Competitive with DeepSeek-R1, Gemini-2.5-Pro. Markovian-RSA test-time compute. Apache 2.0. May 2026.
 - [[concepts/zaya1-vl-8b]] — Zyphra's first VLM (MoE, 700M active / 8B total). Vision-specific LoRA + bidirectional image attention. SOTA for size, trained on AMD, Apache 2.0.
-- [[concepts/zero-disk-architecture]] — Zero Disk Architecture — Infrastructure pattern eliminating local disk dependencies for stateless, scalable AI deployment using object storage and in-memory compute.
 - [[concepts/zero-trust-agentic-ai]] — Zero Trust for Agentic AI — Applied Zero Trust security model: assume no request is safe by default, verify every action, minimize blast radius of compromised agents.
 - [[concepts/zombie-internet]] — Zombie Internet: AI-contaminated web where humans and bots coexist in complex interaction patterns, causing cognitive overload and writing style distortion. Coined by Jason Koebler, highlighted by Simon Willison (May 2026).
 
