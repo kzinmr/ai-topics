@@ -66,7 +66,7 @@ See [[concepts/back-of-house-patterns]] for details.
 ## Related Concepts
 
 - [[concepts/back-of-house-patterns]] — Kitchen metaphor for multi-agent orchestration
-- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-engineering|Context Engineering]] — Context engineering
 - [[concepts/harness-engineering]] — Methodology for how engineers use agents
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — Subagent delegation patterns
 

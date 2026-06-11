@@ -166,11 +166,11 @@ The solo agent one-shot era is over. As models get faster, context windows expan
 
 - [[concepts/single-agent-ceiling]] — Limits of single agents and the "Sloperator" anti-pattern
 - [[concepts/session-hierarchy-management]] — This pattern integrated with trq212's session management into a 3-tier framework
-- [[concepts/context-window-management]] — Level 1: Context hygiene within a single session
+- [[concepts/context-engineering/window-management|Context Window Management]] — Level 1: Context hygiene within a single session
 - [[concepts/agent-team-swarm]] — Hierarchical orchestration of multi-agent teams
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — Sub-agent delegation patterns
 - [[concepts/harness-engineering]] — Engineering methodology for agent usage
-- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-engineering|Context Engineering]] — Context engineering
 
 ## Sources
 

@@ -278,4 +278,4 @@ Recommended exploration order for understanding the Hermes Agent codebase (as of
 - [[concepts/agent-loop-orchestration]] — General patterns of agent loop orchestration
 - [[concepts/agent-harness-primitives]] — 6 fundamental primitives of agent harnesses
 - [[concepts/ai-memory-systems]] — AI memory system design philosophy comparison (OpenAI/Anthropic/Cognition)
-- [[concepts/context-engineering]] — Systematic approach to context engineering
+- [[concepts/context-engineering|Context Engineering]] — Systematic approach to context engineering

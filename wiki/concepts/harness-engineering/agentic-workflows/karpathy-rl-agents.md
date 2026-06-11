@@ -114,5 +114,5 @@ Successor to nanoGPT and llm.c. Designed so both agents and humans can understan
 
 - [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Parent concept
 - [[concepts/harness-engineering]] — Lopopolo's environment design approach
-- [[concepts/context-engineering]] — CLAUDE.md/program.md patterns
+- [[concepts/context-engineering|Context Engineering]] — CLAUDE.md/program.md patterns
 -  — Autonomous research concept

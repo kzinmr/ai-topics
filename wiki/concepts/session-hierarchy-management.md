@@ -212,11 +212,11 @@ This makes the filesystem the **coordination layer** between Head Chef and Line 
 
 ## Related Concepts
 
-- [[concepts/context-window-management]] — Level 1: single-session context hygiene
+- [[concepts/context-engineering/window-management|Context Window Management]] — Level 1: single-session context hygiene
 - [[concepts/back-of-house-patterns]] — Level 2: multi-agent architecture
 - [[concepts/single-agent-ceiling]] — The problem this framework solves
 - [[concepts/subagents]] — The primitive that bridges Level 1 and Level 2
-- [[concepts/context-engineering]] — Filesystem-as-context methodology
+- [[concepts/context-engineering|Context Engineering]] — Filesystem-as-context methodology
 - [[entities/thariq-shihipar]] — Architect of Claude Code session management
 - [[entities/milksandmatcha]] — Co-author of Back of House patterns
 

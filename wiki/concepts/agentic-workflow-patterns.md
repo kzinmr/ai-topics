@@ -92,4 +92,4 @@ aliases:
 - [[concepts/harness-engineering/system-architecture/container-context]] — System construction patterns
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
-- [[concepts/context-engineering]] — Integrated framework for context optimization
+- [[concepts/context-engineering|Context Engineering]] — Integrated framework for context optimization

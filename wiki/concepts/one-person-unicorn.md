@@ -21,7 +21,7 @@ A billion-dollar company founded and operated by a single person, enabled by AI 
 ## Enabling Factors
 
 1. **[[concepts/managed-agents]]:** No-code agent creation and deployment
-2. **[[concepts/context-engineering]]:** Making AI agents reliable and capable
+2. **[[concepts/context-engineering|Context Engineering]]:** Making AI agents reliable and capable
 3. **[[concepts/nvidia-dynamo]]:** Affordable agentic inference infrastructure
 4. **[[vibe-ceo]]:** New management paradigm for agent orchestration
 5. **[[concepts/reflexive-ai]]:** Cultural normalization of AI-as-baseline

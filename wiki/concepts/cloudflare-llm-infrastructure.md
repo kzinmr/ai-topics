@@ -56,7 +56,7 @@ Cloudflare's Rust-based inference engine designed for distributed global network
 
 ## Relationship to Agent Infrastructure
 
-Cloudflare's investments position its edge network as an inference layer for [[concepts/ai-agents|agentic workloads]]. The PD disaggregation pattern parallels [[concepts/mooncake|Mooncake's KVCache-centric architecture]], while the session affinity model addresses the [[concepts/context-window-management|long-context requirements]] of agent loops.
+Cloudflare's investments position its edge network as an inference layer for [[concepts/ai-agents|agentic workloads]]. The PD disaggregation pattern parallels [[concepts/mooncake|Mooncake's KVCache-centric architecture]], while the session affinity model addresses the [[concepts/context-engineering/window-management|long-context requirements]] of agent loops.
 
 ## Open Questions
 - How does Infire compare to [[concepts/inference/vllm|vLLM]] and [[entities/sglang|SGLang]] on throughput benchmarks?

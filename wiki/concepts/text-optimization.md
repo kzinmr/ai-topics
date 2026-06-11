@@ -26,7 +26,7 @@ sources:
 related:
   - "[[concepts/meta-harness]]"
   - "[[concepts/harness-engineering]]"
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
   - "[[concepts/test-time-scaling]]"
   - "[[concepts/rlm]]"
   - "[[concepts/dspy]]"
@@ -184,7 +184,7 @@ Lee identifies five directions for rigorous text optimization research:
 
 - [[concepts/meta-harness]] — Automated search over harness code (Lee et al., 2026)
 - [[concepts/harness-engineering]] — The discipline of building agent infrastructure
-- [[concepts/context-engineering]] — Curating optimal context window content
+- [[concepts/context-engineering|Context Engineering]] — Curating optimal context window content
 - [[concepts/test-time-scaling]] — The inference-time axis text optimization mirrors at update time
 - [[concepts/rlm]] — Recursive language models as text-space context management
 - [[concepts/dspy]] — Declarative text-layer programming and optimization

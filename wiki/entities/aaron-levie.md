@@ -105,7 +105,7 @@ Box partnered with Apex (CoreWork) on agent evaluation:
 - **[[entities/swyx|swyx]]** — Podcast host, context engineering researcher
 - **[[entities/jeff-huber|Jeff Huber]]** — Chroma CEO, podcast guest co-host
 - **[[concepts/agent-governance]]** — Levie's framework maps to this concept
-- **[[concepts/context-engineering]]** — Levie's "60K-token problem" analysis
+- **[[concepts/context-engineering|Context Engineering]]** — Levie's "60K-token problem" analysis
 
 ## Sources
 

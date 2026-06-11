@@ -42,8 +42,8 @@ Modern LLMs (e.g., Gemini) handle ~1M tokens — approximately 3MB of text. For 
 
 **The main risk:** "Context rot" — performance degradation when similar-but-irrelevant documents (distractors) are present in context.
 
-### Connection to [[concepts/context-graph|Context Graphs]]
-Context stuffing is the simplest form of giving an agent full context. The [[concepts/context-graph|Context Graph]] approach extends this by making decision traces searchable — but for small data, the direct approach (stuff all the data) is often enough.
+### Connection to [[concepts/context-engineering/graph|Context Graphs]]
+Context stuffing is the simplest form of giving an agent full context. The [[concepts/context-engineering/graph|Context Graph]] approach extends this by making decision traces searchable — but for small data, the direct approach (stuff all the data) is often enough.
 
 ## GraphRAG Deconstructed
 
@@ -127,7 +127,7 @@ This concept page is designed to serve as a **graph traversal node** in the wiki
 
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge graph memory for agents; this article provides the "you probably don't need a dedicated graph DB" constraint
 - [[concepts/agentic-alternative-to-graphrag]] — Contextual AI's metadata search approach; both argue against static graph DBs but propose different alternatives (metadata index vs HNSW expansion)
-- [[concepts/context-graph]] — Enterprise context graphs; complementary perspective on graphs as decision traces rather than retrieval infrastructure
+- [[concepts/context-engineering/graph|Context Graph]] — Enterprise context graphs; complementary perspective on graphs as decision traces rather than retrieval infrastructure
 - [[concepts/harness-engineering]] — Measure-first philosophy embodied in the evaluation prerequisite
 - [[concepts/ai-evals]] — Golden dataset approach to validating retrieval improvements
 - [[concepts/agentic-rag]] — Broader taxonomy of agentic retrieval

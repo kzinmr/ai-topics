@@ -40,7 +40,7 @@ Sycophancy emerges from the alignment training pipeline:
 - [[concepts/ai-coding-reliability]] — Reliability issues in AI-assisted coding
 - [[concepts/llm-evaluation-harness]] — Evaluation frameworks including sycophancy measurement
 - [[concepts/ai-safety]] — Broader AI safety concerns
-- [[concepts/context-compression]] — How context window management affects truthfulness
+- [[concepts/context-engineering/compression|Context Compression]] — How context window management affects truthfulness
 
 ## Sources
 

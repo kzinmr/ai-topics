@@ -100,7 +100,7 @@ Context Fragment Loading (just-in-time retrieval)
 
 ## Related Concepts
 
-- [[concepts/context-fragments]] — Context window fragmentation
+- [[concepts/context-engineering/fragments|Context Fragments]] — Context window fragmentation
 - [[concepts/harness-engineering]] — Extended harness design
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson and memory
 - [[concepts/claude/memory]] — File-based memory (L2 implementation)

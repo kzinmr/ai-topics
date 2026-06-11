@@ -79,7 +79,7 @@ Garbage collection, quality grading, automated refactoring PRs. Treat tech debt 
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Ryan Lopopolo's broader harness engineering thesis
-- [[concepts/context-engineering]] — Context Engineering: feeding the AI information
+- [[concepts/context-engineering|Context Engineering]] — Context Engineering: feeding the AI information
 - [[concepts/openai/symphony]] — OpenAI Symphony: orchestrating large numbers of coding agents
 - [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)

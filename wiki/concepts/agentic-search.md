@@ -635,7 +635,7 @@ Turnbull's framing pushes the RLM concept to its logical conclusion for search:
 3. **RLM (context-as-variable)**: Agent's entire life lives in a Python variable; agent writes code to query it
 4. **RLM (context-as-world)**: The distinction between "agent memory" and "search index" dissolves — searching the web and searching your own history are the same operation
 
-This directly connects to the [[concepts/code-mode|CodeMode]] pattern and [[concepts/context-fragments|Context Fragments]] — both of which treat context not as a passive input but as a structured artifact the agent actively queries and mutates.
+This directly connects to the [[concepts/code-mode|CodeMode]] pattern and [[concepts/context-engineering/fragments|Context Fragments]] — both of which treat context not as a passive input but as a structured artifact the agent actively queries and mutates.
 
 #### Empirical Strategies for Long-Running Agents (June 2026)
 

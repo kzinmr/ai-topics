@@ -60,7 +60,7 @@ Fork an open-source video editor (e.g., Shotcut) and build an AI agent that tran
 
 Build a personal agent that ingests calendar, finance, health, and communications data in real-time to build a personal knowledge graph. Monitors for anomalies (meeting density rising while sleep quality drops), plans months ahead, and presents multi-dimensional decision support. All data encrypted at rest with user-controlled keys; the agent functions entirely offline for sensitive operations.
 
-**Why it matters**: Requires sophisticated [[concepts/context-engineering]] and [[concepts/memory-systems]] design. Demonstrates you can build secure, privacy-first production architectures with continuous context building and transparent reasoning chains.
+**Why it matters**: Requires sophisticated [[concepts/context-engineering|Context Engineering]] and [[concepts/memory-systems]] design. Demonstrates you can build secure, privacy-first production architectures with continuous context building and transparent reasoning chains.
 
 ### 5. Autonomous Enterprise Workflow Agent (Master)
 **Proves: Production-Grade Orchestration**

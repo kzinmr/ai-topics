@@ -92,7 +92,7 @@ Adding ~100 LLM-generated synonym/related-concept terms to queries:
 
 ## Relationship to Context Rot
 
-This phenomenon is the **embedding-model analog** of [[concepts/context-rot|Context Rot]] in LLMs. Both show:
+This phenomenon is the **embedding-model analog** of [[concepts/context-engineering/rot|Context Rot]] in LLMs. Both show:
 
 - Semantic understanding degrades long before technical context limits
 - Lexical/exact matching holds up better than semantic inference

@@ -66,7 +66,7 @@ aliases:
 
 ## Related Concepts
 
-- [[concepts/death-of-browser]] — The browser paradigm shift
+- [[concepts/browser-agent/death-of-browser]] — The browser paradigm shift
 - [[entities/webmcp]] — Native browser MCP standard
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/openai-cua]] — OpenAI CUA

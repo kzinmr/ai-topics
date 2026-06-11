@@ -1219,19 +1219,19 @@
 - [[concepts/constrained-decoding]] — Constrained Decoding
 - [[concepts/content-engine]] — Content Engine
 - [[concepts/content-understanding]] — Content Understanding: The system of content representation and enhancement within search indexes. Daniel Tunkelang's 8-article series (2021-2022). Classification→annotation→similarity→structure→quality→moderation/information extraction. The foundational counterpart to Query Understanding.
-- [[concepts/context-compaction]] — Context Compaction — The context window compression process for AI agents. Includes the innovative Pre-Compaction Flush approach (OpenClaw). Compaction strategy comparison across OpenClaw/Claude Code/Codex.
-- [[concepts/context-compression]] — Context Compression Techniques
-- [[concepts/context-efficiency]] — Context Efficiency in AI Agents — Framework for evaluating AI agent efficiency based on context acquisition
-- [[concepts/context-engineering]] — Context Engineering — The art and science of curating the optimal set of tokens in an LLM's context window. Synthesizes Anthropic's implementation framework (system prompts, just-in-time retrieval, compaction, sub-agents) and Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate). Covers context rot, attention budget, progressive disclosure, prompt caching, and the Ralph Wiggum loop.
-- [[concepts/context-fragments]] — Context Fragments — Memory state fragmentation in long-running AI agent loops
-- [[concepts/context-graph]] — Context Graph
-- [[concepts/context-lock-in]] — Context Lock-In — The third phase of AI competition. More dangerous than model lock-in (which is switchable): structural dependency where a single vendor controls an enterprise's working memory. Gopinath's three-phase model (Model→Agent→Context). "Intelligence is rented, context is owned." Sentra's Company Brain is the reference implementation.
-- [[concepts/context-management]] — Context Management — Techniques for managing agent context windows and memory state
-- [[concepts/context-providers]] — Design patterns for the context provisioning layer between agents and tools
-- [[concepts/context-repositories]] — Letta's git-based agent memory: local filesystem + git versioning. Progressive disclosure via file hierarchy + YAML frontmatter. Multi-subagent concurrent memory via git worktrees.
-- [[concepts/context-rot]] — Context Rot — Degradation of retrieved context quality over time, especially in RAG pipelines
-- [[concepts/context-routing]] — Context Routing — Query-aware context routing strategies
-- [[concepts/context-window-management]] — Context Window Management
+- [[concepts/context-engineering/compaction|Context Compaction]] — Context Compaction — The context window compression process for AI agents. Includes the innovative Pre-Compaction Flush approach (OpenClaw). Compaction strategy comparison across OpenClaw/Claude Code/Codex.
+- [[concepts/context-engineering/compression|Context Compression]] — Context Compression Techniques
+- [[concepts/context-engineering/efficiency|Context Efficiency]] — Context Efficiency in AI Agents — Framework for evaluating AI agent efficiency based on context acquisition
+- [[concepts/context-engineering|Context Engineering]] — Context Engineering — The art and science of curating the optimal set of tokens in an LLM's context window. Synthesizes Anthropic's implementation framework (system prompts, just-in-time retrieval, compaction, sub-agents) and Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate). Covers context rot, attention budget, progressive disclosure, prompt caching, and the Ralph Wiggum loop.
+- [[concepts/context-engineering/fragments|Context Fragments]] — Context Fragments — Memory state fragmentation in long-running AI agent loops
+- [[concepts/context-engineering/graph|Context Graph]] — Context Graph
+- [[concepts/context-engineering/lock-in|Context Lock-in]] — Context Lock-In — The third phase of AI competition. More dangerous than model lock-in (which is switchable): structural dependency where a single vendor controls an enterprise's working memory. Gopinath's three-phase model (Model→Agent→Context). "Intelligence is rented, context is owned." Sentra's Company Brain is the reference implementation.
+- [[concepts/context-engineering/management|Context Management]] — Context Management — Techniques for managing agent context windows and memory state
+- [[concepts/context-engineering/providers|Context Providers]] — Design patterns for the context provisioning layer between agents and tools
+- [[concepts/context-engineering/repositories|Context Repositories]] — Letta's git-based agent memory: local filesystem + git versioning. Progressive disclosure via file hierarchy + YAML frontmatter. Multi-subagent concurrent memory via git worktrees.
+- [[concepts/context-engineering/rot|Context Rot]] — Context Rot — Degradation of retrieved context quality over time, especially in RAG pipelines
+- [[concepts/context-engineering/routing|Context Routing]] — Context Routing — Query-aware context routing strategies
+- [[concepts/context-engineering/window-management|Context Window Management]] — Context Window Management
 - [[concepts/contextmaxxing]] — Better memory over burning more tokens. Counterpart to [[concepts/tokenmaxxing]]. Memory as shared state, not as a service. Three memories (factual, interaction, action) as one substrate. Ontology + context graphs. Coined by [[entities/ashwingop]].
 - [[concepts/contextual-retrieval]] — Anthropic's RAG improvement technique. Automatically prepends full-document context via Claude before chunk embedding/BM25 indexing. Combined Contextual Embeddings + Contextual BM25 reduces search failure rate by 49%, with reranking adding up to 67% reduction. $1.02 per 1M document tokens using Prompt Caching.
 - [[concepts/continual-harness]] — Online adaptation framework for self-improving agent harnesses. From GPP (first AI to complete Pokemon). Removes human from harness refinement loop. arXiv:2605.09998.
@@ -1254,7 +1254,7 @@
 - [[concepts/datasette-llm]] — datasette-llm: Datasette LLM integration plugin by Simon Willison.
 - [[concepts/datasette-referrer-policy]] — datasette-referrer-policy: Datasette referrer policy plugin.
 - [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + Postgres for Agent Workflows: AI agent workflow foundation integrating filesystem and PostgreSQL.
-- [[concepts/death-of-browser/_index|Death of Browser — Dehumanization of the Browser]] — The browser was the UI for humans. From now on, it's the UI for agents.
+- [[concepts/browser-agent/death-of-browser|Death of Browser — Dehumanization of the Browser]] — The browser was the UI for humans. From now on, it's the UI for agents.
 - [[concepts/deep-learning]] — Deep Learning: Foundations, training paradigm shifts, and ecosystem coverage
 - [[concepts/deep-agents]] — Deep Agents: Autonomous AI agents combining multiple architecture patterns.
 - [[concepts/deep-agents-runtime]] — Deep Agents Runtime: Production execution foundation for deep agents (durable execution, memory, multi-agent).
@@ -1825,7 +1825,7 @@
 - [[concepts/test-time-compute]] — Test-Time Compute — Compute scaling at test time
 - [[concepts/test-time-scaling]] — Paradigm of allocating additional computation at inference time to improve output quality. Technique hierarchy: CoT→self-consistency→Best-of-N→PRM beam search→Tree-of-Thought→RL-trained reasoning (o1/o3/R1). Snell et al. (2024) on compute-optimal allocation. Can be more effective than 14× model parameter scaling. Training linkage with GRPO/RLVR.
 - [[concepts/testing-ai-agents]] — Testing AI Agents
-- [[concepts/text-optimization]] — Text Optimization — Practice of modifying the mutable text layer (prompts, context, memory, harness code) to change model behavior. Three theses: legitimate update mechanism, sample efficiency in low-data regimes, update-time compute as a new scaling axis. Originated by Yoonho Lee (Stanford, Jun 2026). Related: [[concepts/meta-harness]], [[concepts/harness-engineering]], [[concepts/context-engineering]].
+- [[concepts/text-optimization]] — Text Optimization — Practice of modifying the mutable text layer (prompts, context, memory, harness code) to change model behavior. Three theses: legitimate update mechanism, sample efficiency in low-data regimes, update-time compute as a new scaling axis. Originated by Yoonho Lee (Stanford, Jun 2026). Related: [[concepts/meta-harness]], [[concepts/harness-engineering]], [[concepts/context-engineering|Context Engineering]].
 - [[concepts/the-untrainable]] — The Untrainable — Sarah Guo's framework: frontier work whose correctness exists only in private data, walled off from external evaluation. 2x2 of legible/illegible work × saturated/frontier tasks. Absorption frontier, permission & accountability as bottlenecks, not intelligence.
 - [[concepts/together-dci]] — "Together AI Dedicated Container Inference (DCI)"
 - [[concepts/token-economics]] — Token Economics — LLM inference cost analysis, token pricing, and optimization strategies.

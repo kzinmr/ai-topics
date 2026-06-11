@@ -69,6 +69,6 @@ The broader lesson: behavioral constraints beat feature checklists for directing
 - [[entities/andrej-karpathy]] — Originator of the observations
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo
 - [[entities/claude-code]] — Claude Code
-- [[concepts/context-engineering]] — Context engineering discipline
+- [[concepts/context-engineering|Context Engineering]] — Context engineering discipline
 - [[concepts/agentic-engineering]] — Agent-centric software engineering
 - [[concepts/claude-code-auto-mode]] — Claude Code auto mode

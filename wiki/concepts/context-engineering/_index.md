@@ -1,7 +1,7 @@
 ---
 title: Context Engineering
 created: 2026-05-20
-updated: 2026-06-02
+updated: 2026-06-11
 type: concept
 tags:
   - context-engineering
@@ -306,6 +306,28 @@ Building an agent? Consider each dimension:
 
 ---
 
+## Sub-Pages
+
+| Page | Topic |
+|---|---|
+| [[concepts/context-engineering/anxiety|Context Anxiety]] | Agent anxiety from context uncertainty |
+| [[concepts/context-engineering/compaction|Context Compaction]] | Strategies for compacting context |
+| [[concepts/context-engineering/compression|Context Compression]] | Token-level compression techniques |
+| [[concepts/context-engineering/efficiency|Context Efficiency]] | Maximizing information per token |
+| [[concepts/context-engineering/folding|Context Folding]] | Folding long contexts into summaries |
+| [[concepts/context-engineering/fragments|Context Fragments]] | Modular context composition |
+| [[concepts/context-engineering/graph|Context Graph]] | Graph-based context representation |
+| [[concepts/context-engineering/lock-in|Context Lock-in]] | Vendor/model context lock-in risks |
+| [[concepts/context-engineering/management|Context Management]] | General context lifecycle management |
+| [[concepts/context-engineering/management-cognition-claude-models|Context Management Cognition]] | Claude model-specific context cognition |
+| [[concepts/context-engineering/providers|Context Providers]] | Context data source providers |
+| [[concepts/context-engineering/repositories|Context Repositories]] | Persistent context storage patterns |
+| [[concepts/context-engineering/rot|Context Rot]] | Attention degradation over long contexts |
+| [[concepts/context-engineering/routing|Context Routing]] | Dynamic context routing strategies |
+| [[concepts/context-engineering/window-management|Context Window Management]] | Window size and memory management |
+
+---
+
 ## Related Pages
 
 - [[agent-architecture]] — How these patterns compose into agent systems
@@ -317,4 +339,4 @@ Building an agent? Consider each dimension:
 - [[codeact]] — Code-as-action pattern
 - [[progressive-disclosure]] — The progressive disclosure pattern
 - [[prompt-caching]] — Token economics and caching strategies
-- [[context-rot]] — The context rot phenomenon
+

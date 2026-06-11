@@ -353,7 +353,7 @@ Khairallah's practitioner framework translates existing technical insights (Anth
 
 ## Related Concepts
 
-- [[concepts/context-engineering]] — Parent concept: Harness Engineering
+- [[concepts/context-engineering|Context Engineering]] — Parent concept: Harness Engineering
 - [[concepts/reduce-offload-isolate]] — Lance Martin's evolution from 4 buckets to 3 principles
 - [[concepts/harness-engineering/agentic-workflows/context-window-management]] — Willison's context management patterns
 - [[concepts/harness-engineering/system-architecture/context-compaction]] — OpenAI Responses API compression mechanism

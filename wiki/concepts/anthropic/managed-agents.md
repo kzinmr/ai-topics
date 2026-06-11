@@ -215,7 +215,7 @@ The sandbox runner can download and install **Anthropic Skills packages** from t
 - [[entities/daytona-sandbox]] — Daytona's container sandbox integration
 - [[concepts/agent-sandboxing]] — Broader concept of agent sandbox isolation
 - [[concepts/agent-runtime]] — The execution environment layer in AI agent architecture
-- [[concepts/context-engineering]] — Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate)
+- [[concepts/context-engineering|Context Engineering]] — Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate)
 - [[concepts/firecracker]] — Firecracker microVM technology used by Modal and Vercel
 
 ---

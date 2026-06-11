@@ -34,7 +34,7 @@ related:
 
 # Reduce, Offload, Isolate
 
-**The 3 Principles** is a context engineering playbook articulated by **Lance Martin** (Anthropic, prev. LangChain) on the **High Signal** podcast with Hugo Bowne-Anderson (Dec 2025). It captures the battle-tested strategies used by leading agentic systems — including **Claude Code** and **Manus** — to manage the fundamental tension between growing context windows and degrading model performance ("[[context-rot|context rot]]").
+**The 3 Principles** is a context engineering playbook articulated by **Lance Martin** (Anthropic, prev. LangChain) on the **High Signal** podcast with Hugo Bowne-Anderson (Dec 2025). It captures the battle-tested strategies used by leading agentic systems — including **Claude Code** and **Manus** — to manage the fundamental tension between growing context windows and degrading model performance ("[[concepts/context-engineering/rot|context rot]]").
 
 ## The Core Problem: Context Rot
 
@@ -143,7 +143,7 @@ See [[entities/jeff-huber]] for Huber's full framework and background.
 
 ## Related Concepts
 
-- [[concepts/context-rot]] — The degradation of LLM instruction-following as context grows
+- [[concepts/context-engineering/rot|Context Rot]] — The degradation of LLM instruction-following as context grows
 - [[concepts/agent-harness-comparison]] — Comparative analysis of major agent harnesses
 - [[concepts/harness-commoditization]] — Thorsten Ball's thesis: harness differentiation is dying as models absorb features
 - [[concepts/unharnessed-agents]] — John Berryman's anti-harness thesis

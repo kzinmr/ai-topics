@@ -28,7 +28,7 @@ The Anthropic Engineering blog and OpenAI Cookbook are the primary sources. Cove
 | Layer | Concept | Focus |
 |---------|------|------|
 | **Top Layer** | [[concepts/_index|Harness Engineering]] | Agent = Model + Harness (environment design philosophy) |
-| **Cross-cutting** | [[concepts/context-engineering]] | Context selection, compression, placement (finite resource management) |
+| **Cross-cutting** | [[concepts/context-engineering|Context Engineering]] | Context selection, compression, placement (finite resource management) |
 | **Application (Human Side)** | [[concepts/agentic-engineering]] | Patterns for developers "using" agents |
 | **Application (System Side)** | **System Architecture** (this page) | Patterns for "building" agents |
 

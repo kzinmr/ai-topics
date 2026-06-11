@@ -161,9 +161,9 @@ See [[concepts/agentic-alternative-to-graphrag]] for agentic metadata search as 
 
 - [[concepts/agentic-rag]] — Agentic RAG patterns and architectures
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic metadata search as GraphRAG alternative
-- [[concepts/context-fragments]] — Context management patterns for RAG pipelines
+- [[concepts/context-engineering/fragments|Context Fragments]] — Context management patterns for RAG pipelines
 - [[concepts/vector-db-agent-memory]] — Vector database memory for agents
-- [[concepts/context-engineering]] — Dynamic token curation for optimal context
+- [[concepts/context-engineering|Context Engineering]] — Dynamic token curation for optimal context
 - [[concepts/local-llm]] — Running open-weight models with RAG locally
 - [[concepts/ragatouille]] — ColBERT-based neural retrieval toolkit
 

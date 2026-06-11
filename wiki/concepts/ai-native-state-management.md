@@ -536,7 +536,7 @@ The synthesis: **start stateless, add memory only where evals prove it helps**.
 - [[concepts/ai-agent-memory-middleware|AI Agent Memory Middleware]] — L1-L3 storage architecture, S3 Files, Tigris, LLMFS, ChromaFS, OPFS
 - [[concepts/memory-systems-design-patterns|Memory Systems Design Patterns]] — Anthropic vs OpenAI vs Cognition
 - [[concepts/context-engineering|Context Engineering]] — Write/Select/Compress/Isolate taxonomy
-- [[concepts/context-management|Context Management]] — Context window as finite resource
+- [[concepts/context-engineering/management|Context Management]] — Context window as finite resource
 - [[concepts/agent-harness-primitives|Agent Harness Primitives]] — 6 core primitives of agent infrastructure
 - [[concepts/delta-channels|Delta Channels]] — Incremental checkpoint storage for long-running agents
 - [[concepts/db9-fs-sql-pattern|db9: FS + SQL Pattern]] — PostgreSQL-first agent architecture

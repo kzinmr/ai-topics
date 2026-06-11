@@ -59,8 +59,8 @@ Tratar has been focused on the challenge of **context engineering** — building
 
 - [[concepts/headless-saas]] — His "AI context app" thesis aligns with the Headless SaaS movement
 - [[concepts/ai-agent-memory-middleware]] — Embra's "Business Memory Engine" is a precursor
-- [[concepts/context-graph]] — Graph-based organizational knowledge representation
-- [[concepts/context-engineering]] — Long-time focus area
+- [[concepts/context-engineering/graph|Context Graph]] — Graph-based organizational knowledge representation
+- [[concepts/context-engineering|Context Engineering]] — Long-time focus area
 
 ## Sources
 

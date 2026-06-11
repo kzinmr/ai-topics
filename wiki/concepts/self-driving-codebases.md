@@ -106,5 +106,5 @@ Key insight: Engineers still need to "hold a lot in their head" — but at a hig
 
 - [[concepts/async-coding-agents]] — The cloud agent paradigm that precedes self-driving codebases
 - [[concepts/multi-agent]] — Planner/sub-planner/worker architecture
-- [[concepts/context-engineering]] — Spec writing as core engineering skill
+- [[concepts/context-engineering|Context Engineering]] — Spec writing as core engineering skill
 - [[concepts/agentic-engineering]] — Broader category of engineering with AI agents

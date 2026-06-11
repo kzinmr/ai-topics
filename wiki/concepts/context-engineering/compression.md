@@ -13,7 +13,7 @@ sources: [raw/articles/crawl-2026-04-18-context-compression.md]
 
 # Context Compression Techniques
 
-Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for [[concepts/context-engineering]] — addresses the fundamental constraint that LLMs have finite context windows but applications need to provide ever-larger amounts of relevant information.
+Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for [[concepts/context-engineering|Context Engineering]] — addresses the fundamental constraint that LLMs have finite context windows but applications need to provide ever-larger amounts of relevant information.
 
 ## Why Compression Matters
 
@@ -89,17 +89,17 @@ Early results show 3-5x compression with <5% quality loss on standard benchmarks
 
 ## Connection to Context Engineering
 
-Context compression is the primary mechanism for [[concepts/context-engineering]] to work within window limits:
+Context compression is the primary mechanism for [[concepts/context-engineering|Context Engineering]] to work within window limits:
 - **Without compression:** context fills up quickly, older information gets pushed out
 - **With compression:** more relevant information fits in the same window
 - **Trade-off:** compression latency vs context quality
 
-Related: [[concepts/context-window-management]] discusses how to organize compressed context for maximum effectiveness.
+Related: [[concepts/context-engineering/window-management|Context Window Management]] discusses how to organize compressed context for maximum effectiveness.
 
 ## Related
 
-- [[concepts/context-engineering]] — Parent concept, compression is a core technique
-- [[concepts/context-window-management]] — How to organize compressed context
+- [[concepts/context-engineering|Context Engineering]] — Parent concept, compression is a core technique
+- [[concepts/context-engineering/window-management|Context Window Management]] — How to organize compressed context
 - [[concepts/token-economics]] — Compression reduces token costs
 - [[concepts/harness-engineering/system-architecture/context-compaction]] — Context compaction in agent systems
 

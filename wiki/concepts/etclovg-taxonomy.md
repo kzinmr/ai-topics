@@ -26,7 +26,7 @@ related:
   - "[[concepts/bitter-lesson-agent-harnesses]]"
   - "[[comparisons/agent-harnesses]]"
   - "[[comparisons/open-harness-vs-agent-framework]]"
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
 ---
 
 # ETCLOVG Taxonomy
@@ -81,7 +81,7 @@ Controls what the model can see across three time horizons:
 - **Session-level**: compaction strategies, tool-result ranking, progressive disclosure
 - **Persistent**: AGENTS.md, skill systems, long-term memory stores, learned preferences
 
-Primary concern: **context window economics**. Every byte in context costs tokens and latency — the context layer decides what to keep, what to compress, and what to forget. [[concepts/context-engineering]] is the broader field this layer operationalizes.
+Primary concern: **context window economics**. Every byte in context costs tokens and latency — the context layer decides what to keep, what to compress, and what to forget. [[concepts/context-engineering|Context Engineering]] is the broader field this layer operationalizes.
 
 ### L — Lifecycle & Orchestration
 

@@ -8,7 +8,7 @@ tags: [context-engineering, evaluation, coding-agents]
 sources:
   - "[[raw/articles/2026-05-xx_github_llm-as-judge-skills]]"
 related:
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
   - "[[concepts/evaluation]]"
   - "[[concepts/agent-skills]]"
 ---

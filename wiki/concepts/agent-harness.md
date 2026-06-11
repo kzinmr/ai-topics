@@ -488,7 +488,7 @@ Execution Layer  (containers / sandbox / serverless / Kubernetes)
 - [[concepts/agent-runtime]] — The execution environment where harness + model operate: isolation primitives, sandbox landscape, runtime shift, runtime debt
 - [[concepts/agentic-ai-skills]] — Design principles for reusable agent capabilities
 - [[concepts/bitter-lesson-harnessing]] — How model intelligence affects harness complexity
-- [[concepts/context-engineering]] — Managing what the model sees and when
+- [[concepts/context-engineering|Context Engineering]] — Managing what the model sees and when
 - [[concepts/why-harness-development-boom]] — Why harness engineering is accelerating (five structural forces)
 - [[entities/kartik-labhshetwar]] — Author of "Why Everyone Is Suddenly Building Their Own Agent Harness"
 - [[entities/mitchell-hashimoto]] — Coined the term "agent harness"

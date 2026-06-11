@@ -166,7 +166,7 @@ Always use Opus/GPT-5 for:
 - [[concepts/tokenmaxxing]] — Quality-over-quantity philosophy; Ronin's system is the practical implementation
 - [[concepts/token-economics]] — Token cost framework underlying routing decisions
 - [[concepts/prompt-caching]] — Technical deep-dive on how prompt caching works
-- [[concepts/context-engineering]] — Token-efficient context management techniques
+- [[concepts/context-engineering|Context Engineering]] — Token-efficient context management techniques
 - [[concepts/skill-graph]] — Ronin's Skill Graph architecture for content engines
 - [[concepts/agent-engineering-guide-2026]] — Broader agent engineering practices including cost management
 - [[concepts/codex-prompting]] — Coding agent prompt strategies

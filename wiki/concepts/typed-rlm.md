@@ -195,7 +195,7 @@ They are **convergent solutions** to the same problem, not competing approaches.
 
 - [[concepts/rlm-recursive-language-models]] — General RLM framework; λ-RLM is a variant
 - [[concepts/lambda-rlm]] — Lambda-RLM (Galanos, AEC domain); convergent but distinct
-- [[concepts/context-folding]] — Parallel approach with RL training (FoldGRPO)
+- [[concepts/context-engineering/folding|Context Folding]] — Parallel approach with RL training (FoldGRPO)
 - [[concepts/harness-engineering]] — Broader framework; λ-RLM is a harness-level innovation
 - [[concepts/inference-time-scaling]] — RLM is a form of inference-time compute scaling
 - [[concepts/recursive-language-models]] — Simpler RLM concept page
@@ -211,7 +211,7 @@ They are **convergent solutions** to the same problem, not competing approaches.
 [typed-rlm] ──author──→ [entity: haitham-bou-ammar]
 ```
 
-This concept extends the general [[concepts/rlm-recursive-language-models|RLM framework]], contrasts with [[concepts/context-folding]] (which adds RL training), relates to [[concepts/lambda-rlm]] as a convergent independent solution, and embodies the [[concepts/harness-engineering]] principle of constraining agent reasoning structure.
+This concept extends the general [[concepts/rlm-recursive-language-models|RLM framework]], contrasts with [[concepts/context-engineering/folding|Context Folding]] (which adds RL training), relates to [[concepts/lambda-rlm]] as a convergent independent solution, and embodies the [[concepts/harness-engineering]] principle of constraining agent reasoning structure.
 
 ## Sources
 

@@ -219,7 +219,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[concepts/agentic-search]] — Search-as-agent paradigm (related course: [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
 - [[concepts/grpo-rl-training]] — The specific RL algorithm taught in this course
 - [[concepts/agent-evaluation]] — Evaluation methodology for RL reward signals
-- [[concepts/context-engineering]] — Agent context design patterns (MCP, tool schemas)
+- [[concepts/context-engineering|Context Engineering]] — Agent context design patterns (MCP, tool schemas)
 
 ## Key Concepts Covered
 
@@ -231,7 +231,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[concepts/agent-design-patterns]] — Model selection, tool calling, async patterns
 - [[concepts/mcp]] — Model Context Protocol for tool integration
 - [[concepts/agent-evaluation-methodology]] — Evaluating agent performance for RL reward signals
-- [[concepts/context-engineering]] — Designing effective agent contexts
+- [[concepts/context-engineering|Context Engineering]] — Designing effective agent contexts
 - [[concepts/reasoning-models]] — Models with extended reasoning capabilities
 
 ## Detailed Technical Notes

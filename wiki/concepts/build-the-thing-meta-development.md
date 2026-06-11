@@ -98,5 +98,5 @@ This pattern suggests a new career specialization: **agent infrastructure engine
 - [[concepts/agentic-engineering]] — Parent discipline
 - [[concepts/agentic-loop]] — The loop pattern these tools serve
 - [[concepts/harness-engineering]] — Broader harness design
-- [[concepts/context-engineering]] — Context management for agents
+- [[concepts/context-engineering|Context Engineering]] — Context management for agents
 - [[raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing]] — Source session

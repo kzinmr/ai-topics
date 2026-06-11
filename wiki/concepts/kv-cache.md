@@ -95,7 +95,7 @@ Reference: Avi Chawla, "KV Caching in LLMs, Explained Visually" (Feb 2025)
 
 ## Related Concepts
 
-- [[concepts/context-engineering]] — KV Cache as foundational technology for context window optimization
+- [[concepts/context-engineering|Context Engineering]] — KV Cache as foundational technology for context window optimization
 - [[concepts/attention-mechanism-variants]] — Relationship between KV Cache and variants like GQA, MLA, SWA
 - [[concepts/token-economics]] — Impact of KV Cache on inference costs
 - [[concepts/harness-engineering/system-architecture/context-compaction]] — KV Cache memory savings via context compaction

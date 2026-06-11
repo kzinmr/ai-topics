@@ -27,7 +27,7 @@ status: active
 
 # Claude Code Best Practices
 
-Practical patterns for effective [[entities/claude-code|Claude Code]] usage, compiled from Anthropic's internal teams and engineers across diverse codebases. The overarching constraint driving most best practices: **the context window fills up fast, and performance degrades as it fills**. See [[concepts/context-engineering]] for the theoretical foundations of context management.
+Practical patterns for effective [[entities/claude-code|Claude Code]] usage, compiled from Anthropic's internal teams and engineers across diverse codebases. The overarching constraint driving most best practices: **the context window fills up fast, and performance degrades as it fills**. See [[concepts/context-engineering|Context Engineering]] for the theoretical foundations of context management.
 
 ## CLAUDE.md Configuration
 
@@ -129,7 +129,7 @@ See [[concepts/claude-code-auto-mode]] for the two-layer defense architecture an
 - **`/btw` for quick questions**: Answers appear in a dismissible overlay, never entering conversation history
 - **Checkpoints**: Every action creates a checkpoint; double-tap `Esc` or `/rewind` to restore conversation, code, or both
 
-For deeper context engineering theory, see [[concepts/context-engineering]].
+For deeper context engineering theory, see [[concepts/context-engineering|Context Engineering]].
 
 ## Environment Configuration
 
@@ -154,6 +154,6 @@ For deeper context engineering theory, see [[concepts/context-engineering]].
 - [[entities/claude-code]] — Claude Code entity page (metrics, architecture, history)
 - [[concepts/claude-code-auto-mode]] — Auto mode permission classifier
 - [[concepts/claude-code-sandboxing]] — OS-level sandboxing implementation
-- [[concepts/context-engineering]] — Context management theory and frameworks
+- [[concepts/context-engineering|Context Engineering]] — Context management theory and frameworks
 - [[concepts/agent-skills]] — Skills standard and progressive disclosure
 - [[concepts/harness-engineering]] — Harness engineering discipline

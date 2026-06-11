@@ -115,7 +115,7 @@ The Explore agent is designed as **read-only**, with no ability to modify files.
 - [[concepts/agentic-engineering]] — Parent concept
 - [[concepts/subagents]] — Agent hierarchy
 - [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Version control integration
-- [[concepts/context-window-management]] — Task Tool splits context
+- [[concepts/context-engineering/window-management|Context Window Management]] — Task Tool splits context
 - [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — Agent tool calling patterns
 
 ## References

@@ -119,7 +119,7 @@ The transition is not easy. Expect a **"break then move"** phase. Success requir
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder and Super IC
 - [[concepts/ai-agent-development-workflow]] — Developer AI workflows
 - [[concepts/harness-engineering]] — Agent control and structuring
-- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-engineering|Context Engineering]] — Context engineering
 
 ## Sources
 

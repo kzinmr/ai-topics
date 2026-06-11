@@ -155,7 +155,7 @@ Context Engineering is a **cross-cutting technical component** of Harness Engine
 Karpathy's definition:
 > "Context engineering is the delicate art and science of filling the context window with just the right information for the next step."
 
-Details: [[concepts/context-engineering]]
+Details: [[concepts/context-engineering|Context Engineering]]
 
 ## Key Commentary
 
@@ -213,7 +213,7 @@ Ryan agrees: internalizing dependencies (even 1K-10K LOC) is feasible. Agents ca
 ### Sub-Concepts Under Harness
 - [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Developer workflow details (Willison, Sankalp, Steipete patterns)
 - [[concepts/harness-engineering/system-architecture/container-context]] — System construction patterns (Anthropic, OpenAI Responses API)
-- [[concepts/context-engineering]] — Context optimization techniques (Karpathy + DSPy + Anthropic)
+- [[concepts/context-engineering|Context Engineering]] — Context optimization techniques (Karpathy + DSPy + Anthropic)
 
 ### Cross-References
 - [[concepts/karpathy-loop]] — Karpathy's autonomous experimental design loop

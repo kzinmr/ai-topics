@@ -104,7 +104,7 @@ Skills live in `.agents/skills/` (repo-scoped) or `~/.codex/skills/` (user-scope
 
 ### Skills as Container-Mounted Instructions
 
-Skills are reusable, versioned instruction bundles mounted into hosted shell containers. The platform exposes each skill's `name`, `description`, and `path` to the model for routing. The model loads the full `SKILL.md` body and scripts only when the skill is selected -- the same [[concepts/agent-skills|progressive disclosure model]] as the open standard. Server-side [[concepts/context-management|compaction]] keeps long-running skill workflows coherent without manual context management.
+Skills are reusable, versioned instruction bundles mounted into hosted shell containers. The platform exposes each skill's `name`, `description`, and `path` to the model for routing. The model loads the full `SKILL.md` body and scripts only when the skill is selected -- the same [[concepts/agent-skills|progressive disclosure model]] as the open standard. Server-side [[concepts/context-engineering/management|compaction]] keeps long-running skill workflows coherent without manual context management.
 
 ### OSS Maintenance Case Study
 

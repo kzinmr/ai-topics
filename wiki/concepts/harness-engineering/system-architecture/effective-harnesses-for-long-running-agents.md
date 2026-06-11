@@ -75,4 +75,4 @@ All coding agents follow a strict sequence to save tokens and prevent regression
 - [[concepts/harness-engineering]] — Parent index
 - [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo)
 - [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — Automating manual testing through agents
-- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-engineering|Context Engineering]] — Context engineering

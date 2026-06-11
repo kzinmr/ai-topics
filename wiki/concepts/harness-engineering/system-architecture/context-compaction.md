@@ -58,7 +58,7 @@ After: [Compressed item (encrypted)] + [High-value conversation history subset]
 
 ## Related Concepts
 
-- [[concepts/context-window-management]] — Higher-level concept of compaction (Simon Willison's strategic management)
+- [[concepts/context-engineering/window-management|Context Window Management]] — Higher-level concept of compaction (Simon Willison's strategic management)
 - [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — Source of context accumulation that requires compaction
 - [[entities/openai]] — The underlying API that implements compaction
 

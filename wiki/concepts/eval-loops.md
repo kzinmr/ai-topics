@@ -89,7 +89,7 @@ Both are the same disease: un-measured AI output going straight to an audience w
 
 - [[concepts/ai-slop]] — The problem that eval loops solve
 - [[concepts/llm-as-judge]] — Using LLMs to score other LLM output
-- [[concepts/context-engineering]] — Input-side optimization that complements output-side quality
+- [[concepts/context-engineering|Context Engineering]] — Input-side optimization that complements output-side quality
 - [[concepts/agent-evaluation]] — Broader AI agent evaluation frameworks
 
 ## Sources

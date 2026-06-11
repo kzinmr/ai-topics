@@ -177,4 +177,4 @@ These align with the broader thesis from [[concepts/agent-statefulness]]: persis
 - [[concepts/agent-runtime]] — Execution environment for stateful agents
 - [[concepts/agent-harness-primitives]] — Harness as stateful control layer
 - [[concepts/memory-systems-design-patterns]] — Memory architecture patterns across frameworks
-- [[concepts/context-repositories]] — Letta's git-based agent memory
+- [[concepts/context-engineering/repositories|Context Repositories]] — Letta's git-based agent memory

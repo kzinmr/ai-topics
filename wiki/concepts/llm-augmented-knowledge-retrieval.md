@@ -99,6 +99,6 @@ This pattern is significant for [[ai-agent-engineering]] because it demonstrates
 - [[mcp]] — Model Context Protocol, the integration mechanism
 - [[claude-code]] — primary tool used for this pattern
 - [[karpathy]] — originator of the LLM Wiki concept
-- [[context-engineering]] — designing context windows for effective retrieval
+- [[concepts/context-engineering|Context Engineering]] — designing context windows for effective retrieval
 - [[agent-memory-systems-comparison]] — how different agent harnesses handle persistent memory
 - [[hermes-agent]] — our own implementation of LLM-maintained wiki

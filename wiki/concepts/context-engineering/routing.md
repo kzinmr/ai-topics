@@ -52,11 +52,11 @@ Classify queries and send directly to the appropriate context source. This ensur
 
 ## Relationship with Harness Engineering
 
-As a cross-cutting technique of [[concepts/context-engineering]], Context Routing is a pattern that automates the design decision of "what to show the agent."
+As a cross-cutting technique of [[concepts/context-engineering|Context Engineering]], Context Routing is a pattern that automates the design decision of "what to show the agent."
 
 ## Related Concepts
 
-- [[concepts/context-engineering]] — Integrated framework for context optimization
-- [[concepts/context-compression]] — Context compression techniques
+- [[concepts/context-engineering|Context Engineering]] — Integrated framework for context optimization
+- [[concepts/context-engineering/compression|Context Compression]] — Context compression techniques
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced tool use
 - [[concepts/agentic-rag]] — Agent-controlled search loops

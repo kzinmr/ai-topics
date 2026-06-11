@@ -291,7 +291,7 @@ HN Comments TL;DR:
 - [[concepts/cognitive-cost-of-agents]] — Willison's cognitive debt theory (cognitive cost in the agent era)
 - [[concepts/harness-engineering]] — Lopopolo's agent environment design
 - [[concepts/harness-engineering]] — Developer workflow patterns
-- [[concepts/context-window-management]] — Context constraint management
+- [[concepts/context-engineering/window-management|Context Window Management]] — Context constraint management
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Code design for agents
 
 ## Sources

@@ -118,6 +118,6 @@ This yields approximately **7–8x speedup** over sequential processing when han
 
 ## Related Concepts
 
-- [[concepts/context-engineering]] — managing what information the model sees
+- [[concepts/context-engineering|Context Engineering]] — managing what information the model sees
 - [[concepts/mcp]] — the Model Context Protocol for tool interoperability
 - [[concepts/grpo-rl-training]] — reinforcement learning approaches to improving agent tool use

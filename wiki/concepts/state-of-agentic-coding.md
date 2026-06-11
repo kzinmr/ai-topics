@@ -254,7 +254,7 @@ The series tracks the evolution from interchangeable API endpoints to differenti
 
 - [[concepts/agentic-engineering]] — Core engineering patterns discussed throughout
 - [[concepts/harness-engineering]] — Meta-agentic programming, AMP model selection, harness architecture
-- [[concepts/context-management]] — Manual compaction, context degradation thresholds
+- [[concepts/context-engineering/management|Context Management]] — Manual compaction, context degradation thresholds
 - [[concepts/slop-fork]] — Phenomenon first coined/documented in episodes #4–#5
 - [[concepts/agent-security]] — AI security harnesses finding real vulnerabilities (ep #5–#6)
 - [[concepts/subscription]] — End of subsidies, pricing model collapse (ep #6)

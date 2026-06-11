@@ -28,7 +28,7 @@ Previous approaches optimize proxies (attention scores, token entropy, positiona
 Reasoning and context management are not independent problems. A token's value for cache eviction depends on what reasoning task is being performed. Joint training captures this interdependence.
 
 ### 3. Context Window Efficiency
-Directly applicable to [[concepts/context-engineering]], [[concepts/harness-engineering/system-architecture/context-compaction]], and [[concepts/context-window-management]]. Reduces token waste without quality degradation.
+Directly applicable to [[concepts/context-engineering|Context Engineering]], [[concepts/harness-engineering/system-architecture/context-compaction]], and [[concepts/context-engineering/window-management|Context Window Management]]. Reduces token waste without quality degradation.
 
 ## Relation to Tokenmaxxing
 
@@ -41,7 +41,7 @@ Where tasteful tokenmaxxing achieves efficiency through behavioral changes (dept
 ## Related Concepts
 
 - [[concepts/token-economics]] — Cost framework that Neural GC helps optimize at inference time
-- [[concepts/context-engineering]] — Dynamic token curation; Neural GC as a learned approach
+- [[concepts/context-engineering|Context Engineering]] — Dynamic token curation; Neural GC as a learned approach
 - [[concepts/harness-engineering/system-architecture/context-compaction]] — Reducing context window waste; Neural GC as RL-based compaction
 - [[concepts/speculative-decoding]] — Inference acceleration; Neural GC complements by reducing context size
 - [[concepts/inference]] — LLM Inference Optimization overview

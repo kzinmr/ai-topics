@@ -93,5 +93,5 @@ Anthropic also evaluated the following existing methods, but none were as effect
 
 - [[rag-systems]] — RAG systems overview
 - [[retrieval-augmented-generation]] — RAG fundamentals
-- [[concepts/context-engineering]] — Context engineering for AI agents
+- [[concepts/context-engineering|Context Engineering]] — Context engineering for AI agents
 - [[contextual-retrieval]] — (self)

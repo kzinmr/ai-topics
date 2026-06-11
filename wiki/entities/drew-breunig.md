@@ -319,7 +319,7 @@ Breunig's technical work is characterized by:
 - [[concepts/nicholas-felton]] — Co-founder of Reporter; information designer known for Annual Reports
 - [[concepts/overture-maps-foundation]] — Open geospatial data project; Breunig is GERS Evangelist
 - [[concepts/dspy]] — Stanford NLP's framework for LLM applications; Breunig is a significant contributor
-- [[concepts/context-engineering]] — Discipline Breunig helped name and define
+- [[concepts/context-engineering|Context Engineering]] — Discipline Breunig helped name and define
 - [[concepts/spec-driven-development]] — Development paradigm Breunig pioneered with `whenwords`
 - [[concepts/recursive-language-models]] — Pattern Breunig implemented in DSPy and advocates
 - [[concepts/placeiq]] →  — Location intelligence companies where Breunig worked

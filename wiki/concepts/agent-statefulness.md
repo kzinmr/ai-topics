@@ -295,7 +295,7 @@ For AI Agent architecture design, the statefulness discussion — synthesizing b
 - [[concepts/activegraph]] — The formal event-sourced reactive graph architecture (arXiv:2605.21997)
 - [[concepts/agent-runtime]] — The execution environment for persistent, stateful agents
 - [[concepts/memory-systems-design-patterns]] — Anthropic vs OpenAI vs Cognition memory design
-- [[concepts/context-repositories]] — Letta's git-based agent memory
+- [[concepts/context-engineering/repositories|Context Repositories]] — Letta's git-based agent memory
 - [[concepts/ai-memory-systems]] — Chat vs coding agent memory design philosophy
 - [[concepts/agent-harness-primitives]] — The harness as stateful control layer
 - [[concepts/agent-engineering-guide-2026]] — "The model is stateless. The harness has to be stateful."

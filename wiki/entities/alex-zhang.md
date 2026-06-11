@@ -185,7 +185,7 @@ Prime Intellect synthesizes both:
 ## Related Concepts
 
 - **[[concepts/rlm-recursive-language-models]]** — Zhang's primary contribution
-- **[[concepts/context-folding]]** — Parallel approach (Sun et al., 2025)
+- **[[concepts/context-engineering/folding|Context Folding]]** — Parallel approach (Sun et al., 2025)
 - **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[entities/omar-khattab]]** — PhD advisor, ColBERT/DSPy creator
 - **[[concepts/tim-kraska]]** — PhD co-advisor, MIT DSG, ML systems

@@ -147,7 +147,7 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 
 - [[riley-walz]] — First subject of the peoplereadmes framework
 - [[peoplereadmes]] — Koylan's open-source persona context systems framework
-- [[concepts/context-engineering]] — His primary discipline
+- [[concepts/context-engineering|Context Engineering]] — His primary discipline
 - [[concepts/agent-skills]] — His open-source skill collection
 - [[concepts/llm-as-judge-skills]] — His evaluation skills (part of Agent Skills repo)
 

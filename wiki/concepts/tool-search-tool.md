@@ -142,6 +142,6 @@ Level 4: Tool Use Examples (semantic conventions in schema)
 - [[concepts/advanced-tool-use]] — Anthropic's three-feature framework (Search + PTC + Examples)
 - [[concepts/code-execution-with-mcp]] — Filesystem-based progressive disclosure (deeper level)
 - [[concepts/programmatic-tool-calling]] — Efficient tool execution via code
-- [[concepts/context-engineering]] — Broader context management strategy
+- [[concepts/context-engineering|Context Engineering]] — Broader context management strategy
 - [[concepts/agentic-search]] — Search-as-code applies same progressive principle to retrieval
 - [[raw/articles/2026-06-02_anthropic_cookbook_tool-search-embeddings.md]] — Anthropic Cookbook: Tool Search with Embeddings (Henry Keetay, 2025). SentenceTransformer `all-MiniLM-L6-v2` for semantic tool discovery, 90%+ context reduction, scaling to thousands of tools

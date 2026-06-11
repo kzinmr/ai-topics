@@ -157,7 +157,7 @@ These pages are stubs — substantive content exists in other pages:
 
 - [[concepts/agent-harness]] — Agent Harness overview (Skills are a component of Harness)
 - [[concepts/harness-engineering]] — Harness Engineering framework
-- [[concepts/context-engineering]] — Context Engineering (foundational concept for Skill design)
+- [[concepts/context-engineering|Context Engineering]] — Context Engineering (foundational concept for Skill design)
 - [[concepts/mcp]] — Model Context Protocol (complementary tool connection standard to Skills)
 - [[entities/thariq-shihipar]] — Proponent of the 9-category Claude Code Skills classification
 - [[concepts/content-engine]] — Content generation engine leveraging Skill Graph

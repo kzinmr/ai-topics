@@ -92,4 +92,4 @@ This pattern anticipated and validates:
 - [[concepts/compound-engineering-every]] — The broader engineering philosophy
 - [[concepts/agent-native-architecture]] — Design principles this pattern exemplifies
 - [[openclaw]] — Alternative agent architecture (folder-vs-hosted)
-- [[concepts/context-engineering]] — The folder as context container
+- [[concepts/context-engineering|Context Engineering]] — The folder as context container

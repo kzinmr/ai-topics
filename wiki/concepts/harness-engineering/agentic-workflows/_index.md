@@ -26,7 +26,7 @@ Practical workflows and patterns for "using AI agents to develop software." Posi
 | Layer | Concept | Focus |
 |---------|------|------|
 | **Top** | [[concepts/_index|Harness Engineering]] | Agent = Model + Harness (environment design philosophy) |
-| **Cross-cutting** | [[concepts/context-engineering]] | Context selection, compression, placement (finite resource management) |
+| **Cross-cutting** | [[concepts/context-engineering|Context Engineering]] | Context selection, compression, placement (finite resource management) |
 | **Application (Human)** | **Agentic Workflows** (this page) | Patterns for developers to "leverage" agents |
 | **Application (System)** | [[concepts/harness-engineering/system-architecture/_index]] | Patterns for "building" agents |
 
@@ -77,7 +77,7 @@ Practical workflows and patterns for "using AI agents to develop software." Posi
 
 | Page | Summary |
 |-------|------|
-| [[concepts/context-window-management]] | Context 60% rule, compression strategies |
+| [[concepts/context-engineering/window-management|Context Window Management]] | Context 60% rule, compression strategies |
 | [[concepts/throw-away-draft-pattern]] | Draft → compare → iterate development cycle |
 | [[concepts/subagents]] | Sub-agent lossiness, usage guidelines |
 

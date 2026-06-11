@@ -16,7 +16,7 @@ aliases:
   - agent-design-patterns
   - anthropic-agent-guide
 related:
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
   - "[[concepts/writing-tools-for-agents]]"
   - "[[concepts/harness-engineering]]"
   - "[[concepts/managed-agents]]"
@@ -162,7 +162,7 @@ He found the **Evaluator-Optimizer** pattern "especially fun" and strongly agree
 
 ## Related Concepts
 
-- [[concepts/context-engineering]] — Context window optimization techniques
+- [[concepts/context-engineering|Context Engineering]] — Context window optimization techniques
 - [[concepts/writing-tools-for-agents]] — ACI design methodology (the tool design deep-dive)
 - [[concepts/harness-engineering]] — Parent framework (environment design philosophy)
 - [[concepts/managed-agents]] — Meta-harness architecture

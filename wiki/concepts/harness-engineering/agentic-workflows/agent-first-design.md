@@ -111,7 +111,7 @@ Agent-First design is **not a rejection** of human-centered design. The two are 
 
 ## Related Concepts
 
-- [[concepts/context-window-management]] — Understanding agent context constraints
+- [[concepts/context-engineering/window-management|Context Window Management]] — Understanding agent context constraints
 - [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — How agents work internally
 - [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — CLI-first development pattern
 - [[concepts/agentic-engineering]] — Higher-level concept

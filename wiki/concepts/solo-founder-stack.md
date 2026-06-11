@@ -22,7 +22,7 @@ The set of tools, practices, and organizational models that enable a single foun
 
 ### 1. Context Engineering
 Replaces prompt engineering by architecting the entire information environment:
-- [[concepts/context-engineering]] as the foundational skill
+- [[concepts/context-engineering|Context Engineering]] as the foundational skill
 - CLAUDE.md files, MCP servers, [[ai-agent-memory]] pipelines
 - Structured memory and knowledge graphs
 
@@ -50,7 +50,7 @@ The solo founder stack emerges from the intersection of:
 - [[entities/solo-founder-stack]]
 
 - [[vibe-ceo]]
-- [[concepts/context-engineering]]
+- [[concepts/context-engineering|Context Engineering]]
 - [[concepts/agent-governance]]
 - [[concepts/reflexive-ai]]
 - [[concepts/experience-is-a-tax]]

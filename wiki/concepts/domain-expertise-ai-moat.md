@@ -53,7 +53,7 @@ Domain experts using AI tools outperform non-experts with the same tools. The AI
 
 ### 4. The "Writing vs. Thinking" Split
 
-AI excels at writing code. Humans must still do the thinking — defining what to build, why, and for whom. This mirrors established patterns in [[concepts/context-engineering]], where the quality of context provided to AI agents determines output quality.
+AI excels at writing code. Humans must still do the thinking — defining what to build, why, and for whom. This mirrors established patterns in [[concepts/context-engineering|Context Engineering]], where the quality of context provided to AI agents determines output quality.
 
 ## Relationship to Other Concepts
 
@@ -63,7 +63,7 @@ AI coding workflows focus on process optimization. Domain expertise is the subst
 
 ### vs. Context Engineering
 
-[[concepts/context-engineering]] is about how to structure information for AI agents. Domain expertise is about having the right information to structure in the first place.
+[[concepts/context-engineering|Context Engineering]] is about how to structure information for AI agents. Domain expertise is about having the right information to structure in the first place.
 
 ### vs. AI Code Porting
 
@@ -84,7 +84,7 @@ AI coding workflows focus on process optimization. Domain expertise is the subst
 ## Related Pages
 
 - [[concepts/ai-coding-workflows]] — Process patterns for AI-assisted development
-- [[concepts/context-engineering]] — Structuring information for AI agents
+- [[concepts/context-engineering|Context Engineering]] — Structuring information for AI agents
 - [[concepts/software-engineering]] — Broader AI impact on software
 - [[concepts/ai-code-porting]] — Case study in AI code translation
 - [[entities/jaya-gupta]] — Organizational moat theory

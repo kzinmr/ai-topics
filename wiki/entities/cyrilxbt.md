@@ -34,7 +34,7 @@ A comprehensive X Article covering the complete methodology for organizing Obsid
 
 ## Relevance to AI/LLM Domain
 
-@cyrilxbt's content bridges personal knowledge management with LLM tooling. The Claude Code + Obsidian integration pattern they describe is an instance of the broader **LLM Wiki** concept (inspired by [[karpathy]]'s knowledge base workflow), where an LLM maintains a structured markdown wiki from raw sources. This pattern is directly relevant to [[ai-agent-engineering]] and [[context-engineering]].
+@cyrilxbt's content bridges personal knowledge management with LLM tooling. The Claude Code + Obsidian integration pattern they describe is an instance of the broader **LLM Wiki** concept (inspired by [[karpathy]]'s knowledge base workflow), where an LLM maintains a structured markdown wiki from raw sources. This pattern is directly relevant to [[ai-agent-engineering]] and [[concepts/context-engineering|Context Engineering]].
 
 ## See Also
 

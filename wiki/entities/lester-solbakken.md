@@ -200,7 +200,7 @@ PhD at NTNU in Artificial Intelligence and Machine Learning. Research topics: ne
 - [[entities/doug-turnbull]] — Parallel thesis: "thick search APIs are counterproductive for agents" (user perspective)
 - [[entities/jo-kristian-bergum]] — Co-founder/CEO, Hornet; complementary business+vision perspective
 -  — HORNET.dev, the retrieval engine for agents
--  — Agentic search and retrieval patterns- [[concepts/context-engineering]] — Context management for agents
+-  — Agentic search and retrieval patterns- [[concepts/context-engineering|Context Engineering]] — Context management for agents
 -  — The IR discipline behind retrieval quality- [[addy-osmani]] — Google Cloud AI director; agentic coding patterns
 
 ## Sources

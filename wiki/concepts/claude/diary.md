@@ -10,7 +10,7 @@ sources:
 related:
   - "[[concepts/agent-memory]]"
   - "[[concepts/continual-learning]]"
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
   - "[[entities/rlancemartin-github-io]]"
 ---
 # Claude Diary (Agent Continual Learning)

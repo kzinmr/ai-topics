@@ -173,7 +173,7 @@ His posting style is **educational and systematic** — he builds frameworks, cr
 - [[lester-solbakken]] — Search infrastructure researcher; HORNET founder
 - [[concepts/harness-engineering]]
 - [[concepts/multi-agent-autonomy-scale]]
-- [[concepts/context-engineering]]
+- [[concepts/context-engineering|Context Engineering]]
 - [[entities/boris-cherny]]
 - [[entities/ryan-lopopolo]]
 - [[concepts/karpathy]]

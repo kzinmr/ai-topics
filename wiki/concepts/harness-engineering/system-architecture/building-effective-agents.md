@@ -15,7 +15,7 @@ status: active
 related:
   - "[[concepts/building-effective-agents]]"
   - "[[concepts/harness-engineering]]"
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
   - "[[concepts/harness-engineering/system-architecture/evals-for-ai-agents]]"
   - "[[concepts/minimal-coding-agent]]"
 sources:
@@ -133,6 +133,6 @@ Anthropic simultaneously published cookbook recipes explaining all five patterns
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Parent index
-- [[concepts/context-engineering]] — Context management
+- [[concepts/context-engineering|Context Engineering]] — Context management
 - [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — Agent evaluation
 - [[concepts/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation. A concrete example of Anthropic's "simple, composable patterns" principle

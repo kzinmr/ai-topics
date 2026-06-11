@@ -133,7 +133,7 @@ Sankalp uses tools in the following division of labor:
 
 ## Related Concepts
 
-- [[concepts/context-window-management]] — Throw-away drafts consume context
+- [[concepts/context-engineering/window-management|Context Window Management]] — Throw-away drafts consume context
 - [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — Writing drafts via CLI speeds up validation
 - [[concepts/harness-engineering/agentic-engineering]] — Parent concept
 

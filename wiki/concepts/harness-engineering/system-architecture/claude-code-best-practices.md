@@ -27,12 +27,12 @@ sources:
   - "https://www.reddit.com/r/ChatGPTCoding/"
 related:
   - "[[concepts/harness-engineering]]"
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
   - "[[concepts/building-effective-agents]]"
   - "[[concepts/harness-engineering/agentic-engineering]]"
   - "[[concepts/inference-speed-development]]"
   - "[[concepts/claude-code-source-patterns]]"
-  - "[[concepts/context-window-management]]"
+  - "[[concepts/context-engineering/window-management|Context Window Management]]"
   - "[[concepts/ai-coding-reliability]]"
   - "[[concepts/harness-engineering/agentic-workflows/using-git-with-agents]]"
   - "[[concepts/harness-engineering/agentic-workflows/interactive-explanations]]"
@@ -367,12 +367,12 @@ These best practices embody the agentic engineering philosophy:
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Higher-level index
-- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-engineering|Context Engineering]] — Context engineering
 - [[concepts/building-effective-agents]] — Foundational principles of agent building
 - [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Using Git with agents
 - [[concepts/inference-speed-development]] — Fast iteration development
 - [[concepts/claude-code-source-patterns]] — Claude Code internal patterns
-- [[concepts/context-window-management]] — Context management
+- [[concepts/context-engineering/window-management|Context Window Management]] — Context management
 - [[concepts/ai-coding-reliability]] — AI coding reliability
 
 ## Sources

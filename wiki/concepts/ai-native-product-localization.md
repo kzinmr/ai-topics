@@ -117,6 +117,6 @@ Key shifts:
 ## Related Pages
 - [[agentic-engineering]] — Designing AI agent workflows
 - [[feedback-loop]] — Pattern of continuous improvement
-- [[context-engineering]] — Context window management
+- [[concepts/context-engineering|Context Engineering]] — Context window management
 - [[ai-coding]] — AI-assisted software development
 - [[prompt-caching]] — Cost optimization for repeated API calls

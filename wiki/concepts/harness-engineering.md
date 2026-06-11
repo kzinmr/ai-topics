@@ -294,7 +294,7 @@ On May 6, 2026, [[entities/vtrivedy10|Viv Trivedy]] published an 8-point manifes
 | 4 | **Convergence on Skills** | Harness optimization packages into Skills as models improve at in-context learning — reducing harness complexity over time |
 | 5 | **Evals as a moat** | Extends the [[concepts/ai-evals]] framework with a business moat thesis: data to produce evals is a competitive advantage |
 | 6 | **Open model cost advantage** | 20x+ cost reduction from open models drives harness engineering investment — aligning with the Context Pipelines finding above |
-| 7 | **Context window drives architecture** | Most task decomposition exists because usable context is 50-100k — directly ties [[concepts/context-engineering]] to architectural decisions |
+| 7 | **Context window drives architecture** | Most task decomposition exists because usable context is 50-100k — directly ties [[concepts/context-engineering|Context Engineering]] to architectural decisions |
 | 8 | **Age of Unbundled Agents** | Subagents as Tools within a harness — see [[concepts/unbundled-agents]] |
 
 **Key takeaway**: Viv's manifesto provides a unified framework connecting harness hill-climbing (Point 1), evals as moat (Point 5), and open model cost dynamics (Point 6) — all pointing to harness engineering as the primary differentiator in production AI.
@@ -406,7 +406,7 @@ Each single harness failure creates a **trajectory cascade** — the failure at 
 - [[concepts/critique-shadowing]] — Husain's methodology for building aligned LLM judges.
 - [[concepts/llm-as-judge]] — Core technique that requires harness validation.
 - [[concepts/ai-evals-people]] — The community of practitioners
-- [[concepts/context-engineering]] — The practice of optimizing context windows for LLM agents, a cross-cutting component of harness engineering.
+- [[concepts/context-engineering|Context Engineering]] — The practice of optimizing context windows for LLM agents, a cross-cutting component of harness engineering.
 - [[concepts/unbundled-agents]] — Viv Trivedy's pattern of specialist subagents as Tools within a harness.
 - [[concepts/karpathy]] — Andrej Karpathy, AI researcher and educator who coined context engineering and vibe coding.
 - [[concepts/rlm-recursive-language-models]] — Recursive decomposition as a harness pattern; RLM's programmatic context management aligns with harness engineering's build-verify loop.

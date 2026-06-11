@@ -16,7 +16,7 @@ type: comparison
 
 **Date:** April 16, 2026
 **Source:** [johnousterhout/aposd-vs-clean-code (GitHub)](https://github.com/johnousterhout/aposd-vs-clean-code) — structured debate between John Ousterhout (APOSD) and Robert "Uncle Bob" Martin (CC), Sept 2024 – Feb 2025
-**Related:** [[concepts/agentic-engineering]], , , [[concepts/context-engineering]], 
+**Related:** [[concepts/agentic-engineering]], , , [[concepts/context-engineering|Context Engineering]], 
 
 ---
 

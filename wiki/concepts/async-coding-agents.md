@@ -68,5 +68,5 @@ When agents produce 2-4x more code than you could review manually, reviewing raw
 
 - [[concepts/self-driving-codebases]] — The end-state vision: fully autonomous codebases
 - [[concepts/multi-agent]] — Planner/worker hierarchy
-- [[concepts/context-engineering]] — Spec writing for async agents
+- [[concepts/context-engineering|Context Engineering]] — Spec writing for async agents
 - [[concepts/agentic-engineering]] — Broader engineering with agents

@@ -91,7 +91,7 @@ The central trade-off: **cache stability vs. immediate visibility**. Hermes free
 - [[concepts/ai-agent-memory-middleware]] — Storage infrastructure layers (L0-L3)
 - [[concepts/agent-memory]] — Agent memory design patterns
 - [[concepts/harness-engineering]] — The harness layer where Mem0 plugs in
-- [[concepts/context-engineering]] — Context management philosophy
+- [[concepts/context-engineering|Context Engineering]] — Context management philosophy
 
 ## Community
 

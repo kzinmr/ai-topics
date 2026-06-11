@@ -127,7 +127,7 @@ Its event model is smaller than OpenClaw's and clear as an SDK contract. `agent_
 
 At the harness layer, Pi provides durable session primitives. The JSONL header stores session version, cwd, and parent session. Entries append messages, thinking/model changes, compaction, custom records, and branch summaries. `buildSessionContext()` reconstructs context from the leaf path; compaction entries insert summaries and kept ranges. Forks are represented as new JSONL sessions with a parent session path.
 
-Pi's `transformContext` and `convertToLlm` are the hooks where [[concepts/context-engineering]] style Select and Compress behavior can be inserted. Pi itself does not decide which memory to search, how to isolate sessions by channel, or which sandbox policy applies. Those decisions belong to OpenClaw or another higher-level harness.
+Pi's `transformContext` and `convertToLlm` are the hooks where [[concepts/context-engineering|Context Engineering]] style Select and Compress behavior can be inserted. Pi itself does not decide which memory to search, how to isolate sessions by channel, or which sandbox policy applies. Those decisions belong to OpenClaw or another higher-level harness.
 
 Pi's strength is that it defines the minimal state kernel well: turn lifecycle, tool lifecycle, message history, event stream, session replay, fork, and compaction. Multi-tenant server state, delivery state, agent identity, and long-term memory governance are intentionally out of scope.
 

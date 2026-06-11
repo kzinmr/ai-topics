@@ -213,7 +213,7 @@ Acknowledged the mental health dimension: "Building with agents is the greatest 
 
 - [[concepts/agent-skills]] — Reusable patterns for coding agents
 - [[concepts/code-review-agents]] — Background verification daemons
-- [[concepts/context-engineering]] — Building agent memory substrates
+- [[concepts/context-engineering|Context Engineering]] — Building agent memory substrates
 - [[concepts/harness-engineering]] — Building thin agent harnesses
 - [[concepts/generator-evaluator-workflow]] — Generator-evaluator architecture
 - [[concepts/compound-engineering-every]] — The methodology underpinning Van Horn's /ce-plan → /ce-work loop

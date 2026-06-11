@@ -80,7 +80,7 @@ In Prompt-Driven Development, **merging agent-generated code without understandi
 
 - [[concepts/cognitive-debt]] — The accumulated debt from merging code you don't understand
 - [[concepts/red-green-tdd]] — Combining with test-driven development
-- [[concepts/context-window-management]] — Managing prompt length
+- [[concepts/context-engineering/window-management|Context Window Management]] — Managing prompt length
 - [[concepts/harness-engineering/agentic-engineering]] — Higher-level concept
 
 ## References

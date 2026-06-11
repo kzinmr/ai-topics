@@ -57,4 +57,4 @@ Utility C (API client)
 ## Related Concepts
 - [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — Iterative improvement cycle (the hoard grows during the "Save" phase)
 - [[concepts/harness-engineering/agentic-engineering]] — Agentic Engineering overview
-- [[concepts/context-window-management]] — Context window management (the hoard functions as context)
+- [[concepts/context-engineering/window-management|Context Window Management]] — Context window management (the hoard functions as context)

@@ -277,7 +277,7 @@ AI and LLM concept pages organized by topic.
 
 ## Attention-Mechanism-Variants
 
-- [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[concepts/context-engineering]].
+- [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[concepts/context-engineering|Context Engineering]].
 
 ## Back-Of-House-Multi-Agent-Patterns
 
@@ -401,27 +401,27 @@ AI and LLM concept pages organized by topic.
 
 ## Context-Compression
 
-- [[concepts/context-compression]] — Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for [[concepts/context-engineering]] — addresses the fundamental constraint that LLMs have finite context capacity.
+- [[concepts/context-engineering/compression|Context Compression]] — Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for [[concepts/context-engineering|Context Engineering]] — addresses the fundamental constraint that LLMs have finite context capacity.
 
 ## Context-Engineering
 
-- [[concepts/context-engineering]] — This stub exists for backwards compatibility while content is organized into the harness-engineering/ subdirectory structure.
+- [[concepts/context-engineering|Context Engineering]] — This stub exists for backwards compatibility while content is organized into the harness-engineering/ subdirectory structure.
 
 ## Context-Fragments
 
-- [[concepts/context-fragments]] — A concept proposed by Vivek Trivedy (@vtrivedy10) in April 2026. A framework that views the context window as "a collection of objects selectively loaded by the harness."
+- [[concepts/context-engineering/fragments|Context Fragments]] — A concept proposed by Vivek Trivedy (@vtrivedy10) in April 2026. A framework that views the context window as "a collection of objects selectively loaded by the harness."
 
 ## Context-Graph
 
-- [[concepts/context-graph]] — Living record of decision traces stitched across entities and time — the foundational architecture for AI agent decision-making in enterprise workflows.
+- [[concepts/context-engineering/graph|Context Graph]] — Living record of decision traces stitched across entities and time — the foundational architecture for AI agent decision-making in enterprise workflows.
 
 ## Context-Routing
 
-- [[concepts/context-routing]] — Multi-domain agents load all domains' knowledge, tool sets, and instructions for every query. This is wasteful of context and causes attention dilution.
+- [[concepts/context-engineering/routing|Context Routing]] — Multi-domain agents load all domains' knowledge, tool sets, and instructions for every query. This is wasteful of context and causes attention dilution.
 
 ## Context-Window-Management
 
-- [[concepts/context-window-management]] — The core challenge: LLMs have a fixed context window, but software projects have unbounded complexity. Effective management is the difference between a productive AI session and a confused, expensive spiral.
+- [[concepts/context-engineering/window-management|Context Window Management]] — The core challenge: LLMs have a fixed context window, but software projects have unbounded complexity. Effective management is the difference between a productive AI session and a confused, expensive spiral.
 
 ## Constitutional-Ai
 

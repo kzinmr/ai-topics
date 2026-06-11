@@ -180,7 +180,7 @@ Recent work combines multiple RAG functions into single models:
 
 ## Related Concepts
 
-- [[context-compression]]: Techniques for reducing context size in RAG systems
+- [[concepts/context-engineering/compression|Context Compression]]: Techniques for reducing context size in RAG systems
 - [[edge-ai]]: Deploying AI models on edge devices with resource constraints
 - [[local-llm]]: Running large language models locally on consumer hardware
 - [[embeddings]]: Vector representations used for retrieval and compression

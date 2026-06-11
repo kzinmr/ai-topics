@@ -28,11 +28,11 @@ When an agentic coding session makes multiple API calls:
 
 ## Connection to Broader Trends
 
-KV-aware routing is part of the shift from throughput-optimized inference to context-aware inference, which is essential for [[concepts/agentic-engineering]] workloads. It connects to [[concepts/context-engineering]] as a runtime optimization layer.
+KV-aware routing is part of the shift from throughput-optimized inference to context-aware inference, which is essential for [[concepts/agentic-engineering]] workloads. It connects to [[concepts/context-engineering|Context Engineering]] as a runtime optimization layer.
 
 ## Related
 
 - [[concepts/nvidia-dynamo]]
-- [[concepts/context-engineering]]
+- [[concepts/context-engineering|Context Engineering]]
 - [[concepts/inference]]
 - [[concepts/agentic-engineering]]

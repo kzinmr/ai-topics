@@ -17,7 +17,7 @@ related:
   - "[[concepts/agent-memory]]"
   - "[[concepts/letta-code]]"
   - "[[concepts/progressive-disclosure]]"
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
 ---
 
 # Context Repositories (Git-based Agent Memory)

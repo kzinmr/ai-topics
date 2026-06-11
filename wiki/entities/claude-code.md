@@ -273,7 +273,7 @@ Claude Code is built around prompt caching from day one. The team runs alerts on
 
 Sources: "Lessons from Building Claude Code: Prompt Caching Is Everything" (April 2026), "Prompt auto-caching with Claude" (@RLanceMartin)
 
-See also: [[concepts/prompt-caching]], [[concepts/context-engineering]]
+See also: [[concepts/prompt-caching]], [[concepts/context-engineering|Context Engineering]]
 
 ## Session Management (Agent SDK)
 

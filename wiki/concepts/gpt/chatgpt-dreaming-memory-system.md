@@ -109,7 +109,7 @@ However, Dreaming remains a **stateful, proprietary system** — it still introd
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson critique of the previous system
 - [[concepts/gpt/memory-systems-chatgpt-vs-claude-vs-cognition]] — Three-way comparison (stub)
 - [[comparisons/agent-memory-systems-comparison]] — 5-system architectural comparison (OpenClaw/Claude Code/Codex/Hermes/ChatGPT)
-- [[concepts/context-compaction]] — Claude Code's context management approach
+- [[concepts/context-engineering/compaction|Context Compaction]] — Claude Code's context management approach
 - [[concepts/agent-memory-engineering]] — Nicolas Bustamante's memory architecture classification
 - [[entities/openai]] — OpenAI entity page
 - [[entities/claude-code]] — Claude Code entity page

@@ -31,7 +31,7 @@ His mitigation framework includes six tactics: **RAG**, **Tool Loadout**, **Cont
 
 > "Programming the LLM to, as Karpathy says, 'pack the context windows just right' — smartly deploying tools, information, and regular context maintenance — is the job of the agent designer."
 
-See also: [[concepts/context-engineering]]
+See also: [[concepts/context-engineering|Context Engineering]]
 
 ## The 3 AI Use Cases: Gods, Interns, and Cogs
 

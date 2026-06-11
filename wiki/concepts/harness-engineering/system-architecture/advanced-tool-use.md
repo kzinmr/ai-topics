@@ -179,4 +179,4 @@ print(json.dumps(exceeded))
 
 - [[concepts/harness-engineering]] — Parent index
 - [[concepts/writing-tools-for-agents]] — Five principles of agent tool design
-- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-engineering|Context Engineering]] — Context engineering

@@ -141,7 +141,7 @@ As of May 2026, peoplereadmes is in early development with one complete persona 
 - [[riley-walz]] — First peoplereadmes persona study subject
 - [[muratcan-koylan]] — Creator of the peoplereadmes framework
 - [[concepts/agent-skills]] — Koylan's broader Agent Skills framework (15.6k stars)
-- [[concepts/context-engineering]] — The discipline that underpins both Agent Skills and peoplereadmes
+- [[concepts/context-engineering|Context Engineering]] — The discipline that underpins both Agent Skills and peoplereadmes
 - [[concepts/llm-as-judge-skills]] — Koylan's evaluation skills used in peoplereadmes eval rubrics
 
 ## Sources

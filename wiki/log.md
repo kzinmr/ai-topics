@@ -337,7 +337,7 @@
   - **ENRICHED: [[entities/pi]]** — Added "Project Trust Approval System" section: AGENTS.md injection threat model, once-per-project approval design, cross-agent comparison (Claude Code, Codex CLI). Source: [[raw/articles/2026-06-08_x-article_pi-new-approval-system.md]]
   - **ENRICHED: [[concepts/agent-security-landscape-2026]]** — Added AGENTS.md/CLAUDE.md injection as Critical attack vector in prompt injection table, with cross-reference to Pi's mitigation.
   - **NEW: [[entities/yoonho-lee]]** — Stanford CS PhD student (Chelsea Finn's IRIS Lab), first author of Meta-Harness (arXiv:2603.28052). Research: continual learning in text space, text optimization, AI agents. Author of "We Should Take Text Optimization More Seriously" (Jun 2026). Source: [[raw/articles/2026-06-08_yoonho-lee_we-should-take-text-optimization-more-seriously.md]]
-  - **NEW: [[concepts/text-optimization]]** — Comprehensive concept page: three theses (legitimate update mechanism, sample efficiency, update-time compute), learning outside weights, reflective optimization loop, counterpoints to weight-only learning, staging ground pattern, research directions. Authored by Yoonho Lee. Cross-referenced with [[concepts/meta-harness]], [[concepts/harness-engineering]], [[concepts/context-engineering]], [[concepts/test-time-scaling]].
+  - **NEW: [[concepts/text-optimization]]** — Comprehensive concept page: three theses (legitimate update mechanism, sample efficiency, update-time compute), learning outside weights, reflective optimization loop, counterpoints to weight-only learning, staging ground pattern, research directions. Authored by Yoonho Lee. Cross-referenced with [[concepts/meta-harness]], [[concepts/harness-engineering]], [[concepts/context-engineering|Context Engineering]], [[concepts/test-time-scaling]].
   - **UPDATED: [[concepts/meta-harness]]** — Added text-optimization tag and cross-reference, updated sources with Lee's essay, bumped updated date.
   - **Raw articles saved**: 3 (test-time compute, Pi approval system, text optimization essay)- **2026-06-09 11:12 UTC** — active-crawl: Created 4 new concept pages and raw articles from cross-referenced HN, X/Twitter, and wiki gap analysis.
   - **NEW: [[concepts/llama-4]]** — Meta's April 2026 open-weight multimodal model family (Scout, Maverick variants). Top wiki gap — previously only LLaMA 3 entity existed. Source: [[raw/articles/2026-06-09_meta-llama-4.md]]
@@ -1617,7 +1617,7 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 
 - **Created**: `[[concepts/building-effective-agents]]` — Promoted from `harness-engineering/system-architecture/` sub-page. Anthropic's foundational agent architecture guide: workflows vs. agents, five composable patterns, ACI concept. 150 lines.
 - **Created**: `[[concepts/writing-tools-for-agents]]` — Promoted from `harness-engineering/system-architecture/` sub-page. Positioned as "Design for Agent" paradigm: the shift from HCI to ACI, five tool design principles, evaluation-driven workflow, broader agent-legible software concept. 160 lines.
-- **Enriched**: `[[concepts/context-engineering]]` — Added dedicated source section for Anthropic's "Effective Context Engineering for AI Agents" article (Sept 2025). Context rot, system prompt altitude, just-in-time context, sub-agent isolation insights.
+- **Enriched**: `[[concepts/context-engineering|Context Engineering]]` — Added dedicated source section for Anthropic's "Effective Context Engineering for AI Agents" article (Sept 2025). Context rot, system prompt altitude, just-in-time context, sub-agent isolation insights.
 - **Updated sub-pages**: Added redirect notices to `harness-engineering/system-architecture/building-effective-agents.md` and `harness-engineering/system-architecture/writing-tools-for-agents.md` pointing to new canonical pages.
 - **Fixed**: `agent-engineering-guide-2026.md` broken wikilink `[[concepts/writing-effective-tools-for-ai-agents]]` → `[[concepts/writing-tools-for-agents]]`
 - **Updated**: `index.md`, `_index.md`, `harness-engineering/system-architecture/_index.md` with new entries and descriptions.
@@ -1802,7 +1802,7 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 ## [2026-06-01] wiki-ingest | HumanLayer "Advanced Context Engineering for Coding Agents" article integration
 
 - **Raw article saved**: `raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents.md` — dexhorthy's Y Combinator talk/blog post on getting AI coding agents to work in complex codebases (300K+ LOC)
-- **Enriched**: [[concepts/context-engineering]] — Added comprehensive "Frequent Intentional Compaction (FIC)" section covering: Research→Plan→Implement pipeline, key principles, concrete results (35K LOC in 7 hours), limitations, and relationship to other context engineering patterns (Anthropic compaction, Lance Martin's taxonomy, Ralph Wiggum Loop, Spec-Driven Development)
+- **Enriched**: [[concepts/context-engineering|Context Engineering]] — Added comprehensive "Frequent Intentional Compaction (FIC)" section covering: Research→Plan→Implement pipeline, key principles, concrete results (35K LOC in 7 hours), limitations, and relationship to other context engineering patterns (Anthropic compaction, Lance Martin's taxonomy, Ralph Wiggum Loop, Spec-Driven Development)
 - **Enriched**: [[entities/dex-horthy]] — Upgraded from skeleton to full entity page: added HumanLayer founder role, FIC contributions, 12-Factor Agents framework, CodeLayer product, writing/talks table, cross-references
 - **New entity**: [[entities/humanlayer]] — Company page covering spec-first agentic development, HumanLayer library, CodeLayer (private beta), FIC methodology, 12-Factor Agents framework, team results
 - **Updated**: index.md — Enhanced dex-horthy entry, added humanlayer entry, updated counts (Entities: 730→732, Total: 2182→2184, Indexed: 1591→1593)
@@ -3285,7 +3285,7 @@ The article's framing offers transferable patterns for wiki management:
 | [[concepts/self-evolving-agents]] | 646→0 | −646 |
 | [[concepts/agent-architecture-decomposition]] | 644→0 | −644 |
 | [[concepts/ecs-fargate-scaling]] | 643→0 | −643 |
-| [[concepts/context-routing]] | 639→0 | −639 |
+| [[concepts/context-engineering/routing|Context Routing]] | 639→0 | −639 |
 | [[concepts/local-llm/inference-hardware]] | 632→0 | −632 |
 | [[entities/openai-deployment-company]] | 632→0 | −632 |
 | [[concepts/agentic-pbt]] | 630→0 | −630 |
@@ -3666,7 +3666,7 @@ The article's framing offers transferable patterns for wiki management:
 ### Files Translated
 - [[concepts/turing-completeness-emergence]] — JP→EN, 2824 JP chars removed
 - [[concepts/china-openclaw-agentic-boom]] — JP→EN, 2426 JP chars removed
-- [[concepts/context-lock-in]] — JP→EN, 2375 JP chars removed
+- [[concepts/context-engineering/lock-in|Context Lock-in]] — JP→EN, 2375 JP chars removed
 - [[concepts/deepseek-v3]] — JP→EN, 2339 JP chars removed
 - [[comparisons/llm-integration-patterns]] — JP→EN, 2271 JP chars removed
 - [[concepts/macro-evals-for-agentic-systems]] — JP→EN, 2257 JP chars removed
@@ -5370,7 +5370,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ### Summary
 - **X Article ingested**: "Rent the Intelligence. Own the Context." by Ashwin Gopinath (@ashwingop), May 17, 2026. Full body fetched via xurl `tweet.fields=article`. → [[raw/articles/2026-05-17_rent-intelligence-own-context.md]]
-- **NEW concept page**: [[concepts/context-lock-in]] — AI's third-phase competition (Model → Agent → Context). Context lock-in is more dangerous than model lock-in. Gopinath's three-phase model, Microsoft structural analogy, MCP ambivalence analysis, forward deployment dependency analysis. 'Intelligence is rented, context is owned.'
+- **NEW concept page**: [[concepts/context-engineering/lock-in|Context Lock-in]] — AI's third-phase competition (Model → Agent → Context). Context lock-in is more dangerous than model lock-in. Gopinath's three-phase model, Microsoft structural analogy, MCP ambivalence analysis, forward deployment dependency analysis. 'Intelligence is rented, context is owned.'
 - **Enriched**: [[concepts/contextmaxxing]] — Added Context Lock-In section as competitive consequence, updated sources/related/tags
 - **Enriched**: [[entities/ashwingop]] — Added blog post entry, Three-Phase Model of AI Competition section, updated sources/tags/X Activity Themes
 - **Enriched**: [[entities/sentra-app]] — Added context-lock-in as related concept + framing as neutral context layer, updated sources/tags
@@ -6575,7 +6575,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Cross-references
 - [[entities/openclaw]] → [[concepts/agent-memory-systems-comparison]]
-- [[concepts/context-compaction]] → [[concepts/agent-memory-systems-comparison]]
+- [[concepts/context-engineering/compaction|Context Compaction]] → [[concepts/agent-memory-systems-comparison]]
 - [[concepts/ai-memory-systems]] → linked concepts
 
 ### Follow-up: Hermes Agent added to comparison (same session)
@@ -8107,3 +8107,27 @@ Updated:
 - **UPDATED**: `entities/semianalysis.md` — Added Subscription vs API Economics section, new source, updated date
 - **UPDATED**: `concepts/token-economics.md` — Added cross-reference to subscription economics concept
 - **UPDATED**: `index.md` — Added new concept page entry
+## [2026-06-11] concepts/context-* ページ群の階層化
+
+**Action**: フラット配置の `context-*` ページ16件を `concepts/context-engineering/` サブディレクトリに移動。prefix `context-` をstripし、元の `context-engineering.md` を `_index.md` に変換。サブページ一覧テーブルを追加。
+
+**移動ファイル** (16件):
+- `context-engineering.md` → `_index.md`
+- `context-anxiety.md` → `anxiety.md`
+- `context-compaction.md` → `compaction.md`
+- `context-compression.md` → `compression.md`
+- `context-efficiency.md` → `efficiency.md`
+- `context-folding.md` → `folding.md`
+- `context-fragments.md` → `fragments.md`
+- `context-graph.md` → `graph.md`
+- `context-lock-in.md` → `lock-in.md`
+- `context-management.md` → `management.md`
+- `context-management-cognition-claude-models.md` → `management-cognition-claude-models.md`
+- `context-providers.md` → `providers.md`
+- `context-repositories.md` → `repositories.md`
+- `context-rot.md` → `rot.md`
+- `context-routing.md` → `routing.md`
+- `context-window-management.md` → `window-management.md`
+
+**リンク更新**: wiki全体で252箇所のwikilinkを更新。内部クロスリンク25箇所も修正。「Context Context Engineering」の二重表示バグ149箇所を修正。
+

@@ -25,7 +25,7 @@ sources:
   - "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md"
 related:
   - "[[concepts/agent-harness]]"
-  - "[[concepts/context-engineering]]"
+  - "[[concepts/context-engineering|Context Engineering]]"
   - "[[entities/addy-osmani]]"
   - "[[entities/vtrivedy10]]"
   - "[[entities/humanlayer]]"
@@ -54,7 +54,7 @@ Horthy's signature contribution: a structured **Research → Plan → Implement*
 
 **Limitations identified**: FIC does not work perfectly for every problem. A tricky race condition with MCP sHTTP keepalives in Go took 2 weeks — the research phase didn't go deep enough through the dependency tree. **Lesson**: you need at least one codebase expert for hard problems.
 
-See [[concepts/context-engineering]] → "Frequent Intentional Compaction (FIC)" section for full technical details.
+See [[concepts/context-engineering|Context Engineering]] → "Frequent Intentional Compaction (FIC)" section for full technical details.
 
 ### 12-Factor Agents
 
@@ -81,7 +81,7 @@ Horthy has been monitoring convergence of agent harness patterns across the indu
 ## Cross-References
 
 - [[entities/humanlayer]] — Company founded by Dex Horthy
-- [[concepts/context-engineering]] — FIC pattern documented here
+- [[concepts/context-engineering|Context Engineering]] — FIC pattern documented here
 - [[concepts/agent-harness]] — Horthy cited in harness engineering discourse
 - [[entities/addy-osmani]] — Cited Horthy as key voice in harness pattern tracking
 - [[entities/vtrivedy10]] — Coined "Agent = Model + Harness"

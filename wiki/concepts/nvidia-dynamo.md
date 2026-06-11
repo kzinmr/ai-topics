@@ -129,7 +129,7 @@ Codex requires:
 
 ## Significance
 
-Dynamo represents a fundamental rethinking of inference architecture for agentic workloads, where context reuse (KV cache awareness) becomes the primary optimization target rather than raw throughput. This connects directly to [[concepts/context-engineering]] and [[concepts/kv-aware-routing]] as core principles.
+Dynamo represents a fundamental rethinking of inference architecture for agentic workloads, where context reuse (KV cache awareness) becomes the primary optimization target rather than raw throughput. This connects directly to [[concepts/context-engineering|Context Engineering]] and [[concepts/kv-aware-routing]] as core principles.
 
 The streaming tokens and tools capabilities enable Dynamo to serve as a production-grade backend for coding agents that require:
 - Interleaved reasoning and tool call handling
@@ -141,7 +141,7 @@ The streaming tokens and tools capabilities enable Dynamo to serve as a producti
 
 - [[concepts/agentic-engineering]]
 - [[concepts/inference]]
-- [[concepts/context-engineering]]
+- [[concepts/context-engineering|Context Engineering]]
 - [[concepts/kv-aware-routing]]
 - [[nvidia]]
 - [First Dynamo post: Full-Stack Optimizations for Agentic Inference](https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo/)

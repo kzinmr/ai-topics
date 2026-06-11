@@ -61,7 +61,7 @@ The platform implements:
 ## Related Concepts
 
 - [[concepts/contextmaxxing]] — The architectural philosophy behind Sentra's memory design
-- [[concepts/context-lock-in]] — The competitive risk Sentra solves: enterprises that outsource context to model vendors face irreversible lock-in. Sentra provides the neutral, owned context layer. [[entities/ashwingop]]'s thesis: "Rent the Intelligence. Own the Context."
+- [[concepts/context-engineering/lock-in|Context Lock-in]] — The competitive risk Sentra solves: enterprises that outsource context to model vendors face irreversible lock-in. Sentra provides the neutral, owned context layer. [[entities/ashwingop]]'s thesis: "Rent the Intelligence. Own the Context."
 - [[concepts/tokenmaxxing]] — The approach Sentra explicitly counters with shared state
 - [[entities/ashwingop]] — Co-founder and architectural visionary
 

@@ -93,7 +93,7 @@ Verify state with next screenshot → Self-correct → Repeat
 ## Related Entities
 
 - [[entities/anthropic-computer-use]] — Anthropic's Computer Use
-- [[concepts/death-of-browser]] — Browser dehumanization trend
+- [[concepts/browser-agent/death-of-browser]] — Browser dehumanization trend
 - [[entities/browser-use]] — Open source DOM-based automation
 - [[concepts/harness-engineering]] — Agent environment design
 

@@ -137,7 +137,7 @@ Gwern's logical derivation framework also helps categorize post-Transformer mode
 - [[concepts/scaling-hypothesis]] — Gwern's theory that scale alone drives capability emergence
 - [[concepts/ssm-mamba]] — State-space models as an alternative to attention
 - [[concepts/gpt/decoder-only]] — The decoder-only variant used by GPT models
-- [[concepts/context-engineering]] — Managing context windows built on attention mechanisms
+- [[concepts/context-engineering|Context Engineering]] — Managing context windows built on attention mechanisms
 - [[concepts/token-economics]] — How attention compute scales with token count
 - [[entities/gwern]] — Gwern Branwen, author of the "discovery fiction" derivation
 - [[entities/jay-mody]] — Jay Mody's picoGPT and attention derivations

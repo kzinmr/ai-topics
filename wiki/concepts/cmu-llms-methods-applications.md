@@ -143,7 +143,7 @@ flowchart TD
 - [[concepts/ai-image-generation]] — Multimodal (week 11)
 - [[concepts/ai-safety]] — Safety (week 10)
 - [[concepts/fine-tuning/peft-lora-qlora]] — Fine-tuning (weeks 3-4)
-- [[concepts/context-engineering]] — Prompt engineering (weeks 2-3)
+- [[concepts/context-engineering|Context Engineering]] — Prompt engineering (weeks 2-3)
 - [[concepts/coding-agents]] — Code generation (week 11)
 
 ---

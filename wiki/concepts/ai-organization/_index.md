@@ -109,7 +109,7 @@ Emerged from discussions on Reddit r/ClaudeCode and FourWeekMBA.
 - [[concepts/developer-workflows]] — Developer AI workflows
 - [[concepts/harness-engineering]] — Agent control and structuring
 - [[concepts/multi-agent-autonomy-scale]] — Large-scale multi-agent autonomy and scaling
-- [[concepts/context-engineering]] — Context engineering
+- [[concepts/context-engineering|Context Engineering]] — Context engineering
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol (inter-agent coordination infrastructure)
 - [[concepts/ai-agent-traps]] — AI agent pitfalls and failure patterns
 

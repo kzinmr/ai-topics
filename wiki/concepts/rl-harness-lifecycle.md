@@ -291,7 +291,7 @@ The RL-harness lifecycle suggests focusing on:
 - **Production-Ready Agent Engineering** (Maven, Will Brown & Kyle Corbitt) — This course directly operationalizes the RL-harness lifecycle thesis: MCP tool design (harness) and GRPO optimization (RL) taught as complementary skills. See [[concepts/agents-mcp-rl-course]].
 - **[[react-pattern]]** — Reasoning-acting interleaving as trainable behavior
 - **[[agent-delegation]]** — Subagent patterns and their internalization potential
-- **[[concepts/context-management]]** — Compaction, memory, and state preservation challenges
+- **[[concepts/context-engineering/management|Context Management]]** — Compaction, memory, and state preservation challenges
 - **[[agent-environment-design]]** — Creating training worlds for agentic RL
 
 ## Sources

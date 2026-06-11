@@ -113,7 +113,7 @@ If sample efficiency cannot be improved by orders of magnitude, then:
 - [[concepts/agi-economics]] — Economic implications of AGI labor costs vs. human labor
 - [[concepts/rlvr-science-limitations]] — RLVR's struggles in domains without clear verification
 - [[concepts/scaling-without-slop]] — Analysis of AI capability limits
-- [[concepts/context-engineering]] — Practical approaches to working within sample efficiency constraints
+- [[concepts/context-engineering|Context Engineering]] — Practical approaches to working within sample efficiency constraints
 - [[entities/dwarkesh-patel]] — Primary source: "The sample efficiency black hole" (Jun 2026)
 
 ## Key Quotes

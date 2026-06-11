@@ -36,4 +36,4 @@ AI Organization is a framework category exploring how human organizations and wo
 
 - [[concepts/harness-engineering]] — Agent control and structuring
 - [[concepts/multi-agent-autonomy-scale]] — Large-scale multi-agent autonomy
-- [[concepts/context-engineering]] — Context engineering as organizational discipline
+- [[concepts/context-engineering|Context Engineering]] — Context engineering as organizational discipline

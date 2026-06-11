@@ -125,4 +125,4 @@ Lance Martin's X presence (@rlancemartin) centers on:
 - [[entities/vercel-sandbox]] — Vercel sandbox integration for Managed Agents
 - [[entities/daytona-sandbox]] — Daytona sandbox integration for Managed Agents
 - [[entities/cat-wu]] — Head of Product at Anthropic, Claude Code product strategy
-- [[concepts/context-engineering]] — The concept he co-developed
+- [[concepts/context-engineering|Context Engineering]] — The concept he co-developed

@@ -15,7 +15,7 @@ sources:
 
 # Attention Mechanism Variants
 
-Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[concepts/context-engineering]].
+Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[concepts/context-engineering|Context Engineering]].
 
 ## Educational Derivations
 
@@ -119,7 +119,7 @@ Replace most expensive full-attention layers with linear-time/state-space module
 
 ## Context Engineering Connection
 
-These attention variants directly impact [[concepts/context-engineering]] because:
+These attention variants directly impact [[concepts/context-engineering|Context Engineering]] because:
 - **KV cache size** determines how much context fits in memory (SWA, GQA, MLA all reduce cache)
 - **Compute scaling** affects context window feasibility (n² for standard attention vs linear for hybrid)
 - **Token economics** (see [[concepts/token-economics]]) — different attention mechanisms have different CPM profiles
@@ -128,8 +128,8 @@ These attention variants directly impact [[concepts/context-engineering]] becaus
 ## Related
 
 - [[concepts/token-economics]] — Cost per million tokens optimization
-- [[concepts/context-engineering]] — Managing context windows efficiently
-- [[concepts/context-window-management]] — Context window management patterns
+- [[concepts/context-engineering|Context Engineering]] — Managing context windows efficiently
+- [[concepts/context-engineering/window-management|Context Window Management]] — Context window management patterns
 - [[concepts/local-llm]] — Local LLM inference considerations
 - [[concepts/reasoning-models]] — Reasoning models require long context windows
 
