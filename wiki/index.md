@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-10 | Total pages: 2448 | Indexed entries: 1983 | Concepts: 1062 | Entities: 781
+> Last updated: 2026-06-11 | Total pages: 2452 | Indexed entries: 1987 | Concepts: 1066 | Entities: 781
 
 ## Entities (781 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -829,6 +829,7 @@
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-ergonomics]] — Programming language and toolchain design optimized for AI coding agents. McKinney's framework (compile speed, static binaries) + Ronacher's language syntax/feature design principles (effects, results, grep-ability, etc.)
 - [[concepts/agent-evaluation-methodology]] — Agent Evaluation Methodology — Floor raising vs benchmark maxxing framework by Ben Hylak (Raindrop). Practical guide: golden cases, code-aware evals, scale-based production monitoring (Stumbles→Issues→Signals→Experiments), and the full eval lifecycle from pre-ship to continuous improvement.
+- [[concepts/agent-design-patterns]] — Agent Design Patterns — Model selection (3-tier), tool calling with Pydantic structured outputs, thinking-first ordering, async processing (~7-8x speedup), sub-models as tools. From MCP-RL course.
 - [[concepts/agent-execution-tax]] — Agent Execution Tax: Fireworks AI concept. Structured output reliability bottleneck discovered from 720 browser agent runs. Kimi K2.5 0.0% vs Gemini 22.9% execution tax. Reliability-Adjusted Accuracy and Cost Per Successful Task.
 - [[concepts/agent-executor]] — Agent Executor — Google's open-source distributed agent runtime. Durable execution, secure sandbox isolation, trajectory branching, connection recovery. May 2026.
 - [[concepts/agent-filesystem-abstraction]] — Agent Filesystem Abstraction — Design pattern where databases/vector stores are wrapped as virtual filesystems (ls, cat, grep) for AI agents. Pioneered by Mintlify's ChromaFS. Arize experiment (June 2026): skill-based SQL+real Bash (99/100) beats PostgresFS (93/100) on accuracy, with zero maintenance overhead.
@@ -1447,6 +1448,7 @@
 - [[concepts/grok-computer]] — Grok Computer
 - [[concepts/grpo]] — Group Relative Policy Optimization: RL algorithm introduced in DeepSeek-R1. Eliminates PPO's critic model, removing the computational bottleneck for large-scale model RL training. Estimates advantages via within-group relative comparison.
 - [[concepts/grpo-rl-training]] — GRPO (Group Relative Policy Optimization) — RL algorithm devised by DeepSeek. No critic needed, within-group relative advantage computation. Popularized by DeepSeek-R1, became the standard RL backbone for reasoning and agent training. Foundation for SDAR and MOPD.
+- [[concepts/grpo-infrastructure]] — GRPO Infrastructure — VRAM napkin math (10× rule), PPO vs GRPO tradeoffs, GPU architecture patterns (swapping vs overlapping), LoRA for GRPO (beta=0 shortcut), async RL, key gotchas (temp=1, reward std dev collapse). From MCP-RL course.
 - [[concepts/gte-moderncolbert]] — GTE-ModernColBERT: LightOn's open-source multi-vector retrieval model (2025). First SOTA ColBERT trained on PyLate, first to beat ColBERT-small on BEIR (54.75). 8K context via ModernBERT architecture + knowledge distillation on MS MARCO.
 - [[concepts/halo-loss-attention-sinks]] — Halo Loss / Attention Sinks — Training technique preventing attention sink formation during LM pretraining.
 - [[concepts/hands-on-modern-rl]] — Hands-On Modern RL — Open-source, practice-first curriculum for modern reinforcement learning. Covers classic control to LLM post-training (RLHF, DPO, GRPO), RLVR, and multimodal agent systems. Created by walkinglabs.
@@ -1521,6 +1523,7 @@
 - [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan)'s cognitive phenomenon of linguistic authenticity loss in the LLM era. Linguistic vertigo, head words vs body words, social diagnosis using LLMs as tracer dye, RLHF's societal shadow (→ [[concepts/societal-shadow]]). Includes Gwern's appendix on prompt-blindness (unseeing / prompt-vision). Experiential premise: [[raw/articles/2023-03-13_qchu-re-encountering-language.md]].
 - [[concepts/llama-4]] — LLaMA 4: Meta's April 2026 open-weight multimodal model family, Scout (compact) and Maverick (flagship) variants, competitive with DeepSeek V4 and Qwen 3.7.
 - [[concepts/llm-as-judge]] — LLM-as-Judge: Evaluation Frameworks & Bias Mitigation — Using LLMs to evaluate LLM outputs with known bias types
+- [[concepts/lm-as-judge-reward-signal]] — LM-as-Judge for RL Reward Signals — Using LM judges as GRPO reward signals, calibration methodology, RULER, non-verifiable domain evaluation. From MCP-RL course.
 - [[concepts/llm-as-judge-skills]] — Murat Can Koylan's reusable skills for LLM output evaluation. Part of Agent-Skills-for-Context-Engineering (15.5k stars). Context engineering approach to eval.
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development — Methodology for using LLM coding agents in software development. Covers greenfield vs rewrite paradigms, CL size discipline, test-first strategy, language choice (Go advantage), human-in-the-loop categories, and junior vs senior guidance. Based on Eli Bendersky's pycparser rewrite and watgo greenfield project experiences.
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
@@ -1735,6 +1738,7 @@
 - [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
 - [[concepts/retrieve-merge-predict]] — **Retrieve, Merge, Predict** — Three-stage pipeline for augmenting base tables with data lake features to improve ML predictions. By INRIA SODA (Cappuzzo et al., 2024). Retrieval (MinHash, exact matching, Starmie) → Merge → Predict with tree-based models. Key finding: retrieval accuracy is critical, simple merging suffices, gradient boosting is robust to noisy joins. Benchmark data lake: [[entities/yadl]].
 - [[concepts/reward-hacking]] — Exploitation of evaluation harnesses to achieve benchmark scores without genuinely solving the intended problem. Kernel benchmark exploits (stream hacking, Python runtime manipulation). RHB benchmark for tool-using LLM agents (ICML 2026): 13 frontier models evaluated, RL post-training associated with higher exploit rates (0.6% → 13.9%), environmental hardening reduces exploits by 87.7%. SocioHack extension to societal institutions. **LLM RL Training**: reward functions as "dark art" (AlphaChip case), Claude 3.7 test-editing, o3 hallucinations from outcome-only rewards, GPT-4o sycophancy from preference data RL, non-verifiable domain solutions (LLM judges, rubrics, HealthBench). Semi Analysis June 2026.
+- [[concepts/reward-engineering]] — Reward Engineering for RL-Trained Agents — Binary vs complex rewards, reward std dev monitoring, LM-as-judge signals, non-verifiable domain design, RULER. From MCP-RL course.
 - [[concepts/rich-suttons-bitter-lesson]] — Rich Sutton's Bitter Lesson (2019). General methods leveraging computation ultimately beat hand-crafted structure. Application to AI engineering, Hyung Won Chung's "add structure then remove it later" framework, Lance Martin's open-deep-research case study
 - [[concepts/rl-algorithms-for-llm-training]] — RL Algorithms for LLM Training — Comprehensive Q&A on Actor-Critic, PPO, GRPO, KL divergence, advantage estimation, reward design, and algorithm variants (DAPO, Dr.GRPO, CISPO)
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle

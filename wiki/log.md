@@ -1,3 +1,21 @@
+## [2026-06-11] MCP-RL Course 講義内容の詳細サマリー展開と概念ページ分解
+
+**Action**: agents-mcp-rl-course.md の Lesson 1-6 + Office Hours の講義内容を詳細に分析し、コースページの Detailed Technical Notes セクションを追加。論点ごとに4つの新規概念ページを作成し、既存2ページを充実させた。
+
+**新規ページ**:
+- `concepts/agent-design-patterns.md` — モデル選択（3層）、ツール呼び出し、Pydantic構造化出力、async処理
+- `concepts/reward-engineering.md` — 報酬関数設計（バイナリ vs 複合）、報酬std dev監視、非検証可能領域
+- `concepts/lm-as-judge-reward-signal.md` — LM-as-Judge の RL 報酬信号としての活用、RULER、較正方法論
+- `concepts/grpo-infrastructure.md` — VRAM計算、PPO vs GRPO、GPU アーキテクチャ、LoRA、async RL
+
+**更新ページ**:
+- `concepts/agents-mcp-rl-course.md` — Key Concepts に新規ページ追加、Detailed Technical Notes セクション追加
+- `concepts/grpo-rl-training.md` — Practical GRPO Training セクション追加（バッチ構造、訓練パラメータ、gotchas）
+- `entities/openpipe.md` — ART Framework セクション追加（アーキテクチャ、主要クラス、訓練ループパターン）
+- `index.md` — 4ページ追加、ページ数更新
+
+---
+
 ## [2026-06-11] Office Hours Week 3 (Will Brown 文字起こし・要約)
 
 **Action**: Ingested Week 3 office hours transcript from message.txt. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, related links).

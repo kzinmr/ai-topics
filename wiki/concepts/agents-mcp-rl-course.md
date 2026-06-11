@@ -225,10 +225,59 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 
 - [[concepts/agentic-rl]] — Applying RL to train LLM agents
 - [[concepts/grpo-rl-training]] — Group Relative Policy Optimization
+- [[concepts/grpo-infrastructure]] — VRAM math, GPU architecture, LoRA, async RL
+- [[concepts/reward-engineering]] — Reward function design for agent RL training
+- [[concepts/lm-as-judge-reward-signal]] — LM-as-judge evaluation methodology for RL rewards (see also [[concepts/llm-as-judge]])
+- [[concepts/agent-design-patterns]] — Model selection, tool calling, async patterns
 - [[concepts/mcp]] — Model Context Protocol for tool integration
-- [[concepts/agent-evaluation]] — Evaluating agent performance for RL reward signals
+- [[concepts/agent-evaluation-methodology]] — Evaluating agent performance for RL reward signals
 - [[concepts/context-engineering]] — Designing effective agent contexts
 - [[concepts/reasoning-models]] — Models with extended reasoning capabilities
+
+## Detailed Technical Notes
+
+### Agent Design & Tool Integration (Lessons 1-2)
+
+**Model Selection**: 3-tier strategy — primary models (DeepSeek V3 for cost, GPT 4.1, Claude Sonnet, Gemini 2.5 Pro), helper/sub-models for bulk reading (GPT-4.1 Mini), and reasoner models for complex tasks. Key insight: **prioritize tool-use reliability over raw intelligence**. See [[concepts/agent-design-patterns]].
+
+**Structured Outputs**: Pydantic models for type safety. Thinking-first ordering for autoregressive models (thinking tokens before tool calls). Chat Completions API recommended over Responses API for portability.
+
+**Async Processing**: `asyncio.gather` + semaphores as default production pattern, yielding ~7-8x speedup. Essential for any production agent.
+
+**MCP Architecture**: "FastAPI but LM-shaped" — solves the N×M→N+M integration problem. Strong stance: A2A is premature, MCP is the standard. See [[concepts/mcp]].
+
+**Security**: Whitelist > blacklist; default to read-only; "You can't fire an LLM." Sandboxing and codifying dangerous patterns as controlled tools.
+
+### Evaluation & Optimization (Lessons 3, Office Hours)
+
+**Model Spec First**: Write a model spec before building evals. Deterministic evals (Python functions for format, tool calls, instruction following) before LM judges.
+
+**SFT as Gateway**: Validates that a task is learnable before expensive RL runs. 1K-10K examples sweet spot. Tools: TRL, Unsloth, Axolotl, Torchtune. LoRA sufficient for most task-specific use cases. Curriculum learning: sort by difficulty, keep "sometimes right, sometimes wrong" problems.
+
+**LM Judge Calibration**: Compare multiple judge models (O3, GPT-4, Claude) for consistency. Pairwise comparison with position bias randomization. Confidence intervals. See [[concepts/lm-as-judge-reward-signal]].
+
+**Reward Hacking Mitigation**: Iterative process — observe rollouts → identify hacks (usually "not subtle") → add LM judge penalties → checkpoint rollback. ~10 SFT examples usually sufficient to bypass safety alignment ("pretty superficial"). See [[concepts/reward-hacking]].
+
+### RL Training Pipeline (Lessons 4-6)
+
+**LLM-as-Policy Mapping**: State = token sequence so far; Action = next token; Policy = next-token distribution; Reward = eval score. Natural mapping but requires careful tool design as foundation.
+
+**GRPO Batch Structure**: B=4 unique prompts × G=8 rollouts per prompt = 32 total completions per batch. Smaller groups (4 rollouts) work well in practice. Temperature MUST be 1 (mandatory). See [[concepts/grpo-rl-training]] and [[concepts/grpo-infrastructure]].
+
+**ART Training Loop**: `TrainableModel` (Qwen 2.5 14B) → `LocalBackend()` (vLLM) → `backend.register(model)` → iterate dataset → `model.train(groups)`. Remote H100 execution via SkyPilot. See [[entities/openpipe]].
+
+**Key Findings**:
+- Simple binary rewards converge faster (~90 steps) than complex partial-credit rewards (~300-540 steps), both reaching ~86% accuracy
+- LM-as-judge without ground truth (O3 comparing 4 rollouts per group) converges faster than ground-truth-based training — a major result for non-verifiable domains
+- 16-256 training examples are sufficient — RL does NOT catastrophically overfit like SFT
+- Agentic keyword search significantly outperforms vector RAG for email search
+
+**Practical Recommendations**:
+- Start with LoRA on 2× L4/A10 (<$1/hr); iterate on 1B models before scaling
+- Simple binary reward first; add complexity only for secondary behaviors
+- Monitor reward std dev — collapse near 0 means stop learning
+- Filter tasks by difficulty — remove those where model gets 0% or 100%
+- DSPy worth exploring for automatic prompt optimization + GRPO integration
 
 ## Comparison with Similar Courses
 
