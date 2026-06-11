@@ -47,6 +47,7 @@
 - `index.md` — Updated descriptions for dario-amodei, ai-regulation-2026, us-china-ai-competition. Added ai-labor-displacement entry.
 - `log.md` — This entry.
 
+---
 ## [2026-06-11] Blog wiki-ingest: Anthropic walkback, datasette-agent 0.2a0, Section 230, Claude+Lean, DiffusionGemma
 
 **Pipeline**: blog-wiki-ingest (triage checkpoint recovered from Case C parse failure)
@@ -60,6 +61,7 @@
 
 **Sources**: simonwillison.net (3 articles), garymarcus.substack.com, johndcook.com
 
+---
 ## [2026-06-11] Newsletter wiki-ingest: DiffusionGemma + Sarah Guo enrichment
 
 **Pipeline**: newsletter-wiki-ingest (triage checkpoint recovered)
@@ -70,6 +72,7 @@
 
 **Sources**: AINews (Latent Space) 2026-06-11, raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md
 
+---
 ## [2026-06-11] concepts/death-of-browser を concepts/browser-agent/death-of-browser へ移動
 
 **Action**: `concepts/death-of-browser/_index.md` を `concepts/browser-agent/death-of-browser.md` に移動。被リンク17件を更新。`browser-agent/` 階層を新設。
@@ -176,7 +179,9 @@
 ---
 
 ## [2026-06-10] Florian Brand: Open Model Safety
+---
 ## [2026-06-11] Kyle Corbitt Blog Series: ART開発前の知的背景 (4記事)
+---
 ## [2026-06-11] Kyle Corbitt Blog Series: ART/RL実装と実践 (4記事)
 
 **Action**: Saved 4 raw articles from corbt.com (2025-04 ~ 2025-07). Updated `entities/corbett.md` (sources). Updated `concepts/reward-hacking.md` (sources). Updated `concepts/ruler-openpipe-art.md` (sources). Updated `concepts/agents-mcp-rl-course.md` (sources, supplementary reading section).
@@ -8238,6 +8243,7 @@ Updated:
 - **UPDATED**: `entities/semianalysis.md` — Added Subscription vs API Economics section, new source, updated date
 - **UPDATED**: `concepts/token-economics.md` — Added cross-reference to subscription economics concept
 - **UPDATED**: `index.md` — Added new concept page entry
+---
 ## [2026-06-11] concepts/context-* ページ群の階層化
 
 **Action**: フラット配置の `context-*` ページ16件を `concepts/context-engineering/` サブディレクトリに移動。prefix `context-` をstripし、元の `context-engineering.md` を `_index.md` に変換。サブページ一覧テーブルを追加。
@@ -8261,6 +8267,7 @@ Updated:
 - `context-window-management.md` → `window-management.md`
 
 **リンク更新**: wiki全体で252箇所のwikilinkを更新。内部クロスリンク25箇所も修正。「Context Context Engineering」の二重表示バグ149箇所を修正。
+---
 ## [2026-06-11] agent(ic) ページ群の3カテゴリ再編
 
 **Action**: フラット配置の agent-*/agentic-* ページ47件を3つのサブディレクトリに分類移動。
@@ -8277,6 +8284,7 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 **リンク更新**: wiki全体で534箇所のwikilinkを更新。
 
 
+---
 ## 2026-06-11 11:19 UTC — active-crawl | 3 new concept pages
 
 **Topics**: German Google AI Overviews liability ruling, Apache Burr agent framework, AI agent safety incidents
