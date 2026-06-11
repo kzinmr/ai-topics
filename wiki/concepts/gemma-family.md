@@ -1,7 +1,7 @@
 ---
 title: "Gemma Model Family"
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-11
 type: concept
 tags:
   - concept
@@ -16,6 +16,7 @@ aliases: ["Gemma", "Google Gemma", "open Gemma"]
 sources:
   - raw/articles/2026-06-10_deepmind-model-cards-page.md
   - https://deepmind.google/models/model-cards/
+  - raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md
 ---
 
 # Gemma Model Family
@@ -41,6 +42,20 @@ All Gemma model cards are published at [ai.google.dev/gemma/docs](https://ai.goo
 | **PaliGemma 1** | Vision-language | 2025-02-25 | [Model Card](https://ai.google.dev/gemma/docs/paligemma/model-card) |
 | **RecurrentGemma** | Recurrent architecture | 2025-02-25 | [Model Card](https://ai.google.dev/gemma/docs/recurrentgemma/model_card) |
 | **ShieldGemma 1** | Safety classifier | 2025-02-25 | [Model Card](https://ai.google.dev/gemma/docs/shieldgemma/model_card) |
+| **DiffusionGemma** | Diffusion text model (26B-A4B MoE) | 2026-06-10 | [Model Card](https://ai.google.dev/gemma/docs/diffusiongemma/model_card) |
+
+## DiffusionGemma
+
+**DiffusionGemma** (`google/diffusiongemma-26B-A4B-it`) is an experimental diffusion-based text model built on [[concepts/gemini|Gemini]] research, released as an open-weight model under Apache 2.0. It uses a 26B-parameter Mixture-of-Experts architecture with 4B active parameters per forward pass.
+
+Key characteristics:
+- **Diffusion-based generation**: Unlike traditional autoregressive LLMs, DiffusionGemma generates text through iterative refinement, offering a different approach to language modeling.
+- **Open weights**: Released under Apache 2.0 license — fully open for research and commercial use.
+- **Performance**: NVIDIA hosts the model for free on their NIM cloud API, reporting 500+ tokens/second throughput.
+- **Relationship to Gemini Diffusion**: Follows from Google's experimental Gemini Diffusion research (May 2025), previously demonstrated running at 857 tokens/second.
+- **vLLM support**: Native inference support in vLLM for high-throughput deployment.
+
+Sources: raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md
 
 ## Model Lineage
 

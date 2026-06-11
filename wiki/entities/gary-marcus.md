@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-09
+updated: 2026-06-11
 tags:
   - lab
   - benchmark
@@ -26,6 +26,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md
   - raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md
   - raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md
+  - raw/articles/garymarcus.substack.com--p-maybe-section-230-doesnt-shield-ai--f81f07ca.md
 ---
 
 # Gary Marcus
@@ -229,6 +230,16 @@ Marcus's Substack newsletter covers AI developments with a critical eye, focusin
 ### Research and Publications
 
 Marcus has published extensively on AI limitations and the need for hybrid approaches combining neural and symbolic methods.
+
+## AI Liability & Section 230
+
+On June 11, 2026, Marcus published an analysis arguing that Section 230 of the Communications Decency Act may not shield AI companies from liability for their models' outputs. The argument, credited to an anonymous reader, hinges on a key distinction: Section 230 protects services from liability for *third-party* speech, but LLM outputs are the *company's own software* producing the speech, not third-party content.
+
+Marcus cited a German court decision holding companies liable for their chatbots' errors as a potential precedent that could apply under US liability law. He noted that if US courts ruled similarly, "all the LLM providers would be in deep, deep trouble" because "essentially all their software has a tendency to fabricate fairly regularly."
+
+This analysis builds on Marcus's long-standing critique of Section 230 (dating to his May 2023 Senate testimony alongside Sam Altman) and his criticism of OpenAI's support for Illinois legislation that "would shield AI labs from liability" — which he contrasts with Altman's 2023 testimony agreeing that Section 230 should not apply to generative AI.
+
+Sources: [[raw/articles/garymarcus.substack.com--p-maybe-section-230-doesnt-shield-ai--f81f07ca.md]]
 
 ## Notable Quotes
 

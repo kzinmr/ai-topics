@@ -2,7 +2,7 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-06-10
+updated: 2026-06-11
 tags:
   - model
   - agent-safety
@@ -10,7 +10,7 @@ tags:
   - security
 aliases:
 - Mythos
-sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md"]
+sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md", "raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md"]
 ---
 
 # Claude Mythos
@@ -129,7 +129,15 @@ Key design choices:
 - **Rationale**: Concern about "accelerating other AI developers in building powerful AI systems that pose similar risks [...] without necessarily having commensurate safeguards"
 - **Behavioral impact**: Minimal except limiting frontier LLM development effectiveness; Claude still responds helpfully
 
-## Critical Perspective: Gary Marcus 'Scare, Hype, Release' Pattern
+### Policy Walkback (June 11, 2026)
+
+On June 11, 2026, WIRED (Maxwell Zeff) reported that Anthropic agreed to walk back Fable 5's invisible frontier LLM development restrictions. An Anthropic spokesperson stated: "We're changing Fable 5's safeguards for frontier LLM development to make them visible. We made the wrong tradeoff and we apologize for not getting the balance right."
+
+Simon Willison characterized the reversal as "very good news," noting that the policy had been "tucked away in their system card" and would have "sabotaged" AI researchers using Claude. The policy had been criticized by [[entities/elie-bakouch|Elie Bakouch]] (Prime Intellect) for restricting researchers without notification.
+
+Sources: raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md
+
+## Critical Perspective
 
 Gary Marcus argued (June 2026) that Anthropic's Mythos release follows a deliberate pattern he traces back to OpenAI's GPT-2 'too dangerous to release' strategy in 2019:
 

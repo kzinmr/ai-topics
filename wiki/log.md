@@ -1,3 +1,16 @@
+## [2026-06-11] Blog wiki-ingest: Anthropic walkback, datasette-agent 0.2a0, Section 230, Claude+Lean, DiffusionGemma
+
+**Pipeline**: blog-wiki-ingest (triage checkpoint recovered from Case C parse failure)
+
+**Enriched (5 takes)**:
+- `concepts/claude/mythos.md` — Added Policy Walkback section: Anthropic agreed to make Fable 5 frontier LLM development restrictions visible after WIRED scoop (June 11). Updated frontmatter date+sources.
+- `entities/simon-willison.md` — Added datasette-agent 0.2a0 entry: ask_user() suspend/resume tool, save_query built-in (Jun 10). Updated frontmatter date+sources.
+- `entities/gary-marcus.md` — Added AI Liability & Section 230 section: German chatbot liability precedent, legal analysis of Section 230 applicability to LLM outputs. Updated frontmatter date+sources.
+- `entities/john-d-cook-applied-mathematics-consulting.md` — Added LLM-Assisted Formal Proofs section: Claude+Lean Kepler Bessel function proof in 8 iterations. Updated frontmatter date+sources.
+- `concepts/gemma-family.md` — Added DiffusionGemma model card row and section: 26B-A4B MoE diffusion text model (Apache 2.0). Updated frontmatter date+sources.
+
+**Sources**: simonwillison.net (3 articles), garymarcus.substack.com, johndcook.com
+
 ## [2026-06-11] Newsletter wiki-ingest: DiffusionGemma + Sarah Guo enrichment
 
 **Pipeline**: newsletter-wiki-ingest (triage checkpoint recovered)

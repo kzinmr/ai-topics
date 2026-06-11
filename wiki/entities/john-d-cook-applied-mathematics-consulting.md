@@ -2,7 +2,7 @@
 title: John D. Cook
 type: entity
 created: 2026-04-09
-updated: 2026-04-19
+updated: 2026-06-11
 tags:
 - person
 - blogger
@@ -11,7 +11,8 @@ tags:
 aliases:
 - johndcook.com
 - john-d-cook-applied-mathematics-consulting
-sources: []
+sources:
+  - raw/articles/johndcook.com--blog-2026-06-10-claude-and-lean--1d90aa74.md
 ---
 
 # John D. Cook
@@ -81,6 +82,14 @@ The diseconomies of scale insight is striking: cloud providers achieve lower per
 Cook's blog posts span an extraordinary range: number theory (Andrica's conjecture on prime gaps), celestial mechanics (Artemis I's retrograde lunar orbit, Apollo 12's third-stage chaotic trajectory), music theory (twelve-tone composition, tone row operations, Langford series), cryptography (quantum Y2K, OpenSSH hybrid encryption), and computer science (Toffoli gates as universal reversible computing, Z3 SAT/SMT solver optimization).
 
 The common thread is **curiosity-driven mathematical exploration**. He finds something interesting, works through the math, and shares the result — usually with a practical computation angle. This makes his blog uniquely valuable: it's a working notebook of a mathematician who thinks in code.
+
+## LLM-Assisted Formal Proofs
+
+### Claude + Lean Proof Generation (June 2026)
+
+On June 10, 2026, Cook ran an experiment using Claude to generate Lean formal proofs. Starting from a prompt with the URL to his Kepler equation Fourier coefficient post, Claude produced a Lean proof that a Fourier coefficient aₙ is given by (2/n)·Jₙ(n·e) (a Bessel function of the first kind). The proof required 8 iterations of error correction — Cook pasted error messages without providing any hints. The final proof used four `sorry` markers, corresponding to standard analysis lemmas (integration by parts and change-of-variables) that exist in Mathlib under `intervalIntegral`. Cook noted this is the accepted style for "roadmap" Lean proofs ahead of full library coverage.
+
+Sources: raw/articles/johndcook.com--blog-2026-06-10-claude-and-lean--1d90aa74.md
 
 ## Key Quotes
 
