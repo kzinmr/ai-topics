@@ -2034,5 +2034,7 @@
 
 - [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] — Production-Ready Agent Engineering Office Hours with Kyle Corbitt — Reward hacking mitigation, RLHF for low-volume feedback, custom reward model training (HN titles), RL vs prompt engineering, agent frameworks. Companion: [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]]
 
+- [[transcripts/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6-lecture]] — Production-Ready Agent Engineering Lesson 6: Training Agents with GRPO (Final) — Kyle Corbitt (OpenPipe). Experiment registry patterns, simple vs complex reward functions, LM-as-judge without ground truth, dataset size scaling (16–256 examples sufficient), GPU utilization, SFT vs RL decision criteria. Companion: [[raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6]]
+
 - [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook]] — Build Your Own AI Research Agent — Lightning Lesson notebook walkthrough. V1/V2 agent loop, search/fetch tools, sub-models as tools, MCP crash course, Claude Code deep research. Companion: [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning]]
 - [[transcripts/2025-06-10_willbrown_training-agents-with-rl-notebook]] — Training Agents with Reinforcement Learning — Lightning Lesson notebook walkthrough. ChromaDB search tools, synthetic QA generation, verifiers framework, GRPO training. Companion: [[raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning]]

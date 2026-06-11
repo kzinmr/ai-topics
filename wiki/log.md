@@ -8076,3 +8076,7 @@ Updated:
 - **CREATED**: `raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md` — Office hours summary article
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Office Hours to Lecture Schedule, Lesson Summaries, sources, related links
 - **UPDATED**: `index.md` — Added Office Hours transcript entry
+- **CREATED**: `transcripts/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6-lecture.md` — Structured transcript of Lesson 6 (final lecture): experiment registry patterns, reward function ablations (simple vs complex), LM-as-judge without ground truth, dataset size scaling, GPU utilization, SFT vs RL decision criteria
+- **CREATED**: `raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6.md` — Lesson 6 summary article covering experiment iteration patterns and advanced reward design findings
+- **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 6 to Lecture Schedule, Lesson Summaries, sources, related links; marked course as complete (no more pending lectures)
+- **UPDATED**: `index.md` — Added Lesson 6 transcript entry
