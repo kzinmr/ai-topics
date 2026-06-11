@@ -214,7 +214,7 @@ A key gap: KV caches are currently tied to specific model versions and architect
 
 ## Related Concepts
 
-- [[concepts/context-engineering/management|Context Management]] — Practical discipline of managing the context window as a resource
+- [[concepts/context-engineering/context-management|Context Management]] — Practical discipline of managing the context window as a resource
 - [[concepts/context-engineering|Context Engineering]] — The art and science of curating context; Lance Martin's Write/Select/Compress/Isolate taxonomy
 - [[concepts/reduce-offload-isolate]] — Three principles for moving knowledge out of context
 - [[concepts/ai-agent-memory-middleware]] — Three-layer model (L1: In-Context, L2: Local File, L3: Cloud Storage)

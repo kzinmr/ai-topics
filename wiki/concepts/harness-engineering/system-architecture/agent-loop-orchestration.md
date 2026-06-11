@@ -113,7 +113,7 @@ text at the beginning ... 1000 chars truncated ... text at the end
 
 - [[concepts/harness-engineering/system-architecture/context-compaction]] — Compression mechanism for full context windows
 - [[concepts/harness-engineering/system-architecture/container-context]] — Execution environment persistence
-- [[concepts/context-engineering/window-management|Context Window Management]] — Strategic context budget management
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Strategic context budget management
 - [[concepts/harness-engineering]] — Agent execution environment design (higher-level concept)
 
 ## References

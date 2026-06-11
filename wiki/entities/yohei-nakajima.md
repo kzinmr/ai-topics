@@ -113,4 +113,4 @@ Both articles documented in [[concepts/agent-statefulness]]. The architecture wa
 - [[concepts/agent-runtime]] — Agent execution environment
 - [[concepts/agent-harness-primitives]] — Harness as stateful control layer
 - [[entities/supermemory]] — SMFS: mountable filesystem for AI agents
-- [[concepts/context-engineering/repositories|Context Repositories]] — Letta's git-based agent memory approach
+- [[concepts/context-engineering/context-repositories|Context Repositories]] — Letta's git-based agent memory approach

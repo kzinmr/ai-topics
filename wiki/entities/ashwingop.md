@@ -74,7 +74,7 @@ In "Rent the Intelligence. Own the Context." (May 2026), Gopinath introduces a t
 2. **Phase 2: Agent Layer** — Planning, tool use, evals, permissions, deployment, UI. Will converge as good patterns are copied by all vendors
 3. **Phase 3: Context** — Will NOT converge because it's unique to each company (customer promises, roadmap fights, decision scars, pricing exceptions)
 
-His thesis: *"A decent model with a decent agent and excellent company context will beat a frontier model with a better agent and shallow context."* This leads to his architecture prescription: **rent intelligence from any provider, own the context layer as neutral infrastructure.** See [[concepts/context-engineering/lock-in|Context Lock-in]].
+His thesis: *"A decent model with a decent agent and excellent company context will beat a frontier model with a better agent and shallow context."* This leads to his architecture prescription: **rent intelligence from any provider, own the context layer as neutral infrastructure.** See [[concepts/context-engineering/context-lock-in|Context Lock-in]].
 
 ## Key Work
 
@@ -88,7 +88,7 @@ His thesis: *"A decent model with a decent agent and excellent company context w
 ### Company Brain Series (May 2026)
 
 - **[Memory Is State, Not a Service](https://nanothoughts.substack.com/p/memory-is-state-not-a-service)** (May 8, 2026) — Introduces contextmaxxing as a better approach than tokenmaxxing. Argues that fragmented per-tool memory makes the company forget, and that shared state is the answer.
-- **[Rent the Intelligence. Own the Context.](https://x.com/i/article/2056142316713472000)** (May 17, 2026) — Introduces [[concepts/context-engineering/lock-in|Context Lock-in]], the three-phase model of AI competition (Model → Agent → Context), and the thesis that context will not converge because it's unique to each company. Argues enterprises should freely rent intelligence from any model provider while owning their context layer as neutral, inspectable, portable infrastructure. Directly engages Chamath Palihapitiya's token-control argument, the OpenAI Deployment Company, Anthropic AI Services, and the Microsoft structural analogy. [[raw/articles/2026-05-17_rent-intelligence-own-context.md|Raw article]]
+- **[Rent the Intelligence. Own the Context.](https://x.com/i/article/2056142316713472000)** (May 17, 2026) — Introduces [[concepts/context-engineering/context-lock-in|Context Lock-in]], the three-phase model of AI competition (Model → Agent → Context), and the thesis that context will not converge because it's unique to each company. Argues enterprises should freely rent intelligence from any model provider while owning their context layer as neutral, inspectable, portable infrastructure. Directly engages Chamath Palihapitiya's token-control argument, the OpenAI Deployment Company, Anthropic AI Services, and the Microsoft structural analogy. [[raw/articles/2026-05-17_rent-intelligence-own-context.md|Raw article]]
 
 ## Related People
 

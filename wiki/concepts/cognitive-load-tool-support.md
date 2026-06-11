@@ -94,4 +94,4 @@ The best way to reduce cognitive load is **getting the data model right** — no
 - [[concepts/cognitive-load-patterns]] — Code and architecture anti-patterns
 - [[concepts/cognitive-cost-of-agents]] — Willison's cognitive debt theory
 - [[concepts/harness-engineering]] — Agent environment design
-- [[concepts/context-engineering/window-management|Context Window Management]] — Context constraint management
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Context constraint management

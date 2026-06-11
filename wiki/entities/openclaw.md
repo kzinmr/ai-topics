@@ -195,7 +195,7 @@ Weighted score fusion (default: **70% vector + 30% BM25**):
 - OpenAI Batch API: 50% cost reduction vs synchronous API
 - Real example: 10,000 chunks → sync $0.20 → Batch $0.10 → 50% cache hit → $0.05
 
-#### Pre-Compaction Flush [[concepts/context-engineering/compaction|Context Compaction]]
+#### Pre-Compaction Flush [[concepts/context-engineering/context-compaction|Context Compaction]]
 
 OpenClaw's most innovative memory feature. When a conversation approaches the context window limit, it triggers a **silent agent turn** to prompt writing to persistent memory **before** context compaction.
 

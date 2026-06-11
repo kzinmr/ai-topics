@@ -125,7 +125,7 @@ The combination creates a development rhythm measured in **minutes, not hours**.
 -  — The broader methodology this serves- [[concepts/claude-code-best-practices]] — Practical implementation patterns
 - [[concepts/cli-over-mcp-pattern]] — Why minimal tooling pairs with direct prompting
 - [[concepts/inference-speed-development]] — How this enables rapid iteration
-- [[concepts/context-engineering/window-management|Context Window Management]] — Why short prompts preserve context
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Why short prompts preserve context
 
 ## Sources
 

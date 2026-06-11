@@ -1219,19 +1219,19 @@
 - [[concepts/constrained-decoding]] — Constrained Decoding
 - [[concepts/content-engine]] — Content Engine
 - [[concepts/content-understanding]] — Content Understanding: The system of content representation and enhancement within search indexes. Daniel Tunkelang's 8-article series (2021-2022). Classification→annotation→similarity→structure→quality→moderation/information extraction. The foundational counterpart to Query Understanding.
-- [[concepts/context-engineering/compaction|Context Compaction]] — Context Compaction — The context window compression process for AI agents. Includes the innovative Pre-Compaction Flush approach (OpenClaw). Compaction strategy comparison across OpenClaw/Claude Code/Codex.
-- [[concepts/context-engineering/compression|Context Compression]] — Context Compression Techniques
-- [[concepts/context-engineering/efficiency|Context Efficiency]] — Context Efficiency in AI Agents — Framework for evaluating AI agent efficiency based on context acquisition
+- [[concepts/context-engineering/context-compaction|Context Compaction]] — Context Compaction — The context window compression process for AI agents. Includes the innovative Pre-Compaction Flush approach (OpenClaw). Compaction strategy comparison across OpenClaw/Claude Code/Codex.
+- [[concepts/context-engineering/context-compression|Context Compression]] — Context Compression Techniques
+- [[concepts/context-engineering/context-efficiency|Context Efficiency]] — Context Efficiency in AI Agents — Framework for evaluating AI agent efficiency based on context acquisition
 - [[concepts/context-engineering|Context Engineering]] — Context Engineering — The art and science of curating the optimal set of tokens in an LLM's context window. Synthesizes Anthropic's implementation framework (system prompts, just-in-time retrieval, compaction, sub-agents) and Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate). Covers context rot, attention budget, progressive disclosure, prompt caching, and the Ralph Wiggum loop.
-- [[concepts/context-engineering/fragments|Context Fragments]] — Context Fragments — Memory state fragmentation in long-running AI agent loops
-- [[concepts/context-engineering/graph|Context Graph]] — Context Graph
-- [[concepts/context-engineering/lock-in|Context Lock-in]] — Context Lock-In — The third phase of AI competition. More dangerous than model lock-in (which is switchable): structural dependency where a single vendor controls an enterprise's working memory. Gopinath's three-phase model (Model→Agent→Context). "Intelligence is rented, context is owned." Sentra's Company Brain is the reference implementation.
-- [[concepts/context-engineering/management|Context Management]] — Context Management — Techniques for managing agent context windows and memory state
-- [[concepts/context-engineering/providers|Context Providers]] — Design patterns for the context provisioning layer between agents and tools
-- [[concepts/context-engineering/repositories|Context Repositories]] — Letta's git-based agent memory: local filesystem + git versioning. Progressive disclosure via file hierarchy + YAML frontmatter. Multi-subagent concurrent memory via git worktrees.
-- [[concepts/context-engineering/rot|Context Rot]] — Context Rot — Degradation of retrieved context quality over time, especially in RAG pipelines
-- [[concepts/context-engineering/routing|Context Routing]] — Context Routing — Query-aware context routing strategies
-- [[concepts/context-engineering/window-management|Context Window Management]] — Context Window Management
+- [[concepts/context-engineering/context-fragments|Context Fragments]] — Context Fragments — Memory state fragmentation in long-running AI agent loops
+- [[concepts/context-engineering/context-graph|Context Graph]] — Context Graph
+- [[concepts/context-engineering/context-lock-in|Context Lock-in]] — Context Lock-In — The third phase of AI competition. More dangerous than model lock-in (which is switchable): structural dependency where a single vendor controls an enterprise's working memory. Gopinath's three-phase model (Model→Agent→Context). "Intelligence is rented, context is owned." Sentra's Company Brain is the reference implementation.
+- [[concepts/context-engineering/context-management|Context Management]] — Context Management — Techniques for managing agent context windows and memory state
+- [[concepts/context-engineering/context-providers|Context Providers]] — Design patterns for the context provisioning layer between agents and tools
+- [[concepts/context-engineering/context-repositories|Context Repositories]] — Letta's git-based agent memory: local filesystem + git versioning. Progressive disclosure via file hierarchy + YAML frontmatter. Multi-subagent concurrent memory via git worktrees.
+- [[concepts/context-engineering/context-rot|Context Rot]] — Context Rot — Degradation of retrieved context quality over time, especially in RAG pipelines
+- [[concepts/context-engineering/context-routing|Context Routing]] — Context Routing — Query-aware context routing strategies
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Context Window Management
 - [[concepts/contextmaxxing]] — Better memory over burning more tokens. Counterpart to [[concepts/tokenmaxxing]]. Memory as shared state, not as a service. Three memories (factual, interaction, action) as one substrate. Ontology + context graphs. Coined by [[entities/ashwingop]].
 - [[concepts/contextual-retrieval]] — Anthropic's RAG improvement technique. Automatically prepends full-document context via Claude before chunk embedding/BM25 indexing. Combined Contextual Embeddings + Contextual BM25 reduces search failure rate by 49%, with reranking adding up to 67% reduction. $1.02 per 1M document tokens using Prompt Caching.
 - [[concepts/continual-harness]] — Online adaptation framework for self-improving agent harnesses. From GPP (first AI to complete Pokemon). Removes human from harness refinement loop. arXiv:2605.09998.

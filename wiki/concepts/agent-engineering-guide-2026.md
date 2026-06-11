@@ -60,7 +60,7 @@ The most important rename of the last two years: "prompt engineering" → "conte
 
 **Context rot** is a real production failure: by step eight of a ten-step task, the original goal can be buried under tool output. Teams that ship reliable agents actively summarize, compress, prune, version tool descriptions, cache static parts, and refuse to cache dynamic parts.
 
-See also: [[concepts/context-engineering|Context Engineering]], [[concepts/prompt-caching]], [[concepts/context-engineering/rot|Context Rot]]
+See also: [[concepts/context-engineering|Context Engineering]], [[concepts/prompt-caching]], [[concepts/context-engineering/context-rot|Context Rot]]
 
 ### Tool Design
 

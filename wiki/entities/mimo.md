@@ -34,7 +34,7 @@ MiMo-V2.5-Pro demonstrates how to scale long-context capabilities to 1M tokens w
 ## Related
 - [[concepts/kv-cache]] — MiMo's approach to KV cache management
 - [[concepts/attention-mechanism-variants]] — Hybrid SWA attention
-- [[concepts/context-engineering/window-management|Context Window Management]] — 1M context length
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — 1M context length
 
 ## References
 

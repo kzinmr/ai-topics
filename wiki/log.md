@@ -3330,7 +3330,7 @@ The article's framing offers transferable patterns for wiki management:
 | [[concepts/self-evolving-agents]] | 646→0 | −646 |
 | [[concepts/agent-architecture-decomposition]] | 644→0 | −644 |
 | [[concepts/ecs-fargate-scaling]] | 643→0 | −643 |
-| [[concepts/context-engineering/routing|Context Routing]] | 639→0 | −639 |
+| [[concepts/context-engineering/context-routing|Context Routing]] | 639→0 | −639 |
 | [[concepts/local-llm/inference-hardware]] | 632→0 | −632 |
 | [[entities/openai-deployment-company]] | 632→0 | −632 |
 | [[concepts/agentic-pbt]] | 630→0 | −630 |
@@ -3711,7 +3711,7 @@ The article's framing offers transferable patterns for wiki management:
 ### Files Translated
 - [[concepts/turing-completeness-emergence]] — JP→EN, 2824 JP chars removed
 - [[concepts/china-openclaw-agentic-boom]] — JP→EN, 2426 JP chars removed
-- [[concepts/context-engineering/lock-in|Context Lock-in]] — JP→EN, 2375 JP chars removed
+- [[concepts/context-engineering/context-lock-in|Context Lock-in]] — JP→EN, 2375 JP chars removed
 - [[concepts/deepseek-v3]] — JP→EN, 2339 JP chars removed
 - [[comparisons/llm-integration-patterns]] — JP→EN, 2271 JP chars removed
 - [[concepts/macro-evals-for-agentic-systems]] — JP→EN, 2257 JP chars removed
@@ -5415,7 +5415,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ### Summary
 - **X Article ingested**: "Rent the Intelligence. Own the Context." by Ashwin Gopinath (@ashwingop), May 17, 2026. Full body fetched via xurl `tweet.fields=article`. → [[raw/articles/2026-05-17_rent-intelligence-own-context.md]]
-- **NEW concept page**: [[concepts/context-engineering/lock-in|Context Lock-in]] — AI's third-phase competition (Model → Agent → Context). Context lock-in is more dangerous than model lock-in. Gopinath's three-phase model, Microsoft structural analogy, MCP ambivalence analysis, forward deployment dependency analysis. 'Intelligence is rented, context is owned.'
+- **NEW concept page**: [[concepts/context-engineering/context-lock-in|Context Lock-in]] — AI's third-phase competition (Model → Agent → Context). Context lock-in is more dangerous than model lock-in. Gopinath's three-phase model, Microsoft structural analogy, MCP ambivalence analysis, forward deployment dependency analysis. 'Intelligence is rented, context is owned.'
 - **Enriched**: [[concepts/contextmaxxing]] — Added Context Lock-In section as competitive consequence, updated sources/related/tags
 - **Enriched**: [[entities/ashwingop]] — Added blog post entry, Three-Phase Model of AI Competition section, updated sources/tags/X Activity Themes
 - **Enriched**: [[entities/sentra-app]] — Added context-lock-in as related concept + framing as neutral context layer, updated sources/tags
@@ -6620,7 +6620,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 
 ### Cross-references
 - [[entities/openclaw]] → [[concepts/agent-memory-systems-comparison]]
-- [[concepts/context-engineering/compaction|Context Compaction]] → [[concepts/agent-memory-systems-comparison]]
+- [[concepts/context-engineering/context-compaction|Context Compaction]] → [[concepts/agent-memory-systems-comparison]]
 - [[concepts/ai-memory-systems]] → linked concepts
 
 ### Follow-up: Hermes Agent added to comparison (same session)

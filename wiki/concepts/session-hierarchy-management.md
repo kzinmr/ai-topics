@@ -212,7 +212,7 @@ This makes the filesystem the **coordination layer** between Head Chef and Line 
 
 ## Related Concepts
 
-- [[concepts/context-engineering/window-management|Context Window Management]] — Level 1: single-session context hygiene
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Level 1: single-session context hygiene
 - [[concepts/back-of-house-patterns]] — Level 2: multi-agent architecture
 - [[concepts/single-agent-ceiling]] — The problem this framework solves
 - [[concepts/subagents]] — The primitive that bridges Level 1 and Level 2

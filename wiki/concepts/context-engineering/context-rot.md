@@ -88,10 +88,10 @@ Context rot provides a **strong argument for RAG** (despite the "RAG is dead" di
 
 - [[concepts/rag-not-dead-series]] — The series context in which context rot was popularized
 - [[concepts/context-engineering|Context Engineering]] — The practice of designing LLM context for optimal performance
-- [[concepts/context-engineering/efficiency|Context Efficiency]] — Techniques for reducing token waste while maintaining quality
-- [[concepts/context-engineering/compression|Context Compression]] — Methods to compress long contexts while preserving essential information
+- [[concepts/context-engineering/context-efficiency|Context Efficiency]] — Techniques for reducing token waste while maintaining quality
+- [[concepts/context-engineering/context-compression|Context Compression]] — Methods to compress long contexts while preserving essential information
 - [[concepts/harness-engineering]] — The orchestrator pattern as a harness design pattern
-- [[concepts/context-engineering/window-management|Context Window Management]] — Managing context window limits in production
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Managing context window limits in production
 
 ## Sources
 

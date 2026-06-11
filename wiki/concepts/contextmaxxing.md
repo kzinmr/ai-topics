@@ -17,8 +17,8 @@ sources:
 related:
   - "[[concepts/tokenmaxxing]]"
   - "[[concepts/context-engineering|Context Engineering]]"
-  - "[[concepts/context-engineering/compression|Context Compression]]"
-  - "[[concepts/context-engineering/lock-in|Context Lock-in]]"
+  - "[[concepts/context-engineering/context-compression|Context Compression]]"
+  - "[[concepts/context-engineering/context-lock-in|Context Lock-in]]"
 ---
 
 # Contextmaxxing — Better Memory Over Burning More Tokens
@@ -110,14 +110,14 @@ The concept is being operationalized by [[entities/sentra-app]], the $5M seed-fu
 
 - [[concepts/tokenmaxxing]] — The complementary "how much to burn" question
 - [[concepts/context-engineering|Context Engineering]] — Techniques for context window optimization (harness-level)
-- [[concepts/context-engineering/compression|Context Compression]] — Reducing context window waste
-- [[concepts/context-engineering/lock-in|Context Lock-in]] — The strategic risk when context layer ownership is ceded to model vendors. **Contextmaxxing is the architectural answer; context lock-in is what happens when you don't.** See Gopinath's "Rent the Intelligence. Own the Context." (May 2026)
+- [[concepts/context-engineering/context-compression|Context Compression]] — Reducing context window waste
+- [[concepts/context-engineering/context-lock-in|Context Lock-in]] — The strategic risk when context layer ownership is ceded to model vendors. **Contextmaxxing is the architectural answer; context lock-in is what happens when you don't.** See Gopinath's "Rent the Intelligence. Own the Context." (May 2026)
 - [[concepts/agent-loop-orchestration]] — Execution patterns affecting context usage
 - [[concepts/neural-garbage-collection]] — RL-optimized cache eviction for context management
 
 ## Context Lock-In: The Competitive Consequence
 
-Contextmaxxing and [[concepts/context-engineering/lock-in|Context Lock-in]] are two sides of the same coin. **Contextmaxxing is the architectural imperative** (build shared, persistent state). **Context lock-in is the competitive risk** when that imperative is ceded to a single vendor who also controls the model and agent layers.
+Contextmaxxing and [[concepts/context-engineering/context-lock-in|Context Lock-in]] are two sides of the same coin. **Contextmaxxing is the architectural imperative** (build shared, persistent state). **Context lock-in is the competitive risk** when that imperative is ceded to a single vendor who also controls the model and agent layers.
 
 Gopinath (May 2026) frames this through a three-phase model of AI competition:
 
@@ -129,7 +129,7 @@ Gopinath (May 2026) frames this through a three-phase model of AI competition:
 
 The practical implication: an enterprise that contextmaxxes (owns its own context graph as neutral infrastructure) can freely rent intelligence from any model provider. An enterprise that outsources context to the same vendor providing models and agents has locked itself into something far harder to reverse than an API migration.
 
-See [[concepts/context-engineering/lock-in|Context Lock-in]] for the full competitive dynamics, Microsoft structural analogy, MCP dual-nature analysis, and the forward-deployment dependency analysis.
+See [[concepts/context-engineering/context-lock-in|Context Lock-in]] for the full competitive dynamics, Microsoft structural analogy, MCP dual-nature analysis, and the forward-deployment dependency analysis.
 
 ## Sources
 

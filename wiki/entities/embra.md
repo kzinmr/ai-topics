@@ -39,7 +39,7 @@ Embra was **acquired by Notion** in January 2026. Ivan Zhao (Notion CEO) announc
 
 ## Related Concepts
 
-- [[concepts/context-engineering/graph|Context Graph]] — Graph-based context representation
+- [[concepts/context-engineering/context-graph|Context Graph]] — Graph-based context representation
 - [[concepts/ai-agent-memory-middleware]] — Persistent memory for AI systems
 - [[concepts/headless-saas]] — Related to the broader trend of AI-native SaaS
 

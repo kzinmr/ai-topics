@@ -682,7 +682,7 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 - **[[concepts/programmatic-tool-calling]]** — Complementary paradigm: LLM writes code that calls tools (function axis). PTC merges N tool calls into 1 code block; RLM splits 1 huge context into N pieces. Mirror symmetry.
 - **[[concepts/code-execution-with-mcp]]** — Middle architectural layer between PTC and CodeMode: MCP as code API with progressive disclosure
 - **[[concepts/code-mode]]** — Specific implementations (Cloudflare V8, Pydantic Monty) of the code-execution-over-tool-calling pattern
-- **[[concepts/context-engineering/folding|Context Folding]]** — Parallel approach: branch/return with summarization
+- **[[concepts/context-engineering/context-folding|Context Folding]]** — Parallel approach: branch/return with summarization
 - **[[concepts/anthropic/multi-agent-research]]** — Structural similarity: breaking context constraints through horizontal task space decomposition (MapReduce pattern). While RLM uses depth-based input splitting, multi-agent uses parallel task splitting. Both share the same divide-and-conquer approach.
 - **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
 - **[[concepts/agent-vs-pipeline-architecture]]** — RLM dissolves the pipeline/agent binary: recursive context management lets small models match frontier performance, challenging the assumption that agents require large context windows

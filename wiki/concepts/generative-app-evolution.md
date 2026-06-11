@@ -62,7 +62,7 @@ The backend must evolve in lockstep to support generative apps:
 ## Relationship to Other Patterns
 
 - **[[concepts/generative-ui]]**: The starting point of the evolution staircase
-- **[[concepts/context-engineering/efficiency|Context Efficiency]]**: Stateful generative apps require efficient context management
+- **[[concepts/context-engineering/context-efficiency|Context Efficiency]]**: Stateful generative apps require efficient context management
 - **[[concepts/agent-iam]]**: Stateful apps need identity management for persistent sessions
 - **[[concepts/harness-engineering]]**: The infrastructure that enables generative app deployment
 
@@ -75,5 +75,5 @@ The backend must evolve in lockstep to support generative apps:
 ## See Also
 
 - [[concepts/generative-ui]]
-- [[concepts/context-engineering/efficiency|Context Efficiency]]
+- [[concepts/context-engineering/context-efficiency|Context Efficiency]]
 - [[concepts/harness-engineering]]

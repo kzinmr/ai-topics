@@ -28,7 +28,7 @@ Previous approaches optimize proxies (attention scores, token entropy, positiona
 Reasoning and context management are not independent problems. A token's value for cache eviction depends on what reasoning task is being performed. Joint training captures this interdependence.
 
 ### 3. Context Window Efficiency
-Directly applicable to [[concepts/context-engineering|Context Engineering]], [[concepts/harness-engineering/system-architecture/context-compaction]], and [[concepts/context-engineering/window-management|Context Window Management]]. Reduces token waste without quality degradation.
+Directly applicable to [[concepts/context-engineering|Context Engineering]], [[concepts/harness-engineering/system-architecture/context-compaction]], and [[concepts/context-engineering/context-window-management|Context Window Management]]. Reduces token waste without quality degradation.
 
 ## Relation to Tokenmaxxing
 

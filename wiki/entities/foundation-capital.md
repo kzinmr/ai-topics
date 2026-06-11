@@ -47,7 +47,7 @@ Key observations:
 
 - [[entities/jaya-gupta]] — Partner
 - [[entities/anthropic]] — Analyzed in "Managed Agents" post
-- [[concepts/context-engineering/graph|Context Graph]] — Core thesis concept
+- [[concepts/context-engineering/context-graph|Context Graph]] — Core thesis concept
 - [[concepts/anthropic/managed-agents]] — Enterprise AI agent architecture
 
 ## See Also

@@ -277,7 +277,7 @@ On May 27, 2026, Simon published "[I think Anthropic and OpenAI have found produ
 - [[concepts/red-green-tdd]]
 - [[concepts/showboat]]
 - [[concepts/vibe-coding]]
-- [[concepts/context-engineering/window-management|Context Window Management]]
+- [[concepts/context-engineering/context-window-management|Context Window Management]]
 - [[concepts/agent-documentation]]
 - [[concepts/context-engineering|Context Engineering]]
 - [[entities/xeiaso-net]]

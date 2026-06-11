@@ -148,7 +148,7 @@ Sources: [NVIDIA Developer Blog](https://developer.nvidia.com/blog/add-a-special
 - [[concepts/deep-research-agent-from-scratch]] — Building research agents from scratch (Hugo Bowne-Anderson + Ivan Leo workshop)
 - [[concepts/browsecomp]] — The BrowseComp benchmark series
 - [[concepts/mutually-assured-distraction]] — Better retrieval → more convincing distractors → more confidently wrong answers
-- [[concepts/context-engineering/window-management|Context Window Management]] — Why long context doesn't eliminate retrieval needs
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Why long context doesn't eliminate retrieval needs
 
 ## Key Sources
 

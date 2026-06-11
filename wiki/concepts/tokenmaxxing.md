@@ -101,7 +101,7 @@ Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of  through 
 - [[concepts/contextmaxxing]] — Counterpart concept: optimizing context/memory quality over token quantity. Argues fragmented per-tool memory is the real bottleneck, not token cost
 - [[concepts/token-economics]] — Cost framework underlying tokenmaxxing decisions
 - [[concepts/context-engineering|Context Engineering]] — Token-efficient context management techniques
-- [[concepts/context-engineering/compression|Context Compression]] — Reducing context window waste
+- [[concepts/context-engineering/context-compression|Context Compression]] — Reducing context window waste
 - [[concepts/agentic-engineering]] — Developer workflows for agent-assisted development
 - [[concepts/agent-loop-orchestration]] — Execution patterns that affect token usage
 - [[concepts/cognitive-debt]] — Accumulated technical debt from poor-quality agent output

@@ -22,7 +22,7 @@ related:
   - "[[concepts/tokenmaxxing]]"
   - "[[concepts/enterprise-ai-operating-model]]"
   - "[[concepts/enterprise-ai-deployment-jv]]"
-  - "[[concepts/context-engineering/graph|Context Graph]]"
+  - "[[concepts/context-engineering/context-graph|Context Graph]]"
   - "[[entities/ashwingop]]"
   - "[[entities/sentra-app]]"
 ---
@@ -152,7 +152,7 @@ Gopinath's Sentra.app (a16z Speedrun + Together Fund, $5M Seed) is the reference
 - [[concepts/contextmaxxing]] — Architectural foundation: better memory > token consumption. Context Lock-In is what happens when this fails
 - [[concepts/tokenmaxxing]] — Contrast: token consumption optimization is the first control surface, but doesn't reach the second (context)
 - [[concepts/enterprise-ai-deployment-jv]] — Details on OpenAI Deployment Company and Anthropic AI Services
-- [[concepts/context-engineering/graph|Context Graph]] — Technical foundation for preventing context lock-in
+- [[concepts/context-engineering/context-graph|Context Graph]] — Technical foundation for preventing context lock-in
 - [[concepts/enterprise-ai-operating-model]] — Positioning within the broader enterprise AI operating model
 
 ## Sources

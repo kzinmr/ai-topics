@@ -42,7 +42,7 @@ The 2023 version of RAG (chunk → vector DB → cosine similarity → LLM) fail
 | 3 | [[concepts/reasoning-retrieval\|Optimizing Retrieval with Reasoning Models]] | Orion Weller | Promptriever (instruction-aware bi-encoder) + Rank1 (reasoning-based reranker with CoT) |
 | 4 | [[concepts/late-interaction-retrieval|Late Interaction Models For RAG]] | Antoine Chaffin | ColBERT-style MaxSim preserving token-level detail; 150M model outperforming 7B dense models on reasoning |
 | 5 | [[concepts/multiple-representations-rag|RAG with Multiple Representations]] | Bryan Bischof & Ayush Chaurasia | "The Map is Not the Territory" — create multiple specialized maps instead of one perfect embedding |
-| 6 | [[concepts/context-engineering/rot|Context Rot]] | Kelly Hong | LLM performance degrades with longer inputs; context engineering is critical |
+| 6 | [[concepts/context-engineering/context-rot|Context Rot]] | Kelly Hong | LLM performance degrades with longer inputs; context engineering is critical |
 | 7 | [[concepts/graph-db-overengineering-rag\|You Don't Need a Graph DB (Probably)]] | Jo Kristian Bergum | GraphRAG is a technique, not a technology; HNSW as hidden graph |
 
 ## Key Insights Across the Series
@@ -148,7 +148,7 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 - [[concepts/harness-engineering]] — Measure-first philosophy across the series
 - [[concepts/ai-evals]] — Evaluation methodology for AI systems
 - [[concepts/agentic-rag]] — Broader taxonomy of agentic retrieval
-- [[concepts/context-engineering/rot|Context Rot]] — Context engineering and context degradation in long-context scenarios
+- [[concepts/context-engineering/context-rot|Context Rot]] — Context engineering and context degradation in long-context scenarios
 
 ## Sources
 

@@ -44,5 +44,5 @@ Agents become unreliable when context windows exceed **model-specific thresholds
 ## See Also
 
 - [[concepts/cognition-devin-philosophy]] — Main Cognition philosophy
-- [[concepts/context-engineering/window-management|Context Window Management]] — General context management patterns
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — General context management patterns
 - [[concepts/harness-engineering/agentic-workflows/context-window-management]] — Simon Willison's context patterns

@@ -214,7 +214,7 @@ resp, inputs = harness(
 
 - [[concepts/agentic-search]] — Agentic search paradigm; this lecture provides the empirical foundation for "agents make dumb retrievers smart"
 - [[concepts/durable-execution]] — State persistence patterns; the local index is a form of durable state
-- [[concepts/context-engineering/fragments|Context Fragments]] — Memory state fragmentation; Strategy 3 (compaction) directly addresses this
+- [[concepts/context-engineering/context-fragments|Context Fragments]] — Memory state fragmentation; Strategy 3 (compaction) directly addresses this
 - [[concepts/effective-harnesses-for-long-running-agents]] — Anthropic's harness design; complementary perspective from a search engineer
 - [[concepts/managed-agents]] — Brain/hands separation; Strategy 5's two-loop design mirrors this pattern
 - [[concepts/delta-channels]] — LangGraph's delta checkpointing; solves the same O(n) context problem differently

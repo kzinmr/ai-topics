@@ -140,9 +140,9 @@ Cognition's hack: Enable 1M token context, but cap actual usage at 200K. This ma
 ## Related Concepts
 
 - [[concepts/context-engineering|Context Engineering]] — Context engineering
-- [[concepts/context-engineering/window-management|Context Window Management]] — Strategic management of context windows
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Strategic management of context windows
 - [[concepts/harness-engineering/system-architecture/context-compaction]] — Context compaction mechanisms
-- [[concepts/context-engineering/anxiety|Context Anxiety]] — Context anxiety phenomenon
+- [[concepts/context-engineering/context-anxiety|Context Anxiety]] — Context anxiety phenomenon
 - [[concepts/harness-engineering]] — Agent control and structuring
 - [[concepts/harness-engineering/agentic-engineering]] — Agent-enabled development
 

@@ -228,7 +228,7 @@ Constraints shared by coding agent harnesses (ChatGPT Dreaming has different tra
 - [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] — OpenClaw memory details
 - [[raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering]] — Bustamante primary source
 - [[concepts/ai-memory-systems]] — ChatGPT vs Claude vs Cognition memory comparison
-- [[concepts/context-engineering/compaction|Context Compaction]] — Context compaction concept
+- [[concepts/context-engineering/context-compaction|Context Compaction]] — Context compaction concept
 - [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — AI memory systems overview
 - [[concepts/agent-harness-comparison]] — 9-harness comprehensive comparison
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes vs OpenClaw architecture comparison

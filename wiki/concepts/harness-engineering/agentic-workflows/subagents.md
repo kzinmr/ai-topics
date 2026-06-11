@@ -142,7 +142,7 @@ Sub-agent return values (summaries) are missing important details. For decisions
 ## Related Concepts
 
 - [[concepts/agentic-engineering]] — Higher-level concept
-- [[concepts/context-engineering/window-management|Context Window Management]] — Sub-agents circumvent context window problems
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — Sub-agents circumvent context window problems
 - [[concepts/harness-engineering/agentic-workflows/cognitive-debt]] — Sub-agent self-containment reduces cognitive debt
 - [[concepts/multi-agent-autonomy-scale]] — Sub-agents represent a middle level of autonomy
 

@@ -77,7 +77,7 @@ Practical workflows and patterns for "using AI agents to develop software." Posi
 
 | Page | Summary |
 |-------|------|
-| [[concepts/context-engineering/window-management|Context Window Management]] | Context 60% rule, compression strategies |
+| [[concepts/context-engineering/context-window-management|Context Window Management]] | Context 60% rule, compression strategies |
 | [[concepts/throw-away-draft-pattern]] | Draft → compare → iterate development cycle |
 | [[concepts/subagents]] | Sub-agent lossiness, usage guidelines |
 

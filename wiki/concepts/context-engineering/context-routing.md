@@ -57,6 +57,6 @@ As a cross-cutting technique of [[concepts/context-engineering|Context Engineeri
 ## Related Concepts
 
 - [[concepts/context-engineering|Context Engineering]] — Integrated framework for context optimization
-- [[concepts/context-engineering/compression|Context Compression]] — Context compression techniques
+- [[concepts/context-engineering/context-compression|Context Compression]] — Context compression techniques
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced tool use
 - [[concepts/agentic-rag]] — Agent-controlled search loops

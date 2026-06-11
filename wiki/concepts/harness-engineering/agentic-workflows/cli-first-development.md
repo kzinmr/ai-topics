@@ -121,7 +121,7 @@ In the CLI-first approach, UI is left for last for these reasons:
 ## Related Concepts
 
 - [[concepts/agent-first-design]] — Code design for agents
-- [[concepts/context-engineering/window-management|Context Window Management]] — CLI consumes less context
+- [[concepts/context-engineering/context-window-management|Context Window Management]] — CLI consumes less context
 - [[concepts/agentic-engineering]] — Higher-level concept
 
 ## References

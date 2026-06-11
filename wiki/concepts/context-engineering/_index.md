@@ -310,21 +310,21 @@ Building an agent? Consider each dimension:
 
 | Page | Topic |
 |---|---|
-| [[concepts/context-engineering/anxiety|Context Anxiety]] | Agent anxiety from context uncertainty |
-| [[concepts/context-engineering/compaction|Context Compaction]] | Strategies for compacting context |
-| [[concepts/context-engineering/compression|Context Compression]] | Token-level compression techniques |
-| [[concepts/context-engineering/efficiency|Context Efficiency]] | Maximizing information per token |
-| [[concepts/context-engineering/folding|Context Folding]] | Folding long contexts into summaries |
-| [[concepts/context-engineering/fragments|Context Fragments]] | Modular context composition |
-| [[concepts/context-engineering/graph|Context Graph]] | Graph-based context representation |
-| [[concepts/context-engineering/lock-in|Context Lock-in]] | Vendor/model context lock-in risks |
-| [[concepts/context-engineering/management|Context Management]] | General context lifecycle management |
-| [[concepts/context-engineering/management-cognition-claude-models|Context Management Cognition]] | Claude model-specific context cognition |
-| [[concepts/context-engineering/providers|Context Providers]] | Context data source providers |
-| [[concepts/context-engineering/repositories|Context Repositories]] | Persistent context storage patterns |
-| [[concepts/context-engineering/rot|Context Rot]] | Attention degradation over long contexts |
-| [[concepts/context-engineering/routing|Context Routing]] | Dynamic context routing strategies |
-| [[concepts/context-engineering/window-management|Context Window Management]] | Window size and memory management |
+| [[concepts/context-engineering/context-anxiety|Context Anxiety]] | Agent anxiety from context uncertainty |
+| [[concepts/context-engineering/context-compaction|Context Compaction]] | Strategies for compacting context |
+| [[concepts/context-engineering/context-compression|Context Compression]] | Token-level compression techniques |
+| [[concepts/context-engineering/context-efficiency|Context Efficiency]] | Maximizing information per token |
+| [[concepts/context-engineering/context-folding|Context Folding]] | Folding long contexts into summaries |
+| [[concepts/context-engineering/context-fragments|Context Fragments]] | Modular context composition |
+| [[concepts/context-engineering/context-graph|Context Graph]] | Graph-based context representation |
+| [[concepts/context-engineering/context-lock-in|Context Lock-in]] | Vendor/model context lock-in risks |
+| [[concepts/context-engineering/context-management|Context Management]] | General context lifecycle management |
+| [[concepts/context-engineering/context-management-cognition-claude-models|Context Management Cognition]] | Claude model-specific context cognition |
+| [[concepts/context-engineering/context-providers|Context Providers]] | Context data source providers |
+| [[concepts/context-engineering/context-repositories|Context Repositories]] | Persistent context storage patterns |
+| [[concepts/context-engineering/context-rot|Context Rot]] | Attention degradation over long contexts |
+| [[concepts/context-engineering/context-routing|Context Routing]] | Dynamic context routing strategies |
+| [[concepts/context-engineering/context-window-management|Context Window Management]] | Window size and memory management |
 
 ---
 
