@@ -420,7 +420,7 @@ When `patent_search` enforces deduplication (raises error on duplicate queries),
 
 ### Validation for REPL Outputs
 
-REPL state can become corrupted: the agent might delete entries from `historical_results` or hallucinate expert names. Turnbull's harness adds `validators=[eval_results, check_results, ...]` — a post-hoc check that can force the agent to restore state or discard the run entirely. This connects directly to the [[concepts/agent-steering|agent steering]] pattern of carrot-and-stick validation.
+REPL state can become corrupted: the agent might delete entries from `historical_results` or hallucinate expert names. Turnbull's harness adds `validators=[eval_results, check_results, ...]` — a post-hoc check that can force the agent to restore state or discard the run entirely. This connects directly to the [[concepts/harness-engineering/agent-steering|agent steering]] pattern of carrot-and-stick validation.
 
 ### `harness()` as the Orchestration Primitive
 
@@ -685,7 +685,7 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 - **[[concepts/context-engineering/context-folding|Context Folding]]** — Parallel approach: branch/return with summarization
 - **[[concepts/anthropic/multi-agent-research]]** — Structural similarity: breaking context constraints through horizontal task space decomposition (MapReduce pattern). While RLM uses depth-based input splitting, multi-agent uses parallel task splitting. Both share the same divide-and-conquer approach.
 - **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
-- **[[concepts/agent-vs-pipeline-architecture]]** — RLM dissolves the pipeline/agent binary: recursive context management lets small models match frontier performance, challenging the assumption that agents require large context windows
+- **[[concepts/harness-engineering/agent-vs-pipeline-architecture]]** — RLM dissolves the pipeline/agent binary: recursive context management lets small models match frontier performance, challenging the assumption that agents require large context windows
 - **[[concepts/typed-rlm]]** — Typed functional runtime variant (Huawei); formal proofs for termination, cost bounds, optimal partition
 - **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[entities/alex-zhang]]** — Primary author, RLM creator

@@ -212,7 +212,7 @@ Turnbull draws a parallel to how LLMs help solve Erdos problems (impossibly hard
 
 - [[concepts/autoresearch-bm25-msmarco]] — Earlier case study (same author, same pattern)
 - [[concepts/rlm-recursive-language-models]] — REPL-based recursive agents
-- [[concepts/agent-steering]] — Steering patterns for search agents
+- [[concepts/harness-engineering/agent-steering]] — Steering patterns for search agents
 - [[concepts/agentic-search]] — The broader agentic search paradigm
 - [[concepts/eval-loops]] — General eval loop framework
 - [[entities/doug-turnbull]] — Author

@@ -21,7 +21,7 @@ sources:
   - raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md
 related:
   - "[[concepts/subagents]]"
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/vtrivedy10]]"
   - "[[concepts/agentic-engineering]]"
@@ -117,7 +117,7 @@ Non-AI software tools wrapped as agent-accessible Skills:
 ## Related Concepts
 
 - [[concepts/subagents]] — The broader subagent delegation pattern
-- [[concepts/agent-harness]] — The harness as infrastructure for agency
+- [[concepts/harness-engineering/agent-harness]] — The harness as infrastructure for agency
 - [[concepts/harness-engineering]] — The discipline of designing agent infrastructure
 - [[entities/vtrivedy10]] — Primary articulator of this pattern
 - [[concepts/agentic-engineering]] — General engineering with AI agents

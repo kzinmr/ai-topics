@@ -147,7 +147,7 @@ Source: [raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex
 
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves (concrete implementation of Level 5)
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns
-- [[concepts/agent-team-swarm]] — Agent Team / Swarm
+- [[concepts/agent-team-swarm/agent-team-swarm]] — Agent Team / Swarm
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel
 - [[entities/ivan-leo]] — Ivan Leo (co-creator of self-extending agent workshop)

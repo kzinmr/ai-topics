@@ -31,7 +31,7 @@ Telegram operates as both a messaging service and a developer platform. Founded 
 
 ### Bot-to-Bot Communication
 - Interoperability between bots
-- Enables [[concepts/agent-swarms]] and multi-agent workflows on Telegram
+- Enables [[concepts/agent-team-swarm/agent-swarms]] and multi-agent workflows on Telegram
 - Agent-to-agent coordination patterns
 
 ### Bots for Business
@@ -66,7 +66,7 @@ Telegram's bot platform has become a significant deployment surface for AI syste
 - [[concepts/managed-agents]] — Anthropic managed agent platform
 - [[entities/claude-code]] — Agentic coding platforms
 - [[concepts/memory-architecture]] — Multi-agent systems
-- [[concepts/agent-swarms]] — Bot-to-bot coordination patterns
+- [[concepts/agent-team-swarm/agent-swarms]] — Bot-to-bot coordination patterns
 
 ## References
 

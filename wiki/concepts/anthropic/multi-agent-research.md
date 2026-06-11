@@ -207,7 +207,7 @@ Unsuitable areas:
 
 ## Related Pages
 
-- [[concepts/agent-patterns]] — General agent patterns (Inline Tool, Fan-Out, Agent Pool, Teams)
+- [[concepts/harness-engineering/agent-patterns]] — General agent patterns (Inline Tool, Fan-Out, Agent Pool, Teams)
 - [[concepts/agentic-search]] — Comprehensive guide to agentic search
 - [[concepts/rlm-recursive-language-models]] — RLM: Overcoming context length constraints through recursive decomposition (structurally similar pattern)
 - [[comparisons/agent-orchestration-frameworks]] — Comparison of orchestration frameworks (LangGraph, CrewAI, etc.)

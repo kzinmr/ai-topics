@@ -113,7 +113,7 @@ This pattern influenced:
 - [[concepts/folder-is-the-agent]] — Implementation pattern
 - [[entities/every-inc]] — Origin company
 - [[entities/dan-shipper]] — Every's CEO, philosophy champion
-- [[concepts/agent-native-architecture]] — Design principles this embodies
+- [[concepts/harness-engineering/agent-native-architecture]] — Design principles this embodies
 - [[openclaw]] — Compatible agent platform
 - [[concepts/human-sandwich]] — Human-AI collaboration pattern
 - [[entities/matt-van-horn]] — #3 contributor, documented /ce-plan internals

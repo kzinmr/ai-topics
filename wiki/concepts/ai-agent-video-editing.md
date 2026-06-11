@@ -56,7 +56,7 @@ The Arcturus Labs demonstration involved three iterations:
 - [[agentic-coding]] — The parent paradigm of AI agents writing code
 - [[agent-skills]] — Skills as a packaging format for reusable agent workflows
 - [[ai-agent-engineering]] — Engineering principles for building agent-based systems
-- [[concepts/agent-harness]] — The harness layer that enables agent tool use and execution
+- [[concepts/harness-engineering/agent-harness]] — The harness layer that enables agent tool use and execution
 
 ## Related Entities
 

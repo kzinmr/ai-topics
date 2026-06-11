@@ -161,5 +161,5 @@ This is the "services layer" that makes enterprise agents work in practice — a
 - [[entities/palantir]] — The most mature enterprise agent deployment platform
 - [[concepts/decision-centric-architecture]] — The architecture that enables enterprise agents
 - [[concepts/agent-ontology]] — How ontology serves as the memory system for enterprise agents
-- [[concepts/agent-patterns]] — Human-in-the-loop patterns applicable to enterprise contexts
+- [[concepts/harness-engineering/agent-patterns]] — Human-in-the-loop patterns applicable to enterprise contexts
 - [[concepts/ai-services-joint-ventures]] — The industry pivot to the FDE model

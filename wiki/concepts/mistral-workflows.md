@@ -139,8 +139,8 @@ The SDK handles retry policies, tracing, timeouts, and rate limiting with decora
 
 ## Differences from Competing and Related Technologies
 
-- **[[concepts/agent-orchestration-frameworks]]** (LangGraph, CrewAI, etc.) — These focus on inter-agent coordination. Mistral Workflows provides durable execution, Human-in-the-loop, and enterprise auditability as a foundation, with agents running on top.
-- **[[concepts/agentic-workflow-patterns]]** — Anthropic's 5 patterns (Prompt Chaining, Routing, Parallelization, Orchestrator-Workers, Evaluator-Optimizer) are design patterns. Mistral Workflows is the **execution foundation** implementing them.
+- **[[concepts/agent-team-swarm/agent-orchestration-frameworks]]** (LangGraph, CrewAI, etc.) — These focus on inter-agent coordination. Mistral Workflows provides durable execution, Human-in-the-loop, and enterprise auditability as a foundation, with agents running on top.
+- **[[concepts/agent-team-swarm/agentic-workflow-patterns]]** — Anthropic's 5 patterns (Prompt Chaining, Routing, Parallelization, Orchestrator-Workers, Evaluator-Optimizer) are design patterns. Mistral Workflows is the **execution foundation** implementing them.
 - **Temporal standalone** — Mistral Workflows is a managed layer on top of Temporal with AI-specific extensions (streaming, payload handling, multi-tenancy, OpenTelemetry, Le Chat integration).
 - **AWS Step Functions / Azure Durable Functions** — General-purpose workflow engines. Mistral Workflows differentiates with native AI primitive integration (agent loops, LLM streaming, model calls).
 

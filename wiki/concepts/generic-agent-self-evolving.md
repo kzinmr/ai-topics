@@ -74,7 +74,7 @@ Initial agent → Execute task → Extract SOP → Add to skill tree
 GenericAgent represents a **concrete 2026 implementation** of the self-evolving agent concept. Unlike Voyager (which evolved in Minecraft specifically), GenericAgent is designed for real-world system work. Its approach complements:
 
 - [[concepts/self-evolving-agents]] — The abstract framework that GA implements concretely
-- [[concepts/agent-swarms]] — Multiple GA instances could form evolving swarms
+- [[concepts/agent-team-swarm/agent-swarms]] — Multiple GA instances could form evolving swarms
 - [[concepts/memory-systems-design-patterns]] — GA's hierarchical on-demand memory pattern
 - [[concepts/harness-engineering]] — The harness that would run GA in production
 
@@ -85,6 +85,6 @@ GenericAgent demonstrates that self-evolution is not just a theoretical concept 
 ## Related Concepts
 
 - [[concepts/self-evolving-agents]] — Abstract levels of self-evolution
-- [[concepts/agent-swarms]] — Emergent swarm behavior
+- [[concepts/agent-team-swarm/agent-swarms]] — Emergent swarm behavior
 - [[concepts/memory-systems-design-patterns]] — Memory hierarchy patterns
 - [[concepts/agent-team-swarm/_index]] — Multi-agent coordination

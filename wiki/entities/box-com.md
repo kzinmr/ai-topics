@@ -84,7 +84,7 @@ Box's differentiation for the AI era is its **enterprise-grade permission model*
 
 ## Related Concepts
 
-- **[[concepts/agent-governance]]** — Box's identity and permission frameworks
+- **[[concepts/security-and-governance/agent-governance]]** — Box's identity and permission frameworks
 - **[[concepts/context-engineering|Context Engineering]]** — The 60K-token problem and context pruning
 - **[[concepts/managed-agents]]** — Agent workspace and sandbox architecture
 

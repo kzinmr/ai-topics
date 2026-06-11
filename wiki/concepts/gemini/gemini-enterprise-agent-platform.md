@@ -84,7 +84,7 @@ Gemini Managed Agents competes directly with:
 - [[entities/anthropic|Anthropic Claude Agents SDK]] — Managed execution with Brain/Hands/Session architecture
 - [[entities/openai|OpenAI Codex]] — Container-based sandbox with approval gates
 - [[entities/coreweave|CoreWeave Sandboxes]] — RL/agent tool use/model eval sandboxes (public preview, May 2026)
-- [[concepts/agent-harness|Cloudsail]] — Per-task Cloudflare sandboxes with shell + Codex + GitHub access
+- [[concepts/harness-engineering/agent-harness|Cloudsail]] — Per-task Cloudflare sandboxes with shell + Codex + GitHub access
 
 > Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
 
@@ -93,6 +93,6 @@ Gemini Managed Agents competes directly with:
 - [[entities/google]] — parent company and broader AI strategy
 - [[concepts/gemini/index]] — underlying model family
 - [[concepts/ai-agent-engineering]] — platform architecture patterns
-- [[concepts/agent-harness]] — agent execution infrastructure
-- [[concepts/agent-governance]] — governance patterns
+- [[concepts/harness-engineering/agent-harness]] — agent execution infrastructure
+- [[concepts/security-and-governance/agent-governance]] — governance patterns
 - [[concepts/programmatic-tool-calling]] — execution environments

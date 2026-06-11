@@ -65,7 +65,7 @@ The pattern produces tools across several categories, each addressing a differen
 ### Connection to [[concepts/agentic-engineering|Agentic Engineering]]
 This pattern is a **meta-layer** of agentic engineering. While agentic engineering focuses on using agents to build software, meta-development focuses on building the tools that make agents better at building software. It's the "infrastructure for infrastructure" layer.
 
-### Connection to [[concepts/agentic-loop|Agentic Loop]]
+### Connection to [[concepts/harness-engineering/agentic-loop|Agentic Loop]]
 Each tool in the ecosystem tightens a specific feedback loop:
 - ClawSweeper tightens the **issue → resolution** loop
 - Auto Review tightens the **code → quality** loop
@@ -96,7 +96,7 @@ This pattern suggests a new career specialization: **agent infrastructure engine
 
 - [[entities/peter-steinberger]] — Originator of the pattern
 - [[concepts/agentic-engineering]] — Parent discipline
-- [[concepts/agentic-loop]] — The loop pattern these tools serve
+- [[concepts/harness-engineering/agentic-loop]] — The loop pattern these tools serve
 - [[concepts/harness-engineering]] — Broader harness design
 - [[concepts/context-engineering|Context Engineering]] — Context management for agents
 - [[raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing]] — Source session

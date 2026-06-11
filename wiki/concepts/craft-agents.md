@@ -14,7 +14,7 @@ tags:
 sources:
   - "[[raw/articles/2026-05-xx_craft_agents-interface]]"
 related:
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/mcp]]"
   - "[[concepts/claude-code]]"
   - "[[concepts/codex]]"

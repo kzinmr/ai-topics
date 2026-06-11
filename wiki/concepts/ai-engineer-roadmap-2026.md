@@ -75,7 +75,7 @@ The "final boss": an agent that runs business workflows end-to-end — monitorin
 The roadmap is explicitly a rejection of "wrapper culture" — thin API layers that add negligible value. Every project forces the engineer to contend with real constraints: hardware limitations (Project 1), failure recovery (Project 2), multimodal perception (Project 3), privacy boundaries (Project 4), and production reliability (Project 5).
 
 ### Memory and Context Are the Differentiators
-Across all five projects, memory architecture emerges as the recurring hard problem: sliding windows, semantic chunking (Project 1), three-tier memory hierarchy (Project 2), personal knowledge graphs (Project 4), and durable workflow state (Project 5). Rohit's implicit argument aligns with the broader [[concepts/agent-memory-engineering]] consensus: **memory is what separates a useful agent from a stateless chatbot**.
+Across all five projects, memory architecture emerges as the recurring hard problem: sliding windows, semantic chunking (Project 1), three-tier memory hierarchy (Project 2), personal knowledge graphs (Project 4), and durable workflow state (Project 5). Rohit's implicit argument aligns with the broader [[concepts/harness-engineering/agent-memory-engineering]] consensus: **memory is what separates a useful agent from a stateless chatbot**.
 
 ### Ship, Don't Study
 > "The market rewards shipping, not studying."

@@ -46,5 +46,5 @@ Headless 360 is part of the broader Salesforce Agentforce platform evolution:
 ## Connections
 - Implements [[concepts/headless-saas|Headless SaaS]] at enterprise scale
 - Uses [[concepts/model-context-protocol-mcp|MCP]] as the universal agent-tool interface
-- Part of [[concepts/agent-governance|Agent Governance]] via trusted gateway model
+- Part of [[concepts/security-and-governance/agent-governance|Agent Governance]] via trusted gateway model
 - Builds on [[entities/salesforce|Salesforce]]'s broader AI platform strategy

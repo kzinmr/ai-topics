@@ -168,6 +168,6 @@ Always use Opus/GPT-5 for:
 - [[concepts/prompt-caching]] — Technical deep-dive on how prompt caching works
 - [[concepts/context-engineering|Context Engineering]] — Token-efficient context management techniques
 - [[concepts/skill-graph]] — Ronin's Skill Graph architecture for content engines
-- [[concepts/agent-engineering-guide-2026]] — Broader agent engineering practices including cost management
+- [[concepts/harness-engineering/agent-engineering-guide-2026]] — Broader agent engineering practices including cost management
 - [[concepts/codex-prompting]] — Coding agent prompt strategies
 - [[entities/ronin-deronin]] — Ronin's profile and other works

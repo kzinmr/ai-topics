@@ -272,7 +272,7 @@ This establishes an autonomous improvement loop of "iterate until it works." Com
 - [Build Your Own AI Assistant (GitHub)](https://github.com/hugobowne/build-your-own-ai-assistant) — Companion code repo
 - [Workshop Livestream (YouTube, 96min)](https://www.youtube.com/watch?v=dDQ4rKXeHRw) — Full live build session
 - [[concepts/self-evolving-agents]] — Related concept
-- [[concepts/agent-harness]] — Agent harness fundamentals
+- [[concepts/harness-engineering/agent-harness]] — Agent harness fundamentals
 - [[entities/pi]] — Pi coding agent (Mario Zechner)
 - [[entities/openclaw]] — OpenClaw (Peter Steinberger)
 - [[concepts/hermes-agent-architecture]] — Hermes Agent architecture (capability accumulation, self-generating skills)

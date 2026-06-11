@@ -75,5 +75,5 @@ Palmer explicitly argues against the "$5 VPS" approach popular in DevOps communi
 
 ## Related Wiki Pages
 
-- [[concepts/agent-hosting-aws]] — AWS equivalent architecture mapping based on Matt's design
+- [[concepts/harness-engineering/agent-hosting-aws]] — AWS equivalent architecture mapping based on Matt's design
 - [[entities/hermes-agent]] — Hermes Agent platform

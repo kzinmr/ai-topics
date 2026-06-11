@@ -35,11 +35,11 @@ This approach is inspired by Gelman & Loken's (2013) work on the garden of forki
 
 ## Relationship to Agentic Data Science
 
-Decision Lab fits into the broader [[concepts/agentic-data-science|agentic data science]] stack as an orchestrated analysis engine — AI agents can spawn multiple Decision Lab analyses in parallel as part of a larger research workflow, with the garden of forking paths providing natural verification and robustness checking.
+Decision Lab fits into the broader [[concepts/agent-team-swarm/agentic-data-science|agentic data science]] stack as an orchestrated analysis engine — AI agents can spawn multiple Decision Lab analyses in parallel as part of a larger research workflow, with the garden of forking paths providing natural verification and robustness checking.
 
 ## Related Concepts
 
-- [[concepts/agentic-data-science]] — The broader paradigm of AI agents doing data science work
+- [[concepts/agent-team-swarm/agentic-data-science]] — The broader paradigm of AI agents doing data science work
 - [[concepts/bayesian-methods]] — Bayesian statistical approaches
 - [[concepts/causal-reasoning]] — Causal inference frameworks
 

@@ -45,7 +45,7 @@ Peter Steinberger grew up in rural Austria and bootstrapped **PSPDFKit**, a mobi
 ### "Design Loops, Don't Prompt Agents" (Jun 2026)
 > "Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents." — @steipete, June 7, 2026
 
-Steinberger's progression from manual prompting to loop authoring mirrors Boris Cherny's three-stage evolution: from manual + autocomplete → parallel sessions → loop author. The key insight: **the reusable unit inside the loop is a skill, not a prompt**. A loop with no reusable skills is `while(true)` around a stranger. A loop that calls a library of sharp, tested, named skills is a system that compounds. This connects directly to his "Skills > Loops" thesis and [[concepts/agentic-loop|the broader loop evolution spectrum]].
+Steinberger's progression from manual prompting to loop authoring mirrors Boris Cherny's three-stage evolution: from manual + autocomplete → parallel sessions → loop author. The key insight: **the reusable unit inside the loop is a skill, not a prompt**. A loop with no reusable skills is `while(true)` around a stranger. A loop that calls a library of sharp, tested, named skills is a system that compounds. This connects directly to his "Skills > Loops" thesis and [[concepts/harness-engineering/agentic-loop|the broader loop evolution spectrum]].
 
 ### Token Privilege & The Loop Access Gap (Jun 2026)
 

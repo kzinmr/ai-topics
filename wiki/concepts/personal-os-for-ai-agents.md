@@ -69,6 +69,6 @@ Three append-only logs storing judgment, not just facts:
 
 ## Related Concepts
 - [[concepts/context-engineering|Context Engineering]] — The broader discipline this falls under
-- [[concepts/agentic-ai-skills]] — Skill design principles used in this system
+- [[concepts/harness-engineering/agentic-ai-skills]] — Skill design principles used in this system
 - [[concepts/context-engineering/context-management|Context Management]] — Managing context windows and attention
 - [[koylan-ai]] — Creator: Muratcan Koylan, Context Engineer at Sully.ai

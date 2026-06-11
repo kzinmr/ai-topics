@@ -121,7 +121,7 @@ for await (const event of client.streamEvents("my-session")) {
 | **Management** | sandboxd daemon | Unikraft scheduler | Container runtime | Firecracker API |
 | **Status** | Undocumented API | Production | Production | Production |
 
-Details in [[concepts/agent-sandboxing-patterns]].
+Details in [[concepts/security-and-governance/agent-sandboxing-patterns]].
 
 ## Sources
 

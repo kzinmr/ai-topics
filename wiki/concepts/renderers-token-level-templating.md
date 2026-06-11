@@ -93,7 +93,7 @@ Hand-coded renderers for: **Qwen3, Qwen3.5, GLM-4.5, GLM-5, MiniMax-M2, DeepSeek
 Renderers can only preserve prefix continuity if the sampled token stream remains the source of truth. Two adjacent layers matter:
 
 - **Chat templates**: Some strip old `<think>` blocks → breaks RL trajectory. Requires intentional divergence from official template.
-- **[[agent-harness|Harnesses]]**: Tool-call repair, argument normalization, history compaction silently mutate sampled history → breaks prefix. Execution repair should not silently become history mutation.
+- **[[concepts/harness-engineering/agent-harness|Harnesses]]**: Tool-call repair, argument normalization, history compaction silently mutate sampled history → breaks prefix. Execution repair should not silently become history mutation.
 
 ## Ecosystem Partners
 
@@ -106,4 +106,4 @@ Collaborating with **NVIDIA, vLLM, SGLang** to make `renderers` a reference stan
 - [[reinforcement-learning]]
 - [[grpo]]
 - [[trl-transformer-reinforcement-learning]]
-- [[agent-harness]] — harness boundary interaction
+- [[concepts/harness-engineering/agent-harness]] — harness boundary interaction

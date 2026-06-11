@@ -106,7 +106,7 @@ This validates the [[concepts/harness-engineering]] principle that the highest-R
 - [[concepts/rlm-recursive-language-models]] — The general RLM framework; Lambda-RLM is a specific architectural variant
 - [[concepts/recursive-language-models]] — Simpler RLM concept page
 - [[concepts/harness-engineering]] — Broader framework; Lambda-RLM is a concrete implementation of harness-first agent design
-- [[concepts/agent-architecture-decomposition]] — Three-layer framework; Lambda-RLM sits at the harness layer
+- [[concepts/harness-engineering/agent-architecture-decomposition]] — Three-layer framework; Lambda-RLM sits at the harness layer
 - [[entities/theodoros-galanos]] — Creator and author
 - [[entities/the-harness-blog]] — Publication venue
 

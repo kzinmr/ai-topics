@@ -167,14 +167,14 @@ ActiveGraph represents a convergence of several old ideas (event sourcing, CQRS,
 2. **Forking enables safe self-modification** — agents that change their own behaviour can test changes in isolated branches
 3. **The log IS the agent** — eliminates the distinction between "what the agent did" and "what the agent is"
 
-These align with the broader thesis from [[concepts/agent-statefulness]]: persistent intelligence requires a **persistent, reactive, inspectable, evolving state substrate** — not just better memory retrieval. ActiveGraph is the most concrete implementation of this thesis to date.
+These align with the broader thesis from [[concepts/harness-engineering/agent-statefulness]]: persistent intelligence requires a **persistent, reactive, inspectable, evolving state substrate** — not just better memory retrieval. ActiveGraph is the most concrete implementation of this thesis to date.
 
 ## Related Pages
 
-- [[concepts/agent-statefulness]] — The architectural philosophy ActiveGraph implements
+- [[concepts/harness-engineering/agent-statefulness]] — The architectural philosophy ActiveGraph implements
 - [[entities/yohei-nakajima]] — Creator of BabyAGI and ActiveGraph
 - [[concepts/babyagi]] — The task-driven agent that ActiveGraph evolved from
-- [[concepts/agent-runtime]] — Execution environment for stateful agents
+- [[concepts/harness-engineering/agent-runtime]] — Execution environment for stateful agents
 - [[concepts/agent-harness-primitives]] — Harness as stateful control layer
 - [[concepts/memory-systems-design-patterns]] — Memory architecture patterns across frameworks
 - [[concepts/context-engineering/context-repositories|Context Repositories]] — Letta's git-based agent memory

@@ -220,7 +220,7 @@ This aligns with McKinney's broader philosophy: the **harness** should be minima
 
 ## Related Concepts
 
-- [[concepts/agent-ergonomics]] — Language design principles for AI coding agents
+- [[concepts/harness-engineering/agent-ergonomics]] — Language design principles for AI coding agents
 - [[concepts/harness-engineering]] — Minimal harness architecture for agentic tools
 - [[concepts/agentic-engineering]] — Professional discipline of developing software with coding agents
 - [[concepts/vibe-coding]] — Uncritical acceptance of agent output (antithesis to McKinney's approach)

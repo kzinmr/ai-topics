@@ -198,7 +198,7 @@ If KV cache can persist knowledge cheaply, fine-tuning's role shifts from "prima
 
 ### 4. The Missing Primitive: Cross-Session KV Cache Portability
 
-A key gap: KV caches are currently tied to specific model versions and architectures. You can't take a DeepSeek-V3 KV cache and load it into DeepSeek-V4. As the spectrum view takes hold, expect **KV cache portability layers** — analogous to how ONNX enables model portability across runtimes. See [[concepts/agent-statefulness]] for related thinking on state continuity across model versions.
+A key gap: KV caches are currently tied to specific model versions and architectures. You can't take a DeepSeek-V3 KV cache and load it into DeepSeek-V4. As the spectrum view takes hold, expect **KV cache portability layers** — analogous to how ONNX enables model portability across runtimes. See [[concepts/harness-engineering/agent-statefulness]] for related thinking on state continuity across model versions.
 
 ## Open Questions
 
@@ -218,7 +218,7 @@ A key gap: KV caches are currently tied to specific model versions and architect
 - [[concepts/context-engineering|Context Engineering]] — The art and science of curating context; Lance Martin's Write/Select/Compress/Isolate taxonomy
 - [[concepts/reduce-offload-isolate]] — Three principles for moving knowledge out of context
 - [[concepts/ai-agent-memory-middleware]] — Three-layer model (L1: In-Context, L2: Local File, L3: Cloud Storage)
-- [[concepts/agent-statefulness]] — Why statefulness is the central challenge for agent architectures
+- [[concepts/harness-engineering/agent-statefulness]] — Why statefulness is the central challenge for agent architectures
 - [[concepts/token-economics]] — Economic analysis of inference costs that drive spectrum decisions
 - [[concepts/rag-systems]] — RAG vs. Fine-Tuning comparison and pipeline design
 - [[concepts/ai-native-state-management]] — Eight-state model for AI-native application state

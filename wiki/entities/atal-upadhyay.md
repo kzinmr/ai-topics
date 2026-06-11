@@ -73,7 +73,7 @@ A critical distinction: frameworks (LangChain, CrewAI) provide building blocks; 
 ## Cross-References
 
 - [[concepts/harness-engineering]] — Core concept he writes extensively about
-- [[concepts/agent-harness]] — His 9-component architecture directly enriches this page
+- [[concepts/harness-engineering/agent-harness]] — His 9-component architecture directly enriches this page
 - [[entities/julien-bek]] — Parallel figure: Bek's Service-as-Software thesis from the venture side mirrors Upadhyay's harness-as-moat thesis from the engineering side
 
 ## Sources

@@ -73,11 +73,11 @@ The broader Microsoft strategy positions **Windows as an agent runtime** — an 
 - Native agent lifecycle management in the OS
 - Integration with [[entities/microsoft|Microsoft]] identity and security infrastructure
 - Cross-platform agent portability through containerization
-- Compatibility with the wider [[entities/openai|OpenAI]] ecosystem and industry standards ([[concepts/agent-engineering-guide-2026|MCP, agent-to-agent protocols]])
+- Compatibility with the wider [[entities/openai|OpenAI]] ecosystem and industry standards ([[concepts/harness-engineering/agent-engineering-guide-2026|MCP, agent-to-agent protocols]])
 
 ## Related Pages
 
 - [[entities/github]] — GitHub entity page
-- [[concepts/agent-engineering-guide-2026]] — Agent engineering patterns and protocols
+- [[concepts/harness-engineering/agent-engineering-guide-2026]] — Agent engineering patterns and protocols
 - [[entities/microsoft]] — Microsoft entity page
 - [[entities/openai]] — OpenAI partnership and competitive context

@@ -228,7 +228,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[concepts/grpo-infrastructure]] — VRAM math, GPU architecture, LoRA, async RL
 - [[concepts/reward-engineering]] — Reward function design for agent RL training
 - [[concepts/lm-as-judge-reward-signal]] — LM-as-judge evaluation methodology for RL rewards (see also [[concepts/llm-as-judge]])
-- [[concepts/agent-design-patterns]] — Model selection, tool calling, async patterns
+- [[concepts/harness-engineering/agent-design-patterns]] — Model selection, tool calling, async patterns
 - [[concepts/mcp]] — Model Context Protocol for tool integration
 - [[concepts/agent-evaluation-methodology]] — Evaluating agent performance for RL reward signals
 - [[concepts/context-engineering|Context Engineering]] — Designing effective agent contexts
@@ -238,7 +238,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 
 ### Agent Design & Tool Integration (Lessons 1-2)
 
-**Model Selection**: 3-tier strategy — primary models (DeepSeek V3 for cost, GPT 4.1, Claude Sonnet, Gemini 2.5 Pro), helper/sub-models for bulk reading (GPT-4.1 Mini), and reasoner models for complex tasks. Key insight: **prioritize tool-use reliability over raw intelligence**. See [[concepts/agent-design-patterns]].
+**Model Selection**: 3-tier strategy — primary models (DeepSeek V3 for cost, GPT 4.1, Claude Sonnet, Gemini 2.5 Pro), helper/sub-models for bulk reading (GPT-4.1 Mini), and reasoner models for complex tasks. Key insight: **prioritize tool-use reliability over raw intelligence**. See [[concepts/harness-engineering/agent-design-patterns]].
 
 **Structured Outputs**: Pydantic models for type safety. Thinking-first ordering for autoregressive models (thinking tokens before tool calls). Chat Completions API recommended over Responses API for portability.
 

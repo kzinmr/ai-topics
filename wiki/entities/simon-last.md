@@ -85,7 +85,7 @@ Last is bullish on **CLI over MCP** for agent interfaces:
 - **[[entities/notion]]** — Current employer, leads AI product/engineering
 - **[[entities/sarah-sachs]]** — Close collaborator, manages AI engineering team
 - **[[concepts/dark-factory-software-factory]]** — Advocates for automated software factories
-- **[[concepts/agent-harness]]** — Built Notion's agent harness through multiple iterations
+- **[[concepts/harness-engineering/agent-harness]]** — Built Notion's agent harness through multiple iterations
 - **[[concepts/notion-cli]]** — Championed CLI-first agent interfaces
 
 ## Sources

@@ -364,7 +364,7 @@ Source: Superintel newsletter via Anthropic co-founder Oxford lecture (May 2026)
 
 ## Agent Containment Architecture (May 2026)
 
-Anthropic published a detailed engineering post on how Claude is [[concepts/agent-containment|contained]] across its three products. The article shares what's held up, what's broken, and lessons learned about agent security.
+Anthropic published a detailed engineering post on how Claude is [[concepts/security-and-governance/agent-containment|contained]] across its three products. The article shares what's held up, what's broken, and lessons learned about agent security.
 
 ### Three Products, Three Isolation Patterns
 

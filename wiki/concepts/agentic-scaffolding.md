@@ -94,7 +94,7 @@ See [[concepts/autonomous-component-optimization]] for the complementary improve
 - [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Agent Security Patterns
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
-- [[concepts/agent-sandboxing]] — Agent Sandboxing
+- [[concepts/security-and-governance/agent-sandboxing]] — Agent Sandboxing
 - [[concepts/autonomous-component-optimization]] — Miessler's Universal Improvement Cycle
 - [[concepts/intent-based-engineering]] — Miessler's articulation gap concept
 - [[entities/daniel-miessler]] — Author of the Scaffolding Ratio thesis

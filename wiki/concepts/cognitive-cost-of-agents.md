@@ -18,7 +18,7 @@ type: concept
 **Updated:** April 13, 2026
 **Source:** Simon Willison's Weblog — "The cognitive impact of coding agents"
 **Author:** [[entities/simon-willison]] (simonw)
-**Related:** [[concepts/agentic-engineering]], [[concepts/vibe-coding]], [[concepts/anthropic/managed-agents]], [[concepts/agent-orchestration-frameworks]]
+**Related:** [[concepts/agentic-engineering]], [[concepts/vibe-coding]], [[concepts/anthropic/managed-agents]], [[concepts/agent-team-swarm/agent-orchestration-frameworks]]
 
 ---
 
@@ -103,7 +103,7 @@ The most significant risk Willison identified: developers may become **passive r
 - [[concepts/agentic-engineering]] — Willison's broader framework for working with AI coding agents
 - [[concepts/vibe-coding]] — The practice of building software through natural language prompts; cognitive cost is a counterpoint
 - [[concepts/anthropic/managed-agents]] — Managed agent services raise the same cognitive ownership questions
-- [[concepts/agent-orchestration-frameworks]] — Multi-agent systems amplify the cognitive debt problem
+- [[concepts/agent-team-swarm/agent-orchestration-frameworks]] — Multi-agent systems amplify the cognitive debt problem
 -  — More powerful agents increase both productivity gains and cognitive risks
 
 ---

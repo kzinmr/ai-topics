@@ -74,7 +74,7 @@ AI coding platform originally built for software engineers working on complex, l
 
 ## Related
 - [[concepts/coding-agents]] — Coding agents category
-- [[concepts/agent-orchestration]] — Multi-agent coordination patterns
+- [[concepts/agent-team-swarm/agent-orchestration]] — Multi-agent coordination patterns
 - [[concepts/agent-platform]] — Agent platform category
 - [[entities/github]] — GitHub Copilot competes in AI coding assistant space
 - [[entities/anthropic]] — Claude competes in AI-assisted development

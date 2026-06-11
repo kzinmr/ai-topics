@@ -43,10 +43,10 @@ This represents the **enterprise adoption** of agentic AI beyond coding and deve
 This announcement aligns with the broader trend of **managed agents** moving from experimental to production:
 - [[entities/anthropic]] has been building managed agent capabilities
 - [[concepts/managed-agents]] are becoming enterprise-ready
-- [[concepts/agent-governance]] is critical for production deployment
+- [[concepts/security-and-governance/agent-governance]] is critical for production deployment
 
 ## See Also
 
 - [[entities/servicenow]] — ServiceNow entity page
 - [[concepts/managed-agents]] — Patterns for managed AI agents
-- [[concepts/agent-governance]] — Enterprise agent governance
+- [[concepts/security-and-governance/agent-governance]] — Enterprise agent governance

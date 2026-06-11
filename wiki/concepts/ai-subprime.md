@@ -187,12 +187,12 @@ The crisis is self-reinforcing: raising prices → user anger → churn to cheap
 [ai-subprime] ──warns-about──→ [entity: cursor]
 ```
 
-Authored by [[entities/ed-zitron|Ed Zitron]], contrasts with mainstream AI productivity optimism, relates to the [[concepts/agent-harness]] economics (how much harness infrastructure costs) and broader AI industry financial analysis.
+Authored by [[entities/ed-zitron|Ed Zitron]], contrasts with mainstream AI productivity optimism, relates to the [[concepts/harness-engineering/agent-harness]] economics (how much harness infrastructure costs) and broader AI industry financial analysis.
 
 ## Related Concepts
 
 - [[entities/ed-zitron]] — Ed Zitron, the primary analyst
-- [[concepts/agent-harness]] — Harness economics relate to the cost structure Zitron critiques
+- [[concepts/harness-engineering/agent-harness]] — Harness economics relate to the cost structure Zitron critiques
 - [[entities/ben-boyter]] — Token efficiency perspective on AI economics
 - [[concepts/ai-economics]] — Broader AI industry economics
 

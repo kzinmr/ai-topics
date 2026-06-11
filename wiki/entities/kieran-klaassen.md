@@ -35,5 +35,5 @@ Klaassen argues that traditional engineering creates "technical debt" where each
 - [[entities/every-inc]] — Company
 - [[entities/marcus-moretti]] — Colleague, PM guide author
 - [[concepts/compound-engineering-every]] — His primary concept
-- [[concepts/agent-native-product-management]] — Related application
+- [[concepts/harness-engineering/agent-native-product-management]] — Related application
 - [[concepts/compound-engineering-loop]] — Simon Willison's related concept

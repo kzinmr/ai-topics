@@ -18,8 +18,8 @@ aliases:
   - agentic-capital-markets
   - three-planes-ten-layers
 related:
-  - [[concepts/agent-governance]]
-  - [[concepts/agent-identity-verification]]
+  - [[concepts/security-and-governance/agent-governance]]
+  - [[concepts/security-and-governance/agent-identity-verification]]
   - [[concepts/harness-engineering]]
 sources:
   - raw/articles/2026-05-19_autonomous-agent-technical-stack.md
@@ -186,8 +186,8 @@ Gartner predicts >40% of agentic AI projects will be cancelled by end of 2027 du
 
 ## Related Concepts
 
-- [[concepts/agent-governance]] — Governance and authority layer for autonomous agents
-- [[concepts/agent-identity-verification]] — Agent identity infrastructure
+- [[concepts/security-and-governance/agent-governance]] — Governance and authority layer for autonomous agents
+- [[concepts/security-and-governance/agent-identity-verification]] — Agent identity infrastructure
 - [[concepts/harness-engineering]] — The umbrella philosophy: Agent = Model + Harness
 - ERC-8004 (Trustless Agents) — Ethereum standard for agent identity, reputation, and validation registries
 - x402 Protocol — HTTP 402-based agent payment protocol (Coinbase + Cloudflare)

@@ -81,5 +81,5 @@ Daytona provides fast, stateful composable computing environments provisioned in
 - [[entities/ivan-burazin|Ivan Burazin]] — Daytona Co-Founder & CEO
 - [[entities/daytona-io|Daytona]] — Daytona platform and company
 - [[entities/anthropic|Anthropic]] — Platform partner
-- [[concepts/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns
+- [[concepts/security-and-governance/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns
 - [[concepts/headless-saas|Headless SaaS]] — Concept coined by Ivan Burazin

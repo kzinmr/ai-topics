@@ -148,7 +148,7 @@ GH_PROMPT_DISABLED=1 gh pr create --title "fix bug" --body "..."
 
 ## See Also
 
-- [[concepts/agent-ergonomics]] — Language and toolchain design for AI agents (Wes McKinney)
+- [[concepts/harness-engineering/agent-ergonomics]] — Language and toolchain design for AI agents (Wes McKinney)
 - [[concepts/agent-first-design]] — Programming language design for agents (Armin Ronacher)
 - [[concepts/cli-over-mcp-pattern]] — CLI as an alternative to MCP for agent-tool interfaces
 - [[concepts/writing-effective-tools-for-ai-agents]] — General tool design principles for agents

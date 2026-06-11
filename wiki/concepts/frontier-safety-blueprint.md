@@ -67,7 +67,7 @@ This blueprint arrives amid intensifying AI governance debates:
 
 - [[concepts/ai-safety]] — Broader AI safety landscape
 - [[concepts/shadow-ai-governance]] — Shadow AI governance patterns
-- [[concepts/agentic-ai-governance]] — AI governance for agent systems
+- [[concepts/security-and-governance/agentic-ai-governance]] — AI governance for agent systems
 - [[concepts/frontier-models]] — What constitutes frontier AI
 - [[entities/openai]] — OpenAI entity page
 

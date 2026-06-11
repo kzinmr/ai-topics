@@ -42,7 +42,7 @@ A content engine is the application of [[concepts/agentic-engineering]] principl
 ## Connection to Other Concepts
 
 - [[content-engine]] — the broader discipline of systematic content production
-- [[agentic-workflow-patterns]] — content engines as a specific workflow pattern
+- [[concepts/agent-team-swarm/agentic-workflow-patterns]] — content engines as a specific workflow pattern
 - [[concepts/solo-founder-stack]] — solo founders use content engines as force multipliers
 - [[newsjacking-framework]] — content engines can incorporate rapid-response newsjacking
 

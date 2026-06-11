@@ -76,5 +76,5 @@ Paul shared his **content creation and knowledge workflows** powered by agents:
 ## Related
 - [[entities/alan-nichol]] — Rasa CTO; also discussed agent design principles on Ep 3
 - [[entities/nico-gerold]] — AMP engineer; coding agents discussion on Ep 3
-- [[concepts/agent-harness]] — Agent harness engineering patterns
+- [[concepts/harness-engineering/agent-harness]] — Agent harness engineering patterns
 - [[entities/hugo-bowne-anderson]] — Vanishing Gradients host

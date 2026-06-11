@@ -55,9 +55,9 @@ The foundational pattern shift: Claude Code is not a single-prompt-single-respon
 - A third updates documentation
 - The engineer reviews outputs, discards what doesn't work, merges what does
 
-The engineer's role shifts from *writing code* to **reviewing and merging agent outputs**. [[entities/farhan-thawar|Farhan Thawar]] (VP Engineering at Shopify) describes this as "orchestrating intelligent systems." This is [[concepts/agentic-design-patterns|agentic design patterns]] at production scale — engineers become orchestrators of parallel agent fleets rather than line-by-line authors.
+The engineer's role shifts from *writing code* to **reviewing and merging agent outputs**. [[entities/farhan-thawar|Farhan Thawar]] (VP Engineering at Shopify) describes this as "orchestrating intelligent systems." This is [[concepts/harness-engineering/agentic-design-patterns|agentic design patterns]] at production scale — engineers become orchestrators of parallel agent fleets rather than line-by-line authors.
 
-This pattern maps to the broader [[multi-agent]] and [[agent-orchestration]] paradigm: the unit of work is not a prompt but a **delegated subtask with independent execution**.
+This pattern maps to the broader [[multi-agent]] and [[concepts/agent-team-swarm/agent-orchestration]] paradigm: the unit of work is not a prompt but a **delegated subtask with independent execution**.
 
 ## Pattern 2: Extended Critique Loops
 
@@ -221,6 +221,6 @@ Shopify targets 90% autonomous coding by Q3 2026 with 23,000 engineers working t
 - [[entities/claude-code]] — Claude Code entity overview
 - [[entities/shopify]] — Shopify entity page
 - [[entities/anthropic]] — Anthropic
-- [[concepts/agentic-design-patterns]] — Agentic design patterns
+- [[concepts/harness-engineering/agentic-design-patterns]] — Agentic design patterns
 - [[entities/farhan-thawar]] — Farhan Thawar (VP Engineering, Shopify)
 - [[entities/coding-agents]] — Coding agents ecosystem overview

@@ -36,5 +36,5 @@ Moretti operates as a "two-slice team" (coined by [[entities/every-inc|Every]]):
 
 - [[entities/every-inc]] — Company
 - [[entities/kieran-klaassen]] — Colleague, compound engineering creator
-- [[concepts/agent-native-product-management]] — His primary work
+- [[concepts/harness-engineering/agent-native-product-management]] — His primary work
 - [[concepts/compound-engineering-every]] — The plugin framework

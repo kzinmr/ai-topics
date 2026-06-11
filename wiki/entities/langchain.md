@@ -166,12 +166,12 @@ For OAuth tokens, per-user-scoped tokens, and credentials that need refresh, the
 
 This design follows the principle that agent infrastructure needs **control planes outside the runtime** — not exposed to agent instructions and decisions.
 
-See [[concepts/agentic-security]] for broader agent security patterns.
+See [[concepts/security-and-governance/agentic-security]] for broader agent security patterns.
 
 ## Related Concepts
 - [[concepts/langgraph]] — Low-level agent orchestration framework
 - [[langsmith]] — Observability and evaluation platform for LLM apps
-- [[concepts/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
+- [[concepts/agent-team-swarm/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
 - [[llamaindex]] — Competing data framework for LLM applications
 - [[entities/dspy]] — Declarative LM programming framework (alternative paradigm)
 - [[agent-engineering]] — The discipline of building reliable AI agents

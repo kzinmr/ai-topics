@@ -131,7 +131,7 @@ Two properties, both from the same root cause — whether the agent works from a
 
 - **Maintenance cost settles it**: With performance a tie, what matters is what you own. PostgresFS is a large custom layer (adapter, coarse-filter, cache, regex translator) that must track schema changes. The skill is a prompt and a small script.
 - **Generalizes past SQL**: The same decision applies to Chroma, Mongo, BigQuery, ClickHouse — "wrap the store as a filesystem" vs "give the model the store's real query language plus a real shell." Every time you fake a filesystem, you sign up to maintain one.
-- **Pattern connections**: Validates the broader [[concepts/agent-filesystem-abstraction]] pattern that Mintlify's ChromaFS pioneered and Vercel's Bash tool supports.
+- **Pattern connections**: Validates the broader [[concepts/harness-engineering/agent-filesystem-abstraction]] pattern that Mintlify's ChromaFS pioneered and Vercel's Bash tool supports.
 
 Source: [[raw/articles/2026-06-03_arize_postgresfs-vs-skills]]
 

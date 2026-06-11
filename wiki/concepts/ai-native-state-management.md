@@ -487,7 +487,7 @@ Hermes Agent exemplifies this separation with slot-based prompt assembly:
 
 ## Part 13: Sandbox Architecture — Where Does the Agent Run?
 
-From [[concepts/agent-sandbox-patterns|Agent Sandbox Patterns]]:
+From [[concepts/security-and-governance/agent-sandbox-patterns|Agent Sandbox Patterns]]:
 
 ### Pattern 1: Isolate the Tool
 Agent runs on main infra. Only dangerous operations run in sandbox. Simpler, but agent shares secrets.
@@ -548,14 +548,14 @@ The synthesis: **start stateless, add memory only where evals prove it helps**.
 - [[comparisons/llm-integration-patterns|LLM Integration Patterns]] — 5 paradigms for LLM integration
 
 ### Agent Patterns
-- [[concepts/agent-patterns|Agent Patterns]] — Full catalog of agent architecture patterns
+- [[concepts/harness-engineering/agent-patterns|Agent Patterns]] — Full catalog of agent architecture patterns
 - [[concepts/subagent-patterns|Subagent Patterns]] — 4-5 levels of agent-to-agent coordination
 - [[concepts/multi-agent-orchestration-architecture|Multi-Agent Orchestration Architecture]] — Roles, layers, responsibilities
-- [[concepts/agent-sandbox-patterns|Agent Sandbox Patterns]] — Isolate the tool vs. isolate the agent
+- [[concepts/security-and-governance/agent-sandbox-patterns|Agent Sandbox Patterns]] — Isolate the tool vs. isolate the agent
 
 ### Papers
 - [[raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph|ActiveGraph]] — Event-sourced reactive graphs
 - [[raw/papers/2601.19752-agentic-design-patterns|Agentic Design Patterns]] — 5 subsystems + 12 ADPs
 
 ### Engineering Guides
-- [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip
+- [[concepts/harness-engineering/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip

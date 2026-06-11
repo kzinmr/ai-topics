@@ -33,4 +33,4 @@ The Vibe CEO model emerges from:
 - [[vibe-coding]]
 - [[concepts/context-engineering|Context Engineering]]
 - [[concepts/agentic-engineering]]
-- [[concepts/agent-governance]]
+- [[concepts/security-and-governance/agent-governance]]

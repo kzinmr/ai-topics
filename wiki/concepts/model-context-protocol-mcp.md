@@ -181,7 +181,7 @@ As of May 2026, MCP has reached **150M+ downloads** and become the de facto conn
 - Systemic stress fractures reported at scale
 
 ### Governance Implications
-MCP's rapid adoption as agent infrastructure creates a governance gap: the protocol is open and decentralized, but security responsibility is diffused across server operators, registry maintainers, and agent developers. See [[concepts/agent-governance]] for the broader multi-owner economy framework.
+MCP's rapid adoption as agent infrastructure creates a governance gap: the protocol is open and decentralized, but security responsibility is diffused across server operators, registry maintainers, and agent developers. See [[concepts/security-and-governance/agent-governance]] for the broader multi-owner economy framework.
 
 Source: [Superintel — "The Agentic Economy Has No Black Box"](https://getsuperintel.site/p/the-agentic-economy-has-no-black-box) (Patrick Hussey, May 17, 2026), citing OX Security research
 

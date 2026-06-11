@@ -119,5 +119,5 @@ This query itself is a practical example: this Q&A cross-references the investme
 - [[concepts/data-analysis-agents]] — Comprehensive concept of AI data analysis agents
 - [[concepts/cognition-ai-data-analyst]] — Design for turning Devin into a data analysis agent
 - [[comparisons/open-harness-vs-agent-framework]] — The essential difference between Open Harness and Agent Framework
-- [[concepts/agent-harness]] — Agent Harness concept definition
+- [[concepts/harness-engineering/agent-harness]] — Agent Harness concept definition
 - [[concepts/agent-harness-comparison]] — 9-harness comparison portal

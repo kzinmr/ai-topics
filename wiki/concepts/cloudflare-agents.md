@@ -84,7 +84,7 @@ The next phase involves agents that run entirely in the cloud using:
 
 - [[entities/cloudflare]] — parent organization
 - [[concepts/cloudflare-llm-infrastructure]] — LLM inference infrastructure
-- [[concepts/agent-harness]] — agent infrastructure patterns
+- [[concepts/harness-engineering/agent-harness]] — agent infrastructure patterns
 - [[concepts/ai-agent-security]] — security and compliance for agents
 - [[entities/kimi]] — Kimi K2.5 model used on Workers AI
-- [[concepts/agent-governance]] — agent identity and access management
+- [[concepts/security-and-governance/agent-governance]] — agent identity and access management

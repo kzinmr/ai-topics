@@ -124,7 +124,7 @@ Notion supports both MCP and CLI approaches:
 
 - [[concepts/notion-mcp]] — Notion's MCP server implementation
 - [[concepts/notion-cli]] — Notion's command-line interface
-- [[concepts/agent-native-product-management]] — Product philosophy driving Notion's AI features
+- [[concepts/harness-engineering/agent-native-product-management]] — Product philosophy driving Notion's AI features
 
 ## Sources
 

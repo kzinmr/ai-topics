@@ -21,7 +21,7 @@ Dynamic workflows are a feature in [[concepts/claude-code|Claude Code]] that all
 
 ## Core Concept
 
-Instead of relying on a fixed harness for all tasks, Claude can now **write a custom JavaScript workflow file** that spawns and coordinates [[concepts/agent-harness|subagents]], each with their own context window, model selection, and isolation level. The workflow file uses special functions to spawn agents, wait for results, and synthesize outputs.
+Instead of relying on a fixed harness for all tasks, Claude can now **write a custom JavaScript workflow file** that spawns and coordinates [[concepts/harness-engineering/agent-harness|subagents]], each with their own context window, model selection, and isolation level. The workflow file uses special functions to spawn agents, wait for results, and synthesize outputs.
 
 Key properties:
 - **JavaScript-based**: Workflows execute as JS files with special agent-spawning functions plus standard JS (JSON, Math, Array)
@@ -107,7 +107,7 @@ Dynamic workflows are not needed for every task and use significantly more token
 
 - [[concepts/claude-code|Claude Code as a Coding Agent]]
 - [[concepts/harness-engineering|Harness Engineering]]
-- [[concepts/agent-harness|Agent Harness]]
+- [[concepts/harness-engineering/agent-harness|Agent Harness]]
 - [[concepts/claude/opus-4-8|Claude Opus 4.8]] — the model that makes dynamic workflows intelligent enough to generate custom harnesses
 - [[concepts/claude-code-goal|Claude Code /goal]]
 - [[concepts/claude-code-skills|Claude Code Skills]]

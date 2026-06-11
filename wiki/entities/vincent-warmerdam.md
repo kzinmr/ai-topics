@@ -107,5 +107,5 @@ Vincent demonstrated **notebook-as-canvas** with marimo and shared his philosoph
 - [[entities/matthew-honnibal]] — spaCy founder; former colleague; Episode 3 co-guest
 - [[entities/alan-nichol]] — Rasa CTO; former colleague; Episode 3 co-guest
 - [[entities/eleanor-berger]] — Hermes agent + design pattern discussion; Episode 3 co-guest
-- [[concepts/agent-harness]] — Agent harness engineering
+- [[concepts/harness-engineering/agent-harness]] — Agent harness engineering
 - [[concepts/notebook-agents]] — Notebook-native agent workflows

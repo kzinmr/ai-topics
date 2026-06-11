@@ -43,7 +43,7 @@ The authors propose **G-STEP**, a lightweight inference-time gate that decides w
 
 ## Implications for Agent Design
 
-This has direct implications for [[concepts/agent-harness]] design:
+This has direct implications for [[concepts/harness-engineering/agent-harness]] design:
 - **Don't default to tools:** Adding tools to every agent path may hurt reliability in noisy environments
 - **Strengthen intrinsic reasoning:** The bottleneck may be the model's tolerance for protocol complexity, not its access to external computation
 - **Benchmark against native CoT:** Always compare tool-augmented vs. tool-free performance in the target environment before assuming net benefit
@@ -58,6 +58,6 @@ The finding reinforces the "bitter lesson" view in [[concepts/agent-harness-prim
 
 ## Related Concepts
 - [[concepts/chain-of-thought]] — Native reasoning without tool overhead
-- [[concepts/agent-harness]] — The infrastructure between model and tools
+- [[concepts/harness-engineering/agent-harness]] — The infrastructure between model and tools
 - [[concepts/agent-harness-primitives]] — Harness as cognitive transformation layer
 - [[concepts/bitter-lesson-agent-harnesses]] — Simpler harnesses often win

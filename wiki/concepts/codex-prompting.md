@@ -133,6 +133,6 @@ The effectiveness of prompts depends heavily on tool implementation:
 
 - [[entities/openai-codex]] — OpenAI Codex agent
 - [[concepts/metaprompting]] — Metaprompting
-- [[concepts/agent-harness]] — Agent harness design
+- [[concepts/harness-engineering/agent-harness]] — Agent harness design
 - [[concepts/prompt-engineering]] — General prompt engineering
 - [[concepts/coding-agents]] — Coding agent comparison

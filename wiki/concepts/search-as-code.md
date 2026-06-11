@@ -199,9 +199,9 @@ The future direction Perplexity envisions:
 - [[concepts/agentic-search]] — Broader agentic search landscape that SaC advances
 - [[concepts/codeact]] — Code-as-action pattern that SaC builds upon
 - [[concepts/code-mode]] — Model code generation as primary interaction mode
-- [[concepts/agent-harness]] — SaC implements harness patterns at the SDK level
+- [[concepts/harness-engineering/agent-harness]] — SaC implements harness patterns at the SDK level
 - [[concepts/rlm-recursive-language-models]] — Context-as-variable pattern that SaC's sandbox state management addresses
-- [[concepts/agent-vs-pipeline-architecture]] — SaC is an agent pattern that recovers pipeline-like efficiency through code orchestration
+- [[concepts/harness-engineering/agent-vs-pipeline-architecture]] — SaC is an agent pattern that recovers pipeline-like efficiency through code orchestration
 
 ## Sources
 

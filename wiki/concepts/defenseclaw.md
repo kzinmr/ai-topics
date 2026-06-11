@@ -72,6 +72,6 @@ Both are open-source and complementary — DefenseClaw for OpenClaw deployments,
 - [[entities/openclaw]]
 - [[concepts/openclaw-architecture]]
 - [[concepts/moltbook-breach-2026]]
-- [[concepts/agent-sandboxing]]
-- [[concepts/agent-sandbox-patterns]]
+- [[concepts/security-and-governance/agent-sandboxing]]
+- [[concepts/security-and-governance/agent-sandbox-patterns]]
 - [[entities/nvidia]]

@@ -198,7 +198,7 @@ This aligns with the **[[concepts/bitter-lesson-harnessing|Bitter Lesson of Harn
 ## Related
 
 - [[entities/mike-piccolo|Mike Piccolo]] — Founder & CEO of iii, author of the workers harness architecture
-- [[concepts/agent-harness]] — The concept of agent infrastructure that iii reimagines
+- [[concepts/harness-engineering/agent-harness]] — The concept of agent infrastructure that iii reimagines
 - [[concepts/harness-engineering]] — Harness engineering discipline (eval-focused)
 - [[concepts/bitter-lesson-harnessing]] — Why harnesses should simplify over time
 - [[concepts/pydantic-ai-harness]] — Another open harness approach (Pydantic's capability library)

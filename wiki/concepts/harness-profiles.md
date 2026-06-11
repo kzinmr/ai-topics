@@ -38,7 +38,7 @@ Terminal-Bench 2.0 demonstrated that the same model in different harnesses can p
 
 ## Related Concepts
 
-- [[concepts/agent-harness|Agent Harness]] — the surrounding infrastructure that shapes agent behavior
+- [[concepts/harness-engineering/agent-harness|Agent Harness]] — the surrounding infrastructure that shapes agent behavior
 - [[concepts/delta-channels|Delta Channels]] — LangGraph primitive for long-running agent state management
 - [[concepts/deep-agents|Deep Agents]] — LangChain's open-source agent framework
 - [[entities/langchain|LangChain]] — the framework behind this innovation

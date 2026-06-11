@@ -35,4 +35,4 @@ SMFS is a **mountable filesystem** that replaces UNIX operations with agent-awar
 ## Relationship to Existing Concepts
 - [[concepts/filesystem-memory]] — SMFS extends the filesystem-as-memory paradigm with agent-aware operations
 - [[concepts/agentic-rag]] — SMFS aims to replace the RAG pipeline entirely
-- [[concepts/agent-sandboxing]] — SMFS provides a filesystem layer for agent workspaces
+- [[concepts/security-and-governance/agent-sandboxing]] — SMFS provides a filesystem layer for agent workspaces

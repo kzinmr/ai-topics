@@ -98,7 +98,7 @@ Incumbent "Copilot" companies from 2025 face a structural challenge transitionin
 - [[entities/julien-bek]] — Author of the thesis
 - [[entities/sequoia-capital]] — Firm behind the thesis
 - [[concepts/harness-engineering]] — Parallel concept in software engineering
-- [[concepts/agent-harness]] — The technical architecture that enables service-as-software
+- [[concepts/harness-engineering/agent-harness]] — The technical architecture that enables service-as-software
 
 ## Sources
 

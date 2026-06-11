@@ -60,6 +60,6 @@ His key achievement: migrated the entire infrastructure to a scalable AWS-native
 
 ## Related Pages
 
-- [[concepts/agent-sandboxing-patterns]] — Agent sandboxing architecture patterns (source article)
+- [[concepts/security-and-governance/agent-sandboxing-patterns]] — Agent sandboxing architecture patterns (source article)
 - [[entities/browser-use]] — Browser Use organization
 - [[concepts/harness-engineering]] — Harness engineering practices

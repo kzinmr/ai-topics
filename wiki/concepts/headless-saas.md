@@ -69,7 +69,7 @@ This reframes vertical SaaS (meeting notes, CRM, project management) as **unifie
 
 - [[concepts/headless-ai-services]] — Matt Webb's original "API is the UI" framing
 - [[concepts/agent-first-design]] — Designing software for AI agent legibility
-- [[concepts/agent-serverless]] — Serverless deployment for AI agents
+- [[concepts/harness-engineering/agent-serverless]] — Serverless deployment for AI agents
 - [[concepts/ai-agent-memory-middleware]] — Persistent context for agent workflows
 - [[concepts/ai-organization]] — How organizations restructure around agent workforces
 - [[concepts/saas-apocalypse]] — Martin Alderson's analysis of SaaS disruption by agentic AI

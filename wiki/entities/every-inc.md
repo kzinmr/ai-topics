@@ -84,7 +84,7 @@ The open-source plugin on GitHub (`EveryInc/compound-engineering-plugin`) has gr
 
 ## Agent-Native Architecture
 
-Every published definitive guides on [[concepts/agent-native-architecture|Agent-Native Architecture]]:
+Every published definitive guides on [[concepts/harness-engineering/agent-native-architecture|Agent-Native Architecture]]:
 
 ### Core Principles
 1. **Parity** — Agent achieves everything UI can
@@ -150,7 +150,7 @@ Dan initially believed in personal agents for every employee (the "Golden Compas
 - [[entities/dan-shipper]] — CEO and cofounder
 - [[concepts/compound-engineering-every]] — Development methodology
 - [[concepts/folder-is-the-agent]] — Architecture pattern
-- [[concepts/agent-native-architecture]] — Design principles
+- [[concepts/harness-engineering/agent-native-architecture]] — Design principles
 - [[concepts/after-automation]] — Automation paradox analysis
 - [[concepts/human-sandwich]] — Human-AI collaboration pattern
 - [[openclaw]] — Underlying agent platform for Plus One

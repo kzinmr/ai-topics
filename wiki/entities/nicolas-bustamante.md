@@ -35,7 +35,7 @@ Comprehensive analysis of three production agent memory architectures. Key findi
 - **Five design questions** every memory system must answer: storage format, load strategy, write discipline, signal gate, cold start
 - **Cold start is unsolved**: no standard for bootstrapping agent memory from existing user data
 
-→ See [[concepts/agent-memory-engineering]]
+→ See [[concepts/harness-engineering/agent-memory-engineering]]
 
 ### AI Agent Architecture in Financial Services (April 2026)
 

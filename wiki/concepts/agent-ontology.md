@@ -186,4 +186,4 @@ The OSDK is part of the Ontology Toolchain, which encompasses "the entire expres
 - [[concepts/decision-centric-architecture]] — The architectural paradigm that agent ontology enables
 - [[concepts/enterprise-agents]] — How agents operate within an ontology-enabled enterprise
 - [[concepts/ai-agent-memory-middleware]] — Memory systems for agents (complementary to ontology)
-- [[concepts/agent-patterns]] — Patterns for agent decision-making and human-in-the-loop
+- [[concepts/harness-engineering/agent-patterns]] — Patterns for agent decision-making and human-in-the-loop

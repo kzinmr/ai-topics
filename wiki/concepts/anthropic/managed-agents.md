@@ -213,8 +213,8 @@ The sandbox runner can download and install **Anthropic Skills packages** from t
 - [[entities/modal-sandbox]] — Modal's serverless sandbox integration
 - [[entities/vercel-sandbox]] — Vercel's microVM sandbox integration
 - [[entities/daytona-sandbox]] — Daytona's container sandbox integration
-- [[concepts/agent-sandboxing]] — Broader concept of agent sandbox isolation
-- [[concepts/agent-runtime]] — The execution environment layer in AI agent architecture
+- [[concepts/security-and-governance/agent-sandboxing]] — Broader concept of agent sandbox isolation
+- [[concepts/harness-engineering/agent-runtime]] — The execution environment layer in AI agent architecture
 - [[concepts/context-engineering|Context Engineering]] — Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate)
 - [[concepts/firecracker]] — Firecracker microVM technology used by Modal and Vercel
 
@@ -227,7 +227,7 @@ The sandbox runner can download and install **Anthropic Skills packages** from t
 
 **Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
 **Status:** Public Beta on Claude Platform
-**Related:** [[concepts/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/meta-harness]]
+**Related:** [[concepts/agent-team-swarm/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/meta-harness]]
 
 
 ## Architecture: Brain/Hands/Session Separation
@@ -290,7 +290,7 @@ Four new features of Managed Agents were released as GA/Research Preview. See [[
 
 ## Related
 
-- [[concepts/agent-team-swarm]] — Higher-level concept of multi-agent coordination
+- [[concepts/agent-team-swarm/agent-team-swarm]] — Higher-level concept of multi-agent coordination
 - [[concepts/harness-engineering]] — Single-agent execution environment design
 - [[concepts/meta-harness]] — Interface-centric design philosophy
 - [[concepts/openai/symphony]] — Competitor's Agent Team orchestrator

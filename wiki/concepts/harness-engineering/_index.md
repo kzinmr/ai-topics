@@ -215,6 +215,36 @@ Ryan agrees: internalizing dependencies (even 1K-10K LOC) is feasible. Agents ca
 - [[concepts/harness-engineering/system-architecture/container-context]] — System construction patterns (Anthropic, OpenAI Responses API)
 - [[concepts/context-engineering|Context Engineering]] — Context optimization techniques (Karpathy + DSPy + Anthropic)
 
+### Agent Design and Architecture (migrated from flat concepts/)
+- [[concepts/harness-engineering/agent-architecture-decomposition]] — Agent architecture decomposition
+- [[concepts/harness-engineering/agent-design-patterns]] — Agent design patterns
+- [[concepts/harness-engineering/agent-native-architecture]] — Agent-native architecture
+- [[concepts/harness-engineering/agent-patterns]] — Agent patterns collection
+- [[concepts/harness-engineering/agent-vs-pipeline-architecture]] — Agent vs pipeline architecture trade-offs
+- [[concepts/harness-engineering/agent-ergonomics]] — Agent ergonomics
+- [[concepts/harness-engineering/agent-steering]] — Agent steering
+- [[concepts/harness-engineering/agent-statefulness]] — Agent statefulness
+- [[concepts/harness-engineering/agent-memory-engineering]] — Agent memory engineering
+- [[concepts/harness-engineering/agent-filesystem-abstraction]] — Agent filesystem abstraction
+
+### Agent Infrastructure and Lifecycle
+- [[concepts/harness-engineering/agent-execution-tax]] — Agent execution tax
+- [[concepts/harness-engineering/agent-development-lifecycle]] — Agent development lifecycle (ADLC)
+- [[concepts/harness-engineering/agent-hosting-aws]] — Agent hosting on AWS
+- [[concepts/harness-engineering/agent-serverless]] — Agent serverless
+- [[concepts/harness-engineering/agent-runtime]] — Agent runtime
+- [[concepts/harness-engineering/agent-operator-patterns]] — Agent operator patterns
+- [[concepts/harness-engineering/agent-native-product-management]] — Agent-native product management
+
+### Protocol and Skills
+- [[concepts/harness-engineering/agent-client-protocol]] — Agent client protocol
+- [[concepts/harness-engineering/agent-engineering-guide-2026]] — Agent engineering guide (2026)
+- [[concepts/harness-engineering/agent-skills-overview]] — Agent skills overview
+- [[concepts/harness-engineering/agentic-ai-skills]] — Agentic AI skills
+- [[concepts/harness-engineering/agentic-design-patterns]] — Agentic design patterns
+- [[concepts/harness-engineering/agentic-loop]] — Agentic loop
+- [[concepts/harness-engineering/agentic-sysadmin]] — Agentic sysadmin
+
 ### Cross-References
 - [[concepts/karpathy-loop]] — Karpathy's autonomous experimental design loop
 - [[concepts/skill-architecture-patterns]] — Skill self-improvement vs. management patterns

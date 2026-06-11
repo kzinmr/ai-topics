@@ -93,13 +93,13 @@ The `hf` CLI is a notable case study in tool design for agents:
 - **Skill-as-documentation** pattern for reducing agent discovery overhead
 - **Benchmarking agent tool efficiency** as a first-class engineering practice
 
-This aligns with the broader trend of [[concepts/agent-ergonomics|agent ergonomics]] — designing developer tools that work well for both humans and AI coding agents.
+This aligns with the broader trend of [[concepts/harness-engineering/agent-ergonomics|agent ergonomics]] — designing developer tools that work well for both humans and AI coding agents.
 
 ## Related Pages
 
 - [[entities/hugging-face]] — Parent organization
 - [[concepts/huggingface-skills]] — Standardized agent skill repository (includes `hf-cli` skill)
-- [[concepts/agent-ergonomics]] — Tool/language design for AI agents
+- [[concepts/harness-engineering/agent-ergonomics]] — Tool/language design for AI agents
 - [[concepts/cli-first-development]] — CLI-first design philosophy
 - [[entities/clefourrier]] — HuggingFace team member (evaluation, benchmarks)
 - [[entities/elie-bakouch]] — Former HuggingFace (SmolLM, FineWeb)

@@ -63,9 +63,9 @@ The core agent engine is shared across all customers; customer-specific differen
 
 A [[forward-deployed-engineering|Forward Deployed Engineer]] discovers business-specific needs on the customer site. Their role is to encode those discoveries into a Tenant Agent Pack in a **version-controlled, testable, and reusable** form.
 
-## Relationship with [[agent-control-plane|Agent Control Plane]]
+## Relationship with [[concepts/security-and-governance/agent-control-plane|Agent Control Plane]]
 
-The [[agent-control-plane|Agent Control Plane]] is the layer that cross-manages Tenant Agent Packs across all tenants. It centralizes versioning, deployment, monitoring, and auditing.
+The [[concepts/security-and-governance/agent-control-plane|Agent Control Plane]] is the layer that cross-manages Tenant Agent Packs across all tenants. It centralizes versioning, deployment, monitoring, and auditing.
 
 ## Comparison with Traditional SaaS
 
@@ -79,7 +79,7 @@ The [[agent-control-plane|Agent Control Plane]] is the layer that cross-manages 
 ## Related Items
 
 - [[saas-agent-era|SaaS Agent Era]] — Overall structural changes in SaaS in the Agent era
-- [[agent-control-plane|Agent Control Plane]] — The governance layer that cross-manages Tenant Agent Packs
+- [[concepts/security-and-governance/agent-control-plane|Agent Control Plane]] — The governance layer that cross-manages Tenant Agent Packs
 - [[forward-deployed-engineering|Forward Deployed Engineering]] — Source of field insights that create Packs
 - [[enterprise-ai|Enterprise AI]] — Context of enterprise AI adoption
 

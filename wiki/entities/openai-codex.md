@@ -87,7 +87,7 @@ The Every guide frames Codex usage around two fundamental modes:
 
 > "Expert Codex users know how to direct AI's capability without losing their personal judgment. They *ride* the models rather than being overwhelmed by them."
 
-**Choosing between the two modes is described as the meta-skill of modern knowledge work.** This mirrors the broader [[concepts/agentic-loop|agentic autonomy spectrum]] — the tradeoff between full automation and human-in-the-loop collaboration.
+**Choosing between the two modes is described as the meta-skill of modern knowledge work.** This mirrors the broader [[concepts/harness-engineering/agentic-loop|agentic autonomy spectrum]] — the tradeoff between full automation and human-in-the-loop collaboration.
 
 ### Goals vs. Skills
 
@@ -310,7 +310,7 @@ Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technolo
 - [[entities/jason-liu]] — Jason Liu (Codex team DX engineer, author of this guide)
 - [[concepts/codex-prompting]] — Codex prompt design patterns
 - [[concepts/codex-goal]] — Codex Goals design and operation
-- [[concepts/agent-harness]] — Agent harness design
+- [[concepts/harness-engineering/agent-harness]] — Agent harness design
 - [[concepts/metaprompting]] — Metaprompting (self-improving prompts)
 - [[entities/openai]] — OpenAI
 - [[concepts/coding-agents]] — Coding agents general

@@ -205,5 +205,5 @@ agentmemory is the most prominent application built on iii-engine, demonstrating
 - [[concepts/bm25]] — BM25 lexical retrieval used in the hybrid search pipeline
 - [[concepts/embeddings]] — Vector embeddings for semantic similarity search
 - [[concepts/vector-search]] — Dense vector retrieval component
-- [[concepts/agent-harness]] — Agent harness concept (agentmemory is a memory layer for harnesses)
+- [[concepts/harness-engineering/agent-harness]] — Agent harness concept (agentmemory is a memory layer for harnesses)
 - [[concepts/agent-memory]] — Agent memory systems overview

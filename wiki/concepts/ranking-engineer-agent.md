@@ -78,4 +78,4 @@ Meta views REA as a paradigm shift in ML engineering. The role of the engineer i
 - [[concepts/meta-capacity-efficiency-agents]] — unified AI agent platform
 - [[concepts/kernel-evolve]] — agentic kernel optimization
 - [[concepts/agent-hibernate]] — Hibernate-and-Wake pattern
-- [[concepts/agent-harness]] — agent infrastructure layer
+- [[concepts/harness-engineering/agent-harness]] — agent infrastructure layer

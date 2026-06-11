@@ -95,4 +95,4 @@ SpaceX has expressed interest in developing **orbital AI compute**. As part of t
 
 - [[entities/anthropic]] — AI safety company behind Claude
 - [[entities/simon-willison]] — Author of the original analysis
-- [[concepts/agentic-ai-governance]] — Broader context of AI governance
+- [[concepts/security-and-governance/agentic-ai-governance]] — Broader context of AI governance

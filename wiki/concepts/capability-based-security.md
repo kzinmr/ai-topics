@@ -69,7 +69,7 @@ For AI agent security, the capability-based approach is particularly important:
 
 ## Application to AI Agent Sandboxing
 
-In the context of [[concepts/agent-sandboxing]], WASI's capability model is particularly important:
+In the context of [[concepts/security-and-governance/agent-sandboxing]], WASI's capability model is particularly important:
 - The WASM runtime blocks all filesystem access
 - Only explicitly passed capabilities (file descriptors) are permitted
 - Enforces "default deny" at the hardware/runtime level
@@ -83,7 +83,7 @@ Linux's `CAP_*` (e.g., `CAP_NET_BIND_SERVICE`) are called "POSIX Capabilities" b
 
 ## Related Concepts
 
-- [[concepts/agent-sandboxing]] — Main application of capability-based isolation
+- [[concepts/security-and-governance/agent-sandboxing]] — Main application of capability-based isolation
 - [[concepts/sandbox/in-process]] — Relationship between WASM and in-process sandboxing
 - [[concepts/sandbox/infrastructure]] — Comparison with OS/hypervisor-level isolation
 - [[concepts/sandbox/js-runtime]] — Browser-based capability model

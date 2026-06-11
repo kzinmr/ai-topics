@@ -44,5 +44,5 @@ The framework demonstrates that **search strategies** (like Monte Carlo Tree Sea
 
 - [[concepts/agent-loop-orchestration]] — Agent loop orchestration patterns
 - [[concepts/bitter-lesson-agent-harnesses]] — Search-based improvement of agent harnesses
-- [[concepts/agent-engineering-guide-2026]] — Agentic engineering patterns
+- [[concepts/harness-engineering/agent-engineering-guide-2026]] — Agentic engineering patterns
 - [[entities/mit-ibm-computing-research-lab]] — MIT research context

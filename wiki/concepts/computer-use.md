@@ -59,4 +59,4 @@ OSWorld is the standard benchmark for computer use agents, spanning 360+ tasks a
 - [[entities/pointer-ai]] — Pointer AI, SOTA computer use agent developer
 - [[concepts/dynamic-workflows]] — Dynamic Workflows for parallel subagent orchestration
 - [[entities/anthropic]] — Anthropic's Claude Opus 4.8 computer use capabilities
-- [[concepts/agent-orchestration]] — Agent orchestration patterns
+- [[concepts/agent-team-swarm/agent-orchestration]] — Agent orchestration patterns

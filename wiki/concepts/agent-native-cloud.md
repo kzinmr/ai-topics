@@ -61,6 +61,6 @@ The ultimate agent-native primitive: agents that can autonomously provision, con
 ## Related Concepts
 - [[entities/railway]] — Cloud platform championing agent-native infrastructure
 - [[entities/vercel]] — Frontend cloud platform moving toward agent-native patterns
-- [[concepts/agent-runtime]] — Execution environment for AI agents
+- [[concepts/harness-engineering/agent-runtime]] — Execution environment for AI agents
 
 ## Source: Interview with Jake Cooper (Railway), swyx podcast, May 2026

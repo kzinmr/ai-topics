@@ -91,6 +91,6 @@ Vercel Sandbox runs on the same microVM infrastructure that has powered Vercel's
 - [[concepts/anthropic/managed-agents|Claude Managed Agents]] — The Anthropic platform this integrates with
 - [[comparisons/claude-managed-agents-sandbox-providers|CMA Sandbox Providers Comparison]] — Side-by-side comparison of all four providers
 - [[entities/anthropic|Anthropic]] — Platform partner
-- [[concepts/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns
+- [[concepts/security-and-governance/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns
 - [[entities/vercel-labs|Vercel Labs]] — Vercel's experimental projects
 - [[concepts/agent-security|AI Agent Security]] — Security patterns for agent infrastructure

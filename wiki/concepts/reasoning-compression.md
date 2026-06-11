@@ -96,7 +96,7 @@ Low │  █           ████  ← As models improve
 - UI generation becomes more accurate with less iteration
 - State management becomes more predictable
 
-### [[concepts/agent-serverless]]
+### [[concepts/harness-engineering/agent-serverless]]
 - Serverless agents naturally embody reasoning compression
 - Managed environments compress operational reasoning into platform capabilities
 - Less infrastructure reasoning needed = thinner shell

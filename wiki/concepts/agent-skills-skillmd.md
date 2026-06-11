@@ -17,4 +17,4 @@ redirect: concepts/agent-skills
 
 For details on the Agent Skills open standard (Anthropic) format, see [[concepts/agent-skills]].
 
-For an overview map of all Skills concepts, see [[concepts/agent-skills-overview]].
+For an overview map of all Skills concepts, see [[concepts/harness-engineering/agent-skills-overview]].

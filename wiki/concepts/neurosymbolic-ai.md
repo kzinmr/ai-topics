@@ -106,4 +106,4 @@ What remains unresolved is whether this hybrid approach scales to AGI, or whethe
 - [[concepts/claude-code-source-patterns]] — Technical analysis of Claude Code's architecture
 - [[concepts/differential-symbolic-modules]] — Differentiable symbolic modules (Hybrid NeSy technique)
 - [[concepts/formal-logic-foundation]] — Symbolic reasoning foundation
-- [[concepts/agent-governance]] — Governance layer for agent systems using NeSy principles
+- [[concepts/security-and-governance/agent-governance]] — Governance layer for agent systems using NeSy principles

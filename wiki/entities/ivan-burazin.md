@@ -59,8 +59,8 @@ Burazin argues that the market term "sandbox" undersells the concept. Humans use
 
 - [[concepts/headless-saas]] — Coined the term
 - [[concepts/headless-ai-services]] — Related API-first framing by Matt Webb
-- [[concepts/agent-serverless]] — Serverless deployment for AI agents
-- [[concepts/agent-sandboxing]] — Isolation patterns for agent execution
+- [[concepts/harness-engineering/agent-serverless]] — Serverless deployment for AI agents
+- [[concepts/security-and-governance/agent-sandboxing]] — Isolation patterns for agent execution
 
 ## Sources
 

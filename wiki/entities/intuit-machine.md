@@ -57,6 +57,6 @@ The key distinction: **context engineering vs prompt engineering**. Prompt engin
 A harness with 40+ tool definitions, embedded business logic, and thin skills as afterthoughts. This is exactly backwards from the recommended approach.
 
 ## Related
-- [[concepts/agentic-ai-skills]] — Their 10 design principles
-- [[concepts/agent-harness]] — The harness layer in their architecture
+- [[concepts/harness-engineering/agentic-ai-skills]] — Their 10 design principles
+- [[concepts/harness-engineering/agent-harness]] — The harness layer in their architecture
 - [[concepts/harness-engineering]] — Broader harness engineering principles

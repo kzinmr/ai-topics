@@ -23,7 +23,7 @@ sources:
 
 # Codex /goal — OpenAI's Built-in Ralph Loop
 
-> **Definition:** `/goal` is a slash command in Codex CLI (shipped in v0.128.0, April 30, 2026) that turns Codex into a **long-horizon autonomous agent**. It runs the canonical [[concepts/agentic-loop|agentic loop]] — plan → act → verify → correct — for **hours** of continuous work in a single invocation.
+> **Definition:** `/goal` is a slash command in Codex CLI (shipped in v0.128.0, April 30, 2026) that turns Codex into a **long-horizon autonomous agent**. It runs the canonical [[concepts/harness-engineering/agentic-loop|agentic loop]] — plan → act → verify → correct — for **hours** of continuous work in a single invocation.
 
 Greg Brockman summarized it: *"codex now has a built in Ralph loop++."*
 
@@ -155,7 +155,7 @@ The Ralphable blog recommends **token budget over iteration count**:
 
 ## Related Concepts
 
-- [[concepts/agentic-loop]] — The canonical agent execution pattern
+- [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern
 - [[concepts/karpathy-loop]] — Autonomous ML research variant
 - [[concepts/pi-autoresearch]] — Generalized metric optimization (Shopify)
 - [[concepts/codex-goal-meta-prompting]] — Using AI to generate better /goal prompts

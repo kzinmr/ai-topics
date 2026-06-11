@@ -73,6 +73,6 @@ Nemotron 3 Ultra represents NVIDIA's strategic entry into the open frontier reas
 - [[entities/nvidia]] — NVIDIA entity
 - [[concepts/mixture-of-experts]] — Mixture of Experts architecture
 - [[concepts/mamba]] — Mamba state-space models
-- [[concepts/agentic-loop]] — Agent execution cycles
+- [[concepts/harness-engineering/agentic-loop]] — Agent execution cycles
 - [[entities/fireworks-ai]] — Fireworks AI inference platform
 - [[concepts/hybrid-architecture]] — Hybrid model architectures

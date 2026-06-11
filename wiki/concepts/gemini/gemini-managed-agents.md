@@ -154,7 +154,7 @@ The key differentiator is **fully managed infrastructure** — no local setup, n
 ## Related Pages
 - [[entities/deepmind]] — Google DeepMind, develops Antigravity and Gemini models
 - [[concepts/monty-sandbox]] — Pydantic's secure Python interpreter (competing sandbox approach)
-- [[concepts/agent-runtime]] — General concept of agent execution environments
+- [[concepts/harness-engineering/agent-runtime]] — General concept of agent execution environments
 - [[concepts/agent-loop-orchestration]] — How agent loops are structured
 - [[concepts/programmatic-tool-calling]] — The paradigm of agents writing code to interact with tools
 - [[concepts/programmatic-tool-calling]] — Comparison of code execution approaches

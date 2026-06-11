@@ -24,8 +24,8 @@ AI and LLM concept pages organized by topic.
 
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, pure-functional processing (core) from side-effect-heavy decision making (shell). In AI agents, the functional core handles mechanical, verifiable tasks while the imperative shell manages validation, evaluation, and strategic decision-making.
 - [[concepts/reasoning-compression]] — The principle that software complexity and reasoning requirements will be compressed over time as models improve, eliminating the need for extensive exploration and reducing the imperative shell to validation/evaluation only.
-- [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents — managed environments with built-in SaaS integration, permissions, and security. Includes enterprise tiers with persistent logs, audit trails, and turnkey agent infrastructure.
-- [[concepts/agent-iam]] — Agent IAM / Non-Human Identity Security for managing permissions and access control for AI agents interacting with enterprise systems.
+- [[concepts/harness-engineering/agent-serverless]] — Serverless deployment pattern for AI agents — managed environments with built-in SaaS integration, permissions, and security. Includes enterprise tiers with persistent logs, audit trails, and turnkey agent infrastructure.
+- [[concepts/security-and-governance/agent-iam]] — Agent IAM / Non-Human Identity Security for managing permissions and access control for AI agents interacting with enterprise systems.
 - [[concepts/automation-series]] — 10-part series by Antoine Buteau on automation architecture: three kinds of work (deterministic/probabilistic/accountable), bounded agents, the automation boundary (code vs model vs human), HITL as design pattern, state/idempotency/queues, observability/replay, failure modes/blast radius, and an architecture worksheet.
 - [[concepts/bitter-lesson-harnessing]] — How model intelligence evolution affects the importance of harness engineering — as models get smarter, harness complexity becomes less critical.
 - [[concepts/generative-app-evolution]] — Generative App Evolution pattern: UI → Stateless App → Stateful App progression in AI-driven applications.
@@ -144,7 +144,7 @@ AI and LLM concept pages organized by topic.
 
 ## Agent-Sandboxing
 
-- [[concepts/agent-sandboxing]] — Agent Sandboxing is a spectrum of technologies for safely isolating AI agent dynamic code execution. Organizes isolation technologies like gVisor, Firecracker microVM, WASM, etc. Standard containers are insufficient due to shared kernel.
+- [[concepts/security-and-governance/agent-sandboxing]] — Agent Sandboxing is a spectrum of technologies for safely isolating AI agent dynamic code execution. Organizes isolation technologies like gVisor, Firecracker microVM, WASM, etc. Standard containers are insufficient due to shared kernel.
 
 ## Agent-Survival-Benchmark
 
@@ -152,7 +152,7 @@ AI and LLM concept pages organized by topic.
 
 ## Agent-Team-Swarm
 
-- [[concepts/agent-team-swarm]] — Agent team swarm refers to coordination patterns where multiple AI agents work together in distributed, emergent structures rather than rigid hierarchies.
+- [[concepts/agent-team-swarm/agent-team-swarm]] — Agent team swarm refers to coordination patterns where multiple AI agents work together in distributed, emergent structures rather than rigid hierarchies.
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 
 ## Agentic-Alternative-To-Graphrag
@@ -181,7 +181,7 @@ AI and LLM concept pages organized by topic.
 
 ## Agentic-Security
 
-- [[concepts/agentic-security]] — Agentic Security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the broader agent ecosystem. Covers authentication, authorization, data exfiltration prevention, MCP server security, prompt injection defense, and sandboxing strategies for agentic systems.
+- [[concepts/security-and-governance/agentic-security]] — Agentic Security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the broader agent ecosystem. Covers authentication, authorization, data exfiltration prevention, MCP server security, prompt injection defense, and sandboxing strategies for agentic systems.
 
 ## Agentic-Scaffolding
 
@@ -197,7 +197,7 @@ AI and LLM concept pages organized by topic.
 
 ## Agentic-Workflow-Patterns
 
-- [[concepts/agentic-workflow-patterns]] — (content needed)
+- [[concepts/agent-team-swarm/agentic-workflow-patterns]] — (content needed)
 
 ## Ai-Addiction-Burnout
 

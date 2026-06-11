@@ -207,5 +207,5 @@ Samuel Colvin's design philosophy: *"Start from nothing, then selectively grant 
 - [[concepts/logfire]] — Observability and tracing
 - [[entities/samuel-colvin]] — Pydantic creator
 - [[concepts/harness-engineering]] — Broader harness engineering pattern
-- [[concepts/agent-architecture-decomposition]] — 3-layer framework context
+- [[concepts/harness-engineering/agent-architecture-decomposition]] — 3-layer framework context
 - [[concepts/code-mode]] — Code execution pattern for agents

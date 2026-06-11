@@ -24,7 +24,7 @@ sources:
 related:
   - "[[entities/dex-horthy]]"
   - "[[concepts/context-engineering|Context Engineering]]"
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/spec-driven-development]]"
 ---
 
@@ -79,6 +79,6 @@ HumanLayer published the **12-Factor Agents** framework, adapting the Twelve-Fac
 
 - [[entities/dex-horthy]] — Founder
 - [[concepts/context-engineering|Context Engineering]] — FIC methodology documented here
-- [[concepts/agent-harness]] — HumanLayer's approach to harness design
+- [[concepts/harness-engineering/agent-harness]] — HumanLayer's approach to harness design
 - [[concepts/spec-driven-development]] — Related philosophy
 - [[entities/hellovai]] — BoundaryML/BAML collaborator on live coding sessions

@@ -143,4 +143,4 @@ Decision-centric security provides the **fine-grained, context-aware, lineage-tr
 - [[concepts/agent-ontology]] — How ontology serves as agentic memory
 - [[concepts/enterprise-agents]] — Human-agent teaming patterns enabled by decision-centric architecture
 - [[concepts/harness-engineering]] — Complementary execution-centric paradigm
-- [[concepts/agent-patterns]] — Staged actions, human-in-the-loop patterns
+- [[concepts/harness-engineering/agent-patterns]] — Staged actions, human-in-the-loop patterns

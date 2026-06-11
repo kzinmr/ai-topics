@@ -8,7 +8,7 @@ aliases:
   - brian-armstrong-coinbase
 related:
   - [[concepts/ai-workforce-restructuring]]
-  - [[concepts/agent-patterns]]
+  - [[concepts/harness-engineering/agent-patterns]]
 sources:
   - https://www.businessinsider.com/coinbase-layoffs-ai-brian-armstrong-job-cuts-letter-2026-5
   - https://www.reuters.com/business/world-at-work/coinbase-cut-about-14-workforce-2026-05-05/
@@ -87,4 +87,4 @@ Armstrong's public framing of Coinbase as "an intelligence, with humans around t
 ## Related Concepts
 
 - [[concepts/ai-workforce-restructuring]] — The emerging pattern of AI-driven organizational redesign
-- [[concepts/agent-patterns]] — Managing "fleets of AI agents" parallels the subagent orchestration patterns
+- [[concepts/harness-engineering/agent-patterns]] — Managing "fleets of AI agents" parallels the subagent orchestration patterns

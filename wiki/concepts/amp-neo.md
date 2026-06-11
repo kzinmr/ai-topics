@@ -16,7 +16,7 @@ aliases:
 related:
   - "[[entities/amp]]"
   - "[[concepts/harness-commoditization]]"
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[entities/thorsten-ball]]"
 sources:
   - raw/articles/2026-05-06_ampcode-neo-rebuilt.md

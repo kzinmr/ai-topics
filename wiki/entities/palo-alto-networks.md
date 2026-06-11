@@ -16,9 +16,9 @@ sources: [raw/articles/2026-05-05_ai-agent-news-weekly-apr28-may4.md]
 
 ## AI Agent Security Strategy
 
-The acquisition of Portkey (deal closes Q4 2026) positions Palo Alto Networks as a leader in [[concepts/agentic-security|agentic security]] — protecting autonomous AI agents that process trillions of tokens monthly across enterprise systems.
+The acquisition of Portkey (deal closes Q4 2026) positions Palo Alto Networks as a leader in [[concepts/security-and-governance/agentic-security|agentic security]] — protecting autonomous AI agents that process trillions of tokens monthly across enterprise systems.
 
 ## Connections
 - Acquired [[entities/portkey|Portkey]] (May 2026)
-- Competes in the broader [[concepts/agentic-security|Agentic Security]] market
+- Competes in the broader [[concepts/security-and-governance/agentic-security|Agentic Security]] market
 - Addresses the [[concepts/shadow-ai-governance|Shadow AI Governance]] crisis

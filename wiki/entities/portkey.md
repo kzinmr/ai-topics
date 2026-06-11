@@ -35,12 +35,12 @@ AI agents increasingly operate with special access to enterprise systems — act
 
 Palo Alto Networks' acquisition of Portkey signals that AI agent security is maturing from a niche concern into a core enterprise cybersecurity category. This parallels the trajectory of:
 
-- [[concepts/agent-iam|Agent IAM]] — identity and access management for non-human identities
-- [[concepts/agentic-security|Agentic Security]] — the broader security patterns for AI agents
-- [[concepts/agent-governance|Agent Governance]] — structured approaches to agent oversight
+- [[concepts/security-and-governance/agent-iam|Agent IAM]] — identity and access management for non-human identities
+- [[concepts/security-and-governance/agentic-security|Agentic Security]] — the broader security patterns for AI agents
+- [[concepts/security-and-governance/agent-governance|Agent Governance]] — structured approaches to agent oversight
 
 ## Connections
-- Part of the [[concepts/agentic-security|Agentic Security]] ecosystem
+- Part of the [[concepts/security-and-governance/agentic-security|Agentic Security]] ecosystem
 - Addresses the visibility gap in [[concepts/shadow-ai-governance|Shadow AI Governance]]
 - Complements [[concepts/zero-trust-agentic-ai|Zero Trust Agentic AI]] architectures
 - Will integrate with Palo Alto Networks' broader security platform

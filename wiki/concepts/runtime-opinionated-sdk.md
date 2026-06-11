@@ -133,7 +133,7 @@ The common thread: all embed the assumption that **the runtime, not the develope
 
 ## See Also
 
-- [[concepts/agent-runtime]] — The full execution environment analysis: infrastructure substrate + execution semantics, control flow ownership, structural inversion
+- [[concepts/harness-engineering/agent-runtime]] — The full execution environment analysis: infrastructure substrate + execution semantics, control flow ownership, structural inversion
 - [[comparisons/open-harness-vs-agent-framework]] §9 — Runtime-centric vs workflow-centric taxonomy
-- [[concepts/agent-harness]] — Closed vs Open Harness, Harness Type comparison
+- [[concepts/harness-engineering/agent-harness]] — Closed vs Open Harness, Harness Type comparison
 - [[entities/pi]] — PI as Runtime Substrate

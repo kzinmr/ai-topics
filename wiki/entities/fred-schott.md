@@ -19,7 +19,7 @@ sources:
   - "https://x.com/FredKSchott/status/2050274923852210397"
   - "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md"
 related:
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[entities/addy-osmani]]"
   - "[[entities/vtrivedy10]]"
 ---
@@ -71,5 +71,5 @@ Schott's framing aligns perfectly with Vivek Trivedy's definition. Flue explicit
 
 - [[entities/addy-osmani]] — Cited Flue as a HaaS exemplar in "Agent Harness Engineering"
 - [[entities/vtrivedy10]] — Coined "Agent = Model + Harness"
-- [[concepts/agent-harness]] — Comprehensive harness architecture reference
+- [[concepts/harness-engineering/agent-harness]] — Comprehensive harness architecture reference
 - [[concepts/why-harness-development-boom]] — Structural forces driving harness development

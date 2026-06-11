@@ -107,7 +107,7 @@ Both implementations confirm the same philosophical principle: the agent does wo
 - [[raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf]] — Doug Turnbull's HaystackConf talk applying autoresearch to search ranking (BM25/RRF optimization with guardrails)
 - [[concepts/agent-driven-ranker-optimization]] — Guardrail framework for agent-coded rankers
 - [[concepts/autonomous-component-optimization]] — Daniel Miessler's generalization to any knowledge work
-- [[concepts/agentic-loop]] — The canonical agent loop pattern
+- [[concepts/harness-engineering/agentic-loop]] — The canonical agent loop pattern
 - [[concepts/codex-goal]] — Codex /goal command (Ralph loop built-in)
 - [[concepts/self-improving-agents]] — Broader self-improving agent category
 

@@ -79,7 +79,7 @@ Zero is Apache 2.0 licensed and written primarily in C (v0.1.2, May 2026).
 
 - [[entities/armin-ronacher]] — Author of "A Language For Agents", primary theorist of agent-first design
 - [[entities/vercel-labs]] — Creators of Zero, the agent-first systems language
-- [[concepts/agent-ergonomics]] — Broader topic of how agents interact with code and tools
+- [[concepts/harness-engineering/agent-ergonomics]] — Broader topic of how agents interact with code and tools
 - [[concepts/harness-engineering/agentic-engineering]] — Professional patterns for coding agent usage
 - [[concepts/programming-languages]] — Type systems, compilers, language design
 

@@ -139,7 +139,7 @@ What is needed to convert it into an Autoresearch Desk:
 
 ## Related Concepts
 
-- [[concepts/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
+- [[concepts/harness-engineering/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
 - [[concepts/harness-engineering/context-engineering]] — Technical foundation of Context Engineering
 - [[concepts/agent-media]] — Autoresearch Desk: from Wiki to multi-channel distribution engine
 - [[entities/ronin-deronin]] — Ronin: proposer of the skill graph architecture

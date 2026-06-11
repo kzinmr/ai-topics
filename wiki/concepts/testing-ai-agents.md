@@ -136,7 +136,7 @@ Official MCP servers often ship with gaps:
 
 ## Related
 
-- [[concepts/agent-engineering-guide-2026]] — Evals as unit tests for agents
+- [[concepts/harness-engineering/agent-engineering-guide-2026]] — Evals as unit tests for agents
 - [[concepts/agentic-manual-testing]] — Human-in-the-loop exploratory testing
 - [[concepts/knowledge-shields]] — Testing to invalidate agent assumptions
 - [[entities/merge-dev]] — Merge platform, Agent Handler, and MCP testing tools

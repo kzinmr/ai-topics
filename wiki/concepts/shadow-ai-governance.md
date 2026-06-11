@@ -49,21 +49,21 @@ Fortune 500 security teams are adopting this five-pillar approach:
 Centralized inventory of every agent (sanctioned and shadow). Requires **active discovery** to find agents already running.
 
 ### II. Access Control
-JIT provisioning with TTL-based agent identities. Agents treated as independent identities, retired when tasks complete. See also: [[concepts/agent-iam|Agent IAM]].
+JIT provisioning with TTL-based agent identities. Agents treated as independent identities, retired when tasks complete. See also: [[concepts/security-and-governance/agent-iam|Agent IAM]].
 
 ### III. Visualization
 Real-time dashboards for agent-data interaction. Currently only **21% of enterprises** have runtime visibility into agent actions.
 
 ### IV. Interoperability
-Governance across ecosystems (Microsoft, open-source). Relies on [[concepts/model-context-protocol-mcp|MCP]] for tool connections and [[concepts/agent-communication-protocols|A2A]] for inter-agent communication.
+Governance across ecosystems (Microsoft, open-source). Relies on [[concepts/model-context-protocol-mcp|MCP]] for tool connections and [[concepts/agent-team-swarm/agent-communication-protocols|A2A]] for inter-agent communication.
 
 ### V. Security
-Runtime enforcement and behavioral anomaly detection — stopping agents the moment they act outside expected parameters. See: [[concepts/agentic-security|Agentic Security]].
+Runtime enforcement and behavioral anomaly detection — stopping agents the moment they act outside expected parameters. See: [[concepts/security-and-governance/agentic-security|Agentic Security]].
 
 ## Relationship to Adjacent Concepts
-- Extends [[concepts/agent-governance|Agent Governance]] with the "shadow" dimension — unsanctioned, unmanaged agents
+- Extends [[concepts/security-and-governance/agent-governance|Agent Governance]] with the "shadow" dimension — unsanctioned, unmanaged agents
 - Relates to [[concepts/excessive-agency|Excessive Agency]] (OWASP Top 10) where over-provisioned permissions create risk
-- Complements [[concepts/agent-iam|Agent IAM]] with the JIT/identity-primitive approach
+- Complements [[concepts/security-and-governance/agent-iam|Agent IAM]] with the JIT/identity-primitive approach
 - Connects to [[concepts/zero-trust-agentic-ai|Zero Trust Agentic AI]] — "If you can't audit an agent's logic, you shouldn't have it on your network."
 
 ## Implementation Roadmap

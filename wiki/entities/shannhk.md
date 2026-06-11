@@ -27,7 +27,7 @@ sources:
 related:
   - "[[entities/hermes-agent]]"
   - "[[concepts/hermes-agent-use-cases]]"
-  - "[[concepts/agent-operator-patterns]]"
+  - "[[concepts/harness-engineering/agent-operator-patterns]]"
   - "[[comparisons/hermes-vs-openclaw]]"
 ---
 
@@ -102,7 +102,7 @@ Leading agent product development at Espressio AI, an AI-powered marketing autom
 ## Cross-References
 
 - **[[entities/hermes-agent]]** — Primary agent framework Shann operates at scale. His 4-level fleet model adds operational depth to Hermes Agent documentation
-- **[[concepts/agent-operator-patterns]]** — Systematized into 6 operational patterns (Control Room, Brain Layers, Agent Creation Heuristics, 4-Level Fleet Model, Prototype→Production, Agent Ergonomics). Includes application analysis for wiki management systems.
+- **[[concepts/harness-engineering/agent-operator-patterns]]** — Systematized into 6 operational patterns (Control Room, Brain Layers, Agent Creation Heuristics, 4-Level Fleet Model, Prototype→Production, Agent Ergonomics). Includes application analysis for wiki management systems.
 - **[[concepts/hermes-agent-use-cases]]** — Shann's 7-agent fleet provides complementary use cases to the 7 canonical workflows
 - **[[comparisons/hermes-vs-openclaw]]** — Shann's "Rails vs Linux" framing captures the philosophical distinction succinctly
 - **Nous Research** — Hosted Nous Research at EspressioAI HQ in Lisbon for a Hermes Agent evening (Q&A with @yeahfortommy)

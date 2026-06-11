@@ -124,7 +124,7 @@ Intersection of China's AIoT (AI of Things) market with OpenClaw:
 - [[concepts/china-agentic-coding-sprint]] — China's rapid catch-up in coding agents (Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1)
 - [[concepts/us-china-ai-competition]] — Broader context of US-China AI competition
 - [[concepts/zero-trust-agentic-ai]] — Agent security frameworks
-- [[concepts/agentic-ai-governance]] — Agent AI governance
+- [[concepts/security-and-governance/agentic-ai-governance]] — Agent AI governance
 - [[entities/minimax]] — MiniMax (MaxClaw + 600% stock surge)
 - [[entities/kimi]] — MoonShot AI / Kimi Claw
 - [[concepts/local-llm/model-distillation]] — Distillation by Chinese companies (related to Digital NATO)

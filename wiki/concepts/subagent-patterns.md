@@ -17,7 +17,7 @@ related:
   - [[concepts/harness-engineering]]
   - [[concepts/mistral-vibe-remote-agents]]
   - [[concepts/agent-observability-feedback]]
-  - [[concepts/agent-patterns]]
+  - [[concepts/harness-engineering/agent-patterns]]
 sources:
   - raw/articles/2026-05-05-how-agents-manage-other-agents-four-subagent-patterns.md
   - https://www.philschmid.de/subagent-patterns-2026
@@ -99,7 +99,7 @@ The main agent acts as a high-level supervisor. It sets up the team and steps ba
 - [[concepts/agent-observability-feedback]] — Observability and feedback loops are critical for managing subagent teams
 - [[concepts/harness-engineering]] — The harness surrounds and constrains agents; subagent patterns are part of the harness design
 - [[concepts/mistral-vibe-remote-agents]] — Factory/enterprise-level subagent orchestration with cloud execution
-- [[concepts/agent-patterns]] — Broader agent architectural patterns beyond subagent coordination
+- [[concepts/harness-engineering/agent-patterns]] — Broader agent architectural patterns beyond subagent coordination
 
 ## References
 

@@ -113,7 +113,7 @@ This aligns with [[concepts/harness-engineering]]'s emphasis on the outer loop: 
 
 ## Related Works
 
-- [[concepts/agent-skills-overview]] — Agent Skills Concept Cluster Map (Parent Page)
+- [[concepts/harness-engineering/agent-skills-overview]] — Agent Skills Concept Cluster Map (Parent Page)
 - [[concepts/agentic-search]] — Level 2 (skill/tool discovery); BM25 outperforms dense for agent queries — complementary finding
 - [[concepts/skill-architecture-patterns]] — Hermes Agent vs OpenClaw; the skill scale explosion SRA addresses
 - [[concepts/markdown-based-skills]] — Markdown skills format; progressive disclosure pattern

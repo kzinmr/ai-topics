@@ -91,7 +91,7 @@ Sierra's valuation ($15B) and ARR growth ($200M+) make it one of the highest-val
 - [[concepts/ai-agents]] — Core technology
 - [[concepts/ai-benchmarks/tau-knowledge]] — Sierra's knowledge-grounded agent benchmark
 - [[concepts/ai-benchmarks/tau-bench]] — Sierra's conversational agent benchmark
-- [[concepts/agent-team-swarm]] — Related agent deployment patterns
+- [[concepts/agent-team-swarm/agent-team-swarm]] — Related agent deployment patterns
 - [[entities/anthropic]] — Claude powers enterprise agent deployments in the same market
 
 ## Links

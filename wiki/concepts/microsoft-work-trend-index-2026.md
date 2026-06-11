@@ -54,6 +54,6 @@ This represents a shift from generic AI adoption to organization-specific knowle
 ## Related
 
 - [[concepts/ai-adoption]] — Enterprise AI adoption patterns
-- [[concepts/agentic-ai-governance]] — Governance frameworks for AI agency
+- [[concepts/security-and-governance/agentic-ai-governance]] — Governance frameworks for AI agency
 - [[entities/microsoft]] — Microsoft's AI strategy
 - [[concepts/organizational-ai-maturity]] — Organizational readiness frameworks

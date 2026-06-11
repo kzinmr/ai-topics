@@ -24,7 +24,7 @@ sources:
   - "raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents.md"
   - "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md"
 related:
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/context-engineering|Context Engineering]]"
   - "[[entities/addy-osmani]]"
   - "[[entities/vtrivedy10]]"
@@ -82,7 +82,7 @@ Horthy has been monitoring convergence of agent harness patterns across the indu
 
 - [[entities/humanlayer]] — Company founded by Dex Horthy
 - [[concepts/context-engineering|Context Engineering]] — FIC pattern documented here
-- [[concepts/agent-harness]] — Horthy cited in harness engineering discourse
+- [[concepts/harness-engineering/agent-harness]] — Horthy cited in harness engineering discourse
 - [[entities/addy-osmani]] — Cited Horthy as key voice in harness pattern tracking
 - [[entities/vtrivedy10]] — Coined "Agent = Model + Harness"
 - [[entities/geoff-huntley]] — Collaborator on "Ralph Wiggum as a Software Engineer"

@@ -18,7 +18,7 @@ sources: [raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md, raw/n
 
 # Zero — The Programming Language for Agents
 
-**Zero** is an experimental systems programming language by **Vercel Labs**, designed from the ground up for human-AI agent collaboration. Launched May 15, 2026 (v0.1.0), it directly addresses many of the agent-oriented language design principles articulated in [[entities/armin-ronacher|Armin Ronacher's]] "A Language For Agents" essay and complements [[concepts/agent-ergonomics]] theory.
+**Zero** is an experimental systems programming language by **Vercel Labs**, designed from the ground up for human-AI agent collaboration. Launched May 15, 2026 (v0.1.0), it directly addresses many of the agent-oriented language design principles articulated in [[entities/armin-ronacher|Armin Ronacher's]] "A Language For Agents" essay and complements [[concepts/harness-engineering/agent-ergonomics]] theory.
 
 - **Repository:** [vercel-labs/zero](https://github.com/vercel-labs/zero)
 - **Homepage:** [zerolang.ai](https://zerolang.ai)
@@ -141,6 +141,6 @@ This is a remarkable validation of the agent-ergonomics thesis: within 3 months 
 
 ## Related
 - [[entities/armin-ronacher]] — Author of "A Language For Agents" — Zero implements his design principles
-- [[concepts/agent-ergonomics]] — Agent-oriented language design theory
+- [[concepts/harness-engineering/agent-ergonomics]] — Agent-oriented language design theory
 - [[entities/vercel]] — Vercel Inc., the company behind Zero
 - [[concepts/programming-languages]] — Broader programming language design

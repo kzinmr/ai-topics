@@ -78,7 +78,7 @@ This tension suggests several design principles for coding agents:
 - [[vibe-coding]] — The paradigm of describing code rather than writing it
 - [[agentic-engineering]] — Disciplined use of AI agents for software development
 - [[ai-agent-architecture]] — How agent architecture affects user experience
-- [[agent-ergonomics]] — Human factors in agent interaction design
+- [[concepts/harness-engineering/agent-ergonomics]] — Human factors in agent interaction design
 
 ## Open Questions
 

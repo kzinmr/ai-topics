@@ -36,7 +36,7 @@ Replaces prompt engineering by architecting the entire information environment:
 - Purpose-driven agent orchestration
 - Explicit structure over agent sprawl
 - Organizational memory as critical infrastructure
-- Connects to [[concepts/agent-governance]] and [[concepts/reflexive-ai]]
+- Connects to [[concepts/security-and-governance/agent-governance]] and [[concepts/reflexive-ai]]
 
 ## Connection to Other Trends
 
@@ -51,7 +51,7 @@ The solo founder stack emerges from the intersection of:
 
 - [[vibe-ceo]]
 - [[concepts/context-engineering|Context Engineering]]
-- [[concepts/agent-governance]]
+- [[concepts/security-and-governance/agent-governance]]
 - [[concepts/reflexive-ai]]
 - [[concepts/experience-is-a-tax]]
 - [[one-person-unicorn]]

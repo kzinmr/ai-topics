@@ -47,9 +47,9 @@ Daytona builds **composable computers (sandboxes) for AI agents** — fast, stat
 
 ## Related Concepts
 
-- [[concepts/agent-sandboxing]] — Daytona's core technology category
+- [[concepts/security-and-governance/agent-sandboxing]] — Daytona's core technology category
 - [[concepts/headless-saas]] — Ivan Burazin's framing of the broader trend
-- [[concepts/agent-serverless]] — Serverless computing for AI agents
+- [[concepts/harness-engineering/agent-serverless]] — Serverless computing for AI agents
 
 ## Sources
 

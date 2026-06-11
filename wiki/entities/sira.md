@@ -160,5 +160,5 @@ The threshold τ is a tunable hyperparameter controlling the precision-recall tr
 - [[concepts/lexical-search]] — Bag-of-words retrieval approaches
 - [[concepts/rag]] — Retrieval-Augmented Generation
 - [[concepts/pseudo-relevance-feedback]] — Traditional query refinement
-- [[concepts/agentic-design-patterns]] — Multi-round agentic search patterns (ReAct, IRCoT)
+- [[concepts/harness-engineering/agentic-design-patterns]] — Multi-round agentic search patterns (ReAct, IRCoT)
 - [[entities/daniel-tunkelang]] — Bag-of-documents model, query understanding

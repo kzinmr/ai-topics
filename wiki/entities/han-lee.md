@@ -45,7 +45,7 @@ His 2026 article series **"Hidden Technical Debt of AI Systems"** — grounded i
 
 ### Hidden Technical Debt Series
 
-- **[Hidden Technical Debt of AI Systems: Agent Runtime](https://leehanchung.github.io/blogs/2026/04/24/hidden-technical-debt-agent-runtime/)** (Apr 2026) — The definitive article establishing **agent runtime** as the critical underinvested layer in agent systems. Covers: isolation primitive stack (containers → Firecracker → gVisor → Kata → V8 isolates), sandbox vendor landscape, experiment-vs-production runtime divergence, **runtime shift** (a new flavor of distributional shift), and **runtime debt**. Raw: [[raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime]]. Directly linked to [[concepts/agent-runtime]].
+- **[Hidden Technical Debt of AI Systems: Agent Runtime](https://leehanchung.github.io/blogs/2026/04/24/hidden-technical-debt-agent-runtime/)** (Apr 2026) — The definitive article establishing **agent runtime** as the critical underinvested layer in agent systems. Covers: isolation primitive stack (containers → Firecracker → gVisor → Kata → V8 isolates), sandbox vendor landscape, experiment-vs-production runtime divergence, **runtime shift** (a new flavor of distributional shift), and **runtime debt**. Raw: [[raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime]]. Directly linked to [[concepts/harness-engineering/agent-runtime]].
 - **[Hidden Technical Debt of AI Systems: Agent Harness](https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness/)** (May 2026) — Third in the series. Deconstructs the **agent harness**: the orchestration layer (system prompts, tool surfaces, rollout protocols, context managers, memory, sub-agent topologies, guardrails, verifiers, observability). Key contributions: (1) **training vs production harness asymmetry** — they are different artifacts and should be engineered separately; (2) **first-party vs third-party harness** dynamics — models run out-of-distribution in third-party harnesses, but third parties can win on neglected axes (e.g., Letta Code's memory investment); (3) **five harness design principles** including "treat the harness as temporary scaffolding." Raw: [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness]].
 
 ### AI Agent Infrastructure & Theory
@@ -91,8 +91,8 @@ His 2026 article series **"Hidden Technical Debt of AI Systems"** — grounded i
 
 ## Related Wiki Pages
 
-- [[concepts/agent-runtime]] — Comprehensive concept page built from Lee's Agent Runtime article
-- [[concepts/agent-harness]] — The harness runs inside the runtime; Lee's taxonomy formalizes $H$ and $S$
+- [[concepts/harness-engineering/agent-runtime]] — Comprehensive concept page built from Lee's Agent Runtime article
+- [[concepts/harness-engineering/agent-harness]] — The harness runs inside the runtime; Lee's taxonomy formalizes $H$ and $S$
 - [[concepts/reduce-offload-isolate]] — Anthropic's context engineering approach complements runtime isolation
 - [[entities/cognition]] — Devin's cloud agent infrastructure (cited in Lee's article)
 - [[entities/manus]] — Agent runtime snapshotting (cited)

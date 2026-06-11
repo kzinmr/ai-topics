@@ -170,7 +170,7 @@ Within Cognition, Devin's data analysis role has been formalized as **DANA (Data
 This is a practical example of **Agent Specialization** — defining different Knowledge, MCP, and behavior profiles per role on the same agent foundation.
 
 ### Related
-- [[concepts/agent-patterns]] — Practical examples of agent specialization patterns
+- [[concepts/harness-engineering/agent-patterns]] — Practical examples of agent specialization patterns
 - [[concepts/closing-agent-loop]] — Closed-loop specialized for data analysis
 
 ## End-to-End Bug Debugging — Merging Data Analysis and Engineering

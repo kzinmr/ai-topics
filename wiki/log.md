@@ -380,13 +380,13 @@
 - **2026-06-09 11:30 UTC** — X Bookmarks Ingest: Processed 3 bookmarks (3 X Articles) with full plain_text content available.
   - **ENRICHED: [[concepts/test-time-scaling]]** — Added "Evaluation & Safety Implications" section: scalar benchmark problem (GPT-5.5 case study), performance-vs-compute curves, AI preparedness implications, Gemini 3 Deep Think scaffolding equivalency, specific recommendations for labs/RSPs. Source: [[raw/articles/2026-06-09_x-article_implications-of-large-scale-test-time-compute.md]]
   - **ENRICHED: [[entities/pi]]** — Added "Project Trust Approval System" section: AGENTS.md injection threat model, once-per-project approval design, cross-agent comparison (Claude Code, Codex CLI). Source: [[raw/articles/2026-06-08_x-article_pi-new-approval-system.md]]
-  - **ENRICHED: [[concepts/agent-security-landscape-2026]]** — Added AGENTS.md/CLAUDE.md injection as Critical attack vector in prompt injection table, with cross-reference to Pi's mitigation.
+  - **ENRICHED: [[concepts/security-and-governance/agent-security-landscape-2026]]** — Added AGENTS.md/CLAUDE.md injection as Critical attack vector in prompt injection table, with cross-reference to Pi's mitigation.
   - **NEW: [[entities/yoonho-lee]]** — Stanford CS PhD student (Chelsea Finn's IRIS Lab), first author of Meta-Harness (arXiv:2603.28052). Research: continual learning in text space, text optimization, AI agents. Author of "We Should Take Text Optimization More Seriously" (Jun 2026). Source: [[raw/articles/2026-06-08_yoonho-lee_we-should-take-text-optimization-more-seriously.md]]
   - **NEW: [[concepts/text-optimization]]** — Comprehensive concept page: three theses (legitimate update mechanism, sample efficiency, update-time compute), learning outside weights, reflective optimization loop, counterpoints to weight-only learning, staging ground pattern, research directions. Authored by Yoonho Lee. Cross-referenced with [[concepts/meta-harness]], [[concepts/harness-engineering]], [[concepts/context-engineering|Context Engineering]], [[concepts/test-time-scaling]].
   - **UPDATED: [[concepts/meta-harness]]** — Added text-optimization tag and cross-reference, updated sources with Lee's essay, bumped updated date.
   - **Raw articles saved**: 3 (test-time compute, Pi approval system, text optimization essay)- **2026-06-09 11:12 UTC** — active-crawl: Created 4 new concept pages and raw articles from cross-referenced HN, X/Twitter, and wiki gap analysis.
   - **NEW: [[concepts/llama-4]]** — Meta's April 2026 open-weight multimodal model family (Scout, Maverick variants). Top wiki gap — previously only LLaMA 3 entity existed. Source: [[raw/articles/2026-06-09_meta-llama-4.md]]
-  - **NEW: [[concepts/agent-security-landscape-2026]]** — 85% prompt injection success rate (78-study meta-analysis), defense layers (sandboxing, DLP, runtime enforcement), industry initiatives. Source: [[raw/articles/2026-06-09_agent-security-prompt-injection-landscape.md]]
+  - **NEW: [[concepts/security-and-governance/agent-security-landscape-2026]]** — 85% prompt injection success rate (78-study meta-analysis), defense layers (sandboxing, DLP, runtime enforcement), industry initiatives. Source: [[raw/articles/2026-06-09_agent-security-prompt-injection-landscape.md]]
   - **NEW: [[concepts/model-merging]]** — SLERP, TIES-Merging, DARE, Sakana AI evolutionary merging, mergekit ecosystem. Source: [[raw/articles/2026-06-09_model-merging-evolutionary-techniques.md]]
   - **NEW: [[concepts/apple-gemini-ai-architecture]]** — Apple's June 2026 strategic shift to Google Gemini models (611 HN pts). Source: [[raw/articles/2026-06-09_apple-gemini-ai-architecture.md]]
 - **2026-06-09** — Ingested Doug Turnbull's "Three kinds of agentic search" blog post.
@@ -673,7 +673,7 @@ Pipeline saturation pattern confirmed: daily pipelines (blog-ingest, newsletter-
 - **Blog post created**: `blog/2026-06-08_hermes_vision-md-bitter-lesson.md`
 - **Title**: VISION.mdに検証ルールを書くな — Bitter Lessonは開発方法論にも来る
 - **Summary**: steipeteの「I use a VISION.md」という一行を起点に、Rich SuttonのBitter Lessonを開発方法論に適用。検証ルールの精巧な設計（テスト、型チェック、LLM-as-judge）は人間設計の特殊的手法であり、VISION.mdに代表される「原則を渡して手段を委ねる」アプローチが計算力活用の一般的方法として長期的に勝つ。VISION.mdは検証文書ではなく同一性の文書。4つのパターン（問い、Negative Space、品味、North Star Question）を提案。
-- **Sources**: [[entities/peter-steinberger]], [[concepts/agentic-loop]], [[concepts/agentic-engineering]], [[concepts/generator-evaluator-pattern]], [[concepts/dynamic-workflows]], [[concepts/harness-commoditization]]
+- **Sources**: [[entities/peter-steinberger]], [[concepts/harness-engineering/agentic-loop]], [[concepts/agentic-engineering]], [[concepts/generator-evaluator-pattern]], [[concepts/dynamic-workflows]], [[concepts/harness-commoditization]]
 
 ---
 ## 2026-06-08 Codex Autocompaction Comment Addition
@@ -1203,7 +1203,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 
 **Bookmark 3 — Token Yield (Glean):** Glean frames token yield as an architecture problem with 4 levers: context quality, model routing, continual learning, harness design. Added "Token Yield" framework section to [[concepts/token-economics]] with Glean MCP benchmark (2.5x preference, 43k vs 83k tokens). Enriched [[entities/glean]] with Token Yield Framework section.
 
-**Bookmark 4 — PostgresFS vs Skills (Arize + @SufjanFana):** Controlled experiment: Claude Sonnet 4.6 agent with PostgresFS (93/100) vs skill-based SQL+real Bash (99/100). Added experiment section to [[entities/arize]]. **Created [[concepts/agent-filesystem-abstraction]]** — new concept page covering the ChromaFS pattern, empirical comparison, maintenance tradeoff, and when-to-use guide.
+**Bookmark 4 — PostgresFS vs Skills (Arize + @SufjanFana):** Controlled experiment: Claude Sonnet 4.6 agent with PostgresFS (93/100) vs skill-based SQL+real Bash (99/100). Added experiment section to [[entities/arize]]. **Created [[concepts/harness-engineering/agent-filesystem-abstraction]]** — new concept page covering the ChromaFS pattern, empirical comparison, maintenance tradeoff, and when-to-use guide.
 
 **Raw articles:** 4 saved to wiki/raw/articles/
 **Index:** Total pages 2250→2251, Concepts 1460→1461
@@ -1335,7 +1335,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 
 - **New concept page:** [[concepts/exhaustive-agentic-search]] — Filesystem-metaphor search tools, BEAM search as systematic directory traversal, subagent-as-tool composition, orchestrator pattern, expert gathering with NAICS classification + embedding-based local search, personality tracking across runs.
 
-- **Updated:** [[concepts/agent-steering]] (added source reference + cross-link to new concept page), [[concepts/long-running-search-agents]] (added source reference), [[index.md]] (added raw article + concept page entries)
+- **Updated:** [[concepts/harness-engineering/agent-steering]] (added source reference + cross-link to new concept page), [[concepts/long-running-search-agents]] (added source reference), [[index.md]] (added raw article + concept page entries)
 
 ---
 ## 2026-06-03 x-bookmarks-ingest | OPSD empirical analysis (ar0cket1) + LangChain RubricMiddleware
@@ -1377,7 +1377,7 @@ Archive: wiki/raw/archived/triage/backlog/2026-06-06_20260606T200041Z.json
 **Cross-references**:
 - → [[concepts/rlm-recursive-language-models]] (existing, comprehensive — this lecture applies RLMs to search)
 - → [[concepts/autoresearch-bm25-msmarco]] (existing — Lesson 6 generalizes this pattern)
-- → [[concepts/agent-steering]] (existing — guardrails are a steering pattern)
+- → [[concepts/harness-engineering/agent-steering]] (existing — guardrails are a steering pattern)
 - → [[concepts/agentic-search]] (existing — ranker optimization is the coding agent layer)
 - → [[concepts/eval-loops]] (existing — same three-part structure)
 
@@ -1826,7 +1826,7 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 - **New concept**: [[concepts/ai-agent-video-editing]] — AI agent video editing meta-pattern: Cursor agent watches YouTube tutorial, replicates process, packages as agent skill. AssemblyAI speech-to-text with word-level timestamps. Source: Arcturus Labs
 - **New concept**: [[concepts/agent-productivity]] — AI coding agent impact on productivity and attention. David Wilson's "thermonuclear ADHD amplifier" metaphor. Project proliferation syndrome, HN ADHD split response. Simon Willison's discipline framing. Source: simonwillison.net
 - **New concept**: [[concepts/llm-understanding]] — LLM understanding debate: Gary Marcus vs Geoffrey Hinton. Pope Leo XIV on comprehension vs text approximation. Capraro & Marcus Nature paper. Source: garymarcus.substack.com
-- **Enriched**: [[concepts/agent-governance]] — Added Merge Agent Handler section (SCIM-based identity provisioning, DLP scanning, audit trails, role-based AI access). Source: merge.dev
+- **Enriched**: [[concepts/security-and-governance/agent-governance]] — Added Merge Agent Handler section (SCIM-based identity provisioning, DLP scanning, audit trails, role-based AI access). Source: merge.dev
 - **Enriched**: [[entities/justine-tunney]] — Added rseq restartable sequences coverage (34-43x malloc speedup on 96-128 core CPUs), Google Gradient Canopy job offer, LLM-not-yet-capable-for-rseq observation. Updated date and sources.
 - **Updated**: index.md — Added 3 new concept entries, updated counts (Concepts: 818→821, Total: 2189→2192, Indexed: 1598→1601)
 - **Sources**: blog triage checkpoint 20260601T071331Z
@@ -1950,10 +1950,10 @@ Processed 1 X bookmark from @mvanhorn: "Every Agentic Engineering Hack I Know (J
 ## [2026-05-31] blog-ingest | 20 articles saved, 3 wiki pages processed
 
 ### Pages Created
-- **[[concepts/agent-vs-pipeline-architecture]]** — Agent vs Pipeline architecture: fundamental distinction between control flow in code (pipelines) vs delegated to LLM (agents). Key differentiator: context assembly. Migration is one-directional (pipeline→agent). From Sean Goedecke's article.
+- **[[concepts/harness-engineering/agent-vs-pipeline-architecture]]** — Agent vs Pipeline architecture: fundamental distinction between control flow in code (pipelines) vs delegated to LLM (agents). Key differentiator: context assembly. Migration is one-directional (pipeline→agent). From Sean Goedecke's article.
 
 ### Pages Updated
-- **[[concepts/agent-sandboxing]]** — Added Anthropic's containment strategy across products (Claude.ai: gVisor, Claude Code macOS: Seatbelt, Claude Code Linux: Bubblewrap, Claude Cowork: Apple Virtualization/HCS), open-sourced srt (Sandbox Runtime), API file exfiltration vector documentation. Updated sources.
+- **[[concepts/security-and-governance/agent-sandboxing]]** — Added Anthropic's containment strategy across products (Claude.ai: gVisor, Claude Code macOS: Seatbelt, Claude Code Linux: Bubblewrap, Claude Cowork: Apple Virtualization/HCS), open-sourced srt (Sandbox Runtime), API file exfiltration vector documentation. Updated sources.
 - **[[entities/anthropic]]** — Frontmatter date updated to 2026-05-31 (already had $47B run-rate and Series H details from prior ingest).
 
 ### Raw Articles Saved
@@ -2104,7 +2104,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **3 duplicate index entries removed**:
   - `[[entities/anthropic]]` (duplicate of existing entry at line 18)
   - `[[entities/doug-turnbull]]` (duplicate of existing entry at line 37)
-  - `[[concepts/agent-engineering-guide-2026]]` (kept richer entry with display text at line 1138)
+  - `[[concepts/harness-engineering/agent-engineering-guide-2026]]` (kept richer entry with display text at line 1138)
 - **Header counts corrected**:
   - Total pages: 2184 → 2163 (aligned with filesystem count)
   - Indexed entries: 1517 → 1549 (after dedup, aligned with actual index entry count)
@@ -2191,9 +2191,9 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 
 ### Takes
 - Created [[concepts/multi-channel-agents]] — Mastra's multi-user/multi-channel agent engineering (Slack/Discord/Telegram concurrency, thread isolation, resource-based memory, HMAC auth)
-- Enriched [[concepts/agentic-loop]] — Added Self-Improving Agent Loop section (Thrive × OpenAI Tax AI case study: 25%→86% accuracy in 6 weeks)
+- Enriched [[concepts/harness-engineering/agentic-loop]] — Added Self-Improving Agent Loop section (Thrive × OpenAI Tax AI case study: 25%→86% accuracy in 6 weeks)
 - Enriched [[concepts/agent-evaluation-methodology]] — Bumped updated date
-- Enriched [[concepts/agent-containment]] — Bumped updated date
+- Enriched [[concepts/security-and-governance/agent-containment]] — Bumped updated date
 - Enriched [[concepts/macro-evals-agentic-systems]] — Bumped updated date
 
 ### References
@@ -2710,7 +2710,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 ## [2026-05-27] enrich | Nightly knowledge consolidation — dreaming-wiki-ingest (cont.)
 
 ### Pages Created
-- [[concepts/agent-containment]] — Agent Containment — Anthropic's three isolation patterns (ephemeral container, HITL sandbox, sealed local VM) and security lessons
+- [[concepts/security-and-governance/agent-containment]] — Agent Containment — Anthropic's three isolation patterns (ephemeral container, HITL sandbox, sealed local VM) and security lessons
 
 ### Pages Updated
 - [[entities/anthropic]] — Added Agent Containment Architecture section with three products, three patterns, and five security incidents
@@ -3328,7 +3328,7 @@ The article's framing offers transferable patterns for wiki management:
 |------|-----------------|--------|
 | [[entities/garry-tan]] | 647→0 | −647 |
 | [[concepts/self-evolving-agents]] | 646→0 | −646 |
-| [[concepts/agent-architecture-decomposition]] | 644→0 | −644 |
+| [[concepts/harness-engineering/agent-architecture-decomposition]] | 644→0 | −644 |
 | [[concepts/ecs-fargate-scaling]] | 643→0 | −643 |
 | [[concepts/context-engineering/context-routing|Context Routing]] | 639→0 | −639 |
 | [[concepts/local-llm/inference-hardware]] | 632→0 | −632 |
@@ -3467,10 +3467,10 @@ The article's framing offers transferable patterns for wiki management:
 
 ### Pages Updated
 - [[concepts/nvidia-ai-q]] — Added middleware & reliability section (tool sanitization, reasoning-aware retry), cross-references
-- [[concepts/agent-executor]] — Added cross-references to sandbox-patterns and nvidia-ai-q
-- [[concepts/agent-sandbox-patterns]] — Added Google Agent Sandbox GA section (300/sec provisioning, 16× growth) and Agent Substrate open-source project
+- [[concepts/agent-team-swarm/agent-executor]] — Added cross-references to sandbox-patterns and nvidia-ai-q
+- [[concepts/security-and-governance/agent-sandbox-patterns]] — Added Google Agent Sandbox GA section (300/sec provisioning, 16× growth) and Agent Substrate open-source project
 - [[concepts/ai-code-quality]] — Full rewrite from stub: Nolan Lawson quality-first approach, multi-model PR review, slop cannon debate
-- [[concepts/agent-orchestration]] — Added DeepMind Antigravity IDE/Darwinian skills library section and Google's new agent infrastructure stack
+- [[concepts/agent-team-swarm/agent-orchestration]] — Added DeepMind Antigravity IDE/Darwinian skills library section and Google's new agent infrastructure stack
 - [[entities/deepmind]] — Added Agents at Scale panel: Antigravity IDE, token quotas, skills library, model mixing (Gemma 4 + advanced)
 - [[entities/nolan-lawson]] — Added AI coding quality section: multi-agent review skill, slow workflow, near-zero false positives
 
@@ -4375,7 +4375,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 ### Pages Created
 - **[[entities/command-a-plus]]** — Cohere's 218B MoE model, first fully Apache 2.0 licensed. 25B active params, 48 languages, W4A4 lossless quantization. Consolidates 5 Command family models. May 2026 release.
 - **[[concepts/nemotron-labs-diffusion]]** — NVIDIA's diffusion language model family (3B/8B/14B). Block-wise attention enables non-autoregressive inference via iterative denoising. Up to 6.4× faster than AR decoding. Converted from pretrained AR checkpoints. SGLang serving.
-- **[[concepts/agent-executor]]** — Google's open-source distributed agent runtime (May 20, 2026). Durable execution (event log + snapshotting), secure sandbox isolation, trajectory branching, connection recovery. Companion Agent Substrate project for Kubernetes.
+- **[[concepts/agent-team-swarm/agent-executor]]** — Google's open-source distributed agent runtime (May 20, 2026). Durable execution (event log + snapshotting), secure sandbox isolation, trajectory branching, connection recovery. Companion Agent Substrate project for Kubernetes.
 - **[[entities/gemini-cli]]** — Google's open-source AI coding agent CLI. 100K+ GitHub stars, 6,000+ community PRs. Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI. Community labels it "bait and switch."
 - **[[entities/stable-audio-3]]** — Stability AI's 4-model audio generation family. Up to 6m20s tracks, Medium (1.4B) open weights. SAME autoencoder for semantic structure, no CFG for 2× speedup. Fully licensed training data (AudioSparx + Freesound).
 
@@ -4431,12 +4431,12 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - **[[entities/hanchunglee]]** — Hanchung Lee (Han Lee, @hanchunglee) — Focused entity page on the Agent Runtime analysis from his "Hidden Technical Debt" series. 9.4KB. Sections: Overview, Core Ideas (runtime as primary technical debt, sandboxing necessity, isolation primitive stack, runtime shift, web app vs agent runtime), Key Work (Hidden Technical Debt trilogy, AI adoption articles), X Activity Themes, Related People/Entities. Sources: leehanchung.github.io, raw article.
 
 ### Pages Enriched
-- **[[concepts/agent-runtime]]** — Added 4 major sections (3.8KB new content): **State Model** (snapshot/replay/rollback primitives, Cognition/Manus/Daytona production evidence), **Network Boundary Design** (6 patterns from no-network to full internet, design principles), **Lifecycle Management** (5 operations, async gap problem, cost distribution insight), **Web App Runtime vs Agent Runtime** comparison (8-dimension table). Updated frontmatter: added `state-management`, `networking`, `agent-security` tags. Added [[entities/hanchunglee]] wikilink. Updated date to 2026-05-23. Total page grew from ~34KB to ~38KB.
+- **[[concepts/harness-engineering/agent-runtime]]** — Added 4 major sections (3.8KB new content): **State Model** (snapshot/replay/rollback primitives, Cognition/Manus/Daytona production evidence), **Network Boundary Design** (6 patterns from no-network to full internet, design principles), **Lifecycle Management** (5 operations, async gap problem, cost distribution insight), **Web App Runtime vs Agent Runtime** comparison (8-dimension table). Updated frontmatter: added `state-management`, `networking`, `agent-security` tags. Added [[entities/hanchunglee]] wikilink. Updated date to 2026-05-23. Total page grew from ~34KB to ~38KB.
 - **[[entities/milksandmatcha]]** — Added **Recent Activity (May 2026)** section with two YouTube interviews: (1) Jason Liu (OpenAI/Codex) on zero-latency AI (shared May 21, 2026), (2) Sara Hooker (Adaption/DeepMind) on GPU bottlenecks via Big Chip Club (shared May 22, 2026). Updated frontmatter: `updated: 2026-05-23`, added `youtube` and `podcast` tags. Cross-linked [[entities/jason-liu]] and [[entities/sara-hooker]].
 
 ### Index Updates
 - Added `[[entities/hanchunglee]]` entry under Entities section (between han-lee and hark)
-- Updated `[[concepts/agent-runtime]]` description to include new sections
+- Updated `[[concepts/harness-engineering/agent-runtime]]` description to include new sections
 - Updated `[[entities/milksandmatcha]]` description with recent YouTube shares
 - Updated header counts: Entities 651→652, Total 2014→2015, Indexed 1281→1282
 
@@ -4462,7 +4462,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 
 ### Reference Pages Enriched
 - **[[concepts/rlhf-reinforcement-learning-from-human-feedback]]** — Added **Vector Policy Optimization (VPO)** reference: scalar reward collapse avoidance, vector-valued rewards. Status changed from stub to active. Updated: `2026-05-24`.
-- **[[concepts/agent-sandbox-patterns]]** — Added **Production Sandbox Providers** section: CoreWeave Sandboxes (public preview, RL/agent eval/model eval) and Cloudsail (per-task Cloudflare sandboxes, Codex+GitHub, zero token exposure). Updated: `2026-05-24`.
+- **[[concepts/security-and-governance/agent-sandbox-patterns]]** — Added **Production Sandbox Providers** section: CoreWeave Sandboxes (public preview, RL/agent eval/model eval) and Cloudsail (per-task Cloudflare sandboxes, Codex+GitHub, zero token exposure). Updated: `2026-05-24`.
 - **[[concepts/mcp-desktop-extensions]]** — Added **MCP 2026-07-28 RC: Protocol Becomes Stateless** section: no handshake, no session ID, any request can hit any server instance. MCP Apps/Tasks first-class extensions. Updated: `2026-05-24`.
 
 ### Index Updates
@@ -4641,7 +4641,7 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 ## [2026-05-22] ingest | Nightly dreaming consolidation — Agent Execution Tax + 6 enrichments
 
 ### Pages Created
-- [[concepts/agent-execution-tax]] — Fireworks AI concept: structured output reliability bottleneck discovered from 720 browser agent executions. Execution Tax definition, Reliability-Adjusted Accuracy, Cost Per Successful Task, relationship with Tool-Use Tax.
+- [[concepts/harness-engineering/agent-execution-tax]] — Fireworks AI concept: structured output reliability bottleneck discovered from 720 browser agent executions. Execution Tax definition, Reliability-Adjusted Accuracy, Cost Per Successful Task, relationship with Tool-Use Tax.
 
 ### Pages Enriched
 - [[entities/nvidia]] — Nemotron-Labs-Diffusion tri-mode model (AR+diffusion+self-speculation, 3B/8B/14B, Ministral3-based)
@@ -5319,7 +5319,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - `wiki/entities/shannhk.md` — Shann Holmberg (@shannhk): Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing. Based in Lisbon.
 
 ### Enriched
-- `wiki/entities/shannhk.md` — Added link to new concept page [[concepts/agent-operator-patterns]] in Cross-References. updated: 2026-05-20
+- `wiki/entities/shannhk.md` — Added link to new concept page [[concepts/harness-engineering/agent-operator-patterns]] in Cross-References. updated: 2026-05-20
 - `wiki/entities/hermes-agent.md` — Added Shann's 4-Level Fleet Operation Model (Level 1→4), Control Room pattern, SEO Agent 21-step pipeline case study, Prototype → Production methodology, Rails vs Linux framing, model strategy (Opus 4.7 creative / Codex GPT 5.5 structured). Updated milestones: 150K stars, 123 bundled skills, 6 deployment targets, 20+ messaging surfaces.
 - `wiki/concepts/claude-managed-agents.md` — Added Self-Hosted Sandboxes (public beta) + MCP Tunnels (research preview) section, announced at Code with Claude London (May 19, 2026). Covers enterprise security perimeter, data residency compliance, MCP tunnel connectivity for private network tools, and hybrid deployment model.
 
@@ -5598,7 +5598,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ### Cross-references
 - [[entities/openclaw]] → [[concepts/china-openclaw-agentic-boom]]
-- [[concepts/china-openclaw-agentic-boom]] → [[entities/openclaw]], [[entities/deepseek]], [[concepts/china-agentic-coding-sprint]], [[concepts/us-china-ai-competition]], [[concepts/zero-trust-agentic-ai]], [[concepts/agentic-ai-governance]], [[entities/minimax]], [[entities/kimi]], [[concepts/local-llm/model-distillation]], [[comparisons/hermes-vs-openclaw-architecture]]
+- [[concepts/china-openclaw-agentic-boom]] → [[entities/openclaw]], [[entities/deepseek]], [[concepts/china-agentic-coding-sprint]], [[concepts/us-china-ai-competition]], [[concepts/zero-trust-agentic-ai]], [[concepts/security-and-governance/agentic-ai-governance]], [[entities/minimax]], [[entities/kimi]], [[concepts/local-llm/model-distillation]], [[comparisons/hermes-vs-openclaw-architecture]]
 
 ---
 ## [2026-05-18] ingest | X bookmarks — Pi Coding Agent metadata-only record
@@ -5773,7 +5773,7 @@ Ingested "Self-Distilled Reasoner: On-Policy Self-Distillation" by Siyan Zhao et
 - [[concepts/forward-deployed-engineering]] — FDE paradigm: deployment as moat
 
 ### Pages Updated (5)
-- [[concepts/agent-governance]] — Added multi-owner agent economy & governance gaps (Superintel analysis)
+- [[concepts/security-and-governance/agent-governance]] — Added multi-owner agent economy & governance gaps (Superintel analysis)
 - [[concepts/model-context-protocol-mcp]] — Added security vulnerabilities & OX Security findings
 - [[entities/google]] — Added Gemini Intelligence, Magic Pointer, Project Suncatcher
 - [[entities/openai]] — Added Daybreak cybersecurity, Codex Mobile, Plaid integration
@@ -7179,13 +7179,13 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 
 ### [2026-05-29] Ingest | Matt Palmer's Hermes Agent deployment walkthrough + AWS hosting concept page
 - **New raw article**: `raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md` — Matt Palmer's 67-min walkthrough of deploying Hermes Agent with Fly.io (gateway + Open WebUI), Modal sandboxes, Cloudflare Access (GitHub OAuth). YouTube talk.
-- **New concept page**: [[concepts/agent-hosting-aws]] — AWS equivalent architecture mapping: 3 tiers (EC2 → ECS Fargate → Bedrock AgentCore/Firecracker). Sandbox execution comparison (Lambda, ECS Ephemeral, AgentCore Firecracker, Nitro Enclaves). Cost comparison. Auth layer mapping.
+- **New concept page**: [[concepts/harness-engineering/agent-hosting-aws]] — AWS equivalent architecture mapping: 3 tiers (EC2 → ECS Fargate → Bedrock AgentCore/Firecracker). Sandbox execution comparison (Lambda, ECS Ephemeral, AgentCore Firecracker, Nitro Enclaves). Cost comparison. Auth layer mapping.
 - **New entity page**: [[entities/matt-palmer]] — Engineer at Conductor, creator of hermes-agent-template. Content creator focused on secure AI agent infrastructure and managed-stack architectures.
 
 ### [2026-05-29] Ingest | AWS PTC on Bedrock blog + concept page
 - **New raw article**: `raw/articles/2026-05-19_aws_ptc-bedrock-agentcore.md` — AWS ML Blog: Programmatic Tool Calling on Amazon Bedrock. 3 implementations: self-hosted ECS+Docker, AgentCore Code Interpreter, Anthropic SDK proxy. Experimental results: 87-92% token reduction across 8 models. Authors: Shreyas Subramanian, Pratik Raichura, River Xie.
 - **New concept page**: [[concepts/programmatic-tool-calling]] — PTC paradigm: LLMs write Python code to orchestrate tool calls in sandboxes vs sequential tool calling. Benchmarks, cost analysis, 3 implementation approaches.
-- **Enriched concept page**: [[concepts/agent-hosting-aws]] — Added PTC Integration section cross-referencing the new concept, updated sources/frontmatter.
+- **Enriched concept page**: [[concepts/harness-engineering/agent-hosting-aws]] — Added PTC Integration section cross-referencing the new concept, updated sources/frontmatter.
 - Updated `wiki/index.md` (+1 concept, +2 entities, +3 indexed entries).
 
 ---
@@ -7240,7 +7240,7 @@ Three independently-arrived-at perspectives form a causal chain: Segato's F: X�
 
 - **New entity**: [[entities/decision-lab]] — Open-source causal/Bayesian analysis tool by PyMC Labs. Garden of forking paths architecture for robust analysis. Tags: company, open-source, data-science, bayesian, ai-agents.
 - **New entity**: [[entities/decision-lens]] — Agentic dashboard for stakeholders by PyMC Labs. Natural language interaction with agentic data science outputs. Tags: company, tool, data-science, bayesian, agent-orchestration.
-- **New concept**: [[concepts/agentic-data-science]] — Comprehensive concept page covering: definition (AI agents doing data science work), 4-layer stack (harness/runtime, skills, orchestration, observability), PI model (human as Principal Investigator, agents as grad students), Garden of Forking Paths architecture, Daemon agent (Claude Code Agent SDK in multiplayer chat), three-tier verification (programmatic, agentic, human), and escaping "vibe science." Tags: concept, data-science, ai-agents, bayesian, agent-orchestration, verification, orchestration.
+- **New concept**: [[concepts/agent-team-swarm/agentic-data-science]] — Comprehensive concept page covering: definition (AI agents doing data science work), 4-layer stack (harness/runtime, skills, orchestration, observability), PI model (human as Principal Investigator, agents as grad students), Garden of Forking Paths architecture, Daemon agent (Claude Code Agent SDK in multiplayer chat), three-tier verification (programmatic, agentic, human), and escaping "vibe science." Tags: concept, data-science, ai-agents, bayesian, agent-orchestration, verification, orchestration.
 - **Enriched**: [[entities/thomas-wiecki]] — Added "### Daemon Agent and Decision Tools" section covering Daemon agent, Decision Lab, Decision Lens, and garden of forking paths architecture. Bumped updated to 2026-06-01. Added source: raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md.
 - **Updated**: index.md — Added entries for decision-lab, decision-lens (entities section), agentic-data-science (concepts section). Updated counts (Entities: 734, Concepts: 817, Total: 2187, Indexed: 1596).
 - **Source**: raw/newsletters/2026-06-01-the-agentic-data-science-research-lab.md
@@ -7657,7 +7657,7 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - **Source**: Reuters via Financial Times (syndicated on Yahoo Japan News)
 - **Raw article**: `raw/articles/2026-06-07_reuters_openai-chatgpt-intent-router.md`
 - **Details**: OpenAI plans biggest-ever ChatGPT overhaul, shifting from chatbot to "intent router." Single interface that understands user intent and routes to appropriate model/tool/app/agent. Part of product reorganization under Thibault Sottiaux ahead of IPO preparations.
-- **Cross-references**: [[entities/openai]], [[concepts/agent-native-architecture]], [[entities/thibault-sottiaux]], [[concepts/agent-orchestration]]
+- **Cross-references**: [[entities/openai]], [[concepts/harness-engineering/agent-native-architecture]], [[entities/thibault-sottiaux]], [[concepts/agent-team-swarm/agent-orchestration]]
 - **Tags**: model-routing, ai-agents, agent-architecture, agent-orchestration, chatgpt, openai, product, conversational-ai, platform, business-model
 ---
 ## 2026-06-07 11:15:47 UTC — S&P 500 AI Company Exclusion wiki creation (cron)
@@ -8175,4 +8175,18 @@ Updated:
 - `context-window-management.md` → `window-management.md`
 
 **リンク更新**: wiki全体で252箇所のwikilinkを更新。内部クロスリンク25箇所も修正。「Context Context Engineering」の二重表示バグ149箇所を修正。
+## [2026-06-11] agent(ic) ページ群の3カテゴリ再編
+
+**Action**: フラット配置の agent-*/agentic-* ページ47件を3つのサブディレクトリに分類移動。
+
+**security-and-governance/** (新規作成、13ページ):
+agent-containment, agent-control-plane, agent-governance, agent-iam, agent-identity-verification, agent-safety-interventions, agent-sandbox-patterns, agent-sandboxing, agent-sandboxing-patterns, agent-security-landscape-2026, agentic-ai-governance, agentic-security, agentic-identity
+
+**harness-engineering/** (25ページ追加):
+agent-architecture-decomposition, agent-client-protocol, agent-design-patterns, agent-engineering-guide-2026, agent-ergonomics, agent-execution-tax, agent-filesystem-abstraction, agent-harness, agent-memory-engineering, agent-native-architecture, agent-native-product-management, agent-patterns, agent-skills-overview, agent-statefulness, agent-steering, agent-vs-pipeline-architecture, agentic-ai-skills, agentic-design-patterns, agentic-loop, agentic-sysadmin, agent-development-lifecycle, agent-hosting-aws, agent-operator-patterns, agent-runtime, agent-serverless
+
+**agent-team-swarm/** (9ページ追加):
+agent-communication-protocols, agent-executor, agent-orchestration-frameworks, agent-swarms, agent-team-swarm, agentic-data-science, agentic-workflow-patterns, agent-orchestration, agentic-conflict-resolution
+
+**リンク更新**: wiki全体で534箇所のwikilinkを更新。
 

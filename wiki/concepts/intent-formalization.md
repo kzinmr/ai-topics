@@ -99,7 +99,7 @@ The bottleneck shifts from "proving" to "defining what to prove." The arc of dif
 - [[concepts/formal-methods]] — Foundational formal methods practice and theory
 - [[concepts/neurosymbolic-ai]] — Symbolic reasoning (formal methods) combined with neural approaches
 - [[concepts/ai-safety]] — Alignment, oversight, and interpretability for AI agents
-- [[concepts/agent-sandboxing]] — Isolation for untrusted AI-generated code
+- [[concepts/security-and-governance/agent-sandboxing]] — Isolation for untrusted AI-generated code
 - [[concepts/test-case-minimization]] — Binary search on entropy for automatic test case reduction
 - [[entities/hillel-wayne]] — Formal methods practitioner bridging academic verification and real-world software engineering
 - [[entities/john-d-cook-applied-mathematics-consulting]] — Formal verification in high-stakes engineering contexts

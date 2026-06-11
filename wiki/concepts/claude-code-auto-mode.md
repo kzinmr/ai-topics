@@ -111,7 +111,7 @@ The classifier runs both when delegating to sub-agents and when receiving result
 
 - [[entities/claude-code]] — Claude Code agent harness
 - [[concepts/claude-code-best-practices]] — Best practices for Claude Code
-- [[concepts/agent-sandboxing]] — Agent sandboxing patterns
+- [[concepts/security-and-governance/agent-sandboxing]] — Agent sandboxing patterns
 - [[claude-code-sandboxing]] — Claude Code sandboxing implementation
 - [[concepts/agent-skills]] — Equipping agents with skills
 - [[concepts/code-execution-with-mcp]] — Code execution with MCP

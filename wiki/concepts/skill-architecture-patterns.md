@@ -135,7 +135,7 @@ The real value is in **pattern extraction**: understanding why Hermes's self-imp
 
 ## Related
 
-- [[concepts/agent-skills-overview]] — Agent Skills Concept Cluster Map (Parent Page)
+- [[concepts/harness-engineering/agent-skills-overview]] — Agent Skills Concept Cluster Map (Parent Page)
 - [[entities/hermes-agent]] — Hermes Agent platform (self-authoring skills)
 - [[entities/peter-steinberger]] — OpenClaw creator
 - [[entities/teknium]] — Hermes Agent architect

@@ -23,7 +23,7 @@ sources:
 related:
   - "[[concepts/bernstein]]"
   - "[[concepts/multi-agent-orchestration]]"
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
 ---
 
 # Bernstein

@@ -55,4 +55,4 @@ Railway is positioned between traditional PaaS (Heroku, Render) and the emerging
 - [[concepts/agent-native-cloud]] — The emerging infrastructure paradigm Railway is championing
 - [[entities/vercel]] — Competitor in the frontend cloud space
 - [[entities/cloudflare]] — Competitor in the edge/agentic cloud space
-- [[concepts/agent-runtime]] — Execution environment for AI agents
+- [[concepts/harness-engineering/agent-runtime]] — Execution environment for AI agents

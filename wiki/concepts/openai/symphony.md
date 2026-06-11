@@ -21,7 +21,7 @@ sources:
 
 **Source:** OpenAI Engineering Blog (2026-04-27) + GitHub (2026-02-26)
 **Status:** Open-source spec with reference implementation
-**Related:** [[concepts/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/dark-factory-software-factory]]
+**Related:** [[concepts/agent-team-swarm/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/dark-factory-software-factory]]
 
 ---
 
@@ -149,7 +149,7 @@ The two are complementary: Symphony manages "which agent runs which task when," 
 
 ## Related
 
-- [[concepts/agent-team-swarm]] — Higher-level concept of multi-agent coordination
+- [[concepts/agent-team-swarm/agent-team-swarm]] — Higher-level concept of multi-agent coordination
 - [[concepts/harness-engineering]] — The development practices Symphony assumes
 - [[concepts/dark-factory-software-factory]] — Next step toward fully autonomous development
 - [[concepts/anthropic/managed-agents]] — Competing managed agent platform

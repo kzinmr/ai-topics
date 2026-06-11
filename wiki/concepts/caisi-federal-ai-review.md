@@ -72,7 +72,7 @@ The New York Times reported that the White House is separately considering its o
 
 ## Relationship to Other Governance Concepts
 
-- [[concepts/agentic-ai-governance]] — Enterprise governance frameworks; CAISI addresses the national security layer
+- [[concepts/security-and-governance/agentic-ai-governance]] — Enterprise governance frameworks; CAISI addresses the national security layer
 - [[concepts/moltbook-breach-2026]] — Industrial-scale agent security incident that underscores the urgency of pre-deployment evaluation
 - [[entities/dean-ball]] — AI policy analyst who authored the Mythos governance framework and "Aviate, Navigate, Communicate" model
 - [[concepts/defenseclaw]] — Cisco's agentic governance layer; complementary to government-level evaluation

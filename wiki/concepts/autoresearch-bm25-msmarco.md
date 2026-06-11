@@ -86,4 +86,4 @@ Despite the overfitting issues, Doug argues the approach is a **useful tuning to
 - [[karpathy-loop]] — Karpathy's original autoresearch concept
 - [[pi-autoresearch]] — Shopify's generalized autoresearch
 - [[ndcg]] — Normalized Discounted Cumulative Gain, the metric used
-- [[agentic-loop]] — The underlying agent loop pattern
+- [[concepts/harness-engineering/agentic-loop]] — The underlying agent loop pattern

@@ -16,7 +16,7 @@ aliases:
   - post-editor-agent-era
 related:
   - "[[concepts/minimal-coding-agent]]"
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/unharnessed-agents]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/amp]]"

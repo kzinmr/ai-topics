@@ -187,6 +187,6 @@ See [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices|Claud
 
 - [GitHub: claude-in-docker](https://github.com/tim-sha256/claude-in-docker) — Reference implementation
 - [Original article: timsh.org](https://timsh.org/claude-inside-docker/) — "Switching to Claude Code + VSCode inside Docker"
-- [[concepts/agent-sandboxing]] — Broader discussion of agent isolation techniques
+- [[concepts/security-and-governance/agent-sandboxing]] — Broader discussion of agent isolation techniques
 - [[concepts/container-context]] — Container-based execution environments for agents
 - [[entities/claude-code]] — Claude Code entity page

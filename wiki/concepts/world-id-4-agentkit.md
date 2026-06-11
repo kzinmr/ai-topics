@@ -58,5 +58,5 @@ There is a notable tension at the core of World ID: Sam Altman sells humanity's 
 ## Related Pages
 
 - [[entities/openai]] — Sam Altman is CEO of OpenAI; World ID is an Tools for Humanity project
-- [[concepts/agent-sandboxing]] — Agent identity is a security prerequisite
+- [[concepts/security-and-governance/agent-sandboxing]] — Agent identity is a security prerequisite
 - [[concepts/zero-trust-agentic-ai]] — Zero trust for agents requires identity verification

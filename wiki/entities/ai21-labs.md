@@ -37,7 +37,7 @@ The pivot validates the "Systems over Models" thesis — that the moat is shifti
 - [[entities/deepseek]] — Fellow lab pivoting to agent infrastructure
 - [[entities/openai]] — Pioneer of the "model alone is no longer the product" framing
 - [[entities/anthropic]] — Competing in the agent platform space
-- [[concepts/agent-harness]] — The execution environment paradigm driving the shift
+- [[concepts/harness-engineering/agent-harness]] — The execution environment paradigm driving the shift
 - [[concepts/ai-agent-engineering]] — Platform architecture for agent execution
 
 ## Open Questions

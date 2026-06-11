@@ -75,4 +75,4 @@ The CMA sandbox integration leverages Cloudflare's broader Developer Platform: W
 - [[concepts/cloudflare-agents|Cloudflare Agents (iMARS)]] — Cloudflare's internal AI engineering stack
 - [[entities/cloudflare|Cloudflare]] — Parent organization
 - [[entities/anthropic|Anthropic]] — Platform partner
-- [[concepts/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns
+- [[concepts/security-and-governance/agent-sandboxing|Agent Sandboxing]] — Broader sandboxing patterns

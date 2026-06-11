@@ -30,4 +30,4 @@ Mesa provides a filesystem layer optimized for AI agent workflows in enterprise 
 ## Relationship to Existing Concepts
 - [[concepts/smfs]] — Alternative approach to agent filesystems; SMFS focuses on RAG replacement
 - [[concepts/filesystem-memory]] — Mesa extends the filesystem paradigm for enterprise artifacts
-- [[concepts/agent-sandboxing]] — Provides filesystem isolation for agent execution
+- [[concepts/security-and-governance/agent-sandboxing]] — Provides filesystem isolation for agent execution

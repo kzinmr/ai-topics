@@ -141,7 +141,7 @@ These patterns directly relate to AI coding agents:
 
 | Distributed Systems Concept | AI Agent Engineering Counterpart |
 |----------------------------|----------------------------------|
-| Hierarchical Consensus | [[concepts/agent-team-swarm]] Supervisor/Worker architecture |
+| Hierarchical Consensus | [[concepts/agent-team-swarm/agent-team-swarm]] Supervisor/Worker architecture |
 | Adaptive Quorum | Dynamic team membership (agents joining/leaving) |
 | Failure Detection + Reselection | Self-healing agent systems |
 | Data-Aware Placement | Distributed agent task placement optimization |
@@ -164,7 +164,7 @@ These patterns directly relate to AI coding agents:
 
 ## Related Concepts
 
-- [[concepts/agent-team-swarm]] — Multi-agent team orchestration
+- [[concepts/agent-team-swarm/agent-team-swarm]] — Multi-agent team orchestration
 - [[concepts/harness-engineering]] — Single agent execution environment design
 - [[concepts/openai/symphony]] — Ryan Lopopolo's Symphony project
 - [[concepts/back-of-house-multi-agent-patterns]] — Kitchen metaphor multi-agent patterns

@@ -141,7 +141,7 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 ## Related Concepts
 
 - [[concepts/ai-safety-and-alignment]] — Her primary research focus at OpenAI
-- [[concepts/agent-orchestration-frameworks]] — Frameworks she analyzed in "LLM Powered Autonomous Agents"
+- [[concepts/agent-team-swarm/agent-orchestration-frameworks]] — Frameworks she analyzed in "LLM Powered Autonomous Agents"
 - [[concepts/test-time-compute]] — The "thinking time" paradigm she surveyed in "Why We Think"
 - [[concepts/reward-hacking]] — Her November 2024 deep-dive topic
 - [[concepts/chain-of-thought-reasoning]] — Central to her analysis of test-time compute

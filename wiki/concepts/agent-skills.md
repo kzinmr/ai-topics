@@ -144,7 +144,7 @@ The skill behind Claude's document editing capabilities:
 ## See Also
 
 - [[entities/browse-sh]] — Browse.sh: 100+ curated browser skills catalog by Browserbase
-- [[concepts/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
+- [[concepts/harness-engineering/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
 - [[concepts/mcp]] — Model Context Protocol

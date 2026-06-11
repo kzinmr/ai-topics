@@ -64,10 +64,10 @@ The FT report cites more than 10 current and former OpenAI employees, describing
 This is OpenAI's move from being a model/chat provider to becoming an **agent platform**. The intent router makes ChatGPT the operating system for AI interactions — analogous to how web browsers became the universal client for internet services.
 
 ### 2. Agent-Native Architecture at Scale
-The intent router represents [[concepts/agent-native-architecture|agent-native architecture]] applied at the consumer-product level. It's the same principle — agents as first-class citizens — built into the primary user interface used by hundreds of millions of people.
+The intent router represents [[concepts/harness-engineering/agent-native-architecture|agent-native architecture]] applied at the consumer-product level. It's the same principle — agents as first-class citizens — built into the primary user interface used by hundreds of millions of people.
 
 ### 3. Orchestration as a Consumer Feature
-[[concepts/agent-orchestration|Agent orchestration]], previously a developer concern, becomes a consumer-facing capability. The router handles the complexity of multi-agent coordination invisibly.
+[[concepts/agent-team-swarm/agent-orchestration|Agent orchestration]], previously a developer concern, becomes a consumer-facing capability. The router handles the complexity of multi-agent coordination invisibly.
 
 ### 4. Competition Becomes Platform-vs-Platform
 If successful, the intent router shifts competition from "whose model is better" to "whose ecosystem is more integrated." This favors large players with diverse product portfolios and disadvantages pure-play model providers.
@@ -85,7 +85,7 @@ OpenAI appears to be adopting the super-app model pioneered by WeChat in China �
 
 ## Related Concepts
 
-- [[concepts/agent-native-architecture]] — The architectural philosophy of treating agents as first-class primitives
-- [[concepts/agent-orchestration]] — Multi-agent coordination patterns
+- [[concepts/harness-engineering/agent-native-architecture]] — The architectural philosophy of treating agents as first-class primitives
+- [[concepts/agent-team-swarm/agent-orchestration]] — Multi-agent coordination patterns
 - [[entities/thibault-sottiaux]] — OpenAI product lead overseeing the reorganization
 - [[entities/openai]] — Company overview and history

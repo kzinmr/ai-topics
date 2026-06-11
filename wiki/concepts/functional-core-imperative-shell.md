@@ -136,7 +136,7 @@ Time →
 - UI generation (core) → Business logic (core) → Human validation (shell)
 - The shell handles statefulness and external context
 
-### [[concepts/agent-serverless]]
+### [[concepts/harness-engineering/agent-serverless]]
 - Serverless agents naturally embody FCIS
 - The managed environment handles the core
 - Humans manage the shell (configuration, validation)

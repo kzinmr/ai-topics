@@ -106,5 +106,5 @@ This prediction suggests that only SaaS with strong "on-the-ground implementatio
 
 - [[forward-deployed-engineering]] - FDE role and methodology
 - [[enterprise-agents]] - Enterprise AI Agent adoption patterns
-- [[agent-executor]] - Agent execution architecture
+- [[concepts/agent-team-swarm/agent-executor]] - Agent execution architecture
 - [[agent-skills]] - Agent skill design and management

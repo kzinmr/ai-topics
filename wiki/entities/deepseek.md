@@ -144,7 +144,7 @@ The discount makes inference "too cheap to meter" at the blended rate, accelerat
 
 DeepSeek created its first **"Harness team"** — an agent execution environment engineering team — signaling the lab's recognition that the moat is shifting from standalone model performance to the **model + harness + workflow + UI + memory** stack. This follows the same trajectory as OpenAI (Codex harness), Anthropic (Claude Agents SDK), and AI21 Labs (full pivot to agents).
 
-The Harness team's formation validates the "Systems over Models" thesis and represents a strategic response to the industry-wide shift where [[concepts/agent-harness|agent harness]] infrastructure is becoming a competitive differentiator.
+The Harness team's formation validates the "Systems over Models" thesis and represents a strategic response to the industry-wide shift where [[concepts/harness-engineering/agent-harness|agent harness]] infrastructure is becoming a competitive differentiator.
 
 > Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
 

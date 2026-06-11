@@ -103,7 +103,7 @@ The agent exhibits **emergent reasoning** without explicit programming:
 ## Related Concepts
 
 - [[concepts/agent-loop-orchestration]] — The general agent loop pattern; this is a concrete Go implementation
-- [[concepts/agent-harness]] — This pattern is a minimal harness: LLM + loop + tools
+- [[concepts/harness-engineering/agent-harness]] — This pattern is a minimal harness: LLM + loop + tools
 - [[concepts/harness-engineering]] — The broader umbrella; this pattern exemplifies "the harness is the OS"
 - [[concepts/building-effective-agents]] — Anthropic's guidelines on agent design; this is a concrete implementation
 - [[entities/thorsten-ball]] — Author of the article and creator of this pattern

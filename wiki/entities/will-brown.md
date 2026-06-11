@@ -188,7 +188,7 @@ See [[concepts/rl-harness-lifecycle]] for the full analysis.
 - [[concepts/rl-harness-lifecycle]] — Co-evolutionary cycle of harnesses and RL training, coined by Brown
 - [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
 - [[concepts/reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
-- [[concepts/agent-harness]] — Agent execution frameworks that verifiers supports
+- [[concepts/harness-engineering/agent-harness]] — Agent execution frameworks that verifiers supports
 - [[entities/nathan-lambert]] — Interconnects newsletter author, fellow open-source RL researcher
 - [[entities/teknium]] — Nous Research co-founder, open-source AI community leader
 - [[entities/chip-huyen]] — ML/AI engineering author, shared concept: GenAI Handbook, RLHF

@@ -16,7 +16,7 @@ moved_from: concepts/comparisons/agent-sandboxing.md
 # Agent Sandboxing
 
 > **NOTE**: This page was moved from `concepts/comparisons/` → `comparisons/` on 2026-05-11.
-> The main content is at [[concepts/agent-sandboxing]].
+> The main content is at [[concepts/security-and-governance/agent-sandboxing]].
 > **TODO**: Enrich this page.
 
 ## Overview
@@ -25,6 +25,6 @@ Stub page for Agent Sandboxing (comparison perspective).
 
 ## Related Pages
 
-- [[concepts/agent-sandboxing]] — Main agent sandboxing concept page
-- [[concepts/agent-sandboxing-patterns]] — Browser Use's production sandboxing patterns
+- [[concepts/security-and-governance/agent-sandboxing]] — Main agent sandboxing concept page
+- [[concepts/security-and-governance/agent-sandboxing-patterns]] — Browser Use's production sandboxing patterns
 - [[concepts/_index]]

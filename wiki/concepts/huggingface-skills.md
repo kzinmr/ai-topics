@@ -103,6 +103,6 @@ This represents Hugging Face's strategy of making the Hub **the default infrastr
 
 - [[entities/hugging-face]] — Parent organization and Hub infrastructure
 - [[concepts/hf-cli]] — The CLI tool that the `hf-cli` skill wraps
-- [[concepts/agent-ergonomics]] — Agent-oriented tool design principles
+- [[concepts/harness-engineering/agent-ergonomics]] — Agent-oriented tool design principles
 - [[concepts/cli-first-development]] — CLI-first design philosophy
 - [[entities/clefourrier]] — HuggingFace team (evaluation)

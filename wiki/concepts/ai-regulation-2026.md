@@ -129,7 +129,7 @@ The pace is accelerating dramatically. The most active areas: generative AI regu
 - How will AI regulation interact with emerging agentic AI capabilities (autonomous agents making decisions)?
 
 ## Related Pages
-- [[concepts/agent-governance]] — Enterprise AI agent governance frameworks
+- [[concepts/security-and-governance/agent-governance]] — Enterprise AI agent governance frameworks
 - [[concepts/ai-agent-traps]] — Safety and failure modes for AI agents
 - [[concepts/ai-autonomy-debate]] — Debate around AI autonomy levels
 - [[concepts/ai-safety]] — AI safety and alignment

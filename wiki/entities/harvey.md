@@ -86,7 +86,7 @@ Harvey's largest and most regulated customers increasingly want **sovereign depl
 
 Pereyra frames the runtime ownership as temporary — many gaps will close as cloud providers improve — but durable for the legal-specific layer: multi-cloud resilience, data residency, conflict governance, and audit trails are not problems a general-purpose runtime will solve for the legal industry.
 
-See also: [[concepts/agent-harness]] (runtime abstraction, tool-call normalization), [[concepts/agent-sandboxing]] (ZDR, transient disk, lifecycle-bound state), [[concepts/agent-team-swarm]] (agent workforce lock-in risk).
+See also: [[concepts/harness-engineering/agent-harness]] (runtime abstraction, tool-call normalization), [[concepts/security-and-governance/agent-sandboxing]] (ZDR, transient disk, lifecycle-bound state), [[concepts/agent-team-swarm/agent-team-swarm]] (agent workforce lock-in risk).
 
 ## Contract Review Platform (June 2026)
 

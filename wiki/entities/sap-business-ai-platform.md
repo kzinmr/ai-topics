@@ -44,4 +44,4 @@ Enables SAP's existing business applications with AI agents capable of running p
 - [[entities/anthropic]] — Claude integration partner
 - [[concepts/autonomous-enterprise]] — Autonomous Enterprise concept
 - [[entities/sap]] — SAP SE
-- [[concepts/agent-governance]] — Agent governance in enterprise
+- [[concepts/security-and-governance/agent-governance]] — Agent governance in enterprise

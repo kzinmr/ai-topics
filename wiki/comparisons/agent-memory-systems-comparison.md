@@ -221,7 +221,7 @@ Constraints shared by coding agent harnesses (ChatGPT Dreaming has different tra
 - [[concepts/hermes-agent]] — Hermes Agent 3-Tier Memory System details
 - [[concepts/hermes-agent-architecture]] — Hermes Agent architecture (Prompt Assembly, Persistent State)
 - [[concepts/claude/perfect-memory]] — Claude Code file-based memory design philosophy
-- [[concepts/agent-memory-engineering]] — Nicolas Bustamante's 3-type classification
+- [[concepts/harness-engineering/agent-memory-engineering]] — Nicolas Bustamante's 3-type classification
 - [[concepts/gpt/chatgpt-dreaming-memory-system]] — ChatGPT Dreaming detailed architecture
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Bitter Lesson critique of ChatGPT memory
 - [[raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli]] — Codex CLI memory details

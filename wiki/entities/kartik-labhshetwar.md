@@ -20,7 +20,7 @@ social:
   blog: https://medium.com/@code_kartik
 company: Mem0
 related:
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/harness-commoditization]]"
   - "[[entities/mem0]]"
 sources:
@@ -80,7 +80,7 @@ Kartik's core thesis, articulated across his writing:
 
 ## See Also
 
-- [[concepts/agent-harness]] — Comprehensive harness architecture reference
+- [[concepts/harness-engineering/agent-harness]] — Comprehensive harness architecture reference
 - [[concepts/why-harness-development-boom]] — Synthesis of why harness engineering is accelerating
 - [[concepts/harness-commoditization]] — The counter-thesis and why evidence favors harness differentiation
 - [[entities/mem0]] — Universal memory layer for AI agents

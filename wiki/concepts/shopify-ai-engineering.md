@@ -222,5 +222,5 @@ Shopify's AI-first culture is driven by several reinforcing practices:
 - [[entities/farhan-thawar]] — Farhan Thawar (VP Engineering, Shopify)
 - [[entities/tobi-lutke]] — Tobi Lütke (CEO, Shopify)
 - [[entities/anthropic]] — Anthropic
-- [[concepts/agentic-design-patterns]] — Agentic design patterns
+- [[concepts/harness-engineering/agentic-design-patterns]] — Agentic design patterns
 - [[entities/coding-agents]] — Coding agents ecosystem overview

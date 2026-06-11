@@ -169,7 +169,7 @@ He found the **Evaluator-Optimizer** pattern "especially fun" and strongly agree
 - [[concepts/multi-agent-research-system]] — Orchestrator-workers in production
 - [[concepts/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation of these principles
 - [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — SWE-bench agent implementation details
-- [[concepts/agentic-loop]] — The core agent execution loop
+- [[concepts/harness-engineering/agentic-loop]] — The core agent execution loop
 
 ## Sources
 

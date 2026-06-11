@@ -90,7 +90,7 @@ The article explicitly references OpenAI and Anthropic's forward-deployed joint 
 - [[concepts/enterprise-ai-deployment-jv]] — The JV trend this framework contextualizes
 - [[concepts/enterprise-agents]] — Enterprise AI agent deployment patterns
 - [[concepts/agentic-engineering]] — The engineering discipline behind vertical AI
-- [[concepts/agentic-workflow-patterns]] — Workflow patterns for complex, multi-step agents
+- [[concepts/agent-team-swarm/agentic-workflow-patterns]] — Workflow patterns for complex, multi-step agents
 
 ## Sources
 

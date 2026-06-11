@@ -226,7 +226,7 @@ Step 10 agent output example -> [`airpods_report.md`](https://github.com/hugobow
 - [[concepts/agents-that-build-themselves]] - Previous workshop by Hugo + Ivan Leo on tool factories, hot reload, hooks
 - [[concepts/subagents]] - Sub-agent parallel delegation patterns
 - [[concepts/research-agent-fundamentals]] - Anthropic Claude Agent SDK research agent
-- [[concepts/agentic-loop]] - Agent loop basics
+- [[concepts/harness-engineering/agentic-loop]] - Agent loop basics
 - [[concepts/pi-autoresearch]] - Pi autoresearch feature
 - [[concepts/karpathy-rl-agents-agentic-research-loop]] - Karpathy RL agents + research loop
 

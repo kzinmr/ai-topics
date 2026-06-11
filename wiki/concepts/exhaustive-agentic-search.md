@@ -28,7 +28,7 @@ related:
 
 Design patterns for systematic, exhaustive exploration of organized knowledge spaces using LLM agents. Replaces random keyword probing with filesystem-like traversal (BEAM search), subagent composition, and persistent state tracking.
 
-Based on Doug Turnbull's "Cheat at Search with Agents" supplement lecture (June 2026). This lecture bridges [[concepts/agent-steering]] (Part 3: steering patterns) and [[concepts/long-running-search-agents]] (the subsequent lesson on long-running strategy experiments).
+Based on Doug Turnbull's "Cheat at Search with Agents" supplement lecture (June 2026). This lecture bridges [[concepts/harness-engineering/agent-steering]] (Part 3: steering patterns) and [[concepts/long-running-search-agents]] (the subsequent lesson on long-running strategy experiments).
 
 ## Core Insight
 
@@ -287,7 +287,7 @@ agent_state persists across all subagent calls
 
 ## Connection to Existing Concepts
 
-- [[concepts/agent-steering]] — The BEAM search section there introduces the concept; this page provides full implementation details
+- [[concepts/harness-engineering/agent-steering]] — The BEAM search section there introduces the concept; this page provides full implementation details
 - [[concepts/long-running-search-agents]] — Builds on these patterns with experimental results on yield-per-call optimization
 - [[concepts/agentic-search]] — Broader paradigm; this is a specific technique within it
 - [[concepts/effective-harnesses-for-long-running-agents]] — Anthropic's complementary approach to multi-context-window agents

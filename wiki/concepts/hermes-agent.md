@@ -135,7 +135,7 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for a full side-by-side anal
 ## See Also
 
 - [[entities/hermes-agent]] — Entity page with milestones and usage patterns
-- [[concepts/agent-harness]] — The broader class of infrastructure Hermes belongs to
+- [[concepts/harness-engineering/agent-harness]] — The broader class of infrastructure Hermes belongs to
 - [[concepts/gepa]] — The offline optimization pipeline
 - [[concepts/agent-skills]] — Reusable procedural memory for agents
 - [[entities/akshay-pachaar]] — Author of the masterclass source article

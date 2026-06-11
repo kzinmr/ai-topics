@@ -282,6 +282,6 @@ MCP creator David Soria Parra outlined the 2026 roadmap at a keynote:
 - [[entities/claude-code]] — Anthropic's agentic coding system with native MCP support
 - [[ai-agent-platforms]] — Platform comparison including MCP as a tool integration standard
 - [[concepts/multi-agent-orchestration-architecture]] — MCP as part of the tooling layer in multi-agent systems
-- [[concepts/agent-governance]] — Runtime guardrails that apply to MCP tool invocations
+- [[concepts/security-and-governance/agent-governance]] — Runtime guardrails that apply to MCP tool invocations
 - [[concepts/agentic-web]] — Agent-first web architecture, includes MCP Apps as UI standard
 - [[entities/mcp-ui]] — Alternative open-source standard for UI over MCP (by Ido Salomon)

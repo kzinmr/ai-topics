@@ -173,5 +173,5 @@ The db9 pattern makes Discord/Slack-based agent orchestration **trivial** — yo
 ## See Also
 
 - [[concepts/generative-app-evolution]] — Backend patterns that support generative apps
-- [[concepts/agent-iam]] — Identity management for agent workflows
+- [[concepts/security-and-governance/agent-iam]] — Identity management for agent workflows
 - [[concepts/harness-engineering]] — Agent orchestration infrastructure

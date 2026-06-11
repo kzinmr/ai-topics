@@ -88,6 +88,15 @@ Centralized state store with **optimistic concurrency control** (e.g., Redis Lua
 - [[concepts/multi-agent-autonomy-scale]] — Autonomous coordination research at 256-agent scale
 - [[concepts/harness-engineering/agentic-engineering-patterns]] — Agentic Engineering pattern collection
 - [[entities/ryan-lopopolo]] — Creator of Symphony, Harness Engineering advocate
-- [[concepts/agent-communication-protocols]] — MCP/A2A/ACP protocol comparison
-- [[concepts/agentic-conflict-resolution]] — Conflict detection and resolution between multiple agents
+- [[concepts/agent-team-swarm/agent-communication-protocols]] — MCP/A2A/ACP protocol comparison
+- [[concepts/agent-team-swarm/agentic-conflict-resolution]] — Conflict detection and resolution between multiple agents
 - [[concepts/zero-trust-agentic-ai]] — Agent security foundation
+
+## Orchestration and Communication (migrated from flat concepts/)
+
+- [[concepts/agent-team-swarm/agent-orchestration]] — Agent orchestration
+- [[concepts/agent-team-swarm/agent-orchestration-frameworks]] — Agent orchestration frameworks
+- [[concepts/agent-team-swarm/agent-executor]] — Agent executor
+- [[concepts/agent-team-swarm/agent-swarms]] — Agent swarms
+- [[concepts/agent-team-swarm/agentic-data-science]] — Agentic data science
+- [[concepts/agent-team-swarm/agentic-workflow-patterns]] — Agentic workflow patterns

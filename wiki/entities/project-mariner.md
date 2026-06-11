@@ -43,4 +43,4 @@ WIRED reported that Google is shaking up the Project Mariner team, with some Goo
 - [[entities/google]] — parent organization
 - [[concepts/agentic-browsing]] — web browsing agent paradigm
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Google's enterprise agent platform incorporating Mariner capabilities
-- [[concepts/agent-sandboxing-patterns]] — sandboxing for agent execution
+- [[concepts/security-and-governance/agent-sandboxing-patterns]] — sandboxing for agent execution

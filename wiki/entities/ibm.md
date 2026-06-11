@@ -51,11 +51,11 @@ IBM's thesis at Think 2026: enterprises have invested heavily in AI, but few bel
 
 ## Multi-Agent Challenge
 
-As organizations scale from a handful of agents to thousands built by different teams on different platforms, the core challenge shifts from building agents to governing and auditing them in near real time. [[concepts/agent-orchestration]] addresses this directly.
+As organizations scale from a handful of agents to thousands built by different teams on different platforms, the core challenge shifts from building agents to governing and auditing them in near real time. [[concepts/agent-team-swarm/agent-orchestration]] addresses this directly.
 
 ## See Also
 
-- [[concepts/agent-orchestration]]
+- [[concepts/agent-team-swarm/agent-orchestration]]
 - [[concepts/ai-operating-model]]
 - [[concepts/enterprise-ai]]
 - [[concepts/governance]]

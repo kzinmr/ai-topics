@@ -110,6 +110,6 @@ Unlike traditional process monitoring, AI agents require:
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Higher-level concept: prerequisite technology for Harness Engineering
-- [[concepts/agent-sandboxing]] — Relationship between process isolation and sandboxing
+- [[concepts/security-and-governance/agent-sandboxing]] — Relationship between process isolation and sandboxing
 - [[concepts/closing-agent-loop]] — Loop detection and process termination conditions
 - [[concepts/context-engineering|Context Engineering]] — Coordination with context consumption monitoring

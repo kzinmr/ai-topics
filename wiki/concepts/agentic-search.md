@@ -1069,7 +1069,7 @@ Layering steering patterns produces progressive NDCG improvements on the WANDS e
 4. **Start with dumb retrievers, add complexity only when data proves it's needed** — simple BM25 + smart steering beats premature complexity
 5. **Delegate to subagents with fresh context** — prevents context rot in long-running searches
 
-For a comprehensive treatment of these patterns, see the dedicated [[concepts/agent-steering]] concept page.
+For a comprehensive treatment of these patterns, see the dedicated [[concepts/harness-engineering/agent-steering]] concept page.
 
 ### Search as Code: Programmable Search Primitives (June 2026)
 
@@ -1155,7 +1155,7 @@ Turnbull's key insight: most organizations will need all three simultaneously. T
 - [[concepts/direct-corpus-interaction]] — DCI: replacing retrieval with grep/bash/shell pipelines
 - [[concepts/markdown-based-skills]] — Skills format used by agentic search (harness layer)
 - [[concepts/s3-first-architecture]] — Where skills files are stored
-- [[concepts/agent-harness]] — Agentic search is part of the harness layer
+- [[concepts/harness-engineering/agent-harness]] — Agentic search is part of the harness layer
 
 ## Related Course Materials
 

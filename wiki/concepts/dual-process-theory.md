@@ -45,7 +45,7 @@ Dual Process Theory, originally from cognitive psychology (Kahneman's "Thinking,
 
 - [[illusion-of-thinking]]
 - [[cognitive-cost-of-agents]]
-- [[agentic-design-patterns]]
+- [[concepts/harness-engineering/agentic-design-patterns]]
 - [[concepts/agent-harness-primitives]]
 
 ## Sources

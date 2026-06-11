@@ -124,8 +124,8 @@ Lee's X/Twitter presence ([@HanchungLee](https://x.com/HanchungLee)) centers on:
 ## Related People/Entities
 
 - [[entities/han-lee]] — Comprehensive entity page with full biography, article catalog, and monitoring
-- [[concepts/agent-runtime]] — The concept page built from Lee's Agent Runtime article, with execution semantics, isolation analysis, and vendor landscape
-- [[concepts/agent-harness]] — The harness layer that runs inside the runtime
+- [[concepts/harness-engineering/agent-runtime]] — The concept page built from Lee's Agent Runtime article, with execution semantics, isolation analysis, and vendor landscape
+- [[concepts/harness-engineering/agent-harness]] — The harness layer that runs inside the runtime
 - [[entities/cognition]] — Devin's VM-level isolation (cited in Lee's article)
 - [[entities/manus]] — Agent runtime snapshotting for replay (cited)
 - [[entities/modal]] — Sandbox infrastructure with gVisor isolation (Ramp Inspect case study cited)

@@ -57,7 +57,7 @@ When writing project prompt files:
 - **Delete prompts when you can** — same instinct as deleting dead code
 
 ### Counterpoint: The Harness Engineering View
-The [[agent-harness]] philosophy (notably articulated by [[garry-tan]] and practitioners of [[hermes-agent]]) takes the opposite view — that carefully engineered prompts, skills, and metaprompting are the key differentiator. See comparison at [[agent-harnesses]].
+The [[concepts/harness-engineering/agent-harness]] philosophy (notably articulated by [[garry-tan]] and practitioners of [[hermes-agent]]) takes the opposite view — that carefully engineered prompts, skills, and metaprompting are the key differentiator. See comparison at [[agent-harnesses]].
 
 This tension between "minimal prompting" and "engineering the harness" is one of the central debates in AI agent engineering in 2026.
 
@@ -72,9 +72,9 @@ This tension between "minimal prompting" and "engineering the harness" is one of
 | Best practice | Write as little as possible | Keep as unconfigured as possible |
 
 ## Related Concepts
-- [[agent-harness]] — The opposing view: invest deeply in prompt engineering
+- [[concepts/harness-engineering/agent-harness]] — The opposing view: invest deeply in prompt engineering
 - [[metaprompting]] — The broader practice of prompting systems that prompt
-- [[agent-architecture-decomposition]] — How agent systems distribute prompting across components
+- [[concepts/harness-engineering/agent-architecture-decomposition]] — How agent systems distribute prompting across components
 - [[ralph-loop]] — A specific agent workflow pattern (a form of prompting)
 - [[ai-agent-engineering]] — The engineering discipline around AI agents
 - [[model-routing]] — Choosing which model to use (a prompt-level decision)

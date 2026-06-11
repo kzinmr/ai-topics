@@ -13,7 +13,7 @@ aliases:
   - "harness development acceleration"
   - "why everyone building agent harness"
 related:
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/harness-commoditization]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/kartik-labhshetwar]]"
@@ -153,7 +153,7 @@ The model gives you intelligence. The harness gives you a product.
 
 ## See Also
 
-- [[concepts/agent-harness]] — Complete harness architecture reference (12 components, 7 decisions)
+- [[concepts/harness-engineering/agent-harness]] — Complete harness architecture reference (12 components, 7 decisions)
 - [[concepts/harness-commoditization]] — The counter-argument and why evidence favors harness differentiation
 - [[comparisons/agent-harnesses]] — 9 major harnesses compared
 - [[entities/kartik-labhshetwar]] — Author of the foundational article

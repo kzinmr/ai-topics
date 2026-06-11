@@ -157,5 +157,5 @@ Value delivered by API-First:
 
 - [[concepts/mcp]] — Model Context Protocol details
 - [[entities/webmcp]] — WebMCP as browser standard
-- [[concepts/agentic-security]] — AI agent security
-- [[concepts/agent-governance]] — AI agent governance
+- [[concepts/security-and-governance/agentic-security]] — AI agent security
+- [[concepts/security-and-governance/agent-governance]] — AI agent governance

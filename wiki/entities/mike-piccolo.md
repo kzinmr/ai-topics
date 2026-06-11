@@ -27,7 +27,7 @@ sources:
   - raw/articles/2026-05-28_mike-piccolo-build-your-own-agent-harness-iii.md
 related:
   - "[[entities/iii-platform]]"
-  - "[[concepts/agent-harness]]"
+  - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/harness-engineering]]"
 ---
 
@@ -92,7 +92,7 @@ Piccolo writes in a direct, architectural voice. His articles are structured as 
 ## Cross-References
 
 - [[entities/iii-platform|iii Platform]] — The open-source engine and workers harness he founded
-- [[concepts/agent-harness]] — The concept his work reimagines from the infrastructure layer
+- [[concepts/harness-engineering/agent-harness]] — The concept his work reimagines from the infrastructure layer
 - [[concepts/harness-engineering]] — The eval-focused harness discipline alongside the operational harness he builds
 - [[concepts/bitter-lesson-harnessing]] — Why harnesses should simplify as models improve
 

@@ -317,7 +317,7 @@ Suggested order by learner type:
 - [[entities/yoav-goldberg]] — Creator of this guide
 - [[entities/andrej-karpathy]] — CS25 Transformer introduction lecture (#15)
 - [[concepts/llm-core]] — LLM foundational concepts
-- [[concepts/agent-engineering-guide-2026]] — Another LLM/AI agent learning guide
+- [[concepts/harness-engineering/agent-engineering-guide-2026]] — Another LLM/AI agent learning guide
 
 ---
 

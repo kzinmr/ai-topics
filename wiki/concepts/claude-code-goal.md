@@ -148,7 +148,7 @@ Evaluation tokens are billed on the small fast model (Haiku) and are typically n
 
 ## Cross-Reference: Claude Code vs Codex /goal
 
-Both products converged on goal-driven autonomous loops within weeks of each other (April–May 2026), reflecting the [[concepts/agentic-loop|agentic loop]] pattern's maturation:
+Both products converged on goal-driven autonomous loops within weeks of each other (April–May 2026), reflecting the [[concepts/harness-engineering/agentic-loop|agentic loop]] pattern's maturation:
 
 | Dimension | Claude Code `/goal` | Codex `/goal` |
 |-----------|-------------------|---------------|
@@ -163,7 +163,7 @@ Both products converged on goal-driven autonomous loops within weeks of each oth
 
 ## Related Concepts
 
-- [[concepts/agentic-loop]] — The canonical agent execution pattern all goal loops implement
+- [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution pattern all goal loops implement
 - [[concepts/codex-goal]] — OpenAI Codex's `/goal` (Ralph loop++)
 - [[concepts/codex-goal-meta-prompting]] — Using AI to generate better goal prompts
 - [[concepts/karpathy-loop]] — Karpathy's fixed-budget autonomous ML research loop

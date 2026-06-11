@@ -47,7 +47,7 @@ ServiceNow positions itself as an **AI control tower** — providing governed, e
 
 ServiceNow's **AI Agent Orchestrator** serves as a "control tower" that coordinates multiple agents across departments. It manages and governs agent collaboration at the organizational level, beyond individual agents.
 
-This is a concrete example of the [[concepts/agent-control-plane|Agent Control Plane]], demonstrating ServiceNow's evolution from a mere ITSM platform to the **governance layer of the Agent era**. ([Source analysis](raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md))
+This is a concrete example of the [[concepts/security-and-governance/agent-control-plane|Agent Control Plane]], demonstrating ServiceNow's evolution from a mere ITSM platform to the **governance layer of the Agent era**. ([Source analysis](raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md))
 
 ## Related Pages
 

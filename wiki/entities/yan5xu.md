@@ -45,7 +45,7 @@ With ~15.7K followers on X/Twitter, yan5xu writes in-depth technical analyses �
 ## Cross-References
 
 - [[concepts/cli-first-development]] — Agent-friendly CLI design principles (enriched from yan5xu's analysis)
-- [[concepts/agent-ergonomics]] — Related concept: language/toolchain design for AI agents
+- [[concepts/harness-engineering/agent-ergonomics]] — Related concept: language/toolchain design for AI agents
 - [[concepts/agent-first-design]] — Related concept: programming language design for agents
 - [[concepts/cli-over-mcp-pattern]] — CLI as agent-tool interface alternative to MCP
 - [[concepts/writing-effective-tools-for-ai-agents]] — General tool design for agents

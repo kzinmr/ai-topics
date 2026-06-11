@@ -175,7 +175,7 @@ The MS implementation emphasizes the **orchestration-overhead reduction**: "Mode
 
 ## CodeAct in the Agent Architecture Stack
 
-In the Model/Runtime/Harness decomposition ([[concepts/agent-architecture-decomposition]]):
+In the Model/Runtime/Harness decomposition ([[concepts/harness-engineering/agent-architecture-decomposition]]):
 
 ```
 Harness: Agent Framework (MS), custom orchestrator (academic)

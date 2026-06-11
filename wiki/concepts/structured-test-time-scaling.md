@@ -166,4 +166,4 @@ This reveals structured systems do not "add more compute" — they succeed throu
 - [[reduce-offload-isolate]] — Lance Martin's complementary context engineering taxonomy.
 - [[dynamic-workflows]] — Claude Code's programmatic sub-agent spawning as a scaffold-level instantiation of topology compression.
 - [[multi-agent-orchestration-architecture]] — Architectural patterns for multi-agent systems.
-- [[agent-architecture-decomposition]] — How agent architectures decompose into components.
+- [[concepts/harness-engineering/agent-architecture-decomposition]] — How agent architectures decompose into components.

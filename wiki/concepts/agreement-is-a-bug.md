@@ -32,6 +32,6 @@ Agreement as a bug connects directly to [[ai-sycophancy]] — the tendency of LL
 
 - [[ai-sycophancy]]
 - [[gepa]]
-- [[concepts/agent-swarms]]
-- [[agentic-conflict-resolution]]
+- [[concepts/agent-team-swarm/agent-swarms]]
+- [[concepts/agent-team-swarm/agentic-conflict-resolution]]
 - [[multi-agent-systems]]

@@ -315,10 +315,10 @@ Use PreToolUse hooks to log Skill usage:
 
 ## See Also
 
-- [[concepts/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
+- [[concepts/harness-engineering/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
 - [[concepts/agent-skills]] — Agent Skills open standard (Anthropic Engineering)
 - [[concepts/skill-architecture-patterns]] — Self-Authored vs Governed (Hermes Agent vs OpenClaw)
-- [[concepts/agent-harness]] — Agent Harness overview
+- [[concepts/harness-engineering/agent-harness]] — Agent Harness overview
 - [[concepts/mcp]] — Model Context Protocol
 - [[concepts/claude-code-best-practices]] — Claude Code operational best practices
 - [[entities/thariq-shihipar]] — Author

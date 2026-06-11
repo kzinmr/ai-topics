@@ -112,7 +112,7 @@ Differentiators:
 
 #### ② Design Agent-Native Applications
 
-As [[concepts/agent-native-product-management]] shows, future applications should be designed for Agent-first use.
+As [[concepts/harness-engineering/agent-native-product-management]] shows, future applications should be designed for Agent-first use.
 
 Design principle from [[comparisons/open-harness-vs-agent-framework]]:
 > *"Ensure business logic survives even if the harness is swapped out"*
@@ -165,7 +165,7 @@ Instead of "abandoning" SaaS, stand on the side of "redefining" it:
 - [[concepts/harness-engineering]] — Hamel Husain, Viv Trivedy, Addy Osmani, LangChain
 - [[comparisons/open-harness-vs-agent-framework]] — kzinmr (May 2026)
 - [[comparisons/agent-harnesses]] — Agent Harness comparison
-- [[concepts/agent-native-product-management]] — Marcus Moretti / Every Inc
+- [[concepts/harness-engineering/agent-native-product-management]] — Marcus Moretti / Every Inc
 - [[entities/palantir]] — FDE model
 - [[concepts/ai-services-joint-ventures]] — OpenAI/Anthropic/AWS JV strategies
 - [[raw/newsletters/2026-05-05-why-saas-freemium-playbooks-don-t-work-in-ai]] — Lenny's Podcast (Vikas Kansal / Google)

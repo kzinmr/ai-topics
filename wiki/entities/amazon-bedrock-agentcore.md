@@ -70,6 +70,6 @@ AWS holds **31% cloud market share** — the largest infrastructure base. AgentC
 
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Google's full-stack competitor
 - [[concepts/microsoft-agent-365]] — Microsoft's governance layer
-- [[concepts/agent-harness]] — The infrastructure layer for LLM agents
-- [[concepts/agent-governance]] — Enterprise agent governance
+- [[concepts/harness-engineering/agent-harness]] — The infrastructure layer for LLM agents
+- [[concepts/security-and-governance/agent-governance]] — Enterprise agent governance
 - [[entities/anthropic]] — Claude Managed Agents competitor

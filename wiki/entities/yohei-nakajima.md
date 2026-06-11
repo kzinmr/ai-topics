@@ -82,7 +82,7 @@ Synthesized NeurIPS 2025 papers into six mechanisms for agent self-improvement:
 
 **Part 2**: "ActiveGraph: A Continuity Layer for Long-Running Agents" — concrete design response. Positioned as conceptually "BabyAGI 4." Introduces ActiveGraph: a graph that models the *world the computation acts on* (not the computation itself). Five-layer architecture: Events (append-only), Behaviors (reactions), Relations (semantics), Patches (proposal vs acceptance), Traces (not debugging — **the product**). Everything becomes state: tasks, claims, evidence, contradictions, decisions, failures, proposed self-improvements. Self-improvement via trace → evaluate → patch → fork → diff → promote. Closing thesis: "LLMs reason. Agent loops act. Active Graph explores continuity."
 
-Both articles documented in [[concepts/agent-statefulness]]. The architecture was formalized as **arXiv:2605.21997** "The Log is the Agent" (May 2026) with open-source release (`pip install activegraph`, Apache-2.0) and full documentation at [docs.activegraph.ai](https://docs.activegraph.ai). See **[[concepts/activegraph]]** for the complete architecture.
+Both articles documented in [[concepts/harness-engineering/agent-statefulness]]. The architecture was formalized as **arXiv:2605.21997** "The Log is the Agent" (May 2026) with open-source release (`pip install activegraph`, Apache-2.0) and full documentation at [docs.activegraph.ai](https://docs.activegraph.ai). See **[[concepts/activegraph]]** for the complete architecture.
 
 ### ActiveGraph Paper (May 2026)
 - **Title**: "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems" (arXiv:2605.21997)
@@ -107,10 +107,10 @@ Both articles documented in [[concepts/agent-statefulness]]. The architecture wa
 ## Related Pages
 
 - [[concepts/activegraph]] — The formal event-sourced reactive graph architecture (arXiv:2605.21997)
-- [[concepts/agent-statefulness]] — The evolution of state management in AI agents
+- [[concepts/harness-engineering/agent-statefulness]] — The evolution of state management in AI agents
 - [[concepts/babyagi]] — BabyAGI concept page
 - [[concepts/memory-systems-design-patterns]] — Anthropic vs OpenAI vs Cognition memory patterns
-- [[concepts/agent-runtime]] — Agent execution environment
+- [[concepts/harness-engineering/agent-runtime]] — Agent execution environment
 - [[concepts/agent-harness-primitives]] — Harness as stateful control layer
 - [[entities/supermemory]] — SMFS: mountable filesystem for AI agents
 - [[concepts/context-engineering/context-repositories|Context Repositories]] — Letta's git-based agent memory approach

@@ -55,8 +55,8 @@ The toolkit is framework-agnostic and integrates via native extension points (ca
 
 This toolkit complements other agent security initiatives:
 - **vs. [[entities/cisco|Cisco]] DefenseClaw:** Both are open-source agent security frameworks. Microsoft's is framework-agnostic and policy-driven; Cisco's is OpenClaw/NVIDIA OpenShell-specific and scanner-driven.
-- **vs. [[concepts/agent-governance]]:** The Agent Governance concept page defines governance patterns; this toolkit is a concrete implementation.
-- **vs. [[concepts/agentic-ai-governance]]:** The Agentic AI Governance concept covers legal/regulatory frameworks; this toolkit provides technical enforcement.
+- **vs. [[concepts/security-and-governance/agent-governance]]:** The Agent Governance concept page defines governance patterns; this toolkit is a concrete implementation.
+- **vs. [[concepts/security-and-governance/agentic-ai-governance]]:** The Agentic AI Governance concept covers legal/regulatory frameworks; this toolkit provides technical enforcement.
 - **In context of [[concepts/moltbook-breach-2026]]:** The 770K agent breach demonstrated why runtime governance is non-optional — this toolkit was partially a response.
 
 ## Deployment
@@ -71,8 +71,8 @@ Azure deployment: AKS (sidecar), Foundry Agent Service (middleware), or Containe
 - Planned move to a foundation for community stewardship
 
 ## Related Pages
-- [[concepts/agent-governance]]
-- [[concepts/agentic-ai-governance]]
+- [[concepts/security-and-governance/agent-governance]]
+- [[concepts/security-and-governance/agentic-ai-governance]]
 - [[concepts/moltbook-breach-2026]]
 - [[concepts/mcp]]
 - [[entities/microsoft]]

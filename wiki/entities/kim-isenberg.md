@@ -50,7 +50,7 @@ Superintel articles have previously informed wiki content on:
 
 ## Related
 
-- [[concepts/agentic-ai-governance]] — Governance frameworks for AI agency (enriched with cognitive light cone concept)
+- [[concepts/security-and-governance/agentic-ai-governance]] — Governance frameworks for AI agency (enriched with cognitive light cone concept)
 - [[entities/alex-banks]] — The Signal newsletter author, similar AI analysis format
 - [[concepts/cognitive-light-cone]] — Michael Levin's framework applied to AI
 - [[entities/nvidia]] — Hardware analysis covered in Superintel

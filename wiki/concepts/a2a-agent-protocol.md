@@ -47,7 +47,7 @@ A2A **complements** Anthropic's [[Model Context Protocol (MCP)|concepts/model-co
 | **MCP** | Provides tools, resources, and context to individual agents | Agent ↔ Tools/Data |
 | **A2A** | Enables agent-to-agent discovery, communication, and coordination | Agent ↔ Agent |
 
-**Decision heuristic:** Use MCP when you need to give an agent access to databases, APIs, or filesystem tools. Use A2A when you need agents to delegate work to each other across organizational or vendor boundaries. They are often used together in production architectures: MCP handles tool integration, A2A handles cross-agent orchestration. See [[concepts/agent-communication-protocols]] for a detailed comparison.
+**Decision heuristic:** Use MCP when you need to give an agent access to databases, APIs, or filesystem tools. Use A2A when you need agents to delegate work to each other across organizational or vendor boundaries. They are often used together in production architectures: MCP handles tool integration, A2A handles cross-agent orchestration. See [[concepts/agent-team-swarm/agent-communication-protocols]] for a detailed comparison.
 
 ## Key Features
 
@@ -76,6 +76,6 @@ A production-ready version was planned for late 2025. As of 2026, A2A has become
 ## See Also
 
 - [[concepts/mcp-protocol]] — Model Context Protocol for agent-to-tool communication
-- [[concepts/agent-communication-protocols]] — MCP vs A2A comparison and decision guide
+- [[concepts/agent-team-swarm/agent-communication-protocols]] — MCP vs A2A comparison and decision guide
 - [[concepts/agent-communication-standards]] — Timeline of ACP, A2A, and BeeAI convergence
 - [[model-context-protocol-mcp|concepts/model-context-protocol-mcp]] — MCP overview and relationship to agent communication

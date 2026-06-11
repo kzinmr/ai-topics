@@ -282,7 +282,7 @@ The RL-harness lifecycle suggests focusing on:
 ## Related Concepts
 
 - **[[concepts/harness-engineering]]** — The discipline of designing and building agent scaffolding
-- **[[agent-harness]]** — Specific implementations of model-environment interfaces
+- **[[concepts/harness-engineering/agent-harness]]** — Specific implementations of model-environment interfaces
 - **[[concepts/reinforcement-learning]]** — The training paradigm that internalizes harness patterns
 - **[[concepts/chain-of-thought]]** — Historical example of harness-to-capability evolution
 
