@@ -13,6 +13,8 @@ sources: [raw/articles/crawl-2026-04-18-context-compression.md]
 
 # Context Compression Techniques
 
+> **Compression** (techniques) and **[[concepts/context-engineering/compaction|Compaction]]** (runtime process) are related but distinct. Compression answers "what method to use" (summarization, retrieval, structural, learned). Compaction answers "when and how the agent executes compression" (harness implementations, Pre-Compaction Flush, etc.). → See [[concepts/context-engineering/compaction|Compaction]] for harness comparison table.
+
 Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for [[concepts/context-engineering|Context Engineering]] — addresses the fundamental constraint that LLMs have finite context windows but applications need to provide ever-larger amounts of relevant information.
 
 ## Why Compression Matters

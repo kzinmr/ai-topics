@@ -70,6 +70,7 @@ An innovative approach implemented by OpenClaw. As the conversation approaches t
 
 ## Related
 
+- [[concepts/context-engineering/compression|Context Compression Techniques]] — Compression algorithms (summarization, retrieval, structural, learned) that Compaction processes use
 - [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex memory system comparison
 - [[entities/openclaw]] — OpenClaw entity (Pre-Compaction Flush details in Memory System section)
 - [[entities/claude-code--architecture]] — Claude Code 5-layer compaction pipeline
