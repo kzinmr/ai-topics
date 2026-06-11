@@ -1538,7 +1538,7 @@
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development — Methodology for using LLM coding agents in software development. Covers greenfield vs rewrite paradigms, CL size discipline, test-first strategy, language choice (Go advantage), human-in-the-loop categories, and junior vs senior guidance. Based on Eli Bendersky's pycparser rewrite and watgo greenfield project experiences.
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
 - [[concepts/llm-augmented-knowledge-retrieval]] — LLM-Augmented Knowledge Retrieval — Pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Retrieval-first organization for LLM-queryable vaults. Related: Claude Code + Obsidian integration, Karpathy's LLM Wiki concept.
-- [[concepts/llm-code-quality]] — LLM Code Quality — LLM-generated code is ~10% more complex than necessary even on easy tasks. "Almost good" quality accepted too easily, creates long-term technical debt. Case study: Haskell HTTP header encoding.
+- [[concepts/llm-code-quality]] — LLM Code Quality — LLM-generated code is ~10% more complex than necessary even on easy tasks. "Almost good" quality accepted too easily via "right there, right now" reasoning. Case study: Haskell HTTP header encoding with dead code discovery via CI coverage. Scaling concern: 8% overhead on easy tasks, what about hard ones?
 - [[concepts/llm-core]] — LLM Core
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-creative-writing]] — LLM Creative Writing — AI-assisted creative writing: narrative generation, style transfer, and prompting for literary prose. Gwern's analysis of better LLM writing techniques.

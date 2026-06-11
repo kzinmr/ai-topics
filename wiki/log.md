@@ -1,3 +1,33 @@
+## [2026-06-11] Dreaming: Knowledge consolidation — 1 page enriched, 5 skipped (already covered)
+
+**Pipeline**: dreaming-collect → dreaming-wiki-ingest
+
+### Duplicate Check Summary
+- Items skipped (already processed by other jobs): 5
+- Gaps filled: 1
+- Overlapping areas identified:
+  - Dwarkesh "Sample Efficiency Black Hole" → `concepts/sample-efficiency.md` (127 lines) + entity enriched by blog-wiki-ingest
+  - Ed Zitron "AI Is Slowing Down" → `entities/ed-zitron.md` (468 lines, detailed infrastructure math at lines 353-410+)
+  - Martin Alderson "xAI datacentre REIT" → `entities/martin-alderson.md` (232 lines, quote+analysis at line 85+)
+  - Simon Willison "Siri AI at WWDC" → `concepts/siri-ai.md` (100 lines) + entity page
+  - Gary Marcus "entire industry propped up by math" → `entities/gary-marcus.md` (line 177+)
+
+### Consolidation Summary
+- Articles processed: 6
+- Themes identified: 6
+- Pages created: 0
+- Pages updated: 1
+
+### Updated Pages
+- `concepts/llm-code-quality.md` — Enriched from 39→62 lines. Added detailed Haskell case study (24-line `toHeaderValue` function with dead `padHex` branch, custom percent-encoding vs standard library `urlEncode`), "right there, right now" acceptance problem framework, scaling concern (8%→20-40%? on harder tasks), added `vibe-coding` cross-reference. Source: entropicthoughts.com "LLMs and almost good code" (Jun 2026).
+
+### NJ Delivery Filter
+- Lead story (NJ≥4): None — all articles already covered by adjacent jobs
+- Secondary (NJ=3): `llm-code-quality.md` enrichment — the "almost good" framing is a useful counterpoint to vibe-coding enthusiasm
+- Brief mention: Dwarkesh sample efficiency, Zitron infrastructure math — both well-covered
+
+---
+
 ## [2026-06-11] Watchdog auto-fix: index counts + log separators
 
 ### Changes
