@@ -1,3 +1,13 @@
+## [2026-06-11] Lesson 5: Formulating Business Problems as RL Tasks (文字起こし・要約・Notebook)
+
+**Action**: Ingested Lesson 5 transcript from message.txt. Saved raw notebook from GitHub. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, lesson summary, companion resources, related links).
+
+- `transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture.md` — Lesson 5 lecture transcript (Kyle Corbitt live-coding GRPO training)
+- `raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5.md` — Lesson 5 summary article
+- `raw/articles/grpo_details_lec5.ipynb` — Will Brown's Lecture 5.5 notebook (GRPO infrastructure details)
+
+---
+
 ## [2026-06-10] Florian Brand: Open Model Safety
 ## [2026-06-11] Kyle Corbitt Blog Series: ART開発前の知的背景 (4記事)
 ## [2026-06-11] Kyle Corbitt Blog Series: ART/RL実装と実践 (4記事)

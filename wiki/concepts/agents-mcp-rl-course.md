@@ -14,6 +14,7 @@ tags:
   - evaluation
   - context-engineering
   - tool-calling
+  - reward-engineering
 sources:
   - raw/articles/2026-06-10_maven_agents-mcp-rl-course-overview.md
   - raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md
@@ -22,6 +23,7 @@ sources:
   - raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3.md
   - raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4.md
   - raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md
+  - raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - raw/articles/2024-10-11_corbt_founders-guide-to-fine-tuning.md
   - raw/articles/2024-10-28_corbt_hacker-news-rlhf-part1.md
@@ -81,6 +83,7 @@ CTO of **OpenPipe**, the RL post-training company that helps companies train cus
 | [prod_agents.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec2-prod-agents/prod_agents.ipynb) | Lesson 2 notebook: production-grade agent patterns |
 | [evals_optimization.ipynb](https://github.com/willccbb/agent-engineering/blob/main/lectures-1-through-4/lec3-evals-optimization/evals_optimization.ipynb) | Lesson 3 notebook: evals, SFT, and GRPO |
 | [grpo_intro.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec4-rl/grpo_intro.ipynb) | Lesson 4 notebook: multi-armed bandit + GRPO batch demo |
+| [grpo_details.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec5-grpo-details/grpo_details.ipynb) | Lesson 5.5 notebook: GRPO infrastructure + implementation details |
 | [verifiers](https://github.com/PrimeIntellect-ai/verifiers) | RL environment library for training and evaluating LLMs |
 | [mcp-client-server](https://github.com/willccbb/mcp-client-server) | MCP Server that's also an MCP Client |
 
@@ -128,7 +131,7 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 | Jun 24 | [[transcripts/2025-06-24_willbrown_agents-mcp-rl-lesson3-lecture\|Lesson 3: Agent Evals and Optimization]] | [[raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3\|Summary]] |
 | Jun 26 | [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture\|Lesson 4: Introduction to Reinforcement Learning]] | [[raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4\|Summary]] |
 | Jun 27 | [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Office Hours with Kyle Corbitt]] | [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Summary]] |
-| TBD | Lecture 5 | *pending* |
+| Jul 2 | [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture\|Lesson 5: Formulating Business Problems as RL Tasks]] | [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5\|Summary]] |
 | TBD | Lecture 6 | *pending* |
 
 ## Lesson Summaries
@@ -168,6 +171,12 @@ Unscripted Q&A session. Deep dives on: reward hacking mitigation (iterative proc
 **Key insight:** "Much more bullish on not needing to do any of this stuff" — ungrounded LM judges work well as reward models for many tasks. For human feedback, start with context extraction before thinking about RL.
 
 **Transcript:** [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] · **Summary:** [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]]
+
+### Lesson 5: Formulating Business Problems as RL Tasks (Jul 2)
+
+Kyle Corbitt delivers a live-coding lecture completing the agent → RL pipeline. Refactors the email agent into a scenario-based architecture with a `return_final_answer` tool for structured output (answer + source message IDs). Builds an LM-as-judge reward signal with iterative prompt engineering, parallelized benchmarking with Weave tracing, then implements the full GRPO training loop using OpenPipe's ART framework: `TrainableModel` (Qwen 2.5 14B), `LocalBackend` with vLLM, trajectory groups (4 rollouts per scenario), and `model.train()` weight updates. Launches remote H100 training via SkyPilot. Key findings: 4 rollouts per group (smaller than typical) works well, temperature 1 is mandatory, reward std dev collapse indicates output saturation. Will Brown previews Lecture 5.5 notebook covering GRPO infrastructure details (VRAM math, tool call masking, KL penalties, dynamic sampling, VinePPO).
+
+**Transcript:** [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture]] · **Summary:** [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5]] · **Notebook:** [grpo_details.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec5-grpo-details/grpo_details.ipynb)
 
 ## Included Credits
 
@@ -231,6 +240,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-06-26_willbrown_agents-mcp-rl-lesson4-lecture]] — Lesson 4 transcript
 - [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] — Office Hours with Kyle Corbitt
 - [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours]] — Office Hours transcript
+- [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5]] — Lesson 5: Formulating Business Problems as RL Tasks
+- [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture]] — Lesson 5 transcript
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
