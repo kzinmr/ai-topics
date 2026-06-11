@@ -135,6 +135,8 @@ Take notes → Iterate search-browse-synthesize cycles → Produce comprehensive
 
 **Key insight**: Deep Research represents a distinct browser agent pattern — not focused on UI interaction or transaction execution, but on **autonomous information gathering and synthesis**. The model decides what to search, browses autonomously, and produces comprehensive reports. This "research-first" approach complements the "action-first" patterns of Operator/Computer Use.
 
+→ See [[concepts/browser-agent/deep-research]] for detailed analysis.
+
 ## Key Trends (2026)
 
 ### 1. Browser Agent Standardization

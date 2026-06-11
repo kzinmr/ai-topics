@@ -1255,6 +1255,7 @@
 - [[concepts/datasette-referrer-policy]] — datasette-referrer-policy: Datasette referrer policy plugin.
 - [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + Postgres for Agent Workflows: AI agent workflow foundation integrating filesystem and PostgreSQL.
 - [[concepts/browser-agent/death-of-browser|Death of Browser — Dehumanization of the Browser]] — The browser was the UI for humans. From now on, it's the UI for agents.
+- [[concepts/browser-agent/deep-research|Deep Research — Agentic Browsing for Autonomous Research]] — OpenAI's fine-tuned o3 for autonomous web research and synthesis.
 - [[concepts/deep-learning]] — Deep Learning: Foundations, training paradigm shifts, and ecosystem coverage
 - [[concepts/deep-agents]] — Deep Agents: Autonomous AI agents combining multiple architecture patterns.
 - [[concepts/deep-agents-runtime]] — Deep Agents Runtime: Production execution foundation for deep agents (durable execution, memory, multi-agent).

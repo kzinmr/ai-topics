@@ -30,6 +30,19 @@
 
 ---
 
+## [2026-06-11] browser-agent/deep-research.md コンセプトページ作成
+
+**Action**: `concepts/browser-agent/deep-research.md` を新規作成。Deep Research を browser-agent エコシステムの中で位置づけるコンセプトページ。既存の `concepts/deep-research.md`（retrieval 問題焦点）とは異なる視点で、agentic browsing loop のパターンとして整理。
+
+**新規ページ**:
+- `concepts/browser-agent/deep-research.md` — Agentic Browsing for Autonomous Research
+
+**更新ページ**:
+- `index.md` — 新規ページ追加
+- `concepts/browser-agent/death-of-browser.md` — 新規ページへのリンク追加
+
+---
+
 ## [2026-06-11] MCP-RL Course 講義内容の詳細サマリー展開と概念ページ分解
 
 **Action**: agents-mcp-rl-course.md の Lesson 1-6 + Office Hours の講義内容を詳細に分析し、コースページの Detailed Technical Notes セクションを追加。論点ごとに4つの新規概念ページを作成し、既存2ページを充実させた。
