@@ -128,9 +128,9 @@ This pattern echoes broader concerns about benchmark specialization in the model
 
 ## Related
 
-- [[concepts/gemini|Google Gemini]] — broader Gemini model family
+- [[concepts/gemini/index|Google Gemini]] — broader Gemini model family
 - [[concepts/gemini/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]]
-- [[concepts/gemini/index]]-3-1-flash-lite|Gemini 3.1 Flash-Lite]]
+- [[concepts/gemini/gemini-3-1-flash-lite|Gemini 3.1 Flash-Lite]]
 - [[concepts/coding-agents|Coding Agents]]
 - [[concepts/ai-agents|AI Agents]]
 - [[concepts/agentic-engineering|Agentic Engineering]]

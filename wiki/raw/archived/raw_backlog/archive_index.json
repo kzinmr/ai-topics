@@ -1,0 +1,36 @@
+{
+  "archived_files": [
+    {
+      "filename": "2026-06-11_20260611T000025Z.json",
+      "date": "2026-06-11",
+      "items": 5
+    }
+  ],
+  "archived_urls": {
+    "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "archived_in": "2026-06-11_20260611T000025Z.json",
+      "action": "skip"
+    },
+    "https://www.dwarkesh.com/p/alex-imas-phil-trammell": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "archived_in": "2026-06-11_20260611T000025Z.json",
+      "action": "skip"
+    },
+    "https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "archived_in": "2026-06-11_20260611T000025Z.json",
+      "action": "skip"
+    },
+    "https://www.wheresyoured.at/ai-doesnt-have-roi/": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "archived_in": "2026-06-11_20260611T000025Z.json",
+      "action": "skip"
+    },
+    "https://github.com/walkinglabs/hands-on-modern-rl": {
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md",
+      "archived_in": "2026-06-11_20260611T000025Z.json",
+      "action": "skip"
+    }
+  }
+}

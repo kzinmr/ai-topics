@@ -2,7 +2,7 @@
 title: Corbett (Kyle Corbitt)
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-06-11
 tags:
   - x-account
   - model
@@ -105,12 +105,21 @@ Unlike many AI startups that keep their technology proprietary, OpenPipe has con
 -  — Corbitt's former employer (Startup School Director)
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Philosophy underlying OpenPipe's approach
 - [[entities/john-carmack]] — Keen Technologies founder; AGI via reinforcement learning
+- [[concepts/agents-mcp-rl-course]] — Production-Ready Agent Engineering course (co-instructor)
+- [[raw/articles/2024-10-11_corbt_founders-guide-to-fine-tuning]] — Founder's guide to fine-tuning decisions
+- [[raw/articles/2024-10-28_corbt_hacker-news-rlhf-part1]] — RLHF applied to HN content ranking
+- [[raw/articles/2024-12-30_corbt_openai-reinforcement-fine-tuning]] — Analysis of OpenAI's RFT
+- [[raw/articles/2025-01-14_corbt_deterministic-vs-freeform-tasks]] — Deterministic vs freeform task distinction
 
 ## Sources
 
 - [OpenPipe website](https://openpipe.ai)
 - [OpenPipe at Y Combinator](https://www.ycombinator.com/companies/openpipe)
 - [OpenPipe is Joining CoreWeave — Kyle Corbitt's blog post](https://corbt.com/posts/openpipe-coreweave)
+- [A Founder's Guide to AI Fine-Tuning](https://corbt.com/posts/a-founder-s-guide-to-ai-fine-tuning) — 2024-10-11
+- [Using RL and $4.80 of GPU Time to Find the Best HN Post Ever (RLHF Part 1)](https://corbt.com/posts/hacker-news-rlhf-part-1) — 2024-10-28
+- [Analyzing OpenAI's Reinforcement Fine-Tuning (RFT)](https://corbt.com/posts/openai-rft) — 2024-12-30
+- [One Right Answer or Many? Deterministic vs Freeform Tasks](https://corbt.com/posts/deterministic-vs-freeform-tasks) — 2025-01-14
 - [Kyle Corbitt on LinkedIn](https://linkedin.com/in/kcorbitt)
 - [Tejas Kumar podcast with Kyle Corbitt](https://www.youtube.com/watch?v=KsG-8xyM9A8)
 - [OpenPipe raises $6.2M — GeekWire](https://www.geekwire.com/2024/seattle-startup-openpipe-raises-6-2m/)

@@ -1,4 +1,15 @@
 ## [2026-06-10] Florian Brand: Open Model Safety
+## [2026-06-11] Kyle Corbitt Blog Series: ART開発前の知的背景 (4記事)
+
+**Action**: Saved 4 raw articles from corbt.com (2024-10 ~ 2025-01). Updated `entities/corbett.md` (sources, related). Updated `concepts/agents-mcp-rl-course.md` (sources, supplementary reading section).
+
+- `raw/articles/2024-10-11_corbt_founders-guide-to-fine-tuning.md` — A Founder's Guide to AI Fine-Tuning
+- `raw/articles/2024-10-28_corbt_hacker-news-rlhf-part1.md` — RLHF Part 1: HN Ranking ($4.80 GPU)
+- `raw/articles/2024-12-30_corbt_openai-reinforcement-fine-tuning.md` — OpenAI RFT Analysis
+- `raw/articles/2025-01-14_corbt_deterministic-vs-freeform-tasks.md` — Deterministic vs Freeform Tasks
+
+---
+
 
 **Action**: Saved raw article. Created `concepts/open-model-safety.md`. Updated `entities/florian-brand.md` (blog posts, X Activity Themes, sources, tags). Updated `index.md`.
 

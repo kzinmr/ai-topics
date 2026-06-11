@@ -23,6 +23,10 @@ sources:
   - raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4.md
   - raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
+  - raw/articles/2024-10-11_corbt_founders-guide-to-fine-tuning.md
+  - raw/articles/2024-10-28_corbt_hacker-news-rlhf-part1.md
+  - raw/articles/2024-12-30_corbt_openai-reinforcement-fine-tuning.md
+  - raw/articles/2025-01-14_corbt_deterministic-vs-freeform-tasks.md
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://maven.com/p/193c6f/build-your-own-ai-research-agent
   - https://maven.com/p/c3950c/training-agents-with-reinforcement-learning
@@ -245,3 +249,12 @@ Dylan Patel's comprehensive report on RL infrastructure bottlenecks complements 
 See [[concepts/reward-hacking]] for the expanded reward hacking taxonomy including Semi Analysis examples.
 
 **Source:** [Scaling RL: Environments, Reward Hacking, Agents, Scaling Data](https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data) (paywall — preview covers ~80% of content)
+
+### Kyle Corbitt Blog Series: ART開発前の知的背景 (2024-10 ~ 2025-01)
+
+Kyle Corbitt が OpenPipe/ART 開発前〜開発中にかけて発信したブログシリーズ。Fine-tuning → RLHF → RFT → タスク分類という思考の進化過程が見える。
+
+- **[A Founder's Guide to AI Fine-Tuning](https://corbt.com/posts/a-founder-s-guide-to-ai-fine-tuning)** (2024-10-11) — Fine-tuning の意思決定フレームワーク。何时 fine-tuning すべきか（prompt engineering / few-shot / RAG を尽くしてから）、データ準備（品質 > 量、代表性、一貫性、重複排除）、学習プロセス（小規模開始、テストセット確保、データイテレーション）、よくある失敗（過学習、データ汚染、評価 neglect、時期尚早な fine-tuning）。[[raw/articles/2024-10-11_corbt_founders-guide-to-fine-tuning]]
+- **[RLHF Part 1: Hacker News Ranking](https://corbt.com/posts/hacker-news-rlhf-part-1)** (2024-10-28) — HN コンテンツランキングに RLHF を適用した実践例。Prompt engineering → 特徴量追加 → RLHF パイプライン（500 件のペアワイズ比較、Bradley-Terry loss の報酬モデル、78% 精度）。CTR が 25% → 60% に改善。**教訓:** LLM は特徴量抽出器としては優秀だがランカーとしては不十分、少量の preference データで大きく改善、特徴量エンジニアリング > モデルアーキテクチャ。[[raw/articles/2024-10-28_corbt_hacker-news-rlhf-part1]]
+- **[Analyzing OpenAI's RFT](https://corbt.com/posts/openai-rft)** (2024-12-30) — OpenAI の Reinforcement Fine-Tuning (RFT) の技術解説。検証可能な出力を持つタスク向け、PPO + partial credit の grading function（dense reward）、少数データ（数十件）で学習可能。RFT 適用条件: タスクが難しい、出力が検証容易、ラベルデータが少ない。RFT → SFT への蒸留パイプライン（50件 RFT → 20K SFT → 5M 推論）。**Open-source RFT の QwQ 向け実装も進行中。** [[raw/articles/2024-12-30_corbt_openai-reinforcement-fine-tuning]]
+- **[Deterministic vs Freeform Tasks](https://corbt.com/posts/deterministic-vs-freeform-tasks)** (2025-01-14) — タスクを deterministic（正解一意: 分類、情報抽出）と freeform（正解複数: 要約、チャット）に分類するフレームワーク。OpenPipe データセット分析: 63% freeform / 37% deterministic（使用量上位では逆転）。**温度:** deterministic=0、freeform=0.7-1.0。**評価:** deterministic は golden dataset、freeform は vibe check / LLM-as-judge / user feedback。**Fine-tuning:** deterministic → RFT + 小モデル蒸留、freeform → DPO / RLHF。**この分類は course の evaluation 講義の理論的基盤。** [[raw/articles/2025-01-14_corbt_deterministic-vs-freeform-tasks]]

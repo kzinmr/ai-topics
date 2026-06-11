@@ -1,0 +1,67 @@
+[
+  {
+    "item_id": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+    "source": "raw_backlog",
+    "source_name": "Microsoft AI",
+    "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+    "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ 既に concepts/mai-thinking-1-tech-report.md（227行）に詳細にカバー済み。concepts/microsoft-mai-models.md にもMAI-Thinking-1の記載あり。技術レポート全文（109ページ分）の抽出内容は両ページに網羅的に取り込まれている。",
+    "candidate_wiki_path": "concepts/mai-thinking-1-tech-report.md",
+    "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE",
+    "archived_at": "2026-06-11T00:03:05.568122"
+  },
+  {
+    "item_id": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+    "source": "raw_backlog",
+    "source_name": "Dwarkesh Patel",
+    "title": "Alex Imas and Phil Trammell - What remains scarce after AGI?",
+    "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ 既に concepts/agi-economics.md にAGI経済学コンテンツとして収録。entities/dwarkesh-patel.md にもタイムライン記載あり。2026年6月時点ですでに複数回のトリアージでskip判定済み。",
+    "candidate_wiki_path": "concepts/agi-economics.md",
+    "body_excerpt": "# Alex Imas and Phil Trammell - What remains scarce after AGI?\nSource: https://www.dwarkesh.com/p/alex-imas-phil-trammell\nEconomics of AGI episode w Alex Imas and Phil Trammell.\nThere's a bunch of important questions about how we deal with AI that only economics can answer.",
+    "archived_at": "2026-06-11T00:03:05.568134"
+  },
+  {
+    "item_id": "2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+    "source": "raw_backlog",
+    "source_name": "Will Brown / Maven Course",
+    "title": "Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)",
+    "url": "https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ 既に concepts/agents-mcp-rl-course.md（222行）にコースの一部として収録。entities/will-brown.md（214行）にもタイムラインとプロジェクト記載あり。Lesson 2の講義内容（Pydantic/structured outputs、async processing、MCP architecture、observability）は概念ページに既に要約されている。",
+    "candidate_wiki_path": "concepts/agents-mcp-rl-course.md",
+    "body_excerpt": "# Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)\n**Instructor:** Will Brown (Research Lead, Prime Intellect)\n**Co-instructor:** Kyle Corbitt (CTO, OpenPipe)\n**Date:** June 19, 2025",
+    "archived_at": "2026-06-11T00:03:05.568137"
+  },
+  {
+    "item_id": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+    "source": "raw_backlog",
+    "source_name": "Ed Zitron",
+    "title": "AI Doesn't Have ROI",
+    "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ 既に entities/ed-zitron.md（468行）のAI ROI批判セクションとして収録。ソースfrontmatterにも raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md が明示的に登録済み。トークン課金移行、GitHub Copilotのクレジット消費問題、Bain調査の「the technology worked, the value didn't arrive」など主要論点はカバーされている。",
+    "candidate_wiki_path": "entities/ed-zitron.md",
+    "body_excerpt": "# AI Doesn't Have ROI\nSource: https://www.wheresyoured.at/ai-doesnt-have-roi/\nIf you liked this piece, you should subscribe to my premium newsletter. It's $70 a year, or $7 a month...",
+    "archived_at": "2026-06-11T00:03:05.568139"
+  },
+  {
+    "item_id": "2026-05-02_walkinglabs_hands-on-modern-rl.md",
+    "source": "raw_backlog",
+    "source_name": "walkinglabs",
+    "title": "Hands-On Modern RL: A Practice-First Guide to Modern Reinforcement Learning",
+    "url": "https://github.com/walkinglabs/hands-on-modern-rl",
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-05-02_walkinglabs_hands-on-modern-rl.md",
+    "recommended_action": "skip",
+    "reason_ja": "★★☆☆☆ 既に concepts/hands-on-modern-rl.md（156行）にカリキュラムとして収録。RL基礎（MDP, Q-Learning, DQN, PPO）からLLMアライメント（RLHF, DPO, GRPO, RLVR）までカバー済み。concepts/rlvr.md、concepts/grpo-rl-training.md にも相互リンク登録済み。2026年6月10日のraw-backlog-ingestでもskip判定。",
+    "candidate_wiki_path": "concepts/hands-on-modern-rl.md",
+    "body_excerpt": "# Hands-On Modern RL: A Practice-First Guide to Modern Reinforcement Learning\n**Source**: [GitHub Repository](https://github.com/walkinglabs/hands-on-modern-rl) | [Online Course](https://walkinglabs.github.io/hands-on-modern-rl/)\n**Description**: A practice-first guide to modern RL, from classic control to LLM post-training, RLVR, and multimodal agents.",
+    "archived_at": "2026-06-11T00:03:05.568140"
+  }
+]
