@@ -1,3 +1,12 @@
+## [2026-06-11] Office Hours Week 3 (Will Brown 文字起こし・要約)
+
+**Action**: Ingested Week 3 office hours transcript from message.txt. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, related links).
+
+- `transcripts/2025-07-03_willbrown_agents-mcp-rl-office-hours-week3.md` — Office Hours Week 3 transcript (DSPy, multimodal RL, SkyPilot, reward debugging, environment ideas)
+- `raw/articles/2025-07-03_willbrown_agents-mcp-rl-office-hours-week3.md` — Office Hours Week 3 summary article
+
+---
+
 ## [2026-06-11] Bonus Lesson: GRPO Details (Will Brown 文字起こし・要約)
 
 **Action**: Ingested Bonus Lesson 5.5 transcript from message_1.txt. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, lesson summary, related links).

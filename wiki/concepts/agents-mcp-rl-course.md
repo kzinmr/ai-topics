@@ -2,7 +2,7 @@
 title: "Production-Ready Agent Engineering: From MCP to RL"
 type: concept
 created: 2026-06-10
-updated: 2026-06-11
+updated: 2026-06-12
 tags:
   - ai-agents
   - reinforcement-learning
@@ -24,6 +24,7 @@ sources:
   - raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4.md
   - raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md
   - raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5.md
+  - raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - raw/articles/2024-10-11_corbt_founders-guide-to-fine-tuning.md
   - raw/articles/2024-10-28_corbt_hacker-news-rlhf-part1.md
@@ -133,7 +134,8 @@ The course runs 3 weeks with 6 lectures (Tuesdays & Thursdays). Lecture transcri
 | Jun 27 | [[transcripts/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Office Hours with Kyle Corbitt]] | [[raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours|Summary]] |
 | Jul 2 | [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture\|Lesson 5: Formulating Business Problems as RL Tasks]] | [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5\|Summary]] |
 | Jul 3 | [[transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture\|Bonus Lesson: GRPO Details]] | [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5\|Summary]] |
-| TBD | Lecture 6 | *pending* |
+| Jul 3 | [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-office-hours-week3\|Office Hours (Week 3)]] | *Q&A transcript* |
+| Jul 3 | [[transcripts/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6-lecture\|Lesson 6: Training Agents with GRPO]] (Kyle Corbitt) | [[raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6\|Summary]] |
 
 ## Lesson Summaries
 
@@ -184,6 +186,12 @@ Kyle Corbitt delivers a live-coding lecture completing the agent → RL pipeline
 Will Brown delivers a survey-style lecture on GRPO implementation details and the RL infrastructure ecosystem. Covers VRAM napkin math (10× model size rule, AdamW optimizer memory), PPO vs GRPO tradeoffs (critic model elimination, memory savings), GPU architecture patterns (swapping/ART vs overlapping/Verifiers, vLLM LoRA hot-swap), async RL (off-policy staleness, multi-turn async inference via vLLM micro-batching), key GRPO gotchas (beta=0 safe with LoRA, temperature 1 mandatory, reward std dev collapse), frontier research directions (VinePPO tree search, REINFORCE batch approach, think token removal, test-time training, LM-as-judge tournaments for non-verifiable domains), and RL-as-a-service skepticism (GPU market rates, service evaluation criteria).
 
 **Transcript:** [[transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture]] · **Summary:** [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5]] · **Notebook:** [grpo_details.ipynb](https://raw.githubusercontent.com/willccbb/agent-engineering/refs/heads/main/lectures-1-through-4/lec5-grpo-details/grpo_details.ipynb)
+
+### Lesson 6: Training Agents with GRPO — Experiment Iteration & Advanced Reward Design (Jul 3)
+
+Final lecture. Kyle Corbitt covers practical experimentation patterns for RL training. Fixes the training bug from Lesson 5 (indentation error), then demonstrates ART's experiment registry pattern (`RunConfig` + `all_experiments.py` + `model_copy()` branching + SkyPilot parallel runs). Key findings: (1) **simple binary rewards converge faster** than complex partial-credit rewards while reaching similar final accuracy; (2) **LM-as-judge without ground truth** (O3 comparing 4 rollouts per group) converges faster than ground-truth-based training — a major result for non-verifiable domains; (3) **16–256 training examples are sufficient** — RL does not catastrophically overfit like SFT. Also covers GPU utilization patterns (straggler problem, 30–40 concurrent requests target), SFT vs RL decision criteria, Qwen 3 training template gotchas, and MCP in training loops.
+
+**Transcript:** [[transcripts/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6-lecture]] · **Summary:** [[raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6]]
 
 ## Included Credits
 
@@ -251,6 +259,10 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture]] — Lesson 5 transcript
 - [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5]] — Bonus Lesson: GRPO Details
 - [[transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture]] — Bonus Lesson transcript
+- [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-office-hours-week3]] — Office Hours (Week 3)
+- [[transcripts/2025-07-03_willbrown_agents-mcp-rl-office-hours-week3]] — Office Hours (Week 3) transcript
+- [[raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6]] — Lesson 6: Training Agents with GRPO
+- [[transcripts/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6-lecture]] — Lesson 6 transcript
 - [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
 - [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
