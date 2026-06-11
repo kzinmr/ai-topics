@@ -141,6 +141,21 @@ At the **India AI Impact Summit** (February 2026):
 - Positions Anthropic as **collaborating across the political spectrum**
 - Disputes characterizations of Anthropic as "woke"
 
+## Thought Leadership
+
+### Shift to Binding Regulation (June 2026)
+
+With the publication of "Policy on the AI Exponential" (June 10, 2026), Amodei marked a significant shift in his public policy stance — moving from advocating **transparency** (supporting SB 53, RAISE Act, SB 315 in 2025-2026) to advocating **binding regulation** modeled on the Federal Aviation Administration (FAA) for frontier AI.
+
+**Key positions in the essay:**
+
+- **Mandatory third-party testing** for models above a compute threshold in four risk areas: cybersecurity, biological weapons, loss of control, and automated R&D
+- **Government blocking power** for unsafe models — government should have the authority to block or deter deployment of models presenting unacceptable risks, scoped to the four specific risk domains with protections against arbitrary or politically-motivated decisions
+- **"Regulatory markets" approach** — evaluation could be performed by either a government agency (FAA model) or authorized/inspected private organizations
+- **Security standards** — strong security for model weights, regular red teaming and penetration testing, collaboration with government against major threat actors
+
+The essay explicitly frames the current moment as the transition from the transparency-era (2023–2025) to the binding regulation era (2026+). Amodei acknowledged that if risks escalate to nuclear-weapon level, even more aggressive measures would be necessary — but argued for matching today's policy to today's emerging risks while laying foundations for faster escalation later.
+
 ## Publications (Selected)
 
 | Paper | Year | Significance |
@@ -151,7 +166,7 @@ At the **India AI Impact Summit** (February 2026):
 | Anthropic RSP documentation | 2023–2026 | Responsible Scaling Policy |
 | "Machines of Loving Grace" | 2024 | Essay on AI's transformative potential |
 | "The Adolescence of Technology" | 2025 | Essay on AI governance challenges |
-| "Policy on the AI Exponential" | June 2026 | Comprehensive 5-area policy framework |
+|| "Policy on the AI Exponential" | June 10, 2026 | Comprehensive 5-area policy framework; released alongside Anthropic's legislative proposal on frontier model testing and job displacement policy framework |
 
 ## Awards and Recognition
 

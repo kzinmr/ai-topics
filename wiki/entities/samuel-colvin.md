@@ -6,7 +6,7 @@
 title: "Samuel Colvin — Creator of Pydantic, Pioneer of Type-Safe AI Agents"
 tags: [person]
 created: 2026-04-15
-updated: 2026-06-03
+updated: 2026-06-11
 type: entity
 ---
 
@@ -71,6 +71,7 @@ type: entity
 - **Feb 27, 2026**: Monty blog post published
 - **Mar 23, 2026**: Pydantic AI Gateway moving into Logfire
 |- **Mar 28, 2026**: pydantic-monty v0.0.9 released
+|- **Jun 11, 2026**: Monty PR #500 — Move execution to a subprocess pool. Implements crash-isolated worker subprocesses via protobuf protocol (158 files, +25,642/-17,879 lines). Improves safety: crashes kill only a worker, not the host process.
 |- **Apr 2026**: Serializable Agents (TOML-defined agents) in development
 
 ## Core Philosophy
@@ -208,4 +209,5 @@ Angel investor in Pydantic's seed round. Cramer's experience building developer 
 - [StartupHub.ai: Pydantic AI's Samuel Colvin on Building Better LLM Agents](https://www.startuphub.ai/ai-news/artificial-intelligence/2026/pydantic-ai-s-samuel-colvin-on-building-better-llm-agents)
 - [Pydantic About Page](https://pydantic.dev/about)
 - [GitHub: pydantic/monty](https://github.com/pydantic/monty)
+- [GitHub: pydantic/monty PR #500 — Move execution to a subprocess pool](https://github.com/pydantic/monty/pull/500)
 - [LinkedIn: Samuel Colvin](https://linkedin.com/in/samuel-colvin-5383251b8)

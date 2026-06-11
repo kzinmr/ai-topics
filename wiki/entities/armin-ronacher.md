@@ -1,9 +1,10 @@
 ---
 title: "Armin Ronacher"
-tags: [person]
+tags: [person, open-source, python, web-framework]
 created: 2026-04-24
-updated: 2026-06-03
+updated: 2026-06-11
 type: entity
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md]
 ---
 
 
@@ -51,7 +52,8 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 | 2026-01-27 | Announced founding of **Earendil** with co-founder Colin; incorporated as a PBC (Public Benefit Corporation) |
 | 2026-04-08 | **Earendil** acquired **Pi** (Mario Zechner's minimal coding agent); announced **Lefos**, a new kind of entity designed to be both capable and trustworthy |
 | 2026-02-04 | Appeared on Syntax.fm #976 discussing Pi's architecture, the "Bash is all you need" philosophy, self-modifying skills with hot reloading, and prompt injection challenges |
-| 2026-04-11 | Published "**The Center Has a Bias**" — analysis of how discussions about AI coding agents are polarized, arguing that the "center" is biased toward engagement because crossing the threshold of use selects for curiosity |
+|| 2026-04-11 | Published "**The Center Has a Bias**" — analysis of how discussions about AI coding agents are polarized, arguing that the "center" is biased toward engagement because crossing the threshold of use selects for curiosity |
+|| 2026-06-10 | Published "**Gaslighting Openness**" — critique of how companies frame access as irresponsibility; defends the EU's DMA as essential for device and data access; criticizes Anthropic's financial incentive to restrict what people can do with Mythos and Fable models, wrapping restrictions in safety language while training on public works and blocking open-source distillation; argues true democratized access to AI is in everyone's interest |
 | 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
 
 ## Core Ideas
@@ -190,6 +192,8 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
 
 **Python Tooling Legacy:** Rye has been retired in favor of Astral's uv, but its influence on Python packaging discourse was significant. It sparked conversations about what a modern Python development experience should look like.
 
+**Open Source Advocacy — Gaslighting Openness (June 2026):** Ronacher's blog post "Gaslighting Openness" directly confronts how large AI companies are "gaslighting" the public by framing access as irresponsibility. He connects the EU's Digital Markets Act (DMA) to AI access — Apple's fight over delayed AI features in Europe is not about regulatory annoyance but about who controls access to users' own devices and data. He singles out Anthropic, arguing the company has financial incentives to restrict what users can do with [[concepts/claude/mythos|Mythos]] and [[concepts/claude/fable-5|Fable]] models while wrapping restrictions in safety language. The core contradiction: Anthropic trained on public works, then blocks open-source attempts to distill these systems. Ronacher's conclusion: "true democratized access to technology including AI is in all our interest," and Europeans especially should resist narratives that preventing access serves their interests.
+
 ## Influence Metrics
 
 | Project | GitHub Stars | Language | Monthly Downloads | Notes |
@@ -235,6 +239,7 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
 - https://lucumr.pocoo.org/2025/11/21/agents-are-hard/ — "Agent Design Is Still Hard"
 - https://lucumr.pocoo.org/2026/1/14/minijinja-go-port/ — "Porting MiniJinja to Go With an Agent"
 - https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/ — "The Center Has a Bias"
+- https://lucumr.pocoo.org/2026/6/10/gaslighting/ — "Gaslighting Openness"
 - https://lucumr.pocoo.org/2026/1/27/earendil — "Colin and Earendil"
 - https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/ — "Rye Grows With UV"
 - https://lucumr.pocoo.org/projects/ — Projects page

@@ -1,3 +1,60 @@
+## [2026-06-11 22:30] Updated entities/dario-amodei.md and concepts/ai-regulation-2026.md with Dario Amodei's Policy on the AI Exponential essay
+
+**Action**: Enriched both pages with detailed content from Amodei's June 10, 2026 policy essay. Created "Thought Leadership" section in dario-amodei.md documenting the shift from transparency advocacy to FAA-model binding regulation, with positions on mandatory third-party testing, government blocking power, regulatory markets, and security standards. Enhanced Publications table entry with specific date and legislative proposal context. Enriched ai-regulation-2026.md section with detailed framework elements, anti-arbitrariness protections, legislative action note, and expanded regulatory trajectory analysis.
+
+**Pages updated**: `entities/dario-amodei.md` (+20 lines Thought Leadership section, enhanced Publications entry), `concepts/ai-regulation-2026.md` (enriched Anthropic/Amodei Proposed Framework section)
+
+**Source**: `raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md`
+
+---
+
+## [2026-06-11 22:30] Updated entities/armin-ronacher.md from Gaslighting Openness blog post via @mitsuhiko X post
+
+**Action**: Enriched Armin Ronacher entity page with "Gaslighting Openness" (June 10, 2026) blog post content. Added timeline entry, Recent Themes section on open-source advocacy/DMA/Anthropic critique, source reference, and wikilinks to [[concepts/claude/mythos]] and [[concepts/claude/fable-5]]. Updated frontmatter (tags: person, open-source, python, web-framework; added sources; bumped updated date). Added `web-framework` tag to SCHEMA.md taxonomy.
+
+**Pages updated**: `entities/armin-ronacher.md`, `index.md`, `SCHEMA.md`
+**Sources**: `raw/articles/2026-06-10_pocoo_gaslighting-openness.md`
+
+---
+
+## [2026-06-11 22:30] Updated entities/samuel-colvin.md with Monty PR #500, created david-curlewis entity, updated llm-code-quality with metrics connection
+
+**Action**: Three-part wiki update:
+1. **Updated `entities/samuel-colvin.md`** — Added Monty PR #500 timeline entry (June 11, 2026): "Move execution to a subprocess pool" — crash-isolated worker subprocesses via protobuf protocol (158 files, +25,642/-17,879 lines). Updated frontmatter `updated` to 2026-06-11. Added PR source link.
+2. **Created `entities/david-curlewis.md`** — New entity page for David Curlewis, author of "Lines of Code Got a Better Publicist" (June 10, 2026). Blog: curlewis.co.nz. Focus: AI engineering metrics, developer productivity, AI adoption critique. Previously: "Calibrating on Capability, Not Activity" (May 2026), "My AI Context System" series (Feb-Mar 2026). Tags: person, ai-coding, metrics.
+3. **Updated `concepts/llm-code-quality.md`** — Added "Connection to AI Vanity Metrics" section linking LLM code quality findings (~10% more complex, 17% comprehension drop) to Curlewis's vanity metrics analysis. Added wikilink to [[concepts/ai-engineering-metrics-vanity]]. Updated frontmatter (added source).
+
+**Pages created**: `entities/david-curlewis.md`
+**Pages updated**: `entities/samuel-colvin.md`, `concepts/llm-code-quality.md`, `index.md` (david-curlewis + llm-code-quality description)
+**Sources**: `raw/articles/2026-06-11_pydantic-monty_move-execution-subprocess-pool.md`, `raw/articles/2026-06-10_curlewis_lines-of-code-got-a-better-publicist.md`
+
+---
+
+## [2026-06-11 22:30] Created concepts/data-filtering-scaling-laws.md from Stanford 2026 paper via @burkov X post
+
+**Action**: Created wiki concept page `concepts/data-filtering-scaling-laws.md` from Stanford paper "A Bitter Lesson for Data Filtering" (Mohri, Duchi, Hashimoto, arXiv:2605.19407). Core finding: with enough compute, the best data filter is no data filter. Echoes Rich Sutton's Bitter Lesson. Updated index.md and log.md.
+
+**Pages created**: `concepts/data-filtering-scaling-laws.md`
+**Pages updated**: `index.md`
+
+**Source**: `raw/articles/2026-05-19_stanford_bitter-lesson-data-filtering.md` (via ChapterPal summary shared by @burkov on X)
+**Tags**: `concept`, `scaling-laws`, `research`, `training`, `datasets`, `bitter-lesson`, `stanford`, `scaling-hypothesis`
+
+---
+
+## [2026-06-11 22:30] Created concepts/ai-engineering-metrics-vanity.md from Curlewis article via @badlogicgames X post
+
+**Action**: Created new concept page `concepts/ai-engineering-metrics-vanity.md` covering AI vanity metrics vs. outcome measurement. Documents the shift from falsifiable outcome claims (GitHub Copilot 55% faster) to unfalsifiable volume claims (Google 75% AI-generated code, Anthropic 80% code by Claude, Cursor 100M+ lines/day). Covers research evidence (METR walkback, NBER 90% no measurable impact, Anthropic RCT 17% lower comprehension), real-world impact (Block 40% workforce cut, Atlassian 10%), and the core argument to use DORA metrics and outcomes, not token counts. Added `metrics` tag to SCHEMA.md taxonomy.
+
+**Pages created**: `concepts/ai-engineering-metrics-vanity.md`
+**Pages updated**: `index.md`, `SCHEMA.md` (new `metrics` tag)
+
+**Source**: `raw/articles/2026-06-10_curlewis_lines-of-code-got-a-better-publicist.md`
+
+**Tags**: `concept`, `ai-coding`, `metrics`, `software-engineering`, `ai-adoption`
+
+---
+
 ## [2026-06-11] Dreaming: Knowledge consolidation — 1 page enriched, 5 skipped (already covered)
 
 **Pipeline**: dreaming-collect → dreaming-wiki-ingest

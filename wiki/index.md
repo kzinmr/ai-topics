@@ -164,7 +164,7 @@
 - [[entities/apurva-gandhi]] — Apurva Gandhi — CMU PhD student, RAO (Recursive Agent Optimization), ex-Microsoft Copilot
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
-- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "Building Pi With Pi" (May 2026) on AI slop in open source, and "Clanker: A Word For The Machine" (May 2026) on resisting anthropomorphization of AI systems. Former Sentry principal architect. [[concepts/harness-engineering/agent-ergonomics]] [[concepts/ai-slop]]
+- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "Building Pi With Pi" (May 2026) on AI slop in open source, "Clanker: A Word For The Machine" (May 2026) on resisting anthropomorphization of AI systems, and "Gaslighting Openness" (Jun 2026) critiquing Anthropic's open-source distillation restrictions. Former Sentry principal architect. [[concepts/harness-engineering/agent-ergonomics]] [[concepts/ai-slop]]
 - [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework. Hermes harness architecture analyst (@atal on X).
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/avichawla]] — **X** | @_avichawla | AI/ML educator, co-founder @dailydoseofds_. Ex-Mastercard AI. IIT Varanasi. Tutorials on DS, ML, LLMs, RAGs, RL for agents. Author of "System Prompt Learning" X Article (2026-04-28).
@@ -245,6 +245,7 @@
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic | Author of "Policy on the AI Exponential" (June 2026): comprehensive 5-area policy framework (regulation, macroeconomics, biomedical acceleration, civil liberties, democratic geopolitics). FAA-style mandatory model testing proposal.
 - [[entities/datasette-agent]] — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026). 0.1a4: Jump to menu integration in Datasette 1.0a30. Conversational SQL generation, chart plugins, LLM library integration. Live demo at agent.datasette.io.
+- [[entities/david-curlewis]] — David Curlewis — AI engineering metrics critic, author of "Lines of Code Got a Better Publicist" (June 2026). Writes at curlewis.co.nz. Focuses on vanity metrics vs. outcome measurement in AI adoption. Previously: "Calibrating on Capability, Not Activity," "My AI Context System" series.
 - [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. 60ms sandboxes, 850K/day. Custom scheduler (no K8s), bare metal. RL/evals = 50% of usage. CLI > MCP philosophy (May 2026).
@@ -996,6 +997,7 @@
 - [[concepts/ai-education]] — "ai-education"
 - [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap by Rohit (@rohit4verse): 5 production-grade projects (SLM mobile app → self-improving coding agent → multimodal video editor → personal Life OS → enterprise workflow agent) to bridge the $150K gap between prompt engineers and systems architects.
 - [[concepts/ai-engineering]] — "AI Engineering"
+- [[concepts/ai-engineering-metrics-vanity]] — AI Engineering Metrics: Vanity vs. Outcome — AI vendors use volume metrics (lines of code, % AI-generated code) as unfalsifiable vanity proxies for productivity. Research shows ~10% organizational gains at best, not the "8x" claims. Real-world impact: Block cut 40% of workforce citing AI. Core argument: measure DORA metrics and outcomes, not token counts. Source: David Curlewis (Jun 2026).
 - [[concepts/evaluation/ai-evals]] — AI Evals (AI Evaluation Systems)
 - [[concepts/ai-evals-people]] — "ai-evals-people"
 - [[concepts/evaluation/ai-evaluation]] — AI Evaluation — systematic methods for judging AI outputs (manual, code-based, LLM-as-judge, reference-based vs reference-free). Langfuse Academy framework (May 2026).
@@ -1255,6 +1257,7 @@
 - [[concepts/data-engineering]] — Data Engineering: Practical engineering discipline for data pipeline design, construction, and maintenance.
 - [[concepts/data-engineering-for-ml]] — Data Engineering for ML
 - [[concepts/dataset-engineering]] — Dataset Engineering: Emerging field of systematic curation and quality management for AI training datasets.
+- [[concepts/data-filtering-scaling-laws]] — "A Bitter Lesson for Data Filtering" — Stanford 2026 paper. Core finding: with enough compute, the best data filter is no data filter. Large models trained on unfiltered data outperform those trained on filtered data. Echoes Rich Sutton's Bitter Lesson.
 - [[concepts/datasette-agent]] — datasette-agent — AI agent interface for Datasette, enabling LLM-powered database exploration
 - [[concepts/datasette-llm]] — datasette-llm: Datasette LLM integration plugin by Simon Willison.
 - [[concepts/datasette-referrer-policy]] — datasette-referrer-policy: Datasette referrer policy plugin.
@@ -1538,7 +1541,7 @@
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development — Methodology for using LLM coding agents in software development. Covers greenfield vs rewrite paradigms, CL size discipline, test-first strategy, language choice (Go advantage), human-in-the-loop categories, and junior vs senior guidance. Based on Eli Bendersky's pycparser rewrite and watgo greenfield project experiences.
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
 - [[concepts/llm-augmented-knowledge-retrieval]] — LLM-Augmented Knowledge Retrieval — Pattern of using LLMs with Filesystem MCP to search/navigate/synthesize from local markdown knowledge bases. Retrieval-first organization for LLM-queryable vaults. Related: Claude Code + Obsidian integration, Karpathy's LLM Wiki concept.
-- [[concepts/llm-code-quality]] — LLM Code Quality — LLM-generated code is ~10% more complex than necessary even on easy tasks. "Almost good" quality accepted too easily via "right there, right now" reasoning. Case study: Haskell HTTP header encoding with dead code discovery via CI coverage. Scaling concern: 8% overhead on easy tasks, what about hard ones?
+- [[concepts/llm-code-quality]] — LLM Code Quality — LLM-generated code is ~10% more complex than necessary even on easy tasks. "Almost good" quality accepted too easily via "right there, right now" reasoning. Case study: Haskell HTTP header encoding with dead code discovery via CI coverage. Scaling concern: 8% overhead on easy tasks, what about hard ones? Connection to AI vanity metrics: volume metrics (lines of code) become especially misleading when code is measurably more complex. Linked to [[concepts/ai-engineering-metrics-vanity]].
 - [[concepts/llm-core]] — LLM Core
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-creative-writing]] — LLM Creative Writing — AI-assisted creative writing: narrative generation, style transfer, and prompting for literary prose. Gwern's analysis of better LLM writing techniques.

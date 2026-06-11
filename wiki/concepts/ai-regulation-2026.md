@@ -107,20 +107,24 @@ The pace is accelerating dramatically. The most active areas: generative AI regu
 - AI Minister Kanishka Narayan: existing laws (data protection, competition, equality, online safety) already apply
 - Copyright and AI: ongoing debate on training data licensing
 
-## Anthropic's FAA-Style Regulatory Proposal (June 2026)
+### Anthropic / Amodei's Proposed Framework (June 2026)
 
-In "Policy on the AI Exponential" (June 2026), Dario Amodei articulated Anthropic's most detailed regulatory proposal to date, arguing that AI regulation should move beyond transparency to mandatory testing modeled on the FAA:
+In "Policy on the AI Exponential" (June 10, 2026), Dario Amodei articulated Anthropic's most detailed regulatory proposal to date. The essay marks a definitive shift from the **transparency era** (2023–2025, where Anthropic supported SB 53, RAISE Act, and SB 315 disclosure requirements) to advocating **binding regulation** — modeled on the Federal Aviation Administration (FAA) for frontier AI. Anthropic released a **legislative proposal on frontier model testing** and a **policy framework for job displacement** alongside the essay, with substantial financial backing pledged.
 
-**Key elements:**
-- **Mandatory third-party testing** for models above a compute threshold in four risk domains: cybersecurity, biological weapons, loss of control, and automated R&D acceleration
-- **Government power to block deployment** of models presenting unacceptable risks (scoped to the four domains with protections against political abuse)
-- **"Regulatory markets" approach**: evaluation by either a government agency (FAA model) or authorized/inspected private organizations
-- **Strong security standards** for model weights, regular red teaming and penetration testing, collaboration with government against major threat actors
-- **Prompt safety incident reporting** in the four critical areas
+**Key elements of the proposed framework:**
 
-**Regulatory trajectory**: Amodei acknowledged this may need to escalate to "nuclear material"-level controls if AI capabilities continue advancing. The essay explicitly frames the current moment as the transition from transparency-era (2023-2025) to binding regulation era (2026+).
+- **Shift from transparency to binding regulation** — FAA-model for frontier AI: mandatory technical testing and auditing before deployment, with government power to block or reverse unsafe model releases
+- **Mandatory third-party testing** for models above a compute threshold in four specific risk areas: cybersecurity, biological weapons, loss of control, and automated R&D (which could accelerate the other three risks)
+- **Government power to block/deter unsafe model deployment** — scoped to the four specific risk domains, with anti-arbitrariness protections against political favoritism or capricious decisions
+- **Private authorized evaluators or government agency** — a "regulatory markets" approach: evaluation by either a government agency (FAA model) or private organizations authorized and inspected by the government to evaluate models against defined standards
+- **Strong security standards** for model weights, regular red teaming and penetration testing, collaboration with government to defend against major threat actors
+- **Safety incident reporting** — prompt mandatory reporting of safety incidents in the four critical areas
+
+**Regulatory trajectory**: Amodei acknowledged that if risks escalate to nuclear-weapon level, more aggressive measures would be necessary — but cautioned against getting ahead of the curve, arguing policy should match today's emerging risks while laying foundations for faster escalation later. The essay frames this as the transition from transparency-era (2023–2025) to binding regulation era (2026+).
 
 **Bipartisan framing**: Amodei positions these proposals as having "common-sense appeal across the political spectrum," rejecting the framing that AI's problem is "better marketing."
+
+**Legislative action**: Alongside the essay, Anthropic released a concrete legislative proposal on frontier model testing and a job displacement policy framework, signaling intent to move beyond thought leadership into active policy advocacy with financial backing.
 
 ## Implications for Developers and Enterprises
 
