@@ -57,7 +57,7 @@ The foundational pattern shift: Claude Code is not a single-prompt-single-respon
 
 The engineer's role shifts from *writing code* to **reviewing and merging agent outputs**. [[entities/farhan-thawar|Farhan Thawar]] (VP Engineering at Shopify) describes this as "orchestrating intelligent systems." This is [[concepts/harness-engineering/agentic-design-patterns|agentic design patterns]] at production scale — engineers become orchestrators of parallel agent fleets rather than line-by-line authors.
 
-This pattern maps to the broader [[multi-agent]] and [[concepts/multi-agents/agent-orchestration]] paradigm: the unit of work is not a prompt but a **delegated subtask with independent execution**.
+This pattern maps to the broader [[concepts/multi-agents/multi-agent]] and [[concepts/multi-agents/agent-orchestration]] paradigm: the unit of work is not a prompt but a **delegated subtask with independent execution**.
 
 ## Pattern 2: Extended Critique Loops
 

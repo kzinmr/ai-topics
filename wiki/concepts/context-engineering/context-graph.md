@@ -216,7 +216,7 @@ Marple draws a parallel to OpenTelemetry: if decision traces become a new catego
 - [[concepts/harness-engineering]] — Context graphs are the *data layer* of the harness; the orchestration layer that captures traces is the harness itself
 - [[concepts/ai-evals]] — Evals measure decision quality; context graphs provide the training data for better future decisions
 - [[concepts/model-context-protocol-mcp]] — MCP enables cross-system context retrieval, a technical prerequisite for context graphs
-- [[concepts/multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
+- [[concepts/multi-agents/multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
 - [[entities/simon-willison]] — Simon Willison has written extensively on AI agent architecture and tools-for-thinking
 
 ## Source

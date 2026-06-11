@@ -178,7 +178,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[concepts/rlvr-science-limitations]] — Dwarkesh's thesis on RLVR's inability to handle scientific verification loops
 - [[concepts/intelligence-conflation]] — Dwarkesh's critique of conflating intelligence with power
 - [[concepts/world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
-- [[concepts/multi-agent-autonomy-scale]] — His vision of future AI architecture
+- [[concepts/multi-agents/multi-agent-autonomy-scale]] — His vision of future AI architecture
 - [[concepts/agi-economics]] — Alex Imas & Phil Trammell podcast on AGI economics
 - [[concepts/sample-efficiency]] — "The sample efficiency black hole" thesis: data firehose, not architecture, drives progress
 - [[entities/gary-marcus]] — Both critique current AI approaches from different angles

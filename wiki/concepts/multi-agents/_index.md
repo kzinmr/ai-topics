@@ -85,7 +85,7 @@ Centralized state store with **optimistic concurrency control** (e.g., Redis Lua
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Single-agent execution environment design (foundation)
-- [[concepts/multi-agent-autonomy-scale]] — Autonomous coordination research at 256-agent scale
+- [[concepts/multi-agents/multi-agent-autonomy-scale]] — Autonomous coordination research at 256-agent scale
 - [[concepts/harness-engineering/agentic-engineering-patterns]] — Agentic Engineering pattern collection
 - [[entities/ryan-lopopolo]] — Creator of Symphony, Harness Engineering advocate
 - [[concepts/multi-agents/agent-communication-protocols]] — MCP/A2A/ACP protocol comparison

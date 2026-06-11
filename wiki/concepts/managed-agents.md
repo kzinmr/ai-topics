@@ -125,6 +125,6 @@ If new models and capabilities start being offered exclusively on managed agent 
 
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
-- [[multi-agent-research-system]] — Multi-agent research system
+- [[concepts/multi-agents/multi-agent-research-system]] — Multi-agent research system
 - [[concepts/multi-agents/agent-team-swarm]] — Agent team/swarm architecture
 - [[concepts/carlini-c-compiler-agents]] — Carlini's parallel agent experiment

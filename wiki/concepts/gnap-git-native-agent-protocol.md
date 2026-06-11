@@ -82,7 +82,7 @@ GNAP complements rather than competes with existing agent protocols:
 
 - **[[concepts/mcp]]**: MCP standardizes agent↔tool interfaces; GNAP standardizes agent↔agent coordination
 - **[[concepts/harness-engineering]]**: GNAP can serve as the coordination layer beneath any agent harness
-- **[[concepts/multi-agent]] orchestration frameworks** (CrewAI, LangGraph): GNAP replaces the orchestration server with git, reducing infrastructure requirements
+- **[[concepts/multi-agents/multi-agent]] orchestration frameworks** (CrewAI, LangGraph): GNAP replaces the orchestration server with git, reducing infrastructure requirements
 
 ## Current Status
 

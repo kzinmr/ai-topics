@@ -97,4 +97,4 @@ The main agent's tool surface stays at max 2N (query_X + update_X per source). A
 - [[concepts/subagents]]
 - [[concepts/agent-skills]]
 - [[concepts/context-engineering|Context Engineering]]
-- [[concepts/multi-agent-orchestration]]
+- [[concepts/multi-agents/multi-agent-orchestration]]

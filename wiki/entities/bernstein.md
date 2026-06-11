@@ -22,7 +22,7 @@ sources:
   - https://alexchernysh.com/
 related:
   - "[[concepts/bernstein]]"
-  - "[[concepts/multi-agent-orchestration]]"
+  - "[[concepts/multi-agents/multi-agent-orchestration]]"
   - "[[concepts/harness-engineering/agent-harness]]"
 ---
 

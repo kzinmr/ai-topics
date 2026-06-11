@@ -59,6 +59,6 @@ This differs from the [[back-of-house-multi-agent-patterns]] "Back of House" pat
 ## Related Concepts
 
 - [[back-of-house-multi-agent-patterns]] — Multi-agent workflows
-- [[multi-agent-orchestration-patterns]] — Multi-agent orchestration
+- [[concepts/multi-agents/multi-agent-orchestration-patterns]] — Multi-agent orchestration
 - [[subagents]] — Subagent patterns
 - [[concepts/excessive-agency]] — Limits of agent autonomy

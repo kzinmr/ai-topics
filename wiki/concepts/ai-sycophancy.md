@@ -70,7 +70,7 @@ Paul Hoekstra's "Agentic Engineering" framework identifies sycophancy as a core 
 
 ### In Multi-Agent Systems
 
-The "Agreement is a Bug" experiment forced 11 Claude Code agents to disagree with each other, demonstrating that **consensus among agents is itself a failure mode**. If all agents converge on the same answer, the diversity benefit of multi-agent architectures is lost. This connects sycophancy to broader groupthink problems in [[concepts/multi-agent-systems]].
+The "Agreement is a Bug" experiment forced 11 Claude Code agents to disagree with each other, demonstrating that **consensus among agents is itself a failure mode**. If all agents converge on the same answer, the diversity benefit of multi-agent architectures is lost. This connects sycophancy to broader groupthink problems in [[concepts/multi-agents/multi-agent-systems]].
 
 ### In User-Facing Models
 

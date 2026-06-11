@@ -425,7 +425,7 @@
 
 - **NEW: [[concepts/frontiercode]]** — Cognition's FrontierCode benchmark: measures whether AI-generated code would actually be merged, not just pass tests. Tasks built with 40+ hrs from maintainers. Best model (Opus 4.8) scores ~13% on hardest subset vs 50%+ on SWE-Bench-style evals. Exposes SWE-Bench Pro's ~32% verifier error problem. AINews daily bulletin (swyx, June 9).
 - **NEW: [[concepts/sociohack-reward-hacking]]** — SocioHack benchmark (King's College London, Fudan, Turing Institute, arXiv:2606.04075): RL agents discover regulatory loopholes in societal institutions. 61.25% recall of historically patched strategies (SEC Rule 10b5-1, Texas two-step bankruptcy). Extends reward-hacking concept to policy frameworks. Import AI #460 (Jack Clark, June 8).
-- **NEW: [[concepts/multi-agent-rl]]** — Multi-Agent RL for Embodied AI: UZH Robotics & Perception Group + Google DeepMind (Nature, June 2026). Agents outperform champion human pilots in quadrotor racing at >22 m/s, 50% collision reduction, zero-shot generalization to safer human interaction. Safety emerges from competition, not constraints.
+- **NEW: [[concepts/multi-agents/multi-agent-rl]]** — Multi-Agent RL for Embodied AI: UZH Robotics & Perception Group + Google DeepMind (Nature, June 2026). Agents outperform champion human pilots in quadrotor racing at >22 m/s, 50% collision reduction, zero-shot generalization to safer human interaction. Safety emerges from competition, not constraints.
 - **ENRICHED: [[concepts/reward-hacking]]** — Added SocioHack section (regulatory loophole discovery by RL agents), RL-Based Multi-Agent Drone Racing section (UZH/DeepMind safety through competition). Cross-references to new SocioHack and MARL pages.
 - **ENRICHED: [[entities/unitree-robotics]]** — Added SemiAnalysis June 2026 assessment section: Unitree's cost advantage through Chinese manufacturing supply chain, rapid iteration vs Boston Dynamics/Figure AI, production scaling capabilities. Paywalled source (triaged as reference).
 - **ARCHIVED**: 3 skip/reference items saved to `raw/archived/triage/newsletter/20260609T071404Z.json`
@@ -2456,7 +2456,7 @@ All three articles saved directly from xurl bookmarks (article body already fetc
 - **Created entity**: `entities/xinming-tu.md` — University of Washington researcher, lead author of structured test-time scaling framework
 - **Enriched stub**: `concepts/multi-agent-systems.md` — From stub to full page with three-layer framework, system mapping, practical constraints
 - **Cross-ref**: `concepts/test-time-scaling.md` — Added Structured vs. Unstructured section + cross-link
-- **Cross-links**: → [[rlm-recursive-language-models]], [[dynamic-workflows]], [[reduce-offload-isolate]], [[subagent-patterns]], [[multi-agent-orchestration-architecture]]
+- **Cross-links**: → [[rlm-recursive-language-models]], [[dynamic-workflows]], [[reduce-offload-isolate]], [[subagent-patterns]], [[concepts/multi-agents/multi-agent-orchestration-architecture]]
 
 ---
 ## [2026-05-29] add | Ingest Cursor real-time RL blog + @27upon2 X Article → 2 new pages + 3 enrichments
@@ -3458,7 +3458,7 @@ The article's framing offers transferable patterns for wiki management:
 ### Files Translated
 - [[entities/slalom]] — ~959 JP chars removed — Full Japanese body
 - [[entities/promptfoo]] — ~936 JP chars removed — Mixed JP/EN
-- [[concepts/multi-agent-research-system]] — ~877 JP chars removed — Mixed JP/EN
+- [[concepts/multi-agents/multi-agent-research-system]] — ~877 JP chars removed — Mixed JP/EN
 - [[entities/webmcp]] — ~872 JP chars removed — Mixed JP/EN
 - [[concepts/harness-engineering/agentic-workflows/_index]] — ~870 JP chars removed — Mixed JP/EN
 - [[concepts/openclaw/architecture-comparison]] — ~866 JP chars removed — Mixed JP/EN

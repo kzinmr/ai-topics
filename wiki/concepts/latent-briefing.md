@@ -64,6 +64,6 @@ Evaluated on LongBench v2 (Claude Sonnet 4 orchestrator, Qwen-14B worker):
 
 ## Related Concepts
 - [[concepts/kv-cache-compaction]] — The underlying technique
-- [[concepts/multi-agent-systems]] — Where this is applied
+- [[concepts/multi-agents/multi-agent-systems]] — Where this is applied
 - [[concepts/recursive-language-models]] — The RLM framework used
 - [[entities/ramp-labs]] — Developer of Latent Briefing

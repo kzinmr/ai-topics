@@ -101,5 +101,5 @@ Unlike transport-layer trust (HTTPS/OAuth), Signed Agent Cards provide **agent-l
 
 - [[concepts/multi-agents/agent-communication-protocols]] — MCP vs A2A vs ACP protocol comparison
 - [[concepts/multi-agents/_index]] — Multi-agent coordination patterns requiring identity
-- [[concepts/multi-agent-orchestration-patterns]] — How identity enables cross-org orchestration
+- [[concepts/multi-agents/multi-agent-orchestration-patterns]] — How identity enables cross-org orchestration
 - [[concepts/multi-agents/agent-swarms]] — Emergent swarm behavior with identity verification

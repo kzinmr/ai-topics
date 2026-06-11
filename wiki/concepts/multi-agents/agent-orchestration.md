@@ -84,6 +84,6 @@ Together, these form a comprehensive orchestration stack spanning sandboxing →
 
 - [[entities/ibm]]
 - [[concepts/ai-operating-model]]
-- [[concepts/multi-agent]]
+- [[concepts/multi-agents/multi-agent]]
 - [[concepts/ai-agents]]
 - [[entities/openai-deployment-company]]

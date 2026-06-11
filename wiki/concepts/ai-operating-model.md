@@ -49,7 +49,7 @@ The "AI Divide" IBM references: many enterprises have invested heavily in AI, bu
 
 ## Related Pages
 
-- [[concepts/multi-agent-orchestration]]
+- [[concepts/multi-agents/multi-agent-orchestration]]
 - [[concepts/enterprise-ai-deployment-jv]]
 - [[entities/ibm-watsonx-orchestrate]]
 - [[entities/anthropic]]

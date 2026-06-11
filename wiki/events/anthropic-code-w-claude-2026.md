@@ -94,5 +94,5 @@ Three new features announced:
 ## Related Concepts
 
 - [[entities/claude-code]] — Anthropic's AI coding assistant
-- [[multi-agent-systems]] — orchestration of multiple AI agents
+- [[concepts/multi-agents/multi-agent-systems]] — orchestration of multiple AI agents
 - [[asynchronous-development]] — async coding workflows with AI agents

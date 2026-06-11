@@ -101,7 +101,7 @@ Claude once accidentally ran `pkill -9 bash`, killing itself (and the loop).
 ## See Also
 
 - [[concepts/multi-agents/agent-team-swarm]] — Agent team/swarm architecture overview
-- [[multi-agent-orchestration-architecture]] — Multi-agent orchestration patterns
+- [[concepts/multi-agents/multi-agent-orchestration-architecture]] — Multi-agent orchestration patterns
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[harness-design-long-running-apps]] — Harness design for long-running apps

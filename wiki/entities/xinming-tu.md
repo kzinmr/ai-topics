@@ -59,5 +59,5 @@ The framework maps 13+ inference patterns (from linear CoT to Aletheia's strict 
 
 - [[structured-test-time-scaling]] — The full theoretical framework
 - [[test-time-scaling]] — Broader test-time scaling landscape
-- [[multi-agent-systems]] — Multi-agent systems
+- [[concepts/multi-agents/multi-agent-systems]] — Multi-agent systems
 - [[rlm-recursive-language-models]] — Recursive Language Models

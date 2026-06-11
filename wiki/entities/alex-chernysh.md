@@ -21,7 +21,7 @@ sources:
 related:
   - "[[entities/bernstein]]"
   - "[[concepts/bernstein]]"
-  - "[[concepts/multi-agent-orchestration]]"
+  - "[[concepts/multi-agents/multi-agent-orchestration]]"
 ---
 
 # Alex Chernysh

@@ -56,4 +56,4 @@ Context efficiency is closely related to:
 
 - [[concepts/harness-engineering]] — Infrastructure for agent execution
 - [[concepts/ai-agent-memory-middleware-analysis]] — Agent memory and context management
-- [[concepts/multi-agent]] — Multi-agent coordination patterns
+- [[concepts/multi-agents/multi-agent]] — Multi-agent coordination patterns

@@ -303,4 +303,4 @@ The techniques described above (CoT, self-consistency, Best-of-N, beam search) a
 - [[speculative-decoding]] — Complementary technique for faster (not better) inference
 - [[concepts/nvidia-vera-rubin]] — Hardware platform optimized for test-time compute workloads
 - [[rlm]] — Recursive Language Models applying test-time scaling recursively
-- [[multi-agent-systems]] — Multi-agent systems as structured test-time scaling
+- [[concepts/multi-agents/multi-agent-systems]] — Multi-agent systems as structured test-time scaling

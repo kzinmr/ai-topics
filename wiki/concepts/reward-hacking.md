@@ -281,7 +281,7 @@ This work is relevant to reward hacking because it demonstrates that **safety em
 - [[entities/core-auto]] — The neolab building systems to make reward hacking harder than writing correct kernels
 - [[concepts/flash-attention-4]] — The canonical "correct" kernel that AI generation aims to match
 - [[concepts/sociohack-reward-hacking]] — SocioHack benchmark: reward hacking in societal institutions
-- [[concepts/multi-agent-rl]] — Multi-agent RL for drone racing (UZH/DeepMind)
+- [[concepts/multi-agents/multi-agent-rl]] — Multi-agent RL for drone racing (UZH/DeepMind)
 
 ## Sources
 

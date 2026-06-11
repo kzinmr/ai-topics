@@ -149,7 +149,7 @@ Separate concerns into independent context windows.
 - **Environment isolation (Code Agents)**: Execute code in sandboxes. Only selected return values re-enter the LLM context. HuggingFace's deep researcher uses this pattern.
 - **Filesystem isolation**: Agents communicate through the filesystem/git history rather than through shared context windows.
 
-**See also**: [[multi-agent]], [[subagents]], [[ralph-loop]]
+**See also**: [[concepts/multi-agents/multi-agent]], [[subagents]], [[ralph-loop]]
 
 ---
 
@@ -333,7 +333,7 @@ Building an agent? Consider each dimension:
 - [[agent-architecture]] — How these patterns compose into agent systems
 - [[prompt-engineering]] — The precursor to context engineering
 - [[memory-systems]] — Memory-specific strategies
-- [[multi-agent]] — Sub-agent delegation patterns
+- [[concepts/multi-agents/multi-agent]] — Sub-agent delegation patterns
 - [[managed-agents]] — Anthropic's meta-harness architecture
 - [[ralph-loop]] — The delegation loop pattern
 - [[codeact]] — Code-as-action pattern

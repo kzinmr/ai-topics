@@ -74,6 +74,6 @@ ADK 2.0 competes in the rapidly growing agent framework space alongside [[entiti
 - [[entities/google]] — Google's AI ecosystem
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Google Cloud's enterprise agent platform
 - [[entities/microsoft-agent-framework]] — Microsoft's competing agent framework
-- [[concepts/multi-agent]] — Multi-agent AI systems
+- [[concepts/multi-agents/multi-agent]] — Multi-agent AI systems
 - [[concepts/agent-framework]] — AI agent frameworks landscape
 - [[concepts/agent-architecture]] — Agent architecture patterns

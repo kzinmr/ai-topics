@@ -20,7 +20,7 @@ related:
   - "[[concepts/harness-engineering/agentic-workflows/subagents]]"
   - "[[concepts/agentic-engineering]]"
   - "[[concepts/cognitive-debt]]"
-  - "[[concepts/multi-agent-consensus-patterns]]"
+  - "[[concepts/multi-agents/multi-agent-consensus-patterns]]"
   - "[[concepts/harness-engineering]]"
 ---
 

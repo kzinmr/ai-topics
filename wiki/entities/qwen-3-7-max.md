@@ -126,4 +126,4 @@ Qwen 3.7 Max generates internal chain-of-thought (CoT) before answering. On Qwen
 - [[entities/deepseek-v4|DeepSeek V4 Pro]] — competing agent model
 - [[concepts/agentic-engineering|Agentic Engineering]]
 - [[concepts/coding-agents|Coding Agents]]
-- [[concepts/multi-agent|Multi-Agent Systems]]
+- [[concepts/multi-agents/multi-agent|Multi-Agent Systems]]

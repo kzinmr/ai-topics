@@ -50,5 +50,5 @@ Four-stage pipeline:
 ## Related
 
 - [[concepts/harness-engineering/agent-harness]]
-- [[concepts/multi-agent-orchestration]]
+- [[concepts/multi-agents/multi-agent-orchestration]]
 - [[entities/bernstein]]

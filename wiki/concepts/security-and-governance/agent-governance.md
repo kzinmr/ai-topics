@@ -168,5 +168,5 @@ Agent Handler addresses the Shadow IT problem for enterprise AI: employees want 
 ## See Also
 
 - [[concepts/agentic-engineering]] — The parent domain for agent engineering practices
-- [[concepts/multi-agent-orchestration-architecture]] — How orchestration layers interact with governance
+- [[concepts/multi-agents/multi-agent-orchestration-architecture]] — How orchestration layers interact with governance
 - [[concepts/security-and-governance/agentic-security]] — Security-specific challenges in agent systems

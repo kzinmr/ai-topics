@@ -53,5 +53,5 @@ OpenAI and Anthropic have both built extensive partner networks (Claude Partner 
 
 - [[entities/anthropic]]
 - [[entities/openai]]
-- [[concepts/multi-agent-orchestration]]
+- [[concepts/multi-agents/multi-agent-orchestration]]
 - [[concepts/ai-operating-model]]

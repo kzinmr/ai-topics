@@ -23,7 +23,7 @@ related:
   - "[[concepts/anthropic/agent-sdk-sre-patterns]]"
   - "[[concepts/subagents]]"
   - "[[concepts/claude-code/claude-md-rules]]"
-  - "[[concepts/multi-agent-orchestration]]"
+  - "[[concepts/multi-agents/multi-agent-orchestration]]"
   - "[[entities/claude-code]]"
 ---
 

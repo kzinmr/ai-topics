@@ -48,7 +48,7 @@ IBM is positioning itself as the governance and operations layer for enterprise 
 ## Related Pages
 
 - [[concepts/ai-operating-model]]
-- [[concepts/multi-agent-orchestration]]
+- [[concepts/multi-agents/multi-agent-orchestration]]
 - [[concepts/enterprise-ai-deployment-jv]]
 - [[entities/anthropic]]
 - [[entities/salesforce-headless-360]]

@@ -161,9 +161,9 @@ This reveals structured systems do not "add more compute" — they succeed throu
 ## Relationship to Other Wiki Concepts
 
 - [[test-time-scaling]] — This page covers unstructured approaches (CoT, self-consistency, Best-of-N). Structured test-time scaling extends these to multi-context architectures.
-- [[multi-agent-systems]] — The empirical substrate that structured test-time scaling explains theoretically.
+- [[concepts/multi-agents/multi-agent-systems]] — The empirical substrate that structured test-time scaling explains theoretically.
 - [[rlm-recursive-language-models]] — RLM is the purest instantiation of Topology + Isolation (implicit verification).
 - [[reduce-offload-isolate]] — Lance Martin's complementary context engineering taxonomy.
 - [[dynamic-workflows]] — Claude Code's programmatic sub-agent spawning as a scaffold-level instantiation of topology compression.
-- [[multi-agent-orchestration-architecture]] — Architectural patterns for multi-agent systems.
+- [[concepts/multi-agents/multi-agent-orchestration-architecture]] — Architectural patterns for multi-agent systems.
 - [[concepts/harness-engineering/agent-architecture-decomposition]] — How agent architectures decompose into components.

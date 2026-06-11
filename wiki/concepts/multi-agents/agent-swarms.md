@@ -190,11 +190,11 @@ Measurement methods proposed by the MAEBE framework ([arXiv:2506.03053](https://
 
 ## Related Concepts
 
-- [[concepts/multi-agent-consensus-patterns]] — Decentralized consensus formation protocols
+- [[concepts/multi-agents/multi-agent-consensus-patterns]] — Decentralized consensus formation protocols
 - [[concepts/multi-agents/agent-team-swarm]] — Hierarchical, managed multi-agent coordination
 - [[concepts/agentic-engineering]] — Higher-level concept of agent-driven development
 - [[concepts/self-evolving-agents]] — Self-improving agents
-- [[concepts/multi-agent-orchestration-patterns]] — Multi-agent orchestration
+- [[concepts/multi-agents/multi-agent-orchestration-patterns]] — Multi-agent orchestration
 
 ## TODO: Research Items
 

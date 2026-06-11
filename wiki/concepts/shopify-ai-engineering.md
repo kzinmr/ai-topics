@@ -176,7 +176,7 @@ This is a significant [[leadership]] signal: Shopify believes that in an AI-firs
 
 Shopify's engineers deploy Claude Code in two complementary modes:
 
-**Parallel agents** — multiple Claude Code instances working simultaneously on different parts of the codebase. One refactors auth, another writes tests, a third updates docs. The engineer reviews and merges outputs. This shifts the engineer's role from writing code to **orchestrating intelligent systems** ([[multi-agent]] pattern).
+**Parallel agents** — multiple Claude Code instances working simultaneously on different parts of the codebase. One refactors auth, another writes tests, a third updates docs. The engineer reviews and merges outputs. This shifts the engineer's role from writing code to **orchestrating intelligent systems** ([[concepts/multi-agents/multi-agent]] pattern).
 
 **Extended critique loops** — for complex architectural decisions, a single agent runs through propose→critique→revise→critique→finalize cycles, forcing Claude to argue with itself. This produces dramatically better results than single-pass prompting.
 

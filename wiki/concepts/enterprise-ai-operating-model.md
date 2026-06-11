@@ -48,7 +48,7 @@ This contrasts with the "agent-first" approaches of OpenAI and Anthropic, which 
 
 ## Related Pages
 - [[entities/ibm]] — IBM's AI strategy
-- [[concepts/multi-agent-systems]] — Multi-agent orchestration
+- [[concepts/multi-agents/multi-agent-systems]] — Multi-agent orchestration
 - [[concepts/ai-governance]] — AI governance frameworks
 - [[concepts/enterprise-ai]] — Enterprise AI adoption
 - [[entities/anthropic]] — Anthropic's enterprise agent strategy

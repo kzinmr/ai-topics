@@ -46,5 +46,5 @@ Built on Azure stack (compute, identity, AI, security) with native integration: 
 
 ## Related Pages
 - [[entities/microsoft]] — Azure launch partner
-- [[concepts/multi-agent]] — Multi-agent orchestration patterns
+- [[concepts/multi-agents/multi-agent]] — Multi-agent orchestration patterns
 - [[concepts/ai-agents]] — Enterprise agent landscape

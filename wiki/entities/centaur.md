@@ -67,4 +67,4 @@ Network policies prevent containers from accessing secrets service directly or t
 - [[concepts/multi-agents/agent-executor|Agent Executor]] — Google's distributed agent runtime
 - [[concepts/harness-engineering/agent-runtime|Agent Runtime]] — concept overview
 - [[concepts/managed-agents|Managed Agents]] — Google's managed agents approach
-- [[concepts/multi-agent|Multi-Agent Systems]]
+- [[concepts/multi-agents/multi-agent|Multi-Agent Systems]]

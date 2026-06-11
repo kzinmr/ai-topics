@@ -65,7 +65,7 @@ Build a personal agent that ingests calendar, finance, health, and communication
 ### 5. Autonomous Enterprise Workflow Agent (Master)
 **Proves: Production-Grade Orchestration**
 
-The "final boss": an agent that runs business workflows end-to-end — monitoring Slack/Jira, planning execution, delegating tasks to specialist sub-agents, and reporting outcomes with immutable audit trails. Architecture spans event-driven triggers, durable workflow state, [[concepts/multi-agent-orchestration|multi-agent delegation]] (orchestrator spawns communication, data, analysis, and documentation agents), self-healing with exponential backoff, role-based access control, full LLM-call observability, and cost management.
+The "final boss": an agent that runs business workflows end-to-end — monitoring Slack/Jira, planning execution, delegating tasks to specialist sub-agents, and reporting outcomes with immutable audit trails. Architecture spans event-driven triggers, durable workflow state, [[concepts/multi-agents/multi-agent-orchestration|multi-agent delegation]] (orchestrator spawns communication, data, analysis, and documentation agents), self-healing with exponential backoff, role-based access control, full LLM-call observability, and cost management.
 
 **Why it matters**: Combines orchestration, security, and observability into a single scalable system. This is the portfolio closer that signals readiness for the $150K+ salary tier. It proves you can build [[concepts/enterprise-ai-deployment-jv|enterprise-grade AI systems]].
 

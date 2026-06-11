@@ -84,5 +84,5 @@ Ramp Labs is hiring across roles (as noted in their Latent Briefing article).
 ## Related
 - [[concepts/latent-briefing]] — Their flagship research
 - [[concepts/kv-cache-compaction]] — The underlying technique
-- [[concepts/multi-agent-systems]] — Domain of application
+- [[concepts/multi-agents/multi-agent-systems]] — Domain of application
 - [[concepts/recursive-language-models]] — RLM framework used for evaluation

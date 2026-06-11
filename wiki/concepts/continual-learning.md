@@ -99,6 +99,6 @@ See: [[entities/sriraam-27upon2]], [x.com/27upon2/status/2040975201068810670](ht
 
 - [[concepts/harness-engineering]] — Context for three-layer learning
 - [[concepts/cognitive-debt]] — Related to context layer updates
-- [[concepts/multi-agent-consensus-patterns]] — Continuous learning across multiple agents
+- [[concepts/multi-agents/multi-agent-consensus-patterns]] — Continuous learning across multiple agents
 - [[concepts/real-time-rl]] — Production RL training paradigm
 - [[entities/sriraam-27upon2]] — Open-source continual learning implementation

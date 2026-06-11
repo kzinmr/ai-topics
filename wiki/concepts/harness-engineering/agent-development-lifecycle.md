@@ -114,4 +114,4 @@ Find hard examples → understand why the agent failed → adjust prompt/tool/mo
 - [[concepts/agent-evaluation]] — Agent evaluation methodologies
 - [[concepts/ai-observability]] — AI observability and monitoring
 - [[concepts/security-and-governance/agent-governance]] — Agent governance frameworks
-- [[concepts/multi-agent-orchestration-patterns]] — Multi-agent systems with cascading failures
+- [[concepts/multi-agents/multi-agent-orchestration-patterns]] — Multi-agent systems with cascading failures

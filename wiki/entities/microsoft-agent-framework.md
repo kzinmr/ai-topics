@@ -80,7 +80,7 @@ Microsoft Agent Framework v1.0 represents the convergence of two major Microsoft
 ## Related Pages
 
 - [[entities/microsoft]] — Microsoft's AI strategy and ecosystem
-- [[concepts/multi-agent]] — Multi-agent AI systems
+- [[concepts/multi-agents/multi-agent]] — Multi-agent AI systems
 - [[concepts/mcp]] — Model Context Protocol
 - [[entities/autogen]] — Microsoft AutoGen framework
 - [[entities/semantic-kernel]] — Microsoft Semantic Kernel

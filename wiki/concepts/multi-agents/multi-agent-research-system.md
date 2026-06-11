@@ -111,7 +111,7 @@ A single LLM call producing a 0.0-1.0 score with pass-fail judgment showed the h
 
 ## See Also
 
-- [[multi-agent-orchestration-architecture]] — Multi-agent orchestration patterns
+- [[concepts/multi-agents/multi-agent-orchestration-architecture]] — Multi-agent orchestration patterns
 - [[concepts/multi-agents/agent-team-swarm]] — Agent team/swarm architecture
 - [[concepts/managed-agents]] — Managed Agents platform
 - [[concepts/building-effective-agents]] — Building effective agents

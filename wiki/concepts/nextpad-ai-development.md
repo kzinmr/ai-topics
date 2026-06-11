@@ -97,7 +97,7 @@ Simon Willison highlighted the project as evidence that the boundary between vib
 - [[concepts/vibe-coding-vs-agentic-engineering]] — The distinction between shipping fast vs. shipping well
 - [[concepts/normalization-of-deviance-in-ai-coding]] — How bad practices become normalized through repetition
 - [[concepts/cognitive-debt]] — The hidden costs of not understanding what you've built
-- [[concepts/multi-agent-orchestration-architecture]] — How multiple agents coordinate (or fail to) on complex projects
+- [[concepts/multi-agents/multi-agent-orchestration-architecture]] — How multiple agents coordinate (or fail to) on complex projects
 
 ## Sources
 

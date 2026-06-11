@@ -20,7 +20,7 @@ related:
   - "[[concepts/writing-tools-for-agents]]"
   - "[[concepts/harness-engineering]]"
   - "[[concepts/managed-agents]]"
-  - "[[concepts/multi-agent-research-system]]"
+  - "[[concepts/multi-agents/multi-agent-research-system]]"
   - "[[concepts/minimal-coding-agent]]"
 sources:
   - "https://www.anthropic.com/engineering/building-effective-agents"
@@ -166,7 +166,7 @@ He found the **Evaluator-Optimizer** pattern "especially fun" and strongly agree
 - [[concepts/writing-tools-for-agents]] — ACI design methodology (the tool design deep-dive)
 - [[concepts/harness-engineering]] — Parent framework (environment design philosophy)
 - [[concepts/managed-agents]] — Meta-harness architecture
-- [[concepts/multi-agent-research-system]] — Orchestrator-workers in production
+- [[concepts/multi-agents/multi-agent-research-system]] — Orchestrator-workers in production
 - [[concepts/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation of these principles
 - [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — SWE-bench agent implementation details
 - [[concepts/harness-engineering/agentic-loop]] — The core agent execution loop

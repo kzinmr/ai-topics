@@ -91,7 +91,7 @@ A critical distinction: not all dynamic systems achieve true span compression. S
 
 - [[structured-test-time-scaling]] — The unified theoretical framework
 - [[subagent-patterns]] — Four subagent coordination patterns
-- [[multi-agent-orchestration-architecture]] — Architectural approaches
+- [[concepts/multi-agents/multi-agent-orchestration-architecture]] — Architectural approaches
 - [[rlm-recursive-language-models]] — Recursive LM paradigm
 - [[concepts/harness-engineering/agent-architecture-decomposition]] — Agent architecture components
 - [[agent-swarm]] / [[concepts/multi-agents/agent-team-swarm]] — Swarm and team patterns

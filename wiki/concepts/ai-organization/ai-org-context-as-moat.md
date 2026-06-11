@@ -152,7 +152,7 @@ At Agile Leadership Day India 2026, a more concrete implementation model was pre
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder and Super IC
 -  — Developer AI-utilization workflows
 - [[concepts/harness-engineering]] — Agent control and focusing
-- [[concepts/multi-agent-autonomy-scale]] — Large-scale multi-agent autonomy and scale
+- [[concepts/multi-agents/multi-agent-autonomy-scale]] — Large-scale multi-agent autonomy and scale
 
 ## Sources
 

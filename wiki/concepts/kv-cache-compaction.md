@@ -71,6 +71,6 @@ Evaluated on LongBench v2 (126 questions, 0-100k token documents):
 
 ## Related Concepts
 - [[concepts/latent-briefing]] — Ramp Labs' implementation
-- [[concepts/multi-agent-systems]] — Multi-agent architectures where this is most relevant
+- [[concepts/multi-agents/multi-agent-systems]] — Multi-agent architectures where this is most relevant
 - [[concepts/context-engineering/context-management|Context Management]] — Managing context across agents
 - [[entities/ramp-labs]] — Company that developed Latent Briefing

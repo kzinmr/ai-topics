@@ -550,7 +550,7 @@ The synthesis: **start stateless, add memory only where evals prove it helps**.
 ### Agent Patterns
 - [[concepts/harness-engineering/agent-patterns|Agent Patterns]] — Full catalog of agent architecture patterns
 - [[concepts/subagent-patterns|Subagent Patterns]] — 4-5 levels of agent-to-agent coordination
-- [[concepts/multi-agent-orchestration-architecture|Multi-Agent Orchestration Architecture]] — Roles, layers, responsibilities
+- [[concepts/multi-agents/multi-agent-orchestration-architecture|Multi-Agent Orchestration Architecture]] — Roles, layers, responsibilities
 - [[concepts/security-and-governance/agent-sandbox-patterns|Agent Sandbox Patterns]] — Isolate the tool vs. isolate the agent
 
 ### Papers
