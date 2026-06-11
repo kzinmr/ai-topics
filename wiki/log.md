@@ -1,3 +1,13 @@
+## [2026-06-11] Update: LLM API Pricing — Claude Fable 5 added
+
+**Action**: Added Claude Fable 5 ($10/$50 MTok) to all sections of `comparisons/llm-api-pricing.md`. New "Ultra-Premium" tier above Premium. Updated cache pricing (~$1.00/M read), cost comparison tables, Key Trends (trend #2), Changelog, Related Pages.
+
+**Pages updated**: `comparisons/llm-api-pricing.md` (+12 rows across 8 sections), `index.md` (description update)
+
+**Tags**: `claude-fable-5`, `anthropic`, `pricing`, `comparison`
+
+---
+
 ## [2026-06-11] Ingest: Dario Amodei "Policy on the AI Exponential"
 
 **Source**: https://darioamodei.com/post/policy-on-the-ai-exponential (June 2026)

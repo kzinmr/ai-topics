@@ -2,7 +2,7 @@
 title: "LLM API Pricing Comparison — US vs China Providers"
 type: comparison
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-11
 tags:
   - comparison
   - pricing
@@ -58,6 +58,7 @@ The models listed below are each provider's **latest generation** as of June 202
 | Anthropic | Claude Opus 4.8 | Premium | $5.00 | $25.00 | $0.50 | $6.25 | $2.50 | $12.50 | 1M | 128K | [anthropic](https://www.anthropic.com/pricing) |
 | Anthropic | Claude Sonnet 4.6 | Frontier | ~$3.00 | ~$15.00 | ~$0.30 | ~$3.75 | ~$1.50 | ~$7.50 | 200K | — | [anthropic](https://www.anthropic.com/pricing) |
 | Anthropic | Claude Haiku 4.5 | Mid | $1.00 | $5.00 | $0.10 | $1.25 | $0.50 | $2.50 | 200K | — | [anthropic](https://www.anthropic.com/pricing) |
+| Anthropic | Claude Fable 5 | Ultra-Premium | $10.00 | $50.00 | ~$1.00 | ~$12.50 | — | — | 1M | 128K | [anthropic](https://www.anthropic.com/pricing) |
 | Google | Gemini 3.5 Flash | Frontier | $1.50 | $9.00 | $0.15 | — | — | — | 1M | — | [ai.google.dev](https://ai.google.dev/pricing) |
 | Google | Gemini 3.1 Pro | Frontier | $2.50 | $10.00 | $0.25 | — | — | — | 1M | — | [ai.google.dev](https://ai.google.dev/pricing) |
 | Cohere | Command R+ | Frontier | $3.00 | $15.00 | — | — | — | — | 128K | — | [cohere](https://cohere.com/pricing) |
@@ -103,6 +104,7 @@ Cache pricing is the **single most important cost lever for agent workloads** �
 |----------|--------------------|--------------------|-----------|-------|
 | **DeepSeek** | **99.2–99.6%** | — | MLA KV compression | ✅ |
 | **Anthropic** | **90%** | +25% | Explicit breakpoints | ❌ |
+| **Anthropic (Fable 5)** | **~90%** | +25% | Explicit breakpoints (est.) | ❌ |
 | **Google** | **90%** | — | Context Caching API | ❌ |
 | **OpenAI** | **50%** | — | Prefix matching | ✅ |
 
@@ -119,6 +121,7 @@ Sorted by cache read price — the price you actually pay for repeated input tok
 | Anthropic | Claude Haiku 4.5 | $1.00 | $0.10 | 90% | **$0.28** |
 | Anthropic | Claude Sonnet 4.6 | ~$3.00 | ~$0.30 | 90% | **~$0.84** |
 | Anthropic | Claude Opus 4.8 | $5.00 | $0.50 | 90% | **$1.40** |
+| Anthropic | Claude Fable 5 | $10.00 | ~$1.00 | ~90% | **~$2.80** |
 | OpenAI | GPT-5.5 | ~$1.25 | ~$0.625 | 50% | **~$0.75** |
 | OpenAI | GPT-5.1 | $1.25 | $0.625 | 50% | **$0.75** |
 | OpenAI | o4-mini | $1.10 | $0.55 | 50% | **$0.66** |
@@ -137,6 +140,7 @@ Anthropic requires explicit cache writes (+25% premium). Break-even: **~1.4 subs
 | Claude Haiku 4.5 | $1.00 | $1.25 | $0.10 | 1.4 calls |
 | Claude Sonnet 4.6 | ~$3.00 | ~$3.75 | ~$0.30 | ~1.4 calls |
 | Claude Opus 4.8 | $5.00 | $6.25 | $0.50 | 1.4 calls |
+| Claude Fable 5 | $10.00 | ~$12.50 | ~$1.00 | ~1.4 calls |
 
 ---
 
@@ -153,6 +157,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | Anthropic | Claude Haiku 4.5 | $1.00 | $0.50 | $5.00 | $2.50 | $1.30 |
 | Anthropic | Claude Sonnet 4.6 | ~$3.00 | ~$1.50 | ~$15.00 | ~$7.50 | ~$3.90 |
 | Anthropic | Claude Opus 4.8 | $5.00 | $2.50 | $25.00 | $12.50 | $6.50 |
+| Anthropic | Claude Fable 5 | $10.00 | — | $50.00 | — | — |
 
 *Savings per 1M tokens at 4:1 input:output ratio compared to standard pricing.
 
@@ -193,6 +198,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | Provider | Model | In $/1M | Out $/1M | Cache Read | Blended* | Why it wins |
 |----------|-------|---------|----------|------------|----------|-------------|
 | Anthropic | Claude Opus 4.8 | $5.00 | $25.00 | $0.50 | $9.00 | Highest intelligence; honesty training |
+| Anthropic | Claude Fable 5 | $10.00 | $50.00 | ~$1.00 | ~$18.00 | Mythos-class; safety classifiers; 1M ctx |
 
 ---
 
@@ -211,6 +217,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | Anthropic | Claude Haiku 4.5 | $1.80 | **$0.50** |
 | Anthropic | Claude Sonnet 4.6 | ~$5.40 | **~$1.56** |
 | Anthropic | Claude Opus 4.8 | $9.00 | **$2.30** |
+| Anthropic | Claude Fable 5 | ~$18.00 | **~$4.60** |
 | Cohere | Command R+ | $5.40 | — |
 
 ### Code Generation (1:1 input:output)
@@ -224,6 +231,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | Anthropic | Claude Haiku 4.5 | $3.00 |
 | Anthropic | Claude Sonnet 4.6 | ~$9.00 |
 | Anthropic | Claude Opus 4.8 | $15.00 |
+| Anthropic | Claude Fable 5 | $30.00 |
 
 ---
 
@@ -286,17 +294,18 @@ Older-generation models still available via APIs. Prices unchanged from their re
 
 ### 1. Anthropic's Opus Price Cliff
 Claude Opus dropped from $15/$75 (4.1) to $5/$25 (4.7/4.8) — a **3x price reduction** for higher capability. This repositions Opus from "ultra-premium only" to "accessible frontier." The fast mode at $10/$50 adds a latency/cost tradeoff dimension.
-
-### 2. Google's Rapid Iteration
+### 2. Fable 5: Ultra-Premium Mythos-Class
+Claude Fable 5 at $10/$50 is 2× Opus 4.8 pricing — a new "ultra-premium" tier above Premium. However, it's less than half the price of Mythos Preview ($20+/MTok est.), reflecting Anthropic's strategy to make Mythos-class capabilities broadly accessible. Cache economics (~90% discount, ~$1.00/M read) are critical for agent workloads on this model.
+### 3. Google's Rapid Iteration
 Google moved from Gemini 2.5 → 3.1 → 3.5 within months. Gemini 3.5 Flash at $1.50/$9.00 with 90% cache discount competes directly with OpenAI's GPT-5.1 at similar price but with better caching economics.
 
-### 3. Cache Is the Real Battleground
+### 4. Cache Is the Real Battleground
 With 98% input tokens in agent workflows, effective pricing = cache pricing. DeepSeek's 99.2% cache discount ($0.0036/M) makes it 139x cheaper per cached token than OpenAI. Google and Anthropic both offer 90% cache discounts vs OpenAI's 50%.
 
-### 4. China's Price Floor Is Sub-Floor
+### 5. China's Price Floor Is Sub-Floor
 DeepSeek V4-Flash at $0.14/$0.28 with $0.003 cache read is frontier-class quality at budget pricing. The "blended" effective cost with cache is $0.031/M — approaching zero marginal cost.
 
-### 5. Reasoning Models Command 2–4x Premium
+### 6. Reasoning Models Command 2–4x Premium
 o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-thought token generation. DeepSeek R1 at ~$0.55/M was the cheapest reasoning model, but V4-Pro now handles most reasoning tasks.
 
 ---
@@ -318,6 +327,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 | 2026-06-09 | Frontier model review: moved Gemini 2.5, GPT-4.1, Claude Sonnet 4/4.5, Opus 4.1 to Legacy. Added Gemini 3.5 Flash, Gemini 3.1 Pro, Claude Opus 4.8, GPT-5.5 | Wiki entity pages |
 | 2026-06-09 | Cache/batch enrichment for all providers | Max Woolf/OpenRouter, Anthropic docs |
 | 2026-06-09 | Initial creation | User-provided CSV + wiki entity pages |
+| 2026-06-11 | Added Claude Fable 5 ($10/$50 MTok) to all sections; new "Ultra-Premium" tier | Anthropic blog + wiki/concepts/claude/fable-5.md |
 
 ---
 
@@ -330,6 +340,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 - [[entities/xiaomi-mimo]] — MiMo-V2.5 pricing details
 - [[entities/tencent-hy3]] — Tencent Hy3 pricing via OpenRouter
 - [[concepts/claude/models]] — Claude model family (Opus 4.5→4.8)
+- [[concepts/claude/fable-5]] — Claude Fable 5 pricing, capabilities, and safety architecture
 - [[concepts/token-economics]] — Token pricing theory and trends
 - [[concepts/prompt-caching]] — How prompt caching works under the hood
 - [[comparisons/frontier-models-2026-04]] — Capability comparison (April 2026)
