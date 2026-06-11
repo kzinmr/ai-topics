@@ -90,7 +90,7 @@ In 2025, LayerX Security discovered a Comet-specific attack vector:
 
 ## Related Entities
 
-- [[concepts/death-of-browser]] — The de-humanization of the browser
+- [[concepts/browser-agent/death-of-browser]] — The de-humanization of the browser
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/openai-cua]] — OpenAI Computer-Using Agent
 - [[entities/webmcp]] — Standardization protocol

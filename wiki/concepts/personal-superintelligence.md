@@ -138,7 +138,7 @@ Personal Superintelligence
 
 ## Related Concepts
 
-- [[concepts/death-of-browser]] — Browser depersonalization (agents operating UI)
+- [[concepts/browser-agent/death-of-browser]] — Browser depersonalization (agents operating UI)
 - [[concepts/anthropic/openclaw-conflict]] — Platform control vs open access
 - [[concepts/openclaw-ecosystem]] — OpenClaw and personal AI agent movement
 - [[concepts/meta-muse-spark]] — Muse Spark model details

@@ -89,7 +89,7 @@ Meta announced the acquisition in 2026, described as a strategic move to "democr
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/openai-cua]] — OpenAI Computer-Using Agent
 - [[entities/browser-use]] — Open-source browser automation
-- [[concepts/death-of-browser]] — The de-humanization of the browser
+- [[concepts/browser-agent/death-of-browser]] — The de-humanization of the browser
 - [[entities/webmcp]] — Standardization protocol
 
 ## Sources

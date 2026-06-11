@@ -127,7 +127,7 @@ In contrast to Anthropic/OpenAI's screenshot-based approach, it **directly under
 - [[entities/anthropic-computer-use]] — Screenshot-based approach
 - [[entities/openai-cua]] — OpenAI's Computer-Using Agent
 - [[entities/browserbase]] — Reliable browser automation infrastructure
-- [[concepts/death-of-browser]] — De-humanization trend of browsers
+- [[concepts/browser-agent/death-of-browser]] — De-humanization trend of browsers
 - [[entities/webmcp]] — Standardized agent-browser interaction
 
 ## Sources

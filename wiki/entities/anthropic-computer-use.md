@@ -109,7 +109,7 @@ Anthropic acquired Seattle-based AI startup **Vercept**:
 ## Related Entities
 
 - [[entities/openai-cua]] — OpenAI's Computer-Using Agent
-- [[concepts/death-of-browser]] — The de-humanization of browsers
+- [[concepts/browser-agent/death-of-browser]] — The de-humanization of browsers
 - [[entities/browser-use]] — Open-source DOM-based automation
 - [[concepts/harness-engineering]] — Agent environment design
 - [[entities/webmcp]] — Standardization protocol

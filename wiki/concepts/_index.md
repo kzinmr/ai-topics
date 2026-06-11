@@ -445,7 +445,7 @@ AI and LLM concept pages organized by topic.
 
 ## Death-Of-Browser
 
-- [[concepts/death-of-browser]] — 1. Cognitive load limits: Humans are exhausted by numerous tabs, popups, and SEO spam.
+- [[concepts/browser-agent/death-of-browser]] — 1. Cognitive load limits: Humans are exhausted by numerous tabs, popups, and SEO spam.
 
 ## Decoder-Only-Gpt
 

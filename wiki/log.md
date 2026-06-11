@@ -1,3 +1,26 @@
+## [2026-06-11] concepts/death-of-browser を concepts/browser-agent/death-of-browser へ移動
+
+**Action**: `concepts/death-of-browser/_index.md` を `concepts/browser-agent/death-of-browser.md` に移動。被リンク17件を更新。`browser-agent/` 階層を新設。
+
+**移動**:
+- `concepts/death-of-browser/_index.md` → `concepts/browser-agent/death-of-browser.md`
+
+**更新ページ**:
+- `index.md` — リクイリンク更新
+- `entities/webmcp.md` — リクイリンク更新
+- `entities/openai-cua.md` — リクイリンク更新
+- `concepts/agentic-web.md` — リクイリンク更新
+- `concepts/_index.md` — リクイリンク更新
+- `entities/perplexity-comet.md` — リクイリンク更新
+- `entities/manus.md` — リクイリンク更新
+- `concepts/telegram-managed-bots.md` — リクイリンク更新
+- `entities/browser-use.md` — リクイリンク更新
+- `entities/browserbase.md` — リクイリンク更新
+- `entities/anthropic-computer-use.md` — リクイリンク更新
+- `concepts/personal-superintelligence.md` — リクイリンク更新
+
+---
+
 ## [2026-06-11] MCP-RL Course 講義内容の詳細サマリー展開と概念ページ分解
 
 **Action**: agents-mcp-rl-course.md の Lesson 1-6 + Office Hours の講義内容を詳細に分析し、コースページの Detailed Technical Notes セクションを追加。論点ごとに4つの新規概念ページを作成し、既存2ページを充実させた。

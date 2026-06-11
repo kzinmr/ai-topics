@@ -96,7 +96,7 @@ sources:
 
 - [[entities/browse-sh]] — Browser skill catalog
 - [[entities/browser-use]] — Open-source browser automation
-- [[concepts/death-of-browser]] — The dehumanization of the browser
+- [[concepts/browser-agent/death-of-browser]] — The dehumanization of the browser
 - [[entities/webmcp]] — Standardization protocol
 - [[entities/anthropic-computer-use]] — Screenshot-based approach
 
