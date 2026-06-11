@@ -1,3 +1,27 @@
+## [2026-06-11] Watchdog auto-fix: index counts + log separators
+
+### Changes
+
+#### wiki/index.md
+- **Summary line**: `Indexed entries: 1987 → 2012`, `Concepts: 1069 → 1660`, `Entities: 781 → 782`
+- **Section header**: `## Entities (781 pages)` → `## Entities (782 pages)` (+1, matched FS)
+- **Section header**: `## Concepts (1065 pages)` → `## Concepts (1660 pages)` (+595, matched FS)
+- `Total pages` left at 2455 (known staleness — no clear count methodology)
+
+#### wiki/log.md
+- 8 missing `---` separators inserted between consecutive date-section headers
+- 550 total sections, 0 remaining missing
+
+### Pipeline Watchdog
+- `x_accounts: stale(26h)` — **false positive**. Job runs on `30 22 */2 * *` (every 2 days). 26h is expected.
+
+### Wiki Health Snapshot
+- Entities: 782 | Concepts: 1660 | Comparisons: 30 | Queries: 3 | Events: 9
+- Orphan pages: 559 (needs human review)
+- Page name violations: 0 ✅
+
+---
+
 ## [2026-06-11] Update: LLM API Pricing — OpenAI GPT-5.x pricing correction
 
 **Action**: Corrected GPT-5.5 pricing from ~$1.25/$10.00 to $5.00/$30.00. Added full GPT-5.4 lineup (5.4/5.4-mini/5.4-nano). Updated OpenAI cache discount from 50% to 90% (GPT-5.x) / 75% (o-series). Moved GPT-5.1/5.2/5 to Legacy. Updated all sections (Frontier table, Cache, Batch, Tier Analysis, Cost Comparison, Key Trends, Changelog).
