@@ -1,3 +1,15 @@
+## [2026-06-11] Update: LLM API Pricing — OpenAI GPT-5.x pricing correction
+
+**Action**: Corrected GPT-5.5 pricing from ~$1.25/$10.00 to $5.00/$30.00. Added full GPT-5.4 lineup (5.4/5.4-mini/5.4-nano). Updated OpenAI cache discount from 50% to 90% (GPT-5.x) / 75% (o-series). Moved GPT-5.1/5.2/5 to Legacy. Updated all sections (Frontier table, Cache, Batch, Tier Analysis, Cost Comparison, Key Trends, Changelog).
+
+**Pages updated**: `comparisons/llm-api-pricing.md` (major correction + new models), `index.md` (description)
+
+**Source**: https://developers.openai.com/api/docs/pricing (scraped 2026-06-11)
+
+**Tags**: `openai`, `gpt-5`, `pricing`, `comparison`
+
+---
+
 ## [2026-06-11] Update: LLM API Pricing — Claude Fable 5 added
 
 **Action**: Added Claude Fable 5 ($10/$50 MTok) to all sections of `comparisons/llm-api-pricing.md`. New "Ultra-Premium" tier above Premium. Updated cache pricing (~$1.00/M read), cost comparison tables, Key Trends (trend #2), Changelog, Related Pages.
