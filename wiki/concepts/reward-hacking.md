@@ -26,6 +26,8 @@ sources:
   - https://arxiv.org/abs/2605.02964
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
+  - raw/articles/2025-06-06_corbt_reward-hacking-101.md
+  - https://corbt.com/posts/reward-hacking
 related:
   - concepts/gpu-mode
   - entities/core-auto

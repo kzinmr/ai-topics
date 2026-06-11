@@ -124,3 +124,7 @@ Unlike many AI startups that keep their technology proprietary, OpenPipe has con
 - [Tejas Kumar podcast with Kyle Corbitt](https://www.youtube.com/watch?v=KsG-8xyM9A8)
 - [OpenPipe raises $6.2M — GeekWire](https://www.geekwire.com/2024/seattle-startup-openpipe-raises-6-2m/)
 - [ART library on GitHub](https://github.com/openpipe/art)
+- [ART Trainer: A New RL Trainer for Agents](https://corbt.com/posts/art-trainer-a-new-rl-trainer-for-agents) — 2025-04-14
+- [ART·E: How We Built an Email Research Agent That Beats o3](https://corbt.com/posts/art-e-mail-agent) — 2025-04-29
+- [Reward Hacking 101](https://corbt.com/posts/reward-hacking) — 2025-06-06
+- [RULER: Easy Mode for RL Rewards](https://corbt.com/posts/ruler) — 2025-07-11

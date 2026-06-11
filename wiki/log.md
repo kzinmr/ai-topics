@@ -1,5 +1,16 @@
 ## [2026-06-10] Florian Brand: Open Model Safety
 ## [2026-06-11] Kyle Corbitt Blog Series: ART開発前の知的背景 (4記事)
+## [2026-06-11] Kyle Corbitt Blog Series: ART/RL実装と実践 (4記事)
+
+**Action**: Saved 4 raw articles from corbt.com (2025-04 ~ 2025-07). Updated `entities/corbett.md` (sources). Updated `concepts/reward-hacking.md` (sources). Updated `concepts/ruler-openpipe-art.md` (sources). Updated `concepts/agents-mcp-rl-course.md` (sources, supplementary reading section).
+
+- `raw/articles/2025-04-14_corbt_art-trainer-new-rl-trainer.md` — ART Trainer: A New RL Trainer for Agents
+- `raw/articles/2025-04-29_corbt_art-e-mail-agent.md` — ART·E: Email Research Agent That Beats o3
+- `raw/articles/2025-06-06_corbt_reward-hacking-101.md` — Reward Hacking 101
+- `raw/articles/2025-07-11_corbt_ruler-easy-mode-rl-rewards.md` — RULER: Easy Mode for RL Rewards
+
+---
+
 
 **Action**: Saved 4 raw articles from corbt.com (2024-10 ~ 2025-01). Updated `entities/corbett.md` (sources, related). Updated `concepts/agents-mcp-rl-course.md` (sources, supplementary reading section).
 

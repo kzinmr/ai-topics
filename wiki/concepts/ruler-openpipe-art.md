@@ -13,6 +13,8 @@ tags:
   - openpipe
 sources:
   - raw/articles/avichawla-rl-agents-karpathy-system-prompt-learning-2026-04-28.md
+  - raw/articles/2025-07-11_corbt_ruler-easy-mode-rl-rewards.md
+  - https://corbt.com/posts/ruler
   - https://github.com/OpenPipe/ART
 ---
 
