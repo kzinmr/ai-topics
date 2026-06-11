@@ -19,7 +19,7 @@ sources:
   - raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md
 related:
   - "[[concepts/evaluation/macro-evals-for-agentic-systems]]"
-  - "[[concepts/raindrop]]"
+  - "[[concepts/evaluation/raindrop]]"
   - "[[concepts/harness-engineering]]"
   - "[[concepts/ai-observability]]"
   - "[[entities/ben-hylak]]"
@@ -28,7 +28,7 @@ related:
 
 # Agent Evaluation Methodology — Floor Raising vs Benchmark Maxxing
 
-A practical, opinionated framework for evaluating AI agents in production. Developed by **Ben Hylak** (founder of [[concepts/raindrop|Raindrop]]) and shaped by work with Framer, Clay, Vercel, and GC.AI. The core thesis: most teams should be **floor raising** (making their agent reliable where it matters), not **benchmark maxxing** (chasing abstract pass rates).
+A practical, opinionated framework for evaluating AI agents in production. Developed by **Ben Hylak** (founder of [[concepts/evaluation/raindrop|Raindrop]]) and shaped by work with Framer, Clay, Vercel, and GC.AI. The core thesis: most teams should be **floor raising** (making their agent reliable where it matters), not **benchmark maxxing** (chasing abstract pass rates).
 
 > "If you could ship with a 90% pass rate or a 99% pass rate, which would you choose? If your instinct is '99%, obviously,' you are still thinking like a benchmarker. If your first question is 'which 1% fails?', you are thinking like someone raising the floor." — Ben Hylak
 

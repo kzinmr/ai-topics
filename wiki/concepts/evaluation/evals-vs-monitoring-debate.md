@@ -19,7 +19,7 @@ sources:
 related:
   - "[[concepts/evaluation/agent-evaluation-methodology]]"
   - "[[concepts/probabilistic-era-software]]"
-  - "[[concepts/raindrop]]"
+  - "[[concepts/evaluation/raindrop]]"
   - "[[entities/ben-hylak]]"
   - "[[entities/ankur-goyal]]"
   - "[[entities/gian-segato]]"

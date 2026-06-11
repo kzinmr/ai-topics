@@ -1717,7 +1717,7 @@
 - [[concepts/rag-systems]] — RAG Systems
 - [[concepts/ragatouille]] — RAGatouille — Open-source ColBERT library by Benjamin Clavié (AnswerDotAI). Train, index, search, and re-rank with late interaction retrieval. Apache 2.0, ~3,900 stars.
 - [[concepts/ragen]] — RAGEN: veRL-based agent RL extension. Adds explicit environment interface for easier multi-turn RL in custom environments.
-- [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
+- [[concepts/evaluation/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
 - [[concepts/coding-agents/ramp-inspect]] — Ramp Inspect: background coding agent with autonomous verification loop. ~30% of Ramp PRs. Modal sandbox VMs, multi-modal interface (Slack, Chrome ext, web, VS Code, PR).
 - [[concepts/rao-recursive-agent-optimization]] — RAO (Recursive Agent Optimization) — RL training for recursive agents that spawn/delegate to copies of themselves. CMU × Amazon AGI Labs 2026
 - [[concepts/coding-agents/real-time-rl]] — Training paradigm where models are continuously improved using reward signals from real user interactions in production — avoiding the simulation gap. Pioneered by Cursor for their Composer coding agent (ships new checkpoints every ~5h). Open-source implementation: rollouts by @27upon2 using Prime Intellect + OpenCode. See: [[entities/cursor-ai|cursor-ai]], [[entities/sriraam-27upon2|sriraam]].

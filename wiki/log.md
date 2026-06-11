@@ -7095,7 +7095,7 @@ This manifesto crystallizes Sero's "Freedom Tech" philosophy into a 10-year road
 - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md — Full guide text from howtoeval.com
 
 ### Pages Updated
-- [[concepts/raindrop]] — Added Raindrop Workshop section, cross-linked to agent-evaluation-methodology and ben-hylak entity page, updated sources and tags
+- [[concepts/evaluation/raindrop]] — Added Raindrop Workshop section, cross-linked to agent-evaluation-methodology and ben-hylak entity page, updated sources and tags
 
 ### Sources
 - https://www.howtoeval.com/

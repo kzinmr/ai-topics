@@ -22,7 +22,7 @@ sources:
 related:
   - "[[concepts/evaluation/agent-evaluation-methodology]]"
   - "[[concepts/evaluation/evals-vs-monitoring-debate]]"
-  - "[[concepts/raindrop]]"
+  - "[[concepts/evaluation/raindrop]]"
   - "[[concepts/harness-engineering]]"
   - "[[concepts/evaluation/macro-evals-for-agentic-systems]]"
   - "[[entities/ankur-goyal]]"
@@ -30,7 +30,7 @@ related:
 
 # Ben Hylak
 
-Co-founder & CTO of **[[concepts/raindrop|Raindrop]]** ("Sentry for AI Agents"), an AI agent monitoring and observability platform. Author of the influential 2026 guide *[How to Evaluate AI Agents](https://www.howtoeval.com/)* and vocal advocate for **floor raising** over benchmark maxxing in agent evaluation.
+Co-founder & CTO of **[[concepts/evaluation/raindrop|Raindrop]]** ("Sentry for AI Agents"), an AI agent monitoring and observability platform. Author of the influential 2026 guide *[How to Evaluate AI Agents](https://www.howtoeval.com/)* and vocal advocate for **floor raising** over benchmark maxxing in agent evaluation.
 
 **Current:** Co-Founder & CTO, Raindrop (Oct 2023–Present, San Francisco)
 **Previous:** Human Interface Design @ Apple (visionOS), Avionics Engineering Intern 2x @ SpaceX
@@ -80,7 +80,7 @@ Raindrop raised $15M Seed funding (Dec 2025) led by Lightspeed Venture Partners 
 
 Raindrop also offers **Raindrop Workshop**, a free/open-source tool for local trace capture, trajectory inspection, and replay for pre-production agent evaluation.
 
-See [[concepts/raindrop]] for the full platform overview and comparison with LangSmith, Braintrust, Arize Phoenix, and others.
+See [[concepts/evaluation/raindrop]] for the full platform overview and comparison with LangSmith, Braintrust, Arize Phoenix, and others.
 
 ## Writing & Talks
 

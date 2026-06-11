@@ -138,7 +138,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 
 **Wiki pages:**
 - [[concepts/evaluation/agent-observability-feedback]] — The feedback loop
-- [[concepts/raindrop]] — "Sentry for AI Agents"
+- [[concepts/evaluation/raindrop]] — "Sentry for AI Agents"
 - [[concepts/ai-observability]] — Broader observability landscape
 
 ### 5. Observability (o11y)
@@ -261,7 +261,7 @@ For the full framework, see [[concepts/probabilistic-era-software]] and [[concep
 - [[entities/ankur-goyal]] — Braintrust CEO
 - [[entities/hamel-husain]] — Error analysis pioneer
 - [[entities/langchain]] — LangChain platform
-- [[concepts/raindrop]] — Raindrop monitoring platform
+- [[concepts/evaluation/raindrop]] — Raindrop monitoring platform
 
 ### Raw Articles
 - raw/articles/2025-08_gian-segato_probabilistic-era.md
