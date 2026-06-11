@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-05-29
+updated: 2026-06-11
 tags:
   - lab
   - hardware
@@ -14,9 +14,11 @@ related:
   - [[concepts/gpu-cloud-rankings]]
   - [[concepts/compute-scaling-bottlenecks]]
   - [[concepts/gpu-cluster-tco-goodput]]
+  - [[concepts/ai-lab-subscription-vs-api-economics]]
 sources:
   - raw/articles/2026-05-20_semianalysis_clustermax-2-gpu-cloud-ratings.md
   - raw/articles/substack.com--app-link-post--1509e963.md
+  - raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md
   - https://semianalysis.com/
 ---
 
@@ -104,6 +106,18 @@ This analysis includes the first detailed tokenomics model for AWS's AI business
 SemiAnalysis released a comprehensive framework for evaluating GPU cluster costs beyond headline $/GPU-hr pricing. The framework decomposes TCO into **8 line items** (GPUs, Storage, Networking, Control Plane, Support, Goodput Expense, Setup Expense, Debugging Expense) and provides scenario analysis across 3 workload types (Large LLM Pretrain, Multimodal RL Research, Inference Endpoints) and 3 provider tiers (Gold/Hyperscaler/Silver).
 
 **Key contribution**: SemiAnalysis developed the **Goodput Expense** formulae quantifying the hidden cost of GPU failures across three fault-tolerance approaches (TorchFT, AWS Checkpointless, TorchPass). They demonstrated that for large training jobs, Gold-tier TCO can be 10-15% lower than Silver-tier despite identical GPU pricing, and that inference workloads are effectively indifferent to provider reliability. The framework is supported by free [TCO Calculator](https://www.clustermax.ai/) and [Goodput Calculator](https://www.clustermax.ai/) tools on ClusterMAX.
+
+### AI Lab Subscription vs API Economics (June 2026)
+
+SemiAnalysis conducted an empirical study of AI lab subscription economics by purchasing every tier of both Anthropic and OpenAI subscription plans and running long horizon coding tasks until exhausting weekly limits. Key findings:
+
+- **Common assumption debunked:** The $200/month plan does not max out at ~$2,000/month in API-equivalent value — subscriptions are "far more generous"
+- **Margin pressure:** If both labs have 75% API gross margins, subscription margins for heavy users are significantly worse (potentially negative)
+- **Strategic prediction:** Labs will **withhold new models/features from subscription tiers** rather than explicitly nerf usage limits (which triggers public backlash)
+- **Mythos test case:** Anthropic's upcoming "Mythos" model may launch as API-only, signaling a permanent shift toward feature-gated subscriptions
+- **Cost trajectory:** Opus 4.8-level models will be profitable at $20/month "in the near future" as inference costs continue falling
+
+This analysis positions SemiAnalysis as a key voice in the AI business model debate, extending their infrastructure expertise into platform economics. See [[concepts/ai-lab-subscription-vs-api-economics]] for the full framework.
 
 ## Contact
 - clustermax@semianalysis.com

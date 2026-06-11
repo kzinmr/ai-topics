@@ -8080,3 +8080,12 @@ Updated:
 - **CREATED**: `raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6.md` — Lesson 6 summary article covering experiment iteration patterns and advanced reward design findings
 - **UPDATED**: `concepts/agents-mcp-rl-course.md` — Added Lesson 6 to Lecture Schedule, Lesson Summaries, sources, related links; marked course as complete (no more pending lectures)
 - **UPDATED**: `index.md` — Added Lesson 6 transcript entry
+
+---
+## [2026-06-11] SemiAnalysis Subscription vs API Economics
+
+- **CREATED**: `raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md` — SemiAnalysis X thread: empirical study of Anthropic/OpenAI subscription utilization vs API margins. Key finding: $200/mo plans far more generous than $2,000 API-equivalent assumption. Labs likely to gate new models/features from subscriptions rather than cap usage.
+- **CREATED**: `concepts/ai-lab-subscription-vs-api-economics.md` — New concept page: AI lab subscription vs API business model economics. Tiered access pyramid, feature gating strategy, Mythos as API-only test case, inference cost deflation dynamics.
+- **UPDATED**: `entities/semianalysis.md` — Added Subscription vs API Economics section, new source, updated date
+- **UPDATED**: `concepts/token-economics.md` — Added cross-reference to subscription economics concept
+- **UPDATED**: `index.md` — Added new concept page entry

@@ -2,14 +2,14 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-06-06
+updated: 2026-06-11
 tags:
   - inference
   - optimization
   - economics
   - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md]
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md, raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md]
 ---
 
 # Token Economics
@@ -210,6 +210,7 @@ ML engineering (quantization, sharding, containers), infrastructure management, 
 - [[concepts/local-llm]] — Self-hosting economics and optimization techniques
 - [[concepts/local-llm/model-quantization]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
 - [[concepts/inference/vllm]] — Continuous batching and PagedAttention
+- [[concepts/ai-lab-subscription-vs-api-economics]] — How token economics shapes the subscription vs API business model debate
 
 ## Sources
 

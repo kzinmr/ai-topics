@@ -1006,6 +1006,7 @@
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
 - [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
 - [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling: Profiling techniques for GPU memory optimization.
+- [[concepts/ai-lab-subscription-vs-api-economics]] — AI Lab Subscription vs API Economics — Empirical analysis of subscription utilization vs API margins. SemiAnalysis finding: $200/mo plans far more generous than $2,000 API-equivalent assumption. Labs likely to gate new models/features from subscriptions rather than cap usage. Mythos as API-only test case.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design philosophy comparison: chat vs coding agents
 - [[concepts/ai-military]] — AI in Military Wargames
 - [[concepts/ai-native-product-localization]] — AI-Native Product Localization — Using AI agents for product localization. Sierra case study: 10-person/9–12 month Slack project reduced to 1 engineer/4 months. Three-phase evolution (IDE→Cloud→Batch). Context window coevolution pitfall. Dynamic string description generation.
