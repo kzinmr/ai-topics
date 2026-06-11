@@ -30,8 +30,8 @@ GGUF is the quantization format used by llama.cpp for efficient CPU/Apple Silico
 
 ## Related wikilinks
 
-- [[concepts/local-llm]] — Primary consumer of GGUF files
-- [[concepts/local-llm]] — Local LLM overview
+- [[concepts/local-llm/_index]] — Primary consumer of GGUF files
+- [[concepts/local-llm/_index]] — Local LLM overview
 - [[entities/georgi-gerganov]] — Format creator
 
 ## Sources

@@ -42,7 +42,7 @@ Key findings:
 - AMD Zen 4 native bf16 critical (Mistral is bf16 → fp16 loses precision for ~87% of values)
 - The speedups are so significant that **memory bandwidth may no longer be the primary bottleneck** for CPU inference, potentially reducing the need for quantization on CPU
 
-See [[entities/justine-tunney]] for the author of these optimizations and [[concepts/local-llm]] for the broader ecosystem.
+See [[entities/justine-tunney]] for the author of these optimizations and [[concepts/local-llm/_index]] for the broader ecosystem.
 
 ## Key Capabilities
 
@@ -99,7 +99,7 @@ llama.cpp is the foundational inference engine for the local LLM ecosystem. Most
 ## Related wikilinks
 
 - [[concepts/local-llm/gguf]] — Quantization format used by llama.cpp
-- [[concepts/local-llm]] — Local LLM overview and ecosystem
+- [[concepts/local-llm/_index]] — Local LLM overview and ecosystem
 - [[concepts/speculative-decoding]] — Inference acceleration technique
 - [[concepts/inference/vllm]] — Production serving alternative
 - [[entities/georgi-gerganov]] — Creator of llama.cpp and GGML/GGUF

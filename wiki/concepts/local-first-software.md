@@ -161,7 +161,7 @@ Paper: [arXiv:2402.03239](https://arxiv.org/abs/2402.03239) — "Bluesky and the
 **Local-First side**: Full functionality without network (Ideal #3).
 
 **AI Agent side**:
-- [[concepts/local-llm]] — Local inference via Ollama + llama.cpp/GGUF
+- [[concepts/local-llm/_index]] — Local inference via Ollama + llama.cpp/GGUF
 - RTX 4090 24GB runs 70B models (quantized)
 - Phi-4-Reasoning 14B beats o1-mini in math
 - Apple MLX for fastest M-series chip inference

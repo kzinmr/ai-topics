@@ -66,7 +66,7 @@ ollama / LM Studio → LiteLLM (local router) → vLLM
 ```
 Running [[entities/openclaw]] and [[entities/hermes-agent]] as AI agent frameworks.
 
-Full analysis: → [[concepts/local-ai]]
+Full analysis: → [[concepts/local-llm/local-ai]]
 
 ## Writing and Ideas
 
@@ -86,9 +86,9 @@ Andrew's style combines practitioner insight with venture-scale pattern recognit
 
 ## Related Pages
 
-- [[concepts/local-ai]] — Local AI landscape (May 2026 snapshot, sourced from Andrew's post)
+- [[concepts/local-llm/local-ai]] — Local AI landscape (May 2026 snapshot, sourced from Andrew's post)
 - [[entities/nvidia-dgx-spark]] — DGX Spark hardware used in his lab
 - [[entities/openclaw]] — One of two agent frameworks in his setup
 - [[entities/hermes-agent]] — Second agent framework in his setup
-- [[concepts/local-llm]] — Local LLM overview
+- [[concepts/local-llm/_index]] — Local LLM overview
 - [[concepts/mac-studio-local-ai]] — Mac Studio inference

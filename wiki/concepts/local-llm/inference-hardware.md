@@ -106,7 +106,7 @@ sources:
 
 ## Related Links
 
-- [[concepts/local-llm]] — Local LLM ecosystem overview
+- [[concepts/local-llm/_index]] — Local LLM ecosystem overview
 - [[concepts/local-llm/ollama]] — Ollama local LLM runner
 - [[concepts/inference/sglang]] — SGLang fast inference
 - [[concepts/inference/llama-cpp]] — llama.cpp CPU/Apple inference

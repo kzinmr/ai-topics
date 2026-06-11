@@ -44,7 +44,7 @@ Techniques and engines for fast LLM inference, from consumer hardware to product
 
 ## Related
 
-- [[concepts/local-llm]] — Local LLM ecosystem (quantization, distillation, hardware)
+- [[concepts/local-llm/_index]] — Local LLM ecosystem (quantization, distillation, hardware)
 - [[concepts/structured-outputs]] — Structured generation patterns
 - [[concepts/inference-speed-development]] — Inference speed economics (Steipete)
 - [[concepts/compute-scaling-bottlenecks]] — Hardware constraints on AI scaling

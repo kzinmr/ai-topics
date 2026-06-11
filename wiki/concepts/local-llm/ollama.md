@@ -118,7 +118,7 @@ Ollama launched cloud services in 2026:
 ## Related wikilinks
 
 - [[concepts/inference/llama-cpp]] — llama.cpp inference engine
-- [[concepts/local-llm]] — Local LLM ecosystem overview
+- [[concepts/local-llm/_index]] — Local LLM ecosystem overview
 - [[concepts/local-llm/inference-hardware]] — Inference hardware requirements
 - [[concepts/inference/sglang]] — SGLang fast inference
 

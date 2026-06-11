@@ -162,7 +162,7 @@ Server-side architecture building on 2025 foundation. Key upgrades stabilize tra
 
 - [[concepts/apple]] — Apple's AI philosophy and strategy
 - [[entities/gemma-4]] — Google's open-weight competitor for on-device use
-- [[concepts/local-llm]] — Local LLM deployment patterns
+- [[concepts/local-llm/_index]] — Local LLM deployment patterns
 - [[concepts/on-device-ai]] — On-device AI concepts and trade-offs
 
 ## Sources

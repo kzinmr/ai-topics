@@ -79,7 +79,7 @@ Mac Studio Local AI is a practical approach that balances **"escape from cloud d
 ## Related Concepts
 - [[concepts/mac-studio-local-ai]]
 
-- [[local-llm]] — Local LLM overview
+- [[concepts/local-llm/_index]] — Local LLM overview
 - [[llama-cpp]] — GGUF inference engine
 - [[mlx-llm]] — Apple MLX framework
 - [[dgx-spark-nim]] — Comparison with NVIDIA DGX Spark

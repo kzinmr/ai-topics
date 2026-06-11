@@ -79,7 +79,7 @@ Created a zero-dependency, single-file executable for running LLMs locally by bu
 ## Cross-References
 
 - [[concepts/inference/llama-cpp]] — Contributed CPU matmul optimizations
-- [[concepts/local-llm]] — Local LLM ecosystem
+- [[concepts/local-llm/_index]] — Local LLM ecosystem
 - [[concepts/llm-understanding]] — LLM competence frontier (rseq builders not yet replaceable)
 
 ## Sources

@@ -83,7 +83,7 @@ Qwen 3.6-35B-A3B demonstrates that sparse MoE models can achieve remarkable agen
 - [[concepts/qwen]] — Qwen model family overview
 - [[concepts/mixture-of-experts]] — MoE architecture
 - [[concepts/coding-agents/coding-agents]] — AI coding agents
-- [[concepts/local-ai]] — Local model inference
+- [[concepts/local-llm/local-ai]] — Local model inference
 - [[entities/alibaba]] — Alibaba (Qwen parent)
 - [[concepts/glm-5-1]] — GLM-5.1 (competing open-source coding model)
 - [[entities/xiaomi-mimo]] — MiMo-V2.5-Pro

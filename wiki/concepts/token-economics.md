@@ -207,7 +207,7 @@ ML engineering (quantization, sharding, containers), infrastructure management, 
 ## Related
 
 - [[concepts/context-engineering|Context Engineering]] — Token economics is a prerequisite for understanding context window optimization trade-offs
-- [[concepts/local-llm]] — Self-hosting economics and optimization techniques
+- [[concepts/local-llm/_index]] — Self-hosting economics and optimization techniques
 - [[concepts/local-llm/model-quantization]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
 - [[concepts/inference/vllm]] — Continuous batching and PagedAttention
 - [[concepts/ai-lab-subscription-vs-api-economics]] — How token economics shapes the subscription vs API business model debate

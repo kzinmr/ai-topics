@@ -311,5 +311,5 @@ See also: [[concepts/apple-foundation-models]]
 - [[mistral-ai]] — Competing open-weight model provider with Mistral Medium 3.5.
 - [[open-models]] — Open-weight model ecosystem and licensing landscape.
 - [[concepts/coding-agents/coding-agents]] — AI agents for software engineering tasks.
-- [[concepts/local-llm]] — Local LLM deployment patterns and use cases.
+- [[concepts/local-llm/_index]] — Local LLM deployment patterns and use cases.
 - [[lmstudio]] — Local model serving tool for running Gemma 4 on consumer hardware.

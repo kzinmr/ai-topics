@@ -175,7 +175,7 @@ vLLM's upcoming **Dynamic Speculative Decoding** addresses the high-QPS regressi
 - Automatically adjusting the number of speculative tokens based on real-time system load
 - Shortening proposals when the system is busy or draft accuracy is low
 - Ensuring speculative decoding is always a net benefit regardless of traffic patterns
-- [[concepts/local-llm]] — Inference optimization techniques
+- [[concepts/local-llm/_index]] — Inference optimization techniques
 
 ## Sources
 

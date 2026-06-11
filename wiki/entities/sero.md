@@ -230,7 +230,7 @@ Before AI, Sero built significant infrastructure in the Web3 space:
 ## Related
 
 - [[concepts/elizaos]] — Major contributor to the agentic framework
-- [[concepts/local-ai]] — Advocate for running models on consumer hardware
+- [[concepts/local-llm/local-ai]] — Advocate for running models on consumer hardware
 - [[concepts/multi-agents/multi-agent]] — Open Orchestra, agent coordination
 - [[concepts/developer-tools]] — Azul, Parchi, vLLM Studio, pi-brain
 -  — ZKSync, Ethereum governance infrastructure, Thrive Protocol

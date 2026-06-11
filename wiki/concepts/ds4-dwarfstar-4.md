@@ -68,4 +68,4 @@ Antirez frames the local vs. cloud experience as a spectrum: **A** = the traditi
 - [[concepts/deepseek-v4]] — The underlying model
 - [[entities/deepseek]] — Model provider
 - [[concepts/llama-cpp]] — General-purpose local inference
-- [[concepts/local-llm]] — Broader local AI movement
+- [[concepts/local-llm/_index]] — Broader local AI movement

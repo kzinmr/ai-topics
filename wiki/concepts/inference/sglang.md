@@ -116,4 +116,4 @@ docker run --gpus all -p 30000:30000 lmsysorg/sglang:latest \
 - [[concepts/inference/llama-cpp]] — llama.cpp CPU/Apple Silicon inference
 - [[concepts/structured-outputs]] — Structured output patterns
 - [[concepts/inference-speed-development]] — Inference speed optimization
-- [[concepts/local-llm]] — Local LLM ecosystem overview
+- [[concepts/local-llm/_index]] — Local LLM ecosystem overview

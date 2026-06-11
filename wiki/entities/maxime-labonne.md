@@ -113,7 +113,7 @@ Labonne has released **178 models** on Hugging Face, including:
 - **[[concepts/mergekit-model-merging]]** — Popularized model merging through tutorials and LazyMergekit
 - **[[concepts/dpo-preference-tuning]]** — His DPO tutorial for Mistral-7b is canonical
 - **[[entities/liquid-ai]]** — Currently employed as Head of Post-Training
-- **[[concepts/local-llm]]** — Tutorials cover GGUF quantization for local inference
+- **[[concepts/local-llm/_index]]** — Tutorials cover GGUF quantization for local inference
 - **[[concepts/small-language-models]]** — LFM2 MoE work on efficient edge models
 - **[[concepts/llm-fine-tuning]]** — Comprehensive fine-tuning guides with Axolotl and Unsloth
 

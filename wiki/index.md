@@ -151,7 +151,7 @@
 - [[entities/amp]] — **Amp** — Coding agent CLI developed at Sourcegraph by Thorsten Ball. Frontier-chasing philosophy: editor extensions killed Feb 2026, CLI rebuilt as Neo (May 2026) with auto-compaction, Plugin API, remote control. Author of "The Coding Agent Is Dead" manifesto.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia). Co-founder OpenAI, Tesla AI, Eureka Labs. Joined Anthropic pre-training team (May 2026). Coined vibe coding / agentic engineering.
 - [[entities/andrew-nesbitt]] — OSS metadata expert (Ecosyste.ms). Supply chain security, package management, agent skills registry threat models. CHAOSS metrics AI-broken-metrics analysis published May 2026.
-- [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-ai]]
+- [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-llm/local-ai]]
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
 - [[entities/andy-nguyen]] — **X** | @kevinnguyendn | Founder & CEO of ByteRover, portable file-based memory layer for coding agents.
@@ -1544,10 +1544,10 @@
 - [[concepts/llm-steering]] — LLM Steering
 - [[concepts/llm-training-coherence-evolution]] — "LLM Training Coherence Evolution"
 - [[concepts/llm-understanding]] — LLM Understanding Debate — Whether LLMs genuinely "understand" language or merely simulate it. Gary Marcus vs Geoffrey Hinton: simulation view (mimicry without internal states) vs consciousness claim. Pope Leo XIV: "True comprehension comes from experience, not text approximation." Capraro & Marcus Nature paper (Feb 2026). Mechanistic interpretability implications.
-- [[concepts/local-ai]] — **Local AI Landscape — May 2026**: Current state of local AI using Andrew Chen (a16z)'s home lab experience as a case study. Hardware (DGX Spark/5090 eGPU/Mac Studio/Strix Halo), 1-year model quality lag thesis, software stack (ollama→LiteLLM→vLLM), 2027 Opus-class local model prediction, async batch processing use cases.→ [[entities/andrew-chen]]
+- [[concepts/local-llm/local-ai]] — **Local AI Landscape — May 2026**: Current state of local AI using Andrew Chen (a16z)'s home lab experience as a case study. Hardware (DGX Spark/5090 eGPU/Mac Studio/Strix Halo), 1-year model quality lag thesis, software stack (ollama→LiteLLM→vLLM), 2027 Opus-class local model prediction, async batch processing use cases.→ [[entities/andrew-chen]]
 - [[concepts/local-first-architecture]] — Software design paradigm where primary data store lives on client (IndexedDB, SQLite), server acts as sync target. Covers principles (optimistic updates, offline-first, CRDT conflict resolution), Linear's implementation, benefits, challenges, related tech (ElectricSQL, Replicache, Automerge), and case studies.
 - [[concepts/local-first-software]] — Local-First Software
-- [[concepts/local-llm]] — Local LLM
+- [[concepts/local-llm/_index]] — Local LLM
 - [[concepts/coding-agents/long-context-coding-agents]] — Long-Context via Coding Agents — Approach externalizing long-context from latent attention into explicit, executable code structures for agent workflows.
 - [[concepts/long-running-search-agents]] — Long Running Search Agents — Design patterns for search agents running unattended for hours/days. 7 progressive strategies: single context, cron restarts, compaction, local index (3.7x yield gain), frontier prompt, query model, self-querying. Doug Turnbull, Cheat at Search (June 2026).
 - [[concepts/evaluation/longembed]] — LongEmbed — Benchmark + methodology for extending embedding models to 32K context without retraining (PI, NTK, SelfExtend). RoPE-based models inherently superior to APE for context extension. Dawei Zhu et al., arXiv:2404.12096 (Apr 2024).

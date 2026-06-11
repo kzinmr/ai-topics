@@ -144,7 +144,7 @@ Low data requirements                     High data requirements
 - [[concepts/fine-tuning/grpo-rl-training]] — GRPO/RL reasoning training
 - [[concepts/reasoning-models]] — Reasoning models (DeepSeek R1, o1, etc.)
 - [[concepts/harness-engineering]] — Positioning of Preference Optimization in the context of Harness Engineering
-- [[concepts/local-llm]] — Applying alignment to local LLMs
+- [[concepts/local-llm/_index]] — Applying alignment to local LLMs
 
 ## Sources
 

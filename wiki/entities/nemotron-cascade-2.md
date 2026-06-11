@@ -53,7 +53,7 @@ By activating only 3B parameters per token, the model achieves competitive or su
 ## Related
 - [[entities/nvidia]] — parent company and broader model family
 - [[concepts/mixture-of-experts]] — MoE architecture principles
-- [[concepts/local-llm]] — local deployment landscape
+- [[concepts/local-llm/_index]] — local deployment landscape
 - [[concepts/gpt/gpt-oss]] — OpenAI's open-weight competitor
 - [[entities/gemma-4]] — Google's open model family
 - [[concepts/reasoning-models]] — reasoning capabilities in LLMs

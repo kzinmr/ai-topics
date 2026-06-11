@@ -103,7 +103,7 @@ llm = LLM(
 
 ## Related wikilinks
 
-- [[concepts/local-llm]] — Local LLM ecosystem overview
+- [[concepts/local-llm/_index]] — Local LLM ecosystem overview
 - [[concepts/inference/llama-cpp]] — Local inference engine alternative
 - [[concepts/inference/sglang]] — SGLang serving framework
 - [[concepts/speculative-decoding]] — Inference acceleration technique

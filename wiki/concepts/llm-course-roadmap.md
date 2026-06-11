@@ -127,7 +127,7 @@ Covers model architecture, training, and evaluation. The area with the most over
 | Topic | Wiki Coverage | Notes |
 |----------|---------------|------|
 | Quantization Basics | [[concepts/model-quantization]], [[concepts/model-quantization-for-local-llms]] | Rich coverage |
-| GGUF | [[concepts/gguf-quantization]], [[concepts/local-llm]] | Covered |
+| GGUF | [[concepts/gguf-quantization]], [[concepts/local-llm/_index]] | Covered |
 | GPTQ / AWQ / EXL2 | [[concepts/turboquant]] | Partial |
 | HQQ | Mentioned in [[concepts/fsdp-qlora]] | In Mobius Labs / Dropbox context |
 | llama.cpp | [[concepts/local-llm/llama-cpp]] | Covered |
@@ -170,7 +170,7 @@ Covers production applications, RAG, agents, and deployment. Since this Wiki is 
 | Speculative Decoding | — | No concept page |
 | vLLM | [[concepts/serving-llms-vllm]], [[concepts/vllm]] | Covered |
 | TGI | [[concepts/inference/tgi]] | Covered (new) |
-| LM Studio / Ollama | [[concepts/ollama-local-llm-runner]], [[concepts/local-llm]] | Covered |
+| LM Studio / Ollama | [[concepts/ollama-local-llm-runner]], [[concepts/local-llm/_index]] | Covered |
 | MLC LLM (Edge) | — | Not covered |
 | Prompt Injection Defense | [[concepts/prompt-engineering-resilience-design-patterns]], [[concepts/resilient-prompt-engineering]], [[concepts/evaluation/red-teaming-adversarial-eval]] | Covered |
 | Garak (Red Teaming) | — | No individual tool page |

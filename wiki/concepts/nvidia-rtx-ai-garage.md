@@ -76,5 +76,5 @@ Compared to setting up DGX Spark yourself, going through RTX AI Garage provides:
 - [[entities/hermes-agent]] — Hermes Agent by Nous Research
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure agent framework
 - [[entities/openclaw]] — OpenClaw agent framework
-- [[concepts/local-ai]] — Local AI landscape (May 2026)
+- [[concepts/local-llm/local-ai]] — Local AI landscape (May 2026)
 - [[concepts/harness-engineering]] — Harness engineering (agent framework optimization)

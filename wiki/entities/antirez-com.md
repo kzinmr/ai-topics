@@ -250,7 +250,7 @@ This approach has the property that each model brings a "different perspective,"
 - DwarfStar's distributed inference is the final frontier for the goal of "local execution of frontier models"
 - Layer splitting and RDMA vertical splitting are known techniques, but LLM ensembling is relatively unexplored and particularly practical in the local inference context
 - Distributed inference is explicitly listed in DS4's future plans (see line ~165), and this article provides the concrete technical roadmap
-- Positioned at the intersection of [[concepts/quantization]] and [[concepts/local-llm]]
+- Positioned at the intersection of [[concepts/quantization]] and [[concepts/local-llm/_index]]
 
 #### Source
 - raw/articles/antirez.com--news-167--b10c3d4e.md

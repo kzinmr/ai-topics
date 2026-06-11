@@ -142,7 +142,7 @@ Personal Superintelligence
 - [[concepts/anthropic/openclaw-conflict]] — Platform control vs open access
 - [[concepts/openclaw-ecosystem]] — OpenClaw and personal AI agent movement
 - [[concepts/meta-muse-spark]] — Muse Spark model details
-- [[concepts/local-llm]] — Local LLM inference
+- [[concepts/local-llm/_index]] — Local LLM inference
 - [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Agent-driven development patterns
 - [[concepts/cache-first-engineering]] — Prompt cache optimization
 - [[concepts/ai-privacy-tools]] — AI agent privacy challenges

@@ -22,7 +22,7 @@ related:
   - "[[concepts/inference/llama-cpp]]"
   - "[[concepts/inference/vllm]]"
   - "[[concepts/inference/sglang]]"
-  - "[[concepts/local-llm]]"
+  - "[[concepts/local-llm/_index]]"
   - "[[concepts/inference-speed-development]]"
   - "[[concepts/gguf-quantization]]"
   - "[[concepts/serving-llms-vllm]]"
@@ -118,7 +118,7 @@ The Inference Inflection reframes the landscape:
 - Inference infrastructure (not training clusters) becomes the competitive frontier
 - CPU capacity planning for agent workloads becomes critical
 - Edge inference (llama.cpp, FlashQLA) gains strategic importance
-- [[concepts/local-llm]] and [[concepts/serving-llms-vllm]] become complementary rather than alternatives
+- [[concepts/local-llm/_index]] and [[concepts/serving-llms-vllm]] become complementary rather than alternatives
 
 ## 100K Stars (llama.cpp, Mar 2026)
 
@@ -139,5 +139,5 @@ Georgi Gerganov:
 - [[concepts/inference/vllm]] — vLLM details
 - [[concepts/inference/sglang]] — SGLang details
 - [[concepts/gguf-quantization]] — Quantization format
-- [[concepts/local-llm]] — Local LLM ecosystem
+- [[concepts/local-llm/_index]] — Local LLM ecosystem
 - [[concepts/inference-speed-development]] — Inference speed optimization

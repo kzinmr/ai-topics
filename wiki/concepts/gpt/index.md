@@ -346,7 +346,7 @@ See [[concepts/gpt/chatgpt-images-2-0]] for GPT Image 2.0.
 - [[openai]] — OpenAI company and product ecosystem
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
 - [[concepts/reasoning-models]] — o-series extended thinking models
-- [[concepts/local-llm]] — Running open-weight alternatives locally
+- [[concepts/local-llm/_index]] — Running open-weight alternatives locally
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis
 - [[concepts/codex/codex-superapp]] — Codex as super app
 - [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2.0 image generation

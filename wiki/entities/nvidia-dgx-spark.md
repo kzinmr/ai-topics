@@ -167,7 +167,7 @@ Andrew Chen built a home lab progressing through Mac Mini → DGX Spark → 5090
 
 **Position in his journey**: DGX Spark was his second hardware step (after Mac Mini), later supplemented by a 5090 eGPU and Strix Halo — suggesting he outgrew its speed limitations but retained it for the CUDA ecosystem and big-model capability.
 
-Full context: → [[concepts/local-ai]], [[entities/andrew-chen]]
+Full context: → [[concepts/local-llm/local-ai]], [[entities/andrew-chen]]
 
 ### Alex Cheema (Exo Labs) — June 2026
 
@@ -195,10 +195,10 @@ The RTX Spark potentially closes the gap between NVIDIA's CUDA ecosystem and App
 
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure agent framework
 - [[entities/hermes-agent]] — Hermes Agent, self-improving AI agent by Nous Research
-- [[concepts/local-ai]] — Local AI state snapshot (May 2026)
+- [[concepts/local-llm/local-ai]] — Local AI state snapshot (May 2026)
 - [[entities/andrew-chen]] — a16z GP, DGX Spark practitioner perspective
 - [[concepts/local-llm/server-dgx-spark]] — Setup guide for local LLM server
-- [[concepts/local-llm]] — Local LLM inference overview
+- [[concepts/local-llm/_index]] — Local LLM inference overview
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA's RTX AI Garage program
 - [[entities/jensen-huang]] — NVIDIA CEO, physical AI advocate
 - [[entities/alex-cheema]] — Exo Labs founder, personal AI hardware analysis

@@ -12,7 +12,7 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 ## Sub-pages
 
 ### Inference Engines
-- [[concepts/local-llm]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
+- [[concepts/local-llm/_index]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
 - [[concepts/local-llm/ollama]] — Ollama local LLM runner (model library, REST API)
 - [[concepts/inference/vllm]] — vLLM high-throughput serving (PagedAttention)
 - [[concepts/inference/sglang]] — SGLang serving framework (RadixAttention, structured generation)
@@ -29,6 +29,27 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 
 ## Model Comparisons
 - [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison (gpt-oss, GLM-4.5, Qwen 3, specialized edge models)
+
+## Key Figures
+
+- **Georgi Gerganov (@ggerganov)** — Creator of llama.cpp and whisper.cpp, pioneer of GGML/GGUF quantization ecosystem. Joined Hugging Face in 2025.
+- **Nous Research (@NousResearch)** — Hermes model family, open-weight post-training. Teknium leads post-training efforts.
+- **Ollama Team** — Simplified local LLM deployment, model library with one-command downloads, strong Apple Silicon support.
+
+## Community Hubs
+
+- **r/LocalLLaMA** (~500K+ members) — Model comparisons, hardware benchmarks, uncensored model discussions
+- **r/LocalLLM** — Technical discussions, setup guides, troubleshooting
+- llama.cpp Discord, Ollama community channels, Hugging Face forums
+
+## Trends (2026)
+
+1. **Consumer GPU Boom** — RTX 50 series, AMD RX 8000, Apple M-series driving local inference
+2. **Small Model Renaissance** — 3B-8B models approaching 70B+ quality via better training
+3. **Agentic Local AI** — Local LLMs powering autonomous agents for privacy-sensitive workflows
+4. **Hybrid Cloud+Local** — Routing simple tasks locally, complex tasks to cloud
+5. **Edge Deployment** — Phones, Raspberry Pi, IoT running quantized models
+6. **Digital Sovereignty** — Enterprise and government adoption for data control
 
 ## Summary
 
@@ -51,7 +72,7 @@ Together, these techniques allow a distilled 3-8B model at Q4 quantization to ru
 
 ## Related wikilinks
 
-- [[concepts/local-llm]] — Original consolidated page (reference)
+- [[concepts/local-llm/_index]] — Original consolidated page (reference)
 - [[concepts/harness-engineering]] — Local LLMs as harness components
 - [[concepts/harness-engineering/agentic-engineering]] — Using local LLMs in agent workflows
 - [[concepts/reasoning-models]] — Distillation for CoT transfer

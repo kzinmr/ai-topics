@@ -13,7 +13,7 @@ tags:
   - open-source
 related:
   - "[[concepts/local-llm/model-quantization]]"
-  - "[[concepts/local-llm]]"
+  - "[[concepts/local-llm/_index]]"
   - "[[concepts/reasoning-models]]"
   - "[[concepts/open-source-ai-destruction]]"
   - "[[concepts/local-llm/server-dgx-spark]]"
@@ -173,7 +173,7 @@ Sutton's "Bitter Lesson" argues that general methods leveraging computation outp
 - [[concepts/local-llm/model-quantization]] — Quantization complements distillation
 - [[concepts/reasoning-models]] — Reasoning models use distillation for CoT transfer
 - [[concepts/open-source-ai-destruction]] — Open-source models affected by distillation restrictions
-- [[concepts/local-llm]] — Overview of local LLM ecosystem
+- [[concepts/local-llm/_index]] — Overview of local LLM ecosystem
 - [[concepts/local-llm/server-dgx-spark]] — Hardware for running distilled models
 
 ## Sources

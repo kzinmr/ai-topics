@@ -39,7 +39,7 @@ The roadmap rejects the tutorial-hell pipeline and positions **production shippi
 
 Build an offline-first mobile app using small language models (SLMs). Zero API costs, complete privacy. Teaches model optimization for restricted hardware: lazy loading, sliding context windows with semantic chunking, dynamic quantization (4-bit for older devices, 8-bit for newer), battery-aware batching, and encrypted local-first sync.
 
-**Why it matters**: Demonstrates understanding of [[concepts/local-llm|local inference]], quantization, and memory pressure — not just calling an API.
+**Why it matters**: Demonstrates understanding of [[concepts/local-llm/_index|local inference]], quantization, and memory pressure — not just calling an API.
 
 ### 2. Self-Improving Coding Agent (Intermediate)
 **Proves: Agentic Loops + Production Debugging**
@@ -88,7 +88,7 @@ This roadmap sits at the intersection of several 2026 currents:
 
 - **[[concepts/agentic-engineering]]**: Projects 2-5 are all exercises in agentic engineering, where the human shifts from writing code to designing verification systems and orchestrating agent workflows.
 - **[[concepts/vibe-coding-vs-agentic-engineering|Vibe Coding vs. Agentic Engineering]]**: The roadmap explicitly rejects vibe coding (ad-hoc, unverified agent output) in favor of systematic, production-grade systems.
-- **[[concepts/local-llm]]**: Project 1's emphasis on edge deployment and quantization reflects the growing importance of local inference as a privacy and cost strategy.
+- **[[concepts/local-llm/_index]]**: Project 1's emphasis on edge deployment and quantization reflects the growing importance of local inference as a privacy and cost strategy.
 - **[[concepts/cognitive-debt]]**: Building complex autonomous systems (Projects 4-5) without understanding the architecture creates cognitive debt — the roadmap's structured progression mitigates this.
 
 ## Sources

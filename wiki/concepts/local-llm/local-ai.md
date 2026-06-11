@@ -72,7 +72,7 @@ Mac Mini → NVIDIA DGX Spark → 5090 eGPU + gaming rig → Strix Halo Framewor
 ### Hardware Details
 - **DGX Spark**: → [[entities/nvidia-dgx-spark]], [[concepts/dgx-spark-local-llm-server]]
 - **Mac Studio**: → [[concepts/mac-studio-local-ai]]
-- **Inference hardware general**: → [[concepts/local-llm-inference-hardware]]
+- **Inference hardware general**: → [[concepts/local-llm/local-llm-inference-hardware]]
 
 ---
 
@@ -112,7 +112,7 @@ If 120B-class quality running locally in 2026 is comparable to cloud LLMs 1 year
 - **TurboQuant**: New quantization method — can directly test performance changes locally
 - **DFlash**: New inference acceleration technology — similarly verifiable in own environment
 
-→ [[concepts/model-quantization-for-local-llms]], [[concepts/local-llm-models-april-2026]]
+→ [[concepts/model-quantization-for-local-llms]], [[concepts/local-llm/local-llm-models-april-2026]]
 
 ---
 
@@ -220,12 +220,12 @@ Andrew Chen's recommended entry path:
 ## 7. Related Pages
 
 ### Concepts
-- [[concepts/local-llm]] — Local LLM overview
-- [[concepts/local-llm-inference-hardware]] — Inference hardware details
-- [[concepts/local-llm-models-april-2026]] — Per-model benchmarks
+- [[concepts/local-llm/_index]] — Local LLM overview
+- [[concepts/local-llm/local-llm-inference-hardware]] — Inference hardware details
+- [[concepts/local-llm/local-llm-models-april-2026]] — Per-model benchmarks
 - [[concepts/mac-studio-local-ai]] — Mac Studio inference environment
 - [[concepts/dgx-spark-local-llm-server]] — DGX Spark inference server setup
-- [[concepts/local-llm-server-setup-on-dgx-spark]] — DGX Spark setup guide
+- [[concepts/local-llm/local-llm-server-setup-on-dgx-spark]] — DGX Spark setup guide
 - [[concepts/ollama]] — Ollama runner
 - [[concepts/vllm]] — vLLM inference server
 - [[concepts/model-quantization-for-local-llms]] — Quantization techniques

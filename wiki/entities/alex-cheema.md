@@ -57,7 +57,7 @@ Alex highlights the DGX Station's novel architecture as a potential future direc
 
 - [[entities/nvidia-dgx-spark]] — NVIDIA's desktop AI supercomputer
 - [[entities/nvidia]] — NVIDIA ecosystem
-- [[concepts/local-llm]] — Local LLM inference overview
+- [[concepts/local-llm/_index]] — Local LLM inference overview
 - [[concepts/harness-engineering]] — Harness engineering for AI agents
 - [[entities/andrei-karpathy]] — "Personal computing v2" concept originator
 - [[entities/nous-research]] — Hermes / OpenClaw open-source agent harnesses

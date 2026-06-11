@@ -65,6 +65,6 @@ OpenAI itself recommends hosted API for multimodal support or managed tools, but
 - [[entities/openai]] — parent company and broader model family
 - [[entities/hugging-face]] — primary distribution platform
 - [[concepts/mixture-of-experts]] — MoE architecture principles
-- [[concepts/local-llm]] — local deployment landscape
+- [[concepts/local-llm/_index]] — local deployment landscape
 - [[entities/gemma-4]] — Google's competing open model family
 - [[concepts/gpt/gpt-5-5]] — OpenAI's latest proprietary model
