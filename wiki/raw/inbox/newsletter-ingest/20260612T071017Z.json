@@ -1,0 +1,83 @@
+{
+  "triage_run_id": "20260612T071017Z",
+  "triaged_at": "2026-06-12T07:10:17+00:00",
+  "checkpoint_source": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "classifications": [
+    {
+      "message_id": "<20260611130321.3.797ac35dd4156ff2@mg-d1.substack.com>",
+      "subject": "New Claude model - Fable",
+      "date": "2026-06-11",
+      "source": "Ben's Bites (bensbites.substack.com)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-new-claude-model-fable.md",
+      "primary_url": "https://www.bensbites.com/p/new-claude-model-fable",
+      "importance": "critical",
+      "reason": "New Anthropic Claude model release named 'Fable'. Directly relevant to wiki coverage of LLM models and Claude/Anthropic entity pages. Likely updates needed for: entities/anthropic.md, entities/claude.md, concepts/llm-models. Should be scraped and processed into wiki pages.",
+      "action": "fetch_article_and_ingest",
+      "target_pages": ["entities/anthropic", "entities/claude", "events/claude-fable-release"],
+      "tags": ["model-release", "anthropic", "claude", "llm"]
+    },
+    {
+      "message_id": "<20260612053409.3.2a061aac5641801d@mg-d0.substack.com>",
+      "subject": "[AINews] Loopcraft: The Art of Stacking Loops",
+      "date": "2026-06-12",
+      "source": "Latent Space / swyx (latent.space)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-12-ainews-loopcraft-the-art-of-stacking-loops.md",
+      "primary_url": "https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking",
+      "importance": "high",
+      "reason": "Latent Space (swyx) article about 'Loopcraft' - loop stacking patterns in AI agent architectures. Directly relevant to wiki's agent-focused coverage. May cover agentic loop composition, recursive patterns, or agent orchestration. Key topic for concepts pages.",
+      "action": "fetch_article_and_ingest",
+      "target_pages": ["concepts/agentic-loops", "concepts/agent-orchestration", "entities/swyx"],
+      "tags": ["agents", "agentic-patterns", "latent-space", "swyx", "loops"]
+    },
+    {
+      "message_id": "<20260611.155145.6377e56e@mta27>",
+      "subject": "🏛️ Dario Amodei Demands Binding AI Rules",
+      "date": "2026-06-11",
+      "source": "beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-dario-amodei-demands-binding-ai-rules.md",
+      "primary_url": null,
+      "importance": "high",
+      "reason": "Anthropic CEO Dario Amodei calling for binding AI regulation. Directly relevant to AI safety, AI policy, and Anthropic entity page. Dario Amodei is a key figure tracked in the wiki. Important for AI safety governance coverage.",
+      "action": "fetch_article_and_ingest",
+      "target_pages": ["entities/dario-amodei", "entities/anthropic", "concepts/ai-safety", "concepts/ai-regulation"],
+      "tags": ["ai-safety", "ai-regulation", "anthropic", "dario-amodei", "policy"]
+    },
+    {
+      "message_id": "<20260611195225.3.c313546c5ce7df14@mg-d1.substack.com>",
+      "subject": "True Positive Weekly #165",
+      "date": "2026-06-11",
+      "source": "AI Weekly / @aiweekly (aiweekly.substack.com)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-true-positive-weekly-165.md",
+      "primary_url": "https://aiweekly.substack.com/p/true-positive-weekly-165",
+      "importance": "low",
+      "reason": "AI Weekly curated digest. Likely contains multiple AI topics but as a general roundup without deep focus. Can be scraped for link discovery but lower priority than the focused articles above.",
+      "action": "scrape_for_links",
+      "target_pages": [],
+      "tags": ["weekly-digest", "ai-news"]
+    },
+    {
+      "message_id": "<20260611145055.3.3e1e8f0ebc53fdeb@mg-d1.substack.com>",
+      "subject": "Intel Should Raise Capital",
+      "date": "2026-06-11",
+      "source": "SemiAnalysis (newsletter.semianalysis.com)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-intel-should-raise-capital.md",
+      "primary_url": "https://newsletter.semianalysis.com/p/intel-should-raise-capital",
+      "importance": "low",
+      "reason": "SemiAnalysis article on Intel capital strategy. SemiAnalysis covers AI hardware/semiconductors, but this specific article is about Intel business strategy rather than LLM/Agent technologies. May have tangential relevance to AI chip supply chain but not a priority for wiki ingest.",
+      "action": "skip",
+      "target_pages": [],
+      "tags": ["semiconductors", "intel", "hardware"]
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "low": 2,
+    "fetch_priority": [
+      "2026-06-11-new-claude-model-fable (critical: new Claude model 'Fable')",
+      "2026-06-12-ainews-loopcraft-the-art-of-stacking-loops (high: agentic loop patterns)",
+      "2026-06-11-dario-amodei-demands-binding-ai-rules (high: AI safety/policy)"
+    ]
+  }
+}
