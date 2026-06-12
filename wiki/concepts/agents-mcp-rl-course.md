@@ -206,7 +206,7 @@ This course is not just educational content — it is a **strategic onboarding p
 ### Prime Intellect ↔ Verifiers
 [[entities/prime-intellect]] provides open-source RL infrastructure for LLMs. The [verifiers](https://github.com/PrimeIntellect-ai/verifiers) library (~4,000 stars) is the core building block — it defines modular RL environments for training and evaluating agents. Will Brown created verifiers and leads its development. The course teaches the **background knowledge needed to use verifiers effectively**: environment construction, reward shaping, GRPO training loops, and multi-turn agent evaluation. Students receive $100 in Prime Intellect GPU credits to practice with real infrastructure.
 
-### OpenPipe ↔ RL Post-Training
+### [[entities/openpipe|OpenPipe]] ↔ RL Post-Training
 **OpenPipe** (Kyle Corbitt, CTO) provides RL post-training as a service — companies bring their tasks, and OpenPipe trains custom models that outperform frontier APIs on those specific workloads. The course teaches the **evaluation and reward engineering fundamentals** that OpenPipe's customers need to formulate their tasks as RL problems. Students receive $100 in OpenPipe finetuning credits.
 
 ### Weights & Biases ↔ Experiment Tracking
@@ -292,6 +292,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[entities/will-brown]] — Primary instructor
 - [[concepts/corbett-kyle-corbitt]] — Co-instructor
 - [[entities/prime-intellect]] — Will Brown's organization (verifiers, PRIME-RL)
+- [[entities/openpipe]] — Kyle Corbitt's company (ART framework, RL post-training)
 - [[raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning]] — Lightning Lesson 1: Build Your Own AI Research Agent
 - [[transcripts/2025-06-10_willbrown_build-your-own-research-agent-notebook]] — Lightning Lesson 1 notebook walkthrough
 - [[raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning]] — Lightning Lesson 2: Training Agents with RL
