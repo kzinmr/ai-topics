@@ -8515,3 +8515,4 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - **Updated:** `concepts/coding-agents/codeact.md` — added MemEx to the Current Landscape table.
 - **Updated:** `index.md` — added MemEx entry in concepts section.
 - Source: https://www.databricks.com/blog/memex-programmable-scratchpad-llm-agents
+- 2026-06-12: Reorganized concepts/ — created concepts/post-training/ directory. Moved all fine-tuning/ pages (10 files) and 37 RL-related top-level concept pages into post-training/. Created fine-tuning.md redirect page. Bulk-updated ~100 cross-references across wiki. Updated post-training/_index.md as comprehensive overview.
