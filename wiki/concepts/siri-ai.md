@@ -1,11 +1,12 @@
 ---
 title: Siri AI
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-12
 type: concept
 tags: [apple, on-device, model, multimodal, privacy, voice-ai, platform, edge-ai]
 sources:
   - raw/articles/apple.com--newsroom-2026-06-apple-introduces-siri-ai-a-profoundly-more---6ef8c2d4.md
+  - raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md
 ---
 
 # Siri AI
@@ -92,6 +93,39 @@ Siri AI is accessible across the entire Apple ecosystem:
 ### Regional Limitations
 - **EU**: Available on Mac and Apple Vision Pro; not initially available on iOS, iPadOS, or watchOS
 - **China**: Not available while Apple works through regulatory requirements
+
+## EU Regulatory Dispute: DMA and Siri AI Delay (June 2026)
+
+On June 11, 2026, Apple officially announced that Siri AI would be delayed in the European Union for iOS 27 and iPadOS 27, citing the Digital Markets Act (DMA). This represents a significant escalation in the conflict between Apple's privacy-first AI architecture and EU digital market regulation.
+
+### Background
+
+Apple proposed a solution called **Trusted System Agent (TSA)** — an intermediary that would allow third-party virtual assistants to safely access the same features and capabilities as Siri AI on EU devices. Apple also proposed gradual rollout of this solution over an 18-month period. The European Commission rejected both proposals.
+
+### EU Regulators' Demands
+
+According to Apple's public statement, EU regulators require that once Siri AI is made available in the EU:
+- All AI systems must be given "nearly unlimited access" to a user's device
+- AI systems must be able to act on that access autonomously "without a user's ongoing visibility and control"
+- This includes the ability to read and send messages, make purchases, access files, and execute actions across any app
+
+### Apple's Position
+
+Apple argues that the DMA's extreme interpretation creates unacceptable security risks. Craig Federighi (Apple SVP of Software Engineering): "We're deeply disappointed that our EU users won't have Siri AI on iPhone or iPad... EU regulators did not accept any of Apple's proposed solutions to bring Siri AI to the EU while safely supporting other virtual assistants." Apple security researchers note that AI systems can be hijacked to steal personal data (passwords, photos) and permanently alter files without user consent.
+
+### Impact
+
+- **iOS 27 / iPadOS 27**: Siri AI completely unavailable at launch
+- **macOS 27 / visionOS 27**: Siri AI available (not affected by the dispute)
+- **watchOS 27**: Unavailable (requires paired iPhone with Siri AI)
+- **EU Developers**: Cannot test Siri AI features on iOS/iPadOS/watchOS
+- No timeline exists for resolution; Apple states regulators' "refusal to engage constructively" prevents progress
+
+### DMA × AI Significance
+
+This case represents the first major test of how the EU DMA interacts with AI platform capabilities. Unlike the EU AI Act (which governs high-risk AI systems directly), the DMA's provisions on gatekeeper platform obligations are being interpreted by the European Commission to require AI systems to have unrestricted device access as a competition remedy. This creates a direct conflict with Apple's privacy and security architecture.
+
+Source: [[raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md]]
 
 ## Related
 

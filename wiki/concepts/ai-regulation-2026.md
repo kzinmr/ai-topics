@@ -2,7 +2,7 @@
 title: "AI Regulation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-06-11
+updated: 2026-06-12
 tags:
   - concept
   - regulation
@@ -27,6 +27,7 @@ sources:
   - url: "https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database"
     title: "NCSL AI Legislation Database"
   - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
+  - raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md
 ---
 
 # AI Regulation (2026)
@@ -99,6 +100,21 @@ The pace is accelerating dramatically. The most active areas: generative AI regu
 - Delayed high-risk AI rules applicability
 - New guidance on research exemptions (Articles 2(6) and 2(8))
 - Joint guidance with EDPB on AI + data protection interplay
+
+### DMA × AI Assistants: Apple Siri AI Case Study (June 2026)
+
+Apple's June 11, 2026 announcement that Siri AI would be delayed for iOS 27/iPadOS 27 in the EU represents the first major test of how the EU Digital Markets Act (DMA) interacts with AI platform capabilities. Unlike the EU AI Act (which governs high-risk AI systems directly), the DMA's provisions on gatekeeper platform obligations are being interpreted by the European Commission to require AI systems to have unrestricted device access and third-party app control rights as a competition remedy.
+
+**Key facts**:
+- Apple proposed a **Trusted System Agent** intermediary solution; the European Commission rejected it
+- EU regulators demand that any AI system on Apple devices have "nearly unlimited access" to user data and the ability to "act autonomously without ongoing user visibility"
+- Apple cites security research showing AI systems can be hijacked to steal sensitive data
+- The dispute only affects iOS/iPadOS/watchOS; macOS and visionOS Siri AI will be available in the EU
+- No resolution timeline exists
+
+**Regulatory implications**: This case highlights a gap in current regulatory frameworks: the EU AI Act governs AI safety directly, but the DMA's platform competition provisions create conflicting requirements with AI security/privacy. The outcome will set precedent for how competition regulation and AI safety regulation interact in the EU.
+
+Source: [[raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md]]
 
 ## United Kingdom
 

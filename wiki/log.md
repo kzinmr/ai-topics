@@ -1,3 +1,19 @@
+## [2026-06-12] Blog wiki ingest — Claude Fable 5 proactive debugging, Siri AI EU DMA delay, George Hotz deflation
+
+Processed 2 take + 2 reference decisions from blog-triage checkpoint (14 candidates):
+
+- **✏️ Enriched [[entities/simon-willison.md]]** — Added "Claude Fable 5's Relentlessly Proactive Debugging" section to June 2026 Updates. Fable autonomously used pyobjc window enumeration, test HTML generation, Jinja template injection, and custom CORS HTTP server to debug a scrollbar bug — all while Simon was away from his computer. Demonstrates frontier of [[concepts/agentic-engineering]] where agents autonomously extend tool chains. Source: raw/articles/simonwillison.net--2026-jun-11-fable-is-relentlessly-proactive--0e9903b3.md
+
+- **✏️ Enriched [[concepts/siri-ai.md]]** — Added "EU Regulatory Dispute: DMA and Siri AI Delay (June 2026)" section. Covers Apple's Trusted System Agent proposal, EU Commission rejection, Federighi statement, device-by-device impact analysis. First major test of DMA x AI platform regulation intersection. Source: raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md
+
+- **✏️ Enriched [[concepts/ai-regulation-2026.md]]** — Added "DMA x AI Assistants: Apple Siri AI Case Study" subsection under EU section. Regulatory gap analysis between EU AI Act (AI safety) and DMA (platform competition) creates conflicting requirements.
+
+- **✏️ Enriched [[entities/george-hotz.md]]** — Added "AI Will Be Massively Deflationary — Great Depression 2" section. Hotz's contradictory thesis to his May 2026 Jevons Paradox argument: AI destroys wage premiums via deflation, tractor analogy for knowledge work. Source: raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md
+
+Triage decisions: 2 take, 2 reference, 10 skip. References (Tedium eGPU benchmarks) deferred. 4 wiki pages updated.
+
+---
+
 ## [2026-06-12] Newsletter wiki ingest — Loopcraft, Microsoft Arbor, Recursive SI enrichment
 
 Processed 3 take decisions from newsletter-triage checkpoint (Case C recovery — JSON saved, cron parse failed):

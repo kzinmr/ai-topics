@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-06-08
+updated: 2026-06-12
 tags:
   - entity
   - person
@@ -18,6 +18,7 @@ sources:
   - entities/geohot-github-io
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-06-our-great-war-html--b0d9abd3.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-07-stairway-to-heaven-html--62c1cbd3.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md
 ---
 
 # George Hotz
@@ -190,7 +191,21 @@ This essay represents Hotz's most dramatic philosophical statement on AI, extend
 
 Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-06-our-great-war-html--b0d9abd3.md]]
 
----
+### AI Will Be Massively Deflationary — Great Depression 2 (Jun 2026)
+
+In a June 11, 2026 post, Hotz published a directly contradictory argument to his May 2026 "AI Will Create Jobs" thesis. While his earlier post predicted AI would increase total employment via [[concepts/jevons-paradox|Jevons Paradox]], this post argues that AI will be "massively deflationary" — destroying knowledge worker wage premiums and potentially causing a "Great Depression 2: Electric Boogaloo."
+
+**Key arguments:**
+- **Tractor analogy for knowledge work**: "Imagine a tractor replacing a team of people to dig holes... If holes become 10x cheaper to dig, the hole digging market size in dollars becomes 10x smaller." He argues that contrary to finance expectations, commoditized labor (now AI-provided) reduces the total dollar value of the market rather than letting producers capture former labor costs.
+- **AI model commoditization**: "The tech to make models is way more commodity than previous generations of technology." Combined with Chinese open-source competition giving models away for free, no one can maintain a monopoly.
+- **Knowledge worker overpayment**: "Knowledge workers are so grossly overpaid compared to the energy they consume, and AI will rectify that." He explicitly states AI will "wreck wage premiums" and cause a "big reevaluation of status hierarchies."
+- **Dismissal of Anthropic fears**: Hotz frames fears about Anthropic's power as overblown, comparing them to SBF-style regulatory capture attempts that inherently fail due to "the totalizing nature of the ideology."
+
+**Contradiction with May 2026 post**: His May 1 post argued AI creates jobs via Jevons Paradox (more efficiency → more demand). This post argues AI destroys wage premiums via deflation (more efficiency → smaller dollar market). The two theses are reconcilable only if total employment rises while wages/capita fall — a plausible but unstated synthesis.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md]]
+
+|---
 
 ## Key Writings & Tweets
 
