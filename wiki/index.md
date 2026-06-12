@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-11 | Total pages: 2475 | Indexed entries: 2032 | Concepts: 1680 | Entities: 782
+> Last updated: 2026-06-12 | Total pages: 2478 | Indexed entries: 2035 | Concepts: 1681 | Entities: 784
 
 ## Entities (782 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -495,6 +495,7 @@
 - [[entities/perceptron-ai]] — Perceptron AI — Physical AI research lab. Perceptron Mk1: video understanding + embodied reasoning model matching frontier labs at lower cost. Founded Nov 2024 by Armen Aghajanyan & Akshat Shrivastava (ex-FAIR).
 - [[entities/perplexity-comet]] — Perplexity Comet is an AI-native browser developed by Perplexity AI. Released on Windows/macOS in July 2025, Android in November 2025, and iOS in March 2026. The flagship product in the "turn the browser into an AI agent" strategy.
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. Pioneer of **AI-native development** and **personal agent stacks** (Codex + gogcli/wacli/imsg + Google Drive as source of truth + skill-based procedural memory + approval gates).
+- [[entities/peter-wang]] — Peter Wang (@BrainsAndTennis) — Co-founder of Shortcut. Author of "Building a Good Vertical Agent" (Jun 2026, 972 bookmarks). L1/L2/L3 context hierarchy framework for vertical agent design. Production experience in hedge fund spreadsheet automation.
 - [[entities/petra-donka]] — Petra Donka — Head of DevEx at Warp. Argues agents need feedback loops, not perfect prompts.
 - [[entities/pi]] — Minimal AI coding harness by Mario Zechner. ~1K token system prompt, only 4 tools (read/write/edit/bash), ~54K GitHub Stars, MIT+Fair+Proprietary license. Acquired by Earendil (April 2026). OpenClaw foundation. `/is` `/wr` workflow via `.pi` folder. Runtime Substrate (agent OS).[[concepts/ai-generated-issues-in-oss]]
 - [[entities/pi-serini]] — Minimal search agent: BM25 + LLM agentic loop. 83.1% BrowseComp-Plus accuracy with gpt-5.5, beats dense retrievers at 3.3x–10x lower cost via prefix caching (82–90% cache hit rate). Hsu et al., arXiv:2605.10848.
@@ -564,6 +565,7 @@
 - [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching personal AI and memory systems for AI agents. Previously at Decentralised.co, building products for the crypto space. Author of Ope
 - [[entities/shloked]] — Shlok Khemani (@shloked) — Indie developer, creator of ChatFerry (TypeScript CLI for coding agents to use ChatGPT/Claude without API keys). OpenPoke, Claude Memory Tools, Conjure. Memory systems researcher. See [[entities/shlok-khemani]] for full profile.
 - [[entities/shopify]] — Shopify — Global e-commerce platform and leading case study in enterprise AI adoption. 23,000 engineers targeting 90% autonomous coding by Q3 2026. Built internal LLM proxy, adopted Copilot (2021) → Cursor → Claude Code, runs parallel AI agents, 1,000-intern program. See [[entities/farhan-thawar]], [[entities/tobi-lutke]].
+- [[entities/shortcut]] — Shortcut — Vertical AI agent for spreadsheet tasks. Most accurate spreadsheet agent, deployed in 3 of top 4 multistrategy hedge funds. Single execute_code tool architecture, L1/L2/L3 context hierarchy. Co-founded by [[entities/peter-wang|Peter Wang]].
 - [[entities/shreya-shankar]] — **Role** | PhD Candidate, UC Berkeley EECS (Aditya Parameswaran lab) |
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet operation model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing.
 - [[entities/shunyu-yao]] — **Name:** Shunyu Yao
@@ -1226,6 +1228,7 @@
 - [[concepts/constrained-decoding]] — Constrained Decoding
 - [[concepts/content-engine]] — Content Engine
 - [[concepts/content-understanding]] — Content Understanding: The system of content representation and enhancement within search indexes. Daniel Tunkelang's 8-article series (2021-2022). Classification→annotation→similarity→structure→quality→moderation/information extraction. The foundational counterpart to Query Understanding.
+- [[concepts/context-as-memory-hierarchy]] — Context as Memory Hierarchy (L1/L2/L3) — Agent context organization inspired by CPU cache hierarchy. L1: always-resident core operations. L2: on-demand curated specs. L3: raw API + grep skill. Proposed by [[entities/peter-wang|Peter Wang]] (Shortcut, Jun 2026).
 - [[concepts/context-engineering/context-compaction|Context Compaction]] — Context Compaction — The context window compression process for AI agents. Includes the innovative Pre-Compaction Flush approach (OpenClaw). Compaction strategy comparison across OpenClaw/Claude Code/Codex.
 - [[concepts/context-engineering/context-compression|Context Compression]] — Context Compression Techniques
 - [[concepts/context-engineering/context-efficiency|Context Efficiency]] — Context Efficiency in AI Agents — Framework for evaluating AI agent efficiency based on context acquisition

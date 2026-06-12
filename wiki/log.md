@@ -1,3 +1,22 @@
+## [2026-06-12] Ingested Peter Wang's "Building a Good Vertical Agent" X Article
+
+**Source**: https://x.com/BrainsAndTennis/status/2065190286519906657 (972 bookmarks, 274 likes)
+**Author**: Peter Wang (@BrainsAndTennis) — Co-founder of Shortcut
+
+**Created**:
+- `raw/articles/2026-06-11_peterwang_building-good-vertical-agent.md` (type: x_article)
+- `entities/peter-wang.md` — Peter Wang entity page
+- `entities/shortcut.md` — Shortcut (vertical spreadsheet AI agent) entity page
+- `concepts/context-as-memory-hierarchy.md` — L1/L2/L3 context hierarchy framework
+
+**Updated**:
+- `SCHEMA.md` — added `vertical-agent` tag to AI Agents category
+- `index.md` — added 3 new page entries, updated page counts
+
+**Summary**: Production-grade vertical agent design principles. Core thesis: "a good agent is a faithful compression of its task distribution." L1 (always-resident core ops), L2 (on-demand curated specs), L3 (raw API + grep skill) context hierarchy. Single execute_code tool over multiple specific tools. Deployed in 3 of top 4 multistrategy hedge funds.
+
+---
+
 ## [2026-06-12] Raw backlog ingest — 5 articles evaluated, 0 takes, 0 references, 5 skips (all already captured)
 
 **Pipeline**: raw-backlog-ingest (batch of 5, ai-hint sorted)
