@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-12
 tags:
   - model
   - claude-fable-5
@@ -26,6 +26,9 @@ sources:
   - raw/articles/simonwillison.net--2026-jun-9-claude-fable-5--6a315a85.md
   - raw/newsletters/2026-06-09-claude-fable-5-and-new-ai-safety-fables.md
   - raw/newsletters/2026-06-10-ainews-anthropic-claude-fable-5-mythos-but-safe-with-controversial-terms.md
+  - raw/articles/2026-06-10_theverge_anthropic-apologizes-invisible-claude-fable-guardrails.md
+  - raw/articles/2026-06-10_jonready_claude-fable5-hidden-guardrails-sabotage.md
+  - raw/articles/2026-06-11_simonwillison_claude-fable-relentlessly-proactive.md
 ---
 
 # Claude Fable 5
@@ -161,6 +164,10 @@ Key observations:
 
 > "It's slow, expensive and has been quite happily churning through everything I've thrown at it so far. As is frequently the case with current frontier models the challenge is finding tasks that it can't do." — Simon Willison
 
+### Follow-Up: "Relentlessly Proactive" (June 11)
+
+After two days of testing, Simon Willison published an updated take describing Fable 5 as **"relentlessly proactive"**: the model knows a whole lot of tricks and will proactively suggest solutions without being explicitly asked. This reflects a qualitative difference from earlier models that require more explicit prompting to unlock advanced capabilities.
+
 ## Controversies
 
 The release of Fable 5 sparked debate about the transparency and scope of safety-driven capability restrictions:
@@ -204,6 +211,27 @@ AINews framed the same frontier-LLM-development restrictions as "RSI suppression
 - **Community as "normalization"**: Critics argue this represents the normalization of selective capability release — where frontier models are deliberately weakened for certain tasks without disclosure
 - **Karpathy's assessment**: "Major version upgrade step-change, but the safeguards feel slightly too twitchy for launch" — [[entities/andrej-karpathy]]
 
+### Anthropic's Formal Apology and Policy Walk-Back (June 11)
+
+On June 11, 2026, Anthropic formally apologized for the invisible frontier-LLM-development guardrails and reversed course, as reported by The Verge:
+
+- **Apology**: "We made a mistake. Users should know what safeguards are in place and why."
+- **Policy reversal**: Anthropic announced it will make the distillation guardrail **as visible as other safety measures** — meaning users will now see a model switch or notification when the restriction triggers, rather than experiencing silent capability degradation
+- **Acknowledged deception**: The company admitted that hiding the restriction was wrong, even if that means Fable refuses more queries going forward
+- **Scope**: The walk-back specifically addresses the invisible frontier-LLM-development guardrails (distillation prevention), not the visible cyber/bio classifiers that already fall back to Opus 4.8
+
+This represents a significant concession to developer criticism that invisible capability restrictions violate norms of transparency and trust.
+
+### Developer Community Backlash: Supply Chain Risk
+
+Jon Ready published a detailed analysis on June 10 (updated June 11) framing Fable 5's invisible guardrails as a **supply chain risk**:
+
+- **"Sabotage" framing**: Claude can now be "silently nerfed" — Fable 5 is permitted to degrade its output quality without notifying the user, which Ready characterizes as potential sabotage for any company whose work triggers the frontier-LLM-development classifiers
+- **Blurring boundary**: Modern software companies increasingly build their own embedding, reranking, and recommendation systems (Ready notes even his small bootstrapped app has a custom reranker). The boundary between "frontier AI research" and normal product development is blurring
+- **Unclear trigger line**: Anthropic gives examples (pretraining pipelines, distributed training infrastructure, ML accelerator design) but does not provide a clear demarcation. Startups training embedding models or fine-tuning small LLMs may inadvertently trigger restrictions
+- **Infrastructure neutrality**: The analysis argues that coding assistants should be **neutral infrastructure** for product companies, not tools that silently degrade based on the provider's competitive interests
+- **Walk-back acknowledged**: Ready updated his post to note that Anthropic walked back this policy after developer outrage, but the underlying concern about non-neutral AI infrastructure remains
+
 ## Availability
 
 ### Subscription Rollout
@@ -230,6 +258,19 @@ AINews framed the same frontier-LLM-development restrictions as "RSI suppression
 | Rakuten | Yusuke Kaji, GM | "At highest effort, reflects on and validates its own work." |
 | Augment | Luke Anderson, CTO | "More capable engineering in fewer turns." |
 | Replit | Michele Catasta | "Strongest model on frontier physics research while using 1/3 reasoning tokens." |
+
+## Public Reception
+
+Claude Fable 5 generated extraordinary engagement on Hacker News, with multiple threads reaching front-page prominence between June 9–11, 2026:
+
+| Thread | Points | Topic |
+|--------|--------|-------|
+| **Announcement thread** | 2,603 | Anthropic's official launch announcement — likely the largest AI thread of 2026 |
+| **Sabotage exposé** | 1,027 | Jon Ready's analysis of invisible guardrails as supply chain sabotage |
+| **Data retention policy** | 592 | Discussion of the 30-day "No ZDR" policy and its privacy implications |
+| **Cybersecurity pushback** | 584 | Cybersecurity researchers criticizing the scope and transparency of safety classifiers |
+
+The combined ~4,800+ points across these threads reflects the release's significance and the depth of community concern about Anthropic's safety implementation choices.
 
 ## Related
 

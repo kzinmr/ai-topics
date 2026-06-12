@@ -1,7 +1,7 @@
 ---
 title: "FlashAttention-4"
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-06-12
 type: concept
 tags:
   - training
@@ -15,6 +15,7 @@ tags:
 sources:
   - raw/articles/2026-03-05_togetherai_flashattention-4.md
   - raw/articles/2025-09-26_modal_reverse-engineer-flashattention-4.md
+  - raw/articles/2026-06-11_modal_flashattention-4-faster-inference.md
 aliases: ["FA4", "Flash Attention 4"]
 related:
   - concepts/flash-attention
@@ -106,6 +107,34 @@ Charles Frye and the Modal team reverse-engineered FA4 from the [open-source cod
 
 The Modal team emphasized that FA4's architecture is understandable to general software engineers — the biggest innovation is the asynchronous pipeline complexity, not black-box math.
 
+## Inference Optimization (Modal, June 2026)
+
+In June 2026, Modal published a follow-up detailing their contributions to make FA4 faster for LLM inference — specifically **decode-heavy workloads**, where the memory bandwidth-limited token generation phase dominates (unlike pre-training, which is compute-bound). Inference introduces challenges absent in training: variable batch sizes, non-uniform sequence lengths, and keys/values retrieved from KV cache. The changes fall into two categories:
+
+### Parallelism Strategy Adjustments
+
+The original FA4 parallelizes across **query tiles** (query parallelism), which is well-suited for pre-training's many-query regime but leaves most SMs idle during decode, where batch sizes are small and queries are few. Modal made three key changes:
+
+- **Split KV (Flash-Decoding)**: Ported the "split KV" technique from FA2, where multiple CTAs work concurrently per query tile, each processing a portion of the KV sequence, followed by a reduction step (`flash_fwd_combine`). This parallelizes across the KV dimension instead of the query dimension, achieving up to **4.37× memory throughput** for small query lengths. Flag: `num_splits = 0` triggers an automatic heuristic based on SM count and sequence length.
+- **Single query tile mode** (`q_stage = 1`): The original kernel assumes ≥256 queries (two tiles of 128), wasting work on the second tile during decode. A single-tile path avoids this waste, achieving up to **3.06× throughput** for single-token decode. The freed second softmax warpgroup is repurposed for additional KV page loads.
+- **GQA packing extension** (`pack_gqa = True`): Grouped-query attention (GQA) increases arithmetic intensity at inference, but by default FA4 handles each query head separately, redundantly loading KV data. GQA packing maps the group into a single tile. Modal extended this to work with `cp.async` loads (bypassing TMA alignment restrictions), enabling models like GLM 4.7 with irregular head ratios — yielding **2.92× throughput** for single-token decode.
+
+### Handling Irregular Global Memory Accesses
+
+The original FA4 uses the **Tensor Memory Accelerator (TMA)** for loading tiles via `cp.async.bulk`. TMA excels at large, regular affine memory accesses but struggles with small or scattered loads — exactly what KV cache retrieval produces, especially with small page sizes. Modal added `cp.async`-based load paths:
+
+- **Arbitrary KV page sizes** (`page_size = 1`): TMA required pages to match tile size (128), causing severe internal fragmentation (>99% for single-token pages). Modal's `cp.async` path decouples page size from tile size. A key optimization was **transposing address generation**: instead of each thread redundantly computing its own row pointer (expensive 64-bit int ops), threads in different warp "columns" precompute pointers and share them via warp shuffles, achieving up to **2.40× throughput** for `page_size=1`.
+- **FP8 support** (`dtype = 'fp8'`): Added e4m3/e5m2 8-bit float inputs, reducing memory and arithmetic bandwidth demand. Speedup reaches **1.16×** over BF16 baseline. The gain is less than the theoretical 2× because the softmax still runs at higher precision on CUDA Cores/SFUs.
+
+### Signature Config
+
+The "canonical" inference configuration combining all optimizations:
+```
+dtype = 'fp8', num_splits = 0, pack_gqa = True, q_stage = 1, page_size = 1
+```
+
+**Authors**: Charles Frye, Timothy Feng, David Wang (Modal). All contributions merged upstream into the [Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention) repository between November 2025 and April 2026.
+
 ## Performance
 
 - **1605 TFLOPs/s** at 71% utilization on B200 (BF16)
@@ -119,10 +148,11 @@ The Modal team emphasized that FA4's architecture is understandable to general s
 - [Code: Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention)
 - [Together AI Blog: FlashAttention-4 announcement](https://www.together.ai/blog/flashattention-4) (March 5, 2026)
 - [Modal Blog: We reverse-engineered Flash Attention 4](https://modal.com/blog/reverse-engineer-flash-attention-4) (September 26, 2025)
+- [Modal Blog: Making FlashAttention-4 faster for inference](https://modal.com/blog/flash-attention-4-faster) (June 11, 2026)
 - [HN Discussion of Modal reverse-engineering](https://news.ycombinator.com/item?id=45399637)
 
 ## See Also
 
 - [[concepts/flash-attention]] — Original FlashAttention (Dao et al., 2022)
 - [[concepts/blackwell-gpu]] — NVIDIA Blackwell architecture
-- [[entities/charles-frye]] — Reverse-engineered FA4, Modal blog post author
+- [[entities/charles-frye]] — Reverse-engineered FA4 and led inference optimization contributions (Modal)

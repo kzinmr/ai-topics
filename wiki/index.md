@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-12 | Total pages: 2480 | Indexed entries: 2037 | Concepts: 1683 | Entities: 784
+> Last updated: 2026-06-12 | Total pages: 2490 | Indexed entries: 2057 | Concepts: 1674 | Entities: 786
 
-## Entities (782 pages)
+## Entities (786 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -805,7 +805,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1682 pages)
+## Concepts (1674 pages)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/abliteration]] — Abliteration: Mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. 3,500+ decensored models, 13M downloads. Automated by Heretic tool. Affects Llama, Gemma, Nemotron.
@@ -1017,6 +1017,7 @@
 - [[concepts/training-infra/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling: Profiling techniques for GPU memory optimization.
 - [[concepts/ai-lab-subscription-vs-api-economics]] — AI Lab Subscription vs API Economics — Empirical analysis of subscription utilization vs API margins. SemiAnalysis finding: $200/mo plans far more generous than $2,000 API-equivalent assumption. Labs likely to gate new models/features from subscriptions rather than cap usage. Mythos as API-only test case.
 - [[concepts/ai-labor-displacement]] — AI Labor Displacement & Economic Impact — "Hypergrowth, hyper-inequality" thesis. Amodei framework: measurement/tracking, pro-employment incentives (wage insurance, retention tax credits), long-term support (UBI). Enduring job displacement as intrinsic property of AI. International macroeconomic cooperation proposed.
+- [[concepts/ai-liability-section-230]] — AI Liability and Section 230 — Whether Section 230 of the Communications Decency Act shields AI companies from liability for AI-generated content. German court ruling (June 2026) classifies AI output as the company's own speech, not protected third-party content. Congressional interest, Sam Altman's 2023 testimony, implications for hallucination liability.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design philosophy comparison: chat vs coding agents
 - [[concepts/ai-military]] — AI in Military Wargames
 - [[concepts/ai-native-product-localization]] — AI-Native Product Localization — Using AI agents for product localization. Sierra case study: 10-person/9–12 month Slack project reduced to 1 engineer/4 months. Three-phase evolution (IDE→Cloud→Batch). Context window coevolution pitfall. Dynamic string description generation.

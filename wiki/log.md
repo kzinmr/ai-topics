@@ -1,4 +1,30 @@
-## [2026-06-12] Blog wiki ingest — Claude Fable 5 proactive debugging, Siri AI EU DMA delay, George Hotz deflation
+## [2026-06-12 11:04 UTC] Active Crawl — 3 pages created/enriched, 6 raw articles saved
+
+**Trend sources**: HN Algolia (2,603 pts on Claude Fable 5), X/Twitter trending, blogwatcher DB, wiki gap analysis. Dominant theme: Anthropic Claude Fable 5 launch + invisible guardrail controversy.
+
+**Enriched**: [[concepts/claude/fable-5]] — Added Anthropic's formal apology and policy walk-back (The Verge, June 11), Jon Ready's "sabotage" supply-chain risk analysis, Simon Willison's "relentlessly proactive" follow-up, and Public Reception section with HN stats (4 threads, ~4,800+ points total).
+**Source**: raw/articles/2026-06-10_theverge_anthropic-apologizes-invisible-claude-fable-guardrails.md, raw/articles/2026-06-10_jonready_claude-fable5-hidden-guardrails-sabotage.md
+
+**Enriched**: [[concepts/flash-attention-4]] — Added Inference Optimization section (Modal, June 2026) covering decode-phase challenges, split-KV parallelism (up to 4.37×), single query tile mode (up to 3.06×), GQA packing (up to 2.92×), cp.async irregular memory handling, FP8 support, and page_size=1 for KV cache.
+**Source**: raw/articles/2026-06-11_modal_flashattention-4-faster-inference.md
+
+**Created**: [[concepts/ai-liability-section-230]] — New concept page on Section 230 and AI company liability. Covers German court ruling (June 2026) holding Google liable for AI Overviews as "content provider," Sam Altman's 2023 Senate testimony, bipartisan sunset-230 bill, hallucination liability calculus, and structural incentive shift for frontier AI companies.
+**Source**: raw/articles/2026-06-11_garymarcus_section-230-doesnt-shield-ai.md
+
+**Raw articles saved** (6 total):
+- raw/articles/2026-06-11_simonwillison_claude-fable-relentlessly-proactive.md
+- raw/articles/2026-06-10_jonready_claude-fable5-hidden-guardrails-sabotage.md
+- raw/articles/2026-06-10_theverge_anthropic-apologizes-invisible-claude-fable-guardrails.md
+- raw/articles/2026-06-11_modal_flashattention-4-faster-inference.md
+- raw/articles/2026-06-11_garymarcus_section-230-doesnt-shield-ai.md
+- raw/articles/2026-06-11_ai-engineer_webmcp-agent-ready-web.md (YouTube — text extraction blocked)
+**Coverage gaps identified**: inference-infra (PARTIAL), ai-regulation (PARTIAL), mcp (PARTIAL), multimodal (PARTIAL)
+
+## [2026-06-12] Created concept page: AI Liability and Section 230
+
+- **🆕 Created [[concepts/ai-liability-section-230]]** — New concept page covering whether Section 230 of the Communications Decency Act shields AI companies from liability for AI-generated content. Key topics: Section 230 basics, the AI liability question ("content provider" vs. "platform"), Sam Altman's 2023 Senate testimony, German court ruling (June 2026) holding Google liable for AI Overviews, bipartisan sunset-230 bill, implications for frontier AI (hallucination liability, Claude Fable 5 guardrails, RSI suppression), and structural shift in AI industry incentives. Cross-links to google-ai-overviews-liability, ai-regulation-2026, eu-ai-act, agent-safety-incidents-open-source, agentic-ai-governance, and ai-safety. Sourced from Gary Marcus's June 11, 2026 Substack analysis and the German court ruling sources.
+
+
 
 Processed 2 take + 2 reference decisions from blog-triage checkpoint (14 candidates):
 
