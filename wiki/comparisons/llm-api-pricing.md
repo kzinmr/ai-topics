@@ -93,7 +93,7 @@ These models are primarily available via Chinese cloud platforms (DashScope, Vol
 | Zhipu | GLM-5-Turbo | Frontier | $1.20 | $4.00 | $0.24 | 262K | [zhipu](https://docs.z.ai/guides/overview/pricing) |
 | Zhipu | GLM-5 | Mid | $1.00 | $3.20 | $0.20 | 203K | [zhipu](https://docs.z.ai/guides/overview/pricing) |
 | Zhipu | GLM-5V-Turbo | Vision | $1.20 | $4.00 | $0.24 | 128K | [zhipu](https://docs.z.ai/guides/overview/pricing) |
-| Moonshot | Kimi K2 | Mid | $0.28 | $1.39 | $0.083 | 128K | [kimi](https://platform.kimi.com/docs/pricing/chat) |
+| Moonshot | Kimi K2.6 | Mid | $0.67 | $3.39 | — | 262K | [openrouter](https://openrouter.ai/moonshotai/kimi-k2.6) |
 | MiniMax | MiniMax M3 | Mid | $0.30 | $1.20 | — | 1M | [openrouter](https://openrouter.ai/minimax/minimax-m3) |
 | Qwen | Qwen3 Plus | Mid | ~$0.50 | ~$2.00 | — | 128K | [dashscope](https://help.aliyun.com/zh/model-studio/) |
 | ByteDance | Doubao 1.5 Pro | Mid | ~$0.40 | ~$1.20 | — | 128K | [volcengine](https://www.volcengine.com) |
@@ -368,7 +368,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 | 2026-06-09 | Initial creation | User-provided CSV + wiki entity pages |
 | 2026-06-11 | Added Claude Fable 5 ($10/$50 MTok); new "Ultra-Premium" tier | Anthropic blog |
 | 2026-06-11 | Corrected GPT-5.5 pricing ($5/$30 not ~$1.25/$10); added GPT-5.4/5.4-mini/5.4-nano full lineup; updated OpenAI cache from 50% to 90% (GPT-5.x); moved GPT-5.1/5.2/5 to Legacy | [openai.com](https://developers.openai.com/api/docs/pricing) |
-| 2026-06-12 | Removed `~` from Claude Sonnet 4.6 (verified $3/$15); added Gemini 3.1 Flash Lite ($0.25/$1.50); fixed Xiaomi MiMo-V2.5-Pro ($0.80/$3.20, cache $0.16); updated Hy3 Preview ($0.063/$0.21, 256K); added Qwen3.7-Max/Plus; updated GLM-5 ($1.00/$3.20), added GLM-5.1 ($1.40/$4.40), GLM-5-Turbo ($1.20/$4.00), GLM-5V-Turbo ($1.20/$4.00 vision); updated Kimi K2 ($0.28/$1.39); added MiniMax M3 ($0.30/$1.20) | [zhipu](https://docs.z.ai/guides/overview/pricing), [kimi](https://platform.kimi.com/docs/pricing/chat), [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
+| 2026-06-12 | Removed `~` from Claude Sonnet 4.6 (verified $3/$15); added Gemini 3.1 Flash Lite ($0.25/$1.50); fixed Xiaomi MiMo-V2.5-Pro ($0.80/$3.20, cache $0.16); updated Hy3 Preview ($0.063/$0.21, 256K); added Qwen3.7-Max/Plus; updated GLM-5 ($1.00/$3.20), added GLM-5.1 ($1.40/$4.40), GLM-5-Turbo ($1.20/$4.00), GLM-5V-Turbo ($1.20/$4.00 vision); updated Kimi K2→K2.6 ($0.67/$3.39, 262K); added MiniMax M3 ($0.30/$1.20) | [zhipu](https://docs.z.ai/guides/overview/pricing), [openrouter](https://openrouter.ai/moonshotai/kimi-k2.6), [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
 
 ---
 
