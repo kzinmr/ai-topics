@@ -26,6 +26,16 @@ sources:
   - https://testtimescaling.github.io/
   - https://openai.com/index/introducing-o3-and-o4-mini/
   - raw/articles/2026-06-09_x-article_implications-of-large-scale-test-time-compute.md
+  - raw/articles/2026-04-09_sheriyuo_test-time-scaling-training-free-rl.md
+  - raw/articles/2026-06-01_sheriyuo_rl-for-test-time-scaling.md
+  - https://arxiv.org/abs/2601.21484
+  - https://arxiv.org/abs/2506.07976
+  - https://arxiv.org/abs/2510.14901
+  - https://arxiv.org/abs/2601.21590
+  - https://arxiv.org/abs/2601.14209
+  - https://arxiv.org/abs/2601.18779
+  - https://arxiv.org/abs/2502.12118
+  - https://arxiv.org/abs/2503.07572
 related:
   - scaling-hypothesis
   - scaling-laws
@@ -36,6 +46,9 @@ related:
   - reasoning
   - rlm
   - speculative-decoding
+  - training-free-rl
+  - test-time-interaction-scaling
+  - on-policy-distillation
 ---
 
 # Test-Time Scaling
@@ -279,6 +292,31 @@ Nearly two years after the o1 announcement (September 2024) demonstrated that re
 
 ## Open Questions
 
+## Training-Free RL: Approximating RL at Inference Time
+
+A major research direction is achieving RL-like improvements **without updating model weights** — using inference-time sampling to approximate the RL-optimal distribution. Key approaches:
+
+- **Power Sampling** (MCMC-based): Random prefix cutting + token resampling to approximate sampling from the sharpened distribution. Power Sampling v2 (ICML'26) adds look-ahead guidance for ~10× speedup.
+- **ETS** (Energy-Guided Test-Time Scaling): Decomposes the RLHF optimal distribution into a posterior transition + energy term, enabling Gibbs-like sampling that converges to the RL target. Outperforms GRPO-trained models on reasoning/math/code benchmarks. [Paper](https://arxiv.org/abs/2601.21484) / [Code](https://github.com/sheriyuo/ETS)
+
+However, fundamental limits exist: verifier-free approaches suffer an **Ω(√H) asymptotic disadvantage** vs verifier-based ones ([ICML'25 Spotlight](https://arxiv.org/abs/2506.07976)), and intrinsic rewards (majority-voting, entropy) hit a **model collapse ceiling** ([ICLR'26](https://arxiv.org/abs/2510.14901)).
+
+→ See [[training-free-rl]] for full treatment.
+
+## RL for Test-Time Scaling: Training Models to Use Inference Compute
+
+The complementary direction: instead of making TTS training-free, **train models specifically to leverage test-time compute**:
+
+| Method | Key Idea | Venue |
+|--------|----------|-------|
+| **MRT** | Progress reward ΔP(success) per reasoning chunk; 2–3× efficiency gains | ICML'25 Spotlight |
+| **e3** | Train in-context exploration as a skill; 2× extrapolation beyond training length | ICLR'26 |
+| **Privileged Exploration** | Oracle prefix for hard problems; pass@1 → 58% | — |
+| **InT** | Step-level credit assignment from failed traces; +10pts over plain RL | ICLR'26 |
+| **TTI** | Interaction-scaling > thought-scaling for agents | NeurIPS'25 Best Paper |
+
+→ See [[test-time-interaction-scaling]] for the agent-specific TTI paradigm.
+
 1. **What is the ceiling?** Does test-time compute scaling hit a wall, or does it follow a power law like training-time scaling?
 2. **Verifier quality**: How good does a verifier need to be for search to beat simpler strategies?
 3. **Distillation**: Can we distill test-time compute gains back into a faster model? (o4-mini suggests yes)
@@ -304,3 +342,6 @@ The techniques described above (CoT, self-consistency, Best-of-N, beam search) a
 - [[concepts/nvidia-vera-rubin]] — Hardware platform optimized for test-time compute workloads
 - [[rlm]] — Recursive Language Models applying test-time scaling recursively
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-agent systems as structured test-time scaling
+- [[training-free-rl]] — Approximating RL at inference time (ETS, Power Sampling)
+- [[test-time-interaction-scaling]] — Interaction-scaling for agentic tasks (TTI)
+- [[on-policy-distillation]] — SDFT, SDPO as the complementary training direction

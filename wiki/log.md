@@ -1,3 +1,22 @@
+## [2026-06-12] Ingested Xiuyu Li's TTS & Training-Free RL X Article Series
+
+**Source 1**: https://x.com/sheriyuo/status/2042072816712085577 (2026-04-09, X Article)
+**Source 2**: https://x.com/sheriyuo/status/2061382777623519284 (2026-06-01, X Article)
+**Author**: Xiuyu Li (@sheriyuo) — RUC undergrad, RL/optimization/dLLM researcher
+
+**Created**:
+- `raw/articles/2026-04-09_sheriyuo_test-time-scaling-training-free-rl.md` (type: x_article)
+- `raw/articles/2026-06-01_sheriyuo_rl-for-test-time-scaling.md` (type: x_article)
+- `concepts/training-free-rl.md` — Training-Free RL: ETS, Power Sampling, MCMC, self-evolving, fundamental limits
+- `concepts/test-time-interaction-scaling.md` — TTI: interaction-scaling > thought-scaling for agents (NeurIPS'25 Best Paper)
+
+**Updated**:
+- `entities/xiuyu-li.md` — Added TTS/Training-Free RL series to Notable Contributions + sources + tags
+- `concepts/test-time-scaling.md` — Added Training-Free RL + RL-for-TTS sections, new sources, related pages
+- `index.md` — Added 4 new page entries (2 raw + 2 concepts), updated xiuyu-li entity entry
+
+---
+
 ## [2026-06-12] Ingested Peter Wang's "Building a Good Vertical Agent" X Article
 
 **Source**: https://x.com/BrainsAndTennis/status/2065190286519906657 (972 bookmarks, 274 likes)
