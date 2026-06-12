@@ -19,7 +19,7 @@ related:
   - "[[concepts/qlora]]"
   - "[[concepts/fsdp-qlora]]"
   - "[[entities/tim-dettmers]]"
-  - "[[concepts/fine-tuning/peft-lora-qlora]]"
+  - "[[concepts/post-training/peft-lora-qlora]]"
   - "[[concepts/llm-int8]]"
   - "[[entities/artidoro-pagnoni]]"
 ---
@@ -189,7 +189,7 @@ Benchmark on T4 16GB GPU:
 - [[concepts/fsdp-qlora]] — FSDP + QLoRA distributed training
 - [[concepts/llm-int8]] — LLM.int8() 8-bit inference
 - [[entities/tim-dettmers]] — bitsandbytes creator
-- [[concepts/fine-tuning/peft-lora-qlora]] — PEFT integration
+- [[concepts/post-training/peft-lora-qlora]] — PEFT integration
 - [[concepts/gguf-quantization]] — CPU/Apple Silicon alternative
 
 ## Sources

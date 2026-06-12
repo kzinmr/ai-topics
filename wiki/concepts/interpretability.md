@@ -13,7 +13,7 @@ tags:
 related:
   - concepts/activation-steering
   - concepts/monosemanticity
-  - concepts/rlhf
+  - concepts/post-training/rlhf
   - concepts/abliteration
   - entities/anthropic
   - entities/thariq-shihipar
@@ -81,7 +81,7 @@ Thariq Shihipar, in "Should Developers Care about Interpretability?" (Nov 2024),
 
 - [[concepts/activation-steering]] — Concrete technique for feature manipulation
 - [[concepts/scaling-hypothesis]] — Trade-off between scale and controllability
-- [[concepts/rlhf]] — Traditional control method; steering aims to complement/replace it
+- [[concepts/post-training/rlhf]] — Traditional control method; steering aims to complement/replace it
 - [[concepts/entropix]] — Adaptive sampling via uncertainty detection
 
 ## References

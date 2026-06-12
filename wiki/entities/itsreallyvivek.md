@@ -16,7 +16,7 @@ sources:
   - https://x.com/itsreallyvivek
   - raw/articles/2026-06-07_itsreallyvivek_rlhf-what-every-programmer-should-know.md
 related:
-  - "[[concepts/rlhf]]"
+  - "[[concepts/post-training/rlhf]]"
 ---
 
 # Vivek (@itsreallyvivek)
@@ -49,5 +49,5 @@ Next in series: DPO explained from scratch.
 
 ## Cross-References
 
-- [[concepts/rlhf]] — The concept page enriched from this article
+- [[concepts/post-training/rlhf]] — The concept page enriched from this article
 - [[concepts/dpo]] — Next article in series (announced)

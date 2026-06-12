@@ -127,10 +127,10 @@ Authored works on **context engineering** — the practice of optimizing LLM con
 
 ## Cross-References
 
-- [[concepts/fine-tuning/pytorch-fsdp]] — Core technology in his FSDP + Q-LoRA tutorial
-- [[concepts/fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning techniques he extensively documents
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF and DPO alignment methods
-- [[concepts/fine-tuning/trl]] — TRL library used in his fine-tuning tutorials
+- [[concepts/post-training/pytorch-fsdp]] — Core technology in his FSDP + Q-LoRA tutorial
+- [[concepts/post-training/peft-lora-qlora]] — Parameter-efficient fine-tuning techniques he extensively documents
+- [[concepts/post-training/rlhf-dpo-preference]] — RLHF and DPO alignment methods
+- [[concepts/post-training/trl]] — TRL library used in his fine-tuning tutorials
 - [[concepts/pytorch-fsdp-distributed-training]] — Distributed training with FSDP
 - [[entities/nathan-lambert]] — Fellow Hugging Face RLHF researcher, co-contributor to Zephyr
 - [[entities/elie-bakouch]] — Hugging Face ML engineer, co-contributor to SmolLM

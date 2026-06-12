@@ -18,7 +18,7 @@ sources:
 related:
   - "[[concepts/gguf-quantization]]"
   - "[[concepts/local-llm/model-quantization]]"
-  - "[[concepts/fine-tuning/quantization-overview]]"
+  - "[[concepts/post-training/quantization-overview]]"
   - "[[concepts/training-infra/gpu-vram-fundamentals]]"
   - "[[concepts/inference/vllm]]"
   - "[[concepts/tensorrt-llm]]"
@@ -389,7 +389,7 @@ from optimum.fx import FxQuantizer             # PyTorch graph-mode quantization
 - [[concepts/bitsandbytes]] — bitsandbytes: NF4/FP4 quantization library, QLoRA backend
 - [[concepts/gguf-quantization]] — GGUF format deep-dive
 - [[concepts/local-llm/model-quantization]] — Local LLM quantization specifics
-- [[concepts/fine-tuning/quantization-overview]] — Fine-tuning quantization
+- [[concepts/post-training/quantization-overview]] — Fine-tuning quantization
 - [[concepts/training-infra/gpu-vram-fundamentals]] — VRAM requirements by quantization
 - [[concepts/inference/vllm]]#TurboQuant — vLLM 2-bit KV cache
 - [[concepts/tensorrt-llm]] — NVIDIA FP8/FP4 inference

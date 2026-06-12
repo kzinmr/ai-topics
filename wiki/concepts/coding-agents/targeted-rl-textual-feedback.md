@@ -13,7 +13,7 @@ sources:
   - raw/articles/2026-06-05_cursor_composer-2-5.md
 related:
   - concepts/rlm-recursive-language-models
-  - concepts/reinforcement-learning
+  - concepts/post-training/reinforcement-learning
   - concepts/synthetic-data
   - entities/cursor-ai
 ---
@@ -62,7 +62,7 @@ An agent attempting a 100-tool-call sequence makes an error in tool call #47 by 
 
 Targeted RL with Textual Feedback builds on and extends several existing paradigms:
 
-- **[[concepts/reinforcement-learning|Reinforcement Learning]]**: Standard RL provides the outer loop — reward signals from full trajectory outcomes.
+- **[[concepts/post-training/reinforcement-learning|Reinforcement Learning]]**: Standard RL provides the outer loop — reward signals from full trajectory outcomes.
 - **RLHF**: Replaces a learned reward model with verifiable outcomes (test passes) and adds per-token distillation targets.
 - **[[concepts/rlm-recursive-language-models|RLM (Recursive Language Models)]]**: Both techniques target RL training for coding agents. RLM focuses on recursive self-improvement loops; Targeted RL focuses on credit assignment within individual long rollouts.
 - **[[concepts/synthetic-data|Synthetic Data]]**: The training tasks themselves are synthetically generated at massive scale (see below).
@@ -134,10 +134,10 @@ The training infrastructure for Targeted RL with Textual Feedback is as sophisti
 ## Cross-References
 
 - [[concepts/rlm-recursive-language-models|RLM (Recursive Language Models)]] — Another RL training paradigm for coding agents
-- [[concepts/reinforcement-learning|Reinforcement Learning]] — Foundational RL concepts
+- [[concepts/post-training/reinforcement-learning|Reinforcement Learning]] — Foundational RL concepts
 - [[concepts/synthetic-data|Synthetic Data]] — Synthetic task generation for training
 - [[entities/cursor-ai|Cursor AI]] — The development platform
-- [[concepts/rlhf|RLHF]] — Related human-feedback training paradigm (external link concept suggestion)
+- [[concepts/post-training/rlhf|RLHF]] — Related human-feedback training paradigm (external link concept suggestion)
 
 ## References
 

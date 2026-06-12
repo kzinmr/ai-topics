@@ -335,7 +335,7 @@ The techniques described above (CoT, self-consistency, Best-of-N, beam search) a
 - [[scaling-hypothesis]] — The broader framework test-time scaling extends
 - [[chain-of-thought]] — The foundational technique for reasoning
 - [[rlvr]] — Reinforcement Learning with Verifiable Rewards, key training method
-- [[concepts/grpo]] — Group Relative Policy Optimization, used for R1 training
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization, used for R1 training
 - [[post-training]] — The middle scaling axis between pre-training and test-time
 - [[reasoning]] — AI reasoning capabilities and benchmarks
 - [[speculative-decoding]] — Complementary technique for faster (not better) inference

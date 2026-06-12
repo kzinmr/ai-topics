@@ -71,7 +71,7 @@ In his May 2026 X article "On SFT, RL, and on-policy distillation," **Will Brown
 - The three paradigms are not competitors but layers in a **post-training stack**
 - On-policy distillation fills a specific niche: dense, on-policy supervision at minimal compute cost
 - The choice of paradigm depends on **environment quality** — with high-quality environments and reward signals, RL still wins for open-ended exploration; with verifiable outcomes (math, code), OPD is the cost-effective choice
-- This extends his earlier **RL-Harness Lifecycle** thesis ([[concepts/rl-harness-lifecycle]]): harnesses create environments → OPD efficiently extracts capabilities from teacher models → RL refines through exploration
+- This extends his earlier **RL-Harness Lifecycle** thesis ([[concepts/post-training/rl-harness-lifecycle]]): harnesses create environments → OPD efficiently extracts capabilities from teacher models → RL refines through exploration
 
 ### The Gradient Geometry of SFT vs RL vs OPD
 
@@ -151,7 +151,7 @@ Lambert and others warn that anti-distillation regulation could backfire:
 
 - [[concepts/multi-teacher-on-policy-distillation]] — MOPD, the frontier distillation technique for post-training
 - [[concepts/coding-agents/gold-diff-distillation]] — Gold-Diff, a distillation variant
-- [[concepts/grpo-rl-training]] — GRPO, the RL framework underlying on-policy distillation
+- [[concepts/post-training/grpo-rl-training]] — GRPO, the RL framework underlying on-policy distillation
 - [[concepts/synthetic-data]] — Synthetic data generation, a key distillation application
 - [[concepts/ai-api-abuse]] — The API exploitation behavior commonly conflated with distillation
 - [[events/distillation-attacks-2026]] — Anthropic's April 2026 accusations against Chinese labs

@@ -22,14 +22,14 @@ sources:
 
 # Multi-Teacher On-Policy Distillation (MOPD)
 
-> **Note**: This page covers the multi-teacher, production-scale evolution of OPD used by 2026 frontier models. For the foundational single-teacher technique introduced by Thinking Machines Lab in Oct 2025, see [[concepts/on-policy-distillation]].
+> **Note**: This page covers the multi-teacher, production-scale evolution of OPD used by 2026 frontier models. For the foundational single-teacher technique introduced by Thinking Machines Lab in Oct 2025, see [[concepts/post-training/on-policy-distillation]].
 
 **Multi-Teacher On-Policy Distillation (MOPD)** is a post-training primitive that emerged in 2026 as the standard solution to the *"see-saw problem"* in LLM post-training — where specializing in one area (e.g., Math RL) degrades performance in others (e.g., open-ended writing). It samples trajectories from the student model and matches one or more teacher distributions via **reverse KL divergence**, providing dense, token-level supervision within a GRPO-like training loop.
 
 ## Core Concept: From GRPO to OPD
 
 ### The Mathematical Shift
-In standard [[concepts/grpo-rl-training|GRPO]], the advantage $A_{i,t}$ is calculated relative to a group mean. In **On-Policy Distillation (OPD)**, the advantage is replaced by the log-ratio between student and teacher:
+In standard [[concepts/post-training/grpo-rl-training|GRPO]], the advantage $A_{i,t}$ is calculated relative to a group mean. In **On-Policy Distillation (OPD)**, the advantage is replaced by the log-ratio between student and teacher:
 
 $$A_{i,t} = \text{sg} \left[ \log \frac{\pi_{\text{train}}(y_{i,t} | x, y_{i,<t}; \theta)}{\pi_{\text{infer}}(y_{i,t} | x, y_{i,<t}; \theta_{\text{teacher}})} \right]$$
 
@@ -85,7 +85,7 @@ Standard RL recovery causes **length bias** (short completions finish, long ones
 - **Future:** **Black-box distillation** (API-only teachers) and **Teacher-student co-evolution** (iterative loops where student becomes next generation's teacher)
 
 ## Related Concepts
-- [[concepts/grpo-rl-training]] — the RL framework OPD evolved from
+- [[concepts/post-training/grpo-rl-training]] — the RL framework OPD evolved from
 - [[model-distillation]] — broader category of distillation techniques
 - [[reinforcement-fine-tuning]] — alternative post-training approach using production traces
-- [[concepts/rlhf]] — earlier preference-based alignment paradigm
+- [[concepts/post-training/rlhf]] — earlier preference-based alignment paradigm

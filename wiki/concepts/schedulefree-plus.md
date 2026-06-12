@@ -61,7 +61,7 @@ All quantities EMA-smoothed (coefficient 0.9). Fully eliminates manual learning-
 ## Relationship to Other Methods
 
 - Contrasts with [[concepts/lora|LoRA]]/[[concepts/peft|PEFT]] — ScheduleFree+ is about training efficiency, not parameter efficiency
-- Complements [[concepts/grpo-rl-training|GRPO]]/[[concepts/rlhf|RLHF]] post-training by improving pretraining efficiency
+- Complements [[concepts/post-training/grpo-rl-training|GRPO]]/[[concepts/post-training/rlhf|RLHF]] post-training by improving pretraining efficiency
 - Provides theoretical foundation for [[concepts/model-averaging|model averaging]] and checkpoint merging during pretraining
 
 ## Related

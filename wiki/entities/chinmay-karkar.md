@@ -83,9 +83,9 @@ Built a domain-adapted LLM for JEE Main math achieving **90.2% accuracy (+35.5 p
 
 ## Related Pages
 
-- [[concepts/on-policy-distillation]] — Core OPD concept
-- [[concepts/on-policy-self-distillation]] — OPSD concept
+- [[concepts/post-training/on-policy-distillation]] — Core OPD concept
+- [[concepts/post-training/on-policy-self-distillation]] — OPSD concept
 - [[concepts/multi-teacher-on-policy-distillation]] — MOPD concept
 - [[concepts/opd-failure-modes]] — OPD failure modes analysis
 - [[concepts/model-distillation]] — General distillation category
-- [[concepts/grpo-rl-training]] — GRPO training method
+- [[concepts/post-training/grpo-rl-training]] — GRPO training method

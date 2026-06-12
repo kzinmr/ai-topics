@@ -21,7 +21,7 @@ sources:
 related:
   - "[[concepts/societal-shadow]]"
   - "[[concepts/linguistic-vertigo]]"
-  - "[[concepts/rlhf]]"
+  - "[[concepts/post-training/rlhf]]"
   - "[[entities/qiaochu-yuan]]"
 updated: 2026-05-26
 ---

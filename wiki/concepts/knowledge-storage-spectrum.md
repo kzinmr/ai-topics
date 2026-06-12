@@ -90,7 +90,7 @@ Knowledge is distilled into model parameters through gradient-based optimization
 - **Strengths**: Global influence, no per-request overhead, highest expressiveness ceiling
 - **Weaknesses**: Catastrophic forgetting risk, slow iteration, hard to undo specific knowledge
 - **When to use**: Stable domain knowledge, style/behavior shaping, capability injection
-- **Key development**: [[concepts/grpo|GRPO]] and parameter-efficient methods ([[concepts/fine-tuning/peft-lora-qlora|LoRA]]) are reducing the cost barrier
+- **Key development**: [[concepts/post-training/grpo|GRPO]] and parameter-efficient methods ([[concepts/post-training/peft-lora-qlora|LoRA]]) are reducing the cost barrier
 
 ### 2. KV Cache (Prompt Caching / Persistent KV / CAG)
 

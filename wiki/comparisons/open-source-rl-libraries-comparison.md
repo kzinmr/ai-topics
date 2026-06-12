@@ -28,16 +28,16 @@ RL is the core technology for post-training. Following DeepSeek-R1's emergence o
 
 | Library | Developer | Initial Release | ⭐ Stars | 👥 Contributors | Primary Target |
 |-----------|--------|-------------|---------|---------------|------------|
-| [[concepts/fine-tuning/trl\|TRL]] | Hugging Face | 2023-01 | 15.3k | 391 | RLHF, Reasoning |
+| [[concepts/post-training/trl\|TRL]] | Hugging Face | 2023-01 | 15.3k | 391 | RLHF, Reasoning |
 | [[concepts/hybrid-flow\|Verl]] | ByteDance | 2024-11 | 12.9k | 351 | RLHF, Reasoning, Agents |
-| [[concepts/openrlhf\|OpenRLHF]] | Community | 2023-07 | 7.8k | 79 | RLHF |
-| [[concepts/verifiers-rl\|Verifiers]] | Community | 2025-02 | 2.9k | 26 | Reasoning, Agents |
-| [[concepts/areal\|AReaL]] | Ant Group | 2025-02 | 2.5k | 31 | RLHF, Reasoning, Agents |
-| [[concepts/ragen\|RAGEN]] | Community | 2025-01 | 2.3k | 16 | Agents |
-| [[concepts/roll-rl\|ROLL]] | Alibaba | 2025-05 | 1.9k | 32 | RLHF, Reasoning, Agents |
-| [[concepts/slime-rl\|slime]] | Z.ai / Tsinghua | 2025-06 | 1.5k | 33 | Agents |
-| [[concepts/nemo-rl\|NeMo-RL]] | NVIDIA | 2025-03 | 0.8k | 55 | RLHF, Reasoning, Agents |
-| [[concepts/skyrl\|SkyRL]] | UC Berkeley | 2025-06 | 0.8k | 18 | Agents |
+| [[concepts/post-training/openrlhf\|OpenRLHF]] | Community | 2023-07 | 7.8k | 79 | RLHF |
+| [[concepts/post-training/verifiers-rl\|Verifiers]] | Community | 2025-02 | 2.9k | 26 | Reasoning, Agents |
+| [[concepts/post-training/areal\|AReaL]] | Ant Group | 2025-02 | 2.5k | 31 | RLHF, Reasoning, Agents |
+| [[concepts/post-training/ragen\|RAGEN]] | Community | 2025-01 | 2.3k | 16 | Agents |
+| [[concepts/post-training/roll-rl\|ROLL]] | Alibaba | 2025-05 | 1.9k | 32 | RLHF, Reasoning, Agents |
+| [[concepts/post-training/slime-rl\|slime]] | Z.ai / Tsinghua | 2025-06 | 1.5k | 33 | Agents |
+| [[concepts/post-training/nemo-rl\|NeMo-RL]] | NVIDIA | 2025-03 | 0.8k | 55 | RLHF, Reasoning, Agents |
+| [[concepts/post-training/skyrl\|SkyRL]] | UC Berkeley | 2025-06 | 0.8k | 18 | Agents |
 
 ## Architecture Comparison
 
@@ -104,10 +104,10 @@ New generation (2025):
 
 ## Related Pages
 
-- [[concepts/grpo]] — GRPO algorithm details
+- [[concepts/post-training/grpo]] — GRPO algorithm details
 - [[concepts/deepseek-r1]] — Original paper introducing GRPO
-- [[concepts/post-training]] — Post-training overview
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF/DPO methods
+- [[concepts/post-training/post-training]] — Post-training overview
+- [[concepts/post-training/rlhf-dpo-preference]] — RLHF/DPO methods
 - [[concepts/hybrid-flow]] — veRL's HybridFlow architecture
-- [[concepts/fine-tuning/trl]] — TRL implementation details and code examples
-- [[concepts/hands-on-modern-rl]] — Hands-On Modern RL curriculum for learning these algorithms
+- [[concepts/post-training/trl]] — TRL implementation details and code examples
+- [[concepts/post-training/hands-on-modern-rl]] — Hands-On Modern RL curriculum for learning these algorithms

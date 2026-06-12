@@ -45,7 +45,7 @@ See [[concepts/agents-mcp-rl-course]] for full course details.
 - [[concepts/agents-mcp-rl-course]] — Their joint Maven course
 - [[entities/openpipe]] — Corbitt's company (RL post-training)
 - [[concepts/agentic-rl]] — Core topic of the course
-- [[concepts/grpo-rl-training]] — Key RL algorithm taught
+- [[concepts/post-training/grpo-rl-training]] — Key RL algorithm taught
 - [[entities/prime-intellect]] — Partner organization providing GPU credits
 
 ## Sources

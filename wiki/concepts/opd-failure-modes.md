@@ -17,8 +17,8 @@ sources:
   - https://arxiv.org/abs/2603.25562
   - https://arxiv.org/abs/2604.16830
 related:
-  - concepts/on-policy-distillation
-  - concepts/on-policy-self-distillation
+  - concepts/post-training/on-policy-distillation
+  - concepts/post-training/on-policy-self-distillation
   - entities/chinmay-karkar
 ---
 
@@ -78,6 +78,6 @@ This object captures skill without overfitting to one hint realization. Shared-r
 
 ## Related Pages
 
-- [[concepts/on-policy-distillation]] — Core OPD concept
-- [[concepts/on-policy-self-distillation]] — OPSD concept
+- [[concepts/post-training/on-policy-distillation]] — Core OPD concept
+- [[concepts/post-training/on-policy-self-distillation]] — OPSD concept
 - [[entities/chinmay-karkar]] — Survey author

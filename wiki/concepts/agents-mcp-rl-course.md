@@ -213,19 +213,19 @@ This course is not just educational content — it is a **strategic onboarding p
 W&B Pro (1-year included) provides the **observability layer** — tracking RL training runs, comparing reward curves, and debugging agent behavior. The course integrates W&B as the standard experiment tracking tool.
 
 ### The RL-Harness Lifecycle
-This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents emerge from a co-evolutionary cycle between harness engineering and RL training. The course teaches both sides — MCP tool design (harness) and GRPO optimization (RL) — as complementary skills, not separate disciplines.
+This course embodies the [[concepts/post-training/rl-harness-lifecycle]] thesis: strong agents emerge from a co-evolutionary cycle between harness engineering and RL training. The course teaches both sides — MCP tool design (harness) and GRPO optimization (RL) — as complementary skills, not separate disciplines.
 
 ### Connection to the Broader Ecosystem
 - [[concepts/agentic-search]] — Search-as-agent paradigm (related course: [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
-- [[concepts/grpo-rl-training]] — The specific RL algorithm taught in this course
+- [[concepts/post-training/grpo-rl-training]] — The specific RL algorithm taught in this course
 - [[concepts/agent-evaluation]] — Evaluation methodology for RL reward signals
 - [[concepts/context-engineering|Context Engineering]] — Agent context design patterns (MCP, tool schemas)
 
 ## Key Concepts Covered
 
 - [[concepts/agentic-rl]] — Applying RL to train LLM agents
-- [[concepts/grpo-rl-training]] — Group Relative Policy Optimization
-- [[concepts/grpo-infrastructure]] — VRAM math, GPU architecture, LoRA, async RL
+- [[concepts/post-training/grpo-rl-training]] — Group Relative Policy Optimization
+- [[concepts/post-training/grpo-infrastructure]] — VRAM math, GPU architecture, LoRA, async RL
 - [[concepts/evaluation/reward-engineering]] — Reward function design for agent RL training
 - [[concepts/evaluation/lm-as-judge-reward-signal]] — LM-as-judge evaluation methodology for RL rewards (see also [[concepts/evaluation/llm-as-judge]])
 - [[concepts/harness-engineering/agent-design-patterns]] — Model selection, tool calling, async patterns
@@ -262,7 +262,7 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 
 **LLM-as-Policy Mapping**: State = token sequence so far; Action = next token; Policy = next-token distribution; Reward = eval score. Natural mapping but requires careful tool design as foundation.
 
-**GRPO Batch Structure**: B=4 unique prompts × G=8 rollouts per prompt = 32 total completions per batch. Smaller groups (4 rollouts) work well in practice. Temperature MUST be 1 (mandatory). See [[concepts/grpo-rl-training]] and [[concepts/grpo-infrastructure]].
+**GRPO Batch Structure**: B=4 unique prompts × G=8 rollouts per prompt = 32 total completions per batch. Smaller groups (4 rollouts) work well in practice. Temperature MUST be 1 (mandatory). See [[concepts/post-training/grpo-rl-training]] and [[concepts/post-training/grpo-infrastructure]].
 
 **ART Training Loop**: `TrainableModel` (Qwen 2.5 14B) → `LocalBackend()` (vLLM) → `backend.register(model)` → iterate dataset → `model.train(groups)`. Remote H100 execution via SkyPilot. See [[entities/openpipe]].
 
@@ -313,8 +313,8 @@ This course embodies the [[concepts/rl-harness-lifecycle]] thesis: strong agents
 - [[transcripts/2025-07-03_willbrown_agents-mcp-rl-office-hours-week3]] — Office Hours (Week 3) transcript
 - [[raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6]] — Lesson 6: Training Agents with GRPO
 - [[transcripts/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6-lecture]] — Lesson 6 transcript
-- [[concepts/grpo-rl-training]] — Key RL algorithm taught in the course
-- [[concepts/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
+- [[concepts/post-training/grpo-rl-training]] — Key RL algorithm taught in the course
+- [[concepts/post-training/rl-harness-lifecycle]] — Brown's framework for agent-RL co-evolution
 - [[concepts/agentic-search]] — Related: agentic retrieval patterns (see also [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
 
 ## Supplementary Reading

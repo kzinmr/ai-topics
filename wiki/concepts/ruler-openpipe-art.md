@@ -122,7 +122,7 @@ for traj in judged_group.trajectories:
 
 ## Related
 
-- [[concepts/grpo]] — GRPO is the RL algorithm that RULER's scores feed into
-- [[concepts/rlvr]] — RLVR handles verifiable tasks; RULER extends to non-verifiable
+- [[concepts/post-training/grpo]] — GRPO is the RL algorithm that RULER's scores feed into
+- [[concepts/post-training/rlvr]] — RLVR handles verifiable tasks; RULER extends to non-verifiable
 - [[concepts/system-prompt-learning]] — The theoretical framework RULER operationalizes
 - [[entities/corbett]] — Kyle Corbitt, OpenPipe founder

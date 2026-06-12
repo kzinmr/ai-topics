@@ -97,6 +97,6 @@ Willison's signature evaluation: "Generate an SVG of a pelican riding a bicycle.
 
 - [[entities/simon-willison|Simon Willison]] — author, Django co-creator
 - [[entities/openclaw|OpenClaw]] — always-on personal AI assistant
-- [[concepts/rlvr|RLVR]] — Reinforcement Learning from Verifiable Rewards
+- [[concepts/post-training/rlvr|RLVR]] — Reinforcement Learning from Verifiable Rewards
 - [[entities/openai-codex|OpenAI Codex]]
 - [[concepts/agentic-engineering|Agentic Engineering]]

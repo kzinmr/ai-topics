@@ -50,8 +50,8 @@ sources:
 | Week | Topic | Key Paper | Related Wiki Concepts |
 |----|---------|-------------|-------------|
 | 4 | Data Curation | Dolma (3T tokens), Phi-1.5 (data quality vs. quantity) | — (data curation concept page not yet created) |
-| 5 | Instruction Tuning | FLAN, Tulu | `concepts/fine-tuning/instruction-fine-tuning` |
-| 6 | Preference Learning | InstructGPT, DPO | `concepts/fine-tuning/rlhf-dpo-preference` |
+| 5 | Instruction Tuning | FLAN, Tulu | `concepts/post-training/instruction-fine-tuning` |
+| 6 | Preference Learning | InstructGPT, DPO | `concepts/post-training/rlhf-dpo-preference` |
 | 7 | Constitutional AI | *Harmlessness from AI Feedback* | `concepts/ai-safety` |
 | 7 | Weak-to-Strong | Weak-to-Strong Generalization | `concepts/ai-safety` (related) |
 
@@ -62,8 +62,8 @@ sources:
 | Week | Topic | Key Paper | Related Wiki Concepts |
 |----|---------|-------------|-------------|
 | 8 | Long Context | RoPE, Long-context training | `concepts/attention-mechanism-variants`, `concepts/kv-cache` |
-| 9 | Reasoning | *Let's Verify Step by Step*, Test-Time Compute Scaling | `concepts/grpo-rl-training` (indirect), `concepts/exec-plans` |
-| 10 | Small Models | Sheared LLaMA, Gemma 2 | `concepts/model-quantization`, `concepts/fine-tuning/quantization-overview` |
+| 9 | Reasoning | *Let's Verify Step by Step*, Test-Time Compute Scaling | `concepts/post-training/grpo-rl-training` (indirect), `concepts/exec-plans` |
+| 10 | Small Models | Sheared LLaMA, Gemma 2 | `concepts/model-quantization`, `concepts/post-training/quantization-overview` |
 | 11 | RAG | *Retrieval from trillions of tokens* | `concepts/agentic-rag` |
 | 12 | Agents | LLM → Autonomous Agents evolution | `concepts/agent-harness`, `concepts/agent-orchestration-frameworks` |
 
@@ -105,8 +105,8 @@ sources:
 - [[concepts/learning-llms-in-2025]] — Yoav Goldberg's comprehensive guide
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — The implementation-focused counterpart
 - [[concepts/gpt/decoder-only]] — The underlying architecture for the entire course
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization (Week 6)
-- [[concepts/grpo-rl-training]] — Follow-up on test-time compute (extension of Week 9)
+- [[concepts/post-training/rlhf-dpo-preference]] — Preference optimization (Week 6)
+- [[concepts/post-training/grpo-rl-training]] — Follow-up on test-time compute (extension of Week 9)
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention (Week 13)
 - [[concepts/agentic-rag]] — RAG (Week 11)
 - [[concepts/security-and-governance/ai-safety]] — Constitutional AI (Week 7)

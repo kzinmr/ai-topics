@@ -15,7 +15,7 @@ aliases:
 related:
   - concepts/pytorch-fsdp
   - concepts/fsdp-qlora
-  - concepts/fine-tuning/peft-lora-qlora
+  - concepts/post-training/peft-lora-qlora
   - entities/phil-schmid
 sources:
   - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md

@@ -207,7 +207,7 @@ Other OpenAI executives left the company in the same period:
 - [[entities/sam-altman]] — OpenAI CEO; co-founder
 - [[entities/ilya-sutskever]] — OpenAI co-founder; former Chief Scientist
 - [[entities/openai]] — Company Brockman co-founded and leads technically
-- [[concepts/rlhf]] — Core alignment technique Brockman champions
+- [[concepts/post-training/rlhf]] — Core alignment technique Brockman champions
 - [[concepts/security-and-governance/ai-safety]] — Engineering-focused safety approach
 
 ## Sources

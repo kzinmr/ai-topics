@@ -45,4 +45,4 @@ Sebastian Raschka is a prominent ML researcher and educator known for his practi
 - [[concepts/qlora]]
 - [[concepts/genai-handbook]] — Evaluated as a top-tier resource
 - [[concepts/fine-tuning]]
-- [[concepts/rlhf-dpo-orpo-kto-preference-optimization]]
+- [[concepts/post-training/rlhf-dpo-orpo-kto-preference-optimization]]

@@ -138,7 +138,7 @@ Fireworks emphasizes **MIT-licensed open-weight models** (DeepSeek V4-Pro, V4-Fl
 - [[entities/meta]] — Co-founders' former employer; PyTorch lineage
 - [[entities/amd]] — Hardware partner alongside NVIDIA for multi-vendor GPU strategy
 - [[entities/paraform]] — Recruiting platform context; Fireworks competes for ML talent
-- [[concepts/reinforcement-fine-tuning]] — RFT methodology detailed
+- [[concepts/post-training/reinforcement-fine-tuning]] — RFT methodology detailed
 - [[concepts/fine-tuning]] — Broader fine-tuning landscape
 - [[concepts/speculative-decoding]] — Inference acceleration via draft models
 - [[concepts/ai-benchmarks/legal-agent-benchmark]] — Harvey LAB benchmark joint research partner (June 2026)

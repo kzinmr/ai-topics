@@ -79,14 +79,14 @@ AI and LLM concept pages organized by topic.
 
 ## Fine-Tuning
 
-- [[concepts/fine-tuning/axolotl]] — Axolotl is a YAML-configured fine-tuning framework supporting 100+ models with LoRA/QLoRA, DPO/KTO/ORPO/GRPO, and multimodal capabilities.
-- [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization — a reinforcement learning approach for fine-tuning language models that compares multiple completions within a group to learn preferred behaviors without requiring 
-- [[concepts/fine-tuning/peft-lora-qlora]] — Full fine-tuning of a 70B model requires hundreds of GBs of GPU memory. PEFT methods reduce this dramatically by:
-- [[concepts/fine-tuning/pytorch-fsdp]] — FSDP enables distributed training of large models by sharding model parameters, gradients, and optimizer states across multiple GPUs.
-- [[concepts/fine-tuning/quantization-overview]] — Quantization reduces model precision (FP32 → FP16 → INT8 → INT4) to decrease memory requirements and improve inference speed with minimal accuracy loss.
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — After Supervised Fine-Tuning (SFT), preference optimization methods align models with human values and desired behaviors. These methods differ in data requirements, complexity, and training stability.
-- [[concepts/fine-tuning/trl]] — TRL is HuggingFace's library for fine-tuning language models with reinforcement learning and preference optimization methods.
-- [[concepts/fine-tuning/unsloth]] — Unsloth is a fine-tuning optimization library providing 2-5x faster training with 50-80% less memory usage through custom Triton kernels and LoRA/QLoRA optimization.
+- [[concepts/post-training/axolotl]] — Axolotl is a YAML-configured fine-tuning framework supporting 100+ models with LoRA/QLoRA, DPO/KTO/ORPO/GRPO, and multimodal capabilities.
+- [[concepts/post-training/grpo-rl-training]] — Group Relative Policy Optimization — a reinforcement learning approach for fine-tuning language models that compares multiple completions within a group to learn preferred behaviors without requiring 
+- [[concepts/post-training/peft-lora-qlora]] — Full fine-tuning of a 70B model requires hundreds of GBs of GPU memory. PEFT methods reduce this dramatically by:
+- [[concepts/post-training/pytorch-fsdp]] — FSDP enables distributed training of large models by sharding model parameters, gradients, and optimizer states across multiple GPUs.
+- [[concepts/post-training/quantization-overview]] — Quantization reduces model precision (FP32 → FP16 → INT8 → INT4) to decrease memory requirements and improve inference speed with minimal accuracy loss.
+- [[concepts/post-training/rlhf-dpo-preference]] — After Supervised Fine-Tuning (SFT), preference optimization methods align models with human values and desired behaviors. These methods differ in data requirements, complexity, and training stability.
+- [[concepts/post-training/trl]] — TRL is HuggingFace's library for fine-tuning language models with reinforcement learning and preference optimization methods.
+- [[concepts/post-training/unsloth]] — Unsloth is a fine-tuning optimization library providing 2-5x faster training with 50-80% less memory usage through custom Triton kernels and LoRA/QLoRA optimization.
 
 ## Local-Llm
 

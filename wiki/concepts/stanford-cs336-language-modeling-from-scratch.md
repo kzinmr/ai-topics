@@ -72,7 +72,7 @@ Listed in Yoav Goldberg's guide as the only course given special treatment for b
 | Implementation Item | What You Learn | Related Wiki Concept |
 |---------|-----------|-------------|
 | Common Crawl Download & Parsing | WARC format, large-scale data pipelines | — |
-| Filtering (Quality, Dedup, PII) | Automated data quality assessment | `concepts/fine-tuning/quantization-overview` (data quality related) |
+| Filtering (Quality, Dedup, PII) | Automated data quality assessment | `concepts/post-training/quantization-overview` (data quality related) |
 | Deduplication (MinHash, exact dedup) | Large-scale data dedup algorithms | — |
 | Training on Filtered Data | Measuring data quality's impact on final model performance | — |
 
@@ -82,9 +82,9 @@ Listed in Yoav Goldberg's guide as the only course given special treatment for b
 
 | Implementation Item | What You Learn | Related Wiki Concept |
 |---------|-----------|-------------|
-| SFT (Supervised Fine-Tuning) | Supervised tuning on math reasoning datasets | `concepts/fine-tuning/instruction-fine-tuning`, `concepts/fine-tuning/trl` |
-| RL for Math Reasoning | GRPO-style reinforcement learning | `concepts/grpo-rl-training`, `concepts/fine-tuning/rlhf-dpo-preference` |
-| DPO (Optional) | Direct Preference Optimization | `concepts/fine-tuning/rlhf-dpo-preference` |
+| SFT (Supervised Fine-Tuning) | Supervised tuning on math reasoning datasets | `concepts/post-training/instruction-fine-tuning`, `concepts/post-training/trl` |
+| RL for Math Reasoning | GRPO-style reinforcement learning | `concepts/post-training/grpo-rl-training`, `concepts/post-training/rlhf-dpo-preference` |
+| DPO (Optional) | Direct Preference Optimization | `concepts/post-training/rlhf-dpo-preference` |
 | Safety Alignment (Supplementary) | Instruction tuning, RLHF safety assurance | `concepts/ai-safety` |
 
 > **Unique value:** You can implement **RL for math reasoning** — a cutting-edge topic as of 2025 — as a course assignment. Understand the difference between GRPO/PPO at the code level, and experience the improvement in reasoning capabilities that SFT alone cannot achieve. A supplementary Safety Alignment PDF is also provided.
@@ -118,10 +118,10 @@ Listed in Yoav Goldberg's guide as the only course given special treatment for b
 - [[concepts/learning-llms-in-2025]] — Yoav Goldberg's comprehensive guide
 - [[concepts/gpt/decoder-only]] — Architecture implemented in Assignment 1
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention implemented in Assignment 2
-- [[concepts/grpo-rl-training]] — RL method implemented in Assignment 5
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization covered in Assignment 5
+- [[concepts/post-training/grpo-rl-training]] — RL method implemented in Assignment 5
+- [[concepts/post-training/rlhf-dpo-preference]] — Preference optimization covered in Assignment 5
 - [[concepts/training-infra/gpu-vram-fundamentals]] — Prerequisite knowledge for Assignment 2
-- [[concepts/fine-tuning/trl]] — HuggingFace TRL used in Assignment 5
+- [[concepts/post-training/trl]] — HuggingFace TRL used in Assignment 5
 
 ---
 

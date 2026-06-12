@@ -105,7 +105,7 @@ Also demonstrated: offline data generation over custom harnesses, ablation of tr
 
 - **SkyRL-Agent / PRIME-RL** — require agents to conform to RL-specific interfaces; Polar eliminates this by working at the API boundary
 - **ECHO RL** — ECHO also targets agent training but via hybrid GRPO + environment world models; Polar is purely proxy-based
-- **[[concepts/grpo-rl-training|GRPO]]** — Polar uses GRPO as its RL algorithm; see the GRPO concept page for broader algorithmic context
+- **[[concepts/post-training/grpo-rl-training|GRPO]]** — Polar uses GRPO as its RL algorithm; see the GRPO concept page for broader algorithmic context
 - **OpenHands** — Polar is built on OpenHands for agent runtime infrastructure
 
 ## Key Innovation: Rollout-as-a-Service
@@ -114,7 +114,7 @@ A long-horizon rollout isn't one job — it's runtime prewarm, agent execution, 
 
 ## See Also
 
-- [[concepts/slime-rl]] — Async RL training framework Polar is designed to pair with
-- [[concepts/grpo-rl-training]] — Group Relative Policy Optimization, the RL algorithm used
-- [[concepts/nemo-rl]] — NVIDIA NeMo RL training stack Polar integrates with
+- [[concepts/post-training/slime-rl]] — Async RL training framework Polar is designed to pair with
+- [[concepts/post-training/grpo-rl-training]] — Group Relative Policy Optimization, the RL algorithm used
+- [[concepts/post-training/nemo-rl]] — NVIDIA NeMo RL training stack Polar integrates with
 - [[entities/claude-code]] — One of the coding harnesses validated with Polar

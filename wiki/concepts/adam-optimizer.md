@@ -12,8 +12,8 @@ tags:
   - training
   - fine-tuning
 related:
-  - concepts/grpo
-  - concepts/fine-tuning/_index
+  - concepts/post-training/grpo
+  - concepts/post-training/_index
   - concepts/pytorch-fsdp
   - concepts/qlora
   - raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md
@@ -92,7 +92,7 @@ AdamW is the de facto standard for large language model training:
 
 - **GPT series**: Uses Adam (β1=0.9, β2=0.95, ε=1e-8)
 - **LLaMA series**: Uses AdamW (β1=0.9, β2=0.95)
-- **DeepSeek**: Uses AdamW (→ [[concepts/grpo|GRPO]] is a separate RL optimization method)
+- **DeepSeek**: Uses AdamW (→ [[concepts/post-training/grpo|GRPO]] is a separate RL optimization method)
 
 For LLM fine-tuning, in addition to AdamW, **8-bit Adam** (bitsandbytes) and **LoRA+AdamW** are used as memory-efficient options (→ [[concepts/qlora|Q-LoRA]]).
 

@@ -14,8 +14,8 @@ aliases:
   - pytorch-fsdp
 related:
   - "[[concepts/training-infra/distributed-training]]"
-  - "[[concepts/fine-tuning/pytorch-fsdp]]"
-  - "[[concepts/fine-tuning/peft-lora-qlora]]"
+  - "[[concepts/post-training/pytorch-fsdp]]"
+  - "[[concepts/post-training/peft-lora-qlora]]"
   - "[[concepts/training-infra/_index]]"
 sources:
   - "https://pytorch.org/docs/stable/fsdp.html"
@@ -106,7 +106,7 @@ fsdp_model = FSDP(
 ## Related Pages
 
 - [[concepts/training-infra/distributed-training]] — Complete distributed training overview
-- [[concepts/fine-tuning/pytorch-fsdp]] — FSDP fine-tuning specifics
+- [[concepts/post-training/pytorch-fsdp]] — FSDP fine-tuning specifics
 - [[concepts/training-infra/gpu-vram-fundamentals]] — Hardware constraints
 - [[concepts/training-infra/_index]] — Parent page
 

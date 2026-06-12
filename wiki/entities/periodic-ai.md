@@ -21,4 +21,4 @@ sources:
 
 ## Related
 - [[entities/sheshansh-agrawal]] — Researcher who presented Periodic's work at ICLR 2026
-- [[concepts/fine-tuning/grpo-rl-training]] — RL methods relevant to Periodic's research
+- [[concepts/post-training/grpo-rl-training]] — RL methods relevant to Periodic's research

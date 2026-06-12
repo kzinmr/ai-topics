@@ -90,6 +90,6 @@ For coding agents like Claude Code and Codex:
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/memory-systems-design-patterns]]
 - [[concepts/knowledge-graph-memory-agents]]
-- [[concepts/reinforcement-learning]]
+- [[concepts/post-training/reinforcement-learning]]
 - [[concepts/gpt/chatgpt-dreaming-memory-system]] — Dreaming: OpenAI's response to these critiques
 - [[comparisons/agent-memory-systems-comparison]] — 5-system architectural comparison

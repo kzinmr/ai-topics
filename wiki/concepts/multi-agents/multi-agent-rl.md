@@ -16,8 +16,8 @@ sources:
   - raw/newsletters/2026-06-08-import-ai-460-reward-hacking-society-rsi-data-from-anthropic-and-rl-based-quadco.md
 related:
   - concepts/reward-hacking
-  - concepts/rlhf
-  - concepts/grpo
+  - concepts/post-training/rlhf
+  - concepts/post-training/grpo
   - concepts/agentic-engineering
   - entities/unitree-robotics
   - entities/anthropic
@@ -70,8 +70,8 @@ Multi-agent RL differs from the single-agent RLHF and GRPO paradigms dominant in
 ## Related Concepts
 
 - [[concepts/evaluation/reward-hacking]] — MARL provides an alternative to reward hacking mitigation through emergent safety
-- [[concepts/rlhf]] — Single-agent RL paradigm that MARL extends
-- [[concepts/grpo]] — Rule-based reward paradigm
+- [[concepts/post-training/rlhf]] — Single-agent RL paradigm that MARL extends
+- [[concepts/post-training/grpo]] — Rule-based reward paradigm
 - [[concepts/agentic-engineering]] — How agents are controlled and orchestrated
 - [[entities/unitree-robotics]] — Humanoid robotics where MARL principles apply
 - [[entities/anthropic]] — Embodied AI research connections

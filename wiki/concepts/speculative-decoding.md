@@ -119,7 +119,7 @@ A speculator trained on the same distribution as the target model achieves accep
 4. Achieve 2-5x inference speedup over standalone target model
 
 ### Relevance for Fine-Tuned Models
-For production deployments where models are fine-tuned on proprietary data, generic speculative decoding often underperforms because the draft model was trained on a different distribution. Custom speculators solve this mismatch. See [[entities/fireworks-ai]] and [[concepts/reinforcement-fine-tuning]].
+For production deployments where models are fine-tuned on proprietary data, generic speculative decoding often underperforms because the draft model was trained on a different distribution. Custom speculators solve this mismatch. See [[entities/fireworks-ai]] and [[concepts/post-training/reinforcement-fine-tuning]].
 
 ## vLLM Implementation
 

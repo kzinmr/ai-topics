@@ -131,10 +131,10 @@ For improving performance, control, and modularity (using small specialized mode
 - **Instruction Fine-tuning** — Trains base model on (instruction, output) pairs to create a helpful assistant
 
 **Related Wiki Pages:**
-- [[concepts/fine-tuning/peft-lora-qlora]] — LoRA/QLoRA details
-- [[concepts/fine-tuning/instruction-fine-tuning]] — Instruction tuning
-- [[concepts/fine-tuning/axolotl]] — Fine-tuning framework
-- [[concepts/fine-tuning/unsloth]] — Fast fine-tuning
+- [[concepts/post-training/peft-lora-qlora]] — LoRA/QLoRA details
+- [[concepts/post-training/instruction-fine-tuning]] — Instruction tuning
+- [[concepts/post-training/axolotl]] — Fine-tuning framework
+- [[concepts/post-training/unsloth]] — Fast fine-tuning
 
 ---
 
@@ -309,7 +309,7 @@ The O'Reilly guide (commonly known as "Applied LLMs") is available at [applied-l
 - [[entities/shreya-shankar]] — Applied LLMs Guide co-author
 - [[concepts/evaluation/evals-for-ai-agents]] — AI agent evaluation (needs expansion)
 - [[concepts/agentic-rag]] — RAG's agentic evolution
-- [[concepts/fine-tuning/peft-lora-qlora]] — PEFT/LoRA/QLoRA
-- [[concepts/fine-tuning/instruction-fine-tuning]] — Instruction tuning
+- [[concepts/post-training/peft-lora-qlora]] — PEFT/LoRA/QLoRA
+- [[concepts/post-training/instruction-fine-tuning]] — Instruction tuning
 - [[concepts/structured-outputs]] — Structured outputs
 - [[concepts/coding-agents/ai-coding-reliability]] — AI coding reliability and guardrails

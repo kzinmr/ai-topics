@@ -60,12 +60,12 @@ The SWE-bench-Verified result is particularly notable — AEM achieves improveme
 | Process Reward Models | Dense (step labels) | Step-level | Task-specific |
 | Auxiliary SSL signals | Dense (auxiliary task) | Variable | Task-specific |
 | GRPO (standard) | None (outcome-only) | Token-level | Cross-task but weaker |
-| [[concepts/rlvr|RLVR]] | Verifiable rewards | Response-level | Domain-constrained |
+| [[concepts/post-training/rlvr|RLVR]] | Verifiable rewards | Response-level | Domain-constrained |
 
 ## Relationship to Other Concepts
 
-- **[[concepts/rlvr]]**: Both operate at the response level with verifiable/sparse rewards. AEM adds adaptive entropy modulation on top, while RLVR focuses on verifiable reward design.
-- **[[concepts/grpo-rl-training]]**: GRPO is one of the base RL algorithms AEM can enhance. AEM's entropy rescaling is complementary to GRPO's group-relative advantage computation.
+- **[[concepts/post-training/rlvr]]**: Both operate at the response level with verifiable/sparse rewards. AEM adds adaptive entropy modulation on top, while RLVR focuses on verifiable reward design.
+- **[[concepts/post-training/grpo-rl-training]]**: GRPO is one of the base RL algorithms AEM can enhance. AEM's entropy rescaling is complementary to GRPO's group-relative advantage computation.
 - **[[concepts/agent-training]]**: AEM addresses a core challenge in training LLM agents — credit assignment across multi-turn interactions.
 
 ## Authors & Affiliation

@@ -15,7 +15,7 @@ tags:
   - world-models
 sources: [raw/articles/2026-03-17_lesswrong_giant-lookup-tables-of-shallow-circuits.md]
 aliases: ["GLUT-of-circuits", "Giant Lookup Table of Circuits", "LLMs as circuits in superposition"]
-related: [concepts/rlhf, concepts/constitutional-ai, concepts/chain-of-thought, concepts/reward-hacking]
+related: [concepts/post-training/rlhf, concepts/constitutional-ai, concepts/chain-of-thought, concepts/reward-hacking]
 ---
 
 # GLUT-of-Circuits — LLMs as Giant Lookup-Tables of Shallow Circuits

@@ -12,7 +12,7 @@ aliases:
   - AI post-training automation
   - automated model improvement
 related:
-  - "concepts/post-training]]"
+  - "concepts/post-training/post-training]]"
   - "entities/thoughtful-lab]]"
   - "concepts/llm-fine-tuning]]"
   - "concepts/research-intuition]]"
@@ -84,7 +84,7 @@ Thoughtful Lab argues that **research intuition is trainable** — built through
 
 ## Related Concepts
 
-- [[concepts/post-training]] — The broader research domain
+- [[concepts/post-training/post-training]] — The broader research domain
 - [[entities/thoughtful-lab]] — The organization that coined and tested the paradigm
 - [[concepts/llm-fine-tuning]] — Underlying technique used in the experiments
 - [[entities/qwen]] — Qwen3-8B was the base model

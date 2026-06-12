@@ -99,8 +99,8 @@ Unlike many AI startups that keep their technology proprietary, OpenPipe has con
 
 ## Related
 
-- [[concepts/fine-tuning/unsloth]] — Model customization via supervised fine-tuning
-- [[concepts/reinforcement-learning]] — RL training for AI agents
+- [[concepts/post-training/unsloth]] — Model customization via supervised fine-tuning
+- [[concepts/post-training/reinforcement-learning]] — RL training for AI agents
 -  — Acquired OpenPipe in 2025
 -  — Corbitt's former employer (Startup School Director)
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Philosophy underlying OpenPipe's approach

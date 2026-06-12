@@ -16,8 +16,8 @@ aliases:
 sources: []
 related:
   - "[[concepts/pytorch-fsdp-distributed-training]]"
-  - "[[concepts/fine-tuning/pytorch-fsdp]]"
-  - "[[concepts/fine-tuning/peft-lora-qlora]]"
+  - "[[concepts/post-training/pytorch-fsdp]]"
+  - "[[concepts/post-training/peft-lora-qlora]]"
   - "[[concepts/llm-inference]]"
   - "[[concepts/training-infra/gpu-vram-fundamentals]]"
   - "[[concepts/training-infra/_index]]"
@@ -130,9 +130,9 @@ Microsoft DeepSpeed's three-stage optimization:
 ## Related Pages
 
 - [[concepts/pytorch-fsdp-distributed-training]] — Stub → FSDP details
-- [[concepts/fine-tuning/pytorch-fsdp]] — FSDP fine-tuning specifics
-- [[concepts/fine-tuning/peft-lora-qlora]] — Combining with PEFT methods
-- [[concepts/fine-tuning/trl]] — TRL training with distributed configs
+- [[concepts/post-training/pytorch-fsdp]] — FSDP fine-tuning specifics
+- [[concepts/post-training/peft-lora-qlora]] — Combining with PEFT methods
+- [[concepts/post-training/trl]] — TRL training with distributed configs
 - [[concepts/training-infra/gpu-vram-fundamentals]] — GPU VRAM constraint fundamentals
 - [[concepts/training-infra/_index]] — Parent page
 

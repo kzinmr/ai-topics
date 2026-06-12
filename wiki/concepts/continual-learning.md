@@ -91,7 +91,7 @@ See: [[concepts/coding-agents/real-time-rl]], [cursor.com/blog/real-time-rl-for-
 
 ### Rollouts — Open-Source Continual Learning (2026)
 
-[[entities/sriraam-27upon2|Sriraam (@27upon2)]] built **[rollouts](https://github.com/13point5/rollouts)** — an open-source CLI implementing Cursor-inspired continual learning for coding agents using [[entities/prime-intellect|Prime Intellect]]'s hosted training, [[entities/opencode|OpenCode]], and [[concepts/prime-rl-post-training|prime-rl]]. Demonstrates that personalized continual learning is achievable with open infrastructure and ~2B tokens of personal coding data.
+[[entities/sriraam-27upon2|Sriraam (@27upon2)]] built **[rollouts](https://github.com/13point5/rollouts)** — an open-source CLI implementing Cursor-inspired continual learning for coding agents using [[entities/prime-intellect|Prime Intellect]]'s hosted training, [[entities/opencode|OpenCode]], and [[concepts/post-training/prime-rl-post-training|prime-rl]]. Demonstrates that personalized continual learning is achievable with open infrastructure and ~2B tokens of personal coding data.
 
 See: [[entities/sriraam-27upon2]], [x.com/27upon2/status/2040975201068810670](https://x.com/27upon2/status/2040975201068810670)
 

@@ -63,7 +63,7 @@ Lead author of OPSD, a post-training method where a single LLM serves as both st
 
 **Token Efficiency**: 4–12× more token-efficient than GRPO across mathematical reasoning benchmarks, tested on the Qwen3 model family.
 
-See [[concepts/on-policy-self-distillation]] for the full method.
+See [[concepts/post-training/on-policy-self-distillation]] for the full method.
 
 ### d1 — Scaling Reasoning in Diffusion LLMs (NeurIPS 2025 Spotlight)
 
@@ -89,10 +89,10 @@ Novel approach using inpainting as a mechanism for policy optimization in diffus
 
 ## Related Pages
 
-- [[concepts/on-policy-self-distillation]] — OPSD technique
-- [[concepts/sdar-self-distilled-agentic-rl]] — SDAR: OPSD adapted for agent training
-- [[concepts/on-policy-distillation]] — Broader OPD paradigm
-- [[concepts/grpo-rl-training]] — GRPO, the baseline OPSD improves upon
+- [[concepts/post-training/on-policy-self-distillation]] — OPSD technique
+- [[concepts/post-training/sdar-self-distilled-agentic-rl]] — SDAR: OPSD adapted for agent training
+- [[concepts/post-training/on-policy-distillation]] — Broader OPD paradigm
+- [[concepts/post-training/grpo-rl-training]] — GRPO, the baseline OPSD improves upon
 - [[concepts/diffusion-llm]] — Diffusion-based LLMs, the focus of d1
 
 ## Sources

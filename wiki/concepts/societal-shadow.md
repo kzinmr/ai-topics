@@ -26,8 +26,8 @@ sources:
   - "https://gwern.net/unseeing"
 related:
   - "[[concepts/linguistic-vertigo]]"
-  - "[[concepts/rlhf]]"
-  - "[[concepts/rlhf-reinforcement-learning-from-human-feedback]]"
+  - "[[concepts/post-training/rlhf]]"
+  - "[[concepts/post-training/rlhf-reinforcement-learning-from-human-feedback]]"
   - "[[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]"
   - "[[concepts/waluigi-effect]]"
   - "[[entities/qiaochu-yuan]]"

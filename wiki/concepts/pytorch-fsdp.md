@@ -10,7 +10,7 @@ tags:
   - optimization
 aliases: [fsdp, fully-sharded-data-parallel, zero3, zero-redundancy-optimizer]
 related:
-  - concepts/fine-tuning/pytorch-fsdp
+  - concepts/post-training/pytorch-fsdp
   - concepts/qlora
   - concepts/deepspeed
   - concepts/peft-fine-tuning
@@ -174,7 +174,7 @@ torchrun --nproc_per_node=8 train.py
 
 ### Axolotl
 
-Axolotl provides a YAML-based FSDP configuration (see [[concepts/fine-tuning/pytorch-fsdp]] for specific config examples).
+Axolotl provides a YAML-based FSDP configuration (see [[concepts/post-training/pytorch-fsdp]] for specific config examples).
 
 ---
 
@@ -212,7 +212,7 @@ Axolotl provides a YAML-based FSDP configuration (see [[concepts/fine-tuning/pyt
 
 - **[[concepts/accelerate]]** — Hugging Face Accelerate: unified distributed training launcher making FSDP and DeepSpeed interchangeable
 - **[[concepts/qlora]]** — Combines 4-bit quantization (QLoRA) with FSDP for fine-tuning on consumer GPUs
-- **[[concepts/fine-tuning/pytorch-fsdp]]** — Fine-tuning-specific FSDP configuration guide (Axolotl, common issues, NCCL testing)
+- **[[concepts/post-training/pytorch-fsdp]]** — Fine-tuning-specific FSDP configuration guide (Axolotl, common issues, NCCL testing)
 - **[[concepts/peft-fine-tuning]]** — Parameter-Efficient Fine-Tuning methods (LoRA, Q-LoRA) commonly used alongside FSDP
 - **[[concepts/deepspeed]]** — DeepSpeed ZeRO, the alternative distributed training framework (now has dedicated concept page)
 - **[[concepts/fsdp-qlora]]** — The specific technique combining FSDP with QLoRA for memory-efficient training

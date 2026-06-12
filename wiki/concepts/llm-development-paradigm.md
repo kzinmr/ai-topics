@@ -17,7 +17,7 @@ sources:
 related:
   - entities/llama-3.md
   - concepts/scaling-laws.md
-  - concepts/grpo-rl-training.md
+  - concepts/post-training/grpo-rl-training.md
   - concepts/dpo-alignment.md
 ---
 
@@ -71,7 +71,7 @@ Standard sub-stages (Llama 3 approach):
 Since Llama 3 (July 2024), this paradigm has evolved in several directions:
 
 ### The Return of Reinforcement Learning
-- While Llama 3 used DPO only (no PPO), **DeepSeek-R1** (January 2025) dramatically improved reasoning via [[concepts/grpo-rl-training|GRPO]] reinforcement learning
+- While Llama 3 used DPO only (no PPO), **DeepSeek-R1** (January 2025) dramatically improved reasoning via [[concepts/post-training/grpo-rl-training|GRPO]] reinforcement learning
 - RLVR (Verifiable Rewards) and other RLHF variants continue to emerge
 
 ### Test-Time Scaling
@@ -99,5 +99,5 @@ Why the Llama 3 paper was landmark in 2024:
 
 - [[entities/llama-3.md]] — Llama 3 model details
 - [[concepts/scaling-laws.md]] — Scaling laws
-- [[concepts/grpo-rl-training.md]] — GRPO / reasoning RL
+- [[concepts/post-training/grpo-rl-training.md]] — GRPO / reasoning RL
 - [[concepts/dpo-alignment.md]] — DPO alignment

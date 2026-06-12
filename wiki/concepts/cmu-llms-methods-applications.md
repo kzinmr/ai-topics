@@ -41,7 +41,7 @@ sources:
 |----|---------|-------------|
 | 1-2 | LLM origins and theory (Bengio 2003 → present) | `concepts/decoder-only-gpt`, `concepts/transformer-architecture` |
 | 2-3 | Prompt engineering | `concepts/context-engineering`, `concepts/direct-prompting-philosophy` |
-| 3-4 | Fine-tuning vs other methods | `concepts/fine-tuning/peft-lora-qlora`, `concepts/fine-tuning/_index` |
+| 3-4 | Fine-tuning vs other methods | `concepts/post-training/peft-lora-qlora`, `concepts/post-training/_index` |
 | 4 | Embeddings and knowledge representation | — |
 
 > **Unique value:** Treats prompt engineering as a "science." Addressing sensitivity to random seed series (*Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design*) is a practical perspective not found in other courses.
@@ -142,7 +142,7 @@ flowchart TD
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Multi-agent (week 9)
 - [[concepts/ai-image-generation]] — Multimodal (week 11)
 - [[concepts/security-and-governance/ai-safety]] — Safety (week 10)
-- [[concepts/fine-tuning/peft-lora-qlora]] — Fine-tuning (weeks 3-4)
+- [[concepts/post-training/peft-lora-qlora]] — Fine-tuning (weeks 3-4)
 - [[concepts/context-engineering|Context Engineering]] — Prompt engineering (weeks 2-3)
 - [[concepts/coding-agents/coding-agents]] — Code generation (week 11)
 

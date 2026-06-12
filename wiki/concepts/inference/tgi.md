@@ -17,8 +17,8 @@ related:
   - concepts/inference/sglang
   - concepts/inference/llama-cpp
   - concepts/qlora
-  - concepts/fine-tuning/peft-lora-qlora
-  - concepts/fine-tuning/pytorch-fsdp
+  - concepts/post-training/peft-lora-qlora
+  - concepts/post-training/pytorch-fsdp
 sources:
   - raw/articles/2024-07-18_tgi-multi-lora-serving.md
   - https://huggingface.co/blog/multi-lora-serving
@@ -91,7 +91,7 @@ curl 127.0.0.1:3000/generate \
 
 TGI Multi-LoRA is the **production serving counterpart** to PEFT training workflows:
 
-1. **Train:** Fine-tune multiple LoRA adapters using [[concepts/fine-tuning/peft-lora-qlora]] with tools like TRL SFTTrainer
+1. **Train:** Fine-tune multiple LoRA adapters using [[concepts/post-training/peft-lora-qlora]] with tools like TRL SFTTrainer
 2. **Serve:** Deploy all adapters as a single TGI endpoint
 3. **Route:** Each request selects its adapter dynamically
 
@@ -109,4 +109,4 @@ TGI Multi-LoRA is the **production serving counterpart** to PEFT training workfl
 - [[concepts/inference/sglang]] — Research-oriented serving with RadixAttention
 - [[concepts/inference/llama-cpp]] — Local inference engine
 - [[concepts/qlora]] — Quantized LoRA training approach
-- [[concepts/fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning methods
+- [[concepts/post-training/peft-lora-qlora]] — Parameter-efficient fine-tuning methods

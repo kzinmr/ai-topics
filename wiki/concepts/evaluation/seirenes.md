@@ -70,9 +70,9 @@ The framework is complementary to other RL training approaches: the adversarial 
 
 ## Related Pages
 
-- [[concepts/grpo-rl-training]] — GRPO and reinforcement learning for LLMs
+- [[concepts/post-training/grpo-rl-training]] — GRPO and reinforcement learning for LLMs
 - [[concepts/reasoning]] — Reasoning in LLMs
 - [[concepts/adversarial]] — Adversarial approaches in AI
-- [[concepts/rlhf]] — RLHF and related RL training methods
+- [[concepts/post-training/rlhf]] — RLHF and related RL training methods
 - [[concepts/robustness]] — Robustness in AI systems
 - [[concepts/test-time-scaling]] — Test-time compute scaling

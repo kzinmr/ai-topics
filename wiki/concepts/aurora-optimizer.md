@@ -61,5 +61,5 @@ For MoE architectures with smaller per-expert hidden dimensions, the neuron deat
 
 - [[concepts/adam-optimizer]] — Adam/AdamW, the current standard optimizer for LLM training
 - [[concepts/deepseek-v4]] — Uses Muon optimizer; potential beneficiary of Aurora
-- [[concepts/prime-rl-post-training]] — Post-training optimization context (Prime Intellect)
+- [[concepts/post-training/prime-rl-post-training]] — Post-training optimization context (Prime Intellect)
 - [[concepts/modded-nanogpt]] — nanoGPT speedrun benchmark where Aurora set SoTA

@@ -15,7 +15,7 @@ tags:
 related:
   - concepts/interpretability
   - concepts/monosemanticity
-  - concepts/rlhf
+  - concepts/post-training/rlhf
   - concepts/abliteration
   - concepts/entropix
   - entities/thariq-shihipar
@@ -113,7 +113,7 @@ Shihipar predicts: "Next-generation model APIs will be more powerful but also mo
 ## Related Concepts
 
 - [[concepts/interpretability]] — Interpretability in general. Steering is its applied aspect
-- [[concepts/rlhf]] — Traditional control method. Steering's complement
+- [[concepts/post-training/rlhf]] — Traditional control method. Steering's complement
 - [[concepts/entropix]] — Uncertainty detection. A type of inference-time intervention like Steering
 - [[concepts/scaling-hypothesis]] — Degraded controllability at scale. Steering is a countermeasure
 

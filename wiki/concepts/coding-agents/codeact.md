@@ -205,6 +205,7 @@ CodeAct's "code as action" paradigm has become a convergent design pattern acros
 | PTC (AWS Bedrock) | Docker sandbox + async tool orchestration | May 2026 |
 | CodeAct (MS Agent Framework) | Hyperlight micro-VM + provider tools | May 2026 |
 | Claude Code, Codex CLI, OpenClaw | Bash runtime (code execution as primary mode) | 2025-2026 |
+| MemEx (Databricks) | Persistent Python kernel + typed returns + sub-agents | May 2026 |
 
 The pattern's convergence across academic and industrial systems suggests that **code as the universal action format** is not just one approach among many — it may be the natural endpoint for capable LLMs whose training data is dominated by code.
 

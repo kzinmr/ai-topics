@@ -14,6 +14,7 @@ sources:
   - "https://www.databricks.com/blog/memory-scaling-ai-agents"
   - "https://www.databricks.com/blog/open-sourcing-unity-catalog"
   - "https://www.databricks.com/blog/introducing-agent-bricks"
+  - "https://www.databricks.com/blog/memex-programmable-scratchpad-llm-agents"
   - "https://www.databricks.com/blog/2018/06/05/introducing-mlflow-an-open-source-machine-learning-platform.html"
 ---
 
@@ -145,6 +146,19 @@ Databricks identified three pillars for production memory systems:
 2. **Memory Management:** Bootstrapping (cold-start from existing docs), Distillation (compress raw logs), Consolidation (deduplicate, resolve conflicts)
 3. **Security & Governance:** Identity-aware access control, lineage tracking
 
+### MemEx: Programmable Scratchpad for LLM Agents (May 2026)
+
+Databricks AI Research published **MemEx** — a programmable scratchpad that gives LLM agents a typed Python kernel. Tool outputs land as Python objects in persistent scope; only `print()` stdout enters the context window. This replaces JSON/XML tool calling with code-as-action, lifting accuracy and cutting token cost on enterprise tasks.
+
+**Key Results:**
+- Frontier models (Opus 4.6, Sonnet 4.6): +2-5 percentage points at 25-30% less token cost
+- Open-weights models (Qwen3.5-122B): accuracy nearly doubled (18% → 36%) at 40-50% less cost
+- Trajectory analysis: MemEx agents show 34% fewer errors than Tool Calling agents
+
+MemEx extends the [[concepts/coding-agents/codeact|CodeAct]] paradigm with persistent scope, typed `submit()`, and `spawn_agent()` for parallel sub-agents. Built on **aroll**, Databricks' agentic rollouts framework powering Genie and Agent Bricks.
+
+Full concept page: [[concepts/memex-scratchpad]]
+
 ### Known Challenges
 
 - **Quality Degradation:** Agents risk amplifying their own errors by citing past mistakes
@@ -162,6 +176,7 @@ Databricks envisions a future where an agent's identity is defined by its **memo
 
 ## Related Wiki Pages
 
+- [[concepts/memex-scratchpad]] — MemEx: Programmable Scratchpad for LLM Agents (May 2026)
 - [[concepts/memory-scaling]] — The core concept introduced by Databricks
 - [[concepts/ai-agent-memory]] — Overview of AI agent memory systems
 - [[concepts/ai-agent-memory-middleware]] — Storage infrastructure for agentic AI (references Databricks' memory scaling work)

@@ -301,7 +301,7 @@ Pretraining → SFT (Supervised Fine-Tuning) → Reward Model → RLHF (PPO)
 3. **Reward Model:** Train a model to predict human preference
 4. **PPO:** Optimize the policy to maximize reward (per [[john-schulman]] TRPO/PPO work)
 
-See [[concepts/fine-tuning/rlhf-dpo-preference]] for detailed RLHF vs DPO comparison.
+See [[concepts/post-training/rlhf-dpo-preference]] for detailed RLHF vs DPO comparison.
 
 ## Reasoning Models vs Standard GPT
 
@@ -344,7 +344,7 @@ See [[concepts/gpt/chatgpt-images-2-0]] for GPT Image 2.0.
 
 - [[concepts/gpt/decoder-only]] — Complete architectural breakdown
 - [[openai]] — OpenAI company and product ecosystem
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
+- [[concepts/post-training/rlhf-dpo-preference]] — Preference optimization methods
 - [[concepts/reasoning-models]] — o-series extended thinking models
 - [[concepts/local-llm/_index]] — Running open-weight alternatives locally
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis

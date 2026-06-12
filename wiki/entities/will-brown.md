@@ -178,15 +178,15 @@ Key claims from his viral tweet thread:
 
 This framework reframes products like Claude Code, OpenClaw, and subagent systems not as final applications, but as **prototypes for future training environments**. The current awkward usage patterns are the scaffolding for next-generation model capabilities.
 
-See [[concepts/rl-harness-lifecycle]] for the full analysis.
+See [[concepts/post-training/rl-harness-lifecycle]] for the full analysis.
 
 ## Related
 
 - [[concepts/agents-mcp-rl-course]] — Maven course co-taught with Kyle Corbitt
-- [[concepts/on-policy-distillation]] — Brown's deep gradient-geometric analysis of OPD vs SFT vs RL
-- [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
-- [[concepts/rl-harness-lifecycle]] — Co-evolutionary cycle of harnesses and RL training, coined by Brown
-- [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
+- [[concepts/post-training/on-policy-distillation]] — Brown's deep gradient-geometric analysis of OPD vs SFT vs RL
+- [[concepts/post-training/grpo-rl-training]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
+- [[concepts/post-training/rl-harness-lifecycle]] — Co-evolutionary cycle of harnesses and RL training, coined by Brown
+- [[concepts/post-training/rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
 - [[concepts/reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
 - [[concepts/harness-engineering/agent-harness]] — Agent execution frameworks that verifiers supports
 - [[entities/nathan-lambert]] — Interconnects newsletter author, fellow open-source RL researcher

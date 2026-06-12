@@ -25,7 +25,7 @@ related:
   - "[[concepts/linguistic-vertigo]]"
   - "[[concepts/societal-shadow]]"
   - "[[entities/gwern]]"
-  - "[[concepts/rlhf]]"
+  - "[[concepts/post-training/rlhf]]"
 updated: 2026-05-08
 ---
 

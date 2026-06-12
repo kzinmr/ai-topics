@@ -13,7 +13,7 @@ sources:
 
 # Reward Engineering
 
-Reward engineering is the practice of designing reward functions that guide RL-trained agents toward desired behaviors. It is one of the most impactful levers in agentic RL training — the reward function defines *what the agent optimizes for*, and poor reward design leads to reward hacking, output saturation, or failure to capture intended behavior. This concept is part of the broader [[concepts/agents-mcp-rl-course]] and is applied throughout the [[concepts/rl-harness-lifecycle]].
+Reward engineering is the practice of designing reward functions that guide RL-trained agents toward desired behaviors. It is one of the most impactful levers in agentic RL training — the reward function defines *what the agent optimizes for*, and poor reward design leads to reward hacking, output saturation, or failure to capture intended behavior. This concept is part of the broader [[concepts/agents-mcp-rl-course]] and is applied throughout the [[concepts/post-training/rl-harness-lifecycle]].
 
 ## Reward Function Design Principles
 
@@ -109,7 +109,7 @@ When using [[concepts/evaluation/lm-as-judge-reward-signal]], the judge prompt i
 
 ## Practical Patterns from ART/GRPO Training
 
-These patterns emerge from practical [[concepts/grpo-rl-training]] experience with agentic RL:
+These patterns emerge from practical [[concepts/post-training/grpo-rl-training]] experience with agentic RL:
 
 ### The Scenario Object
 

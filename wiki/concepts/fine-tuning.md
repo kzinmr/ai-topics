@@ -3,60 +3,37 @@ title: "Fine-Tuning"
 type: concept
 tags:
   - fine-tuning
+  - post-training
   - training
-status: L3
+status: redirect
 created: 2026-04-27
-updated: 2026-05-02
+updated: 2026-06-12
 aliases: [LLM Fine-Tuning, Model Fine-Tuning, SFT]
-sources: [https://www.superannotate.com/blog/llm-fine-tuning, https://zylos.ai/research/2026-01-13-llm-fine-tuning-techniques]
 ---
-
 
 # Fine-Tuning
 
-## Summary
+> **This page has been consolidated into [[concepts/post-training/_index|Post-Training]]**. The `concepts/post-training/` directory has been renamed to `concepts/post-training/` to better reflect the full scope of post-training techniques (SFT, preference optimization, RL, RLVR).
 
-Fine-tuning is a supervised learning process that adapts a pre-trained large language model (LLM) to specific tasks or domains by updating its weights using labeled examples. It bridges the gap between general-purpose pre-trained models and specialized applications, offering significantly better performance than prompting alone without requiring training from scratch.
+## Redirect
 
-## Key Ideas
+All fine-tuning content now lives under **[[concepts/post-training/_index]]**:
 
-- **Supervised Fine-Tuning (SFT)**: The foundational approach — train a pre-trained model on curated (instruction, response) pairs to teach it desired behaviors and formats
-- **Parameter-Efficient Fine-Tuning (PEFT)**: Methods like LoRA and QLoRA update only a small subset of parameters (<1%), reducing memory requirements by 10–20x while maintaining 80–95% of full fine-tuning quality
-- **Preference Optimization**: After SFT, methods like RLHF (PPO), DPO, and GRPO align models with human preferences using comparative data rather than explicit correct answers
-- **Reinforcement Fine-Tuning (RFT)**: A pragmatic alternative to SFT that uses **production traces + LLM-as-Judge** scoring to bootstrap an RL improvement loop without requiring dedicated MLE teams. Pioneered by [[entities/fireworks-ai]]. [[concepts/reinforcement-fine-tuning|See RFT concept page]].
-- **Data Quality > Quantity**: The most critical success factor in fine-tuning — well-curated, diverse, task-specific data consistently outweighs hyperparameter optimization
-- **Catastrophic Forgetting**: A central challenge where updating a model on new tasks degrades performance on previously learned tasks; mitigated through replay buffers, regularization, and progressive training strategies
+- SFT & PEFT methods → [[concepts/post-training/peft-lora-qlora|LoRA/QLoRA]], [[concepts/post-training/axolotl]], [[concepts/post-training/unsloth]]
+- Preference optimization → [[concepts/post-training/rlhf-dpo-preference|RLHF/DPO/ORPO/KTO]]
+- RL training → [[concepts/post-training/grpo|GRPO]], [[concepts/post-training/rl-algorithms-for-llm-training|RL Algorithms Q&A]]
+- Frameworks → [[concepts/post-training/trl|TRL]], [[concepts/post-training/openrlhf|OpenRLHF]], [[concepts/post-training/slime-rl|slime]]
 
-## Terminology
+## Key Ideas (preserved from original)
 
-- **SFT (Supervised Fine-Tuning)**: Training on labeled (instruction, response) pairs to teach format and behavior
-- **LoRA (Low-Rank Adaptation)**: PEFT method that injects trainable low-rank matrices into model layers, reducing trainable parameters by up to 10,000x
-- **QLoRA**: LoRA combined with 4-bit quantization, enabling fine-tuning of 65B models on a single 48GB GPU
-- **DPO (Direct Preference Optimization)**: Simplified alignment method that directly optimizes using preference pairs without a separate reward model or RL loop
-- **GRPO (Group Relative Policy Optimization)**: DeepSeek-popularized RL method that compares multiple completions within a group to learn preferred behaviors
-- **RFT (Reinforcement Fine-Tuning)**: Pragmatic RL approach using production traces and LLM-as-Judge, pioneered by Fireworks AI. See [[concepts/reinforcement-fine-tuning]]
-- **RLVR (Reinforcement Learning with Verifiable Rewards)**: Post-training approach using automatically verifiable rewards (e.g., math correctness) rather than human preference labels
-
-## Examples/Applications
-
-- **Domain Adaptation**: Fine-tuning a general model on medical or legal corpora to improve accuracy on specialized terminology
-- **Instruction Following**: SFT on curated instruction datasets (e.g., OpenHermes, ShareGPT) to make base models follow complex multi-step instructions
-- **Tool Use**: Fine-tuning models to correctly invoke function calls and APIs by training on tool-use trajectories
-- **Personalization**: Lightweight LoRA adapters that capture individual writing style or domain knowledge without full model retraining
-- **Cost Optimization**: PEFT enables fine-tuning 7B models on consumer hardware (24GB VRAM), democratizing model customization
-
-## Related Concepts
-
-- [[fine-tuning/peft-lora-qlora]]
-- [[fine-tuning/grpo-rl-training]]
-- [[fine-tuning/rlhf-dpo-preference]]
-- [[fine-tuning/axolotl]]
-- [[fine-tuning/unsloth]]
-- [[continual-learning]]
-- [[fine-tuning/pytorch-fsdp]]
+- **Supervised Fine-Tuning (SFT)**: Train on curated (instruction, response) pairs
+- **Parameter-Efficient Fine-Tuning (PEFT)**: LoRA, QLoRA — update <1% of parameters
+- **Preference Optimization**: RLHF (PPO), DPO, GRPO for alignment
+- **Reinforcement Fine-Tuning (RFT)**: Production traces + LLM-as-Judge — see [[concepts/post-training/reinforcement-fine-tuning]]
+- **Data Quality > Quantity**: Most critical success factor
+- **Catastrophic Forgetting**: Central challenge, mitigated via replay buffers and regularization
 
 ## Sources
 
 - [Fine-tuning large language models (LLMs) in 2026 | SuperAnnotate](https://www.superannotate.com/blog/llm-fine-tuning)
-- [LLM Fine-tuning Techniques 2026: From RLHF to Parameter-Efficient Methods | Zylos Research](https://zylos.ai/research/2026-01-13-llm-fine-tuning-techniques)
-- [The State Of LLMs 2025: Progress, Problems, and Predictions | Sebastian Raschka](https://magazine.sebastianraschka.com/p/state-of-llms-2025)
+- [LLM Fine-tuning Techniques 2026 | Zylos Research](https://zylos.ai/research/2026-01-13-llm-fine-tuning-techniques)

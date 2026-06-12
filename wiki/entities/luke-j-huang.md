@@ -31,7 +31,7 @@ Key findings:
 
 ## Research Areas
 
-- [[concepts/asynchronous-rl|Asynchronous RL]] — policy lag, importance sampling estimators, stabilization methods
+- [[concepts/post-training/asynchronous-rl|Asynchronous RL]] — policy lag, importance sampling estimators, stabilization methods
 - [[concepts/grpo-training|GRPO]] — algorithmic foundations for off-policy correction
 - Post-training pipelines — SFT → distillation → RL → MOPD
 

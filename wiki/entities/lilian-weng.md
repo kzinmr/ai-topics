@@ -145,7 +145,7 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - [[concepts/test-time-compute]] — The "thinking time" paradigm she surveyed in "Why We Think"
 - [[concepts/evaluation/reward-hacking]] — Her November 2024 deep-dive topic
 - [[concepts/chain-of-thought-reasoning]] — Central to her analysis of test-time compute
-- [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
+- [[concepts/post-training/rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
 -  — Her April 2024 analysis of video generation
 -  — Her July 2024 survey on extrinsic hallucinations
 - [[concepts/resilient-prompt-engineering]] — Her March 2023 definitive guide

@@ -45,7 +45,7 @@ The single biggest barrier to AI ROI according to Chen: organizations cannot **"
 ## Related Entities
 
 - [[entities/fireworks-ai]] — Company co-founded by Benny Chen
-- [[concepts/reinforcement-fine-tuning]] — RFT methodology pioneered by Fireworks
+- [[concepts/post-training/reinforcement-fine-tuning]] — RFT methodology pioneered by Fireworks
 - [[concepts/speculative-decoding]] — Custom speculator approach for fine-tuned models
 
 ## Sources

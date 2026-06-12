@@ -24,8 +24,8 @@ sources:
   - "https://gwern.net/doc/reinforcement-learning/preference-learning/mode-collapse/index"
   - "https://qchu.substack.com/p/re-encountering-language"
 related:
-  - "[[concepts/rlhf]]"
-  - "[[concepts/rlhf-reinforcement-learning-from-human-feedback]]"
+  - "[[concepts/post-training/rlhf]]"
+  - "[[concepts/post-training/rlhf-reinforcement-learning-from-human-feedback]]"
   - "[[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]"
   - "[[concepts/societal-shadow]]"
   - "[[entities/qiaochu-yuan]]"
@@ -133,7 +133,7 @@ Gwern finds RLHF models more disturbing than base models. The reason: the sensat
 | Timeframe | Technical choices at training time | Sustained impact through daily interaction |
 
 ## Related Concepts
-- **[[concepts/rlhf]]** — Technical aspects of RLHF. This page complements with its cognitive and cultural impacts.
+- **[[concepts/post-training/rlhf]]** — Technical aspects of RLHF. This page complements with its cognitive and cultural impacts.
 - **Semantic Satiation** — Psychological phenomenon where repeated words temporarily lose meaning. Gwern references this as part of unseeing.
 - **Mode Collapse** — Phenomenon known from GANs, but similar output diversity loss occurs in RLHF models.
 - **Cognitive Load Theory** — Impact of LLM exposure on human language cognition.

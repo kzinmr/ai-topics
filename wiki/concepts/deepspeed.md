@@ -18,7 +18,7 @@ related:
   - concepts/fsdp-qlora
   - concepts/accelerate
   - concepts/ai-infrastructure-engineering/distributed-training
-  - concepts/fine-tuning/peft-lora-qlora
+  - concepts/post-training/peft-lora-qlora
 sources:
   - https://github.com/deepspeedai/DeepSpeed
   - https://www.deepspeed.ai/
@@ -272,7 +272,7 @@ These are transparent in FSDP (handled automatically by accelerate).
 - **[[concepts/fsdp-qlora]]** — FSDP combined with Q-LoRA for memory-efficient fine-tuning
 - **[[concepts/accelerate]]** — Hugging Face Accelerate, which provides plugins for both FSDP and DeepSpeed
 - **[[concepts/training-infra/distributed-training]]** — Distributed training methodologies overview
-- **[[concepts/fine-tuning/peft-lora-qlora]]** — PEFT methods commonly used alongside DeepSpeed
+- **[[concepts/post-training/peft-lora-qlora]]** — PEFT methods commonly used alongside DeepSpeed
 
 ---
 

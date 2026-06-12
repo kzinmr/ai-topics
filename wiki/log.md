@@ -8506,3 +8506,12 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 | 2026-06-12 | Updated llm-api-pricing: Sonnet 4.6 ~ removal, Gemini 3.1 Flash Lite, Xiaomi MiMo-7B-RL, Hy3 Preview, Qwen3.7-Max/Plus | comparisons/llm-api-pricing.md |
 - 2026-06-12: Created 5 concept pages to fill RL interview question coverage gaps: [[concepts/batch-invariance-deterministic-training]] (Q31), [[concepts/rl-scaling-boundaries]] (Q15+Q16), [[concepts/grpo-memory-modeling]] (Q20), [[concepts/moe-train-inference-mismatch]] (Q11), [[concepts/rl-exploration-test-time-vs-training]] (Q6). Updated index.md with all entries.
 - 2026-06-12: Enriched [[concepts/moe-train-inference-mismatch]] with GShard (capacity factor origin), Switch Transformer (auxiliary loss formula), DeepSeek-V3 (auxiliary-loss-free load balancing, shared experts, FP8 details). Added 4 paper sources.
+
+## 2026-06-12 09:11 UTC — MemEx concept page + Databricks update
+
+- **New:** `concepts/memex-scratchpad.md` — MemEx: Programmable Scratchpad for LLM Agents (Databricks, May 2026). Code-as-action paradigm with persistent Python kernel, typed returns, sub-agent spawning. Eval results on enterprise structured retrieval and OfficeQA Pro.
+- **New:** `raw/articles/2026-05-19_databricks_memex-programmable-scratchpad-llm-agents.md` — raw blog article capture.
+- **Updated:** `entities/databricks.md` — added MemEx section with key results and link to concept page.
+- **Updated:** `concepts/coding-agents/codeact.md` — added MemEx to the Current Landscape table.
+- **Updated:** `index.md` — added MemEx entry in concepts section.
+- Source: https://www.databricks.com/blog/memex-programmable-scratchpad-llm-agents

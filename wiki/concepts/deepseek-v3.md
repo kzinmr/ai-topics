@@ -182,7 +182,7 @@ The paper makes four specific recommendations for future AI hardware design:
 - [[concepts/mixture-of-experts]] — MoE architecture in general
 - [[concepts/speculative-decoding]] — Speculative decoding technology
 - [[fp8-training]] — FP8 mixed precision training
-- [[concepts/grpo]] — Group Relative Policy Optimization
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization
 - [[yaRN]] — Context extension method
 - [[concepts/inference]] — General inference efficiency techniques
 - [[training]] — Large-scale training techniques

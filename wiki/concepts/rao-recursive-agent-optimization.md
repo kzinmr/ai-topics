@@ -18,7 +18,7 @@ sources:
 related:
   - "[[concepts/recursive-language-models]]"
   - "[[concepts/rlm-recursive-language-models]]"
-  - "[[concepts/grpo]]"
+  - "[[concepts/post-training/grpo]]"
   - "[[entities/apurva-gandhi]]"
 ---
 

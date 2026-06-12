@@ -76,7 +76,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 | Supervised Learning | — | Same as above |
 | Time Series Analysis / ARIMA | — | Same as above |
 | Online Learning / Regret Minimization | — | Same as above |
-| Reinforcement Learning (MDP, Policy) | [[concepts/reinforcement-learning]] | "Classic" RL fundamentals (Sutton & Barto) are covered, but in a different context from LLM alignment RL |
+| Reinforcement Learning (MDP, Policy) | [[concepts/post-training/reinforcement-learning]] | "Classic" RL fundamentals (Sutton & Barto) are covered, but in a different context from LLM alignment RL |
 | Markov Models | — | Same as above |
 
 **Resource Evaluation:** This section aims to organize prerequisite knowledge. Lilian Weng's [RL Overview](https://lilianweng.github.io/posts/2018-02-19-rl-overview/) remains an excellent introductory article. Sutton & Barto's textbook is a classic but doesn't directly connect to LLM alignment.
@@ -135,10 +135,10 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 
 | Topic | Wiki Coverage | Notes |
 |-------|-------------|------|
-| Instruct Fine-Tuning | [[concepts/fine-tuning]], [[concepts/post-training]] | Both covered |
+| Instruct Fine-Tuning | [[concepts/fine-tuning]], [[concepts/post-training/post-training]] | Both covered |
 | LoRA | [[concepts/peft-lora-and-qlora]], [[concepts/qlora]], [[entities/lora-fine-tuning]] | Well-covered with 3 pages |
-| RLHF | [[concepts/rlhf]], [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
-| DPO | [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] | Covered (including KTO/ORPO) |
+| RLHF | [[concepts/post-training/rlhf]], [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
+| DPO | [[concepts/post-training/rlhf-dpo-orpo-kto-preference-optimization]] | Covered (including KTO/ORPO) |
 | Context Scaling (YaRN) | — | Missing |
 | Distillation | [[concepts/model-distillation]] | Covered |
 | Model Merging | — | Missing (SLERP merging not covered) |
@@ -336,7 +336,7 @@ Following the handbook structure as-is is optimal. Section II up through Transfo
 - [[concepts/learning-llms-in-2025]] — Yoav Goldberg (similar meta knowledge map)
 - [[concepts/transformer-architecture]] — Core Transformer concepts
 - [[concepts/scaling-laws]] — Scaling Laws
-- [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] — Preference optimization
+- [[concepts/post-training/rlhf-dpo-orpo-kto-preference-optimization]] — Preference optimization
 - [[concepts/rag-systems]] — Retrieval-augmented generation
 - [[concepts/model-quantization]] — Quantization
 - [[concepts/mechanistic-interpretability]] — Mechanistic interpretability

@@ -34,7 +34,7 @@ related:
   - entities/mark-saroufim
   - concepts/agent-evaluation
   - concepts/agent-safety
-  - concepts/reinforcement-learning
+  - concepts/post-training/reinforcement-learning
 ---
 
 # Reward Hacking in Kernel Benchmarks

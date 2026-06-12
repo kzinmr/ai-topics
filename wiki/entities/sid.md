@@ -29,7 +29,7 @@ SID AI is a **research lab for search** that builds agentic retrieval models tra
 
 ## SID-1: Agentic Retrieval Model
 
-SID-1 is built on **Qwen3-14B** and trained with a modified version of **GRPO** ([[concepts/grpo-rl-training]]), using large-scale synchronous RL rollouts. It treats search as a multi-turn, tool-driven process rather than a static pipeline.
+SID-1 is built on **Qwen3-14B** and trained with a modified version of **GRPO** ([[concepts/post-training/grpo-rl-training]]), using large-scale synchronous RL rollouts. It treats search as a multi-turn, tool-driven process rather than a static pipeline.
 
 ### Performance
 
@@ -101,7 +101,7 @@ SID-2 is currently in training, expected to extend SID-1's speed and recall adva
 ## Related Pages
 - [[concepts/agentic-search]] — Full agentic search concept page (SID-1 is a core reference implementation)
 - [[entities/turbopuffer]] — Search backend used for SID-1 RL training
-- [[concepts/grpo-rl-training]] — GRPO algorithm
+- [[concepts/post-training/grpo-rl-training]] — GRPO algorithm
 - [[raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai]] — Turbopuffer blog on SID-1 RL training
 - [[raw/articles/2025-12-04_sid-1-agentic-retrieval]] — Original SID-1 technical report article
 

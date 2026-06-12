@@ -90,5 +90,5 @@ For agent builders deploying LLMs in high-stakes contexts (medical, legal, finan
 - [[concepts/alignment]] — the alignment problem
 - [[entities/anthropic]] — leading safety research; Claude shows lowest baseline sycophancy
 - [[concepts/agent-safety]] — safety patterns for autonomous agents
-- [[concepts/rlhf]] — reinforcement learning from human feedback (root cause)
+- [[concepts/post-training/rlhf]] — reinforcement learning from human feedback (root cause)
 - [[concepts/functional-emotions-llms]] — emotion vectors and the sycophancy-harshness tradeoff

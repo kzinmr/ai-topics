@@ -84,4 +84,4 @@ Because MTIA is proprietary, public LLMs have no training data for it. KernelEvo
 - [[entities/meta]] — parent organization
 - [[concepts/meta-capacity-efficiency-agents]] — unified AI agent platform
 - [[concepts/ranking-engineer-agent]] — REA autonomous ML system
-- [[concepts/grpo-rl-training]] — RL fine-tuning patterns
+- [[concepts/post-training/grpo-rl-training]] — RL fine-tuning patterns

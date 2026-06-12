@@ -18,8 +18,8 @@ sources:
   - "[[raw/articles/2026-06-08_huggingface_openenv-agentic-rl]]"
 related:
   - "[[concepts/agent-environments]]"
-  - "[[concepts/reinforcement-learning]]"
-  - "[[concepts/grpo]]"
+  - "[[concepts/post-training/reinforcement-learning]]"
+  - "[[concepts/post-training/grpo]]"
   - "[[entities/huggingface]]"
 ---
 

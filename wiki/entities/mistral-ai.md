@@ -105,7 +105,7 @@ Mistral announced **Leanstral**, a project applying LLMs to formal proof generat
 
 - [[concepts/formal-verification-llm-agents]] — Lean formal proof for LLM agents
 - [[concepts/alpha-proof-nexus]] — Google DeepMind's parallel LLM+Lean formal proof system
-- [[concepts/rlvr]] — Reinforcement Learning with Verifiable Rewards (the training paradigm Leanstral enables)
+- [[concepts/post-training/rlvr]] — Reinforcement Learning with Verifiable Rewards (the training paradigm Leanstral enables)
 
 ## Forge: Enterprise Fine-Tuning Platform
 

@@ -139,7 +139,7 @@ Legend: 🟢 Excellent / 🔵 Good / 🟡 Partial limitations / ⚪ Needs consid
 |------|------|------|
 | **Quality** | 🔵 Good | Official JHU course. 7 weekly assignments + 2 quizzes + final project. PyTorch implementation-focused. |
 | **Accessibility** | 🟢 Fully public | [self-supervised.cs.jhu.edu/sp2024/](https://self-supervised.cs.jhu.edu/sp2024/) All assignment outlines public. |
-| **Relevance** | 🔵 Basic to intermediate | Assignments 5 (fine-tuning/prompting), 6 (prompt engineering/ICL/RAG), 7 (alignment) are LLM-related. As Yoav notes, it really starts at #12. |
+| **Relevance** | 🔵 Basic to intermediate | Assignments 5 (post-training/prompting), 6 (prompt engineering/ICL/RAG), 7 (alignment) are LLM-related. As Yoav notes, it really starts at #12. |
 | **Freshness** | 🟡 Spring 2024 | Early 2024. Centered on self-supervised learning fundamentals. |
 | **Format** | Lectures + 7 assignments + final project | High assignment quality. PyTorch implementation emphasis. |
 | **Recommendation** | ⚪ **For beginners** | Good for those still unsure about Transformers, but basic material is excessive for Yoav's intended audience (assumes Transformers knowledge). **Redundant for learners with implementation experience**. |

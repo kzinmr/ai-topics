@@ -50,8 +50,8 @@ STRIDE is the only method satisfying all four properties simultaneously.
 
 ## Related Concepts
 
-- [[concepts/reinforcement-learning]] — RL for LLM training
+- [[concepts/post-training/reinforcement-learning]] — RL for LLM training
 - [[concepts/chain-of-thought]] — chain-of-thought reasoning
-- [[concepts/grpo]] — group relative policy optimization
-- [[concepts/rlhf]] — RL from human feedback
+- [[concepts/post-training/grpo]] — group relative policy optimization
+- [[concepts/post-training/rlhf]] — RL from human feedback
 - [[concepts/deep-learning]] — deep learning foundations

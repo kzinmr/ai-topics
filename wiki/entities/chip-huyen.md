@@ -229,6 +229,6 @@ In a widely-discussed LinkedIn post (referenced in Lenny's Podcast), Huyen ident
 
 - [[concepts/genai-handbook]] — Chip Huyenのブログ記事（RLHF, Building LLM Applications, Multimodal）が🟢最重要リソースとして評価されている
 - [[concepts/rag-systems]]
-- [[concepts/rlhf]]
+- [[concepts/post-training/rlhf]]
 - "Machine learning systems design" course notes (huyenchip.com/machine-learning-systems-design/)
 - Goodreads reviews and ratings for Designing ML Systems (1,077 ratings, 4.33 avg)

@@ -60,7 +60,7 @@ No capability degradation (verified with GPQA, AIME, and preference benchmarks).
 ## Related
 
 - [[concepts/prompt-injection]]
-- [[concepts/rlhf]]
+- [[concepts/post-training/rlhf]]
 - [[concepts/chain-of-thought]]
 - [[entities/openai]] — Developer
 - [[concepts/gandalf]] — Vulnerability benchmark

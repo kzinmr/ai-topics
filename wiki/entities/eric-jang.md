@@ -72,5 +72,5 @@ At Google Brain, Jang worked on:
 
 - [[entities/dwarkesh-patel]] — Podcast host; interviewed Jang about AlphaGo
 - [[concepts/monte-carlo-tree-search]] — Search algorithm central to AlphaGo
-- [[concepts/reinforcement-learning]] — Jang's area of expertise
+- [[concepts/post-training/reinforcement-learning]] — Jang's area of expertise
 - [[entities/1x-technologies]] — Company where Jang served as VP of AI

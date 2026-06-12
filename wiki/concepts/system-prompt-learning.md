@@ -95,6 +95,6 @@ RLVR solved the reward problem for **verifiable tasks** (math, code, logic) but 
 ## Related
 
 - [[concepts/ruler-openpipe-art]] — Concrete implementation via OpenPipe ART
-- [[concepts/grpo]] — The RL algorithm that system prompt learning builds upon
-- [[concepts/rlvr]] — RLVR handles verifiable tasks; system prompt learning extends to non-verifiable
+- [[concepts/post-training/grpo]] — The RL algorithm that system prompt learning builds upon
+- [[concepts/post-training/rlvr]] — RLVR handles verifiable tasks; system prompt learning extends to non-verifiable
 - [[concepts/context-engineering|Context Engineering]] — System prompts as engineering artifacts

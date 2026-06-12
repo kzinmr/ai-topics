@@ -39,7 +39,7 @@ DSA was later adopted in successor [[concepts/deepseek-v4|V4]] (CSA: Compressed 
 
 ### Scalable RL Framework (GRPO Enhancement)
 
-Three enhancements to [[concepts/grpo|GRPO]] (Group Relative Policy Optimization) introduced in [[concepts/deepseek-r1|R1]]. The post-training budget exceeded **10%** of pre-training cost.
+Three enhancements to [[concepts/post-training/grpo|GRPO]] (Group Relative Policy Optimization) introduced in [[concepts/deepseek-r1|R1]]. The post-training budget exceeded **10%** of pre-training cost.
 
 | Improvement | Content | Effect |
 |--------|------|------|
@@ -127,7 +127,7 @@ V3.2's positioning is a **transitional milestone built on V3's efficient archite
 - [[concepts/deepseek-v3]] — Previous generation (V3 architecture)
 - [[concepts/deepseek-v4]] — Successor model (1M context, Hybrid Attention)
 - [[concepts/deepseek-r1]] — Reasoning-specialized model (origin of GRPO)
-- [[concepts/grpo]] — Group Relative Policy Optimization
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization
 - [[attention-mechanism-variants]] — Comparison of attention techniques including DSA
 - [[glm-5-1]] — Successor model adopting DSA
 - [[agent-training]] — Agent task synthesis context

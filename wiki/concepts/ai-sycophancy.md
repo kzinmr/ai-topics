@@ -136,7 +136,7 @@ See [[concepts/anti-sycophancy]] for detailed mitigation strategies including:
 ## Related
 
 - [[concepts/anti-sycophancy]] — mitigation strategies and frameworks
-- [[concepts/rlhf]] — root cause training methodology
+- [[concepts/post-training/rlhf]] — root cause training methodology
 - [[concepts/alignment]] — the broader alignment problem
 - [[concepts/security-and-governance/ai-safety]] — safety landscape
 - [[concepts/knowledge-shields]] — sycophancy as a form of knowledge shielding

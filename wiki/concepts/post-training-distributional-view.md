@@ -11,7 +11,7 @@ tags:
   - inference
 aliases: ["Distributional Lens on Post-Training", "SFT vs RL vs OPD"]
 sources: [raw/articles/2026-05-10_nrehiew_sft-rl-opd-distributional-lens.md]
-related: [entities/nrehiew, concepts/on-policy-distillation, concepts/grpo]
+related: [entities/nrehiew, concepts/post-training/on-policy-distillation, concepts/post-training/grpo]
 ---
 
 # Post-Training Distributional View
@@ -73,7 +73,7 @@ The shift from SFT → RL → OPD represents progressively better alignment betw
 
 ## See Also
 - [[entities/nrehiew]]
-- [[concepts/on-policy-distillation]]
-- [[concepts/grpo]]
+- [[concepts/post-training/on-policy-distillation]]
+- [[concepts/post-training/grpo]]
 - [[concepts/distillation]]
-- [[concepts/on-policy-vs-off-policy-rl]] — Fundamental distinction explained with Goldberg's 2023 analysis as historical anchor
+- [[concepts/post-training/on-policy-vs-off-policy-rl]] — Fundamental distinction explained with Goldberg's 2023 analysis as historical anchor

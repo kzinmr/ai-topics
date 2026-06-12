@@ -9,11 +9,11 @@ tags:
   - hardware
   - quantization
 related_concepts:
-  - fine-tuning/peft-lora-qlora
+  - post-training/peft-lora-qlora
   - qlora
-  - fine-tuning/quantization-overview
+  - post-training/quantization-overview
   - flashattention-pytorch-educational
-  - fine-tuning/instruction-fine-tuning
+  - post-training/instruction-fine-tuning
 related_entities:
   - jonathan-whitaker
 related_articles:

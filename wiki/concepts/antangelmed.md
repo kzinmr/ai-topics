@@ -43,4 +43,4 @@ Released on ModelScope: `modelscope.cn/models/MedAIBase/AntAngelMed`
 - [[entities/akool]] — AI video inference engine with full-stack optimization
 - [[concepts/granite-4-1]] — IBM dense models trained with GRPO + DAPO
 - [[concepts/mixture-of-experts]] — MoE architecture concepts
-- [[concepts/grpo-rl-training]] — GRPO training methodology
+- [[concepts/post-training/grpo-rl-training]] — GRPO training methodology

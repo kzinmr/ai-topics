@@ -222,6 +222,6 @@ Superior to Sonnet 4.6 on conciseness/relevance and style/tone. Comparable on in
 - [[entities/elie-bakouch]] — Author of community analysis
 - [[concepts/mixture-of-experts]] — MoE architecture fundamentals
 - [[concepts/scaling]] — Scaling methodology
-- [[concepts/grpo]] — Group Relative Policy Optimization
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization
 - [[entities/mustafa-suleyman]] — Microsoft AI CEO
 - [[entities/nvidia]] — LatentMoE origin

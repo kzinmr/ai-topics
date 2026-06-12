@@ -121,7 +121,7 @@ The exodus created two camps:
 
 ## Related Concepts
 
-- [[concepts/rlhf]] — Primary alignment technique
+- [[concepts/post-training/rlhf]] — Primary alignment technique
 - [[concepts/reasoning-models]] — Process supervision and step-by-step verification
 - [[concepts/evaluation/ai-evals]] — Evaluation as a safety mechanism
 - [[concepts/harness-engineering]] — Constraining AI behavior through system design

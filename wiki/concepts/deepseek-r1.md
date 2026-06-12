@@ -28,7 +28,7 @@ The DeepSeek-R1 project produced a three-tier model family:
 
 Starting from [[concepts/deepseek-v3|DeepSeek-V3-Base]], trained **without any SFT (Supervised Fine-Tuning)**, using pure RL only.
 
-- **Algorithm**: [[concepts/grpo|GRPO (Group Relative Policy Optimization)]]
+- **Algorithm**: [[concepts/post-training/grpo|GRPO (Group Relative Policy Optimization)]]
 - **Reward**: Rule-based only (no neural reward model)
   - Accuracy Rewards: Verifiable metrics like correct math answers, code compilation results
   - Format Rewards: Place reasoning process inside `think` tags
@@ -104,7 +104,7 @@ RL-based reasoning training also brought significant improvements to knowledge t
 
 ## GRPO (Group Relative Policy Optimization)
 
-See [[concepts/grpo]] for details. Overview:
+See [[concepts/post-training/grpo]] for details. Overview:
 
 - **No Critic Model Needed**: Unlike PPO, GRPO doesn't require a value function model the same size as the policy model → significant memory and compute savings
 - **Group Relative Advantage**: Sample G outputs, normalize by group mean and standard deviation
@@ -147,9 +147,9 @@ DeepSeek-R1's reasoning patterns were later distilled into [[concepts/deepseek-v
 
 - [[entities/deepseek]] — DeepSeek company overview
 - [[concepts/deepseek-v3]] — Base model (R1's starting point, later distilled with R1 reasoning)
-- [[concepts/grpo]] — Group Relative Policy Optimization (RL algorithm introduced in R1)
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization (RL algorithm introduced in R1)
 - [[reasoning]] — Reasoning capabilities overview
 - [[concepts/chain-of-thought]] — Chain-of-Thought reasoning
 - [[distillation]] — Knowledge distillation techniques
-- [[concepts/reinforcement-learning]] — Reinforcement learning
+- [[concepts/post-training/reinforcement-learning]] — Reinforcement learning
 - [[openai-o1]] — Competing reasoning model

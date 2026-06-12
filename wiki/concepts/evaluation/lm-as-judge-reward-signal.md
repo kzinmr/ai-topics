@@ -39,7 +39,7 @@ Several patterns have emerged for structuring LM judges effectively:
 
 ## LM-as-Judge for RL Training
 
-LM judges serve as reward signals in [[concepts/grpo-rl-training]] and other reinforcement learning pipelines:
+LM judges serve as reward signals in [[concepts/post-training/grpo-rl-training]] and other reinforcement learning pipelines:
 
 - **Reward signal for GRPO**: The judge scores or ranks multiple rollouts per training group, providing the relative preference signal that GRPO requires.
 - **Without ground truth**: In experiments, O3 comparing 4 rollouts per group converged faster than training with ground-truth-based rewards. The judge's relative comparison signal proved more efficient than absolute correctness labels for many tasks.

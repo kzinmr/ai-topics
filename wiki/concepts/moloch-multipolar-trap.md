@@ -115,7 +115,7 @@ The AI safety community's focus on alignment, interpretability, and scalable ove
 ### [[concepts/techno-pessimism]] — Coordination Problems Are Primary
 Techno-pessimism argues that governance problems must be solved *before* building superintelligence — exactly because Moloch dynamics make post-hoc coordination impossible.
 
-### [[concepts/grpo-rl-training]] — Competition Within Models
+### [[concepts/post-training/grpo-rl-training]] — Competition Within Models
 GRPO (Group Relative Policy Optimization) mirrors the Moloch dynamic *within a single training run* — groups of model outputs compete, and the "winner" shapes the model's behavior. This is a microcosm of the coordination problem.
 
 ### [[concepts/agent-economics]] — The L4 Level

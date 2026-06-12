@@ -107,8 +107,8 @@ Covers model architecture, training, and evaluation. The area with the most over
 
 | Topic | Wiki Coverage | Notes |
 |----------|---------------|------|
-| DPO (Direct Preference Optimization) | [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] | Comprehensive coverage of DPO/ORPO/KTO |
-| PPO / GRPO | [[concepts/grpo-rl-training]] | GRPO well-covered in DeepSeek context |
+| DPO (Direct Preference Optimization) | [[concepts/post-training/rlhf-dpo-orpo-kto-preference-optimization]] | Comprehensive coverage of DPO/ORPO/KTO |
+| PPO / GRPO | [[concepts/post-training/grpo-rl-training]] | GRPO well-covered in DeepSeek context |
 | RLHF Overall | [[concepts/security-and-governance/ai-safety-and-alignment]], [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] | Covered |
 
 ### Section 3: Evaluation & Quantization
@@ -219,7 +219,7 @@ Colab notebooks provided by Labonne alongside the Course. This Wiki doesn't have
 - [[entities/maxime-labonne]] — Creator of this course
 - [[concepts/fine-tuning-post-training-overview]] — Post-training overview
 - [[concepts/peft-lora-and-qlora]] — PEFT methods
-- [[concepts/rlhf-dpo-orpo-kto-preference-optimization]] — Preference optimization
+- [[concepts/post-training/rlhf-dpo-orpo-kto-preference-optimization]] — Preference optimization
 - [[concepts/agentic-engineering-patterns]] — Agentic engineering (corresponds to Part 3)
 - [[concepts/llm-core]] — LLM foundations
 

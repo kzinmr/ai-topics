@@ -42,7 +42,7 @@ Thinking Machines Lab is an American AI research and product company founded in 
 - **Author**: Kevin Lu et al.
 - **DOI**: [10.64434/tml.20251026](https://doi.org/10.64434/tml.20251026)
 - **Abstract**: Introduces OPD as a post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL divergence. Achieves 9-30× compute reduction vs off-policy SFT and 50-100× vs RL for learning found strategies on math reasoning (AIME'24). Demonstrates OPD as a tool for continual learning — recovering post-training behaviors after mid-training on new knowledge.
-- **Wiki**: [[concepts/on-policy-distillation]]
+- **Wiki**: [[concepts/post-training/on-policy-distillation]]
 - **Tinker Cookbook**: Implementation available in the Tinker training API
 
 ### LoRA Without Regret (2025)

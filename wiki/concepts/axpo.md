@@ -24,7 +24,7 @@ AXPO identifies a fundamental asymmetry in agentic reasoning systems:
 - **Thinking** (internal reasoning): the self-contained default, highly reliable
 - **Tool use** (external actions): a high-variance auxiliary, frequently failing
 
-Under standard RL recipes like [[concepts/grpo|GRPO]], this gap manifests as:
+Under standard RL recipes like [[concepts/post-training/grpo|GRPO]], this gap manifests as:
 1. Tool use attempted on only ~30% of rollouts
 2. When attempted, tool-using rollouts are all-wrong on ~40% of questions
 3. This suppresses the learning signal precisely at the tool calls that need it most
@@ -51,7 +51,7 @@ Evaluated on [[entities/qwen|Qwen3-VL-Thinking]] models at 2B/4B/8B scales acros
 AXPO demonstrates that targeted resampling at the point of failure is more effective than increasing total compute budget. By concentrating exploration exactly where the learning signal is being suppressed (tool calls), AXPO achieves outsized gains from a small extra rollout budget.
 
 ## Related Pages
-- [[concepts/grpo]] — Group Relative Policy Optimization, baseline RL method
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization, baseline RL method
 - [[concepts/tool-use-necessity]] — Tool necessity detection from hidden states
 - [[entities/qwen]] — Qwen3-VL model family used for evaluation
 - [[entities/nvidia]] — NVIDIA, co-developer of AXPO

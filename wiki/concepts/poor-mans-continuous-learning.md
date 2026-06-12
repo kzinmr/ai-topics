@@ -147,4 +147,4 @@ PMCL is most effective when:
 - [[concepts/rag-for-sql]] — RAG-based SQL generation patterns
 - [[concepts/agent-memory]] — Agent memory architectures (episodic vs semantic vs procedural)
 - [[entities/ashpreet-bedi]] — Author of the canonical PMCL article
-- [[concepts/grpo]] — GRPO: the "rich man's" continuous learning (model fine-tuning via RL)
+- [[concepts/post-training/grpo]] — GRPO: the "rich man's" continuous learning (model fine-tuning via RL)

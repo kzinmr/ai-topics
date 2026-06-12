@@ -79,7 +79,7 @@ with LocalBackend() as backend:
 - 14B model beats frontier models (Temporal Clue)
 - Art E email agent: ~86% accuracy via GRPO, ~$80 on single H100, trained in 1 day
 
-See also: [[concepts/grpo-infrastructure]], [[concepts/evaluation/reward-engineering]]
+See also: [[concepts/post-training/grpo-infrastructure]], [[concepts/evaluation/reward-engineering]]
 
 ## Key People
 
@@ -118,10 +118,10 @@ OpenPipe's tools and methodology are featured in the [[concepts/agents-mcp-rl-co
 - [[entities/kyle-corbitt]] — CTO
 - [[entities/prime-intellect]] — Complementary open-source RL infrastructure
 - [[concepts/agents-mcp-rl-course]] — Maven course featuring OpenPipe
-- [[concepts/grpo-rl-training]] — The RL algorithm used in OpenPipe's training pipeline
+- [[concepts/post-training/grpo-rl-training]] — The RL algorithm used in OpenPipe's training pipeline
 - [[concepts/agentic-rl]] — The broader paradigm of RL for LLM agents
-- [[concepts/rl-harness-lifecycle]] — Framework for understanding how OpenPipe's training fits into the agent development cycle
-- [[concepts/grpo-infrastructure]] — GRPO training infrastructure details
+- [[concepts/post-training/rl-harness-lifecycle]] — Framework for understanding how OpenPipe's training fits into the agent development cycle
+- [[concepts/post-training/grpo-infrastructure]] — GRPO training infrastructure details
 - [[concepts/evaluation/reward-engineering]] — Reward signal design for RL post-training
 
 ## Sources

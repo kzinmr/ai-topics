@@ -74,7 +74,7 @@ The analysis connects to broader debates about:
 
 ## Related
 
-- [[concepts/rlvr-science-limitations]] — Dwarkesh's analysis of AI reasoning limits
+- [[concepts/post-training/rlvr-science-limitations]] — Dwarkesh's analysis of AI reasoning limits
 - [[concepts/world-models-science]] — Questions about what AI reasoning actually captures
 - [[entities/dwarkesh-patel]] — Originator of the intelligence conflation thesis
 - [[entities/garett-jones]] — Research on individual vs. national IQ spillovers

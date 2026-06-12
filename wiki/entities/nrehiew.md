@@ -117,7 +117,7 @@ wh's analysis consistently emphasizes:
 
 ## Related Pages
 
-- [[concepts/on-policy-distillation]] — On-policy distillation techniques
+- [[concepts/post-training/on-policy-distillation]] — On-policy distillation techniques
 - [[concepts/post-training-distributional-view]] — Distributional lens on post-training
 - [[concepts/over-editing]] — Over-editing in coding models
 

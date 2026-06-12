@@ -140,7 +140,7 @@ Specialist Training → On-Policy Distillation (OPD)
 
 **Stage 1: Specialist Training**
 - Trains individual specialist models in each domain: math, code, agents
-- Method: SFT + [[concepts/grpo|GRPO]]
+- Method: SFT + [[concepts/post-training/grpo|GRPO]]
 - Each specialist is optimized to the limit in a specific domain
 
 **Stage 2: On-Policy Distillation (OPD)**
@@ -353,7 +353,7 @@ DeepSeek-V4 is a milestone achievement in the following respects:
 - [[concepts/deepseek-v3]] — Previous generation architecture
 - [[concepts/deepseek-v3-2]] — Immediate predecessor (DSA, scalable RL, agent synthesis)
 - [[concepts/deepseek-r1]] — Reasoning-specialized model (origin of GRPO)
-- [[concepts/grpo]] — RL algorithm used in post-training
+- [[concepts/post-training/grpo]] — RL algorithm used in post-training
 - [[concepts/mixture-of-experts]] — MoE architecture in general
 - [[long-context]] — Long-context processing techniques
 - [[concepts/speculative-decoding]] — Speculative decoding

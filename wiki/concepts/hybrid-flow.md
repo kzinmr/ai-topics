@@ -233,17 +233,17 @@ In Anyscale's 10-library comparison, Verl was rated "the most reliable choice fo
 | Async | 🚧 RFC stage | AReaL, slime: ✅ Native async |
 | Ecosystem | Many derivative libraries like RAGEN | TRL → Verifiers, Verl → RAGEN |
 
-**Verl-based derivatives**: [[concepts/ragen|RAGEN]] (added environment interface), the hybrid-flow control/compute separation pattern also influences other library designs.
+**Verl-based derivatives**: [[concepts/post-training/ragen|RAGEN]] (added environment interface), the hybrid-flow control/compute separation pattern also influences other library designs.
 
 → Full RL library comparison: [[comparisons/open-source-rl-libraries-comparison]]
 
 ## Related Pages
 
-- [[concepts/grpo-rl-training]] — Main algorithm implemented in veRL
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF and DPO overview
-- [[concepts/fine-tuning/trl]] — Comparison with HuggingFace TRL
+- [[concepts/post-training/grpo-rl-training]] — Main algorithm implemented in veRL
+- [[concepts/post-training/rlhf-dpo-preference]] — RLHF and DPO overview
+- [[concepts/post-training/trl]] — Comparison with HuggingFace TRL
 - [[entities/deepseek]] — Used veRL for DeepSeek-R1's GRPO training
-- [[concepts/fine-tuning/grpo-rl-training]] — Detailed GRPO algorithm
+- [[concepts/post-training/grpo-rl-training]] — Detailed GRPO algorithm
 
 ## References
 

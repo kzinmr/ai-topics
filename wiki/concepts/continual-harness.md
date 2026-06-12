@@ -11,7 +11,7 @@ tags:
   - agent-loop
 sources: [raw/articles/2026-05-13_sethkarten_continual-harness.md]
 aliases: ["Continual Harness Framework", "Online Harness Adaptation"]
-related: [concepts/harness-engineering, concepts/grpo, entities/seth-karten, entities/ryan-lopopolo]
+related: [concepts/harness-engineering, concepts/post-training/grpo, entities/seth-karten, entities/ryan-lopopolo]
 ---
 
 # Continual Harness
@@ -81,7 +81,7 @@ Continual Harness represents a convergence of several themes in agent engineerin
 
 1. **Harness > Model**: The GPP experience showed that improving the harness yields more gains than scaling the model. This echoes [[entities/ryan-lopopolo]]'s Harness Engineering philosophy.
 
-2. **Online adaptation**: Unlike RL-based approaches ([[concepts/grpo]]) that require offline training cycles, Continual Harness adapts within a single deployment.
+2. **Online adaptation**: Unlike RL-based approaches ([[concepts/post-training/grpo]]) that require offline training cycles, Continual Harness adapts within a single deployment.
 
 3. **Self-improving agents**: The framework realizes the vision of agents that improve themselves through experience — a key theme in [[entities/shunyu-yao]]'s Reflexion work and [[entities/lester-solbakken]]'s verifiable feedback loops.
 
@@ -98,5 +98,5 @@ Continual Harness represents a convergence of several themes in agent engineerin
 - Karten, Zhang, et al. "Continual Harness: Online Adaptation for Self-Improving Foundation Agents." arXiv:2605.09998, May 2026.
 - Gemini Plays Pokémon (DeepMind Gemini 2.5 technical report)
 - [[entities/ryan-lopopolo]] — Harness Engineering
-- [[concepts/grpo]] — Group Relative Policy Optimization
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization
 - [[entities/shunyu-yao]] — Reflexion (NeurIPS 2023)

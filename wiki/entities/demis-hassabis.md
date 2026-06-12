@@ -211,7 +211,7 @@ See: [[entities/isomorphic-labs]] (entity page pending)
 - [[entities/mustafa-suleyman]] — DeepMind co-founder; different approach (consumer AI focus)
 -  — DeepMind co-founder; Chief AGI Scientist- [[entities/dario-amodei]] — Anthropic CEO; former DeepMind colleague; different safety philosophy
 -  — AlphaFold co-lead; Nobel co-recipient-  — Hassabis's central research goal
-- [[concepts/reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
+- [[concepts/post-training/reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
 -  — AlphaFold's scientific breakthrough
 
 ## Sources

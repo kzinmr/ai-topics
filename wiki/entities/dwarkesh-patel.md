@@ -175,7 +175,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 ## Related
 
 - [[concepts/scaling-without-slop]] — Related analysis of AI capability limits
-- [[concepts/rlvr-science-limitations]] — Dwarkesh's thesis on RLVR's inability to handle scientific verification loops
+- [[concepts/post-training/rlvr-science-limitations]] — Dwarkesh's thesis on RLVR's inability to handle scientific verification loops
 - [[concepts/intelligence-conflation]] — Dwarkesh's critique of conflating intelligence with power
 - [[concepts/world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
 - [[concepts/multi-agents/multi-agent-autonomy-scale]] — His vision of future AI architecture
