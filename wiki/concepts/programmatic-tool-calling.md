@@ -422,6 +422,7 @@ See [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: Two Independent Paradi
 
 ## See Also
 
+- [[concepts/memex-scratchpad]] — MemEx (Databricks): persistent Python kernel extending CodeAct/PTC with typed scope, `submit()`, and `spawn_agent()` sub-agents — May 2026
 - [[concepts/code-execution-with-mcp]] — Architectural pattern: MCP as code API
 - [[concepts/code-mode]] — Specific CodeMode implementations
 - [[concepts/dspy-rlm]] — RLM: same substrate (code execution), different problem (context management)

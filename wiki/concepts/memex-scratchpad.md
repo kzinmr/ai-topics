@@ -21,9 +21,10 @@ sources:
 related:
   - concepts/coding-agents/codeact
   - concepts/programmatic-tool-calling
+  - concepts/rlm-recursive-language-models
+  - concepts/dspy-rlm
   - concepts/context-engineering/context-management
   - entities/databricks
-  - concepts/dspy-rlm
 ---
 
 # MemEx — Programmable Scratchpad for LLM Agents
@@ -168,6 +169,77 @@ MemEx is in the [[concepts/coding-agents/codeact|CodeAct]] lineage, with four ex
 - Rolling out across Databricks' first-party agents and Agent Bricks
 - Post-training models for the MemEx action space
 - MemEx itself generates synthetic data, runs agentic verifiers, and feeds the training loop
+
+## MemEx × PTC × RLM: Three-Way Relationship
+
+MemEx, [[concepts/programmatic-tool-calling|PTC]], and [[concepts/rlm-recursive-language-models|RLM]] all share the same substrate — **LLMs writing executable code instead of structured action formats** — but optimize different axes. Understanding where MemEx sits clarifies its unique contribution.
+
+### The Two Axes (PTC = Function, RLM = Data)
+
+The [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: Complementary 2 Axes|2-axis framework]] established by the DSPy.RLM analysis identifies:
+
+| Axis | Paradigm | What Code Does | Core Problem Solved |
+|------|----------|----------------|---------------------|
+| **Function** | [[concepts/programmatic-tool-calling\|PTC]] | `await tool()` — async tool orchestration | Round-trip explosion, intermediate result bloat |
+| **Data** | [[concepts/rlm-recursive-language-models\|RLM]] | `context[start:end]` + `llm_query()` — context exploration | Context rot (degradation from context growth) |
+
+### Where MemEx Sits
+
+MemEx operates on **both axes simultaneously**, which neither PTC nor RLM does alone:
+
+```
+                ↑ RLM (Data Axis)
+                │    Explore/decompose context with code
+                │    context[start:end], llm_query()
+                │
+                │    ★ MemEx occupies this quadrant:
+                │    persistent scope + tool results as objects
+                │    + spawn_agent() for parallel decomposition
+                │
+    ────────────┼─────────────────────────→ PTC (Function Axis)
+                │    Async call tools with code
+                │    await tool(), asyncio.gather()
+                │
+```
+
+| Capability | PTC | RLM | MemEx |
+|------------|-----|-----|-------|
+| **Code calls tools** | ✅ Core mechanism | ❌ Not built-in (uses `llm_query`) | ✅ Drop-in tool injection |
+| **Persistent scope across turns** | ❌ Per-request state only | ✅ REPL variable space | ✅ Live scope at rollout start |
+| **Typed return** | stdout only | `SUBMIT()` | Typed `submit()` |
+| **Sub-agent spawning** | ❌ | ❌ (recursive `llm_query`) | ✅ `spawn_agent()` (parallel) |
+| **Trajectory as object** | ❌ | ❌ | ✅ Load trajectories into scope |
+| **Backend options** | Container / sandbox | WASM (Deno+Pyodide) | In-process / subprocess / pool |
+
+### MemEx vs PTC
+
+PTC is an **API-level mechanism** (`allowed_callers`, `code_execution_20260120`) — MemEx is a **framework-level integration** that uses PTC-style code execution as its action space but adds:
+
+- **Persistent scope**: PTC containers are stateless between requests (or max 30-day lifetime); MemEx scope persists across the entire rollout
+- **Drop-in migration**: Switching a ReAct agent from JSON tool calling to MemEx is a single config change; PTC requires API-level setup
+- **Sub-agents**: MemEx's `spawn_agent()` has no PTC equivalent
+
+### MemEx vs RLM
+
+RLM uses code execution for **context exploration** (splitting huge documents, recursive `llm_query` analysis). MemEx generalizes this:
+
+- **`spawn_agent()` generalizes recursive `llm_query`**: RLM's sub-LM calls become first-class parallel sub-agents with shared scope access
+- **Trajectory aggregation without summarization**: RLM's aggregator pattern requires lossy summarization when fitting multiple trajectories into one context. MemEx loads full trajectories as scope variables — the aggregator reads raw tool outputs directly
+- **Tool integration**: RLM's environment has no built-in tool orchestration; MemEx inherits PTC's tool-as-function pattern
+
+### Concrete Example: Parallel Thinking
+
+**RLM approach** (KARL-style):
+1. Run N independent rollouts → N trajectory summaries
+2. Aggregator agent receives summaries (lossy, compressed)
+3. Aggregator selects/refines answer from summaries
+
+**MemEx approach**:
+1. Run N independent rollouts → N full trajectory objects
+2. `spawn_agent()` loads all trajectories as Python scope variables
+3. Aggregator reads raw tool outputs, catches errors summaries miss (e.g., duplication detection)
+
+Result: MemEx aggregator outperforms Tool Calling aggregator on OfficeQA Pro when using 8 Qwen-3.6-27B trajectories.
 
 ## Related Pages
 

@@ -8516,3 +8516,10 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - **Updated:** `index.md` — added MemEx entry in concepts section.
 - Source: https://www.databricks.com/blog/memex-programmable-scratchpad-llm-agents
 - 2026-06-12: Reorganized concepts/ — created concepts/post-training/ directory. Moved all fine-tuning/ pages (10 files) and 37 RL-related top-level concept pages into post-training/. Created fine-tuning.md redirect page. Bulk-updated ~100 cross-references across wiki. Updated post-training/_index.md as comprehensive overview.
+
+## 2026-06-12 09:20 UTC — MemEx cross-references with PTC and RLM
+
+- **Updated:** `concepts/memex-scratchpad.md` — added "MemEx × PTC × RLM: Three-Way Relationship" section with 2-axis framework comparison, capability matrix, and parallel thinking example.
+- **Updated:** `concepts/programmatic-tool-calling.md` — added MemEx to See Also.
+- **Updated:** `concepts/rlm-recursive-language-models.md` — added MemEx to Related Concepts (spawn_agent() as RLM generalization).
+- **Updated:** `concepts/dspy-rlm.md` — added MemEx to See Also.
