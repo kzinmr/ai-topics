@@ -20,6 +20,8 @@
 - raw/articles/2026-06-11_ai-engineer_webmcp-agent-ready-web.md (YouTube — text extraction blocked)
 **Coverage gaps identified**: inference-infra (PARTIAL), ai-regulation (PARTIAL), mcp (PARTIAL), multimodal (PARTIAL)
 
+---
+
 ## [2026-06-12] Created concept page: AI Liability and Section 230
 
 - **🆕 Created [[concepts/ai-liability-section-230]]** — New concept page covering whether Section 230 of the Communications Decency Act shields AI companies from liability for AI-generated content. Key topics: Section 230 basics, the AI liability question ("content provider" vs. "platform"), Sam Altman's 2023 Senate testimony, German court ruling (June 2026) holding Google liable for AI Overviews, bipartisan sunset-230 bill, implications for frontier AI (hallucination liability, Claude Fable 5 guardrails, RSI suppression), and structural shift in AI industry incentives. Cross-links to google-ai-overviews-liability, ai-regulation-2026, eu-ai-act, agent-safety-incidents-open-source, agentic-ai-governance, and ai-safety. Sourced from Gary Marcus's June 11, 2026 Substack analysis and the German court ruling sources.
@@ -57,6 +59,8 @@ Processed 3 take decisions from newsletter-triage checkpoint (Case C recovery �
 - **✏️ Enriched [[entities/recursive-superintelligence]]** — Added 2026 Developments section covering Richard Socher's automated open-ended discovery system hitting SOTA on public optimization benchmarks. Added newsletter source reference.
 
 Triage decisions: 3 take, 6 reference, 8 skip. Reference items (Claude Code nested subagents, Orb pricing, MiniMax MSA, Macrodata Labs, Kim Monismus, Gemini Live Translate) deferred for future enrichment.
+
+---
 
 ## [2026-06-12] Ingested Xiuyu Li's TTS & Training-Free RL X Article Series
 
@@ -111,6 +115,9 @@ All 5 candidates were previously captured by other pipeline stages:
 **Archive**: 5 items → raw/archived/triage/raw_backlog/ (2 new URLs, 3 dedup)
 **Script update**: Added raw_backlog pipeline to archive_triage.py
 
+
+
+---
 
 ## [2026-06-11 22:30] Updated entities/dario-amodei.md and concepts/ai-regulation-2026.md with Dario Amodei's Policy on the AI Exponential essay
 
@@ -8533,6 +8540,8 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - 2026-06-12: Created 5 concept pages to fill RL interview question coverage gaps: [[concepts/batch-invariance-deterministic-training]] (Q31), [[concepts/rl-scaling-boundaries]] (Q15+Q16), [[concepts/grpo-memory-modeling]] (Q20), [[concepts/moe-train-inference-mismatch]] (Q11), [[concepts/rl-exploration-test-time-vs-training]] (Q6). Updated index.md with all entries.
 - 2026-06-12: Enriched [[concepts/moe-train-inference-mismatch]] with GShard (capacity factor origin), Switch Transformer (auxiliary loss formula), DeepSeek-V3 (auxiliary-loss-free load balancing, shared experts, FP8 details). Added 4 paper sources.
 
+---
+
 ## 2026-06-12 09:11 UTC — MemEx concept page + Databricks update
 
 - **New:** `concepts/memex-scratchpad.md` — MemEx: Programmable Scratchpad for LLM Agents (Databricks, May 2026). Code-as-action paradigm with persistent Python kernel, typed returns, sub-agent spawning. Eval results on enterprise structured retrieval and OfficeQA Pro.
@@ -8543,9 +8552,26 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - Source: https://www.databricks.com/blog/memex-programmable-scratchpad-llm-agents
 - 2026-06-12: Reorganized concepts/ — created concepts/post-training/ directory. Moved all fine-tuning/ pages (10 files) and 37 RL-related top-level concept pages into post-training/. Created fine-tuning.md redirect page. Bulk-updated ~100 cross-references across wiki. Updated post-training/_index.md as comprehensive overview.
 
+---
+
 ## 2026-06-12 09:20 UTC — MemEx cross-references with PTC and RLM
 
 - **Updated:** `concepts/memex-scratchpad.md` — added "MemEx × PTC × RLM: Three-Way Relationship" section with 2-axis framework comparison, capability matrix, and parallel thinking example.
 - **Updated:** `concepts/programmatic-tool-calling.md` — added MemEx to See Also.
 - **Updated:** `concepts/rlm-recursive-language-models.md` — added MemEx to Related Concepts (spawn_agent() as RLM generalization).
 - **Updated:** `concepts/dspy-rlm.md` — added MemEx to See Also.
+
+---
+
+## [2026-06-12 17:35 UTC] Watchdog auto-fix — index header, duplicate entry, log separators
+
+**Fixed**:
+- Updated index.md header: Total pages 2490→2502, Indexed entries 2057→2053 (actual filesystem counts)
+- Removed duplicate `concepts/ai-benchmarks/arc-agi-2` entry from index.md
+- Added 5 missing `---` separators in log.md (lines near sections 23, 61, 115, 8543, 8553)
+
+**Checked**:
+- Pipeline watchdog: healthy (no alerts)
+- Index corruption: 0 pipe issues, 0 duplicates, 0 line prefixes
+- Log separators: 0 remaining missing
+- Tag validation: deferred to tag-audit-weekly

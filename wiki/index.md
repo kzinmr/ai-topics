@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-12 | Total pages: 2490 | Indexed entries: 2057 | Concepts: 1674 | Entities: 786
+> Last updated: 2026-06-12 | Total pages: 2502 | Indexed entries: 2053 | Concepts: 1674 | Entities: 786
 
 ## Entities (786 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -943,7 +943,6 @@
 - [[concepts/ai-benchmarks/ai-resistant-evaluations]] — Tristan Hume's theory on designing hiring tests undefeatable by AI. Claude Opus 4/4.5 defeated it 3 times, forcing redesign. v3 is a Zachtronics-style constrained instruction set puzzle. Fights back with novelty at the cost of realism. Public challenge (hire if under 1,487 cycles).
 - [[concepts/ai-benchmarks/aider-polyglot]] — Aider Polyglot — 6-language coding benchmark. Tests 225 Exercism problems across C++/Go/Java/JS/Python/Rust. GPT-5 leads at 88%.
 - [[concepts/ai-benchmarks/arc-agi-1]] — ARC-AGI-1 — fluid intelligence test by François Chollet. Grid-based abstract reasoning. o3 at 87.5% first human-level breakthrough. 2024 ARC Prize.
-- [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
 - [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmaxxing — Community slang for models optimized for benchmark performance at the expense of real-world instruction following. Applied to Gemini, Qwen, and others. Rooted in Goodhart's Law dynamics.
 - [[concepts/ai-benchmarks/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3. Multi-turn, multi-step function calling evaluation. State-based verification. GLM 4.5 leads at 76.7%.
