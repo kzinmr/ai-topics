@@ -643,6 +643,7 @@
 - [[entities/xiaomi]] — Xiaomi (MiMo AI): Chinese tech company, emerged as significant open-source AI model developer. MiMo family spans multimodal to trillion-parameter agentic coding models under MIT license.
 - [[entities/xiaomi-mimo]] — Xiaomi MiMo model family: open-source MoE models (MIT license). V2.5-Pro flagship (1.02T/42B active) comparable to Claude Opus 4.6 on SWE-bench Pro. MOPD post-training.
 - [[entities/xinming-tu]] — Xinming Tu — University of Washington researcher. Author of the Structured Test-Time Scaling framework: three-layer structural decoupling (Topology → Isolation → Verification) explaining why multi-agent, recursive, and coding systems bypass linear collapse.
+- [[entities/xiuyu-li]] — Xiuyu Li (@sheriyuo) — RUC undergrad, RL/optimization/dLLM researcher. Author of viral "RL Interview Questions 2026" (4,700+ bookmarks). Applying for Fall 2027 PhD.
 - [[entities/xeiaso-net]] — **Blog** | xeiaso.net |
 - [[entities/xjdr]] — xjdr (@_xjdr) — AI researcher, founder at Noumena Network. Creator of entropix (entropy-based LLM sampling, 3.4K ⭐) and primary architect of nmoe (B200-first MoE training, RDEP). JAX partisan. "high taste ai sommelier."
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
@@ -1770,6 +1771,7 @@
 - [[concepts/rich-suttons-bitter-lesson]] — Rich Sutton's Bitter Lesson (2019). General methods leveraging computation ultimately beat hand-crafted structure. Application to AI engineering, Hyung Won Chung's "add structure then remove it later" framework, Lance Martin's open-deep-research case study
 - [[concepts/rl-algorithms-for-llm-training]] — RL Algorithms for LLM Training — Comprehensive Q&A on Actor-Critic, PPO, GRPO, KL divergence, advantage estimation, reward design, and algorithm variants (DAPO, Dr.GRPO, CISPO)
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
+- [[concepts/rl-interview-questions-2026]] — RL Interview Questions 2026 — Curated list of 35 RL interview questions for LLM/Agentic RL by Xiuyu Li (@sheriyuo). Algorithm 19 + Infrastructure 16. Covers GRPO/PPO, async RL, MoE, framework comparison. 4,700+ bookmarks.
 - [[concepts/rlhf]] — RLHF
 - [[concepts/rlm-for-indexing]] — RLM for Indexing & Content Understanding — Speculative direction applying REPL + llm_query() to document chunking, enrichment, cross-doc reasoning, schema discovery. Hybrid with rule-based pipelines for cost control.
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
