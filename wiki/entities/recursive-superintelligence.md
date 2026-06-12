@@ -1,7 +1,7 @@
 ---
 title: "Recursive Superintelligence"
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-12
 type: entity
 tags:
   - company
@@ -12,6 +12,7 @@ tags:
 sources:
   - raw/articles/2026-06-01_active-crawl-probe-prefill-mythos-autoscientist-rsi.md
   - https://techcrunch.com/2026/05/28/rsi-is-the-new-agi-and-its-just-as-hard-to-pin-down/
+  - raw/newsletters/2026-06-12-ainews-loopcraft-the-art-of-stacking-loops.md
 ---
 
 # Recursive Superintelligence
@@ -48,6 +49,10 @@ Recursive Superintelligence is part of a growing RSI ecosystem:
 | Auto-Research | [[entities/andrej-karpathy|Andrej Karpathy]] (Anthropic) | Agent swarms training LLMs on simple tasks |
 | AutoScientist | Sara Hooker (Adaption) | Automated frontier training |
 | Disarray | Doris Xin | Self-trained ML agent (28 Kaggle medals) |
+
+## 2026 Developments
+
+In June 2026, Richard Socher and Recursive SI presented an early **automated open-ended discovery system** for AI research. The system is designed to autonomously generate research ideas, run experiments, and iterate — hitting state-of-the-art results on public optimization benchmarks. AINews described this as *"the most technically notable release"* of the period, highlighting Recursive SI's acceleration toward fully autonomous AI research.
 
 ## Cautions and Critiques
 

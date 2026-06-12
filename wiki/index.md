@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-12 | Total pages: 2478 | Indexed entries: 2035 | Concepts: 1681 | Entities: 784
+> Last updated: 2026-06-12 | Total pages: 2480 | Indexed entries: 2037 | Concepts: 1683 | Entities: 784
 
 ## Entities (782 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -805,7 +805,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1680 pages)
+## Concepts (1682 pages)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/abliteration]] — Abliteration: Mathematical technique that removes safety guardrails from open-source LLMs by neutralizing refusal directions in activation space. 3,500+ decensored models, 13M downloads. Automated by Heretic tool. Affects Llama, Gemma, Nemotron.
@@ -1568,6 +1568,7 @@
 - [[concepts/coding-agents/long-context-coding-agents]] — Long-Context via Coding Agents — Approach externalizing long-context from latent attention into explicit, executable code structures for agent workflows.
 - [[concepts/long-running-search-agents]] — Long Running Search Agents — Design patterns for search agents running unattended for hours/days. 7 progressive strategies: single context, cron restarts, compaction, local index (3.7x yield gain), frontier prompt, query model, self-querying. Doug Turnbull, Cheat at Search (June 2026).
 - [[concepts/evaluation/longembed]] — LongEmbed — Benchmark + methodology for extending embedding models to 32K context without retraining (PI, NTK, SelfExtend). RoPE-based models inherently superior to APE for context extension. Dawei Zhu et al., arXiv:2404.12096 (Apr 2024).
+- [[concepts/loopcraft]] — Loopcraft / Salty Lesson for Agents — Engineering philosophy of designing autonomous agent loops instead of hand-crafting prompts. The Salty Lesson: 'Don't fix things yourself. Focus on systems that scale with more agents.' Contributed by Steipete, Boris (Claude Code lead), and Andrej Karpathy (Autoresearch). AINews June 2026.
 - [[concepts/mac-studio-local-ai]] — Mac Studio for Local AI
 - [[concepts/evaluation/macro-evals-agentic-systems]] — Macro Evals for Agentic Systems — OpenAI × Slalom framework: BERTopic-based behavioral pattern extraction from thousands of agent events. Four-label chain (case_type→run_outcome→eval_finding→behavior_pattern), Promptfoo rubrics, AgentTrace diagnosis. — Model Context Protocol: Open standard developed by Anthropic for AI agent↔tool communication ("USB-C for AI"). Includes MCP Apps (interactive UI extensions). Adopted by OpenAI/Google/Microsoft/Red Hat. Security challenges and 2026 roadmap.
 - [[concepts/evaluation/macro-evals-for-agentic-systems]] — Macro Evals for Agentic Systems — Methodology for discovering collective-level behavioral patterns in multi-agent systems. Lower-level evals → BERTopic clustering → AgentTrace diagnostics. OpenAI × Slalom (May 2026).
@@ -1592,6 +1593,7 @@
 - [[concepts/metadata-retrieval]] — Metadata Retrieval — 3rd retrieval paradigm alongside lexical and embedding search. Structured attribute matching with explainable, testable ranking rules. Doug Turnbull's "Cheat at Search" framework enabled by LLM-powered query understanding.
 - [[concepts/microservices-vs-monolith]] — Microservices vs Monolith
 - [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
+- [[concepts/microsoft-arbor]] — Microsoft Arbor — Autonomous Research Agent — Microsoft Research's autonomous research agent using persistent hypothesis-tree refinement for long-horizon research tasks. Claims to beat Codex and Claude Code on research tasks. AINews / Hugging Papers June 2026.
 - [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr/May 2026 → Jun 2026 Build): MAI-Thinking-1 (1T param reasoning, 35B active, zero distillation), MAI-Code-1-Flash (137B code model, 5B active), MAI-Image-2, MAI-Transcribe-1, MAI-Voice-1 + updates. Windows as agent runtime, GitHub Copilot app, Web IQ.
 - [[concepts/microsoft-scout-agent]] — Microsoft Scout (Jun 2026) — Microsoft's first "Autopilot" agent. Always-on M365 agent with governed Entra ID identity, Work IQ, built on OpenClaw. Proactive scheduling, meeting prep, M365 integration. Built with enterprise-grade security.
 - [[concepts/miles-rl]] — Miles RL — Reinforcement learning framework for LLM and agent training. Covers PPO, GRPO, online/offline RL methods and practical training recipes.

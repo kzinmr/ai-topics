@@ -1,3 +1,15 @@
+## [2026-06-12] Newsletter wiki ingest — Loopcraft, Microsoft Arbor, Recursive SI enrichment
+
+Processed 3 take decisions from newsletter-triage checkpoint (Case C recovery — JSON saved, cron parse failed):
+
+- **🆕 Created [[concepts/loopcraft]]** — New concept page: Loopcraft / Salty Lesson for Agents. Engineering philosophy: design loops, not prompts. The Salty Lesson (agent counterpoint to Bitter Lesson): "Don't fix things yourself. Focus on systems that scale with more agents." Sources: AINews 2026-06-12, Steipete, Boris, Karpathy. Cross-links to [[concepts/karpathy-loop]], [[concepts/agent-loop-orchestration]], [[concepts/bitter-lesson-agent-harnesses]].
+
+- **🆕 Created [[concepts/microsoft-arbor]]** — New concept page: Microsoft Arbor autonomous research agent. Microsoft Research agent using persistent hypothesis-tree refinement for long-horizon research. Claims to beat Codex and Claude Code. Sources: AINews / Hugging Papers June 2026.
+
+- **✏️ Enriched [[entities/recursive-superintelligence]]** — Added 2026 Developments section covering Richard Socher's automated open-ended discovery system hitting SOTA on public optimization benchmarks. Added newsletter source reference.
+
+Triage decisions: 3 take, 6 reference, 8 skip. Reference items (Claude Code nested subagents, Orb pricing, MiniMax MSA, Macrodata Labs, Kim Monismus, Gemini Live Translate) deferred for future enrichment.
+
 ## [2026-06-12] Ingested Xiuyu Li's TTS & Training-Free RL X Article Series
 
 **Source 1**: https://x.com/sheriyuo/status/2042072816712085577 (2026-04-09, X Article)
