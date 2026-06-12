@@ -1,0 +1,30 @@
+{
+  "archived_at": "2026-06-12T00:03:07.629609+00:00",
+  "triage_run_id": "20260612T000029Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）。全記事が既存pipelineで処理済み：MAI-Thinking-1 tech report（concepts/mai-thinking-1-tech-report.mdに227行の詳細分析）、Dwarkesh AGI economicsインタビュー（entities/dwarkesh-patel.md + concepts/agi-economics.md）、Dario Amodei Policy on AI Exponential（entities/dario-amodei.md + concepts/ai-regulation-2026.md + concepts/ai-labor-displacement.md、2026-06-11処理済み）、Will Brown Lesson 2 raw transcript（transcripts/にclean lecture版が存在）、Ed Zitron AI ROI（entities/ed-zitron.mdに専用セクション）。Takes=0、References=0、Skips=5（すべてalready-captured）。アーカイブ対象5件。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-3",
+      "source": "raw_backlog",
+      "title": "Dario Amodei — Policy on the AI Exponential",
+      "url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "raw_path": "raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既に処理済み（2026-06-11）。entities/dario-amodei.mdにpublications table + Recent Commentaryセクション追加、concepts/ai-regulation-2026.mdにFAA-style regulatory proposal追加、concepts/us-china-ai-competition.mdにDemocratic Coalition Proposal追加、concepts/ai-labor-displacement.md新規作成。log.mdに詳細な処理記録あり。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-4",
+      "source": "raw_backlog",
+      "title": "Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)",
+      "url": null,
+      "raw_path": "raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既に処理済み。同じ日付のclean lecture版がtranscripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md（540行）として存在。raw transcriptは字幕の未処理版で、内容はlecture transcriptと同一。MCP tool-calling、type hints、cumulative product bug、productionization themesは全てlecture版に収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

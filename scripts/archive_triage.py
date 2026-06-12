@@ -43,6 +43,11 @@ PIPELINES = {
         "checkpoint_dir": HERMES_HOME / "cron" / "data" / "dreaming",
         "subdir": "dreaming",
     },
+    "raw_backlog": {
+        "triage_job_id": "000000000000",
+        "checkpoint_dir": HERMES_HOME / "cron" / "data" / "raw_backlog",
+        "subdir": "raw_backlog",
+    },
 }
 
 BODY_EXCERPT_LENGTH = 300  # chars from article body opening

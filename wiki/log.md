@@ -1,3 +1,19 @@
+## [2026-06-12] Raw backlog ingest — 5 articles evaluated, 0 takes, 0 references, 5 skips (all already captured)
+
+**Pipeline**: raw-backlog-ingest (batch of 5, ai-hint sorted)
+**Collect run**: 20260612T000029Z (6,882 total raw, 248 already processed, 678 archived)
+
+All 5 candidates were previously captured by other pipeline stages:
+- **MAI-Thinking-1 tech report** (372KB) → concepts/mai-thinking-1-tech-report.md (227 lines architecture analysis) + concepts/microsoft-mai-models.md
+- **Dwarkesh × Imas/Trammell AGI economics** (71KB) → entities/dwarkesh-patel.md + concepts/agi-economics.md (blog-triage 2026-06-06 already skip)
+- **Dario Amodei Policy on AI Exponential** (62KB) → entities/dario-amodei.md + concepts/ai-regulation-2026.md + concepts/ai-labor-displacement.md (processed 2026-06-11)
+- **Will Brown Lesson 2 raw transcript** (49KB) → transcripts/ lesson2-lecture.md (clean version exists)
+- **Ed Zitron AI Doesn't Have ROI** (46KB) → entities/ed-zitron.md dedicated section (lines 293-369+)
+
+**Archive**: 5 items → raw/archived/triage/raw_backlog/ (2 new URLs, 3 dedup)
+**Script update**: Added raw_backlog pipeline to archive_triage.py
+
+
 ## [2026-06-11 22:30] Updated entities/dario-amodei.md and concepts/ai-regulation-2026.md with Dario Amodei's Policy on the AI Exponential essay
 
 **Action**: Enriched both pages with detailed content from Amodei's June 10, 2026 policy essay. Created "Thought Leadership" section in dario-amodei.md documenting the shift from transparency advocacy to FAA-model binding regulation, with positions on mandatory third-party testing, government blocking power, regulatory markets, and security standards. Enhanced Publications table entry with specific date and legislative proposal context. Enriched ai-regulation-2026.md section with detailed framework elements, anti-arbitrariness protections, legislative action note, and expanded regulatory trajectory analysis.
