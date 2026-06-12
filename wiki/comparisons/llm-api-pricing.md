@@ -16,6 +16,8 @@ tags:
   - qwen
   - tencent
   - xiaomi
+  - moonshot
+  - minimax
   - cohere
   - china
   - business-model
@@ -74,8 +76,7 @@ The models listed below are each provider's **latest generation** as of June 202
 | DeepSeek | V4-Pro | Mid | $0.435 | $0.87 | $0.0036 | — | — | — | 128K | — | [deepseek](https://platform.deepseek.com) |
 | Qwen | Qwen3.7-Max | Frontier | $1.25 | $3.75 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/qwen/qwen3.7-max) |
 | Qwen | Qwen3.7-Plus | Mid | $0.32 | $1.28 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/qwen/qwen3.7-plus) |
-| Xiaomi | MiMo-7B-RL | Budget | $0.15 | $0.60 | $0.0375 | — | — | — | 128K | — | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
-| Xiaomi | MiMo-7B-RL-1M | Budget | $0.30 | $1.20 | $0.075 | — | — | — | 1M | — | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
+| Xiaomi | MiMo-V2.5-Pro | Mid | $0.80 | $3.20 | $0.16 | — | — | — | 256K | — | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
 | Tencent | Hy3 Preview | Budget | $0.063 | $0.21 | — | — | — | — | 256K | — | [openrouter](https://openrouter.ai/tencent/hy3-preview) |
 
 ### China — Budget / Regional
@@ -88,8 +89,9 @@ These models are primarily available via Chinese cloud platforms (DashScope, Vol
 | ByteDance | Doubao 1.5 Lite | Budget | ~$0.10 | ~$0.30 | — | 128K | [volcengine](https://www.volcengine.com) |
 | Qwen | Qwen3 Turbo | Budget | ~$0.15 | ~$0.60 | — | 128K | [dashscope](https://help.aliyun.com/zh/model-studio/) |
 | Tencent | Hunyuan Turbo | Budget | ~$0.15 | ~$0.60 | — | 128K | [tencent](https://www.tencent.com) |
-| Zhipu | GLM-5 | Mid | ~$0.70 | ~$2.50 | — | 128K | [zhipu](https://open.bigmodel.cn) |
-| Moonshot | Kimi K2 | Mid | ~$0.60 | ~$2.00 | — | 128K | [moonshot](https://platform.moonshot.cn) |
+| Zhipu | GLM-5 | Mid | $0.60 | $1.92 | — | 203K | [openrouter](https://openrouter.ai/z-ai/glm-5) |
+| Moonshot | Kimi K2 | Mid | $0.28 | $1.39 | $0.083 | 128K | [kimi](https://platform.kimi.com/docs/pricing/chat) |
+| MiniMax | MiniMax M3 | Mid | $0.30 | $1.20 | — | 1M | [openrouter](https://openrouter.ai/minimax/minimax-m3) |
 | Qwen | Qwen3 Plus | Mid | ~$0.50 | ~$2.00 | — | 128K | [dashscope](https://help.aliyun.com/zh/model-studio/) |
 | ByteDance | Doubao 1.5 Pro | Mid | ~$0.40 | ~$1.20 | — | 128K | [volcengine](https://www.volcengine.com) |
 | Zhipu | GLM-4 | Mid | ~$0.35 | ~$1.20 | — | 128K | [zhipu](https://open.bigmodel.cn) |
@@ -181,7 +183,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 |----------|-------|---------|----------|------------|----------|-------------|
 | DeepSeek | V4-Flash | $0.14 | $0.28 | $0.003 | $0.18 | Cheapest frontier-class; best cache |
 | DeepSeek | V4-Pro | $0.435 | $0.87 | $0.0036 | $0.52 | Best intelligence/price; 99.2% cache |
-| Xiaomi | MiMo-7B-RL | $0.15 | $0.60 | $0.0375 | $0.26 | Cheapest China frontier; 75% cache |
+| Xiaomi | MiMo-V2.5-Pro | $0.80 | $3.20 | $0.16 | $1.28 | Commercial agentic coding; 80% cache discount |
 
 *Blended = weighted cost at 4:1 input:output ratio.
 
@@ -363,7 +365,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 | 2026-06-09 | Initial creation | User-provided CSV + wiki entity pages |
 | 2026-06-11 | Added Claude Fable 5 ($10/$50 MTok); new "Ultra-Premium" tier | Anthropic blog |
 | 2026-06-11 | Corrected GPT-5.5 pricing ($5/$30 not ~$1.25/$10); added GPT-5.4/5.4-mini/5.4-nano full lineup; updated OpenAI cache from 50% to 90% (GPT-5.x); moved GPT-5.1/5.2/5 to Legacy | [openai.com](https://developers.openai.com/api/docs/pricing) |
-| 2026-06-12 | Removed `~` from Claude Sonnet 4.6 (verified $3/$15); added Gemini 3.1 Flash Lite ($0.25/$1.50); updated Xiaomi MiMo to MiMo-7B-RL ($0.15/$0.60, 128K + $0.30/$1.20, 1M, cache 75%); updated Hy3 Preview ($0.063/$0.21, 256K); added Qwen3.7-Max ($1.25/$3.75, 1M) and Qwen3.7-Plus ($0.32/$1.28, 1M) | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go), [openrouter](https://openrouter.ai/tencent/hy3-preview) |
+| 2026-06-12 | Removed `~` from Claude Sonnet 4.6 (verified $3/$15); added Gemini 3.1 Flash Lite ($0.25/$1.50); fixed Xiaomi MiMo-V2.5-Pro ($0.80/$3.20, cache $0.16); updated Hy3 Preview ($0.063/$0.21, 256K); added Qwen3.7-Max ($1.25/$3.75, 1M) and Qwen3.7-Plus ($0.32/$1.28, 1M); updated GLM-5 ($0.60/$1.92 verified), Kimi K2 ($0.28/$1.39 CNY-verified with cache); added MiniMax M3 ($0.30/$1.20, 1M) | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go), [openrouter](https://openrouter.ai/tencent/hy3-preview), [kimi](https://platform.kimi.com/docs/pricing/chat) |
 
 ---
 
@@ -373,7 +375,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 - [[entities/anthropic]] — Anthropic model details and pricing history
 - [[entities/google]] — Google AI offerings and Gemini pricing
 - [[entities/deepseek]] — DeepSeek V4 pricing strategy and KV cache economics
-- [[entities/xiaomi-mimo]] — MiMo-7B-RL pricing details
+- [[entities/xiaomi-mimo]] — MiMo-V2.5-Pro pricing details
 - [[entities/tencent-hy3]] — Tencent Hy3 pricing via OpenRouter
 - [[concepts/claude/models]] — Claude model family (Opus 4.5→4.8)
 - [[concepts/claude/fable-5]] — Claude Fable 5 pricing, capabilities, and safety architecture
