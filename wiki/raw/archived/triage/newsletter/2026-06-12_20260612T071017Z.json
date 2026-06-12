@@ -1,0 +1,73 @@
+{
+  "archived_at": "2026-06-12T07:27:14.129202+00:00",
+  "triage_run_id": "20260612T071017Z",
+  "source": "newsletter",
+  "summary_ja": "【2026-06-12 ニュースレタートリアージ】5ニュースレターを処理。主な発見: (1) AINews「Loopcraft」— Salty Lesson（エージェント版Bitter Lesson）とループ積層哲学は新規コンセプトページが必要, (2) Microsoft Arbor自律研究エージェントも新規ページ候補, (3) Recursive SIの自動発見システムは既存entityページの拡充が必要, (4) Ben's BitesのFable 5まとめは既存カバレッジで充足, (5) SemiAnalysis Intel記事とTrue Positive Weeklyは非AI/一般コンテンツでスキップ, (6) Beehiiv Dario AmodeiはCloudflareブロックかつ既取り込み済み。Take: 3件（新規2 + 拡充1）、Reference: 6件、Skip: 8件。",
+  "decisions": [
+    {
+      "item_id": "<20260611130321.3.797ac35dd4156ff2@mg-d1.substack.com>-8",
+      "source": "newsletter",
+      "source_name": "New Claude model - Fable",
+      "title": "Claude Code Nested Subagents (Depth 5)",
+      "url": "https://www.bensbites.com/p/new-claude-model-fable",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-new-claude-model-fable.md",
+      "recommended_action": "reference",
+      "rating": 3,
+      "reason_ja": "★★★☆☆ entities/anthropic.md または concepts/claude-code.md へのreference。Claude Codeが階層的subagent（各subagentがさらにsubagentを生成、depth 5層まで）をサポート。既存Wikiにこの具体的depth数値の言及なし。minor update候補。",
+      "candidate_wiki_path": "concepts/claude-code.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-11\n**Subject:** New Claude model - Fable\n**Collected:** 2026-06-12T07:10:11.384116+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWw"
+    },
+    {
+      "item_id": "<20260612053409.3.2a061aac5641801d@mg-d0.substack.com>-12",
+      "source": "newsletter",
+      "source_name": "[AINews] Loopcraft: The Art of Stacking Loops",
+      "title": "MiniMax Open-Source MSA Kernel Library",
+      "url": "https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-12-ainews-loopcraft-the-art-of-stacking-loops.md",
+      "recommended_action": "reference",
+      "rating": 3,
+      "reason_ja": "★★★☆☆ entities/minimax.md または concepts/inference/ へのreference。MiniMaxが高性能MSAカーネルライブラリをオープンソース化、model weightsも近日公開予定。既存WikiにMiniMaxのkernel workについての言及なし。",
+      "candidate_wiki_path": "entities/minimax.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-12\n**Subject:** [AINews] Loopcraft: The Art of Stacking Loops\n**Collected:** 2026-06-12T07:10:15.922970+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV"
+    },
+    {
+      "item_id": "<20260611.155145.6377e56e@mta27>-1",
+      "source": "newsletter",
+      "source_name": "🏛️ Dario Amodei Demands Binding AI Rules",
+      "title": "Beehiiv Newsletter (Cloudflare blocked)",
+      "url": "https://link.mail.beehiiv.com/v1/c/hXM7PvQg4BSVQGD5hm4OzOjIOH4us/...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-dario-amodei-demands-binding-ai-rules.md",
+      "recommended_action": "skip",
+      "rating": 1,
+      "reason_ja": "★☆☆☆☆ Cloudflareチャレンジにより全beehiivリンクが到達不能（kill switch適用）。トピックレベルでもDario Amodei政策エッセイは2026-06-11に別パイプラインで既取り込み済み。新規価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-11\n**Subject:** 🏛️ Dario Amodei Demands Binding AI Rules\n**Collected:** 2026-06-12T07:10:13.769708+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/hXM7PvQg4BSVQGD5hm4OzOjIOH4us%2Fp6Wwoz5HiDsf05FhmszZSupuUA4bRp%0A7%2BJ6Y6BtIqpD4Dqfe"
+    },
+    {
+      "item_id": "<20260611195225.3.c313546c5ce7df14@mg-d1.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #165",
+      "title": "True Positive Weekly #165 (AI Weekly roundup)",
+      "url": "https://aiweekly.substack.com/p/true-positive-weekly-165",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-true-positive-weekly-165.md",
+      "recommended_action": "skip",
+      "rating": 1,
+      "reason_ja": "★☆☆☆☆ 一般的なAI/データサイエンス週刊ダイジェスト。含まれるトピック（Data Science in AI age, Physical AI, DiffusionGemma, Command A+）はいずれも表面的な言及のみ。深い技術的内容なし。DiffusionGemmaは既取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-11\n**Subject:** True Positive Weekly #165\n**Collected:** 2026-06-12T07:10:14.861751+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20260611145055.3.3e1e8f0ebc53fdeb@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Intel Should Raise Capital",
+      "title": "Intel Should Raise Capital (SemiAnalysis)",
+      "url": "https://newsletter.semianalysis.com/p/intel-should-raise-capital",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-11-intel-should-raise-capital.md",
+      "recommended_action": "skip",
+      "rating": 1,
+      "reason_ja": "★☆☆☆☆ Intelの資金調達・資本戦略に関する有料ビジネス分析。LLM/AI Agent技術と直接関係なし（Agentic CPUへの軽い言及のみ）。ペイウォール有り（isAccessibleForFree: False）。非AIコンテンツとしてスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-11\n**Subject:** Intel Should Raise Capital\n**Collected:** 2026-06-12T07:10:12.635198+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2Nhb"
+    }
+  ]
+}

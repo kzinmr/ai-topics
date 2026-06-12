@@ -1128,6 +1128,7 @@
 - [[concepts/bm25]] — BM25 (Best Match 25): classical lexical retrieval algorithm (TF-IDF variant with saturation + length normalization). PI-SERINI (May 2026) demonstrated BM25 + capable LLM in agentic loop beats dense retrievers on BrowseComp-Plus (83.1% accuracy, 3.3x–10x cheaper). **BM25F** extends to multi-field scoring (IDF blending + unified TF saturation). Key insight: agent reasoning about search results matters more than retrieval quality.
 - [[concepts/boring-technology]] — Boring Technology
 - [[concepts/bottom-up-note-taking]] — Bottom-Up Note Taking
+- [[concepts/batch-invariance-deterministic-training]] — Batch Invariance and Deterministic Training — Why changing batch size changes results (FP non-associativity), atomicAdd as the source of non-determinism, ordered reductions as solution. Critical for RL reproducibility.
 - [[concepts/branch-aware-search]] — Branch-Aware Search — MVCC for vector search: scope results to git-style branches in versioned document corpora. Qdrant pattern + Neon DB branching comparison.
 - [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture — SQS-to-Lambda architecture for running browser agents at scale
 - [[concepts/build-the-thing-meta-development]] — Build the Thing That Builds the Thing — Meta-development pattern: build automation tools that enhance agent-driven development itself. Frustration → tool → compound cycle. ClawSweeper, Octopus, Crab Box, Auto Review, Core Patch, Crab Fleet. "Slop is fine."
@@ -1464,6 +1465,7 @@
 - [[concepts/grpo]] — Group Relative Policy Optimization: RL algorithm introduced in DeepSeek-R1. Eliminates PPO's critic model, removing the computational bottleneck for large-scale model RL training. Estimates advantages via within-group relative comparison.
 - [[concepts/grpo-rl-training]] — GRPO (Group Relative Policy Optimization) — RL algorithm devised by DeepSeek. No critic needed, within-group relative advantage computation. Popularized by DeepSeek-R1, became the standard RL backbone for reasoning and agent training. Foundation for SDAR and MOPD.
 - [[concepts/grpo-infrastructure]] — GRPO Infrastructure — VRAM napkin math (10× rule), PPO vs GRPO tradeoffs, GPU architecture patterns (swapping vs overlapping), LoRA for GRPO (beta=0 shortcut), async RL, key gotchas (temp=1, reward std dev collapse). From MCP-RL course.
+- [[concepts/grpo-memory-modeling]] — GRPO Memory Modeling — Model copies during GRPO training (actor, reference, reward, rollout). Memory savings from LoRA (100x param reduction), beta=0 (reference elimination), rule-based rewards, quantized reference. Practical 7B budget: 98GB baseline → 28GB optimized.
 - [[concepts/gte-moderncolbert]] — GTE-ModernColBERT: LightOn's open-source multi-vector retrieval model (2025). First SOTA ColBERT trained on PyLate, first to beat ColBERT-small on BEIR (54.75). 8K context via ModernBERT architecture + knowledge distillation on MS MARCO.
 - [[concepts/halo-loss-attention-sinks]] — Halo Loss / Attention Sinks — Training technique preventing attention sink formation during LM pretraining.
 - [[concepts/hands-on-modern-rl]] — Hands-On Modern RL — Open-source, practice-first curriculum for modern reinforcement learning. Covers classic control to LLM post-training (RLHF, DPO, GRPO), RLVR, and multimodal agent systems. Created by walkinglabs.
@@ -1607,6 +1609,7 @@
 - [[concepts/mistral-workflows]] — Mistral Workflows: enterprise AI orchestration layer. Temporal-based durable execution, human-in-the-loop (wait_for_input), multi-surface triggers (API/Studio/Le Chat). Public preview April 2026.
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
 - [[concepts/mixture-of-experts]] — Mixture of Experts
+- [[concepts/moe-train-inference-mismatch]] — MoE Train-Inference Mismatch — Routing inconsistency, token dropping, KV cache interactions between training and inference in MoE models. Solutions: load-balancing loss, shared experts, FP8 training, Elastic EP. DeepSeek V3/V4 approach.
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
 - [[concepts/security-and-governance/model-cards-system-cards]] — Model Cards and System Cards: Transparency documents published by AI developers describing capabilities, testing, limitations, and safeguards. Analysis perspectives: capability-disclaimer gap, benchmark selection bias, safety layer architecture, absence as signal, regulatory alignment.
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
@@ -1772,8 +1775,10 @@
 - [[concepts/evaluation/reward-engineering]] — Reward Engineering for RL-Trained Agents — Binary vs complex rewards, reward std dev monitoring, LM-as-judge signals, non-verifiable domain design, RULER. From MCP-RL course.
 - [[concepts/rich-suttons-bitter-lesson]] — Rich Sutton's Bitter Lesson (2019). General methods leveraging computation ultimately beat hand-crafted structure. Application to AI engineering, Hyung Won Chung's "add structure then remove it later" framework, Lance Martin's open-deep-research case study
 - [[concepts/rl-algorithms-for-llm-training]] — RL Algorithms for LLM Training — Comprehensive Q&A on Actor-Critic, PPO, GRPO, KL divergence, advantage estimation, reward design, and algorithm variants (DAPO, Dr.GRPO, CISPO)
+- [[concepts/rl-exploration-test-time-vs-training]] — RL Exploration: Training vs Test-Time Scaling — RL training reshapes policy weights via stochastic rollouts; test-time scaling searches within fixed distribution (best-of-N, MCTS, verifier reranking). Aviral Kumar ICML'25: verifier-free TTS is asymptotically suboptimal. MRT bridges both.
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rl-interview-questions-2026]] — RL Interview Questions 2026 — Curated list of 35 RL interview questions for LLM/Agentic RL by Xiuyu Li (@sheriyuo). Algorithm 19 + Infrastructure 16. Covers GRPO/PPO, async RL, MoE, framework comparison. 4,700+ bookmarks.
+- [[concepts/rl-scaling-boundaries]] — RL Scaling Boundaries — Can RL expand LLM capability frontiers? Evidence from DeepSeek-R1 (reasoning emergence), ProRL (compute scaling), Aviral Kumar ICML'25 (verifier-free TTS suboptimality). Scaling dimensions: reward quality, exploration diversity, compute budget.
 - [[concepts/rlhf]] — RLHF
 - [[concepts/rlm-for-indexing]] — RLM for Indexing & Content Understanding — Speculative direction applying REPL + llm_query() to document chunking, enrichment, cross-doc reasoning, schema discovery. Hybrid with rule-based pipelines for cost control.
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)

@@ -1,0 +1,152 @@
+{
+  "archived_at": "2026-06-12T07:35:51.853512+00:00",
+  "triage_run_id": "20260612T070010Z",
+  "source": "blog",
+  "summary_ja": "14件のブログ記事をトリアージ。2件のtake（Claude Fable 5の自己主導的デバッグ能力の詳細事例、EU DMAによるSiri AI提供遅延）、2件のreference（George HotzのAIデフレ論、AI Box eGPUのローカルLLMベンチマーク）、10件のskip（非AI/既存カバー済み）。",
+  "decisions": [
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "geohot.github.io",
+      "title": "AI will be massively deflationary",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/06/11/ai-will-be-deflationary.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ George HotzのAI経済影響論。既存のentities/george-hotz.md（284行）は「AI Will Create Jobs — Jevons Paradox」セクションでAIは雇用を創出するという主張をカバーしているが、本記事は逆の「AIはmassively deflationaryで知識労働者の賃金プレミアムを破壊しGreat Depression 2を引き起こす」という主張を展開。両論併記としてentityページに「Contrarian Views」の項目を追加する価値がある。現状のページには「Commoditizing Compute」や「AI保護論は敗者の論理」などの関連概念はあるが、デフレ論は未カバー。",
+      "candidate_wiki_path": "entities/george-hotz.md",
+      "body_excerpt": "# AI will be massively deflationary\nSource: https://geohot.github.io//blog/jekyll/update/2026/06/11/ai-will-be-deflationary.html\nThe funny thing about Anthropic haters is that they still mostly believe Anthropic’s marketing. They think Claude is a recursively self-improving silicon God, and that we "
+    },
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "tedium.co",
+      "title": "Portable eGPUs Are So Hot Right Now",
+      "url": "https://feed.tedium.co/link/15204/17359582/gigabyte-aorus-5060-ti-ai-box-egpu-review",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/feed.tedium.co--link-15204-17359582-gigabyte-aorus-5060-ti-ai-box-egpu-revie--ea73d939.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ Gigabyte Aorus RTX 5060 Ti AI Box eGPUのレビュー。ローカルLLM推論ベンチマークを含む（Qwen 3 VL 4B: 14→118 tok/s、Gemma4 12B: 35 tok/s、Qwen 3.5/DeepSeek 4 distilled: 60 tok/s）。Opencodeでの利用にも言及。ただし記事の主目的はハードウェアレビューであり、ローカルLLM推論ハードウェアのトピックは既存概念ページでカバー済み。ベンチマーク数値自体は参考値としての価値はあるが新規ページ作成には至らない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Portable eGPUs Are So Hot Right Now\nSource: https://feed.tedium.co/link/15204/17359582/gigabyte-aorus-5060-ti-ai-box-egpu-review\nIt’s hot. It’s kind of heavy.\nAnd on my computing weapon of choice, it’s hard to set up.\nBut honestly, I love that it exists.\nRecently I’ve been taking a look at an eGPU"
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Release: asyncinject 0.7",
+      "url": "https://simonwillison.net/2026/Jun/11/asyncinject/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-11-asyncinject--8cfea5af.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Python依存性注入ライブラリasyncinjectのバージョンリリース記事。Fable 5がバグ修正したと一言触れているが、記事全体はライブラリの機能紹介でありAIトピックではない。15行のみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Release: asyncinject 0.7\nSource: https://simonwillison.net/2026/Jun/11/asyncinject/#atom-everything\nI built this utility library to support an\nasyncio\ndependency injection pattern a few years ago. I was using it with Datasette and Claude Fable 5 spotted some bugs in the dependency which it then fi"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "garymarcus.substack.com",
+      "title": "Breaking: OpenAI is pondering \"drastic\" price cuts.",
+      "url": "https://garymarcus.substack.com/p/breaking-openai-is-pondering-drastic",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-breaking-openai-is-pondering-drastic--9e075832.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ WSJ記事の引用のみ。21行、分析なし。OpenAIの値下げ検討ニュースをそのまま引用しただけで独自の洞察や分析は一切ない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Breaking: OpenAI is pondering “drastic” price cuts.\nSource: https://garymarcus.substack.com/p/breaking-openai-is-pondering-drastic\n🚨 OpenAI pondering big price cuts, per WSJ scoop:\n3:35 AM · Jun 11, 2026\n·\n9.2K Views\n14 Replies\n·\n27 Reposts\n·\n143 Likes"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Solving a chess puzzle with Claude and Prolog",
+      "url": "https://www.johndcook.com/blog/2026/06/11/prolog-claude/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-11-prolog-claude--5a80c92a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ClaudeにPrologコードを生成させてチェスパズルを解くデモ。LLMのプログラミング支援能力を示すが、特定のAIエージェント技術や新規概念に貢献する内容ではない。Prologの文法とチェスパズルの解法が主。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Solving a chess puzzle with Claude and Prolog\nSource: https://www.johndcook.com/blog/2026/06/11/prolog-claude/\nProlog is the original logic programming language. The name comes from\npro\ngramming in\nlog\nic. More specifically, the name comes from\npro\ngrammation en\nlog\nique\nbecause the inventor of th"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "devblogs.microsoft.com/oldnewthing",
+      "title": "Understanding the rationale behind a rule when trying to circumvent it",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260611-00/?p=112415",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260611-00--a322bf7d.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Windowsカーネルプログラミングのコールバックベストプラクティス解説。AI/LLM/Agent技術と完全に無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Understanding the rationale behind a rule when trying to circumvent it\nSource: https://devblogs.microsoft.com/oldnewthing/20260611-00/?p=112415\nIn the documentation for\nbest practices for implementing process and thread-related callback functions\n, it calls out\nKeep routines short and simple.\nDon’"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "What Happened to tea.xyz",
+      "url": "https://nesbitt.io/2026/06/11/what-happened-to-tea.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-06-11-what-happened-to-tea-html--ad4931af.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ tea.xyzの暗号通貨トークン失敗の調査記。npm/PyPIへのスパム大量公開（70%）、token farming、Proof of Contributionメカニズムの崩壊など。オープンソース資金調達の実験的試みだがAI関連ではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# What Happened to tea.xyz\nSource: https://nesbitt.io/2026/06/11/what-happened-to-tea.html\nOn June 4th,\ntea.xyz\nlaunched what it had been promising since 2022: a cryptocurrency that pays open source maintainers. Within the first hour of official trading, the token fell 75% from its opening price. A "
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "Mark Callaghan (smalldatum)",
+      "title": "Write-heavy sysbench tests, a large server, modern Postgres and MySQL",
+      "url": "https://smalldatum.blogspot.com/2026/06/write-heavy-sysbench-tests-large-server.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/smalldatum.blogspot.com--2026-06-write-heavy-sysbench-tests-large-server-html--aa9017b6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Postgres vs MySQLのデータベースベンチマーク比較。完全に非AI。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Write-heavy sysbench tests, a large server, modern Postgres and MySQL\nSource: https://smalldatum.blogspot.com/2026/06/write-heavy-sysbench-tests-large-server.html\nThis has results for modern Postgres and MySQL using write-heavy tests from sysbench and a large server. I think there are regressions "
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "construction-physics.com",
+      "title": "Biological Evolution and Information Acquisition",
+      "url": "https://www.construction-physics.com/p/biological-evolution-and-information",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/construction-physics.com--p-biological-evolution-and-information--4a71b4bc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 生物進化と情報獲得速度のシミュレーション分析。有性生殖の情報理論的優位性の解説。興味深い内容だがAI/LLM技術とは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Biological Evolution and Information Acquisition\nSource: https://www.construction-physics.com/p/biological-evolution-and-information\nA few weeks ago\nwe looked\nat a\nsimulation of technological evolution\nby economist Brian Arthur, in which he was able to start with simple building blocks (such as a "
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "Mark Callaghan (smalldatum)",
+      "title": "The insert benchmark on a small server, cached workload : Postgres 19 beta1",
+      "url": "https://smalldatum.blogspot.com/2026/06/the-insert-benchmark-on-small-server.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/smalldatum.blogspot.com--2026-06-the-insert-benchmark-on-small-server-html--3b2af5eb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Postgres 19 beta1のInsert Benchmark結果。データベースパフォーマンス計測。非AI。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The insert benchmark on a small server, cached workload : Postgres 19 beta1\nSource: https://smalldatum.blogspot.com/2026/06/the-insert-benchmark-on-small-server.html\nThis has results for Postgres versions 19 beta1, 18.4 and 17.10 with the\nInsert Benchmark\non a small server using a cached and CPU-b"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "The failed 3Com and US Robotics merger",
+      "url": "https://dfarq.homeip.net/the-failed-3com-and-us-robotics-merger/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--the-failed-3com-and-us-robotics-merger--ecdc50a4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 1997年の3Com/US Robotics合併失敗の歴史分析。レトロコンピュータ技術史。AI/LLM技術と完全に無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The failed 3Com and US Robotics merger\nSource: https://dfarq.homeip.net/the-failed-3com-and-us-robotics-merger/?utm_source=rss&utm_medium=rss&utm_campaign=the-failed-3com-and-us-robotics-merger\nOn June 12, 1997, 3Com and US Robotics merged at a cost of $8.5 billion. At the time, it was the merger "
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Plastic: The world has moved on (11 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/11/lapsarianism/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-06-11-lapsarianism--220f83bc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Cory Doctorowのエンシッティフィケーション/政治論エッセイ（Dark Tower analogy）。AIへの言及わずか（vibe codingがKafka-as-a-service化する、の1段落のみ）。政治・社会評論が主。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Pluralistic: The world has moved on (11 Jun 2026)\nSource: https://pluralistic.net/2026/06/11/lapsarianism/\nToday's links\nThe world has moved on (\npermalink\n)\nDouglas Adams wrote, \"Anything that is in the world when you're born is normal and ordinary and is just a natural part of the way the world "
+    }
+  ]
+}

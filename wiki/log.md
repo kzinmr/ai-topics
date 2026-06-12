@@ -14,6 +14,12 @@ Triage decisions: 2 take, 2 reference, 10 skip. References (Tedium eGPU benchmar
 
 ---
 
+## [2026-06-12] Created batch-invariance-deterministic-training concept page
+
+- **🆕 Created [[concepts/batch-invariance-deterministic-training]]** — Concept page covering batch invariance, FP non-associativity, atomicAdd non-determinism, ordered reductions, PyTorch deterministic mode, Flash Attention 4 deterministic support, and practical impact for RL training (GRPO). Source: RL Interview Questions 2026 (Q31). Cross-links to [[flash-attention-4]], [[grpo-rl-training]], [[deepspeed]], [[pretraining-parallelisms]], [[rl-interview-questions-2026]].
+
+---
+
 ## [2026-06-12] Newsletter wiki ingest — Loopcraft, Microsoft Arbor, Recursive SI enrichment
 
 Processed 3 take decisions from newsletter-triage checkpoint (Case C recovery — JSON saved, cron parse failed):
@@ -8498,3 +8504,4 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - 2026-06-11: Wiki health auto-fix: added 20 orphan concept pages to index.md (accelerate, ai-benchmarks/gaia-benchmark, decision-centric-architecture, intelligence-conflation, kernel-evolve, llm-creative-writing, mcp, miles-rl, modelcrafting, multi-teacher-on-policy-distillation, nvidia-egpu-macos, openclaw, physical-ai, pretraining-parallelisms, pydantic-ai, ranking-engineer-agent, resilient-prompt-engineering, rpg-regularized-policy-gradient, vector-db-agent-memory, zero-disk-architecture). Phase 1 (corruption check) clean. Updated section counts.
 - 2026-06-12: Created [[entities/xiuyu-li]] and [[concepts/rl-interview-questions-2026]] from X Article by @sheriyuo. Raw article saved to raw/articles/x-sheriyuo-rl-interview-questions-2026.md. Updated index.md.
 | 2026-06-12 | Updated llm-api-pricing: Sonnet 4.6 ~ removal, Gemini 3.1 Flash Lite, Xiaomi MiMo-7B-RL, Hy3 Preview, Qwen3.7-Max/Plus | comparisons/llm-api-pricing.md |
+- 2026-06-12: Created 5 concept pages to fill RL interview question coverage gaps: [[concepts/batch-invariance-deterministic-training]] (Q31), [[concepts/rl-scaling-boundaries]] (Q15+Q16), [[concepts/grpo-memory-modeling]] (Q20), [[concepts/moe-train-inference-mismatch]] (Q11), [[concepts/rl-exploration-test-time-vs-training]] (Q6). Updated index.md with all entries.
