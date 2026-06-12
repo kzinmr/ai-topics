@@ -2,7 +2,7 @@
 title: "LLM API Pricing Comparison — US vs China Providers"
 type: comparison
 created: 2026-06-09
-updated: 2026-06-11
+updated: 2026-06-12
 tags:
   - comparison
   - pricing
@@ -58,11 +58,12 @@ The models listed below are each provider's **latest generation** as of June 202
 | OpenAI | o3 | Reasoning | $2.00 | $8.00 | $0.50 | — | $1.00 | $4.00 | 200K | 100K | [openai.com](https://developers.openai.com/api/docs/pricing) |
 | OpenAI | o4-mini | Reasoning | $1.10 | $4.40 | $0.275 | — | $0.55 | $2.20 | 200K | 100K | [openai.com](https://developers.openai.com/api/docs/pricing) |
 | Anthropic | Claude Opus 4.8 | Premium | $5.00 | $25.00 | $0.50 | $6.25 | $2.50 | $12.50 | 1M | 128K | [anthropic](https://www.anthropic.com/pricing) |
-| Anthropic | Claude Sonnet 4.6 | Frontier | ~$3.00 | ~$15.00 | ~$0.30 | ~$3.75 | ~$1.50 | ~$7.50 | 200K | — | [anthropic](https://www.anthropic.com/pricing) |
+| Anthropic | Claude Sonnet 4.6 | Frontier | $3.00 | $15.00 | $0.30 | $3.75 | $1.50 | $7.50 | 1M | — | [anthropic](https://www.anthropic.com/pricing) |
 | Anthropic | Claude Haiku 4.5 | Mid | $1.00 | $5.00 | $0.10 | $1.25 | $0.50 | $2.50 | 200K | — | [anthropic](https://www.anthropic.com/pricing) |
 | Anthropic | Claude Fable 5 | Ultra-Premium | $10.00 | $50.00 | ~$1.00 | ~$12.50 | — | — | 1M | 128K | [anthropic](https://www.anthropic.com/pricing) |
 | Google | Gemini 3.5 Flash | Frontier | $1.50 | $9.00 | $0.15 | — | — | — | 1M | — | [ai.google.dev](https://ai.google.dev/pricing) |
 | Google | Gemini 3.1 Pro | Frontier | $2.50 | $10.00 | $0.25 | — | — | — | 1M | — | [ai.google.dev](https://ai.google.dev/pricing) |
+| Google | Gemini 3.1 Flash Lite | Budget | $0.25 | $1.50 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/google/gemini-3.1-flash-lite) |
 | Cohere | Command R+ | Frontier | $3.00 | $15.00 | — | — | — | — | 128K | — | [cohere](https://cohere.com/pricing) |
 
 ### China — Frontier
@@ -71,9 +72,11 @@ The models listed below are each provider's **latest generation** as of June 202
 |----------|-------|------|---------|----------|------------|-------------|----------|-----------|-----|---------|--------|
 | DeepSeek | V4-Flash | Budget | $0.14 | $0.28 | $0.003 | — | — | — | 128K | — | [deepseek](https://platform.deepseek.com) |
 | DeepSeek | V4-Pro | Mid | $0.435 | $0.87 | $0.0036 | — | — | — | 128K | — | [deepseek](https://platform.deepseek.com) |
-| Xiaomi | MiMo-V2.5-Pro | Mid | $1.00 | $3.00 | — | — | — | — | 256K | — | [xiaomi](https://x.com/XiaomiMiMo) |
-| Xiaomi | MiMo-V2.5-Pro (1M) | Mid | $2.00 | $6.00 | — | — | — | — | 1M | — | [xiaomi](https://x.com/XiaomiMiMo) |
-| Tencent | Hy3 Preview | Budget | ~$0.07 | ~$0.26 | — | — | — | — | 128K | — | [tencent](https://www.tencent.com) |
+| Qwen | Qwen3.7-Max | Frontier | $1.25 | $3.75 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/qwen/qwen3.7-max) |
+| Qwen | Qwen3.7-Plus | Mid | $0.32 | $1.28 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/qwen/qwen3.7-plus) |
+| Xiaomi | MiMo-7B-RL | Budget | $0.15 | $0.60 | $0.0375 | — | — | — | 128K | — | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
+| Xiaomi | MiMo-7B-RL-1M | Budget | $0.30 | $1.20 | $0.075 | — | — | — | 1M | — | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
+| Tencent | Hy3 Preview | Budget | $0.063 | $0.21 | — | — | — | — | 256K | — | [openrouter](https://openrouter.ai/tencent/hy3-preview) |
 
 ### China — Budget / Regional
 
@@ -122,7 +125,7 @@ Sorted by cache read price — the price you actually pay for repeated input tok
 | Google | Gemini 3.5 Flash | $1.50 | $0.15 | 90% | **$0.42** |
 | Google | Gemini 3.1 Pro | $2.50 | $0.25 | 90% | **$0.70** |
 | Anthropic | Claude Haiku 4.5 | $1.00 | $0.10 | 90% | **$0.28** |
-| Anthropic | Claude Sonnet 4.6 | ~$3.00 | ~$0.30 | 90% | **~$0.84** |
+| Anthropic | Claude Sonnet 4.6 | $3.00 | $0.30 | 90% | **$0.84** |
 | Anthropic | Claude Opus 4.8 | $5.00 | $0.50 | 90% | **$1.40** |
 | Anthropic | Claude Fable 5 | $10.00 | ~$1.00 | ~90% | **~$2.80** |
 | OpenAI | GPT-5.4-nano | $0.20 | $0.02 | 90% | **$0.056** |
@@ -143,7 +146,7 @@ Anthropic requires explicit cache writes (+25% premium). Break-even: **~1.4 subs
 | Model | Base In | Cache Write | Cache Read | Break-even |
 |-------|---------|-------------|------------|------------|
 | Claude Haiku 4.5 | $1.00 | $1.25 | $0.10 | 1.4 calls |
-| Claude Sonnet 4.6 | ~$3.00 | ~$3.75 | ~$0.30 | ~1.4 calls |
+| Claude Sonnet 4.6 | $3.00 | $3.75 | $0.30 | 1.4 calls |
 | Claude Opus 4.8 | $5.00 | $6.25 | $0.50 | 1.4 calls |
 | Claude Fable 5 | $10.00 | ~$12.50 | ~$1.00 | ~1.4 calls |
 
@@ -162,7 +165,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | OpenAI | o3 | $2.00 | $1.00 | $8.00 | $4.00 | $2.00 |
 | OpenAI | o4-mini | $1.10 | $0.55 | $4.40 | $2.20 | $1.10 |
 | Anthropic | Claude Haiku 4.5 | $1.00 | $0.50 | $5.00 | $2.50 | $1.30 |
-| Anthropic | Claude Sonnet 4.6 | ~$3.00 | ~$1.50 | ~$15.00 | ~$7.50 | ~$3.90 |
+| Anthropic | Claude Sonnet 4.6 | $3.00 | $1.50 | $15.00 | $7.50 | $3.90 |
 | Anthropic | Claude Opus 4.8 | $5.00 | $2.50 | $25.00 | $12.50 | $6.50 |
 | Anthropic | Claude Fable 5 | $10.00 | — | $50.00 | — | — |
 
@@ -178,7 +181,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 |----------|-------|---------|----------|------------|----------|-------------|
 | DeepSeek | V4-Flash | $0.14 | $0.28 | $0.003 | $0.18 | Cheapest frontier-class; best cache |
 | DeepSeek | V4-Pro | $0.435 | $0.87 | $0.0036 | $0.52 | Best intelligence/price; 99.2% cache |
-| Xiaomi | MiMo-V2.5-Pro | $1.00 | $3.00 | — | $1.40 | Agentic coding specialist |
+| Xiaomi | MiMo-7B-RL | $0.15 | $0.60 | $0.0375 | $0.26 | Cheapest China frontier; 75% cache |
 
 *Blended = weighted cost at 4:1 input:output ratio.
 
@@ -191,7 +194,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | OpenAI | GPT-5.4-mini | $0.75 | $4.50 | $0.075 | $1.50 | Speed + cost |
 | Google | Gemini 3.5 Flash | $1.50 | $9.00 | $0.15 | $2.40 | 90% cache discount + speed |
 | Google | Gemini 3.1 Pro | $2.50 | $10.00 | $0.25 | $3.50 | 1M native context |
-| Anthropic | Claude Sonnet 4.6 | ~$3.00 | ~$15.00 | ~$0.30 | ~$5.40 | Strong coding; 90% cache |
+| Anthropic | Claude Sonnet 4.6 | $3.00 | $15.00 | $0.30 | $5.40 | Strong coding; 90% cache |
 | Cohere | Command R+ | $3.00 | $15.00 | — | $5.40 | Enterprise RAG |
 
 ### Reasoning
@@ -224,7 +227,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | Google | Gemini 3.5 Flash | $2.40 | **$0.78** |
 | Google | Gemini 3.1 Pro | $3.50 | **$1.10** |
 | Anthropic | Claude Haiku 4.5 | $1.80 | **$0.50** |
-| Anthropic | Claude Sonnet 4.6 | ~$5.40 | **~$1.56** |
+| Anthropic | Claude Sonnet 4.6 | $5.40 | **$1.56** |
 | Anthropic | Claude Opus 4.8 | $9.00 | **$2.30** |
 | Anthropic | Claude Fable 5 | ~$18.00 | **~$4.60** |
 | Cohere | Command R+ | $5.40 | — |
@@ -239,7 +242,7 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 | OpenAI | GPT-5.4 | $8.75 |
 | Google | Gemini 3.5 Flash | $5.25 |
 | Anthropic | Claude Haiku 4.5 | $3.00 |
-| Anthropic | Claude Sonnet 4.6 | ~$9.00 |
+| Anthropic | Claude Sonnet 4.6 | $9.00 |
 | Anthropic | Claude Opus 4.8 | $15.00 |
 | Anthropic | Claude Fable 5 | $30.00 |
 
@@ -360,6 +363,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 | 2026-06-09 | Initial creation | User-provided CSV + wiki entity pages |
 | 2026-06-11 | Added Claude Fable 5 ($10/$50 MTok); new "Ultra-Premium" tier | Anthropic blog |
 | 2026-06-11 | Corrected GPT-5.5 pricing ($5/$30 not ~$1.25/$10); added GPT-5.4/5.4-mini/5.4-nano full lineup; updated OpenAI cache from 50% to 90% (GPT-5.x); moved GPT-5.1/5.2/5 to Legacy | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| 2026-06-12 | Removed `~` from Claude Sonnet 4.6 (verified $3/$15); added Gemini 3.1 Flash Lite ($0.25/$1.50); updated Xiaomi MiMo to MiMo-7B-RL ($0.15/$0.60, 128K + $0.30/$1.20, 1M, cache 75%); updated Hy3 Preview ($0.063/$0.21, 256K); added Qwen3.7-Max ($1.25/$3.75, 1M) and Qwen3.7-Plus ($0.32/$1.28, 1M) | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go), [openrouter](https://openrouter.ai/tencent/hy3-preview) |
 
 ---
 
@@ -369,7 +373,7 @@ o3/o4-mini cost 2–4x comparable non-reasoning models due to internal chain-of-
 - [[entities/anthropic]] — Anthropic model details and pricing history
 - [[entities/google]] — Google AI offerings and Gemini pricing
 - [[entities/deepseek]] — DeepSeek V4 pricing strategy and KV cache economics
-- [[entities/xiaomi-mimo]] — MiMo-V2.5 pricing details
+- [[entities/xiaomi-mimo]] — MiMo-7B-RL pricing details
 - [[entities/tencent-hy3]] — Tencent Hy3 pricing via OpenRouter
 - [[concepts/claude/models]] — Claude model family (Opus 4.5→4.8)
 - [[concepts/claude/fable-5]] — Claude Fable 5 pricing, capabilities, and safety architecture
