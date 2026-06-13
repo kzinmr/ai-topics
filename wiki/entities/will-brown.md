@@ -212,3 +212,4 @@ See [[concepts/post-training/rl-harness-lifecycle]] for the full analysis.
 - [Latent Space Podcast: Multi-Turn RL for Multi-Hour Agents](https://www.latent.space/p/willccbb)
 - [Prime Intellect Research Page](https://willcb.com/research/)
 - [GitHub: willccbb](https://github.com/willccbb)
+- [[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript]] — Lesson 2 raw transcript from Production-Ready Agent Engineering course (MCP, production patterns, security, observability)

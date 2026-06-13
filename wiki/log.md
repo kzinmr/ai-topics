@@ -1,3 +1,11 @@
+## [2026-06-13 04:00 UTC] Raw Backlog Ingest — Batch of 5, 1 entity enriched, 4 already covered
+
+**Batch composition**: MAI-Thinking-1 tech report (372KB), Dwarkesh/Imas/Trammell AGI economics (71KB), Dario Amodei AI policy essay (62KB), Will Brown Lesson 2 raw transcript (50KB), Ed Zitron AI ROI article (47KB).
+
+**Enriched**: [[entities/will-brown]] — Added raw transcript file as source for Lesson 2 MCP + Production-Grade Agents.
+
+**Already covered (no action)**: MAI-Thinking-1 → `concepts/mai-thinking-1-tech-report.md` (227 lines). AGI Economics → `concepts/agi-economics.md` (93 lines). Dario Amodei policy → `entities/dario-amodei.md` (226 lines, 5-area framework). Ed Zitron ROI → `entities/ed-zitron.md` (468 lines, enterprise cost crisis section). Lesson 2 transcript → `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` (540 lines).
+
 ## [2026-06-12 11:04 UTC] Active Crawl — 3 pages created/enriched, 6 raw articles saved
 
 **Trend sources**: HN Algolia (2,603 pts on Claude Fable 5), X/Twitter trending, blogwatcher DB, wiki gap analysis. Dominant theme: Anthropic Claude Fable 5 launch + invisible guardrail controversy.
