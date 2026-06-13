@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 2506 | Indexed entries: 2057 | Concepts: 1678 | Entities: 786
+> Last updated: 2026-06-13 | Total pages: 2506 | Indexed entries: 2077 | Concepts: 1698 | Entities: 786
 
 ## Entities (786 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -50,6 +50,8 @@
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer — Open-source skill bundle for Claude Code and Codex that brings professional evaluation engineering into coding agent workflows. Created by Pratik Bhavsar at Galileo Agent Labs (May 2026).
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
+- [[concepts/db9-filesystem-sql|db9 Filesystem + SQL Pattern for Agent Workflows]] — Agent workflow architecture using PostgreSQL with filesystem extensions
+- [[concepts/death-of-browser|Death of the Browser]] — Analysis of browser's declining role as AI agents shift to API-native interaction
 - [[concepts/gemini/gemini-cli]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.
 - [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
@@ -151,6 +153,19 @@
 - [[entities/amp]] — **Amp** — Coding agent CLI developed at Sourcegraph by Thorsten Ball. Frontier-chasing philosophy: editor extensions killed Feb 2026, CLI rebuilt as Neo (May 2026) with auto-compaction, Plugin API, remote control. Author of "The Coding Agent Is Dead" manifesto.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia). Co-founder OpenAI, Tesla AI, Eureka Labs. Joined Anthropic pre-training team (May 2026). Coined vibe coding / agentic engineering.
 - [[entities/andrew-nesbitt]] — OSS metadata expert (Ecosyste.ms). Supply chain security, package management, agent skills registry threat models. CHAOSS metrics AI-broken-metrics analysis published May 2026.
+- [[concepts/gpt/decoder-only|Decoder-Only GPT Architecture]] — Foundation architecture of modern LLMs, transformer decoder stack
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding|Vibe Coding]] — AI-assisted coding where agents handle implementation details
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use|Advanced Tool Use]] — Anthropic's three advanced tool-use features for large-scale agent deployment
+- [[concepts/harness-engineering/system-architecture/ai-memory-systems|AI Memory Systems]] — Comparison of memory system philosophies across ChatGPT, Claude, and Cognition
+- [[concepts/harness-engineering/system-architecture/building-effective-agents|Building Effective Agents]] — Anthropic's practical guidelines for building LLM agents
+- [[concepts/harness-engineering/system-architecture/claude-code-best-practices|Claude Code Best Practices]] — Official Anthropic best practices for agentic coding with Claude Code
+- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp|Code Execution with MCP]] — MCP servers exposed as code API for agent tool use
+- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents|Evals for AI Agents]] — Systematic guide to evaluating AI agents
+- [[concepts/harness-engineering/system-architecture/multi-agent-research-system|Multi-Agent Research System]] — Anthropic research system operating multiple Claude agents in parallel
+- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents|Writing Effective Tools for AI Agents]] — Anthropic's tool design methodology for AI agents
+- [[concepts/inference/llama-cpp|llama.cpp]] — High-performance C/C++ inference engine for LLMs, GGUF format
+- [[concepts/inference/sglang|SGLang]] — Structured generation language and inference serving framework from LMSYS Org
+- [[concepts/local-llm/dgx-spark-nim|DGX Spark]] — NVIDIA DGX Spark desktop AI supercomputer for local LLM inference
 - [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-llm/local-ai]]
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
@@ -166,6 +181,11 @@
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "Building Pi With Pi" (May 2026) on AI slop in open source, "Clanker: A Word For The Machine" (May 2026) on resisting anthropomorphization of AI systems, and "Gaslighting Openness" (Jun 2026) critiquing Anthropic's open-source distillation restrictions. Former Sentry principal architect. [[concepts/harness-engineering/agent-ergonomics]] [[concepts/ai-slop]]
 - [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework. Hermes harness architecture analyst (@atal on X).
+- [[concepts/local-llm/model-distillation|Model Distillation]] — Knowledge distillation techniques for compressing large LLMs
+- [[concepts/local-llm/model-quantization|Model Quantization for Local LLMs]] — Quantization techniques for deploying LLMs on local hardware
+- [[concepts/local-llm/self-hosting-ai-development|Self-Hosting AI for Development]] — Practical considerations for running local AI infrastructure
+- [[concepts/local-llm/server-dgx-spark|Local LLM Server Setup on DGX Spark]] — Setup guide for DGX Spark with NemoClaw integration
+- [[concepts/openclaw/architecture-comparison|OpenClaw vs Hermes — Architecture Comparison]] — Side-by-side source code study comparing two agent harness frameworks
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/avichawla]] — **X** | @_avichawla | AI/ML educator, co-founder @dailydoseofds_. Ex-Mastercard AI. IIT Varanasi. Tutorials on DS, ML, LLMs, RAGs, RL for agents. Author of "System Prompt Learning" X Article (2026-04-28).
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI (first agentic CRM), builder-as-artist philosophy, solar car racer, NASA satellite engineer
@@ -805,7 +825,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1682 pages)
+## Concepts (1702 pages)
 
 ## Events (9 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
