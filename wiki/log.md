@@ -1,3 +1,9 @@
+## [2026-06-13 18:20 UTC] Dreaming Wiki Ingest — Recovery (Case C1)
+**Status**: Cron output parse failed (JSON in markdown wrapper); checkpoint recovered from `triage_latest.json`.
+**Verification**: Independent check confirmed all 6 decisions correct — all articles genuinely captured by existing wiki pages.
+**Recovery**: Triage agent already committed inline (3b2e578d: "dreaming: consolidation 2026-06-13"). No additional wiki changes needed.
+**Archive**: All 6 skip items already archived (dedup).
+
 ## [2026-06-13] Dreaming Consolidation — Near-Complete Duplicate Coverage
 
 **Articles scanned**: 6 | **Already covered**: 5 | **Gaps filled**: 1 (minor entity update)
