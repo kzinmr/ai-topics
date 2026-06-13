@@ -1,3 +1,14 @@
+## [2026-06-13 20:00 UTC] Raw Backlog Ingest — Batch 5-article saturation check
+**Status**: All 5 candidates already processed in prior runs. Takes=0 (normal for saturated pipeline).
+**Articles evaluated**:
+- MAI-Thinking-1 Tech Report (372KB, 109p) → skip: `concepts/mai-thinking-1-tech-report.md` (227 lines, complete architecture/GRPO/benchmark coverage). Appeared in 6+ prior backlog batches.
+- Dwarkesh × Imas/Trammell AGI Economics (71KB) → skip: `concepts/agi-economics.md` (93 lines) + `entities/dwarkesh-patel.md` (timeline entry). Already archived.
+- Dario Amodei Policy on AI Exponential (62KB) → skip: `entities/dario-amodei.md` (226 lines, 5-area framework). Already archived.
+- Ed Zitron AI Doesn't Have ROI (47KB) → skip: `entities/ed-zitron.md` (470 lines, dedicated ROI section). Already archived. Sources frontmatter includes raw article path.
+- Will Brown Lesson 2 Raw Transcript (50KB) → skip: `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` (540 lines structured). Course portal `concepts/agents-mcp-rl-course.md` integrates all lessons.
+**Triage JSON**: saved to `/opt/data/.hermes/cron/data/newsletter/triage_latest.json` (5 decisions, all skip).
+**Archive**: All 5 items already archived (dedup confirmed via archive_triage.py).
+
 ## [2026-06-13 18:20 UTC] Dreaming Wiki Ingest — Recovery (Case C1)
 **Status**: Cron output parse failed (JSON in markdown wrapper); checkpoint recovered from `triage_latest.json`.
 **Verification**: Independent check confirmed all 6 decisions correct — all articles genuinely captured by existing wiki pages.
