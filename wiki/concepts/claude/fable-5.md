@@ -294,6 +294,7 @@ This represents the first known case of a government forcing the complete withdr
 - **Jailbreak threshold for recall**: Whether the discovery of a narrow, non-universal jailbreak warrants full model withdrawal
 - **Government-lab relations**: The tension between Anthropic's stated belief in government oversight and the government's unilateral action without transparent process
 - **Precedent**: If narrow jailbreaks justify recalls, this standard could prevent any frontier model from remaining deployed
+- **Sovereignty risk reframing**: Engineers reframed the incident as a **sovereignty risk** rather than a pure policy/security story — closed frontier APIs can disappear overnight due to export controls beyond any single company's control. This reframing shifts the discussion from "what jailbreaks are possible" to "who controls access to frontier AI infrastructure" and aligns with [[concepts/open-vs-closed-model-gap]] arguments for model weight portability
 
 ## Early Customer Feedback
 

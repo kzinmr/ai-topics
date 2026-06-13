@@ -1,3 +1,16 @@
+## [2026-06-13 07:50 UTC] Newsletter Wiki Ingest — 4 newsletters triaged, 2 references enriched
+
+**Recovery**: Downstream newsletter-triage (07:24) failed to parse cron-wrapped JSON output. Checkpoint recovered from pipeline path (`${HERMES_HOME}/cron/data/newsletter/triage_latest.json`). 4 newsletters (AINews/swyx, Simon Willison, AI by Aakash, Superintel/behiiv) processed.
+
+**Enriched**: [[concepts/claude/fable-5]] — Added sovereignty risk reframing to US Government Export Control Directive significance section. Engineers reframed the incident as a sovereignty risk (rather than pure policy/security), arguing closed frontier APIs can disappear overnight due to export controls.
+**Source**: AINews June 13 — sovereignty risk reframing
+
+**Enriched**: [[entities/kimi|Moonshot AI / Kimi]] — Added comprehensive Kimi K2.7 Code section (35 lines) covering: ~30% fewer reasoning tokens vs K2.6, benchmark improvements (+21.8% Kimi Code Bench v2, +11.0% Program Bench, +31.5% MLS Bench Lite), Fireworks serving tiers (Standard/Priority/Fast), token efficiency economics for agentic workloads. Updated model timeline table, frontmatter, and References.
+**Source**: raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code, AINews June 13
+
+**Skips (7)**: DeepSWE replaces SWE-Bench Pro (already covered), Huawei OpenPangu 2.0 (Reddit link only), Diffusion Gemma 26B (Reddit link), Open Source AI Advocates trend (observation only), Simon Willison Claude Fable newsletter (already in entities/simon-willison.md), AI by Aakash /goal command (already in claude-code-goal.md), Superintel Prometheus (beehiiv token expired).
+**Archived**: Newsletter archive at raw/archived/triage/newsletter/2026-06-13_20260613T071040Z.json (9 items).
+
 ## [2026-06-13 04:00 UTC] Raw Backlog Ingest — Batch of 5, 1 entity enriched, 4 already covered
 
 **Batch composition**: MAI-Thinking-1 tech report (372KB), Dwarkesh/Imas/Trammell AGI economics (71KB), Dario Amodei AI policy essay (62KB), Will Brown Lesson 2 raw transcript (50KB), Ed Zitron AI ROI article (47KB).

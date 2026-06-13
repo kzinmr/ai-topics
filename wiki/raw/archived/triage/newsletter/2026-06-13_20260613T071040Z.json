@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-06-13T07:24:21.925627+00:00",
+  "triage_run_id": "20260613T071040Z",
+  "source": "newsletter",
+  "summary_ja": "4つのニュースレター（Superintel/behiiv, AINews/swyx, Simon Willison, AI by Aakash）をトリアージ。全80リンクのうち、実質的な記事対象は4ニュースレター各1件ずつ。Fable 5輸出管理停止の主権リスクフレーミング（AINews）とKimi K2.7 Code参照（AINews）の2件をreference、残りをskipとして判定。既存Wikiカバレッジが広範で、新規テイクなし。Simon WillisonニュースレターのFable 5感想記事はentities/simon-willison.mdに既収録。AI by Aakashの/goal解説はconcepts/claude-code/claude-code-goal.mdに既収録。Superintel/behiivのPrometheus記事はトラッキングトークン期限切れで本文取得不可。AINewsのFable/Mythos輸出管理関連はfable-5.mdに包括的セクション済み（sovereignty riskフレーミングのみ未収録）。",
+  "decisions": [
+    {
+      "item_id": "<20260613043052.3.ab1239ad5498140f@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "AINews (swyx)",
+      "title": "[AINews] Fable and Mythos officially too dangerous to release — Model Sovereignty Framing",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-fable-and-mythos-officially",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-13-ainews-fable-and-mythos-officially-too-dangerous-to-release.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Fable 5の米国輸出管理停止に関する既存セクション（fable-5.md#US-Government-Export-Control-Directive）は包括的だが、AINewsで言及された「エンジニアがこれを主権リスク（sovereignty risk）として再定義」したフレーミングは未収録。閉じたフロンティアAPIが一夜で使えなくなるリスクを、ポリシー問題ではなく主権リスクとして捉える視点は、モデルガバナンスの議論に新しい角度を提供する。fable-5.mdへの軽微な参照追記（1-2行）に値する。",
+      "candidate_wiki_path": "concepts/claude/fable-5.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-13\n**Subject:** [AINews] Fable and Mythos officially too dangerous to release\n**Collected:** 2026-06-13T07:10:39.186397+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cm"
+    },
+    {
+      "item_id": "<20260613001943.3.b39f43de81b50b8d@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Simon Willison's Newsletter",
+      "title": "Claude Fable is relentlessly proactive",
+      "url": "https://open.substack.com/pub/simonw/p/claude-fable-is-relentlessly-proactive",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-13-claude-fable-is-relentlessly-proactive.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本ニュースレターはSimon Willisonの週刊ラウンドアップ。メイン記事「Claude Fable 5の先回り的デバッグ体験」はentities/simon-willison.mdの「Claude Fable 5's Relentlessly Proactively Debugging」セクションで既に詳細に収録済み（429行目、datasette-agentのscrollbar bug修正の全工程含む）。追加リンク（Datasette Agent, agentsview.io, gist等）はSimomの既存プロジェクト関連で新規Wiki価値なし。スポンサー記事も対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-13\n**Subject:** Claude Fable is relentlessly proactive\n**Collected:** 2026-06-13T07:10:38.013635+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zaW1vbncuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jY"
+    },
+    {
+      "item_id": "<20260612212105.3.9c81ccbe264f935a@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "AI by Aakash",
+      "title": "/goal Command in Claude Code: Stop Typing 'Keep Going'",
+      "url": "https://open.substack.com/pub/aibyaakash/p/goal-command-claude-code",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-12-goal.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Claude Codeの/goal機能解説記事。concepts/claude-code/claude-code-goal.md（177行）は/goalのアーキテクチャ（Stop Hook方式、Haiku evaluator）、Codex /goalとの比較、プロンプトテンプレート、failure modeまで既に網羅的にカバー済み。Aakashの記事は使い方の解説（プロンプト例、workflow tips）が中心で、既存Wikiページに新規情報を追加しない。付随リンク（Perplexity Computer, DreamBeans, Ideogram 4.0等）はラウンドアップ形式で深掘り不足。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-12\n**Subject:** /goal.\n**Collected:** 2026-06-13T07:10:36.797463+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYWlieWFha2FzaC5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyP"
+    },
+    {
+      "item_id": "<20260612.182548.e4cb3535@mta38>-1",
+      "source": "newsletter",
+      "source_name": "Superintel / getsuperintel",
+      "title": "🛠️ Bezos's Prometheus Bets on Physical AI",
+      "url": "https://link.mail.beehiiv.com/v1/c/%2BCAQ4DWPdj7BW2RQXuHRerTP1qUkecs%2F2Xxfoo70%2Fo0ao3BTnVR3x3d6vV5m%0A5e4Q1Ik%2Fmqe8L9hWCzjEswHKKrG75W1CkZTmHINakNbyekK2Z5H2oYrlHJEA%0A2sLu3K3%2BL%2FU2c5gIJzWs4y1Z051oS1%2FlMOArAtIIigUWO7aa1mRBZV6Vji0s%0AZRmk%2Bc7t5CPwOJPGo%2Bg8d1wnU8HI%2FxmW7g%3D%3D%0A/e65f045ad0f75697",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-12-bezos-s-prometheus-bets-on-physical-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 2026-06-12送信のbeehiivニュースレターで、20リンク全てがHTTP 403（期限切れトラッキングトークン）。本文にアクセス不可のため、Bezos/PrometheusのPhysical AI投資に関する具体的な新情報を確認できない。entities/project-prometheus.md（44行、4月28日作成）は基本情報のみで更新が必要だが、記事本文なしでは検証不能。inbox summaryのトピック推定のみではWiki取り込みに不十分。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-12\n**Subject:** 🛠️ Bezos’s Prometheus Bets on Physical AI\n**Collected:** 2026-06-13T07:10:35.695428+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/%2BCAQ4DWPdj7BW2RQXuHRerTP1qUkecs%2F2Xxfoo70%2Fo0ao3BTnVR3x3d6vV5m%0A5e4Q1Ik%2Fmqe8"
+    }
+  ]
+}

@@ -10,9 +10,9 @@ tags:
   - china
   - open-source
 created: 2026-04-30
-updated: 2026-06-04
+updated: 2026-06-13
 type: entity
-sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]"]
+sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]"]
 ---
 
 # Moonshot AI / Kimi
@@ -82,6 +82,7 @@ Moonshot has maintained a rapid **2–3 month major-update cadence** since mid-2
 | **K2-Thinking** | Nov 2025 | Chain-of-thought reasoning variant; outperformed GPT-5 and Claude 4.5 on key benchmarks |
 | **Kimi K2.5** | Jan 2026 | Multimodal MoE + **MoonViT** vision encoder (400M params); native video/image + Agent Swarm v1 |
 | **Kimi K2.6** | Apr 2026 | **Current flagship** — 12-hour execution, 300-agent swarms, long-horizon coding |
+| **Kimi K2.7 Code** | Jun 2026 | Coding-optimized reasoning variant (~30% fewer tokens than K2.6); Fireworks Day-0 |
 
 ### Open-Weight Licensing
 
@@ -168,6 +169,41 @@ K2.6 is the first LLM to integrate agent swarm capabilities natively into the tr
 - **Cloudflare Workers AI** — Day-0 support via `@cf/moonshotai/kimi-k2.6`
 - **Hugging Face** — open weights: `moonshotai/Kimi-K2.6`
 - **Local GGUF** — community quantizations (Q4_X variants, ~8GB VRAM)
+
+---
+
+## Kimi K2.7 Code — Coding Agent Optimization
+
+Kimi K2.7 Code, released June 12, 2026, is a **coding-optimized reasoning variant** of the K2.6 architecture. Same 1T/32B MoE with 256K context, but tuned specifically for long-horizon agentic coding with reduced reasoning token overhead.
+
+### Key Differentiator: Token Efficiency
+
+The defining feature of K2.7 Code is **~30% fewer reasoning tokens than K2.6** while achieving higher benchmark scores:
+
+| Feature | K2.7 Code vs K2.6 |
+|---------|-------------------|
+| **Kimi Code Bench v2** | +21.8% |
+| **Program Bench** | +11.0% |
+| **MLS Bench Lite** | +31.5% |
+| **Reasoning tokens** | ~30% fewer |
+
+The significance: for agentic tasks where each call carries the full conversation history, 30% fewer reasoning tokens compounds across the entire trajectory — shorter generations at each turn, smaller context windows on subsequent turns, faster loops, and fewer retries. Per-token pricing ($0.95/M input, $4.00/M output) mirrors K2.6, but **cost per completed task is meaningfully lower**.
+
+### Serving Options (Fireworks)
+
+| Tier | Description | Multiplier |
+|------|-------------|------------|
+| **Standard** | Elastic pay-per-token default | 1× |
+| **Priority** | Stronger admission control during congestion | ~1.5× |
+| **Fast** | Dedicated high-throughput path (100+ tok/s) | ~2× (coming soon) |
+
+### Availability
+
+- **[Fireworks AI](https://fireworks.ai/blog/kimi-k2p7-code)** — Day-0 serverless (Standard and Priority)
+- **[Hugging Face](https://huggingface.co/moonshotai/Kimi-K2.7-Code)** — Open weights
+- Model path: `accounts/fireworks/models/kimi-k2p7-code`
+
+Sources: [[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]], AINews June 13
 
 ---
 
@@ -267,5 +303,7 @@ Moonshot has maintained the leading position among **Chinese open-source model l
 - [Kimi K2.6 on Hugging Face](https://huggingface.co/moonshotai/Kimi-K2.6)
 - [Kimi K2.6 Blog Post](https://www.kimi.com/blog/kimi-k2-6)
 - [Kimi K2.6 on Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/models/kimi-k2.6/)
+- [Kimi K2.7 Code on Fireworks](https://fireworks.ai/blog/kimi-k2p7-code)
+- [Kimi K2.7 Code on Hugging Face](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
 - [Wikipedia: Moonshot AI](https://en.wikipedia.org/wiki/Moonshot_AI)
 - [Wikipedia: Kimi (chatbot)](https://en.wikipedia.org/wiki/Kimi_(chatbot))

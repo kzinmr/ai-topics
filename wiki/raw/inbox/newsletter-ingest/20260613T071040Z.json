@@ -1,0 +1,94 @@
+{
+  "run_id": "20260613T071040Z",
+  "triaged_at": "2026-06-13T07:15:00+00:00",
+  "total_newsletters": 4,
+  "total_articles": 80,
+  "note": "All links are tracking redirects (beehiiv/substack). Resolved URLs required for downstream ingestion. Classification based on subject lines and source metadata.",
+  "classifications": [
+    {
+      "subject": "Claude Fable is relentlessly proactive",
+      "date": "2026-06-13",
+      "source_label": "uid=222",
+      "platform": "substack",
+      "publication": "Simon Willison (simonw, publication_id=1173386)",
+      "post_id": "201817505",
+      "canonical_url": "https://open.substack.com/pub/simonw/p/claude-fable-is-relentlessly-proactive",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-13-claude-fable-is-relentlessly-proactive.md",
+      "article_count": 20,
+      "classification": "critical",
+      "reason": "Simon Willison (tracked wiki entity, primary AI opinion leader) writing about 'Claude Fable' — appears to be a new Anthropic model/capability described as 'relentlessly proactive'. Directly relevant to Claude model evolution, AI safety, agent proactivity. Canonical URL available.",
+      "action": "fetch_canonical_and_ingest",
+      "related_wiki_topics": ["claude", "anthropic", "simon-willison", "llm-releases", "ai-safety", "ai-agents"],
+      "links_resolvable": true,
+      "link_format": "substack_with_canonical"
+    },
+    {
+      "subject": "[AINews] Fable and Mythos officially too dangerous to release",
+      "date": "2026-06-13",
+      "source_label": "uid=223",
+      "platform": "substack",
+      "publication": "swyx / AINews (publication_id=1084089)",
+      "post_id": "201830785",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/ainews-fable-and-mythos-officially",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-13-ainews-fable-and-mythos-officially-too-dangerous-to-release.md",
+      "article_count": 20,
+      "classification": "critical",
+      "reason": "swyx's AINews covering Claude 'Fable' and 'Mythos' models deemed too dangerous to release. Signals major AI safety event — Anthropic withholding model release. Core wiki topics: AI safety, model governance, Anthropic strategy. Canonical URL available.",
+      "action": "fetch_canonical_and_ingest",
+      "related_wiki_topics": ["ai-safety", "anthropic", "claude", "model-governance", "fable", "mythos"],
+      "links_resolvable": true,
+      "link_format": "substack_with_canonical"
+    },
+    {
+      "subject": "/goal.",
+      "date": "2026-06-12",
+      "source_label": "uid=221",
+      "platform": "substack",
+      "publication": "aibyaakash (publication_id=5747120)",
+      "post_id": "200656797",
+      "canonical_url": "https://open.substack.com/pub/aibyaakash/p/goal-command-claude-code",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-12-goal.md",
+      "article_count": 20,
+      "classification": "critical",
+      "reason": "About Claude Code's /goal command — directly relevant to AI coding agents and developer workflows. Canonical URL available from Substack open link. Author 'aibyaakash' covers Claude Code workflow.",
+      "action": "fetch_canonical_and_ingest",
+      "related_wiki_topics": ["claude-code", "coding-agents", "ai-agent-workflows"],
+      "links_resolvable": true,
+      "link_format": "substack_with_canonical"
+    },
+    {
+      "subject": "🛠️ Bezos's Prometheus Bets on Physical AI",
+      "date": "2026-06-12",
+      "source_label": "uid=220",
+      "platform": "beehiiv",
+      "publication": "unknown beehiiv newsletter",
+      "canonical_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-12-bezos-s-prometheus-bets-on-physical-ai.md",
+      "article_count": 20,
+      "classification": "high",
+      "reason": "Bezos's Prometheus venture investing in physical AI/robotics. Relevant to AI investment landscape and embodied AI trends. All 20 links are opaque beehiiv tracking redirects — cannot resolve without HTTP.",
+      "action": "resolve_links_and_ingest",
+      "related_wiki_topics": ["ai-investment", "embodied-ai", "robotics", "physical-ai"],
+      "links_resolvable": false,
+      "link_format": "beehiiv_tracking"
+    }
+  ],
+  "summary": {
+    "critical": 3,
+    "high": 1,
+    "low": 0,
+    "actionable_with_canonical_urls": 3,
+    "needs_link_resolution": 1,
+    "key_themes": [
+      "Claude Fable/Mythos — new Anthropic models, possible safety holdback (top story, covered by both Simon Willison and swyx/AINews)",
+      "Claude Code /goal command — coding agent developer workflow",
+      "Physical AI investment (Bezos/Prometheus) — embodied AI trend"
+    ],
+    "recommended_priority": [
+      "Fetch and ingest Simon Willison's Claude Fable article — likely contains detailed first-hand analysis of new Anthropic model capabilities",
+      "Fetch swyx AINews on Fable/Mythos safety holdback — AI safety and governance implications",
+      "Fetch aibyaakash's /goal article — Claude Code agent workflow documentation",
+      "Resolve beehiiv tracking links for Bezos/Prometheus newsletter if time permits"
+    ]
+  }
+}
