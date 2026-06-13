@@ -8697,3 +8697,19 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - **log.md**: Fixed 5 missing `---` section separators
 - **x_accounts job**: Reported stale (26h) — needs human investigation
 - **Missing index entries**: 1 entity + 556 concepts not in index — needs batch-add (exceeds 20/run limit)
+
+## [2026-06-13] Wiki Health Auto-Fix — Orphan Indexing
+
+**20 orphan concept pages** added to index.md in alphabetical order:
+- concepts/db9-filesystem-sql, concepts/death-of-browser, concepts/gpt/decoder-only
+- concepts/harness-engineering/agentic-workflows/vibe-coding
+- concepts/harness-engineering/system-architecture/* (advanced-tool-use, ai-memory-systems, building-effective-agents, claude-code-best-practices, code-execution-with-mcp, evals-for-ai-agents, multi-agent-research-system, writing-tools-for-agents)
+- concepts/inference/llama-cpp, concepts/inference/sglang
+- concepts/local-llm/* (dgx-spark-nim, model-distillation, model-quantization, self-hosting-ai-development, server-dgx-spark)
+- concepts/openclaw/architecture-comparison
+
+**No corruption** found in index.md (pipe/line-num/triple-bracket/space all 0).
+**No ghost entries** (0 missing files for indexed pages).
+**Orphans reduced**: 548 → 528 (−20)
+**Index entries**: 2047 → 2067 (+20)
+**Concepts count**: 1678 → 1698 (+20, header) / 1682 → 1702 (section)
