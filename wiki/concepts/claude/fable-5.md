@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-06-12
+updated: 2026-06-13
 tags:
   - model
   - claude-fable-5
@@ -29,6 +29,7 @@ sources:
   - raw/articles/2026-06-10_theverge_anthropic-apologizes-invisible-claude-fable-guardrails.md
   - raw/articles/2026-06-10_jonready_claude-fable5-hidden-guardrails-sabotage.md
   - raw/articles/2026-06-11_simonwillison_claude-fable-relentlessly-proactive.md
+  - raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md
 ---
 
 # Claude Fable 5
@@ -242,6 +243,57 @@ Jon Ready published a detailed analysis on June 10 (updated June 11) framing Fab
 ### Trusted Access Programs
 - **Cybersecurity**: Expanding Glasswing partners, pursuing systematic application process
 - **Biology**: Opening program for select researchers — Fable 5 with biology/chemistry safeguards removed (cyber safeguards still in place)
+
+## US Government Export Control Directive (June 12, 2026)
+
+On June 12, 2026, the US government issued an export control directive ordering Anthropic to **suspend all access to Fable 5 and Mythos 5** for all customers worldwide — the most drastic action taken against a deployed frontier model to date.
+
+### The Directive
+
+- **Authority**: National security / export control authorities
+- **Scope**: All foreign nationals, whether inside or outside the United States, including foreign national Anthropic employees — effectively **all customers globally**
+- **Timing**: Received at 5:21pm ET on June 12
+- **Impact**: Fable 5 and Mythos 5 abruptly disabled for all users; all other Anthropic models unaffected
+- **Reason cited**: Government belief that it had become aware of a jailbreak method for Fable 5
+
+### The Alleged Jailbreak
+
+Anthropic reviewed the government's demonstration and characterized it as follows:
+
+- The technique identified "a small number of previously known, minor vulnerabilities"
+- The jailbreak was **narrow and non-universal** — essentially asking the model to read a specific codebase and fix software flaws
+- The capability displayed was "widely available from other models (including OpenAI's GPT-5.5), and is used every day by the defenders who keep systems safe"
+- Anthropic had "not even received a disclosure of a concerning non-universal potential jailbreak that led to a harmful result"
+- The government provided only verbal evidence; one potential jailbreak report was shared
+
+### Anthropic's Defense and Disagreement
+
+Anthropic complied with the directive but publicly disagreed with the decision:
+
+- **Compliance**: Removed access to Fable 5 and Mythos 5 for all users as legally required
+- **Disagreement**: "We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people"
+- **Industry implication**: "If this standard was applied across the industry, we believe it would essentially halt all new model deployments for all frontier model providers"
+- **Principled position**: Anthropic believes government should have blocking ability, but through "a statutory process that is transparent, fair, clear, and grounded in technical facts. This action does not adhere to those principles"
+- **Apology**: "We apologize for this disruption to our customers. We believe this is a misunderstanding and are working to restore access as soon as possible"
+
+### Defense in Depth Justification
+
+Anthropic reiterated its defense-in-depth strategy as justification for why the directive was disproportionate:
+
+- Safeguards were red-teamed with the US government, UK AISI, and private organizations for thousands of hours
+- No universal jailbreak has been found
+- Perfect jailbreak resistance is acknowledged as "not currently possible for any model provider"
+- The 30-day data retention policy exists precisely to research and mitigate jailbreaks
+- Anthropic stands by this strategy as making Fable's risks "comparable to the risks of existing models already deployed across the industry"
+
+### Significance
+
+This represents the first known case of a government forcing the complete withdrawal of a deployed frontier AI model. The action raises fundamental questions about:
+
+- **Export control jurisdiction over AI models**: Whether national security authorities can effectively revoke global access to a commercial AI product
+- **Jailbreak threshold for recall**: Whether the discovery of a narrow, non-universal jailbreak warrants full model withdrawal
+- **Government-lab relations**: The tension between Anthropic's stated belief in government oversight and the government's unilateral action without transparent process
+- **Precedent**: If narrow jailbreaks justify recalls, this standard could prevent any frontier model from remaining deployed
 
 ## Early Customer Feedback
 

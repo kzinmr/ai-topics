@@ -8583,3 +8583,14 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - Index corruption: 0 pipe issues, 0 duplicates, 0 line prefixes
 - Log separators: 0 remaining missing
 - Tag validation: deferred to tag-audit-weekly
+
+---
+
+## 2026-06-13 04:30 UTC — Fable 5: US Government Export Control Directive
+
+**Updated**: `concepts/claude/fable-5.md`
+- Added new section: "US Government Export Control Directive (June 12, 2026)"
+- Content: US government ordered suspension of all Fable 5 / Mythos 5 access globally via export control directive
+- Key details: narrow non-universal jailbreak cited as reason; Anthropic complied but publicly disagreed
+- Source: `raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md` (new)
+- Frontmatter: updated date, added source
