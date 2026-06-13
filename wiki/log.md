@@ -8620,3 +8620,33 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - Key details: narrow non-universal jailbreak cited as reason; Anthropic complied but publicly disagreed
 - Source: `raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md` (new)
 - Frontmatter: updated date, added source
+
+## 2026-06-13 11:15 UTC — active-crawl | 4 new concept pages
+
+**Topics**: Kimi K2.7-Code, AI Jailbreaking, AI Botsitting, Open-Source AI Must Win
+
+**Trend sources**: HN Algolia (226 AI-relevant stories, June 10-13), X/Twitter xurl search (52 posts, 6 queries), Blogwatcher DB (98 articles in 3 days), wiki gap analysis (6 coverage gaps identified)
+
+### concepts/kimi-k2-7-code
+**Action**: Created concept page from raw article `2026-06-13_fireworks-ai_kimi-k2p7-code.md`
+**Key facts**: Moonshot AI, 1T/32B MoE, 256K context, 30% fewer reasoning tokens vs K2.6, Day-0 Fireworks support
+**HN**: 431 pts | **Wiki gap**: full
+
+### concepts/ai-jailbreaking
+**Action**: Created concept page — taxonomy of LLM jailbreak techniques, defenses, and real-world cases
+**Sources**: Max Woolf (minimaxir.com, Oct 2025), arXiv papers, Fable 5 jailbreak context
+**HN**: 398+ pts (related) | **Wiki gap**: partial (raw articles existed, no concept page)
+
+### concepts/ai-botsitting
+**Action**: Created concept page + raw article `2026-06-11_businessinsider-ai-botsitting.md`
+**Key facts**: 6.4 hrs/week botsitting, 73% higher job-hunting likelihood, 13% org-level improvement despite 87% AI adoption
+**HN**: 278 pts | **Wiki gap**: full
+
+### concepts/open-source-ai-must-win
+**Action**: Created concept page + raw article `2026-06-13_opensourceaimustwin-manifesto.md`
+**Key facts**: Published amid Fable 5/Mythos 5 export controls, viral manifesto for open-source AI
+**HN**: 993 pts | **Wiki gap**: full
+
+**Pages created**: concepts/kimi-k2-7-code.md, concepts/ai-jailbreaking.md, concepts/ai-botsitting.md, concepts/open-source-ai-must-win.md
+**Raw articles**: 2026-06-13_fireworks-ai_kimi-k2p7-code.md (preexisting), 2026-06-11_businessinsider-ai-botsitting.md (new), 2026-06-13_opensourceaimustwin-manifesto.md (new)
+**SCHEMA.md changes**: Added `kimi` tag to People/Orgs line
