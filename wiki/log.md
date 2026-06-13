@@ -32,6 +32,7 @@
 ### Index Updates
 - `index.md`: Updated cursor-ai and jaya-gupta descriptions
 
+---
 ## [2026-06-13 07:50 UTC] Blog Wiki Ingest — 1 take, 3 references enriched
 
 **Take**: [[concepts/siri-ai]] — Added EU Commission's Position subsection (Thomas Regnier LinkedIn response). Documents the Commission's refutation of Apple's DMA narrative: DMA does not prohibit new features, Apple requested 18-month exemption from interoperability obligations, exemption refused. Balances the existing Apple-only perspective in the EU Regulatory Dispute section.
@@ -45,6 +46,7 @@
 **Skips (14)**: Simon Willison Andrew Singleton quote (short), Fable 5 directive (already in concepts/claude/fable-5), OpenAI WebRTC update (minor tool), Jeff Geerling Mac power (non-AI), Gary Marcus Fable 5 comment (already covered), KPMG hallucination anecdote (too short), nesbitt.io satire (non-AI), Daring Fireball WWDC talk (non-AI), Filfre retro gaming (non-AI), idiallo LLM skepticism (already covered concept), shkspr.mobi gadget review (non-AI), Pentium FDIV bug history (non-AI), xeiaso.net (Anubis blocked), pluralistic Doctorow attestation (non-AI).
 
 **Archived**: Blog archive at raw/archived/triage/blog/2026-06-13_20260613T075000Z.json.
+---
 ## [2026-06-13 07:50 UTC] Newsletter Wiki Ingest — 4 newsletters triaged, 2 references enriched
 
 **Recovery**: Downstream newsletter-triage (07:24) failed to parse cron-wrapped JSON output. Checkpoint recovered from pipeline path (`${HERMES_HOME}/cron/data/newsletter/triage_latest.json`). 4 newsletters (AINews/swyx, Simon Willison, AI by Aakash, Superintel/behiiv) processed.
@@ -58,6 +60,7 @@
 **Skips (7)**: DeepSWE replaces SWE-Bench Pro (already covered), Huawei OpenPangu 2.0 (Reddit link only), Diffusion Gemma 26B (Reddit link), Open Source AI Advocates trend (observation only), Simon Willison Claude Fable newsletter (already in entities/simon-willison.md), AI by Aakash /goal command (already in claude-code-goal.md), Superintel Prometheus (beehiiv token expired).
 **Archived**: Newsletter archive at raw/archived/triage/newsletter/2026-06-13_20260613T071040Z.json (9 items).
 
+---
 ## [2026-06-13 04:00 UTC] Raw Backlog Ingest — Batch of 5, 1 entity enriched, 4 already covered
 
 **Batch composition**: MAI-Thinking-1 tech report (372KB), Dwarkesh/Imas/Trammell AGI economics (71KB), Dario Amodei AI policy essay (62KB), Will Brown Lesson 2 raw transcript (50KB), Ed Zitron AI ROI article (47KB).
@@ -66,6 +69,7 @@
 
 **Already covered (no action)**: MAI-Thinking-1 → `concepts/mai-thinking-1-tech-report.md` (227 lines). AGI Economics → `concepts/agi-economics.md` (93 lines). Dario Amodei policy → `entities/dario-amodei.md` (226 lines, 5-area framework). Ed Zitron ROI → `entities/ed-zitron.md` (468 lines, enterprise cost crisis section). Lesson 2 transcript → `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` (540 lines).
 
+---
 ## [2026-06-12 11:04 UTC] Active Crawl — 3 pages created/enriched, 6 raw articles saved
 
 **Trend sources**: HN Algolia (2,603 pts on Claude Fable 5), X/Twitter trending, blogwatcher DB, wiki gap analysis. Dominant theme: Anthropic Claude Fable 5 launch + invisible guardrail controversy.
@@ -8655,6 +8659,7 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - Source: `raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md` (new)
 - Frontmatter: updated date, added source
 
+---
 ## 2026-06-13 11:15 UTC — active-crawl | 4 new concept pages
 
 **Topics**: Kimi K2.7-Code, AI Jailbreaking, AI Botsitting, Open-Source AI Must Win
@@ -8684,3 +8689,11 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 **Pages created**: concepts/kimi-k2-7-code.md, concepts/ai-jailbreaking.md, concepts/ai-botsitting.md, concepts/open-source-ai-must-win.md
 **Raw articles**: 2026-06-13_fireworks-ai_kimi-k2p7-code.md (preexisting), 2026-06-11_businessinsider-ai-botsitting.md (new), 2026-06-13_opensourceaimustwin-manifesto.md (new)
 **SCHEMA.md changes**: Added `kimi` tag to People/Orgs line
+
+---
+## [2026-06-13] watchdog: auto-fix header counts & log separators
+
+- **index.md**: Fixed header counts (Total: 2498→2506, Concepts: 1682→1678)
+- **log.md**: Fixed 5 missing `---` section separators
+- **x_accounts job**: Reported stale (26h) — needs human investigation
+- **Missing index entries**: 1 entity + 556 concepts not in index — needs batch-add (exceeds 20/run limit)
