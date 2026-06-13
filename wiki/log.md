@@ -1,3 +1,20 @@
+## [2026-06-13] Dreaming Consolidation — Near-Complete Duplicate Coverage
+
+**Articles scanned**: 6 | **Already covered**: 5 | **Gaps filled**: 1 (minor entity update)
+
+### Duplicate Check Summary
+All 6 articles from the 2026-06-09 RSS scan were already comprehensively covered by adjacent pipelines:
+- **Dwarkesh "sample efficiency black hole"** → `concepts/sample-efficiency.md` (127 lines) + entity reference
+- **Ed Zitron "AI Is Slowing Down"** → `entities/ed-zitron.md` section "AI Is Slowing Down — Infrastructure Math" (lines 355-441)
+- **xAI "datacentre REIT"** → `entities/xai.md` section "Datacenter-as-a-Service Pivot (June 2026)"
+- **Simon Willison "Siri AI at WWDC"** → `concepts/siri-ai.md` (149 lines) + blog-wiki-ingest
+- **Gary Marcus "math is insane"** → `entities/gary-marcus.md` section "Jensen Huang's IPO Math and Wachter Paper"
+
+### Gap Filled
+- **Entropic Thoughts "LLMs and almost good code"**: Updated `entities/entropicthoughts-com.md` — added article to timeline (2026 Jun), expanded Recent Themes LLM evaluation section, added to Sources list. Concept coverage already existed at `concepts/llm-code-quality.md`.
+
+---
+
 ## [2026-06-13] X Bookmarks Ingest — Cursor Fleet, Enterprise AI, Local AI
 
 **Bookmarks processed**: 4 | **Raw articles saved**: 3 | **Pages enriched**: 3

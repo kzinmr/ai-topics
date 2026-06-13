@@ -2,7 +2,7 @@
 title: "Chris of Entropic Thoughts"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-13
 type: entity
 ---
 
@@ -47,6 +47,7 @@ This intellectual humility — publishing to be corrected, not to be right — i
 | 2025–2026 | Continues publishing on topics including Emacs, Haskell, ZFS, pathfinding algorithms, and forecasting |
 | 2026 Early | Publishes "The MVC Mistake" — architectural critique |
 | 2026 Q1/Q2 | Publishes "Understanding Systems" — unified methodology for debugging/learning through mental model diagnosis, knowledge shields, and hypothesis-invalidation loop |
+| 2026 Jun | Publishes "LLMs and almost good code" — case study showing frontier LLMs generate ~8% excess complexity on easy tasks; developers accept it because code is "right here, right now"; dead code in `padHex` detected by CI coverage check; connects to [[concepts/llm-code-quality]] |
 
 ## Core Ideas
 
@@ -167,7 +168,7 @@ Chris's interests span an unusually wide range:
 
 ## Recent Themes (2024–2026)
 
-- **LLM evaluation**: Rigorous statistical analysis of code generation benchmarks, resisting hype narratives
+- **LLM evaluation**: Rigorous statistical analysis of code generation benchmarks, resisting hype narratives. "Are LLMs not getting better?" (2024) and "LLMs and almost good code" (2026) — the latter showing ~8% excess complexity in LLM-generated code on easy tasks, accepted by developers because it's "right there, right now." See [[concepts/llm-code-quality]].
 - **Queueing theory in practice**: Making operations research accessible to software engineers
 - **Emacs tooling**: Magit workflows, Org mode publishing, personal knowledge management
 - **Haskell**: Esqueleto tutorials, performance comparisons with C, functional programming in production
@@ -204,6 +205,7 @@ Chris's interests span an unusually wide range:
 - "Are LLMs not getting better?"
 - "Tindall on Software Delays"
 - "The MVC Mistake" (March 2026)
+- "LLMs and almost good code" (June 2026)
 - "Long Hiatus: Emacs Upgrades"
 - Buttondown newsletter: Entropic Thoughts
 
