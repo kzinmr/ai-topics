@@ -2,7 +2,7 @@
 title: "Miguel Grinberg"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-13
 type: entity
 ---
 
@@ -90,6 +90,22 @@ Grinberg's recent work on **tokenless CSRF protection** (December 2025) and **in
 
 This philosophy — **make the simple things simple** — is the defining characteristic of his teaching style and tool development.
 
+### Reverse Centaur Resistance
+
+Grinberg's June 2026 post *"I Am Not a Reverse Centaur"* addresses the growing flood of LLM-generated contributions to his open source projects. He adopts **Cory Doctorow's 'reverse centaur' framing** — describing "frail and vulnerable people being puppeteered by uncaring, relentless machines" — and refuses to accept that role:
+
+> "I have decided that I have more important things to do with my life than to spend my days reviewing code produced by LLMs."
+
+The post announces a **significant policy change**: Grinberg now closes unsolicited LLM-generated pull requests immediately without review. His contribution guidelines now require pre-discussion in issues before any PR submission, and he actively checks for proof of human involvement:
+
+> "If I don't see proof of human involvement, then I'm not interested, so the PR gets immediately closed with no questions asked."
+
+He contrasts the pre-LLM era — where unsolicited PRs from fellow coders were "a source of excitement and pride" — with the current reality where unsolicited PRs are "a red flag" and the submitters "rarely care" about the quality of the changes.
+
+The post also raises a **broader existential question**: "Does open source matter anymore?" Grinberg notes his declining interest in sharing code publicly due to the LLM slop flooding. He still maintains his current projects but has a number of recent projects he "can't bring myself to make public." His closing stance is resolute:
+
+> "I will continue to oppose a future in which we all have to be reverse centaurs, with the machines (and their billionaire owners) calling the shots."
+
 ---
 
 ## Key Quotes
@@ -167,3 +183,4 @@ Go — Language Grinberg has explored for systems programming
 - blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-4-many-to-many-relatio--d7e49b59
 - blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-5-advanced-many-to-man--ffc1a277
 - blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-6-a-page-analytics-sol--1731e3e7
+- blog.miguelgrinberg.com--post-i-am-not-a-reverse-centaur--a49e2d68

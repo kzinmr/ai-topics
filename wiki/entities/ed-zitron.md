@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-06-09
+updated: 2026-06-13
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -26,6 +26,7 @@ sources:
   - raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
   - raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md
   - raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md
+  - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-1--6191394a.md
 ---
 
 # Ed Zitron
@@ -78,6 +79,7 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | May 2026 | I Will Never Respect A Website | "LLMs are websites" framing; Stella Laurenzo's Claude Code analysis; coding vulnerability crisis |
 | May 2026 | AI Is Really Weird | Agent definition critique; Anthropic revenue anomalies; capacity planning paradox |
 | Jun 2026 | AI Doesn\'t Have ROI | Enterprise cost crisis, kalopsia thesis, Dark Output critique |
+| Jun 2026 | Premium: The Silicon Valley Bubble (Part 1) | IPO race, $35B Broadcom Anthropic deal with SPV structure, $4.4B pure Anthropic notes |
 
 ## AI Is Too Expensive (May 2026)
 

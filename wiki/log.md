@@ -1,3 +1,16 @@
+## [2026-06-13 07:50 UTC] Blog Wiki Ingest — 1 take, 3 references enriched
+
+**Take**: [[concepts/siri-ai]] — Added EU Commission's Position subsection (Thomas Regnier LinkedIn response). Documents the Commission's refutation of Apple's DMA narrative: DMA does not prohibit new features, Apple requested 18-month exemption from interoperability obligations, exemption refused. Balances the existing Apple-only perspective in the EU Regulatory Dispute section.
+
+**Enriched**: [[entities/miguel-grinberg]] — Added Reverse Centaur Resistance subsection covering Grinberg's adoption of Cory Doctorow's framing, policy of closing unsolicited LLM-generated PRs without review, contribution guidelines requiring pre-discussion, and the "Does open source matter anymore?" existential question.
+
+**Enriched**: [[entities/sierra]] — Added Customer Success Case Studies section with three enterprise case studies: Vivid Seats (40% resolution rate increase, 35% CSAT improvement), Wilson (personalized product discovery), Minted (peak season intelligence).
+
+**Enriched**: [[entities/ed-zitron]] — Added Premium: The Silicon Valley Bubble (Part 1) to Notable Articles table. Covers IPO race, $35B Broadcom Anthropic SPV deal, $4.4B pure Anthropic notes.
+
+**Skips (14)**: Simon Willison Andrew Singleton quote (short), Fable 5 directive (already in concepts/claude/fable-5), OpenAI WebRTC update (minor tool), Jeff Geerling Mac power (non-AI), Gary Marcus Fable 5 comment (already covered), KPMG hallucination anecdote (too short), nesbitt.io satire (non-AI), Daring Fireball WWDC talk (non-AI), Filfre retro gaming (non-AI), idiallo LLM skepticism (already covered concept), shkspr.mobi gadget review (non-AI), Pentium FDIV bug history (non-AI), xeiaso.net (Anubis blocked), pluralistic Doctorow attestation (non-AI).
+
+**Archived**: Blog archive at raw/archived/triage/blog/2026-06-13_20260613T075000Z.json.
 ## [2026-06-13 07:50 UTC] Newsletter Wiki Ingest — 4 newsletters triaged, 2 references enriched
 
 **Recovery**: Downstream newsletter-triage (07:24) failed to parse cron-wrapped JSON output. Checkpoint recovered from pipeline path (`${HERMES_HOME}/cron/data/newsletter/triage_latest.json`). 4 newsletters (AINews/swyx, Simon Willison, AI by Aakash, Superintel/behiiv) processed.

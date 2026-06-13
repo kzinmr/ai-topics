@@ -1,12 +1,13 @@
 ---
 title: Siri AI
 created: 2026-06-10
-updated: 2026-06-12
+updated: 2026-06-13
 type: concept
 tags: [apple, on-device, model, multimodal, privacy, voice-ai, platform, edge-ai]
 sources:
   - raw/articles/apple.com--newsroom-2026-06-apple-introduces-siri-ai-a-profoundly-more---6ef8c2d4.md
   - raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md
+  - raw/articles/linkedin.com--posts-thomas-regnier-24a05810b-what-is-the-true-story-behind--19130e43.md
 ---
 
 # Siri AI
@@ -120,6 +121,20 @@ Apple argues that the DMA's extreme interpretation creates unacceptable security
 - **watchOS 27**: Unavailable (requires paired iPhone with Siri AI)
 - **EU Developers**: Cannot test Siri AI features on iOS/iPadOS/watchOS
 - No timeline exists for resolution; Apple states regulators' "refusal to engage constructively" prevents progress
+
+### EU Commission's Position
+
+On June 12, 2026, **Thomas Regnier**, the European Commission's digital policy lead, publicly refuted Apple's account of the Siri AI dispute in a LinkedIn statement. Regnier's key assertions:
+
+- **"Absolutely nothing in the DMA prohibits Apple from rolling out new features in the EU."** The Commission's position is that the DMA does not block Siri AI deployment — Apple's decision to delay was unilateral.
+- **Apple requested a full 18-month exemption** from DMA interoperability obligations rather than offering a compliant solution. Regnier stated: "Instead of offering a compliant solution, Apple asked to be exempted from its interoperability obligations under the DMA — and this for 18 months."
+- **The exemption was legally impossible**: "That's not an option. EU rules are non-negotiable."
+- **The consequence of exemption would be market closure**: "It would mean that no AI agent other than 'Siri AI' could be chosen by EU consumers."
+- **The DMA explicitly preserves consumer choice**: "Those who want to keep using Apple products in their current form can of course do it. But for those who want to use another AI agent, the DMA will give them the possibility to do so."
+
+This statement directly contradicts Apple's official framing that EU regulators demanded "nearly unlimited access" to devices. The Commission argues that the DMA's interoperability obligations are standard for gatekeeper platforms and that Apple chose delay over compliance.
+
+Source: [[raw/articles/linkedin.com--posts-thomas-regnier-24a05810b-what-is-the-true-story-behind--19130e43.md]]
 
 ### DMA × AI Significance
 

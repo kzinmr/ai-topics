@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-06-04
+updated: 2026-06-13
 type: entity
 tags:
   - company
@@ -18,6 +18,7 @@ sources:
   - https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/
   - raw/articles/sierra.ai--blog-tau-knowledge--5dda7a09.md
   - raw/articles/sierra.ai--blog-outcomemaxxing--0bc34aec.md
+  - raw/articles/sierra.ai--blog-discovering-what-s-possible-with-ai-for-cx--904ecc1f.md
 ---
 
 # Sierra
@@ -56,6 +57,26 @@ Sierra deploys conversational AI agents that handle customer service interaction
 - Integration with enterprise systems (CRM, order management)
 - Agentic problem resolution (not just FAQ lookup)
 - Designed to replace or augment traditional contact center operations
+
+### Customer Success Case Studies
+
+**Vivid Seats**: Resolved in under 4 weeks from kickoff to live. Resolution rates increased 40%, customer satisfaction 35%. CX team shifted from queue handling to root-cause fixes and product development.
+
+> "We're able to think really big about what's possible. Things we would have said were pie-in-the-sky a couple of years ago. We're on the other side of that now."
+> — Katy Smith, Director of CX Agent Experience, Vivid Seats
+
+> "If we're seeing people ask us 10,000 times a month about a specific feature, we're able to prioritize that at scale, quickly. The best moments are when a pattern leads to a change that eliminates the need for support entirely."
+> — Janelle Pacheco, Director of Product, Vivid Seats
+
+**Wilson (sporting goods)**: AI agent enables personalized product discovery (e.g., recommending glove size for a child based on follow-up questions). Every conversation becomes a source of intelligence for continuous improvement.
+
+> "It's like every customer having access to a knowledgeable agent 24/7. We can now identify what information our consumers need and add it directly and easily into the system. It helps us continuously improve how we answer their questions — a benefit we didn't anticipate but now see as critical."
+> — Mary Craven, Director of Consumer Experience, Wilson
+
+**Minted (design marketplace)**: Peak season handling with seamless platform integration. CX team identifies trends, spots emerging issues, routes insights across the business.
+
+> "Our focus is on long-term transformation. The insights we're gaining now are shaping how we serve customers tomorrow."
+> — Sarah Wallis, Chief Operating Officer, Minted
 
 ## Competitive Context
 
