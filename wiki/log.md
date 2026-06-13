@@ -1,3 +1,37 @@
+## [2026-06-13] X Bookmarks Ingest — Cursor Fleet, Enterprise AI, Local AI
+
+**Bookmarks processed**: 4 | **Raw articles saved**: 3 | **Pages enriched**: 3
+
+### Cursor Recursive Agent Fleet (Bookmark 3 — X Article)
+- Saved `raw/articles/2026-06-12_cursor_building-recursive-agent-systems.md` — full article from `article.plain_text`
+- Enriched `entities/cursor-ai.md` (285→326 lines): Added "Recursive Agent Fleet for ML Training (Jun 2026)" section
+  - Fleet manager + hundreds of child agents across SSH-accessible machines
+  - Inbox file pattern for fleet status aggregation
+  - Tacit knowledge encoded as skills for ML experiment management
+  - Key insight: "verifiable problems + token scaling" enables agent org charts
+  - Relationship table connecting to Real-Time RL, Cloud Agents, Self-Driving Codebases, Cursor 3
+  - Prior research lineage: Multi-Agent Kernels, Scaling Agents, Agent Computer Use
+- Updated `updated` date, added raw article to `sources`
+
+### Enterprise AI Adoption Patterns (Bookmark 1 — Thread)
+- Saved `raw/articles/2026-06-12_jayagup10_openai-vs-anthropic-enterprise.md` (truncated)
+- Enriched `entities/jaya-gupta.md` (69→73 lines): Added "Enterprise AI Adoption Patterns (Jun 2026)" contribution
+  - F500 pattern: ChatGPT org-wide default, Claude ring-fenced for power users
+  - Driven by variable-cost fear and "more model than needed" perception
+  - Extends Token Budget Wars thesis into competitive positioning
+
+### State of Local AI #1 (Bookmark 4 — Thread)
+- Saved `raw/articles/2026-06-13_0xsero_state-of-local-ai-1.md`
+- Enriched `entities/gemma-4.md`: Added `unsloth/gemma-4-E4B-it-qat-GGUF` to Ecosystem links
+  - E4B QAT GGUF recommended for subagent/local use per @0xSero
+
+### Claude Managed Agents Sandbox (Bookmark 2 — Image Only)
+- Announcement about Claude Managed Agents sandbox providers (Blaxel, E2B, Google Cloud, Namespace Labs, SuperServe)
+- No scrapable article — image-only bookmark. Tracked for future ingestion.
+
+### Index Updates
+- `index.md`: Updated cursor-ai and jaya-gupta descriptions
+
 ## [2026-06-13 07:50 UTC] Blog Wiki Ingest — 1 take, 3 references enriched
 
 **Take**: [[concepts/siri-ai]] — Added EU Commission's Position subsection (Thomas Regnier LinkedIn response). Documents the Commission's refutation of Apple's DMA narrative: DMA does not prohibit new features, Apple requested 18-month exemption from interoperability obligations, exemption refused. Balances the existing Apple-only perspective in the EU Regulatory Dispute section.

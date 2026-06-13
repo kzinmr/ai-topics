@@ -62,7 +62,7 @@
 - [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
-- [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
+- [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs, Token Budget Wars. Enterprise AI procurement dynamics (Jun 2026). Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
 - [[entities/joan-westenberg]] — Joan Westenberg — Strategy and positioning consultant. "Position or Perish" narrative framework, messaging spine methodology.
 - [[entities/john-berryman]] — John Berryman (@JnBrymn) — ML engineer and educator. Creator of microblog, agent-patterns educator. Focus on practical ML education and agent architectures.
@@ -374,7 +374,7 @@
 - [[entities/jason-liu]] — Jason Liu (@jxnlco) — Creator of Instructor library (6M+ monthly downloads, cited by OpenAI). DX Engineer at OpenAI (Codex team). Former Staff ML Engineer at Stitch Fix. Context engineering, RAG systems, structured outputs. Published "Getting the Most Out of Codex" (May 2026): cataloging Codex app capabilities — durable threads, voice/steering/queuing, side panel, shared memory, automations.
 - [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Director & Engineering Fellow at Cohere. Co-author of "Hands-On Large Language Models" (O'Reilly). Creator of "The Illustrated Transformer," "The Illustrated BERT," Ecco (2K+ GitHub stars). Deeplearning.ai co-creator.
 - [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
-- [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents monitor GitHub and auto-fix CI failures. SpaceX holds acquisition right for $60B.
+- [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents, recursive agent fleet for ML training (Jun 2026), self-driving codebases vision. SpaceX holds acquisition right for $60B.
 - [[entities/jayden-milne]] — **Blog:** thejaymo.net
 - [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
 - [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com

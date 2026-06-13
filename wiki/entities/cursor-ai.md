@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-05-29
+updated: 2026-06-13
 type: entity
 tags:
   - entity
@@ -24,6 +24,7 @@ sources:
   - https://cursor.com/blog/series-d
   - https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html
   - raw/newsletters/2026-05-19-ainews-how-to-land-a-job-at-a-frontier-lab-on-pretraining.md
+  - raw/articles/2026-06-12_cursor_building-recursive-agent-systems.md
 ---
 
 
@@ -128,6 +129,47 @@ Real-time RL is susceptible to reward hacking. Documented fixes:
 Real users serve as a natural check — each reward hack becomes a bug report for improving the training system.
 
 See: [[concepts/coding-agents/real-time-rl]], [cursor.com/blog/real-time-rl-for-composer](https://cursor.com/blog/real-time-rl-for-composer)
+
+## Recursive Agent Fleet for ML Training (Jun 2026)
+
+In June 2026, Cursor disclosed their internal infrastructure for scaling Composer training: an **org chart of agents** that work together as an always-running fleet. Thousands of agents handle research tasks for RL training data generation, with a fleet manager agent orchestrating hundreds of child agents across remote machines. [[raw/articles/2026-06-12_cursor_building-recursive-agent-systems]]
+
+### Architecture
+
+| Component | Description |
+|-----------|-------------|
+| **Fleet Manager** | Main agent on a massive remote machine with full local tool access |
+| **Inbox File** | Disk-based file acting as the fleet's status aggregation point |
+| **Child Agents** | Hundreds of agents on separate machines, SSH-accessible |
+| **Health Loop** | Manager checks fleet health every loop, keeps healthy tasks running, surfaces broken tasks via Slack/PagerDuty |
+| **Fleet Control** | Manager can quit/restart child agent processes as needed |
+
+The fleet manager encodes **tacit knowledge as skills** — domain-specific know-how for running ML experiments, reviewing results, and monitoring anomalies that would otherwise require human researchers to oversee.
+
+### Key Insight: Verifiable Problems + Token Scaling
+
+> "If you have a problem that is verifiable, where throwing more tokens at it will solve it faster or better, it's worth considering building a system like this."
+
+The human → agent "org chart" scales researcher leverage by orders of magnitude — analogous to a human manager with 10,000 direct reports. This works because:
+- RL training data generation is **verifiable** (results can be evaluated programmatically)
+- Parallelization is **embarrassingly parallel** (each experiment runs independently)
+- The bottleneck shifts from **researcher time** (the scarcest resource) to **compute tokens**
+
+### Relationship to Other Systems
+
+| System | Role | Relationship |
+|--------|------|-------------|
+| **Real-Time RL** | Training paradigm | Fleet generates the RL data that real-time RL consumes |
+| **Cloud Agents** | User-facing product | Internal fleet shares architectural patterns (subagents, VM isolation, health monitoring) |
+| **Self-Driving Codebases** | Terminal vision | Fleet is a stepping stone toward fully autonomous agent-managed infrastructure |
+| **Cursor 3** | IDE platform | Fleet system is Cursor's internal R&D infrastructure, distinct from the user-facing IDE |
+
+### Prior Research Lineage
+
+Cursor referenced previously published research on **long-running agents** as the foundation for the fleet manager. Referenced blog posts in the article include:
+- [Multi-Agent Kernels](https://cursor.com/blog/multi-agent-kernels)
+- [Scaling Agents](https://cursor.com/blog/scaling-agents)
+- [Agent Computer Use](https://cursor.com/blog/agent-computer-use)
 
 ## SpaceX-Cursor Connection
 

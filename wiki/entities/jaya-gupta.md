@@ -1,12 +1,12 @@
 ---
 title: "Jaya Gupta"
 created: 2026-05-11
-updated: 2026-06-01
+updated: 2026-06-13
 type: entity
 status: L2
 tags: [person, blogger, x-account, ai-adoption, governance, token-economics]
 aliases: ["@JayaGup10"]
-sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md]
+sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, raw/articles/2026-06-12_jayagup10_openai-vs-anthropic-enterprise.md]
 related: [concepts/organizational-moat, concepts/context-graphs, concepts/token-to-outcome-attribution]
 ---
 
@@ -44,6 +44,10 @@ Wrote *"Token Budget Wars"* — analyzed the emerging enterprise dynamics as inf
 - **Enterprise transformation**: Predicts token-to-outcome attribution will arrive like ERP and BI did — as a CEO-driven program with new infrastructure.
 
 This article extends her earlier [[concepts/context-graphs|Context Graphs]] thesis into the operational measurement domain. See [[concepts/token-to-outcome-attribution]] for the full framework.
+
+### Enterprise AI Adoption Patterns (Jun 2026)
+
+Posted observations on OpenAI vs Anthropic enterprise positioning across Fortune 500 companies. Key pattern: ChatGPT deployed as the org-wide default while Claude is ring-fenced for power users, driven by variable-cost fear and the perception that Claude is "more model than the median employee needs." The thread (334 likes, 139 bookmarks, 50K impressions) sparked discussion about enterprise AI procurement dynamics and extends her Token Budget Wars thesis into the competitive positioning domain. [[raw/articles/2026-06-12_jayagup10_openai-vs-anthropic-enterprise]]
 
 ## Core Ideas
 

@@ -2,7 +2,7 @@
 title: Google Gemma 4
 type: entity
 created: 2026-04-10
-updated: 2026-06-09
+updated: 2026-06-13
 tags:
   - entity
   - model
@@ -166,6 +166,7 @@ Unlike other Gemma 4 models that use dedicated vision (~550M) and audio (~300M) 
 - [unsloth/gemma-4-12B-it-GGUF](https://huggingface.co/unsloth/gemma-4-12b-it-GGUF) — 568K+ downloads (community GGUF)
 - [google/gemma-4-12B-it-qat-q4_0-gguf](https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf) — Official QAT quantization (June 5), 25K+ downloads
 - [unsloth/gemma-4-12B-it-qat-GGUF](https://huggingface.co/unsloth/gemma-4-12B-it-qat-GGUF) — Community QAT GGUF, 85K+ downloads
+- [unsloth/gemma-4-E4B-it-qat-GGUF](https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF) — E4B QAT GGUF (June 2026), recommended for subagent/local use
 - Launch blog: [Google Blog: Introducing Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/)
 
 **Source**: [HuggingFace google/gemma-4-12B-it model card](https://huggingface.co/google/gemma-4-12B-it)
