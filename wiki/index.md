@@ -2,9 +2,10 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2083 | Concepts: 1681 | Entities: 789
+> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2103 | Concepts: 1681 | Entities: 789
 
 ## Entities (789 pages)
+- [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -154,18 +155,28 @@
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia). Co-founder OpenAI, Tesla AI, Eureka Labs. Joined Anthropic pre-training team (May 2026). Coined vibe coding / agentic engineering.
 - [[entities/andrew-nesbitt]] — OSS metadata expert (Ecosyste.ms). Supply chain security, package management, agent skills registry threat models. CHAOSS metrics AI-broken-metrics analysis published May 2026.
 - [[concepts/gpt/decoder-only|Decoder-Only GPT Architecture]] — Foundation architecture of modern LLMs, transformer decoder stack
+- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — How Coding Agents Work — A conceptual model for understanding the inner workings of coding agents. Simon Willison's GTC 2026 talk
+- [[concepts/harness-engineering/agentic-workflows/karpathy-rl-agents]] — Karpathy RL Agents — Agentic Research Loop — Autonomous Research Loop pattern proposed by Andrej Karpathy. RL for self-improving coding agents
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — Subagents — Parallel AI Agent Delegation — A pattern where the main AI agent spawns independent sub-agents in parallel, each with isolated context windows
 - [[concepts/harness-engineering/agentic-workflows/vibe-coding|Vibe Coding]] — AI-assisted coding where agents handle implementation details
+- [[concepts/harness-engineering/context-engineering]] — Context Engineering — A systematic approach to effectively utilizing the context window and maximizing LLM performance. Policy-guided context management
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use|Advanced Tool Use]] — Anthropic's three advanced tool-use features for large-scale agent deployment
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — Agent Loop Orchestration — An execution loop structure for LLM agents to autonomously complete tasks. Think-act-observe cycle with tool call management
 - [[concepts/harness-engineering/system-architecture/ai-memory-systems|AI Memory Systems]] — Comparison of memory system philosophies across ChatGPT, Claude, and Cognition
+- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Anthropic's Memory Tool — Cognition's Strategic Follow-Up — Anthropic's Memory Tool for persistent agent memory across sessions
 - [[concepts/harness-engineering/system-architecture/building-effective-agents|Building Effective Agents]] — Anthropic's practical guidelines for building LLM agents
 - [[concepts/harness-engineering/system-architecture/claude-code-best-practices|Claude Code Best Practices]] — Official Anthropic best practices for agentic coding with Claude Code
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp|Code Execution with MCP]] — MCP servers exposed as code API for agent tool use
 - [[concepts/harness-engineering/system-architecture/evals-for-ai-agents|Evals for AI Agents]] — Systematic guide to evaluating AI agents
+- [[concepts/harness-engineering/system-architecture/harness-design-long-running-apps]] — Harness Design for Long-Running Application Development — Anthropic's agent harness pattern for long-running app development, inspired by the Generator pattern
 - [[concepts/harness-engineering/system-architecture/multi-agent-research-system|Multi-Agent Research System]] — Anthropic research system operating multiple Claude agents in parallel
 - [[concepts/harness-engineering/system-architecture/writing-tools-for-agents|Writing Effective Tools for AI Agents]] — Anthropic's tool design methodology for AI agents
 - [[concepts/inference/llama-cpp|llama.cpp]] — High-performance C/C++ inference engine for LLMs, GGUF format
 - [[concepts/inference/sglang|SGLang]] — Structured generation language and inference serving framework from LMSYS Org
+- [[concepts/inference/tgi]] — Text Generation Inference (TGI) — HuggingFace's production-grade inference server for large language models
+- [[concepts/inference/vllm]] — vLLM — High-throughput LLM serving engine with PagedAttention and continuous batching. UC Berkeley's production-grade inference system
 - [[concepts/local-llm/dgx-spark-nim|DGX Spark]] — NVIDIA DGX Spark desktop AI supercomputer for local LLM inference
+- [[concepts/local-llm/inference-hardware]] — Local LLM Inference Hardware — Hardware selection and optimization for local LLM inference: GPU, NPU, Apple Silicon, and emerging accelerator architectures
 - [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-llm/local-ai]]
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
@@ -185,7 +196,16 @@
 - [[concepts/local-llm/model-quantization|Model Quantization for Local LLMs]] — Quantization techniques for deploying LLMs on local hardware
 - [[concepts/local-llm/self-hosting-ai-development|Self-Hosting AI for Development]] — Practical considerations for running local AI infrastructure
 - [[concepts/local-llm/server-dgx-spark|Local LLM Server Setup on DGX Spark]] — Setup guide for DGX Spark with NemoClaw integration
+- [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit — Naive single-vector RAG is dead, but retrieval itself is more essential than ever. Late interaction, hybrid search, learned sparse retrieval
+- [[concepts/multi-agents/agent-team-swarm]] — Agent Team / Swarm — Systems where multiple AI agents coordinate to accomplish complex tasks. Orchestration patterns, communication protocols, consensus mechanisms
+- [[concepts/openclaw/anthropic-conflict]] — Anthropic-OpenClaw Conflict — Anthropic's April 2026 decision to block third-party AI agent frameworks (including OpenClaw) from accessing Claude Code API
 - [[concepts/openclaw/architecture-comparison|OpenClaw vs Hermes — Architecture Comparison]] — Side-by-side source code study comparing two agent harness frameworks
+- [[concepts/openclaw/philosophy]] — OpenClaw Philosophy — Primitives Over Defaults — Providing primitives rather than defaults, inspired by Unix philosophy and Emacs composability
+- [[concepts/rags]] — RAGs (Retrieval-Augmented Generation) — Architectural pattern that enhances LLM outputs by retrieving relevant information from external knowledge sources before generation
+- [[concepts/sandbox/in-process]] — In-Process Sandbox — In-process sandboxing isolates LLM-generated code execution within the host process using language-level isolation (Python sub-interpreters, WASM, deno)
+- [[concepts/sandbox/infrastructure]] — Infrastructure-Level Sandbox — OS/hypervisor-level isolation for AI agent code execution. Container sandboxing, Firecracker microVMs, gVisor, K8s sandboxing patterns
+- [[concepts/sandbox/js-runtime]] — JavaScript Runtimes for AI Agents — JS/TS runtimes (Deno, Bun, isolated-vm) as a critical isolation and execution layer for AI agent tool calls
+- [[concepts/tool-orchestration]] — Tool Orchestration — Architectural pattern governing how AI agents discover, select, invoke, and chain tool calls. MCP protocol, tool taxonomies, execution ordering
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/avichawla]] — **X** | @_avichawla | AI/ML educator, co-founder @dailydoseofds_. Ex-Mastercard AI. IIT Varanasi. Tutorials on DS, ML, LLMs, RAGs, RL for agents. Author of "System Prompt Learning" X Article (2026-04-28).
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI (first agentic CRM), builder-as-artist philosophy, solar car racer, NASA satellite engineer

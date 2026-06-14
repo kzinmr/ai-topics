@@ -8847,3 +8847,30 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 ### Note
 - Wiki health report was unavailable (no data). Graph analysis report dated 2026-06-12 (50h old) showed 329 thin pages and 10 high-similarity person pairs requiring human review — not auto-fixed per policy.
 - Pipeline watchdog: no active alerts.
+
+## [2026-06-14 17:50 UTC] Wiki Health Auto-Fix — Index Orphan Reconciliation
+
+**Action**: Inserted 20 previously-orphaned concept pages into `index.md`.
+**Stats**: Indexed entries 2083→2103 (Concepts: +20). No ghost entries. No pipe/line-number/triple-bracket/space corruption.
+**Validate**: `validate_index.py` clean (2143 lines).
+**Pages added**:
+- concepts/claude/perfect-memory-entity
+- concepts/harness-engineering/agentic-workflows/how-agents-work
+- concepts/harness-engineering/agentic-workflows/karpathy-rl-agents
+- concepts/harness-engineering/agentic-workflows/subagents
+- concepts/harness-engineering/context-engineering
+- concepts/harness-engineering/system-architecture/agent-loop-orchestration
+- concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition
+- concepts/harness-engineering/system-architecture/harness-design-long-running-apps
+- concepts/inference/tgi
+- concepts/inference/vllm
+- concepts/local-llm/inference-hardware
+- concepts/modern-retrieval-toolkit
+- concepts/multi-agents/agent-team-swarm
+- concepts/openclaw/anthropic-conflict
+- concepts/openclaw/philosophy
+- concepts/rags
+- concepts/sandbox/in-process
+- concepts/sandbox/infrastructure
+- concepts/sandbox/js-runtime
+- concepts/tool-orchestration
