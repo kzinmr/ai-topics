@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-14T20:05:29.953621+00:00",
+  "triage_run_id": "20260614T200049Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingestバッチ（2026-06-14T20:00）— 5記事すべて既存ページでカバー済み。Takes=0、References=0、Skips=5。",
+  "decisions": [
+    {
+      "item_id": "raw-4",
+      "source": "raw_backlog",
+      "source_name": "Will Brown (Prime Intellect)",
+      "title": "Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/will-brown.mdのSourcesセクションに既に[[raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript]]として記載済み。講義内容はMCP、構造化生成（Outlines/XGrammar）、ツール設計、非同期処理、E2Bサンドボックス、A2A懐疑論、メモリ（ファイルシステム/SQL/ベクターDB）、Eval駆動開発、セキュリティ（ホワイトリスト/ブラックリスト）、MCP認可・パーミッションなど。トランスクリプト全体が既存entityページにソースとして登録済み。",
+      "candidate_wiki_path": "entities/will-brown.md",
+      "body_excerpt": "# Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)\n**Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])\n**Co-instructor:** Kyle Corbitt (CTO, OpenPipe)\n**Date:** June 19, 2025\n**Companion course:** [[concepts/agents-mcp-rl-course|Produ"
+    }
+  ]
+}

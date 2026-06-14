@@ -1,3 +1,14 @@
+## [2026-06-14] raw-backlog-ingest — Takes=0 (all 5 already covered)
+
+- **Batch**: 5 candidates from raw_backlog_collect.py --sort ai-hint --limit 5
+- **Triage**: All 5 articles already captured in existing wiki pages (Takes=0, Ref=0, Skip=5)
+  - MAI-Thinking-1 Tech Report → [[concepts/mai-thinking-1-tech-report.md]] (full architecture, benchmarks, GRPO details)
+  - Dwarkesh "Alex Imas & Phil Trammell" → [[concepts/agi-economics.md]] + [[entities/dwarkesh-patel.md]]
+  - Dario Amodei "Policy on the AI Exponential" → [[entities/dario-amodei.md]] (FAA model regulation thesis)
+  - Will Brown "Lesson 2: MCP + Production Agents" → [[entities/will-brown.md]] (source registered)
+  - Ed Zitron "AI Doesnt Have ROI" → [[entities/ed-zitron.md]] (Notable Articles table + sources)
+- **Archive**: 1 new, 4 dedup skipped → total archive URLs: 751
+
 ## [2026-06-14] dreaming-wiki-ingest recovery — Takes=0 (pipeline saturation)
 
 - **Recovery type**: Case C (triaged JSON in cron output, not saved to checkpoint)
