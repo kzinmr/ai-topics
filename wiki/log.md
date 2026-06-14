@@ -1,3 +1,18 @@
+## [2026-06-14] dreaming-wiki-ingest recovery — Takes=0 (pipeline saturation)
+
+- **Recovery type**: Case C (triaged JSON in cron output, not saved to checkpoint)
+- **Pre-run**: dreaming-collect → 6 RSS articles from 2026-06-09
+- **Triage**: dreaming-group produced valid JSON (Takes=0, Ref=0, Skip=6) but failed to save to checkpoint
+- **Verification**: All 6 skip decisions independently confirmed — each article maps to existing wiki pages (127-470 lines depth):
+  - Dwarkesh "Sample Efficiency Black Hole" → [[concepts/sample-efficiency]]
+  - Ed Zitron "AI Is Slowing Down" → [[entities/ed-zitron]]
+  - Martin Alderson "xAI Datacentre REIT" → [[entities/martin-alderson]]
+  - Simon Willison "Siri AI at WWDC" → [[entities/simon-willison]]
+  - Entropic Thoughts "LLMs and Almost Good Code" → [[entities/entropicthoughts-com]]
+  - Gary Marcus "Industry Math" → [[entities/gary-marcus]]
+- **Archive**: Already archived by prior run (dedup)
+- **No wiki pages created or modified**
+
 ## [2026-06-14 16:00 UTC] Raw Backlog Ingest -- Pipeline saturation (5 articles, all previously processed)
 
 **Takes=0** -- All 5 articles already covered by existing wiki pages (daily pipeline completed processing ahead).
