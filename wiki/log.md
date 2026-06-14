@@ -1,3 +1,20 @@
+## [2026-06-14 16:00 UTC] Raw Backlog Ingest -- Pipeline saturation (5 articles, all previously processed)
+
+**Takes=0** -- All 5 articles already covered by existing wiki pages (daily pipeline completed processing ahead).
+
+| Article | Size | Existing Wiki Page | Status |
+|---------|------|-------------------|--------|
+| MAI-Thinking-1 Tech Report | 372KB (109p) | concepts/mai-thinking-1-tech-report.md (227 lines) | skip |
+| Dwarkesh AGI Economics (Imas/Trammell) | 71KB | concepts/agi-economics.md + entities/dwarkesh-patel.md | skip |
+| Dario Amodei Policy on AI Exponential | 62KB | entities/dario-amodei.md (226 lines) | skip |
+| Will Brown Lesson 2 Raw Transcript | 50KB | transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md (540 lines) | skip |
+| Ed Zitron AI Doesnt Have ROI | 47KB | entities/ed-zitron.md (468 lines, enterprise cost crisis section) | skip |
+
+**Archive**: 5 candidates processed, 1 newly archived, 4 dedup skipped. Total archive URLs: 751.
+**Triage**: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json
+**Note**: Same 5 articles appearing in 5+ consecutive backlog batches. All articles confirmed processed in 6+ prior batches. raw_backlog_ingest pipeline has 6,785 articles remaining.
+
+
 ## [2026-06-14] Active Crawl — 4 new concept pages, 3 new entity pages, 1 enriched entity, 6 raw articles
 
 **Status**: Parallel discovery via HN Algolia + X/Twitter + wiki gap analysis. 6 new wiki pages created, 1 entity enriched.
