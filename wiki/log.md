@@ -8,6 +8,18 @@
 - Anyscale/Ray Dashboard — Not wiki-worthy for separate page; ML infra observability only
 **Skips**: 14 non-AI articles (SQLite, WASM, RSA T-shirt, package mgmt, Windows threading, Intel 8087, human routers essay, construction reading list, Pluggy, Apple PCC, glass seals, HammerDB, serial console, Cory Doctorow)
 
+## [2026-06-14 08:00 UTC] Raw Backlog Ingest — Batch saturation check (5 articles, all previously processed)
+**Status**: All 5 candidates already processed in prior runs (June 13 batch). Takes=0 (normal for saturated pipeline).
+**Articles evaluated**:
+- MAI-Thinking-1 Tech Report (372KB, 109p) → skip: `concepts/mai-thinking-1-tech-report.md` (227 lines, complete architecture/GRPO/benchmark coverage). Same 5 articles as June 13 batch — pipeline saturation confirmed.
+- Dwarkesh × Imas/Trammell AGI Economics (71KB) → skip: `concepts/agi-economics.md` (93 lines) + `entities/dwarkesh-patel.md` (timeline entry). Already archived.
+- Dario Amodei Policy on AI Exponential (62KB) → skip: `entities/dario-amodei.md` (226 lines, 5-area framework). Already archived.
+- Ed Zitron AI Doesn't Have ROI (47KB) → skip: `entities/ed-zitron.md` (470 lines, dedicated ROI section). Already archived.
+- Will Brown Lesson 2 Raw Transcript (50KB) → skip: `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` (540 lines structured). Already archived.
+**Triage JSON**: saved to `/opt/data/.hermes/cron/data/newsletter/triage_latest.json` (24 decisions total including existing).
+**Archive**: 13 items archived (dedup via archive_triage.py).
+**Pipeline note**: Same 5 articles selected by raw_backlog_collect.py as June 13 batch — the backlog prioritization is cycling through the same highest-priority unprocessed articles, confirming pipeline saturation (all major content already captured by prior runs).
+
 ## [2026-06-13 20:00 UTC] Raw Backlog Ingest — Batch 5-article saturation check
 **Status**: All 5 candidates already processed in prior runs. Takes=0 (normal for saturated pipeline).
 **Articles evaluated**:
