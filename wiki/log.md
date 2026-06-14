@@ -1,3 +1,13 @@
+## [2026-06-14 07:50 UTC] Blog Wiki Ingest — Armin Ronacher & Gary Marcus Fable 5 enrichment
+**Status**: Blog-ingest checkpoint (18 candidates) processed. 2 takes, 2 references, 14 skips.
+**Takes**:
+- `entities/armin-ronacher.md` — Added "European Sovereignty & Fable 5 (June 2026)" subsection: Ronacher's analysis of the US export control directive on Fable 5/Mythos 5 from a European nationalist/sovereignty perspective. Added to timeline + sources. (source: lucumr.pocoo.org--2026-6-13-americans-only)
+- `entities/gary-marcus.md` — Added "Commerce Export Control & State Actions (June 2026)" subsection: Marcus's comprehensive critique covering (1) Commerce export control directive on Fable/Mythos, (2) Florida v. OpenAI state lawsuit, (3) NY multi-state subpoena against OpenAI. Added to sources. (source: garymarcus.substack.com--p-the-white-houses-shambolic-ai-policy)
+**References**:
+- `concepts/claude/fable-5.md` — Added Anthropic official statement as external link (already substantively covered in existing "US Government Export Control Directive" section)
+- Anyscale/Ray Dashboard — Not wiki-worthy for separate page; ML infra observability only
+**Skips**: 14 non-AI articles (SQLite, WASM, RSA T-shirt, package mgmt, Windows threading, Intel 8087, human routers essay, construction reading list, Pluggy, Apple PCC, glass seals, HammerDB, serial console, Cory Doctorow)
+
 ## [2026-06-13 20:00 UTC] Raw Backlog Ingest — Batch 5-article saturation check
 **Status**: All 5 candidates already processed in prior runs. Takes=0 (normal for saturated pipeline).
 **Articles evaluated**:

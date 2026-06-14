@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-11
+updated: 2026-06-14
 tags:
   - lab
   - benchmark
@@ -27,6 +27,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md
   - raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md
   - raw/articles/garymarcus.substack.com--p-maybe-section-230-doesnt-shield-ai--f81f07ca.md
+  - raw/articles/garymarcus.substack.com--p-the-white-houses-shambolic-ai-policy--96f61c8f.md
 ---
 
 # Gary Marcus
@@ -179,6 +180,23 @@ Source: [[raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-pr
 ### Trump AI Preflight Checks Executive Order (Jun 2026)
 
 On June 2, 2026, President Trump signed an executive order mandating **preflight checks** (pre-deployment safety reviews) for AI models with large commercial impact — a policy Marcus had first proposed at the US Senate three years earlier. Marcus described it as "thrilling to see a dream come true." The EO aligns with Marcus's long-standing proposal for FDA-style review for frontier AI models. Source: [[raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md]]
+
+### Commerce Export Control & State Actions (June 2026)
+
+On June 13, 2026, Marcus published a comprehensive critique of Trump administration AI policy, covering three concurrent developments:
+
+**Commerce Export Control Directive (June 12):** Marcus criticized the Commerce Department's abrupt order suspending access to [[concepts/claude/fable-5|Fable 5]] and [[concepts/claude/mythos|Mythos 5]] as "cut-off-your-nose-to-spite-your-face" policy. Key points:
+- The order was issued reactively when Amazon showed the government that Fable could be jailbroken — but "essentially every LLM-based system can be jailbroken," this was not a new or specific vulnerability
+- The government appeared "arbitrary and capricious," effectively shutting down a thriving industry without careful consideration
+- Marcus called for "strong but measured AI oversight that is bipartisan, technically well-informed, calm and considered, proactive rather than reactive"
+- He noted that Anthropic brought this on themselves by overselling doom and calling for export controls — but argued the government's response was still disproportionate
+- Connected back to his Trump EO analysis: the June 2 EO was too weak (voluntary, cybersecurity-only), while the June 12 Commerce order was too harsh and reactive — "shoot first and ask questions later is not what we need"
+
+**Florida v. OpenAI (June 2026):** Marcus highlighted the first state lawsuit against OpenAI, filed by Florida's Republican Attorney General, as evidence that the Trump EO's voluntary approach was insufficient. The lawsuit alleged OpenAI violated Florida's Deceptive and Unfair Trade Practices Act by marketing products it knew were unreliable, collecting data without meaningful consent, misrepresenting safety precautions, and failing to protect minors. Marcus argued these harms were foreseeable (citing his own 2023 Senate testimony) but the EO "addresses basically none of these harms" — states have "little choice but to file lawsuits" after damages occur.
+
+**New York Multi-State Subpoena (June 2026):** Marcus reported a major Wall Street Journal scoop that New York, working with several other states, subpoenaed OpenAI demanding information on advertising, user engagement, data handling, minors/seniors protection, deep learning models, model sycophancy, and company policies. Marcus framed this as "states picking up the slack" where federal policy failed.
+
+Source: [[raw/articles/garymarcus.substack.com--p-the-white-houses-shambolic-ai-policy--96f61c8f.md]]
 
 ### Why Things Will Eventually Fall Apart (Jun 2026)
 

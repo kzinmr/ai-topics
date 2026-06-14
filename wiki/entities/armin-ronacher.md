@@ -2,9 +2,9 @@
 title: "Armin Ronacher"
 tags: [person, open-source, python, web-framework]
 created: 2026-04-24
-updated: 2026-06-11
+updated: 2026-06-14
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md]
 ---
 
 
@@ -53,8 +53,9 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 | 2026-04-08 | **Earendil** acquired **Pi** (Mario Zechner's minimal coding agent); announced **Lefos**, a new kind of entity designed to be both capable and trustworthy |
 | 2026-02-04 | Appeared on Syntax.fm #976 discussing Pi's architecture, the "Bash is all you need" philosophy, self-modifying skills with hot reloading, and prompt injection challenges |
 || 2026-04-11 | Published "**The Center Has a Bias**" — analysis of how discussions about AI coding agents are polarized, arguing that the "center" is biased toward engagement because crossing the threshold of use selects for curiosity |
-|| 2026-06-10 | Published "**Gaslighting Openness**" — critique of how companies frame access as irresponsibility; defends the EU's DMA as essential for device and data access; criticizes Anthropic's financial incentive to restrict what people can do with Mythos and Fable models, wrapping restrictions in safety language while training on public works and blocking open-source distillation; argues true democratized access to AI is in everyone's interest |
-| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
+||| 2026-06-10 | Published "**Gaslighting Openness**" — critique of how companies frame access as irresponsibility; defends the EU's DMA as essential for device and data access; criticizes Anthropic's financial incentive to restrict what people can do with Mythos and Fable models, wrapping restrictions in safety language while training on public works and blocking open-source distillation; argues true democratized access to AI is in everyone's interest |
+|| 2026-06-13 | Published "**Dangerous Technology For Americans Only**" — analysis of US export controls on Fable 5/Mythos 5; critique of technological nationalism and European dependency on US AI infrastructure |
+|| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
 
 ## Core Ideas
 
@@ -194,6 +195,14 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
 
 **Open Source Advocacy — Gaslighting Openness (June 2026):** Ronacher's blog post "Gaslighting Openness" directly confronts how large AI companies are "gaslighting" the public by framing access as irresponsibility. He connects the EU's Digital Markets Act (DMA) to AI access — Apple's fight over delayed AI features in Europe is not about regulatory annoyance but about who controls access to users' own devices and data. He singles out Anthropic, arguing the company has financial incentives to restrict what users can do with [[concepts/claude/mythos|Mythos]] and [[concepts/claude/fable-5|Fable]] models while wrapping restrictions in safety language. The core contradiction: Anthropic trained on public works, then blocks open-source attempts to distill these systems. Ronacher's conclusion: "true democratized access to technology including AI is in all our interest," and Europeans especially should resist narratives that preventing access serves their interests.
 
+| **European Sovereignty & Fable 5 (June 2026):** In "Dangerous Technology For Americans Only" (June 13, 2026), Ronacher analyzed the US government's export control directive that suspended access to [[concepts/claude/fable-5|Fable 5]] and [[concepts/claude/mythos|Mythos 5]] for all foreign nationals, including Anthropic employees. Unlike his "Gaslighting Openness" critique of corporate gatekeeping, this essay targets **state-imposed technological nationalism**. Key arguments:
+  - The directive moves from "do not sell to hostile governments" to **nationality as the defining boundary** — if you have the wrong passport, you are not trusted
+  - European technology policy is entirely unprepared for this: "this is not a question of regulation but a question of might and power, something that Europe lacks"
+  - Europe's dependence on US infrastructure (cloud, OS, AI models, semiconductors, satellite internet) creates a "dangerous death spiral" — talent leaves because the ecosystem is weak, the ecosystem stays weak because talent leaves
+  - European regulation (DMA, etc.) is a "useless substitute for capability"
+  - Ronacher acknowledges his own complicity: Earendil incorporated in Delaware because "if you are trying to raise serious money, hire aggressively, and move quickly, the US often looks like the only game in town"
+  - Warns that European citizens and politicians have not moved beyond blaming the EU for its failures — fragmented markets, risk-averse culture, anti-entrepreneurial regulation
+
 ## Influence Metrics
 
 | Project | GitHub Stars | Language | Monthly Downloads | Notes |
@@ -237,6 +246,7 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
 - https://lucumr.pocoo.org/2025/6/4/changes/ — "AI Changes Everything"
 - https://lucumr.pocoo.org/2025/6/10/genai-criticism/ — "GenAI Criticism and Moral Quandaries"
 - https://lucumr.pocoo.org/2025/11/21/agents-are-hard/ — "Agent Design Is Still Hard"
+- https://lucumr.pocoo.org/2026/6/13/americans-only/ — "Dangerous Technology For Americans Only"
 - https://lucumr.pocoo.org/2026/1/14/minijinja-go-port/ — "Porting MiniJinja to Go With an Agent"
 - https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/ — "The Center Has a Bias"
 - https://lucumr.pocoo.org/2026/6/10/gaslighting/ — "Gaslighting Openness"

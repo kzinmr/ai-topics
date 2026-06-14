@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-06-13
+updated: 2026-06-14
 tags:
   - model
   - claude-fable-5
@@ -335,3 +335,4 @@ The combined ~4,800+ points across these threads reflects the release's signific
 - [[entities/rlancemartin]] — Author of Fable 5 design patterns
 - [[entities/elie-bakouch]] — Critic of capability limitation transparency
 - [[concepts/claude/opus-4-8]] — Fallback model for classifier-triggered queries
+- [Anthropic official statement on Fable/Mythos access suspension (June 12, 2026)](https://www.anthropic.com/news/fable-mythos-access) — Anthropic's public response to the US government export control directive
