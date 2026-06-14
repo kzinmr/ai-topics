@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 2506 | Indexed entries: 2077 | Concepts: 1698 | Entities: 786
+> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2083 | Concepts: 1701 | Entities: 789
 
-## Entities (786 pages)
+## Entities (789 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -261,6 +261,7 @@
 - [[entities/daniel-van-strien]] — Daniel van Strien — ML Librarian at Hugging Face. Creator of polars-hf (HF Buckets IO plugin), uv-scripts-for-ai (30+ OCR models, one command each), AI Patterns for GLAM book, hub-semantic-search-mcp. Datasets, synthetic data, community evals.
 - [[entities/dan-luu]] — Software reliability engineer known for systematic incident analysis. Twitter cache failure study (2012-2022) with 6 SEV-0/SEV-1 cache incidents documented. [[raw/articles/danluu.com--cache-incidents--1d05e743.md]]
 - [[entities/datacurve]] — Datacurve — AI evaluation startup ($17.7M raised). Creator of DeepSWE benchmark (113 tasks, 91 repos, 5 languages). Exposed ~32% verifier error rate in SWE-Bench Pro and Claude Opus git-history exploitation.
+- [[entities/dan-mcinerny]] — Dan McInerney — Open-source developer and creator of Architect Loop, a cross-vendor agent loop pattern using Claude Fable 5 + OpenAI Codex (GPT-5.5).
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic | Author of "Policy on the AI Exponential" (June 2026): comprehensive 5-area policy framework (regulation, macroeconomics, biomedical acceleration, civil liberties, democratic geopolitics). FAA-style mandatory model testing proposal.
@@ -531,6 +532,7 @@
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
 - [[entities/pratik-bhavsar]] — AI Engineer & DevRel at Galileo. Agent Leaderboard, Hallucination Index, Eval Engineer, "Mastering GenAI" series, Maxpool community.
+- [[entities/prefeitura-rio]] — IplanRIO (Empresa Municipal de Informática do Rio de Janeiro) — Municipal IT agency of Rio de Janeiro city government. Released [[concepts/rio-3.5-open-397b|Rio 3.5 Open 397B]], the first frontier-class open model from a municipal government. MIT license.
 - [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
 - [[entities/project-glasswing]] — Project Glasswing — Anthropic cybersecurity initiative. 1,752 vulnerabilities assessed (90.6% true-positive rate), on track for 3,900+ high/critical vulns in open-source. Claude Security in public beta.
 - [[entities/promptfoo]] — Promptfoo — Open-source LLM eval & red-teaming framework by Ian Webster & Michael D'Angelo. 19.6K GitHub stars, 302.7K weekly npm downloads, 156 Fortune 500 customers. Acquired by OpenAI (2026, remains MIT). Evaluations + red teaming + code scanning + MCP support.
@@ -617,6 +619,7 @@
 - [[entities/telegram]] — Telegram is a cloud-based messaging platform and bot ecosystem that supports extensive third-party integrations, AI-powered bots, Mini Apps (Web Apps), and managed bot infrastructure.
 - [[entities/telegram-managed-bots]] — Telegram Managed Bots
 - [[entities/tencent-hy3]] — Tencent Hy3 Preview — 295B/21B active MoE model, open-source. 256K context, 40% inference efficiency gain. Powers Yuanbao, CodeBuddy. OpenRouter access. Topped OpenRouter rankings (May 2026) — mysterious popularity despite minimal community discussion. Effective pricing analysis vs DeepSeek V4 Flash cache advantage.
+- [[entities/tencent]] — Tencent — Chinese multinational technology conglomerate, developer of the Hunyuan AI model series
 - [[entities/teortaxestex]] — **X/Twitter** | @teortaxesTex |
 - [[entities/terrible-software]] — **URL:** https://terriblesoftware.org
 - [[entities/thariq-shihipar]] — Thariq Shihipar (@trq212) — MTS at Anthropic on Claude Code. Co-authored dynamic workflows & HTML-first output. Founder YC W20, MIT Media Lab. 15+ blog essays on AI interpretability, Skills, agent design, and philosophy.
@@ -825,7 +828,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1702 pages)
+## Concepts (1701 pages)
 
 ## Events (9 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
@@ -1053,6 +1056,7 @@
 - [[concepts/apple-foundation-models]] — Apple Foundation Models (AFM 3): 5-model family (3rd gen, June 2026). On-device: AFM 3 Core (3B dense), AFM 3 Core Advanced (20B sparse, IFP architecture). Server: AFM 3 Cloud, ADM 3 Cloud, AFM 3 Cloud Pro (NVIDIA GPUs on Google Cloud PCC). Built with Google.
 - [[concepts/apple-gemini-ai-architecture]] — Apple-Gemini AI Architecture: Apple's June 2026 strategic shift to Google Gemini models for next-gen AI, competitive dynamics in the Big Tech AI alliance landscape.
 - [[concepts/application-compatibility]] — Application Compatibility
+- [[concepts/architect-loop]] — Cross-vendor agent loop pattern pairing Claude Fable 5 as architect with OpenAI Codex (GPT-5.5) as builder. ~80% token cost reduction. Twelve mechanically-enforced design rules. Repo as memory, frozen gates, cross-model review.
 - [[concepts/artificial-contributors-open-source]] — RFC draft (Andrew Nesbitt, May 2026): Defines disclosure, quality, and code of conduct for AI OSS contributions. ACs must not impersonate humans, must run tests, and should understand maintainer sarcasm.
 - [[concepts/ask-user-question-pattern]] — Harness pattern for agents to ask users for confirmation
 - [[concepts/assembly-optimization]] — Assembly Optimization
@@ -1527,6 +1531,7 @@
 - [[concepts/huggingface-skills]] — Hugging Face Skills — Open-source repository of 16 standardized agent skill definitions for AI/ML tasks (training, datasets, eval, deployment). Follows Agent Skills standard (agentskills.io). Compatible with Claude Code, Codex, Gemini CLI, Cursor. Flagship `hf-llm-trainer` enables agent-driven SFT/DPO/GRPO fine-tuning on HF Jobs cloud GPUs.
 - [[concepts/human-sandwich]] — Human Sandwich Pattern — Kieran Klaassen's collaboration pattern where humans are "the bread on either end of the AI's work": humans frame tasks, AI executes, humans review/decide. Practiced at Every for coding, writing, and email via Codex, Claude Code, Cowork.
 - [[concepts/hybrid-flow]] — HybridFlow (veRL): An architecture separating control flow from computation flow for RLHF/GRPO. volcengine/veRL implementation. Single-process controller on Ray transparently manages multi-GPU workers via WorkerGroup. @register decorator hides distributed execution. Multi-backend support for FSDP/Megatron/TorchTitan/vLLM/SGLang.
+- [[concepts/hunyuan-hy3]] — Hunyuan Hy3 — Tencent's 295B MoE model (21B active, 192 experts top-8), 256K context, rebuilt infrastructure, enhanced agent capabilities
 - [[concepts/hypencoder]] — Hypencoder — Query-Specific Neural Relevance via Hypernetworks. Replaces inner-product similarity in bi-encoder retrieval with a query-specific neural network (q-net) whose weights are dynamically generated by a hypernetwork. UMass Amherst (SIGIR 2025). Outperforms 7B RepLLaMA with 110M params; 8.8M docs in ~60ms.
 - [[concepts/illusion-of-thinking]] — Apple’s Illusion of Thinking — Apple MLX research on LLM reasoning limitations and neurosymbolic robotics.
 - [[concepts/inference]] — Inference (General)
@@ -1810,6 +1815,7 @@
 - [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
 - [[concepts/retrieve-merge-predict]] — **Retrieve, Merge, Predict** — Three-stage pipeline for augmenting base tables with data lake features to improve ML predictions. By INRIA SODA (Cappuzzo et al., 2024). Retrieval (MinHash, exact matching, Starmie) → Merge → Predict with tree-based models. Key finding: retrieval accuracy is critical, simple merging suffices, gradient boosting is robust to noisy joins. Benchmark data lake: [[entities/yadl]].
 - [[concepts/rich-suttons-bitter-lesson]] — Rich Sutton's Bitter Lesson (2019). General methods leveraging computation ultimately beat hand-crafted structure. Application to AI engineering, Hyung Won Chung's "add structure then remove it later" framework, Lance Martin's open-deep-research case study
+- [[concepts/rio-3.5-open-397b]] — Rio 3.5 Open 397B — Frontier-class open-source 397B MoE model (17B active) from IplanRIO (Rio de Janeiro city government). Post-trained from Qwen 3.5 397B. Features SwiReasoning (dynamic CoT/latent switching), 1M context, MIT license. Competitive with GPT 5.5 and DeepSeek V4 Pro on coding, math, and reasoning benchmarks.
 - [[concepts/rlm-for-indexing]] — RLM for Indexing & Content Understanding — Speculative direction applying REPL + llm_query() to document chunking, enrichment, cross-doc reasoning, schema discovery. Hybrid with rule-based pipelines for cost control.
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/rlms]] — RLMs: Recursive Language Models — Self-optimizing LLMs at inference time via recursive context reading/writing

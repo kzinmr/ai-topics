@@ -1,3 +1,24 @@
+## [2026-06-14] Active Crawl — 4 new concept pages, 3 new entity pages, 1 enriched entity, 6 raw articles
+
+**Status**: Parallel discovery via HN Algolia + X/Twitter + wiki gap analysis. 6 new wiki pages created, 1 entity enriched.
+
+**New Concept Pages** (3):
+- `concepts/rio-3.5-open-397b.md` — Rio 3.5 Open 397B: Frontier-class 397B MoE model (17B active) from IplanRIO (Rio de Janeiro city government). Post-trained from Qwen 3.5 397B. Features SwiReasoning (dynamic CoT/latent switching), 1M context, MIT license. Source: [[raw/articles/2026-06-14_prefeitura-rio_rio-3.5-open-397b]]
+- `concepts/hunyuan-hy3.md` — Hunyuan Hy3: Tencent's 295B MoE (21B active, 192 experts top-8), 256K context, rebuilt training infrastructure, enhanced agent capabilities. Source: [[raw/articles/2026-06-14_tencent_hunyuan-hy3-moe]]
+- `concepts/architect-loop.md` — Architect Loop: Cross-vendor agent loop pattern pairing Claude Fable 5 as architect with OpenAI Codex (GPT-5.5) as builder. ~80% token cost reduction. Twelve mechanically-enforced design rules. Source: [[raw/articles/2026-06-14_danmcinerny_architect-loop-fable-codex]]
+
+**New Entity Pages** (3):
+- `entities/prefeitura-rio.md` — IplanRIO: Municipal IT agency of Rio de Janeiro. Released Rio 3.5 Open 397B.
+- `entities/tencent.md` — Tencent: Chinese tech conglomerate, developer of Hunyuan AI model series.
+- `entities/dan-mcinerny.md` — Dan McInerney: Creator of Architect Loop cross-vendor agent pattern.
+
+**Enriched Entities** (1):
+- `entities/simon-willison.md` — Added Pyodide WASM Wheels on PyPI (June 2026) and OpenAI WebRTC Playground with GPT-Realtime-2 (June 2026) sections. Source: [[raw/articles/2026-06-14_simonwillison_pyodide-wasm-wheels-pypi]], [[raw/articles/2026-06-14_simonwillison_openai-webrtc-playground]]
+
+**Discovery Sources**: HN Algolia (15 trending AI stories), X/Twitter xurl search (4 queries, 10 substantive results), blogwatcher DB + wiki gap analysis.
+
+**Wiki Stats**: 1701 concepts, 789 entities (2512 total pages).
+
 ## [2026-06-14 07:50 UTC] Blog Wiki Ingest — Armin Ronacher & Gary Marcus Fable 5 enrichment
 **Status**: Blog-ingest checkpoint (18 candidates) processed. 2 takes, 2 references, 14 skips.
 **Takes**:
@@ -8767,3 +8788,34 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 **Orphans reduced**: 548 → 528 (−20)
 **Index entries**: 2047 → 2067 (+20)
 **Concepts count**: 1678 → 1698 (+20, header) / 1682 → 1702 (section)
+
+---
+## [2026-06-14] raw-backlog: architect-loop concept + dan-mcinerny entity
+
+**Raw article**: raw/articles/2026-06-14_danmcinerny_architect-loop-fable-codex.md
+**Pages created**: concepts/architect-loop.md (115 lines), entities/dan-mcinerny.md (37 lines)
+**SCHEMA.md changes**: none
+**Index updates**: concepts/architect-loop, entities/dan-mcinerny added; counts bumped (Total 2508, Concepts 1703, Entities 787)
+
+---
+## [2026-06-14] Created Hunyuan Hy3 concept page + Tencent entity stub
+
+**Source**: raw/articles/2026-06-14_tencent_hunyuan-hy3-moe.md
+
+**Pages created**:
+- concepts/hunyuan-hy3.md (125 lines) — Tencent Hunyuan Hy3 concept: 295B MoE architecture (21B active, 192 experts top-8), 256K context, rebuilt pre-training/RL infrastructure, benchmark results (STEM, coding, agent), comparison to previous Hunyuan models
+- entities/tencent.md (27 lines) — Tencent company entity stub, linking to tencent-hy3 and MoE concepts
+
+**Key facts**: Hy3 Preview is the first model trained on Tencent's rebuilt Feb 2026 infrastructure. 295B total / 21B active, 192 experts top-8 routing. Leads GPT-competitor benchmarks in math (MATH 76.28, GSM8K 95.37) and multilingual (MMMLU 80.15) despite lowest activated params. Strong coding agent (SWE-bench, Terminal-Bench 2.0) and search agent (BrowseComp, WideSearch) performance. MTP speculative decoding supported in vLLM and SGLang.
+
+**index.md**: Added concept entry (hunyuan-hy3) and entity entry (tencent). Updated header counts: Concepts 1703, Entities 787.
+
+## 2026-06-14
+
+### Created
+- **concepts/rio-3.5-open-397b.md** (132 lines) — Rio 3.5 Open 397B concept page. Frontier-class open-source 397B MoE model from IplanRIO (Rio de Janeiro municipal government). Post-trained from Qwen 3.5 397B, features SwiReasoning, 1M context, MIT license.
+- **entities/prefeitura-rio.md** (58 lines) — Prefeitura Rio (IplanRIO) entity page. Municipal IT company of Rio de Janeiro. Released Rio 3.5 Open 397B, the first frontier-class open model from a municipal government.
+
+### Updated
+- **index.md** — Added entries for prefeitura-rio and rio-3.5-open-397b. Updated counts: 2508 pages, 2079 indexed entries, 1699 concepts, 787 entities.
+- **log.md** — This entry.

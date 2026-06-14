@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-06-12
+updated: 2026-06-14
 status: L3
 sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md, raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md, raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md, raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md, raw/articles/simonwillison.net--2026-jun-7-datasette-agent-edit--01ceb2d8.md, raw/articles/simonwillison.net--2026-jun-10-datasette-agent--a829e35c.md, raw/articles/simonwillison.net--2026-jun-11-fable-is-relentlessly-proactive--0e9903b3.md]
 tags: [person, blogger]
@@ -253,6 +253,28 @@ On May 27, 2026, Simon published "[I think Anthropic and OpenAI have found produ
 **Cutting Out the Middlemen**: Anthropic's rumored $10.9B Q2 revenue and potential first profitable quarter suggest the labs are pivoting away from API middlemen (Cursor, Copilot) toward direct enterprise relationships. Claude Code directly competes with Cursor and Copilot. "No wonder Cursor are investing in their own models!"
 
 **April 2026 as New Inflection Point**: Simon identifies April 2026 as the revenue inflection point, following the November 2025 capability inflection point (when GPT-5.1 and Opus 4.5, combined with coding agent harnesses, "got good"). The IPO S-1 documents will provide audited numbers to confirm.
+
+### Pyodide WASM Wheels on PyPI (June 2026)
+
+On June 13, Simon documented and tested Pyodide 314.0's new ability to publish **WASM wheels directly to PyPI** — a significant milestone for Python's WebAssembly ecosystem. The new `pyemscripten` platform tag enables compiled Python extensions (C, C++, Rust) to be distributed as WASM packages on PyPI:
+
+- **Mechanism**: Packages compile to WebAssembly in Emscripten environments, publish via PyPI's existing wheel infrastructure, and Pyodide installs them with `micropip.install()`
+- **Experiment**: Simon packaged `luau-wasm` (a Lua VM compiled to WASM) and confirmed its `luau.load()` API works in-browser when imported by Pyodide
+- **Adoption analysis**: Using BigQuery against the PyPI public dataset, Simon found **28 packages** already using the new `pyemscripten` platform tags, including cryptography primitive libraries
+- **Significance**: This enables Python AI/ML tooling to run entirely in-browser, relevant for edge AI inference, agent sandboxing, and serverless Python runtimes
+
+Source: [[raw/articles/2026-06-14_simonwillison_pyodide-wasm-wheels-pypi]]
+
+### OpenAI WebRTC Playground with GPT-Realtime-2 (June 2026)
+
+On June 12, Simon updated his **OpenAI WebRTC Playground** tool to support OpenAI's `gpt-realtime-2` voice model — a significant improvement over the previous realtime model available only via beta API. Key features:
+
+- **Document context**: Users can paste a document (or URL content) into the tool and have a spoken conversation about it with GPT-Realtime-2
+- **Frustration-driven**: Simon built this because OpenAI had not yet brought `gpt-realtime-2` to the ChatGPT product UI, despite the model being available via API
+- **Tool**: Browser-based WebRTC playground at [tools.simonwillison.net/openai-webrtc](https://tools.simonwillison.net/openai-webrtc)
+- **Significance**: Demonstrates the gap between API-available model capabilities and consumer-facing product integration; shows the DIY ethos of bridging that gap with open-source tools
+
+Source: [[raw/articles/2026-06-14_simonwillison_openai-webrtc-playground]]
 
 
 ## Key Quotes
