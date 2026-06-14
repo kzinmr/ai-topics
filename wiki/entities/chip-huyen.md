@@ -227,7 +227,7 @@ In a widely-discussed LinkedIn post (referenced in Lenny's Podcast), Huyen ident
 
 ## Related Wiki Pages
 
-- [[concepts/genai-handbook]] — Chip Huyenのブログ記事（RLHF, Building LLM Applications, Multimodal）が🟢最重要リソースとして評価されている
+- [[concepts/genai-handbook]] — Chip Huyen's blog posts (RLHF, Building LLM Applications, Multimodal) rated as 🟢 highest-priority resources
 - [[concepts/rag-systems]]
 - [[concepts/post-training/rlhf]]
 - "Machine learning systems design" course notes (huyenchip.com/machine-learning-systems-design/)

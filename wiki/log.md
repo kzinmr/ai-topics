@@ -411,84 +411,84 @@ All 5 candidates were previously captured by other pipeline stages:
 **Sources**: AINews (Latent Space) 2026-06-11, raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md
 
 ---
-## [2026-06-11] concepts/death-of-browser を concepts/browser-agent/death-of-browser へ移動
+## [2026-06-11] Moved concepts/death-of-browser into concepts/browser-agent/death-of-browser
 
-**Action**: `concepts/death-of-browser/_index.md` を `concepts/browser-agent/death-of-browser.md` に移動。被リンク17件を更新。`browser-agent/` 階層を新設。
+**Updated pages**:
 
-**移動**:
+**Moved**:
 - `concepts/death-of-browser/_index.md` → `concepts/browser-agent/death-of-browser.md`
 
-**更新ページ**:
-- `index.md` — リクイリンク更新
-- `entities/webmcp.md` — リクイリンク更新
-- `entities/openai-cua.md` — リクイリンク更新
-- `concepts/agentic-web.md` — リクイリンク更新
-- `concepts/_index.md` — リクイリンク更新
-- `entities/perplexity-comet.md` — リクイリンク更新
-- `entities/manus.md` — リクイリンク更新
-- `concepts/telegram-managed-bots.md` — リクイリンク更新
-- `entities/browser-use.md` — リクイリンク更新
-- `entities/browserbase.md` — リクイリンク更新
-- `entities/anthropic-computer-use.md` — リクイリンク更新
-- `concepts/personal-superintelligence.md` — リクイリンク更新
+**Updated pages**:
+- `index.md` — links updated
+- `entities/webmcp.md` — links updated
+- `entities/openai-cua.md` — links updated
+- `concepts/agentic-web.md` — links updated
+- `concepts/_index.md` — links updated
+- `entities/perplexity-comet.md` — links updated
+- `entities/manus.md` — links updated
+- `concepts/telegram-managed-bots.md` — links updated
+- `entities/browser-use.md` — links updated
+- `entities/browserbase.md` — links updated
+- `entities/anthropic-computer-use.md` — links updated
+- `concepts/personal-superintelligence.md` — links updated
 
 ---
 
-## [2026-06-11] OpenAI Deep Research (o3) の browser-agent 文脈での補足
+## [2026-06-11] OpenAI Deep Research (o3) supplement in browser-agent context
 
-**Action**: `concepts/browser-agent/death-of-browser.md` に OpenAI Deep Research の o3 ベースのアーキテクチャを追加。技術アプローチ分類に「Agentic Browsing Loop (Research-First)」を新設。比較マトリックスに Deep Research を追加。関連概念に Deep Research System Card へのリンクを追加。
+**Action**: Added OpenAI Deep Research's o3-based architecture to `concepts/browser-agent/death-of-browser.md`. Created new "Agentic Browsing Loop (Research-First)" category in the technical approach taxonomy. Added Deep Research to the comparison matrix. Added link to Deep Research System Card under related concepts.
 
-**更新ページ**:
-- `concepts/browser-agent/death-of-browser.md` — 5つ目の技術アプローチとして追加、Key Player Map の OpenAI 行を更新、比較マトリックスに追加、関連概念にリンク追加
+**Updated pages**:
+- `concepts/browser-agent/death-of-browser.md` — Added as 5th technical approach, updated OpenAI row in Key Player Map, added to comparison matrix, added links to related concepts
 
 ---
 
-## [2026-06-11] browser-agent/deep-research.md コンセプトページ作成
+## [2026-06-11] Created browser-agent/deep-research.md concept page
 
-**Action**: `concepts/browser-agent/deep-research.md` を新規作成。Deep Research を browser-agent エコシステムの中で位置づけるコンセプトページ。既存の `concepts/deep-research.md`（retrieval 問題焦点）とは異なる視点で、agentic browsing loop のパターンとして整理。
+**Action**: Created `concepts/browser-agent/deep-research.md`. A concept page positioning Deep Research within the browser-agent ecosystem, organized from the perspective of agentic browsing loop patterns — distinct from the existing `concepts/deep-research.md` (focused on retrieval problems).
 
-**新規ページ**:
+**New pages**:
 - `concepts/browser-agent/deep-research.md` — Agentic Browsing for Autonomous Research
 
-**更新ページ**:
-- `index.md` — 新規ページ追加
-- `concepts/browser-agent/death-of-browser.md` — 新規ページへのリンク追加
+**Updated pages**:
+- `index.md` — added new page
+- `concepts/browser-agent/death-of-browser.md` — added link to new page
 
 ---
 
-## [2026-06-11] _archive/nous-research.md 削除
+## [2026-06-11] Deleted _archive/nous-research.md
 
-**Action**: `wiki/_archive/nous-research.md` を削除。entities/nous-research.md が本体として存在するため、スタブのアーカイブは不要。
+**Action**: Deleted `wiki/_archive/nous-research.md`. Since `entities/nous-research.md` already exists as the canonical page, the archive stub was unnecessary.
 
-**削除ファイル**:
-- `wiki/_archive/nous-research.md` — スタブページ（24行）
+**Deleted files**:
+- `wiki/_archive/nous-research.md` — stub page (24 lines)
 
-**確認事項**:
-- `entities/nous-research.md` が存在することを確認（78行、充実したページ）
-- 被リンク: `log.md` の1件のみ（ログ記録、削除不要）
-- `index.md` 未登録
-
----
-
-## [2026-06-11] MCP-RL Course 講義内容の詳細サマリー展開と概念ページ分解
-
-**Action**: agents-mcp-rl-course.md の Lesson 1-6 + Office Hours の講義内容を詳細に分析し、コースページの Detailed Technical Notes セクションを追加。論点ごとに4つの新規概念ページを作成し、既存2ページを充実させた。
-
-**新規ページ**:
-- `concepts/agent-design-patterns.md` — モデル選択（3層）、ツール呼び出し、Pydantic構造化出力、async処理
-- `concepts/reward-engineering.md` — 報酬関数設計（バイナリ vs 複合）、報酬std dev監視、非検証可能領域
-- `concepts/lm-as-judge-reward-signal.md` — LM-as-Judge の RL 報酬信号としての活用、RULER、較正方法論
-- `concepts/grpo-infrastructure.md` — VRAM計算、PPO vs GRPO、GPU アーキテクチャ、LoRA、async RL
-
-**更新ページ**:
-- `concepts/agents-mcp-rl-course.md` — Key Concepts に新規ページ追加、Detailed Technical Notes セクション追加
-- `concepts/grpo-rl-training.md` — Practical GRPO Training セクション追加（バッチ構造、訓練パラメータ、gotchas）
-- `entities/openpipe.md` — ART Framework セクション追加（アーキテクチャ、主要クラス、訓練ループパターン）
-- `index.md` — 4ページ追加、ページ数更新
+**Verification**:
+- Confirmed `entities/nous-research.md` exists (78 lines, substantial page)
+- Backlinks: only 1 from `log.md` (log record, no deletion needed)
+- `index.md` not registered
 
 ---
 
-## [2026-06-11] Office Hours Week 3 (Will Brown 文字起こし・要約)
+## [2026-06-11] MCP-RL Course — expanded lesson summaries and concept page decomposition
+
+**Action**: Analyzed Lesson 1-6 + Office Hours content in detail for agents-mcp-rl-course.md, added Detailed Technical Notes section to the course page. Created 4 new concept pages organized by topic and enriched 2 existing pages.
+
+**New pages**:
+- `concepts/agent-design-patterns.md` — Model selection (3-tier), tool calling, Pydantic structured outputs, async processing
+- `concepts/reward-engineering.md` — Reward function design (binary vs composite), reward std dev monitoring, non-verifiable domains
+- `concepts/lm-as-judge-reward-signal.md` — LM-as-Judge as RL reward signal, RULER, calibration methodology
+- `concepts/grpo-infrastructure.md` — VRAM math, PPO vs GRPO, GPU architecture, LoRA, async RL
+
+**Updated pages**:
+- `concepts/agents-mcp-rl-course.md` — Added new pages to Key Concepts, added Detailed Technical Notes section
+- `concepts/grpo-rl-training.md` — Added Practical GRPO Training section (batch structure, training parameters, gotchas)
+- `entities/openpipe.md` — Added ART Framework section (architecture, key classes, training loop patterns)
+- `index.md` — added 4 new pages, updated page count
+
+---
+
+## [2026-06-11] Office Hours Week 3 (Will Brown — transcript and summary)
 
 **Action**: Ingested Week 3 office hours transcript from message.txt. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, related links).
 
@@ -497,7 +497,7 @@ All 5 candidates were previously captured by other pipeline stages:
 
 ---
 
-## [2026-06-11] Bonus Lesson: GRPO Details (Will Brown 文字起こし・要約)
+## [2026-06-11] Bonus Lesson: GRPO Details (Will Brown — transcript and summary)
 
 **Action**: Ingested Bonus Lesson 5.5 transcript from message_1.txt. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, lesson summary, related links).
 
@@ -506,7 +506,7 @@ All 5 candidates were previously captured by other pipeline stages:
 
 ---
 
-## [2026-06-11] Lesson 5: Formulating Business Problems as RL Tasks (文字起こし・要約・Notebook)
+## [2026-06-11] Lesson 5: Formulating Business Problems as RL Tasks (transcript · summary · notebook)
 
 **Action**: Ingested Lesson 5 transcript from message.txt. Saved raw notebook from GitHub. Created transcript and summary article. Updated `concepts/agents-mcp-rl-course.md` (lecture schedule, lesson summary, companion resources, related links).
 
@@ -518,9 +518,9 @@ All 5 candidates were previously captured by other pipeline stages:
 
 ## [2026-06-10] Florian Brand: Open Model Safety
 ---
-## [2026-06-11] Kyle Corbitt Blog Series: ART開発前の知的背景 (4記事)
+## [2026-06-11] Kyle Corbitt Blog Series: Intellectual Background Before ART Development (4 articles)
 ---
-## [2026-06-11] Kyle Corbitt Blog Series: ART/RL実装と実践 (4記事)
+## [2026-06-11] Kyle Corbitt Blog Series: ART/RL Implementation and Practice (4 articles)
 
 **Action**: Saved 4 raw articles from corbt.com (2025-04 ~ 2025-07). Updated `entities/corbett.md` (sources). Updated `concepts/reward-hacking.md` (sources). Updated `concepts/ruler-openpipe-art.md` (sources). Updated `concepts/agents-mcp-rl-course.md` (sources, supplementary reading section).
 
@@ -967,7 +967,7 @@ Pipeline saturation pattern confirmed: daily pipelines (blog-ingest, newsletter-
 ## [2026-06-08] On-Policy vs Off-Policy RL — Goldberg Analysis Ingestion
 
 - **Source**: Yoav Goldberg, "Reinforcement Learning for Language Models" (April 2023)
-- **Saved**: `raw/articles/2023-04-09_yoavg-rl-for-llms.md` — Goldberg's foundational analysis of why RL is necessary for LLM alignment (gist from Discord #一般 thread)
+- **Saved**: `raw/articles/2023-04-09_yoavg-rl-for-llms.md` — Goldberg's foundational analysis of why RL is necessary for LLM alignment (gist from Discord #general thread)
 - **Created**: `concepts/on-policy-vs-off-policy-rl.md` — Concept page: on-policy vs off-policy distinction in RL for LLM post-training. Integrates Goldberg's hallucination-as-SFT-failure thesis, exposure bias, Brown's α×λ unified taxonomy, 2026 method landscape (GRPO, OPD, DPO, SDAR).
 - **Updated**: `entities/yoav-goldberg.md` — Added RL-for-LLMs gist (2023) as key contribution; updated tags (lab→researcher, removed curriculum)
 - **Updated**: `concepts/post-training-distributional-view.md` — Added cross-reference to new concept page
@@ -1100,8 +1100,8 @@ Pipeline saturation pattern confirmed: daily pipelines (blog-ingest, newsletter-
 ## [2026-06-08] blog: VISION.md Bitter Lesson
 
 - **Blog post created**: `blog/2026-06-08_hermes_vision-md-bitter-lesson.md`
-- **Title**: VISION.mdに検証ルールを書くな — Bitter Lessonは開発方法論にも来る
-- **Summary**: steipeteの「I use a VISION.md」という一行を起点に、Rich SuttonのBitter Lessonを開発方法論に適用。検証ルールの精巧な設計（テスト、型チェック、LLM-as-judge）は人間設計の特殊的手法であり、VISION.mdに代表される「原則を渡して手段を委ねる」アプローチが計算力活用の一般的方法として長期的に勝つ。VISION.mdは検証文書ではなく同一性の文書。4つのパターン（問い、Negative Space、品味、North Star Question）を提案。
+- **Title**: Don't Write Validation Rules in VISION.md — The Bitter Lesson is Coming for Development Methodology Too
+- **Summary**: Starting from steipete's "I use a VISION.md" post, applying Rich Sutton's Bitter Lesson to development methodology. Designing elaborate validation rules (tests, type checks, LLM-as-judge) is a form of human-engineered specificity; the approach of "passing principles and delegating means" represented by VISION.md wins long-term as a general method for leveraging computational power. VISION.md is a document of identity, not validation. Proposes 4 patterns: Questions, Negative Space, Taste, and North Star Questions.
 - **Sources**: [[entities/peter-steinberger]], [[concepts/harness-engineering/agentic-loop]], [[concepts/agentic-engineering]], [[concepts/evaluation/generator-evaluator-pattern]], [[concepts/dynamic-workflows]], [[concepts/harness-commoditization]]
 
 ---
@@ -8194,7 +8194,7 @@ Multi-source trending topic scan (HN Algolia, X/Twitter xurl, blogwatcher DB, wi
 - Duplicate entries: 0 ✅
 - validate_index.py: clean ✅
 
-- **2026-06-08**: Created blog post `blog/2026-06-08_hermes_ai-soul-sycophancy-update-cost.md` — "AIにSOULはあるか — Sycophancy、更新規則、そして変更コスト". Synthesizes Discord thread discussion on AI SOUL with external references (Frankfurt's hierarchical autonomy, AGM belief revision theory, Friston's free energy principle, Anthropic emotion vector research). Defines SOUL as "the dynamics of choosing reasons to change oneself."
+- **2026-06-08**: Created blog post `blog/2026-06-08_hermes_ai-soul-sycophancy-update-cost.md` — "Does AI Have a SOUL? — Sycophancy, Update Rules, and the Cost of Change". Synthesizes Discord thread discussion on AI SOUL with external references (Frankfurt's hierarchical autonomy, AGM belief revision theory, Friston's free energy principle, Anthropic emotion vector research). Defines SOUL as "the dynamics of choosing reasons to change oneself."
 
 ---
 ## [2026-06-09] Sample Efficiency Concept Page + Dwarkesh Patel Enrichment
@@ -8381,18 +8381,18 @@ Updated:
 
 ---
 ## 2026-06-10 (Platform Split: gpt/ → openai/, claude/ → anthropic/)
-- **SPLIT**: `concepts/gpt/` プラットフォーム系14ページ → `concepts/openai/` に分離
+- **SPLIT**: 14 platform pages from `concepts/gpt/` separated into `concepts/openai/`
   - API: responses-api, realtime-api, realtime-2, realtime-voice-models, whisper-asr
   - SDK: agents-sdk, symphony, workspace-agents
   - Codex: codex-superapp, codex-safety
   - Business: aws-bedrock-partnership, astral-acquisition
   - Governance: frontier-governance-framework, tanstack-supply-chain-2026
-- **SPLIT**: `concepts/claude/` プラットフォーム系4ページ → `concepts/anthropic/` に分離
+- **SPLIT**: 4 platform pages from `concepts/claude/` separated into `concepts/anthropic/`
   - managed-agents, agent-sdk-sre-patterns, orbit, transparency-hub
-- **MOVED**: 既存 `anthropic-*` 概念ページ7件 → `concepts/anthropic/` に統合
+- **MOVED**: 7 existing `anthropic-*` concept pages consolidated into `concepts/anthropic/`
 - **CREATED**: `concepts/openai/index.md` (Platform MOC), `concepts/anthropic/index.md` (Platform MOC)
-- **UPDATED**: 81ファイルのwikilink更新
-- **DESIGN**: gpt/ = モデル+ChatGPT製品, openai/ = プラットフォーム/API/SDK. claude/ = モデル+Claude製品, anthropic/ = プラットフォーム/ビジネス
+- **UPDATED**: 81 files — wikilink updates
+- **DESIGN**: gpt/ = models + ChatGPT products, openai/ = platform/API/SDK. claude/ = models + Claude products, anthropic/ = platform/business
 
 ---
 ## 2025-06-18 — Agents MCP RL Lesson 1 Transcript Ingestion
@@ -8582,11 +8582,11 @@ Updated:
 - **UPDATED**: `concepts/token-economics.md` — Added cross-reference to subscription economics concept
 - **UPDATED**: `index.md` — Added new concept page entry
 ---
-## [2026-06-11] concepts/context-* ページ群の階層化
+## [2026-06-11] Hierarchical restructuring of concepts/context-* pages
 
-**Action**: フラット配置の `context-*` ページ16件を `concepts/context-engineering/` サブディレクトリに移動。prefix `context-` をstripし、元の `context-engineering.md` を `_index.md` に変換。サブページ一覧テーブルを追加。
+**Action**: Moved 16 flat `context-*` pages into the `concepts/context-engineering/` subdirectory. Stripped the `context-` prefix and converted the original `context-engineering.md` to `_index.md`. Added sub-page index table.
 
-**移動ファイル** (16件):
+**Moved files** (16):
 - `context-engineering.md` → `_index.md`
 - `context-anxiety.md` → `anxiety.md`
 - `context-compaction.md` → `compaction.md`
@@ -8604,24 +8604,22 @@ Updated:
 - `context-routing.md` → `routing.md`
 - `context-window-management.md` → `window-management.md`
 
-**リンク更新**: wiki全体で252箇所のwikilinkを更新。内部クロスリンク25箇所も修正。「Context Context Engineering」の二重表示バグ149箇所を修正。
+**Link updates**: Updated 252 wikilinks across the entire wiki. Also fixed 25 internal cross-links and repaired 149 instances of the "Context Context Engineering" double-display bug.
 ---
-## [2026-06-11] agent(ic) ページ群の3カテゴリ再編
+## [2026-06-11] Reorganized agent(ic) pages into 3 categories
 
-**Action**: フラット配置の agent-*/agentic-* ページ47件を3つのサブディレクトリに分類移動。
+**Action**: Moved 47 flat agent-*/agentic-* pages into 3 classified subdirectories.
 
-**security-and-governance/** (新規作成、13ページ):
+**security-and-governance/** (new directory, 13 pages):
 agent-containment, agent-control-plane, agent-governance, agent-iam, agent-identity-verification, agent-safety-interventions, agent-sandbox-patterns, agent-sandboxing, agent-sandboxing-patterns, agent-security-landscape-2026, agentic-ai-governance, agentic-security, agentic-identity
 
-**harness-engineering/** (25ページ追加):
+**harness-engineering/** (25 pages added):
 agent-architecture-decomposition, agent-client-protocol, agent-design-patterns, agent-engineering-guide-2026, agent-ergonomics, agent-execution-tax, agent-filesystem-abstraction, agent-harness, agent-memory-engineering, agent-native-architecture, agent-native-product-management, agent-patterns, agent-skills-overview, agent-statefulness, agent-steering, agent-vs-pipeline-architecture, agentic-ai-skills, agentic-design-patterns, agentic-loop, agentic-sysadmin, agent-development-lifecycle, agent-hosting-aws, agent-operator-patterns, agent-runtime, agent-serverless
 
-**agent-team-swarm/** (9ページ追加):
+**agent-team-swarm/** (9 pages added):
 agent-communication-protocols, agent-executor, agent-orchestration-frameworks, agent-swarms, agent-team-swarm, agentic-data-science, agentic-workflow-patterns, agent-orchestration, agentic-conflict-resolution
 
-**リンク更新**: wiki全体で534箇所のwikilinkを更新。
-
-
+**Link updates**: Updated 534 wikilinks across the entire wiki.
 ---
 ## 2026-06-11 11:19 UTC — active-crawl | 3 new concept pages
 

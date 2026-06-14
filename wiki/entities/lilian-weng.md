@@ -28,7 +28,7 @@ Weng spent seven years at OpenAI (2017–2024), where she progressed from Resear
 
 Outside of her professional roles, Weng has authored the blog *Lil'Log* since 2017, publishing deeply technical survey articles on topics ranging from Transformers and diffusion models to LLM agents, prompt engineering, reward hacking, and test-time compute. Her June 2023 post "LLM Powered Autonomous Agents" became one of the most widely shared and cited technical blog posts of the AI boom, with 27,000+ LinkedIn reactions. The blog has become essential reading for practitioners across the ML community.
 
-Her intellectual identity is shaped by two core traits she has named herself: **persistence** and **humility** — the latter stemming from childhood mathematics competitions where she learned that raw talent disparities require加倍 effort, and the former driving her to tackle problems many considered impossible (like training a robot hand to solve a Rubik's Cube purely in simulation).
+Her intellectual identity is shaped by two core traits she has named herself: **persistence** and **humility** — the latter stemming from childhood mathematics competitions where she learned that raw talent disparities require redoubled effort, and the former driving her to tackle problems many considered impossible (like training a robot hand to solve a Rubik's Cube purely in simulation).
 
 ## Timeline
 
@@ -180,7 +180,7 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 
 ## Related Wiki Pages
 
-- [[concepts/genai-handbook]] — Lilian Wengのブログ記事（RL Overview, Agent, Diffusion, Prompt Engineering）が🟢最重要リソースとして評価されている
+- [[concepts/genai-handbook]] — Lilian Weng's blog posts (RL Overview, Agent, Diffusion, Prompt Engineering) rated as 🟢 highest-priority resources
 - [[concepts/llm-course-roadmap]]
 - [[concepts/learning-llms-in-2025]]
 - https://linkedin.com/in/lilianweng — LinkedIn profile

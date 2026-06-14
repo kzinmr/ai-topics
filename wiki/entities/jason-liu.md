@@ -432,13 +432,13 @@ Jason maintains the most comprehensive practitioner's guide to RAG on his blog, 
 
 ### "In Distribution" Theory & Sandbox Engineering (2026-04)
 
-Jason Liuの最新の貢献は、OpenAI Agents SDKのsandbox機能と"in distribution"理論：
+Jason Liu's latest contribution builds on the OpenAI Agents SDK sandbox feature and the "in distribution" theory:
 
-- **"In Distribution"**: 組み込みツール（shell, compaction, memory）がモデルの訓練分布内にあるため、prompt tricksではなくネイティブなインターフェースとして機能する
-- **Harness/Compute分離**: Brain（Harness: 推論・計画）とHands（Compute: ファイルI/O・コマンド実行）の明確な分離
-- **Tool Naming Impact**: `bash` vs `shell` vs `run_command`のような命名がモデルのパフォーマンスに実際に影響する
-- **Security by Isolation**: モデル生成コードをサンドボックス内で実行し、オーケストレーションマシンの資格情報漏洩リスクを低減
-- **Pragmatic Sandbox Use**: 軽量タスクにはsandbox不要、重いタスクには適切なsandboxをプロビジョニング — "think without turning the laptop on"
+- **"In Distribution"**: Built-in tools (shell, compaction, memory) operate within the model's training distribution, functioning as native interfaces rather than prompt tricks
+- **Harness/Compute Separation**: Clear separation between Brain (Harness: reasoning & planning) and Hands (Compute: file I/O, command execution)
+- **Tool Naming Impact**: Names like `bash` vs `shell` vs `run_command` actually affect model performance
+- **Security by Isolation**: Executing model-generated code inside sandboxes reduces credential leakage risk from the orchestration machine
+- **Pragmatic Sandbox Use**: No sandbox needed for lightweight tasks; provision appropriate sandboxes for heavy tasks — "think without turning the laptop on"
 
 **RAG 6-week email course:** Jason runs a free 6-week email course on RAG covering everything from his consulting work, available at improvingrag.com.
 
