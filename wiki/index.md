@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2083 | Concepts: 1701 | Entities: 789
+> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2083 | Concepts: 1681 | Entities: 789
 
 ## Entities (789 pages)
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -828,7 +828,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1701 pages)
+## Concepts (1681 pages)
 
 ## Events (9 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.

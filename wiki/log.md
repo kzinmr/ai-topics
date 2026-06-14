@@ -8836,3 +8836,14 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 ### Updated
 - **index.md** — Added entries for prefeitura-rio and rio-3.5-open-397b. Updated counts: 2508 pages, 2079 indexed entries, 1699 concepts, 787 entities.
 - **log.md** — This entry.
+
+## [2026-06-14 17:35 UTC] Wiki Watchdog Auto-Fix
+
+**Scope**: Index header count reconciliation
+
+### Fixed
+- **index.md** — Header concepts count: 1701 → 1681 (actual file count). Section heading also corrected. Total of 2,512 pages confirmed: 789 entities + 1,681 concepts + 30 comparisons + 3 queries + 9 events.
+
+### Note
+- Wiki health report was unavailable (no data). Graph analysis report dated 2026-06-12 (50h old) showed 329 thin pages and 10 high-similarity person pairs requiring human review — not auto-fixed per policy.
+- Pipeline watchdog: no active alerts.
