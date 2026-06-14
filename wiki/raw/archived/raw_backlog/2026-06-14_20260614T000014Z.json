@@ -1,0 +1,52 @@
+[
+  {
+    "item_id": "backlog-0",
+    "source": "raw_backlog",
+    "title": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+    "url": null,
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+    "recommended_action": "skip",
+    "reason_ja": "concepts/mai-thinking-1-tech-report.md kison (227 lines) -- 6-kai ijo no batch de ki-shori. architecture/GRPO/benchmark coverage kanryou.",
+    "archived_at": "2026-06-14"
+  },
+  {
+    "item_id": "backlog-1",
+    "source": "raw_backlog",
+    "title": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+    "url": null,
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+    "recommended_action": "skip",
+    "reason_ja": "agi-economics.md kison. already_archived sumi.",
+    "archived_at": "2026-06-14"
+  },
+  {
+    "item_id": "backlog-2",
+    "source": "raw_backlog",
+    "title": "2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+    "url": null,
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+    "recommended_action": "skip",
+    "reason_ja": "entities/dario-amodei.md kison (226 lines). already_archived sumi. 5-area framework ki-roku sumi.",
+    "archived_at": "2026-06-14"
+  },
+  {
+    "item_id": "backlog-3",
+    "source": "raw_backlog",
+    "title": "2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+    "url": null,
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+    "recommended_action": "skip",
+    "reason_ja": "transcripts/lesson2-lecture.md kison (540 lines). entities/will-brown.md source ki-roku sumi.",
+    "archived_at": "2026-06-14"
+  },
+  {
+    "item_id": "backlog-4",
+    "source": "raw_backlog",
+    "title": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+    "url": null,
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+    "recommended_action": "skip",
+    "reason_ja": "entities/ed-zitron.md kison (470 lines). dedicated ROI section ki-roku sumi. already_archived.",
+    "archived_at": "2026-06-14"
+  }
+]

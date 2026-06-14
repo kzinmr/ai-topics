@@ -32,5 +32,30 @@
       "archived_in": "2026-06-11_20260611T000025Z.json",
       "action": "skip"
     }
+  },
+  "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md": {
+    "title": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+    "action": "skip",
+    "date": "2026-06-14"
+  },
+  "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md": {
+    "title": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+    "action": "skip",
+    "date": "2026-06-14"
+  },
+  "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md": {
+    "title": "2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+    "action": "skip",
+    "date": "2026-06-14"
+  },
+  "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md": {
+    "title": "2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+    "action": "skip",
+    "date": "2026-06-14"
+  },
+  "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md": {
+    "title": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+    "action": "skip",
+    "date": "2026-06-14"
   }
 }
