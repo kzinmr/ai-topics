@@ -2,7 +2,7 @@
 title: "AI Regulation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-06-12
+updated: 2026-06-15
 tags:
   - concept
   - regulation
@@ -28,6 +28,7 @@ sources:
     title: "NCSL AI Legislation Database"
   - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
   - raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md
+  - raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md
 ---
 
 # AI Regulation (2026)
@@ -141,6 +142,22 @@ In "Policy on the AI Exponential" (June 10, 2026), Dario Amodei articulated Anth
 **Bipartisan framing**: Amodei positions these proposals as having "common-sense appeal across the political spectrum," rejecting the framing that AI's problem is "better marketing."
 
 **Legislative action**: Alongside the essay, Anthropic released a concrete legislative proposal on frontier model testing and a job displacement policy framework, signaling intent to move beyond thought leadership into active policy advocacy with financial backing.
+
+### Nathan Lambert: The "AGI Governance Era" Framework (June 2026)
+
+In "Welcome to the AGI Era of AI Governance" (June 14, 2026), Nathan Lambert advanced a distinct framing of the June 12 Fable 5 export control event — not as a discrete policy incident, but as the **transition trigger from the "ChatGPT governance era" (2023–2026) to the "AGI governance era" (2026+)**. This analysis complements Amodei's transparency-to-binding-regulation narrative with a more geopolitically grounded perspective.
+
+**Core argument**: Lambert argues the Friday night call from the government to Anthropic (instructing them to block model access for foreign nationals and overseas users) represents a qualitative shift in how governments perceive AI. The government has **internalized that it is already in the AGI era** and has moved beyond the ChatGPT-era governance model. Lambert warns this is not an isolated incident but the "starting gun" for AGI-era regulation.
+
+**Key claims**:
+- **Export bans have permanent consequences**: Model weight export prohibitions are not reversible policy tools; they create persistent geopolitical divisions and supply chain fragmentation
+- **Anthropic's fear campaign accelerated regulation**: Lambert argues that Anthropic's consistent use of nuclear-weapon metaphors and catastrophic-risk framing created the political conditions for aggressive government action — the regulation Anthropic helped shape through its own narratives is now governing Anthropic itself
+- **Open-source advocates should be alarmed**: The export control precedent can easily be extended to open-weight model distribution, which Lambert characterizes as a structural threat to open-source AI
+- **This is just the beginning**: The Friday night call represents the first instance of governments treating frontier AI as an AGI-level concern, setting precedent for more aggressive interventions across jurisdictions
+
+**Contrast with Amodei's framework**: Where Amodei frames the transition as voluntary transparency → mandatory testing (a regulatory locus shift), Lambert frames it as ChatGPT governance → AGI governance (an epochal shift in government perception). Both agree on the directionality but Lambert emphasizes the **geopolitical trigger** (export controls) over the **institutional mechanism** (FAA-style testing agency). Lambert's framing also highlights the **unintended consequences** of Anthropic's own advocacy — a dimension absent from Amodei's self-narrative.
+
+Source: [[raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance]]
 
 ## Implications for Developers and Enterprises
 

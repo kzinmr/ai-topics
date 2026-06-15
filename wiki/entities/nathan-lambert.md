@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-03
+updated: 2026-06-15
 type: entity
 aliases:
   - natolambert
@@ -13,8 +13,8 @@ sources:
   - https://www.interconnects.ai/
   - https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may
   - raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md
+  - raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md
 ---
-
 
 # Nathan Lambert (@natolambert)
 
@@ -137,6 +137,20 @@ Lambert hosted **Mark McQuade** (CEO) and **Lucas Atkins** (CTO) of [[entities/a
 - **Short-term vs long-term**: Near-term markets will be dictated by compute buildout and token subsidization; the true economic divergence between open and closed is a 5-10 year timeline
 
 Added source: `raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md`
+
+### June 2026: Welcome to the AGI era of AI governance
+
+**"Welcome to the AGI Era of AI Governance" (Jun 14, 2026)**: Published a policy analysis arguing that the June 12 Fable 5 export control event marks a fundamental transition from the ChatGPT governance era to the AGI governance era:
+
+- **Government internalized AGI framing**: The Friday night government instruction to Anthropic (blocking model access for foreign nationals/overseas users) shows regulators have moved past viewing AI as a ChatGPT-era technology
+- **Export bans as permanent**: Model weight export prohibitions are irreversible policy tools creating structural geopolitical divisions
+- **Anthropic's advocacy boomerang**: Lambert argues Anthropic's nuclear-weapon metaphors and catastrophic-risk framing accelerated the regulatory environment that now governs Anthropic itself
+- **Open-source warning**: The export control precedent can be extended to open-weight model distribution — a structural threat to open-source AI
+- **Starting gun, not incident**: The event is characterized as the first instance of AGI-level government intervention, setting precedent for more aggressive regulation across jurisdictions
+
+Contrast with Amodei's transparency-to-binding-regulation framework: Lambert's analysis centers on the geopolitical trigger (export controls) and the unintended consequences of Anthropic's own advocacy narrative, rather than institutional mechanisms like FAA-style testing agencies.
+
+Source: `raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance`
 
 ### May 2026: Some ideas for what comes next
 

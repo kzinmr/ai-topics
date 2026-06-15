@@ -1,3 +1,16 @@
+## [2026-06-15 07:40] newsletter-wiki-ingest — Case C2 recovery: Lambert AGI governance enrichment
+
+- **Triage checkpoint recovered**: newsletter-triage output parse failed but checkpoint (`triage_latest.json`) was valid. 4 newsletters processed (Interconnects, Lenny's Podcast, The Signal, SemiAnalysis).
+- **Take decisions**: 0 takes. All skip/reference decisions independently verified.
+- **Reference enriched**: `concepts/ai-regulation-2026.md` — Added "Nathan Lambert: The AGI Governance Era Framework" subsection under Anthropic/Amodei section. Lambert's framing positions the June 12 Fable 5 export control event as the transition trigger from ChatGPT governance era to AGI governance era, distinct from Amodei's transparency-to-binding-regulation narrative.
+- **Reference enriched**: `entities/nathan-lambert.md` — Added "June 2026: Welcome to the AGI era of AI governance" newsletter entry under Interconnects Newsletter & Media section. Covers Lambert's analysis of Friday night government call to Anthropic, export ban permanence, Anthropic's advocacy boomerang, open-source warning.
+- **Skip verified (3 newsletters)**:
+  - Lenny's Podcast (Mark Pincus) — Pure podcast, non-AI. ✅
+  - The Signal (Alex Banks) — Editorial digest, all topics covered (Fable 5, Siri AI+DMA, Amodei policy). ✅
+  - SemiAnalysis (SMIC N+3 vs Intel 18A) — Semiconductor manufacturing, out of wiki scope. ✅
+- **Sources**: `raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md`
+- **Tags**: `regulation`, `governance`, `policy`, `export-controls`, `person`
+
 ## [2026-06-15] manual — Deep analysis: LLM-as-Policy theoretical implications (3 pages)
 
 - **Updated**: `concepts/test-time-scaling.md` — Added "Thinking as Policy Execution: The Knowledge Creation Limit" section. Three implications: (1) thinking cannot create knowledge the policy doesn't have (knowledge creation impossibility), (2) extended thinking accumulates distribution-shift risk, (3) test-time scaling is explore-exploit not plan-execute. Key insight: test-time scaling and training-time RL are complementary, not substitutable.
