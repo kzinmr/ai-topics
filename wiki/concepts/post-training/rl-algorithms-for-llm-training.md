@@ -2,7 +2,7 @@
 title: "RL Algorithms for LLM Training"
 type: concept
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-06-15
 tags:
   - reinforcement-learning
   - training
@@ -13,6 +13,7 @@ tags:
   - optimization
 sources:
   - raw/articles/2026-06-08_arjunkocher_rl-algorithm-questions.md
+  - "https://rlhfbook.com/"
   - https://www.k-a.in/rl-algo.html
 ---
 
@@ -53,6 +54,21 @@ This pinpoints the exact action that derailed the trajectory — the reward mode
 **How GRPO sidesteps this**: By generating multiple completions per prompt and comparing their final rewards, GRPO uses the group's relative ranking as a coarse substitute for per-token value estimation. This loses token-level resolution but eliminates the expensive critic model entirely.
 
 For the broader paradigm context of this convergence toward implicit modeling, see [[concepts/post-training/llm-as-policy]].
+
+### Reward Model Taxonomy: RM, ORM, PRM, Value Function
+
+The RLHF Book (Lambert, 2026, Ch.5) provides a clear four-way taxonomy of reward-related models in LLM-RL — the boundaries between these are not always clear-cut:
+
+| Model | Question It Answers | Output | Training Signal | When It Fires |
+|---|---|---|---|---|
+| **Reward Model (RM)** | "How good is this whole answer?" | Scalar per response | Human preference pairs (Bradley-Terry) | End of trajectory |
+| **Outcome RM (ORM)** | "Is the final answer correct?" | Scalar per response (or per-token) | Ground-truth labels (correct/incorrect) | End of trajectory |
+| **Process RM (PRM)** | "Are the reasoning steps sound?" | Scalar per step | Step-level human or automated labels | Every reasoning step |
+| **Value Function** | "How much reward remains from here?" | Scalar per token | On-policy rollouts (temporal difference) | Every token step |
+
+Key distinction: **ORMs and Value Functions both produce per-token outputs but differ in what they predict and how targets are generated.** An ORM learns $p(\text{correct}_t)$ from offline labels; a value function learns the expected remaining return $V(s_t) = \mathbb{E}[\sum_{k \geq t} r_k]$ from on-policy rollouts. As Lambert notes: *"If you define a dense token reward $r_t = \mathbf{1}[\text{correct}]$ and use $\gamma=1$, then an ORM is learning $r_t$ while the value head is learning the remaining-sum $\sum_{k \geq t} r_k$."*
+
+Most large-scale LLM RL uses ORMs (outcome-only). For verifiable domains (math/code), rule-based rewards bypass the learned RM entirely — see [[concepts/post-training/rlvr]].
 
 ## KL Divergence, Cross Entropy, and MLE
 

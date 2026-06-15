@@ -1,7 +1,7 @@
 ---
 title: "RLVR (Reinforcement Learning with Verifiable Rewards)"
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-06-15
 type: concept
 tags:
   - concept
@@ -11,7 +11,7 @@ tags:
   - test-time-scaling
   - agent-training
 aliases: [Reinforcement Fine-Tuning, RFT, outcome-only RL]
-sources: ["[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]", "https://arxiv.org/abs/2411.15124", "https://arxiv.org/abs/2501.12948"]
+sources: ["[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]", "https://arxiv.org/abs/2411.15124", "https://arxiv.org/abs/2501.12948", "https://rlhfbook.com/"]
 ---
 
 
@@ -73,6 +73,25 @@ RLVR causes models to spontaneously develop sophisticated strategies: self-verif
 | **Constraint / Format** | Instruction following, structured output | Pattern matching, schema validation | Multi-component |
 
 **Key finding**: Imperfect verifiers with up to 15% noise still yield near-optimal results (Athalye et al., 2026).
+
+## Common RLVR Training Practices
+
+The RLHF Book (Lambert, 2026, Ch.7) catalogs practical techniques that have become standard across reasoning model training (attributed to specific models):
+
+| Practice | Description | Used By |
+|---|---|---|
+| **Offline difficulty filtering** | Train only on problems the model solves 20–80% of the time (0% or 100% correct → no gradient signal) | Seed-Thinking 1.5, Open Reasoner Zero, Phi 4, INTELLECT-2, MiMo, Skywork OR-1 |
+| **Remove KL penalty** | Verifiable rewards are less prone to over-optimization than learned RMs, making KL pure drag | RAGEN, Magistral, OpenReasonerZero, Skywork OR-1 |
+| **Relaxed policy-gradient clipping** | DAPO-style modifications to two-sided clipping for better exploration | DAPO family |
+| **Format rewards** | Small rewards to enforce `<think>` tag structure and prevent language switching | Most reasoning models |
+| **Length penalties** | Progressively extending training sequence length mitigates overthinking | Multiple models |
+| **Loss normalization** | Batch-level vs group-level normalization to avoid length/difficulty biases | Active debate |
+
+**Key insight**: RLVR gets its name by doing **hundreds or thousands of epochs over the same few data points** — unlike SFT which uses 1–2 epochs. This is because the model must *discover* the correct reasoning path through exploration, not memorize it. Remarkably, improvements on training questions generalize to questions and domains the models have never seen.
+
+**Text-only RL boosts multimodal**: Magistral and MiMo-VL find that text-only RL training *improves* multimodal performance — the reasoning patterns transfer across modalities.
+
+**Toggleable reasoning**: Llama-Nemotron and Qwen 3 use system prompts to toggle thinking on/off, giving users control over the inference-time compute budget.
 
 ## Case Study: ART·E ($80 Email Agent)
 

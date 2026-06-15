@@ -6,7 +6,7 @@ aliases:
   - GRPO
   - Group Relative Policy Optimization
 created: 2026-04-25
-updated: 2026-05-18
+updated: 2026-06-15
 tags:
   - concept
   - reinforcement-learning
@@ -22,6 +22,7 @@ related:
 sources:
   - https://arxiv.org/abs/2402.03300
   - raw/papers/2026-05-18_2605.15155_sdar-self-distilled-agentic-rl.md
+  - "https://rlhfbook.com/"
 ---
 
 # GRPO (Group Relative Policy Optimization)
@@ -51,6 +52,19 @@ where $r_i$ is the reward assigned to completion $i$ (from a reward model, verif
 - **Trajectory-level only** — knows whether a trajectory succeeded, not which tokens were good
 - **Group size $G > 1$ required** — can't operate with single samples (unlike OPD-based methods)
 - **Reward model dependency** — quality depends on reward/verifier accuracy
+
+## Relationship to RLOO (Leave-One-Out REINFORCE)
+
+The RLHF Book (Lambert, 2026, Ch.6) clarifies that **GRPO and RLOO are closely related algorithms** — both use group-relative advantages without a value network. The key differences are in implementation details:
+
+| Dimension | GRPO | RLOO |
+|---|---|---|
+| **KL penalty placement** | Applied at the **loss level** (explicit loss term) | Applied to the **reward itself** (folded into reward) |
+| **Clipping** | PPO-style ratio clipping | Varies (often no clipping) |
+| **Normalization** | Group std normalization | Leave-one-out baseline (mean of *other* samples) |
+| **Advantage granularity** | Sequence-level (same value for all tokens) | Sequence-level (same value for all tokens) |
+
+Both assign the **same sequence-level advantage to every token** in a trajectory — unlike PPO, which assigns a different value to every token individually via the value function. This is the fundamental architectural trade-off: token-level precision (PPO with critic) vs. simplicity and memory efficiency (GRPO/RLOO without critic).
 
 ## GRPO as an RL Backbone
 

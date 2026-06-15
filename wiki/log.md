@@ -1,3 +1,13 @@
+## [2026-06-15] manual — RLHF Book (rlhfbook.com) integration into LLM-as-Policy wiki discussion
+
+- **Action**: Integrated insights from Nathan Lambert's RLHF Book (rlhfbook.com, 17 chapters) into existing wiki pages. Focused on chapters 01, 03, 05, 06, 07, 08, 14 — those directly relevant to the LLM-as-Policy framework.
+- **Updated**: `concepts/post-training/rl-algorithms-for-llm-training.md` — Added RM/ORM/PRM/Value Function 4-way taxonomy table (Ch.5). Added rlhfbook.com as source.
+- **Updated**: `concepts/post-training/grpo-rl-training.md` — Added RLOO≈GRPO equivalence section: KL penalty placement (loss-level vs reward-level), clipping differences, sequence-level vs token-level advantage (Ch.6). Added rlhfbook.com as source.
+- **Updated**: `concepts/post-training/rlhf.md` — Expanded DPO section: implicit reward formula, preference displacement problem, delta learning hypothesis, static KL (Ch.8). Added Over-Optimization (Goodhart's Law) section (Ch.14). Added rlhfbook.com as source.
+- **Updated**: `concepts/post-training/rlvr.md` — Added Common RLVR Training Practices table: difficulty filtering, KL removal, format rewards, length penalties, loss normalization (Ch.7). Added text-only RL boosts multimodal, toggleable reasoning. Added rlhfbook.com as source.
+- **Updated**: `concepts/post-training/llm-as-policy.md` — Added RLHF Book Perspective section: superficial alignment hypothesis debunking, RLHF vs traditional RL distinctions, over-optimization as fundamental, RL as load-bearing component (Ch.1, 3, 7, 14). Added rlhfbook.com as source.
+- **Tags**: `reinforcement-learning`, `post-training`, `rlhf`, `grpo`, `rlvr`, `dpo`
+
 ## [2026-06-15 22:00] manual — Inspect AI entity page enrichment from docs + Hamel's notes
 
 - **Updated**: [[entities/inspect-ai]] — Major enrichment from official docs (v0.3.239) and Hamel Husain's annotated presentation. Added: Agent system (react(), Deep Agent, Human Agent), Agent Bridge (OpenAI SDK/Pydantic AI/LangChain/Claude Code/Codex CLI/Gemini CLI), 6 built-in tools, sandboxing (Docker/K8s/Modal/Proxmox), scanning (inspect-scout), 20+ model providers, production features (eval_set, control channel), ecosystem packages.

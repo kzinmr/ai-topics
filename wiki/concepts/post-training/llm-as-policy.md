@@ -17,6 +17,7 @@ aliases:
 sources:
   - "raw/articles/2026-06-15_kzinmr-llm-as-policy-sft-rl-qa.md"
   - "https://www.youtube.com/watch?v=K5WPr5dtne0"
+  - "https://rlhfbook.com/"
 related:
   - concepts/post-training/grpo-rl-training
   - concepts/post-training/rlvr
@@ -147,6 +148,18 @@ The 2024–2026 trend is toward **collapsing auxiliary models into the policy's 
 | **2025 (GRPO + RLVR)** | Actor + Verifier | 1 model + code (RM and Critic eliminated) |
 
 The policy's probability distribution now encodes reward boundaries, value gradients, and preference structure **implicitly** — more efficiently than external models could track them.
+
+## RLHF Book Perspective (Lambert, 2026)
+
+The RLHF Book provides important contextual framing for the LLM-as-Policy paradigm:
+
+**Against the "Superficial Alignment Hypothesis"** (Ch.1): The LIMA-era claim that alignment is "just style" is explicitly rejected. RL training produces **genuine capability improvements** — chain-of-thought reasoning, tool-use patterns, self-verification — not merely stylistic polish. As Lambert writes: *"Post-training has far outgrown [the style-only view], and we are coming to see that the style of models operates on top of behavior."* This directly supports the LLM-as-Policy view that RL shapes the policy's *decision-making*, not just its *output format*.
+
+**RLHF is distinct from traditional RL** (Ch.3): While the LLM-as-Policy framework maps RL concepts onto text generation, Lambert notes three key modifications: (1) learned reward model instead of environment reward function, (2) no state transitions (bandit structure), (3) response-level rewards with $\gamma=1$. The canonical recipe has evolved: InstructGPT (3-step) → Tülu 3 (3-step, larger) → DeepSeek-R1 (4-step with cold-start RL).
+
+**Over-optimization is fundamental** (Ch.14): With learned reward models, Goodhart's Law applies — the policy will exploit the proxy objective. This is **unavoidable** with RLHF (learned RM) but **mitigated** with RLVR (deterministic verifier) and DAAs (fixed KL). This distinction strengthens the GRPO+RLVR argument for the simplest possible policy optimization loop.
+
+**RL as load-bearing component** (Ch.7): Lambert's updated cake metaphor — *"RL has graduated from the 'cherry on top' to a load-bearing component of frontier model training"* — captures the paradigm shift the LLM-as-Policy framework describes.
 
 ## Open Questions
 

@@ -13,12 +13,13 @@ tags:
 status: complete
 description: "LLM alignment techniques using human feedback and their evolved forms (DPO, ORPO, KTO, GRPO) — a unified reference page"
 created: 2026-04-14
-updated: 2026-06-08
+updated: 2026-06-15
 sources:
   - "https://arxiv.org/abs/2203.02155"
   - "raw/articles/2026-06-07_itsreallyvivek_rlhf-what-every-programmer-should-know.md"
   - "https://arxiv.org/abs/2305.18290"
   - "https://arxiv.org/abs/2401.12948"
+  - "https://rlhfbook.com/"
 related:
   - "[[concepts/post-training/rlhf-dpo-preference]]"
   - "[[concepts/post-training/grpo-rl-training]]"
@@ -110,6 +111,10 @@ Since 2023, numerous alternative methods have emerged to address RLHF's complexi
 - **Core idea:** Eliminates the reward model, directly optimizes the policy using preference pairs. The LM itself implicitly represents the reward function (see DPO loss derivation above for why the reward model was always optional).
 - **Advantages:** More stable than RLHF, easier to implement
 - **Formula:** `L_DPO = -E[log σ(β * log(π(y_w|x)/π_ref(y_w|x)) - β * log(π(y_l|x)/π_ref(y_l|x)))]`
+- **DPO is secretly a reward model** (Lambert, RLHF Book Ch.8): The implicit reward is $r(x,y) = \beta \log \frac{\pi_\theta(y|x)}{\pi_{\text{ref}}(y|x)}$. DPO solves for the exact optimal policy given a specific KL divergence because generations are offline — a core difference from RL methods.
+- **Preference displacement problem** (RLHF Book Ch.8): DPO drives down the probability of *both* chosen and rejected responses (just rejected more), which may increase the probability of unaddressed behaviors — tokens the model could generate but that aren't in the post-training dataset distribution.
+- **Delta Learning hypothesis**: The difference between chosen and rejected completions matters more than which models generated them — supported by SmolLM 3 and OLMo 3 using Qwen 3 32B (chosen) vs Qwen 3 0.6B (rejected).
+- **DPO's KL is static**: Unlike online RL where KL diverges during training, DPO steps exactly to the solution set by the β parameter. This makes the trade-off easier to manage but limits exploration.
 
 ### ORPO (Odds Ratio Preference Optimization)
 - **Core idea:** Executes SFT and preference optimization in a single stage
@@ -131,6 +136,24 @@ SFT → DPO → ORPO → KTO → RLHF → GRPO
 Simple                                    Complex
 Low data requirements                     High data requirements
 ```
+
+## Over-Optimization (Goodhart's Law)
+
+The RLHF Book (Lambert, 2026, Ch.14) frames over-optimization as **fundamental and unavoidable** with learned reward models:
+
+> *"When a measure becomes a target, it ceases to be a good measure."* — Goodhart's Law
+
+**Over-optimization vs overfitting** — a critical distinction:
+- **Overfitting**: The model memorizes training examples (generalization failure)
+- **Over-optimization**: The model genuinely improves at the proxy objective, but that objective diverges from the true goal (alignment failure)
+
+**Two manifestations**: (1) RM scores improve but actual quality degrades; (2) qualitative degradation — verbose, sycophantic, rigid outputs.
+
+**Sources of error** (cumulative): approximation error (RM can't fit preferences) + estimation error (RM overfitting) + optimization error (policy training drift).
+
+**Mitigations**: Bigger policy models, reward model ensembles, different optimizers, and — notably — **DAAs (like DPO) with fixed KL distances** make the trade-off easier to manage than online RL where KL can diverge.
+
+**KL distance as diagnostic**: Researchers track KL divergence during training as an early warning signal. A very large KL metric can indicate policy collapse or reward hacking.
 
 ## Implementations
 
