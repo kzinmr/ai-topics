@@ -1,0 +1,21 @@
+{
+  "archived_at": "2026-06-15T04:02:47.254406+00:00",
+  "triage_run_id": "20260615T040027Z",
+  "source": "dreaming",
+  "summary_ja": "raw-backlog-ingestバッチ (2026-06-15T04:00)。5本中0本が新規取り込み対象。MAI-Thinking-1技術報告書は`concepts/mai-thinking-1-tech-report.md`(227行)で完全カバー済み。Dwarkesh AGI経済学対談は`concepts/agi-economics.md`(93行)+`entities/dwarkesh-patel.md`(218行)に反映済み。Dario AmodeiのAI政策エッセイは`entities/dario-amodei.md`(226行、5分野フレームワーク)で処理済み。Will Brown Lesson 2トランスクリプトは`transcripts/`(540行クリーン版)に保存済み。Ed ZitronのAI ROI批判記事は`entities/ed-zitron.md`(470行、エンタープライズコスト危機セクション)で処理済み。全記事が過去のパイプライン実行で既にアーカイブ済み。",
+  "decisions": [
+    {
+      "item_id": "will-brown-lesson2",
+      "source": "raw_backlog",
+      "source_name": "Will Brown / Prime Intellect",
+      "title": "Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ スキップ: `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md`(540行クリーン版)が既存。`entities/will-brown.md`(215行)にソース登録済み。`concepts/agents-mcp-rl-course.md`(355行)に全レッスン統合済み。既にアーカイブ済み。",
+      "candidate_wiki_path": "transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md",
+      "body_excerpt": "# Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)\n**Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])\n**Co-instructor:** Kyle Corbitt (CTO, OpenPipe)\n**Date:** June 19, 2025\n**Companion course:** [[concepts/agents-mcp-rl-course|Produ",
+      "archive_status": "already_archived"
+    }
+  ]
+}

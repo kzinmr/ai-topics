@@ -1,4 +1,13 @@
 ## [2026-06-15] manual — Argilla entity page creation
+## [2026-06-15 04:00] raw-backlog-ingest — Pipeline saturation (0 takes, 5 skips)
+
+- **MAI-Thinking-1 Tech Report** (372KB, 109p) -> skip: `concepts/mai-thinking-1-tech-report.md` (227 lines, complete coverage)
+- **Dwarkesh x Imas/Trammell AGI Economics** (71KB) -> skip: `concepts/agi-economics.md` (93 lines) + `entities/dwarkesh-patel.md` (218 lines)
+- **Dario Amodei Policy on AI Exponential** (62KB) -> skip: `entities/dario-amodei.md` (226 lines, 5-area framework)
+- **Will Brown Lesson 2 Raw Transcript** (50KB) -> skip: `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` (540 lines)
+- **Ed Zitron AI ROI Critique** (47KB) -> skip: `entities/ed-zitron.md` (470 lines, enterprise cost crisis section)
+- **Batch status**: Pipeline saturation confirmed. All 5 candidates already comprehensively covered in prior runs. Archive: 1 new + 4 dedup skipped (total: 751 URLs).
+
 
 - **Created**: [[entities/argilla]] — Argilla entity page. Data collaboration platform for AI engineers and domain experts. Open-source annotation, curation, and synthetic data tools. Acquired by Hugging Face (Jan 2024). Products: Argilla platform (5K+ ⭐, Apache 2.0), distilabel (3.2K+ ⭐, Apache 2.0), Notus model. Key person: David Berenstein (ML & DevRel). Integration with HF ecosystem (Hub, Spaces, Datasets, TRL).
 - **Updated**: [[index.md]] — Added argilla entity entry (791→792 entities).
