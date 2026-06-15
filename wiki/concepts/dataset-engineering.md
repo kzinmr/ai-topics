@@ -71,6 +71,7 @@ Using existing models (LLMs, YOLO, SAM) to pre-annotate data rather than startin
 | **Annotation** | [CVAT](https://www.cvat.ai/) | Computer vision annotation toolkit |
 | **Curation** | [FiftyOne](https://docs.voxel51.com/) | Dataset visualization, analysis, and deduplication |
 | **Synthetic Data** | [distilabel](https://distilabel.argilla.io/) | AI-powered synthetic data generation and labeling |
+| **Quality Filters** | [TextDescriptives](https://hlasse.github.io/TextDescriptives/) | Heuristic text quality metrics (readability, complexity, noise detection) |
 | **Duplicates** | [Voxel51](https://docs.voxel51.com/recipes/remove_duplicate_annos.html) | Near-duplicate annotation removal |
 
 ## Relationship to Synthetic Data

@@ -352,14 +352,47 @@ Daniel and David both offered to continue the conversation in the course Discord
 
 ## Companion Resources
 
-- [Hugging Face Hub Datasets](https://huggingface.co/datasets) — Browse and search datasets
-- [Argilla](https://github.com/argilla-io/argilla) — Open-source data collaboration platform
-- [Lilac](https://github.com/lilacai/lilac) — Dataset exploration and annotation tool
-- [distilabel](https://github.com/argilla-io/distilabel) — Synthetic data generation framework
-- [Outlines](https://github.com/outlines-dev/outlines) — Structured text generation
-- [DSPy](https://github.com/stanfordnlp/dspy) — Programming (not prompting) framework
+### Platforms & Tools
+- [Argilla](https://argilla.io/) — Data collaboration platform for AI engineers and domain experts
+- [Lilac](https://www.lilacml.com/) — Search, quantify and edit data for LLMs. [Example: LMSYS Chat 1M](https://lilacai-lilac.hf.space/datasets#lilac/lmsys-chat-1m)
+- [distilabel](https://distilabel.argilla.io/latest) — Synthetic data and AI feedback framework for high-quality outputs
+- [Outlines](https://github.com/outlines-dev/outlines) — Structured text generation (JSON, regex, Pydantic, function calling)
+- [DSPy](https://github.com/stanfordnlp/dspy) — Programming (not prompting) framework for foundation models
+- [TextDescriptives](https://hlasse.github.io/TextDescriptives/tutorials/filter_corpus_using_quality.html) — Heuristic filters for removing low-quality text
+
+### Synthetic Data & Fine-tuning Datasets
+- [Awesome Synthetic Datasets](https://github.com/davanstrien/awesome-synthetic-datasets) — Daniel van Strien's curated collection of synthetic dataset resources
+- [Data for Fine-tuning LLMs](https://github.com/davanstrien/data-for-fine-tuning-llms) — Daniel's companion repo with notebooks. [Notebook: Synthetic Data Generation](https://github.com/davanstrien/data-for-fine-tuning-llms/blob/main/03-synthetic-data-generation.ipynb)
+- [Synthetic data overview](https://www.interconnects.ai/p/llm-synthetic-data) — Nathan Lambert's guide covering Anthropic CAI, OpenAI Superalignment, tips and open examples
+- [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) — Stanford's replicable instruction-following model (175 seeds → 52K instructions)
+- [Notus-7B](https://argilla.io/blog/notus7b/) — Argilla's model demonstrating data curation impact on model quality
+- [UltraFeedback](https://arxiv.org/abs/2310.01377) — Multi-model preference dataset with GPT-4 judging (paper)
+
+### Fine-tuning Algorithms & Data Formats
+- [DPO datasets on HF](https://huggingface.co/datasets/?other=dpo) — Browse DPO-formatted datasets on Hugging Face Hub
+- [ORPO](https://huggingface.co/docs/trl/en/orpo_trainer) — Reference model-free preference optimization (HF TRL docs)
+- [RLHF and alternatives](https://argilla.io/blog/mantisnlp-rlhf-part-9/) — Overview of RLHF and alternative alignment approaches
+- [distilabel-intel-orca-dpo-pairs](https://huggingface.co/datasets/argilla/distilabel-intel-orca-dpo-pairs) — Example DPO dataset
+- [Gutenberg DPO](https://huggingface.co/datasets/jondurbin/gutenberg-dpo-v0.1) — DPO dataset for enhancing novel writing capabilities
+- [PlatVR KTO](https://huggingface.co/ITG/PlatVR-kto) — KTO dataset for VR background image generation
+
+### Annotation Tools
+- [bulk](https://github.com/koaning/bulk) — Simple bulk labeling tool (Vincent Warmerdam). [Blog post with Bokeh+Pandas explorer](https://github.com/koaning/bulk)
+- [ipyannotations](https://github.com/janfreyberg/ipyannotations) — Rich data annotations in Jupyter notebooks
+- [pigeonXT](https://github.com/dennisbakhuis/pigeonXT) — Quick annotation from Jupyter notebooks
+- [Gradio](https://github.com/gradio-app/gradio) — Build and share ML apps in Python
+- [Streamlit](https://github.com/streamlit/streamlit) — Faster way to build and share data apps
+- [Shiny](https://shiny.posit.co/) — Easy web apps for data science (Posit/RStudio)
+
+### Knowledge Graphs (Detour)
+- [Enhancing RAG with Graph](https://github.com/tomasonjo/blogs/blob/master/llm/enhancing_rag_with_graph.ipynb) — Notebook: Knowledge Graph + RAG integration
+- [LlamaIndex Knowledge Graph Query Engine](https://docs.llamaindex.ai/en/stable/examples/query_engine/knowledge_graph_query_engine/) — Creating and querying knowledge graphs
+- [LlamaIndex KG Demo](https://docs.llamaindex.ai/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphDemo/) — Knowledge Graph index tutorial
+
+### Other References
+- [Eff you, show me the prompt!](https://hamel.dev/blog/posts/prompt/) — Hamel Husain on prompt engineering transparency
+- [HF Hub malware scanning](https://huggingface.co/docs/hub/en/security-malware) — Dataset security (note: [ClamAV JSON extension issue](https://askubuntu.com/questions/1470715/clamav-doesnt-scan-a-file-if-the-extension-is-json))
+- [FineWeb](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1) — Decanting the web for the finest text data at scale
 - [Alignment Handbook](https://github.com/huggingface/alignment-handbook) — Hugging Face's reproducible alignment recipes
-- [FineWeb](https://huggingface.co/datasets/HuggingFaceFW/fineweb) — Pre-training dataset with documented deduplication pipeline
 - [datatrove](https://github.com/huggingface/datatrove) — Hugging Face's data processing library
-- [textdescriptives](https://github.com/HLasse/TextDescriptives) — Text analysis metrics
-- [ipyannotations](https://github.com/janfreyberg/ipyannotations) — Notebook-based annotation
+- [Daniel's repo: data-for-fine-tuning-llms](https://github.com/davanstrien/data-for-fine-tuning-llms) — Full workshop materials
