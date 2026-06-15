@@ -25,7 +25,7 @@ aliases:
   - zero3
   - zero-redundancy-optimizer
 sources:
-  - raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md
+  - raw/articles/2024-04-22_phil-schmid-fsdp-qlora-llama3.md
   - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md
   - transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours.md
   - https://pytorch.org/docs/stable/fsdp.html
@@ -287,7 +287,7 @@ torchrun --nproc_per_node=8 train.py
 
 - [[concepts/post-training/accelerate]] — Hugging Face Accelerate: unified launcher making FSDP and DeepSpeed interchangeable
 - [[concepts/post-training/axolotl]] — Axolotl FSDP integration
-- [[concepts/fsdp-qlora]] — Combining FSDP with QLoRA for memory-efficient training
+- [[concepts/post-training/fsdp-qlora]] — Combining FSDP with QLoRA for memory-efficient training
 - [[concepts/qlora]] — Quantized Low-Rank Adaptation
 - [[concepts/post-training/peft-lora-qlora]] — PEFT methods commonly used with FSDP
 - [[concepts/deepspeed]] — DeepSpeed ZeRO, the alternative distributed training framework

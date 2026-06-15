@@ -19,7 +19,7 @@ related:
   - entities/phil-schmid
 sources:
   - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md
-  - raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md
+  - raw/articles/2024-04-22_phil-schmid-fsdp-qlora-llama3.md
   - https://arxiv.org/abs/2305.14314
 ---
 

@@ -8994,3 +8994,10 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - **Redirect**: `concepts/pytorch-fsdp.md` converted to redirect page
 - **Updated cross-references**: 11 files updated (deepspeed.md, zach-mueller.md, index.md, transcripts, raw/articles, genai-handbook.md, fsdp-qlora.md, mobius-labs.md)
 - **Added 2026 retrospective**: ~2800 chars of hindsight analysis to transcript (的中した予測、変化した状況、歴史的意義)
+
+## [2026-06-15] manual — Wiki Reorg: FSDP/QLoRA pages consolidated into post-training/
+
+- **Moved**: `concepts/pytorch-fsdp-distributed-training.md` → `concepts/post-training/pytorch-fsdp-distributed-training.md` (redirect left)
+- **Moved**: `concepts/fsdp-qlora.md` → `concepts/post-training/fsdp-qlora.md` (redirect left)
+- **Renamed**: `raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md` → `raw/articles/2024-04-22_phil-schmid-fsdp-qlora-llama3.md` (date corrected to actual publication date)
+- **Updated cross-references**: 14 files updated (bitsandbytes, accelerate, pytorch-fsdp, peft-lora-qlora, deepspeed, genai-handbook, llm-course-roadmap, phil-schmid, tim-dettmers, mobius-labs, training-infra/_index, distributed-training, qlora, index.md)

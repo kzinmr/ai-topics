@@ -68,7 +68,7 @@ Manages batching, model coordination, and GPU utilization for multi-model pipeli
 
 ### FSDP / QLoRA Collaboration (March 2024)
 
-In collaboration with **Answer.AI**, **Tim Dettmers**, and **Hugging Face**, Mobius Labs co-developed the **FSDP + Q-LoRA** technique (see [[concepts/fsdp-qlora]]). Their contribution: integrating HQQ with FSDP to speed up quantization by 50x compared to GPTQ. This democratized 70B model training on consumer GPUs.
+In collaboration with **Answer.AI**, **Tim Dettmers**, and **Hugging Face**, Mobius Labs co-developed the **FSDP + Q-LoRA** technique (see [[concepts/post-training/fsdp-qlora]]). Their contribution: integrating HQQ with FSDP to speed up quantization by 50x compared to GPTQ. This democratized 70B model training on consumer GPUs.
 
 ### Metadata Offloading (Feb 2024)
 
@@ -126,7 +126,7 @@ Dropbox (Mobius Labs team) published a comprehensive survey of quantization form
 
 ## Related Concepts
 
-- [[concepts/fsdp-qlora]] — Co-developed the FSDP+Q-LoRA technique
+- [[concepts/post-training/fsdp-qlora]] — Co-developed the FSDP+Q-LoRA technique
 - [[concepts/post-training/pytorch-fsdp]] — Distributed training framework used in the collaboration
 - [[concepts/qlora]] — Quantized LoRA method complemented by HQQ
 - [[concepts/inference/vllm]] — SGLang integrated with HQQ/GemLite for low-bit inference

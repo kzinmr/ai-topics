@@ -15,7 +15,7 @@ aliases:
   - model-parallelism
 sources: []
 related:
-  - "[[concepts/pytorch-fsdp-distributed-training]]"
+  - "[[concepts/post-training/pytorch-fsdp-distributed-training]]"
   - "[[concepts/post-training/pytorch-fsdp]]"
   - "[[concepts/post-training/peft-lora-qlora]]"
   - "[[concepts/llm-inference]]"
@@ -129,7 +129,7 @@ Microsoft DeepSpeed's three-stage optimization:
 
 ## Related Pages
 
-- [[concepts/pytorch-fsdp-distributed-training]] — Stub → FSDP details
+- [[concepts/post-training/pytorch-fsdp-distributed-training]] — FSDP distributed training details
 - [[concepts/post-training/pytorch-fsdp]] — FSDP fine-tuning specifics
 - [[concepts/post-training/peft-lora-qlora]] — Combining with PEFT methods
 - [[concepts/post-training/trl]] — TRL training with distributed configs

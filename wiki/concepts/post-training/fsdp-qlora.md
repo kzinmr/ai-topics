@@ -20,7 +20,7 @@ related:
 sources:
   - raw/articles/2024-06_justine-tunney-llama-cpu-matmul.md
   - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md
-  - raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md
+  - raw/articles/2024-04-22_phil-schmid-fsdp-qlora-llama3.md
   - https://github.com/AnswerDotAI/fsdp_qlora
   - https://www.philschmid.de/fsdp-qlora-llama3
 ---

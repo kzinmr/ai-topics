@@ -17,7 +17,7 @@ sources:
 related:
   - "[[concepts/model-quantization]]"
   - "[[concepts/qlora]]"
-  - "[[concepts/fsdp-qlora]]"
+  - "[[concepts/post-training/fsdp-qlora]]"
   - "[[entities/tim-dettmers]]"
   - "[[concepts/post-training/peft-lora-qlora]]"
   - "[[concepts/llm-int8]]"
@@ -186,7 +186,7 @@ Benchmark on T4 16GB GPU:
 
 - [[concepts/model-quantization]] — Comprehensive quantization guide
 - [[concepts/qlora]] — QLoRA fine-tuning (bitsandbytes-based)
-- [[concepts/fsdp-qlora]] — FSDP + QLoRA distributed training
+- [[concepts/post-training/fsdp-qlora]] — FSDP + QLoRA distributed training
 - [[concepts/llm-int8]] — LLM.int8() 8-bit inference
 - [[entities/tim-dettmers]] — bitsandbytes creator
 - [[concepts/post-training/peft-lora-qlora]] — PEFT integration

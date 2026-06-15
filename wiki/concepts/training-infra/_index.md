@@ -24,7 +24,7 @@ related:
   - "[[concepts/model-quantization]]"
   - "[[concepts/prompt-caching]]"
   - "[[concepts/ai-observability]]"
-  - "[[concepts/pytorch-fsdp-distributed-training]]"
+  - "[[concepts/post-training/pytorch-fsdp-distributed-training]]"
   - "[[concepts/local-llm/inference-hardware]]"
 ---
 
@@ -96,7 +96,7 @@ Recommended learning paths by goal:
 | [[concepts/prompt-caching]] | 🟢 LIVE | Static/semantic/partial caching strategies |
 | [[concepts/ai-observability]] | 🟢 LIVE | LLM-specific observability dimensions |
 | [[concepts/model-quantization]] | 🔴 Stub | Needs enrichment |
-| [[concepts/pytorch-fsdp-distributed-training]] | 🔴 Stub | Needs enrichment |
+| [[concepts/post-training/pytorch-fsdp-distributed-training]] | 🔴 Stub | Needs enrichment |
 | [[concepts/tensorrt-llm]] | ⬜ New | NVIDIA inference optimization |
 | [[concepts/local-llm/inference-hardware]] | 🟢 LIVE | Consumer GPU VRAM requirements |
 

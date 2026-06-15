@@ -116,13 +116,13 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 | Mixture-of-Experts | [[concepts/mixture-of-experts]] | Covered |
 | Scaling Laws | [[concepts/scaling-laws]] | Covered |
 | Pretraining Recipes | [[concepts/llm-training-fundamentals]] | Covered |
-| Distributed Training / FSDP | [[concepts/post-training/pytorch-fsdp]], [[concepts/fsdp-qlora]] | Both are well-covered |
+| Distributed Training / FSDP | [[concepts/post-training/pytorch-fsdp]], [[concepts/post-training/fsdp-qlora]] | Both are well-covered |
 
 **Resource Evaluation:**
 - 🟢 **Karpathy "Tokenization" video** — A must-watch for deep understanding of tokenization. Provides a unique thought framework.
 - 🟢 **Eleuther AI "Rotary Embeddings" blog** — Still the best explanation of RoPE.
 - 🟢 **Hugging Face "Mixture of Experts Explained"** — Sufficient as a conceptual explanation.
-- 🟢 **Answer.AI "FSDP + QLoRA Deep Dive"** — Practical FSDP explanation. Already incorporated into wiki [[concepts/fsdp-qlora]].
+- 🟢 **Answer.AI "FSDP + QLoRA Deep Dive"** — Practical FSDP explanation. Already incorporated into wiki [[concepts/post-training/fsdp-qlora]].
 - 🟡 **Meta's official FSDP blog** — A bit dated but good for understanding the basics.
 - 🟡 **Chinchilla Scaling Laws blog series** — Good for basic concepts, but doesn't cover post-2024 Scaling Laws discussions (shift toward smaller models).
 - ⚪ **"The Novice's LLM Training Guide"** — Unofficial guide on rental servers. Content is useful but source provenance is unclear.

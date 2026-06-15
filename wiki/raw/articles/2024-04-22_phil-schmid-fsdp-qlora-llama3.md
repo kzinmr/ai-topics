@@ -3,7 +3,7 @@ title: "Efficiently fine-tune Llama 3 with PyTorch FSDP and Q-Lora"
 source: "Phil Schmid Blog"
 url: "https://www.philschmid.de/fsdp-qlora-llama3"
 author: "Phil Schmid"
-date: 2026-05-04
+date: 2024-04-22
 tags:
   - fine-tuning
   - fsdp

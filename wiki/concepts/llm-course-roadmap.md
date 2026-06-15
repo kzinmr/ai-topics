@@ -89,7 +89,7 @@ Covers model architecture, training, and evaluation. The area with the most over
 |----------|---------------|------|
 | Transformer Evolution (encoder-decoder → decoder-only) | [[concepts/transformer-architecture]] | Covers GPT-style decoder-only evolution |
 | Self-Attention Mechanism | [[concepts/attention-mechanism-variants]] | Includes various attention variants |
-| Large-Scale Pre-training (Data/Pipeline/Tensor Parallel) | — | No concept page for distributed training strategies (partially covered in [[concepts/fsdp-qlora]]) |
+| Large-Scale Pre-training (Data/Pipeline/Tensor Parallel) | — | No concept page for distributed training strategies (partially covered in [[concepts/post-training/fsdp-qlora]]) |
 
 ### Section 2: Post-Training & Fine-Tuning
 
@@ -98,7 +98,7 @@ Covers model architecture, training, and evaluation. The area with the most over
 | Topic | Wiki Coverage | Notes |
 |----------|---------------|------|
 | SFT Overview | [[concepts/fine-tuning-post-training-overview]] | Systematically covered |
-| PEFT (LoRA / QLoRA) | [[concepts/peft-lora-and-qlora]], [[concepts/qlora]], [[concepts/fsdp-qlora]] | Rich coverage |
+| PEFT (LoRA / QLoRA) | [[concepts/peft-lora-and-qlora]], [[concepts/qlora]], [[concepts/post-training/fsdp-qlora]] | Rich coverage |
 | Axolotl | [[concepts/axolotl-fine-tuning-framework]] | Covered |
 | Unsloth | [[concepts/unsloth-fast-fine-tuning]] | Covered |
 | TRL (Transformer Reinforcement Learning) | [[concepts/trl-transformer-reinforcement-learning]] | Covered |
@@ -129,7 +129,7 @@ Covers model architecture, training, and evaluation. The area with the most over
 | Quantization Basics | [[concepts/model-quantization]], [[concepts/model-quantization-for-local-llms]] | Rich coverage |
 | GGUF | [[concepts/gguf-quantization]], [[concepts/local-llm/_index]] | Covered |
 | GPTQ / AWQ / EXL2 | [[concepts/turboquant]] | Partial |
-| HQQ | Mentioned in [[concepts/fsdp-qlora]] | In Mobius Labs / Dropbox context |
+| HQQ | Mentioned in [[concepts/post-training/fsdp-qlora]] | In Mobius Labs / Dropbox context |
 | llama.cpp | [[concepts/local-llm/llama-cpp]] | Covered |
 
 > **Coverage Rate:** ~70% (aligns with Wiki's strength areas)
@@ -190,7 +190,7 @@ Covers production applications, RAG, agents, and deployment. Since this Wiki is 
 
 ### Key Gaps (Topics Without Concept Pages)
 
-1. **Distributed Training Strategies** (Data/Pipeline/Tensor Parallel) — Only FSDP covered in [[concepts/fsdp-qlora]]
+1. **Distributed Training Strategies** (Data/Pipeline/Tensor Parallel) — Only FSDP covered in [[concepts/post-training/fsdp-qlora]]
 2. **Speculative Decoding** — Important inference optimization technique
 3. **LangChain / LlamaIndex** — Intentionally absent due to agent focus, but referenced in RAG context
 4. **Vector DBs** (Chroma / Pinecone / Milvus) — RAG infrastructure

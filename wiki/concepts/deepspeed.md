@@ -235,7 +235,7 @@ These are transparent in FSDP (handled automatically by accelerate).
 - You want **minimal dependencies** (PyTorch-only, no extra package)
 - You prefer **simpler integration** with Hugging Face ecosystem
 - You are doing single-node or small multi-node training
-- **LoRA / Q-LoRA fine-tuning on consumer GPUs** (especially with [[concepts/fsdp-qlora]])
+- **LoRA / Q-LoRA fine-tuning on consumer GPUs** (especially with [[concepts/post-training/fsdp-qlora]])
 - Your priority is **lower memory overhead** on small GPU counts
 
 ---
@@ -269,7 +269,7 @@ These are transparent in FSDP (handled automatically by accelerate).
 ## Related Concepts
 
 - **[[concepts/post-training/pytorch-fsdp]]** — PyTorch's native FSDP, the primary alternative to DeepSpeed ZeRO
-- **[[concepts/fsdp-qlora]]** — FSDP combined with Q-LoRA for memory-efficient fine-tuning
+- **[[concepts/post-training/fsdp-qlora]]** — FSDP combined with Q-LoRA for memory-efficient fine-tuning
 - **[[concepts/post-training/accelerate]]** — Hugging Face Accelerate, which provides plugins for both FSDP and DeepSpeed
 - **[[concepts/training-infra/distributed-training]]** — Distributed training methodologies overview
 - **[[concepts/post-training/peft-lora-qlora]]** — PEFT methods commonly used alongside DeepSpeed

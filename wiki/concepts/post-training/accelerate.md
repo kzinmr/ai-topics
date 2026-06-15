@@ -231,7 +231,7 @@ When using Accelerate as the launcher, both FSDP and DeepSpeed work identically 
 Accelerate connects multiple existing concept pages as the **unified orchestration layer**:
 
 - **[[concepts/post-training/pytorch-fsdp]]** — Covers native PyTorch FSDP sharding strategies, architecture, and has a DeepSpeed comparison table (native, not Accelerate-specific). Accelerate is the recommended launcher for FSDP in Hugging Face workflows.
-- **[[concepts/fsdp-qlora]]** — Uses Accelerate (`accelerate launch`) as the launcher for FSDP+QLoRA training. The `accelerate config` step is critical for setting sharding strategy and CPU offload.
+- **[[concepts/post-training/fsdp-qlora]]** — Uses Accelerate (`accelerate launch`) as the launcher for FSDP+QLoRA training. The `accelerate config` step is critical for setting sharding strategy and CPU offload.
 - **[[concepts/qlora]]** — Mentions Accelerate integration for distributed Q-LoRA training.
 - **[[concepts/post-training/peft-lora-qlora]]** — PEFT works alongside Accelerate; the `Accelerator` prepares model, optimizer, and dataloader for distributed PEFT training.
 - **[[concepts/post-training/pytorch-fsdp]]** — Fine-tuning-specific FSDP configs (Axolotl) that run via Accelerate's launch system.
@@ -243,7 +243,7 @@ Accelerate connects multiple existing concept pages as the **unified orchestrati
 ## Related Concepts
 
 - **[[concepts/post-training/pytorch-fsdp]]** — PyTorch FSDP sharding strategies, architecture, and DeepSpeed comparison
-- **[[concepts/fsdp-qlora]]** — Combining FSDP with Q-LoRA for memory-efficient fine-tuning, launched via Accelerate
+- **[[concepts/post-training/fsdp-qlora]]** — Combining FSDP with Q-LoRA for memory-efficient fine-tuning, launched via Accelerate
 - **[[concepts/qlora]]** — Quantized Low-Rank Adaptation, often used with Accelerate for distributed training
 - **[[concepts/post-training/peft-lora-qlora]]** — PEFT methods that integrate with Accelerate's distributed training
 - **[[concepts/post-training/pytorch-fsdp]]** — FSDP configuration for fine-tuning workflows (Axolotl, etc.)

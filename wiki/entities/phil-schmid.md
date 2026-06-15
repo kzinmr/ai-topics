@@ -131,7 +131,7 @@ Authored works on **context engineering** — the practice of optimizing LLM con
 - [[concepts/post-training/peft-lora-qlora]] — Parameter-efficient fine-tuning techniques he extensively documents
 - [[concepts/post-training/rlhf-dpo-preference]] — RLHF and DPO alignment methods
 - [[concepts/post-training/trl]] — TRL library used in his fine-tuning tutorials
-- [[concepts/pytorch-fsdp-distributed-training]] — Distributed training with FSDP
+- [[concepts/post-training/pytorch-fsdp-distributed-training]] — Distributed training with FSDP
 - [[entities/nathan-lambert]] — Fellow Hugging Face RLHF researcher, co-contributor to Zephyr
 - [[entities/elie-bakouch]] — Hugging Face ML engineer, co-contributor to SmolLM
 - [[entities/zach-mueller]] — Technical Lead for Hugging Face Accelerate
@@ -139,7 +139,7 @@ Authored works on **context engineering** — the practice of optimizing LLM con
 
 ## References
 
-- `raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md` — FSDP + Q-LoRA for Llama 3 guide
+- `raw/articles/2024-04-22_phil-schmid-fsdp-qlora-llama3.md` — FSDP + Q-LoRA for Llama 3 guide
 - `raw/articles/2026-02-01_philschmid_acp-overview.md` — Agent Client Protocol overview
 - `raw/articles/2026-05-05_how-agents-manage-other-agents-four-subagent-patterns.md` — Subagent Patterns taxonomy (4 patterns)
 

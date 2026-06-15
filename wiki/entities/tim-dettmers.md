@@ -13,7 +13,7 @@ status: current
 related:
   - "[[concepts/model-quantization]]"
   - "[[concepts/qlora]]"
-  - "[[concepts/fsdp-qlora]]"
+  - "[[concepts/post-training/fsdp-qlora]]"
   - "[[concepts/emergent-features-llm]]"
   - "[[entities/artidoro-pagnoni]]"
 sources:
@@ -72,7 +72,7 @@ Key insight: emergence follows an **exponential function related to perplexity**
 
 - [[concepts/model-quantization]] — Comprehensive quantization guide
 - [[concepts/qlora]] — QLoRA fine-tuning
-- [[concepts/fsdp-qlora]] — FSDP + QLoRA distributed training
+- [[concepts/post-training/fsdp-qlora]] — FSDP + QLoRA distributed training
 - [[concepts/emergent-features-llm]] — Detailed analysis of phase shift phenomenon
 - [[concepts/genai-handbook]] — Tim Dettmers's quantization blog (LLM.int8()) evaluated as 🟢 most important resource
 - [[concepts/ssm-mamba]] — Connection to SSM quantization research

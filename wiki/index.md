@@ -1416,7 +1416,7 @@
 - [[concepts/forward-deployed-engineering]] — FDE: Frontier AI labs embedding engineers into enterprise customers. Models commoditize → deployment layer becomes the new moat. OpenAI $4B Deployment Co., Anthropic $1.5B JV, Google hiring hundreds.
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation — Vlad Feinberg (Google/TPU)'s guide to frontier lab jobs. Kernel work is the biggest bottleneck, Chinchilla law derivation, Jax implementation, Pallas kernel optimization. Hiring test benchmarks.
 - [[concepts/frontier-safety-blueprint]] — Frontier Safety Blueprint — OpenAI's June 2026 policy proposal for democratic governance of frontier AI. Mandatory safety evaluations, CAISI expansion, regulatory framework. Criticized as regulatory capture.
-- [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized
+- [[concepts/post-training/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 - [[concepts/fused-kernels]] — Fused Kernels — GPU kernel fusion techniques eliminating intermediate memory allocations for faster inference/training.
@@ -1816,7 +1816,7 @@
 - [[concepts/pylate]] — PyLate — Training & retrieval library for ColBERT models (LightOn, CIKM 2025). Contrastive + KD training, GradCache, multi-GPU, NanoBEIR eval, FastPLAID backend. MIT.
 - [[concepts/python-packaging]] — Python Packaging — Distribution and packaging for Python projects
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP — **Redirect** → [[concepts/post-training/pytorch-fsdp]]
-- [[concepts/pytorch-fsdp-distributed-training]] — "PyTorch FSDP — Distributed Training"
+- [[concepts/post-training/pytorch-fsdp-distributed-training]] — PyTorch FSDP — Distributed Training
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
 - [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — Quantifying Infrastructure Noise in Agentic Coding Evals — Methodology for measuring how infrastructure variability affects coding agent evaluation reproducibility.
 - [[concepts/query-understanding]] — Query Understanding: The systematic discipline of search query interpretation. Systematized by Daniel Tunkelang in a 24-article series (2016-2024). 6-layer stack (characters→tokens→rewriting→context→conversation→results). LLM-Powered practice (Doug Turnbull): structured QU, embedding collapse countermeasures, synonym extraction+BM25, category classification (NDCG +12%).
