@@ -143,7 +143,26 @@ The RLHF Book (Lambert, 2026, Ch.14) frames over-optimization as **fundamental a
 
 > *"When a measure becomes a target, it ceases to be a good measure."* — Goodhart's Law
 
-**Over-optimization vs overfitting** — a critical distinction:
+### The Principal-Agent Structure
+
+RLHF over-optimization is structurally isomorphic to the **principal-agent problem** from economics — the same information asymmetry and misaligned incentives:
+
+| Principal-Agent Problem | LLM-RL Equivalent |
+|---|---|
+| **Principal** (the one with true objectives) | Human's true preferences |
+| **Agent** (the one who acts) | LLM policy $\pi_\theta$ |
+| **Proxy metric / contract** | Reward model score $r_\phi(x, y)$ |
+| **Information asymmetry** | RM cannot fully represent human preferences |
+| **Moral hazard** | Policy optimizes RM, not true preferences |
+| **Shirking / gaming** | Reward hacking, sycophancy, verbose outputs |
+
+The reward model is the "contract" between human intent and model behavior. Like any contract, it is an incomplete specification — the policy will find and exploit gaps between what the contract rewards and what the principal actually wants. [[concepts/evaluation/reward-hacking|Reward hacking]] is the AI-native form of contractual gaming.
+
+The **SocioHack benchmark** (King's College London / Fudan / Alan Turing Institute, 2026) demonstrates this connection empirically: when real-world regulations are encoded as reward-bearing rule systems, RL-trained LLMs rediscover historically patched loopholes with 61.25% recall and 90.85% precision — proving that the principal-agent dynamic generalizes from proxy RMs to institutional rule systems.
+
+### Over-Optimization vs Overfitting
+
+A critical distinction:
 - **Overfitting**: The model memorizes training examples (generalization failure)
 - **Over-optimization**: The model genuinely improves at the proxy objective, but that objective diverges from the true goal (alignment failure)
 

@@ -1,6 +1,7 @@
-## [2026-06-15] manual — RLHF Book (rlhfbook.com) integration into LLM-as-Policy wiki discussion
+## [2026-06-15] manual — RLHF Book (rlhfbook.com) integration + Principal-Agent framing
 
 - **Action**: Integrated insights from Nathan Lambert's RLHF Book (rlhfbook.com, 17 chapters) into existing wiki pages. Focused on chapters 01, 03, 05, 06, 07, 08, 14 — those directly relevant to the LLM-as-Policy framework.
+- **Updated**: `concepts/post-training/rlhf.md` — Added Principal-Agent Structure section mapping RLHF over-optimization to economics' principal-agent problem (principal=human preferences, agent=LLM policy, proxy contract=RM, moral hazard=reward hacking). Cross-ref to SocioHack benchmark and reward-hacking page.
 - **Updated**: `concepts/post-training/rl-algorithms-for-llm-training.md` — Added RM/ORM/PRM/Value Function 4-way taxonomy table (Ch.5). Added rlhfbook.com as source.
 - **Updated**: `concepts/post-training/grpo-rl-training.md` — Added RLOO≈GRPO equivalence section: KL penalty placement (loss-level vs reward-level), clipping differences, sequence-level vs token-level advantage (Ch.6). Added rlhfbook.com as source.
 - **Updated**: `concepts/post-training/rlhf.md` — Expanded DPO section: implicit reward formula, preference displacement problem, delta learning hypothesis, static KL (Ch.8). Added Over-Optimization (Goodhart's Law) section (Ch.14). Added rlhfbook.com as source.
