@@ -1,7 +1,7 @@
 ---
 title: "Hanchung Lee (Han Lee, @hanchunglee)"
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-15
 type: entity
 tags:
   - person
@@ -17,6 +17,7 @@ sources:
   - "raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime.md"
   - "https://leehanchung.github.io/about/"
   - "https://www.linkedin.com/in/hanchunglee"
+  - "raw/articles/leehanchung.github.io--blogs-2026-06-13-hidden-technical-debt-agent-evaluation-infr--f05320f3.md"
 ---
 
 # Hanchung Lee (Han Lee, @hanchunglee)
@@ -105,6 +106,8 @@ Lee contrasts the two paradigms:
 - **"Hidden Technical Debt of AI Systems: Agent Runtime"** (Apr 24, 2026) — The definitive article on agent runtime architecture. Covers: isolation primitive stack, sandbox vendor landscape, experiment-vs-production runtime divergence, runtime shift, runtime debt. [[raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime]]
 
 - **"Hidden Technical Debt of AI Systems: Agent Harness"** (May 2026) — Third in the series. Deconstructs the agent harness: system prompts, tool surfaces, rollout protocols, context managers, memory, sub-agent topologies, guardrails, verifiers, observability.
+
+- **"Hidden Technical Debt of AI Systems: Agent Evaluation Infrastructure"** (Jun 13, 2026) — Fourth in the series. Formalizes evaluation infrastructure as $I_{\\text{eval}} = \\{T, A, M, S, C, R, \\tau\\}$: tasks, harness, model, state, config, runtime, trace schema+store. Defines five evaluation surfaces — Output (final answer verification), Trace (tool use patterns, retry behavior, faithfulness), Memory (pollution detection, read/write audit), Environment (state deltas: files, DB, git, browser), and Mechanistic Interpretability (SAE/transcoder inspection). Introduces evaluation debt: notebook sprawl, CSV task sets, shared Excel scorers, cargo cult evaluation (aggregate score up but agent worse). Establishes checkpoint/branch/replay paradigm — Checkpoint=restorable snapshot+metadata, Resume=continue, Replay=inspect trajectory, Branch=change one factor (new model, new harness, memory disabled, tool outage, lower budget). Key distinction: chat eval is spreadsheet (prompt→response→score), agent eval is experimental control plane (episode, trajectory, state delta, trace). Same infrastructure serves training data work, post-training, applied development, and production monitoring.
 
 ### AI Adoption & Infrastructure
 

@@ -1,3 +1,14 @@
+## [2026-06-15 07:50] blog-wiki-ingest — Case C2 recovery: 4 entity enrichments from blog triage
+
+- **Triage checkpoint recovered**: blog-triage output parse failed but checkpoint (`triage_latest.json`) was valid. 9 candidates (8 articles + 1 unsaved). 4 takes, 1 reference, 4 skips. All skip/reference decisions independently verified.
+- **4 entity enrichments applied**:
+  - `entities/simon-willison.md` — Added "AI Job Impact Data & NY WARN Act Analysis (June 2026)" section. NY WARN Act data: 160+ companies filed, 0 checked AI box. Narayanan & Kapoor's three real bottlenecks (deciding/specifying, verifying/accountability, deep human understanding). Simon's commentary on deep human understanding as irreplaceable value.
+  - `entities/gary-marcus.md` — Enriched "Commerce Export Control & State Actions" section with 6 new subsections from "What Washington must do" (Jun 14): Ro Khanna independent agency proposal, conflict of interest allegations (Brockman/Trump donor, Josh Kushner/OpenAI, Amazon/Bezos), Pete Hegseth personal grudge against Anthropic, brain drain concern (Karpathy), Dean W Ball's critique from the right, Sacks's vague explanation.
+  - `entities/hanchunglee.md` — Added Part 4 of Hidden Technical Debt series: "Agent Evaluation Infrastructure" (Jun 13, 2026). I_eval formalization {T, A, M, S, C, R, τ}, 5 evaluation surfaces (Output, Trace, Memory, Environment, Mechanistic Interpretability), evaluation debt concept, checkpoint/branch/replay paradigm.
+  - `entities/seangoedecke-com.md` — Added "AI GPU Lifespan Analysis (June 2026)" section. Debunks "3-year GPU lifespan" meme: source traced to paid anonymous Tegus interview; counter-evidence (Google 8yr TPUs, AWS never-retired A100s, Oak Ridge 95%+ 3yr survival); physical vs economic lifespan distinction; datacenter cost structure analysis.
+- **Index updated**: han-lee and hanchunglee entries updated to reflect tetralogy and Part 4.
+- **Sources**: raw/articles/simonwillison.net--2026-jun-14-why-ai-hasnt-replaced-software-engineers--b830974d.md, raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md, raw/articles/leehanchung.github.io--blogs-2026-06-13-hidden-technical-debt-agent-evaluation-infr--f05320f3.md, raw/articles/seangoedecke.com--ai-gpus-live-longer-than-three-years--a4c8235c.md
+
 ## [2026-06-15 07:40] newsletter-wiki-ingest — Case C2 recovery: Lambert AGI governance enrichment
 
 - **Triage checkpoint recovered**: newsletter-triage output parse failed but checkpoint (`triage_latest.json`) was valid. 4 newsletters processed (Interconnects, Lenny's Podcast, The Signal, SemiAnalysis).

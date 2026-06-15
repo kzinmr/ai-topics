@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-14
+updated: 2026-06-15
 tags:
   - lab
   - benchmark
@@ -28,6 +28,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md
   - raw/articles/garymarcus.substack.com--p-maybe-section-230-doesnt-shield-ai--f81f07ca.md
   - raw/articles/garymarcus.substack.com--p-the-white-houses-shambolic-ai-policy--96f61c8f.md
+  - raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md
 ---
 
 # Gary Marcus
@@ -197,6 +198,20 @@ On June 13, 2026, Marcus published a comprehensive critique of Trump administrat
 **New York Multi-State Subpoena (June 2026):** Marcus reported a major Wall Street Journal scoop that New York, working with several other states, subpoenaed OpenAI demanding information on advertising, user engagement, data handling, minors/seniors protection, deep learning models, model sycophancy, and company policies. Marcus framed this as "states picking up the slack" where federal policy failed.
 
 Source: [[raw/articles/garymarcus.substack.com--p-the-white-houses-shambolic-ai-policy--96f61c8f.md]]
+
+**Ro Khanna Independent Agency Proposal (June 14, 2026):** In a follow-up post titled "What Washington must do," Marcus explicitly endorsed California Congressman Ro Khanna's proposal for an independent AI agency, calling it the "best solution," in line with what he has long recommended. He argued that policy decisions should not be "last minute, opaque decisions made by a small cabal that hint at favoritism and corruption," and warned that without such an agency, "the US AI industry is lost."
+
+**Conflict of Interest Allegations:** Marcus detailed multiple conflicts of interest behind the June 12 Commerce order: (a) Greg Brockman (OpenAI President) is a huge Trump donor — the decision helped OpenAI; (b) Jared Kushner's brother Josh is a big investor in OpenAI; (c) the decision was sparked by a report from Amazon, a huge OpenAI investor; (d) it indirectly helped Jeff Bezos, who has ties to the administration. Marcus argued these connections made the decision appear "corrupt."
+
+**Pete Hegseth Personal Grudge:** Marcus reported that Pete Hegseth (SecDef) kicked Anthropic out of the Pentagon building three months prior and posted about it on X (2.65M views). Marcus argued this made the whole thing feel "petty" — "it doesn't help that Pete Hegseth seems to have a personal grudge against Anthropic."
+
+**Brain Drain Concern:** Marcus noted that the order targeted foreigners — "even eminent ones who have long lived and worked in the US such as Andrej Karpathy" — potentially causing a massive brain drain that would benefit China and Xi Jinping.
+
+**Dean W Ball's Critique from the Right:** Marcus highlighted that even Dean W Ball, who helped establish the Trump administration's AI policy, criticized the decision. Ball wrote: "Make no mistake: post-Mythos, the United States has a licensing regime for AI. It's just informal, with no consistent rules or firm boundaries on state power or public transparency." Ball further observed that "cobalt mining in the Congo is vastly more institutionalized than frontier AI licensing in the US."
+
+**Sacks's Vague Explanation:** Marcus characterized David Sacks's X statement as "desperately vague about how serious the problem was" — concluding that "what really comes through above all else is impatience and ego."
+
+Source: [[raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md]]
 
 ### Why Things Will Eventually Fall Apart (Jun 2026)
 

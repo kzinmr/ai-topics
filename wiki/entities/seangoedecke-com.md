@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-04
+updated: 2026-06-15
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -11,7 +11,8 @@ sources:
   - raw/articles/seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c.md
   - raw/articles/seangoedecke.com--anti-ai-nostalgia--c80b7b06.md
   - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
----
+  - raw/articles/seangoedecke.com--ai-gpus-live-longer-than-three-years--a4c8235c.md
+|---
 
 # Sean Goedecke
 
@@ -270,6 +271,27 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 |
 |- **Weird projects I shipped with AI** (2026-05-22): Catalogs 5 personal projects shipped with LLM assistance — Skifreedle (daily-game SkiFree clone with Stripe), Autodeck (auto-generated spaced repetition cards), Endless Wiki (280K+ AI-generated pages discoverable by clicking links), VicFlora Offline (PWA caching Victorian plant database), and gh-standup (GitHub CLI standup extension). Argues these are \"existence proofs\" that AI enables projects that would otherwise stay at the \"GitHub repo with a few commits\" stage. Notes that code is only one bottleneck in shipping a product — deployment, payments, and persistence are significant barriers even with great AI code generation. |
 - **Prompts are technical debt too** (2026-05-20): Argues that prompts are a worse form of technical debt than code — prompts are model-specific and silently degrade with each model update, whereas code is stable when untouched. Recommends using third-party AI coding tools with minimal customization. Core insight: code review skills transfer directly to AI agent evaluation, making code review the meta-skill of the AI era.
+
+### AI GPU Lifespan Analysis (June 2026)
+
+Sean Goedecke's June 14, 2026 post thoroughly debunks the "GPUs only last three years" meme popular among AI skeptics.
+
+**Source of the Claim:** The "three years at most" claim originates from an anonymous "GenAI principal architect" at Google quoted in a Tom's Hardware article. The original source is a Tegus interview — Tegus pays insiders hundreds of dollars per hour to answer technical questions, incentivizing confident but potentially inaccurate claims.
+
+**Counter-Evidence:**
+- Google publicly claims eight-year-old TPUs running at 100% utilization in production
+- AWS CEO confirmed in February 2026 that AWS has never retired an A100 server (A100s were made 2020–2024)
+- Oak Ridge Summit supercomputer (27,000+ V100s, 2018–2024): over 95% of GPUs survived at three years; bottom-cage GPUs still above 90% survival rate at six years
+- HN comment: an academic GPU cluster lasted six years with less than 20% failure rate
+
+**Physical vs. Economic Lifespan:** Goedecke makes a critical distinction:
+- **Physical lifespan:** GPUs can operate reliably for 6+ years under load
+- **Economic lifespan:** Newer GPUs (B100) may be 5× more efficient per watt, making older GPUs (A100) economically obsolete for well-capitalized providers
+- However, economic obsolescence does NOT support the "inference costs will spike" argument — A100s remain profitable, and cash-poor providers can continue running them
+
+**Datacenter Cost Structure:** GPUs are only 50–70% of datacenter spend (land, power, cooling make up the rest). Even worn-out GPUs don't require rebuilding entire datacenters.
+
+**Conclusion:** The claim is popular because it's useful for AI skeptics, not because it's true. It comes from a single pseudonymous tweet quoting a paid anonymous source. If an AI winter comes, providers can run B300s, H100s, or even A100s profitably for 6+ years.
 
 ## Sources
 

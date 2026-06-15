@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-06-14
+updated: 2026-06-15
 status: L3
-sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md, raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md, raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md, raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md, raw/articles/simonwillison.net--2026-jun-7-datasette-agent-edit--01ceb2d8.md, raw/articles/simonwillison.net--2026-jun-10-datasette-agent--a829e35c.md, raw/articles/simonwillison.net--2026-jun-11-fable-is-relentlessly-proactive--0e9903b3.md]
+sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md, raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md, raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md, raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md, raw/articles/simonwillison.net--2026-jun-7-datasette-agent-edit--01ceb2d8.md, raw/articles/simonwillison.net--2026-jun-10-datasette-agent--a829e35c.md, raw/articles/simonwillison.net--2026-jun-11-fable-is-relentlessly-proactive--0e9903b3.md, raw/articles/simonwillison.net--2026-jun-14-why-ai-hasnt-replaced-software-engineers--b830974d.md]
 tags: [person, blogger]
 ---
 
@@ -275,6 +275,24 @@ On June 12, Simon updated his **OpenAI WebRTC Playground** tool to support OpenA
 - **Significance**: Demonstrates the gap between API-available model capabilities and consumer-facing product integration; shows the DIY ethos of bridging that gap with open-source tools
 
 Source: [[raw/articles/2026-06-14_simonwillison_openai-webrtc-playground]]
+
+### AI Job Impact Data & NY WARN Act Analysis (June 2026)
+
+On June 14, 2026, Simon highlighted Arvind Narayanan and Sayash Kapoor's essay on AI job displacement — a data-driven rebuttal to the narrative that AI capability thresholds will cause mass layoffs.
+
+**NY WARN Act Data**: In March 2025, New York became the first US state to add an AI disclosure checkbox to WARN Act filings. In the full first year (March 2025–March 2026), more than 160 companies filed WARN notices. **Not a single one checked the AI box.** This finding undercuts claims that AI is directly driving mass unemployment.
+
+**Three Real Bottlenecks** (Narayanan & Kapoor's framework):
+1. **Deciding and specifying** what to build
+2. **Verifying and being accountable** for what is delivered
+3. **Deep human understanding** — of the codebase, the business, and the environment — required to carry out both (1) and (2)
+
+**Simon's Own Commentary**:
+> "I'm finding AI assistance also helps me with the deciding and verifying steps, but it's the 'deep human understanding' that remains key to the value I provide. Give me all of the AI assistance in the world and the value I produce will still be reliant on how deeply I understand both the problems and the solutions that the agents are building for them."
+
+Simon frames this as a validation of his own agentic engineering philosophy: AI accelerates code writing but cannot substitute the human understanding that drives deciding, specifying, and verifying.
+
+Source: [[raw/articles/simonwillison.net--2026-jun-14-why-ai-hasnt-replaced-software-engineers--b830974d.md]]
 
 
 ## Key Quotes
