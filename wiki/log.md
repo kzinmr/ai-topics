@@ -1,3 +1,10 @@
+## [2026-06-15] manual — Argilla entity page creation
+
+- **Created**: [[entities/argilla]] — Argilla entity page. Data collaboration platform for AI engineers and domain experts. Open-source annotation, curation, and synthetic data tools. Acquired by Hugging Face (Jan 2024). Products: Argilla platform (5K+ ⭐, Apache 2.0), distilabel (3.2K+ ⭐, Apache 2.0), Notus model. Key person: David Berenstein (ML & DevRel). Integration with HF ecosystem (Hub, Spaces, Datasets, TRL).
+- **Updated**: [[index.md]] — Added argilla entity entry (791→792 entities).
+- **Tags**: `company`, `huggingface`, `open-source`, `tool`, `data-science`, `training`
+- **Sources**: argilla.io, GitHub (argilla-io/argilla, argilla-io/distilabel), HF org page, transcript 2024-01-24, concepts/dataset-engineering.
+
 ## [2026-06-15] manual — RLHF Book (rlhfbook.com) integration + Principal-Agent framing
 
 - **Action**: Integrated insights from Nathan Lambert's RLHF Book (rlhfbook.com, 17 chapters) into existing wiki pages. Focused on chapters 01, 03, 05, 06, 07, 08, 14 — those directly relevant to the LLM-as-Policy framework.

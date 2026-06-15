@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-06-15 | Total pages: 2516 | Indexed entries: 2107 | Concepts: 1681 | Entities: 792
 
-## Entities (791 pages)
+## Entities (792 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -21,6 +21,7 @@
 - [[entities/antoine-chaffin]] — Antoine Chaffin — Researcher at LightOn. Lead author of DenseOn/LateOn (SOTA open retrieval models), PyLate (CIKM 2025). Late Interaction Workshop co-organizer. Reframed IR direction: sublinear querying over information reconstruction (Jun 2026).
 - [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H ($965B valuation) with expanded investor consortium (Capital Group, Coatue, GIC, etc.) and compute commitments (Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus). Safety-focused LLM lab founded by former OpenAI researchers.
 - [[entities/ar0cket1]] — ar0cket1 — Pseudonymous AI/ML researcher. OPSD (On-Policy Self-Distillation) empirical analysis: KL divergence profiling, positive pressure asymmetry (83% down-weight), GEPA-based hint optimization. 216 bookmarks.
+- [[entities/argilla]] — Argilla — Data collaboration platform for AI engineers and domain experts. Open-source annotation, curation, and synthetic data tools. Acquired by Hugging Face (Jan 2024). Products: Argilla platform (5K+ ⭐), distilabel (3.2K+ ⭐). Key person: David Berenstein.
 - [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
 - [[entities/auriel-wright]] — Auriel Wright — Reinforcement learning practitioner, RL harness failure taxonomy, formerly at Gemini.
 - [[entities/ash-vardanyan]] — Ash Vardanyan — Open-source developer and performance engineer. Creator of USearch, SimSIMD, and other high-performance vector libraries.
