@@ -9068,3 +9068,30 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - **Renamed**: `raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md` → `raw/articles/2024-04-22_phil-schmid-fsdp-qlora-llama3.md` (date corrected to actual publication date)
 - **Updated cross-references**: 14 files updated (bitsandbytes, accelerate, pytorch-fsdp, peft-lora-qlora, deepspeed, genai-handbook, llm-course-roadmap, phil-schmid, tim-dettmers, mobius-labs, training-infra/_index, distributed-training, qlora, index.md)
 - 2026-06-15 10:00 UTC | llm-pricing-monitor | Updated comparisons/llm-api-pricing.md: OpenAI o3/o4-mini→Legacy (replaced by deep-research variants); Google Gemini 3.1 Pro $2.00/$12.00 (was $2.50/$10.00); added Gemini 3 Flash Preview ($0.50/$3.00)
+
+## 2026-06-15 11:00 UTC — active-crawl | 2 new concept pages, 1 enriched
+
+**Sources**: HN Algolia, X/Twitter (xurl), blogwatcher DB
+**Discovery**: 3 parallel subagents (HN: 14 stories, X: 10 tweets, Wiki gap: 15 areas scanned)
+
+### concepts/crewai.md
+**Action**: Created new concept page
+**Summary**: CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents. Covers core abstractions (Crew, Agent, Task, Process), architecture, key features (HITL, MCP integration, memory systems), comparisons to LangGraph/AutoGen/LangChain, ecosystem position (~20K GitHub stars).
+**Wikilinks**: 11 outbound links to langgraph, entities/langchain, managed-agents, human-in-the-loop, comparisons/agent-orchestration-frameworks, ai-agent-architecture, concepts/multi-agents/agent-orchestration-frameworks
+
+### concepts/ai-benchmarks/skillspector.md
+**Action**: Created new concept page
+**Summary**: NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities. Released June 2026, detects 64 vulnerability patterns across 16 categories (prompt injection, data exfiltration, supply chain, MCP tool poisoning). Based on research by Liu et al. (2026) finding 26.1% of agent skills contain vulnerabilities.
+**Wikilinks**: 12 outbound links to ai-agents, concepts/ai-benchmarks/swe-bench, concepts/ai-benchmarks/mmlu-pro, coding-agents, mcp, entities/inspect-ai, entities/promptfoo, concepts/ai-benchmarks/ai-resistant-evaluations, concepts/ai-benchmarks/benchmaxxing, concepts/harness-engineering, concepts/evaluation/evals-for-ai-agents
+
+### concepts/apple-foundation-models.md
+**Action**: Enriched existing page (patch, 100+ new lines added)
+**Summary**: Added Foundation Models API & SDK section, Claude SDK integration details, Apple's AI strategy analysis (privacy-first, on-device + cloud PCC, vertical integration, competitive positioning vs Google/OpenAI). Updated frontmatter date to 2026-06-15.
+**Wikilinks**: 6 outbound links verified
+
+### Raw articles saved
+- raw/articles/2026-06-15_crewai-agent-framework.md
+- raw/articles/2026-06-15_nvidia-skillspector.md
+- raw/articles/2026-06-15_apple-foundation-models-claude-sdk.md
+- raw/articles/2026-06-15_ai-coding-at-home-without-going-broke.md
+- raw/articles/2026-06-15_anthropic-export-controls.md

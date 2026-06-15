@@ -2,13 +2,15 @@
 title: "Apple Foundation Models (AFM 3)"
 type: concept
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-15
 tags:
   - concept
   - model
   - apple
   - foundation-models
   - on-device
+  - claude-code
+  - agent-sdk
   - mixture-of-experts
   - multimodal
   - apple-silicon
@@ -16,12 +18,15 @@ tags:
   - quantization
 sources:
   - raw/articles/2026-06-08_apple-third-generation-foundation-models.md
+  - raw/articles/2026-06-15_apple-foundation-models-claude-sdk.md
   - https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models
+  - https://developer.apple.com/documentation/foundationmodels/
+  - https://www.anthropic.com/news/apple-foundation-models
 related:
   - concepts/apple
   - entities/gemma-4
   - concepts/local-llm
-  - concepts/on-device-ai
+  - concepts/on-device-rag
 ---
 
 # Apple Foundation Models (AFM 3)
@@ -160,12 +165,111 @@ Server-side architecture building on 2025 foundation. Key upgrades stabilize tra
 
 ## See Also
 
-- [[concepts/apple]] — Apple's AI philosophy and strategy
+- [[concepts/apple]] — Apple's AI philosophy and strategy (overview)
 - [[entities/gemma-4]] — Google's open-weight competitor for on-device use
-- [[concepts/local-llm/_index]] — Local LLM deployment patterns
-- [[concepts/on-device-ai]] — On-device AI concepts and trade-offs
+- [[concepts/local-llm/_index]] — Local LLM deployment patterns and ecosystem
+- [[concepts/on-device-rag]] — On-device AI concepts and trade-offs
+- [[entities/anthropic]] — Anthropic, creator of Claude models
+- [[concepts/claude-code/claude-code]] — Claude development ecosystem
+- [[concepts/on-device-rag]] — On-device AI and retrieval patterns
 
 ## Sources
 
 - Apple ML Research, "Introducing the Third Generation of Apple's Foundation Models" (June 8, 2026)
 - raw/articles/2026-06-08_apple-third-generation-foundation-models.md
+
+## Foundation Models API & SDK
+
+In 2026, Apple released its Foundation Models API and SDK, giving developers programmatic access to Apple's on-device and cloud-based models for the first time. This represents a significant shift from Apple's previously closed model ecosystem.
+
+### API Architecture
+
+The Foundation Models API provides two deployment paths:
+
+| Path | Description | Use Case |
+|------|-------------|----------|
+| **On-Device API** | Direct access to AFM 3 Core / Core Advanced on Apple Silicon | Privacy-sensitive tasks, offline capability, low-latency inference |
+| **Cloud API** | Access to AFM 3 Cloud / Cloud Pro via Private Cloud Compute | Heavy workloads, complex reasoning, multi-modal tasks |
+
+### SDK Features
+
+- **Native Swift/Obj-C bindings**: First-class integration with iOS/macOS development
+- **Privacy-preserving by design**: On-device inference keeps data local; cloud calls go through attested PCC infrastructure
+- **Model routing abstraction**: SDK handles automatic fallback from on-device to cloud when tasks exceed local capacity
+- **Task-specific APIs**: Pre-built interfaces for text generation, image understanding, speech-to-text, and translation
+
+### Developer Implications
+
+This API/SDK release enables third-party apps to leverage Apple's foundation models without building custom ML pipelines. Key use cases include:
+- **On-device summarization** via AFM 3 Core Advanced
+- **Visual search** using AFM 3 Core Advanced's multimodal capabilities
+- **Agentic workflows** leveraging AFM 3 Cloud Pro's tool-use abilities
+
+## Claude SDK Integration
+
+Anthropic's Claude SDK now includes direct support for Apple Foundation Models, creating a **hybrid inference pathway** that lets developers route requests between Apple's on-device models and Claude's cloud models based on task complexity, privacy requirements, and latency needs.
+
+### Integration Architecture
+
+```
+Developer App
+    │
+    ├── Apple Foundation Models SDK (on-device)
+    │       ├── AFM 3 Core (text, low-latency)
+    │       └── AFM 3 Core Advanced (multimodal, moderate latency)
+    │
+    └── Claude SDK (cloud fallback)
+            └── Claude models (complex reasoning, extended context)
+```
+
+### Key Features
+
+- **Seamless model routing**: SDK automatically selects Apple on-device or Claude cloud based on task type
+- **Privacy-preserving fallback**: Sensitive data processed locally; only anonymized summaries sent to cloud when needed
+- **Unified API surface**: Single developer interface abstracts away the underlying model selection
+- **Cost optimization**: On-device inference reduces cloud API costs for routine tasks
+
+### Strategic Significance
+
+This integration represents a notable departure from Apple's traditionally closed ecosystem. By partnering with [[entities/anthropic]], Apple gains access to frontier reasoning capabilities while Anthropic gains distribution through Apple's massive device install base.
+
+- **For Apple**: Extends [[concepts/on-device-rag]] capabilities beyond what's feasible locally, maintaining privacy-first positioning
+- **For Anthropic**: Reaches billions of iOS/macOS users without building on-device infrastructure
+- **For developers**: Single SDK provides access to both edge and cloud models with intelligent routing
+
+## Apple's AI Strategy
+
+Apple's approach to AI is characterized by several distinctive pillars:
+
+### Privacy-First Architecture
+
+Unlike competitors who default to cloud-based inference, Apple's strategy prioritizes **on-device processing** as the primary pathway, with cloud fallback only for tasks exceeding local capacity. The [[concepts/apple]] Foundation Models API enforces this through:
+- Data never leaves the device unless explicitly requested by the user
+- Cloud inference runs through **Private Cloud Compute** with attested security guarantees
+- All model binaries are published for independent security audit
+
+### Vertical Integration
+
+Apple's custom silicon (A-series, M-series) enables tight optimization between hardware and models:
+- **NAND-based model storage**: IFP architecture allows larger models than DRAM constraints would suggest
+- **Neural Engine acceleration**: Dedicated silicon for ML inference reduces power consumption
+- **End-to-end optimization**: Model training, quantization, and deployment all tuned for Apple hardware
+
+### Ecosystem Lock-in vs. Developer Enablement
+
+The Foundation Models SDK creates a **dual dynamic**:
+- **Lock-in**: Models optimized for Apple Silicon don't run efficiently elsewhere
+- **Enablement**: First-party API lowers the barrier for developers to build AI features
+
+This mirrors Apple's historical strategy with [[concepts/on-device-rag]] — provide powerful tools, but keep them within the ecosystem.
+
+### Competitive Positioning
+
+| Dimension | Apple AFM 3 + Claude SDK | Google Gemini | OpenAI GPT + Apple |
+|-----------|--------------------------|---------------|-------------------|
+| **Default inference** | On-device (Apple Silicon) | Cloud-first | Cloud-first |
+| **Privacy** | Attested PCC, local-first | Varies | Varies |
+| **Developer API** | Native SDK + Claude integration | Vertex AI | API only |
+| **Hardware coupling** | Tight (Apple Silicon only) | Loose (any cloud) | None |
+| **Open weights** | No | Yes (Gemma) | No |
+| **Ecosystem reach** | iOS/macOS only | Multi-platform | Multi-platform |

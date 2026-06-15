@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-15 | Total pages: 2516 | Indexed entries: 2107 | Concepts: 1681 | Entities: 792
+> Last updated: 2026-06-15 | Total pages: 2515 | Indexed entries: 2109 | Concepts: 1687 | Entities: 798
 
-## Entities (792 pages)
+## Entities (798 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -857,7 +857,9 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1681 pages)
+## Concepts (1687 pages)
+- [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
+- [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
 
 ## Events (9 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
