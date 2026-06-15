@@ -240,12 +240,40 @@ Start with 7-8B for fast iteration. Try bigger models. If not meaningfully bette
 
 ---
 
+## 2026年振り返り — 2年前の発言はどう見えているか
+
+2024年1月時点のこのOffice Hoursの発言を、2026年6月の視点から振り返る。
+
+### 的中した予測・普遍的な洞察
+
+- **「7-8Bがスイートスポット」** — 2026年現在もLlama 3.1 8B、Qwen2.5 7B、Mistral 7Bがfine-tuningの主力。Dan Beckerの「training cost is free, inference cost is everything」は完全に正しかった。本番デプロイの大半は7-14Bレンジ。
+- **「FSDPは'all-or-nothing'、DeepSpeedは細やか」** — この構図は2026年も基本的に変わらない。Accelerate v1.xでもFSDPのoffload粒度は改善されていない。
+- **「LoRAはparallel adapterとして優秀」** — Charles Fryeのper-request LoRA routingの説明は2026年のvLLM、SGLangのLoRA multiplexing機能として具現化した。
+- **「Just tweak with shit」** — 実験重視の姿勢は2026年の「vibe coding」文化と呼応。Axolotl、LLaMA-Factory、Unslothがさらに低コード化。
+- **「Make your learnings public」** — Hugging Face Hubのモデル数は2024年1月から2026年6月で約10倍に増加。公開fine-tuneのエコシステムが爆発的に成長。
+
+### 変化した状況
+
+- **「torch.compileは実験的」** — 2026年現在、torch.compileはPyTorch 2.xで安定し、AxolotlやTRLでもデフォルト有効化されている。Zachの「3-6ヶ月で大きく変わる」予測は的中。
+- **「INT8学習は不安定」** — 2026年でも依然としてBF16が主流だが、NVIDIA Transformer EngineとFP8学習はBlackwell/B200で実用段階に到達。Llama 3.1 405Bの学習ではFP8が使われたと噂される。
+- **「Apple Siliconは学習に向かない」** — M4 Ultraの統合メモリ（最大512GB）により、推論用途では圧倒的に有利。しかし分散学習のインフラは依然としてNVIDIA優位。Zachの「MacBookは拒否」は2026年でも多くのMLエンジニアの共感を得る立場。
+- **「A4500を買う」** — RTX 5090（32GB VRAM）、RTX PRO 6000（96GB）の登場でGPU選択肢は大幅に拡大。A4500のポジションはRTX 5090に取って代わられた。
+- **「Phi-3は変」** — Phi-4 (2025) は大幅に改善し、14BでLlama 3.1 8Bを超える性能を発揮。Microsoftのデータ品質への執着が実を結んだ。
+- **「Chinchilla scaling laws」** — 2026年ではscaling lawsの議論は「test-time compute scaling」（o1/o3、DeepSeek-R1）に移行。学習時FLOPsの最適配分だけでなく、推論時FLOPsの最適配分が新たなフロンティア。
+- **「JAXは3年後にどうなっているか」** — 2026年でもJAXはGoogle DeepMind内部では標準だが、外部エコシステムは依然としてPyTorch優位。Zachの「3年後にまだ存在するか」という懸念は、存在はしているが影響力は限定的という形で答えが出た。
+
+### この講義の歴史的意義
+
+このOffice Hoursは、Hugging Faceエコシステムの「中間層」（Accelerate/FSDP/DeepSpeed）が一般のML実務者に届き始めた転換期の記録。2024年1月はLlama 3の公開前（2024年4月）であり、オープンモデルのfine-tuningが「一般のエンジニアの仕事」になり始めた黎明期の声として価値がある。
+
+---
+
 ## Companion Resources
 
 - **Companion article:** [[raw/articles/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours]]
 - **Related concepts:**
-  - [[concepts/accelerate]] — Hugging Face Accelerate
-  - [[concepts/pytorch-fsdp]] — PyTorch FSDP
+  - [[concepts/post-training/accelerate]] — Hugging Face Accelerate
+  - [[concepts/post-training/pytorch-fsdp]] — PyTorch FSDP
   - [[concepts/deepspeed]] — DeepSpeed
   - [[concepts/post-training/peft-lora-qlora]] — PEFT / LoRA / QLoRA
   - [[concepts/qlora]] — QLoRA

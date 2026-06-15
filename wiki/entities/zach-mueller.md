@@ -112,8 +112,8 @@ Mueller's Accelerate work underpins training infrastructure used by thousands of
 
 ## Cross-References
 
-- [[concepts/accelerate]] — Lead developer of Hugging Face's distributed training launcher
-- [[concepts/pytorch-fsdp]] — FSDP is one of the backends Accelerate supports
+- [[concepts/post-training/accelerate]] — Lead developer of Hugging Face's distributed training launcher
+- [[concepts/post-training/pytorch-fsdp]] — FSDP is one of the backends Accelerate supports
 - [[concepts/deepspeed]] — DeepSpeed is the alternative backend Accelerate abstracts over
 
 ## Related People

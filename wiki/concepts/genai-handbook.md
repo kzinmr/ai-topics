@@ -116,7 +116,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 | Mixture-of-Experts | [[concepts/mixture-of-experts]] | Covered |
 | Scaling Laws | [[concepts/scaling-laws]] | Covered |
 | Pretraining Recipes | [[concepts/llm-training-fundamentals]] | Covered |
-| Distributed Training / FSDP | [[concepts/pytorch-fsdp]], [[concepts/fsdp-qlora]] | Both are well-covered |
+| Distributed Training / FSDP | [[concepts/post-training/pytorch-fsdp]], [[concepts/fsdp-qlora]] | Both are well-covered |
 
 **Resource Evaluation:**
 - 🟢 **Karpathy "Tokenization" video** — A must-watch for deep understanding of tokenization. Provides a unique thought framework.

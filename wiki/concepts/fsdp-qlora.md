@@ -187,6 +187,6 @@ This is directly relevant to [[concepts/pytorch-fsdp#DDP vs FSDP: When to Use Wh
 
 ## Related Concepts
 
-- [[concepts/pytorch-fsdp]] — The sharding framework behind the technique
+- [[concepts/post-training/pytorch-fsdp]] — The sharding framework behind the technique
 - [[concepts/qlora]] — The quantization + LoRA method that enables 4-bit training
 - [[concepts/peft-fine-tuning]] — Umbrella for parameter-efficient fine-tuning methods

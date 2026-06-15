@@ -58,7 +58,7 @@ Office hours session from the LLM Fine Tuning course (Maven) featuring Zach Muel
 - [[entities/zach-mueller]] — Technical Lead for Hugging Face Accelerate
 - [[entities/hamel-husain]] — Independent consultant, Parlance Labs
 - [[entities/charles-frye]] — Full Stack Deep Learning instructor
-- [[concepts/accelerate]] — Hugging Face Accelerate library
-- [[concepts/pytorch-fsdp]] — PyTorch FSDP
+- [[concepts/post-training/accelerate]] — Hugging Face Accelerate library
+- [[concepts/post-training/pytorch-fsdp]] — PyTorch FSDP
 - [[concepts/deepspeed]] — DeepSpeed
 - [[concepts/post-training/peft-lora-qlora]] — PEFT / LoRA / QLoRA

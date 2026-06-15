@@ -127,6 +127,6 @@ Dropbox (Mobius Labs team) published a comprehensive survey of quantization form
 ## Related Concepts
 
 - [[concepts/fsdp-qlora]] — Co-developed the FSDP+Q-LoRA technique
-- [[concepts/pytorch-fsdp]] — Distributed training framework used in the collaboration
+- [[concepts/post-training/pytorch-fsdp]] — Distributed training framework used in the collaboration
 - [[concepts/qlora]] — Quantized LoRA method complemented by HQQ
 - [[concepts/inference/vllm]] — SGLang integrated with HQQ/GemLite for low-bit inference

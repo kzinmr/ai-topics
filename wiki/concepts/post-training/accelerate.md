@@ -2,7 +2,7 @@
 title: "Hugging Face Accelerate"
 type: concept
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-06-15
 tags:
   - training
   - huggingface
@@ -12,11 +12,10 @@ aliases:
   - huggingface-accelerate
   - accelerate-launch
 related:
-  - concepts/pytorch-fsdp
+  - concepts/post-training/pytorch-fsdp
   - concepts/fsdp-qlora
   - concepts/qlora
   - concepts/post-training/peft-lora-qlora
-  - concepts/post-training/pytorch-fsdp
   - concepts/deepspeed
   - concepts/ai-infrastructure-engineering/distributed-training
   - entities/zach-mueller
@@ -29,7 +28,7 @@ sources:
 
 # Hugging Face Accelerate
 
-**Accelerate** is Hugging Face's unified distributed training library that enables the same PyTorch training code to run on any hardware configuration — single GPU, multi-GPU, CPU, or TPU — with zero code changes. It serves as the **abstraction layer that makes [[concepts/pytorch-fsdp]] and [[concepts/deepspeed]] interchangeable**, allowing practitioners to swap between them via a single CLI flag.
+**Accelerate** is Hugging Face's unified distributed training library that enables the same PyTorch training code to run on any hardware configuration — single GPU, multi-GPU, CPU, or TPU — with zero code changes. It serves as the **abstraction layer that makes [[concepts/post-training/pytorch-fsdp]] and [[concepts/deepspeed]] interchangeable**, allowing practitioners to swap between them via a single CLI flag.
 
 Created and led by **[[entities/zach-mueller|Zach Mueller]]**, a Machine Learning Software Engineer at Hugging Face, Accelerate is the backbone of Hugging Face's training stack — used by Transformers Trainer, TRL SFTTrainer, and PEFT under the hood.
 
@@ -231,7 +230,7 @@ When using Accelerate as the launcher, both FSDP and DeepSpeed work identically 
 
 Accelerate connects multiple existing concept pages as the **unified orchestration layer**:
 
-- **[[concepts/pytorch-fsdp]]** — Covers native PyTorch FSDP sharding strategies, architecture, and has a DeepSpeed comparison table (native, not Accelerate-specific). Accelerate is the recommended launcher for FSDP in Hugging Face workflows.
+- **[[concepts/post-training/pytorch-fsdp]]** — Covers native PyTorch FSDP sharding strategies, architecture, and has a DeepSpeed comparison table (native, not Accelerate-specific). Accelerate is the recommended launcher for FSDP in Hugging Face workflows.
 - **[[concepts/fsdp-qlora]]** — Uses Accelerate (`accelerate launch`) as the launcher for FSDP+QLoRA training. The `accelerate config` step is critical for setting sharding strategy and CPU offload.
 - **[[concepts/qlora]]** — Mentions Accelerate integration for distributed Q-LoRA training.
 - **[[concepts/post-training/peft-lora-qlora]]** — PEFT works alongside Accelerate; the `Accelerator` prepares model, optimizer, and dataloader for distributed PEFT training.
@@ -243,7 +242,7 @@ Accelerate connects multiple existing concept pages as the **unified orchestrati
 
 ## Related Concepts
 
-- **[[concepts/pytorch-fsdp]]** — PyTorch FSDP sharding strategies, architecture, and DeepSpeed comparison
+- **[[concepts/post-training/pytorch-fsdp]]** — PyTorch FSDP sharding strategies, architecture, and DeepSpeed comparison
 - **[[concepts/fsdp-qlora]]** — Combining FSDP with Q-LoRA for memory-efficient fine-tuning, launched via Accelerate
 - **[[concepts/qlora]]** — Quantized Low-Rank Adaptation, often used with Accelerate for distributed training
 - **[[concepts/post-training/peft-lora-qlora]]** — PEFT methods that integrate with Accelerate's distributed training
