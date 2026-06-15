@@ -9106,3 +9106,16 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - raw/articles/2026-06-15_apple-foundation-models-claude-sdk.md
 - raw/articles/2026-06-15_ai-coding-at-home-without-going-broke.md
 - raw/articles/2026-06-15_anthropic-export-controls.md
+
+### concepts/ai-benchmarks/perfcodebench.md
+**Action**: Created new concept page
+**Summary**: PerfCodeBench — Executable benchmark for evaluating LLMs on system-level high-performance code optimization. Covers GPU/CPU/cache/parallel tasks across C/C++/Go/Java/Python/CUDA. GPT-5.4 leads CRR (71.25%), GPT-5 leads CGRE (73.99%). CUDA tasks remain extremely challenging (best CRR 18.4%). Key insight: correctness ≠ efficiency, CPU success ≠ GPU success.
+**Wikilinks**: 5 outbound links to concepts/ai-benchmarks/swe-bench, concepts/ai-benchmarks/livecodebench, concepts/ai-benchmarks/kernelbench, concepts/ai-benchmarks/programbench
+
+### concepts/ai-benchmarks/kernelbench.md
+**Action**: Enriched existing page (expanded from stub)
+**Summary**: KernelBench — Benchmark for evaluating LLMs on CUDA kernel optimization. Expanded from stub to include overview, relationship to PerfCodeBench, key findings on GPU optimization challenges.
+**Wikilinks**: 3 outbound links to concepts/ai-benchmarks/perfcodebench, concepts/ai-benchmarks/livecodebench, concepts/ai-benchmarks/swe-bench
+
+### Raw articles saved
+- raw/papers/perfcodebench.pdf (arXiv:2605.15222)
