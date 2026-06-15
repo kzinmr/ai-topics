@@ -1,0 +1,98 @@
+{
+  "run_id": "20260615T071022Z",
+  "triaged_at": "2026-06-15T07:15:00Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 4,
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "low": 1
+  },
+  "newsletters": [
+    {
+      "message_id": "<20260614174342.3.7e82d91194e34e5a@mg2.substack.com>",
+      "subject": "Welcome to the AGI era of AI governance",
+      "date": "2026-06-14",
+      "source": "Interconnects.ai (Nathan Lambert)",
+      "author": "@natolambert",
+      "publication_url": "https://open.substack.com/pub/robotic/p/welcome-to-the-agi-era-of-ai-governance",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md",
+      "classification": "critical",
+      "reason": "Nathan Lambert's Interconnects.ai is a core AI safety/governance newsletter. Article directly addresses AGI-era governance frameworks — central to the wiki's AI safety and policy coverage.",
+      "suggested_wiki_pages": [
+        "concepts/ai-governance",
+        "concepts/ai-safety",
+        "entities/nathan-lambert"
+      ],
+      "tags": ["ai-governance", "ai-safety", "agi", "policy"],
+      "action": "scrape_article_and_ingest"
+    },
+    {
+      "message_id": "<20260614130323.3.a6682b88d6611b20@mg-d0.substack.com>",
+      "subject": "Anthropic Unlocks Mythos, Apple's Gemini Gambit, and SpaceX's Record Raise",
+      "date": "2026-06-14",
+      "source": "The Signal (Alex Banks)",
+      "author": "@alexbanks",
+      "publication_url": "https://open.substack.com/pub/thesignal/p/anthropic-unlocks-mythos-apples-gemini",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-anthropic-unlocks-mythos-apple-s-gemini-gambit-and-spacex-s-record-raise.md",
+      "classification": "high",
+      "reason": "Covers Anthropic (core AI company — Mythos product launch), Apple+Gemini integration (major AI platform news), and SpaceX (adjacent but notable). Multiple AI-relevant items in one digest.",
+      "suggested_wiki_pages": [
+        "entities/anthropic",
+        "entities/apple",
+        "concepts/ai-integration"
+      ],
+      "tags": ["anthropic", "apple", "gemini", "llm-products", "funding"],
+      "action": "scrape_article_and_ingest"
+    },
+    {
+      "message_id": "<20260614191421.3.6bc4d1cd0fd3b4ee@mg2.substack.com>",
+      "subject": "Is SMIC N+3's Metal Pitch Smaller than Intel 18A's?",
+      "date": "2026-06-14",
+      "source": "SemiAnalysis (Dylan Patel et al.)",
+      "author": "@semianalysis",
+      "publication_url": "https://open.substack.com/pub/semianalysis/p/steel-smic-n3-teardown",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-is-smic-n-3-s-metal-pitch-smaller-than-intel-18a-s.md",
+      "classification": "high",
+      "reason": "SemiAnalysis covers semiconductor process nodes (SMIC N+3 vs Intel 18A). While not directly about LLMs, advanced semiconductor fabrication is critical AI infrastructure — determines GPU/TPU availability and cost for training/inference.",
+      "suggested_wiki_pages": [
+        "concepts/ai-chips",
+        "concepts/ai-infrastructure"
+      ],
+      "tags": ["semiconductors", "smic", "intel", "ai-hardware", "fabrication"],
+      "action": "scrape_article_and_ingest"
+    },
+    {
+      "message_id": "<20260614123145.3.75a7a52c5a77118f@mg2.substack.com>",
+      "subject": "The hidden pattern behind successful products | Mark Pincus (Founder of Zynga)",
+      "date": "2026-06-14",
+      "source": "Lenny's Newsletter (Lenny Rachitsky)",
+      "author": "@lenny",
+      "publication_url": "https://open.substack.com/pub/lenny/p/the-common-pattern-behind-successful",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-the-hidden-pattern-behind-successful-products-mark-pincus-founder-of-zynga.md",
+      "classification": "low",
+      "reason": "General product management content from Lenny's Newsletter (Mark Pincus interview). Not directly related to AI/LLM technologies. Could tangentially relate to AI product strategy but no specific AI content indicated.",
+      "suggested_wiki_pages": [],
+      "tags": ["product-management", "off-topic"],
+      "action": "skip"
+    }
+  ],
+  "articles_to_scrape": [
+    {
+      "url": "https://open.substack.com/pub/robotic/p/welcome-to-the-agi-era-of-ai-governance",
+      "priority": "critical",
+      "subject": "Welcome to the AGI era of AI governance"
+    },
+    {
+      "url": "https://open.substack.com/pub/thesignal/p/anthropic-unlocks-mythos-apples-gemini",
+      "priority": "high",
+      "subject": "Anthropic Unlocks Mythos, Apple's Gemini Gambit, and SpaceX's Record Raise"
+    },
+    {
+      "url": "https://open.substack.com/pub/semianalysis/p/steel-smic-n3-teardown",
+      "priority": "high",
+      "subject": "Is SMIC N+3's Metal Pitch Smaller than Intel 18A's?"
+    }
+  ]
+}
