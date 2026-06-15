@@ -654,6 +654,7 @@
 - [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
 - [[entities/thin-bi-tool]] — Thinning BI tools — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
 - [[entities/thomas-wiecki]] — Thomas Wiecki — CEO of PyMC Labs, PyMC core developer, co-host of Show Us Your Agent Skills. Vanishing Gradients Agentic Data Science episode (May 2026): Decision Engines, Multiplayer DS, Causal-Bayesian workflows. Bayesian statistics expert.
+- [[entities/thomas-capelle]] — Thomas Capelle — ML Engineer at Weights & Biases (France). Fine-tuning specialist, axolotl/torchtune integrations contributor. Mistral 7B ablation study (pruning 75% layers + SFT/DPO recovery). W&B Weave LLM tracing. @tcapelle.
 - [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
 - [[entities/tilert]] — TileRT — Next-gen AI inference execution engine. Persistent kernel, tile pipeline, warp specialization for ultra-low-latency inference on commodity GPUs. Powers GLM-5.1-HighSpeed (400 tok/s) and MiMo-V2.5-Pro-UltraSpeed (1000 tok/s).
 - [[entities/tim-davis]] — Tim Davis — Modular executive, Compound Loop creator. Originated "probabilistic engineering" and "24-7 employee" concepts. Key thinker on AI-native team restructuring and agent fleet orchestration.
@@ -2044,6 +2045,7 @@
 - [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]] — Claude Platform Docs: Mid-conversation system messages — Add or update system instructions partway through a conversation without invalidating the cached prefix. Opus 4.8 only. Use cases: mid-session policy changes, per-turn authoritative context, user input during agentic loops. Companion: [[entities/lance-martin]], [[concepts/claude-code/claude-code-tips]]
 - [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]] — Claude Platform Docs: Prompting best practices for Claude Opus 4.8. Covers effort parameter tuning (xhigh for coding agents, high as minimum), adaptive thinking migration, tool use triggering, literal instruction following, long-horizon agent patterns. Companion: [[entities/lance-martin]], [[concepts/claude-code/claude-code-tips]]
 - [[raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate]] — LightOn Releases GTE-ModernColBERT — First SOTA late-interaction model trained on PyLate. 8K context, first to beat ColBERT-small on BEIR. ModernBERT + knowledge distillation on MS MARCO. Companion: [[concepts/gte-moderncolbert]], [[entities/lighton]]
+- [[raw/articles/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments]] — Getting the Most Out of Your LLM Experiments — Thomas Capelle (W&B). Experiment tracking for fine-tuning, debugging training spikes, Mistral 7B ablation (prune 75% layers + SFT/DPO), loss proxy limitations, W&B Weave LLM tracing. Companion: [[transcripts/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments-lecture]], [[entities/thomas-capelle]]
 - [[raw/articles/2024-01-24_emeisen_why-fine-tuning-is-dead]] — Why Fine-Tuning is Dead — Emmanuel Ameisen (Anthropic). RAG delivers ~90% of value for knowledge tasks; fine-tuning adds marginal gains. Hierarchy: evals → prompts → dynamic few-shot → RAG → fine-tuning. Companion: [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]], [[entities/emmanuel-ameisen]]
 
 ## Raw Papers (48 pages)
@@ -2096,10 +2098,11 @@
 - [[raw/papers/2601.19752-agentic-design-patterns]] — Agentic Design Patterns
 - [[raw/papers/2309.08168-self-speculative-decoding-zhang]] — Self-Speculative Decoding
 
-## Transcripts (34 pages)
+## Transcripts (35 pages)
 
 - [[transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework]] — Inspect: An OSS Framework for LLM Evals — JJ Allaire (UK AISI). Dataset/Solver/Scorer architecture, Honeycomb eval walkthrough, critique scoring, tool use, agent eval, LangChain integration, model support, log viewer, reproducibility. Companion: [[entities/inspect-ai]], [[entities/jj-allaire]]
 - [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]] — Why Fine-Tuning is Dead — Emmanuel Ameisen (Anthropic). RAG vs fine-tuning, prompting hierarchy of needs, price/context trends. Companion: [[raw/articles/2024-01-24_emeisen_why-fine-tuning-is-dead]], [[entities/emmanuel-ameisen]]
+- [[transcripts/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments-lecture]] — Getting the Most Out of Your LLM Experiments — Thomas Capelle (W&B). Experiment tracking, debugging training spikes, Mistral 7B ablation, loss proxy limitations, W&B Weave demo. Companion: [[raw/articles/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments]], [[entities/thomas-capelle]]
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
 - [[transcripts/2024-12-13_ilyasutskever-transcript]] — Sequence to Sequence Learning with Neural Networks: What a Decade — Ilya Sutskever (NeurIPS 2024). Full transcript. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]
 - [[transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]] — Vanishing Gradients Ep. 68: Builder's Guide to Agentic Search — John Berryman, Doug Turnbull. 5-level incremental AI adoption model for search, LLM-as-judge, tool calling patterns.

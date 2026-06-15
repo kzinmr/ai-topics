@@ -1,0 +1,1375 @@
+WEBVTT
+
+1
+00:00:00.776 --> 00:00:10.249
+Daniel: So the plan in this session is to kind of do a little bit of a high level overview.
+
+
+2
+00:00:11.143 --> 00:00:15.962
+Daniel: focusing on this topic of creating, curating and cleaning data.
+
+
+3
+00:00:17.513 --> 00:00:36.093
+Daniel: So I think this is already been discussed. Quite lot in the course. And I think it's come up various points. So there's probably some stuff that will say that you already be familiar with. But the idea is to hopefully give you some ideas for how to approach building data sets for fine tuning large license models.
+
+
+4
+00:00:38.173 --> 00:00:45.823
+Daniel: So I'll just quickly introduce myself and then let David introduce himself, and then we can kind of dive in
+
+
+5
+00:00:46.335 --> 00:01:02.153
+Daniel: so my name's Daniel Vanstein. I work as a machine learning library and hugging face. I can talk more about what that means at the end of the session, if anyone's interested. But my background is that kind of name implies is very much in libraries. So
+
+
+6
+00:01:02.493 --> 00:01:14.203
+Daniel: I kind of fell into machine learning and large language models. In the same way, probably a lot of other people did via the 1st AI course that I took years ago now.
+
+
+7
+00:01:15.383 --> 00:01:41.352
+Daniel: but I think the library background is kind of nice for this topic, because one thing that you will do a lot in libraries is, look at lots and lots of data and think about how to organize data and how to structure things in a systematic way. And I think that is a big part of working with data. In the context of large language models. So I think those kind of skills can be quite useful, even though they're a little bit outside of what you'd expect
+
+
+8
+00:01:41.653 --> 00:01:43.543
+Daniel: for people working in this domain.
+
+
+9
+00:01:43.683 --> 00:01:47.712
+Daniel: And David, do you wanna do a quick intro and then kind of dive in.
+
+
+10
+00:01:47.713 --> 00:02:12.983
+David: Sure. So I'm I'm David. I'm doing Mo. And and defro at our Gela and our Jls data collaboration platform for AI engineers and domain experts for the ones that aren't familiar with it. And yeah, I kind of started off with with Nlp and these kind of things by by initially my masters and then working in a private intelligence working on knowledge graphs. And also, yeah, Custom Domain, nlp, models.
+
+
+11
+00:02:13.436 --> 00:02:19.099
+David: And that's also, yeah, I think, where data, quality and model quality is very, very important.
+
+
+12
+00:02:19.463 --> 00:02:28.782
+David: so yeah, that's kind of my my background. And I will be covering the the synthetic data part, and hopefully, give some some pointers on that for you guys.
+
+
+13
+00:02:30.243 --> 00:02:33.961
+Daniel: Okay, that sounds good. So I'll I'll jump in then.
+
+
+14
+00:02:34.513 --> 00:02:52.993
+Daniel: so basically, the the kind of structure this presentation is to start from, like the ideal case in which you might already find some existing data and then work to the probably more realistic case that you're gonna have to build some of your own data for fine tuning. If you're not working in a topic that's already kind of well worked on.
+
+
+15
+00:02:54.613 --> 00:03:05.012
+Daniel: So I'll just talk very quickly about some ways in which you might find existing data. So obviously, I'm going to pitch hugging face as a good place to to look for data sets.
+
+
+16
+00:03:06.863 --> 00:03:11.553
+Daniel: and I think that the question is a little bit what kind of data sets you need to look for so
+
+
+17
+00:03:11.893 --> 00:03:21.842
+Daniel: thing with hugging face. There's quite a diversity of data sets shared on the Hub, but a lot of the ones that will be trending and very visible tend to be
+
+
+18
+00:03:22.253 --> 00:03:26.503
+Daniel: focus on like a very kind of specific type of use case. So
+
+
+19
+00:03:26.583 --> 00:03:33.793
+Daniel: an example of that here is this fine web data set, which probably quite a lot of you've seen do the rounds on social media.
+
+
+20
+00:03:34.063 --> 00:03:39.832
+Daniel: So this is a kind of data set focused pre-training large language models.
+
+
+21
+00:03:39.973 --> 00:03:50.093
+Daniel: So there's like a very interesting data set. It's probably not something you're gonna find particularly useful unless you're actually training based models yourself.
+
+
+22
+00:03:50.463 --> 00:04:16.782
+Daniel: The other thing that I would say is that there are a lot of research data sets that are associated with papers that can be really interesting. But I think there's also a growing number of community contributed date sets that are made by people doing slightly more kind of bespoke and sometimes weird stuff. But those dates can actually be really valuable both for using directly, but also for getting a bit of a better sense of how people are approaching
+
+
+23
+00:04:16.983 --> 00:04:18.982
+Daniel: building data sets.
+
+
+24
+00:04:21.703 --> 00:04:30.472
+Daniel: so one of the the ways I would suggest. If you're not already familiar with finding data sets on the hub is to use this kind of tags feature.
+
+
+25
+00:04:30.893 --> 00:04:35.912
+Daniel: So I think that's not super well used at the moment, but there's kind of growing usage of it.
+
+
+26
+00:04:36.053 --> 00:04:48.302
+Daniel: And and particularly for things like Dpi data sets. It can be a really useful way of finding data sets that kind of match a specific format, and I'll talk a little bit more about Dpo. In a little while.
+
+
+27
+00:04:49.503 --> 00:05:03.473
+Daniel: And there is also this full text search. So if people have done kind of bad job of naming their data, this can often be quite useful way of finding data sets because it's looking in the the full data card to to find things.
+
+
+28
+00:05:04.943 --> 00:05:07.742
+Daniel: And then once you found the data
+
+
+29
+00:05:08.273 --> 00:05:23.592
+Daniel: ideally, someone would have documented it really well, and explained exactly what's for and what the limitations are and how it was made. But that often doesn't happen. But one thing that I think is really nice with the Hub is that you have this date set viewer that gives you a kind of preview of the data set.
+
+
+30
+00:05:23.883 --> 00:05:31.693
+Daniel: And I think that can be a really good way of doing this kind of 5 check on whether a data set is going to be useful for your application or not.
+
+
+31
+00:05:31.943 --> 00:05:39.773
+Daniel: So there's a kind of example of what that might look like here. So there's this data set for doing function calling.
+
+
+32
+00:05:40.363 --> 00:05:49.532
+Daniel: and, as you can see, it's like very badly documented, there's no information needed. I'm not trying to pick out on this person, but it's just quite common that people
+
+
+33
+00:05:49.553 --> 00:05:52.293
+Daniel: leave that documentation till later.
+
+
+34
+00:05:52.648 --> 00:05:59.552
+Daniel: And one of the things that you get in this preview, some kind of metadata about the data itself.
+
+
+35
+00:05:59.953 --> 00:06:25.572
+Daniel: And in this case you have this conversation, which is this kind of chat, Ml format, a lot of people are familiar with what you have basically a list of dictionaries. And and one of the things that might be interesting for you to know is like how long those conversations are what the distribution of those looks like, depending on what kind of domain you're working, and you might expect the kind of chats be very short, or you might expect to have longer chats, and then, having a sense of what this looks like
+
+
+36
+00:06:25.843 --> 00:06:27.582
+Daniel: can be quite useful.
+
+
+37
+00:06:27.813 --> 00:06:42.913
+Daniel: But the other thing that you can then start to do is to dive into okay, like, what are the actual conversations in there? So you can look at actual example, Rose. And one of the things I noticed with this date say, even though some of the Chats messages are quite long.
+
+
+38
+00:06:43.193 --> 00:07:03.082
+Daniel: Some of the responses, or the the kind of final turns that just basically the person being like, Oh, thank you. And then the model being like, Oh, you're very welcome. So probably that kind of response is not actually that useful. So if a lot of the longer messages are like that, maybe you can't kind of see this as a good data set for those kind of long conversation.
+
+
+39
+00:07:04.753 --> 00:07:06.843
+Daniel: yeah. Fine tuning use cases.
+
+
+40
+00:07:08.546 --> 00:07:16.553
+Daniel: So I said, that was probably the ideal scenario that you find something that you can either adapt or kind of directly use.
+
+
+41
+00:07:16.883 --> 00:07:22.042
+Daniel: But I think in practice, often you're going to have to create your own data set.
+
+
+42
+00:07:22.400 --> 00:07:31.632
+Daniel: And I looked a little bit through the discord, and I think people are like tends to be quite creative about this already. But I think one of the things that
+
+
+43
+00:07:31.713 --> 00:07:58.353
+Daniel: probably is like a little bit under you still is just to adapt existing date sets for large language model fine tuning. So there's a bunch of date sets from kind of classic nlp that can be restructured or reformatted to work. With. Lm, fine tuning, and particularly if you're ready. An organization that's kind of been using for a while. Probably you have some of those dates that's already around that you potentially could adopt. And the other part
+
+
+44
+00:07:58.673 --> 00:08:20.343
+Daniel: is like whether you already have some feedback from users. So there's a lot of discussion about preferences and preference data sets, and you can set about creating those very deliberately, either by using human notations or Llm. Judges, but quite often you will already have some indications either very direct. So people have, like a thumbs up or a thumbs down.
+
+
+45
+00:08:20.343 --> 00:08:38.422
+Daniel: But there might be other ways in which you can kind of get this question of like, was it user? Satisfied with a particular interaction. And that might be a source of preference data that you can kind of create without actually having to to regather all that preference data manually.
+
+
+46
+00:08:39.053 --> 00:08:52.572
+Daniel: And then the kind of final one is this synthetic data which I think, can go hand in hand with these other bits. But I think it's also very powerful for kind of jump. Starting the prices of building these data sets.
+
+
+47
+00:08:54.639 --> 00:09:07.752
+Daniel: I won't kind of labor this point too much. But I think there's also often quite a lot of work to get your data into a kind of format you can actually use for large language model training.
+
+
+48
+00:09:07.763 --> 00:09:15.503
+Daniel: And I think there's some nice tooling for this. But often it will be get a kind of very specific use case.
+
+
+49
+00:09:17.313 --> 00:09:44.312
+Daniel: But yeah, one thing I wanted to kind of mention about that already is the, I think, a lot of the the work that you do in prepping this data might also end up being very useful, for when you get to the stage of deploying a language model in production, so I think you wanna have that in mind, the the kind of format that you're gathering this data from should be quite close to what you're gonna actually be using that language model for in practice. So some of this
+
+
+50
+00:09:44.313 --> 00:09:51.832
+Daniel: kind of pre processing code and work, and we'll have a lot of overlap with what you're actually gonna be deploying later on.
+
+
+51
+00:09:53.903 --> 00:09:59.732
+Daniel: and so jumping a little bit more into the kinds of data that you need for fine tuning.
+
+
+52
+00:09:59.983 --> 00:10:04.858
+Daniel: So I think in some of the earlier lessons. This was already discussed a little bit.
+
+
+53
+00:10:05.173 --> 00:10:08.022
+Daniel: but I think in terms of the the kind of
+
+
+54
+00:10:08.263 --> 00:10:15.183
+Daniel: I I guess the the question of like what needs to be in your data set. And I know that's a little bit vague. But I think
+
+
+55
+00:10:15.493 --> 00:10:17.092
+Daniel: one of the
+
+
+56
+00:10:17.243 --> 00:10:39.132
+Daniel: the kind of considerations which I think, is slightly different when you fine tuning for a more specific use cases. Being okay with the the kind of model losing certain abilities so often when you're kind of fine tuning chat models, which I think is what a lot of the literature ends up being about. You. Wanna make sure that you have a very diverse data set.
+
+
+57
+00:10:39.473 --> 00:11:04.892
+Daniel: and that it kind of captures all the things that users might discuss, but in practice quite often the the kind of scope of your problem or the application you're trying to develop is much more narrow. And then I think you don't have to worry about the diversity of the data in quite the same way. And you have to really think about diversity in terms of what your live language model is actually likely to get as input
+
+
+58
+00:11:07.973 --> 00:11:13.373
+Daniel: and I'll talk a little bit about these common data set genres. So
+
+
+59
+00:11:13.803 --> 00:11:28.602
+Daniel: unfortunately, it's a little bit the Wild West in terms of like the actual way in which data sets are structured. So there's a lot of variation in this. But often there's some kind of similarity. So for supervised fine tuning.
+
+
+60
+00:11:29.063 --> 00:11:47.512
+Daniel: you have this kind of question and answer response. And this probably sounds quite obvious, but I think for some of these fine tuning used cases. And also when you're thinking about reinforcement learning and some of those algorithms for a lot of people, I think they find it easier to understand. Okay.
+
+
+61
+00:11:47.513 --> 00:12:00.652
+Daniel: what does the data set for training using this particular algorithm look like? And then they can kind of map a little bit more high level. What the process actually looks like and possible ways that they could get
+
+
+62
+00:12:00.713 --> 00:12:04.792
+Daniel: to a data set that matches this kind of format.
+
+
+63
+00:12:06.793 --> 00:12:07.783
+Daniel: and
+
+
+64
+00:12:08.303 --> 00:12:13.463
+Daniel: so very kind of briefly, I won't talk about this reinforcement learning bit too much.
+
+
+65
+00:12:14.183 --> 00:12:25.662
+Daniel: But if you're kind of following this literature at all, there's a lot of algorithms being published. Some are kind of iterative improvements on existing ones, and some are quite different.
+
+
+66
+00:12:25.951 --> 00:12:47.283
+Daniel: But what I think seen over the last year or so is that a lot of these algorithms end up using very similar data set structures. So I think that's 1 of the kind of nice things in a way that a lot of the existing data sets can either be kind of lightly adopted or used as they are without having to to do a lot of work to to reformat things.
+
+
+67
+00:12:49.273 --> 00:12:58.553
+Daniel: so one example of this kind of algorithm that became very popular and it's been discussed earlier is this direct reference, optimization
+
+
+68
+00:12:58.603 --> 00:13:16.182
+Daniel: and and kind of go back to this idea of some people finding this kind of expression of algorithms, not that helpful? I think it can then be really useful to go back to? What does the model actually expect when it's being trained? Using this particular approach
+
+
+69
+00:13:16.653 --> 00:13:19.723
+Daniel: and this direct preference. Optimization.
+
+
+70
+00:13:19.773 --> 00:13:45.283
+Daniel: I think, is really nice, because it kind of maps quite well. To how you kind of want to nudge a model when you're doing fine tuning. So you have some input and that could be whatever your task is related to. It could be kind of natural language. It could be code. It could be a bunch of different things. And then, basically, you want to nudge your model more to this chosen and rejected
+
+
+71
+00:13:46.128 --> 00:13:58.413
+Daniel: and the reason I kinda mentioned this is, I think, one of the nice things seeing quite a lot in the past year or so since this algorithm became really popular is like really interesting creative ways for people
+
+
+72
+00:13:58.413 --> 00:14:23.402
+Daniel: to actually come up with. Where are these chosen and rejected? So one way you could do it obviously is to like manually write a good example. And then my bad example, that's really time consuming and tedious. So people have done other things. So, for example, with this chosen, if you already have some kind of ground, truth or gold standard that a human is generated often that can serve as a really good value for this chosen.
+
+
+73
+00:14:23.403 --> 00:14:36.633
+Daniel: And then, for example, generating this rejected response from a model that you've kind of evaluated that there's an okay job, but isn't quite there in terms of what you would like, the the response to look like
+
+
+74
+00:14:38.479 --> 00:14:45.633
+Daniel: and then the final kind of algorithm that I'll mention in terms of data sets is this Kto algorithm.
+
+
+75
+00:14:45.973 --> 00:14:55.942
+Daniel: And the nice thing about this is in contrast to Dpo, where you need this kind of 2 preference pairs of chosen rejected with Kto.
+
+
+76
+00:14:56.083 --> 00:15:14.103
+Daniel: you basically just have a response from the model. And then this binary preference. So basically a thumbs up or a thumbs down and that's something that can be quite easy to collect. So I think in general, people quite happy to say, I don't like this, or I do like this in an existing system.
+
+
+77
+00:15:14.398 --> 00:15:30.653
+Daniel: But again, you might also have other kind of creative ways in which you might intuitively based. Understand? Okay, well, this person like didn't click this link, or didn't do something else in the system. So probably that was a thumbs down. And they did do something. That kind of implies a thumbs up.
+
+
+78
+00:15:31.053 --> 00:15:42.772
+Daniel: So I think this could be a really useful process. Gathering data. If you already have something in the wild that can kind of be interacted with by some kind of end user.
+
+
+79
+00:15:44.677 --> 00:15:58.823
+Daniel: and then the final kind of one of these algorithms in terms of data set. So I'll mention, is spin and all. Po, so spin is a kind of iterative approach. So
+
+
+80
+00:15:59.193 --> 00:16:08.893
+Daniel: a lot of the the kind of approaches to doing this reinforcement learning had been focused on trying to reduce the amount of data you required, because that's kind of one of the big bottlenecks.
+
+
+81
+00:16:08.933 --> 00:16:26.113
+Daniel: And the idea with spin is that you basically go through these different stages with some starting data. And then you kind of synthetically generate new responses. And then kind of build a data set on top of that without actually having to have such a large data set. Initially.
+
+
+82
+00:16:26.693 --> 00:16:29.512
+Daniel: And this Orpo algorithm.
+
+
+83
+00:16:29.523 --> 00:16:32.913
+Daniel: again, is a little bit about efficiency.
+
+
+84
+00:16:33.283 --> 00:16:35.210
+Daniel: So the Orpo
+
+
+85
+00:16:36.053 --> 00:16:45.783
+Daniel: algorithm base expects the data to be in the same format as the Dpo. So you have this import. And then a response that's chosen. The response is rejected.
+
+
+86
+00:16:45.933 --> 00:16:51.354
+Daniel: But the difference here is that it doesn't rely on. You haven't done this self
+
+
+87
+00:16:51.863 --> 00:16:54.123
+Daniel: a supervised fine tuning step.
+
+
+88
+00:16:54.563 --> 00:17:05.333
+Daniel: So you can kind of more quickly go directly from a base model to actually doing this alignment without having to kind of train in 2 steps, which is often what you have to do with these other approaches.
+
+
+89
+00:17:05.793 --> 00:17:19.792
+Daniel: so that can be both nice in terms of not having to duplicate data for doing the the fine tuning part and then the preference part. But also it means that the actual model training is a little bit more lightweight because you're not to do that in 2 stages.
+
+
+90
+00:17:21.478 --> 00:17:26.902
+Daniel: And I'll hand over to David. Do you want me to hand over the slides to you as well.
+
+
+91
+00:17:27.093 --> 00:17:32.862
+David: Yeah, please. So I I believe you have to stop sharing for a while, and then I can.
+
+
+92
+00:17:39.693 --> 00:17:42.193
+David: I think you need to disable it in zoom itself.
+
+
+93
+00:17:46.533 --> 00:17:47.673
+David: Yeah, perfect.
+
+
+94
+00:17:49.193 --> 00:18:05.333
+David: So just to kind of get back to kind of what? What Daniel already highlighted is that in the end? Often you don't have a perfect data set. And eventually you actually want to work towards like the the perfect data set that you might have.
+
+
+95
+00:18:05.333 --> 00:18:29.492
+David: So that's a way to actually do that is through synthetic data and synthetic data is yeah, data that's generated by Lms, and that's commonly used for fine tuning lms. So you can actually start your synthetic data, for example, by generating prompts from scratch, by generating completions based on prompts. And normally, you basically prompt an Lm along with some initial contacts, for example.
+
+
+96
+00:18:29.493 --> 00:18:38.833
+David: and in order to also do rephrasing. And some of these algorithms that do rephrasing of phones to make them more higher quality or higher complexity, or
+
+
+97
+00:18:39.182 --> 00:18:53.873
+David: more nuance, so to say, in order to and ensure a higher quality. Prompt or completion are the evil complexity and the evil quality prompts. And then there's also this special kind of AI feedback or synthetic data. And that's actually judging
+
+
+98
+00:18:54.797 --> 00:19:17.453
+David: judging synthetic data. And that's to assign scores to prompts and completions or to do preference ranking, or to actually provide a rationale or critique along with your initial score. That kinda explains as to why it came up with, why, the model actually produced the the score. So we actually would use that from template prompting a model.
+
+
+99
+00:19:17.453 --> 00:19:32.893
+David: Okay, please provide a score for this. Prompt and do. Associated Response. And can you also provide a rationale along with that? And that would be kind of the prompts template. So to say, that's a people apply for for these kind of synthetic data
+
+
+100
+00:19:32.903 --> 00:19:33.793
+David: thinks
+
+
+101
+00:19:34.533 --> 00:19:50.413
+David: so. One of the earlier models that was actually generated trained on synthetic data was the alpaca Smb model. And what they did was actually prompt. The text of Inche model along with the self instruct research paper. So it was a prompt template that was actually
+
+
+102
+00:19:50.798 --> 00:20:08.922
+David: taking some seed instructions. So some initial seed data and actually was prompted to rewrite that seed data to. Yeah. Better instructions from other more diverse instructions. So they started up with 175 instructions, then eventually ended up with 52 1,000 instructions.
+
+
+103
+00:20:08.923 --> 00:20:15.153
+David: and actually, did supervise fine training along with the lama. 7 B model that Meta I initially released.
+
+
+104
+00:20:15.173 --> 00:20:37.552
+David: So that's I would say, amazing. You can actually use a Lem data to train on lamps. And then everything is solved. But as you might expect, that's not really the case. So if you actually look into their report about synthetic data, and how report about the synthetic data and the self-instruct, and how the model actually performed. You can see that there's a lot of hallucinations, toxicity, and stereotypes within the model
+
+
+105
+00:20:37.693 --> 00:20:47.872
+David: might be due to the fact that they actually used the Meta model, which ones, and trained optimally might be due to the fact that they actually use the Dex da Vinci model for open AI,
+
+
+106
+00:20:48.033 --> 00:21:13.282
+David: which might contain some bias. But in the end it yeah would have probably been better to actually look at the data and see what's in there. So one of the examples from from a completion. Is this like, what's the the optimal seat? Why, why is 42 the optimal seat and the model actually starts hallucinating. That's that. 42 is the optimal seat, and that's it can be used for for any neural network training.
+
+
+107
+00:21:14.043 --> 00:21:38.772
+David: So another example would be maybe using more complex pipelines, more more better models, better data. And that's actually what they tried to do for the ultra feedback paper where they initially sourced instructions. So a lot of both synthetic and human, generated instructions from an instruction pool and actually asked prompted different models to actually provides completions for each one of these instructions.
+
+
+108
+00:21:38.883 --> 00:22:00.023
+David: and each one of these completions was like actually judged by Gpd. 4, based on 4 different criteria. So instruction following fruitfulness, honesty, and helpfulness, and also one overall criteria just asking a prompting model whether overall the completion was correct according to the initial. Input
+
+
+109
+00:22:00.713 --> 00:22:29.802
+David: and as you I think good thing to take away is that whenever you you do this stretching, what you've seen is that each of these individual criteria when yeah, focusing on on instruction, following truthfulness, etc, core. Highly correlates on average, so to say, with one overall rating. So if you actually want to reduce some cost and reduce some compute you can also just apply one overall rating also, given the fact that you probably need some some human involvement at at the end.
+
+
+110
+00:22:31.423 --> 00:22:51.356
+David: So also, this didn't turn out to work. So when we actually started uploading this data in our Ui, and actually looking at the data by by, yeah, human judgment. We actually saw that some data was sourced from benchmarks, that there was like this weird thing happening where
+
+
+111
+00:22:51.733 --> 00:23:17.163
+David: there were some phones that completely some responses that completely didn't make sense and still ended up getting a very high score. And we kinda investigated that and investigated that and looked into the code, and it was apparently up coding error leading the for the scores to be converted from a 1 to attend. So all of these scores that were actually attend could have been been a 1. So that kind of messed up, the entire data set.
+
+
+112
+00:23:17.163 --> 00:23:30.613
+David: There was like incomplete ratings due to the fact that open AI Api calls filled. And there were some ties in the data that we're still being processed as chosen and rejected pairs, even though if the same
+
+
+113
+00:23:30.713 --> 00:23:39.543
+David: response, if the responses would get the same rating, you wouldn't expect them to have one preference over another, because they would be in a tie.
+
+
+114
+00:23:39.833 --> 00:23:41.572
+David: And that's actually what we
+
+
+115
+00:23:41.593 --> 00:24:01.353
+David: kinda also show that whenever you spend some time, look at your data get involved and work towards your higher quality data set that you can actually train a better model. And initially, the the hugging phase team. Approve, published the alignment Handbook, saying, It's this awesome zephyr model, and made the entire research reproducible.
+
+
+116
+00:24:01.353 --> 00:24:16.143
+David: And then we did that exact product reproduction. But then, instead, we use the the cleaned ultra feedback data set, and that actually led to a model that perform better on the benchmarks and also in intuitively putting to human judgement perform. Better.
+
+
+117
+00:24:17.803 --> 00:24:46.412
+David: So then, apparently, you need yeah, better data or better synthetic data. But whenever you actually want to work towards that, you, there's a lot of things that's that come to mind. So initially, you can kinda start spamming Chat Gbt with random request. But if you actually want to scale that or make it more cost efficient. Want to avoid fender lock in licenses, that you might not be able to be allowed to use all of the different models for at least generating synthetic data to find your models
+
+
+118
+00:24:46.774 --> 00:25:00.133
+David: some fault tolerance that might arise, as you have seen in the ultra feedback data set and things like like structural generation where you might want to just output Jason output responses in adjacent format.
+
+
+119
+00:25:00.193 --> 00:25:20.813
+David: So overall, there's just a lot of complexity involved and actually starting to do this. And yeah, I've chosen a set of tools that you might kinda look into whenever you start working with your own synthetic data. And one of them is the the outlines package for structured text generation. And this can actually produce like structured text generation based on
+
+
+120
+00:25:21.173 --> 00:25:40.082
+David: like a prompt for Lms based on ragged rag. X Jason pidic models that everyone loves and and uses and also actually functions to to be able to do function calling. And this actually relies on the modified by modifying the sampling of tokens. And yeah, this is a very
+
+
+121
+00:25:40.433 --> 00:25:57.953
+David: accurate and approach to actually take. And it actually also reduces the the inference time due to the fact that there's a limited number of tokens that you can actually sample from. And one of the interesting blockbusts from from having phase actually dives a bit deeper into this topic.
+
+
+122
+00:25:59.033 --> 00:26:19.762
+David: Another package is Dsp, that's probably, or everyone is familiar in with but it's focus on programming, not prompting, so to say. And this actually did let you define a piece by signature that you use for actually calling, and Lm, where you kind of program the expectations that you might have for for your model.
+
+
+123
+00:26:19.763 --> 00:26:38.032
+David: And then, whenever you kind of optimize this for for your specific use case, the package underneath tries to optimize the the prompt and optimize or fine tune, the model weight slightly, so that then eventually you end up with a higher or more accurate prediction.
+
+
+124
+00:26:38.253 --> 00:26:57.672
+David: And one thing that's Hamil actually showed in one of his blog posts. Is that yeah. Under the hood, the the model, or the the these 5 packets actually makes hundreds of calls to the to the Openai Api when it tries to optimize these prompts due to the fact that it's gathering good feels for
+
+
+125
+00:26:58.268 --> 00:27:08.332
+David: for your use case. And that actually is quite, quite costly. And yeah, it's an interesting block pause where Hamil kind of goes over some of these tools as well. So recommending that, too.
+
+
+126
+00:27:09.913 --> 00:27:25.392
+David: And the last one is DC label. And it's a synthetic data framework for synthetic data generation. And AI AI feedback. And it relies on like a the desk directly graph structure. And it's more of a pipelining framework where we kinda
+
+
+127
+00:27:25.939 --> 00:27:39.583
+David: worked on serializable pipelines cast into media results and actually included structure generation as well based on the outlines, package, and everything is execute executable in parallel. So yeah, whenever you
+
+
+128
+00:27:39.662 --> 00:28:06.003
+David: really want to scale this up, then you you can actually do that. And it's kind of like application developments like the things like lama index or or deep set, or some of these these tools, but then really focus on on the data set engineer. And one of the interesting things that I've seen come by recently was also the this blog post about the rise of the data set engineer. So not really having AI engineers or these kinda
+
+
+129
+00:28:06.356 --> 00:28:12.422
+David: people anymore. But really, people that focus on data and data quality. And it's an interesting read as well.
+
+
+130
+00:28:14.073 --> 00:28:17.552
+David: So when it for you're working on improving your data.
+
+
+131
+00:28:17.613 --> 00:28:39.312
+David: you. It's like a iterative process where you have your original data set and you add some things to assess diversity. The data set quantity. There's a quality you do deep duplication filtering, and these kind of things, and you throw some like human feedback, but also AI feedback in the mix to to make it like more and more intuitive, not more smart.
+
+
+132
+00:28:40.943 --> 00:29:06.923
+David: So what you can actually ensure, or what you can think of for improving your data set quality is that there's enough quality, but enough quantity, but more more isn't always better. So it's also fine to throw away data that's maybe very present within your data set that you might be able to deduplicate or also reduce the simply reduce to lesser quality examples within your your data set.
+
+
+133
+00:29:06.923 --> 00:29:30.602
+David: So one example, what the some examples that we've gathered from actual public reproductions of these initial functioning techniques that Daniel highlighted earlier is that for for Sfd, we've seen great results according to benchmarks with 10 K input samples for our Po, 7 K, dpo, 3 K and spin as low as 2 K data examples.
+
+
+134
+00:29:30.613 --> 00:29:45.803
+David: So apparently with with a lot less data. And then a lot of models are being fine shoot. You can actually do a pretty good job at at achieving high benchmark standards, but probably also to to actually have some good human
+
+
+135
+00:29:46.273 --> 00:29:47.623
+David: intuitive models.
+
+
+136
+00:29:49.013 --> 00:29:57.373
+David: And whenever you do think about data duplication there's a lot of research being done in in duplication. But often the
+
+
+137
+00:29:57.383 --> 00:30:18.512
+David: duplication pipelines aren't very deduplication pipelines aren't very reproducible and not very well documented. But yeah, as we've seen what a fine rep data set that's recently been published by by hugging phase, they actually published the entire pipeline and made it publicly available to their data. 12. Library.
+
+
+138
+00:30:18.513 --> 00:30:40.073
+David: And what you can think about when actually doing the duplication is applying intuitive rules like applying existing metadata, that you might might use for filtering your data for filtering out some irrelevant examples, for I don't know doing something like a topic. Topic, wise deduplication where you might want to most representative examples per topic.
+
+
+139
+00:30:40.433 --> 00:30:50.693
+David: You can also think about creating your own custom metadata, or your own custom features and doing like intuitive similar things, like hashing of of the strings.
+
+
+140
+00:30:50.693 --> 00:31:02.573
+David: or doing like filtering, based on embedding similarity, and then actually grabbing the exemplars from from like the the embedded data points that are most representative for your data.
+
+
+141
+00:31:04.183 --> 00:31:26.602
+David: When you're doing Google based data can be, yes, rule based cleaning of your data can be as simple as just writing a Reckx query. So, for example, querying as a large language model, if you don't want that to have that in your data sets. Normally, some some models used to respond like this or using the word delf, or using like these quotation marks that
+
+
+142
+00:31:26.957 --> 00:31:37.583
+David: might indicate that the model is going to kind of hallucinate random references, some random Urls that you might want to at least change within your data set.
+
+
+143
+00:31:37.583 --> 00:31:47.963
+David: And all of these things are like very intuitive human understandable rules that you can can apply to in order your to in order to improve your data, set quality.
+
+
+144
+00:31:50.443 --> 00:32:00.663
+David: And on top of that, what you can also do is, yeah, apply these more advanced techniques, or more advanced classifications or embeddings, or these kind of things
+
+
+145
+00:32:00.673 --> 00:32:22.233
+David: where you quite easily can Yup get a 0 shot model out of out of having phase that's performing quite well and decide some topics that you deem relevant for for your data set and actually start predicting making initial predictions for these topics and actually use that as some some initial ways to to filter your data as well.
+
+
+146
+00:32:22.263 --> 00:32:45.763
+David: And these classifiers can also be very, very cheap. So it's you. You can actually use one of the serial shop models. You can use a set fit model after annotating only a couple of examples. And if you actually want to go more expensive you can. Yeah, look at Lms as judges, juries, or or rationalizers, where you also have this rationale, like the explanation as to why this, this would they provide this core.
+
+
+147
+00:32:45.763 --> 00:33:00.373
+David: and if you want to go a bit bit more simple and a bit more intuitive and explainable, then something like the text descriptives, like the the package by provides the URL can be provide a very easy out of the box analysis of your of your data
+
+
+148
+00:33:01.843 --> 00:33:06.243
+David: and all of these methods that we actually that I went over
+
+
+149
+00:33:06.513 --> 00:33:09.233
+David: can are actually intended to be used
+
+
+150
+00:33:09.683 --> 00:33:22.412
+David: according to to our vision, our view along with human annotation. And this really helps normally to to make human annotation more fun, more engaging, and and also more more effective.
+
+
+151
+00:33:23.483 --> 00:33:35.163
+David: So that's kind of where you want to be. So maybe somewhere in the middle, where you can either choose for a very basic, simple, intuitive approach to using Google sheets
+
+
+152
+00:33:35.163 --> 00:33:53.813
+David: or like a completely customized approach that really works for you, but for I would say, for for a lot of the people, something in between where you might use like some some already out of the box tools or web apps really works and and really differs per person. What you what you want and what you prefer.
+
+
+153
+00:33:56.603 --> 00:34:21.312
+David: So one of the custom tools that I've seen combined to kind of play around with your data and kinda see what's what's in your data system bulk annotation from from kin, said warmer, dumb, and it's like a custom tool that he built with bulky and and pandas, and some javascript to tie everything together where you embed all of your text, and you can kinda explore and kind of play play around with it.
+
+
+154
+00:34:21.313 --> 00:34:30.162
+David: So this is yeah what it what it looks like. You can do like this less. So movement. Kinda see what's within that specific cluster and then move from from there to kinda
+
+
+155
+00:34:30.955 --> 00:34:34.413
+David: annotating and actually saving your your initial results.
+
+
+156
+00:34:34.833 --> 00:34:41.912
+Hamel Husain: Oh, Michael, I have a question about this. I saw this, too, and I thought it was pretty cool. Does our Gila have something like this specific
+
+
+157
+00:34:42.383 --> 00:34:43.113
+Hamel Husain: melody.
+
+
+158
+00:34:43.513 --> 00:34:49.193
+David: Yeah, we we actually have something like this where you might be able to attach factors to your records.
+
+
+159
+00:34:49.517 --> 00:34:58.963
+David: And you can do semantic search. But we don't have this interactive kinda annotation thing. It's a thing that we've considered. I believe snorkel has something similar to it.
+
+
+160
+00:34:59.427 --> 00:35:02.612
+David: But we've not gotten around to actually implementing this
+
+
+161
+00:35:04.342 --> 00:35:30.803
+David: an alternative that you might consider is like using something like a notebooks where you use notebooks to initially annotate your your data, and I think everything in terms of notebook annotation, was our request from from hamil to kind of highlight. This is, like, based on ipy annotations. And then from that there's a lot of Franches kinda looking roughly the same and giving the same overview. But this is also fully customizable. Where, after
+
+
+162
+00:35:30.803 --> 00:35:45.465
+David: you've filled out one annotation, you can actually do some callbacks and actually do some post processing. So you might be be able to do some active learning, and actually start gathering data for fine tuning set with classifier on the fly, so to say, and then run inference
+
+
+163
+00:35:46.374 --> 00:35:48.963
+David: With that with that classification model.
+
+
+164
+00:35:49.723 --> 00:35:53.295
+David: Another thing that's kinda like it's a little bit more
+
+
+165
+00:35:54.503 --> 00:36:21.973
+David: out of the box is like creating wrap apps with with radio, with streamlit, with with shiny, with our shiny. And you can actually use, like all of their components and tools, to directly out of a box have a very intuitive basic ui and this can also be fully customized normally. So, this is one ui of the the hackathon that someone created that we normally host together with hugging phase. And this is the the input text, where
+
+
+166
+00:36:22.313 --> 00:36:45.502
+David: after that, someone is able to kinda correct or say, okay, this is a right translation, or one translation can also be used, for, like the Kto example that Daniel mentioned earlier, where you might give out thumbs up thumbs down and kind of go through your records one by one, and this is once again like a nice, nice example. But with radios, team net and shiny. You can really customize everything as as far as you might want to do that.
+
+
+167
+00:36:46.733 --> 00:36:57.313
+David: And if you actually want something a bit more out of the box. There's also you have these fully fledged, cool solutions with a lot of integrated features. One of them is lilac
+
+
+168
+00:36:57.313 --> 00:37:17.892
+David: and lilac. Kinda has this data set overview thing where, whenever you select the data set, you can actually select different topics. And you can actually see some of the the main clusters within within your data, and that's a pretty pretty cool. And on top of that they they also have this semantic search feature that I previously mentioned.
+
+
+169
+00:37:18.303 --> 00:37:19.343
+David: and on top of that.
+
+
+170
+00:37:19.343 --> 00:37:25.972
+Hamel Husain: I'm curious about a lilac. By the way, do you recommend using our Gila with lilac? For, like the different features, we using them concurrently.
+
+
+171
+00:37:25.973 --> 00:37:26.372
+David: What was like.
+
+
+172
+00:37:26.373 --> 00:37:28.953
+Hamel Husain: Like the stack that you like. Personally.
+
+
+173
+00:37:28.953 --> 00:37:44.223
+David: For for me. It's kind of the a bit a bit of a mix of both. I I think it really depends on what you prefer, what you like. I find the lilac a y ui a bit less in intuitive personally. For example, for
+
+
+174
+00:37:45.223 --> 00:37:57.483
+David: we we didn't. We're done in our there's less, I think, features included, and the ux ui is is a bit more intuitive for me. Things like like spacey explosion I played played around with
+
+
+175
+00:37:57.761 --> 00:38:17.233
+David: but it really depends on on what you want. Probably if you, as a as A AI engineer, look at the Api that we have, or the SDK that we have compared to the one with lilac. If you, as a domain expert or labeler kind of go into into lilac and find their features and and ui ux better then. Yeah, then go for that. But I I think
+
+
+176
+00:38:17.233 --> 00:38:24.433
+David: it's the the same tool, and how the covering the same topic, having a lot of the the same or similar features.
+
+
+177
+00:38:24.866 --> 00:38:28.942
+David: And for me, it really depends on on that kind of thing.
+
+
+178
+00:38:29.943 --> 00:38:34.063
+Hamel Husain: Do, Daniel, do you have a do you have a opinion, or do you have a stack that you like.
+
+
+179
+00:38:34.543 --> 00:38:55.222
+Daniel: Yeah, I mean, I think one thing is like, at what point in your kind of process, you're trying to look at your data. So I think this is like initial kind of vibes check where you're trying to look at quite a lot of data right quickly, and maybe looking at a few examples carefully, but not necessary, like actually fixing things yet. So I think it's good to kind of separate
+
+
+180
+00:38:55.223 --> 00:39:07.212
+Daniel: the the kind of annotation mindset from the like. I'm trying to just understand this data overall. And I think for that lilac can be quite nice because you have these different kind of visualizations. And I think
+
+
+181
+00:39:07.453 --> 00:39:36.383
+Daniel: the other thing that's like super crude. But if you can get your data into some kind of data frame, even in Google colab and compute some features like string, length and token counts, and very like basic, crude features. It gives you these plot suggestions which are actually like sometimes, okay. And it's just like a really lazy way of being like, Hey, there's like this one really random, outlier so it's a little bit crude. But I think it can be quite quick way of finding like where something's going wrong.
+
+
+182
+00:39:36.493 --> 00:39:43.673
+Daniel: And then I think, after that kind of trying to dive in a little bit more detail and actually poke around the individual responses.
+
+
+183
+00:39:44.243 --> 00:39:44.873
+David: Yep.
+
+
+184
+00:39:45.013 --> 00:40:02.023
+David: And I think, with the the nice thing from from lilac already more full flex tools is that? Yeah, you don't need to think about what you want, so to say. So of course they they have a lot of these highly opinionated features building and based on that. You.
+
+
+185
+00:40:02.433 --> 00:40:24.893
+David: I I think a lot of people will get away with having, like some nice out of the box toolkits. There's, of course, always people that are going to want to have some some custom thing built on on top of some some custom features. And then I think it's if you really value that, and it's also worth spending time on that and actually building some of these custom tools or some of these custom annotation flows
+
+
+186
+00:40:25.793 --> 00:40:30.093
+David: out of the box. I think both Lilac and and Arjella are open source as well.
+
+
+187
+00:40:31.238 --> 00:40:31.933
+David: Yep.
+
+
+188
+00:40:32.983 --> 00:40:33.783
+David: So
+
+
+189
+00:40:33.973 --> 00:40:45.512
+David: this was to the the other example that that I had Arjela same kinda idea having a data set overview. You can log in and play with a demo as as with with lilac.
+
+
+190
+00:40:45.513 --> 00:41:10.012
+David: And also you have this like semantic search kind of thing. You have your like content that you might load into your ui, and you can actually start annotating and doing bulk annotation. And all of these these kind of things. So it's same same. But difference don't. I have a preference with for Jill, of course, and I'm more familiar with that. But I guess for for everyone it's to them to decide which which ui and kinda Api and workflows. They they prefer.
+
+
+191
+00:41:11.861 --> 00:41:16.043
+David: Yeah. So maybe I'll hand it over to Danielle again.
+
+
+192
+00:41:18.663 --> 00:41:19.933
+David: Stop sharing.
+
+
+193
+00:41:32.753 --> 00:41:34.283
+Daniel: Okay, can you see that?
+
+
+194
+00:41:34.373 --> 00:41:35.473
+Daniel: Yeah, perfect.
+
+
+195
+00:41:36.423 --> 00:41:45.153
+Daniel: And so I'm just gonna talk through some example date sets. And this might seem a little bit weird like, why, I'm talking about these very particular date sets, but
+
+
+196
+00:41:45.153 --> 00:42:06.712
+Daniel: as you think, you can sometimes learn very little, but sometimes learn a lot from looking at some examples of dates as people in the community have built particularly for like approaches to generating these dates sets in kind of created ways that doesn't just rely on either throw notes of Api credits at the problem or loads of human effort.
+
+
+197
+00:42:07.793 --> 00:42:13.653
+Daniel: so I think that's also goes back to this thing I was saying earlier about Dpi sets.
+
+
+198
+00:42:14.043 --> 00:42:26.263
+Daniel: why they became so kind of popular in the communities, because this idea of generating a chosen and rejected pair can be done in like a lot of creative ways. So there's an example here of this dates that
+
+
+199
+00:42:26.613 --> 00:42:48.695
+Daniel: it's trying to make models large language models better. Writing. And the approach they take is basically to to kind of take some existing books, written by humans and then prompt a large language model to summarize those and then prompt another model to rewrite, based on that summary. So you know, write
+
+
+200
+00:42:49.163 --> 00:42:55.480
+Daniel: a novel or chapter novel based on this kind of summary, and then they choose the the kind of
+
+
+201
+00:42:55.983 --> 00:43:03.302
+Daniel: the original human generated response. As the the chosen the model generated response is rejected.
+
+
+202
+00:43:03.923 --> 00:43:15.353
+Daniel: so that might not apply to your used case. But I think it's an example of like how you can get out these things without having to to just rely on either human data or or model data.
+
+
+203
+00:43:17.813 --> 00:43:21.873
+Daniel: here's another example. So this one is actually kind of
+
+
+204
+00:43:22.683 --> 00:43:27.762
+Daniel: vision model but it has a kind of similar
+
+
+205
+00:43:27.963 --> 00:43:38.902
+Daniel: interest in that. It's focusing on kind of actually generating this data flywheel. So trying to get this thumbs up thumbs down. So I mean, it really depends.
+
+
+206
+00:43:39.413 --> 00:43:50.222
+Daniel: what kind of context you're working in. But I think getting these thumbs up, thumbs down. Ratings can be quite useful, and the other thing that I found from doing a lot of annotation.
+
+
+207
+00:43:50.493 --> 00:44:01.003
+Daniel: So I think it's worth thinking a little bit about the the kind of ergonomics. So not just of the tool. But also what is the task that you're actually trying to do when you're annotating?
+
+
+208
+00:44:01.363 --> 00:44:07.485
+Daniel: And how does that work better. So for these kind of preference data sets
+
+
+209
+00:44:07.923 --> 00:44:35.913
+Daniel: depending on what you're trying to do. Sometimes it can be really easy to say, that's a good response. So that's a bad response. Other times it's really helpful to have like these 2 generations next to each other and say, Okay, this one is better than this one, because, like, without having a comparison it's quite difficult to actually say which model responses better. So, I think when you're doing this human annotation. I would give like quite a lot of thought to those kind of questions which I think people kind of
+
+
+210
+00:44:35.913 --> 00:44:40.196
+Daniel: don't really think about that much, but I think you can actually
+
+
+211
+00:44:40.843 --> 00:44:56.993
+Daniel: yeah, I think it could be quite important for both your experience of doing the annotation, and how pleasant and easy you find it, but I also have no evidence for this, but I suspect it actually influences the results of the annotations. You get quite a bit depending on how you set up the task. So I think it's worth giving a bit of thought.
+
+
+212
+00:44:59.273 --> 00:45:09.648
+Daniel: and I think what maybe we'll do is just give like a very high level overview of this kind of project. So I'm actually working on for this course. So that is
+
+
+213
+00:45:10.343 --> 00:45:34.342
+Daniel: basically trying to build a large language model summarizer, and hopefully a small large language model summarizes. It can actually be deployed easily. Then we'll take a date set card for dates that hosted on the hub and turn this kind of long mark down into a too long. Didn't read Summary, that you can kind of very quickly look at and be like, what is this date set about? What is it for?
+
+
+214
+00:45:35.573 --> 00:45:44.502
+Daniel: this is just like a very kind of high level overview of the steps that I kind of taken to to kind of create that data set. So you have.
+
+
+215
+00:45:44.873 --> 00:46:03.565
+Daniel: as I kind of mentioned the start bunch of processing that you do with the Markdown, and that will also be processing that you'll carry over to the actual deployment. So in the Markdown you have a lot of stuff that you probably don't want to even pass to a large language model, because it's just like formatting or contents. It's not very informative.
+
+
+216
+00:46:04.373 --> 00:46:07.163
+Daniel: you might want to move some of this yaml.
+
+
+217
+00:46:07.693 --> 00:46:16.054
+Daniel: and then you kind of get this summary. And then, in in this particular case, like the approach I'm trying to take is to build this preference data set.
+
+
+218
+00:46:16.553 --> 00:46:23.522
+Daniel: and there's different ways of approaching this. But this is what I'm kind of using this distillable pipeline for.
+
+
+219
+00:46:25.233 --> 00:46:41.832
+Daniel: and this kind of looks a little bit crazy. But I guess the the overall workflow, which is actually not that difficult to define is that you load this data set that has a bunch of these data, set cards and you do this kind of initial filtering. You format this prompt.
+
+
+220
+00:46:42.543 --> 00:46:43.663
+Daniel: And then
+
+
+221
+00:46:43.683 --> 00:47:00.272
+Daniel: in this case I'm trying to use open model. So kind of compare these 3 different summaries and then use ultra feedback, which is a kind of approach to doing this language model judging. And in this case I'm using Lama 3 for that.
+
+
+222
+00:47:01.163 --> 00:47:24.402
+Daniel: And I guess the the kind of thing want to say about this pipeline? I think with synthetic data generation, it really depends on what you're trying to do sometimes, just like having a prompt and a bunch of inputs. And being like, right, just call that Api budget. Time with this prompt will work well. And sometimes this kind of more complicated pipeline can work better. But the thing I found quite nice about this is that
+
+
+223
+00:47:24.703 --> 00:47:37.953
+Daniel: at each of the kind of steps you kind of maybe increase in number of responses you're generating. So maybe initially, when you're comparing these different models, you kind of do like a hundred or something, and just kind of
+
+
+224
+00:47:38.073 --> 00:47:50.793
+Daniel: very quickly start looking through the responses. And I guess at that point what you're thinking about, which is kind of similar to this point that you often do when you're kind of thinking about using prompting versus fine tuning is being
+
+
+225
+00:47:50.983 --> 00:48:03.293
+Daniel: questioning about. Okay, can I just improve this via the prompt? So you might already done a little bit playing around. But when you kind of get a few more responses, you think, is there something that I'm getting in the response that could just be fixing. This prompts that.
+
+
+226
+00:48:03.683 --> 00:48:23.833
+Daniel: And you kind of iterate on this pipeline. But each of these steps might actually remain each. That's the kind of work flow might remain quite static. But you kind of fiddling around with each of these steps. And the other thing that I will say in this kind of particular pipeline. I'm sending all of these responses to our Gilla so you kind of
+
+
+227
+00:48:23.883 --> 00:48:28.753
+Daniel: looking at 2 things when you're doing that. So you're looking at the model responses
+
+
+228
+00:48:29.333 --> 00:48:48.252
+Daniel: and seeing how they look. But the other thing that I'm trying to look at when I'm kind of building. This pipeline is this lm, judge part, because I'm basically assuming with this workflow that this judge is actually gonna be able to detect which summaries I'm gonna like better.
+
+
+229
+00:48:48.283 --> 00:48:54.492
+Daniel: So one of the things that I kind of do, and that there's a kind of notebook in a github that I'll share afterwards, but
+
+
+230
+00:48:54.563 --> 00:49:16.475
+Daniel: basically write a bunch of examples, and then look at the ratings that the model gives, and whether there's some like average better rating, but also like, how often do I change the rating from the model? And like, how big is that difference? Maybe if it's like only one score different, and that's not so bad. But if it's consistently getting bad ratings,
+
+
+231
+00:49:16.813 --> 00:49:24.872
+Daniel: then that's maybe something to worry about in terms of whether it's reflecting what I want the L. Them to do
+
+
+232
+00:49:25.390 --> 00:49:28.552
+Daniel: and the other thing I would say about this part, and
+
+
+233
+00:49:28.863 --> 00:49:40.442
+Daniel: I'm probably a little bit overly obsessed with this idea, but I think when you're looking at these ratings and the responses like thinking about heuristics that you can use to to kind of capture.
+
+
+234
+00:49:40.443 --> 00:50:04.203
+Daniel: Is this response, good or bad, like. Maybe it's too complicated to to judge far a simple rule, but quite often there might be patterns you start to see. So once you have like even a hundred ratings, or maybe even like 20, you can start being like, okay, do I always prefer the one that's shorter or the one that's longer. Or was it like random? Because if it's just always a shorter one, then maybe you can already say
+
+
+235
+00:50:04.313 --> 00:50:13.793
+Daniel: I just need to like cap the the kind of maximum tokens, or do something a little bit more manual. Or I could just basically say, all the short responses are always better.
+
+
+236
+00:50:14.053 --> 00:50:30.162
+Daniel: and then skip this kind of Lm, judge, part because this is the kind of expensive part, but it's also like slightly brittle, because you in this case, like, put quite a lot of faith, as you kind of scale this in this consistently working well. And if you can use some of these simple rules.
+
+
+237
+00:50:30.613 --> 00:50:38.982
+Daniel: either instead of or as well as the the kind of judge to check. Okay, is this continuing to work? Well, I think that could be quite useful.
+
+
+238
+00:50:43.243 --> 00:50:46.781
+Daniel: So because we're running our time, I thought, I just quickly
+
+
+239
+00:50:47.993 --> 00:50:50.513
+Daniel: talk through this repo that we created. So
+
+
+240
+00:50:50.903 --> 00:51:00.962
+Daniel: there's some notebooks in here that kind of give some examples of like different approaches to de duplication. How to kind of do these these kind of database checks?
+
+
+241
+00:51:01.561 --> 00:51:07.413
+Daniel: And then an example of using distillable to generate. One of these synthetic pipelines.
+
+
+242
+00:51:07.863 --> 00:51:23.813
+Daniel: And the other thing which I have to admit is a work in progress is try to basically pull all the work I'm doing for this particular project in here. I'm not saying that's necessarily like a good example of what to do. But I will at least try and share openly and kind of communicate what I'm what I'm trying to do there.
+
+
+243
+00:51:25.793 --> 00:51:31.733
+Daniel: And then, yeah, maybe just quickly point to these other resources that we have here.
+
+
+244
+00:51:32.641 --> 00:51:53.393
+Daniel: So one thing just wanted to mention is that with the the course credits that you have from hugging face, you can use that for spaces, but you can also use it. For inference endpoints. So I think between all the course credits you could actually generate quite a lot of synthetic data. And I think quite interesting to see kind of what people can come up with that.
+
+
+245
+00:51:53.948 --> 00:52:15.822
+Daniel: And then, yeah, beyond the the kind of notebooks for this session is also a few other resources here that might be interesting, including this blog post, about find what? Which talks a little bit about their approach to d duplication, and it is kind of for a slightly different use case. But I think there's some kind of nice lessons in there that might still be kind of relevant. The.
+
+
+246
+00:52:15.973 --> 00:52:30.613
+Daniel: you know, doing like a really aggressive D duplication doesn't always work better. And there's these kind of subtle heuristics which, unfortunately, like often, you have to actually train a model to see what the impact is. But if someone else has done that. That's quite useful to to see if there's something you can pick up there.
+
+
+247
+00:52:34.653 --> 00:52:36.463
+Daniel: So yeah, I think maybe probably.
+
+
+248
+00:52:36.463 --> 00:52:37.652
+Hamel Husain: Go ahead and go ahead. Sorry.
+
+
+249
+00:52:38.143 --> 00:52:40.333
+Daniel: So sorry. I was just rambling to a close.
+
+
+250
+00:52:40.883 --> 00:52:44.303
+Hamel Husain: No worries. We have about 2 min left.
+
+
+251
+00:52:44.643 --> 00:52:50.549
+Hamel Husain: There isn't too much time for questions, but I'll just throw one out there.
+
+
+252
+00:52:52.168 --> 00:53:01.682
+Hamel Husain: I mean, I've asked, how would you recommend generating a synthetic generating synthetic data if we're fine-tuning on proprietary data sets and human annotation is expensive.
+
+
+253
+00:53:05.193 --> 00:53:11.982
+David: Proprietary data sets that someone else creates like a vendor of of some sort or.
+
+
+254
+00:53:14.553 --> 00:53:18.453
+Hamel Husain: Yeah, I mean, I don't really know what he means. But maybe it's
+
+
+255
+00:53:18.563 --> 00:53:23.072
+Hamel Husain: yeah like fine tuning on. I don't even know if the word proprietary really.
+
+
+256
+00:53:23.423 --> 00:53:23.783
+David: Yes.
+
+
+257
+00:53:23.783 --> 00:53:27.173
+Hamel Husain: I mean, just like your own company's date, just like, let's go that way.
+
+
+258
+00:53:27.173 --> 00:53:33.772
+David: So I I guess it. Kinda it's kinda the same as whenever you would lose use of functional model
+
+
+259
+00:53:33.783 --> 00:53:38.103
+David: for this fine tuning offer for us using our proprietary model.
+
+
+260
+00:53:38.433 --> 00:53:53.502
+David: It's yeah about data ownership, part privacy about the fact. If you value value these kind of things in your company, if you need these things in your company, and if you really want to be the owner of your your data and your model
+
+
+261
+00:53:53.909 --> 00:54:03.092
+David: and that those are, I think, the the main takeaways for for this kinda gonna trade off both for models without, but also for your for your data.
+
+
+262
+00:54:05.183 --> 00:54:06.223
+Hamel Husain: Sounds good.
+
+
+263
+00:54:07.833 --> 00:54:15.293
+Hamel Husain: We can probably take the rest of the questions to the discord. Maybe y'all, if if you want, if you David and Daniel. If you have time.
+
+
+264
+00:54:15.823 --> 00:54:16.393
+David: To make sure that.
+
+
+265
+00:54:16.393 --> 00:54:22.653
+Hamel Husain: No one to peruse it. There's a channel dedicated specifically to the stock where people are in.
+
+
+266
+00:54:23.023 --> 00:54:24.803
+Hamel Husain: But yeah, thanks a lot.
+
+
+267
+00:54:25.323 --> 00:54:25.943
+Daniel: Yeah.
+
+
+268
+00:54:25.943 --> 00:54:26.903
+Hamel Husain: Very good. Talk.
+
+
+269
+00:54:27.583 --> 00:54:43.512
+Daniel: And and just to say, also, like, I'm like, overly excited about people building data set. So like, I'm happy to try and help out like. I might not have the answer. But I'm happy to like brainstorm with people if they're interested in building a date set as part of this and sharing it. Then definitely try and give them a hand with that.
+
+
+270
+00:54:43.803 --> 00:54:44.483
+Daniel: Yep.
+
+
+271
+00:54:47.303 --> 00:54:47.973
+Hamel Husain: Great.
+
+
+272
+00:54:49.203 --> 00:54:50.483
+Hamel Husain: Alright! Thanks a lot.
+
+
+273
+00:54:50.973 --> 00:54:51.593
+Daniel: Right. Thanks. Tom.
+
+
+274
+00:54:51.593 --> 00:54:52.213
+David: Nice
+
+
+275
+00:54:52.453 --> 00:54:53.433
+David: bite.

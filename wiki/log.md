@@ -1,3 +1,11 @@
+## [2026-06-15 23:00] manual — Transcript Ingestion: Getting the Most Out of Your LLM Experiments (Thomas Capelle)
+
+- **Created**: [[transcripts/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments-lecture]] — Full lecture transcript (48 min). Thomas Capelle (W&B) demonstrates experiment tracking for fine-tuning, debugging training spikes, Mistral 7B ablation study, loss proxy limitations, W&B Weave LLM tracing demo.
+- **Created**: [[raw/articles/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments]] — Companion summary article.
+- **Created**: [[entities/thomas-capelle]] — Entity page. ML Engineer at W&B, fine-tuning specialist, axolotl/torchtune integrations contributor.
+- **Updated**: [[index.md]] — Added 3 entries. Transcript count: 34→35. Entity count: 791→792.
+- **Source**: User-provided WEBVTT files (2 versions: speaker-labeled + subtitle).
+
 ## [2026-06-15 21:00] manual — Transcript Ingestion: Inspect AI Eval Framework (JJ Allaire)
 
 - **Created**: [[transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework]] — Full lecture transcript (48 min). JJ Allaire presents Inspect AI at Hamel Husain's AI Evals course. Dataset/Solver/Scorer architecture, Honeycomb eval walkthrough, critique scoring, tool use, agent eval, LangChain integration.
