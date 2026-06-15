@@ -74,6 +74,6 @@ Demonstrated W&B Weave (LLM tracing tool) by building an evaluation pipeline for
 ## Related
 
 - [[entities/hamel-husain|Hamel Husain]] — workshop host
-- [[concepts/post-training/_index|Post-Training]] — fine-tuning techniques
+- [[entities/weights-and-biases|Weights & Biases]] — employer
 - [[transcripts/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments-lecture|Lecture Transcript: Getting the Most Out of Your LLM Experiments]]
 - [[raw/articles/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments|Summary Article]]

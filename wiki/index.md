@@ -679,9 +679,11 @@
 - [[entities/vtrivedy10]] — Varun 'Viv' Trivedy (@vtrivedy10) — LangChain agent harness lead, DeepAgents maintainer. PhD CS (Temple), ex-AWS Scientist. Terminal Bench 2.0: Top 30→Top 5 via harness-only changes. Author of "The Anatomy of an Agent Harness."
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→details]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
+- [[entities/wandb-weave]] — W&B Weave — LLM tracing and evaluation framework. Decorator-based function tracing (`@weave.op()`), evaluation dashboards, per-sample inspection. Public preview 2024. By [[entities/weights-and-biases|W&B]].
 - [[entities/warp-terminal]] — AI-native terminal and ADE. 1M devs, 56% Fortune 500. Open-sourced April 2026 (AGPLv3). Oz cloud orchestration. GPT-5.5: 30% fewer tokens/task. ARR 35x growth. 90% PRs agent-co-created.
 - [[entities/weaviate]] — Weaviate — Open-source vector database with built-in MCP server. Weaviate 1.37: MMR reranking, hybrid BM25+vector for coding agents.
 - [[entities/webmcp]] — **WebMCP** is a browser standard developed by the W3C Web Machine Learning Community Group. Jointly specified by Google and Microsoft, it defines the `navigator.modelContext` API for AI agents to interact structurally with web applications. Early preview launched in Chrome 146 in February 2026.
+- [[entities/weights-and-biases]] — Weights & Biases (W&B) — MLOps platform for experiment tracking, model management, and LLM observability. Founded 2017 (Lukas Biewald, Chris Van Pelt, Shawn Lewis). Acquired by [[entities/coreweave|CoreWeave]] (2025, ~$1.7B). Products: W&B Models, [[entities/wandb-weave|Weave]], Launch, Registry.
 - [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow/Ibis co-creator, Principal Architect at Posit. Agentic engineering pioneer: RoboRev continuous code review daemon, Agents View session DB, Middleman dashboard, spicytakes.org (1M+ lines agentically). "I almost don't read code now." Superpowers skills framework (Jesse Vincent). Agent Ergonomics thesis. GP at Composed Ventures.
 - [[entities/westenberg]] — **Blog** | joanwestenberg.com |
 - [[entities/will-mcgugan]] — **X** | @willmcgugan |

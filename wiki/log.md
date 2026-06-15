@@ -16,6 +16,14 @@
 - **Updated**: [[index.md]] — Transcript count: 35→36.
 - **Source**: User-provided WEBVTT files (2 versions: speaker-labeled + subtitle).
 
+## [2026-06-15 23:30] manual — Entity Enrichment: Weights & Biases + W&B Weave
+
+- **Created**: [[entities/weights-and-biases]] — W&B company entity page. MLOps platform, founded 2017, acquired by CoreWeave (2025, ~$1.7B). Products: Models, Weave, Launch, Registry.
+- **Created**: [[entities/wandb-weave]] — W&B Weave product entity page. LLM tracing/evaluation framework, `@weave.op()` decorator, evaluation dashboards.
+- **Updated**: [[entities/thomas-capelle]] — Added W&B entity link.
+- **Updated**: [[index.md]] — Added 2 entity entries.
+- **Source**: User request (CoreWeave acquisition correction/enrichment).
+
 ## [2026-06-15 23:00] manual — Transcript Ingestion: Getting the Most Out of Your LLM Experiments (Thomas Capelle)
 
 - **Created**: [[transcripts/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments-lecture]] — Full lecture transcript (48 min). Thomas Capelle (W&B) demonstrates experiment tracking for fine-tuning, debugging training spikes, Mistral 7B ablation study, loss proxy limitations, W&B Weave LLM tracing demo.
