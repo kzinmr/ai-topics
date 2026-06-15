@@ -37,6 +37,14 @@
 - **Updated**: [[index.md]] — Transcript count: 35→36.
 - **Source**: User-provided WEBVTT files (2 versions: speaker-labeled + subtitle).
 
+## [2026-06-15 23:45] manual — Entity Creation: CoreWeave + SkyPilot
+
+- **Created**: [[entities/coreweave]] — CoreWeave entity page. GPU cloud provider, IPO 2025 (NASDAQ: CRWV). Vertical integration via 3 acquisitions: W&B (~$1.7B), OpenPipe, SkyPilot.
+- **Created**: [[entities/skypilot]] — SkyPilot entity page. Open-source multi-cloud AI workload orchestrator from UC Berkeley. Acquired by CoreWeave (2025).
+- **Updated**: [[entities/openpipe]] — Added CoreWeave and W&B cross-links.
+- **Updated**: [[index.md]] — Added 2 entity entries.
+- **Source**: User request (CoreWeave acquisitions: W&B + OpenPipe + SkyPilot).
+
 ## [2026-06-15 23:30] manual — Entity Enrichment: Weights & Biases + W&B Weave
 
 - **Created**: [[entities/weights-and-biases]] — W&B company entity page. MLOps platform, founded 2017, acquired by CoreWeave (2025, ~$1.7B). Products: Models, Weave, Launch, Registry.

@@ -270,6 +270,7 @@
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/copilot-cli]] — GitHub-built terminal-native AI coding agent. 6 built-in sub-agents (explore/code-review/research, etc.), `/fleet` parallel execution, MCP extensions, BYOK/local model support (April 2026+). Included in Copilot Free/Pro/Pro+/Business/Enterprise.
 - [[entities/core-auto]] — Core Auto — AI research neolab co-founded by Mark Saroufim. Automating systems code via multi-agent self-play (problem author, competitor, cheater, auditor). Non-transformer architectures, pygpubench.
+- [[entities/coreweave]] — CoreWeave — GPU cloud provider for AI workloads. Founded 2017, IPO March 2025 (NASDAQ: CRWV). Acquired [[entities/weights-and-biases|W&B]] (~$1.7B), [[entities/openpipe|OpenPipe]], and [[entities/skypilot|SkyPilot]] (2025). Vertical integration: GPU cloud + training + observability.
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/creao]] — CreaoAI (creao.ai) — AI super agent platform with execution sandbox, cross-session memory, scheduled workflows, and Skills system. Harness platform infrastructure: "AWS of the AI agent era." Agent Trading Competition (May 2026). → [[entities/anorth-chen]]
 - [[entities/corti]] — Corti — Healthcare AI frontier lab. Symphony STT: clinical-grade speech-to-text, 1.4% WER (93% lower than OpenAI/Whisper). 100M+ patients/year. Copenhagen HQ.
@@ -619,6 +620,7 @@
 - [[entities/simon-last]] — Product/engineering leader at Notion. Led Custom Agents through 4-5 rebuilds. Software factory advocate. CLI over MCP.
 - [[entities/simone-salis]] — **URL:** https://simone.org
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent) — Training-free framework from Meta Superintelligence Labs that uses LLMs to bridge query-document vocabulary gap, enabling single BM25 call to outperform dense retrievers and multi-round agentic search. MIT licensed, Rust+Python.
+- [[entities/skypilot]] — SkyPilot — Open-source multi-cloud AI workload orchestrator from UC Berkeley. Automatic cost optimization, spot instance failover. Acquired by [[entities/coreweave|CoreWeave]] (2025).
 - [[entities/slalom]] — Slalom — Global business & technology consulting firm ($2.9B revenue, 12K employees, 54 offices/12 countries). AWS Premier Tier partner, OpenAI strategic partner, Snowflake AI Partner of the Year. Co-developed Macro Evals for Agentic Systems with OpenAI.
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
 - [[entities/snyk]] — Snyk — developer security platform. Integrated Anthropic Claude into AI Security Platform (May 2026) for vulnerability discovery and automated remediation.

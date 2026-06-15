@@ -116,6 +116,8 @@ OpenPipe's tools and methodology are featured in the [[concepts/agents-mcp-rl-co
 ## Related
 
 - [[entities/kyle-corbitt]] — CTO
+- [[entities/coreweave]] — Acquirer (2025)
+- [[entities/weights-and-biases|Weights & Biases]] — Sister acquisition (experiment tracking)
 - [[entities/prime-intellect]] — Complementary open-source RL infrastructure
 - [[concepts/agents-mcp-rl-course]] — Maven course featuring OpenPipe
 - [[concepts/post-training/grpo-rl-training]] — The RL algorithm used in OpenPipe's training pipeline
