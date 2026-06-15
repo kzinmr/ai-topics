@@ -1,3 +1,15 @@
+## [2026-06-15 00:00] raw-backlog-ingest — Takes=0 (all 5 already covered)
+
+- **Batch**: 5 candidates from raw_backlog_collect.py --sort ai-hint --limit 5
+- **Triage**: All 5 articles already captured in existing wiki pages (Takes=0, Ref=0, Skip=5)
+  - MAI-Thinking-1 Tech Report (372KB) → [[concepts/mai-thinking-1-tech-report.md]] (227 lines, comprehensive coverage)
+  - Dwarkesh AGI Economics (71KB) → [[concepts/agi-economics.md]] (93 lines) + [[entities/dwarkesh-patel.md]] (already_archived)
+  - Dario Amodei Policy on AI Exponential (62KB) → [[entities/dario-amodei.md]] (226 lines, 5-area framework, already_archived)
+  - Will Brown Lesson 2 raw transcript (49KB) → [[transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md]] (540 lines clean version)
+  - Ed Zitron AI Doesn't Have ROI (47KB) → [[entities/ed-zitron.md]] (470 lines, enterprise cost crisis section, already_archived)
+- **Archive**: 2 new, 3 dedup skipped → total archive URLs: 751
+- **Notes**: Pipeline saturation — all articles processed by prior runs (June 5-14). Takes=0 is expected outcome.
+
 ## [2026-06-14] raw-backlog-ingest — Takes=0 (all 5 already covered)
 
 - **Batch**: 5 candidates from raw_backlog_collect.py --sort ai-hint --limit 5
