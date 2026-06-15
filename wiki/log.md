@@ -1,3 +1,10 @@
+## [2026-06-15] manual — Deep analysis: LLM-as-Policy theoretical implications (3 pages)
+
+- **Updated**: `concepts/test-time-scaling.md` — Added "Thinking as Policy Execution: The Knowledge Creation Limit" section. Three implications: (1) thinking cannot create knowledge the policy doesn't have (knowledge creation impossibility), (2) extended thinking accumulates distribution-shift risk, (3) test-time scaling is explore-exploit not plan-execute. Key insight: test-time scaling and training-time RL are complementary, not substitutable.
+- **Updated**: `concepts/post-training/on-policy-vs-off-policy-rl.md` — Added "SFT vs RL: Structurally Non-Interchangeable Learning Paradigms" section. 6-dimension comparison table (what it teaches, learning signal, knowledge direction, capability ceiling, negative feedback, distribution coverage). R1-Zero as strongest evidence. Connection to test-time scaling limit.
+- **Updated**: `concepts/post-training/llm-as-policy.md` — Added "Why This Convergence Happens: Pre-Training as Implicit World Model" subsection under DPO/GRPO Convergence. Information-theoretic framing: pre-training embeds environment dynamics into policy parameters, making auxiliary models redundant. SFT O(n) dense/biased vs RL O(1) sparse/unbiased information comparison. Added `information-theory` tag.
+- **Source**: kzinmr Discord thread Q&A on LLM-as-Policy paradigm, cross-referenced with wiki pages (llm-as-policy, on-policy-vs-off-policy-rl, test-time-scaling, deepseek-r1, rlhf).
+- **Tags**: `reinforcement-learning`, `post-training`, `reasoning`, `inference`, `information-theory`
 ## [2026-06-15] manual — Argilla entity page creation
 ## [2026-06-15 04:00] raw-backlog-ingest — Pipeline saturation (0 takes, 5 skips)
 

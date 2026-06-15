@@ -2,7 +2,7 @@
 title: "On-Policy vs Off-Policy RL"
 type: concept
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-06-15
 tags:
   - concept
   - reinforcement-learning
@@ -83,6 +83,29 @@ Teaching a model to say "I don't know" is difficult in **both** paradigms:
 - **On-policy**: The model may never generate "I don't know" spontaneously, so there is nothing to reinforce
 
 Goldberg proposed a **reward shaping** approach: high scores for correct answers, medium-low for abstention, strong negatives for incorrect answers. This remains an active research area in 2026 — see [[concepts/ai-alignment]] for the broader context.
+
+### SFT vs RL: Structurally Non-Interchangeable Learning Paradigms
+
+The [[concepts/post-training/llm-as-policy|LLM-as-Policy]] framework reveals that SFT and RL teach fundamentally different things — they are not interchangeable training methods but **complementary learning paradigms** with distinct structural properties:
+
+| Dimension | SFT (Behavior Cloning) | RL (Outcome-Based Learning) |
+|---|---|---|
+| **What it teaches** | "Generate this exact output" (imitation) | "This outcome was good/bad" (evaluation) |
+| **Learning signal** | Dense: O(n) tokens of correct demonstration per episode | Sparse: O(1) bits of reward feedback per episode |
+| **Knowledge direction** | Top-down: teacher → student | Bottom-up: environment → policy |
+| **Capability ceiling** | Bounded by teacher's ability | Policy can discover strategies beyond teacher's ability |
+| **Negative feedback** | None — never signals "don't do this" | Present — low rewards steer policy away from failure |
+| **Distribution coverage** | Only covers states the teacher visited | Explores states the policy itself reaches |
+
+The **DeepSeek-R1-Zero** experiment ([source](https://arxiv.org/abs/2501.12948)) is the strongest evidence for this non-interchangeability. R1-Zero was trained with pure RL (GRPO) — zero SFT data — and spontaneously developed self-verification, backtracking, and "wait, let me reconsider" behaviors. These capabilities could not have been produced by SFT because:
+
+1. **No human would have written the training data** — the emergent thinking strategies are non-obvious and counter-intuitive
+2. **SFT requires the teacher to already know the strategy** — RL lets the policy discover it from outcome feedback alone
+3. **The policy found strategies humans hadn't conceived** — this is the fundamental advantage of outcome-based over demonstration-based learning
+
+This asymmetry explains why the canonical post-training pipeline (DeepSeek-R1: SFT → RL → SFT → RL) alternates between paradigms: SFT provides **structural scaffolding** (format, style, basic competence), while RL provides **capability expansion** (novel strategies, self-correction, robustness). Neither alone achieves what both together accomplish.
+
+> **Connection to test-time scaling**: This non-interchangeability also explains why [[concepts/test-time-scaling|test-time scaling]] cannot substitute for RL training. Test-time scaling extends the existing policy's exploration; RL reshapes the policy itself. See [[concepts/test-time-scaling#Thinking as Policy Execution: The Knowledge Creation Limit]] for the theoretical limit.
 
 ### Why LLMs Blur the Boundary (Traditional RL vs LLM-RL)
 

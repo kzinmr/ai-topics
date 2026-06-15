@@ -6,7 +6,7 @@ aliases:
   - test-time-compute
   - inference-time-compute
 created: 2026-05-14
-updated: 2026-06-09
+updated: 2026-06-15
 type: concept
 tags:
   - concept
@@ -77,6 +77,30 @@ The key insight is that difficult reasoning problems require **search** — expl
 4. **Aggregate across candidates** (voting, weighted selection)
 
 The effect is most pronounced on **hard problems** — those where the model has non-trivial but sub-mastery capability. On easy problems, a single pass suffices; on impossible problems, no amount of scaling helps. This creates a "sweet spot" for test-time compute allocation.
+
+### Thinking as Policy Execution: The Knowledge Creation Limit
+
+The [[concepts/post-training/llm-as-policy|LLM-as-Policy]] framework reveals a fundamental constraint on test-time scaling that is often overlooked: **reasoning model "thinking" is not cognitive planning — it is policy execution**. Each token in the reasoning trace is an action sampled from the policy $\pi_\theta(a_t | s_t)$, not output from a separate planning module with access to a world model.
+
+```
+Traditional view:   Input → [Planning Module] → Output
+                    (planning module has world model, can simulate outcomes)
+
+LLM-as-Policy:     Input → token₁ → token₂ → ... → tokenₙ → Output
+                    (all tokens are actions from the same policy π_θ)
+```
+
+This has three critical implications for test-time scaling:
+
+1. **Thinking cannot create knowledge the policy doesn't have** — extending reasoning traces only explores paths within the policy's learned distribution. If the policy has never encoded a piece of knowledge during pre-training or RL, no amount of thinking will produce it. This is the **knowledge creation impossibility** — test-time scaling is fundamentally bounded by the policy's training-time knowledge.
+
+2. **Extended thinking accumulates distribution-shift risk** — each reasoning token is an action that moves the state $s_t$ further from the training distribution. Longer trajectories increase the probability of entering states where the policy has never been trained, leading to compounding errors. This explains the "thinking-optimal" finding (Yang et al., 2025) that excessively long CoT can *impair* reasoning.
+
+3. **Test-time scaling is explore-exploit, not plan-execute** — the reasoning trace is policy exploration in token-space, equivalent to RL's exploration-exploitation tradeoff. The "sweet spot" exists because: easy problems stay within the policy's exploitation region (single pass suffices), hard problems require exploration (multiple paths needed), and impossible problems are outside the policy's distribution entirely (no exploration budget helps).
+
+This framework explains why **RL training** (which reshapes the policy itself) produces qualitatively different capabilities than **test-time scaling** (which only extends the existing policy's exploration). DeepSeek-R1-Zero's emergent self-verification behaviors could not have been achieved by extending thinking time on an SFT-only model — they required the policy itself to be reshaped by outcome-based learning. See [[concepts/post-training/on-policy-vs-off-policy-rl]] and [[concepts/deepseek-r1]] for the SFT vs RL distinction.
+
+The implication: **test-time scaling and training-time RL are complementary, not substitutable**. Test-time scaling extracts latent capability from the policy; RL expands the policy's capability frontier. The most powerful systems (o3, R1) combine both — RL-trained policies that are specifically optimized to leverage test-time compute.
 
 ## Core Techniques
 

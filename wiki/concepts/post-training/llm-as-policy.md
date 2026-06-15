@@ -11,6 +11,7 @@ tags:
   - alignment
   - reasoning
   - inference
+  - information-theory
 aliases:
   - llm-as-policy
   - policy-language-model
@@ -148,6 +149,22 @@ The 2024–2026 trend is toward **collapsing auxiliary models into the policy's 
 | **2025 (GRPO + RLVR)** | Actor + Verifier | 1 model + code (RM and Critic eliminated) |
 
 The policy's probability distribution now encodes reward boundaries, value gradients, and preference structure **implicitly** — more efficiently than external models could track them.
+
+### Why This Convergence Happens: Pre-Training as Implicit World Model
+
+The DPO/GRPO convergence toward implicit modeling is not coincidental — it reflects a structural property of LLMs that has no parallel in traditional RL. **Pre-training has already embedded the "environment dynamics" into the policy's parameters.** The LLM's next-token prediction objective during pre-training is, in information-theoretic terms, a compression of the entire language-generating process into a conditional probability distribution.
+
+This means:
+
+| Traditional RL | LLM-RL |
+|---|---|
+| Policy knows nothing about the environment before training | Policy already "knows" language structure from pre-training |
+| External models (reward, value) encode environment knowledge | Environment knowledge is already in the policy's parameters |
+| Auxiliary models are necessary to bridge policy ↔ environment gap | Auxiliary models are redundant — the policy IS the environment model |
+
+When DPO eliminates the reward model by expressing $r(x,y) = \beta \log \frac{\pi_\theta(y|x)}{\pi_{\text{ref}}(y|x)}$, it exploits the fact that the policy's log-likelihood ratios already encode preference structure learned during pre-training. When GRPO replaces the critic with group statistics, it exploits the fact that sibling samples from the same policy share enough structural similarity to serve as their own baseline.
+
+> **Information-theoretic framing** (from [[concepts/post-training/on-policy-vs-off-policy-rl|On-Policy vs Off-Policy]] and [[concepts/post-training/post-training-distributional-view|Distributional View]]): SFT provides O(n) bits of dense, off-policy information per episode (the entire demonstration trajectory). RL (GRPO) provides O(1) bits of sparse, on-policy information (just the reward signal). Yet RL produces qualitatively superior policies because those O(1) bits are **unbiased and on-policy** — they tell the policy exactly how its own behavior performs, whereas SFT's O(n) bits are biased toward the teacher's distribution and never expose the policy to its own failure modes. The auxiliary model elimination trend is thus a movement toward **maximizing information efficiency** — extracting the most policy-improvement signal from the fewest external components.
 
 ## RLHF Book Perspective (Lambert, 2026)
 
