@@ -84,6 +84,23 @@ Teaching a model to say "I don't know" is difficult in **both** paradigms:
 
 Goldberg proposed a **reward shaping** approach: high scores for correct answers, medium-low for abstention, strong negatives for incorrect answers. This remains an active research area in 2026 — see [[concepts/ai-alignment]] for the broader context.
 
+### Why LLMs Blur the Boundary (Traditional RL vs LLM-RL)
+
+In traditional RL (robotics, autonomous driving, game AI), behavior cloning (the RL equivalent of SFT) and off-policy RL are **sharply distinct** — not on a spectrum as in LLM-RL. Three structural reasons:
+
+1. **Compounding error (Distribution Shift)**: In physical environments, a slight deviation leads to states never seen in expert data, causing catastrophic failure. A self-driving model trained only on "drive straight" logs has never seen "slightly off-center" states and cannot recover. Off-policy RL learns recovery from failure data; behavior cloning cannot.
+
+2. **No negative feedback**: SFT/behavior cloning only teaches "do this" — it never signals "don't do that." Traditional off-policy RL assigns low rewards to failure trajectories, teaching the policy to avoid failure states.
+
+3. **No importance sampling correction**: Off-policy RL reweights data with $\frac{\pi_\theta(a|s)}{\mu(a|s)}$ to correct for distribution mismatch between the data-generating policy $\mu$ and the current policy $\pi_\theta$. SFT ignores this mismatch entirely.
+
+LLMs escape these constraints because:
+- **Discrete token space** — a wrong token doesn't cause physical catastrophe; language context enables self-recovery
+- **Pre-training** — the model already "knows the environment dynamics" (language structure) before SFT, dramatically reducing exposure bias
+- **Distributional resilience** — language is more forgiving of small deviations than continuous control
+
+This is why LLM-RL treats SFT and RL as endpoints on a continuum (see below), while traditional RL treats them as categorically different techniques. See [[concepts/post-training/llm-as-policy]] for the broader paradigm context.
+
 ## The 2026 Landscape: Not Binary but a Spectrum
 
 Goldberg's 2023 framing was "SFT vs RL" as a dichotomy. By 2026, the field has evolved into a **continuous spectrum** along two axes (Will Brown's unified meta-algorithm, [[entities/will-brown]]):

@@ -83,7 +83,7 @@ The insight: *allocating more compute at inference time is equivalent to giving 
 
 ## Reward Model vs Critic (Value Function)
 
-A key distinction in the LLM-as-Policy framework, often confused:
+A key distinction in the LLM-as-Policy framework, often confused — detailed treatment in [[concepts/post-training/rl-algorithms-for-llm-training#Reward Model vs Critic (Value Function)|RL Algorithms]]:
 
 | Dimension | Reward Model $R(s, a)$ | Critic / Value Function $V^\pi(s_t)$ |
 |---|---|---|
@@ -92,9 +92,7 @@ A key distinction in the LLM-as-Policy framework, often confused:
 | **When it fires** | Once, at end of trajectory | At every token step |
 | **Role in credit assignment** | "This answer scored 0.85" | "From this point, ~0.95 is achievable" |
 
-**The critic solves the credit assignment problem**: when a 100-token response scores 0, which token caused the failure? The critic tracks how the expected value shifts at each step, pinpointing the moment the trajectory went wrong.
-
-**GRPO eliminates the critic** by replacing per-token value estimation with group-level relative ranking — a coarser but far simpler signal.
+The critic solves the **credit assignment problem** (which token caused the failure?) by tracking expected value shifts at each step. **GRPO eliminates the critic** by replacing per-token value estimation with group-level relative ranking — a coarser but far simpler signal.
 
 ## SFT as Off-Policy Behavior Cloning
 
@@ -107,31 +105,7 @@ A key distinction in the LLM-as-Policy framework, often confused:
 | **Implicit Reward** | $R(s,a) = 0$ for dataset tokens, $-\infty$ otherwise |
 | **Objective** | Maximum likelihood on behavior policy's trajectories |
 
-### Why LLMs Blur the SFT/RL Boundary
-
-In traditional RL (robotics, games), behavior cloning and off-policy RL are **sharply distinct**:
-
-1. **Compounding error**: A slight deviation leads to unseen states → catastrophic failure (SFT alone fails)
-2. **No negative feedback**: SFT only teaches "do this," never "don't do that"
-3. **No importance sampling correction**: SFT ignores distribution mismatch between $\mu$ and $\pi_\theta$
-
-LLMs are different because:
-- **Discrete token space** — a single wrong token doesn't cause physical catastrophe; language context provides self-recovery
-- **Pre-training** — the model already "knows the environment dynamics" (language structure) before SFT, reducing exposure bias
-- **Distributional resilience** — language is more forgiving of small deviations than robotic control
-
-### The SFT → RL Continuum
-
-The modern understanding (2025–2026) treats SFT and RL as a **continuous spectrum** rather than a dichotomy (Will Brown's unified taxonomy):
-
-$$\nabla_\theta J = \mathbb{E}_{x \sim \pi_\theta^\alpha} \left[ \lambda \cdot A^{KL}(x) + (1-\lambda) \cdot A^{outcome}(x) \right]$$
-
-| Method | $\alpha$ (on-policy?) | $\lambda$ (teacher signal?) |
-|---|---|---|
-| **SFT** | 0 (off-policy) | 1 (pure teacher imitation) |
-| **DPO** | 0 (off-policy) | 1 (implicit preference pairs) |
-| **RL (GRPO)** | 1 (on-policy) | 0 (outcome reward only) |
-| **OPD** | 1 (on-policy) | 1 (dense teacher + on-policy) |
+This equivalence is mathematically precise: SFT's cross-entropy loss is identical to **behavior cloning** (BC) — historically positioned as the simplest off-policy RL algorithm. However, SFT lacks negative feedback, importance sampling correction, and recovery from distribution shift, which is why it transitions into on-policy RL for capability gains. See [[concepts/post-training/on-policy-vs-off-policy-rl]] for why this boundary blurs in LLMs (unlike traditional RL) and [[concepts/post-training/on-policy-vs-off-policy-rl#The 2026 Landscape: Not Binary but a Spectrum|the SFT-RL continuum]] for Brown's unified taxonomy.
 
 ## The DPO/GRPO Convergence: Implicit Modeling
 

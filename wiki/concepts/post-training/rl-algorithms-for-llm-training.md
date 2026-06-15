@@ -31,6 +31,29 @@ Based on [Arjun Kocher's RL Algorithm Q&A](https://www.k-a.in/rl-algo.html), com
 
 **Why GRPO drops the critic**: In LLM RL, the value function over token sequences is hard to learn well. GRPO replaces the critic with a **group mean baseline**, avoiding the need for a value network entirely. See [[concepts/post-training/grpo]].
 
+### Reward Model vs Critic (Value Function)
+
+These two components are often confused but serve fundamentally different roles in LLM-RL:
+
+| Dimension | Reward Model $R(s, a)$ | Critic / Value Function $V^\pi(s_t)$ |
+|---|---|---|
+| **What it evaluates** | The completed output (final answer) | The *in-progress* state (partial trajectory) |
+| **Time orientation** | Past/present (what was produced) | Future (what can still be expected) |
+| **When it fires** | Once, at end of trajectory | At every token step |
+| **Formula** | $R(s, a)$ or $R(\tau)$ | $V^\pi(s_t)$ |
+| **Role in credit assignment** | "This answer scored 0.85" | "From this point, ~0.95 is achievable" |
+
+**Why the critic is needed for credit assignment**: When a 100-token response scores 0 from the reward model, which token caused the failure? The critic tracks how the expected value shifts at each step:
+
+- Tokens 1–20: expected value stays at 0.9 (on track)
+- Token 21: expected value crashes from 0.9 to 0.1
+
+This pinpoints the exact action that derailed the trajectory — the reward model alone cannot provide this granularity.
+
+**How GRPO sidesteps this**: By generating multiple completions per prompt and comparing their final rewards, GRPO uses the group's relative ranking as a coarse substitute for per-token value estimation. This loses token-level resolution but eliminates the expensive critic model entirely.
+
+For the broader paradigm context of this convergence toward implicit modeling, see [[concepts/post-training/llm-as-policy]].
+
 ## KL Divergence, Cross Entropy, and MLE
 
 These three concepts are mathematically connected:
