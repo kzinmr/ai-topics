@@ -1,3 +1,13 @@
+## [2026-06-15 17:40] skeleton-enrichment - Emmanuel Ameisen (59 to 186 lines)
+
+- **Entity enriched**: wiki/entities/emmanuel-ameisen.md
+- **Removed**: status: skeleton from frontmatter
+- **Added**: Career timeline (Zipcar, Insight, Stripe, Anthropic), Book chapter breakdown (4 parts), Speaking and education section (4 venues), Open source projects (6 repos), Professional profile table, Related entities and concepts (8 cross-links)
+- **Key addition**: Fine-Tuning is Dead talk enriched with full argument structure and nuance. Anthropic perspective section added.
+- **Sources added**: GitHub profile, O'Reilly book page, 3 YouTube interviews (Chai Time Data Science, ZenML, TWIML)
+
+---
+
 ## [2026-06-15 17:35] wiki-watchdog-auto-fix — Structural corruption repair
 
 - **Fixed**: `entities/_index.md` — Removed 279 line-number prefix corruptions (`^\s*\d+\|` pattern)
