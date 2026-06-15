@@ -7,7 +7,7 @@ aliases:
   - dataset-curation
   - data-centric-machine-learning
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-06-15
 tags:
   - concept
   - infrastructure
@@ -20,6 +20,7 @@ related:
 sources:
   - raw/articles/2025-01-16_pelayoarbues-dataset-engineer.md
   - https://www.pelayoarbues.com/notes/The-Rise-of-the-Dataset-Engineer
+  - raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms
 ---
 
 
@@ -99,3 +100,4 @@ Dataset engineering and [[concepts/synthetic-data]] are deeply intertwined:
 - Ng, Andrew. "Data-Centric AI" — Landing AI
 - Huyen, Chip. "Designing Machine Learning Systems" (O'Reilly)
 - [raw/articles/2025-01-16_pelayoarbues-dataset-engineer.md](raw/articles/2025-01-16_pelayoarbues-dataset-engineer.md)
+- [raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms](raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms) — Daniel van Strien & David Berenstein (Argilla) talk covering DPO/KTO/ORPO data formats, synthetic data generation pitfalls, annotation tooling, and the rise of dataset engineering as a discipline.

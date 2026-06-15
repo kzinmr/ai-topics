@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-14 | Total pages: 2515 | Indexed entries: 2106 | Concepts: 1681 | Entities: 792
+> Last updated: 2026-06-15 | Total pages: 2516 | Indexed entries: 2107 | Concepts: 1681 | Entities: 792
 
 ## Entities (791 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -2098,9 +2098,10 @@
 - [[raw/papers/2601.19752-agentic-design-patterns]] — Agentic Design Patterns
 - [[raw/papers/2309.08168-self-speculative-decoding-zhang]] — Self-Speculative Decoding
 
-## Transcripts (35 pages)
+## Transcripts (36 pages)
 
 - [[transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework]] — Inspect: An OSS Framework for LLM Evals — JJ Allaire (UK AISI). Dataset/Solver/Scorer architecture, Honeycomb eval walkthrough, critique scoring, tool use, agent eval, LangChain integration, model support, log viewer, reproducibility. Companion: [[entities/inspect-ai]], [[entities/jj-allaire]]
+- [[transcripts/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms]] — Creating, Curating, and Cleaning Data for LLMs — Daniel van Strien (Hugging Face), David Berenstein (Argilla). DPO/KTO/ORPO data formats, synthetic data pitfalls, annotation tooling (Argilla, Lilac, distilabel, Outlines, DSPy). Companion: [[raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms]], [[entities/daniel-van-strien]], [[concepts/dataset-engineering]]
 - [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]] — Why Fine-Tuning is Dead — Emmanuel Ameisen (Anthropic). RAG vs fine-tuning, prompting hierarchy of needs, price/context trends. Companion: [[raw/articles/2024-01-24_emeisen_why-fine-tuning-is-dead]], [[entities/emmanuel-ameisen]]
 - [[transcripts/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments-lecture]] — Getting the Most Out of Your LLM Experiments — Thomas Capelle (W&B). Experiment tracking, debugging training spikes, Mistral 7B ablation, loss proxy limitations, W&B Weave demo. Companion: [[raw/articles/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments]], [[entities/thomas-capelle]]
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]

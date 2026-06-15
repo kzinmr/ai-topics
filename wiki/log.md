@@ -1,3 +1,14 @@
+## [2026-06-15 23:30] manual — Transcript Ingestion: Creating, Curating, and Cleaning Data for LLMs (Daniel van Strien + David Berenstein)
+
+- **Created**: [[transcripts/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms]] — Full lecture transcript (55 min). Daniel van Strien (Hugging Face) and David Berenstein (Argilla) cover DPO/KTO/ORPO data formats, synthetic data pitfalls (Alpaca, UltraFeedback), annotation tooling (Argilla, Lilac, distilabel, Outlines, DSPy), dataset deduplication, and the rise of dataset engineering.
+- **Created**: [[transcripts/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms.en.vtt]] — VTT subtitle version (275 cues).
+- **Created**: [[raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms]] — Companion summary article.
+- **Updated**: [[entities/daniel-van-strien]] — Added Jan 2024 talk entry in Blog/Talks table, added source reference.
+- **Updated**: [[entities/hamel-husain]] — Added Jan 2024 timeline entry for hosting the data curation talk.
+- **Updated**: [[concepts/dataset-engineering]] — Added source reference and lecture mention.
+- **Updated**: [[index.md]] — Transcript count: 35→36.
+- **Source**: User-provided WEBVTT files (2 versions: speaker-labeled + subtitle).
+
 ## [2026-06-15 23:00] manual — Transcript Ingestion: Getting the Most Out of Your LLM Experiments (Thomas Capelle)
 
 - **Created**: [[transcripts/2024-01-26_tcapelle_getting-the-most-out-of-llm-experiments-lecture]] — Full lecture transcript (48 min). Thomas Capelle (W&B) demonstrates experiment tracking for fine-tuning, debugging training spikes, Mistral 7B ablation study, loss proxy limitations, W&B Weave LLM tracing demo.

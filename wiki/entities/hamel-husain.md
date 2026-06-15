@@ -54,6 +54,7 @@ His career spans **GitHub** (where he contributed to the precursors of Copilot a
 | May 2023–Present | Independent Consultant at **Parlance Labs** |
 | Oct 2024–Present | R&D at **AnswerAI** (Jeremy Howard's new AI venture) |
 | Jan 2024 | Hosted **"Why Fine-Tuning is Dead"** talk by [[entities/emmanuel-ameisen|Emmanuel Ameisen]] (Anthropic) — arguing RAG + prompting delivers most value; fine-tuning declining in relevance |
+| Jan 2024 | Hosted **"Creating, Curating, and Cleaning Data for LLMs"** — [[raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms|talk]] by [[entities/daniel-van-strien|Daniel van Strien]] (Hugging Face) and David Berenstein (Argilla). DPO/KTO/ORPO data formats, synthetic data pitfalls, annotation tooling. [[transcripts/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms|Transcript]] |
 | 2024 | Published "Your AI Product Needs Evals" (Hamel.dev) |
 | Oct 2024 | Published "Using LLM-as-a-Judge For Evaluation: A Complete Guide" |
 | Mar 2024 | Published **"The Revenge of the Data Scientist"** — foundational essay arguing the LLM harness is fundamentally a data science problem; introduced the 5 major eval pitfalls |

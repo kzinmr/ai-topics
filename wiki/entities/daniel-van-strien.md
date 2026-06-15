@@ -20,6 +20,7 @@ sources:
   - https://danielvanstrien.xyz/ai-patterns-for-glam/intro.html
   - https://github.com/davanstrien/polars-hf
   - https://github.com/davanstrien/uv-scripts-for-ai
+  - raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms
 ---
 
 
@@ -128,6 +129,7 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 | Dec 2024 | Filtering FineWeb2 using Polars | High-performance large dataset filtering |
 | Oct 2024 | ColPali + Qdrant for Document Search | Multivector indexing and retrieval |
 | May 2024 | Synthetic Dataset Generation: Self-Instruct | Self-Instruct methodology for synthetic text |
+| Jan 2024 | **[[raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms\|Creating, Curating, and Cleaning Data for LLMs]]** | Conference talk with David Berenstein (Argilla). DPO/KTO/ORPO data formats, synthetic data pitfalls, annotation tooling. [[transcripts/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms\|Transcript]] |
 
 ## Related People
 
