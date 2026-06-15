@@ -10,7 +10,7 @@ tags:
   - developer-tooling
   - coding-agents
 created: 2026-04-24
-updated: 2026-05-29
+updated: 2026-06-15
 type: entity
 ---
 
@@ -53,9 +53,10 @@ His career spans **GitHub** (where he contributed to the precursors of Copilot a
 | Aug 2022–May 2023 | Entrepreneur in Residence at **fast.ai** |
 | May 2023–Present | Independent Consultant at **Parlance Labs** |
 | Oct 2024–Present | R&D at **AnswerAI** (Jeremy Howard's new AI venture) |
+| Jan 2024 | Hosted **"Why Fine-Tuning is Dead"** talk by [[entities/emmanuel-ameisen|Emmanuel Ameisen]] (Anthropic) — arguing RAG + prompting delivers most value; fine-tuning declining in relevance |
 | 2024 | Published "Your AI Product Needs Evals" (Hamel.dev) |
 | Oct 2024 | Published "Using LLM-as-a-Judge For Evaluation: A Complete Guide" |
-|| Mar 2024 | Published **"The Revenge of the Data Scientist"** — foundational essay arguing the LLM harness is fundamentally a data science problem; introduced the 5 major eval pitfalls |
+| Mar 2024 | Published **"The Revenge of the Data Scientist"** — foundational essay arguing the LLM harness is fundamentally a data science problem; introduced the 5 major eval pitfalls |
 | 2025 | Published "Selecting The Right AI Evals Tool" |
 | 2025 | Published **"A Field Guide to Rapidly Improving AI Products"** |
 | 2025 | Released **evals-skills** (OSS plugins for coding agents) |

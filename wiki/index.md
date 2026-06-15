@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2103 | Concepts: 1681 | Entities: 789
+> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2103 | Concepts: 1681 | Entities: 790
 
 ## Entities (789 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -320,6 +320,7 @@
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval (LIMIT dataset, drowning-in-documents paradox)
 - [[entities/embra]] — AI context engine company acquired by Notion (Jan 2026). Founded by Zach Tratar.
+- [[entities/emmanuel-ameisen]] — Emmanuel Ameisen — ML practitioner/author at Anthropic. *Building Machine Learning Powered Applications* (O'Reilly). "Why Fine-Tuning is Dead" talk. Skeptic of fine-tuning as default; advocates RAG + prompting first.
 - [[entities/elvis]] — **Platform:** X/Twitter (@elvis_)
 - [[entities/emollick]] — **X** | @emollick |
 - [[entities/encodec]] — **EnCodec** | Meta's production-standard neural audio codec. 24/48 kHz, 1.5–24 kbps, streaming, with Transformer entropy coding. De facto standard for codec-style tokenizers.
@@ -2041,6 +2042,7 @@
 - [[raw/articles/2026-05-28_rlancemartin_claude-mid-conversation-system-messages]] — Claude Platform Docs: Mid-conversation system messages — Add or update system instructions partway through a conversation without invalidating the cached prefix. Opus 4.8 only. Use cases: mid-session policy changes, per-turn authoritative context, user input during agentic loops. Companion: [[entities/lance-martin]], [[concepts/claude-code/claude-code-tips]]
 - [[raw/articles/2026-05-28_rlancemartin_claude-prompting-best-practices]] — Claude Platform Docs: Prompting best practices for Claude Opus 4.8. Covers effort parameter tuning (xhigh for coding agents, high as minimum), adaptive thinking migration, tool use triggering, literal instruction following, long-horizon agent patterns. Companion: [[entities/lance-martin]], [[concepts/claude-code/claude-code-tips]]
 - [[raw/articles/2025-04-30_lighton_gte-moderncolbert-pylate]] — LightOn Releases GTE-ModernColBERT — First SOTA late-interaction model trained on PyLate. 8K context, first to beat ColBERT-small on BEIR. ModernBERT + knowledge distillation on MS MARCO. Companion: [[concepts/gte-moderncolbert]], [[entities/lighton]]
+- [[raw/articles/2024-01-24_emeisen_why-fine-tuning-is-dead]] — Why Fine-Tuning is Dead — Emmanuel Ameisen (Anthropic). RAG delivers ~90% of value for knowledge tasks; fine-tuning adds marginal gains. Hierarchy: evals → prompts → dynamic few-shot → RAG → fine-tuning. Companion: [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]], [[entities/emmanuel-ameisen]]
 
 ## Raw Papers (48 pages)
 
@@ -2092,8 +2094,9 @@
 - [[raw/papers/2601.19752-agentic-design-patterns]] — Agentic Design Patterns
 - [[raw/papers/2309.08168-self-speculative-decoding-zhang]] — Self-Speculative Decoding
 
-## Transcripts (32 pages)
+## Transcripts (33 pages)
 
+- [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]] — Why Fine-Tuning is Dead — Emmanuel Ameisen (Anthropic). RAG vs fine-tuning, prompting hierarchy of needs, price/context trends. Companion: [[raw/articles/2024-01-24_emeisen_why-fine-tuning-is-dead]], [[entities/emmanuel-ameisen]]
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
 - [[transcripts/2024-12-13_ilyasutskever-transcript]] — Sequence to Sequence Learning with Neural Networks: What a Decade — Ilya Sutskever (NeurIPS 2024). Full transcript. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]
 - [[transcripts/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]] — Vanishing Gradients Ep. 68: Builder's Guide to Agentic Search — John Berryman, Doug Turnbull. 5-level incremental AI adoption model for search, LLM-as-judge, tool calling patterns.

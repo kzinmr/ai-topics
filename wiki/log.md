@@ -1,3 +1,12 @@
+## [2026-06-15 20:00] manual — Transcript Ingestion: Why Fine-Tuning is Dead (Emmanuel Ameisen)
+
+- **Created**: [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]] — Full lecture transcript (54 min). RAG vs fine-tuning, prompting hierarchy, price/context trends.
+- **Created**: [[raw/articles/2024-01-24_emeisen_why-fine-tuning-is-dead]] — Companion summary article.
+- **Created**: [[entities/emmanuel-ameisen]] — Entity page (skeleton). Anthropic, *Building Machine Learning Powered Applications*.
+- **Updated**: [[entities/hamel-husain]] — Added Jan 2024 timeline entry for hosting the talk.
+- **Updated**: [[index.md]] — Added transcript, article, and entity entries. Transcript count: 32→33. Entity count: 789→790.
+- **Source**: User-provided WEBVTT files (2 versions: speaker-labeled + subtitle).
+
 ## [2026-06-15 00:00] raw-backlog-ingest — Takes=0 (all 5 already covered)
 
 - **Batch**: 5 candidates from raw_backlog_collect.py --sort ai-hint --limit 5

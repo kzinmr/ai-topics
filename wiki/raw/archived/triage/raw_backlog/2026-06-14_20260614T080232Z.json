@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-06-14T08:02:32.540772+00:00",
+  "triage_run_id": "20260614T080232Z",
+  "source": "raw_backlog",
+  "summary_ja": "5 kiji subete kison wiki page de cover sumi, matawa already_archived sumi. shinki take nashi.",
+  "decisions": [
+    {
+      "item_id": "backlog-0",
+      "source": "raw_backlog",
+      "title": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "concepts/mai-thinking-1-tech-report.md kison (227 lines) -- 6-kai ijo no batch de ki-shori. architecture/GRPO/benchmark coverage kanryou.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-",
+      "stars": 1
+    },
+    {
+      "item_id": "backlog-1",
+      "source": "raw_backlog",
+      "title": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "recommended_action": "skip",
+      "reason_ja": "agi-economics.md kison. already_archived sumi.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Alex Imas and Phil Trammell - What remains scarce after AGI?\nSource: https://www.dwarkesh.com/p/alex-imas-phil-trammell\nEconomics of AGI episode w\nAlex Imas\nand\nPhil Trammell\n.\nThere’s a bunch of important questions about how we deal with AI that only economics can answer.\nWhat is the optimal way ",
+      "stars": 1
+    },
+    {
+      "item_id": "backlog-2",
+      "source": "raw_backlog",
+      "title": "2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+      "recommended_action": "skip",
+      "reason_ja": "entities/dario-amodei.md kison (226 lines). already_archived sumi. 5-area framework ki-roku sumi.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Policy on the AI Exponential\nJune 2026\nIn one of the side plots toThe Lord of the Rings, two of the Hobbits attempt to rouse Treebeard—a wise but ponderous sentient tree—to defend his forest from an army that is cutting it down. The problem is that Treebeard operates at a very different speed than t",
+      "stars": 1
+    },
+    {
+      "item_id": "backlog-3",
+      "source": "raw_backlog",
+      "title": "2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "recommended_action": "skip",
+      "reason_ja": "transcripts/lesson2-lecture.md kison (540 lines). entities/will-brown.md source ki-roku sumi.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)\n**Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])\n**Co-instructor:** Kyle Corbitt (CTO, OpenPipe)\n**Date:** June 19, 2025\n**Companion course:** [[concepts/agents-mcp-rl-course|Produ",
+      "stars": 1
+    },
+    {
+      "item_id": "backlog-4",
+      "source": "raw_backlog",
+      "title": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "recommended_action": "skip",
+      "reason_ja": "entities/ed-zitron.md kison (470 lines). dedicated ROI section ki-roku sumi. already_archived.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# AI Doesn't Have ROI\nSource: https://www.wheresyoured.at/ai-doesnt-have-roi/\nIf you liked this piece, you should subscribe to my premium newsletter. It’s $70 a year, or $7 a month, and in return you get a weekly newsletter that’s usually anywhere from 5,000 to 18,000 words, including vast, detailed",
+      "stars": 1
+    }
+  ]
+}

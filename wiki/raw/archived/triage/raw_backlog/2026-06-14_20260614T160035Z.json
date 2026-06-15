@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-14T16:05:38.326502+00:00",
+  "triage_run_id": "20260614T160035Z",
+  "source": "raw_backlog",
+  "summary_ja": "Raw backlogバッチ (5記事) — 全記事pipeline saturation確認済み。MAI-Thinking-1はconcepts/mai-thinking-1-tech-report.md (227 lines)、AGI Economicsはconcepts/agi-economics.md + entities/dwarkesh-patel.md、Dario Amodei政策はentities/dario-amodei.md (226 lines)、Will Brown Lesson 2はtranscripts/配下に処理済み、Ed Zitron ROI記事はentities/ed-zitron.md (468 lines)に専用セクションあり。Takes=0は正常（全日次パイプラインが既に実行済み）。",
+  "decisions": [
+    {
+      "item_id": "2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "source": "raw_backlog",
+      "source_name": "raw_backlog",
+      "title": "Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ pipeline saturation — transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md (540 lines)として既に処理済み。entities/will-brown.mdのsources frontmatterにも記載。",
+      "candidate_wiki_path": "transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md",
+      "body_excerpt": "# Production-Ready Agent Engineering — Lesson 2: MCP + Production-Grade Agents (Raw Transcript)\n**Instructor:** Will Brown (Research Lead, [[entities/prime-intellect]])\n**Co-instructor:** Kyle Corbitt (CTO, OpenPipe)\n**Date:** June 19, 2025\n**Companion course:** [[concepts/agents-mcp-rl-course|Produ"
+    }
+  ]
+}
