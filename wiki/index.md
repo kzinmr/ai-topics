@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-14 | Total pages: 2512 | Indexed entries: 2103 | Concepts: 1681 | Entities: 790
+> Last updated: 2026-06-14 | Total pages: 2515 | Indexed entries: 2106 | Concepts: 1681 | Entities: 792
 
-## Entities (789 pages)
+## Entities (791 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -61,9 +61,11 @@
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
+- [[entities/inspect-ai]] — Inspect AI — Open-source LLM eval framework by JJ Allaire + UK AI Safety Institute. Dataset/Solver/Scorer pipeline, composable solvers, model-graded scoring, log viewer, agent eval support. `pip install inspect-ai`.
 - [[entities/isaac-flath]] — Isaac Flath — AI product engineer, educator. Pi Harness: RLM + late interaction retrieval (PyLate) + REPL-as-Context. "Retrieval First Agentic Systems." AI Engineering Club founder.
 - [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
+- [[entities/jj-allaire]] — JJ Allaire — Founder of Posit (formerly RStudio). Creator of Inspect AI (LLM eval framework, UK AISI collaboration). Design philosophy: Hadley Wickham-inspired clean, composable APIs.
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs, Token Budget Wars. Enterprise AI procurement dynamics (Jun 2026). Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
@@ -2094,8 +2096,9 @@
 - [[raw/papers/2601.19752-agentic-design-patterns]] — Agentic Design Patterns
 - [[raw/papers/2309.08168-self-speculative-decoding-zhang]] — Self-Speculative Decoding
 
-## Transcripts (33 pages)
+## Transcripts (34 pages)
 
+- [[transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework]] — Inspect: An OSS Framework for LLM Evals — JJ Allaire (UK AISI). Dataset/Solver/Scorer architecture, Honeycomb eval walkthrough, critique scoring, tool use, agent eval, LangChain integration, model support, log viewer, reproducibility. Companion: [[entities/inspect-ai]], [[entities/jj-allaire]]
 - [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]] — Why Fine-Tuning is Dead — Emmanuel Ameisen (Anthropic). RAG vs fine-tuning, prompting hierarchy of needs, price/context trends. Companion: [[raw/articles/2024-01-24_emeisen_why-fine-tuning-is-dead]], [[entities/emmanuel-ameisen]]
 - [[transcripts/2024-04-11_hyungwonchung-transcript]] — Stanford CS25: Shaping the Future of AI from the History of Transformer — Hyung Won Chung. Full talk transcript. Companion: [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]]
 - [[transcripts/2024-12-13_ilyasutskever-transcript]] — Sequence to Sequence Learning with Neural Networks: What a Decade — Ilya Sutskever (NeurIPS 2024). Full transcript. Companion: [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]]

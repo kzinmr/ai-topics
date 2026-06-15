@@ -1,3 +1,10 @@
+## [2026-06-15 21:00] manual — Transcript Ingestion: Inspect AI Eval Framework (JJ Allaire)
+
+- **Created**: [[transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework]] — Full lecture transcript (48 min). JJ Allaire presents Inspect AI at Hamel Husain's AI Evals course. Dataset/Solver/Scorer architecture, Honeycomb eval walkthrough, critique scoring, tool use, agent eval, LangChain integration.
+- **Created**: [[entities/inspect-ai]] — Inspect AI entity page. Open-source LLM eval framework by JJ Allaire + UK AISI.
+- **Created**: [[entities/jj-allaire]] — JJ Allaire entity page. Founder of Posit (formerly RStudio), creator of Inspect AI.
+- **Updated**: [[index.md]] — Added 3 entries. Page counts: 2515 total, 791 entities, 34 transcripts.
+
 ## [2026-06-15 20:00] manual — Transcript Ingestion: Why Fine-Tuning is Dead (Emmanuel Ameisen)
 
 - **Created**: [[transcripts/2024-01-24_emeisen_why-fine-tuning-is-dead-lecture]] — Full lecture transcript (54 min). RAG vs fine-tuning, prompting hierarchy, price/context trends.
