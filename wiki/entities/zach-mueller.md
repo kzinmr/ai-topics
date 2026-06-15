@@ -14,6 +14,7 @@ tags:
   - open-source
 sources:
   - raw/articles/2026-05-04_accelerate-fsdp-deepspeed-guide.md
+  - transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours.md
   - https://muellerzr.github.io/
   - https://muellerzr.github.io/blog/
 ---
@@ -159,5 +160,17 @@ Mueller launched **The Mueller Minute** (https://muellerminute.substack.com/) in
 | **Mueller Minute** | Weekly Substack newsletter on distributed training, optimization, and deep learning infrastructure. Launched early 2025. |
 | **H100 Performance Tests** | Open-source repository benchmarking T-FLOPS on 8×H100 nodes (CoreWeave). Found 25% improvement with FP8 vs BF16 on H100s. |
 | **Hugging Face Docker Spaces** | Pioneered using HF Hub as Docker registry for reproducible research. Published tutorial Apr 2024. |
+
+## LLM Fine Tuning Course — Office Hours (Jan 2024)
+
+Mueller was a guest on the **LLM Fine Tuning** course (Maven, taught by Dan Becker and Hamel Husain) office hours session, with Charles Frye co-hosting. Key points from the session:
+
+- **Accelerate API design**: Gradient accumulation feature was rewritten 6-7 times under Sylvain Gugger's "no magic" philosophy — every API must be transparent and debuggable
+- **GPU recommendations**: Prefers RTX A4500 over 4090 for rebuild (same VRAM, 1/4 power, 4× fit in same case). 2× RTX 4090 + FSDP for Llama 3 8B LoRA: 4-6 hours
+- **FSDP vs DeepSpeed**: FSDP = all-or-nothing (model on GPU1, gradients on GPU2). DeepSpeed = per-layer offloading. "Does it all fit in memory? Use FSDP. Need offloading? Look at DeepSpeed."
+- **Scaling laws**: Chinchilla still relevant for FLOP allocation, but Llama 3 showed you can train past optimal. Undertrained models are more steerable for fine-tuning
+- **Learning advice**: "Just tweak with shit" — hands-on coding beats reading. Make learnings public. Community feedback via Twitter/Discord essential
+
+**Full transcript:** [[transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours|Office Hours: FSDP, DeepSpeed and Accelerate]]
 
 

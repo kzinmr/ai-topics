@@ -2099,7 +2099,7 @@
 - [[raw/papers/2601.19752-agentic-design-patterns]] — Agentic Design Patterns
 - [[raw/papers/2309.08168-self-speculative-decoding-zhang]] — Self-Speculative Decoding
 
-## Transcripts (37 pages)
+## Transcripts (45 pages)
 
 - [[transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours]] — Office Hours: FSDP, DeepSpeed and Accelerate w/Zach Mueller. Accelerate API design ("no magic"), Axolotl vs AutoTrain, FSDP vs DeepSpeed tradeoffs, GPU selection (A4500 vs 4090), torch.compile for training, BF16/FP8 precision, multi-LoRA serving (vLLM, Kraken LoRA), scaling laws for fine-tuning. Companion: [[raw/articles/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours]], [[entities/zach-mueller]]
 - [[transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework]] — Inspect: An OSS Framework for LLM Evals — JJ Allaire (UK AISI). Dataset/Solver/Scorer architecture, Honeycomb eval walkthrough, critique scoring, tool use, agent eval, LangChain integration, model support, log viewer, reproducibility. Companion: [[entities/inspect-ai]], [[entities/jj-allaire]]

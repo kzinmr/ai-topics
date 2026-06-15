@@ -1,0 +1,3233 @@
+WEBVTT
+
+1
+00:00:10.160 --> 00:00:14.430
+Dan Becker: It'll start sounding formal in a moment. But do you just keep telling your story for the recording? Now.
+
+2
+00:00:14.430 --> 00:00:21.399
+Zach Mueller: Sure, we're basically talking about war stories. And back, when I was working with Silvon cougar on accelerate
+
+3
+00:00:21.892 --> 00:00:29.539
+Zach Mueller: in the discord they talked about like, Oh, all these abstractions and all these apis they suck they. It's like terrible to debug.
+
+4
+00:00:29.770 --> 00:00:33.890
+Zach Mueller: One of the really tough challenges with accelerate is we're not allowed to do magic.
+
+5
+00:00:34.410 --> 00:00:39.040
+Zach Mueller: We're not allowed to do things for the user that's handwriting. It has to be very explicit.
+
+6
+00:00:39.330 --> 00:00:44.819
+Zach Mueller: And so I remember when I wanted to do the automatic gradient accumulation.
+
+7
+00:00:45.180 --> 00:00:47.890
+Zach Mueller: I had to rewrite that thing.
+
+8
+00:00:48.060 --> 00:00:56.649
+Zach Mueller: I think, 6 or 7 times. Take it to Sylvan and just go. Hey, does this look right? No, too much magic. Does this look right? No, too much magic
+
+9
+00:00:56.860 --> 00:01:05.280
+Zach Mueller: over and over and over again, until finally we hit something, and then it's like one of the most used things and love things about our library. And it's like, Okay.
+
+10
+00:01:06.030 --> 00:01:07.120
+Zach Mueller: that was
+
+11
+00:01:07.200 --> 00:01:11.960
+Zach Mueller: 2 weeks of rewriting the same Api over and over again to appease
+
+12
+00:01:12.170 --> 00:01:13.440
+Zach Mueller: my boss.
+
+13
+00:01:13.873 --> 00:01:17.689
+Zach Mueller: Cause. Most of my war stories are gonna wind up being software related.
+
+14
+00:01:17.910 --> 00:01:20.140
+Zach Mueller: since I kind of
+
+15
+00:01:20.240 --> 00:01:24.500
+Zach Mueller: stopped training models for a few years and did strong software development
+
+16
+00:01:25.040 --> 00:01:28.529
+Zach Mueller: only now being revitalized, thanks to literally this course.
+
+17
+00:01:29.158 --> 00:01:31.230
+Zach Mueller: So kudos to that.
+
+18
+00:01:31.410 --> 00:01:35.549
+Zach Mueller: But that's, I guess sort of one of them of
+
+19
+00:01:35.850 --> 00:01:40.540
+Zach Mueller: sort of this problem of how do you write an Api that's transparent to the user.
+
+20
+00:01:40.780 --> 00:01:42.209
+Zach Mueller: easy to debug.
+
+21
+00:01:42.610 --> 00:01:47.629
+Zach Mueller: but also solves a solution. And that's a lot harder than you would think.
+
+22
+00:01:47.710 --> 00:01:51.060
+Zach Mueller: Which is why, like, I'm a big big fan of Axelottle.
+
+23
+00:01:51.090 --> 00:01:53.039
+Zach Mueller: because it just works.
+
+24
+00:01:53.120 --> 00:02:02.160
+Zach Mueller: It just works in the errors, at least for me, because I live in accelerate transformers and whatnot like they make sense because I'm familiar with those libraries.
+
+25
+00:02:02.410 --> 00:02:11.170
+Zach Mueller: but it doesn't do anything too intense. It doesn't have like weird programming practices, or like the the code that it's it's written is very clear.
+
+26
+00:02:11.220 --> 00:02:16.600
+Zach Mueller: And I'm a very big fan of that, because I do have war stories of trying to debug other libraries. And it's
+
+27
+00:02:17.150 --> 00:02:19.170
+Zach Mueller: they are war stories for a reason.
+
+28
+00:02:20.500 --> 00:02:22.314
+Dan Becker: In retrospect was,
+
+29
+00:02:24.560 --> 00:02:28.330
+Dan Becker: did that code improve a lot because Silvan pushed you to
+
+30
+00:02:28.430 --> 00:02:32.870
+Dan Becker: rewrite it? Or if in retrospect, would it? Okay, I did. Hmm.
+
+31
+00:02:32.870 --> 00:02:38.200
+Zach Mueller: Oh, yeah, it. Some of the stuff I came up with was far too magical and not really maintainable.
+
+32
+00:02:40.470 --> 00:02:47.110
+Zach Mueller: and so it was like 6 or 7 different rewrites before we finally got it right enough, in a way that
+
+33
+00:02:47.260 --> 00:02:53.109
+Zach Mueller: wound up sort of defining a lot of how accelerates built nowadays for the more complicated things.
+
+34
+00:02:57.430 --> 00:03:00.160
+Zach Mueller: which you know not perfect. But it gets the job done.
+
+35
+00:03:02.320 --> 00:03:04.820
+Dan Becker: Starting to look at some of these questions.
+
+36
+00:03:04.820 --> 00:03:05.570
+Zach Mueller: Sam.
+
+37
+00:03:06.400 --> 00:03:15.968
+Dan Becker: Oh, this bottom, this one that is bought. Actually, I'm gonna start sorting by what's up, folks? And and before we keep going, do you prefer that?
+
+38
+00:03:17.520 --> 00:03:23.009
+Dan Becker: I key up questions, or do you want to look through them? Or what's your preference on? How we tip questions for you?
+
+39
+00:03:23.860 --> 00:03:33.780
+Zach Mueller: We can get through the top ones, and then you can tee up any that you think are interesting. I'm gonna I have like the questions there, the discord on my left. So
+
+40
+00:03:34.540 --> 00:03:39.359
+Zach Mueller: we'll just roll with what it is. And if something's interesting, even if it doesn't have the most likes. We can talk about it.
+
+41
+00:03:39.520 --> 00:03:40.230
+Dan Becker: Awesome.
+
+42
+00:03:40.750 --> 00:03:48.279
+Dan Becker: I do have one that actually, I'm gonna I'm gonna steal what we just said. One of them was, what are your feelings on
+
+43
+00:03:49.600 --> 00:03:52.770
+Dan Becker: axolotl versus hf auto train.
+
+44
+00:03:54.990 --> 00:03:56.840
+Zach Mueller: There's a wink, Emoji.
+
+45
+00:03:57.700 --> 00:03:59.282
+Zach Mueller: who is this
+
+46
+00:04:00.090 --> 00:04:02.429
+Zach Mueller: cause? It's either my coworker
+
+47
+00:04:02.570 --> 00:04:05.698
+Zach Mueller: or you know who from Axelottle?
+
+48
+00:04:06.310 --> 00:04:08.699
+Zach Mueller: they solve 2 different problems in a way.
+
+49
+00:04:08.730 --> 00:04:16.709
+Zach Mueller: right auto train is agnostic in the sense of like train. Whatever you want with the data you have.
+
+50
+00:04:17.299 --> 00:04:24.419
+Zach Mueller: And it's also a slightly different. Api, when it look with what it looks for. And axolotle is very high level
+
+51
+00:04:24.880 --> 00:04:30.590
+Zach Mueller: train, a model for basically text. Right now, as Wing was talking about earlier.
+
+52
+00:04:31.186 --> 00:04:39.099
+Zach Mueller: Do it quickly, do it fast, following a pretty loose guideline towards what you can fit. So there are 2 different
+
+53
+00:04:39.390 --> 00:04:42.140
+Zach Mueller: prop. There are 2 different solutions to
+
+54
+00:04:42.540 --> 00:04:44.660
+Zach Mueller: a problem that can have overlap
+
+55
+00:04:46.120 --> 00:04:47.279
+Zach Mueller: if that makes sense.
+
+56
+00:04:47.880 --> 00:04:53.770
+Dan Becker: I've never used hip auto trade. So I was actually, I prioritized this question because I was hoping to
+
+57
+00:04:53.920 --> 00:04:59.909
+Dan Becker: learn. And I think I did. What hf, auto hiking face auto chain actually does
+
+58
+00:05:00.000 --> 00:05:01.369
+Dan Becker: through your answer.
+
+59
+00:05:02.630 --> 00:05:07.040
+Dan Becker: And I, personally did that. It almost sounds like, is auto train
+
+60
+00:05:07.380 --> 00:05:12.660
+Dan Becker: really doing more of like the smart search of parameters. Part of the problem.
+
+61
+00:05:14.180 --> 00:05:15.260
+Zach Mueller: Oh, boy!
+
+62
+00:05:16.350 --> 00:05:19.790
+Zach Mueller: Oh, the auto train talk soon will be.
+
+63
+00:05:19.790 --> 00:05:20.140
+Dan Becker: Does.
+
+64
+00:05:20.140 --> 00:05:22.230
+Zach Mueller: More cause I don't know.
+
+65
+00:05:22.957 --> 00:05:29.040
+Zach Mueller: My extent of auto train is helping debug auto train when accelerate breaks
+
+66
+00:05:31.000 --> 00:05:35.799
+Zach Mueller: so that would be a good question to say, for the auto train talk
+
+67
+00:05:36.850 --> 00:05:40.219
+Zach Mueller: is my official answer great?
+
+68
+00:05:40.870 --> 00:05:41.380
+Zach Mueller: I'll.
+
+69
+00:05:41.380 --> 00:05:45.330
+Dan Becker: Count that one is answered, and I'll let you start picking some.
+
+70
+00:05:46.020 --> 00:05:55.799
+Zach Mueller: Sure. Since many of us are new to Lm fine tuning. How do you think the typical learning journey looks like until one becomes an effective Lm engineer.
+
+71
+00:05:57.100 --> 00:05:57.970
+Zach Mueller: Just
+
+72
+00:05:58.340 --> 00:05:59.509
+Zach Mueller: tweak with shit.
+
+73
+00:06:00.080 --> 00:06:03.490
+Zach Mueller: It's like, just play with code, build models, do things
+
+74
+00:06:03.870 --> 00:06:09.080
+Zach Mueller: because you can spend ages reading and reading and reading and reading and never touch code.
+
+75
+00:06:09.300 --> 00:06:16.030
+Zach Mueller: And someone who's just in their backyard doing these things for fun on the side will have more practical experience for you
+
+76
+00:06:16.420 --> 00:06:18.940
+Zach Mueller: that sort of what situation?
+
+77
+00:06:19.220 --> 00:06:26.579
+Zach Mueller: 3 or 4 years ago, when I was learning fast, AI. And I still believe that situation today trained models get comfortable with the code.
+
+78
+00:06:26.890 --> 00:06:30.930
+Zach Mueller: the depth of expertise will come
+
+79
+00:06:31.010 --> 00:06:33.770
+Zach Mueller: with respect to the amount of time you do it.
+
+80
+00:06:34.150 --> 00:06:42.090
+Zach Mueller: you know, even if it's just running the same like Axolotl command, and just looking at the weights and biases graph for different data sets.
+
+81
+00:06:42.220 --> 00:06:44.169
+Zach Mueller: you will learn something there
+
+82
+00:06:44.200 --> 00:06:48.070
+Zach Mueller: that I probably won't, because I haven't done that enough
+
+83
+00:06:48.220 --> 00:06:50.309
+Zach Mueller: yet. So
+
+84
+00:06:50.720 --> 00:06:55.330
+Zach Mueller: just start playing with things and sort of the same advice that
+
+85
+00:06:55.530 --> 00:06:59.059
+Zach Mueller: we started giving with fast AI back in the day. Make it public.
+
+86
+00:06:59.280 --> 00:07:00.730
+Zach Mueller: Make your learnings public.
+
+87
+00:07:00.970 --> 00:07:03.640
+Zach Mueller: You know your model's available, your teaching's available
+
+88
+00:07:04.340 --> 00:07:09.890
+Zach Mueller: and be open to criticism from the people that know a lot more than you
+
+89
+00:07:10.242 --> 00:07:15.150
+Zach Mueller: to learn from it, and be very humble in that regard is, I guess, my answer to that.
+
+90
+00:07:16.180 --> 00:07:17.879
+Dan Becker: I want to push back
+
+91
+00:07:17.980 --> 00:07:23.739
+Dan Becker: for a moment just to get like I maybe that's something interesting in this, and that is
+
+92
+00:07:24.100 --> 00:07:26.039
+Dan Becker: when you are just fiddling.
+
+93
+00:07:27.030 --> 00:07:29.292
+Dan Becker: Which I I quite like doing.
+
+94
+00:07:30.870 --> 00:07:45.550
+Dan Becker: You learn by seeing what works or what happens and what doesn't happen. And if we were doing. There are many domains and conventional machine learning is probably a great example where you try something. Your score goes up or it goes down. And you're like, oh.
+
+95
+00:07:46.410 --> 00:07:55.830
+Dan Becker: this improved it, or didn't improve it. And with generative AI use cases. And I think language in particular.
+
+96
+00:07:56.830 --> 00:08:00.659
+Dan Becker: sometime you can see what happened to your perplexity score.
+
+97
+00:08:01.040 --> 00:08:02.255
+Dan Becker: But
+
+98
+00:08:04.740 --> 00:08:11.199
+Dan Becker: It's a little hard to know. Like, do I like what just happened, or like what did just happen when I
+
+99
+00:08:12.240 --> 00:08:16.440
+Dan Becker: I don't know. Change my learning rate or change whatever.
+
+100
+00:08:17.460 --> 00:08:18.890
+Dan Becker: do you have any thoughts about like
+
+101
+00:08:19.300 --> 00:08:25.460
+Dan Becker: how one gets feedback as they're experimenting in order to make sure they're learning.
+
+102
+00:08:26.200 --> 00:08:27.020
+Zach Mueller: Yeah.
+
+103
+00:08:27.600 --> 00:08:29.919
+Zach Mueller: talk to the people that are doing the cool things.
+
+104
+00:08:30.070 --> 00:08:32.180
+Zach Mueller: Just send them a DM. And say, Hey.
+
+105
+00:08:32.580 --> 00:08:35.979
+Zach Mueller: I'm doing this. I don't understand. You know
+
+106
+00:08:36.210 --> 00:08:38.630
+Zach Mueller: what this particular graph means.
+
+107
+00:08:38.980 --> 00:08:41.269
+Zach Mueller: or post it on Twitter like. That's
+
+108
+00:08:41.309 --> 00:08:47.430
+Zach Mueller: if you go through my last Twitter feed from the last month. I'm pretty sure I made a tweet that was quite literally just, hey, guys.
+
+109
+00:08:47.520 --> 00:08:49.340
+Zach Mueller: here's my lost graph.
+
+110
+00:08:49.600 --> 00:08:51.350
+Zach Mueller: Does this seem normal?
+
+111
+00:08:52.620 --> 00:08:58.269
+Zach Mueller: And because if you're only judging yourself and going off of yourself and your own knowledge.
+
+112
+00:08:58.480 --> 00:09:01.139
+Zach Mueller: You're going to think everything's fine, because everything looks normal.
+
+113
+00:09:01.420 --> 00:09:04.230
+Zach Mueller: right? And so that's where communities
+
+114
+00:09:04.470 --> 00:09:05.730
+Zach Mueller: really matter.
+
+115
+00:09:06.080 --> 00:09:14.429
+Zach Mueller: especially like this community that is now forming, because we're all here to go learn this thing right? So we can all sit there and go. Hey, here's my graph?
+
+116
+00:09:14.620 --> 00:09:16.049
+Zach Mueller: What are your thoughts?
+
+117
+00:09:17.040 --> 00:09:33.480
+Hamel Husain: Yeah, I think it's also important to like, pick a small project. It's really good. If you have Lm production already, and you have some traces. You have some logs about what? How your Lm is responding and what the use, you know, user is asking. And all whatever we'll go through that in a little in the next lecture, a little bit
+
+118
+00:09:34.680 --> 00:09:39.769
+Hamel Husain: of like how to collect those logs. But if you can take those and just fine tune, a model
+
+119
+00:09:40.301 --> 00:09:43.840
+Hamel Husain: and like start with like a smaller model. Start with Laura.
+
+120
+00:09:44.140 --> 00:09:46.979
+Hamel Husain: It's actually kind of hard to mess it up.
+
+121
+00:09:47.130 --> 00:09:50.710
+Hamel Husain: It was like really nice like Laura in the pre-trained model.
+
+122
+00:09:50.840 --> 00:09:52.310
+Hamel Husain: Use Axlottal
+
+123
+00:09:52.630 --> 00:09:55.070
+Hamel Husain: you don't really have. It's not like a.
+
+124
+00:09:55.570 --> 00:10:00.440
+Hamel Husain: So you have to get the hybrid parameters exactly right necessarily like it's kinda
+
+125
+00:10:00.830 --> 00:10:04.989
+Hamel Husain: has. Yeah, it's like, kind of this random forest feeling where you just like
+
+126
+00:10:05.080 --> 00:10:07.720
+Hamel Husain: point the model out of the data. And it kind of works.
+
+127
+00:10:07.820 --> 00:10:12.379
+Hamel Husain: And if you get that positive reinforcement, it really helps if you get it fast.
+
+128
+00:10:12.940 --> 00:10:13.990
+Hamel Husain: Yeah. So isn't it?
+
+129
+00:10:13.990 --> 00:10:18.210
+Zach Mueller: It's it's easy. As I look at my graphs from the last week.
+
+130
+00:10:18.860 --> 00:10:19.310
+Dan Becker: Going back.
+
+131
+00:10:19.310 --> 00:10:21.140
+Zach Mueller: So you, yeah, you're good. You're good.
+
+132
+00:10:21.640 --> 00:10:25.459
+Dan Becker: I said, going back to our talk from when we were with Wing.
+
+133
+00:10:26.040 --> 00:10:29.730
+Dan Becker: Parts of it might be easy. The part that's hard is actually
+
+134
+00:10:30.080 --> 00:10:35.440
+Dan Becker: dealing with tokenization and prompts and making sure that you do the same thing at inference time.
+
+135
+00:10:35.450 --> 00:10:37.769
+Dan Becker: That's training time, and that is like
+
+136
+00:10:38.140 --> 00:10:40.850
+Dan Becker: the opposite of that's like very hard.
+
+137
+00:10:42.780 --> 00:10:48.920
+Zach Mueller: I think, what I spent the last hour making sure that I could get my prompts right for inference after doing my actual training.
+
+138
+00:10:49.170 --> 00:10:52.660
+Zach Mueller: So it's it's a learning curve, and some of it's easier than others.
+
+139
+00:10:53.060 --> 00:10:55.000
+Zach Mueller: But that's part of the game.
+
+140
+00:10:55.950 --> 00:10:57.090
+Dan Becker: There was a
+
+141
+00:10:57.520 --> 00:11:01.770
+Dan Becker: question in in discord.
+
+142
+00:11:02.423 --> 00:11:08.366
+Dan Becker: Which was. And I wanna say one thing before then I'll hand it to you guys for an answer which was,
+
+143
+00:11:09.500 --> 00:11:13.570
+Dan Becker: something like, where do all the cool people hang out that I can use to get feedback?
+
+144
+00:11:15.080 --> 00:11:18.709
+Dan Becker: I think that, despite the immense amount of hype.
+
+145
+00:11:19.060 --> 00:11:23.180
+Dan Becker: the community of people who are actively like doing stuff and sharing it.
+
+146
+00:11:23.280 --> 00:11:26.999
+Dan Becker: even like community of doing it, people who are doing interesting things
+
+147
+00:11:27.180 --> 00:11:28.470
+Dan Becker: is
+
+148
+00:11:28.750 --> 00:11:33.780
+Dan Becker: smaller than you would expect, and is sort of in its infancy, and as a result.
+
+149
+00:11:34.730 --> 00:11:39.539
+Dan Becker: the ability to get feedback is much, much greater now than it will be
+
+150
+00:11:39.820 --> 00:11:44.060
+Dan Becker: a year from now when there's more people doing, and then it's harder to get people's attention
+
+151
+00:11:44.100 --> 00:11:44.755
+Dan Becker: and
+
+152
+00:11:45.710 --> 00:11:54.849
+Dan Becker: So we could talk about like Twitter. And and this I think our discord bunch of places that you could think of. But I I just want to say, like I think it is a huge, huge opportunity
+
+153
+00:11:54.920 --> 00:11:56.950
+Dan Becker: for us to if I can sound like a
+
+154
+00:11:57.460 --> 00:12:01.240
+Dan Becker: a salesman for a moment like to get it on the ground floor, by which I mean, like
+
+155
+00:12:01.820 --> 00:12:06.860
+Dan Becker: people are not. People who do cool stuff like Zack are not so inundated
+
+156
+00:12:06.900 --> 00:12:11.179
+Dan Becker: that they totally refuse messages from anyone or anything like that.
+
+157
+00:12:12.400 --> 00:12:14.070
+Zach Mueller: No, this community like
+
+158
+00:12:14.540 --> 00:12:18.760
+Zach Mueller: it's been a very humbling experience, because I sort of wasn't doing community stuff for a bit.
+
+159
+00:12:19.010 --> 00:12:23.879
+Zach Mueller: that it's we're all people, you know, and a lot of us don't have egos.
+
+160
+00:12:23.990 --> 00:12:28.039
+Zach Mueller: and especially right now, while it's a fine group of people like you were saying.
+
+161
+00:12:28.330 --> 00:12:34.659
+Zach Mueller: make use of that, you know. Talk to the people that are coming out with these models and emails and ask them questions
+
+162
+00:12:34.670 --> 00:12:36.720
+Zach Mueller: in Twitter, DM. On
+
+163
+00:12:36.860 --> 00:12:38.450
+Zach Mueller: their responses.
+
+164
+00:12:38.730 --> 00:12:42.650
+Zach Mueller: More likely they'll not. They'll answer whatever your question is, as long as you like.
+
+165
+00:12:43.050 --> 00:12:47.270
+Zach Mueller: Phrase it right. And don't you know? Give them not enough information. That's a.
+
+166
+00:12:47.270 --> 00:12:49.360
+Hamel Husain: But you definitely should put in the work so like. Don't.
+
+167
+00:12:49.360 --> 00:12:49.645
+Zach Mueller: Yes.
+
+168
+00:12:49.930 --> 00:12:52.629
+Hamel Husain: Just like don't just DM, someone like
+
+169
+00:12:52.690 --> 00:13:05.529
+Hamel Husain: whatever like you know, like. Tell them what you tried, what didn't work, what you researched. But then you got stuck like, show the person that you are trying. So from time to time I'll get a DM. From someone that
+
+170
+00:13:05.830 --> 00:13:15.000
+Hamel Husain: they just didn't try to like, read the documentation, read their error message, read anything, and then that case many times. I have to ignore those.
+
+171
+00:13:15.100 --> 00:13:15.990
+Hamel Husain: 8,
+
+172
+00:13:16.250 --> 00:13:18.200
+Hamel Husain: so don't know me. That person.
+
+173
+00:13:28.210 --> 00:13:40.330
+Charles Frye: I'd be actually super interested to hear Zack's answer to one of the most upvoted questions which are like, What are some good public data sets or cagle challenges for training or fine tuning Lms.
+
+174
+00:13:40.940 --> 00:13:45.730
+Charles Frye: like the Titanic data set, or iris or penguins, or whatever. But for Lons.
+
+175
+00:13:46.500 --> 00:13:52.769
+Zach Mueller: That's a good question that I'm not 100 sure on the answer for, and I'll sort of explain a little why.
+
+176
+00:13:52.930 --> 00:14:00.970
+Zach Mueller: so, my llama. 3 fine tune is based off of the Starcote or 2 and self instruct paper.
+
+177
+00:14:01.320 --> 00:14:05.459
+Zach Mueller: And essentially what that is is using an Lm. Using the base. Lm.
+
+178
+00:14:05.700 --> 00:14:09.069
+Zach Mueller: to generate your completion data set for you
+
+179
+00:14:09.910 --> 00:14:14.349
+Zach Mueller: off of existing code on Github, on a data set called the Stack.
+
+180
+00:14:14.860 --> 00:14:18.310
+Zach Mueller: So like. Personally, if I were to choose a starting data. Set
+
+181
+00:14:19.010 --> 00:14:26.750
+Zach Mueller: that one's not terrible because you're generating it yourself, or you have them available with known benchmarks that have end to end full transparent pipelines.
+
+182
+00:14:26.840 --> 00:14:30.250
+Zach Mueller: So you know what's good. You know what's bad, and you know roughly where you should end.
+
+183
+00:14:31.140 --> 00:14:37.549
+Zach Mueller: That's at least one that I know of that I'm currently doing to learn. But I'd be very interested to know what you guys sort of
+
+184
+00:14:37.590 --> 00:14:41.670
+Zach Mueller: also use as a gateway sort of data set and problem.
+
+185
+00:14:41.980 --> 00:14:45.419
+Hamel Husain: I like the instruction tuning one a lot. The Phil Phil Smith.
+
+186
+00:14:45.530 --> 00:14:52.780
+Hamel Husain: My smells! I don't know if I'm pronouncing his last name correct. Whatever. Like Bill Schmidt, he has like a fine-tuning llama
+
+187
+00:14:52.930 --> 00:14:59.710
+Hamel Husain: blog post. I think you say, Ex. I think instruction tuning or sorry instruction tuning lama. I think instruction. Tuning is a really good gateway
+
+188
+00:14:59.940 --> 00:15:02.229
+Hamel Husain: cause that kind of like gets your mind ready
+
+189
+00:15:02.380 --> 00:15:03.080
+Hamel Husain: for
+
+190
+00:15:03.190 --> 00:15:04.690
+Hamel Husain: yeah. Fine tuning.
+
+191
+00:15:05.720 --> 00:15:09.836
+Zach Mueller: 100%. There's a there's a ton you can learn in that.
+
+192
+00:15:10.990 --> 00:15:13.210
+Zach Mueller: let's see what was.
+
+193
+00:15:14.270 --> 00:15:15.949
+Dan Becker: The other ice
+
+194
+00:15:17.420 --> 00:15:19.790
+Dan Becker: need to put together Demos.
+
+195
+00:15:20.570 --> 00:15:23.640
+Dan Becker: for you know, potential clients somewhat frequently.
+
+196
+00:15:23.780 --> 00:15:27.710
+Dan Becker: and if you just go to hugging face and do a data set search.
+
+197
+00:15:28.740 --> 00:15:31.380
+Dan Becker: I wanted a data set about
+
+198
+00:15:31.930 --> 00:15:33.919
+Dan Becker: discussion of chemistry topics.
+
+199
+00:15:34.210 --> 00:15:37.038
+Dan Becker: I can probably find one and
+
+200
+00:15:37.830 --> 00:15:43.934
+Dan Becker: Then, like, is probably in a standard format, and then I just drop that link in the X lotto config.
+
+201
+00:15:44.250 --> 00:15:47.609
+Dan Becker: I would say that I'm in the same way that Cagle
+
+202
+00:15:47.820 --> 00:15:50.800
+Dan Becker: used to be, and maybe still is, for tabular data sets like
+
+203
+00:15:51.140 --> 00:15:53.248
+Dan Becker: the breadth of what's in
+
+204
+00:15:54.480 --> 00:15:57.190
+Dan Becker: hugging face data sets is pretty great.
+
+205
+00:15:58.490 --> 00:16:03.970
+Charles Frye: Yeah, one thing I would say is that synthetic data is really nice. For
+
+206
+00:16:04.090 --> 00:16:04.920
+Charles Frye: like
+
+207
+00:16:05.240 --> 00:16:20.639
+Charles Frye: one, there's a practical use which is taking a model that's too expensive to run and getting it into a smaller model. So and then 2, you have a very clear data generating process that you're trying to mimic, and you can run it right. If you have a data set you got from
+
+208
+00:16:20.941 --> 00:16:50.220
+Charles Frye: the Internet. You can't like generate new data from that on the fly ad hoc. And that's really important for like testing whether your training is working or not. So yeah. And you. So you can always compare it to this executing this like model you can also execute. So that's maybe you run inference in a 70 B model, and you're fine tuning an 8 B or a 3 B model and you just and so. And you've a really solid gold standard, because all you're trying to do is mimic that thing.
+
+209
+00:16:50.530 --> 00:16:52.120
+Charles Frye: And then the second.
+
+210
+00:16:52.700 --> 00:16:53.540
+Zach Mueller: You're good. Go ahead.
+
+211
+00:16:54.020 --> 00:16:55.360
+Zach Mueller: Oh, no. Okay. Yeah. This.
+
+212
+00:16:55.360 --> 00:17:17.600
+Charles Frye: Second piece of infer. The second advice is that you also want something that changes over time, like the data set, grows over time, because when you when it comes time to actually deploy machine learning in production, you're gonna have like a stream of data, not like a batch like a batch data set that you just run on. And so if you want something. So you like, just, for example, you might take
+
+213
+00:17:17.750 --> 00:17:23.140
+Charles Frye: tweets and have Gpt 4 classify them. And that's your data set.
+
+214
+00:17:23.280 --> 00:17:46.610
+Charles Frye: And then a week later, there will be more tweets that you can run through. Gbd 4 and classify. And now you can find out whether you have like train test leakage issues. You can find out if you're like overfitting to the to the like. This week's content of tweets. And next week it's something different. And that so it's like kind of similar to numeri, or some of like ongoing challenges where you need to like actually learn.
+
+215
+00:17:47.400 --> 00:17:58.739
+Charles Frye: you know, of, like a Str, how to model a stream of data. And that also is going to really help. You know what you need to do when it's time to build a production. Ml, application.
+
+216
+00:18:05.496 --> 00:18:06.490
+Zach Mueller: Let's see
+
+217
+00:18:07.010 --> 00:18:19.400
+Zach Mueller: one of the questions I was interested in in my experience. So I've been a pain either to use accelerate or torch. Can you clarify the best practices when using it? And is it worth using it when running? Ddp Fsd. Or deep speed?
+
+218
+00:18:19.823 --> 00:18:36.259
+Zach Mueller: I just remember when George Compile launched. It was all hype, but then there was no example in excel that uses compile. And does it have any benefit for Vram? Yes, I would not be able to do my llama 3 billion fine tune on 2 40 nineties if I did not have Fsdp available.
+
+219
+00:18:37.234 --> 00:18:41.630
+Zach Mueller: Cause. Essentially, what Fscp allows is your 2, 40 90 s. Are not too
+
+220
+00:18:41.700 --> 00:18:47.160
+Zach Mueller: 24 gig cards. They are in a light sense, 1, 48 gig card.
+
+221
+00:18:47.830 --> 00:18:57.359
+Zach Mueller: And so it's critical that you do that which go back through the talk. I pretty sure I talked very explicitly about the difference in memory usage between the 3 of those.
+
+222
+00:19:05.390 --> 00:19:06.840
+Zach Mueller: let's see.
+
+223
+00:19:06.840 --> 00:19:25.679
+Charles Frye: The the question was also kind of about torch compile. If I understand it right, it was like using accelerate with compile, using axolotl with compile. And I guess my feeling is that compile is like a little bit more of an inference time optimization than a than a training time optimization where it's like
+
+224
+00:19:25.880 --> 00:19:46.514
+Charles Frye: you have a very fixed graph. You like the maybe your your inference time. Often your batch sizes are much smaller. Cause you're only getting like one request at a time. And so the like overhead from running a dynamic graph generation is too high. And so you'd rather just you. So you want to
+
+225
+00:19:47.270 --> 00:19:53.961
+Charles Frye: like switch to like a static compiled graph. Maybe I like that's my impression from how I've used the tools. But.
+
+226
+00:19:54.280 --> 00:19:55.990
+Zach Mueller: Certainly how it used to be.
+
+227
+00:19:56.060 --> 00:19:58.060
+Zach Mueller: That is not where pi torch is going.
+
+228
+00:19:58.150 --> 00:20:00.510
+Zach Mueller: Pie. Torch wants torch compile everywhere.
+
+229
+00:20:02.543 --> 00:20:04.229
+Zach Mueller: Which mixed
+
+230
+00:20:04.460 --> 00:20:07.040
+Zach Mueller: right? Because it's compiled. It can have issues.
+
+231
+00:20:07.515 --> 00:20:10.770
+Zach Mueller: For instance, they have a library called Pippi out right now.
+
+232
+00:20:10.960 --> 00:20:13.689
+Zach Mueller: that is, native torch, pipeline parallelism
+
+233
+00:20:13.730 --> 00:20:15.120
+Zach Mueller: for training
+
+234
+00:20:15.500 --> 00:20:17.799
+Zach Mueller: that relies heavily on torch compile.
+
+235
+00:20:18.500 --> 00:20:23.170
+Zach Mueller: So that's where things get weird and sort of experimental
+
+236
+00:20:23.805 --> 00:20:29.489
+Zach Mueller: and I expect that landscape to change dramatically over the next like 3 to 6 months.
+
+237
+00:20:30.487 --> 00:20:35.139
+Zach Mueller: So for right now I believe you, you can train on compile.
+
+238
+00:20:35.370 --> 00:20:37.050
+Zach Mueller: How well it works.
+
+239
+00:20:37.460 --> 00:20:40.910
+Zach Mueller: A lot depends on sort of how the model is laid out, I found.
+
+240
+00:20:40.970 --> 00:20:43.330
+Zach Mueller: with just where people's issues have come.
+
+241
+00:20:44.240 --> 00:20:49.410
+Charles Frye: And the so the benefit of train time is that you're getting like sort of dynamic operator fusion.
+
+242
+00:20:49.410 --> 00:20:52.841
+Zach Mueller: Yes. So it's speeds up train time.
+
+243
+00:20:53.710 --> 00:20:57.550
+Zach Mueller: mostly. It's throughput optimizations more than memory optimizations.
+
+244
+00:21:00.330 --> 00:21:02.410
+Charles Frye: Yeah. Like, like, operate like kernel fusion.
+
+245
+00:21:02.410 --> 00:21:03.690
+Zach Mueller: Yes, yes.
+
+246
+00:21:05.050 --> 00:21:05.800
+Zach Mueller: got it.
+
+247
+00:21:16.160 --> 00:21:30.069
+Zach Mueller: Here's sort of an interesting one. I have a question about training, inference, precision. I'm training on 30 90 s. At home, or thinking of renting an a. 100 on azure. However, my inference setting T. 4 s. Do not support. Bf. 16. But my train model
+
+248
+00:21:30.650 --> 00:21:36.959
+Zach Mueller: trained, based on deep speak uses. Bf, 16 seems for poorly. Nfb. 16.
+
+249
+00:21:38.570 --> 00:21:45.940
+Zach Mueller: Any recommendation on here, on how I can increase throughput. I would use vanilla, hugging face inference which has fake. Bf, 16.
+
+250
+00:21:46.140 --> 00:21:48.059
+Zach Mueller: But the throughput is painfully slow.
+
+251
+00:21:48.310 --> 00:21:50.310
+Zach Mueller: You're gonna get painfully slow.
+
+252
+00:21:50.420 --> 00:21:55.349
+Zach Mueller: you know. It's it's they're optimized for Bf 16 for a very good reason.
+
+253
+00:21:56.450 --> 00:21:57.420
+Zach Mueller: And
+
+254
+00:21:57.580 --> 00:22:01.519
+Zach Mueller: that's especially a scary place to be in, because we had a lot of issues with
+
+255
+00:22:01.530 --> 00:22:04.200
+Zach Mueller: models that were trained fully in Bf. 16,
+
+256
+00:22:04.300 --> 00:22:10.419
+Zach Mueller: which broke entirely when they were upcast to be to fp. 32 again.
+
+257
+00:22:10.530 --> 00:22:17.319
+Zach Mueller: That's why trainer uses an autocast form to train everything in Bf. 16,
+
+258
+00:22:17.390 --> 00:22:21.720
+Zach Mueller: so that way it can be upscaled back
+
+259
+00:22:21.750 --> 00:22:22.910
+Zach Mueller: easily.
+
+260
+00:22:23.520 --> 00:22:25.540
+Zach Mueller: So, but
+
+261
+00:22:25.710 --> 00:22:28.440
+Zach Mueller: normal. FP. 16 is.
+
+262
+00:22:28.970 --> 00:22:34.928
+Zach Mueller: and Sam might come in and smack me for this, but in my experience, usually a little less
+
+263
+00:22:35.540 --> 00:22:36.690
+Zach Mueller: optimized.
+
+264
+00:22:36.980 --> 00:22:39.180
+Zach Mueller: then bf, 16 will be so. It will be slower.
+
+265
+00:22:44.080 --> 00:22:45.919
+Zach Mueller: Let's see what else we have.
+
+266
+00:23:01.612 --> 00:23:04.009
+Zach Mueller: I like this. I like anti questions.
+
+267
+00:23:04.160 --> 00:23:10.100
+Zach Mueller: What are the main downsides with F with Fsdp.
+
+268
+00:23:10.270 --> 00:23:17.859
+Zach Mueller: When is it really the not best tool for your job and training and fine tuning, such as hardware configurations, Llms. Diffusions, and vice versa.
+
+269
+00:23:17.970 --> 00:23:19.770
+Zach Mueller: Basically.
+
+270
+00:23:20.640 --> 00:23:31.000
+Zach Mueller: Fsdp really shines when you have, you know, big models when you're training big models, or if your model barely fits on one Gpu and you have 2 available.
+
+271
+00:23:31.350 --> 00:23:45.050
+Zach Mueller: Because now, essentially what you can kind of do and imagine is, the model is fully on one, and the gradients and everything else are just in the other. Gpu. And so you have a ton of extra Vram that you can go use
+
+272
+00:23:47.330 --> 00:23:53.359
+Zach Mueller: now. Fscp versus deep speed deep speed is a very configurable.
+
+273
+00:23:53.370 --> 00:23:59.030
+Zach Mueller: It has a little more freedom than Fscp would. When it comes to like offloading certain things and having
+
+274
+00:23:59.210 --> 00:24:03.479
+Zach Mueller: certain device configurations. Fscv takes the All or nothing approach.
+
+275
+00:24:03.500 --> 00:24:14.479
+Zach Mueller: So like, I'm pretty sure, deep speed you can specify like just these layers should be offloaded to, you know the CPU. So that way we barely don't hit out of memory with Ms tp, it's all going to be done.
+
+276
+00:24:14.630 --> 00:24:21.179
+Zach Mueller: So it's little situations like that. Where does it all fit in memory? Use Fftv.
+
+277
+00:24:21.190 --> 00:24:29.699
+Zach Mueller: If you have to do a bit of offloading might look at deep speed. Be that 0 3 or 0 2 and see sort of what optimizations could go there
+
+278
+00:24:30.800 --> 00:24:31.270
+Zach Mueller: cause.
+
+279
+00:24:31.270 --> 00:24:35.060
+Hamel Husain: One question I have about that. And this is always the debate is like.
+
+280
+00:24:36.070 --> 00:24:41.149
+Hamel Husain: Okay, if you have a if you're gpour and using your own rig?
+
+281
+00:24:43.200 --> 00:24:45.540
+Hamel Husain: there's some fair amount of debate of like.
+
+282
+00:24:45.970 --> 00:24:50.589
+Hamel Husain: does Nv. How much does Nv. Link the the lack of Nv. Link
+
+283
+00:24:51.290 --> 00:24:53.120
+Hamel Husain: destroy performance.
+
+284
+00:24:53.820 --> 00:24:54.280
+Zach Mueller: And like, if you.
+
+285
+00:24:54.280 --> 00:25:04.700
+Hamel Husain: I'll try to Google for this topic. There's very sparse information. There's like there's like one hugging phase page where, like Silvan did an experiment one time and savvy?
+
+286
+00:25:04.720 --> 00:25:12.360
+Hamel Husain: And maybe even Stas showed like some 25% degradation. But then there's some debate about
+
+287
+00:25:12.830 --> 00:25:16.439
+Hamel Husain: okay, that's if that's the right number and whatever
+
+288
+00:25:16.815 --> 00:25:21.329
+Hamel Husain: and then, like, there's a Tim Deter's blog who just flatly says that you don't need it.
+
+289
+00:25:22.040 --> 00:25:31.570
+Hamel Husain: And then there's like other people are like you do need it, or like it does like make a huge difference. So I'm just like curious, if you like. Yeah, I don't. I don't know the answer.
+
+290
+00:25:31.880 --> 00:25:32.650
+Zach Mueller: So
+
+291
+00:25:33.010 --> 00:25:34.000
+Zach Mueller: it's
+
+292
+00:25:34.730 --> 00:25:38.569
+Zach Mueller: envy. Link doesn't work for 30 for 49 days, and I believe
+
+293
+00:25:38.730 --> 00:25:42.630
+Zach Mueller: maybe barely works for 30 90 Si forget. But
+
+294
+00:25:43.460 --> 00:25:47.275
+Hamel Husain: That's true. Yeah. So the Gp port would probably, yeah, yeah, yeah, yeah, it's like.
+
+295
+00:25:47.530 --> 00:25:47.890
+Zach Mueller: Your stuff.
+
+296
+00:25:47.890 --> 00:25:48.969
+Hamel Husain: Yeah, 90, s, yeah, yeah.
+
+297
+00:25:48.970 --> 00:25:57.789
+Zach Mueller: It's only 30 nineties, which is why, for a while 30 90 s. Were sort of the golden child. I don't have 30 90 Si could find 40 nineties before I could find 30 nineties.
+
+298
+00:25:57.940 --> 00:25:59.610
+Zach Mueller: That's how insane it is.
+
+299
+00:26:01.950 --> 00:26:04.430
+Zach Mueller: so the exact numbers on stuff like this is like.
+
+300
+00:26:05.050 --> 00:26:07.809
+Zach Mueller: you know, Tim Debor's talked about how
+
+301
+00:26:07.850 --> 00:26:12.390
+Zach Mueller: consumer cards are throttled a bit on purpose with their drivers.
+
+302
+00:26:12.964 --> 00:26:14.909
+Zach Mueller: And the video knows about this.
+
+303
+00:26:15.430 --> 00:26:24.440
+Zach Mueller: And so when I was doing the math recently to get like a new, a 4,500 at the same vram as the 40 90
+
+304
+00:26:24.760 --> 00:26:27.960
+Zach Mueller: was an extra $500, I think
+
+305
+00:26:28.230 --> 00:26:30.240
+Zach Mueller: 5 or 600. So it was like a tier up.
+
+306
+00:26:30.340 --> 00:26:35.270
+Zach Mueller: cause you're already paying, you know, $1,800 for a but it was about the same issue.
+
+307
+00:26:35.460 --> 00:26:39.129
+Zach Mueller: I think it was like 24, or 2,500 for the A 4,500.
+
+308
+00:26:40.150 --> 00:26:42.650
+Zach Mueller: If I had to build my rig again.
+
+309
+00:26:42.810 --> 00:26:44.729
+Zach Mueller: I would probably buy the card.
+
+310
+00:26:45.780 --> 00:26:46.669
+Zach Mueller: You would probably.
+
+311
+00:26:46.670 --> 00:26:47.580
+Hamel Husain: What card? Sorry.
+
+312
+00:26:47.580 --> 00:26:49.090
+Zach Mueller: I buy the A 4,500
+
+313
+00:26:50.380 --> 00:26:52.449
+Zach Mueller: because it is a thing we're like
+
+314
+00:26:53.160 --> 00:26:55.360
+Zach Mueller: more than the performance hit
+
+315
+00:26:56.010 --> 00:26:57.749
+Zach Mueller: the power usage.
+
+316
+00:26:57.750 --> 00:26:59.830
+Hamel Husain: Hmm, and the heat and everything. Yeah, in the space.
+
+317
+00:26:59.830 --> 00:27:06.960
+Zach Mueller: It's a fraction right? Like I'm I have 2 water cooled 40 nineties, and I have to have a giant case because of it
+
+318
+00:27:07.120 --> 00:27:11.200
+Zach Mueller: versus it. I could fit 4 a 4,500 s. In that case
+
+319
+00:27:11.280 --> 00:27:15.480
+Zach Mueller: I'm pretty sure, and cause I think they're a single shot slot. If not, they're 2.
+
+320
+00:27:15.480 --> 00:27:17.410
+Hamel Husain: Yeah, they're very nice and slim.
+
+321
+00:27:17.610 --> 00:27:23.080
+Zach Mueller: Yeah, they're super slim, and they use like a fourth of the wattage.
+
+322
+00:27:23.460 --> 00:27:24.580
+Zach Mueller: So
+
+323
+00:27:24.620 --> 00:27:29.529
+Zach Mueller: and also they have more kudacres available to them for actually to be used by for training.
+
+324
+00:27:30.700 --> 00:27:34.459
+Zach Mueller: However, if you can't find them, which a lot of people can't.
+
+325
+00:27:35.210 --> 00:27:36.630
+Zach Mueller: you can get by
+
+326
+00:27:37.530 --> 00:27:39.690
+Zach Mueller: right. I've done my job.
+
+327
+00:27:40.370 --> 00:27:45.409
+Zach Mueller: Granted. My job has had limited training, but I've done my job with just few 40 90 s.
+
+328
+00:27:45.930 --> 00:27:50.080
+Zach Mueller: To do 4 iterations on Laura tuning.
+
+329
+00:27:50.580 --> 00:27:52.380
+Zach Mueller: Llama! 3 8 billion.
+
+330
+00:27:52.930 --> 00:27:56.690
+Zach Mueller: It's about somewhere between 4 to 6 h
+
+331
+00:27:57.260 --> 00:27:58.940
+Zach Mueller: to get full training done.
+
+332
+00:27:59.220 --> 00:27:59.965
+Zach Mueller: Yeah.
+
+333
+00:28:01.080 --> 00:28:05.869
+Hamel Husain: It's a I think it's a pretty good card. Yeah, it's a pretty nice ish card, for sure. Like.
+
+334
+00:28:05.980 --> 00:28:08.720
+Hamel Husain: yeah, he is like, small and yeah makes sense.
+
+335
+00:28:08.720 --> 00:28:12.100
+Zach Mueller: It. It works. And it's, you know, it's one of those things where it's like, if you can find it.
+
+336
+00:28:12.670 --> 00:28:13.859
+Zach Mueller: I'd probably do it.
+
+337
+00:28:14.270 --> 00:28:15.910
+Zach Mueller: But if not, like.
+
+338
+00:28:16.140 --> 00:28:17.500
+Zach Mueller: you'll be okay.
+
+339
+00:28:18.650 --> 00:28:22.009
+Zach Mueller: It sucks because Nividia is sort of squeezing us out. But
+
+340
+00:28:22.170 --> 00:28:23.220
+Zach Mueller: yeah, we'll find a way.
+
+341
+00:28:23.220 --> 00:28:25.959
+Hamel Husain: Yeah, waging a war on the Gpu. Pours.
+
+342
+00:28:26.260 --> 00:28:27.500
+Zach Mueller: That's great. We love it.
+
+343
+00:28:27.500 --> 00:28:28.290
+Hamel Husain: Really bad.
+
+344
+00:28:32.456 --> 00:28:33.370
+Zach Mueller: I like.
+
+345
+00:28:33.370 --> 00:28:34.500
+Hamel Husain: Having the rig, though.
+
+346
+00:28:34.970 --> 00:28:35.850
+Zach Mueller: Oh, it's cool.
+
+347
+00:28:35.850 --> 00:28:41.459
+Hamel Husain: For some reason, like, I just yeah, it's kind of crazy is 2024. I still like having a rick, but so like having a rick.
+
+348
+00:28:41.780 --> 00:28:42.980
+Zach Mueller: Well, it's because you own it.
+
+349
+00:28:43.640 --> 00:28:44.769
+Zach Mueller: You own it and.
+
+350
+00:28:44.770 --> 00:28:49.470
+Hamel Husain: It's just like E. It's still slight little bit easier for me to like Tinker around.
+
+351
+00:28:49.690 --> 00:28:50.340
+Zach Mueller: Yeah.
+
+352
+00:28:51.010 --> 00:28:55.020
+Zach Mueller: And you know you never get bored if you just sit there and upgrade computer parts every once in a while.
+
+353
+00:28:57.030 --> 00:29:00.660
+Zach Mueller: gives you a fun side hobby to do while you stare at the pretty fans going.
+
+354
+00:29:01.410 --> 00:29:02.690
+Zach Mueller: RGB. Or not.
+
+355
+00:29:05.150 --> 00:29:06.610
+Zach Mueller: Let's see.
+
+356
+00:29:07.510 --> 00:29:10.910
+Zach Mueller: we want to know if fine-tuning can ever catch up to frontier models.
+
+357
+00:29:11.895 --> 00:29:13.319
+Zach Mueller: That's fun question.
+
+358
+00:29:14.200 --> 00:29:15.330
+Zach Mueller: It's.
+
+359
+00:29:16.130 --> 00:29:27.879
+Hamel Husain: Well, if you look at technicians, models, he has these community fine tunes, and they like exceed the the base on many benchmarks, cause he but tries to fine tune them broadly. It's almost like a continued free training. In a way.
+
+360
+00:29:28.040 --> 00:29:29.790
+Hamel Husain: the yeah on what he's doing.
+
+361
+00:29:30.300 --> 00:29:33.869
+Zach Mueller: Exactly
+
+362
+00:29:32.700 --> 00:29:33.869
+Zach Mueller: And so it's
+
+363
+00:29:33.900 --> 00:29:45.929
+Zach Mueller: it's largely on the community, right? And so if we can go through and make those fine tunes and make them competitive. That's great. In some ways. We're also fighting a losing war because data.
+
+364
+00:29:47.250 --> 00:29:51.290
+Zach Mueller: right cause the closed source. People have access to a ton more data than we do.
+
+365
+00:29:51.540 --> 00:29:52.500
+Zach Mueller: But
+
+366
+00:29:52.740 --> 00:29:54.810
+Zach Mueller: you know, as you said, Hamil, we're kind of
+
+367
+00:29:55.530 --> 00:29:57.460
+Zach Mueller: keeping pace as best we can.
+
+368
+00:29:58.500 --> 00:29:59.449
+Zach Mueller: You know.
+
+369
+00:30:02.300 --> 00:30:11.409
+Zach Mueller: Also notice this in the discord, someone getting excited because they never heard about the A. 45 hundreds before. And the price how it looks affordable, because it's close to the 3,090.
+
+370
+00:30:11.490 --> 00:30:13.530
+Zach Mueller: Make sure you're looking at the right one.
+
+371
+00:30:14.000 --> 00:30:18.219
+Zach Mueller: The older version is 20 gig. The new version is 24 gig.
+
+372
+00:30:19.973 --> 00:30:32.089
+Zach Mueller: Either. Or again, it's fine. In my opinion. I almost went with the 20 gigs instead of the 24 gigs, and I believe the same actually recommended the 20 gigs for me instead of 40 90 s. Back in the day when I was building that.
+
+373
+00:30:32.690 --> 00:30:36.650
+Zach Mueller: But here we are. I had to do some debugging with Fp. 8. So I needed 40 90 s.
+
+374
+00:30:46.190 --> 00:30:47.440
+Zach Mueller: wait. It's actually 8.
+
+375
+00:30:47.440 --> 00:30:54.410
+Charles Frye: 40. The oh, the 40 nineties do have fp, 8. But the A 4,500 don't cause they're am peer series. Okay? Yeah.
+
+376
+00:30:54.410 --> 00:30:55.980
+Zach Mueller: The prior ones.
+
+377
+00:30:56.080 --> 00:30:58.680
+Zach Mueller: There's a 4,500 s. That are Adas.
+
+378
+00:31:00.280 --> 00:31:01.780
+Charles Frye: And they didn't make it an h.
+
+379
+00:31:02.910 --> 00:31:03.225
+Zach Mueller: Nope.
+
+380
+00:31:04.210 --> 00:31:05.200
+Charles Frye: You hate to see it.
+
+381
+00:31:05.640 --> 00:31:10.570
+Zach Mueller: So. But that's the newer version. That's the 24 gig that has the Ada capability.
+
+382
+00:31:12.158 --> 00:31:16.479
+Zach Mueller: What are some ways to ensure that prompting and tokens work at inference time.
+
+383
+00:31:16.870 --> 00:31:19.370
+Zach Mueller: That's a fun one. I was just looking at that
+
+384
+00:31:20.037 --> 00:31:27.009
+Zach Mueller: the best thing I found to do is upload your model to the hub, or just have it locally
+
+385
+00:31:27.110 --> 00:31:28.740
+Zach Mueller: and load it in a pipeline
+
+386
+00:31:30.173 --> 00:31:38.030
+Zach Mueller: and do I believe it's model dot generate or even just calling the pipeline itself. There's a phenomenal
+
+387
+00:31:38.670 --> 00:31:44.279
+Zach Mueller: guide which I will link here. Well, I guess I can't link it there. I'll link it in the discord
+
+388
+00:31:45.020 --> 00:31:47.439
+Zach Mueller: that talks about chat templating.
+
+389
+00:31:47.610 --> 00:31:53.170
+Zach Mueller: and it was the exact debugging guide I used when I was looking at trying to find problems with inference
+
+390
+00:31:54.740 --> 00:31:59.140
+Zach Mueller: when it came to taking these train models and trying to look at. How are my tokens looking?
+
+391
+00:32:07.840 --> 00:32:09.580
+Zach Mueller: Let's see.
+
+392
+00:32:13.200 --> 00:32:16.729
+Hamel Husain: Yeah, I mean the the hugging phase chat templates are pretty cool, but I don't.
+
+393
+00:32:17.170 --> 00:32:18.309
+Hamel Husain: I guess, like.
+
+394
+00:32:19.310 --> 00:32:23.149
+Hamel Husain: and actually don't understand. Like, can you use those directly in exlottal.
+
+395
+00:32:23.600 --> 00:32:24.940
+Hamel Husain: not sure.
+
+396
+00:32:25.220 --> 00:32:35.039
+Zach Mueller: No, you can't. That was actually a big thing I was talking about with Wing, because Axol doesn't do that. And so you essentially have to copy and paste your entire chat template
+
+397
+00:32:35.210 --> 00:32:37.039
+Zach Mueller: with the question you want to answer
+
+398
+00:32:37.748 --> 00:32:43.709
+Zach Mueller: which was very concerning for me, because I felt like I was doing something wrong, because I felt like that should be magically happening.
+
+399
+00:32:43.970 --> 00:32:51.939
+Hamel Husain: Yeah, it does feel like the right design pattern in the future is like maybe standardizing on something like that, like the hooking phase chat, template.
+
+400
+00:32:52.420 --> 00:32:53.820
+Zach Mueller: Which I think you can. Hmm.
+
+401
+00:32:54.220 --> 00:32:56.530
+Hamel Husain: Maybe that's what you're advocating for in the discord.
+
+402
+00:32:56.790 --> 00:33:02.709
+Zach Mueller: Yeah, I was talking with him about that is like that'd be a good thing at some point that even I might look at doing cause. That's
+
+403
+00:33:03.704 --> 00:33:10.560
+Zach Mueller: you know, when you merge your path model. One thing I immediately wanted to do was test the weights to make sure that everything worked.
+
+404
+00:33:11.030 --> 00:33:13.089
+Zach Mueller: So that's huge. Yeah.
+
+405
+00:33:13.570 --> 00:33:19.060
+Hamel Husain: And like, yeah, if you could do that, it would actually get rid of lots of spaghetti code.
+
+406
+00:33:19.140 --> 00:33:29.300
+Hamel Husain: because, like a lot of the spaghetti code is around the prompt, templating craziness. But the the masking part, I don't know the input output masking. Okay? And yeah, maybe you can't. Maybe it's like.
+
+407
+00:33:30.220 --> 00:33:30.920
+Hamel Husain: yeah.
+
+408
+00:33:36.080 --> 00:33:40.999
+Zach Mueller: What do you do to run inference on an 8 billion model using a single Nvidia 40 90.
+
+409
+00:33:41.490 --> 00:33:47.840
+Zach Mueller: My current calculation show minimum Gpu requirement of 13 gigs.
+
+410
+00:33:48.520 --> 00:33:50.030
+Zach Mueller: That's about right?
+
+411
+00:33:50.668 --> 00:33:52.709
+Zach Mueller: If you're doing half precision.
+
+412
+00:33:53.630 --> 00:33:55.349
+Zach Mueller: you can do quantize
+
+413
+00:33:56.316 --> 00:34:01.120
+Zach Mueller: you can also get a bit slow and do like offloading
+
+414
+00:34:01.400 --> 00:34:04.359
+Zach Mueller: to offload under the CPU. It'll be a bit slower, but you can run it
+
+415
+00:34:06.004 --> 00:34:12.710
+Zach Mueller: and that's just do. Device map equals auto whenever you're like bringing the model in from transformers.
+
+416
+00:34:13.449 --> 00:34:23.009
+Hamel Husain: Yeah, I mean, like a user experience standpoint like sweet spot is, I would say, Vlm, use auto, aw, or some quantization quantization method like that.
+
+417
+00:34:23.369 --> 00:34:24.559
+Hamel Husain: It's a nice.
+
+418
+00:34:24.679 --> 00:34:30.239
+Hamel Husain: you know. You can always like, get faster with Trtlm. But then you have to. Okay, like, suffer.
+
+419
+00:34:30.850 --> 00:34:38.380
+Zach Mueller: I quickly fell in love with the Llm. That's what the Star Coder 2 instruct people used for their data set generation. It was like
+
+420
+00:34:38.760 --> 00:34:43.440
+Zach Mueller: holy crap. This is easy to use. You just point to the folder, and it goes.
+
+421
+00:34:43.440 --> 00:34:44.999
+Hamel Husain: Yeah, for sure.
+
+422
+00:34:45.929 --> 00:34:48.379
+Zach Mueller: Why aren't models trained in int. 8?
+
+423
+00:34:48.550 --> 00:34:50.382
+Zach Mueller: That's a good question.
+
+424
+00:34:51.330 --> 00:34:52.949
+Zach Mueller: because it's very unstable
+
+425
+00:34:54.001 --> 00:34:58.788
+Zach Mueller: Nividas come out with something called transformers, engine or
+
+426
+00:34:59.940 --> 00:35:02.220
+Zach Mueller: Oh, there's another one that I can't remember off top of my head.
+
+427
+00:35:02.260 --> 00:35:07.060
+Zach Mueller: Ms app, and they are experimental. You can train in 8 bit.
+
+428
+00:35:08.003 --> 00:35:11.540
+Zach Mueller: Practically, from what I've heard, just around the bend
+
+429
+00:35:11.880 --> 00:35:13.439
+Zach Mueller: is, people have tried it.
+
+430
+00:35:13.470 --> 00:35:15.170
+Zach Mueller: They still go back to BF. 16.
+
+431
+00:35:15.520 --> 00:35:16.960
+Zach Mueller: It's just better.
+
+432
+00:35:17.682 --> 00:35:22.350
+Zach Mueller: That's part of why I'm doing this lama. 3 8 billion experiment is, I want to go see it for myself.
+
+433
+00:35:22.880 --> 00:35:25.130
+Zach Mueller: But that's just what I've heard.
+
+434
+00:35:25.766 --> 00:35:29.629
+Zach Mueller: I know pie torch, though, is adding official support in.
+
+435
+00:35:30.080 --> 00:35:36.210
+Zach Mueller: and so maybe they figured out some secrets secret sauce with quantization on the fly plus native fate. I don't know.
+
+436
+00:35:37.127 --> 00:35:40.339
+Zach Mueller: I haven't looked too much into that repo yet.
+
+437
+00:35:40.710 --> 00:35:45.300
+Zach Mueller: but I'm hoping that'll change a bit in the future, for right now
+
+438
+00:35:45.670 --> 00:35:46.870
+Zach Mueller: it's just not
+
+439
+00:35:47.560 --> 00:35:48.790
+Zach Mueller: realistic
+
+440
+00:35:49.250 --> 00:35:51.619
+Zach Mueller: from a quality perspective.
+
+441
+00:35:52.880 --> 00:36:00.519
+Charles Frye: And that's for you are answering that both for intate and for fp. 8, cause you mentioned the transformer engine, which is fp. 8, not in right.
+
+442
+00:36:00.520 --> 00:36:09.930
+Zach Mueller: Yeah, it's it's one of those weird things right where it's in date for quantization or Fba. So I was answering for Fp 8 Aka native 8 bit.
+
+443
+00:36:10.370 --> 00:36:11.130
+Zach Mueller: Got it.
+
+444
+00:36:13.424 --> 00:36:29.020
+Charles Frye: And so, yeah, I've I've also heard what? Like reports from people about instability and difficulty using Fp, oh, like, yeah. Using fp, 8. Which is why it's like kind of surprising that they doubled down with Fp. 4. With the Blackwell architecture right
+
+445
+00:36:29.220 --> 00:36:31.039
+Charles Frye: like, do you have any thoughts about that?
+
+446
+00:36:32.010 --> 00:36:32.940
+Zach Mueller: Yeah.
+
+447
+00:36:33.450 --> 00:36:38.519
+Zach Mueller: I have thoughts. How much of that I can say I don't know. But it's
+
+448
+00:36:38.750 --> 00:36:46.470
+Zach Mueller: it's definitely interesting, because clearly they have some sort of special sauce that lets them train models decently well, because otherwise they wouldn't be doing it.
+
+449
+00:36:47.640 --> 00:36:49.470
+Zach Mueller: The thing that's weird is
+
+450
+00:36:49.820 --> 00:36:51.820
+Zach Mueller: we can't necessarily recreate it.
+
+451
+00:36:52.820 --> 00:36:57.419
+Zach Mueller: you know, cause otherwise everyone would be doing FDA, if it was truly as good as it was.
+
+452
+00:36:57.630 --> 00:37:01.670
+Zach Mueller: So there's some other stuff happening on the back end.
+
+453
+00:37:02.330 --> 00:37:07.669
+Zach Mueller: I would love to know it when the llama 3 paper finally comes out.
+
+454
+00:37:07.740 --> 00:37:08.940
+Zach Mueller: What they trained in
+
+455
+00:37:09.530 --> 00:37:13.629
+Zach Mueller: because they have, you know, all those H one hundreds which are optimized
+
+456
+00:37:13.860 --> 00:37:15.310
+Zach Mueller: for FP. 8,
+
+457
+00:37:16.394 --> 00:37:21.330
+Zach Mueller: and so I would love to know if they actually were able to train at an Fba well.
+
+458
+00:37:21.420 --> 00:37:26.260
+Zach Mueller: or if it wound up, having to be, you know. Bf, 16,
+
+459
+00:37:27.460 --> 00:37:31.509
+Zach Mueller: which that's a bit of a misnomer. It's bf, 16 with fp. 8. Essentially.
+
+460
+00:37:33.880 --> 00:37:34.800
+Zach Mueller: So
+
+461
+00:37:35.750 --> 00:37:37.960
+Zach Mueller: yeah, it's definitely a wait and see sort of question.
+
+462
+00:37:46.280 --> 00:37:47.360
+Zach Mueller: I'm on one.
+
+463
+00:37:47.360 --> 00:37:52.149
+Hamel Husain: You know, if you can explain, there's an A. R. Hf. Dpo. And Sft.
+
+464
+00:37:53.240 --> 00:37:54.500
+Zach Mueller: I cannot.
+
+465
+00:37:54.870 --> 00:37:59.480
+Zach Mueller: I have not touched that library at all. Sadly.
+
+466
+00:38:02.020 --> 00:38:09.279
+Zach Mueller: But I think maybe one of my coworkers will be here. That talks about it. I'll double check the list, but at the very least I know nothing about that. I'm sorry.
+
+467
+00:38:12.790 --> 00:38:15.850
+Hamel Husain: I don't know too much about that, either, to be honest.
+
+468
+00:38:16.500 --> 00:38:24.930
+Zach Mueller: What have you seen in terms of reasonable scale and applications and projects where accelerate failed? And what was missing that forced you to change or update accelerate
+
+469
+00:38:25.270 --> 00:38:26.379
+Zach Mueller: not a lot
+
+470
+00:38:27.287 --> 00:38:33.650
+Zach Mueller: so in the presentation I mentioned how lucid rains uses, accelerate for most of his projects.
+
+471
+00:38:34.100 --> 00:38:37.820
+Zach Mueller: He, what he does is, he recreates, closed.
+
+472
+00:38:38.580 --> 00:38:40.059
+Zach Mueller: Source papers
+
+473
+00:38:40.130 --> 00:38:43.510
+Zach Mueller: and trainings and recruit, and fully recreates them from scratch.
+
+474
+00:38:43.870 --> 00:38:49.700
+Zach Mueller: and he's orchestrating these on trainings of over a thousand gpus
+
+475
+00:38:51.190 --> 00:38:53.009
+Zach Mueller: accelerate can't fail
+
+476
+00:38:53.240 --> 00:38:59.559
+Zach Mueller: per se, because if accelerate fails, all we are is a light wrapper around what everyone else is orchestrating.
+
+477
+00:39:00.800 --> 00:39:06.110
+Zach Mueller: So it'd be very rare for accelerate to fail in a few ways.
+
+478
+00:39:06.370 --> 00:39:09.110
+Zach Mueller: The only thing I think I might have seen
+
+479
+00:39:09.490 --> 00:39:13.490
+Zach Mueller: is occasionally like weird timeout things and timeout issues that
+
+480
+00:39:13.660 --> 00:39:17.460
+Zach Mueller: I still haven't diagnosed the cause of. And I'm still not a hundred percent sure, if it's accelerate.
+
+481
+00:39:18.540 --> 00:39:21.600
+Zach Mueller: is training and just distributed is just hard.
+
+482
+00:39:21.780 --> 00:39:25.569
+Zach Mueller: You get weird issues that you don't know the answer to that. You gotta go figure out. And
+
+483
+00:39:25.800 --> 00:39:28.680
+Zach Mueller: your best advice is the experts at pike torch.
+
+484
+00:39:29.250 --> 00:39:30.940
+Zach Mueller: if not new video engineers.
+
+485
+00:39:31.950 --> 00:39:34.019
+Zach Mueller: So, but that's that's a good question.
+
+486
+00:39:41.136 --> 00:39:56.490
+Charles Frye: There's one I thought was interesting, and I'd like to hear your take on it. Zack. Are the chinchilla scaling laws still relevant, and can we use it them, or other scaling laws, to estimate which models will benefit the most from additional training.
+
+487
+00:39:58.810 --> 00:40:02.359
+Zach Mueller: That's a fun one cause I've been mildly keeping an eye on that space.
+
+488
+00:40:02.430 --> 00:40:03.550
+Zach Mueller: So
+
+489
+00:40:04.770 --> 00:40:06.620
+Zach Mueller: for a while we thought, yes.
+
+490
+00:40:06.760 --> 00:40:09.880
+Zach Mueller: right, chinchilla scaling laws are sort of the end. All be all
+
+491
+00:40:10.840 --> 00:40:12.699
+Zach Mueller: they still kind of are.
+
+492
+00:40:13.090 --> 00:40:18.260
+Zach Mueller: except what Ama 3 showed us, and what all these other labs are showing us as well is.
+
+493
+00:40:18.590 --> 00:40:20.379
+Zach Mueller: you can still just keep training.
+
+494
+00:40:21.330 --> 00:40:24.059
+Zach Mueller: You can still just keep training and do good.
+
+495
+00:40:24.220 --> 00:40:26.580
+Zach Mueller: But I still think the scaling laws matter.
+
+496
+00:40:27.900 --> 00:40:36.110
+Charles Frye: Yeah, I like the scaling laws. Tell you how to optimally allocate a fixed number of flops between parameters and data.
+
+497
+00:40:36.210 --> 00:40:41.999
+Charles Frye: And like for that they are still like. There's been like revisions and and some
+
+498
+00:40:42.110 --> 00:40:45.250
+Charles Frye: window dressing around chinchilla, but
+
+499
+00:40:45.260 --> 00:40:48.240
+Charles Frye: like for that, they are still correct, but
+
+500
+00:40:48.590 --> 00:41:05.730
+Charles Frye: they do not tell you how to get the best model, because the answer to get the best model is always to just continue training until it has converged right. And so I but I think what's maybe interesting for people who are doing continued pre training and fine tuning is that
+
+501
+00:41:06.990 --> 00:41:28.109
+Charles Frye: it? Some empirical evidence? And Mo and most people's intuition is that models that are under trained like chinchilla models, or the like. Original Hoffman scaling law models, and like anything but lama. 3 kind of like models that are heavily undertrained should be more steerable and easier to fine tune, because there should be more like kind of slop in the weights.
+
+502
+00:41:28.461 --> 00:41:32.560
+Charles Frye: I don't know to what extent, Zack, that has been your experience.
+
+503
+00:41:33.640 --> 00:41:41.170
+Zach Mueller: No, I can agree with that thinking. I don't have comments on Number 3 yet. The only comments I do know is, when I was looking at my base checkpoints
+
+504
+00:41:41.200 --> 00:41:46.399
+Zach Mueller: because I went actually a bit over in my path tuning compared to what I think you guys recommend, because usually it's like
+
+505
+00:41:46.530 --> 00:41:50.539
+Zach Mueller: one to 2 iterations through the data. And I trained for 4, if not 5,
+
+506
+00:41:51.020 --> 00:41:54.669
+Zach Mueller: the fourth or fifth one showed the best while still improving my email loss.
+
+507
+00:41:55.310 --> 00:41:59.179
+Zach Mueller: So at least for 8 billion, there might be some space there still.
+
+508
+00:41:59.990 --> 00:42:01.789
+Zach Mueller: but otherwise fully agree.
+
+509
+00:42:05.185 --> 00:42:14.889
+Zach Mueller: Yeah, is it fair to say that tensorflow isn't really relevant for any of this hugging face. Accelerate, etc. It seems like everything is built up by torch now. Yes, and no
+
+510
+00:42:15.779 --> 00:42:18.679
+Zach Mueller: tensor flow, and especially Kara's.
+
+511
+00:42:18.900 --> 00:42:22.450
+Zach Mueller: It's still very much the way back end in transformers.
+
+512
+00:42:24.070 --> 00:42:26.030
+Zach Mueller: support for it is, you know.
+
+513
+00:42:26.170 --> 00:42:32.840
+Zach Mueller: Yes, it's died down a little bit. But now we have few people that are working directly on it.
+
+514
+00:42:33.240 --> 00:42:38.909
+Zach Mueller: and so starting to go back up. But yes, it the general trend for the last few years has been pie torch
+
+515
+00:42:39.370 --> 00:42:41.060
+Zach Mueller: started out for research.
+
+516
+00:42:41.310 --> 00:42:47.328
+Zach Mueller: And then people just started preferring that framework a lot for a lot of things.
+
+517
+00:42:48.880 --> 00:42:52.239
+Zach Mueller: no, I'm not gonna say one is better than the other, because they're both
+
+518
+00:42:52.520 --> 00:42:53.360
+Zach Mueller: equal.
+
+519
+00:42:53.570 --> 00:42:57.770
+Zach Mueller: you know. It's just everything I do is in pythorch. It's how I got started, and I'm still in pythorch
+
+520
+00:42:58.120 --> 00:42:59.219
+Zach Mueller: kind of how it is.
+
+521
+00:43:00.470 --> 00:43:03.290
+Zach Mueller: and I'm sure you guys feel mildly similar about that.
+
+522
+00:43:05.790 --> 00:43:08.590
+Dan Becker: There's a while when it seemed like Jack's was going to
+
+523
+00:43:10.150 --> 00:43:11.840
+Dan Becker: gain a lot of popularity.
+
+524
+00:43:11.950 --> 00:43:14.560
+Dan Becker: And then I did never hear people talk about it anymore.
+
+525
+00:43:14.710 --> 00:43:19.209
+Dan Becker: Do you still have like? Is there much happening that you see in Jack's.
+
+526
+00:43:20.580 --> 00:43:21.720
+Zach Mueller: Kinda
+
+527
+00:43:22.200 --> 00:43:23.999
+Zach Mueller: the fun with the.
+
+528
+00:43:24.000 --> 00:43:28.450
+Hamel Husain: Zone, danger zone or station. Some person's gonna come in.
+
+529
+00:43:28.680 --> 00:43:29.790
+Hamel Husain: Yeah.
+
+530
+00:43:29.790 --> 00:43:32.950
+Zach Mueller: Shoot me your love. Take me in the back room. It's fine. It's Google
+
+531
+00:43:33.300 --> 00:43:34.770
+Zach Mueller: at the end of the day. It's Google.
+
+532
+00:43:35.260 --> 00:43:37.719
+Zach Mueller: you know. So take it with grain of salt.
+
+533
+00:43:37.860 --> 00:43:40.190
+Zach Mueller: They rewrite everything they do every few years.
+
+534
+00:43:40.740 --> 00:43:43.360
+Zach Mueller: You know it. It depends. It's a risk. It's a gamble.
+
+535
+00:43:44.460 --> 00:43:50.070
+Zach Mueller: And that's sort of, I think, part of why people are hesitant to go use it.
+
+536
+00:43:51.483 --> 00:43:53.150
+Zach Mueller: And also
+
+537
+00:43:53.620 --> 00:43:54.589
+Zach Mueller: I don't know.
+
+538
+00:43:55.050 --> 00:44:04.419
+Zach Mueller: It's like with Xla for a while it was just on Tpus, and only researchers had access to Tpus. And so you didn't really do a whole lot with Xla unless you were a researcher.
+
+539
+00:44:05.020 --> 00:44:10.920
+Zach Mueller: and they've only recently brought it over to Gpus. And it works. It's fine. It's just weird, because I
+
+540
+00:44:11.130 --> 00:44:14.519
+Zach Mueller: don't. Wouldn't have thought that they would have moved over to Gpus.
+
+541
+00:44:14.740 --> 00:44:16.580
+Zach Mueller: So it's kind of a situation like that of
+
+542
+00:44:16.840 --> 00:44:22.380
+Zach Mueller: it'll be neat to see where it is in 3 years if it's still thinking 3 years, and if it is, then that's probably a good sign.
+
+543
+00:44:22.680 --> 00:44:23.440
+Zach Mueller: Them.
+
+544
+00:44:25.070 --> 00:44:26.810
+Charles Frye: I think also, it's
+
+545
+00:44:27.990 --> 00:44:32.710
+Charles Frye: it is a like very beautiful framework for thinking about.
+
+546
+00:44:32.820 --> 00:44:44.010
+Charles Frye: It's like, not just not a differentiation from framework. It's like a program transformation framework. And so it's like in some galaxy brain way. It's like the right way to to do this, however, that
+
+547
+00:44:44.030 --> 00:45:03.100
+Charles Frye: makes it a lot harder to use like like it's it's, you know, PE, like pure functional programming when you get down to it. And a lot of people who are researchers and tinkers and and data scientists are not comfortable with like managing an Rng monad, you know, and like Jack's kind of like, puts that stuff in your face.
+
+548
+00:45:04.270 --> 00:45:06.650
+Hamel Husain: You just convince me not to use it.
+
+549
+00:45:08.807 --> 00:45:10.752
+Zach Mueller: I like that sort of thing, but
+
+550
+00:45:12.590 --> 00:45:15.030
+Zach Mueller: and well, some of us enjoy the nerdy stuff.
+
+551
+00:45:15.970 --> 00:45:18.720
+Hamel Husain: I enjoy nerdy stuff, too. But I mean, sometimes
+
+552
+00:45:18.790 --> 00:45:19.810
+Hamel Husain: I mean.
+
+553
+00:45:19.890 --> 00:45:20.920
+Hamel Husain: yeah.
+
+554
+00:45:21.390 --> 00:45:21.970
+Zach Mueller: Got a.
+
+555
+00:45:21.970 --> 00:45:22.970
+Hamel Husain: Pick and choose.
+
+556
+00:45:26.293 --> 00:45:27.519
+Zach Mueller: Let's see
+
+557
+00:45:29.610 --> 00:45:31.880
+Zach Mueller: any other interesting ones
+
+558
+00:45:33.888 --> 00:45:38.309
+Zach Mueller: any particular tips or limit trade limitations for training on apple silicon.
+
+559
+00:45:39.180 --> 00:45:40.350
+Zach Mueller: That's a fun one.
+
+560
+00:45:42.540 --> 00:45:47.259
+Zach Mueller: I can talk about this since Pi Torch admitted it. Zoom it talk tweeted about this last month.
+
+561
+00:45:50.300 --> 00:45:51.970
+Zach Mueller: silicon with
+
+562
+00:45:52.620 --> 00:45:54.010
+Zach Mueller: by torches.
+
+563
+00:45:54.760 --> 00:45:55.720
+Zach Mueller: Okay.
+
+564
+00:45:56.852 --> 00:45:58.750
+Zach Mueller: inference. It's great
+
+565
+00:45:59.290 --> 00:46:00.580
+Zach Mueller: training.
+
+566
+00:46:00.920 --> 00:46:02.800
+Zach Mueller: You're looking at 3 different
+
+567
+00:46:04.340 --> 00:46:06.410
+Zach Mueller: lower end libraries
+
+568
+00:46:06.590 --> 00:46:08.500
+Zach Mueller: that I'll try and do the same thing.
+
+569
+00:46:08.600 --> 00:46:10.690
+Zach Mueller: each of them with varying degrees of success.
+
+570
+00:46:11.777 --> 00:46:16.779
+Zach Mueller: One of them is pie torches, and they have admitted that theirs is one of the worst ones.
+
+571
+00:46:17.640 --> 00:46:24.479
+Zach Mueller: They're looking to revamp that and get more into it. And actually invest time in that in the next few months, I believe. Suma said
+
+572
+00:46:25.200 --> 00:46:29.559
+Zach Mueller: so, for right now it's good for inference training.
+
+573
+00:46:32.980 --> 00:46:34.630
+Zach Mueller: I'm sorry if you can hear my cat
+
+574
+00:46:35.620 --> 00:46:36.569
+Zach Mueller: perfect!
+
+575
+00:46:38.140 --> 00:46:38.990
+Zach Mueller: I can hear the.
+
+576
+00:46:38.990 --> 00:46:40.039
+Hamel Husain: It's not a big deal, no worry, but.
+
+577
+00:46:40.040 --> 00:46:40.690
+Zach Mueller: Okay
+
+578
+00:46:41.682 --> 00:46:46.370
+Zach Mueller: for training. It's it's mixed. Take it with a grain of salt. And you know.
+
+579
+00:46:46.420 --> 00:46:49.009
+Zach Mueller: try within a video, Gpu, if you have one.
+
+580
+00:46:49.780 --> 00:46:54.700
+Zach Mueller: Macbooks are cool. I refuse to sign on to that, and so thankfully, I don't have this headache.
+
+581
+00:46:55.320 --> 00:46:57.169
+Hamel Husain: Look so much stuff can go wrong.
+
+582
+00:46:57.660 --> 00:47:00.119
+Hamel Husain: I'm like, I'm just gonna go with a pave path here.
+
+583
+00:47:00.230 --> 00:47:03.770
+Hamel Husain: I'm using a video Gpus using axl.
+
+584
+00:47:04.000 --> 00:47:04.740
+Hamel Husain: Yeah.
+
+585
+00:47:04.920 --> 00:47:05.670
+Hamel Husain: you know, just like.
+
+586
+00:47:05.670 --> 00:47:06.040
+Zach Mueller: Worked.
+
+587
+00:47:06.330 --> 00:47:10.969
+Hamel Husain: Something battle tested like cause. I don't have time, like there's so much stuff to do.
+
+588
+00:47:11.100 --> 00:47:15.020
+Hamel Husain: Yeah, just like barely have time to fix the data usually so.
+
+589
+00:47:15.300 --> 00:47:25.300
+Charles Frye: Yeah. And I think it's unlikely that apple silicon is gonna become a preferred target for training, because, like there, it's like a system on a chip
+
+590
+00:47:25.300 --> 00:47:45.439
+Charles Frye: CPU Gp together like there isn't something that looks like a server card with fast Gpu interconnect, and then a and additionally, on top of that you need fast communication between each server blade like, and that's just not something where Apple has done work. So e like in 10 years we might be looking back at this
+
+591
+00:47:45.650 --> 00:47:52.469
+Charles Frye: the way somebody 10 years ago would have been like Apple's not making a Gpu apple's not going to make their own
+
+592
+00:47:52.590 --> 00:48:01.209
+Charles Frye: hardware, so like in the foreseeable future. There is not the infrastructure in place to make it a really great target for training.
+
+593
+00:48:03.480 --> 00:48:05.589
+Charles Frye: and so, Zach, do you agree.
+
+594
+00:48:09.990 --> 00:48:12.391
+Dan Becker: We can't hear. I didn't hear. What you said is that.
+
+595
+00:48:12.610 --> 00:48:22.900
+Zach Mueller: Oh, yeah, sorry I needed my mic, because Max is right here. The biggest sign of that. I agree with that. The biggest sign for me is, if you're not familiar with cash on Twitter. Who writes dingboard
+
+596
+00:48:23.241 --> 00:48:26.899
+Zach Mueller: I love him. He's phenomenal. He's hilarious, but also has really good insights
+
+597
+00:48:27.090 --> 00:48:36.299
+Zach Mueller: he was this close to executing on like a cluster of the new Mac workstations. Do you have the total vram usage?
+
+598
+00:48:36.990 --> 00:48:40.250
+Zach Mueller: And then he said, no, actually, it's much better if I just stick with the video.
+
+599
+00:48:40.730 --> 00:48:46.479
+Zach Mueller: Did a total 180 was about to buy it all. And then went Nope actually going with the video because everything's too unstable.
+
+600
+00:48:47.340 --> 00:48:48.040
+Zach Mueller: Hmm.
+
+601
+00:48:49.050 --> 00:48:53.299
+Charles Frye: I think. Yeah. Similar story with George Hotts, right? And the Amd. Chips. It's like.
+
+602
+00:48:53.730 --> 00:48:54.420
+Zach Mueller: Yes.
+
+603
+00:48:55.210 --> 00:48:57.679
+Zach Mueller: Amd is a whole different ball game.
+
+604
+00:48:58.690 --> 00:48:59.740
+Zach Mueller: But yes.
+
+605
+00:49:02.015 --> 00:49:05.030
+Zach Mueller: how would you serve multiple Lauras with accelerate inference?
+
+606
+00:49:05.350 --> 00:49:10.080
+Zach Mueller: You're not thinking about that how you could like hot swap. Laura's in and out.
+
+607
+00:49:11.060 --> 00:49:14.970
+Zach Mueller: I don't think we've done that yet. I don't necessarily know of anyone that's done that yet.
+
+608
+00:49:15.390 --> 00:49:16.660
+Zach Mueller: Be an 8 problem.
+
+609
+00:49:17.850 --> 00:49:20.340
+Charles Frye: Is it? Does the Olm not have that.
+
+610
+00:49:20.670 --> 00:49:21.600
+Zach Mueller: I don't know.
+
+611
+00:49:21.950 --> 00:49:23.899
+Charles Frye: Like you can load several lorries.
+
+612
+00:49:23.900 --> 00:49:24.672
+Hamel Husain: Yeah, it does.
+
+613
+00:49:24.930 --> 00:49:26.169
+Zach Mueller: You can. Oh, nice.
+
+614
+00:49:26.170 --> 00:49:31.307
+Hamel Husain: It has a hot swap thing. Kind of you can go between Laura's. It's pretty cool.
+
+615
+00:49:31.610 --> 00:49:33.050
+Charles Frye: Match or no.
+
+616
+00:49:34.340 --> 00:49:35.650
+Hamel Husain: I didn't try that part.
+
+617
+00:49:35.998 --> 00:49:38.781
+Zach Mueller: Yeah, you're you're slowly making me love it.
+
+618
+00:49:39.130 --> 00:49:42.769
+Hamel Husain: But it's really cool, actually, like, I can pull up the docs real quick, actually.
+
+619
+00:49:42.770 --> 00:49:45.079
+Zach Mueller: Yeah, that's fascinating. Cause. That was a
+
+620
+00:49:45.530 --> 00:49:46.759
+Zach Mueller: thought I had.
+
+621
+00:49:46.790 --> 00:49:48.189
+Zach Mueller: I think, after the
+
+622
+00:49:48.330 --> 00:49:49.479
+Zach Mueller: class on
+
+623
+00:49:49.580 --> 00:49:51.540
+Zach Mueller: earlier this week, we was like, huh!
+
+624
+00:49:52.000 --> 00:49:54.029
+Zach Mueller: That'd be a fun experiment to see if we could go. Do.
+
+625
+00:49:55.270 --> 00:49:55.630
+Hamel Husain: Yeah.
+
+626
+00:49:55.630 --> 00:49:57.910
+Zach Mueller: Someone go do that document it and write a blog.
+
+627
+00:49:58.780 --> 00:49:59.980
+Zach Mueller: Tell us what happens.
+
+628
+00:49:59.980 --> 00:50:01.729
+Dan Becker: I think that Lorax does that.
+
+629
+00:50:05.180 --> 00:50:06.699
+Hamel Husain: Okay. So you see this one.
+
+630
+00:50:06.820 --> 00:50:10.590
+Hamel Husain: So basically using Laura adapters. And then you can.
+
+631
+00:50:10.830 --> 00:50:13.410
+Hamel Husain: you can serve Laura adapters.
+
+632
+00:50:18.890 --> 00:50:19.740
+Hamel Husain: just second.
+
+633
+00:50:21.380 --> 00:50:25.309
+Hamel Husain: Yeah, see? Like these lower requests, you can have like different adapters.
+
+634
+00:50:26.120 --> 00:50:31.230
+Hamel Husain: I don't know about how you would hop. Yeah, I guess. Like, cause you already. Yeah.
+
+634
+00:50:32.690 --> 00:50:39.789
+Hamel Husain: you can just like at inference in your like, in the generate, you can just decide to pass in a different adapter. Apparently.
+
+635
+00:50:39.790 --> 00:50:42.889
+Charles Frye: Could you click that multi laura inference dot pi file.
+
+636
+00:50:42.960 --> 00:50:49.019
+Charles Frye: I remember like looking at this in the past, and not quite figuring out whether they would be hot swapped.
+
+637
+00:50:49.690 --> 00:50:50.750
+Charles Frye: Yeah. Process. Yeah.
+
+638
+00:50:50.750 --> 00:50:53.659
+Hamel Husain: I don't know. I haven't tried this yet. Maybe it's not hotspot. Maybe I just.
+
+639
+00:50:53.990 --> 00:50:54.870
+Charles Frye: Not.
+
+640
+00:50:54.870 --> 00:50:55.690
+Hamel Husain: Remembering.
+
+641
+00:50:56.970 --> 00:51:01.459
+Charles Frye: Yeah, we'd have to go into. Cause like, they're sort of saying it's like as though it's a separate model.
+
+642
+00:51:01.510 --> 00:51:03.529
+Charles Frye: And I don't know, like separate like.
+
+643
+00:51:03.530 --> 00:51:11.620
+Hamel Husain: It's like you're calling. You're not so like you're loading the model separately, you see, and then it's only in the
+
+644
+00:51:12.020 --> 00:51:15.390
+Hamel Husain: whenever Ford pass that you are then passing the
+
+645
+00:51:15.600 --> 00:51:16.820
+Hamel Husain: the adapter.
+
+646
+00:51:18.190 --> 00:51:20.290
+Hamel Husain: So I guess that's Hotspot.
+
+647
+00:51:21.090 --> 00:51:25.590
+Hamel Husain: May. I might not know that I mean, maybe I'm just like assuming what the word hotspot means, I mean, yeah.
+
+648
+00:51:25.590 --> 00:51:26.850
+Charles Frye: Sorry there's likely.
+
+649
+00:51:27.430 --> 00:51:44.889
+Charles Frye: There's like versions where you need to merge it into the model weights, and that's you know, that's fine. It's nice to not have to merge it into the model weights, because it's just like easier to manage the artifacts and then the like. The next optimization on top of that is, as a batch is going through you route some.
+
+650
+00:51:45.220 --> 00:52:14.269
+Charles Frye: you know, rows in the matrix through different Laura's, and that's the like really cool thing about Laura's like, especially if you're serving. Like many people's fine tunes, like, you have a fine tune for every user. You have a fine tune for every region, whatever it's great to just have, like your batches, just get collected together, and you get most of the throughput benefit of the of batching for the large model with it all the customization of Laura's so that's that's the like full like per request, Laura.
+
+651
+00:52:15.609 --> 00:52:30.570
+Charles Frye: Parallelization that you really like. That's why that's why it's so nice to have these like se these parallel adapters like Laura, instead of sequential adapters like like replacing the language model head or or like putting an adapter at the end of every linear layer, or whatever.
+
+652
+00:52:31.740 --> 00:52:32.610
+Hamel Husain: Make sense.
+
+653
+00:52:34.720 --> 00:52:36.370
+Hamel Husain: Don't pay attention. I was just
+
+654
+00:52:37.070 --> 00:52:38.200
+Hamel Husain: scrolling around.
+
+655
+00:52:39.680 --> 00:52:49.060
+Charles Frye: Yeah. To be asked about mixture of Laura. I I don't know if that's I guess that would be like live routing between Laura's like they were experts.
+
+656
+00:52:49.530 --> 00:52:52.770
+Charles Frye: I don't know if I I haven't heard of that being used.
+
+657
+00:52:53.480 --> 00:52:54.659
+Hamel Husain: Sounds like a fun idea.
+
+658
+00:52:55.860 --> 00:52:56.500
+Charles Frye: Yeah.
+
+659
+00:52:59.440 --> 00:53:06.289
+Charles Frye: I guess. Yeah, you'd need to train them together the way you train experts together, because you need a like routing between each one.
+
+660
+00:53:07.370 --> 00:53:11.569
+Zach Mueller: Well, didn't like. What was the crackin model that just came out
+
+661
+00:53:12.880 --> 00:53:17.860
+Zach Mueller: that has, like 6 different models, each on completely different tasks.
+
+662
+00:53:19.300 --> 00:53:23.040
+Zach Mueller: to help route through things. Oh, God, please tell me I bookmarked it.
+
+663
+00:53:23.210 --> 00:53:31.189
+Hamel Husain: You could make a really janky version of it like, yeah, just have a classifier or something separate model.
+
+664
+00:53:31.190 --> 00:53:32.839
+Zach Mueller: Half of what that was.
+
+665
+00:53:34.400 --> 00:53:41.429
+Hamel Husain: Isn't, I thought. Isn't the moe thing it's like, isn't it? Trained to route inside in the network itself is routing
+
+666
+00:53:41.650 --> 00:53:42.820
+Hamel Husain: to a different path
+
+667
+00:53:42.960 --> 00:53:46.070
+Hamel Husain: more directly than like you know, going outside.
+
+668
+00:53:46.750 --> 00:53:47.440
+Zach Mueller: Yes.
+
+669
+00:53:48.100 --> 00:53:48.850
+Charles Frye: Okay.
+
+670
+00:53:50.477 --> 00:53:57.350
+Charles Frye: yeah. The person the person asking about mixture of Laura, I think, is posting about it in the discord, saying, like.
+
+671
+00:53:57.360 --> 00:54:04.130
+Charles Frye: Yeah, train train, Laura, separately. Get a router as a
+
+672
+00:54:04.360 --> 00:54:06.499
+Charles Frye: yeah, Laura, a mixture of experts.
+
+673
+00:54:07.340 --> 00:54:08.450
+Zach Mueller: Cracking Laura.
+
+674
+00:54:09.350 --> 00:54:10.220
+Charles Frye: Hmm! And.
+
+675
+00:54:10.220 --> 00:54:13.519
+Zach Mueller: The the picture is quite literally Githubu, with
+
+676
+00:54:13.590 --> 00:54:17.549
+Zach Mueller: a bunch of different fingers pointing to different Laura's, that perform different tasks.
+
+677
+00:54:17.810 --> 00:54:18.450
+Charles Frye: Nice.
+
+678
+00:54:19.150 --> 00:54:19.720
+Charles Frye: It's.
+
+679
+00:54:19.720 --> 00:54:21.650
+Zach Mueller: A collection of experts
+
+680
+00:54:22.230 --> 00:54:23.589
+Zach Mueller: is what they're calling it.
+
+681
+00:54:24.215 --> 00:54:24.620
+Charles Frye: Boy!
+
+682
+00:54:25.360 --> 00:54:26.420
+Zach Mueller: Yeah.
+
+683
+00:54:28.830 --> 00:54:37.029
+Zach Mueller: Combines the best python sequel function calling reasoning in German models by applying dynamic. Laura's on run times. So far.
+
+684
+00:54:37.310 --> 00:54:42.799
+Charles Frye: Oh, I see the top tentacle is holding some musley. I guess that's the German one.
+
+685
+00:54:43.755 --> 00:54:44.700
+Zach Mueller: That makes sense.
+
+686
+00:54:46.470 --> 00:54:53.270
+Zach Mueller: Yeah. Dynamic model routing uses the sequence classification model to route inputs to the most suitable language model based on the characteristics.
+
+687
+00:54:55.160 --> 00:54:55.870
+Zach Mueller: Hmm.
+
+688
+00:54:56.470 --> 00:54:57.440
+Zach Mueller: fascinating.
+
+689
+00:54:59.680 --> 00:55:03.329
+Zach Mueller: I did drop that in the discord in case people are getting phone out.
+
+690
+00:55:21.826 --> 00:55:27.989
+Zach Mueller: How do you decide a fine tuning project? Even this llama 3 billion experiment you're running now, what led you to say? Let's do it.
+
+691
+00:55:28.821 --> 00:55:35.359
+Zach Mueller: I read the paper. It seemed neat, seemed like something that was reasonable for me to go and do. The steps are all right there.
+
+692
+00:55:36.064 --> 00:55:38.620
+Zach Mueller: And it was something where I was like, okay.
+
+693
+00:55:39.110 --> 00:55:44.279
+Zach Mueller: that's fine. It's a pet problem doesn't have to be unique. You could be just recreating what other people did
+
+694
+00:55:45.189 --> 00:55:59.349
+Zach Mueller: like. I think that's what one of my winning solutions at a little hackathon back in college was, I was quite literally taking the Ulm fit lesson from Jeremy's fast AI course back in the day and applying it on news articles.
+
+695
+00:55:59.710 --> 00:56:01.899
+Zach Mueller: and then we just served it.
+
+696
+00:56:02.370 --> 00:56:05.460
+Zach Mueller: and that all in all took like a day and a half.
+
+697
+00:56:06.450 --> 00:56:10.250
+Zach Mueller: And so generally, when I think of ideas. It's sort of what interests me
+
+698
+00:56:10.380 --> 00:56:12.580
+Zach Mueller: and what's relevant to what I'm doing right now
+
+699
+00:56:12.900 --> 00:56:17.529
+Zach Mueller: and try and find a connection there, either. Previous work to people I've done, especially if it's open source
+
+700
+00:56:17.790 --> 00:56:19.580
+Zach Mueller: or data and just go with it.
+
+701
+00:56:20.653 --> 00:56:27.740
+Zach Mueller: One thing I sort of like about. There's a quote from one of the guys on mythbusters.
+
+702
+00:56:28.549 --> 00:56:33.659
+Zach Mueller: And it basically goes, the difference between just messing around in science is writing it down.
+
+703
+00:56:34.490 --> 00:56:38.350
+Zach Mueller: Even if you're just messing around with data. Write it down great. Now it's a blog.
+
+704
+00:56:39.660 --> 00:56:43.659
+Zach Mueller: you know. Model fails great, that's fine. Write it down. That's a lesson learned.
+
+705
+00:56:44.350 --> 00:56:47.860
+Zach Mueller: And all it does is bolster you and your experience?
+
+706
+00:57:03.500 --> 00:57:16.620
+Zach Mueller: there's another question. Similarly, that you guys might actually have some thoughts on when you work on a fine tuning project. Do you typically get constraints for inference, time and memory consumption? When you start? Or how do you choose the sweet spot of model size and performance?
+
+707
+00:57:17.130 --> 00:57:21.170
+Zach Mueller: My first guess would be, go off of your budget
+
+708
+00:57:22.160 --> 00:57:25.000
+Zach Mueller: that dictates how much vram you have available.
+
+709
+00:57:25.300 --> 00:57:27.610
+Zach Mueller: and then that dictates what kind of model you can train
+
+710
+00:57:28.820 --> 00:57:32.310
+Zach Mueller: right? Cause on 2 40 nineties. I can't train
+
+711
+00:57:32.330 --> 00:57:34.970
+Zach Mueller: the 70 billion llama. But I can train 8 billion
+
+712
+00:57:35.290 --> 00:57:36.340
+Zach Mueller: and smaller
+
+713
+00:57:37.843 --> 00:57:40.660
+Zach Mueller: and time again is cost.
+
+714
+00:57:41.150 --> 00:57:45.010
+Zach Mueller: is it? It's free for me to just run that for 2 days.
+
+715
+00:57:45.090 --> 00:57:49.910
+Zach Mueller: or I can pay $80 and spend up an H. 100 and get it done in an hour or 2?
+
+716
+00:57:50.760 --> 00:57:53.099
+Zach Mueller: That's my thought. And what are you guys? Thoughts on that.
+
+717
+00:57:53.710 --> 00:57:57.969
+Hamel Husain: Yeah, is similar, like, okay, like the honeycomb example which I'm going to do in this course.
+
+718
+00:57:58.260 --> 00:58:02.120
+Hamel Husain: In that situation the incumbent model? Was it
+
+719
+00:58:02.730 --> 00:58:08.450
+Hamel Husain: open. AI! Right? So you like. Look at their their latency, their cost, whatever.
+
+720
+00:58:08.690 --> 00:58:13.620
+Hamel Husain: and that's like their latency and their cost is pretty good, like it's hard to compete with that.
+
+721
+00:58:13.830 --> 00:58:14.930
+Hamel Husain: Now.
+
+722
+00:58:15.360 --> 00:58:21.989
+Hamel Husain: if you're gonna replace, there's a Co. Humans have a cognitive bias. By the way, like, once, you already have something, you value it more
+
+723
+00:58:22.020 --> 00:58:23.450
+Hamel Husain: same thing with models
+
+724
+00:58:23.540 --> 00:58:27.380
+Hamel Husain: a lot of times like you're like, it has to be like better.
+
+725
+00:58:27.580 --> 00:58:31.280
+Hamel Husain: It has to be like markedly better for anyone to notice
+
+726
+00:58:31.330 --> 00:58:34.620
+Hamel Husain: to really notice. I mean, you can measure it and stuff. But like to. Really.
+
+727
+00:58:34.720 --> 00:58:44.680
+Hamel Husain: in this case, like also do consulting. So I like really need it to be better. So like, you could noticly feel it from a user experience perspective. So I want it to be like a lot faster.
+
+728
+00:58:45.251 --> 00:58:47.310
+Hamel Husain: And so in that case
+
+729
+00:58:47.750 --> 00:58:51.580
+Hamel Husain: it was pretty clear to me like, it needs to be a 7 billion parameter model.
+
+730
+00:58:52.061 --> 00:59:02.320
+Hamel Husain: It needs to be like small. It needs to be fast. And I need to make it actually make the prediction quality like higher than you know. Gpt. 3.5 through fine tuning.
+
+731
+00:59:03.860 --> 00:59:11.599
+Hamel Husain: so it's kind of like that. But usually it's like, Okay, what is the smallest model I can get away with for the quality threshold basically.
+
+732
+00:59:14.630 --> 00:59:18.580
+Dan Becker: Everyone. I have a bunch of thoughts on this, I mean, first of all.
+
+733
+00:59:19.640 --> 00:59:22.410
+Dan Becker: I generally think of training compute as free
+
+734
+00:59:24.140 --> 00:59:25.490
+Dan Becker: like, we talked about.
+
+735
+00:59:25.490 --> 00:59:26.920
+Hamel Husain: Is after this course, yeah.
+
+736
+00:59:29.120 --> 00:59:52.334
+Dan Becker: Yeah, with all the credits that you have, you will need to find ways to use compute. So in the past, you would have used 8 billion for a model. And I like, I gotta find something to do with all these credits. But inference is so vastly more expensive for all the products I work on than training that I just think like it's not even worth thinking about training costs.
+
+737
+00:59:53.820 --> 01:00:02.699
+Dan Becker: there's one project we're in the middle of working on. This is, I've talked about this before this multimodal alt text generation. So image to text.
+
+738
+01:00:03.270 --> 01:00:06.290
+Dan Becker: we're doing the most expensive training runs that
+
+739
+01:00:06.410 --> 01:00:07.659
+Dan Becker: I've worked on
+
+740
+01:00:07.730 --> 01:00:09.160
+Dan Becker: a and
+
+741
+01:00:09.510 --> 01:00:11.400
+Dan Becker: they still like it's a
+
+742
+01:00:11.520 --> 01:00:19.109
+Dan Becker: trivial fraction of inference costs. It's not even like a meaningful fraction of the amount of time that we spend talking like the
+
+743
+01:00:19.350 --> 01:00:21.070
+Dan Becker: We. I get paid hourly.
+
+744
+01:00:21.320 --> 01:00:26.300
+Dan Becker: but that project, the amount of time that I spend on a single call just having what model run
+
+745
+01:00:26.320 --> 01:00:28.509
+Dan Becker: would cover all the models that we train
+
+746
+01:00:28.680 --> 01:00:29.660
+Dan Becker: for weeks.
+
+747
+01:00:30.367 --> 01:00:32.190
+Dan Becker: So training really
+
+748
+01:00:32.300 --> 01:00:35.178
+Dan Becker: doesn't matter, and inference is what matters
+
+749
+01:00:35.900 --> 01:00:42.109
+Dan Becker: And then the other thing is the time like your iteration speed matters. We've talked in this course about
+
+750
+01:00:43.060 --> 01:00:58.260
+Dan Becker: how important data is. And because data is so important, I typically will start with an 8 billion perimeter model because you can iterate faster. See what's breaking faster. If you want to change later on to a larger model. You can.
+
+751
+01:00:58.370 --> 01:00:59.700
+Dan Becker: And
+
+752
+01:00:59.740 --> 01:01:04.030
+Dan Becker: what we do is we always start with the 7 or 8 billion per minute model because it's like a
+
+753
+01:01:04.310 --> 01:01:12.676
+Dan Becker: smartish size. You can train it quickly and easily on a single gpu, and it's nice to not be using distributed gpus
+
+754
+01:01:13.260 --> 01:01:16.880
+Dan Becker: and then frequently we'll like, say, like, Okay, let's try a bigger model.
+
+755
+01:01:17.000 --> 01:01:18.180
+Dan Becker: and
+
+756
+01:01:18.570 --> 01:01:21.899
+Dan Becker: then that would have some cost for inference
+
+757
+01:01:21.930 --> 01:01:24.409
+Dan Becker: if we end up using a bigger model.
+
+758
+01:01:24.550 --> 01:01:27.077
+Dan Becker: And we do that. And then we say, oh, actually,
+
+759
+01:01:27.370 --> 01:01:28.910
+Dan Becker: it's not meaningfully better.
+
+760
+01:01:29.130 --> 01:01:34.719
+Dan Becker: And so we almost always end up just deploying 7 or 8 billion perimeter models because
+
+761
+01:01:35.110 --> 01:01:40.402
+Dan Becker: they're a little faster than a 13 billion parameter model or a little cheaper
+
+762
+01:01:40.980 --> 01:01:45.480
+Dan Becker: like you'd use a less powerful Gpu and
+
+763
+01:01:46.090 --> 01:01:52.229
+Dan Becker: my experience is that we can't actually tell the difference when you just side by side, look at the results. So
+
+764
+01:01:53.700 --> 01:01:56.849
+Dan Becker: model size is like a less interesting problem than you would expect.
+
+765
+01:01:56.970 --> 01:02:00.089
+Dan Becker: We just always run 7 or 8 billion parameter models.
+
+766
+01:02:01.760 --> 01:02:07.540
+Dan Becker: and it's not cause we're scared to train like I would train a 70 billion parameter and not worry about the cost.
+
+767
+01:02:07.590 --> 01:02:08.789
+Dan Becker: It just isn't worth it.
+
+768
+01:02:09.250 --> 01:02:09.940
+Dan Becker: Hmm!
+
+769
+01:02:13.600 --> 01:02:23.219
+Zach Mueller: Let's see, here's an interesting one. Why aren't people fine-tuning more on 5, 3? Is it because it's smaller, or is it just mistral small enough with Flora training.
+
+770
+01:02:24.530 --> 01:02:27.120
+Zach Mueller: I think. 5 series.
+
+771
+01:02:28.480 --> 01:02:30.490
+Zach Mueller: I don't know. There's something weird with the data
+
+772
+01:02:30.610 --> 01:02:32.310
+Zach Mueller: and how they trained it.
+
+773
+00:02:32.350 --> 01:02:37.440
+Zach Mueller: That isn't showing real world performance from what I've gathered on Twitter.
+
+774
+01:02:37.970 --> 01:02:41.049
+Zach Mueller: and that's generally why people don't like it like
+
+775
+01:02:41.720 --> 01:02:47.369
+Zach Mueller: to be biased. I generally make my decisions on what models I look at, based on Anton
+
+776
+01:02:47.930 --> 01:02:53.810
+Zach Mueller: and sort of his experiments, because he just sits there and hacks with props all day and figures out what he wants to run locally
+
+777
+01:02:54.270 --> 01:02:55.670
+Zach Mueller: and for like.
+
+778
+01:02:55.710 --> 01:02:58.660
+Zach Mueller: I think, 12 h, he said. 5, 3 was actually good.
+
+779
+01:02:58.780 --> 01:03:01.689
+Zach Mueller: and then he threw it into his real world scenarios, and it didn't perform.
+
+780
+01:03:02.780 --> 01:03:09.920
+Zach Mueller: whereas Llama, 70 billion performed out of the box phenomenal 8 billion is still good for him if he wants to do a small fine tune.
+
+781
+01:03:10.210 --> 01:03:12.930
+Zach Mueller: So it's just the 5 series is weird.
+
+782
+01:03:13.950 --> 01:03:16.599
+Zach Mueller: I think would be apt way of saying that
+
+783
+01:03:16.690 --> 01:03:17.810
+Zach Mueller: I guess
+
+784
+01:03:17.960 --> 01:03:19.709
+Zach Mueller: it'd be cool if it worked.
+
+785
+01:03:20.540 --> 01:03:23.520
+Zach Mueller: But it's kind of the situation, I think, where
+
+786
+01:03:23.680 --> 01:03:27.029
+Zach Mueller: 7 or 8 billion is kind of the threshold of where
+
+787
+01:03:27.170 --> 01:03:29.649
+Zach Mueller: things need to be. For things to happen.
+
+788
+01:03:29.850 --> 01:03:30.680
+Zach Mueller: Still.
+
+789
+01:03:32.060 --> 01:03:33.230
+Zach Mueller: parameter, wise.
+
+790
+01:03:45.470 --> 01:03:47.550
+Hamel Husain: So you might be on time. Right? Yes.
+
+791
+01:03:47.880 --> 01:03:48.290
+Zach Mueller: Yeah.
+
+792
+01:03:48.290 --> 01:03:48.970
+Dan Becker: Yep.
+
+793
+01:03:51.275 --> 01:03:56.770
+Dan Becker: I found how to export unanswered questions, so I will export the Csv.
+
+794
+01:03:57.050 --> 01:03:58.860
+Dan Becker: Drop it into
+
+795
+01:03:58.910 --> 01:04:00.425
+Dan Becker: the chat for
+
+796
+01:04:01.750 --> 01:04:03.790
+Dan Becker: for this session. That's a good.
+
+797
+01:04:03.790 --> 01:04:05.220
+Hamel Husain: Homework for someone to build
+
+798
+01:04:05.720 --> 01:04:09.760
+Hamel Husain: some kind of rag application, or whatever you want to do.
+
+799
+01:04:10.944 --> 01:04:11.349
+Dan Becker: Nice.
+
+800
+01:04:13.250 --> 01:04:15.934
+Dan Becker: yeah. So if we wanna come back, we
+
+801
+01:04:16.420 --> 01:04:19.969
+Dan Becker: have questions both answered and unsafe, unanswered.
+
+802
+01:04:20.401 --> 01:04:24.059
+Dan Becker: Save that I'll share with everyone, and we'll share this recording. Of course.
+
+803
+01:04:26.040 --> 01:04:26.390
+Zach Mueller: Great
+
+804
+01:04:28.490 --> 01:04:29.230
+Zach Mueller: pipe.
+
+805
+01:04:29.230 --> 01:04:29.876
+Dan Becker: Thanks. Everyone.
+
+806
+01:04:30.410 --> 01:04:31.504
+Zach Mueller: Thanks, so much.
+
+807
+01:04:31.870 --> 01:04:32.599
+Charles Frye: Take care!

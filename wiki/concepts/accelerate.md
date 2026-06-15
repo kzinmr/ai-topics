@@ -22,6 +22,7 @@ related:
   - entities/zach-mueller
 sources:
   - raw/articles/2026-05-04_accelerate-fsdp-deepspeed-guide.md
+  - transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours.md
   - https://huggingface.co/docs/accelerate
   - https://huggingface.co/docs/accelerate/en/concept_guides/fsdp_and_deepspeed
 ---
