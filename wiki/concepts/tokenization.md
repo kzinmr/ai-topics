@@ -6,7 +6,6 @@ updated: 2026-06-10
 tags:
   - concept
   - tokenization
-  - llm-fundamentals
 sources:
   - wiki/concepts/semantic-ids
 ---

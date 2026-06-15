@@ -5,7 +5,6 @@ created: 2026-06-10
 updated: 2026-06-10
 tags:
   - company
-  - venture-capital
   - ai-investment
 sources:
   - wiki/entities/sarah-guo
