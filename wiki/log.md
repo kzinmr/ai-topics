@@ -9067,3 +9067,4 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - **Moved**: `concepts/fsdp-qlora.md` → `concepts/post-training/fsdp-qlora.md` (redirect left)
 - **Renamed**: `raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md` → `raw/articles/2024-04-22_phil-schmid-fsdp-qlora-llama3.md` (date corrected to actual publication date)
 - **Updated cross-references**: 14 files updated (bitsandbytes, accelerate, pytorch-fsdp, peft-lora-qlora, deepspeed, genai-handbook, llm-course-roadmap, phil-schmid, tim-dettmers, mobius-labs, training-infra/_index, distributed-training, qlora, index.md)
+- 2026-06-15 10:00 UTC | llm-pricing-monitor | Updated comparisons/llm-api-pricing.md: OpenAI o3/o4-mini→Legacy (replaced by deep-research variants); Google Gemini 3.1 Pro $2.00/$12.00 (was $2.50/$10.00); added Gemini 3 Flash Preview ($0.50/$3.00)
