@@ -103,14 +103,7 @@ Pre-trained Model → SFT → Preference Optimization (DPO/GRPO/RLHF) → RLVR �
 
 ## When to Fine-Tune vs Prompt
 
-| Approach | Best For | Cost | Latency |
-|----------|----------|------|---------|
-| **Prompting** | Quick iteration, general tasks | Low | Variable |
-| **Few-shot** | Pattern demonstration | Low | Variable |
-| **SFT** | Domain adaptation, format enforcement | Medium | Low |
-| **PEFT/LoRA** | Task-specific specialization | Medium | Low |
-| **Full fine-tuning** | Maximum performance, new capabilities | High | Low |
-| **RL/GRPO** | Reasoning, verifiable domains | High | Low |
+> **Moved to [[concepts/post-training/fine-tuning]]** — includes the decision framework table, Ameisen's hierarchy of needs, the 2026 analysis (Context Rot, GRPO evolution, Knowledge Storage Spectrum), and concrete "when to use what" guidance.
 
 ## Related Concepts
 

@@ -1,3 +1,10 @@
+## [2026-06-15] manual — Transcript Ingestion: FSDP, DeepSpeed and Accelerate Office Hours (Zach Mueller)
+
+- **Created**: [[transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours]] — Full structured transcript (807 cues, ~65 min). Zach Mueller (HF Accelerate lead), Dan Becker, Hamel Husain, Charles Frye. Topics: Accelerate API design, Axolotl vs AutoTrain, FSDP vs DeepSpeed, GPU selection, torch.compile, precision (BF16/FP8/INT8), multi-LoRA serving, scaling laws, model size selection.
+- **Created**: [[raw/transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours.en.vtt]] — Raw VTT subtitle version.
+- **Created**: [[raw/articles/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours]] — Companion summary article.
+- **Updated**: [[index.md]] — Added transcript entry, bumped transcript count to 37.
+
 ## [2026-06-15 23:30] manual — Transcript Ingestion: Creating, Curating, and Cleaning Data for LLMs (Daniel van Strien + David Berenstein)
 
 - **Created**: [[transcripts/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms]] — Full lecture transcript (55 min). Daniel van Strien (Hugging Face) and David Berenstein (Argilla) cover DPO/KTO/ORPO data formats, synthetic data pitfalls (Alpaca, UltraFeedback), annotation tooling (Argilla, Lilac, distilabel, Outlines, DSPy), dataset deduplication, and the rise of dataset engineering.
@@ -32,6 +39,9 @@
 - **Updated**: [[entities/hamel-husain]] — Added Jan 2024 timeline entry for hosting the talk.
 - **Updated**: [[index.md]] — Added transcript, article, and entity entries. Transcript count: 32→33. Entity count: 789→790.
 - **Source**: User-provided WEBVTT files (2 versions: speaker-labeled + subtitle).
+- **Created**: [[concepts/post-training/fine-tuning]] — Fine-Tuning decision framework page. Migrated "When to Fine-Tune vs Prompt" table from _index.md. Added Ameisen's hierarchy of needs, 2026 analysis (Context Rot, GRPO evolution, Knowledge Storage Spectrum).
+- **Updated**: [[concepts/post-training/_index]] — Replaced inline table with reference to new fine-tuning.md.
+- **Updated**: [[concepts/fine-tuning]] — Redirect now points to post-training/fine-tuning.md (decision framework) + _index.md (technique catalog).
 
 ## [2026-06-15 00:00] raw-backlog-ingest — Takes=0 (all 5 already covered)
 
