@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-15 | Total pages: 2517 | Indexed entries: 2111 | Concepts: 1688 | Entities: 799
+> Last updated: 2026-06-15 | Total pages: 2573 | Indexed entries: 2115 | Concepts: 1691 | Entities: 801
 
 ## Entities (799 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -152,6 +152,7 @@
 - [[entities/alex-cheema]] — Alex Cheema — AI researcher building Exo Labs (prev Oxford). 48K followers. Known for local AI hardware analysis (Apple vs NVIDIA), "personal AI era" thesis. Detailed breakdown of memory, bandwidth, and power for local inference.
 - [[entities/alex-chernysh]] — **Name** | Alex Chernysh | Applied AI engineer, creator of Bernstein — open-source deterministic orchestrator for 40+ CLI coding agents.
 - [[entities/alex-zhang]] — **Name:** Alex L. Zhang
+- [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind, Professor of Economics at UChicago. Research on post-scarcity economics, relational sector, labor share stability (Kaldor fact), UBI vs universal basic capital.
 - [[entities/ali-farhadi]] — Computer vision pioneer, co-creator of **YOLO** (You Only Look Once) object detection, founder of **Xnor.ai** (acquired by Apple), former CEO of Allen Institute for AI (Ai2). In March 2026 stepped ...
 - [[entities/amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
 - [[entities/amazon-bedrock-agentcore]] — AWS's fully-managed agentic AI platform for building, deploying, and operating AI agents at scale. Framework-agnostic, composable services.
@@ -550,6 +551,7 @@
 - [[entities/courtlistener]] — Free legal research platform by Free Law Project (501(c)(3)). 9M+ US case opinions, RECAP archive. API for legal data access; used by AI legal platforms.
 - [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 - [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
+- [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI, Stanford research scholar. AGI economics, network-adjusted factor shares, "Mongolian economist" analogy, pessimistic Moore's Law, investment-specific technical change. Collaborator with Alex Imas.
 - [[entities/philipp-schmid]] — Philipp Schmid (@_philschmid) — Senior AI Developer Experience Engineer at Google DeepMind, ex-Hugging Face Tech Lead. Prolific AI educator, deployment optimization expert, agent harness advocate.
 - [[entities/playerzero]]
 - [[entities/pliny-prompter]] — Pliny the Prompter (elder_plinius) — World's most prolific AI jailbreaker. TIME100 AI 2025. L1B3RT4S (18.6k stars), G0DM0D3, 0BL1T3R4TUS. Prompt injection, red teaming, system prompt leaks. BASI Discord community.
@@ -858,7 +860,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1688 pages)
+## Concepts (1690 pages)
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
 
@@ -1007,9 +1009,11 @@
 - [[concepts/ai-criticism-politics]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
 - [[concepts/ai-digital-nato]] — AI Digital NATO: Threat intelligence sharing coalition concept by the Frontier Model Forum (OpenAI/Anthropic/Google).
+- [[concepts/ai-doesnt-have-roi]] — AI ROI measurement problem — Ed Zitron framework arguing AI costs and returns cannot be reliably quantified due to token billing opacity, hallucination uncertainty, and variable token consumption. Enterprise token billing crisis (GitHub Copilot, Walmart, Amazon, June 2026).
 - [[concepts/ai-economic-impact]] — AI Economic Impact — Benedict Evans' framings on AI economics: Jevons paradox (cheaper AI → more usage), task vs job automation, value accrual in AI stack, distribution as moat, "1997 internet moment" comparison, anti-AI backlash, consulting/services boom. Sources: [[raw/articles/2026-06-01_benedict-evans-1997-internet-moment.md]]
 - [[concepts/ai-economics]] — "ai-economics"
 - [[concepts/ai-economics-bubble-venture-capital-subprime]] — "ai-economics, bubble, venture-capital, subprime"
+- [[concepts/ai-economics-post-scarcity]] — Post-scarcity economic dynamics under AGI. Two-sector model (automated vs relational), network-adjusted factor shares, Messy Middle scenario, taxation mechanisms (UBI, negative income tax, universal basic capital), Kaldor fact, Jevons paradox, O-ring theory. Key figures: Alex Imas, Phil Trammell.
 - [[concepts/ai-education]] — "ai-education"
 - [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap by Rohit (@rohit4verse): 5 production-grade projects (SLM mobile app → self-improving coding agent → multimodal video editor → personal Life OS → enterprise workflow agent) to bridge the $150K gap between prompt engineers and systems architects.
 - [[concepts/ai-engineering]] — "AI Engineering"

@@ -9,6 +9,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md
   - raw/newsletters/2026-06-03-ainews-microsoft-build-mai-thinking-1-and-mai-family-models.md
   - raw/articles/2026-06-03_eliebakouch-mai-tech-report-deep-dive.md
+  - raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
 ---
 
 # Microsoft MAI Models

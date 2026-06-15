@@ -1,3 +1,39 @@
+## [2026-06-15 17:35] wiki-watchdog-auto-fix — Structural corruption repair
+
+- **Fixed**: `entities/_index.md` — Removed 279 line-number prefix corruptions (`^\s*\d+\|` pattern)
+- **Fixed**: `entities/_index.md` — Corrected 8 pipe table corruptions (`|- [[` → `- [[`)
+- **Updated**: `index.md` header — Total pages: 2521 → 2573, Concepts: 1690 → 1691, Entities: 802 → 801 (reconciled with actual file counts)
+
+---
+
+## [2026-06-15 16:00] raw-backlog-ingest — 5 articles processed
+
+Batch of 5 raw articles from backlog (`raw_backlog_collect.py --sort ai-hint --limit 5`):
+
+**Article 1: MAI-Thinking-1 Tech Report** (372KB, 109 pages)
+- **Enriched**: [[concepts/microsoft-mai-models.md]] — Added raw article to sources frontmatter
+- Microsoft MAI-Thinking-1: 1T parameter MoE, 35B active, trained from scratch with zero distillation
+- Raw article: `raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md`
+
+**Article 2: Dwarkesh Podcast — Alex Imas & Phil Trammell on AI Economics** (71KB, 618 lines)
+- **New entity page**: [[entities/alex-imas.md]] — Director of AGI Economics at Google DeepMind, Professor at UChicago. Relational sector theory, Kaldor fact, UBI vs universal basic capital, Messy Middle scenario analysis
+- **New entity page**: [[entities/phil-trammell.md]] — Head of Economics at Epoch AI, Stanford scholar. Network-adjusted factor shares, Mongolian economist analogy, pessimistic Moore's Law, investment-specific technical change
+- **New concept page**: [[concepts/ai-economics-post-scarcity.md]] — Post-scarcity economic dynamics. Two-sector model (automated vs relational), taxation mechanisms, Jevons paradox, O-ring theory, electricity vs social media models for AI distribution
+- Raw article: `raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md`
+
+**Article 3: Dario Amodei — "Policy on the AI Exponential"** (62KB)
+- Already enriched in previous session. Entity page [[entities/dario-amodei.md]] updated with policy framework.
+
+**Article 4: Will Brown — Lesson 2 MCP + Production Agents Raw Transcript** (49KB)
+- Already captured. [[entities/will-brown.md]] has source reference. [[concepts/agents-mcp-rl-course.md]] has lesson summary.
+
+**Article 5: Ed Zitron — "AI Doesn't Have ROI"** (46KB)
+- **New entity page**: [[entities/ed-zitron.md]] — Tech columnist, AI industry critic. Author of Where's Your Ed At newsletter. AI profitability analysis, token economics critique
+- **New concept page**: [[concepts/ai-doesnt-have-roi.md]] — AI ROI measurement problem. Token billing opacity, hallucination uncertainty, enterprise token crisis (GitHub Copilot, Walmart, Amazon, June 2026)
+- Raw article: `raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md`
+
+---
+
 ## [2026-06-15 11:30] x-bookmarks-ingest — Satya Nadella Token Capital framework
 
 - **1 X bookmark processed**: Satya Nadella's X Article "A frontier without an ecosystem is not stable" (Jun 14, 2026). Full text extracted from `article.plain_text` field (X API returned HTTP 500 for direct URL).

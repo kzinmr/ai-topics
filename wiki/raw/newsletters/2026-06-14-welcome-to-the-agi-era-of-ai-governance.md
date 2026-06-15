@@ -1,0 +1,94 @@
+---
+title: "Welcome to the AGI era of AI governance"
+date: 2026-06-14
+processed_at: 2026-06-15T07:10:19.869260+00:00
+source_label: "uid=228"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-06-14
+
+**Subject:** Welcome to the AGI era of AI governance
+**Collected:** 2026-06-15T07:10:19.869266+00:00
+**Articles linked:** 20
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI9MmZseDYmbmV4dD1odHRwcyUzQSUyRiUyRnd3dy5pbnRlcmNvbm5lY3RzLmFpJTJGcCUyRndlbGNvbWUtdG8tdGhlLWFnaS1lcmEtb2YtYWktZ292ZXJuYW5jZSIsInAiOjIwMjAwMzAzOSwicyI6NDgyMDYsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MTQ1OTEyMiwiZXhwIjoyMDk3MDM1MTIyLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.us2R6uyfHutC-GTSyuwkSxDiiaByhzfHBHsq7eEcJzI?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9wL3dlbGNvbWUtdG8tdGhlLWFnaS1lcmEtb2YtYWktZ292ZXJuYW5jZT91dG1fY2FtcGFpZ249ZW1haWwtaGFsZi1wb3N0JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1ESXdNRE13TXprc0ltbGhkQ0k2TVRjNE1UUTFPVEV5TWl3aVpYaHdJam94TnpnME1EVXhNVEl5TENKcGMzTWlPaUp3ZFdJdE5EZ3lNRFlpTENKemRXSWlPaUp3YjNOMExYSmxZV04wYVc5dUluMC5wYzNjTlMzamVKN01lOUdtbktVYXVyVHg4YnpCSFBxSFk2ZTJZME16RUJnIiwicCI6MjAyMDAzMDM5LCJzIjo0ODIwNiwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxNDU5MTIyLCJleHAiOjIwOTcwMzUxMjIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.EVUqdUi2p0AWl1Sa1eF9_w7SzHZ7wEOmemE-DBhm3Sw?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=48206&post_id=202003039&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDIwMDMwMzksImlhdCI6MTc4MTQ1OTEyMiwiZXhwIjoxNzg0MDUxMTIyLCJpc3MiOiJwdWItNDgyMDYiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.pc3cNS3jeJ7Me9GmnKUaurTx8bzBHPqHY6e2Y0MzEBg
+
+## 4. Link
+
+- **URL:** https://substack.com/@natolambert
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=48206&post_id=202003039&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDIwMDMwMzksInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgxNDU5MTIyLCJleHAiOjE3ODQwNTExMjIsImlzcyI6InB1Yi00ODIwNiIsInN1YiI6InJlYWN0aW9uIn0.VKPJiC2tzdI4UItGOgLpEYltTLYCvJKkgj4KN7Z2lnw&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=48206&post_id=202003039&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDIwMDMwMzksImlhdCI6MTc4MTQ1OTEyMiwiZXhwIjoxNzg0MDUxMTIyLCJpc3MiOiJwdWItNDgyMDYiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.pc3cNS3jeJ7Me9GmnKUaurTx8bzBHPqHY6e2Y0MzEBg&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=48206&post_id=202003039&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDIwMDMwMzksImlhdCI6MTc4MTQ1OTEyMiwiZXhwIjoxNzg0MDUxMTIyLCJpc3MiOiJwdWItNDgyMDYiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.pc3cNS3jeJ7Me9GmnKUaurTx8bzBHPqHY6e2Y0MzEBg
+
+## 8. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvcm9ib3RpYy9wL3dlbGNvbWUtdG8tdGhlLWFnaS1lcmEtb2YtYWktZ292ZXJuYW5jZT91dG1fc291cmNlPXN1YnN0YWNrJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXJlc3RhY2stY29tbWVudCZhY3Rpb249cmVzdGFjay1jb21tZW50JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1ESXdNRE13TXprc0ltbGhkQ0k2TVRjNE1UUTFPVEV5TWl3aVpYaHdJam94TnpnME1EVXhNVEl5TENKcGMzTWlPaUp3ZFdJdE5EZ3lNRFlpTENKemRXSWlPaUp3YjNOMExYSmxZV04wYVc5dUluMC5wYzNjTlMzamVKN01lOUdtbktVYXVyVHg4YnpCSFBxSFk2ZTJZME16RUJnIiwicCI6MjAyMDAzMDM5LCJzIjo0ODIwNiwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxNDU5MTIyLCJleHAiOjIwOTcwMzUxMjIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.Z4tQbW1sbtm3cKTaWxZx-q17u0Tt7-9lPEtaKaHvgjk?&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/robotic/p/welcome-to-the-agi-era-of-ai-governance?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=48206&post_id=202003039&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDIwMDMwMzksImlhdCI6MTc4MTQ1OTEyMiwiZXhwIjoxNzg0MDUxMTIyLCJpc3MiOiJwdWItNDgyMDYiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.pc3cNS3jeJ7Me9GmnKUaurTx8bzBHPqHY6e2Y0MzEBg&utm_source=substack&utm_medium=email#play
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2e467e7f-78c9-4304-9ba5-19d6879e8148?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/5ed29453-3416-4d95-958f-f37e83c5a0ca?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/6d1edf46-3911-4a95-86d0-cc656c29821b?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/9b1e90cc-44b6-448e-93a1-d3890e45e511?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/b10fb66e-3411-4d0c-8ff6-77f6748bccc7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 16. Link
+
+- **URL:** https://substack.com/redirect/277bb67d-cdc1-4f99-8b92-85177620ce6d?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 17. Link
+
+- **URL:** https://substack.com/redirect/692fb82a-bc36-4219-a088-6b0df94a9ab0?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 18. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1wb3N0JnV0bV9jYW1wYWlnbj1lbWFpbC1jaGVja291dCZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3LmludGVyY29ubmVjdHMuYWklMkZwJTJGd2VsY29tZS10by10aGUtYWdpLWVyYS1vZi1haS1nb3Zlcm5hbmNlJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RFME5Ua3hNaklzSW1WNGNDSTZNVGM0TkRBMU1URXlNaXdpYVhOeklqb2ljSFZpTFRRNE1qQTJJaXdpYzNWaUlqb2lZMmhsWTJ0dmRYUWlmUS5wLW9QUjBsVlMwa296ZHFoMVh4ME9hX19DZ0s0MktGTkZSMzZmcjl4VDFzIiwicCI6MjAyMDAzMDM5LCJzIjo0ODIwNiwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxNDU5MTIyLCJleHAiOjIwOTcwMzUxMjIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.YvaoABM75ZP6JYjyPPk20zsW55JP9BJy6kqGyxaQxgE?&utm_medium=email&utm_source=subscribe-widget&utm_content=202003039
+
+## 19. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1wb3N0JnV0bV9jYW1wYWlnbj1lbWFpbC1jaGVja291dCZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3LmludGVyY29ubmVjdHMuYWklMkZwJTJGd2VsY29tZS10by10aGUtYWdpLWVyYS1vZi1haS1nb3Zlcm5hbmNlJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RFME5Ua3hNaklzSW1WNGNDSTZNVGM0TkRBMU1URXlNaXdpYVhOeklqb2ljSFZpTFRRNE1qQTJJaXdpYzNWaUlqb2lZMmhsWTJ0dmRYUWlmUS5wLW9QUjBsVlMwa296ZHFoMVh4ME9hX19DZ0s0MktGTkZSMzZmcjl4VDFzIiwicCI6MjAyMDAzMDM5LCJzIjo0ODIwNiwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxNDU5MTIyLCJleHAiOjIwOTcwMzUxMjIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.YvaoABM75ZP6JYjyPPk20zsW55JP9BJy6kqGyxaQxgE?simple=true&utm_source=paywall&utm_medium=email&utm_content=202003039&next=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance
+
+## 20. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9hY3Rpb24vZGlzYWJsZV9lbWFpbD90b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam95TURJd01ETXdNemtzSW1saGRDSTZNVGM0TVRRMU9URXlNaXdpWlhod0lqb3hPREV5T1RrMU1USXlMQ0pwYzNNaU9pSndkV0l0TkRneU1EWWlMQ0p6ZFdJaU9pSmthWE5oWW14bFgyVnRZV2xzSW4wLllMVVR0RXFyWDIyS3dfdnJsa0REbTNTako4SjV1RWRHTnc0VzZ6V0Nib0UiLCJwIjoyMDIwMDMwMzksInMiOjQ4MjA2LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODE0NTkxMjIsImV4cCI6MjA5NzAzNTEyMiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.gIbuSB1d1L25dBLYJcR-XH2GEUYsFBzAAQT3ylTN7Kk?
+

@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-06-15T07:22:46.214377+00:00",
+  "triage_run_id": "20260615T071022Z",
+  "source": "newsletter",
+  "summary_ja": "4ニュースレターをトリアージ。Lenny's Podcast（Mark Pincus）は純粋ポッドキャストでAI非関連→スキップ。The Signal（Alex Banks）は編集型ダイジェストで全トピック既存Wikiカバー済み（Fable 5、Siri AI+DMA、Amodei政策案）→スキップ。SemiAnalysis（SMIC N+3 vs Intel 18A）は半導体製造工学の深掘りでWiki範囲外→スキップ。Interconnects（Nathan Lambert）の「AGI era of AI governance」はconcepts/ai-regulation-2026.md拡充の価値あり→reference。LambertのFable 5輸出規制分析は既存Fable 5ページのセクションと一部重複するが、「AGI governance era」への移行フレーミングは新規。",
+  "decisions": [
+    {
+      "item_id": "<20260614174342.3.7e82d91194e34e5a@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Interconnects.ai (Nathan Lambert)",
+      "title": "Welcome to the AGI era of AI governance",
+      "url": "https://open.substack.com/pub/robotic/p/welcome-to-the-agi-era-of-ai-governance",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ 既存概念ページ拡充候補。LambertがFable 5輸出規制を「AGI governance era」の幕開けと位置づける分析。政府が「ChatGPT governance era」から「AGI governance era」に移行したと主張、モデル重量輸出禁止の永続的悪影響、Anthropicの恐怖キャンペーンが規制を加速、オープンソース支持者への警告を含む。concepts/ai-regulation-2026.mdの「AGI時代のガバナンス移行」セクションとして追加可能。entities/nathan-lambert.mdのJune 2026 Updatesにも追加推奨。Fable 5の輸出規制自体はconcepts/claude/fable-5.mdで詳細カバー済み。",
+      "candidate_wiki_path": "concepts/ai-regulation-2026.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** Welcome to the AGI era of AI governance\n**Collected:** 2026-06-15T07:10:19.869266+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1f"
+    },
+    {
+      "item_id": "<20260614123145.3.75a7a52c5a77118f@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter (Lenny Rachitsky) — Mark Pincus",
+      "title": "The hidden pattern behind successful products | Mark Pincus (Founder of Zynga)",
+      "url": "https://open.substack.com/pub/lenny/p/the-common-pattern-behind-successful",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-the-hidden-pattern-behind-successful-products-mark-pincus-founder-of-zynga.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 純粋ポッドキャスト・非AIコンテンツ。Mark Pincusのプロダクトマネジメントインタビュー。全リンクがplay_audio/play_card UI要素。Lenny's Podcastは典型的な純粋ポッドキャスト出版で、記事本文なし。AI/LLM/AIエージェントトピックに関連せず。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** The hidden pattern behind successful products | Mark Pincus (Founder of Zynga)\n**Collected:** 2026-06-15T07:10:17.760436+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb"
+    },
+    {
+      "item_id": "<20260614123145.3.75a7a52c5a77118f@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "Link 2-20 (play_audio/noise)",
+      "url": "https://substack.com/app-link/post?publication_id=10845&post_id=198591984",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-the-hidden-pattern-behind-successful-products-mark-pincus-founder-of-zynga.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ノイズ — 全SubstackオーディオUI要素（play_card, play_button, progress_bar, duration等）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** The hidden pattern behind successful products | Mark Pincus (Founder of Zynga)\n**Collected:** 2026-06-15T07:10:17.760436+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb"
+    },
+    {
+      "item_id": "<20260614174342.3.7e82d91194e34e5a@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Interconnects.ai",
+      "title": "Link 3-20 (noise/redundant)",
+      "url": "https://substack.com/app-link/post?publication_id=48206&post_id=202003039",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substackノイズ — titleリンク、@natolambertプロフィール、like/comment/shareボタン、audio UI、subscribeウィジェット、UUIDリダイレクトリンク",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** Welcome to the AGI era of AI governance\n**Collected:** 2026-06-15T07:10:19.869266+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1f"
+    },
+    {
+      "item_id": "<20260614130323.3.a6682b88d6611b20@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "Anthropic Unlocks Mythos, Apple's Gemini Gambit, and SpaceX's Record Raise",
+      "url": "https://open.substack.com/pub/thesignal/p/anthropic-unlocks-mythos-apples-gemini",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-anthropic-unlocks-mythos-apple-s-gemini-gambit-and-spacex-s-record-raise.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 編集型ダイジェスト。全トピックが既存Wikiで詳細カバー済み：Claude Fable 5/Mythos 5（concepts/claude/fable-5.md 338行）、Apple Siri AI + DMA遅延（concepts/siri-ai.md 149行、concepts/ai-regulation-2026.md DMA×AIセクション）、Dario Amodei政策エッセイ（concepts/ai-regulation-2026.md 126-143行）。SpaceX IPOは非AI。The Signalパターン（編集型ラウンドアップ）につき85-90%スキップ期待値。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** Anthropic Unlocks Mythos, Apple's Gemini Gambit, and SpaceX's Record Raise\n**Collected:** 2026-06-15T07:10:18.840197+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1Y"
+    },
+    {
+      "item_id": "<20260614130323.3.a6682b88d6611b20@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "The Signal",
+      "title": "Link 2-20 (noise/redundant)",
+      "url": "https://substack.com/app-link/post?publication_id=293154&post_id=201763738",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-anthropic-unlocks-mythos-apple-s-gemini-gambit-and-spacex-s-record-raise.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substackノイズ — OAuthリダイレクトリンク、@alexbanksプロフィール、like/comment/shareボタン、audio UI、UUIDリダイレクト",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** Anthropic Unlocks Mythos, Apple's Gemini Gambit, and SpaceX's Record Raise\n**Collected:** 2026-06-15T07:10:18.840197+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1Y"
+    },
+    {
+      "item_id": "<20260614191421.3.6bc4d1cd0fd3b4ee@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis (STEEL Lab)",
+      "title": "Is SMIC N+3's Metal Pitch Smaller than Intel 18A's?",
+      "url": "https://open.substack.com/pub/semianalysis/p/steel-smic-n3-teardown",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-is-smic-n-3-s-metal-pitch-smaller-than-intel-18a-s.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Wiki範囲外。半導体ファブリケーションの深掘り技術分析（SMIC N+3プロセスノード vs Intel 18A、DUVマルチパターニング、Design-Technology Co-Optimization）。LLM/AIエージェント/開発者ツール/推論学習インフラに直接関連せず。ペイウォール付き（isAccessibleForFree: False）。SemiAnalysisのAIチップ分析（GPU仕様、推論エンジン、学習クラスタ）であれば価値ありだが、本記事は半導体製造プロセス工学の内容。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** Is SMIC N+3’s Metal Pitch Smaller than Intel 18A’s?\n**Collected:** 2026-06-15T07:10:21.290484+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9z"
+    },
+    {
+      "item_id": "<20260614191421.3.6bc4d1cd0fd3b4ee@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Link 2-20 (noise)",
+      "url": "https://substack.com/app-link/post?publication_id=6349492&post_id=199606144",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-14-is-smic-n-3-s-metal-pitch-smaller-than-intel-18a-s.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substackノイズ — titleリンク、@steelsemi/@afzalahmad/@semianalysis等プロフィールリンク、like/comment/shareボタン、app-storeリダイレクト、UUIDリダイレクト",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n**Subject:** Is SMIC N+3’s Metal Pitch Smaller than Intel 18A’s?\n**Collected:** 2026-06-15T07:10:21.290484+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9z"
+    }
+  ]
+}
