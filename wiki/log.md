@@ -1,3 +1,10 @@
+## [2026-06-15 22:00] manual — Inspect AI entity page enrichment from docs + Hamel's notes
+
+- **Updated**: [[entities/inspect-ai]] — Major enrichment from official docs (v0.3.239) and Hamel Husain's annotated presentation. Added: Agent system (react(), Deep Agent, Human Agent), Agent Bridge (OpenAI SDK/Pydantic AI/LangChain/Claude Code/Codex CLI/Gemini CLI), 6 built-in tools, sandboxing (Docker/K8s/Modal/Proxmox), scanning (inspect-scout), 20+ model providers, production features (eval_set, control channel), ecosystem packages.
+- **Created**: [[raw/articles/2025-06-23_hamel-husain_inspect-ai-annotated-presentation.md]] — Hamel's annotated presentation of JJ Allaire's Inspect AI talk (June 2025). Key insights on Agent Bridge, composition, production scale.
+- **Created**: [[raw/articles/2026-06-09_inspect-ai-docs-current-features.md]] — Feature snapshot from inspect.aisi.org.uk docs (v0.3.239).
+- **Updated**: [[index.md]] — Updated inspect-ai entry with current version and features.
+
 ## [2026-06-15] manual — LLM-as-Policy concept page ingestion from Discord Q&A thread
 
 - **Action**: Ingested kzinmr's LLM-as-Policy Q&A document (Discord thread). Comprehensive Japanese-language analysis covering: LLM-as-Policy formulation (state=context, action=token, policy=LLM), 3 paradigm shifts (thought-as-action, GRPO+RLVR, inference-time scaling), Reward Model vs Critic distinction, SFT as off-policy behavior cloning, SFT vs traditional RL distinctions, DPO/GRPO convergence toward implicit modeling (RM elimination + Critic elimination = same structural pattern).
@@ -8979,3 +8986,11 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - concepts/sandbox/infrastructure
 - concepts/sandbox/js-runtime
 - concepts/tool-orchestration
+
+## [2026-06-15] manual — Wiki Reorg: FSDP/Accelerate pages consolidated
+
+- **Merged**: `concepts/pytorch-fsdp.md` → `concepts/post-training/pytorch-fsdp.md` (canonical page now in post-training/)
+- **Moved**: `concepts/accelerate.md` → `concepts/post-training/accelerate.md`
+- **Redirect**: `concepts/pytorch-fsdp.md` converted to redirect page
+- **Updated cross-references**: 11 files updated (deepspeed.md, zach-mueller.md, index.md, transcripts, raw/articles, genai-handbook.md, fsdp-qlora.md, mobius-labs.md)
+- **Added 2026 retrospective**: ~2800 chars of hindsight analysis to transcript (的中した予測、変化した状況、歴史的意義)

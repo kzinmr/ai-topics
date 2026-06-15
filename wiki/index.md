@@ -61,7 +61,7 @@
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
-- [[entities/inspect-ai]] — Inspect AI — Open-source LLM eval framework by JJ Allaire + UK AI Safety Institute. Dataset/Solver/Scorer pipeline, composable solvers, model-graded scoring, log viewer, agent eval support. `pip install inspect-ai`.
+- [[entities/inspect-ai]] — Inspect AI — Open-source LLM eval framework by JJ Allaire + UK AISI + Meridian Labs. v0.3.239 (Jun 2026), 239 releases, 100+ contributors, adopted by Anthropic/DeepMind/Grok. Dataset/Solver/Scorer pipeline, react() agent, Agent Bridge (Claude Code/Codex/Gemini CLI), sandboxing (Docker/K8s/Modal), 200+ pre-built evals, inspect-scout scanning.
 - [[entities/isaac-flath]] — Isaac Flath — AI product engineer, educator. Pi Harness: RLM + late interaction retrieval (PyLate) + REPL-as-Context. "Retrieval First Agentic Systems." AI Engineering Club founder.
 - [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
