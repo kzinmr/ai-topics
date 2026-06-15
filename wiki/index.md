@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-15 | Total pages: 2515 | Indexed entries: 2109 | Concepts: 1687 | Entities: 798
+> Last updated: 2026-06-15 | Total pages: 2517 | Indexed entries: 2111 | Concepts: 1688 | Entities: 799
 
-## Entities (798 pages)
+## Entities (799 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -123,6 +123,7 @@
 - [[entities/sakana-ai]] — Sakana AI — Tokyo-based AI research lab founded 2023 by David Ha, Llion Jones, Ren Ito. Nature-inspired intelligence, evolutionary model merging, AI Scientist. Japan's most valuable startup (~$2.65B).
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
 - [[entities/sapient-intelligence]] — Sapient Intelligence — Brain-inspired AGI company (Singapore/Beijing/PA). HRM-Text: 1B non-Transformer reasoning model trained for ~$1,000. HRM beat DeepSeek R1/o3 on ARC-AGI.
+- [[entities/satya-nadella]] — Satya Nadella — CEO of Microsoft (since 2014). Token Capital & Frontier Ecosystem framework (Jun 2026): human capital + token capital compound via organizational learning loops.
 - [[entities/samuelcolvin]] — samuelcolvin
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
@@ -857,7 +858,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1687 pages)
+## Concepts (1688 pages)
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
 
@@ -1942,6 +1943,7 @@
 - [[concepts/text-optimization]] — Text Optimization — Practice of modifying the mutable text layer (prompts, context, memory, harness code) to change model behavior. Three theses: legitimate update mechanism, sample efficiency in low-data regimes, update-time compute as a new scaling axis. Originated by Yoonho Lee (Stanford, Jun 2026). Related: [[concepts/meta-harness]], [[concepts/harness-engineering]], [[concepts/context-engineering|Context Engineering]].
 - [[concepts/the-untrainable]] — The Untrainable — Sarah Guo's framework: frontier work whose correctness exists only in private data, walled off from external evaluation. 2x2 of legible/illegible work × saturated/frontier tasks. Absorption frontier, permission & accountability as bottlenecks, not intelligence.
 - [[concepts/together-dci]] — "Together AI Dedicated Container Inference (DCI)"
+- [[concepts/token-capital]] — Token Capital — Satya Nadella's framework (Jun 2026): organizations must build human capital + token capital that compound via learning loops. Model sovereignty, private evals, frontier ecosystem.
 - [[concepts/token-economics]] — Token Economics — LLM inference cost analysis, token pricing, and optimization strategies.
 - [[concepts/token-to-outcome-attribution]] — Token-to-Outcome Attribution — Enterprise layer connecting inference spend to business outcomes. Marginal token utility, retry tails, context inflation, routing waste. Jaya Gupta's Token Budget Wars framework.
 - [[concepts/tokenmaxxing]] — Tasteful Tokenmaxxing — Quality-over-quantity AI adoption philosophy emphasizing judicious token use.

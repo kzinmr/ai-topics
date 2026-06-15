@@ -1,3 +1,14 @@
+## [2026-06-15 11:30] x-bookmarks-ingest — Satya Nadella Token Capital framework
+
+- **1 X bookmark processed**: Satya Nadella's X Article "A frontier without an ecosystem is not stable" (Jun 14, 2026). Full text extracted from `article.plain_text` field (X API returned HTTP 500 for direct URL).
+- **New concept page**: [[concepts/token-capital]] — Nadella's framework for organizational AI strategy. Two forms of capital (human + token) that compound via learning loops. "Hill climbing machine" metaphor. Frontier ecosystem thesis vs model concentration.
+- **New entity page**: [[entities/satya-nadella]] — Microsoft CEO. Career timeline, AI-first transformation, Token Capital framework articulation.
+- **Enriched pages**:
+  - `concepts/organizational-moat.md` — Added cross-reference to token-capital, updated frontmatter `related:`
+  - `entities/microsoft.md` — Updated via existing page patch (Nadella's AI strategy, Token Capital thesis)
+- **Key connections**: Token Capital complements Jaya Gupta's Organizational Moat (both argue against model-as-moat), extends Forward Deployed Engineering (deployment layer as durable advantage), answers Harness Commoditization (learning loop is the differentiator, not the harness), aligns with The Untrainable (private data + human judgment = irreplaceable core).
+- **Source**: raw/articles/2026-06-14_satya-nadella_frontier-ecosystem-token-capital.md (X Article, full text from plain_text field)
+
 ## [2026-06-15 07:50] blog-wiki-ingest — Case C2 recovery: 4 entity enrichments from blog triage
 
 - **Triage checkpoint recovered**: blog-triage output parse failed but checkpoint (`triage_latest.json`) was valid. 9 candidates (8 articles + 1 unsaved). 4 takes, 1 reference, 4 skips. All skip/reference decisions independently verified.

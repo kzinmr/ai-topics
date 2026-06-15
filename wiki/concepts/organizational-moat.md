@@ -7,7 +7,7 @@ status: L2
 tags: [ai-adoption, governance, philosophy, career, economics]
 aliases: ["AI Organizational Moat", "Institutional Moat"]
 sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md]
-related: [entities/jaya-gupta, concepts/context-graphs]
+related: [entities/jaya-gupta, concepts/context-graphs, concepts/token-capital]
 ---
 
 # Organizational Moat
@@ -78,4 +78,5 @@ The organizational moat theory is particularly relevant to AI agent startups:
 - [[entities/jaya-gupta]]
 - [[concepts/context-graphs]]
 - [[concepts/ai-adoption]]
+- [[concepts/token-capital]] — Satya Nadella's complementary framework: human capital + token capital compound via organizational learning loops. Extends the moat thesis into the AI capability domain.
 - Foundation Capital
