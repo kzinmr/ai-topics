@@ -1,3 +1,17 @@
+## [2026-06-15] manual — LLM-as-Policy concept page ingestion from Discord Q&A thread
+
+- **Action**: Ingested kzinmr's LLM-as-Policy Q&A document (Discord thread). Comprehensive Japanese-language analysis covering: LLM-as-Policy formulation (state=context, action=token, policy=LLM), 3 paradigm shifts (thought-as-action, GRPO+RLVR, inference-time scaling), Reward Model vs Critic distinction, SFT as off-policy behavior cloning, SFT vs traditional RL distinctions, DPO/GRPO convergence toward implicit modeling (RM elimination + Critic elimination = same structural pattern).
+- **Created**: `concepts/post-training/llm-as-policy.md` — New concept page synthesizing the Q&A document with existing wiki knowledge. Cross-references to 8 existing pages (grpo-rl-training, rlvr, on-policy-vs-off-policy-rl, rl-algorithms-for-llm-training, rlhf, test-time-scaling, deepseek-r1, reasoning-models).
+- **Created**: `raw/articles/2026-06-15_kzinmr-llm-as-policy-sft-rl-qa.md` — Raw article with all 5 Q&A sections.
+- **Updated**: `concepts/post-training/grpo-rl-training.md` — Added llm-as-policy cross-ref to Related Pages.
+- **Updated**: `concepts/post-training/rlvr.md` — Added llm-as-policy cross-ref to Related Pages.
+- **Updated**: `concepts/post-training/on-policy-vs-off-policy-rl.md` — Added llm-as-policy cross-ref to Related Pages.
+- **Updated**: `concepts/post-training/rl-algorithms-for-llm-training.md` — Added llm-as-policy cross-ref to Related Pages.
+- **Updated**: `concepts/post-training/rlhf.md` — Added llm-as-policy cross-ref to Related Topics.
+- **Updated**: `index.md` — Added concept page entry + raw article entry.
+- **Tags**: `reinforcement-learning`, `post-training`, `training`, `alignment`, `reasoning`, `inference`
+- **Source**: kzinmr Discord thread (2026-06-15), Sebastian Raschka YouTube reference
+
 ## [2026-06-15] manual — Transcript Ingestion: FSDP, DeepSpeed and Accelerate Office Hours (Zach Mueller)
 
 - **Created**: [[transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours]] — Full structured transcript (807 cues, ~65 min). Zach Mueller (HF Accelerate lead), Dan Becker, Hamel Husain, Charles Frye. Topics: Accelerate API design, Axolotl vs AutoTrain, FSDP vs DeepSpeed, GPU selection, torch.compile, precision (BF16/FP8/INT8), multi-LoRA serving, scaling laws, model size selection.

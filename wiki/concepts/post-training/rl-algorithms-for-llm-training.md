@@ -132,6 +132,7 @@ $$\text{KL}(\pi_\theta \| \pi_{ref}) = \sum_t \left[ \pi_\theta(a_t|s_t, a_{<t})
 
 ## Related Pages
 
+- [[concepts/post-training/llm-as-policy]] — LLM-as-Policy paradigm: the overarching framework connecting these algorithms, with reward model vs critic distinction and DPO/GRPO convergence analysis
 - [[concepts/post-training/grpo]] — GRPO detailed mechanics and DeepSeek-R1 application
 - [[concepts/post-training/grpo-rl-training]] — GRPO as an RL backbone with variants
 - [[concepts/post-training/rlhf]] — RLHF overview

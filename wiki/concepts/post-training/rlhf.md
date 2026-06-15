@@ -140,6 +140,7 @@ Low data requirements                     High data requirements
 
 ## Related Topics
 
+- [[concepts/post-training/llm-as-policy]] — LLM-as-Policy paradigm: unifying view connecting RLHF's RM+Critic architecture to DPO/GRPO's implicit modeling
 - [[concepts/post-training/rlhf-dpo-preference]] — Detailed comparison of each method
 - [[concepts/post-training/grpo-rl-training]] — GRPO/RL reasoning training
 - [[concepts/reasoning-models]] — Reasoning models (DeepSeek R1, o1, etc.)

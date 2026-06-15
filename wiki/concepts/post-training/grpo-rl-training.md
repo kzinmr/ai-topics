@@ -142,4 +142,5 @@ See also: [[concepts/agents-mcp-rl-course]], [[concepts/post-training/grpo-infra
 - [[concepts/_index]]
 
 
+- [[concepts/post-training/llm-as-policy]] — LLM-as-Policy paradigm: the overarching framework connecting GRPO, RLVR, reward model vs critic, and inference-time scaling
 - [[concepts/post-training/hands-on-modern-rl]] — walkinglabs open-source curriculum with line-by-line GRPO code implementations

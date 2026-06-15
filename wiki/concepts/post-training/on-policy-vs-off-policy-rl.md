@@ -155,4 +155,5 @@ RL provides only 1 bit of information per episode (the reward signal), but that 
 - [[concepts/post-training/sdar-self-distilled-agentic-rl]] — Gated OPSD + GRPO for agent training
 - [[entities/yoav-goldberg]] — Author of the foundational "why RL" analysis (2023)
 - [[entities/nrehiew]] — Author of the distributional post-training view
+- [[concepts/post-training/llm-as-policy]] — LLM-as-Policy paradigm: SFT as behavior cloning, the DPO/GRPO convergence toward implicit modeling
 - [[entities/will-brown]] — Unified meta-algorithm (α × λ taxonomy)

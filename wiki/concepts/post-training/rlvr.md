@@ -139,4 +139,5 @@ OpenAI explicitly stated (o3 announcement, Apr 2025): *"Large-scale reinforcemen
 
 ## Related Pages
 
+- [[concepts/post-training/llm-as-policy]] — LLM-as-Policy paradigm: the overarching framework connecting RLVR, GRPO, reward model vs critic, and inference-time scaling
 - [[concepts/post-training/hands-on-modern-rl]] — walkinglabs open-source RL curriculum covering RLVR with hands-on code labs
