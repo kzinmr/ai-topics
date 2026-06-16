@@ -9408,3 +9408,6 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - concepts/llm-echo, concepts/llm-trace-judge, concepts/llms-eroding-software-careers
 - concepts/markdown-based-skills, concepts/megakernel-inference, concepts/memory-systems-bitter-lesson
 - concepts/minimax-m2-7, concepts/mlx, concepts/mlx-llm, concepts/modal-sandboxes
+
+### 2026-06-16
+- Updated [[concepts/local-llm/ollama]] with controversy & criticism section from Zetaphor's 'Friends Don't Let Friends Use Ollama' (sleepingrobots.com, 2026-04-15). Added raw article to wiki/raw/articles/. Updated index.md entry.
