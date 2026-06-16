@@ -1,3 +1,15 @@
+## [2026-06-16] Datasette Agent — Multi-source Enrichment
+
+- **Action**: Enriched `entities/datasette-agent.md` and `concepts/datasette-agent.md` with 2 new sources
+- **Sources added**:
+  - `raw/articles/datasette-io--2026-jun-12-datasette-agent--release.md` — official release blog post (datasette.io)
+  - `raw/articles/simonw-substack--2025-jul-08-datasette-agent--precursor.md` — precursor article (Substack, Jul 2025)
+- **Changes**:
+  - Entity page: added 5-step technical pipeline, API/query history section, historical evolution table (datasette-llm-agent → datasette-agent)
+  - Concept page: added cross-reference to entity page, updated sources
+  - index.md: updated entity description
+- **Key insight**: Project evolved from `datasette-llm-agent` (Claude-only, tool-use based, Jul 2025) to `datasette-agent` (multi-model, schema-introspection pipeline, May 2026)
+
 ## [2026-06-16] Dreaming Consolidation — Knowledge Consolidation Cycle
 
 ### Duplicate Check Summary

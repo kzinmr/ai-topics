@@ -2,7 +2,7 @@
 title: datasette-agent
 type: concept
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-16
 tags:
   - ai-agents
   - tool
@@ -12,9 +12,13 @@ tags:
   - plugins
 sources:
   - raw/articles/simonwillison.net--2026-may-24-datasette-agent--ec49f1cf.md
+  - raw/articles/datasette-io--2026-jun-12-datasette-agent--release.md
+  - raw/articles/simonw-substack--2025-jul-08-datasette-agent--precursor.md
 ---
 
 # datasette-agent
+
+> **See [[entities/datasette-agent]] for the full entity page** with technical architecture, plugin ecosystem, and historical evolution.
 
 **datasette-agent** is an AI agent plugin for [[entities/datasette|Datasette]] that enables natural language interaction with SQLite databases. It integrates directly into the Datasette UI, allowing users to ask questions and explore data conversationally through an agent chat interface.
 
