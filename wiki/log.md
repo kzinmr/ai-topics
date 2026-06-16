@@ -9349,3 +9349,18 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 - **329 thin pages** (<300 chars) from June 12 graph analysis
 - **10 duplicate entity pairs** requiring merge/cross-link decisions
 - **Graph analysis report is 4 days stale** — should be regenerated
+
+## [2026-06-16] Wiki Health Auto-Fix
+
+### Fixes Applied
+- Removed ghost entry: entities/nick-bostrom from index.md (no backing file)
+- Added 19 orphan concept pages to index.md (alphabetically inserted)
+- Updated header counts
+
+### Orphans Added
+- concepts/claude/design-entity, concepts/headless-ai-services, concepts/headless-saas
+- concepts/instruction-hierarchy, concepts/kimi-k2-6, concepts/kv-aware-routing
+- concepts/lambda-monolith-lambdalith, concepts/late-interaction-retrieval, concepts/latent-briefing
+- concepts/llm-echo, concepts/llm-trace-judge, concepts/llms-eroding-software-careers
+- concepts/markdown-based-skills, concepts/megakernel-inference, concepts/memory-systems-bitter-lesson
+- concepts/minimax-m2-7, concepts/mlx, concepts/mlx-llm, concepts/modal-sandboxes

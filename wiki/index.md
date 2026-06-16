@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-16 | Total pages: 2555 | Indexed entries: 2151 | Concepts: 1685 | Entities: 806
+> Last updated: 2026-06-16 | Total pages: 2555 | Indexed entries: 2169 | Concepts: 1704 | Entities: 805
 
 ## Entities (0 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -843,7 +843,6 @@
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
 - [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
-- [[entities/nick-bostrom]] — Nick Bostrom — Oxford philosopher, founder of [[entities/future-of-humanity-institute]]. Author of *Superintelligence* (2014), simulation hypothesis, vulnerable world hypothesis. Foundational figure in AI safety and longtermism.
 - [[entities/nous-research]] — Nous Research — NYC-based open-source AI lab (founded 2023). Creator of [[hermes-agent]], [[hermes-4]] (hybrid reasoning models), GEPA (ICLR 2026 Oral), Skills Hub (687 skills). $65M funding.
 - [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
@@ -1180,6 +1179,7 @@
 - [[concepts/claude-code/claude-code-tips]] — Claude Code Tips — Docker/VSCode Dev Container setup for Claude Code with security isolation. Claude Opus 4.8 techniques: mid-conversation system messages, effort parameter tuning (xhigh for long-horizon agents), explicit tool/sub-agent triggering, adaptive thinking steering.
 - [[concepts/claude-code/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-design]] — Claude Design
+- [[concepts/claude/design-entity]] — Claude Design Entity — Anthropic Labs product for collaborative visual design powered by Claude Opus 4.7's vision model. Released April 2026 in research preview.
 - [[concepts/claude/designing-loops-with-fable-5]] — Designing loops with Fable 5 — Lance Martin's patterns for maximizing Claude Fable 5 through self-correction loops and memory-managed sessions. Parameter Golf benchmark: Fable 5 improved ~6x more than Opus 4.7. Memory progression: fail → investigate → verify → distill → consult.
 - [[concepts/claude/diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
 - [[concepts/claude/effort-control]] — Effort Control: User-controllable compute scaling introduced with Opus 4.8 (May 2026). Dial between speed/cost and reasoning depth in claude.ai and Cowork. Operationalizes test-time compute scaling.
@@ -1570,6 +1570,8 @@
 - [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — First Run the Tests
 - [[concepts/harness-engineering/agentic-workflows/hoard-things-you-know]] — Hoard Things You Know How to Do
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
+- [[concepts/headless-ai-services]] — Headless AI Services — Matt Webb's concept where personal AI directly operates SaaS services via APIs, eliminating GUI-based human interaction.
+- [[concepts/headless-saas]] — Headless SaaS — Traditional SaaS products rebuilt with agent-first APIs as primary interface, optimized for AI agent interaction rather than human GUI.
 - [[concepts/hegel-property-based-testing]] — Hegel: universal property-based testing protocol and family of libraries (Go, Rust, C++, TypeScript), built on Hypothesis engine. Client-server architecture: hegel-core Python backend + language SDKs over Unix socket. MIT license, by DRMacIver & team at Antithesis.
 - [[concepts/hermes-agent]] — Hermes Agent by Nous Research: self-evolving personal AI agent with three-tier memory, self-improving skills, GEPA optimization, multi-profile isolation, and plain-English cron. 140K+ GitHub stars. Comparison with OpenClaw.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent (v0.9.0) architecture details. AIAgent-centric design, 3 API execution modes, cache-aware prompt assembly, SQLite+FTS5 persistent state, self-registering tool registry, subagent delegation vs execute_code, 14+ platform Gateway, shared provider runtime. An agent-core-first capability accumulation system.
@@ -1593,6 +1595,7 @@
 - [[concepts/information-retrieval]] — Precision-Recall-Desirability framework, bag-of-documents model, embedding-based search vs bag-of-words, SIRA: LLM-guided lexical retrieval with DF filtering (Meta, May 2026), RAG, semantic equivalence. [[concepts/embeddings]] [[concepts/vector-search]] [[concepts/lexical-search]] [[concepts/bm25]] [[concepts/rag-systems]]
 - [[concepts/information-theory-and-agent-communication]] — Reinterpretation of Shannon's (1948) Mathematical Theory of Communication from the perspective of inter-agent AI communication. Three-layer agent communication model integrating V-Information (Xu et al., 2020). Information-theoretic foundations of the harness effect, Shannon capacity analogy for context windows.
 - [[concepts/infrastructure]] — Infrastructure-Level Sandbox — OS/hypervisor-level isolation technologies for AI agent sandboxing.
+- [[concepts/instruction-hierarchy]] — Instruction Hierarchy — Framework defining priority of instructions from different sources. Systematic research using OpenAI's IH-Challenge benchmark.
 - [[concepts/intelligence-conflation]] — Intelligence Conflation — The fallacy of conflating different dimensions of intelligence (knowledge, reasoning, consciousness) in AI capability discussions and public debate.
 - [[concepts/intent-based-engineering]] — Intent-Based Engineering — Daniel Miessler's framework specifying WHAT rather than HOW, letting AI infer implementation details from clear intent declarations.
 - [[concepts/intent-formalization]] — "Intent Formalization for AI Agents"
@@ -1605,16 +1608,21 @@
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/kernel-evolve]] — KernelEvolve — Meta's agentic kernel authoring system for automated GPU kernel optimization, code generation, and self-improving CUDA kernels.
 - [[concepts/kimi-k2-5]] — Kimi K2-5 — Moonshot AI's 1T-parameter Mixture-of-Experts model, 200K context window, competitive with frontier models on reasoning and coding.
+- [[concepts/kimi-k2-6]] — Moonshot Kimi K2.6 — Major open-weight refresh of Moonshot's leading Chinese open model (Apr 2026). 1T-parameter MoE, 32B active, 384 experts, MLA attention, 256K context, native multimodality.
 - [[concepts/kimi-k2-7-code]] — Kimi K2.7-Code — Moonshot AI coding model, token-efficient, June 2026
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for Agents
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
 - [[concepts/knowledge-storage-spectrum]] — Knowledge Storage Spectrum — Weights, KV cache, RAG, and context as points on a single spectrum of trade-offs between latency, cost, persistence, and expressiveness. The storage form is an implementation detail.
 - [[concepts/killed-by-gpt]] — "Killed by GPT" — Chip Huyen's critique of AI hype cycles and the pattern of declaring technologies "dead" when they plateau.
 - [[concepts/korean-ai]] — Korean AI Ecosystem
+- [[concepts/kv-aware-routing]] — KV-Aware Routing — Inference optimization selecting workers based on KV cache overlap rather than just load, improving cache hit ratios and reducing latency.
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/kv-cache-compaction]] — KV Cache Compaction — Attention-matching compaction for efficient LLM inference
 - [[concepts/lambda-rlm]] — Lambda-RLM — Research combining Lambda calculus with reinforcement learning for improved machine reasoning.
+- [[concepts/lambda-monolith-lambdalith]] — Lambda Monolith (Lambdalith) — Serverless architecture pattern where a single AWS Lambda function handles all API routes, rather than many small route-specific functions.
 - [[concepts/langgraph]] — LangGraph — Low-level orchestration framework developed by LangChain. Provides stateful graph-based agent construction. Built-in Persistence Layer (short/long-term memory), Human-in-the-loop (interrupt/approve/time travel), Fault Tolerance, Streaming. Aims to balance high-level abstraction with low-level control under Harrison Chase's "Keras for Agents" philosophy. Designed as an antithesis to the dangers of Agent Abstractions (context hiding).
+- [[concepts/late-interaction-retrieval]] — Late-Interaction Retrieval (ColBERT) — Retrieval paradigm preserving token-level information by deferring similarity computation to the end of the pipeline, replacing lossy single-vector pooling.
+- [[concepts/latent-briefing]] — Latent Briefing — Ramp Labs' task-guided KV cache compaction for efficient memory sharing in hierarchical multi-agent systems. 42-57% token reduction.
 - [[concepts/latent-terms]] — Latent Terms — Sparse features extracted from dense retrieval model activations via SAEs. Form a Zipfian-distributed vocabulary indexable with BM25. Outperforms single-vector backbones, competitive with SPLADE-v3.
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/lexical-search]] — Lexical Search: token-based matching against inverted index. Tokenization, query processing (AND/OR), multi-field search (DisMax, BM25F). Foundation for BM25 scoring. Doug Turnbull's "Cheat at Search Essentials" course + BM25F derivation.
@@ -1629,6 +1637,7 @@
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-creative-writing]] — LLM Creative Writing — AI-assisted creative writing: narrative generation, style transfer, and prompting for literary prose. Gwern's analysis of better LLM writing techniques.
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm — Two-stage development approach: pre-training → post-training (SFT+RS+DPO). Established in the Llama 3 paper.
+- [[concepts/llm-echo]] — llm-echo — Plugin for Simon Willison's LLM CLI tool that records and replays LLM API interactions, enabling deterministic debugging and cost optimization.
 - [[concepts/llm-evaluation]] — LLM Evaluation
 - [[concepts/llm-inference]] — LLM Inference
 - [[concepts/llm-landscape-nov-2025-to-may-2026]] — LLM Landscape Nov 2025–May 2026: Simon Willison's PyCon US 2026 lightning talk. Model throne wars, coding agent quality breakthrough (RLVR), OpenClaw ecosystem, open-weight models (Gemma 4, GLM-5.1), pelican bicycle benchmark.
@@ -1636,8 +1645,10 @@
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/llm-security]] — LLM Security
 - [[concepts/llm-steering]] — LLM Steering
+- [[concepts/llm-trace-judge]] — LLM Trace Judge — Using LLMs to automatically evaluate production traces from AI agent interactions. Fine-tuning open models matches frontier performance at 10-100x lower cost.
 - [[concepts/llm-training-coherence-evolution]] — "LLM Training Coherence Evolution"
 - [[concepts/llm-understanding]] — LLM Understanding Debate — Whether LLMs genuinely "understand" language or merely simulate it. Gary Marcus vs Geoffrey Hinton: simulation view (mimicry without internal states) vs consciousness claim. Pope Leo XIV: "True comprehension comes from experience, not text approximation." Capraro & Marcus Nature paper (Feb 2026). Mechanistic interpretability implications.
+- [[concepts/llms-eroding-software-careers]] — LLMs Eroding Software Engineering Careers — June 2026 viral essay on how LLMs and coding agents are systematically eroding software engineering expertise. Middle ground between AI hype and denial.
 - [[concepts/local-first-architecture]] — Software design paradigm where primary data store lives on client (IndexedDB, SQLite), server acts as sync target. Covers principles (optimistic updates, offline-first, CRDT conflict resolution), Linear's implementation, benefits, challenges, related tech (ElectricSQL, Replicache, Automerge), and case studies.
 - [[concepts/local-first-software]] — Local-First Software
 - [[concepts/local-llm/_index]] — Local LLM
@@ -1650,16 +1661,19 @@
 - [[concepts/main-branch-development]] — Main-Branch Development — Coding workflow pattern advocating direct main-branch development with AI code agents.
 - [[concepts/managed-agents]] — Managed Agents
 - [[concepts/managed-agents-sre-incident-response]] — Managed Agents — SRE Incident Response Pattern using AI agents for automated incident management.
+- [[concepts/markdown-based-skills]] — Markdown-Based Skills — Agent capability pattern where skills are defined in .md files with YAML frontmatter, enabling non-engineers to encode agent behavior without code.
 - [[concepts/marin]] — Marin — Open-source framework from Stanford CRFM for foundation model research and training. Reproducible end-to-end pipeline, open development on GitHub (1.1k stars). Trained first open-source 8B to beat Llama 3.1 8B.
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents — Run ACP-compatible coding agents as Mastra tools/sub-agents. Supports supervisor delegation and workflow steps. @mastra/acp@0.1.0 (May 2026).
 - [[concepts/mcp]] — MCP (Model Context Protocol) — Anthropic's open protocol for AI tool discovery and invocation. "USB-C for AI" connecting any agent to any tool ecosystem.
 - [[concepts/mcp-desktop-extensions]] — MCP Desktop Extensions (.mcpb). MCP 2026-07-28 RC: protocol made stateless (no handshake, no session ID). MCP Apps/Tasks extensions. Single ZIP archive file. Double-click install.
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security — Model Context Protocol implementation, testing, and security analysis
 - [[concepts/mechanistic-interpretability]] — Mechanistic Interpretability — Understanding neural networks by reverse engineering
+- [[concepts/megakernel-inference]] — Megakernel for LLM Inference — CUDA kernel optimization fusing all LLM layers into a single dispatch, eliminating CPU round-trips between layers.
 - [[concepts/memex-scratchpad|MemEx]] — MemEx: Programmable Scratchpad for LLM Agents. Databricks' typed Python kernel that replaces JSON tool calling with code-as-action, lifting accuracy and cutting token cost on enterprise tasks (May 2026).
 - [[concepts/memory-architecture]] — Memory Architecture (Three-Layer Model)
 - [[concepts/memory-scaling|Memory Scaling]] — Databricks AI Research on agent performance improvement beyond LLM context limits.
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns — Anthropic vs OpenAI vs Cognition: comparative analysis of AI agent memory architectures.
+- [[concepts/memory-systems-bitter-lesson]] — Memory Systems and the Bitter Lesson — Applies Sutton's Bitter Lesson to AI agent memory system design: general scaling methods ultimately win over hand-crafted architectures.
 - [[concepts/meta-harness]] — Meta-Harness — Stanford/MIT outer-loop harness optimization framework. OS/Brain separation for agent systems, automated hill-climbing on verifiable benchmarks, 6x performance gap via harness changes. Practical implementation: howdymary/hermes-agent-metaharness.
 - [[concepts/meta-meta-prompting]] — Meta-Meta-Prompting — AI agent design philosophy proposed by Garry Tan. Rather than writing prompts directly for AI, build a skill system + knowledge graph so the entire system grows compoundingly. Core thesis: "Fat Skills, Fat Code, Thin Harness". Skillify (auto-skill-ification), Book Mirror process, personal AI OS with 100+ skills + ~100K pages.
 - [[concepts/meta-muse-spark]] — "Meta Muse Spark"
@@ -1669,6 +1683,7 @@
 - [[concepts/microsoft-arbor]] — Microsoft Arbor — Autonomous Research Agent — Microsoft Research's autonomous research agent using persistent hypothesis-tree refinement for long-horizon research tasks. Claims to beat Codex and Claude Code on research tasks. AINews / Hugging Papers June 2026.
 - [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr/May 2026 → Jun 2026 Build): MAI-Thinking-1 (1T param reasoning, 35B active, zero distillation), MAI-Code-1-Flash (137B code model, 5B active), MAI-Image-2, MAI-Transcribe-1, MAI-Voice-1 + updates. Windows as agent runtime, GitHub Copilot app, Web IQ.
 - [[concepts/microsoft-scout-agent]] — Microsoft Scout (Jun 2026) — Microsoft's first "Autopilot" agent. Always-on M365 agent with governed Entra ID identity, Work IQ, built on OpenClaw. Proactive scheduling, meeting prep, M365 integration. Built with enterprise-grade security.
+- [[concepts/minimax-m2-7]] — MiniMax M2.7 — Frontier LLM designed for agentic workflows. Self-directed improvement through autonomous experimentation.
 - [[concepts/minimax-m3]] — MiniMax M3 — All-in-one multimodal 1M-context model. MiniMax Sparse Attention (MSA), Together AI preferred cloud partner with 81-125% throughput gains. Native image/video support. June 2026.
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA) — Sub-quadratic attention for MiniMax M3 model. Block-level selection on real KVs, 9.7× faster prefilling, 15.6× faster decoding at 1M tokens vs full attention. May 2026.
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
@@ -1679,7 +1694,10 @@
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
 - [[concepts/mixture-of-experts]] — Mixture of Experts
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
+- [[concepts/mlx]] — MLX — Apple's open-source ML framework for Apple Silicon. NumPy-like API, unified memory, primary local inference framework on M-series chips.
+- [[concepts/mlx-llm]] — MLX for LLM Inference — MLX packages for running LLMs on Apple Silicon. 10-25% faster than llama.cpp on Apple hardware.
 - [[concepts/ml-research-practice]] — ML Research Practice — John Schulman's research methodology guide (2017). Problem selection (goal-driven > idea-driven), continual progress (notebook, ε-greedy exploration), personal development. 2026 relevance: agent architecture, RLHF philosophy, context engineering.
+- [[concepts/modal-sandboxes]] — Modal Sandboxes — Isolated, cloud-hosted virtual machines from Modal for AI coding agent execution. Near-instant startup, filesystem snapshots, async batch processing.
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
 - [[concepts/model-distillation]] — Model Distillation
 - [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs — Industry thesis: every model lab is restructuring around agent infrastructure. Brockman: "the model alone is no longer the product".
