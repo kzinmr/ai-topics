@@ -1,3 +1,24 @@
+## [2026-06-16] Dreaming Consolidation — Knowledge Consolidation Cycle
+
+### Duplicate Check Summary
+- Articles in checkpoint: 6
+- Items skipped (already fully processed): 5
+  - Dwarkesh "Sample efficiency black hole" → `entities/dwarkesh-patel.md` + `concepts/sample-efficiency.md`
+  - Ed Zitron "AI Is Slowing Down" → `entities/ed-zitron.md` (dedicated section)
+  - Martin Alderson "xAI datacentre REIT" → `entities/martin-alderson.md` + `entities/xai.md` (enriched)
+  - Gary Marcus "Entire industry propped up by math" → `entities/gary-marcus.md` (source ref)
+  - Entropic Thoughts "LLMs and almost good code" → `entities/entropicthoughts-com.md` (timeline + LLM eval section)
+- Gaps filled: 1
+
+### Updated Pages (1)
+- **`entities/simon-willison.md`** — Added WWDC 2026 — Siri AI & Apple Intelligence section (Jun 8): cautious "I'll believe it when I see it" framing, Siri AI using vision LLMs for screen extraction (avoiding per-app integration), Core AI PyTorch extensions (`coreai-torch`), PCC on Google Cloud with NVIDIA GPUs, iOS 27 Developer Beta waitlist. Cross-referenced `concepts/apple-gemini-ai-architecture` and `concepts/apple-foundation-models`. Added raw article source to frontmatter, bumped `updated` to 2026-06-16.
+
+### Scoring (NJ Delivery Filter)
+- Lead stories (NJ ≥ 4): None — all articles already processed by adjacent jobs
+- Gap fill: WWDC 2026 coverage added to Simon Willison entity page (minor enrichment, not reportable)
+
+---
+
 ## [2026-06-16] Drexler CAIS / FHI / Bostrom — Multi-source Wiki Ingestion
 
 ### New Pages Created (3)
