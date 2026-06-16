@@ -28,6 +28,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md
   - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
   - raw/articles/2026-06-08_openai-built-to-benefit-everyone.md
+  - raw/articles/2026-02-23_fortune_openai-mission-statement-safety-removed.md
 ---
 
 # OpenAI
@@ -356,6 +357,8 @@ OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack tar
 ## OpenAI Foundation
 
 The [[entities/openai-foundation|OpenAI Foundation]] is the nonprofit arm established as part of OpenAI's restructuring. Key programs include the People-First AI Fund ($50M+), AI for Alzheimer's ($100M+), Economic Futures ($250M), and AI Resilience ($130M+). Led by Bret Taylor (Chair) and Wojciech Zaremba (Head of AI Resilience, OpenAI co-founder). Total commitment: $1B+ over the next year, $25B long-term.
+
+> **Note:** During the for-profit restructuring, OpenAI removed all safety language from its IRS Form 990 mission statement — see [[events/openai-mission-statement-safety-removal]] for details and accountability concerns raised by nonprofit governance scholars.
 
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)

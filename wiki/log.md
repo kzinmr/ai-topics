@@ -9317,3 +9317,14 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 ### Raw articles saved
 - raw/papers/perfcodebench.pdf (arXiv:2605.15222)
 - [2026-06-16] concept: ML Research Practice (concepts/ml-research-practice.md) — Schulman 2017 essay ingested. Goal-driven research, notebook culture, ε-greedy exploration, 2026 relevance analysis. Source: raw/articles/2020-01-24_joschu_opinionated-guide-ml-research.md. Updated: entities/john-schulman.md (source + cross-link).
+
+## [2026-06-16] OpenAI Mission Statement Safety Language Removal — Fortune記事 Ingestion
+
+### New Pages Created (1)
+- **`events/openai-mission-statement-safety-removal.md`** — Fortune記事取り込み。OpenAI for-profit restructuring時のIRS Form 990 mission statement safety language削除。2016-2024年の6回のmission statement変遷、$6.6B funding、74% nonprofit control放棄、Alnoor Ebrahim (Tufts) のgovernance懸念を記録。
+
+### Updated Pages (1)
+- **`entities/openai.md`** — raw article source追加 + OpenAI Foundationセクションにevent cross-reference追加
+
+### Raw articles saved
+- raw/articles/2026-02-23_fortune_openai-mission-statement-safety-removed.md

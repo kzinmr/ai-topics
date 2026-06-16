@@ -875,7 +875,7 @@
 - [[concepts/plandex-coding-engine]] — Plandex Coding Engine — Terminal-based AI coding engine for multi-file projects, 2M token context window, tree-sitter project mapping, cumulative diff review sandbox, configurable autonomy spectrum.
 - [[concepts/spine-swarm-agents]] — Spine Swarm — Parallel multi-agent research platform, 300+ model support, structured handoffs, #1 on DeepSearchQA (87.6%), client-ready output formats, automation via MCP/API/webhooks.
 
-## Events (9 pages)
+## Events (10 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
 - [[events/openai-may-2026-reorg]] — OpenAI's May 2026 product reorganization. Greg Brockman oversees all products, ChatGPT and Codex integrated, Thibault Sottiaux named core product lead. Fidji Simo on medical leave.
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — Anthropic announces new products enhancing Claude Code (2026-05-06)
@@ -885,6 +885,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
+- [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal (2024 restructuring) — IRS Form 990 filings show safety language removed from mission statement during for-profit restructuring. 74% nonprofit control ceded, investor board seats enabled. Alnoor Ebrahim (Tufts) accountability concerns.
 
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
