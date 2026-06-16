@@ -1,3 +1,55 @@
+## [2026-06-16 04:00 UTC] raw-backlog-ingest — Pipeline saturation (Takes=0)
+
+**Batch composition**: MAI-Thinking-1 tech report (372KB), Dwarkesh/Imas/Trammell AGI economics (71KB), Dario Amodei AI policy essay (62KB), Will Brown Lesson 2 transcript (50KB), Ed Zitron AI ROI critique (47KB).
+**Candidates**: 5 | **Takes**: 0 | **Skips**: 5 | **Archive**: 5
+**All 5 articles confirmed already processed by prior pipeline runs:**
+- MAI-Thinking-1 Tech Report → `concepts/mai-thinking-1-tech-report.md` (227 lines, complete coverage)
+- Dwarkesh/Imas/Trammell → `concepts/agi-economics.md` (93 lines) + `entities/dwarkesh-patel.md` (218 lines)
+- Dario Amodei "Policy on the AI Exponential" → `entities/dario-amodei.md` (226 lines, 5-area framework)
+- Will Brown Lesson 2 → `transcripts/` clean version (540 lines) + `concepts/agents-mcp-rl-course`
+- Ed Zitron "AI Doesnt Have ROI" → `entities/ed-zitron.md` (470 lines, enterprise cost crisis section)
+**Archive**: `raw/archived/triage/backlog/2026-06-16_20260616T040033Z.json`
+
+
+## [2026-06-15 23:30 UTC] x-bookmarks-ingest — Hermes setup guide, slow search, Codex Mobile
+
+**Bookmarks processed**: 3 | **Raw articles saved**: 4 | **Entity pages created**: 3 | **Concept pages created/updated**: 2
+
+### Bookmark 1: Zaimiri — "The 7-day Hermes setup (full guide)"
+- **X Article** with full `plain_text` content (4,500+ chars)
+- **🆕 Created** [[entities/zaimiri]] — AI setup educator, author of the 7-day Hermes guide
+- **🆕 Created** `raw/articles/2026-06-14_zaimiri_7-day-hermes-setup.md`
+- **Guide covers**: 7-day progressive setup pattern (Day 1: install+verify → Day 2: identity → Day 3: memory → Day 4: Telegram gateway → Day 5: skills → Day 6: quiet cron → Day 7: profiles). Key thesis: "build it slower" — identity and memory before tools, high-signal memory only, skills from real repeated tasks, quiet crons that stay silent when no signal.
+- **Key concepts**: Identity layer, procedural memory (skills), high-signal vs low-signal memory, quiet cron design, profile isolation
+
+### Bookmark 2: Ben Clavié / Josh Barrow — "Searching, Fast and Slow"
+- **X Article** with full `plain_text` content (4,300+ chars) by Josh Barrow (@jbarrowai)
+- **🆕 Created** [[entities/josh-barrow]] — AI researcher, slow search advocate, Obliq-Bench creator
+- **🆕 Created** [[entities/dimillian]] — Guillaume Charpiat (@dimillian), Codex Mobile power user guide author
+- **🆕 Created** [[concepts/slow-search]] — Trading per-query latency for retrieval quality; 2013 Teevan paper → agentic retrieval relevance
+- **✏️ Updated** [[concepts/hornet]] — Added Ben Clavié reference and connection to slow search
+- **Key thesis**: Two competing philosophies in agentic retrieval — (1) latency doesn't matter for agents, (2) agents are MORE sensitive to latency due to query multiplication. Resolution: both are right at different granularities. Per-query, agents can wait; at scale, throughput matters.
+- **Supporting evidence**: Reason-ModernColBERT (LightOn AI) shows better retrieval lifts all model sizes; DCI paper shows agents using grep/bash double tool calls and cost; Hornet (Jo Bergum) bets on throughput optimization
+
+### Bookmark 3: dimillian — "Codex Mobile power user guide"
+- **Tweet** quoting dimillian's guide about using phone as control plane for remote coding agents
+- **Raw article**: `raw/articles/2026-06-14_dimillian_codex-mobile-guide.md`
+- **Key workflow**: Start threads on right host+workspace from mobile, pick branch+worktree, run local env setup, use mobile as orchestration interface while compute runs on dedicated hardware
+- **Pattern**: Distributed coding agent — phone as control plane, remote machines as execution
+
+### Also captured (from batch backlog):
+- **🆕 Created** [[concepts/killed-by-gpt]] — Chip Huyen's critique of AI hype cycles
+- **🆕 Created** [[concepts/mteb]] — Massive Text Embedding Benchmark
+- **Raw articles saved**: killed-by-gpt, mythos, jbarrow searching, mteb-v3, simonwillison wasm, anthropic privacy, dimillian codex, zaimiri hermes setup
+
+## [2026-06-15 20:00] raw-backlog-ingest batch (5 articles) — all already covered
+
+- **MAI-Thinking-1 Tech Report** (372KB) → skip: `concepts/mai-thinking-1-tech-report.md` (227 lines, full architecture + benchmarks)
+- **Dwarkesh: Alex Imas & Phil Trammell** (71KB) → skip: `entities/alex-imas.md` (61 lines) + `entities/phil-trammell.md` + `entities/dwarkesh-patel.md` timeline entry (Jun 2026)
+- **Dario Amodei - Policy on the AI Exponential** (62KB) → skip: `entities/dario-amodei.md` (226 lines, 5-area framework)
+- **Will Brown Lesson 2 Raw Transcript** (50KB) → skip: `entities/will-brown.md` (215 lines) + `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` (540 lines)
+- **Ed Zitron - AI Doesn't Have ROI** (47KB) → skip: `entities/ed-zitron.md` (470 lines, circular dependency thesis)
+
 ## [2026-06-15 17:40] skeleton-enrichment - Emmanuel Ameisen (59 to 186 lines)
 
 - **Entity enriched**: wiki/entities/emmanuel-ameisen.md

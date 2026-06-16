@@ -1,0 +1,54 @@
+{
+  "run_id": "20260616T040033Z",
+  "collected_at": "2026-06-16T04:00:33Z",
+  "total_candidates": 5,
+  "decisions": [
+    {
+      "filename": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "size_bytes": 372471,
+      "action": "skip",
+      "reason": "concepts/mai-thinking-1-tech-report.md (227 lines) fully covered",
+      "content_hash": "fe910cb238bd"
+    },
+    {
+      "filename": "dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md",
+      "size_bytes": 71061,
+      "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell",
+      "action": "skip",
+      "reason": "concepts/agi-economics.md (93 lines) + entities/dwarkesh-patel.md (218 lines) already enriched",
+      "content_hash": "087980164c6c",
+      "archive_status": "already_archived"
+    },
+    {
+      "filename": "2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md",
+      "size_bytes": 62458,
+      "url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "action": "skip",
+      "reason": "entities/dario-amodei.md (226 lines, 5-area framework) already enriched",
+      "content_hash": "25ed485a87b6",
+      "archive_status": "already_archived"
+    },
+    {
+      "filename": "2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md",
+      "size_bytes": 49563,
+      "action": "skip",
+      "reason": "transcripts/ clean version (540 lines) + concepts/agents-mcp-rl-course already enriched",
+      "content_hash": "477abbe28095"
+    },
+    {
+      "filename": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
+      "size_bytes": 46667,
+      "url": "https://www.wheresyoured.at/ai-doesnt-have-roi/",
+      "action": "skip",
+      "reason": "entities/ed-zitron.md (470 lines, enterprise cost crisis section) already enriched",
+      "content_hash": "6f9a75116931",
+      "archive_status": "already_archived"
+    }
+  ],
+  "summary": "All 5 articles already processed by prior pipeline runs. Takes=0, pipeline saturation confirmed."
+}
