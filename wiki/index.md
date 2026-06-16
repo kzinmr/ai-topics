@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-16 | Total pages: 2576 | Indexed entries: 2118 | Concepts: 1693 | Entities: 802
+> Last updated: 2026-06-16 | Total pages: 2555 | Indexed entries: 2151 | Concepts: 1685 | Entities: 806
 
 ## Entities (0 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions

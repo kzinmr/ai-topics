@@ -9328,3 +9328,24 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 
 ### Raw articles saved
 - raw/articles/2026-02-23_fortune_openai-mission-statement-safety-removed.md
+
+---
+
+## [2026-06-16 17:35 UTC] wiki-watchdog-auto-fix — Index header reconciliation
+
+### Analysis
+- **Pipeline watchdog**: Newsletter chain alert (`triage_ok_but_wiki_ingest_failed`) from earlier run proved stale — newsletter-wiki-ingest completed successfully at 07:55 UTC (confirmed in log.md)
+- **Wiki health**: No recent report available (null)
+- **Wiki graph health**: 4 days old (June 12) — 329 thin pages and 10 duplicate candidates identified, need human review
+- **Structural integrity**: No pipe table corruption, no line number prefix corruption in index.md or log.md
+
+### Auto-fixed
+- **index.md header**: Reconciled counts with actual file system
+  - Total pages: 2576 → 2555 (Layer 2 pages)
+  - Concepts: 1693 → 1685
+  - Entities: 802 → 806
+
+### Needs human attention
+- **329 thin pages** (<300 chars) from June 12 graph analysis
+- **10 duplicate entity pairs** requiring merge/cross-link decisions
+- **Graph analysis report is 4 days stale** — should be regenerated
