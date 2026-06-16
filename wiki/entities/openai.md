@@ -2,15 +2,17 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-10
+updated: 2026-06-16
 tags:
   - company
   - model
   - ai-agents
   - product
   - openai
+  - economics
 aliases: ["OpenAI Inc."]
 sources:
+  - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
@@ -359,6 +361,24 @@ OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack tar
 The [[entities/openai-foundation|OpenAI Foundation]] is the nonprofit arm established as part of OpenAI's restructuring. Key programs include the People-First AI Fund ($50M+), AI for Alzheimer's ($100M+), Economic Futures ($250M), and AI Resilience ($130M+). Led by Bret Taylor (Chair) and Wojciech Zaremba (Head of AI Resilience, OpenAI co-founder). Total commitment: $1B+ over the next year, $25B long-term.
 
 > **Note:** During the for-profit restructuring, OpenAI removed all safety language from its IRS Form 990 mission statement — see [[events/openai-mission-statement-safety-removal]] for details and accountability concerns raised by nonprofit governance scholars.
+
+## Audited Financials (2024–2025)
+
+In June 2026, Ed Zitron exclusively published audited financial documents for OpenAI, independently verified by the Financial Times. See [[events/openai-2025-audited-financials]] for full breakdown.
+
+| Metric | 2024 | 2025 |
+|--------|------|------|
+| **Revenue** | $3.7B | $13.07B |
+| **Total Costs & Expenses** | $12.48B | $34B |
+| **Loss from Operations** | $8.78B | $20.92B |
+| **Net Loss (attributable)** | $5.09B | $38.53B |
+
+Key findings:
+- Losses increased ~8x year-over-year
+- 2025 included a $41.55B loss from non-profit → for-profit conversion (fair value of convertible interests)
+- OpenAI paid Microsoft **$17.2B** in 2025 (mostly R&D/training: $10.59B)
+- SoftBank paid OpenAI $867M; Microsoft paid $303M
+- Year-end 2025 assets: ~$50B (nearly half cash)
 
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)

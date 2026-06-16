@@ -15,6 +15,7 @@ tags:
   - controversy
   - techno-pessimism
 sources:
+  - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
   - raw/articles/wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md
   - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
   - https://www.wheresyoured.at/
@@ -80,6 +81,7 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | May 2026 | I Will Never Respect A Website | "LLMs are websites" framing; Stella Laurenzo's Claude Code analysis; coding vulnerability crisis |
 | May 2026 | AI Is Really Weird | Agent definition critique; Anthropic revenue anomalies; capacity planning paradox |
 | Jun 2026 | AI Doesn\'t Have ROI | Enterprise cost crisis, kalopsia thesis, Dark Output critique |
+| Jun 2026 | Exclusive: OpenAI 2025 Audited Financials | OpenAI lost $38.5B in 2025; $34B total costs; paid Microsoft $17.2B. FT-verified. |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 1) | IPO race, $35B Broadcom Anthropic deal with SPV structure, $4.4B pure Anthropic notes |
 
 ## AI Is Too Expensive (May 2026)

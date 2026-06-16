@@ -884,6 +884,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
+- [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss. Ed Zitron exclusive report based on FT-verified audited documents. Revenue $13.07B, total costs $34B, paid Microsoft $17.2B.
 - [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal (2024 restructuring) — IRS Form 990 filings show safety language removed from mission statement during for-profit restructuring. 74% nonprofit control ceded, investor board seats enabled. Alnoor Ebrahim (Tufts) accountability concerns.
 
 

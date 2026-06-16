@@ -1,3 +1,14 @@
+## [2026-06-16] OpenAI 2025 Audited Financials — Ingestion
+
+- **Action**: Ingested Ed Zitron's exclusive report on OpenAI's audited 2024-2025 financials
+- **Source**: `raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md`
+- **Pages created**: `events/openai-2025-audited-financials.md` — full financial breakdown ($38.5B net loss, $34B costs, $17.2B paid to Microsoft)
+- **Pages updated**:
+  - `entities/openai.md` — added Audited Financials section, economics tag, source link
+  - `entities/ed-zitron.md` — added article to Notable Articles table and sources list
+  - `index.md` — added event page entry
+- **Key data**: Revenue $3.7B→$13.07B (2024→2025), losses $5.09B→$38.53B, SoftBank paid $867M, Microsoft paid $303M
+
 ## [2026-06-16] Datasette Agent — Multi-source Enrichment
 
 - **Action**: Enriched `entities/datasette-agent.md` and `concepts/datasette-agent.md` with 2 new sources
