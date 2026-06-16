@@ -1,3 +1,52 @@
+## [2026-06-16] Raw Backlog Ingest — 5 Articles Processed
+
+### Skip (4 articles, already captured)
+- **MAI-Thinking-1 Tech Report** (372KB, 109p) → skip: `concepts/mai-thinking-1-tech-report.md` (227 lines, complete coverage). Appeared in 10+ prior backlog batches.
+- **Dwarkesh: Alex Imas & Phil Trammell** → skip: `concepts/agi-economics.md` (93 lines), `entities/alex-imas.md` (61 lines), `entities/phil-trammell.md`. Same article appeared in 3+ prior batches.
+- **Dario Amodei "Policy on the AI Exponential"** → skip: `entities/dario-amodei.md` (226 lines) has dedicated section covering all 5 policy areas. Raw article already in sources frontmatter.
+- **Will Brown Lesson 2 Raw Transcript** (49KB) → skip: `transcripts/2025-06-19_willbrown_agents-mcp-rl-lesson2-lecture.md` (540 lines clean version). Archived in prior batches.
+
+### Enrichment (1 article)
+- **Ed Zitron "AI's Brokenomics"** → enriched `entities/ed-zitron.md` with "Hyperscaler Political Positioning" subsection (Nadella Sunday blog, Suleyman cost critique, Andy Jassy/Fable 5 trigger, Zitron's browser-wars framing). Added source to frontmatter. Bumped `updated` date.
+
+### Archive
+- 3 dedup-skipped, 1 newly archived (Brokenomics). Total archive URLs: 829.
+
+## [2026-06-16] X Bookmarks Ingest — LangChain Gateway, LangChain x Fireworks Trace Judge, Factory 2.0 Software Factory
+
+### Processed Articles (3 X Articles)
+1. **LangChain LLM Gateway** ("How We Made Coding Agent Spend Predictable") — LangChain's internal LLM Gateway for cost control across org/workspace/user/API key dimensions. Dogfooding lessons: model pricing complexity, client routing challenges (Cursor/Claude Desktop), hard limit workflows.
+2. **LangChain x Fireworks Trace Judge** ("Building a 100x Cheaper Trace Judge with Fireworks") — Fine-tuned Qwen-3.5-35B for "Perceived Error" detection on production traces. Matches frontier accuracy at 10-100x lower cost. Two datasets: chat-langchain + Fleet.
+3. **Factory 2.0** ("From coding agents to software factories") — Spectrum of Autonomy: Droids → Automations → Droid Computers → Missions. Three pillars: Model Independence, Sovereign Intelligence, Continual Learning. Enterprise customers: NVIDIA, EY, Adobe, Palo Alto Networks, Adyen, Blackstone, Wipro, Comarch.
+
+### 🆕 New Pages
+- [[concepts/llm-trace-judge]] — Perceived Error detection via fine-tuned open models for cost-effective trace evaluation
+
+### ✏️ Enriched Pages
+- [[entities/langsmith]] — LLM Gateway feature (budget dimensions, dogfooding lessons)
+- [[entities/fireworks-ai]] — LangChain trace judge partnership (Qwen fine-tuning, SFT results, pricing)
+- [[entities/vtrivedy10]] — Trace judge author contribution (Perceived Error methodology, dataset creation)
+- [[entities/factory-ai]] — Software Factory 2.0 (spectrum of autonomy, three pillars, enterprise customers)
+- [[concepts/enterprise-ai-cost-management]] — LangChain Gateway case study
+- [[concepts/ai-evaluation]] — Trace judge reference (evaluation flywheel)
+- [[concepts/dark-factory-software-factory]] — Factory 2.0 spectrum of autonomy case study, 3-way comparison table
+
+### Raw Articles Saved
+- raw/articles/2026-06-15_langchain_how-we-made-coding-agent-spend-predictable.md
+- raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
+- raw/articles/2026-06-15_factory-ai_software-factory-2.0.md
+
+---
+
+## [2026-06-16] factory-ai-enrichment — Factory 2.0 Software Factory vision
+
+- **Created**: `raw/articles/2026-06-15_factory-ai_software-factory-2.0.md` — Factory.ai X Article (June 15, 2026) on Factory 2.0
+- **Enriched**: `wiki/entities/factory-ai.md` — Added "Software Factory 2.0 (June 2026)" section covering: Model Independence, Sovereign Intelligence, Continual Learning & Self-Improvement, Spectrum of Autonomy (Droids → Automations → Droid Computers → Missions), and production customers (NVIDIA, EY, Adobe, Palo Alto Networks, Adyen, Blackstone, Wipro, Comarch)
+- **Frontmatter**: Bumped `updated` to 2026-06-16, added raw article source
+- **Tags**: `company`, `coding-agents`, `developer-tooling` (all canonical)
+
+---
+
 ## [2026-06-16 07:55 UTC] newsletter-wiki-ingest — Import AI 461, Forget Agent Skills, AARRI-Bench
 
 **Newsletter processed**: Import AI 461 (Jack Clark), Forget Agent Skills (Hugo Bowne Anderson)

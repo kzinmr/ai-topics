@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-06-13
+updated: 2026-06-16
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -27,6 +27,7 @@ sources:
   - raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md
   - raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md
   - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-1--6191394a.md
+  - raw/articles/wheresyoured.at--brokenomics--662a8e19.md
 ---
 
 # Ed Zitron
@@ -178,7 +179,18 @@ Zitron identified a pattern where companies conflate **contracted power** (signe
 
 ### Why It Matters for AI
 
-Zitron connects this to the broader AI bubble thesis: if data centers aren't being built at the claimed pace, the compute capacity required to deliver on AI promises doesn't exist. The gap between announced and operational capacity suggests the AI infrastructure buildout may be significantly behind the narrative.
+Zitron connects this to the broader AI bubble thesis: if data centers aren't being built at the claimed pace, the compute capacity to deliver on AI promises doesn't exist. The gap between announced and operational capacity suggests the AI infrastructure buildout may be significantly behind the narrative.
+
+### Hyperscaler Political Positioning (June 2026)
+
+In "AI's Brokenomics" (June 2026), Zitron analyzed Satya Nadella's Sunday blog post as evidence that hyperscalers are beginning to publicly resist the Anthropic/OpenAI duopoly:
+
+- **Nadella's "frontier ecosystem" framing**: "Our priority has to be building a frontier ecosystem, not just a frontier model" — interpreted as Microsoft signaling that no single model should dominate
+- **Suleyman's cost critique**: Microsoft AI CEO Mustafa Suleyman publicly stated Anthropic's models were "too expensive," adding pressure on the Anthropic-Microsoft partnership
+- **The Andy Jassy factor**: Amazon's CEO reportedly triggered the Fable 5 export control ban by reporting the jailbreak to the Commerce Department, then used the crisis to cast doubt on Anthropic's safety claims
+- **Zitron's reading**: The hyperscalers are positioning themselves to own the customer relationship and infrastructure layer while the AI labs fight over model differentiation — a replay of the browser wars where Microsoft won by controlling the platform, not the content
+
+This extends the circular dependency thesis: if the hyperscalers conclude the AI labs are becoming a liability rather than an asset, the $748B revenue backlog becomes genuinely at risk.
 
 > Many articles are paywalled (Premium tier). Free previews contain substantive technical claims.
 
