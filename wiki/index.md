@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-15 | Total pages: 2573 | Indexed entries: 2115 | Concepts: 1691 | Entities: 801
+> Last updated: 2026-06-16 | Total pages: 2576 | Indexed entries: 2118 | Concepts: 1693 | Entities: 802
 
-## Entities (799 pages)
+## Entities (0 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -306,6 +306,7 @@
 - [[entities/derek-thompson]] — **Blog** | Derek Thompson on Substack |
 - [[entities/descript-audio-codec]] — **DAC** | High-fidelity universal neural audio codec by Descript. 44.1 kHz, 8 kbps, ~90× compression, single model for speech/music/environment. Improved RVQGAN.
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — Researcher at Microsoft Research AI Frontiers and professor at UW-Madison (on leave). Co-author of [[echo-rl|ECHO]], a hybrid GRPO + environment-prediction training method for CLI agents that learns world models "for free."
+- [[entities/dimillian]] — Guillaume Charpiat (@dimillian) — Software engineer. Practical AI-assisted development workflows. Published Codex Mobile power user guide (Jun 2026): phone as control plane for remote coding agents.
 - [[entities/dji]] — Chinese drone manufacturer with an "iron grip" on the global drone market. Despite U.S. regulatory efforts, DJI's market dominance remains largely intact.
 - [[entities/dorialexander]] — **X/Twitter** | @Dorialexander (~16K followers, joined March 2011) |
 - [[entities/downtowndougbrown-com]] — **Blog** | downtowndougbrown.com |
@@ -433,6 +434,7 @@
 - [[entities/jim-nielsen]] — **Blog** | Jim Nielsen's Blog |
 - [[entities/jina-ai]] — Jina AI — Search AI company (embeddings, rerankers, readers, deepsearch). Founded 2020 by Han Xiao, acquired by Elastic (Oct 2025). Creator of jina-embeddings-v3/v4/v5 series.
 - [[entities/jo-kristian-bergum]] — **URL:** https://hornet.dev
+- [[entities/josh-barrow]] — Josh Barrow (@jbarrowai) — AI researcher focused on information retrieval, search system design, and agentic retrieval. Creator of Obliq-Bench. Advocates for "slow search" research for agent workloads.
 - [[entities/john-carmack]] — **Role** | Founder, Keen Technologies; Former CTO, Oculus/Meta; Co-founder, id Software |
 - [[entities/john-d-cook-applied-mathematics-consulting]] — **Blog** | johndcook.com/blog |
 - [[entities/john-schulman]] — **Role** | Co-founder & Chief Scientist, Thinking Machines Lab |
@@ -606,6 +608,7 @@
 - [[entities/sentra-app]] — Enterprise General Intelligence (EGI) platform. $5M seed (a16z Speedrun, Together Fund). Builds collective company memory via knowledge graphs. Co-founded by [[entities/ashwingop]]. Implements [[concepts/contextmaxxing]] architecture.
 - [[entities/serena-ge]] — Serena Ge (@serenaa_ge) — Co-author of DeepSWE benchmark at Datacurve. AI coding agent evaluation researcher. Known for critiquing SWE-Bench Pro verifier reliability and Claude Opus git-history exploitation.
 - [[entities/sequoia-capital]] — Sequoia Capital — Leading VC firm. Published the Service-as-Software thesis (2026) via partner Julien Bek. Backs AI-native service companies like Rillet, Magentic, Harvey.
+- [[entities/sequent]] — Sequent — Nonprofit AI safety research org (Jun 2026). Founded by ex-UK AISI Alignment team + Timaeus researchers. Thesis: "alignment is not on track" for ASI. $100-150M initial funding target, 40-80 FTEs. Focus: Scalable Oversight, Learning Theory, Heuristic Argument.
 - [[entities/sero]] — Sero (known online as **0xSero**) is an open-source developer, AI infrastructure builder, and founder of **Sybil Solutions**. He operates at the intersection of AI agents, blockchain infrastructure, and developer tooling. Major contributor to ElizaOS, creator of Parchi, vLLM Studio, Open Orchestra, TurboQuant, and REAP Expert Swap (MoE compression). Published the "Open Source must win." manifesto (March 2026) committing 10 years to democratizing AI access. Runs an 8x RTX 3090 homelab (192GB VRAM). Co-author of "Back of House" multi-agent patterns with @MilksandMatcha.
 - [[entities/servicenow]] — ServiceNow — enterprise software platform ($92.3B). Build Agent (May 2026) enables natural language app creation with Anthropic-powered AI. Multi-IDE support, governed by default.
 - [[entities/sigrid-jin]] — Creator of **[[concepts/coding-agents/claw-code]]**, the clean-room Rust/Python reimplementation of Claude Code's agent harness. Fastest repo in GitHub history to surpass 100K stars. Pioneer of Discord-native agent coordination workflow (OmX + clawhip + oh-my-openagent). Featured in WSJ for 25B Claude Code tokens. Korean-Canadian, UBC.
@@ -720,6 +723,7 @@
 - [[entities/zero-language]] — Zero — Vercel Labs' programming language for AI agents (May 2026). Systems language with explicit effects, capability-based I/O, JSON-native diagnostics, no GC. Implements Ronacher's 8 agent-language design principles.
 - [[entities/zyphra]] — Open superintelligence research/cloud company. ZAYA1 MoE model family (VL-8B, 74B) trained on AMD. $110M Series A at $1B valuation. Apache 2.0 open-source models.
 - [[entities/zodchiii]] — zodchiii (@zodchiii) — Pseudonymous X/Twitter content creator covering AI coding, finance, and vibe coding. Published viral breakdown of Shopify's Claude Code infrastructure setup. Runs Telegram channel @zodchixquant.
+- [[entities/zaimiri]] — Zaimiri (@zaimiri) — AI setup educator. Author of "The 7-day Hermes setup" guide covering identity, memory, skills, tools, Telegram gateway, and cron workflows for personal AI operators.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. Palantir Ontology (Data+Logic+Action+Security) enables human-agent teaming for enterprise/gov. FDE (Forward Deployed Engineer) model creates structural lock-in. Q1 2026: $1.63B (+84% gov). Maven: permanent Pentagon program. **May 2026: Palantir Model goes global** — OpenAI $4B/Anthropic $1.5B JVs replicate embed-engineers playbook. See [[concepts/decision-centric-architecture]], [[concepts/enterprise-agents]], [[concepts/agent-ontology]], [[concepts/ai-services-joint-ventures]].
 
@@ -860,7 +864,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1690 pages)
+## Concepts (2 pages)
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
 
@@ -1596,6 +1600,7 @@
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for Agents
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
 - [[concepts/knowledge-storage-spectrum]] — Knowledge Storage Spectrum — Weights, KV cache, RAG, and context as points on a single spectrum of trade-offs between latency, cost, persistence, and expressiveness. The storage form is an implementation detail.
+- [[concepts/killed-by-gpt]] — "Killed by GPT" — Chip Huyen's critique of AI hype cycles and the pattern of declaring technologies "dead" when they plateau.
 - [[concepts/korean-ai]] — Korean AI Ecosystem
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/kv-cache-compaction]] — KV Cache Compaction — Attention-matching compaction for efficient LLM inference
@@ -1914,6 +1919,7 @@
 - [[concepts/skill-retrieval-augmentation]] — Skill Retrieval Augmentation — Augmenting agent skills with retrieval-based knowledge.
 - [[concepts/skillopt]] — SkillOpt (Microsoft, May 2026): text-space skill optimizer that applies deep-learning training discipline (validation gates, learning rates, momentum) to agent skill documents. Best-or-tied on all 52 evaluated cells. +23.5 pts avg over no-skill. Outperforms GEPA, TextGrad, EvoSkill.
 - [[concepts/small-language-models]] — Small Language Models — Compact LLMs for edge and local deployment
+- [[concepts/slow-search]] — Trading per-query latency for retrieval quality. Originally proposed for human searchers (Teevan et al., 2013), now relevant for agentic retrieval where agents are patient and throughput matters more than response time.
 - [[concepts/societal-shadow]] — Concept proposed by QC (Qiaochu Yuan). The ironic phenomenon where RLHF's prohibition list (what LLMs must not say) paradoxically catalogs society's shadow (everything sexual, violent, and transgressive). Connects with Jung's shadow, Bataille's transgression theory, Foucault's power theory, Kristeva's abjection. Covers 20+ technical counterparts: HH-RLHF, BeaverTails (14 categories), Do-Not-Answer (61 harms), SORRY-Bench (45 categories), HarmBench (510 behaviors), Llama Guard, Aegis, OpenAI Moderation API, Shadow Alignment, etc. Describes 6 amplification mechanisms: category fission acceleration, guardrail multi-layering, training/evaluation circulation, platform differences, Shadow weaponization, and over-refusal expansion.
 - [[concepts/software-after-software]] — Amp Labs manifesto (May 2026): 12 theses on post-AI software industry transformation. Code no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams.
 - [[concepts/sp500-ai-exclusion]] — S&P 500 AI Company Exclusion — June 2026 watershed: S&P Dow Jones Indices rejects accelerated entry for SpaceX ($1.75T IPO), also blocking OpenAI and Anthropic. Profitability requirements, 10% IWF minimum, 12-month seasoning period upheld despite MegaCap consultation. Exposes gap between AI industry narrative (trillion-dollar valuations) and financial reality (unprofitable, $29B SpaceX debt). Nasdaq-100 and Russell Top 500 accepted accelerated entry. Cross-references: [[concepts/ai-bubble-economics]], [[entities/openai]], [[entities/anthropic]], [[concepts/token-economics]].
@@ -1921,6 +1927,7 @@
 - [[concepts/sparse-signal-loop]] — Sparse Signal Loop — Evaluation pattern for detecting meaningful progress in RL-based agent training.
 - [[concepts/speculative-decoding]] — Speculative Decoding
 - [[concepts/speculative-decoding-mtp]] — Speculative Decoding and Multi-Token Prediction — Google DeepMind's Gemma 4 introduces MTP (Multi-Token Prediction) drafter heads for faster inference. Comparison of speculative decoding approaches: draft models vs MTP heads vs Medusa. Performance tradeoffs and hardware implications.
+- [[concepts/mteb]] — Massive Text Embedding Benchmark. Standard benchmark suite for evaluating text embedding models. V3 leaderboard (June 2026) added new tasks for agentic retrieval evaluation.
 - [[concepts/speech-audio-asr-tts-voice]] — Speech, Audio, ASR, TTS, Voice — Speech recognition, audio processing, text-to-speech, and voice AI technologies.
 - [[concepts/speed-as-scaling-law]] — Speed as the Next Scaling Law — Inference latency becoming a primary axis of AI capability. Three eras: Chat (quality) → Agentic (throughput) → Autonomous (SPEED). Persistent kernels, DFlash speculative decoding, FP4 quantization. Landmarks: GLM-5.1-HighSpeed 400 tok/s, MiMo UltraSpeed 1000 tok/s.
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
@@ -1935,6 +1942,8 @@
 - [[concepts/super-agent-platform-thesis]] — Super-Agent Platform Thesis — US AI's answer to the Chinese super-app: a permissioned agent layer bridging B2B/B2C trust divide. Apple's permission moat (ATT, PCC, on-device), Palantir's efficacy-as-permission, bilingual-trust companies (MSFT, GOOG, AAPL), platform divides (OS, payments, antitrust).
 - [[concepts/sycophancy-in-llms]] — → [[concepts/ai-sycophancy]]
 - [[concepts/synthetic-data]] — Synthetic Data — Artificially generated training data for ML models, including distillation, self-play, and data augmentation.
+- [[concepts/synthetic-research-interns]] — Synthetic Research Interns — AI systems performing full research lifecycle (literature review, hypothesis, experiment design, ethical reasoning). Primary benchmark: [[concepts/aarri-bench|AARRI-Bench]] (arXiv:2606.07462).
+- [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern) — 82 manually crafted tasks testing AI research competency across Context/Mindset/Hands-on/Interaction. Claude Opus 4.7 + Mini-SWE-Agent: 68.3%. Includes ethical reasoning tasks (fabricated data detection, paper injection attacks).
 - [[concepts/synthid]] — SynthID: Google DeepMind's digital watermarking for AI-generated content. Cross-industry standard adopted by OpenAI, Kakao, ElevenLabs. 100B+ watermarked. Chrome/Search/Gemini integration.
 - [[concepts/system-prompt-learning]] — System Prompt Learning: The idea that system prompts carry richer signal than scalar rewards for RL training. Framed by Avi Chawla (2026) as a convergence of Anthropic (Constitutional AI), OpenAI (Universal Verifiers), and RULER (LLM-as-judge). Practical implementation via [[concepts/ruler-openpipe-art]].
 - [[concepts/techno-optimism]] — Belief that technological progress (AI/nanotech) can solve humanity's deepest problems. Yudkowsky's Singularitarianism as secular eschatology: the Singularity as moral imperative, transcendence of mortality and suffering. Contrasted with Yarvin's techno-pessimism.

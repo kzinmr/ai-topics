@@ -4,7 +4,7 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-06-05
+updated: 2026-06-16
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 5, 13), 'notes': "Added Privacy Engineering + Agent Harness Engineering sections from 2026 content"}
 tags:
   - person
@@ -262,6 +262,22 @@ Hugo's harness engineering work bridges two critical tensions in the field:
 3. **Harness as body, not accessory** — The harness is not optional scaffolding; it's the physical form that lets the LLM brain act in the world
 
 > *"Anthropic rips out Claude Code's harness as models improve"* — Lance Martin on Vanishing Gradients, illustrating the Bitter Lesson in harness design: as models get smarter, harness complexity should decrease, not increase.
+
+### "Forget Agent Skills" Thesis (June 2026)
+
+In a June 2026 article titled **"Forget Agent Skills"**, Hugo challenged the prevailing obsession with agent skills, subagents, autonomous loops, and ralph loops. His core argument: the builders at the top of the game are actually more focused on **verification, memory, review, personal software, and workflow design** than on swarms or autonomous capabilities.
+
+Key upcoming events and lessons from this period:
+
+- **Jun 18, 2026**: "Coding Agents are Dead" with Nicolay Gerold (Amp Code) — explores how coding-agent harnesses are changing as frontier models absorb planning, orchestration, and reasoning patterns into the model itself
+- **Jun 19, 2026**: "Show Us Your (Agent) Skills" Ep. 05 with Isaac Flath (Kentro Tech, ex-Answer.AI), John Berryman — practical agent skills from production builders
+- **Jun 24, 2026**: "The Science of AI Debugging" with Andrew Ng — applying scientific methodology to agent debugging
+- **Jul 8, 2026**: "Agentic Data Science" with Thomas Wiecki (PyMC Labs) — using agents, causal tooling, and Bayesian workflows for better data science decisions
+
+> *"Forget agent skills, forget subagents, forget OpenClaw, forget autoresearch, forget ralph loops, forget your Twitter timeline. What are people at the top of the game actually building with agents, and what does their day-to-day workflow look like?"*
+> — "Forget Agent Skills" (June 2026)
+
+This thesis extends Hugo's broader philosophy that **evaluation is the engine, not the afterthought** — the focus should be on building systems that work reliably in production, not on maximizing autonomous capabilities.
 
 ## Key Quotes
 

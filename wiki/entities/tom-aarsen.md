@@ -3,7 +3,7 @@ title: Tom Aarsen
 type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-06-15
 tags:
   - person
   - model
@@ -111,6 +111,18 @@ Aarsen is a **Hugging Face Fellow** since July 2023 and full-time **Machine Lear
 - **Iryna Gurevych** -- Original creator of Sentence Transformers at UKP Lab, TU Darmstadt; Aarsen succeeded her as maintainer
 - **Nils Reimers** -- Co-creator of the original Sentence Transformers paper and library
 - **Marc Sun and Yoach Lacombe** -- Hugging Face Transformers team colleagues; collaborated on gradient accumulation reproducibility research
+
+## MTEB Leaderboard v3 (June 2026)
+
+Tom Aarsen announced an update to the MTEB Leaderboard in June 2026, highlighting the work of Roman Solomatin, Kenneth Enevoldsen, and Isaac Chung. The new version features:
+
+- **Speed**: Significantly faster performance than the previous version
+- **Customization**: Filtering by domain, language, modality, and individual tasks
+- **Transparency**: Dataset inspection, zero-shot tracking, and training data visibility
+- **Model comparison**: Pin models for head-to-head analysis
+- **API**: Scores available via CSV download or API endpoint
+
+The leaderboard is available at: https://huggingface.co/spaces/mteb/leaderboard
 
 ## X Activity Themes
 

@@ -1,0 +1,88 @@
+{
+  "checkpoint_run_id": "20260615T181700Z-recovery",
+  "archived_at": "2026-06-15",
+  "total_archived": 9,
+  "items": [
+    {
+      "item_id": "anyscale-ray-train",
+      "title": "Ray Train & Ray Data Dashboards on Anyscale",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-ray-train-data-dashboard--5e98a100.md",
+      "recommended_action": "reference",
+      "reason_ja": "Anyscale entityページは存在するが（59行）、Ray Train Data Dashboardの具体的な機能（training progress、error attribution、logs/metrics、profiling、dynolog統合）は未記載。entityページ充実のreference候補。",
+      "body_excerpt": "# Ray Train & Ray Data Dashboards on Anyscale\n\nSource: https://anyscale.com/blog/ray-train-data-dashboard\n\nRay Train\nand\nRay Data\nhelp ML engineers focus on their model training and data processing logic by offering familiar, high-level APIs on top of Ray’s distributed compute engine. However, when",
+      "stars": 3
+    },
+    {
+      "item_id": "borretti-human-routers",
+      "title": "Human Routers of Machine Words",
+      "raw_path": "~/wiki/raw/articles/borretti.me--article-human-routers-of-machine-words--0d68aaaf.md",
+      "recommended_action": "reference",
+      "reason_ja": "Fernando Borrettiのentityページは存在（248行）だが2026-04-24以来更新なし。LLMを「writing collaborator」として使う実践的記述。entityページの「Writing and Thinking」セクションに追記候補。",
+      "body_excerpt": "# Human Routers of Machine Words\n\nSource: https://borretti.me/article/human-routers-of-machine-words\n\nWhen I open a link, say on Hacker News, and I see a blog post or a GitHub README\nobviously written by AI, I feel a few things. I feel offended, because it’s like\nI’ve been tricked, like the author",
+      "stars": 3
+    },
+    {
+      "item_id": "eli-pluggy",
+      "title": "Plugins case study: pluggy",
+      "raw_path": "~/wiki/raw/articles/eli.thegreenplace.net--2026-plugins-case-study-pluggy--0d697641.md",
+      "recommended_action": "reference",
+      "reason_ja": "Eli Benderskyのentityページは存在（216行、2026-06-07更新）。pluggyプラグインシステムを使ったAIエージェントのcase study。既存の「LLMs as Collaborative Partners」セクションに追記候補。",
+      "body_excerpt": "# Plugins case study: Pluggy\n\nSource: https://eli.thegreenplace.net/2026/plugins-case-study-pluggy/\n\nRecently I came upon\nPluggy\n,\na Python library for developing plugin systems. It was originally developed\nas part of the\npytest\nproject - known for its rich plugin ecosystem - and\nlater extracted in",
+      "stars": 3
+    },
+    {
+      "item_id": "seangoedecke-gpu",
+      "title": "AI GPUs probably live longer than three years",
+      "raw_path": "~/wiki/raw/articles/seangoedecke.com--ai-gpus-live-longer-than-three-years--a4c8235c.md",
+      "recommended_action": "skip",
+      "reason_ja": "本日entityページに追加済み（353行、updated 2026-06-15）。GPU寿命神話の徹底検証：Tegus匿名情報源の追跡、Google 8年TPU・AWS未退役A100・Oak Ridge 95%生存率の対証拠。",
+      "body_excerpt": "# AI GPUs probably live longer than three years\n\nSource: https://seangoedecke.com/ai-gpus-live-longer-than-three-years/\n\nPeople\nwho think current AI use is unsustainable often rely on the\nclaim\nthat inference GPUs only last “three years at the most” under load\n. The idea here is that once the AI bu",
+      "stars": 2
+    },
+    {
+      "item_id": "urban-company-webinar",
+      "title": "How Urban Company Automated Partner Support at Scale",
+      "raw_path": "~/wiki/raw/articles/2026-06-14_elevenlabs_webinar-recap-how-urban-company-automated-partner-support-at-scale.md",
+      "recommended_action": "skip",
+      "reason_ja": "ElevenLabsのウェビナーマーケティングコンテンツ。具体的な技術的洞察は限定的。既存のentityページ（172行、2026-06-05更新）に追加する価値は低い。",
+      "body_excerpt": "# How Urban Company Automated Partner Support at Scale\n\n**Source**: [https://elevenlabs.io/blog/webinar-recap-how-urban-company-automated-partner-support-at-scale](https://elevenlabs.io/blog/webinar-recap-how-urban-company-automated-partner-support-at-scale)\n\nBlog\nElevenAgents Stories\nWebinar Recap",
+      "stars": 2
+    },
+    {
+      "item_id": "lambert-agi-governance",
+      "title": "Welcome to the AGI era of AI governance",
+      "raw_path": "~/wiki/raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md",
+      "recommended_action": "skip",
+      "reason_ja": "本日newsletter-wiki-ingestで処理済み。entities/nathan-lambert.mdが2026-06-15に更新されている。",
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n\n**Subject:** Welcome to the AGI era of AI governance\n**Collected:** 2026-06-15T07:10:19.869266+00:00\n**Articles linked:** 20\n\n## 1. Link\n\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1",
+      "stars": 2
+    },
+    {
+      "item_id": "mark-pincus-zynga",
+      "title": "The hidden pattern behind successful products | Mark Pincus (Founder of Zynga)",
+      "raw_path": "~/wiki/raw/newsletters/2026-06-14-the-hidden-pattern-behind-successful-products-mark-pincus-founder-of-zynga.md",
+      "recommended_action": "skip",
+      "reason_ja": "製品管理一般の内容でAI/LLM関連性なし。inbox triageで「low」分類。wiki価値なし。",
+      "body_excerpt": "# Newsletter Digest - 2026-06-14\n\n**Subject:** The hidden pattern behind successful products | Mark Pincus (Founder of Zynga)\n**Collected:** 2026-06-15T07:10:17.760436+00:00\n**Articles linked:** 20\n\n## 1. Link\n\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlc",
+      "stars": 1
+    },
+    {
+      "item_id": "satya-token-capital",
+      "title": "Frontier Ecosystem Token Capital",
+      "raw_path": "~/wiki/raw/articles/2026-06-14_satya-nadella_frontier-ecosystem-token-capital.md",
+      "recommended_action": "skip",
+      "reason_ja": "本日x-bookmarks-ingestで処理済み。entities/satya-nadella.md更新済み。",
+      "body_excerpt": "# A frontier without an ecosystem is not stable\n\n**Author:** Satya Nadella (Microsoft CEO)\n**Date:** 2026-06-14\n**Source:** X Article (https://x.com/i/article/2065582894790365184)\n**Bookmark tweet:** https://x.com/user/status/2066182223213293753\n\n## Full Article Text\n\nI've been thinking a lot about",
+      "stars": 2
+    },
+    {
+      "item_id": "dan-architect-loop",
+      "title": "Architect Loop: Cross-vendor agent loop pattern",
+      "raw_path": "~/wiki/raw/articles/2026-06-14_danmcinerny_architect-loop-fable-codex.md",
+      "recommended_action": "skip",
+      "reason_ja": "本日entities/dan-mcinerny.mdが作成済み（38行、2026-06-14更新）。Architect Loopパターンは既にキャプチャされている可能性が高い。",
+      "body_excerpt": "# architect-loop\n\n**Claude Fable handles planning and review; GPT-5.5 Codex handles\nimplementation and research.** Two Claude Code skills wire that split into a\nrepo-centered loop: specs and gates are written first, Codex works in fresh\ncontexts, and Fable reviews the evidence before anything is in",
+      "stars": 2
+    }
+  ]
+}

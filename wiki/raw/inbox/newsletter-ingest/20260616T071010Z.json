@@ -1,0 +1,152 @@
+{
+  "triage_run_id": "20260616T071010Z",
+  "triaged_at": "2026-06-16T07:15:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "summary": {
+    "total_newsletters": 5,
+    "critical": 2,
+    "high": 2,
+    "low": 1,
+    "key_themes": [
+      "AI alignment assessment (Jack Clark: 'not on track')",
+      "Amazon-Anthropic partnership dynamics",
+      "Claude Fable 5 model review",
+      "AI agent architecture (Forget Agent Skills)",
+      "Microsoft/Satya on frontier AI ecosystems (Loopcraft)",
+      "AI evals + CI/CD integration (Braintrust)"
+    ]
+  },
+  "newsletters": [
+    {
+      "id": "import-ai-461",
+      "subject": "Import AI 461: \"Alignment is not on track\"; FrontierCode; and synthetic research interns",
+      "date": "2026-06-15",
+      "source": "Import AI (Jack Clark)",
+      "source_url": "https://open.substack.com/pub/importai/p/import-ai-461-alignment-is-not-on",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-15-import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-inte.md",
+      "importance": "critical",
+      "rationale": "Jack Clark (Anthropic co-founder, former OpenAI policy director) publishes his periodic assessment of AI alignment progress. The subject 'Alignment is not on track' signals a significant negative assessment from a key industry voice. Also introduces FrontierCode (likely a frontier code-generation model) and synthetic research interns (AI agents conducting research). All three topics are core wiki concerns.",
+      "wiki_relevance": [
+        "AI alignment — update alignment progress tracking",
+        "FrontierCode — new entity (frontier code model)",
+        "Synthetic research interns — concept page for AI research agents",
+        "Jack Clark / Import AI — entity update"
+      ],
+      "action_items": [
+        "Fetch full article from open.substack.com URL",
+        "Update or create alignment-related concept pages",
+        "Create FrontierCode entity if it's a released model",
+        "Update Jack Clark entity page with latest assessment"
+      ],
+      "article_urls_resolved": {
+        "main_post": "https://open.substack.com/pub/importai/p/import-ai-461-alignment-is-not-on",
+        "author_profile": "https://substack.com/@importai"
+      }
+    },
+    {
+      "id": "amazon-anthropic-switch-off",
+      "subject": "How Amazon Helped Switch Off Anthropic",
+      "date": "2026-06-15",
+      "source": "Beehiiv newsletter (unknown source)",
+      "source_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-15-how-amazon-helped-switch-off-anthropic.md",
+      "importance": "critical",
+      "rationale": "The subject line suggests a major investigative piece about Amazon's role in limiting or cutting off Anthropic's access (possibly compute, partnership, or investment). Amazon is a key Anthropic investor ($4B+). Any disruption to this relationship has massive implications for the AI ecosystem. This is potentially industry-shaping news affecting Anthropic, Amazon, and the broader cloud-AI partnership model.",
+      "wiki_relevance": [
+        "Amazon entity — update partnership dynamics",
+        "Anthropic entity — update cloud/investment relationships",
+        "Cloud AI partnerships concept — update with concrete example",
+        "Potential new event page for this incident"
+      ],
+      "action_items": [
+        "Resolve beehiiv redirect URLs to find the actual article source",
+        "Research 'Amazon Anthropic switch off' to verify and get details",
+        "Update Amazon and Anthropic entity pages",
+        "Create event page if this is a significant industry event"
+      ],
+      "article_urls_resolved": {
+        "note": "All URLs are beehiiv tracking redirects — need resolution via curl -L"
+      }
+    },
+    {
+      "id": "claude-fable-5-braintrust",
+      "subject": "How I AI: Claude Fable 5 review & How Braintrust uses AI agents, evals, and CI to ship better software",
+      "date": "2026-06-15",
+      "source": "Lenny's Newsletter",
+      "source_url": "https://open.substack.com/pub/lenny/p/how-i-ai-claude-fable-5-review-and",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-15-how-i-ai-claude-fable-5-review-how-braintrust-uses-ai-agents-evals-and-ci-to-shi.md",
+      "importance": "high",
+      "rationale": "Claude Fable 5 appears to be a new Claude model variant (Fable = creative/narrative focused?). Braintrust is an AI evaluation platform. The combination of model review + production AI agent deployment with evals/CI is directly relevant to wiki's coverage of AI agents, evals, and developer tooling. Lenny's newsletter has massive reach (1M+ subscribers) so this shapes mainstream developer perception.",
+      "wiki_relevance": [
+        "Claude Fable 5 — new model variant entity or update to Claude model page",
+        "Braintrust — entity page for AI eval platform",
+        "AI agents in production — concept update",
+        "Evals + CI/CD integration — concept or comparison page",
+        "Lenny Rachitsky — entity update"
+      ],
+      "action_items": [
+        "Fetch full article from open.substack.com URL",
+        "Research Claude Fable 5 specifications",
+        "Create or update Braintrust entity page",
+        "Update Claude/Anthropic entity with model variants"
+      ],
+      "article_urls_resolved": {
+        "main_post": "https://open.substack.com/pub/lenny/p/how-i-ai-claude-fable-5-review-and",
+        "author_profile": "https://substack.com/@lenny"
+      }
+    },
+    {
+      "id": "satya-loopcraft",
+      "subject": "[AINews] Satya on Loopcraft: Building Frontier Ecosystems",
+      "date": "2026-06-16",
+      "source": "AINews (swyx)",
+      "source_url": "https://open.substack.com/pub/swyx/p/ainews-satya-on-loopcraft-building",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-ainews-satya-on-loopcraft-building-frontier-ecosystems.md",
+      "importance": "high",
+      "rationale": "Satya Nadella (Microsoft CEO) discussing 'Loopcraft' and frontier ecosystems. Microsoft is the largest AI investor (via OpenAI partnership). 'Loopcraft' is an unfamiliar term — could be a new Microsoft product, a concept/framework, or a misheard term. Swyx's AINews is a curated AI news digest with high signal-to-noise ratio. Nadella's public statements on frontier AI strategy are always significant.",
+      "wiki_relevance": [
+        "Satya Nadella — entity update with latest statements",
+        "Microsoft — entity update (AI strategy)",
+        "Loopcraft — potential new entity (product/concept)",
+        "Frontier ecosystems — concept update",
+        "swyx / Shawn Wang — entity update"
+      ],
+      "action_items": [
+        "Fetch full article from open.substack.com URL",
+        "Research 'Loopcraft' — what is it?",
+        "Update Microsoft entity with latest strategy",
+        "Update Satya Nadella entity"
+      ],
+      "article_urls_resolved": {
+        "main_post": "https://open.substack.com/pub/swyx/p/ainews-satya-on-loopcraft-building",
+        "author_profile": "https://substack.com/@swyx"
+      }
+    },
+    {
+      "id": "forget-agent-skills",
+      "subject": "Forget Agent Skills",
+      "date": "2026-06-16",
+      "source": "Hugo Bowne-Anderson",
+      "source_url": "https://open.substack.com/pub/hugobowne/p/forget-agent-skills",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-forget-agent-skills.md",
+      "importance": "high",
+      "rationale": "Directly relevant to the wiki's core topic of AI agents. The provocative title 'Forget Agent Skills' suggests a contrarian take on agent architecture — possibly arguing against skill-based agent design patterns (which is how many current agent frameworks work). Hugo Bowne-Anderson is a respected data science educator and podcaster. This could provide a useful counterpoint perspective for wiki coverage of agent architectures.",
+      "wiki_relevance": [
+        "AI agents — concept update with counterpoint perspective",
+        "Agent skills/architecture — concept page update",
+        "Agent design patterns — comparison or concept update",
+        "Hugo Bowne-Anderson — potential entity"
+      ],
+      "action_items": [
+        "Fetch full article from open.substack.com URL",
+        "Analyze the argument against agent skills",
+        "Update AI agents concept page with the perspective",
+        "Consider Hugo Bowne-Anderson entity if warranted"
+      ],
+      "article_urls_resolved": {
+        "main_post": "https://open.substack.com/pub/hugobowne/p/forget-agent-skills",
+        "author_profile": "https://substack.com/@hugobowne"
+      }
+    }
+  ]
+}

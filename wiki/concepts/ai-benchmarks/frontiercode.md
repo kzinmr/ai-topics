@@ -2,7 +2,7 @@
 title: "FrontierCode"
 type: concept
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-16
 tags:
   - concept
   - benchmark
@@ -14,6 +14,8 @@ sources:
   - https://www.latent.space/p/ainews-frontiercode-benchmarking
   - https://twitter.com/cognition
   - raw/newsletters/2026-06-09-ainews-frontiercode-benchmarking-for-code-quality-over-slop.md
+  - https://cognition.ai/blog/frontier-code
+  - raw/newsletters/2026-06-15-import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-inte.md
 related:
   - concepts/ai-code-quality
   - concepts/ai-benchmarks/swe-bench
@@ -37,14 +39,17 @@ The benchmark shifts evaluation from "does the code work?" to **"would you merge
 - Evaluation dimensions include: **regression safety, cleanliness, scope, test correctness, and maintainability**
 - Inspired by **FrontierMath** (hardest-tier problems for frontier models), FrontierCode focuses on extremely difficult coding tasks
 
-### Headline Results
+### Headline Results (June 2026 update)
 
-| Model | Success Rate | Notes |
-|-------|-------------|-------|
-| **Opus 4.8** | ~13% (hardest subset) | Best performing model, but far below 50%+ regime of SWE-Bench-style evals |
-| Claude 3.5 Sonnet | <2% | With extended thinking (10K tokens), Python access, and experimentation |
-| GPT-4o | <2% | Same conditions |
-| Gemini 1.5 Pro | <2% | Same conditions |
+| Model | Diamond (50 tasks) | Main (100 tasks) | Notes |
+|-------|-------------------|-----------------|-------|
+| **Claude Opus 4.8** | 13.4% | 34.3% | Best performing model |
+| **GPT-5.5** | 6.3% | — | Second place, significantly behind Opus 4.8 |
+| Claude 3.5 Sonnet | <2% | <2% | With extended thinking (10K tokens), Python access, and experimentation |
+| GPT-4o | <2% | <2% | Same conditions |
+| Gemini 1.5 Pro | <2% | <2% | Same conditions |
+
+Jack Clark predicts Diamond will reach 70%+ by June 2027.
 
 The headline finding: even the best model scores only ~13% on the hardest subset — dramatically lower than the 50%+ scores common on SWE-Bench-style evaluations. This suggests **coding is much less "solved" than popular benchmarks imply**.
 

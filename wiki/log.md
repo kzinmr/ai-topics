@@ -1,3 +1,28 @@
+## [2026-06-16 07:55 UTC] newsletter-wiki-ingest — Import AI 461, Forget Agent Skills, AARRI-Bench
+
+**Newsletter processed**: Import AI 461 (Jack Clark), Forget Agent Skills (Hugo Bowne Anderson)
+**Raw sources**: `raw/newsletters/2026-06-15-import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-inte.md`, `raw/newsletters/2026-06-16-forget-agent-skills.md`
+
+### 🆕 Created: `entities/sequent.md`
+Sequent — nonprofit AI safety research org (Jun 2026). Founded by ex-UK AISI Alignment team + Timaeus researchers. Thesis: "alignment is not on track" for ASI. $100-150M initial funding target, 40-80 FTEs. Focus: Scalable Oversight, Learning Theory, Heuristic Argument.
+
+### 🆕 Created: `concepts/aarri-bench.md`
+AARRI-Bench (Act As a Real Research Intern) — 82 manually crafted tasks testing AI research competency across Context/Mindset/Hands-on/Interaction. arXiv:2606.07462 (Wang et al., Jun 2026). Claude Opus 4.7 + Mini-SWE-Agent scores 68.3%. Includes ethical reasoning tasks (fabricated data detection, paper injection attacks).
+
+### 🆕 Created: `concepts/synthetic-research-interns.md`
+Synthetic Research Interns — AI systems performing full research lifecycle beyond coding. Primary benchmark: AARRI-Bench. Tests field awareness, research judgment, ethical reasoning.
+
+### ✏️ Updated: `concepts/ai-benchmarks/frontiercode.md`
+Added GPT-5.5 vs Opus 4.8 scores from Cognition's official blog: Diamond (50 tasks) 6.3% vs 13.4%, Main (100 tasks) 34.3%. Jack Clark predicts Diamond reaches 70%+ by Jun 2027. Added source from Import AI 461.
+
+### ✏️ Updated: `entities/hugo-bowne-anderson.md`
+Added "Forget Agent Skills" thesis (Jun 2026): builders focus on verification, memory, review, workflow design over autonomous capabilities. Added upcoming episode previews (Coding Agents are Dead, Show Us Your Skills Ep. 05, Science of AI Debugging, Agentic Data Science).
+
+### Skipped:
+- Xiaomi MiMo model details → already captured in `entities/xiaomi-mimo.md` with full architecture specs (146M-1B params, RLVR training, 30%+ accuracy gains)
+
+---
+
 ## [2026-06-16 04:00 UTC] raw-backlog-ingest — Pipeline saturation (Takes=0)
 
 **Batch composition**: MAI-Thinking-1 tech report (372KB), Dwarkesh/Imas/Trammell AGI economics (71KB), Dario Amodei AI policy essay (62KB), Will Brown Lesson 2 transcript (50KB), Ed Zitron AI ROI critique (47KB).

@@ -2,7 +2,7 @@
 title: "Ethan Mollick"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-15
 type: entity
 ---
 
@@ -151,6 +151,7 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 - **Management as AI superpower**: How leaders can leverage AI to amplify their effectiveness
 - **AI persuasion and human behavior**: How AI's persuasion style mirrors human patterns
 - **AI leveling effect**: Evidence that AI provides the biggest productivity boost to lower-skilled workers, narrowing the performance gap
+- **Claude Fable/Mythos (June 2026)**: Early access to Anthropic's first Mythos-class model (Claude 5 Fable) reveals another significant leap in AI capability. The model demonstrated ability to work up to a dozen hours executing on multi-page specifications, produce sophisticated academic papers from single prompts, create complex games from vague descriptions, and generate art/math content without external assets. Guardrails prevent cybersecurity use, but the model shows dramatic improvements across creative, analytical, and agentic tasks.
 
 ## Related Concepts
 
