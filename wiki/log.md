@@ -9291,3 +9291,4 @@ agent-communication-protocols, agent-executor, agent-orchestration-frameworks, a
 
 ### Raw articles saved
 - raw/papers/perfcodebench.pdf (arXiv:2605.15222)
+- [2026-06-16] concept: ML Research Practice (concepts/ml-research-practice.md) — Schulman 2017 essay ingested. Goal-driven research, notebook culture, ε-greedy exploration, 2026 relevance analysis. Source: raw/articles/2020-01-24_joschu_opinionated-guide-ml-research.md. Updated: entities/john-schulman.md (source + cross-link).

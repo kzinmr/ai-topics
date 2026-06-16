@@ -189,6 +189,7 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 - [[entities/openai]] — Company Schulman co-founded (2015–2024)
 - [[entities/anthropic-computer-use]] — Company Schulman briefly joined (2024–2025)
 -  — Schulman's current venture (2025–present)
+- [[concepts/ml-research-practice]] — Schulman's research methodology guide (2017)
 
 ## Sources
 
@@ -201,3 +202,4 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 - UC Berkeley news: "ChatGPT architect, Berkeley alum John Schulman on his journey with AI" (2023)
 - Reuters: "OpenAI co-founder John Schulman leaves ChatGPT maker for rival Anthropic" (Aug 2024)
 - Thinking Machines Lab announcement (Feb 2025)
+- ["An Opinionated Guide to ML Research"](http://joschu.net/blog/opinionated-guide-ml-research.html) (2017/2020) — Research methodology essay for OpenAI Fellows

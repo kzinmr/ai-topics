@@ -864,9 +864,13 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (2 pages)
+## Concepts (6 pages)
+- [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
+- [[concepts/axe-framework]] — Axe Framework — Lightweight CLI for single-purpose AI agents following Unix philosophy, TOML configuration, sub-agent delegation with depth limiting, persistent memory, SSRF protection, token budgets.
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
+- [[concepts/plandex-coding-engine]] — Plandex Coding Engine — Terminal-based AI coding engine for multi-file projects, 2M token context window, tree-sitter project mapping, cumulative diff review sandbox, configurable autonomy spectrum.
+- [[concepts/spine-swarm-agents]] — Spine Swarm — Parallel multi-agent research platform, 300+ model support, structured handoffs, #1 on DeepSearchQA (87.6%), client-ready output formats, automation via MCP/API/webhooks.
 
 ## Events (9 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
@@ -1670,6 +1674,7 @@
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
 - [[concepts/mixture-of-experts]] — Mixture of Experts
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
+- [[concepts/ml-research-practice]] — ML Research Practice — John Schulman's research methodology guide (2017). Problem selection (goal-driven > idea-driven), continual progress (notebook, ε-greedy exploration), personal development. 2026 relevance: agent architecture, RLHF philosophy, context engineering.
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
 - [[concepts/model-distillation]] — Model Distillation
 - [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs — Industry thesis: every model lab is restructuring around agent infrastructure. Brockman: "the model alone is no longer the product".
