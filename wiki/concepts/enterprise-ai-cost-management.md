@@ -1,7 +1,7 @@
 ---
 title: "Enterprise AI Tool Cost Management"
 created: "2026-06-05"
-updated: "2026-06-05"
+updated: "2026-06-16"
 type: concept
 tags:
   - company
@@ -11,6 +11,7 @@ tags:
 sources:
   - "raw/articles/2026-06-03_simonwillison_uber-caps-ai-tool-costs.md"
   - https://simonwillison.net/2026/Jun/3/uber-caps-usage/
+  - "raw/articles/2026-06-15_langchain_introducing-llm-gateway.md"
 ---
 
 # Enterprise AI Tool Cost Management
@@ -48,6 +49,32 @@ He characterized the $1,500 limit as "rational" — in contrast to "tokenmaxxing
 ## Contrast with Tokenmaxxing
 
 The term **tokenmaxxing** describes competitive internal leaderboards where employees compete for highest AI tool usage. Uber's cap-based approach represents the opposite philosophy: usage governed by budget constraints rather than competitive incentives.
+
+## LangChain LLM Gateway Case Study (June 2026)
+
+LangChain's internal deployment of **LangSmith LLM Gateway** represents a contrasting approach to Uber's cap-based cost management. Rather than imposing hard per-tool spending limits, LangChain built centralized, multi-dimensional budget controls directly into their observability platform.
+
+### Approach
+
+| Aspect | Uber | LangChain |
+|--------|------|----------|
+| **Control mechanism** | Hard per-tool cap ($1,500/month) | Multi-dimensional budgets (org/workspace/user/API key) |
+| **Visibility** | End-of-month billing reconciliation | Real-time spend tracking to the minute |
+| **Integration** | Per-user MDM config | Central MDM orchestration across all eligible agents |
+| **Flexibility** | Rigid cap, no exception workflow | Tiered alerting + auditable budget-increase requests |
+| **Feedback loop** | Cost control as a constraint | Cost data connected to trace analysis and agent improvement |
+
+### Key Insight
+
+LangChain's approach treats cost management as a **system problem** rather than a **policy problem**. The Gateway connects spend data to the same observability pipeline used for quality monitoring, enabling teams to understand not just *how much* is being spent, but *why* — and to use that data to improve agent behavior.
+
+### Lessons from Dogfooding
+
+1. **Model pricing is a system, not a constant**: Caching, token tiers, and frequent provider changes require automated price-update pipelines.
+2. **Client routing gaps require measurement**: When apps can't route through Gateway (e.g., Cursor's per-user base-url swap), measure the delta between Gateway-captured and provider-reported spend.
+3. **Hard limits need soft workflows**: Engineers need early warnings and auditable exception processes, not just hard caps.
+
+**Source:** [[raw/articles/2026-06-15_langchain_introducing-llm-gateway]]
 
 ## Broader Implications
 

@@ -334,6 +334,7 @@
 - [[entities/entire]] — Entire — AI agent observability & search infrastructure. Captures agent traces (checkpoints). Creator of pgr (agent-oriented code search). Published landmark agentic search benchmark study.
 - [[entities/entropicthoughts-com]] — **URL:** https://entropicthoughts.com (formerly two-wrongs.com)
 - [[entities/epoch-ai]] — Epoch AI — Independent research institute analyzing trends in AI compute, data, and labor
+- [[entities/eric-drexler]] — K. Eric Drexler — Researcher and philosopher. Nanotechnology pioneer (*Engines of Creation*), author of *Reframing Superintelligence* (2019) introducing the [[concepts/comprehensive-ai-services]] (CAIS) framework at FHI.
 - [[entities/ericmigi]] — **URL:** https://ericmigi.com
 - [[entities/ethan-mollick]] — **URL:** https://www.oneusefulthing.org
 - [[entities/eugene-yan]] — Eugene Yan (Ziyou Yan) — Anthropic MTS, bridging field and frontier. Applied ML practitioner (Amazon), eval-driven development, LLM patterns. Author of defending-code-reference-harness (May 2026). applied-ml (28.7K ★), open-llms (12.7K ★).
@@ -357,6 +358,7 @@
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
+- [[entities/future-of-humanity-institute]] — Future of Humanity Institute (FHI) — Oxford research institute (2005–2024) on existential risk, AI safety, longtermism. Founded by Nick Bostrom. Produced *Superintelligence* and Drexler's CAIS report.
 - [[concepts/gemini/index|Google Gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash (Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster at half cost), Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. AI Mode: 1B monthly users. Hassabis: Omni is "a step toward AGI." Powered by Antigravity harness.
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
 - [[concepts/gemini/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16th (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
@@ -841,6 +843,7 @@
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
 - [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
+- [[entities/nick-bostrom]] — Nick Bostrom — Oxford philosopher, founder of [[entities/future-of-humanity-institute]]. Author of *Superintelligence* (2014), simulation hypothesis, vulnerable world hypothesis. Foundational figure in AI safety and longtermism.
 - [[entities/nous-research]] — Nous Research — NYC-based open-source AI lab (founded 2023). Creator of [[hermes-agent]], [[hermes-4]] (hybrid reasoning models), GEPA (ICLR 2026 Oral), Skills Hub (687 skills). $65M funding.
 - [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
@@ -1267,6 +1270,7 @@
 - [[concepts/company-ai-pilled]] — Company AI-Pilled
 - [[concepts/compound-engineering-every]] — Compound Engineering (Every) — Dan Shipper/Every framework: AI-native development where existing components are orchestrated rather than rebuilt. Single-person teams ship multi-component products. Open-source compound-engineering-plugin (14K+ stars). See [[concepts/harness-engineering/agent-native-architecture]] and [[concepts/folder-is-the-agent]].
 - [[concepts/compound-engineering-loop]] — Compound Engineering Loop
+- [[concepts/comprehensive-ai-services]] — Comprehensive AI Services (CAIS): Drexler's framework reframing superintelligence as distributed task-performing services rather than a monolithic agent. Agents are products, not primitives. Distributed recursive improvement via AI automating AI R&D. Predictive models of human concerns as safety resources.
 - [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks
 - [[concepts/computer-use]] — Computer Use Agents — AI systems that operate computers like humans (clicking, typing, navigating). OSWorld benchmark (360+ tasks, human baseline 72.4%). SOTA: Pointer AI 83.6% with Claude Opus 4.7.
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.

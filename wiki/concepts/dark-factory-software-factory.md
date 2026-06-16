@@ -2,7 +2,7 @@
 title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
-updated: 2026-05-26
+updated: 2026-06-16
 tags:
   - concept
   - multi-agent
@@ -14,6 +14,7 @@ sources:
   - https://github.com/strongdm/attractor
   - https://github.com/strongdm/cxdb
   - raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents.md
+  - raw/articles/2026-06-15_factory-ai_software-factory-2.0.md
 ---
 
 # Dark Factory Software Factory
@@ -172,6 +173,48 @@ OpenAI Symphony and Anthropic Managed Agents provide Level 4 infrastructure, whi
 | Autonomy level | Level 5 (fully autonomous goal) | Level 4 (coordinated team with human supervision) |
 
 Source: [[raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents]]
+
+## Case Study: Factory.ai Software Factory 2.0 (June 2026)
+
+**Factory.ai** ([[entities/factory-ai|Factory]]) announced **Factory 2.0: From coding agents to software factories** in June 2026, expanding from standalone coding agents to an interconnected, agent-native, end-to-end software factory system. This represents a commercial enterprise interpretation of the Dark Factory concept.
+
+### Spectrum of Autonomy
+
+Factory 2.0 introduces a graduated **spectrum of autonomy** — acknowledging that organizations don't start at Level 5 but progress through deliberate stages:
+
+| Tier | Name | Description | Autonomy Level |
+|------|------|-------------|----------------|
+| 1 | **Droids** | Task-level autonomous agents | Level 3 (Agent-Assisted) |
+| 2 | **Automations** | Recurring workflow coordination with shared objective and memory | Level 3-4 transition |
+| 3 | **Droid Computers** | Remote and persistent execution for long-running or local agents | Level 4 (Engineering Team) |
+| 4 | **Missions** | Multi-agent autonomous execution solving complex tasks over hours/days via parallel decomposition | Level 5 (Dark Factory) |
+
+### Three Core Requirements
+
+Factory 2.0 argues a robust software factory must have:
+
+1. **Model Independence** — Every model has different trade-offs of cost, performance, and speed. No single model fits every enterprise need. The factory must allow deliberate model selection or rely on a **Router** to automatically choose the best model per task.
+
+2. **Sovereign Intelligence** — Organizations must own their factory: cloud-hosted, bring-your-own-key, self-hosted data plane, EU-specific, or completely air-gapped. Sovereignty means owning a system that learns from itself — every agent session, code review, and resolved incident feeds back into the loop. Capability stays inside the organization's walls.
+
+3. **Continual Learning and Self-Improvement** — Every SDLC stage must be instrumented. When code review, security analysis, documentation, QA, and incident response run on the same platform, they share the same agent core, model router, and organizational context. A security finding informs code review; a deployment triggers a documentation update; an incident correlates with the PR that caused it.
+
+### Enterprise Production Customers
+
+Factory 2.0 is live with enterprise customers including **NVIDIA, EY, Adobe, Palo Alto Networks, Adyen, Blackstone, Wipro, and Comarch**. This demonstrates that Dark Factory concepts have moved beyond early adopters into Fortune 500 deployment.
+
+### Comparison with Other Approaches
+
+| Aspect | StrongDM Attractor | @sairahul1 7-Agent Factory | Factory.ai 2.0 |
+|--------|-------------------|--------------------------|----------------|
+| Target | Team (3 people) | Individual developer | Enterprise organizations |
+| Autonomy | Level 5 goal (humans design) | Level 4 (coordinated with checkpoints) | Spectrum (Droids → Missions) |
+| Model strategy | Claude 3.5 Sonnet | Claude Code | Model-independent Router |
+| Infrastructure | Digital Twin Universe | CLAUDE.md + agent definitions | Full SDLC platform |
+| Sovereignty | Open source (attractor, cxdb) | Personal setup | Air-gapped / self-hosted options |
+| Continual learning | Implicit via test feedback | Explicit CLAUDE.md evolution | Platform-wide feedback loops |
+
+Source: [[raw/articles/2026-06-15_factory-ai_software-factory-2.0]]
 
 ## Related
 

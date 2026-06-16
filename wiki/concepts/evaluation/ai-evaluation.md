@@ -6,7 +6,7 @@ aliases:
   - llm-evaluation
   - evaluation-methods
 created: 2026-04-25
-updated: 2026-05-20
+updated: 2026-06-16
 tags:
   - concept
   - evaluation
@@ -19,6 +19,7 @@ related:
   - [[concepts/evaluation/ai-benchmarks-and-evals]]
 sources:
   - raw/articles/2026-05-19_langfuse-academy-evals-explained.md
+  - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
   - https://langfuse.com/academy/evaluate
 ---
 
@@ -61,7 +62,15 @@ Uses a language model to score outputs, required for qualities that require unde
 
 When calibrated against human labels and backed by code-based checks, LLM judges are reliable evaluators.
 
-## Reference-Based vs. Reference-Free
+### LLM Trace Judge
+
+Trace judges extend the LLM-as-judge paradigm from single-turn evaluation to multi-turn production trace analysis. Instead of scoring isolated outputs against reference examples, trace judges infer quality signals — such as perceived errors — from real user interaction patterns: user corrections, rejection of agent actions, repeated requests, and assistant acknowledgements of mistakes.
+
+In June 2026, LangChain and Fireworks published a study showing that a fine-tuned Qwen model, trained on perceived error detection across multiple trace datasets, matched or exceeded frontier model performance at roughly 100× lower cost. Labels were created through a cascade of model-assisted judgments plus human review for disagreements. The perceived error signal showed strong cross-domain transfer, confirming its generality beyond a single application.
+
+See [[concepts/llm-trace-judge]] for the detailed methodology and [[raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md]] for the full article.
+
+## Reference-Based vs Reference-Free
 
 | Type | Description | Advantage |
 |------|-------------|-----------|
@@ -91,12 +100,14 @@ See [[raw/articles/2026-05-19_langfuse-academy-evals-explained.md]] for the full
 ## Related Concepts
 
 - [[concepts/evaluation/llm-as-judge]] — Detailed methodology for LLM-based evaluation
+- [[concepts/llm-trace-judge]] — Extending LLM-as-judge to multi-turn production trace analysis
 - [[concepts/evaluation/evaluation-flywheel]] — Evaluation as a continuous improvement loop
 - [[concepts/evaluation/offline-evaluation]] — Offline evaluation techniques
 - [[concepts/evaluation/ai-benchmarks-and-evals]] — AI Benchmarks & Evals MOC (systematic navigation of all benchmark/eval pages)
-- [[concepts/evaluation/ai-benchmarks-and-evals]] — Broader benchmarks landscape
 
 ## Sources
 
 - [Evals, explained — Langfuse Academy](https://langfuse.com/academy/evaluate) — May 2026
 - [[raw/articles/2026-05-19_langfuse-academy-evals-explained.md]]
+- [Building a 100× Cheaper Trace Judge with Fireworks — LangChain Blog](https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks) — June 2026
+- [[raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md]]

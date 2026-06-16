@@ -1,3 +1,28 @@
+## [2026-06-16] Drexler CAIS / FHI / Bostrom — Multi-source Wiki Ingestion
+
+### New Pages Created (3)
+- **`concepts/comprehensive-ai-services.md`** — CAIS framework (Drexler 2019). Comprehensive concept page covering: intelligence-as-service, distributed recursive improvement, learning vs. competence dissociation, agents-as-products, 2026 perspective analysis.
+- **`entities/eric-drexler.md`** — K. Eric Drexler entity page. Nanotechnology pioneer, CAIS author, FHI researcher.
+- **`entities/future-of-humanity-institute.md`** — FHI entity page. Oxford institute (2005–2024), existential risk, AI safety. Closure in 2024 noted.
+
+### Existing Pages Updated (2)
+- **`concepts/security-and-governance/ai-safety.md`** — Added "Structural / Architecture-Focused Safety (Drexler / CAIS Model)" as 3rd paradigm alongside Engineering-Focused and Research-Focused safety.
+- **`concepts/nick-bostrom.md`** — Upgraded from stub (24 lines) to full entity page (69 lines). *Superintelligence* (2014), vulnerable world hypothesis, simulation argument, influence/legacy.
+
+### Raw Articles Ingested (2)
+- `raw/articles/reframing-superintelligence-fhi-2019.md` — Full PDF extraction (210 pages, 443KB)
+- `raw/articles/ea-global-2018-reframing-superintelligence.md` — EA Global 2018 talk transcript (117 lines, 32.5KB)
+
+### 2026 Analysis (embedded in CAIS page)
+- CAIS predicted correctly: piecemeal capability advance, AI-automating-AI R&D, service-based deployment, predictive models
+- Diverged: agent frameworks surged, frontier models created quasi-general systems, concentration in few labs
+- Current hybrid reality: foundation models + service-oriented architectures + human oversight
+
+### Index Updates (4 entries)
+- `entities/eric-drexler`, `entities/future-of-humanity-institute`, `entities/nick-bostrom`, `concepts/comprehensive-ai-services`
+
+---
+
 ## [2026-06-16] Raw Backlog Ingest — 5 Articles Processed
 
 ### Skip (4 articles, already captured)

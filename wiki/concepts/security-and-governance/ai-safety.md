@@ -46,6 +46,22 @@ This approach invests in fundamental alignment research before scaling:
 **Proponents**: John Schulman, Dario Amodei, Jan Leike, Mira Murati
 **Criticism**: Research timelines are too slow; may miss practical deployment needs
 
+### 3. Structural / Architecture-Focused Safety (Drexler / CAIS Model)
+
+> *"If in fact one can have superintelligent systems that are not inherently dangerous, then one can ask how one can leverage high-level AI."* — Eric Drexler
+
+This approach reframes the safety problem through system architecture rather than alignment techniques:
+
+- **Comprehensive AI Services (CAIS)** — Superintelligence as distributed services, not a single agent (see [[concepts/comprehensive-ai-services]])
+- **Bounded agent-services** — Agents as products with bounded goals, not world-optimizing utility maximizers
+- **Predictive models of human concerns** — Oracles that predict human reactions, available as safety resources to any planning system
+- **Distributed recursive improvement** — AI R&D acceleration happens across the technology base, not inside a single self-modifying agent
+
+**Proponents**: Eric Drexler (FHI)
+**Criticism**: Competitive dynamics may push toward more agentic architectures; emergent agency from composed services
+
+**Key insight**: CAIS shifts the risk analysis from "control the superintelligent agent" to "govern the human decision-makers wielding superintelligent services." The 2025-2026 rise of agent frameworks (Claude Code, Codex, Cursor) partially challenges the CAIS model but also validates its prediction of piecemeal capability advancement.
+
 ## Key Concepts
 
 ### Reinforcement Learning from Human Feedback (RLHF)

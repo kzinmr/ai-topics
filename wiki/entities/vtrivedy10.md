@@ -7,13 +7,14 @@ title: "Vivek 'Varun' Trivedy (@vtrivedy10)"
 type: entity
 handle: "@vtrivedy10"
 created: 2026-04-14
-updated: 2026-06-07
+updated: 2026-06-16
 tags: [person, langchain, harness-engineering, ai-agents, deep-agents]
 aliases: ["vtrivedy10", "Vivek Trivedy", "Varun Trivedy"]
 sources:
   - raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md
   - https://x.com/vtrivedy10/status/2052100726608781363
   - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
+  - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
 ---
 
 # Vivek 'Varun' Trivedy (@vtrivedy10)
@@ -218,6 +219,14 @@ This post extends Viv's earlier Harness Engineering framework into the **memory 
 | Context Rot countermeasures (compaction, offloading) | Context Fragments (each loaded object is an explicit decision) |
 | Self-verification loops | Distillation, accumulation, and sharing of experiential memory |
 | Terminal Bench optimization | Bitter Lesson — compute leveraged search > human-curated knowledge |
+
+## LangChain x Fireworks Trace Judge (June 2026)
+
+In June 2026, Viv co-authored a study with Fireworks AI on fine-tuning open models for **perceived error detection** in production agent traces. The study demonstrated that a Qwen-3.5-35B model, fine-tuned with LoRA SFT, matched or exceeded frontier models (Claude Opus, GPT-5.5) at 10-100x lower cost.
+
+This work directly connects to his **Open Model Cost Advantage** thesis (Point 6 of his May 2026 manifesto): fine-tuned open models delivered better accuracy than Haiku-class models while being dramatically cheaper at production scale. The trace judge approach treats evaluation as a harness optimization problem — the same model architecture, retrained on domain-specific signals, outperforms much larger frontier models.
+
+**Source:** [[concepts/llm-trace-judge]]
 
 ## Related People
 

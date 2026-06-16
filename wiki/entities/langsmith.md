@@ -2,7 +2,7 @@
 title: LangSmith
 type: entity
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-06-16
 tags:
   - company
   - langchain
@@ -15,6 +15,7 @@ aliases:
 sources:
   - raw/newsletters/2026-05-19-ainews-how-to-land-a-job-at-a-frontier-lab-on-pretraining.md
   - https://www.langchain.com/langsmith
+  - raw/articles/2026-06-15_langchain_introducing-llm-gateway
 ---
 
 # LangSmith
@@ -50,6 +51,43 @@ LangSmith Engine represents the convergence of agent infrastructure toward **obs
 
 This mirrors similar moves by other platform providers (e.g., Weights & Biases, Arize Phoenix) toward agent-specific observability tooling.
 
+## LangSmith LLM Gateway (June 2026)
+
+LangChain introduced **LangSmith LLM Gateway** to solve the emerging problem of unpredictable AI spend as coding agents scale across organizations. The Gateway provides centralized cost controls for LLM usage across the entire company.
+
+### Multi-Dimensional Budget Controls
+
+Budgets can be set at four levels:
+
+| Dimension | Scope | Example |
+|-----------|-------|--------|
+| **Organization** | Company-wide | Global monthly cap |
+| **Workspace** | Team-level | Engineering team budget |
+| **User** | Individual | Per-developer limits |
+| **API Key** | Service-level | Agent-specific caps |
+
+Default budgets operate on monthly, weekly, daily, and hourly windows, with exception workflows for projects requiring higher usage.
+
+### Centralized Rollout via MDM
+
+LangChain deployed the Gateway across all eligible coding agents (Claude Code, Codex, LangChain Deep Agents) using their MDM for central orchestration. This eliminated per-user setup friction and gave engineering leadership real-time visibility into company-wide spend.
+
+### Dogfooding Lessons
+
+Running the Gateway internally surfaced three product priorities:
+
+1. **Model pricing complexity**: Static lookup tables go stale quickly. Accurate cost accounting must absorb caching, token-tier nuances, and frequent provider price changes. LangChain is building a more rigorous update pipeline.
+2. **Client routing gaps**: Not all apps route cleanly through Gateway. Cursor only exposes base-url swap as a per-user setting (not MDM-pushable). Claude Desktop can only be passed through Gateway as a managed config, which shifts the app into local-agent mode. LangChain now measures the delta between Gateway-captured spend and provider-reported spend to account for gaps.
+3. **Hard limits need workflows**: Engineers want early warning before hitting limits and fast, auditable budget-increase flows. LangChain is adding tiered alerting ahead of thresholds.
+
+### Integration with LangSmith Stack
+
+Because the Gateway is part of LangSmith, cost data connects to existing observability and evaluation systems. When a coding agent overspends, teams can inspect the trace, understand failure modes, and use evaluation data to improve agent behavior — turning cost controls into a feedback loop for quality improvement.
+
+> "The upside of Gateway is that there is more certainty with centralized control that I won't open my dashboard and see a surprise multi-thousand dollar bill." — Alex Lunev, VP of Engineering, LangChain
+
+**Source:** [[raw/articles/2026-06-15_langchain_introducing-llm-gateway]]
+
 ## Core Capabilities
 
 ### Tracing
@@ -66,6 +104,7 @@ This mirrors similar moves by other platform providers (e.g., Weights & Biases, 
 - Production agent performance dashboards
 - Latency, cost, and error rate tracking
 - Alerting on degradation or drift
+- **LLM Gateway**: Centralized cost controls with multi-dimensional budgets (organization, workspace, user, API key) and MDM rollout for company-wide spend visibility
 
 ## Related
 

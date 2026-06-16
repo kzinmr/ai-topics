@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-06-02
+updated: 2026-06-16
 tags:
   - entity
   - company
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-05-10_fireworks-ai_best-llms-for-coding.md
   - raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md
   - raw/articles/2026-06-02_fireworks-ai_Trilogy.md
+  - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -159,6 +160,48 @@ Fireworks AI is a research partner of [[entities/harvey|Harvey]]'s Legal Agent B
 - Bit-for-bit handoff from training to serving endpoint
 
 This positions Fireworks as more than an inference provider — the platform enables the full loop from fine-tuning → evaluation → production serving on the same infrastructure.
+
+## LangChain Trace Judge Partnership (June 2026)
+
+Fireworks AI partnered with LangChain to build a **100x cheaper trace judge** using fine-tuned open models. The collaboration addresses the challenge of efficiently mining signals from LangSmith's billions of daily production trace tokens.
+
+### Perceived Error Detection
+
+The joint study focused on detecting **"Perceived Error"** — instances where users correct the assistant, reject agent actions, repeat requests, or when assistants acknowledge errors. Unlike objective correctness, perceived error captures user-facing quality signals that matter for production agent improvement.
+
+### Training Approach
+
+- **Base model**: Qwen-3.5-35B selected for its balance of strength and cost
+- **Training method**: LoRA SFT via Fireworks managed training
+- **Datasets**: Two internal LangChain tracing datasets:
+  - **chat-langchain**: 885 traces (707 train / 178 holdout) — Docs Q&A agent
+  - **Fleet**: 911 traces (727 train / 184 holdout) — No-code agent creation tool
+- **Label generation**: Model-assisted labeling with human review — panel-of-models consensus, then escalation to human annotation for disagreements
+- **Key design choice**: Training used only Human and AI messages (tool calls excluded), hypothesizing that conversational signals carry most perceived-error information
+
+### Results
+
+| Model | chat-langchain accuracy | Fleet accuracy |
+|-------|------------------------|---------------|
+| Base Qwen-3.5-35B | 90.5% | 83.2% |
+| Chat-langchain SFT | 96.1% | 90.8% |
+| Fleet SFT | 92.7% | 91.3% |
+| Claude Opus | 91.6% | 90.2% |
+| GPT-5.5 | 98.9% | 89.1% |
+
+**Key findings:**
+- Fine-tuned Qwen matched or exceeded frontier model (Opus, GPT-5.5) performance
+- Model trained ONLY on chat-langchain data transferred well to Fleet (unseen dataset), outperforming all frontier models
+- Serving a fine-tuned open model is 10-100x cheaper than frontier alternatives
+- Smaller open models (Haiku-class) were consistently outperformed by Qwen-3.5-35B out-of-the-box
+
+### Significance
+
+This partnership demonstrates Fireworks' thesis that **open models + fine-tuning infrastructure** can replace expensive frontier models for high-volume evaluation workloads. The perceived-error judge is positioned as a general-purpose evaluator — the signals (corrections, rejections, repetitions) are universal across applications.
+
+**Authors:** Vivek Trivedy (@Vtrivedy10, LangChain), Jake Broekhuizen (LangChain), Harrison Chase (LangChain), Chahat Vij (Fireworks), Yi Su (Fireworks)
+
+**Source:** [[raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks]]
 
 ## Sources
 
