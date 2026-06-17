@@ -1,3 +1,26 @@
+## [2026-06-17] Newsletter wiki ingest
+
+- **Action**: Enriched entity and concept pages with SemiAnalysis RL Systems article data
+- **Source**: raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md — SemiAnalysis "RL Systems: Mind the Gap" (Jun 2026)
+- **Pages created**: None (entity already existed)
+- **Pages updated**:
+  - `entities/semianalysis.md` — updated tags to canonical [organization, research, infrastructure, blog, ai-economics]; added Key People section (Dylan Patel, Myron Xie, Daniel Nishball, Prime Intellect/Modal collaborators); added Key Research Areas (GPU Economics, AI Infrastructure, RL Training Systems); added RL Systems publication to Key Publications (+ other publications remain); added RL Systems article to sources
+  - `concepts/post-training/grpo-infrastructure.md` — added SemiAnalysis Throughput Matching Framework section (Three-Actor Model, Queue Model, PipelineRL Asynchrony, Group Size Impacts, Sandbox Challenges, Throughput Optimizations, Policy Staleness Tolerance); added RL Systems article to sources
+  - `concepts/post-training/asynchronous-rl.md` — added SemiAnalysis PipelineRL & Throughput Matching section (PipelineRL In-Flight Weight Syncing comparison table, Throughput Matching as Async Framework, Policy Staleness in PipelineRL, Group Size and Throughput); added RL Systems article to sources
+  - `index.md` — updated SemiAnalysis entity entry description with RL Systems, key people, research areas
+- **Key details**: SemiAnalysis RL Systems article introduces generator/trainer throughput matching, PipelineRL asynchrony with in-flight weight pushing, queue model for production rate balancing, sandbox challenges (startup latency via Modal, concurrency scaling, robustness), group size guidelines (N=8/16/64), and throughput optimizations (early pruning, adaptive sampling). Collaborators include Prime Intellect (Matej Sirovatka, Ameen Patel, Sami Jaghouar) and Modal (Peyton Walters, Nan Jiang, Erik Dunteman).
+
+## [2026-06-17] Newsletter wiki ingest
+
+- **Action**: Enriched GLM-5 entity page with GLM-5.2 data; created IndexShare concept page
+- **Source**: raw/articles/2026-06-17_ainews_glm-52-indexshare.md
+- **Pages updated**:
+  - `entities/glm-5-zai.md` — Added GLM-5.2 specs (744B MoE, 40B active, MIT, 1M ctx), benchmark data (#1 Design Arena, #3 FrontierSWE, first >80% Terminal-Bench), IndexShare mention, ecosystem support
+  - `index.md` — Updated GLM-5 entry with key stats; added IndexShare concept entry
+- **Pages created**:
+  - `concepts/index-share.md` — IndexShare technique extending DeepSeek Sparse Attention, reuses one indexer across four sparse layers
+- **Key details**: GLM-5.2 released June 17, 2026 by Z.ai. 744B MoE, MIT license, 1M context, two reasoning modes (high/max), IndexShare for sparse attention efficiency, MTP speculative decoding improvements
+
 ## [2026-06-17] Zvi Mowshowitz — Entity Page Creation
 
 - **Action**: Created entity page for Zvi Mowshowitz / Don't Worry About the Vase blog
@@ -61,4 +84,14 @@
 - **Pages created**: `concepts/openai/economic-futures-age-of-ai.md` — $250M initiative for economic futures in the age of AI
 - **Pages updated**:
   - `index.md` — added concept entry (alphabetically between enterprise-adoption-patterns and frontier-governance-framework)
-- **Key details**: Three pillars: understanding the shift, supporting the transition, building for long-term economic security. Focus on worker agency, government capacity, and new economic models including sovereign wealth funds and taxation shifts.
+- **Key details**: Three pillars: understanding the shift, supporting the transition, and building for long-term economic security. Focus on worker agency, government capacity, and new economic models including sovereign wealth funds and taxation shifts.
+
+## [2026-06-17] Newsletter wiki ingest
+
+- **Action**: Created entity page for Finbarr Timbers and enriched Nathan Lambert page with post-training recipe interview
+- **Source**: `raw/articles/2026-06-16_interconnects_post-training-recipe-review.md`
+- **Pages created**: `entities/finbarr-timbers.md` — comprehensive entity covering background (ex-DeepMind, Midjourney, Ai2), post-training contributions (Tülu 3, OLMo 3), MOPD expertise, and RL recipe evolution timeline
+- **Pages updated**:
+  - `entities/nathan-lambert.md` — added sources frontmatter (+raw article), new subsection "Interconnects Podcast #18 — Finbarr Timbers Interview" covering recipe evolution timeline, MOPD pattern details, and models discussed
+  - `index.md` — added Finbarr Timbers entity entry (between filfre-net and fireworks-ai)
+- **Key details**: MOPD is the dominant 2026 post-training pattern: train N domain-specialist teachers, train one general student by sampling its own trajectories, minimize reverse-KL to the relevant teacher per rollout. Lineage: MiMo Flash v2 → DeepSeek V4 & Nemotron 3 Ultra (10+ teachers).

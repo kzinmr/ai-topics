@@ -1,10 +1,10 @@
 ---
 title: "Dean W. Ball"
 created: 2026-05-05
-updated: 2026-05-29
+updated: 2026-06-17
 type: entity
 tags: [person, governance, safety, policy, blogger]
-sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md, raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md]
+sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md, raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md, raw/articles/2026-06-16_dean-ball_leviathan-waking.md]
 ---
 
 # Dean W. Ball
@@ -74,6 +74,15 @@ Ball identifies a spectrum of regulatory challenges:
 - **Strengths**: AI software stack, robotics research ecosystem, venture capital
 - **Weaknesses**: Construction permitting, healthcare regulation fragmentation, manufacturing capacity
 
+
+### Leviathan Waking (Jun 2026)
+Ball's longest-form analysis of the **Fable 5/Mythos 5 conflict** as a watershed moment for sovereign AI control. Key contributions:
+
+- **FDA Drug Analogy**: Government went from laissez-faire to incomprehensibly strict regulation in weeks — a pattern Ball applies to the Trump Admin's Fable shutdown
+- **Opacity Thesis**: The sheer lack of written policy, formal rules, or clear communication makes the Fable/Mythos situation fundamentally unanalyzable — \"a game of he-said, she-said\"
+- **Sovereignty Argument**: Making superintelligence is a profoundly political act — Mythos implicates state sovereignty, making Anthropic's release a perceived move against the U.S. Government
+- **Institutional Mediation**: Not \"FDA for AI\" but technocratic institutions to mediate between political actors and private enterprise — procedure, structure, and predictability that constrains the state as much as industry
+- **Fable Guardrails Critique**: The machine-learning \"safeguards\" that silently degrade performance without user awareness creates a trust deficit, separate from the guardrail strictness debate
 
 ## Related
 

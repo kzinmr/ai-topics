@@ -14,6 +14,7 @@ sources:
   - https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may
   - raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md
   - raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md
+  - raw/articles/2026-06-16_interconnects_post-training-recipe-review.md
 ---
 
 # Nathan Lambert (@natolambert)
@@ -124,6 +125,21 @@ Lambert hosted **Mark McQuade** (CEO) and **Lucas Atkins** (CTO) of [[entities/a
 - The **$20M training cost** and business model of selling post-trained open models to enterprises
 - Lambert's assessment that Arcee is "taking the most real approach to monetizing open models"
 
+### Interconnects Podcast #18 — Finbarr Timbers Interview (Jun 2026)
+
+Lambert hosted **[[entities/finbarr-timbers|Finbarr Timbers]]** (ex-DeepMind, Midjourney, Ai2; Tülu 3, OLMo 3 co-author) for a comprehensive review of frontier post-training recipes from InstructGPT (2022) through 2026 models. Key topics:
+
+- **Recipe evolution timeline**:
+  - 2022–2023 (InstructGPT): Single SFT → reward model → RL pipeline
+  - 2024 (Llama 3, Tülu 3): Open recipes formalizing SFT → DPO → RL with verifiable rewards
+  - 2025 (DeepSeek R1): Reasoning RL makes large-scale RL the centerpiece
+  - 2026 (MiMo Flash V2 onward): Recipes fragment into specialist models merged back into one
+
+- **MOPD (Multi-teacher On-Policy Distillation)**: The dominant 2026 post-training pattern. Train N domain-specialist teachers (each SFT + RL on relevant domains), then train one general student by sampling its own trajectories, minimizing reverse-KL to the relevant teacher's output distribution per rollout. Lineage: MiMo Flash v2 → DeepSeek V4 & Nemotron 3 Ultra (scaling to 10+ teachers)
+
+- **Models discussed**: MiMo Flash, DeepSeek V4, GLM 5, Kimi K2.6, Nemotron 3 Ultra
+
+Source: [[raw/articles/2026-06-16_interconnects_post-training-recipe-review]]
 
 ### June 2026: Open and closed models are on different exponentials
 

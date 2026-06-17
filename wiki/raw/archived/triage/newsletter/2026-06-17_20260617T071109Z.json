@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-06-17T07:24:12.605924+00:00",
+  "triage_run_id": "20260617T071109Z",
+  "source": "newsletter",
+  "summary_ja": "6ニュースレターをトリアージ。3件のtake（GLM-5.2/IndexShareのWiki反映、Finbarr Timbersエンティティ新規作成、SemiAnalysisエンティティ新規作成+ポストトレーニング概念強化）、1件のreference（Dean Ballエッセイ）、2件のskip（Ben's Bitesのリンクリスト、beehiiv OpenAI財務分析）。GLM-5.2は既存のglm-5-zai.md/glm-5-1.mdではカバーされていない新モデル。Finbarr Timbersのエンティティページは未作成。SemiAnalysisのRLシステム分析は深く、Wikiに不足している概念。",
+  "decisions": [
+    {
+      "item_id": "<20260616182601.3.74b7b3488928406c@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Hyperdimensional (Dean W. Ball)",
+      "title": "Leviathan Waking",
+      "url": "https://open.substack.com/pub/hyperdimensional/p/leviathan-waking",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-leviathan-waking.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Dean BallによるFable 5/Mythos 5衝突を国家権力（Leviathan）のAI統制開始の分水嶺として分析した長編エッセイ（17,246文字）。製薬FDAアナロジーを用いた独自のガバナンス分析フレームワークを提供。entities/dean-ball.md（90行）は既存だが、Fable 5の事実カバレッジはconcepts/claude/fable-5.mdに詳細あり。エッセイの分析的視点はDean Ballのエンティティページ強化に有用だが、新規事実は追加しない。",
+      "candidate_wiki_path": "entities/dean-ball.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-16\n**Subject:** Leviathan Waking\n**Collected:** 2026-06-17T07:11:02.661903+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWw"
+    },
+    {
+      "item_id": "<20260616130105.3.4086e440fec72d5a@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Bye bye Fable",
+      "url": "https://open.substack.com/pub/bensbites/p/bye-bye-fable",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-bye-bye-fable.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Ben's BitesのFable/Mythos解説とリンクリスト。Fable 5のシャットダウンは concepts/claude/fable-5.md ですでに詳細カバー済み。Software Factory 2.0は entities/factory-ai.md で6/15に更新済み。Ramp SWE-Bench（新規ベンチマーク）は言及のみで詳細なし。その他（Drop.new、DeepSeek$7.4B調達、Runpod）はビジネスニュースまたは紹介リンク。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-16\n**Subject:** Bye bye Fable\n**Collected:** 2026-06-17T07:10:44.798553+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaW"
+    },
+    {
+      "item_id": "<20260616.181904.8fc53579@mta8>-1",
+      "source": "newsletter",
+      "source_name": "beehiiv newsletter (publication unknown)",
+      "title": "💸 OpenAI Burned Billions in 2025 - and no end in sight",
+      "url": "https://link.mail.beehiiv.com/v1/c/eTVoy7V3mX3ID0AOpei8LcahJOzCYSEV%2F1XX1%2BybXhMoPUplpPb7DiHYDDzI%0AIAIHgkW3LzqPj06KbdSy4ZVyYmHRYwVpE05mmhseaTUzcgMZlqk8HD2yEbmN%0A7oJL%2BGJwQMcdQgdaduXgQ%2Bg7x2NcSziMhSYox9s92m7StszwKJHr1BaxHyWG%0ABkrIqZmVVapcvu1PZmdKzrPV1DcS%2FNKScQ%3D%3D%0A/b308645653828416",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-openai-burned-billions-in-2025-and-no-end-in-sight.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ OpenAIの財務分析ニュースレター。全20リンクがbeehiivトラッキングURLで、すべてHTTP 403（期限切れトークン）。コンテンツにアクセス不可。インボックス要約ではmedium分類・財務角度で、技術的なWikiトピックよりビジネス/金融ニュースに近い。OpenAIエンティティページにある既存の財務データ（収益予測、トレーニングコスト）を超える具体的技術情報があるか判断できないためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-16\n**Subject:** 💸 OpenAI Burned Billions in 2025 - and no end in sight\n**Collected:** 2026-06-17T07:10:50.954573+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/eTVoy7V3mX3ID0AOpei8LcahJOzCYSEV%2F1XX1%2BybXhMoPUplpPb7DiHYDDzI%0AIAI"
+    }
+  ]
+}

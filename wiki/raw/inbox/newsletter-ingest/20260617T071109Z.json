@@ -1,0 +1,109 @@
+{
+  "triage_run_id": "20260617T071109Z",
+  "triaged_at": "2026-06-17T07:12:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 6,
+  "classifications": [
+    {
+      "message_id": "<20260616132930.3.4462e3698cf82298@mg-d0.substack.com>",
+      "subject": "Frontier post-training recipe review with Finbarr Timbers",
+      "date": "2026-06-16",
+      "source": "Nathan Lambert / Robotic (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-frontier-post-training-recipe-review-with-finbarr-timbers.md",
+      "importance": "high",
+      "reason": "Deep-dive podcast on frontier model post-training recipes (RLHF, DPO, reward modeling) with Finbarr Timbers (ex-DeepMind, Midjourney). Directly relevant to LLM training/post-training concepts and entity pages.",
+      "action": "fetch_and_ingest",
+      "primary_url": "https://open.substack.com/pub/robotic/p/frontier-post-training-recipe-review",
+      "alt_url": "https://substack.com/app-link/post?publication_id=48206&post_id=201754262",
+      "entity_candidates": ["finbarr-timbers", "nathan-lambert"],
+      "concept_candidates": ["post-training", "rlhf", "frontier-models"]
+    },
+    {
+      "message_id": "<20260616173207.3.aa497419bdd3a90f@mg-d1.substack.com>",
+      "subject": "RL Systems Mind the Gap: Matching Trainer and Generator Throughput",
+      "date": "2026-06-16",
+      "source": "SemiAnalysis (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-rl-systems-mind-the-gap-matching-trainer-and-generator-throughput.md",
+      "importance": "high",
+      "reason": "SemiAnalysis deep technical analysis on RL training infrastructure — matching trainer and generator throughput. Directly relevant to training infrastructure, RL systems, and GPU cluster optimization concepts.",
+      "action": "fetch_and_ingest",
+      "primary_url": "https://open.substack.com/pub/semianalysis/p/rl-systems-mind-the-gap-matching",
+      "alt_url": "https://substack.com/app-link/post?publication_id=6349492&post_id=201544287",
+      "entity_candidates": ["semianalysis"],
+      "concept_candidates": ["rl-infrastructure", "training-throughput", "gpu-optimization"]
+    },
+    {
+      "message_id": "<20260617053741.3.5a6728f424358e37@mg-d0.substack.com>",
+      "subject": "[AINews] GLM-5.2: the top Frontend Coding model in the world, IndexShare for Speculative Decoding",
+      "date": "2026-06-17",
+      "source": "swyx / AINews (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-17-ainews-glm-5-2-the-top-frontend-coding-model-in-the-world-indexshare-for-specula.md",
+      "importance": "high",
+      "reason": "New model release: GLM-5.2 (Zhipu AI) claims top frontend coding benchmark. IndexShare is a new speculative decoding technique. Both are directly wiki-relevant as model and inference concept updates.",
+      "action": "fetch_and_ingest",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-glm-52-the-top-frontend-coding",
+      "alt_url": "https://substack.com/app-link/post?publication_id=1084089&post_id=202387615",
+      "entity_candidates": ["glm", "zhipu-ai", "swyx"],
+      "concept_candidates": ["speculative-decoding", "coding-llms", "indexshare"]
+    },
+    {
+      "message_id": "<20260616130105.3.4086e440fec72d5a@mg-d1.substack.com>",
+      "subject": "Bye bye Fable",
+      "date": "2026-06-16",
+      "source": "Ben's Bites (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-bye-bye-fable.md",
+      "importance": "medium",
+      "reason": "Ben's Bites covering Fable (AI interactive storytelling/video) shutdown or major change. AI industry product news — relevant for tracking AI company lifecycle but not a core wiki topic.",
+      "action": "fetch_if_capacity",
+      "primary_url": "https://open.substack.com/pub/bensbites/p/bye-bye-fable",
+      "alt_url": "https://substack.com/app-link/post?publication_id=4379299&post_id=202245554",
+      "entity_candidates": ["fable", "bens-bites"],
+      "concept_candidates": []
+    },
+    {
+      "message_id": "<20260616182601.3.74b7b3488928406c@mg2.substack.com>",
+      "subject": "Leviathan Waking",
+      "date": "2026-06-16",
+      "source": "Dean W Ball / Hyperdimensional (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-leviathan-waking.md",
+      "importance": "medium",
+      "reason": "AI policy/governance essay by Dean W Ball (Hyperdimensional). Likely about state power and AI governance. Relevant to AI safety/policy concepts but more editorial/opinion than technical.",
+      "action": "fetch_if_capacity",
+      "primary_url": "https://open.substack.com/pub/hyperdimensional/p/leviathan-waking",
+      "alt_url": "https://substack.com/app-link/post?publication_id=2244049&post_id=202323589",
+      "entity_candidates": ["dean-w-ball"],
+      "concept_candidates": ["ai-governance", "ai-policy"]
+    },
+    {
+      "message_id": "<20260616181904.8fc53579@mta8>",
+      "subject": "💸 OpenAI Burned Billions in 2025 - and no end in sight",
+      "date": "2026-06-16",
+      "source": "beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-16-openai-burned-billions-in-2025-and-no-end-in-sight.md",
+      "importance": "medium",
+      "reason": "OpenAI financial burn rate analysis. Relevant for OpenAI entity page (business/financial context) but all links are beehiiv tracking URLs — harder to scrape. Business/finance angle rather than technical.",
+      "action": "fetch_if_capacity",
+      "primary_url": null,
+      "alt_url": "https://link.mail.beehiiv.com/v1/c/eTVoy7V3mX3ID0AOpei8LcahJOzCYSEV%2F1XX1%2BybXhMoPUplpPb7DiHYDDzI%0AIAIHgkW3LzqPj06KbdSy4ZVyYmHRYwVpE05mmhseaTUzcgMZlqk8HD2yEbmN%0A7oJL%2BGJwQMcdQgdaduXgQ%2Bg7x2NcSziMhSYox9s92m7StszwKJHr1BaxHyWG%0ABkrIqZmVVapcvu1PZmdKzrPV1DcS%2FNKScQ%3D%3D%0A/b308645653828416",
+      "entity_candidates": ["openai"],
+      "concept_candidates": ["ai-economics"]
+    }
+  ],
+  "summary": {
+    "high": 3,
+    "medium": 3,
+    "low": 0,
+    "critical": 0,
+    "action_summary": {
+      "fetch_and_ingest": 3,
+      "fetch_if_capacity": 3
+    },
+    "top_wiki_targets": [
+      "Post-training recipes (RLHF/DPO) — new concept or enrich existing",
+      "RL training infrastructure / throughput — new concept page",
+      "GLM-5.2 model — new entity or update existing GLM page",
+      "IndexShare speculative decoding — new concept page",
+      "Finbarr Timbers — new entity page (ex-DeepMind, Midjourney)"
+    ]
+  }
+}

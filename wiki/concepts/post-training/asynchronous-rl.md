@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous RL for LLM Post-Training"
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-17
 type: concept
 tags:
   - reinforcement-learning
@@ -10,7 +10,7 @@ tags:
   - importance-sampling
   - policy-lag
   - survey
-sources: [raw/articles/2026-05-31_lukhuang_frontier-asynchronous-rl-solved.md]
+sources: [raw/articles/2026-05-31_lukhuang_frontier-asynchronous-rl-solved.md, raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md]
 ---
 
 # Asynchronous RL for LLM Post-Training
@@ -82,6 +82,53 @@ Nearly all major open-weight labs use async RL:
 - **TorchForge** (Meta/PyTorch) — production-grade, uses TorchTitan + Monarch
 - **Slime** (Zhipu) — battle-tested production system for GLM-5
 - **Forge** (Minimax) — production system for M2.5
+
+## SemiAnalysis PipelineRL & Throughput Matching
+
+The SemiAnalysis "RL Systems: Mind the Gap" article (June 2026, with [[entities/prime-intellect|Prime Intellect]] and [[entities/modal|Modal]]) analyzes asynchronous RL systems through a **throughput matching** lens, framing the async training pipeline around three actors — generator, sandbox, trainer — connected by a queue.
+
+### PipelineRL: In-Flight Weight Syncing
+
+**PipelineRL** (already listed above as a ServiceNow framework) introduces a specific form of asynchrony: the trainer pushes updated weights to the generator **while rollouts are still in progress**. This is distinct from off-policy async where stale rollouts are stored and consumed later.
+
+| Property | Off-Policy Async | PipelineRL Async |
+|----------|-----------------|-----------------|
+| Rollout generation | From an old frozen snapshot | From current weights during training |
+| Staleness source | Age gap between snapshot and current policy | In-flight rollouts finishing with old weights |
+| Staleness bound | Configurable snapshot interval | Bounded by rollout duration |
+| Implementation complexity | Lower (separate snapshot) | Higher (live weight synchronization) |
+
+### Throughput Matching as an Async Framework
+
+The SemiAnalysis framework treats async RL as a **continuous production system**:
+
+- **Generator production rate** = concurrent rollouts / end-to-end latency per rollout
+- **Trainer consumption rate** = samples per step / training step time
+- **Effective generation rate** = acceptance rate × generator production rate
+
+The system achieves balance when generator production approximately matches trainer consumption. Mismatch leads to either:
+- **Rollout-bound regime**: Trainer idles waiting for rollouts (underutilized GPUs)
+- **Training-bound regime**: Queue grows unbounded (stale data accumulating)
+
+### Policy Staleness in PipelineRL
+
+Unlike traditional off-policy async where staleness grows unbounded, PipelineRL bounds staleness by the rollout duration:
+
+1. Trainer completes an optimization step
+2. New weights are pushed to the generator
+3. In-flight rollouts complete with the old weights (~seconds to minutes)
+4. New rollouts use the fresh weights
+
+The staleness window = max(rollout latency, weight transfer time). This is typically much smaller than the staleness in snapshot-based off-policy async (which can be thousands of training steps).
+
+### Group Size and Throughput
+
+Group size N in GRPO directly impacts throughput matching:
+- N=8 for easy tasks (fast rollouts, high throughput)
+- N=16 for medium tasks
+- N=64 for hard reasoning tasks (slow rollouts, lower throughput)
+
+Larger groups produce more rollouts per prompt, increasing generator load and potentially creating a rollout-bound regime. Early pruning (terminating low-reward rollouts early) and adaptive sampling (adjusting N dynamically based on reward variance) are key mitigations.
 
 ## Open Questions
 

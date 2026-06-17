@@ -2,12 +2,13 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-06-11
+updated: 2026-06-17
 tags:
-  - lab
-  - hardware
-  - economics
+  - organization
+  - research
   - infrastructure
+  - blog
+  - ai-economics
 aliases: [semianalysis-research]
 related:
   - [[entities/dylan-patel]]
@@ -15,10 +16,13 @@ related:
   - [[concepts/compute-scaling-bottlenecks]]
   - [[concepts/gpu-cluster-tco-goodput]]
   - [[concepts/ai-lab-subscription-vs-api-economics]]
+  - [[concepts/post-training/grpo-infrastructure]]
+  - [[concepts/post-training/asynchronous-rl]]
 sources:
   - raw/articles/2026-05-20_semianalysis_clustermax-2-gpu-cloud-ratings.md
   - raw/articles/substack.com--app-link-post--1509e963.md
   - raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md
+  - raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md
   - https://semianalysis.com/
 ---
 
@@ -26,7 +30,19 @@ sources:
 
 **SemiAnalysis** is a boutique AI and semiconductor research firm founded by [[entities/dylan-patel|Dylan Patel]] in 2020. It has grown from a solo research blog into a 12-person global team providing data-driven analysis of semiconductor supply chains, AI compute economics, and cloud infrastructure.
 
-## Products & Research
+## Key People
+
+- **Dylan Patel** — Founder, CEO, and Chief Analyst. Started SemiAnalysis in 2020 as a one-person blog.
+- **Myron Xie** — Lead Analyst. Covers GPU economics, AI training infrastructure, and semiconductor supply chain.
+- **Daniel Nishball** — Analyst. Covers AI infrastructure, cloud economics, and RL training systems.
+- **Matej Sirovatka** — Collaborator at [[entities/prime-intellect|Prime Intellect]], co-author on RL systems analysis.
+- **Ameen Patel** — Collaborator at Prime Intellect, co-author on RL systems analysis.
+- **Sami Jaghouar** — Collaborator at Prime Intellect, co-author on RL systems analysis.
+- **Peyton Walters** — Collaborator at [[entities/modal|Modal]], co-author on RL systems sandbox analysis.
+- **Nan Jiang** — Collaborator at Modal, co-author on RL systems sandbox analysis.
+- **Erik Dunteman** — Collaborator at Modal, co-author on RL systems sandbox analysis.
+
+## Key Research Areas
 
 ### Core Research
 - Subscription-based deep-dive reports for the finance industry
@@ -53,6 +69,22 @@ sources:
 - Tracks datacenter capacity, deployments, and commitments
 - Used for CoreWeave, Nebius, Oracle, and other Neocloud analysis
 
+### GPU Economics
+- Detailed NVIDIA GPU cost modeling and margin analysis
+- H100/H200/B200/B300 TCO and supply chain tracking
+- Blackwell architecture reliability and deployment analysis
+
+### AI Infrastructure
+- GPU cloud provider evaluation via ClusterMAX
+- Neocloud economics and hyperscaler margin analysis
+- Datacenter capacity and deployment tracking
+
+### RL Training Systems
+- Generator/trainer throughput matching framework
+- PipelineRL asynchrony and policy staleness analysis
+- Sandbox startup latency and scalability optimization
+- Early pruning and adaptive sampling for throughput
+
 ## Key Publications
 
 ### ClusterMAX 2.0 (November 2025)
@@ -69,6 +101,18 @@ sources:
 ### Compute Bottlenecks Analysis (March 2026)
 - Three-bottleneck framework (Logic → Memory → ASML EUV)
 - Dwarkesh Podcast appearance became most-cited infrastructure analysis
+
+### RL Systems: Mind the Gap (June 2026)
+- Deep analysis of RL training infrastructure for LLM post-training
+- Key thesis: system efficiency depends on matching generator and trainer throughput
+- Introduces **PipelineRL** asynchrony — trainer pushes weights while rollouts in progress, tolerating policy staleness
+- **Three-actor model**: generator (produces rollouts), RL environment/sandbox, trainer (consumes rollouts)
+- **Queue model**: generator → queue → trainer, where effective generation rate = acceptance rate × generation rate
+- Group size analysis: N=8 for easy tasks, N=16 for medium, N=64 for hard reasoning
+- Sandbox challenges: startup latency (Modal optimizations), concurrency scaling, robustness against model misbehavior
+- Throughput optimizations: early pruning, adaptive sampling, concurrency tuning
+- Collaborators: [[entities/prime-intellect|Prime Intellect]] (Matej Sirovatka, Ameen Patel, Sami Jaghouar), [[entities/modal|Modal]] (Peyton Walters, Nan Jiang, Erik Dunteman)
+- See [[concepts/post-training/grpo-infrastructure]] and [[concepts/post-training/asynchronous-rl]] for detailed frameworks
 
 ## Industry Influence
 

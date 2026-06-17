@@ -2,13 +2,14 @@
 title: GRPO Infrastructure
 type: concept
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-17
 tags: [reinforcement-learning, grpo, infrastructure, gpu, vram, lora, training, agentic-rl, vllm]
 sources:
   - transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture
   - raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5
   - transcripts/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5-lecture
   - raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5
+  - raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md
 ---
 
 # GRPO Infrastructure
@@ -103,6 +104,78 @@ Many RL-as-a-Service offerings are **thin wrappers around TRL** (Transformer Rei
 - Databricks — integrated ML platform with RL support
 
 If a service charges significantly above market GPU rates without clear added value, you're likely paying for a TRL wrapper.
+
+## SemiAnalysis Throughput Matching Framework
+
+The SemiAnalysis "RL Systems: Mind the Gap" article (June 2026) provides a practical framework for understanding RL training infrastructure efficiency. The core thesis: **system efficiency comes down to matching generator and trainer throughput.**
+
+### Three-Actor Model
+
+An RL training system involves three actors:
+
+1. **Generator** — The model producing rollouts (completions) for each prompt
+2. **RL Environment / Sandbox** — The execution environment where rollouts are evaluated (code execution, math verification, etc.)
+3. **Trainer** — The training loop consuming rollouts to compute gradients and update model weights
+
+### The Queue Model
+
+```
+Generator → [Queue] → Trainer
+```
+
+The generator produces rollouts which are placed into a queue. The trainer consumes rollouts from the queue. The system is balanced when:
+
+- **Generator production rate** = concurrent rollouts / end-to-end latency
+- **Trainer consumption rate** = samples per step / training step time
+- **Effective generation rate** = acceptance rate × generator production rate
+
+### PipelineRL Asynchrony
+
+**PipelineRL** introduces asynchrony by having the trainer push updated weights to the generator **while rollouts are still in progress**. This contrasts with synchronous execution where the trainer waits for all rollouts to complete before updating weights.
+
+Key properties:
+- **Policy staleness** is tolerated to an extent — the generator uses slightly stale weights
+- Synchronous execution wastes too much compute at scale due to idle GPU time
+- The tradeoff: staleness degrades sample quality vs. throughput gains from continuous pipeline operation
+
+### Group Size Impacts
+
+Group size (N in GRPO) varies by task difficulty:
+
+| Task Difficulty | Recommended N |
+|----------------|--------------|
+| Easy | 8 |
+| Medium | 16 |
+| Hard (reasoning) | 64 |
+
+Larger groups provide better advantage estimates but increase sampling cost. The optimal N depends on reward distribution — if rewards are uniform within a group, the training signal vanishes regardless of group size.
+
+### RL Environment / Sandbox Challenges
+
+The sandbox layer (where rollouts execute — e.g., code sandboxes, math verifiers) introduces several bottlenecks:
+
+- **Startup latency**: Cold-starting sandboxes adds significant overhead. [[entities/modal|Modal]] optimizes this through fast container initialization.
+- **Concurrency scaling**: Sandboxes must scale to handle many concurrent rollouts without becoming the bottleneck.
+- **Robustness**: Models can generate adversarial behavior (writing a million files, OOM abuse). Sandboxes must contain such behavior gracefully.
+- **Interaction latency**: The communication overhead between generator and sandbox can dominate at high throughput.
+
+### Throughput Optimizations
+
+- **Early pruning**: Terminate low-quality rollouts early based on partial reward signals, freeing generator capacity for more promising samples.
+- **Adaptive sampling**: Dynamically adjust the number of rollouts per prompt based on observed reward variance.
+- **Concurrency tuning**: Balance the number of concurrent rollouts against sandbox capacity and trainer consumption rate.
+- **Acceptance rate filtering**: Not all generated rollouts are useful — filtering by acceptance rate improves trainer efficiency.
+
+### Policy Staleness Tolerance
+
+A critical insight: the policy can tolerate some staleness. The trainer does not need to block until all in-flight rollouts complete. Instead, the trainer pushes weight updates asynchronously:
+
+1. Trainer completes an optimization step
+2. New weights are sent to the generator
+3. In-flight rollouts continue with the old weights
+4. Next batch of rollouts uses the new weights
+
+This creates a **continuously pipelined system** where the generator never idles waiting for the trainer, and the trainer never idles waiting for rollouts. The staleness window is bounded by the rollout duration.
 
 ## Related Concepts
 

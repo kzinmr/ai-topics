@@ -127,7 +127,7 @@
 - [[entities/samuelcolvin]] — samuelcolvin
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
-- [[entities/semianalysis]] — SemiAnalysis — Boutique AI/semiconductor research firm. Creator of ClusterMAX GPU cloud ratings (209 providers, 10 criteria, Platinum/Gold/Silver/Bronze tiers). Dylan Patel (CEO). Independent benchmark beyond $/GPU-hr.
+- [[entities/semianalysis]] — SemiAnalysis — Premier independent AI/semiconductor research firm. GPU economics, AI infrastructure, RL training systems. Founders: Dylan Patel, Myron Xie, Daniel Nishball. Creator of ClusterMAX GPU cloud ratings. Published "RL Systems: Mind the Gap" (Jun 2026) on generator/trainer throughput matching.
 - [[entities/seshadri]] — Seshadri (@sseshadri43) — LangChain engineer. Co-author of RubricMiddleware for Deep Agents (self-correcting grader loops).
 - [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark; Outcomemaxxing outcome-based pricing framework (Agency x Attribution 2x2 matrix).
@@ -353,7 +353,8 @@
 - [[entities/figma]] — With the arrival of Claude Design, Figma has become a **case study illustrating vulnerability in the SaaS AI era**.
 - [[entities/figure-ai]] — Figure AI — Humanoid robotics company. F.03 robot with Helix-02 VLA model autonomously sorted 100K+ packages. Onboard AI processing. First commercial agreement with Catalyst Brands (JCPenney, Aéropostale, Brooks Brothers) for Reno, NV warehouse deployment (May 2026).
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
-- [[entities/fireworks-ai]] — AI inference and model customization platform. 13T+ tokens/day. Multi-hardware (NVIDIA+AMD), FireAttention, custom speculator training, RFT capabilities.
+- [[entities/finbarr-timbers]] — Finbarr Timbers — AI researcher and post-training expert. Previously at DeepMind, Midjourney, Ai2. Co-author on Tülu 3 and OLMo 3. Key voice on MOPD (Multi-teacher On-Policy Distillation), the dominant 2026 post-training pattern. Interviewed on Interconnects #18 by Nathan Lambert.
+- [[entities/fireworks-ai]] — AI inference and model customization platform.
 - [[entities/folk-app]] — Nozomio Labs personal AI agent. Resides inside iMessage/Telegram/Discord. Restaurant reservations, flight monitoring, apartment search, and more. 24/7 operation, persistent memory. Pro $20/mo, Max $100/mo.
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
@@ -372,7 +373,7 @@
 - [[entities/grant-sanderson-3blue1brown]] — **Alias** | 3Blue1Brown | YouTube math/ML educator (8.3M subscribers). Creator of Manim animation engine (open-source). Neural networks, linear algebra, calculus series. Stanford graduate, former Khan Academy fellow. MIT computational thinking co-lecturer.
 - [[entities/gian-segato]] — Gian Segato — AI researcher at Anthropic, early Replit (trained code models, shipped first coding agent). Author of "Building AI Products In The Probabilistic Era" and "Agency is Eating the World." Founder of Uniwhere (acquired).
 - [[entities/gilesthomas]] — ML researcher, educator, software developer. Creator of PythonAnywhere.gilesthomas.com
-- [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai.
+- [[entities/glm-5-zai]] — GLM-5 / GLM-5.2 — Open-weights MoE LLM from Z.ai (Zhipu AI). 744B params, 40B active, MIT license. GLM-5.2 (Jun 2026): #1 Design Arena, #3 FrontierSWE, first open model >80% Terminal-Bench. IndexShare sparse attention.
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
 - [[entities/gm8xx8]] — High-taste AI research curator on X/Twitter and HuggingFace (89K+ HF followers, 17K+ posts). Bio: "HIGH-TASTE AI | OPEN MODELS." Curates across proof theory, scaling laws, multimodal systems, and robotics. X account since 2010; AI curation since 2022.
 - [[entities/google-adk]] — Google Agent Development Kit (ADK) 2.0: graph-based workflow engine for multi-agent AI, GA May 2026, 20K ⭐
@@ -1589,6 +1590,7 @@
 - [[concepts/hunyuan-hy3]] — Hunyuan Hy3 — Tencent's 295B MoE model (21B active, 192 experts top-8), 256K context, rebuilt infrastructure, enhanced agent capabilities
 - [[concepts/hypencoder]] — Hypencoder — Query-Specific Neural Relevance via Hypernetworks. Replaces inner-product similarity in bi-encoder retrieval with a query-specific neural network (q-net) whose weights are dynamically generated by a hypernetwork. UMass Amherst (SIGIR 2025). Outperforms 7B RepLLaMA with 110M params; 8.8M docs in ~60ms.
 - [[concepts/illusion-of-thinking]] — Apple’s Illusion of Thinking — Apple MLX research on LLM reasoning limitations and neurosymbolic robotics.
+- [[concepts/index-share]] — IndexShare — Novel technique extending DeepSeek Sparse Attention that reuses one indexer across every four sparse layers for efficient ultra-long context inference. Debuted in GLM-5.2.
 - [[concepts/inference]] — Inference (General)
 - [[concepts/inference-hardware]] — Inference Hardware — Hardware for AI model inference
 - [[concepts/inference-speed-development]] — Inference Speed Development
