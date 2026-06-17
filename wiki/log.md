@@ -1,5 +1,14 @@
 
 ---
+## 2026-06-17 — X accounts scan: newsjack discovery (22:30 UTC)
+
+- **Entity Updated:** `entities/elvis-sun.md` — Added Newsjack to "Currently Building" section and Timeline. Added [[concepts/newsjack]] cross-reference and source link. Updated 2026-06-17.
+- **Page Created:** `concepts/newsjack.md` — Newsjack (Agent PR Skills). Open-source Go + Markdown skills framework by Elvis Sun that turns Claude Code / Codex / Hermes / OpenClaw into a full PR team. 428 ★, MIT license. Covers three-lane architecture (Detect/Act/Strategize), platform compatibility matrix, key design decisions, and relationship to Elvis Sun's PR ecosystem.
+- **Source:** X post by @elvissun (2026-06-17): https://x.com/elvissun/status/2067037758296580296, linking to https://newsjack.sh and https://github.com/elvisun/newsjack
+- **Index updated:** `concepts/newsjack` inserted alphabetically in index.md concepts section.
+- **Cross-references:** [[elvis-sun]], [[concepts/harness-engineering]], [[entities/hermes-agent]], [[concepts/newsjacking-framework]], [[concepts/vibe-coding]].
+
+---
 ## 2026-06-17 — dreaming-wiki-ingest (18:20 UTC)
 - `entities/dario-amodei.md` — Enriched with "Policy on the AI Exponential" (Treebeard analogy, 5 policy areas, FAA-style regulation, MATCH/OVERWATCH). 29→145 lines.
 - `entities/martin-alderson.md` — Added KV Cache Compression History (100× compression since 2017, MHA→MQA→GQA→MLA evolution, linear-attention hybrids). 232→261 lines.

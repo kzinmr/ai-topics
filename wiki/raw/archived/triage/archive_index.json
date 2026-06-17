@@ -119,6 +119,7 @@
     "https://elevenlabs.io/blog/introducing-flows-agent",
     "https://elevenlabs.io/blog/lot-polish-airlines-announcement",
     "https://elevenlabs.io/blog/physicswallah",
+    "https://elevenlabs.io/blog/processing-images-and-documents-in-elevenagents",
     "https://elevenlabs.io/blog/warsaw-summit-homecoming",
     "https://elevenlabs.io/blog/webinar-recap-deploying-agents-across-every-channel",
     "https://eli.thegreenplace.net/2026/notes-on-fourier-series/",
@@ -140,7 +141,11 @@
     "https://feed.tedium.co/link/15204/17355475/adobe-creator-act-style-protection-commentary",
     "https://feed.tedium.co/link/15204/17359582/gigabyte-aorus-5060-ti-ai-box-egpu-review",
     "https://fireworks.ai/blog/Trilogy",
+    "https://fireworks.ai/blog/glm-5p2",
+    "https://fireworks.ai/blog/kimi-k2-7-code",
+    "https://fireworks.ai/blog/minimax-m3",
     "https://fireworks.ai/blog/nemotron-3-ultra",
+    "https://fireworks.ai/blog/qwen-3-7-plus",
     "https://garymarcus.substack.com/p/ais-black-friday",
     "https://garymarcus.substack.com/p/an-entire-industry-is-being-propped",
     "https://garymarcus.substack.com/p/breaking-bad-news-for-three-of-the",
@@ -169,6 +174,7 @@
     "https://getsuperintel.site/p/siri-ai-hits-europe-s-wall",
     "https://gilesthomas.com/2026/06/flax-and-safetensors/",
     "https://gilesthomas.com/2026/06/jax-backends-and-devices/",
+    "https://github.com/Tencent-Hunyuan/Hy3-preview",
     "https://github.com/huggingface/skills",
     "https://github.com/marin-community/marin",
     "https://github.com/walkinglabs/hands-on-modern-rl",
@@ -695,6 +701,7 @@
     "https://writing.antonleicht.me/p/betting-on-humans",
     "https://www.anthropic.com/news/confidential-draft-s1-sec",
     "https://www.anthropic.com/news/fable-mythos-access",
+    "https://www.anthropic.com/news/statement-fable-5-export-controls",
     "https://www.anthropic.com/news/when-ai-builds-itself",
     "https://www.axios.com/...",
     "https://www.bensbites.com/p/hey-siri-meet-ai",
@@ -726,6 +733,7 @@
     "https://www.gilesthomas.com/2026/06/jax-commitment-issues",
     "https://www.glean.com/blog/generative-ai-for-software-engineers-is-more-than-code-completion",
     "https://www.glean.com/blog/generative-ai-stack-for-software-engineers",
+    "https://www.glean.com/blog/glean-databricks-isv-ai-visionary-partner-of-the-year-2026",
     "https://www.glean.com/blog/how-to-build-ai-chatbots-for-enterprise-teams-with-glean",
     "https://www.glean.com/blog/introducing-glean-mcp-gateway",
     "https://www.glean.com/blog/query-snowflake-data-in-glean-assistant",
@@ -734,6 +742,7 @@
     "https://www.harvey.ai/blog/ai-case-management-software",
     "https://www.harvey.ai/blog/benefits-of-ai-in-legal-operations",
     "https://www.harvey.ai/blog/for-iain-telford-ai-success-depends-on-people",
+    "https://www.harvey.ai/blog/harvey-copilot-cowork-launch",
     "https://www.harvey.ai/blog/harvey-opens-in-singapore",
     "https://www.harvey.ai/blog/harvey-pitchbook-integration",
     "https://www.harvey.ai/blog/harvey-power-users-the-champions-network",
@@ -853,5 +862,5 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-redhat-javascript-clients/",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-06-17T07:36:58.769280+00:00"
+  "updated": "2026-06-17T18:25:20.505985+00:00"
 }

@@ -1,7 +1,7 @@
 ---
 title: Elvis Sun
 created: 2026-04-18
-updated: 2026-06-03
+updated: 2026-06-17
 type: entity
 tags:
   - person
@@ -28,6 +28,7 @@ status: enriched
 
 ## Currently Building
 
+- **[Newsjack](https://newsjack.sh)** ([GitHub](https://github.com/elvisun/newsjack)) — Open-source agent skills that turn Claude Code / Codex / Hermes / OpenClaw into a full PR team (428 ★, Go + Markdown skills, launched May 2026)
 - **[Medialyst.ai](https://medialyst.ai/)** — AI-powered journalist discovery platform (Beta Open)
 - **[PressPulse.ai](https://presspulse.ai/)** — PR opportunity listening tool ($100k+ in revenue)
 - **[Solar Flare PR](https://solarflarepr.com/)** — Search-first PR agency
@@ -155,11 +156,13 @@ With Claude Code, Codex, and Gemini agents, solo founders can now build products
 - **2026 Jan 17:** "How I made 5 viral tweets in one day" — Newsjacking strategy
 - **2026 Mar 7:** "Vibe-launching: The Virality Playbook" — real-time iteration framework
 - **2026 Mar 21:** "The Game of Attention" — attention flywheel concept
+- **2026 May:** Launched [Newsjack](https://newsjack.sh) — open-source agent skills for PR teams (428 ★)
 - **2026:** Medialyst.ai beta launch
 
 ## Related
 
 - [[entities/hermes-agent]] — AI agent platform (Elvis has written about Claude Code integration)
+- [[concepts/newsjack]] — Open-source agent skills for PR teams
 - [[concepts/harness-engineering]] — AI-as-harness patterns
 - [[concepts/ai-agent-memory-middleware]] — Context Lake as personal knowledge architecture
 - [[entities/simon-willison]] — Another ex-tech-company founder writing about AI tools
@@ -184,3 +187,4 @@ With Claude Code, Codex, and Gemini agents, solo founders can now build products
 - ["The Untapped Power of Cold Email"](https://www.elvis.so/p/why-cold-email)
 - ["The ultimate guide to setting up a cold email growth system in 2026"](https://www.elvis.so/p/cold-email-setup)
 - [My git history looks like I just hired a dev team](https://x.com/elvissun/status/2025920521871716562)
+- [Newsjack GitHub](https://github.com/elvisun/newsjack) — Open-source agent skills for PR teams

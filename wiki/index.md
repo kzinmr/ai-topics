@@ -1748,6 +1748,7 @@
 - [[concepts/nemotron-3-ultra]] — Nemotron 3 Ultra (NVIDIA): 550B total / 55B active open hybrid Transformer-Mamba MoE model. Designed for long-running autonomous agents: coding, deep research, enterprise workflows. 5× faster inference, up to 1M context. Available on Fireworks AI (June 2026).
 - [[concepts/neurosymbolic-ai]] — Neurosymbolic AI — Integration of neural networks with symbolic reasoning for robust AI systems.
 - [[concepts/newsjacking-framework]] — Newsjacking Framework
+- [[concepts/newsjack]] — Newsjack (Agent PR Skills) — Open-source agent skills that turn Claude Code / Codex / Hermes / OpenClaw into a full PR team. Created by Elvis Sun. 428 ★, MIT license.
 - [[concepts/nextpad-ai-development]] — Nextpad++ case study: AI multi-agent development quality challenges, "uncanny valley" of functional but poor UX software. — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 - [[concepts/notion-cli]] — Notion CLI (ntn): official command-line tool for Notion API, Workers management, and file uploads. Designed for human developers and AI coding agents. Free on all plans.
 - [[concepts/notion-mcp]] — Notion MCP: official Notion MCP server (https://mcp.notion.com/mcp). Setup guides for Claude Code, Cursor, VS Code, Windsurf, ChatGPT, Codex. OAuth 2.0 authentication.
