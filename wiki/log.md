@@ -35,3 +35,12 @@
 - **Pages updated**:
   - `index.md` — added concept entry (alphabetically between tanstack-supply-chain-2026 and openclaw)
 - **Key details**: Simon Willison's tool demonstrating OpenAI's WebRTC API for realtime audio interactions. Supports GPT-Realtime-2 model with GPT-5-class reasoning and document context for conversational exploration of text content.
+
+## [2026-06-17] OpenAI vs Anthropic Enterprise Adoption — Concept Page Creation
+
+- **Action**: Created concept page for enterprise adoption patterns comparison
+- **Source**: https://x.com/JayaGup10/status/2065266818810527770
+- **Pages created**: `concepts/openai/enterprise-adoption-patterns.md` — Fortune 500 deployment patterns showing ChatGPT as org-wide default vs Claude for power users
+- **Pages updated**:
+  - `index.md` — added concept entry (alphabetically between chatgpt-memory-dreaming and frontier-governance-framework)
+- **Key details**: Enterprise adoption pattern where ChatGPT serves as organization-wide default while Claude is ring-fenced for power users due to variable-cost fear and capability mismatch perception.
