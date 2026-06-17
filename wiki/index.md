@@ -718,6 +718,7 @@
 - [[entities/ysymyth]] — YSYMYTH (skeleton page)
 - [[entities/zach-mueller]] — **Zach Mueller** (@TheZachMueller, muellerzr). Lead developer of Hugging Face Accelerate. ML Engineer at 🤗. fastai educator, OSS author (AdaptNLP, fastdebug). Distributed training infrastructure expert.
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
+- [[entities/zvi-mowshowitz]] — Zvi Mowshowitz — Prolific AI/rationality blogger (Don't Worry About the Vase). Weekly AI updates, model welfare analysis, AI policy commentary. $1K/hr consultant. NYC.
 - [[entities/zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
 - [[entities/zhanshi-wang]] — Zhanshi (Jason) Wang — OpenAI researcher & model improvement. Cofounded Roe (YC W24). Announced Codex Data Science plugin (June 2026) — "built by data scientists for data scientists." 100% user satisfaction on speed-to-insight.
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
