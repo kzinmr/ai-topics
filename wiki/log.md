@@ -53,3 +53,12 @@
 - **Pages updated**:
   - `index.md` — added concept entry (alphabetically between agents-sdk and aws-bedrock-partnership)
 - **Key details**: Five-layer research stack: causal mapping, drug design, biomarker discovery, clinical collaboration, off-patent treatment testing. Collaborators include Arc Institute, University of Washington, UCSF, Harvard Medical School.
+
+## [2026-06-17] Economic Futures in the Age of AI — Concept Page Creation
+
+- **Action**: Created concept page for OpenAI Foundation's economic futures initiative
+- **Source**: https://openaifoundation.org/news/economic-futures-in-the-age-of-ai
+- **Pages created**: `concepts/openai/economic-futures-age-of-ai.md` — $250M initiative for economic futures in the age of AI
+- **Pages updated**:
+  - `index.md` — added concept entry (alphabetically between enterprise-adoption-patterns and frontier-governance-framework)
+- **Key details**: Three pillars: understanding the shift, supporting the transition, building for long-term economic security. Focus on worker agency, government capacity, and new economic models including sovereign wealth funds and taxation shifts.
