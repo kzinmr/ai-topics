@@ -26,3 +26,12 @@
 - **Pages updated**:
   - `index.md` — added concept entry (alphabetically between aws-bedrock-partnership and frontier-governance-framework)
 - **Key details**: Automatic memory synthesis from conversation history, addresses staleness/correctness/scalability, evolution from explicit saved memories (2024) to background dreaming (2025) to standalone system (2026). Evaluations show improved context carry-forward, preference following, and temporal awareness.
+
+## [2026-06-17] OpenAI WebRTC Audio Session — Concept Page Creation
+
+- **Action**: Created concept page for OpenAI WebRTC audio session playground
+- **Source**: https://simonwillison.net/2026/Jun/12/openai-webrtc/
+- **Pages created**: `concepts/openai/webrtc-audio-session.md` — browser-based playground for realtime audio conversations using GPT-Realtime-2 model with document context input
+- **Pages updated**:
+  - `index.md` — added concept entry (alphabetically between tanstack-supply-chain-2026 and openclaw)
+- **Key details**: Simon Willison's tool demonstrating OpenAI's WebRTC API for realtime audio interactions. Supports GPT-Realtime-2 model with GPT-5-class reasoning and document context for conversational exploration of text content.

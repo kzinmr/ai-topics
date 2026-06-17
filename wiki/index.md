@@ -1772,7 +1772,8 @@
 - [[concepts/openai/reflections-on-openai]] — OpenAI Insider Reflections: Culture, Code, and Codex Launch — Calvin French-Owen's firsthand account of OpenAI's internal culture, Python monorepo, Azure infrastructure, and the 7-week Codex development sprint.
 - [[concepts/openai/responses-api]] — OpenAI Responses API — Stateful conversation API replacing Chat Completions. Built-in tools (web search, file search, computer use, code interpreter). 1-year retrospective: 6 production patterns.
 - [[concepts/openai/symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
-- [[concepts/openai/tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
+- [[concepts/openai/tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security security hardening measures.
+- [[concepts/openai/webrtc-audio-session]] — OpenAI WebRTC Audio Session with Document Context — Browser-based playground for realtime audio conversations using GPT-Realtime-2 model with document context input.
 - [[concepts/openclaw]] — OpenClaw — Open-source always-on AI agent framework by Peter Steinberger. Gateway-first architecture with multi-agent routing, ACP sub-agent spawning, and cron/webhook scheduling.
 - [[concepts/openclaw-architecture]] — OpenClaw architecture details
 - [[concepts/openclaw-ecosystem]] — OpenClaw Ecosystem — Peter Hayes' open-source AI agent platform ecosystem: gateway, skills library, tool server, community-contributed agents and integrations.
