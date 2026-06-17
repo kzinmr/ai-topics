@@ -1,3 +1,11 @@
+
+---
+## 2026-06-17 — dreaming-wiki-ingest (18:20 UTC)
+- `entities/dario-amodei.md` — Enriched with "Policy on the AI Exponential" (Treebeard analogy, 5 policy areas, FAA-style regulation, MATCH/OVERWATCH). 29→145 lines.
+- `entities/martin-alderson.md` — Added KV Cache Compression History (100× compression since 2017, MHA→MQA→GQA→MLA evolution, linear-attention hybrids). 232→261 lines.
+- `concepts/evaluation/agent-evaluation-methodology.md` — Added Lee Han-chung evaluation infrastructure framework (RL 5-tuple, rollouts/traces, state infrastructure, checkpoint/replay, evaluation debt). 210→336 lines.
+- `entities/fireworks-ai.md` — Added Inference Providers vs API Routers subsection (direct providers vs proxies, performance analysis, DPA/sovereignty, verification methods). 213→289 lines.
+- `entities/calvin-french-owen.md` — Created entity skeleton from "Reflections on OpenAI." 25 lines.
 ## 2026-06-17 — AG2/AutoGen concept page creation
 
 - **Page Created:** `concepts/ag2-autogen.md` — Comprehensive concept page covering AG2/AutoGen (Microsoft's open-source multi-agent framework). Covers history (v0.2 → v0.4 → AG2 rebrand → maintenance mode), architecture (AgentChat/Core/Extensions/Studio layers), key features (multi-agent conversations, code execution, HITL, tool use, distributed execution), comparison with LangGraph/CrewAI/OpenAI Agents SDK/Microsoft Agent Framework, and adoption & ecosystem context.

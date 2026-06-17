@@ -2,7 +2,7 @@
 title: "Agent Evaluation Methodology — Floor Raising vs Benchmark Maxxing"
 type: concept
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-06-17
 tags:
   - evaluation
   - benchmark
@@ -17,6 +17,8 @@ sources:
   - raw/articles/2026-05-28_ben-hylak_how-to-eval-ai-agents.md
   - https://www.howtoeval.com/
   - raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md
+  - raw/articles/leehanchung.github.io--blogs-2026-06-13-hidden-technical-debt-agent-evaluation-infr--f05320f3.md
+  - https://leehanchung.github.io/blogs/2026/06/13/hidden-technical-debt-agent-evaluation-infra/
 related:
   - "[[concepts/evaluation/macro-evals-for-agentic-systems]]"
   - "[[concepts/evaluation/raindrop]]"
@@ -24,6 +26,7 @@ related:
   - "[[concepts/ai-observability]]"
   - "[[entities/ben-hylak]]"
   - "[[entities/hamel-husain]]"
+  - "[[entities/lee-han-chung]]"
 ---
 
 # Agent Evaluation Methodology — Floor Raising vs Benchmark Maxxing
@@ -199,6 +202,129 @@ As models become more capable and agentic, the distinction between "model" and "
 | **Complementarity** | Operational: "is my agent reliable?" | Analytical: "what patterns emerge at scale?" |
 
 See [[concepts/evaluation/macro-evals-for-agentic-systems]] for the full macro evals methodology.
+
+## Lee Han-chung: Agent Evaluation Infrastructure as Technical Debt
+
+A framework by **Lee Han-chung** (Han, Not Solo) that reframes agent evaluation as a durable infrastructure layer — the part that outlives model updates, harness rewrites, and runtime refactors. Drawing on reinforcement learning abstractions, the core thesis is that agent evaluation looks less like a metric library and more like an **experimental control plane**.
+
+> "Agents need worlds. Agentic evaluation infra needs multiverses." — Lee Han-chung
+
+### The RL 5-Tuple: Eval Infrastructure as Control Plane
+
+Lee formalizes the evaluation infrastructure as an extended RL 5-tuple:
+
+\[
+I_{eval} = \{T, A, M, S, C, R, \tau\}
+\]
+
+| Component | Meaning |
+|-----------|---------|
+| **T** | Task suites, task distributions, verifiers, rubrics, judges, human review |
+| **A** | Harness — the scaffolding that wraps the agent loop |
+| **M** | Model |
+| **S** | Initial state, checkpoints, memory, state deltas |
+| **C** | Configuration — skills, tools, stopping rules, token budgets |
+| **R** | Runtime — sandbox, execution environment |
+| **τ** | Trace schema and trace store |
+
+The purpose of this system is to produce a **data-driven decision** for next steps: ship, rollback, retrain, change harness, fix runtime, or curate more tasks. This framing turns evaluation into a normalized, auditable, replayable experiment record.
+
+### From Spreadsheet to System
+
+Evaluating a single-turn chat assistant fits in a spreadsheet: prompt, response, label, score. Agentic systems break every assumption:
+
+| Concern | Single-turn chat eval | Agentic system eval |
+|---------|----------------------|---------------------|
+| **Unit of work** | Prompt and response | Episode and trajectory |
+| **Main artifact** | Output text | Output, trace, state delta |
+| **Failure modes** | The final answer | Any step in the rollout |
+| **Environment** | Static prompt set | Mutable runtime, tools, memory |
+| **Verification** | Score the answer | Score outcome, process, and state |
+| **Reproducibility** | Seed and prompt | Seed, state, runtime, tools, memory, clocks, APIs |
+| **Cost** | Inference tokens | Inference, tools, runtime, human review |
+| **Safety** | A bad answer | A bad action |
+
+### Rollouts, Episodes, Traces
+
+Key vocabulary for agent evaluation:
+
+- **Episode** — A bounded attempt from initial state to terminal condition
+- **Rollout** (or **trajectory**) — Running the agent through one episode
+- **Trace** — The recorded observability artifact: messages, tool calls, state changes, latency, cost
+
+A single aggregated score provides very sparse reward signal. Lee argues that final-output-only evals are insufficient because **agents change the environment**. A coding agent may end with a patch that passes tests, but the trace might show it deleted tests it couldn't pass, removed unrelated files, leaked a token, or looped on the same failing command. The trace is what lets you evaluate process — not just outcome.
+
+### Five Evaluation Surfaces
+
+Lee identifies five surfaces for evaluating agent behaviors:
+
+1. **Output** — Did the agent complete the task? Verifiable tasks (math, coding) vs open-ended tasks (analysis, research). Use rubrics and matrices rather than single scores.
+2. **Trace** — Process questions: Did the agent use the right tools? Retry failing calls? Inspect files before editing? Validate after changes? A minimal trace record includes run id, task id, step index, model/harness version, tool calls with argument/observation hashes, latency, cost, state delta pointer, checkpoint id, verifier result, and failure labels.
+3. **Memory** — Conversation context, scratchpads, skills files, vector-store entries. Memory pollution changes agent behavior silently — a bad episode becomes a durable preference (analogous to the YouTube dark hole of recommendation systems).
+4. **Environment** — State deltas at each step: files added/deleted, DB rows updated, git refs changed, secrets accessed. Capturing per-step state deltas makes failure attribution possible.
+5. **Mechanistic interpretability** — Sparse autoencoders, transcoders, cross-layer transcoders. Not available to teams using proprietary API endpoints; for most builders, extrinsic trace/state instrumentation must be comprehensive.
+
+### Experimentation, Not Benchmarking
+
+A benchmark is a frozen environment. Agent evaluation infrastructure should be **experimentation-driven**: treat every change (new model, reworded prompt, added tool) as a hypothesis and each eval run as a controlled experiment.
+
+**Perturbation tests** — Hold the task fixed, vary the paths available to the agent (turn limit, skills.md, tool failure rates, stale conflicting docs). A performance change isolates whether the agent learned the task or just memorized one golden path.
+
+**Ablation tests** — Remove one component at a time and measure the delta: long-term memory, semantic search, browser access, sub-agents, agent skills. If removing memory barely moves the score, the memory layer is theater.
+
+**Guardrail tests** — Inject tool errors, increase response latency, revoke a permission mid-run, and watch whether the agent recovers or fails closed.
+
+**Decouple task from harness** — What you measure (dataset, answer contract, scorer) must be a separate object from how you run it (model, tools, harness, sandbox). Otherwise a model change and a harness change land in the same number and you cannot tell which one moved it.
+
+### Checkpoints, Branches, and Replay
+
+Long-horizon agent evals need checkpointing for the same reason game engines need state snapshots — re-running from the beginning is too expensive and hides variance. A checkpoint must include: filesystem state, conversation state, retrieved memories, tool observations, model/harness version, random seeds, clocks, package versions, database state, network fixtures.
+
+Three operations:
+
+| Operation | Purpose |
+|-----------|---------|
+| **Resume** | Continue the same attempt from a checkpoint under the same configuration |
+| **Replay** | Inspect or re-execute a known trajectory from a known state |
+| **Branch** | Start from the same checkpoint but change one factor: model, harness, memory, tool availability, budget, or verifier |
+
+Branching enables targeted experiments: "Same state, new model — did the upgrade help?" / "Same state, memory disabled — is memory helping or poisoning?" This is the practical version of experience replay for agent systems.
+
+### State Infrastructure Is Evaluation Infrastructure
+
+In productivity tasks, agents live in filesystems and databases. Evaluation infrastructure must include state infrastructure:
+
+- **Filesystems**: git worktrees, copy-on-write directories, overlay filesystems, container layers, VM snapshots
+- **Databases**: transaction snapshots, logical dumps, branchable databases, seeded fixtures
+- **Browser agents**: profiles, cookies, local storage, network recordings, DOM snapshots
+- **Enterprise agents**: branchable mock systems with access controls
+
+> "Agents need worlds. Agentic evaluation infra needs multiverses."
+
+### Evaluation Debt
+
+Lee introduces **evaluation debt** as the accumulated cost of convenience infrastructure. Warning signs include:
+
+- Notebooks with CSV task sets and judge prompts in a shared Excel file
+- A model router with an ever-changing tool schema
+- Production runtime that is "basically the same" as eval runtime
+- Failures pasted into Slack as screenshots
+- A green dashboard nobody can trace back to the run that produced it
+
+The bill comes due at the next model upgrade: aggregate score improves, dashboard stays green, yet customers report the agent got worse — and the team cannot reproduce the regression because production ran with different memory state, tool timeout, browser profile, and system prompt than the eval ever saw.
+
+A durable evaluation layer can: identify which slice regressed, attribute the cause to the right component (model, harness, runtime, memory, verifier, or state), distinguish the agent failing the task from the scorer failing the agent, replay the failure, promote it into the regression suite, and tie the outcome to a ship/rollback/retrain decision.
+
+### Contrast with Floor Raising
+
+| Dimension | Floor Raising (Hylak) | Eval Infrastructure (Lee) |
+|-----------|----------------------|---------------------------|
+| **Focus** | Error analysis; find and fix specific failures | Build the durable measurement system itself |
+| **Core artifact** | Golden cases, Signals, Experiments | RL 5-tuple, traces, checkpoints, state deltas |
+| **Evaluation model** | Detective work on production traces | Controlled experiments with perturb/ablate/branch |
+| **Primary concern** | "Which 1% of failures matter?" | "Can I reproduce, attribute, and replay?" |
+| **Debt** | Eval suite bloat (too many low-signal cases) | Infrastructure debt (convenience systems that aren't reproducible) |
+| **Complementarity** | Operational methodology for finding what to fix | Infrastructure framework for building how to measure |
 
 ## Further Reading
 

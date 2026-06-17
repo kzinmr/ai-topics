@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-06-09
+updated: 2026-06-17
 tags:
   - person
   - blogger
@@ -17,6 +17,7 @@ sources:
   - raw/articles/martinalderson.com--posts-built-for-turbulence-podcast--40b40da5.md
   - raw/articles/martinalderson.com--posts-is-datacentre-sovereignty-really-that-important--8195ad72.md
   - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
+  - raw/articles/martinalderson.com--posts-a-brief-history-of-kv-cache-compression-developments--c7414ee7.md
 ---
 
 
@@ -121,6 +122,34 @@ If frontier labs begin offering new models and capabilities exclusively on their
 ### AI-Discovered Zero-Days
 
 Martin wrote about Anthropic's red team finding **500+ critical vulnerabilities** in abandoned software and asked: *"Who fixes the zero-days AI finds?"* This is a genuinely hard coordination problem — AI makes vulnerability discovery cheap and fast, but remediation still requires human effort on projects that may have no active maintainers.
+
+### KV Cache Compression History
+
+Martin documented the remarkable **100x compression** of KV cache memory per token since 2017 — from ~2.6MB/token with MHA to ~26KB/token with modern techniques. This compression matters because memory is one of the hardest physical constraints on AI infrastructure buildout.
+
+#### The Scale of the Problem (2017)
+
+In 2017, a 128K token context window for a 70B-parameter dense model with Multi-Head Attention (MHA) required ~340GB of GPU memory — about **2.6MB per token**. The state-of-the-art Tesla V100 shipped with 16GB HBM2, meaning ~20 GPUs were needed to hold a single conversation.
+
+#### The Evolution: MHA → MQA → GQA → MLA
+
+- **MQA (Multi-Query Attention, 2019)** — Noam Shazeer at Google shared a single KV head across all query heads, achieving ~64x reduction. But quality suffered significantly and long-recall degraded, limiting adoption to PaLM and Falcon.
+- **GQA (Grouped Query Attention, 2023)** — Groups of query heads shared KV heads, offering an ~8x reduction with very little quality loss. Llama 2 70B and Mistral adopted it immediately, making it the default for open models. Sliding window attention emerged in parallel, where some layers only attend to a fixed window so their cache stops growing.
+- **MLA (Multi-head Latent Attention, 2024)** — DeepSeek compressed keys and values into a much smaller latent vector, folding decompression into the surrounding projection matrices so full keys/values never need to be materialised. DeepSeek claimed **93% reduction** in KV cache size while *improving* quality benchmarks. This was a key enabler of DeepSeek's dramatically cheaper inference — and a decent chunk of how they wiped nearly $600bn off Nvidia's market cap in a single day in early 2025.
+
+#### Linear-Attention Hybrids (2025)
+
+Models like **Qwen3-Next** and **Kimi Linear** replaced most full attention layers with linear attention, keeping a small fixed-size state per layer rather than an ever-growing cache. Only a minority of layers retain a full KV cache. This unlocked **1M-token context windows** with minimal quality loss, and is presumably why Anthropic shipped a 1M context window for Claude without charging extra.
+
+#### The Future
+
+Research increasingly targets eliminating the quadratic attention bottleneck entirely — pure linear and recurrent approaches that maintain a fixed-size state regardless of context length. Whether they can fully match attention on quality remains an open question, but the hybrids have already proven that not every layer needs to pay full price.
+
+#### The Economic Insight
+
+Across nine years of ~100x compression, surprisingly little showed up as cheaper token prices. Most efficiency was spent on **longer context windows** — 4K became 128K became 1M. Much like video codecs were spent on higher resolutions rather than smaller files, KV cache compression keeps being spent on more capable agents. And with memory now one of the hardest constraints on AI buildout, this trend is expected to continue.
+
+Source: [[raw/articles/martinalderson.com--posts-a-brief-history-of-kv-cache-compression-developments--c7414ee7.md]]
 
 ## Blog Themes
 

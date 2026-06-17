@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-06-16
+updated: 2026-06-17
 tags:
   - entity
   - company
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md
   - raw/articles/2026-06-02_fireworks-ai_Trilogy.md
   - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
+  - raw/articles/2026-06-12_fireworks-ai_inference-providers-vs-api-routers.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -202,6 +203,81 @@ This partnership demonstrates Fireworks' thesis that **open models + fine-tuning
 **Authors:** Vivek Trivedy (@Vtrivedy10, LangChain), Jake Broekhuizen (LangChain), Harrison Chase (LangChain), Chahat Vij (Fireworks), Yi Su (Fireworks)
 
 **Source:** [[raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks]]
+
+## Inference Providers vs API Routers
+
+Fireworks published a detailed analysis distinguishing **inference providers** (companies that secure dedicated GPU compute and serve models directly from their own infrastructure) from **API routers** (aggregation layers that forward requests to upstream providers without operating any GPU hardware of their own). The article draws a sharp line between the two categories, with direct implications for latency, data sovereignty, compliance, and reliability.
+
+### The Core Distinction
+
+| Category | Description | Signal |
+|----------|-------------|--------|
+| **Inference Providers** | Secure dedicated GPU compute; the company controlling the API endpoint also controls the hardware processing your tokens | "our clusters / our GPUs" language in docs; GPU region status pages; company-owned ASNs |
+| **API Routers** | Aggregate access across multiple providers via a unified interface; forward requests upstream and never touch GPUs directly | "access 200+ models from leading providers" language; sub-processor references in DPAs; proxy-hop latency overhead |
+
+The article uses an **Airbnb analogy**: a router is like a travel booking platform that handles reservations, but the actual service delivery (hospitality / token generation) is the responsibility of the upstream provider. Another analogy: a direct provider is farm-to-table; a router is DoorDash.
+
+### Performance
+
+- **Proxy hops are always additive.** Routing through an intermediary can never improve median TTFT compared to calling the same inference API endpoint directly.
+- **Routers improve p95 reliability.** Services like OpenRouter maintain dozens of endpoints for popular models and can automatically reroute around overloaded or degraded endpoints, reducing tail-latency disasters.
+- **Routers have zero visibility** into GPU-level decisions (KV cache configuration, batch scheduling, custom kernels) that determine inference quality.
+
+**TL;DR:** Routers cannot improve median latency; they are a reliability layer, not a performance layer.
+
+### Data Sovereignty — The Shadow Traffic Problem
+
+The article highlights a structural limitation of routers:
+
+> **A router can only bind itself.**
+
+A zero-retention DPA with a router protects data only at the router's layer. The request still lands at an upstream provider whose policies the user has not reviewed or signed. The agreement does not follow the data.
+
+**Shadow traffic** — duplicating live requests for model evaluation or dataset collection — is identified as a standard industry practice, especially among newer or smaller routers offering free tiers and below-cost pricing. Shadow traffic is invisible in the response and leaves no trace in application logs.
+
+For **compliance-sensitive workloads** (HIPAA, GDPR, SOC 2, PII), the article recommends minimizing middleware layers and negotiating DPAs directly with the entity whose hardware handles the data.
+
+### When to Use Each
+
+| | Few models | Many models |
+|---|---|---|
+| **High data sensitivity** | Direct provider only. No exceptions. Negotiate DPAs directly. | Negotiate DPAs directly with each provider. |
+| **Low data sensitivity** | Either works. Direct preferred at scale. | Router is ideal: one API key, multi-provider fallback, broad model access. |
+
+Routers are a **convenience tax** — worth paying when the convenience (one API key, automatic fallback, broad model access) is genuinely valuable.
+
+### How to Verify as a Developer
+
+1. **Read the Terms & DPAs** — "our clusters / our GPUs" → provider; "access 200+ models from leading providers" → router. Sub-processor language in DPAs is a router tell.
+2. **ASN lookup** — whois on the endpoint IP: is it a company-owned ASN or a generic cloud block?
+3. **Latency fingerprinting** — a consistent 20–80ms overhead vs. a known direct provider is the proxy-hop signature.
+4. **Status pages** — real providers list GPU regions and infrastructure incidents; routers only show API uptime.
+5. **Response headers** — `x-served-by`, `x-upstream`, or similar may leak the actual serving provider.
+
+### Popular Providers
+
+| Provider | Type | Signal |
+|---|---|---|
+| **Fireworks AI** | Direct provider | Secured GPU clusters, FireAttention kernel, hardware SLAs |
+| **Together AI** | Direct provider | Secured data centers, custom inference kernels |
+| **Baseten** | Direct provider | Dedicated model replicas on secured infrastructure |
+| **Groq** | Direct provider | Proprietary LPU silicon — definitionally can't be a router |
+| **Cerebras** | Direct provider | Wafer-scale chips — same logic as Groq |
+| **Replicate (Cloudflare)** | Direct provider | Secured GPU fleet; cold start behavior confirms real infra |
+| **OpenRouter** | API Router | Multi-provider routing; model list maps to upstream APIs |
+| **Not Diamond** | Gateway Router | Task-aware routing layer, no infrastructure claims |
+| **Martian** | Router | Adaptive routing, same architecture |
+| **LiteLLM (cloud)** | Router | OSS gateway turned managed service |
+
+### Before You Ship
+
+The article's central question:
+
+> *Where does my token actually get processed?*
+
+If answering requires reading another company's DPA to complete, you are talking to a router. That may be fine for the use case — but the distinction should be explicit before production deployment.
+
+**Source:** [[raw/articles/2026-06-12_fireworks-ai_inference-providers-vs-api-routers]]
 
 ## Sources
 
