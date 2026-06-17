@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-16 | Total pages: 2555 | Indexed entries: 2169 | Concepts: 1704 | Entities: 805
+> Last updated: 2026-06-17 | Total pages: 2530 | Indexed entries: 2530 | Concepts: 1718 | Entities: 812
 
-## Entities (0 pages)
+## Entities (812 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -61,6 +61,7 @@
 - [[entities/goodfire-ai]] — Goodfire AI — AI interpretability research lab. $59M funded. Silico platform for intentional model design. Neural geometry, RLFR hallucination reduction (58%), Alzheimer's biomarker discovery (Nature).
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
+- [[entities/groq]] — Groq — AI inference infrastructure company. Custom LPU (Language Processing Unit) ASIC architecture for ultra-low-latency LLM inference. Founded by ex-Google TPU engineers. Competes with GPU-based inference platforms.
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/inspect-ai]] — Inspect AI — Open-source LLM eval framework by JJ Allaire + UK AISI + Meridian Labs. v0.3.239 (Jun 2026), 239 releases, 100+ contributors, adopted by Anthropic/DeepMind/Grok. Dataset/Solver/Scorer pipeline, react() agent, Agent Bridge (Claude Code/Codex/Gemini CLI), sandboxing (Docker/K8s/Modal), 200+ pre-built evals, inspect-scout scanning.
 - [[entities/isaac-flath]] — Isaac Flath — AI product engineer, educator. Pi Harness: RLM + late interaction retrieval (PyLate) + REPL-as-Context. "Retrieval First Agentic Systems." AI Engineering Club founder.
@@ -868,15 +869,16 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (6 pages)
+## Concepts (1718 pages)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/axe-framework]] — Axe Framework — Lightweight CLI for single-purpose AI agents following Unix philosophy, TOML configuration, sub-agent delegation with depth limiting, persistent memory, SSRF protection, token budgets.
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
+- [[concepts/multi-objective-policy-distillation]] — Multi-Objective Policy Distillation (MOPD) — Dominant 2026 post-training pattern: train N domain-specialist teachers, distill into one general student via reverse-KL on on-policy rollouts. Used by MiMo-V2-Flash, GLM-5, Nemotron 3 Ultra, DeepSeek V4.
 - [[concepts/plandex-coding-engine]] — Plandex Coding Engine — Terminal-based AI coding engine for multi-file projects, 2M token context window, tree-sitter project mapping, cumulative diff review sandbox, configurable autonomy spectrum.
 - [[concepts/spine-swarm-agents]] — Spine Swarm — Parallel multi-agent research platform, 300+ model support, structured handoffs, #1 on DeepSearchQA (87.6%), client-ready output formats, automation via MCP/API/webhooks.
 
-## Events (10 pages)
+## Events (11 pages)
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
 - [[events/openai-may-2026-reorg]] — OpenAI's May 2026 product reorganization. Greg Brockman oversees all products, ChatGPT and Codex integrated, Thibault Sottiaux named core product lead. Fidji Simo on medical leave.
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — Anthropic announces new products enhancing Claude Code (2026-05-06)
@@ -904,6 +906,7 @@
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
 - [[concepts/after-automation]] — After Automation Paradox — Dan Shipper's thesis that more automation creates more expert human work, not less. 5-step feedback loop: commoditization → abundance → sameness → demand for difference → demand for experts. Includes the Human Sandwich pattern, Zeno's Paradox of AI benchmarks, and the concept of slop as "visible sameness."
+- [[concepts/ag2-autogen]] — AG2 / AutoGen — Microsoft's open-source event-driven multi-agent framework. Actor model architecture with AgentChat (high-level) and Core (low-level) layers. Entered maintenance mode April 2026; succeeded by [[entities/microsoft-agent-framework|Microsoft Agent Framework]].
 - [[concepts/agent-communication-standards]] — Standard protocols for multi-agent communication including ACP, A2A, BeeAI, and others
 - [[concepts/agent-distillation]] — Agent Distillation — Distilling entire agent workflows (multi-step reasoning, tool use) into model weights for ~100x cheaper inference.
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
@@ -1958,6 +1961,7 @@
 - [[concepts/skillopt]] — SkillOpt (Microsoft, May 2026): text-space skill optimizer that applies deep-learning training discipline (validation gates, learning rates, momentum) to agent skill documents. Best-or-tied on all 52 evaluated cells. +23.5 pts avg over no-skill. Outperforms GEPA, TextGrad, EvoSkill.
 - [[concepts/small-language-models]] — Small Language Models — Compact LLMs for edge and local deployment
 - [[concepts/slow-search]] — Trading per-query latency for retrieval quality. Originally proposed for human searchers (Teevan et al., 2013), now relevant for agentic retrieval where agents are patient and throughput matters more than response time.
+- [[concepts/sovereign-ai]] — Sovereign AI: national LLM initiatives, data sovereignty, strategic autonomy, and the global push for domestic AI infrastructure. Covers GPT-NL (Netherlands), GPT-SW3 (Sweden), Rio/Nex-N2 controversy (Brazil), Cohere's sovereign enterprise AI strategy, datacenter sovereignty debate, and relationship to the EU AI Act.
 - [[concepts/societal-shadow]] — Concept proposed by QC (Qiaochu Yuan). The ironic phenomenon where RLHF's prohibition list (what LLMs must not say) paradoxically catalogs society's shadow (everything sexual, violent, and transgressive). Connects with Jung's shadow, Bataille's transgression theory, Foucault's power theory, Kristeva's abjection. Covers 20+ technical counterparts: HH-RLHF, BeaverTails (14 categories), Do-Not-Answer (61 harms), SORRY-Bench (45 categories), HarmBench (510 behaviors), Llama Guard, Aegis, OpenAI Moderation API, Shadow Alignment, etc. Describes 6 amplification mechanisms: category fission acceleration, guardrail multi-layering, training/evaluation circulation, platform differences, Shadow weaponization, and over-refusal expansion.
 - [[concepts/software-after-software]] — Amp Labs manifesto (May 2026): 12 theses on post-AI software industry transformation. Code no longer scarce; software shifts to agent-facing; value moves to data/permissions/trust; winners reorganize around models; institutions need frontier teams.
 - [[concepts/sp500-ai-exclusion]] — S&P 500 AI Company Exclusion — June 2026 watershed: S&P Dow Jones Indices rejects accelerated entry for SpaceX ($1.75T IPO), also blocking OpenAI and Anthropic. Profitability requirements, 10% IWF minimum, 12-month seasoning period upheld despite MegaCap consultation. Exposes gap between AI industry narrative (trillion-dollar valuations) and financial reality (unprofitable, $29B SpaceX debt). Nasdaq-100 and Russell Top 500 accepted accelerated entry. Cross-references: [[concepts/ai-bubble-economics]], [[entities/openai]], [[entities/anthropic]], [[concepts/token-economics]].
