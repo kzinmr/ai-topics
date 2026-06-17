@@ -3,7 +3,7 @@ title: Georgi Gerganov
 type: entity
 handle: "@ggerganov"
 created: 2026-04-13
-updated: 2026-04-14
+updated: 2026-06-17
 status: L3
 tags:
   - person
@@ -13,7 +13,8 @@ tags:
   - quantization
   - huggingface
   - open-source
-sources: []
+sources:
+  - https://simonwillison.net/2026/Jun/16/georgi-gerganov/
 ---
 
 
@@ -88,11 +89,20 @@ In February 2026, ggml.ai (Gerganov, Xuan-Son Nguyen, Aleksander Grygier) joined
 
 > "Our shared goal is to provide the community with the building blocks to make open-source superintelligence accessible to the world over the coming years." — HF/GGML Joint Blog Post
 
+### Local Coding Workflow
+
+Since early 2026, Gerganov has been using **Qwen3.6-27B** as his daily coding companion. As of June 2026, he reports using it almost daily for the past month and a half, running on both his **M2 Ultra** workstation and his **RTX 5090** box. He primarily deploys it for small, mundane coding tasks within the ggml-org ecosystem.
+
+His setup is ruthlessly minimal — a hallmark of his engineering philosophy. The lightweight harness is built around **pi agent** with everything stripped away: `pi -nc --offline` (no context, fully offline), paired with a short system prompt that aligns the model's output to his coding style.
+
+> "Qwen3.6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily." — Georgi Gerganov (Hacker News, June 2026)
+
 ## Key Quotes
 
 - On AI Belief: *"I was a non-believer a few months ago. Now it's hard to ignore… It seems to be working."* (The Changelog #532)
 - On Quantization: *"For 2-bit quants, one basically wants to use the largest quantized model that would fit in available RAM/VRAM to get the best possible model performance."* (PR #4856)
 - On Simplicity: *"The main problem is making the results reproducible across different CPUs and number of threads... Overall, it is not a simple task to achieve what Fabrice has done."*
+- On Local Coding: *"Qwen3.6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily."* (Hacker News, June 2026)
 
 ## Related People
 
@@ -112,3 +122,4 @@ In February 2026, ggml.ai (Gerganov, Xuan-Son Nguyen, Aleksander Grygier) joined
 - [GitHub: ggerganov/ggml](https://github.com/ggerganov/ggml)
 - [ViewRay A3I Development Blog (co-authored)](https://ibob.bg/blog/2022/01/25/what-we-do-at-viewray)
 - [Llama.cpp Discussion #205: "Inference at the edge"](https://github.com/ggerganov/llama.cpp/discussions/205)
+- [Simon Willison: Georgi Gerganov on local coding with Qwen3.6-27B](https://simonwillison.net/2026/Jun/16/georgi-gerganov/)

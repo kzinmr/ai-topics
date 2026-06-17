@@ -3,7 +3,7 @@ title: gilesthomas
 description: Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technical articles on LLM internals, smolagents, training, and inference optimization. Known for accessible, first-person explanations of complex ML concepts built on hands-on experimentation.
 url: https://gilesthomas.com
 type: entity
-updated: 2026-05-31
+updated: 2026-06-17
 aliases: [gpjt, Giles Thomas]
 tags:
   - person
@@ -14,6 +14,7 @@ sources:
   - https://www.gilesthomas.com/2024/04/about/
   - https://www.gilesthomas.com/2026/05/on-first-looking-into-jax
   - raw/articles/gilesthomas.com--2026-05-on-first-looking-into-jax--472e0e73.md
+  - raw/articles/gilesthomas.com--2026-06-hashing-jax-parameters--d1cdd839.md
   - https://www.gilesthomas.com/personal
   - https://github.com/gpjt
   - https://huggingface.co/gpjt
@@ -102,6 +103,24 @@ Thomas published [On first looking into JAX](https://www.gilesthomas.com/2026/05
 - Frames the exploration through Keats' sonnet "On First Looking into Chapman's Homer" — discovering JAX as a PyTorch veteran is like "a 16th-century European coming back after having discovered something that the people who lived there were perfectly well aware of"
 
 This article represents Thomas expanding his ML framework expertise beyond PyTorch, adding JAX to his hands-on experimentation repertoire alongside his ongoing LLM-from-scratch work.
+
+### Flax Debugging: Making a Hash of Things (June 2026)
+
+Thomas published [Flax debugging: making a hash of things](https://www.gilesthomas.com/2026/06/flax-debugging-making-a-hash-of-things) (June 2026) — a debugging techniques deep-dive documenting a silent training failure in JAX/Flax NNX and the parameter-hashing technique used to diagnose it.
+
+**The bug:** While training a 77M parameter model with Flax NNX, loss stayed flat at ~10.82 (random guess level) despite a seemingly correct training loop. Root cause: using `@jax.jit` instead of `@nnx.jit` on the training step function. With `@jax.jit`, NNX's in-place parameter updates silently failed — the JIT compiler couldn't handle NNX's reference-based state management.
+
+**The debugging technique:** Thomas developed a parameter hashing approach to verify that model weights were actually changing:
+```python
+import numpy as np
+def hash_params(model):
+    return hash(np.asarray(model.token_embedding.embedding.value).tobytes())
+```
+Comparing hashes before and after training steps definitively confirmed that parameters weren't being updated.
+
+**The fix:** Switching to `@nnx.jit` resolved the issue. Loss dropped from 10.82 (random guess level) to 0.000 after 10K iterations.
+
+**Key takeaway:** `@jax.jit` and `@nnx.jit` are not interchangeable — NNX requires its own JIT wrapper. Parameter hashing is a lightweight, effective technique for verifying gradient application in JAX training loops.
 
 ## Writing Style & Philosophy
 

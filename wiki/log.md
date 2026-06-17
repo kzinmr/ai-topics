@@ -1,3 +1,12 @@
+## 2026-06-17 — blog-wiki-ingest (07:50 UTC)
+
+- **Pages Updated (3 reference items):**
+  - `entities/georgi-gerganov.md` — Added Local Coding Workflow section (Qwen3.6-27B daily usage, pi agent lightweight harness). Updated 2026-06-17.
+  - `entities/steve-blank.md` — Added Spring 2026 Stanford Lean LaunchPad AI data (8 teams, 978 interviews, "team hallucination" observation). Updated 2026-06-17.
+  - `entities/gilesthomas.md` — Added Flax Debugging: Making a Hash of Things subsection under JAX Exploration (parameter hashing debugging technique, @jax.jit vs @nnx.jit pitfall). Updated 2026-06-17.
+- **Articles archived:** All 20 blog articles from ingest checkpoint processed (3 reference, 17 skip — already archived in pipeline).
+- **Triage checkpoint:** blog-triage JSON recovered from pipeline checkpoint despite cron output parse failure.
+
 ## [2026-06-17] Newsletter wiki ingest
 
 - **Action**: Enriched entity and concept pages with SemiAnalysis RL Systems article data

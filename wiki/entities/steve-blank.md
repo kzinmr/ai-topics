@@ -7,7 +7,7 @@
 title: Steve Blank
 type: entity
 created: 2026-04-09
-updated: 2026-06-03
+updated: 2026-06-17
 tags:
   - person
   - blogger
@@ -124,6 +124,9 @@ The class design principle is a **guided illusion**: appears hands-on but is tig
 Blank has pragmatically adopted AI in his own teaching and research workflow. His testing in Stanford classes revealed that:
 - **ChatGPT** excels at summarization, stakeholder mapping, mock interviews, and prompt optimization
 - **Claude** is superior for conversational writing, email drafting, and translation
+- **Spring 2026 Stanford Lean LaunchPad** — the first year where all 8 teams used AI across 978 customer interviews. Teams employed: Claude + Granola (everyone), Claude Code, ChatGPT, Gemini, Replit, Lovable, Perplexity, Listen Labs, Viewpoints AI, and Google NotebookLM
+- **Key finding**: AI accelerates MVP creation to hours, causing students to confuse a polished product with product/market fit. Blank observed: *"It wasn't the AI that was hallucinating — it was teams. They pivoted late as they assumed that a polished product meant product/market fit."*
+- **Next iteration recommendation**: Students should arrive with prototypes accompanied by explicit hypotheses and experiments
 - **AI's real value** is not in generating novel ideas but in **accelerating the hypothesis testing loop** — the core Customer Development activity
 
 This mirrors his broader philosophy: AI is a **force multiplier for learning velocity**, not a replacement for customer insight.
