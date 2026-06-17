@@ -5,6 +5,7 @@
 - **Cross-references:** [[entities/microsoft-agent-framework]], [[entities/microsoft]], [[concepts/langgraph]], [[concepts/crewai]], [[concepts/openai/agents-sdk]], [[concepts/multi-agents/multi-agent]], [[concepts/multi-agents/agent-orchestration-frameworks]], [[concepts/microsoft-agent-governance-toolkit]], [[concepts/mcp]].
 - **Index updated:** Entry inserted alphabetically at concepts section.
 
+---
 ## 2026-06-17 — sovereign-ai concept page creation
 
 - **Page Created:** `concepts/sovereign-ai.md` — Comprehensive concept page covering national LLM initiatives (GPT-NL, GPT-SW3, Rio/Nex-N2 controversy), drivers (data sovereignty, strategic autonomy, economic competitiveness, national security), infrastructure (sovereign cloud, on-premise, datacenter sovereignty debate), Cohere's sovereign AI push (Reliant AI acquisition, Indra Group MOU), challenges (model quality vs independence, cost, talent shortage, model merge controversies), and relationship to EU AI Act and AI regulation.
@@ -12,6 +13,7 @@
 - **Cross-references:** [[entities/cohere]], [[entities/mistral-ai]], [[concepts/eu-ai-act]], [[concepts/ai-regulation-2026]], [[concepts/korean-ai]], [[concepts/enterprise-ai-operating-model]].
 - **Index updated:** concepts/sovereign-ai added to index.md under Concepts section (alphabetical order).
 
+---
 ## 2026-06-17 — blog-wiki-ingest (07:50 UTC)
 
 - **Pages Updated (3 reference items):**
@@ -21,6 +23,7 @@
 - **Articles archived:** All 20 blog articles from ingest checkpoint processed (3 reference, 17 skip — already archived in pipeline).
 - **Triage checkpoint:** blog-triage JSON recovered from pipeline checkpoint despite cron output parse failure.
 
+---
 ## [2026-06-17] Newsletter wiki ingest
 
 - **Action**: Enriched entity and concept pages with SemiAnalysis RL Systems article data
@@ -33,6 +36,7 @@
   - `index.md` — updated SemiAnalysis entity entry description with RL Systems, key people, research areas
 - **Key details**: SemiAnalysis RL Systems article introduces generator/trainer throughput matching, PipelineRL asynchrony with in-flight weight pushing, queue model for production rate balancing, sandbox challenges (startup latency via Modal, concurrency scaling, robustness), group size guidelines (N=8/16/64), and throughput optimizations (early pruning, adaptive sampling). Collaborators include Prime Intellect (Matej Sirovatka, Ameen Patel, Sami Jaghouar) and Modal (Peyton Walters, Nan Jiang, Erik Dunteman).
 
+---
 ## [2026-06-17] Newsletter wiki ingest
 
 - **Action**: Enriched GLM-5 entity page with GLM-5.2 data; created IndexShare concept page
@@ -44,6 +48,7 @@
   - `concepts/index-share.md` — IndexShare technique extending DeepSeek Sparse Attention, reuses one indexer across four sparse layers
 - **Key details**: GLM-5.2 released June 17, 2026 by Z.ai. 744B MoE, MIT license, 1M context, two reasoning modes (high/max), IndexShare for sparse attention efficiency, MTP speculative decoding improvements
 
+---
 ## [2026-06-17] Zvi Mowshowitz — Entity Page Creation
 
 - **Action**: Created entity page for Zvi Mowshowitz / Don't Worry About the Vase blog
@@ -54,6 +59,7 @@
   - `config/feeds/blogs.opml` — added RSS feed for blog monitoring (85 blogs total)
 - **Key details**: Substack primary + WordPress mirror, ~5 posts/week, weekly AI numbered series, deep model welfare coverage
 
+---
 ## [2026-06-17] OpenAI Insider Reflections — Concept Page Creation
 
 - **Action**: Created concept page for OpenAI insider reflections article
@@ -64,6 +70,7 @@
   - `raw/articles/openai-reflections.md` — raw article saved
 - **Key details**: Calvin French-Owen's firsthand account (Segment founder → OpenAI engineer, 2024-2025). Covers Slack-centric communication, bottom-up research culture, meritocracy, rapid direction changes, secrecy, safety focus, Meta→OpenAI pipeline, and Codex launch details (630K PRs in 53 days).
 
+---
 ## [2026-06-17] ChatGPT Memory Dreaming — Concept Page Creation
 
 - **Action**: Created concept page for ChatGPT memory dreaming system
@@ -73,6 +80,7 @@
   - `index.md` — added concept entry (alphabetically between aws-bedrock-partnership and frontier-governance-framework)
 - **Key details**: Automatic memory synthesis from conversation history, addresses staleness/correctness/scalability, evolution from explicit saved memories (2024) to background dreaming (2025) to standalone system (2026). Evaluations show improved context carry-forward, preference following, and temporal awareness.
 
+---
 ## [2026-06-17] OpenAI WebRTC Audio Session — Concept Page Creation
 
 - **Action**: Created concept page for OpenAI WebRTC audio session playground
@@ -82,6 +90,7 @@
   - `index.md` — added concept entry (alphabetically between tanstack-supply-chain-2026 and openclaw)
 - **Key details**: Simon Willison's tool demonstrating OpenAI's WebRTC API for realtime audio interactions. Supports GPT-Realtime-2 model with GPT-5-class reasoning and document context for conversational exploration of text content.
 
+---
 ## [2026-06-17] OpenAI vs Anthropic Enterprise Adoption — Concept Page Creation
 
 - **Action**: Created concept page for enterprise adoption patterns comparison
@@ -91,6 +100,7 @@
   - `index.md` — added concept entry (alphabetically between chatgpt-memory-dreaming and frontier-governance-framework)
 - **Key details**: Enterprise adoption pattern where ChatGPT serves as organization-wide default while Claude is ring-fenced for power users due to variable-cost fear and capability mismatch perception.
 
+---
 ## [2026-06-17] AI for Alzheimer's Initiative — Concept Page Creation
 
 - **Action**: Created concept page for OpenAI Foundation's Alzheimer's research initiative
@@ -100,6 +110,7 @@
   - `index.md` — added concept entry (alphabetically between agents-sdk and aws-bedrock-partnership)
 - **Key details**: Five-layer research stack: causal mapping, drug design, biomarker discovery, clinical collaboration, off-patent treatment testing. Collaborators include Arc Institute, University of Washington, UCSF, Harvard Medical School.
 
+---
 ## [2026-06-17] Economic Futures in the Age of AI — Concept Page Creation
 
 - **Action**: Created concept page for OpenAI Foundation's economic futures initiative
@@ -109,6 +120,7 @@
   - `index.md` — added concept entry (alphabetically between enterprise-adoption-patterns and frontier-governance-framework)
 - **Key details**: Three pillars: understanding the shift, supporting the transition, and building for long-term economic security. Focus on worker agency, government capacity, and new economic models including sovereign wealth funds and taxation shifts.
 
+---
 ## [2026-06-17] Newsletter wiki ingest
 
 - **Action**: Created entity page for Finbarr Timbers and enriched Nathan Lambert page with post-training recipe interview
@@ -119,6 +131,7 @@
   - `index.md` — added Finbarr Timbers entity entry (between filfre-net and fireworks-ai)
 - **Key details**: MOPD is the dominant 2026 post-training pattern: train N domain-specialist teachers, train one general student by sampling its own trajectories, minimize reverse-KL to the relevant teacher per rollout. Lineage: MiMo Flash v2 → DeepSeek V4 & Nemotron 3 Ultra (10+ teachers).
 
+---
 ## [2026-06-17] Active Crawl — 4 New Pages
 
 **Sources**: HN Algolia, X/Twitter (xurl), blogwatcher DB, wiki gap analysis
@@ -151,3 +164,18 @@
 ### Wiki Gap Analysis
 - HIGH priority gaps addressed: MOPD (concept), Sovereign AI (concept), AG2/AutoGen (concept), Groq (entity)
 - Remaining HIGH gaps: NVIDIA ENPIRE (no accessible source), RLAIF (concept needed)
+
+---
+
+## 2026-06-17 — wiki-watchdog-fix (17:35 UTC)
+
+- **Auto-fixed (2):**
+  - `index.md` summary line: Total pages 2530→2574, Indexed entries 2530→2183, added Not in index: 391
+  - `log.md`: Added 13 missing `---` separators between consecutive section headers
+- **Verified clean:**
+  - Pipe corruption: 0 | Line prefix corruption: 0 | Triple brackets: 0 | Space prefix: 0
+  - Duplicate entries: 0 | Ghost entries: 0 | Japanese filenames: 0
+  - Log separators: 0 missing | validate_index.py: clean
+- **Deferred (human review):**
+  - `x_accounts` job stale (26h) — last run ~16h UTC Jun 16, needs investigation
+  - 504 missing concept entries in index.md — large batch (>50), needs dedicated pass
