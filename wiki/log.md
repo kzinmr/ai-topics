@@ -44,3 +44,12 @@
 - **Pages updated**:
   - `index.md` — added concept entry (alphabetically between chatgpt-memory-dreaming and frontier-governance-framework)
 - **Key details**: Enterprise adoption pattern where ChatGPT serves as organization-wide default while Claude is ring-fenced for power users due to variable-cost fear and capability mismatch perception.
+
+## [2026-06-17] AI for Alzheimer's Initiative — Concept Page Creation
+
+- **Action**: Created concept page for OpenAI Foundation's Alzheimer's research initiative
+- **Source**: https://openaifoundation.org/news/ai-for-alzheimers
+- **Pages created**: `concepts/openai/ai-for-alzheimers.md` — $100M+ initiative for Alzheimer's research using AI across six institutions
+- **Pages updated**:
+  - `index.md` — added concept entry (alphabetically between agents-sdk and aws-bedrock-partnership)
+- **Key details**: Five-layer research stack: causal mapping, drug design, biomarker discovery, clinical collaboration, off-patent treatment testing. Collaborators include Arc Institute, University of Washington, UCSF, Harvard Medical School.
