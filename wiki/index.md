@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-18 | Total pages: 2579 | Indexed entries: 2188 | Not in index: 391 | Entities: 815 | Concepts: 1720
+> Last updated: 2026-06-18 | Total pages: 2585 | Indexed entries: 2585 | Not in index: 0 | Entities: 820 | Concepts: 1720
 
-## Entities (814 pages)
+## Entities (820 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -875,7 +875,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1718 pages)
+## Concepts (1720 pages)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/axe-framework]] — Axe Framework — Lightweight CLI for single-purpose AI agents following Unix philosophy, TOML configuration, sub-agent delegation with depth limiting, persistent memory, SSRF protection, token budgets.
@@ -1386,6 +1386,7 @@
 - [[concepts/enterprise-ai-deployment-jv]] — Both OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B with Blackstone/Goldman Sachs) forming JVs with PE firms to build deployment services arms. Model competition expanding to deployment competition.
 - [[concepts/enterprise-ai-operating-model]] — IBM's four-pillar framework (Think 2026): Agents, Data, Automation, Hybrid. watsonx Orchestrate multi-agent control plane, IBM Confluent real-time data, IBM Sovereign Core governance.
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns — How large organizations successfully deploy AI at scale.
+- [[concepts/enpire]] — ENPIRE (Agentic Robot Policy Self-Improvement) — NVIDIA GEAR Lab system where coding agents autonomously develop robot manipulation policies through an environment loop with auto-evaluation and auto-reset.
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
 - [[concepts/epd-disaggregation]] — EPD Disaggregation — Separating Expert Parallelism, Pipeline Parallelism, and Data Parallelism for MoE training.
 - [[concepts/erdos-unit-distance-problem]] — OpenAI's internal model disproved the 80-year-old Erdős unit distance conjecture (1946) on 2026-05-21. Counterexample via high-dimensional lattice→plane projection. First AI mathematical result that "would be top-journal worthy if done by humans alone."
@@ -1473,6 +1474,8 @@
 - [[concepts/glass-slipper-effect]] — Glass Slipper Effect — Phenomenon where AI-generated solutions are accepted despite suboptimal quality due to ease of deployment.
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/glm-5-1]] — GLM-5.1 — Z.AI latest GLM model. Next-gen open-weights LLM from Chinese AI lab.
+- [[concepts/glm-5-2]] — GLM-5.2 — 744B MoE open-weights LLM (40B active, MIT license, 1M context) from Z.AI/Zhipu AI; #1 open-weights on Artificial Analysis Intelligence Index v4.1
+
 - [[concepts/glut-of-circuits]] — niplav's (2026) GLUT-of-Circuits model: LLMs are giant lookup-table-like collections of depth-limited, composable error-correcting circuits computed in superposition. Implications for the Agent structure problem, AI alignment, token bottlenecks, and CoT.
 - [[concepts/gnap-git-native-agent-protocol]] — GNAP: Git-Native Agent Protocol — coordinate AI agent teams via git repo. 4 JSON files, zero servers. MIT licensed (farol-team). Complements MCP/A2A.
 - [[concepts/gnu-ai-reimplementations]] — GNU AI Reimplementations — Free software community reimplementations of proprietary AI models and tools.
@@ -1940,6 +1943,7 @@
 - [[concepts/security-and-governance/agent-sandboxing]] — Agent Sandboxing: Isolation Technologies — Docker, gVisor, Firecracker, WASM (Deno+Pyodide), capability-based security spectrum
 - [[concepts/security-and-governance/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
 - [[concepts/security-and-governance/agent-security-landscape-2026]] — Agent Security Landscape (2026): 85% prompt injection success rate against coding agents, defense layers (sandboxing, DLP, runtime enforcement), industry initiatives (Microsoft, Alibaba, Anthropic).
+- [[concepts/security-and-governance/agent-separation-of-duties]] — Agent Separation of Duties — Structural accountability pattern: worker model ≠ evaluator model. Independent convergence by OpenAI (/goal in Codex, Apr 2026) and Anthropic (Claude Code 2.1.139, May 2026). Worker executes; separate model judges completion from transcript. Based on centuries-old accounting separation-of-duties principle.
 - [[concepts/security-and-governance/agentic-ai-governance]] — Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails (Yale CELI, 2026), HITL/HOTL patterns, regulatory alignment.
 - [[concepts/security-and-governance/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
 - [[concepts/security-and-governance/agentic-security]] — Security considerations for AI agents: supply chain attacks, package installation risks, threat model blind spots, cross-domain vulnerability amplification. — Programming language design principles optimized for AI coding agents (compile speed, distribution, runtime) over human readability. Wes McKinney's thesis: Go/Rust > Python for agentic loops.

@@ -1,5 +1,13 @@
 ## 2026-06-18 — SOC Episode 7 Wiki Ingestion (YouTube transcript)
 
+## 2026-06-18 — Agent Separation of Duties concept page created
+
+- **Source**: X/Twitter thread by @aakashgupta (2026-06-18), full article at news.aakashg.com
+- **Raw Article**: `raw/articles/2026-06-18_agent-safety-separation-of-duties.md`
+- **New Page**: `concepts/security-and-governance/agent-separation-of-duties.md` — Agent Separation of Duties concept page. Structural accountability pattern where worker model ≠ evaluator model. Independent convergence by OpenAI (/goal in Codex, Apr 2026) and Anthropic (Claude Code 2.1.139, May 2026). Worker executes; separate model judges completion from transcript. Based on centuries-old accounting separation-of-duties principle. Real-world results: bug backlog cleared in 31 unsupervised turns.
+- **Index**: `index.md` — Added agent-separation-of-duties entry under Concepts > security-and-governance (2580 total, 1721 concepts)
+
+
 - **Source**: [State of Agentic Coding #7](https://youtu.be/QqtW2q9ftu0) — Armin Ronacher and Ben Vinegar (Jun 12, 2026, 94:31)
 - **Transcript**: `transcripts/2026-06-12_state-of-agentic-coding-ep7.md` + `.en.txt` + `.en.vtt` (2,481 segments, ~109K chars)
 - **Raw article**: `raw/articles/2026-06-12_state-of-agentic-coding-ep7.md` — 8 chapters, key insights, notable quotes
@@ -278,3 +286,22 @@
 
 **Deleted:**
 - `concepts/local-llm-inference.md` — Redundant with existing `concepts/local-llm/_index.md`
+
+## 2026-06-18 — ENPIRE concept page created
+
+**Created:**
+- `concepts/enpire.md` — ENPIRE (Agentic Robot Policy Self-Improvement) concept page. NVIDIA GEAR Lab system bridging coding agents (Codex, Claude Code, Kimi Code) with physical robotics through auto-evaluation and auto-reset environment loop. 99% success rate on dexterous manipulation tasks.
+
+**Updated:**
+- `index.md` — Added ENPIRE entry under Concepts section, updated page counts
+
+## 2026-06-18T11:17:44Z — Active Crawl: 3 new concept pages
+
+**Source**: HN Algolia, xurl (X/Twitter), blogwatcher DB, wiki gap analysis
+**Topics discovered**: 15 HN stories, 10 X/Twitter results, 30 wiki gap assessments
+**Pages created**:
+- `concepts/glm-5-2.md` — GLM-5.2: 744B MoE open-weights LLM (40B active, MIT license, 1M context) by Z.AI/Zhipu AI. #1 open-weights on Artificial Analysis Intelligence Index v4.1 (score 51). Sources: Simon Willison, Artificial Analysis, Fireworks AI, AINews.
+- `concepts/enpire.md` — ENPIRE: NVIDIA GEAR Lab's system where coding agents (Codex, Claude Code, Kimi Code) autonomously develop robot manipulation policies via environment loop (auto-eval + auto-reset). 99% success on dexterous tasks. Sources: NVIDIA GEAR Lab, X/@DarthUtopian.
+- `concepts/security-and-governance/agent-separation-of-duties.md` — Agent Separation of Duties: safety architecture pattern independently adopted by OpenAI (/goal in Codex, Apr 2026) and Anthropic (Claude Code 2.1.139, May 2026). Worker-evaluator structural separation. Sources: Aakash Gupta X thread, news.aakashg.com.
+**Raw articles saved**: 6 (3 new + 3 pre-existing referenced)
+**Index/log**: index.md updated with corrected counts (1720 concepts, 820 entities, 2585 total)
