@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-18 | Total pages: 2585 | Indexed entries: 2585 | Not in index: 0 | Entities: 820 | Concepts: 1720
+> Last updated: 2026-06-18 | Total pages: 2599 | Indexed entries: 2599 | Not in index: 0 | Entities: 822 | Concepts: 1732
 
-## Entities (820 pages)
+## Entities (822 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -64,7 +64,7 @@
 - [[entities/groq]] — Groq — AI inference infrastructure company. Custom LPU (Language Processing Unit) ASIC architecture for ultra-low-latency LLM inference. Founded by ex-Google TPU engineers. Competes with GPU-based inference platforms.
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/inspect-ai]] — Inspect AI — Open-source LLM eval framework by JJ Allaire + UK AISI + Meridian Labs. v0.3.239 (Jun 2026), 239 releases, 100+ contributors, adopted by Anthropic/DeepMind/Grok. Dataset/Solver/Scorer pipeline, react() agent, Agent Bridge (Claude Code/Codex/Gemini CLI), sandboxing (Docker/K8s/Modal), 200+ pre-built evals, inspect-scout scanning.
-- [[entities/isaac-flath]] — Isaac Flath — AI product engineer, educator. Pi Harness: RLM + late interaction retrieval (PyLate) + REPL-as-Context. "Retrieval First Agentic Systems." AI Engineering Club founder.
+
 - [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
 - [[entities/jj-allaire]] — JJ Allaire — Founder of Posit (formerly RStudio). Creator of Inspect AI (LLM eval framework, UK AISI collaboration). Design philosophy: Hadley Wickham-inspired clean, composable APIs.
@@ -421,7 +421,6 @@
 - [[entities/ibm-watsonx-orchestrate]] — IBM's multi-agent "agentic control plane" for enterprise — unified governance, policy enforcement, auditability across thousands of agents. Announced Think 2026.
 - [[entities/inclusionai]] — AI company developing agent-optimized LLMs. Flagship model: Ring-2.6-1T (1T MoE, 63B active). Free on OpenRouter for coding agents, tool use, long-horizon tasks.
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
-- [[entities/isaac-flath]] — Isaac Flath — AI product engineer, educator. Pi Harness: RLM + late interaction retrieval (PyLate) + REPL-as-Context. "Retrieval First Agentic Systems." AI Engineering Club founder. 10+ years in AI products, former dance teacher. [[raw/articles/2026-04-26_isaacflath_pi-harness-rlm-late-interaction]]
 - [[entities/isomorphic-labs]] — Isomorphic Labs — Alphabet/DeepMind AI drug discovery spinout. $2.1B Series B (May 2026) led by Thrive Capital. Partnerships with Lilly, Novartis, J&J.
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
@@ -875,7 +874,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1720 pages)
+## Concepts (1732 pages)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/axe-framework]] — Axe Framework — Lightweight CLI for single-purpose AI agents following Unix philosophy, TOML configuration, sub-agent delegation with depth limiting, persistent memory, SSRF protection, token budgets.
@@ -1101,9 +1100,9 @@
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — Claude Agent SDK — SRE Agent Pattern
 - [[concepts/anthropic/dod-dispute]] — Anthropic–DoD Dispute: Ongoing legal confrontation over military use of Claude. Anthropic refused "any lawful use" clause (lethal weapons, mass surveillance), was designated "supply chain risk" (Feb 2026). Sued Pentagon; Judge Lin issued First Amendment injunction. No settlement as of June 2026. D.C. Circuit litigation continues.
 - [[concepts/anthropic/infrastructure-postmortems]] — Two major Anthropic quality degradation postmortems (Aug-Sep 2025: context window misrouting, output corruption, XLA:TPU miscompilation / Mar-Apr 2026: reasoning effort misconfiguration, reasoning history loss bug, redundancy reduction prompts). Common patterns: slow detection, internal eval limitations, privacy constraints.
-- [[concepts/anthropic/managed-agents]] — Anthropic Managed Agents: Fully managed platform that accelerates prototype-to-production by 10×.
 - [[concepts/anthropic/managed-agents]] — Anthropic's REST API-based platform for cloud-hosted autonomous agents at scale. Architecture: "decouple the brain from the hands" — agent loop on Anthropic side, code execution in self-hosted sandboxes (Cloudflare/Modal/Vercel/Daytona). Launched April 2026 with sandbox partnerships announced May 19, 2026.
 - [[concepts/anthropic/memory-tool-cognition-strategic-follow]] — Anthropic's Memory Tool: Cognition's strategic follow-up
+- [[concepts/anthropic/model-context-protocol]]
 - [[concepts/anthropic/multi-agent-research]] — Anthropic Multi-Agent Research System (Claude Research): Orchestrator-Worker pattern, parallel sub-agents, memory mechanism, Tool-Testing Agent. 90.2% performance improvement over single agent, 8 prompt engineering principles, token usage explains 80% of performance variance.
 - [[concepts/anthropic/openclaw-conflict]] — Anthropic-OpenClaw Conflict
 - [[concepts/anthropic/transparency-hub]] — Anthropic Transparency Hub: Model Report (per-model safety evaluations for 10 Claude models, ASL levels, system cards), System Trust and Reporting (1.45M banned accounts, NCMEC reporting, threat intel), and Voluntary Commitments (G7 Hiroshima, Seoul Summit, Christchurch Call, Munich Elections Accord, Thorn child safety, etc.)
@@ -1191,7 +1190,6 @@
 - [[concepts/claude-code/claude-code-source-patterns]] — Claude Code Source Patterns — Leaked Source Analysis
 - [[concepts/claude-code/claude-code-tips]] — Claude Code Tips — Docker/VSCode Dev Container setup for Claude Code with security isolation. Claude Opus 4.8 techniques: mid-conversation system messages, effort parameter tuning (xhigh for long-horizon agents), explicit tool/sub-agent triggering, adaptive thinking steering.
 - [[concepts/claude-code/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
-- [[concepts/claude-design]] — Claude Design
 - [[concepts/claude/design-entity]] — Claude Design Entity — Anthropic Labs product for collaborative visual design powered by Claude Opus 4.7's vision model. Released April 2026 in research preview.
 - [[concepts/claude/designing-loops-with-fable-5]] — Designing loops with Fable 5 — Lance Martin's patterns for maximizing Claude Fable 5 through self-correction loops and memory-managed sessions. Parameter Golf benchmark: Fable 5 improved ~6x more than Opus 4.7. Memory progression: fail → investigate → verify → distill → consult.
 - [[concepts/claude/diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
@@ -1328,7 +1326,6 @@
 - [[concepts/deep-agents]] — Deep Agents: Autonomous AI agents combining multiple architecture patterns.
 - [[concepts/deep-agents-runtime]] — Deep Agents Runtime: Production execution foundation for deep agents (durable execution, memory, multi-agent).
 - [[concepts/deep-learning]] — Deep Learning: Foundations, training paradigm shifts, and ecosystem coverage
-- [[concepts/deep-learning]] — Deep Learning — Neural network-based machine learning paradigm
 - [[concepts/deep-research]] — Deep Research: fundamentally a retrieval problem (BrowseComp-Plus oracle evidence). GPT-4.1 93%→15% accuracy gap. Three evaluation layers (one-shot/session/end-to-end). Part 1+2 of Hornet agentic retrieval series. Academic validation: Meng et al. (arXiv:2602.21456) — BM25 outperforms neural rankers, Q2Q reformulation +7.95%, passage > document retrieval.
 - [[concepts/deep-research-agent-from-scratch]] — Deep Research Agent from Scratch — Build a full research agent in 10 steps starting from raw Gemini API calls. Phase swapping (plan/execute mode switching), deterministic guardrails, dynamic parallel sub-agent launch (Exa search). Ivan Leo (Google DeepMind) + Hugo Bowne-Anderson workshop, March 2026. [[raw/articles/2026-03-28_youtube_deep-research-agent-workshop]]
 - [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
@@ -1512,11 +1509,9 @@
 - [[concepts/gpt/gpt-5-5-spud]] — GPT-5.5 "Spud" — OpenAI internal model. Post-training of GPT-5.5 class. Pre-training completed March 2026.
 - [[concepts/gpt/gpt-5-5-system-card]] — GPT-5.5 System Card (Apr 2026): Complex real-world work. First model with zero sandbagging (Apollo Research).
 - [[concepts/gpt/gpt-5-codex-system-card]] — GPT-5-Codex System Card (Oct 2025): RL-trained coding agent, sandboxing (Seatbelt/seccomp+landlock).
-- [[concepts/gpt/gpt-5-system-card]] — GPT-5 System Card (Aug 2025): Unified system (fast+reasoning+router). Safe-completions. Bio/Chem High.
 - [[concepts/gpt/gpt-5-system-card]] — GPT-5 System Card (Aug 2025): Unified system architecture (gpt-5-main + gpt-5-thinking + router). Introduces safe completions replacing hard refusals. First model to classify gpt-5-thinking as Bio/Chem High (precautionary). Preparedness Framework: Bio/Chem High, Cyber/Self-Improvement below High. CoT monitorability evaluations, sandbagging research update. External evals by SecureBio, METR, Apollo Research, Pattern Labs, government red teaming.
 - [[concepts/gpt/gpt-chatgpt-agent-system-card]] — ChatGPT Agent System Card (Jul 2025): Deep Research + Operator + Terminal. Bio/Chem High (precautionary).
 - [[concepts/gpt/gpt-chatgpt-images-2-0-system-card]] — ChatGPT Images 2.0 System Card (Apr 2026): Thinking mode for image gen, web search integration.
-- [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): o3-based agentic web browsing. All Preparedness categories LOW.
 - [[concepts/gpt/gpt-deep-research-system-card]] — Deep Research System Card (Feb 2025): OpenAI's first agentic browsing product. Fine-tuned o3 with autonomous web browsing loop (search→browse→note→iterate→report). All Preparedness categories LOW. Key risks: prompt injection (extensive red-teaming), sandboxed browsing (no code execution, no downloads). HLE ~26.6%. Predecessor to ChatGPT Agent.
 - [[concepts/gpt/gpt-deployment-safety-hub]] — OpenAI Deployment Safety Hub (deploymentsafety.openai.com): Central index for all 19 OpenAI system cards (Feb 2025–Jun 2026). Preparedness Framework evaluations across Bio/Chem, Cybersecurity, AI Self-Improvement. Key trends: safety level escalation (first Cyber High with GPT-5.3-Codex), agentic model proliferation (5 Codex cards), domain-specific deployment (GPT-Rosalind-5.5).
 - [[concepts/gpt/gpt-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
@@ -1828,7 +1823,6 @@
 - [[concepts/post-training/grpo]] — Group Relative Policy Optimization: RL algorithm introduced in DeepSeek-R1. Eliminates PPO's critic model, removing the computational bottleneck for large-scale model RL training. Estimates advantages via within-group relative comparison.
 - [[concepts/post-training/grpo-infrastructure]] — GRPO Infrastructure — VRAM napkin math (10× rule), PPO vs GRPO tradeoffs, GPU architecture patterns (swapping vs overlapping), LoRA for GRPO (beta=0 shortcut), async RL, key gotchas (temp=1, reward std dev collapse). From MCP-RL course.
 - [[concepts/post-training/grpo-memory-modeling]] — GRPO Memory Modeling — Model copies during GRPO training (actor, reference, reward, rollout). Memory savings from LoRA (100x param reduction), beta=0 (reference elimination), rule-based rewards, quantized reference. Practical 7B budget: 98GB baseline → 28GB optimized.
-- [[concepts/post-training/grpo-rl-training]] — GRPO RL Training — Group Relative Policy Optimization: RL algorithm eliminating critic model. Foundation for reasoning and agent training.
 - [[concepts/post-training/grpo-rl-training]] — GRPO (Group Relative Policy Optimization) — RL algorithm devised by DeepSeek. No critic needed, within-group relative advantage computation. Popularized by DeepSeek-R1, became the standard RL backbone for reasoning and agent training. Foundation for SDAR and MOPD.
 - [[concepts/post-training/hands-on-modern-rl]] — Hands-On Modern RL — Open-source, practice-first curriculum for modern reinforcement learning. Covers classic control to LLM post-training (RLHF, DPO, GRPO), RLVR, and multimodal agent systems. Created by walkinglabs.
 - [[concepts/post-training/instruction-fine-tuning]] — Instruction Fine-Tuning (IFT) — Supervised fine-tuning on instruction-response pairs. Foundation of post-training pipeline.
@@ -2118,7 +2112,7 @@
 - [[raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms]] — Search with Agents Lesson 6: Recursive Language Models. Two-part lecture: (1) RLMs applied to search — REPL-based agents with stateful variables, patent search, recursive `llm_query()`. (2) Agent-Driven Ranker Optimization — iterative code editing with Edit model, NDCG eval on train/test splits, guardrails against overfitting. Companion: [[concepts/agent-driven-ranker-optimization]], [[concepts/rlm-recursive-language-models]]
 - [[raw/articles/2026-06-04_softwaredoug_exhaustive-search-beam-search]] — Exhaustive Search (Supplement Lecture) — Cheat at Search with Agents. Generalized harness (stoppers/validators/tools), filesystem-metaphor search (ls/grep/cat/find), BEAM search as systematic directory traversal, subagent-as-tool composition, orchestrator pattern, expert gathering with patent search + NAICS classification + embedding-based local search, personality tracking across runs. Companion: [[concepts/exhaustive-agentic-search]]
 - [[raw/articles/2026-06-08_softwaredoug_three-kinds-of-agentic-search]] — Three kinds of agentic search — Doug Turnbull. Practitioner taxonomy of three paradigms by agent agency: (1) Agent-Assisted (query wrapper, search unchanged), (2) Agent-Driven (multi-step retrieval loops, Perplexity/AI Overviews), (3) Agent-Native (infrastructure designed for agents: structured results, APIs, semantic indexing at fact level, provenance tracking). Key: organizations need all three; "search quality becomes agent quality." Companion: [[concepts/agentic-search]]
-- [[transcripts/2026-06-02_softwaredoug_cheat-at-search-long-running-search-lecture]] — Long Running Search Agents lecture transcript. Discussion on context vs memory, local index, frontier exploration, access control.
+
 - [[raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge]] — Notes on Choosing a Rubric Judge — The LLM Data Company. Rubric judges for non-verifiable RL training: full-rubric grading > per-criterion grading, gpt-oss-120b matches Opus 4.7 at 100× lower cost, criteria design critical for reward hacking prevention. Companion: [[concepts/evaluation/llm-search-judge]], [[concepts/evaluation/llm-as-judge]]
 
 - [[raw/articles/2026-06-07_sp500-ai-company-exclusion]] — S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic (Ars Technica, June 6 2026). HN #1 at 1412 pts. S&P Dow Jones Indices refuses to bend profitability/IWF/seasoning rules for MegaCap IPOs.

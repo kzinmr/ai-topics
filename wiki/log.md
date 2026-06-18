@@ -305,3 +305,12 @@
 - `concepts/security-and-governance/agent-separation-of-duties.md` — Agent Separation of Duties: safety architecture pattern independently adopted by OpenAI (/goal in Codex, Apr 2026) and Anthropic (Claude Code 2.1.139, May 2026). Worker-evaluator structural separation. Sources: Aakash Gupta X thread, news.aakashg.com.
 **Raw articles saved**: 6 (3 new + 3 pre-existing referenced)
 **Index/log**: index.md updated with corrected counts (1720 concepts, 820 entities, 2585 total)
+
+---
+
+## 2026-06-18 — Wiki watchdog auto-fix
+
+- **Auto-fixed**: Removed 8 duplicate entries from index.md (managed-agents, claude-design, deep-learning, gpt-5-system-card, gpt-deep-research-system-card, grpo-rl-training, isaac-flath, transcripts cheat-at-search)
+- **Auto-fixed**: Updated index header counts to match actual files (822 entities, 1732 concepts, 2599 total)
+- **Pipeline health**: No pipeline_watchdog alerts. No wiki_health report found. Graph analysis (2026-06-12) identified 329 thin pages and 10 high-similarity pairs — needs human review.
+- **Note**: ~516 concept pages and ~9 entity pages exist on filesystem but lack index.md entries — index regeneration recommended.
