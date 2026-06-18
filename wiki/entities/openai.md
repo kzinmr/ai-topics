@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-16
+updated: 2026-06-18
 tags:
   - company
   - model
@@ -293,6 +293,21 @@ OpenAI launched a comprehensive biodefense action plan on June 4, 2026, aimed at
 **Strategic goals**: Enable societies to detect biological threats sooner, develop countermeasures more rapidly, and respond to crises with greater confidence and coordination.
 
 Source: [raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md](https://openai.com/index/biodefense-in-the-intelligence-age/)
+
+### Near-Autonomous AI Chemist (June 2026)
+
+OpenAI, working with Molecule.one, connected GPT-5.4 to **Maria** — an agentic chemistry AI integrated with a high-throughput laboratory — to autonomously improve Chan-Lam coupling reactions for medicinal chemistry:
+
+- **Result**: Identified TEMPO as a surprising additive that improved yields for 88% of boronic acids and 83% of sulfonamides tested
+- **Scale**: Maria ran 10,080 reactions (equivalent to a decade of manual work) across two experimental cycles
+- **Process**: Three-month near-autonomous research cycle (March–June 2026). GPT-5.4 proposed hypotheses, Maria designed and ran experiments, human chemists provided steering and bench-scale validation
+- **Validation**: 11 of 14 substrate pairs showed higher yields at bench scale; 4 external chemistry experts confirmed novelty
+- **Follow-up**: TEMPO could be replaced by cheaper 4-hydroxy-TEMPO with little performance loss
+- **Limitations**: Human judgment remained essential; results may not generalize beyond the specific reaction class
+
+This represents a concrete example of AI-as-scientific-partner: the model proposed a non-obvious hypothesis (mild oxidants for sulfonamide coupling) that human chemists found surprising, then validated it at scale.
+
+Source: [raw/articles/openai.com--index-ai-chemist-improves-reaction--f8a3c2d1.md](https://openai.com/index/ai-chemist-improves-reaction)
 
 ### ChatGPT Lockdown Mode (June 2026)
 

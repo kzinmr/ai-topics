@@ -1,10 +1,10 @@
 ---
 title: "Kimi K2.7-Code"
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-18
 type: concept
 tags: [kimi, moonshot, code-model, coding-agents, reasoning, token-economics, open-source, model, open-weight, mixture-of-experts, moe, inference]
-sources: [raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code.md]
+sources: [raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code.md, raw/articles/together.ai--blog-kimi-k2-7-code-vs-claude-fable-5--42700c0e.md]
 ---
 
 # Kimi K2.7-Code
@@ -80,6 +80,17 @@ Model ID: `accounts/fireworks/models/kimi-k2p7-code`
 K2.7-Code differs from [[concepts/kimi-k2-5|Kimi K2.5]] and K2.6 not in architecture but in optimization focus. While K2.5 and K2.6 emphasized benchmark leadership and multimodal capability, K2.7-Code is explicitly tuned for **agentic code generation economics** — making long-horizon coding agents cheaper and faster to run, not just scoring higher in isolation.
 
 The key competitive insight: K2.7-Code's rate card is nearly identical to K2.6's, but its **cost per finished task is meaningfully lower** due to the token efficiency gains. In an ecosystem where coding agents routinely consume billions of tokens per day across parallel tasks, this efficiency compounds rapidly.
+
+## Cost Comparison: Together AI Experiment (June 2026)
+
+Together AI ran an empirical comparison between Kimi K2.7 Code and Claude Fable 5 for landing page generation:
+
+- **Cost advantage**: Kimi K2.7 Code cost ~94% less than Claude Fable 5 (~16x cheaper on average)
+- **Specific example**: B2B SaaS landing page cost $0.04 with Kimi vs $1.09 with Claude Fable (~27x cheaper)
+- **Quality gap**: Claude Fable scored higher on GPT-5.5-judged rubric, but Kimi remained competitive on design, structure, and page quality
+- **Design MCP server pattern**: Biggest quality improvement came from providing Kimi with visual inspiration via a custom MCP server containing screenshots of well-designed landing pages
+- **100-page scenario**: Generating 100 pages would save ~$94 with Kimi vs Fable
+- Source: raw/articles/together.ai--blog-kimi-k2-7-code-vs-claude-fable-5--42700c0e.md
 
 ## Related Pages
 

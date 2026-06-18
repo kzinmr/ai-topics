@@ -1,29 +1,29 @@
 ---
 title: "Hill-Climbing Machine"
 type: concept
-created: 2026-06-17
-updated: 2026-06-17
+created: 2026-06-18
+updated: 2026-06-18
 tags:
-  - methodology
-  - optimization
   - scaling
-  - reinforcement-learning
+  - optimization
+aliases: []
 sources:
-  - https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf
+  - [MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)
 ---
-
 # Hill-Climbing Machine
 
-The Hill-Climbing Machine is a development framework used by Microsoft AI to treat AI model improvement as a system-level optimization problem.
+The Hill-Climbing Machine is a development framework introduced by the Microsoft AI Team that treats model development as a system-level optimization problem.
 
-## Core philosophy
-The goal is to move away from manual model iteration toward an automated, empiricalTechnical where performance is improved through continuous "climbs" in data pipelines, infrastructure, and reinforcement learning.
+## Core Principles
+- **Learned, Not Inherited**: Capabilities should be learned through iterative improvement rather than inherited via distillation from larger models.
+- **Simple and Sustainable**: Focus on simple, scalable recipes, clean data, and transparent infrastructure.
+- **Scientific Rigor**: Every decision must be testable through data-driven ladders, ablations, and evaluations.
 
-## Key components
-- **Scaling-focused framework**: Empirically-driven decisions for pre- Training and architecture.
-- **Robust RL recipes**: Iterative reinforcement learning designed to sustain log-linear performance gains over thousands of steps.
-- **Integrated loop**: Combines data pipelines, infrastructure, RL environments, and evaluation suites into a single Cycle.
+## Implementation
+The process involves a scaling-focused framework for:
+1. **Pre-training**: Empirically-driven iterative improvements to architecture and data.
+2. **Reinforcement Learning**: A robust enough recipe for sustained log-linear performance climbs over thousands of steps.
+3. **Infrastructure**: Building data pipelines and training infrastructure that turn development into an empirical optimization loop.
 
-## Related Entities
-- [[entities/microsoft-ai-team]]
-- [[concepts/mai-thinking-1]]
+## Sources
+- [MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)

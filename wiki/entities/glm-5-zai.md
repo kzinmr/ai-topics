@@ -2,7 +2,7 @@
 title: GLM-5 (Z.ai)
 type: entity
 created: 2026-04-10
-updated: 2026-06-17
+updated: 2026-06-18
 tags:
 - entity
 - model
@@ -18,6 +18,7 @@ related:
 - llm-benchmarks
 sources:
 - raw/articles/2026-06-17_ainews_glm-52-indexshare.md
+- raw/articles/simonwillison.net--2026-jun-17-glm-52--41b7cb7d.md
 ---
 
 # GLM-5 (Z.ai)
@@ -69,3 +70,14 @@ Transformers, vLLM, SGLang, Cloudflare Workers AI, OpenRouter, Ollama Cloud, Bas
 
 ## Sources
 - raw/articles/2026-06-17_ainews_glm-52-indexshare.md
+- raw/articles/simonwillison.net--2026-jun-17-glm-52--41b7cb7d.md
+
+## Independent Review: Simon Willison (June 17, 2026)
+
+Simon Willison reviewed GLM-5.2 and highlighted several key findings:
+
+- **Artificial Analysis Intelligence Index**: GLM-5.2 ranked #1 open weights model at 51 points, ahead of MiniMax-M3 (44), DeepSeek V4 Pro (max, 44), and Kimi K2.6 (43)
+- **Code Arena WebDev**: #2 overall, behind only Claude Fable 5 — impressive given the model lacks image input
+- **Token hunger**: Uses 43k output tokens per Intelligence Index task (vs GLM-5.1 26k, MiniMax-M3 24k, Kimi K2.6 35k, DeepSeek V4 Pro 37k)
+- **Pricing via OpenRouter**: ~$1.40/M input, ~$4.40/M output from 9 providers. For comparison: GPT-5.5 is $5/$30, Claude Opus 4.5-4.8 is $5/$25
+- **SVG generation**: Strong pelican on bicycle (self-contained animated SVG), but disappointing opossum on e-scooter (step down from GLM-5.1)

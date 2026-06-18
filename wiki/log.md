@@ -1,5 +1,18 @@
 
 ---
+## 2026-06-18 — Blog ingest triage (20 articles, 4 takes)
+
+- **Triage**: 20 blog articles from 2026-06-17 blog-ingest checkpoint. 4 takes, 4 references, 12 skips.
+- **New Page**: `concepts/ai-benchmarks/lifescibench.md` — OpenAI LifeSciBench benchmark (750 tasks, 173 Ph.D. contributors, 7 workflows, 7 biological domains). GPT-Rosalind 36.1% vs GPT-5.5 25.7% pass rate.
+- **Updated**: `entities/glm-5-zai.md` — Added Simon Willison's independent review (Artificial Analysis #1, Code Arena #2, pricing, token hunger).
+- **Updated**: `concepts/kimi-k2-7-code.md` — Added Together AI cost comparison (94% cheaper than Fable 5, design MCP server pattern).
+- **Updated**: `entities/openai.md` — Added Near-Autonomous AI Chemist section (GPT-5.4 + Molecule.one Maria, Chan-Lam coupling, TEMPO additive, 10K reactions).
+- **Rescraped**: `raw/articles/openai.com--index-ai-chemist-improves-reaction--f8a3c2d1.md` — Original scrape failed (403), rescued with user-agent header.
+- **Checkpoint**: `~/.hermes/cron/data/blog_ingest/triage_latest.json` saved for downstream blog-wiki-ingest.
+
+---
+
+---
 ## 2026-06-18 — Deployment Simulation concept ingestion (OpenAI + Sierra)
 
 - **Raw Articles Created**: `raw/articles/2026-06-11_openai_deployment-simulation.md`, `raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md`

@@ -1,32 +1,29 @@
 ---
 title: "MAI-Thinking-1"
 type: concept
-created: 2026-06-17
-updated: 2026-06-17
+created: 2026-06-18
+updated: 2026-06-18
 tags:
-  - model
-  - reasoning
+  - microsoft
   - moe
-  - reinforcement-learning
+  - reasoning-model
+  - scaling
+aliases: []
 sources:
-  - https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf
+  - [MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)
 ---
-
 # MAI-Thinking-1
 
-MAI-Thinking-1 is a frontier reasoning model developed by the Microsoft AI Team, designed for high performance in STEM and coding tasks.
+MAI-Thinking-1 is a powerful reasoning model developed from scratch by the Microsoft AI Team. It is designed to compete with frontier models on STEM reasoning and coding tasks.
 
-## Technical Specifications
-- **Architecture**: 35B active / 1T total parameter Mixture of Experts (MoE).
-- **Training**: Developed from scratch using clean, enterprise-grade data (no distillation from third-party models).
-- **Context Length**: 256K tokens.
-- **Performance**: Achieved 52.8% on SWE-Bench Pro and 97.0% on AIME 2025.
+## Technical Details
+- **Architecture**: 35B active parameters / 1T total parameter Mixture of Experts (MoE).
+- **Training Strategy**: Trained from scratch on clean, enterprise-grade data without distillation from third-party models.
+- **Methodology**: Utilizes a "hill-climbing machine" approach, leveraging reinforcement learning (RL) for sustained log-linear performance improvement.
+- **Performance**:
+  - SWE-Bench Pro: 52.8%
+  - AIME 2025: 97.0%
+  - LiveCodeBench v6: 87.7%
 
-## Development Methodology
-- **Hill-Climbing Machine**: Built using a framework that treats model development as an empirical optimization loop.
-- **Reinforcement Learning**: Uses specialized RL recipes to teach models to reason via Chains of Thought (CoT) and use external tools.
-- **Specialist Models**: The process produced domain-specific models for STEM reasoning, agentic coding, and helpfulness/safety.
-
-## Related Entities
-- [[entities/microsoft-ai-team]]
-- [[concepts/hill-climbing-machine]]
+## Sources
+- [MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)

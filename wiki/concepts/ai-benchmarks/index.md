@@ -89,6 +89,7 @@ status: active
 - [[concepts/ai-benchmarks/legal-agent-benchmark]] — Legal agent evaluation (Harvey AI)
 - [[concepts/ai-benchmarks/gaia-benchmark]] — General AI assistant
 - [[concepts/ai-benchmarks/freshstack-benchmark]] — RAG evaluation (Hamel Husain)
+- [[concepts/ai-benchmarks/lifescibench]] — LifeSciBench: Life sciences research tasks (OpenAI, 750 tasks)
 
 ## Coding (non-xeophon)
 

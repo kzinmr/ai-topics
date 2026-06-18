@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-17 | Total pages: 2576 | Indexed entries: 2185 | Not in index: 391 | Entities: 813 | Concepts: 1719
+> Last updated: 2026-06-18 | Total pages: 2577 | Indexed entries: 2186 | Not in index: 391 | Entities: 813 | Concepts: 1720
 
 ## Entities (812 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -998,6 +998,7 @@
 - [[concepts/ai-benchmarks/index]] — AI Benchmarks sub-index — Individual benchmark pages organized by category (knowledge, coding, multimodal, function calling, agent).
 - [[concepts/ai-benchmarks/legal-agent-benchmark]] — Legal Agent Benchmark (LAB, Harvey, May 2026): Open-source agent benchmark for complex legal tasks. All-pass grading with behavioral trace analysis. Frontier models complete <10% of tasks; self-correction is strongest success signal (+1.5 points).
 - [[concepts/ai-benchmarks/livecodebench]] — LiveCodeBench — contamination-free coding eval regularly sourced from LeetCode/AtCoder/CodeForces. 4 scenarios: code generation, self-repair, execution prediction. ICLR 2025 Poster.
+- [[concepts/ai-benchmarks/lifescibench]] — LifeSciBench (OpenAI, June 2026) — 750 expert-authored life science research tasks. 173 Ph.D.-level contributors. 7 workflows x 7 biological domains. GPT-Rosalind 36.1% pass rate. Near-autonomous AI chemist validation.
 - [[concepts/ai-benchmarks/mmlu-pro]] — MMLU Pro — Enhanced version of MMLU. 10-choice MC, 12K+ questions, 14 domains. 43% new problems not in original MMLU. LLM-assisted filtering. 16-33% accuracy drop. NeurIPS Spotlight.
 - [[concepts/ai-benchmarks/mmmu]] — MMMU — 11.5K multimodal questions. Sourced from college exams and textbooks. 6 disciplines, 30 subjects, 183 subfields. 30+ image types. GPT-4V 56%, Gemini Ultra 59%. CVPR 2024 Oral.
 - [[concepts/ai-benchmarks/mrcr]] — MRCR — Multi-Round Coreference Resolution. Multi-needle long-context eval. Originated from Google DeepMind's LSQ framework. OpenAI released OSS version. Claude Opus 4.6 at 93% on 8-needle 1M.
