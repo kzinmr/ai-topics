@@ -1,5 +1,6 @@
 ## 2026-06-18 — SOC Episode 7 Wiki Ingestion (YouTube transcript)
 
+---
 ## 2026-06-18 — Agent Separation of Duties concept page created
 
 - **Source**: X/Twitter thread by @aakashgupta (2026-06-18), full article at news.aakashg.com
@@ -17,6 +18,7 @@
 - **Updated**: `wiki/index.md` — Concept page updated to 7 episodes, transcript entry added
 - **Key ep7 themes**: Neither host practices autonomous looping; token spend as unprecedented dollar-correlated metric; Claude credits separating programmatic access; Bun Zig-to-Rust as most significant slop fork; Ruby/Zig as Louisiana French (human-first languages dying); DwarfStar 4 local model breakthrough; memory leak debugging failure (3 engineers, 24hrs, agents wrong); dead internet theory confirmed (90% agent-generated issues); fast fashion of software; concentration of power in 2 countries
 
+---
 ## 2026-06-18 — Blog wiki ingest (recovered from triage failure, 1 reference enriched)
 
 - **Pipeline recovery**: blog-triage upstream failed to parse JSON output. Checkpoint file at `triage_latest.json` contained valid decisions from prior run with 4 takes (already processed), 4 references, 12 skips.
@@ -73,6 +75,7 @@
 - `concepts/evaluation/agent-evaluation-methodology.md` — Added Lee Han-chung evaluation infrastructure framework (RL 5-tuple, rollouts/traces, state infrastructure, checkpoint/replay, evaluation debt). 210→336 lines.
 - `entities/fireworks-ai.md` — Added Inference Providers vs API Routers subsection (direct providers vs proxies, performance analysis, DPA/sovereignty, verification methods). 213→289 lines.
 - `entities/calvin-french-owen.md` — Created entity skeleton from "Reflections on OpenAI." 25 lines.
+---
 ## 2026-06-17 — AG2/AutoGen concept page creation
 
 - **Page Created:** `concepts/ag2-autogen.md` — Comprehensive concept page covering AG2/AutoGen (Microsoft's open-source multi-agent framework). Covers history (v0.2 → v0.4 → AG2 rebrand → maintenance mode), architecture (AgentChat/Core/Extensions/Studio layers), key features (multi-agent conversations, code execution, HITL, tool use, distributed execution), comparison with LangGraph/CrewAI/OpenAI Agents SDK/Microsoft Agent Framework, and adoption & ecosystem context.
@@ -254,6 +257,7 @@
 - **Deferred (human review):**
   - `x_accounts` job stale (26h) — last run ~16h UTC Jun 16, needs investigation
   - 504 missing concept entries in index.md — large batch (>50), needs dedicated pass
+---
 ## 2026-06-17 — Machine Studying article ingestion
 
 ### Created
@@ -270,6 +274,7 @@
 
 - 2026-06-18 update concepts/post-training/rl-algorithms-for-llm-training.md — add GSPO section (arXiv 2507.18071, Qwen Team)
 
+---
 ## 2026-06-18 — Ingest Vicki Boykis "Running local models is good now"
 
 **Source**: https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/
@@ -287,6 +292,7 @@
 **Deleted:**
 - `concepts/local-llm-inference.md` — Redundant with existing `concepts/local-llm/_index.md`
 
+---
 ## 2026-06-18 — ENPIRE concept page created
 
 **Created:**
@@ -295,6 +301,7 @@
 **Updated:**
 - `index.md` — Added ENPIRE entry under Concepts section, updated page counts
 
+---
 ## 2026-06-18T11:17:44Z — Active Crawl: 3 new concept pages
 
 **Source**: HN Algolia, xurl (X/Twitter), blogwatcher DB, wiki gap analysis
@@ -314,3 +321,14 @@
 - **Auto-fixed**: Updated index header counts to match actual files (822 entities, 1732 concepts, 2599 total)
 - **Pipeline health**: No pipeline_watchdog alerts. No wiki_health report found. Graph analysis (2026-06-12) identified 329 thin pages and 10 high-similarity pairs — needs human review.
 - **Note**: ~516 concept pages and ~9 entity pages exist on filesystem but lack index.md entries — index regeneration recommended.
+
+---
+
+## 2026-06-18 — Wiki watchdog auto-fix (2nd run)
+
+- **Auto-fixed**: Removed 1 ghost entry from index.md (`concepts/anthropic/model-context-protocol` — no backing file)
+- **Auto-fixed**: Added 7 missing `---` separators in log.md between consecutive section headers
+- **Auto-fixed**: Updated index.md header counts (Indexed entries: 2599→2189, Not in index: 0→410)
+- **Verified clean**: Pipe corruption: 0 | Line prefix corruption: 0 | Triple brackets: 0 | Space prefix: 0
+  Duplicate entries: 0 | Ghost entries: 0 | Log separators: 0 missing | validate_index.py: clean
+- **Deferred (human review)**: ~410 missing concept/entity entries in index.md — large batch (>50), needs dedicated pass

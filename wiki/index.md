@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-18 | Total pages: 2599 | Indexed entries: 2599 | Not in index: 0 | Entities: 822 | Concepts: 1732
+> Last updated: 2026-06-18 | Total pages: 2599 | Indexed entries: 2189 | Not in index: 410 | Entities: 822 | Concepts: 1732
 
 ## Entities (822 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -1102,7 +1102,6 @@
 - [[concepts/anthropic/infrastructure-postmortems]] — Two major Anthropic quality degradation postmortems (Aug-Sep 2025: context window misrouting, output corruption, XLA:TPU miscompilation / Mar-Apr 2026: reasoning effort misconfiguration, reasoning history loss bug, redundancy reduction prompts). Common patterns: slow detection, internal eval limitations, privacy constraints.
 - [[concepts/anthropic/managed-agents]] — Anthropic's REST API-based platform for cloud-hosted autonomous agents at scale. Architecture: "decouple the brain from the hands" — agent loop on Anthropic side, code execution in self-hosted sandboxes (Cloudflare/Modal/Vercel/Daytona). Launched April 2026 with sandbox partnerships announced May 19, 2026.
 - [[concepts/anthropic/memory-tool-cognition-strategic-follow]] — Anthropic's Memory Tool: Cognition's strategic follow-up
-- [[concepts/anthropic/model-context-protocol]]
 - [[concepts/anthropic/multi-agent-research]] — Anthropic Multi-Agent Research System (Claude Research): Orchestrator-Worker pattern, parallel sub-agents, memory mechanism, Tool-Testing Agent. 90.2% performance improvement over single agent, 8 prompt engineering principles, token usage explains 80% of performance variance.
 - [[concepts/anthropic/openclaw-conflict]] — Anthropic-OpenClaw Conflict
 - [[concepts/anthropic/transparency-hub]] — Anthropic Transparency Hub: Model Report (per-model safety evaluations for 10 Claude models, ASL levels, system cards), System Trust and Reporting (1.45M banned accounts, NCMEC reporting, threat intel), and Voluntary Commitments (G7 Hiroshima, Seoul Summit, Christchurch Call, Munich Elections Accord, Thorn child safety, etc.)
