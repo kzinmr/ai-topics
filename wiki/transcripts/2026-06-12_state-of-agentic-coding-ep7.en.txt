@@ -1,0 +1,2482 @@
+[00:00] It's an incredible product, creates
+[00:02] problems and solves the problems you
+[00:05] created and you pay both times. There's
+[00:09] this bizarre situation right now is like
+[00:11] if the AI would never have happened like
+[00:13] the the overall risk to the industry
+[00:15] would actually be lower, right? But Ruby
+[00:18] Ruby actually is in many ways the worst
+[00:20] language you can pick for AI.
+[00:21] &gt;&gt; We are basically witnessing the
+[00:23] elimination of programming languages
+[00:26] that serve humans best. Any thoughts on
+[00:28] this?
+[00:30] &gt;&gt; [laughter]
+[00:30] &gt;&gt; Yeah.
+[00:33] &gt;&gt; Hey, welcome back to State of Agentic
+[00:35] Coding number seven. My name is Ben
+[00:38] Vinegar. Um, and I'm here with
+[00:40] Armaroner. It's still summer. We're not
+[00:43] outside. We're not outside touching
+[00:45] grass. We're here
+[00:47] using agents to write code and then
+[00:49] recording a podcast about using agents
+[00:51] to write code. Armen,
+[00:53] who are you again? What do you do? My
+[00:56] name is Armen
+[00:58] and I'm still resident VIP quarter at
+[01:02] Arendelle.
+[01:04] Um where we are building interesting
+[01:07] things with AI right now
+[01:10] um a personal agent and a coding agent.
+[01:14] One is called Leos, one is called Pi. I
+[01:16] feel like as people are watching this
+[01:17] podcast, they're slowly seeing that
+[01:19] Arendel turns from what are they doing
+[01:21] to actually stuff being there.
+[01:23] &gt;&gt; It's all going to make sense. Oh, this
+[01:25] will be like a fun documentary. It'll
+[01:26] all make sense in the end. My name is
+[01:28] Ben Vigger. I have worked in software
+[01:33] for over 20 years, which makes me upset
+[01:35] every time I say that, by the way. Um,
+[01:38] it's too long. And I work at a company
+[01:40] called Modem. We're building like an AI
+[01:42] product teamm8 to help you with all the
+[01:45] non-coding tasks associated with
+[01:47] shipping software.
+[01:49] um things like curating user feedback,
+[01:52] managing your tickets,
+[01:54] um writing release notes, and following
+[01:58] up with users. If you're interested in
+[01:59] that, check it out. modem.dev.
+[02:03] Okay, this is the seventh episode. Lucky
+[02:05] number seven.
+[02:08] We never thought we'd get this far.
+[02:10] Right before we started, you made the
+[02:12] comment that it's probably been like a
+[02:13] year of you coding with agents.
+[02:15] &gt;&gt; So, it's not exactly a a year since I'm
+[02:17] doing agents. It's definitely more than
+[02:19] a year, but it's a year since I publicly
+[02:21] wrote about
+[02:23] how
+[02:25] I really think there's no going back.
+[02:26] Like I in beginning of June last year, I
+[02:29] wrote a blog post called AI changes
+[02:32] everything. Um where I basically I think
+[02:35] for the first time sort of revealed that
+[02:37] I'm basically mostly only doing
+[02:40] Claude at that point. So it was CL code
+[02:43] a year ago. Um, and it took me a while
+[02:46] to write that because it I think my
+[02:49] memory is hazy, but I feel like I
+[02:51] remember it was still
+[02:54] not very common to publicly admit that
+[02:57] you're mostly writing with agents. The
+[02:59] hindsight on this is really incredible
+[03:01] because if you go back one year in time,
+[03:04] um, like Copilot
+[03:06] might have still had more users than
+[03:08] cursor
+[03:10] or maybe that shift was just changing,
+[03:13] right? Cloud code definitely did not
+[03:15] have very many users. It probably had
+[03:17] under 0.1%.
+[03:20] &gt;&gt; It wasn't anywhere close to what it is
+[03:22] today. Um
+[03:23] &gt;&gt; Oh, like in the way that you're working
+[03:25] or I'm working.
+[03:26] &gt;&gt; Yeah. Yeah. Like even the Ralph Lu was
+[03:29] around a year ago.
+[03:32] &gt;&gt; I I think the original Ralph blog post
+[03:34] was from around June.
+[03:35] &gt;&gt; Yeah. That's also interesting because
+[03:36] like the blog post can come out but also
+[03:38] when the community like really grabs
+[03:40] hold of it
+[03:41] &gt;&gt; like it it got hold in November I think
+[03:43] or something.
+[03:44] &gt;&gt; Yeah. Yeah. It can it can happen later.
+[03:46] I have more things going in parallel
+[03:48] than I did back then. Maybe at the time
+[03:50] I experimented with getting you know a
+[03:52] couple things going. Um you know new
+[03:57] products came out that promoted
+[03:59] multiple parallel agent usage. like I
+[04:02] think August or September I started
+[04:04] using conductor for example and
+[04:05] conductor is like a harness for like
+[04:07] firing up multiple clouds and today
+[04:08] it'll fire up multiple codec cls right
+[04:12] that emerged
+[04:14] August September I think and you know
+[04:17] that started planting the idea of um how
+[04:21] I could do more in parallel so I do I
+[04:23] think that I was still very um
+[04:27] single track and I don't think that I
+[04:28] was vibing quite so much I think I was
+[04:30] still you know I was using the coding
+[04:32] agent probably handing over a lot more
+[04:34] than I was in the past but also because
+[04:36] of the quality of the models I felt like
+[04:38] there was a lot more supervision
+[04:39] happening
+[04:40] &gt;&gt; I mean they definitely got better right
+[04:41] it's like I even if I just go by my
+[04:43] GitHub contribution graph and I think
+[04:45] like in July we started writing the
+[04:47] first code for um Leos um
+[04:52] and I I still didn't feel like I can
+[04:55] actually build a business on top of
+[04:57] coding agents so it's like
+[04:59] they definitely It was a step change in
+[05:01] the quality of code being produced,
+[05:04] &gt;&gt; but and I think there's definitely more
+[05:07] parallelism going on,
+[05:11] but at the same time, I'm still more or
+[05:12] less in the terminal. I'm still more or
+[05:14] less talking to the machine. Like,
+[05:16] &gt;&gt; you're not using a Minority Report UI
+[05:19] where you're, you know, uh, moving
+[05:21] things around with your hands. I mean I
+[05:23] know that some people are like having
+[05:25] like these machines with like 32
+[05:28] parallel cloths or or cordexes going on
+[05:31] like that for sure exists but I have not
+[05:35] transitioned in in that sense because I
+[05:38] still struggle with the quality of the
+[05:40] things like here let's call it the
+[05:41] oneyear anniversary for us and on this
+[05:45] day or in the last week [snorts] you
+[05:48] know some of the architects of the way
+[05:50] that we build this software like Boris
+[05:51] Churnney at Anthropic and then you've
+[05:53] got Peter Steinberger, your friend,
+[05:58] building OpenClaw and both of these guys
+[06:01] have made comments which is like your
+[06:03] job is not to prompt anymore. Your job
+[06:05] is to architect a system that basically
+[06:07] runs loops and to just let things loop.
+[06:12] First off, what I'm hearing from you is
+[06:15] I don't think you were doing that a year
+[06:17] ago. And since you described your work
+[06:19] as being sort of kind of similar
+[06:22] uh or sorry the way that you do your
+[06:24] work as being kind of similar I assume
+[06:26] that you are not doing that today.
+[06:27] &gt;&gt; Not really. No. Well, I mean I think
+[06:29] there's sort of two worlds emerging,
+[06:32] right? It's like also for some context
+[06:34] here like Peter has an ridiculous amount
+[06:36] of token spent, right? I I don't know
+[06:38] what he like what the actual number is,
+[06:40] but I think he said something like $1.2
+[06:42] million in raw token cost a month or
+[06:44] something, right? just [clears throat]
+[06:45] like it was just insane. But there's the
+[06:48] world of people that have these
+[06:50] resources and they're they're operating
+[06:53] in that way and I think the closer you
+[06:55] are to the model apps that the more you
+[06:57] might see that. I don't think that
+[06:58] scales down to the world of you and me.
+[07:01] We've talked about this before where
+[07:03] like you and I I think we both agreed
+[07:07] that there has never been a time when
+[07:10] there's been this much asymmetry between
+[07:12] the halves and the have knots in
+[07:15] programming.
+[07:16] &gt;&gt; Was it Sil Pi a couple weeks ago who
+[07:18] wrote this tweet that was like I miss
+[07:20] when programming was free? [laughter]
+[07:22] &gt;&gt; Which is incredible because obviously
+[07:24] programming is still free. However, your
+[07:26] expectations the expectations on you
+[07:28] today demand that it is no longer free
+[07:31] in the sense that you need you must be
+[07:32] using agentic coding tools which costs
+[07:35] money. Here's a question. Do you think
+[07:36] since you don't really practice this
+[07:38] loop thing and
+[07:40] I don't either. I think that's
+[07:41] surprising to people
+[07:44] um when I was doing the the at AI um
+[07:47] engineer Miami and we had this little
+[07:49] panel on taste with Max Dober and um
+[07:51] Signal Pi
+[07:53] I asked them at one moment like do you
+[07:55] have any agents running right now? And
+[07:57] the answer was no. And this was a couple
+[07:59] months ago. So my sense is of like most
+[08:01] of the people I know is that they do not
+[08:02] have agents running 24/7. So like what
+[08:04] what is the gap here? Or is it just that
+[08:06] is it just the infinite token gap?
+[08:08] &gt;&gt; I don't know because it's not like I
+[08:10] didn't have the urge to have this stuff
+[08:13] going, but I just I don't really have a
+[08:17] strong sentiment that it's actually
+[08:19] going to do anything for me. At least
+[08:22] not for a stop. Like I think the
+[08:24] difference here is like what we are
+[08:26] doing in Arendelle like hypothetically
+[08:28] or at least not just hypothetically but
+[08:30] also practically should actually result
+[08:31] in money being generated over a long
+[08:33] period of time, right? is like there's
+[08:34] there's a desire that we're building
+[08:36] something that people can build on top.
+[08:38] [snorts] And so I have a feeling that I
+[08:41] just I haven't found a way yet to do
+[08:44] that with the looping thing. I
+[08:47] definitely tried to do the looping thing
+[08:49] when I ported mini ganger from one
+[08:50] language to another. Um and and that was
+[08:54] verifiable in the sense like that was a
+[08:56] that was like make all the test suites
+[08:59] pass, right? It's like that's a that's a
+[09:00] very clear goal. That's similar to the
+[09:02] auto research thing we talked about
+[09:03] before.
+[09:05] There it sort of seems to make sense to
+[09:07] me.
+[09:10] I I I just don't I don't wake up in the
+[09:12] morning feel like here I have a problem
+[09:14] where I feel like a Ralph loop is going
+[09:15] to be the solution for my problem. And
+[09:18] and maybe this is like a lack of like
+[09:20] creativity
+[09:22] or maybe I'm just working on different
+[09:24] kind of problems. But
+[09:26] there there must be some sort of cap.
+[09:28] Like I I couldn't even fathom coming up
+[09:30] with even like $100,000 worth of tokens
+[09:33] a month. Like it's just I don't even
+[09:35] know how I would spend it.
+[09:36] &gt;&gt; Sounds like a skill issue, Armen. Like
+[09:38] Jensen would be very sad. [laughter]
+[09:39] He'd be very disappointed in you. I
+[09:41] haven't talked a lot about this, but
+[09:42] I've made comments which is modem is
+[09:45] like a 100% codegen
+[09:49] software codebase. Okay, not 100%, but
+[09:51] let's say like 99%.
+[09:53] Um, and I call it like tastefully
+[09:55] curated code gen. Um, and I think it's
+[09:59] like 270,000 lines of code was the last
+[10:02] time I checked and a and a similar
+[10:03] number of test code despite having all
+[10:05] those test code. And I would say that we
+[10:06] have a pretty elaborate staging
+[10:10] production end to end test eval like
+[10:12] when you make a change and something
+[10:13] goes live there is a there is a lot of
+[10:16] graduated steps to ensure you know
+[10:18] quality um which
+[10:21] um I and our CTO Mike have insisted on.
+[10:25] Nonetheless,
+[10:27] I still find all these artifacts of
+[10:30] like, you know, someone will use a
+[10:32] coding agent and they'll build a feature
+[10:33] and, you know, no one will notice that
+[10:35] they've actually regressed the feature
+[10:36] in a subtle way,
+[10:39] right? Or they'll or the UI went
+[10:42] backwards or just took on a whole other
+[10:43] shape o over here or over there.
+[10:46] It happens all the time. It's like look
+[10:50] the context windows are getting bigger
+[10:52] but they are absolutely I don't even
+[10:54] think with a 10 million tok to token
+[10:56] context window you would avoid these
+[10:57] problems right um it can't ingest the
+[11:01] entire codebase and be totally aware
+[11:03] even if you guide it you know it's just
+[11:06] it even with the latest models this
+[11:08] still happens all the time and so I I
+[11:10] I'm unconvinced I guess is where I'm at
+[11:13] that at least for what we're building
+[11:16] and you made this comment like
+[11:18] depends what you're building.
+[11:21] For example, if you're rewriting a major
+[11:23] piece of open source software into
+[11:24] another language like Rust, you might
+[11:27] want some loops for that. And um do you
+[11:30] know what I mean?
+[11:31] &gt;&gt; Yeah. But look, the irony right now for
+[11:35] me is that I can sort of not pretend
+[11:37] like I'm not doing something that other
+[11:39] people are doing. So like if if bore is
+[11:42] sort of the point of reference
+[11:45] presumably most of the code they're
+[11:46] writing is for cloud code
+[11:49] &gt;&gt; right now most of the code I'm writing
+[11:51] is for pi which is a coding agent and
+[11:54] yet we're not doing this right and so
+[11:56] like we're like obviously way smaller
+[11:59] product way kind of different thing I
+[12:02] just
+[12:05] I I can't do it [laughter]
+[12:08] I just
+[12:09] like it's
+[12:12] I I just I really struggle like shipping
+[12:14] code that way. Um and I'm pretty sure
+[12:18] it's just like could pretend like I
+[12:20] could and just not look anymore, but
+[12:26] I just I don't know how to QA like it's
+[12:30] like or or understand or comprehend or
+[12:33] anything like this, right? It's like
+[12:35] so
+[12:37] someone should be doing the aentic
+[12:38] coding podcast of the people that are
+[12:40] fully like looping [laughter]
+[12:44] &gt;&gt; because to me like that what is missing
+[12:46] for that to work is like somehow
+[12:48] figuring out how I would comprehend what
+[12:50] I'm still doing because like I have a
+[12:51] desire to understand this and and my my
+[12:54] only assumption is that what's actually
+[12:56] going on elsewhere is that comprehension
+[12:58] has sort of shifted and it's no longer
+[13:02] in the picture. I I just cannot
+[13:04] understand how else it would work.
+[13:06] &gt;&gt; I think psychosis is a factor, too.
+[13:10] &gt;&gt; I think that sometimes when people talk
+[13:11] about AI psychosis, they think they, you
+[13:13] know, you imagine it as some kind of
+[13:14] fugue state where you've just completely
+[13:16] turned into a completely other person.
+[13:18] And I don't mean that. I mean that it
+[13:20] can subtly
+[13:22] warp your perspective in a couple
+[13:24] dimensions
+[13:26] and that's enough. That's enough for
+[13:28] psychosis to me, if that makes sense.
+[13:30] &gt;&gt; Yeah. Um, for example, if you've got the
+[13:33] best software product on Earth, okay,
+[13:37] and you managed to Ralph loop a feature
+[13:39] in there that gets uptake, you might
+[13:41] think you're a [&nbsp;__&nbsp;] genius, but it
+[13:44] actually had to do with the previous
+[13:45] distribution like like everything that
+[13:47] happened before you started doing
+[13:48] infinite Ralph loops, if that makes
+[13:50] sense.
+[13:51] &gt;&gt; But are you using cloth codes still in
+[13:53] any form?
+[13:54] &gt;&gt; I use them all. Yeah, I do. I do. Yeah.
+[13:57] So I I'm still paying for my Tropic
+[13:59] subscription since basically can't use
+[14:01] it anymore. I was just too lazy to turn
+[14:04] to be quite frank. I only ever use cloud
+[14:08] code at the moment to to to like see
+[14:10] what they're doing. I don't understand
+[14:12] what's going on anymore
+[14:14] in that product. It looks it looks the
+[14:16] same as it always did in a way, but it
+[14:19] doesn't behave the same anymore and has
+[14:21] like so much stuff in it. Like this is
+[14:23] maybe like super like inappropriate to
+[14:26] say but like for all the effort and
+[14:29] complexity and all the stuff that went
+[14:30] in the cloud code I don't like I don't
+[14:34] think I would be any more productive in
+[14:35] it than
+[14:37] with what pi is doing right now for
+[14:39] instance which is basically almost
+[14:41] nothing all all these loops and all the
+[14:44] features that are being shipped like
+[14:45] clearly are users that that want this
+[14:47] things right like I'm assuming that but
+[14:49] but it hasn't really done anything for
+[14:50] me so like I have plateaued in some
+[14:52] sense with an earlier version of that
+[14:55] product and and what else what the loops
+[14:59] are doing now is maybe features for
+[15:00] people that love the loops sort of like
+[15:02] a self [snorts] s self-fulfilling thing
+[15:05] but like I just I also don't really see
+[15:08] like I've done some trainings recently
+[15:10] with some companies where there's like I
+[15:11] wanted to see like how they're using
+[15:12] coding agents like none of them are
+[15:15] there
+[15:16] so it's like there's like probably like
+[15:19] a very small percentage of the user base
+[15:21] is like oh yeah you You know what I
+[15:22] want? I want like crazy sub agents. Like
+[15:26] I what do they call this now? Ultra
+[15:28] code.
+[15:30] Like all of this, right? We wanted to
+[15:32] get into some sections teed off by past
+[15:35] conversations we've had. Okay. So, let's
+[15:38] get into this. Let's get into this. Um,
+[15:41] all right. We just kind of wrapped up on
+[15:43] CL cloud code loops. We're going to come
+[15:46] back to it, but I think it's important
+[15:48] to acknowledge the news of what's
+[15:49] happened over the last month.
+[15:51] really, you know, that I think that's
+[15:53] important. So, last episode we had a
+[15:55] whole section where we talked about the
+[15:58] end of subsidies or what I called the
+[16:00] beginning of the end of subsidies and we
+[16:01] had some indicators on that and we
+[16:03] talked about it. There are two major
+[16:05] events that have happened in the last
+[16:07] months which sort of keep honestly
+[16:09] feeling like it's true that subsidies
+[16:11] token subsidies are are continuing to
+[16:14] unwind.
+[16:15] One is that Copilot, which was
+[16:17] previously a subscription
+[16:20] um a sub a subscriptionbased product
+[16:22] with some amount of spend has moved into
+[16:25] being usage based. And as far as people
+[16:29] can tell, the amount of bundled usage
+[16:32] has come down significantly. I don't
+[16:34] know if that's true or not, but based on
+[16:36] the reactions that we're seeing like on
+[16:37] social media, it seems to be
+[16:39] significant.
+[16:41] Um,
+[16:43] and then Claude, since we were just
+[16:45] talking about Claude, and I think this
+[16:46] is important to our conversation. Um,
+[16:50] you can no longer use claude-P, which
+[16:53] was sort of a the ability to run Claude
+[16:55] with like a programmatic prompt from the
+[16:58] CLI.
+[16:58] &gt;&gt; It's, by the way, what the original
+[17:00] Ralph loop used,
+[17:01] &gt;&gt; what the original Ralph loop used.
+[17:03] &gt;&gt; Um, using your sort of subsidized token,
+[17:07] uh, sorry, your subsidized subscription
+[17:09] tokens.
+[17:11] So what that means is that if you were
+[17:13] using claude say on CI like on GitHub
+[17:15] actions to do some work for you, you
+[17:17] would do like claude-P and you give it a
+[17:19] prompt like do a code review. Well that
+[17:21] no longer that no longer comes from your
+[17:23] subscription. Instead anthropic is
+[17:26] giving you some amount of credits, some
+[17:28] amount of
+[17:30] programmatic agent credits. I can't
+[17:32] remember the exact language commenurate
+[17:35] commensurate with your plan.
+[17:38] And I think that's interesting because
+[17:41] the argument before was well you can
+[17:43] only use your subscription with cloud
+[17:45] code. In this case it's it seems to get
+[17:50] even tighter because claude-p is cla
+[17:55] But I think it's also important to
+[17:56] understand like a little bit sort of the
+[17:58] underlying economics of it which is that
+[18:02] inference actually even with the cloth
+[18:04] crazy plans which are really really
+[18:06] really really subsidized
+[18:09] modeled out throughout the entire user
+[18:11] base they are margin positive on pure
+[18:14] inference.
+[18:15] Um
+[18:17] as an example I I'm paying for an
+[18:19] account right now $200 that I basically
+[18:21] don't use right this is free money for
+[18:23] them. There are some people are probably
+[18:25] deep in the red but like over the entire
+[18:28] user base they were they were actually
+[18:30] fine. Um
+[18:33] but they don't have enough capacity to
+[18:35] deal with all like they want more money
+[18:39] because like they cannot service people.
+[18:42] So they want to take out functionality
+[18:45] which doesn't make them as much money
+[18:48] and rather sell it to more people where
+[18:50] they can make extra revenue with it
+[18:52] overload in the servers.
+[18:54] &gt;&gt; Yep. So, so but but it is important to
+[18:56] understand like actual inference is
+[18:58] still hugely profitable which is also
+[19:01] why
+[19:03] um even non
+[19:06] uh model lab providers are able to uh to
+[19:10] sell you something like subscriptions. I
+[19:12] mean open code is a good example. They
+[19:14] have
+[19:15] um a coding plan.
+[19:16] &gt;&gt; Um I think you're thinking of open code
+[19:18] go right which is like $10 a month.
+[19:20] &gt;&gt; So yeah, Open Code Go. Yeah. And then
+[19:22] then I think like fireworks as one and
+[19:24] like K not uh all the Chinese lives like
+[19:28] um you can busy buy a Kim quarter plan
+[19:31] that's obviously comes from from the
+[19:33] Kimmy people but like more than just
+[19:37] entropic and openi who are flush with
+[19:39] money are capable of providing
+[19:41] subscriptions.
+[19:42] &gt;&gt; I wanted to touch on this like
+[19:45] claude credits and the fact that now you
+[19:47] can use cloud code and no longer is it
+[19:49] true. It used to be that you could as
+[19:52] long as you fired up claude like the
+[19:55] command line tool and you did some work
+[19:57] that fell under your subscription.
+[20:00] Now it's not just cla P by the way.
+[20:02] Cloud-p
+[20:06] using the SDK that's also falls under
+[20:07] it. Under it the other way that it falls
+[20:10] under it is the um
+[20:13] ultra ultra mode or workflow thing.
+[20:17] Okay. So now using Claude, you can
+[20:20] basically spin up I don't know what is
+[20:22] it like six sub aents to do work, right?
+[20:25] Claude has always had sub agents.
+[20:27] However, it's starting to look like if
+[20:30] you use these sub aents to do extra work
+[20:32] or at least in some modes, they will
+[20:34] draw from these credits and not your
+[20:36] subscription.
+[20:37] So,
+[20:40] look, I think part of why they're
+[20:42] driving some of these features that
+[20:44] you're talking about, frankly, at least
+[20:46] to me, is that it actually drives token
+[20:49] spend. Um, I feel like if you look at a
+[20:55] lot of the features that are coming
+[20:57] under Claude, you can they are
+[20:59] correlated to spending more tokens.
+[21:04] Well, I think there's another part and
+[21:06] this is my conspiracy theory, but
+[21:08] there's a there's a big difference if
+[21:09] what the machine is doing is the input
+[21:11] from a machine versus what the machine
+[21:14] is doing is the input of a human. The
+[21:16] data that you get from a human is much
+[21:18] more interesting for model app than the
+[21:20] data that you get from the machine.
+[21:23] So, it incentivizes in some sense um the
+[21:27] human prompting
+[21:28] &gt;&gt; unlike what they want you to do, right?
+[21:30] is like they like do all the Ralph loops
+[21:32] but at the same time the Ralph loops
+[21:34] like they don't give you like there's
+[21:36] not as much data in it as like a real
+[21:38] genuine human problem came from the
+[21:40] human.
+[21:41] &gt;&gt; So your your argument also is it's not
+[21:45] it's not just about having you
+[21:49] be at the terminal because they don't
+[21:50] want you to pro you know
+[21:51] programmatically spin it up in a bunch
+[21:52] of places. The other reason is they know
+[21:55] how valuable that human in the loop
+[21:57] trace is and they want to promote that
+[21:59] usage because in that world that trace
+[22:03] has more value to them.
+[22:04] &gt;&gt; That to me at least would make a lot of
+[22:06] sense. Um, and I think the
+[22:09] um, there are not that many traces that
+[22:11] you can train on because like I think
+[22:12] you also like depending on if people
+[22:14] didn't opt out of it like there's
+[22:16] there's not that like it's probably like
+[22:18] a small percentage of the user base they
+[22:20] can even work with. Um, and then they
+[22:22] have to redact it and whatever. But I
+[22:24] I'm suspecting this at least is a very
+[22:27] convenient thing to to to this is to
+[22:31] sort of treat the the crazy loop
+[22:33] separate from the genuine human problem.
+[22:35] Well, I think it's pretty natural that
+[22:36] you see a lot of features come out that
+[22:38] conveniently spend a lot of tokens, you
+[22:40] know, on on their on their platform.
+[22:42] Like, it's not 7D chess. Look, it's it's
+[22:45] pretty it's pretty standard like that.
+[22:48] Here's a good here's a counter example
+[22:50] of like when was the last time Claude or
+[22:53] Anthropic announced a feature that's
+[22:54] like, look, we're going to save you
+[22:55] tokens if you do X.
+[22:57] &gt;&gt; Well,
+[22:59] when OPUS 47 was it 46 launched, I
+[23:02] forgot they changed the tokenizer. So
+[23:04] everything became magically 20% more
+[23:06] expensive.
+[23:08] &gt;&gt; That's just leading to the more
+[23:09] expensive comment, right?
+[23:12] &gt;&gt; Yeah. But when you first read the blog
+[23:14] post, it sounded like, oh, they opt they
+[23:16] optimize the tokenizer, so it's more
+[23:17] token efficient. But actually, no. I
+[23:20] think you know if you if you look at pi
+[23:24] or if you look at open code
+[23:26] they
+[23:28] you know
+[23:30] and open code maybe because I have open
+[23:31] code go like you have a different
+[23:33] relationship with tokens you probably
+[23:35] want to bring the tokens down you're
+[23:36] probably looking at ways to be more
+[23:37] efficient right
+[23:39] &gt;&gt; and maybe one of one of things like I
+[23:41] think we talked about this in an earlier
+[23:42] episode but like if you are a large
+[23:44] enough enterprise
+[23:46] there are no subscriptions for you right
+[23:48] so and it actually turns out in those
+[23:50] enterprises increasingly people really
+[23:52] care about the token cost. Uh especially
+[23:54] because like it's token cost per
+[23:55] developer and so
+[23:58] I mean I I don't know Uber has like
+[24:00] $1,500 a month token limit now. Um a
+[24:04] bunch of other companies also rolled out
+[24:06] something similar. I know that one of
+[24:07] the people that we're talking with from
+[24:08] the Pi site has a token spend limit.
+[24:11] Like in the beginning of the year, it
+[24:13] was all about
+[24:15] like if you don't pay $250,000 in tokens
+[24:19] as a $250,000
+[24:21] salaried employee, then you're not doing
+[24:23] it right. And now we're on the other
+[24:24] side of it already. I didn't take that
+[24:26] long.
+[24:26] &gt;&gt; Look, if you're OpenAI or you're
+[24:28] anthropic, you probably believe you're
+[24:31] like, look, we are 10xing the value of
+[24:33] an engineer in that world. you should
+[24:36] spend, you know, if you pay a engineer
+[24:39] $200,000, you should pay us $200,000.
+[24:41] You should pay us $500,000. That is the
+[24:44] argument for the utility of, you know,
+[24:47] what they're providing. The challenge is
+[24:50] there's no even if that is
+[24:52] mathematically true, right? What if they
+[24:54] make you a hundred times better? Surely,
+[24:56] right? Like humans are just not even
+[24:58] prepared for that. We're just not even
+[24:59] psychologically prepared for the idea of
+[25:01] spending that much money on tokens.
+[25:03] Okay?
+[25:03] &gt;&gt; We also don't see the effects, right?
+[25:05] It's like we're definitely shipping a
+[25:06] lot more code,
+[25:08] &gt;&gt; but it's not and I mean I I don't want
+[25:11] to like go too far into the future where
+[25:13] I talk about like the sort of
+[25:15] &gt;&gt; like people who ship more code, but the
+[25:17] the number of eyeballs is the same, but
+[25:19] like in in many ways that's actually
+[25:21] what's happening right now. It's like a
+[25:23] lot of the code that we're shipping
+[25:24] doesn't really dramatically change
+[25:26] anything.
+[25:27] &gt;&gt; So this is a this is a good way to move
+[25:30] to the next thing. So, I just want to
+[25:32] just make this point, which is if you're
+[25:34] on the marketing team or the product
+[25:36] teams of these companies, you are trying
+[25:38] to figure out how can we get people to
+[25:40] spend $250,000 per engineer on these
+[25:43] products. And part of that is making the
+[25:45] product better, right? And part of that
+[25:47] is just marketing. Part of that is
+[25:49] getting Jensen out there to say that,
+[25:51] you know, out out at a conference
+[25:54] somewhere. This stuff is not random.
+[25:56] This is not like off-the-cuff comments
+[25:58] that people are making. this is like a
+[26:00] prepared strategy of this industry. It
+[26:02] doesn't mean that they're all
+[26:03] collaborating, right? Doesn't mean that
+[26:05] they're all uh like there's some
+[26:06] sinister plot. It's just like it's a
+[26:09] natural consequence of what they all
+[26:10] would like. Wouldn't you know, wouldn't
+[26:11] you like people to spend that much?
+[26:13] &gt;&gt; But but there's I think there's there's
+[26:14] another sort of like really crazy thing
+[26:16] about this in in some sense, right? Like
+[26:19] just just think think back for like um
+[26:22] early Facebook days, right? All of a
+[26:24] sudden people talked about MAU and DAU
+[26:27] and all of this, right? is like there
+[26:29] was a like magic number that you can
+[26:30] measure which is like how many people
+[26:32] are there and people like like they they
+[26:36] put it on a board presentation right
+[26:39] it's like there's a thing to optimize
+[26:40] for
+[26:41] &gt;&gt; but in some sense that that number
+[26:43] didn't actually really like you could
+[26:46] change that number but even if you
+[26:49] change that number it didn't it didn't
+[26:51] automatically also change your revenue
+[26:52] like you could actually get more
+[26:54] eyeballs and not more revenue.
+[26:57] &gt;&gt; Mhm.
+[26:58] if then one number that they're looking
+[27:00] now is token spent
+[27:02] that directly correlates with money. Um,
+[27:04] and so it's like you could get token
+[27:07] spend up in so many ways, [laughter]
+[27:10] right? And and I think like it is kind
+[27:12] of weird like the whole industry has
+[27:14] sort of moved towards this this this
+[27:17] token thing and it's like token also
+[27:19] directly correlates with dollar amount.
+[27:22] &gt;&gt; Yeah. Like it's it is just it is weird
+[27:26] in a way like we we I don't think we
+[27:27] have done this before. It's almost like
+[27:29] that the oil company selling you petrol.
+[27:31] I like you know what we should burn more
+[27:34] petrol [clears throat] because
+[27:35] [laughter]
+[27:35] it will be good for you
+[27:38] &gt;&gt; for I I want to repeat what you just
+[27:39] said because I think it's actually super
+[27:41] insightful.
+[27:42] Never before in our industry have we had
+[27:44] a sort of metric, a usage metric that
+[27:49] correlates so closely to dollars. Right?
+[27:53] Your your argument here is like ad
+[27:54] impressions.
+[27:56] Sure, that's a metric. There's some
+[27:57] value on it, but how good are the ad
+[27:59] impressions? Do they actually buy the
+[28:00] product? Right? There's always some
+[28:01] fuzziness where you can't draw a
+[28:02] straight line to how much money it is.
+[28:04] In this case, right now, [clears throat]
+[28:06] there's a pretty straight line. and and
+[28:08] so there's, you know, increasing that
+[28:10] number is is more straightforward than
+[28:13] perhaps other things in the past. Is
+[28:14] that a fair summary?
+[28:15] &gt;&gt; Yeah. And and because they still call
+[28:18] the tokens, it's almost like it takes
+[28:19] away from this thing because you
+[28:21] wouldn't normally go like imagine data
+[28:22] dog would go there and say like, you
+[28:24] know what, you should all increase the
+[28:25] data bill, right? It's like that that
+[28:28] like that would not connect in any
+[28:30] capacity like if anything like that that
+[28:32] would be not great. But because tokens
+[28:34] is like you know what more tokens means
+[28:36] you make more money and also make I make
+[28:38] more money but but I feel like it's not
+[28:41] entirely proven that a larger token
+[28:43] spend actually makes you more money.
+[28:45] [snorts]
+[28:45] &gt;&gt; I want to make a comment here that Enron
+[28:48] the famous [laughter] the famous um
+[28:52] 2001 bankruptcy. I saw the documentary
+[28:56] long time ago. Not the documentary
+[28:58] there. There's a fictionalized case the
+[29:00] smartest people in the room. I remember
+[29:02] it being a good movie. But I just want
+[29:04] to bring up Enron really quickly because
+[29:06] one of their whole ideas for their
+[29:07] business was that um they believed that
+[29:10] like software like internet connectivity
+[29:13] products would be um bought and sold
+[29:16] like oil like oil futures and they were
+[29:20] investing in that future and
+[29:23] yeah I don't know if if they existed
+[29:25] today that that maybe that would have
+[29:26] been a really good idea maybe a little
+[29:28] early. Um, the other thing I want to I
+[29:31] want to now come to the to this next our
+[29:33] next major topic because you made this
+[29:35] comment of well earlier I said like look
+[29:38] you're trying to get people to use
+[29:40] tokens. You've highlighted how they're
+[29:42] directly connected to income.
+[29:45] The industry is still grappling with the
+[29:48] idea of how much they should spend,
+[29:50] right? In some cases they're spending
+[29:52] like a crazy amount and
+[29:55] the numbers are absurd, right? And and
+[29:58] what I think the um the model providers
+[30:01] want you to say want you to believe is
+[30:03] like yes you spent $500 million on
+[30:05] tokens supposedly Uber
+[30:08] but you know what that was a good deal
+[30:10] right they're still trying to they're
+[30:12] still I don't know that they I don't
+[30:14] know that you know they feel that they
+[30:16] got a good deal for their $500 million
+[30:17] worth of tokens and I don't know if this
+[30:19] is an unsubstantiated story but I saw it
+[30:21] going around
+[30:22] &gt;&gt; the the most obvious place right now
+[30:25] where
+[30:27] companies see the need slash desire to
+[30:30] spend tokens is to solve security
+[30:33] problems and that is because someone
+[30:35] else otherwise runs security research
+[30:37] against your stuff and sort of out out
+[30:41] slop reports you and finding security
+[30:42] issues right and so there's this bizarre
+[30:45] situation right now is like if the AI
+[30:47] would never have happened
+[30:49] like the the overall risk to the
+[30:51] industry would actually be lower
+[30:53] right and so now we have the situation
+[30:55] because like we have the thing that is
+[30:57] very good at finding security problems
+[30:59] like at scale we're probably going to
+[31:00] have more secure software but now we
+[31:02] have like a base budget that we have to
+[31:04] put towards
+[31:06] &gt;&gt; security research all the time.
+[31:07] &gt;&gt; It's an incredible product because it
+[31:10] both
+[31:12] creates problems
+[31:15] and solves the problems you created and
+[31:18] you pay both times. [laughter]
+[31:21] &gt;&gt; Yeah. But it's like and and and like
+[31:24] people are like now because like
+[31:28] because of GitHub and a bunch of other
+[31:29] things basically having the security
+[31:30] programs enabled by default. There's al
+[31:34] there's also already like a very
+[31:35] convenient way to place all the security
+[31:37] reports. So I've seen some people pop up
+[31:40] recently that have not maintained open
+[31:42] source libraries for a while that just
+[31:43] literally picked up cloud code or
+[31:46] something similar to fix the security
+[31:47] issues that some other AI tool submitted
+[31:50] to them. You know what? You could have
+[31:51] been on the fence before, but now you
+[31:53] got no choice because it's been
+[31:55] weaponized against you.
+[31:58] &gt;&gt; Yeah, that's incredible.
+[31:59] &gt;&gt; So, I mean, like that is an example
+[32:01] where you can measure something because
+[32:02] like it's it's almost like you don't
+[32:04] have a choice to opt out anymore. Um, in
+[32:07] in other areas, I think it's it's more
+[32:09] more more more dubious. I mean like um
+[32:12] the the sort of the well-known uh graph
+[32:15] from the FT was like number of app
+[32:17] releases gone up tremendously versus the
+[32:21] number of like I think they had like app
+[32:24] reviews or like app app usage uh like
+[32:29] &gt;&gt; not even not increasing but actually
+[32:30] going down.
+[32:32] &gt;&gt; Yeah. So like
+[32:34] overall what's happening here is that is
+[32:37] this actually like it's very clear that
+[32:40] if you're in a market of selling tokens
+[32:41] that's a great business to be in right
+[32:43] now because see immediately people want
+[32:44] to have some tokens but I the the
+[32:47] evidence that all of the things that
+[32:49] we're doing with those tokens actually
+[32:50] being
+[32:52] like definitely measurably good way
+[32:56] weaker
+[32:57] &gt;&gt; right so that graph and we'll put it on
+[33:00] the screen I've been talking about this
+[33:01] I was webs. I was at WebSummit
+[33:03] Vancouver. I got invited to give a give
+[33:05] a talk last minute, the smallest stage
+[33:08] there, and I quickly put up a a talk
+[33:12] that looked into the stats of like how
+[33:14] much software is being created, how many
+[33:16] releases are being created, but like
+[33:18] who's actually using the software. And
+[33:19] before that graph came out this week, I
+[33:21] I was already looking at a whole bunch
+[33:22] of data like this. Like there there's a
+[33:24] lot of evidence that um we're just not
+[33:28] using the software to the same degree.
+[33:30] to bring it back to I'm saying competing
+[33:33] narratives because if you're in the
+[33:34] business of selling tokens, you don't
+[33:35] want people to know that,
+[33:38] [laughter] right? Or or okay,
+[33:41] [clears throat] you don't want that to
+[33:42] be true. You you want to demonstrate to
+[33:46] everybody that there is value and look
+[33:47] at all the incredible things that are
+[33:49] being produced.
+[33:50] So, I wanted to shift here to an example
+[33:55] of one such thing.
+[33:58] Um, a few months ago we talked about
+[34:01] Vibe forks or slot forks and that was
+[34:05] when
+[34:06] V next vext came out which is was a
+[34:09] next.js
+[34:11] uh fork that was vibe coded for to work
+[34:15] on Cloudflare environments and that was
+[34:17] interesting and we started hypothesizing
+[34:19] what would be the next fork and I said
+[34:21] something silly like ffmpeg I think that
+[34:25] you brought up some like old software.
+[34:26] We were just sort of like what would be
+[34:28] next? None of us named what would be the
+[34:31] next major slop fork which just came out
+[34:33] a few weeks ago
+[34:35] which is Bun. And can you tell can you
+[34:39] tell us what happened there?
+[34:41] Um so what happened is that the guy that
+[34:45] wrote bun Jared
+[34:48] uh his entire company got acquired by
+[34:49] entropic and seemingly he has used that
+[34:53] opportunity to uh grab deep into the
+[34:56] token back and he was already running
+[35:00] for like a couple of months I think
+[35:02] called Robun which is basically you talk
+[35:05] to
+[35:07] a GitHub issue and then a machine comes
+[35:09] by and just acts on and starts writing
+[35:11] code and merge it. Um, and he basically
+[35:15] instructed Robban and other tools to
+[35:19] rewrite the whole thing from zik to
+[35:20] rust. And so it's it's not released
+[35:23] right now, but you can already download
+[35:26] a pre-built of basically the entire
+[35:29] thing being rewritten from zig to to
+[35:32] rust.
+[35:33] &gt;&gt; Why convert it from zig to rust? It
+[35:35] seems like bun is pretty successful
+[35:37] software. Let's just take for example if
+[35:40] you didn't know this um cloud code is
+[35:43] written in bun it's running on millions
+[35:48] and millions of devices seems like it
+[35:50] works so what is the problem that's
+[35:52] being solved why we write it so uh let
+[35:56] me do a little detour here quickly which
+[35:58] is I was at
+[36:00] uh Ruby con Austria
+[36:03] which is funny because like I haven't
+[36:04] done anything with Ruby in years but I
+[36:06] was on a panel there and we were
+[36:07] discussing AI and um and what what is
+[36:12] interesting about this is that I would
+[36:14] make the argument that Ruby probably not
+[36:15] the strongest language for AI, right?
+[36:17] And interesting enough, there was sort
+[36:19] of the same vibe on the stage even
+[36:21] though it was a Ruby conference. There
+[36:23] was a general feel like hey we're all
+[36:24] using these things now like what what's
+[36:26] the benefit they get for Ruby? Then Chad
+[36:28] Fowler gave this example that there's um
+[36:30] a project you might have to Google this
+[36:32] where he basically like he started
+[36:33] prompting the AI to ask like hey if you
+[36:36] have this problem which language would
+[36:37] you use and it wouldn't he didn't even
+[36:39] ask like which language would you use he
+[36:40] basically said like write the code to
+[36:41] solve this problem and then he he he
+[36:44] basically measured how often which
+[36:45] language was in the top end of choices
+[36:48] and Ruby never came up like only he said
+[36:51] like only when it had to do like a DSL
+[36:53] Ruby would come up and so obviously Zik
+[36:55] also doesn't really come Yeah.
+[36:57] &gt;&gt; Can I make a quick comment? I feel that
+[36:59] one of the re one of the things that
+[37:00] attracts,
+[37:02] you know, some programmers to Ruby is,
+[37:05] you know, human taste.
+[37:07] &gt;&gt; I have some other opinions there.
+[37:08] &gt;&gt; Well, I just mean you can disagree with
+[37:11] it or
+[37:11] &gt;&gt; creativity. I would say creativity.
+[37:13] &gt;&gt; Yes. Like it's it is a subjective choice
+[37:16] fundamentally, I guess, is what I'm
+[37:18] trying to say. Yeah.
+[37:18] &gt;&gt; It doesn't it doesn't offer
+[37:21] computationally
+[37:22] any advantage over any other language.
+[37:25] Ruby. Ruby actually is in many ways the
+[37:27] worst language you can pick for AI.
+[37:28] &gt;&gt; Yeah,
+[37:29] &gt;&gt; Ruby makes trade-offs that are great for
+[37:31] humans. Like I I know that people like
+[37:34] writing Ruby. They don't necessarily
+[37:36] like reading Ruby, but they they love
+[37:38] writing Ruby because it's enjoyable.
+[37:40] It's short. You can be creative. You can
+[37:42] do a whole bunch of things. It can do a
+[37:43] ton of meta programming. The the biggest
+[37:45] problem with Ruby is that it has a lot
+[37:47] of non-local states. So you need to
+[37:49] basically load everything on the
+[37:50] codebase because magic methods could
+[37:51] appear anywhere on any one of your
+[37:53] literals and and you wouldn't know.
+[37:56] &gt;&gt; Yeah. To for people who haven't written
+[37:58] Ruby and I guess it's like it's an old
+[38:00] language now. Oh god. Um you know
+[38:03] JavaScript has some of this and I think
+[38:05] that's actually why I like JavaScript.
+[38:06] But
+[38:08] Ruby you can basically runtime modify
+[38:11] the crap out of it
+[38:13] &gt;&gt; at at levels that like JavaScript you
+[38:17] can do quite a bit. Ruby, you can do
+[38:18] quite a bit more.
+[38:20] &gt;&gt; Um, and it almost makes it so the whole
+[38:24] environment you could argue is unstable
+[38:26] at any given moment. You really can't
+[38:28] make guarantees about what you know a
+[38:31] class could have a shape and you think
+[38:32] it has.
+[38:33] &gt;&gt; You could you could you could say like 1
+[38:35] + 2 actually does 1 minus 2. I'm pretty
+[38:38] sure you can still replace like
+[38:39] &gt;&gt; Yes, you can you can override you can
+[38:40] override arithmetic operators [laughter]
+[38:43] to do completely different things. So
+[38:45] you could make plus be a multiply
+[38:47] multiply operation.
+[38:48] &gt;&gt; But Zik is in a in a way quite similar
+[38:51] because Zik is a language is under
+[38:54] reprepresented similar like Ruby's
+[38:55] underrepresented.
+[38:57] Um Zik makes a lot of trade-offs that
+[39:00] make it really good for a human to work
+[39:03] with. So for instance, one of the things
+[39:04] I love about Zik is I use Zik, but one
+[39:06] of the things I love about Zik is that
+[39:07] like it's very great at cross compiling.
+[39:09] like I I I don't have to like I can
+[39:13] compile the the Linux build on my Mac
+[39:15] and it works.
+[39:17] But the thing that has now realized like
+[39:20] I no longer care about this because I
+[39:21] just tell CL to set up whatever crazy
+[39:25] contraption it needs to set up cross
+[39:27] compiling and it will do it too, right?
+[39:29] is like the the all of like a lot of the
+[39:32] sort of benefits that sik has are for
+[39:36] humans and not necessarily for machines
+[39:39] and because it is a very cike language
+[39:41] with man manual man uh memory management
+[39:44] it becomes very very hard to actually
+[39:46] guarantee that it doesn't crash and and
+[39:50] bun loves to crash. So um I I can see
+[39:53] the motivation of trying a different
+[39:55] language.
+[39:55] &gt;&gt; I know you're with me with this and I
+[39:57] think you know what I'm going to say. I
+[39:59] think can we take a moment to
+[40:01] acknowledge we are basically witnessing
+[40:04] the elimination of programming languages
+[40:07] designed and and served best. You know
+[40:11] that serve humans best in favor of
+[40:15] languages that serve machines best. Is
+[40:18] that fair?
+[40:20] &gt;&gt; It's probably right. That's sort of what
+[40:22] it looks like right now.
+[40:24] Like Elon had a stupid statement like
+[40:26] the the future of LMS is going to just
+[40:28] write assembly code or something similar
+[40:30] which is just dumb because like I still
+[40:32] want to review it. Now maybe the Ralph
+[40:34] people look at this differently and
+[40:36] they're like screw the reviewing. I'm
+[40:38] just going to continue talking to the
+[40:39] machine. But look, there's here's here's
+[40:43] a small thing sort of a small little
+[40:44] aside here, which is um I increasingly
+[40:48] notice that people are discovering what
+[40:50] LLM are really good at, which is reading
+[40:53] text.
+[40:55] And what I mean by that is that people
+[40:58] are discovering that now that LLMs are
+[41:00] really good at reading this text, you
+[41:02] could write text specifically so that
+[41:03] the machine is reading it, but the human
+[41:05] is not. And it has some really hilarious
+[41:07] results. like Sentry, our former
+[41:09] employer, for instance, had this issue
+[41:11] going on in the last week where someone
+[41:14] reported um a whole bunch of like pro
+[41:17] like issues against projects on GitHub
+[41:19] where they said like, "Hey, there's a
+[41:20] there's a problem with the Sentry
+[41:21] instrumentation. Uh please read this
+[41:23] thing and like do it." And like the the
+[41:25] issue was basically prompt injection to
+[41:27] replace Sentry with uh like a an an
+[41:31] infected version of the Sentry package
+[41:33] from npm, right? It's like that that
+[41:36] issue has been written. So the machine
+[41:37] is reading it, not that the human is
+[41:39] reading it. Um and and my point here
+[41:41] mostly is that I think it's important
+[41:43] that human reads stuff, right? Like
+[41:44] humans read the issue, human read the
+[41:47] code. So I don't think we're going to
+[41:49] end up in a world where there's no human
+[41:51] in the loop anymore.
+[41:52] &gt;&gt; Your comment being like, look, if if
+[41:54] agents are just producing assembly, no
+[41:56] one will be able to evaluate anything.
+[41:58] &gt;&gt; Like how would you how would you be able
+[41:59] to see anything? Like we hate assembly.
+[42:01] Why why would it be a good choice? Now
+[42:04] &gt;&gt; clearly there's some middle ground,
+[42:06] right? There's a I think we're we're
+[42:09] we're going to align or self- select on
+[42:12] a series of languages that sort of
+[42:14] serve, you know, decent purposes for
+[42:16] both. Um, I do want to pour one out
+[42:20] though because it does seem like
+[42:21] long-term Ruby and Zigg are dead. And
+[42:24] what I mean is that if the LLMs are not
+[42:28] choosing them over a long enough
+[42:30] timeline, they're going to become like
+[42:32] Louisiana French.
+[42:34] &gt;&gt; What?
+[42:34] &gt;&gt; Okay. I think the interesting part is
+[42:36] like that that there are massive AI
+[42:37] fights going on and I think SIG is very
+[42:40] very clearly picking one site here which
+[42:43] is like they're banning all AI
+[42:44] contributions. You can't even you're not
+[42:47] even allowed to use an LLM to research
+[42:51] an issue.
+[42:52] &gt;&gt; Damn,
+[42:53] &gt;&gt; there's no LLM anywhere in the ZIK
+[42:55] project. Um and I would say it's a
+[42:58] choice and it's it's like it's a brave
+[42:59] choice. I it might be one
+[43:01] [clears throat] that actually works for
+[43:02] them because it's sort of like the last
+[43:04] last prei project in a way. But um I
+[43:10] think it's going to be really hard
+[43:11] because
+[43:13] I have one project that uses zig right
+[43:15] now [snorts] and I'm probably going to
+[43:17] rewrite it in rust because it's still
+[43:19] very small
+[43:21] and I just don't have a t I don't have a
+[43:24] great reason right now to use it and I
+[43:28] worry a little bit that since this is an
+[43:30] AIdriven project anyways
+[43:33] like why cement myself into zik when I
+[43:35] have rust as an alternative so that and
+[43:38] and I I intentionally chose ZIK for this
+[43:40] project because I actually felt like
+[43:41] Russ is not a great trade-off for this
+[43:44] project and now I'm reconsidering.
+[43:45] &gt;&gt; We love to go on tangents and there was
+[43:47] a lot of good stuff we got into to bring
+[43:49] it back to the slop fork part of it and
+[43:52] to bring bring it back to bun. When that
+[43:55] was announced,
+[43:57] there was there was online commentary
+[44:01] that there are people that believed that
+[44:04] the rewrite to Rust was done for
+[44:09] partially for performative reasons.
+[44:12] Okay. And we'll never know if that's
+[44:15] true unless, you know, Jared gets out
+[44:18] here and tells us, but even then we'll
+[44:20] never know. This this happened before
+[44:22] Opus 4.8 it came out in the release
+[44:24] notes I believe of opus 4.8 I believe
+[44:30] uh we can look this up in a moment that
+[44:33] they highlighted the fact that opus 4.8
+[44:35] made had been used in the conversion
+[44:38] from of of uh bun from zig to rust and
+[44:42] what what an incredible achievement and
+[44:44] you can do this too. I'm bringing this
+[44:46] up just to just to sort of bring it back
+[44:49] to the like as we are debating like the
+[44:51] what is the value of all the tokens
+[44:53] right and that there is an effort by
+[44:57] these companies to impress upon you the
+[44:59] value that you can realize a very good
+[45:03] objective I think this is an it is
+[45:04] objectively true that you can use these
+[45:08] models to convert with some reasonable
+[45:11] level of accuracy a conversion from a
+[45:14] complicated language like zigg to
+[45:15] complicated language like Rust, right?
+[45:18] And you in your company, your software
+[45:21] company, you probably have projects like
+[45:22] that. And boy, can you use this today?
+[45:25] &gt;&gt; Finally, cobalt can die, [laughter]
+[45:28] &gt;&gt; right? Do you think that's
+[45:32] ignoring the conspiracy adult uh flavor
+[45:37] I gave there? Do you think that's a fair
+[45:38] argument? I have seen or I've been a
+[45:42] participant to more than one discussion
+[45:44] recently where people pointed at that
+[45:48] rewrite as
+[45:51] uh not yet as a proof but basically as a
+[45:55] if that project actually going to
+[45:57] survive that change and it's going to be
+[45:58] stable in three months they might use
+[46:01] that as leverage to rewrite within their
+[46:06] company legacy code bases. That's a good
+[46:08] test. And I I want to highlight when we
+[46:11] were talking about slot forks like
+[46:14] V-Next, that was interesting. How
+[46:16] popular is that? I don't know that it's
+[46:18] very popular. We're talking about taking
+[46:20] that, you know, that was an alternative
+[46:21] like you you use Next.js. Here's an
+[46:23] alternative that you can adopt. And I
+[46:25] don't know the numbers, but you know,
+[46:27] off the top of my head, I' I'd wager
+[46:29] that less than 10% of Nex.js users are
+[46:32] using VI Next. Totally made up number. I
+[46:36] don't know but you know I haven't heard
+[46:37] a lot from it since. This is a different
+[46:39] thing. This is taking an existing
+[46:42] popular open- source you know runtime
+[46:46] and just wholesale converting it and
+[46:49] then saying this will be the new version
+[46:51] in the future and you will all use it
+[46:53] right and cloud code which is being
+[46:55] distributed to all of these machines
+[46:57] millions you know millions of times a
+[46:59] day probably is also going to use that.
+[47:01] I think that's a very different and a
+[47:03] more compelling story. two episodes ago
+[47:06] or maybe one episode ago, I forgot, we
+[47:08] talked about um the slop fork of uh
+[47:11] Charted where the guy that wrote Charted
+[47:14] &gt;&gt; rewrote it
+[47:16] &gt;&gt; and and I think it's a good moment to
+[47:18] sort of check in on that because like
+[47:20] after he locked the thread where people
+[47:22] were in outrage and whatever, [laughter]
+[47:24] the project moved on and it's now fully
+[47:27] rewritten, 100% AI generated and it
+[47:31] works just fine, [laughter]
+[47:33] &gt;&gt; right? Like right now there are zero
+[47:35] open issues. It's a is a huge project
+[47:38] that underpins basically every HTTP
+[47:40] request against sort of regular HTTP uh
+[47:44] HTML in the Python ecosystem and the
+[47:47] world is still standing.
+[47:49] &gt;&gt; So there so there is evidence of these
+[47:51] rewritten libraries out there. But, you
+[47:53] know, again, if you're anthropic and
+[47:55] you're trying to convince
+[47:58] a massive enterprise to spend a billion
+[48:00] dollars in tokens, you know, do you go
+[48:03] and you point to Chardet and say, "Look,
+[48:05] look at this, right? Or do you go and
+[48:08] point to this critical, you know,
+[48:10] massive library that is powering, you
+[48:12] know, the thing that everybody uses,
+[48:14] right? In terms of like your confidence
+[48:16] and how you're you're promoting the
+[48:18] product." But it's a compelling, like
+[48:20] it's an objectively compelling argument.
+[48:21] I guess that's what I'm trying to say is
+[48:22] like both of those things could be true.
+[48:25] I Does that make sense? Like
+[48:26] &gt;&gt; I think it raises a bunch of interesting
+[48:28] questions because like one is that if
+[48:30] someone can rewrite a million lines
+[48:33] codebase from one language to another
+[48:36] and and I think that's sort of what what
+[48:38] we're looking at here. Then at the very
+[48:40] least it sort of demonstrates that at
+[48:42] least for a codebase that has good
+[48:44] enough tests
+[48:46] context is not necessarily an issue to
+[48:48] actually arrive at the at the ported
+[48:50] version. Now obviously porting something
+[48:53] like I don't know how much code you
+[48:55] definitely need to read into the context
+[48:57] like maybe you can sort of do it
+[48:58] peacemail by piece mail. I have no idea
+[48:59] how they did it. Um, but one thing that
+[49:03] I think increasingly is a topic with
+[49:06] with people sort of trying to build this
+[49:08] in the enterprise space is trying to
+[49:09] figure out like how do you architect
+[49:11] software to be like agent ready
+[49:14] and and there I think
+[49:18] there's definitely some ideas emerging
+[49:19] about what is a better architecture for
+[49:21] agents versus what is worse architecture
+[49:22] for agents but the thing is like what's
+[49:24] really good for agents is like local
+[49:25] reasoning which a lot of existing code
+[49:28] don't do and so the question is like
+[49:30] could entropy demonstrate in a couple of
+[49:33] months from now that hey the best way to
+[49:35] architect the codebase for agents is
+[49:37] this and this and this and by the way
+[49:39] our
+[49:41] amazing meth.0 model can actually help
+[49:46] you do for a lot of money that
+[49:48] transition once and then you can sort of
+[49:50] uh like then it's cheaper to iterate or
+[49:52] something. I actually wonder if that's
+[49:54] going to be um like where they want to
+[49:57] go with it because I don't think a lot
+[49:59] of people are going to like rewrite the
+[50:00] codebase over and over. That doesn't
+[50:02] really seem like maybe they rewrite it
+[50:04] once. Um but this idea of like getting a
+[50:08] codebase to be
+[50:10] agent friendly by making it like this
+[50:14] perfect pattern of like how make an
+[50:16] agent friendly codebase.
+[50:18] um that I think that that can scale like
+[50:21] many more people need that versus people
+[50:23] that need their core world code base
+[50:25] rewritten in C++ or something. [snorts]
+[50:29] Have you rewritten a major piece of
+[50:31] software in another language because of
+[50:33] the of LLMs? Tell us in the comments.
+[50:39] I don't know if I don't know if anybody
+[50:40] actually hears these, but I just want to
+[50:42] I want to try. Okay. So, you know,
+[50:46] Anthropic, OpenAI,
+[50:48] Google, they'd love for you to spend a
+[50:50] lot of tokens and pay them for it. You
+[50:53] know, the one thing that we have to to
+[50:56] blunt uh to um to stop us from becoming
+[51:01] um indentured servants or chatt or
+[51:04] whatever is that open weight open source
+[51:06] models exist and that um you know Peter
+[51:10] gets a million dollars worth of tokens a
+[51:12] month but you know I can get something
+[51:15] [laughter] for $10 a month from open
+[51:18] code go. What is the state of openweight
+[51:20] models like? Can I can I actually run
+[51:22] these things locally? You've been
+[51:24] experimenting with them more. There's
+[51:25] been a bunch of new interesting
+[51:26] releases.
+[51:28] &gt;&gt; Yeah. So, um maybe uh just generally I
+[51:31] think open weight mod should exist. So,
+[51:34] let let let that be heard.
+[51:37] Um I don't think they're there yet. Um
+[51:41] but there are some pretty good
+[51:42] developments I think recently that well
+[51:45] there's some good and some bad
+[51:46] developments. But let's let's put it
+[51:48] this way. First on the good development
+[51:50] side is that um we're slowly moving to
+[51:55] there are combination of good enough
+[51:57] deployed hardware being out there that
+[51:58] people can use.
+[52:01] For instance, the MacBook that you and I
+[52:03] bought.
+[52:04] &gt;&gt; Yep. Not not cheap. Not cheap, but
+[52:06] exists and you could reasonably buy them
+[52:10] or maybe not reasonably you is possible
+[52:13] for you to buy them.
+[52:14] &gt;&gt; It's possible. So, so that plus because
+[52:18] we're now also having some models where
+[52:19] with the right quantization and sort of
+[52:22] good utilization of that RAM, we're now
+[52:24] moving from completely useless for
+[52:27] driving two loops to can drive a two
+[52:30] loop and doesn't make it like completely
+[52:33] useless. Let's say that we're talking
+[52:34] about like what it can run locally in
+[52:36] your computer right now is sort of where
+[52:38] cloud code was exactly a year ago. So,
+[52:40] as I think I could make like it's going
+[52:43] to be a little bit slower, but I'm
+[52:44] pretty sure like whatever fun I had with
+[52:47] Claude in May or June last year is what
+[52:50] I could have with for instance Dwarf
+[52:52] Star 4, uh, which is like um like a
+[52:56] packaged up version of Deepseek that I
+[52:59] can run on my computer that works now.
+[53:02] And because that is generally possible
+[53:04] now, we're now slowly starting to see
+[53:06] that people are packaging up the whole
+[53:08] thing end to end in a better way. I I do
+[53:11] want to point out Andy Res's project
+[53:13] dwarfstar or DS4
+[53:16] uh here because like that is an example
+[53:17] of you don't go and like you can for
+[53:21] instance today you can download my
+[53:23] extension for pi which after you
+[53:25] installed it gets you the model the
+[53:28] inference engine the kernel the
+[53:29] everything that you need running on your
+[53:31] computer without you having to do
+[53:32] anything. So it's like it's almost as
+[53:35] convenient as going to Entropic and
+[53:37] signing up for for a thing here, right?
+[53:39] It's like you don't have to do LM Studio
+[53:41] MLX. You don't have to do anything. Just
+[53:43] run this thing. And and that's why I
+[53:45] think it's getting interesting now
+[53:46] because like people are now starting to
+[53:48] get the desire that maybe open weight
+[53:51] models should be as convenient to use as
+[53:54] um as entropic models.
+[53:56] hardware has gotten faster that has
+[53:58] opened up new and models have gotten
+[54:00] openweight open source models have
+[54:02] gotten sort of more effective at running
+[54:04] on more limited hardware um and the DX
+[54:09] of installing and running these models
+[54:12] is getting better
+[54:14] and let's talk about dwarf store
+[54:16] dwarfstar I think I think you need to
+[54:18] expand on that for people because my my
+[54:21] understanding of that is what anti-res
+[54:24] is doing is he's taking these models and
+[54:28] sort of like experimenting with
+[54:29] quantizing them down aggressively in
+[54:32] such a way to like optimize them for
+[54:33] coding um and doing a lot of
+[54:36] experimentation and testing to do that.
+[54:38] That's not really what's happening. But
+[54:40] like imagine imagine the following
+[54:41] what's happening up to a certain point
+[54:44] for you to get running a local coding
+[54:47] model you would basically either install
+[54:50] Lama or you would install MLX LM I think
+[54:53] MLXLM server or something uh or or or
+[54:57] the Lama CPP or uh like any of those. So
+[55:00] then you need a coding agent and you
+[55:02] need to manually configure your model to
+[55:04] have like the the right parameters. you
+[55:06] have to download the model from hugging
+[55:08] face or like that to some degree it was
+[55:11] sort of customized and I think that
+[55:13] nowadays if you go to Olama there's like
+[55:14] a way they configure pi for you so that
+[55:17] you can run your alarm server
+[55:18] &gt;&gt; I just want to make I just want to make
+[55:20] a comment Olama is my choice Canadian
+[55:23] founders that's that's all I want to say
+[55:27] &gt;&gt; so not shaming anyone is definitely
+[55:30] acceptable but what what what tried to
+[55:33] do with with DS4 initially Now it's
+[55:36] called dwarf star 4. Fortunately, I
+[55:38] always think it's death star 4 but DS4.
+[55:41] Um is that he wanted to see like how
+[55:45] good can I make the whole thing if I
+[55:48] just say like I want to take one model.
+[55:50] So he picked uh deepseek 4 flash
+[55:54] and then optimize the whole end to end
+[55:56] experience. So um not like initially he
+[56:00] didn't even talk through all the API.
+[56:01] didn't do responses and um and uh
+[56:04] completions and entropics model. He just
+[56:06] had one, but now it does actually
+[56:08] multiple APIs here. But the whole point
+[56:10] is like what if I have a model that's
+[56:13] optimized for agentic use that does the
+[56:15] uh on disk caches correctly that's
+[56:18] quantized so that the activation matrix
+[56:20] is also optimized for coding agents. Um
+[56:23] so basically in theory that model should
+[56:25] be pretty optimal according and because
+[56:28] it basically polished the experience end
+[56:30] to end he actually achieves right now
+[56:32] for a model that's 96 kilobytes
+[56:36] um what to me is actually superior
+[56:38] performance to smaller models on my
+[56:40] computer within the context of a coding
+[56:43] agent. Um so it's it's pretty damn fast.
+[56:46] It's so the prefill which is basically
+[56:49] like if you read a file and and sort of
+[56:51] load it into the context is I think
+[56:52] around 450 tokens per second if not more
+[56:55] and the tokens that it generates around
+[56:57] 25 26 tokens a second and it keeps that
+[57:00] performance more or less until um I
+[57:03] would say like 80% of the context.
+[57:05] There's a slight drop off but you can
+[57:07] fill a lot of the context um without
+[57:10] losing performance. And that's the first
+[57:13] time I had that experience of actually
+[57:15] feeling really convinced that I can use
+[57:19] a local model at all for anything
+[57:22] serious
+[57:24] &gt;&gt; for coding.
+[57:25] &gt;&gt; And I think that's good for coding
+[57:27] &gt;&gt; because I I think I think you've made
+[57:29] this comment. I've experienced this, but
+[57:30] like whisper models.
+[57:32] &gt;&gt; I also I also used like LLMs for like
+[57:35] text editing and a whole bunch of
+[57:36] things, but like for multi-turn code
+[57:38] generation,
+[57:39] &gt;&gt; stuff like this, um it wasn't there. And
+[57:41] the other thing I want to point out is
+[57:42] like if you have a model that is 96 GB
+[57:46] memory thing something like this it's
+[57:48] basically the two bit quantized model
+[57:52] there's actually enough parameters in
+[57:53] there that it actually has a lot of
+[57:55] knowledge which makes it an excellent
+[57:58] teacher too. So if you maybe for
+[58:00] programming it's not perfect yet but
+[58:01] like you can talk to it you can talk to
+[58:03] your problems you can they can do a
+[58:05] whole bunch of stuff and you really have
+[58:07] the feeling like that model has a lot of
+[58:09] knowledge which is totally not the case
+[58:11] for really small like 20 gigabyte um
+[58:15] like quen coder first of all super
+[58:18] educational thank you I had I said some
+[58:21] of those words quantise quantise my
+[58:24] experience has been similar where I have
+[58:25] tried to run models on my um framework
+[58:28] work desktop and also on my new Mac M5
+[58:33] Max. I'm sorry. I'm so feel guilty. Um,
+[58:38] one of the B bourgeois here. Um, I tried
+[58:42] like Gemma GMA 4. I tried, you know,
+[58:45] Quen or I tried like some of the low
+[58:47] memory variants of this to try to work
+[58:49] with them. And while I think I could
+[58:51] like they worked one, they just like
+[58:54] satured [laughter]
+[58:56] out all my resources. I just I just
+[58:58] couldn't see a world where I would
+[59:00] really use these. Maybe maybe on an
+[59:02] overnight job on the framework desktop.
+[59:05] Um I also made a mistake where I have
+[59:08] the 14-in smaller MacBook of the M5 and
+[59:11] I think this thing does not have the
+[59:13] heat dissipation of the larger machine
+[59:15] which is unfortunate. So basically it it
+[59:17] gets hot.
+[59:18] So, fun thing. Um, I uh I I I re
+[59:23] quantized
+[59:25] um the Deep Seek 4 flash model on my uh
+[59:28] M5 Max 13 inch or 14 inch, I forgot. And
+[59:33] um I ran out of power. [laughter]
+[59:37] So, the power 60 what like 80 watts, I
+[59:40] don't know what the power socket is. 80
+[59:41] watts plus the battery was not enough.
+[59:43] So, my battery drained from like 100%
+[59:46] fully plugged in to 2%.
+[59:50] &gt;&gt; One of the takeaways here is if you are
+[59:52] if you think you want to run a local
+[59:53] model, uh, you might want the 16 in.
+[59:56] One, I guess I agree with your statement
+[59:58] of like these are exciting. I'm I'd like
+[60:00] to know where they're going, but like
+[60:01] realistically, was I ever going to use
+[60:02] these? No, just for playing. The second
+[60:06] thing is yesterday
+[60:08] um randomly I decided to live stream
+[60:11] just as an experiment and I could talk
+[60:13] more about that. For the live stream I
+[60:15] just wanted to use other people's
+[60:16] products. A bunch of people had asked
+[60:17] like hey you know I made a I talked
+[60:20] about how people ask me to use their
+[60:22] products all the time and I'm like gh I
+[60:23] don't have time for that. But then but
+[60:27] the problem is I asked people to do the
+[60:28] same for my products. So, I thought I
+[60:30] would just take like a couple hours and
+[60:31] I would actually just try everybody's
+[60:32] software that they sent to me and I did
+[60:35] that for about an hour and
+[60:39] I I had used DeepSeek V4 Flash on Open
+[60:41] Code as part of that like I was
+[60:44] experimenting with stuff and I decided
+[60:45] to actually just kind of keep rolling
+[60:47] with my little software uh my little
+[60:49] piece of software I was making which was
+[60:50] a text adventure game um on Open Tuy
+[60:56] and so I was using Deep Seek V4 Flash um
+[60:58] but not the not Dwarf Star 4, not the
+[61:02] quantized version, just the original.
+[61:04] And I was working with it, it would, you
+[61:08] know, [snorts] aggressively refactor
+[61:10] things in the ways that I didn't want it
+[61:12] to and I had to go back. Like, you
+[61:14] really had to supervise it. And I made I
+[61:16] made actually the comment you just did,
+[61:18] which was, man, this reminds me like
+[61:20] this is powerful, but you really got to
+[61:22] look after it. And it reminds me of what
+[61:24] models were like a year ago. I said that
+[61:27] on the stream. And so it's actually fun
+[61:29] that you just actually kind of came up.
+[61:31] Is that fair? Like
+[61:33] &gt;&gt; I did a register.
+[61:35] &gt;&gt; No, that's okay. Almost nobody does. I
+[61:37] did it for the fun. Um we started off
+[61:39] the show to be like what what was going
+[61:41] on a year ago. And I think it's nice
+[61:43] just in a random kind of like gut check
+[61:45] headspace moment like that's where we
+[61:47] think this Deep Seek V4 Flash is.
+[61:49] &gt;&gt; And and maybe like for the audience um
+[61:52] Flash is a small one. They also have the
+[61:55] pro model which is which is way better
+[61:57] but I definitely can't run this on my
+[61:59] machine.
+[62:00] &gt;&gt; Um I mean it sort of can there are
+[62:02] always there's streaming support now in
+[62:04] these four but like um it's it's not
+[62:06] it's not the same thing. So like in
+[62:08] terms of size difference it's pretty
+[62:11] &gt;&gt; And if [snorts] you go through like an
+[62:12] actual vendor you know a model provider
+[62:15] it's crazy fast.
+[62:17] &gt;&gt; Uh uh as opposed to local. I I think
+[62:20] like one thing that sort of uh is is
+[62:22] worth reflecting on is if you're in the
+[62:26] in the space of not just using coding
+[62:28] agents to build but you're also in the
+[62:30] space of building an agent yourself,
+[62:34] you probably have discovered
+[62:37] that um
+[62:40] you want choice and you want competition
+[62:42] and you want the ability to buy models
+[62:45] from other people and you just generally
+[62:47] want there to be more openweight models.
+[62:50] And up until very recently, your choice
+[62:53] of openweight models was 100% Chinese
+[62:56] other than a very old llama model. And
+[62:58] that is slowly changing. Um um not only
+[63:01] are there companies in at least the US
+[63:04] that are training open weight models now
+[63:06] um Nvidia released one and even
+[63:09] Microsoft released one. Microsoft I
+[63:11] think even called it like ethically
+[63:12] trained or something which I found
+[63:14] interesting.
+[63:15] &gt;&gt; [snorts]
+[63:15] &gt;&gt; Um, now are they going to be like the
+[63:17] great models that we all want to use?
+[63:19] Probably not. Um, but I I really like
+[63:21] the fact that we see some some move
+[63:24] towards open weight models. Um, at least
+[63:26] partially.
+[63:27] &gt;&gt; Also, shout out to Coher.
+[63:31] Cohhere being a, you know, AI research
+[63:34] lab that also puts out models, but they
+[63:35] just put out uh, Command A+, which I
+[63:38] think is Apache 2.0, No, and that just
+[63:41] came out a couple weeks ago and it's 218
+[63:45] billion total, 25 billion active
+[63:47] parameters. Like I looked at that and I
+[63:48] was like, I don't know that I can run
+[63:49] that. Um,
+[63:52] but it exists. Like they literally put
+[63:53] on as the hardware minimum, you need one
+[63:56] B200 or, you know, two H100s. I don't
+[64:00] got those.
+[64:05] but I guess that's also interesting in
+[64:09] the sense of like there are more
+[64:10] companies pretty producing open source
+[64:12] models. Uh Gemma 4 is open source. Is it
+[64:16] open source or open weight?
+[64:19] &gt;&gt; It's definitely open weight. I don't
+[64:21] know what the license on it is. What the
+[64:22] licenses anyways these days?
+[64:24] &gt;&gt; I
+[64:27] it's just mere suggestions.
+[64:28] &gt;&gt; But they hadn't done that before, right?
+[64:30] like did they have openweight models
+[64:32] before?
+[64:32] &gt;&gt; I don't think so.
+[64:34] &gt;&gt; Right. So, I guess taking a moment to
+[64:37] say more companies are getting into the
+[64:39] game of of producing these these
+[64:41] openweight models
+[64:43] &gt;&gt; and there's also in in investor interest
+[64:45] in making sure that there are some
+[64:46] because like all of the portfolio
+[64:48] companies also need open weight models
+[64:50] for a little while until they get huge
+[64:52] and then they lock it down. But yeah, I
+[64:54] mean like there's this interesting
+[64:55] moment in time I think where um
+[64:59] not every company can
+[65:02] fully depend on entropic and openi
+[65:04] playing nice because entropic has a
+[65:06] tendency of kicking you out if you're
+[65:10] playing in the same spaces. They have a
+[65:12] end to end integrated app in there.
+[65:15] Okay, we started this show acknowledging
+[65:18] that for at least for Armen and I, it's
+[65:21] been about a year of,
+[65:24] you know, agentic coding loops with
+[65:28] Claude and then pi or just this whole
+[65:30] way that we work to today um for us kind
+[65:33] of started June 2025.
+[65:36] We we thought we'd jokingly make
+[65:38] year-long predictions like what where
+[65:39] will we be sitting?
+[65:42] Uh how will we look back at this at a
+[65:44] year? Any any thoughts on that to kick
+[65:47] us off?
+[65:49] &gt;&gt; Yeah, so um we already talked a little
+[65:52] bit about like what it looked like last
+[65:53] year and what has changed, what hasn't
+[65:55] changed. Um my suspicion is that pretty
+[66:00] much every single company next year is
+[66:03] going to pay for tokens in one form or
+[66:05] another at the very least for security
+[66:07] reasons. So I think like that that thing
+[66:10] will has established itself as an
+[66:12] absolute necessity.
+[66:14] &gt;&gt; Are you trying to say anthrop anthropic
+[66:15] will be a 100 trillion dollar company?
+[66:17] Is that what you're trying to say?
+[66:19] &gt;&gt; Well, I think that's sort of the
+[66:20] question. I think somewhere in like is
+[66:22] are we next year already like postbubble
+[66:25] or the peak of the bubble like this is
+[66:28] basically saying like everything is like
+[66:29] 1999 but you don't know if it's 97 98 or
+[66:32] 99 somewhere here in the next 24 months
+[66:36] I'm pretty sure the whole thing is going
+[66:37] to um go through some painful
+[66:40] readjustment but I I I don't want to say
+[66:42] it's definitely going to be next year.
+[66:44] &gt;&gt; So [snorts] you're just saying like a
+[66:45] year from now look everybody's
+[66:47] everybody's in on this. There's no more
+[66:48] there's no more like
+[66:51] uh Zigg holdouts. Is that what I
+[66:53] &gt;&gt; mean? There might be Zig holdouts, but I
+[66:55] think like you will not be able to run a
+[66:57] software company and not pay a ton of
+[67:00] money to get security audits and
+[67:03] security reviews and all of this going
+[67:05] because someone else will do like there
+[67:09] will be a there will be a racket of um
+[67:12] of of people like making your life
+[67:14] painful if you don't get ahead of it. Or
+[67:17] we could just have completely different
+[67:18] primitives that make those things not
+[67:20] matter.
+[67:20] &gt;&gt; Well, I mean and and sort of the
+[67:22] question I think the other question like
+[67:24] do I think that next year we were we're
+[67:26] actually all Ralph looping around and
+[67:28] like using multi- aent shenanigans and I
+[67:31] just don't think that's going to be the
+[67:32] case yet. I think the dark factory is
+[67:35] also not going to be here next year. I
+[67:37] think we're kind of plateauing on the
+[67:38] models a little bit. I don't think we
+[67:40] have this self enforcement and
+[67:43] &gt;&gt; where we have to press pause. I I had
+[67:46] this in our notes like will it feel
+[67:50] substantively different in a year and
+[67:53] I'm and let me precursor that to say
+[67:55] over the last few months like is GPT 5.5
+[68:00] really good? Sure. Did I feel like it
+[68:03] was such a tremendous
+[68:05] jump from 5.4?
+[68:08] I don't know. They both seem pretty good
+[68:09] to me. Like maybe maybe on a benchmark
+[68:12] and and people are like, "Oh, it's
+[68:13] good." But, you know, it was I just used
+[68:17] the top thing and the top thing like I
+[68:19] was getting results under 5.4 and I'm
+[68:21] getting results with 5.5. Does that make
+[68:23] sense? Um, and David Kramer, our friend
+[68:27] at Sentry, made this comment like he
+[68:29] thinks Opus 4.6 is better than Opus 4.8.
+[68:32] Like, we're getting to the point now
+[68:33] where people can't even tell, right?
+[68:36] Well, we we're also getting to the point
+[68:37] and I think it's really important. We're
+[68:38] getting to the point of not just
+[68:40] diminishing returns, but we're getting
+[68:41] to the point of look I'm not saying like
+[68:44] diminishing returns instead of like
+[68:47] the models are sort of like as curving
+[68:48] out. I don't think it's that's happening
+[68:50] but I think like we're the way we're
+[68:52] training these models like the way the
+[68:54] models got really good like that that
+[68:57] sort of trend does not fully continue
+[68:59] and in some cases the models are getting
+[69:01] worse now because the reinforcement
+[69:03] learning is like very very targeted like
+[69:06] there there's certain use cases where
+[69:07] like the latest Opus models perform
+[69:09] worse than older OPUS models um if you
+[69:13] move off the the welltrodded path um so
+[69:16] there's right now at least we're sort of
+[69:18] on on um certain things get better
+[69:21] because this is where the training goes.
+[69:23] But like if you're doing something that
+[69:25] previously still worked because the
+[69:27] reinforcement learning wasn't quite so
+[69:30] reinforcing. Um like the older models
+[69:32] might actually do better. Um so there
+[69:34] definitely some some some evals that you
+[69:36] can run yourself where older models are
+[69:38] actually better. If the way that you're
+[69:40] building software is just running loops
+[69:42] to convert software from one language to
+[69:44] another, you might be surprised that
+[69:47] future models get really good at that,
+[69:48] but they suck at other things.
+[69:50] &gt;&gt; Uh, I mean, Ben, will we see many
+[69:53] companies next year rewriting their
+[69:55] legacy? Um, like for instance, this is
+[69:57] like when you go to the the gate on an
+[69:59] airport, you're going to see like a like
+[70:02] a whatever like a service worker
+[70:05] punching in um on a keyboard that
+[70:08] seemingly is connected to a Citrix
+[70:10] remote desktop thing with a Unix looking
+[70:13] terminal user interface from the 70s.
+[70:16] Are they going to rewrite that with uh
+[70:20] the next generation of models into
+[70:22] something modern or are those companies
+[70:23] are like, "No, this is actually fine.
+[70:27] &gt;&gt; It's got like an interface or whatever
+[70:28] and it's solid. Why would I touch that?"
+[70:30] You know,
+[70:31] &gt;&gt; um because now [clears throat] they're
+[70:33] finding all the security issues.
+[70:37] &gt;&gt; By the way, I want to make a I want to
+[70:38] share an anecdote right now about a way
+[70:41] that LLMs failed that I think is very
+[70:44] interesting. Okay.
+[70:47] that might speak to the future.
+[70:49] Um, we had a problem at modem recently.
+[70:52] Uh, so we use a mix I call it the
+[70:54] forbidden stack versel and cloudflare
+[70:57] together in a way that no one in in
+[70:59] which in where nobody's happy. Um, and
+[71:03] we use workers and workers have we use
+[71:06] workers for like some pipeline stuff and
+[71:08] agent coordination agent coordination
+[71:10] between
+[71:12] um sessions on the web, sessions on
+[71:14] Slack. I'm not going to go too much into
+[71:16] that. Maybe another blog post or
+[71:18] something. But the thing with workers,
+[71:21] Cloudflare workers specifically that we
+[71:24] have talked about on other on another
+[71:26] episode is that they have a a memory
+[71:28] limit of like 128 megs. And if you load
+[71:32] too much JavaScript code into a work
+[71:33] curve, they usually they usually kind of
+[71:35] like blow up this way. um like you load
+[71:37] 20 20 megabytes worth of JavaScript code
+[71:40] once that executes and just kind of
+[71:42] fills up you know
+[71:44] that can balloon up to like a 100 megs
+[71:46] once the code actually starts running
+[71:48] and then the worker can go out of memory
+[71:50] and fail. Okay,
+[71:53] this was happening to us for a
+[71:55] non-trivial percentage of workers in
+[71:57] production a week or two ago, two weeks
+[72:00] ago, let's say. And it was very
+[72:03] problematic to the degree that three of
+[72:06] us, three of us in this company tried to
+[72:09] solve this problem with agents. All
+[72:12] right. Okay. Three of us using different
+[72:16] models, harnesses, whatever. I was
+[72:19] probably using GPT55, but I also tried
+[72:22] Opus on this. Like I tried multiple
+[72:24] models. How do we solve this memory
+[72:26] problem? Okay. And at one point, Opus
+[72:30] had like
+[72:32] Now, I think I'm clever and I've done
+[72:34] this before. I've solved memory leaks
+[72:36] with agents and I do recommend this is
+[72:40] if you want the agent to solve the
+[72:42] memory leak, you actually create an
+[72:44] environment where it can monitor the the
+[72:46] memory, right? Like actually inspect the
+[72:48] memory because if you don't do that,
+[72:50] they'll actually just go and make
+[72:51] hypotheses for example um even on 48.
+[72:57] Okay, did that and it came up with an it
+[73:00] came up with a with a contrived example
+[73:02] of like well look you're cloning this
+[73:03] JavaScript object over here that's
+[73:05] duplicating the amount of memory for
+[73:06] every every object and look I've
+[73:09] demonstrated a test case where I pump
+[73:11] 10,000 records in here and the memory
+[73:12] balloons and we could solve this all
+[73:14] right a lot of solutions like that which
+[73:17] are sort of like technically correct
+[73:20] right like that is true it found
+[73:22] something that is true
+[73:25] none of these things solved the
+[73:27] nothing. Okay.
+[73:29] And then like 24 hours later of us and
+[73:32] like look we like I I took that I was
+[73:34] like well I look I guess it demonstrates
+[73:36] that it saves memory and I put it on
+[73:38] production did jack did nothing right
+[73:41] did not solve the problem. Okay. This is
+[73:44] a real problem with LLMs. And by the
+[73:45] way, this is what I talk about when I
+[73:47] mean psychosis. And I've I've talked
+[73:49] about this like
+[73:51] &gt;&gt; you believe [laughter]
+[73:53] &gt;&gt; Yeah. LLMs will you'll be like, "Hey,
+[73:54] can you investigate this?" And they'll
+[73:56] they'll give you like 10 10 possible
+[73:58] problems to explore and you're like,
+[73:59] "Oh, well, let's go check those out."
+[74:01] But the reality is the answer is often
+[74:03] like 11 and 12 that it never brought up.
+[74:06] I just didn't even know to find it. And
+[74:08] in this case, the actual example, okay,
+[74:11] the actual solution which um Mike, our
+[74:14] CTO, found was he was like, "Wait a
+[74:16] minute, didn't we have this happen
+[74:17] before? What did we do before?" And he
+[74:20] discovered that it was actually just
+[74:21] that we had imported a new package.
+[74:24] Okay. And that package had brought in a
+[74:26] whole bunch of extra code which put the
+[74:28] like, you know, distribution once it
+[74:31] once it once that code just loaded up on
+[74:32] the worker, that was the problem. That
+[74:34] was it.
+[74:36] No amount of vibing with the LLM brought
+[74:38] us here. And what pains me is this is
+[74:40] like such an obvious answer and it was
+[74:41] an answer that we'd all discovered in
+[74:43] the past.
+[74:46] Okay? And we didn't think about it. We
+[74:48] didn't use our brains, right?
+[74:50] [clears throat]
+[74:51] And this is with absolutely like we
+[74:55] probably spent hundreds of dollars of
+[74:56] tokens between us. [laughter]
+[74:59] If you would have spent tens of
+[75:00] thousands of tokens, they would have
+[75:02] worked.
+[75:05] A year from now, do you think that stuff
+[75:09] like that will stop happening?
+[75:12] &gt;&gt; I don't see it.
+[75:15] &gt;&gt; Louder for the whole audience.
+[75:18] &gt;&gt; Look, look, we the world might be
+[75:20] fundamentally looking different next
+[75:21] year for like reasons unrelated to AI.
+[75:27] it took us a year to get from
+[75:32] basically what the experience was that
+[75:34] we remember from like Sonet 4 or 37 or
+[75:38] something to like whatever we having
+[75:41] right now. And that was a tremendous
+[75:43] change, right? But it's like it didn't
+[75:45] really change any of the fundamental
+[75:48] things. We're just trying to do
+[75:49] everything really quick now with way
+[75:51] worse code.
+[75:53] We're doing it faster and the code is
+[75:55] worse. But we but but everything else is
+[75:58] sort of the same. Like solving the
+[76:00] problems is the same. Like like yes,
+[76:03] it's easier to vibe up infrastructure,
+[76:05] but it's still
+[76:08] infrastructure is still hard. Like
+[76:10] memory is still the same. It's like it's
+[76:12] just like it costs more to buy memory
+[76:14] now. But like like the hard things
+[76:17] haven't really tremendously changed and
+[76:19] there's not a good reason why it would
+[76:20] change. the number of people buying our
+[76:22] software is still going to be the same.
+[76:23] It's going to be the same in a year from
+[76:25] now, too. Maybe they're going to have
+[76:26] less money because of inflation,
+[76:28] whatever. But like it's still like I
+[76:32] just don't really see why we would all
+[76:36] be Ralph looping.
+[76:38] Like it doesn't
+[76:40] like I really want to watch this episode
+[76:42] a year from now and say like I was so
+[76:44] wrong on this and we are in fact all
+[76:45] Ralph looping like crazy. But
+[76:48] &gt;&gt; right now I have a hard time imagining
+[76:49] it. The point is the Ralph loop wouldn't
+[76:53] have fixed this.
+[76:55] You could argue we were running a Ralph
+[76:56] loop because there was three of us,
+[76:58] right, over 24 hours just poking, you
+[77:00] know, like not not an actual autonomous
+[77:02] Ralph loop, but look, there was three
+[77:05] humans in the loop driving agents,
+[77:07] right? Like a lot of parallelism didn't
+[77:09] get the answer. And here's my argument
+[77:12] for what might get worse. Why did it not
+[77:15] find that answer? Well, because here's
+[77:18] my theory.
+[77:21] It's it was a Cloudflare worker oddity.
+[77:24] And you know what? There's no more Stack
+[77:26] Overflow. There's no more people writing
+[77:28] blog posts. There's no one writing, gee,
+[77:30] I hit this painful problem with
+[77:31] Cloudflare workers and here's how I
+[77:33] solved it. So, how does the agent index
+[77:35] this? The reason it kept promoting all
+[77:37] these other answers is because it was
+[77:39] taking this corpus of knowledge that it
+[77:41] had and trying to apply it to um you
+[77:46] know a a runtime environment that it
+[77:47] didn't understand. That's like how I
+[77:50] look at it.
+[77:50] &gt;&gt; But but it's also it's also worse
+[77:52] because like imagine like I I see the
+[77:54] issues now they're being filed
+[77:55] everywhere on GitHub. It's like even if
+[77:57] they're there and even a human share
+[77:59] something like that human might be an AI
+[78:02] and it might even not be right because
+[78:04] it's already regurgitated trash.
+[78:06] &gt;&gt; I think dead internet theory is real and
+[78:07] I think that it's actually going to sort
+[78:09] of like I actually think it will
+[78:13] negatively impact our progress on
+[78:15] things. I mean it should like I I want
+[78:18] to know how the the model apps are going
+[78:20] to improve their training data selection
+[78:24] to get rid of all this [&nbsp;__&nbsp;] because I
+[78:27] can tell you handle labeling now is
+[78:30] really hard on the PI issue tracker as
+[78:33] an example because it takes me too long
+[78:35] to figure out what's a good agent
+[78:36] generated issue versus was a trash agent
+[78:39] generated issue and news flash 90% of
+[78:43] issues are agent generated.
+[78:46] If I were as wealthy as anthropic, what
+[78:47] I would be right now is actually hiring
+[78:50] companies to write software without AI.
+[78:57] It's the only way. Like look, just hire
+[79:00] a thousand engineers, write code, solve
+[79:02] problems, write blog post. Dear God,
+[79:04] please write, you know, write solutions
+[79:07] cuz where's the incentive? Oh my I find
+[79:10] I can imagine all this like uh [snorts]
+[79:12] morally really questionable ideas
+[79:17] just fence off some humans somewhere and
+[79:19] deprive them of AI.
+[79:22] But we we already know we we already
+[79:24] know that that this is partially
+[79:25] happening because like all these
+[79:26] companies started to buy data sets like
+[79:29] crazy
+[79:30] &gt;&gt; and like and this whole thing like with
+[79:32] with the the wall of tokens at at Meta
+[79:35] in part was just they needed more test
+[79:36] data and they're like recording every
+[79:38] human now with all the interactions
+[79:40] they're doing. There's a there's a
+[79:41] startup in might be the US
+[79:45] that basically cleans your house for
+[79:48] free, but the worker that cleans your
+[79:51] house is being video recording the whole
+[79:53] time
+[79:54] &gt;&gt; and then they're going to sell this to a
+[79:56] ro company. Like it's all insane.
+[79:59] Honestly, it's all insane. This is why
+[80:01] like maybe in the next maybe maybe the
+[80:03] crash is going to come in the next 12
+[80:04] months. I don't know. But [laughter]
+[80:07] &gt;&gt; yeah, I guess I'm taking a moment to say
+[80:08] that part of the reason why they're so
+[80:10] good is that we had all this incredible
+[80:12] corpus of knowledge and the the work the
+[80:15] job was to smash all of that right into
+[80:18] an LLM increasingly with increasing
+[80:22] effectiveness.
+[80:23] Um, and they do have recency, right? You
+[80:26] know, when is the training date? But I
+[80:28] do I wonder if when it's garbage in and
+[80:32] garbage out, how do you how do you know?
+[80:34] Um I have um a project called slop scan
+[80:39] which [laughter]
+[80:43] um [snorts] tries to identify like slop
+[80:45] typescript coding patterns. And the way
+[80:47] that that the origin of it is that I pin
+[80:51] a bunch of notable open source projects
+[80:53] from a variety of different um like
+[80:56] solving different problems like a web
+[80:57] app or a library and I pin them. I call
+[81:00] it the epoch date
+[81:03] like of the before times. I put January
+[81:05] 1st, 2025. So as like so I don't just
+[81:10] take out these notable open source
+[81:11] projects today. I take I took them and
+[81:13] pin them to their checkouts from the
+[81:16] before AI era and then compare them to
+[81:20] like known slot repositories and then I
+[81:23] I extract the patterns. Um,
+[81:27] and what I'm trying to say is that value
+[81:30] is strictly in the past. You see what
+[81:32] I'm saying? Um, and if we're not
+[81:35] producing those things, if we're not
+[81:36] producing like who is producing that,
+[81:39] then how are we going to get how are
+[81:40] these going to keep getting better? Um,
+[81:42] right.
+[81:45] Yeah. You know what the problem is? I
+[81:46] think
+[81:48] we
+[81:50] know that we shouldn't have slop,
+[81:53] but we have So, we we had this tweet
+[81:56] earlier that we discussed with like
+[81:58] Peter and Boris talking about like we
+[82:00] all should be looping.
+[82:03] There was this discussion hanging on and
+[82:05] I actually found it again, but like
+[82:06] there was this discussion hanging on
+[82:07] like someone quote tweeted this whole
+[82:09] thing and they said like moving from
+[82:11] writing prompts to writing loops is
+[82:13] something I'm still trying to wrap my
+[82:14] head around. So far, okay, it's just
+[82:17] like an engagement tweet, right? The
+[82:19] first reply was what does it even mean
+[82:20] to write a loop? What does it look like?
+[82:22] And the next reply was ask whatever
+[82:25] aentic coding agent you teach to or ask
+[82:27] rock to summarize what boys and be have
+[82:29] been tweeting about with respect to
+[82:30] moving from prompting to looping.
+[82:33] So like this this like it's not even
+[82:35] human discussion anymore. It's like well
+[82:37] I don't want to explain this to you. Ask
+[82:39] your machine.
+[82:41] [clears throat and laughter]
+[82:41] &gt;&gt; I this is like this whole thing. It
+[82:44] produces so much useless junk on the
+[82:47] internet.
+[82:48] &gt;&gt; It's all going to go back to training.
+[82:51] &gt;&gt; All right. final topic because this is
+[82:52] relevant. I now know how we can bring
+[82:54] this in.
+[82:56] We talked earlier about how we're making
+[82:58] a lot of software but no one's using it.
+[83:01] Um, and you we had in our notes, Armen
+[83:04] wrote this down like why is it that
+[83:05] every app that people seem to be
+[83:07] producing right now are like is like a
+[83:09] three column personal agent harness
+[83:12] multiplexer with like a tree view on the
+[83:15] left and an agent in the middle and you
+[83:17] know diffs or something on the right.
+[83:19] I've seen so many of those. Are we
+[83:21] making anything good? It seems to me
+[83:24] that like why why do you see so much of
+[83:27] that? The reason is they're built on
+[83:30] some really powerful primitives
+[83:32] uh diffs.com and hunk uses diffs
+[83:36] um from pure computer company and they
+[83:38] also released trees which is kind of
+[83:41] like diffs. It's like a tree view,
+[83:43] right? And then you've got uh lib ghosty
+[83:47] um which is powering like a terminal
+[83:49] view. Where I'm going with this is the
+[83:52] products that you're seeing don't feel
+[83:54] like they're a product of agentic
+[83:56] coding. They actually just feel like
+[83:58] they're a product of these really
+[83:59] fantastic libraries, right?
+[84:03] What you see what I'm saying? Like even
+[84:05] armed with AI coding, what is it that
+[84:07] people can make? Well, they can look at
+[84:08] some libraries that already exist. Most
+[84:10] of which, by the way, were actually
+[84:12] written by hand.
+[84:15] not not lib ghosty but I you know I
+[84:18] think there's an asterisk on that
+[84:19] because it was built off um certainly a
+[84:22] lot of ghosty was written before AI
+[84:23] right
+[84:25] um and I know that diffs I use diffs
+[84:27] before AI um like as a product the
+[84:30] product surface area existed before AI
+[84:33] you see where I'm going with this like I
+[84:36] know that there are some products that
+[84:38] are sort of like very agent agent agent
+[84:41] attached where people are literally
+[84:43] saying make it look more like the other
+[84:46] Mhm.
+[84:47] &gt;&gt; Like monitor this repository because
+[84:49] we're in the same space. If they launch
+[84:50] an interesting feature, make a purity
+[84:53] document and then we're going to like
+[84:54] explore it.
+[84:55] &gt;&gt; Dax's keynote at AI Miami. I don't know
+[84:58] if you watched it, but it was like you
+[85:00] don't have any good ideas. And he
+[85:02] basically makes this argument which is
+[85:03] like you know you believed that you had
+[85:06] all this incredible brilliant you know
+[85:08] ideas for making software and businesses
+[85:10] and if only you could code faster then
+[85:13] it would happen. And look, now you can.
+[85:17] And yet, you know, where where did that
+[85:20] bring you? Back to me. You got nothing.
+[85:23] And
+[85:26] we should be seeing more software. But
+[85:28] if everybody's, you know, why isn't why
+[85:30] aren't people adopting all the software
+[85:31] we're making? Well, look, we don't need
+[85:34] 400 three column
+[85:36] agentic coding multiplexers. We don't
+[85:38] need that. the primitives are the bigger
+[85:42] unlock to what's possible than the AI
+[85:44] coding frankly. That that's like my big
+[85:47] takeaway.
+[85:48] &gt;&gt; Yeah. I mean like infrastructure was
+[85:49] always a good thing to be in because
+[85:52] like you're you're [snorts] more or less
+[85:54] selling the shovel, right?
+[85:58] [sighs] It's just like the the has
+[86:00] become really hard to monetize. Like can
+[86:02] Pierre make money off diffs?
+[86:04] Can Mitchell make money off Ghosty?
+[86:07] &gt;&gt; They don't. No, they're making money off
+[86:08] of other things, but um
+[86:10] &gt;&gt; who is making money at the end of the
+[86:11] day? The token factories.
+[86:13] &gt;&gt; The the token fac. Yeah, they're making
+[86:15] the most money. ignoring the business of
+[86:18] it. I guess it's like [clears throat] I
+[86:21] actually think this this is and can
+[86:23] continue to be an incredible moment for
+[86:24] open source. I think people should be
+[86:26] building more primitives, frankly. Um
+[86:29] and maybe there will be creative ways of
+[86:31] using that like
+[86:31] &gt;&gt; uh well actually I I don't want people
+[86:33] to build more primitives. I think I want
+[86:35] bu people to build stronger primitives.
+[86:37] &gt;&gt; Yeah. Yeah, people
+[86:39] &gt;&gt; like I don't need
+[86:41] 20,000 competing sandboxing solutions,
+[86:44] right? But that's what's happening right
+[86:46] now. It's like people are more like I
+[86:47] guess I think we discussed this already
+[86:50] before, but like talking to humans is
+[86:52] hard. Talking to machine is easy. So
+[86:54] people are less likely to go into engage
+[86:56] in a healthy discourse on an issue
+[87:00] tracker to get a project into the right
+[87:01] direction. They're just like, "Oh, [&nbsp;__&nbsp;]
+[87:03] it. I don't want to deal with this
+[87:04] human. I'm just going to have my clanker
+[87:06] do it and build it for myself. And that
+[87:10] just seems like the wrong solution to
+[87:13] this problem. But that's so common now.
+[87:17] It's like instead of like, oh, this this
+[87:19] person doesn't merge my porters fast
+[87:21] enough. This person doesn't really want
+[87:23] to do what I want to do, so I'm just
+[87:24] going to build my own. Like, you
+[87:26] wouldn't have done this before. It would
+[87:27] have been ridiculous to build a one-man
+[87:32] library instead of using someone else's
+[87:34] well-maintained one.
+[87:35] &gt;&gt; Look, hunk is an interesting experiment.
+[87:39] Um, there's a lot of people who've made
+[87:40] diff tools. Look, you know, I'm I like
+[87:42] other people saw diffs.com and I was
+[87:44] curious to see if I could apply that
+[87:46] like would it actually render on the
+[87:47] terminal and surprise I think I must
+[87:49] have been one of the first because the
+[87:50] answer was yes and it was very
+[87:51] performant. Um,
+[87:54] but I want to make a comment which is
+[87:57] people didn't work use it a lot on week
+[87:58] one or week two or week three or week
+[88:01] four. It was like on week eight of like
+[88:05] 300 commits in constant iteration.
+[88:08] People had submitted a bunch of like
+[88:09] there had been poll requests, there had
+[88:11] been merges. At that point, people
+[88:13] started using it a lot. Um, this is a
+[88:15] little just a little bit of a segue here
+[88:17] which is
+[88:20] this like fast fashion
+[88:22] like fast fashion of software is what
+[88:24] we're experiencing right now where
+[88:26] people are building something and
+[88:27] they're like, "Hey, look at this." And
+[88:28] if they don't like if people don't use
+[88:30] it, they throw it away and go and try to
+[88:32] find some other flash in the pan thing.
+[88:34] Folks, my advice to you is, uh, have
+[88:36] some conviction and work on things a
+[88:37] little bit longer. That's one thing. But
+[88:39] also, um, yeah, you should use
+[88:41] libraries. I used a lot of libraries.
+[88:43] Um, I actually have to ask the LMS to
+[88:47] use libraries quite a bit.
+[88:50] Have you noticed that?
+[88:52] &gt;&gt; I mean, they're they're definitely I
+[88:54] mean, I like when people are like using
+[88:56] fewer dependencies, but I seem like
+[88:58] they're extensively pushed towards not
+[89:00] using something at this point.
+[89:02] &gt;&gt; Picking your spots, you know? Yeah.
+[89:03] Yeah. Extens. Yeah. That they are
+[89:04] extensively driven. Hey, you want to
+[89:07] hear an idea of why they do that? Do you
+[89:09] want to Why do you think they do that?
+[89:11] &gt;&gt; Because they use my tokens.
+[89:12] &gt;&gt; Oh [&nbsp;__&nbsp;] [laughter]
+[89:15] How does Why does it always come back to
+[89:17] that?
+[89:18] I mean, the problem is like even if you
+[89:20] don't want to be driven by that
+[89:21] incentive in the company of like the
+[89:23] token seller, it's going to be really
+[89:25] hard not to be driven by that.
+[89:27] &gt;&gt; This was our year-long predictions that
+[89:29] we just kind of turned into a talk about
+[89:30] some some stuff. Um
+[89:33] I hope in a year that there are really
+[89:34] cool projects like diffs and trees and
+[89:37] lib ghosty and and um the the canvas one
+[89:42] traw I think is another big one. Like
+[89:44] just think like what those have been
+[89:46] huge unlocks to a whole bunch of ideas.
+[89:48] Um, I have no idea what the next one
+[89:51] will be, but I'm I'm excited that people
+[89:52] will make some of them. The fact that
+[89:54] we've only got like I can only name
+[89:55] like,
+[89:57] you know, five off the top of my head.
+[89:58] If I really thought about it, there's
+[89:59] probably like another five more I could
+[90:01] think of like in the last year. Um, with
+[90:04] all the languages that we talk about
+[90:05] with, you know, the value that these LMS
+[90:08] provide, there should be a lot more. So,
+[90:11] will there be a lot more?
+[90:14] I'm going to say no. [laughter]
+[90:17] And that's because I don't believe I
+[90:19] don't believe in the Ralph loop agentic
+[90:21] loop. I think that if you look at those
+[90:23] all of those libraries, they were driven
+[90:25] by people with taste with people in the
+[90:26] loop. And I've seen no evidence of
+[90:29] anybody building some like really great
+[90:31] library like that with with just a b
+[90:34] with a LM in the loop. It's a lot. I've
+[90:36] I've I use a lot of tools. Maybe this is
+[90:39] like um something I'll do a video on.
+[90:40] Like I built a bunch of tools to help me
+[90:42] manage hunk. Um, I've started to use
+[90:44] modem to manage hunk because I realized
+[90:47] that we are building a product manager
+[90:48] and we should probably I should probably
+[90:51] have it help me and it has been doing
+[90:55] my project isn't even super popular. I I
+[90:58] don't I could not keep up without agents
+[91:00] just for the maintenance frankly. Um, so
+[91:04] I don't know. Yeah, I 80% sure.
+[91:06] &gt;&gt; Do you think that do you think the Linux
+[91:08] kernel is going to be predominantly LLM
+[91:11] maintained? I feel like people should
+[91:13] know this about me. I'm more of a user
+[91:15] of software. Armen is a like
+[91:17] &gt;&gt; but I'm I'm not a like I I don't hang
+[91:19] out in a Linux kernel man maintainer
+[91:22] mailing list to figure out what's going
+[91:23] on this project. Like I I really don't
+[91:25] know. I don't know what percentage of
+[91:26] Linux code today would be maintained
+[91:28] this way. I think there would be
+[91:29] probably a lot of discussions still
+[91:30] about the legal lease of like
+[91:34] &gt;&gt; excessive like LLM in like a core
+[91:37] infrastructure component. I really don't
+[91:38] know but like I I I I'm pretty sure that
+[91:42] a year from now
+[91:44] &gt;&gt; there will be a lot of AI generated code
+[91:46] in the kernel because it will be very
+[91:48] hard to keep it away. What the
+[91:51] percentages I don't know. Do you believe
+[91:54] OpenAI or Enthropic or any model
+[91:56] provider any in a year or further will
+[91:59] change their licensing agreement to say
+[92:01] that code created by their LLMs is
+[92:06] actually their copyright and they're
+[92:07] giving you a license to use its
+[92:11] already indicated that a machine can't
+[92:14] generate. But like I think I think the
+[92:16] question is like do we going to see some
+[92:18] competition from these? Because I'm
+[92:19] pretty sure like
+[92:22] if it hasn't happened in a year from now
+[92:24] yet, people should be upset about having
+[92:27] so much economic power being just
+[92:29] resting with two maybe three large
+[92:32] massive corporations. But that's just my
+[92:35] optimism talking. What's wild about
+[92:37] that, I have to highlight this for
+[92:39] people, is okay, obviously all these
+[92:41] corporations are in the US, but if you
+[92:43] look at it on just like a nation state
+[92:44] scale, there's actually only a handful
+[92:47] of countries that even have possess
+[92:50] anybody making models, right? And as far
+[92:54] as I know that that's obviously the US
+[92:56] and China and then after that it thins
+[92:58] out quite a lot um to like the UK with
+[93:02] Deep Mind, I think, which is technically
+[93:03] part of Google. So, and then Mistl,
+[93:08] is it Mistl? Is that what I'm thinking
+[93:09] of?
+[93:10] &gt;&gt; Mistrol, I guess,
+[93:11] &gt;&gt; in France and Coher in Canada. And then
+[93:14] like is there anybody else?
+[93:16] &gt;&gt; It's very small. Like even even if a
+[93:19] country that gets away with actually
+[93:21] having a lab like France with Mistral,
+[93:23] it's small. But that's what I'm trying
+[93:27] to say is we we think about
+[93:28] concentration of of this power in the
+[93:33] companies but actually if you step out
+[93:34] it's incredibly concentrated within one
+[93:37] country and then
+[93:39] even after that a set of countries and
+[93:43] then nothing.
+[93:46] Well, I don't know if we made any
+[93:47] tremendous year-long predictions, but
+[93:51] there's always going to be innovation
+[93:52] that comes out of left field that you
+[93:54] don't expect that changes the game. And
+[93:57] it's hard to predict what that's going
+[93:58] to be. I don't know what it's going to
+[93:59] be, right? Um, Google came out and was
+[94:03] like, hey, you know, turns out we can
+[94:04] use a hell of a lot more a lot less
+[94:06] memory, right? That could have profound
+[94:08] effects in the future. There could be a
+[94:09] lot of stuff like that. I think there
+[94:11] will be I'll make one prediction that I
+[94:13] think one tremendous discovery will
+[94:14] happen in the in a year.
+[94:17] I have no idea what it is.
+[94:20] &gt;&gt; Right.
+[94:20] &gt;&gt; There will be hopefully one. [laughter]
+[94:23] All right.
+[94:24] &gt;&gt; Well, thanks everybody. Um I hope this
+[94:27] didn't suck. Till next time.
+[94:29] &gt;&gt; Bye-bye.

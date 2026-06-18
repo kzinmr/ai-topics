@@ -73,6 +73,13 @@ Ben's tool journey reflects the broader industry shift: started with GitHub Copi
 - **Principled plea**: "I want the slow, painful, hard work to be rewarded. Not the [bullshit]." The closing statement of Ep 6 — a call for sustainable product-building over vibe-coded shortcuts.
 - **Modem as product agent**: Exploring Modem's evolution from agentic PM toward "product agent" — helping with product work, not coding work. "I'm beginning to think about it more. Humor me... we have coding agent harnesses. I believe it's a product agent."
 - **GitHub rejection**: "This idea that we have to piggyback on top of GitHub, I think everybody's rejecting that increasingly. Companies don't want to spend $250,000 per engineer."
+
+#### Ep 7: Token Economics & Dead Internet (Jun 2026)
+- **Token spend as unprecedented metric**: "Never before in our industry have we had a sort of metric that correlates so closely to dollars." Drew the parallel to MAU/DAU — those metrics didn't directly translate to revenue, but token spend does.
+- **Psychosis refined**: Clarified AI psychosis as "subtle perspective warping" — not a fugue state but enough to distort judgment. Documented the memory leak debugging failure (3 engineers, 24 hours, agents wrong) as proof.
+- **"Fast fashion of software"**: Coined this term for the pattern of building, failing to get adoption, and discarding. "Primitives are the bigger unlock to what's possible than the AI coding."
+- **Dead internet is real**: "I think dead internet theory is real and I think that it's actually going to negatively impact our progress." His Slop Scan project pins open-source repos to pre-AI checkpoints to extract clean patterns — "the value is strictly in the past."
+- **No evidence of LLM-built libraries**: "I've seen no evidence of anybody building some really great library with just an LLM in the loop. It's people with taste, people in the loop."
 - **Incentive misalignment**: Identified the gap between providers ("don't worry about spend") and users (efficiency-focused) as a fundamental structural problem.
 
 ### Recurring Philosophical Themes
@@ -125,3 +132,4 @@ Modem targets the gap between agent-generated code and engineering team workflow
 - [[raw/articles/2026-03-12_state-of-agentic-coding-ep4]] — Ep 4: Quality alarm, slop forks
 - [[raw/articles/2026-04-10_state-of-agentic-coding-ep5]] — Ep 5: AI psychosis, slow-down
 - [[raw/articles/2026-05-11_state-of-agentic-coding-ep6]] — Ep 6: Principled plea, GitHub rejection
+- [[raw/articles/2026-06-12_state-of-agentic-coding-ep7]] — Ep 7: Token economics, language elimination, dead internet

@@ -1,3 +1,14 @@
+## 2026-06-18 — SOC Episode 7 Wiki Ingestion (YouTube transcript)
+
+- **Source**: [State of Agentic Coding #7](https://youtu.be/QqtW2q9ftu0) — Armin Ronacher and Ben Vinegar (Jun 12, 2026, 94:31)
+- **Transcript**: `transcripts/2026-06-12_state-of-agentic-coding-ep7.md` + `.en.txt` + `.en.vtt` (2,481 segments, ~109K chars)
+- **Raw article**: `raw/articles/2026-06-12_state-of-agentic-coding-ep7.md` — 8 chapters, key insights, notable quotes
+- **Updated**: `concepts/coding-agents/state-of-agentic-coding.md` — Added episode 7 to table, insights, hosts trajectories, 3 new recurring themes (Language Elimination, Dead Internet, Local Models), 5 new predictions
+- **Updated**: `entities/armin-ronacher.md` — Added SOC podcast section to Recent Themes
+- **Updated**: `entities/ben-vinegar.md` — Added ep7 to episode list and key positions
+- **Updated**: `wiki/index.md` — Concept page updated to 7 episodes, transcript entry added
+- **Key ep7 themes**: Neither host practices autonomous looping; token spend as unprecedented dollar-correlated metric; Claude credits separating programmatic access; Bun Zig-to-Rust as most significant slop fork; Ruby/Zig as Louisiana French (human-first languages dying); DwarfStar 4 local model breakthrough; memory leak debugging failure (3 engineers, 24hrs, agents wrong); dead internet theory confirmed (90% agent-generated issues); fast fashion of software; concentration of power in 2 countries
+
 ## 2026-06-18 — Blog wiki ingest (recovered from triage failure, 1 reference enriched)
 
 - **Pipeline recovery**: blog-triage upstream failed to parse JSON output. Checkpoint file at `triage_latest.json` contained valid decisions from prior run with 4 takes (already processed), 4 references, 12 skips.
