@@ -220,3 +220,4 @@
 ### Source
 - https://jacobxli.com/blog/2026/machine-studying/
 
+- 2026-06-18 update concepts/post-training/rl-algorithms-for-llm-training.md — add GSPO section (arXiv 2507.18071, Qwen Team)
