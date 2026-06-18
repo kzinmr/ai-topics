@@ -297,6 +297,14 @@ Khattab's decomposition philosophy aligns with Anthropic's Harness Engineering p
 
 ---
 
+## Machine Studying (2026)
+
+With Jacob Xiaochen Li and Rick Battle, Khattab introduced the **[[concepts/machine-studying|Machine Studying]]** framework — the problem of agents autonomously developing *expertise* from a corpus. This extends his decomposition philosophy: rather than treating knowledge internalization as a monolithic "train on data" or "retrieve from vector DB" problem, machine studying decomposes it into three paradigms (self-supervised objectives, synthetic data, context management) and measures *expertise efficiency*.
+
+Key contribution: **StudyBench** benchmark with DSPy as a test domain — using his own library as a probe for whether agents can develop genuine understanding of a codebase beyond stale memorization.
+
+---
+
 ## Key Quotes
 
 > *"Making broad progress in AI is not restricted to training larger models, but can take the form of designing general tools that grant AI developers more control."*
@@ -317,4 +325,5 @@ Khattab's decomposition philosophy aligns with Anthropic's Harness Engineering p
 -  — Late interaction retrieval (creator)
 - [[dspy]] — Declarative LM programming (creator)
 - [[gepa]] — Genetic-Pareto prompt optimization (creator)
+- [[machine-studying]] — Agents developing expertise from corpora (co-author, 2026)
 -  — RLM co-author, MIT CSAIL databases/ML systems

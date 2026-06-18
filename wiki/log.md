@@ -196,3 +196,17 @@
 - **Deferred (human review):**
   - `x_accounts` job stale (26h) — last run ~16h UTC Jun 16, needs investigation
   - 504 missing concept entries in index.md — large batch (>50), needs dedicated pass
+## 2026-06-17 — Machine Studying article ingestion
+
+### Created
+- `concepts/machine-studying.md` — Machine Studying concept page (Li, Battle, Khattab, MIT CSAIL, Jun 2026). Three paradigms for agents developing expertise from corpora: self-supervised objectives, synthetic data/environments, amortized context management. StudyBench benchmark.
+- `entities/jacob-xiaochen-li.md` — Jacob Xiaochen Li entity page (MIT CSAIL, Machine Studying co-author)
+- `raw/articles/2026-06-17_jacobxli_machine-studying.md` — Raw article from jacobxli.com
+
+### Updated
+- `entities/omar-khattab.md` — Added Machine Studying (2026) section and See Also link
+- `index.md` — Added 3 new entries, updated page counts (2576 total, 813 entities, 1719 concepts)
+
+### Source
+- https://jacobxli.com/blog/2026/machine-studying/
+

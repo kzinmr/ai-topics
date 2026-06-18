@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-17 | Total pages: 2574 | Indexed entries: 2183 | Not in index: 391 | Entities: 812 | Concepts: 1718
+> Last updated: 2026-06-17 | Total pages: 2576 | Indexed entries: 2185 | Not in index: 391 | Entities: 813 | Concepts: 1719
 
 ## Entities (812 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -69,6 +69,7 @@
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
 - [[entities/jj-allaire]] — JJ Allaire — Founder of Posit (formerly RStudio). Creator of Inspect AI (LLM eval framework, UK AISI collaboration). Design philosophy: Hadley Wickham-inspired clean, composable APIs.
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
+- [[entities/jacob-xiaochen-li]] — Jacob Xiaochen Li — MIT CSAIL researcher. Co-author of [[concepts/machine-studying|Machine Studying]] framework and StudyBench benchmark with [[entities/omar-khattab|Omar Khattab]] and Rick Battle.
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs, Token Budget Wars. Enterprise AI procurement dynamics (Jun 2026). Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
 - [[entities/joan-westenberg]] — Joan Westenberg — Strategy and positioning consultant. "Position or Perish" narrative framework, messaging spine methodology.
@@ -1664,6 +1665,7 @@
 - [[concepts/long-running-search-agents]] — Long Running Search Agents — Design patterns for search agents running unattended for hours/days. 7 progressive strategies: single context, cron restarts, compaction, local index (3.7x yield gain), frontier prompt, query model, self-querying. Doug Turnbull, Cheat at Search (June 2026).
 - [[concepts/loopcraft]] — Loopcraft / Salty Lesson for Agents — Engineering philosophy of designing autonomous agent loops instead of hand-crafting prompts. The Salty Lesson: 'Don't fix things yourself. Focus on systems that scale with more agents.' Contributed by Steipete, Boris (Claude Code lead), and Andrej Karpathy (Autoresearch). AINews June 2026.
 - [[concepts/mac-studio-local-ai]] — Mac Studio for Local AI
+- [[concepts/machine-studying]] — Machine Studying — Agents developing expertise from corpora. Three paradigms: self-supervised objectives (CPT), synthetic data/environments (SFT), amortized context management (cheatsheets). StudyBench benchmark. Key insight: memorization ≠ expertise, retrieval ≠ expertise. Li, Battle, Khattab (MIT CSAIL, Jun 2026).
 - [[concepts/magnifica-humanitas]] — Magnifica Humanitas — Pope Leo XIV's 2026 encyclical "On Safeguarding the Human Person in the Time of AI." First papal document dedicated to AI. Chris Olah (Anthropic) spoke at Vatican presentation.
 - [[concepts/mai-thinking-1-tech-report]] — MAI-Thinking-1 Tech Report Deep Dive — Elie Bakouch's 47-tweet analysis of Microsoft's 109-page tech report. Zero synthetic data/distillation, interleaved dense/MoE, LatentMoE, scaling ladder (depth-only knob), global load balancing, modified GRPO with entropy-based clipping, 33.5T tokens.
 - [[concepts/main-branch-development]] — Main-Branch Development — Coding workflow pattern advocating direct main-branch development with AI code agents.
