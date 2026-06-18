@@ -1,5 +1,15 @@
 
 ---
+## 2026-06-18 — Deployment Simulation concept ingestion (OpenAI + Sierra)
+
+- **Raw Articles Created**: `raw/articles/2026-06-11_openai_deployment-simulation.md`, `raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md`
+- **Concept Created**: `concepts/deployment-simulation.md` — Three-actor pattern (user simulator + agent + judge) for testing AI agents via simulated conversations. Covers OpenAI research framework (200+ scenarios, safety degradation) and Sierra product platform (auto-generated tests, CI/CD integration, 35K tests/day).
+- **Comparison Created**: `comparisons/openai-vs-sierra-agent-simulation.md` — Research framework vs product platform. Shared architecture, complementary perspectives. Maturity model: Level 0 (no testing) → Level 4 (continuous simulation in CI/CD).
+- **Entity Updated**: `entities/sierra.md` — Added Agent Simulation Platform section with deployment simulation capabilities and cross-references.
+- **Concept Updated**: `concepts/scenario-based-simulation.md` — Added cross-link to deployment-simulation concept.
+- **Index Updated**: `index.md` — Added deployment-simulation concept (189 concepts section), openai-vs-sierra-agent-simulation comparison (31 comparisons).
+
+---
 ## 2026-06-17 — X accounts scan: newsjack discovery (22:30 UTC)
 
 - **Entity Updated:** `entities/elvis-sun.md` — Added Newsjack to "Currently Building" section and Timeline. Added [[concepts/newsjack]] cross-reference and source link. Updated 2026-06-17.

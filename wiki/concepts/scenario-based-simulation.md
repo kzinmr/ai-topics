@@ -133,6 +133,7 @@ The Palantir scenario pattern generalizes these: it's a **domain-model-level** v
 
 ## Related
 
+- [[concepts/deployment-simulation]] — A related but distinct simulation pattern focused on testing AI agents via simulated user conversations (OpenAI + Sierra approaches)
 - [[entities/palantir]] — The canonical implementation
 - [[concepts/decision-centric-architecture]] — The architecture that makes scenarios meaningful (without a rich domain model, scenarios are just data snapshots)
 - [[concepts/enterprise-agents]] — How agents use scenarios in the staged-action lifecycle

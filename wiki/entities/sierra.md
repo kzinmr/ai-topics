@@ -19,6 +19,7 @@ sources:
   - raw/articles/sierra.ai--blog-tau-knowledge--5dda7a09.md
   - raw/articles/sierra.ai--blog-outcomemaxxing--0bc34aec.md
   - raw/articles/sierra.ai--blog-discovering-what-s-possible-with-ai-for-cx--904ecc1f.md
+  - raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md
 ---
 
 # Sierra
@@ -100,6 +101,18 @@ Key findings (May 2026 leaderboard):
 - Agents must self-discover tools from documents (no explicit API specs given) — a fundamentally harder setting than traditional benchmarks
 
 Sierra open-sources τ-Knowledge and invites model providers to evaluate against it as a measure of real-world knowledge-grounded agent capability.
+
+### Agent Simulation Platform
+
+Sierra's Agent OS includes a **deployment simulation** system ([[concepts/deployment-simulation]]) where simulated conversations between agents and mock personas ensure reliability at scale. Key capabilities:
+
+- **Automatic test generation** from SOPs, knowledge bases, coaching transcripts, and conversation flows
+- **Persona diversity** — users who speak different languages, vary in tech comfort, adopt many tones
+- **Judge agent** evaluates goal achievement, SOP compliance, brand guidelines, and accuracy
+- **CI/CD integration** — simulations gate releases via GitHub Actions or CLI, like unit tests for agent behavior
+- **Scale**: customers run 35,000+ tests/day, achieving 90% resolution rates and 4.5/5.0 CSAT
+
+See also: [[comparisons/openai-vs-sierra-agent-simulation]] for comparison with OpenAI's research framework approach.
 
 ## Significance
 
