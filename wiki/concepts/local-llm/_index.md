@@ -35,6 +35,7 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 - **Georgi Gerganov (@ggerganov)** — Creator of llama.cpp and whisper.cpp, pioneer of GGML/GGUF quantization ecosystem. Joined Hugging Face in 2025.
 - **Nous Research (@NousResearch)** — Hermes model family, open-weight post-training. Teknium leads post-training efforts.
 - **Ollama Team** — Simplified local LLM deployment, model library with one-command downloads, strong Apple Silicon support.
+- **[[vicki-boykis]]** — Data scientist and blogger documenting practical local model workflows. Identified GPT-OSS as the local quality inflection point (Jun 2026).
 
 ## Community Hubs
 
@@ -69,6 +70,7 @@ Together, these techniques allow a distilled 3-8B model at Q4 quantization to ru
 | **Ollama** | Zero-config local runner | CPU, Metal, CUDA | Via Modelfile |
 | **vLLM** | Production serving | NVIDIA, AMD GPU | Outlines integration |
 | **SGLang** | Agentic loops, RAG | NVIDIA, AMD, CPU | ✅ Native (xgrammar) |
+| **[[lm-studio]]** | Desktop GUI + local API | CPU, Metal, CUDA | OpenAI-compatible |
 
 ## Related wikilinks
 

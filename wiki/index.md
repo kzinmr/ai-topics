@@ -465,6 +465,7 @@
 - [[entities/lester-solbakken]] — **X/Twitter** | @lestersolbakken |
 - [[entities/letta]] — > **Core Thesis:** Memory is the key to self-improving AI. Letta builds open, model-agnostic agent harnesses with persistent memory systems.
 - [[entities/levelsio]] — Pieter Levels (@levelsio) — indie maker, 12 Startups in 12 Months, $250K+/mo portfolio (PhotoAI, InteriorAI, RemoteOK, Nomads). Cloudflare Email Sending price comparison. Build-in-public pioneer.
+- [[entities/lm-studio]] — LM Studio — Desktop app for running local LLMs with OpenAI-compatible API server. Model management, quantization selection, GPU allocation, session introspection. Used with Pi/Codex for local agentic coding.
 - [[entities/lilian-weng]] — Lilian Weng (@lilianweng). Former OpenAI VP of Research. Her "model as moat" stance reversed by Greg Brockman (May 2026): "the model alone is no longer the product". Co-founded Thinking Machines Lab ($12B). Lil'Log blog author.
 - [[entities/lilianweng]] — **X** | @lilianweng |
 - [[entities/ling-2-6-1t]] — Ling 2.6-1T — Ant Group's trillion-parameter open-weights MoE model (MIT license). 63B active params, 1M context. SWE-bench 72.2. BaiLing ecosystem.
@@ -693,6 +694,7 @@
 - [[entities/varun-trivedy]] — **X** | @Vtrivedy10 |
 - [[entities/vincent-weisser]] — Vincent Weisser — Co-founder & CEO of Prime Intellect. Building open superintelligence stack. $20.5M raised.
 - [[entities/vincent-warmerdam]] — Vincent Warmerdam (@koaning) — Engineer at marimo (reactive notebook platform). Author of Agent-Harness.ipynb insights: shared notebook canvas, marimo linter solved 60% of agent errors, incremental generation, calm engineering philosophy. Ex-Rasa.
+- [[entities/vicki-boykis]] — Vicki Boykis (@vboykis) — Data scientist, ML engineer, blogger at vickiboykis.com. Local LLM practitioner, Rijksearch project. Identified GPT-OSS as local quality inflection point, Gemma 4 for local agentic coding at ~75% frontier quality.
 - [[entities/vtrivedy10]] — Varun 'Viv' Trivedy (@vtrivedy10) — LangChain agent harness lead, DeepAgents maintainer. PhD CS (Temple), ex-AWS Scientist. Terminal Bench 2.0: Top 30→Top 5 via harness-only changes. Author of "The Anatomy of an Agent Harness."
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→details]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |

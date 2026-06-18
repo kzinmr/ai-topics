@@ -250,3 +250,20 @@
 - https://jacobxli.com/blog/2026/machine-studying/
 
 - 2026-06-18 update concepts/post-training/rl-algorithms-for-llm-training.md — add GSPO section (arXiv 2507.18071, Qwen Team)
+
+## 2026-06-18 — Ingest Vicki Boykis "Running local models is good now"
+
+**Source**: https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/
+
+**New pages:**
+- `entities/vicki-boykis.md` — Data scientist, local LLM practitioner, blogger
+- `entities/lm-studio.md` — Desktop app for local LLM inference with OpenAI-compatible API
+
+**Updated pages:**
+- `entities/gemma-4.md` — Added Vicki Boykis source reference and See Also link
+- `entities/gpt-oss.md` — Added Vicki Boykis See Also link
+- `concepts/local-llm/_index.md` — Added LM Studio to inference engine table, Vicki Boykis to Key Figures
+- `index.md` — Added Vicki Boykis and LM Studio entries
+
+**Deleted:**
+- `concepts/local-llm-inference.md` — Redundant with existing `concepts/local-llm/_index.md`

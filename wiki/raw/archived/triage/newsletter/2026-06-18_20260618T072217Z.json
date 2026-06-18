@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-06-18T07:47:45.250814+00:00",
+  "triage_run_id": "20260618T072217Z",
+  "source": "newsletter",
+  "summary_ja": "4つのニュースレターをトリアージ（GLM-5.2 beehiiv、Midjourney Medical AINews、Self-Driving Lab Radical AI、State of the blog Nathan Lambert）。Newsletter-triageパイプラインが前日バッチを処理して本日分を未処理のため、本ジョブでトリアージ+インジェストを実行。2 take（entities/midjourney.md新規作成、entities/radical-ai.md新規作成）、1 reference（entities/nathan-lambert.md軽微更新）、1 skip（GLM-5.2 beehiivは既存Wikiでカバー済み+Cloudflare block）。デシジョン数=4。",
+  "decisions": [
+    {
+      "item_id": "beehiiv-glm52-1",
+      "source": "newsletter",
+      "source_name": "GLM-5.2 Cracks the Coding Top Two",
+      "title": "GLM-5.2 Coding Top Two",
+      "url": "https://link.mail.beehiiv.com/v1/c/Ez0Fv0eo22zGF2DeXZJS9VfSXfYD4sftnSUiXQY5Oh8m6...",
+      "raw_path": "wiki/raw/newsletters/2026-06-17-glm-5-2-cracks-the-coding-top-two.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Beehiiv全リンクがCloudflare challengeでブロック（Just a moment...）。GLM-5.2自体はentities/glm-5-zai.mdで包括的にカバー済み（83行、全ベンチマーク詳細、IndexShare解説済み）。新規コンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-17\n**Subject:** 🔓 GLM-5.2 Cracks the Coding Top Two\n**Collected:** 2026-06-18T07:22:13.781806+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/Ez0Fv0eo22zGF2DeXZJS9VfSXfYD4sftnSUiXQY5Oh8m6mLmdloOKyj9OTht%0Aitlms2GPGHXzvfm7l02s529f3a"
+    },
+    {
+      "item_id": "state-of-blog-1",
+      "source": "newsletter",
+      "source_name": "State of the blog, mid-2026",
+      "title": "State of the blog, mid-2026",
+      "url": "https://www.interconnects.ai/p/state-of-the-blog-mid-2026",
+      "raw_path": "wiki/raw/newsletters/2026-06-17-state-of-the-blog-mid-2026.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Nathan Lambertの個人ブログレトロスペクティブ。Ai2退職後のキャリア、Arcee AI/Mercorへのアドバイザリー契約、70K購読者、900有料購読者の現状を報告。AIトピック価値は中程度だが、entities/nathan-lambert.mdに軽微な参照追記（アドバイザリー情報、キャリア更新）に値する。",
+      "candidate_wiki_path": "entities/nathan-lambert.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-17\n**Subject:** State of the blog, mid-2026\n**Collected:** 2026-06-18T07:22:12.619971+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249"
+    }
+  ]
+}

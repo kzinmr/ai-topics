@@ -304,6 +304,7 @@ See also: [[concepts/apple-foundation-models]]
 |- Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
 |- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
 |- Florian Brand (@xeophon), X post on Gemma 4 E4B daily driver (June 7, 2026)
+|- raw/articles/vickiboykis.com--running-local-models-is-good-now--2026-06-15.md — Vicki Boykis on Gemma 4 for local agentic coding (~75% frontier quality)
 
 ## See Also
 
@@ -314,3 +315,4 @@ See also: [[concepts/apple-foundation-models]]
 - [[concepts/coding-agents/coding-agents]] — AI agents for software engineering tasks.
 - [[concepts/local-llm/_index]] — Local LLM deployment patterns and use cases.
 - [[lmstudio]] — Local model serving tool for running Gemma 4 on consumer hardware.
+- [[vicki-boykis]] — Reported ~75% frontier quality with Gemma 4 for local agentic coding.

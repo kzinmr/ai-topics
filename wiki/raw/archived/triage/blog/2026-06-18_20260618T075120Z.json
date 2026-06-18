@@ -1,0 +1,202 @@
+{
+  "archived_at": "2026-06-18T07:51:20.851275+00:00",
+  "triage_run_id": "20260618T075120Z",
+  "source": "blog",
+  "summary_ja": "",
+  "decisions": [
+    {
+      "title": "the singularity is nearer",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/06/17/summoning-the-demon.html",
+      "blog": "geohot.github.io",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-06-17-summoning-the-demon-html--6b570b9a.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "George Hotz's philosophical piece on AI as 'social crime' and 'reflection of demonic desires.' Short (35 lines), more poetic than technical. Existing entities/george-hotz.md (299 lines) already covers his AI philosophy extensively. Reference-level addition to existing timeline.",
+      "reason_ja": "George Hotzの哲学的エッセイ：AIを「社会的犯罪」「 demonic desiresの反映」と論じる。短文（35行）、詩的で技術的でない。既存entities/george-hotz.md（299行）がAI哲学を既に広くカバー。タイムラインへの参照レベル追記。",
+      "target_pages": [
+        "entities/george-hotz"
+      ],
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/06/17/summoning-the-demon.html\nWatch you hit the stage like a willing bomb\nStrapped to crippled children\nIt’s hard to watch you whore out your damaged pride\nI spit on what you’re building\n– The Stephen Hawking\nThe "
+    },
+    {
+      "title": "You Got Faster. Your Company Didn't.",
+      "url": "https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/",
+      "blog": "terriblesoftware.org",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/terriblesoftware.org--2026-06-17-you-got-faster-your-company-didnt--97bd6444.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "Insightful essay on AI productivity paradox: individual speed gains don't translate to organizational speed due to trust deficit in AI-generated docs/code. 'Ponzi scheme' of pushing reading work to reviewers. AI-adjacent commentary, no specific wiki target page.",
+      "reason_ja": "AI生産性のパラドックスに関する洞察的エッセイ：個人の速度向上がAI生成ドキュメント/コードへの信頼欠如により組織の速度に転換されない。レビューへの読み作業の「ポンジースキーム」。AI関連だが、特定のwikiターゲットページなし。",
+      "target_pages": [],
+      "body_excerpt": "# You Got Faster. Your Company Didn’t.\nSource: https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/\n“I would have written a shorter letter, but I did not have the time.”\n— Blaise Pascal\nBecause of AI, everyone on your team is more productive than they were a year ago, just ask "
+    },
+    {
+      "title": "3 Composio alternatives to consider in 2026",
+      "url": "https://www.merge.dev/blog/composio-alternatives",
+      "blog": "Merge Blog",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/merge.dev--blog-composio-alternatives--baee943e.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "Agent tooling landscape: Composio vs Merge Agent Handler vs Arcade vs Workato. Composio May 2026 security incident (API keys exfiltrated). Useful for agent-integration-platform concept page if created. Merge's marketing content but contains factual competitive intelligence.",
+      "reason_ja": "エージェントツールの景色：Composio vs Merge Agent Handler vs Arcade vs Workato。Composio 2026年5月のセキュリティインシデント（APIキー流出）。agent-integration-platform概念ページ作成時に有用。Mergeのマーケティングコンテンツだが、事実的な競合インテリジェンスを含む。",
+      "target_pages": [],
+      "body_excerpt": "# 3 Composio alternatives to consider in 2026\nSource: https://www.merge.dev/blog/composio-alternatives\nComposio allows companies to securely connect their AI agents with thousands of tools, quickly. Composio also lets you observe each tool call to detect and address unauthorized activities.\nTo help "
+    },
+    {
+      "title": "Arcade vs Composio: when to choose one over the other",
+      "url": "https://www.merge.dev/blog/composio-vs-arcade",
+      "blog": "Merge Blog",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/merge.dev--blog-composio-vs-arcade--dabe7047.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "Detailed Composio vs Arcade comparison: Composio (1000+ apps, agent-native primitives, May 2026 security incident) vs Arcade (MCP runtime, 8000+ tools, 43 first-party connectors, deployment flexibility). Useful reference for agent tooling landscape.",
+      "reason_ja": "Composio vs Arcadeの詳細比較：Composio（1000+アプリ、agent-nativeプリミティブ、2026年5月セキュリティインシデント）vs Arcade（MCPランタイム、8000+ツール、43ファーストパーティコネクタ、デプロイ柔軟性）。エージェントツール景色の有用な参照。",
+      "target_pages": [],
+      "body_excerpt": "# Arcade vs Composio: when to choose one over the other\nSource: https://www.merge.dev/blog/composio-vs-arcade\nAs you look to connect your AI agents with 3rd-party software, you’ll need to evaluate a wide range of\nagent integration solutions\n.\nRegardless of your criteria and use cases, Composio and A"
+    },
+    {
+      "title": "A quote from Charity Majors",
+      "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
+      "blog": "simonwillison.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-17-charity-majors--cdfac412.md",
+      "recommended_action": "skip",
+      "star_rating": 2,
+      "reason": "Short quote from Charity Majors about AI-generated code trust. Brief link-blog post, no substantive new information for wiki.",
+      "reason_ja": "Charity Majorsの短い引用（AI生成コードへの信頼）。短いリンクブログ投稿、wikiに実質的な新情報なし。",
+      "target_pages": [],
+      "body_excerpt": "# A quote from Charity Majors\nSource: https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything\n17th June 2026\nWhat happened in 2025 was this:\nthe economics of code production were turned upside down\n. Instead of being very hard, time-consuming, and expensive to generate code, it became "
+    },
+    {
+      "title": "Breaking: Trump asks the impossible of Anthropic",
+      "url": "https://garymarcus.substack.com/p/breaking-trump-asks-the-impossible",
+      "blog": "garymarcus.substack.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-breaking-trump-asks-the-impossible--9480ebcd.md",
+      "recommended_action": "skip",
+      "star_rating": 2,
+      "reason": "Minimal content — embedded tweet with 5 bullet points about GenAI trends from Feb 2024. No article body. Gary Marcus entity page already comprehensive.",
+      "reason_ja": "最小限のコンテンツ — 2024年2月のGenAIトレンドに関する5つの箇条書きの埋め込みツイート。記事本文なし。Gary Marcusエンティティページは既に包括的。",
+      "target_pages": [],
+      "body_excerpt": "# Breaking: Trump asks the impossible of Anthropic\nSource: https://garymarcus.substack.com/p/breaking-trump-asks-the-impossible\nFive trends that will occupy GenAI in 2024:\n• The politics & inadequacy of guardrails\n• Copyright litigation\n• Customer retention\n• Lack of a moat as major players converge"
+    },
+    {
+      "title": "Making sure you're not a bot!",
+      "url": "https://xeiaso.net/notes/2026/anubis-wasm-vendor-binary/",
+      "blog": "xeiaso.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/xeiaso.net--notes-2026-anubis-wasm-vendor-binary--2e36b38b.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Anubis bot detection challenge page, not an article. 23 lines of metadata only.",
+      "reason_ja": "Anubisボット検出チャレンジページ、記事ではない。23行のメタデータのみ。",
+      "target_pages": [],
+      "body_excerpt": "# Making sure you're not a bot!\nSource: https://xeiaso.net/notes/2026/anubis-wasm-vendor-binary/\nProtected by\nAnubis\nFrom\nTecharo\n. Made with ❤️ in 🇨🇦.\nMascot design by\nCELPHASE\n.\nThis website is running Anubis version\nv1.25.1-0.20260617231326-40d497332ee5\n."
+    },
+    {
+      "title": "Formalizing a ring theorem with Lean 4 and Claude",
+      "url": "https://www.johndcook.com/blog/2026/06/17/rings-with-lean-claude/",
+      "blog": "johndcook.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-17-rings-with-lean-claude--8cfd6280.md",
+      "recommended_action": "skip",
+      "star_rating": 2,
+      "reason": "Interesting AI-assisted formal verification experiment (Lean 4 + Claude for partial fraction decomposition). Niche math topic. John D. Cook entity page would be needed. Low priority for wiki.",
+      "reason_ja": "興味深いAI支援形式検証実験（Lean 4＋Claudeで部分分数分解）。ニッチな数学トピック。John D. Cookエンティティページが必要。wikiへの優先度低い。",
+      "target_pages": [],
+      "body_excerpt": "# Formalizing a ring theorem with Lean 4 and Claude\nSource: https://www.johndcook.com/blog/2026/06/17/rings-with-lean-claude/\nI’ve been testing Claude’s ability to generate Lean 4 code to prove theorems. I’ve written about a\ncouple\nexperiments\nthat verified calculations. I did not write about my fai"
+    },
+    {
+      "title": "How a Microsoft product from June 1979 led to the IBM PC",
+      "url": "https://dfarq.homeip.net/how-a-microsoft-product-from-june-1979-led-to-the-ibm-pc/",
+      "blog": "dfarq.homeip.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--how-a-microsoft-product-from-june-1979-led-to-the-ibm-pc--4bb76a65.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Vintage computing history, not AI-related.",
+      "reason_ja": "レトロコンピューティングの歴史、AI関連なし。",
+      "target_pages": [],
+      "body_excerpt": "# How a Microsoft product from June 1979 led to the IBM PC\nSource: https://dfarq.homeip.net/how-a-microsoft-product-from-june-1979-led-to-the-ibm-pc/?utm_source=rss&utm_medium=rss&utm_campaign=how-a-microsoft-product-from-june-1979-led-to-the-ibm-pc\nJune 1979 is a significant month in history for Mi"
+    },
+    {
+      "title": "Snap Unveils Specs, Its $2,200 AR Glasses",
+      "url": "https://www.theverge.com/tech/950492/snap-specs-ar-glasses-launch-date-preorder",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/theverge.com--tech-950492-snap-specs-ar-glasses-launch-date-preorder--b05d5949.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "AR hardware product launch, not AI-related.",
+      "reason_ja": "ARハードウェア製品ローンチ、AI関連なし。",
+      "target_pages": [],
+      "body_excerpt": "# Snap is finally about to ship AR glasses - and they cost a fortune\nSource: https://www.theverge.com/tech/950492/snap-specs-ar-glasses-launch-date-preorder?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IlZTMmZYVXprcHciLCJwIjoiL3RlY2gvOTUwNDkyL3NuYXAtc3BlY3MtYXItZ2xhc3Nlcy1sYXVuY2gtZGF0ZS1wcmVvcmRlciIsImV"
+    },
+    {
+      "title": "Vehicle Motion Cues — Apple's Weird Anti-Nausea Dots",
+      "url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/theverge.com--tech-942854-apple-vehicle-motion-cues-review-really-work--8b5587de.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Apple UX feature review, not AI-related.",
+      "reason_ja": "Apple UX機能レビュー、AI関連なし。",
+      "target_pages": [],
+      "body_excerpt": "# Apple’s weird anti-nausea dots cured my car sickness\nSource: https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work\nI’ll just work from the car\n, I thought. But after a few minutes of staring at my screen on quick mountain switchbacks I could feel the first signs of cold"
+    },
+    {
+      "title": "MacBreak Weekly: Is the New Siri AI Good?",
+      "url": "https://twit.tv/shows/macbreak-weekly/episodes/1029",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/twit.tv--shows-macbreak-weekly-episodes-1029--88371617.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Apple podcast episode link, not substantive AI content.",
+      "reason_ja": "Appleポッドエピソードリンク、実質的なAIコンテンツなし。",
+      "target_pages": [],
+      "body_excerpt": "# Intimate Functionalities\nSource: https://twit.tv/shows/macbreak-weekly/episodes/1029?autostart=false\nJohn Gruber of Daring Fireball joins the MacBreak Weekly panel this week! A deep dive into Apple's new Siri following WWDC. Why Apple Intelligence & the new Siri are not coming to the EU initially "
+    },
+    {
+      "title": "The Vergecast: The Epic Story of Markdown",
+      "url": "https://www.theverge.com/podcast/950082/markdown-history-gruber-vergecast",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/theverge.com--podcast-950082-markdown-history-gruber-vergecast--0d8f0f83.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Markdown history podcast, not AI-related.",
+      "reason_ja": "Markdown歴史ポッドキャスト、AI関連なし。",
+      "target_pages": [],
+      "body_excerpt": "# Today’s Vergecast: # The **epic** story of Markdown.\nSource: https://www.theverge.com/podcast/950082/markdown-history-gruber-vergecast\nPosted\nJun 15, 2026 at 7:09 PM UTC\nToday’s Vergecast: # The **epic** story of Markdown.\nMarkdown\nis a system for writing that makes it readable to both humans and "
+    },
+    {
+      "title": "Windows stack limit checking retrospective",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260617-00/?p=112436",
+      "blog": "devblogs.microsoft.com/oldnewthing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260617-00--16c2fddf.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Windows internals retrospective, not AI-related.",
+      "reason_ja": "Windows内部リトロスペクティブ、AI関連なし。",
+      "target_pages": [],
+      "body_excerpt": "# Windows stack limit checking retrospective, follow-up\nSource: https://devblogs.microsoft.com/oldnewthing/20260617-00/?p=112436\nAaron Giles\nworked on porting Windows to both ARM32 and AArch64, and he\nnoted a missing detail\nin my\nretrospective of stack limit checking on arm64\n:\nEvery once in a while"
+    },
+    {
+      "title": "Logic for Programmers v0.15, Livecoding",
+      "url": "https://buttondown.com/hillelwayne/archive/logic-for-programmers-v015-livecoding/",
+      "blog": "buttondown.com/hillelwayne",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/buttondown.com--hillelwayne-archive-logic-for-programmers-v015-livecoding--c62ffe79.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Formal logic for programmers, not AI-related.",
+      "reason_ja": "プログラマーのための形式論理、AI関連なし。",
+      "target_pages": [],
+      "body_excerpt": "# Logic for Programmers v0.15, Livecoding\nSource: https://buttondown.com/hillelwayne/archive/logic-for-programmers-v015-livecoding/\nThere's a new release of\nLogic for Programmers\n! This one, version 0.15, is the first true release candidate. There's a couple of minor touch-ups I need to do but all c"
+    },
+    {
+      "title": "Pluralistic: The (real) dead economy theory",
+      "url": "https://pluralistic.net/2026/06/17/its-the-stupid-economy-stupid/",
+      "blog": "pluralistic.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-06-17-its-the-stupid-economy-stupid--9cef87f1.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Economics/politics commentary by Cory Doctorow, not AI-related.",
+      "reason_ja": "Cory Doctorowによる経済/政治解説、AI関連なし。",
+      "target_pages": [],
+      "body_excerpt": "# Pluralistic: The (real) dead economy theory (17 Jun 2026)\nSource: https://pluralistic.net/2026/06/17/its-the-stupid-economy-stupid/\nToday's links\nThe (real) dead economy theory\n: Vibes and memestocks, all the way down.\nHey look at this\n: Delights to delectate.\nObject permanence\n: Jim Baen has had "
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "triage_run_id": "20260618T072217Z",
+  "triaged_at": "2026-06-18T07:22:17+00:00",
+  "checkpoint_source": "/opt/data/.hermes/cron/data/newsletter/newsletter_20260618T072217Z.json",
+  "total_newsletters": 4,
+  "classified_count": 4,
+  "classifications": [
+    {
+      "message_id": "<20260617171648.59c40e53@mta10>",
+      "subject": "GLM-5.2 Cracks the Coding Top Two",
+      "date": "2026-06-17",
+      "source": "beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-17-glm-5-2-cracks-the-coding-top-two.md",
+      "importance": "high",
+      "reason": "GLM-5.2 (Zhipu AI) achieving top-two ranking in coding benchmarks is a significant LLM model/benchmark development. Directly relevant to wiki topics: LLM benchmarks, model releases, coding LLMs, Zhipu AI.",
+      "action": "ingest",
+      "wiki_targets": [
+        {"type": "entity", "name": "zhipu-ai", "action": "update"},
+        {"type": "concept", "name": "coding-llm-benchmarks", "action": "update_or_create"}
+      ],
+      "note": "URLs are beehiiv tracking links — content extraction needed via redirect resolution to get actual article text. GLM-5.2 coding top-2 claim should be verified against primary sources."
+    },
+    {
+      "message_id": "<20260618042305.3.e9622c35c07cefcf@mg-d1.substack.com>",
+      "subject": "[AINews] Midjourney Medical: scan your organs like you step on a scale",
+      "date": "2026-06-18",
+      "source": "Latent Space / swyx (publication_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-ainews-midjourney-medical-scan-your-organs-like-you-step-on-a-scale.md",
+      "importance": "high",
+      "reason": "Midjourney expanding into medical imaging (organ scanning) is a major AI product pivot. Relevant to wiki: Midjourney entity update, AI in healthcare concept, multimodal AI applications.",
+      "action": "ingest",
+      "wiki_targets": [
+        {"type": "entity", "name": "midjourney", "action": "update"},
+        {"type": "concept", "name": "ai-in-healthcare", "action": "update_or_create"}
+      ],
+      "note": "From Latent Space AINews (swyx). The main article URL is a Substack redirect. Verify Midjourney medical product details from primary sources."
+    },
+    {
+      "message_id": "<20260617175806.3.95e038d394347af9@mg2.substack.com>",
+      "subject": "The Self-Driving Lab — Joseph Krause, Radical AI",
+      "date": "2026-06-17",
+      "source": "Latent Space / swyx (publication_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-17-the-self-driving-lab-joseph-krause-radical-ai.md",
+      "importance": "medium",
+      "reason": "AI-driven automated laboratories ('Self-Driving Lab') is an emerging AI application domain. Podcast episode by @brandonscience with Joseph Krause of Radical AI. Relevant to AI agents in scientific research.",
+      "action": "ingest",
+      "wiki_targets": [
+        {"type": "entity", "name": "radical-ai", "action": "create_if_not_exists"},
+        {"type": "concept", "name": "ai-in-science", "action": "update_or_create"}
+      ],
+      "note": "Podcast content — may need transcript extraction for wiki quality. Links are all Substack tracking URLs pointing to post_id=202058620."
+    },
+    {
+      "message_id": "<20260617142907.3.73ad323f69bd6213@mg-d1.substack.com>",
+      "subject": "State of the blog, mid-2026",
+      "date": "2026-06-17",
+      "source": "robotic (Nato Lambert, publication_id=48206)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-17-state-of-the-blog-mid-2026.md",
+      "importance": "low",
+      "reason": "Blog retrospective/meta post from @natolambert. Likely a personal blog milestone update rather than technical AI content. May contain useful references to past work but low direct wiki value.",
+      "action": "skip",
+      "wiki_targets": [],
+      "note": "From Nato Lambert's 'robotic' publication. Could be worth scanning if Nato Lambert is a tracked entity, but the subject suggests a meta/reflective piece rather than new technical content."
+    }
+  ],
+  "summary": {
+    "high": 2,
+    "medium": 1,
+    "low": 1,
+    "skip": 1,
+    "ingest": 3,
+    "key_topics": [
+      "GLM-5.2 coding benchmark ranking (Zhipu AI)",
+      "Midjourney medical imaging expansion",
+      "AI-driven self-driving labs (Radical AI)",
+      "Blog retrospective (Nato Lambert)"
+    ],
+    "note": "All 4 newsletters have only tracking/redirect URLs with truncated tokens — actual article content was not extracted. Downstream wiki-ingest will need to resolve redirects to fetch article text. GLM-5.2 and Midjourney Medical are the highest-priority items for wiki enrichment."
+  }
+}
