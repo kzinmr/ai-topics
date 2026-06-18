@@ -2,7 +2,7 @@
 title: "RL Algorithms for LLM Training"
 type: concept
 created: 2026-06-08
-updated: 2026-06-15
+updated: 2026-06-18
 tags:
   - reinforcement-learning
   - training
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-06-08_arjunkocher_rl-algorithm-questions.md
   - "https://rlhfbook.com/"
   - https://www.k-a.in/rl-algo.html
+  - "https://arxiv.org/abs/2507.18071"
 ---
 
 # RL Algorithms for LLM Training
@@ -140,6 +141,38 @@ $$L^{CLIP}(\theta) = \mathbb{E}_t \left[ \min\left( r_t(\theta) A_t, \ \text{cli
 
 Instead of clipping the objective, CISPO clips the IS ratio **before computing the gradient** — clips $r_t$ to $[1-\epsilon, 1+\epsilon]$ in gradient computation but not in loss value. Avoids the **flat gradient problem** in PPO where clipped samples contribute zero gradient despite containing information.
 
+## GSPO (Group Sequence Policy Optimization)
+
+> Zheng et al. (Qwen Team, Alibaba), arXiv 2507.18071, 2025-07-24. Adopted in Qwen3 models.
+
+**Core problem**: GRPO uses **token-level importance ratios** $w_t(\theta) = \frac{\pi_\theta(y_t|x,y_{<t})}{\pi_{\theta_{old}}(y_t|x,y_{<t})}$. These unequal weights vary across tokens and can accumulate over long sequences, leading to gradient instability and irreversible model collapse — especially problematic for MoE models where expert routing amplifies variance.
+
+**Key insight**: The unit of optimization should match the unit of reward. Since rewards are granted to the entire sequence, off-policy correction at the token level is fundamentally mismatched.
+
+**GSPO solution** — sequence-level importance ratio:
+
+$$s_i(\theta) = \frac{\pi_\theta(y_i|x)}{\pi_{\theta_{old}}(y_i|x)}$$
+
+Objective with sequence-level clipping:
+
+$$J_{GSPO}(\theta) = \mathbb{E}\left[\frac{1}{G}\sum_{i=1}^{G} \min\left(s_i(\theta)\hat{A}_i, \ \text{clip}(s_i(\theta), 1{-}\epsilon, 1{+}\epsilon)\hat{A}_i\right)\right]$$
+
+**Fundamental distinction from GRPO**: In the gradient, GSPO weights all tokens in a response **equally** (via the sequence-level ratio), while GRPO weights each token by its own importance ratio. This eliminates the accumulation problem.
+
+| Dimension | GRPO | GSPO |
+|---|---|---|
+| Importance ratio | Per-token $w_t$ | Per-sequence $s_i$ |
+| Clipping | Token-level | Sequence-level |
+| Gradient weighting | Unequal per token | Equal across tokens |
+| MoE compatibility | Requires Routing Replay | Stable without it |
+| KL penalty | Optional | Removed |
+
+**Results**: GSPO achieves superior training efficiency over GRPO on AIME'24, LiveCodeBench, and CodeForces benchmarks with Qwen3-30B-A3B. Critically, it stabilizes MoE RL training without the Routing Replay strategy that GRPO requires.
+
+**GSPO-token**: A variant allowing per-token advantage adjustment (e.g., for multi-turn RL). Uses stop-gradient on the sequence ratio to decouple clipping from per-token gradients. Numerically identical to GSPO when advantages are uniform across tokens.
+
+See: [arXiv:2507.18071](https://arxiv.org/abs/2507.18071)
+
 ## KL Penalty in GRPO
 
 Per-token KL between current policy and frozen reference:
@@ -168,6 +201,7 @@ $$\text{KL}(\pi_\theta \| \pi_{ref}) = \sum_t \left[ \pi_\theta(a_t|s_t, a_{<t})
 | **DAPO** | None | Removed | Clipping | Verifiable rewards replace KL |
 | **Dr.GRPO** | None | Yes | Clips zero-variance groups | Handles low-variance groups |
 | **CISPO** | Varies | Varies | IS ratio clipping (not objective) | Maintains gradient flow for clipped samples |
+| **GSPO** | None | Removed | Sequence-level clipping | Equal gradient weighting; stabilizes MoE RL |
 
 ## Related Pages
 
