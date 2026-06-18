@@ -1,3 +1,11 @@
+## 2026-06-18 — Blog wiki ingest (recovered from triage failure, 1 reference enriched)
+
+- **Pipeline recovery**: blog-triage upstream failed to parse JSON output. Checkpoint file at `triage_latest.json` contained valid decisions from prior run with 4 takes (already processed), 4 references, 12 skips.
+- **Enriched**: `entities/george-hotz.md` — Added "Summoning the Demon" (Jun 17, 2026) reference entry: poetic essay on AI as "social crime" and "reflection of demonic desires." Updated frontmatter (updated: 2026-06-18, added raw article source).
+- **Archive**: `archive_triage.py blog --keep-reference` — 16 items archived (4 references + 12 skips). Total archive URLs: 888.
+
+---
+
 ## 2026-06-18 — Newsletter wiki ingest (4 newsletters, 2 takes, 1 reference)
 
 - **Pipeline recovery**: Newsletter-triage cron output failed to parse but triage_latest.json was from yesterday's batch. Independently triaged 4 new newsletters from today's ingest (run_id=20260618T072217Z).

@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-06-12
+updated: 2026-06-18
 tags:
   - entity
   - person
@@ -19,6 +19,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-06-our-great-war-html--b0d9abd3.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-07-stairway-to-heaven-html--62c1cbd3.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-17-summoning-the-demon-html--6b570b9a.md
 ---
 
 # George Hotz
@@ -232,6 +233,7 @@ Notable posts include:
 - "Every minute you aren't running 69 agents, you are falling behind" (Mar 11) — On AI agents and productivity
 - "zappa: an AI powered mitmproxy" (Apr 15) — Vibe-coded AI proxy to strip ads and enshittification from web pages
 - "Democracy is a Liability" (Mar 21) — Contrarian political analysis
+- "Summoning the Demon" / "the singularity is nearer" (Jun 17) — Poetic essay framing AI as "social crime" and "reflection of demonic desires." Argues AI is a tool of optimization that will consume its creators. Short poetic piece adding to Hotz's developing darkening view on AI's societal trajectory.
 - "Five years of tinygrad" (Dec 29, 2025) — Retrospective on the framework's evolution
 - "Can tinygrad win?" (Jul 6, 2025) — Honest assessment of tinygrad's competitive position
 - "The Tragic Case of Intel AI" (Mar 24, 2025) — Analysis of Intel's AI failures
