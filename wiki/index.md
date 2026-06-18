@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-18 | Total pages: 2577 | Indexed entries: 2186 | Not in index: 391 | Entities: 813 | Concepts: 1720
+> Last updated: 2026-06-18 | Total pages: 2579 | Indexed entries: 2188 | Not in index: 391 | Entities: 815 | Concepts: 1720
 
-## Entities (812 pages)
+## Entities (814 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -494,6 +494,7 @@
 - [[entities/meta]] — Social media and technology company, developer of the LLaMA model family, Ray-Ban AI collaboration, and the **Personal Superintelligence** vision articulated by Mark Zuckerberg.
 - [[entities/micahflee]] — **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools...
 - [[entities/michael-stapelberg]] — **Blog** | michael.stapelberg.ch |
+- [[entities/midjourney]] — Midjourney — AI image generation company founded by David Holz. June 2026: launched Midjourney Medical (full-body ultrasonic CT scanner). Self-funded, no investors. Midjourney Spa (Union Square SF, 25K sq ft, 2027 target).
 - [[entities/miguel-grinberg]] — **Miguel Grinberg** is a Python educator, open-source maintainer, and software engineer best known for his influential tutorials, deep technical blog posts, and long-running contributions to the Py...
 - [[entities/mike-piccolo]] — Mike Piccolo — Founder & CEO of iii (open-source agent orchestration engine), creator of the "Harness Is the Backend" thesis and workers harness architecture. Co-Founder/CTO of FullStack Labs.
 - [[entities/milksandmatcha]] — Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. Co-author of the **"Back of House"** framework with @0xSero. Recent shares: YouTube interviews with Jason Liu (OpenAI/Codex) on zero-latency AI and Sara Hooker (Adaption/DeepMind) on GPU bottlenecks (May 2026).
@@ -577,6 +578,7 @@
 - [[entities/qwen3-6-plus]] — Alibaba's agent-oriented language model. Targets real-world autonomous workflows.
 - [[entities/qwen-3-7-max]] — Alibaba's latest agent reasoning model (2026-05-20). 1M token context, 35-hour autonomous kernel optimization (1,158 tool calls, 10.1× speedup). AA Index #5, Terminal Bench 2.0 69.7. Environment Scaling training. Closed weights.
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
+- [[entities/radical-ai]] — Radical AI — AI-driven materials discovery company founded by Joseph Krause. Self-Driving Lab (SDL) produced 1200 alloys in 6 months (10x DARPA MACH speedup). Open-source: TorchSim, MATRIX/MATRIX-PT.
 - [[entities/railway]] — Railway — Agent-native cloud platform. 3M users, 35-person team, $124M raised. Own-metal data centers with 70% margins. Multi-cloud bursting. Coding agent spend ~$200K/month. Jake Cooper.
 - [[entities/rahul]] — **URL:** https://rahul.gs/
 - [[entities/rakhim-exotext-com]] — **Rakhim Davletkaliyev** is a staff engineer at concepts/iqm-quantum-computers, a programming educator, author, and philosophical tech writer. He blogs at concepts/rakhim.exotext.com (with a web lo...

@@ -1,3 +1,11 @@
+## 2026-06-18 — Newsletter wiki ingest (4 newsletters, 2 takes, 1 reference)
+
+- **Pipeline recovery**: Newsletter-triage cron output failed to parse but triage_latest.json was from yesterday's batch. Independently triaged 4 new newsletters from today's ingest (run_id=20260618T072217Z).
+- **New Page**: `entities/midjourney.md` — Midjourney entity page. Covers company overview, Midjourney Medical scanner (full-body ultrasonic CT: 358K elements, 70cm ring, 17GB/s, 2 PFLOPS, 0.5mm resolution), Midjourney Spa (Union Square SF, 25K sq ft, 2027 target), business model, and self-funded status.
+- **New Page**: `entities/radical-ai.md` — Radical AI entity page. Joseph Krause's AI-driven materials discovery company. Self-Driving Lab: 1200 alloys in 6 months (10x DARPA MACH speedup), 300 materials tested with 10 novel SOTA properties. Open-source: TorchSim, MATRIX/MATRIX-PT.
+- **Updated**: `entities/nathan-lambert.md` — Added Mid-2026 career update: departure from Ai2, Interconnects AI LLC formation (Jan 2026), advising agreements with Arcee AI and Mercor, newsletter growth to 70K subscribers / ~900 paid.
+- **Skipped**: GLM-5.2 beehiiv newsletter — Cloudflare challenge blocked all links; content already covered by entities/glm-5-zai.md.
+- **Archive**: Newsletter triage saved to triage_latest.json (4 decisions: 2 takes, 1 reference, 1 skip).
 
 ---
 ## 2026-06-18 — Blog ingest triage (20 articles, 4 takes)

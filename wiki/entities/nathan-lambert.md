@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-15
+updated: 2026-06-18
 type: entity
 aliases:
   - natolambert
@@ -14,6 +14,7 @@ sources:
   - https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may
   - raw/newsletters/2026-06-01-open-and-closed-models-are-on-different-exponentials.md
   - raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md
+  - raw/newsletters/2026-06-17-state-of-the-blog-mid-2026.md
   - raw/articles/2026-06-16_interconnects_post-training-recipe-review.md
 ---
 
@@ -23,7 +24,7 @@ sources:
 
 Nathan Lambert is a Senior Research Scientist and **Post-Training Lead** at the **Allen Institute for AI (AI2)**. He previously worked at **HuggingFace** as a Research Scientist and RLHF Team Lead (2022–2023). He earned his Ph.D. at UC Berkeley in model-based reinforcement learning. He is one of the most prominent open voices on **RLHF**, post-training techniques, and the open-source AI movement.
 
-He writes the newsletter **Interconnects** (~32K+ subscribers), hosts **Interconnects Interviews** podcast, and is authoring **"The RLHF Book"** (published via Manning, also freely available online at rlhfbook.com with 1,764+ GitHub stars).
+He writes the newsletter **Interconnects** (~70K subscribers, ~900 paid), hosts **Interconnects Interviews** podcast, and is authoring **"The RLHF Book"** (published via Manning, also freely available online at rlhfbook.com with 1,764+ GitHub stars). He founded **Interconnects AI, LLC** in January 2026 and signed advising agreements with **Arcee AI** and **Mercor** after departing Ai2.
 
 ## Background
 
@@ -69,7 +70,7 @@ His unconventional path — starting his Ph.D. in MEMS/physics, being rejected b
 
 ## Interconnects Newsletter & Media
 
-- **Newsletter**: Weekly analysis of AI trends, model releases, and research papers (~32K+ subscribers)
+- **Newsletter**: Weekly analysis of AI trends, model releases, and research papers (~70K subscribers, ~900 paid)
 - **Podcast**: "Interconnects Interviews" featuring conversations with leading AI researchers
 - **Top podcast appearances**: Lex Fridman (2x), Latent Space (2x), ChinaTalk (5x), The MAD Podcast, Lawfare's "Scaling Laws", AI Summer
 - **2025 highlights**: Covered DeepSeek V3/V4, OLMo 3 launch, RLVR revolution, sycophancy in LLMs
