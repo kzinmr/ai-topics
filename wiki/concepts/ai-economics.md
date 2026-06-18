@@ -1,29 +1,25 @@
 ---
-title: "ai-economics"
+title: "AI Economics"
 type: concept
-aliases:
-  - ai-economics
-created: 2026-04-25
-updated: 2026-06-01
+created: 2026-06-18
+updated: 2026-06-18
 tags:
-  - concept
   - economics
-
+  - agi
+related:
+  - [[entities/alex-imus]]
+  - [[entities/phil-trammell]]
+sources:
+  - https://www.dwarkesh.com/p/alex-imus-phil-trammell
 ---
-
 # AI Economics
 
-> **Note**: This is a stub page. The comprehensive analysis of AI economic impact, including Benedict Evans' framings on Jevons paradox, task vs job, value accrual, and the "1997 internet moment," has been moved to **[[concepts/ai-economic-impact]]**.
+AI economics explores the impact of artificial intelligence on labor markets, wealth distribution, and global productivity.
 
-## Overview
+## Key Concepts
+- **Labor Share**: The potential for AI to reduce the share of labor in GDP.
+- **Forecasting Challenges**: The difficulty of traditional economics in predicting the outcomes of radical automation.
+- **Prediction Markets**: The use of aggregate wisdom to provide more accurate forecasts on AGI-related events.
 
-This stub covers general AI economics. For detailed analysis of specific AI economic dynamics, see:
-
-- [[concepts/ai-economic-impact]] — Jevons paradox for AI, task vs job framing, value accrual in AI stack, distribution as moat, "1997 internet moment" comparison, anti-AI backlash, consulting/services boom
-- [[concepts/ai-economics-bubble-venture-capital-subprime]] — AI bubble, venture capital, and subprime dynamics
-
-## Related Pages
-
-- [[concepts/ai-economic-impact]]
-- [[concepts/ai-economics-bubble-venture-capital-subprime]]
-- [[concepts/_index]]
+## Sources
+- [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell)

@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-06-10
+updated: 2026-06-18
 tags:
   - company
   - model
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-05-21_cohere_cohere-announces-strategic-mous-with-indragroup-and-multiverse-computing.md
   - https://huggingface.co/blog/CohereLabs/introducing-north-mini-code
   - https://x.com/cohere/status/2064378058329526556
+  - raw/articles/2026-06-18_cohere_serving-fairness.md
 ---
 
 # Cohere
@@ -152,6 +153,26 @@ Cohere's first open-source coding model. A 30B-parameter sparse MoE (3B active) 
 | **Weights** | [BF16](https://huggingface.co/CohereLabs/North-Mini-Code-1.0), [FP8](https://huggingface.co/CohereLabs/North-Mini-Code-1.0-fp8) |
 
 See [[entities/north-mini-code]] for full details.
+
+## LLM Serving Fairness (June 2026)
+
+In June 2026, Cohere published **"LLM Serving Fairness"**, detailing a 4-layer scheduling architecture designed to solve the noisy-neighbor problem in multi-tenant LLM serving — where one large tenant's request load degrades latency for all other tenants sharing the same GPU infrastructure. The system is now enabled for all Cohere SaaS API and AWS Marketplace customers.
+
+The four layers operate in sequence to govern request admission and GPU selection:
+
+1. **Rate Limiter (admission control)**: Caps the maximum number of requests per tenant per timeframe at the endpoint level. Real-time throttling rejects requests when the queue backlog exceeds latency targets, preventing any single tenant from overwhelming the system on the way in.
+
+2. **Performance Tier (first selector)**: Compute resources are prioritized based on SLAs — higher-paid tiers receive greater priority. Tiering determines which tenant goes first, but does not prevent a single large tenant within a tier from dominating.
+
+3. **Deficit Round Robin — DRR (second selector, heart of the system)**: Each tenant gets its own queue line with a quantum budget. The scheduler takes turns between tenants, debiting each request's cost. The scheduler is work-conserving and weighted — cheap requests let a tenant come up more often, expensive ones less. Two cost models are supported:
+   - **Request-based budgeting**: cost = 1 per request, quantum = request count. Simple and suitable for generative/streaming endpoints where requests are broadly similar.
+   - **Token-based budgeting**: cost = token count, quantum = token allowance. A natural fit for batched endpoints (embeddings, rerankers). Large requests consume more budget, preventing monopolization of GPU capacity.
+
+4. **Priority (third selector)**: Within a tenant's turn, requests are ordered by **Priority → Deadline → Arrival time**, ensuring critical or time-sensitive requests are served first.
+
+The complete flow integrates admission control (Rate Limiter) on the way in, and three selectors (Tiering → DRR → Priority) on the way out as each batch is assembled. DRR is the architectural centerpiece: by ensuring each tenant receives fair turns proportional to their quantum, it eliminates the noisy-neighbor problem and guarantees predictable latency across tenants regardless of load imbalances.
+
+[[concepts/llm-serving]] | [[concepts/multi-tenant-architecture]] | [[concepts/scheduling]]
 
 ## Related
 

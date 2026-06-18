@@ -1,11 +1,11 @@
 ---
-title: "Phil Trammell"
+title: "Alex Imas"
 type: entity
 created: 2026-06-18
 updated: 2026-06-18
 tags:
   - person
-  - epoch
+  - google-deepmind
   - economics
 related:
   - [[concepts/agi-scarcity]]
@@ -13,13 +13,13 @@ related:
 sources:
   - https://www.dwarkesh.com/p/alex-imus-phil-trammell
 ---
-# Phil Trammell
+# Alex Imas
 
-Phil Trammell is the Head of Economics at Epoch and a research scholar at Stanford.
+Alex Imas is the Director of AGI Economics at Google DeepMind and Professor of Economics at the University of Chicago.
 
 ## Key Areas
-- **AGI Forecasting**: Researching the Future trajectory of AI.
-- **Economic Scarcity**: Investigating what remains scarce in a post-automation world.
+- **AGI Economics**: Focuses on the economic implications of a world with AGI.
+- **Relational Sector**: Investigates areas where human-in-the-loop remains a scarcity.
 
 ## Sources
 - [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell)

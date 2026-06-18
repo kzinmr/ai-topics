@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-06-03
+updated: 2026-06-18
 tags:
   - security
   - company
@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-05-26_harvey-ai-initial-results-legal-agent-benchmark.md
   - raw/articles/2026-06-02_harvey_why-we-built-our-own-cloud-agent-infrastructure.md
   - raw/articles/2026-06-02_harvey_how-ai-is-transforming-contract-review-software.md
+  - raw/articles/2026-06-17_harvey_harvey-copilot-cowork-launch.md
 ---
 
 # Harvey
@@ -46,6 +47,25 @@ Harvey is a domain-specific AI platform for the legal and professional services 
 ## Products & Technology
 
 Harvey's platform includes: Assistant for document Q&A and drafting, Vault for secure document storage and bulk analysis, Knowledge for complex legal research, and Workflow Agents for end-to-end legal task execution (e.g., due diligence, compliance reviews). Named after Harvey Specter from the TV show *Suits*. Integrates with law firm workflows and existing practice management tools.
+
+### Microsoft 365 Copilot Integration (June 2026)
+
+Harvey launched as an agent inside **Microsoft 365 Copilot** and a plugin inside **Copilot Cowork** on June 16, 2026, bringing legal intelligence directly into the Microsoft 365 productivity environment.
+
+**@Harvey in Copilot:** Legal professionals can @mention Harvey within Microsoft 365 Copilot to get legal answers, research issues, analyze documents, and pull content from Harvey Vault — all without switching platforms. Legal teams can retrieve precedent deals, prior work product, and negotiation positions directly in the Copilot interface via Vault retrieval.
+
+**Deep analysis escalation:** When deeper reasoning is needed, clicking a source link moves the thread into Harvey's web environment for advanced reasoning, memo drafting, and argument development.
+
+**Key use cases:**
+- **Contract review under deadline:** Flag non-standard terms with Vault surfacing prior positions taken on similar clauses
+- **M&A due diligence:** Issue spotting across a document set directly within Copilot
+
+**Copilot Cowork integration:**
+- When Cowork executes multi-step tasks across Microsoft 365, Harvey's legal answers surface automatically
+- **Opposition drafting:** Cowork + Harvey runs the full sequence — identify strongest arguments, surface weaknesses, draft counterargument outline as a Word document
+- **Document drafting:** Ask Cowork to draft a mutual NDA; Harvey handles the drafting, Cowork delivers it as a .docx
+
+The goal is to eliminate the tool-switching that fragments legal work, bringing Harvey's domain intelligence into the flow of Microsoft 365 where legal professionals already spend their time.
 
 ## Cloud Agent Infrastructure (June 2026)
 

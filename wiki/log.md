@@ -1,3 +1,15 @@
+---
+
+## 2026-06-18 — Dreaming wiki ingest (recovered from triage failure, 4 enrichments)
+
+- **Pipeline recovery**: dreaming-group upstream failed to parse JSON output. Checkpoint file at `triage_latest.json` contained valid decisions. 65 articles evaluated: 1 take, 3 references, 61 skips.
+- **Enriched**: `entities/cohere.md` — Added LLM Serving Fairness section. Cohere's 4-layer scheduling architecture (Rate Limiter → Performance Tier → Deficit Round Robin → Priority Selector) for multi-tenant LLM serving. Request-based vs token-based budgeting, noisy-neighbor mitigation. +21 lines.
+- **Enriched**: `entities/harvey.md` — Added Microsoft 365 Copilot Integration (June 2026) section. Harvey available as agent inside Copilot and Copilot Cowork. @Harvey in Copilot for legal answers, Vault retrieval, deep analysis escalation. Copilot Cowork multi-step workflows (opposition drafting, NDA document creation). +20 lines.
+- **Enriched**: `entities/elevenlabs.md` — Added Multimodal Input Processing (June 2026) section. File-backed vs inline input paths, WhatsApp/Web/Mobile channels, Rohlik case study (90% auto-resolution). +21 lines.
+- **Enriched**: `entities/langchain.md` — Added Trace Judge — Perceived Error Detection (June 2026) section. LangChain Labs × Fireworks AI collaboration on Qwen-3.5-35B fine-tuning. 96.1% accuracy, 10-100x cost reduction vs frontier models. Cross-domain transfer confirmed. +38 lines.
+- **Cross-pipeline dedup**: Blog-triage already processed GLM-5.2, Kimi K2.7, LifeSciBench, AI Chemist (4 takes). Log.md showed 6+ pages ingested (Midjourney Medical, Agent Separation, ENPIRE, Deployment Sim, Vicki Boykis, George Hotz). Existing wiki pages covered 20+ articles.
+- **Archive**: All skip/reference items previously archived (dedup).
+
 ## 2026-06-18 — SOC Episode 7 Wiki Ingestion (YouTube transcript)
 
 ---

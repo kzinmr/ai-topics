@@ -4,20 +4,24 @@ type: entity
 created: 2026-06-18
 updated: 2026-06-18
 tags:
-  - ai-safety
+  - person
   - superintelligence
-  - existential-risk
-aliases: []
-sources: []
+  - ai-safety
+aliases:
+  - Eric Drexler
+related:
+  - [[concepts/superintelligence]]
+sources:
+  - [https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf
 ---
-# Drexler
+# K. Eric Drexler
 
-K. Eric Drexler is a researcher and co-founder of the Future of Humanity Institute (FHI) at the University of Oxford. He is best known for his pioneering work on superintelligence and the concept of Comprehensive AI Services (CAIS).
+K. Eric Drexler is a researcher at the Future of Humanity Institute (FHI), University of Oxford. He is well known for his work on superintelligence and for proposing the concept of Comprehensive AI Services (CAIS).
 
 ## Key Ideas
-- **Superintelligence**: Drexler was one of the first to formalize about intelligence that far surpasses human ability.
-- **Comprehensive AI Services (CAIS)**: A model of general intelligence where AI agents are viewed as service-providing products rather than just engines of progress. This model reframes the focus from "mind-like" agents to task-oriented autonomous services.
-- **Existential Risk**: His work emphasizes the safety and strategic risks associated with the emergence of superintelligent systems.
+ D- **Comprehensive AI Services (CAIS)**: A model of flexible, general intelligence where agents are a class of service-providing products, rather than a natural or necessary engine of progress.
+ D- **Superintelligence**: Reframing superintelligence from a single "mind" to a distributed system of AI services.
+ D- **AI Safety and Strategy**: Exploring the risks and opportunities of superintelligent systems in the context of human control.
 
 ## Sources
 - [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)

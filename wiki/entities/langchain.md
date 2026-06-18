@@ -9,9 +9,9 @@ tags:
   - deep-agents
   - state-management
 created: 2026-04-27
-updated: 2026-05-22
+updated: 2026-06-18
 aliases: [LangChain Framework, LangChain AI]
-sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md, raw/articles/2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md]
+sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md, raw/articles/2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md, raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md]
 ---
 
 
@@ -186,6 +186,44 @@ See [[concepts/security-and-governance/agentic-security]] for broader agent secu
 - [LangChain Documentation: Component Architecture](https://docs.langchain.com/oss/python/langchain/component-architecture)
 - [Sequoia Podcast: Harrison Chase on Building the Orchestration Layer](https://sequoiacap.com/podcast/training-data-harrison-chase)
 - [AINews: The Inference Inflection](raw/newsletters/2026-04-30-ainews-the-inference-inflection.md)
+
+## Trace Judge — Perceived Error Detection (June 2026)
+
+LangChain Labs collaborated with **Fireworks AI** on a study fine-tuning **Qwen-3.5-35B** to detect *Perceived Error* — situations where a user *believes* the assistant made a mistake, judged from production traces on LangSmith. The work demonstrates that small, fine-tuned models can match or exceed frontier LLMs as evaluators at **10-100x lower cost**.
+
+See also: [[concepts/llm-as-judge]], [[concepts/evaluation]].
+
+### Key Findings
+
+| Aspect | Detail |
+|--------|--------|
+| **Dataset** | chat-langchain (Docs Q&A agent, 885 traces) + Fleet (no-code agent builder, 911 traces). Multi-turn traces selected because judging perceived error requires observing human response to AI results. |
+| **Labeling** | Multi-model panel + human review. All models agreed → ground truth. Disagreement → second panel. Still disagreement → human annotation. |
+| **Training** | Qwen-3.5-35B base via LoRA SFT on Fireworks. Trained only on chat-langchain data to test cross-domain transfer. |
+| **Design choice** | Only Human and AI messages included; tool calls ignored. Open design lever for future work. |
+
+### Accuracy Results
+
+| Condition | Accuracy | vs Claude Opus | vs GPT-5.5 |
+|-----------|----------|----------------|------------|
+| chat-langchain SFT | **96.1%** | 91.6% | 98.9% |
+| Fleet SFT | **91.3%** | 90.2% | 89.1% |
+| chat-langchain SFT → Fleet (zero-shot) | **90.8%** | — | — |
+
+The cross-domain transfer result is particularly notable: a model fine-tuned *only* on chat-langchain traces outperformed **all frontier models** on Fleet data without ever seeing Fleet training examples.
+
+### Cost & Generality
+
+- **10-100x cheaper** than frontier API-based judges, with the advantage growing as trace volume increases.
+- **Perceived Error rates**: 24% of chat-langchain traces, 18% of Fleet traces.
+- The concept of *perceived error* generalizes across domains — a fine-tuned model trained on one application's traces can detect errors in a completely different application.
+
+### Future Work
+
+- Continual learning for trace understanding.
+- Helping teams build their own evaluator models.
+
+*People: @Vtrivedy10 (LangChain), @jakebroekhuizen (LangChain), @hwchase17 (LangChain), @chahvivi (Fireworks), Yi Su (Fireworks)*
 
 ## References
 

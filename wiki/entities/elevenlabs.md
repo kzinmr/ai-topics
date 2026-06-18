@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-06-05
+updated: 2026-06-18
 tags:
   - company
   - voice-ai
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-05-23_elevenlabs_22-million-earned-by-voice-creators-on-elevenlabs.md
   - raw/articles/2026-06-02_elevenlabs_webinar-recap-deploying-agents-across-every-channel.md
   - raw/articles/2026-06-05_elevenlabs_introducing-flows-agent.md
+  - raw/articles/2026-06-17_elevenlabs_processing-images-and-documents-in-elevenagents.md
 ---
 
 # ElevenLabs
@@ -162,6 +163,26 @@ Flows Agent is a conversational AI assistant within ElevenLabs' creative canvas,
 **Significance**: Flows Agent marks ElevenLabs' transition from a voice-synthesis platform to a multi-modal creative agent orchestrator, competing with Runway's Gen-3, Pika, and Adobe Firefly in the AI creative workflow space while leveraging ElevenLabs' audio-native advantages.
 
 Source: raw/articles/2026-06-05_elevenlabs_introducing-flows-agent.md
+
+### Multimodal Input Processing (June 2026)
+
+ElevenLabs introduced **multimodal input processing** for ElevenAgents, enabling agents to process images and PDFs as first-class inputs alongside voice and text. Files reach the underlying model as native messages — preserving spatial relationships, visual layout, and document formatting — rather than being reduced to text summaries.
+
+**Channel support**: File inputs (images and PDFs) supported on web, mobile, and WhatsApp. A single agent can be deployed across all channels simultaneously.
+
+**Two internal input paths**:
+1. **File-backed inputs** — Images and PDFs passed as native file references. The platform stores the file, assigns a `file_id`, and the vision-capable model receives the raw file in context. Integration: capture `file_id` from the upload endpoint, include in message payload. Storage is scoped to the conversation.
+2. **Inline (everything else)** — Voice transcribed to text, WhatsApp location pins become coordinates+address, contacts become name+phone. No file storage needed.
+
+**SDK/WebSocket flow**: File must be uploaded before the message is sent. Upload returns a `file_id`, then a `multimodal_message` with the `file_id` is sent over WebSocket.
+
+**WhatsApp flow**: Differs from web/mobile. Meta receives the file; ElevenLabs retrieves it server-to-server via the WhatsApp Business API webhook. No client-side upload step — ElevenLabs handles delivery, storage, and agent turn.
+
+**Context across sessions**: Each conversation is processed independently. Post-call webhook delivers transcript, analysis, and file URLs. Dynamic variables inject stored context at session start for return customers. Webhook file URLs are valid for 15 minutes — download immediately.
+
+**Case study — Rohlik**: The European online grocery platform runs agents across phone, web, app, and WhatsApp in six languages, resolving **90% of customer inquiries** automatically using multimodal capabilities.
+
+Source: raw/articles/2026-06-17_elevenlabs_processing-images-and-documents-in-elevenagents.md
 
 ---
 
