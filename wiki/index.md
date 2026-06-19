@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-19 | Total pages: 2661 | Indexed entries: 2196 | Not in index: 465 | Entities: 822 | Concepts: 1716
+> Last updated: 2026-06-19 | Total pages: 2669 | Indexed entries: 2204 | Not in index: 465 | Entities: 822 | Concepts: 1716
 
 ## Entities (822 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -19,7 +19,7 @@
 - [[entities/alan-nichol]] — Alan Nichol — Co-founder and CTO of Rasa. Creator of open-source conversational AI framework spaCy. Focus on NLU and dialogue systems.
 - [[entities/andon-labs]] — Andon Labs — Swedish AI safety evaluation company. Created VendingBench (money-based real-world AI evaluation, featured in Mythos System Card). Founders: Lukas Petersson, Axel Backlund. Covered on Latent Space (Jun 2026).
 - [[entities/antoine-chaffin]] — Antoine Chaffin — Researcher at LightOn. Lead author of DenseOn/LateOn (SOTA open retrieval models), PyLate (CIKM 2025). Late Interaction Workshop co-organizer. Reframed IR direction: sublinear querying over information reconstruction (Jun 2026).
-- [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[Claude models]]. $47B run-rate revenue (May 2026), $65B Series H ($965B valuation) with expanded investor consortium (Capital Group, Coatue, GIC, etc.) and compute commitments (Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus). Safety-focused LLM lab founded by former OpenAI researchers.
+- [[entities/anthropic]] — Anthropic — AI research company and public benefit corporation. Creator of [[concepts/claude/index|Claude models]]. $47B run-rate revenue (May 2026), $65B Series H ($965B valuation) with expanded investor consortium (Capital Group, Coatue, GIC, etc.) and compute commitments (Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus). Safety-focused LLM lab founded by former OpenAI researchers.
 - [[entities/ar0cket1]] — ar0cket1 — Pseudonymous AI/ML researcher. OPSD (On-Policy Self-Distillation) empirical analysis: KL divergence profiling, positive pressure asymmetry (83% down-weight), GEPA-based hint optimization. 216 bookmarks.
 - [[entities/argilla]] — Argilla — Data collaboration platform for AI engineers and domain experts. Open-source annotation, curation, and synthetic data tools. Acquired by Hugging Face (Jan 2024). Products: Argilla platform (5K+ ⭐), distilabel (3.2K+ ⭐). Key person: David Berenstein.
 - [[entities/arcee-ai]] — Arcee AI — Open-model startup pivoted from post-training to frontier reasoning. Qwen-distilled models, synthetic data pipeline.
@@ -288,7 +288,7 @@
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization, Intent-Based Engineering, Graph of Algorithms, and The Scaffolding Ratio concepts.
 - [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | **Medium** | [dtunkelang.medium.com](https://dtunkelang.medium.com/) | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Bag-of-documents model (2023–2026): distills retrieval pipelines into single embedding model. Advises Etsy, Flipkart. RSS monitored via blogwatcher. [[concepts/query-understanding]] [[concepts/information-retrieval]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 - [[entities/daniel-van-strien]] — Daniel van Strien — ML Librarian at Hugging Face. Creator of polars-hf (HF Buckets IO plugin), uv-scripts-for-ai (30+ OCR models, one command each), AI Patterns for GLAM book, hub-semantic-search-mcp. Datasets, synthetic data, community evals.
-- [[entities/dan-luu]] — Software reliability engineer known for systematic incident analysis. Twitter cache failure study (2012-2022) with 6 SEV-0/SEV-1 cache incidents documented. [[raw/articles/danluu.com--cache-incidents--1d05e743.md]]
+- [[entities/dan-luu]] — Software reliability engineer known for systematic incident analysis. Twitter cache failure study (2012-2022) with 6 SEV-0/SEV-1 cache incidents documented. [[raw/articles/danluu.com--cache-incidents--1d05e743]]
 - [[entities/datacurve]] — Datacurve — AI evaluation startup ($17.7M raised). Creator of DeepSWE benchmark (113 tasks, 91 repos, 5 languages). Exposed ~32% verifier error rate in SWE-Bench Pro and Claude Opus git-history exploitation.
 - [[entities/dan-mcinerny]] — Dan McInerney — Open-source developer and creator of Architect Loop, a cross-vendor agent loop pattern using Claude Fable 5 + OpenAI Codex (GPT-5.5).
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
@@ -394,7 +394,7 @@
 - [[entities/gwern]] — **Blog** | gwern.net |
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, primary maintainer of the LM Evaluation Harness (lm-eval). Co-author of Pythia (ICML 2023).
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
-- [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog (RSS tracked). Wrote the foundational "Hidden Technical Debt of AI Systems" tetralogy: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents|RL Environments Taxonomy]] (Mar 2026) → [[concepts/harness-engineering/agent-runtime|Agent Runtime]] (Apr 2026) → [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness|Agent Harness]] (May 2026) → [[raw/articles/leehanchung.github.io--blogs-2026-06-13-hidden-technical-debt-agent-evaluation-infr--f05320f3.md|Agent Evaluation Infrastructure]] (Jun 2026). Other key work: Data Aggregation Is Not a Moat, Don't Outsource Your Understanding (cognitive offloading vs surrender).
+- [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog (RSS tracked). Wrote the foundational "Hidden Technical Debt of AI Systems" tetralogy: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents|RL Environments Taxonomy]] (Mar 2026) → [[concepts/harness-engineering/agent-runtime|Agent Runtime]] (Apr 2026) → [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness|Agent Harness]] (May 2026) → [[raw/articles/leehanchung.github.io--blogs-2026-06-13-hidden-technical-debt-agent-evaluation-infr--f05320f3|Agent Evaluation Infrastructure]] (Jun 2026). Other key work: Data Aggregation Is Not a Moat, Don't Outsource Your Understanding (cognitive offloading vs surrender).
 - [[entities/hanchunglee]] — Hanchung Lee (Han Lee, @hanchunglee) — Focused entity page on the Agent Runtime and Agent Evaluation Infrastructure from his "Hidden Technical Debt" series. Covers: isolation primitive stack, sandboxing necessity (4 reasons), runtime shift, web app vs agent runtime comparison, plus Part 4 (Jun 2026): I_eval formalization, 5 evaluation surfaces, checkpoint/branch/replay. See [[entities/han-lee]] for full biography and article catalog.
 - [[entities/hark]] — Hark — GPU infrastructure company. $700M+ at $6B (oversubscribed, May 2026). Investors: Nvidia/AMD/Intel/Qualcomm/Salesforce Ventures. Roadmap: AI models summer 2026, then consumer devices. 200-hour autonomous runs.
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
@@ -875,7 +875,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1736 pages)
+## Concepts (1178 pages)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/ai-governance-political-pressure]] — Anthropic-Trump political pressure case study — AI governance under adversarial political conditions
@@ -897,7 +897,7 @@
 - [[concepts/active-observability]] — Active Observability: Braintrust Topics methodology for continuous automated trace intelligence. 6-stage pipeline (preprocess → facet → embed → cluster → name → classify). Clio-inspired: LLM summarizes traces along single dimensions, embed the facet output (not raw trace), HDBSCAN+UMAP clustering. ~100ms classification without LLM calls.
 - [[concepts/activegraph]] — Event-Sourced Reactive Graph for agentic systems (arXiv:2605.21997). Inverts conventional architecture: append-only event log as source of truth, graph as deterministic projection, behaviours react to graph-shape changes. Three unique properties: deterministic replay (content-addressed cache), cheap forking (branch at any event), end-to-end lineage. Open source (Apache-2.0): `pip install activegraph`. Created by Yohei Nakajima.
 - [[concepts/activitypub]] — ActivityPub — W3C decentralized social networking protocol (2018). Mastodon, Threads, PeerTube. Used for federated AI agent communication
-- [[concepts/adam-optimizer]] — Adam (Adaptive Moment Estimation): The most widely used adaptive optimization algorithm in deep learning. Adaptively controls learning rates via exponential moving averages of first and second moments. AdamW separates weight decay to improve generalization. The standard for LLM training.→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
+- [[concepts/adam-optimizer]] — Adam (Adaptive Moment Estimation): The most widely used adaptive optimization algorithm in deep learning. Adaptively controls learning rates via exponential moving averages of first and second moments. AdamW separates weight decay to improve generalization. The standard for LLM training.→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw]]
 - [[concepts/advanced-tool-use]] — Advanced Tool Use
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
@@ -918,6 +918,7 @@
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud — Infrastructure paradigm designed for AI agents: version control beyond Git, observability at 1000x, orchestration beyond K8s, safe production forks, self-replicating infrastructure. Championed by Railway (Jake Cooper).
 - [[concepts/agent-ontology]] — Agent Ontology — Semantic representation of enterprise operations for AI agents. Substrate for working/episodic/semantic/procedural memory, decision lineage, logic binding, scenarios. See [[entities/palantir]].
 - [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects — Impact of AI coding agents on personal productivity and attention. David Wilson's "thermonuclear ADHD amplifier" metaphor. Project proliferation syndrome (agents lowering activation energy from idea to working project). HN ADH
+- [[concepts/agent-safety]] — Agent safety refers to the field of study focused on ensuring that AI agents operate safely, predictably, and ethically.
 - [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities — The Fedora AI agent incident (June 2026), insecure AI code completions as vulnerabilities, and supply chain risks from autonomous agents in open source.
 - [[concepts/agent-security-patterns]] — Agent Security Patterns — Security best practices for AI agent deployments: sandboxing, authentication, authorization, threat modeling
 - [[concepts/agent-skills]] — Agent Skills — Open standard for dynamically granting domain-specific expertise to agents. Covers Anthropic's skill format (SKILL.md, progressive disclosure, code execution) and OpenAI Codex implementation (repo-local skills, AGENTS.md mandatory routing, CI automation, systematic evals). OSS case study: 457 PRs in 3 months.
@@ -947,6 +948,7 @@
 - [[concepts/agents-self-improvement-learning]] — agents, self-improvement, learning
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves — A paradigm where agents write their own tools and execute them immediately via hot reload. Systematized by Hugo Bowne-Anderson + Ivan Leo in a February 2026 workshop. Factory pattern + hot reload + hooks + markdown memory compaction. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[concepts/agi-economics]] — AGI Economics: Economic implications of AGI — labor share, relational sector, optimal taxation, messy middle scenario, von Neumann probes. Alex Imas (DeepMind) & Phil Trammell (Epoch). See also [[entities/dwarkesh-patel]].
+- [[concepts/agi-scarcity]] — AGI scarcity refers to the question of what will remain scarce in a world where Artificial General Intelligence can automate most human tasks.
 - [[concepts/agno]] — agno
 - [[concepts/agreement-is-a-bug]] — Agreement is a Bug
 - [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns
@@ -1024,7 +1026,7 @@
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
 - [[concepts/ai-digital-nato]] — AI Digital NATO: Threat intelligence sharing coalition concept by the Frontier Model Forum (OpenAI/Anthropic/Google).
 - [[concepts/ai-doesnt-have-roi]] — AI ROI measurement problem — Ed Zitron framework arguing AI costs and returns cannot be reliably quantified due to token billing opacity, hallucination uncertainty, and variable token consumption. Enterprise token billing crisis (GitHub Copilot, Walmart, Amazon, June 2026).
-- [[concepts/ai-economic-impact]] — AI Economic Impact — Benedict Evans' framings on AI economics: Jevons paradox (cheaper AI → more usage), task vs job automation, value accrual in AI stack, distribution as moat, "1997 internet moment" comparison, anti-AI backlash, consulting/services boom. Sources: [[raw/articles/2026-06-01_benedict-evans-1997-internet-moment.md]]
+- [[concepts/ai-economic-impact]] — AI Economic Impact — Benedict Evans' framings on AI economics: Jevons paradox (cheaper AI → more usage), task vs job automation, value accrual in AI stack, distribution as moat, "1997 internet moment" comparison, anti-AI backlash, consulting/services boom. Sources: [[raw/articles/2026-06-01_benedict-evans-1997-internet-moment]]
 - [[concepts/ai-economics]] — "ai-economics"
 - [[concepts/ai-economics-bubble-venture-capital-subprime]] — "ai-economics, bubble, venture-capital, subprime"
 - [[concepts/ai-economics-post-scarcity]] — Post-scarcity economic dynamics under AGI. Two-sector model (automated vs relational), network-adjusted factor shares, Messy Middle scenario, taxation mechanisms (UBI, negative income tax, universal basic capital), Kaldor fact, Jevons paradox, O-ring theory. Key figures: Alex Imas, Phil Trammell.
@@ -1033,6 +1035,7 @@
 - [[concepts/ai-engineering]] — "AI Engineering"
 - [[concepts/ai-engineering-metrics-vanity]] — AI Engineering Metrics: Vanity vs. Outcome — AI vendors use volume metrics (lines of code, % AI-generated code) as unfalsifiable vanity proxies for productivity. Research shows ~10% organizational gains at best, not the "8x" claims. Real-world impact: Block cut 40% of workforce citing AI. Core argument: measure DORA metrics and outcomes, not token counts. Source: David Curlewis (Jun 2026).
 - [[concepts/ai-evals-people]] — "ai-evals-people"
+- [[concepts/ai-exponential]] — The AI exponential refers to the rapidly increasing capabilities of artificial intelligence as predicted by scaling laws.
 - [[concepts/ai-generated-issues-in-oss]] — AI-Generated Issues in Open Source (slop issues) — The crisis created by LLM-generated low-quality Issues/PRs in OSS maintenance. Misdiagnoses mislead agent-driven development. Pi's 90-day stats: 80% auto-closed out of 3,145, <10% merged. Documented in Armin Ronacher's "Building Pi With Pi."[[entities/armin-ronacher]] [[entities/pi]]
 - [[concepts/ai-image-generation]] — AI Image Generation
 - [[concepts/ai-in-military-wargames]] — "AI in Military Wargames"
@@ -1055,6 +1058,7 @@
 - [[concepts/ai-output-format-progression]] — AI output format evolution (Karpathy): raw text → markdown → HTML → interactive neural videos/simulations. Audio in, Vision out. HTML as the next default output format. Includes Thariq Shihipar's 8-category HTML artifact use cases.
 - [[concepts/ai-patterns-for-glam]] — AI Design Patterns for Information Professionals (Boring AI)
 - [[concepts/ai-persona-embodiment]] — AI-Persona-Embodiment
+- [[concepts/ai-policy]] — AI policy refers to the frameworks, legislation, and regulatory efforts intended to govern the development and deployment of artificial intelligence.
 - [[concepts/ai-pre-release-testing]] — AI Pre-Release Government Testing — US government framework for evaluating frontier AI models for national security risks before public release. CAISI agreements with Microsoft, Google, xAI (May 2026). Triggered by Claude Mythos cybersecurity concerns.
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
 - [[concepts/ai-programming-as-theory-building]] — AI Programming as Theory Building
@@ -1090,6 +1094,7 @@
 - [[concepts/anthropic/2026-revenue-growth]] — Anthropic Q1 2026: 80x YoY revenue growth, $44B ARR. Doubling every 6 weeks. 1,000+ enterprise customers spending >$1M/yr. $200B Google Cloud deal, SpaceX Colossus 1 GPU deal.
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — Claude Agent SDK — SRE Agent Pattern
 - [[concepts/anthropic/dod-dispute]] — Anthropic–DoD Dispute: Ongoing legal confrontation over military use of Claude. Anthropic refused "any lawful use" clause (lethal weapons, mass surveillance), was designated "supply chain risk" (Feb 2026). Sued Pentagon; Judge Lin issued First Amendment injunction. No settlement as of June 2026. D.C. Circuit litigation continues.
+- [[concepts/anthropic/index]] — Anthropic Platform & Business hub page. Platform, SDK, and business details. Model pages under concepts/claude/.
 - [[concepts/anthropic/infrastructure-postmortems]] — Two major Anthropic quality degradation postmortems (Aug-Sep 2025: context window misrouting, output corruption, XLA:TPU miscompilation / Mar-Apr 2026: reasoning effort misconfiguration, reasoning history loss bug, redundancy reduction prompts). Common patterns: slow detection, internal eval limitations, privacy constraints.
 - [[concepts/anthropic/managed-agents]] — Anthropic's REST API-based platform for cloud-hosted autonomous agents at scale. Architecture: "decouple the brain from the hands" — agent loop on Anthropic side, code execution in self-hosted sandboxes (Cloudflare/Modal/Vercel/Daytona). Launched April 2026 with sandbox partnerships announced May 19, 2026.
 - [[concepts/anthropic/memory-tool-cognition-strategic-follow]] — Anthropic's Memory Tool: Cognition's strategic follow-up
@@ -1156,6 +1161,7 @@
 - [[concepts/cache-first-engineering]] — Cache-First Engineering
 - [[concepts/caching-performance-cost-optimization]] — Caching, Performance, Cost Optimization
 - [[concepts/caid-coordination]] — CAID — Centralized Asynchronous Isolated Delegation
+- [[concepts/cais]] — Comprehensive AI Services (CAIS) is a model of general intelligence proposed by K. Eric Drexler.
 - [[concepts/caisi-federal-ai-review]] — CAISI Federal AI Pre-Release Review: Center for AI Standards and Innovation under NIST/Department of Commerce. In May 2026, Google DeepMind/Microsoft/xAI joined OpenAI/Anthropic in pre-release model evaluation agreements. 40+ evaluations completed, TRAINS Taskforce, national security (cyber/bio/chemical) assessments. Institutionalized following Mythos.
 - [[concepts/capability-based-security]] — Capability-Based Security
 - [[concepts/carlini-c-compiler-agents]] — Nicholas Carlini's experiment: 16 Claude agents running 2,000 parallel sessions, building a 100K-line Rust C compiler for $20K that successfully compiles the Linux 6.9 kernel. Practical lessons on Infinite Agent Loop, Git-based task locking, and parallel agent design.
@@ -1407,6 +1413,7 @@
 - [[concepts/evaluation/macro-evals-for-agentic-systems]] — Macro Evals for Agentic Systems — Methodology for discovering collective-level behavioral patterns in multi-agent systems. Lower-level evals → BERTopic clustering → AgentTrace diagnostics. OpenAI × Slalom (May 2026).
 - [[concepts/evaluation/ndcg]] — NDCG (Normalized Discounted Cumulative Gain): de facto search relevance metric. Measures ranked result quality against human judgments. Covers DCG, iDCG, judgment sources (human/clickstream/LLM), limitations, and the "grug-brained" evaluation philosophy.
 - [[concepts/evaluation/offline-evaluation]] — Offline Evaluation — Pre-production evaluation pipelines for LLM applications.
+- [[concepts/evaluation/open-llm-leaderboard]] — Centralized hub on Hugging Face for tracking, ranking, and evaluating open-source Large Language Models.
 - [[concepts/evaluation/pass-k-metric]] — pass^k: Agent reliability metric introduced by the τ-bench family. Requires all k independent trials of the same task to succeed, measuring consistency. Exposes fragility: GPT-4o pass@1 ~45% but pass^8 <25%. Foundation for [[concepts/ai-benchmarks/tau-bench|τ-bench]] production reliability.
 - [[concepts/evaluation/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/evaluation/process-reward-models-agent-eval]] — Process Reward Models for Agent Evaluation — PRM-based evaluation
@@ -1508,6 +1515,7 @@
 - [[concepts/gpt/gpt-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5 unification (2024-2025): o1 (Sep 2024)→o3 announced (Dec 2024)→o3 cancelled due to Altman roadmap pivot (Feb 2025)→absorbed into GPT-5 as Thinking mode (Aug 2025). Three-component unified architecture (Main+Thinking+Router).
 - [[concepts/gpt/gpt-o1-system-card]] — OpenAI o1 System Card (Dec 2024): First reasoning model. Deliberative alignment introduced. AIME 94.8%, Codeforces 93rd percentile. Cyber/Bio/Chem/Persuasion all Medium.
 - [[concepts/gpt/gpt-o3-o4-mini-system-card]] — o3 and o4-mini System Card (Apr 2025): First Preparedness Framework v2 assessment. No High threshold in any category. Key findings: reward hacking detected by METR (1% of attempts), time horizon ~1.5h, bio/chem near-threshold, CTF 89%/68%/59% (high-school/collegiate/professional). Last standalone o-series card before GPT-5 unification.
+- [[concepts/gpt/gpt-oss]] — OpenAI's first open-weight model release since GPT-2, released August 5, 2025 under Apache 2.0 license.
 - [[concepts/gpt/gpt-oss-model-card]] — gpt-oss Model Card (Aug 2025): Apache 2.0 open-weight (120B/20B). Adversarial fine-tuning tested, not reaching High.
 - [[concepts/gpt/gpt-rosalind]] — GPT-Rosalind — OpenAI's life sciences research model series. Combines GPT-5.5 agentic coding with domain-specialized intelligence in medicinal chemistry, genomics, and quantitative biology. Trusted-access deployment. June 2026 updated with LifeSciBench, MedChemBench, GeneBench, LabWorkBench + Life Sciences/NGS plugins.
 - [[concepts/gpt/gpt-rosalind-5-5-system-card]] — GPT-Rosalind-5.5 System Card (Jun 2026): Bio/drug discovery domain-specific. Bio/Chem High. Research-only deployment.
@@ -1630,7 +1638,7 @@
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/lexical-search]] — Lexical Search: token-based matching against inverted index. Tokenization, query processing (AND/OR), multi-field search (DisMax, BM25F). Foundation for BM25 scoring. Doug Turnbull's "Cheat at Search Essentials" course + BM25F derivation.
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence — Codebase-aware reasoning for Linear Agent (May 2026). Read-only GitHub integration enabling PMs, Support, and Engineering to query codebase context directly.
-- [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan)'s cognitive phenomenon of linguistic authenticity loss in the LLM era. Linguistic vertigo, head words vs body words, social diagnosis using LLMs as tracer dye, RLHF's societal shadow (→ [[concepts/societal-shadow]]). Includes Gwern's appendix on prompt-blindness (unseeing / prompt-vision). Experiential premise: [[raw/articles/2023-03-13_qchu-re-encountering-language.md]].
+- [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan)'s cognitive phenomenon of linguistic authenticity loss in the LLM era. Linguistic vertigo, head words vs body words, social diagnosis using LLMs as tracer dye, RLHF's societal shadow (→ [[concepts/societal-shadow]]). Includes Gwern's appendix on prompt-blindness (unseeing / prompt-vision). Experiential premise: [[raw/articles/2023-03-13_qchu-re-encountering-language]].
 - [[concepts/llama-4]] — LLaMA 4: Meta's April 2026 open-weight multimodal model family, Scout (compact) and Maverick (flagship) variants, competitive with DeepSeek V4 and Qwen 3.7.
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development — Methodology for using LLM coding agents in software development. Covers greenfield vs rewrite paradigms, CL size discipline, test-first strategy, language choice (Go advantage), human-in-the-loop categories, and junior vs senior guidance. Based on Eli Bendersky's pycparser rewrite and watgo greenfield project experiences.
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
@@ -2014,7 +2022,7 @@
 - [[concepts/training-infra/model-serving-autoscaling]] — "Model Serving & Autoscaling"
 - [[concepts/training-infra/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling: Profiling techniques for GPU memory optimization.
 - [[concepts/trajectory-post-training-platform]] — Trajectory — Post-training platform using product signals + agent traces for large-scale agent model refinement. $15M raised. Design partners: Clay, Harvey, Decagon, Mercor, Rogo.
-- [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].
+- [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers|Source: Gwern 2025]].
 - [[concepts/trusted-access-biodefense]] — OpenAI's Rosalind Biodefense program (May 2026). GPT-Rosalind trusted access for biodefense developers and government partners. Defensive acceleration via controlled distribution.
 - [[concepts/tsp-tensor-sequence-parallelism]] — "Tensor and Sequence Parallelism (TSP)"
 - [[concepts/turbopuffer-rank-by-attribute]] — TurboPuffer — Rank by Attribute — Vector database feature for ranking results by metadata attributes.
