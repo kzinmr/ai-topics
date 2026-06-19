@@ -392,8 +392,6 @@
 - Total wiki pages: 2599 → 2603
 ---
 
----
-
 ## [2026-06-19] Weekly Wiki Graph Analysis
 
 - Ran comprehensive graph analysis (scanning 2,105 pages)
@@ -406,3 +404,22 @@
   - 674 pages (32%) missing sources field
 - Saved report to: `wiki/queries/wiki-graph-analysis-weekly-2026-06-19.md`
 - Updated index.md (added to Queries section)
+---
+
+## 2026-06-19 — wiki-watchdog-fix (17:35 UTC)
+
+- **Auto-fixed (2):**
+  - `wiki/index.md` — Restructured section boundaries: ~1160 concept entries that had spilled into Events section (under `## Events (11 pages)`) were moved back under `## Concepts (1736 pages)`. Concepts section went from 11→1170 entries. Events section corrected to 11 entries (matching 11 files on disk).
+  - `wiki/log.md` — Removed duplicate `---` separator and cleaned up pipe character artifacts from previous patch attempts.
+- **Updated:**
+  - `wiki/index.md` header — Total pages 2603→2661, Indexed entries 2194→2196, Concepts 1736→1716
+- **Verified clean:**
+  - Pipe corruption: 0 | Line prefix corruption: 0 | Triple brackets: 0 | Space prefix: 0
+  - Duplicate entries: 0 | Ghost entries: 0 | Log separators: 0 missing
+  - Tag violations (non-canonical): 0 on Layer 2 pages
+- **Deferred (human review):**
+  - `x_accounts` job stale (26h) — recurring alert, was also noted Jun 17 and Jun 18
+  - ~465 concept entries missing from index.md (need human-driven index regeneration)
+  - 36 content-rich orphan pages with zero inbound links (needs human review)
+  - 933 fixable cross-namespace wikilinks (across many files — exceeds 10-file threshold)
+  - 4 entity↔entity duplicate pairs: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin

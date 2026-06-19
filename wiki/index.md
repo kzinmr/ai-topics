@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-19 | Total pages: 2603 | Indexed entries: 2194 | Not in index: 471 | Entities: 822 | Concepts: 1736
+> Last updated: 2026-06-19 | Total pages: 2661 | Indexed entries: 2196 | Not in index: 465 | Entities: 822 | Concepts: 1716
 
 ## Entities (822 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -887,20 +887,6 @@
 - [[concepts/multi-objective-policy-distillation]] — Multi-Objective Policy Distillation (MOPD) — Dominant 2026 post-training pattern: train N domain-specialist teachers, distill into one general student via reverse-KL on on-policy rollouts. Used by MiMo-V2-Flash, GLM-5, Nemotron 3 Ultra, DeepSeek V4.
 - [[concepts/plandex-coding-engine]] — Plandex Coding Engine — Terminal-based AI coding engine for multi-file projects, 2M token context window, tree-sitter project mapping, cumulative diff review sandbox, configurable autonomy spectrum.
 - [[concepts/spine-swarm-agents]] — Spine Swarm — Parallel multi-agent research platform, 300+ model support, structured handoffs, #1 on DeepSearchQA (87.6%), client-ready output formats, automation via MCP/API/webhooks.
-
-## Events (11 pages)
-- [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
-- [[events/openai-may-2026-reorg]] — OpenAI's May 2026 product reorganization. Greg Brockman oversees all products, ChatGPT and Codex integrated, Thibault Sottiaux named core product lead. Fidji Simo on medical leave.
-- [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — Anthropic announces new products enhancing Claude Code (2026-05-06)
-- [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks (2026-04-24)
-- [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk trial verdict (2026-05-18) — Jury unanimously dismisses Musk's claims. Statute of limitations cited, no ruling on OpenAI's legitimacy. Gary Marcus: "Trial of the century ends with a whimper."
-- [[events/google-io-2026]] — Google I/O 2026 (2026-05-20) — Gemini Spark (personal AI agent), Antigravity platform, Gemini 3.5 Flash announced. OpenCLaw competitor. Gemini CLI→Antigravity CLI migration (OSS→proprietary). Agent security (prompt injection) concerns.
-- [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
-- [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
-- [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
-- [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss. Ed Zitron exclusive report based on FT-verified audited documents. Revenue $13.07B, total costs $34B, paid Microsoft $17.2B.
-- [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal (2024 restructuring) — IRS Form 990 filings show safety language removed from mission statement during for-profit restructuring. 74% nonprofit control ceded, investor board seats enabled. Alnoor Ebrahim (Tufts) accountability concerns.
-
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
@@ -2062,6 +2048,19 @@
 - [[concepts/zero-disk-architecture]] — Zero Disk Architecture — Infrastructure pattern eliminating local disk dependencies for stateless, scalable AI deployment using object storage and in-memory compute.
 - [[concepts/zero-trust-agentic-ai]] — Zero Trust for Agentic AI — Applied Zero Trust security model: assume no request is safe by default, verify every action, minimize blast radius of compromised agents.
 - [[concepts/zombie-internet]] — Zombie Internet: AI-contaminated web where humans and bots coexist in complex interaction patterns, causing cognitive overload and writing style distortion. Coined by Jason Koebler, highlighted by Simon Willison (May 2026).
+
+## Events (11 pages)
+- [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective — Year-in-review: reasoning convergence, multimodality, agent-native APIs, Codex evolution, production infrastructure.
+- [[events/openai-may-2026-reorg]] — OpenAI's May 2026 product reorganization. Greg Brockman oversees all products, ChatGPT and Codex integrated, Thibault Sottiaux named core product lead. Fidji Simo on medical leave.
+- [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — Anthropic announces new products enhancing Claude Code (2026-05-06)
+- [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks (2026-04-24)
+- [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk trial verdict (2026-05-18) — Jury unanimously dismisses Musk's claims. Statute of limitations cited, no ruling on OpenAI's legitimacy. Gary Marcus: "Trial of the century ends with a whimper."
+- [[events/google-io-2026]] — Google I/O 2026 (2026-05-20) — Gemini Spark (personal AI agent), Antigravity platform, Gemini 3.5 Flash announced. OpenCLaw competitor. Gemini CLI→Antigravity CLI migration (OSS→proprietary). Agent security (prompt injection) concerns.
+- [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
+- [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE (May 2026) — Adversa AI discloses MCP auto-execution and symlink hijack vulnerabilities across Claude Code, Gemini CLI, Cursor, Copilot CLI, Antigravity CLI, and Grok Build. One-Enter/zero-click RCE via project config files.
+- [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan (2026-06-08) — Strategic vision: three goals (automated AI researcher by Mar 2028, economic acceleration, personal AGI for everyone). Third phase of OpenAI. Broad power distribution thesis.
+- [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss. Ed Zitron exclusive report based on FT-verified audited documents. Revenue $13.07B, total costs $34B, paid Microsoft $17.2B.
+- [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal (2024 restructuring) — IRS Form 990 filings show safety language removed from mission statement during for-profit restructuring. 74% nonprofit control ceded, investor board seats enabled. Alnoor Ebrahim (Tufts) accountability concerns.
 
 ## Comparisons (31 pages)
 
