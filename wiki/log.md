@@ -1,3 +1,17 @@
+## 2026-06-19 — X/Twitter article ingestion: Deli Chen AutoResearch
+
+**Source**: https://x.com/victor207755822/status/2067259098584985954
+**Type**: Note Tweet (long-form)
+**Author**: Deli Chen (@victor207755822) — Deep Learning Researcher at DeepSeek
+
+**Actions**:
+- Created raw article: `raw/articles/2026-06-17_victor207755822_auto-research-skill-open-source-self-play.md`
+- Created concept page: `concepts/auto-research.md` — AutoResearch framework, self-play, GRPO, continual learning
+- Created entity page: `entities/deli-chen.md` — Deli Chen biography, research contributions
+- Updated `index.md`: Added entities/deli-chen and concepts/auto-research entries
+
+**Content summary**: AutoResearch SKILL open-sourced (June 17, 2026). 4th survey paper on self-play. AutoResearch Agent autonomously planned GPU experiments and submitted RL runs on DeepSeek 285B model. 100% automated RL pipeline. GRPO tool usage. Beginning of continual learning research journey.
+
 ## [2026-06-19] blog-wiki-ingest — 2 entity enrichments from blog triage
 
 **Source**: blog-ingest (run_id: 20260619T070014Z)

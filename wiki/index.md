@@ -303,6 +303,7 @@
 - [[entities/decision-lab]] — Decision Lab — Open-source causal/Bayesian analysis tool by PyMC Labs. Garden of forking paths architecture for robust analysis.
 - [[entities/decision-lens]] — Decision Lens — Agentic dashboard for stakeholders by PyMC Labs. Natural language interaction with agentic data science outputs.
 - [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption** + **10T USD hardware ecosystem strategy**. V4-Pro permanent 75% discount ($0.435/$0.87 per M tokens, blended ~$0.18/M). First "Harness team" formed (May 2026). V4 (1.6T/284B MoE, 1M ctx) on Huawei Ascend 950. Grand strategy: KV cache compression → Chinese NAND/LPDDR market creation; TileLang DSL → hardware vendor diversification; equity-collaboration model (OpenAI-AMD style). [[concepts/deepseek-v4]], [[concepts/deepseek-r1]], [[concepts/post-training/grpo]].
+- [[entities/deli-chen]] — Deli Chen — Deep Learning Researcher at [[deepseek]], creator of [[auto-research]] framework. RL automation, self-play, continual learning.
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
 - [[entities/demis-hassabis]] — **Role** | CEO, Google DeepMind; Co-founder, DeepMind |
@@ -1134,6 +1135,7 @@
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/autonomous-agent-marketplace-stack]] — Autonomous Agent Marketplace Stack (3 planes, 10 layers) — Infrastructure framework for agents as economic actors: Trust Plane (Identity/Discovery/Reputation), Market Plane (Quoting/Contracting/Settlement/Dispute), Control Plane (Governance/Compliance/Orchestration). ERC-8004 + x402 + governance control planes.
 - [[concepts/autonomous-component-optimization]] — Autonomous Component Optimization
+- [[concepts/auto-research]] — AutoResearch — AI agent framework for automating RL research pipelines. Self-play, GRPO, continual learning. Open-sourced June 2026.
 - [[concepts/autoreason]] — Autoreason
 - [[concepts/autoresearch-bm25-msmarco]] — Autoresearch for BM25 Optimization on MSMarco — Doug Turnbull case study. Dual-gate agentic optimization of BM25 ranking. Overfitting lessons through validation data leakage.
 - [[concepts/autoscientist]] — AutoScientist — Adaption's AI tool for automated frontier model training. Trains agents to make incremental improvements to training pipelines.
