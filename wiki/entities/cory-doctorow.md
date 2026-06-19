@@ -3,13 +3,14 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-05-27
+updated: 2026-06-19
 status: L3
 sources:
   - https://pluralistic.net/
   - https://en.wikipedia.org/wiki/Cory_Doctorow
   - https://crimelab.blog/
   - https://locusmag.com/feature/cory-doctorow-full-employment/
+  - raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md
 tags: [person]
 ---
 
@@ -69,6 +70,19 @@ In "[The AI bubble isn't like the internet bubble](https://pluralistic.net/2026/
 **Reverse-centaur extension**: This analysis extends Doctorow's "reverse centaur" concept — humans should be **critics of AI output**, not cheerleaders. The management-imposed nature of AI adoption reinforces the need for critical distance.
 
 > "The early web may have lost money, but it had great unit economics... By contrast, AI has dogshit unit economics. Every new AI user makes AI less profitable, as does every new use for AI, and each generation of AI loses more money than the last."
+
+### AI Digital Sovereignty — The "Problem + AI = Problem − AI" Framework (June 2026)
+
+In "[AI digital sovereignty risk doesn't exist](https://pluralistic.net/2026/06/18/their-trillions-our-billions/)" (June 18, 2026), Doctorow applies his blockchain critique framework to AI sovereignty debates:
+
+> if: problem + AI = problem − AI
+> then: AI = 0
+
+He argues that AI digital sovereignty fears are a **distraction from real digital sovereignty risks** — US platform dependency (iCloud, Office 365, AWS), Trump-era kill-switch vulnerabilities, and trade agreements preventing other countries from building competitive alternatives. The argument extends his earlier framework: just as blockchain couldn't eliminate the need for trusted human intermediaries, AI cannot eliminate the structural power imbalances of platform capitalism.
+
+> "Trump can block ChatGPT, Claude, or Grok in Canada and nothing will happen. But if he blocks iCloud, Office 365, or tractor software, the country stops."
+
+The essay directly connects to his broader **enshittification** thesis — AI sovereignty concerns serve corporate interests by focusing policy attention on hypothetical future risks rather than present-day platform dominance.
 
 ### Full Employment for AI (April 2026)
 

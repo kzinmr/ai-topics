@@ -1,3 +1,15 @@
+## [2026-06-19] blog-wiki-ingest — 2 entity enrichments from blog triage
+
+**Source**: blog-ingest (run_id: 20260619T070014Z)
+**Triage outcome**: 0 takes, 3 references, 13 skips (Case C2 — triage produced valid decisions, cron output parse failed)
+
+**Enrichments (references)**:
+- [[entities/cory-doctorow.md]] — Added "AI Digital Sovereignty — The 'Problem + AI = Problem − AI' Framework (June 2026)" section. Doctorow applies his blockchain critique framework to AI sovereignty, arguing AI sovereignty fears distract from real US platform dependency risks. Raw article: pluralistic.net--2026-06-18-their-trillions-our-billions. Updated: 2026-05-27 → 2026-06-19.
+- [[entities/entropicthoughts-com.md]] — Added timeline entry for "GLM 5.2 playing text adventures" (Jun 18, 2026). GLM 5.2 evaluated against Gemini 3 Flash on text adventure benchmarks with mixed-effects regression. Raw article: entropicthoughts.com--glm-5-2-playing-text-adventures. Updated: 2026-06-13 → 2026-06-19.
+- [[entities/cursor-ai.md]] — Already fully updated (market share data on line 190, acquisition status correct). No enrichment needed.
+
+**Archive**: Triage decisions saved to blog_ingest archive.
+
 ## 2026-06-19 — Newsletter wiki ingest (recovered from triage failure, 3 enrichments)
 
 - **Pipeline recovery**: newsletter-triage upstream failed to parse JSON output. Checkpoint file at `triage_latest.json` contained valid triage decisions. 9 items: 3 takes, 3 references, 3 skips.

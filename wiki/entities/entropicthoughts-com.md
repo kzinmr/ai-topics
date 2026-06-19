@@ -2,8 +2,11 @@
 title: "Chris of Entropic Thoughts"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-13
+updated: 2026-06-19
 type: entity
+sources:
+  - https://entropicthoughts.com/
+  - raw/articles/entropicthoughts.com--glm-5-2-playing-text-adventures--94662385.md
 ---
 
 # Chris of Entropic Thoughts
@@ -47,7 +50,8 @@ This intellectual humility — publishing to be corrected, not to be right — i
 | 2025–2026 | Continues publishing on topics including Emacs, Haskell, ZFS, pathfinding algorithms, and forecasting |
 | 2026 Early | Publishes "The MVC Mistake" — architectural critique |
 | 2026 Q1/Q2 | Publishes "Understanding Systems" — unified methodology for debugging/learning through mental model diagnosis, knowledge shields, and hypothesis-invalidation loop |
-| 2026 Jun | Publishes "LLMs and almost good code" — case study showing frontier LLMs generate ~8% excess complexity on easy tasks; developers accept it because code is "right here, right now"; dead code in `padHex` detected by CI coverage check; connects to [[concepts/llm-code-quality]] |
+|| 2026 Jun | Publishes "LLMs and almost good code" — case study showing frontier LLMs generate ~8% excess complexity on easy tasks; developers accept it because code is "right here, right now"; dead code in `padHex` detected by CI coverage check; connects to [[concepts/llm-code-quality]] |
+|| 2026 Jun 18 | Publishes "GLM 5.2 playing text adventures" — evaluates GLM 5.2 and Gemini 3 Flash on Lost Pig and Organ Grinder's Monkey using mixed-effects regression controlling for game difficulty; GLM 5.2 achieves 15% fewer achievements than Gemini 3 Flash at comparable price ($4.4 vs $3 per million output tokens); harness limits each attempt to ~$0.15 budget; raw article: [[raw/articles/entropicthoughts.com--glm-5-2-playing-text-adventures--94662385]] |
 
 ## Core Ideas
 
