@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-18 | Total pages: 2599 | Indexed entries: 2189 | Not in index: 410 | Entities: 822 | Concepts: 1732
+> Last updated: 2026-06-19 | Total pages: 2603 | Indexed entries: 2193 | Not in index: 406 | Entities: 822 | Concepts: 1736
 
 ## Entities (822 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -874,11 +874,15 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1732 pages)
+## Concepts (1736 pages)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
+- [[concepts/ai-governance-political-pressure]] — Anthropic-Trump political pressure case study — AI governance under adversarial political conditions
+- [[concepts/ai-industry-financial-sustainability]] — OpenAI leaked financials and 'Herbalife Moment' critique — AI industry economics sustainability
 - [[concepts/axe-framework]] — Axe Framework — Lightweight CLI for single-purpose AI agents following Unix philosophy, TOML configuration, sub-agent delegation with depth limiting, persistent memory, SSRF protection, token budgets.
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
+- [[concepts/deepseek-vision]] — DeepSeek multimodal vision capabilities — June 2026 product launch adding image understanding
+- [[concepts/mcp-enterprise-oauth]] — MCP enterprise OAuth — zero-touch managed authentication for production agent deployments
 - [[concepts/multi-objective-policy-distillation]] — Multi-Objective Policy Distillation (MOPD) — Dominant 2026 post-training pattern: train N domain-specialist teachers, distill into one general student via reverse-KL on on-policy rollouts. Used by MiMo-V2-Flash, GLM-5, Nemotron 3 Ultra, DeepSeek V4.
 - [[concepts/plandex-coding-engine]] — Plandex Coding Engine — Terminal-based AI coding engine for multi-file projects, 2M token context window, tree-sitter project mapping, cumulative diff review sandbox, configurable autonomy spectrum.
 - [[concepts/spine-swarm-agents]] — Spine Swarm — Parallel multi-agent research platform, 300+ model support, structured handoffs, #1 on DeepSearchQA (87.6%), client-ready output formats, automation via MCP/API/webhooks.

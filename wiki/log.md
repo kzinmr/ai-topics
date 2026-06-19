@@ -366,3 +366,14 @@
 - **Verified clean**: Pipe corruption: 0 | Line prefix corruption: 0 | Triple brackets: 0 | Space prefix: 0
   Duplicate entries: 0 | Ghost entries: 0 | Log separators: 0 missing | validate_index.py: clean
 - **Deferred (human review)**: ~410 missing concept/entity entries in index.md — large batch (>50), needs dedicated pass
+
+## [2026-06-19] Active Crawl — 4 New Concept Pages
+
+- Created `concepts/deepseek-vision.md` — DeepSeek Vision multimodal capabilities launch (June 2026)
+- Created `concepts/mcp-enterprise-oauth.md` — MCP enterprise OAuth managed authentication
+- Created `concepts/ai-governance-political-pressure.md` — Anthropic-Trump political pressure case study
+- Created `concepts/ai-industry-financial-sustainability.md` — OpenAI financials and Herbalife Moment economics critique
+- Sources: HN Algolia trending stories, X/Twitter search, blogwatcher DB scan
+- Coverage gaps addressed: multimodal (priority 1), MCP protocols (priority 3), AI regulation/policy (priority 2), industry economics
+- Total wiki pages: 2599 → 2603
+---
