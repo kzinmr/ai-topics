@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-06-17
+updated: 2026-06-19
 tags:
   - organization
   - research
@@ -23,6 +23,7 @@ sources:
   - raw/articles/substack.com--app-link-post--1509e963.md
   - raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md
   - raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md
+  - raw/newsletters/2026-06-18-stop-saying-half-of-2026-us-datacenter-capacity-is-canceled.md
   - https://semianalysis.com/
 ---
 
@@ -66,8 +67,25 @@ sources:
 - Covers AI labs (OpenAI, Anthropic), cloud providers, inference workloads
 
 ### Datacenter Industry Model
-- Tracks datacenter capacity, deployments, and commitments
-- Used for CoreWeave, Nebius, Oracle, and other Neocloud analysis
+
+SemiAnalysis maintains a **proprietary three-model architecture** for datacenter analysis, covering 550+ suppliers and 6,000+ facilities:
+
+| Model | Scope | Inputs |
+|-------|-------|--------|
+| **Datacenter Industry Model** | Capacity tracking, deployment timelines, commitments | 550+ suppliers, 6,000+ facilities, 75+ equipment categories |
+| **Energy Model** | Power availability, grid interconnection, permitting timelines | Regional utility data, transmission build schedules, regulatory timelines |
+| **Industrials Model** | Construction materials, labor availability, supply chain bottlenecks | HVAC, generators, switchgear, cooling equipment supply chains |
+
+#### Key Methodological Insight
+
+Bloomberg/Sightline's claim that "half of 2026 US datacenter capacity is canceled" was debunked by SemiAnalysis's proprietary model in June 2026:
+
+- **Denominator error**: Sightline tracks only large-scale projects ($100M+), missing the majority of datacenter capacity in planning. SemiAnalysis's broader dataset reveals a denominator 2-3× larger.
+- **Cancellation misinterpretation**: The majority of tracked "cancellations" are projects in the **speculative pre-construction phase** — land options, feasibility studies, preliminary permitting — not active construction sites being abandoned. This is standard industry practice where 30-40% of early-stage projects never break ground.
+- **Active construction tracking**: SemiAnalysis's model distinguishes between speculative land banking (common among REITs and investment funds) and shovel-ready/under-construction capacity. The latter shows minimal cancellation rates.
+- **Actual impact**: Genuine delays are concentrated among smaller, under-capitalized developers. Tier 1 hyperscaler projects (AWS, Microsoft, Google, Meta) continue on schedule.
+
+Tracks datacenter capacity, deployments, and commitments for CoreWeave, Nebius, Oracle, and other Neocloud analysis.
 
 ### GPU Economics
 - Detailed NVIDIA GPU cost modeling and margin analysis

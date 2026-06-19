@@ -1,3 +1,13 @@
+## 2026-06-19 — Newsletter wiki ingest (recovered from triage failure, 3 enrichments)
+
+- **Pipeline recovery**: newsletter-triage upstream failed to parse JSON output. Checkpoint file at `triage_latest.json` contained valid triage decisions. 9 items: 3 takes, 3 references, 3 skips.
+- **Enriched**: `entities/cursor-ai.md` — Updated SpaceX-Cursor Connection section to reflect formal acquisition agreement ($60B all-stock, signed June 16, closing Q3 2026). Added Deal Terms, Industry Context, Prior Right-to-Acquire subsections. Source: CNBC + Ben's Bites newsletter.
+- **Enriched**: `entities/dean-ball.md` — Added OpenAI Career (July 2026) section. Dean Ball joining OpenAI as Head of Strategic Futures, effective July 6. Reports to Jason Kwon (Chief Strategy Officer). New Strategic Futures team focused on frontier AI policy.
+- **Enriched**: `entities/semianalysis.md` — Expanded Datacenter Industry Model with proprietary three-model architecture (Datacenter Industry Model + Energy Model + Industrials Model, 550+ suppliers, 6,000+ facilities). Debunked Bloomberg/Sightline "half canceled" claim: denominator error, speculative pre-construction misinterpretation, Tier 1 continued on schedule.
+- **References**: AINews GLM-5.2 (AA-Briefcase, Open Fable forecast, poolside Laguna M.1), Simon Willison Datasette Apps, Anjney Midha AMP interview.
+- **Skipped**: 3 items (Elena Verna SaaS, Midjourney beehiiv 403 expired, True Positive Weekly pure link digest).
+- **Archive**: Running archive_triage.py (newsletter pipeline).
+
 ---
 
 ## 2026-06-18 — Dreaming wiki ingest (recovered from triage failure, 4 enrichments)

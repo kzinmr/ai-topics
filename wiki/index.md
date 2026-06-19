@@ -35,7 +35,7 @@
 - [[entities/command-a-plus]] — Command A+ — Cohere's 218B MoE model, first fully Apache 2.0 licensed. 25B active params, 48 languages, W4A4 quantization, 2× H100 deployment. May 2026.
 - [[entities/company-ai-pilled]] — Company AI Pilled
 - [[entities/content-engine]] — Content Engine
-- [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
+- [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, IVOs, Aviate-Navigate-Communicate triage model. Joining OpenAI as Head of Strategic Futures (Jul 2026).
 - [[entities/deedydas]] — Deedy Das — Partner at Menlo Ventures, former Glean/Google Search. Meta-harness concept originator ("Autoresearch on steroids"), AI agent investor (Anthropic, Goodfire, OpenRouter).
 - [[entities/datasette-llm-limits]] — Datasette LLM Limits
 - [[entities/deepmind]] — Google DeepMind — Alphabet's central AI research lab (AlphaGo, AlphaFold, Gemini). May 2026: AI Pointer / Magic Pointer — context-aware cursor. Agents at Scale: Antigravity IDE, token quotas, Darwinian skills library, in-house model mixing.
@@ -129,7 +129,7 @@
 - [[entities/samuelcolvin]] — samuelcolvin
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
-- [[entities/semianalysis]] — SemiAnalysis — Premier independent AI/semiconductor research firm. GPU economics, AI infrastructure, RL training systems. Founders: Dylan Patel, Myron Xie, Daniel Nishball. Creator of ClusterMAX GPU cloud ratings. Published "RL Systems: Mind the Gap" (Jun 2026) on generator/trainer throughput matching.
+- [[entities/semianalysis]] — SemiAnalysis — Premier independent AI/semiconductor research firm. GPU economics, AI infrastructure, RL training systems, Datacenter Industry Model (550+ suppliers, 6,000+ facilities). Founders: Dylan Patel, Myron Xie, Daniel Nishball. Creator of ClusterMAX GPU cloud ratings.
 - [[entities/seshadri]] — Seshadri (@sseshadri43) — LangChain engineer. Co-author of RubricMiddleware for Deep Agents (self-correcting grader loops).
 - [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark; Outcomemaxxing outcome-based pricing framework (Agency x Attribution 2x2 matrix).
@@ -428,7 +428,7 @@
 - [[entities/jason-liu]] — Jason Liu (@jxnlco) — Creator of Instructor library (6M+ monthly downloads, cited by OpenAI). DX Engineer at OpenAI (Codex team). Former Staff ML Engineer at Stitch Fix. Context engineering, RAG systems, structured outputs. Published "Getting the Most Out of Codex" (May 2026): cataloging Codex app capabilities — durable threads, voice/steering/queuing, side panel, shared memory, automations.
 - [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Director & Engineering Fellow at Cohere. Co-author of "Hands-On Large Language Models" (O'Reilly). Creator of "The Illustrated Transformer," "The Illustrated BERT," Ecco (2K+ GitHub stars). Deeplearning.ai co-creator.
 - [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
-- [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents, recursive agent fleet for ML training (Jun 2026), self-driving codebases vision. SpaceX holds acquisition right for $60B.
+- [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents, recursive agent fleet for ML training (Jun 2026), self-driving codebases vision. SpaceX formally agreed to acquire for $60B all-stock (Jun 2026, closing Q3).
 - [[entities/jayden-milne]] — **Blog:** thejaymo.net
 - [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
 - [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com

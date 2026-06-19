@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-06-13
+updated: 2026-06-19
 type: entity
 tags:
   - entity
@@ -25,6 +25,8 @@ sources:
   - https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html
   - raw/newsletters/2026-05-19-ainews-how-to-land-a-job-at-a-frontier-lab-on-pretraining.md
   - raw/articles/2026-06-12_cursor_building-recursive-agent-systems.md
+  - raw/articles/cnbc.com--2026-06-16-spacex-spcx-cursor-acquisition-ipo-html--cb9f7b0c.md
+  - raw/newsletters/2026-06-18-the-first-big-exit-in-ai.md
 ---
 
 
@@ -45,7 +47,7 @@ sources:
 | **Total Funding** | ~$3.4B+ |
 | **Key Investors** | a16z, Thrive Capital, Accel, DST Global, Coatue, NVIDIA, Google |
 | **Tech Blog** | [cursor.com/blog](https://cursor.com/blog) |
-| **SpaceX Interest** | SpaceX holds right to acquire Cursor for $60B or pay $10B for compute credits |
+| **SpaceX Interest** | SpaceX formally agreed to acquire Cursor for $60B all-stock (June 16, 2026, closing Q3) |
 | **Key Differentiator** | IDE-native AI integration + automated CI operations |
 
 ## Key Facts
@@ -171,9 +173,26 @@ Cursor referenced previously published research on **long-running agents** as th
 - [Scaling Agents](https://cursor.com/blog/scaling-agents)
 - [Agent Computer Use](https://cursor.com/blog/agent-computer-use)
 
-## SpaceX-Cursor Connection
+## SpaceX-Cursor Acquisition (June 2026)
 
-In April 2026, it was reported that **SpaceX has the right to acquire Cursor for $60 billion** or alternatively pay $10 billion for collaborative compute credits (likely Colossus H100 equivalents). This signals a broader industry trend: top coding labs need to own both model and product.
+On **June 16, 2026**, SpaceX announced a **formal agreement to acquire Cursor for $60 billion in class A common stock**, following SpaceX's record-breaking Nasdaq IPO days earlier. The deal is expected to close in Q3 2026, subject to regulatory approvals.
+
+### Deal Terms
+- **Price**: $60B in SpaceX class A common stock (3.4% dilution at SpaceX's IPO valuation)
+- **Structure**: All-stock acquisition
+- **Timeline**: Formal agreement signed June 16, closing expected Q3 2026
+- **Termination provision**: If not consummated, SpaceX pays $1.5B termination fee + $8.5B in computing resources (per April IPO filings)
+- **Regulatory**: Subject to "requisite regulatory approvals" (per SEC filing)
+
+### Industry Context
+- SpaceX merged with xAI earlier in 2026; Cursor acquisition strengthens AI coding capabilities against Anthropic and OpenAI
+- Thrive Capital holds positions in both SpaceX and Cursor — combined stake worth >$10B
+- Cursor's market share declined from 41% (June 2025) to ~26% (May 2026) per Ramp data — Anthropic now controls ~50% of the category
+- SpaceX President Gwynne Shotwell called the partnership "makes a huge amount of sense"
+- CEO Michael Truell: "Excited to partner with the SpaceX team to scale up Composer"
+
+### Prior Right-to-Acquire (April 2026)
+In April 2026, SpaceX had obtained the **right to acquire** Cursor for $60B as part of broader partnership negotiations. The June 16 announcement converts that right into a binding formal agreement.
 
 
 

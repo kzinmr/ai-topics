@@ -1,10 +1,10 @@
 ---
 title: "Dean W. Ball"
 created: 2026-05-05
-updated: 2026-06-17
+updated: 2026-06-19
 type: entity
 tags: [person, governance, safety, policy, blogger]
-sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md, raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md, raw/articles/2026-06-16_dean-ball_leviathan-waking.md]
+sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md, raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md, raw/articles/2026-06-16_dean-ball_leviathan-waking.md, raw/newsletters/2026-06-18-that-untravell-d-world.md]
 ---
 
 # Dean W. Ball
@@ -83,6 +83,22 @@ Ball's longest-form analysis of the **Fable 5/Mythos 5 conflict** as a watershed
 - **Sovereignty Argument**: Making superintelligence is a profoundly political act — Mythos implicates state sovereignty, making Anthropic's release a perceived move against the U.S. Government
 - **Institutional Mediation**: Not \"FDA for AI\" but technocratic institutions to mediate between political actors and private enterprise — procedure, structure, and predictability that constrains the state as much as industry
 - **Fable Guardrails Critique**: The machine-learning \"safeguards\" that silently degrade performance without user awareness creates a trust deficit, separate from the guardrail strictness debate
+
+## OpenAI Career (July 2026)
+
+On **June 18, 2026**, Ball announced he will be joining **OpenAI as Head of Strategic Futures**, effective **July 6, 2026**. The Strategic Futures team is described as a new, small, high-agency team within OpenAI, reporting to Chief Strategy Officer Jason Kwon.
+
+### Role
+- **Title**: Head of Strategic Futures
+- **Team**: Newly formed Strategic Futures team — small, high-agency, focused on frontier AI policy
+- **Reports to**: Jason Kwon (Chief Strategy Officer)
+- **Start date**: July 6, 2026
+- **Mission**: Shape frontier AI policy from within a leading AI lab
+
+### Significance
+This move represents a transition from external policy analysis (Hyperdimensional newsletter, Mercatus Center) to internal policy strategy at one of the world's most advanced AI companies. Ball's frameworks — the Mythos governance analysis, IVOs, Aviate-Navigate-Communicate — will now inform OpenAI's policy positioning.\
+\
+Source: [Hyperdimensional — That Untravell'd World](https://open.substack.com/pub/hyperdimensional/p/that-untravelld-world) (June 18, 2026)
 
 ## Related
 
