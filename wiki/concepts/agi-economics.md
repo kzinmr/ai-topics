@@ -2,7 +2,7 @@
 title: AGI Economics
 type: concept
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-06-19
 tags:
   - economics
   - agi

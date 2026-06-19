@@ -1,0 +1,146 @@
+{
+  "run_id": "20260619T071114Z",
+  "triaged_at": "2026-06-19T07:11:14Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 9,
+  "total_articles_extracted": 173,
+  "triage": [
+    {
+      "message_id": "<20260618130358.3.b8d943a66d5faf4d@mg-d0.substack.com>",
+      "subject": "The first big exit in AI",
+      "date": "2026-06-18",
+      "source": "Ben's Bites",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-the-first-big-exit-in-ai.md",
+      "relevance": "high",
+      "tags": ["ai-business", "m-and-a", "ai-market"],
+      "reason": "Major AI acquisition/exit event — directly relevant to AI market dynamics and ecosystem wiki coverage",
+      "action": "scrape_article",
+      "primary_url": "https://open.substack.com/pub/bensbites/p/the-first-big-exit-in-ai"
+    },
+    {
+      "message_id": "<20260618154557.3.3cdcdf50925208c1@mg-d0.substack.com>",
+      "subject": "That Untravell'd World",
+      "date": "2026-06-18",
+      "source": "Hyperdimensional (Dean Ball)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-that-untravell-d-world.md",
+      "relevance": "high",
+      "tags": ["ai-policy", "ai-governance", "ai-philosophy"],
+      "reason": "Dean Ball's Hyperdimensional covers AI policy/governance — core wiki topic area",
+      "action": "scrape_article",
+      "primary_url": "https://open.substack.com/pub/hyperdimensional/p/that-untravelld-world"
+    },
+    {
+      "message_id": "<20260618153953.3.17a4c1263d4f74b6@mg-d0.substack.com>",
+      "subject": "The Mom-and-Pop SaaS era has arrived",
+      "date": "2026-06-18",
+      "source": "Elena Verna / Product-Led Growth",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-the-mom-and-pop-saas-era-has-arrived.md",
+      "relevance": "low",
+      "tags": ["saas", "business-model"],
+      "reason": "SaaS business model discussion — tangentially related (AI enables mom-and-pop SaaS) but not core wiki territory",
+      "action": "skip"
+    },
+    {
+      "message_id": "<20260618155424.3.eb79a6e2bb3d36d0@mg2.substack.com>",
+      "subject": "Stop Saying Half of 2026 US Datacenter Capacity Is Canceled",
+      "date": "2026-06-18",
+      "source": "SemiAnalysis",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-stop-saying-half-of-2026-us-datacenter-capacity-is-canceled.md",
+      "relevance": "critical",
+      "tags": ["ai-infrastructure", "datacenter", "compute", "ai-economics"],
+      "reason": "SemiAnalysis deep-dive on AI datacenter capacity — directly impacts AI training/inference infrastructure wiki coverage. SemiAnalysis is a key AI infrastructure analysis source.",
+      "action": "scrape_article",
+      "primary_url": "https://open.substack.com/pub/semianalysis/p/stop-saying-half-of-2026-us-datacenter"
+    },
+    {
+      "message_id": "<20260618173000.3.020ba7c47c3da0bb@mg2.substack.com>",
+      "subject": "The Professor of Outputmaxxing — Anjney Midha, AMP",
+      "date": "2026-06-18",
+      "source": "swyx / Latent Space",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-the-professor-of-outputmaxxing-anjney-midha-amp.md",
+      "relevance": "high",
+      "tags": ["ai-people", "ai-agents", "ai-product", "podcast"],
+      "reason": "Anjney Midha interview on AI-native product development (AMP). Swyx/Latent Space is a primary AI podcast source.",
+      "action": "scrape_article",
+      "primary_url": "https://open.substack.com/pub/swyx/p/anj"
+    },
+    {
+      "message_id": "<20260618.175210.7d90e0b8@mta14>",
+      "subject": "Midjourney Builds a Full-Body Scanner?!",
+      "date": "2026-06-18",
+      "source": "Beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-midjourney-builds-a-full-body-scanner.md",
+      "relevance": "high",
+      "tags": ["ai-image-generation", "midjourney", "3d-scanning", "ai-hardware"],
+      "reason": "Midjourney expanding into hardware (full-body scanner) — significant development for major AI image generation company",
+      "action": "scrape_article",
+      "note": "Beehiiv links require redirect resolution — all 20 links are tracking URLs"
+    },
+    {
+      "message_id": "<20260618201706.3.28736ef69b594893@mg2.substack.com>",
+      "subject": "True Positive Weekly #166",
+      "date": "2026-06-18",
+      "source": "AI Weekly",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-18-true-positive-weekly-166.md",
+      "relevance": "high",
+      "tags": ["ai-news-digest", "weekly-roundup"],
+      "reason": "Curated AI weekly digest — useful for cross-referencing other developments and identifying trends",
+      "action": "scrape_article",
+      "primary_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-166"
+    },
+    {
+      "message_id": "<20260619044812.3.b50e54684608718a@mg-d0.substack.com>",
+      "subject": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "date": "2026-06-19",
+      "source": "Simon Willison",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-19-datasette-apps-host-custom-html-applications-inside-datasette.md",
+      "relevance": "high",
+      "tags": ["developer-tools", "datasette", "data-tooling", "llm-tooling"],
+      "reason": "Simon Willison is a key AI/LLM tools figure (entity page exists). Datasette is relevant to AI data workflows.",
+      "action": "scrape_article",
+      "primary_url": "https://open.substack.com/pub/simonw/p/datasette-apps-host-custom-html-applications"
+    },
+    {
+      "message_id": "<20260619055354.3.5560b85190621956@mg-d1.substack.com>",
+      "subject": "[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December",
+      "date": "2026-06-19",
+      "source": "swyx / Latent Space AINews",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-19-ainews-glm-gpt-glm-5-2-passes-vibe-check-z-ai-forecasts-open-fable-by-december.md",
+      "relevance": "critical",
+      "tags": ["llm-models", "glm-5", "open-source-ai", "z-ai", "model-benchmarks"],
+      "reason": "GLM-5.2 model release/benchmark news — direct LLM model coverage. Z.ai (Zhipu AI) forecasting open-source model releases. Critical for model landscape wiki updates.",
+      "action": "scrape_article",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-glm-gpt-glm-52-passes-vibe"
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 6,
+    "low": 1,
+    "skip": 1,
+    "to_scrape": 8,
+    "top_stories": [
+      {
+        "subject": "GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December",
+        "source": "Latent Space AINews",
+        "why": "New competitive LLM model from Chinese AI lab — open-source model landscape shift"
+      },
+      {
+        "subject": "Stop Saying Half of 2026 US Datacenter Capacity Is Canceled",
+        "source": "SemiAnalysis",
+        "why": "Datacenter infrastructure analysis directly affects AI compute availability and costs"
+      },
+      {
+        "subject": "The first big exit in AI",
+        "source": "Ben's Bites",
+        "why": "Milestone AI acquisition — signals market maturation"
+      }
+    ],
+    "entity_updates_suggested": [
+      "zhipu-ai (GLM-5.2 model news)",
+      "midjourney (hardware expansion)",
+      "simon-willison (Datasette Apps feature)",
+      "semianalysis (continued AI infra analysis)"
+    ]
+  }
+}

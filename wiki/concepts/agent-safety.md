@@ -2,7 +2,7 @@
 title: "Agent Safety"
 type: concept
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 tags:
   - agent-safety
   - architecture

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-19 | Total pages: 2603 | Indexed entries: 2193 | Not in index: 406 | Entities: 822 | Concepts: 1736
+> Last updated: 2026-06-19 | Total pages: 2603 | Indexed entries: 2194 | Not in index: 471 | Entities: 822 | Concepts: 1736
 
 ## Entities (822 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
@@ -2096,11 +2096,12 @@
 - [[comparisons/palantir-platform-family]] — Palantir Platform Family — Gotham (2008, defense) vs Foundry (2016, commercial Ontology) vs Apollo (2018, continuous delivery everywhere) vs AIP (2023, LLM/agent layer). How the four platforms form an Enterprise Operating System.
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors — Databricks/Snowflake/Microsoft Fabric/C3.ai. Layer-in-stack analysis, pricing comparison, when to choose each, Palantir+Databricks 2025 partnership.
 
-## Queries (3 pages)
+## Queries (4 pages)
 
 - [[queries/data-analysis-open-harness]] — Which Open Harness is suitable for data analysis? Organizing options between repurposing general coding harnesses vs data analysis specialized products (2026-05-14)
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Portal — How TDD, evals, A/B testing, monitoring, and observability are being redefined in the probabilistic era. Causal chain (Segato→Chase→Hylak), practice-by-practice transformation tables, key thinkers map, and reading paths.
 - [[queries/saas-future-and-agent-developer-career]] — The future of SaaS and AI Agent developer career strategy: Personal Harness adoption, FDE model expansion, shift to Service-as-Software (2026-05-27)
+- [[queries/wiki-graph-analysis-weekly-2026-06-19]] — Weekly Wiki Graph Analysis — Comprehensive health audit: orphan pages (36), broken wikilinks (4,597), duplicates (32 groups), index gaps (472 pages not indexed, 394 stale entries), oversized pages (185), tag violations (7). (2026-06-19)
 
 ## Raw Articles — Cheat at Search Slide Series (7 pages)
 

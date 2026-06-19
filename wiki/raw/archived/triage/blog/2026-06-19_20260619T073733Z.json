@@ -1,0 +1,187 @@
+{
+  "archived_at": "2026-06-19T07:37:33.523641+00:00",
+  "triage_run_id": "20260619T073733Z",
+  "source": "blog",
+  "summary_ja": "16記事中3件のreference（Cory Doctorow: AIデジタル主権リスク否定論、Entropic Thoughts: GLM 5.2テキストアドベンチャーベンチマーク、CNBC: SpaceXのCursor正式買収合意）、13件のskip。新規概念ページの作成が必要な記事なし。3件のreferenceは既存エンティティページ（cory-doctorow.md、entropicthoughts-com.md、cursor-ai.md）の軽微な情報更新に該当。",
+  "decisions": [
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: AI digital sovereignty risk doesn't exist (18 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/18/their-trillions-our-billions/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Cory DoctorowのAIデジタル主権リスク否定論。「問題+AI = 問題-AI」フレーミングで、AI主権リスクは実在のデジタル主権リスク（米国プラットフォーム依存、トランプのキルスイッチ）からの注意散らしと主張。entities/cory-doctorow.mdは更新2026-05-27で、この具体的なsovereignty論を未カバー。エンティティページに追記推奨。",
+      "candidate_wiki_path": "entities/cory-doctorow.md",
+      "body_excerpt": "# Pluralistic: AI digital sovereignty risk doesn’t exist (18 Jun 2026)\nSource: https://pluralistic.net/2026/06/18/their-trillions-our-billions/\nToday's links\nAI digital sovereignty risk doesn't exist\n: If 'risk + AI = risk – AI', then 'AI = 0'.\nHey look at this\n: Delights to delectate.\nObject perman"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "entropicthoughts.com",
+      "title": "GLM 5.2 playing text adventures",
+      "url": "https://entropicthoughts.com/glm-5-2-playing-text-adventures",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/entropicthoughts.com--glm-5-2-playing-text-adventures--94662385.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ GLM 5.2とGemini 3 Flashをテキストアドベンチャーゲームで比較。混合効果モデル（ランダム効果）を用いた統計的評価手法が特徴的。concepts/glm-5-2.mdは181行でモデル詳細ありだが、テキストアドベンチャーベンチマークは未収録。entities/entropicthoughts-com.mdに評価手法の追記推奨。",
+      "candidate_wiki_path": "entities/entropicthoughts-com.md",
+      "body_excerpt": "# GLM 5.2 playing text adventures\nSource: https://entropicthoughts.com/glm-5-2-playing-text-adventures\nI’ve heard some buzz around the new\nglm\n5.2 open-weights model. They say it’s\nvery capable! I won’t run a full comparison benchmark, but I have some credits\nsloshing around on OpenRouter so I figur"
+    },
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "SpaceX to acquire the AI coding startup Cursor for $60 billion",
+      "url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/cnbc.com--2026-06-16-spacex-spcx-cursor-acquisition-ipo-html--cb9f7b0c.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ SpaceXがCursorを600億ドルで正式買収合意（CNBC 6月16日）。SpaceX IPO後初の大型M&A。entities/cursor-ai.md（更新6月13日）のSpaceX Interest行は「right to acquire」表記で、本記事は正式合意にアップデートが必要。Cursor市場シェアも41%→26%に低下、Anthropicが50%を掌握という競合データも含む。",
+      "candidate_wiki_path": "entities/cursor-ai.md",
+      "body_excerpt": "# SpaceX to acquire the AI coding startup Cursor for $60 billion\nSource: https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html\nSpaceX\non Tuesday\nannounced\nit entered a formal agreement to buy the\nartificial intelligence\nstartup Cursor for $60 billion worth of stock, a hotly anticip"
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette-acl 0.6a0",
+      "url": "https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-18-datasette-acl--10689c5e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Datasetteのパーミッション管理プラグインのリリースノート。AI/Agent関連性なし。",
+      "body_excerpt": "# datasette-acl 0.6a0\nSource: https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything\nThis release expands\ndatasette-acl\nfrom table-only permissions toward a general resource-sharing system.\nAlex Garcia did most of the work for this release - we're fleshing out the plugin that will allo"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-18-datasette-apps--cb9157ad.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Datasette内でHTML/JSアプリをサンドボックス実行する機能の紹介。iframe sandbox+CSPのセキュリティパターンは興味深いが、Claude Artifactsへの言及はあるもののAIエージェントトピックではなくDatasetteインフラの記事。",
+      "body_excerpt": "# Datasette Apps: Host custom HTML applications inside Datasette\nSource: https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything\nDatasette Apps: Host custom HTML applications inside Datasette\n18th June 2026\nToday we launched a new plugin for Datasette,\ndatasette-apps\n, with\nthis launch"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "garymarcus.substack.com",
+      "title": "Accenture: Then and now, and how it may signify things to come",
+      "url": "https://garymarcus.substack.com/p/accenture-then-and-now-and-how-it",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-accenture-then-and-now-and-how-it--27456ea3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ AccentureのAI投資失敗を例に、企業のAI ROIが期待に応えていないと論じる。entities/gary-marcus.md（295行、更新6月15日）は既にMarcusのAI懐疑論の全ポジションを網羅。本記事は既存テーゼの追認に過ぎず新規性なし。",
+      "body_excerpt": "# Accenture: Then and now, and how it may signify things to come\nSource: https://garymarcus.substack.com/p/accenture-then-and-now-and-how-it\nLast September, Accenture\nwas crowing about how AI was going to transform its business\n:\nToday, as I write this, the stock has dropped around 18%, almost 23% f"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "Open Source vs the Invisible Hand",
+      "url": "https://nesbitt.io/2026/06/18/open-source-vs-the-invisible-hand.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-06-18-open-source-vs-the-invisible-hand-html--5f423d76.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ オープンソース経済学の分析。非排除性・非競合性の財が市場理論の破綻をどう示すか。AI/Agent関連性なし。",
+      "body_excerpt": "# Open Source vs the Invisible Hand\nSource: https://nesbitt.io/2026/06/18/open-source-vs-the-invisible-hand.html\nIf you handed an economics undergraduate a description of how open source libraries are produced, without saying what it was, and asked them to predict the outcome, they would tell you it"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "geohot.github.io",
+      "title": "the singularity is nearer",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/06/18/prices-cant-go-down.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-06-18-prices-cant-go-down-html--356e1e6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ マクロ経済・貨幣と実体経済のギャップに関するエッセイ。AI言及はfrontier AI labの評価に一度のみ。entities/george-hotz.md（301行、更新6月18日）は直近の同ブログ記事を既に収録。新規AI知見なし。",
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/06/18/prices-cant-go-down.html\nSince at least 2008, every time there’s an option to either make the money track real value or make sure things don’t go down, they chose the latter. As a result, money is increasingl"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "devblogs.microsoft.com/oldnewthing",
+      "title": "Why doesn't GetLastInputInfo() return info for the user I'm impersonating?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260618-00/?p=112444",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260618-00--84513a0b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Windows APIのテクニカル記事（セッション0と偽装の動作）。AI関連性なし。",
+      "body_excerpt": "# Why doesn't Get­Last­Input­Info() return info for the user I'm impersonating?\nSource: https://devblogs.microsoft.com/oldnewthing/20260618-00/?p=112444\nA customer had a Windows NT service process, and from that service process, they wanted to obtain the last input time for all signed-in users. Thei"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "krebsonsecurity.com",
+      "title": "'Popa' Botnet Linked to Publicly-Traded Israeli Firm",
+      "url": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/krebsonsecurity.com--2026-06-popa-botnet-linked-to-publicly-traded-israeli-firm--48b37da9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ セキュリティ記事（Android TV Box botnet）。AI/Agent関連性なし。",
+      "body_excerpt": "# ‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm\nSource: https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/\nFor the past four years, a sprawling Android-based botnet called\nPopa\nhas forced millions of consumer TV boxes to relay Internet traffic linked to ad"
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "maurycyz.com",
+      "title": "Glassblowing #2: Making a tungsten lamp and (bad) vacuum diode",
+      "url": "https://maurycyz.com/projects/glass/2/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/maurycyz.com--projects-glass-2--cbbda621.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 趣味のガラス細工・真空管製作。AI/Agent関連性なし。",
+      "body_excerpt": "# Glassblowing #2: Making a tungsten lamp and (bad) vacuum diode\nSource: https://maurycyz.com/projects/glass/2/\nGlassblowing #2: Making a tungsten lamp and (bad) vacuum diode\n2026-06-18\nNow that I have a way to run electrodes through\nglass\n, it's time to do something with that.\nAn old school lightbu"
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Book Review: The Great When by Alan Moore",
+      "url": "https://shkspr.mobi/blog/2026/06/book-review-the-great-when-by-alan-moore/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-06-book-review-the-great-when-by-alan-moore--7946127b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ フィクション書評。AI関連性なし。",
+      "body_excerpt": "# Book Review: The Great When by Alan Moore\nSource: https://shkspr.mobi/blog/2026/06/book-review-the-great-when-by-alan-moore/\nThis is the most overwritten book I've ever read. Unfortunately, Alan Moore knows exactly how much polysyllabic pressure it takes to transmogrify base coal into precious gem"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "Windows ME released June 19, 2000",
+      "url": "https://dfarq.homeip.net/windows-me-released-june-19-2000/?utm_source=rss&utm_medium=rss&utm_campaign=windows-me-released-june-19-2000",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--windows-me-released-june-19-2000--b0db1f81.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ レトロコンピューティング記事（Windows ME回顧）。AI関連性なし。",
+      "body_excerpt": "# Windows ME released June 19, 2000\nSource: https://dfarq.homeip.net/windows-me-released-june-19-2000/?utm_source=rss&utm_medium=rss&utm_campaign=windows-me-released-june-19-2000\nWindows Millenium Edition, or Windows Me or Windows ME, was released June 19, 2000. It was the successor to Windows 98 SE"
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "NetNewsWire Status",
+      "url": "https://inessential.com/2026/06/15/netnewswire-status.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/inessential.com--2026-06-15-netnewswire-status-html--879d9ac0.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ RSSリーダーNetNewsWireの開発進捗報告。Swift並行処理移行、Liquid Glass UI等の技術的改善。AI関連性なし。",
+      "body_excerpt": "# NetNewsWire Status\nSource: https://inessential.com/2026/06/15/netnewswire-status.html\nIt’s been a year since I retired — my\nlast working day\nwas June 6, 2025 — and I like being able to say that I’ve spent the year adding nothing, not one penny, to shareholder value. 🌴\n* * *\nMy hope for retirement "
+    },
+    {
+      "item_id": "blog-15",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "New domain for Sign in with Apple and iCloud+ Hide My Email",
+      "url": "https://developer.apple.com/news/?id=sus6t6ab",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/developer.apple.com--news--0a010013.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Apple開発者ニュース（メールリレードメイン統一）。AI関連性なし。",
+      "body_excerpt": "# New domain for Sign in with Apple and iCloud+ Hide My Email\nSource: https://developer.apple.com/news/?id=sus6t6ab\nLater this summer, Apple will unify the email domains used by Sign in with Apple and iCloud+ Hide My Email under a single, shared domain:\nprivate.icloud.com\n.\nNew addresses generated f"
+    },
+    {
+      "item_id": "blog-16",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Cotypist - Smart Autocomplete for Mac",
+      "url": "https://cotypist.app/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/cotypist.app----f8bb0fb5.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Mac用AIライティング補完ツールの製品ランディングページ。ニッチなプロダクトでwiki価値低い。LLM利用のスマートオートコンプリートだが、マーケティングページで技術的内容なし。",
+      "body_excerpt": "# Cotypist - Smart Autocomplete for Mac\nSource: https://cotypist.app/\nCotypist\nenhances your writing style without replacing it\n. It offers suggestions based on your input, but\nyou always decide what to use\n. Your unique voice remains intact as you choose which suggestions to keep or discard. If a s"
+    }
+  ]
+}

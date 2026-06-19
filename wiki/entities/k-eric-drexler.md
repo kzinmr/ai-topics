@@ -2,7 +2,7 @@
 title: "K. Eric Drexler"
 type: entity
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 tags:
   - person
   - superintelligence
@@ -24,4 +24,6 @@ K. Eric Drexler is a researcher at the Future of Humanity Institute (FHI), Unive
  D- **AI Safety and Strategy**: Exploring the risks and opportunities of superintelligent systems in the context of human control.
 
 ## Sources
-- [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
+26|## Sources\n27|-- [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)\n  - [Reframing Superintelligence (PDF)](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
+- [Reframing Superintelligence (PDF)](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
+- [Reframing Superintelligence (PDF)](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)

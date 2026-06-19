@@ -2,7 +2,7 @@
 title: "Dario Amodei"
 type: entity
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 tags:
   - person
   - anthropic

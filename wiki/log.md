@@ -377,3 +377,18 @@
 - Coverage gaps addressed: multimodal (priority 1), MCP protocols (priority 3), AI regulation/policy (priority 2), industry economics
 - Total wiki pages: 2599 → 2603
 ---
+
+---
+
+## [2026-06-19] Weekly Wiki Graph Analysis
+
+- Ran comprehensive graph analysis (scanning 2,105 pages)
+- Found:
+  - 36 content-rich orphan pages with no inbound links
+  - 4,597 broken wikilinks (933 fixable, 3,664 truly missing targets)
+  - 32 potential duplicate groups (4 entity↔entity, 28 entity↔concept)
+  - 472 pages not in index.md, 394 stale index entries
+  - 185 oversized pages (>200 lines), 7 tag violations
+  - 674 pages (32%) missing sources field
+- Saved report to: `wiki/queries/wiki-graph-analysis-weekly-2026-06-19.md`
+- Updated index.md (added to Queries section)

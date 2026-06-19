@@ -2,7 +2,7 @@
 title: "MAI-Thinking-1"
 type: concept
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 tags:
   - reasoning-model
   - moe
