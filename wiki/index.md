@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-19 | Total pages: 2669 | Indexed entries: 2204 | Not in index: 465 | Entities: 822 | Concepts: 1716
+> Last updated: 2026-06-20 | Total pages: 2612 | Indexed entries: 2207 | Not in index: 405 | Entities: 824 | Concepts: 1742
 
-## Entities (822 pages)
+## Entities (824 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
@@ -74,6 +74,7 @@
 - [[entities/jo-bergum]] — Jo Kristian Bergum
 - [[entities/joan-westenberg]] — Joan Westenberg — Strategy and positioning consultant. "Position or Perish" narrative framework, messaging spine methodology.
 - [[entities/john-berryman]] — John Berryman (@JnBrymn) — ML engineer and educator. Creator of microblog, agent-patterns educator. Focus on practical ML education and agent architectures.
+- [[entities/john-jumper]] — John Jumper — Nobel laureate (AlphaFold, Chemistry 2024), leaving Google DeepMind for Anthropic (Jun 2026)
 - [[entities/lighton]] — LightOn — French enterprise AI company (founded 2016, IPO Nov 2024). Open-source retrieval leader: DenseOn/LateOn, ColBERT-Zero, PyLate. European data-sovereignty positioning.
 - [[entities/liquid-ai]] — Non-transformer neural architecture company. Deployed at Shopify for low-latency query understanding and catalog workloads. Founded by MIT CSAIL researchers (Ramin Hasani, Mathias Lechner).
 - [[entities/lucas-atkins]] — Arcee AI CTO. Muon optimizer advocate, led Trinity Large (400B/13B MoE) training on 22,048 B300 GPUs.
@@ -875,7 +876,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1178 pages)
+## Concepts (1742 pages)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/ai-governance-political-pressure]] — Anthropic-Trump political pressure case study — AI governance under adversarial political conditions
@@ -1665,6 +1666,7 @@
 - [[concepts/local-first-software]] — Local-First Software
 - [[concepts/local-llm/_index]] — Local LLM
 - [[concepts/local-llm/local-ai]] — **Local AI Landscape — May 2026**: Current state of local AI using Andrew Chen (a16z)'s home lab experience as a case study. Hardware (DGX Spark/5090 eGPU/Mac Studio/Strix Halo), 1-year model quality lag thesis, software stack (ollama→LiteLLM→vLLM), 2027 Opus-class local model prediction, async batch processing use cases.→ [[entities/andrew-chen]]
+- [[concepts/local-qwen-vs-claude-opus]] — Local Qwen vs Claude Opus — Different Tools for Different Jobs — Alex Ellis's deep-dive: local Qwen is not a worse Opus but a different tool. Cost (GPU pays for itself in months), sovereignty (Fable 5 vendor risk), benchmark realism (SWE-Bench gap, benchmaxxing), practical limitations (looping, quantization degradation), appropriate use cases (guided tasks vs long-horizon autonomous work).
 - [[concepts/long-running-search-agents]] — Long Running Search Agents — Design patterns for search agents running unattended for hours/days. 7 progressive strategies: single context, cron restarts, compaction, local index (3.7x yield gain), frontier prompt, query model, self-querying. Doug Turnbull, Cheat at Search (June 2026).
 - [[concepts/loopcraft]] — Loopcraft / Salty Lesson for Agents — Engineering philosophy of designing autonomous agent loops instead of hand-crafting prompts. The Salty Lesson: 'Don't fix things yourself. Focus on systems that scale with more agents.' Contributed by Steipete, Boris (Claude Code lead), and Andrej Karpathy (Autoresearch). AINews June 2026.
 - [[concepts/mac-studio-local-ai]] — Mac Studio for Local AI

@@ -1,8 +1,48 @@
+## [2026-06-20] Active Crawl — 5 new pages (3 concepts + 1 entity + 1 concept)
+
+**Pipeline:** active-crawl → parallel discovery (HN + X/Twitter + Wiki gaps) → cross-reference → page creation
+**Sources:** HN Algolia (43 queries, 158 AI stories), xurl (11 queries), blogwatcher DB, wiki gap analysis
+
+### Trend Discovery
+- **Top HN stories:** SpaceX buys Cursor $60B (1142 pts), GLM-5.2 #1 open weights (894 pts), Norway AI school ban (688 pts), Fable 5 safety (608 pts), US holds off DeepSeek blacklist (533 pts), DeepSeek Vision (492 pts), Local Qwen vs Opus (481 pts)
+- **X/Twitter trending:** @AndrewYNg on Anthropic export controls (275 bk), @simonw GLM 5.2 inference (217 bk), Claude Fable 5/Mythos 5 analysis, John Jumper talent migration
+- **Blogwatcher unprocessed:** OpenAI Alignment Research "Beneficial RL" (HIGH), Anyscale Ray Serve distributed inference (HIGH), AI Engineer production playbook
+- **Wiki gaps identified:** AI regulation/policy moderate (12 pages), AI hardware moderate (22 pages, NVIDIA-heavy), Multimodal moderate (12 pages)
+
+### Pages Created
+
+#### 🆕 Concepts
+- **concepts/beneficial-rl.md** — Beneficial RL: Emergent Alignment via Trait-Based RL. OpenAI research (Jun 18, 2026) showing RL on beneficial traits (honesty, epistemic humility, metacognitive transparency, corrigibility, fairness, welfare concern) produces broad alignment generalization across 44/53 out-of-distribution evals. Health-domain training transfers to non-health alignment. Persistence under adversarial pressure with selective persistence (steerable for good, resistant to bad). Analogous to emergent misalignment in positive direction. Authors: Jagadeesh, Arora, Saab et al. Tags: alignment, reinforcement-learning, ai-safety, openai, model, post-training, rlhf, evaluation, evals, adversarial. Source: raw/articles/2026-06-18_openai-alignment_openai-beneficial-rl.md.
+- **concepts/norway-ai-school-ban.md** — Norway AI School Ban: Elementary AI Restrictions. Norway imposed near-ban on AI in elementary schools (Jun 19, 2026, Reuters). 691 HN points, 482 comments. Dual policy: student restrictions + teacher monitoring via Sikt AI platform. Part of growing global education AI regulation trend alongside EU AI Act. HN reactions: 1990s internet ban analogies, how-it's-used debate, AI leaders' personal choices. Tags: regulation, policy, education, ai-governance, europe, ai-safety. Source: raw/articles/2026-06-19_hn-discussion_norway-ai-school-ban.md.
+- **concepts/spacex-cursor-acquisition.md** — SpaceX Acquires Cursor: $60B Coding Agent Acquisition. SpaceX to buy Anysphere/Cursor for $60B (Jun 16, 2026, SEC filings). #1 HN story (1142 pts, 1694 comments). SpaceX raised $75B 4 days prior, using 80% for this deal. Largest AI coding agent acquisition. Implications: market validation, vendor concentration, harness alternatives surge. Tags: acquisition, coding-agents, cursor, spacex, anysphere, ai-economics, valuation, startup. Source: raw/articles/2026-06-16_hn-discussion_spacex-cursor-acquisition.md (Reuters 403-blocked).
+- **concepts/local-qwen-vs-claude-opus.md** — Local Qwen vs Claude Opus: Different Tools for Different Jobs. Alex Ellis deep-dive (Jun 17, 2026) on running Qwen 3.6 27B locally on RTX 6000 Pro. Core thesis: local Qwen is NOT a worse Opus — different tool with different strengths. Covers: benchmark gap reality (SWE-Bench 77.2 vs 88.6 but benchmaxxing critique), cost (GPU ROI in 2-3 months, Uber $1500/mo cap), sovereignty (Fable 5 vendor risk), practical limitations (looping, quantization degradation, no long-horizon autonomous work), and appropriate use cases. 120 lines. Tags: local-llm, qwen, open-source, coding-agents, claude, benchmark, inference, cost-optimization, on-device, gpu. Source: raw/articles/2026-06-18_alexellis_local-qwen-vs-opus.md.
+
+#### 🆕 Entities
+- **entities/john-jumper.md** — John Jumper: Nobel laureate (Chemistry 2024) for AlphaFold protein structure prediction. Led AlphaFold team at Google DeepMind. Announced move to Anthropic (Jun 18, 2026). Part of AI talent war: Nobel-caliber researcher migration from DeepMind to Anthropic. Tags: person, ai-researcher, anthropic, deepmind, google-deepmind. Source: raw/articles/2026-06-18_hn-discussion_john-jumper-anthropic.md.
+
+### Updates
+- **wiki/SCHEMA.md** — Added tags: spacex, anysphere (People/Orgs), acquisition (Meta)
+- **wiki/index.md** — Added 5 new entries, updated header counts: Total 2612, Concepts 1742, Entities 824, Indexed 2207
+- **wiki/log.md** — This entry
+
+### Cross-Reference Notes
+- GLM-5.2 (894 HN pts) and DeepSeek Vision (492 HN pts) already had recent wiki pages — skipped
+- Fable 5 export controls extensively covered in concepts/claude/fable-5.md and raw articles — skipped
+- 3 Reuters articles 403-blocked; used HN Algolia discussions as fallback sources
+- Local Qwen subagent also added its own log/index entries (defiant subagent pattern); parent reconciled counts from filesystem
+- 15 wikilinks fixed post-creation (broken entity/concept paths)
+- 1 remaining intentional future link: concepts/emergent-misalignment (page not yet created)
+
 ## [2026-06-20] Newsletter Ingest — Minor enrichment (triage output parse failure, Case C recovery)
 
 - **entities/alex-banks.md** — Added timeline entry: "How to run multiple tasks at once in Cowork" (Jun 2026) — parallel task execution patterns (branching/batch) and context file design. Updated: 2026-05-01 → 2026-06-20. Source: raw/newsletters/2026-06-19-how-to-run-multiple-tasks-at-once-in-cowork.md
 
 Triage recovery: newsletter-triage output parse failed, but triage_latest.json checkpoint was valid (checkpoint_run_id: 20260620T071413Z). 3 newsletters processed: Robotic/Interconnects (1 reference), The Signal/Cowork (1 reference enriched), ASML beehiiv (batch skip). No take decisions.
+
+## [2026-06-20] Concept Page Created — Local Qwen vs Claude Opus
+
+- **concepts/local-qwen-vs-claude-opus.md** — New concept page synthesized from Alex Ellis's blog post "Local Qwen isn't a worse Opus, it's a different tool" (published 2026-06-17, ingested 2026-06-20). 215 lines. Covers: core thesis (different tool, not worse Opus), cost analysis (GPU ROI in 2-3 months, Uber $1500/mo cap, subsidized coding plans), sovereignty and vendor risk (Fable 5 withdrawal, air-gapped analysis), benchmark realism (SWE-Bench gap, benchmaxxing critique), practical limitations (looping, quantization degradation, unattended work risk), appropriate use cases (guided tasks, customer support, codebase reading), setup details (RTX 6000 Pro, llama.cpp, MTP speculative decoding), and concrete recommendations. Tags: local-llm, qwen, open-source, coding-agents, claude, benchmark, inference, cost-optimization, on-device, gpu, model-quantization, vendor-lock-in, privacy, agent-loop. Wikilinks: [[entities/alex-ellis]], [[concepts/qwen]], [[entities/qwen]], [[concepts/claude/index]], [[concepts/local-llm]], [[concepts/ai-benchmarks/benchmaxxing]]. Source: raw/articles/2026-06-18_alexellis_local-qwen-vs-opus.md.
+- **index.md** — Added concepts/local-qwen-vs-claude-opus entry under Concepts section (alphabetical order, between local-llm/local-ai and long-running-search-agents).
 
 ## [2026-06-20] Blog Ingest — 4 AI-relevant articles enriched
 
