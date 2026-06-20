@@ -2,7 +2,7 @@
 title: "Alex Banks"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-01
+updated: 2026-06-20
 type: entity
 ---
 
@@ -53,6 +53,7 @@ His approach to AI education is distinctive: rather than chasing every announcem
 | 2025–2026 | X following grew to 140K+; LinkedIn to 185K+ |
 | Mar 2026 | Published "How to Build Skills in Claude" — detailed workflow guide for Claude Skills |
 | Apr 2026 | Published Claude Cowork series: "How to properly set up Claude Cowork," "How to Build Skills in Claude," "How to Setup Projects in Claude," "How to run Claude Cowork from your phone (Dispatch)" — comprehensive workflow guides covering the entire Claude desktop agent workflow from setup to mobile async orchestration |
+| Jun 2026 | Published "How to run multiple tasks at once in Cowork" — parallel task execution guide: branching pattern (one prompt → multiple deliverables: budget, deck, proposal) and batch pattern (independent jobs running concurrently). Introduced context file design (about-me.md, voice-and-style.md, working-rules.md) for sub-agent coordination quality control |
 
 ## Core Ideas
 
@@ -128,3 +129,4 @@ Despite working in AI, Banks consistently returns to the human element:
 - [DataCamp Podcast: The Art of Prompt Engineering](https://www.datacamp.com/podcast/the-art-of-prompt-engineering-with-alex-banks)
 - [LinkedIn Profile](https://uk.linkedin.com/in/a-banks)
 - [Sunday Signal Archive](https://sundaysignal.ai/)
+- [The Signal — How to Run Multiple Tasks at Once in Cowork](https://open.substack.com/pub/thesignal/p/how-to-run-multiple-tasks-at-once)

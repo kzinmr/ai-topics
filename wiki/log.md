@@ -1,3 +1,9 @@
+## [2026-06-20] Newsletter Ingest — Minor enrichment (triage output parse failure, Case C recovery)
+
+- **entities/alex-banks.md** — Added timeline entry: "How to run multiple tasks at once in Cowork" (Jun 2026) — parallel task execution patterns (branching/batch) and context file design. Updated: 2026-05-01 → 2026-06-20. Source: raw/newsletters/2026-06-19-how-to-run-multiple-tasks-at-once-in-cowork.md
+
+Triage recovery: newsletter-triage output parse failed, but triage_latest.json checkpoint was valid (checkpoint_run_id: 20260620T071413Z). 3 newsletters processed: Robotic/Interconnects (1 reference), The Signal/Cowork (1 reference enriched), ASML beehiiv (batch skip). No take decisions.
+
 ## [2026-06-20] Blog Ingest — 4 AI-relevant articles enriched
 
 **Pipeline:** blog-ingest → blog-triage → blog-wiki-ingest

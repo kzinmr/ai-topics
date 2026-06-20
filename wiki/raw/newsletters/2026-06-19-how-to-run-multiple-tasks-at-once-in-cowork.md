@@ -1,0 +1,82 @@
+---
+title: "How to run multiple tasks at once in Cowork"
+date: 2026-06-19
+processed_at: 2026-06-20T07:14:10.479954+00:00
+source_label: "uid=255"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-06-19
+
+**Subject:** How to run multiple tasks at once in Cowork
+**Collected:** 2026-06-20T07:14:10.479961+00:00
+**Articles linked:** 17
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGdGhlc2lnbmFsLnN1YnN0YWNrLmNvbSUyRnAlMkZob3ctdG8tcnVuLW11bHRpcGxlLXRhc2tzLWF0LW9uY2UiLCJwIjoyMDI0NDA3NzcsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxODc0OTAwLCJleHAiOjIwOTc0NTA5MDAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.ffLQYtUCN5FN3hCxV9y6a5SyzDMPIdvWax4iUW1IJy4?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3AvaG93LXRvLXJ1bi1tdWx0aXBsZS10YXNrcy1hdC1vbmNlP3V0bV9jYW1wYWlnbj1lbWFpbC1oYWxmLXBvc3Qmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam95TURJME5EQTNOemNzSW1saGRDSTZNVGM0TVRnM05Ea3dNQ3dpWlhod0lqb3hOemcwTkRZMk9UQXdMQ0pwYzNNaU9pSndkV0l0TWprek1UVTBJaXdpYzNWaUlqb2ljRzl6ZEMxeVpXRmpkR2x2YmlKOS5teFB3VkpjVnNJN3l2bjhlbUg2LXZhZWdLcTUxdDluZVptaW1QR2MwNHBRIiwicCI6MjAyNDQwNzc3LCJzIjoyOTMxNTQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MTg3NDkwMCwiZXhwIjoyMDk3NDUwOTAwLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.ZpfRKt_MWDjV6FDIwdasT5q2myGV6Bc787GzeA624sk?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=202440777&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI0NDA3NzcsImlhdCI6MTc4MTg3NDkwMCwiZXhwIjoxNzg0NDY2OTAwLCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.mxPwVJcVsI7yvn8emH6-vaegKq51t9neZmimPGc04pQ
+
+## 4. Link
+
+- **URL:** https://substack.com/@alexbanks
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=202440777&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI0NDA3NzcsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgxODc0OTAwLCJleHAiOjE3ODQ0NjY5MDAsImlzcyI6InB1Yi0yOTMxNTQiLCJzdWIiOiJyZWFjdGlvbiJ9.0a0Se1lO2AqHFaNROPOKCDHOGgRgjqk6EBj3FPqmE2w&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=202440777&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI0NDA3NzcsImlhdCI6MTc4MTg3NDkwMCwiZXhwIjoxNzg0NDY2OTAwLCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.mxPwVJcVsI7yvn8emH6-vaegKq51t9neZmimPGc04pQ&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=202440777&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI0NDA3NzcsImlhdCI6MTc4MTg3NDkwMCwiZXhwIjoxNzg0NDY2OTAwLCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.mxPwVJcVsI7yvn8emH6-vaegKq51t9neZmimPGc04pQ
+
+## 8. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvdGhlc2lnbmFsL3AvaG93LXRvLXJ1bi1tdWx0aXBsZS10YXNrcy1hdC1vbmNlP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam95TURJME5EQTNOemNzSW1saGRDSTZNVGM0TVRnM05Ea3dNQ3dpWlhod0lqb3hOemcwTkRZMk9UQXdMQ0pwYzNNaU9pSndkV0l0TWprek1UVTBJaXdpYzNWaUlqb2ljRzl6ZEMxeVpXRmpkR2x2YmlKOS5teFB3VkpjVnNJN3l2bjhlbUg2LXZhZWdLcTUxdDluZVptaW1QR2MwNHBRIiwicCI6MjAyNDQwNzc3LCJzIjoyOTMxNTQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MTg3NDkwMCwiZXhwIjoyMDk3NDUwOTAwLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.VrARmmN1A39QEYrg4xVw1CqQw7bZdUQfHJMGtRfX4pE?&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/thesignal/p/how-to-run-multiple-tasks-at-once?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/620c9623-b4fd-486d-b784-42bf7eaefaf5?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/adcc33d7-6b85-4492-abfe-de3a8bea55d4?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/d5211643-51e7-41de-ac3f-4de6ae4a339e?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/0bd909c8-7791-4489-b51c-c4e6187497ce?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/b0655a95-e070-4a52-8821-62e0cb71809c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZ0aGVzaWduYWwuc3Vic3RhY2suY29tJTJGcCUyRmhvdy10by1ydW4tbXVsdGlwbGUtdGFza3MtYXQtb25jZSZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSnBZWFFpT2pFM09ERTROelE1TURBc0ltVjRjQ0k2TVRjNE5EUTJOamt3TUN3aWFYTnpJam9pY0hWaUxUSTVNekUxTkNJc0luTjFZaUk2SW1Ob1pXTnJiM1YwSW4wLlA2RDlMdTZILURHTXo4MlhzaWpWSTA0OGJrdkhiMlUwXzFYMFZqeTVBNHciLCJwIjoyMDI0NDA3NzcsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxODc0OTAwLCJleHAiOjIwOTc0NTA5MDAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.DXPjWkaptUtge6Q49TADZrVdAJxYWvbRfWKdupG566E?simple=true&utm_source=paywall&utm_medium=email&utm_content=202440777&next=https://thesignal.substack.com/p/how-to-run-multiple-tasks-at-once
+
+## 16. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNREkwTkRBM056Y3NJbWxoZENJNk1UYzRNVGczTkRrd01Dd2laWGh3SWpveE9ERXpOREV3T1RBd0xDSnBjM01pT2lKd2RXSXRNamt6TVRVMElpd2ljM1ZpSWpvaVpHbHpZV0pzWlY5bGJXRnBiQ0o5Lldka0tldU54UVN6U084d3dTRnV0QmdJQnYwYVFGVmcwTkZKb0xWMU1PNlUiLCJwIjoyMDI0NDA3NzcsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxODc0OTAwLCJleHAiOjIwOTc0NTA5MDAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.Bvo6oSXoOtezh0APy7iYO0G2tKMPKn6oCmjrV6JPjLw?
+
+## 17. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDI0NDA3NzcsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxODc0OTAwLCJleHAiOjIwOTc0NTA5MDAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.p8t41wXGo9hXmrZxN5UFWIcUODTPXSncOZATYuY_psc?
+
