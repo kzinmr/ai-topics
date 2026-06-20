@@ -972,6 +972,7 @@
 - [[concepts/ai-assisted-development]] — AI-Assisted Development
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
 - [[concepts/ai-benchmarks/agent-arena]] — Agent Arena (Causal Agent Evaluation) — Real-world agent evaluation system using causal tracing methodology. Ranks agent performance by randomized component selection for causal treatment effect estimation. Released June 4, 2026 by Arena AI.
+- [[concepts/ai-benchmarks/design-arena]] — Design Arena — LLM evaluation platform ranking models on HTML web design quality via head-to-head human preference voting. GLM-5.2 ranks #1, surpassing Claude Fable 5. Covers Web Design, Game Dev, Data Visualization, 3D Design, UI Component leaderboards.
 - [[concepts/ai-benchmarks/agent-survival-benchmark|Agent Survival Benchmark]] — Open-source benchmark for LLM agent survival capability under PvP pressure.
 - [[concepts/ai-benchmarks/ai-resistant-evaluations]] — Tristan Hume's theory on designing hiring tests undefeatable by AI. Claude Opus 4/4.5 defeated it 3 times, forcing redesign. v3 is a Zachtronics-style constrained instruction set puzzle. Fights back with novelty at the cost of realism. Public challenge (hire if under 1,487 cycles).
 - [[concepts/ai-benchmarks/aider-polyglot]] — Aider Polyglot — 6-language coding benchmark. Tests 225 Exercism problems across C++/Go/Java/JS/Python/Rust. GPT-5 leads at 88%.

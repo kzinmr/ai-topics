@@ -1,8 +1,8 @@
 ---
 title: "Alex Imas"
-type: entity
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-06-20
+type: entity
 tags:
   - person
   - google-deepmind
@@ -22,4 +22,4 @@ Alex Imas is the Director of AGI Economics at Google DeepMind and Professor of E
 - **Relational Sector**: Investigates areas where human-in-the-loop remains a scarcity.
 
 ## Sources
-- [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell)
+- [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell - — [[raw/articles/dwarkesh.com--p-alex-imus-phil-trammell--f12d8644.md]]

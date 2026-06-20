@@ -1,8 +1,8 @@
 ---
 title: "Microsoft AI Team"
-type: entity
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-06-20
+type: entity
 tags:
   - organization
   - microsoft
@@ -20,4 +20,4 @@ The Microsoft AI (MAI) team is responsible for developing areas-class models, in
 - **Hill-Climbing Machine**: A scaling-focused framework for rapid model improvement through reinforcement learning.
 
 ## Sources
-- [MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)
+- [MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — [[raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md]]

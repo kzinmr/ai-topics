@@ -1,3 +1,16 @@
+## 2026-06-20 — X Article ingestion: Design Arena — GLM-5.2 vs Fable 5
+
+**Source**: https://x.com/designarena/status/2068030598028087788
+**Type**: X Article (tweet.fields=article, OAuth2)
+**Author**: Design Arena (@Designarena) / Anmay Gupta (@Intelligence_ai)
+
+- **Created**: `concepts/ai-benchmarks/design-arena.md` — New entity page for Design Arena, an LLM web design evaluation platform using head-to-head human preference voting. Covers Web Design, Game Dev, Data Visualization, 3D Design, UI Component leaderboards. Methodology includes template similarity clustering, dependency usage tracking, and error case analysis.
+- **Updated**: `entities/glm-5-zai.md` — Added Design Arena Deep Dive section (June 19, 2026): behavioral analysis of GLM-5.2's #1 ranking. Three key patterns: high-quality expert templates, reliable dependency usage (TailwindCSS 91%, chart.js/three.js +6pp win rate), more intricate outputs (+25% code, 2x generation time). Trade-offs: speed vs quality Pareto frontier, #2 on Game Dev/Data Viz/3D behind Fable 5. Added raw article source.
+- **Raw article**: `raw/articles/2026-06-19_designarena_glm-52-beat-fable-5-website-design.md`
+- **Updated**: `index.md` — Added Design Arena entry in concepts/ai-benchmarks section.
+
+---
+
 ## 2026-06-19 — X/Twitter article ingestion: Deli Chen AutoResearch
 
 **Source**: https://x.com/victor207755822/status/2067259098584985954

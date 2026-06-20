@@ -1,8 +1,8 @@
 ---
 title: "Dario Amodei"
-type: entity
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-06-20
+type: entity
 tags:
   - person
   - anthropic
@@ -22,4 +22,4 @@ Dario Amodei is the co-founder and CEO of Anthropic. He is a leading voice in AI
 - **AI Exponential**: Discussing the exponential growth of AI capabilities through scaling laws.
 
 ## Sources
-- [Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)
+- [Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential) — [[raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md]]

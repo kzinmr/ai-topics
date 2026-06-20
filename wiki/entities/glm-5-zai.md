@@ -2,7 +2,7 @@
 title: GLM-5 (Z.ai)
 type: entity
 created: 2026-04-10
-updated: 2026-06-18
+updated: 2026-06-20
 tags:
 - entity
 - model
@@ -19,6 +19,7 @@ related:
 sources:
 - raw/articles/2026-06-17_ainews_glm-52-indexshare.md
 - raw/articles/simonwillison.net--2026-jun-17-glm-52--41b7cb7d.md
+- raw/articles/2026-06-19_designarena_glm-52-beat-fable-5-website-design.md
 ---
 
 # GLM-5 (Z.ai)
@@ -81,3 +82,38 @@ Simon Willison reviewed GLM-5.2 and highlighted several key findings:
 - **Token hunger**: Uses 43k output tokens per Intelligence Index task (vs GLM-5.1 26k, MiniMax-M3 24k, Kimi K2.6 35k, DeepSeek V4 Pro 37k)
 - **Pricing via OpenRouter**: ~$1.40/M input, ~$4.40/M output from 9 providers. For comparison: GPT-5.5 is $5/$30, Claude Opus 4.5-4.8 is $5/$25
 - **SVG generation**: Strong pelican on bicycle (self-contained animated SVG), but disappointing opossum on e-scooter (step down from GLM-5.1)
+
+## Design Arena Deep Dive (June 19, 2026)
+
+[[concepts/ai-benchmarks/design-arena|Design Arena]] published a detailed behavioral analysis of GLM-5.2's #1 ranking on their Web Design leaderboard. Key findings:
+
+### Why GLM-5.2 Beat Fable 5
+
+- **First open-weight model to top the Design Arena leaderboard**, surpassing Claude Fable 5 which held #1 for months
+- Beat Fable 5, Opus 4.6, and Opus 4.7 — competitors speculated to be up to 6.7x larger
+- **Price/performance Pareto frontier**: $1.40/$4.40 per MTok vs Fable 5's $10/$50
+
+### Behavioral Analysis (3 key patterns)
+
+1. **High-quality expert templates**: GLM-5.2 produces templated, similar responses across diverse prompts — but the templates are high-quality and free of antipatterns (no "purple gradients"). Fable 5 generates more diversified outputs but lower average quality.
+
+2. **Reliable dependency usage**: Avoids common error cases by correctly using chart.js, three.js (+6.0pp win rate for 21% of sessions), TailwindCSS (91% of sessions vs Opus 4.8's 57%), and font-awesome (51%). This reliability is a major differentiator.
+
+3. **More intricate outputs**: 25% more characters/lines of code, more animations, typography variation, and interactive elements. Average generation time: 304.7s (2x longer than Fable 5). Ideal output length: 46K–57K characters.
+
+### Trade-offs
+
+- **Speed vs quality**: GLM-5.2 trades generation speed for higher preference scores (Pareto frontier "wrong side")
+- **Not universally superior**: #2 after Fable 5 on Game Dev, Data Visualization, 3D design; #4 on UI Component
+- **Fable 5 generates 38% less code** — more efficient but less intricate
+
+### Agentic Settings
+
+- GLM-5.2 generates 11% more files and calls 17% more tools than competitors
+- But generates slightly less code overall — focuses on functional, library-correct code
+
+### Strategic Implications
+
+- Combination of agent trace distillation and token-level optimization for single-turn tasks
+- MIT license enables anyone to build on, fine-tune, and deploy freely
+- Demonstrates rapid advancement of open-source frontier models
