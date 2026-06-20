@@ -33,17 +33,20 @@
 - 15 wikilinks fixed post-creation (broken entity/concept paths)
 - 1 remaining intentional future link: concepts/emergent-misalignment (page not yet created)
 
+---
 ## [2026-06-20] Newsletter Ingest — Minor enrichment (triage output parse failure, Case C recovery)
 
 - **entities/alex-banks.md** — Added timeline entry: "How to run multiple tasks at once in Cowork" (Jun 2026) — parallel task execution patterns (branching/batch) and context file design. Updated: 2026-05-01 → 2026-06-20. Source: raw/newsletters/2026-06-19-how-to-run-multiple-tasks-at-once-in-cowork.md
 
 Triage recovery: newsletter-triage output parse failed, but triage_latest.json checkpoint was valid (checkpoint_run_id: 20260620T071413Z). 3 newsletters processed: Robotic/Interconnects (1 reference), The Signal/Cowork (1 reference enriched), ASML beehiiv (batch skip). No take decisions.
 
+---
 ## [2026-06-20] Concept Page Created — Local Qwen vs Claude Opus
 
 - **concepts/local-qwen-vs-claude-opus.md** — New concept page synthesized from Alex Ellis's blog post "Local Qwen isn't a worse Opus, it's a different tool" (published 2026-06-17, ingested 2026-06-20). 215 lines. Covers: core thesis (different tool, not worse Opus), cost analysis (GPU ROI in 2-3 months, Uber $1500/mo cap, subsidized coding plans), sovereignty and vendor risk (Fable 5 withdrawal, air-gapped analysis), benchmark realism (SWE-Bench gap, benchmaxxing critique), practical limitations (looping, quantization degradation, unattended work risk), appropriate use cases (guided tasks, customer support, codebase reading), setup details (RTX 6000 Pro, llama.cpp, MTP speculative decoding), and concrete recommendations. Tags: local-llm, qwen, open-source, coding-agents, claude, benchmark, inference, cost-optimization, on-device, gpu, model-quantization, vendor-lock-in, privacy, agent-loop. Wikilinks: [[entities/alex-ellis]], [[concepts/qwen]], [[entities/qwen]], [[concepts/claude/index]], [[concepts/local-llm]], [[concepts/ai-benchmarks/benchmaxxing]]. Source: raw/articles/2026-06-18_alexellis_local-qwen-vs-opus.md.
 - **index.md** — Added concepts/local-qwen-vs-claude-opus entry under Concepts section (alphabetical order, between local-llm/local-ai and long-running-search-agents).
 
+---
 ## [2026-06-20] Blog Ingest — 4 AI-relevant articles enriched
 
 **Pipeline:** blog-ingest → blog-triage → blog-wiki-ingest
@@ -84,6 +87,7 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
 - Converting Coal Plants to Natural Gas (construction-physics.com) — Energy
 - DaringFireball links (6 unsaved: YouTube, Reddit, WSJ paywall, NBC News)
 
+---
 ## 2026-06-20 — X Article ingestion: Design Arena — GLM-5.2 vs Fable 5
 
 **Source**: https://x.com/designarena/status/2068030598028087788
@@ -111,6 +115,7 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
 
 **Content summary**: AutoResearch SKILL open-sourced (June 17, 2026). 4th survey paper on self-play. AutoResearch Agent autonomously planned GPU experiments and submitted RL runs on DeepSeek 285B model. 100% automated RL pipeline. GRPO tool usage. Beginning of continual learning research journey.
 
+---
 ## [2026-06-19] blog-wiki-ingest — 2 entity enrichments from blog triage
 
 **Source**: blog-ingest (run_id: 20260619T070014Z)
@@ -123,6 +128,7 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
 
 **Archive**: Triage decisions saved to blog_ingest archive.
 
+---
 ## 2026-06-19 — Newsletter wiki ingest (recovered from triage failure, 3 enrichments)
 
 - **Pipeline recovery**: newsletter-triage upstream failed to parse JSON output. Checkpoint file at `triage_latest.json` contained valid triage decisions. 9 items: 3 takes, 3 references, 3 skips.
@@ -145,6 +151,7 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
 - **Cross-pipeline dedup**: Blog-triage already processed GLM-5.2, Kimi K2.7, LifeSciBench, AI Chemist (4 takes). Log.md showed 6+ pages ingested (Midjourney Medical, Agent Separation, ENPIRE, Deployment Sim, Vicki Boykis, George Hotz). Existing wiki pages covered 20+ articles.
 - **Archive**: All skip/reference items previously archived (dedup).
 
+---
 ## 2026-06-18 — SOC Episode 7 Wiki Ingestion (YouTube transcript)
 
 ---
@@ -480,6 +487,7 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
   Duplicate entries: 0 | Ghost entries: 0 | Log separators: 0 missing | validate_index.py: clean
 - **Deferred (human review)**: ~410 missing concept/entity entries in index.md — large batch (>50), needs dedicated pass
 
+---
 ## [2026-06-19] Active Crawl — 4 New Concept Pages
 
 - Created `concepts/deepseek-vision.md` — DeepSeek Vision multimodal capabilities launch (June 2026)
@@ -522,3 +530,26 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
   - 36 content-rich orphan pages with zero inbound links (needs human review)
   - 933 fixable cross-namespace wikilinks (across many files — exceeds 10-file threshold)
   - 4 entity↔entity duplicate pairs: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin
+
+
+---
+
+## [2026-06-20] Watchdog Auto-Fix - 8 log separator fixes
+
+**Pipeline:** wiki-watchdog-fix cron (17:35 UTC)
+
+### Auto-Fixed
+- ✅ **Log separators**: Added 8 missing `---` separators between consecutive `##` section headers in wiki/log.md
+
+### Verified Clean (no action needed)
+- ✅ Pipe corruption: 0 | Line prefix corruption: 0 | Triple brackets: 0 | Space prefix: 0
+- ✅ Duplicate entries: 0 | Ghost entries: 0
+- ✅ Header consistency: Total=2612 Indexed=2207 NotIn=405 (OK)
+- ✅ Section boundaries: Clean (Concepts 1742, Events 11, no mixing)
+- ✅ validate_index.py: Passes
+- ✅ _index.md files: No corruption detected
+
+### Needs Attention (human review)
+- ⚠️ ~507 concept entries missing from index (filesystem: 1742 files, indexed: 1230 entries) - deferred batch-add
+- ⚠️ 30 orphan pages (no inbound links) - 8 are _index.md files (expected), 22 content pages need review
+- ⚠️ Stale graph analysis (26h) - weekly run produced 21 issues across 7 categories
