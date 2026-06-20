@@ -2,10 +2,11 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-20 | Total pages: 2612 | Indexed entries: 2207 | Not in index: 405 | Entities: 824 | Concepts: 1742
+> Last updated: 2026-06-20 | Total pages: 2612 | Indexed entries: 2213 | Not in index: 399 | Entities: 824 | Concepts: 1742
 
 ## Entities (824 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
+- [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -60,12 +61,14 @@
 - [[entities/glimpse]] — Glimpse — Native macOS WKWebView micro-UI library (Node.js bindings). Sub-50ms window startup, bidirectional JSON. Used for generative UI in terminal-based coding agents.
 - [[entities/goodfire-ai]] — Goodfire AI — AI interpretability research lab. $59M funded. Silico platform for intentional model design. Neural geometry, RLFR hallucination reduction (58%), Alzheimer's biomarker discovery (Nature).
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
+- [[entities/gpt-oss]] — GPT-OSS — OpenAI's first open-weight model release (MoE, Apache 2.0 license)
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/groq]] — Groq — AI inference infrastructure company. Custom LPU (Language Processing Unit) ASIC architecture for ultra-low-latency LLM inference. Founded by ex-Google TPU engineers. Competes with GPU-based inference platforms.
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/inspect-ai]] — Inspect AI — Open-source LLM eval framework by JJ Allaire + UK AISI + Meridian Labs. v0.3.239 (Jun 2026), 239 releases, 100+ contributors, adopted by Anthropic/DeepMind/Grok. Dataset/Solver/Scorer pipeline, react() agent, Agent Bridge (Claude Code/Codex/Gemini CLI), sandboxing (Docker/K8s/Modal), 200+ pre-built evals, inspect-scout scanning.
 
 - [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
+- [[entities/isaac-flath]] — Isaac Flath — Engineer and researcher in harness engineering, RAG, context engineering, and AI product development
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
 - [[entities/jj-allaire]] — JJ Allaire — Founder of Posit (formerly RStudio). Creator of Inspect AI (LLM eval framework, UK AISI collaboration). Design philosophy: Hadley Wickham-inspired clean, composable APIs.
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
@@ -75,6 +78,8 @@
 - [[entities/joan-westenberg]] — Joan Westenberg — Strategy and positioning consultant. "Position or Perish" narrative framework, messaging spine methodology.
 - [[entities/john-berryman]] — John Berryman (@JnBrymn) — ML engineer and educator. Creator of microblog, agent-patterns educator. Focus on practical ML education and agent architectures.
 - [[entities/john-jumper]] — John Jumper — Nobel laureate (AlphaFold, Chemistry 2024), leaving Google DeepMind for Anthropic (Jun 2026)
+- [[entities/k-eric-drexler]] — K. Eric Drexler — FHI researcher known for superintelligence and Comprehensive AI Services (CAIS)
+- [[entities/kyle-corbett]] — Kyle Corbett — Researcher and engineer focused on production-ready AI agents and agentic workflows
 - [[entities/lighton]] — LightOn — French enterprise AI company (founded 2016, IPO Nov 2024). Open-source retrieval leader: DenseOn/LateOn, ColBERT-Zero, PyLate. European data-sovereignty positioning.
 - [[entities/liquid-ai]] — Non-transformer neural architecture company. Deployed at Shopify for low-latency query understanding and catalog workloads. Founded by MIT CSAIL researchers (Ramin Hasani, Mathias Lechner).
 - [[entities/lucas-atkins]] — Arcee AI CTO. Muon optimizer advocate, led Trinity Large (400B/13B MoE) training on 22,048 B300 GPUs.
@@ -83,6 +88,7 @@
 - [[entities/luke-j-huang]] — Luke J. Huang — AI researcher focused on RL for LLM post-training. Author of "Is Frontier Asynchronous RL Solved?" (May 2026) surveying async RL across frontier labs. Proposes low-bias compute scaling hypothesis.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
 - [[entities/machina]] — Machina (@EXM7777) — AI practitioner and writer, runs AI-powered agencies. Author of "How To Fix AI Slop (Using Hermes)" — 6-move eval loop implementation using Hermes Agent primitives.
+- [[entities/microsoft-ai-team]] — Microsoft AI Team — Team developing MAI-Thinking-1 reasoning models and Hill-Climbing Machine framework
 - [[entities/mistral-ai]] — French AI company, sovereign AI positioning, European lab. Medium 3.5 (128B dense, May 2026), Vibe remote agents, Work mode in Le Chat.
 - [[entities/uipath]] — Enterprise automation/orchestration platform (NYSE: PATH). May 2026: UiPath for Coding Agents — model-agnostic platform connecting Claude Code, Codex to CI/CD and governance.
 - [[entities/mai-image-2-5]] — MAI-Image-2.5: Microsoft's strongest image model. #3 on Arena text-to-image leaderboard (May 2026). Major text rendering improvements.

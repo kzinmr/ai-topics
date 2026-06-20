@@ -553,3 +553,25 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
 - ⚠️ ~507 concept entries missing from index (filesystem: 1742 files, indexed: 1230 entries) - deferred batch-add
 - ⚠️ 30 orphan pages (no inbound links) - 8 are _index.md files (expected), 22 content pages need review
 - ⚠️ Stale graph analysis (26h) - weekly run produced 21 issues across 7 categories
+
+---
+
+## [2026-06-20] Wiki Watchdog Auto-Fix
+
+**Pipeline:** wiki-health-fix -> wiki-watchdog-fix
+
+### Auto-Fixed
+- Entity orphans indexed: Added 6 entity pages to index.md
+- Header counts updated: Indexed entries 2207->2213, Not in index 405->399
+
+### Verified Clean (no action needed)
+- Pipe corruption: 0 | Line prefix corruption: 0 | Triple brackets: 0 | Space prefix: 0
+- Duplicate entries: 0 | Ghost entries: 0
+- Header consistency: Total=2612 Indexed=2213 NotIn=399 (OK)
+- Section boundaries: Clean
+- Log separators: 0 missing
+- validate_index.py: Passes
+
+### Needs Attention (human review)
+- ~505 concept pages missing from index (deferred batch-add)
+- entities/alex-imus.md is a duplicate of entities/alex-imas.md (same person, different filename)
