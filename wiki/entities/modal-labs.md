@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-05-22
+updated: 2026-06-20
 tags:
   - company
   - infrastructure
@@ -11,6 +11,7 @@ aliases: ["Modal", "Modal Labs, Inc."]
 sources:
   - https://modal.com/
   - https://modal.com/company
+  - raw/articles/modal.com--blog-spec-is-all-u-need--42b624c7.md
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md
 ---
 
@@ -49,3 +50,29 @@ Modal provides a serverless compute platform with GPU access (H100, A100, etc.) 
 ### $355M Series C at $4.7B Valuation
 
 Modal raised **$355M in Series C** at a **$4.65-4.7B valuation**. The raise validates the thesis that agent-native computing is rebuilding the cloud stack for AI workloads.
+
+## Speculative Decoding Initiative (June 2026)
+
+In June 2026, Modal published *"Speculation Is All You Need,"* a blog post advancing the thesis that **speculative decoding is the only engine optimization that matters** for high-interactivity inference. The post positions Modal as a leader in custom speculator development.
+
+### DFlash Speculator Release
+
+Modal released **DFlash** (Decoding with Flash), a state-of-the-art custom domain-specific speculator architecture. DFlash, alongside MTP and EAGLE-3, represents modern speculator design that reuses the target model's hidden states and KV cache rather than running a fully independent draft model. Modal released SOTA DFlash speculators for:
+
+- **Qwen 3.5 397B-A17B** — Modal's flagship large MoE model speculator
+- **Qwen 3.5 122B-A10B** — achieving **1000+ tokens/second** at **concurrency 1** on **NVIDIA B200** GPUs
+
+### "Speculation Is All You Need" Thesis
+
+Modal's core argument is that speculative decoding is uniquely **"Bitter Lesson-pilled"** — its speedup compounds as models grow larger and are trained on more data, unlike kernel optimizations which deliver fixed, diminishing returns. The post claims custom domain-specific speculators deliver **2-3× speedup** (vs. 2-3% from kernel tuning alone), and that training speculators is **"ML on easy mode"** because the target model itself generates infinite free training data.
+
+### Open-Source Ecosystem Impact
+
+Modal argues that open-source engines **SGLang** and **vLLM** have closed the gap with proprietary inference engines, largely due to well-supported speculative decoding eliminating the latency advantage proprietary systems once held. The remaining frontier is custom speculator quality, not engine internals.
+
+### Releases & Partnerships
+
+- **Z Lab partnership** — Modal collaborates with Z Lab on Qwen 3.5 model speculators
+- **Hugging Face releases** — DFlash speculators published as open-weight models on Hugging Face
+
+See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[entities/vllm]]

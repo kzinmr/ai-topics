@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-06-19
+updated: 2026-06-20
 status: L3
 sources:
   - https://pluralistic.net/
@@ -11,6 +11,7 @@ sources:
   - https://crimelab.blog/
   - https://locusmag.com/feature/cory-doctorow-full-employment/
   - raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md
+  - raw/articles/pluralistic.net--2026-06-19-too-big-to-fact-check--8d26fef8.md
 tags: [person]
 ---
 
@@ -134,6 +135,25 @@ Doctorow has been a leading voice for:
 ## The "Pluralistic" Blog
 
 Doctorow's daily blog at [pluralistic.net](https://pluralistic.net) is a major source of technology criticism and AI policy analysis. Each post combines links, commentary, and original essays on digital rights, platform governance, and the social impact of AI. The blog is **CC BY 4.0** licensed (excluding quotations and images), with no ads, tracking, or data collection.
+
+### The Big Con — AI as Pyramid Scheme (June 2026)
+
+In "[Too Big to Fact-Check](https://pluralistic.net/2026/06/19/too-big-to-fact-check/)" (June 19, 2026), Doctorow framed the AI industry as a **"big con"** — structurally identical to a pyramid scheme — drawing on Bridget Read's book *Little Bosses Everywhere* about the history of multi-level marketing in America.
+
+**Pyramid Scheme Framing**:
+- Doctorow drew a direct line from Amway, Herbalife, and other MLMs to the AI industry's growth model: both depend on **recruiting new participants to sustain existing ones**, not on delivering value to end users
+- The comparison extends to corporate governance: CEOs who replace workers with AI are **privately admitting failure** while publicly celebrating innovation
+- Doctorow quoted an unnamed Uber CEO's private admission that AI workforce replacement had failed, noting the gap between public bullishness and internal reality
+
+**Key Quote**:
+> "Making the pile of shit bigger won't increase the number of ponies underneath it."
+
+This metaphor captures Doctorow's core argument: scaling AI investment (more GPUs, more data, more compute) does not create proportional value — it merely inflates the bubble. The "ponies" (actual useful output) remain as scarce as ever, no matter how large the "pile of shit" (investment, hype, vaporware) grows.
+
+**Amway/Heritage Foundation Connection**:
+- Doctorow traced the political class enabling AI deregulation back to the **Amway/Heritage Foundation nexus** — the same network of MLM-connected billionaires (DeVos family, others) that shaped Republican economic policy
+- He characterized **Trump and Musk as pyramid scheme operators** — selling visions of AI-powered futures while extracting wealth from the base of the pyramid (workers, taxpayers, retail investors)
+- The argument connects to Doctorow's broader enshittification thesis: just as platforms degrade by extracting value at each layer, AI hype extracts value by promising transformation while delivering dependency
 
 ## Related Pages
 

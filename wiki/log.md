@@ -1,3 +1,43 @@
+## [2026-06-20] Blog Ingest — 4 AI-relevant articles enriched
+
+**Pipeline:** blog-ingest → blog-triage → blog-wiki-ingest
+**Run ID:** 20260620T070024Z
+**Checkpoint:** ~/.hermes/cron/data/blog_ingest/latest.json
+
+### Scan Summary
+- Total new articles: 26
+- Blog articles: 20
+- Saved as raw: 14
+- Unsaved (YouTube/Reddit/paywall): 6
+
+### Triage Results
+- **Takes (4):** Modal speculative decoding, Dwarkesh sample efficiency Part 2, Ed Zitron Silicon Valley Bubble Part 2, Cory Doctorow Big Con
+- **References (0)**
+- **Skips (10):** Non-AI articles (Bobby Prince, Arp 29, Jay Miner, Goldilocks principle, Kung-fu, Full Page Paralysis, Carlsberg, etc.)
+
+### Enrichments Made
+
+#### 🆕 Concepts Updated
+- **concepts/speculative-decoding.md** — Added "Modal's Speculative Decoding Thesis (June 2026)" section: DFlash architecture, Qwen 3.5 1000 tok/s, Bitter Lesson framing, open-source engine parity, custom speculator training as "ML on easy mode". Updated: 2026-05-05 → 2026-06-20.
+- **concepts/sample-efficiency.md** — Added "Part 2: The Data Black Hole Revisited (June 2026)" section: open models lag 4 months (Epoch), expert data industry scaling, genome argument rebutted, Chinchilla limits (~10x), white collar automation bet, deaf/blind intelligence argument. Updated: 2026-06-09 → 2026-06-20.
+
+#### ✏️ Entities Updated
+- **entities/modal-labs.md** — Added "Speculative Decoding Initiative (June 2026)" section: DFlash speculator release for Qwen 3.5, "Speculation Is All You Need" thesis, Z Lab partnership, Hugging Face releases. 51 → 78 lines. Updated: 2026-05-22 → 2026-06-20.
+- **entities/dwarkesh-patel.md** — Added Part 2 to Notable Posts timeline and sources. Updated: 2026-06-09 → 2026-06-20.
+- **entities/ed-zitron.md** — Added "The Silicon Valley Bubble Series (June 2026)" section: OpenAI $21B loss/$34B spend/$13B revenue, SoftBank dependency, accounting obfuscation, Cal Newport comparison, 4-part bubble thesis. 484 → 507 lines. Updated: 2026-06-16 → 2026-06-20.
+- **entities/cory-doctorow.md** — Added "The Big Con — AI as Pyramid Scheme (June 2026)" section: pyramid scheme framing via Bridget Read, Uber CEO failure admission, Amway/Heritage Foundation connection. 152 → 172 lines. Updated: 2026-06-19 → 2026-06-20.
+
+### Skipped Articles (Non-AI)
+- Bobby Prince has died (oldvcr.blogspot.com) — Game music composer
+- Arp 29: The fireworks galaxy (maurycyz.com) — Astronomy
+- There Are No Instances in atproto (overreacted.io) — Dan Abramov on AT Protocol architecture
+- The Goldilocks Principle in Fantasy Strategy (filfre.net) — Gaming
+- Jay Miner, Atari and Amiga (dfarq.homeip.net) — Retro computing
+- Full Page Paralysis (blog.jim-nielsen.com) — Web design essay
+- I know Kung-fu (idiallo.com) — Essay on information vs knowledge
+- Converting Coal Plants to Natural Gas (construction-physics.com) — Energy
+- DaringFireball links (6 unsaved: YouTube, Reddit, WSJ paywall, NBC News)
+
 ## 2026-06-20 — X Article ingestion: Design Arena — GLM-5.2 vs Fable 5
 
 **Source**: https://x.com/designarena/status/2068030598028087788

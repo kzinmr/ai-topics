@@ -1,7 +1,7 @@
 ---
 title: "Speculative Decoding"
 created: 2026-04-18
-updated: 2026-05-05
+updated: 2026-06-20
 type: concept
 tags:
   - inference
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
   - raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
   - raw/articles/2026-05-05_gemma-4-drafter-explained.md
+  - raw/articles/modal.com--blog-spec-is-all-u-need--42b624c7.md
   - https://vllm.ai/blog/spec-decode
   - https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
 ---
@@ -176,6 +177,37 @@ vLLM's upcoming **Dynamic Speculative Decoding** addresses the high-QPS regressi
 - Shortening proposals when the system is busy or draft accuracy is low
 - Ensuring speculative decoding is always a net benefit regardless of traffic patterns
 - [[concepts/local-llm/_index]] — Inference optimization techniques
+
+## Modal's Speculative Decoding Thesis (June 2026)
+
+In June 2026, Modal published a strong thesis on speculative decoding titled *"Speculation Is All You Need,"* arguing that speculative decoding is **the only engine optimization that matters** for high-interactivity inference. The post frames speculative decoding as uniquely "Bitter Lesson-pilled" — its speedup increases with more data and compute, unlike kernel optimizations which deliver diminishing returns.
+
+### DFlash Architecture
+
+Modal introduced **DFlash** (Decoding with Flash), a custom domain-specific speculator architecture. Alongside MTP (Multi-Token Prediction) and EAGLE-3, DFlash represents a modern class of speculators that **piggyback on the target model's past computations** — reusing hidden states and KV cache rather than running a fully independent draft model. This design minimizes overhead while maintaining high acceptance rates.
+
+### Qwen 3.5 Performance Results
+
+Modal released the SOTA DFlash speculator for **Qwen 3.5 397B-A17B** and announced new speculators for **Qwen 3.5 122B-A10B** that achieve:
+
+- **1000+ tokens/second** at **concurrency 1** on **NVIDIA B200** GPUs
+- **2-3× speedup** from custom domain-specific speculators (vs. 2-3% from kernel optimization alone)
+
+These results were achieved at single-request latency — the regime most critical for interactive applications like chat and coding assistants.
+
+### Bitter Lesson Framing
+
+Modal argues speculative decoding is structurally aligned with the [Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html): as models get larger and are trained on more data, the draft model's predictions improve, acceptance rates rise, and speedups compound. Kernel-level optimizations, by contrast, deliver fixed, non-compounding gains. This makes speculative decoding the highest-leverage long-term investment in inference optimization.
+
+### Open-Source Engine Parity
+
+A key claim in the post is that **open-source engines (SGLang, vLLM) have closed the gap with proprietary inference engines**, largely because speculative decoding — now well-supported in both frameworks — eliminates the latency advantage that proprietary engines once held. The remaining frontier is custom speculator quality, not engine internals.
+
+### Custom Speculator Training as "ML on Easy Mode"
+
+Modal describes training custom speculators as **"ML on easy mode"**: the data-generating process is itself an ML model (the target LLM), so training data is effectively infinite and free. This eliminates the primary bottleneck of most ML projects (data collection/curation) and makes speculator training highly parallelizable and automatable. Combined with the 2-3× speedups from domain-specific speculators vs. negligible gains from kernel tuning, Modal argues the field is under-investing in speculative decoding.
+
+See also: [[entities/modal-labs]], [[entities/sglang]], [[entities/vllm]]
 
 ## Sources
 

@@ -2,7 +2,7 @@
 title: "LLM Sample Efficiency"
 type: concept
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-20
 tags:
   - concept
   - llm
@@ -11,6 +11,7 @@ tags:
   - ai-research
 sources:
   - raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md
+  - raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md
 ---
 
 # LLM Sample Efficiency
@@ -99,6 +100,33 @@ If sample efficiency cannot be improved by orders of magnitude, then:
 - AGI requires either brute-force scaling (trillions more tokens of synthetic data) or
 - A fundamental architectural breakthrough in learning efficiency
 - Current approaches (scaling + RL) are the "firehose" strategy — they work but have diminishing returns
+
+## Part 2: The Data Black Hole Revisited (June 2026)
+
+In Part 2 of "The data black hole at the center of AI," Dwarkesh Patel revisits the sample efficiency thesis with new evidence and sharper framing.
+
+### Open Models Lag by Only 4 Months
+Citing an Epoch report, Patel argues that **open models now lag closed models by only ~4 months** — and the primary reason is that data, not architecture, is the real driver of capability. Frontier model outputs can be easily distilled via API access, making the "moat" of closed labs thinner than commonly assumed. Data is the differentiator, and data is increasingly portable.
+
+### The Expert Data Industry Is Scaling Fast
+Domain-specific expert data is becoming a major industry. Companies like **Mercor** and **Surge AI** are building marketplaces for specialist knowledge — legal experts, management consultants, domain professionals — to generate high-quality training signals. Patel notes the data industry is already earning **billions per year** and projects it will reach **deca-billions** as labs race to bring ever more domains into model distribution.
+
+### The Genome Argument Rebutted
+A common counter to the "humans are sample efficient" claim is that evolution pre-trained the genome over billions of years. Patel addresses this directly: the human genome is ~3 GB, of which only ~1% is protein-coding. This is **far too small to encode model parameters** (which require terabytes). The genome cannot be "pretrained weights" — it's a compressed learning architecture.
+
+Building on his Adam Marblestone podcast, Patel clarifies: **evolution found the right hyperparameters and loss functions, not pretrained parameters.** The genome encodes *how to learn*, not *what has been learned*. This is fundamentally different from pre-training a foundation model.
+
+### Chinchilla Limits: Even Infinite Parameters Only Help ~10×
+The Chinchilla scaling laws impose a hard constraint: even with **infinite parameters**, data requirements only drop by approximately **10×**. You cannot parameterize your way out of the data bottleneck. This means the ~1,000,000× gap between LLM and human data efficiency cannot be closed by building bigger models — a ~10× improvement from scaling parameters still leaves a ~100,000× gap.
+
+### Marginal Capabilities Still Need Massive Data
+Even after pretraining, adding new domain capabilities requires enormous data investment. Patel's example: bringing a model up to speed on a **new programming language** might require **100 professor-level experts** generating domain-specific training data. The pretraining corpus doesn't automatically generalize — each new frontier is its own data acquisition problem.
+
+### The Deaf/Blind Intelligence Argument
+Patel offers a striking thought experiment: **blind and deaf people** possess the same general intelligence as sighted/hearing individuals, despite receiving **far fewer sensory tokens** over their lifetime. This demonstrates that raw sensory data volume is not what makes humans intelligent. The human learning algorithm extracts general-purpose cognition from a surprisingly small input stream — the opposite of the LLM firehose approach.
+
+### The White Collar Automation Bet
+Rather than solving sample efficiency directly, labs are betting on a different path: **automate AI research first**. The thesis is that common white-collar tasks can be brought into distribution via RL/SFT pipelines — brute-forcing coverage through synthetic data and verification loops. Once AI can do AI research, the pace of improvement accelerates recursively. This is the "firehose strategy" applied to the meta-problem: use massive data to build the tools that eventually solve the data problem.
 
 ## Open Questions
 

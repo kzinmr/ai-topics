@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-06-16
+updated: 2026-06-20
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -28,6 +28,7 @@ sources:
   - raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md
   - raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md
   - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-1--6191394a.md
+  - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-2--e0d362d8.md
   - raw/articles/wheresyoured.at--brokenomics--662a8e19.md
 ---
 
@@ -83,6 +84,7 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | Jun 2026 | AI Doesn\'t Have ROI | Enterprise cost crisis, kalopsia thesis, Dark Output critique |
 | Jun 2026 | Exclusive: OpenAI 2025 Audited Financials | OpenAI lost $38.5B in 2025; $34B total costs; paid Microsoft $17.2B. FT-verified. |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 1) | IPO race, $35B Broadcom Anthropic deal with SPV structure, $4.4B pure Anthropic notes |
+| Jun 2026 | Premium: The Silicon Valley Bubble (Part 2) | OpenAI lost $21B in 2025, $34B spend / $13B revenue, SoftBank dependency, Cal Newport comparison, 4-part bubble thesis |
 
 ## AI Is Too Expensive (May 2026)
 
@@ -452,6 +454,27 @@ Zitron extended his Dot Com Bubble comparison with a key structural difference:
 - GPU power costs are fixed: "A single B200 Blackwell GPU uses 1,200W, and more-complex AI coding tasks can take four to twelve of them for a single user's output"
 - NVIDIA data center costs are **increasing**: $50B/gigawatt now → $80-100B/gigawatt for Vera Rubin
 - "No such story exists for AI" — no reusable infrastructure narrative
+
+### The Silicon Valley Bubble Series (June 2026)
+
+In the two-part "Silicon Valley Bubble" series (June 2026), Zitron expanded his financial analysis into a broader thesis about the entire Silicon Valley ecosystem, arguing that the AI bubble has metastasized into a comprehensive industry-wide delusion.
+
+**Part 2 — Key Financial Claims (June 19, 2026)**:
+- **OpenAI lost $21 billion in 2025**, spending $34B to generate only $13.07B in revenue — a structural deficit that makes profitability mathematically impossible under current models
+- **$867M (6.6%) of OpenAI's revenue** came from SoftBank's Crystal Intelligence initiative, revealing dangerous concentration in a single non-market customer
+- **Bizarre accounting**: Zitron identified line items like "net losses attributable to noncontrolling members capital" — obfuscation designed to obscure the true scale of losses from investors and the public
+- Silicon Valley has been **captured by people who haven't done real work**, describing boring cloud software products as the path to a sentient computer — a deliberate conflation of enterprise SaaS with AGI
+
+**Cal Newport Comparison**:
+- Zitron drew parallels to Cal Newport's critique of tech hype: AI companies are **treating AI as an inevitable force** rather than a consumer product that must demonstrate value
+- The bubble's survival depends on **ignoring financials in favor of theoretical futures** — the same pattern that sustained WeWork, Theranos, and other failed ventures
+
+**The Four-Part Bubble Thesis**:
+The Silicon Valley Bubble series is part of a broader investigation covering four interconnected bubbles:
+1. **AI Media Bubble** — Journalists uncritically amplifying AI claims without financial scrutiny
+2. **CFO Bubble** — Finance executives adopting AI without understanding cost structures or ROI
+3. **SaaSpocalypse** — The collapse of traditional SaaS economics as AI token-based billing destroys predictable pricing
+4. **GPU Infrastructure Bubble** — Trillions in data center investment justified by demand that doesn't exist outside the circular AI economy
 
 ## Reception and Criticism
 

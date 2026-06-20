@@ -2,8 +2,8 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-06-09
-sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md]
+updated: 2026-06-20
+sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md]
 tags:
   - person
   - blogger
@@ -85,6 +85,7 @@ Production features video recordings integrated with audio releases, distributed
 - **"RLVR Might Be Disproportionately Bad at Science" (May 2026)** — From interview with Michael Nielsen. Argues that scientific verification loops span decades/centuries, making RL reward signals inadequate. Historical examples: Copernicus less accurate than Ptolemy initially; Mercury anomaly → Einstein GR; Prout's atomic weight hypothesis.
 - **"The Mistake of Conflating Intelligence and Power" (May 2026)** — Critiques the AI safety definition of intelligence. Argues that current AI development (training better coders/coworkers) is not strongly correlated with power-seeking. Uses Garett Jones's individual vs. national IQ analysis; historical examples (Trevithick died poor, George III went mad but Britain thrived).
 - **"The Sample Efficiency Black Hole" (Jun 2026)** — Humans are 1,000×–1,000,000× more sample efficient than LLMs. Main driver of progress is more/better data, not architectural innovation. Chinchilla scaling laws show even infinite parameters only reduce data need by ~10×. RL is best understood as synthetic data generation (compute → verifier → good data → train model). Robotics gap: humans learn teleoperation in hours, driving in ~20 hours. Genome is only 3GB — not enough for model parameters, implying a qualitatively different learning algorithm. → [[concepts/sample-efficiency]]
+- **"The data black hole at the center of AI" (Jun 2026)** — Part 2 of sample efficiency series. Open models lag closed by 4 months (data distillation). Expert data industry scaling to deca-billions. Genome argument rebuttal. Chinchilla limits: infinite params only ~10x data reduction. White collar automation thesis. → [[concepts/sample-efficiency]]
 
 ## Core Ideas
 
@@ -210,6 +211,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [The mistake of conflating intelligence and power (May 2026)](https://www.dwarkesh.com/p/the-mistake-of-conflating-intelligence)
 - [Alex Imas & Phil Trammell — \"What remains scarce after AGI?\" (Jun 2026)](https://www.dwarkesh.com/p/alex-imas-phil-trammell)
 - [The sample efficiency black hole (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole)
+- [The data black hole at the center of AI — Part 2 (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2)
 
 ## References
 
