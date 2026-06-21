@@ -1193,6 +1193,7 @@
 - [[concepts/claude-code/claude-code-auto-mode]] — Claude Code's auto mode. A Sonnet 4.6-based 2-stage transcript classifier (Stage 1: fast single-token filter → Stage 2: CoT reasoning) replaces human approver. Two-layer defense with prompt injection probe blocks dangerous actions while minimizing permission prompts. FPR 0.4%, captures 83% of actual overeager behavior. Deny-and-continue design.
 - [[concepts/claude-code/claude-code-best-practices]] — Claude Code Best Practices
 - [[concepts/claude-code/claude-code-goal]] — Claude Code /goal Command — Goal-driven autonomous workflow via prompt-based Stop hook + evaluator model (Haiku). Condition-driven multi-turn execution: set a completion condition, Claude works until evaluator confirms it is met. Complementary to /loop and auto mode.
+- [[concepts/claude-code/claude-code-steering-methods]] — Claude Code Steering Methods — Seven methods for customizing Claude's behavior: CLAUDE.md files, rules, skills, subagents, hooks, output styles, and system prompt appending. Comparison of loading behavior, compaction characteristics, context costs, and best use cases.
 - [[concepts/claude-code/claude-code-leak]] — Claude Code Source Leak
 - [[concepts/claude-code/claude-code-routines]] — Claude Code Routines
 - [[concepts/claude-code/claude-code-sandboxing]] — Claude Code's OS-level sandbox. Filesystem + network isolation via Linux bubblewrap/macOS seatbelt. 84% reduction in permission prompts. Includes Claude Code on the Web (cloud-isolated execution). Open-sourced.

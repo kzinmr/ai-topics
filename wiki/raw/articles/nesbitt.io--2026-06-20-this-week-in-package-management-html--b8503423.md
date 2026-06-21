@@ -1,0 +1,197 @@
+---
+title: "This Week in Package Management: 20 June 2026"
+url: "https://nesbitt.io/2026/06/20/this-week-in-package-management.html"
+fetched_at: 2026-06-21T07:00:48.930613+00:00
+source: "nesbitt.io"
+tags: [blog, raw]
+---
+
+# This Week in Package Management: 20 June 2026
+
+Source: https://nesbitt.io/2026/06/20/this-week-in-package-management.html
+
+Week five of the roundup, built from the
+package manager OPML feed collection
+and whatever I’ve posted or boosted on
+Mastodon
+.
+Releases
+sbt 2.0.0
+moves build definitions and plugins to Scala 3, requires JDK 17, and replaces the caching layer with a Bazel-compatible local/remote cache that the rewritten
+compile
+and
+test
+tasks use. The project matrix plugin is now built in and a native-image client cuts startup time.
+sbt 1.12.12
+shipped alongside it for the 1.x line.
+pnpm 11.7
+adds a
+frozenStore
+setting that opens the store’s SQLite index read-only so
+pnpm install
+can run against a Nix store, a read-only bind mount or an OCI layer without trying to write WAL sidecar files. The release also adds a
+--batch
+flag to publish a whole workspace in one request, per-scope auth tokens, and an option to delegate resolving installs to pacquet.
+pnpm 10.34.4
+on the v10 line fixes two path-traversal issues. A traversal-shaped
+configDependencies
+name or version in
+pnpm-workspace.yaml
+could write files outside
+node_modules/.pnpm-config
+and the store (
+GHSA-qrv3-253h-g69c
+), and a crafted lockfile alias under
+nodeLinker: hoisted
+could write outside the install root (
+GHSA-fr4h-3cph-29xv
+, also fixed in 11.7.0).
+npm 12.0.0-pre.1
+is the first pre-release with the v12 defaults switched on: dependency install scripts are blocked unless listed in
+allowScripts
+,
+allow-git
+and
+allow-remote
+default to
+none
+, and unknown configs and CLI flags error instead of warn. New in this build are an
+npm patch
+subcommand for native dependency patching and a
+packageExtensions
+field for repairing dependency manifests from the root.
+Yarn 4.17.0
+adds package map generation and lets
+npmMinimalAgeGate
+be set per npm scope rather than globally.
+Dependabot Core 0.382.0
+supports a
+scope
+property on
+npm_registry
+credentials and fixes a leak where npm registry credentials were sent to sibling paths on the same host.
+mise 2026.6.11
+adds Alpine
+apk
+as a bootstrap package manager alongside apt, dnf, pacman and brew, and stops the default Windows
+.exe
+shims from leaking into WSL sessions.
+Stack 3.11.1
+changes the default MSYS2 environment on 64-bit Windows from MINGW64 to CLANG64, following the MSYS2 project’s deprecation of the former.
+conda 26.5.3
+stops caching a not-found response for sharded repodata, which broke shards-only channels on subsequent runs.
+Athens 0.18.0
+, the Go module proxy, adds Redis cluster-mode support for its singleflight stash.
+Go 1.27rc1
+drops Bazaar from the version control systems the
+go
+command can fetch modules from, and
+go mod tidy
+now consolidates duplicate
+require
+blocks into one direct and one indirect block for modules at
+go 1.27
+or later.
+pipx 1.14.1
+restores a package after an interrupted reinstall and fixes
+inject --force
+reinstall behaviour.
+uv 0.11.22
+adds SARIF output to
+uv audit
+, a
+--script
+flag for
+uv check
+and
+uv metadata
+, and lets preview features be set in
+uv.toml
+and
+pyproject.toml
+.
+0.11.23
+followed a day later reverting two earlier fixes, one of which had broken pre-commit-uv.
+Docker Engine 29.6.0
+adds a
+GET /images/{name}/attestations
+endpoint that returns in-toto attestation statements such as SLSA provenance and SPDX SBOMs attached to an image, with platform selection and predicate-type filtering.
+yay v13
+shows how long it has been since each PKGBUILD was last modified, so a recently changed AUR package stands out for review, and adds Lua hooks in
+init.lua
+for scripting package checks and filtering.
+Also out:
+Homebrew 6.0.2
+,
+Helm 4.2.2
+,
+Helm 3.21.2
+,
+Gradle 9.6.0
+,
+snapd 2.76
+,
+Harbor 2.15.2-rc1
+,
+Renovate 43.233.3
+.
+Articles
+rv: plan and progress
+(André Arko) reports a year in on the Rust-based Ruby toolchain. It now installs Rubies, builds with YJIT, manages gems with
+clean-install
+and
+rvx
+, and runs on Windows. The next step is full dependency resolution, evaluating a Gemfile and writing a lockfile at uv-like speed.
+Package managers need global hooks
+(Nemo) argues every package manager should expose pre-clone and pre-build hooks so users can wire dependency cooldowns and threat-feed scanning into the install path locally, without a proxy registry or a shell wrapper.
+Introducing pkgcli
+(Matthias Klumpp) is a new command-line front end for PackageKit to replace
+pkcon
+, with friendlier command names, coloured output and a JSON mode for scripting.
+Why stdx is not on crates.io
+(Sylvain Kerkour) distributes his 64-crate Rust extended standard library by git only, citing the lack of namespaces and the attack surface a central registry adds: publish tokens, source that need not match the repository, typosquatting, dependency confusion. He argues Rust should follow Go’s model of pointing the package manager at the source repository and backing it with a checksum database and an optional caching proxy.
+What is npm doing to protect the JavaScript ecosystem, and is it enough?
+(Mary Branscombe, The Stack) surveys the registry-side changes npm has shipped against supply-chain attacks and what that leaves for developers to do themselves.
+curl summer of bliss
+(Daniel Stenberg) announces that the curl project will not accept or handle vulnerability reports during July 2026, giving the maintainers a month off the disclosure treadmill.
+libexpat is doing the same
+through 1 August.
+The Vulnerability Report Is Dead. Long Live the Prompt!
+(Mikaël Barbero) argues an AI-assisted vulnerability report should lead with the prompt, model version, commit hash, tool access and verification status, and treat the generated write-up as supporting material.
+Composer & Packagist Supply Chain Security in 2026
+(Nils Adermann) are the slides from the PHPVerse talk covering the same series of changes the Packagist blog has been writing up over the last few weeks.
+Homebrew tightens tap security, begins work on its interface
+(Help Net Security) interviews Mike McQuaid about the 6.0.0 release and the tap trust mechanism.
+Thoughts on governance
+(Dawn Foster) gathers her recent talks on open source project governance and where it meets public-sector governance.
+Open source is a gig
+(Cristovao Verstraeten, LinkedIn) compares maintaining open source to a touring musician’s life, mostly paid in exposure rather than money.
+Elsewhere
+Software Dark Matter: Gazing at Uncharted Files to Navigate SBOM Integrations
+(Reddypalle et al., arXiv) names the gap between what an SBOM lists from package manager metadata and the security-relevant files that actually ship in an artifact but never appear in a manifest.
+The
+ClickPy May 2026 report
+puts PyPI at 163.8 billion downloads for the month, up about 20% since March.
+actions/checkout
+v7 now
+refuses by default
+to check out fork pull request code in
+pull_request_target
+workflows, blocking a common path to running untrusted code with write tokens in CI.
+GitHub repositories can now
+cap the number of open pull requests
+a user without write access may have at once, aimed at drive-by contribution volume.
+Weston Steimel has
+opened a discussion
+on improving the data quality of the PyPA advisory database and is asking for ideas.
+gem-guardian
+is a RubyGems checksum verifier that has grown lockfile-checksum support, provenance reporting and publisher-provided checksum verification for private registries.
+Following last week’s AUR takeover, Morten Linderud
+points out
+that anyone maintaining ten or more AUR packages they depend on should consider becoming an
+official Arch package maintainer
+instead.
+Send links for next week to
+@
+[email protected]
+.

@@ -1,0 +1,72 @@
+{
+  "run_id": "20260621T071006Z",
+  "triaged_at": "2026-06-21T07:10:06Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletter_count": 3,
+  "summary": "3 newsletters processed. GLM-5.2 already extensively covered in wiki. 'The Year AI Went Public' is new AI industry/business topic worth ingesting. AINews daily digest was a quiet day.",
+  "newsletters": [
+    {
+      "subject": "[AINews] not much happened today",
+      "date": "2026-06-20",
+      "source": "Latent Space (swyx)",
+      "classification": "low",
+      "reason": "Title explicitly states 'not much happened'. Daily AI news digest from Latent Space. GLM-5.2 and other topics already covered extensively in wiki per log.md. Links 9-11 are external redirects that may contain articles, but without resolved URLs content is unverifiable.",
+      "action": "skip",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-20-ainews-not-much-happened-today.md",
+      "existing_coverage": [
+        "entities/glm-5-zai.md (GLM-5.2 extensively covered)",
+        "Multiple log.md entries for 2026-06-19/20 GLM-5.2 coverage"
+      ],
+      "potential_articles": [
+        {"link_index": 9, "url_partial": "substack.com/redirect/7782718d-...", "note": "External redirect - unresolvable from truncated URL"},
+        {"link_index": 10, "url_partial": "substack.com/redirect/d26df3ac-...", "note": "External redirect - unresolvable from truncated URL"},
+        {"link_index": 11, "url_partial": "substack.com/redirect/3d4a0805-...", "note": "External redirect - unresolvable from truncated URL"}
+      ]
+    },
+    {
+      "subject": "The Year AI Went Public",
+      "date": "2026-06-20",
+      "source": "beehiiv newsletter",
+      "classification": "high",
+      "reason": "Topic covers AI companies entering public markets (IPOs, SPACs, direct listings). Relevant to AI industry/business trends. Potential wiki coverage as event page or concept page on AI industry consolidation. Main article at hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f.",
+      "action": "ingest",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-20-the-year-ai-went-public.md",
+      "target_url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f",
+      "suggested_pages": [
+        "events/ or concepts/ — AI industry public market entries (if covering specific companies)",
+        "entities/ — individual AI company pages if specific IPOs discussed"
+      ],
+      "potential_articles": [
+        {"link_index": 16, "url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f", "note": "Main article URL"}
+      ]
+    },
+    {
+      "subject": "On GLM 5.2",
+      "date": "2026-06-20",
+      "source": "AI Weekly (aiweekly Substack)",
+      "classification": "low",
+      "reason": "GLM 5.2 already extensively covered in wiki. entities/glm-5-zai.md exists with Design Arena analysis, text adventure benchmarks, and multiple log.md entries from 2026-06-17 through 2026-06-20. Newsletter may contain editorial perspective but core model info is already captured.",
+      "action": "skip",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-20-on-glm-5-2.md",
+      "existing_coverage": [
+        "entities/glm-5-zai.md (comprehensive coverage)",
+        "comparisons/llm-api-pricing.md (GLM-5 series pricing)",
+        "log.md entries: 2026-06-17, 2026-06-19, 2026-06-20"
+      ],
+      "potential_articles": [
+        {"link_index": 9, "url": "https://open.substack.com/pub/aiweekly/p/on-glm-52", "note": "Main article - editorial on GLM 5.2"}
+      ]
+    }
+  ],
+  "action_summary": {
+    "skip": 2,
+    "ingest": 1,
+    "ingest_targets": [
+      {
+        "subject": "The Year AI Went Public",
+        "target_url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f",
+        "reason": "New AI industry/business topic not yet covered in wiki"
+      }
+    ]
+  }
+}

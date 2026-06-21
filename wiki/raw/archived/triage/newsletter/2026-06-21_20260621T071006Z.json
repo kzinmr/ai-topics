@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-06-21T07:21:49.691024+00:00",
+  "triage_run_id": "20260621T071006Z",
+  "source": "newsletter",
+  "summary_ja": "3ニュースレターを処理。①AINews「not much happened today」：ペイウォール＋AIE WF 2026プロモのみでスキップ。②「The Year AI Went Public」：全beehiivリンクが403期限切れで本文確認不可。Inbox summaryによるとAI企業IPO分析の可能性あり（Wiki未カバーの領域）。ダウンストリームでの再解決を推奨（reference）。③AI Weekly「On GLM 5.2」：ペイウォール＋GLM 5.2は既存Wikiで広範カバー済みのためスキップ。Take=0, Reference=1, Skip=2。",
+  "decisions": [
+    {
+      "item_id": "<20260620080605.3.b573bc547f00ab40@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "[AINews] not much happened today (Latent Space / swyx)",
+      "title": "[AINews] not much happened today",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-e7b",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-20-ainews-not-much-happened-today.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ペイウォール。件名通り「not much happened」で、メインコンテンツはAIE World Fair 2026カンファレンスのプロモーション。description='a quiet day lets us promo AIE one last time'。AIニュースが少ない日の消化試合的配信。Wikiへの追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-20\n**Subject:** [AINews] not much happened today\n**Collected:** 2026-06-21T07:10:03.401185+00:00\n**Articles linked:** 14\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1"
+    },
+    {
+      "item_id": "<20260620220056.3.e45d16901ae7cda0@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "On GLM 5.2 (AI Weekly / Andriy Burkov)",
+      "title": "On GLM 5.2",
+      "url": "https://aiweekly.substack.com/p/on-glm-52",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-20-on-glm-5-2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ペイウォール（isAccessibleForFree: false）。無料プレビューは「You have probably already heard of GLM-5.2…」の1文のみで新情報ゼロ。GLM 5.2はWikiで広範にカバー済み：entities/glm-5-zai.md（119行、Design Arena深掘り、テキストアドベンチャー評価、Simon Willisonレビュー）、concepts/glm-5-2.md、log.mdに6+エントリ。追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-20\n**Subject:** On GLM 5.2\n**Collected:** 2026-06-21T07:10:05.683219+00:00\n**Articles linked:** 12\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjc"
+    }
+  ]
+}

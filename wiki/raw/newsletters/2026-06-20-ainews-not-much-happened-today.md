@@ -1,0 +1,70 @@
+---
+title: "[AINews] not much happened today"
+date: 2026-06-20
+processed_at: 2026-06-21T07:10:03.401176+00:00
+source_label: "uid=257"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-06-20
+
+**Subject:** [AINews] not much happened today
+**Collected:** 2026-06-21T07:10:03.401185+00:00
+**Articles linked:** 14
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3LmxhdGVudC5zcGFjZSUyRnAlMkZhaW5ld3Mtbm90LW11Y2gtaGFwcGVuZWQtdG9kYXktZTdiIiwicCI6MjAyODE2NzQxLCJzIjoxMDg0MDg5LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODE5NDMwMDYsImV4cCI6MjA5NzUxOTAwNiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.RQVHvbg681ffZ6SWRRgbGnBPdHzpJjSsNJrpkoR6AnA?
+
+## 2. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=202816741&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI4MTY3NDEsImlhdCI6MTc4MTk0MzAwNSwiZXhwIjoxNzg0NTM1MDA1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.Ta5unOPXaFTMuIU98mCBk6kaZnLafQynNTCfQoDiUTg
+
+## 3. Link
+
+- **URL:** https://substack.com/@swyx
+
+## 4. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=202816741&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI4MTY3NDEsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgxOTQzMDA2LCJleHAiOjE3ODQ1MzUwMDYsImlzcyI6InB1Yi0xMDg0MDg5Iiwic3ViIjoicmVhY3Rpb24ifQ.VioI7tZq3wEx8bVlgEdPmnk39oEtpmj2v_7Wu9BpYOw&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=202816741&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI4MTY3NDEsImlhdCI6MTc4MTk0MzAwNiwiZXhwIjoxNzg0NTM1MDA2LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.GgIuin-RrwXLOUD7zkxfsPteEl9Z43QB7zb1yxBasFU&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=202816741&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDI4MTY3NDEsImlhdCI6MTc4MTk0MzAwNiwiZXhwIjoxNzg0NTM1MDA2LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.GgIuin-RrwXLOUD7zkxfsPteEl9Z43QB7zb1yxBasFU
+
+## 7. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL2FpbmV3cy1ub3QtbXVjaC1oYXBwZW5lZC10b2RheS1lN2I_dXRtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNREk0TVRZM05ERXNJbWxoZENJNk1UYzRNVGswTXpBd05pd2laWGh3SWpveE56ZzBOVE0xTURBMkxDSnBjM01pT2lKd2RXSXRNVEE0TkRBNE9TSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEuR2dJdWluLVJyd1hMT1VEN3preGZzUHRlRWw5WjQzUUI3emIxeXhCYXNGVSIsInAiOjIwMjgxNjc0MSwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxOTQzMDA2LCJleHAiOjIwOTc1MTkwMDYsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.YB2nau7JWVs0ljNsU-99OG7ba5b0S71uUScNUuH8r_o?&utm_source=substack&utm_medium=email
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-e7b?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 9. Link
+
+- **URL:** https://substack.com/redirect/7782718d-350c-49db-8189-dfd32702f221?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/d26df3ac-510e-4761-9a4c-7abaaff591fe?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/3d4a0805-e34a-458b-a2ba-676f3d1f3f7d?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZ3d3cubGF0ZW50LnNwYWNlJTJGcCUyRmFpbmV3cy1ub3QtbXVjaC1oYXBwZW5lZC10b2RheS1lN2Imcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0pwWVhRaU9qRTNPREU1TkRNd01EVXNJbVY0Y0NJNk1UYzRORFV6TlRBd05Td2lhWE56SWpvaWNIVmlMVEV3T0RRd09Ea2lMQ0p6ZFdJaU9pSmphR1ZqYTI5MWRDSjkuT1FCeTMxd1UwQURKYmFNWGdGR2RfZTVlbzJDeHNQRk5mVzY0aTJ1aDdEUSIsInAiOjIwMjgxNjc0MSwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxOTQzMDA2LCJleHAiOjIwOTc1MTkwMDYsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.x9gAZl1MqVp8Fo2PKlsoaYlQGOq17ySFx7XE1QxCUA8?simple=true&utm_source=paywall&utm_medium=email&utm_content=202816741&next=https://www.latent.space/p/ainews-not-much-happened-today-e7b&coupon=5fe099d9
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNREk0TVRZM05ERXNJbWxoZENJNk1UYzRNVGswTXpBd05Td2laWGh3SWpveE9ERXpORGM1TURBMUxDSnBjM01pT2lKd2RXSXRNVEE0TkRBNE9TSXNJbk4xWWlJNkltUnBjMkZpYkdWZlpXMWhhV3dpZlEuYV9FdGQ3enAtMm93MzQtcXc3aDg5VE5JOTVvb05wTG5rUWlRZF9LZ2VZTSIsInAiOjIwMjgxNjc0MSwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgxOTQzMDA2LCJleHAiOjIwOTc1MTkwMDYsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.zynqYlf_UN4Fz9bX3XVuBlE95rRmsnhMgIZUBCLDXZU?
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDI4MTY3NDEsInMiOjEwODQwODksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MTk0MzAwNiwiZXhwIjoyMDk3NTE5MDA2LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.rF8slSxzKBdRsc5kkIfz0Nr-gjiPTDSGGxx_vvQHqro?
+
