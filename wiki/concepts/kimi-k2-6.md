@@ -18,7 +18,7 @@ K2.6 refreshes the lead that K2.5 established in January 2026, maintaining Moons
 
 | Specification | Value |
 |--------------|-------|
-| Organization | Moonshot AI (月之暗面) |
+| Organization | Moonshot AI |
 | Model Type | Mixture of Experts (MoE) |
 | Total Parameters | ~1T |
 | Active Parameters | 32B |

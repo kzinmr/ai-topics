@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-06-20T18:20:46.930797+00:00",
+  "triage_run_id": "20260620T181000Z",
+  "source": "dreaming",
+  "summary_ja": "2026-06-20 dreaming-group: 日次パイプライン飽和シナリオ。blog-triage (0 takes), newsletter-triage (0 takes), active-crawl, sitemap-monitor, raw-backlog-ingestが全て本日実行済み。216件のraw記事のうち直近3日分54件を評価し、52件が既存Wikiページでカバー済み（john-jumper, spacex-cursor-acquisition, norway-ai-school-ban, beneficial-rl, glm-5-2, modal-spec-decoding等）。残りは非AI記事（レトロコンピューティング、天文学、ビール産業等）。Takes=0は正常動作。",
+  "decisions": [
+    {
+      "item_id": "dream-batch-skip-2026-06-20-non-ai-blogs",
+      "source": "dreaming",
+      "source_name": "batch-skip",
+      "title": "Non-AI blog articles from June 19-20 batch",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチスキップ: blog.jim-nielsen.com (UI paralysis), dfarq.homeip.net (Jay Miner/Windows ME), construction-physics.com (coal plants), maurycyz.com (astro/glass), idiallo.com (kung fu), oldvcr.blogspot.com (Bobby Prince), independent.co.uk (Carlsberg), shkspr.mobi (Alan Moore book review), devblogs.microsoft.com (Old New Thing), inessential.com (NetNewsWire) — 全て非AI記事。blog-triage (07:32 UTC) でskip判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "バッチスキップ: 10件の非AIブログ記事（レトロコンピューティング、天文学、ビール産業、書評等）"
+    }
+  ]
+}

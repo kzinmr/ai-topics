@@ -24,7 +24,7 @@ sources:
 
 # GLM-5 (Z.ai)
 
-New state-of-the-art open weights LLM from Z.ai (智谱AI).
+New state-of-the-art open weights LLM from Z.ai.
 
 > **Latest variant: GLM-5.2**, released June 17, 2026 — an MIT-licensed open-weight frontier model focused on coding and long-horizon agentic work.
 
@@ -59,7 +59,7 @@ Transformers, vLLM, SGLang, Cloudflare Workers AI, OpenRouter, Ollama Cloud, Bas
 - Strong benchmark performance across coding, agentic, and design tasks
 
 ### Developer
-- Z.ai (智谱AI) — Chinese AI company
+- Z.ai — Chinese AI company
 - Part of China's push in open AI
 - Follows GLM-4, GLM-5V-Turbo, and GLM-5.1 releases
 

@@ -156,4 +156,4 @@ GH_PROMPT_DISABLED=1 gh pr create --title "fix bug" --body "..."
 
 ## References
 
-- yan5xu, "从 github cli 学习如何设计 agent friendly cli" (May 23, 2026) — [X Article](https://x.com/yan5xu/status/2058151727333880265)
+- yan5xu, "How to design agent-friendly CLI from GitHub CLI" (May 23, 2026) — [X Article](https://x.com/yan5xu/status/2058151727333880265)

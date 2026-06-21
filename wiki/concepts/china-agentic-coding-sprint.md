@@ -17,9 +17,9 @@ In a 12-day window in April 2026, three Chinese AI labs released open-weight cod
 
 | Model | Company | SWE-Bench Pro Score | License |
 |-------|---------|---------------------|---------|
-| Kimi K2.6 | Moonshot AI (月之暗面) | 56-59 | Open weights |
+| Kimi K2.6 | Moonshot AI | 56-59 | Open weights |
 | MiniMax M2.7 | MiniMax | 56-59 | Open weights |
-| Z.ai GLM-5.1 | Z.ai (智谱) | 56-59 | Open weights |
+| Z.ai GLM-5.1 | Z.ai | 56-59 | Open weights |
 
 All three are priced below their Western equivalents.
 

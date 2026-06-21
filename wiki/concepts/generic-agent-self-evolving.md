@@ -64,7 +64,7 @@ Initial agent → Execute task → Extract SOP → Add to skill tree
 
 ## Practical Implementations
 
-- **Dintal Claw (政务龙虾)**: Government service agent built on GenericAgent
+- **Dintal Claw (Government Lobster)**: Government service agent built on GenericAgent
 - **WeChat Bot**: Personal WeChat assistant integration
 - **Scheduled cron tasks**: L4 session archive memory integrated with scheduler cron
 - **Open source**: [github.com/lsdefine/GenericAgent](https://github.com/lsdefine/GenericAgent) with active development since January 2026

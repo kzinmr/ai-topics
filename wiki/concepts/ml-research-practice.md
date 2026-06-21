@@ -15,104 +15,109 @@ sources:
 
 # ML Research Practice
 
-ML研究の実践方法論 — 問題選択、進捗管理、個人成長の体系的ガイド。[[entities/john-schulman]] が2017年のOpenAI Fellowsプログラム向けに執筆し、2020年に公開。
+A systematic guide to ML research methodology — problem selection, progress management, and personal growth. Written by [[entities/john-schulman]] for the 2017 OpenAI Fellows program, publicly released in 2020.
 
-## 問題選択（Choosing Problems）
+## Choosing Problems
 
-### Tasteの鍛え方
+### Developing Taste
 
-問題選択の能力は生の技術力より重要。以下の方法で加速できる:
+The ability to choose problems is more important than raw technical skill. It can be accelerated through:
 
-1. **論文を大量に読み、批判的に評価する** — 深い知識を持つ人と議論する
-2. **似たテーマの研究グループで働く** — 他者の経験を吸収する
-3. **経験豊富な研究者に助言を求める** — アイデアは安い、.executionが問われる
-4. **何が有用な研究かを定期的に振り返る** — 理論はいつ有用か？経験結果はいつ転移可能か？
+1. **Read papers extensively and critique them** — discuss with people who have deep knowledge
+2. **Work in research groups on similar topics** — absorb others' experience
+3. **Seek advice from experienced researchers** — ideas are cheap, execution matters
+4. **Regularly reflect on what constitutes useful research** — when is theory useful? When are empirical results transferable?
 
-影響力のある仕事の最大のバーストは少数の研究グループに集中している。それは彼らが圧倒的に優秀だからではなく、**専門知識と視点の密度が高い**から。
+The biggest bursts of influential work are concentrated in a small number of research groups. This isn't because they are overwhelmingly better, but because they have **high density of expertise and perspective**.
 
 ### Idea-Driven vs Goal-Driven
 
 | | Idea-Driven | Goal-Driven |
 |---|---|---|
-| **動機** | 論文を読んで「もっと良くできる」と思う | 新しいAI能力のビジョンを持って問題を解く |
-| **リスク** | scooping被り、他者との重複が高い | 目標を字面通りに解釈しすぎる |
-| **利点** | 既存知識を直接活用 | 差別化された視点、チーム協調が可能 |
-| **推奨** | 熟練者向け | 大多数の人におすすめ |
+| **Motivation** | Reading a paper and thinking "I can do better" | Having a vision of new AI capabilities and solving toward it |
+| **Risk** | High overlap with others, being scooped | Taking goals too literally |
+| **Advantage** | Directly leverages existing knowledge | Differentiated perspective, enables team coordination |
+| **Recommended** | For experienced researchers | Recommended for most people |
 
-SchulmanはGoal-Drivenを推奨。異なる問題を選択することで、コミュニティと異なるアイデアを探索できる。
+Schulman recommends Goal-Driven. By choosing different problems, you explore ideas that differ from the community.
 
-### Case Study: Schulmanの博士課程
+### Case Study: Schulman's PhD
 
-- **前半**: ロボットの柔軟物体操作 → 軌道最適化という副産物が最も影響力のある成果に
-- **後半**: 3D歩行のRL → policy gradientに集中 → TRPO, GAE, PPO
-- DQNブームで多くの人がQ-learningに飛び乗ったが、Schulmanは歩行タスクには不適と判断しpolicy gradientを継続 → **異なる問題選択が異なるアイデア探索を生んだ**
+- **First half**: Robotic deformable object manipulation → trajectory optimization became the most impactful byproduct
+- **Second half**: RL for 3D locomotion → focus on policy gradient → TRPO, GAE, PPO
+- During the DQN boom many jumped to Q-learning, but Schulman judged it unsuitable for locomotion tasks and continued with policy gradient → **different problem choices led to different idea exploration**
 
-### 汎用解への拘束
+### Constraining to General Solutions
 
-Goal-Drivenの落とし穴: 目標を字面通りに達成してしまうとMLの進歩に寄与しない解法になりがち。**汎用的で他の問題にも応用できそうな解法に制約すべき**。
+Goal-Driven pitfall: achieving the goal too literally can lead to solutions that don't advance ML. **Solutions should be constrained to be general and potentially applicable to other problems.**
 
-### 高い目標と漸進的改善
+### High Goals and Incremental Improvement
 
-- 潜在的上昇幅はどのくらいか？ 10%改善か10X改善か？
-- AlexNet（2012）は革新的な新コンポーネントなし — **多数の小さな改善を積み重ねた**
-- 増分改善は大きな目標の文脈でのみ有用。改善幅に見合わない複雑さは避ける
+- What is the potential upside? 10% improvement or 10X improvement?
+- AlexNet (2012) had no revolutionary new components — **it stacked many small improvements**
+- Incremental improvements are only useful in the context of a big goal. Avoid complexity that doesn't match the improvement magnitude
 
-## 進捗管理（Making Continual Progress）
+## Making Continual Progress
 
-### ノートブックとレビュー
+### Notebooks and Reviews
 
-毎日のアイデア・実験を記録し、1-2週間ごとにレビュー:
+Record daily ideas and experiments, review every 1-2 weeks:
 
-- **実験結果** — 発見されたこと
-- **洞察** — 自分・同僚・論文から得た知見
-- **コード進捗** — 何を実装したか
-- **次のステップ** — 今後の作業
+- **Experiment results** — what was discovered
+- **Insights** — from yourself, colleagues, and papers
+- **Code progress** — what was implemented
+- **Next steps** — future work
 
-3つの価値: (1) アイデアの即時記録と再訪、(2) 実験結果の一元管理、(3) **時間使用の可視化** — アイデア間を跳び回りすぎていないかの自己監視
+Three values: (1) immediate recording and revisiting of ideas, (2) centralized experiment results, (3) **visualization of time usage** — self-monitoring for excessive jumping between ideas
 
-### 問題の切り替えタイミング
+### When to Switch Problems
 
-> **切り替えすぎ（有望なアイデアを諦めすぎ）の方が、切り替えなさすぎより一般的な失敗パターン**
+> **Switching too often (giving up on promising ideas too early) is a more common failure pattern than switching too little**
 
-- 月単位で振り返った時、大部分の時間が成果物（論文・ブログ）に繋がったプロジェクトに向いているべき
-- 半端なプロジェクトに費やした時間が大きいなら、一貫性とフォロースルーを強化すべき
-- **ε-greedy探索**: 週1日をメインプロジェクトと異なることに費やす戦略
+- When looking back monthly, most time should be spent on projects that lead to deliverables (papers, blog posts)
+- If significant time is spent on incomplete projects, strengthen consistency and follow-through
+- **ε-greedy exploration**: spend one day a week on something different from the main project
 
-## 個人成長（Personal Development）
+## Personal Development
 
-### 知識構築の投資
+### Investing in Knowledge Building
 
-現在のプロジェクトだけでなく、**ML全般の知識向上に時間の一部を割くべき**。しないと日常業務の基礎知識で_plateau_する。
+Beyond current projects, **allocate some time to improving general ML knowledge**. Otherwise, you'll _plateau_ on the foundational knowledge needed for daily work.
 
-- **教科書**: 論文より密度が高い。数十年分のアイデアを統一的な記法で体系化
-  - 推薦: *Numerical Optimization* (Nocedal & Wright), *Elements of Information Theory* (Cover & Thomas)
-- **博士論文**: (1) 導入・背景と (3) 結論・展望が最も有益 — 専門家による統一的視点
-- **論文の再実装**: 受動的読解よりはるかに深い理解。既知の性能レベルでのフィードバックが速い。SOTAを容易に再現できるようになったら、それを超える準備ができたことになる
+- **Textbooks**: denser than papers. Systematize decades of ideas in unified notation
+  - Recommended: *Numerical Optimization* (Nocedal & Wright), *Elements of Information Theory* (Cover & Thomas)
+- **PhD theses**: (1) Introduction/Background and (3) Conclusions/Outlook are most valuable — expert unified perspective
+- **Paper reimplementation**: far deeper understanding than passive reading. Fast feedback against known performance levels. When you can easily reproduce SOTA, you're ready to exceed it
 
-## 2026年への示唆
+## Implications for 2026
 
-この記事は2017年に書かれたが、以下のエッセンスは2026年のAI研究・開発にも直接通じる:
+Although this article was written in 2017, its essence directly applies to AI research and development in 2026:
 
-### 1. Goal-Driven > Idea-Driven（Agent時代により一層重要）
-2026年のAIエージェント開発では、「Xを動かす」という具体的目標が[[concepts/coding-agents/coding-agents]]の進化を駆動している。Cursor, [[concepts/coding-agents/claude-code]], [[concepts/coding-agents/openai-codex]] など、目標駆動型の開発が主流。
+### 1. Goal-Driven > Idea-Driven (Even More Important in the Agent Era)
 
-### 2. 汎用解への拘束（RLHFの本質と重なる）
-Schulmanが歩行タスクで汎用性を追求した姿勢は、[[concepts/post-training/rlhf]] の設計思想そのもの — 特定タスクに最適化するのではなく、人間のフィードバックから汎用的に学ぶ。
+In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[concepts/coding-agents/claude-code]], and [[concepts/coding-agents/openai-codex]].
 
-### 3. ノートブック文化 → Agent Memory
-Schulmanのノートブック・レビュー手法は、[[concepts/agent-memory/agent-memory-systems]] と[[concepts/agent-memory/context-engineering]] の設計思想と対応する。Agentが過去の実験・洞察を記録・再訪する仕組みは、この研究習慣の自動化そのもの。
+### 2. Constraining to General Solutions (Aligns with RLHF's Essence)
 
-### 4. 教科書の重要性（基礎力の再評価）
-2026年のLLM時代でも、基礎的な最適化理論・情報理論の理解は[[concepts/post-training/training]] と[[concepts/post-training/post-training]] で不可欠。教科書の密度は論文より高いという指摘は今なお有効。
+Schulman's pursuit of generality in locomotion tasks mirrors the design philosophy of [[concepts/post-training/rlhf]] — learning broadly from human feedback rather than optimizing for specific tasks.
 
-### 5. ε-greedy探索（Agent設計のmulti-armed bandit化）
-Agentの[[concepts/agent-architecture/agent-architecture]] 設計でも、メインストラategyと探索のバランスは重要な設計判断。[[concepts/test-time-scaling/test-time-scaling]] では推論時の探索・活用トレードオフそのもの。
+### 3. Notebook Culture → Agent Memory
+
+Schulman's notebook and review methodology corresponds to the design principles of [[concepts/agent-memory/agent-memory-systems]] and [[concepts/agent-memory/context-engineering]]. The mechanisms by which agents record and revisit past experiments and insights are essentially an automation of this research habit.
+
+### 4. The Importance of Textbooks (Reevaluating Fundamentals)
+
+Even in the 2026 LLM era, foundational understanding of optimization theory and information theory is essential for [[concepts/post-training/training]] and [[concepts/post-training/post-training]]. Schulman's point that textbooks are denser than papers remains valid.
+
+### 5. ε-Greedy Exploration (Agent Design as Multi-Armed Bandit)
+
+In [[concepts/agent-architecture/agent-architecture]] design, balancing the main strategy with exploration is a critical design decision. [[concepts/test-time-scaling/test-time-scaling]] is itself about the explore-exploit tradeoff during inference.
 
 ## Related
 
-- [[entities/john-schulman]] — 著者。PPO, TRPO, RLHFの開発者
-- [[concepts/post-training/rlhf]] — Schulmanの最も影響力のある貢献
-- [[concepts/post-training/reinforcement-learning]] — Schulmanの主要技術ドメイン
-- [[concepts/coding-agents/coding-agents]] — Goal-Driven研究の2026年の具現化
-- [[concepts/agent-memory/context-engineering]] — ノートブック文化のAgent版
-- [[concepts/test-time-scaling/test-time-scaling]] — ε-greedy探索の推論時版
+- [[entities/john-schulman]] — Author. Developer of PPO, TRPO, RLHF
+- [[concepts/post-training/rlhf]] — Schulman's most influential contribution
+- [[concepts/post-training/reinforcement-learning]] — Schulman's primary technical domain
+- [[concepts/coding-agents/coding-agents]] — The 2026 embodiment of Goal-Driven research
+- [[concepts/agent-memory/context-engineering]] — The agent counterpart of notebook culture
+- [[concepts/test-time-scaling/test-time-scaling]] — The inference-time version of ε-greedy exploration

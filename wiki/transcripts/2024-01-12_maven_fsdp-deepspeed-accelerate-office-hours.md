@@ -240,31 +240,31 @@ Start with 7-8B for fast iteration. Try bigger models. If not meaningfully bette
 
 ---
 
-## 2026年振り返り — 2年前の発言はどう見えているか
+## Retrospective (2026) — How Do These Takes Look Two Years Later?
 
-2024年1月時点のこのOffice Hoursの発言を、2026年6月の視点から振り返る。
+Looking back at this Office Hours from January 2024 through the lens of June 2026.
 
-### 的中した予測・普遍的な洞察
+### Accurate Predictions & Timeless Insights
 
-- **「7-8Bがスイートスポット」** — 2026年現在もLlama 3.1 8B、Qwen2.5 7B、Mistral 7Bがfine-tuningの主力。Dan Beckerの「training cost is free, inference cost is everything」は完全に正しかった。本番デプロイの大半は7-14Bレンジ。
-- **「FSDPは'all-or-nothing'、DeepSpeedは細やか」** — この構図は2026年も基本的に変わらない。Accelerate v1.xでもFSDPのoffload粒度は改善されていない。
-- **「LoRAはparallel adapterとして優秀」** — Charles Fryeのper-request LoRA routingの説明は2026年のvLLM、SGLangのLoRA multiplexing機能として具現化した。
-- **「Just tweak with shit」** — 実験重視の姿勢は2026年の「vibe coding」文化と呼応。Axolotl、LLaMA-Factory、Unslothがさらに低コード化。
-- **「Make your learnings public」** — Hugging Face Hubのモデル数は2024年1月から2026年6月で約10倍に増加。公開fine-tuneのエコシステムが爆発的に成長。
+- **"7-8B is the sweet spot"** — As of 2026, Llama 3.1 8B, Qwen2.5 7B, and Mistral 7B remain the workhorses of fine-tuning. Dan Becker's "training cost is free, inference cost is everything" was completely correct. The majority of production deployments are in the 7-14B range.
+- **"FSDP is all-or-nothing, DeepSpeed is granular"** — This dynamic remains essentially unchanged in 2026. Even Accelerate v1.x hasn't improved FSDP's offload granularity.
+- **"LoRA is excellent as a parallel adapter"** — Charles Frye's explanation of per-request LoRA routing materialized in 2026 as vLLM and SGLang's LoRA multiplexing features.
+- **"Just tweak with shit"** — The experiment-first attitude resonates with 2026's "vibe coding" culture. Axolotl, LLaMA-Factory, and Unsloth have become even more low-code.
+- **"Make your learnings public"** — The number of models on Hugging Face Hub has grown roughly 10x from January 2024 to June 2026. The public fine-tune ecosystem has exploded.
 
-### 変化した状況
+### What Changed
 
-- **「torch.compileは実験的」** — 2026年現在、torch.compileはPyTorch 2.xで安定し、AxolotlやTRLでもデフォルト有効化されている。Zachの「3-6ヶ月で大きく変わる」予測は的中。
-- **「INT8学習は不安定」** — 2026年でも依然としてBF16が主流だが、NVIDIA Transformer EngineとFP8学習はBlackwell/B200で実用段階に到達。Llama 3.1 405Bの学習ではFP8が使われたと噂される。
-- **「Apple Siliconは学習に向かない」** — M4 Ultraの統合メモリ（最大512GB）により、推論用途では圧倒的に有利。しかし分散学習のインフラは依然としてNVIDIA優位。Zachの「MacBookは拒否」は2026年でも多くのMLエンジニアの共感を得る立場。
-- **「A4500を買う」** — RTX 5090（32GB VRAM）、RTX PRO 6000（96GB）の登場でGPU選択肢は大幅に拡大。A4500のポジションはRTX 5090に取って代わられた。
-- **「Phi-3は変」** — Phi-4 (2025) は大幅に改善し、14BでLlama 3.1 8Bを超える性能を発揮。Microsoftのデータ品質への執着が実を結んだ。
-- **「Chinchilla scaling laws」** — 2026年ではscaling lawsの議論は「test-time compute scaling」（o1/o3、DeepSeek-R1）に移行。学習時FLOPsの最適配分だけでなく、推論時FLOPsの最適配分が新たなフロンティア。
-- **「JAXは3年後にどうなっているか」** — 2026年でもJAXはGoogle DeepMind内部では標準だが、外部エコシステムは依然としてPyTorch優位。Zachの「3年後にまだ存在するか」という懸念は、存在はしているが影響力は限定的という形で答えが出た。
+- **"torch.compile is experimental"** — As of 2026, torch.compile is stable in PyTorch 2.x and enabled by default in Axolotl and TRL. Zach's prediction that "things will change dramatically in 3-6 months" was spot on.
+- **"INT8 training is unstable"** — BF16 remains mainstream even in 2026, but NVIDIA Transformer Engine and FP8 training have reached practical deployment on Blackwell/B200. Llama 3.1 405B is rumored to have been trained with FP8.
+- **"Apple Silicon is not suited for training"** — The M4 Ultra's unified memory (up to 512GB) makes it overwhelmingly advantageous for inference. But distributed training infrastructure remains NVIDIA-dominated. Zach's "MacBook refusal" still resonates with many ML engineers in 2026.
+- **"Buy an A4500"** — With the RTX 5090 (32GB VRAM) and RTX PRO 6000 (96GB), GPU options have expanded dramatically. The A4500's position has been supplanted by the RTX 5090.
+- **"Phi-3 is weird"** — Phi-4 (2025) improved significantly, exceeding Llama 3.1 8B performance at 14B. Microsoft's commitment to data quality paid off.
+- **"Chinchilla scaling laws"** — By 2026, the scaling laws conversation has shifted to "test-time compute scaling" (o1/o3, DeepSeek-R1). Not just optimal allocation of training FLOPs, but optimal allocation of inference FLOPs is the new frontier.
+- **"Where will JAX be in 3 years?"** — In 2026, JAX remains standard inside Google DeepMind, but the external ecosystem is still PyTorch-dominant. Zach's concern about whether it would "still exist in 3 years" was answered: it exists, but its influence is limited.
 
-### この講義の歴史的意義
+### Historical Significance of This Lecture
 
-このOffice Hoursは、Hugging Faceエコシステムの「中間層」（Accelerate/FSDP/DeepSpeed）が一般のML実務者に届き始めた転換期の記録。2024年1月はLlama 3の公開前（2024年4月）であり、オープンモデルのfine-tuningが「一般のエンジニアの仕事」になり始めた黎明期の声として価値がある。
+This Office Hours session is a record of the transition period when the Hugging Face ecosystem's "middle layer" (Accelerate/FSDP/DeepSpeed) began reaching general ML practitioners. January 2024 was before Llama 3's release (April 2024), capturing the dawn of open-model fine-tuning becoming "everyday engineering work."
 
 ---
 

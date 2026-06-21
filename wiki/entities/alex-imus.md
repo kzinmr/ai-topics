@@ -1,25 +1,26 @@
 ---
-title: "Alex Imas"
-created: 2026-06-18
-updated: 2026-06-20
+title: Alex Imas
 type: entity
+created: 2026-06-20
+updated: 2026-06-20
 tags:
-  - person
-  - google-deepmind
+  - researcher
   - economics
-related:
-  - [[concepts/agi-scarcity]]
-  - [[concepts/ai-economics]]
 sources:
-  - https://www.dwarkesh.com/p/alex-imus-phil-trammell
+  - [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell)
 ---
+
 # Alex Imas
 
-Alex Imas is the Director of AGI Economics at Google DeepMind and Professor of Economics at the University of Chicago.
+Alex Imas is the Director of AGI Economics at Google DeepMind and a Professor of Economics at the University of Chicago. He focuses on the economic implications of artificial general intelligence.
 
-## Key Areas
-- **AGI Economics**: Focuses on the economic implications of a world with AGI.
-- **Relational Sector**: Investigates areas where human-in-the-loop remains a scarcity.
+## Key Ideas
+- **Economics of AGI**: Exploring how AGI will impact labor markets, wages, and wealth distribution.
+- **Scarcity after AGI**: Identifying what will remain scarce in a world where AI can perform most human-like tasks.
+
+## Related Concepts
+- [[concepts/agi-economics]]
+- [[concepts/labor-disruption]]
 
 ## Sources
-- [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell - — [[raw/articles/dwarkesh.com--p-alex-imus-phil-trammell--f12d8644.md]]
+1. [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell)

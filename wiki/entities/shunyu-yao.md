@@ -6,17 +6,17 @@ updated: 2026-04-24
 type: entity
 ---
 
-# Shunyu Yao (姚顺雨)
+# Shunyu Yao
 
 ## Profile
 
-- **Name:** Shunyu Yao (姚顺雨)
+- **Name:** Shunyu Yao
 - **X/Twitter:** [@shunyuyao12](https://x.com/ShunyuYao12)
 - **Homepage:** [ysymyth.github.io](https://ysymyth.github.io/)
 - **Current:** Research Scientist at OpenAI (Computer-Using Agent / CUA)
 - **Previous:** Research Scientist at Anthropic (large-scale RL for LLM capabilities), Google DeepMind
 - **PhD:** Princeton University (advisor: Karthik Narasimhan), 2019–present
-- **Undergrad:** Tsinghua University, Yao Class (姚班), 2015–2019
+- **Undergrad:** Tsinghua University, Yao Class, 2015–2019
 - **Postdoc:** Berkeley Center for Theoretical Physics (brief, before Anthropic)
 - **Physics background:** Stanford Institute for Theoretical Physics work with Douglas Stanford and Stephen Shenker
 
@@ -140,7 +140,7 @@ This connects directly to **Alex Zhang's RLM** work — both treat reasoning as 
 
 ## Career Timeline
 
-1. **2015–2019:** Tsinghua University, Yao Class (姚班) — theoretical computer science foundation
+1. **2015–2019:** Tsinghua University, Yao Class — theoretical computer science foundation
 2. **2019–2024:** Princeton PhD under Karthik Narasimhan — language agents, grounding, reasoning
 3. **2019–2021:** Collaboration with Matthew Hausknecht on text game agents
 4. **2022–2023:** ReAct, WebShop, Tree of Thoughts — foundational agent paradigms
