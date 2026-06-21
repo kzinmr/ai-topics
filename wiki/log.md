@@ -1,3 +1,22 @@
+## [2026-06-21] Blog Wiki Ingest — AI-Assisted Development enriched, 2 entity pages updated
+
+**Pipeline:** blog-ingest -> blog-triage -> blog-wiki-ingest
+**Source:** blog-ingest checkpoint (11 articles + 4 unsaved)
+
+### Pages Updated
+
+- **concepts/ai-assisted-development.md** — Expanded from stub (24 lines) to substantive page (89 lines). Added overview, use cases, and "LLMs for Formal and Scientific Programming" section covering John D. Cook's Claude→Z3/Python chessboard constraint satisfaction experiment (192 solutions, 24 unique). Tags: concept, coding-agents, software-engineering, developer-tooling, formal-methods. Source: raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md.
+
+- **entities/john-d-cook-applied-mathematics-consulting.md** — Added "Claude + Z3/Python Code Generation (June 2026)" subsection under LLM-Assisted Formal Proofs. Updated frontmatter updated: 2026-06-21. Added source and reference entries.
+
+- **entities/lcamtuf.md** — Added timeline entry for Jun 2026 "The 100,000 whys of AI". Added "AI Content Slop Detection: The Quasi-Determinism Argument" subsection in Core Ideas. Added [[concepts/ai-slop]] cross-reference. Updated frontmatter updated: 2026-06-21. Added reference entry.
+
+### Triage Summary
+
+1 take: johndcook Z3/Python Claude article -> concepts/ai-assisted-development.md enrichment + entity page update
+1 reference: lcamtuf "100,000 whys" -> entity/lcamtuf.md enrichment
+13 skips: non-AI content (Windows HMODULE, construction digest, package management, systemd, glassblowing, SVG license, Postgres benchmark, kernel stable, Epstein class, 4 unsaved articles)
+
 ## [2026-06-20] Active Crawl — 5 new pages (3 concepts + 1 entity + 1 concept)
 
 **Pipeline:** active-crawl → parallel discovery (HN + X/Twitter + Wiki gaps) → cross-reference → page creation

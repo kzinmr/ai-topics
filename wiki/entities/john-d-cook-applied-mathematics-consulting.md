@@ -2,7 +2,7 @@
 title: John D. Cook
 type: entity
 created: 2026-04-09
-updated: 2026-06-11
+updated: 2026-06-21
 tags:
 - person
 - blogger
@@ -13,6 +13,7 @@ aliases:
 - john-d-cook-applied-mathematics-consulting
 sources:
   - raw/articles/johndcook.com--blog-2026-06-10-claude-and-lean--1d90aa74.md
+  - raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md
 ---
 
 # John D. Cook
@@ -91,6 +92,14 @@ On June 10, 2026, Cook ran an experiment using Claude to generate Lean formal pr
 
 Sources: raw/articles/johndcook.com--blog-2026-06-10-claude-and-lean--1d90aa74.md
 
+### Claude + Z3/Python Code Generation (June 2026)
+
+On June 20, 2026, Cook ran an experiment using Claude to generate Z3/Python code for a constraint satisfaction problem: placing all chess pieces (king, queen, 2 bishops on opposite colors, 2 knights, 2 rooks) on a 6×5 board with no piece attacking another. Claude generated correct Z3 constraints from a natural language prompt. The solver found 192 raw solutions (24 unique after deduplicating piece-pair swaps).
+
+This is the third in Cook's series of LLM-assisted puzzle-solving experiments (following Claude/Prolog and ChatGPT/Prolog), and demonstrates the feasibility of LLMs bridging natural-language mathematical descriptions to formal solver code.
+
+Sources: raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md
+
 ## Key Quotes
 
 > *"Models are capable, but effective integration can be lacking. Without improvements for cases like this, customers will not be satisfied users of these new AI tools."*
@@ -156,3 +165,4 @@ Sources: raw/articles/johndcook.com--blog-2026-06-10-claude-and-lean--1d90aa74.m
 - johndcook.com--blog-2026-04-25-nth-derivative-of-a-quotient--1ec0ba72
 - johndcook.com--blog-2026-04-28-circular-arc-approximation--73d10e2a
 - johndcook.com--blog-2026-04-28-even-series-trick--74cb4171
+- johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73
