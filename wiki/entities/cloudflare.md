@@ -1,15 +1,17 @@
 ---
 title: Cloudflare
 created: 2026-05-01
-updated: 2026-06-03
+updated: 2026-06-21
 type: entity
 tags: [company, platform, ai-agents, infrastructure, open-source]
 sources:
   - https://blog.cloudflare.com/agents-stripe-projects/
   - https://blog.cloudflare.com/agents-week-in-review/
   - https://blog.cloudflare.com/internal-ai-engineering-stack/
+  - raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md
   - https://blog.cloudflare.com/high-performance-llms/
   - https://blog.cloudflare.com/internal-ai-engineering-stack/
+  - raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
 ---
 
@@ -60,6 +62,19 @@ The agent discovers available services through the protocol, prompts for human a
 ## Agent Readiness
 
 Cloudflare introduced the **Agent Readiness Score** — a tool to check if websites are "agent-ready," reflecting the emerging **agentic web** where agents are a primary traffic source.
+
+## Temporary Accounts for AI Agents (June 2026)
+
+On June 19, 2026, Cloudflare introduced **Temporary Accounts for AI Agents**, letting agents deploy to Cloudflare without any human sign-up or OAuth flow:
+
+- **`wrangler deploy --temporary`**: Agents running Wrangler without authentication now receive a prompt that tells them about the `--temporary` flag. When the agent re-runs with this flag, Cloudflare provisions a temporary account with a scoped API token — no browser, no MFA, no human required.
+- **60-minute claim window**: Temporary deployments stay live for 60 minutes, during which the human can claim the account permanently via a claim URL the agent surfaces. Unclaimed accounts are automatically deleted.
+- **Multi-deployment iteration**: Within the 60-minute window, the agent can redeploy and iterate as many times as it wants, supporting the tight write → deploy → verify loop that coding agents thrive on.
+- **Default discoverability**: Wrangler was updated to prompt unauthenticated agents about the `--temporary` flag in its output, so agents discover the capability without a human explicitly telling them about it.
+
+The feature addresses a fundamental friction point in agentic development: background AI agents hit a hard stop at browser-based sign-up flows. By making Cloudflare's platform accessible to agents without human credentials, Cloudflare extends its agent-native infrastructure from permanent, paid provisioning via [[concepts/agentic-commerce|Stripe Projects]] to ephemeral, zero-friction deployment.
+
+See: [[concepts/agent-account-provisioning]]
 
 
 ## Internal AI Engineering Stack: iMARS (April 2026)
@@ -139,6 +154,7 @@ Cloudflare's bet: the containerless, serverless Workers platform (launched 2018)
 | Apr 20, 2026 | Internal AI Engineering Stack (iMARS) published |
 || Apr 30, 2026 | Stripe Projects integration — agents provision Cloudflare autonomously |
 || Jun 4, 2026 | Acquires VoidZero (Vite, Vitest, Rolldown, Oxc, Vite+) — agent-friendly application stack |
+| Jun 19, 2026 | Temporary Accounts for AI Agents — `wrangler deploy --temporary` |
 
 ## Relationships
 
@@ -151,6 +167,7 @@ Cloudflare's bet: the containerless, serverless Workers platform (launched 2018)
 - [[entities/anthropic]] — Alternative agent deployment model
 - [[concepts/harness-engineering]] — Cloudflare provides the infrastructure harness
 - [[concepts/ai-agent-engineering]] — Agent execution platform
+- [[concepts/agent-account-provisioning]] — Temporary account provisioning for agents
 
 ## Sources
 

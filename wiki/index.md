@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-20 | Total pages: 2612 | Indexed entries: 2213 | Not in index: 399 | Entities: 824 | Concepts: 1742
+> Last updated: 2026-06-21 | Total pages: 2590 | Indexed entries: 2213 | Not in index: 377 | Entities: 826 | Concepts: 1718
 
-## Entities (824 pages)
+## Entities (826 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -64,6 +64,7 @@
 - [[entities/gpt-oss]] — GPT-OSS — OpenAI's first open-weight model release (MoE, Apache 2.0 license)
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/groq]] — Groq — AI inference infrastructure company. Custom LPU (Language Processing Unit) ASIC architecture for ultra-low-latency LLM inference. Founded by ex-Google TPU engineers. Competes with GPU-based inference platforms.
+- [[entities/ian-barber|Ian Barber]] — Senior Staff Research Scientist at Google AI, ML engineering blogger
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/inspect-ai]] — Inspect AI — Open-source LLM eval framework by JJ Allaire + UK AISI + Meridian Labs. v0.3.239 (Jun 2026), 239 releases, 100+ contributors, adopted by Anthropic/DeepMind/Grok. Dataset/Solver/Scorer pipeline, react() agent, Agent Bridge (Claude Code/Codex/Gemini CLI), sandboxing (Docker/K8s/Modal), 200+ pre-built evals, inspect-scout scanning.
 
@@ -88,6 +89,7 @@
 - [[entities/luke-j-huang]] — Luke J. Huang — AI researcher focused on RL for LLM post-training. Author of "Is Frontier Asynchronous RL Solved?" (May 2026) surveying async RL across frontier labs. Proposes low-bias compute scaling hypothesis.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
 - [[entities/machina]] — Machina (@EXM7777) — AI practitioner and writer, runs AI-powered agencies. Author of "How To Fix AI Slop (Using Hermes)" — 6-move eval loop implementation using Hermes Agent primitives.
+- [[entities/martin-fowler|Martin Fowler]] — Software architect, author, Thoughtworks Chief Scientist
 - [[entities/microsoft-ai-team]] — Microsoft AI Team — Team developing MAI-Thinking-1 reasoning models and Hill-Climbing Machine framework
 - [[entities/mistral-ai]] — French AI company, sovereign AI positioning, European lab. Medium 3.5 (128B dense, May 2026), Vibe remote agents, Work mode in Le Chat.
 - [[entities/uipath]] — Enterprise automation/orchestration platform (NYSE: PATH). May 2026: UiPath for Coding Agents — model-agnostic platform connecting Claude Code, Codex to CI/CD and governance.
@@ -882,7 +884,8 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1742 pages)
+## Concepts (1718 pages)
+- [[concepts/agent-account-provisioning|Agent Account Provisioning]] — Programmatic account creation and deployment for AI agents without human OAuth flows
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/ai-governance-political-pressure]] — Anthropic-Trump political pressure case study — AI governance under adversarial political conditions
@@ -890,9 +893,11 @@
 - [[concepts/axe-framework]] — Axe Framework — Lightweight CLI for single-purpose AI agents following Unix philosophy, TOML configuration, sub-agent delegation with depth limiting, persistent memory, SSRF protection, token budgets.
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
 - [[concepts/deepseek-vision]] — DeepSeek multimodal vision capabilities — June 2026 product launch adding image understanding
+- [[concepts/llm-architecture-complexity|LLM Architecture Complexity]] — How modern LLM architectures grew from simple Transformer stacks to heterogeneous designs
 - [[concepts/mcp-enterprise-oauth]] — MCP enterprise OAuth — zero-touch managed authentication for production agent deployments
 - [[concepts/multi-objective-policy-distillation]] — Multi-Objective Policy Distillation (MOPD) — Dominant 2026 post-training pattern: train N domain-specialist teachers, distill into one general student via reverse-KL on on-policy rollouts. Used by MiMo-V2-Flash, GLM-5, Nemotron 3 Ultra, DeepSeek V4.
 - [[concepts/plandex-coding-engine]] — Plandex Coding Engine — Terminal-based AI coding engine for multi-file projects, 2M token context window, tree-sitter project mapping, cumulative diff review sandbox, configurable autonomy spectrum.
+- [[concepts/reliable-agent-patterns|Reliable Agent Patterns]] — Engineering patterns for production-reliable AI agent systems from Bayer's PRINCE platform
 - [[concepts/spine-swarm-agents]] — Spine Swarm — Parallel multi-agent research platform, 300+ model support, structured handoffs, #1 on DeepSearchQA (87.6%), client-ready output formats, automation via MCP/API/webhooks.
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for AI agent interoperability. Launched April 2025 with 50+ partners. Enables agent-to-agent communication across frameworks/vendors. Complements MCP (tools/context) with multi-agent coordination (Agent Cards, Task lifecycle, streaming).

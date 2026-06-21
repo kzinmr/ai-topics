@@ -594,3 +594,71 @@ Triage recovery: newsletter-triage output parse failed, but triage_latest.json c
 ### Needs Attention (human review)
 - ~505 concept pages missing from index (deferred batch-add)
 - entities/alex-imus.md is a duplicate of entities/alex-imas.md (same person, different filename)
+
+## [2026-06-21] Active Crawl — 5 new pages from trending topics
+
+**Pipeline:** active-crawl
+
+### Sources
+- HN trending scan (top 15 AI stories, 4-day window)
+- X/Twitter trending scan (4 targeted queries, 40 results filtered to 10)
+- Wiki gap analysis (10 key areas scanned)
+
+### Raw Articles Saved
+- raw/articles/2026-06-19_ianbarber_llms-are-complicated-now.md (Ian Barber)
+- raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md (Cloudflare)
+- raw/articles/2026-06-19_martinfowler_reliable-agentic-ai-systems.md (Martin Fowler / Thoughtworks)
+
+### New Pages Created
+- entities/ian-barber.md — Ian Barber (Google AI, ML engineering blogger)
+- entities/martin-fowler.md — Martin Fowler (Thoughtworks, software architecture)
+- concepts/llm-architecture-complexity.md — Evolution of LLM architecture complexity 2022-2026
+- concepts/agent-account-provisioning.md — Programmatic account creation for AI agents
+- concepts/reliable-agent-patterns.md — Production reliability patterns from Bayer's PRINCE
+
+### Enriched Pages
+- entities/cloudflare.md — Added Temporary Accounts for AI Agents section
+- concepts/agentic-rag.md — Added PRINCE Case Study section
+
+### SCHEMA.md Changes
+- Added tags: thoughtworks (People/Orgs), agentic-rag, text-to-sql (AI Agents)
+
+### Stats
+- New entity pages: 2 → Entities: 10
+- New concept pages: 3 → Concepts: 464
+- Total pages: 474
+
+## [2026-06-21] Active Crawl — 5 new wiki pages from trending topics
+
+**Pipeline:** active-crawl
+
+### Sources
+- HN trending scan (top 15 AI stories, last 4 days, 22 query angles)
+- X/Twitter trending scan (4 targeted queries, 40 results filtered to 10)
+- Wiki gap analysis (10 key areas scanned)
+
+### Raw Articles Saved
+- raw/articles/2026-06-19_ianbarber_llms-are-complicated-now.md (Ian Barber, 123 lines)
+- raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md (Cloudflare, 154 lines)
+- raw/articles/2026-06-19_martinfowler_reliable-agentic-ai-systems.md (Martin Fowler/Thoughtworks, 638 lines)
+
+### New Pages Created
+- entities/ian-barber.md — Ian Barber (Google AI, ML engineering blogger, 50 lines)
+- entities/martin-fowler.md — Martin Fowler (Thoughtworks, software architecture author, 41 lines)
+- concepts/llm-architecture-complexity.md — Evolution of LLM architecture complexity 2022-2026, 111 lines
+- concepts/agent-account-provisioning.md — Programmatic account creation for AI agents, 89 lines
+- concepts/reliable-agent-patterns.md — Production reliability patterns from Bayer's PRINCE, 130 lines
+
+### Enriched Pages
+- entities/cloudflare.md — Added Temporary Accounts for AI Agents section (+17 lines)
+- concepts/agentic-rag.md — Added PRINCE Case Study section (+36 lines)
+
+### SCHEMA.md Changes
+- Added tags: thoughtworks (People/Orgs), agentic-rag, text-to-sql (AI Agents)
+
+### Trending Topics Summary
+1. **LLMs Are Complicated Now** (Ian Barber, HN 188 pts): MoE, attention variants, multi-token prediction
+2. **Cloudflare Temporary Accounts for AI Agents** (HN 214 pts): Headless agent account provisioning
+3. **Building Reliable Agentic AI Systems** (Martin Fowler, HN 109 pts): Bayer PRINCE platform case study
+4. **GPT-5.5 vs GLM-5.2 hallucination** (HN 527 pts): Model hallucination benchmarking (deferred)
+5. **DeepSeek Vision** (HN 493 pts): Multimodal capability launch (already covered in wiki)
