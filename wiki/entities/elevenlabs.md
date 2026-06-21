@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-06-18
+updated: 2026-06-21
 tags:
   - company
   - voice-ai
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-06-02_elevenlabs_webinar-recap-deploying-agents-across-every-channel.md
   - raw/articles/2026-06-05_elevenlabs_introducing-flows-agent.md
   - raw/articles/2026-06-17_elevenlabs_processing-images-and-documents-in-elevenagents.md
+  - raw/articles/2026-06-20_elevenlabs_voice-agent-evaluation-framework-6-pillars-explained.md
 ---
 
 # ElevenLabs
@@ -183,6 +184,29 @@ ElevenLabs introduced **multimodal input processing** for ElevenAgents, enabling
 **Case study — Rohlik**: The European online grocery platform runs agents across phone, web, app, and WhatsApp in six languages, resolving **90% of customer inquiries** automatically using multimodal capabilities.
 
 Source: raw/articles/2026-06-17_elevenlabs_processing-images-and-documents-in-elevenagents.md
+
+### Voice Agent Evaluation Framework (6 Pillars)
+
+ElevenLabs published a comprehensive voice agent evaluation framework (June 2026) defining six pillars for measuring voice agent performance:
+
+| Pillar | Description | Key Metrics |
+|--------|-------------|-------------|
+| **TTS Voice Quality** | Naturalness, clarity, emotional expressiveness of synthesized speech | MOS ≥4.3, jitter <30ms |
+| **Conversation Quality** | Speech recognition accuracy, contextual understanding across turns | STT WER, time-to-first-audio <500ms |
+| **Tool Usage & Task Completion** | Autonomous task completion using available resources | TSR >85% |
+| **Intelligence** | Reasoning, handling novel inputs, avoiding hallucination | FCR, CSAT |
+| **Compliance & Safety** | Regulatory adherence, guardrails | Compliance audit results |
+| **Reliability** | Uptime, consistent performance under load | P99 latency, uptime % |
+
+**Production targets**: MOS 4.3–4.5, TSR >85%, time-to-first-audio <500ms. ElevenLabs' Scribe v2 achieves the lowest WER at 2.2% (Artificial Analysis, June 2026), Flash v2.5 and Turbo v2.5 lead in speed, and ElevenAgents deliver ~75ms model inference latency.
+
+**Industry-specific weighting**: Different industries weigh pillars differently — healthcare prioritizes compliance and safety, customer service prioritizes conversation quality and tool usage.
+
+**Common testing mistakes**: Only evaluating clean audio (ignoring noise/accents/edge cases), ignoring P99 latency spikes, testing without realistic multi-turn conversation flows.
+
+See [[concepts/voice-agent-evaluation]] for related concept coverage.
+
+Source: raw/articles/2026-06-20_elevenlabs_voice-agent-evaluation-framework-6-pillars-explained.md
 
 ---
 

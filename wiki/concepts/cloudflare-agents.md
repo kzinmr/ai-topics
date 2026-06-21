@@ -1,7 +1,7 @@
 ---
 title: "Cloudflare Agents: Internal AI Engineering Stack (iMARS)"
 created: "2026-05-06"
-updated: "2026-05-06"
+updated: "2026-06-21"
 type: concept
 tags:
   - ai-agents
@@ -9,7 +9,7 @@ tags:
   - infrastructure
   - automation
   - developer-tooling
-sources: [raw/articles/2026-05-06_cloudflare-internal-ai-engineering-stack.md]
+sources: [raw/articles/2026-05-06_cloudflare-internal-ai-engineering-stack.md, raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md]
 ---
 
 # Cloudflare Agents: Internal AI Engineering Stack (iMARS)
@@ -79,6 +79,22 @@ The next phase involves agents that run entirely in the cloud using:
 - **Durable Objects** — for long-running, stateful sessions
 - **Sandbox SDK** — to clone repos, install dependencies, and run full test suites without local machine resources
 - **Code Mode** — reduces context window bloat. Instead of loading 34 individual tool schemas (~15k tokens), the model uses two tools (`search` and `execute`) to discover and run code dynamically
+
+## Temporary Cloudflare Accounts for AI Agents
+
+On June 19, 2026, Cloudflare launched **Temporary Cloudflare Accounts for Agents**, eliminating the account-signup bottleneck for AI agent deployments. Agents can run `wrangler deploy --temporary` to deploy a Worker, website, API, or agent without any prior account or OAuth flow. Deployments stay live for **60 minutes**; a human can claim the account to make it permanent, or it expires automatically.
+
+### Motivation
+
+Background AI sessions (no human in the loop) need frictionless deployments. The standard browser OAuth/copy-paste/2FA flow is a hard stop for autonomous agents. Temporary accounts enable a tight write→deploy→verify loop — agents iterate by deploying throwaway Workers, curling their own output, and deciding correctness — without credential management.
+
+### Mechanism
+
+Built on [Wrangler](https://developers.cloudflare.com/workers/wrangler/), Cloudflare's CLI. When an unauthenticated agent runs `wrangler deploy`, Wrangler prompts the agent about the `--temporary` flag (the prompt message is crafted for LLM recognition). On re-run with the flag, Cloudflare provisions a temporary account, issues a scoped API token, and returns a claim URL for the human. The token powers the entire deployment — Workers, D1, R2, Queues, and KV.
+
+### Significance
+
+This pattern addresses a fundamental agentic infrastructure bottleneck: **the deployment auth wall**. It complements Cloudflare's broader agent infrastructure (iMARS stack, Agents SDK, Sandbox SDK) by removing the last mile of human-only account provisioning. See [[concepts/agent-infrastructure]] for related patterns.
 
 ## Related
 

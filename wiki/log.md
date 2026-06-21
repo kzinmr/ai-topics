@@ -1,3 +1,25 @@
+## [2026-06-21] Dreaming Wiki Ingest — Post-Recovery Enrichment
+
+**Source:** dreaming-wiki-ingest (post-recovery from dreaming-group parse failure)
+**Timestamp:** 2026-06-21 18:24 UTC
+
+Recovered triage JSON from dreaming-group checkpoint (saved before response render failure). Post-verification of 38 decisions:
+
+### Post-Recovery Verification Result
+- **Takes=0**: "Building Reliable Agentic AI Systems" (Martin Fowler/Bayer PRINCE) already fully covered in `entities/martin-fowler.md` and `concepts/agentic-rag.md` (both created 2026-06-21)
+- **References=7**: 5 already covered, 2 enriched (see below)
+- **Skips=31**: 7 already-covered wiki content + 1 already-existing concept page take + 23 non-AI articles (game design, music, beer, glassblowing, DB benchmarks, licensing, energy, personal essays)
+
+### Entities/Concepts Enriched
+- **concepts/cloudflare-agents.md** — Added "Temporary Cloudflare Accounts for AI Agents" section (`wrangler deploy --temporary`, 60-min ephemeral deployments, June 2026). Updated: 2026-06-21.
+- **entities/elevenlabs.md** — Added "Voice Agent Evaluation Framework (6 Pillars)" section (TTS Voice Quality, Conversation Quality, Tool Usage, Intelligence, Compliance & Safety, Reliability). Updated: 2026-06-21.
+
+### Archive
+- Archive run: 38 candidates → 23 new archived, 15 dedup skipped
+- Total archive URLs: 1049
+
+---
+
 ## [2026-06-21] Wiki Watchdog Auto-Fix — index header count reconciliation
 
 **Source:** cron job (wiki-watchdog-fix)
