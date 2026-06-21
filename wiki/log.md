@@ -29,6 +29,8 @@
 - Not in index: 401 (3 entities, 449 concepts — mostly skeleton/stub pages awaiting enrichment)
 - Orphan pages (0 inbound links): ~49 (from health scan)
 
+---
+
 ## [2026-06-21] Claude Blog Ingest — Claude Code Steering Methods article ingested
 
 **Source:** https://claude.com/ja/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
@@ -185,3 +187,30 @@ Each method has different characteristics regarding:
    - Wikilinks: [[concepts/scaling-laws]], [[concepts/local-llm/local-ai]], [[concepts/local-llm/model-quantization]], [[concepts/data-filtering-scaling-laws]], [[entities/deepseek]], [[entities/dwarkesh-patel]], [[entities/epoch-ai]], [[entities/lcamtuf]], [[entities/alexellis]]
 
 2. **Index updated:** Added `concepts/data-scaling-limits` entry in Concepts section (after `data-filtering-scaling-laws`)
+
+---
+
+## [2026-06-21] Wiki Watchdog Auto-Fix — log separator + 20 orphans
+
+**Source:** cron job (wiki-watchdog-fix)
+**Timestamp:** 2026-06-21 17:50 UTC
+
+### Actions Taken
+
+1. **Log.md separator fix:** Added missing `---` between sections 1 and 2 of log.md (first section content → second section header).
+
+2. **Orphan pages added to index.md:** Added 20 orphan concept pages (first alphabetically) that existed on disk but were missing from the Concepts section:
+   - `concepts/ai-benchmarks/lighteval`, `openbenches`, `yourbench`
+   - `concepts/claude/tokenizer-47-change`
+   - `concepts/context-engineering/context-anxiety`, `context-folding`, `context-management-cognition-claude-models`
+   - `concepts/gpt/chatgpt-memory-bitter-lesson-extended`, `image-2-vs-nano-banana-2`
+   - `concepts/local-llm/gguf`, `llama-cpp`, `local-llm-inference-hardware`, `local-llm-models-april-2026`, `local-llm-server-setup-on-dgx-spark`, `vllm`
+   - `concepts/multi-agents/multi-agent`, `multi-agents-cognition-devin-orchestration`
+   - `concepts/openai/index`, `whisper-asr`, `workspace-agents`
+
+3. **Header count update:** `Indexed entries: 2221 → 2241`, `Not in index: 401 → 381`
+
+### Outcome
+- **index.md**: 2264 → 2284 lines, clean validation ✅
+- **log.md**: 189 → 206 lines, all separators present ✅
+- **Remaining orphans (depth ≤ 3)**: 7 more (`openclaw/ecosystem-tools`, `openclaw/five-tier-precedence`, `post-training/rlhf-dpo-orpo-kto-preference-optimization`, `post-training/rlhf-reinforcement-learning-from-human-feedback`, `red/green-tdd`, `speech/whisper`, `training/trl`)

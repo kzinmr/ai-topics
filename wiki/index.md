@@ -2,11 +2,18 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-21 | Total pages: 2622 | Indexed entries: 2221 | Not in index: 401 | Entities: 828 | Concepts: 1748
+> Last updated: 2026-06-21 | Total pages: 2622 | Indexed entries: 2241 | Not in index: 381 | Entities: 828 | Concepts: 1748
 
 ## Entities (828 pages)
+- [[concepts/ai-benchmarks/lighteval]] — LightEval
+- [[concepts/ai-benchmarks/openbenches]] — OpenBenches
+- [[concepts/ai-benchmarks/yourbench]] — yourbench
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
+- [[concepts/claude/tokenizer-47-change]] — Claude 4.7 Tokenizer Change
+- [[concepts/context-engineering/context-anxiety]] — Context Anxiety
+- [[concepts/context-engineering/context-folding]] — Context Folding
+- [[concepts/context-engineering/context-management-cognition-claude-models]] — context-management, cognition, claude, models
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -73,6 +80,14 @@
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek) — AI educator, author of deep-dive RLHF explainer (Bradley-Terry, KL penalty, failure modes). X Article series on alignment techniques.
 - [[entities/jj-allaire]] — JJ Allaire — Founder of Posit (formerly RStudio). Creator of Inspect AI (LLM eval framework, UK AISI collaboration). Design philosophy: Hadley Wickham-inspired clean, composable APIs.
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
+- [[concepts/gpt/chatgpt-memory-bitter-lesson-extended]] — memory-systems, bitter-lesson, stateless-agents, chatgpt, context-management
+- [[concepts/gpt/image-2-vs-nano-banana-2]] — gpt-image-2-vs-nano-banana-2
+- [[concepts/local-llm/gguf]] — GGUF is the quantization format used by llama.cpp for efficient CPU/Apple Silicon inference.
+- [[concepts/local-llm/llama-cpp]] — LLama CPP
+- [[concepts/local-llm/local-llm-inference-hardware]] — Local LLM Inference Hardware
+- [[concepts/local-llm/local-llm-models-april-2026]] — Local Llm Models April 2026
+- [[concepts/local-llm/local-llm-server-setup-on-dgx-spark]] — Local LLM Server Setup on DGX Spark
+- [[concepts/local-llm/vllm]] — vLLM
 - [[entities/jacob-xiaochen-li]] — Jacob Xiaochen Li — MIT CSAIL researcher. Co-author of [[concepts/machine-studying|Machine Studying]] framework and StudyBench benchmark with [[entities/omar-khattab|Omar Khattab]] and Rick Battle.
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs, Token Budget Wars. Enterprise AI procurement dynamics (Jun 2026). Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
@@ -214,6 +229,11 @@
 - [[concepts/local-llm/server-dgx-spark|Local LLM Server Setup on DGX Spark]] — Setup guide for DGX Spark with NemoClaw integration
 - [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit — Naive single-vector RAG is dead, but retrieval itself is more essential than ever. Late interaction, hybrid search, learned sparse retrieval
 - [[concepts/multi-agents/agent-team-swarm]] — Agent Team / Swarm — Systems where multiple AI agents coordinate to accomplish complex tasks. Orchestration patterns, communication protocols, consensus mechanisms
+- [[concepts/multi-agents/multi-agent]] — multi-agent
+- [[concepts/multi-agents/multi-agents-cognition-devin-orchestration]] — multi-agents, cognition, devin, orchestration
+- [[concepts/openai/index]] — Platform, API, SDK, and business pages for [[entities/openai|OpenAI]]. Model-centric pages are in [[concepts/gpt/index|c
+- [[concepts/openai/whisper-asr]] — speech, asr, openai, whisper, audio
+- [[concepts/openai/workspace-agents]] — **OpenAI Workspace Agents** are Codex-powered shared AI agents designed for OpenAI's Business and Enterprise plans. Laun
 - [[concepts/openclaw/anthropic-conflict]] — Anthropic-OpenClaw Conflict — Anthropic's April 2026 decision to block third-party AI agent frameworks (including OpenClaw) from accessing Claude Code API
 - [[concepts/openclaw/architecture-comparison|OpenClaw vs Hermes — Architecture Comparison]] — Side-by-side source code study comparing two agent harness frameworks
 - [[concepts/openclaw/philosophy]] — OpenClaw Philosophy — Primitives Over Defaults — Providing primitives rather than defaults, inspired by Unix philosophy and Emacs composability
