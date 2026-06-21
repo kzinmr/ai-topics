@@ -72,3 +72,85 @@ Each method has different characteristics regarding:
 1 take: johndcook Z3/Python Claude article -> concepts/ai-assisted-development.md enrichment + entity page update
 1 reference: lcamtuf "100,000 whys" -> entity/lcamtuf.md enrichment
 13 skips: non-AI content (Windows HMODULE, construction digest, package management, systemd, glassblowing, SVG license, Postgres benchmark, kernel stable, Epstein class, 4 unsaved articles)
+
+---
+
+## [2026-06-21] Trending Topics — Open-Source AI Critical Perspectives Update
+
+**Pipeline:** trending-topics report (2026-06-21)
+
+### Actions Taken
+
+1. **Updated concept page:** `concepts/open-source-ai.md`
+   - Added "Critical Perspectives (June 2026)" section covering three topics:
+     - Cory Doctorow "AI = 0" digital sovereignty critique (Pluralistic, 2026-06-18)
+     - Software Freedom Conservancy LLM usage guidelines for FLOSS organizations
+     - Norway's near-ban on AI in elementary schools (Reuters, HN 691pts/482 comments)
+   - Updated frontmatter: `updated: 2026-06-21`, added tags `[digital-sovereignty, ai-governance, ai-ethics, education]`, added 2 new sources
+   - Added wikilinks to `[[entities/microsoft]]`, `[[comparisons/ai-competition]]`, `[[concepts/ai-ethics]]`
+   - Page expanded from 67 lines to ~88 lines
+
+2. **Updated SCHEMA.md taxonomy:**
+   - Added `digital-sovereignty` tag to Meta category
+
+### Sources Ingested
+- `raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md` — Doctorow's AI sovereignty critique
+- `raw/articles/2026-06-19_hn-discussion_norway-ai-school-ban.md` — Norway AI school ban HN discussion
+
+### Wiki Impact
+- **Modified:** `concepts/open-source-ai.md` (67→88 lines)
+- **Modified:** `SCHEMA.md` (added `digital-sovereignty` tag)
+---
+
+## [2026-06-21] Trending Topics — AI Industry Economics concept page created
+
+**Pipeline:** trending-topics report (2026-06-21) → wiki concept page
+**Source:** Raw articles from 2026-06-17 to 2026-06-18
+
+### Pages Created
+
+- **concepts/ai-industry-economics.md** — Comprehensive concept page covering the June 2026 AI industry financial reckoning. Synthesizes four major threads:
+  - OpenAI's leaked audited financials ($38.5B net loss in 2025, $34B total costs, $13.07B revenue) from Ed Zitron/Where's Your Ed At, verified by Financial Times
+  - Ed Zitron's "Herbalife Moment" critique: AI industry revenue as circular dependency between AI companies and VC ecosystem
+  - George Hotz's "prices can't go down" structural analysis: policy-driven asset inflation (3.3× vs 220× growth gap since 1980), order-of-magnitude escalation (Theranos→FTX→frontier AI→government), zero-sum extraction argument
+  - Uber's $1,500/month per-developer AI tool spending cap as enterprise cost rationalization signal ($36K/year per engineer, ~11% of median $330K comp)
+  - Tags: ai-economics, economics, pricing, business-model, openai, industry, ai-criticism, ai-skepticism, token-economics, cost-optimization
+
+### Pages Updated
+
+- **index.md** — Added `concepts/ai-industry-economics` entry in Concepts section (line 892), adjacent to existing `ai-industry-financial-sustainability`
+
+### Sources Referenced
+
+- `raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md` — Full 2024/2025 financial breakdown
+- `raw/articles/2026-06-17_openai-leaked-financials-ai-economics.md` — Aggregated HN discussion + Ars Technica
+- `raw/articles/geohot.github.io--blog-jekyll-update-2026-06-18-prices-cant-go-down-html--356e1e6b.md` — Hotz structural critique
+- `raw/articles/2026-06-03_simonwillison_uber-caps-ai-tool-costs.md` — Uber spending cap analysis
+
+### Related Pages
+
+- [[concepts/ai-industry-financial-sustainability]] — Earlier/simpler coverage of same OpenAI+Herbalife topic
+- [[concepts/token-economics]] — Per-token cost economics
+- [[concepts/ai-economics]] — Broader AI economics theory
+- [[concepts/ai-lab-subscription-vs-api-economics]] — Subscription vs API economics
+- [[entities/openai]], [[entities/uber]], [[entities/george-hotz]], [[entities/ed-zitron]]
+
+---
+
+## [2026-06-21] Data Scaling Limits — Concept page created from trending topics
+
+**Trigger:** Trending topics report 2026-06-21
+
+### Actions Taken
+
+1. **New concept page created:** `concepts/data-scaling-limits.md`
+   - Synthesizes three perspectives on data as the primary AI scaling bottleneck:
+     - Dwarkesh Patel's "data black hole" thesis (1M× sample efficiency gap, RL as synthetic data, 4-month open-model catch-up)
+     - lcamtuf's "100,000 whys" analysis of LLM output homogenization (150 Amazon slop books, deterministic behavior)
+     - Alex Ellis's "Local Qwen ≠ Opus" benchmarks (RTX 6000 Pro: SWE-Bench 77.2% vs 88.6%, looping, quantization trade-offs)
+   - Covers: sample efficiency black hole, data homogenization, local vs frontier gap, scaling implications
+   - Tags: scaling-laws, synthetic-data, local-llm, data-science, benchmark, model-quantization, ai-slop, scaling, training, frontier-models, content-quality
+   - Sources: 3 raw articles
+   - Wikilinks: [[concepts/scaling-laws]], [[concepts/local-llm/local-ai]], [[concepts/local-llm/model-quantization]], [[concepts/data-filtering-scaling-laws]], [[entities/deepseek]], [[entities/dwarkesh-patel]], [[entities/epoch-ai]], [[entities/lcamtuf]], [[entities/alexellis]]
+
+2. **Index updated:** Added `concepts/data-scaling-limits` entry in Concepts section (after `data-filtering-scaling-laws`)

@@ -1,26 +1,24 @@
 ---
-title: AI Policy
+title: "AI Policy"
 type: concept
-created: 2026-06-20
-updated: 2026-06-20
+created: 2026-06-21
+updated: 2026-06-21
 tags:
-  - ai-safety
-  - existential-risk
+  - policy
+  - safety
+  - regulation
+related:
+  - [[entities/dario-amodei]]
+  - [[entities/anthropic]]
 sources:
   - [Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)
 ---
-
 # AI Policy
 
-AI policy focuses on the rapid pace of AI development and the policy frameworks needed to manage exponential growth.
+The regulatory, ethical, and strategic frameworks surrounding AI development and deployment.
 
-## Key Ideas
-- **Exponential Growth**: Discussing the rapid pace of AI development and the policy frameworks needed to manage it.
-- **AI Safety and Alignment**: Emphasizing the need for safe development of frontier models.
-
-## Related Concepts
-- [[concepts/ai-safety]]
-- [[concepts/existential-risk]]
-
-## Sources
-1. [Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)
+## Key Challenges
+- **Scaling Gap**: The mismatch between exponential AI progress and the slow speed of legislative processes.
+- **Safety vs. Innovation**: Balancing transparency legislation and export controls with the need for rapid development.
+- **Economic Impact**: Managing the effects of AI on labor markets and wealth distribution.
+- **Geopolitics**: The competition for AI supremacy and its impact on national security.

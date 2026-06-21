@@ -889,6 +889,7 @@
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/ai-governance-political-pressure]] — Anthropic-Trump political pressure case study — AI governance under adversarial political conditions
+- [[concepts/ai-industry-economics]] — AI Industry Economics — The June 2026 Financial Reckoning: OpenAI's $38.5B leaked losses, Zitron's Herbalife/MLM critique, Hotz's "prices can't go down" analysis, Uber's $1,500/mo spending cap
 - [[concepts/ai-industry-financial-sustainability]] — OpenAI leaked financials and 'Herbalife Moment' critique — AI industry economics sustainability
 - [[concepts/axe-framework]] — Axe Framework — Lightweight CLI for single-purpose AI agents following Unix philosophy, TOML configuration, sub-agent delegation with depth limiting, persistent memory, SSRF protection, token budgets.
 - [[concepts/crewai]] — CrewAI — Multi-agent orchestration framework for building role-playing autonomous AI agents
@@ -1328,6 +1329,7 @@
 - [[concepts/data-engineering]] — Data Engineering: Practical engineering discipline for data pipeline design, construction, and maintenance.
 - [[concepts/data-engineering-for-ml]] — Data Engineering for ML
 - [[concepts/data-filtering-scaling-laws]] — "A Bitter Lesson for Data Filtering" — Stanford 2026 paper. Core finding: with enough compute, the best data filter is no data filter. Large models trained on unfiltered data outperform those trained on filtered data. Echoes Rich Sutton's Bitter Lesson.
+- [[concepts/data-scaling-limits]] — Data Scaling Limits — Convergence of sample inefficiency (1M× gap: 200M human tokens vs 100T+ frontier tokens), LLM output homogenization (Amazon slop books), and local-vs-frontier capability gap (Qwen 27B 77.2% vs Opus 88.6% SWE-Bench). Patel's data black hole thesis, lcamtuf's deterministic output analysis, Ellis's RTX 6000 Pro benchmarks. Data is the primary scaling bottleneck, not compute.
 - [[concepts/dataset-engineering]] — Dataset Engineering: Emerging field of systematic curation and quality management for AI training datasets.
 - [[concepts/datasette-agent]] — datasette-agent — AI agent interface for Datasette, enabling LLM-powered database exploration
 - [[concepts/datasette-llm]] — datasette-llm: Datasette LLM integration plugin by Simon Willison.

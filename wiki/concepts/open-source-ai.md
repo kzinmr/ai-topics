@@ -1,10 +1,10 @@
 ---
 title: Open-Source AI Strategy
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-06-21
 type: concept
-tags: [open-source, model]
-sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md]
+tags: [open-source, model, digital-sovereignty, ai-governance, ai-ethics, education]
+sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md, raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md, raw/articles/2026-06-19_hn-discussion_norway-ai-school-ban.md]
 ---
 
 # Open-Source AI Strategy
@@ -59,6 +59,27 @@ China has adopted open-source AI as a core strategic pillar:
 - Can proprietary models maintain quality advantages in a world where open-source models benefit from community contributions?
 - How does open-source AI affect the balance of power between Silicon Valley and emerging AI nations?
 - Is the "free model, paid infrastructure" model sustainable for open-source AI?
+
+## Critical Perspectives (June 2026)
+
+### Doctorow's "AI = 0" Critique of Digital Sovereignty
+
+Cory Doctorow ([Pluralistic, 2026-06-18](https://pluralistic.net/2026/06/18/their-trillions-our-billions/)) applies his blockchain-era critique formula to AI national strategies:
+
+> If: digital sovereignty + AI = digital sovereignty − AI
+> Then: AI = 0
+
+**Core argument**: The real digital sovereignty risk is Trump-era U.S. tech platform dependency — remote killswitches on iPhones, Office 365, tractors, and government infrastructure ([[entities/microsoft]] disconnecting institutions). If Canada lost access to ChatGPT, Claude, and Grok overnight, nothing essential would break. But if Denmark lost its Office 365 and iPhone infrastructure, the country would be "bricked." Doctorow argues that **national AI investment does nothing to protect against the actual threat**, and countries should wait for the AI bubble to burst, then buy GPUs at 10¢ on the dollar and refine open-source models.
+
+**Implications for open-source AI strategy**: Open-source model development is not a sovereignty play — it's a cost play. The [[comparisons/ai-competition|U.S.–China competition]] framing of "AI as national infrastructure" conflates two unrelated problems. Sovereignty comes from repealing U.S.-protecting laws and building domestic alternatives to Windows/Office/iCloud, not from building sovereign LLMs.
+
+### Software Freedom Conservancy LLM Usage Guidelines
+
+The Software Freedom Conservancy published its first LLM usage guidelines for FLOSS organizations (June 2026), establishing governance frameworks for how free/libre open-source software projects should use or permit LLM-generated code. This represents the [[concepts/ai-ethics|ethics and governance]] dimension of open-source AI — communities that champion user freedom now face internal debates about whether AI-generated contributions align with copyleft principles and contributor integrity.
+
+### Norway's AI Ban in Elementary Schools
+
+Norway imposed a near-ban on AI use in elementary schools ([Reuters, 2026-06-19](https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/); [HN 691pts/482 comments](https://news.ycombinator.com/item?id=48600093)). The HN discussion highlighted tensions: Norway simultaneously operates Sikt AI for schools (teacher monitoring of AI use) while banning student AI use. Commenters drew parallels to 1990s school bans on internet search engines, and questioned whether the distinction should be between AI-as-shortcut (undermines learning) vs. AI-as-tutor (accelerates learning). The ban reflects a precautionary approach in the absence of scalable constructive AI pedagogy frameworks.
 
 ## Related Pages
 
