@@ -1,7 +1,7 @@
 ---
 title: Matt Van Horn
 created: 2026-05-09
-updated: 2026-06-03
+updated: 2026-06-21
 type: entity
 tags:
   - person
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-04-19_mvanhorn_hermes-agent-use-cases-30days.md
   - raw/articles/2026-03-22_mvanhorn_claude-code-hacks.md
   - raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md
+  - raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md
   - https://x.com/mvanhorn/status/2045935785661349956
   - https://en.wikipedia.org/wiki/Matt_Van_Horn
   - https://www.linkedin.com/in/mattvanhorn/
@@ -31,6 +32,7 @@ related:
   - "[[entities/every-inc]]"
   - "[[entities/tobi-lutke]]"
   - "[[concepts/claude-code/claude-code-goal]]"
+  - "[[concepts/loop-engineering]]"
 ---
 
 # Matt Van Horn

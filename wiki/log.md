@@ -1,3 +1,22 @@
+## [2026-06-21] X Bookmarks Ingest — Loop Engineering concept + entity pages
+
+Ingested Elvis Saravia's (@omarsar0) X Article "From Prompting Agents to Loop Engineering" (Jun 19, 2026, 2.1K bookmarks, 911 likes, 242K impressions) from X bookmarks batch.
+
+**New pages created:**
+- [[concepts/loop-engineering]] — New concept page: the engineering discipline of designing autonomous loop systems for coding agents. Covers six building blocks (trigger, isolation, context, tool reach, independent verifier, state-on-disk), five loop taxonomies (ReAct→AutoGPT→ralph loop→/goal→orchestration), concrete patterns (PR babysitter, CI health, deploy verification), Cherny's five-step unattended loop setup, crabfleet as loop infrastructure, economics (iterations as budget line), anti-patterns, and failure modes. Cross-referenced with [[concepts/agent-loop-orchestration]], [[concepts/loopcraft]], [[concepts/codex/codex-agent-loop]].
+- [[entities/elvis-saravia]] — New entity page: Founder of DAIR.AI and DAIR.AI Academy, educator synthesizing practitioner insights from Steinberger, Cherny, Osmani, and Van Horn into structured educational content.
+
+**Entities enriched:**
+- [[entities/peter-steinberger]] — Added Saravia article reference to "Design Loops" section (six building blocks, five loop taxonomies, PR babysitter pattern). Updated sources and date.
+- [[entities/boris-cherny]] — Added "I don't prompt Claude anymore. I have loops..." quote and five-step autonomous loop setup code block. Updated tags (+loop-engineering), sources, and date.
+- [[entities/addy-osmani]] — Added Saravia article to Key Publications table and Sources section. Updated sources and date.
+- [[entities/matt-van-horn]] — Added loop-engineering to related: links, Saravia article to sources. Updated date.
+
+**Cross-references:**
+- [[concepts/agent-loop-orchestration]] — Added cross-reference to loop-engineering in Related Concepts, updated tags and date.
+
+**Raw article:** [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]]
+**Source:** X Article (x.com/i/article/2068004233849290752), plain_text via fetch_x_bookmarks.py
 ## [2026-06-21] Dreaming Wiki Ingest — Post-Recovery Enrichment
 
 **Source:** dreaming-wiki-ingest (post-recovery from dreaming-group parse failure)

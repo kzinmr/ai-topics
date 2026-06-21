@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-21 | Total pages: 2622 | Indexed entries: 2241 | Not in index: 381 | Entities: 828 | Concepts: 1748
+> Last updated: 2026-06-21 | Total pages: 2624 | Indexed entries: 2243 | Not in index: 381 | Entities: 829 | Concepts: 1749
 
-## Entities (828 pages)
+## Entities (829 pages)
 - [[concepts/ai-benchmarks/lighteval]] — LightEval
 - [[concepts/ai-benchmarks/openbenches]] — OpenBenches
 - [[concepts/ai-benchmarks/yourbench]] — yourbench
@@ -362,6 +362,7 @@
 - [[entities/embra]] — AI context engine company acquired by Notion (Jan 2026). Founded by Zach Tratar.
 - [[entities/emmanuel-ameisen]] — Emmanuel Ameisen — ML practitioner/author at Anthropic. *Building Machine Learning Powered Applications* (O'Reilly). "Why Fine-Tuning is Dead" talk. Skeptic of fine-tuning as default; advocates RAG + prompting first.
 - [[entities/elvis]] — **Platform:** X/Twitter (@elvis_)
+- [[entities/elvis-saravia]] — Elvis Saravia — Founder of DAIR.AI and DAIR.AI Academy. Educator and synthesizer of AI agent engineering practices, author of "From Prompting Agents to Loop Engineering" (Jun 2026).
 - [[entities/emollick]] — **X** | @emollick |
 - [[entities/encodec]] — **EnCodec** | Meta's production-standard neural audio codec. 24/48 kHz, 1.5–24 kbps, streaming, with Transformer entropy coding. De facto standard for codec-style tokenizers.
 - [[entities/entire]] — Entire — AI agent observability & search infrastructure. Captures agent traces (checkpoints). Creator of pgr (agent-oriented code search). Published landmark agentic search benchmark study.
@@ -904,7 +905,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1748 pages)
+## Concepts (1749 pages)
 - [[concepts/agent-account-provisioning|Agent Account Provisioning]] — Programmatic account creation and deployment for AI agents without human OAuth flows
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
@@ -1702,6 +1703,7 @@
 - [[concepts/local-llm/local-ai]] — **Local AI Landscape — May 2026**: Current state of local AI using Andrew Chen (a16z)'s home lab experience as a case study. Hardware (DGX Spark/5090 eGPU/Mac Studio/Strix Halo), 1-year model quality lag thesis, software stack (ollama→LiteLLM→vLLM), 2027 Opus-class local model prediction, async batch processing use cases.→ [[entities/andrew-chen]]
 - [[concepts/local-qwen-vs-claude-opus]] — Local Qwen vs Claude Opus — Different Tools for Different Jobs — Alex Ellis's deep-dive: local Qwen is not a worse Opus but a different tool. Cost (GPU pays for itself in months), sovereignty (Fable 5 vendor risk), benchmark realism (SWE-Bench gap, benchmaxxing), practical limitations (looping, quantization degradation), appropriate use cases (guided tasks vs long-horizon autonomous work).
 - [[concepts/long-running-search-agents]] — Long Running Search Agents — Design patterns for search agents running unattended for hours/days. 7 progressive strategies: single context, cron restarts, compaction, local index (3.7x yield gain), frontier prompt, query model, self-querying. Doug Turnbull, Cheat at Search (June 2026).
+- [[concepts/loop-engineering]] — Loop Engineering — The discipline of designing autonomous loop systems that prompt, verify, and iterate with coding agents. Six building blocks (trigger, isolation, context, tool reach, independent verifier, state), five loop taxonomies (ReAct→AutoGPT→ralph→/goal→orchestration), economics (iterations as budget line), and anti-patterns. Synthesized from Steinberger, Cherny, Osmani by Elvis Saravia (DAIR.AI, Jun 2026).
 - [[concepts/loopcraft]] — Loopcraft / Salty Lesson for Agents — Engineering philosophy of designing autonomous agent loops instead of hand-crafting prompts. The Salty Lesson: 'Don't fix things yourself. Focus on systems that scale with more agents.' Contributed by Steipete, Boris (Claude Code lead), and Andrej Karpathy (Autoresearch). AINews June 2026.
 - [[concepts/mac-studio-local-ai]] — Mac Studio for Local AI
 - [[concepts/machine-studying]] — Machine Studying — Agents developing expertise from corpora. Three paradigms: self-supervised objectives (CPT), synthetic data/environments (SFT), amortized context management (cheatsheets). StudyBench benchmark. Key insight: memorization ≠ expertise, retrieval ≠ expertise. Li, Battle, Khattab (MIT CSAIL, Jun 2026).

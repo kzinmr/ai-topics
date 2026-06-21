@@ -2,7 +2,7 @@
 title: Addy Osmani
 type: entity
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-06-21
 source: "x-account"
 tags:
   - person
@@ -12,7 +12,7 @@ tags:
   - web-development
   - developer-experience
   - google
-sources: []
+sources: [raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md]
 ---
 
 
@@ -145,6 +145,7 @@ Key contributions from this article:
 | Stop Using /init for AGENTS.md | Mar 2026 | Medium + addyosmani.com |
 | Orchestrating Coding Agents (talk) | Mar 2026 | O'Reilly CodeCon 2026 |
 | 2026 Agentic Coding Trends Guide | 2026 | addyosmani.com |
+| From Prompting Agents to Loop Engineering (cited) | Jun 2026 | DAIR.AI Academy |
 
 ## Speaking
 
@@ -187,3 +188,4 @@ His posting style is **educational and systematic** — he builds frameworks, cr
 - [Stop Using /init for AGENTS.md](https://medium.com/@addyosmani/stop-using-init-for-agents-md-3086a333f380) (Mar 2026)
 - [O'Reilly CodeCon 2026 Talk Slides](https://talks.addy.ie/oreilly-codecon-march-2026/) (Mar 2026)
 - [Addy Osmani's Blog](https://addyosmani.com/)
+- [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). References Osmani on AI-assisted coding loops.

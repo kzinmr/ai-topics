@@ -2,7 +2,7 @@
 title: Boris Cherny
 type: entity
 created: 2026-04-13
-updated: 2026-06-03
+updated: 2026-06-21
 tags:
   - person
   - x-account
@@ -13,7 +13,8 @@ tags:
   - developer-tooling
   - anthropic
   - methodology
-sources: []
+  - loop-engineering
+sources: [raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md]
 ---
 
 
@@ -281,6 +282,17 @@ This repo serves as a **reference implementation** for agentic engineering patte
 
 > "Append 'use subagents' to any request where you want more compute. Offload tasks to keep your main context window clean."
 
+> "I don't prompt Claude anymore. I have loops that are running. They're the ones that are prompting Claude and figuring out what to do. My job is to write loops." — on loop engineering as the next level of agent use
+
+Cherny's five-step autonomous loop setup:
+```bash
+claude --permission-mode auto                          # 1 · no approval prompts
+ultracode  orchestrate sub-agents to ship the feature  # 2 · fan out
+/goal all tests pass and the demo loads clean          # 3 · keep going
+→ cloud / desktop app                                  # 4 · close the laptop
+→ chrome ext · sim MCP · live server                   # 5 · self-verify, then halt
+```
+
 ## Related
 
 - [[harness-engineering]]
@@ -297,3 +309,4 @@ This repo serves as a **reference implementation** for agentic engineering patte
 - [How the Creator of Claude Code Uses Claude Code (paddo.dev)](https://paddo.dev/blog/how-boris-uses-claude-code/) — Detailed workflow analysis
 - [Thread Reader App: Boris Cherny's Threads](https://threadreaderapp.com/user/bcherny) — Comprehensive collection of Claude Code insights
 - [borischerny.com](https://borischerny.com/) — Personal blog
+- [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). Features Cherny's loop engineering philosophy and five-step autonomous loop setup.

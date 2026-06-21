@@ -4,8 +4,8 @@ type: entity
 entity_type: person
 status: L3
 created: 2026-04-13
-updated: 2026-06-08
-sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md, raw/articles/2026-06-07_steipete-design-loops-dont-prompt.md, raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing.md]
+updated: 2026-06-21
+sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md, raw/articles/2026-06-07_steipete-design-loops-dont-prompt.md, raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing.md, raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md]
 tags:
   - person
   - ai-agents
@@ -46,6 +46,8 @@ Peter Steinberger grew up in rural Austria and bootstrapped **PSPDFKit**, a mobi
 > "Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents." — @steipete, June 7, 2026
 
 Steinberger's progression from manual prompting to loop authoring mirrors Boris Cherny's three-stage evolution: from manual + autocomplete → parallel sessions → loop author. The key insight: **the reusable unit inside the loop is a skill, not a prompt**. A loop with no reusable skills is `while(true)` around a stranger. A loop that calls a library of sharp, tested, named skills is a system that compounds. This connects directly to his "Skills > Loops" thesis and [[concepts/harness-engineering/agentic-loop|the broader loop evolution spectrum]].
+
+Saravia's DAIR.AI Academy article (Jun 19, 2026) provides a comprehensive synthesis of this paradigm, covering the six building blocks of loop engineering, the five meanings of 'loop', and concrete patterns such as the PR babysitter.
 
 ### Token Privilege & The Loop Access Gap (Jun 2026)
 
@@ -185,6 +187,10 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 
 - **"Build the Thing That Builds the Thing"** (Jun 2026, Microsoft Build BRK245): 45-min breakout on the meta-development philosophy behind OpenClaw's automation ecosystem — ClawSweeper (auto-closing 15K issues), Octopus (API token balancing), Crab Box (isolated cloud test infra), Auto Review (iterative agent self-review), Core Patch (parallel audits), Crab Fleet (multiplayer agent dev). [[raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing]]
 - **"Builders Unscripted: Ep. 1 — Peter Steinberger, Creator of OpenClaw"** (Feb 2026): 31-min interview with Romain Huet (OpenAI). Covers OpenClaw's viral growth, building with Codex, "vibe coding" critique, and open source philosophy. Recorded prior to joining OpenAI. [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+
+## Sources
+
+- [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). Synthesizes Steinberger's loop thesis across six building blocks, five loop taxonomies, and concrete patterns.
 
 ## Related
 

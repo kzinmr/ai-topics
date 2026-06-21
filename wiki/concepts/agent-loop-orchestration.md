@@ -6,12 +6,13 @@ aliases:
   - agent-loop
   - reasoning-action-loop
 created: 2026-04-25
-updated: 2026-04-29
+updated: 2026-06-21
 tags:
   - concept
   - ai-agents
   - orchestration
   - architecture
+  - loop-engineering
 status: complete
 sources:
   - url: "https://you.com/resources/the-agent-loop-how-ai-agents-actually-work-and-how-to-build-one"
@@ -90,6 +91,7 @@ Multiple agents collaborate in a single conversation thread:
 - [[concepts/claude-code/claude-code-best-practices]] — Agent loop utilization in Claude Code
 - [[concepts/autoreason]] — Self-improving reasoning loop
 - [[concepts/coding-agents/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation. Minimal agent loop with 3 tools (read_file/list_files/edit_file)
+- [[concepts/loop-engineering]] — The engineering discipline of designing autonomous loop systems that prompt, verify, and iterate with coding agents. Builds on the orchestration patterns documented here with production concerns: triggers, isolation, independent verification, cost economics, and failure modes.
 
 ## Sources
 
