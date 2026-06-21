@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-21 | Total pages: 2590 | Indexed entries: 2213 | Not in index: 377 | Entities: 826 | Concepts: 1718
+> Last updated: 2026-06-21 | Total pages: 2622 | Indexed entries: 2221 | Not in index: 401 | Entities: 828 | Concepts: 1748
 
-## Entities (826 pages)
+## Entities (828 pages)
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory — Claude Code's multi-layer memory system. Entity extraction, context pruning, long-term knowledge persistence across sessions
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI) — Philanthropic organization. Biohub developed [[concepts/esmfold2|ESMFold2]] protein structure prediction (1.1B structures), fully open source.
@@ -884,7 +884,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1718 pages)
+## Concepts (1748 pages)
 - [[concepts/agent-account-provisioning|Agent Account Provisioning]] — Programmatic account creation and deployment for AI agents without human OAuth flows
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities

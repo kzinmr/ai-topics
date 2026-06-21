@@ -1,3 +1,34 @@
+## [2026-06-21] Wiki Watchdog Auto-Fix — index header count reconciliation
+
+**Source:** cron job (wiki-watchdog-fix)
+**Timestamp:** 2026-06-21 17:35 UTC
+
+### Actions Taken
+
+1. **Index header count corrections:**
+   - Entities section: 826 → 828 (filesystem confirmed 828)
+   - Concepts section: 1718 → 1748 (filesystem confirmed 1748)
+   - Summary line: Total pages 2590→2622, Indexed entries 2213→2221, Not in index 377→401
+   - Headers and summary line now consistent with filesystem `find` counts
+
+2. **Structural health check:**
+   - Pipe corruption: 0 instances ✓
+   - Line prefix corruption: 0 instances ✓
+   - Triple brackets: 0 instances ✓
+   - Space prefix corruption: 0 instances ✓
+   - Duplicate entries: 0 instances ✓
+   - Log.md missing separators: 0 sections ✓
+   - Index corruption (health scan): no issues ✓
+
+3. **Pipeline watchdog:**
+   - ⚠️ `x_accounts` job stale (26h) — requires human review. Do not auto-restart.
+
+### Stats
+- Pages on disk: 2622 (828 entities, 1748 concepts, 31 comparisons, 11 events, 4 queries)
+- Indexed entries: 2221 (823 entities, 1236 concepts, 31 comparisons, 11 events, 4 queries)
+- Not in index: 401 (3 entities, 449 concepts — mostly skeleton/stub pages awaiting enrichment)
+- Orphan pages (0 inbound links): ~49 (from health scan)
+
 ## [2026-06-21] Claude Blog Ingest — Claude Code Steering Methods article ingested
 
 **Source:** https://claude.com/ja/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
