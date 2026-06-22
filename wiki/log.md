@@ -319,3 +319,4 @@ Each method has different characteristics regarding:
 - `concepts/saas-agent-era.md`: Added cross-reference to saas-disruption
 
 **Summary**: Lyons argues the engineering moat protecting SaaS for 20 years is gone due to AI. Four remaining moats: distribution, proprietary data, workflow breadth, regulatory insulation. "Second business" thesis: SaaS companies must monetize installed base beyond seat ARR. Battery Ventures survey: 77% of CFOs want AI layered on existing systems, not replacement. Contrasted with Zitron's PE/financial engineering explanation.
+- 2026-06-22 llm-pricing-monitor: Updated DeepSeek V4 context window 128K→1M (384K max output), corrected cache read precision ($0.0028/$0.003625), fixed Gemini 3.1 Flash Lite output $1.50→$0.50. All other prices verified unchanged.

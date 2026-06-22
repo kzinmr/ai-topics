@@ -2,7 +2,7 @@
 title: "LLM API Pricing Comparison — US vs China Providers"
 type: comparison
 created: 2026-06-09
-updated: 2026-06-15
+updated: 2026-06-22
 tags:
   - comparison
   - pricing
@@ -66,15 +66,15 @@ The models listed below are each provider's **latest generation** as of June 202
 | Google | Gemini 3.1 Pro | Frontier | $2.00 | $12.00 | $0.20 | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | Google | Gemini 3.5 Flash | Frontier | $1.50 | $9.00 | $0.15 | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | Google | Gemini 3 Flash Preview | Budget | $0.50 | $3.00 | $0.05 | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
-| Google | Gemini 3.1 Flash Lite | Budget | $0.25 | $1.50 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/google/gemini-3.1-flash-lite) |
+| Google | Gemini 3.1 Flash Lite | Budget | $0.25 | $0.50 | — | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | Cohere | Command R+ | Frontier | $3.00 | $15.00 | — | — | — | — | 128K | — | [cohere](https://cohere.com/pricing) |
 
 ### China — Frontier
 
 | Provider | Model | Tier | In $/1M | Out $/1M | Cache Read | Cache Write | Batch In | Batch Out | Ctx | Max Out | Source |
 |----------|-------|------|---------|----------|------------|-------------|----------|-----------|-----|---------|--------|
-| DeepSeek | V4-Flash | Budget | $0.14 | $0.28 | $0.003 | — | — | — | 128K | — | [deepseek](https://platform.deepseek.com) |
-| DeepSeek | V4-Pro | Mid | $0.435 | $0.87 | $0.0036 | — | — | — | 128K | — | [deepseek](https://platform.deepseek.com) |
+| DeepSeek | V4-Flash | Budget | $0.14 | $0.28 | $0.0028 | — | — | — | 1M | 384K | [deepseek](https://api-docs.deepseek.com/quick_start/pricing) |
+| DeepSeek | V4-Pro | Mid | $0.435 | $0.87 | $0.003625 | — | — | — | 1M | 384K | [deepseek](https://api-docs.deepseek.com/quick_start/pricing) |
 | Qwen | Qwen3.7-Max | Frontier | $1.25 | $3.75 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/qwen/qwen3.7-max) |
 | Qwen | Qwen3.7-Plus | Mid | $0.32 | $1.28 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/qwen/qwen3.7-plus) |
 | Xiaomi | MiMo-V2.5-Pro | Mid | $0.80 | $3.20 | $0.16 | — | — | — | 256K | — | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
@@ -125,8 +125,8 @@ Sorted by cache read price — the price you actually pay for repeated input tok
 
 | Provider | Model | Base In $/1M | Cache Read $/1M | Discount | Effective (80% hit)* |
 |----------|-------|-------------|-----------------|----------|---------------------|
-| DeepSeek | V4-Flash | $0.14 | $0.003 | 97.9% | **$0.031** |
-| DeepSeek | V4-Pro | $0.435 | $0.0036 | 99.2% | **$0.091** |
+| DeepSeek | V4-Flash | $0.14 | $0.0028 | 98.0% | **$0.031** |
+| DeepSeek | V4-Pro | $0.435 | $0.003625 | 99.2% | **$0.091** |
 | Google | Gemini 3.5 Flash | $1.50 | $0.15 | 90% | **$0.42** |
 | Google | Gemini 3 Flash Preview | $0.50 | $0.05 | 90% | **$0.14** |
 | Google | Gemini 3.1 Pro | $2.00 | $0.20 | 90% | **$0.56** |
@@ -141,7 +141,7 @@ Sorted by cache read price — the price you actually pay for repeated input tok
 
 *Effective input price = 20% × base + 80% × cache_read (80% cache hit rate, typical for persistent agent sessions).
 
-> **Key insight**: DeepSeek's cache read ($0.0036/M on V4-Pro) is **cheaper than any provider's batch API** — 139x cheaper than OpenAI's cache read, 139x cheaper than Anthropic's cache read.
+> **Key insight**: DeepSeek's cache read ($0.003625/M on V4-Pro) is **cheaper than any provider's batch API** — 139x cheaper than OpenAI's cache read, 139x cheaper than Anthropic's cache read.
 
 ### Anthropic Cache Break-Even
 
@@ -181,8 +181,8 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 
 | Provider | Model | In $/1M | Out $/1M | Cache Read | Blended* | Why it wins |
 |----------|-------|---------|----------|------------|----------|-------------|
-| DeepSeek | V4-Flash | $0.14 | $0.28 | $0.003 | $0.18 | Cheapest frontier-class; best cache |
-| DeepSeek | V4-Pro | $0.435 | $0.87 | $0.0036 | $0.52 | Best intelligence/price; 99.2% cache |
+| DeepSeek | V4-Flash | $0.14 | $0.28 | $0.0028 | $0.18 | Cheapest frontier-class; 1M ctx; best cache |
+| DeepSeek | V4-Pro | $0.435 | $0.87 | $0.003625 | $0.52 | Best intelligence/price; 1M ctx; 99.2% cache |
 | Xiaomi | MiMo-V2.5-Pro | $0.80 | $3.20 | $0.16 | $1.28 | Commercial agentic coding; 80% cache discount |
 
 *Blended = weighted cost at 4:1 input:output ratio.
@@ -327,10 +327,10 @@ OpenAI's GPT-5.5 at $5/$30 is a major price increase over GPT-5.1 ($1.25/$10), b
 Google moved from Gemini 2.5 → 3.1 → 3.5 within months. Gemini 3.5 Flash at $1.50/$9.00 with 90% cache discount competes directly with OpenAI's GPT-5.4 at similar price but with better caching economics.
 
 ### 5. Cache Is the Real Battleground
-With 98% input tokens in agent workflows, effective pricing = cache pricing. DeepSeek's 99.2% cache discount ($0.0036/M) makes it 139x cheaper per cached token than OpenAI. Google and Anthropic both offer 90% cache discounts vs OpenAI's 50%.
+With 98% input tokens in agent workflows, effective pricing = cache pricing. DeepSeek's 99.2% cache discount ($0.003625/M) makes it 139x cheaper per cached token than OpenAI. Google and Anthropic both offer 90% cache discounts vs OpenAI's 50%.
 
 ### 6. China's Price Floor Is Sub-Floor
-DeepSeek V4-Flash at $0.14/$0.28 with $0.003 cache read is frontier-class quality at budget pricing. The "blended" effective cost with cache is $0.031/M — approaching zero marginal cost.
+DeepSeek V4-Flash at $0.14/$0.28 with $0.0028 cache read and 1M context is frontier-class quality at budget pricing. The "blended" effective cost with cache is $0.031/M — approaching zero marginal cost.
 
 ### 7. Reasoning Models: Standalone Deprecated, Deep-Research Replaces
 OpenAI removed standalone o3/o4-mini from its pricing page (June 2026), leaving only o3-deep-research ($5/$20) and o4-mini-deep-research ($1/$4) as reasoning-specific endpoints. The reasoning capability is now absorbed into the GPT-5.x mainline models. DeepSeek V4-Pro continues to handle most reasoning tasks at $0.435/$0.87.
@@ -364,6 +364,7 @@ OpenAI removed standalone o3/o4-mini from its pricing page (June 2026), leaving 
 
 | Date | Change | Source |
 |------|--------|--------|
+| 2026-06-22 | DeepSeek: updated context window from 128K to 1M (384K max output); corrected cache read precision ($0.0028 V4-Flash, $0.003625 V4-Pro); updated source URL to api-docs.deepseek.com. Google: corrected Gemini 3.1 Flash Lite output from $1.50 to $0.50 | [deepseek](https://api-docs.deepseek.com/quick_start/pricing), [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | 2026-06-09 | Frontier model review: moved Gemini 2.5, GPT-4.1, Claude Sonnet 4/4.5, Opus 4.1 to Legacy. Added Gemini 3.5 Flash, Gemini 3.1 Pro, Claude Opus 4.8, GPT-5.5 | Wiki entity pages |
 | 2026-06-09 | Cache/batch enrichment for all providers | Max Woolf/OpenRouter, Anthropic docs |
 | 2026-06-09 | Initial creation | User-provided CSV + wiki entity pages |
