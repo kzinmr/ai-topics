@@ -8,7 +8,6 @@ tags:
   - nlp
   - open-source
   - ai-agents
-  - agent-skills
   - developer-tooling
   - coding-agents
 aliases:

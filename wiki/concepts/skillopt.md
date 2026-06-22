@@ -6,9 +6,8 @@ type: concept
 tags:
   - optimization
   - prompting
-  - agent-skills
-  - self-improving
   - ai-agents
+  - self-improving
   - evaluation
   - training
   - trace-analysis

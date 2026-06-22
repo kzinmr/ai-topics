@@ -3,7 +3,11 @@ title: "RL Interview Questions 2026"
 type: concept
 created: 2026-06-12
 updated: 2026-06-12
-tags: [reinforcement-learning, grpo, ppo, training, ai-infrastructure]
+tags:
+  - reinforcement-learning
+  - training
+  - ppo
+  - infrastructure
 sources:
   - url: https://x.com/sheriyuo/status/2063295181131247674
     title: "RL Interview Questions 2026 (X Article)"

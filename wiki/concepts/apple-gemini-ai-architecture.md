@@ -3,7 +3,13 @@ title: Apple-Gemini AI Architecture
 created: 2026-06-09
 updated: 2026-06-09
 type: concept
-tags: [apple, google, gemini, ai-infrastructure, platform, model, architecture]
+tags:
+  - apple
+  - google
+  - infrastructure
+  - platform
+  - model
+  - architecture
 sources:
   - raw/articles/2026-06-09_apple-gemini-ai-architecture.md
 ---

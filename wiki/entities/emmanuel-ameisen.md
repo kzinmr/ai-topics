@@ -4,7 +4,6 @@ tags:
   - person
   - anthropic
   - fine-tuning
-  - post-training
   - training
   - evaluation
   - interpretability

@@ -3,7 +3,16 @@ title: "Claude Code Steering Methods"
 created: 2026-06-21
 updated: 2026-06-21
 type: concept
-tags: [claude-code, coding-agents, ai-agents, customization, hooks, skills, subagents, rules, claudefile, developer-tools]
+tags:
+  - claude-code
+  - coding-agents
+  - ai-agents
+  - customization
+  - hooks
+  - skills
+  - rules
+  - claudefile
+  - developer-tooling
 sources: [raw/articles/2026-06-18_anthropic_steering-claude-code-skills-hooks-rules-subagents-and-more.md]
 ---
 

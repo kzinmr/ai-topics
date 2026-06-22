@@ -4,9 +4,7 @@ created: 2026-06-19
 updated: 2026-06-19
 type: concept
 tags:
-  - ai-economics
   - economics
-  - pricing
   - business-model
   - openai
   - industry

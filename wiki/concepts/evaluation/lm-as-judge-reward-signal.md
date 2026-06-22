@@ -3,7 +3,12 @@ title: "LM-as-Judge for RL Reward Signals"
 type: concept
 created: 2026-06-11
 updated: 2026-06-11
-tags: [evaluation, llm-as-judge, reinforcement-learning, reward-engineering, agentic-rl, benchmark]
+tags:
+  - evaluation
+  - reinforcement-learning
+  - reward-engineering
+  - agentic-rl
+  - benchmark
 sources:
   - raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6
   - raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours

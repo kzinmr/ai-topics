@@ -4,16 +4,14 @@ created: 2026-06-21
 updated: 2026-06-21
 type: concept
 tags:
-  - ai-economics
   - economics
-  - pricing
   - business-model
   - openai
   - industry
   - ai-criticism
   - ai-skepticism
   - token-economics
-  - cost-optimization
+  - optimization
 sources:
   - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
   - raw/articles/2026-06-17_openai-leaked-financials-ai-economics.md

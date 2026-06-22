@@ -6,16 +6,13 @@ type: concept
 tags:
   - model
   - open-weight
-  - moe
   - text-generation
   - benchmark
   - deepseek
   - coding-agents
-  - long-context
-  - sparse-attention
-  - speculative-decoding
+  - context-management
+  - inference
   - china
-  - llm
 sources:
   - raw/articles/simonwillison.net--2026-jun-17-glm-52--41b7cb7d.md
   - raw/articles/2026-06-17_fireworks-ai_glm-5p2.md

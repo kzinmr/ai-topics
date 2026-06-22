@@ -6,7 +6,7 @@ updated: 2026-06-19
 tags:
   - person
   - superintelligence
-  - ai-safety
+  - agent-safety
 aliases:
   - Eric Drexler
 related:

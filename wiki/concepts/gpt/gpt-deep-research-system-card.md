@@ -3,7 +3,15 @@ title: Deep Research System Card (February 2025)
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, ai-safety, evaluations, preparedness-framework, ai-agents, deep-research, reasoning-model]
+tags:
+  - openai
+  - system-card
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - ai-agents
+  - deep-research
+  - reasoning-model
 sources: [https://deploymentsafety.openai.com/deep-research]
 ---
 

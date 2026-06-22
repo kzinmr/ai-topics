@@ -6,7 +6,6 @@ created: 2026-06-05
 updated: 2026-06-05
 tags:
   - ai-agents
-  - agent-skills
   - evaluation
   - verification
   - developer-tooling

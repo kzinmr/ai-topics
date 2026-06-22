@@ -5,7 +5,7 @@ created: 2026-06-05
 updated: 2026-06-05
 tags:
   - huggingface
-  - agent-skills
+  - ai-agents
   - coding-agents
   - developer-tooling
   - fine-tuning

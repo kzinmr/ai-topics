@@ -3,7 +3,9 @@ title: Aman Sanger
 created: 2026-06-09
 updated: 2026-06-09
 type: entity
-tags: [person, founder, cursor, coding-agents, ai-coding]
+tags:
+  - person
+  - coding-agents
 sources: [raw/articles/2026-04-12_aman-sanger-cursor-self-driving-codebases-gtc.md]
 ---
 

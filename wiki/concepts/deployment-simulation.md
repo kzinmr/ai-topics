@@ -5,9 +5,8 @@ created: 2026-06-18
 updated: 2026-06-18
 tags:
   - ai-agents
-  - agent-evaluation
   - evaluation
-  - simulation
+  - robotics
   - testing
   - benchmark
   - agent-design-patterns

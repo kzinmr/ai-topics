@@ -4,9 +4,9 @@ type: concept
 created: 2026-06-16
 updated: 2026-06-16
 tags:
-  - agent-evaluation
-  - research
-  - synthetic-data
+  - evaluation
+  - lab
+  - training
 sources:
   - https://arxiv.org/abs/2606.07462
   - raw/newsletters/2026-06-15-import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-inte.md

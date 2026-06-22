@@ -3,7 +3,14 @@ title: Reward Engineering
 type: concept
 created: 2026-06-11
 updated: 2026-06-11
-tags: [reinforcement-learning, reward-engineering, reward-hacking, evaluation, grpo, agentic-rl, agent-training]
+tags:
+  - reinforcement-learning
+  - reward-engineering
+  - reward-hacking
+  - evaluation
+  - training
+  - agentic-rl
+  - agent-training
 sources:
   - raw/articles/2025-07-03_kylecorbitt_agents-mcp-rl-lesson6
   - raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours

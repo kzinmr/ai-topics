@@ -3,7 +3,12 @@ title: "Agent Account Provisioning"
 created: 2026-06-21
 updated: 2026-06-21
 type: concept
-tags: [ai-agents, agent-infrastructure, cloudflare, sandbox, developer-tools, cli, serverless]
+tags:
+  - ai-agents
+  - company
+  - sandbox
+  - developer-tooling
+  - infrastructure
 sources:
   - raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md
 ---

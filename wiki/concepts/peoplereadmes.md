@@ -4,11 +4,10 @@ created: 2026-05-17
 updated: 2026-05-17
 type: concept
 tags:
-  - agent-skills
+  - ai-agents
   - context-engineering
   - evaluation
   - open-source
-  - ai-agents
 sources:
   - https://github.com/muratcankoylan/peoplereadmes
   - https://raw.githubusercontent.com/muratcankoylan/peoplereadmes/main/README.md

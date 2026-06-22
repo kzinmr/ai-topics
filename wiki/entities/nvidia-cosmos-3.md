@@ -3,7 +3,16 @@ title: "NVIDIA Cosmos 3"
 created: 2026-06-10
 updated: 2026-06-10
 type: entity
-tags: [product, nvidia, video-generation, world-models, physical-ai, robotics, embodied-ai, multimodal, simulation, generative-ai, model, gtc]
+tags:
+  - product
+  - nvidia
+  - video-generation
+  - world-models
+  - robotics
+  - embodied-ai
+  - multimodal
+  - model
+  - gtc
 sources:
   - raw/articles/2026-06-10_nvidia_cosmos-3-platform.md
   - https://developer.nvidia.com/blog/?tag=cosmos

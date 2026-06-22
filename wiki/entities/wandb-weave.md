@@ -2,11 +2,10 @@
 title: W&B Weave
 type: entity
 tags:
-  - llm-engineering
+  - model
   - evaluation
-  - observability
+  - infrastructure
   - trace-analysis
-  - experiment-tracking
   - tool
 created: 2026-06-15
 updated: 2026-06-15

@@ -5,7 +5,7 @@ created: 2026-06-11
 updated: 2026-06-11
 tags:
   - concept
-  - ai-coding
+  - coding-agents
   - metrics
   - software-engineering
   - ai-adoption

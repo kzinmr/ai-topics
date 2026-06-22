@@ -3,7 +3,13 @@ title: OpenAI Platform & APIs
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, platform, api, agent-sdk, infrastructure]
+tags:
+  - openai
+  - platform
+  - developer-tooling
+  - agent-sdk
+  - infrastructure
+
 ---
 
 # OpenAI Platform & APIs

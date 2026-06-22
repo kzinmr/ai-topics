@@ -3,7 +3,13 @@ title: OpenEnv
 created: 2026-06-09
 updated: 2026-06-09
 type: entity
-tags: [reinforcement-learning, post-training, environment, framework, huggingface, open-source]
+tags:
+  - reinforcement-learning
+  - training
+  - environment
+  - framework
+  - huggingface
+  - open-source
 sources:
   - https://github.com/huggingface/OpenEnv
   - https://x.com/Vtrivedy10/status/2064006338301087772

@@ -9,7 +9,16 @@ sources:
   - https://thezvi.wordpress.com/
   - https://thezvi.wordpress.com/about/
   - https://thezvi.wordpress.com/feed/
-tags: [person, blogger, ai-commentary, ai-safety, rationality, prediction, longtermism, existential-risk]
+tags:
+  - person
+  - blogger
+  - ai-commentary
+  - agent-safety
+  - rationality
+  - prediction
+  - longtermism
+  - existential-risk
+
 ---
 
 # Zvi Mowshowitz

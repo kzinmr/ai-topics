@@ -10,8 +10,8 @@ tags:
   - nvidia
   - ai-agents
   - coding-agents
-  - tool-use
-  - agent-security
+  - tool
+  - agent-safety
   - open-source
 sources:
   - "https://github.com/NVIDIA/SkillSpector"

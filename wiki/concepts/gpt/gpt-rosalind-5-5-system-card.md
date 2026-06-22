@@ -6,9 +6,9 @@ type: concept
 tags:
   - openai
   - system-card
-  - gpt
-  - ai-safety
-  - evaluations
+  - model
+  - agent-safety
+  - evaluation
   - preparedness-framework
   - biology
   - domain-specific

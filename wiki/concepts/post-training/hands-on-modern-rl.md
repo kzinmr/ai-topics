@@ -7,10 +7,9 @@ tags:
   - reinforcement-learning
   - education
   - open-source
-  - llm
-  - rlhf
-  - dpo
-  - grpo
+  - model
+  - fine-tuning
+  - training
   - rlvr
   - agentic-rl
   - multimodal-agents

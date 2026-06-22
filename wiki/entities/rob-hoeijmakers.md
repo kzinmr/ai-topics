@@ -3,7 +3,14 @@ title: Rob Hoeijmakers
 created: 2026-06-10
 updated: 2026-06-10
 type: entity
-tags: [person, ai-governance, blogger, ai-transparency, europe, consultant, ai-ethics]
+tags:
+  - person
+  - ai-governance
+  - blogger
+  - ai-transparency
+  - europe
+  - consultant
+  - ethics
 sources: [raw/articles/2025-08-05_model-cards-system-cards-hoeijmakers.md]
 ---
 

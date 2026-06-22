@@ -4,14 +4,13 @@ created: 2026-06-11
 updated: 2026-06-11
 type: concept
 tags:
-  - agent-framework
   - ai-agents
-  - python
+  - developer-tooling
   - multi-agent
   - open-source
   - apache
   - dagworks
-  - observability
+  - infrastructure
   - decision-centric
 sources:
   - raw/articles/2026-06-10_apache_burr-agent-framework.md

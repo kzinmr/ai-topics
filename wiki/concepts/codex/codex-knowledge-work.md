@@ -6,7 +6,7 @@ updated: 2026-06-03
 tags:
   - openai
   - coding-agents
-  - information-retrieval
+  - search
   - ai-agents
   - developer-tooling
   - workflow

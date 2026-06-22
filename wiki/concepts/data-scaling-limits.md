@@ -3,7 +3,14 @@ title: "Data Scaling Limits"
 created: 2026-06-21
 updated: 2026-06-21
 type: concept
-tags: [scaling-laws, synthetic-data, local-llm, benchmark, quantization, scaling, training, frontier-models]
+tags:
+  - scaling-laws
+  - training
+  - local-llm
+  - benchmark
+  - quantization
+  - optimization
+  - model
 sources:
   - raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md
   - raw/articles/lcamtuf.substack.com--p-the-100000-whys-of-ai--08b64185.md

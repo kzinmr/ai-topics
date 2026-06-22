@@ -6,7 +6,6 @@ created: 2026-06-05
 updated: 2026-06-05
 tags:
   - ai-agents
-  - agent-skills
   - personal-software
   - software-engineering
   - mcp

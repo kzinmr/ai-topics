@@ -4,7 +4,7 @@ created: 2026-06-04
 updated: 2026-06-04
 type: concept
 tags:
-  - agent-skills
+  - ai-agents
   - architecture
   - agent-design-patterns
   - developer-tooling

@@ -5,12 +5,11 @@ updated: 2026-06-18
 type: concept
 tags:
   - agent-safety
-  - ai-safety
   - alignment
-  - agent-framework
+  - ai-agents
   - anthropic
   - openai
-  - codex
+  - coding-agents
   - claude-code
   - evaluation
   - agent-platform

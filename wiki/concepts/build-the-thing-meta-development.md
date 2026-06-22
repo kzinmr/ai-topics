@@ -7,7 +7,7 @@ tags:
   - agentic-engineering
   - ai-automation
   - developer-tooling
-  - agent-infrastructure
+  - ai-agents
   - openclaw
   - coding-agents
   - feedback-loop

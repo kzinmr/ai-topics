@@ -4,12 +4,12 @@ created: 2026-06-16
 updated: 2026-06-16
 type: entity
 tags:
-  - ai-research
+  - lab
   - existential-risk
-  - ai-safety
+  - agent-safety
   - longtermism
   - ai-governance
-  - organization
+  - company
 sources:
   - raw/articles/reframing-superintelligence-fhi-2019.md
 ---

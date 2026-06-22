@@ -9,7 +9,7 @@ tags:
   - obsidian
   - claude-code
   - mcp
-  - information-retrieval
+  - search
   - x-account
 sources:
   - raw/articles/2026-05-24_cyrilxbt_obsidian-vault-organization-guide.md

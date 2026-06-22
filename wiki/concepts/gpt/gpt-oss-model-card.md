@@ -6,10 +6,10 @@ updated: 2026-06-10
 tags:
   - openai
   - model-card
-  - gpt
-  - ai-safety
+  - model
+  - agent-safety
   - open-source
-  - evaluations
+  - evaluation
   - preparedness-framework
   - open-weight
 sources:

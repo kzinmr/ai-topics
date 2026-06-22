@@ -7,7 +7,6 @@ tags:
   - person
   - bayesian
   - ai-agents
-  - agent-skills
   - data-science
   - open-source
   - sports-analytics

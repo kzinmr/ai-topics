@@ -3,7 +3,13 @@ title: "Linear Agent Code Intelligence"
 type: concept
 slug: linear-agent-code-intelligence
 status: complete
-tags: [linear, coding-agents, code-intelligence, developer-tooling, product-management, agent-skills]
+tags:
+  - linear
+  - coding-agents
+  - code-intelligence
+  - developer-tooling
+  - product-management
+  - ai-agents
 created: 2026-05-15
 updated: 2026-05-15
 aliases: [Linear Code Intelligence, Code Intelligence for Linear Agent]

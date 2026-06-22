@@ -4,8 +4,8 @@ type: entity
 created: 2026-06-20
 updated: 2026-06-20
 tags:
-  - researcher
-  - ai-safety
+  - person
+  - agent-safety
 sources:
   - [Agent Safety Separation of Duties](https://x.com/akashgupta/status/206755089184318698)
 ---

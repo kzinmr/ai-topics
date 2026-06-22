@@ -5,10 +5,8 @@ updated: 2026-06-20
 type: entity
 tags:
   - person
-  - ai-researcher
   - anthropic
-  - deepmind
-  - google-deepmind
+  - google
 sources:
   - raw/articles/2026-06-18_hn-discussion_john-jumper-anthropic.md
   - https://www.businessinsider.com/alphafold-john-jumper-leaves-google-deepmind-anthropic-demis-hassabis-nobel-2026-6

@@ -3,7 +3,11 @@ title: Fiona Fung
 type: entity
 created: 2026-06-22
 updated: 2026-06-22
-tags: [person, anthropic, coding-agents, claude, engineering-management]
+tags:
+  - person
+  - anthropic
+  - coding-agents
+  - product
 sources:
   - raw/newsletters/2026-06-21-building-the-most-ai-pilled-engineering-team-in-the-world-fiona-fung-manager-of-.md
 ---

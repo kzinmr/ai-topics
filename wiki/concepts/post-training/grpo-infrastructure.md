@@ -3,7 +3,14 @@ title: GRPO Infrastructure
 type: concept
 created: 2026-06-11
 updated: 2026-06-17
-tags: [reinforcement-learning, grpo, infrastructure, gpu, vram, lora, training, agentic-rl, vllm]
+tags:
+  - reinforcement-learning
+  - training
+  - infrastructure
+  - hardware
+  - fine-tuning
+  - agentic-rl
+  - vllm
 sources:
   - transcripts/2025-07-03_willbrown_agents-mcp-rl-lesson5-5-lecture
   - raw/articles/2025-07-03_willbrown_agents-mcp-rl-lesson5-5

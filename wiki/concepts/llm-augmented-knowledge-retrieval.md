@@ -10,7 +10,6 @@ tags:
   - mcp
   - claude-code
   - developer-tooling
-  - information-retrieval
   - context-engineering
 sources:
   - raw/articles/2026-05-24_cyrilxbt_obsidian-vault-organization-guide.md

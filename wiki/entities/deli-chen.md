@@ -3,7 +3,9 @@ title: Deli Chen
 created: 2026-06-17
 updated: 2026-06-17
 type: entity
-tags: [person, deepseek, researcher, ai-researcher]
+tags:
+  - person
+  - deepseek
 sources: [raw/articles/2026-06-17_victor207755822_auto-research-skill-open-source-self-play.md]
 ---
 

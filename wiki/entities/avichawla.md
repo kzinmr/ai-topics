@@ -6,7 +6,6 @@ type: entity
 tags:
   - entity
   - person
-  - educator
   - content-creator
   - ai-educator
   - data-science

@@ -5,11 +5,11 @@ updated: 2026-06-14
 type: entity
 tags:
   - entity
-  - developer
+  - developer-tooling
   - coding-agents
   - open-source
-  - agent-harness
-  - agent-architecture
+  - harness-engineering
+  - architecture
 sources:
   - raw/articles/2026-06-14_danmcinerny_architect-loop-fable-codex.md
   - https://github.com/DanMcInerney/architect-loop

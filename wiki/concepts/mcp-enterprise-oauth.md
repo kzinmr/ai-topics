@@ -8,7 +8,7 @@ tags:
   - protocol
   - security
   - infrastructure
-  - agent-infrastructure
+  - ai-agents
 sources:
   - raw/articles/2026-06-18_modelcontextprotocol_mcp-enterprise-managed-auth.md
   - https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/

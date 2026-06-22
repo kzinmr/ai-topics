@@ -11,9 +11,8 @@ tags:
   - on-device
   - claude-code
   - agent-sdk
-  - mixture-of-experts
   - multimodal
-  - apple-silicon
+  - hardware
   - inference
   - quantization
 sources:

@@ -1,6 +1,10 @@
 ---
 title: "Armin Ronacher"
-tags: [person, open-source, python, web-framework]
+tags:
+  - person
+  - open-source
+  - developer-tooling
+  - web-framework
 created: 2026-04-24
 updated: 2026-06-14
 type: entity

@@ -7,12 +7,11 @@ created: 2026-04-25
 updated: 2026-06-16
 tags:
   - person
-  - ai-safety
+  - agent-safety
   - existential-risk
   - ai-governance
   - philosophy
   - longtermism
-  - ai-researcher
 sources:
   - raw/articles/reframing-superintelligence-fhi-2019.md
 ---

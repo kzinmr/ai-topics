@@ -5,7 +5,7 @@ updated: 2026-06-04
 type: concept
 tags:
   - claude-code
-  - agent-skills
+  - ai-agents
   - harness-engineering
   - ai-agent-engineering
   - skill-graph

@@ -3,7 +3,11 @@ title: Microsoft AI Team
 type: entity
 created: 2026-06-22
 updated: 2026-06-22
-tags: [organization, ai, research]
+tags:
+  - company
+  - model
+  - lab
+
 ---
 # Microsoft AI Team
 

@@ -6,7 +6,6 @@ updated: 2026-06-08
 tags:
   - nlp
   - person
-  - researcher
   - education
 aliases: ["yoavg"]
 url: https://www.cs.bgu.ac.il/~yoavg/

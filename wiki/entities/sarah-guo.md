@@ -3,7 +3,11 @@ title: Sarah Guo
 created: 2026-06-10
 updated: 2026-06-11
 type: entity
-tags: [person, vc, investor, ai-investment, founder, conviction]
+tags:
+  - person
+  - company
+  - ai-investment
+  - conviction
 sources:
   - raw/articles/2026-06-10-the-untrainable-sarah-guo.md
   - raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md

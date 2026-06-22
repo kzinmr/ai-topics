@@ -8,7 +8,6 @@ status: L2
 tags:
   - person
   - ai-agents
-  - agent-skills
   - developer-tooling
   - data-science
   - evaluation

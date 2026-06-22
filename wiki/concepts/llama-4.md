@@ -3,7 +3,13 @@ title: LLaMA 4
 created: 2026-06-09
 updated: 2026-06-09
 type: concept
-tags: [model, open-source, multimodal, meta, moe, foundation-models, llama]
+tags:
+  - model
+  - open-source
+  - multimodal
+  - methodology
+  - foundation-models
+  - llama
 sources:
   - raw/articles/2026-06-09_meta-llama-4.md
 ---

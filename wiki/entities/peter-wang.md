@@ -3,7 +3,12 @@ title: Peter Wang
 created: 2026-06-12
 updated: 2026-06-12
 type: entity
-tags: [person, founder, ai-agents, vertical-agent, agent-architecture, context-engineering]
+tags:
+  - person
+  - ai-agents
+  - vertical-agent
+  - architecture
+  - context-engineering
 sources:
   - raw/articles/2026-06-11_peterwang_building-good-vertical-agent.md
 ---

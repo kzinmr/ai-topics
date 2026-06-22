@@ -7,10 +7,9 @@ tags:
   - concept
   - model
   - open-source
-  - moe
   - reasoning
   - coding-agents
-  - agentic-search
+  - search
 sources: [raw/articles/2026-06-14_tencent_hunyuan-hy3-moe.md]
 ---
 

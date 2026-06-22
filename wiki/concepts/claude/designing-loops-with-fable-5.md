@@ -7,13 +7,13 @@ tags:
   - claude-fable-5
   - loops
   - self-correction
-  - memory
+  - memory-systems
   - anthropic
-  - agent-harness
+  - harness-engineering
   - context-engineering
   - eval-loops
   - agent-loop
-  - managed-agents
+  - ai-agents
   - claude-code
 created: 2026-06-09
 updated: 2026-06-09

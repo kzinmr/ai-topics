@@ -5,9 +5,9 @@ created: 2026-06-15
 updated: 2026-06-15
 tags:
   - person
-  - ml-research
+  - lab
   - coding-agents
-  - developer-tools
+  - developer-tooling
 aliases:
   - dimillian
   - Guillaume Charpiat

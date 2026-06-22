@@ -6,7 +6,6 @@ type: person
 tags:
   - person
   - ai-agents
-  - agent-skills
   - data-science
   - bayesian
   - open-source

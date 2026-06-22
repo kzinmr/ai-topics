@@ -5,7 +5,7 @@ updated: 2026-06-10
 type: entity
 tags:
   - inference
-  - gpu
+  - hardware
   - optimization
   - fused-kernels
   - china

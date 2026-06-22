@@ -2,13 +2,11 @@
 title: Weights & Biases
 type: entity
 tags:
-  - experiment-tracking
+  - infrastructure
   - mlops
-  - ml-engineering
   - fine-tuning
   - training
   - evaluation
-  - observability
   - platform
   - company
 created: 2026-06-15

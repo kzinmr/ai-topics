@@ -8,12 +8,11 @@ tags:
   - robotics
   - embodied-ai
   - nvidia
-  - agent-framework
+  - ai-agents
   - autoresearch
   - agent-loop
   - self-improving
-  - physical-ai
-  - ml-research
+  - lab
   - research-lab
 sources:
   - raw/articles/2026-06-18_enpire-nvidia-gear.md

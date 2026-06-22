@@ -3,7 +3,15 @@ title: GPT-5.4 Thinking System Card
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, gpt, ai-safety, evaluations, preparedness-framework, frontier-models, reasoning-model, cybersecurity]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - reasoning-model
+  - security
 sources:
   - https://deploymentsafety.openai.com/gpt-5-4-thinking
 ---

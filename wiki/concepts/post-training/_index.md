@@ -1,7 +1,6 @@
 ---
 title: "Post-Training — Overview"
 tags:
-  - post-training
   - training
   - reinforcement-learning
   - fine-tuning

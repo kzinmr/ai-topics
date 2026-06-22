@@ -3,7 +3,19 @@ title: "Agent Safety Interventions"
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [agent-safety, ai-safety, safety, anthropic, activation-steering, system-card, red-teaming, peft, alignment, ai-governance, claude-fable-5, model-card, silent-intervention, prompt-modification]
+tags:
+  - agent-safety
+  - safety
+  - anthropic
+  - activation-steering
+  - system-card
+  - fine-tuning
+  - alignment
+  - ai-governance
+  - claude-fable-5
+  - model-card
+  - silent-intervention
+  - prompt-modification
 sources:
   - raw/articles/2026-06-10_simonwillison_claude-fable-silent-refusal.md
   - https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf

@@ -3,7 +3,12 @@ title: Newsjack (Agent PR Skills)
 created: 2026-06-17
 updated: 2026-06-17
 type: concept
-tags: [ai-agents, go, developer-tools, open-source, product]
+tags:
+  - ai-agents
+  - go
+  - developer-tooling
+  - open-source
+  - product
 aliases: ["newsjack", "newsjack.sh", "agent pr skills"]
 sources:
   - "https://newsjack.sh"

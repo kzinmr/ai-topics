@@ -6,7 +6,6 @@ type: entity
 tags:
   - model
   - code-model
-  - mixture-of-experts
   - open-source
   - cohere
   - agentic-engineering

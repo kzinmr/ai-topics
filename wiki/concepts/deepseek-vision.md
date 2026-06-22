@@ -10,7 +10,6 @@ tags:
   - model
   - product
   - announcement
-  - frontier-models
 sources:
   - raw/articles/2026-06-18_deepseek_vision-launch.md
   - https://chat.deepseek.com/

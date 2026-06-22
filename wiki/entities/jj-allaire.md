@@ -3,7 +3,11 @@ title: "JJ Allaire"
 created: 2026-06-15
 updated: 2026-06-15
 type: entity
-tags: [person, open-source, developer-tooling, evaluation, python, founder, entrepreneur]
+tags:
+  - person
+  - open-source
+  - developer-tooling
+  - evaluation
 sources:
   - transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework.md
   - https://en.wikipedia.org/wiki/J._J._Allaire

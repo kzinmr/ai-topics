@@ -8,7 +8,6 @@ tags:
   - lab
   - ai-agents
   - microsoft
-  - ml-research
 aliases: ["Arbor", "Microsoft Arbor"]
 status: stub
 sources:

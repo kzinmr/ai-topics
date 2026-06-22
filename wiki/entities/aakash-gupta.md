@@ -3,7 +3,11 @@ title: Aakash Gupta
 type: entity
 created: 2026-06-22
 updated: 2026-06-22
-tags: [person, ai-safety, architecture]
+tags:
+  - person
+  - agent-safety
+  - architecture
+
 ---
 # Aakash Gupta
 

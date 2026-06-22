@@ -3,7 +3,11 @@ title: "Ian Barber"
 type: entity
 created: 2026-06-21
 updated: 2026-06-21
-tags: [blogger, researcher, google, meta]
+tags:
+  - blogger
+  - person
+  - google
+  - methodology
 sources: ["raw/articles/2026-06-19_ianbarber_llms-are-complicated-now.md"]
 ---
 

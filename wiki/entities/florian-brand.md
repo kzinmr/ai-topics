@@ -13,7 +13,7 @@ tags:
   - evaluation
   - company
   - benchmark
-  - ai-safety
+  - agent-safety
 sources:
   - raw/articles/florian-brand-open-model-safety.md
 ---

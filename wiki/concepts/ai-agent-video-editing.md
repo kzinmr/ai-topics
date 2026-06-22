@@ -8,7 +8,6 @@ tags:
   - ai-agents
   - coding-agents
   - tool
-  - agent-skills
   - multimodal
 sources:
   - raw/articles/arcturus-labs.com--blog-2026-05-31-my-ai-skill-edited-this-video-that-explains---3372213b.md

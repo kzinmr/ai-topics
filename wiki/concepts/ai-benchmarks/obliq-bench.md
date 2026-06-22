@@ -7,8 +7,8 @@ status: active
 tags:
   - benchmark
   - evaluation
-  - information-retrieval
-  - retrieval
+  - search
+  - rag
   - dense-retrieval
   - late-interaction
   - query-understanding

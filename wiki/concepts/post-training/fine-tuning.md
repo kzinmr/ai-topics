@@ -3,7 +3,6 @@ title: "Fine-Tuning — When, Why, and How (Post-Training)"
 type: concept
 tags:
   - fine-tuning
-  - post-training
   - training
   - rag
   - prompting

@@ -5,10 +5,9 @@ created: 2026-06-21
 updated: 2026-06-21
 tags:
   - ai-agents
-  - agentic-rag
   - rag
-  - reliability
-  - case-study
+  - infrastructure
+  - methodology
   - text-to-sql
   - human-in-the-loop
 sources:

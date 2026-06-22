@@ -3,7 +3,12 @@ title: Model Merging
 created: 2026-06-09
 updated: 2026-06-09
 type: concept
-tags: [model-merging, evolutionary-algorithms, open-source, fine-tuning, model, deep-learning]
+tags:
+  - model-merging
+  - evolutionary-algorithms
+  - open-source
+  - fine-tuning
+  - model
 sources:
   - raw/articles/2026-06-09_model-merging-evolutionary-techniques.md
 ---

@@ -6,9 +6,7 @@ type: concept
 tags:
   - infrastructure
   - hardware
-  - gpu
   - economics
-  - ai-infrastructure
   - valuation
   - google
 sources:

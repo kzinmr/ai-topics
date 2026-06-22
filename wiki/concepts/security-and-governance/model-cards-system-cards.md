@@ -3,7 +3,17 @@ title: Model Cards and System Cards
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [model-card, system-card, ai-governance, ai-transparency, evaluation, safety, benchmark, eu-ai-act, frontier-models, ai-safety]
+tags:
+  - model-card
+  - system-card
+  - ai-governance
+  - ai-transparency
+  - evaluation
+  - safety
+  - benchmark
+  - eu-ai-act
+  - model
+  - agent-safety
 sources: [raw/articles/2025-08-05_model-cards-system-cards-hoeijmakers.md]
 ---
 

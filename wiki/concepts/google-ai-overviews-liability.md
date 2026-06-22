@@ -10,7 +10,7 @@ tags:
   - regulation
   - law
   - policy
-  - ai-safety
+  - agent-safety
   - eu-ai-act
 sources:
   - raw/articles/garymarcus.substack.com--p-breaking-google-liable-for-hallucinations--4f6caf7b.md

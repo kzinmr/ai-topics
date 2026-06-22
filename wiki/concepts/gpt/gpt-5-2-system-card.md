@@ -6,11 +6,10 @@ updated: 2026-06-10
 tags:
   - openai
   - system-card
-  - gpt
-  - ai-safety
-  - evaluations
+  - model
+  - agent-safety
+  - evaluation
   - preparedness-framework
-  - frontier-models
 sources:
   - https://deploymentsafety.openai.com/gpt-5-2
 ---

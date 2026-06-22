@@ -7,7 +7,6 @@ tags:
   - concept
   - agentic-engineering
   - ai-agents
-  - agent-skills
   - verification
   - coding-agents
   - developer-tooling

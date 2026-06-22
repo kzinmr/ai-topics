@@ -5,7 +5,7 @@ created: 2026-06-20
 updated: 2026-06-20
 tags:
   - reasoning-model
-  - scaling
+  - optimization
   - reinforcement-learning
 sources:
   - [MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)

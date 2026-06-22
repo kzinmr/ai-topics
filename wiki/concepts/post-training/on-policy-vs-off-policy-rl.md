@@ -9,7 +9,6 @@ tags:
   - training
   - on-policy
   - off-policy
-  - post-training
 aliases:
   - on-policy-learning
   - off-policy-learning

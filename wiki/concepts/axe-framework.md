@@ -5,15 +5,12 @@ updated: 2026-06-16
 type: concept
 tags:
   - ai-agents
-  - cli
-  - developer-tools
+  - developer-tooling
   - framework
   - go
-  - agent-framework
-  - agent-architecture
+  - architecture
   - agent-tooling
   - coding-agents
-  - subagents
   - security
   - open-source
   - philosophy

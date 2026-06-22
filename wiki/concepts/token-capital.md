@@ -3,7 +3,12 @@ title: Token Capital
 created: 2026-06-15
 updated: 2026-06-15
 type: concept
-tags: [concept, ai-organization, ai-adoption, enterprise-ai, platform-economics]
+tags:
+  - concept
+  - ai-organization
+  - ai-adoption
+  - company
+  - platform-economics
 aliases: [organizational-learning-loop, nadella-ai-framework, hill-climbing-machine]
 related: [[concepts/organizational-moat]], [[concepts/forward-deployed-engineering]], [[concepts/model-labs-to-agent-labs]], [[concepts/the-untrainable]], [[concepts/harness-commoditization]], [[entities/satya-nadella]]
 sources:

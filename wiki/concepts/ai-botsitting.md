@@ -3,7 +3,14 @@ title: "AI Botsitting"
 created: 2026-06-13
 updated: 2026-06-13
 type: concept
-tags: [labor, ai-adoption, productivity, human-agent-collaboration, economics, automation, reliability]
+tags:
+  - labor
+  - ai-adoption
+  - developer-tooling
+  - human-agent-collaboration
+  - economics
+  - automation
+  - infrastructure
 sources: [raw/articles/2026-06-11_businessinsider-ai-botsitting.md]
 ---
 

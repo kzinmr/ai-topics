@@ -6,8 +6,8 @@ updated: 2026-06-17
 tags:
   - person
   - openai
-  - codex
-  - startup
+  - coding-agents
+  - company
   - ai-organization
 sources:
   - raw/articles/openai-reflections.md

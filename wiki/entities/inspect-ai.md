@@ -3,7 +3,16 @@ title: "Inspect AI"
 created: 2026-06-15
 updated: 2026-06-15
 type: entity
-tags: [product, framework, open-source, evaluation, evals, llm-as-judge, agent-evaluation, agent-framework, sandbox, python, ai-safety, mcp]
+tags:
+  - product
+  - framework
+  - open-source
+  - evaluation
+  - ai-agents
+  - sandbox
+  - developer-tooling
+  - agent-safety
+  - mcp
 sources:
   - transcripts/2024-01-14_jjallaire_inspect-ai-eval-framework.md
   - https://github.com/UKGovernmentBEIS/inspect_ai

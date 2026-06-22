@@ -11,7 +11,7 @@ tags:
   - open-source
   - developer-tooling
   - ai-agents
-  - agent-security
+  - agent-safety
 sources:
   - https://github.com/earendil-works/pi
   - https://pi.dev

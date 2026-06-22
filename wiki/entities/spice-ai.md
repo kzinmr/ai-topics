@@ -11,7 +11,7 @@ tags:
   - verification
   - agentic-engineering
   - open-source
-  - sql
+  - database
   - search
   - llm-inference
   - data-platform

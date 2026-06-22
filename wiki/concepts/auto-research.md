@@ -3,7 +3,14 @@ title: AutoResearch
 created: 2026-06-17
 updated: 2026-06-17
 type: concept
-tags: [autoresearch, ai-agents, reinforcement-learning, self-play, continual-learning, open-source, deepseek]
+tags:
+  - autoresearch
+  - ai-agents
+  - reinforcement-learning
+  - self-play
+  - training
+  - open-source
+  - deepseek
 sources: [raw/articles/2026-06-17_victor207755822_auto-research-skill-open-source-self-play.md]
 ---
 

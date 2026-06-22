@@ -9,7 +9,7 @@ tags:
   - governance
   - ai-governance
   - anthropic
-  - ai-safety
+  - agent-safety
   - controversy
 sources:
   - raw/articles/2026-06-17_anthropic_trump-administration-political-pressure.md

@@ -5,11 +5,10 @@ created: 2026-06-17
 updated: 2026-06-17
 tags:
   - openai
-  - api
+  - developer-tooling
   - voice-ai
   - webrtc
   - audio-generation
-  - developer-tools
 sources:
   - raw/articles/2026-06-14_simonwillison_openai-webrtc-playground.md
 aliases: ["OpenAI WebRTC Playground", "WebRTC Audio Session"]

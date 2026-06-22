@@ -3,7 +3,14 @@ title: "AgentsView"
 created: 2026-06-10
 updated: 2026-06-10
 type: entity
-tags: [product, agent-observability, observability, monitoring, pricing, cost, llm, tool, agent-platform, token-economics]
+tags:
+  - product
+  - infrastructure
+  - economics
+  - model
+  - tool
+  - agent-platform
+  - token-economics
 sources:
   - raw/articles/2026-06-09_simonwillison_agentsview-custom-pricing.md
   - https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/

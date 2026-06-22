@@ -3,7 +3,14 @@ title: Anthropic System Cards
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [anthropic, ai-safety, evaluations, alignment, transparency, model, frontier-models, ai-governance]
+tags:
+  - anthropic
+  - agent-safety
+  - evaluation
+  - alignment
+  - transparency
+  - model
+  - ai-governance
 sources: [raw/papers/2026-02-claude-opus-4.6-system-card.pdf, raw/papers/2026-04-claude-opus-4.7-system-card.pdf, raw/papers/2026-05-claude-opus-4.8-system-card.pdf]
 ---
 

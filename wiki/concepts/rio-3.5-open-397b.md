@@ -6,12 +6,9 @@ type: concept
 tags:
   - model
   - open-source
-  - moe
-  - mixture-of-experts
   - reasoning
   - multimodal
-  - frontier-models
-  - post-training
+  - training
   - inference
   - qwen
 sources:

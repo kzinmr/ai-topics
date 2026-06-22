@@ -6,10 +6,10 @@ updated: 2026-06-11
 tags:
   - concept
   - scaling-laws
-  - research
+  - lab
   - training
   - datasets
-  - bitter-lesson
+  - methodology
   - stanford
   - scaling-hypothesis
 sources:

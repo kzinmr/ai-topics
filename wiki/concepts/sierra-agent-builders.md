@@ -6,11 +6,9 @@ type: entity
 tags:
   - entity
   - ai-agents
-  - customer-experience
-  - agent-builder
-  - saas
-  - agent-architecture
-  - no-code
+  - product
+  - architecture
+  - developer-tooling
   - agent-native
 sources:
   - https://sierra.ai/blog/how-customer-teams-became-software-builders

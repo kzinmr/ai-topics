@@ -3,7 +3,15 @@ title: "o3 and o4-mini System Card (April 2025)"
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, reasoning-model, ai-safety, evaluations, preparedness-framework, frontier-models, gpt, deliberative-alignment, red-teaming]
+tags:
+  - openai
+  - system-card
+  - reasoning-model
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - model
+  - deliberative-alignment
 sources: [raw/papers/2025-04-16_openai-o3-o4-mini-system-card.pdf]
 ---
 

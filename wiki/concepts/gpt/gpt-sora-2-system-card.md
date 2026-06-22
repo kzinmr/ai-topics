@@ -6,10 +6,9 @@ type: concept
 tags:
   - openai
   - system-card
-  - gpt
-  - ai-safety
+  - model
+  - agent-safety
   - video-generation
-  - frontier-models
 sources:
   - url: https://deploymentsafety.openai.com/sora-2
     title: "Sora 2 System Card — OpenAI Deployment Safety Hub"

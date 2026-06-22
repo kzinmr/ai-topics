@@ -4,7 +4,7 @@ created: 2026-06-17
 updated: 2026-06-17
 type: concept
 tags:
-  - agent-framework
+  - ai-agents
   - multi-agent
   - orchestration
   - microsoft
@@ -12,7 +12,7 @@ tags:
   - agent-sdk
   - agent-communication
   - event-driven-architecture
-  - distributed-systems
+  - architecture
 aliases:
   - AutoGen
   - AG2

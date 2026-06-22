@@ -5,15 +5,15 @@ updated: 2026-06-14
 type: concept
 tags:
   - coding-agents
-  - agent-harness
+  - harness-engineering
   - agent-loop
   - prompting
-  - tool-use
-  - cost-optimization
+  - tool
+  - optimization
   - multi-agent
-  - agent-orchestration
+  - orchestration
   - vendor-lock-in
-  - agent-architecture
+  - architecture
 sources:
   - raw/articles/2026-06-14_danmcinerny_architect-loop-fable-codex.md
   - https://github.com/DanMcInerney/architect-loop

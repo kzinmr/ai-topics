@@ -2,7 +2,7 @@
 title: Thomas Capelle
 type: entity
 tags:
-  - experiment-tracking
+  - infrastructure
   - fine-tuning
   - training
   - open-source

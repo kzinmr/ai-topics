@@ -6,14 +6,13 @@ type: concept
 tags:
   - concept
   - ai-agents
-  - agent-architecture
-  - authentication
+  - architecture
+  - security
   - protocol
-  - workos
+  - company
   - mcp
   - agent-native
   - agent-identity
-  - security
 sources:
   - https://workos.com/auth-md
   - https://daringfireball.net/2026/06/workos_launches_auth-md_an_open_protocol_for_agent_registration

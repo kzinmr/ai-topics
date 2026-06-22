@@ -4,7 +4,7 @@ type: entity
 created: 2026-06-21
 updated: 2026-06-21
 tags:
-  - author
+  - person
   - consultant
   - software-engineering
   - thoughtworks

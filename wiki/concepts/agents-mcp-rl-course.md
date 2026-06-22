@@ -9,11 +9,11 @@ tags:
   - mcp
   - ai-agent-engineering
   - education
-  - grpo
+  - training
   - agentic-rl
   - evaluation
   - context-engineering
-  - tool-calling
+  - tool
   - reward-engineering
 sources:
   - raw/articles/2026-06-10_maven_agents-mcp-rl-course-overview.md

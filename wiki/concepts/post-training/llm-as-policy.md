@@ -7,11 +7,10 @@ tags:
   - concept
   - reinforcement-learning
   - training
-  - post-training
   - alignment
   - reasoning
   - inference
-  - information-theory
+  - methodology
 aliases:
   - llm-as-policy
   - policy-language-model

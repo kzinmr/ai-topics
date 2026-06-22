@@ -11,7 +11,6 @@ tags:
   - local-llm
   - inference
   - model-card
-  - gemma
 aliases: ["Gemma", "Google Gemma", "open Gemma"]
 sources:
   - raw/articles/2026-06-10_deepmind-model-cards-page.md

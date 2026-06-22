@@ -8,12 +8,12 @@ tags:
   - qwen
   - open-source
   - coding-agents
-  - claude
+  - anthropic
   - benchmark
   - inference
-  - cost-optimization
+  - optimization
   - on-device
-  - gpu
+  - hardware
   - quantization
   - vendor-lock-in
   - privacy

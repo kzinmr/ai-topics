@@ -4,7 +4,7 @@ type: entity
 created: 2026-06-17
 updated: 2026-06-17
 tags:
-  - researcher
+  - person
   - software-engineering
   - openpipe
 sources:

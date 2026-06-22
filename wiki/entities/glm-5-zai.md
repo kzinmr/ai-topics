@@ -4,6 +4,12 @@ type: entity
 created: 2026-04-10
 updated: 2026-06-20
 tags:
+  - entity
+  - model
+  - open-weight
+  - benchmark
+  - context-management
+  - inference
 - entity
 - model
 - open-weight

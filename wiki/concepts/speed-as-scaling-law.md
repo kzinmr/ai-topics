@@ -6,8 +6,8 @@ type: concept
 tags:
   - inference
   - scaling-laws
-  - real-time
-  - gpu
+  - infrastructure
+  - hardware
   - fused-kernels
   - test-time-scaling
 sources:

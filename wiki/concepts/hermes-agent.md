@@ -7,7 +7,6 @@ tags:
   - ai-agents
   - nous-research
   - self-improving
-  - agent-skills
   - memory-systems
   - architecture
   - harness-engineering

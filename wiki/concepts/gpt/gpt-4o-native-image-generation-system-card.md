@@ -3,7 +3,12 @@ title: "GPT-4o Native Image Generation System Card Addendum"
 type: concept
 created: 2026-06-10
 updated: 2026-06-10
-tags: [openai, system-card, gpt, ai-safety, image-generation, frontier-models]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - image-generation
 sources:
   - https://deploymentsafety.openai.com/4o-native-image-generation
 related:

@@ -9,7 +9,7 @@ tags:
   - education
   - ai-governance
   - europe
-  - ai-safety
+  - agent-safety
 sources:
   - raw/articles/2026-06-19_hn-discussion_norway-ai-school-ban.md
 ---

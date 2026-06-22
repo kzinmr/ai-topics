@@ -6,7 +6,6 @@ created: 2026-06-05
 updated: 2026-06-05
 status: L2
 tags:
-  - agent-skills
   - ai-agents
   - framework
   - harness-engineering

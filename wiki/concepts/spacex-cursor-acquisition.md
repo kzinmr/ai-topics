@@ -4,14 +4,11 @@ created: 2026-06-20
 updated: 2026-06-20
 type: concept
 tags:
-  - acquisition
+  - company
   - coding-agents
-  - cursor
-  - spacex
   - anysphere
-  - ai-economics
+  - economics
   - valuation
-  - startup
 sources:
   - raw/articles/2026-06-16_hn-discussion_spacex-cursor-acquisition.md
   - https://www.cnbc.com/2026/06/16/-spacex-to-buy-cursor-ai-parent-anysphere-for-60-billion.html

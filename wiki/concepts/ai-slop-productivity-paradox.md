@@ -5,7 +5,7 @@ updated: 2026-06-08
 type: concept
 tags:
   - ai-slop
-  - productivity
+  - developer-tooling
   - content-quality
   - economics
   - ai-skepticism

@@ -4,7 +4,7 @@ type: concept
 created: 2026-06-16
 updated: 2026-06-16
 tags:
-  - ml-research
+  - lab
   - career
   - methodology
   - reinforcement-learning

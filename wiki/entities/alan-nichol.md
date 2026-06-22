@@ -6,7 +6,6 @@ updated: 2026-05-29
 tags:
   - person
   - ai-agents
-  - agent-skills
   - conversational-ai
   - open-source
   - company

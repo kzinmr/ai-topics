@@ -7,8 +7,7 @@ tags:
   - reinforcement-learning
   - training
   - alignment
-  - rlhf
-  - grpo
+  - fine-tuning
   - importance-sampling
   - optimization
 sources:

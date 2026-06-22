@@ -4,9 +4,8 @@ created: 2026-05-15
 updated: 2026-05-26
 type: concept
 tags:
-  - agent-skills
-  - skill-graph
   - ai-agents
+  - skill-graph
   - harness-engineering
   - context-engineering
   - developer-tooling

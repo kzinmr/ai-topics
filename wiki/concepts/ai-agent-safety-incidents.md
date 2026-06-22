@@ -7,12 +7,9 @@ tags:
   - ai-agents
   - security
   - safety
-  - incidents
   - sandbox
-  - agent-architecture
-  - linux
-  - risk-management
-  - autonomous-systems
+  - architecture
+  - developer-tooling
 sources:
   - "https://lwn.net/Articles/1077035/"
   - "https://lwn.net/Articles/ (general security coverage)"

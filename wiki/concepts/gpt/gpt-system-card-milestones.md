@@ -3,7 +3,15 @@ title: OpenAI System Cards — Key Milestones Timeline
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, ai-safety, timeline, preparedness-framework, frontier-models, ai-governance, evaluations]
+tags:
+  - openai
+  - system-card
+  - agent-safety
+  - timeline
+  - preparedness-framework
+  - model
+  - ai-governance
+  - evaluation
 sources:
   - https://deploymentsafety.openai.com/
   - concepts/gpt/gpt-deployment-safety-hub

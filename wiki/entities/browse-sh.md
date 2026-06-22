@@ -6,7 +6,7 @@ updated: 2026-05-22
 tags:
   - developer-tooling
   - browser-agent
-  - agent-skills
+  - ai-agents
   - open-source
   - infrastructure
 aliases:

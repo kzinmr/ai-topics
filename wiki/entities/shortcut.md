@@ -3,7 +3,13 @@ title: Shortcut (AI Spreadsheet Agent)
 created: 2026-06-12
 updated: 2026-06-12
 type: entity
-tags: [product, vertical-agent, ai-agents, agent-architecture, context-engineering, domain-specific]
+tags:
+  - product
+  - vertical-agent
+  - ai-agents
+  - architecture
+  - context-engineering
+  - domain-specific
 sources:
   - raw/articles/2026-06-11_peterwang_building-good-vertical-agent.md
 ---

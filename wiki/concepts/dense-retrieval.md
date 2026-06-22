@@ -5,8 +5,8 @@ created: 2026-06-10
 updated: 2026-06-10
 tags:
   - concept
-  - information-retrieval
-  - embeddings
+  - search
+  - model
 sources:
   - wiki/concepts/semantic-ids
 ---

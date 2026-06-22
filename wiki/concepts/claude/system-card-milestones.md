@@ -3,7 +3,16 @@ title: Anthropic System Cards — Key Milestones Timeline
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [anthropic, system-card, ai-safety, timeline, responsible-scaling-policy, frontier-models, ai-governance, evaluations, alignment]
+tags:
+  - anthropic
+  - system-card
+  - agent-safety
+  - timeline
+  - responsible-scaling-policy
+  - model
+  - ai-governance
+  - evaluation
+  - alignment
 sources:
   - concepts/claude/system-cards
   - entities/claude-code--history

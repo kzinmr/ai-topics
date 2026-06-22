@@ -5,9 +5,8 @@ created: 2026-06-09
 updated: 2026-06-11
 tags:
   - concept
-  - llm
+  - model
   - coding-agents
-  - ai-coding
   - software-engineering
 sources:
   - raw/articles/entropicthoughts.com--llms-and-almost-good-code--38c3d31a.md

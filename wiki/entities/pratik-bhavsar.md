@@ -11,7 +11,7 @@ tags:
   - rag
   - coding-agents
   - claude-code
-  - agent-skills
+  - ai-agents
   - training
 sources:
   - raw/articles/2026-05-19_galileo_eval-engineer-for-claude-codex.md

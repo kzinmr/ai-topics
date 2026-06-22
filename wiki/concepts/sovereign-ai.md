@@ -6,7 +6,7 @@ type: "concept"
 tags:
   - geopolitics
   - model
-  - enterprise-ai
+  - company
   - infrastructure
   - eu-ai-act
   - regulation

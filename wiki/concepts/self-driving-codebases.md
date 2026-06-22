@@ -3,7 +3,14 @@ title: Self-Driving Codebases
 created: 2026-06-09
 updated: 2026-06-09
 type: concept
-tags: [coding-agents, self-driving-codebases, agentic-engineering, async-agents, multi-agent, autonomous-agents, self-healing]
+tags:
+  - coding-agents
+  - self-driving-codebases
+  - agentic-engineering
+  - async-agents
+  - multi-agent
+  - ai-agents
+  - self-healing
 sources: [raw/articles/2026-04-12_aman-sanger-cursor-self-driving-codebases-gtc.md]
 ---
 

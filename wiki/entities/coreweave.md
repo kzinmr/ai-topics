@@ -3,10 +3,8 @@ title: CoreWeave
 type: entity
 tags:
   - company
-  - gpu
-  - cloud
-  - ai-infrastructure
-  - ml-infrastructure
+  - hardware
+  - infrastructure
 created: 2026-06-15
 updated: 2026-06-15
 sources:

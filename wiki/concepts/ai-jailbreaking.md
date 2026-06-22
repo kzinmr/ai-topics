@@ -4,13 +4,10 @@ created: 2026-06-13
 updated: 2026-06-13
 type: concept
 tags:
-  - adversarial
-  - red-teaming
-  - ai-safety
+  - agent-safety
   - safety
-  - prompt-injection
   - security
-  - llm
+  - model
   - alignment
 sources:
   - raw/articles/minimaxir.com--2025-10-claude-haiku-jailbreak--f0c61834.md

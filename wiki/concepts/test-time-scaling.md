@@ -16,7 +16,7 @@ tags:
   - optimization
   - training
   - rlvr
-  - ai-safety
+  - agent-safety
   - benchmark-framing
 sources:
   - https://arxiv.org/abs/2408.03314

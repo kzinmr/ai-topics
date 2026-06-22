@@ -10,9 +10,7 @@ tags:
   - meta-harness
   - prompting
   - optimization
-  - continual-learning
-  - distillation
-  - scaling
+  - training
 aliases:
   - "text-layer optimization"
   - "text-space learning"

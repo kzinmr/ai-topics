@@ -8,7 +8,6 @@ tags:
   - text-generation
   - anthropic
   - economics
-  - frontier-models
   - agent-safety
   - prompt-caching
   - agentic-engineering

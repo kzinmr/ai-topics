@@ -9,8 +9,7 @@ tags:
   - taxonomy
   - reinforcement-learning
   - robotics
-  - simulation
-  - generative-ai
+  - model
 sources:
   - raw/articles/2026-06-03_fei-fei-li_x_article_world-model-taxonomy.md
   - https://x.com/drfeifei/status/2062247238143996275

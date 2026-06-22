@@ -5,10 +5,9 @@ created: 2026-06-09
 updated: 2026-06-22
 tags:
   - comparison
-  - pricing
+  - economics
   - model
   - token-economics
-  - frontier-models
   - openai
   - anthropic
   - google

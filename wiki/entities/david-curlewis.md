@@ -2,7 +2,7 @@
 title: "David Curlewis — AI Engineering Metrics Critic, Author of 'Lines of Code Got a Better Publicist'"
 tags:
   - person
-  - ai-coding
+  - coding-agents
   - metrics
 created: 2026-06-11
 updated: 2026-06-11

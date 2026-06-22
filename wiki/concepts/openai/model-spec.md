@@ -3,7 +3,16 @@ title: "OpenAI Model Spec"
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, alignment, ai-safety, ai-governance, system-prompt, chain-of-command, model-card, system-card, transparency]
+tags:
+  - openai
+  - alignment
+  - agent-safety
+  - ai-governance
+  - prompting
+  - chain-of-command
+  - model-card
+  - system-card
+  - transparency
 sources:
   - raw/articles/2025-12-18_openai-model-spec.md
   - raw/articles/2026-01-27_boaz-barak_claude-constitution.md

@@ -5,7 +5,6 @@ created: 2026-06-17
 updated: 2026-06-17
 tags:
   - openai
-  - chatgpt
   - memory-systems
   - ai-agents
   - personal-ai

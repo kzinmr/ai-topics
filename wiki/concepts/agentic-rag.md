@@ -8,7 +8,6 @@ tags:
   - rag
   - model
   - inference
-  - agentic-rag
 aliases: ["agentic-retrieval", "agentic-RAG"]
 sources:
  - path: raw/articles/crawl-2026-04-21-agentic-alternative-graphrag.md

@@ -3,7 +3,16 @@ title: Context as Memory Hierarchy (L1/L2/L3)
 created: 2026-06-12
 updated: 2026-06-12
 type: concept
-tags: [context-engineering, context-management, agent-architecture, agent-harness, ai-agents, vertical-agent, prompt-caching, token-economics, design-patterns]
+tags:
+  - context-engineering
+  - context-management
+  - architecture
+  - harness-engineering
+  - ai-agents
+  - vertical-agent
+  - prompt-caching
+  - token-economics
+  - methodology
 sources:
   - raw/articles/2026-06-11_peterwang_building-good-vertical-agent.md
 ---

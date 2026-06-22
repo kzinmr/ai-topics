@@ -3,7 +3,15 @@ title: GPT-5 System Card (August 2025)
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, gpt, ai-safety, evaluations, preparedness-framework, frontier-models, safe-completions, reasoning-model]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - safe-completions
+  - reasoning-model
 sources: [https://deploymentsafety.openai.com/gpt-5]
 ---
 

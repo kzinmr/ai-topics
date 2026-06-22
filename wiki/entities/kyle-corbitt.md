@@ -7,8 +7,6 @@ tags:
   - person
   - reinforcement-learning
   - ai-agents
-  - entrepreneur
-  - founder
 sources:
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - https://openpipe.ai/

@@ -9,7 +9,6 @@ tags:
   - prompting
   - optimization
   - self-improving
-  - agent-skills
   - ai-agents
   - nous-research
   - evaluation

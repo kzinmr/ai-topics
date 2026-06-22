@@ -4,11 +4,11 @@ type: entity
 created: 2026-06-16
 updated: 2026-06-16
 tags:
-  - organization
-  - ai-safety
+  - company
+  - agent-safety
   - alignment
   - nonprofit
-  - research
+  - lab
 sources:
   - raw/newsletters/2026-06-15-import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-inte.md
   - https://open.substack.com/pub/importai/p/import-ai-461-alignment-is-not-on

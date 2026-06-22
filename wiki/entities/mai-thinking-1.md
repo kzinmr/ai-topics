@@ -5,12 +5,10 @@ created: 2026-06-21
 updated: 2026-06-21
 tags:
   - microsoft
-  - moe
+  - model
   - reasoning-model
-  - grpo
-  - scaling
   - training
-  - post-training
+  - optimization
 related:
   - [[entities/microsoft]]
 sources:

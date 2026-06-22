@@ -3,7 +3,16 @@ title: OpenAI System Cards (Deployment Safety Hub)
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, ai-safety, evaluations, preparedness-framework, frontier-models, ai-governance, gpt, model-card, transparency]
+tags:
+  - openai
+  - system-card
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - model
+  - ai-governance
+  - model-card
+  - transparency
 sources: [raw/articles/2026-06-10_openai-deployment-safety-hub.md]
 ---
 

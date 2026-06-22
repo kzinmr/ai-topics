@@ -9,9 +9,8 @@ tags:
   - coding-agents
   - company
   - ai-organization
-  - codex
   - product
-  - ai-infrastructure
+  - infrastructure
 sources:
   - raw/articles/openai-reflections.md
 aliases: ["Reflections on OpenAI", "OpenAI Culture"]

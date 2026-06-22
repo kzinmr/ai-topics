@@ -3,7 +3,13 @@ title: Open-Source AI Strategy
 created: 2026-04-26
 updated: 2026-06-21
 type: concept
-tags: [open-source, model, digital-sovereignty, ai-governance, ai-ethics, education]
+tags:
+  - open-source
+  - model
+  - digital-sovereignty
+  - ai-governance
+  - ethics
+  - education
 sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md, raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md, raw/articles/2026-06-19_hn-discussion_norway-ai-school-ban.md]
 ---
 

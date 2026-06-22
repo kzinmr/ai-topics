@@ -3,7 +3,17 @@ title: "Kimi K2.7-Code"
 created: 2026-06-13
 updated: 2026-06-18
 type: concept
-tags: [kimi, moonshot, code-model, coding-agents, reasoning, token-economics, open-source, model, open-weight, mixture-of-experts, moe, inference]
+tags:
+  - kimi
+  - moonshot
+  - code-model
+  - coding-agents
+  - reasoning
+  - token-economics
+  - open-source
+  - model
+  - open-weight
+  - inference
 sources: [raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code.md, raw/articles/together.ai--blog-kimi-k2-7-code-vs-claude-fable-5--42700c0e.md]
 ---
 

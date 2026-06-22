@@ -3,7 +3,15 @@ title: Claude Sonnet 4.6 vs Opus 4.6 — System Card Comparison
 created: 2026-06-10
 updated: 2026-06-10
 type: comparison
-tags: [anthropic, ai-safety, evaluations, alignment, model, frontier-models, comparison, benchmark, coding-agents]
+tags:
+  - anthropic
+  - agent-safety
+  - evaluation
+  - alignment
+  - model
+  - comparison
+  - benchmark
+  - coding-agents
 sources: [raw/papers/2026-02-claude-sonnet-4.6-system-card.pdf, raw/papers/2026-02-claude-opus-4.6-system-card.pdf]
 ---
 

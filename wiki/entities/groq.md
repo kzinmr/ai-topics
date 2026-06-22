@@ -3,7 +3,13 @@ title: Groq
 created: 2026-06-17
 updated: 2026-06-17
 type: entity
-tags: [hardware, llm-inference, inference, company, startup, lpu, asic]
+tags:
+  - hardware
+  - llm-inference
+  - inference
+  - company
+  - lpu
+  - asic
 aliases: [Groq Inc., Groq LPU]
 sources: [https://groq.com/]
 ---

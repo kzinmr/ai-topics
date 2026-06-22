@@ -3,7 +3,12 @@ title: 'MoE Train-Inference Mismatch'
 type: concept
 created: 2026-06-12
 updated: 2026-06-12
-tags: [mixture-of-experts, training, inference, optimization, deepseek, distributed-training]
+tags:
+  - model
+  - training
+  - inference
+  - optimization
+  - deepseek
 sources:
   - url: https://x.com/sheriyuo/status/2063295181131247674
     title: 'RL Interview Questions 2026 — Q11'

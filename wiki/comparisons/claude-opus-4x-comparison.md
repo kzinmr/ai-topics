@@ -3,7 +3,15 @@ title: Claude Opus 4.6 vs 4.7 vs 4.8 System Card Comparison
 created: 2026-06-10
 updated: 2026-06-10
 type: comparison
-tags: [anthropic, ai-safety, evaluations, alignment, model, frontier-models, comparison, claude-code, benchmark]
+tags:
+  - anthropic
+  - agent-safety
+  - evaluation
+  - alignment
+  - model
+  - comparison
+  - claude-code
+  - benchmark
 sources: [raw/papers/2026-02-claude-opus-4.6-system-card.pdf, raw/papers/2026-04-claude-opus-4.7-system-card.pdf, raw/papers/2026-05-claude-opus-4.8-system-card.pdf]
 ---
 

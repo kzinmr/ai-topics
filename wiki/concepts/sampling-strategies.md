@@ -8,8 +8,7 @@ updated: 2026-06-22
 tags:
   - concept
   - inference
-  - llm-reliability
-  - reproducibility
+  - evaluation
 sources:
   - raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md
 ---

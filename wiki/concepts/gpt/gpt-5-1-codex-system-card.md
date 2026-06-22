@@ -3,7 +3,14 @@ title: "GPT-5.1-Codex System Card"
 type: concept
 created: 2026-06-10
 updated: 2026-06-10
-tags: [openai, system-card, gpt, ai-safety, evaluations, preparedness-framework, coding-agents]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - coding-agents
 sources:
   - https://deploymentsafety.openai.com/gpt-5-1-codex
 related:

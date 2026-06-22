@@ -3,7 +3,12 @@ title: 'RL Scaling Boundaries'
 type: concept
 created: 2026-06-12
 updated: 2026-06-12
-tags: [reinforcement-learning, scaling, scaling-laws, rlvr, training]
+tags:
+  - reinforcement-learning
+  - optimization
+  - scaling-laws
+  - rlvr
+  - training
 sources:
   - url: https://x.com/sheriyuo/status/2063295181131247674
     title: 'RL Interview Questions 2026 — Q15, Q16'

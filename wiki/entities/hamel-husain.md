@@ -3,7 +3,6 @@ title: "Hamel Husain"
 tags:
   - person
   - ai-agents
-  - agent-skills
   - agent-safety
   - evaluation
   - harness-engineering

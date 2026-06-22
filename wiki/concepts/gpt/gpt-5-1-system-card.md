@@ -3,7 +3,13 @@ title: "GPT-5.1 Instant & GPT-5.1 Thinking System Card"
 type: concept
 created: 2026-06-10
 updated: 2026-06-10
-tags: [openai, system-card, gpt, ai-safety, evaluations, preparedness-framework, frontier-models]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - evaluation
+  - preparedness-framework
 sources:
   - https://deploymentsafety.openai.com/gpt-5-1
 related:

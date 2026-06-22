@@ -5,9 +5,8 @@ created: 2026-06-18
 updated: 2026-06-18
 tags:
   - ai-agents
-  - agent-evaluation
-  - simulation
   - evaluation
+  - robotics
   - comparison
 sources:
   - raw/articles/2026-06-11_openai_deployment-simulation.md

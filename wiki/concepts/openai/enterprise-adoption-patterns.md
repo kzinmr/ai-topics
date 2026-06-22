@@ -6,7 +6,7 @@ updated: 2026-06-17
 tags:
   - openai
   - anthropic
-  - enterprise-ai
+  - company
   - strategy
   - ai-adoption
   - business-model

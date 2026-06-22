@@ -3,7 +3,16 @@ title: "Command Center (cc.dev)"
 created: 2026-06-10
 updated: 2026-06-10
 type: entity
-tags: [product, coding-agents, ai-coding, agent-native, developer-tooling, sandbox, environment, agent-platform, multi-agent, multi-llm]
+tags:
+  - product
+  - coding-agents
+  - agent-native
+  - developer-tooling
+  - sandbox
+  - environment
+  - agent-platform
+  - multi-agent
+  - multi-llm
 sources:
   - raw/articles/2026-06-08_ccdev_command-center-ai-coding-env.md
   - https://www.cc.dev/

@@ -5,10 +5,10 @@ created: 2026-06-09
 updated: 2026-06-20
 tags:
   - concept
-  - llm
+  - model
   - scaling-laws
   - training
-  - ai-research
+  - lab
 sources:
   - raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md
   - raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md

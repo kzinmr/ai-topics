@@ -3,7 +3,15 @@ title: Anthropic Transparency Hub
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [anthropic, ai-safety, transparency, ai-governance, alignment, evaluations, policy, trust]
+tags:
+  - anthropic
+  - agent-safety
+  - transparency
+  - ai-governance
+  - alignment
+  - evaluation
+  - policy
+  - trust
 sources: [raw/articles/anthropic-transparency-hub-2026.html]
 ---
 

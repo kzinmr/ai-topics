@@ -7,8 +7,8 @@ tags:
   - openai
   - philanthropy
   - biotech
-  - ai-safety
-  - research
+  - agent-safety
+  - lab
   - ai-adoption
 sources:
   - raw/articles/2026-04-08_openaifoundation_ai-for-alzheimers.md

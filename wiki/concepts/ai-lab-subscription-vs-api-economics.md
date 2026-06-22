@@ -6,7 +6,6 @@ updated: 2026-06-11
 tags:
   - economics
   - business-model
-  - pricing
   - inference
   - token-economics
   - platform-economics

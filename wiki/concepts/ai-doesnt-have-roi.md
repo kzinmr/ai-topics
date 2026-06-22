@@ -4,10 +4,10 @@ type: concept
 created: 2026-06-15
 updated: 2026-06-15
 tags:
-  - ai-economics
+  - economics
   - roi
   - ai-cost
-  - enterprise-ai
+  - company
   - ai-adoption
   - token-billing
 aliases:

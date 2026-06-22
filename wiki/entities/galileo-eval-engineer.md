@@ -7,7 +7,7 @@ tags:
   - evaluation
   - coding-agents
   - claude-code
-  - agent-skills
+  - ai-agents
   - infrastructure
   - developer-tooling
 sources:

@@ -3,7 +3,14 @@ title: GPT-4o System Card (May 2024)
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, gpt, ai-safety, evaluations, preparedness-framework, multimodal, frontier-models]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - multimodal
 sources: [https://openai.com/index/gpt-4o-system-card/]
 ---
 

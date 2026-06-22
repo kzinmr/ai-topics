@@ -7,7 +7,6 @@ tags:
   - concept
   - search
   - agentic-retrieval
-  - information-retrieval
   - performance-engineering
 aliases:
   - slow-search

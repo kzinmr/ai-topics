@@ -7,7 +7,7 @@ tags:
   - concept
   - philosophy
   - memetics
-  - information-retrieval
+  - search
 aliases:
   - representation-collapse-moc
   - baudrillard-moc

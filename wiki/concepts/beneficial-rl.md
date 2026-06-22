@@ -3,7 +3,15 @@ title: "Beneficial RL — Emergent Alignment via Trait-Based Reinforcement Learn
 created: 2026-06-20
 updated: 2026-06-20
 type: concept
-tags: [alignment, reinforcement-learning, ai-safety, openai, model, post-training, rlhf, evaluation, evals, adversarial]
+tags:
+  - alignment
+  - reinforcement-learning
+  - agent-safety
+  - openai
+  - model
+  - training
+  - fine-tuning
+  - evaluation
 sources: [raw/articles/2026-06-18_openai-alignment_openai-beneficial-rl.md]
 ---
 

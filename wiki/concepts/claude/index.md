@@ -3,7 +3,12 @@ title: Claude Models
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [anthropic, model, frontier-models, ai-safety, alignment, evaluations]
+tags:
+  - anthropic
+  - model
+  - agent-safety
+  - alignment
+  - evaluation
 sources: []
 ---
 

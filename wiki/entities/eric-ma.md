@@ -7,7 +7,6 @@ updated: 2026-05-29
 tags:
   - person
   - ai-agents
-  - agent-skills
   - data-science
   - developer-tooling
   - bayesian

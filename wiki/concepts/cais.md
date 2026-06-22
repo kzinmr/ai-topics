@@ -5,7 +5,7 @@ created: 2026-06-18
 updated: 2026-06-19
 tags:
   - superintelligence
-  - ai-safety
+  - agent-safety
   - alignment
 aliases: []
 sources:

@@ -4,11 +4,11 @@ type: entity
 created: 2026-05-20
 updated: 2026-06-19
 tags:
-  - organization
-  - research
+  - company
+  - lab
   - infrastructure
   - blog
-  - ai-economics
+  - economics
 aliases: [semianalysis-research]
 related:
   - [[entities/dylan-patel]]

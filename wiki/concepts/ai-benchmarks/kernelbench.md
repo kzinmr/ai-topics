@@ -7,7 +7,7 @@ tags:
   - benchmark
   - code-model
   - performance-engineering
-  - gpu
+  - hardware
 aliases:
   - kernelbench
 status: active

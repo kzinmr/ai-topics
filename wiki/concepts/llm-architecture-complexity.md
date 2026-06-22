@@ -3,7 +3,10 @@ title: "LLM Architecture Complexity"
 type: concept
 created: 2026-06-21
 updated: 2026-06-21
-tags: [llm, model, architecture, transformer-architecture, mixture-of-experts, moe, sparse-attention]
+tags:
+  - model
+  - architecture
+  - transformer-architecture
 sources: ["raw/articles/2026-06-19_ianbarber_llms-are-complicated-now.md"]
 ---
 

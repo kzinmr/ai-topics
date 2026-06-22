@@ -9,7 +9,6 @@ tags:
   - developer-tooling
   - harness-engineering
   - ai-agents
-  - agent-skills
   - notebook-agents
 aliases:
   - Koaning

@@ -7,7 +7,7 @@ updated: 2026-06-22
 tags:
   - analyst
   - industry
-  - saas
+  - product
   - strategy
   - enterprise-saas
 social:

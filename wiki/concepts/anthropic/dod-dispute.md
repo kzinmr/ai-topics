@@ -4,7 +4,14 @@ type: concept
 aliases: [anthropic-pentagon-rift, anthropic-supply-chain-risk, anthropic-fascsa]
 created: 2026-06-10
 updated: 2026-06-10
-tags: [anthropic, palantir, controversy, policy, geopolitics, ai-safety, ai-governance]
+tags:
+  - anthropic
+  - palantir
+  - controversy
+  - policy
+  - geopolitics
+  - agent-safety
+  - ai-governance
 sources:
   - raw/articles/2026-06-10_anthropic-dod-dispute-wikipedia.md
   - raw/articles/2026-02-17_semafor-anthropic-pentagon-palantir-rift.md

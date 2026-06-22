@@ -4,16 +4,12 @@ created: 2026-06-17
 updated: 2026-06-17
 type: concept
 tags:
-  - distillation
-  - post-training
+  - training
   - on-policy-distillation
-  - grpo
-  - rlhf
-  - dpo
+  - fine-tuning
   - model-training
   - rlvr
   - reinforcement-learning
-  - training
 aliases:
   - MOPD
   - Multi-Teacher On-Policy Distillation

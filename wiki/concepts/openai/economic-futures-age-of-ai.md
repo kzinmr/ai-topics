@@ -7,7 +7,7 @@ tags:
   - openai
   - philanthropy
   - economics
-  - ai-safety
+  - agent-safety
   - policy
   - ai-governance
 sources:

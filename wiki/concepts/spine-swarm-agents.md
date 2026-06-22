@@ -6,17 +6,16 @@ type: concept
 tags:
   - ai-agents
   - multi-agent
-  - agent-orchestration
-  - agent-platform
   - orchestration
+  - agent-platform
   - deep-research
-  - agentic-search
+  - search
   - benchmark
   - evaluation
   - mcp
   - structured-outputs
   - automation
-  - enterprise-ai
+  - company
 sources:
   - raw/articles/2026-06-16_getspine_spine-swarm.md
   - https://www.getspine.ai/

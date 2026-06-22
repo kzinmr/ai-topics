@@ -7,7 +7,6 @@ updated: 2026-06-05
 status: L2
 tags:
   - ai-agents
-  - agent-skills
   - education
   - writing
   - content-creator

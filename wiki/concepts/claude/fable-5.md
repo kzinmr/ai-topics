@@ -7,9 +7,8 @@ tags:
   - model
   - claude-fable-5
   - anthropic
-  - frontier-models
-  - ai-safety
-  - cybersecurity
+  - agent-safety
+  - security
   - alignment
   - benchmark
 aliases:

@@ -4,12 +4,10 @@ type: concept
 created: 2026-06-15
 updated: 2026-06-15
 tags:
-  - agent-framework
+  - ai-agents
   - multi-agent
   - orchestration
   - open-source
-  - ai-agents
-  - agent-orchestration
 aliases:
   - CrewAI Framework
   - Crew

@@ -6,7 +6,7 @@ type: concept
 tags:
   - evaluation
   - fine-tuning
-  - observability
+  - infrastructure
   - open-source
 aliases:
   - perceived error detection

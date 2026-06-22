@@ -3,7 +3,14 @@ title: ChatGPT Agent System Card (July 2025)
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, ai-safety, evaluations, preparedness-framework, ai-agents, computer-use, frontier-models]
+tags:
+  - openai
+  - system-card
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - ai-agents
+  - model
 sources: [https://deploymentsafety.openai.com/chatgpt-agent]
 ---
 

@@ -3,7 +3,15 @@ title: OpenAI o1 System Card (December 2024)
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, gpt, ai-safety, evaluations, preparedness-framework, reasoning-model, deliberative-alignment, frontier-models]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - evaluation
+  - preparedness-framework
+  - reasoning-model
+  - deliberative-alignment
 sources: [https://openai.com/index/openai-o1-system-card/]
 ---
 

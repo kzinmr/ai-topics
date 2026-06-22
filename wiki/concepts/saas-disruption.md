@@ -4,12 +4,11 @@ type: concept
 created: 2026-06-22
 updated: 2026-06-22
 tags:
-  - saas
+  - product
   - enterprise-saas
   - business-model
   - strategy
   - economics
-  - ai-economics
 related: [headless-saas, ai-industry-economics, agentic-engineering]
 sources:
   - raw/articles/2026-04-17_blyons151_saas-vertical-moats-ai-disruption.md

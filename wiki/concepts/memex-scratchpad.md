@@ -7,13 +7,12 @@ tags:
   - context-management
   - ai-agents
   - code-act
-  - tool-calling
+  - tool
   - programmatic-tool-calling
   - databricks
-  - agent-architecture
-  - context-management
-  - cost-optimization
-  - enterprise-ai
+  - architecture
+  - optimization
+  - company
 aliases: [memex-scratchpad]
 sources:
   - raw/articles/2026-05-19_databricks_memex-programmable-scratchpad-llm-agents.md

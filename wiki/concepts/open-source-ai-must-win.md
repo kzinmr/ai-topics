@@ -3,7 +3,14 @@ title: "Open-Source AI Must Win"
 created: 2026-06-13
 updated: 2026-06-13
 type: concept
-tags: [open-source, ai-governance, geopolitics, regulation, policy, controversy, ai-safety]
+tags:
+  - open-source
+  - ai-governance
+  - geopolitics
+  - regulation
+  - policy
+  - controversy
+  - agent-safety
 sources: [raw/articles/2026-06-13_opensourceaimustwin-manifesto.md]
 ---
 

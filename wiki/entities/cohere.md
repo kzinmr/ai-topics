@@ -10,7 +10,6 @@ tags:
   - mcp
   - enterprise-saas
   - code-model
-  - mixture-of-experts
 aliases: ["Cohere Inc.", "Cohere AI"]
 sources:
   - https://cohere.com/

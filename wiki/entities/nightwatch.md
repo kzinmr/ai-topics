@@ -3,7 +3,14 @@ title: "Nightwatch (AI SRE)"
 created: 2026-06-10
 updated: 2026-06-10
 type: entity
-tags: [product, ai-agents, devops, monitoring, observability, reliability, open-source, self-hosted, ai-infrastructure, agentic-engineering, local-first]
+tags:
+  - product
+  - ai-agents
+  - developer-tooling
+  - infrastructure
+  - open-source
+  - self-hosted
+  - agentic-engineering
 sources:
   - raw/articles/2026-06-07_ninoxai_nightwatch-ai-sre.md
   - https://github.com/ninoxAI/nightwatch

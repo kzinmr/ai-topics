@@ -3,7 +3,13 @@ title: LifeSciBench
 created: 2026-06-18
 updated: 2026-06-18
 type: concept
-tags: [benchmark, ai-safety, evaluation, biology, biotech, openai]
+tags:
+  - benchmark
+  - agent-safety
+  - evaluation
+  - biology
+  - biotech
+  - openai
 sources:
   - raw/articles/openai.com--index-introducing-life-sci-bench--916e534a.md
 ---

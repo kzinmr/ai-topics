@@ -17,7 +17,7 @@ tags:
   - evaluation
   - security
   - benchmark
-  - tool-use
+  - tool
   - reinforcement-learning
 sources:
   - raw/articles/2026-05-28_core-auto_ai-writing-systems-code.md

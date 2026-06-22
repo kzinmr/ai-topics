@@ -3,7 +3,13 @@ title: Async Coding Agents
 created: 2026-06-09
 updated: 2026-06-09
 type: concept
-tags: [coding-agents, async-agents, cloud-agents, agentic-engineering, multi-agent, autonomous-agents]
+tags:
+  - coding-agents
+  - async-agents
+  - cloud-agents
+  - agentic-engineering
+  - multi-agent
+  - ai-agents
 sources: [raw/articles/2026-04-12_aman-sanger-cursor-self-driving-codebases-gtc.md]
 ---
 

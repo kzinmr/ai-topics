@@ -3,7 +3,14 @@ title: The Untrainable
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [ai-moat, private-data, evaluation, enterprise-ai, ai-investment, absorption-frontier, legible-work]
+tags:
+  - ai-moat
+  - private-data
+  - evaluation
+  - company
+  - ai-investment
+  - absorption-frontier
+  - legible-work
 sources:
   - raw/articles/2026-06-10-the-untrainable-sarah-guo.md
 ---

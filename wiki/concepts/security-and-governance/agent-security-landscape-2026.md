@@ -3,7 +3,11 @@ title: Agent Security Landscape (2026)
 created: 2026-06-09
 updated: 2026-06-09
 type: concept
-tags: [agent-security, prompt-injection, sandbox, vulnerability, agent-safety, ai-agents]
+tags:
+  - agent-safety
+  - sandbox
+  - vulnerability
+  - ai-agents
 sources:
   - raw/articles/2026-06-09_agent-security-prompt-injection-landscape.md
 ---

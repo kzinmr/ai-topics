@@ -8,7 +8,6 @@ tags:
   - google
   - model
   - multimodal
-  - frontier-models
   - model-card
 aliases: ["gemini", "google gemini", "gemini 3", "gemini pro"]
 related:

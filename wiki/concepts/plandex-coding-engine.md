@@ -6,13 +6,10 @@ type: concept
 tags:
   - coding-agents
   - ai-agents
-  - developer-tools
-  - cli
+  - developer-tooling
   - terminal
   - self-hosted
-  - tool-use
-  - code-review
-  - git
+  - tool
 sources:
   - "https://github.com/plandex-ai/plandex"
   - "https://docs.plandex.ai/"

@@ -8,7 +8,6 @@ tags:
   - person
   - context-engineering
   - open-source
-  - agent-skills
   - ai-agents
 aliases: ["muratcan-koylan", "koylan-ai", "koylanai"]
 sources:

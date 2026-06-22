@@ -7,7 +7,7 @@ tags:
   - concept
   - regulation
   - law
-  - ai-safety
+  - agent-safety
   - policy
   - content-moderation
   - platform-policy

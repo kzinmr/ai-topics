@@ -3,7 +3,12 @@ title: 'RL Exploration: Training vs Test-Time Scaling'
 type: concept
 created: 2026-06-12
 updated: 2026-06-12
-tags: [reinforcement-learning, test-time-scaling, scaling, inference, reasoning]
+tags:
+  - reinforcement-learning
+  - test-time-scaling
+  - optimization
+  - inference
+  - reasoning
 sources:
   - url: https://x.com/sheriyuo/status/2063295181131247674
     title: 'RL Interview Questions 2026 — Q6'

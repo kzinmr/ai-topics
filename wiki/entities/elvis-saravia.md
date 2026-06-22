@@ -9,10 +9,8 @@ tags:
   - ai-agents
   - coding-agents
   - education
-  - educator
   - community
   - ai-educator
-  - ai-researcher
 aliases:
   - omarsar0
   - "@omarsar0"

@@ -3,7 +3,6 @@ title: "Fine-Tuning"
 type: concept
 tags:
   - fine-tuning
-  - post-training
   - training
 status: redirect
 created: 2026-04-27

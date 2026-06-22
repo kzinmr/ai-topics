@@ -5,16 +5,13 @@ updated: 2026-06-11
 type: concept
 tags:
   - agent-safety
-  - ai-safety
   - open-source
   - security
   - supply-chain
   - community
   - vulnerability
   - ai-agents
-  - prompt-injection
   - governance
-  - cybersecurity
 sources:
   - raw/articles/2026-06-11_lwn_ai-agent-safety-incidents.md
 ---

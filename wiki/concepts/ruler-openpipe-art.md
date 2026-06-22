@@ -6,10 +6,10 @@ type: concept
 tags:
   - concept
   - reinforcement-learning
-  - llm-as-judge
+  - evaluation
   - reward-function
   - agent-training
-  - grpo
+  - training
   - openpipe
 sources:
   - raw/articles/avichawla-rl-agents-karpathy-system-prompt-learning-2026-04-28.md

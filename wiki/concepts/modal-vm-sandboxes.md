@@ -7,11 +7,10 @@ tags:
   - concept
   - infrastructure
   - sandbox
-  - serverless
   - modal
   - agent-safety
   - security
-  - agent-architecture
+  - architecture
   - agent-runtime
 sources:
   - https://modal.com/blog/product-updates-vm-sandboxes-domain

@@ -7,9 +7,9 @@ tags:
   - concept
   - reinforcement-learning
   - reward-function
-  - system-prompt
+  - prompting
   - agent-training
-  - llm-as-judge
+  - evaluation
   - context-engineering
 sources:
   - raw/articles/avichawla-rl-agents-karpathy-system-prompt-learning-2026-04-28.md

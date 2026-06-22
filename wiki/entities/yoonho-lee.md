@@ -5,8 +5,7 @@ created: 2026-06-09
 updated: 2026-06-09
 tags:
   - person
-  - ml-research
-  - ai-research
+  - lab
   - stanford
   - harness-engineering
   - meta-harness

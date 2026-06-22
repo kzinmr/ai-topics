@@ -3,7 +3,17 @@ title: "Super-Agent Platform Thesis — US AI's Answer to the Chinese Super-App"
 created: 2026-06-08
 updated: 2026-06-08
 type: concept
-tags: [ai-agents, platform-economics, privacy, trust, enterprise-ai, personal-ai, strategy, regulation, apple, permission]
+tags:
+  - ai-agents
+  - platform-economics
+  - privacy
+  - trust
+  - company
+  - personal-ai
+  - strategy
+  - regulation
+  - apple
+  - permission
 aliases: ["super-agent thesis", "US super-agent", "permissioned agent layer"]
 sources: [raw/articles/2026-06-04_super-agent-us-platform-thesis.md, https://x.com/i/article/2062555164540903424]
 related: [[concepts/apple]], [[entities/palantir]], [[concepts/enterprise-ai]], [[concepts/personal-ai]]

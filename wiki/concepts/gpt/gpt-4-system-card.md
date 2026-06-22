@@ -3,7 +3,15 @@ title: GPT-4 System Card (March 2023)
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
-tags: [openai, system-card, gpt, ai-safety, evaluations, frontier-models, red-teaming, rlhf, hallucinations, disinformation]
+tags:
+  - openai
+  - system-card
+  - model
+  - agent-safety
+  - evaluation
+  - fine-tuning
+  - hallucinations
+  - disinformation
 sources:
   - https://cdn.openai.com/papers/gpt-4-system-card.pdf
   - https://openai.com/index/gpt-4-system-card/

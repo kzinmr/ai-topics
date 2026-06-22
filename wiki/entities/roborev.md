@@ -12,7 +12,6 @@ tags:
   - developer-tooling
   - go
   - open-source
-  - agent-skills
 sources:
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
   - transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md

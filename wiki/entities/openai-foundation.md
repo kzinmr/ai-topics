@@ -6,7 +6,7 @@ updated: 2026-06-09
 tags:
   - openai
   - philanthropy
-  - ai-safety
+  - agent-safety
   - company
   - governance
   - announcement

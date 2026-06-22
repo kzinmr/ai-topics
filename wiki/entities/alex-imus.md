@@ -6,7 +6,7 @@ updated: 2026-06-21
 tags:
   - economics
   - agi
-  - deepmind
+  - google
 related:
   - [[entities/google-deepmind]]
 sources:

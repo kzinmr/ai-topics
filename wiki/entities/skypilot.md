@@ -2,11 +2,9 @@
 title: SkyPilot
 type: entity
 tags:
-  - cloud
-  - ai-infrastructure
+  - infrastructure
   - developer-tooling
   - open-source
-  - kubernetes
 created: 2026-06-15
 updated: 2026-06-15
 sources:

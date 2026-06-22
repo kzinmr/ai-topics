@@ -6,10 +6,9 @@ type: concept
 tags:
   - openai
   - system-card
-  - gpt
-  - ai-safety
+  - model
+  - agent-safety
   - image-generation
-  - frontier-models
 sources:
   - url: https://deploymentsafety.openai.com/chatgpt-images-2-0
     title: "ChatGPT Images 2.0 System Card — OpenAI Deployment Safety Hub"

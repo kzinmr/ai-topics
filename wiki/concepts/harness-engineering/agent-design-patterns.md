@@ -6,7 +6,7 @@ updated: 2026-06-11
 tags:
   - ai-agents
   - agent-design-patterns
-  - tool-calling
+  - tool
   - ai-agent-engineering
   - structured-outputs
   - context-engineering

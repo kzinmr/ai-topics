@@ -15,7 +15,6 @@ tags:
   - prompting
   - self-correction
   - loops
-  - autonomous-agents
 aliases:
   - loop-engineering
   - designing-loops

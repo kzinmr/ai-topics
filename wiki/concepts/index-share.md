@@ -4,11 +4,9 @@ type: concept
 created: 2026-06-17
 updated: 2026-06-17
 tags:
-  - speculative-decoding
-  - sparse-attention
-  - long-context
   - inference
-  - moe
+  - model
+  - context-management
 aliases: []
 sources:
   - raw/articles/2026-06-17_ainews_glm-52-indexshare.md

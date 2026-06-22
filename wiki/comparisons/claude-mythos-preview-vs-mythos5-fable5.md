@@ -5,10 +5,9 @@ type: comparison
 tags:
   - anthropic
   - model
-  - ai-safety
+  - agent-safety
   - alignment
-  - evaluations
-  - frontier-models
+  - evaluation
 sources:
   - "[[2026-04-07_claude-mythos-preview-system-card]]"
   - "[[2026-06-09_claude-fable5-mythos5-system-card]]"

@@ -4,7 +4,13 @@ type: entity
 subtype: person
 created: 2026-06-12
 updated: 2026-06-12
-tags: [reinforcement-learning, optimization, researcher, test-time-scaling, inference, reasoning]
+tags:
+  - reinforcement-learning
+  - optimization
+  - person
+  - test-time-scaling
+  - inference
+  - reasoning
 sources:
   - url: https://x.com/sheriyuo
     title: "Xiuyu Li on X"
