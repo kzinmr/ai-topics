@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-06-18
+updated: 2026-06-22
 tags:
   - entity
   - person
@@ -20,6 +20,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-07-stairway-to-heaven-html--62c1cbd3.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-17-summoning-the-demon-html--6b570b9a.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md
 ---
 
 # George Hotz
@@ -111,6 +112,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2025** | openpilot supports 300+ vehicle models with 100M+ miles driven. |
 | **2025 (Nov)** | Departs comma.ai entirely. |
 | **2026 (Jun 6)** | Publishes "Our Great War is a Spiritual War" — warns that totalizing AI control systems represent "the only bad AI scenario"; advocates for sovereignty over dependence. |
+| **2026 (Jun 21)** | Publishes "The doom justifies the valuation" — criticizes SF/Berkeley AI community as "cult of atheistic hedonists" who need AI doom to justify their valuations; contrasts GLM-5.2's technical blog with Anthropic's eschatological communication. |
 
 ---
 
@@ -206,7 +208,18 @@ In a June 11, 2026 post, Hotz published a directly contradictory argument to his
 
 Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md]]
 
-|---
+### The Doom Justifies the Valuation (Jun 2026)
+
+In his June 21, 2026 post ["The doom justifies the valuation"](https://geohot.github.io//blog/jekyll/update/2026/06/21/the-doom-justifies-the-valuation.html), Hotz critiques the SF/Berkeley AI community as a "cult of atheistic hedonists" whose narrative of AI doom serves to justify their valuations:
+
+- **Core critique**: Anthropic's communication strategy is "nonsensical hype" — the company cannot write purely technical blog posts because "the current technology doesn't justify the valuation." He contrasts Anthropic's eschatological framing with GLM-5.2's straightforward technical blog, which he describes as "how I imagined AI progress being"
+- **Schizoposting reference**: Quotes Schizoposting to argue AI hype is "designed to cause panic" — "there is no possible framing of the actual product(s) that could possibly induce more psychological spiraling" — and that the industry's valuation rests on "a baseless assertion of infinite growth between the lines of a public-facing eschatology"
+- **Bubble prediction**: Hotz calls for "someone [to] write an AI 2027 but instead of some totalizing doom propaganda it talks about the bubble unwinding" — predicting the AI hype cycle will end like other cults when "the end times don't come"
+- **Comparison argument**: GLM-5.2 blog = "the world of technology I love"; Anthropic blog = "a questionable promise of future technology" — the former describes current capabilities, the latter justifies future valuations through fear
+
+This essay adds to Hotz's developing meta-critique of AI industry communication: where his earlier posts criticized AI safety concerns as premature, this post targets the **structural dependency of AI valuations on apocalyptic narratives** — making it the most directly financial/economics-focused of his 2026 essays.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md]]
 
 ## Key Writings & Tweets
 
@@ -234,6 +247,7 @@ Notable posts include:
 - "zappa: an AI powered mitmproxy" (Apr 15) — Vibe-coded AI proxy to strip ads and enshittification from web pages
 - "Democracy is a Liability" (Mar 21) — Contrarian political analysis
 - "Summoning the Demon" / "the singularity is nearer" (Jun 17) — Poetic essay framing AI as "social crime" and "reflection of demonic desires." Argues AI is a tool of optimization that will consume its creators. Short poetic piece adding to Hotz's developing darkening view on AI's societal trajectory.
+- "The doom justifies the valuation" (Jun 21) — Critique of AI industry communication: contrasts GLM-5.2's technical writing with Anthropic's eschatological framing; argues AI hype is "designed to cause panic" to justify valuations. Predicts bubble unwinding.
 - "Five years of tinygrad" (Dec 29, 2025) — Retrospective on the framework's evolution
 - "Can tinygrad win?" (Jul 6, 2025) — Honest assessment of tinygrad's competitive position
 - "The Tragic Case of Intel AI" (Mar 24, 2025) — Analysis of Intel's AI failures

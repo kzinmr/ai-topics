@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-18
+updated: 2026-06-22
 tags:
   - company
   - model
@@ -29,8 +29,9 @@ sources:
   - raw/articles/2026-06-04_openai_openai-biodefense-intelligence-age.md
   - raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md
   - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
-  - raw/articles/2026-06-08_openai-built-to-benefit-everyone.md
+  - raw/articles/2026-06-08_openai_openai-built-to-benefit-everyone.md
   - raw/articles/2026-02-23_fortune_openai-mission-statement-safety-removed.md
+  - raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md
 ---
 
 # OpenAI
@@ -321,6 +322,24 @@ OpenAI rolled out **ChatGPT Lockdown Mode** in June 2026, a deterministic securi
 - **Mechanism**: Uses deterministic mechanisms (network-level restrictions), not AI-evaluated rules, making it a hard security boundary rather than a probabilistic one
 
 Source: [raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md](https://simonwillison.net/2026/Jun/5/chatgpt-lockdown-mode/)
+
+### Samsung Electronics Enterprise Deployment (June 2026)
+
+On June 22, 2026, OpenAI announced one of its **largest enterprise deployments** — Samsung Electronics deploying ChatGPT Enterprise and Codex to all employees in Korea and all Device eXperience (DX) division employees worldwide:
+
+| Detail | Information |
+|--------|-------------|
+| **Scope** | All Samsung Electronics employees in Korea + all DX employees worldwide |
+| **Products** | ChatGPT Enterprise + Codex |
+| **Use cases** | R&D, manufacturing, marketing, corporate functions, software development |
+| **Codex adoption** | 5M+ weekly active users globally; Korea usage up ~800% since February 1, 2026 |
+| **OpenAI Korea GM** | Harrison Kim |
+
+Samsung plans to use ChatGPT for knowledge-based tasks (search, analysis, drafting, data interpretation) with enterprise-grade security controls (data protection, access management). Codex supports both technical work (code writing, review, debugging) and non-technical tasks (internal tools, websites, automated workflows). The deployment expands Samsung's existing collaboration with OpenAI on advanced memory semiconductors for AI infrastructure.
+
+Related Korea deployments: Seoul National University deployed ChatGPT Edu to all 47,000 members; Kakao integrated ChatGPT into KakaoTalk group chats. Other Korean enterprises using OpenAI products include LG Electronics, LG Uplus, LG CNS, Samsung SDS, Krafton, Toss, and Korea Zinc.
+
+Source: [[raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md]]
 
 ## Security Architecture
 

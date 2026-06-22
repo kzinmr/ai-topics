@@ -3,7 +3,7 @@ title: OpenAI Codex (AI coding agent)
 type: entity
 aliases: [codex-cli, openai-codex, codex-agent]
 created: 2026-05-07
-updated: 2026-06-02
+updated: 2026-06-22
 status: L3
 tags:
   - entity
@@ -39,6 +39,7 @@ sources:
   - raw/articles/2026-01-11_openai-developers-blog_skyscanner-codex-jetbrains-mcp.md
   - raw/concepts/openai-codex-superapp.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
+  - raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md
 related:
   - "[[concepts/codex/codex-superapp]]"
   - "[[entities/claude-code]]"
@@ -198,3 +199,15 @@ OpenAI launched the **Figma MCP server** for Codex, enabling bidirectional desig
 - **Roundtrip iteration**: Designers refine UI in Figma (adjusting styles, adding components, exploring alternatives), then pull changes back into code via the same MCP server -- creating a fluid loop between design exploration and working code
 
 > Source: [Building frontend UIs with Codex and Figma](https://developers.openai.com/blog/building-frontend-uis-with-codex-and-figma/) (OpenAI Developers Blog, March 1, 2026)
+
+### Samsung Electronics (June 2026)
+
+Samsung Electronics deployed Codex alongside ChatGPT Enterprise to all employees in Korea and all DX division employees worldwide — one of OpenAI's largest enterprise deployments to date:
+
+- **Technical use**: Codex for code writing, review, debugging, and automated workflows
+- **Non-technical use**: Internal tools, websites, and app prototyping for non-developer teams
+- **Adoption data**: Codex weekly active users in Korea grew ~800% since February 1, 2026; 5M+ weekly active users globally
+
+This represents significant enterprise validation of Codex's expansion beyond pure software engineering into general knowledge work across a global manufacturing and technology conglomerate.
+
+> Source: [Samsung Electronics brings ChatGPT and Codex to employees](https://openai.com/index/samsung-electronics-chatgpt-codex-deployment) (OpenAI News, June 22, 2026)

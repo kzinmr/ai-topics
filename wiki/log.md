@@ -1,3 +1,27 @@
+## [2026-06-22] Blog Wiki Ingest — Samsung Enterprise Deployment + George Hotz essay
+
+**Source:** blog-wiki-ingest (recovered from blog-triage parse failure)
+**Timestamp:** 2026-06-22 07:50 UTC
+**Candidates:** 19 articles (1 take, 1 reference, 17 skips)
+
+Recovered triage JSON from blog-ingest checkpoint (`triage_latest.json`, saved before response render failure).
+
+### Pages Enriched
+- [[entities/openai]] — Added Samsung Electronics Enterprise Deployment section (June 2026): ChatGPT Enterprise + Codex deployed to all Samsung Electronics employees in Korea and DX division worldwide. One of OpenAI's largest enterprise deployments. Codex weekly active users in Korea up ~800% since February 2026. Also covers Seoul National University ChatGPT Edu (47,000 users) and KakaoTalk ChatGPT integration.
+- [[entities/codex]] — Added Samsung Electronics case study under Case Studies section. Enterprise validation of Codex's expansion beyond software engineering into general knowledge work.
+- [[entities/george-hotz]] — Added "The doom justifies the valuation" essay (June 21, 2026). Hotz critiques SF/Berkeley AI community as "cult of atheistic hedonists" who need AI doom to justify valuations. Contrasts GLM-5.2's technical blog with Anthropic's eschatological communication. Added to timeline, philosophical sections, and notable posts list.
+
+### Decisions Summary
+| Action | Count |
+|--------|-------|
+| **Take** (enrich) | 3 entries |
+| **Reference** | 0 |
+| **Skip** | 17 |
+
+### Sources
+- raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md
+- raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md
+
 ## [2026-06-22] Newsletter Wiki Ingest — Fiona Fung entity + Codex & Sampling enrichment
 
 **Source:** newsletter-wiki-ingest (post-recovery from newsletter-triage parse failure)
