@@ -1,7 +1,7 @@
 ---
 title: "Sakana AI"
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-06-22
 type: entity
 tags:
   - company
@@ -17,6 +17,8 @@ tags:
   - foundation-models
   - model
   - vlm
+  - fugu
+  - iclr-2026
 sources:
   - https://sakana.ai/
   - https://sacra.com/c/sakana-ai/
@@ -120,6 +122,15 @@ Monte Carlo Tree Search-based inference orchestration that routes between differ
 ### 11. RSI Lab Tokyo (June 2026)
 Sakana AI launched a dedicated **Recursive Self-Improvement (RSI) Lab** in Tokyo, formalizing their research into self-improving AI systems. The lab ties together prior projects — [[concepts/ai-scientist]] (fully automatic scientific discovery), the Darwin Gödel Machine, and ShinkaEvolve (evolutionary code-search engine) — under an explicit claim that self-improving systems can be built under compute constraints by prioritizing **sample efficiency** over raw scale. This positions Sakana AI as the first major lab with an org-level RSI commitment, in contrast to Western labs' more cautious RSI timelines.
 
+### 12. Fugu — Multi-Agent System as a Model (June 2026)
+A multi-agent orchestration system delivered as a single OpenAI-compatible API. Available in two variants: **Fugu** (balanced performance/latency for everyday use) and **Fugu Ultra** (deeper expert pool for hard problems). Fugu dynamically orchestrates a pool of specialized models, assigning Thinker/Worker/Verifier roles and handling multi-turn coordination internally. See [[concepts/sakana-fugu]].
+
+Fugu is grounded in two ICLR 2026 papers:
+- **TRINITY**: An evolved LLM coordinator that assigns Thinker, Worker, or Verifier roles adaptively across multi-turn tasks
+- **Conductor**: RL-trained natural-language coordination that discovers communication patterns and focused prompts for agent teams
+
+Fugu achieves frontier-level performance — shoulder-to-shoulder with Fable 5 and Mythos Preview on engineering, science, and reasoning benchmarks — without single-vendor dependency. Integrates with [[concepts/codex/_index]] for coding workflows and AutoResearch for autonomous research.
+
 ## Competitive Position
 
 ### Differentiation
@@ -161,6 +172,7 @@ Key researchers include:
 ## Related Pages
 
 - [[entities/takuya-akiba]] — Staff Research Scientist, Optuna creator, evolutionary model merge co-author
+- [[concepts/sakana-fugu]] — Fugu multi-agent system as a model API (June 2026)
 - [[concepts/diffusionblocks]] — Block-wise training method (ICLR 2026)
 - [[concepts/evolutionary-algorithms]] — Evolutionary algorithms in AI
 - [[concepts/model-merging]] — Model merging techniques and approaches

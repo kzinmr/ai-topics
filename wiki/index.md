@@ -2,9 +2,11 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-22 | Total pages: 2625 | Indexed entries: 2244 | Not in index: 381 | Entities: 830 | Concepts: 1749
+> Last updated: 2026-06-22 | Total pages: 2635 | Indexed entries: 2253 | Not in index: 382 | Entities: 834 | Concepts: 1755
 
-## Entities (829 pages)
+## Entities (834 pages)
+- [[entities/apertus]] — Apertus — Organization behind the Apertus open foundation model. Sovereign AI, EU AI Act compliance, fully open-source model development
+- [[entities/bytedance]] — ByteDance — TikTok parent company. Creator of DeerFlow open-source SuperAgent harness (72K★), Doubao/Seed models, Volcengine cloud platform
 - [[concepts/ai-benchmarks/lighteval]] — LightEval
 - [[concepts/ai-benchmarks/openbenches]] — OpenBenches
 - [[concepts/ai-benchmarks/yourbench]] — yourbench
@@ -907,9 +909,13 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1749 pages)
+## Concepts (1755 pages)
 - [[concepts/agent-account-provisioning|Agent Account Provisioning]] — Programmatic account creation and deployment for AI agents without human OAuth flows
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
+- [[concepts/apertus]] — Apertus — Open foundation model for sovereign AI. Fully open (data, code, weights, methods). EU AI Act compliant. 8B/70B params, 1000+ languages
+- [[concepts/deer-flow]] — DeerFlow — ByteDance's open-source SuperAgent harness (72K★). Sandboxed agent computers with real filesystem, bash, packages. Orchestrates sub-agents, memory, skills
+- [[concepts/headroom]] — Headroom — Portable token-reduction skill for coding agents. Wraps Claude Code, Codex, Cursor, and others for up to 95% token savings
+- [[concepts/sakana-fugu]] — Sakana Fugu — Multi-agent system delivered as a single model API. Fugu + Fugu Ultra variants. ICLR 2026: TRINITY + Conductor papers
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector — Open-source security scanner for AI agent skills/vulnerabilities
 - [[concepts/ai-governance-political-pressure]] — Anthropic-Trump political pressure case study — AI governance under adversarial political conditions
 - [[concepts/ai-industry-economics]] — AI Industry Economics — The June 2026 Financial Reckoning: OpenAI's $38.5B leaked losses, Zitron's Herbalife/MLM critique, Hotz's "prices can't go down" analysis, Uber's $1,500/mo spending cap

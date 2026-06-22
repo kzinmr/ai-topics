@@ -1,3 +1,35 @@
+## [2026-06-22] Active Crawl — 5 trending topics documented
+
+**Source:** active-crawl (HN Algolia + X/Twitter + wiki gap analysis)
+**Timestamp:** 2026-06-22 11:20 UTC
+**Candidates:** 25+ HN stories, 10 X/Twitter topics, 12 wiki gap areas
+
+### Pages Created
+- [[concepts/apertus]] — Open foundation model for sovereign AI. Fully open (data, code, weights, methods). EU AI Act compliant. 8B/70B params, 1000+ languages. HN 406pts.
+- [[concepts/deer-flow]] — ByteDance's open-source SuperAgent harness (72K★). Sandboxed agent computers with real filesystem. Orchestrates sub-agents, memory, skills. GitHub Trending #1 (Feb 2026).
+- [[concepts/sakana-fugu]] — Sakana Fugu multi-agent system as a single model API. Fugu + Fugu Ultra variants. ICLR 2026 papers: TRINITY + Conductor. Shoulder-to-shoulder with Fable 5. HN 130pts.
+- [[concepts/headroom]] — Portable token-reduction skill for coding agents. Wraps Claude Code, Codex, Cursor, and others for 95% token savings. Created by Netflix engineer.
+- [[entities/apertus]] — Entity page for the Apertus project/org
+- [[entities/bytedance]] — Entity page for ByteDance (TikTok parent, DeerFlow creator)
+
+### Pages Enriched
+- [[entities/sakana-ai]] — Added Fugu section (June 2026 release), TRINITY + Conductor ICLR 2026 papers, updated tags
+
+### Raw Articles Saved
+- raw/articles/2026-06-21_apertus-open-foundation-model-sovereign-ai.md
+- raw/articles/2026-06-22_sakana-fugu-multi-agent-system-model.md
+- raw/articles/2026-06-22_bytedance-deerflow-superagent-harness.md
+- raw/articles/2026-06-22_headroom-token-reduction-coding-agents.md
+
+### SCHEMA Additions
+- New tags: `bytedance`, `apertus` (People/Orgs), `deer-flow`, `fugu`, `headroom` (AI Agents), `token-efficiency` (Engineering), `sovereign-ai`, `multilingual`, `iclr-2026` (Meta/Models)
+
+### Source Discovery
+- HN Algolia: 15 AI stories, top: Identity verification on Claude (775pts), GPT-5.5 vs GLM-5.2 hallucination study (564pts), DeepSeek Vision (493pts)
+- X/Twitter: 10 topics, top: GLM-5.2 strategic read-through, MCP RC stateless redesign, ByteDance DeerFlow (68K★)
+- Wiki gap analysis: 12 gaps identified, 3 HIGH (Replit missing, Samsung enterprise AI, Claude 4 variants)
+- 25+ blogwatcher articles from last 2 days across 15 blogs
+
 ## [2026-06-22] Blog Wiki Ingest — Samsung Enterprise Deployment + George Hotz essay
 
 **Source:** blog-wiki-ingest (recovered from blog-triage parse failure)
