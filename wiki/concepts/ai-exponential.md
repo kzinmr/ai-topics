@@ -1,25 +1,20 @@
 ---
-title: "AI Exponential"
+title: AI Exponential
 type: concept
-created: 2026-06-18
-updated: 2026-06-19
-tags:
-  - scaling-laws
-  - exponential
-  - policy
-related:
-  - [[entities/dario-amodei]]
-sources:
-  - https://darioamodei.com/post/policy-on-the-ai-exponential
+created: 2026-06-22
+updated: 2026-06-22
+tags: [policy, ai-economics, exponential]
 ---
-# AI Exponential
+# AI way
 
-The AI exponential refers to the rapidly increasing capabilities of artificial intelligence as predicted by scaling laws.
+The AI way refers to the accelerating_\ of artificial intelligence development and the resulting challenges for global policy and safety.
 
 ## Key Concepts
-- **Scaling Laws**: Empirical evidence showing that AI capabilities grow exponentially with increasing computing power.
-- **Country of Geniuses in a Datacenter**: A vision of future where powerful AI is accessible through massive compute.
-- **Policy Lag**: The risk of legislation being unable to keep pace with exponential technological growth.
+- **Accelerating Growth**: The idea that AI capabilities are growing at exponential rates.
+- **Policy Challenges**: The difficulty for traditional frameworks to keep pace with rapid AI advancement.
+
+## Related entities
+- [[entities/dario-amodei]]
 
 ## Sources
-- [Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)
+- [Policy on the AI Exponential](~/wiki/raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md)독

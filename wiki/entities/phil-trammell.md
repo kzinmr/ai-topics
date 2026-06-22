@@ -1,22 +1,19 @@
 ---
-title: "Phil Trammell"
+title: Phil Trammell
 type: entity
-created: 2026-06-21
-updated: 2026-06-21
-tags:
-  - economics
-  - agi
-  - epoch
-related:
-  - [[entities/epoch]]
-sources:
-  - [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imas-phil-trammell) (Dwarkesh Gality Podcast)
+created: 2026-06-22
+updated: 2026-06-22
+tags: [person, economics, agi]
 ---
 # Phil Trammell
 
-**Phil Trammell** is the Head of Economics at Epoch and a research scholar at Stanford. He specializes in economic forecasting and the impacts of AI technology.
+Phil Trammell is a researcher and commentator focused on the economic implications of Artificial General Intelligence (AGI).
 
-## Key Areas
-- **Economic Forecasting**: Utilizing prediction markets and aggregate forecasts to understand market shifts.
-- **AGI Impact**: Analyzing the labor share and wealth distribution in highly automated economies.
-- **Market Dynamics**: Studying how automation affects the relational sector versus machine-only production.
+## Key Ideas
+- **AGI Economics**: Exploring how AGI will impact global labor markets and economic structures.
+
+## Related Concepts
+- [[concepts/agi-economics]]
+
+## Sources
+- [Economics of AGI](~/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d64.md)독

@@ -1,27 +1,20 @@
 ---
-title: K. Eric Drexler
+title: Eric Drexler
 type: entity
-created: 2026-06-20
-updated: 2026-06-20
-tags:
-  - researcher
-  - ai-safety
-sources:
-  - [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
+created: 2026-06-22
+updated: 2026-06-22
+tags: [person, ai-safety, superintelligence]
 ---
+# Eric Drexler
 
-# K. Eric Drexler
-
-K. Eric Drexler is a researcher at the Future of Humanity Institute, University of Oxford. He is well-known for his work on superintelligence, AI safety, and raises risk.
+Eric Drexler is a researcher and author known for his pioneering work in molecular nanotechnology and artificial intelligence. He is a prominent figure in the discussion of AI safety and the potential risks of superintelligence.
 
 ## Key Ideas
-- **Comprehensive AI Services (CAIS)**: A model of flexible, general intelligence in which agents are a class of service-providing products rather than a natural or necessary engine of progress in themselves.
-- **AI Safety and Existential Risk**: Drexler focuses on the potential risks associated with the emergence of superintelligent AI systems.
+- **AI Safety**: Early advocate for considering the potential existential risks associated with advanced artificial intelligence.사실- **Molecular Nanotechnology**: Theoretical frameworks for design and manufacture of systems at the molecular level.
+- **Superintelligence**: Explored the implications of AI systems that surpass human intelligence in all way domains.
 
 ## Related Concepts
 - [[concepts/superintelligence]]
-- [[concepts/ai-safety]]
-- [[concepts/comprehensive-ai-services]]
 
 ## Sources
-1. [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
+- [Reframing Superintelligence](~/wiki/raw/articles/reframing-superintelligence-2019.md)독

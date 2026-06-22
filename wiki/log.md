@@ -255,3 +255,20 @@ Each method has different characteristics regarding:
 - **index.md**: 2264 → 2284 lines, clean validation ✅
 - **log.md**: 189 → 206 lines, all separators present ✅
 - **Remaining orphans (depth ≤ 3)**: 7 more (`openclaw/ecosystem-tools`, `openclaw/five-tier-precedence`, `post-training/rlhf-dpo-orpo-kto-preference-optimization`, `post-training/rlhf-reinforcement-learning-from-human-feedback`, `red/green-tdd`, `speech/whisper`, `training/trl`)
+
+---
+
+## 2026-06-22 — Brad Lyons / SaaSpocalypse ingestion from X/Twitter
+
+**Source**: https://x.com/blyons151/status/2045273056214470915 (Note Tweet, 9167 chars)
+
+**Created**:
+- `raw/articles/2026-04-17_blyons151_saas-vertical-moats-ai-disruption.md` — Full raw article from Note Tweet
+- `entities/brad-lyons.md` — Entity page for Brad Lyons, Crossover Research founder (skeleton)
+- `concepts/saas-disruption.md` — SaaSpocalypse concept page synthesizing Lyons moat thesis + Zitron PE thesis
+
+**Updated**:
+- `index.md`: +2 entries (entities/brad-lyons, concepts/saas-disruption)
+- `concepts/saas-agent-era.md`: Added cross-reference to saas-disruption
+
+**Summary**: Lyons argues the engineering moat protecting SaaS for 20 years is gone due to AI. Four remaining moats: distribution, proprietary data, workflow breadth, regulatory insulation. "Second business" thesis: SaaS companies must monetize installed base beyond seat ARR. Battery Ventures survey: 77% of CFOs want AI layered on existing systems, not replacement. Contrasted with Zitron's PE/financial engineering explanation.

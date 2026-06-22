@@ -21,6 +21,7 @@ related:
   - concepts/ai-operating-model
   - concepts/enterprise-ai
   - concepts/service-as-software
+  - concepts/saas-disruption
 ---
 
 # SaaS in the AI Agent Era
