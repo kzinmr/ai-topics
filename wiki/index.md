@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-21 | Total pages: 2624 | Indexed entries: 2243 | Not in index: 381 | Entities: 829 | Concepts: 1749
+> Last updated: 2026-06-22 | Total pages: 2625 | Indexed entries: 2244 | Not in index: 381 | Entities: 830 | Concepts: 1749
 
 ## Entities (829 pages)
 - [[concepts/ai-benchmarks/lighteval]] — LightEval
@@ -57,6 +57,7 @@
 - [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
 - [[entities/dynomight-net]] — Dynomight — Data science & society blog
 - [[entities/fintool]] — Fintool
+- [[entities/fiona-fung]] — Fiona Fung — Head of Engineering, Claude Code and Cowork at Anthropic. 25+ years engineering experience (Microsoft Visual Studio/TypeScript, Meta/Facebook Marketplace $100B+ GMV, Instagram).
 - [[entities/florian-brand]] — Florian Brand (@xeophon) — Research Engineer at Prime Intellect (evals). Editor at Interconnects (open models). OSWorld critique.
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer — Open-source skill bundle for Claude Code and Codex that brings professional evaluation engineering into coding agent workflows. Created by Pratik Bhavsar at Galileo Agent Labs (May 2026).
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
@@ -1957,6 +1958,7 @@
 - [[concepts/saas-agent-era]] — SaaS structural transformation in the AI Agent era. From feature distribution platforms to Agent operating systems. UI thinning, artifact separation for customization, extending multi-tenancy into the Agent dimension, shift to outcome-based value units. Includes classification of dangerous vs strong SaaS.
 - [[concepts/saas-disruption]] — The SaaSpocalypse: structural decline of traditional SaaS by AI. Lyons' moat taxonomy (regulatory insulation, data entrenchment, distribution, workflow breadth). Second-business thesis. PE/financial engineering explanation (Zitron). Battery Ventures CFO survey (77% want AI layered on existing systems). Three diligence questions.
 - [[concepts/sample-efficiency]] — LLM Sample Efficiency — How much data LLMs need vs. humans (~1M× gap). Data, not architecture, drives progress. Chinchilla scaling limits. RL as synthetic data generation. Humans on a qualitatively different scaling curve. Part 2 (Jun 2026): open models lag 4 months, expert data industry scaling to deca-billions, genome argument rebutted, white collar automation bet.
+- [[concepts/sampling-strategies]] — Sampling Strategies — LLM sampling temperature and batch invariance at inference time. Temperature=0 does not guarantee deterministic output due to GPU batch-level non-determinism (Horace He / Thinking Machines research).
 - [[concepts/sana-vm]] — SANA-WM — NVIDIA's 2.6B parameter open-source world model. 60-second 720p video generation on single GPU. Gated DeltaNet + Softmax hybrid. Apache 2.0.
 - [[concepts/sandbox/_index|Sandbox — AI Agent Code Execution Isolation]] — Security boundary between useful automation and catastrophic failure in agent code execution.
 - [[concepts/scaffold-vs-rl-debate]] — Scaffold vs RL Debate — Debate over whether agent performance gains come from better scaffolding (prompts, tools) or reinforcement learning (training).

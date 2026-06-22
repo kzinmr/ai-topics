@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-06-05
+updated: 2026-06-22
 tags:
   - product
   - coding-agent
@@ -33,6 +33,7 @@ sources:
   - raw/articles/2026-06-02_zswang24-codex-data-science-plugin.md
   - raw/articles/2026-06-02_openai-codex-every-role-tool-workflow.md
   - raw/newsletters/2026-06-04-build-tools-to-build-more.md
+  - raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md
 ---
 
 # OpenAI Codex
@@ -273,6 +274,23 @@ Codex expanded to the **ChatGPT mobile app** in preview:
 
 Source: Jason Liu X article (May 2026), Aakash's Clicky newsletter
 
+## Codex Record & Replay (June 2026)
+
+OpenAI added Record & Replay to Codex, a macOS feature that watches you complete a task once and turns that demonstration into a reusable skill.
+
+| Feature | Detail |
+|---------|--------|
+| **How it works** | Enables Computer Use on your Mac, performs a task once while Codex records the demonstration |
+| **Output** | Editable skill definition: when to use it, what inputs it needs, steps to follow, how to verify the result |
+| **Editing** | The drafted skill is readable and editable before deployment |
+| **Use cases** | Stable, repetitive jobs like filing expenses, pulling weekly reports, data entry workflows |
+
+**Integration with ChatGPT**: The same release rebuilt ChatGPT's scheduled tasks with a dedicated page for recurring and monitoring jobs. Monitoring tasks watch the web or connected apps and notify you only when something changes — enabling a 'set and forget' pattern for AI-powered oversight.
+
+**Significance**: Record & Replay bridges the gap between 'fun toy' agentic computer use and production-ready workflow automation. By creating editable, reusable skills from demonstrations, it transforms agentic AI from an experimental tool into a deployable process.
+
+**Related**: [[concepts/codex/codex-skill]] — Codex Skills system, [[concepts/agentic-engineering/agentic-engineering]] — Developer workflow patterns
+
 ## Prompt Design Characteristics
 
 See [[concepts/codex/codex-prompting]]. Key characteristics:
@@ -304,6 +322,7 @@ Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technolo
 | OSS | ✅ Fully OSS | ❌ Proprietary | ❌ |
 | Autonomy | High (hours) | High (Auto Mode) | Medium |
 | Compaction | ✅ First-class | — | — |
+| Record & Replay | ✅ macOS demonstration → skill | — | — |
 
 ## Related Topics
 

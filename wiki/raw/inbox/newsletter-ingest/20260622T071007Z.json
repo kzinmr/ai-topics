@@ -1,0 +1,93 @@
+{
+  "run_id": "20260622T071007Z",
+  "triaged_at": "2026-06-22T07:10:07Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260621123143.3.a818d436c1ceb538@mg-d0.substack.com>",
+      "subject": "Building the most AI-pilled engineering team in the world | Fiona Fung (Manager of the Claude Code and Cowork Team)",
+      "date": "2026-06-21",
+      "source": "Lenny's Newsletter (Substack, publication_id=10845)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-21-building-the-most-ai-pilled-engineering-team-in-the-world-fiona-fung-manager-of-.md",
+      "classification": "high",
+      "wiki_relevance": [
+        "coding-agents",
+        "ai-workflow",
+        "ai-team-management"
+      ],
+      "reason": "Interview with Fiona Fung, manager of the Claude Code and Cowork team at Anthropic. Directly relevant to coding agents (Claude Code) and AI-augmented engineering workflows. Covers building AI-first engineering teams — a core wiki topic on AI agent adoption.",
+      "article_url": "https://open.substack.com/pub/lenny/p/building-the-most-ai-pilled-engineering",
+      "entity_targets": [
+        "Claude Code",
+        "Anthropic",
+        "Fiona Fung"
+      ],
+      "suggested_action": "Create raw article scrape via URL fetch, then enrich/create entity page for Fiona Fung and update Claude Code entity page with team management angle"
+    },
+    {
+      "message_id": "<20260621130319.3.85dd172f2692a820@mg-d1.substack.com>",
+      "subject": "SpaceX's Cursor Call, OpenAI's Codex Clone, and Midjourney's Medical Moonshot",
+      "date": "2026-06-21",
+      "source": "The Signal by Alex Banks (Substack, publication_id=293154)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md",
+      "classification": "critical",
+      "wiki_relevance": [
+        "coding-agents",
+        "ai-tools",
+        "ai-in-industry"
+      ],
+      "reason": "Three high-impact stories: (1) SpaceX adopting Cursor for engineering — validates AI coding tools in high-stakes environments; (2) OpenAI Codex developments — core wiki topic around coding agents; (3) Midjourney expanding into medical AI — notable domain diversification. Multiple wiki-relevant angles in a single digest.",
+      "article_url": "https://open.substack.com/pub/thesignal/p/spacexs-cursor-call-openais-codex",
+      "entity_targets": [
+        "SpaceX",
+        "Cursor",
+        "OpenAI Codex",
+        "Midjourney"
+      ],
+      "suggested_action": "Scrape full article; update/create entity pages for Cursor, OpenAI Codex; add SpaceX AI adoption note; update Midjourney page with medical AI angle"
+    },
+    {
+      "message_id": "<20260621.154728.151b7c41@mta14>",
+      "subject": "Exclusive Interview with Geir Engdahl, Co-Founder and CTO, AI at Cognite",
+      "date": "2026-06-21",
+      "source": "Beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-21-exclusive-interview-with-geir-engdahl-co-founder-and-cto-ai-at-cognite.md",
+      "classification": "low",
+      "wiki_relevance": [
+        "enterprise-ai",
+        "industrial-ai"
+      ],
+      "reason": "Interview with Cognite CTO about industrial AI applications. While AI-related, Cognite focuses on industrial data integration and is outside the wiki's core LLM/AI Agent scope. Peripheral relevance unless the interview covers LLM usage in industrial settings.",
+      "article_url": null,
+      "entity_targets": [
+        "Cognite",
+        "Geir Engdahl"
+      ],
+      "suggested_action": "Low priority — skip full scrape unless bandwidth permits. Could create a Cognite entity skeleton if the interview reveals LLM/agent usage patterns."
+    }
+  ],
+  "summary": {
+    "total_newsletters": 3,
+    "critical": 1,
+    "high": 1,
+    "low": 1,
+    "top_stories": [
+      "The Signal: SpaceX using Cursor, OpenAI Codex developments, Midjourney medical AI",
+      "Lenny's Newsletter: Building AI-first engineering teams with Claude Code (Fiona Fung interview)"
+    ],
+    "key_entity_signals": [
+      "Claude Code (Anthropic)",
+      "OpenAI Codex",
+      "Cursor (AI coding tool)",
+      "Midjourney",
+      "SpaceX AI adoption",
+      "Fiona Fung"
+    ],
+    "next_actions": [
+      "Fetch full article content for the 2 critical/high newsletters",
+      "Create/update entity pages for Cursor, OpenAI Codex, Fiona Fung",
+      "Update Midjourney entity with medical AI expansion"
+    ]
+  }
+}

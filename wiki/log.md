@@ -1,3 +1,26 @@
+## [2026-06-22] Newsletter Wiki Ingest — Fiona Fung entity + Codex & Sampling enrichment
+
+**Source:** newsletter-wiki-ingest (post-recovery from newsletter-triage parse failure)
+**Timestamp:** 2026-06-22 07:50 UTC
+
+Recovered triage JSON from newsletter checkpoint (`triage_latest.json`, saved before response render failure). Post-verification of 10 decisions:
+
+### Pages Created
+- [[entities/fiona-fung]] — New entity page: Head of Engineering for Claude Code and Cowork at Anthropic. 25-year career (Microsoft Visual Studio/TypeScript, Meta/Facebook Marketplace). Reports 8x code shipping. Interviewed on Lenny's Podcast (Jun 2026).
+
+### Pages Enriched
+- [[entities/openai-codex]] — Added Codex Record & Replay section (macOS demonstration-to-skill feature, editable skill definitions, ChatGPT scheduled task rebuild). Competitive comparison table updated.
+- [[concepts/sampling-strategies]] — Upgraded from stub to full page. Added batch invariance in inference (temperature=0 ≠ deterministic, GPU batch non-determinism). Horace He / Thinking Machines research.
+
+### Decisions Summary
+- Takes=3 (1 new entity, 2 page enrichments)
+- References=2 (Claude Code 8x stat minor, Fable-5 Sacks minor — both deferred)
+- Skips=5 (SpaceX×Cursor, Midjourney Scanner, ENPIRE, Satya Nadella token capital — all already covered; Cognite Beehiiv — industrial AI, expired/CF-blocked all links)
+
+### Raw Sources
+- [[raw/newsletters/2026-06-21-building-the-most-ai-pilled-engineering-team-in-the-world-fiona-fung-manager-of-.md]] — Lenny's Newsletter: Fiona Fung interview
+- [[raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md]] — The Signal by Alex Banks: Codex Record & Replay, batch invariance
+
 ## [2026-06-21] X Bookmarks Ingest — Loop Engineering concept + entity pages
 
 Ingested Elvis Saravia's (@omarsar0) X Article "From Prompting Agents to Loop Engineering" (Jun 19, 2026, 2.1K bookmarks, 911 likes, 242K impressions) from X bookmarks batch.
