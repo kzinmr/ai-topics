@@ -30,6 +30,7 @@
 - Wiki gap analysis: 12 gaps identified, 3 HIGH (Replit missing, Samsung enterprise AI, Claude 4 variants)
 - 25+ blogwatcher articles from last 2 days across 15 blogs
 
+---
 ## [2026-06-22] Blog Wiki Ingest — Samsung Enterprise Deployment + George Hotz essay
 
 **Source:** blog-wiki-ingest (recovered from blog-triage parse failure)
@@ -54,6 +55,7 @@ Recovered triage JSON from blog-ingest checkpoint (`triage_latest.json`, saved b
 - raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md
 - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md
 
+---
 ## [2026-06-22] Newsletter Wiki Ingest — Fiona Fung entity + Codex & Sampling enrichment
 
 **Source:** newsletter-wiki-ingest (post-recovery from newsletter-triage parse failure)
@@ -77,6 +79,7 @@ Recovered triage JSON from newsletter checkpoint (`triage_latest.json`, saved be
 - [[raw/newsletters/2026-06-21-building-the-most-ai-pilled-engineering-team-in-the-world-fiona-fung-manager-of-.md]] — Lenny's Newsletter: Fiona Fung interview
 - [[raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md]] — The Signal by Alex Banks: Codex Record & Replay, batch invariance
 
+---
 ## [2026-06-21] X Bookmarks Ingest — Loop Engineering concept + entity pages
 
 Ingested Elvis Saravia's (@omarsar0) X Article "From Prompting Agents to Loop Engineering" (Jun 19, 2026, 2.1K bookmarks, 911 likes, 242K impressions) from X bookmarks batch.
@@ -96,6 +99,7 @@ Ingested Elvis Saravia's (@omarsar0) X Article "From Prompting Agents to Loop En
 
 **Raw article:** [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]]
 **Source:** X Article (x.com/i/article/2068004233849290752), plain_text via fetch_x_bookmarks.py
+---
 ## [2026-06-21] Dreaming Wiki Ingest — Post-Recovery Enrichment
 
 **Source:** dreaming-wiki-ingest (post-recovery from dreaming-group parse failure)
@@ -352,3 +356,20 @@ Each method has different characteristics regarding:
 
 **Summary**: Lyons argues the engineering moat protecting SaaS for 20 years is gone due to AI. Four remaining moats: distribution, proprietary data, workflow breadth, regulatory insulation. "Second business" thesis: SaaS companies must monetize installed base beyond seat ARR. Battery Ventures survey: 77% of CFOs want AI layered on existing systems, not replacement. Contrasted with Zitron's PE/financial engineering explanation.
 - 2026-06-22 llm-pricing-monitor: Updated DeepSeek V4 context window 128K→1M (384K max output), corrected cache read precision ($0.0028/$0.003625), fixed Gemini 3.1 Flash Lite output $1.50→$0.50. All other prices verified unchanged.
+
+---
+
+## 2026-06-22 — Wiki Watchdog Auto-Fix
+
+**Source**: Daily watchdog cron (wiki-watchdog-fix)
+
+**Auto-fixes**:
+- `index.md`: Updated header counts — Total pages 2635→2636, Concepts 1755→1756, Not in index 382→383 (filesystem reconciliation)
+- `log.md`: Fixed 4 missing `---` section separators (auto-inserted via awk)
+
+**Needs human review**:
+- 70 concept entries (`concepts/`) located in the `## Entities` section of index.md — structural ordering defect, likely from orphan batch-insertion that didn't check the section boundary
+- 30 orphan pages (no inbound links) — most are content-rich pages never integrated into the graph; see `wiki_health.py --json` orphans list
+- 4,597 broken wikilinks total — 2,523 point to entirely missing pages; 933 are auto-fixable (bare wikilinks in `entities/_index.md` that need `entities/` namespace prefixing), but this is a large batch operation best scheduled as a dedicated pass
+
+**Pipeline state**: All pipeline chain clean. No watchdog alerts.

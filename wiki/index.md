@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-22 | Total pages: 2635 | Indexed entries: 2253 | Not in index: 382 | Entities: 834 | Concepts: 1755
+> Last updated: 2026-06-22 | Total pages: 2636 | Indexed entries: 2253 | Not in index: 383 | Entities: 834 | Concepts: 1756
 
 ## Entities (834 pages)
 - [[entities/apertus]] — Apertus — Organization behind the Apertus open foundation model. Sovereign AI, EU AI Act compliance, fully open-source model development
@@ -909,7 +909,7 @@
 - [[entities/nightwatch]] — Nightwatch — Open-source, local-first, read-only AI SRE
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3 — Unified physical AI platform (video + world models + robot policy)
 
-## Concepts (1755 pages)
+## Concepts (1756 pages)
 - [[concepts/agent-account-provisioning|Agent Account Provisioning]] — Programmatic account creation and deployment for AI agents without human OAuth flows
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-world failures in autonomous AI agent systems, including Fedora incident, sandboxing requirements, privilege boundaries, and active monitoring needs.
 - [[concepts/apertus]] — Apertus — Open foundation model for sovereign AI. Fully open (data, code, weights, methods). EU AI Act compliant. 8B/70B params, 1000+ languages
