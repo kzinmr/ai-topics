@@ -2,7 +2,9 @@
 title: Microsoft AI Team
 type: entity
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-22
+
+## MAI-Thinking-1\nMAI-Thinking-1 is a 35B active / 1T total artwork MoE model developed by Microsoft AI. It was built using a "hill-climbing machine" approach, treating model development as an iterative optimization process through reinforcement learning and scaling-focused frameworks.
 tags:
   - organization
   - ai

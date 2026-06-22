@@ -4,21 +4,18 @@ type: concept
 created: 2026-06-22
 updated: 2026-06-22
 tags:
-  - agent-safety
-  - geopolitics
-
+  - ai-safety
+  - alignment
+  - singularity
 ---
 # Superintelligence
 
-Superintelligence refers to artificial intelligences that surpass human performance across all domains, including creative creativity, general scientific wisdom, and social skills.
+Superintelligence refers to AI systems that surpass human ability across all domains, including scientific creativity and general social skills. Recent discussions often reframe superintelligence not as a single "mind" but as a distributed system of AI services.
 
-## Key Concepts
-- **Existential Risk**: The concern that a superintelligent AI could pose an existential threat to humanity.
-- **Alignment Problem**: The challenge of ensuring that superintelligent systems pursue goals consistent with human values and interests.
-- **Intelligence Explosion**: The theoretical scenario where an AI improves itself recursively, leading to rapid growth.
-
-## Related way
-- [[entities/eric-drexler]]
+## Key Ideas
+- **Comprehensive AI Services (CAIS)**: A model where agents are a class of service-providing products rather than a necessary engine of progress.
+- **Distributed Systems**: Shifting focus from opaque, unitary agents to asymptotically way superintelligent AI services.
+- **AI Safety and Strategy**: The challenge of harnessing advanced AI to solve broad human problems while maintaining human control.
 
 ## Sources
-- [Reframing Superintelligence](~/wiki/raw/articles/reframing-superintelligence-2019.md)독
+- [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)

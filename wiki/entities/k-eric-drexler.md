@@ -2,7 +2,7 @@
 title: "K. Eric Drexler"
 type: entity
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-06-22
 tags:
   - person
   - superintelligence

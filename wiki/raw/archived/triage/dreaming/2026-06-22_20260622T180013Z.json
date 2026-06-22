@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-06-22T18:15:38.253907+00:00",
+  "triage_run_id": "20260622T180013Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming triage (2026-06-15〜22): 212件のraw記事から34件を未処理として検出。active-crawl (11:20 UTC) で4件処理済み、blog-wiki-ingestで2件処理済み。残り28件を精査し、Take=2（Claude Code hooks/steering記事、Martin Fowler PRINCEケーススタディ）、Reference=2（Elvis Saravia loop engineering、Ian Barber LLM複雑化）、Skip=8+バッチ（Anyscale Ray 9本、Glean UI、SaaS分析等）に分類。Claude Code steering記事はhook概念がWiki未カバーの新領域。Martin Fowler entity pageは41行のスケルトンでPRINCE具体内容なし。",
+  "decisions": [
+    {
+      "item_id": "dream-003",
+      "source": "blog",
+      "source_name": "Elvis Saravia (@omarsar0)",
+      "title": "From Prompting Agents to Loop Engineering",
+      "url": "https://x.com/i/article/2068004233849290752",
+      "raw_path": "~/wiki/raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ concepts/loop-engineering.mdは既にomarsar0記事をsourcesに含み、Steinberger/Cherny引用も記載済み。911 likes, 2.2M viewsの高エンゲージメント記事だが、概念ページへの内容反映は完了。entity page (entities/elvis-saravia.md) へのループ工学貢献の追記は参考程度。",
+      "candidate_wiki_path": "entities/elvis-saravia.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-005",
+      "source": "blog",
+      "source_name": "Cloudflare Blog",
+      "title": "Temporary Cloudflare Accounts for AI Agents",
+      "url": "https://blog.cloudflare.com/temporary-accounts/",
+      "raw_path": "~/wiki/raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ concepts/cloudflare-agents.mdが既にtemporary accounts機能を詳細カバー済み（wrangler deploy --temporary, 60分有効, claim URL）。記事の内容はWiki反映済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-006",
+      "source": "blog",
+      "source_name": "Glean Blog",
+      "title": "What is No-Code automation? The complete guide",
+      "url": "https://www.glean.com/blog/what-is-no-code-automation",
+      "raw_path": "~/wiki/raw/articles/2026-06-22_glean_what-is-no-code-automation.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 34KBの大半はGlean社サイトのナビゲーション/マーケティングUI（Product, Solutions, Customers等のメニュー構造）。記事本文はno-code automationの一般ガイドでAI技術的深度が低い。entities/glean.mdは146行で充実。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-007",
+      "source": "blog",
+      "source_name": "Brad Lyons (@blyons151)",
+      "title": "The SaaSpocalypse: Where Vertical SaaS Goes Next",
+      "url": "https://x.com/blyons151/status/2045273056214470915",
+      "raw_path": "~/wiki/raw/articles/2026-04-17_blyons151_saas-vertical-moats-ai-disruption.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ SaaS × AI disruptionのビジネス分析。Palantir, Veeva, Tyler Technologies等の具体例付きだが、AI技術ではなくSaaS投資・ moat理論の話。WikiのAI技術焦点からはややズレる。日付も2026-04-17と古い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-009",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Generating Z3/Python code with Claude",
+      "url": "https://www.johndcook.com/blog/2026/06/20/z3-python-claude/",
+      "raw_path": "~/wiki/raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ClaudeでZ3/Pythonコードを生成してチェスパズルを解くニッチな実験記事。数学パズル×LLMの交差点だが、WikiのAI技術焦点からは外れる。entities/johndcook.comは存在するが追記価値は低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-batch-anyscale",
+      "source": "blog",
+      "source_name": "anyscale.com",
+      "title": "[Batch] Anyscale Ray version history (9 articles)",
+      "url": "https://anyscale.com/blog/",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Anyscale/Ray 2.3〜2.8のバージョンリリース記事9本。全て過去のリリース告知で、entities/anyscale.md（58行）は既存だがRay生態系の包括的エンリッチにはならない。175B学習at 1000 GPUスケールの記事は技術的に興味深いが、Ray自体の概念ページが不在の状態では個別記事の価値が限定的。バッチ全体をスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Ray 2.3, 2.4, 2.5, 2.6, 2.7, 2.8 feature announcements; High-Performance LLM Training at 1000 GPU Scale; Many-Model Batch Training; Automatic Memory Scheduling for ML Workloads; Ray Summit sessions."
+    },
+    {
+      "item_id": "dream-010",
+      "source": "blog",
+      "source_name": "ElevenLabs Blog",
+      "title": "Anarock scales AI voice agents for sales by 5X with ElevenLabs",
+      "url": "https://elevenlabs.io/blog/anarock",
+      "raw_path": "~/wiki/raw/articles/2026-06-22_elevenlabs_anarock.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ElevenLabsの顧客事例（Anarock不動産AI音声エージェント5Xスケール）。entities/elevenlabs.mdは216行で充実しており、個別顧客事例の追加価値は低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-011",
+      "source": "blog",
+      "source_name": "Trending Topics",
+      "title": "Trending Topics Report — 2026-06-21",
+      "url": null,
+      "raw_path": "~/wiki/raw/articles/2026-06-21_trending-topics-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ trending-topics cron jobの内部レポート。Wiki記事ではなく自動生成のトピックリスト。処理不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-012",
+      "source": "blog",
+      "source_name": "Active Crawl (already processed)",
+      "title": "[Already in wiki] Apertus, DeerFlow, Sakana Fugu, Headroom",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ active-crawl (2026-06-22 11:20 UTC) で既にWiki作成・エンリッチ済み。concepts/apertus, concepts/deer-flow, concepts/sakana-fugu, concepts/headroom, entities/apertus, entities/bytedance, entities/sakana-aiが同日処理。再処理不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（active-crawl済み — concepts/apertus, concepts/deer-flow, concepts/sakana-fugu, concepts/headroom 作成済み）"
+    }
+  ]
+}

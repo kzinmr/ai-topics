@@ -1,3 +1,14 @@
+## [2026-06-22] Dreaming Wiki Ingest — Martin Fowler PRINCE enrichment + cross-ref fixes
+**Timestamp:** 2026-06-22 18:15 UTC
+**Source:** dreaming-group triage (recovered from checkpoint, upstream render failure)
+- **Take:** entities/martin-fowler.md enriched with Bayer PRINCE case study (+66 lines, 41→107):
+  - Search→Ask→Do evolution, 3-agent workflow (Researcher/Reflection/Writer)
+  - Context engineering (4 context types) + harness engineering (Langfuse/RAGAS/CloudWatch)
+  - Cross-wikilinks to [[concepts/reliable-agent-patterns]], [[concepts/agentic-rag]], [[concepts/harness-engineering]], [[concepts/context-engineering]]
+- **Reference:** concepts/claude-code/claude-code.md → cross-ref to [[concepts/claude-code/claude-code-steering-methods]]
+- **Skip (12):** dream-001 steering-methods already exists; dream-003/004 entity pages cover; Cloudflare accounts, Glean, Anyscale batch (9), ElevenLabs, SaaSpocalypse, lcamtuf, johndcook, active-crawl processed (4), trending-topics report
+- **Archive:** 14 decisions processed, 3 newly archived, 11 deduped (total: 1067 archived URLs)
+
 ## [2026-06-22] Active Crawl — 5 trending topics documented
 
 **Source:** active-crawl (HN Algolia + X/Twitter + wiki gap analysis)

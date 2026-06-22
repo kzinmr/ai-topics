@@ -2,7 +2,7 @@
 title: Dario Amodei
 type: entity
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-22\n\n## AI way\nDiscusses the accelerating pace of AI development and the need for policy to keep pace with exponential growth.
 tags: [person, anthropic, policy]
 ---
 # Dario Amodei

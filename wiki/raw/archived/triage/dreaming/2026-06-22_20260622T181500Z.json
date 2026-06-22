@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-06-22T18:23:28.201673+00:00",
+  "triage_run_id": "20260622T181500Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming Wiki Ingest (2026-06-22 18:15 UTC): 212件のraw記事から34件未処理を検出。Take=1（entities/martin-fowler.md エンリッチ: Bayer PRINCE事例、+66行）、Reference=1（claude-code.md→steering-methods.md相互参照追加）、Skip=32（dream-001 steering-methods既存、dream-003/004既存エンティティカバー、他バッチskip: Anyscale/Ray 9本、Glean、ElevenLabs、SaaSpocalypse、lcamtuf、johndcook、active-crawl処理済み4件等）。",
+  "decisions": [
+    {
+      "item_id": "dream-002",
+      "source": "blog",
+      "source_name": "martinfowler.com",
+      "title": "Building Reliable Agentic AI Systems (Bayer PRINCE)",
+      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+      "raw_path": "~/wiki/raw/articles/2026-06-19_martinfowler_reliable-agentic-ai-systems.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ entities/martin-fowler.md にPRINCE事例を+66行で追加。Bayer AG×Thoughtworks、Search→Ask→Do進化、3-agent workflow（Researcher/Reflection/Writer）、LangGraph+FastAPI、OpenSearch/Athena/PostgreSQL/DynamoDB、context engineering（4種のcontext）、harness engineering（二重retry、Langfuse+RAGAS観測）。すでに存在したreliable-agent-patterns.md（129行）とagentic-rag.md（127行）の概念ページを補完する形でエンティティページを強化。",
+      "candidate_wiki_path": "entities/martin-fowler.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-011",
+      "source": "blog",
+      "source_name": "Trending Topics",
+      "title": "Trending Topics Report — 2026-06-21",
+      "url": null,
+      "raw_path": "~/wiki/raw/articles/2026-06-21_trending-topics-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ trending-topics cron jobの内部レポート。処理不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dream-012",
+      "source": "blog",
+      "source_name": "Active Crawl (already processed)",
+      "title": "[Already in wiki] Apertus, DeerFlow, Sakana Fugu, Headroom",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ active-crawl（2026-06-22 11:20 UTC）で既にWiki作成・エンリッチ済み。再処理不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（active-crawl済み — concepts/apertus, concepts/deer-flow, concepts/sakana-fugu, concepts/headroom 作成済み）"
+    }
+  ]
+}

@@ -2,7 +2,9 @@
 title: "Alex Imas"
 type: entity
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-06-22
+
+## AGI Economics\nExplores the economic implications of AGI, focusing on what remains scarce (like relational services) and the potential for shifts in the labor market.
 tags:
   - economics
   - agi

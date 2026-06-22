@@ -46,6 +46,8 @@ This capability builds on the parallel agent patterns already used by organizati
 
 Dynamic Workflows represents Anthropic's move toward automated multi-agent orchestration at scale, where the tool itself handles subagent spawning, work distribution, and output verification rather than requiring the engineer to manually launch and monitor parallel agents.
 
+For a detailed breakdown of Claude Code's seven customization methods — CLAUDE.md, rules, skills, subagents, hooks, output styles, and system prompt append — see [[concepts/claude-code/claude-code-steering-methods|Claude Code Steering Methods]].
+
 ## Pattern 1: Parallel Agents, Not Single Chat
 
 The foundational pattern shift: Claude Code is not a single-prompt-single-response tool at scale. Senior engineers launch **multiple agents simultaneously**, each working on different parts of the codebase:
