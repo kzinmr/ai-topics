@@ -1,4 +1,12 @@
 # Wiki Log
+- 2026-06-23: Blog wiki-ingest — enriched 6 pages (4 takes from blog-triage, recovered from checkpoint).
+  - Enriched `entities/simon-willison.md` — Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code
+  - Enriched `entities/martin-alderson.md` — added Machine Learning Research section with expert-aware quantization for MoE models (Qwen3.6 35B-A3B, Q4-hot/Q2-cold recovers ~90% gap)
+  - Enriched `entities/modal-labs.md` — added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools)
+  - Enriched `concepts/agentic-engineering.md` — added Moebius browser porting case study (muse-on-X, subagent delegation, vibe coding)
+  - Enriched `concepts/model-quantization.md` — added Expert-Aware Quantization (MoE-specific) subsection
+  - Enriched `concepts/modal-sandboxes.md` — added 5-stage sandbox startup lifecycle and Readiness Probes
+  - Sources: simonwillison.net (Prompt Injection as Role Confusion, Porting Moebius), martinalderson.com (Expert-aware quantisation), Modal Blog (Sandbox startup latency)
 - 2026-06-23: Newsletter wiki-ingest — processed 3 articles from 6 newsletters.
   - Enriched `entities/glm-5-zai.md` — added Nate Lambert analysis of GLM-5.2 as "step change for open agents" (strategic release context, economic impact, first-hand experience, ecosystem adoption)
   - Enriched `concepts/google-spacex-ai-compute-deal.md` — added Reflection AI $6.3B deal (SpaceX's third GPU rental customer), SpaceX as $28B/yr neocloud, Baseten $13B Series F

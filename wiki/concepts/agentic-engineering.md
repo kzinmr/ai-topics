@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-06-08
+updated: 2026-06-23
 type: concept
 tags:
   - concept
@@ -19,6 +19,7 @@ sources:
   - transcripts/2026-05-29_vanishing-gradients_show-us-your-agent-skills-ep4.md
   - raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md
   - raw/articles/2026-06-08_linkedin-ido-pesok_verifying-agentic-development-at-scale.md
+  - raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md
 ---
 
 # Agentic Engineering
@@ -207,6 +208,10 @@ Acknowledged the mental health dimension: "Building with agents is the greatest 
 
 **Source**: [[raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md]]
 
+
+### Case Study: Porting Moebius to Browser with Claude Code
+
+**Porting Moebius 0.2B to Browser with Claude Code** (Jun 22, 2026): Simon Willison ported a PyTorch/CUDA image inpainting model to run in-browser via ONNX Runtime Web on WebGPU, using Claude Code as the sole implementation agent (never reading the generated code). Key techniques demonstrated: (1) 'Muse on X' — asking an LLM to contemplate feasibility before committing to a plan, the shortest proven prompt for open-ended problem exploration; (2) Subagent delegation — Claude Code spawned a subagent to analyze Whisper Web's obfuscated JavaScript to reverse-engineer the CacheStorage pattern; (3) Autonomous ONNX conversion — Claude autonomously ran Hugging Face weight conversion to ONNX (1.24GB), published to Hugging Face, and deployed via GitHub Pages without the developer touching the conversion pipeline; (4) Agent-kept notes — Claude maintained a running notes.md reflecting discoveries, serving as inter-session state for future agent sessions. This is a pure vibe coding case study where the human acted only as tester and direction-setter. Source: [[raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md]]
 
 ## Related Concepts
 

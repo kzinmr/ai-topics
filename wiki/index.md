@@ -11,6 +11,9 @@
 - [[entities/phil-trammell]] — Phil Trammell is a researcher working alongside Alex Imas on the economic frameworks and strategic challenges surrounding AGI.
 - [[entities/dario-amodei]] — Dario Amodei is the co-founder and CEO of Anthropic. He is a leading voice on AI policy and the implications of exponential AI growth.
 - [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
+- [[entities/simon-willison]] — Simon Willison; enriched with Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code (June 23)
+- [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
+- [[entities/modal-labs]] — Modal Labs; added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools) (June 23)
 
 ## Concepts (Updated)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
@@ -19,3 +22,6 @@
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) is a model proposed by K. Eric Drexler that reframes superintelligence as a class of service-providing products.
 - [[concepts/mai-thinking-1-report]] — MAI-Thinking-1 is a technical model developed by the Microsoft AI Team, described as a "hill-climbing machine" for advanced reasoning.
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
+- [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Moebius browser porting case study (muse-on-X, subagent delegation, ONNX→WebGPU) (June 23)
+- [[concepts/model-quantization]] — Model Quantization; enriched with Expert-Aware Quantization (MoE-specific: Q4-hot/Q2-cold recovers ~90% of Q2→Q4 gap) (June 23)
+- [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23)

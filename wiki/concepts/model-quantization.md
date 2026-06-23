@@ -2,7 +2,7 @@
 title: "Model Quantization"
 type: concept
 created: 2026-04-25
-updated: 2026-05-26
+updated: 2026-06-23
 tags:
   - concept
   - quantization
@@ -15,6 +15,7 @@ sources:
   - https://arxiv.org/abs/2208.07339
   - https://arxiv.org/abs/2310.11453
   - https://arxiv.org/abs/2402.17764
+  - raw/articles/martinalderson.com--posts-expert-aware-quantisation--532b8e2a.md
 related:
   - "[[concepts/gguf-quantization]]"
   - "[[concepts/local-llm/model-quantization]]"
@@ -343,6 +344,10 @@ NF4            | 80.9% | 35 GB
 | GPU only (sufficient VRAM) | GPTQ / AWQ | High throughput, batch inference |
 | VRAM constrained (CPU assist) | GGUF | Block-wise quantization + offloading |
 | No GPU (CPU/Apple Silicon) | GGUF Q4_K_M or higher | llama.cpp optimized |
+
+### Expert-Aware Quantization (MoE-Specific)
+
+For Mixture-of-Experts models, a per-expert quantization strategy has emerged: profile which experts are 'hot' (heavily routed to) vs 'cold' (rarely used) for specific tasks, then apply higher precision (Q4-Q8) to hot experts and aggressive quantization (Q2) to cold ones. Martin Alderson demonstrated this on Qwen3.6 35B-A3B for C++ code generation, achieving Q4-hot/Q2-cold at 14GB that recovers ~90% of the quality gap between uniform Q2 (13GB) and uniform Q4 (20GB). The approach exploits expert routing concentration — the top 32/256 experts handle ~50% of routing during code generation (Gini coefficient 0.61). Prior art includes DynaExq (dynamic runtime precision control from router traces), Mixture-Compressor (activation-frequency per-expert bit allocation), and MoPEQ (sensitivity-based allocation). Source: [[raw/articles/martinalderson.com--posts-expert-aware-quantisation--532b8e2a.md]]
 
 ## 10. KV Cache Quantization
 

@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-06-20
+updated: 2026-06-23
 tags:
   - company
   - infrastructure
@@ -13,6 +13,7 @@ sources:
   - https://modal.com/company
   - raw/articles/modal.com--blog-spec-is-all-u-need--42b624c7.md
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md
+  - raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
 ---
 
 # Modal Labs
@@ -74,5 +75,26 @@ Modal argues that open-source engines **SGLang** and **vLLM** have closed the ga
 
 - **Z Lab partnership** — Modal collaborates with Z Lab on Qwen 3.5 model speculators
 - **Hugging Face releases** — DFlash speculators published as open-weight models on Hugging Face
+
+## Sandbox Startup Latency Analysis
+
+Modal published an in-depth analysis of sandbox startup latency (Jun 2026), defining a 5-stage lifecycle:
+
+1. **Created**: Sandbox requested, no resources allocated yet. Asynchronous — negligible latency.
+2. **Scheduled**: Assigned to a worker, provisioning CPU/memory/GPU/volumes. Depends on capacity availability speed.
+3. **Started**: Container live, entrypoint running, network tunnels active. `exec(...)` becomes available. This is what most benchmarks measure.
+4. **Ready**: Application-level initialization finished (git clone, npm install, server boot). This gap between Started and Ready is the largest real-world latency factor, often multiple seconds.
+5. **In use**: Sandbox handling real work.
+
+**Key insight**: application-level setup (git pull, dependency install, server startup) dominates perceived latency, not container scheduling. Shaving milliseconds off container boot has negligible impact when setup takes 30 seconds.
+
+**Solutions**:
+- **Warm Pools**: Pre-initialized sandboxes in a modal.Queue, with a background producer maintaining pool fullness. Perceived latency drops to fetch-from-pool time.
+- **Directory Snapshots**: Mount per-project state into generic warm sandboxes instantly, avoiding per-user rebuilds.
+- **Readiness Probes** (GA): Shell command (exit 0) or TCP port check. `sandbox.wait_until_ready()` blocks until the probe passes. Adds 'ready' event to dashboard timeline for observability alongside scheduled, started, terminated events.
+
+This is architecturally significant for AI coding agents (background agent workflows), vibe coding platforms (user-facing server startup), and computer-use RL training (pre-warm environments for rollout throughput).
+
+Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
 
 See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[entities/vllm]]

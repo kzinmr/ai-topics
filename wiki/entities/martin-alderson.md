@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-06-17
+updated: 2026-06-23
 tags:
   - person
   - blogger
@@ -11,6 +11,7 @@ tags:
   - product
   - developer-tooling
   - economics
+  - quantization
   - company
 sources:
   - raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md
@@ -18,6 +19,7 @@ sources:
   - raw/articles/martinalderson.com--posts-is-datacentre-sovereignty-really-that-important--8195ad72.md
   - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
   - raw/articles/martinalderson.com--posts-a-brief-history-of-kv-cache-compression-developments--c7414ee7.md
+  - raw/articles/martinalderson.com--posts-expert-aware-quantisation--532b8e2a.md
 ---
 
 
@@ -211,6 +213,31 @@ Martin's conclusion: the UK should focus on attracting frontier lab offices and 
 ### Podcast: Built for Turbulence (Jun 2026)
 
 Martin appeared on Radical's **"Built for Turbulence"** podcast discussing AI agents' impact on software economics. Topics: 5 people with agents vs 500-person company, the **"Figma Trap"** (paying competitors through own customer usage), why AI-unaudited human-written code is becoming reckless, open weights closing up, and whether small-team-with-agents advantage is temporary. Source: [[raw/articles/martinalderson.com--posts-built-for-turbulence-podcast--40b40da5.md]]
+
+## Machine Learning Research
+
+### Expert-Aware Quantization for MoE Models (Jun 2026)
+
+Martin explored selective per-expert quantization for Mixture-of-Experts models, demonstrating that profiling which experts are 'hot' (heavily used) vs 'cold' (rarely used) for specific tasks enables near-Q4 quality at near-Q2 size. Using Qwen3.6 35B-A3B profiled on C++ code generation:
+
+| Method | Size | Perplexity (reading) | Perplexity (writing) |
+|--------|------|---------------------|---------------------|
+| Q8 (baseline) | 35GB | 1.568 | — |
+| Uniform Q4 | 20GB | 1.582 | 1.449 |
+| Q8-hot/Q2-cold (profiled) | 18GB | 1.620 | 1.456 |
+| Q4-hot/Q2-cold (profiled) | 14GB | 1.635 | 1.477 |
+| Uniform Q2 | 13GB | 2.103 | 1.977 |
+
+Key findings:
+- C++ code generation shows heavy expert concentration: per-layer Gini coefficient of 0.61, with top 32/256 experts handling ~50% of routing
+- Profiled expert selection beats random selection across all metrics
+- Q4-hot/Q2-cold (14GB) recovers ~90% of the quality gap between uniform Q2 and Q4 for just 1GB more
+- The approach is not production-ready but could enable domain-specific model variants (one per task domain)
+- The llama.cpp modification was implemented autonomously by Claude Code running for ~90 minutes
+
+**Prior art reviewed**: DynaExq (dynamic runtime precision control from router traces), Mixture-Compressor (activation-frequency per-expert bit allocation), MoPEQ (sensitivity-based per-expert bits without activation frequency), foundational quantization methods (AWQ, GPTQ, SmoothQuant, SpQR), llama.cpp imatrix/k-quants, Apple's mixed 2/4-bit on-device scheme.
+
+Source: [[raw/articles/martinalderson.com--posts-expert-aware-quantisation--532b8e2a.md]]
 
 ## References
 

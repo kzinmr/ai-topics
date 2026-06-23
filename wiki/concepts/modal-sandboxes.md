@@ -1,10 +1,12 @@
 ---
 title: Modal Sandboxes
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-06-23
 type: concept
 tags: [ai-agents, infrastructure, coding-agents]
-sources: [raw/articles/2026-04-30_ramp-inspect-background-agent.md]
+sources:
+  - raw/articles/2026-04-30_ramp-inspect-background-agent.md
+  - raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
 ---
 
 # Modal Sandboxes
@@ -33,6 +35,24 @@ User types prompt → Modal sandbox warms up (pre-cloned image)
         → Tests run in sandbox
           → PR opened via user's GitHub token
 ```
+
+### Sandbox Startup Lifecycle
+
+Modal defines a 5-stage lifecycle for sandbox startup:
+
+1. **Created** — Sandbox requested, no resources allocated yet. `Sandbox.create()` is asynchronous.
+2. **Scheduled** — Assigned to a worker provisioning CPU/memory/GPU/volumes.
+3. **Started** — Container live, entrypoint running, tunnels active. `exec(...)` available.
+4. **Ready** — Application-level initialization complete (git clone, npm install, server boot). This gap is the largest real-world latency factor.
+5. **In use** — Sandbox handling real work.
+
+**Readiness Probes** (GA Jun 2026): Shell command (exit 0) or TCP port check. `sandbox.wait_until_ready()` blocks until ready. Dashboard shows 'ready' event alongside scheduled/started/terminated events.
+
+**Optimizations**:
+- **Warm Pools**: Pre-initialized sandboxes in modal.Queue, background producer maintains fullness, perceived latency drops to fetch-from-pool time.
+- **Directory Snapshots**: Instant per-project state mount into generic warm sandboxes, avoiding per-user rebuilds.
+
+Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
 
 ## Key Advantages Over Docker/Local
 
