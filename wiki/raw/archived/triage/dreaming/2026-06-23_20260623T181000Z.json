@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-06-23T18:26:11.056256+00:00",
+  "triage_run_id": "20260623T181000Z",
+  "source": "dreaming",
+  "summary_ja": "2026-06-16〜23のdreaming-group分析。202件のraw記事から187件が未処理。本日のパイプライン(active-crawl, blog-wiki-ingest, newsletter-wiki-ingest)で既にVibeThinker-3B、OpenAI Daybreak、Apertus、prompt injection、Moebius、expert-aware quantization、Modal sandbox等を処理済み。新規take 2件（Anthropic Claude Code公式ドキュメント、Martin Fowler agentic AIケーススタディ）、reference 10件（Warp Skills、Cloudflare一時アカウント、loop engineering、Harvey、SaaS disruption等）、skip 13件（Anyscale過去記事、非AI記事、既処理記事）。",
+  "decisions": [
+    {
+      "item_id": "dreaming-nonai-batch",
+      "source": "blog",
+      "source_name": "Various",
+      "title": "Non-AI articles batch (John Cook math, basicappleguy macOS, shkspr.mobi copyleft, dfarq AMD, borretti materialism, etc.)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ★☆☆☆☆ 非AI記事バッチスキップ。数学（johndcook）、macOSアイコン比較、copyleftライセンス、AMD Athlon歴史、唯物論哲学など",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Mathematics, macOS customization, copyleft licensing, AMD CPU history, philosophy — none AI-related."
+    },
+    {
+      "item_id": "dreaming-trending-report",
+      "source": "blog",
+      "source_name": "Internal",
+      "title": "Trending Topics Report 2026-06-21",
+      "url": null,
+      "raw_path": "~/wiki/raw/articles/2026-06-21_trending-topics-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ★★☆☆☆ 内部トレンドレポート。wiki固有の生成物。スキップ",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

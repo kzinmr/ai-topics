@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Skills — Mechanism and Role Patterns"
 created: 2026-05-15
-updated: 2026-06-04
+updated: 2026-06-23
 type: concept
 tags:
   - claude-code
@@ -10,10 +10,17 @@ tags:
   - ai-agent-engineering
   - skill-graph
   - developer-tooling
+  - customization
+  - claudefile
+  - rules
+  - hooks
+  - subagents
+  - system-prompt
 sources:
   - raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md
   - https://x.com/trq212/status/2033949937936085378
   - "[[raw/articles/2026-06-03_anthropic_claude-code-feedback-loops]]"
+  - "[[raw/articles/2026-06-18_anthropic_steering-claude-code-skills-hooks-rules-subagents-and-more]]"
 related:
   - agent-skills
   - skill-architecture-patterns
@@ -82,6 +89,99 @@ Skills can save their own state to the filesystem:
 - **append-only logs**: `standups.log` stores past post history → enables delta detection on next execution
 - **JSON/SQLite**: Structured data storage
 - **`${CLAUDE_PLUGIN_DATA}`**: Stable storage path that survives Skill upgrades
+
+## Official Steering Methods (Anthropic Documentation)
+
+Anthropic's official blog post ([[raw/articles/2026-06-18_anthropic_steering-claude-code-skills-hooks-rules-subagents-and-more]]) defines **seven methods** for instructing Claude's behavior in Claude Code. Each method controls when an instruction loads into context, whether it persists through compaction, and how much authority it carries. Understanding these trade-offs is essential for effective [[concepts/claude-code/agentic-engineering-patterns]] design.
+
+### 1. CLAUDE.md Files
+
+Markdown files at the project root (`CLAUDE.md`) loaded at session start and persisted across compaction (re-read on compaction).
+
+- **Root CLAUDE.md**: Always loaded, memoized once, re-read on compaction. High context cost — every line costs tokens whether relevant or not. Best for build commands, directory layout, monorepo structure, coding conventions, and team norms. Anthropic recommends keeping it under 200 lines with an assigned owner.
+- **Subdirectory CLAUDE.md**: On-demand loading — only when Claude reads a file under that subdirectory. Low context cost; lost until that subdirectory is touched again. Ideal for team-specific conventions in monorepos.
+- **Tip**: Push team-specific conventions into path-scoped rules and procedures into skills. Use `claudeMdExcludes` to skip irrelevant subdirectory files.
+
+### 2. Rules
+
+Markdown files in `.claude/rules/` with optional YAML frontmatter `paths:` field for scoping.
+
+- **Unscoped rules**: Always loaded at session start, re-injected on compaction. Medium context cost — same as CLAUDE.md in behaviour.
+- **Path-scoped rules**: Load only when Claude reads files matching the path pattern (e.g., `paths: ["src/api/**"]`). Low context cost. Best for specific constraints like "migrations are append-only" or "all API handlers must validate input with Zod."
+- **Tip**: Reach for a path-scoped rule over a nested CLAUDE.md when the instruction covers a cross-cutting concern across multiple (but not all) corners of the codebase.
+
+### 3. Skills
+
+Folders in `.claude/skills/` containing `SKILL.md`, scripts, and resources. Covered in detail in the sections above.
+
+- Name and description load at session start; full body loads only when the skill is invoked (via slash command or auto-matching).
+- On compaction: invoked skills are re-injected up to a shared budget; oldest dropped first.
+- **Low context cost**: full body loads only when invoked, subject to a shared token budget.
+- **Best for**: Procedural workflows — deploy runbooks, release checklists, review processes.
+
+### 4. Subagents
+
+Markdown files in `.claude/agents/` defining isolated assistants for specific side tasks.
+
+- Name, description, and tool list load at session start; body (the system prompt for the subagent) never enters the parent conversation.
+- Runs in its own fresh context window. Only the final message (summary + metadata) returns to the parent session.
+- Can nest up to 5 levels deep; orchestrated dynamic workflows can spawn tens to hundreds of subagents without bloating the main context window.
+- **Low context cost**: zero cost in main context until called.
+- **Best for**: Side tasks that would clutter the main conversation — deep search, log analysis, dependency audits. Use a subagent when you want isolation; use a skill when you want the procedure in the main thread for visibility.
+
+### 5. Hooks
+
+User-defined commands, HTTP endpoints, or LLM prompts that fire deterministically on specific lifecycle events: `PreToolUse`, `PostToolUse`, `PreCompact`, and others.
+
+- Registered in `settings.json`, managed policy settings, or skill/agent frontmatter.
+- Five hook types: command, HTTP, mcp_tool (deterministic execution), prompt, agent (Claude-judged output).
+- **Very low context cost**: configuration lives outside the main context window. The harness runs the handler; output may optionally return to context (e.g., blocking errors).
+- **Best for**: Deterministic automation — running linters after edits, posting to Slack on completion, blocking dangerous commands, backing up chat history on `PreCompact`.
+- **Key distinction**: A `PreToolUse` hook inspecting a tool call and exiting code 2 provides a *deterministic guardrail* that model instructions cannot match.
+
+### 6. Output Styles
+
+Files in `.claude/output-styles/` that inject instructions directly into the system prompt.
+
+- Load at session start, never compacted, cached after the first request.
+- Replace the default output style entirely (unless `keep-coding-instructions: true` is set).
+- **Highest instruction-following weight** of any method — but dropping the default style turns Claude Code into a general assistant, removing software-engineering-specific instructions (scope changes, comments, security, verification habits).
+- **Best for**: Significant role changes (e.g., code assistant → general assistant). Before writing a custom style, check built-in styles: **Proactive**, **Explanatory**, and **Learning** cover most common needs.
+
+### 7. Appending the System Prompt
+
+CLI flag that adds instructions to — without replacing — the default system prompt.
+
+- Passed at invocation time, applies only to that invocation, not persisted across sessions.
+- Additive only — does not modify Claude's role. Lower risk than output styles.
+- **Moderate context cost**: increases input tokens; prompt caching reduces cost after first request. Longer styles also increase output tokens.
+- **_Diminishing returns_**: the more instructions added, the less strictly Claude follows them, especially if any contradict.
+- **Best for**: Tone, response length, formatting preferences, per-invocation coding standards.
+
+### Comparison Table
+
+| Method | When It's Loaded | Compaction Behaviour | Context Cost | When to Use |
+|--------|-----------------|-------------------|--------------|-------------|
+| CLAUDE.md (root) | Session start; stays all session | Memoized & cached; re-read on compaction | **High** — every line costs tokens | Build commands, layout, conventions, team norms |
+| CLAUDE.md (subdirectory) | On-demand, when subdirectory files are read | Lost until subdirectory touched again | **Low** — only when relevant | Subdirectory-specific conventions |
+| Rules | Session start (unscoped) or on file match (path-scoped) | Re-injected on compaction | **Medium** — always-on unless path-scoped | Specific constraints (e.g., "Zod validation required") |
+| Skills | Name+description at start; body on invoke | Invoked skills re-injected up to shared budget; oldest dropped | **Low** — full body only when invoked | Procedural workflows (deploy, release checklists) |
+| Subagents | Name+description+tools at start; body on Agent call | Only final message returns to session | **Low** — zero cost until called; runs in isolated context | Parallel/isolation tasks (deep search, log audit) |
+| Hooks | Fires on lifecycle events | Bypass compaction entirely | **Low** — config outside context; some output may return | Deterministic automation (linters, Slack, blocking) |
+| Output styles | Session start; injected into system prompt | Never compacted | **High** — occupies context; overwrites default system prompt | Significant role changes |
+| Appending system prompt | Session start (CLI flag) | Never compacted; per-invocation | **Moderate** — cached after first request | Tone, length, per-invocation formatting |
+
+### Quick Decision Guide
+
+From Anthropic's recommendations:
+
+- **"Every time X, always do Y" in CLAUDE.md** → Use a **hook** instead (deterministic, not model-choice-dependent).
+- **"Never do this" in CLAUDE.md** → Use a **hook** + **permissions** (deterministic guardrail; model instructions fail under pressure).
+- **A 30-line procedure in CLAUDE.md** → Use a **skill** (loads only when invoked).
+- **An API-specific rule without paths** → Use a **path-scoped rule** (keeps it out of irrelevant contexts).
+- **Personal preferences in project CLAUDE.md** → Use **local user-level files** instead.
+
+Source: [[raw/articles/2026-06-18_anthropic_steering-claude-code-skills-hooks-rules-subagents-and-more]] · See also: [[concepts/claude-code/agentic-engineering-patterns]], [[entities/anthropic]]
 
 ## Role Patterns (9 Types of Skills)
 

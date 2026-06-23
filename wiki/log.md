@@ -8,6 +8,9 @@
   - Fixed 2 broken wikilinks
   - Sources: HN Algolia (16 trending stories), X/Twitter xurl (10 results), blogwatcher DB, wiki gap analysis
 # Wiki Log
+- 2026-06-23: Created entities/martinfowler.md — Martin Fowler entity page enriched with PRINCE case study (Bayer AG + Thoughtworks, Agentic RAG + Text-to-SQL), context engineering and harness engineering sections. Added redirect from martin-fowler.md. (June 23)
+- 2026-06-23: Dreaming wiki-ingest — enriched `concepts/claude-code/claude-code-skills.md` with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt, comparison table). +100 lines. (June 23)
+  - Sources: Anthropic Engineering Blog (Steering Claude Code)
 - 2026-06-23: Blog wiki-ingest — enriched 6 pages (4 takes from blog-triage, recovered from checkpoint).
   - Enriched `entities/simon-willison.md` — Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code
   - Enriched `entities/martin-alderson.md` — added Machine Learning Research section with expert-aware quantization for MoE models (Qwen3.6 35B-A3B, Q4-hot/Q2-cold recovers ~90% gap)
