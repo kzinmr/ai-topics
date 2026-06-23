@@ -16,6 +16,10 @@
 - [[entities/modal-labs]] — Modal Labs; added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools) (June 23)
 
 ## Concepts (Updated)
+- [[concepts/prompt-injection]] — Prompt Injection — AI security vulnerability where untrusted input manipulates model behavior by exploiting role confusion and tokenization boundaries (June 23)
+- [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
+- [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
+- [[concepts/apertus-sovereign-ai-model]] — Apertus — Open foundation model for sovereign AI (8B/70B), EU AI Act compliant, multilingual (1000+ languages), fully open training pipeline (June 23)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
 - [[concepts/claude/mythos]] — Claude Mythos; enriched with Gray Swan red-teaming analysis, indirect prompt injection, agent security (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
