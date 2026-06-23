@@ -3,6 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
+- [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
