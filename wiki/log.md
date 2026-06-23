@@ -29,3 +29,4 @@
   - Added `2026-06-10_darioamodei_policy-on-the-ai-exponential.md` (Dario Amodei)
   - Added `2026-06-18_agent-safety-separation-of-duties.md` (Aakash Gupta)
   - Created concepts: `superintelligence`, `cais`, `mai-thinking-1-report`, `agent-safety`.
+- 2026-06-23: Watchdog fix — removed 1 ghost entry from concepts/_index.md (concepts/capabilities-based-security — target file did not exist).

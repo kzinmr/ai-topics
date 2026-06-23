@@ -307,10 +307,6 @@ AI and LLM concept pages organized by topic.
 
 - [[concepts/caid-coordination]] — A coordination framework from CMU (2026) for running multiple coding agents in parallel on complex software engineering tasks. Uses git operations as the core coordination primitive.
 
-## Capabilities-Based-Security
-
-- [[concepts/capabilities-based-security]] — Security model starting from zero access, explicitly granting capabilities. See sandbox patterns for full content.
-
 ## Causal-Backbone-Conjecture
 
 - [[concepts/causal-backbone-conjecture]] — The conjecture proposes that agent-like structures emerge naturally from resource constraints, not from the need to model "a sufficiently rich set of tasks." In environments with finite resources (computation, energy, information), the optimal strategy is to allocate resources causally — building a causal backbone that captures the most predictive features.
