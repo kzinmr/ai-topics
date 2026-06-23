@@ -3,6 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
+- [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
 - [[entities/k-eric-drexler]] — K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford.
 - ... ...
@@ -12,6 +13,8 @@
 - [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
 
 ## Concepts (Updated)
+- [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
+- [[concepts/claude/mythos]] — Claude Mythos; enriched with Gray Swan red-teaming analysis, indirect prompt injection, agent security (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) is a model proposed by K. Eric Drexler that reframes superintelligence as a class of service-providing products.
 - [[concepts/mai-thinking-1-report]] — MAI-Thinking-1 is a technical model developed by the Microsoft AI Team, described as a "hill-climbing machine" for advanced reasoning.

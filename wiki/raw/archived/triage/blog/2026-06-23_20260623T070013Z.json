@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-06-23T07:36:53.251082+00:00",
+  "triage_run_id": "20260623T070013Z",
+  "source": "blog",
+  "summary_ja": "2026-06-23 ブログトリアージ。14候補中4件のtake（Simon Willison Prompt Injection/Role Confusion、Moebius移植、Martin Alderson専門家量子化、Modal Sandbox起動レイテンシ）、3件のreference、7件のskip。OpenAI unsaved_articles（Codex-maxxing, Daybreak, Patch the Planet）は抽出不可のためskip。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "mitchellh.com",
+      "title": "Pledging Another $400,000 to the Zig Software Foundation",
+      "url": "https://mitchellh.com/writing/zig-donation-2026",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/mitchellh.com--writing-zig-donation-2026--f51df01d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Zig財団への追加$400,000寄付。ZigのAI禁止ポリシーとMitchellのAI活用姿勢のバランスに関する言及。open source × AI政策の議論としてentities/mitchellh.com（存在すれば）にreference可能。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Pledging Another $400,000 to the Zig Software Foundation\nSource: https://mitchellh.com/writing/zig-donation-2026\nMy family is pledging another $400,000\n1\nto the\nZig Software Foundation\n(ZSF). This brings\nour total pledged support for ZSF to $700,000, after our\ninitial donation in 2024\n.\nZig contin"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Lobachevsky's integral formula",
+      "url": "https://www.johndcook.com/blog/2026/06/22/lobachevskys-integral-formula/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-22-lobachevskys-integral-formula--cb44fb1a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 純粋数学（Lobachevsky積分公式）。Fourier解析・信号処理で有用だがAI/LLMトピックではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Lobachevsky’s integral formula\nSource: https://www.johndcook.com/blog/2026/06/22/lobachevskys-integral-formula/\nLet\nf\nbe an even function with period π. Then the following remarkable theorem by Lobachevsky holds.\nThis theorem is useful in Fourier analysis and signal processing. It’s useful to know"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Gurman Says Second-Gen iPhone Air, Coming in Early 2027, Will Sport a 0.5x Ultra-Wide Second Camera",
+      "url": "https://daringfireball.net/linked/2026/06/22/gurman-iphone-air-2",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/daringfireball.net--linked-2026-06-22-gurman-iphone-air-2--b0d5bd9c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Appleハードウェア（iPhone Air第2世代）。AI要素なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Gurman Says Second-Gen iPhone Air, Coming in Early 2027, Will Sport a 0.5× Ultra-Wide Second Camera\nSource: https://daringfireball.net/linked/2026/06/22/gurman-iphone-air-2\nMark Gurman, reporting for Bloomberg:\nApple Inc. is preparing a second-generation iPhone Air for spring\n2027, aiming to boost"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "devblogs.microsoft.com/oldnewthing",
+      "title": "In memory of the man who put red and green squiggles under words",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260622-00--b8ac69d5.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Raymond Chen追悼記事。Wordの赤/緑波線（スペルチェッカー）実装者Tony Kruegerの功績。歴史的ソフトウェア開発ストーリーでAI関連なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# In memory of the man who put red and green squiggles under words\nSource: https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451\nI recently learned of the passing of someone whose work nearly everybody knows, but nobody knows his name.\nTony Krueger is\nremembered in Wikipedia\nas the person"
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Consistency, But in Excellence Not Appearance",
+      "url": "https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-a-consistency-of-excellence--be67694f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ デザイン哲学（見た目の一貫性 vs 卓越性）。macOSアイコン進化の比較。AI関連なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Consistency, But in Excellence Not Appearance\nSource: https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/\nConsistency serves a purpose in visual design, but it seems to have become\nthe\npurpose of a lot of visual design.\nLook no further than these evolutions of macOS icons (\nimage courte"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "161 Partners - Bharat Iyer",
+      "url": "https://bvsveera.net/observer-dickover/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/bvsveera.net--observer-dickover--1cb2209e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ The Observerのプライバシー慣行批判（161トラッキングパートナー）。データプライバシー一般論でAI特化ではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# 161 Partners - Bharat Iyer\nSource: https://bvsveera.net/observer-dickover/\n161 Partners\n21 Jun, 2026\nEarlier today, I opened one of the top links on r/worldnews. Something about Kier Starmer preparing to resign as Prime Minister of the United Kingdom? It’s beside the point for this post. Before I "
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Cybersecurity for the paranoid business traveller",
+      "url": "https://shkspr.mobi/blog/2026/06/cybersecurity-for-the-paranoid-business-traveller/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-06-cybersecurity-for-the-paranoid-business-travell--fad0f710.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ビジネス渡航者のセキュリティ一般ガイド。USBメモリ、VPN、パスワード等。AI関連なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Cybersecurity for the paranoid business traveller\nSource: https://shkspr.mobi/blog/2026/06/cybersecurity-for-the-paranoid-business-traveller/\nOver the years, I've worked for organisations with various levels of risk tolerance for business travellers. Some have been (rightly) paranoid and others ha"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "The Silicon Underground",
+      "url": "https://dfarq.homeip.net/amd-athlon-amds-game-changing-cpu-from-1999/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--amd-athlon-amds-game-changing-cpu-from-1999--feba4944.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AMD Athlon（1999年）CPU歴史記事。レトロ半導体史でAI関連なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Silicon Underground\nSource: https://dfarq.homeip.net/amd-athlon-amds-game-changing-cpu-from-1999/?utm_source=rss&utm_medium=rss&utm_campaign=amd-athlon-amds-game-changing-cpu-from-1999\nOn June 23, 1999, AMD announced its much anticipated Athlon CPU, the successor to its very successful\nK6\n. It"
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Good politics (22 Jun 2026)",
+      "url": "https://pluralistic.net/2026/06/22/8-for-what-we-will/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-06-22-8-for-what-we-will--52bfdb9c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Cory Doctorowのブラジル政治分析（ルーラの週40時間労働法制）。政治解説でAI関連なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Pluralistic: Good politics (22 Jun 2026)\nSource: https://pluralistic.net/2026/06/22/8-for-what-we-will/\nToday's links\nGood politics\n: Just make people's lives better.\nHey look at this\n: Delights to delectate.\nObject permanence\n: WWII online; Xbox security blunders; Homeless bloggers; Thermal print"
+    },
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "tedium.co",
+      "title": "The Scripts That Reshaped The Web",
+      "url": "https://feed.tedium.co/link/15204/17365463/matts-script-archive-retrospective",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/feed.tedium.co--link-15204-17365463-matts-script-archive-retrospective--47e0d6e7.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Matt's Script Archive（1995年〜）のWeb史回顧。CGIスクリプト史。最終段落でvibe codingとの類推に触れるのみで本質的にAI関連ではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Scripts That Reshaped The Web\nSource: https://feed.tedium.co/link/15204/17365463/matts-script-archive-retrospective\nCurrently, I’m in the midst of writing\na big post about the roots of web forums, but I hit on an aside weird enough that I decided to stop writing that and work on a separate pos"
+    }
+  ]
+}

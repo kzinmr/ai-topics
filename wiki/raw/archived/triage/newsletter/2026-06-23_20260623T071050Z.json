@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-06-23T07:45:53.122077+00:00",
+  "triage_run_id": "20260623T071050Z",
+  "source": "newsletter",
+  "summary_ja": "6ニュースレターをトリアージ。GLM-5.2（Nate Lambert）のopen agent分析とSpaceX Neocloud（AINews）の2件をtake（既存ページ更新）に、Red-Teaming after Mythos（Latent Space）をreferenceに選定。Import AI 462はスキップ（外部リンク集）。Lenny's Podcastもスキップ（既存conceptカバー済み）。Beehiiv「Washington Pulls the Plug on Anthropic」は全URLがCloudflare/403でコンテンツ抽出不可のため手動フォローアップが必要。残りはすべてSubstack/beehiivノイズとしてバッチスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260622123145.3.adf3748fcd7804e2@mg-d1.substack.com>-batch",
+      "source": "newsletter",
+      "source_name": "Import AI 462",
+      "title": "Import AI 462 — remaining 14 Substack UI links (batch skip)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-22-import-ai-462-superpersuasion-self-sustaining-ai-paths-to-asi.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチスキップ: Link 1(OAuth), 3(@importai), 4(submitLike), 5(コメント), 6(シェア), 7(OAuth), 8(App Store), 9(購読), 10-16(UUIDリダイレクト) — すべてSubstackノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-22\n**Subject:** Import AI 462: Superpersuasion; self-sustaining AI; paths to ASI\n**Collected:** 2026-06-23T07:10:39.533736+00:00\n**Articles linked:** 16\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V"
+    },
+    {
+      "item_id": "<20260622145245.3.470ebb759f4d7989@mg-d0.substack.com>-batch",
+      "source": "newsletter",
+      "source_name": "GLM-5.2 open agents (Interconnects)",
+      "title": "GLM-5.2 — remaining 17 Substack UI links (batch skip)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-22-glm-5-2-is-the-step-change-for-open-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチスキップ: Link 1-2(OAuth), 4(@natolambert), 5(submitLike), 6(コメント), 7(シェア), 8(OAuth), 9(App Store), 10(play_audio), 11-20(UUIDリダイレクト) — すべてSubstackノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-22\n**Subject:** GLM-5.2 is the step change for open agents\n**Collected:** 2026-06-23T07:10:41.555735+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1d"
+    },
+    {
+      "item_id": "<20260622150237.3.b7c5d6c0b31e8c61@mg2.substack.com>-batch",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "How I AI — remaining 18 Substack UI links (batch skip)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-22-how-i-ai-how-to-write-ai-agent-loops-in-claude-code-and-codex-how-claude-mythos-.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチスキップ: Link 1(OAuth), 3(@lenny), 4(submitLike), 5(コメント), 6(シェア), 7(OAuth), 8(App Store), 9-20(UUIDリダイレクト) — すべてSubstackノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-22\n**Subject:** 🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in …\n**Collected:** 2026-06-23T07:10:43.128235+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0c"
+    },
+    {
+      "item_id": "<20260622.192241.341d3af9@mta48>-batch",
+      "source": "newsletter",
+      "source_name": "Unknown Beehiiv Publisher (uid=266)",
+      "title": "Washington Pulls the Plug on Anthropic — remaining 19 beehiiv tracking links (batch skip)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-22-washington-pulls-the-plug-on-anthropic.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチスキップ: 全19リンクがbeehiivトラッキングURLでCloudflareチャレンジ/403。件名から判断するにAnthropic政府関係の重要イベントだが、コンテンツ抽出不可のため手動フォローアップが必要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-22\n**Subject:** 🔒 Washington Pulls the Plug on Anthropic\n**Collected:** 2026-06-23T07:10:44.769741+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/86xIgdoBBASk2%2FZAlPpmrLvakmrwuDwpdwV4RXP9kTnRyjf%2BtePkUEWY0Z49%0Abvoxd%2B133VHpC%2"
+    },
+    {
+      "item_id": "<20260622210655.3.c2e85c3d1e16d055@mg2.substack.com>-batch",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx) — Gray Swan",
+      "title": "Red-Teaming after Mythos — remaining 19 UI links (batch skip)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-22-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-swan.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチスキップ: Links 2-9(play_audio/play_card各種), 11(submitLike), 12(コメント), 13(シェア), 14(OAuth), 15(App Store), 16-20(UUID) — すべてLatent SpaceポッドキャストUIノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-22\n**Subject:** Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan\n**Collected:** 2026-06-23T07:10:47.418584+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1f"
+    },
+    {
+      "item_id": "<20260623061949.3.67cfb37bf074da9e@mg-d0.substack.com>-batch",
+      "source": "newsletter",
+      "source_name": "AINews (swyx/Latent Space)",
+      "title": "[AINews] SpaceX is already a $28B/yr Neocloud — remaining 18 UI links (batch skip)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-23-ainews-spacex-is-already-a-28b-yr-neocloud.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチスキップ: Link 1(OAuth), 3(submitLike), 4(コメント), 5(シェア), 6(OAuth), 7(App Store), 8-12(UUID), 13(mention), 14-20(UUID) — すべてSubstackノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-23\n**Subject:** [AINews] SpaceX is already a $28B/yr Neocloud\n**Collected:** 2026-06-23T07:10:49.398266+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV"
+    }
+  ]
+}

@@ -2,15 +2,17 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-06-11
+updated: 2026-06-23
 tags:
   - model
   - agent-safety
   - emerging
   - security
+  - red-teaming
+  - prompt-injection
 aliases:
 - Mythos
-sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md", "raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md"]
+sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md", "raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md", "raw/newsletters/2026-06-22-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-swan.md"]
 ---
 
 # Claude Mythos
@@ -136,6 +138,49 @@ On June 11, 2026, WIRED (Maxwell Zeff) reported that Anthropic agreed to walk ba
 Simon Willison characterized the reversal as "very good news," noting that the policy had been "tucked away in their system card" and would have "sabotaged" AI researchers using Claude. The policy had been criticized by [[entities/elie-bakouch|Elie Bakouch]] (Prime Intellect) for restricting researchers without notification.
 
 Sources: raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md
+
+## Red-Teaming After Mythos — Gray Swan Analysis (June 22, 2026)
+
+On June 22, 2026, [[entities/swyx|swyx]] (Latent Space) interviewed **Zico Kolter** (OpenAI board member, Safety & Security Committee) and **Matt Fredrikson** (CMU professor, CEO of [[entities/gray-swan|Gray Swan]]) about the state of AI red-teaming in the post-Mythos era.
+
+### Why AI Security Is Different
+
+Kolter and Fredrikson argue that AI systems introduce **fundamentally new vulnerabilities** beyond traditional cybersecurity:
+
+- AI models have **inherent vulnerabilities of their own** — they can be tricked in ways humans can be tricked, requiring a different security mindset
+- **Correlated failures**: Everyone uses a small number of models. A vulnerability in widely-deployed agents (Codex, Claude Code) creates a **new class of exploit**
+- As new AI platforms emerge, separate security systems emerge alongside them — Gray Swan occupies this position for AI-specific security
+- **Treating models as untrusted systems**: Unlike "cybersecurity with AI," the challenge is understanding the vulnerabilities introduced when you **adopt and deploy AI itself**
+
+### Red-Teaming Tools and Methodology
+
+Gray Swan developed a suite of red-teaming tools:
+
+- **Gray Swan Arena**: Community red-teaming platform — the world's largest AI red-teaming arena
+- **Shade**: An adversarial red-teaming tool that **can outperform humans at breaking models**. Used by Anthropic to evaluate robustness against prompt injection attacks in coding environments
+- **Cygnal**: AI guardrails model for policy enforcement — designed for enterprise deployment
+- **"Lethal Trifecta"** (Simon Willison's concept): The combination of **untrusted data + private data + exfiltration** — the core vulnerability class for AI agents
+
+### Prompt Injection and Agent Security
+
+The interview identified key agent security challenges:
+
+- **Indirect Prompt Injection**: When coding agents fetch untrusted content, they can be hijacked from their original objective — the definitive paper was co-authored by Kolter and Fredrikson
+- **Agent Identity**: The challenge of establishing agent-native identity, permissions, and enterprise deployment models
+- **Computer-Use Agents (OpenClaw)**: The **agent security nightmare** — computer-use agents introduce an entirely new attack surface that traditional security models cannot address
+- **LLMs as "Alien Intelligence"**: Models fail differently from humans, requiring specialized evaluation approaches
+
+### Key Insights
+
+- **Bigger models are not automatically more robust** — contrary to some expectations, scaling does not inherently improve security
+- **Human vs browser-agent robustness**: In controlled tests, humans ranked **fourth** behind specialized AI red-teamers at breaking models
+- **Eval awareness and capability elicitation**: Understanding what a model can do and how to elicit its capabilities is a core part of red-teaming
+- The first major AI prompt-injection breach is **inevitable** — a gray swan event that everyone can see coming
+- AI security may become part of the **insurance and compliance** stack, with AI systems attacking, defending, and interpreting other AI systems
+
+### Relevance to Mythos
+
+Gray Swan was cited as an authority on the Mythos model card, directly investigating the exact capabilities under scrutiny. Their Shade tool was used by Anthropic to test Mythos-class models for prompt injection robustness in coding environments. The Mythos/Fable 5 export directive made these issues the "talk of the town."
 
 ## Critical Perspective
 
