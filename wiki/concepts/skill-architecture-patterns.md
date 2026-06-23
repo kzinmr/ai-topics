@@ -1,7 +1,7 @@
 ---
 title: "Skill Architecture Patterns: Self-Authored vs Governed"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-06-23
 type: concept
 tags:
   - ai-agents
@@ -10,6 +10,7 @@ tags:
   - architecture
 sources:
   - "https://x.com/elvis_/status/..."
+  - raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
 ---
 
 # Skill Architecture Patterns: Self-Authored vs Governed
@@ -20,13 +21,13 @@ sources:
 
 ## Two Philosophies
 
-| Dimension | Hermes Agent (Nous Research) | OpenClaw (Steinberger) |
-|-----------|------------------------------|------------------------|
-| **Philosophy** | Batteries-included, Rails-style | Primitives-first, Linux-style |
-| **Skill Authorship** | Self-authoring via prompt nudges | Explicit, user-governed |
-| **Default Corpus** | 123+ bundled SKILL.md files | Baseline only, rare additions |
-| **Growth Model** | Organic — agent creates skills autonomously | Bounded — new skills go to ClawHub first |
-| **Product Thesis** | "Agent that knows 100+ things on day one" | "Exactly what you told it to do, nothing more" |
+| Dimension | Hermes Agent (Nous Research) | OpenClaw (Steinberger) | Warp |
+|-----------|------------------------------|------------------------|------|
+| **Philosophy** | Batteries-included, Rails-style | Primitives-first, Linux-style | Execution-feedback, iterative |
+| **Skill Authorship** | Self-authoring via prompt nudges | Explicit, user-governed | Agent-proposed, human-approved |
+| **Default Corpus** | 123+ bundled SKILL.md files | Baseline only, rare additions | YAML-defined workspace-local skills |
+| **Growth Model** | Organic — agent creates skills autonomously | Bounded — new skills go to ClawHub first | Execution-driven — skills improve via use |
+| **Product Thesis** | "Agent that knows 100+ things on day one" | "Exactly what you told it to do, nothing more" | "Skills that get better every time they run" |
 
 ## Hermes Agent: Self-Improving Skills
 
@@ -100,6 +101,29 @@ elvis combined OpenClaw's TOOLS.md with Vercel's AGENTS.md pattern:
 
 **Principle:** Explicit > Implicit. The agent doesn't decide "is this skill-worthy enough to load" — routing rules are already in the system prompt.
 
+## Warp: Execution-Feedback Skills
+
+### Self-Improvement Loop (June 2026)
+
+Warp's approach treats skills as YAML-defined composable, executable units that improve themselves through a structured feedback loop: **Execute → Evaluate → Revise → Execute**.
+
+**Skill format:** YAML with description, ordered steps, context requirements, decision points, and guardrails. Skills are workspace-local and shareable across projects.
+
+**Automatic evaluation:** After each execution, the system evaluates three signals:
+1. Did the skill complete successfully?
+2. Did the output match the expected format?
+3. Did the agent need to intervene or retry?
+
+When these signals indicate a problem, Warp revises the skill's YAML — the steps, context requirements, and error handling logic. This is **not** fine-tuning or model weight changes; it's a revision of the skill definition itself.
+
+**Key properties:**
+- **Human-in-the-loop**: Agent proposes changes, human approves or rejects — positioned between Hermes (fully autonomous) and OpenClaw (fully governed)
+- **Context compression**: A skill that took 50 lines of reasoning to develop compresses to a 10-line YAML definition
+- **Failure isolation**: Failures are localized to the specific skill's definition; no cascade into broader context
+- **Compounding feedback**: Unlike static documentation, skills stay current via continuous execution data
+
+**Developer role shift:** From instruction author → skill reviewer. Write minimal definitions upfront, let execution fill gaps, review proposed changes.
+
 ## Strategic Positioning Analysis
 
 ### Hermes: Product Positioning Masterclass
@@ -125,7 +149,8 @@ OpenClaw's influence extends beyond direct usage. The governance patterns, prece
 |--------------|----------------|-----|
 | Getting started quickly | **Hermes** | Opinionated defaults = productive on day one, low maintenance overhead |
 | Need 100% control | **OpenClaw** | Legibility and scope control matter more than self-improvement |
-| Building custom agents | **Both** | Steal patterns from each — OpenClaw for governance, Hermes for self-improvement |
+| Iterative skill refinement | **Warp** | Execution-feedback loop improves skills automatically with human approval |
+| Building custom agents | **All three** | Steal patterns from each — OpenClaw for governance, Hermes for self-improvement, Warp for execution-feedback |
 
 ## Key Insight
 
@@ -139,6 +164,7 @@ The real value is in **pattern extraction**: understanding why Hermes's self-imp
 - [[entities/hermes-agent]] — Hermes Agent platform (self-authoring skills)
 - [[entities/peter-steinberger]] — OpenClaw creator
 - [[entities/teknium]] — Hermes Agent architect
+- [[entities/warp-terminal]] — Warp Terminal (execution-feedback skills)
 - [[concepts/harness-engineering/system-architecture/agent-skills]] — Agent Skills / SKILL.md bundles
 - [[concepts/anthropic/openclaw-conflict]] — Open-source vs platform risk debate
 - [[concepts/harness-engineering]] — Harness Engineering framework
@@ -151,3 +177,4 @@ The real value is in **pattern extraction**: understanding why Hermes's self-imp
 - OpenClaw VISION.md — skill governance policy
 - Vercel AGENTS.md optimization pattern — https://vercel.com/blog/agents-md
 - Hermes Agent documentation — https://hermes-agent.nousresearch.com/docs/
+- Warp: Self-improvement loop for skills — https://www.warp.dev/blog/self-improvement-loop-for-skills

@@ -16,6 +16,7 @@
 - [[entities/simon-willison]] — Simon Willison; enriched with Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code (June 23)
 - [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
 - [[entities/modal-labs]] — Modal Labs; added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools) (June 23)
+- [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
 
 ## Concepts (Updated)
 - [[concepts/claude-code/claude-code-skills]] — Claude Code Skills; enriched with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt) + comparison table (June 23)
@@ -32,3 +33,4 @@
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Moebius browser porting case study (muse-on-X, subagent delegation, ONNX→WebGPU) (June 23)
 - [[concepts/model-quantization]] — Model Quantization; enriched with Expert-Aware Quantization (MoE-specific: Q4-hot/Q2-cold recovers ~90% of Q2→Q4 gap) (June 23)
 - [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23)
+- [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)

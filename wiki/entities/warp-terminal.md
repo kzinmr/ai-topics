@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-05-29
+updated: 2026-06-23
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -10,6 +10,7 @@ sources:
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
   - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
   - raw/articles/2026-05-23_warp_bring-your-own-inference-to-warp.md
+  - raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
 ---
 
 # Warp Terminal
@@ -118,6 +119,48 @@ Warp's open-source process inverts traditional contribution:
 - Public roadmap and technical discussions happen in the open
 
 This model exemplifies the [[concepts/agentic-engineering]] thesis: humans provide taste and direction, agents handle implementation.
+
+## Self-Improvement Loop for Skills (June 2026)
+
+Warp published a detailed technical blog post describing its **self-improvement loop for skills** — a system where agent skills (reusable YAML-defined procedures) automatically improve through execution feedback without human manual editing.
+
+### Core Concept
+
+A **skill** in Warp is a YAML-defined reusable procedure containing steps, context requirements, decision points, and guardrails. Unlike prompt templates, skills are executable units that the agent loads and follows, separating *what to do* (agent reasoning) from *how to do it* (skill definition).
+
+### The Loop
+
+```
+Execute → Evaluate → Revise → Execute
+```
+
+1. **Execute**: Agent runs a task using a skill
+2. **Evaluate**: System automatically assesses three signals — did it complete successfully, did output match expected format, did the agent need to intervene/retry
+3. **Revise**: When signals indicate problems, Warp updates the skill's YAML definition (steps, context, error handling) — **not** model weights or fine-tuning
+4. **Repeat**: Each iteration makes the skill more robust
+
+### Why It Works at Scale
+
+- **Context load reduction**: A skill that took 50 lines of reasoning compresses to a 10-line YAML definition
+- **Failure localization**: Failures are isolated to the specific skill; no cascade into broader context
+- **Compounding feedback**: Unlike static documentation that degrades, skills stay current via continuous execution data
+
+### Comparison with Other Approaches
+
+Warp's approach differs from both Hermes Agent and OpenClaw:
+
+| Dimension | Warp | Hermes Agent | OpenClaw |
+|-----------|------|-------------|----------|
+| **Improvement trigger** | Automatic post-execution evaluation | Agent self-authoring via prompt nudges | Manual/user-governed |
+| **Skill format** | YAML (steps, context, decision points) | SKILL.md (markdown with frontmatter) | Skills + primitives |
+| **Human role** | Reviewer of proposed changes | Passive (agent decides) | Active governor |
+| **Scope** | Per-skill YAML revision | New skill creation + patching | Governance-first, bounded growth |
+
+This positions Warp between Hermes (fully autonomous self-authoring) and OpenClaw (fully governed) — the agent proposes improvements, but a human approves or rejects them.
+
+### Developer Role Shift
+
+The loop shifts the developer's role from **instruction author** to **skill reviewer**: write minimal skill definitions upfront, let execution fill in gaps, review proposed changes as they accumulate.
 
 ## Strategic Context
 

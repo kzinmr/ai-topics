@@ -1,3 +1,9 @@
+- 2026-06-23: Wiki ingest — Warp self-improvement loop for skills article.
+  - Saved raw article: raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
+  - Enriched entities/warp-terminal.md — added Self-Improvement Loop for Skills section (Execute->Evaluate->Revise cycle, YAML skill definitions, human-in-the-loop approval, comparison table with Hermes/OpenClaw)
+  - Enriched concepts/skill-architecture-patterns.md — added Warp as third approach alongside Hermes and OpenClaw (execution-feedback skills section, updated comparison table, decision framework, related links)
+  - Sources: https://www.warp.dev/blog/self-improvement-loop-for-skills
+
 - 2026-06-23: Active crawl — created 4 concept pages and saved 2 raw articles from trending AI topics (HN + X/Twitter + wiki gap analysis).
 
 - 2026-06-23: Skeleton enrichment — enriched [[entities/brad-lyons]] from skeleton to comprehensive entity page. Added AI Investment Supercycle Hypothesis (Aug 2025), Revenue Segmentation Framework, AI Playbook for Operators and Investors, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology. Status: skeleton removed. Sources: xurl profile data, SaaSpocalypse Note Tweet, AI Supercycle Note Tweet, Revenue Segmentation tweet.
