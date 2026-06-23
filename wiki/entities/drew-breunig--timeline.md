@@ -3,7 +3,7 @@ title: "Drew Breunig — Timeline & Career History"
 type: entity
 parent: drew-breunig
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-06-23
 tags:
   - person
   - timeline
@@ -62,6 +62,7 @@ Back to main profile: [[entities/drew-breunig]]
 | 2026 | "Two Beliefs About Coding Agents" — influential analysis of AI coding impact |
 | 2026 | "The 2nd Phase of Agentic Development" — on reimaginings vs. clones |
 | 2026 | "How Claude Code Builds a System Prompt" — deep analysis of coding agent internals |
+| 2026 | "The Problem is Prompt Debt" — X Article on prompt debt, fighting the weights, and algorithmic prompt search |
 
 ## See Also
 

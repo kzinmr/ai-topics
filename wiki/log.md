@@ -1,3 +1,12 @@
+## [2026-06-23] X Bookmarks Ingest — Drew Breunig "The Problem is Prompt Debt"
+
+- **Raw article saved**: `raw/articles/2026-06-23_drew-breunig-prompt-debt.md` — X Article from @dbreunig
+- **Concept page enriched**: `concepts/prompts-as-technical-debt.md` — Added Drew Breunig's "Prompt Debt" framework with three-stage spiral, fighting the weights, Goedecke vs Breunig comparison, and prevention via DSPy/GEPA. Added tags: `fighting-the-weights`, `dspy`, `gepa`. Expanded from 83 → ~200 lines.
+- **Entity pages enriched**: `entities/drew-breunig.md` (+timeline, +writings, +sources, +related), `entities/drew-breunig--core-ideas.md` (+Prompt Debt section), `entities/drew-breunig--writings.md` (+entry), `entities/drew-breunig--timeline.md` (+entry)
+- **GEPA page enriched**: `concepts/gepa.md` — Noted Breunig citation as prompt-debt solution
+- **SCHEMA.md updated**: Added `fighting-the-weights` tag to Models taxonomy
+- **Bookmark metadata**: 75 bookmarks, 48 likes, 10 retweets
+
 - 2026-06-23: Wiki ingest — Warp self-improvement loop for skills article.
   - Saved raw article: raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
   - Enriched entities/warp-terminal.md — added Self-Improvement Loop for Skills section (Execute->Evaluate->Revise cycle, YAML skill definitions, human-in-the-loop approval, comparison table with Hermes/OpenClaw)

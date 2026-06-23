@@ -79,7 +79,7 @@ This addresses a known weakness of Hermes Agent's in-agent learning loop: agents
 
 ## Ecosystem Adoption
 
-Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, OpenAI, and others. Integrated into DSPy as `dspy.GEPA` and available standalone via `pip install gepa`.
+Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, OpenAI, and others. Integrated into DSPy as `dspy.GEPA` and available standalone via `pip install gepa`. Cited by [[entities/drew-breunig|Drew Breunig]] as a key solution to prompt debt in "The Problem is Prompt Debt" (June 2026).
 
 ## See Also
 

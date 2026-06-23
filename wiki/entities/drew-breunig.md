@@ -2,7 +2,7 @@
 title: Drew Breunig
 type: entity
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-06-23
 source: blog
 tags:
   - person
@@ -66,6 +66,7 @@ His blog at dbreunig.com, active since 2010, covers AI, geospatial technology, m
 | 2026 | "Two Beliefs About Coding Agents" — influential analysis of AI coding impact |
 | 2026 | "The 2nd Phase of Agentic Development" — on reimaginings vs. clones |
 | 2026 | "How Claude Code Builds a System Prompt" — deep analysis of coding agent internals |
+| 2026 | "The Problem is Prompt Debt" — X Article analyzing prompt debt, fighting the weights, and algorithmic prompt search |
 
 ## Core Ideas
 
@@ -269,6 +270,7 @@ Since ChatGPT's launch, Breunig's writing shifted intensely toward AI:
 - **Prompt Engineering & Context**: "Prompt Engineering at the End of the Universe" (2024), "The Prompt Foreman" (2025), "Let the Model Write the Prompt" (2025)
 - **AI Products & Strategy**: "The 3 AI Use Cases" (2024), "Be Better, Not Smaller" (2024), "What Remains After an AI Collapse?" (2024)
 - **Agent Development**: "Enterprise Agents Have a Reliability Problem" (2025), "Two Beliefs About Coding Agents" (2026), "The 2nd Phase of Agentic Development" (2026)
+- **Prompt Debt**: "The Problem is Prompt Debt" (June 2026) — X Article introducing the concept of prompt debt as a progressive condition, identifying "fighting the weights" as its root cause, and recommending algorithmic prompt search (DSPy/GEPA) as the solution
 - **RLMs & DSPy**: "The Potential of RLMs" (2026), "Pipelines & Prompt Optimization with DSPy" (2024)
 - **Geospatial**: "Towards Standardizing Place" (2024), "DuckDB is Probably the Most Important Geospatial Software of the Last Decade" (2025)
 
@@ -322,6 +324,7 @@ Breunig's technical work is characterized by:
 - [[concepts/context-engineering|Context Engineering]] — Discipline Breunig helped name and define
 - [[concepts/spec-driven-development]] — Development paradigm Breunig pioneered with `whenwords`
 - [[concepts/recursive-language-models]] — Pattern Breunig implemented in DSPy and advocates
+- [[concepts/prompts-as-technical-debt]] — Concept page comparing Goedecke's and Breunig's prompt debt frameworks
 - [[concepts/placeiq]] →  — Location intelligence companies where Breunig worked
 -  — Company Breunig advises on positioning and strategy
 -  — Company Breunig is associated with
@@ -342,4 +345,5 @@ Breunig's technical work is characterized by:
 - **Databricks Data + AI Summit**: 2025 and 2026 speaking engagements
 - **O'Reilly Context Engineering Superstream**: February 2026 presentation
 - **MLOps Community**: March 2026 "Coding Agents" conference presentation
+- **X Article**: "The Problem is Prompt Debt" (June 2026) — X.com long-form article. See [[raw/articles/2026-06-23_drew-breunig-prompt-debt]]
 - **YouTube**: Video recordings of Breunig's conference talks available

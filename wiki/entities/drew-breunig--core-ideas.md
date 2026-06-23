@@ -3,7 +3,7 @@ title: "Drew Breunig — Core Ideas & Philosophy"
 type: entity
 parent: drew-breunig
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-06-23
 tags:
   - person
   - context-engineering
@@ -111,8 +111,21 @@ Breunig's background in cultural anthropology shapes his approach to technology 
 
 > "Do Algorithms Find Depression or Cause Depression?" (2016) — examining whether crowdsourced workers' depression in ML training data was discovered or induced by the work itself.
 
+## Prompt Debt and Fighting the Weights
+
+In June 2026, Breunig published "The Problem is Prompt Debt," a systematic analysis of why natural language prompts are a poor way to specify durable system behavior. The article identifies **prompt debt** as a progressive condition with three stages: (1) slowing iteration as hot-fixes accumulate, (2) team incapacitation as prompts become impenetrable thickets of conditions, and (3) model lock-in as hot-fixes tied to one model prevent migration to newer, cheaper alternatives.
+
+The article introduces the concept of **"fighting the weights"** — when desired behavior contradicts model training, forcing prompt authors to repeat instructions with increasing severity. Breunig documents this pattern across major system prompts: ChatGPT's image prompt (8 repetitions to suppress conversation continuation), Claude Code (7 repetitions to return multiple tool calls), and Anthropic Fable (6 repetitions of a copyright rule).
+
+The solution, Breunig argues, comes from the coding agent community's two principles: (1) **specify behavior with measurements, not prose** — using evaluations, metrics, and typed specifications instead of natural language, and (2) **stop writing prompts by hand** — replacing hand-crafted prompts with algorithmic prompt search via systems like DSPy and GEPA.
+
+Breunig draws a historical parallel: every mature engineering discipline eventually automated the thing it once prided itself on doing by hand — assembly→compilers, hand-tuned queries→query planners, manual memory management→GC. Prompt-writing, he argues, is no different.
+
+See also: [[concepts/prompts-as-technical-debt]]
+
 ## See Also
 
 - [[entities/drew-breunig--projects|Projects]]
 - [[entities/drew-breunig--timeline|Timeline]]
 - [[entities/drew-breunig--writings|Writings & Speaking]]
+- [[concepts/prompts-as-technical-debt|Prompts as Technical Debt]] — Complementary concept comparing Goedecke's and Breunig's frameworks
