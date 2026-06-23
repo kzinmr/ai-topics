@@ -1,19 +1,16 @@
 ---
-title: Phil Trammell
+title: "Phil Trammell"
 type: entity
-created: 2026-06-22
-updated: 2026-06-22
-tags: [person, economics, agi]
+created: 2026-06-23
+updated: 2026-06-23
+tags: [phil-trammell, agi, economics, strategy]
 ---
 # Phil Trammell
 
-Phil Trammell is a researcher and commentator focused on the economic implications of Artificial General Intelligence (AGI).
+Phil Trammell is a researcher working alongside Alex Imas on the economic frameworks and strategic challenges surrounding AGI.
 
-## Key Ideas
-- **AGI Economics**: Exploring how AGI will impact global labor markets and economic structures.
-
-## Related Concepts
-- [[concepts/agi-economics]]
+## Focus Areas
+- **AGI Strategy**: Investigating the global impact and strategic necessity of AGI.
 
 ## Sources
-- [Economics of AGI](~/wiki/raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d64.md)독
+- [What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imas-phil-trammell)

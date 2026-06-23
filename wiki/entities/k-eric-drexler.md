@@ -1,29 +1,17 @@
 ---
 title: "K. Eric Drexler"
 type: entity
-created: 2026-06-18
-updated: 2026-06-22
-tags:
-  - person
-  - superintelligence
-  - agent-safety
-aliases:
-  - Eric Drexler
-related:
-  - [[concepts/superintelligence]]
-sources:
-  - [https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf
+created: 2026-06-23
+updated: 2026-06-23
+tags: [researcher, ai-safety, superintelligence, alignment]
 ---
 # K. Eric Drexler
 
-K. Eric Drexler is a researcher at the Future of Humanity Institute (FHI), University of Oxford. He is well known for his work on superintelligence and for proposing the concept of Comprehensive AI Services (CAIS).
+K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford. He is well-known for his pioneering work on superintelligence and AI safety.
 
-## Key Ideas
- D- **Comprehensive AI Services (CAIS)**: A model of flexible, general intelligence where agents are a class of service-providing products, rather than a natural or necessary engine of progress.
- D- **Superintelligence**: Reframing superintelligence from a single "mind" to a distributed system of AI services.
- D- **AI Safety and Strategy**: Exploring the risks and opportunities of superintelligent systems in the context of human control.
+## Contributions
+- **Comprehensive AI Services (CAIS)**: Proposed a reframing of superintelligence as a system of service-providing products rather than a singular engine of progress.
+- **AI Safety**: Early proponent of discussing risks associated with superintelligent self-modifying agents.
 
 ## Sources
-26|## Sources\n27|-- [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)\n  - [Reframing Superintelligence (PDF)](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
-- [Reframing Superintelligence (PDF)](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
-- [Reframing Superintelligence (PDF)](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
+- [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf) continued

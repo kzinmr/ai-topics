@@ -1,24 +1,17 @@
 ---
-title: Agent Safety
+title: "Agent Safety"
 type: concept
-created: 2026-06-22
-updated: 2026-06-22
-tags:
-  - agent-safety
-  - ai-agents
-  - architecture
-
+created: 2026-06-23
+updated: 2026-06-23
+tags: [agent-safety, agents, safety, architecture]
 ---
 # Agent Safety
 
-Agent safety refers to the field focused on ensuring that autonomous AI agents behave safely, predictably, and aligned with human values.
+Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 
 ## Key Concepts
-- **Separation of Duties**: Dividing tasks among multiple agents or human oversight to ensure checks and balances.
-- **Safety Frameworks**: Establishing protocols and technical guardrails to prevent harmful agentic behavior.
-
-## Related entities
-- [[entities/aakash-gupta]]
+- **Separation of Duties**: An architectural pattern that divides agent responsibilities to prevent misuse or unintended behavior.
+- **Safety Frameworks**: Structural designs intended to monitor and constrain agent actions.
 
 ## Sources
-- [Agent Safety Separation Of Duties](~/wiki/raw/articles/2026-06-18_agent-safety-separation-of-duties.md)독
+- [Agent Safety Separation Of Duties](https://x.com/aakashgupta/status/2067550891843186980)

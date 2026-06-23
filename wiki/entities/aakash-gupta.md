@@ -1,20 +1,17 @@
 ---
-title: Aakash Gupta
+title: "Aakash Gupta"
 type: entity
-created: 2026-06-22
-updated: 2026-06-22
-tags:
-  - person
-  - ai-safety
-  - agent-architecture
+created: 2026-06-23
+updated: 2026-06-23
+tags: [aakash-gupta, ai-safety, agents]
 ---
 # Aakash Gupta
 
-Aakash Gupta is a software engineer and researcher focused on AI safety frameworks and agent architecture. He is known for advocating for the separation of duties in AI agent systems.
+Aakash Gupta is a software engineer and researcher focused on AI safety frameworks and agent architecture.
 
-## Key Ideas
-- **Separation of Duties**: Argues that AI agents should be designed around fraud-prevention rules from accounting (e.g., the person writing checks never reconciles the books).
-- **Agent Safety**: Focuses on building frameworks that prevent misuse or catastrophic failure in autonomous agents.
+## Focus Areas
+- **Agent Safety**: Developing frameworks to ensure AI agents operate safely and predictably.
+- **Architecture**: Exploring structural designs for autonomous agent systems.
 
 ## Sources
 - [Agent Safety Separation Of Duties](https://x.com/aakashgupta/status/2067550891843186980)

@@ -1,21 +1,18 @@
 ---
-title: Superintelligence
+title: "Superintelligence"
 type: concept
-created: 2026-06-22
-updated: 2026-06-22
-tags:
-  - ai-safety
-  - alignment
-  - singularity
+created: 2026-06-23
+updated: 2026-06-23
+tags: [superintelligence, ai-safety, alignment, agi]
 ---
 # Superintelligence
 
-Superintelligence refers to AI systems that surpass human ability across all domains, including scientific creativity and general social skills. Recent discussions often reframe superintelligence not as a single "mind" but as a distributed system of AI services.
+Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains, including scientific creativity, general wisdom, and social skills.
 
-## Key Ideas
-- **Comprehensive AI Services (CAIS)**: A model where agents are a class of service-providing products rather than a necessary engine of progress.
-- **Distributed Systems**: Shifting focus from opaque, unitary agents to asymptotically way superintelligent AI services.
-- **AI Safety and Strategy**: The challenge of harnessing advanced AI to solve broad human problems while maintaining human control.
+## Key Concepts
+- **Recursive Improvement**: The idea that an AI could Improve its own code, leading to an exponential intelligence explosion.
+- **AI Safety**: The field of ensuring that super way systems remain aligned with human values and goals.
+- **CAIS (Comprehensive AI Services)**: A model where superintelligence emerges from a distributed network of services.
 
 ## Sources
 - [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)

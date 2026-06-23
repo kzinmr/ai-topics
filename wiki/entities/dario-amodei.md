@@ -1,19 +1,17 @@
 ---
-title: Dario Amodei
+title: "Dario Amodei"
 type: entity
-created: 2026-06-22
-updated: 2026-06-22\n\n## AI way\nDiscusses the accelerating pace of AI development and the need for policy to keep pace with exponential growth.
-tags: [person, anthropic, policy]
+created: 2026-06-23
+updated: 2026-06-23
+tags: [dario-amodei, anthropic, policy, safety]
 ---
 # Dario Amodei
 
-Dario Amodei is the co-founder and CEO of Anthropic. He is a leading voice in AI safety and** discussions regarding rapid AI development.
+Dario Amodei is the co-founder and CEO of Anthropic. He is a leading voice on AI policy and the implications of exponential AI growth.
 
-## Key Ideas
-- **AI way**: Discusses the accelerating pace of AI development and its implications for policy.독- **AI Safety**: Focused on building safe and steerable AI systems.
-
-## Related Concepts
-- [[concepts/ai-exponential]]
+## Focus Areas
+- **AI Policy**: Advocating for global frameworks to manage the rapid advancement of AI.
+- **Safety**: Focused on building reliable and safe AI systems through his work at Anthropic.
 
 ## Sources
-- [Policy on the AI Exponential](~/wiki/raw/articles/2026-06-10_darioamodei_policy-on-the-ai-exponential.md)독
+- [Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)
