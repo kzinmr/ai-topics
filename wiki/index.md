@@ -25,6 +25,11 @@
 - [[entities/openai]] — OpenAI; enriched with Appia Foundation (Linux Foundation-hosted AI evaluation standards) + GPT-5 immunology case study (Derya Unutmaz, T cell puzzle) (June 24)
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24)
 - [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
+- [[entities/0xjeff]] — 0xJeff — AI researcher and writer
+- [[entities/abacaj]] — abacaj — Independent AI researcher
+- [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
+- [[entities/adept]] — Adept AI — AI agent startup building general-purpose agents
+- [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
 
 ## Concepts (Updated)
 
@@ -55,4 +60,21 @@
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
+- [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
+- [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
+- [[concepts/activation-steering]] — Activation Steering — Technique for modifying model behavior by manipulating internal activations
+- [[concepts/active-observability]] — Active Observability — Real-time LLM observability approach
+- [[concepts/advanced-tool-use]] — Advanced Tool Use — Claude Developer Platform advanced tool usage patterns
 
+## Comparisons
+
+- [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
+- [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes vs ChatGPT Dreaming
+- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
+- [[comparisons/agent-sandboxing]] — Agent Sandboxing
+- [[comparisons/ai-agent-platforms]] — AI Agent Coding Platforms
+- [[comparisons/ai-competition]] — U.S. vs China AI Competition
+- [[comparisons/aposd-vs-clean-code]] — A Philosophy of Software Design vs Clean Code
+- [[comparisons/bing-api-alternatives-2026]] — Bing Search API Alternatives — 2026 Comparison
+- [[comparisons/claude-managed-agents-sandbox-providers]] — Claude Managed Agents Self-Hosted Sandbox Providers
+- [[comparisons/claude-mythos-preview-vs-mythos5-fable5]] — Claude Mythos Preview vs Mythos 5 & Fable 5 System Cards
