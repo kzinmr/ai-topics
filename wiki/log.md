@@ -1,3 +1,20 @@
+## [2026-06-24] Active Crawl — 5 concept pages + 5 raw articles from trending topics
+
+- **New pages**: 5 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
+  - `concepts/mistral-ocr-4.md` — Mistral OCR 4: SOTA OCR model, multilingual document parsing, structured markdown/JSON output, superior to Azure/Gemini/Amazon (470 HN pts)
+  - `concepts/codex-logging-bug.md` — Codex Logging Bug: SQLite feedback logs writing up to 640 TB/year, rapid SSD wear, GitHub issue #28224 (503 HN pts)
+  - `concepts/ai-affordability-crisis.md` — AI Affordability Crisis: David Rosenthal's analysis of LLM inference cost vs revenue, zero-margin pricing, crypto-mining comparison (290 HN pts)
+  - `concepts/claude-tag.md` — Claude Tag: Anthropic's team AI agent for Slack; multiplayer chat, persistent channel memory, proactive/async capabilities (252 HN pts)
+  - `concepts/qwen-agentworld.md` — Qwen-AgentWorld: arXiv 2606.24597; language world models for agents, 397B MoE model, 7-domain environment simulation (119 HN pts)
+- **Raw articles saved**: 5 source articles
+  - `raw/articles/2026-06-24_mistral-ai_ocr-4.md`
+  - `raw/articles/2026-06-14_openai-codex_logging-tb-ssd.md`
+  - `raw/articles/2026-06-24_dshr_ai-affordability-crisis.md`
+  - `raw/articles/2026-06-24_anthropic_claude-tag.md`
+  - `raw/articles/2026-06-24_arxiv-2606.24597_qwen-agentworld.md`
+- **SCHEMA.md**: Added 4 new tags (ocr, document-intelligence, incident, sustainability)
+- **Sources**: HN Algolia (15 trending stories), X/Twitter xurl (10 results), blogwatcher DB, wiki gap analysis
+
 ## [2026-06-24] Blog Wiki Ingest — 4 takes + 3 references from blog-triage checkpoint
 
 - **New page**: `concepts/ai-benchmarks/parallelkernelbench.md` — ParallelKernelBench (PKB): multi-GPU kernel generation benchmark. 87 problems, GPT-5.5 tops at 31% fast@3. Agentic harness evaluation plateaued after ~20 iterations.
