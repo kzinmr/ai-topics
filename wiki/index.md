@@ -19,6 +19,10 @@
 - [[entities/modal-labs]] — Modal Labs; added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools) (June 23)
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
+- [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
+- [[entities/ed-zitron]] — Ed Zitron; enriched with "Cargo Culture" — religious/cargo cult metaphors for AI loop push, Rot-Com Bubble thesis, venture capital cargo cult (June 24)
+- [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
+- [[entities/openai]] — OpenAI; enriched with Appia Foundation (Linux Foundation-hosted AI evaluation standards) + GPT-5 immunology case study (Derya Unutmaz, T cell puzzle) (June 24)
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24)
 - [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
 
@@ -44,3 +48,4 @@
 - [[concepts/sakana-fugu]] — Sakana Fugu; added Fugu Ultra benchmark numbers (73.7 SWE-bench Pro, 82.1 TerminalBench 2.1, Fable-class) (June 24)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
+- [[concepts/ai-benchmarks/parallelkernelbench]] — ParallelKernelBench (PKB); multi-GPU kernel generation benchmark with 87 problems from real codebases, GPT-5.5 tops at 31% fast@3 (June 24)

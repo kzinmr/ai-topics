@@ -2,7 +2,7 @@
 title: Anil Dash
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-06-24
 tags:
   - person
   - blogger
@@ -95,6 +95,25 @@ Building on his coding agents thesis, Anil envisions:
 - **The emerging ecosystem**: Tools like Val Town, Tailscale's Aperture, and various AI agent frameworks are building out a "codeless" stack
 - **The open question**: Will this ecosystem be controlled by a few Big AI companies, or will it be distributed and accessible?
 
+### Platform War Against Big AI (June 2026)
+
+In "How we'll fight the platform war against Big AI" (June 23, 2026), Anil Dash outlined four concrete tactics for competing against Big AI platforms:
+
+1. **Disintermediation (Get in front of it)** — Push all AI usage toward open harnesses, text editors, CLIs, and community-built interfaces not controlled by Big AI. Status: Good. Tools exist; work is in UX polish and awareness.
+
+2. **Provider portability (Spread the love around)** — Seamless switching between AI providers to reduce costs and prevent lock-in. Forces Big AI to compete on compatibility. Status: Good. Enterprise demand is driving this.
+
+3. **Economic value destruction (Free the tools)** — Open-source models ("frontier minus six" — ~6 months behind frontier) undercut Big AI economically by providing capable free alternatives. Status: Okay. UX still too clunky for mainstream.
+
+4. **Channel anger (Get angry too)** — AI critics and users are furious. Alternatives that respect their values ("Internet of consent") can channel that anger into platform-switching. Status: Tough. Skepticism from all sides.
+
+Key quotes:
+- "Big AI companies are extremely vulnerable. The reason they're making so much noise, and spending so much money, is because they know that they're vulnerable."
+- "Enshittification is not only not inevitable, it is downright preventable, and the power to do so rests in our hands."
+- "We are not simply angrily running away from something, we can all be joyfully running toward something together."
+
+Links: Joel Spolsky's Strategy Letter V (commoditize complements) and "How Microsoft Lost the API War" as historical parallels.
+
 ## Key Quotes
 
 > *"You must imagine Sam Altman holding a knife to Tim Berners-Lee's throat. It's not a pleasant image. Sir Tim is, rightly, revered as the genial father of the World Wide Web. But all the signs are pointing to the fact that we might be in endgame for 'open' as we've known it."*
@@ -133,8 +152,10 @@ Building on his coding agents thesis, Anil envisions:
 - [A Codeless Ecosystem, or hacking beyond vibe coding](https://anildash.com/2026/01/27/codeless-ecosystem/) (Jan 2026)
 - [500,000 tech workers have been laid off since ChatGPT was released](https://anildash.com/2026/01/06/500k-tech-workers-laid-off/) (Jan 2026)
 - [Why We Speak](https://anildash.com/2026/01/26/why-we-speak/) (Jan 2026)
+- [How we'll fight the platform war against Big AI](https://anildash.com/2026/06/23/fight-ai-platform-war/) (Jun 2026)
 
 ## References
 
 - anildash.com--2026-04-28-one-good-ai-is-here--6fa4603f
 - anildash.com--2026-04-30-artemis-photos-flickr--69a418b9
+- anildash.com--2026-06-23-fight-ai-platform-war--1a272a96

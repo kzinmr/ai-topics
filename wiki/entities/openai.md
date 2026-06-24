@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-22
+updated: 2026-06-24
 tags:
   - company
   - model
@@ -32,6 +32,8 @@ sources:
   - raw/articles/2026-06-08_openai_openai-built-to-benefit-everyone.md
   - raw/articles/2026-02-23_fortune_openai-mission-statement-safety-removed.md
   - raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md
+  - raw/articles/openai.com--helping-build-shared-standards-for-advanced-ai--1b1b1aa4.md
+  - raw/articles/openai.com--gpt-5-immunology-mystery--1948945e.md
 ---
 
 # OpenAI
@@ -310,6 +312,13 @@ This represents a concrete example of AI-as-scientific-partner: the model propos
 
 Source: [raw/articles/openai.com--index-ai-chemist-improves-reaction--f8a3c2d1.md](https://openai.com/index/ai-chemist-improves-reaction)
 
+### Scientific Applications (June 2026)
+
+- **GPT-5 Pro** helped immunologist Derya Unutmaz solve a 3-year puzzle about T cell differentiation by identifying the IL-2 protein pathway
+- GPT-5 Pro correctly predicted unpublished experimental results, demonstrating AI's ability to accelerate biomedical research
+
+Source: [[raw/articles/openai.com--gpt-5-immunology-mystery--1948945e.md]]
+
 ### ChatGPT Lockdown Mode (June 2026)
 
 OpenAI rolled out **ChatGPT Lockdown Mode** in June 2026, a deterministic security feature designed to prevent the final stage of prompt injection attacks — **data exfiltration** — by limiting outbound network requests that a model can make.
@@ -395,6 +404,18 @@ OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack tar
 The [[entities/openai-foundation|OpenAI Foundation]] is the nonprofit arm established as part of OpenAI's restructuring. Key programs include the People-First AI Fund ($50M+), AI for Alzheimer's ($100M+), Economic Futures ($250M), and AI Resilience ($130M+). Led by Bret Taylor (Chair) and Wojciech Zaremba (Head of AI Resilience, OpenAI co-founder). Total commitment: $1B+ over the next year, $25B long-term.
 
 > **Note:** During the for-profit restructuring, OpenAI removed all safety language from its IRS Form 990 mission statement — see [[events/openai-mission-statement-safety-removal]] for details and accountability concerns raised by nonprofit governance scholars.
+
+### Appia Foundation (June 2026)
+
+OpenAI co-founded the **Appia Foundation**, hosted by the Linux Foundation, to develop open, modular specifications for AI evaluation and safety standards. Appia translates international standards into practical assessment criteria across the AI value chain, creating a "trust layer" for third-party conformity checking.
+
+Key details:
+- Part of OpenAI's broader ecosystem: CAISI (US), UK AISI testing partnerships
+- Complements Preparedness Framework and Frontier Governance Framework
+- Participates in ISO/IEC JTC 1/SC 42, NIST AI Consortium, Frontier Model Forum, Agentic AI Foundation (Linux Foundation), C2PA
+- OpenAI published a shared playbook for trustworthy third-party evaluations
+
+Source: [[raw/articles/openai.com--helping-build-shared-standards-for-advanced-ai--1b1b1aa4.md]]
 
 ## Audited Financials (2024–2025)
 

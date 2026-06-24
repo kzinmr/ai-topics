@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-06-22
+updated: 2026-06-24
 tags:
   - entity
   - person
@@ -21,6 +21,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-11-ai-will-be-deflationary-html--01621d65.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-17-summoning-the-demon-html--6b570b9a.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-23-liminality-html--7b66f57a.md
 ---
 
 # George Hotz
@@ -248,6 +249,7 @@ Notable posts include:
 - "Democracy is a Liability" (Mar 21) — Contrarian political analysis
 - "Summoning the Demon" / "the singularity is nearer" (Jun 17) — Poetic essay framing AI as "social crime" and "reflection of demonic desires." Argues AI is a tool of optimization that will consume its creators. Short poetic piece adding to Hotz's developing darkening view on AI's societal trajectory.
 - "The doom justifies the valuation" (Jun 21) — Critique of AI industry communication: contrasts GLM-5.2's technical writing with Anthropic's eschatological framing; argues AI hype is "designed to cause panic" to justify valuations. Predicts bubble unwinding.
+- "Liminality" (Jun 23) — Philosophical essay using Fullmetal Alchemist metaphor (pouring human souls into a philosopher's stone = AI). Explores the "middle place" — AI has been in a liminal state for years. References the Cruise movie as metaphor for control — we shout at the driver of reality's bus to no avail. Argues "the real secret has always been that they have no secrets" — there is no hidden conspiracy, just profound uncertainty. Concludes that deep learning is "all just vibes" and questions whether the veil of computability means it has to be.
 - "Five years of tinygrad" (Dec 29, 2025) — Retrospective on the framework's evolution
 - "Can tinygrad win?" (Jul 6, 2025) — Honest assessment of tinygrad's competitive position
 - "The Tragic Case of Intel AI" (Mar 24, 2025) — Analysis of Intel's AI failures
@@ -305,6 +307,7 @@ Hotz is active on X/Twitter as @realgeorgehotz, posting frequently about tinygra
 
 - Wikipedia: [George Hotz](https://en.wikipedia.org/wiki/George_Hotz) — Primary biographical source
 - Personal blog: [geohot.github.io](https://geohot.github.io/blog/) — "the singularity is nearer"
+- Personal blog: [Liminality](https://geohot.github.io//blog/jekyll/update/2026/06/23/liminality.html) — "the singularity is nearer" (Jun 23)
 - GitHub: [github.com/tinygrad/tinygrad](https://github.com/tinygrad/tinygrad) — tinygrad repository
 - GitHub: [github.com/commaai/openpilot](https://github.com/commaai/openpilot) — openpilot repository
 - LinkedIn: [George Hotz](https://www.linkedin.com/in/george-hotz-b3866476) — Professional history

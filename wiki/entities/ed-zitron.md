@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-06-20
+updated: 2026-06-24
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -26,6 +26,7 @@ sources:
   - raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md
   - raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
   - raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md
+  - raw/articles/wheresyoured.at--cargo-culture--8cdfc01a.md
   - raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md
   - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-1--6191394a.md
   - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-2--e0d362d8.md
@@ -400,6 +401,26 @@ Zitron critiqued the emerging industry push for **agent "loops"** — designing 
 - Zitron interprets this as an attempt to **artificially inflate token consumption** to sustain revenue growth
 - When users pay per-token, AI mistakes (loops, hallucinations, wasted computation) become expensive rather than free
 - **"You must burn more tokens, because otherwise you won't be doing AI coding right"**
+
+#### Cargo Culture — Religious Metaphors for AI (June 2026)
+
+In "[Cargo Culture](https://www.wheresyoured.at/)" (June 23, 2026), Zitron escalated his Loop Problem critique using religious and cargo cult metaphors to describe the AI industry's self-referential belief system:
+
+- **Jensen Huang + Boris Cherny loop push**: Both executives (within 24 hours) declared "the age of prompting models is over" — users should just be "handling loops." Zitron interprets this as a desperate attempt to drive token consumption by removing the last human gate on spending.
+- **Cargo cult framing**: The AI industry has become a cargo cult that "hasn't had a human experience since 2015." Zitron compares AI boosterism to religious ritual with its own pantheon (Great Prophecy, Chosen, Cursed, Saint Tibo).
+- **Snapchat Specs as symptom**: Evan Spiegel's $2,195 AR glasses demo shows a leadership disconnected from real users — solving problems nobody has with technology nobody asked for.
+- **The Rot-Com Bubble thesis**: The tech industry has run out of ideas — the "next iPhone" isn't coming. AI spending is a desperate cargo cult, not genuine innovation.
+- **Venture capital as cargo cult**: Most VC funding follows consensus, not risk-taking. 61% of VC went to AI in 2025. Noam Shazeer's $2.7B acquisition, Andrej Karpathy's revolving door — all symbolic moves rather than genuine innovation.
+- **"Too Big To Fail" fallacy**: OpenAI and Anthropic combined did <$20B revenue in 2025. Their disappearance would not crash financial systems — the argument that they're systemically important is a myth the industry needs to survive.
+- **"Founder mode" cargo cult**: Brian Chesky "studying Steve Jobs" — executives copying surface-level behaviors of successful founders without understanding their actual work.
+- **Historical innovation comparison**: iPhone cost $150M to develop (less than SoftBank paid OpenAI); Google Search was created by two Stanford students. These were NOT products of capital intensity — they were products of insight.
+
+Key quotes from the article:
+> "The AI industry is fundamentally judged based on its symbolic similarities to bygone eras."
+
+> "OpenAI and Anthropic are the height of the Valley's mysticism."
+
+> "This is Silicon Valley — a monoculture that sells itself as outliers."
 
 #### Enterprise Token Budget Cuts
 
