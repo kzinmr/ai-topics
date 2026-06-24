@@ -1,0 +1,98 @@
+{
+  "run_id": "20260624T071032Z",
+  "triaged_at": "2026-06-24T07:15:00+00:00",
+  "source": "newsletter-ingest",
+  "total_newsletters": 5,
+  "total_links": 92,
+  "classifications": [
+    {
+      "message_id": "<20260623124559.3.1b63997a0702b2cf@mg-d0.substack.com>",
+      "subject": "The new inner game: Your unfair advantage in the age of AI",
+      "source": "Lenny's Newsletter (lenny.substack.com)",
+      "date": "2026-06-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-23-the-new-inner-game-your-unfair-advantage-in-the-age-of-ai.md",
+      "importance": "low",
+      "action": "skip",
+      "reason": "Productivity/mindset piece about personal advantage in AI era. Not technical AI/LLM/agent content. Featured author @joehudsonaoa appears to be a coach/consultant. All 20 links are Substack platform redirects (likes, comments, shares, subscription widgets) — no external article links captured.",
+      "wiki_relevant_entities": [],
+      "wiki_relevant_concepts": [],
+      "article_count": 20,
+      "external_articles": 0,
+      "fetch_url": "https://open.substack.com/pub/lenny/p/the-new-inner-game-your-unfair-advantage"
+    },
+    {
+      "message_id": "<20260623130242.3.46c2e403ef2f842b@mg-d1.substack.com>",
+      "subject": "Record a skill",
+      "source": "Ben's Bites (bensbites.substack.com)",
+      "date": "2026-06-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-23-record-a-skill.md",
+      "importance": "high",
+      "action": "fetch_full_article",
+      "reason": "Ben's Bites is a primary AI newsletter source. Title 'Record a skill' likely covers AI agent skill recording/capture tooling — directly relevant to the AI agent knowledge wiki. All 20 links are Substack platform redirects; full article text needed to extract external references and linked resources.",
+      "wiki_relevant_entities": ["bens-bites"],
+      "wiki_relevant_concepts": ["ai-agent-skills", "skill-recording"],
+      "article_count": 20,
+      "external_articles": 0,
+      "fetch_url": "https://open.substack.com/pub/bensbites/p/record-a-skill"
+    },
+    {
+      "message_id": "<20260623145153.3.b70daa4c26afc274@mg2.substack.com>",
+      "subject": "China's CXMT Is Set to Challenge DRAM Incumbents",
+      "source": "SemiAnalysis (semianalysis.substack.com)",
+      "date": "2026-06-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-23-china-s-cxmt-is-set-to-challenge-dram-incumbents.md",
+      "importance": "low",
+      "action": "note",
+      "reason": "Hardware/semiconductor analysis — CXMT DRAM competition with Samsung/SK Hynix/Micron. Tangentially relevant to AI compute supply chain but not core LLM/agent technology. SemiAnalysis is paywalled; unlikely to be fully extractable. Links include Substack profile pages for authors Dylan Patel and Ray Wang.",
+      "wiki_relevant_entities": ["semianalysis"],
+      "wiki_relevant_concepts": ["ai-compute-supply-chain"],
+      "article_count": 20,
+      "external_articles": 0,
+      "fetch_url": "https://open.substack.com/pub/semianalysis/p/chinas-cxmt-is-set-to-challenge-dram"
+    },
+    {
+      "message_id": "<20260623.183951.c01972aa@mta6>",
+      "subject": "\ud83d\udee1\ufe0f OpenAI Arms the Cyber Defenders",
+      "source": "Beehiiv newsletter (unknown source name)",
+      "date": "2026-06-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-23-openai-arms-the-cyber-defenders.md",
+      "importance": "high",
+      "action": "fetch_full_article",
+      "reason": "OpenAI applying LLMs/AI to cybersecurity defense — directly relevant entity (OpenAI) and application domain (AI for security). All 20 links are Beehiiv encrypted tracking URLs requiring full article fetch. Newsletter source name not determinable from URLs alone.",
+      "wiki_relevant_entities": ["openai"],
+      "wiki_relevant_concepts": ["ai-security", "llm-applications", "ai-cybersecurity"],
+      "article_count": 20,
+      "external_articles": 0,
+      "fetch_url": null,
+      "note": "All links are Beehiiv encrypted tracking URLs — cannot determine the underlying article URLs without HTTP resolution. Source newsletter publication unknown."
+    },
+    {
+      "message_id": "<20260623194959.3.a51cbbb30d85fcc9@mg2.substack.com>",
+      "subject": "On Sakana Fugu",
+      "source": "AI Weekly (aiweekly.substack.com)",
+      "date": "2026-06-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-23-on-sakana-fugu.md",
+      "importance": "low",
+      "action": "skip",
+      "reason": "Already documented in wiki at wiki/concepts/sakana-fugu.md (112 lines) with comprehensive coverage of TRINITY, Conductor, multi-agent orchestration architecture. Supplementary raw article exists at wiki/raw/articles/2026-06-22_sakana-fugu-multi-agent-system-model.md. AI Weekly is paywalled.",
+      "wiki_relevant_entities": ["sakana-ai"],
+      "wiki_relevant_concepts": ["sakana-fugu", "multi-agent-systems", "trinity", "conductor"],
+      "article_count": 12,
+      "external_articles": 0,
+      "existing_wiki_pages": [
+        "wiki/concepts/sakana-fugu.md",
+        "wiki/raw/articles/2026-06-22_sakana-fugu-multi-agent-system-model.md"
+      ],
+      "fetch_url": "https://open.substack.com/pub/aiweekly/p/on-sakana-fugu"
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "low": 3,
+    "fetch_needed": 2,
+    "already_covered": 1,
+    "out_of_scope": 1,
+    "pipeline_quality_note": "All 5 newsletters contain only Substack/Beehiiv platform redirect URLs — no external article links or body text were captured by the email ingestion pipeline. For high-priority items, full article text must be fetched from the canonical Substack URLs."
+  }
+}
