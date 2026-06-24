@@ -2,7 +2,7 @@
 title: "Agent Skills"
 type: concept
 created: 2026-04-25
-updated: 2026-06-02
+updated: 2026-06-24
 tags:
   - architecture
   - mcp
@@ -105,6 +105,18 @@ Skills live in `.agents/skills/` (repo-scoped) or `~/.codex/skills/` (user-scope
 ### Skills as Container-Mounted Instructions
 
 Skills are reusable, versioned instruction bundles mounted into hosted shell containers. The platform exposes each skill's `name`, `description`, and `path` to the model for routing. The model loads the full `SKILL.md` body and scripts only when the skill is selected -- the same [[concepts/agent-skills|progressive disclosure model]] as the open standard. Server-side [[concepts/context-engineering/context-management|compaction]] keeps long-running skill workflows coherent without manual context management.
+
+### Codex Record & Replay — Workflow Recording as Skills (June 2026)
+
+In June 2026, OpenAI shipped **Codex Record & Replay**, a feature that lets users demonstrate a recurring workflow — filing expense reports, submitting time off requests, updating deployment manifests — and captures that live demo as an inspectable, editable skill.
+
+**Workflow-recording, not instruction-crafting.** Unlike Hermes/Warp self-improvement loops (which learn from eval failures and automatically revise skill contents) or Claude Code skill bundles (hand-authored `SKILL.md` files with curated instructions), Record & Replay derives the skill from a *live demonstration*. The user shows Codex the steps once; Codex records the sequence of commands, tool calls, and decisions into a structured skill file.
+
+**Inspectable and editable.** The recorded skill is not a black box — users can open the captured steps, reorder them, trim unnecessary actions, and inject additional context. This makes skill authoring accessible to non-experts: instead of writing YAML frontmatter and prompt templates, they show the agent what to do.
+
+**A skill *authoring* method, not a skill *format*.** Record & Replay outputs standard-compliant skill directories (`.agents/skills/<name>/` with `SKILL.md` and supporting files). It does not introduce a new skill format — it introduces a new way to *produce* skills. This is orthogonal to the existing [[concepts/agent-skills|Agent Skills]] concept of `SKILL.md` bundles and progressive disclosure, which define the *structure* and *consumption* of skills at runtime.
+
+**Different philosophy: skills-as-recorded-workflows.** The open standard treats skills as instruction bundles — carefully written prompts that tell an agent how to behave. Codex Record & Replay treats skills as captured demonstrations — sequences a user has already performed, reified into reusable form. One is authorial (write the instructions), the other is observational (show the workflow). Both produce the same underlying artifact, but the authoring path changes who can create skills and how quickly they can be produced.
 
 ### OSS Maintenance Case Study
 

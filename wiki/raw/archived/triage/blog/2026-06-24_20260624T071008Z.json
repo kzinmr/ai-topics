@@ -1,0 +1,187 @@
+{
+  "archived_at": "2026-06-24T07:33:42.566788+00:00",
+  "triage_run_id": "20260624T071008Z",
+  "source": "blog",
+  "summary_ja": "2026-06-24のblog-triage: 20記事中4件をtake（Armin Ronacherの内側/外側ループ区別、Together AI ParallelKernelBench、OpenAI Appia Foundation標準化、Anil DashのBig AI対抗プラットフォーム戦略）、3件をreference（Ed Zitron Cargo Culture、George Hotz singularity essay、GPT-5免疫学事例）、残り13件をskip（非AIまたは既存Wikiカバー済み）。",
+  "decisions": [
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "wheresyoured.at",
+      "title": "Cargo Culture",
+      "url": "https://www.wheresyoured.at/cargo-culture/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--cargo-culture--8cdfc01a.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Ed Zitronの最新ループ批判記事。Cargo Cult/宗教的メタファーでAI業界のMonocultureを風刺。Jensen HuangとBoris Chernyの24時間以内の「ループ」プッシュを引用し、トークン消費強制と解釈。既存entities/ed-zitron.mdのLoop Problem節（395-401行）はZitronのループ批判をカバーするが、Cargo Cult framing、Jensen Huangの直接引用、宗教的メタファー（Great Prophecy/Chosen/Cursed/Saint Tibo）は未カバー。Loop Problem節の豊富化に適切。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": "# Cargo Culture\nSource: https://www.wheresyoured.at/cargo-culture/\nIf you liked this piece, you should subscribe to my premium newsletter. It’s $70 a year, or $7 a month, and in return you get a weekly newsletter that’s usually anywhere from 5,000 to 18,000 words, including vast, detailed analyses o"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "geohot.github.io",
+      "title": "the singularity is nearer",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/06/23/liminality.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-06-23-liminality-html--7b66f57a.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ George Hotzの最新哲学的エッセイ。Fullmetal Alchemistのメタファーで人間の魂を賢者の石（AI）に注ぐ比喩、Liminality（中間状態）の感覚、コントロールの幻想。既存entities/george-hotz.mdは6月7日〜21日のポストをカバー済みだが、この6月23日ポスト（liminality.html）の内容（Cruise映画の支配メタファー、最適化空間を走るバスの比喩、vibesとしての深層学習）は未カバー。Blogセクションに追記推奨。",
+      "candidate_wiki_path": "entities/george-hotz.md",
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/06/23/liminality.html\nIt’s crazy how much Fullmetal Alchemist mimics how AI is playing out. We pour human souls into a philosopher’s stone that we think will solve all our problems and cure death. It doesn’t exactl"
+    },
+    {
+      "item_id": "blog-20",
+      "source": "blog",
+      "source_name": "OpenAI News",
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/openai.com--gpt-5-immunology-mystery--1948945e.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ GPT-5 Proの科学研究応用事例。免疫学者Unutmazが3年間解けなかったT細胞分化パズルをGPT-5 ProがIL-2タンパク質経路の仮説で解決。実験結果を予測し未発表結果を正しくシミュレート。AIの科学研究加速の具体的ケーススタディとして貴重だが、一次ソースはOpenAIのマーケティングコンテンツであり、Wikiページ新設よりentities/openai.mdへの軽微な言及または概念ページconcepts/ai-for-science.mdへの参考追加が適切。",
+      "candidate_wiki_path": "entities/openai.md",
+      "body_excerpt": "# How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery\nJune 23, 2026\nThe model’s ability to augment human expertise could help advance fields including cancer research, autoimmune disease, and infections.\nDoctor and immunologist Derya Unutmaz has been interested in artificial intel"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "OPFS + Pyodide test harness",
+      "url": "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-23-opfs-pyodide--8abb6c44.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ブラウザ上でDatasette LiteがOPFS（Origin Private File System）経由でSQLiteファイルを編集できるかのテストハーネス。WebAssembly/Pyodide技術に特化した短い記事（18行）で、AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# OPFS + Pyodide test harness\nSource: https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything\nI've been pondering if\nDatasette Lite\n- the Python Datasette application run entirely in the browser using Pyodide and WebAssembly - might be able to edit persistent SQLite files stored on the u"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette 1.0a35",
+      "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-23-datasette--d7220dce.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Datasette 1.0a35のリリースノート。Create Table JSON API、アクセス許可アシスタント、Interactive Layout Editor等の機能追加。AI/LLMエージェントトピックと無関係なソフトウェアリリース。",
+      "body_excerpt": "# datasette 1.0a35\nSource: https://simonwillison.net/2026/Jun/23/datasette/#atom-everything\nI'll write more about this one tomorrow, but it's a big release. Three highlights from the release notes:\nNew \"Create table\" interface in the database actions menu, backed by the\n/<database>/-/create\nJSON API"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "troyhunt.com",
+      "title": "Weekly Update 509",
+      "url": "https://www.troyhunt.com/weekly-update-509/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/troyhunt.com--weekly-update-509--f02c4afd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Troy Huntの週次ニュース更新。セキュリティ業界の雑多な話題。AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Weekly Update 509\nSource: https://www.troyhunt.com/weekly-update-509/\nTroy Hunt\nHi, I'm Troy Hunt, I write this blog, create courses for Pluralsight and am a Microsoft Regional Director and MVP who travels the world speaking at events and training technology professionals"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "Sunsetting a Package Manager",
+      "url": "https://nesbitt.io/2026/06/23/sunsetting-a-package-manager.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-06-23-sunsetting-a-package-manager-html--c6a8fcbc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ パッケージマネージャーのサンセットに関する個人的ソフトウェアエンジニアリング記事。AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Sunsetting a Package Manager\nSource: https://nesbitt.io/2026/06/23/sunsetting-a-package-manager.html\nOn December 2nd 2026, CocoaPods trunk\ngoes read-only\n. Orta Therox set the plan out in 2024: the server stops accepting new pods and new versions, while the\nmore than 100,000\nlibraries already publ"
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "dynomight.net",
+      "title": "The worthlessness of vitamin D is mildly exaggerated",
+      "url": "https://dynomight.net/vitamin-d/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dynomight.net--vitamin-d--507cdd8b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ビタミンDの健康効果に関する統計的再分析記事。AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# The worthlessness of vitamin D is mildly exaggerated\nSource: https://dynomight.net/vitamin-d/\nFor a while there, many people thought vitamin D was magical—that it could improve bones, the heart, infections, cancer, heart disease, longevity, even mental health. But among people I respect, opinion i"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Regular expressions that work everywhere",
+      "url": "https://www.johndcook.com/blog/2026/06/23/regex-everywhere/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-23-regex-everywhere--e89258c8.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 正規表現の移植性に関するプログラミング記事。AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Regular expressions that work “everywhere”\nSource: https://www.johndcook.com/blog/2026/06/23/regex-everywhere/\nThe most frustrating aspect of regular expressions is that implementations vary. Features supported in one tool may not be supported at all in another tool, or they may be supported with "
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Ep. 450, With Jason Snell",
+      "url": "https://daringfireball.net/thetalkshow/2026/06/23/ep-450",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/daringfireball.net--thetalkshow-2026-06-23-ep-450--0ae6eac2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ GruberのThe Talk Showポッドキャスト。Apple/テクノロジー雑談。AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Ep. 450, With Jason Snell\nSource: https://daringfireball.net/thetalkshow/2026/06/23/ep-450\n‘Perp Walk for Selfies’, With Jason Snell\nTuesday, 23 June 2026\nJason Snell returns to the show for a look back at WWDC 2026, and a look ahead to\nDesigned in California\n, his and Myke Hurley’s upcoming 50-ep"
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "experimental-history.com",
+      "title": "The most wonderful thing that happened to Tommy McHugh",
+      "url": "https://www.experimental-history.com/p/the-most-wonderful-thing-that-happened",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/experimental-history.com--p-the-most-wonderful-thing-that-happened--cf33cd01.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Tommy McHughの伝記的エッセイ（脳卒中後の芸術的覚醒）。医学的・人間的興味記事でAI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# The most wonderful thing that happened to Tommy McHugh\nSource: https://www.experimental-history.com/p/the-most-wonderful-thing-that-happened\nThis is the quarterly links ‘n’ updates post, a collection of things I’ve been reading and doing for the past few months.\nA British man named Tommy McHugh wa"
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "maurycyz.com",
+      "title": "Arp 293: More interacting galaxies",
+      "url": "https://maurycyz.com/astro/arp293/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/maurycyz.com--astro-arp293--c84e8c66.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 相互作用銀河Arp 293の天体写真記事。天文学/アマチュア天文に特化。AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Arp 293: More interacting galaxies\nSource: https://maurycyz.com/astro/arp293/\nNavigation:\nHomepage\nIndex\nYearly archives\nFun\nAstrophotography\n(catalog)\nAbout this site\nReal pages\nDark\nLight\nTTY\nArp 293: More interacting galaxies\n2026-06-23\n[Photo]\nNorth is right. 0.52\"/pixel (18'x9' field) FWHM=4."
+    },
+    {
+      "item_id": "blog-15",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Spying on kids to save kids from spying is very, very stupid",
+      "url": "https://pluralistic.net/2026/06/23/destroy-the-village/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-06-23-destroy-the-village--eef2b9dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 子供のオンライン監視・VPN規制に関するCory Doctorowの記事。監視社会批判でAI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Pluralistic: Spying on kids to save kids from spying is very, very stupid (23 Jun 2026)\nSource: https://pluralistic.net/2026/06/23/destroy-the-village/\nToday's links\nSpying on kids to save kids from spying is very, very stupid\n: First they came for the VPNs.\nHey look at this\n: Delights to delectat"
+    },
+    {
+      "item_id": "blog-16",
+      "source": "blog",
+      "source_name": "entropicthoughts.com",
+      "title": "Tagged data in Haskell (SICP 2.4.2)",
+      "url": "https://entropicthoughts.com/sicp-2-4-tagged-data-in-haskell",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/entropicthoughts.com--sicp-2-4-tagged-data-in-haskell--e2295238.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SICP 2.4.2のタグ付きデータをHaskellで実装するプログラミング教育記事。AI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Tagged data in Haskell (SICP 2.4.2)\nSource: https://entropicthoughts.com/sicp-2-4-tagged-data-in-haskell\nComplex numbers can be stored in their rectangular form, where there’s a real\nand an imaginary part. They can also be stored in polar form, where there’s a\nmagnitude and an angle. The authors a"
+    },
+    {
+      "item_id": "blog-17",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "What went wrong with 3DO",
+      "url": "https://dfarq.homeip.net/what-went-wrong-with-3do/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--what-went-wrong-with-3do--f65b9e62.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 1990年代のゲーム機3DOの失敗分析。ゲーム機歴史記事でAI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# What went wrong with 3DO\nSource: https://dfarq.homeip.net/what-went-wrong-with-3do/?utm_source=rss&utm_medium=rss&utm_campaign=what-went-wrong-with-3do\n3DO sounded like a great premise. Several great minds came together to design a game console that they could license to any consumer electronics m"
+    },
+    {
+      "item_id": "blog-18",
+      "source": "blog",
+      "source_name": "krebsonsecurity.com",
+      "title": "Scattered Spider Hackers Plead Guilty on Day 1 of Trial",
+      "url": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/krebsonsecurity.com--2026-06-scattered-spider-hackers-plead-guilty-on-day-1-of-tr--8381e8c1.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Scattered Spiderハッカー集団の裁判初日の有罪答弁。サイバー犯罪記事でAI/LLMエージェントトピックと無関係。",
+      "body_excerpt": "# Scattered Spider Hackers Plead Guilty on Day 1 of Trial\nSource: https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/\nTwo men pleaded guilty in the United Kingdom this week to criminal charges stemming from an August 2024 cyberattack that crippled\nTransport f"
+    }
+  ]
+}

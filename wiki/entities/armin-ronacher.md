@@ -6,9 +6,9 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-06-14
+updated: 2026-06-24
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md]
 ---
 
 
@@ -58,8 +58,9 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 | 2026-02-04 | Appeared on Syntax.fm #976 discussing Pi's architecture, the "Bash is all you need" philosophy, self-modifying skills with hot reloading, and prompt injection challenges |
 || 2026-04-11 | Published "**The Center Has a Bias**" — analysis of how discussions about AI coding agents are polarized, arguing that the "center" is biased toward engagement because crossing the threshold of use selects for curiosity |
 ||| 2026-06-10 | Published "**Gaslighting Openness**" — critique of how companies frame access as irresponsibility; defends the EU's DMA as essential for device and data access; criticizes Anthropic's financial incentive to restrict what people can do with Mythos and Fable models, wrapping restrictions in safety language while training on public works and blocking open-source distillation; argues true democratized access to AI is in everyone's interest |
-|| 2026-06-13 | Published "**Dangerous Technology For Americans Only**" — analysis of US export controls on Fable 5/Mythos 5; critique of technological nationalism and European dependency on US AI infrastructure |
-|| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
+||| 2026-06-13 | Published "**Dangerous Technology For Americans Only**" — analysis of US export controls on Fable 5/Mythos 5; critique of technological nationalism and European dependency on US AI infrastructure |
+||| 2026-06-23 | Published "**The Coming Loop**" — analysis of harness-level vs agent-level loops, code quality degradation from autonomous looping, software-as-organism metaphor, and future of agentic engineering |
+||| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
 
 ## Core Ideas
 
@@ -207,7 +208,18 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
   - Europe's dependence on US infrastructure (cloud, OS, AI models, semiconductors, satellite internet) creates a "dangerous death spiral" — talent leaves because the ecosystem is weak, the ecosystem stays weak because talent leaves
   - European regulation (DMA, etc.) is a "useless substitute for capability"
   - Ronacher acknowledges his own complicity: Earendil incorporated in Delaware because "if you are trying to raise serious money, hire aggressively, and move quickly, the US often looks like the only game in town"
-  - Warns that European citizens and politicians have not moved beyond blaming the EU for its failures — fragmented markets, risk-averse culture, anti-entrepreneurial regulation
+  - Warns that European citizens and politicians have not moved beyond blaming the EU for its failures — fragmented markets, risk-averse culture, anti-entrepreneurial regulation |
+
+**The Coming Loop — Harness Loops and Code Quality (June 2026):** Ronacher's June 23, 2026 essay "The Coming Loop" provides his most sophisticated analysis yet of the structural dynamics of agentic engineering. Key arguments:
+
+  - **Agent-level vs. harness-level loops:** The familiar agent loop (model calls tools, runs tests, produces output) sits inside a larger harness-level loop — an external system that decides whether work is done, can start fresh sessions, inject new messages, or delegate to other machines. The task stays alive beyond the point where the model would normally say "I am done."
+  - **Code quality concerns under looping:** Models produce defensive, over-complex code with fallbacks instead of making bad states impossible. They duplicate code, invent bad abstractions, and paper over unclear design. Ronacher argues that "hands-off harnesses like Claude Code with ultracode produce worse code than last autumn" because they work uninterrupted on problems for thirty minutes or more, amplifying each iteration's small defensive additions into an increasingly opaque system.
+  - **Where loops work well:** Code porting (Bun Zig→Rust, MiniJinja→Go), performance exploration, security scanning, and research — domains that either transform existing code or produce artifacts without necessity of longevity. The key insight: loops excel at mechanically verifiable translation and experimental workflows, not at writing lasting code.
+  - **Software as organism metaphor:** Moving from software as a deterministic machine to software as an organism. Ronacher argues that with LLMs we push further toward treating systems like patients — observing symptoms, forming hypotheses, ordering tests — rather than understanding them. He questions whether all software should be authored this way, even as he acknowledges that some code doesn't deserve human authorship.
+  - **You can't opt out:** Security pressure (curl's "summer of bliss" — maintainers overwhelmed by AI-generated reports), competitive pressure (small teams out-building through raw speed), and the reality that defenders must eventually loop to keep up. "Some startups will do with five people what used to require fifty."
+  - **Cognitive dependency and new maintenance model:** Codebases produced, reviewed, patched, and kept alive by loops may assume machine participation as part of their maintenance model. Loss of the ability to understand code without machines, loss of human ability to create issue reports or converse without LLM indirection — "we may create codebases that are not merely hard to maintain by humans, but that assume machine participation as part of their maintenance model."
+  - **Controlling loops:** The harness decides when work is finished. In the agent loop, the model says "done" and the human reviews. In harness loops, even the "done" signal loses meaning — it's just communicated to yet another machine that judges. The human role is reduced to that of a messenger.
+  - **Pi's cautious approach as a positive example:** Pi has been cautious, and Ronacher believes that caution is good. He does not want Pi to become an uncontrolled swarm making changes he cannot follow, nor to win the race toward software that writes itself at the cost of maintainability. At the same time, Pi is a harness, and harnesses are at the center of these experiments — even those with reservations must experiment to understand how to make this future bounded and survivable.
 
 ## Influence Metrics
 
@@ -256,6 +268,7 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
 - https://lucumr.pocoo.org/2026/1/14/minijinja-go-port/ — "Porting MiniJinja to Go With an Agent"
 - https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/ — "The Center Has a Bias"
 - https://lucumr.pocoo.org/2026/6/10/gaslighting/ — "Gaslighting Openness"
+- https://lucumr.pocoo.org/2026/6/23/the-coming-loop/ — "The Coming Loop"
 - https://lucumr.pocoo.org/2026/1/27/earendil — "Colin and Earendil"
 - https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/ — "Rye Grows With UV"
 - https://lucumr.pocoo.org/projects/ — Projects page

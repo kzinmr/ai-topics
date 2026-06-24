@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-06-19
+updated: 2026-06-24
 type: entity
 tags:
   - entity
@@ -96,6 +96,21 @@ In May 2026, Cursor launched **agents that monitor GitHub repositories and autom
 | **Cursor CI-fix agents** | Automated CI failure remediation | Autonomous (with review) |
 | **Devin for Security** | Vulnerability detection and remediation | Autonomous |
 | **Claude Code** | CLI-based multi-file editing | Assistive/Agentic |
+
+## /automate — Triggers, Tools and Instructions (June 2026)
+
+Cursor introduced **/automate**, a slash command that transforms natural-language automation descriptions into a configured set of triggers, tools, and instructions. Users describe an automation (e.g., "deploy to staging after passing all tests") and Cursor sets up the corresponding workflow configuration.
+
+### Key Characteristics
+- **Natural-language automation**: Describe what you want; Cursor configures the triggers and execution plan
+- **Trigger-driven**: Automations can fire based on events (CI completion, PR submission, schedule)
+- **Tool-aware**: Generated automations understand available tools and their capabilities
+- **Instruction-based**: Each automation includes contextual instructions for consistent execution
+
+### Position in Cursor's Automation Ecosystem
+- Complements CI-fix agents (reactive failure remediation) with proactive workflow automation
+- Bridges the gap between manual agent invocations and fully autonomous self-driving codebases
+- Democratizes CI/CD automation — no YAML expertise required
 
 ## Real-Time RL (2026)
 

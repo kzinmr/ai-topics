@@ -6,7 +6,7 @@ aliases:
 - perplexity-ai-browser
 - perplexity-computer
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-06-24
 tags:
 - entity
 - product
@@ -78,6 +78,17 @@ In 2025, LayerX Security discovered a Comet-specific attack vector:
 - Malicious web pages inject instructions into the AI agent
 - Data leaks and unintended actions possible
 - Perplexity released a fix patch in August 2025
+
+## Brain: Self-Improving Memory for Agents (June 2026)
+
+Perplexity Computer introduced **Brain**, a self-improving memory system for AI agents. Brain allows agents to persist learnings across sessions, improving task execution over time without requiring explicit retraining or prompt updates.
+
+### Key Characteristics
+- **Self-improving**: Agents automatically refine their contextual knowledge based on task outcomes
+- **Persistent memory**: Learnings survive across agent sessions and invocations
+- **Agent-native**: Designed for Perplexity Computer's autonomous task execution, complementing Comet's search-first browsing interface
+
+Brain represents Perplexity's answer to the agent memory problem — competing with [[concepts/gemini/gemini-enterprise-agent-platform]]'s Memory Bank and Anthropic's session-centric managed agent architecture. The distinction is that Brain is **self-improving** rather than statically configured — the agent writes its own memory based on experience.
 
 ## Market Position
 

@@ -36,6 +36,7 @@ See also: [[entities/claude-code]] (entity page), [[concepts/claude|Claude]] (mo
 
 - [[concepts/claude-code/claude-code-auto-mode]] — Auto mode
 - [[concepts/claude-code/claude-code-goal]] — /goal command and delegation
+- [[concepts/claude-code/claude-code-artifacts]] — Artifacts feature (shareable HTML pages)
 - [[concepts/claude-code/claude-code-sandboxing]] — Sandboxing and isolation
 
 ## Known Issues

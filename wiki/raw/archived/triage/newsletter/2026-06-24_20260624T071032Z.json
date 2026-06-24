@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-06-24T07:28:31.184669+00:00",
+  "triage_run_id": "20260624T071032Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレターをトリアージ。特筆トピック: (1) Armin Ronacher「The Coming Loop」— ハーネスレベルループとコード品質分析の重要エッセイ、entities/armin-ronacher.mdに未反映(TAKE)。(2) Codex Record & Replay—ワークフロー記録型スキル新機能、concepts/agent-skills.mdに未記述(TAKE)。(3) Claude Code Artifacts—機能性HTML共有機能、claude-code/概念に未収録(TAKE)。REFERENCE: Sakana Fugu Ultraベンチマーク数値・Perplexity Brain・Cursor/automate他。Lenny's Podcast(生産性)・SemiAnalysis(半導体/ペイウォール)・Superintel(403期限切れ/トピックカバー済み)・AI Weekly(カバー済み)はスキップ。",
+  "decisions": [
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Sakana Fugu Ultra Benchmarks (73.7 SWE-bench Pro, 82.1 TerminalBench 2.1)",
+      "url": "https://sakana.ai/fugu/",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ sakana-fugu.mdにFugu Ultraの具体的ベンチマーク数値（73.7 SWE-bench Pro, 82.1 TerminalBench 2.1, Fable-class相当）が未記載。概念ページの軽微な補強として価値あり。",
+      "candidate_wiki_path": "concepts/sakana-fugu.md",
+      "body_excerpt": "『Sakana AI released Fugu - Fugu Ultra claims 73.7 on SWE-bench Pro and 82.1 on TerminalBench 2.1, roughly Fable-class』"
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Perplexity Computer Brain — Self-Improving Memory for Agents",
+      "url": "https://www.perplexity.ai/hub/blog/self-improving-memory-for-agents",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Perplexity Computerの新メモリシステム「Brain」。自己改善型エージェントメモリ。entities/perplexity-comet.mdに「Brain」の言及なし（現状はテーブル内の'Perplexity Search'のみ）。URLの記事内容を確認して追記推奨。",
+      "candidate_wiki_path": "entities/perplexity-comet.md",
+      "body_excerpt": "『Perplexity Computer has a new memory system - Brain.』自己改善型エージェントメモリ。"
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Cursor /automate — Triggers, Tools and Instructions",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Cursorの新機能/automate。自動化を記述するとトリガー・ツール・指示を自動設定。entities/cursor-ai.mdに具体的記述なし。軽微な機能追加として言及価値あり。",
+      "candidate_wiki_path": "entities/cursor-ai.md",
+      "body_excerpt": "『Cursor /automate - describe an automation; Cursor sets triggers, tools and instructions.』"
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Gemini Interactions API Now Generally Available",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Gemini Interactions APIがGAに。concepts/gemini/gemini-enterprise-agent-platform.mdにInteractions APIの記述は既にあるが、GAステータスへの更新。軽微。",
+      "candidate_wiki_path": "concepts/gemini/gemini-enterprise-agent-platform.md",
+      "body_excerpt": "『Gemini's Interactions API is now generally available. It combines their API for models and agents.』"
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Stripe Directory — Agents Search & Pay from CLI",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Stripe DirectoryでエージェントがCLIからStripeビジネスを検索・支払可能に。concepts/agentic-commerce.mdとの関連で軽微な更新価値あり。",
+      "candidate_wiki_path": "concepts/agentic-commerce.md",
+      "body_excerpt": "『Stripe Directory - agents can search and pay Stripe businesses from the CLI.』"
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter (lenny.substack.com)",
+      "title": "The new inner game: Your unfair advantage in the age of AI",
+      "url": "https://substack.com/app-link/post?publication_id=10845&post_id=202768941",
+      "raw_path": "~/wiki/raw/newsletters/2026-06-23-the-new-inner-game-your-unfair-advantage-in-the-age-of-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Lenny's Podcastの生産性/マインドセット記事。ゲストJoe Hudsonはコーチ/コンサルタントでAI技術トピックなし。20リンク全てSubstackプラットフォームノイズ（シェア、コメント、サブスク、OAuthリダイレクト）で外部記事リンクなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Ben's Bites — Various: Daybreak, Claude steering, GPT-5.5 health, Clips, Factory, etc.",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 以下は既存Wikiでカバー済み又は非該当: OpenAI Daybreak拡張（concepts/openai-daybreak.mdで網羅済み）、Claude Code steering guide（claude-code-steering-methods.mdでカバー済み）、GPT-5.5 Instant健康指標（軽微）、Clips/Ports/birdclaw.sh/Lettera（AIエージェント非関連）、Factory software factory（entities/factory.mdでカバー済み）、Claude Opus 4.7 robotics（非コア）、ElevenLabs Ads Engine（非コア）、Ramp AI支出分析（一般論）、Slackbot MCP（軽微）、Post-Agent Companies（短すぎ）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "残りのBen's Bites記事は既存Wikiで十分カバー済みまたは非AIプロダクト。"
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "China's CXMT Is Set to Challenge DRAM Incumbents",
+      "url": "https://substack.com/app-link/post?publication_id=6349492&post_id=203118960",
+      "raw_path": "~/wiki/raw/newsletters/2026-06-23-china-s-cxmt-is-set-to-challenge-dram-incumbents.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 半導体/DRAM業界分析（CXMT vs Samsung/SK Hynix/Micron）。AIコンピュートへの間接的関連性のみ。SemiAnalysisはペイウォールで本文抽出不可。20リンクの大半はSubstackプロファイルページ（@rwang07semis、@semianalysis等7件の著者リンク）とプラットフォームUI。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "Superintel (beehiiv, unknown publication name)",
+      "title": "🛡️ OpenAI Arms the Cyber Defenders",
+      "url": null,
+      "raw_path": "~/wiki/raw/newsletters/2026-06-23-openai-arms-the-cyber-defenders.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 全20件のbeehiivトラッキングURLが403期限切れ（〜24h経過）。件名からOpenAI Daybreak（GPT-5.5-Cyber、Patch the Planet）関連だが、concepts/openai-daybreak.md（8555B、6月23日作成）で既に包括的にカバー済み。Superintelの独自コンテンツかどうか確認不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": null,
+      "source": "newsletter",
+      "source_name": "AI Weekly (aiweekly.substack.com)",
+      "title": "On Sakana Fugu",
+      "url": "https://substack.com/app-link/post?publication_id=61455&post_id=203299361",
+      "raw_path": "~/wiki/raw/newsletters/2026-06-23-on-sakana-fugu.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Sakana Fuguはconcepts/sakana-fugu.md（112行、6月22日作成）で包括的にカバー済み。raw記事も別途保存済み（2026-06-22_sakana-fugu-multi-agent-system-model.md）。AI Weekly（Andriy Burkov）はペイウォール。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

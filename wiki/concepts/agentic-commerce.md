@@ -1,7 +1,7 @@
 ---
 title: Agentic Commerce
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-06-24
 type: concept
 tags: [concept, ai-agents, platform, protocol, infrastructure]
 sources:
@@ -22,6 +22,8 @@ Stripe launched the **Agentic Commerce Suite** in April 2026, establishing itsel
 
 Businesses upload their product catalog to Stripe, which syndicates it to AI agents via a hosted **ACP** (Agentic Commerce Protocol) endpoint. This allows agents to browse products with near real-time price, availability, and description data — without businesses needing bespoke integrations for each agent platform.
 
+**Stripe Directory** (June 2026) extends this discovery layer to the CLI: agents can search registered Stripe businesses and initiate payments directly from command-line interfaces, without navigating a web UI. This makes Stripe's agentic commerce infrastructure accessible to coding agents and terminal-based workflows.
+
 ### Checkout: In-Chat Transactions
 
 Stripe powers embedded checkout flows within AI interfaces. Microsoft Copilot Checkout (powered by Stripe) and ChatGPT Instant Checkout are early examples — users complete purchases without leaving the chat. Google's **UCP** (Universal Commerce Protocol), announced at NRF 2026, is another protocol in this space; Stripe's suite supports it without additional integration.
@@ -36,6 +38,10 @@ The key payment primitive. SPTs allow agents to initiate payments using a buyer'
 - Protected by Stripe Radar fraud detection
 
 This solves the core security challenge of agentic payments: agents can spend money but can't steal credentials or exceed authorized limits.
+
+### Invoice Payment MCP (xMCP)
+
+In May 2026, Stripe released an **Invoice Payment MCP** (`xmcp-stripe-invoice`) enabling agents to send Stripe invoices via natural language commands. Unpaid invoices are common friction in client-based businesses — this MCP lets an agent automate the full invoicing lifecycle without dashboard access.
 
 ### Agent Wallets: Link CLI
 

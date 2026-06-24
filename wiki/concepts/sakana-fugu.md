@@ -1,7 +1,7 @@
 ---
 title: "Sakana Fugu"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-24
 type: concept
 tags:
   - fugu
@@ -71,6 +71,8 @@ Fugu models achieve frontier-level performance:
 - Surpass publicly accessible frontier models on standard benchmarks
 - Shoulder-to-shoulder with Fable 5 and Mythos Preview in engineering, science, and reasoning evaluations
 - Competes without export control risks (no single-vendor dependency)
+
+**Fugu Ultra reported benchmarks (June 2026):** 73.7 on SWE-bench Pro, 82.1 on TerminalBench 2.1 — roughly Fable-class for coding and terminal tasks.
 
 ## Experiments
 

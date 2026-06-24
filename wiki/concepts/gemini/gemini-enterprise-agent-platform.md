@@ -1,7 +1,7 @@
 ---
 title: Gemini Enterprise Agent Platform
 created: 2026-05-01
-updated: 2026-05-24
+updated: 2026-06-24
 type: entity
 tags:
   - platform
@@ -71,7 +71,7 @@ Paired with 8th-gen dual-chip TPUs: **TPU 8t** (training: 9,600 per superpod, 2P
 
 ## Gemini Managed Agents + Interactions API (May 2026)
 
-Phil Schmid (Google) announced **Gemini Managed Agents** with the **Interactions API**, giving agents a secure hosted Linux sandbox with memory and code execution — part of Google's broader push into managed agent infrastructure.
+Phil Schmid (Google) announced **Gemini Managed Agents** with the **Interactions API** (now **Generally Available** as of June 2026), giving agents a secure hosted Linux sandbox with memory and code execution — part of Google's broader push into managed agent infrastructure.
 
 ### Key Capabilities
 - **Secure hosted Linux sandbox** — Isolated execution environment for agent code and browser automation
