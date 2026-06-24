@@ -14,7 +14,7 @@
   - `raw/articles/2026-06-24_arxiv-2606.24597_qwen-agentworld.md`
 - **SCHEMA.md**: Added 4 new tags (ocr, document-intelligence, incident, sustainability)
 - **Sources**: HN Algolia (15 trending stories), X/Twitter xurl (10 results), blogwatcher DB, wiki gap analysis
-
+---
 ## [2026-06-24] Blog Wiki Ingest — 4 takes + 3 references from blog-triage checkpoint
 
 - **New page**: `concepts/ai-benchmarks/parallelkernelbench.md` — ParallelKernelBench (PKB): multi-GPU kernel generation benchmark. 87 problems, GPT-5.5 tops at 31% fast@3. Agentic harness evaluation plateaued after ~20 iterations.
@@ -36,6 +36,7 @@
   - `concepts/gemini/gemini-enterprise-agent-platform.md` — updated Interactions API status to Generally Available (June 2026).
   - `concepts/agentic-commerce.md` — added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (xMCP).
   - Sources: Ben's Bites newsletter (June 23, 2026).
+---
 ## [2026-06-23] X Bookmarks Ingest — Drew Breunig "The Problem is Prompt Debt"
 
 - **Raw article saved**: `raw/articles/2026-06-23_drew-breunig-prompt-debt.md` — X Article from @dbreunig
@@ -89,3 +90,5 @@
   - Added `2026-06-18_agent-safety-separation-of-duties.md` (Aakash Gupta)
   - Created concepts: `superintelligence`, `cais`, `mai-thinking-1-report`, `agent-safety`.
 - 2026-06-23: Watchdog fix — removed 1 ghost entry from concepts/_index.md (concepts/capabilities-based-security — target file did not exist).
+
+- 2026-06-24: Watchdog fix — added 2 missing `---` separators in log.md between consecutive ## sections. No other auto-fixable issues found. Index: Format B (clean). _index.md: 0 pipe corruption (false positives — all legitimate markdown tables). Report: wiki-health clean (0 stale pages, 30 orphans flagged for human review).
