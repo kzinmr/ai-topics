@@ -7,7 +7,7 @@ tags:
   - economics
   - agi
 related:
-  - [[entities/alex-imus]]
+  - [[entities/alex-imas]]
   - [[entities/phil-trammell]]
 sources:
   - https://www.dwarkesh.com/p/alex-imus-phil-trammell

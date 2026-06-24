@@ -10,14 +10,15 @@
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
 - [[entities/k-eric-drexler]] — K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford.
 - ... ...
-- [[entities/alex-imus]] — Alex Imas is a researcher and strategist focused on the economic and structural implications of Artificial General Intelligence (AGI).
-- [[entities/phil-trammell]] — Phil Trammell is a researcher working alongside Alex Imas on the economic frameworks and strategic challenges surrounding AGI.
-- [[entities/dario-amodei]] — Dario Amodei is the co-founder and CEO of Anthropic. He is a leading voice on AI policy and the implications of exponential AI growth.
+- [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind; relational sector scarcity, behavioral economics of AI (June 24)
+- [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
+- [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
 - [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
 - [[entities/simon-willison]] — Simon Willison; enriched with Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code (June 23)
 - [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
 - [[entities/modal-labs]] — Modal Labs; added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools) (June 23)
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
+- [[entities/conviction]] — Conviction — AI-focused VC firm founded by Sarah Guo; portfolio includes Baseten, Mistral, Cognition, Harvey, HeyGen; No Priors podcast, Embed grant program (June 24)
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
 - [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
 - [[entities/ed-zitron]] — Ed Zitron; enriched with "Cargo Culture" — religious/cargo cult metaphors for AI loop push, Rot-Com Bubble thesis, venture capital cargo cult (June 24)
