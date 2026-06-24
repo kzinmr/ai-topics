@@ -66,6 +66,7 @@
 - [[concepts/activation-steering]] — Activation Steering — Technique for modifying model behavior by manipulating internal activations
 - [[concepts/active-observability]] — Active Observability — Real-time LLM observability approach
 - [[concepts/advanced-tool-use]] — Advanced Tool Use — Claude Developer Platform advanced tool usage patterns
+- [[concepts/kv-aware-routing]] — KV-Aware Routing — Request routing strategy for LLM inference serving that assigns requests based on KV cache state overlap. Implemented in NVIDIA Dynamo, Mooncake, vLLM (June 24)
 
 ## Comparisons
 

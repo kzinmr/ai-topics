@@ -1,3 +1,7 @@
+## [2026-06-24] New concept page — KV-Aware Routing
+
+- **concepts/kv-aware-routing.md** — KV cache-aware request routing for LLM inference serving. Covers NVIDIA Dynamo/Mooncake/vLLM implementations, comparison with traditional routing, and technical challenges. Resolves orphan wikilinks from multiple pages
+
 ## [2026-06-24] Active Crawl — 5 concept pages + 5 raw articles from trending topics
 
 - **New pages**: 5 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
