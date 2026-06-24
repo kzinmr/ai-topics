@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-06-21
+updated: 2026-06-24
 tags:
   - company
   - voice-ai
@@ -207,6 +207,37 @@ ElevenLabs published a comprehensive voice agent evaluation framework (June 2026
 See [[concepts/voice-agent-evaluation]] for related concept coverage.
 
 Source: raw/articles/2026-06-20_elevenlabs_voice-agent-evaluation-framework-6-pillars-explained.md
+
+## Ads Engine — ElevenCreative (June 2026)
+
+ElevenLabs launched **Ads Engine** within ElevenCreative, automating ad localization across 50+ languages with direct publishing to Google, Meta, and LinkedIn ad platforms.
+
+**Key capabilities:**
+- **50+ language localization**: Automated translation and voice synthesis for global ad campaigns
+- **Direct platform push**: Publish localized ads directly to Google Ads, Meta Ads, and LinkedIn Campaign Manager
+- **Creative adaptation**: Not just translation — adapts visual and audio elements for cultural relevance
+- **Scale**: Enables a single creative asset to be deployed as 50+ localized variants without manual production
+
+Source: [Introducing Ads Engine in ElevenCreative — ElevenLabs Blog](https://elevenlabs.io/blog/introducing-ads-engine-in-elevencreative)
+
+## Anarock Case Study — Voice AI for Real Estate (June 2026)
+
+**Anarock**, India's largest real estate services firm, deployed ElevenLabs voice AI agents to transform their sales operations:
+
+- **5x sales capacity**: AI voice agents handle initial customer outreach and qualification at scale
+- **2x booking growth**: Automated follow-ups and multi-language engagement increased appointment bookings
+- **Regional language customization**: Voice personas customized for India's diverse linguistic landscape (Hindi, Tamil, Telugu, Marathi, etc.) — critical for reaching non-English-speaking property buyers
+- **Human escalation**: Complex negotiations and high-value leads routed to human agents
+
+This case study demonstrates voice AI's killer application in emerging markets where multilingual coverage directly translates to market reach.
+
+Source: [Anarock Case Study — ElevenLabs Blog](https://elevenlabs.io/blog/anarock)
+
+## Voice Agent Latency Optimization (June 2026)
+
+ElevenLabs published a technical deep-dive on voice agent latency optimization, covering the end-to-end pipeline from speech recognition to response delivery.
+
+Source: [Voice Agent Latency Optimization — ElevenLabs Blog](https://elevenlabs.io/blog/voice-agent-latency-optimization)
 
 ---
 

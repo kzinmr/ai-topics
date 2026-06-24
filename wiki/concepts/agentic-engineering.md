@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-06-23
+updated: 2026-06-24
 type: concept
 tags:
   - concept
@@ -212,6 +212,46 @@ Acknowledged the mental health dimension: "Building with agents is the greatest 
 ### Case Study: Porting Moebius to Browser with Claude Code
 
 **Porting Moebius 0.2B to Browser with Claude Code** (Jun 22, 2026): Simon Willison ported a PyTorch/CUDA image inpainting model to run in-browser via ONNX Runtime Web on WebGPU, using Claude Code as the sole implementation agent (never reading the generated code). Key techniques demonstrated: (1) 'Muse on X' — asking an LLM to contemplate feasibility before committing to a plan, the shortest proven prompt for open-ended problem exploration; (2) Subagent delegation — Claude Code spawned a subagent to analyze Whisper Web's obfuscated JavaScript to reverse-engineer the CacheStorage pattern; (3) Autonomous ONNX conversion — Claude autonomously ran Hugging Face weight conversion to ONNX (1.24GB), published to Hugging Face, and deployed via GitHub Pages without the developer touching the conversion pipeline; (4) Agent-kept notes — Claude maintained a running notes.md reflecting discoveries, serving as inter-session state for future agent sessions. This is a pure vibe coding case study where the human acted only as tester and direction-setter. Source: [[raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md]]
+
+## The Agent Loop Debate (June 2026)
+
+A defining controversy of mid-2026: **are "agent loops" the future of software development, or a token-burning scheme?**
+
+### The Pro-Loop Position
+
+**Boris Cherny** (Claude Code lead at Anthropic) declared: *"I no longer write prompts for Claude. I write loops."* **Jensen Huang** (NVIDIA CEO) echoed: *"The era of prompting is over."* The thesis: instead of crafting careful prompts for one-shot outputs, engineers should write **autonomous loops** — LLMs that iterate, self-evaluate, and improve outputs without human intervention per step.
+
+The industry is converging on this pattern:
+- **Warp** published a "Skill Optimization Loop" — inner loop applies skills, outer loop improves skills from human feedback
+- **Claude Code** and **Codex** both increasingly operate in loop mode (agent proposes → executes → evaluates → repeats)
+- **Headroom** (Netflix engineer's token-reduction skill, up to 95% savings) makes longer loops economically viable
+
+### The Anti-Loop Position
+
+**Ed Zitron** (wheresyoured.at) published "Cargo Culture," a scathing critique: the loop push is *"a desperate attempt to get users to burn more tokens."* He frames it as cargo cult behavior — mimicking the form of autonomous agents without proven value, driven by venture capital incentives rather than engineering necessity.
+
+### The Nuanced Middle
+
+**Armin Ronacher** (Flask creator, lucumr.pocoo.org) published "The Coming Loop" — he's actively experimenting with loops but raises critical concerns about code quality:
+
+> *"Models generate code that is too defensive, too complex, and avoids strong invariants."*
+
+Ronacher distinguishes between **harness-level loops** (the agent framework's ReAct cycle) and **agent-level loops** (the engineer writing loop scripts that invoke agents). The latter creates a new layer of abstraction that may be powerful but risks obscuring what the code actually does.
+
+### Prompt Debt as the Underlying Problem
+
+**Drew Breunig** connected loops to a deeper issue: **Prompt Debt**. Natural-language prompts are easy to prototype but accumulate technical debt:
+1. **Iteration slows** — edge cases bloat prompts
+2. **Team productivity drops** — complex prompts become unreadable
+3. **Model lock-in** — model-specific tuning prevents switching
+
+Loops may accelerate this debt by adding another layer of natural-language orchestration. The counter-argument: structured loops with evals (as in eval-driven development) may actually reduce prompt debt by making behavior testable.
+
+### Significance
+
+The debate reveals a fundamental tension in agentic engineering: **autonomy vs. control**. More autonomous loops mean higher productivity but less predictability. The resolution likely lies in hybrid approaches — loops with guardrails, evals, and human-in-the-loop checkpoints at critical decision points.
+
+See also: [[entities/armin-ronacher]] (The Coming Loop), [[entities/ed-zitron]] (Cargo Culture), [[entities/drew-breunig]] (Prompt Debt), [[concepts/prompts-as-technical-debt]]
 
 ## Related Concepts
 

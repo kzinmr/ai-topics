@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-06-18
+updated: 2026-06-24
 tags:
   - security
   - company
@@ -173,6 +173,23 @@ Harvey released the **Legal Agent Benchmark (LAB)**, an open-source benchmark fo
 - **Positive behaviors**: Thorough research (+0.4), post-draft validation (+0.8), verifying and revising (+1.5), targeted retrieval (+0.3), structured analysis (+0.3)
 - **Negative behaviors**: Noisy tool fan-out (-0.5), drafting without review (-1.2)
 - Opus 4.7: Most self-corrective (more drafting + validation). GPT-5.5: Heaviest search user (wider document coverage)
+
+## Training a Legal Agent — Applied Compute Methodology (June 2026)
+
+Harvey published its methodology for training domain-specific legal AI agents under the concept of **Applied Compute** — a framework that goes beyond generic fine-tuning to produce agents capable of complex, multi-step legal reasoning.
+
+### Approach
+
+- **Domain-specific agent training**: Rather than relying on prompt engineering alone, Harvey trains agents on legal-specific workflows — contract analysis, due diligence, regulatory compliance — with behavioral traces that capture the full reasoning chain
+- **End-to-end agent platform**: Harvey Agents now integrate Contract Intelligence, Knowledge, Vault, and Command Center into a unified legal agent infrastructure
+- **Behavioral evaluation**: Agents are evaluated not just on final outputs but on action sequences (research → analyze → draft → validate → revise), with LAB rubrics requiring every criterion to pass
+- **Applied Compute = domain expertise + compute**: The thesis is that legal AI requires domain experts who understand the workflows combined with compute resources to train specialized models — not just general-purpose models with legal prompts
+
+### Significance
+
+This represents a broader trend of **vertical AI agent training** — companies with deep domain expertise building their own agent training pipelines rather than relying on frontier model APIs alone. Harvey's approach mirrors what coding agent companies (Cognition, Cursor) have done for software engineering, but applied to legal reasoning.
+
+Source: [Training a Legal Agent — Harvey Blog](https://www.harvey.ai/blog/training-a-legal-agent-with-applied-compute)
 
 ## Related
 

@@ -3,6 +3,9 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
+- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
+- [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
+- [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)
 - [[entities/drew-breunig]] — Drew Breunig; enriched with "The Problem is Prompt Debt" X Article — prompt debt framework, fighting the weights, algorithmic prompt search (June 23)
 - [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
@@ -33,6 +36,9 @@
 - [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
 
 ## Concepts (Updated)
+
+- [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
+- [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record & Replay workflow recording as skills — skill authoring via live demonstration (June 24)

@@ -2,7 +2,7 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-05-17
+updated: 2026-06-24
 tags:
   - company
   - ai-agents
@@ -49,6 +49,20 @@ Decagon employs Applied Software Engineers (ASWEs) focused on agent engineering 
 
 Authored by Kathryn Zhou (May 11, 2026).
 
+
+## Duet Autopilot — Redefining Forward Deployment (June 2026)
+
+Decagon launched **Duet Autopilot**, a paradigm shift in how AI customer support agents are deployed and improved. Rather than the traditional "forward deployment" model (consultants on-site configuring agents), Duet Autopilot automates the full deployment lifecycle.
+
+**Key components:**
+- **A/B Testing**: Automated experimentation — run multiple agent configurations simultaneously, measure performance, and auto-select winners
+- **Simulation**: Test agents against synthetic customer scenarios before going live, reducing deployment risk
+- **Watchtower QA**: Continuous quality monitoring post-deployment, with automatic detection of regression and drift
+- **Agent Development Kit**: Tools for engineering teams to build, test, and iterate on agent behavior programmatically
+
+**Significance**: Decagon's approach challenges the consulting-heavy enterprise AI deployment model. By automating deployment and improvement, they aim to make AI customer support self-service rather than professional-services-dependent.
+
+Source: [How Decagon is redefining forward deployment — Decagon Blog](https://decagon.ai/blog/how-decagon-is-redefining-forward-deployment)
 
 ## Related
 
