@@ -1,0 +1,69 @@
+{
+  "archived_at": "2026-06-25T08:02:28.674908+00:00",
+  "triage_run_id": "20260625T072000Z",
+  "source": "newsletter",
+  "summary_ja": "3ニュースレターをトリアージ。要約: (1) [AINews] It's Meta-Harness Summer — OpenAI Jalapeño(GPT-5.5 Instant), Omnigent, Qwen-AgentWorld, OpenThoughts-Agent, Weaviate Engram GA, GLM-5.2等をカバー; (2) [AINews] Claude Tag — Claude Tag詳細（既存ページでカバー済み）+ バックグラウンドエージェントエコシステム; (3) Databricks Podcast — Omnigent meta-harnessとMatei Zahariaの深掘りインタビュー。5 takes: Omnigent追記(meta-harness.md), Matei Zaharia新規エンティティ, GPT-5.5 Instant追記(openai.md), OpenThoughts-Agent追記(bespoke-labs.md), Weaviate Engram追記(weaviate.md)。3 references + 7 skips。",
+  "decisions": [
+    {
+      "item_id": "newsletter-ref-01",
+      "source": "newsletter",
+      "source_name": "[AINews] Claude Tag",
+      "title": "Background/Async Agents Ecosystem (Shopify, Stripe, Ramp, Paradigm)",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-claude-tag-multiplayer-proactive",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-ainews-claude-tag-multiplayer-proactive-persistent-agents-in-slack.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ バックグラウンドエージェントのエコシステム拡大について言及。Shopify/Stripe/Ramp/Paradigm/Cognitionが独自のバックグラウンドエージェントを構築。concepts/vajra-background-agent.mdは存在するが、エコシステム全体の視点は未カバー。entities/anthropic.mdやconcepts/ai-agents.mdに関連トレンドとして軽く言及可能。",
+      "candidate_wiki_path": "concepts/vajra-background-agent.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-24\n**Subject:** [AINews] Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack\n**Collected:** 2026-06-25T07:19:41.111627+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91"
+    },
+    {
+      "item_id": "newsletter-ref-02",
+      "source": "newsletter",
+      "source_name": "Databricks Podcast",
+      "title": "Databricks LTAP/Lakebase — Transactional Database on Object Stores",
+      "url": "https://www.latent.space/p/databricks",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-reynold-xin-databricks.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ LTAP（Lake Transactional/Analytical Processing）とLakebase（オブジェクトストア上のデータベース）に関する議論。エージェント時代のデータ基盤として示唆に富むが、中核的なLLM/AI Agentトピックからはやや距離がある。既存のentities/databricks.mdへの補足として価値あり。",
+      "candidate_wiki_path": "entities/databricks.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-24\n**Subject:** Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks\n**Collected:** 2026-06-25T07:19:45.116077+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1"
+    },
+    {
+      "item_id": "newsletter-ref-03",
+      "source": "newsletter",
+      "source_name": "[AINews] It's Meta-Harness Summer",
+      "title": "Cursor x Notion Integration — Agent Workflows in Team Software",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-its-meta-harness-summer",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-25-ainews-it-s-meta-harness-summer.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ CursorタスクをNotionから直接委任可能に。concepts/cursor-automations.mdとconcepts/notion-mcp.mdが存在するが、Notion-Cursor連携の具体的統合は未カバー。軽い参照として価値。",
+      "candidate_wiki_path": "entities/cursor-ai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-25\n**Subject:** [AINews] It's Meta-Harness Summer\n**Collected:** 2026-06-25T07:19:46.447838+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj"
+    },
+    {
+      "item_id": "newsletter-skip-02",
+      "source": "newsletter",
+      "source_name": "Beehiiv Newsletter (Claude Tag)",
+      "title": "Claude Tag in Slack (Duplicate from Beehiiv)",
+      "url": "https://link.mail.beehiiv.com/ss/c/u001.KU4owwL0A4TgyC-aATtp3idPdEQQVge0G0gpStA8",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-claude-tag-joins-the-team-in-slack.md",
+      "recommended_action": "skip",
+      "reason_js": "★★☆☆☆ AINewsと同一トピックの別ソース。重複。AINews版で十分カバー済み。",
+      "reason_ja": "★★☆☆☆ AINewsと同一トピックの別ソース。重複。AINews版で十分カバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-24\n**Subject:** 🏷️ Claude Tag Joins the Team in Slack\n**Collected:** 2026-06-25T07:19:42.449432+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/ss/c/u001.KU4owwL0A4TgyC-aATtp3idPdEQQVge0G0gpStA8hzac2H6mVD2O2lZQnGZ5dQoKpMK9y3DtMuhndt9c1F"
+    },
+    {
+      "item_id": "newsletter-skip-03",
+      "source": "newsletter",
+      "source_name": "The Skip",
+      "title": "How Meta Is Reinventing Product Management",
+      "url": "https://open.substack.com/pub/theskip/p/how-meta-is-reinventing-product-management",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-how-meta-is-reinventing-product-management.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ メタのプロダクトマネジメント手法に関する一般的なビジネス記事。LLM/AI Agent関連のトピックを含まず、Wikiのスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-24\n**Subject:** How Meta Is Reinventing Product Management\n**Collected:** 2026-06-25T07:19:43.757297+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/6ca6e44a-db77-452a-87fd-f0db10326a60?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoO"
+    }
+  ]
+}

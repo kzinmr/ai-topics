@@ -1,16 +1,18 @@
 ---
 title: Bespoke Labs
 created: 2026-05-08
-updated: 2026-05-08
-type: entity
+updated: 2026-06-25
 tags:
   - company
   - open-source
   - training
   - ai-agents
   - reinforcement-learning
+  - open-data
 aliases: [bespokelabs, BespokeLabs.AI]
-sources: [raw/articles/2026-05-08_bespokelabs_multi-turn-tool-use-rl.md]
+sources:
+  - raw/articles/2026-05-08_bespokelabs_multi-turn-tool-use-rl.md
+  - raw/newsletters/2026-06-25-ainews-it-s-meta-harness-summer.md
 related:
   - concepts/multi-turn-tool-use-rl
   - concepts/bfcl-v3
@@ -54,6 +56,7 @@ Community-driven effort to curate the best **open post-training datasets**. Coll
 - **Key datasets**: OpenThoughts-114k, OpenThoughts2-1M, OpenThoughts3 (accepted to ICLR 2026)
 - **Models trained**: OpenThinker2-32B (outperforms DeepSeek-R1-32B)
 - **Active project**: OpenThoughts-Agents (best open agent training datasets)
+  - **OpenThoughts-Agent pipeline (June 2026)** — Open curation/training pipeline for agentic models with 100+ controlled ablations. Provides a systematic recipe for training agents that goes beyond static datasets. ([AINews, Jun 2026](https://open.substack.com/pub/swyx/p/ainews-its-meta-harness-summer))
 
 ### Evalchemy
 Evaluation framework for AI agents. (GitHub: [mlfoundations/evalchemy](https://github.com/mlfoundations/evalchemy))

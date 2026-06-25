@@ -1,0 +1,131 @@
+{
+  "run_id": "20260625T071947Z",
+  "triaged_at": "2026-06-25T07:20:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "classifications": {
+    "critical": [
+      {
+        "index": 0,
+        "subject": "[AINews] Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack",
+        "date": "2026-06-24",
+        "source_uid": "uid=274",
+        "newsletter": "AINews (swyx)",
+        "primary_url": "https://open.substack.com/pub/swyx/p/ainews-claude-tag-multiplayer-proactive",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-ainews-claude-tag-multiplayer-proactive-persistent-agents-in-slack.md",
+        "wiki_relevance": "critical",
+        "reason": "Anthropic's 'Claude Tag' — a multiplayer, proactive, persistent agent embedded in Slack. Core topic: AI agent collaboration patterns, workspace-native agents, multi-user agent interaction. Directly relevant to [[ai-agents]], [[anthropic]], [[claude]], [[slack-integration]], potential new concept page for 'workspace-native agents' or 'multiplayer agents'.",
+        "suggested_pages": [
+          "entities/anthropic",
+          "entities/claude",
+          "concepts/ai-agents",
+          "new: concepts/multiplayer-agents"
+        ],
+        "action": "ingest_article_and_create_or_update_pages"
+      },
+      {
+        "index": 4,
+        "subject": "[AINews] It's Meta-Harness Summer",
+        "date": "2026-06-25",
+        "source_uid": "uid=278",
+        "newsletter": "AINews (swyx)",
+        "primary_url": "https://open.substack.com/pub/swyx/p/ainews-its-meta-harness-summer",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-25-ainews-it-s-meta-harness-summer.md",
+        "wiki_relevance": "critical",
+        "reason": "A trending concept — 'meta-harness' — for AI agent orchestration. Directly aligns with the wiki's agent harness research focus. Likely covers multi-agent orchestration frameworks and meta-level agent management. Relevant to [[agent-harness]], [[ai-agents]], [[multi-agent-systems]], and the existing [[concepts/agent-harness-research]] page.",
+        "suggested_pages": [
+          "concepts/agent-harness-research",
+          "concepts/ai-agents",
+          "new: concepts/meta-harness"
+        ],
+        "action": "ingest_article_and_create_or_update_pages"
+      }
+    ],
+    "high": [
+      {
+        "index": 1,
+        "subject": "🏷️ Claude Tag Joins the Team in Slack",
+        "date": "2026-06-24",
+        "source_uid": "uid=275",
+        "newsletter": "Beehiiv newsletter (likely The Rundown AI)",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-claude-tag-joins-the-team-in-slack.md",
+        "wiki_relevance": "high",
+        "reason": "Same story as AINews #1 (Claude Tag in Slack) but from a different newsletter source. Duplicate coverage — use as supplementary source for the same wiki pages. May contain additional angles or details from the beehiiv source.",
+        "suggested_pages": [
+          "entities/anthropic",
+          "entities/claude",
+          "concepts/ai-agents"
+        ],
+        "action": "cross_reference_with_index_0_keep_as_supplementary_source"
+      },
+      {
+        "index": 3,
+        "subject": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+        "date": "2026-06-24",
+        "source_uid": "uid=277",
+        "newsletter": "AINews (swyx)",
+        "primary_url": "https://open.substack.com/pub/swyx/p/databricks",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-reynold-xin-databricks.md",
+        "wiki_relevance": "high",
+        "reason": "Matei Zaharia (co-creator of Apache Spark, MLflow) and Reynold Xin (Databricks co-founder) arguing for open frontier AI ecosystem. Relevant to [[databricks]], [[open-source-ai]], [[matei-zaharia]]. Strong topical fit for wiki's open-source AI coverage. Likely a podcast episode with discussion of open vs closed frontier models.",
+        "suggested_pages": [
+          "entities/databricks",
+          "new: entities/matei-zaharia",
+          "concepts/open-source-ai",
+          "concepts/frontier-models"
+        ],
+        "action": "ingest_article_and_create_or_update_pages"
+      }
+    ],
+    "low": [
+      {
+        "index": 2,
+        "subject": "How Meta Is Reinventing Product Management",
+        "date": "2026-06-24",
+        "source_uid": "uid=276",
+        "newsletter": "The Skip (theskip on Substack)",
+        "primary_url": "https://open.substack.com/pub/theskip/p/how-meta-is-reinventing-product-management",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-how-meta-is-reinventing-product-management.md",
+        "wiki_relevance": "low",
+        "reason": "General tech/business topic about Meta's product management practices. Not directly about LLM, AI agents, or AI tooling. Unless the article specifically discusses AI-augmented PM or Meta's use of AI in product development, this falls outside the wiki's scope.",
+        "suggested_pages": [],
+        "action": "skip_unless_content_reveals_ai_angle"
+      }
+    ]
+  },
+  "summary": {
+    "critical_count": 2,
+    "high_count": 2,
+    "low_count": 1,
+    "primary_themes": [
+      "Multiplayer/workspace-native AI agents (Claude Tag in Slack)",
+      "Agent meta-harnesses and orchestration trends",
+      "Open frontier AI ecosystem (Databricks perspective)"
+    ],
+    "ingest_queue": [
+      {
+        "priority": 1,
+        "subject": "[AINews] It's Meta-Harness Summer",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-25-ainews-it-s-meta-harness-summer.md",
+        "primary_url": "https://open.substack.com/pub/swyx/p/ainews-its-meta-harness-summer"
+      },
+      {
+        "priority": 2,
+        "subject": "[AINews] Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-ainews-claude-tag-multiplayer-proactive-persistent-agents-in-slack.md",
+        "primary_url": "https://open.substack.com/pub/swyx/p/ainews-claude-tag-multiplayer-proactive"
+      },
+      {
+        "priority": 3,
+        "subject": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-24-why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-reynold-xin-databricks.md",
+        "primary_url": "https://open.substack.com/pub/swyx/p/databricks"
+      }
+    ],
+    "duplicate_cluster": {
+      "topic": "Claude Tag in Slack",
+      "members": ["uid=274 (AINews)", "uid=275 (Beehiiv)"],
+      "dedup_note": "Both cover the same announcement; prefer AINews (uid=274) as primary source due to richer context links"
+    }
+  }
+}

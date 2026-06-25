@@ -64,6 +64,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
   - **Prompting guidance:** OpenAI recommends treating GPT-5.5 as a **new model family to tune for**, not a drop-in replacement for GPT-5.2 or GPT-5.4. Start with the smallest prompt that preserves the product contract, then tune reasoning effort, verbosity, tool descriptions, and output format ([Simon Willison, Apr 2026](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/)).
   - **Codex migration:** OpenAI recommends running `$openai-docs migrate this project to gpt-5.5` to follow the embedded upgrade guide in their openai-docs skill.
 - **GPT-5.5 Instant** (May 2026) — Now the **default model** for both ChatGPT and API (`gpt-5.5-chat-latest`). Improvements include: factuality, baseline intelligence, image understanding, and conversational tone. Key new capability: access to saved memories, past chats, uploaded files, and connected Gmail for personalized responses.
+  - **GPT-5.5 Instant revision (June 2026)** — Revised model with improved intent understanding, constraint handling, and conversational style. ([AINews, Jun 2026](https://open.substack.com/pub/swyx/p/ainews-its-meta-harness-summer))
 - **o-series** — Reasoning-focused models with extended thinking
 - **GPT-4o / GPT-4o-mini** — Multimodal models with vision and audio capabilities
 

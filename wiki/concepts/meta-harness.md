@@ -2,14 +2,15 @@
 title: "Meta-Harness"
 type: concept
 created: 2026-04-09
-updated: 2026-06-09
-tags: [concept, harness-engineering, meta-harness, autoresearch, hill-climbing, agent-runtime, optimization, stanford, mit, text-optimization]
+updated: 2026-06-25
+tags: [concept, harness-engineering, meta-harness, autoresearch, hill-climbing, agent-runtime, optimization, stanford, mit, text-optimization, databricks, omnigent]
 related: [harness-engineering, automated-optimization, llm-systems, autoresearch, hermes-agent, text-optimization, yoonho-lee]
 sources:
   - raw/articles/2026-04-06_deedydas_meta-harnesses-autoresearch.md
   - raw/articles/2026-04-07_howdymary_meta-harness-hermes.md
   - https://arxiv.org/abs/2603.28052
   - raw/articles/2026-06-08_yoonho-lee_we-should-take-text-optimization-more-seriously.md
+  - raw/newsletters/2026-06-24-why-the-frontier-ecosystem-must-be-open-matei-zaharia-and-reynold-xin-databricks.md
 ---
 
 # Meta-Harness
@@ -140,6 +141,61 @@ Karpathy's **Autoresearch** pattern explores and reports on a topic. Deedy's Met
 
 ### Key Insight
 The model weights stay fixed. What improves is the *operating system* — the code that orchestrates how the model interacts with its environment, tools, and context.
+
+|---
+
+## 4. Commercial Implementation: Omnigent (Databricks, 2026)
+
+### What Is Omnigent
+
+Omnigent is Databricks' **open-source meta-harness** for combining, controlling, and sharing agents across different agent platforms — [[entities/claude-code|Claude Code]], [[entities/codex|Codex]], [[entities/cursor-ai|Cursor]], Pi, custom agents, and internal tools. Announced at Data + AI Summit 2026 and open-sourced immediately, it represents the first major **production deployment** of the meta-harness concept by a company valued at $175B.
+
+### Why Databricks Built It
+
+Databricks CTO [[entities/matei-zaharia]] explains that if frontier model performance becomes commoditized, the durable advantage becomes the company-specific context around the models: proprietary data, governed access, operational state, and transaction logs. Omnigent sits above individual agent platforms and provides:
+
+- **Common API** for agent sessions, files, streams, tool calls, and cancellation
+- **Persistent sessions and cloud sandboxes** for long-running agent tasks
+- **Sharing, search, and collaboration** across agents
+- **Contextual and stateful security policies** (agents reading confidential docs, installing compromised packages, leaking data)
+- **Spend control** — preventing an agent from burning $500 reading logs
+- **Genie integration** — Databricks' agentic data coworker with 3x the accuracy of generic agents
+
+### Architecture
+
+Omnigent is positioned as a **meta-layer** above individual agent harnesses:
+
+```
+Claude Code | Codex | Cursor | Pi | Custom Agent | Genie
+    ↓           ↓        ↓       ↓        ↓           ↓
+╔══════════════════════════════════════════════════════╗
+║                   Omnigent                            ║
+║  (common session/files/streams/tools/cancel API)     ║
+╚══════════════════════════════════════════════════════╝
+    ↓
+Databricks Platform (governance, context, data, state)
+```
+
+### Significance for Meta-Harness Theory
+
+Omnigent validates the meta-harness thesis at **industrial scale**:
+
+| Meta-Harness Principle | Omnigent Implementation |
+|------------------------|------------------------|
+| Fixed model weights | Works above any agent (Claude, Codex, Cursor) |
+| Optimize the runtime | Provides common infrastructure layer |
+| Context as optimization target | Proprietary data, governed access, state |
+| Verifiable benchmarks | Production enterprise use cases |
+
+### Startup Opportunities
+
+Zaharia identified several startup opportunities around Omnigent-style meta-harnesses:
+- **Coding-agent analytics**: Understanding how agents are used across an organization
+- **Quality evaluation**: Ensuring agent outputs meet enterprise standards
+- **Skills marketplaces**: Composable agent capabilities
+- **Spend management**: Governing agent resource consumption
+
+([Latent Space podcast, Jun 2026](https://www.latent.space/p/databricks))
 
 ---
 
