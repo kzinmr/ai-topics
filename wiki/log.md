@@ -1,3 +1,37 @@
+## [2026-06-25] Active Crawl — 3 new concept pages + 1 enrichment from trending topics
+
+- **New pages**: 3 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
+  - `concepts/openai-jalapeno-inference-chip.md` — OpenAI Jalapeño: custom LLM inference chip with Broadcom, 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark (714 HN pts, TechCrunch + OpenAI)
+  - `concepts/nvidia-45c-data-center-cooling.md` — NVIDIA 45°C Data Center Cooling: Rubin generation 100% liquid-cooled, near-zero water consumption, closed-loop warm-water design (348 HN pts, NVIDIA Blog)
+  - `concepts/anthropic-alibaba-claude-ip-dispute.md` — Anthropic-Alibaba Claude IP Extraction Dispute: illicit distillation accusation, NSA/Mythos access loss, export controls context (450+248 HN pts, HN discussion)
+- **Enriched**: `concepts/computer-use.md` — Added Gemini 3.5 Flash Computer Use section (223 HN pts, Google AI Blog)
+- **Raw articles saved**: 5 source articles
+  - `raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md` (pre-existing)
+  - `raw/articles/2026-06-25_techcrunch-openai-broadcom-jalapeno.md`
+  - `raw/articles/2026-06-25_hn-discussion_anthropic-alibaba-claude-extraction.md`
+  - `raw/articles/2026-06-25_hn-discussion_nsa-mythos-anthropic-dispute.md`
+  - `raw/articles/2026-06-25_nvidia-45c-liquid-cooling-data-center.md`
+  - `raw/articles/2026-06-25_google-gemini-3-5-flash-computer-use.md`
+- **SCHEMA.md**: Added 2 new tags (broadcom, data-center)
+- **Sources**: HN Algolia (20 trending stories), X/Twitter xurl (10 results), blogwatcher DB (30 articles), wiki gap analysis (1769 concepts, 836 entities)
+
+## [2026-06-25] Active Crawl — 3 new concept pages + 1 enrichment from trending topics
+
+- **New pages**: 3 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
+  - `concepts/openai-jalapeno-inference-chip.md` — OpenAI Jalapeño: custom LLM inference chip with Broadcom, 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark (714 HN pts, TechCrunch + OpenAI)
+  - `concepts/nvidia-45c-data-center-cooling.md` — NVIDIA 45°C Data Center Cooling: Rubin generation 100% liquid-cooled, near-zero water consumption, closed-loop warm-water design (348 HN pts, NVIDIA Blog)
+  - `concepts/anthropic-alibaba-claude-ip-dispute.md` — Anthropic-Alibaba Claude IP Extraction Dispute: illicit distillation accusation, NSA/Mythos access loss, export controls context (450+248 HN pts, HN discussion)
+- **Enriched**: `concepts/computer-use.md` — Added Gemini 3.5 Flash Computer Use section (223 HN pts, Google AI Blog)
+- **Raw articles saved**: 5 source articles
+  - `raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md` (pre-existing)
+  - `raw/articles/2026-06-25_techcrunch-openai-broadcom-jalapeno.md`
+  - `raw/articles/2026-06-25_hn-discussion_anthropic-alibaba-claude-extraction.md`
+  - `raw/articles/2026-06-25_hn-discussion_nsa-mythos-anthropic-dispute.md`
+  - `raw/articles/2026-06-25_nvidia-45c-liquid-cooling-data-center.md`
+  - `raw/articles/2026-06-25_google-gemini-3-5-flash-computer-use.md`
+- **SCHEMA.md**: Added 2 new tags (broadcom, data-center)
+- **Sources**: HN Algolia (20 trending stories), X/Twitter xurl (10 results), blogwatcher DB (30 articles), wiki gap analysis (1769 concepts, 836 entities)
+
 ## [2026-06-25] Newsletter Wiki Ingest — 5 takes from newsletter-triage checkpoint (FAILED → recovered from inbox pre-triage)
 
 - **Notes**: Newsletter-triage cron job failed (API key 401). Recovered from inbox pre-triage summary + direct newsletter URL resolution. 3 newsletters triaged: "[AINews] It's Meta-Harness Summer", "[AINews] Claude Tag", "Databricks Podcast (Latent Space)". 15 total decisions (5 takes, 3 references, 7 skips).
