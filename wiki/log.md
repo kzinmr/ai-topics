@@ -205,3 +205,13 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Index**: Format B (digest), 0 pipe corruption, 0 line prefix corruption, 0 triple brackets, 0 ghosts, 0 cross-section misplacement, 0 Japanese filenames, 0 duplicates — fully clean
 - **Log.md**: 0 pipe corruption, 0 line prefix corruption — clean
 - **Filesystem**: 836 entities, 1773 concepts, 31 comparisons, 4 queries, 11 events = 2708 total
+
+---
+
+## [2026-06-25] Wiki Health auto-fix
+
+- **Fixed**: 3 duplicate entries in index.md (concepts/agentic-engineering, entities/modal-labs, entities/openai — older entries removed)
+- **Added**: 20 orphan pages to index.md (8 concepts + 12 comparisons) — Format B digest
+- **Index Format B**: 0 pipe corruption, 0 line prefix, 0 triple brackets, 0 ghosts, 0 duplicates — clean ✅
+- **Log.md**: 0 pipe corruption, 0 missing separators — clean ✅
+- **Filesystem**: 836 entities, 1773 concepts, 31 comparisons = 2640 total Layer 2

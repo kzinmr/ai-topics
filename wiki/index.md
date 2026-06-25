@@ -25,14 +25,12 @@
 - [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
 - [[entities/simon-willison]] — Simon Willison; enriched with Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code (June 23)
 - [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
-- [[entities/modal-labs]] — Modal Labs; added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools) (June 23)
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
 - [[entities/conviction]] — Conviction — AI-focused VC firm founded by Sarah Guo; portfolio includes Baseten, Mistral, Cognition, Harvey, HeyGen; No Priors podcast, Embed grant program (June 24)
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
 - [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
 - [[entities/ed-zitron]] — Ed Zitron; enriched with "Cargo Culture" — religious/cargo cult metaphors for AI loop push, Rot-Com Bubble thesis, venture capital cargo cult (June 24)
 - [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
-- [[entities/openai]] — OpenAI; enriched with Appia Foundation (Linux Foundation-hosted AI evaluation standards) + GPT-5 immunology case study (Derya Unutmaz, T cell puzzle) (June 24)
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24)
 - [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
 - [[entities/0xjeff]] — 0xJeff — AI researcher and writer
@@ -51,7 +49,6 @@
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record & Replay workflow recording as skills — skill authoring via live demonstration (June 24)
 - [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
-- [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Moebius browser porting case study (muse-on-X, subagent delegation, ONNX→WebGPU) (June 23)
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
 - [[concepts/ai-benchmarks/parallelkernelbench]] — ParallelKernelBench (PKB); multi-GPU kernel generation benchmark with 87 problems from real codebases, GPT-5.5 tops at 31% fast@3 (June 24)
 - [[concepts/anthropic-alibaba-claude-ip-dispute]] — Anthropic-Alibaba Claude IP Dispute — June 2026 Anthropic accusation of illicit Claude distillation by Alibaba; NSA/Mythos access loss, export controls, US-China AI tensions (June 25)
@@ -83,6 +80,15 @@
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
+
+- [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
+- [[concepts/abliteration]] — Abliteration
+- [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
+- [[concepts/activegraph]] — ActiveGraph: Event-Sourced Reactive Graph for Agentic Systems
+- [[concepts/activitypub]] — ActivityPub
+- [[concepts/adam-optimizer]] — Adam Optimizer
+- [[concepts/adversarial-interoperability]] — Adversarial Interoperability
+- [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
 - [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
 ## Comparisons
 
@@ -96,3 +102,15 @@
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API Alternatives — 2026 Comparison
 - [[comparisons/claude-managed-agents-sandbox-providers]] — Claude Managed Agents Self-Hosted Sandbox Providers
 - [[comparisons/claude-mythos-preview-vs-mythos5-fable5]] — Claude Mythos Preview vs Mythos 5 & Fable 5 System Cards
+- [[comparisons/claude-opus-4x-comparison]] — Claude Opus 4.6 vs 4.7 vs 4.8 System Card Comparison
+- [[comparisons/claude-sonnet46-vs-opus46]] — Claude Sonnet 4.6 vs Opus 4.6 — System Card Comparison
+- [[comparisons/codex-app-server-vs-agent-protocols]] — Codex App Server and the Agent Protocol Landscape
+- [[comparisons/codex-app-server-vs-claude-agent-sdk]] — Codex App Server vs Claude Agent SDK
+- [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison
+- [[comparisons/evals-skills]] — Evals Skills for Coding Agents
+- [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
+- [[comparisons/google-alerts-alternatives-2026]] — Google Alerts Alternatives — 2026 Developer & Marketer Guide
+- [[comparisons/gpt-image-2-vs-nano-banana-2]] — GPT Image 2 vs Nano Banana 2
+- [[comparisons/harness-backend-routing]] — Harness Backend Routing — OpenClaw vs Hermes vs Codex App Server vs Devin Desktop
+- [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw
+- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison
