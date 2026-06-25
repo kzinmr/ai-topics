@@ -2,7 +2,7 @@
 title: Chris Tate
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-06-25
 source: "x-account"
 related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, entities/mitsuhiko]
 tags:
@@ -24,7 +24,7 @@ sources: []
 | **GitHub** | [@ctate](https://github.com/ctate) |
 | **Role** | Software Engineer at Vercel |
 | **Location** | Austin, TX |
-| **Known for** | json-render (Generative UI), agent-browser, portless |
+| **Known for** | json-render (Generative UI), agent-browser, portless, emulate |
 | **Followers** | ~32.5K on X |
 
 ## Overview
@@ -34,6 +34,7 @@ Chris Tate is a software engineer at **Vercel** and a prolific open-source creat
 1. **json-render** — A "Generative UI" framework that lets LLMs produce structured JSON that maps to predefined component catalogs, enabling AI to safely generate interactive dashboards, widgets, and apps. The project has ~13.9K GitHub stars and is considered a significant step toward the vision of AI directly plugging into the rendering layer.
 2. **agent-browser** — A browser automation CLI designed specifically for AI agents, enabling autonomous web interaction without heavy Selenium/Playwright overhead.
 3. **portless** — A tool for secure port forwarding during development.
+4. **emulate** — Local API emulation for CI and no-network sandboxes, released June 2026.
 
 Vercel CEO Guillermo Rauch has publicly credited Tate's work on json-render, describing it as "10 years of thinking about the generative UI challenge" and calling it a "very disruptive technology" that bypasses traditional UI production steps.
 
@@ -74,6 +75,12 @@ The project reflects Tate's broader interest in **making AI agents more capable 
 ### portless
 
 A secure port forwarding tool for development. Allows developers to expose local services without opening ports on their machine. Part of Tate's pattern of building **developer experience tools** that solve real friction points.
+
+### emulate
+
+A local API emulation tool for CI and no-network sandboxes, released under vercel-labs in June 2026. Enables developers to mock external API responses locally, making integration tests reproducible without network dependencies. Designed as a lightweight alternative to full service virtualization — useful for both human developers and AI coding agents that need predictable API surfaces during code generation.
+
+Source: `raw/articles/` — `emulate` GitHub README: https://github.com/vercel-labs/emulate
 
 ## Core Ideas & Philosophy
 

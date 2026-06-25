@@ -3,7 +3,7 @@ title: Philipp Schmid
 type: entity
 handle: "@_philschmid"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-06-25
 tags:
   - person
   - model
@@ -12,7 +12,8 @@ tags:
   - developer-tooling
   - fine-tuning
   - mcp
-sources: []
+sources:
+  - "wiki/raw/articles/2026-06-25_philschmid_gemini-android-use.md"
 ---
 
 
@@ -131,6 +132,10 @@ Schmid's blog has been continuously updated since 2021 with hundreds of posts co
 - Cloud infrastructure for AI
 - Open model ecosystem analysis
 
+### Gemini Android Computer Use Guide (June 2026)
+
+Schmid published a comprehensive tutorial on controlling Android devices with Gemini 3.5 Flash's native [[concepts/gemini-computer-use]] capability. The guide details the complete screenshot→model→function_call→ADB execution loop, covering all 10 supported mobile actions (`open_app`, `click`, `type`, `long_press`, `drag_and_drop`, `press_key`, `go_back`, `wait`, `list_apps`, `take_screenshot`), the normalized 0–999 coordinate mapping system, and the `ADBBridge` Python class that translates model actions into ADB commands. Accompanied by a full open-source implementation at `google-gemini/gemini-android-computer-use-quickstart` with an automated emulator setup script, this guide represents Schmid's signature approach of making cutting-edge AI capabilities accessible to developers with production-ready code.
+
 ### Open Source Contributions
 
 | Repository | Stars | Description |
@@ -154,6 +159,7 @@ Schmid was recognized as the **first German AWS Machine Learning Hero** in 2021,
 
 | Date | Title | Summary |
 |------|-------|---------|
+| 2026-06-25 | Control an Android Phone with Gemini 3.5 Flash Computer Use | Comprehensive tutorial covering Gemini 3.5 Flash's Computer Use feature for Android — the screenshot→model→function_call→ADB execution loop, 10 supported mobile actions, normalized coordinate mapping, ADBBridge class, and setup instructions. Companion repo at github.com/google-gemini/gemini-android-computer-use-quickstart. See also: [[concepts/gemini-computer-use]] |
 | 2026-03-28 | How Kimi, Cursor, and Chroma Train Agentic Models with RL | Analysis of how leading AI companies use RL for agent training |
 | 2026-03-24 | Combine Built-in Tools and Function Calling in Gemini Interactions API | Guide to tool integration in Google's agent framework |
 | 2026-03-16 | Developer Guide: Nano Banana 2 with Gemini Interactions API | Practical deployment guide for multimodal models |

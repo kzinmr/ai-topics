@@ -80,6 +80,8 @@ Google implemented several safety measures specifically for computer use agents 
 
 Developers and enterprises can access computer use in Gemini 3.5 Flash via the Gemini API and [[concepts/gemini/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]].
 
+See [[concepts/gemini-computer-use]] for the Android-specific implementation guide with the complete screenshot→model→function_call→ADB loop, 10 mobile actions, and ADBBridge class (Philipp Schmid, June 2026).
+
 ## Related Pages
 - [[entities/pointer-ai]] — Pointer AI, SOTA computer use agent developer
 - [[concepts/dynamic-workflows]] — Dynamic Workflows for parallel subagent orchestration

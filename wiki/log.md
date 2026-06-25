@@ -1,3 +1,32 @@
+## 2026-06-25 X Accounts Scan
+
+**Source**: x-accounts-scan cron job (fetch_x_accounts.py)
+**Stats**: 12/84 accounts scanned, 12 new posts, 6 substantive articles processed
+
+### New Concept Pages
+- [[concepts/prompt-debt]] — Drew Breunig's framework for fragile prompt buildup, model lock-in, and solutions via DSPy/GEPA
+- [[concepts/gemini-computer-use]] — Philipp Schmid's Android-specific Gemini Computer Use implementation guide
+- [[concepts/ai-control]] — DeepMind's AI Control technical roadmap (TRAIT&R taxonomy, D1-D4/R1-R3 defense ladders, 15 mitigations)
+
+### Enriched Entity Pages
+- [[entities/drew-breunig]] — Added "The Problem is Prompt Debt" to Core Ideas + scaffold-docs-skill to Key Projects
+- [[entities/philipp-schmid]] — Added Gemini Android Computer Use guide to Key Work and Blog sections
+- [[entities/mario-zechner]] — Added DeepMind AI Control Roadmap + "Slow Down to Speed Up" talk recommendations
+- [[entities/chris-tate]] — Added emulate (vercel-labs) to key projects, overview, and Known-for
+
+### Raw Articles Saved
+- raw/articles/2026-06-22_dbreunig_prompt-debt.md (Drew Breunig — "The Problem is Prompt Debt")
+- raw/articles/2026-06-23_dbreunig_scaffold-docs-skill.md (Drew Breunig — scaffold-docs-skill README)
+- raw/articles/2026-06-25_philschmid_gemini-android-use.md (Philipp Schmid — Gemini Android Computer Use guide)
+- raw/articles/2026-06-25_google-gemini_android-computer-use-quickstart.md (Google Gemini quickstart repo)
+- raw/articles/2026-06-24_yt_slow-down-ai-software-engineering.md (Gergely Orosz YouTube transcript)
+- raw/papers/2026-06-24_deepmind_ai-control-roadmap.md (DeepMind AI Control Roadmap PDF)
+
+### Skipped (Non-AI)
+- hynek: psycache (PostgreSQL caching — not AI-related)
+- badlogicgames: GitHub PR limits blog (open source management)
+- _xjdr: noumena.com (AI coding tool — mentioned briefly, no article to scrape)
+
 ## [2026-06-25] Dreaming Wiki Ingest — Enriched entities/fireworks-ai.md (2 articles)
 
 - **Enriched**: `entities/fireworks-ai.md` (289→348 lines, +59 lines)

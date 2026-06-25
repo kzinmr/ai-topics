@@ -2,7 +2,7 @@
 title: Drew Breunig
 type: entity
 created: 2026-04-10
-updated: 2026-06-23
+updated: 2026-06-25
 source: blog
 tags:
   - person
@@ -11,7 +11,9 @@ tags:
   - geospatial
   - quantified-self
   - blog
-sources: []
+sources:
+  - raw/articles/2026-06-22_dbreunig_prompt-debt.md
+  - raw/articles/2026-06-23_dbreunig_scaffold-docs-skill.md
 ---
 
 
@@ -93,6 +95,22 @@ His mitigation framework includes six tactics:
 | **Context Offloading** | Storing information outside the context window |
 
 > "Programming the LLM to, as Karpathy says, 'pack the context windows just right' — smartly deploying tools, information, and regular context maintenance — is the job of the agent designer."
+
+### The Problem is Prompt Debt (2026)
+
+In June 2026, Breunig published "The Problem is Prompt Debt," diagnosing a progressive condition that silently cripples AI applications built on hand-tuned natural-language prompts. The essay identifies three stages of prompt debt:
+
+1. **Slowing iteration**: As users flag errors and edge cases, brittle patches accumulate — additional instructions, all-caps threats, and repeated rules — until the prompt becomes illegible and each fix risks regressing previous behavior.
+
+2. **Team incapacitation**: Prompts become impenetrable to colleagues. Teams mitigate by breaking prompts into template segments assembled at runtime, but these segments evolve independently into thickets of conditions no one fully understands.
+
+3. **Model lock-in**: Hot-fixes tailored to one model (e.g., GPT-4o) fail when pointed at another. Teams stay on aging models rather than risk a full prompt rebuild, forfeiting cheaper, faster, and better options. A Datadog report found GPT-4o was the most-used model in observed traffic as of March 2026.
+
+The root cause, Breunig argues, is **fighting the weights** — using natural language to coerce a model away from its trained behavior. He documents this pattern across industry system prompts: Claude Code repeats the instruction to return multiple tool calls seven times, Fable restates a single copyright rule six times, and ChatGPT's image prompts once instructed the model eight times not to reply after generating an image.
+
+The solution is a measurement-driven specification: replace hand-tuned prose with evaluations, metrics, and typed specifications that define correct behavior. Once metrics can score candidate prompts, the prompt becomes something to search for rather than craft — and tools like **DSPy** and Berkeley's **GEPA** automate that search. This approach decouples applications from individual models, turning model migration from a fire drill into a chore.
+
+> "Every mature engineering discipline eventually stops doing by hand the very thing it once prided itself on doing by hand. Assembly gave way to compilers, hand-tuned queries gave way to planners, and manual memory management gave way (mostly) to machines that do it better. Prompt-writing is no different."
 
 ### The 3 AI Use Cases: Gods, Interns, and Cogs
 
@@ -222,6 +240,20 @@ A proof-of-concept tool for managing the Spec-Driven Development Triangle. Plumb
 - Keeps specs, tests, and code in sync
 - 88 GitHub stars
 - Built as a practical response to the challenges Breunig identified in SDD
+
+### scaffold-docs-skill (2026)
+
+A Claude Code skill for producing three-tier technical documentation with human-in-the-loop review. Published on GitHub ([dbreunig/scaffold-docs-skill](https://github.com/dbreunig/scaffold-docs-skill)) on May 29, 2026, with 78 GitHub stars.
+
+The skill guides a coding agent through producing:
+
+- **Getting Started**: A narrative tutorial covering a single representative use case — the section where agents need the most human help
+- **Diving Deeper**: One file per topic, organized around intent and design decisions rather than directory structure
+- **Reference**: Per-module API spec, lookup-oriented
+
+Each tier is built in passes: structure first, then headers and topic sentences, then full prose. The agent pauses for human review between each pass and does not advance until approved. Key principles baked in: write for a specific audience, build the reader's mental model before enumerating API surface, explain *why* over *what*, and apply Strunk & White prose standards throughout.
+
+For keeping docs in sync as code evolves, the skill records the audience and the commit the docs were last synced to in a `.scaffold-docs.yml` file. When asked to update, it diffs the code since that commit, sorts changes by whether they warrant doc edits, and walks each documentation tier proposing changes for review.
 
 ### DSPy Integration Work
 

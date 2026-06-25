@@ -3,7 +3,7 @@ title: Mario Zechner
 type: entity
 handle: "@badlogicgames"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-06-25
 tags:
   - person
   - x-account
@@ -11,7 +11,9 @@ tags:
   - local-llm
   - open-source
   - developer-tooling
-sources: []
+sources:
+  - raw/papers/2026-06-24_deepmind_ai-control-roadmap.md
+  - raw/articles/2026-06-24_yt_slow-down-ai-software-engineering.md
 ---
 
 
@@ -183,3 +185,5 @@ A ~400-line RAG chatbot that replicated the Austrian government's job informatio
 - **Open-source advocacy** — Promotion of transparent, community-driven development; criticism of vendor-locked solutions
 - **Anti-hype commentary** — Consistent pushback against overblown AI claims, protocol hype (MCP), and the "next big thing" narrative
 - **Personal reflections** — Essays on fatherhood, slowing down, and finding meaning in software development beyond commercial success
+- **AI safety and control** — Shared Google DeepMind's "Securing the Future of AI Agents: A Technical Roadmap" (2026-06-24), noting "they've given up on solving the lethal trifecta directly. the new direction seems to be a tower of LLMs." See [[concepts/ai-control]].
+- **AI and software engineering** — Shared Gergely Orosz's "Slow down to speed up: AI and software engineering" talk from Craft Conference 2026 (2026-06-24), noting "the theme sounds familiar :)".

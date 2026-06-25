@@ -14,6 +14,9 @@
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
 - [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)
 - [[entities/drew-breunig]] — Drew Breunig; enriched with "The Problem is Prompt Debt" X Article — prompt debt framework, fighting the weights, algorithmic prompt search (June 23)
+- [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
+- [[entities/mario-zechner]] — Mario Zechner; added DeepMind AI Control Roadmap recommendation + Gergely Orosz "Slow Down to Speed Up" talk recommendation (June 25)
+- [[entities/chris-tate]] — Chris Tate; added emulate (local API emulation for CI/no-network sandboxes) to key projects (June 25)
 - [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
@@ -47,7 +50,8 @@
 - [[concepts/active-observability]] — Active Observability — Real-time LLM observability approach
 - [[concepts/advanced-tool-use]] — Advanced Tool Use — Claude Developer Platform advanced tool usage patterns
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
-- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record & Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
 - [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
@@ -62,6 +66,7 @@
 - [[concepts/claude/mythos]] — Claude Mythos; enriched with Gray Swan red-teaming analysis, indirect prompt injection, agent security (June 23)
 - [[concepts/codex-logging-bug]] — Codex Logging Bug — OpenAI Codex SQLite feedback logs writing up to 640 TB/year to local SSDs, rapid SSD wear, GitHub issue #28224, infrastructure incident affecting developer machines (June 24)
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
+- [[concepts/gemini-computer-use]] — Gemini Computer Use (Android) — Philipp Schmid's Android-specific implementation guide: screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script, relationship to Claude and OpenAI computer use approaches (June 25)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
 - [[concepts/kv-aware-routing]] — KV-Aware Routing — Request routing strategy for LLM inference serving that assigns requests based on KV cache state overlap. Implemented in NVIDIA Dynamo, Mooncake, vLLM (June 24)
@@ -74,6 +79,7 @@
 - [[concepts/nvidia-45c-data-center-cooling]] — NVIDIA 45°C Data Center Cooling — Rubin generation 100% liquid-cooled AI platform; 45°C warm-water closed-loop design, near-zero water consumption, dry-cooler heat rejection (June 25)
 - [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
 - [[concepts/openai-jalapeno-inference-chip]] — OpenAI Jalapeño — Custom LLM inference chip co-developed with Broadcom; 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark at production frequency (June 25)
+- [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
 - [[concepts/prompt-injection]] — Prompt Injection — AI security vulnerability where untrusted input manipulates model behavior by exploiting role confusion and tokenization boundaries (June 23)
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt; enriched with Drew Breunig's "The Problem is Prompt Debt" framework — three-stage spiral, fighting the weights, Goedecke vs Breunig comparison, prevention via DSPy/GEPA (June 23)
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
