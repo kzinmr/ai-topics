@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-06-17
+updated: 2026-06-25
 tags:
   - entity
   - company
@@ -19,6 +19,8 @@ sources:
   - raw/articles/2026-06-02_fireworks-ai_Trilogy.md
   - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
   - raw/articles/2026-06-12_fireworks-ai_inference-providers-vs-api-routers.md
+  - raw/articles/2026-06-25_fireworks-ai_frontier-lab-training-infrastructure-as-a-service.md
+  - raw/articles/2026-06-25_fireworks-ai_frontier-open-source-worker-with-closed-source-advisor.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -150,10 +152,19 @@ Fireworks emphasizes **MIT-licensed open-weight models** (DeepSeek V4-Pro, V4-Fl
 
 Fireworks AI is a research partner of [[entities/harvey|Harvey]]'s Legal Agent Benchmark (LAB). In June 2026, Fireworks published joint results demonstrating two approaches to close the open-vs-closed performance gap:
 
-**Hybrid Harness** (GLM 5.1 worker + Claude Opus 4.7 advisor):
+**Hybrid Harness — GLM 5.1 + Opus 4.7 (May 2026)**:
 - 18/100 all-pass at $368 vs Opus 4.7's 14/100 at $954
 - "Frontier model as callable tool, not dependency" pattern
 - Advisor invoked 0.83x/task average (sparse-but-targeted)
+
+**Hybrid Harness — GLM 5.2 + Opus 4.8 (June 2026)** — updated benchmarks with advisor pattern on new models/benchmarks:
+- **SWE-bench Pro**: GLM-5.2 59% → 66% (+7 pp); Kimi-K2.6 55% → 59% (+4 pp)
+- **Terminal-Bench 2.1**: GLM-5.2 76% → 80% (+4 pp); Kimi-K2.6 64% → 72% (+8 pp)
+- **Legal Agent Benchmark**: GLM-5.2 12% → 16% (+4 pp); Kimi-K2.6 8% → 9% (+1 pp, within noise)
+- **Cost**: GLM-5.2 + advisor matches Opus on Terminal-Bench at ~half cost ($3.50 vs $6.61); beats Opus on Legal Agent at ~40% lower cost; ~3× cheaper than Opus on SWE-bench ($6.09 vs $18.28)
+- **Sparse calls**: advisor invoked ~1x/task (review-only) — plan+review tested but didn't pay off (as good or better in 5/6 experiments)
+- **Same-model reviewer fails**: GLM-5.2 self-review produces no lift (58% vs 59% on SWE-bench); frontier judgment is essential
+- **Open-source**: advisor released as a single file in [fireworks cookbook](https://github.com/fw-ai/cookbook/tree/main/advisor)
 
 **Post-training** (Kimi K2.6 on Fireworks):
 - SFT: 11→15/100 all-pass, mean 0.863→0.876
@@ -161,6 +172,54 @@ Fireworks AI is a research partner of [[entities/harvey|Harvey]]'s Legal Agent B
 - Bit-for-bit handoff from training to serving endpoint
 
 This positions Fireworks as more than an inference provider — the platform enables the full loop from fine-tuning → evaluation → production serving on the same infrastructure.
+
+## Frontier Training Infrastructure (June 2026)
+
+Fireworks launched a **managed RL training service** for GLM 5.2, providing infrastructure previously available only to the largest frontier labs. The core challenge: keeping training and inference numerically identical so reinforcement learning converges.
+
+### The Numerics Problem
+
+RL on an LLM is a loop: the model generates responses → scored → trainer nudges weights. The loop works only if the probability the trainer thinks the model assigned to each token matches the probability the serving engine actually used to generate it. When this holds, learning signal flows. When it doesn't, the optimization targets noise.
+
+The root cause is **non-associativity of floating-point addition**: `(a + b) + c` ≠ `a + (b + c)` at the bit level, so the order GPUs add numbers changes results. A frontier Mixture-of-Experts model like GLM 5.2 changes this order constantly due to:
+
+- **Multi-head Latent Attention (MLA)**: reduction chunk boundaries shift with concurrent batch traffic
+- **Sparse attention indexer**: selected token order varies, shifting attention sum
+- **Expert matmul tiling**: GPU kernel varies by token count per expert (which depends on other requests)
+- **Router near-ties**: rounding-error sized fluctuations flip expert selection
+- **Cross-GPU all-reduce**: algorithm switches by message size
+
+Without this infrastructure, a "temperature 0" model on a busy server is quietly **nondeterministic** — the same prompt co-batched with different traffic produces different results. This silently turns on-policy RL off-policy.
+
+### Fireworks Solution
+
+Fireworks pinned every source of nondeterminism so decisions depend only on the individual request:
+
+1. **Fixed reduction order in attention** regardless of batch composition
+2. **One settled kernel choice for expert matmuls** regardless of token counts
+3. **Deterministic tie-break in the router**
+4. **Single fixed cross-GPU reduction path**
+
+### Zero-KLD Validation
+
+The article shows validation runs on the GLM countdown reasoning task:
+
+| Run | Train-inference KL | Clipped tokens | Reward behavior |
+|-----|-------------------|----------------|-----------------|
+| Without Fireworks stack | ~0.013 and drifting | ~45% | Collapses ~step 20 (0.9→0.2) |
+| With Fireworks stack | 0 | 0% | Stays healthy across full 25-step run |
+
+With importance-sampling and clipping (the industry crutch), ~45% of every batch's tokens were discarded as learning signal — a tax, not a fix. Without it, reward collapsed around step 20 as the policy chased a non-matching target.
+
+### Performance
+
+- **GLM trainer throughput**: ~3,500 tokens/sec per node (on par with OSS TileLang implementation)
+- **Rollout generation**: ~1.8× faster on GLM 5.2 vs GLM 5.1 (~5,000 tokens/sec per node)
+- **Speed penalty for determinism**: conventional open-source deterministic modes run 35-60% slower (SGLang); Fireworks pays "virtually none" of this tax
+- **Supported methods**: SFT, DPO, RL through Training API
+- **Co-located**: trainer and deployment on managed infrastructure for fast weight sync
+
+**Sources:** [[raw/articles/2026-06-25_fireworks-ai_frontier-lab-training-infrastructure-as-a-service]]
 
 ## LangChain Trace Judge Partnership (June 2026)
 

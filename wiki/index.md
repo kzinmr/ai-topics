@@ -9,6 +9,7 @@
 - [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
 - [[entities/openai]] — OpenAI; added GPT-5.5 Instant revision (June 2026) — improved intent understanding, constraint handling, conversational style (June 25)
 - [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
+- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25)
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
 - [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)

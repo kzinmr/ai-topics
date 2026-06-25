@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-06-25T18:16:18.091832+00:00",
+  "triage_run_id": "20260625T180026Z",
+  "source": "dreaming",
+  "summary_ja": "夢見グループ（2026-06-25）: 日次パイプライン飽和シナリオ。ブログ/ニュースレター/アクティブクロール/X-bookmarksで29記事処理済み。サイトマップ監視で取得した5記事を評価: Fireworks AI 2件（zero-KLDトレーニングインフラ、GLM 5.2+Opus 4.8 worker+advisor）を★★★★☆でenrichment候補、Harvey/Cohere/ElevenLabs 3件をスキップ。Takes=2, Skips=3。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-01",
+      "source": "blog",
+      "source_name": "Harvey Blog",
+      "title": "Innovation Spotlight: Caryn Sandler at Gilbert + Tobin",
+      "url": "https://www.harvey.ai/blog/caryn-sandler-is-shaping-future-of-legal-innovation",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-25_harvey_caryn-sandler-is-shaping-future-of-legal-innovation.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 顧客事例スポットライト（Gilbert + Tobin法律事務所）。マーケティングコンテンツ。entities/harvey.mdにはHarvey Copilot、Legal Agent Benchmark等の技術的コンテンツが充実しており、カスタマーイノベーション事例は追加価値が低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Innovation Spotlight: Caryn Sandler at Gilbert + Tobin\n**Source**: [https://www.harvey.ai/blog/caryn-sandler-is-shaping-future-of-legal-innovation](https://www.harvey.ai/blog/caryn-sandler-is-shaping-future-of-legal-innovation)\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Agents e"
+    },
+    {
+      "item_id": "dreaming-skip-02",
+      "source": "blog",
+      "source_name": "Cohere Blog",
+      "title": "Cohere × Aston Martin Formula One Generative AI Partner",
+      "url": "https://cohere.com/blog/cohere-aston-martin-formula-one-generative-ai-partner",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-25_cohere_cohere-aston-martin-formula-one-generative-ai-partner.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ F1パートナーシップ発表。本文40行の大半はナビゲーションクローム。技術的内容なし。entities/cohere.mdの既存カバレッジに追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Cohere Joins Aston Martin F1 as AI Partner\n**Source**: [https://cohere.com/blog/cohere-aston-martin-formula-one-generative-ai-partner](https://cohere.com/blog/cohere-aston-martin-formula-one-generative-ai-partner)\nSilverstone, 4 March 2026:\nCohere, a leading security-first enterprise AI company, t"
+    },
+    {
+      "item_id": "dreaming-skip-03",
+      "source": "blog",
+      "source_name": "ElevenLabs Blog",
+      "title": "API Authentication and Key Management",
+      "url": "https://elevenlabs.io/blog/api-authentication-and-key-management",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-25_elevenlabs_api-authentication-and-key-management.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ APIドキュメント（認証・キー管理）。技術ブログではなくAPIリファレンス。entities/elevenlabs.mdの既存カバレッジに追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# API authentication and key management: A practical guide\n**Source**: [https://elevenlabs.io/blog/api-authentication-and-key-management](https://elevenlabs.io/blog/api-authentication-and-key-management)\nBlog\nResources\nAPI authentication and key management for ElevenAPI\nWritten by\nTadas\nPetra\nJack\nL"
+    }
+  ]
+}
