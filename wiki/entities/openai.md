@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-24
+updated: 2026-06-25
 tags:
   - company
   - model
@@ -10,6 +10,9 @@ tags:
   - product
   - openai
   - economics
+  - hardware
+  - inference
+  - infrastructure
 aliases: ["OpenAI Inc."]
 sources:
   - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
@@ -34,6 +37,7 @@ sources:
   - raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md
   - raw/articles/openai.com--helping-build-shared-standards-for-advanced-ai--1b1b1aa4.md
   - raw/articles/openai.com--gpt-5-immunology-mystery--1948945e.md
+  - raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md
 ---
 
 # OpenAI
@@ -349,6 +353,29 @@ Samsung plans to use ChatGPT for knowledge-based tasks (search, analysis, drafti
 Related Korea deployments: Seoul National University deployed ChatGPT Edu to all 47,000 members; Kakao integrated ChatGPT into KakaoTalk group chats. Other Korean enterprises using OpenAI products include LG Electronics, LG Uplus, LG CNS, Samsung SDS, Krafton, Toss, and Korea Zinc.
 
 Source: [[raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md]]
+
+### Jalapeño — OpenAI's First Intelligence Processor (June 2026)
+
+On June 24, 2026, OpenAI and Broadcom unveiled **Jalapeño**, OpenAI's first Intelligence Processor — an accelerator architected from scratch for LLM inference.
+
+| Detail | Information |
+|--------|-------------|
+| **Type** | Custom LLM inference accelerator |
+| **Partners** | Broadcom (silicon implementation, Tomahawk networking), Celestica (board/rack integration) |
+| **Development** | 9-month tape-out, accelerated by OpenAI's own models |
+| **Status** | Engineering samples running ML workloads at production target frequency and power |
+| **Test workload** | GPT-5.3-Codex-Spark |
+| **Performance** | Performance per watt substantially better than current SOTA (detailed report coming) |
+| **Architecture** | Reduces data movement; balances compute, memory, networking for high realized utilization |
+| **Deployment** | Gigawatt scale with data center partners (Microsoft and others) from 2026 |
+
+**Strategic significance**: Jalapeño is not a general-purpose accelerator adapted for LLMs — it's a blank-slate design informed by OpenAI's daily experience running ChatGPT, Codex, API, and future agentic products. The chip is designed for current and future LLMs across the industry, not just OpenAI models.
+
+**Multi-generation roadmap**: This is the first chip in a multi-generation compute platform co-developed with Broadcom. OpenAI's hardware program, led by Richard Ho, optimizes architecture around kernels, memory movement, networking, and serving patterns for frontier AI models.
+
+**Full-stack strategy**: Jalapeño expands OpenAI's full-stack platform — from products (ChatGPT, Codex) to models (GPT series) to chips. Greg Brockman: 'By designing more of the stack ourselves, we can serve more intelligence with greater efficiency and keep pushing advanced AI toward broader access.'
+
+Source: [[raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md]]
 
 ## Security Architecture
 
