@@ -89,6 +89,7 @@ Practitioners identify benchmaxxed models through several signals:
 
 ## Related Concepts
 
+- [[concepts/benchpress]] — BenchPress: rank-2 matrix completion shows benchmarks are structurally redundant; 5 benchmarks predict 44 others
 - [[concepts/ai-benchmarks/ifeval]] — Instruction Following Eval; tests verifiable constraints but misses nuanced compliance
 - [[concepts/evaluation/ai-benchmarks-and-evals]] — Comprehensive benchmark landscape overview
 - [[concepts/vibe-eval]] — Vibe-Eval; explicitly designed to capture subjective quality beyond benchmarks

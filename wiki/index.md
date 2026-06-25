@@ -3,6 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
+- [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
 - [[entities/matei-zaharia]] — Matei Zaharia — CTO of Databricks (pre-$175B), co-creator of Apache Spark/MLflow, creator of Omnigent open-source meta-harness; new entity page (June 25)
 - [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
 - [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
@@ -55,6 +56,7 @@
 - [[concepts/ai-benchmarks/parallelkernelbench]] — ParallelKernelBench (PKB); multi-GPU kernel generation benchmark with 87 problems from real codebases, GPT-5.5 tops at 31% fast@3 (June 24)
 - [[concepts/anthropic-alibaba-claude-ip-dispute]] — Anthropic-Alibaba Claude IP Dispute — June 2026 Anthropic accusation of illicit Claude distillation by Alibaba; NSA/Mythos access loss, export controls, US-China AI tensions (June 25)
 - [[concepts/apertus-sovereign-ai-model]] — Apertus — Open foundation model for sovereign AI (8B/70B), EU AI Act compliant, multilingual (1000+ languages), fully open training pipeline (June 23)
+- [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) is a model proposed by K. Eric Drexler that reframes superintelligence as a class of service-providing products.
 - [[concepts/claude-code/claude-code-artifacts]] — Claude Code Artifacts — shareable functional HTML pages for PR walkthroughs, project dashboards, and prototypes (June 24)
 - [[concepts/claude-code/claude-code-skills]] — Claude Code Skills; enriched with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt) + comparison table (June 23)

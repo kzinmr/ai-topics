@@ -11,6 +11,7 @@ tags:
   - vlm
   - ai-agents
   - zyphra
+  - continual-learning
 status: active
 aliases: [ZyphraAI]
 sources:
@@ -21,7 +22,7 @@ sources:
   - https://startup-seeker.com/company/zyphra~com
   - raw/articles/zyphra.com--zaya1-8b-moe-amd-reasoning--2026-05-16.md
 created: 2026-05-09
-updated: 2026-05-16
+updated: 2026-06-25
 ---
 
 # Zyphra
@@ -67,6 +68,14 @@ The ZAYA1 family uses Mixture of Experts (MoE) architecture, trained end-to-end 
 ## Zyphra Cloud
 
 A full-stack AI platform built on AMD, designed for advanced AI systems with focus on long-horizon agents. Also developing **MaiaOS**, a multimodal agent system combining neural network architectures, long-term memory, and reinforcement learning.
+
+## Research Directions
+
+### Continual Learning & Plasticity Loss (June 2026)
+
+Zyphra published early findings on **continual learning** in LLMs, investigating whether language models can learn from new data indefinitely without encountering **plasticity loss** — the degradation of a model's ability to learn from new data after repeated training cycles. Their work derives a scaling law predicting when plasticity loss onset occurs, and frames continual learning as a potential pathway to recursive self-improvement (RSI) toward AGI.
+
+- **Source**: @ZyphraAI tweet (Jun 24, 2026) — "Can LLMs learn forever from new data?" thread on continual learning and plasticity loss scaling laws
 
 ## See Also
 
