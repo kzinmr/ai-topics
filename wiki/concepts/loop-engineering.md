@@ -27,6 +27,7 @@ related:
 sources:
   - raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md
   - raw/papers/2026-06-24_huashu_loop-engineering-anthropic-playbook.pdf
+  - raw/articles/2026-06-09_0xcodez_loop-engineering-14-step-roadmap.md
 ---
 
 # Loop Engineering
@@ -313,6 +314,68 @@ Three disciplines for spending judgment well:
 
 > "A first loop is better small, but with the 'no'-saying check and the human review point fully installed." — HuaShu
 
+## The 14-Step Roadmap (0xCodez, June 2026)
+
+A practical 3-tier, 14-step roadmap from "prompter" to "loop designer," sourced from Anthropic docs, Osmani's writing, and measurement studies. Viral thread: 18K+ bookmarks, 5.8M impressions.
+
+### Tier 1: The Why & The Test (Steps 1–4)
+
+**Step 1 — Loop engineering is replacing yourself as the prompter.** The leverage point moved from typing prompts to designing the system that prompts.
+
+**Step 2 — Run the 4-condition test before building anything.** Loops earn their cost only when all four hold:
+
+| Condition | Why |
+|-----------|-----|
+| Task repeats | A loop amortizes setup across runs; one-shot → use a prompt |
+| Verification is automated | No automated check = you're back in the chair reading every diff |
+| Token budget absorbs waste | Loops re-read context, retry, explore — burns tokens regardless |
+| Agent has senior engineer's tools | Logs, reproduction env, ability to run code and see failures |
+
+**Step 3 — Who wins, who loses.** Loops favor teams with repetitive, machine-checkable work and budget to run it. Solo builders on consumer plans and code without automated verification should skip it today.
+
+**Step 4 — The 30-second loop check.** Tactical checklist per-task: (1) happens at least weekly, (2) automated gate can reject bad output, (3) agent can run the code it changes, (4) hard stop exists (budget/iterations/time), (5) human reviews before irreversible actions.
+
+**Good first loops:** CI failure triage, dependency bump PRs, lint-and-fix passes, flaky test reproduction, issue-to-PR drafts on well-tested code.
+
+**Bad first loops:** Architecture rewrites, auth/payments code, production deploys, vague product work.
+
+### Tier 2: The 5 Building Blocks (Steps 5–9)
+
+| # | Block | Key Insight |
+|---|-------|-------------|
+| **5** | **Automations** | The heartbeat. Codex: Automations tab. Claude Code: `/loop` + Desktop tasks + Routines. `/loop` re-runs on cadence; `/goal` runs until condition holds. |
+| **6** | **Worktrees** | Parallel without chaos. Git worktree = separate working directory on own branch. Your review bandwidth is the ceiling, not the tool. |
+| **7** | **Skills** | Write project knowledge once, read on every run. Without skills, loop re-derives context from zero each cycle. Intent compounds. |
+| **8** | **Connectors** | MCP-based. GitHub (PRs, issues), Linear/Jira (tickets), Slack (notifications), Sentry (live alerts). Day-one wins in order. |
+| **9** | **Sub-agents** | Maker-checker split. Codex: `.codex/agents/` TOML. Claude Code: `.claude/agents/`. One explores, one implements, one verifies. |
+
+### Tier 3: Build It Right or Don't (Steps 10–14)
+
+**Step 10 — State file.** The spine of every working loop. Markdown in repo or external system (Linear, GitHub Issues). "The agent forgets, the repo does not." Pair with VISION.md for long-running loops.
+
+**Step 11 — Minimum viable loop.** Four parts, no swarm: one automation, one skill, one state file, one gate. Order matters: manual run reliable → turn into skill → wrap in loop → schedule.
+
+> Metric that matters: **cost per accepted change** — not tokens spent, not tasks attempted. Below 50% accepted-change rate = the loop is losing.
+
+**Step 12 — The Ralph Wiggum loop.** Failure mode where agent emits completion token early, loop exits on half-done job. Root causes: no real verifier, soft completion conditions, no hard stops. Fix: objective gate (test/build/linter), not a verifier with an opinion.
+
+**Step 13 — Comprehension debt and cognitive surrender.** Comprehension debt = distance between what repo contains and what you understand. Cognitive surrender = pull to stop forming opinions. Mitigations: read diffs, spot-check gates, block loop from architecture work, pair-design loops with a teammate.
+
+**Step 14 — The security tax.** Unattended loop = unattended attack surface. Threats: unreviewed generated code, skills as injection vectors, credentials in logs, permission scope creep. Re-audit permissions every 30 days.
+
+### Common Mistakes
+
+| Mistake | Why It Hurts |
+|---------|-------------|
+| No 4-condition test | Most developers fail at least one condition |
+| No objective gate | Second agent "reviewing" without tests = second optimist |
+| One agent writes + verifies | Self-preferential bias — always "A+" |
+| No state file | Tomorrow's run restarts from zero |
+| Vague stop conditions | "Done when it looks good" never holds |
+| No token cap | Ambitious loops burn 5–10× expected |
+| Auto-installing community skills | 520 of 17,022 audited skills leak credentials |
+| Loops on judgment calls | Architecture, auth, payments — keep loop on lint-and-fix |
+
 ## The Same Capability, Two Toolchains
 
 | Capability | Claude Code | Codex |
@@ -338,6 +401,7 @@ Loop engineering is a set of capabilities, not a product: scheduling, run-until-
 
 - [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia, "From Prompting Agents to Loop Engineering" (Jun 19, 2026). DAIR.AI Academy.
 - [[raw/papers/2026-06-24_huashu_loop-engineering-anthropic-playbook.pdf]] — HuaShu, "Loop Engineering: The Anthropic Playbook for Designing Systems That Prompt Your Agents" (Jun 24, 2026). Conference-style synthesis of Osmani's Orange Book guide.
+- [[raw/articles/2026-06-09_0xcodez_loop-engineering-14-step-roadmap.md]] — 0xCodez, "Loop engineering: the 14-step roadmap from prompter to loop designer" (Jun 9, 2026). X Article. 18K+ bookmarks, 5.8M impressions.
 - Peter Steinberger (@steipete), "Design Loops, Don't Prompt Agents" (Jun 7, 2026). Original tweet: 2.2M views.
 - Boris Cherny (@bcherny), on running agents autonomously and loop authoring.
 - [Loop Engineering](https://x.com/i/article/2064127981161959567) — Addy Osmani, June 2026

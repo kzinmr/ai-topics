@@ -67,7 +67,7 @@
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
 - [[concepts/kv-aware-routing]] — KV-Aware Routing — Request routing strategy for LLM inference serving that assigns requests based on KV cache state overlap. Implemented in NVIDIA Dynamo, Mooncake, vLLM (June 24)
-- [[concepts/loop-engineering]] — Loop Engineering; enriched with HuaShu's conference-style synthesis — Four-Layer Stack, Five Moves, Generator/Evaluator separation, Five Anti-patterns, Three Real Loops (Osmani triage, Stripe Minions 1,300 PRs/wk), Four Silent Costs, First Loop Recipe, Economics of Judgment (June 25)
+- [[concepts/loop-engineering]] — Loop Engineering; enriched with 0xCodez 14-step roadmap (4-condition test, 5 building blocks, Ralph Wiggum loop, security tax, common mistakes) + HuaShu PDF synthesis (June 25)
 - [[concepts/mai-thinking-1-report]] — MAI-Thinking-1 is a technical model developed by the Microsoft AI Team, described as a "hill-climbing machine" for advanced reasoning.
 - [[concepts/meta-harness]] — Meta-Harness; added Omnigent (Databricks) commercial implementation section — first major open-source production meta-harness (June 25)
 - [[concepts/mistral-ocr-4]] — Mistral OCR 4 — SOTA Optical Character Recognition model; multilingual document parsing, structured markdown/JSON output, superior to Azure/Gemini/Amazon on benchmarks, 1,000 pages/min throughput (June 24)
