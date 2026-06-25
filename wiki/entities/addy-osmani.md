@@ -146,6 +146,7 @@ Key contributions from this article:
 | Orchestrating Coding Agents (talk) | Mar 2026 | O'Reilly CodeCon 2026 |
 | 2026 Agentic Coding Trends Guide | 2026 | addyosmani.com |
 | From Prompting Agents to Loop Engineering (cited) | Jun 2026 | DAIR.AI Academy |
+| Loop Engineering (Orange Book v260615) | Jun 2026 | huasheng.ai/orange-books |
 
 ## Speaking
 

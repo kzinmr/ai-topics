@@ -1,0 +1,204 @@
+{
+  "archived_at": "2026-06-25T08:10:09.163803+00:00",
+  "triage_run_id": "20260625T081009Z",
+  "source": "blog",
+  "summary_ja": "",
+  "decisions": [
+    {
+      "title": "How to connect a Cloudflare MCP to Cursor (4 steps)",
+      "url": "https://www.merge.dev/blog/cloudflare-mcp-cursor",
+      "blog": "Merge Blog",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/merge.dev--blog-cloudflare-mcp-cursor--8d1eb457.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "Tutorial content for Cloudflare MCP integration via Merge Agent Handler. Relevant to MCP ecosystem but primarily marketing/tutorial. Note for future MCP or agent-tooling concept pages.",
+      "target_pages": [],
+      "body_excerpt": "# How to connect a Cloudflare MCP to Cursor (4 steps)\nSource: https://www.merge.dev/blog/cloudflare-mcp-cursor\nThe moment you start building something that talks to Cloudflare's API, such as a deploy script, you need details that only live in the API's responses.\nWhat fields does a DNS record object"
+    },
+    {
+      "title": "How to connect a Cloudflare MCP with Codex (4 steps)",
+      "url": "https://www.merge.dev/blog/cloudflare-mcp-codex",
+      "blog": "Merge Blog",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/merge.dev--blog-cloudflare-mcp-codex--f39a6960.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "Duplicate of above but targeting Codex. Same Merge Agent Handler product. Note for future MCP concept pages.",
+      "target_pages": [],
+      "body_excerpt": "# How to connect a Cloudflare MCP with Codex (4 steps)\nSource: https://www.merge.dev/blog/cloudflare-mcp-codex\nWhen you hand Codex a task to scaffold a Worker or write a DNS migration, you usually describe your Cloudflare setup in the prompt.\nThat description rarely matches the real account. The act"
+    },
+    {
+      "title": "Open Protocol for Agent Registration",
+      "url": "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/workos.com--auth-md--587dce10.md",
+      "recommended_action": "skip",
+      "star_rating": 2,
+      "reason": "Very thin content (17 lines). Just describes auth.md protocol concept. Too thin for wiki page.",
+      "target_pages": [],
+      "body_excerpt": "# Open Protocol for Agent Registration\nSource: http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026\nA Markdown file an application hosts at its domain — typically\nhttps://yourapp.com/auth.md\n— that tells agents how to register on behalf of a user. It includes"
+    },
+    {
+      "title": "simonw/browser-compat-db",
+      "url": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+      "blog": "simonwillison.net",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Non-AI project (browser compatibility database). Simon Willison is AI-relevant but this specific project is not.",
+      "target_pages": []
+    },
+    {
+      "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+      "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-55200/",
+      "blog": "xeiaso.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/xeiaso.net--shitposts-no-way-to-prevent-this-memory-safety-cve-2026-5520--bc6766be.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Memory safety satire, not AI-relevant. Page content was bot check, not actual article.",
+      "target_pages": [],
+      "body_excerpt": "# Making sure you're not a bot!\nSource: https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-55200/\nProtected by\nAnubis\nFrom\nTecharo\n. Made with ❤️ in 🇨🇦.\nMascot design by\nCELPHASE\n.\nThis website is running Anubis version\nv1.25.1-0.20260619024344-d19b86c6e139\n."
+    },
+    {
+      "title": "I taught a bucket to speak git",
+      "url": "https://www.tigrisdata.com/blog/objgit/",
+      "blog": "xeiaso.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/tigrisdata.com--blog-objgit--31f17f68.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Object storage + git integration. Not AI-relevant.",
+      "target_pages": [],
+      "body_excerpt": "# I taught a bucket to speak git\nSource: https://www.tigrisdata.com/blog/objgit/\nWhat happens if I just point a git server at an object storage bucket?\nBack when I was porting\nagent sandboxes to Go\n, I\nbuilt everything on top of\nbilly\n, a filesystem\nabstraction for Go. The whole trick of the project"
+    },
+    {
+      "title": "Auth0 PHP - manually authenticating JWT idTokens",
+      "url": "https://shkspr.mobi/blog/2026/06/auth0-php-manually-authenticating-tokens/",
+      "blog": "shkspr.mobi",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-06-auth0-php-manually-authenticating-tokens--48da1572.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "PHP authentication tutorial. Not AI-relevant.",
+      "target_pages": [],
+      "body_excerpt": "# Auth0 PHP - manually authenticating JWT idTokens\nSource: https://shkspr.mobi/blog/2026/06/auth0-php-manually-authenticating-tokens/\nI find it baffling just how poorly documented most big projects are. Auth0 by Okta has a fair bit of cash, lots of customers, and almost completely absent documentati"
+    },
+    {
+      "title": "How to Write an Effective Software Design Document",
+      "url": "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
+      "blog": "refactoringenglish.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/refactoringenglish.com--excerpts-write-an-effective-design-doc--158ec150.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "General software engineering. Not AI-specific.",
+      "target_pages": [],
+      "body_excerpt": "# How to Write an Effective Software Design Document\nSource: https://refactoringenglish.com/excerpts/write-an-effective-design-doc/\nA good design doc can save you years of development time. Writing a design doc forces you to think through important decisions before you waste time on the wrong implem"
+    },
+    {
+      "title": "Thoughts on Role Confusion",
+      "url": "https://www.gilesthomas.com/2026/06/role-confusion",
+      "blog": "gilesthomas.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/gilesthomas.com--2026-06-role-confusion--17b46320.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "General career/role commentary. Not AI-specific.",
+      "target_pages": [],
+      "body_excerpt": "# Thoughts on Role Confusion\nSource: https://www.gilesthomas.com/2026/06/role-confusion\nArchives\nCategories\nBlogroll\nThe other day, I came across \"\nPrompt Injection as Role Confusion\n\"\n(\nvia Simon Willison\n).  It's a really\ninteresting blog-style version of a paper by Charles Ye, Jasmine Cui and Dyl"
+    },
+    {
+      "title": "The Star Trek lemma",
+      "url": "https://www.johndcook.com/blog/2026/06/24/star-trek-lemma/",
+      "blog": "johndcook.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-06-24-star-trek-lemma--2b6938e9.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Math concept. Not AI-relevant.",
+      "target_pages": [],
+      "body_excerpt": "# The Star Trek lemma\nSource: https://www.johndcook.com/blog/2026/06/24/star-trek-lemma/\nI was reading an article this evening and saw a footnote to a book by Arthur Baragar [1]. This caught my eye because he was my officemate at UT for a year.\nI found his book on\nArchive.org\nand was surprised to se"
+    },
+    {
+      "title": "Framework's 10G Ethernet module exposes USB-C's complexity",
+      "url": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
+      "blog": "jeffgeerling.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/jeffgeerling.com--blog-2026-framework-10g-ethernet-module-usb-c-complexity--233c84af.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Hardware review (USB-C/Ethernet). Not AI-specific.",
+      "target_pages": [],
+      "body_excerpt": "# Framework's 10G Ethernet module exposes USB-C's complexity\nSource: https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/\nI've been following WisdPi's development of various\n5 Gbps\nand\n10 Gbps\nEthernet adapters for the past couple years.\nThey use newer Realtek Ether"
+    },
+    {
+      "title": "Windows 98 shipped June 25, 1998",
+      "url": "https://dfarq.homeip.net/windows-98-shipped-june-25-1998/",
+      "blog": "dfarq.homeip.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--windows-98-shipped-june-25-1998--6296c216.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Vintage computing history. Not AI-relevant.",
+      "target_pages": [],
+      "body_excerpt": "# Windows 98 shipped June 25, 1998\nSource: https://dfarq.homeip.net/windows-98-shipped-june-25-1998/?utm_source=rss&utm_medium=rss&utm_campaign=windows-98-shipped-june-25-1998\nIt was late and it was overhyped. But it was better than Windows 95. On June 25, 1998, Microsoft shipped Windows 98, and whi"
+    },
+    {
+      "title": "Microspeak elaborated: Isn't escrow just a release candidate by another name?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260623-00/?p=112462",
+      "blog": "devblogs.microsoft.com/oldnewthing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260623-00--152c916a.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Microsoft internal terminology. Not AI-relevant.",
+      "target_pages": [],
+      "body_excerpt": "# Microspeak elaborated: Isn't escrow just a release candidate by another name?\nSource: https://devblogs.microsoft.com/oldnewthing/20260623-00/?p=112462\nI had earlier introduced the Microspeak term\nescrow\nto refer to the declaration that a particular build of the product is going to be the one that "
+    },
+    {
+      "title": "WebKit Always Enables the Copy Menu Item in Every App",
+      "url": "https://lapcatsoftware.com/articles/2026/6/5.html",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lapcatsoftware.com--articles-2026-6-5-html--7f96b269.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "macOS/WebKit bug report. Not AI-relevant.",
+      "target_pages": [],
+      "body_excerpt": "# WebKit always enables the Copy menu item in every app\nSource: https://lapcatsoftware.com/articles/2026/6/5.html\nPrevious:\nCan you reproduce this App Store Connect bug?\nArticles index\nWebKit always enables the Copy menu item in every app\nJune 24 2026\nWebKit, to quote\nits website\n, “is the web brows"
+    },
+    {
+      "title": "WebKit in Safari 27 Beta",
+      "url": "https://webkit.org/blog/17967/news-from-wwdc26-webkit-in-safari-27-beta/",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/webkit.org--blog-17967-news-from-wwdc26-webkit-in-safari-27-beta--c116f751.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Browser engine update. Not AI-specific.",
+      "target_pages": [],
+      "body_excerpt": "# News from WWDC26: WebKit in Safari 27 beta\nSource: https://webkit.org/blog/17967/news-from-wwdc26-webkit-in-safari-27-beta/\nContents\nSafari 27 beta is here. Don’t miss our\nWWDC26 sessions on web technology\n, including\nWhat’s new in WebKit for Safari 27\n, to go deeper on our work in this release. N"
+    },
+    {
+      "title": "Designed in California: An Apple History Podcast",
+      "url": "https://designed.fm/",
+      "blog": "daringfireball.net",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Apple history podcast. Not AI-relevant.",
+      "target_pages": []
+    },
+    {
+      "title": "Blogging Can Just Be Stating The Obvious",
+      "url": "https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/",
+      "blog": "blog.jim-nielsen.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-blogging-stating-the-obvious--41662a0f.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Blogging philosophy. Not AI-relevant.",
+      "target_pages": [],
+      "body_excerpt": "# Blogging Can Just Be Stating The Obvious\nSource: https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/\nJohn Gruber writes about those annoying popups\nevery website seems to have now and while he does a great job tearing into these ubiquitous, user-hostile patterns, one of the things that"
+    },
+    {
+      "title": "Quoting Tom MacWright",
+      "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+      "blog": "simonwillison.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-24-tom-macwright--b154199e.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Quote/link blog post about Tom MacWright. Not AI-specific content.",
+      "target_pages": [],
+      "body_excerpt": "# A quote from Tom MacWright\nSource: https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything\n24th June 2026\nIn the last few months, I've started to see [job applications] that were clearly cowritten by an LLM, link to an LLM-generated portfolio site, which then links to LLM-generated Gi"
+    }
+  ]
+}
