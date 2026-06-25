@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-06-22
+updated: 2026-06-25
 tags:
   - product
   - coding-agent
@@ -34,6 +34,7 @@ sources:
   - raw/articles/2026-06-02_openai-codex-every-role-tool-workflow.md
   - raw/newsletters/2026-06-04-build-tools-to-build-more.md
   - raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md
+  - raw/articles/2026-06-23_gengdaj-codex-production-agent-workflow.md
 ---
 
 # OpenAI Codex
@@ -290,6 +291,30 @@ OpenAI added Record & Replay to Codex, a macOS feature that watches you complete
 **Significance**: Record & Replay bridges the gap between 'fun toy' agentic computer use and production-ready workflow automation. By creating editable, reusable skills from demonstrations, it transforms agentic AI from an experimental tool into a deployable process.
 
 **Related**: [[concepts/codex/codex-skill]] — Codex Skills system, [[concepts/agentic-engineering/agentic-engineering]] — Developer workflow patterns
+
+## Agent Development Methodology — Production Agent Workflow (June 2026)
+
+> *Source: [[raw/articles/2026-06-23_gengdaj-codex-production-agent-workflow.md|@gengdaJ (Yichen) — June 23, 2026 Note Tweet]]*
+
+Chinese AI entrepreneur Yichen ([@gengdaJ](https://x.com/gengdaJ), 34K followers) documented a structured methodology for taking an Agent from concept to production deployment using Codex. After building multiple AI products with Codex and Claude Code, he formalized a repeatable development cycle while building "Shu Jing" (Book Mirror) Agent:
+
+### The Five-Phase Development Cycle
+
+1. **Product Alignment (Q&A → PRD)**: Use conversational Q&A with Codex to align on product vision, then generate a Product Requirements Document
+2. **Decomposition (PRD → Plan.md)**: Break the PRD into multiple focused `Plan.md` files — each representing a development increment
+3. **Goal Authoring (Skill-based /goal prompts)**: Use open-source Skills (referencing Qiaomu's open-source Skill library) to craft `/goal` prompts that encode clear completion criteria
+4. **Target Mode Execution**: Set Codex to "goal" mode, send the prompts, and let the agent autonomously execute
+5. **Consolidation & Iteration**: After completing one development round, merge all `Plan.md` files into a single `consolidation.md` to capture the current state, then repeat the cycle for the next round
+
+### Deployment with Tencent EdgeOne Makers
+
+For production deployment, he chose **Tencent Cloud EdgeOne Makers** — an edge Web + AI Agent hosting platform — for three reasons:
+
+- **Built-in Agent infrastructure templates**: Memory systems, sandbox tools, call chain tracing (observability), and model gateway are all available out-of-the-box. Code can be adapted with minor Codex edits for rapid deployment
+- **Unified frontend + backend architecture**: Traditional split frontend/backend causes CORS issues; EdgeOne unifies the project, simplifying account management, deployment, monitoring, and domain management
+- **Framework/language/model agnostic**: Supports Claude, OpenAI, LangGraph, CrewAI frameworks; no proprietary SDK lock-in; allows JS or Python; provides a unified AI Gateway while supporting third-party APIs
+
+**Key insight**: The methodology emphasizes **iterative consolidation** — each cycle produces a `consolidation.md` that serves as both documentation and context for the next development round. This creates a self-documenting, progressively richer knowledge base that future Codex sessions can reference.
 
 ## Prompt Design Characteristics
 

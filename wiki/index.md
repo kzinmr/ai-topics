@@ -3,6 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
+- [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
 - [[entities/matei-zaharia]] — Matei Zaharia — CTO of Databricks (pre-$175B), co-creator of Apache Spark/MLflow, creator of Omnigent open-source meta-harness; new entity page (June 25)
 - [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)

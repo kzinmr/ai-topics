@@ -1,3 +1,14 @@
+## [2026-06-25] X Bookmarks Ingest — Codex Agent Development Methodology
+
+**Bookmark batch**: 1 bookmark processed
+
+**Enriched**:
+- [[entities/openai-codex]] — Added "Agent Development Methodology — Production Agent Workflow" section based on @gengdaJ's June 23 Note Tweet. Documents a structured five-phase development cycle (Product Alignment -> Decomposition -> Goal Authoring -> Target Mode Execution -> Consolidation & Iteration) and production deployment with Tencent Cloud EdgeOne Makers (edge Web + AI Agent hosting with built-in memory, sandbox, tracing, and gateway infrastructure).
+
+**Raw article saved**: [[raw/articles/2026-06-23_gengdaj-codex-production-agent-workflow.md]]
+
+**Index**: Added openai-codex entity entry to recently-updated entities section (was previously missing from index.md).
+
 ## 2026-06-25 X Accounts Scan
 
 **Source**: x-accounts-scan cron job (fetch_x_accounts.py)
