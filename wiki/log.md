@@ -9,6 +9,7 @@
 - **SCHEMA.md**: Added 2 new tags (`matrix-completion`, `svd`)
 - **Sources**: X bookmarks pipeline (fetch_x_bookmarks.py, 2 new bookmarks, 475 processed cache)
 
+---
 ## [2026-06-25] Active Crawl — 3 new concept pages + 1 enrichment from trending topics
 
 - **New pages**: 3 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
@@ -26,6 +27,7 @@
 - **SCHEMA.md**: Added 2 new tags (broadcom, data-center)
 - **Sources**: HN Algolia (20 trending stories), X/Twitter xurl (10 results), blogwatcher DB (30 articles), wiki gap analysis (1769 concepts, 836 entities)
 
+---
 ## [2026-06-25] Active Crawl — 3 new concept pages + 1 enrichment from trending topics
 
 - **New pages**: 3 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
@@ -43,6 +45,7 @@
 - **SCHEMA.md**: Added 2 new tags (broadcom, data-center)
 - **Sources**: HN Algolia (20 trending stories), X/Twitter xurl (10 results), blogwatcher DB (30 articles), wiki gap analysis (1769 concepts, 836 entities)
 
+---
 ## [2026-06-25] Newsletter Wiki Ingest — 5 takes from newsletter-triage checkpoint (FAILED → recovered from inbox pre-triage)
 
 - **Notes**: Newsletter-triage cron job failed (API key 401). Recovered from inbox pre-triage summary + direct newsletter URL resolution. 3 newsletters triaged: "[AINews] It's Meta-Harness Summer", "[AINews] Claude Tag", "Databricks Podcast (Latent Space)". 15 total decisions (5 takes, 3 references, 7 skips).
@@ -56,6 +59,7 @@
 - **References**: Background agents ecosystem (Shopify/Stripe/Ramp/Paradigm), Databricks LTAP/Lakebase, Cursor x Notion integration
 - **Skipped**: Meta PM (non-AI), Beehiiv Claude Tag (duplicate), Anthropic export control challenge, Claude Tag details (already covered), OpenAI Jalapeño (already covered), Qwen-AgentWorld (already covered), GLM-5.2 (already covered)
 
+---
 ## [2026-06-25] Blog Wiki Ingest — 2 takes + 1 new raw article from blog-triage checkpoint
 
 - **Enriched**: `entities/openai.md` — Added Jalapeño Intelligence Processor section (first custom inference chip, Broadcom partnership, 9-month tape-out, GPT-5.3-Codex-Spark running at production frequency, gigawatt-scale deployment with Microsoft)
@@ -77,10 +81,12 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Updated**: `concepts/agentic-engineering.md` — Added "The Agent Loop Debate" section (Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection)
 - **Updated**: `wiki/index.md` — All changes reflected
 
+---
 ## [2026-06-24] New concept page — KV-Aware Routing
 
 - **concepts/kv-aware-routing.md** — KV cache-aware request routing for LLM inference serving. Covers NVIDIA Dynamo/Mooncake/vLLM implementations, comparison with traditional routing, and technical challenges. Resolves orphan wikilinks from multiple pages
 
+---
 ## [2026-06-24] Active Crawl — 5 concept pages + 5 raw articles from trending topics
 
 - **New pages**: 5 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
@@ -189,3 +195,13 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - 2026-06-24: Watchdog fix — added 2 missing `---` separators in log.md between consecutive ## sections. No other auto-fixable issues found. Index: Format B (clean). _index.md: 0 pipe corruption (false positives — all legitimate markdown tables). Report: wiki-health clean (0 stale pages, 30 orphans flagged for human review).
 - 2026-06-25: enriched [[concepts/loop-engineering]] with HuaShu PDF synthesis (Four-Layer Stack, Five Moves, Generator/Evaluator, Anti-patterns, Real Loops, Four Costs, First Loop Recipe, Economics of Judgment); added raw/papers/2026-06-24_huashu_loop-engineering-anthropic-playbook.pdf
 - 2026-06-25: enriched [[concepts/loop-engineering]] with 0xCodez X Article (14-step roadmap, 4-condition test, Ralph Wiggum loop, security tax); saved raw/articles/2026-06-09_0xcodez_loop-engineering-14-step-roadmap.md
+
+---
+
+## [2026-06-25] Watchdog auto-fix
+
+- **Fixed**: 6 missing `---` separators in log.md between consecutive ## section headers (10 sections verified, 0 remaining)
+- **Pipeline watch**: `x_accounts` stale (26h) — reported for human review. Newsletter chain break (triage API 401) confirmed **stale** — pipeline self-recovered via inbox pre-triage (see log entry at line 49)
+- **Index**: Format B (digest), 0 pipe corruption, 0 line prefix corruption, 0 triple brackets, 0 ghosts, 0 cross-section misplacement, 0 Japanese filenames, 0 duplicates — fully clean
+- **Log.md**: 0 pipe corruption, 0 line prefix corruption — clean
+- **Filesystem**: 836 entities, 1773 concepts, 31 comparisons, 4 queries, 11 events = 2708 total
