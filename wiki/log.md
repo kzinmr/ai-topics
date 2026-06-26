@@ -349,3 +349,24 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Index Format B**: 0 pipe corruption, 0 line prefix, 0 triple brackets, 0 ghosts, 0 duplicates — clean ✅
 - **Log.md**: 0 pipe corruption, 0 missing separators — clean ✅
 - **Filesystem**: 836 entities, 1773 concepts, 31 comparisons = 2640 total Layer 2
+
+## 2026-06-26 — Awesome Evals Bulk Ingestion (57 benchmarks + 2 tools)
+
+**Source**: benchflow-ai/awesome-evals GitHub repo (443+ curated eval links, 175KB README)
+**Raw article**: `wiki/raw/articles/benchflow-awesome-evals-2025.md`
+
+### New benchmark pages created (57):
+- **Web/OS Agent Benchmarks (12)**: webarena, osworld, browsecomp, visualwebarena, webvoyager, real-benchmark, webgames, androidworld, windowsagentarena, mind2web-2, st-webagentbench, online-mind2web
+- **Coding/SWE Agent Benchmarks (9)**: swe-lancer, swe-gym, swe-rebench, swe-bench-pro, multi-swe-bench, appworld, spider-2, terminal-bench, gta-benchmark
+- **Science/Research/Enterprise (12)**: re-bench, mle-bench, paperbench, scienceagentbench, deepresearch-bench, core-bench, bixbench, theagentcompany, crmarena-pro, gdpval, remote-labor-index, gaia2-are
+- **Safety/Adversarial (12)**: agentdojo, agentharm, injecagent, shade-arena, agent-security-bench, decodingtrust, cybench, benchjack, rewardbench, rewardbench-2, judgebench, verifybench
+- **Agent Evaluation Infrastructure (12)**: livebench, hal-leaderboard, benchflow-tool, trail, cursorbench, letta-leaderboard, stripe-agent-benchmark, skillsbench, clawsbench, agent-memory-bench, pyrit, verifiers-tool
+
+### Updated:
+- `concepts/ai-benchmarks/index.md` — restructured with new sections (Web/OS, Science/Research/Enterprise, Safety/Adversarial, Reward/Judge, Agent Eval Infrastructure). Total: 105 benchmark pages.
+- `wiki/index.md` — added 9 representative entries + sub-index pointer
+
+### Coverage delta:
+- Before: 49 benchmark pages in ai-benchmarks/
+- After: 106 benchmark pages (including index.md)
+- Net new: 57 benchmark pages
