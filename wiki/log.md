@@ -224,17 +224,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 ## [2026-06-24] Active Crawl — 5 concept pages + 5 raw articles from trending topics
 
 - **New pages**: 5 concept pages created from trending AI topics (HN + X/Twitter + wiki gap analysis)
-\n## [2026-06-24] Skeleton Enrichment — 4 entity pages enriched from minimal to comprehensive
-
-- **Entity pages enriched**:
-  - `entities/dario-amodei.md` — Restored 145-line historical depth + Wikipedia biography (education, career, DoD dispute, Time 100); 3 key essays documented (Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential)
-  - `entities/conviction.md` — Expanded from 18-line stub to full VC firm profile with portfolio (18 companies), team, projects (Embed, No Priors, Commit), and key publications
-  - `entities/alex-imas.md` — Expanded from 16-line stub to comprehensive profile; Director of AGI Economics at Google DeepMind, Professor at UChicago Booth, relational sector scarcity framework
-  - `entities/phil-trammell.md` — Expanded from 15-line stub to full profile; Head of Economics at Epoch AI, Stanford HAI Research Scholar, AGI scenario modeling, labor-capital complementarity
-- **Redirect consolidated**: `alex-imus.md` (typo slug) → redirected to canonical `alex-imas.md`; 3 cross-references updated in `concepts/ai-economics.md`, `concepts/agi-scarcity.md`, and `wiki/index.md`
-- **Duplicates cleaned**: Redirect page `alex-imus.md` converted to redirect pointing to `alex-imas.md`
-- **Sources fetched**: Wikipedia, Jina Reader on Dario Amodei and Conviction sites, Dwarkesh Patel podcast transcripts
-
 
   - `concepts/mistral-ocr-4.md` — Mistral OCR 4: SOTA OCR model, multilingual document parsing, structured markdown/JSON output, superior to Azure/Gemini/Amazon (470 HN pts)
   - `concepts/codex-logging-bug.md` — Codex Logging Bug: SQLite feedback logs writing up to 640 TB/year, rapid SSD wear, GitHub issue #28224 (503 HN pts)
@@ -249,7 +238,22 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
   - `raw/articles/2026-06-24_arxiv-2606.24597_qwen-agentworld.md`
 - **SCHEMA.md**: Added 4 new tags (ocr, document-intelligence, incident, sustainability)
 - **Sources**: HN Algolia (15 trending stories), X/Twitter xurl (10 results), blogwatcher DB, wiki gap analysis
+
 ---
+
+## [2026-06-24] Skeleton Enrichment — 4 entity pages enriched from minimal to comprehensive
+
+- **Entity pages enriched**:
+  - `entities/dario-amodei.md` — Restored 145-line historical depth + Wikipedia biography (education, career, DoD dispute, Time 100); 3 key essays documented (Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential)
+  - `entities/conviction.md` — Expanded from 18-line stub to full VC firm profile with portfolio (18 companies), team, projects (Embed, No Priors, Commit), and key publications
+  - `entities/alex-imas.md` — Expanded from 16-line stub to comprehensive profile; Director of AGI Economics at Google DeepMind, Professor at UChicago Booth, relational sector scarcity framework
+  - `entities/phil-trammell.md` — Expanded from 15-line stub to full profile; Head of Economics at Epoch AI, Stanford HAI Research Scholar, AGI scenario modeling, labor-capital complementarity
+- **Redirect consolidated**: `alex-imus.md` (typo slug) → redirected to canonical `alex-imas.md`; 3 cross-references updated in `concepts/ai-economics.md`, `concepts/agi-scarcity.md`, and `wiki/index.md`
+- **Duplicates cleaned**: Redirect page `alex-imus.md` converted to redirect pointing to `alex-imas.md`
+- **Sources fetched**: Wikipedia, Jina Reader on Dario Amodei and Conviction sites, Dwarkesh Patel podcast transcripts
+
+---
+
 ## [2026-06-24] Blog Wiki Ingest — 4 takes + 3 references from blog-triage checkpoint
 
 - **New page**: `concepts/ai-benchmarks/parallelkernelbench.md` — ParallelKernelBench (PKB): multi-GPU kernel generation benchmark. 87 problems, GPT-5.5 tops at 31% fast@3. Agentic harness evaluation plateaued after ~20 iterations.
@@ -261,7 +265,11 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Archive**: 16 skip/reference items archived to `raw/archived/triage/blog/2026-06-24_20260624T071008Z.json`.
 - **Triage recovery**: Upstream blog-triage failed with JSON parse error; recovered from checkpoint at `/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json`.
 
-- 2026-06-24: Newsletter wiki-ingest — processed 3 takes + 5 references from newsletter-triage checkpoint (1 newsletter batch: Ben's Bites). Recovered from triage render failure (checkpoint persistence).
+---
+
+## [2026-06-24] Newsletter Wiki-Ingest — Ben's Bites: 3 takes + 5 references
+
+- **Processed**: 3 takes + 5 references from newsletter-triage checkpoint (1 newsletter batch: Ben's Bites). Recovered from triage render failure (checkpoint persistence).
   - `entities/armin-ronacher.md` — enriched with "The Coming Loop" essay (June 23, 2026): harness-level vs agent-level loops distinction, code quality degradation from autonomous looping, software-as-organism metaphor, inability to opt out (security/competitive pressure), cognitive dependency, future harness design. +13 lines, +timeline entry, +sources.
   - `concepts/agent-skills.md` — enriched with Codex Record & Replay: workflow recording as skills via live demonstration. Distinct skill authoring method (recorded workflows vs instruction bundles). +12 lines.
   - `concepts/claude-code/claude-code-artifacts.md` — NEW page: Claude Code Artifacts feature (beta, Team/Enterprise). Shareable functional HTML pages for PR walkthroughs, project dashboards, and prototypes. +sources: claude.com/blog.
@@ -279,17 +287,28 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Entity pages enriched**: `entities/drew-breunig.md` (+timeline, +writings, +sources, +related), `entities/drew-breunig--core-ideas.md` (+Prompt Debt section), `entities/drew-breunig--writings.md` (+entry), `entities/drew-breunig--timeline.md` (+entry)
 - **GEPA page enriched**: `concepts/gepa.md` — Noted Breunig citation as prompt-debt solution
 - **SCHEMA.md updated**: Added `fighting-the-weights` tag to Models taxonomy
-- **Bookmark metadata**: 75 bookmarks, 48 likes, 10 retweets
 
-- 2026-06-23: Wiki ingest — Warp self-improvement loop for skills article.
+---
+
+## [2026-06-23] Wiki Ingest — Warp Self-Improvement Loop for Skills
+
+- **Warp self-improvement loop for skills** article.
   - Saved raw article: raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
   - Enriched entities/warp-terminal.md — added Self-Improvement Loop for Skills section (Execute->Evaluate->Revise cycle, YAML skill definitions, human-in-the-loop approval, comparison table with Hermes/OpenClaw)
   - Enriched concepts/skill-architecture-patterns.md — added Warp as third approach alongside Hermes and OpenClaw (execution-feedback skills section, updated comparison table, decision framework, related links)
   - Sources: https://www.warp.dev/blog/self-improvement-loop-for-skills
 
-- 2026-06-23: Active crawl — created 4 concept pages and saved 2 raw articles from trending AI topics (HN + X/Twitter + wiki gap analysis).
+---
 
-- 2026-06-23: Skeleton enrichment — enriched [[entities/brad-lyons]] from skeleton to comprehensive entity page. Added AI Investment Supercycle Hypothesis (Aug 2025), Revenue Segmentation Framework, AI Playbook for Operators and Investors, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology. Status: skeleton removed. Sources: xurl profile data, SaaSpocalypse Note Tweet, AI Supercycle Note Tweet, Revenue Segmentation tweet.
+## [2026-06-23] Active Crawl — 4 concept pages + 2 raw articles
+
+- **Active crawl**: created 4 concept pages and saved 2 raw articles from trending AI topics (HN + X/Twitter + wiki gap analysis).
+
+---
+
+## [2026-06-23] Skeleton Enrichment — brad-lyons enriched from skeleton to comprehensive
+
+- **Skeleton enrichment**: enriched [[entities/brad-lyons]] from skeleton to comprehensive entity page. Added AI Investment Supercycle Hypothesis (Aug 2025), Revenue Segmentation Framework, AI Playbook for Operators and Investors, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology. Status: skeleton removed. Sources: xurl profile data, SaaSpocalypse Note Tweet, AI Supercycle Note Tweet, Revenue Segmentation tweet.
 
   - Created concepts/prompt-injection.md — Prompt injection as role confusion, style-based jailbreaks, token-level injection defenses
   - Created concepts/vibethinker.md — VibeThinker-3B (arxiv 2606.16140): 3B model beating DeepSeek V3.2/GLM-5/Gemini 3 Pro on reasoning via curriculum SFT+GRPO+self-distillation
@@ -299,6 +318,9 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
   - Added SCHEMA tags: daybreak, gpt-5-5-cyber
   - Fixed 2 broken wikilinks
   - Sources: HN Algolia (16 trending stories), X/Twitter xurl (10 results), blogwatcher DB, wiki gap analysis
+
+---
+
 # Wiki Log
 - 2026-06-23: Created entities/martinfowler.md — Martin Fowler entity page enriched with PRINCE case study (Bayer AG + Thoughtworks, Agentic RAG + Text-to-SQL), context engineering and harness engineering sections. Added redirect from martin-fowler.md. (June 23)
 - 2026-06-23: Dreaming wiki-ingest — enriched `concepts/claude-code/claude-code-skills.md` with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt, comparison table). +100 lines. (June 23)
@@ -370,3 +392,16 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Before: 49 benchmark pages in ai-benchmarks/
 - After: 106 benchmark pages (including index.md)
 - Net new: 57 benchmark pages
+
+---
+
+## [2026-06-26] Watchdog auto-fix
+
+- **Fixed**: Removed literal `\n` artifact in log.md that broke the Active Crawl section — orphaned concept items (mistral-ocr-4, codex-logging-bug, ai-affordability-crisis, claude-tag, qwen-agentworld) restored under their parent section with proper `---` separators
+- **Fixed**: Restructured Skeleton Enrichment section (4 entity pages: dario-amodei, conviction, alex-imas, phil-trammell) as standalone section with correct `---` separators
+- **Fixed**: Flat-format Newsletter wiki-ingest entry (`- 2026-06-24:` without header) → proper `## [2026-06-24] Newsletter Wiki-Ingest` section with `---` separators
+- **Fixed**: 3 flat-format 2026-06-23 entries (Warp, Active Crawl, Skeleton Enrichment) → proper `## [DATE]` sections with `---` separators
+- **Fixed**: Missing `---` separator before legacy `# Wiki Log` section
+- **Index.md**: Format B digest — 0 duplicates, 0 pipe corruption, 0 ghosts, 0 triple brackets — clean ✅
+- **Log.md**: 0 remaining `\n` artifacts, 0 pipe corruption, 0 line prefix corruption — clean ✅
+- **Filesystem**: 826 entities, 1837 concepts (1731 + 106 ai-benchmarks), 31 comparisons, 4 queries, 11 events = 2709 total Layer 2
