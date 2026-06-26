@@ -15,7 +15,9 @@ aliases:
   - long-horizon task delegation
 sources:
   - raw/articles/2026-06-25_openai-agents-transforming-work.md
+  - raw/papers/2026-06-25_openai-shift-to-agentic-ai.md
   - https://openai.com/index/how-agents-are-transforming-work/
+  - https://cdn.openai.com/pdf/5d1e1489-21c0-43e4-9d42-f87efdbf0082/the-shift-to-agentic-ai-evidence-from-codex.pdf
 ---
 
 # Agentic Knowledge Work
@@ -89,6 +91,33 @@ Among active internal users, output token growth (Nov 2025 → Jun 2026):
 ### Parallel Agent Orchestration
 
 The heaviest users shifted from single-agent queries to orchestrating **multiple parallel agents** throughout the day, representing a new mode of knowledge work.
+
+## Four Stylized Facts (Research Paper)
+
+The underlying research paper ([[raw/papers/2026-06-25_openai-shift-to-agentic-ai|Johnston et al. 2026]]) formalizes four stylized facts:
+
+1. **Rapid but uneven shift**: Codex WAU grew >5× in H1 2026, but remains much less broadly used than ChatGPT. Shift is smallest among individual users, largest among OpenAI workers.
+2. **Delegated production, not consultation**: Users ask Codex to do work (debugging, refactoring, drafting, analyzing), not just provide advice. Contrasts with conversational AI usage patterns.
+3. **Anchored in software, broader where adoption is deepest**: Software tasks dominate overall, but OpenAI workers extend into research, planning, communication, recruiting, sales.
+4. **Large, repeatable, parallel workflows**: Intensive users run 3+ concurrent agents, use skills (26.6%), and delegate tasks estimated >8 hours (nearly tenfold increase since start of 2026).
+
+### Cross-Population Comparison
+
+| Metric | Individual | Organizational | OpenAI |
+|--------|-----------|---------------|--------|
+| Codex output token share | 16.5% | 63.3% | 99.8% |
+| Used Codex in last 28 days | <1% | 17.3% | ~100% |
+| WAU growth (H1 2026) | Moderate | Large | Largest |
+
+### Task Complexity Distribution
+
+- >30 min human-equivalent: 80.6% of individual users (May 2026)
+- >1 hour: 70.2%
+- >8 hours: 25.6% (fastest growth, nearly tenfold since Jan 2026)
+
+### Methodology Note
+
+The paper uses an automated, privacy-protecting pipeline with request-level classifiers on a 4% user sample. Job titles classified via gpt-5-mini. Task taxonomy has two levels (first-level: 14 categories; second-level: granular activities).
 
 ## Implications
 

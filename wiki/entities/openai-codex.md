@@ -36,6 +36,7 @@ sources:
   - raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md
   - raw/articles/2026-06-23_gengdaj-codex-production-agent-workflow.md
   - raw/articles/2026-06-25_openai-agents-transforming-work.md
+  - raw/papers/2026-06-25_openai-shift-to-agentic-ai.md
 ---
 
 # OpenAI Codex

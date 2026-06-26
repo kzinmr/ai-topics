@@ -1,18 +1,24 @@
-## [2026-06-25] OpenAI "How Agents Are Transforming Work" 取り込み
+## [2026-06-25] OpenAI "How Agents Are Transforming Work" + Research Paper 取り込み
 
-**Source**: https://openai.com/index/how-agents-are-transforming-work/ (June 25, 2026)
+**Source**:
+- Blog: https://openai.com/index/how-agents-are-transforming-work/ (June 25, 2026)
+- Paper: https://cdn.openai.com/pdf/5d1e1489-21c0-43e4-9d42-f87efdbf0082/the-shift-to-agentic-ai-evidence-from-codex.pdf
+- Authors: Drew Johnston, David Holtz, Alex Martin Richmond, Christopher Ong, Prasanna Tambe, Aaron Chatterji (OpenAI, Columbia, Wharton, Duke)
+
+**Raw paper saved**: `raw/papers/2026-06-25_openai-shift-to-agentic-ai.md` (50-page research paper with 4 stylized facts, task taxonomy, job title classifier, 15 figures)
 
 **Raw article saved**: `raw/articles/2026-06-25_openai-agents-transforming-work.md`
 
-**New concept page**: [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work paradigm shift from chatbot to agent-centric work. OpenAI internal Codex adoption data:
-- 80.6% of individual users make >30min human-equivalent requests
-- 99.8% of OpenAI weekly output tokens via Codex
-- Non-developer adoption 137× (individual), 189× (organizational) since Aug 2025
-- Every department (Legal, Finance, Recruiting) crossed majority Codex usage by Apr 2026
-- 99th percentile users generate 60+ hours of agent turns/day
+**New concept page**: [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work paradigm shift. Enriched with paper's four stylized facts:
+1. Rapid but uneven shift (Codex output share: Individual 16.5%, Org 63.3%, OpenAI 99.8%)
+2. Delegated production, not consultation
+3. Anchored in software, broader where adoption deepest
+4. Large, repeatable, parallel workflows (3+ concurrent agents, 26.6% skill use)
+
+Key data: 80.6% users >30min tasks, non-developer growth 137×/189×, every department majority Codex by Apr 2026, median researcher output 50× higher.
 
 **Updated**:
-- [[entities/openai-codex]] — Added raw article source reference + agentic-knowledge-work concept link to Related Topics
+- [[entities/openai-codex]] — Added paper + article source references + concept link
 - `index.md` — Added agentic-knowledge-work concept entry
 
 ---
