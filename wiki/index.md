@@ -48,17 +48,27 @@
 ## Concepts (Updated)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
+- [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
+- [[concepts/abliteration]] — Abliteration
+- [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
 - [[concepts/activation-steering]] — Activation Steering — Technique for modifying model behavior by manipulating internal activations
 - [[concepts/active-observability]] — Active Observability — Real-time LLM observability approach
+- [[concepts/activegraph]] — ActiveGraph: Event-Sourced Reactive Graph for Agentic Systems
+- [[concepts/activitypub]] — ActivityPub
+- [[concepts/adam-optimizer]] — Adam Optimizer
 - [[concepts/advanced-tool-use]] — Advanced Tool Use — Claude Developer Platform advanced tool usage patterns
+- [[concepts/adversarial-interoperability]] — Adversarial Interoperability
+- [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
+- [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
-- [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
 - [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
 - [[concepts/ai-benchmarks/parallelkernelbench]] — ParallelKernelBench (PKB); multi-GPU kernel generation benchmark with 87 problems from real codebases, GPT-5.5 tops at 31% fast@3 (June 24)
+- [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
+- [[concepts/ai-gateway]] — AI Gateway — centralized LLM API routing with cost controls, rate-limiting, observability (LangSmith, Glean, OpenRouter)
 - [[concepts/anthropic-alibaba-claude-ip-dispute]] — Anthropic-Alibaba Claude IP Dispute — June 2026 Anthropic accusation of illicit Claude distillation by Alibaba; NSA/Mythos access loss, export controls, US-China AI tensions (June 25)
 - [[concepts/apertus-sovereign-ai-model]] — Apertus — Open foundation model for sovereign AI (8B/70B), EU AI Act compliant, multilingual (1000+ languages), fully open training pipeline (June 23)
 - [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
@@ -73,6 +83,7 @@
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
 - [[concepts/kv-aware-routing]] — KV-Aware Routing — Request routing strategy for LLM inference serving that assigns requests based on KV cache state overlap. Implemented in NVIDIA Dynamo, Mooncake, vLLM (June 24)
+- [[concepts/llm-cost-crisis]] — LLM Cost Crisis / Tokenpocalypse — spiraling inference costs from premium models, agent multiplicative consumption, and organizational proliferation
 - [[concepts/loop-engineering]] — Loop Engineering; enriched with 0xCodez 14-step roadmap (4-condition test, 5 building blocks, Ralph Wiggum loop, security tax, common mistakes) + HuaShu PDF synthesis (June 25)
 - [[concepts/mai-thinking-1-report]] — MAI-Thinking-1 is a technical model developed by the Microsoft AI Team, described as a "hill-climbing machine" for advanced reasoning.
 - [[concepts/meta-harness]] — Meta-Harness; added Omnigent (Databricks) commercial implementation section — first major open-source production meta-harness (June 25)
@@ -90,15 +101,6 @@
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
-
-- [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
-- [[concepts/abliteration]] — Abliteration
-- [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
-- [[concepts/activegraph]] — ActiveGraph: Event-Sourced Reactive Graph for Agentic Systems
-- [[concepts/activitypub]] — ActivityPub
-- [[concepts/adam-optimizer]] — Adam Optimizer
-- [[concepts/adversarial-interoperability]] — Adversarial Interoperability
-- [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
 - [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
 ## Comparisons
 

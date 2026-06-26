@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-05-28
+updated: 2026-06-26
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -252,6 +252,16 @@ DeepSeek's history of "contrarian" bets (from @bookwormengr's Hero's Journey ana
 - Part of China's broader open-source AI ecosystem alongside Alibaba's Qwen (100,000+ HuggingFace derivatives)
 - Recognized in U.S. congressional hearings on national security risks of PRC AI (March 2026)
 - V4 deployment on domestic Huawei chips demonstrates partial decoupling from Western hardware
+
+### $7.4B Funding Round & Aggressive Expansion (June 2026)
+
+On June 26, 2026, the Wall Street Journal reported that DeepSeek raised **$7.4 billion** in new funding, with plans to **double its workforce**. This represents one of the largest funding rounds in AI history and signals a major escalation in the competitive landscape:
+
+- **Scale**: $7.4B places DeepSeek in the same funding tier as Anthropic ($7.5B+ total) and well above Mistral (~$1B)
+- **US Enterprise Adoption**: US firms are increasingly turning to DeepSeek as a lower-cost alternative to OpenAI and Anthropic, accelerating the open-weight model's enterprise penetration
+- **Staffing**: Plans to double headcount suggest aggressive hiring across research, engineering, and go-to-market
+- **Competitive Signal**: DeepSeek is no longer just a research lab — it's scaling into a full-stack AI company competing directly with US frontier labs
+- **Geopolitical Dimension**: The funding comes amid US export controls and growing concerns about Chinese AI capabilities. DeepSeek's ability to raise this amount underscores investor confidence in China's AI sector despite regulatory headwinds
 
 
 ### DeepSeek OCR: Text Compression via Visual Representation (May 2026)
