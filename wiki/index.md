@@ -3,6 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
+- [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
 - [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
@@ -46,6 +47,7 @@
 - [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
 
 ## Concepts (Updated)
+- [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)

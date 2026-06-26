@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-06-26T07:41:23.211838+00:00",
+  "triage_run_id": "20260626T072642Z",
+  "source": "newsletter",
+  "summary_ja": "7ニュースレターを処理（Ben's Bites、Vanishing Gradients確認、Beehiiv OpenAIチップ、True Positive Weekly#167、SemiAnalysisグリッド制約、AINews Codexトークン56x、Simon Willison Moebius移植）。主な所見：(1) OpenAI Jalapeñoチップはconcepts/openai-jalapeno-inference-chip.mdで既存カバー済み、(2) Simon Willison Moebius移植記事はentities/simon-willison.mdに既収録（ブログ版がblog-ingestで先行キャプチャ）、(3) OpenAI Codex内部トークン成長データ（56x Research等）はraw/articles/2026-06-25_openai-agents-transforming-work.mdに収録済み、(4) True Positive Weekly#167はpure link digestでスキップ。0件テイク、0件リファレンス、全13件スキップ。全ての主要トピックは既存Wikiページまたは他パイプラインでカバー済み。",
+  "decisions": [
+    {
+      "item_id": "batch-bensbites-links",
+      "source": "newsletter",
+      "source_name": "Ben's Bites (リンクバッチ)",
+      "title": "Batch skip: Ben's Bites外部リンク（Google Gemini CUA, Figma Config, Notion Developer, Exa AI Connect, Modal Auto Endpoints, Executor.sh）",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-25-claude-code-in-slack.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップ：Ben's Bitesがキュレートした6件の外部リンク。Google Gemini CUA（computer-use-preview GitHubリポジトリ）、Figma Config 2026、Notion Developer Platform、Exa AI Connect、Modal Auto Endpoints、Executor.sh。これらは企業ブログ/プロダクト発表であり、sitemap-monitor（06:00 UTC）が既にraw/articles/に取得済みか、blog-ingestパイプラインでカバー対象。ニュースレターは1行説明のみで追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-25\n**Subject:** Claude Code in Slack\n**Collected:** 2026-06-26T07:12:27.079630+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3V"
+    },
+    {
+      "item_id": "batch-tpw-links",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly (リンクバッチ)",
+      "title": "Batch skip: True Positive Weekly #167外部リンク（WSJ, Agent Eval, Google SRE, EDD, Inference, DFlash-V2, GLM-5.2）",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-25-true-positive-weekly-167.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップ：True Positive Weekly#167がキュレートした8件の外部リンク。WSJ記事（有料）、Agent評価基盤記事（leehanchung.github.io）、Google SREエージェント記事、EDD解説、推論工学ガイド、DFlash-V2投機的デコード、GLM-5.2モデルリリース。Pure link digest内のリンクで、ニュースレターは1行説明のみのため追加分析価値なし。blog-ingestパイプラインで個別評価済みか今後処理。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-25\n**Subject:** True Positive Weekly #167\n**Collected:** 2026-06-26T07:12:31.104314+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "batch-ainews-links",
+      "source": "newsletter",
+      "source_name": "AINews (リンクバッチ)",
+      "title": "Batch skip: AINews OpenAI Codex外部リンク（WTF2025, AI Engineer, Reddit NVIDIA, Reddit QwenAgentWorld）",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-26-ainews-openai-reports-median-internal-codex-output-tokens-grew-56x-in-research-3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップ：AINews OpenAI Codex速報の外部リンク群。OpenAI公式ブログ（既存raw/articles/でカバー済み）、AI Engineerカンファレンス（イベント告知）、Reddit NVIDIA/LocalLLaMA、Reddit QwenAgentWorld（3B活性パラメータMoEモデル）。Redditリンクは情報源として不安定で、Wiki価値は個別検証が必要だが本トリアージの範囲外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-26\n**Subject:** [AINews] OpenAI reports median internal Codex output tokens grew 56x in Research, 32x in Customer Support, 27x in …\n**Collected:** 2026-06-26T07:12:33.675798+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0"
+    },
+    {
+      "item_id": "batch-semianalysis-links",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis (リンクバッチ)",
+      "title": "Batch skip: SemiAnalysis US Grid Constraintsリンク（既存SemiAnalysis記事・モデルページ）",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-25-us-grid-constraints-towards-40gw-of-behind-the-meter-datacenter-by-2028.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップ：SemiAnalysisポストの外部リンクは全て同パブリケーション内の過去記事とモデルページへの参照。新規外部ソースなし。ペイウォール記事の内部相互参照。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-25\n**Subject:** US Grid Constraints: Towards 40GW+ of Behind-The-Meter Datacenter by 2028?\n**Collected:** 2026-06-26T07:12:32.438712+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb"
+    }
+  ]
+}
