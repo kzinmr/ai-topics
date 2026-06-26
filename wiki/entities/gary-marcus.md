@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-15
+updated: 2026-06-26
 tags:
   - lab
   - benchmark
@@ -29,6 +29,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-maybe-section-230-doesnt-shield-ai--f81f07ca.md
   - raw/articles/garymarcus.substack.com--p-the-white-houses-shambolic-ai-policy--96f61c8f.md
   - raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md
+  - raw/articles/garymarcus.substack.com--p-the-generative-ai-fizzle--badee2a3.md
 ---
 
 # Gary Marcus
@@ -212,6 +213,20 @@ Source: [[raw/articles/garymarcus.substack.com--p-the-white-houses-shambolic-ai-
 **Sacks's Vague Explanation:** Marcus characterized David Sacks's X statement as "desperately vague about how serious the problem was" — concluding that "what really comes through above all else is impatience and ego."
 
 Source: [[raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md]]
+
+### The Generative AI Fizzle™ (June 2026)
+
+On June 25, 2026, Marcus coined the term "Generative AI Fizzle™" to describe a potential slow decline in AI valuations rather than a dramatic crash. Key arguments:
+
+- **LLM commoditization validated**: Marcus cited his three-year track record of warnings — (i) no technical moat for anyone, (ii) profits hard to come by, (iii) LLMs would become commodities, (iv) price wars would follow. He argued all four predictions have materialized.
+- **Chinese open-source threat**: A new Chinese open-source model released the same week was described as "Big Tech's $1 trillion AI moat just got DESTROYED by a free Chinese download," threatening the investment thesis of Microsoft, Amazon, Google, and Meta's massive chip and data center spending.
+- **OpenAI profitability crisis**: OpenAI spent more on ads than the entire world spent on podcast advertising, yet still lost $21 billion — "The business model doesn't work yet."
+- **Market performance**: Most AI stocks were down significantly for the month (with exceptions like Micron post-earnings bounce). Marcus quoted Paul Gambles via Bloomberg: "The AI bubble is by far the biggest stock-market bubble that mankind has ever seen."
+- **"Fizzle" thesis**: Rather than a dramatic pop, Marcus proposed the decline may be gradual — "not with a bang, but a whimper" — as investors lose enthusiasm for the ratio between hype (insane) and profits (not impressive). He analogized to tulip prices: "Tulips didn't disappear; astronomical tulip prices did."
+
+This extends the [[#AI's Black Friday — Market Crash & Government Bailouts (Jun 2026)]] and [[#Why Things Will Eventually Fall Apart (Jun 2026)]] analyses with updated market data and a framing that suggests the AI downturn may be a prolonged deflation rather than a sudden crash.
+
+Source: [[raw/articles/garymarcus.substack.com--p-the-generative-ai-fizzle--badee2a3.md]]
 
 ### Why Things Will Eventually Fall Apart (Jun 2026)
 

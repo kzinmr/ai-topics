@@ -2,7 +2,7 @@
 title: "Andrew Nesbitt"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-06
+updated: 2026-06-26
 type: entity
 ---
 
@@ -347,6 +347,29 @@ Related: [[concepts/software-supply-chain-security]], [[concepts/package-managem
 
 ---
 
+### Scrutineer — LLM-Powered Vulnerability Scanning (June 2026)
+
+On June 25, 2026, Nesbitt published Scrutineer, an open source security scanning tool built for **Alpha-Omega** that uses LLMs to find vulnerabilities while addressing the **maintainer burnout bottleneck**.
+
+**The Problem**: LLMs have made finding vulnerabilities in open source code "much easier" — "Point one at a codebase and it turns up real bugs alongside invented ones, faster and cheaper than the fuzzers and scanners that came before." But the bottleneck hasn't moved: every finding still needs human verification. When Nesbitt pointed AI scanners at curl in May 2026, "most of the output collapsed against the project's own disclosure policy, and the findings worth having were buried in the rest."
+
+**Architecture**:
+- Each scan is a **skill on disk**: a SKILL.md file, a JSON schema for output, and supporting scripts. Changing what runs is editing markdown, not recompiling a scanner.
+- The `triage` skill runs first, gathers context, and enqueues the rest of the pipeline in parallel.
+- Results are structured findings: severity, CWE, source-line location, affected versions, and a six-step trace of how each vulnerability was reached.
+- The `security-deep-dive` skill is the model-backed audit — two-phase: first builds a sink inventory (every code-execution, shell-out, or hostile-path entry point), then traces each sink back to a trust boundary.
+- The `threat-model` skill derives the project's security contract from SECURITY.md before auditing, tagging each claim as `documented` or `inferred`.
+- The `maintainers` skill identifies disclosure contacts from commit history, issue/PR activity, and registry ownership via ecosyste.ms.
+
+**Key Design Principle**: "The volume a model can generate never lands directly on a maintainer." Scrutineer is already in use by ecosystem security engineers and Alpha-Omega funded teams, with multiple vulnerabilities found, reported, fixed, and shipped.
+
+This represents Nesbitt's most direct contribution to solving the AI-assisted security scanning problem he identified in his May 2026 "Not a Security Issue" post — moving from documenting the problem to building the solution.
+
+Source: [[raw/articles/nesbitt.io--2026-06-25-scrutineer-html--2ad1fbbe.md]]
+Related: [[concepts/software-supply-chain-security]], [[concepts/agent-safety]]
+
+---
+
 ## Sources
 
 - nesbitt.io — Personal blog and portfolio
@@ -389,3 +412,4 @@ Related: [[concepts/software-supply-chain-security]], [[concepts/package-managem
 - nesbitt.io--2026-05-12-not-a-security-issue-html--c464f9c9
 - raw/articles/nesbitt.io--2026-06-04-gittuf-a-signed-log-for-git-refs-html--db92e96b.md
 - raw/articles/nesbitt.io--2026-06-05-install-script-allowlists-html--3b0b8898.md
+- raw/articles/nesbitt.io--2026-06-25-scrutineer-html--2ad1fbbe.md

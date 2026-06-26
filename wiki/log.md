@@ -1,3 +1,28 @@
+## [2026-06-26] Blog Ingest Triage — 2026-06-26
+
+**Source:** blog-ingest pipeline (blogwatcher RSS scan)
+**Articles scanned:** 32 new (20 shown)
+**Articles saved:** 17 raw articles to wiki/raw/articles/
+
+### Triage Decisions
+
+**Takes (★★★★):**
+- Gary Marcus "The Generative AI Fizzle™" → enriched `gary-marcus.md` — coined term for slow AI valuation decline, LLM commoditization validated, Chinese open-source threat, OpenAI $21B losses, AI stocks down for month
+- Simon Willison "AI and Liability" → enriched `simon-willison.md` — linked Bruce Schneier on German ruling holding Google liable for AI overview errors
+
+**References (★★★):**
+- Andrew Nesbitt "Scrutineer" → enriched `simon-willison.md` + created `andrew-nesbitt.md` entity — LLM-powered open source security scanning for Alpha-Omega, addresses maintainer burnout bottleneck
+- Cory Doctorow "Jailbreaking isn't theft" → skipped (primarily about digital sovereignty/copyright, minimal AI content)
+
+**Skipped (★★):**
+- 13 articles: math (johndcook.com × 3), Apple pricing (daringfireball.net), Windows internals (devblogs.microsoft.com × 2), ffmpeg color grading (jeffgeerling.com), VA Linux history (dfarq.homeip.net), subway engineering (construction-physics.com), Raymond Chen food take (devblogs.microsoft.com), Om Malik obituary (daringfireball.net), xeiaso.net bot-check page
+
+### Pages Modified
+- `entities/gary-marcus.md` — added "Generative AI Fizzle™" section + source
+- `entities/simon-willison.md` — added AI liability + Scrutineer link blog entries + sources
+- `entities/andrew-nesbitt.md` — NEW entity page (open source security researcher)
+- `wiki/index.md` — added andrew-nesbitt entry
+
 ## [2026-06-25] OpenAI "How Agents Are Transforming Work" + Research Paper 取り込み
 
 **Source**:
