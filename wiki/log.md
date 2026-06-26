@@ -1,3 +1,10 @@
+## [2026-06-26] Blog Wiki Ingest — Supplement Batch
+
+- **Take**: Andrew Nesbitt "Incident Report: CVE-2026-LGTM" — satirical AI supply chain security gate failure piece. Added as new Core Ideas subsection to `entities/andrew-nesbitt.md` (+31 lines, 7-gate failure mapping, satire analysis). Added to `concepts/ai-supply-chain-security.md` as 5th case study (satirical stress test).
+- **Reference**: Michal Zalewski "AI children's books, body horror edition" — purchased and inspected AI-generated Amazon bestseller encyclopedia. Enriched `entities/lcamtuf.md` with supplement paragraph, recent theme entry, and reference.
+- **Skips**: 14 articles — non-AI topics (math, Windows internals, Apple pricing, Anubis-gated, unsaved_articles).
+- **Archived**: 15 skip+reference items via archive_triage.py.
+
 ## [2026-06-26] Blog Ingest Triage — 2026-06-26
 
 **Source:** blog-ingest pipeline (blogwatcher RSS scan)

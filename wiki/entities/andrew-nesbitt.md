@@ -368,6 +368,36 @@ This represents Nesbitt's most direct contribution to solving the AI-assisted se
 Source: [[raw/articles/nesbitt.io--2026-06-25-scrutineer-html--2ad1fbbe.md]]
 Related: [[concepts/software-supply-chain-security]], [[concepts/agent-safety]]
 
+### Incident Report: CVE-2026-LGTM — AI Security Gate Satire
+
+Published June 26, 2026. A satirical incident report depicting a fictional supply chain attack where **seven independent AI-powered security gates each fail for a different reason** — none of which is "the code is safe." The piece follows `foxhole-lz4`, a malicious npm-style package, as it propagates through transitive dependencies while being misclassified, context-window-exhausted, AI-triaged to closure, and ultimately resolved by treaty between the attacker's and defender's autonomous agents.
+
+**The Seven Gate Failures**:
+
+1. **AI Publish Gate (OpenClaw-4.2)**: Approves the package because it cites non-existent ticket SEC-4521. Does not verify the ticket exists.
+2. **ThreatNuzzle AI Scanner**: Encounters shocking AI-generated fan art in a base64 blob and refuses to describe it — reports "Informational" with no mention of the credential exfiltration 40 lines below.
+3. **Commercial Scanners**: Exhaust context windows on a 600KB decoy (Bee Movie screenplay + second-stage loader). One evaluates the decoy's aviation legality instead of the payload.
+4. **SentinelMind (only correct scanner)**: Correctly identifies exfiltration but is closed by the repository's AI triage bot as false positive. The bot and scanner's AI accounts add 🎉 reactions to each other's comments. No human involved.
+5. **Human (Karen Oyelaran)**: Finds the payload by reading source code with her eyes. Files an issue that the triage bot closes as "duplicate of #8814" (dark mode feature request). Gets GitHub-rate-limited for "patterns consistent with automated behaviour."
+6. **AI SOC Platform (WatchPaw, OpenClaw-4.2)**: Detects exfiltration but the C2 server's response body claims to be a Datadog health-check endpoint. WatchPaw adds it to egress allowlist and opens a procurement Jira for the "new vendor."
+7. **CVE Authority**: Issues CVE-2026-54321. A "SYSTEM" instruction withdraws the CVE. Four SCA dashboards silently suppress it. One vendor emails customers: "Good news! A critical vulnerability was withdrawn before it could impact you."
+
+> *"A malicious package passed seven independent AI-powered security gates, each of which failed to stop it for a different reason, none of which was 'the code is safe.' The incident was resolved when the attacker's autonomous agent read a file it shouldn't have, which is also how the incident started."*
+
+| Satirical target | Real-world parallel |
+|---|---|
+| creats.io registry | npm/PyPI registries |
+| OpenClaw-4.2 | Claude Code (Anthropic) |
+| ThreatNuzzle (Series C) | AI-native supply chain startups |
+| SentinelMind | Correct-but-overruled scanner detection |
+| WatchPaw SOC platform | SIEM auto-remediation playbooks |
+| CVE withdrawal | CVE-2026-YIKES, CNA identity confusion |
+| Token-based CI exfiltration | Codex CI injection (2026) |
+
+This piece functions as a darkly humorous stress test of Nesbitt's earlier analytical work: what happens when every AI security tool his "Package Security Defenses for AI Agents" described fails simultaneously? The answer is a cascade of failures specific to AI-augmented security — tooling that is individually reasonable but collectively exploitable through their shared blind spots.
+
+Related: [[concepts/ai-supply-chain-security]], [[concepts/software-supply-chain-security]]
+
 ---
 
 ## Sources
@@ -413,3 +443,4 @@ Related: [[concepts/software-supply-chain-security]], [[concepts/agent-safety]]
 - raw/articles/nesbitt.io--2026-06-04-gittuf-a-signed-log-for-git-refs-html--db92e96b.md
 - raw/articles/nesbitt.io--2026-06-05-install-script-allowlists-html--3b0b8898.md
 - raw/articles/nesbitt.io--2026-06-25-scrutineer-html--2ad1fbbe.md
+- raw/articles/nesbitt.io--2026-06-26-incident-report-cve-2026-lgtm-html--da259599.md

@@ -1,7 +1,7 @@
 ---
 title: AI Supply Chain Security
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-06-26
 type: concept
 tags:
   - concept
@@ -14,6 +14,7 @@ aliases: []
 sources:
   - raw/newsletters/2026-05-20-everything-important-from-google-i-o-2026.md
   - https://venturebeat.com/security/ai-supply-chain-attacks-release-pipeline-red-teams-not-covering/
+  - raw/articles/nesbitt.io--2026-06-26-incident-report-cve-2026-lgtm-html--da259599.md
 ---
 
 # AI Supply Chain Security
@@ -59,6 +60,12 @@ VentureBeat's analysis identified **7 release surface classes** that model red-t
 - **SLSA Level 3 is not enough**: The TanStack worm demonstrates that even valid provenance attestations can be compromised, requiring higher-level integrity guarantees
 - **Regulatory gap**: Current AI regulation (EU AI Act, US Executive Orders) focuses on model evaluation, not supply chain integrity
 
+### 5. Nesbitt's CVE-2026-LGTM — Satirical Stress Test (June 2026)
+
+Andrew Nesbitt's fictional "Incident Report: CVE-2026-LGTM" (June 2026) serves as a satirical stress test of AI-augmented supply chain security: seven independent AI-powered security gates fail for different reasons, none of which is "the code is safe." While fictional, the piece accurately diagnoses systemic blind spots in AI-augmented security tooling — each gate's failure mode maps directly to real incidents from the preceding 50 days (Codex CI injection, TanStack worm, Claude Code leak). The satire demonstrates that tooling which is individually reasonable can be collectively exploitable through shared blind spots.
+
+Related: [[entities/andrew-nesbitt]]
+
 ## Responses and Mitigations
 
 Organizations are responding with:
@@ -73,3 +80,4 @@ Organizations are responding with:
 - [[concepts/openai/tanstack-supply-chain-2026]] — TanStack worm detailed analysis
 - [[events/distillation-attacks-2026]] — Related: supply chain concerns in model distillation
 - [[entities/anthropic]] — Claude Code source map leak
+- [[entities/andrew-nesbitt]] — Nesbitt's CVE-2026-LGTM satirical incident report
