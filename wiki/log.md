@@ -1,3 +1,22 @@
+## [2026-06-25] OpenAI "How Agents Are Transforming Work" 取り込み
+
+**Source**: https://openai.com/index/how-agents-are-transforming-work/ (June 25, 2026)
+
+**Raw article saved**: `raw/articles/2026-06-25_openai-agents-transforming-work.md`
+
+**New concept page**: [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work paradigm shift from chatbot to agent-centric work. OpenAI internal Codex adoption data:
+- 80.6% of individual users make >30min human-equivalent requests
+- 99.8% of OpenAI weekly output tokens via Codex
+- Non-developer adoption 137× (individual), 189× (organizational) since Aug 2025
+- Every department (Legal, Finance, Recruiting) crossed majority Codex usage by Apr 2026
+- 99th percentile users generate 60+ hours of agent turns/day
+
+**Updated**:
+- [[entities/openai-codex]] — Added raw article source reference + agentic-knowledge-work concept link to Related Topics
+- `index.md` — Added agentic-knowledge-work concept entry
+
+---
+
 ## [2026-06-25] X Bookmarks Ingest — Codex Agent Development Methodology
 
 **Bookmark batch**: 1 bookmark processed

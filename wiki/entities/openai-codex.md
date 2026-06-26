@@ -35,6 +35,7 @@ sources:
   - raw/newsletters/2026-06-04-build-tools-to-build-more.md
   - raw/newsletters/2026-06-21-spacex-s-cursor-call-openai-s-codex-clone-and-midjourney-s-medical-moonshot.md
   - raw/articles/2026-06-23_gengdaj-codex-production-agent-workflow.md
+  - raw/articles/2026-06-25_openai-agents-transforming-work.md
 ---
 
 # OpenAI Codex
@@ -351,6 +352,7 @@ Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technolo
 
 ## Related Topics
 
+- [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work (OpenAI internal adoption data)
 - [[entities/jason-liu]] — Jason Liu (Codex team DX engineer, author of this guide)
 - [[concepts/codex/codex-prompting]] — Codex prompt design patterns
 - [[concepts/codex/codex-goal]] — Codex Goals design and operation
