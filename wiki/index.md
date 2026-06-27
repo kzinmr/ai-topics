@@ -3,54 +3,52 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
-- [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
-- [[entities/dean-ball]] — Dean W. Ball; enriched with "What Should Be Done" — analysis of EO on Cyber and AI as de facto licensing regime, IVO proposal for frontier model governance, Obernolte-Trahan Great American AI Act endorsement (June 27)
-- [[entities/alex-banks]] — Alex Banks; enriched with "You're Underestimating AI on Purpose" — AI Perception Paradox, Amara's Law, the AI Effect and systematic underestimation of AI progress (June 27)
-- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
-- [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
-- [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
-- [[entities/matei-zaharia]] — Matei Zaharia — CTO of Databricks (pre-$175B), co-creator of Apache Spark/MLflow, creator of Omnigent open-source meta-harness; new entity page (June 25)
-- [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
-- [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
-- [[entities/openai]] — OpenAI; added GPT-5.5 Instant revision (June 2026) — improved intent understanding, constraint handling, conversational style (June 25)
-- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
-- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25)
-- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
-- [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
-- [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)
-- [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with "The next big breakthrough" article — RLVR generalization limits, OPSD/dreaming as 4th scaling axis, computer use grindability, 35M× KV cache vs weight density gap (June 27)
-- [[entities/drew-breunig]] — Drew Breunig; enriched with "The Problem is Prompt Debt" X Article — prompt debt framework, fighting the weights, algorithmic prompt search (June 23)
-- [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
-- [[entities/mario-zechner]] — Mario Zechner; added DeepMind AI Control Roadmap recommendation + Gergely Orosz "Slow Down to Speed Up" talk recommendation (June 25)
-- [[entities/chris-tate]] — Chris Tate; added emulate (local API emulation for CI/no-network sandboxes) to key projects (June 25)
-- [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
-- [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
-- [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
-- [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
-- [[entities/k-eric-drexler]] — K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford.
-- ... ...
-- [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind; relational sector scarcity, behavioral economics of AI (June 24)
-- [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
-- [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
-- [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
-- [[entities/simon-willison]] — Simon Willison; enriched with hackmyclaw.com Prompt Injection Challenge — 6,000 attempts, 0 injections, Opus 4.6 Anti-Prompt-Injection Rules validation (June 27); Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code (June 23)
-- [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
-- [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
-- [[entities/conviction]] — Conviction — AI-focused VC firm founded by Sarah Guo; portfolio includes Baseten, Mistral, Cognition, Harvey, HeyGen; No Priors podcast, Embed grant program (June 24)
-- [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
-- [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
-- [[entities/ed-zitron]] — Ed Zitron; enriched with "Cargo Culture" — religious/cargo cult metaphors for AI loop push, Rot-Com Bubble thesis, venture capital cargo cult (June 24)
-- [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
-- [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24)
-- [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
 - [[entities/0xjeff]] — 0xJeff — AI researcher and writer
+- [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
-- [[entities/adept]] — Adept AI — AI agent startup building general-purpose agents
 - [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
-
+- [[entities/adept]] — Adept AI — AI agent startup building general-purpose agents
+- [[entities/alex-banks]] — Alex Banks; enriched with "You're Underestimating AI on Purpose" — AI Perception Paradox, Amara's Law, the AI Effect and systematic underestimation of AI progress (June 27)
+- [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind; relational sector scarcity, behavioral economics of AI (June 24)
+- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
+- [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
+- [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
+- [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
+- [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
+- [[entities/chris-tate]] — Chris Tate; added emulate (local API emulation for CI/no-network sandboxes) to key projects (June 25)
+- [[entities/conviction]] — Conviction — AI-focused VC firm founded by Sarah Guo; portfolio includes Baseten, Mistral, Cognition, Harvey, HeyGen; No Priors podcast, Embed grant program (June 24)
+- [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24)
+- [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
+- [[entities/dean-ball]] — Dean W. Ball; enriched with "What Should Be Done" — analysis of EO on Cyber and AI as de facto licensing regime, IVO proposal for frontier model governance, Obernolte-Trahan Great American AI Act endorsement (June 27)
+- [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)
+- [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
+- [[entities/drew-breunig]] — Drew Breunig; enriched with "The Problem is Prompt Debt" X Article — prompt debt framework, fighting the weights, algorithmic prompt search (June 23)
+- [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with "The next big breakthrough" article — RLVR generalization limits, OPSD/dreaming as 4th scaling axis, computer use grindability, 35M× KV cache vs weight density gap (June 27)
+- [[entities/ed-zitron]] — Ed Zitron; enriched with "Cargo Culture" — religious/cargo cult metaphors for AI loop push, Rot-Com Bubble thesis, venture capital cargo cult (June 24)
+- [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
+- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25)
+- [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
+- [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
+- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
+- [[entities/k-eric-drexler]] — K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford.
+- [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
+- [[entities/mario-zechner]] — Mario Zechner; added DeepMind AI Control Roadmap recommendation + Gergely Orosz "Slow Down to Speed Up" talk recommendation (June 25)
+- [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
+- [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
+- [[entities/matei-zaharia]] — Matei Zaharia — CTO of Databricks (pre-$175B), co-creator of Apache Spark/MLflow, creator of Omnigent open-source meta-harness; new entity page (June 25)
+- [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
+- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
+- [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
+- [[entities/openai]] — OpenAI; added GPT-5.5 Instant revision (June 2026) — improved intent understanding, constraint handling, conversational style (June 25)
+- [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
+- [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
+- [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
+- [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
+- [[entities/simon-willison]] — Simon Willison; enriched with hackmyclaw.com Prompt Injection Challenge — 6,000 attempts, 0 injections, Opus 4.6 Anti-Prompt-Injection Rules validation (June 27); Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code (June 23)
+- [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
+- [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
 ## Concepts (Updated)
-- [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
@@ -71,16 +69,16 @@
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
-- [[concepts/ai-benchmarks/parallelkernelbench]] — ParallelKernelBench (PKB); multi-GPU kernel generation benchmark with 87 problems from real codebases, GPT-5.5 tops at 31% fast@3 (June 24)
-- [[concepts/ai-benchmarks/index]] — AI Benchmarks Sub-Index: 105 benchmark/tool pages (June 26) — see sub-index for full catalog
-- [[concepts/ai-benchmarks/webarena]] — WebArena: realistic web environment, 812 tasks, 4 sandboxed websites (CMU, 2023🆕)
-- [[concepts/ai-benchmarks/osworld]] — OSWorld: multimodal OS agents, real desktop VMs, Ubuntu/Windows/macOS (2024🆕)
-- [[concepts/ai-benchmarks/terminal-bench]] — Terminal-Bench: CLI agent tasks, Docker + programmatic verification (Stanford/Harbor, 2025🆕)
-- [[concepts/ai-benchmarks/re-bench]] — RE-Bench: AI R&D evaluation by METR, tests ML research capability (2024🆕)
-- [[concepts/ai-benchmarks/paperbench]] — PaperBench: AI paper replication benchmark (OpenAI, 2025🆕)
 - [[concepts/ai-benchmarks/agentdojo]] — AgentDojo: prompt injection attacks/defenses for agents (ETH Zurich, NeurIPS 2024🆕)
-- [[concepts/ai-benchmarks/rewardbench]] — RewardBench: reward model evaluation (Allen AI, 2024🆕)
 - [[concepts/ai-benchmarks/hal-leaderboard]] — Holistic Agent Leaderboard: unified agent eval (Princeton, 2025🆕)
+- [[concepts/ai-benchmarks/index]] — AI Benchmarks Sub-Index: 105 benchmark/tool pages (June 26) — see sub-index for full catalog
+- [[concepts/ai-benchmarks/osworld]] — OSWorld: multimodal OS agents, real desktop VMs, Ubuntu/Windows/macOS (2024🆕)
+- [[concepts/ai-benchmarks/paperbench]] — PaperBench: AI paper replication benchmark (OpenAI, 2025🆕)
+- [[concepts/ai-benchmarks/parallelkernelbench]] — ParallelKernelBench (PKB); multi-GPU kernel generation benchmark with 87 problems from real codebases, GPT-5.5 tops at 31% fast@3 (June 24)
+- [[concepts/ai-benchmarks/re-bench]] — RE-Bench: AI R&D evaluation by METR, tests ML research capability (2024🆕)
+- [[concepts/ai-benchmarks/rewardbench]] — RewardBench: reward model evaluation (Allen AI, 2024🆕)
+- [[concepts/ai-benchmarks/terminal-bench]] — Terminal-Bench: CLI agent tasks, Docker + programmatic verification (Stanford/Harbor, 2025🆕)
+- [[concepts/ai-benchmarks/webarena]] — WebArena: realistic web environment, 812 tasks, 4 sandboxed websites (CMU, 2023🆕)
 - [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
 - [[concepts/ai-economics]] — AI Economics; enriched with Inference Economics — A100 cost breakdown ($1/MTok estimate), 70-80% gross margins confirmed, DeepSeek R1 validation, inference-subsidizes-training thesis (June 27)
 - [[concepts/ai-gateway]] — AI Gateway — centralized LLM API routing with cost controls, rate-limiting, observability (LangSmith, Glean, OpenRouter)
@@ -96,10 +94,12 @@
 - [[concepts/codex-logging-bug]] — Codex Logging Bug — OpenAI Codex SQLite feedback logs writing up to 640 TB/year to local SSDs, rapid SSD wear, GitHub issue #28224, infrastructure incident affecting developer machines (June 24)
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
 - [[concepts/continual-learning]] — Continual Learning; enriched with Advanced Frameworks (Dwarkesh Patel) — RLVR generalization limits, OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision (June 27)
+- [[concepts/cve-2026-55607-claude-code-sandbox-escape]] — CVE-2026-55607 — Claude Code sandbox escape via .git worktree naming, symlink manipulation, and git fsmonitor execution rewrites; disclosed by @stretchcloud (June 26, 2026)
+- [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)
 - [[concepts/gemini-computer-use]] — Gemini Computer Use (Android) — Philipp Schmid's Android-specific implementation guide: screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script, relationship to Claude and OpenAI computer use approaches (June 25)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
-- [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family with government-mediated restricted preview; Prompt Caching features (explicit breakpoints, 30-min cache life, 1.25x write billing, 90% read discount); METR cheating finding, PostTrainBench-Lite, Terminal-Bench 2.1, pricing/positioning (June 27)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
+- [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family with government-mediated restricted preview; Prompt Caching features (explicit breakpoints, 30-min cache life, 1.25x write billing, 90% read discount); METR cheating finding, PostTrainBench-Lite, Terminal-Bench 2.1, pricing/positioning (June 27)
 - [[concepts/kv-aware-routing]] — KV-Aware Routing — Request routing strategy for LLM inference serving that assigns requests based on KV cache state overlap. Implemented in NVIDIA Dynamo, Mooncake, vLLM (June 24)
 - [[concepts/llm-cost-crisis]] — LLM Cost Crisis / Tokenpocalypse — spiraling inference costs from premium models, agent multiplicative consumption, and organizational proliferation
 - [[concepts/loop-engineering]] — Loop Engineering; enriched with 0xCodez 14-step roadmap (4-condition test, 5 building blocks, Ralph Wiggum loop, security tax, common mistakes) + HuaShu PDF synthesis (June 25)
@@ -116,6 +116,7 @@
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt; enriched with Drew Breunig's "The Problem is Prompt Debt" framework — three-stage spiral, fighting the weights, Goedecke vs Breunig comparison, prevention via DSPy/GEPA (June 23)
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/sakana-fugu]] — Sakana Fugu; added Fugu Ultra benchmark numbers (73.7 SWE-bench Pro, 82.1 TerminalBench 2.1, Fable-class) (June 24)
+- [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
@@ -146,5 +147,5 @@
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison
 
 ## Events
-
+- [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)
 - [[events/2026-06-27-openai-gpt-5-6-sol]] — OpenAI GPT-5.6 Sol Restricted Preview — first U.S. government-mediated frontier model release; limited to ~20 trusted partners at government request (June 27)
