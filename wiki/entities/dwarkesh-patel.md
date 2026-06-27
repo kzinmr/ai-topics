@@ -2,8 +2,8 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-06-20
-sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md]
+updated: 2026-06-27
+sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md]
 tags:
   - person
   - blogger
@@ -56,8 +56,9 @@ As of early 2026, the Dwarkesh Podcast has published approximately 115 episodes 
 | **May 2026** | Published "The mistake of conflating intelligence and power" — critiques AI safety's definition of intelligence |
 | **May 2026** | Published "Notes on pretraining parallelisms and failed training runs" — FSDP, pipeline parallelism, causality-breaking bugs |
 | **Jun 2026** | Interviewed Alex Imas (Dir. AGI Economics, DeepMind) & Phil Trammell (Head of Economics, Epoch): "What remains scarce after AGI?" — labor share, relational sector, taxation, messy middle, von Neumann probes → [[concepts/agi-economics]] |
-| **Jun 2026** | Published "The sample efficiency black hole" — argues humans are 1000x-1Mx more sample efficient than LLMs; data (not architecture) drives progress; Chinchilla scaling laws can't bridge the gap |
-
+|| **Jun 2026** | Published "The sample efficiency black hole" — argues humans are 1000x-1Mx more sample efficient than LLMs; data (not architecture) drives progress; Chinchilla scaling laws can't bridge the gap |
+|| **Jun 2026 (late)** | Published "The next big breakthrough will be AIs learning on the job" — RLVR generalization limits vs OPSD/dreaming as 4th scaling axis; computer use grindability; KV cache vs weight update density (35M× difference); 2027 continual learning vision |
+|
 ## Key Projects
 
 ### The Scaling Era: An Oral History of AI, 2019–2025
@@ -84,8 +85,9 @@ Production features video recordings integrated with audio releases, distributed
 - **"Notes on Pretraining Parallelisms" (May 2026)** — Deep technical analysis of FSDP, pipeline parallelism, causality-breaking bugs in MoE routing (Llama 4 underperformance). Emphasizes that bias compounds while variance averages out; FP16 collective bugs during GPT-4 training; pretraining flops equation (6ND).
 - **"RLVR Might Be Disproportionately Bad at Science" (May 2026)** — From interview with Michael Nielsen. Argues that scientific verification loops span decades/centuries, making RL reward signals inadequate. Historical examples: Copernicus less accurate than Ptolemy initially; Mercury anomaly → Einstein GR; Prout's atomic weight hypothesis.
 - **"The Mistake of Conflating Intelligence and Power" (May 2026)** — Critiques the AI safety definition of intelligence. Argues that current AI development (training better coders/coworkers) is not strongly correlated with power-seeking. Uses Garett Jones's individual vs. national IQ analysis; historical examples (Trevithick died poor, George III went mad but Britain thrived).
-- **"The Sample Efficiency Black Hole" (Jun 2026)** — Humans are 1,000×–1,000,000× more sample efficient than LLMs. Main driver of progress is more/better data, not architectural innovation. Chinchilla scaling laws show even infinite parameters only reduce data need by ~10×. RL is best understood as synthetic data generation (compute → verifier → good data → train model). Robotics gap: humans learn teleoperation in hours, driving in ~20 hours. Genome is only 3GB — not enough for model parameters, implying a qualitatively different learning algorithm. → [[concepts/sample-efficiency]]
-- **"The data black hole at the center of AI" (Jun 2026)** — Part 2 of sample efficiency series. Open models lag closed by 4 months (data distillation). Expert data industry scaling to deca-billions. Genome argument rebuttal. Chinchilla limits: infinite params only ~10x data reduction. White collar automation thesis. → [[concepts/sample-efficiency]]
+|- **"The Sample Efficiency Black Hole" (Jun 2026)** — Humans are 1,000×–1,000,000× more sample efficient than LLMs. Main driver of progress is more/better data, not architectural innovation. Chinchilla scaling laws show even infinite parameters only reduce data need by ~10×. RL is best understood as synthetic data generation (compute → verifier → good data → train model). Robotics gap: humans learn teleoperation in hours, driving in ~20 hours. Genome is only 3GB — not enough for model parameters, implying a qualitatively different learning algorithm. → [[concepts/sample-efficiency]]
+|- **"The data black hole at the center of AI" (Jun 2026)** — Part 2 of sample efficiency series. Open models lag closed by 4 months (data distillation). Expert data industry scaling to deca-billions. Genome argument rebuttal. Chinchilla limits: infinite params only ~10x data reduction. White collar automation thesis. → [[concepts/sample-efficiency]]
+|- **"The next big breakthrough will be AIs learning on the job" (Jun 2026)** — Most comprehensive essay on continual learning. Argues RLVR may not generalize from short to long horizon (citing Dario Amodei). Proposes OPSD (On-Policy Self-Distillation) as alternative — higher density gradient signals without outer-loop verifiable rewards. Introduces "dreaming" as 4th scaling axis (test-time training against self-built simulators). Analyzes computer use's grindability problem. KV cache (320KB/token) vs weight update (0.075 bits/token) — 35M× density difference. Vision: deployment experience becomes primary improvement mechanism by 2027. → [[concepts/continual-learning]]
 
 ## Core Ideas
 

@@ -12,6 +12,7 @@ tags:
   - safety
 sources:
   - raw/newsletters/2026-06-27-ainews-openai-gpt-5-6-sol-terra-luna-restricted-to-trusted-partners.md
+  - raw/articles/simonwillison.net--2026-jun-26-openai--6923f6c5.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -65,6 +66,16 @@ OpenAI claimed Sol is its strongest model yet for cybersecurity, improving the p
 
 Sol is above Claude Opus on output cost but far below Mythos. Terra and Luna push down the cost frontier.
 
+## Prompt Caching
+
+GPT-5.6 introduced several prompt caching improvements designed to make caching more predictable and cost-effective, particularly for agentic workloads that repeatedly call models with similar context:
+
+- **Explicit cache breakpoints**: Developers can now mark specific points in the prompt as cache breakpoints, giving fine-grained control over where the cache is invalidated. This enables more precise caching strategies for complex multi-turn agent interactions.
+- **30-minute minimum cache life**: A guaranteed minimum lifetime for cached prompts, ensuring that repeated calls within the same session reliably hit the cache rather than requiring cache warming on each call.
+- **Cache writes billed at 1.25× uncached input rate**: Writing to the cache incurs a 25% premium over the base input token price, reflecting the compute overhead of storing and indexing the prompt state.
+- **Cache reads continue at 90% discount**: Reading from the cache still receives the standard 90% discount on cached input tokens, making cache hits highly economical.
+- **Implications**: The combination of explicit breakpoints and a guaranteed minimum cache life makes prompt caching far more predictable for agentic workflows, where models cycle through structured reasoning steps with shared prefix context. This reduces both latency variance and cost uncertainty for production agent deployments.
+
 ## Government-Mediated Release
 This is the first time a U.S. government request has directly shaped a frontier AI model's release scope. Sam Altman stated OpenAI had originally planned a broader launch but shifted to limited preview due to the government request. Multiple commentators interpreted the move as evidence that frontier releases are becoming government-mediated, "trusted partner first" deployments.
 
@@ -85,3 +96,4 @@ This is the first time a U.S. government request has directly shaped a frontier 
 - OpenAI announcement via @OpenAI
 - METR evaluation via @METR_Evals
 - Pricing via @reach_vb, @scaling01
+- Simon Willison blog, "Previewing GPT‑5.6 Sol: a next-generation model": simonwillison.net/2026/Jun/26/openai/

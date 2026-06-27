@@ -6,7 +6,7 @@ aliases:
   - lifelong-learning-ai
   - incremental-learning
 created: 2026-04-27
-updated: 2026-05-29
+updated: 2026-06-27
 tags:
   - concept
   - ai-agents
@@ -80,6 +80,7 @@ Many of these have been criticized as "not even trying to solve the right proble
 - [Defining Continual Learning](../raw/articles/2041479655035679163_defining-continual-learning.md) (2026-04-24, @carnot_cyclist) — Principled definition of continual learning
 - [Improving Composer through Real-Time RL](../raw/articles/2026-04_cursor_real-time-rl-for-composer.md) (2026-04, Cursor) — Production real-time RL for coding agents
 - [Continual Learning with Prime Intellect: part 1](../raw/articles/2026-04-06_27upon2_continual-learning-prime-intellect.md) (2026-04-06, @27upon2) — Open-source continual learning CLI
+- [The Next Paradigm — AIs Learning on the Job](../raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md) (2026-06-26, Dwarkesh Patel) — RLVR generalization limits, OPSD, dreaming, and the 4th scaling axis
 
 ## Real-World Implementations
 
@@ -95,6 +96,38 @@ See: [[concepts/coding-agents/real-time-rl]], [cursor.com/blog/real-time-rl-for-
 
 See: [[entities/sriraam-27upon2]], [x.com/27upon2/status/2040975201068810670](https://x.com/27upon2/status/2040975201068810670)
 
+## Advanced Frameworks — Dwarkesh Patel (June 2026)
+
+Dwarkesh Patel's June 2026 essay ["The Next Paradigm — AIs Learning on the Job"](../raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md) extends the continual learning conversation with several novel frameworks for how AIs can improve from deployment experience.
+
+### RLVR Generalization Limits
+
+Dwarkesh argued that current RLVR (Reinforcement Learning from Verifiable Rewards) training may not generalize from short-horizon to long-horizon tasks. Citing Dario Amodei: *"There's the context length you train at and there's a context length that you serve at"* — short-horizon RL may not transfer to long-horizon real-world problems.
+
+The **grindability problem**: domains must be both verifiable AND parallelizable/replayable (like coding in containers). Domains requiring real-world interaction — business building, litigation, politics — cannot be recreated as deterministic simulators. You can't have 1,000 agents ordering from Amazon in parallel to collect training data.
+
+### On-Policy Self-Distillation (OPSD)
+
+OPSD addresses the sample efficiency problem without requiring outer-loop verifiable rewards. A teacher model (with session context accumulated during deployment) trains the base model by matching its per-token probability distribution. Advantages over RLVR:
+
+1. **No outer-loop reward needed** — no verifier required
+2. **Much denser supervision signal** — per-token probabilities vs a single reward per trajectory
+3. **Preserves RL's sparsity advantage over SFT** — does not force the model to memorize irrelevant session details
+
+See also [[entities/sasha-rush]]'s blackboard lecture on OPSD.
+
+### Dreaming as the 4th Scaling Axis
+
+"Dreaming" or test-time training proposes that AIs build simulations of reality to rehearse skills. Like EfficientZero playing dozens of simulated Atari games for each real step, future LLMs could generate RL environments to practice skills relevant to specific users. This would become a **fourth axis of scaling** alongside pretraining, RL, and inference-time compute. Instead of `/compact` (KV cache compression), users would hit `/dream` — consuming large compute but providing genuine weight updates from synthetic experience.
+
+### KV Cache vs Weight Update Density
+
+The fundamental tension: the KV cache in Llama 3 70B stores ~320KB per token, while training stores only ~0.075 bits per token — a ~35 million fold difference in information density. In-context learning (KV cache) is sample-efficient but does not scale with memory. Weight updates are dense but sample-inefficient. The gap requires architectural innovations for intermediate representations.
+
+### 2027 Vision
+
+Progression: RLVR → competent deployment agents → OPSD/dreaming distills session learnings back into weights → AIs improve from deployment experience, not just pre-release training. *"Every time you interact with AI, it'll be smarter — not only from your previous sessions but from all its interactions with all the other users."*
+
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Context for three-layer learning
@@ -102,3 +135,5 @@ See: [[entities/sriraam-27upon2]], [x.com/27upon2/status/2040975201068810670](ht
 - [[concepts/multi-agents/multi-agent-consensus-patterns]] — Continuous learning across multiple agents
 - [[concepts/coding-agents/real-time-rl]] — Production RL training paradigm
 - [[entities/sriraam-27upon2]] — Open-source continual learning implementation
+- [[entities/dwarkesh-patel]] — RLVR generalization limits, OPSD, dreaming framework
+- [[entities/sasha-rush]] — Blackboard lecture on OPSD

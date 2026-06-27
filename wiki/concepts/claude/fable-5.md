@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-06-14
+updated: 2026-06-27
 tags:
   - model
   - claude-fable-5
@@ -29,6 +29,7 @@ sources:
   - raw/articles/2026-06-10_jonready_claude-fable5-hidden-guardrails-sabotage.md
   - raw/articles/2026-06-11_simonwillison_claude-fable-relentlessly-proactive.md
   - raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md
+  - raw/articles/simonwillison.net--2026-jun-26-dean-w-ball--bd13fd7b.md
 ---
 
 # Claude Fable 5
@@ -294,6 +295,17 @@ This represents the first known case of a government forcing the complete withdr
 - **Government-lab relations**: The tension between Anthropic's stated belief in government oversight and the government's unilateral action without transparent process
 - **Precedent**: If narrow jailbreaks justify recalls, this standard could prevent any frontier model from remaining deployed
 - **Sovereignty risk reframing**: Engineers reframed the incident as a **sovereignty risk** rather than a pure policy/security story — closed frontier APIs can disappear overnight due to export controls beyond any single company's control. This reframing shifts the discussion from "what jailbreaks are possible" to "who controls access to frontier AI infrastructure" and aligns with [[concepts/open-vs-closed-model-gap]] arguments for model weight portability
+
+#### Economic Recoupment Impact (Dean W. Ball Analysis, June 2026)
+
+Dean W. Ball (Hyperdimensional) added a crucial economic dimension to the Fable 5 export control debate. His analysis focused on the **narrow recoupment window** for frontier models:
+
+- Frontier models recoup a significant fraction of their enormous training cost in the few months post-release when they are broadly available
+- After this period, models become "sub-frontier," competition emerges, and margins compress
+- Every week of government-mandated delay eats into this narrow recoupment window
+- The entire AI infrastructure buildout ($100B+ datacenters) assumes a **global total addressable market** for US AI services
+- "No one is building $100 billion dollar data centers to serve frontier models to whatever 100 companies the US government will allow access" — suggesting the export control regime undermines the economic rationale for the infrastructure it claims to protect
+- This analysis reframes the Fable 5 suspension from a pure safety/security story to an **economic sustainability** concern: if frontier models cannot recoup their costs due to government-mediated release schedules, the business model of frontier AI labs is threatened
 
 ## Early Customer Feedback
 
