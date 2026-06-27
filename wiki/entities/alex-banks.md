@@ -2,8 +2,10 @@
 title: "Alex Banks"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-20
+updated: 2026-06-27
 type: entity
+sources:
+  - raw/newsletters/2026-06-26-you-re-underestimating-ai-on-purpose.md
 ---
 
 
@@ -84,6 +86,12 @@ This philosophy underpins his approach to AI adoption: don't wait for the perfec
 Banks has been an early advocate for moving beyond one-off prompts to persistent, reusable AI capabilities. His work on Claude Skills — structured instruction sets that Claude reads automatically — represents his evolution from teaching prompt techniques to teaching system design.
 
 > "Prompts are instructions you give once. Skills are instructions that persist forever."
+
+### You're Underestimating AI on Purpose (Jun 2026)
+
+In a June 2026 essay, Banks explored the **AI Perception Paradox** — the tendency to stop noticing AI tools once they start working reliably. Drawing on Amara's Law and the AI Effect, he argues that the most impactful AI tools are those that have become so dependable they fade into the background of daily work. This perceptual bias — where capabilities that would have stopped you in your tracks two years ago now slip past without a second thought — creates a systematic underestimation of actual AI progress.
+
+Source: [The Signal — You're Underestimating AI on Purpose](https://open.substack.com/pub/thesignal/p/youre-underestimating-ai-on-purpose) (June 26, 2026)
 
 ### People Over Technology
 

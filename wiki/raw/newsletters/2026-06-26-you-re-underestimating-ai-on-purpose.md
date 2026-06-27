@@ -1,0 +1,74 @@
+---
+title: "You're Underestimating AI on Purpose"
+date: 2026-06-26
+processed_at: 2026-06-27T07:10:21.431607+00:00
+source_label: "uid=287"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-06-26
+
+**Subject:** You're Underestimating AI on Purpose
+**Collected:** 2026-06-27T07:10:21.431615+00:00
+**Articles linked:** 15
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGdGhlc2lnbmFsLnN1YnN0YWNrLmNvbSUyRnAlMkZ5b3VyZS11bmRlcmVzdGltYXRpbmctYWktb24tcHVycG9zZSIsInAiOjIwMzUzMDQ2MywicyI6MjkzMTU0LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODI0Nzk5NzUsImV4cCI6MjA5ODA1NTk3NSwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.pi_wHaPK0GPfwpJo_6GaQZZ_jre3_5OMzvGvmL0r498?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3AveW91cmUtdW5kZXJlc3RpbWF0aW5nLWFpLW9uLXB1cnBvc2U_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRE0xTXpBME5qTXNJbWxoZENJNk1UYzRNalEzT1RrM05Td2laWGh3SWpveE56ZzFNRGN4T1RjMUxDSnBjM01pT2lKd2RXSXRNamt6TVRVMElpd2ljM1ZpSWpvaWNHOXpkQzF5WldGamRHbHZiaUo5Lk9GRnRCMUxTTHVkblc0TWRrcFFIUWFzM2pxVW5oUmNpUVFqSjdiVFhDLW8iLCJwIjoyMDM1MzA0NjMsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyNDc5OTc1LCJleHAiOjIwOTgwNTU5NzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.RXlVU4MRIEJMVN3rttql4m7i5eEE3kbf8LMUguhJWhU?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=203530463&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1MzA0NjMsImlhdCI6MTc4MjQ3OTk3NSwiZXhwIjoxNzg1MDcxOTc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.OFFtB1LSLudnW4MdkpQHQas3jqUnhRciQQjJ7bTXC-o
+
+## 4. Link
+
+- **URL:** https://substack.com/@alexbanks
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=203530463&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1MzA0NjMsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgyNDc5OTc1LCJleHAiOjE3ODUwNzE5NzUsImlzcyI6InB1Yi0yOTMxNTQiLCJzdWIiOiJyZWFjdGlvbiJ9.97NR2iv5ErbhN3irknQeW9rXxkNXs1vBmFZoWqmjqes&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=203530463&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1MzA0NjMsImlhdCI6MTc4MjQ3OTk3NSwiZXhwIjoxNzg1MDcxOTc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.OFFtB1LSLudnW4MdkpQHQas3jqUnhRciQQjJ7bTXC-o&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=203530463&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1MzA0NjMsImlhdCI6MTc4MjQ3OTk3NSwiZXhwIjoxNzg1MDcxOTc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.OFFtB1LSLudnW4MdkpQHQas3jqUnhRciQQjJ7bTXC-o
+
+## 8. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvdGhlc2lnbmFsL3AveW91cmUtdW5kZXJlc3RpbWF0aW5nLWFpLW9uLXB1cnBvc2U_dXRtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRE0xTXpBME5qTXNJbWxoZENJNk1UYzRNalEzT1RrM05Td2laWGh3SWpveE56ZzFNRGN4T1RjMUxDSnBjM01pT2lKd2RXSXRNamt6TVRVMElpd2ljM1ZpSWpvaWNHOXpkQzF5WldGamRHbHZiaUo5Lk9GRnRCMUxTTHVkblc0TWRrcFFIUWFzM2pxVW5oUmNpUVFqSjdiVFhDLW8iLCJwIjoyMDM1MzA0NjMsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyNDc5OTc1LCJleHAiOjIwOTgwNTU5NzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.A7r6SZJBicHyG2D8ec2GWkg5mqzVLupkrTkuyqk2UGE?&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/thesignal/p/youre-underestimating-ai-on-purpose?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/7f8e9f95-0092-4f34-8c17-5df74b7325d7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/6fe8d9df-c9a0-41cd-a71a-5aec8bfd5692?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/b9a93a0a-eed2-4f9b-8a1c-d6853e632e67?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZ0aGVzaWduYWwuc3Vic3RhY2suY29tJTJGcCUyRnlvdXJlLXVuZGVyZXN0aW1hdGluZy1haS1vbi1wdXJwb3NlJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RJME56azVOelVzSW1WNGNDSTZNVGM0TlRBM01UazNOU3dpYVhOeklqb2ljSFZpTFRJNU16RTFOQ0lzSW5OMVlpSTZJbU5vWldOcmIzVjBJbjAuSzlxZlVFX05lOWVGa05wcmNrUDlLajB3X3B3OVZOMGVLMWNRbk5tLU5iRSIsInAiOjIwMzUzMDQ2MywicyI6MjkzMTU0LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODI0Nzk5NzUsImV4cCI6MjA5ODA1NTk3NSwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.-80kei-XYDvCqmrvS46z5WqJ6Klo2RLodmY55ioYDb8?simple=true&utm_source=paywall&utm_medium=email&utm_content=203530463&next=https://thesignal.substack.com/p/youre-underestimating-ai-on-purpose
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRE0xTXpBME5qTXNJbWxoZENJNk1UYzRNalEzT1RrM05Td2laWGh3SWpveE9ERTBNREUxT1RjMUxDSnBjM01pT2lKd2RXSXRNamt6TVRVMElpd2ljM1ZpSWpvaVpHbHpZV0pzWlY5bGJXRnBiQ0o5LjVYR3lDNTVQYnkyM2JhWjFSNnhMcmVqVXhhamhBakRGRXZZRzBtc2NKZDAiLCJwIjoyMDM1MzA0NjMsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyNDc5OTc1LCJleHAiOjIwOTgwNTU5NzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.v4yaABucoz6YU6uqfu7PzaA4wpZIYAmvSHC2VHYlWqQ?
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDM1MzA0NjMsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyNDc5OTc1LCJleHAiOjIwOTgwNTU5NzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.Avh76mx97kXUY2R6t95rpkpfVv8FuoeHrdKfmzcQ8Fo?
+

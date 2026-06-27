@@ -1,0 +1,120 @@
+{
+  "run_id": "20260627T071025Z",
+  "triaged_at": "2026-06-27T07:10:25Z",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletter_count": 4,
+  "items": [
+    {
+      "uid": "289",
+      "message_id": "<20260627052322.3.ecd8d27bb31e5003@mg-d0.substack.com>",
+      "subject": "[AINews] OpenAI GPT-5.6 Sol / Terra / Luna — restricted to trusted partners",
+      "date": "2026-06-27",
+      "source": "swyx AINews (Substack publication_id=1084089)",
+      "author": "swyx",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-27-ainews-openai-gpt-5-6-sol-terra-luna-restricted-to-trusted-partners.md",
+      "classification": "critical",
+      "wiki_relevance": 5,
+      "reasons": [
+        "Major OpenAI model release: GPT-5.6 family with three sub-models (Sol, Terra, Luna)",
+        "Access restricted to trusted partners — signals a shift in model distribution strategy",
+        "Directly relevant to [[openai]] entity page and [[gpt-5]] concept page",
+        "Named model family (Sol/Terra/Luna) suggests tiered capability architecture",
+        "Source: swyx AINews — curated AI industry digest, high signal-to-noise"
+      ],
+      "suggested_wiki_actions": [
+        "Create/update event page: GPT-5.6 restricted release",
+        "Update entity: [[openai]] — model family naming, access policy",
+        "Create concept: model access tiers / trusted partner programs",
+        "Cross-reference with existing GPT model lineage pages"
+      ],
+      "key_urls": [
+        "https://open.substack.com/pub/swyx/p/ainews-openai-gpt-56-sol-terra-luna"
+      ]
+    },
+    {
+      "uid": "288",
+      "message_id": "<20260626.162300.15ea5131@mta5>",
+      "subject": "🏛️ Washington Says No To GPT-5.6 release",
+      "date": "2026-06-26",
+      "source": "beehiiv newsletter",
+      "author": "unknown (beehiiv newsletter)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-26-washington-says-no-to-gpt-5-6-release.md",
+      "classification": "critical",
+      "wiki_relevance": 5,
+      "reasons": [
+        "Government/regulatory intervention blocking OpenAI model release — unprecedented AI policy event",
+        "Directly relevant to [[ai-regulation]] and [[ai-safety]] concepts",
+        "Complements the swyx AINews piece on GPT-5.6 restrictions — same event, policy angle",
+        "Suggests formal government action against a specific model release",
+        "All 20 links are beehiiv tracked — actual article URLs need resolution"
+      ],
+      "suggested_wiki_actions": [
+        "Create event page: US government blocks GPT-5.6 release",
+        "Update concept: [[ai-regulation]] — first known government block of specific model",
+        "Cross-reference with GPT-5.6 release event from uid=289",
+        "Identify which government body/executive action was involved"
+      ],
+      "key_urls": []
+    },
+    {
+      "uid": "287",
+      "message_id": "<20260626130418.3.815450ad49dd3002@mg-d1.substack.com>",
+      "subject": "You're Underestimating AI on Purpose",
+      "date": "2026-06-26",
+      "source": "The Signal (Substack publication_id=293154)",
+      "author": "Alex Banks (@alexbanks)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-26-you-re-underestimating-ai-on-purpose.md",
+      "classification": "high",
+      "wiki_relevance": 4,
+      "reasons": [
+        "AI perception/awareness commentary — relevant to AI adoption and public understanding",
+        "From The Signal newsletter — known AI/tech analysis publication",
+        "Potentially addresses AI capability gaps, safety narratives, or strategic underestimation",
+        "Relevant to [[ai-risk-perception]] or [[ai-hype-cycle]] concepts if they exist"
+      ],
+      "suggested_wiki_actions": [
+        "Scrape and read full article to assess content depth",
+        "Update or create concept page on AI perception/underestimation narratives",
+        "Consider as source for entity page on Alex Banks if content is substantive"
+      ],
+      "key_urls": [
+        "https://open.substack.com/pub/thesignal/p/youre-underestimating-ai-on-purpose"
+      ]
+    },
+    {
+      "uid": "286",
+      "message_id": "<20260626114518.3.30b69b58996785a7@mg-d0.substack.com>",
+      "subject": "What Should Be Done",
+      "date": "2026-06-26",
+      "source": "Hyperdimensional (Substack publication_id=2244049)",
+      "author": "Dean W. Ball (@deanwball)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-26-what-should-be-done.md",
+      "classification": "high",
+      "wiki_relevance": 3,
+      "reasons": [
+        "Dean W. Ball is a known AI policy commentator (likely at a think tank)",
+        "Subject 'What Should Be Done' suggests policy recommendation piece",
+        "From Hyperdimensional — a known tech/policy Substack",
+        "May discuss AI governance, regulation, or strategic response — context-dependent on GPT-5.6 news",
+        "Could be complementary to the GPT-5.6 policy restriction story"
+      ],
+      "suggested_wiki_actions": [
+        "Scrape and read full article to assess substance",
+        "Consider for entity page on Dean W. Ball if not already covered",
+        "Cross-reference with GPT-5.6 event if relevant"
+      ],
+      "key_urls": [
+        "https://open.substack.com/pub/hyperdimensional/p/what-should-be-done"
+      ]
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 2,
+    "low": 0,
+    "total": 4,
+    "top_story": "OpenAI GPT-5.6 (Sol/Terra/Luna) restricted to trusted partners — with US government blocking the public release",
+    "related_topics": ["openai", "gpt-5.6", "ai-regulation", "model-access-policy", "ai-safety"],
+    "notes": "Two newsletters (uid=288 and uid=289) cover the same breaking story from different angles: regulatory (Washington blocks) and product (OpenAI restricts to trusted partners). These should be merged into a single event page. The GPT-5.6 model family naming (Sol/Terra/Luna) is noteworthy for model architecture tracking. Links from beehiiv (uid=288) are all tracked redirects — no raw URLs extractable without following redirects."
+  }
+}

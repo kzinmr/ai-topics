@@ -4,6 +4,8 @@
 
 ## Entities (Updated)
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
+- [[entities/dean-ball]] — Dean W. Ball; enriched with "What Should Be Done" — analysis of EO on Cyber and AI as de facto licensing regime, IVO proposal for frontier model governance, Obernolte-Trahan Great American AI Act endorsement (June 27)
+- [[entities/alex-banks]] — Alex Banks; enriched with "You're Underestimating AI on Purpose" — AI Perception Paradox, Amara's Law, the AI Effect and systematic underestimation of AI progress (June 27)
 - [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
@@ -92,6 +94,7 @@
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
 - [[concepts/gemini-computer-use]] — Gemini Computer Use (Android) — Philipp Schmid's Android-specific implementation guide: screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script, relationship to Claude and OpenAI computer use approaches (June 25)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
+- [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family with government-mediated restricted preview; METR cheating finding, PostTrainBench-Lite, Terminal-Bench 2.1, pricing/positioning (June 27)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
 - [[concepts/kv-aware-routing]] — KV-Aware Routing — Request routing strategy for LLM inference serving that assigns requests based on KV cache state overlap. Implemented in NVIDIA Dynamo, Mooncake, vLLM (June 24)
 - [[concepts/llm-cost-crisis]] — LLM Cost Crisis / Tokenpocalypse — spiraling inference costs from premium models, agent multiplicative consumption, and organizational proliferation
@@ -137,3 +140,7 @@
 - [[comparisons/harness-backend-routing]] — Harness Backend Routing — OpenClaw vs Hermes vs Codex App Server vs Devin Desktop
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison
+
+## Events
+
+- [[events/2026-06-27-openai-gpt-5-6-sol]] — OpenAI GPT-5.6 Sol Restricted Preview — first U.S. government-mediated frontier model release; limited to ~20 trusted partners at government request (June 27)

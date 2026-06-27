@@ -1,10 +1,10 @@
 ---
 title: "Dean W. Ball"
 created: 2026-05-05
-updated: 2026-06-19
+updated: 2026-06-27
 type: entity
 tags: [person, governance, safety, policy, blogger]
-sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md, raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md, raw/articles/2026-06-16_dean-ball_leviathan-waking.md, raw/newsletters/2026-06-18-that-untravell-d-world.md]
+sources: [raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md, raw/newsletters/2026-05-28-a-cascade-of-conscientiousness.md, raw/articles/2026-06-16_dean-ball_leviathan-waking.md, raw/newsletters/2026-06-18-that-untravell-d-world.md, raw/newsletters/2026-06-26-what-should-be-done.md]
 ---
 
 # Dean W. Ball
@@ -100,6 +100,28 @@ This move represents a transition from external policy analysis (Hyperdimensiona
 \
 Source: [Hyperdimensional — That Untravell'd World](https://open.substack.com/pub/hyperdimensional/p/that-untravelld-world) (June 18, 2026)
 
+### What Should Be Done (Jun 2026)
+
+Ball's most comprehensive policy analysis following the GPT-5.6 restricted preview, published on June 26, 2026. This 35-point essay outlines the regulatory landscape and proposes a path forward:
+
+- **EO as De Facto Licensing**: Trump's Executive Order on Cyber and AI, despite claiming to establish a "voluntary" testing program, has created a de facto involuntary licensing/preapproval regime for frontier models. Ball argues this analysis has proven correct with the GPT-5.6 restricted preview.
+- **The Knowledge Gap**: The administration itself does not know what safety standards or requirements a company must satisfy for release approval — there is no published safety standard or specification.
+- **Default Denial**: Without a safety standard, every time a lab asks to release a frontier model, the government's answer will be "no." This creates indefinite uncertainty.
+- **Industry Damage**: Frontier models recoup cost in the few post-release months they are broadly available. Extended licensing delays could collapse the investment case for $100B+ data center builds.
+- **Safety Through Deployment**: The only way to figure out "what good looks like" in AI safety is real-world experience. You cannot purely think your way to safety.
+- **Diffusion Argument**: Drawing on Jeffrey Ding's scholarship, Ball argues bad AI futures are more likely if only a narrow subset of actors have frontier access.
+- **Proposed Solution — Independent Verification Organizations (IVOs)**: Building on his earlier concept (see Key Ideas above), Ball proposes private-sector auditing bodies that would:
+  - Audit frontier labs for adherence to their own safety and security frameworks
+  - Operate outside government pay scales to attract extreme technical expertise
+  - Innovate in audit methodology for fast-moving AI development
+  - Gain international buy-in to reduce regulatory burden fragmentation
+- **Government Role**: Certify/license the auditors (like accounting licenses); use carrot (safe harbor from liability) or stick (mandatory certification for market participation)
+- **Lab-Focused Regulation**: Ball argues regulating frontier labs as entities is preferable to regulating individual models, because models are hard to define ("just assemblages of floating-point numbers"), algorithmic efficiency makes capability thresholds unstable, and internal deployments matter as much as public releases.
+- **Obernolte-Trahan Great American AI Act**: Ball endorses this legislative proposal as the best starting point for establishing the IVO ecosystem, alongside organizations already emerging (Frontier Model Forum, AVERI, METR, Apollo Research, Fathom).
+- **Conclusion**: Ball expresses cautious optimism that momentum across the safety community, labs, Congress, and at least recognition within the administration creates a viable path forward within 6–18 months.
+
+Source: [Hyperdimensional — What Should Be Done](https://open.substack.com/pub/hyperdimensional/p/what-should-be-done) (June 26, 2026)
+
 ## Related
 
 - [[entities/anthropic]] — Mythos model developer
@@ -107,6 +129,7 @@ Source: [Hyperdimensional — That Untravell'd World](https://open.substack.com/
 - [[entities/jack-clark]] — Anthropic policy lead, parallel AI governance voice
 - [[concepts/recursive-self-improvement]] — Related capability trajectory concerns
 - [[concepts/mythos-model]] — The model that triggered Ball's analysis
+- [[concepts/gpt/gpt-5-6]] — The model whose restricted preview triggered this analysis
 
 ## Links
 
