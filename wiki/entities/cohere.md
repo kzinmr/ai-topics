@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-06-18
+updated: 2026-06-27
 tags:
   - company
   - model
@@ -20,6 +20,8 @@ sources:
   - https://huggingface.co/blog/CohereLabs/introducing-north-mini-code
   - https://x.com/cohere/status/2064378058329526556
   - raw/articles/2026-06-18_cohere_serving-fairness.md
+  - raw/articles/2026-06-26_cohere_automating-fork-maintenance-with-ai-agents.md
+  - raw/articles/2026-06-26_cohere_cohere-security-ai-agent-north-wiz.md
 ---
 
 # Cohere
@@ -107,6 +109,16 @@ These MOUs extend Cohere's sovereign AI strategy beyond acquisitions (Reliant AI
 
 Cohere's platform centers on three model families: Command for text generation and chat, Embed for vector embeddings and semantic retrieval, and Rerank for search quality improvement. The North platform brings AI productivity into the workplace. Aya is an open multilingual research initiative covering 70+ languages. Cohere emphasizes deployment flexibility including private cloud and on-premise.
 
+### AI Agent Fork Maintenance (June 2026)
+
+Cohere published a blog post describing their AI agent system for automating vLLM fork maintenance. The system uses a **control theory framework**: the reference signal (upstream commits) → disturbance (breaking changes) → controller (AI agent) → feedback (test suite). This compressed upstream release absorption from weeks to days.
+
+Five skills were open-sourced at [`cohere-ai/vllm-skills`](https://github.com/cohere-ai/vllm-skills): `install-vllm`, `local-test-runner`, `detect-upstream-base`, `rebase-assistant`, and `auto-rebase`. Skills are markdown documents that coding agents read and execute interactively.
+
+In a concrete case, the vLLM v0.19.1 release broke the Cohere Transcribe ASR model (WER=100%); the agent diagnosed a transformers version issue and restored WER to ~11.92. The fix was upstreamed as [vLLM PR #40582](https://github.com/vllm-project/vllm/pull/40582). The approach was also applied to the HuggingFace [[concepts/transformers]] fork for Command A+ pre-release testing.
+
+[[concepts/ai-agents]] | [[concepts/control-theory]] | [[concepts/fork-maintenance]]
+
 ## MCP Guide (May 2026)
 
 Cohere published a comprehensive **[What Is Model Context Protocol (MCP)](https://cohere.com/blog/guide-to-mcp)** guide positioning itself as the enterprise authority on MCP adoption. Key points:
@@ -121,6 +133,22 @@ Cohere published a comprehensive **[What Is Model Context Protocol (MCP)](https:
 The guide reinforces Cohere's North platform positioning: "North helps organizations bring agents, tools, permissions, and monitoring into one governed workspace, including RBAC and tool usage visibility."
 
 [[concepts/mcp]] | [[concepts/agent-tooling]] | [[concepts/enterprise-ai]]
+
+### Security Agent with North and Wiz (June 2026)
+
+Cohere built a security agent by connecting **North** (their agent platform) to **Wiz** (cloud security) via a custom MCP server. The architecture follows: North → Custom MCP server → Wiz GraphQL API. Authentication uses a shared secret between North and the MCP server, with OAuth2 client credentials for Wiz.
+
+The MCP server exposes **8 tools**: `wiz_list_issues`, `wiz_get_issue_details`, `wiz_list_toxic_combinations`, `wiz_search_vulnerabilities`, `wiz_get_security_posture`, `wiz_query_assets`, `wiz_get_compliance_status`, and `wiz_update_issue`.
+
+Three use cases showcase the system:
+
+1. **Toxic combination blast radius analysis** — completes in ~20 seconds versus half a morning manually
+2. **Assisted incident response** — drafts full incident response reports, creates Linear tickets, and updates Wiz statuses automatically
+3. **Autonomous weekly posture brief** — automatically generated report every Monday at 3am
+
+The implementation is open-sourced at [`cohere-ai/cohere-security-toolkit`](https://github.com/cohere-ai/cohere-security-toolkit).
+
+[[concepts/mcp]] | [[concepts/ai-agents]] | [[concepts/security-automation]] | [[tools/wiz]]
 
 ## co/plot: Research Visualization Tool (June 2026)
 

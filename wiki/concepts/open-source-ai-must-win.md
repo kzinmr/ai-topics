@@ -1,7 +1,7 @@
 ---
 title: "Open-Source AI Must Win"
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-27
 type: concept
 tags:
   - open-source
@@ -11,7 +11,7 @@ tags:
   - policy
   - controversy
   - agent-safety
-sources: [raw/articles/2026-06-13_opensourceaimustwin-manifesto.md]
+sources: [raw/articles/2026-06-13_opensourceaimustwin-manifesto.md, raw/articles/anildash.com--2026-06-23-fight-ai-platform-war--1a272a96.md]
 ---
 
 # Open-Source AI Must Win
@@ -111,6 +111,21 @@ The HN thread surfaced several recurring themes:
 ### Broader Reception
 
 The manifesto was widely shared on X/Twitter and LinkedIn, particularly among AI researchers, startup founders, and policy advocates. It benefited from the coincidence of the Anthropic export control news, which gave the argument immediate concrete stakes.
+
+### Related: Anil Dash's Platform War Strategy (June 2026)
+
+On June 23, 2026, Anil Dash published ["How we'll fight the platform war against Big AI"](https://anildash.com/) — a practical playbook that complements the manifesto by answering the "how" question the manifesto left open. Dash argues that Big AI companies are vulnerable, but the window for changing the AI world is closing rapidly.
+
+Dash proposes four proven tactics:
+
+1. **Disintermediate** — Push all AI usage through open tools/harnesses not controlled by Big AI. *Status: Good*
+2. **Enable model switching** — Seamless, automatic switching between AI providers to prevent lock-in. *Status: Good*
+3. **Commoditize with open weights** — Follow the "frontier minus six months" pattern; free tools cost only server time. *Status: Okay*
+4. **Channel consumer anger** — Build tools that respect and respond to public AI criticism. *Status: Tough*
+
+Dash's key insight: "none of this is inevitable" — but fighting inevitability requires an exciting, human, powerful alternative, not just saying no. He draws on Joel Spolsky's Strategy Letter V (commoditize your complements), How Microsoft Lost the API War, and Fire and Motion.
+
+Where the manifesto declares *what* must happen, Dash provides the tactical *how*. The four tactics — disintermediation, model switching, commoditization of open weights, and channeling consumer anger — offer concrete steps for the community to build the exciting, human, powerful alternative Dash argues is necessary to win the platform war against Big AI.
 
 ## Related Pages
 

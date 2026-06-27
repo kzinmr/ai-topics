@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-06-25
+updated: 2026-06-27
 tags:
   - entity
   - company
@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-06-12_fireworks-ai_inference-providers-vs-api-routers.md
   - raw/articles/2026-06-25_fireworks-ai_frontier-lab-training-infrastructure-as-a-service.md
   - raw/articles/2026-06-25_fireworks-ai_frontier-open-source-worker-with-closed-source-advisor.md
+  - raw/articles/2026-06-27_fireworks-ai_Cursor-Composer-2.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -94,6 +95,34 @@ By May 2026, Fireworks AI had reached **decacorn status** ($10B+ valuation), joi
 
 The case study also includes comparisons to [[entities/cerebras-systems]] and [[entities/openrouter]] for enterprise inference workloads, positioning Fireworks as competitive across both throughput and cost dimensions.
 
+### Cursor Composer 2 Partnership (June 2026)
+
+**[[entities/cursor-3]]** built **Composer 2** based on **Kimi 2.5**, optimized for software engineering inside Cursor. Fireworks provides the distributed RL inference infrastructure that makes these RL loops practical — Cursor runs RL across 3-4 distributed global clusters unified through Fireworks infrastructure.
+
+**Key infrastructure capabilities:**
+
+- **Cross-region model updates** with ~98%+ optimization in transfer size and minutes-level sync staleness
+- **Stable rollout fleets** for large Mixture-of-Experts (MoE) models
+- **Compressed weight synchronization** instead of full model transfers
+- **Production inference reused during training** to accelerate RL runs
+
+**Benchmark results:**
+
+| Benchmark | Score |
+|-----------|-------|
+| CursorBench | 61.3 |
+| Terminal-Bench | 61.7 |
+| SWE-bench Multilingual | 73.7 |
+
+**Cost efficiency:** 6-10× lower inference cost compared to comparable frontier models.
+
+> *"We have finite engineers like everybody else. We would prefer to have engineers make training more efficient and more precise rather than spin up an inference effort."*
+> — Federico Cassano (Research Lead, Cursor)
+
+This partnership builds on an earlier Fireworks × Cursor collaboration and validates a broader shift: frontier coding performance is increasingly a function of **RL systems**, not just model scale. Cursor combined continual pre-training with large-scale RL and production feedback, with Fireworks providing the critical distributed infrastructure layer.
+
+**Source:** [[raw/articles/2026-06-27_fireworks-ai_Cursor-Composer-2]]
+
 ## Coding Benchmarks & Model Comparison (March 2026)
 
 Fireworks publishes a comprehensive **coding LLM benchmark roundup** comparing 11 models across the AA Coding Index, SWE-Bench Verified, pricing ($/1M tokens), and licensing. This establishes Fireworks as a benchmark aggregator alongside model provider.
@@ -137,7 +166,7 @@ Fireworks emphasizes **MIT-licensed open-weight models** (DeepSeek V4-Pro, V4-Fl
 - [[entities/together-ai]] — Peer in open-weight inference platform space
 - [[entities/anyscale]] — Peer in scalable AI inference
 - [[entities/modal-labs]] — Peer in serverless AI infrastructure
-- [[entities/cursor-3]] — Major customer; uses Fireworks inference for code completion
+- [[entities/cursor-3]] — Major customer; uses Fireworks inference for code completion; Composer 2 RL partnership (June 2026)
 - [[entities/perplexity]] — Major customer; uses Fireworks for conversational AI search
 - [[entities/meta]] — Co-founders' former employer; PyTorch lineage
 - [[entities/amd]] — Hardware partner alongside NVIDIA for multi-vendor GPU strategy

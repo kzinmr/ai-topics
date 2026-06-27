@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-06-23
+updated: 2026-06-27
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -11,6 +11,7 @@ sources:
   - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
   - raw/articles/2026-05-23_warp_bring-your-own-inference-to-warp.md
   - raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
+  - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
 ---
 
 # Warp Terminal
@@ -161,6 +162,33 @@ This positions Warp between Hermes (fully autonomous self-authoring) and OpenCla
 ### Developer Role Shift
 
 The loop shifts the developer's role from **instruction author** to **skill reviewer**: write minimal skill definitions upfront, let execution fill in gaps, review proposed changes as they accumulate.
+
+### Factory Engineering Shift (June 2026)
+
+In a June 18, 2026 internal memo, Warp CEO Zach Lloyd declared a fundamental shift in how the company approaches software development: **"We are now factory engineers, not product engineers."** The memo outlines a transition from product engineering to building a cloud software factory.
+
+**Core Principles**:
+
+- **Factory efficiency** = shipped product / (inference cost + human time cost). Success is measured by the percentage of changes shipped automatically and at what cost — NOT by features shipped.
+- Companies will eventually treat software production as **COGS (variable cost)**, not an R&D expense.
+- **Automation mandate**: every engineer must approach everything automation-first; using interactive agents is framed as a failure to learn from.
+
+**The Factory Workflow**:
+
+```
+Triage agent → Spec agent → Implementation agent → Code review agent → Verification agent → CI/CD → Ship → Monitor agent
+```
+
+- **Oz** records human interventions, and self-improvement agents learn from them.
+- The primary job of engineers is to **ensure the factory workflow runs smoothly**; Oz provides the best experience for this.
+- The ultimate goal is **recursive self-improvement** — the golden path where the factory optimizes itself.
+
+**Industry Context**:
+
+- The era of unlimited token budgets for interactive agents is ending.
+- The future is **ROI-driven automation** — token spend must justify itself in terms of factory efficiency.
+
+This shift embodies [[concepts/agentic-engineering]] applied at the organizational level, treating the entire engineering org as an [[concepts/agent-team-swarm]] with Oz as the orchestration layer. The factory model also relates to [[concepts/harness-engineering]], where Oz provides the multi-harness control plane for this automated pipeline.
 
 ## Strategic Context
 

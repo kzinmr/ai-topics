@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-06-06
+updated: 2026-06-27
 tags:
   - company
   - search
@@ -20,6 +20,7 @@ sources:
   - "[[raw/articles/2026-06-03_glean_token-yield-architecture]]"
   - raw/articles/2026-06-04_glean_introducing-glean-mcp-gateway.md
   - raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-more-than-code-completion.md
+  - raw/articles/2026-06-22_glean_what-is-no-code-automation.md
 |---
 
 # Glean
@@ -137,6 +138,12 @@ Source: raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-mo
 Glean Assistant gained the ability to **query Snowflake data warehouses directly via natural language**, bridging enterprise search with structured data analytics. Users can ask questions about sales, customer, or operational data stored in Snowflake without SQL knowledge. The integration follows Glean's enterprise context layer pattern — Snowflake tables and views are indexed through the Enterprise Graph, enabling cross-source queries that combine documents, chat logs, and database records in a single interaction.
 
 Source: raw/articles/2026-06-03_glean_query-snowflake-data-in-glean-assistant.md
+
+### No-Code Automation Guide (June 2026)
+
+Glean published a no-code automation guide positioning **Agent Builder** and the **Agent Library** (500+ pre-built agents) as enabling business users to build AI-powered workflows without coding. Authored by **Trevor Gile** (Agentic systems solutions architect), the guide compares no-code, low-code, and traditional development approaches, highlighting Glean's visual workflow builder, triggers, actions, conditional logic, and enterprise governance controls as key differentiators.
+
+Source: raw/articles/2026-06-22_glean_what-is-no-code-automation.md
 
 ## Related
 

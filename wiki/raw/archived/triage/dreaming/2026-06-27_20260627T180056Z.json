@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-06-27T18:24:39.519251+00:00",
+  "triage_run_id": "20260627T180056Z",
+  "source": "dreaming",
+  "summary_ja": "パイプライン飽和シナリオ（Takes=0）。blog-triage（5 takes）・newsletter-triage（3 takes）・既存Wiki（26/30カバー済み）で高価値記事は処理済み。残りは8件のentity enrichment reference（Cohere fork管理、Warp factory engineering、Modal推測デコーディング、Cloudflare一時アカウント等）と大量のskip（非AI・SEO記事・既カバー）。raw/articles/に207件の直近記事を確認。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-non-ai-content",
+      "source": "dreaming",
+      "source_name": "mixed",
+      "title": "Batch skip: 46 articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 非AIコンテンツ（一般テック、数学、Apple、政治、哲学、天文学、レトロコンピューティング等）。AI/LLM/エージェント技術と直接関係なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(46件バッチスキップ)"
+    },
+    {
+      "item_id": "dreaming-skip-blog-triage-covered",
+      "source": "dreaming",
+      "source_name": "blog-triage",
+      "title": "Batch skip: 20 articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ blog-triageパイプラインで既に判定済み（take/reference/skip）。同一記事の重複判定を回避。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(20件バッチスキップ)"
+    },
+    {
+      "item_id": "dreaming-skip-newsletter-triage-covered",
+      "source": "dreaming",
+      "source_name": "newsletter-triage",
+      "title": "Batch skip: 1 articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ newsletter-triageパイプラインで既に判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(1件バッチスキップ)"
+    },
+    {
+      "item_id": "dreaming-skip-seo-blogs",
+      "source": "dreaming",
+      "source_name": "sitemap-monitor",
+      "title": "Batch skip: 30 articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 企業ブログSEOコンテンツ（Harvey, ElevenLabs, Hex, Glean, Decagon, Cohere, Anyscale）。sitemap-monitorパイプラインが処理。個別Wikiページ作成価値低。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(30件バッチスキップ)"
+    },
+    {
+      "item_id": "dreaming-skip-already-covered-by-wiki",
+      "source": "dreaming",
+      "source_name": "wiki",
+      "title": "Batch skip: 32 articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 既存Wikiページで詳細カバー済み。concepts/、entities/、events/の各ページに具体的な主張・データが反映済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(32件バッチスキップ)"
+    },
+    {
+      "item_id": "dreaming-skip-low-value-ai",
+      "source": "dreaming",
+      "source_name": "mixed",
+      "title": "Batch skip: 28 articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 低Wiki価値：既存ページのenrichmentに留まる、薄い記事、中国語チュートリアル、ニッツツール、パッケージ管理非AI話題、企業SEO記事、動画文字起し等。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(28件バッチスキップ)"
+    }
+  ]
+}
