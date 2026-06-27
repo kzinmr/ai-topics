@@ -18,18 +18,17 @@
 - Blogwatcher DB: 24 AI-relevant articles in last 3 days (50 total); most already triaged by blog-wiki-ingest
 - Topics skipped (already covered): GPT-5.6 Sol, Mythos, GLM-5.2, Claude Tag, Gemini 3.5 Flash CU, OpenAI Daybreak, OpenAI Jalapeño, agentic engineering/harness patterns
 
-|
-|## [2026-06-27] — Blog wiki ingest: 5 enrichments
-|
-|### Enriched
-|- **[[concepts/ai-economics]]** — Added Inference Economics section: A100 cost breakdown ($1/MTok), 70-80% gross margins, DeepSeek validation, inference-subsidizes-training thesis. Source: Sean Goedecke (seangoedecke.com) Jun 26.
-|- **[[concepts/gpt/gpt-5-6]]** — Added Prompt Caching features: explicit cache breakpoints, 30-min minimum cache life, 1.25x cache write billing, 90% cache read discount. Source: OpenAI via Simon Willison Jun 26.
-|- **[[concepts/claude/fable-5]]** — Added Economic Recoupment Impact (Dean W. Ball): narrow post-release recoupment window, $100B+ datacenter buildout vs 100-company market. Source: Simon Willison quoting Dean W. Ball Jun 26.
-|- **[[entities/simon-willison]]** — Added hackmyclaw.com Prompt Injection Challenge: Fernando Irarrázaval's 6,000-attempt challenge, 0 injection successes, Opus 4.6 Anti-Prompt-Injection Rules. Source: simonwillison.net Jun 26.
-|- **[[concepts/continual-learning]]** — Added Advanced Frameworks (Dwarkesh Patel): RLVR generalization limits (Dario Amodei short→long horizon gap), OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision. Source: dwarkesh.com Jun 26.
-|- **[[entities/dwarkesh-patel]]** — Added "The next big breakthrough" to career timeline and blog posts: RLVR limits, OPSD, dreaming, computer use grindability. Source: dwarkesh.com Jun 26.
-|
+---
+## [2026-06-27] — Blog wiki ingest: 5 enrichments
+### Enriched
+- **[[concepts/ai-economics]]** — Added Inference Economics section: A100 cost breakdown ($1/MTok), 70-80% gross margins, DeepSeek validation, inference-subsidizes-training thesis. Source: Sean Goedecke (seangoedecke.com) Jun 26.
+- **[[concepts/gpt/gpt-5-6]]** — Added Prompt Caching features: explicit cache breakpoints, 30-min minimum cache life, 1.25x cache write billing, 90% cache read discount. Source: OpenAI via Simon Willison Jun 26.
+- **[[concepts/claude/fable-5]]** — Added Economic Recoupment Impact (Dean W. Ball): narrow post-release recoupment window, $100B+ datacenter buildout vs 100-company market. Source: Simon Willison quoting Dean W. Ball Jun 26.
+- **[[entities/simon-willison]]** — Added hackmyclaw.com Prompt Injection Challenge: Fernando Irarrázaval's 6,000-attempt challenge, 0 injection successes, Opus 4.6 Anti-Prompt-Injection Rules. Source: simonwillison.net Jun 26.
+- **[[concepts/continual-learning]]** — Added Advanced Frameworks (Dwarkesh Patel): RLVR generalization limits (Dario Amodei short→long horizon gap), OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision. Source: dwarkesh.com Jun 26.
+- **[[entities/dwarkesh-patel]]** — Added "The next big breakthrough" to career timeline and blog posts: RLVR limits, OPSD, dreaming, computer use grindability. Source: dwarkesh.com Jun 26.
 
+---
 ## [2026-06-27] — Newsletter wiki ingest: GPT-5.6 pages + entity enrichment
 
 ### Created
@@ -41,6 +40,7 @@
 - **[[entities/alex-banks]]** — Added "You're Underestimating AI on Purpose (Jun 2026)" — AI Perception Paradox, Amara's Law, systematic underestimation of AI progress. Source: The Signal Jun 26.
 
 
+---
 ## [2026-06-26] — Active Crawl: 3 new concept pages + 1 entity enrichment
 
 ### Created
@@ -61,6 +61,7 @@
 - X/Twitter: 30 Core Agentic Engineering Concepts (1570 bookmarks), Loop Engineering = Software Engineering (442 bookmarks), Kareem Carr on AI's uneven effectiveness
 - Wiki gaps filled: AI Gateway (FULL), Agent Integration Platforms (FULL), LLM Cost Crisis (PARTIAL→NEW)
 
+---
 ## [2026-06-26] Blog Wiki Ingest — Supplement Batch
 
 - **Take**: Andrew Nesbitt "Incident Report: CVE-2026-LGTM" — satirical AI supply chain security gate failure piece. Added as new Core Ideas subsection to `entities/andrew-nesbitt.md` (+31 lines, 7-gate failure mapping, satire analysis). Added to `concepts/ai-supply-chain-security.md` as 5th case study (satirical stress test).
@@ -68,6 +69,7 @@
 - **Skips**: 14 articles — non-AI topics (math, Windows internals, Apple pricing, Anubis-gated, unsaved_articles).
 - **Archived**: 15 skip+reference items via archive_triage.py.
 
+---
 ## [2026-06-26] Blog Ingest Triage — 2026-06-26
 
 **Source:** blog-ingest pipeline (blogwatcher RSS scan)
@@ -93,6 +95,7 @@
 - `entities/andrew-nesbitt.md` — NEW entity page (open source security researcher)
 - `wiki/index.md` — added andrew-nesbitt entry
 
+---
 ## [2026-06-25] OpenAI "How Agents Are Transforming Work" + Research Paper 取り込み
 
 **Source**:
@@ -129,6 +132,7 @@ Key data: 80.6% users >30min tasks, non-developer growth 137×/189×, every depa
 
 **Index**: Added openai-codex entity entry to recently-updated entities section (was previously missing from index.md).
 
+---
 ## 2026-06-25 X Accounts Scan
 
 **Source**: x-accounts-scan cron job (fetch_x_accounts.py)
@@ -158,6 +162,7 @@ Key data: 80.6% users >30min tasks, non-developer growth 137×/189×, every depa
 - badlogicgames: GitHub PR limits blog (open source management)
 - _xjdr: noumena.com (AI coding tool — mentioned briefly, no article to scrape)
 
+---
 ## [2026-06-25] Dreaming Wiki Ingest — Enriched entities/fireworks-ai.md (2 articles)
 
 - **Enriched**: `entities/fireworks-ai.md` (289→348 lines, +59 lines)
@@ -165,6 +170,7 @@ Key data: 80.6% users >30min tasks, non-developer growth 137×/189×, every depa
   - Updated "Hybrid Harness" section: added GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp), cost efficiency ($3.50-6.09 vs $18.28 Opus baseline), same-model reviewer ablation fails
   - Sources added: 2 new raw/article references
 
+---
 ## [2026-06-25] Dreaming Group Triage — Pipeline saturation scenario (Takes=2, Skips=3)
 
 - **Context**: Daily pipeline saturation — blog-ingest (2 takes), newsletter-ingest (5 takes), active-crawl (5 articles), X-bookmarks (2 bookmarks) already processed today.
@@ -174,6 +180,7 @@ Key data: 80.6% users >30min tasks, non-developer growth 137×/189×, every depa
 - **Skips**: Harvey Caryn Sandler case study (marketing), Cohere Aston Martin F1 (thin), ElevenLabs API auth (documentation)
 - **Archive**: 3 skip items archived to `raw/archived/triage/dreaming/2026-06-25_20260625T180026Z.json` (total: 1151 URLs)
 
+---
 ## [2026-06-25] X Bookmarks Ingest — 2 bookmarks processed (1 Zyphra, 1 BenchPress)
 
 - **Bookmark 1 (ZyphraAI)**: Tweet thread on continual learning/plasticity loss in LLMs → enriched `entities/zyphra.md` with Research Directions section on plasticity loss scaling law and recursive self-improvement
@@ -414,6 +421,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Log.md**: 0 pipe corruption, 0 missing separators — clean ✅
 - **Filesystem**: 836 entities, 1773 concepts, 31 comparisons = 2640 total Layer 2
 
+---
 ## 2026-06-26 — Awesome Evals Bulk Ingestion (57 benchmarks + 2 tools)
 
 **Source**: benchflow-ai/awesome-evals GitHub repo (443+ curated eval links, 175KB README)
@@ -447,3 +455,13 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Index.md**: Format B digest — 0 duplicates, 0 pipe corruption, 0 ghosts, 0 triple brackets — clean ✅
 - **Log.md**: 0 remaining `\n` artifacts, 0 pipe corruption, 0 line prefix corruption — clean ✅
 - **Filesystem**: 826 entities, 1837 concepts (1731 + 106 ai-benchmarks), 31 comparisons, 4 queries, 11 events = 2709 total Layer 2
+
+---
+
+## [2026-06-27] Watchdog auto-fix
+
+- **Fixed**: Pipe corruption in log.md (11 lines) — previous patch() call left `|` prefix on `##`, `###`, `|- ` and blank lines in the Blog Wiki Ingest section (lines 21-31). Restored correct markdown structure.
+- **Fixed**: Missing `---` separators (11 gaps) between consecutive `## [DATE]` sections in log.md — added separators to fix section boundary breaks.
+- **Verified**: index.md — 0 pipe corruption, 0 line prefix, 0 triple brackets, 0 duplicates, 0 ghost entries, 0 cross-section misplacement — clean.
+- **Verified**: All `_index.md` files — 0 pipe corruption (false-positive shell script false matches corrected).
+- **Filesystem**: 837 entities, 1840 concepts, 31 comparisons, 13 events, 4 queries = 2725 total Layer 2
