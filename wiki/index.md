@@ -53,6 +53,9 @@
 - [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
 - [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
 - [[entities/simon-willison]] — Simon Willison; enriched with hackmyclaw.com Prompt Injection Challenge — 6,000 attempts, 0 injections, Opus 4.6 Anti-Prompt-Injection Rules validation (June 27); Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code (June 23)
+- [[entities/vercel]] — Vercel Inc.; frontend cloud platform, expanded into AI with Eve filesystem-first agent framework, deepsec security harness, AI SDK, and Vercel Sandbox microVMs (June 28)
+- [[entities/vercel-eve]] — Vercel Eve — Open-source filesystem-first framework for durable backend AI agents; agent = directory of files, built-in durable sessions, sandboxes, evals, HITL, MCP connections, channels; Vercel runs 100+ Eve agents in production including d0, Vertex, Athena (June 28)
+- [[entities/vercel-sandbox]] — Vercel Sandbox — Self-hosted sandbox environment for Claude Managed Agents; TypeScript-native two-plane architecture with firewall-level credential brokering
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
 - [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
 ## Concepts (Updated)

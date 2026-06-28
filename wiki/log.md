@@ -1,3 +1,18 @@
+## [2026-06-28] X Bookmarks Ingest — Vercel Eve Framework
+
+**Source**: X Article (June 27, 2026) — "Building Agents with Vercel's Eve Framework"
+
+**Created**:
+- `entities/vercel-eve.md` — Vercel Eve: Open-source filesystem-first agent framework (Apache 2.0). Core idea: agent = directory of files. Tools, skills, subagents, evals, connections, and channels auto-discovered by name. Built-in durable sessions (Vercel Workflows), sandbox isolation, HITL, MCP connections, Slack/Discord channels. Vercel runs 100+ Eve agents in production (d0: 30K questions/month, Vertex: 92% ticket resolution, Athena: 6-week build with no engineers). GitHub: 2,857 ★, 214 forks, 116 open issues.
+
+**Enriched**:
+- `entities/vercel.md` — Added Eve: Filesystem-First Agent Framework section, updated AI Ecosystem Role with Eve, added Eve to related/sources, bumped updated date to 2026-06-28
+
+**Index**:
+- Added entities/vercel, entities/vercel-eve, entities/vercel-sandbox to index.md (all were missing — wiki drift correction)
+
+**Raw article**: [[raw/articles/2026-06-27_vercel-building-agents-with-eve-framework.md]]
+
 ## [2026-06-28 18:20] — dreaming: consolidation — 2 takes, 4 reference enrichments
 
 ### Duplicate Check
