@@ -28,6 +28,7 @@
 - 8 files staged for commit: 4 wiki pages + 3 raw articles + index.md + log.md
 
 
+---
 ## [2026-06-28 07:22] — Newsletter Triage (Recovery): Super Intel Fable 5, all skip
 
 ### Triage Summary
@@ -38,6 +39,7 @@
 - **Recovery**: Newsletter-triage upstream failed response render; checkpoint JSON recovered per pipeline-recovery protocol.
 - **Archive**: All items already in archive (dedup from prior pass).
 
+---
 ## [2026-06-28 07:00] — Blog Ingest: 20 new articles, 15 saved, 2 wiki pages updated
 
 ### Collection Summary
@@ -95,10 +97,11 @@
 ### Skipped
 - Eric Zhang: graphon (Zig graph DB — non-AI), NY Systems Reading Group event (announcement), jax-js WASM matmul PR (merged into main project page), jax-js Whisper demo (merged into main project page)
 
-|---
+---
 ## [2026-06-27 22:34] — Raw article scrape: Noema Magazine "How AI Will Change Us"
 ### Added
 - **raw/articles/2026-06-26_noema_how-ai-will-change-us.md** — Houda Nait El Barj (OpenAI researcher). Key thesis: as AI becomes the most patient, emotionally responsive conversationalist always available, what humans need shifts from information to presence, embodiment, and participation in shared vulnerability. Covers AI companionship, interpretation vs participation, meaning-on-demand risks. 16.5K chars.
+---
 ## [2026-06-27] — Dreaming wiki ingest: 6 enrichments (Takes=0, pipeline saturation)
 ### Enriched
 - **[[entities/cohere]]** — Added AI Agent Fork Maintenance section: control theory framework for vLLM fork management (5 open-sourced skills, cohere-ai/vllm-skills), upstream absorption compressed weeks→days. Added Security Agent with North & Wiz section: 8 MCP tools, toxic combination analysis (20s vs half morning), autonomous weekly posture brief. Sources: cohere.com/blog Jun 26.
@@ -109,6 +112,7 @@
 ### Notes
 - 2 verified-false enrichment gaps skipped: entities/modal-labs.md (speculative decoding already covered), entities/cloudflare.md (temporary accounts already covered)
 - Triage checkpoint recovered from file (upstream failing-group agent failed JSON render, saved checkpoint before response failure)
+---
 ## [2026-06-27] — Active crawl: 4 new pages (Qualcomm-Modular, DeepSpec, CVE-2026-55607, Modular entity)
 
 ### Created
