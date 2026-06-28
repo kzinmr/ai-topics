@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-06-27
+updated: 2026-06-28
 tags:
   - model
   - claude-fable-5
@@ -30,6 +30,7 @@ sources:
   - raw/articles/2026-06-11_simonwillison_claude-fable-relentlessly-proactive.md
   - raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md
   - raw/articles/simonwillison.net--2026-jun-26-dean-w-ball--bd13fd7b.md
+  - raw/articles/2026-06-27_getsuperintel_fable-5-kill-switch-two-weeks-on.md
 ---
 
 # Claude Fable 5
@@ -250,11 +251,12 @@ On June 12, 2026, the US government issued an export control directive ordering 
 
 ### The Directive
 
-- **Authority**: National security / export control authorities
+- **Authority**: Commerce Department, signed by Secretary Howard Lutnick
 - **Scope**: All foreign nationals, whether inside or outside the United States, including foreign national Anthropic employees — effectively **all customers globally**
 - **Timing**: Received at 5:21pm ET on June 12
 - **Impact**: Fable 5 and Mythos 5 abruptly disabled for all users; all other Anthropic models unaffected
 - **Reason cited**: Government belief that it had become aware of a jailbreak method for Fable 5
+- **Legal mechanism**: Cold War-era "deemed export" doctrine — giving a foreign national access to controlled technology on US soil is legally treated as an export to their home country. Because Anthropic cannot sort API users by passport in real time, the only compliance path was global shutdown ([Super Intel, 06/27/2026](https://getsuperintel.site/p/the-fable-5-kill-switch-two-weeks-on))
 
 ### The Alleged Jailbreak
 
@@ -295,6 +297,17 @@ This represents the first known case of a government forcing the complete withdr
 - **Government-lab relations**: The tension between Anthropic's stated belief in government oversight and the government's unilateral action without transparent process
 - **Precedent**: If narrow jailbreaks justify recalls, this standard could prevent any frontier model from remaining deployed
 - **Sovereignty risk reframing**: Engineers reframed the incident as a **sovereignty risk** rather than a pure policy/security story — closed frontier APIs can disappear overnight due to export controls beyond any single company's control. This reframing shifts the discussion from "what jailbreaks are possible" to "who controls access to frontier AI infrastructure" and aligns with [[concepts/open-vs-closed-model-gap]] arguments for model weight portability
+
+### Two Weeks Later: Competing Narratives (Super Intel Analysis, June 27, 2026)
+
+As of two weeks after the shutdown, models remain dark. Two irreconcilable stories have emerged ([Super Intel, 06/27/2026](https://getsuperintel.site/p/the-fable-5-kill-switch-two-weeks-on)):
+
+1. **Capitol Hill narrative** (Senator Mark Warner, relaying NSA/Cyber Command head, Senate committee, June 11): Mythos "broke into almost all of our classified systems, not in weeks, but in hours"
+2. **Anonymous official narrative** (to Associated Press, June 23): The model had "identified vulnerabilities within hours in an authorized test," which "did not mean the model was able to exploit them"
+
+> "One sentence describes a cyberweapon breaking into the nation's secrets. The other describes a security tool doing its job. They refer to the same week." — Kim Isenberg, Super Intel
+
+The core question identified: whether June 12 was "the opening of an era in which governments treat access to frontier AI as a lever of state power, or a clumsy one-off already being walked back."
 
 #### Economic Recoupment Impact (Dean W. Ball Analysis, June 2026)
 
