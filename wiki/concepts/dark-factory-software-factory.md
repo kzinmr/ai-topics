@@ -2,7 +2,7 @@
 title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
-updated: 2026-06-16
+updated: 2026-06-28
 tags:
   - concept
   - multi-agent
@@ -15,6 +15,7 @@ sources:
   - https://github.com/strongdm/cxdb
   - raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents.md
   - raw/articles/2026-06-15_factory-ai_software-factory-2.0.md
+  - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
 ---
 
 # Dark Factory Software Factory
@@ -215,6 +216,99 @@ Factory 2.0 is live with enterprise customers including **NVIDIA, EY, Adobe, Pal
 | Continual learning | Implicit via test feedback | Explicit CLAUDE.md evolution | Platform-wide feedback loops |
 
 Source: [[raw/articles/2026-06-15_factory-ai_software-factory-2.0]]
+
+## Warp's Factory Engineering (June 2026)
+
+**Source:** Zach Lloyd (Warp CEO) — [We are now factory engineers, not product engineers](https://www.warp.dev/blog/we-are-now-factory-engineers-not-product-engineers) (2026-06-18)
+**Platform:** Oz — Warp's cloud software factory platform
+
+Zach Lloyd, CEO of Warp, published an internal memo to the Warp team in June 2026 announcing a paradigm shift: **engineers are no longer product engineers — they are factory engineers**. This memo represents the most explicit articulation of what the shift to Dark Factory means for engineering organizations at a practical level.
+
+### Key Paradigm Shift
+
+| Concept | Old Paradigm (Product Engineering) | New Paradigm (Factory Engineering) |
+|---------|-----------------------------------|------------------------------------|
+| **Job** | Write code to build product features | Build the machine that builds the product |
+| **Success metric** | Features shipped per engineer | % of changes shipped automatically at what cost |
+| **Cost model** | R&D expense (budgeted) | COGS (variable cost per unit output) |
+| **Human role** | Primary builder | Meta-engineer of the factory system |
+
+### Factory Efficiency Metric
+
+> Factory efficiency = **shipped product / (inference cost + human time cost)**
+
+Lloyd argues that the days of unlimited token budgets for interactive coding agents are ending. Companies will assess their factories in terms of ROI: **if they spend a dollar on automation, does their business get more than a dollar of value?** Software production transitions from an R&D expense to a **variable cost** on the P&L — it becomes COGS (Cost of Goods Sold).
+
+This reframes development from a fixed-cost headcount model to a marginal-efficiency model, directly paralleling manufacturing economics.
+
+### Meta-Engineering
+
+Lloyd introduces **meta-engineering** as the defining engineering discipline of the automated development era:
+
+> Meta-engineering is engineering the system in which coding agents can most effectively build and ship useful stuff.
+
+The meta-engineer's job is not to produce code but to design, instrument, and continuously improve the factory pipeline — the harnesses, prompts, workflows, evaluation frameworks, and feedback loops that agents operate within.
+
+### The Automation-First Mandate
+
+Every **human-in-the-loop (HITL) interaction is viewed as a failure to learn from**. The mandate is:
+
+- **Automation-first**: Always attempt full automation first
+- **Semi-automation fallback**: If full automation isn't possible, have agents do triage, verification, or review — anything that reduces the human burden
+- **Learn from every failure**: When a human must intervene, the factory should record why and self-improvement agents should analyze the pattern
+- **Push toward full autonomy**: The percentage of fully automated tasks is the primary throughput metric
+
+### Factory Workflow
+
+The factory workflow defined by Warp mirrors and extends the Dark Factory pipeline:
+
+```
+1. Triage agent → understand and reproduce the issue
+2. Spec agent → write specifications (if ambiguity or scope warrants)
+   → Human reviews specs
+3. Implementation agent → writes code
+4. Code review agent → reviews implementation
+5. Verification agent → computer-use or other automated verification
+   → Human reviews code + verification output (fallback)
+6. CI/CD → ship it
+7. Monitor agent → create issues from production observation (completing the loop)
+```
+
+When a task is determined automatable, it moves directly from triage → implementation → review → verification → ship without human touchpoints. Humans intervene only at spec review or code review when the factory determines it cannot proceed autonomously.
+
+### Self-Improvement Agents
+
+Warp's Oz platform includes dedicated **self-improvement agents** that:
+
+1. **Analyze factory conversations** for patterns of token waste and suggest efficiency gains
+2. **Eval different harnesses and prompts** and record which work best for future executions
+3. **Record every HITL intervention** and attempt to improve the flow to make recurrence less likely
+4. **Propose improvements** to the factory workflow itself
+
+This creates a closed feedback loop where the factory actively improves its own efficiency over time.
+
+### Recursive Self-Improvement Goal
+
+> "If we get this right, the factory will eventually reach a state of **recursive self-improvement**. This is the golden path."
+> — Zach Lloyd
+
+The ultimate goal is a factory that can improve its own factory workflow, creating a compounding acceleration of automation capability.
+
+### Warp's Oz Platform
+
+Oz is Warp's cloud software factory platform — the infrastructure through which Warp runs its own factory and which it sells to other companies. Warp's open-source terminal (with nearly 1M developers) is itself built via Oz's factory workflow and is visible at [build.warp.dev](https://build.warp.dev). Lloyd notes that at the time of the memo, the factory was "half-working" — with ~1300 issues in a ready-to-implement state — and the goal is to make it fully operational.
+
+### Relationship to Other Approaches
+
+| Aspect | StrongDM Attractor | @sairahul1 7-Agent Factory | Factory.ai 2.0 | Warp Factory Engineering |
+|--------|-------------------|---------------------------|----------------|--------------------------|
+| **Paradigm** | Spec-driven autonomy | Personal pipeline | Enterprise spectrum | **Factory engineer meta-discipline** |
+| **Key metric** | Quality via tests | Code review pass | Autonomy tier | **Efficiency = product / (inference + human cost)** |
+| **Human role** | System designer | Manager with checkpoints | Graduated autonomy | **Meta-engineer of the factory** |
+| **Learning mechanism** | Test feedback | CLAUDE.md evolution | Platform feedback loops | **Self-improvement agents + token waste analysis** |
+| **Ultimate goal** | Level 5 autonomy | Level 4 productivity | Spectrum from L3-L5 | **Recursive self-improvement** |
+
+Source: [[raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers]]
 
 ## Related
 

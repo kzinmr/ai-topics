@@ -2,7 +2,7 @@
 title: "Agent Skills"
 type: concept
 created: 2026-04-25
-updated: 2026-06-24
+updated: 2026-06-28
 tags:
   - architecture
   - mcp
@@ -18,6 +18,7 @@ aliases:
 sources:
   - raw/articles/2026-05-08_anthropic-engineering_equipping-agents-for-the-real-world-with-agent-skills.md
   - raw/articles/2026-05-18_browse-sh-browserbase_agent-skills-catalog.md
+  - raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
   - https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
   - raw/articles/2026-03-09_openai-developers-blog_skills-agents-sdk.md
   - raw/articles/2026-02-11_openai-developers-blog_skills-shell-tips.md
@@ -117,6 +118,14 @@ In June 2026, OpenAI shipped **Codex Record & Replay**, a feature that lets user
 **A skill *authoring* method, not a skill *format*.** Record & Replay outputs standard-compliant skill directories (`.agents/skills/<name>/` with `SKILL.md` and supporting files). It does not introduce a new skill format — it introduces a new way to *produce* skills. This is orthogonal to the existing [[concepts/agent-skills|Agent Skills]] concept of `SKILL.md` bundles and progressive disclosure, which define the *structure* and *consumption* of skills at runtime.
 
 **Different philosophy: skills-as-recorded-workflows.** The open standard treats skills as instruction bundles — carefully written prompts that tell an agent how to behave. Codex Record & Replay treats skills as captured demonstrations — sequences a user has already performed, reified into reusable form. One is authorial (write the instructions), the other is observational (show the workflow). Both produce the same underlying artifact, but the authoring path changes who can create skills and how quickly they can be produced.
+
+### Warp Self-Improvement Loop (June 2026)
+
+Warp's self-improvement loop addresses a fundamental scaling problem: AI agent skills degrade at scale because each skill must hold the entire "how" in its context window. As steps grow, the agent trades between a context window full of instructions and incomplete coverage — and neither scales well. Stored instructions are brittle (they break when the environment shifts), while reasoning from scratch is expensive (burning tokens rediscovering familiar solutions each time).
+
+**Composable, executable skills.** Warp treats skills as reusable YAML-defined procedures with three parts: description, execution steps, and context requirements. The agent sees only the name and description — it reasons about *what* to do, while the skill handles *how*. This composition abstraction means skills can be chained (extract → transform → load) without the combinatorial explosion of edge cases.
+
+**Execute → Evaluate → Revise → Execute.** After each execution, Warp automatically evaluates three signals: did the skill complete, did the output match expectations, and did the agent need to intervene? When signals indicate a problem, Warp revises the skill's YAML definition — adding error handling, environment checks, or fallback strategies — rather than fine-tuning the model. Each iteration makes the skill more robust through real execution data, and the compacted skill definition reduces context load on future invocations. This shifts the developer's role from instruction author to skill reviewer.
 
 ### OSS Maintenance Case Study
 

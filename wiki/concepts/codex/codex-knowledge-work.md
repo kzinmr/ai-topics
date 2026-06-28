@@ -2,7 +2,7 @@
 title: "Codex for Knowledge Work"
 type: concept
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-28
 tags:
   - openai
   - coding-agents
@@ -15,6 +15,7 @@ aliases:
   - Codex knowledge work
 sources:
   - raw/articles/2026-05-26_every_codex-knowledge-work.md
+  - raw/articles/2026-06-25_openai-agents-transforming-work.md
   - raw/archived/triage/dreaming/2026-05-27_20260527T180018Z.json
 related:
   - "[[entities/codex]]"
@@ -145,7 +146,11 @@ These use cases share a pattern: **multi-step, multi-tool, information-heavy tas
 | **Agent autonomy** | High for coding tasks within sandbox | Context-dependent (Delegate vs Collaborate) |
 | **Skills** | Coding-focused skills (lint, test, deploy) | Workflow-focused skills (draft, research, compile) |
 
-The platform is the same — parallel agent threads, the `/goal` command, the Skills system, mobile steering, multi-agent orchestration — but the **connected tools, approval workflows, and output formats** differ. OpenAI's strategy appears to be building a single agentic platform that spans both domains, with the developer tool serving as the proving ground for capabilities that then expand to knowledge workers.
+| The platform is the same — parallel agent threads, the `/goal` command, the Skills system, mobile steering, multi-agent orchestration — but the **connected tools, approval workflows, and output formats** differ. OpenAI's strategy appears to be building a single agentic platform that spans both domains, with the developer tool serving as the proving ground for capabilities that then expand to knowledge workers.
+
+## OpenAI Internal Adoption Trajectory
+
+OpenAI's own internal usage data from June 2026 reveals a dramatic 10-month transformation. Through August 2025, the average OpenAI worker spent **less than 10% of their tokens on Codex** — ChatGPT remained the default AI tool. By June 2026, every department including non-technical teams (Legal, Recruiting) had adopted Codex as their primary AI tool, with the average worker generating over 85% of output tokens via Codex[[source]](https://openai.com/index/how-agents-are-transforming-work/). Engineering moved first (crossing majority usage by December 2025), while Legal, Finance, and Recruiting followed around April 2026 but transitioned much faster. This trajectory — from chatbot-default to agent-primary — illustrates the thesis that agentic tools represent the future of knowledge work as they expand beyond developers to every knowledge worker function.
 
 ## Security and Safety Considerations
 

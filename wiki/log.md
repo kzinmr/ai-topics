@@ -1,3 +1,37 @@
+## [2026-06-28 18:20] — dreaming: consolidation — 2 takes, 4 reference enrichments
+
+### Duplicate Check
+- Pipeline saturation: blog-triage Takes=0, newsletter-triage Takes=0, active-crawl 4 pages created
+- 222 raw articles → 82 unprocessed → 2 takes, 7 references, rest skip
+- No same-day dreaming commit found (Case C2 — triage produced decisions only)
+
+### Takes (2)
+1. **concepts/dark-factory-software-factory.md** — Added Warp Factory Engineering section (92 lines): Zach Lloyd's memo redefining engineers as "factory engineers", Factory Efficiency metric = shipped product / (inference cost + human time cost), meta-engineering concept, Oz platform, automation-first mandate, self-improvement agents, recursive self-improvement goal. Includes Key Paradigm Shift comparison table (Product Engineering → Factory Engineering) and Relationship to Other Approaches (StrongDM, sairahul1, Factory.ai, Warp).
+2. **concepts/open-source-vs-closed.md** — Rewrote 24-line stub to 77-line comprehensive concept page: Doubleword benchmark-by-benchmark analysis across 18 benchmarks, Dec 3 2026 convergence prediction, coding gap at 1-2 months, overall ~5 months flat, interpretation challenges section, HN 299pt reception.
+
+### Reference Enrichments (4)
+3. **concepts/anthropic/dod-dispute.md** — Added NSA Mythos access loss event (June 23 NYT): classified contract for intelligence analysis failed to finalize (HN 248pt).
+4. **concepts/codex/codex-knowledge-work.md** — Added OpenAI Internal Adoption Trajectory subsection: <10% Codex tokens (Aug 2025) → full deployment across every department including Legal/Recruiting (Jun 2026).
+5. **concepts/ai-and-authenticity.md** — Added AI Companion Dependency section: OpenAI/MIT Media Lab RCT (~1000 participants, 4 weeks) — heaviest users loneliest and most emotionally dependent.
+6. **concepts/agent-skills.md** — Added Warp Self-Improvement Loop subsection: context window scaling problem, composable executable skills, Execute→Evaluate→Revise loop.
+
+### Skipped References (already covered)
+- Sakana Fugu — Already in entities/sakana-ai.md (Fugu section)
+- MCPorter — Has dedicated concepts/mcporter.md page
+- Gemini Android — Already in concepts/gemini-computer-use.md
+- Warp Skills (old ref on line 113) — Expanded, not skipped
+
+### Batch Skips
+- Marketing (Decagon, Harvey, Hex, Glean, Cohere) — 13 articles
+- Non-AI (Tedium, vintage computing, math, music, general tech) — 10+ articles
+- Already processed (Fable 5 newsletter, active-crawl OpenKnowledge/Self-Harness/Cursor) — 6 articles
+- ElevenLabs product docs (7 articles)
+- Sitemap non-substantive (shkspr.mobi, MacRumors, Seán Goedecke, Xbox)
+- Other low-value (CVE, events, Maven, HN acquisitions)
+
+### Archive
+- Skip/Reference items archived via archive_triage.py
+
 ## [2026-06-28] health-fix | Auto-fix orphan pages in index.md
 
 ### Changes

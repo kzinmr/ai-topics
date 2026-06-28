@@ -3,7 +3,7 @@ title: "Anthropic–DoD Dispute"
 type: concept
 aliases: [anthropic-pentagon-rift, anthropic-supply-chain-risk, anthropic-fascsa]
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-28
 tags:
   - anthropic
   - palantir
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-06-10_anthropic-dod-dispute-wikipedia.md
   - raw/articles/2026-02-17_semafor-anthropic-pentagon-palantir-rift.md
   - raw/articles/2026-05-01_pentagon-seven-ai-deals-anthropic-excluded.md
+  - raw/articles/2026-06-23_nyt-nsa-mythos-access.md
 related:
   - entities/anthropic
   - entities/palantir
@@ -73,6 +74,7 @@ All seven companies that eventually signed Pentagon agreements (SpaceX/xAI, Open
 - May 1: Pentagon signed 7 AI companies for classified military work — Anthropic excluded
 - DOD CTO Emil Michael called [[concepts/claude/mythos|Mythos]] a "separate national security moment"
 - NSA reportedly using Claude despite the blacklist
+- **June 23, 2026**: NYT reports NSA lost access to Mythos amid ongoing dispute — classified contract for intelligence analysis failed to finalize (HN 248pt discussion)
 
 ## Status as of June 2026
 
