@@ -1,3 +1,13 @@
+## [2026-06-28 07:22] — Newsletter Triage (Recovery): Super Intel Fable 5, all skip
+
+### Triage Summary
+- **Source**: Super Intel (Kim Isenberg)
+- **Newsletter**: "The Fable 5 Kill-Switch, Two Weeks On"
+- **Decisions**: 6 items, all skip (Takes=0)
+- **Outcome**: Main article content already captured in `concepts/claude/fable-5.md` (362 lines, updated 2026-06-28). Full raw article saved to `raw/newsletters/`. Remaining links: banner images, tracking pixels, beehiiv UI noise.
+- **Recovery**: Newsletter-triage upstream failed response render; checkpoint JSON recovered per pipeline-recovery protocol.
+- **Archive**: All items already in archive (dedup from prior pass).
+
 ## [2026-06-28 07:00] — Blog Ingest: 20 new articles, 15 saved, 2 wiki pages updated
 
 ### Collection Summary
