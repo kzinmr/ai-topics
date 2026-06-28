@@ -69,14 +69,23 @@
 - [[concepts/advanced-tool-use]] — Advanced Tool Use — Claude Developer Platform advanced tool usage patterns
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
+- [[concepts/after-automation]] — After Automation (Paradox)
 - [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
+- [[concepts/ag2-autogen]] — AG2 / AutoGen — Multi-agent framework
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
+- [[concepts/agent-account-provisioning]] — Agent Account Provisioning
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
 - [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
+- [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
+- [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
+- [[concepts/agent-economics]] — Agent Economics
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
+- [[concepts/agent-first-design]] — Agent-First Design
 - [[concepts/ai-benchmarks/agentdojo]] — AgentDojo: prompt injection attacks/defenses for agents (ETH Zurich, NeurIPS 2024🆕)
+- [[concepts/agent-harness-primitives]] — Agent Harness Primitives
 - [[concepts/ai-benchmarks/hal-leaderboard]] — Holistic Agent Leaderboard: unified agent eval (Princeton, 2025🆕)
 - [[concepts/ai-benchmarks/index]] — AI Benchmarks Sub-Index: 105 benchmark/tool pages (June 26) — see sub-index for full catalog
 - [[concepts/ai-benchmarks/osworld]] — OSWorld: multimodal OS agents, real desktop VMs, Ubuntu/Windows/macOS (2024🆕)
@@ -149,14 +158,23 @@
 - [[comparisons/claude-sonnet46-vs-opus46]] — Claude Sonnet 4.6 vs Opus 4.6 — System Card Comparison
 - [[comparisons/codex-app-server-vs-agent-protocols]] — Codex App Server and the Agent Protocol Landscape
 - [[comparisons/codex-app-server-vs-claude-agent-sdk]] — Codex App Server vs Claude Agent SDK
+- [[comparisons/llm-api-pricing]] — LLM API Pricing Comparison — US vs China Providers
 - [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison
+- [[comparisons/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
 - [[comparisons/evals-skills]] — Evals Skills for Coding Agents
+- [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison — April 2026
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
+- [[comparisons/open-harness-vs-agent-framework]] — Open Harness vs Agent Framework/SDK — Essential Differences as Investment Targets
 - [[comparisons/google-alerts-alternatives-2026]] — Google Alerts Alternatives — 2026 Developer & Marketer Guide
+- [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries for LLMs — Comparison Portal
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — GPT Image 2 vs Nano Banana 2
+- [[comparisons/openai-vs-sierra-agent-simulation]] — OpenAI vs Sierra: Agent Simulation Approaches
 - [[comparisons/harness-backend-routing]] — Harness Backend Routing — OpenClaw vs Hermes vs Codex App Server vs Devin Desktop
+- [[comparisons/openclaw-pi-hermes-state-management]] — OpenClaw, Pi, and Hermes Agent State Management
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw
+- [[comparisons/palantir-platform-family]] — Palantir Platform Family
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison
+- [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 
 ## Events
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)

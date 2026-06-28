@@ -1,4 +1,17 @@
-## [2026-06-28 11:03] — Active Crawl: 4 new wiki pages from trending topics
+## [2026-06-28] health-fix | Auto-fix orphan pages in index.md
+
+### Changes
+- Added 9 orphan concept pages to index.md: after-automation, ag2-autogen, agent-account-provisioning, agent-communication-standards, agent-distillation, agent-driven-ranker-optimization, agent-economics, agent-first-design, agent-harness-primitives
+- Added 9 orphan comparison pages to index.md: llm-api-pricing, llm-integration-patterns, local-llm-models-april-2026, open-harness-vs-agent-framework, open-source-rl-libraries-comparison, openai-vs-sierra-agent-simulation, openclaw-pi-hermes-state-management, palantir-platform-family, palantir-vs-competitors
+- Skipped: concepts/_index (_index.md), concepts/agent-memory (redirect stub), concepts/agent-documentation (empty stub <300B), concepts/agent-first-codebase-design (empty stub <300B)
+- No index corruption detected (0 pipe, 0 line-number, 0 triple-bracket issues)
+
+### Validation
+- validate_index.py: clean (181 lines)
+- All section headers intact
+- All 18 entries verified present
+
+---## [2026-06-28 11:03] — Active Crawl: 4 new wiki pages from trending topics
 
 ### Discovery
 - HN Algolia: 630 stories scanned, 15 AI-relevant, cross-referenced against wiki
