@@ -1,7 +1,7 @@
 ---
 title: "Event: GPT-5.6 Sol Restricted Preview"
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-06-28
 type: event
 tags:
   - event
@@ -39,6 +39,7 @@ This event occurred against the backdrop of:
 - Trump EO on Cyber and AI establishing de facto licensing regime (per Dean Ball analysis)
 - AINews coverage: 27K characters of detailed technical analysis
 - Superintel coverage: "Washington Says No To GPT-5.6 release" — regulatory angle
+- **Same-day Anthropic de-escalation**: On the same day, the U.S. government also lifted its block on [[concepts/claude/mythos|Claude Mythos 5]], allowing Anthropic to release it to 100+ US institutions (Semafor, June 27, 2026). Commerce Secretary Lutnick cited "significant progress" in talks with Anthropic. This suggests a coordinated de-escalation across frontier AI companies.
 
 ## Significance
 

@@ -1,3 +1,27 @@
+## [2026-06-28 07:00] — Blog Ingest: 20 new articles, 15 saved, 2 wiki pages updated
+
+### Collection Summary
+- 20 blog articles collected from RSS feeds
+- 15 saved as raw articles to `wiki/raw/articles/`
+- 5 unsaved (paywalled: WSJ, FT, The Information, openai.com, Senate.gov)
+
+### AI-Relevant Articles
+- **Anthropic Mythos released to 100+ US institutions** (Semafor, via Daring Fireball) — Government lifts block on Claude Mythos 5; Commerce Secretary Lutnick cites "significant progress"; same-day as GPT-5.6 release
+- **OpenAI GPT-5.6 blocked from broad release** (openai.com, via Daring Fireball) — paywalled, already tracked in `events/2026-06-27-openai-gpt-5-6-sol.md`
+- **Grok content moderation controversy** (The Information, via Daring Fireball) — paywalled
+- **Meta AI bet flops, layoffs** (Pluralistic) — Meta's giant AI bet described as a flop, leading to massive layoffs
+- **Apple/Micron RAM shortage** (Tedium, Daring Fireball) — Apple faces RAM supply constraints, bipartisan opposition to Chinese chip purchases
+
+### Wiki Updates
+- Updated `concepts/claude/mythos.md` — added Government De-escalation section (Mythos 5 released to 100+ US institutions, June 27)
+- Updated `events/2026-06-27-openai-gpt-5-6-sol.md` — added cross-reference to Anthropic de-escalation
+- Updated `index.md` — Mythos entry updated with government de-escalation info
+
+### Checkpoint
+- `~/.hermes/cron/data/blog_ingest/latest.json` — ready for `blog-triage` at 07:30
+
+---
+
 ## [2026-06-27 22:30] — X Accounts Scan: 12 new posts from 5 tracked accounts, 10 raw articles scraped, 8 wiki pages created
 
 ### Scanned

@@ -2,7 +2,7 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-06-23
+updated: 2026-06-28
 tags:
   - model
   - agent-safety
@@ -194,9 +194,23 @@ Marcus notes that several authors of the original 2019 GPT-2 safety post (includ
 
 > "Anthropic once again played the media like a fiddle. And so many folks ate it all up." — Gary Marcus
 
+## Government De-escalation — Mythos Released to 100+ US Institutions (June 27, 2026)
+
+On June 27, 2026, the U.S. government lifted its block on Claude Mythos 5, allowing Anthropic to release the model to more than 100 US institutions including major companies and government agencies. Commerce Secretary Howard Lutnick sent a letter to Anthropic's chief compute officer Tom Brown citing "significant progress" in the intense daily talks between the government and the company since the export controls were imposed two weeks earlier.
+
+Key details:
+- **Scope**: "A license will no longer be required to export, reexport, or in-country transfer the Claude Mythos 5 Model to entities identified in Annex A"
+- **Fable 5 status**: The letter was silent on Fable 5 (the weaker public version). People close to the talks said they are "moving toward releasing Fable as well," though the timeline is unclear
+- **Anthropic commitments**: "Anthropic has committed to work with the U.S. government on protocols and standards and releases" for its models
+- **Context**: The move came the same day OpenAI released [[events/2026-06-27-openai-gpt-5-6-sol|GPT-5.6]] to a short list of government-approved partners, suggesting a coordinated de-escalation across frontier AI companies
+- **Significance**: Major de-escalation in the confrontation between the Trump Administration and Anthropic, which had been intense since the export controls were imposed in mid-June 2026
+
+Sources: raw/articles/semafor.com--article-06-27-2026-us-releases-powerful-anthropic-model-myth--4f5f1261.md
+
 ## Sources
 -  (Ben's Bites, 2026-04-09)
 -  (scraped article)
+- raw/articles/semafor.com--article-06-27-2026-us-releases-powerful-anthropic-model-myth--4f5f1261.md
 
 ## Related
 - [[entities/anthropic]]
