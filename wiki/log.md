@@ -10,6 +10,7 @@
 - validate_index.py: clean (181 lines)
 - All section headers intact
 - All 18 entries verified present
+- Fixed comparison section alphabetical ordering (31 entries resorted)
 
 ---## [2026-06-28 11:03] — Active Crawl: 4 new wiki pages from trending topics
 
