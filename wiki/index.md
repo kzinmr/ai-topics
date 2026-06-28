@@ -47,6 +47,7 @@
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
 - [[entities/openai]] — OpenAI; added GPT-5.5 Instant revision (June 2026) — improved intent understanding, constraint handling, conversational style (June 25)
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
+- [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
 - [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
 - [[entities/peter-steinberger]] — Peter Steinberger — Creator of PSPDFKit; iOS developer tools expert; exploring MCP and AI developer tooling (June 27)
 - [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
@@ -87,6 +88,7 @@
 - [[concepts/ai-benchmarks/webarena]] — WebArena: realistic web environment, 812 tasks, 4 sandboxed websites (CMU, 2023🆕)
 - [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
 - [[concepts/ai-economics]] — AI Economics; enriched with Inference Economics — A100 cost breakdown ($1/MTok estimate), 70-80% gross margins confirmed, DeepSeek R1 validation, inference-subsidizes-training thesis (June 27)
+- [[concepts/ai-executive-orders]] — AI Executive Orders — U.S. presidential directives governing frontier AI access, including government-mediated model release gatekeeping
 - [[concepts/ai-gateway]] — AI Gateway — centralized LLM API routing with cost controls, rate-limiting, observability (LangSmith, Glean, OpenRouter)
 - [[concepts/anthropic-alibaba-claude-ip-dispute]] — Anthropic-Alibaba Claude IP Dispute — June 2026 Anthropic accusation of illicit Claude distillation by Alibaba; NSA/Mythos access loss, export controls, US-China AI tensions (June 25)
 - [[concepts/apertus-sovereign-ai-model]] — Apertus — Open foundation model for sovereign AI (8B/70B), EU AI Act compliant, multilingual (1000+ languages), fully open training pipeline (June 23)
@@ -116,6 +118,7 @@
 - [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23)
 - [[concepts/model-quantization]] — Model Quantization; enriched with Expert-Aware Quantization (MoE-specific: Q4-hot/Q2-cold recovers ~90% of Q2→Q4 gap) (June 23)
 - [[concepts/nvidia-45c-data-center-cooling]] — NVIDIA 45°C Data Center Cooling — Rubin generation 100% liquid-cooled AI platform; 45°C warm-water closed-loop design, near-zero water consumption, dry-cooler heat rejection (June 25)
+- [[concepts/open-weight-vs-closed-llm-gap]] — Open-Weight vs Closed LLM Performance Gap — Analysis of time lag between open-weight and closed-source frontier model capabilities (Doubleword, June 2026)
 - [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
 - [[concepts/openai-jalapeno-inference-chip]] — OpenAI Jalapeño — Custom LLM inference chip co-developed with Broadcom; 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark at production frequency (June 25)
 - [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
@@ -124,6 +127,7 @@
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/sakana-fugu]] — Sakana Fugu; added Fugu Ultra benchmark numbers (73.7 SWE-bench Pro, 82.1 TerminalBench 2.1, Fable-class) (June 24)
 - [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
+- [[concepts/self-harness]] — Self-Harness — LLM-based agent that iteratively improves its own operating harness (Shanghai AI Lab, arXiv:2606.09498)
 - [[concepts/show-us-your-agent-skills]] — Show Us Your Agent Skills — YouTube series (Vanishing Gradients × PyMC Labs) documenting real agent workflows from 22 builders; 51 skills, 79 workflows (June 27)
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.

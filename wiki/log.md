@@ -1,3 +1,33 @@
+## [2026-06-28 11:03] — Active Crawl: 4 new wiki pages from trending topics
+
+### Discovery
+- HN Algolia: 630 stories scanned, 15 AI-relevant, cross-referenced against wiki
+- X/Twitter (xurl): 58 tweets scanned across 6 queries, 10 substantive results
+- Blogwatcher DB: 100+ articles from 30 blogs in last 3 days
+- Wiki gap analysis: checked 1,322 concepts + 829 entities across 10 key areas
+
+### Selected Topics
+1. **entities/openknowledge.md** — OpenKnowledge, open-source AI-native markdown editor (373 HN pts, GitHub README)
+2. **concepts/self-harness.md** — Self-Harness paradigm from Shanghai AI Lab (arXiv:2606.09498, Terminal-Bench-2.0 improvements)
+3. **concepts/ai-executive-orders.md** — U.S. AI executive orders and government gatekeeping of frontier models
+4. **concepts/open-weight-vs-closed-llm-gap.md** — Open-weight vs closed LLM performance gap analysis (Doubleword, 299 HN pts)
+
+### Raw Articles Saved
+- raw/articles/2026-06-28_active-crawl-trending-topics-research.md (research note)
+- raw/articles/2026-06-28_inkeep-openknowledge-ai-knowledge-tool.md
+- raw/articles/2026-06-08_arxiv-2606.09498_self-harness.md
+- raw/articles/2026-06-22_doubleword-open-source-vs-closed-llm-gap.md
+
+### Key Content
+- **OpenKnowledge**: GPL-3.0 licensed, macOS + web UI, native Claude/Codex/Cursor integration, MCP-first architecture, git-native sync
+- **Self-Harness**: 3-stage loop (Weakness Mining → Harness Proposal → Proposal Validation), +14-21pp across MiniMax/Qwen/GLM on Terminal-Bench-2.0
+- **AI Executive Orders**: Timeline from Biden 2023 EO through Trump 2025 rescind to current government gatekeeping (GPT-5.6 and Mythos restricted access)
+- **Open-weight gap**: Single-benchmark projection shows Dec 2026 convergence; multi-benchmark average shows persistent ~5-month gap
+
+### Statistics
+- 8 files staged for commit: 4 wiki pages + 3 raw articles + index.md + log.md
+
+
 ## [2026-06-28 07:22] — Newsletter Triage (Recovery): Super Intel Fable 5, all skip
 
 ### Triage Summary
