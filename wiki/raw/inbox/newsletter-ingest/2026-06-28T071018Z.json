@@ -1,0 +1,68 @@
+{
+  "run_id": "20260628T071018Z",
+  "triaged_at": "2026-06-28T07:15:00Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260627.173151.718bc560@mta25>",
+      "subject": "The Fable 5 Kill-Switch, Two Weeks On",
+      "date": "2026-06-27",
+      "source_label": "uid=290",
+      "source_name": "Super Intel (getsuperintel.site)",
+      "author": "Kim \"Chubby\" Isenberg",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-27-the-fable-5-kill-switch-two-weeks-on.md",
+      "total_links": 17,
+      "resolved_links": {
+        "main_article": {
+          "url": "https://getsuperintel.site/p/the-fable-5-kill-switch-two-weeks-on",
+          "title": "The Fable 5 Kill-Switch, Two Weeks On",
+          "classification": "high",
+          "topics": [
+            "ai-safety",
+            "ai-regulation",
+            "export-controls",
+            "anthropic",
+            "frontier-models",
+            "national-security"
+          ],
+          "summary": "US Commerce Department letter on June 12 forced Anthropic to shut down Claude Fable 5 and Claude Mythos 5 globally. Article analyzes the 'deemed export' legal mechanism, conflicting narratives between NSA (model broke into classified systems) and anonymous officials (model only identified vulnerabilities), and implications for anyone building on proprietary US AI models. Paywalled after ~half the article.",
+          "entities": ["anthropic", "dario-amodei"],
+          "concepts": ["ai-export-controls", "deemed-export", "ai-national-security", "frontier-model-regulation"],
+          "actionable": true,
+          "notes": "Newsletter references Bloomberg, SC Media, AP sources. Covers June 9-25 2026 timeline. Partially paywalled (Super Intel+). Content is substantive analysis of AI regulation events."
+        },
+        "social_media": [
+          {"url": "https://x.com/kimmonismus", "type": "x_account", "label": "Author X account"},
+          {"url": "https://x.com/getsuperintel", "type": "x_account", "label": "Publication X account"},
+          {"url": "https://instagram.com/getsuperintel", "type": "social", "label": "Instagram"},
+          {"url": "https://threads.com/@getsuperintel", "type": "social", "label": "Threads"},
+          {"url": "https://tiktok.com/@superintel_daily", "type": "social", "label": "TikTok"},
+          {"url": "https://linkedin.com/company/getsuperintel", "type": "social", "label": "LinkedIn"}
+        ],
+        "boilerplate": [
+          {"url": "https://getsuperintel.com/plus-whitelist", "type": "subscription"},
+          {"url": "https://getsuperintel.site/upgrade", "type": "subscription"},
+          {"url": "https://getsuperintel.com/advertise", "type": "advertising"},
+          {"url": "https://getsuperintel.site/subscribe/ccc0ac2a-6a36-45a0-abc7-558e4657920f/preferences", "type": "subscription_prefs"},
+          {"url": "https://beehiiv.com/tou", "type": "tos"}
+        ],
+        "unresolved": [
+          {"link_num": 9, "note": "beehiiv tracking link, did not resolve"},
+          {"link_num": 15, "note": "beehiiv tracking link, did not resolve"}
+        ]
+      }
+    }
+  ],
+  "triage_summary": {
+    "total_newsletters": 1,
+    "total_links": 17,
+    "actionable_articles": 1,
+    "critical": 0,
+    "high": 1,
+    "low": 0,
+    "boilerplate_skipped": 10,
+    "unresolved": 2,
+    "notes": "Single newsletter from Super Intel. Main article covers US Commerce Department export control action against Anthropic's frontier models (Fable 5 / Mythos 5). Content is paywalled after ~50%. Article references Anthropic, Dario Amodei, and regulatory events from June 2026. Topics: AI export controls, deemed export doctrine, national security implications of frontier models, government shutdown of live AI services. High relevance for wiki concepts on AI regulation, export controls, and frontier model governance. Consider enriching existing entities (anthropic) and creating/updating concepts (ai-export-controls, deemed-export, frontier-model-regulation)."
+  }
+}
