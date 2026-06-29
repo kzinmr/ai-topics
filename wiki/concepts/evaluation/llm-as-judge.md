@@ -2,7 +2,7 @@
 title: "LLM-as-Judge: Evaluation Frameworks, Best Practices & Bias Types"
 description: "LLM-as-Judge is a paradigm for using LLMs to evaluate LLM outputs. Covers 3 bias types (rubric order, score ID, reference answer) and 7 best practices. High-risk evaluations require GPT-4o class models."
 created: 2026-04-20
-updated: 2026-05-26
+updated: 2026-06-29
 type: concept
 status: complete
 depth_tracking:
@@ -15,6 +15,7 @@ sources:
  - raw/articles/dspy-rlm-2026-04-20.md
  - raw/articles/2026-04-30_dropbox-tech-optimizing-dash-relevance-judge-with-dspy.md
  - raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge.md
+ - raw/papers/2026-06-25_2606.27226_binEval-binary-questions-llm-evaluation.md
 related:
  - ai-evals
  - evaluation-flywheel
@@ -158,6 +159,54 @@ def quality_metric(example, pred, trace=None):
     result = judge(response=pred.response)
     return int(result.score) >= 4
 ```
+
+## BINEVAL: Binary Question Decomposition (Cho et al., 2026)
+
+**BINEVAL** (ICML 2026 Workshop) decomposes evaluation criteria into **atomic binary yes/no questions** instead of using holistic Likert scores. Each question targets a specific sub-criterion, and verdicts are aggregated into interpretable, multi-dimensional scores.
+
+### How It Works
+
+1. **Summarize** — Task prompt → explicit requirements R = {r1, ..., rK}
+2. **Decompose** — Each requirement → binary questions organized by dimension (coherence, consistency, fluency, relevance)
+3. **Evaluate** — LLM answers each question independently with natural-language explanations
+
+Per-dimension score: S_d = (1/|Q_d|) Σ f_E(qi) ∈ [0, 1]. Overall score: S = (1/N) Σ f_E(qi).
+
+### Why Binary Decomposition Works
+
+- **Easier reasoning**: "Are all named entities accurately represented?" is easier than "Rate factual consistency 1–5"
+- **Variance reduction**: Aggregating N weakly correlated binary classifiers reduces variance ∝ 1/N
+- **Failure mode coverage**: Explicit enumeration improves recall over holistic judgments
+- **Ceiling effect avoidance**: Better matches human score distributions, discriminates borderline vs. clearly flawed outputs
+
+### Key Results
+
+| Benchmark | BINEVAL (Claude) | G-Eval (GPT-4) | UniEval (T5) |
+|-----------|-----------------|----------------|--------------|
+| SummEval avg (Spearman ρ) | **.563** | .514 | .474 |
+| QAGS (Spearman ρ) | **.620** | — | — |
+
+- Especially strong on **consistency** (factual quality): .655 Spearman ρ vs. .507 for G-Eval
+- Relevance remains harder to decompose — G-Eval still best on that dimension
+
+### Prompt Optimization via Binary Feedback
+
+BINEVAL's question-level feedback supports two iterative prompt update modes:
+
+| Mode | Best For | Mechanism |
+|------|----------|-----------|
+| **Self-update** | Coherence, fluency | Generator uses evaluator failures as feedback on its own outputs |
+| **Cross-model update** | Consistency | Aligns weaker evaluator to stronger one via question-level disagreements |
+
+Most gains appear within 1–2 iterations. Later iterations risk prompt degradation from competing instructions.
+
+### Limitations
+
+- **Computational constraints** (count, ratio, words, repeat) resist prompt optimization — require precise computation, not clearer instructions
+- **Relevance** is harder to decompose into binary questions — broader semantic judgments may need holistic assessment
+- Requires careful question design — poorly decomposed questions can miss failure modes
+
+> **Practical takeaway:** Binary decomposition is especially effective for factual consistency and coherence. For relevance or tasks requiring nuanced judgment, holistic scoring may still be preferable.
 
 ## See Also
 
