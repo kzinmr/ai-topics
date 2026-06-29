@@ -9,6 +9,7 @@
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
 - [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
 - [[entities/adept]] — Adept AI — AI agent startup building general-purpose agents
+- [[entities/agno]] — Agno — Open-source agent platform SDK and runtime (AgentOS); model/framework/cloud agnostic; multi-user sessions, RBAC, tracing (June 29)
 - [[entities/alex-banks]] — Alex Banks; enriched with "You're Underestimating AI on Purpose" — AI Perception Paradox, Amara's Law, the AI Effect and systematic underestimation of AI progress (June 27)
 - [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind; relational sector scarcity, behavioral economics of AI (June 24)
 - [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
@@ -38,6 +39,7 @@
 - [[entities/jo-bergum]] — Jo Bergum — CEO/Co-founder of Hornet (vector search); ex-Vespa engineer; organizing 'Retrieval for Agents' event at AI Engineer World's Fair (June 27)
 - [[entities/k-eric-drexler]] — K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford.
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
+- [[entities/liquid-ai-lfm2-5-retrievers]] — LFM2.5 Retrievers — 350M-param multilingual retrieval models (ColBERT + Embedding); bidirectional LFM architecture; 11 languages; best-in-class NanoBEIR/MKQA-11; GGUF for llama.cpp edge deployment (June 29)
 - [[entities/mario-zechner]] — Mario Zechner; added DeepMind AI Control Roadmap recommendation + Gergely Orosz "Slow Down to Speed Up" talk recommendation (June 25)
 - [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
@@ -89,6 +91,7 @@
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
+- [[concepts/ai-benchmarks/aa-briefcase]] — AA-Briefcase — Agentic knowledge work benchmark (Artificial Analysis); 4 multi-week scenarios, 91 tasks, 3 grading dimensions; Ethan Mollick reports rapid frontier gains + open-weights gap (June 29)
 - [[concepts/ai-benchmarks/agentdojo]] — AgentDojo: prompt injection attacks/defenses for agents (ETH Zurich, NeurIPS 2024🆕)
 - [[concepts/ai-benchmarks/hal-leaderboard]] — Holistic Agent Leaderboard: unified agent eval (Princeton, 2025🆕)
 - [[concepts/ai-benchmarks/index]] — AI Benchmarks Sub-Index: 105 benchmark/tool pages (June 26) — see sub-index for full catalog

@@ -2,6 +2,30 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-06-29 22:30] — X accounts scan — 4 raw articles + 3 wiki pages from 8 posts
+
+**Scan summary**: 84 tracked accounts, 12 scanned, 8 new substantive posts from 4 accounts (simonw, tomaarsen, emollick, ashpreetbedi).
+
+**Raw articles saved**:
+- `raw/articles/2026-06-26_openai_gpt-5-6-sol-preview.md` — OpenAI GPT-5.6 Sol preview (simonw tweet)
+- `raw/articles/2026-06-18_liquid_lfm2-5-retrievers.md` — Liquid AI LFM2.5 Retrievers blog post (tomaarsen tweets)
+- `raw/articles/2026-06-29_artificial-analysis_aa-briefcase-benchmark.md` — AA-Briefcase agentic knowledge work benchmark (emollick tweet)
+- `raw/articles/2026-06-29_agno_welcome-docs.md` — Agno agent platform documentation (ashpreetbedi tweets)
+
+**New wiki pages**:
+- `entities/liquid-ai-lfm2-5-retrievers.md` — LFM2.5-ColBERT-350M / LFM2.5-Embedding-350M multilingual retrieval models
+- `concepts/ai-benchmarks/aa-briefcase.md` — AA-Briefcase: agentic knowledge work benchmark by Artificial Analysis
+- `entities/agno.md` — Agno: open-source agent platform SDK and AgentOS runtime
+
+**Already existed/not duplicated**:
+- `events/2026-06-27-openai-gpt-5-6-sol` — GPT-5.6 Sol event already exists
+- `concepts/gpt/gpt-5-6` — GPT-5.6 concept page already exists
+- `concepts/claude/mythos` — Claude Mythos concept page already exists
+
+**Not ingested (paywall/no access)**:
+- WSJ: "China Has Matched Anthropic in Cybersecurity" (emollick tweet) — paywalled, 51-byte JS-block page
+- Agno Demo AgentOS (ashpreetbedi tweet) — demo link, no substantive content to scrape
+
 ## [2026-06-29 18:20] — dreaming: consolidation — 1 enrichment
 
 **Enriched**:
