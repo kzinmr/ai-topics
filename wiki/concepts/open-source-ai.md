@@ -1,7 +1,7 @@
 ---
 title: Open-Source AI Strategy
 created: 2026-04-26
-updated: 2026-06-21
+updated: 2026-06-29
 type: concept
 tags:
   - open-source
@@ -10,7 +10,7 @@ tags:
   - ai-governance
   - ethics
   - education
-sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md, raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md, raw/articles/2026-06-19_hn-discussion_norway-ai-school-ban.md]
+sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md, raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md, raw/articles/2026-06-19_hn-discussion_norway-ai-school-ban.md, raw/newsletters/2026-06-28-latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expanding-the-breadth-of.md]
 ---
 
 # Open-Source AI Strategy
@@ -59,6 +59,36 @@ China has adopted open-source AI as a core strategic pillar:
 - **DeepSeek**: Cost disruption in AI model pricing via open-source
 - **Alibaba Qwen**: 100,000+ derivatives on Hugging Face
 - **Meta Llama**: Western open-source exception with global adoption
+
+## Open Model Makers Ecosystem (June 2026)
+
+Nathan Lambert's Interconnects Artifacts #22 framework categorizes open model makers into three distinct groups, exposing a dimension missing from the geopolitical-strategy focus of this page:
+
+### 1. Pure Model Makers
+
+Companies whose stated goal is training frontier models. These organizations compete directly on model quality and capability:
+
+- **DeepSeek**: Cost disruption in AI model pricing via open-source
+- **Zhipu**: Chinese AI lab producing competitive open-source models
+- **MiniMax**: Frontier model development with open release strategy
+
+### 2. Big Tech
+
+Large technology companies with diverse motivations driving model release, from ecosystem lock-in to talent acquisition:
+
+- **Alibaba (Qwen)**: 100,000+ derivatives on Hugging Face; strategic open-source to drive cloud adoption
+- **Google (Gemma)**: Open-weight models as complement to proprietary Gemini
+- **NVIDIA (Nemotron)**: Hardware-driven model releases to accelerate GPU demand
+
+### 3. Product Companies
+
+Companies that sell products using AI as a core component, releasing open models as a distribution or community-building strategy:
+
+- **JetBrains (Zed)**: AI-powered IDE features backed by open models
+- **Krea**: AI image generation platform with open model components
+- **Photoroom**: AI photo editing leveraging open-source models
+
+This framework reveals that the open-source AI landscape is not primarily a geopolitical competition — it is a diverse ecosystem of actors with differing incentives, business models, and release strategies. The existing page's focus on U.S.–China strategy captures only one dimension of a much broader phenomenon.
 
 ## Open Questions
 

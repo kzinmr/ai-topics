@@ -1,11 +1,12 @@
 ---
 title: Poolside
 created: 2026-04-29
-updated: 2026-05-01
+updated: 2026-06-29
 type: entity
 tags: [company, model, coding-agents]
 sources:
   - raw/newsletters/2026-04-28-builders.md
+  - raw/newsletters/2026-06-28-latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expanding-the-breadth-of.md
 ---
 
 # Poolside
@@ -18,7 +19,7 @@ sources:
 
 | Model | Total Params | Activated | Type | License |
 |-------|-------------|-----------|------|---------|
-| **Laguna M.1** | 225B | 23B | MoE | Proprietary (API preview) |
+| **Laguna M.1** | 225B | 23B | MoE | Apache 2.0 |
 | **Laguna XS.2** | 33B | 3B | MoE | **Apache 2.0** (open-weight) |
 
 **Laguna XS.2** is Poolside's first open-weight release, notable for:
@@ -39,7 +40,7 @@ sources:
 
 Poolside has been building an internal **"Model Factory"** over several years, encompassing proprietary data pipelines, training stack, and agent infrastructure. Their initial focus was on **public sector deployments** with strict security requirements (on-prem, air-gapped).
 
-The April 2026 Laguna release marks their first public shipping of foundation models. They've committed to continued open progress in the model ecosystem.
+The April 2026 Laguna release marked their first public shipping of foundation models. In June 2026, Poolside released Laguna M.1 under Apache 2.0, affirming that open weights are now their default. "Open weights are now our default. We'll keep building toward the frontier and releasing increasingly capable models in the open."
 
 ## Training Stack
 
