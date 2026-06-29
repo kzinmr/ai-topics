@@ -1,3 +1,15 @@
+## [2026-06-29] llm-pricing-monitor — pricing correction
+
+Live pricing fetch from all 4 providers (OpenAI, Anthropic, Google, DeepSeek). 1 change detected:
+
+- **comparisons/llm-api-pricing.md** — Corrected Gemini 3.1 Flash Lite output: $0.50 → $1.50/M (Global). The 06-22 changelog had erroneously "corrected" this from $1.50 to $0.50; live Vertex AI page confirms $1.50/M. Added cached input $0.025/M. Added to cache pricing table. Removed incorrect Google reference from 06-22 changelog.
+
+All other provider prices verified unchanged:
+- OpenAI: GPT-5.5 ($5/$30), GPT-5.4 ($2.50/$15), GPT-5.4-mini ($0.75/$4.50), GPT-5.4-nano ($0.20/$1.25) ✅
+- Anthropic: Opus 4.8 ($5/$25), Sonnet 4.6 ($3/$15), Haiku 4.5 ($1/$5), Fable 5 ($10/$50) ✅
+- Google: 3.1 Pro ($2/$12), 3.5 Flash ($1.50/$9), 3 Flash Preview ($0.50/$3) ✅
+- DeepSeek: V4-Flash ($0.14/$0.28), V4-Pro ($0.435/$0.87) ✅
+
 ## [2026-06-29] blog-wiki-ingest — blog triage enrichment (Case C2 recovery)
 
 Blog-triage output parse failed but checkpoint valid (today's date). No take decisions. Processed 2 reference enrichments:

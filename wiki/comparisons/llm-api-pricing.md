@@ -2,7 +2,7 @@
 title: "LLM API Pricing Comparison — US vs China Providers"
 type: comparison
 created: 2026-06-09
-updated: 2026-06-22
+updated: 2026-06-29
 tags:
   - comparison
   - economics
@@ -65,7 +65,7 @@ The models listed below are each provider's **latest generation** as of June 202
 | Google | Gemini 3.1 Pro | Frontier | $2.00 | $12.00 | $0.20 | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | Google | Gemini 3.5 Flash | Frontier | $1.50 | $9.00 | $0.15 | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | Google | Gemini 3 Flash Preview | Budget | $0.50 | $3.00 | $0.05 | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
-| Google | Gemini 3.1 Flash Lite | Budget | $0.25 | $0.50 | — | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
+| Google | Gemini 3.1 Flash Lite | Budget | $0.25 | $1.50 | $0.025 | — | — | — | 1M | — | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | Cohere | Command R+ | Frontier | $3.00 | $15.00 | — | — | — | — | 128K | — | [cohere](https://cohere.com/pricing) |
 
 ### China — Frontier
@@ -129,6 +129,7 @@ Sorted by cache read price — the price you actually pay for repeated input tok
 | Google | Gemini 3.5 Flash | $1.50 | $0.15 | 90% | **$0.42** |
 | Google | Gemini 3 Flash Preview | $0.50 | $0.05 | 90% | **$0.14** |
 | Google | Gemini 3.1 Pro | $2.00 | $0.20 | 90% | **$0.56** |
+| Google | Gemini 3.1 Flash Lite | $0.25 | $0.025 | 90% | **$0.07** |
 | Anthropic | Claude Haiku 4.5 | $1.00 | $0.10 | 90% | **$0.28** |
 | Anthropic | Claude Sonnet 4.6 | $3.00 | $0.30 | 90% | **$0.84** |
 | Anthropic | Claude Opus 4.8 | $5.00 | $0.50 | 90% | **$1.40** |
@@ -363,7 +364,8 @@ OpenAI removed standalone o3/o4-mini from its pricing page (June 2026), leaving 
 
 | Date | Change | Source |
 |------|--------|--------|
-| 2026-06-22 | DeepSeek: updated context window from 128K to 1M (384K max output); corrected cache read precision ($0.0028 V4-Flash, $0.003625 V4-Pro); updated source URL to api-docs.deepseek.com. Google: corrected Gemini 3.1 Flash Lite output from $1.50 to $0.50 | [deepseek](https://api-docs.deepseek.com/quick_start/pricing), [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
+| 2026-06-29 | Google: corrected Gemini 3.1 Flash Lite output from $0.50 to $1.50/M (Global); added cached input $0.025/M; added to cache pricing table | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
+| 2026-06-22 | DeepSeek: updated context window from 128K to 1M (384K max output); corrected cache read precision ($0.0028 V4-Flash, $0.003625 V4-Pro); updated source URL to api-docs.deepseek.com | [deepseek](https://api-docs.deepseek.com/quick_start/pricing) |
 | 2026-06-09 | Frontier model review: moved Gemini 2.5, GPT-4.1, Claude Sonnet 4/4.5, Opus 4.1 to Legacy. Added Gemini 3.5 Flash, Gemini 3.1 Pro, Claude Opus 4.8, GPT-5.5 | Wiki entity pages |
 | 2026-06-09 | Cache/batch enrichment for all providers | Max Woolf/OpenRouter, Anthropic docs |
 | 2026-06-09 | Initial creation | User-provided CSV + wiki entity pages |
