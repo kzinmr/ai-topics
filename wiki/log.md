@@ -1,3 +1,28 @@
+## [2026-06-29] — active-crawl | 3 new concept pages
+
+**Sources**: HN Algolia + X/Twitter trending + blogwatcher DB gap analysis (June 29, 2026)
+**Topics**: Mixture of Agents (arXiv papers), Model Training as Code (Aleph Alpha blog), CPU Inference for LLMs (compiled research)
+
+### [[concepts/cpu-inference-llm]]
+**Action**: Created concept page `concepts/cpu-inference-llm.md`
+**Source**: Research compilation from llama.cpp README, ZSE project, HN discussions
+**Tags**: cpu-inference, inference, quantization, local-llm, hardware
+**Coverage gap**: wiki had 0 pages on CPU-specific LLM inference despite 15 GPU inference pages
+
+### [[concepts/mixture-of-agents]]
+**Action**: Created concept page `concepts/mixture-of-agents.md`
+**Source**: arXiv:2409.07487 (MoA is All You Need, 2024) + arXiv:2605.29116 (Beyond Consensus, 2026)
+**Tags**: mixture-of-agents, multi-agent, agents, llm, model, ensemble
+**Coverage gap**: No prior MoA coverage despite mixture-of-experts being well-documented
+
+### [[concepts/model-training-as-code]]
+**Action**: Created concept page `concepts/model-training-as-code.md`
+**Source**: https://aleph-alpha.com/en/blog/model-training-as-code/ (165 HN pts, June 2026)
+**Tags**: model-training-as-code, training, mlops, workflow, experiment-tracking
+**Coverage gap**: MTaC paradigm not documented despite strong HN signal
+
+**Raw articles created**: 2024-09-04_2409.07487_mixture-of-agents.md, 2026-05-27_2605.29116_beyond-consensus-moa.md, 2026-05-22_aleph-alpha_model-training-as-code.md, 2026-06-29_cpu-inference-llm-trend.md
+**SCHEMA.md tags added**: mixture-of-agents, model-training-as-code, flyte, weights-and-biases, cpu-inference
 ## [2026-06-29] llm-pricing-monitor — pricing correction
 
 Live pricing fetch from all 4 providers (OpenAI, Anthropic, Google, DeepSeek). 1 change detected:

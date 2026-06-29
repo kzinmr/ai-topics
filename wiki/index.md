@@ -74,22 +74,22 @@
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
 - [[concepts/after-automation]] — After Automation (Paradox)
-- [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
 - [[concepts/ag2-autogen]] — AG2 / AutoGen — Multi-agent framework
-- [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 - [[concepts/agent-account-provisioning]] — Agent Account Provisioning
-- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
 - [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
-- [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
 - [[concepts/agent-distillation]] — Agent Distillation
-- [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 - [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
-- [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/agent-economics]] — Agent Economics
-- [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
 - [[concepts/agent-first-design]] — Agent-First Design
-- [[concepts/ai-benchmarks/agentdojo]] — AgentDojo: prompt injection attacks/defenses for agents (ETH Zurich, NeurIPS 2024🆕)
 - [[concepts/agent-harness-primitives]] — Agent Harness Primitives
+- [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
+- [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
+- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
+- [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
+- [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
+- [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
+- [[concepts/ai-benchmarks/agentdojo]] — AgentDojo: prompt injection attacks/defenses for agents (ETH Zurich, NeurIPS 2024🆕)
 - [[concepts/ai-benchmarks/hal-leaderboard]] — Holistic Agent Leaderboard: unified agent eval (Princeton, 2025🆕)
 - [[concepts/ai-benchmarks/index]] — AI Benchmarks Sub-Index: 105 benchmark/tool pages (June 26) — see sub-index for full catalog
 - [[concepts/ai-benchmarks/osworld]] — OSWorld: multimodal OS agents, real desktop VMs, Ubuntu/Windows/macOS (2024🆕)
@@ -116,6 +116,7 @@
 - [[concepts/codex-logging-bug]] — Codex Logging Bug — OpenAI Codex SQLite feedback logs writing up to 640 TB/year to local SSDs, rapid SSD wear, GitHub issue #28224, infrastructure incident affecting developer machines (June 24)
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
 - [[concepts/continual-learning]] — Continual Learning; enriched with Advanced Frameworks (Dwarkesh Patel) — RLVR generalization limits, OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision (June 27)
+- [[concepts/cpu-inference-llm]] — CPU Inference for LLMs — Running LLMs on consumer/edge CPUs via quantization (llama.cpp, ZSE, Ollama); cost efficiency and privacy trade-offs vs GPU/cloud
 - [[concepts/cve-2026-55607-claude-code-sandbox-escape]] — CVE-2026-55607 — Claude Code sandbox escape via .git worktree naming, symlink manipulation, and git fsmonitor execution rewrites; disclosed by @stretchcloud (June 26, 2026)
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)
 - [[concepts/flash-attention-4]] — FlashAttention-4 — CUDA kernel for Transformer attention on Blackwell B200; 1605 TFLOPs/s, 71% utilization, 1.3× faster than cuDNN; FA4 inference optimizations by Modal (June 29)
@@ -127,20 +128,21 @@
 - [[concepts/kv-cache]] — KV Cache — Key-Value Caching in Transformer Inference; eliminates redundant recomputation during autoregressive generation
 - [[concepts/kv-cache-compaction]] — KV Cache Compaction — Ramp Labs' attention-matching framework for multi-agent token savings
 - [[concepts/kv-cache-compression]] — KV Cache Compression — Eviction, quantization, and geometry-based methods for reducing KV cache memory; two infrastructure problems (FlashAttention scores, paged-attention block reclamation) (June 29)
-- [[concepts/triattention]] — TriAttention — Trigonometric KV Compression; pre-RoPE geometry scoring + forward-packing compaction; 10.7× memory reduction, 2.5× throughput (NVIDIA, ICML 2026) (June 29)
 - [[concepts/llm-cost-crisis]] — LLM Cost Crisis / Tokenpocalypse — spiraling inference costs from premium models, agent multiplicative consumption, and organizational proliferation
 - [[concepts/loop-engineering]] — Loop Engineering; enriched with 0xCodez 14-step roadmap (4-condition test, 5 building blocks, Ralph Wiggum loop, security tax, common mistakes) + HuaShu PDF synthesis (June 25)
 - [[concepts/mai-thinking-1-report]] — MAI-Thinking-1 is a technical model developed by the Microsoft AI Team, described as a "hill-climbing machine" for advanced reasoning.
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
 - [[concepts/meta-harness]] — Meta-Harness; added Omnigent (Databricks) commercial implementation section — first major open-source production meta-harness (June 25)
 - [[concepts/mistral-ocr-4]] — Mistral OCR 4 — SOTA Optical Character Recognition model; multilingual document parsing, structured markdown/JSON output, superior to Azure/Gemini/Amazon on benchmarks, 1,000 pages/min throughput (June 24)
+- [[concepts/mixture-of-agents]] — Mixture of Agents (MoA) — Ensemble technique where multiple LLM instances collaborate via proposer-aggregator pattern; trace-level synthesis outperforms consensus voting
 - [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23)
 - [[concepts/model-quantization]] — Model Quantization; enriched with Expert-Aware Quantization (MoE-specific: Q4-hot/Q2-cold recovers ~90% of Q2→Q4 gap) (June 23)
+- [[concepts/model-training-as-code]] — Model Training as Code (MTaC) — Imperative code representation of end-to-end model training pipelines; composability, consensus, provenance via Flyte + W&B trunk-based development
 - [[concepts/nvidia-45c-data-center-cooling]] — NVIDIA 45°C Data Center Cooling — Rubin generation 100% liquid-cooled AI platform; 45°C warm-water closed-loop design, near-zero water consumption, dry-cooler heat rejection (June 25)
+- [[concepts/open-source-ai]] — Open-Source AI Strategy — Strategic use of open-source AI for rapid iteration and global adoption; 3-category open model makers framework (Pure, Big Tech, Product Companies) (June 29)
 - [[concepts/open-weight-vs-closed-llm-gap]] — Open-Weight vs Closed LLM Performance Gap — Analysis of time lag between open-weight and closed-source frontier model capabilities (Doubleword, June 2026)
 - [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
 - [[concepts/openai-jalapeno-inference-chip]] — OpenAI Jalapeño — Custom LLM inference chip co-developed with Broadcom; 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark at production frequency (June 25)
-- [[concepts/open-source-ai]] — Open-Source AI Strategy — Strategic use of open-source AI for rapid iteration and global adoption; 3-category open model makers framework (Pure, Big Tech, Product Companies) (June 29)
 - [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
 - [[concepts/prompt-injection]] — Prompt Injection — AI security vulnerability where untrusted input manipulates model behavior by exploiting role confusion and tokenization boundaries (June 23)
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt; enriched with Drew Breunig's "The Problem is Prompt Debt" framework — three-stage spiral, fighting the weights, Goedecke vs Breunig comparison, prevention via DSPy/GEPA (June 23)
@@ -151,6 +153,7 @@
 - [[concepts/show-us-your-agent-skills]] — Show Us Your Agent Skills — YouTube series (Vanishing Gradients × PyMC Labs) documenting real agent workflows from 22 builders; 51 skills, 79 workflows (June 27)
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
+- [[concepts/triattention]] — TriAttention — Trigonometric KV Compression; pre-RoPE geometry scoring + forward-packing compaction; 10.7× memory reduction, 2.5× throughput (NVIDIA, ICML 2026) (June 29)
 - [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
 - [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
 ## Comparisons
