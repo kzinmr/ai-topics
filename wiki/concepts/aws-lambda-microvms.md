@@ -141,4 +141,5 @@ Lambda MicroVMs represents AWS's entry into the AI agent sandbox market with a l
 - [[entities/amazon-bedrock-agentcore]] — AWS AgentCore platform
 - [[concepts/sandbox]] — Agent Sandboxing overview
 - [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API
+- [[comparisons/lambda-microvms-vs-agentcore]] — Lambda MicroVMs vs AgentCore — Isolation Primitive vs Managed Platform
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing comparison

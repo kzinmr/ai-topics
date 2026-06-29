@@ -1,7 +1,7 @@
 ---
 title: Amazon Bedrock AgentCore
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-06-29
 type: entity
 tags:
   - platform
@@ -69,6 +69,7 @@ AWS holds **31% cloud market share** — the largest infrastructure base. AgentC
 ## Related
 
 - [[concepts/aws-lambda-microvms]] — AWS Lambda MicroVMs: Firecracker-based low-level sandbox primitive (alternative/complement to AgentCore Code Interpreter)
+- [[comparisons/lambda-microvms-vs-agentcore]] — Lambda MicroVMs vs AgentCore — Isolation Primitive vs Managed Platform
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Google's full-stack competitor
 - [[concepts/microsoft-agent-365]] — Microsoft's governance layer
 - [[concepts/harness-engineering/agent-harness]] — The infrastructure layer for LLM agents

@@ -1,3 +1,12 @@
+## [2026-06-29] Lambda MicroVMs vs AgentCore — Comparison Page
+
+**Created**: `comparisons/lambda-microvms-vs-agentcore.md` — AWS Lambda MicroVMs と Amazon Bedrock AgentCore の比較分析ページを作成。異なるスタックレイヤー（分離プリミティブ vs マネージドプラットフォーム）として整理し、アーキテクチャ位置付け、使用条件、競合状況を分析。
+
+**Updated**:
+- `concepts/aws-lambda-microvms.md` — 比較ページへのリンク追加
+- `entities/amazon-bedrock-agentcore.md` — 比較ページへのリンク追加
+- `index.md` — 比較ページを Comparisons セクションに追加
+
 ## [2026-06-29] AWS Lambda MicroVMs — Wiki Ingestion
 
 **Source**: AWS News Blog (2026-06-22) — "Run isolated sandboxes with full lifecycle control: AWS Lambda introduces MicroVMs"

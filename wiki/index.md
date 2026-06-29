@@ -172,6 +172,7 @@
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison
 - [[comparisons/llm-api-pricing]] — LLM API Pricing Comparison — US vs China Providers
 - [[comparisons/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
+- [[comparisons/lambda-microvms-vs-agentcore]] — AWS Lambda MicroVMs vs Amazon Bedrock AgentCore — Isolation Primitive vs Managed Platform
 - [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison — April 2026
 - [[comparisons/open-harness-vs-agent-framework]] — Open Harness vs Agent Framework/SDK — Essential Differences as Investment Targets
 - [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries for LLMs — Comparison Portal
