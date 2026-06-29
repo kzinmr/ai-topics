@@ -668,3 +668,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Verified**: index.md — 0 pipe corruption, 0 line prefix, 0 triple brackets, 0 duplicates, 0 ghost entries, 0 cross-section misplacement — clean.
 - **Verified**: All `_index.md` files — 0 pipe corruption (false-positive shell script false matches corrected).
 - **Filesystem**: 837 entities, 1840 concepts, 31 comparisons, 13 events, 4 queries = 2725 total Layer 2
+
+## 2026-06-29
+- `concepts/evaluation/llm-as-judge` — Added BINEVAL section (Cho et al., 2026, ICML Workshop). Binary question decomposition for interpretable LLM evaluation. Raw paper + summary to `raw/papers/2026-06-25_2606.27226_*`.
