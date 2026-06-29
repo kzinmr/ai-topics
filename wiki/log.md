@@ -1,3 +1,7 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
 ## [2026-06-29] Watchdog auto-fix
 
 ### Auto-fixed
@@ -661,32 +665,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 ---
 
-# Wiki Log
-- 2026-06-23: Created entities/martinfowler.md — Martin Fowler entity page enriched with PRINCE case study (Bayer AG + Thoughtworks, Agentic RAG + Text-to-SQL), context engineering and harness engineering sections. Added redirect from martin-fowler.md. (June 23)
-- 2026-06-23: Dreaming wiki-ingest — enriched `concepts/claude-code/claude-code-skills.md` with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt, comparison table). +100 lines. (June 23)
-  - Sources: Anthropic Engineering Blog (Steering Claude Code)
-- 2026-06-23: Blog wiki-ingest — enriched 6 pages (4 takes from blog-triage, recovered from checkpoint).
-  - Enriched `entities/simon-willison.md` — Prompt Injection as Role Confusion research (destyling: 61%→10%) and Porting Moebius 0.2B to browser via Claude Code
-  - Enriched `entities/martin-alderson.md` — added Machine Learning Research section with expert-aware quantization for MoE models (Qwen3.6 35B-A3B, Q4-hot/Q2-cold recovers ~90% gap)
-  - Enriched `entities/modal-labs.md` — added Sandbox Startup Latency Analysis (5-stage lifecycle, Readiness Probes GA, Warm Pools)
-  - Enriched `concepts/agentic-engineering.md` — added Moebius browser porting case study (muse-on-X, subagent delegation, vibe coding)
-  - Enriched `concepts/model-quantization.md` — added Expert-Aware Quantization (MoE-specific) subsection
-  - Enriched `concepts/modal-sandboxes.md` — added 5-stage sandbox startup lifecycle and Readiness Probes
-  - Sources: simonwillison.net (Prompt Injection as Role Confusion, Porting Moebius), martinalderson.com (Expert-aware quantisation), Modal Blog (Sandbox startup latency)
-- 2026-06-23: Newsletter wiki-ingest — processed 3 articles from 6 newsletters.
-  - Enriched `entities/glm-5-zai.md` — added Nate Lambert analysis of GLM-5.2 as "step change for open agents" (strategic release context, economic impact, first-hand experience, ecosystem adoption)
-  - Enriched `concepts/google-spacex-ai-compute-deal.md` — added Reflection AI $6.3B deal (SpaceX's third GPU rental customer), SpaceX as $28B/yr neocloud, Baseten $13B Series F
-  - Enriched `concepts/claude/mythos.md` — added Gray Swan red-teaming analysis (Zico Kolter/Matt Fredrikson interview, Shade/Cygnal/Arena tools, "lethal trifecta", agent security nightmare)
-  - Sources: Interconnects (Nate Lambert), AINews (swyx/Latent Space), Latent Space (Gray Swan)
-# Wiki Log
-- 2026-06-23: Processed batch of 5 articles.
-  - Added `reframing-superintelligence-fhi-2019.md` (K. Eric Drexler)
-  - Added `2026-06-03_microsoft-mai-thinking-1-tech-report.md` (Microsoft AI Team)
-  - Added `dwarkesh.com--p-alex-imus-phil-trammell--f12d8644.md` (Alex Imas, Phil Trammell)
-  - Added `2026-06-10_darioamodei_policy-on-the-ai-exponential.md` (Dario Amodei)
-  - Added `2026-06-18_agent-safety-separation-of-duties.md` (Aakash Gupta)
-  - Created concepts: `superintelligence`, `cais`, `mai-thinking-1-report`, `agent-safety`.
-- 2026-06-23: Watchdog fix — removed 1 ghost entry from concepts/_index.md (concepts/capabilities-based-security — target file did not exist).
+---
 
 - 2026-06-24: Watchdog fix — added 2 missing `---` separators in log.md between consecutive ## sections. No other auto-fixable issues found. Index: Format B (clean). _index.md: 0 pipe corruption (false positives — all legitimate markdown tables). Report: wiki-health clean (0 stale pages, 30 orphans flagged for human review).
 - 2026-06-25: enriched [[concepts/loop-engineering]] with HuaShu PDF synthesis (Four-Layer Stack, Five Moves, Generator/Evaluator, Anti-patterns, Real Loops, Four Costs, First Loop Recipe, Economics of Judgment); added raw/papers/2026-06-24_huashu_loop-engineering-anthropic-playbook.pdf
