@@ -56,3 +56,4 @@ Sandboxing for AI agents is the practice of executing untrusted agent code in is
 - [Firecracker MicroVM | AWS](https://firecracker-microvm.github.io/)
 - [Claude Code Security | Anthropic Docs](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/security)
 - [gVisor: Application Kernel for Containers | Google](https://gvisor.dev/)
+- [AWS Lambda MicroVMs](https://aws.amazon.com/lambda/lambda-microvms) — Firecracker-based sandbox primitive (2026-06)

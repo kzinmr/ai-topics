@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-06-28T18:24:46.133588+00:00",
+  "triage_run_id": "20260628T180004Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming cycle 2026-06-28: パイプライン飽和状態（blog-triage Takes=0、newsletter-triage Takes=0、active-crawl 4ページ作成済み）。222件のraw articlesから82件の未処理記事を特定し、17テーマにグルーピング。Take 2件（Warp Factory Engineers覚書 → dark-factory概念拡充、Open Source vs Closed LLM Gap → stub概念ページの拡充）、Reference 6件（NSA/Mythos、Sakana Fugu、Warp Skills、OpenAI Agents、MCPorter、Noema AI Companion、Gemini Android）、Skip 6バッチ（マーケティング・非AI・処理済み・ElevenLabs製品ドキュメント・sitemap non-substantive・その他低価値）。",
+  "decisions": [
+    {
+      "item_id": "dreaming-nsa-mythos-anthropic",
+      "source": "blog",
+      "source_name": "nytimes.com (HN discussion)",
+      "title": "NSA lost access to Mythos amid Anthropic dispute",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
+      "raw_path": "~/wiki/raw/articles/2026-06-25_hn-discussion_nsa-mythos-anthropic-dispute.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ NYT報道：NSAがMythosへのアクセスを喪失。HN 248 points。既存のconcepts/anthropic/dod-dispute.md（114行）とconcepts/claude/mythos.md（224行）が存在するが、NSAアクセス喪失という具体的イベントは未記録。dod-disputeページへのenrichment候補。",
+      "candidate_wiki_path": "concepts/anthropic/dod-dispute.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-openai-agents-transforming-work",
+      "source": "blog",
+      "source_name": "openai.com",
+      "title": "How agents are transforming work",
+      "url": "https://openai.com/index/how-agents-are-transforming-work/",
+      "raw_path": "~/wiki/raw/articles/2026-06-25_openai-agents-transforming-work.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ OpenAI公式ブログ。Codex adoption data — 2025年8月時点でChatGPTが主力、2026年6月には全部署（法務・採用含む）がCodexを主要ツールに。agentic AIのenterprise浸透を示す定量データ。既存のcodex-knowledge-work.mdやagentic-knowledge-work.mdへの追記候補。",
+      "candidate_wiki_path": "concepts/codex/codex-knowledge-work.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-mcporter-mcp",
+      "source": "blog",
+      "source_name": "openclaw (GitHub)",
+      "title": "MCPorter: TypeScript Runtime, CLI, and Code-Generation Toolkit for MCP",
+      "url": "https://github.com/openclaw/mcporter",
+      "raw_path": "~/wiki/raw/articles/2026-06-26_openclaw_mcporter-mcp-typescript-tool.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ MCPorter: MCP用TypeScriptランタイム＆CLI（GitHub 4.7k stars）。zero-config discovery、CLI生成、typed tool clients、record/replay機能。OpenClawエコシステムの新ツール。concepts/mcp.mdやconcepts/openclaw.mdへの追記候補。",
+      "candidate_wiki_path": "concepts/openclaw-ecosystem-tools.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-noema-ai-companion",
+      "source": "blog",
+      "source_name": "noemamag.com",
+      "title": "How AI Will Change Us",
+      "url": "https://www.noemamag.com/how-ai-will-change-us/",
+      "raw_path": "~/wiki/raw/articles/2026-06-26_noema_how-ai-will-change-us.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ OpenAI研究者Houda Nait El Barjの哲学的エッセイ。AI companionの親密性と人間のpresenceの関係をHeideggerのGeworfenheit概念で考察。MIT Media Lab共同RCTの影の側面（ヘビーユーザーほど孤独）。AI-and-authenticity概念への追記候補だが、NJ低。",
+      "candidate_wiki_path": "concepts/ai-and-authenticity.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-gemini-android-use",
+      "source": "blog",
+      "source_name": "Google / philschmid",
+      "title": "Gemini Android Computer Use Quickstart",
+      "url": "https://ai.google.dev/gemini-api/docs/computer-use",
+      "raw_path": "~/wiki/raw/articles/2026-06-25_google-gemini_android-computer-use-quickstart.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Google GeminiのAndroid向けcomputer useクイックスタート。mobile OS上のGUI操作自動化。gemini-computer-use.mdへの追記候補。",
+      "candidate_wiki_path": "concepts/gemini-computer-use.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-marketing-batch",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "Batch skip: Company marketing & product guides",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 企業ブログのマーケティング・製品ガイド記事群。Decagon（3記事: AI customer service, Intercom alternatives, Our Bet on You）はentity存在（71行）で内容はマーケティング。Harvey（2記事: employment contract review, Jacob Phillips）はentity存在（219行）。Hex Technologies（3記事: data orchestration, fed for a day, what is underfitting）はentity存在。Glean（3記事: no-code automation, Gartner no-code, Work AI Index）はentity存在。Cohere（2記事: Aston Martin F1, North Wiz security）はentity存在。いずれも本文冒頭にnavigation chrome/product説明のみでwiki追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（複数マーケティング記事のバッチスキップ）"
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "Batch skip: Non-AI blog content",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AI関連外のブログ記事群。Tedium（Apple Micron RAM shortage）、oldvcr.blogspot.com（LeMote HTML — vintage computing）、maurycyz.com（Astro ARP38 — 音楽）、johndcook.com（3記事: 数学 — harmonic numbers, decimal period, brace expansion）、idiallo.com（2記事: Laziest Generation, Chinese models illegal — 一般テック）、daringfireball.net（2記事: Bernie Sanders, general）、nesbitt.io（package management weekly）、construction-physics.com（reading list）。AI/LLM relevance低。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（非AI記事群のバッチスキップ）"
+    },
+    {
+      "item_id": "dreaming-skip-already-processed",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "Batch skip: Already processed by other pipelines",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 他パイプラインで処理済みの記事群。getsuperintel Fable 5（newsletter-triage 07:22でskip判定済み、concepts/claude/fable-5.md 362行でカバー済）。active-crawl由来のInkeep OpenKnowledge（本日11:03にwikiページ作成済み）。arxiv self-harness（concepts/self-harness.md存在確認要）。arxiv Qwen AgentWorld（concepts/qwen-agentworld.md存在確認要）。Fireworks AI Cursor Composer 2（concepts/coding-agents/cursor-composer-2-5.md存在）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（他パイプライン処理済みのバッチスキップ）"
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-product",
+      "source": "blog",
+      "source_name": "elevenlabs.io",
+      "title": "Batch skip: ElevenLabs product documentation",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabs製品ドキュメント群（7記事: rate limiting, STT under 200ms, voice agent latency, ads engine, expanding in CA, impact documentary, what is AI voice agent）。entities/elevenlabs.md（247行）が既に充実しており、技術的詳細は製品ドキュメントとして外部参照可能。rate limiting/latency記事はengineering guideだがvoice-agent-evaluation.md（82行）の範疇。entity enrichmentとしての追加価値は限定的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（ElevenLabs製品ドキュメント7記事のバッチスキップ）"
+    },
+    {
+      "item_id": "dreaming-skip-sitemap-non-ai",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "Batch skip: Sitemap-scraped non-substantive content",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ sitemap経由で取得したがwiki価値の低い記事群。shkspr.mobi（PS5コントローラーレビュー — non-AI gadget review）、buyersguide.macrumors.com（Mac rumors buying guide）、dfarq.homeip.net（Spyglass IPO — tech history）、seangoedecke.com（2記事: saying the obvious thing, AI inference profitable — いずれもentity存在の短文opinion）。xbox.com（console price update — non-AI）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（sitemap由来の非実質コンテンツのバッチスキップ）"
+    },
+    {
+      "item_id": "dreaming-skip-other-processed",
+      "source": "mixed",
+      "source_name": "multiple",
+      "title": "Batch skip: Other unprocessed but low-value articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ その他の未処理記事群。CVE-2026-55607（concepts/cve-2026-55607-claude-code-sandbox-escape.md既存）。HN Qualcomm-Modular acquisition（active-crawlで処理済みの可能性）。HN DeepSpec inference optimizations（active-crawlで処理済みの可能性）。Luma retrieval for agents SF event（イベント告知、wiki不適）。hugobowne Claude Code 8bit video skill（動画コンテンツ、transcript未取得）。Maven elite AI-assisted coding（マーケティング）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（低価値・他処理済み記事のバッチスキップ）"
+    }
+  ]
+}

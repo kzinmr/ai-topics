@@ -75,10 +75,12 @@ Both are Layer 1 isolation primitives for AI agent sandboxing:
 
 - **2018**: AWS open-sources Firecracker to power Lambda and Fargate with stronger multi-tenant isolation
 - **~2024-2025**: AI agent companies begin adopting Firecracker for code execution sandboxes as agent use cases demand running untrusted code
+- **2026-06-22**: AWS launches [[concepts/aws-lambda-microvms]] — Firecracker-based serverless compute primitive for isolated, stateful execution environments. First AWS service to expose Firecracker directly as a sandbox primitive for multi-tenant agent applications
 
 ## Related Pages
 
 - [[concepts/sandbox]] — AI agent sandboxing overview
+- [[concepts/aws-lambda-microvms]] — AWS Lambda MicroVMs (Firecracker-based sandbox primitive)
 - [[concepts/ai-infrastructure]] — AI infrastructure landscape
 - [[entities/browserbase]] — Browser automation infrastructure
 - [[concepts/gvisor|gVisor]] — Alternative isolation primitive

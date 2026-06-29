@@ -68,6 +68,7 @@ AWS holds **31% cloud market share** — the largest infrastructure base. AgentC
 
 ## Related
 
+- [[concepts/aws-lambda-microvms]] — AWS Lambda MicroVMs: Firecracker-based low-level sandbox primitive (alternative/complement to AgentCore Code Interpreter)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Google's full-stack competitor
 - [[concepts/microsoft-agent-365]] — Microsoft's governance layer
 - [[concepts/harness-engineering/agent-harness]] — The infrastructure layer for LLM agents

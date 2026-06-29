@@ -1,3 +1,19 @@
+## [2026-06-29] AWS Lambda MicroVMs — Wiki Ingestion
+
+**Source**: AWS News Blog (2026-06-22) — "Run isolated sandboxes with full lifecycle control: AWS Lambda introduces MicroVMs"
+
+**Created**:
+- `raw/articles/2026-06-22_aws-lambda-microvms-announcement.md` — raw article
+- `concepts/aws-lambda-microvms.md` — full concept page; Firecracker-based serverless sandbox primitive for isolated/stateful execution; 3 core capabilities (VM isolation, rapid launch/resume, stateful execution), comparison table with Lambda Functions, Agent Sandbox ecosystem positioning, workflow diagram
+
+**Enriched**:
+- `concepts/firecracker.md` — added 2026-06-22 history entry for Lambda MicroVMs launch, added wikilink to related pages
+- `entities/amazon-bedrock-agentcore.md` — added Lambda MicroVMs to related pages (low-level sandbox primitive complement to AgentCore Code Interpreter)
+- `concepts/sandbox.md` — added Lambda MicroVMs product page to sources
+- `index.md` — added concepts/aws-lambda-microvms entry
+
+**Analysis**: Lambda MicroVMs vs AgentCore — see concept page for detailed comparison table
+
 ## [2026-06-28] X Bookmarks Ingest — Vercel Eve Framework
 
 **Source**: X Article (June 27, 2026) — "Building Agents with Vercel's Eve Framework"

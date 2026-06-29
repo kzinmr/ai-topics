@@ -104,6 +104,7 @@
 - [[concepts/ai-gateway]] — AI Gateway — centralized LLM API routing with cost controls, rate-limiting, observability (LangSmith, Glean, OpenRouter)
 - [[concepts/anthropic-alibaba-claude-ip-dispute]] — Anthropic-Alibaba Claude IP Dispute — June 2026 Anthropic accusation of illicit Claude distillation by Alibaba; NSA/Mythos access loss, export controls, US-China AI tensions (June 25)
 - [[concepts/apertus-sovereign-ai-model]] — Apertus — Open foundation model for sovereign AI (8B/70B), EU AI Act compliant, multilingual (1000+ languages), fully open training pipeline (June 23)
+- [[concepts/aws-lambda-microvms]] — AWS Lambda MicroVMs — Firecracker-based serverless sandbox primitive for isolated, stateful execution of untrusted/AI-generated code; snapshot-based near-instant launch, 8hr max runtime, 16vCPU/32GB (June 22🆕)
 - [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) is a model proposed by K. Eric Drexler that reframes superintelligence as a class of service-providing products.
 - [[concepts/claude-code/claude-code-artifacts]] — Claude Code Artifacts — shareable functional HTML pages for PR walkthroughs, project dashboards, and prototypes (June 24)

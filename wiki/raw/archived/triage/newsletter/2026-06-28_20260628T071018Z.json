@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-06-28T07:22:12.313265+00:00",
+  "triage_run_id": "20260628T071018Z",
+  "source": "newsletter",
+  "summary_ja": "Super Intel (Kim Isenberg)のFable 5シャットダウン2週間回顧。メイン記事はgetsuperintel.siteのペイウォール記事で、deemed exportメカニズム・Lutnick署名・NSA vs AP競合ナラティブなどの内容。既存 concepts/claude/fable-5.md（362行）に全内容取り込み済み（Two Weeks Later節・Export Control Directive節）。Raw articleも既に保存済み。他の16リンクは全てソーシャルメディア/バナー画像/Beehiivトラッキング/サブスクリプションで、記事コンテンツなし。Takes=0、新規Wiki作業不要。",
+  "decisions": [
+    {
+      "item_id": "<20260627.173151.718bc560@mta25>-1",
+      "source": "newsletter",
+      "source_name": "Super Intel",
+      "title": "Link 1 — Main: The Fable 5 Kill-Switch, Two Weeks On",
+      "url": "https://link.mail.beehiiv.com/v1/c/M4OR.../27b05e9f4c77f109",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-27-the-fable-5-kill-switch-two-weeks-on.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ メイン記事は既存concepts/claude/fable-5.md（362行）に全内容取り込み済み。deemed exportメカニズム・Lutnick署名・競合ナラティブ（Warner vs AP）など全キーポイントがTwo Weeks Later節（L301-321）およびExport Control Directive節（L248-262）にカバー済み。Raw articleも保存済み。新規Wiki作業不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-27\n**Subject:** The Fable 5 Kill-Switch, Two Weeks On\n**Collected:** 2026-06-28T07:10:16.884841+00:00\n**Articles linked:** 17\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/M4OR%2FZs6kVst%2F3p7fj6gWuQ%2F%2BDlsnhIXyVUZWfmBJ3D2GMDRG1uMMGS5ACbY%0AMkgjIBNdDantEk%2"
+    },
+    {
+      "item_id": "<20260627.173151.718bc560@mta25>-2",
+      "source": "newsletter",
+      "source_name": "Super Intel",
+      "title": "Link 2 — Banner image",
+      "url": "https://link.mail.beehiiv.com/v1/c/C3kQIX.../6280cfb096708e31",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-27-the-fable-5-kill-switch-two-weeks-on.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ニュースレター用バナー画像（beehiiv CDN）。記事コンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-27\n**Subject:** The Fable 5 Kill-Switch, Two Weeks On\n**Collected:** 2026-06-28T07:10:16.884841+00:00\n**Articles linked:** 17\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/M4OR%2FZs6kVst%2F3p7fj6gWuQ%2F%2BDlsnhIXyVUZWfmBJ3D2GMDRG1uMMGS5ACbY%0AMkgjIBNdDantEk%2"
+    },
+    {
+      "item_id": "<20260627.173151.718bc560@mta25>-3",
+      "source": "newsletter",
+      "source_name": "Super Intel",
+      "title": "Link 3 — Publication X banner image",
+      "url": "https://link.mail.beehiiv.com/v1/c/n2CbEm.../4694adb312f06764",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-27-the-fable-5-kill-switch-two-weeks-on.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 出版物のX/Twitterプロフィールバナー画像。ソーシャルメディアリンク。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-27\n**Subject:** The Fable 5 Kill-Switch, Two Weeks On\n**Collected:** 2026-06-28T07:10:16.884841+00:00\n**Articles linked:** 17\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/M4OR%2FZs6kVst%2F3p7fj6gWuQ%2F%2BDlsnhIXyVUZWfmBJ3D2GMDRG1uMMGS5ACbY%0AMkgjIBNdDantEk%2"
+    },
+    {
+      "item_id": "<20260627.173151.718bc560@mta25>-4-through-15",
+      "source": "newsletter",
+      "source_name": "Super Intel",
+      "title": "Links 4-15 — Beehiiv tracking links (batch)",
+      "url": "See raw newsletter file for individual URLs",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-27-the-fable-5-kill-switch-two-weeks-on.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Beehiivトラッキングリンク。サンプル解決結果: Link 4-5がCloudflareチャレンジ（403）、残りはソーシャルメディア/サブスクリプション/トラッキング。記事コンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-27\n**Subject:** The Fable 5 Kill-Switch, Two Weeks On\n**Collected:** 2026-06-28T07:10:16.884841+00:00\n**Articles linked:** 17\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/M4OR%2FZs6kVst%2F3p7fj6gWuQ%2F%2BDlsnhIXyVUZWfmBJ3D2GMDRG1uMMGS5ACbY%0AMkgjIBNdDantEk%2"
+    },
+    {
+      "item_id": "<20260627.173151.718bc560@mta25>-17",
+      "source": "newsletter",
+      "source_name": "Super Intel",
+      "title": "Link 17 — Status tracking pixel",
+      "url": "https://email.beehiivstatus.com/f4f64bc41f982e93e2574c9662d5ac649deb183f/hclick",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-27-the-fable-5-kill-switch-two-weeks-on.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ email.beehiivstatus.com ステータストラッキングピクセル。記事コンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-27\n**Subject:** The Fable 5 Kill-Switch, Two Weeks On\n**Collected:** 2026-06-28T07:10:16.884841+00:00\n**Articles linked:** 17\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/M4OR%2FZs6kVst%2F3p7fj6gWuQ%2F%2BDlsnhIXyVUZWfmBJ3D2GMDRG1uMMGS5ACbY%0AMkgjIBNdDantEk%2"
+    }
+  ]
+}
