@@ -1,3 +1,12 @@
+## [2026-06-29] blog-wiki-ingest — blog triage enrichment (Case C2 recovery)
+
+Blog-triage output parse failed but checkpoint valid (today's date). No take decisions. Processed 2 reference enrichments:
+
+- **entities/simon-willison.md** — Added "Jon Udell on Agent in the Loop" (Jun 28, 2026) entry to June 2026 Updates. Philosophical reframing of "human in the loop" → "agent in the loop" complements Simon's agentic engineering philosophy.
+- **entities/jim-nielsen.md** — Added "Intelligence Is Not Enough" Core Ideas section. Bryan Cantrill's Oxide talk on human values (resilience, teamwork, rigor, optimism) being irreplaceable in solving company-destroying bugs. Reinforces Jim's "People Are Not Friction" thesis.
+
+Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tributes, LLVM optimization, book review, etc.). Archived via archive_triage.py.
+
 ## [2026-06-29] Newsletter Wiki Ingest — Poolside and Open-Source AI Strategy
 
 **Source**: Interconnects / Robotic (Nathan Lambert) — "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem"

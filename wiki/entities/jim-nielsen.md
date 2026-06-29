@@ -2,13 +2,13 @@
 title: Jim Nielsen
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-06-29
 tags:
   - person
   - developer-tooling
   - writing
   - hn-popular
-sources: []
+sources: [raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md, raw/articles/collective-speed-isnt-the-sum-of-individual-speed--5ba65187.md]
 ---
 
 
@@ -102,6 +102,18 @@ Jim built [Can I Still Use?](https://canistilluse.com) — a site documenting wh
 - A practical response to platform dependency
 - Helps users make informed decisions about where to invest their time and data
 - Reflects his broader theme: **nothing digital is permanent, so plan accordingly**
+
+### Intelligence Is Not Enough
+
+Jim highlighted Bryan Cantrill's (Oxide CTO) talk arguing that pure intelligence — even artificial superintelligence — is insufficient for solving the hardest engineering problems. Cantrill described bugs at Oxide that were company-destroying: bugs with no precedent, where all available documentation and knowledge was actively incorrect. The team's breakthroughs came from solutions "an artificial super intelligence would've never suggested" because they ran against all known reasoning and documentation.
+
+The core thesis: **intelligence alone does not solve problems like the ones we encountered. Our ability to solve these problems had nothing to do with our collective intelligence as a team.** The qualities that mattered were resilience, teamwork, rigor, and optimism — human values, not cognitive horsepower.
+
+This reinforces Jim's existing argument in [[#People Are Not Friction]]: the best products come from teams of people across disciplines who know how to work with each other, not from attempts to obviate each other through automation. Cantrill's concrete engineering examples (company-destroying bugs solved by counterintuitive human insight) provide empirical grounding for Jim's philosophical position on the irreplaceability of human values in engineering.
+
+> *"We talk about super intelligence, but is anyone talking about super collaboration or super teamwork? We absolutely needed teamwork [at Oxide]."*
+
+Source: [[raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md]] — Jim's notes from Bryan Cantrill's talk
 
 ## Key Quotes
 
