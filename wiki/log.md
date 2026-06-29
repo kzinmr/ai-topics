@@ -671,3 +671,4 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 ## 2026-06-29
 - `concepts/evaluation/llm-as-judge` — Added BINEVAL section (Cho et al., 2026, ICML Workshop). Binary question decomposition for interpretable LLM evaluation. Raw paper + summary to `raw/papers/2026-06-25_2606.27226_*`.
+- **Ingested**: NVIDIA Research blog "KV Cache Compression and Its Infra Problems" (2026-06-15). Raw article → `raw/articles/2026-06-15_nvidia-kv-cache-compression-infra-problems.md`. Created `concepts/kv-cache-compression` (survey of eviction/quantization/geometry methods + two infrastructure problems) and `concepts/triattention` (pre-RoPE geometry scoring + forward-packing compaction, ICML 2026). Updated `concepts/kv-cache` and `concepts/flash-attention-4` with cross-references. Added missing index entries for `kv-cache`, `kv-cache-compaction`, `flash-attention-4`.

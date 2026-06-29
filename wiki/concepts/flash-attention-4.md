@@ -155,4 +155,5 @@ dtype = 'fp8', num_splits = 0, pack_gqa = True, q_stage = 1, page_size = 1
 
 - [[concepts/flash-attention]] — Original FlashAttention (Dao et al., 2022)
 - [[concepts/blackwell-gpu]] — NVIDIA Blackwell architecture
+- [[concepts/kv-cache-compression]] — FlashAttention's hidden scores create Infrastructure Problem 1 for eviction methods
 - [[entities/charles-frye]] — Reverse-engineered FA4 and led inference optimization contributions (Modal)
