@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-15
+updated: 2026-06-29
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -12,6 +12,7 @@ sources:
   - raw/articles/seangoedecke.com--anti-ai-nostalgia--c80b7b06.md
   - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
   - raw/articles/seangoedecke.com--ai-gpus-live-longer-than-three-years--a4c8235c.md
+  - raw/articles/seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md
 |---
 
 # Sean Goedecke
@@ -56,8 +57,9 @@ His writing philosophy is evident in his book's distribution model: **print at c
 || **2026-05-22** | Publishes "Weird projects I shipped with AI" — catalogs 5 personal projects (Skifreedle, Autodeck, Endless Wiki, VicFlora Offline, gh-standup) built with LLM assistance, arguing they are "existence proofs" that AI enables projects that would not otherwise exist |
 ||| **2026-06-03** | Publishes "Anti-AI nostalgia and the cult of the past" — philosophical analysis of anti-AI rhetoric through Umberto Eco's Ur-Fascism framework. Maps "real programmers" nostalgia onto fascist patterns of tradition-cult and modernism-rejection. Challenges popular Luddite historiography. Warns that disillusioned elite engineers are susceptible to movements promising a return to idealized past. |
 || **2026-05-31** | Publishes "Build agents, not pipelines" — comprehensive comparison of pipeline vs agent architectures for LLM systems. Recommends "when in doubt, use agents" based on context-gathering difficulty, future-proofing, and one-directional migration pattern. References [[concepts/harness-engineering/agent-vs-pipeline-architecture]] |
-| **2026-05-17** | Publishes "The just-say-no engineer was a ZIRP phenomenon" — argues the "just-say-no" engineering archetype thrived under zero-interest-rate conditions and is now endangered by AI, but AI is not the root cause |
-
+|| **2026-05-17** | Publishes "The just-say-no engineer was a ZIRP phenomenon" — argues the "just-say-no" engineering archetype thrived under zero-interest-rate conditions and is now endangered by AI, but AI is not the root cause |
+||| **2026-06-27** | Publishes "AI inference is obviously profitable" — A100 cost calculation ($1/M tokens), 70-80% gross margin analysis, rebuttal to VC-subsidy thesis. → [[concepts/ai-industry-financial-sustainability]] |
+|
 ## Core Ideas
 
 ### "If You Are Good at Code Review, You Will Be Good at Using AI Agents"
@@ -293,10 +295,30 @@ Sean Goedecke's June 14, 2026 post thoroughly debunks the "GPUs only last three 
 
 **Conclusion:** The claim is popular because it's useful for AI skeptics, not because it's true. It comes from a single pseudonymous tweet quoting a paid anonymous source. If an AI winter comes, providers can run B300s, H100s, or even A100s profitably for 6+ years.
 
+### AI Inference Is Obviously Profitable (June 2026)
+
+On June 27, 2026, Goedecke published "[AI inference is obviously profitable](https://seangoedecke.com/ai-inference-is-obviously-profitable/)" — a direct rebuttal to the popular claim that AI inference is unprofitable and must be subsidized by VC dumb money.
+
+**Core Argument**: AI inference is obviously profitable at current prices. The math:
+
+- **Physical cost calculation**: An A100 consumes 400W under load. Running a dense 70B model on 4× A100s (~2M tokens/hr) costs ~13¢/hr at industrial power prices. With cooling (pessimistically matching power), ~13¢/M output tokens.
+- **GPU amortization**: A100 at $20k, 5-year lifespan → $16k/yr recoup → ~$1.80/hr → total inference cost ~$1/M tokens.
+- **Market pricing**: GPT-5.4-mini charges $4.50/M tokens. Stronger OpenAI/Anthropic models are 3-6× that. Claimed 70-80% gross margins are "extremely plausible."
+- **Open LLM proof**: DeepSeek claims 80%+ profit margin on R1 inference, and their API pricing is less than half of OpenAI/Anthropic. DeepSeek-V4-Pro on the open market: ~87¢/M tokens — close to actual cost.
+
+**Why high margins persist**: AI labs (OpenAI, Anthropic) use inference profits to **subsidize training costs**. They're not just selling inference — they're funding the next model's training from current margins.
+
+**Key insight for sustainability**: Even if OpenAI and Anthropic fail, whoever acquires rights to their frontier models can continue selling inference profitably. "The AI bubble popping will not mean the end of the inference business, because AI inference is obviously profitable."
+
+**Counterpoint to the "AI bubble" narrative**: Unlike the VC-subsidy theory, inference is a real business with real margins. The risk is in training costs and valuation bubbles, not in the fundamental unit economics of serving models.
+
+This analysis extends [[concepts/ai-industry-financial-sustainability]] with concrete unit-cost calculations and provides a data-driven counterweight to the growing [[concepts/ai-bubble]] literature.
+
 ## Sources
 
 - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
 - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
+- raw/articles/seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md
 - seangoedecke.com — Primary blog
 - "Software Engineering After the Vibe Shift" — Book (self-published, print at cost)
 - "If You Are Good at Code Review, You Will Be Good at Using AI Agents"
@@ -350,3 +372,4 @@ Sean Goedecke's June 14, 2026 post thoroughly debunks the "GPUs only last three 
 |- seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c
 |- seangoedecke.com--anti-ai-nostalgia--c80b7b06
 |- seangoedecke.com--build-agents-not-pipelines--43a57b4a
+|- seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md

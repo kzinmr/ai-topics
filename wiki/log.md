@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-06-29 18:20] — dreaming: consolidation — 1 enrichment
+
+**Enriched**:
+- `entities/seangoedecke-com.md` — Added AI Inference Is Obviously Profitable section: A100 cost calculations ($1/M tokens at 400W), 70-80% gross margin analysis, DeepSeek 87¢/M tokens comparison, rebuttal to VC-subsidy thesis. Bumped updated to 2026-06-29.
+
+**Skipped/reference (pipeline saturation)**: RLVR Generalization (Dwarkesh: 222-line entity covers fully), GPT-5.6/Mythos (events + concepts pages), AI Bubble (GM 310-line Fizzle section, Zitron 528-line Cargo Culture), DeepSpec/DSpark (active-crawl created concept), Prompt Injection (concept page has 80+ line Role Confusion section), jax-js (below threshold), AI Liability (110-line concept page), Non-AI batch (17 articles).
+
+**Summary**: 9 themes / 27 articles from fallback file. 1 genuine gap identified and enriched.
+
+
+
+---
+
+
 ## [2026-06-29] Watchdog auto-fix
 
 ### Auto-fixed
