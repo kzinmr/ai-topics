@@ -8,7 +8,7 @@ tags:
   - evaluation
   - safety
   - ai-agents
-  - red-teaming
+  - agent-safety
 sources:
   - "arXiv:2410.09024"
   - "ICLR 2025"

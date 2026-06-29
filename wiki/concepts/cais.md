@@ -3,7 +3,7 @@ title: "CAIS (Comprehensive AI Services)"
 type: concept
 created: 2026-06-23
 updated: 2026-06-23
-tags: [cais, superintelligence, agi, architecture]
+tags: [superintelligence, agi, architecture]
 ---
 # CAIS (Comprehensive AI Services)
 

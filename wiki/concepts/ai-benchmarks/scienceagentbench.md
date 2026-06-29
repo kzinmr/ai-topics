@@ -3,7 +3,11 @@ title: "ScienceAgentBench"
 type: concept
 created: 2026-06-26
 updated: 2026-06-26
-tags: [benchmark, evaluation, ai-agents, ai-research]
+tags:
+  - benchmark
+  - evaluation
+  - ai-agents
+  - lab
 sources:
   - title: "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery"
     url: "https://github.com/OSU-NLP-Group/ScienceAgentBench"

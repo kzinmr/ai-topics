@@ -6,7 +6,7 @@ type: concept
 tags:
   - deer-flow
   - bytedance
-  - agent-harness
+  - harness-engineering
   - agent-runtime
   - multi-agent
   - sandbox
@@ -14,7 +14,6 @@ tags:
   - coding-agents
   - china
   - hn-popular
-  - harness-engineering
   - deep-research
   - skill-graph
 sources:

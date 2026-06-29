@@ -4,9 +4,9 @@ type: entity
 created: 2026-06-23
 updated: 2026-06-23
 tags:
-  - researcher
+  - person
   - superintelligence
-  - ai-safety
+  - agent-safety
 sources:
   - [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
 ---

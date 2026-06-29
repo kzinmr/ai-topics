@@ -3,7 +3,15 @@ title: "OpenKnowledge"
 created: 2026-06-28
 updated: 2026-06-28
 type: entity
-tags: [open-source, tool, knowledge-management, agent-platform, mcp, product, claude-code, cursor, codex]
+tags:
+  - open-source
+  - tool
+  - information-retrieval
+  - agent-platform
+  - mcp
+  - product
+  - claude-code
+  - coding-agents
 related:
   - [[concepts/mcporter]]
   - [[concepts/skill-architecture-patterns]]

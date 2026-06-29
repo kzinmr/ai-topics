@@ -5,18 +5,16 @@ updated: 2026-06-28
 type: entity
 tags:
   - entity
-  - agent-framework
+  - ai-agents
   - agent-sdk
-  - agent-architecture
+  - architecture
   - agent-runtime
   - durable-execution
   - human-in-the-loop
-  - filesystem
+  - developer-tooling
   - sandbox
-  - subagents
   - open-source
-  - vercel
-  - typescript
+  - company
 aliases:
   - Eve framework
   - eve

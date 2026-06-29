@@ -3,7 +3,10 @@ title: "Aakash Gupta"
 type: entity
 created: 2026-06-23
 updated: 2026-06-23
-tags: [aakash-gupta, ai-safety, agents]
+tags:
+  - agent-safety
+  - ai-agents
+
 ---
 # Aakash Gupta
 

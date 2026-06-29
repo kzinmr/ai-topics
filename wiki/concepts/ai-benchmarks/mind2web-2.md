@@ -8,7 +8,6 @@ tags:
   - evaluation
   - ai-agents
   - web-development
-  - llm-as-judge
 sources:
   - https://arxiv.org/abs/2506.21506
 related_concepts:

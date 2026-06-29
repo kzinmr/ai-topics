@@ -9,9 +9,8 @@ tags:
   - foundation-models
   - sovereign-ai
   - eu-ai-act
-  - multilingual
   - model
-  - distillation
+  - training
   - hn-popular
 sources:
   - raw/articles/2026-06-21_apertus-open-foundation-model-sovereign-ai.md

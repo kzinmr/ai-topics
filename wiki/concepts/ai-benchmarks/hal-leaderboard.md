@@ -6,7 +6,6 @@ updated: 2026-06-26
 tags:
   - benchmark
   - evaluation
-  - agent-evaluation
   - ai-agents
 sources:
   - https://hal.cs.princeton.edu

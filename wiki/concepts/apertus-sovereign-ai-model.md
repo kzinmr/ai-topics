@@ -8,11 +8,10 @@ tags:
   - sovereign-ai
   - foundation-models
   - open-source
-  - multilingual
-  - eu-ai-act
   - model
+  - eu-ai-act
   - hn-popular
-  - distillation
+  - training
   - digital-sovereignty
 sources:
   - raw/articles/2026-06-21_apertus-open-foundation-model-sovereign-ai.md

@@ -8,8 +8,7 @@ tags:
   - automation
   - benchmark
   - pointer
-  - gemini
-  - computer-use
+  - google
 sources:
   - https://www.pointer.ai/blog/sota
   - https://uncensoredhub.ai/news/2026-05-29-claude-opus-4-8-orchestrates-hundreds-of-parallel-subagents-hits-84-on-browser-a

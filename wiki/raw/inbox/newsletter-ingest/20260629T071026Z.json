@@ -1,0 +1,74 @@
+{
+  "checkpoint_run_id": "20260629T071026Z",
+  "triaged_at": "2026-06-29T07:11:00Z",
+  "total_newsletters": 4,
+  "classifications": [
+    {
+      "message_id": "<20260628123154.3.d6baaa92ab16aacc@mg-d0.substack.com>",
+      "subject": "OpenAI Codex lead on the new shape of product work | Andrew Ambrosino",
+      "date": "2026-06-28",
+      "source": "Lenny's Newsletter (Substack)",
+      "importance": "high",
+      "wiki_relevance": true,
+      "rationale": "Interview with Andrew Ambrosino (OpenAI Codex lead) on how AI coding agents are reshaping product development workflows. Directly relevant to coding-agents, AI-assisted development, and the evolving role of product teams. Codex is a key entity in the wiki.",
+      "target_entities": ["openai", "openai-codex", "andrew-ambrosino"],
+      "target_concepts": ["coding-agents", "ai-assisted-development"],
+      "action": "fetch_full_article",
+      "canonical_url": "https://open.substack.com/pub/lenny/p/openai-codex-lead-on-the-new-shape",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-openai-codex-lead-on-the-new-shape-of-product-work-andrew-ambrosino.md"
+    },
+    {
+      "message_id": "<20260628130325.3.aa11ddd44fb7fb16@mg-d0.substack.com>",
+      "subject": "OpenAI Brings the Heat, Claude's Tag Team, and China Returns Fire",
+      "date": "2026-06-28",
+      "source": "The Signal (Substack, @alexbanks)",
+      "importance": "high",
+      "wiki_relevance": true,
+      "rationale": "Industry roundup covering OpenAI, Anthropic Claude, and Chinese AI competition dynamics. High-level competitive landscape analysis relevant to multiple wiki entities and AI industry concept pages.",
+      "target_entities": ["openai", "anthropic", "claude"],
+      "target_concepts": ["ai-industry-landscape", "ai-competition"],
+      "action": "fetch_full_article",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/openai-brings-the-heat-claudes-tag",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-openai-brings-the-heat-claude-s-tag-team-and-china-returns-fire.md"
+    },
+    {
+      "message_id": "<20260628170307.3.22ae1a4a41982d22@mg-d0.substack.com>",
+      "subject": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
+      "date": "2026-06-28",
+      "source": "Robotic (Substack, @natolambert / @xeophon)",
+      "importance": "high",
+      "wiki_relevance": true,
+      "rationale": "Weekly open-source AI digest covering Zyphra, Cohere, and Poolside — expanding open-weight model ecosystem. Directly relevant to open-source AI entities and the open artifacts concept. Nathan Lambert is a known AI safety/open-source contributor.",
+      "target_entities": ["zyphra", "cohere", "poolside", "nathan-lambert"],
+      "target_concepts": ["open-source-ai", "open-weight-models"],
+      "action": "fetch_full_article",
+      "canonical_url": "https://open.substack.com/pub/robotic/p/artifacts-22-zyphra-cohere-and-poolside",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expanding-the-breadth-of.md"
+    },
+    {
+      "message_id": "<20260628.133315.cb7280b0@mta20>",
+      "subject": "Exclusive Interview with Akshay Kothari, Co-Founder & COO of Notion",
+      "date": "2026-06-28",
+      "source": "Beehiiv newsletter",
+      "importance": "low",
+      "wiki_relevance": true,
+      "rationale": "Interview with Notion co-founder. Notion is increasingly an AI-integrated productivity platform, but this is primarily a business/product interview. Marginal relevance for wiki unless it covers AI features in depth.",
+      "target_entities": ["notion", "akshay-kothari"],
+      "target_concepts": ["ai-productivity-tools"],
+      "action": "scan_if_time_permits",
+      "canonical_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-exclusive-interview-with-akshay-kothari-co-founder-coo-of-notion.md"
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 3,
+    "low": 1,
+    "skip": 0,
+    "top_actions": [
+      "Fetch full article for Codex lead interview (Lenny's Newsletter) — update openai-codex entity + coding-agents concept",
+      "Fetch full article for The Signal AI roundup — update AI industry landscape pages",
+      "Fetch full article for Open Artifacts #22 — create/update Zyphra, Poolside entities + open-source-ai concept"
+    ]
+  }
+}

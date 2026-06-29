@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-06-29T07:28:52.878903+00:00",
+  "triage_run_id": "20260629T072026Z",
+  "source": "newsletter",
+  "summary_ja": "4件のニュースレターをトリアージ。（1）Lenny's PodcastのAndrew Ambrosino（OpenAI Codex責任者）インタビュー：Codexの製品哲学に関する貴重な視点だが、ポッドキャストのショーノーツ形式で深い技術的詳細は乏しい → Codex関連conceptページの強化リファレンスとして保存。（2）The Signalの編集ラウンドアップ：OpenAI Jalapeño、Claude Tag、Daybreak、中国輸出規制などほとんどが既存Wikiでカバー済み。Getty Images提携は新規だがAI技術的価値は低い → Skip。（3）NotionインタビューのBeehiivニュースレター：全beehiiv URLが403期限切れ。Inbox summaryによればAI関連性は低いビジネスインタビュー → Skip。（4）Open Artifacts #22：Poolside Laguna M.1がApache 2.0にライセンス変更（entities/poolside.mdの更新が必要）。オープンモデルメーカーの3カテゴリ分類フレームワークも新規価値。Zyphra ZAYA1-74B、Cohere Command A+、GLM-5.2などは既存ページでカバー済み。→ 2件のtake（Poolside更新・メイン記事分析）、1件のreference（カテゴリ分類フレームワーク）。",
+  "decisions": [
+    {
+      "item_id": "lenny-andrew-ambrosino-interview",
+      "source": "newsletter",
+      "source_name": "Lenny's Podcast (Substack)",
+      "title": "OpenAI Codex lead on the new shape of product work | Andrew Ambrosino",
+      "url": "https://open.substack.com/pub/lenny/p/openai-codex-lead-on-the-new-shape",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-openai-codex-lead-on-the-new-shape-of-product-work-andrew-ambrosino.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Lenny's PodcastでのAndrew Ambrosino（OpenAI Codex責任者）へのインタビュー要約。AIが製品開発プロセスを完全に変えたという主張、「taste」スキルの重要性、Codexが11月ではなく2月にローンチすべきだった理由、OpenAIのプロダクトマネージャー間での「ゾーンディフェンス」モデル、Codexを使った自身のワークフローなど、Codexの設計思想に直接関連する内容。ただしポッドキャストのショーノーツ形式で深い技術的詳細は乏しい。Codex関連のconceptページ強化に活用。",
+      "candidate_wiki_path": "concepts/codex/",
+      "body_excerpt": "# Newsletter Digest - 2026-06-28\n**Subject:** OpenAI Codex lead on the new shape of product work | Andrew Ambrosino\n**Collected:** 2026-06-29T07:10:19.536130+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2"
+    },
+    {
+      "item_id": "artifacts22-open-model-categories",
+      "source": "newsletter",
+      "source_name": "Interconnects / Robotic (Nathan Lambert)",
+      "title": "Categories of open model makers (framework)",
+      "url": "https://open.substack.com/pub/robotic/p/artifacts-22-zyphra-cohere-and-poolside",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expanding-the-breadth-of.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ オープンモデルメーカーを3カテゴリに分類する分析フレームワーク：（1）「Pure」モデルメーカー（DeepSeek, Zhipu, MiniMax）＝フロンティアモデルのトレーニングを目指す企業、（2）Big Tech（Alibaba Qwen, Google Gemma, NVIDIA）＝多様な動機でモデル公開、（3）Product Companies（JetBrains, Zed, Krea, Photoroom）＝自社プロダクトのためにモデル公開。このフレームワークは既存のconcepts/open-source-ai.md（地政学的戦略に焦点）には欠けている分析視点。同conceptページへの追記候補。",
+      "candidate_wiki_path": "concepts/open-source-ai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-28\n**Subject:** Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem\n**Collected:** 2026-06-29T07:10:24.879313+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW5"
+    },
+    {
+      "item_id": "thesignal-editorial-roundup-2026-06-28",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "OpenAI Brings the Heat, Claude's Tag Team, and China Returns Fire",
+      "url": "https://open.substack.com/pub/thesignal/p/openai-brings-the-heat-claudes-tag",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-openai-brings-the-heat-claude-s-tag-team-and-china-returns-fire.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ The Signalの週次編集ラウンドアップ。OpenAI Jalapeñoカスタム推論チップ（concepts/openai-jalapeno-inference-chip.mdで既存）、Claude Tag（既に処理済み）、GPT-5.5-Cyber/Daybreak（concepts/openai-daybreak.mdで既存）、中国輸出規制（Fable/Mythos既存）、Getty Imagesとの提携（新規だがOpenAIのChatGPT検索における画像表示でありWiki価値は低い）、量子大統領令（AI非直接関連）をカバー。85-90%のトピックは既存Wikiでカバー済み。Getty提携のみ新しいが、単なる画像ライセンス提携でLLM/AI Agent技術に直接関係しないためSkip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-28\n**Subject:** OpenAI Brings the Heat, Claude's Tag Team, and China Returns Fire\n**Collected:** 2026-06-29T07:10:21.509379+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT"
+    },
+    {
+      "item_id": "thesignal-getty-images-openai",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "Getty Images display partnership with OpenAI",
+      "url": "https://newsroom.gettyimages.com/en/getty-images/getty-images-announces-display-partnership-with-openai",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-openai-brings-the-heat-claude-s-tag-team-and-china-returns-fire.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Getty ImagesがOpenAIと提携し、4億点以上の画像ライブラリをChatGPT検索に提供。事実に基づく質問に対して編集用画像を表示。単なるコンテンツライセンス契約であり、LLM/AI Agent技術には直接関係しない。Wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-28\n**Subject:** OpenAI Brings the Heat, Claude's Tag Team, and China Returns Fire\n**Collected:** 2026-06-29T07:10:21.509379+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT"
+    },
+    {
+      "item_id": "beehiiv-notion-akshay-kothari-interview",
+      "source": "newsletter",
+      "source_name": "Beehiiv newsletter (unidentified publication)",
+      "title": "Exclusive Interview with Akshay Kothari, Co-Founder & COO of Notion",
+      "url": "https://link.mail.beehiiv.com/v1/c/%2FhoOaPV4H84agoqf8d754XjAM1A2eAH6M%2BOmg%2BFImdc3wlfP9q2lAmBiU2vA%0A3Wr5EsbWSNQXG445u8fhGcQdTvUOFSMiguaay6upClJDbZOHKJC4h0hGko0N%0A9FsbqbI5yKYRE037JHS4zBkZP%2Bw3AkWZ5eohM8AQGfoO00hxHVP0vH98s9PD%0AXaANEjNFeDhf61l4kGJ73iqIGQflSIQV9Q%3D%3D%0A/67a3ef65cb7ee4d5",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-28-exclusive-interview-with-akshay-kothari-co-founder-coo-of-notion.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ BeehiivトラッキングURLが全件403期限切れ（前日〜18h経過）。inbox pre-triage summaryによるとNotion COOとのビジネス/プロダクトインタビューで、AI機能に深く言及していない限りWiki関連性は低い。NotionはAI統合プロダクティビティプラットフォームだが、本記事は主にビジネス戦略インタビューの模様。Skip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-28\n**Subject:** Exclusive Interview with Akshay Kothari, Co-Founder & COO of Notion\n**Collected:** 2026-06-29T07:10:23.206015+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/%2FhoOaPV4H84agoqf8d754XjAM1A2eAH6M%2BOmg%2BFImdc3wlfP9q2"
+    }
+  ]
+}

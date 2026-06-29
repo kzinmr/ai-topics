@@ -3,7 +3,12 @@ title: "Agent Safety"
 type: concept
 created: 2026-06-23
 updated: 2026-06-23
-tags: [agent-safety, agents, safety, architecture]
+tags:
+  - agent-safety
+  - ai-agents
+  - safety
+  - architecture
+
 ---
 # Agent Safety
 

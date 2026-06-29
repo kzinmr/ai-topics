@@ -4,7 +4,13 @@ created: 2026-06-28
 updated: 2026-06-28
 type: concept
 aliases: [ai-executive-order, ai-eo, government-ai-gatekeeping]
-tags: [policy, regulation, ai-governance, governance, ai-safety, model, frontier-models]
+tags:
+  - policy
+  - regulation
+  - ai-governance
+  - governance
+  - agent-safety
+  - model
 related:
   - [[concepts/ai-regulation-2026]]
   - [[concepts/eu-ai-act]]

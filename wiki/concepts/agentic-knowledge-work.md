@@ -4,12 +4,11 @@ type: concept
 created: 2026-06-25
 updated: 2026-06-25
 tags:
-  - agents
-  - productivity
-  - enterprise-ai
-  - codex
-  - openai
   - ai-agents
+  - developer-tooling
+  - company
+  - coding-agents
+  - openai
 aliases:
   - agent-centric work
   - long-horizon task delegation

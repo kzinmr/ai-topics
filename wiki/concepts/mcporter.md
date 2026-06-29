@@ -3,7 +3,12 @@ title: MCPorter
 created: 2026-06-27
 updated: 2026-06-27
 type: concept
-tags: [mcp, tool, typescript, agent-tooling, open-source]
+tags:
+  - mcp
+  - tool
+  - developer-tooling
+  - agent-tooling
+  - open-source
 sources:
   - raw/articles/2026-06-26_openclaw_mcporter-mcp-typescript-tool.md
 ---

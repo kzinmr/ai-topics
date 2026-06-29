@@ -7,7 +7,6 @@ tags:
   - benchmark
   - evaluation
   - reward-engineering
-  - llm-as-judge
 sources:
   - "GitHub: allenai/reward-bench"
   - "Allen AI"

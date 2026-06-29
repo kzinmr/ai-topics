@@ -7,7 +7,6 @@ tags:
   - benchmark
   - evaluation
   - ai-agents
-  - agent-evaluation
 sources:
   - https://github.com/benchflow-ai/benchflow
 related_concepts:

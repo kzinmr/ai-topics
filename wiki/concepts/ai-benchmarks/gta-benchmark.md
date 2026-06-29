@@ -7,7 +7,6 @@ tags:
   - benchmark
   - evaluation
   - ai-agents
-  - agent-evaluation
 sources:
   - title: "GTA: A Benchmark for General Tool Agents"
     arxiv: "2407.08713"

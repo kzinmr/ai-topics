@@ -8,8 +8,6 @@ tags:
   - agent-safety
   - emerging
   - security
-  - red-teaming
-  - prompt-injection
 aliases:
 - Mythos
 sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md", "raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md", "raw/newsletters/2026-06-22-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-swan.md"]

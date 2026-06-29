@@ -3,7 +3,10 @@ title: "Gaia2 and ARE"
 type: concept
 created: 2026-06-26
 updated: 2026-06-26
-tags: [benchmark, evaluation, ai-agents, agent-evaluation]
+tags:
+  - benchmark
+  - evaluation
+  - ai-agents
 sources:
   - title: "Gaia2 and ARE: Scaling Up Agent Environments and Evaluations"
     arxiv: "2509.17158"

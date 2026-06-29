@@ -4,16 +4,14 @@ created: 2026-06-24
 updated: 2026-06-24
 type: concept
 tags:
-  - codex
+  - coding-agents
   - sqlite
   - incident
   - infrastructure
-  - performance
+  - optimization
   - agent-safety
   - vulnerability
   - feedback-loop
-  - monitoring
-  - observability
   - bug
   - openai
 sources:

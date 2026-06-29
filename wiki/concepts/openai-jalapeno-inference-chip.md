@@ -10,10 +10,7 @@ tags:
   - infrastructure
   - llm-inference
   - asic
-  - gpu
-  - cost-optimization
-  - ai-infrastructure
-  - performance
+  - optimization
   - announcement
 sources:
   - raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md

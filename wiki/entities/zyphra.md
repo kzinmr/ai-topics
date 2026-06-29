@@ -11,7 +11,7 @@ tags:
   - vlm
   - ai-agents
   - zyphra
-  - continual-learning
+  - training
 status: active
 aliases: [ZyphraAI]
 sources:

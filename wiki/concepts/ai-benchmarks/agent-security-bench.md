@@ -7,7 +7,7 @@ tags:
   - benchmark
   - evaluation
   - safety
-  - agent-security
+  - agent-safety
   - ai-agents
 sources:
   - "ICLR 2025"

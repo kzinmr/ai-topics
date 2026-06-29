@@ -3,7 +3,11 @@ title: "MAI-Thinking-1"
 type: concept
 created: 2026-06-23
 updated: 2026-06-23
-tags: [mai-thinking-1, microsoft, moe, reasoning, llm]
+tags:
+  - microsoft
+  - model
+  - reasoning
+
 ---
 # MAI-Thinking-1
 

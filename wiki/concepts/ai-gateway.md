@@ -5,13 +5,11 @@ created: 2026-06-26
 updated: 2026-06-26
 tags:
   - infrastructure
-  - ai-infrastructure
-  - agent-infrastructure
+  - ai-agents
   - llm-proxy
-  - cost
+  - economics
   - model-routing
   - protocol
-  - api
   - developer-tooling
   - data-integration
 aliases: ["llm-gateway", "model-gateway", "ai-api-gateway"]

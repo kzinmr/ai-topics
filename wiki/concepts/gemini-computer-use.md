@@ -3,7 +3,12 @@ title: "Gemini Computer Use (Android)"
 created: 2026-06-25
 updated: 2026-06-25
 type: concept
-tags: [computer-use, gemini, agents, on-device, tool-use, automation]
+tags:
+  - ai-agents
+  - google
+  - on-device
+  - tool
+  - automation
 sources:
   - raw/articles/2026-06-25_philschmid_gemini-android-use.md
   - raw/articles/2026-06-25_google-gemini_android-computer-use-quickstart.md

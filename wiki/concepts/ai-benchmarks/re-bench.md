@@ -3,7 +3,11 @@ title: "RE-Bench"
 type: concept
 created: 2026-06-26
 updated: 2026-06-26
-tags: [benchmark, evaluation, ai-agents, ai-research]
+tags:
+  - benchmark
+  - evaluation
+  - ai-agents
+  - lab
 sources:
   - title: "RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents"
     arxiv: "2411.15114"

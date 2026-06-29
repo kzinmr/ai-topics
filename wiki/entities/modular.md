@@ -7,13 +7,12 @@ tags:
   - entity
   - company
   - platform
-  - ai-infrastructure
+  - infrastructure
   - programming-language
   - open-source
-  - cuda
+  - inference
   - nvidia
   - hardware
-  - acquisition
 sources:
   - raw/articles/2026-06-24_hn-discussion_qualcomm-acquires-modular.md
 ---

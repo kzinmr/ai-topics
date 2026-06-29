@@ -8,7 +8,6 @@ tags:
   - voice-ai
   - ai-agents
   - evaluation
-  - agent-evaluation
   - benchmark
 sources:
   - raw/articles/2026-06-20_elevenlabs_voice-agent-evaluation-framework-6-pillars-explained.md

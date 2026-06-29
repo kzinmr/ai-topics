@@ -8,12 +8,9 @@ tags:
   - infrastructure
   - sustainability
   - hardware
-  - gpu
-  - ai-infrastructure
   - cloud-infrastructure
   - data-center
-  - performance
-  - cost-optimization
+  - optimization
 sources:
   - raw/articles/2026-06-25_nvidia-45c-liquid-cooling-data-center.md
 ---

@@ -7,7 +7,6 @@ tags:
   - benchmark
   - evaluation
   - ai-agents
-  - agent-evaluation
 sources:
   - https://letta.com/blog/letta-leaderboard
 related_concepts:

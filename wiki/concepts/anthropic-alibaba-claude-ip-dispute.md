@@ -5,10 +5,10 @@ updated: 2026-06-25
 type: concept
 tags:
   - ai-governance
-  - agent-security
+  - agent-safety
   - anthropic
   - alibaba
-  - distillation
+  - training
   - law
   - china
   - geopolitics

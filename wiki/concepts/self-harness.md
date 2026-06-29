@@ -4,7 +4,13 @@ created: 2026-06-28
 updated: 2026-06-28
 type: concept
 aliases: [self-harnessing, harness-self-improvement]
-tags: [ai-agents, self-improving, agent-harness, meta-harness, benchmark, research, autonomous-agents]
+tags:
+  - ai-agents
+  - self-improving
+  - harness-engineering
+  - meta-harness
+  - benchmark
+  - lab
 related:
   - [[concepts/meta-harness]]
   - [[concepts/loop-engineering]]

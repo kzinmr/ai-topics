@@ -7,7 +7,7 @@ tags:
   - benchmark
   - evaluation
   - safety
-  - prompt-injection
+  - agent-safety
   - ai-agents
 sources:
   - "arXiv:2406.13352"

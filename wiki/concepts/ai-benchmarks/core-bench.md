@@ -3,7 +3,11 @@ title: "CORE-Bench"
 type: concept
 created: 2026-06-26
 updated: 2026-06-26
-tags: [benchmark, evaluation, ai-agents, ai-research]
+tags:
+  - benchmark
+  - evaluation
+  - ai-agents
+  - lab
 sources:
   - title: "CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark"
     arxiv: "2409.11363"

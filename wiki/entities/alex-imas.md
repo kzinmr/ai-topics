@@ -5,10 +5,9 @@ created: 2026-06-23
 updated: 2026-06-24
 tags:
   - person
-  - researcher
   - economics
   - agi
-  - deepmind
+  - google
 aliases:
   - Alex Imas
 related:

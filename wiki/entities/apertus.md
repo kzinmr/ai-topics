@@ -5,7 +5,7 @@ updated: 2026-06-22
 type: entity
 tags:
   - apertus
-  - organization
+  - company
   - open-source
   - foundation-models
   - eu-ai-act

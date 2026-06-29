@@ -7,7 +7,6 @@ tags:
   - benchmark
   - evaluation
   - ai-agents
-  - agent-evaluation
 sources:
   - https://letta.com/blog/benchmarking-ai-agent-memory
 related_concepts:

@@ -7,13 +7,11 @@ tags:
   - daybreak
   - gpt-5-5-cyber
   - openai
-  - cybersecurity
   - security
   - vulnerability
-  - codex
-  - ai-safety
+  - coding-agents
+  - agent-safety
   - model
-  - frontier-models
   - announcement
   - product
   - hn-popular

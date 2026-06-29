@@ -4,13 +4,12 @@ type: concept
 created: 2026-06-26
 updated: 2026-06-26
 tags:
-  - agent-infrastructure
+  - ai-agents
   - agent-platform
-  - tool-calling
-  - api
+  - tool
+  - developer-tooling
   - mcp
   - data-integration
-  - developer-tooling
 aliases: ["agent-tool-integration", "agent-connector-platforms"]
 sources:
   - "[[raw/articles/merge.dev--blog-composio-vs-arcade--dabe7047]]"

@@ -6,11 +6,10 @@ type: concept
 tags:
   - reasoning
   - reasoning-model
-  - grpo
+  - training
   - test-time-scaling
   - fine-tuning
   - benchmark
-  - distillation
 sources:
   - raw/articles/2026-06-15_arxiv-2606.16140_vibethinker-3b-verifiable-reasoning.md
   - https://arxiv.org/abs/2606.16140

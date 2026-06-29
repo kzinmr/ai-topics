@@ -4,12 +4,11 @@ created: 2026-06-24
 updated: 2026-06-24
 type: concept
 tags:
-  - ai-economics
   - economics
   - token-economics
   - roi
   - ai-cost
-  - gpu
+  - hardware
   - llm-inference
   - sustainability
   - ai-industry-economics

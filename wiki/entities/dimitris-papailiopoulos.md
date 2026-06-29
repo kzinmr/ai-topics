@@ -5,7 +5,6 @@ created: 2026-06-25
 updated: 2026-06-25
 tags:
   - person
-  - ai-researcher
   - evaluation
   - benchmark
 aliases: [dimitris_papailiopoulos]

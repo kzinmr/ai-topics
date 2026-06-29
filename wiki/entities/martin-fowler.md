@@ -6,7 +6,6 @@ type: entity
 tags:
   - person
   - thoughtworks
-  - author
   - software-engineering
   - consultant
 redirect: "[[entities/martinfowler]]"

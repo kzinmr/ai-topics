@@ -5,7 +5,6 @@ updated: 2026-06-24
 type: concept
 tags:
   - anthropic
-  - claude
   - claude-code
   - product
   - ai-agents

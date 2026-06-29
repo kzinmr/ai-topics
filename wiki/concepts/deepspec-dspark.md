@@ -8,10 +8,9 @@ tags:
   - inference
   - optimization
   - open-source
-  - speculative-decoding
   - framework
   - llm-inference
-  - distributed-training
+  - training
 sources:
   - raw/articles/2026-06-26_hn-discussion_deepseek-deepspec-inference-optimizations.md
 ---

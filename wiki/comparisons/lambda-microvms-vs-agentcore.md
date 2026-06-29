@@ -6,14 +6,13 @@ updated: 2026-06-29
 tags:
   - comparison
   - aws
-  - agent-infrastructure
+  - ai-agents
   - sandbox
-  - agent-harness
-  - serverless
+  - harness-engineering
+  - infrastructure
   - microvm
   - firecracker
   - platform
-  - ai-agents
 sources:
   - "https://aws.amazon.com/jp/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/"
   - "https://aws.amazon.com/bedrock/agentcore/"

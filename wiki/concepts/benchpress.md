@@ -8,7 +8,7 @@ tags:
   - evaluation
   - methodology
   - open-source
-  - continual-learning
+  - training
   - benchmark-optimization
 sources:
   - raw/articles/2026-02-25_dimitris-papailiopoulos_benchpress-you-dont-need-to-run-every-eval.md

@@ -7,7 +7,7 @@ tags:
   - benchmark
   - evaluation
   - safety
-  - cybersecurity
+  - security
   - ai-agents
 sources:
   - "arXiv:2408.08926"

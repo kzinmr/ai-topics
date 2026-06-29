@@ -6,12 +6,11 @@ type: entity
 tags:
   - person
   - thoughtworks
-  - author
   - software-engineering
   - ai-software-engineering
   - consultant
-  - case-study
-  - agentic-rag
+  - methodology
+  - rag
   - text-to-sql
 sources:
   - "[[raw/articles/2026-06-19_martinfowler_reliable-agentic-ai-systems]]"

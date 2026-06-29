@@ -7,9 +7,8 @@ tags:
   - kv-cache
   - inference
   - optimization
-  - memory-efficiency
-  - sparse-attention
-  - gpu
+  - model
+  - hardware
   - nvidia
 sources:
   - raw/articles/2026-06-15_nvidia-kv-cache-compression-infra-problems.md

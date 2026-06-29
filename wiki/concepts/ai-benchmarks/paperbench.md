@@ -3,7 +3,11 @@ title: "PaperBench"
 type: concept
 created: 2026-06-26
 updated: 2026-06-26
-tags: [benchmark, evaluation, ai-agents, ai-research]
+tags:
+  - benchmark
+  - evaluation
+  - ai-agents
+  - lab
 sources:
   - title: "PaperBench: Evaluating AI's Ability to Replicate AI Research Papers"
     arxiv: "2504.01848"

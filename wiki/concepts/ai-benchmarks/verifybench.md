@@ -7,7 +7,6 @@ tags:
   - benchmark
   - evaluation
   - reward-engineering
-  - llm-as-judge
 sources:
   - "arXiv:2507.09884"
 related_concepts:

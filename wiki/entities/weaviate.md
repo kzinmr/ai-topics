@@ -10,7 +10,7 @@ tags:
   - ai-agents
   - platform
   - infrastructure
-  - memory
+  - memory-systems
 aliases: ["Weaviate Inc."]
 sources:
   - raw/newsletters/2026-06-25-ainews-it-s-meta-harness-summer.md

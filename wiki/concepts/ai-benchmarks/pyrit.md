@@ -6,8 +6,7 @@ updated: 2026-06-26
 tags:
   - evaluation
   - safety
-  - red-teaming
-  - prompt-injection
+  - agent-safety
 sources:
   - https://github.com/Azure/PyRIT
 related_concepts:

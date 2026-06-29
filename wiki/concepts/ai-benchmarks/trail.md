@@ -7,7 +7,6 @@ tags:
   - benchmark
   - evaluation
   - ai-agents
-  - agent-evaluation
 sources:
   - https://arxiv.org/abs/2505.08638
 related_concepts:

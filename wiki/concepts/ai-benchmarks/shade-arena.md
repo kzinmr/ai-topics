@@ -8,7 +8,7 @@ tags:
   - evaluation
   - safety
   - ai-agents
-  - agent-security
+  - agent-safety
 sources:
   - "arXiv:2506.15740"
   - "Anthropic"

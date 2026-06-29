@@ -3,7 +3,12 @@ title: "AI Control"
 type: concept
 created: 2026-06-25
 updated: 2026-06-25
-tags: [ai-safety, agents, security, alignment, cybersecurity, deepmind]
+tags:
+  - agent-safety
+  - ai-agents
+  - security
+  - alignment
+  - google
 sources:
   - raw/papers/2026-06-24_deepmind_ai-control-roadmap.md
 ---

@@ -6,7 +6,7 @@ type: concept
 tags:
   - benchmark
   - multi-gpu
-  - cuda
+  - inference
   - infrastructure
 sources:
   - raw/articles/together.ai--blog-parallelkernelbench--2db40b9c.md

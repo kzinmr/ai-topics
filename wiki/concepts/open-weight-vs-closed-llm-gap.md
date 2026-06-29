@@ -4,7 +4,12 @@ created: 2026-06-28
 updated: 2026-06-28
 type: concept
 aliases: [open-vs-closed-llm-gap, open-source-llm-catch-up, frontier-os-llm]
-tags: [open-source, llm, model, benchmark, comparison, frontier-models, prediction]
+tags:
+  - open-source
+  - model
+  - benchmark
+  - comparison
+  - prediction
 related:
   - [[concepts/scaling-laws]]
   - [[concepts/open-source-ai-must-win]]

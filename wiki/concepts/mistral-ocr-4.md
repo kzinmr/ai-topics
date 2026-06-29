@@ -7,11 +7,10 @@ tags:
   - ocr
   - document-intelligence
   - multimodal
-  - multilingual
+  - model
   - mistral
   - product
-  - model
-  - information-retrieval
+  - search
   - rag
   - structured-outputs
   - agentic-retrieval

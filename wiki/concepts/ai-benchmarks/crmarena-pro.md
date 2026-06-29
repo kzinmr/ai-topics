@@ -3,7 +3,10 @@ title: "CRMArena-Pro"
 type: concept
 created: 2026-06-26
 updated: 2026-06-26
-tags: [benchmark, evaluation, ai-agents, agent-evaluation]
+tags:
+  - benchmark
+  - evaluation
+  - ai-agents
 sources:
   - title: "CRMArena-Pro: Holistic Assessment of LLM Agents Across Diverse Business Scenarios"
     arxiv: "2505.18878"

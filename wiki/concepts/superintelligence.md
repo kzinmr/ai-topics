@@ -4,9 +4,8 @@ type: concept
 created: 2026-06-23
 updated: 2026-06-23
 tags:
-  - ai-safety
+  - agent-safety
   - agi
-  - existentialrisk
 sources:
   - [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
 ---

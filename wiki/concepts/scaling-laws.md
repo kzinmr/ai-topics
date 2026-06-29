@@ -5,7 +5,7 @@ updated: 2026-06-26
 type: concept
 tags:
   - training
-  - deep-learning
+  - model
   - survey
   - benchmark
   - evaluation

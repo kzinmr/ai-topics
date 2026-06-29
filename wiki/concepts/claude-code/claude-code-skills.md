@@ -14,8 +14,7 @@ tags:
   - claudefile
   - rules
   - hooks
-  - subagents
-  - system-prompt
+  - prompting
 sources:
   - raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md
   - https://x.com/trq212/status/2033949937936085378

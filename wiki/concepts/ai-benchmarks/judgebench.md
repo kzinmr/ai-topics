@@ -6,7 +6,6 @@ updated: 2026-06-26
 tags:
   - benchmark
   - evaluation
-  - llm-as-judge
 sources:
   - "GitHub: ScalerLab/JudgeBench"
 related_concepts:

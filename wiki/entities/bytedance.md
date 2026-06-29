@@ -4,6 +4,11 @@ created: 2026-06-22
 updated: 2026-06-22
 type: entity
 tags:
+  - bytedance
+  - company
+  - china
+  - open-source
+  - lab
 - bytedance
 - company
 - china

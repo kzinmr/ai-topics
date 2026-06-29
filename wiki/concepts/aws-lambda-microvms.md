@@ -5,14 +5,13 @@ created: 2026-06-29
 updated: 2026-06-29
 tags:
   - aws
-  - lambda
+  - serverless
   - microvm
   - firecracker
   - sandbox
-  - agent-infrastructure
-  - serverless
-  - isolation
   - ai-agents
+  - infrastructure
+  - isolation
   - multi-tenancy
   - virtualization
 status: full

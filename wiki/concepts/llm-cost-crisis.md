@@ -5,12 +5,10 @@ created: 2026-06-26
 updated: 2026-06-26
 tags:
   - token-economics
-  - cost
-  - ai-economics
+  - economics
   - ai-industry-economics
   - inference
   - optimization
-  - pricing
 aliases: ["tokenpocalypse", "ai-cost-crisis", "llm-spending-crisis"]
 sources:
   - "[[token-economics]]"

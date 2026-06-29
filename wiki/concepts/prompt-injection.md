@@ -3,7 +3,12 @@ title: "Prompt Injection"
 type: concept
 created: 2026-06-23
 updated: 2026-06-23
-tags: [prompt-injection, ai-safety, security, llm, red-teaming, agent-security, tokenization, vulnerability]
+tags:
+  - agent-safety
+  - security
+  - model
+  - tokenization
+  - vulnerability
 sources:
   - raw/articles/simonwillison.net--2026-jun-22-prompt-injection-as-role-confusion--21e247aa.md
   - raw/articles/2026-05-10_fireworks-ai_safe-tokenization-preventing-prompt-injection-on-fireworks.md

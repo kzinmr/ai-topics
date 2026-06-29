@@ -3,7 +3,16 @@ title: "Headroom"
 created: 2026-06-22
 updated: 2026-06-22
 type: concept
-tags: [headroom, token-efficiency, coding-agents, context-management, cost-optimization, open-source, agent-skills, claude-code, codex, openclaw, hn-popular]
+tags:
+  - headroom
+  - optimization
+  - coding-agents
+  - context-management
+  - open-source
+  - agent-skills
+  - claude-code
+  - openclaw
+  - hn-popular
 sources:
   - raw/articles/2026-06-22_headroom-token-reduction-coding-agents.md
 ---

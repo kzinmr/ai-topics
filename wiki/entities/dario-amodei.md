@@ -4,11 +4,10 @@ type: entity
 created: 2026-06-17
 updated: 2026-06-24
 tags:
-  - founder
+  - person
   - policy
   - anthropic
-  - ai-safety
-  - researcher
+  - agent-safety
 aliases:
   - Dario Amodei
 related:

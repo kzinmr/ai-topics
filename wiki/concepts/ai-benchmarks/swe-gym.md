@@ -8,7 +8,6 @@ tags:
   - evaluation
   - coding-agents
   - software-engineering
-  - agent-evaluation
 sources:
   - title: "SWE-Gym: Training Software Engineering Agents"
     arxiv: "2412.21139"

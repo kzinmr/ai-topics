@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-06-29T07:31:59.424075+00:00",
+  "triage_run_id": "20260629T070003Z",
+  "source": "blog",
+  "summary_ja": "2026-06-29のblog-ingestパイプラインをトリアージ。11記事中、Take 0、Reference 2件、Skip 9件。Reference: (1) Simon WillisonのJon Udell引用ポスト「Agent in the loop」— エージェント工学の哲学的枠組み補完、エンティティページへの言及推奨 (2) Jim NielsenのBryan Cantrill講演ノート「Intelligence is not Enough」— AI批判と人間の価値に関する実証事例、エンティティページへの追記推奨。残り9件は非AI記事（セキュリティ侵害、追悼、LLVM最適化、書籍レビュー等）または既存Wikiカバー済み。Unsaved articles 9件中1件（HP+OpenAI提携）のみAI関連だが、抽出不可。近日のWiki健全性パイプラインで非AI記事はアーカイブ推奨。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from Jon Udell",
+      "url": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-28-jon-udell--47b28924.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Jon Udellによる「Agent in the loop」フレームの再定義。従来の「human in the loop」（機械への権限委譲を示唆）に対し、「人間のループにエージェントを招待する」という哲学的転換を提示。短い引用ポスト（21行）だが、Simon Willisonのエンティティページで言及する価値あり。Agentic Engineeringの哲学的基盤を補完する。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# A quote from Jon Udell\nSource: https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything\n28th June 2026\nHuman\nAgent in the loop\nI dislike the phrase “human in the loop” because it cedes authority to the machines. Let’s flip the narrative. It’s our loop, we work the same way we always have, "
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Notes from Bryan Cantrill's \"Intelligence is not Enough\"",
+      "url": "https://blog.jim-nielsen.com/2026/intelligence-isnt-enough/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Bryan Cantrill（Oxide CTO）の講演ノート。AIが決して提案しない解決策（既存の文書・知識に反する発想）が会社を救うバグ修正に必要だった事例を通じ、「知能だけでは不十分」というテーゼを実証。人間の価値（回復力、チームワーク、 rigor、楽観性）の重要性を説く。Agentic EngineeringやAI限界に関する知見として、Jim Nielsenのエンティティページに追記推奨。",
+      "candidate_wiki_path": "entities/jim-nielsen.md",
+      "body_excerpt": "# Notes from Bryan Cantrill’s “Intelligence is not Enough”\nSource: https://blog.jim-nielsen.com/2026/intelligence-isnt-enough/\nI quite enjoyed\nthis talk\nfrom Bryan Cantrill where he discusses the difficult engineering problems they overcame while working on their company\nOxide\n.\nSome of the problems"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Nearly a million passports and photo IDs were left unprotected on the public internet",
+      "url": "https://www.theverge.com/tech/947157/passports-data-breach-cannabis-club-systems-nefos-puffpal?view_token=eyJhbG...1oec",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/theverge.com--tech-947157-passports-data-breach-cannabis-club-systems-nefo--04c0a576.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 一般セキュリティ侵害記事。AI/Agent技術とは無関係のデータ漏洩事件。Daring Fireball経由だが、研究者がClaude Codeを使用した点にAI関連性はあるものの、記事の主題は規制コンプライアンスと企業のセキュリティ対応。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Nearly a million passports and photo IDs were left unprotected on the public internet\nSource: https://www.theverge.com/tech/947157/passports-data-breach-cannabis-club-systems-nefos-puffpal?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjdjV0Y5TTBuM0ciLCJwIjoiL3RlY2gvOTQ3MTU3L3Bhc3Nwb3J0cy1kYXRhLWJyZWFja"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "garymarcus.substack.com",
+      "title": "China catches up",
+      "url": "https://garymarcus.substack.com/p/china-catches-up",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-china-catches-up--cab4dfeb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Gary Marcusの「no moat」テーゼの最新版。中国AIキャッチアップ→価格競争→利益率低下という既存主張の繰り返し。Marcusのエンティティページ（310行）で「Why Things Will Eventually Fall Apart」「The Generative AI Fizzle」「GPU Rental Price Collapse」等の各セクションですでに網羅的にカバー済み。本文28行で新規データは含まれていない。Robert Wright WaPo論説への言及はあるが、マイナーな補足に過ぎない。",
+      "candidate_wiki_path": "entities/gary-marcus.md",
+      "body_excerpt": "# China catches up\nSource: https://garymarcus.substack.com/p/china-catches-up\nThe ultimate culmination of the “no moat => more competitors => price wars => profits are scarce” argument that I have been making here regularly since the summer of 2023,\nhas arrived\n— and may wreck the U.S. AI industry:\n"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Remembering Om - Glass",
+      "url": "https://glass.photo/highlights/remembering-om",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/glass.photo--highlights-remembering-om--b1a8fdbc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Om Malik追悼記事。Glassチームによる追悼エッセイ。AI/Agent技術とは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Remembering Om - Glass\nSource: https://glass.photo/highlights/remembering-om\nYesterday, we learned\nthe gutting news\nthat Om Malik passed away from complications from a heart attack. For those of you who don’t know, nearly two decades ago, at the height of Web 2.0 and his publishing career, Om had "
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Hack Your Summer",
+      "url": "https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jun-28-hack-your-summer--47c9327e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ インターンシップ代替プログラムの告知。AI/Agent技術とは無関係の社会貢献プロジェクト。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Hack Your Summer\nSource: https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything\n28th June 2026 - Link Blog\nHack Your Summer\n. I learned about this initiative from DJ Patil this morning:\nIt’s a 4-week, high-velocity production sprint for undergraduate students, graduate students, a"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "righto.com",
+      "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
+      "url": "http://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/righto.com--2026-06-space-shuttle-io-processor-boards-html--a4f132e0.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ハードウェアリバースエンジニアリング記事。スペースシャトルのI/Oプロセッサ基板解析。AI/LLM技術とは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Examining circuit boards from the Space Shuttle's I/O Processor\nSource: http://www.righto.com/2026/06/space-shuttle-io-processor-boards.html\nThe Space Shuttle's five\n1\ngeneral-purpose computers played a critical role in each flight: controlling the\nengines, monitoring thousands of sensors, display"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "I turned my prologue into a short video",
+      "url": "https://idiallo.com/byte-size/my-prologue-to-short-video",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--byte-size-my-prologue-to-short-video--9a2227fd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 個人の創作プロジェクト告知。記事サイズ447Bで内容も薄く、AI/Agent技術無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# I turned my prologue into a short video\nSource: https://idiallo.com/byte-size/my-prologue-to-short-video\nIt's hard to write a whole book. So for now at least, I've turned the prologue of my book into a short video. I hope you enjoy it."
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "Fangrui Song (MaskRay)",
+      "title": "Optimizing LLVM's bump allocator",
+      "url": "https://maskray.me/blog/2026-06-28-optimizing-llvm-bump-allocator",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/maskray.me--blog-2026-06-28-optimizing-llvm-bump-allocator--e81f36ad.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ LLVMコンパイラ最適化。BumpPtrAllocatorの高速化に関する低レイヤ技術記事。AI/LLM技術とは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Optimizing LLVM's bump allocator\nSource: https://maskray.me/blog/2026-06-28-optimizing-llvm-bump-allocator\nBumpPtrAllocator\nis LLVM's bump allocator (arena\nallocator): each allocation bumps a pointer within a slab, and\neverything is freed at once when the allocator dies. It backs Clang's\nASTContex"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Book Review: The Hotel Avocado by Bob Mortimer",
+      "url": "https://shkspr.mobi/blog/2026/06/book-review-the-hotel-avocado-by-bob-mortimer/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-06-book-review-the-hotel-avocado-by-bob-mortimer--3ec71bff.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 書籍レビュー。AI/Agent技術とは完全に無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Book Review: The Hotel Avocado by Bob Mortimer\nSource: https://shkspr.mobi/blog/2026/06/book-review-the-hotel-avocado-by-bob-mortimer/\nDespite vowing not to read sequels of books I love, I'm constantly surprised that regression to the mean is an iron-clad law of the universe. I thoroughly enjoyed "
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "All Roads Lead to Om",
+      "url": "https://ma.tt/2026/06/om-forever/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/ma.tt--2026-06-om-forever--095b3eda.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Om Malik追悼記事（Matt Mullenweg執筆）。AI/Agent技術とは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# All Roads Lead to Om\nSource: https://ma.tt/2026/06/om-forever/\nYesterday, my best friend and brother from another mother, Om Malik,\npassed away\n.\nThey say that blood is thicker than water, and what we had was way thicker than blood. — Bob Weir\nOm’s request was for a small family prayer ceremony. I"
+    }
+  ]
+}

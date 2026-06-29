@@ -7,15 +7,14 @@ tags:
   - qwen
   - world-models
   - ai-agents
-  - simulation
-  - agent-architecture
+  - robotics
+  - architecture
   - reasoning
   - reinforcement-learning
   - model
   - alibaba
   - open-source
   - agentic-rl
-  - chain-of-thought
   - foundation-models
   - benchmark
   - planning-agent
