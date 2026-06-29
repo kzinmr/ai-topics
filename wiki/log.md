@@ -1,3 +1,24 @@
+## [2026-06-29] Watchdog auto-fix
+
+### Auto-fixed
+- **Log.md**: Added 8 missing `---` section separators between consecutive `## [DATE]` entries (June 28-29 entries)
+
+### Verified (index.md — Format B)
+- **Pipe corruption**: 0 instances
+- **Line prefix corruption**: 0 instances
+- **Triple brackets**: 0 instances
+- **Space prefix**: 0 instances
+- **Duplicate entries**: 0 instances
+- **Ghost entries**: 0 instances
+- **Cross-section misplacement**: 0 instances
+
+### Pipeline Watchdog
+- **x_accounts**: Stale (26h) — known pattern, reported for monitoring
+- **wiki-health-report**: OK — total_l2=2722, entities=839, concepts=1851
+- **wiki-graph-analysis**: 74.4h old — stale, not acted upon
+
+---
+
 ## [2026-06-29] — active-crawl | 3 new concept pages
 
 **Sources**: HN Algolia + X/Twitter trending + blogwatcher DB gap analysis (June 29, 2026)
@@ -23,6 +44,7 @@
 
 **Raw articles created**: 2024-09-04_2409.07487_mixture-of-agents.md, 2026-05-27_2605.29116_beyond-consensus-moa.md, 2026-05-22_aleph-alpha_model-training-as-code.md, 2026-06-29_cpu-inference-llm-trend.md
 **SCHEMA.md tags added**: mixture-of-agents, model-training-as-code, flyte, weights-and-biases, cpu-inference
+---
 ## [2026-06-29] llm-pricing-monitor — pricing correction
 
 Live pricing fetch from all 4 providers (OpenAI, Anthropic, Google, DeepSeek). 1 change detected:
@@ -35,6 +57,7 @@ All other provider prices verified unchanged:
 - Google: 3.1 Pro ($2/$12), 3.5 Flash ($1.50/$9), 3 Flash Preview ($0.50/$3) ✅
 - DeepSeek: V4-Flash ($0.14/$0.28), V4-Pro ($0.435/$0.87) ✅
 
+---
 ## [2026-06-29] blog-wiki-ingest — blog triage enrichment (Case C2 recovery)
 
 Blog-triage output parse failed but checkpoint valid (today's date). No take decisions. Processed 2 reference enrichments:
@@ -44,6 +67,7 @@ Blog-triage output parse failed but checkpoint valid (today's date). No take dec
 
 Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tributes, LLVM optimization, book review, etc.). Archived via archive_triage.py.
 
+---
 ## [2026-06-29] Newsletter Wiki Ingest — Poolside and Open-Source AI Strategy
 
 **Source**: Interconnects / Robotic (Nathan Lambert) — "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem"
@@ -57,6 +81,7 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 - Added `[[concepts/open-source-ai]]` entry to Concepts section
 
 **Analysis**: The triage checkpoint was valid (Case C — cron output parse failed but checkpoint JSON intact). 2 take decisions processed (poolside license update + open model makers framework enrichment). 1 reference decision (open model categories) also executed as enrichment. All other items correctly skipped (already covered by existing pages or non-AI content).
+---
 ## [2026-06-29] Lambda MicroVMs vs AgentCore — Comparison Page
 
 **Created**: `comparisons/lambda-microvms-vs-agentcore.md` — AWS Lambda MicroVMs と Amazon Bedrock AgentCore の比較分析ページを作成。異なるスタックレイヤー（分離プリミティブ vs マネージドプラットフォーム）として整理し、アーキテクチャ位置付け、使用条件、競合状況を分析。
@@ -66,6 +91,7 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 - `entities/amazon-bedrock-agentcore.md` — 比較ページへのリンク追加
 - `index.md` — 比較ページを Comparisons セクションに追加
 
+---
 ## [2026-06-29] AWS Lambda MicroVMs — Wiki Ingestion
 
 **Source**: AWS News Blog (2026-06-22) — "Run isolated sandboxes with full lifecycle control: AWS Lambda introduces MicroVMs"
@@ -82,6 +108,7 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 
 **Analysis**: Lambda MicroVMs vs AgentCore — see concept page for detailed comparison table
 
+---
 ## [2026-06-28] X Bookmarks Ingest — Vercel Eve Framework
 
 **Source**: X Article (June 27, 2026) — "Building Agents with Vercel's Eve Framework"
@@ -97,6 +124,7 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 
 **Raw article**: [[raw/articles/2026-06-27_vercel-building-agents-with-eve-framework.md]]
 
+---
 ## [2026-06-28 18:20] — dreaming: consolidation — 2 takes, 4 reference enrichments
 
 ### Duplicate Check
@@ -131,6 +159,7 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 ### Archive
 - Skip/Reference items archived via archive_triage.py
 
+---
 ## [2026-06-28] health-fix | Auto-fix orphan pages in index.md
 
 ### Changes
