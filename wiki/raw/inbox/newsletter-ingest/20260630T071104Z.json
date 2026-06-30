@@ -1,0 +1,83 @@
+{
+  "run_id": "20260630T071104Z",
+  "triaged_at": "2026-06-30T07:11:30Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260629130327.3.e4c0f8aa21d8db1a@mg-d0.substack.com>",
+      "subject": "Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era",
+      "date": "2026-06-29",
+      "source_label": "uid=295",
+      "source_name": "Import AI (Jack Clark)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md",
+      "classification": "high",
+      "rationale": "Jack Clark's Import AI is a top-tier AI policy/tech newsletter. Topics: self-improving robots (robotics + AI agents), 10k Chinese GPU cluster (compute geopolitics, AI infrastructure), elegiac essay for human era (AI safety/alignment philosophy). All three themes directly relevant to wiki coverage areas.",
+      "read_url": "https://open.substack.com/pub/importai/p/import-ai-463-self-improving-robots",
+      "key_topics": ["self-improving-robots", "gpu-cluster", "china-ai", "compute-geopolitics", "ai-safety", "ai-philosophy"],
+      "action": "scrape_and_ingest",
+      "notes": "Substack redirect links — need to resolve actual article URLs from the read_url. High signal newsletter from Anthropic co-founder."
+    },
+    {
+      "message_id": "<20260629150235.3.7b65cfc6eda93d1c@mg2.substack.com>",
+      "subject": "🎙️ How I AI: GLM-5.2 review & How Gusto built a new product line with Claude Code",
+      "date": "2026-06-29",
+      "source_label": "uid=296",
+      "source_name": "How I AI (Lenny Rachitsky)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-how-i-ai-glm-5-2-review-how-gusto-built-a-new-product-line-with-claude-code.md",
+      "classification": "high",
+      "rationale": "Two substantive topics: (1) GLM-5.2 review — Zhipu AI's latest model, relevant to China AI and model comparisons; (2) Gusto case study of Claude Code in production — real-world coding agent adoption story. Both directly relevant to wiki entity/concept pages.",
+      "read_url": "https://open.substack.com/pub/lenny/p/how-i-ai-glm-52-review-and-how-gusto",
+      "key_topics": ["glm-5.2", "zhipu-ai", "claude-code", "coding-agents", "case-study", "gusto"],
+      "action": "scrape_and_ingest",
+      "notes": "GLM-5.2 may need entity/concept page. Gusto Claude Code adoption is a valuable case study for coding-agents concept page."
+    },
+    {
+      "message_id": "<20260629.173432.f0425c66@mta21>",
+      "subject": "Monday Template Title",
+      "date": "2026-06-29",
+      "source_label": "uid=297",
+      "source_name": "Unknown (beehiiv)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-monday-template-title.md",
+      "classification": "low",
+      "rationale": "Title is literally 'Monday Template Title' — appears to be a test/template email or misconfigured newsletter. All links are opaque beehiiv redirects with no discernible content. Not worth scraping.",
+      "read_url": null,
+      "key_topics": [],
+      "action": "skip",
+      "notes": "Likely a test/template newsletter. No actionable content from subject line alone. Beehiiv links are heavily encoded and may not resolve cleanly."
+    },
+    {
+      "message_id": "<20260630064727.3.600232a80f434ff7@mg2.substack.com>",
+      "subject": "[AINews] not much happened today",
+      "date": "2026-06-30",
+      "source_label": "uid=298",
+      "source_name": "AINews (swyx)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-30-ainews-not-much-happened-today.md",
+      "classification": "medium",
+      "rationale": "swyx's AINews is a curated AI community digest. Despite the 'not much happened' title, these digests typically contain HN/Reddit-sourced AI discussions and links. The substack redirect links (link 8-20) likely contain the actual curated article links. Worth scraping the main post to check for relevant content.",
+      "read_url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-07e",
+      "key_topics": ["ai-news-digest", "community-discussion"],
+      "action": "scrape_low_priority",
+      "notes": "swyx's AINews aggregates community discussions. Low signal from title alone but may contain useful links. Process after high-priority items."
+    }
+  ],
+  "summary": {
+    "total_newsletters": 4,
+    "critical": 0,
+    "high": 2,
+    "medium": 1,
+    "low": 1,
+    "skip": 1,
+    "action_required": [
+      "Scrape Import AI 463 article (https://open.substack.com/pub/importai/p/import-ai-463-self-improving-robots)",
+      "Scrape How I AI GLM-5.2/Claude Code article (https://open.substack.com/pub/lenny/p/how-i-ai-glm-52-review-and-how-gusto)",
+      "Optionally scrape AINews post for curated links"
+    ],
+    "potential_wiki_updates": [
+      "New entity page: GLM-5.2 / Zhipu AI (if not exists) — from GLM-5.2 review",
+      "Update concept page: coding-agents — add Gusto/Claude Code case study",
+      "Update concept page: compute-geopolitics — add 10k Chinese GPU cluster data",
+      "Update concept page: robotics-ai — add self-improving robots research",
+      "Check entity page: Jack Clark (importai) — ensure newsletter source is tracked"
+    ]
+  }
+}

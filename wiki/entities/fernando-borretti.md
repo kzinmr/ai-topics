@@ -2,7 +2,7 @@
 title: "Fernando Borretti"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-06-30
 type: entity
 ---
 
@@ -204,6 +204,19 @@ His blog is structured around **projects, articles, and fiction** — reflecting
 - **Text adventures as AI eval**: Using interactive fiction to test LLM agent capabilities
 - **Fiction writing**: Creative work alongside technical writing
 
+## AI and the Permanent Underclass
+
+In his essay "[No One Escapes the Permanent Underclass](https://borretti.me)", Borretti presents a structural argument about the inevitability of human disempowerment by AI systems. The essay contends that the logic of state competition will drive nations to minimize human decision-making in favor of [[concepts/ai-agents|AI-driven processes]], regardless of political will or regulatory intervention.
+
+Borretti identifies three emerging strata:
+1. **The AI base** — a non-human decision layer that increasingly governs critical systems
+2. **The 'permanent overclass'** — those who control and direct AI systems
+3. **The 'permanent underclass'** — humans structurally excluded from decision-making at all levels
+
+The essay connects AI advancement to political theory about labor, state power, and structural exclusion, arguing that the trajectory is not a matter of technological possibility but of political economy: if AI can replace human decision-making, states in competition will be forced to adopt it. The result is a permanent stratification where a significant portion of humanity is structurally irrelevant to the systems that govern their lives.
+
+This analysis echoes the themes of [[concepts/technological-singularity|technological accelerationism]] — if agency itself becomes a commodity provided by AI systems, then control over those systems defines social power, and those without access are permanently excluded.
+
 ## Related
 
 - [[concepts/austral]] — Systems programming language with linear types and capabilities
@@ -244,4 +257,5 @@ His blog is structured around **projects, articles, and fiction** — reflecting
 - "Unbundling Tools for Thought"
 - "Language Pragmatics Engineering"
 - "There Is No New Aesthetics"
+- raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md
 - Func Prog Podcast #6, Glasp Talk #12, The Stewart Mackenzie Indaba #31

@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-06-26
+updated: 2026-06-30
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -17,6 +17,7 @@ sources:
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/articles/2026-05-22-deepseek-strategy.md
+  - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
   -   - raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md
 ---
 
@@ -147,6 +148,17 @@ DeepSeek created its first **"Harness team"** — an agent execution environment
 The Harness team's formation validates the "Systems over Models" thesis and represents a strategic response to the industry-wide shift where [[concepts/harness-engineering/agent-harness|agent harness]] infrastructure is becoming a competitive differentiator.
 
 > Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
+
+## DSpark Speculative Decoding (June 2026)
+
+DeepSeek released DSpark, a [[concepts/speculative-decoding|speculative decoding]] breakthrough:
+- 30.9% higher accepted length vs Eagle3
+- 16.3% higher accepted length vs DFlash
+- Already deployed in V4-Flash and V4-Pro preview engines
+- DSpark is part of DeepSeek's DeepSpec open-source inference framework (see [[concepts/deepspec-dspark]])
+- This improves real-time generation speed without quality degradation
+
+> Source: [AINews June 30, 2026]({{baseUrl}}/newsletters/2026-06-30-ainews-not-much-happened-today)
 
 ## Updated Pricing Table
 The pricing table in the Models section (pre-discount) should be read in context with the permanent discount above. The current API pricing is:

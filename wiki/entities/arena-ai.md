@@ -2,7 +2,7 @@
 title: "Arena AI"
 type: entity
 created: 2026-05-08
-updated: 2026-06-05
+updated: 2026-06-30
 tags:
   - company
   - evaluation
@@ -18,6 +18,7 @@ sources:
   - https://arena.ai/blog/
   - https://arena.ai/blog/feed
   - raw/articles/2026-06-04_arena-ai_agent-arena-methodology.md
+  - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
 ---
 
 # Arena AI
@@ -58,6 +59,16 @@ On June 4, 2026, Arena launched **Agent Arena**, a new evaluation system for AI 
 - **Decoupled ranking**: Separates orchestrator model contributions from harness components
 
 See [[concepts/ai-benchmarks/agent-arena]] for full methodology and data.
+
+## Growth Milestones (June 2026)
+
+- **$100M ARR** achieved in approximately 8 months of commercial operations
+- **700M+ conversations** processed on the platform
+- **82M+ votes** collected for model ranking
+- **10M+ monthly visitors** to arena.ai
+- **New use case**: Agent-mode evaluations deployed as post-deployment CI/CD — teams run agent evaluations through Arena's platform as part of their production monitoring pipeline
+
+See [[concepts/ai-benchmarks/agent-arena]] for agent evaluation methodology.
 
 ## Related
 

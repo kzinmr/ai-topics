@@ -2,6 +2,36 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-06-30 07:40] — Newsletter wiki-ingest — 8 takes, 3 references from 4 newsletters
+
+**Source checkpoint:** newsletter-triage (recovered from checkpoint after JSON parse error)
+**Newsletters processed:** AINews (swyx), How I AI (Lenny Rachitsky), Import AI #463, Monday Template (skip)
+
+### New pages created (3):
+- `concepts/brain2qwerty.md` — Meta Brain2Qwerty v2 non-invasive brain-to-text decoder; ~61% accuracy; Auto Research coding-agent workflow
+- `entities/meituan-longcat.md` — Meituan LongCat 2.0 / Owl Alpha; 1.6T/48B MoE, 1M context, trained on 50k domestic accelerators; first near-frontier model on fully domestic Chinese hardware
+- `concepts/snowflake-arctic-rl.md` — Snowflake Arctic RL; VeRL+SkyRL; ZoRRo 6x actor-update acceleration; 36h Text2SQL training beats Gemini 3.1 Pro
+
+### Existing pages enriched (5 takes):
+- `entities/fernando-borretti.md` — Added "AI and the Permanent Underclass" section: structural inevitability of human disempowerment, three-strata society (AI base, permanent overclass, permanent underclass)
+- `entities/glm-5-zai.md` — Added Claire's hands-on review: 45-min autonomous bug triage, $3.36/6M tokens, TypeScript/React weakness under agentic pressure
+- `concepts/coding-agents/coding-agents.md` — Added Gusto Cofounder case study: 5-person team, 10 weeks, zero PM/Jira/docs, Claude Code as primary contributor
+- `entities/deepseek.md` — Added DSpark speculative decoding: 30.9% higher accepted length vs Eagle3, deployed in V4-Flash/V4-Pro
+- `entities/arena-ai.md` — Added $100M ARR in 8 months, 700M+ conversations, 82M+ votes, 10M+ monthly visitors, agent-mode CI/CD
+
+### Reference enrichments (3):
+- `entities/tencent.md` — Added ARGUS GPU cluster telemetry (10k GPU tracing)
+- `entities/cursor-ai.md` — Added Cursor for iOS (always-on cloud agents, PR diff notifications)
+- `concepts/nemotron-3-ultra.md` — Added Nemotron-TwoTower (98.7% AR quality, 2.42x throughput) + vLLM multi-node inference guide
+
+
+## [2026-06-30 12:00] — New concept page: Brain2Qwerty v2 (Meta)
+
+**New wiki page:**
+- `concepts/brain2qwerty.md` — Meta Brain2Qwerty v2 non-invasive EEG-based brain-to-text decoder; ~61% accuracy; Auto Research coding-agent workflow improved word error rate
+
+**Source:** raw/newsletters/2026-06-30-ainews-not-much-happened-today.md (triage decision: new concept)
+
 ## [2026-06-29 22:30] — X accounts scan — 4 raw articles + 3 wiki pages from 8 posts
 
 **Scan summary**: 84 tracked accounts, 12 scanned, 8 new substantive posts from 4 accounts (simonw, tomaarsen, emollick, ashpreetbedi).

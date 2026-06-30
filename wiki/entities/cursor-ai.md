@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-06-24
+updated: 2026-06-30
 type: entity
 tags:
   - entity
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-06-12_cursor_building-recursive-agent-systems.md
   - raw/articles/cnbc.com--2026-06-16-spacex-spcx-cursor-acquisition-ipo-html--cb9f7b0c.md
   - raw/newsletters/2026-06-18-the-first-big-exit-in-ai.md
+  - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
 ---
 
 
@@ -348,6 +349,14 @@ Aman Sanger presented at NVIDIA GTC 2026 (Apr 12, 2026) outlining Cursor's termi
 See also: [[concepts/self-driving-codebases]], [[concepts/coding-agents/async-coding-agents]]
 
 ---
+
+## Cursor for iOS (June 2026)
+
+Cursor launched an iOS app bringing always-on cloud agents to mobile devices. Key capabilities:
+
+- **Always-on cloud agents**: Cloud agents remain accessible and manageable from iPhone/iPad
+- **Remote control**: Trigger agent runs, review PR diffs, and monitor agent progress from phone
+- **PR diff notifications**: Push notifications alert when cloud agents complete PRs, with diff summaries delivered to the device
 
 ## Sources
 

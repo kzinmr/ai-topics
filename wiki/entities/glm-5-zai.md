@@ -2,7 +2,7 @@
 title: GLM-5 (Z.ai)
 type: entity
 created: 2026-04-10
-updated: 2026-06-23
+updated: 2026-06-30
 tags:
   - entity
   - model
@@ -27,6 +27,7 @@ sources:
 - raw/articles/simonwillison.net--2026-jun-17-glm-52--41b7cb7d.md
 - raw/articles/2026-06-19_designarena_glm-52-beat-fable-5-website-design.md
 - raw/newsletters/2026-06-22-glm-5-2-is-the-step-change-for-open-agents.md
+- raw/newsletters/2026-06-29-how-i-ai-glm-5-2-review-how-gusto-built-a-new-product-line-with-claude-code.md
 ---
 
 # GLM-5 (Z.ai)
@@ -116,9 +117,33 @@ Nate Lambert at Interconnects analyzed GLM-5.2 as a **step change for open agent
 - @askalphavx reported GLM-5.2 is the first open-weight model capable of real **autoresearch tasks** (async vs colocated RL training over 2×8×H100 nodes)
 - Meta-point: **open model quality now clears the threshold where inference vendors and agent tool builders optimize aggressively around it**
 
+## Hands-On Review: Claire's Real-World Test (June 29, 2026)
+
+Claire from chatprd.ai/How I AI conducted a focused 45-minute autonomous bug triage test with [[entities/glm-5-zai|GLM-5.2]], assessing the model's practical capability for production debugging in a [[concepts/autonomous-agents|real-world agentic workflow]].
+
+### Test Setup & Execution
+- **Duration:** 45 minutes of autonomous operation
+- **Scope:** Processed 20 Sentry errors, 5 Vercel log signals
+- **Outcome:** Implemented 14 fixes fully autonomously without human intervention
+
+### Cost Analysis
+- **Total cost:** $3.36 for 6M tokens consumed during the session
+- Highly cost-effective for autonomous debugging compared to equivalent human engineer time or competing API models (e.g., [[entities/claude-code|Claude Code]] sessions on Opus 4.8 or Fable 5)
+
+### Key Weakness Identified
+- **TypeScript under React agentic pressure:** The model struggled with complex TypeScript/React interactions when operating in fully autonomous agentic mode
+- Frontend-specific patterns involving typed props, generic components, and React hooks with complex generic signatures proved challenging for autonomous resolution
+
+### Overall Assessment
+- **Strengths:** Strong for backend/logic tasks, cost-efficient, reliable at processing structured error logs and implementing fixes autonomously
+- **Weaknesses:** Weaker in frontend agentic scenarios, particularly TypeScript-heavy React codebases
+- Conclusion: Excellent value for backend autonomous debugging but teams should reserve judgement on full-stack agentic deployment until TypeScript/React capability matures
+
 ## Sources
 - raw/articles/2026-06-17_ainews_glm-52-indexshare.md
 - raw/articles/simonwillison.net--2026-jun-17-glm-52--41b7cb7d.md
+- raw/newsletters/2026-06-22-glm-5-2-is-the-step-change-for-open-agents.md
+- raw/newsletters/2026-06-29-how-i-ai-glm-5-2-review-how-gusto-built-a-new-product-line-with-claude-code.md
 
 ## Independent Review: Simon Willison (June 17, 2026)
 

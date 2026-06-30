@@ -1,0 +1,229 @@
+---
+title: "Unbundling the standard library"
+url: "https://nesbitt.io/2026/06/29/unbundling-the-standard-library.html"
+fetched_at: 2026-06-30T07:01:00.563681+00:00
+source: "nesbitt.io"
+tags: [blog, raw]
+---
+
+# Unbundling the standard library
+
+Source: https://nesbitt.io/2026/06/29/unbundling-the-standard-library.html
+
+I got sent a link to
+a pull request
+against
+Dan Burton
+’s
+composition
+, a tiny Haskell package whose whole gimmick is that it depends on nothing, not even
+base
+. The upcoming GHC 10.2 breaks it: built-in names resolve through a real module,
+GHC.Essentials
+, which is in
+base
+, so from 10.2 every package picks up an implicit
+base
+dependency whether the cabal file declares one or not. The PR added a flag to opt out of that. Dan closed it and shipped a 2.0 that depends on
+base
+like everything else, on the grounds that the zero-dependency claim had always been a polite fiction about where the compiler’s wired-in identifiers came from.
+The zero-dependency claim was always a question of where the line falls between the compiler and its standard library, and in GHC 10.2 that line moved by one module. That sent me off cataloguing the same boundary in other ecosystems, but the part I didn’t expect was how much the answer changes what a vulnerability advisory looks like.
+Advisory format
+The clearest case I found is
+Ruby Bug #20516
+: Ruby 3.3.2 shipped weeks after the fix for CVE-2024-35176 still bundling the vulnerable rexml 3.2.6, because the fix had gone out as a gem release and the copy in the Ruby tarball hadn’t been bumped to match. The advisory for that CVE is filed against the gem
+rexml
+, but the vulnerable copy on a 3.3.2 install is there because the Ruby distribution put it there rather than because any project resolved it, and an SBOM generated from a
+Gemfile.lock
+won’t list it at all; the gap exists because rexml is on both sides of that line at once.
+Seven years earlier, before Ruby’s gemification had reached WEBrick,
+CVE-2017-10784
+was filed against three Ruby version ranges and fixed by three coordinated point releases, with advisory text reading “all users running an affected release should upgrade immediately.” The 2024 REXML CVEs (
+CVE-2024-35176
+and five more through the year) were each filed against
+pkg:gem/rexml
+with a gem version range, each fixed by a gem release that users could apply without waiting for a Ruby point release, though the bundled copy still had to be bumped on each maintained Ruby branch.
+CVE-2023-24329
+in Python’s
+urllib.parse
+lists five separate CPython version ranges across 3.7 through 3.11 and the fix was five point releases;
+CVE-2022-35256
+in Node’s
+http
+parser is three Node release lines and three point releases. Go’s vulnerability database has a pseudo-module literally called
+stdlib
+so that toolchain CVEs can be expressed in the OSV schema at all, with
+govulncheck
+matching those entries against the Go version that built the binary rather than anything in
+go.sum
+.
+Bundled vs packaged
+In most ecosystems the standard library is underneath the package manager: bundled into the compiler or runtime, with no registry page, no independent version number, and no lockfile entry. Python’s stdlib ships in the CPython tarball and
+urllib
+has no canonical PyPI package; Rust’s
+std
+and
+core
+are sysroot crates whose names
+404 on crates.io
+; the Go module spec
+treats
+any import path without a dot in the first segment as standard library and never resolves it from the network;
+dart:core
+is a URI scheme rather than a pub package;
+java.base
+is in the JDK image and
+fs
+and
+http
+are compiled into the Node binary.
+A smaller group put the standard library inside the package manager, with a registry page and a version that appears in the dependency graph. Haskell’s
+base
+is on Hackage,
+kotlin-stdlib
+and
+scala-library
+are Maven Central artifacts that turn up in Gradle lockfiles,
+FSharp.Core
+is an
+implicit
+<PackageReference>
+on NuGet,
+elm/core
+is a required line in every
+elm.json
+, and Deno’s
+@std/*
+is on JSR
+with nothing equivalent baked into the binary.
+A third group run both at once, with the same module available from the runtime distribution and from the registry under the same name. Perl’s
+dual-life modules
+ship in the perl tarball and on CPAN, Ruby has
+three tiers
+of non-gemified libraries, default gems, and bundled gems, R splits base packages from CRAN-updatable recommended packages, and Julia bundles its stdlibs as packages with fixed UUIDs that the resolver can satisfy from the General registry instead.
+Migrations
+Modules have been moving through Ruby’s tiers from stdlib to default gem to bundled gem for a decade, with the pace picking up in
+3.4
+(
+csv
+,
+base64
+,
+bigdecimal
+,
+drb
+and nine others to bundled) and
+4.0
+(
+ostruct
+,
+logger
+,
+irb
+,
+rdoc
+).
+PEP 594
+removed nineteen modules from CPython in 3.13, and
+JEP 320
+removed the Java EE and CORBA modules from the JDK in 11 with replacements on Maven Central.
+The
+dart:html
+family is deprecated in favour of
+package:web
+on pub, and a subset of Julia’s bundled stdlibs became
+upgradable from the registry
+in 1.9. In GHC 9.10
+base
+was split over a new
+ghc-internal
+package as the first step toward a
+base
+that can be
+reinstalled independently
+of the compiler version, which is the work Dan’s
+composition
+PR was responding to. Racket decomposed its whole distribution in
+a single 2014 release
+into roughly two hundred catalog packages over a minimal core.
+ASP.NET Core, one layer up from .NET’s base class library, is the one case I found that moved from registry packages back into the runtime: 1.0 shipped as ordinary NuGet packages that every web project restored individually; by 2.1 it had been
+reconstituted as a shared framework
+installed alongside the runtime, and from 3.0 the package references were replaced by a single
+implicit
+<FrameworkReference>
+. The package model had produced large restore graphs, slow installs, and diamond conflicts between package versions that application authors had no way to untangle, because the whole framework had gone into the resolver at once rather than one module at a time.
+Stated reasons
+The reason given most often in the migration documents is decoupling release cadence: a fix in one stdlib module shouldn’t have to wait for the next language version, and a language version shouldn’t be forced because one module needs a patch. The Julia 1.9 post is direct about stdlibs having been stuck at whatever version shipped with the binary, with
+DelimitedFiles
+made the first upgradable stdlib so a fix could ship from the registry while the library stayed in the distribution. The Dart migration to
+package:web
+exists because the old
+dart:html
+bindings were hand-maintained and chronically behind the browser APIs, while the package is generated from Web IDL and can be released whenever the IDL changes. Reinstallable
+base
+is meant to fix the long-standing Haskell annoyance that an upper bound on
+base
+is really a constraint on which GHC you can use.
+The
+cpan/
+and
+dist/
+directories in the perl source tree exist so a dual-life module can be released on CPAN ahead of the next perl. Ruby’s default gems are the same idea under a different name, and a fix to
+json
+or
+psych
+reaches users as a
+gem update
+rather than three coordinated point releases.
+The second stated reason is getting code out of the core distribution so the core team is no longer responsible for it. PEP 594’s title is “Removing dead batteries” and the rationale is about modules with no maintainer, obsolete protocols and design decisions from the 1990s; the
+standard-*
+packages on PyPI
+that resurrect
+telnetlib
+and
+cgi
+are a third-party project, not a CPython deliverable. JEP 320’s rationale is that the Java EE and CORBA APIs were never really part of SE and standalone Maven artifacts had existed for years, and Nim has a
+graveyard org
+for modules removed from its stdlib.
+Ruby’s default-to-bundled promotion is driven by maintenance handoff rather than release cadence: a default gem still has ruby-core as the maintainer of record while a bundled gem is an ordinary gem that happens to be in the install, and if nobody maintains a bundled gem after promotion that’s no longer ruby-core’s problem.
+The migration documents give cadence and maintenance burden as reasons and don’t mention advisory format, probably because the benefit goes to scanner authors and SBOM consumers rather than the language teams doing the work. A CVE moving from prose against a runtime version to a purl with a version range is what matters for the
+SBOM and CRA questions
+I keep coming back to, and the transitional state where a module ships in both the runtime and the registry is where it breaks.
+Dual-life modules
+The rexml gap was a release-process slip, but dual-shipping produces the same problem by design.
+CVE-2024-30105
+in .NET’s
+System.Text.Json
+has a Microsoft advisory listing the NuGet package range (
+>= 7.0.0, <= 8.0.3
+) and the runtime range (“.NET 8.0.6 or earlier”) side by side, because the library is both an out-of-band NuGet package and part of the shared framework, and the remediation is effectively “upgrade whichever one you’re getting it from.”
+Go’s
+GO-2023-1571
+lists both the
+stdlib
+pseudo-module and
+golang.org/x/net
+because the same HPACK code is in both. JavaFX was removed from the JDK in 11 and now ships as
+pkg:maven/org.openjfx/*
+on Maven Central, so
+CVE-2024-20925
+is fixed for Java 11+ users by bumping a Maven dependency while Java 8 users, where it’s still bundled, get a JDK update for the same bug, and both paths appear in the one advisory. Any tool consuming these needs a per-ecosystem, per-module record of whether the runtime copy or the registry copy wins at load time, and that mapping isn’t part of any common advisory format.
+Perl has been dual-shipping long enough to have tooling for it:
+Module::CoreList
+records which version of every dual-life module shipped in every perl release back to 5.000, the
+%upstream
+hash records whether
+blead
+or CPAN holds the canonical copy of each, and the
+corelist
+command queries both from the shell. That’s a machine-readable record of which version shipped with a given perl and where fixes land first; which copy actually loads is still a runtime introspection question, but the release-to-bundled-version mapping is the part other ecosystems leave implicit. Ruby has
+stdgems.org
+, which publishes the equivalent mapping as JSON, though it’s a third-party project rather than part of the toolchain, and for Python, Java, Julia and Dart I can’t find anything comparable.
+The record that would make the transitional state safe for a scanner has roughly the same fields everywhere: for each runtime release and each module, the bundled version, the registry coordinate it corresponds to, which side is canonical upstream, whether the registry copy can replace the bundled one in place, and which copy the toolchain resolves to when both are installed.
+Module::CoreList
+and stdgems.org each cover roughly the first three; nothing I’ve found covers all five, and the identity layer underneath has the same gap, since purl has no syntax for “rexml as bundled in ruby 3.3.2” as distinct from
+pkg:gem/
+[email protected]
+, which is what the Go
+stdlib
+pseudo-module works around for one ecosystem. The migration is happening across a dozen ecosystems and the bookkeeping exists, partially, in two of them.

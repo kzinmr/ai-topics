@@ -4,7 +4,7 @@ type: concept
 aliases:
   - coding-agents
 created: 2026-04-25
-updated: 2026-05-29
+updated: 2026-06-30
 tags:
   - concept
   - coding-agents
@@ -59,6 +59,18 @@ This shift parallels [[entities/hamel-husain]]'s move from Claude Code to Codex 
 
 The counter-argument from [[entities/eleanor-berger]]: her Hermes agent Fnord runs on a home Mac Mini, not the cloud. But she concedes that GPT-5.5 was the unlock — prior models weren't reliable enough for autonomous operation. The model capability threshold determines which execution model is viable.
 
+### Gusto Cofounder: Production Claude Code Case Study (June 2026)
+
+[[entities/gusto]]'s cofounder Josh Reeves shared how a **5-person team** built a new product line in **10 weeks** using [[entities/claude-code]] as their primary development tool — not as an assistant, but as the primary contributor.
+
+**Stack:** Cloudflare Workers + Vercel AI SDK
+
+**"Permanent Zoom":** Claude Code operated in a state of "permanent zoom" — it was the primary contributor, not a sidekick. Every team member functioned as a Claude Code **co-pilot** rather than a traditional developer. Their job shifted from writing code to writing prompts, reviewing output, and guiding the agent.
+
+**Zero overhead — no PM, no Jira, no docs:** The team used absolutely no project managers, no Jira tickets, and no design documents. Claude Code absorbed all coordination overhead — it functioned as both the communication layer and the execution layer, rendering traditional project management tools unnecessary.
+
+**Why it matters:** This is the first prominent case of a production system built entirely in the "agent-as-primary-contributor" mode — not a prototype or side project, but a real product line delivered on a hard deadline. It validates that small teams operating as [[entities/anthropic]] Claude Code co-pilots can achieve extreme velocity when they fully commit to the paradigm.
+
 ## Paradigm Shift: Interactive → Background
 
 | Era | Model | Human Role | Example |
@@ -96,6 +108,9 @@ The counter-argument from [[entities/eleanor-berger]]: her Hermes agent Fnord ru
 - [simonwillison.net--2026-apr-22-claude-code-confusion--c0c17d47](simonwillison.net--2026-apr-22-claude-code-confusion--c0c17d47.md)
 - [simonwillison.net--2026-apr-24-recent-claude-code-quality-reports--7811dd0a](simonwillison.net--2026-apr-24-recent-claude-code-quality-reports--7811dd0a.md)
 - [theregister.com--2026-03-31-anthropic-claude-code-source-code--ba8c2ae1](theregister.com--2026-03-31-anthropic-claude-code-source-code--ba8c2ae1.md)
+
+### newsletters
+- [2026-06-29-how-i-ai-glm-5-2-review-how-gusto-built-a-new-product-line-with-claude-code](2026-06-29-how-i-ai-glm-5-2-review-how-gusto-built-a-new-product-line-with-claude-code.md)
 
 ### coding
 - [2026-2013-ralph-minimal-file-based-autonomous-coding-agent](2026-2013-ralph-minimal-file-based-autonomous-coding-agent.md)

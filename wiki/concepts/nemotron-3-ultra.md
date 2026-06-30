@@ -1,7 +1,7 @@
 ---
 title: "Nemotron 3 Ultra (NVIDIA)"
 created: "2026-06-06"
-updated: "2026-06-06"
+updated: "2026-06-30"
 type: concept
 tags:
   - model
@@ -14,6 +14,7 @@ sources:
   - "raw/articles/2026-06-05_fireworks-ai_nemotron-3-ultra.md"
   - https://fireworks.ai/blog/nemotron-3-ultra
   - https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf
+  - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
 ---
 
 # Nemotron 3 Ultra
@@ -67,6 +68,11 @@ Nemotron 3 Ultra was built specifically for **agentic workloads** — not single
 ## Significance
 
 Nemotron 3 Ultra represents NVIDIA's strategic entry into the open frontier reasoning model space, directly competing with DeepSeek V4, Qwen 3.6, and other open models optimized for long-running agent tasks. Its hybrid Mamba-Transformer design signals the growing adoption of non-transformer architectures in large-scale models, particularly for applications requiring efficient long-context processing.
+
+## Variants & Ecosystem
+
+- **Nemotron-TwoTower** (June 2026) — clones AR LLM into diffusion-style parallel generator. 98.7% AR quality at 2.42× throughput (30B variant).
+- **vLLM multi-node inference guide** — NVIDIA published guide for serving Nemotron-3-Ultra 550B across 4× DGX Spark as single OpenAI-compatible endpoint.
 
 ## Related Pages
 

@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-06-30T07:31:33.850010+00:00",
+  "triage_run_id": "20260630T071104Z",
+  "source": "newsletter",
+  "summary_ja": "4ニュースレターから24判断を生成。テイク8件: (1) Meta Brain2Qwerty v2新規概念、(2) DeepSeek DSpark entities/deepseek拡充、(3) Gusto Cofounder Claude Code事例 coding-agents拡充、(4) LongCat 2.0/Owl Alpha Meituan新規エンティティ、(5) Snowflake Arctic RL新規概念、(6) Arena $100M ARR entities/arena-ai拡充、(7) GLM-5.2 Live Review entities/glm-5-zai拡充、(8) Borretti Permanent Underclass entities/fernando-borretti拡充。参照3件、スキップ13件（Devin Fusionは同日sitemap-monitor/blog-ingestで既にカバーされているためskipに降格）。",
+  "decisions": [
+    {
+      "item_id": "importai463-argus",
+      "source": "newsletter",
+      "source_name": "Import AI (Jack Clark)",
+      "title": "ARGUS — Tencent 10k GPU Cluster Telemetry",
+      "url": "https://arxiv.org/abs/2606.20374",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/tencent.md（27行・薄い）にARGUS/10k GPUクラスタ記述なし。中国AIインフラ成熟度の証拠としてentities/tencent.md拡充に有用。",
+      "candidate_wiki_path": "entities/tencent.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-29\n**Subject:** Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era\n**Collected:** 2026-06-30T07:10:58.765560+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBv"
+    },
+    {
+      "item_id": "ainews-cursor-ios",
+      "source": "newsletter",
+      "source_name": "AINews (swyx)",
+      "title": "Cursor for iOS — always-on cloud agents",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-07e",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-30-ainews-not-much-happened-today.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/cursor-ai.mdにiOS版記載なし。軽微なエンティティ拡充。",
+      "candidate_wiki_path": "entities/cursor-ai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-30\n**Subject:** [AINews] not much happened today\n**Collected:** 2026-06-30T07:11:02.954739+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1"
+    },
+    {
+      "item_id": "importai463-enpire",
+      "source": "newsletter",
+      "source_name": "Import AI (Jack Clark)",
+      "title": "NVIDIA ENPIRE — Self-Improving Robots",
+      "url": "https://open.substack.com/pub/importai/p/import-ai-463-self-improving-robots",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ENPIREはconcepts/enpire.md（146行）で既に網羅的カバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-29\n**Subject:** Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era\n**Collected:** 2026-06-30T07:10:58.765560+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBv"
+    },
+    {
+      "item_id": "importai463-locus",
+      "source": "newsletter",
+      "source_name": "Import AI (Jack Clark)",
+      "title": "LOCUS — local law dataset",
+      "url": "https://arxiv.org/abs/2606.19334",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ローカル法規データセット。中核トピック外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-29\n**Subject:** Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era\n**Collected:** 2026-06-30T07:10:58.765560+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBv"
+    },
+    {
+      "item_id": "importai463-tokson",
+      "source": "newsletter",
+      "source_name": "Import AI (Jack Clark)",
+      "title": "AI and the Lessons of History — Tokson (SSRN)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6875838",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 短いSSRN論文。Wiki価値低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-29\n**Subject:** Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; and an elegiac essay for the human era\n**Collected:** 2026-06-30T07:10:58.765560+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBv"
+    },
+    {
+      "item_id": "monday-template-title",
+      "source": "newsletter",
+      "source_name": "Unknown (beehiiv)",
+      "title": "Monday Template Title (test/template — skip)",
+      "url": "N/A",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-29-monday-template-title.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ テンプレート/テスト。全リンクtracking URL。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-29\n**Subject:** Monday Template Title\n**Collected:** 2026-06-30T07:11:01.755645+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/TPcwa6SbMXLdLFuMtq5zyGWoZaZiAUePIEvo83g235TywJZRc9YCe1QDfGEV%0A6HUpMHX5Ltxx1dSLAHUxRBLhyXJURbtGXG%2BGrr"
+    }
+  ]
+}
