@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-06-30 07:50] — Blog wiki-ingest — Ornith-1.0, voyage-context-4, Cory Doctorow enriched
+
+**Source:** blog-triage (recovered from checkpoint after JSON parse error)
+
+### New pages created (1):
+- `concepts/ornith-self-scaffolding-llm.md` — DeepReinforce Ornith-1.0: self-scaffolding LLMs for agentic coding; 4 variants (9B~397B) on Gemma 4/Qwen 3.5; MIT licensed; Simon Willison verified with LM Studio + Pi
+
+### Existing pages enriched (3):
+- `entities/voyage-ai.md` — Added voyage-context-4: MoE backbone contextualized chunk embeddings; auto-chunking; no 32K limit; $0.12/1M tokens; 2.08% chunk retrieval improvement
+- `entities/cory-doctorow.md` — Added "Google Search Enshittification → Gemini" section: Google's intentional search degradation, Jedi Blue collusion, Gresham's Law of the web, parasitic AI summaries
+- `entities/john-d-cook-applied-mathematics-consulting.md` — Added "LLM Output Verification: Grok vs Man Page" section: empirical LLM verification methodology, Grok correct despite man page bug
+
 ## [2026-06-30 07:40] — Newsletter wiki-ingest — 8 takes, 3 references from 4 newsletters
 
 **Source checkpoint:** newsletter-triage (recovered from checkpoint after JSON parse error)

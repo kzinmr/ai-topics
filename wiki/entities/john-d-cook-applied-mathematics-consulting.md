@@ -2,18 +2,20 @@
 title: John D. Cook
 type: entity
 created: 2026-04-09
-updated: 2026-06-21
+updated: 2026-06-30
 tags:
 - person
 - blogger
 - hn-popular
 - formal-methods
+- llm-evaluation
 aliases:
 - johndcook.com
 - john-d-cook-applied-mathematics-consulting
 sources:
   - raw/articles/johndcook.com--blog-2026-06-10-claude-and-lean--1d90aa74.md
   - raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md
+  - raw/articles/johndcook.com--blog-2026-06-29-who-you-gonna-believe--ef670d0e.md
 ---
 
 # John D. Cook
@@ -99,6 +101,20 @@ On June 20, 2026, Cook ran an experiment using Claude to generate Z3/Python code
 This is the third in Cook's series of LLM-assisted puzzle-solving experiments (following Claude/Prolog and ChatGPT/Prolog), and demonstrates the feasibility of LLMs bridging natural-language mathematical descriptions to formal solver code.
 
 Sources: raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md
+
+### LLM Output Verification: Grok vs Man Page (June 2026)
+
+On June 29, 2026, Cook published a concise demonstration of a critical skill for AI-assisted workflows: **verifying LLM output against actual system behavior rather than trusting either the LLM or documentation blindly**. When Grok claimed `bc`'s Bessel function `j(n,x)` took order `n` as the first argument, and `man bc` on macOS said `j(x,n)` (opposite order), Cook resolved the dispute by running actual test cases. The runtime proved Grok correct and the man page buggy — a documentation error in the macOS-shipped version (the Linux man page was correct).
+
+**Methodology:**
+- `j(1, 0)` returned 0 (J₁(0)=0) → first argument is order `n`
+- `j(1.2, 3.4)` vs `j(1, 3.4)` matched → first argument truncated to integer (order), confirming Grok
+
+**Key insight:** In high-stakes AI applications, neither the LLM's confidence nor the documentation's authority should be accepted without empirical verification. Cook's approach — test the actual system — is the correct methodology for all LLM-assisted programming.
+
+This is the fourth in Cook's experimental series demonstrating LLM reliability patterns (following Claude + Lean, Claude + Z3/Python, and Claude + Prolog).
+
+Sources: raw/articles/johndcook.com--blog-2026-06-29-who-you-gonna-believe--ef670d0e.md
 
 ## Key Quotes
 

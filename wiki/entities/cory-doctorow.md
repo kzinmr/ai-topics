@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-06-20
+updated: 2026-06-30
 status: L3
 sources:
   - https://pluralistic.net/
@@ -12,6 +12,7 @@ sources:
   - https://locusmag.com/feature/cory-doctorow-full-employment/
   - raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md
   - raw/articles/pluralistic.net--2026-06-19-too-big-to-fact-check--8d26fef8.md
+  - raw/articles/pluralistic.net--2026-06-29-arsonist-firefighters--46c8e06a.md
 tags: [person]
 ---
 
@@ -84,6 +85,24 @@ He argues that AI digital sovereignty fears are a **distraction from real digita
 > "Trump can block ChatGPT, Claude, or Grok in Canada and nothing will happen. But if he blocks iCloud, Office 365, or tractor software, the country stops."
 
 The essay directly connects to his broader **enshittification** thesis — AI sovereignty concerns serve corporate interests by focusing policy attention on hypothetical future risks rather than present-day platform dominance.
+
+### Google Search Enshittification → Gemini as "Better" Alternative (June 2026)
+
+In "[Gemini is better than search because Google enshittified search](https://pluralistic.net/2026/06/29/arsonist-firefighters/)" (June 29, 2026), Doctorow articulated a specific causal chain connecting Google's deliberate degradation of web search to the perceived superiority of Gemini AI summaries:
+
+**The Causal Chain:**
+1. Google saturated its search market (90%+ share) and growth stalled
+2. Internal power struggle: enshittifiers won, intentionally making search worse to increase ad impressions (users searching 2–3× = 2–3× ad revenue)
+3. Google/Facebook colluded via **Jedi Blue** — an illegal bid-rigging arrangement that caused web publisher ad revenue to collapse (<51% of display ad revenue going to the duopoly)
+4. Collapsing ad revenue drove publishers to increase ad-load (pop-ups, pop-unders, "dickovers"), creating a vicious cycle driving users away
+5. Google prioritized low-effort spam/shovelware sites over quality content via site-reputation-abuse ranking changes
+6. **Gresham's Law of the web**: bad webpages drove out good ones, as Google downranked quality material
+7. This web ecosystem decay made Gemini AI summaries genuinely appealing — users prefer them because they shield against the ad-riddled, SEO-spam web Google created
+
+**Doctorow's Framing:**
+- Google has turned from symbiotic (sending traffic to publishers) to **fully parasitic** (extracting 100% of value from summarized content, giving nothing back)
+- The solution is not better AI — it's unraveling the enshittification (Jedi Blue, ad-blocker killing in Chrome, SEO spam ranking)
+- References Kagi.com as proof Google *could* deliver good search results if it chose to: Kagi rents Google's index but applies its own ranking algorithm with a small team
 
 ### Full Employment for AI (April 2026)
 
