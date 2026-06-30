@@ -25,6 +25,7 @@ _Log of all wiki changes. Newest entries at top._
 - Added `moondream`, `hp` to People/Orgs tag taxonomy
 
 
+---
 ## [2026-06-30 07:50] — Blog wiki-ingest — Ornith-1.0, voyage-context-4, Cory Doctorow enriched
 
 **Source:** blog-triage (recovered from checkpoint after JSON parse error)
@@ -37,6 +38,7 @@ _Log of all wiki changes. Newest entries at top._
 - `entities/cory-doctorow.md` — Added "Google Search Enshittification → Gemini" section: Google's intentional search degradation, Jedi Blue collusion, Gresham's Law of the web, parasitic AI summaries
 - `entities/john-d-cook-applied-mathematics-consulting.md` — Added "LLM Output Verification: Grok vs Man Page" section: empirical LLM verification methodology, Grok correct despite man page bug
 
+---
 ## [2026-06-30 07:40] — Newsletter wiki-ingest — 8 takes, 3 references from 4 newsletters
 
 **Source checkpoint:** newsletter-triage (recovered from checkpoint after JSON parse error)
@@ -60,6 +62,7 @@ _Log of all wiki changes. Newest entries at top._
 - `concepts/nemotron-3-ultra.md` — Added Nemotron-TwoTower (98.7% AR quality, 2.42x throughput) + vLLM multi-node inference guide
 
 
+---
 ## [2026-06-30 12:00] — New concept page: Brain2Qwerty v2 (Meta)
 
 **New wiki page:**
@@ -67,6 +70,7 @@ _Log of all wiki changes. Newest entries at top._
 
 **Source:** raw/newsletters/2026-06-30-ainews-not-much-happened-today.md (triage decision: new concept)
 
+---
 ## [2026-06-29 22:30] — X accounts scan — 4 raw articles + 3 wiki pages from 8 posts
 
 **Scan summary**: 84 tracked accounts, 12 scanned, 8 new substantive posts from 4 accounts (simonw, tomaarsen, emollick, ashpreetbedi).
@@ -91,6 +95,7 @@ _Log of all wiki changes. Newest entries at top._
 - WSJ: "China Has Matched Anthropic in Cybersecurity" (emollick tweet) — paywalled, 51-byte JS-block page
 - Agno Demo AgentOS (ashpreetbedi tweet) — demo link, no substantive content to scrape
 
+---
 ## [2026-06-29 18:20] — dreaming: consolidation — 1 enrichment
 
 **Enriched**:
@@ -839,10 +844,12 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **Verified**: All `_index.md` files — 0 pipe corruption (false-positive shell script false matches corrected).
 - **Filesystem**: 837 entities, 1840 concepts, 31 comparisons, 13 events, 4 queries = 2725 total Layer 2
 
+---
 ## 2026-06-29
 - `concepts/evaluation/llm-as-judge` — Added BINEVAL section (Cho et al., 2026, ICML Workshop). Binary question decomposition for interpretable LLM evaluation. Raw paper + summary to `raw/papers/2026-06-25_2606.27226_*`.
 - **Ingested**: NVIDIA Research blog "KV Cache Compression and Its Infra Problems" (2026-06-15). Raw article → `raw/articles/2026-06-15_nvidia-kv-cache-compression-infra-problems.md`. Created `concepts/kv-cache-compression` (survey of eviction/quantization/geometry methods + two infrastructure problems) and `concepts/triattention` (pre-RoPE geometry scoring + forward-packing compaction, ICML 2026). Updated `concepts/kv-cache` and `concepts/flash-attention-4` with cross-references. Added missing index entries for `kv-cache`, `kv-cache-compaction`, `flash-attention-4`.
 
+---
 ## 2026-06-30 — Multi-Model Synthesis Strategies: Devin Fusion + OpenRouter Fusion + Sakana Fugu
 
 ### Ingested
