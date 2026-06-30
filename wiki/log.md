@@ -2,6 +2,29 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-06-30 11:15] — Active crawl — 4 new pages + 1 enriched
+
+**Discovery:** Parallel subagent trend scan (HN Algolia + X/Twitter + wiki gap analysis)
+
+### New pages created (4):
+- `concepts/gpu-bubble-ai-inference.md` — GPU Bubble in AI inference: CPU-GPU round-trip idle cycles during autoregressive decode; Moondream Photon pipelined decoding (ping-pong slots, forward-now-sample-later, zombies) achieves up to 35% higher throughput on NVIDIA B200
+- `concepts/wayfinder-router.md` — Wayfinder Router: deterministic, offline LLM query router; scores prompt structural complexity (0.0–1.0) without model calls; sub-millisecond routing decisions; PyPI package by @itsthelore
+- `entities/moondream.md` — Moondream: VLM company building small vision-language models and the Photon inference engine; GPU bubble elimination research
+- `entities/hp-inc.md` — HP Inc.: hardware company; launched OpenAI Frontier strategic partnership (June 2026) for enterprise AI deployment
+
+### Existing pages enriched (1):
+- `entities/openai.md` — Added HP Frontier Partnership section (June 2026): HP scaling OpenAI Frontier across customer experiences, software dev, and enterprise operations
+
+### Raw articles saved (3):
+- `raw/articles/2026-06-04_moondream_gpu-bubble.md` — Moondream "Popping the GPU Bubble" (Photon inference engine)
+- `raw/articles/2026-06-25_wayfinder-router_deterministic-llm-routing.md` — Wayfinder Router GitHub README
+- `raw/articles/2026-06-28_openai_hp-frontier-partnership.md` — OpenAI HP Frontier Partnership blog
+
+### SCHEMA.md updated:
+- Added `moondream`, `hp` to People/Orgs tag taxonomy
+
+
 ## [2026-06-30 07:50] — Blog wiki-ingest — Ornith-1.0, voyage-context-4, Cory Doctorow enriched
 
 **Source:** blog-triage (recovered from checkpoint after JSON parse error)

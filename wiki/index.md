@@ -36,6 +36,7 @@
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
+- [[entities/hp-inc]] — HP Inc. — Hardware company; launched Frontier strategic partnership with OpenAI (June 2026) to deploy AI across customer experiences, software development, and enterprise operations (June 30)
 - [[entities/jo-bergum]] — Jo Bergum — CEO/Co-founder of Hornet (vector search); ex-Vespa engineer; organizing 'Retrieval for Agents' event at AI Engineer World's Fair (June 27)
 - [[entities/k-eric-drexler]] — K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford.
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
@@ -48,7 +49,8 @@
 - [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
 - [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
-- [[entities/openai]] — OpenAI; added GPT-5.5 Instant revision (June 2026) — improved intent understanding, constraint handling, conversational style (June 25)
+- [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
+- [[entities/openai]] — OpenAI; added GPT-5.5 Instant revision (June 2026) — improved intent understanding, constraint handling, conversational style (June 25); HP Frontier Partnership section (June 30)
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
 - [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
 - [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
@@ -128,6 +130,7 @@
 - [[concepts/gemini-computer-use]] — Gemini Computer Use (Android) — Philipp Schmid's Android-specific implementation guide: screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script, relationship to Claude and OpenAI computer use approaches (June 25)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
+- [[concepts/gpu-bubble-ai-inference]] — GPU Bubble (AI Inference) — idle GPU cycles during autoregressive decode due to CPU-GPU communication overhead; Moondream Photon pipelined decoding achieves up to 35% higher throughput on NVIDIA B200 (June 30)
 - [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family with government-mediated restricted preview; Prompt Caching features (explicit breakpoints, 30-min cache life, 1.25x write billing, 90% read discount); METR cheating finding, PostTrainBench-Lite, Terminal-Bench 2.1, pricing/positioning (June 27)
 - [[concepts/kv-aware-routing]] — KV-Aware Routing — Request routing strategy for LLM inference serving that assigns requests based on KV cache state overlap. Implemented in NVIDIA Dynamo, Mooncake, vLLM (June 24)
 - [[concepts/kv-cache]] — KV Cache — Key-Value Caching in Transformer Inference; eliminates redundant recomputation during autoregressive generation
@@ -164,6 +167,7 @@
 - [[concepts/triattention]] — TriAttention — Trigonometric KV Compression; pre-RoPE geometry scoring + forward-packing compaction; 10.7× memory reduction, 2.5× throughput (NVIDIA, ICML 2026) (June 29)
 - [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
 - [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
+- [[concepts/wayfinder-router]] — Wayfinder Router — Deterministic, offline LLM query router; scores prompt structural complexity (0.0–1.0) and routes easy prompts to local models, hard ones to cloud models with no model call needed (June 30)
 ## Comparisons
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses

@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-25
+updated: 2026-06-30
 tags:
   - company
   - model
@@ -38,6 +38,7 @@ sources:
   - raw/articles/openai.com--helping-build-shared-standards-for-advanced-ai--1b1b1aa4.md
   - raw/articles/openai.com--gpt-5-immunology-mystery--1948945e.md
   - raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md
+  - raw/articles/2026-06-28_openai_hp-frontier-partnership.md
 ---
 
 # OpenAI
@@ -354,6 +355,14 @@ Samsung plans to use ChatGPT for knowledge-based tasks (search, analysis, drafti
 Related Korea deployments: Seoul National University deployed ChatGPT Edu to all 47,000 members; Kakao integrated ChatGPT into KakaoTalk group chats. Other Korean enterprises using OpenAI products include LG Electronics, LG Uplus, LG CNS, Samsung SDS, Krafton, Toss, and Korea Zinc.
 
 Source: [[raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md]]
+
+### HP Frontier Partnership (June 2026)
+
+HP Inc. launched a Frontier strategic partnership with OpenAI, scaling AI deployment across customer-facing solutions, software development, and enterprise operations. Following successful pilots, the partnership focuses on deploying frontier AI capabilities across HP's global operations in customer telemetry, employee productivity, and software development. The initiative positions Frontier as a connective layer for building an AI-driven operating model.
+
+See [[entities/hp-inc]] for full details.
+
+Source: [[raw/articles/2026-06-28_openai_hp-frontier-partnership.md]]
 
 ### Jalapeño — OpenAI's First Intelligence Processor (June 2026)
 
