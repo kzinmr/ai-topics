@@ -141,6 +141,7 @@
 - [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23)
 - [[concepts/model-quantization]] — Model Quantization; enriched with Expert-Aware Quantization (MoE-specific: Q4-hot/Q2-cold recovers ~90% of Q2→Q4 gap) (June 23)
 - [[concepts/model-training-as-code]] — Model Training as Code (MTaC) — Imperative code representation of end-to-end model training pipelines; composability, consensus, provenance via Flyte + W&B trunk-based development
+- [[concepts/multi-model-synthesis-strategies]] — Multi-Model Synthesis Strategies — Cross-comparison of 3 approaches (Cognition Devin Fusion Sidekick, OpenRouter Fusion Panel Synthesis, Sakana Fugu Evolved Orchestration). Structural shift from single-model era to multi-model coordination (June 30)
 - [[concepts/nvidia-45c-data-center-cooling]] — NVIDIA 45°C Data Center Cooling — Rubin generation 100% liquid-cooled AI platform; 45°C warm-water closed-loop design, near-zero water consumption, dry-cooler heat rejection (June 25)
 - [[concepts/open-source-ai]] — Open-Source AI Strategy — Strategic use of open-source AI for rapid iteration and global adoption; 3-category open model makers framework (Pure, Big Tech, Product Companies) (June 29)
 - [[concepts/open-weight-vs-closed-llm-gap]] — Open-Weight vs Closed LLM Performance Gap — Analysis of time lag between open-weight and closed-source frontier model capabilities (Doubleword, June 2026)

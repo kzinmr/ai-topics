@@ -68,12 +68,23 @@ routes:
 
 Source: [[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]
 
+## Devin Fusion: Dynamic Mid-Session Routing (June 2026)
+
+Cognition's **Devin Fusion** introduces a different routing paradigm: rather than routing per-turn to a single model, it runs two parallel agents (frontier "main" + cost-effective "sidekick") and routes **dynamically mid-session** using lightweight classifiers. Model switching happens during context compaction, making it cache-free.
+
+Key distinction from per-turn routing: the sidekick pattern retains frontier intelligence for planning/review while offloading execution — achieving 35% cost reduction at maintained quality.
+
+This approach is best understood as a synthesis strategy rather than pure routing. See [[concepts/multi-model-synthesis-strategies]] for the full taxonomy comparing Devin Fusion, OpenRouter Fusion, and Sakana Fugu.
+
+Source: [[raw/articles/2026-06-29_cognition-devin-fusion-multi-model-harness]]
+
 ## Related Concepts
 
 - [[concepts/inference-optimization]]
 - [[entities/augment]]
 - [[concepts/llm-cost-optimization]]
 - [[concepts/coding-agents/ai-coding-cost-optimization]] — Ronin's complete system with manual config-based router
+- [[concepts/multi-model-synthesis-strategies]] — Broader taxonomy of multi-model approaches (sidekick, panel synthesis, orchestration)
 
 ## Manual Router Architecture (Ronin, May 2026)
 

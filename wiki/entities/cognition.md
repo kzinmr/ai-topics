@@ -82,6 +82,16 @@ Yan noted that testing autonomous agent outputs is more difficult than Computer 
 A notable emergent behavior: Devin agents have reached sufficient maturity to **push back against human reviewers**, stating "you are wrong" when the reviewer's feedback conflicts with the agent's analysis. This represents a shift from agent-as-tool to agent-as-colleague.
 
 
+## Devin Fusion (June 2026)
+
+Cognition introduced **Devin Fusion**, a multi-model harness achieving frontier coding performance at 35% lower cost. Two key techniques: (1) **Sidekick approach** — parallel frontier "main" agent + cost-effective "sidekick" with persistent cached contexts; (2) **Dynamic mid-session routing** — lightweight classifiers signal model switches during context compaction.
+
+Results: 35% cost reduction at frontier quality; 41% with Fable 5. 88% of internal merged PRs driven entirely by the automated Fusion router.
+
+See [[concepts/multi-model-synthesis-strategies]] for the full taxonomy.
+
+Source: [[raw/articles/2026-06-29_cognition-devin-fusion-multi-model-harness]]
+
 ## Related
 
 - [[entities/scott-wu]] — co-founder and CEO

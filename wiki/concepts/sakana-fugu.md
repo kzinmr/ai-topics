@@ -107,6 +107,7 @@ The "no single-vendor dependency" positioning directly challenges the walled-gar
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-agent systems overview
 - [[concepts/codex/_index]] — OpenAI Codex coding agent platform (integrates with Fugu)
 - [[concepts/multi-agents/multi-agent-rl]] — Multi-agent reinforcement learning approaches
+- [[concepts/multi-model-synthesis-strategies]] — Multi-model synthesis taxonomy (Fugu, Devin Fusion, OpenRouter Fusion)
 
 ## External Links
 

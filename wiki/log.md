@@ -777,3 +777,19 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 ## 2026-06-29
 - `concepts/evaluation/llm-as-judge` — Added BINEVAL section (Cho et al., 2026, ICML Workshop). Binary question decomposition for interpretable LLM evaluation. Raw paper + summary to `raw/papers/2026-06-25_2606.27226_*`.
 - **Ingested**: NVIDIA Research blog "KV Cache Compression and Its Infra Problems" (2026-06-15). Raw article → `raw/articles/2026-06-15_nvidia-kv-cache-compression-infra-problems.md`. Created `concepts/kv-cache-compression` (survey of eviction/quantization/geometry methods + two infrastructure problems) and `concepts/triattention` (pre-RoPE geometry scoring + forward-packing compaction, ICML 2026). Updated `concepts/kv-cache` and `concepts/flash-attention-4` with cross-references. Added missing index entries for `kv-cache`, `kv-cache-compaction`, `flash-attention-4`.
+
+## 2026-06-30 — Multi-Model Synthesis Strategies: Devin Fusion + OpenRouter Fusion + Sakana Fugu
+
+### Ingested
+- **Cognition Devin Fusion blog post** (2026-06-29): Sidekick pattern + dynamic mid-session routing. 35% cost reduction. Raw → raw/articles/2026-06-29_cognition-devin-fusion-multi-model-harness.md
+- **OpenRouter Fusion API blog post** (2026-06-12): Panel synthesis. Fable 5 + GPT-5.5 = 69.0% DRACO. Raw → raw/articles/2026-06-12_openrouter-fusion-api-multi-model-synthesis.md
+
+### Created
+- **concepts/multi-model-synthesis-strategies** — 横断概念ページ。3アプローチ比較: Cognition Devin Fusion (Sidekick)、OpenRouter Fusion (Panel Synthesis)、Sakana Fugu (Evolved Orchestration)
+
+### Updated
+- **concepts/coding-agents/model-routing** — Added Devin Fusion section + cross-reference
+- **entities/openrouter** — Added Fusion API section + Related links
+- **entities/cognition** — Added Devin Fusion section
+- **concepts/sakana-fugu** — Added cross-reference to multi-model-synthesis-strategies
+- **wiki/index.md** — Added multi-model-synthesis-strategies entry

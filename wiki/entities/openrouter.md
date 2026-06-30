@@ -61,6 +61,20 @@ Analysis by [[entities/tencent-hy3|Max Woolf]] (minimaxir.com) revealed a critic
 
 See also: [[entities/tencent-hy3]] for the full pricing comparison table.
 
+## Fusion API (June 2026)
+
+OpenRouter launched **Fusion**, a server-side multi-model synthesis tool that dispatches prompts to a panel of models in parallel and uses a judge model to produce a fused response. Key findings on the DRACO deep research benchmark:
+
+- Fable 5 + GPT-5.5 panel: **69.0%** (surpasses every individual model)
+- Budget panel (Gemini 3 Flash + Kimi K2.6 + DeepSeek V4 Pro): **64.7%** — beats GPT-5.5 and Opus 4.8 at 50% cost
+- Self-fusion (Opus 4.8 × 2): **65.5%** — synthesis itself contributes meaningfully
+
+Four usage modes: chatroom, model slug (`openrouter/fusion`), server tool, plugin.
+
+See [[concepts/multi-model-synthesis-strategies]] for the full taxonomy comparing OpenRouter Fusion with Cognition Devin Fusion and Sakana Fugu.
+
+Source: [[raw/articles/2026-06-12_openrouter-fusion-api-multi-model-synthesis]]
+
 ## Market Position
 
 OpenRouter occupies a unique position in the LLM infrastructure stack — it is provider-agnostic, enabling users to benchmark and switch between models fluidly. This neutrality made its data uniquely valuable for the State of AI study, as it captures multi-provider usage patterns rather than single-provider data.
@@ -81,3 +95,10 @@ OpenRouter occupies a unique position in the LLM infrastructure stack — it is 
 By May 2026, OpenRouter was reported to be on a **decacorn trajectory** ($10B+ valuation potential), following [[entities/fireworks-ai]] and [[entities/baseten]] in the AI infrastructure decacorn wave. OpenRouter's position as a neutral model routing layer — aggregating 300+ models from competing providers — makes it a uniquely valuable infrastructure component as enterprises seek multi-provider strategies.
 
 Source: AINews (Latent Space), May 2026.
+
+## Related
+
+- [[concepts/multi-model-synthesis-strategies]] — Multi-model synthesis taxonomy (includes Fusion API)
+- [[concepts/openrouter-state-of-ai-2025]] — The landmark 100T token usage study
+- [[concepts/glass-slipper-effect]] — Model retention framework identified by the study
+- [[entities/malika-aubakirova]] — a16z researcher, co-author of the study
