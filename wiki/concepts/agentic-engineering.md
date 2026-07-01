@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-06-24
+updated: 2026-07-01
 type: concept
 tags:
   - concept
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-06-02_mvanhorn_every-agentic-engineering-hack.md
   - raw/articles/2026-06-08_linkedin-ido-pesok_verifying-agentic-development-at-scale.md
   - raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md
+  - raw/newsletters/2026-07-01-aiewf-daily-dispatch-loops-software-factories-forward-deployed-engineers.md
 ---
 
 # Agentic Engineering
@@ -252,6 +253,55 @@ Loops may accelerate this debt by adding another layer of natural-language orche
 The debate reveals a fundamental tension in agentic engineering: **autonomy vs. control**. More autonomous loops mean higher productivity but less predictability. The resolution likely lies in hybrid approaches — loops with guardrails, evals, and human-in-the-loop checkpoints at critical decision points.
 
 See also: [[entities/armin-ronacher]] (The Coming Loop), [[entities/ed-zitron]] (Cargo Culture), [[entities/drew-breunig]] (Prompt Debt), [[concepts/prompts-as-technical-debt]]
+
+## AIEWF 2026 Day 2: Loops, Software Factories & FDEs
+
+**Source**: [[raw/newsletters/2026-07-01-aiewf-daily-dispatch-loops-software-factories-forward-deployed-engineers.md]]
+
+The second day of the AI Engineering World's Fair (July 1, 2026) deepened the loop debate and introduced the **Software Factory** as the dominant framing for agentic engineering's next phase.
+
+### The Loop Agenda
+
+**swyx** opened the day tracing the evolution from chat (2022) → tools → goals: *"These days we're all about automations. We're all about cron jobs and loops."* The shift reflects the industry's move from interactive prompting to persistent, autonomous agent workflows.
+
+**Allie Howe** (Keycard) introduced the **Software Factories** track, referencing Geoffrey Huntley's *"everything is a ralph loop"* article — the idea that all software engineering processes are fundamentally loop-shaped, and agentic tools just make this explicit.
+
+**Pablo Castro** (Microsoft Foundry) described the **"learning loop"** that emerges when people and agents work together — human judgment steers, agents execute and report back, creating a compounding feedback cycle.
+
+### Codex Loops & Agent Orchestration
+
+**Alexander Embiricos and Romain Huet** (OpenAI) demonstrated running multiple agents via **Codex loops** that enhance productivity — agents spawning sub-agents, each iterating independently, with results synthesized back into the main loop.
+
+**Peter Steinberger** (OpenClaw, now at OpenAI) explained his role designing loops to manage agents: *"Deciding what to pay attention to is my main job."* This captures the human's evolving role — not writing code or prompts, but designing attention filters and loop architectures that let agents operate autonomously within guardrails.
+
+### Software Factories Defined
+
+**Tereza Tížková** (Factory) gave the defining statement: a **software factory** is *"the whole loop, the whole lifecycle"* — agents building, operating, and improving themselves. This moves beyond code generation into continuous operation, self-healing, and self-optimization.
+
+**Zach Lloyd** (Warp) declared: *"Software engineering will become factory engineering — you'll be building the thing that builds the product."* This reframes the engineer's job: not assembling features, but designing the factory that produces features.
+
+### Forward Deployed Engineers (FDEs)
+
+The **Forward Deployed Engineer** concept evolved significantly:
+
+**Natalie Meurer** (Sierra) defined the FDE by **accountability, not skill set** — the FDE is the person responsible for making the system work in the real world, bridging the gap between what agents produce and what users need.
+
+**Pauline Brunet** (Cursor) positioned the FDE as part of the shift to **software factories** — as factories become more capable, the human role shifts from operator to FDE: deploying, monitoring, and iterating on agent-built systems in production.
+
+### Open Source AI Theme
+
+**Zixuan Li** (Z.ai) introduced the **ZCode harness** — an open-source agent coding harness designed for extensibility and community contribution.
+
+**Thomas Wolf** (Hugging Face) interviewed **Olive Song** (MiniMax) on the **M3** release, continuing the open source AI theme that ran throughout the conference.
+
+### Significance for Agentic Engineering
+
+Day 2 of AIEWF 2026 crystallized several themes central to agentic engineering:
+
+- **Loops are the new prompts** — the unit of agent interaction shifts from one-shot generation to iterative loops
+- **Software factories are the new architecture** — agents don't just write code, they operate in continuous lifecycle loops
+- **FDE is the new role** — the human shifts from operator to accountable deployer, defined by responsibility not technical specialty
+- **Open source harnesses matter** — ZCode and similar frameworks aim to make agent loop engineering accessible and community-driven
 
 ## Related Concepts
 

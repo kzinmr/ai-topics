@@ -26,7 +26,8 @@ Hub page for [[entities/anthropic|Anthropic]]'s Claude model family. All model-s
 - [[concepts/claude/opus-4-7]] — Claude Opus 4.7 (Apr 2026). Hybrid reasoning. Strongest general-access model.
 - [[concepts/claude/opus-4-6]] — Claude Opus 4.6 (Feb 2026). SOTA software engineering. First interpretability-informed alignment.
 - [[concepts/claude/sonnet-4-6]] — Claude Sonnet 4.6 (Feb 2026). Approaches Opus 4.6 on many evals. Best alignment scores.
-- [[concepts/claude/mythos-glasswing]] — Claude Mythos & Project Glasswing cybersecurity initiative.
+- [[concepts/claude/sonnet-5]] — Claude Sonnet 5 (Jul 2026). Most agentic Sonnet yet; new tokenizer, adaptive thinking, 1M context, $3/$15M pricing.
+- [[concepts/claude/mythos-glasswing]]
 
 ### Model Overview
 - [[concepts/claude/models]] — Claude Models overview. Full model family with pricing and capabilities.

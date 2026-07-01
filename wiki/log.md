@@ -1,3 +1,21 @@
+|---
+## [2026-07-01 07:40] — Newsletter wiki-ingest — 4 takes, 3 references from 8 newsletters (recovered from triage checkpoint after JSON parse error)
+
+**Source:** newsletter-triage checkpoint (saved before response render failure)
+
+### New pages created (1):
+- `concepts/claude/sonnet-5.md` — Claude Sonnet 5 (Jul 2026): most agentic Sonnet yet; new tokenizer (+30% tokens), adaptive thinking, 1M context, 128K output, $3/$15M pricing; Harvey LAB 5.8% all-pass, BigLaw Bench 91.3%
+
+### Existing pages enriched (3):
+- `concepts/token-economics.md` — Added "Enterprise TokenBudgeting (SemiAnalysis, June 2026)" section: enterprise budget ranges ($250-$10,000+/month), model downgrade strategies, M365 Copilot gaming, coding spend dominance, 50+ enterprise interviews, the tokenmaxxing→tokenbudgeting shift
+- `concepts/local-llm/local-ai.md` — Added "AIEWF Workshop: Ahmad Osman on Local AI (June 2026)" section: Osmantic's hardware arena demo, open-source LLMs catching up to frontier (4-8 month lag), the "local AI is just running a model" misconception, 22× RTX 3090 setup, enterprise concerns (model routing, sandboxing, latency)
+- `concepts/agentic-engineering.md` — Added "AIEWF 2026 Day 2: Loops, Software Factories & FDEs" section: swyx loop agenda, Allie Howe Software Factories, Microsoft Foundry learning loop, OpenAI Codex multi-agent loops, Peter Steinberger agent orchestration, Tereza Tížková software factory definition, Zach Lloyd "factory engineering," Natalie Meurer FDE evolution, Zixuan Li ZCode, MiniMax M3 release
+
+### Reference items (3):
+- **GPT-5.6 Preview** (Ben's Bites) — already covered by concepts/gpt/gpt-5-6.md
+- **Sebastian Raschka Reasoning Book** — reference for concepts/inference-time-compute.md
+- **FDE article** (AIEWF) — incorporated into agentic-engineering.md enrichment above
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

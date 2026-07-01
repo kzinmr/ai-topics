@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-07-01T07:23:47.091780+00:00",
+  "triage_run_id": "20260701T071039Z",
+  "source": "newsletter",
+  "summary_ja": "8ニュースレターをトリアージ。最重要：Claude Sonnet 5ローンチ（新規概念ページ必要）、SemiAnalysis TokenBudgeting（エンタープライズ予算データ、token-economics.md更新）、AIEWF Daily Dispatch（ループ/ソフトウェアファクトリー、agentic-engineering.md更新）、Ahmad OsmanローカルAIインタビュー（local-ai.md更新）。Ben's Bites GPT-5.6（参照）、FDE記事（参照）は既存ページへの補完。Lenny's Newsletter（コース広告）とSuperintel BCI（全リンク403期限切れ）はスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260630133139.3.13385db4f725ed59@mg2.substack.com>-batch",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter (PMs + AI)",
+      "title": "Lenny's Newsletter: How top PMs increase their leverage with AI",
+      "url": "https://open.substack.com/pub/lenny/p/how-top-pms-increase-their-leverage",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-30-how-top-pms-increase-their-leverage-with-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Lenny's Newsletterのコース広告コンテンツ。AIを活用したPMワークフローのフレームワークを含むが、主目的は有料コースのプロモーション。Wikiへの追加価値に乏しい。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-30\n**Subject:** How top PMs increase their leverage with AI\n**Collected:** 2026-07-01T07:10:29.952660+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1h"
+    },
+    {
+      "item_id": "<20260630150246.3.030219f37726f87e@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "GPT-5.6 Preview Coverage / Etched Inference",
+      "url": "https://open.substack.com/pub/bensbites/p/gpt-56-is-here-but",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-30-gpt-5-6-is-here-but.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ GPT-5.6プレビュー（既存wikiページconcepts/gpt/gpt-5-6.mdで詳細カバー済み）。Etched社推論クラスター（$800M調達、TSMC生産開始）に関する記述は新しい情報源として参照価値あり。本文では推論コスト最適化、Replit Desktop、Zaro AI、Vercel製品デザインエージェントなどエコシステムの話題も含む。",
+      "candidate_wiki_path": "concepts/gpt/gpt-5-6.md",
+      "body_excerpt": "# Newsletter Digest - 2026-06-30\n**Subject:** GPT-5.6 is here but...\n**Collected:** 2026-07-01T07:10:31.095890+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc"
+    },
+    {
+      "item_id": "<SrRpzE4pTuujzlmbDCtc3w@geopod-ismtpd-8>-batch",
+      "source": "newsletter",
+      "source_name": "Superintel (beehiiv)",
+      "title": "🧠 Meta Can Now Read Your Mind (BCI research)",
+      "url": "https://getsuperintel.site/p/meta-can-now-read-your-mind",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-06-30-meta-can-now-read-your-mind.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Metaの脳コンピュータインターフェース（BCI）研究。全beehiiv URLが403期限切れ（送信から24時間経過）。件名から推測されるトピックはBCI/神経デコードであり、WikiのLLM/AI Agentフォーカスから外れる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-06-30\n**Subject:** 🧠 Meta Can Now Read Your Mind\n**Collected:** 2026-07-01T07:10:32.165923+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/ss/c/u001.KU4owwL0A4TgyC-aATtp3idPdEQQVge0G0gpStA8hzZlYkoOm9-KKcewakHMlIV55uZRJ9g5-Pkpu7RuV67RRvav61"
+    },
+    {
+      "item_id": "<20260701002018.3.1a8d456d03893341@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "AIEWF (swyx)",
+      "title": "Forward Deployed Engineers and the future of software engineering",
+      "url": "https://open.substack.com/pub/swyx/p/forward-deployed-engineers-aiewf",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-forward-deployed-engineers-and-the-future-of-software-engineering.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AI時代のForward Deployed Engineer（FDE）の進化に関するNatalie Meurer（Sierra）のQ&A。FDEの役割定義（アカウンタビリティによる定義）、プロダクトエンジニアとの収束、AI Codexによるエンジニアリングワークフロー変革などをカバー。agentic-engineering.mdへの参考情報として価値あり。",
+      "candidate_wiki_path": "concepts/agentic-engineering.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-01\n**Subject:** Forward Deployed Engineers and the future of software engineering\n**Collected:** 2026-07-01T07:10:35.474809+00:00\n**Articles linked:** 15\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc2"
+    },
+    {
+      "item_id": "<20260701030110.3.c19f60abfd3a7db2@mg-d1.substack.com>-sebastian",
+      "source": "newsletter",
+      "source_name": "AIEWF (swyx) / AINews",
+      "title": "Sebastian Raschka — Build a Reasoning Model (From Scratch)",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-sonnet-5-today-and-fable-5",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-ainews-sonnet-5-today-and-fable-5-tomorrow.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Sebastian Raschkaの「Build a Reasoning Model（From Scratch）」書籍リリース。440ページのフルカラー書籍で、推論モデルをゼロから構築する教育コンテンツ。AINews内で「highest-engagement educational items」として言及。既存の推論関連ページへの参考情報として価値あり。",
+      "candidate_wiki_path": "concepts/inference-time-compute.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-01\n**Subject:** [AINews] Sonnet 5 today, and Fable 5 tomorrow\n**Collected:** 2026-07-01T07:10:36.700413+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV"
+    }
+  ]
+}

@@ -2,14 +2,14 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-06-11
+updated: 2026-07-01
 tags:
   - inference
   - optimization
   - economics
   - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md, raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md]
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/newsletters/2026-06-30-tokenbudgeting-our-conversations-with-enterprises-on-token-spend.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md, raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md]
 ---
 
 # Token Economics
@@ -203,6 +203,56 @@ Source: raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--87326
 ## Hidden Self-Hosting Costs
 
 ML engineering (quantization, sharding, containers), infrastructure management, observability, continuous tuning. Requires specialized expertise beyond raw hardware costs.
+
+## Enterprise TokenBudgeting (SemiAnalysis, June 2026)
+
+In mid-2026, SemiAnalysis published findings from 50+ enterprise interviews revealing a decisive shift in how large organizations manage AI inference spend: the era of unrestricted token consumption is giving way to structured **token budgeting**.
+
+### Budgets Are the New Norm
+
+Enterprise AI budgets now range from **$250/month** (small teams or experimental deployments) to **$10,000+/month** for heavy-use departments. The core insight: budget caps are becoming a universal requirement, not a niche concern. These budgets cover the cost of API access to frontier and mid-tier models, with coding spend dominating as the single largest category.
+
+### Model Downgrade Strategies
+
+Companies are actively downgrading default models to control burn:
+
+- **Opus → Sonnet** as the default for most internal tools
+- Premium-tier models (Opus, GPT-5) gated behind explicit approval workflows
+- Some organizations have turned off premium tiers entirely for all but a handful of power users
+
+The rationale: routine coding and Q&A tasks do not require frontier reasoning, and the cost difference between Sonnet and Opus is 3-5x per token.
+
+### The Tokenmaxxing → TokenBudgeting Shift
+
+Early 2026 headlines about **tokenmaxxing** (Uber burning through its AI coding budget in 4 months, Meta's aggressive inference consumption) created alarm, but SemiAnalysis's enterprise interviews reveal these were **incentive design problems unique to those organizations** — not a general industry crisis. The real story is continued aggressive growth in inference spend, just far more disciplined and structured than the tokenmaxxing headlines suggested.
+
+### Coding Spend Dominates
+
+Coding is the primary inference cost driver:
+
+- Anthropic's own documentation shows average Claude Code usage is **below $10/day/developer** — despite viral headlines about individual power users burning thousands
+- A global travel-tech company with 800 engineers spends just under **$10M/year** on AI, with the vast majority allocated to coding tools
+- Coding tools (Claude Code, Cursor, Copilot, Cody) are the gateway drug for enterprise AI adoption and consistently the hardest-to-cap category
+
+### M365 Copilot Gaming
+
+Employees are gaming M365 Copilot subscriptions to stretch their token allowances — routing non-coding tasks through their Copilot token pool to avoid burning through their primary AI budget. This "budget arbitrage" reveals the underlying reality: when employees hit a cap, they find creative ways around it.
+
+### Most Employees Don't Come Close to Caps
+
+Despite the headlines, SemiAnalysis found that **most employees do not come close to reaching their monthly token caps**. The skew comes from a small number of power users — often a handful consuming 4-5 figures of inference spend per day — who dramatically inflate the averages. Enterprises are responding by:
+
+- Offering power users individual upgraded plans rather than raising team-wide caps
+- Implementing per-user budgets alongside team-level budgets
+- Building dashboards to identify the 1-5% of users driving the majority of spend
+
+### Industry Variation
+
+- **Financial services** remains the slowest adopter, with compliance and data residency concerns limiting even budget-constrained deployment
+- **Technology companies** are the most advanced, with dedicated AI FinOps teams and sophisticated model routing
+- The most disciplined enterprises allocate inference internally via chargeback — treating model calls as an internal service with an associated cost center
+
+Source: raw/newsletters/2026-06-30-tokenbudgeting-our-conversations-with-enterprises-on-token-spend.md
 
 ## Related
 

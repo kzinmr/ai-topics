@@ -120,7 +120,8 @@
 - [[concepts/claude-tag]] — Claude Tag — Anthropic's team-oriented AI agent for Slack; multiplayer chat, persistent channel memory, proactive/async capabilities, separate from Claude Code's individual developer focus (June 24)
 - [[concepts/claude/fable-5]] — Claude Fable 5; enriched with Economic Recoupment Impact (Dean W. Ball) — narrow post-release recoupment window for frontier models, $100B+ datacenter buildout vs 100-company market tension (June 27)
 - [[concepts/claude/mythos]] — Claude Mythos; enriched with government de-escalation: Mythos 5 released to 100+ US institutions after Commerce Secretary Lutnick letter (June 27, Semafor)
-- [[concepts/codex-logging-bug]] — Codex Logging Bug — OpenAI Codex SQLite feedback logs writing up to 640 TB/year to local SSDs, rapid SSD wear, GitHub issue #28224, infrastructure incident affecting developer machines (June 24)
+- [[concepts/claude/sonnet-5]] — Claude Sonnet 5 (Jul 2026). Most agentic Sonnet yet; new tokenizer, adaptive thinking, 1M context, $3/$15M pricing; near-Opus 4.8 performance (Jul 1)
+- [[concepts/codex-logging-bug]]
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
 - [[concepts/continual-learning]] — Continual Learning; enriched with Advanced Frameworks (Dwarkesh Patel) — RLVR generalization limits, OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision (June 27)
 - [[concepts/cpu-inference-llm]] — CPU Inference for LLMs — Running LLMs on consumer/edge CPUs via quantization (llama.cpp, ZSE, Ollama); cost efficiency and privacy trade-offs vs GPU/cloud

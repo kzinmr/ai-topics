@@ -1,0 +1,90 @@
+---
+title: "TokenBudgeting: Our Conversations with Enterprises on Token Spend"
+date: 2026-06-30
+processed_at: 2026-07-01T07:10:33.244217+00:00
+source_label: "uid=303"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-06-30
+
+**Subject:** TokenBudgeting: Our Conversations with Enterprises on Token Spend
+**Collected:** 2026-07-01T07:10:33.244223+00:00
+**Articles linked:** 19
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyPTJmbHg2Jm5leHQ9aHR0cHMlM0ElMkYlMkZuZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20lMkZwJTJGdG9rZW5idWRnZXRpbmctb3VyLWNvbnZlcnNhdGlvbnMiLCJwIjoyMDM1OTU3NTgsInMiOjYzNDk0OTIsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4Mjg0NDU1OCwiZXhwIjoyMDk4NDIwNTU4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.AUSGJ_kSbiglvwkMSP_mdBMmUuRRq5gQ8btdn8tJJYQ?
+
+## 2. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=6349492&post_id=203595758&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1OTU3NTgsImlhdCI6MTc4Mjg0NDU1OCwiZXhwIjoxNzg1NDM2NTU4LCJpc3MiOiJwdWItNjM0OTQ5MiIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.kBS_C1gDOlf0kSSAG9v8xKDTkOlx_TsLEoqVdidMnlU
+
+## 3. Link
+
+- **URL:** https://substack.com/@crystalh1229
+
+## 4. Link
+
+- **URL:** https://substack.com/@joeysemianalysis
+
+## 5. Link
+
+- **URL:** https://substack.com/@semianalysis
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=6349492&post_id=203595758&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1OTU3NTgsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgyODQ0NTU4LCJleHAiOjE3ODU0MzY1NTgsImlzcyI6InB1Yi02MzQ5NDkyIiwic3ViIjoicmVhY3Rpb24ifQ.QrkPa7tKFyhsGLOu8WKSNOoQiXyBu2FP2pVGhESSPig&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=6349492&post_id=203595758&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1OTU3NTgsImlhdCI6MTc4Mjg0NDU1OCwiZXhwIjoxNzg1NDM2NTU4LCJpc3MiOiJwdWItNjM0OTQ5MiIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.kBS_C1gDOlf0kSSAG9v8xKDTkOlx_TsLEoqVdidMnlU&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 8. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=6349492&post_id=203595758&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDM1OTU3NTgsImlhdCI6MTc4Mjg0NDU1OCwiZXhwIjoxNzg1NDM2NTU4LCJpc3MiOiJwdWItNjM0OTQ5MiIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.kBS_C1gDOlf0kSSAG9v8xKDTkOlx_TsLEoqVdidMnlU
+
+## 9. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc2VtaWFuYWx5c2lzL3AvdG9rZW5idWRnZXRpbmctb3VyLWNvbnZlcnNhdGlvbnM_dXRtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRE0xT1RVM05UZ3NJbWxoZENJNk1UYzRNamcwTkRVMU9Dd2laWGh3SWpveE56ZzFORE0yTlRVNExDSnBjM01pT2lKd2RXSXROak0wT1RRNU1pSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEua0JTX0MxZ0RPbGYwa1NTQUc5djh4S0RUa09seF9Uc0xFb3FWZGlkTW5sVSIsInAiOjIwMzU5NTc1OCwicyI6NjM0OTQ5MiwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyODQ0NTU4LCJleHAiOjIwOTg0MjA1NTgsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.3ehtUrRPXDGDtS9jdKX-tLbjb_2xDUvWgGPjO_RkmtU?&utm_source=substack&utm_medium=email
+
+## 10. Link
+
+- **URL:** https://open.substack.com/pub/semianalysis/p/tokenbudgeting-our-conversations?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRm5ld3NsZXR0ZXIuc2VtaWFuYWx5c2lzLmNvbSUyRnAlMkZ0b2tlbmJ1ZGdldGluZy1vdXItY29udmVyc2F0aW9ucyZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSnBZWFFpT2pFM09ESTRORFExTlRnc0ltVjRjQ0k2TVRjNE5UUXpOalUxT0N3aWFYTnpJam9pY0hWaUxUWXpORGswT1RJaUxDSnpkV0lpT2lKamFHVmphMjkxZENKOS5xRE5EaGo1b3BHRTNVNDJTT3BxMmJPN1JLTHZhczJFNmNPRDQzM3RVeWc0IiwicCI6MjAzNTk1NzU4LCJzIjo2MzQ5NDkyLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODI4NDQ1NTgsImV4cCI6MjA5ODQyMDU1OCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.HpYF4RoKp-9U94iEt0BEBjBuhQmQXazFNkik_865270?&utm_medium=email&utm_source=subscribe-widget-preamble&utm_content=203595758
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/bf96e487-bb92-48ce-9d0f-59e40da35e5b?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/189f0adb-b1d8-4517-8bb7-2847077a20f0?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/cf76572d-ffff-48e8-a309-055d3c546ac7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/9b380c83-130b-4147-8dcb-0667e79c092e?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 16. Link
+
+- **URL:** https://substack.com/redirect/e1b48cb8-d411-46ce-b565-ec9ccfe38a54?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 17. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRm5ld3NsZXR0ZXIuc2VtaWFuYWx5c2lzLmNvbSUyRnAlMkZ0b2tlbmJ1ZGdldGluZy1vdXItY29udmVyc2F0aW9ucyZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSnBZWFFpT2pFM09ESTRORFExTlRnc0ltVjRjQ0k2TVRjNE5UUXpOalUxT0N3aWFYTnpJam9pY0hWaUxUWXpORGswT1RJaUxDSnpkV0lpT2lKamFHVmphMjkxZENKOS5xRE5EaGo1b3BHRTNVNDJTT3BxMmJPN1JLTHZhczJFNmNPRDQzM3RVeWc0IiwicCI6MjAzNTk1NzU4LCJzIjo2MzQ5NDkyLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODI4NDQ1NTgsImV4cCI6MjA5ODQyMDU1OCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.HpYF4RoKp-9U94iEt0BEBjBuhQmQXazFNkik_865270?simple=true&utm_source=paywall&utm_medium=email&utm_content=203595758&next=https://newsletter.semianalysis.com/p/tokenbudgeting-our-conversations
+
+## 18. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vYWN0aW9uL2Rpc2FibGVfZW1haWw_dG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1ETTFPVFUzTlRnc0ltbGhkQ0k2TVRjNE1qZzBORFUxT0N3aVpYaHdJam94T0RFME16Z3dOVFU0TENKcGMzTWlPaUp3ZFdJdE5qTTBPVFE1TWlJc0luTjFZaUk2SW1ScGMyRmliR1ZmWlcxaGFXd2lmUS5TVEp3b2VkdWtBRGdsc1JwcklJRGVZRXhKLUIzZ19CMWdTdlEwN2RHQXhFIiwicCI6MjAzNTk1NzU4LCJzIjo2MzQ5NDkyLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODI4NDQ1NTgsImV4cCI6MjA5ODQyMDU1OCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.z18Vv3FzPll588RdkRWr20FNt9lRqnlKZEFJ1fGGxoY?
+
+## 19. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDM1OTU3NTgsInMiOjYzNDk0OTIsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4Mjg0NDU1OCwiZXhwIjoyMDk4NDIwNTU4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.d_Fn-0PuL2aYrb5Y7Va2BML4kyvlLz-szadsUxae_WU?
+
