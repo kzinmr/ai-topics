@@ -1,3 +1,17 @@
+## [2026-07-01] wiki-health | Auto-fix: 14 orphan concept pages added to index.md
+
+### Changes
+- Added 14 orphan concept pages to wiki/index.md:
+  - agent-harnesses, agentic-rag, ai-alignment, chain-of-thought
+  - cpu-inference-llm, deep-research, durable-execution
+  - kv-cache, llm-security, model-context-protocol-mcp
+  - prompt-caching, rag-systems, sandbox
+  - speculative-decoding, test-time-scaling
+- Index validation passed (229 lines, 0 issues)
+- Total indexed entries: 219 (up from 205)
+
+---
+
 ---
 ## [2026-07-01 11:15] — Active crawl — 4 new pages + 1 enrichment
 
