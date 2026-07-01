@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-06-24
+updated: 2026-07-01
 tags:
   - security
   - company
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-06-02_harvey_why-we-built-our-own-cloud-agent-infrastructure.md
   - raw/articles/2026-06-02_harvey_how-ai-is-transforming-contract-review-software.md
   - raw/articles/2026-06-17_harvey_harvey-copilot-cowork-launch.md
+  - raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
 ---
 
 # Harvey
@@ -66,6 +67,20 @@ Harvey launched as an agent inside **Microsoft 365 Copilot** and a plugin inside
 - **Document drafting:** Ask Cowork to draft a mutual NDA; Harvey handles the drafting, Cowork delivers it as a .docx
 
 The goal is to eliminate the tool-switching that fragments legal work, bringing Harvey's domain intelligence into the flow of Microsoft 365 where legal professionals already spend their time.
+
+### Model Partnerships (June 2026)
+
+Harvey integrated **Claude Sonnet 5** on June 30, 2026, making Anthropic's latest Sonnet model available in the Harvey platform. Sonnet 5 builds on Sonnet 4.6 with broad gains in legal accuracy and output quality across transactional and litigation work.
+
+**Benchmark results:**
+- **Legal Agent Benchmark (LAB):** 5.8% all-pass — a strict evaluation mirroring multi-step legal work end-to-end
+- **BigLaw Bench:** 91.3% — the highest recorded across both Sonnet and Opus models at Harvey
+- **Strongest practice areas:** Energy and natural resources, real estate, capital markets
+- **Strongest task type:** Drafting (LAB), Risk assessment & compliance, case management, transactional drafting (BigLaw Bench)
+
+Sonnet 5's consistent performance across litigation and transactional work, combined with cost efficiency, positions it for high-throughput legal tasks.
+
+Source: raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
 
 ## Cloud Agent Infrastructure (June 2026)
 

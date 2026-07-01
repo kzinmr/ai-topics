@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-06-27
+updated: 2026-07-01
 tags:
   - entity
   - company
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-06-25_fireworks-ai_frontier-lab-training-infrastructure-as-a-service.md
   - raw/articles/2026-06-25_fireworks-ai_frontier-open-source-worker-with-closed-source-advisor.md
   - raw/articles/2026-06-27_fireworks-ai_Cursor-Composer-2.md
+  - raw/articles/2026-07-01_fireworks-ai_glm-5p2-fast.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -249,6 +250,27 @@ With importance-sampling and clipping (the industry crutch), ~45% of every batch
 - **Co-located**: trainer and deployment on managed infrastructure for fast weight sync
 
 **Sources:** [[raw/articles/2026-06-25_fireworks-ai_frontier-lab-training-infrastructure-as-a-service]]
+
+### GLM 5.2 Fast (June 2026)
+
+Fireworks launched **GLM 5.2 Fast**, a speed-optimized inference tier for GLM 5.2, on June 30, 2026. The Fast path runs 2-3x faster than the Standard path on shared serverless infrastructure without reserved GPUs, achieving a peak of 446 tok/sec on Artificial Analysis.
+
+**Key specifications:**
+- Full 1M-token context window
+- Prompt caching at $0.14/1M cached input tokens (90% discount vs fresh)
+- OpenAI- and Anthropic-compatible APIs
+- Structured outputs (JSON-schema mode, full BNF grammar mode)
+- Supported on Serverless Priority for stronger admission under congestion
+
+**Agent loop optimization:** Average prompt length on Fireworks public endpoints is ~90k tokens — GLM 5.2 Fast is designed for coding agents with long context loops. Factory's Droid offers GLM 5.2 hosted on Fireworks.
+
+**Pricing:** $2.80/$0.28/$8.80 per 1M tokens (input/cached/output), about 2x Standard throughput.
+
+**Architecture:** GLM 5.2 combines an MoE MLP stack (~98% of params in experts) with DeepSeek Sparse MLA Attention with IndexShare. Expert parallelism frees HBM for KV cache; attention uses data-parallel sharding across requests. Cached prefix reuse avoids compete between prefill and decode each turn.
+
+**Benchmark:** 77.8% on SWE-bench Verified at a fraction of closed-model token cost.
+
+Source: raw/articles/2026-07-01_fireworks-ai_glm-5p2-fast.md
 
 ## LangChain Trace Judge Partnership (June 2026)
 

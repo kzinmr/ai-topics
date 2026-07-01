@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-06-27
+updated: 2026-07-01
 tags:
   - company
   - search
@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-06-04_glean_introducing-glean-mcp-gateway.md
   - raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-more-than-code-completion.md
   - raw/articles/2026-06-22_glean_what-is-no-code-automation.md
+  - raw/articles/2026-07-01_glean_introducing-independent-agents.md
 |---
 
 # Glean
@@ -144,6 +145,20 @@ Source: raw/articles/2026-06-03_glean_query-snowflake-data-in-glean-assistant.md
 Glean published a no-code automation guide positioning **Agent Builder** and the **Agent Library** (500+ pre-built agents) as enabling business users to build AI-powered workflows without coding. Authored by **Trevor Gile** (Agentic systems solutions architect), the guide compares no-code, low-code, and traditional development approaches, highlighting Glean's visual workflow builder, triggers, actions, conditional logic, and enterprise governance controls as key differentiators.
 
 Source: raw/articles/2026-06-22_glean_what-is-no-code-automation.md
+
+### Independent Agents (June 2026)
+
+Glean launched **Independent Agents**, a new class of AI coworkers built on Glean's context layer that work autonomously across enterprise tools. Unlike channel-specific assistants, these agents act across surfaces (Slack, Jira, Teams) with context carrying seamlessly between them.
+
+**Four key characteristics:**
+1. **Identity with context** — Each agent operates with its own identity and provisioned access, independent of any user's permissions. Traceable and controllable.
+2. **Memory** — Learns from company documentation and every interaction, extracting best practices and avoiding repeated mistakes.
+3. **Proactivity** — Acts without being asked: suggests solutions, tags stakeholders, provides regular summaries of key learnings.
+4. **Accountability** — Every run is auditable (tool calls, decisions, outputs). Inherits Glean's security model. Emergency stop button for admin disable.
+
+**OnCall Assistant (first agent, beta):** When an alert fires, the agent reads the escalation, pulls relevant context, pursues multiple root-cause theories simultaneously, drafts a fix for review, and tags the right owner. By the time a human steps in, the first ~30 minutes of investigation are already done.
+
+Source: raw/articles/2026-07-01_glean_introducing-independent-agents.md
 
 ## Related
 

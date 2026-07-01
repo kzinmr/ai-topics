@@ -1,3 +1,12 @@
+## [2026-07-01] Dreaming wiki-ingest — 2 takes + 2 references enriched
+
+### Changes
+- **entities/fireworks-ai.md** — Added GLM 5.2 Fast section: 2-3x speed tier, agent loop optimization, 77.8% SWE-bench, $2.80/$0.28/$8.80 pricing
+- **entities/glean.md** — Added Independent Agents section: 4 characteristics (Identity, Memory, Proactivity, Accountability), OnCall Assistant
+- **entities/harvey.md** — Added Model Partnerships section: Claude Sonnet 5 integration, 5.8% LAB, 91.3% BigLaw Bench
+- **entities/elevenlabs.md** — Added Procedures in ElevenAgents section: Structured/Free-form procedures, SOP import, Alpha
+- Coverage verification: 3 takes (Mythos export, Voyage Context-4, Modal Auto Endpoints) already covered by existing pages — skipped
+
 ## [2026-07-01] wiki-health | Auto-fix: 14 orphan concept pages added to index.md
 
 ### Changes

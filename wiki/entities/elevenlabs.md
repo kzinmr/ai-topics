@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-06-24
+updated: 2026-07-01
 tags:
   - company
   - voice-ai
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-06-05_elevenlabs_introducing-flows-agent.md
   - raw/articles/2026-06-17_elevenlabs_processing-images-and-documents-in-elevenagents.md
   - raw/articles/2026-06-20_elevenlabs_voice-agent-evaluation-framework-6-pillars-explained.md
+  - raw/articles/2026-07-01_elevenlabs_procedures.md
 ---
 
 # ElevenLabs
@@ -164,6 +165,22 @@ Flows Agent is a conversational AI assistant within ElevenLabs' creative canvas,
 **Significance**: Flows Agent marks ElevenLabs' transition from a voice-synthesis platform to a multi-modal creative agent orchestrator, competing with Runway's Gen-3, Pika, and Adobe Firefly in the AI creative workflow space while leveraging ElevenLabs' audio-native advantages.
 
 Source: raw/articles/2026-06-05_elevenlabs_introducing-flows-agent.md
+
+### Procedures in ElevenAgents (June 2026)
+
+ElevenLabs introduced **Procedures**, a feature for defining structured agent behavior in ElevenAgents. Similar to standard operating procedures (SOPs), Procedures let teams provide agents with task-specific instructions for common scenarios — accessible to both technical and non-technical team members.
+
+**Two types:**
+1. **Structured Procedures** — Fixed sequence of steps executed identically every time. Built with natural language, tool calls, and instruction chips. Best for claims intake, identity verification, payment collection.
+2. **Free-form Procedures** — Less prescriptive; the agent interprets instructions, calls tools, and adapts. Best for technical troubleshooting and billing questions.
+
+**Key features:**
+- Can import existing SOPs as PDFs, docs, or txt files — ElevenAgents drafts a Procedure for review
+- Loads only when triggered, keeping system prompts lean and agents faster
+- Complements system prompts, workflows, and guardrails
+- Currently in Alpha
+
+Source: raw/articles/2026-07-01_elevenlabs_procedures.md
 
 ### Multimodal Input Processing (June 2026)
 
