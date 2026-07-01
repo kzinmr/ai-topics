@@ -1,4 +1,17 @@
 |---
+## [2026-07-01 07:45] — Blog wiki-ingest — 2 takes, 4 references from 19 blog candidates (recovered from triage checkpoint after JSON parse error)
+
+**Source:** blog-triage checkpoint (saved before response render failure)
+
+### New pages created (2):
+- `entities/giles-thomas.md` — Giles Thomas; "Writing an LLM from scratch" series (part 34a), JAX/NNX/Optax training loop, outside-in methodology
+- `entities/grant-sanderson.md` — Grant Sanderson (3Blue1Brown); skeleton entity, AI as leading indicator in mathematics, Dwarkesh Patel podcast
+
+### Existing pages enriched (3):
+- `entities/ed-zitron.md` — Added "June 2026: BIS Systemic Risk Warning" section: BIS annual report $1T+ hyperscaler capex warning, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing
+- `entities/simon-willison.md` — Added June 30 entries: Claude Sonnet 5 tokenizer analysis (1.42× English, sampling params deprecated, 30% effective price increase, Adaptive Thinking default ON) and shot-scraper video feature (agent self-recorded demos via storyboard.yml/Playwright)
+- `concepts/claude/fable-5.md` — Added Export Controls Lift (June 30, 2026) section: Commerce Department lifted restrictions on Fable 5/Mythos 5 after ~18-day suspension
+|---
 ## [2026-07-01 07:40] — Newsletter wiki-ingest — 4 takes, 3 references from 8 newsletters (recovered from triage checkpoint after JSON parse error)
 
 **Source:** newsletter-triage checkpoint (saved before response render failure)

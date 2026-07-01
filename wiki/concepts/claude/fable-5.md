@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-06-28
+updated: 2026-07-01
 tags:
   - model
   - claude-fable-5
@@ -28,6 +28,7 @@ sources:
   - raw/articles/2026-06-10_theverge_anthropic-apologizes-invisible-claude-fable-guardrails.md
   - raw/articles/2026-06-10_jonready_claude-fable5-hidden-guardrails-sabotage.md
   - raw/articles/2026-06-11_simonwillison_claude-fable-relentlessly-proactive.md
+  - raw/articles/simonwillison.net--2026-jun-30-anthropic--7acc1e0a.md
   - raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md
   - raw/articles/simonwillison.net--2026-jun-26-dean-w-ball--bd13fd7b.md
   - raw/articles/2026-06-27_getsuperintel_fable-5-kill-switch-two-weeks-on.md
@@ -348,6 +349,14 @@ Claude Fable 5 generated extraordinary engagement on Hacker News, with multiple 
 | **Cybersecurity pushback** | 584 | Cybersecurity researchers criticizing the scope and transparency of safety classifiers |
 
 The combined ~4,800+ points across these threads reflects the release's significance and the depth of community concern about Anthropic's safety implementation choices.
+
+## Export Controls Lift (June 30, 2026)
+
+On June 30, 2026, Anthropic announced via a brief statement that the US Department of Commerce had lifted export controls on Claude Fable 5 and Mythos 5. Access was restored starting July 1. The export controls had been imposed around June 12-13, 2026 as part of the US government's export control directive (the 'Fable 5/Mythos 5' suspension). The lift was first reported by Simon Willison in a quote post of Anthropic's official statement.
+
+Source: raw/articles/simonwillison.net--2026-jun-30-anthropic--7acc1e0a.md and the Anthropic official statement.
+
+Note: This lift followed ~18 days of suspended access. The impact of the export controls on user experience and model availability during that period is documented in the body of the page.
 
 ## Related
 

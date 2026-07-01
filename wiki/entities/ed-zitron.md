@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-06-24
+updated: 2026-07-01
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -14,6 +14,13 @@ tags:
   - prediction
   - controversy
   - techno-pessimism
+  - ai-economics
+  - ai-industry-economics
+  - ai-criticism
+  - journalist
+  - analyst
+  - ai-skeptic
+  - regulation
 sources:
   - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
   - raw/articles/wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md
@@ -31,6 +38,7 @@ sources:
   - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-1--6191394a.md
   - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-2--e0d362d8.md
   - raw/articles/wheresyoured.at--brokenomics--662a8e19.md
+  - raw/articles/wheresyoured.at--the-ai-industry-is-losing--a92f13ac.md
 ---
 
 # Ed Zitron
@@ -496,6 +504,72 @@ The Silicon Valley Bubble series is part of a broader investigation covering fou
 2. **CFO Bubble** — Finance executives adopting AI without understanding cost structures or ROI
 3. **SaaSpocalypse** — The collapse of traditional SaaS economics as AI token-based billing destroys predictable pricing
 4. **GPU Infrastructure Bubble** — Trillions in data center investment justified by demand that doesn't exist outside the circular AI economy
+
+## June 2026: BIS Systemic Risk Warning
+
+In his article *"The AI Industry Is Losing"* (June 2026), Ed Zitron analyzed the **Bank for International Settlements (BIS) annual report**, which issued an unprecedented systemic risk warning about hyperscaler AI capital expenditure. This represented a major escalation in Zitron's thesis — the world's central bank regulator was now validating concerns he had been raising for over two years.
+
+### Key Points from Zitron's Analysis
+
+**BIS Warning on Hyperscaler Capex**:
+- The BIS annual report warned that hyperscalers were set to spend **over $1 trillion on AI capex** across 2025–2026
+- A disappointment in expected returns from this spending could trigger a **sudden and severe pullback** in investment, with cascading effects across global financial markets
+- This represented the first time a major international banking regulator had explicitly flagged AI infrastructure spending as a **systemic financial stability risk**
+
+**Oracle's Precarious Position**:
+- Oracle carried **$129.5 billion in outstanding debt**, with **$38 billion in lease commitments** and a staggering **$260 billion in future lease obligations**
+- Oracle's **free cash flow was negative $23.7 billion** — all leveraged to fulfill OpenAI's **$300 billion compute promise**
+- The company had essentially bet its entire balance sheet on a single customer with a deeply flawed business model
+
+**The Hyperscaler Cashflow Gap**:
+- Hyperscalers' capital expenditure was projected to **outpace their operating cashflows as of Q3 2026**
+- None of the major hyperscalers **disclosed actual AI revenues**, making it impossible for investors to evaluate the return on hundreds of billions in spending
+- Zitron characterized this as an unprecedented breakdown in financial transparency for companies of this scale
+
+**CoreWeave Dependency**:
+- **65% of CoreWeave's revenues** came from just two customers: Microsoft (reselling to OpenAI) and NVIDIA
+- This extreme concentration risk made CoreWeave a proxy bet on OpenAI's survival rather than a genuine independent business
+
+**Exponential View Report Critique**:
+- Zitron critiqued Azeem Azhar's Exponential View report estimating $110B in AI revenue
+- He argued the report used **rigged proprietary data** — Anthropic and OpenAI together accounted for **68% of the supposed $110B AI revenue figure**
+- This circularity meant the report was essentially measuring the AI industry's revenue by counting the losses of its two largest money-losing companies
+
+**OpenAI's Financial Implosion**:
+- OpenAI spent **$17.2 billion on Microsoft Azure in 2025 alone**
+- The company lost **$20.9 billion** on just **$13.04 billion in revenue**
+- Every dollar of OpenAI's revenue required **$2.60 in spending**, a business model Zitron argued was mathematically unsustainable
+
+**Microsoft's AI Revenue Run Rate**:
+- Microsoft claimed a **$37 billion AI revenue run rate** — but this represented **less than 1/10th of their $31.9 billion quarterly capex**
+- Even taking Microsoft's most optimistic AI revenue figures at face value, the return on investment was catastrophically low
+
+**'The Four Losers' Framing**:
+- Zitron named Sundar Pichai (Google), Andy Jassy (Amazon), Satya Nadella (Microsoft), and Mark Zuckerberg (Meta) as **'The Four Losers'** — CEOs trapped in a capex arms race none of them could win
+- Each was forced to keep spending to avoid being left behind, even as the financial math became increasingly absurd
+
+**SoftBank's Collateral Crisis**:
+- SoftBank was **unable to raise a $6 billion margin loan** despite offering its **entire OpenAI stake as collateral**
+- This indicated that sophisticated financial institutions were unwilling to lend against even the most prominent AI company equity
+
+**OpenAI IPO Delayed**:
+- The New York Times reported OpenAI's **IPO was pushed back to 2027**, a significant delay from prior expectations
+- Zitron interpreted this as a sign that even the most optimistic institutional investors were balking at OpenAI's financials
+
+**Data Center Overbuild**:
+- Zitron's starkest claim: **"those hundreds of billions of dollars of data centers are being built for no-one"**
+- The vast majority of planned AI data center capacity had no corresponding real customer demand outside the circular AI economy
+
+**Broader Economic Impact**:
+- If hyperscalers were forced to slow capex, the consequences would cascade through the entire financial system:
+  - **Semiconductor supply chain** — TSMC, Samsung, and chip equipment manufacturers dependent on hyperscaler orders
+  - **Construction and materials** — Data center builders, electrical infrastructure, and cooling system manufacturers
+  - **Private credit markets** — Firms that underwrote data center construction debt would face widespread defaults
+  - **Banking sector** — Banks with concentrated exposure to hyperscaler and neocloud lending
+
+### Significance
+
+Zitron emphasized that the BIS warning was not merely a financial footnote but a **validation from the world's highest financial authority** of concerns he had been documenting since early 2024. The article marked a turning point where AI industry criticism moved from tech media marginalia to **mainstream central banking discourse**, with the BIS effectively endorsing Zitron's circular economy thesis at the highest level of global financial regulation.
 
 ## Reception and Criticism
 
