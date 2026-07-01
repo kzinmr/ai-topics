@@ -1,3 +1,26 @@
+---
+## [2026-07-01 11:15] — Active crawl — 4 new pages + 1 enrichment
+
+**Discovery:** Parallel subagent trend scan (HN Algolia + X/Twitter + wiki gap analysis)
+
+### New pages created (4):
+- `concepts/claude-code/steganographic-watermarking.md` — Claude Code Steganographic Request Watermarking: Anthropic's anti-distillation/anti-reseller measure using regex-based steganographic fingerprinting in API requests (2100 HN pts, Jun 30)
+- `concepts/claude-science.md` — Claude Science: Anthropic's AI workbench for life sciences; reproducible computational biology with native visualization, compute management, and Modal GPU integration (503 HN pts, Jun 30)
+- `concepts/edge-ai.md` — Edge AI (On-Device AI Inference): Running AI inference locally on devices via NPU accelerators; Apple Intelligence (WWDC 2026), Gemini Nano, llama.cpp; confirmed wiki coverage gap (170 lines)
+- `concepts/together-ai-icml-2026.md` — Together AI at ICML 2026: 9 papers across full AI stack — DSGym (data-science agent eval/training), ThunderAgent (1.5–3.6× agent throughput), TTT-Discover, RARO (25% vs 5.9% SFT win rate)
+
+### Existing pages enriched (1):
+- `concepts/token-economics.md` — Added "The Economy of Tokens — A New Economic Paradigm" section: tokens as currency framework (supply/demand/velocity), pricing optimization strategies, market structure, and industry implications; based on @vipulved (Vipul Ved Prakash, Together AI CEO) X article (1004 bookmarks, Jun 2026)
+
+### Raw articles saved (4):
+- `raw/articles/2026-06-30_claude-code-steganographic-watermarking.md` — HN discussion (thereallo.dev blocked)
+- `raw/articles/2026-06-30_claude-science-product.md` — Claude Science product page + Modal integration blog
+- `raw/articles/2026-06-09_apple-intelligence-edge-ai.md` — Apple Intelligence WWDC 2026 announcement
+- `raw/articles/2026-06-30_together-ai-icml-2026.md` — Together AI ICML 2026 blog post
+
+### Coverage gap filled:
+- **Edge AI** was the top wiki gap (completely missing) identified by the gap analysis subagent. Now filled with comprehensive coverage of hardware, software, model optimization, deployments, and use cases.
+
 |---
 ## [2026-07-01 07:45] — Blog wiki-ingest — 2 takes, 4 references from 19 blog candidates (recovered from triage checkpoint after JSON parse error)
 

@@ -20,6 +20,54 @@ LLM inference cost analysis, optimization layers, and the economics of running l
 
 Training was the primary cost center (2021–2023). **Inference now consumes 55–80% of enterprise AI GPU spend.** Training is a fixed compute job; inference costs accumulate indefinitely post-launch.
 
+## The Economy of Tokens — A New Economic Paradigm
+
+A trending framework by Vipul Ved Prakash (@vipulved, Co-founder & CEO of [[entities/together-ai|Together AI]]), published as "The Economy of Tokens" (June 2026, 1000+ bookmarks on X), reframes LLM inference through the lens of macroeconomics: tokens are not merely a technical unit of model I/O — they are an **economic unit analogous to currency**.
+
+### Tokens as Currency
+
+The core analogy: tokens function like money in a digital economy. They have:
+
+- **Supply**: Determined by global GPU inference capacity, model architectures, and serving infrastructure. Supply can expand (new hardware, better kernels, quantization) but faces real physical and energy constraints.
+- **Demand**: Driven by agentic workloads, multi-turn conversations, long-context reasoning, and the compounding effect of AI-native applications. Unlike traditional API calls, agent sessions consume 100–1000× the tokens of single-turn interactions.
+- **Velocity**: Tokens circulate rapidly through multi-step agent workflows — each step generates and consumes tokens, creating a multiplier effect on base demand.
+- **Price discovery**: Token pricing is not set by a single provider but emerges from competitive dynamics between frontier labs, open-source providers, and infrastructure platforms. The spread between the cheapest and most expensive provider for an identical model can exceed 10×.
+
+### Supply/Demand Dynamics
+
+The framework identifies structural forces shaping the token economy:
+
+| Force | Effect |
+|-------|--------|
+| **Hardware scaling** | B200, GB200, and next-gen GPUs increase token supply per dollar |
+| **Kernel optimization** | FlashAttention, ThunderKittens, and speculative decoding improve token throughput without new hardware |
+| **Agentic demand explosion** | Multi-turn, tool-using agents consume orders of magnitude more tokens than single-call Q&A — creating a compounding demand curve |
+| **Context inflation** | Long-context reasoning (128K–1M token windows) multiplies per-request token consumption |
+| **Model proliferation** | More models in production means more total inference volume across the ecosystem |
+
+The central tension: supply improvements (better hardware, better kernels) are linear or sub-linear, while agent-driven demand growth is potentially exponential. This creates the conditions for an **inference capacity gap** — a structural shortage that pricing alone may not resolve quickly.
+
+### Pricing Optimization and Market Structure
+
+Prakash argues that token pricing is entering a phase of **differentiated market structure** rather than pure commoditization:
+
+- **Frontier premium**: The most capable models command significant price premiums (3–10× over mid-tier) because they enable tasks that cheaper models cannot complete reliably
+- **Mid-tier commoditization**: Models in the "good enough" tier (Sonnet-class, DeepSeek-class) face intense price competition and margin compression
+- **The routing opportunity**: Intelligent model routing — sending each task to the cheapest model that can complete it — becomes the primary value capture mechanism. The platform that routes best captures the spread
+
+### Implications for the LLM Industry
+
+- Inference is not just a cost center — it is an **economic substrate** that powers a new class of digital goods and services
+- The winners will be platforms that control the full stack: kernels → serving → routing → pricing (Together AI's vertically integrated thesis)
+- Token economics becomes a core competency for every AI-native business, not just infrastructure providers. Understanding unit economics of tokens is as fundamental to AI businesses as understanding server costs was to SaaS
+- The analogy extends to monetary policy: just as central banks manage currency supply, AI platforms will need to manage token supply (capacity allocation, QoS tiers, pricing levers) to maintain healthy market dynamics
+
+### Connection to Token Economics
+
+This paradigm directly connects to the core concerns of [[concepts/token-economics|token economics]]: the optimization layers (model, runtime, infrastructure, FinOps), the breakeven calculus, and the token-to-outcome attribution problem all operate within the broader framework of tokens as an economic resource with supply, demand, and price dynamics.
+
+Source: @vipulved, "The Economy of Tokens," X/Twitter, June 2026 (~1004 bookmarks)
+
 ## Core Metric: Cost Per Million Tokens (CPM)
 
 ```
@@ -261,6 +309,7 @@ Source: raw/newsletters/2026-06-30-tokenbudgeting-our-conversations-with-enterpr
 - [[concepts/local-llm/model-quantization]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
 - [[concepts/inference/vllm]] — Continuous batching and PagedAttention
 - [[concepts/ai-lab-subscription-vs-api-economics]] — How token economics shapes the subscription vs API business model debate
+- [[concepts/llm-cost-crisis]] — The growing tension between inference demand and infrastructure capacity
 
 ## Sources
 
