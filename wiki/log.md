@@ -1,6 +1,16 @@
 ## 2026-07-02
 
 - **Pages Updated**:
+  - `concepts/multi-token-residual-prediction.md` — **New**: Multi-Token Residual Prediction (MRP) concept page for DLM inference optimization. 1.56× lossless speedup, +16 accuracy points recovery. Modal × NYU Shanghai HeavyBall Research.
+  - `concepts/synthid.md` — Added Text Watermark Criticism section: Sean Goedecke's July 2026 analysis of text watermark removability, SynthID zero-temperature breakage, homoglyph watermarking by OpenAI/Anthropic, AI Act interoperability vs security-by-obscurity conflict.
+  - `entities/together-ai.md` — Updated funding from $150M+ Series B to $800M Series C from Aramco Ventures, NVIDIA, Vista Equity. Added 500 MW compute capacity commitment.
+  - `entities/seangoedecke-com.md` — Added "Text AI watermarks will always be trivial to remove" (July 2026) to timeline and sources.
+  - `concepts/token-economics.md` — Added MTR Rail+Property Business Model Analogy section: Michael Li's Dwarkesh Blog Prize essay on ML labs capturing complementary asset value.
+
+- **Pipeline**: blog-wiki-ingest (recovered from triage checkpoint after blog-triage JSON parse failure)
+- **Archived**: 18 skip/reference items
+
+- **Pages Updated**:
   - `concepts/coding-agents/pi-autoresearch.md` — Added Introspection (Roland Gavrilescu/ex-xAI), Agent Recipes framework, Pi as "Linux of agent harnesses" positioning, inner/outer loop distinction, human-in-loop design. (newsletter: Autoresearch — Latent Space)
   - `entities/cursor-ai.md` — Added Forward Deployed Engineering (FDE) section: VP Pauline Brunet, 10× team growth plan, enterprise adoption phases, AI software factory vision. (newsletter: How Cursor deploys AI inside the enterprise — Latent Space)
   - `entities/thariq-shihipar.md` — Added AI Engineer World's Fair 2026 keynote section: "The models are grown, not developed" framing, continuous discovery paradigm. (newsletter: AIEWF Daily Dispatch — Latent Space)

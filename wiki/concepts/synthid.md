@@ -1,7 +1,7 @@
 ---
 title: SynthID
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-07-02
 type: concept
 tags:
   - concept
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-05-27_google-synthid-c2pa-expansion.md
   - raw/articles/2026-05-27_synthid-openai-elevenlabs-nvidia-kakao.md
   - raw/articles/2026-05-27_heise-uniform-ai-labeling-synthid.md
+  - raw/articles/seangoedecke.com--text-ai-watermarks--cd663c94.md
 ---
 
 # SynthID
@@ -129,6 +130,24 @@ Despite the momentum, significant challenges remain:
 - **Platform lock-in risk**: Google's shutdown of the registration-free portal means users must use Google services to verify Google-generated content — a tension between accessibility and ecosystem control.
 - **Text watermarking adoption**: Open-sourcing text watermarking is necessary but not sufficient — widespread developer integration and verification tooling are still nascent.
 - **Video and audio coverage**: Current Chrome/Search verification is image-only; video and audio expansion is planned but not yet shipped.
+
+### Text Watermark Criticism: The Removal Argument
+
+Sean Goedecke's July 2026 analysis ("[Text AI watermarks will always be trivial to remove](https://seangoedecke.com/text-ai-watermarks/)") presents the most thorough critique of text watermarking's fundamental feasibility:
+
+**1. Text is too compressed for robust watermarking.** Unlike images (which contain imperceptible noise), text admits no change that a human wouldn't notice — except Unicode homoglyphs (replacing spaces with three-per-em or CJK space characters). Goedecke observes that Claude Code has been caught exploiting homoglyphs for geofencing (tagging suspicious Chinese-user requests), and ChatGPT outputs sometimes contain unusual Unicode spaces — suggesting both OpenAI and Anthropic may already use homoglyph-based watermarking.
+
+**2. SynthID breaks at zero temperature.** When inference temperature is set to 0 (always picking the most likely token), SynthID's scoring-based sampling cannot function — there is no randomness to influence. Either the watermark must be suppressed, or the user's preference must be overridden.
+
+**3. Watermarks are trivially removable:**
+- **Unicode homoglyph removal**: Simply normalize all Unicode characters to their real equivalents (e.g., replace U+2004 and U+3000 spaces with U+0020).
+- **SynthID removal**: Ask any un-watermarked LLM to paraphrase the text. The watermark is inherent to subtle vocabulary choices; re-wording destroys it. Goedecke notes that since the AI Act mandates free public watermark testing tools, adversaries can "keep tweaking until it comes back negative."
+
+**4. The AI Act's interoperability requirement is incompatible with security-by-obscurity.** The EU AI Act Code of Practice requires watermarking techniques to be "interoperable… as far as this is technically feasible" — meaning providers must publish their watermarking processes and potentially standardize. Text watermarking depends on hidden patterns (obscured scoring functions, secret homoglyph maps). Interoperability forces disclosure, which enables systematic bypass. As Goedecke puts it: "I just don't see how this is compatible with the kind of security-by-obscurity that LLM text watermarking depends on."
+
+**5. C2PA metadata is not a substitute for text watermarking.** C2PA only applies to containerized file formats (audio, image, video). Chat tool outputs and most AI agent output is uncontainerized plain text — there is no metadata slot to sign. The AI Act mandates actual watermarking in addition to metadata.
+
+**Critical assessment**: Goedecke's argument does not invalidate SynthID's value for images, video, and audio (where watermarking has fundamentally different properties), but exposes a structural weakness in the text watermarking pillar of AI content provenance — particularly for chat/agent output. See [[entities/seangoedecke-com]] for the full analysis.
 
 ## Related Pages
 

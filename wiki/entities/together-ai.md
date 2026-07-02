@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-05-30
+updated: 2026-07-02
 tags:
   - company
   - infrastructure
@@ -13,6 +13,7 @@ aliases: ["Together Compute", "Together Computer Inc."]
 sources:
   - https://www.together.ai/
   - https://www.together.ai/blog
+  - raw/articles/together.ai--blog-announcing-our-series-c--4c861109.md
 ---
 
 # Together AI
@@ -31,9 +32,10 @@ Together AI is a research-driven AI cloud platform offering a full stack for inf
 ## Key Facts
 
 - Founded by Vipul Ved Prakash (serial entrepreneur), Chris Re and Percy Liang (leading Stanford AI researchers), and Ce Zhang (distributed systems expert)
-- Raised $150M+ Series B; backed by Salesforce Ventures, Nvidia, and others
+- Raised **$800M** Series C (July 2026) from Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, and others — on top of $150M+ Series B
+- Platform usage grew 200% year-over-year; serves AI-native companies including Cognition, Decagon, Eleven Labs, Cursor, and Suno
+- Secured commitments for over **500 MW of compute capacity**
 - Creators of FlashAttention, ThunderKittens, ATLAS, and other GPU kernel innovations for transformer efficiency
-- Platform usage grew 200% year-over-year; serves AI-native companies and enterprises
 
 ## Products & Technology
 
