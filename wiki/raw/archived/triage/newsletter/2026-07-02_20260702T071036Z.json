@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-07-02T07:29:05.924064+00:00",
+  "triage_run_id": "20260702T071036Z",
+  "source": "newsletter",
+  "summary_ja": "6ニュースレター（swyx Latent Space×5、beehiiv Superintel×1）をトリアージ。Autoresearch/Introspection社（Roland Gavrilescu、元xAI）の自己改善エージェントループ「Agent Recipes」パラダイムが最も価値の高い新規コンテンツ（take: pi-autoresearch概念ページ拡充）。Cursor AIのFDEチーム（Pauline Brunet VP）とAIEWF発言（Thariq Shihipar/Addy Osmani/Geoffrey Litt）は既存エンティティページの参照強化が可能。beehiiv（Fable 5/Sonnet 5）はCloudflare403でコンテンツ取得不可かつWiki既カバー済み。分子AI/創薬ポッドキャストはスコープ外。",
+  "decisions": [
+    {
+      "item_id": "<20260701190344.3.1dd105a52047d684@mg-d1.substack.com>",
+      "source": "newsletter",
+      "source_name": "How Cursor deploys AI inside the enterprise",
+      "title": "Cursor FDE team - Pauline Brunet interview",
+      "url": "https://open.substack.com/pub/swyx/p/cursor-forward-deployed-engineers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/cursor-ai.md(369行)にFDEチーム/Pauline Brunetの言及なし。Brunet(VP of Forward Deployed Engineering)のFDEチーム立ち上げ・年末までに10倍成長計画・顧客導入事例(金融/通信/半導体)。customer-facing経験5年以上のSWE採用基準。cursor-ai.mdにFDEセクション追加推奨。",
+      "candidate_wiki_path": "entities/cursor-ai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-01\n**Subject:** How Cursor deploys AI inside the enterprise\n**Collected:** 2026-07-02T07:10:33.328446+00:00\n**Articles linked:** 16\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9j"
+    },
+    {
+      "item_id": "<20260702061349.3.0ef4e6e196eb9862@mg2.substack.com>-thariq",
+      "source": "newsletter",
+      "source_name": "AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency",
+      "title": "Thariq Shihipar at AIEWF - Claude Code keynote",
+      "url": "https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-agency",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-aiewf-daily-dispatch-autoresearch-and-the-tension-between-ai-and-human-agency.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/thariq-shihipar.md(282行)にAIEWF参加/Claude Code基調講演の記録なし。発言「The models are grown, not developed」は自己改善パラダイムを要約。エンティティページにAIEWFセクション追加推奨。",
+      "candidate_wiki_path": "entities/thariq-shihipar.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-02\n**Subject:** AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency\n**Collected:** 2026-07-02T07:10:35.477260+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjc"
+    },
+    {
+      "item_id": "batch-skip-diffusion-genesis",
+      "source": "newsletter",
+      "source_name": "Coolest Diffusion Research - Genesis Molecular AI",
+      "title": "Batch skip: Molecular AI/drug discovery podcast (20 links all audio UI)",
+      "url": "https://open.substack.com/pub/swyx/p/the-coolest-diffusion-research-isnt",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-the-coolest-diffusion-research-isn-t-in-llms-evan-feinberg-sergey-edunov-genesis.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 分子創薬AI(Genesis Molecular AI/PEARL/Evan Feinberg/Sergey Edunov)はWikiのLLM/AI Agentフォーカスとスコープ外。19/20リンクはポッドキャストオーディオUI。ポスト本文64パラグラフあるが分子薬物動態学/タンパク質-リガンド結合予測が主題。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-01\n**Subject:** 🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI\n**Collected:** 2026-07-02T07:10:31.045178+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF"
+    },
+    {
+      "item_id": "batch-skip-warp-noise",
+      "source": "newsletter",
+      "source_name": "Warp CEO Zach Lloyd on software factories",
+      "title": "Batch skip: Substack UI noise/OAuth redirects (16 links)",
+      "url": "https://substack.com/redirect/2/eyJlIj...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-warp-ceo-zach-lloyd-on-why-software-factories-are-the-next-phase-of-coding.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Substack標準ノイズ: Link1/7/19/20 OAuthリダイレクト, Link3 @ricmac著者プロフィール, Link4-6 like/comment/share, Link8 app-store, Links 9-18 UUIDリダイレクト(認証必須,ポスト本文に全コンテンツ含有)。メイン記事(Link2)はPost URLとして評価対象。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-01\n**Subject:** Warp CEO Zach Lloyd on why software factories are the next phase of coding\n**Collected:** 2026-07-02T07:10:29.955667+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZ"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "triage_run_id": "20260702T071036Z",
+  "triaged_at": "2026-07-02T07:10:36Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/newsletter_20260702T071036Z.json",
+  "newsletter_count": 6,
+  "classified": [
+    {
+      "message_id": "<20260701235230.3.4636cc0bf3bc0ec3@mg-d1.substack.com>",
+      "subject": "Autoresearch: The feedback loop behind self-improving agents",
+      "date": "2026-07-01",
+      "source_label": "swyx / Latent Space",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-autoresearch-the-feedback-loop-behind-self-improving-agents.md",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/autoresearch-introspection",
+      "importance": "critical",
+      "topics": ["autoresearch", "self-improving agents", "AI agent introspection", "agent feedback loops"],
+      "wiki_targets": ["concepts/autoresearch", "concepts/ai-agents"],
+      "rationale": "Core concept for AI agent architecture — self-improving feedback loops are a key emerging pattern. Directly maps to wiki's agent-focused scope."
+    },
+    {
+      "message_id": "<20260701190344.3.1dd105a52047d684@mg-d1.substack.com>",
+      "subject": "How Cursor deploys AI inside the enterprise",
+      "date": "2026-07-01",
+      "source_label": "swyx / Latent Space",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/cursor-forward-deployed-engineers",
+      "importance": "critical",
+      "topics": ["Cursor", "enterprise AI deployment", "forward-deployed engineers", "AI coding agents"],
+      "wiki_targets": ["entities/cursor", "concepts/ai-coding-agents"],
+      "rationale": "Cursor is a leading AI coding agent product. Enterprise deployment strategy (forward-deployed engineers model) is a significant industry pattern worth documenting."
+    },
+    {
+      "message_id": "<20260701142823.3.a744c9c41a9216a1@mg-d1.substack.com>",
+      "subject": "Warp CEO Zach Lloyd on why software factories are the next phase of coding",
+      "date": "2026-07-01",
+      "source_label": "swyx / Latent Space",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-warp-ceo-zach-lloyd-on-why-software-factories-are-the-next-phase-of-coding.md",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/software-factories",
+      "importance": "high",
+      "topics": ["software factories", "Warp", "Zach Lloyd", "AI-driven software development", "coding agents"],
+      "wiki_targets": ["entities/warp", "entities/zach-lloyd", "concepts/software-factories"],
+      "rationale": "Software factories concept extends AI coding agents into production-scale workflows. Warp is an emerging terminal/AI product. Zach Lloyd (ex-Google) is a relevant voice."
+    },
+    {
+      "message_id": "<w9BKKL_OQLiCZENuwPPAVQ@geopod-ismtpd-51>",
+      "subject": "🎭 Fable 5 Is Back, Sonnet 5 Lands With a Caveat",
+      "date": "2026-07-01",
+      "source_label": "beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-fable-5-is-back-sonnet-5-lands-with-a-caveat.md",
+      "importance": "high",
+      "topics": ["Fable 5", "Sonnet 5", "Claude", "Anthropic", "model releases"],
+      "wiki_targets": ["entities/anthropic", "concepts/claude-sonnet-5"],
+      "rationale": "New model releases (Sonnet 5, Fable 5) are high-signal events for the wiki. Requires verification of actual release details before creating entity pages."
+    },
+    {
+      "message_id": "<20260702061349.3.0ef4e6e196eb9862@mg2.substack.com>",
+      "subject": "AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency",
+      "date": "2026-07-02",
+      "source_label": "swyx / Latent Space",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-aiewf-daily-dispatch-autoresearch-and-the-tension-between-ai-and-human-agency.md",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-agency",
+      "importance": "high",
+      "topics": ["autoresearch", "AI agency", "human-AI agency tension", "AIEWF"],
+      "wiki_targets": ["concepts/autoresearch", "concepts/ai-agency"],
+      "rationale": "Follows up on autoresearch concept with agency dimension. AIEWF (AI Engineer World's Fair) is a key conference. Builds on the critical autoresearch newsletter."
+    },
+    {
+      "message_id": "<20260701144239.3.217e299f27d2a29c@mg2.substack.com>",
+      "subject": "🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI",
+      "date": "2026-07-01",
+      "source_label": "swyx / Latent Space podcast",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-01-the-coolest-diffusion-research-isn-t-in-llms-evan-feinberg-sergey-edunov-genesis.md",
+      "importance": "low",
+      "topics": ["diffusion models", "molecular AI", "Genesis Molecular AI", "Evan Feinberg", "Sergey Edunov"],
+      "wiki_targets": ["entities/genesis-molecular-ai"],
+      "rationale": "Diffusion research applied to molecular AI is tangentially related to the wiki's LLM/Agent focus. Lower priority unless the wiki expands to cover broader AI/ML domains."
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 3,
+    "low": 1,
+    "key_themes": [
+      "Self-improving AI agents (autoresearch) — 2 newsletters from swyx on consecutive days",
+      "AI coding agents in enterprise (Cursor forward-deployed engineers, Warp software factories)",
+      "New model releases (Sonnet 5, Fable 5)",
+      "AI agency and human-AI interaction tensions"
+    ],
+    "recommended_next_actions": [
+      "Ingest autoresearch newsletters into wiki as concept page",
+      "Create/update Cursor entity page with enterprise deployment patterns",
+      "Verify Sonnet 5/Fable 5 release details before wiki page creation",
+      "Consider creating 'software-factories' concept if sufficient detail in raw article"
+    ]
+  }
+}

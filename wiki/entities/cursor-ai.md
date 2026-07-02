@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-06-30
+updated: 2026-07-02
 type: entity
 tags:
   - entity
@@ -28,6 +28,7 @@ sources:
   - raw/articles/cnbc.com--2026-06-16-spacex-spcx-cursor-acquisition-ipo-html--cb9f7b0c.md
   - raw/newsletters/2026-06-18-the-first-big-exit-in-ai.md
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
+  - raw/newsletters/2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
 ---
 
 
@@ -347,6 +348,25 @@ Aman Sanger presented at NVIDIA GTC 2026 (Apr 12, 2026) outlining Cursor's termi
 - Cursor = "R&D cloud" helping enterprises build more ambitious software
 
 See also: [[concepts/self-driving-codebases]], [[concepts/coding-agents/async-coding-agents]]
+
+## Forward Deployed Engineering (FDE) Team (July 2026)
+
+Cursor's **Forward Deployed Engineering (FDE)** team, led by VP **Pauline Brunet**, works directly with enterprise customers to implement agents across the entire software development lifecycle. The FDE team is a key vehicle for Cursor's "AI Software Factory" vision.
+
+**Team growth**: Brunet aims to grow the team 10× by end of 2026. Hiring criteria: software engineers with 5+ years experience and customer-facing deployment background (prior companies include Spotify, Rippling, Palantir).
+
+**How FDEs operate**: Unlike traditional support or professional services, FDEs embed in customer systems, customize deployments around specific workflows, and work across financial services, telecommunications, software, and semiconductor industries. They help transformation leaders create an AI software factory covering plan → design → write → test → deploy → maintain.
+
+**Three enterprise adoption phases:**
+1. **Early adopters** (10-20% of org) use local/cloud agents individually — already happening
+2. **Cross-team agents** use long-running agents across teams and processes — requires leadership mandate
+3. **AI software factory** — automated lifecycle from feature request to production, with issues and product feedback feeding back into the loop
+
+> *"We want to help customers across the entire lifecycle. You should be able to say, 'Here is the feature I want to develop,' and then have long-running agents work with you across every step."* — Pauline Brunet
+
+**Local vs cloud adoption**: Local agents remain self-service (desktop app/CLI), while cloud agents enable persistent background task execution. The next frontier is departmental-scale agent workflows (e.g., a QA agent applying consistent process across teams).
+
+References: [Latent Space: How Cursor deploys AI inside the enterprise](https://open.substack.com/pub/swyx/p/cursor-forward-deployed-engineers) — July 2026
 
 ---
 

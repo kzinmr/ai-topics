@@ -3,7 +3,7 @@ title: Geoffrey Litt
 type: entity
 handle: "@geoffreylitt"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-07-02
 tags:
   - person
   - model
@@ -127,6 +127,21 @@ In "Bring Your Own Client," Geoffrey explores how local-first software and malle
 - **Ladybug** — A Ruby debugger backend for the Chrome DevTools UI.
 - **Experiments in Dynamicland** — Exploring the dynamic medium concept at Bret Victor's research lab.
 - **ENHANCE!** (BangBangCon 2017) — Explaining Generative Adversarial Neural Networks using CSI-style image upscaling.
+
+## AI Engineer World's Fair 2026: Anti-Factory Critique
+
+At the AI Engineer World's Fair (July 2026), Litt was one of the most prominent voices pushing back against the "software factory" framing. On the opening day, he tweeted the rallying cry of the anti-factory camp:
+
+> "Factories is a depressing vision of the future, metaphors matter" (35.5K Views, June 30, 2026)
+
+In the Design Engineering track, Litt spoke about **"how and why humans need to understand our code"** — arguing that understanding is essential for creative participation. Lily Zhang summarized his thesis: "The future will be very polarized: those who understand will keep having the next big idea. Those who delegate understanding will be replaced by the agent."
+
+In a follow-up thread, Litt clarified that he acknowledges agents' growing capability but insists on human understanding: "You can learn what the agent is doing to make sure you can be an active participant in the creative process."
+
+This positions Litt as a leading voice in the "human agency" camp of the software factory debate, alongside Addy Osmani (Agency Ladder) and Paul Bakaus (Impeccable — "there is no auto").
+
+References:
+- [AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency](https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-agency) — Richard MacManus, July 2026
 
 ## Blog / Recent Posts
 

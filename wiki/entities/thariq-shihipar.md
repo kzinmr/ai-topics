@@ -3,14 +3,14 @@ title: Thariq Shihipar
 type: entity
 handle: "@trq212"
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-07-02
 tags:
   - person
   - anthropic
   - ai-agents
   - interpretability
   - company
----
+sources: []
 ---
 
 
@@ -252,6 +252,17 @@ Source: [[raw/newsletters/2026-05-18-how-i-ai-html-is-the-new-markdown-how-anthr
 - **[[entities/varun-trivedy]]** — Both work on agent harness engineering; Trivedy's "Agent = Model + Harness" framework parallels Shihipar's SDK architecture
 - **[[entities/philipp-schmid]]** — Both write about agent infrastructure; Schmid's "2026 will be around Agent Harnesses" aligns with Shihipar's Claude Agent SDK work
 - **[[entities/florian-brand]]** — Both interested in interpretability and understanding how AI systems work under the hood
+
+## AI Engineer World's Fair 2026 Keynote
+
+At the AI Engineer World's Fair (July 2026), Shihipar delivered a Claude Code keynote that reflected the self-improving agent paradigm. His core framing:
+
+> "The models are grown, not developed. We sort of figure out and learn with the model as we use it."
+
+This statement captured the shift from the traditional "build → deploy → maintain" software model to a continuous-discovery approach where agents and their behavior co-evolve through usage. The keynote ran in parallel with Introspection's autoresearch session and Geoffrey Litt's anti-factory talk, placing Shihipar squarely in the "discovery-driven" camp of the software factory debate.
+
+References:
+- [AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency](https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-agency) — Richard MacManus, July 2026
 
 ## X Activity Themes
 

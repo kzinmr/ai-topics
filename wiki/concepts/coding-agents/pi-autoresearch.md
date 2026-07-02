@@ -5,10 +5,11 @@ slug: pi-autoresearch
 status: complete
 tags: [autoresearch, agent-loop, ralph-loop, ai-agents, coding-agents, self-improving, optimization, tool]
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-07-02
 aliases: [shopify-autoresearch, pi-autoresearch-extension]
 sources:
   - raw/articles/2026-04-15_shopify-autoresearch-david-cortes.md
+  - raw/newsletters/2026-07-01-autoresearch-the-feedback-loop-behind-self-improving-agents.md
 ---
 
 # pi-autoresearch — Generalizing Autoresearch Beyond Model Training
@@ -100,6 +101,47 @@ Turnbull's implementation adds a critical insight absent from pi-autoresearch: *
 > *"Deep learning is a universal function approximator — it's really just linear algebra being optimized. AutoReSEARCH is just a different sort of putty being optimized, but in the same sort of harness."* — Doug Turnbull, HaystackConf 2026
 
 Both implementations confirm the same philosophical principle: the agent does work humans correctly deprioritize. Turnbull notes that his agent discovered **reciprocal rank fusion** — the "least offensive" hybrid search solution — by exhaustively exploring within human search knowledge, similar to how pi-autoresearch finds micro-optimizations humans wouldn't bother attempting.
+
+## Introspection and Agent Recipes (July 2026)
+
+In July 2026, a new company called **Introspection** (co-founded by Roland Gavrilescu and Julian Bright, both previously on xAI's agent infrastructure team) emerged with a framework that significantly extends pi-autoresearch's generalized loop concept.
+
+### Agent Recipes: Beyond Tools and Skills
+
+Gavrilescu introduced **Agent Recipes** as a portable format that goes beyond the tool/skill abstraction. Where pi-autoresearch focuses on arbitrary metric optimization via a single loop, Agent Recipes encode the full context of agent behavior: evals, judges, signal processing, and the human expertise embedded in the loop.
+
+| Concept | pi-autoresearch | Agent Recipes (Introspection) |
+|---------|----------------|-------------------------------|
+| **Scope** | Single metric per loop | Multi-component: recipes encode eval/judge/signal |
+| **Portability** | Pi extension | Provider-agnostic portable format |
+| **Knowledge capture** | None explicit | Records failures, decisions, and how signals evolved |
+| **Human integration** | Human reviews results | Human is a core component ("ask a human" tool) |
+
+> "A recipe captures that process. You begin with a baseline and then record how each signal produced a new judge, embedded new human expertise or led you to introduce a different model." — Roland Gavrilescu
+
+### Three Patterns for Production Autoresearch
+
+Gavrilescu presented three patterns that define the next phase of autoresearch:
+
+1. **The loop is the product** — The paradigm has shifted from models to harnesses to loops. The key question is whether you can define feedback mechanisms so agents take on more work without generating slop.
+2. **Agent Recipes** — A portable format encoding evals, judges, signal processing, and human expertise, analogous to data recipes in model post-training.
+3. **Systems that become both better and cheaper over time** — Gradually distilling frontier model capabilities into owned, customized systems.
+
+### Pi as the "Linux of Agent Harnesses"
+
+Gavrilescu explicitly positioned Pi as analogous to Linux: a system designed to be extended, not run as vanilla. "Pi separates the agent loop from its extensions and configuration, which makes the agent portable. You can spin up several different agents by loading different files into the runtime." Introspection provides the managed infrastructure (like Red Hat to Linux) for deploying these recipes in production.
+
+### Inner Loop vs Outer Loop
+
+Introspection's framework distinguishes two loops:
+- **Inner loop** — The primary system interacting with users and performing work
+- **Outer loop (autoresearch)** — A system that studies and maintains the primary system
+
+This mirrors pi-autoresearch's one-metric optimization but adds the notion of meta-optimization: the outer loop decides what to optimize in the inner loop.
+
+### Humans as Core Component
+
+Unlike fully autonomous software factory visions, Introspection designs humans explicitly into the loop. Agents use an "ask a human" tool that learns preferences over time — analogous to a new employee asking questions and gradually becoming independent. This gradual autonomy pattern parallels the human-in-the-loop design of [[concepts/harness-engineering/agentic-loop]].
 
 ## Related Concepts
 

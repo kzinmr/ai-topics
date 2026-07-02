@@ -2,7 +2,7 @@
 title: Addy Osmani
 type: entity
 created: 2026-04-10
-updated: 2026-06-21
+updated: 2026-07-02
 source: "x-account"
 tags:
   - person
@@ -163,6 +163,23 @@ Osmani uses X to:
 - Respond to **emerging trends** (agent swarms, AGENTS.md debate, multi-agent coordination)
 
 His posting style is **educational and systematic** — he builds frameworks, creates cheat sheets, and produces structured guides rather than hot takes.
+
+## AI Engineer World's Fair 2026: Agency Ladder
+
+At the AI Engineer World's Fair (July 2026), Osmani delivered a talk that directly challenged the fully autonomous software factory vision. His core framing:
+
+> "Agents can run much more of the inner execution loop. But that outer loop is still engineering."
+
+Osmani introduced the **Agency Ladder** concept to distinguish capability from agency:
+
+| Level | Description |
+|-------|-------------|
+| **Inner execution loop** | What agents do — write code, run tests, fix bugs. **Capability.** |
+| **Outer loop (engineering)** | What humans must retain — setting goals, evaluating results, making architectural decisions. **Agency.** |
+
+> *"That inner loop is capability. The outer loop is agency."* — Addy Osmani, AIEWF 2026
+
+This framing positions Osmani in the "human outer loop" camp, alongside Geoffrey Litt (anti-factory thread) and Paul Bakaus (Impeccable — "there is no auto"), as opposed to the autonomous factory vision of Introspection and Cursor.
 
 ## Open Source & Projects
 
