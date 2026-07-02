@@ -60,11 +60,40 @@ Simon Willison tested Ornith-1.0 using **LM Studio** combined with the **Pi** sc
 
 Willison's hands-on testing validates that Ornith-1.0's self-scaffolding approach works in practice for realistic developer workflows, not just on academic benchmarks.
 
+## Relationship to RLM and Dynamic Workflows
+
+Ornith-1.0's self-scaffolding sits at a specific intersection of two converging paradigms in the wiki: [[concepts/rlm-recursive-language-models|Recursive Language Models (RLM)]] and [[concepts/dynamic-workflows|Dynamic Workflows]]. See [[comparisons/self-scaffolding-approaches]] for a full three-way comparison.
+
+### RLM (Recursive Language Models)
+
+Alex Zhang and Omar Khattab's RLM framework defines a paradigm where LLMs programmatically examine, decompose, and recursively call themselves over input — treating **context as a variable** in a REPL environment. The defining RLM trait is: *"a symbolic environment where LLM calls are invoked in code, passing around outputs not in the context of the main model"* (a1zhang, May 2026).
+
+Ornith's self-scaffolding shares the **programmatic sub-agent invocation** property — the model generates executable code that orchestrates multi-turn tool-use. However, Ornith is **task-centric** (how to combine tools for a given task) rather than RLM's **context-centric** decomposition (how to partition and process long inputs). Ornith also lacks RLM's recursive `llm_query()` pattern over context subsets.
+
+### Dynamic Workflows (Claude Code)
+
+Anthropic's Dynamic Workflows (June 2026) let Claude generate JavaScript orchestration scripts to spawn and coordinate parallel subagents. Alex Zhang identified DW as *"perhaps the first instance of a frontier model seriously trained to be an RLM"* — but the wiki's analysis assessed DW as **scaffold-level RLM** (architectural pattern at the orchestration layer) rather than **trained RLM**.
+
+Ornith inverts this relationship: it is **trained self-scaffolding** (Agentic RL bakes scaffolding patterns into model weights) without the parallel subagent orchestration that DW provides. Where DW generates a JS workflow file spawning hundreds of subagents, Ornith generates sequential agent harness code with error recovery.
+
+### Summary Positioning
+
+| Dimension | RLM | Dynamic Workflows | Ornith Self-Scaffolding |
+|---|---|---|---|
+| Implementation layer | Inference paradigm | Scaffold (JS scripts) | **Model weights** (Agentic RL) |
+| Primary axis | Context decomposition | Task orchestration | Task-specific tool-use |
+| Training for the pattern | RLM-Qwen3-8B post-trained | No DW-specific training | Agentic RL trained |
+| Parallelism | Recursive over context subsets | Fan-out of subagents | Sequential multi-turn |
+| External framework needed | DSPy / REPL | Claude Code | None (self-contained) |
+
 ## Related Pages
 
 - [[entities/simon-willison]] — Simon Willison, who conducted the hands-on evaluation and reported on Ornith-1.0
 - [[concepts/coding-agents]] — The broader category of LLM-based coding agents
 - [[concepts/agentic-engineering]] — Engineering practices for building agentic systems
+- [[concepts/rlm-recursive-language-models]] — Recursive Language Models — context-as-variable paradigm
+- [[concepts/dynamic-workflows]] — Claude Code's model-generated orchestration scripts
+- [[comparisons/self-scaffolding-approaches]] — Three-way comparison of RLM, Dynamic Workflows, and Ornith
 
 ## References
 

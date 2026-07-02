@@ -228,6 +228,7 @@
 - [[comparisons/openclaw-pi-hermes-state-management]] — OpenClaw, Pi, and Hermes Agent State Management
 - [[comparisons/palantir-platform-family]] — Palantir Platform Family
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
+- [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
 ## Events
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)

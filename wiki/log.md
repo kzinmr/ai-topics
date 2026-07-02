@@ -1,3 +1,19 @@
+## [2026-07-02] Self-Scaffolding Approaches — RLM / Dynamic Workflows / Ornith 比較ページ作成
+
+### Changes
+- **comparisons/self-scaffolding-approaches.md** — New: 3つのself-scaffoldingアプローチ（RLM, Dynamic Workflows, Ornith）の包括的比較ページ。実装層・訓練・並列性・決定フレームワークを含む
+- **concepts/ornith-self-scaffolding-llm.md** — Updated: RLM/Dynamic Workflowsとの関連セクション追加、Related Pages拡充
+- **concepts/dynamic-workflows.md** — Updated: Related ConceptsにRLM, Ornith, 比較ページへのリンク追加
+- **concepts/rlm-recursive-language-models.md** — Updated: Related ConceptsにOrnith, 比較ページへのリンク追加
+- **index.md** — Updated: comparisons/self-scaffolding-approaches追加
+
+### Sources
+- Simon Willison: https://simonwillison.net/2026/Jun/29/ornith/
+- RLM: arXiv:2512.24601, Alex Zhang clarification (May 2026)
+- Dynamic Workflows: Anthropic blog (June 2026)
+
+---
+
 ## [2026-07-02] Pioneer AI & GLiNER Model Family — 新規エンティティ＆コンセプトページ作成
 
 ### Changes

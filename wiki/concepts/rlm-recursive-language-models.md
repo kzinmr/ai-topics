@@ -692,4 +692,6 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 - **[[entities/alex-zhang]]** — Primary author, RLM creator
 - [[entities/omar-khattab]] — Co-author, DSPy creator, ColBERT lineage
 - [[entities/isaac-flath]] — Pi Harness: practical RLM implementation seeded with late interaction retrieval (PyLate/LightOn), REPL-as-Context pattern
+- [[concepts/ornith-self-scaffolding-llm|Ornith-1.0 Self-Scaffolding]] — trained self-scaffolding (model-layer counterpart; task-centric vs RLM's context-centric)
+- [[comparisons/self-scaffolding-approaches]] — Three-way comparison of RLM, Dynamic Workflows, and Ornith
 - [[entities/dsprrr]] — R-native DSPy/RLM implementation by James H. Wade; callr subprocess isolation + ellmer structured outputs

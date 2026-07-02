@@ -113,6 +113,9 @@ Dynamic workflows are not needed for every task and use significantly more token
 - [[concepts/claude-code/claude-code-skills|Claude Code Skills]]
 - [[concepts/anthropic/multi-agent-research|Anthropic Multi-Agent Research System]]
 - [[concepts/claude-code/claude-code-best-practices|Claude Code Best Practices]]
+- [[concepts/rlm-recursive-language-models|RLM (Recursive Language Models)]] — DW implements scaffold-level RLM per Alex Zhang's analysis
+- [[concepts/ornith-self-scaffolding-llm|Ornith-1.0 Self-Scaffolding]] — trained self-scaffolding (model-layer counterpart to DW's scaffold-layer approach)
+- [[comparisons/self-scaffolding-approaches]] — Three-way comparison of RLM, Dynamic Workflows, and Ornith
 
 ## Authors
 
