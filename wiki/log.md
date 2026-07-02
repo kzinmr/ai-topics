@@ -1,3 +1,17 @@
+## [2026-07-02] X Article ingest — OpenWiki by Brace Sproul
+
+### Changes
+- **raw/articles/2026-07-01_bracesproul_openwiki-langchain.md** — New: X article "Introducing OpenWiki, an open source agent for repo documentation" by Brace Sproul (LangChain)
+- **concepts/openwiki.md** — New: OpenWiki concept page — LangChain's open-source agent/CLI for codebase documentation wikis; wiki-as-context pattern, DeepAgents integration, GitHub Action for updates
+- **entities/brace-sproul.md** — New: Brace Sproul entity page — Head of Applied AI at LangChain, led OpenWiki release
+- **index.md** — Added brace-sproul entity + openwiki concept entries
+- **log.md** — This entry
+
+### Sources
+- https://x.com/bracesproul/status/2072375136368660515 (X article, 394 bookmarks, 69.5K impressions)
+
+---
+
 ## [2026-07-01] Dreaming wiki-ingest — 2 takes + 2 references enriched
 
 ### Changes
