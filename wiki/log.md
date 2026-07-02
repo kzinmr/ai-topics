@@ -1,3 +1,22 @@
+## [2026-07-02] Pioneer AI & GLiNER Model Family — 新規エンティティ＆コンセプトページ作成
+
+### Changes
+- **entities/fastino-labs.md** — New: Fastino Labs企業ページ — SLM応用研究ラボ; Pioneerプラットフォーム, GLiNERモデルファミリー
+- **entities/pioneer-ai.md** — New: Pioneer AIプロダクトページ — SLMファインチューニング＆推論エージェント; Agent Mode, Research Mode, Adaptive Inference; AdaptFT-Bench
+- **concepts/gliner-model-family.md** — New: GLiNERモデルファミリーコンセプト — GLiNER→GLiNER2→GLiGuard→GLiNER2-PII; 双方向エンコーダアーキテクチャ; 42 PIIタイプ; OpenAI Privacy Filter比較
+- **raw/articles/pioneer-ai-blog-*.md** — New: 6本のPioneer AIブログ記事をraw保存
+- **SCHEMA.md** — Tags追加: `encoder-model`, `small-language-model`, `named-entity-recognition`, `pii-detection`
+
+### Sources
+- https://pioneer.ai/blog/introducing-pioneer
+- https://pioneer.ai/blog/behind-pioneer
+- https://pioneer.ai/blog/gliner-modern-named-entity-recognition
+- https://pioneer.ai/blog/gliner2
+- https://pioneer.ai/blog/gliguard-16x-faster-safety-moderation-with-a-small-language-model
+- https://pioneer.ai/blog/gliner2-pii-open-source-privacy-filtering-with-pii-detection
+
+---
+
 ## [2026-07-02] X Article ingest — OpenWiki by Brace Sproul
 
 ### Changes

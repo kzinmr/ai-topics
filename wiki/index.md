@@ -33,6 +33,7 @@
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
 - [[entities/eric-zhang]] — Eric Zhang — Creator of jax-js (JAX for the browser, WebGPU/Wasm, 845★) and graphon (graph DB in Zig); NY Systems Reading Group organizer (June 27)
 - [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25)
+- [[entities/fastino-labs]] — Fastino Labs — SLM応用研究ラボ; Pioneerプラットフォーム（自動ファインチューニング＆適応的推論）、GLiNERモデルファミリー（NER、セーフティ、PII検出）; 月間300万+ダウンロード (July 2🆕)
 - [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
 - [[entities/giles-thomas]] — Giles Thomas; new entity — "Writing an LLM from scratch" series, JAX/NNX/Optax training loop, outside-in methodology (July 1)
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
@@ -60,6 +61,7 @@
 - [[entities/peter-steinberger]] — Peter Steinberger — Creator of PSPDFKit; iOS developer tools expert; exploring MCP and AI developer tooling (June 27)
 - [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
 - [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
+- [[entities/pioneer-ai]] — Pioneer AI ([[entities/fastino-labs]]) — SLMファインチューニング＆推論エージェント; Agent Mode（10分）、Research Mode（自律探索）、Adaptive Inference（本番自動改善）; AdaptFT-Bench提案; Intent 99.3%, Entity F1 0.810 (July 2🆕)
 - [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), pool and Shimmer products; open-weights as default commitment (June 29)
 - [[entities/simon-willison]] — Simon Willison; enriched with hackmyclaw.com Prompt Injection Challenge (June 27); Sonnet 5 tokenizer analysis (1.42× English, 30% effective price increase, sampling params deprecated) and shot-scraper video feature — agent self-recorded demos (July 1)
 - [[entities/vercel]] — Vercel Inc.; frontend cloud platform, expanded into AI with Eve filesystem-first agent framework, deepsec security harness, AI SDK, and Vercel Sandbox microVMs (June 28)
@@ -140,6 +142,7 @@
 - [[concepts/durable-execution]] — Durable Execution — Fault-tolerant, stateful execution model for long-running agent workflows
 - [[concepts/edge-ai]] — Edge AI (On-Device AI Inference) — Running AI inference locally on smartphones/laptops/IoT via NPU accelerators; Apple Intelligence, Gemini Nano, llama.cpp (Jul 1)
 - [[concepts/flash-attention-4]] — FlashAttention-4 — CUDA kernel for Transformer attention on Blackwell B200; 1605 TFLOPs/s, 71% utilization, 1.3× faster than cuDNN; FA4 inference optimizations by Modal (June 29)
+- [[concepts/gliner-model-family]] — GLiNER Model Family — 双方向エンコーダベースSLMファミリー（GLiNER/GLiNER2/GLiGuard/GLiNER2-PII）; NER→多タスク情報抽出→セーフティモデレーション→PII検出; ChatGPTを凌駕する205Mパラメータモデル; 42 PIIエンティティ; OpenAI Privacy Filterを上回る精度 (July 2🆕)
 - [[concepts/gemini-computer-use]] — Gemini Computer Use (Android) — Philipp Schmid's Android-specific implementation guide: screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script, relationship to Claude and OpenAI computer use approaches (June 25)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/google-spacex-ai-compute-deal]] — Google-SpaceX AI Compute Deal; enriched with Reflection AI $6.3B contract details and SpaceX $28B/yr neocloud status (June 23)
