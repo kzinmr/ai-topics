@@ -1,11 +1,12 @@
 ---
 title: Ornith-1.0 — Self-Scaffolding LLMs for Agentic Coding
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-02
 type: concept
-tags: [concept, model, open-source, coding-agents, agentic-rl, reasoning-model]
+tags: [concept, model, open-source, coding-agents, agentic-rl, reasoning-model, reinforcement-learning]
 sources:
   - raw/articles/simonwillison.net--2026-jun-29-ornith--e3eeed57.md
+  - raw/articles/deep-reinforce.com--ornith-1-0--official-release.md
 ---
 
 # Ornith-1.0 — Self-Scaffolding LLMs for Agentic Coding
@@ -27,27 +28,54 @@ Ornith-1.0 comes in four variants, all built on top of existing open-weight base
 
 The 9B dense variant is the most accessible for local deployment, while the 397B MoE variant pushes toward frontier-level performance. All variants inherit the permissive Apache 2.0 license from their base models, with Ornith-specific improvements released under MIT.
 
-## Self-Scaffolding Architecture
+## Self-Improving Training Framework
 
-The core innovation of Ornith-1.0 is its **self-scaffolding** capability. Unlike traditional LLMs that require external frameworks (e.g., LangChain, CrewAI) to orchestrate multi-step tool-use, Ornith-1.0 can generate its own scaffolding code — the glue logic that manages multi-turn agentic workflows, tool call sequencing, error recovery, and state management.
+The core innovation of Ornith-1.0 is its **self-improving training framework**, where the scaffold (orchestration logic) **co-evolves with the policy** (solution generation) via reinforcement learning.
 
-This means Ornith-1.0 can:
+### Two-Stage RL Loop
 
-- **Generate its own agent harness** — producing executable Python code that defines tool-using loops, rather than relying on pre-built orchestration layers.
-- **Self-correct and re-plan** — when a tool call fails or returns unexpected results, the model can generate new code to handle the edge case inline.
-- **Adapt scaffolding to context** — adjusting its tool-use strategy based on the specific task, environment, and available APIs, rather than following a fixed prompt template.
+Each RL training step proceeds in two stages:
 
-This self-scaffolding approach is trained via agentic reinforcement learning (agentic RL), where the model learns from trajectories of successful and failed multi-tool interactions, internalizing the patterns of effective scaffolding rather than memorizing static solutions.
+1. **Scaffold refinement**: Given a task and the previously used scaffold, the model proposes a refined scaffold
+2. **Solution rollout**: Given the refined scaffold and task description, the model generates a solution
+
+Reward from the rollout is propagated to **both stages** — the model is optimized not only to produce better answers but to author the orchestration that elicits them. Over training, scaffolds are "continually mutated and selected toward those that induce higher-reward trajectories," allowing per-task-category strategies to emerge automatically.
+
+### Reward Hacking Defense
+
+Allowing the model to author its own scaffold introduces reward-hacking risk (e.g., reading test files to hardcode expected artifacts). Three defense layers:
+
+1. **Fixed trust boundary**: Environment, tool surface, and test isolation are immutable — the model evolves only the inner policy scaffold (memory, error-handling, orchestration logic)
+2. **Deterministic monitor**: Flags attempts to read withheld paths, modify verification scripts, or invoke unsanctioned actions → zero reward + exclusion from advantage computation
+3. **Frozen LLM judge**: Vetoes verifier results for intent-level gaming that occurs within the allowed tool surface
+
+### Asynchronous RL (Pipeline-RL)
+
+For long rollouts, Ornith adopts **pipeline-RL** to address the off-policy problem. A staleness weight downweights tokens according to their age and drops them entirely past a threshold. The token-level GRPO loss incorporates this staleness weighting.
 
 ## Performance
 
-Ornith-1.0 achieves state-of-the-art results among comparable open-source models on a range of coding and agentic benchmarks. Key highlights:
+Ornith-1.0 achieves state-of-the-art results among open-source models of comparable size across agentic coding benchmarks ([DeepReinforce official benchmarks](https://deep-reinforce.com/ornith_1_0.html)).
 
-- **SWE-bench Verified**: Top scores among models in its size class for autonomous software engineering tasks.
-- **Agentic coding tasks**: Superior performance on multi-step tool-use scenarios involving file editing, shell execution, web browsing, and API calling.
-- **Code generation**: Competitive with leading open models on standard coding benchmarks (HumanEval, MBPP) while exceeding them in agentic settings.
+### 397B MoE — Flagship Results
 
-The 397B MoE variant approaches closed-source frontier model performance on several agentic coding evaluations.
+| Benchmark | Ornith-397B | Claude Opus 4.7 | Claude Opus 4.8 | DeepSeek-V4-Pro | Minimax-M3 |
+|---|---|---|---|---|---|
+| Terminal-Bench 2.1 | **77.5** | 70.3 | 85.0 | 64.0 | 64.0 |
+| SWE-Bench Verified | **82.4** | 80.8 | 87.6 | 80.6 | 80.5 |
+| SWE-Bench Pro | **62.2** | 64.3 | 69.2 | 55.4 | 59.0 |
+| ClawEval Avg | 77.1 | 78.2 | — | 75.8 | — |
+
+Ornith-397B matches or exceeds Claude Opus 4.7 on TB-2.1 and SWE-Bench Verified, while remaining fully open-source (MIT).
+
+### 35B & 9B — Efficiency Highlights
+
+| Benchmark | Ornith-35B | Qwen3.5-397B | Ornith-9B | Gemma4-31B |
+|---|---|---|---|---|
+| TB-2.1 | **64.2** | 53.5 | **43.1** | 42.1 |
+| SWE-Bench Verified | **75.6** | 76.4 | **69.4** | 52.0 |
+
+Notable: the 35B variant **surpasses Qwen3.5-397B** on Terminal-Bench 2.1 (64.2 vs 53.5), and the 9B variant **matches Gemma4-31B** on the same benchmark — demonstrating that self-scaffolding training yields outsized gains at smaller scales.
 
 ## Simon Willison's Hands-On Evaluation
 
@@ -97,6 +125,7 @@ Ornith inverts this relationship: it is **trained self-scaffolding** (Agentic RL
 
 ## References
 
-- [Simon Willison's blog post on Ornith-1.0](https://simonwillison.net/2026/Jun/29/ornith/) (source article)
-- DeepReinforce — Ornith-1.0 model release (Hugging Face)
+- [DeepReinforce official release — Ornith-1.0](https://deep-reinforce.com/ornith_1_0.html) (primary source, June 25 2026)
+- [Simon Willison's blog post on Ornith-1.0](https://simonwillison.net/2026/Jun/29/ornith/) (hands-on evaluation)
+- [Ornith-1.0-397B on Hugging Face](https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B)
 - Gemma 4 and Qwen 3.5 base model documentation

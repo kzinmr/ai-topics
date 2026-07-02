@@ -1,3 +1,15 @@
+## [2026-07-02] Ornith-1.0 公式リリースページ取り込み — wiki大幅更新
+
+### Changes
+- **raw/articles/deep-reinforce.com--ornith-1-0--official-release.md** — New: DeepReinforce公式リリースページ保存
+- **concepts/ornith-self-scaffolding-llm.md** — Updated: Self-Improving Training Framework（2段階RLループ、Reward Hacking Defense 3層防御、Pipeline-RL）、詳細ベンチマーク数値（397B/35B/9B）、References拡充
+- **comparisons/self-scaffolding-approaches.md** — Updated: Ornith欄をself-improving training frameworkの詳細に更新
+
+### Sources
+- https://deep-reinforce.com/ornith_1_0.html
+
+---
+
 ## [2026-07-02] Self-Scaffolding Approaches — RLM / Dynamic Workflows / Ornith 比較ページ作成
 
 ### Changes

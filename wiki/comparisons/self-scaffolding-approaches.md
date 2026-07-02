@@ -80,22 +80,20 @@ const verified = await spawnAgent({
 
 ### Ornith Self-Scaffolding: Trained Scaffolding Patterns
 
-The model has internalized scaffolding patterns via Agentic RL training on trajectories of successful/failed multi-tool interactions. It generates executable Python code for tool-use loops, error recovery, and state management without external orchestration frameworks.
+The model has internalized scaffolding patterns via a **self-improving training framework** where the scaffold co-evolves with the policy. Each RL step has two stages: (1) given task + previous scaffold → propose refined scaffold, (2) given refined scaffold + task → generate solution rollout. Reward propagates to both stages, so the model learns not just to solve tasks but to author the orchestration that elicits solutions.
+
+A 3-layer reward hacking defense prevents the model from gaming its own verifier: fixed trust boundary (environment immutable), deterministic monitor (zero reward for boundary violations), and frozen LLM judge (vetoes intent-level gaming).
 
 ```python
-# Ornith-generated pattern (conceptual)
-def solve_task(task):
-    plan = generate_plan(task)
-    for step in plan:
-        try:
-            result = execute_tool(step)
-        except ToolError as e:
-            plan = regenerate_plan(task, error=e)  # Self-correction
-            continue
-    return synthesize(results)
+# Ornith's self-improving loop (conceptual)
+for step in training:
+    refined_scaffold = model.propose_scaffold(task, prev_scaffold)  # Stage 1
+    solution = model.generate_rollout(task, refined_scaffold)       # Stage 2
+    reward = evaluate(solution)
+    update_both_stages(reward)  # Scaffold and policy co-evolve
 ```
 
-**Key insight**: Scaffolding knowledge is baked into weights, not generated from scratch each time — the model "knows" how to scaffold without needing to reason about it from first principles.
+**Key insight**: Scaffolding knowledge is baked into weights via co-evolution — the model doesn't just learn to scaffold, it learns to *improve its own scaffolding* iteratively.
 
 ## Multi-Dimensional Comparison
 
@@ -103,8 +101,8 @@ def solve_task(task):
 
 | Dimension | RLM | Dynamic Workflows | Ornith |
 |---|---|---|---|
-| **Training for the pattern** | RLM-Qwen3-8B post-trained; v3 paper shows depth scaling benefits | No DW-specific model training announced | Agentic RL on multi-tool trajectories |
-| **Adaptation mechanism** | Model learns recursive decomposition via training | Model leverages general reasoning (Opus 4.8) to generate harnesses | Model internalizes scaffolding patterns from RL reward signals |
+| **Training for the pattern** | RLM-Qwen3-8B post-trained; v3 paper shows depth scaling benefits | No DW-specific model training announced | **Self-improving RL** (scaffold-policy co-evolution) |
+| **Adaptation mechanism** | Model learns recursive decomposition via training | Model leverages general reasoning (Opus 4.8) to generate harnesses | Scaffold and policy jointly optimized via reward propagation |
 | **Generality** | Task-agnostic (any long-context problem) | Task-agnostic (any complex multi-agent task) | Coding-focused (tool-use, file editing, API calling) |
 
 ### Architecture & Execution
