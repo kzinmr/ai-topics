@@ -956,3 +956,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **entities/cognition** — Added Devin Fusion section
 - **concepts/sakana-fugu** — Added cross-reference to multi-model-synthesis-strategies
 - **wiki/index.md** — Added multi-model-synthesis-strategies entry
+
+## 2026-07-02
+- 2026-07-02: Ingested Geoffrey Litt's mega thread 'Understanding the Code Our Agents Write' (36-part X thread) to raw/articles/2026-07-02-geoffreylitt-understanding-code-agents-write.md
