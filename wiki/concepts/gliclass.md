@@ -2,7 +2,7 @@
 title: "GLiClass"
 type: concept
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-07-02
 tags:
   - optimization
   - open-source
@@ -203,6 +203,7 @@ Evaluations in the GLiNER2 (July 2025 paper) also show GLiClass demonstrating co
 - **Install**: `pip install gliclass`
 
 ## Related Concepts
+- [[concepts/gliner-model-family]] — GLiNER/GLiNER2/GLiGuard/GLiNER2-PII; GLiClassはGLiNERアーキテクチャの分類特化派生
 - [[concepts/rag-retrieval-augmented-generation]]
 - [[entities/gm8xx8]] — Curator
-- [[concepts/named-entity-recognition]] — Relationship with GLiNER
+- [[entities/knowledgator]] — GLiClass開発元
