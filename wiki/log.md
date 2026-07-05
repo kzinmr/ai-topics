@@ -1,3 +1,19 @@
+## [2026-07-05] health | Wiki health digest & index repair
+
+### Changes
+- Verified index.md structural integrity: 0 corruption issues ✅
+- Added 20 high-priority orphan entity pages to index.md (aaron-levie, adam-mastroianni, alec-radford, andrej-karpathy, chip-huyen, dan-shipper, demis-hassabis, eliezer-yudkowsky, ethan-mollick, fei-fei-li, garry-tan, geoffrey-hinton, gwern, ilya-sutskever, jeff-geerling, jensen-huang, john-carmack, marc-andreessen, sam-altman, satya-nadella)
+- Index: 265 lines, 87 entities, 132 concepts (0 corruption)
+- 2594 orphan pages remain — auto-apply limit (20) reached
+
+### Stats
+- 2753 L2 pages total (849 entities, 1871 concepts, 33 comparisons)
+- 7777 raw articles, 4655 unprocessed (59.8% coverage gap)
+- 2075 stale pages (>30 days since update)
+- 0 skeleton entities, 0 ghost entries
+
+---
+
 
 ## 2026-07-05 — Raw backlog ingest (5 articles)
 
