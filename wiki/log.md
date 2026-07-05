@@ -1,3 +1,17 @@
+## [2026-07-05] skeleton-enrich | Restored microsoft.md corruption, enriched 5+ entity pages
+
+### Changes
+- **Restored** [[entities/microsoft]] — Company page restored from git history (was overwritten with Microsoft AI Team content); added MAI internal models section
+- **Enriched** [[entities/microsoft-ai-team]] — Fixed YAML corruption; expanded with detailed profile of Microsoft's internal AI research division
+- **Redirected** [[entities/microsoft-ai]] — Converted to redirect to microsoft-ai-team (was duplicate)
+- **Enriched** [[entities/david-duvenaud]] — Added academic background (UofT/Vector Institute), expanded Talkie section, added sources
+- **Enriched** [[entities/periodic-ai]] — Added William Fedus leadership info, AI Scientist vision, physical AI/robotics, infrastructure
+- **Created** [[entities/william-fedus]] — New entity page for Periodic Labs CEO, former VP Research at OpenAI
+- **Enriched** [[entities/jacob-xiaochen-li]] — Added research focus section, three-paradigm breakdown, MIT CSAIL affiliation detail
+- **Enriched** [[entities/aakash-gupta]] — Expanded agent safety section, added Separation of Duties detail
+- **Enriched** [[entities/akash-gupta]] — Expanded with structural safeguards detail, cross-reference to aakash-gupta
+- **Index** — Updated 7 new entity entries, fixed microsoft description
+
 ## [2026-07-05] dreaming | Knowledge consolidation — 2 takes, 5 references
 
 ### Changes

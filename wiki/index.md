@@ -5,6 +5,7 @@
 ## Entities (Updated)
 
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
+- [[entities/akash-gupta]] — Akash Gupta — AI safety researcher; separation of duties for agent architectures
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
@@ -30,6 +31,7 @@
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24)
 - [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
+- [[entities/david-duvenaud]] — David Duvenaud — University of Toronto professor; co-creator of Talkie historical LLM, neural architecture search
 - [[entities/dean-ball]] — Dean W. Ball; enriched with "What Should Be Done" — analysis of EO on Cyber and AI as de facto licensing regime, IVO proposal for frontier model governance, Obernolte-Trahan Great American AI Act endorsement (June 27)
 - [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)
 - [[entities/demis-hassabis]] — Demis Hassabis — Co-founder and CEO of Google DeepMind; Nobel Prize in Chemistry 2024 (AlphaFold)
@@ -55,11 +57,13 @@
 - [[entities/hp-inc]] — HP Inc. — Hardware company; launched Frontier strategic partnership with OpenAI (June 2026) to deploy AI across customer experiences, software development, and enterprise operations (June 30)
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
 - [[entities/ilya-sutskever]] — Ilya Sutskever — Co-founder and former Chief Scientist of OpenAI; key architect of GPT series; Safe Superintelligence Inc.
+- [[entities/jacob-xiaochen-li]] — Jacob Xiaochen Li — MIT CSAIL researcher; Machine Studying framework, StudyBench benchmark
 - [[entities/jeff-geerling]] — Jeff Geerling — Author and Raspberry Pi expert; writes on self-hosting, edge AI, local LLMs
 - [[entities/jensen-huang]] — Jensen Huang — CEO and co-founder of NVIDIA; driving force behind GPU computing and AI hardware infrastructure
 - [[entities/jo-bergum]] — Jo Bergum — CEO/Co-founder of Hornet (vector search); ex-Vespa engineer; organizing 'Retrieval for Agents' event at AI Engineer World's Fair (June 27)
 - [[entities/john-carmack]] — John Carmack — Legendary game developer (id Software, Doom, Quake); AGI researcher at Keen Technologies
 - [[entities/k-eric-drexler]] — K. Eric Drexler — molecular nanotechnology pioneer, FHI researcher; CAIS (Comprehensive AI Services) framework reframing superintelligence; AI/ML safety and existential risk (July 5)
+- [[entities/kyle-corbett]] — Kyle Corbett — Researcher/engineer at OpenPipe; agentic workflows, MCP, RL for agents
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
 - [[entities/liquid-ai-lfm2-5-retrievers]] — LFM2.5 Retrievers — 350M-param multilingual retrieval models (ColBERT + Embedding); bidirectional LFM architecture; 11 languages; best-in-class NanoBEIR/MKQA-11; GGUF for llama.cpp edge deployment (June 29)
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Netscape, venture capitalist at a16z; influential voice on AI accelerationism
@@ -68,7 +72,8 @@
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
 - [[entities/matei-zaharia]] — Matei Zaharia — CTO of Databricks (pre-$175B), co-creator of Apache Spark/MLflow, creator of Omnigent open-source meta-harness; new entity page (June 25)
 - [[entities/meituan-longcat]] — Meituan LongCat 2.0 / Owl Alpha — 1.6T/48B MoE model, 1M context, trained on 50k domestic Chinese accelerators; first near-frontier model on fully domestic hardware (June 30)
-- [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
+- [[entities/microsoft]] — Microsoft — Global technology corporation; Azure, Copilot, OpenAI partnership, MAI internal AI models
+- [[entities/microsoft-ai-team]] — Microsoft AI Team (MAI) — Internal AI research division; MAI-Thinking-1, hill-climbing ML
 - [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
 - [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
@@ -76,6 +81,7 @@
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
 - [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
 - [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
+- [[entities/periodic-ai]] — Periodic AI (Periodic Labs) — RL research company led by William Fedus (ex-OpenAI); AI Scientist
 - [[entities/peter-steinberger]] — Peter Steinberger — Creator of PSPDFKit; iOS developer tools expert; exploring MCP and AI developer tooling (June 27)
 - [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
 - [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
@@ -89,6 +95,7 @@
 - [[entities/vercel-sandbox]] — Vercel Sandbox — Self-hosted sandbox environment for Claude Managed Agents; TypeScript-native two-plane architecture with firewall-level credential brokering
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
 - [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
+- [[entities/william-fedus]] — William Fedus — CEO of Periodic Labs; former VP of Research at OpenAI, post-training for ChatGPT
 ## Concepts (Updated)
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
