@@ -239,3 +239,6 @@
 ## Events
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)
 - [[events/2026-06-27-openai-gpt-5-6-sol]] — OpenAI GPT-5.6 Sol Restricted Preview — first U.S. government-mediated frontier model release; limited to ~20 trusted partners at government request (June 27)
+
+## Queries
+- [[queries/wiki-graph-analysis-weekly-2026-07-05]] — Weekly Wiki Graph Analysis — systematic analysis of orphan pages, broken wikilinks, duplicates, index gaps, oversized pages, and tag violations across all 2,205 wiki pages

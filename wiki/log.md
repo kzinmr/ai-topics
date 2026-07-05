@@ -1073,3 +1073,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 ## 2026-07-02
 - 2026-07-02: Ingested Geoffrey Litt's mega thread 'Understanding the Code Our Agents Write' (36-part X thread) to raw/articles/2026-07-02-geoffreylitt-understanding-code-agents-write.md
+
+## 2026-07-05
+
+- **wiki-graph-analysis** — Full weekly wiki graph analysis run: 2,205 pages scanned. Report saved to wiki/queries/wiki-graph-analysis-weekly-2026-07-05.md. Added Queries section to index.md.
