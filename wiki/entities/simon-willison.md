@@ -5,7 +5,7 @@ aliases: [simonw]
 created: 2025-01-01
 updated: 2026-07-05
 status: L3
-- raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md]
+  sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
 ---
 
@@ -513,3 +513,11 @@ Source: [[raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d
 **Better Models: Worse Tools — Quote Post** (July 4, 2026): Simon quoted [[entities/armin-ronacher]]'s analysis of Claude Opus 4.8/Sonnet 5 tool schema regression on Pi. Emphasizes Anthropic's RL training optimized for Claude Code's forgiving harness, raising questions about capability portability across harness architectures.
 
 Source: [[raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md]]
+
+**Fable's Judgement — Subagent Delegation for Cost Optimization (July 3, 2026)**: Simon learned from Cat Wu and Thariq Shihipar (Claude Code team) to let Fable use its own judgement on model selection. He prompted Claude Code: "For all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent." Claude Code saved a memory file `delegate-coding-to-subagents.md`. This implements model routing — using Sonnet for substantive implementation, Haiku for trivial edits — while keeping Fable for review/judgment. Cost optimization before price changes.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md]]
+
+**llm-coding-agent 0.1a0 — Fable 5 Coding Agent Experiment (July 2, 2026)**: Simon built a coding agent on his LLM library using Fable 5. Uses Red/Green TDD methodology. Shipped as `uvx --prerelease=allow --with llm-coding-agent llm code`. Tools: CodingTools_edit_file, CodingTools_execute_command. Python API: `CodingAgent(model="gpt-5.5", root="/path", approve=True).run(...)`. Includes a `--yolo` mode and allow-listing pattern.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]]

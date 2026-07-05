@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-05-11
+updated: 2026-07-05
 tags:
   - company
   - model
@@ -119,6 +119,21 @@ Meta pioneered open-source frontier models with the LLaMA series, creating the e
 
 See also: [[concepts/open-source-vs-closed]]
 
+## 2026 Updates: Engineering Culture Collapse
+
+In mid-2026, Meta's engineering culture suffered a dramatic collapse documented by Gergely Orosz in the *Pragmatic Engineer* newsletter article *"[Why is Meta destroying its engineering organization?](https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering)"* (July 2026).
+
+Key observations from the article:
+
+- **Leadership shift**: Meta leadership began treating software engineering as a **cost center** rather than a profit center, reversing decades of engineering-first culture
+- **Zuckerberg's 'AI psychosis'**: A top-down mandate forcing rapid AI adoption while simultaneously dismantling the engineering organization that built the company's core products
+- **'Move fast and break things' replaced**: Meta's historic engineering ethos was supplanted by an **AI-first mandate** that prioritized AI tool adoption over human engineering judgment
+- **Engineers treated as disposable**: The rapid pivot to AI agents (see [[concepts/agent-transformation-accelerator]]) coincided with significant headcount reductions and cultural devaluation of software engineering roles — a case study in [[concepts/ai-labor-displacement]]
+- **Worst outage in company history**: A major service disruption occurred during the chaotic transition period, attributed to self-inflicted wounds from the rushed AI pivot
+- **Self-inflicted damage**: The article argues Meta's engineering crisis resulted not from external competition but from internal leadership decisions prioritizing AI investment over engineering excellence
+
+This development represents a significant reversal from Meta's historical position as one of the world's premier engineering organizations and has broader implications for the tech industry's approach to [[concepts/ai-labor-displacement]].
+
 ## Key People
 
 - **[[concepts/mark-zuckerberg]]** — CEO, Personal Superintelligence vision
@@ -150,6 +165,7 @@ See also: [[concepts/open-source-vs-closed]]
 - [Meta Positions AI Glasses and Personal Agents at Center of Growth (AI Insider, Jan 2026)](https://theaiinsider.tech/2026/01/29/meta-positions-ai-glasses-and-personal-agents-at-the-center-of-its-next-growth-phase/)
 - [VisionClaw: Turning Ray-Ban Meta Glasses into an Autonomous Super-Agent (Elluminate Me, Feb 2026)](https://elluminateme.com/artificial-intelligence/visionclaw/)
 -  (Ben's Bites, 2026-04-09)
+- [Why is Meta destroying its engineering organization? (Pragmatic Engineer, July 2026)](https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering)
 
 ## References
 

@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-07-05T18:24:09.588052+00:00",
+  "triage_run_id": "20260705T180008Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming triage 2026-07-05: パイプライン飽和シナリオ（176 raw articles, 0 pipeline articles）。本日のdaily pipelineが4つの新規concept pageを作成済み（better-models-worse-tools, short-leash-ai-coding, senior-swe-bench, pxpipe）。前回triage（07/04）の未消費takes 2件（Safari MCP Server作成、CurrentAI大幅更新）を引き継ぎ。references 5件（Fable subagent delegation, Claude Electron批判, Fable 5 usage limits, Meta技術文化崩壊, Simon llm-coding-agent）。skips 5件（非AI記事13件、既処理バッチ）。Takes=2, Refs=5, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-pipeline-saturation",
+      "source": "dreaming",
+      "source_name": "mixed",
+      "title": "[Batch] Articles already processed by daily pipelines (07/05)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 本日(07/05)のblog-wiki-ingest/raw-backlog-ingestで処理済み: Better Models Worse Tools (Armin Ronacher, concepts/better-models-worse-tools.md作成), Short Leash AI Coding (okTurtles, concepts/short-leash-ai-coding.md作成), Senior SWE-Bench (Snorkel, concepts/ai-benchmarks/senior-swe-bench.md作成), pxpipe cost reduction (teamchong, concepts/pxpipe-code-to-image-cost-reduction.md作成), Simon sqlite-utils Fable (entities/simon-willison.md更新済み)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Articles processed by daily pipelines on 2026-07-05 — Better Models Worse Tools, Short Leash AI Coding, Senior SWE-Bench, pxpipe, sqlite-utils Fable. All wiki pages created or updated."
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "mixed",
+      "title": "[Batch] Non-AI content from Jul 3-5",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事バッチ: 1D/2Dバーコード(shkspr.mobi), カレンダーアプリ(flexibits), 読書リスト(construction-physics), 技術ブログ(purplesyringa), パッケージ管理(nesbitt.io), Electron 2018年記事(daringfireball.net), 500バイト世界地図(simonwillison), Kindle DRM(pixelmelt), ヴィンテージコンピューティング(dfarq), ロッドロジック(pluralistic), デジタルロック(pixelmelt), Maxis社史(filfre), Guix脆弱性(LWN)。wikiスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Non-AI articles covering barcodes, calendars, reading lists, package management, vintage computing, DRM, rod logic, game history, Guix vulnerabilities — outside wiki scope."
+    },
+    {
+      "item_id": "dreaming-skip-already-processed-batch",
+      "source": "dreaming",
+      "source_name": "mixed",
+      "title": "[Batch] Already covered by prior dreaming triage (07/03) and pipelines",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 前回dreaming triage（20260703T180039Z）とdaily pipelineで処理済み: Hebbia Disclosure, Factory Droid Shield 2.0, ElevenLabs chatbot voice, Sierra Ghostwriter, WheresYouEd AI Industry, Anthropic Fable 5 redeployment, Pinecone Nexus, Glean Independent Agents, Harvey Sonnet 5。全て既にwikiに反映。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Previously triaged from 07/03 dreaming run and daily pipelines — Hebbia, Factory, ElevenLabs, Sierra, WheresYouEd, Anthropic, Pinecone, Glean, Harvey."
+    }
+  ]
+}

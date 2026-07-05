@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-07-01
+updated: 2026-07-05
 tags:
   - model
   - claude-fable-5
@@ -350,13 +350,67 @@ Claude Fable 5 generated extraordinary engagement on Hacker News, with multiple 
 
 The combined ~4,800+ points across these threads reflects the release's significance and the depth of community concern about Anthropic's safety implementation choices.
 
-## Export Controls Lift (June 30, 2026)
+## Redeployment: Fable 5 Returns (June 30 – July 5, 2026)
 
-On June 30, 2026, Anthropic announced via a brief statement that the US Department of Commerce had lifted export controls on Claude Fable 5 and Mythos 5. Access was restored starting July 1. The export controls had been imposed around June 12-13, 2026 as part of the US government's export control directive (the 'Fable 5/Mythos 5' suspension). The lift was first reported by Simon Willison in a quote post of Anthropic's official statement.
+On June 30, 2026, Anthropic announced that the US Department of Commerce had lifted export controls on Claude Fable 5 and Mythos 5. The company followed with a detailed redeployment post, *"Redeploying Claude Fable 5"*, outlining the restoration plan, revised safety measures, and ongoing policy coordination.
 
-Source: raw/articles/simonwillison.net--2026-jun-30-anthropic--7acc1e0a.md and the Anthropic official statement.
+### Lift and Redeployment Timeline
 
-Note: This lift followed ~18 days of suspended access. The impact of the export controls on user experience and model availability during that period is documented in the body of the page.
+On June 30, 2026, the US Department of Commerce lifted export controls on Claude Fable 5 and Mythos 5. The export controls had been imposed around June 12-13, 2026 as part of the US government's export control directive (the 'Fable 5/Mythos 5' suspension). The lift was first reported by Simon Willison in a quote post of Anthropic's official statement.
+
+**Fable 5** was restored beginning July 1, 2026, available globally via:
+
+- **Claude Platform** (API)
+- **Claude.ai** (web chat)
+- **Claude Code** (developer CLI tool)
+- **Claude Cowork** (collaborative workspace)
+
+**Usage allocation (Pro / Max / Team / Enterprise plans):** Up to **50% of weekly usage limits** through **July 7, 2026** — a deliberate ramp designed to ensure safety systems could handle the load and to monitor for novel attack patterns. After July 7, Fable 5 became available via standard usage credits.
+
+**Cloud partner re-enablement:** Access through **AWS (Amazon Bedrock)**, **Google Cloud (Vertex AI)**, and **Microsoft Foundry** was being restored "as quickly as possible," though not immediately available on July 1.
+
+### Mythos 5 Restoration
+
+**Mythos 5** was restored for **US organizations only** following separate government approval on **June 26, 2026** — four days before the general Fable 5 lift. This reinstated access for Glasswing partners (cybersecurity defenders and authorized biology researchers) who rely on the unrestricted Mythos-class model.
+
+Anthropic noted ongoing coordination for **Glasswing program expansion**, indicating that additional organizations and use cases would be onboarded over time.
+
+### New Safety Classifier
+
+A key change accompanying redeployment was a **new safety classifier** specifically addressing the bypass technique reported by Amazon during the shutdown period. This classifier:
+
+- Blocks the Amazon-reported bypass technique in **over 99% of cases**
+- Was tested by **CAISI (Center for AI Standards and Innovation)** against both the prior safeguards and the new classifier — CAISI agreed the safeguards are **"extraordinarily strong"**
+- Was implemented in addition to the existing defense-in-depth safety stack (cyber/bio/distillation classifiers, 30-day data retention monitoring, verified alignment)
+
+**Trade-off:** Anthropic acknowledged that the new classifier introduces **more false positives for benign requests** during routine coding and debugging. Users may encounter increased rate-limiter-style blocks on legitimate developer workflows, particularly those involving code analysis, vulnerability scanning, or software repair. The company committed to continued refinement to reduce false positive rates over time.
+
+### Industry-Shared Jailbreak Severity Framework
+
+In conjunction with redeployment, Anthropic proposed an **industry shared framework for jailbreak severity standards** — a collaborative effort with **Amazon, Microsoft, Google, and other Glasswing partners**. The goal is to establish a common vocabulary and threshold for what constitutes a "concerning" vs. "acceptable" jailbreak, preventing future unilateral government interventions based on narrow vulnerabilities.
+
+### Deeper Government Collaboration
+
+Anthropic used the redeployment to call for — and commit to — deeper government collaboration across three dimensions:
+
+1. **Pre-release testing:** Formalized security review windows with US and allied governments before future model launches
+2. **Information sharing:** Structured, ongoing sharing of jailbreak discoveries, safeguard performance data, and threat intelligence between labs and government agencies
+3. **Research collaboration:** Joint safety research programs, building on CAISI's evaluation methodology
+
+This represents a significant shift from the adversarial relationship that characterized the June 12 shutdown, moving toward a more structured oversight model.
+
+### Significance
+
+The Fable 5 redeployment marks the end of an ~18-day global suspension — the first government-mandated recall of a deployed frontier AI model. The outcome established several precedents:
+
+- **Government intervention is possible but time-limited** — the export control mechanism worked as a temporary brake, not a permanent block
+- **Safety improvements can be mandated** — Anthropic deployed a new classifier specifically to address the identified vulnerability
+- **Industry coordination on jailbreak standards** has moved from abstract discussion to concrete proposal
+- **The Mythos/Fable distinction survived** — Mythos 5's earlier restoration for US Glasswing partners signals continued government comfort with the trusted-access model
+
+The redeployment also highlighted the tension between safety-driven false-positive costs and developer productivity — a trade-off that Anthropic acknowledged will require ongoing attention.
+
+Source: raw/articles/simonwillison.net--2026-jun-30-anthropic--7acc1e0a.md and the Anthropic official statement (https://www.anthropic.com/news/redeploying-fable-5).
 
 ## Related
 

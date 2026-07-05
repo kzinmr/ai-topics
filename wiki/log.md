@@ -1,3 +1,20 @@
+## [2026-07-05] dreaming | Knowledge consolidation — 2 takes, 5 references
+
+### Changes
+- Created [[concepts/safari-mcp-server]] — Apple's first MCP server for Safari Technology Preview 247; 17 browser automation tools (July 5)
+- Enriched [[concepts/currentai]] — stub → full page: Open Source AI Gap Map (421 products, 14 categories, 228 orgs) (July 5)
+- Enriched [[entities/simon-willison.md]] — Fable's judgement (subagent delegation pattern) + llm-coding-agent 0.1a0 (Fable 5 experiment) (July 2-3)
+- Enriched [[entities/daringfireball-net.md]] — Gruber's Claude Electron Mac app critique + Drew Breunig analysis (July 3)
+- Enriched [[entities/meta.md]] — New section: 2026 Engineering Culture Collapse (Pragmatic Engineer, July 2026)
+- Enriched [[concepts/claude/fable-5.md]] — Redeployment details: usage limits, new safety classifier, CAISI validation, industry framework (June 30)
+- Updated wiki/index.md — added Safari MCP Server + CurrentAI entries
+- Source articles: webkit.org, simonwillison.net (x2), daringfireball.net, anthropic.com, pragmaticengineer.com
+
+### Stats
+- Pages created: 1 (concepts/safari-mcp-server)
+- Pages enriched: 5 (currentai, simon-willison, daringfireball-net, meta, fable-5)
+- Total index entries: concepts +2
+
 ## [2026-07-05] health | Wiki health digest & index repair
 
 ### Changes

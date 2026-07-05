@@ -2,7 +2,7 @@
 title: "John Gruber"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-05
+updated: 2026-07-05
 type: entity
 ---
 
@@ -45,6 +45,7 @@ Gruber occupies a unique position in tech media: he is a genuine Apple enthusias
 | 2025 | Covers Apple's decision to pull Advanced Data Protection from the UK rather than build a backdoor; calls the UK government's actions "tyrannical authoritarian" |
 | 2026 | Publishes 2025 Apple Report Card: gives Apple an **F** on World Impact (down from B) and **D** on macOS 26 Tahoe ("the worst regression in the entire history of MacOS") |
 | 2026 | Continues to refuse to install macOS 26 Tahoe on his primary machines due to UI design regressions |
+| 2026-07-03 | Publishes "Claude's Criminally Bad Electron Mac App Is an Inside Job" — critiques [[entities/anthropic.md|Anthropic]] for shipping a [[concepts/claude.md|Claude]] desktop app built on Electron while ChatGPT has a native Mac app; asks why Anthropic doesn't use Claude Code itself to build a native app; quotes Drew Breunig's argument that agent-driven development should make Electron obsolete |
 
 ## Core Ideas
 
@@ -168,3 +169,4 @@ Daring Fireball has operated as an independent publication for over two decades.
 - daringfireball.net--2026-05-ai-is-technology-not-a-product--d7845d6d
 - daringfireball.net--feeds-sponsors--a706ab2f
 - theverge.com--ai-artificial-intelligence-942242-microsoft-build-ai-agents---018557f0
+- daringfireball.net--2026-07-claude-criminally-bad-electron-mac-app--e3f9c1a2

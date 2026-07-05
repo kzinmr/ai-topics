@@ -158,6 +158,7 @@
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
 - [[concepts/continual-learning]] — Continual Learning; enriched with Advanced Frameworks (Dwarkesh Patel) — RLVR generalization limits, OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision (June 27)
 - [[concepts/cpu-inference-llm]] — CPU Inference for LLMs — Running LLMs on consumer/edge CPUs via quantization (llama.cpp, ZSE, Ollama); cost efficiency and privacy trade-offs vs GPU/cloud
+- [[concepts/currentai]] — CurrentAI — Open Source AI Gap Map: 421 products (266 software, 85 models, 50 datasets, 20 hardware) across 14 categories from 228 orgs; MIT license YAML on GitHub (July 5)
 - [[concepts/cve-2026-55607-claude-code-sandbox-escape]] — CVE-2026-55607 — Claude Code sandbox escape via .git worktree naming, symlink manipulation, and git fsmonitor execution rewrites; disclosed by @stretchcloud (June 26, 2026)
 - [[concepts/deep-research]] — Deep Research — Autonomous multi-step research agents that synthesize findings from web search and document analysis
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)
@@ -204,7 +205,8 @@
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/rag-systems]] — RAG Systems — Retrieval-Augmented Generation architectures, from naive RAG to advanced agentic retrieval patterns
 - [[concepts/sakana-fugu]] — Sakana Fugu; added Fugu Ultra benchmark numbers (73.7 SWE-bench Pro, 82.1 TerminalBench 2.1, Fable-class) (June 24)
-- [[concepts/sandbox]] — Sandbox (Agent Sandboxing) — Isolated execution environments for running untrusted AI agent code in production
+- [[concepts/safari-mcp-server]] — Safari MCP Server — Apple's first MCP implementation in Safari Technology Preview 247; 17 tools for DOM, network, screenshot, console access (July 5)
+- [[concepts/sandbox]]
 - [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
 - [[concepts/self-harness]] — Self-Harness — LLM-based agent that iteratively improves its own operating harness (Shanghai AI Lab, arXiv:2606.09498)
 - [[entities/show-us-your-agent-skills]] — Show Us Your Agent Skills — YouTube series (Vanishing Gradients × PyMC Labs) documenting real agent workflows from 22 builders; 51 skills, 79 workflows (June 27)
