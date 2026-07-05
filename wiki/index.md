@@ -111,6 +111,7 @@
 - [[concepts/ai-benchmarks/parallelkernelbench]] — ParallelKernelBench (PKB); multi-GPU kernel generation benchmark with 87 problems from real codebases, GPT-5.5 tops at 31% fast@3 (June 24)
 - [[concepts/ai-benchmarks/re-bench]] — RE-Bench: AI R&D evaluation by METR, tests ML research capability (2024🆕)
 - [[concepts/ai-benchmarks/rewardbench]] — RewardBench: reward model evaluation (Allen AI, 2024🆕)
+- [[concepts/ai-benchmarks/senior-swe-bench]] — Senior SWE-Bench — Snorkel AI benchmark evaluating coding agents at senior engineer level; taste scoring, runtime investigation, under-specified tasks; Claude Opus 4.8 leads at 24.0% tasteful solve rate (July 5)
 - [[concepts/ai-benchmarks/terminal-bench]] — Terminal-Bench: CLI agent tasks, Docker + programmatic verification (Stanford/Harbor, 2025🆕)
 - [[concepts/ai-benchmarks/webarena]] — WebArena: realistic web environment, 812 tasks, 4 sandboxed websites (CMU, 2023🆕)
 - [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
@@ -121,6 +122,7 @@
 - [[concepts/apertus-sovereign-ai-model]] — Apertus — Open foundation model for sovereign AI (8B/70B), EU AI Act compliant, multilingual (1000+ languages), fully open training pipeline (June 23)
 - [[concepts/aws-lambda-microvms]] — AWS Lambda MicroVMs — Firecracker-based serverless sandbox primitive for isolated, stateful execution of untrusted/AI-generated code; snapshot-based near-instant launch, 8hr max runtime, 16vCPU/32GB (June 22🆕)
 - [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
+- [[concepts/better-models-worse-tools]] — Better Models: Worse Tools — Armin Ronacher's analysis of tool-calling regression in newer Claude models; Anthropic post-training bias toward Claude Code's flat schemas causes hallucinated fields in nested tool calls (July 5)
 - [[concepts/brain2qwerty]] — Brain2Qwerty v2 — Meta's non-invasive EEG-based brain-to-text decoder; ~61% accuracy; Auto Research coding-agent workflow improved word error rate (June 30)
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) is a model proposed by K. Eric Drexler that reframes superintelligence as a class of service-providing products.
 - [[concepts/chain-of-thought]] — Chain-of-Thought Reasoning — Step-by-step reasoning technique that improves LLM performance on complex tasks
@@ -178,6 +180,7 @@
 - [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
 - [[concepts/prompt-injection]] — Prompt Injection — AI security vulnerability where untrusted input manipulates model behavior by exploiting role confusion and tokenization boundaries (June 23)
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt; enriched with Drew Breunig's "The Problem is Prompt Debt" framework — three-stage spiral, fighting the weights, Goedecke vs Breunig comparison, prevention via DSPy/GEPA (June 23)
+- [[concepts/pxpipe-code-to-image-cost-reduction]] — pxpipe Code-to-Image Cost Reduction — Local proxy that reduces Claude API costs 59-70% by converting text context to PNG images exploiting vision vs text token pricing asymmetry (July 5)
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/rag-systems]] — RAG Systems — Retrieval-Augmented Generation architectures, from naive RAG to advanced agentic retrieval patterns
 - [[concepts/sakana-fugu]] — Sakana Fugu; added Fugu Ultra benchmark numbers (73.7 SWE-bench Pro, 82.1 TerminalBench 2.1, Fable-class) (June 24)
@@ -185,7 +188,9 @@
 - [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
 - [[concepts/self-harness]] — Self-Harness — LLM-based agent that iteratively improves its own operating harness (Shanghai AI Lab, arXiv:2606.09498)
 - [[concepts/show-us-your-agent-skills]] — Show Us Your Agent Skills — YouTube series (Vanishing Gradients × PyMC Labs) documenting real agent workflows from 22 builders; 51 skills, 79 workflows (June 27)
+- [[concepts/short-leash-ai-coding]] — Short Leash AI Coding — 12-principle methodology for tight human-in-the-loop AI-assisted coding; contrasts with unsupervised vibe engineering; AI disclosure and self-review protocols (July 5)
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
+- [[concepts/single-transformer-layer-rl]] — Single Transformer Layer RL — Finding that training only 1-2 middle transformer layers matches full-parameter RL post-training across 7 models and 3 algorithms (arXiv 2607.01232, July 5)
 - [[concepts/snowflake-arctic-rl]] — Snowflake Arctic RL — Open-source RL framework (VeRL+SkyRL); ZoRRo 6x actor-update acceleration; 36h Text2SQL training on 32 H200s; beats Gemini 3.1 Pro (June 30)
 - [[concepts/speculative-decoding]] — Speculative Decoding — Accelerating LLM inference by using draft models to predict multiple tokens per forward pass
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.

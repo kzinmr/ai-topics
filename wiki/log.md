@@ -4,6 +4,18 @@
   - `entities/armin-ronacher.md` — Added "Better Models: Worse Tools — Tool Schema Regression" section: Claude Opus 4.8/Sonnet 5 invented tool keys in Pi's edit tool, RL training artifact hypothesis (harness-optimized for Claude Code's forgiving tool shape), strict mode fix, Codex non-regression comparison. Updated `updated` date, sources, and URLs.
   - `entities/simon-willison.md` — Added "July 2026 Updates" section: sqlite-utils 4.0rc2 Fable-driven release ($149.25, cross-model GPT-5.5 review, data-loss `delete_where()` bug discovery); "Better Models: Worse Tools" quote post reference. Updated `updated` date and sources.
 
+- **Pipeline**: active-crawl — 5 new concept pages from trending HN/X sources (July 5)
+  - `concepts/better-models-worse-tools.md` — Armin Ronacher on tool-calling regression in newer Claude models (HN 181 pts)
+  - `concepts/ai-benchmarks/senior-swe-bench.md` — Snorkel AI benchmark for senior-level coding agents, 24.0% top solve rate (HN 182 pts)
+  - `concepts/pxpipe-code-to-image-cost-reduction.md` — Vision-based API cost reduction: 59-70% savings via text-to-image conversion (HN 302 pts)
+  - `concepts/short-leash-ai-coding.md` — 12-principle human-in-the-loop AI coding methodology (HN 194 pts)
+  - `concepts/single-transformer-layer-rl.md` — arXiv 2607.01232: single-layer RL matches full-parameter training (HN 150 pts)
+  - `wiki/raw/papers/2026-07-02_2607.01232_single-transformer-layer-rl.md` — new paper
+  - `wiki/raw/articles/2026-07-02_snorkel_senior-swe-bench.md` — new article
+  - `wiki/raw/articles/2026-07-02_okturtles_short-leash-ai-coding.md` — new article
+  - `wiki/raw/articles/2026-07-03_teamchong_pxpipe-code-to-image-cost-reduction.md` — new article
+  - `wiki/SCHEMA.md` — added tags: `regression` (Engineering), `pi` (Products)
+
 - **Pipeline**: blog-wiki-ingest (recovered from blog-triage checkpoint after JSON parse failure)
 - **Triage decisions processed**: 2 takes, 1 reference, 12 skips
 
