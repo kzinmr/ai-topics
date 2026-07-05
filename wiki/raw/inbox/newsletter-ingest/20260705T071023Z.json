@@ -1,0 +1,189 @@
+{
+  "run_id": "20260705T071023Z",
+  "triaged_at": "2026-07-05T07:15:00Z",
+  "source": "newsletter-ingest",
+  "newsletter": {
+    "subject": "The Commoditization of Intelligence",
+    "date": "2026-07-04",
+    "source_label": "uid=327",
+    "author": "Kim \"Chubby\" Isenberg",
+    "publication": "Get Super Intel (getsuperintel.site)",
+    "newsletter_url": "https://getsuperintel.site/p/the-commoditization-of-intelligence",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-04-the-commoditization-of-intelligence.md",
+    "reading_time": "18 min read",
+    "paywall_status": "partial — free section ends after pricing/supply analysis, rest behind Superintel+ paywall"
+  },
+  "summary": "Get Super Intel deep-dive on the commoditization of LLM inference pricing. Analyzes Chinese open models (DeepSeek V4-Pro/V4-Flash, Zhipu GLM-5.2) vs Western flagships (Anthropic Claude Opus 4.8, Fable 5, OpenAI GPT-5.5). Covers MoE architecture cost advantages, Chinese government subsidies (Gansu/Guizhou/Inner Mongolia), developer vs enterprise market split, Huawei Ascend chip limitations, and whether China is driving or riding the price collapse. References DeepSeek V4 tech report, USCC subsidy report, CSIS analysis, and LMArena benchmarks.",
+  "classification_counts": {
+    "critical": 0,
+    "high": 1,
+    "low": 0,
+    "skip": 16,
+    "note": "All 15 beehiiv tracking links returned HTTP 403 (Cloudflare challenge). URL resolution failed. Classifications are based on newsletter title and web-version content extraction only."
+  },
+  "url_resolution_note": "All 15 link.mail.beehiiv.com tracking URLs are behind Cloudflare bot protection and returned HTTP 403. The hp.beehiiv.com newsletter web version was accessible but paywalled after the first section. Article-level link classification was not possible.",
+  "articles": [
+    {
+      "link_num": 16,
+      "importance": "high",
+      "title": "The Commoditization of Intelligence (web version)",
+      "url": "https://getsuperintel.site/p/the-commoditization-of-intelligence",
+      "reason": "Newsletter web version. Deep-dive analysis of LLM inference commoditization: DeepSeek V4 pricing vs Anthropic/OpenAI, MoE architecture economics, Chinese AI subsidies, open weights vs closed models. Highly relevant to wiki topics on LLM pricing, DeepSeek, open-source AI, and AI geopolitics.",
+      "suggested_wiki_pages": ["DeepSeek", "LLM pricing", "Open-source AI models", "AI geopolitics", "Chinese AI ecosystem"],
+      "action": "scrape_and_ingest",
+      "key_references_found": [
+        "DeepSeek pricing docs (07/03/2026)",
+        "Anthropic pricing (07/03/2026)",
+        "CSIS report on Chinese AI (07/02/2026)",
+        "LMArena benchmarks (07/01/2026)",
+        "DeepSeek V4 tech report via The Register (04/24/2026)",
+        "USCC report on Chinese AI subsidies (03/23/2026)",
+        "Dario Amodei on cost reduction curves (01/2025)"
+      ]
+    },
+    {
+      "link_num": 1,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/UiCE.../c910aab336f196fd",
+      "reason": "Beehiiv tracking URL — HTTP 403 (Cloudflare challenge). Cannot resolve to actual article URL.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 2,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/4kIo.../83a295527261e940",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 3,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/uq1r.../f4f37ad44a749eaa",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 4,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/vtcI.../57d4304fde959ce0",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 5,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/ndkL.../927d77ccaa1d5b38",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 6,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/TztC.../453c9f657261c4a9",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 7,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/cDEs.../7746a380271c0c5f",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 8,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/E%2BKn.../f1bd73619b79daf3",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 9,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/XihN.../263f8049d1765c17",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 10,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/xr3u.../b3517e14a427609a",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 11,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/n1mk.../d653d97793ff049c",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 12,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/osJD.../2a04b238fafe8b2d",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 13,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/Yb1K.../ae834acfd510a225",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 14,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/Y1rm.../4cd93a216166ea5e",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 15,
+      "importance": "skip",
+      "title": "Unresolved beehiiv tracking link",
+      "url": "https://link.mail.beehiiv.com/v1/c/%2FqmR.../f9b8c50473627674",
+      "reason": "Beehiiv tracking URL — HTTP 403. Cannot resolve.",
+      "action": "skip_unresolvable"
+    },
+    {
+      "link_num": 17,
+      "importance": "skip",
+      "title": "Beehiiv tracking pixel/status",
+      "url": "https://email.beehiivstatus.com/a9a27cc1125b90fbb5b1980d72fb7fb73aba6313/hclick",
+      "reason": "Beehiiv email tracking/status URL. Not editorial content.",
+      "action": "skip"
+    }
+  ],
+  "dedup_analysis": {
+    "total_raw_links": 17,
+    "unique_articles": 1,
+    "unresolvable_tracking_links": 15,
+    "tracking_pixel": 1,
+    "note": "All 15 beehiiv tracking links are behind Cloudflare bot protection. Only the newsletter web version (link 16) was accessible."
+  },
+  "recommended_actions": {
+    "immediate_ingest": [
+      "https://getsuperintel.site/p/the-commoditization-of-intelligence"
+    ],
+    "batch_ingest": [],
+    "optional": [],
+    "note": "Only the newsletter web version is available for scraping. The 15 email tracking links could not be resolved due to Cloudflare bot protection. Consider improving newsletter_ingest to pre-resolve beehiiv tracking URLs before saving raw digests."
+  },
+  "pipeline_improvement_note": "The process_email.py script saved only beehiiv tracking URLs without resolving them to actual destination URLs. These tracking URLs are behind Cloudflare challenge and return HTTP 403 when accessed programmatically. Recommendation: enhance process_email.py to either (a) resolve tracking URLs during email processing using the original email's Referer/cookie context, or (b) save the HTML body content alongside the links so that article context can be extracted during triage."
+}
