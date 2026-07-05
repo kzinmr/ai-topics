@@ -21,4 +21,4 @@ Stub page for AI Agent Architecture.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for object-detection.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

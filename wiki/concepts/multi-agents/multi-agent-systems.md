@@ -37,7 +37,7 @@ Multi-Agent Systems (MAS) are AI architectures where multiple independent agents
 
 ## Why Multi-Agent?
 
-The theoretical foundation is explained by [[structured-test-time-scaling]]: single-agent linear reasoning faces **exponential collapse** — P_success = (1−ε)^W ≈ exp(−εW) — because errors compound along a length-W control path. Multi-agent systems bypass this ceiling through:
+The theoretical foundation is explained by [[concepts/structured-test-time-scaling]]: single-agent linear reasoning faces **exponential collapse** — P_success = (1−ε)^W ≈ exp(−εW) — because errors compound along a length-W control path. Multi-agent systems bypass this ceiling through:
 
 1. **Topology compression**: Hierarchical decomposition reduces span from Θ(W) to Õ(log W)
 2. **Scope isolation**: Each agent operates in a clean, bounded context, suppressing atomic error rates
@@ -45,7 +45,7 @@ The theoretical foundation is explained by [[structured-test-time-scaling]]: sin
 
 ## The Three-Layer Structural Decoupling
 
-As formalized in [[structured-test-time-scaling]] (Tu & Ye, 2026), multi-agent systems gain their advantage through a causal chain:
+As formalized in [[concepts/structured-test-time-scaling]] (Tu & Ye, 2026), multi-agent systems gain their advantage through a causal chain:
 
 > **Topology** creates decomposition boundaries → **Isolation** manufactures verifiable atomic units → **Verification** suppresses residual errors
 
@@ -53,7 +53,7 @@ Each mechanism creates the structural preconditions for the next. Bolting verifi
 
 ## Key Patterns
 
-See [[subagent-patterns]] for Chieng's four-pattern taxonomy (hierarchical, peer-to-peer, swarm, manager-worker).
+See [[concepts/subagent-patterns]] for Chieng's four-pattern taxonomy (hierarchical, peer-to-peer, swarm, manager-worker).
 
 ### Explicit Orchestration
 Frameworks like AOrchestra spawn sub-agents as runtime tuples ⟨Instruction, Context, Tools⟩, creating genuine hierarchical decomposition.
@@ -89,10 +89,10 @@ A critical distinction: not all dynamic systems achieve true span compression. S
 
 ## Related Pages
 
-- [[structured-test-time-scaling]] — The unified theoretical framework
-- [[subagent-patterns]] — Four subagent coordination patterns
+- [[concepts/structured-test-time-scaling]] — The unified theoretical framework
+- [[concepts/subagent-patterns]] — Four subagent coordination patterns
 - [[concepts/multi-agents/multi-agent-orchestration-architecture]] — Architectural approaches
-- [[rlm-recursive-language-models]] — Recursive LM paradigm
+- [[concepts/rlm-recursive-language-models]] — Recursive LM paradigm
 - [[concepts/harness-engineering/agent-architecture-decomposition]] — Agent architecture components
 - [[agent-swarm]] / [[concepts/multi-agents/agent-team-swarm]] — Swarm and team patterns
-- [[reduce-offload-isolate]] — Context engineering taxonomy
+- [[concepts/reduce-offload-isolate]] — Context engineering taxonomy

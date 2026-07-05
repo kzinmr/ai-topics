@@ -21,4 +21,4 @@ Stub page for gpt-image-2-vs-nano-banana-2.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

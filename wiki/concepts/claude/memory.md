@@ -71,7 +71,7 @@ For Claude Code specifically:
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/claude/memory-tool]]
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/memory-systems-design-patterns]]

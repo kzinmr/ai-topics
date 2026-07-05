@@ -21,4 +21,4 @@ Stub page for Have I Been Pwned.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

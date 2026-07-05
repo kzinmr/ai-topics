@@ -298,7 +298,7 @@ Pretraining → SFT (Supervised Fine-Tuning) → Reward Model → RLHF (PPO)
 1. **Pretraining:** Next-token prediction on large text corpus
 2. **SFT:** Fine-tune on human demonstrations of good responses
 3. **Reward Model:** Train a model to predict human preference
-4. **PPO:** Optimize the policy to maximize reward (per [[john-schulman]] TRPO/PPO work)
+4. **PPO:** Optimize the policy to maximize reward (per [[entities/john-schulman]] TRPO/PPO work)
 
 See [[concepts/post-training/rlhf-dpo-preference]] for detailed RLHF vs DPO comparison.
 
@@ -342,7 +342,7 @@ See [[concepts/gpt/chatgpt-images-2-0]] for GPT Image 2.0.
 ## Related Concepts
 
 - [[concepts/gpt/decoder-only]] — Complete architectural breakdown
-- [[openai]] — OpenAI company and product ecosystem
+- [[entities/openai]] — OpenAI company and product ecosystem
 - [[concepts/post-training/rlhf-dpo-preference]] — Preference optimization methods
 - [[concepts/reasoning-models]] — o-series extended thinking models
 - [[concepts/local-llm/_index]] — Running open-weight alternatives locally

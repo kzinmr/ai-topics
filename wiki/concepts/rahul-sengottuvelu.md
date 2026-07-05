@@ -21,4 +21,4 @@ Stub page for Rahul Sengottuvelu.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

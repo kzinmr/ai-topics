@@ -21,4 +21,4 @@ Stub page for co-intelligence.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

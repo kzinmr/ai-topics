@@ -213,5 +213,5 @@ Most gains appear within 1–2 iterations. Later iterations risk prompt degradat
 - [[concepts/evaluation/ai-evals]] — General evaluation concept page
 - [[concepts/evaluation/evaluation-flywheel]] — Iterative evaluation improvement cycle
 - [[concepts/evaluation/offline-evaluation]] — Pre-production evaluation pipeline
-- [[concepts/dspy]] — Evaluation integration with DSPy
+- [[entities/dspy]] — Evaluation integration with DSPy
 - [[comparisons/eval-tools-comparison]] — Evaluation tool comparison

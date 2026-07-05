@@ -21,4 +21,4 @@ Stub page for Sciences Po.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

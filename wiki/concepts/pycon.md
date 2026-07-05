@@ -21,4 +21,4 @@ Stub page for PyCon.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

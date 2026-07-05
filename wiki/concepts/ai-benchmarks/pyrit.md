@@ -25,7 +25,7 @@ PyRIT is a tool (not a benchmark) designed to identify and assess:
 
 - **Security vulnerabilities**: Weaknesses in generative AI systems that could be exploited by malicious actors
 - **Jailbreak susceptibility**: How easily models can be manipulated to bypass safety guardrails
-- **Prompt injection resilience**: Resistance to [[prompt-injection]] attacks that manipulate model behavior
+- **Prompt injection resilience**: Resistance to [[concepts/prompt-injection]] attacks that manipulate model behavior
 - **Multi-turn attack surfaces**: Vulnerabilities that only emerge through extended adversarial conversations
 - **Content policy violations**: Cases where models generate harmful, biased, or policy-violating content under adversarial conditions
 - **System prompt leakage**: Whether internal instructions or system prompts can be extracted
@@ -46,16 +46,16 @@ PyRIT provides a comprehensive red-teaming toolkit:
 - PyRIT has been used internally by Microsoft's AI Red Team to test Azure AI services and other Microsoft AI products
 - The tool has identified numerous vulnerabilities across different generative AI systems
 - Multi-turn attack strategies prove significantly more effective than single-turn attempts
-- The 70+ converter library covers a wide range of attack vectors including [[prompt-injection]], jailbreaking, and content manipulation
+- The 70+ converter library covers a wide range of attack vectors including [[concepts/prompt-injection]], jailbreaking, and content manipulation
 - PyRIT has been open-sourced to enable the broader security community to conduct systematic red-teaming of AI systems
 
 ## Related Tools and Concepts
 
-- [[prompt-injection]] — One of the primary attack categories that PyRIT tests for
+- [[concepts/prompt-injection]] — One of the primary attack categories that PyRIT tests for
 - AI safety and alignment research
 - Red-teaming methodologies for generative AI
 - Other AI safety evaluation tools and frameworks
 
 ## Connections to Other Wiki Concepts
 
-PyRIT represents the security-focused side of AI [[evaluation]], complementing performance-focused benchmarks. While benchmarks like those aggregated in [[hal-leaderboard]] measure what agents *can* do, PyRIT measures what they *shouldn't* be able to do. Its focus on [[prompt-injection]] and multi-turn adversarial attacks connects to broader safety concerns in [[ai-agents]] deployment. PyRIT's approach of active probing rather than passive scoring represents a different philosophy from traditional benchmarks — it's a tool for finding failures rather than measuring successes.
+PyRIT represents the security-focused side of AI [[concepts/evaluation]], complementing performance-focused benchmarks. While benchmarks like those aggregated in [[hal-leaderboard]] measure what agents *can* do, PyRIT measures what they *shouldn't* be able to do. Its focus on [[concepts/prompt-injection]] and multi-turn adversarial attacks connects to broader safety concerns in [[concepts/ai-agents]] deployment. PyRIT's approach of active probing rather than passive scoring represents a different philosophy from traditional benchmarks — it's a tool for finding failures rather than measuring successes.

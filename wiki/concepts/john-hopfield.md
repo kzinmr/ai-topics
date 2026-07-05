@@ -21,4 +21,4 @@ Stub page for John Hopfield.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for company, startup, maximor, finance, accounting, agent-automation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

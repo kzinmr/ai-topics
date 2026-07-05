@@ -21,4 +21,4 @@ Stub page for Property-Based Testing.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

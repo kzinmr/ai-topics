@@ -131,8 +131,8 @@ type: entity
 ## See Also
 
 - [[entities/yann-lecun]] — CNN pioneer. Collaborative relationship through ImageNet deep learning applications.
-- [[ian-goodfellow]] — Inventor of GANs. Related research in computer vision and deep learning.
+- [[entities/ian-goodfellow]] — Inventor of GANs. Related research in computer vision and deep learning.
 - [[imageNet]] — Large-scale image dataset created by Fei-Fei Li. Catalyst for the deep learning revolution.
 - [[stanford-hai]] — Human-centered AI institute co-founded by Li.
 - [[world-labs]] — Spatial intelligence startup co-founded by Li in 2024.
-- [[world-model-taxonomy]] — Li's framework classifying world models into renderers, simulators, and planners.
+- [[concepts/world-model-taxonomy]] — Li's framework classifying world models into renderers, simulators, and planners.

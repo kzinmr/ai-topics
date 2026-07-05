@@ -187,7 +187,7 @@
 - [[concepts/sandbox]] — Sandbox (Agent Sandboxing) — Isolated execution environments for running untrusted AI agent code in production
 - [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
 - [[concepts/self-harness]] — Self-Harness — LLM-based agent that iteratively improves its own operating harness (Shanghai AI Lab, arXiv:2606.09498)
-- [[concepts/show-us-your-agent-skills]] — Show Us Your Agent Skills — YouTube series (Vanishing Gradients × PyMC Labs) documenting real agent workflows from 22 builders; 51 skills, 79 workflows (June 27)
+- [[entities/show-us-your-agent-skills]] — Show Us Your Agent Skills — YouTube series (Vanishing Gradients × PyMC Labs) documenting real agent workflows from 22 builders; 51 skills, 79 workflows (June 27)
 - [[concepts/short-leash-ai-coding]] — Short Leash AI Coding — 12-principle methodology for tight human-in-the-loop AI-assisted coding; contrasts with unsupervised vibe engineering; AI disclosure and self-review protocols (July 5)
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/single-transformer-layer-rl]] — Single Transformer Layer RL — Finding that training only 1-2 middle transformer layers matches full-parameter RL post-training across 7 models and 3 algorithms (arXiv 2607.01232, July 5)
@@ -202,7 +202,7 @@
 - [[concepts/wayfinder-router]] — Wayfinder Router — Deterministic, offline LLM query router; scores prompt structural complexity (0.0–1.0) and routes easy prompts to local models, hard ones to cloud models with no model call needed (June 30)
 ## Comparisons
 
-- [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
+- [[concepts/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes vs ChatGPT Dreaming
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing
@@ -217,7 +217,7 @@
 - [[comparisons/codex-app-server-vs-agent-protocols]] — Codex App Server and the Agent Protocol Landscape
 - [[comparisons/codex-app-server-vs-claude-agent-sdk]] — Codex App Server vs Claude Agent SDK
 - [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison
-- [[comparisons/evals-skills]] — Evals Skills for Coding Agents
+- [[concepts/evals-skills]] — Evals Skills for Coding Agents
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
 - [[comparisons/google-alerts-alternatives-2026]] — Google Alerts Alternatives — 2026 Developer & Marketer Guide
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — GPT Image 2 vs Nano Banana 2
@@ -225,7 +225,7 @@
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison
 - [[comparisons/llm-api-pricing]] — LLM API Pricing Comparison — US vs China Providers
-- [[comparisons/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
+- [[concepts/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
 - [[comparisons/lambda-microvms-vs-agentcore]] — AWS Lambda MicroVMs vs Amazon Bedrock AgentCore — Isolation Primitive vs Managed Platform
 - [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison — April 2026
 - [[comparisons/open-harness-vs-agent-framework]] — Open Harness vs Agent Framework/SDK — Essential Differences as Investment Targets

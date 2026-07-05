@@ -21,4 +21,4 @@ Stub page for Kiran (Random Labs).
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for CurrentAI.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

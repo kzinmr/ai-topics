@@ -21,6 +21,6 @@ Stub page for Werkzeug.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/flask]]
 - [[concepts/jinja2]]

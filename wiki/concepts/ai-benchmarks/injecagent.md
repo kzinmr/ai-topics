@@ -13,8 +13,8 @@ sources:
   - "arXiv:2403.02691"
   - "ACL 2024"
 related_concepts:
-  - "[[prompt-injection]]"
-  - "[[ai-agents]]"
+  - "[[concepts/prompt-injection]]"
+  - "[[concepts/ai-agents]]"
   - "[[tool-use]]"
   - "[[agent-dojo]]"
 ---
@@ -58,4 +58,4 @@ The benchmark comprises **1,054 IPI test cases** with extensive tool coverage:
 
 ## Connections to Other Wiki Concepts
 
-InjecAgent is a cornerstone benchmark for understanding **prompt-injection** in the context of **[[ai-agents]]** that use external tools. Unlike direct prompt injection, indirect injection through **tool-use** outputs represents a fundamentally harder security challenge because agents must process and act on external data. The benchmark has shaped research directions in agent security and influenced the development of more comprehensive evaluations like [[agent-security-bench]] and [[agentdojo]].
+InjecAgent is a cornerstone benchmark for understanding **prompt-injection** in the context of **[[concepts/ai-agents]]** that use external tools. Unlike direct prompt injection, indirect injection through **tool-use** outputs represents a fundamentally harder security challenge because agents must process and act on external data. The benchmark has shaped research directions in agent security and influenced the development of more comprehensive evaluations like [[agent-security-bench]] and [[agentdojo]].

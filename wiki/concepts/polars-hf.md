@@ -83,4 +83,4 @@ If these land, polars-hf becomes redundant; until then, it fills the gap from th
 - [[concepts/uv-scripts-for-ai]] — Companion project of self-contained UV scripts for AI/ML
 - [[entities/daniel-van-strien]] — Author and Machine Learning Librarian at Hugging Face
 - [[concepts/huggingface-jobs]] — Managed GPU infrastructure for running scripts
-- [[concepts/_index]]
+- [[entities/_index]]

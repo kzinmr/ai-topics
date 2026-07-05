@@ -107,8 +107,8 @@ type: entity
 
 ## See Also
 
-- [[fei-fei-li]] — ImageNet creator. Collaborative relationship in computer vision and deep learning.
-- [[ian-goodfellow]] — Inventor of GANs. Deep learning and adversarial ML pioneer.
-- [[geoffrey-hinton]] — Backpropagation collaborator. LeCun's postdoc supervisor.
-- [[yoshua-bengio]] — Deep learning pioneer. Co-recipient of 2018 Turing Award with LeCun.
+- [[entities/fei-fei-li]] — ImageNet creator. Collaborative relationship in computer vision and deep learning.
+- [[entities/ian-goodfellow]] — Inventor of GANs. Deep learning and adversarial ML pioneer.
+- [[entities/geoffrey-hinton]] — Backpropagation collaborator. LeCun's postdoc supervisor.
+- [[concepts/yoshua-bengio]] — Deep learning pioneer. Co-recipient of 2018 Turing Award with LeCun.
 - [[pytorch]] — Deep learning framework LeCun majorly contributed to during Meta FAIR era.

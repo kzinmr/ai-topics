@@ -21,4 +21,4 @@ Stub page for Context Anxiety.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

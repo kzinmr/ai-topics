@@ -91,4 +91,4 @@ Andrew's style combines practitioner insight with venture-scale pattern recognit
 - [[entities/openclaw]] — One of two agent frameworks in his setup
 - [[entities/hermes-agent]] — Second agent framework in his setup
 - [[concepts/local-llm/_index]] — Local LLM overview
-- [[concepts/mac-studio-local-ai]] — Mac Studio inference
+- [[entities/mac-studio-local-ai]] — Mac Studio inference

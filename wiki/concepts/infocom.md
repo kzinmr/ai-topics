@@ -21,4 +21,4 @@ Stub page for infocom.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

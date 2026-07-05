@@ -54,4 +54,4 @@ TRAIL's dataset and evaluation methodology include:
 
 ## Connections to Other Wiki Concepts
 
-TRAIL addresses a unique and underexplored dimension of [[agent-evaluation]]: the ability to understand *why* agents fail, not just whether they succeed. This connects to broader [[ai-agents]] research on agent reliability and trustworthiness. Unlike benchmarks that measure task completion rates, TRAIL focuses on the diagnostic capabilities needed to improve agent systems, making it complementary to performance-focused evaluations aggregated by [[hal-leaderboard]].
+TRAIL addresses a unique and underexplored dimension of [[agent-evaluation]]: the ability to understand *why* agents fail, not just whether they succeed. This connects to broader [[concepts/ai-agents]] research on agent reliability and trustworthiness. Unlike benchmarks that measure task completion rates, TRAIL focuses on the diagnostic capabilities needed to improve agent systems, making it complementary to performance-focused evaluations aggregated by [[hal-leaderboard]].

@@ -46,10 +46,10 @@ Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances L
 
 ## Related Concepts
 
-- [[agentic-rag]]
-- [[agentic-alternative-to-graphrag]]
+- [[concepts/agentic-rag]]
+- [[concepts/agentic-alternative-to-graphrag]]
 - [[concepts/context-engineering|Context Engineering]]
-- [[knowledge-graph-memory-agents]]
+- [[concepts/knowledge-graph-memory-agents]]
 - [[concepts/evaluation/llm-as-judge]]
 
 ## Sources

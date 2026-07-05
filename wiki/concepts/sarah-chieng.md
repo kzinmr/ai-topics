@@ -21,4 +21,4 @@ Stub page for sarah-chieng.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

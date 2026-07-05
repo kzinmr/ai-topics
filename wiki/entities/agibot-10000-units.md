@@ -39,6 +39,6 @@ Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
 
 ## See Also
 
-- [[amazon-rivr]] — Amazon's acquisition of stair-climbing delivery robot startup.
-- [[zoox-expansion]] — Amazon's autonomous robotaxi expansion.
+- [[entities/amazon-rivr]] — Amazon's acquisition of stair-climbing delivery robot startup.
+- [[entities/zoox-expansion]] — Amazon's autonomous robotaxi expansion.
 - [[humanoid-robots]] — Humanoid robotics technology and market.

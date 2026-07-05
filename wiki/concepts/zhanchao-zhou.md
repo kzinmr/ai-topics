@@ -21,4 +21,4 @@ Stub page for zhanchao-zhou.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

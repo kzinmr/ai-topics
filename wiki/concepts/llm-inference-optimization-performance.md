@@ -21,4 +21,4 @@ Stub page for llm, inference, optimization, performance.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

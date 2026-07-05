@@ -103,8 +103,8 @@ Analysis of enterprise adoption patterns comparing OpenAI and Anthropic based on
 
 - [[enterprise-ai]] - Enterprise AI adoption strategies
 - [[competitive-dynamics]] - AI industry competitive dynamics
-- [[openai]] - OpenAI company and products
-- [[anthropic]] - Anthropic company and products
+- [[entities/openai]] - OpenAI company and products
+- [[entities/anthropic]] - Anthropic company and products
 - [[ai-adoption]] - AI adoption patterns and strategies
 - [[business-model]] - AI business models and pricing
 

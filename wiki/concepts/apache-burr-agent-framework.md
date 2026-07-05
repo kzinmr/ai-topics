@@ -46,7 +46,7 @@ The core API consists of three primitives:
 
 Burr's design is explicitly anti-magic and decision-centric. Unlike frameworks that abstract away agent internals, Burr makes state transitions explicit and observable. This supports:
 
-- **[[durable-execution]]**: State is persisted at every step, enabling pause/resume and replay from any point.
+- **[[concepts/durable-execution]]**: State is persisted at every step, enabling pause/resume and replay from any point.
 - **[[ai-observability|Observability]]**: A built-in Burr UI provides real-time tracing of state transitions and action execution.
 - **Deterministic replay**: Debug production issues by replaying exact application states.
 - **No DSL, no YAML**: Everything is defined in Python code with decorators and typed APIs.
@@ -91,7 +91,7 @@ Despite being relatively new (first GitHub commit: January 2024), Burr has attra
 - Companies using in production: Peanut Robotics, Watto.ai, Paxton.ai, Provectus, TaskHuman
 - Part of the Apache Incubator, which provides governance, legal protection (Apache 2.0 license), and community-building infrastructure
 
-The Apache incubation pathway has sparked curiosity in the community, as it's an unusual route for an AI agent framework — most competitors are VC-backed startups or community-run [[open-source]] projects.
+The Apache incubation pathway has sparked curiosity in the community, as it's an unusual route for an AI agent framework — most competitors are VC-backed startups or community-run [[concepts/open-source]] projects.
 
 ## HN Community Reaction
 
@@ -107,7 +107,7 @@ This mirrors a broader debate in the [[agent-framework]] ecosystem: whether fram
 
 ## See Also
 
-- [[langgraph]] — LangChain's event-driven agent orchestration framework
+- [[concepts/langgraph]] — LangChain's event-driven agent orchestration framework
 - [[multi-agents/multi-agent-systems]] — Patterns and architectures for multi-agent coordination
-- [[durable-execution]] — Long-running, fault-tolerant agent execution
-- [[ai-observability]] — Monitoring and debugging AI systems in production
+- [[concepts/durable-execution]] — Long-running, fault-tolerant agent execution
+- [[concepts/ai-observability]] — Monitoring and debugging AI systems in production

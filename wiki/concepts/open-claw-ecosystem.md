@@ -21,4 +21,4 @@ Stub page for Open Claw Ecosystem.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

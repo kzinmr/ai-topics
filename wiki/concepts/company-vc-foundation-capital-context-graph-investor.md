@@ -21,4 +21,4 @@ Stub page for company, vc, foundation-capital, context-graph, investor.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

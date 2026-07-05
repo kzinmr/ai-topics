@@ -21,4 +21,4 @@ Stub page for evaluation, coding-agents, mcp, automation, harness-engineering.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

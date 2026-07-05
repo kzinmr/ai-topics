@@ -337,10 +337,10 @@ Complementing the Groq 3 LPX's decode acceleration, **BlueField-4 DPU** powers t
 
 ## Related Pages
 
-- [[nvidia]] — NVIDIA entity page
-- [[jensen-huang]] — Jensen Huang's AI Layer Cake strategy
+- [[entities/nvidia]] — NVIDIA entity page
+- [[entities/jensen-huang]] — Jensen Huang's AI Layer Cake strategy
 - [[concepts/nvidia-dynamo]] — Dynamo inference architecture
 - [[concepts/kv-aware-routing]] — KV-aware routing in Dynamo
 - [[concepts/ai-factory]] — AI factory concept
-- [[inference-hardware]] — Inference hardware landscape
-- [[dgx-spark-local-llm-server]] — Local LLM hardware
+- [[concepts/inference-hardware]] — Inference hardware landscape
+- [[concepts/dgx-spark-local-llm-server]] — Local LLM hardware

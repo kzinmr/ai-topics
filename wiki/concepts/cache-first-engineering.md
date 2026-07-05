@@ -21,4 +21,4 @@ Stub page for cache-first-engineering.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

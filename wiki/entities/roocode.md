@@ -27,7 +27,7 @@ related:
   - "[[entities/pi]]"
   - "[[entities/opencode]]"
   - "[[entities/claude-code]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
   - "[[entities/0xsero]]"
 ---
 
@@ -168,7 +168,7 @@ RooCode extended Cline with custom modes, steer mode for local models, MCP serve
 - [[entities/opencode]] — OpenCode, another coding agent
 - [[entities/pi]] — Pi coding agent
 - [[entities/droid]] — Droid coding agent
-- [[comparisons/agent-harnesses]] — Agent harness comparison page
+- [[concepts/agent-harnesses]] — Agent harness comparison page
 
 ## Positioning
 

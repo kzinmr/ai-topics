@@ -21,4 +21,4 @@ Stub page for Ford Manufacturing.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for The Silicon Underground Archives.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

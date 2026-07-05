@@ -158,7 +158,7 @@ Structural security problems of AI agents as proposed by Palo Alto Networks:
 
 - [[concepts/ai-agent-security]] — Comprehensive concept page on AI agent security
 - [[concepts/agent-security-patterns]] — Agent security patterns (stub)
-- [[concepts/openclaw]] — OpenClaw platform concept
+- [[entities/openclaw]] — OpenClaw platform concept
 - [[concepts/openclaw-ecosystem]] — OpenClaw ecosystem overview
 - [[entities/openclaw]] — OpenClaw entity
 - [[concepts/cve-2026-25253]] — WebSocket RCE vulnerability

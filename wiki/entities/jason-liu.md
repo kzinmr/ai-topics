@@ -471,11 +471,11 @@ Jason is developing Context Engineering as a natural evolution beyond RAG for ag
 ## Related People
 
 - **[[concepts/pydantic]]** — Samuel Colvin's data validation library; the foundation of Instructor's approach
-- **[[samuel-colvin]]** — Pydantic creator; collaborated on structured outputs patterns and Pydantic AI
+- **[[entities/samuel-colvin]]** — Pydantic creator; collaborated on structured outputs patterns and Pydantic AI
 - **[[concepts/structured-outputs]]** — Liu's primary technical domain; cited by OpenAI as inspiration for their feature
-- **[[eugene-yan]]** — Fellow practitioner in production ML evaluation; both emphasize systematic validation over benchmarking
-- **[[shreya-shankar]]** — Overlapping focus on evaluation and validation rigor in LLM systems
-- **[[bryan-bischof]]** — Shared philosophy of production-first ML engineering over demo-centric approaches
+- **[[entities/eugene-yan]]** — Fellow practitioner in production ML evaluation; both emphasize systematic validation over benchmarking
+- **[[entities/shreya-shankar]]** — Overlapping focus on evaluation and validation rigor in LLM systems
+- **[[entities/bryan-bischof]]** — Shared philosophy of production-first ML engineering over demo-centric approaches
 - **Weights & Biases** — Consulting client; shared community around ML engineering best practices
 - **Modal Labs** — Consulting client; serverless GPU infrastructure for running structured output pipelines
 - **Zapier, HubSpot, Limitless, Timescale** — Consulting clients across the AI application stack

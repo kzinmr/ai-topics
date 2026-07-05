@@ -121,7 +121,7 @@ Farquhar treats these companies with the same seriousness as Intel and Microsoft
 - [[concepts/the-silicon-underground-archives]] — Farquhar's 2,000+ post archive at dfarq.homeip.net
 -  — the legendary Menlo Park hobbyist group Farquhar has extensively documented
 -  — Brian Potter's newsletter; shares Farquhar's deep-dive approach to industrial history
-- [[tedium-the-dull-side-of-the-internet]] — Ernie Smith's newsletter; both cover forgotten technology stories with scholarly rigor
+- [[entities/tedium-the-dull-side-of-the-internet]] — Ernie Smith's newsletter; both cover forgotten technology stories with scholarly rigor
 - [[entities/bogdanthegeek-s-blog]] — Bogdan Ionescu's blog; shares Farquhar's hands-on approach to retro/embedded hardware
 -  — the broader community Farquhar contributes to
 ## Sources

@@ -103,11 +103,11 @@ Serial founders earn **more than twice the sales per shop** vs first-time founde
 See [[entities/shopify|Shopify entity page]] for full breakdown.
 
 ## Related Concepts
-- [[concepts/solo-founder-stack]]
+- [[entities/solo-founder-stack]]
 
 - [[claude-perfect-memory]] — Core of context engineering
-- [[company-ai-pilled]] — Organizational AI-driven transformation
-- [[content-engine]] — AI content automation
+- [[entities/company-ai-pilled]] — Organizational AI-driven transformation
+- [[entities/content-engine]] — AI content automation
 
 ## References
 

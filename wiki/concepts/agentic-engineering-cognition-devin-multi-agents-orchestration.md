@@ -21,4 +21,4 @@ Stub page for agentic-engineering, cognition, devin, multi-agents, orchestration
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

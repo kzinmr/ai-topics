@@ -112,4 +112,4 @@ The choice of backend significantly affects performance-per-watt, making hardwar
 - [[concepts/local-llm/gguf]] — GGUF quantization for local deployment
 - [[concepts/local-llm/llama-cpp]] — C++ inference engine
 - [[concepts/reasoning-models]] — Reasoning model architectures
-- [[concepts/_index]]
+- [[entities/_index]]

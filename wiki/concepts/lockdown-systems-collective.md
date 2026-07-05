@@ -21,4 +21,4 @@ Stub page for Lockdown Systems Collective.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

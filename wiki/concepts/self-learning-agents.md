@@ -43,11 +43,11 @@ Self-learning agents are AI systems that improve their own performance over time
 
 ## Related Concepts
 
-- [[continual-learning]]
+- [[concepts/continual-learning]]
 - [[concepts/agent-harness-primitives]]
-- [[generic-agent-self-evolving]]
+- [[concepts/generic-agent-self-evolving]]
 - [[entities/hermes-agent]]
-- [[filesystem-memory]]
+- [[concepts/filesystem-memory]]
 
 ## Sources
 

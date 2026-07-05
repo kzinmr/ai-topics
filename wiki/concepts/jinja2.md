@@ -21,6 +21,6 @@ Stub page for Jinja2.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/flask]]
 - [[concepts/werkzeug]]

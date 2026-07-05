@@ -57,7 +57,7 @@ When the API-first model becomes mainstream, **per-head SaaS pricing schemes** m
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/neurosymbolic-ai]]
 - [[concepts/coding-agents/ai-coding-reliability]]
 - [[concepts/ai-agent-memory-middleware]]

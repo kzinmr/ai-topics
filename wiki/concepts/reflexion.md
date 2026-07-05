@@ -21,4 +21,4 @@ Stub page for Reflexion.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

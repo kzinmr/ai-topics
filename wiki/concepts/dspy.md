@@ -309,7 +309,7 @@ class Debate(dspy.Module):
 
 ## See Also
 
-- [[omar-khattab]] — Creator of DSPy
+- [[entities/omar-khattab]] — Creator of DSPy
 - [[concepts/gepa]] — Genetic prompt optimization (evolution of DSPy optimizer)
 - [[concepts/rlms]] — Recursive language models (a different optimization approach from DSPy)
 -  — DSPy's agent patterns

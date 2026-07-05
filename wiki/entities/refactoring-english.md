@@ -140,10 +140,10 @@ Since launching in January 2025, *Refactoring English* has gained significant tr
 ## Cross-References
 
 - **[[entities/simon-willison]]** — #1 HN blogger in Lynch's 2025 analysis; his link-blogging model is studied
-- **[[jeff-geerling]]** — #2 HN blogger; cited as an example of quality video-to-text repurposing
+- **[[entities/jeff-geerling]]** — #2 HN blogger; cited as an example of quality video-to-text repurposing
 - **[[julia-evans]]** — Influence on Lynch's accessible technical writing philosophy
 - **[[crafting-interpreters]]** — Analyzed by Lynch as a model of exceptional tutorial writing
-- **[[technical-writing]]** — General topic domain
+- **[[concepts/technical-writing]]** — General topic domain
 - **[[hacker-news]]** — Platform where Lynch's writing gained visibility
 
 ## References

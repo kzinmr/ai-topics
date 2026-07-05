@@ -21,4 +21,4 @@ Stub page for AI Memory Systems — ChatGPT vs Claude vs Cognition.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

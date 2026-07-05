@@ -49,4 +49,4 @@ Heo's work follows the same "humans set direction, agents execute" paradigm as S
 ## Related
 - [[concepts/coding-agents/claw-code]] — Rust implementation co-developed with Heo
 - [[entities/sigrid-jin]] — Creator of claw-code and collaborator
-- [[ultraworkers]] — GitHub organization
+- [[entities/ultraworkers]] — GitHub organization

@@ -66,7 +66,7 @@ As base LLM reasoning improves, complex prompt scaffolding becomes unnecessary. 
 
 - [[concepts/agent-skills]] — broader concept of agent skill management
 - [[harness-engineering/system-architecture/agent-skills]] — Anthropic's SKILL.md pattern
-- [[s3-first-architecture]] — skills stored as files in S3
+- [[concepts/s3-first-architecture]] — skills stored as files in S3
 
 ## Sources
 

@@ -146,4 +146,4 @@ The new evaluation axis τ-Knowledge adds is "knowledge discovery," an essential
 - [[concepts/ai-benchmarks/tau-bench]] — The base conversational agent benchmark
 - [[concepts/tau-squared-bench]] — τ²-Bench: More advanced evaluation suite
 - [[concepts/tau-voice]] — Voice interaction evaluation
-- [[concepts/_index]]
+- [[entities/_index]]

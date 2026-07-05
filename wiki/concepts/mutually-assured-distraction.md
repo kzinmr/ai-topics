@@ -21,4 +21,4 @@ Stub page for Mutually-Assured-Distraction.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

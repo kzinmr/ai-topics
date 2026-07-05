@@ -99,8 +99,8 @@ This tool demonstrates OpenAI's WebRTC API for realtime audio interactions with 
 
 - [[realtime-api]] - OpenAI Realtime API overview
 - [[voice-ai]] - Voice AI technologies
-- [[openai]] - OpenAI company and products
-- [[developer-tools]] - Developer tools for AI applications
+- [[entities/openai]] - OpenAI company and products
+- [[concepts/developer-tools]] - Developer tools for AI applications
 - [[audio-generation]] - Audio generation technologies
 
 ## References

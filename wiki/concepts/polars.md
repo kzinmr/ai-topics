@@ -54,4 +54,4 @@ Upstream support is proposed: [pola-rs/polars#27611](https://github.com/pola-rs/
 - [[concepts/polars-hf]] — IO plugin for Hugging Face Hub Buckets
 - [[concepts/uv-scripts-for-ai]] — UV scripts that leverage Polars for AI data processing
 - [[entities/daniel-van-strien]] — Author of polars-hf and polars-related tooling
-- [[concepts/_index]]
+- [[entities/_index]]

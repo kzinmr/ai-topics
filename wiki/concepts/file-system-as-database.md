@@ -21,4 +21,4 @@ Stub page for File-System-As-Database.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

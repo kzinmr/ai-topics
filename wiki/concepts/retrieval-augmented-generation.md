@@ -21,4 +21,4 @@ Stub page for retrieval-augmented-generation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

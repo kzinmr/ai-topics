@@ -13,7 +13,7 @@ sources:
   - "arXiv:2410.09024"
   - "ICLR 2025"
 related_concepts:
-  - "[[ai-agents]]"
+  - "[[concepts/ai-agents]]"
   - "[[red-teaming]]"
   - "[[safety-evaluation]]"
   - "[[agent-security-bench]]"
@@ -58,4 +58,4 @@ The benchmark includes **110 core malicious agent tasks** expandable to **440 ta
 
 ## Connections to Other Wiki Concepts
 
-AgentHarm highlights a critical gap in **safety evaluation**: models that appear safe in chat mode may become harmful when deployed as **[[ai-agents]]** with tool access. The benchmark's focus on **red-teaming** agent systems complements [[agentdojo]]'s prompt injection focus and [[agent-security-bench]]'s formalized attack taxonomy. It underscores that [[safety-evaluation]] must account for the unique risk surface introduced by agent architectures and tool integration.
+AgentHarm highlights a critical gap in **safety evaluation**: models that appear safe in chat mode may become harmful when deployed as **[[concepts/ai-agents]]** with tool access. The benchmark's focus on **red-teaming** agent systems complements [[agentdojo]]'s prompt injection focus and [[agent-security-bench]]'s formalized attack taxonomy. It underscores that [[safety-evaluation]] must account for the unique risk surface introduced by agent architectures and tool integration.

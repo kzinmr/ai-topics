@@ -21,4 +21,4 @@ Stub page for Scaffold vs RL Debate.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

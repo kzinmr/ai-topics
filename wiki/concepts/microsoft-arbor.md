@@ -31,8 +31,8 @@ Arbor's core innovation is **persistent hypothesis-tree refinement** — rather 
 
 Microsoft claims Arbor outperforms existing agentic coding and research tools on research tasks, specifically beating:
 
-- [[concepts/codex]] — OpenAI's coding agent
-- [[concepts/claude-code]] — Anthropic's coding agent
+- [[entities/codex]] — OpenAI's coding agent
+- [[entities/claude-code]] — Anthropic's coding agent
 
 ## Relationship to Other Concepts
 
@@ -47,12 +47,12 @@ While the [[concepts/karpathy-loop]] (Karpathy's AutoResearch) optimizes within 
 
 ## Connection to Autoreason
 
-Arbor's multi-hypothesis tree shares a design philosophy with [[concepts/autoreason]] — both maintain multiple competing candidates and use structured evaluation to decide which to pursue. However, Arbor externalizes this into a persistent, long-lived tree spanning many experiments, while Autoreason operates within a single refinement pass.
+Arbor's multi-hypothesis tree shares a design philosophy with [[entities/autoreason]] — both maintain multiple competing candidates and use structured evaluation to decide which to pursue. However, Arbor externalizes this into a persistent, long-lived tree spanning many experiments, while Autoreason operates within a single refinement pass.
 
 ## See Also
 
 - [[entities/microsoft]] — Microsoft entity page
 - [[concepts/karpathy-loop]] — Karpathy's AutoResearch pattern
-- [[concepts/autoreason]] — Self-refinement framework
-- [[concepts/codex]] — OpenAI Codex
-- [[concepts/claude-code]] — Claude Code
+- [[entities/autoreason]] — Self-refinement framework
+- [[entities/codex]] — OpenAI Codex
+- [[entities/claude-code]] — Claude Code

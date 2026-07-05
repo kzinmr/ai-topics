@@ -79,5 +79,5 @@ This is complementary to [[concepts/context-engineering]] — OpenWiki generates
 - [[entities/langchain]] — Parent organization
 - [[concepts/agent-documentation]] — Agent documentation patterns
 - [[concepts/context-engineering]] — Context engineering discipline
-- [[concepts/coding-agents]] — Coding agent ecosystem
+- [[entities/coding-agents]] — Coding agent ecosystem
 - [[entities/andrej-karpathy]] — LLM Wiki concept originator

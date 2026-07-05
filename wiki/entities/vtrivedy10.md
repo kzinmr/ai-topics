@@ -126,8 +126,8 @@ Trivedy predicts a future where builders create custom harnesses (like Bolt or C
 
 *   : CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
 *   : Co-author on Deep Agents evaluation and Harness Engineering posts.
-*   [[ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
-*   [[simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
+*   [[entities/ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
+*   [[entities/simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
 *   : PhD Advisor at Temple University.
 
 ## X Activity Themes
@@ -232,9 +232,9 @@ This work directly connects to his **Open Model Cost Advantage** thesis (Point 6
 
 *   : CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
 *   : Co-author on Deep Agents evaluation and Harness Engineering posts.
-*   [[ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
-*   [[simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
+*   [[entities/ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
+*   [[entities/simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
 *   : PhD Advisor at Temple University.
-*   [[alex-zhang]]: MIT CSAIL PhD, RLM (Recursive Language Models). Origin of the Context Fragment idea.
-*   [[dwarkesh-patel]]: Discussions on agent memory's forkability and accumulability.
-*   [[richard-sutton]]: The Bitter Lesson — computation leveraged search > curated knowledge.
+*   [[entities/alex-zhang]]: MIT CSAIL PhD, RLM (Recursive Language Models). Origin of the Context Fragment idea.
+*   [[entities/dwarkesh-patel]]: Discussions on agent memory's forkability and accumulability.
+*   [[entities/richard-sutton]]: The Bitter Lesson — computation leveraged search > curated knowledge.

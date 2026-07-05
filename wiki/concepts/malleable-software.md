@@ -21,4 +21,4 @@ Stub page for Malleable Software.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

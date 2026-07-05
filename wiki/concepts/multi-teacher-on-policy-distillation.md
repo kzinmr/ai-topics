@@ -86,6 +86,6 @@ Standard RL recovery causes **length bias** (short completions finish, long ones
 
 ## Related Concepts
 - [[concepts/post-training/grpo-rl-training]] — the RL framework OPD evolved from
-- [[model-distillation]] — broader category of distillation techniques
+- [[concepts/model-distillation]] — broader category of distillation techniques
 - [[reinforcement-fine-tuning]] — alternative post-training approach using production traces
 - [[concepts/post-training/rlhf]] — earlier preference-based alignment paradigm

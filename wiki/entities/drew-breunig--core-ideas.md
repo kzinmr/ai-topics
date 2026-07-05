@@ -71,7 +71,7 @@ See also: [[concepts/spec-driven-development]]
 
 ## Recursive Language Models (RLMs)
 
-Breunig is an advocate for **Recursive Language Models**, a pattern developed by Alex Zhang and Omar Khattab that gives LLMs a REPL environment to explore, analyze, and reason over large contexts. He implemented RLM support in [[concepts/dspy]] and documented extensive use cases. The key insight: RLMs maintain two distinct context pools — tokenized context (what fills the window) and external context (what the model can explore).
+Breunig is an advocate for **Recursive Language Models**, a pattern developed by Alex Zhang and Omar Khattab that gives LLMs a REPL environment to explore, analyze, and reason over large contexts. He implemented RLM support in [[entities/dspy]] and documented extensive use cases. The key insight: RLMs maintain two distinct context pools — tokenized context (what fills the window) and external context (what the model can explore).
 
 > "If you run them on the same task several times, you're generating emergent agent discovery patterns."
 

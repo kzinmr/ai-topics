@@ -21,4 +21,4 @@ Stub page for Apple-1.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for rikiya-takehi.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

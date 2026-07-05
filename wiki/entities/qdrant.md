@@ -59,7 +59,7 @@ Qdrant stores vectors as "points" with associated payload (metadata). Key abstra
 
 A pattern for scoping vector search results to git-style branches in a versioned document corpus. Each document version is a separate point tagged with branch and sequence number; superseded versions are marked with a nested `overwritten_in` field. Query-time visibility filters enforce branch isolation.
 
-See: [[branch-aware-search]]
+See: [[concepts/branch-aware-search]]
 
 ### Other Search Engineering Tutorials
 
@@ -71,6 +71,6 @@ See: [[branch-aware-search]]
 
 ## Related Entities
 
-- [[pinecone]] — managed vector database competitor
-- [[fast-plaid]] — vector search optimization
-- [[branch-aware-search]] — Qdrant's versioned search pattern
+- [[entities/pinecone]] — managed vector database competitor
+- [[concepts/fast-plaid]] — vector search optimization
+- [[concepts/branch-aware-search]] — Qdrant's versioned search pattern

@@ -150,12 +150,12 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 
 ## Related Wikilinks
 
-- [[prime-intellect]] — Current organization
+- [[entities/prime-intellect]] — Current organization
 - [[entities/vincent-weisser]] — Prime Intellect Co-founder & CEO
 - [[entities/will-brown]] — Prime Intellect colleague, RL research
 - [[entities/florian-brand]] — Prime Intellect colleague, evals
 - [[concepts/smollm]] — Small language model family he contributed to
-- [[hugging-face]] — His employer and primary platform
+- [[entities/hugging-face]] — His employer and primary platform
 - [[concepts/mixture-of-experts]] — His research focus area
 - [[concepts/scaling-laws]] — Compute-optimal training research
 - [[concepts/fineweb]] — Training dataset he helped curate

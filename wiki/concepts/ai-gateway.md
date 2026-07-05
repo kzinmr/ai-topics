@@ -17,11 +17,11 @@ sources:
   - "[[raw/articles/2026-06-15_langchain_introducing-llm-gateway]]"
   - "[[raw/articles/2026-06-04_glean_introducing-glean-mcp-gateway]]"
 related:
-  - "[[token-economics]]"
-  - "[[outcome-based-pricing]]"
-  - "[[llm-integration-patterns]]"
+  - "[[concepts/token-economics]]"
+  - "[[concepts/outcome-based-pricing]]"
+  - "[[concepts/llm-integration-patterns]]"
   - "[[context-engineering/context-management]]"
-  - "[[infrastructure]]"
+  - "[[concepts/infrastructure]]"
 ---
 
 # AI Gateway
@@ -91,7 +91,7 @@ A single coding agent session can consume hundreds of thousands of tokens across
 
 ## Relationship to Other Concepts
 
-- **[[token-economics]]**: Gateway cost controls are the enforcement layer; token economics provides the unit-cost analysis
-- **[[outcome-based-pricing]]**: Gateways enable tracking spend-to-outcome ratios
-- **[[llm-integration-patterns]]**: Gateway is one of several AI integration patterns
+- **[[concepts/token-economics]]**: Gateway cost controls are the enforcement layer; token economics provides the unit-cost analysis
+- **[[concepts/outcome-based-pricing]]**: Gateways enable tracking spend-to-outcome ratios
+- **[[concepts/llm-integration-patterns]]**: Gateway is one of several AI integration patterns
 - **[[context-engineering/context-management]]**: Context efficiency reduces gateway-routed costs

@@ -40,7 +40,7 @@ Botsitting is described as "often tedious" and "exhausting" work that is "not re
 
 ## The Automation Paradox in Practice
 
-Botsitting exemplifies the [[after-automation]] paradox: rather than eliminating human labor, automation often shifts it to new forms that are less visible, less valued, and sometimes more tedious than the original work. While AI can handle routine cases, edge cases and hallucinations create a constant need for human oversight — inverting the promise that AI would handle the boring work and free humans for creative tasks. Instead, many workers find themselves performing [[human-in-the-loop]] monitoring as their primary function, with the engaging work increasingly handed to AI.
+Botsitting exemplifies the [[concepts/after-automation]] paradox: rather than eliminating human labor, automation often shifts it to new forms that are less visible, less valued, and sometimes more tedious than the original work. While AI can handle routine cases, edge cases and hallucinations create a constant need for human oversight — inverting the promise that AI would handle the boring work and free humans for creative tasks. Instead, many workers find themselves performing [[concepts/human-in-the-loop]] monitoring as their primary function, with the engaging work increasingly handed to AI.
 
 ## Economic Implications
 
@@ -69,11 +69,11 @@ Beyond productivity, botsitting has psychological effects. Workers who absorb th
 
 ## Related Concepts
 
-- [[human-in-the-loop]] — the design pattern botsitting operationalizes, often without deliberate design
-- [[after-automation]] — the paradox that automation creates new forms of human labor
-- [[ai-slop-productivity-paradox]] — AI-generated outputs creating downstream cleanup costs
-- [[ai-labor-displacement]] — broader labor transformation dynamics in AI adoption
-- [[agent-productivity]] — individual productivity effects of AI agents, including cognitive costs
+- [[concepts/human-in-the-loop]] — the design pattern botsitting operationalizes, often without deliberate design
+- [[concepts/after-automation]] — the paradox that automation creates new forms of human labor
+- [[concepts/ai-slop-productivity-paradox]] — AI-generated outputs creating downstream cleanup costs
+- [[concepts/ai-labor-displacement]] — broader labor transformation dynamics in AI adoption
+- [[concepts/agent-productivity]] — individual productivity effects of AI agents, including cognitive costs
 
 ## Sources
 

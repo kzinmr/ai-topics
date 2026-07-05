@@ -50,7 +50,7 @@ Context management is the discipline of effectively constructing, maintaining, a
 - [[concepts/context-engineering|Context Engineering]]
 - [[concepts/context-engineering/context-compression|Context Compression]]
 - [[concepts/context-engineering/context-routing|Context Routing]]
-- [[kv-cache]]
+- [[concepts/kv-cache]]
 - [[concepts/context-engineering/context-graph|Context Graph]]
 
 ## Sources

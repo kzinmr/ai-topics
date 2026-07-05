@@ -21,4 +21,4 @@ Stub page for guaranteed-minimum-income.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

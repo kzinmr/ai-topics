@@ -21,4 +21,4 @@ Stub page for pycparser.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -29,7 +29,7 @@ Pretraining learns broad knowledge; SFT formats it for instruction-following. Th
 
 ### DeepSeek-R1: Emergent Reasoning via Pure RL
 
-[[deepseek-r1]] demonstrated that pure [[reinforcement-learning]] on base models (without SFT cold-start) elicited chain-of-thought reasoning behaviors—including the famous "aha moments" where models discover self-correction strategies. These reasoning patterns were **not present** in any supervised data, suggesting RL genuinely created new capabilities rather than extracting existing ones.
+[[concepts/deepseek-r1]] demonstrated that pure [[reinforcement-learning]] on base models (without SFT cold-start) elicited chain-of-thought reasoning behaviors—including the famous "aha moments" where models discover self-correction strategies. These reasoning patterns were **not present** in any supervised data, suggesting RL genuinely created new capabilities rather than extracting existing ones.
 
 ### OpenAI o1/o3: Verifiable-Domain Breakthroughs
 
@@ -78,7 +78,7 @@ RL can expand LLM capability frontiers, but its scaling is bounded by reward qua
 - [[reinforcement-learning]] — foundational RL concepts
 - [[rlvr]] — RL with Verifiable Rewards
 - [[grpo-rl-training]] — Group Relative Policy Optimization
-- [[deepseek-r1]] — reasoning emergence via RL
+- [[concepts/deepseek-r1]] — reasoning emergence via RL
 - [[evaluation/reward-hacking]] — failure modes at scale
 - [[training-free-rl]] — alternatives to RL-based test-time scaling
 - [[rl-interview-questions-2026]] — full interview question set

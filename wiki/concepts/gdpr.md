@@ -21,4 +21,4 @@ Stub page for GDPR.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

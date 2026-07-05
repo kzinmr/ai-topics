@@ -251,7 +251,7 @@ The current practical implementations target **verifiable coding benchmarks** (T
 - [[concepts/harness-design-long-running-apps]] — Anthropic's GAN-inspired multi-agent harness
 - [[concepts/context-engineering|Context Engineering]] — Lance Martin's taxonomy: Write/Select/Compress/Isolate
 - [[concepts/autoresearch]] — Karpathy's original self-directed research pattern
-- [[concepts/hermes-agent]] — Nous Research's self-improving agent runtime
+- [[entities/hermes-agent]] — Nous Research's self-improving agent runtime
 - [[concepts/anthropic/managed-agents]] — Anthropic's meta-harness architecture for managed agents
 
 ## Entities

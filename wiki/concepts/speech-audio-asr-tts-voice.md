@@ -153,8 +153,8 @@ Small models (≤4B params) can run on edge devices:
 
 ## Related
 
-- [[concepts/_index]]
-- [[whisper]] — OpenAI's speech recognition model
+- [[entities/_index]]
+- [[concepts/whisper]] — OpenAI's speech recognition model
 - [[concepts/ai-agent-engineering]] — Voice agent architecture patterns
 - [[concepts/openai/realtime-api]] — OpenAI's Realtime API for native speech-to-speech agents
 - [[entities/openai]] — OpenAI's TTS and Realtime API

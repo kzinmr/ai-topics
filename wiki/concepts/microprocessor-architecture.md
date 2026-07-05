@@ -21,4 +21,4 @@ Stub page for Microprocessor Architecture.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

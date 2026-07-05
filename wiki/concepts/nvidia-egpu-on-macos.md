@@ -21,4 +21,4 @@ Stub page for NVIDIA eGPU on macOS.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

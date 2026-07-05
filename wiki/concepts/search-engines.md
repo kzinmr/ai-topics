@@ -21,4 +21,4 @@ Stub page for Search Engines.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -13,9 +13,9 @@ sources:
   - "arXiv:2408.08926"
 related_concepts:
   - "[[cybersecurity]]"
-  - "[[ai-agents]]"
+  - "[[concepts/ai-agents]]"
   - "[[safety-evaluation]]"
-  - "[[coding-agents]]"
+  - "[[entities/coding-agents]]"
 ---
 
 # Cybench
@@ -58,4 +58,4 @@ The benchmark framework includes:
 
 ## Connections to Other Wiki Concepts
 
-Cybench sits at the intersection of **cybersecurity** and AI evaluation, addressing growing concerns about LLM-enabled cyber capabilities. It connects to the **[[coding-agents]]** domain by testing whether code-generating models can both create and exploit security vulnerabilities. The benchmark's dual-use focus relates to broader **safety-evaluation** concerns addressed by [[decodingtrust]] and [[agentharm]], while its practical challenge format informs how **[[ai-agents]]** might be deployed (or misused) in security contexts.
+Cybench sits at the intersection of **cybersecurity** and AI evaluation, addressing growing concerns about LLM-enabled cyber capabilities. It connects to the **[[entities/coding-agents]]** domain by testing whether code-generating models can both create and exploit security vulnerabilities. The benchmark's dual-use focus relates to broader **safety-evaluation** concerns addressed by [[decodingtrust]] and [[agentharm]], while its practical challenge format informs how **[[concepts/ai-agents]]** might be deployed (or misused) in security contexts.

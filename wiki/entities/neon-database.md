@@ -76,5 +76,5 @@ Neon retains change history for branches:
 
 ## Related Entities
 
-- [[branch-aware-search]] — same branching concept applied to vector search (Qdrant)
+- [[concepts/branch-aware-search]] — same branching concept applied to vector search (Qdrant)
 - [[supabase]] — alternative serverless Postgres platform

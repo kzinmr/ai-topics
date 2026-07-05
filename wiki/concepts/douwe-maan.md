@@ -21,4 +21,4 @@ Stub page for douwe-maan.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

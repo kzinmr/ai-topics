@@ -208,9 +208,9 @@ With AI agents, vector search is a **tool**, not the whole system:
 
 ## Related Pages
 
-- [[embeddings]] — How embeddings are created and trained
-- [[bm25]] — Lexical scoring as complement to vector search
-- [[lexical-search]] — Token-based matching fundamentals
+- [[entities/embeddings]] — How embeddings are created and trained
+- [[concepts/bm25]] — Lexical scoring as complement to vector search
+- [[concepts/lexical-search]] — Token-based matching fundamentals
 - [[concepts/agentic-search]] — Agent-driven multi-arm retrieval
 - [[entities/turbopuffer]] — Native filtered vector search
 - [[entities/doug-turnbull]] — Search relevance + agentic search

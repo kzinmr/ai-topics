@@ -13,7 +13,7 @@ sources:
   - "Dawn Song (UC Berkeley)"
 related_concepts:
   - "[[benchmark-evaluation]]"
-  - "[[ai-agents]]"
+  - "[[concepts/ai-agents]]"
   - "[[evaluation-methodology]]"
   - "[[meta-evaluation]]"
 ---
@@ -58,4 +58,4 @@ BenchJack introduces a structured auditing framework:
 
 ## Connections to Other Wiki Concepts
 
-BenchJack represents **meta-evaluation** — evaluating the evaluators. As the number of **[[ai-agents]]** benchmarks grows rapidly, ensuring their quality becomes critical for reliable model assessment. The framework's **evaluation-methodology** contributions help the research community identify and address flaws in benchmarks like [[agentdojo]], [[agentharm]], and [[agent-security-bench]]. This meta-level quality assurance is essential for the broader **benchmark-evaluation** ecosystem to produce trustworthy and actionable results.
+BenchJack represents **meta-evaluation** — evaluating the evaluators. As the number of **[[concepts/ai-agents]]** benchmarks grows rapidly, ensuring their quality becomes critical for reliable model assessment. The framework's **evaluation-methodology** contributions help the research community identify and address flaws in benchmarks like [[agentdojo]], [[agentharm]], and [[agent-security-bench]]. This meta-level quality assurance is essential for the broader **benchmark-evaluation** ecosystem to produce trustworthy and actionable results.

@@ -21,4 +21,4 @@ Stub page for Dan Abramov.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

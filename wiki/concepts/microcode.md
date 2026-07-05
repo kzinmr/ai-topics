@@ -21,4 +21,4 @@ Stub page for microcode.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

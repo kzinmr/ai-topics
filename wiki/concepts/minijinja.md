@@ -21,4 +21,4 @@ Stub page for minijinja.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

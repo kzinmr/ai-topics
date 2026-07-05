@@ -21,4 +21,4 @@ Stub page for software-correctness.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

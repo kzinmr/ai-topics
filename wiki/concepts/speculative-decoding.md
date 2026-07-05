@@ -207,7 +207,7 @@ A key claim in the post is that **open-source engines (SGLang, vLLM) have closed
 
 Modal describes training custom speculators as **"ML on easy mode"**: the data-generating process is itself an ML model (the target LLM), so training data is effectively infinite and free. This eliminates the primary bottleneck of most ML projects (data collection/curation) and makes speculator training highly parallelizable and automatable. Combined with the 2-3× speedups from domain-specific speculators vs. negligible gains from kernel tuning, Modal argues the field is under-investing in speculative decoding.
 
-See also: [[entities/modal-labs]], [[entities/sglang]], [[entities/vllm]]
+See also: [[entities/modal-labs]], [[entities/sglang]], [[concepts/vllm]]
 
 ## Sources
 

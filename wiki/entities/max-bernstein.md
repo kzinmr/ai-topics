@@ -102,7 +102,7 @@ Bernstein's commitment to education extends beyond his blog. At Dartmouth, he te
 - [[entities/demis-hassabis]] — Static Single Assignment form; central to ZJIT's IR design
 -  — Instagram's performance-oriented CPython fork; one of five Python runtimes Bernstein has contributed to
 -  — Where Bernstein is Hacker in Residence and teaches compilers
-- [[geoffrey-litt]] — Fellow programmer-researcher; complementary focus on end-user programming vs. systems-level compilation
+- [[entities/geoffrey-litt]] — Fellow programmer-researcher; complementary focus on end-user programming vs. systems-level compilation
 
 ## Sources
 

@@ -65,7 +65,7 @@ This represents a fundamental shift from the training-time scaling laws (more pa
 | **Post-Training Scaling** | 2024–2025 | RLHF, DPO, GRPO, RLVR | "How well can we align the model?" |
 | **Test-Time Scaling** | 2024–present | Inference compute budget | "How long should the model think?" |
 
-> **Connection to [[scaling-hypothesis]]**: Test-time scaling validates Gwern's "Blessings of Scale" — that scaling is the most reliable way to improve AI — but extends it to a new dimension. The hypothesis now reads: "More compute → better performance, whether that compute is spent at training time _or_ at test time."
+> **Connection to [[concepts/scaling-hypothesis]]**: Test-time scaling validates Gwern's "Blessings of Scale" — that scaling is the most reliable way to improve AI — but extends it to a new dimension. The hypothesis now reads: "More compute → better performance, whether that compute is spent at training time _or_ at test time."
 
 ## Why Test-Time Scaling Works
 
@@ -106,7 +106,7 @@ The implication: **test-time scaling and training-time RL are complementary, not
 
 ### 1. Chain-of-Thought (CoT) — The Foundation
 
-> See [[chain-of-thought]] for full treatment.
+> See [[concepts/chain-of-thought]] for full treatment.
 
 Chain-of-Thought (Wei et al., 2022) is the most fundamental test-time scaling technique: the model generates intermediate reasoning steps before producing a final answer. Key properties:
 
@@ -244,13 +244,13 @@ This implies test-time scaling is not simply "think longer = better" — there a
 
 ### vs. Speculative Decoding
 
-[[speculative-decoding]] is often confused with test-time scaling, but serves a different purpose:
+[[concepts/speculative-decoding]] is often confused with test-time scaling, but serves a different purpose:
 - **Speculative decoding**: Faster inference (efficiency) — uses a small draft model + large verifier
 - **Test-time scaling**: Better outputs (quality) — uses additional compute for search/verification
 
 ### vs. Fine-Tuning / Post-Training
 
-[[post-training]] methods (RLHF, DPO, SFT) change the model's weights permanently. Test-time scaling works with a **frozen model** — it's an inference-time strategy. However, the most powerful test-time scaling (o1/R1) comes from models that were **specifically RL-trained** to produce good reasoning chains (via [[grpo]] / [[rlvr]]), blurring the line between training and inference.
+[[concepts/post-training]] methods (RLHF, DPO, SFT) change the model's weights permanently. Test-time scaling works with a **frozen model** — it's an inference-time strategy. However, the most powerful test-time scaling (o1/R1) comes from models that were **specifically RL-trained** to produce good reasoning chains (via [[grpo]] / [[rlvr]]), blurring the line between training and inference.
 
 ## Practical Implications
 
@@ -339,7 +339,7 @@ The complementary direction: instead of making TTS training-free, **train models
 | **InT** | Step-level credit assignment from failed traces; +10pts over plain RL | ICLR'26 |
 | **TTI** | Interaction-scaling > thought-scaling for agents | NeurIPS'25 Best Paper |
 
-→ See [[test-time-interaction-scaling]] for the agent-specific TTI paradigm.
+→ See [[concepts/test-time-interaction-scaling]] for the agent-specific TTI paradigm.
 
 1. **What is the ceiling?** Does test-time compute scaling hit a wall, or does it follow a power law like training-time scaling?
 2. **Verifier quality**: How good does a verifier need to be for search to beat simpler strategies?
@@ -349,23 +349,23 @@ The complementary direction: instead of making TTS training-free, **train models
 
 ## Structured vs. Unstructured Test-Time Scaling
 
-> See [[structured-test-time-scaling]] for the theoretical framework explaining why multi-agent, recursive, and coding systems outperform linear approaches.
+> See [[concepts/structured-test-time-scaling]] for the theoretical framework explaining why multi-agent, recursive, and coding systems outperform linear approaches.
 
 The techniques described above (CoT, self-consistency, Best-of-N, beam search) are **unstructured** — they operate within a single sequential context. **Structured test-time scaling** (Tu & Ye, 2026) explains how multi-context architectures (multi-agent teams, recursive LMs, coding agents with verifiers) achieve far better scaling via three-layer structural decoupling: topology compression, scope isolation, and decoupled verification. This reduces the effective failure exponent from Θ(W) to Õ(log W).
 
 ## Related Pages
 
-- [[structured-test-time-scaling]] — The unified theory of structured test-time scaling
-- [[scaling-hypothesis]] — The broader framework test-time scaling extends
-- [[chain-of-thought]] — The foundational technique for reasoning
+- [[concepts/structured-test-time-scaling]] — The unified theory of structured test-time scaling
+- [[concepts/scaling-hypothesis]] — The broader framework test-time scaling extends
+- [[concepts/chain-of-thought]] — The foundational technique for reasoning
 - [[rlvr]] — Reinforcement Learning with Verifiable Rewards, key training method
 - [[concepts/post-training/grpo]] — Group Relative Policy Optimization, used for R1 training
-- [[post-training]] — The middle scaling axis between pre-training and test-time
+- [[concepts/post-training]] — The middle scaling axis between pre-training and test-time
 - [[reasoning]] — AI reasoning capabilities and benchmarks
-- [[speculative-decoding]] — Complementary technique for faster (not better) inference
+- [[concepts/speculative-decoding]] — Complementary technique for faster (not better) inference
 - [[concepts/nvidia-vera-rubin]] — Hardware platform optimized for test-time compute workloads
 - [[rlm]] — Recursive Language Models applying test-time scaling recursively
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-agent systems as structured test-time scaling
 - [[training-free-rl]] — Approximating RL at inference time (ETS, Power Sampling)
-- [[test-time-interaction-scaling]] — Interaction-scaling for agentic tasks (TTI)
+- [[concepts/test-time-interaction-scaling]] — Interaction-scaling for agentic tasks (TTI)
 - [[on-policy-distillation]] — SDFT, SDPO as the complementary training direction

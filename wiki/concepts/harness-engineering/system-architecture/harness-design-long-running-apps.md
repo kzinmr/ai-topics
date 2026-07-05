@@ -181,4 +181,4 @@ The **same agent harness** is used, but with **different initial prompts:**
 - [[concepts/building-effective-agents]] — Fundamental principles of agent building
 - [[concepts/multi-agents/multi-agent-research-system]] — Multi-agent systems
 - [[concepts/context-engineering|Context Engineering]] — Context engineering
-- [[comparisons/evals-skills]] — Evaluation skills
+- [[concepts/evals-skills]] — Evaluation skills

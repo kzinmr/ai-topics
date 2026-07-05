@@ -21,4 +21,4 @@ Stub page for Open Source.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for Prompt Caching Strategies.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

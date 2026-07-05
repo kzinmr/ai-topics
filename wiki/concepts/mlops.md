@@ -21,4 +21,4 @@ Stub page for MLOps.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

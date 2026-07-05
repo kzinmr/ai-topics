@@ -108,7 +108,7 @@ At Ramp, Sengottuvelu's team uses constrained decoding to extract structured inf
 
 - [[concepts/ai-agent-architecture]] — Sengottuvelu's work on agent scaffolding and the "bitter lesson" applied to AI agents
 - [[concepts/constrained-decoding]] — The technique pioneered in Jsonformer for reliable structured output
-- [[concepts/ramp]] — The fintech company where Sengottuvelu currently leads Applied AI
+- [[entities/ramp]] — The fintech company where Sengottuvelu currently leads Applied AI
 - [[concepts/cohereio]] — His co-founded startup, acquired by Ramp in 2023
 - [[concepts/rich-suttons-bitter-lesson]] — The foundational essay that informs Sengottuvelu's approach to AI agent design
 -  — Sengottuvelu's concept of a future where AI agents interact with products programmatically

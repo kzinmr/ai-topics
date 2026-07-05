@@ -95,7 +95,7 @@ Key views:
 ## Related
 
 - [[ai-safety]] — Zvi covers AI safety extensively
-- [[anthropic]] — Primary subject of model welfare coverage
+- [[entities/anthropic]] — Primary subject of model welfare coverage
 - [[ai-governance]] — Covers AI policy and regulation
 - [[model-welfare]] — Concept Zvi tracks closely
 - [[existential-risk]] — Background interest from rationality community

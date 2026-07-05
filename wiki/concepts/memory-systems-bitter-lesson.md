@@ -64,8 +64,8 @@ Applying the Bitter Lesson to memory systems is debatable:
 ## Related Concepts
 
 - [[concepts/claude/perfect-memory]] — File-based memory in practice
-- [[concepts/company-ai-pilled]] — AI adoption maturity model
-- [[concepts/autoreason]] — Self-improving reasoning
+- [[entities/company-ai-pilled]] — AI adoption maturity model
+- [[entities/autoreason]] — Self-improving reasoning
 
 ## Sources
 

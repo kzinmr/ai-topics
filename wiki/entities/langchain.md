@@ -170,13 +170,13 @@ See [[concepts/security-and-governance/agentic-security]] for broader agent secu
 
 ## Related Concepts
 - [[concepts/langgraph]] — Low-level agent orchestration framework
-- [[langsmith]] — Observability and evaluation platform for LLM apps
+- [[entities/langsmith]] — Observability and evaluation platform for LLM apps
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
-- [[llamaindex]] — Competing data framework for LLM applications
+- [[entities/llamaindex]] — Competing data framework for LLM applications
 - [[entities/dspy]] — Declarative LM programming framework (alternative paradigm)
 - [[agent-engineering]] — The discipline of building reliable AI agents
 - [[concepts/mcp]] — Model Context Protocol for tool interoperability
-- [[deep-agents]] — Long-running autonomous agent pattern
+- [[concepts/deep-agents]] — Long-running autonomous agent pattern
 
 ## Sources
 - [LangChain Official Site](https://www.langchain.com/)

@@ -68,5 +68,5 @@ Distilled models have the **potential to surpass** the original API model:
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/local-llm/model-distillation]]

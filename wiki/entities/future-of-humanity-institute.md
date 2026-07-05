@@ -18,7 +18,7 @@ sources:
 
 ## Overview
 
-The **Future of Humanity Institute** was a multidisciplinary research institute at the University of Oxford, founded in 2005 by [[entities/nick-bostrom]]. FHI focused on existential risks, future technologies, and long-term human flourishing. It was one of the most influential institutions in the AI safety and existential risk movements.
+The **Future of Humanity Institute** was a multidisciplinary research institute at the University of Oxford, founded in 2005 by [[concepts/nick-bostrom]]. FHI focused on existential risks, future technologies, and long-term human flourishing. It was one of the most influential institutions in the AI safety and existential risk movements.
 
 FHI **closed in April 2024** after Oxford University declined to renew its operational arrangements, citing administrative and fundraising challenges.
 
@@ -68,7 +68,7 @@ Despite its closure, FHI's intellectual legacy remains foundational:
 
 ## Related Pages
 
-- [[entities/nick-bostrom]] — FHI founder and director
+- [[concepts/nick-bostrom]] — FHI founder and director
 - [[entities/k-eric-drexler|K. Eric Drexler]] — Author of *Reframing Superintelligence* at FHI
 - [[concepts/comprehensive-ai-services]] — CAIS framework, developed at FHI
 - [[concepts/security-and-governance/ai-safety]] — FHI's core research domain

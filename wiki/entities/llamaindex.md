@@ -135,7 +135,7 @@ LlamaIndex extends beyond passive retrieval into autonomous reasoning and action
 - **Context Engineering** — the discipline of optimizing how information is structured and delivered to LLMs (2025)
 
 ## Related Concepts
-- [[langchain]] — Competing general-purpose LLM application framework
+- [[entities/langchain]] — Competing general-purpose LLM application framework
 - [[concepts/rags]] — Retrieval-Augmented Generation patterns and techniques
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
 - [[concepts/context-engineering|Context Engineering]] — Discipline popularized by LlamaIndex

@@ -21,4 +21,4 @@ Stub page for jeremy-howard.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

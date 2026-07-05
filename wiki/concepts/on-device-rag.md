@@ -181,10 +181,10 @@ Recent work combines multiple RAG functions into single models:
 ## Related Concepts
 
 - [[concepts/context-engineering/context-compression|Context Compression]]: Techniques for reducing context size in RAG systems
-- [[edge-ai]]: Deploying AI models on edge devices with resource constraints
+- [[concepts/edge-ai]]: Deploying AI models on edge devices with resource constraints
 - [[concepts/local-llm/_index]]: Running large language models locally on consumer hardware
-- [[embeddings]]: Vector representations used for retrieval and compression
-- [[colbert]]: Late interaction retrieval model using multi-vector representations
+- [[entities/embeddings]]: Vector representations used for retrieval and compression
+- [[concepts/colbert]]: Late interaction retrieval model using multi-vector representations
 - [[privacy-preserving-ai]]: AI techniques that protect user data privacy
 - [[mobile-ai]]: AI applications optimized for mobile devices
 

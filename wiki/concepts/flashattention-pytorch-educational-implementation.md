@@ -21,4 +21,4 @@ Stub page for FlashAttention PyTorch Educational Implementation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

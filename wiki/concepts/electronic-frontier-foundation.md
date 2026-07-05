@@ -21,4 +21,4 @@ Stub page for Electronic Frontier Foundation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

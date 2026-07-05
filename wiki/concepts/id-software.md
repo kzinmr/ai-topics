@@ -21,4 +21,4 @@ Stub page for id-software.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -65,7 +65,7 @@ Outcome-Based Pricing is a pricing model that charges based on **actual results 
 
 ## Related Pages
 
-- [[saas-agent-era]] — Structural changes in SaaS during the AI Agent era
-- [[service-as-software]] — Evolution from software to service delivery
+- [[concepts/saas-agent-era]] — Structural changes in SaaS during the AI Agent era
+- [[concepts/service-as-software]] — Evolution from software to service delivery
 - [[enterprise-ai]] — Overview of enterprise AI adoption
 - [[agent-evaluation]] — Agent evaluation infrastructure design

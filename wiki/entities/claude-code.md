@@ -47,9 +47,9 @@ Achieves 72.7% on SWE-bench Verified. As of April 2026, the industry-leading cod
 
 ## Sub-Pages
 
-- **[[claude-code--capabilities]]** — Key metrics, latest features (Ultraplan, Monitor, Auto Mode, Routines, CLI Computer Use, Fast Mode), and key capabilities (Subagents, MCP Integration, Slash Commands, Checkpointing, Skills System)
-- **[[claude-code--architecture]]** — 5-layer decomposition, 7-component flow, core loop, infrastructure dominance (98.4% deterministic infra)
-- **[[claude-code--history]]** — Origins, internal dogfooding, GA, Agent Teams GA, and the source code leak incident
+- **[[entities/claude-code--capabilities]]** — Key metrics, latest features (Ultraplan, Monitor, Auto Mode, Routines, CLI Computer Use, Fast Mode), and key capabilities (Subagents, MCP Integration, Slash Commands, Checkpointing, Skills System)
+- **[[entities/claude-code--architecture]]** — 5-layer decomposition, 7-component flow, core loop, infrastructure dominance (98.4% deterministic infra)
+- **[[entities/claude-code--history]]** — Origins, internal dogfooding, GA, Agent Teams GA, and the source code leak incident
 
 ## Key Metrics (2026)
 
@@ -71,7 +71,7 @@ Achieves 72.7% on SWE-bench Verified. As of April 2026, the industry-leading cod
 - [[entities/boris-cherny]] — Creator
 - [[entities/anthropic]] — Developer
 - [[concepts/claude/mythos]] — Withheld high-security model
-- [[concepts/project-glasswing]] — Safety initiative
+- [[entities/project-glasswing]] — Safety initiative
 - [[concepts/harness-engineering]]
 
 ## Sources

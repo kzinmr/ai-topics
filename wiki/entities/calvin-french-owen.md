@@ -14,7 +14,7 @@ sources:
 related:
   - "[[concepts/openai/reflections-on-openai]]"
   - "[[entities/openai]]"
-  - "[[concepts/openai-codex]]"
+  - "[[entities/openai-codex]]"
 ---
 
 # Calvin French-Owen
@@ -46,4 +46,4 @@ Key themes:
 
 ## Related
 - [[concepts/openai/reflections-on-openai]]
-- [[concepts/openai-codex]]
+- [[entities/openai-codex]]

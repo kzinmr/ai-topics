@@ -21,4 +21,4 @@ Stub page for Local Llm Models April 2026.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

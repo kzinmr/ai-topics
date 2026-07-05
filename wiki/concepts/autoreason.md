@@ -21,7 +21,7 @@ A self-refinement framework for AI reasoning that extends [[concepts/karpathy-lo
 
 ## Definition / Core Idea
 
-Autoreason (by SHL0MS & Hermes Agent at [[nous-research]]) fixes the core problem with LLM self-improvement: models hallucinate flaws when asked to critique their own work, outputs expand without bound on each revision, and models never say "no changes needed."
+Autoreason (by SHL0MS & Hermes Agent at [[entities/nous-research]]) fixes the core problem with LLM self-improvement: models hallucinate flaws when asked to critique their own work, outputs expand without bound on each revision, and models never say "no changes needed."
 
 ## Core Mechanism
 
@@ -49,8 +49,8 @@ These are judged by **fresh agents with no shared context** via blind **Borda co
 ## Connection to Other Concepts
 
 - [[concepts/karpathy-loop]] — AutoResearch as the precursor for autonomous research loops
-- [[agentic-scaffolding]] — Autoreason provides scaffolding around reasoning itself
-- [[gepa]] — Both use multi-candidate evaluation and Pareto-style optimization
+- [[concepts/agentic-scaffolding]] — Autoreason provides scaffolding around reasoning itself
+- [[concepts/gepa]] — Both use multi-candidate evaluation and Pareto-style optimization
 
 ## TODO: Research Items
 - [ ] Track NousResearch paper publication and benchmark results

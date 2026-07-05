@@ -21,4 +21,4 @@ Stub page for david-steurer.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

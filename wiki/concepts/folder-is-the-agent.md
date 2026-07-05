@@ -91,5 +91,5 @@ This pattern anticipated and validates:
 - [[entities/dan-shipper]] — Every's CEO who champions this approach
 - [[concepts/compound-engineering-every]] — The broader engineering philosophy
 - [[concepts/harness-engineering/agent-native-architecture]] — Design principles this pattern exemplifies
-- [[openclaw]] — Alternative agent architecture (folder-vs-hosted)
+- [[entities/openclaw]] — Alternative agent architecture (folder-vs-hosted)
 - [[concepts/context-engineering|Context Engineering]] — The folder as context container

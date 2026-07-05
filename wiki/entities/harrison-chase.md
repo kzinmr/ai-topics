@@ -19,7 +19,7 @@ sources:
   - "https://www.linkedin.com/in/harrison-chase-961287118"
 related:
   - "[[entities/langchain]]"
-  - "[[entities/deep-agents]]"
+  - "[[concepts/deep-agents]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/nvidia]]"
   - "[[entities/nvidia-nemoclaw]]"

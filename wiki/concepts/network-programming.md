@@ -21,4 +21,4 @@ Stub page for Network Programming.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

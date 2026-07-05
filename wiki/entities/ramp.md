@@ -134,7 +134,7 @@ In a May 2026 case study, Ramp's AI DevEx lead **Austin Ray** detailed how Ramp 
 - **Engineers as orchestrators**: "The skill is no longer writing every line of code yourself. It's knowing how to direct AI tools like Codex, when to trust them, and when to push back."
 - **Adoption advice**: Demonstrate first-hand, build trust through guided sessions, invest in the vendor feedback loop.
 
-This represents a significant endorsement of Codex over [[inspect]] for certain workflows — Ramp uses both its own background agent (Inspect) and OpenAI's Codex for different parts of the development pipeline.
+This represents a significant endorsement of Codex over [[entities/inspect]] for certain workflows — Ramp uses both its own background agent (Inspect) and OpenAI's Codex for different parts of the development pipeline.
 
 ## Sources
 

@@ -116,14 +116,14 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 
 - [[renderers]] — token-level templating library
 - [[verifiers-rl]] — verifiable RL training
-- [[intellect-2]] — 32B reasoning model (May 2025)
+- [[entities/intellect-2]] — 32B reasoning model (May 2025)
 - [[reinforcement-learning]]
 - [[grpo]]
-- [[trl-transformer-reinforcement-learning]]
-- [[open-source-rl-libraries-comparison]]
-- [[vincent-weisser]] — Co-founder & CEO
-- [[will-brown]] — RL research
-- [[florian-brand]] — evals research
-- [[elie-bakouch]] — LLM training
+- [[concepts/trl-transformer-reinforcement-learning]]
+- [[comparisons/open-source-rl-libraries-comparison]]
+- [[entities/vincent-weisser]] — Co-founder & CEO
+- [[entities/will-brown]] — RL research
+- [[entities/florian-brand]] — evals research
+- [[entities/elie-bakouch]] — LLM training
 - [[entities/grad|Fares Obeid (Grad)]] — Research Engineer
 - [[concepts/agents-mcp-rl-course]] — Maven course by Will Brown & Kyle Corbitt (verifiers/GRPO education)

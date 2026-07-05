@@ -90,7 +90,7 @@ Autoreason is the **first application of "automated self-improvement" to the dom
 A natural extension of Karpathy's AutoResearch and an important milestone in automating research and creative processes with LLMs.
 
 ## Related Concepts
-- [[concepts/autoreason]]
+- [[entities/autoreason]]
 
 - [Karpathy's AutoResearch](https://karpathy.github.io/2025/04/28/self-play-benchmark.html)
 - [Agent Disagreement (Agreement Bug)](agreement-bug.md)

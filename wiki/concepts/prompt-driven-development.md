@@ -21,4 +21,4 @@ Stub page for Prompt-Driven Development.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

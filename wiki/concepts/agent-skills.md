@@ -90,7 +90,7 @@ Skills can include executable code:
 
 ## OpenAI Codex Skills Implementation
 
-OpenAI implements skills in [[codex]] using the same open standard, with an emphasis on repo-local workflows, mandatory routing via `AGENTS.md`, and CI automation through GitHub Actions.
+OpenAI implements skills in [[entities/codex]] using the same open standard, with an emphasis on repo-local workflows, mandatory routing via `AGENTS.md`, and CI automation through GitHub Actions.
 
 ### Repo-Local Skills + AGENTS.md
 
@@ -170,10 +170,10 @@ The skill behind Claude's document editing capabilities:
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
 - [[concepts/mcp]] — Model Context Protocol
 - [[concepts/claude-code/claude-code-best-practices]] — Claude Code best practices
-- [[agent-skills-skillmd]] — SKILL.md format details
-- [[codex]] — OpenAI Codex
+- [[concepts/agent-skills-skillmd]] — SKILL.md format details
+- [[entities/codex]] — OpenAI Codex
 - [[concepts/evaluation/evals-for-ai-agents]] — Evals for AI agents
-- [[harness-engineering]] — Harness engineering
+- [[concepts/harness-engineering]] — Harness engineering
 
 ## Skills Ecosystem: Practitioner Perspectives
 

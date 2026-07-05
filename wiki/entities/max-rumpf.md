@@ -120,9 +120,9 @@ On Lukas Petersson's Audio Tokens podcast, in relation to the debate about horiz
 
 ## Related Pages
 
-- [[sid-1]] - SID first agentic retrieval model
+- [[concepts/sid-1]] - SID first agentic retrieval model
 - [[grpo]] - Group Relative Policy Optimization
-- [[agentic-retrieval]] - Agentic information retrieval
+- [[concepts/agentic-retrieval]] - Agentic information retrieval
 - [[magistral]] - Developer of the modified GRPO used for SID-1 training
 - [[moravecs-paradox]] - Foundation concept for "Robots Might Be 1000x Harder"
 - [[amdahls-law]] - Theoretical foundation for Amdahl's Argument for AI

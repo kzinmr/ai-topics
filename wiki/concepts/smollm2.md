@@ -21,4 +21,4 @@ Stub page for SmolLM2.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

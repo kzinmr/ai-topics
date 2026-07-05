@@ -145,5 +145,5 @@ Source: [[raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in
 ## Related
 
 - [[concepts/apple-gemini-ai-architecture]] — Apple's broader AI architecture strategy with Google Gemini integration
-- [[entities/apple]] — Apple company profile
+- [[concepts/apple]] — Apple company profile
 - [[concepts/apple-intelligence]] — The underlying Apple Intelligence platform

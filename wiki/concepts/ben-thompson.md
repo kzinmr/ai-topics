@@ -21,4 +21,4 @@ Stub page for Ben Thompson.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

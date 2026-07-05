@@ -226,7 +226,7 @@ Writing a good exclusion list is **cheaper and more effective** than training a 
 
 > *"The better-built tools, the ones that read the repo before reporting, are the ones a policy file can steer, and those are increasingly the ones doing the scanning. Writing the threat model down was always good practice for human reporters, and it turns out the new readers take it more literally than the old ones ever did."*
 
-Related: [[concepts/agent-safety]], [[concepts/project-glasswing]]
+Related: [[concepts/agent-safety]], [[entities/project-glasswing]]
 
 ### "CHAOSS Metrics in 2026" — AI Agents Break Open Source Measurement
 

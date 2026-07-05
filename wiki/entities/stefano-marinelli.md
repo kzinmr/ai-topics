@@ -103,7 +103,7 @@ Marinelli helped launch the **illumos Cafe** — a community-run hub on illumos,
 
 - [[entities/jayden-milne]] — AI culture criticism, digital sovereignty
 - [[entities/george-hotz]] — AI infrastructure, open-source ethos
-- [[grant-slatton]] — AI alignment, technocapital economics
+- [[entities/grant-slatton]] — AI alignment, technocapital economics
 - [[entities/john-carmack]] — Pragmatic AI tool use
 -  — Operating system Marinelli advocates for and uses extensively-  — Open-source Solaris derivative, community infrastructure-  — Self-hosted infrastructure, community control
 ## Sources

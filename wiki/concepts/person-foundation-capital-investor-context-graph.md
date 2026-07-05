@@ -21,4 +21,4 @@ Stub page for person, foundation-capital, investor, context-graph.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

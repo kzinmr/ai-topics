@@ -58,6 +58,6 @@ The leaderboard is hosted at: https://huggingface.co/spaces/mteb/leaderboard
 
 ## Related Concepts
 
-- [[embeddings]] -- Dense vector representations that MTEB evaluates
+- [[entities/embeddings]] -- Dense vector representations that MTEB evaluates
 - [[semantic-search]] -- Primary use case for embedding models benchmarked by MTEB
 - [[huggingface]] -- Host platform for the MTEB leaderboard

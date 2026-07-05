@@ -90,7 +90,7 @@ This concept represents a fundamental shift in how we think about AI and securit
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/illusion-of-thinking]]
 - [[concepts/cognitive-cost-of-agents]]
 - [[concepts/back-of-house-multi-agent-patterns]]

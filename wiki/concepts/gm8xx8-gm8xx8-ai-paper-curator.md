@@ -21,4 +21,4 @@ Stub page for gm8xx8 (@gm8xx8) — AI Paper Curator.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

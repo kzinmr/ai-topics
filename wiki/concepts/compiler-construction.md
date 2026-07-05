@@ -21,4 +21,4 @@ Stub page for Compiler Construction.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

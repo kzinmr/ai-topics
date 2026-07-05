@@ -26,7 +26,7 @@ sources:
 related:
   - "[[entities/hermes-agent]]"
   - "[[concepts/hermes-agent-use-cases]]"
-  - "[[concepts/reflexive-ai]]"
+  - "[[entities/reflexive-ai]]"
   - "[[concepts/agentic-engineering]]"
   - "[[concepts/compound-engineering-every]]"
   - "[[entities/every-inc]]"
@@ -96,7 +96,7 @@ Authored a comprehensive 30-day analysis of Hermes Agent use cases across 7 plat
 - Named as the definitive community landscape study for the Hermes Agent ecosystem
 
 ### AI Adoption & Reflexive AI
-- Documented Shopifys Reflexive AI Baseline policy ([[concepts/reflexive-ai]])
+- Documented Shopifys Reflexive AI Baseline policy ([[entities/reflexive-ai]])
 - Published research on entrepreneurship trends grounded in Shopify's internal data science
 - Case study referenced as a model for organizational AI adoption
 
@@ -115,5 +115,5 @@ Van Horn publishes analysis at the intersection of AI adoption, entrepreneurship
 - [[entities/every-inc]] — The company behind Compound Engineering, Monologue, Proof
 - [[entities/hermes-agent]]
 - [[concepts/hermes-agent-use-cases]]
-- [[concepts/reflexive-ai]]
-- [[concepts/solo-founder-stack]]
+- [[entities/reflexive-ai]]
+- [[entities/solo-founder-stack]]

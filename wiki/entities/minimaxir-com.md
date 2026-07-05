@@ -84,7 +84,7 @@ Woolf popularized the use of **`AGENTS.md`** as a persistent, project-level conf
 **NEVER** include API keys or secrets in code or logs.
 ```
 
-This is a significant methodological contribution to the agentic coding discourse. Rather than relying on in-context prompting for every interaction, Woolf externalizes project standards into version-controlled files that persist across sessions. This addresses the "anterograde amnesia" problem that others (like [[miguel-grinberg]]) have identified with AI tools.
+This is a significant methodological contribution to the agentic coding discourse. Rather than relying on in-context prompting for every interaction, Woolf externalizes project standards into version-controlled files that persist across sessions. This addresses the "anterograde amnesia" problem that others (like [[entities/miguel-grinberg]]) have identified with AI tools.
 
 ### The "Literal Genie" Problem
 
@@ -142,7 +142,7 @@ Woolf identifies a persistent gap in technical education: **there are few resour
 [[concepts/buzzfeed]] — Woolf's employer; Senior Data Scientist working on AI initiatives
 [[concepts/polars]] — Python data processing library Woolf advocates over pandas
  — Language Woolf has been exploring with AI-assisted development
-[[miguel-grinberg]] — Fellow blogger with contrasting views on AI coding tools
+[[entities/miguel-grinberg]] — Fellow blogger with contrasting views on AI coding tools
  — Python implementation; Woolf's benchmarks compare against C/C++ implementations
 CUDA — NVIDIA GPU computing platform; Woolf explores agent-driven algorithm porting
  — Funding platform supporting Woolf's independent research

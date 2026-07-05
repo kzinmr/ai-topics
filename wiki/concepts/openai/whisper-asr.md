@@ -21,4 +21,4 @@ Stub page for speech, asr, openai, whisper, audio.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -295,11 +295,11 @@ ultracode  orchestrate sub-agents to ship the feature  # 2 · fan out
 
 ## Related
 
-- [[harness-engineering]]
+- [[concepts/harness-engineering]]
 - 
-- [[ryan-lopopolo]]
-- [[simon-willison]]
-- [[karpathy]]
+- [[entities/ryan-lopopolo]]
+- [[entities/simon-willison]]
+- [[concepts/karpathy]]
 
 ## Sources
 

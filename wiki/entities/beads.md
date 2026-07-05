@@ -22,7 +22,7 @@ sources:
 
 **Beads** (`bd`) is a distributed graph issue tracker designed from the ground up for **AI-supervised coding workflows**. Created by **Steve Yegge** (former Google, Amazon engineer) under the **Gastown Hall** organization, Beads provides persistent, structured memory for coding agents — replacing ad-hoc markdown plans with a dependency-aware graph database.
 
-Beads is built on top of [[dolt]] (a version-controlled SQL database), giving it built-in branching, cell-level merge, and distributed sync via Dolt remotes. It is implemented primarily in Go (94.2%) with MIT license.
+Beads is built on top of [[entities/dolt]] (a version-controlled SQL database), giving it built-in branching, cell-level merge, and distributed sync via Dolt remotes. It is implemented primarily in Go (94.2%) with MIT license.
 
 > "Beads provides a persistent, structured memory for coding agents. It replaces messy markdown plans with a dependency-aware graph, allowing agents to handle long-horizon tasks without losing context."
 > — Steve Yegge, Beads GitHub Repository
@@ -169,7 +169,7 @@ Available via PyPI (`beads-mcp`) — allows any MCP-compatible agent to interact
 
 ## Related
 
-- [[dolt]] — The version-controlled SQL database that powers Beads
+- [[entities/dolt]] — The version-controlled SQL database that powers Beads
 - [[entities/claude-code]] — Primary target agent for Beads integration
 - [[claude-perfect-memory]] — Filesystem-based persistent memory, alternative approach
 - [[concepts/agent-memory-systems]] — Broader category of agent memory approaches

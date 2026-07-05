@@ -21,4 +21,4 @@ Stub page for Maxime Chevalier-Boisvert.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -16,7 +16,7 @@ sources:
 
 # LLaMA 4
 
-**LLaMA 4** is Meta's fourth-generation open-weight large language model family, released in April 2026. It succeeds [[concepts/llama-3]] and introduces multimodal capabilities, new architecture variants, and significant performance improvements over its predecessor.
+**LLaMA 4** is Meta's fourth-generation open-weight large language model family, released in April 2026. It succeeds [[entities/llama-3]] and introduces multimodal capabilities, new architecture variants, and significant performance improvements over its predecessor.
 
 ## Overview
 

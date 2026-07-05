@@ -283,14 +283,14 @@ DeepSeek developed a technique achieving **9-12x text compression** by using vis
 ## Relationships
 
 - [[entities/china-ai-industry]] — Key company driving China's AI competitiveness
-- [[nvidia]] — Competitor in AI hardware; DeepSeek reducing dependence on NVIDIA
-- [[open-source-ai]] — Leading open-source AI model provider
+- [[entities/nvidia]] — Competitor in AI hardware; DeepSeek reducing dependence on NVIDIA
+- [[concepts/open-source-ai]] — Leading open-source AI model provider
 - [[concepts/deepseek-v3]] — Predecessor model series
 - [[concepts/deepseek-v3-2]] — Intermediate model (DSA, scalable RL, agent synthesis)
 - [[concepts/deepseek-v4]] — Latest model series (1M context, Hybrid Attention, mHC)
 - [[concepts/deepseek-r1]] — Reasoning model (Nature 2025)
 - [[concepts/post-training/grpo]] — RL algorithm introduced in R1
-- [[token-economics]] — Pricing disruption context
+- [[concepts/token-economics]] — Pricing disruption context
 - [[concepts/inference]] — Efficiency innovations in V4 architecture
 - [[entities/simon-willison]] — Covered V4 technical details
 - [[entities/kimi]] — Competitor (K2.6 at 1.1T)

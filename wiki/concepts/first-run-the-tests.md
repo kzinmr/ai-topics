@@ -21,4 +21,4 @@ Stub page for First Run the Tests.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

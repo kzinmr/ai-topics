@@ -21,7 +21,7 @@ related:
   - "[[entities/pi]]"
   - "[[entities/codex]]"
   - "[[entities/claude-code]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
   - "[[concepts/modal-sandboxes]]"
   - "[[concepts/coding-agents/background-coding-agent]]"
 ---

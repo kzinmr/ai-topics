@@ -16,7 +16,7 @@ related:
   - "[[concepts/human-in-the-loop]]"
   - "[[comparisons/agent-orchestration-frameworks]]"
   - "[[concepts/harness-engineering]]"
-  - "[[entities/deep-agents]]"
+  - "[[concepts/deep-agents]]"
 sources:
   - raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md
   - "https://langchain-ai.github.io/langgraph/"
@@ -115,4 +115,4 @@ Harrison Chase's [living comparison spreadsheet](https://docs.google.com/spreads
 - [[concepts/human-in-the-loop]] — Human-AI interaction patterns LangGraph enables
 - [[concepts/harness-engineering]] — Higher-level agent architecture framework
 - [[comparisons/agent-orchestration-frameworks]] — Competitive landscape
-- [[entities/deep-agents]] — LangChain's open-source agent harness built on LangGraph
+- [[concepts/deep-agents]] — LangChain's open-source agent harness built on LangGraph

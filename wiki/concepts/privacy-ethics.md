@@ -21,4 +21,4 @@ Stub page for Privacy Ethics.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

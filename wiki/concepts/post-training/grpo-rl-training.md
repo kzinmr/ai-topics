@@ -153,7 +153,7 @@ See also: [[concepts/agents-mcp-rl-course]], [[concepts/post-training/grpo-infra
 - [[concepts/post-training/on-policy-distillation]] — Foundational OPD (reverse-KL distillation)
 - [[concepts/model-distillation]] — Broader distillation category
 - [[concepts/deepseek-r1]] — DeepSeek-R1, which popularized GRPO for reasoning RL
-- [[concepts/_index]]
+- [[entities/_index]]
 
 
 - [[concepts/post-training/llm-as-policy]] — LLM-as-Policy paradigm: the overarching framework connecting GRPO, RLVR, reward model vs critic, and inference-time scaling

@@ -21,4 +21,4 @@ Stub page for Polecats.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

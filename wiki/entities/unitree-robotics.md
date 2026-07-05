@@ -49,7 +49,7 @@ Core conviction: humanoid robots only matter at scale if affordable at scale. Ag
 
 ## Key Person
 
-- **Wang Xingxing** — Founder & CEO. Previously worked at [[dji]]. Disclosed 2026 shipment targets to 36Kr immediately after Spring Festival Gala.
+- **Wang Xingxing** — Founder & CEO. Previously worked at [[entities/dji]]. Disclosed 2026 shipment targets to 36Kr immediately after Spring Festival Gala.
 
 ## Market Impact
 
@@ -68,7 +68,7 @@ SemiAnalysis published an analysis arguing that **Unitree will dominate the glob
 ## Relationships
 
 - [[entities/china-ai-industry]] — Key company in China's robotics ecosystem
-- [[dji]] — Founder Wang Xingxing previously worked at DJI
+- [[entities/dji]] — Founder Wang Xingxing previously worked at DJI
 - [[entities/agi-bot]] — Competitor in humanoid robot market (5,168 units shipped in 2025)
-- [[ubtech-robotics]] — Competitor in humanoid and service robot market
-- [[fourier-intelligence]] — Competitor in humanoid and rehabilitation robotics
+- [[entities/ubtech-robotics]] — Competitor in humanoid and service robot market
+- [[entities/fourier-intelligence]] — Competitor in humanoid and rehabilitation robotics

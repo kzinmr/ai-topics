@@ -21,4 +21,4 @@ Stub page for Open Source Sustainability.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

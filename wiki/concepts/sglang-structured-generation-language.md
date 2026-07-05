@@ -21,4 +21,4 @@ Stub page for SGLang (Structured Generation Language).
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

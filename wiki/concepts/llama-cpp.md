@@ -21,4 +21,4 @@ Stub page for Llama Cpp.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for karpathy-rl-agents.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

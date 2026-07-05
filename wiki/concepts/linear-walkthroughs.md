@@ -21,4 +21,4 @@ Stub page for Linear Walkthroughs.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

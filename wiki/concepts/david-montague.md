@@ -21,4 +21,4 @@ Stub page for david-montague.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

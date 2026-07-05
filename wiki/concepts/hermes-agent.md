@@ -22,7 +22,7 @@ aliases: [nous-hermes, hermes-agent-framework]
 
 > **One-line pitch:** An open-source personal AI agent that gets better the longer you use it — self-evolving skills, three-tier memory, and GEPA optimization in a single framework. Crossed 90K+ GitHub stars in under two months (May 2026).
 
-Hermes Agent, built by [[nous-research]], is a self-hosted personal AI agent that learns across sessions. It ships with a closed learning loop: the agent remembers context, writes its own reusable skills, prunes them in the background, and validates them offline through an evolutionary engine. No other open-source agent combines all three capabilities — not even [[openclaw]].
+Hermes Agent, built by [[entities/nous-research]], is a self-hosted personal AI agent that learns across sessions. It ships with a closed learning loop: the agent remembers context, writes its own reusable skills, prunes them in the background, and validates them offline through an evolutionary engine. No other open-source agent combines all three capabilities — not even [[entities/openclaw]].
 
 ## Architecture
 
@@ -62,7 +62,7 @@ Hermes does not have a single "memory" — it has three layers operating at diff
 
 ## Self-Evolving Skills
 
-Skills are the agent's **procedural memory**: Markdown files with YAML frontmatter that encode *how* to do things, not just what it knows. See [[agent-skills]] for the broader concept.
+Skills are the agent's **procedural memory**: Markdown files with YAML frontmatter that encode *how* to do things, not just what it knows. See [[concepts/agent-skills]] for the broader concept.
 
 **Progressive disclosure** keeps token costs low:
 - **Level 0**: Names + descriptions only (~3K tokens for full catalog)
@@ -89,7 +89,7 @@ Without maintenance, skills pile up — dozens of narrow, overlapping playbooks 
 
 ## GEPA Integration
 
-The in-agent learning loop has a known weakness: the agent tends toward self-congratulation, overwriting manual customizations with worse versions. [[gepa]] (Genetic-Pareto Prompt Evolution, ICLR 2026 Oral) addresses this as an **offline optimization pipeline** in a companion repository (`NousResearch/hermes-agent-self-evolution`).
+The in-agent learning loop has a known weakness: the agent tends toward self-congratulation, overwriting manual customizations with worse versions. [[concepts/gepa]] (Genetic-Pareto Prompt Evolution, ICLR 2026 Oral) addresses this as an **offline optimization pipeline** in a companion repository (`NousResearch/hermes-agent-self-evolution`).
 
 **Pipeline:** Read current skill → generate evaluation dataset (synthetic test cases via Claude Opus, real SQLite session history, or hand-curated golden sets) → run GEPA optimizer (read execution traces → understand failure points → generate candidate variants) → evaluate via LLM-as-judge scoring with rubrics → constraint gates (100% test suite pass, <15KB, caching compatibility, semantic drift guard) → best variant goes out as a **PR** (never a direct commit).
 
@@ -105,7 +105,7 @@ Hermes ships with a built-in scheduler. The gateway daemon ticks every 60 second
 
 ## Comparison with OpenClaw
 
-[[openclaw]] is the closest open-source comparison — both are persistent, messaging-friendly agents — but they make opposite architectural choices. A clean framing from the Kilo blog: **"Hermes packages a gateway around a learning agent. OpenClaw packages an agent around a messaging gateway."**
+[[entities/openclaw]] is the closest open-source comparison — both are persistent, messaging-friendly agents — but they make opposite architectural choices. A clean framing from the Kilo blog: **"Hermes packages a gateway around a learning agent. OpenClaw packages an agent around a messaging gateway."**
 
 | Dimension | Hermes Agent | OpenClaw |
 |---|---|---|
@@ -122,7 +122,7 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for a full side-by-side anal
 
 ## Key Facts
 
-- **Developer:** [[nous-research]]
+- **Developer:** [[entities/nous-research]]
 - **Released:** February 25, 2026
 - **License:** Open-source (MIT)
 - **Stars:** 140K+ (May 2026)

@@ -87,5 +87,5 @@ HALO (Harmonic Attention Localization Objective) loss is a regularization techni
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/attention-mechanism-variants]]

@@ -110,7 +110,7 @@ Ensuring agents can Create, Read, Update, and Delete all domain entities — not
 - **[[concepts/folder-is-the-agent|Folder Is the Agent]]** — The filesystem IS the agent's context layer, implementing all five principles
 - **[[concepts/compound-engineering-every|Compound Engineering]]** — The iterative improvement loop that makes agent-native apps better over time
 - **[[concepts/claude-code/claude-code]]** — The proof-of-concept that coding agents can be general-purpose agents
-- **[[openclaw]]** — The hosted implementation of agent-native architecture
+- **[[entities/openclaw]]** — The hosted implementation of agent-native architecture
 
 ## Industry Impact
 
@@ -126,4 +126,4 @@ This philosophy underpins:
 - [[concepts/folder-is-the-agent]] — Implementation pattern
 - [[concepts/compound-engineering-every]] — Iterative improvement methodology
 - [[concepts/claude-code/claude-code]] — Proof-of-concept coding agent
-- [[openclaw]] — Hosted agent platform
+- [[entities/openclaw]] — Hosted agent platform

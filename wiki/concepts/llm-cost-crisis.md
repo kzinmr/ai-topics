@@ -11,15 +11,15 @@ tags:
   - optimization
 aliases: ["tokenpocalypse", "ai-cost-crisis", "llm-spending-crisis"]
 sources:
-  - "[[token-economics]]"
-  - "[[ai-gateway]]"
+  - "[[concepts/token-economics]]"
+  - "[[concepts/ai-gateway]]"
 related:
-  - "[[token-economics]]"
-  - "[[outcome-based-pricing]]"
-  - "[[ai-gateway]]"
+  - "[[concepts/token-economics]]"
+  - "[[concepts/outcome-based-pricing]]"
+  - "[[concepts/ai-gateway]]"
   - "[[context-engineering/context-management]]"
-  - "[[inference-hardware]]"
-  - "[[agentic-search]]"
+  - "[[concepts/inference-hardware]]"
+  - "[[concepts/agentic-search]]"
 ---
 
 # LLM Cost Crisis — The Tokenpocalypse
@@ -67,7 +67,7 @@ Reducing token consumption through better prompt design, context compression, an
 
 ## The Token Economics Framework
 
-From [[token-economics]]: the core metric is **Cost Per Million Tokens (CPM)**:
+From [[concepts/token-economics]]: the core metric is **Cost Per Million Tokens (CPM)**:
 
 ```
 CPM = (GPU $/hr) / (tokens_per_sec × 3600 / 1,000,000)
@@ -84,7 +84,7 @@ Agent cost variance is extreme — a 50× difference between the cheapest and mo
 ## Long-Term Implications
 
 ### Pricing Model Evolution
-- **[[outcome-based-pricing]]**: Pay per successful task completion, not per token
+- **[[concepts/outcome-based-pricing]]**: Pay per successful task completion, not per token
 - **Subscription tiers**: Flat-fee unlimited agent usage (Cursor model)
 - **Hybrid models**: Token billing with outcome bonuses
 
@@ -100,5 +100,5 @@ Companies that fail to manage AI costs risk "AI bill shock" — monthly charges 
 ## Related Crises
 
 - **[[context-engineering/context-management]]**: The longer the context, the higher the cost. Context management is the engineering discipline that fights the tokenpocalypse.
-- **[[agentic-search]]**: Agentic search can consume 20–50× more tokens than simple RAG, making it a primary cost driver.
-- **[[inference-hardware]]**: The hardware layer determines the floor cost. Cheaper hardware directly changes the economics.
+- **[[concepts/agentic-search]]**: Agentic search can consume 20–50× more tokens than simple RAG, making it a primary cost driver.
+- **[[concepts/inference-hardware]]**: The hardware layer determines the floor cost. Cheaper hardware directly changes the economics.

@@ -13,7 +13,7 @@ sources:
   - "arXiv:2506.15740"
   - "Anthropic"
 related_concepts:
-  - "[[ai-agents]]"
+  - "[[concepts/ai-agents]]"
   - "[[agent-security]]"
   - "[[monitoring]]"
   - "[[sabotage-detection]]"
@@ -58,4 +58,4 @@ The benchmark includes **17 environments**, each containing a **benign main task
 
 ## Connections to Other Wiki Concepts
 
-SHADE-Arena addresses a frontier concern in **[[agent-security]]**: the possibility that **[[ai-agents]]** might pursue hidden objectives that diverge from their intended purpose. This connects to broader alignment research on deceptive alignment and goal misgeneralization. The benchmark's focus on **monitoring** as a defense mechanism represents an important direction for scalable oversight, complementing other safety benchmarks like [[agentdojo]] and [[agentharm]] that focus on external attack vectors rather than intrinsic misalignment.
+SHADE-Arena addresses a frontier concern in **[[agent-security]]**: the possibility that **[[concepts/ai-agents]]** might pursue hidden objectives that diverge from their intended purpose. This connects to broader alignment research on deceptive alignment and goal misgeneralization. The benchmark's focus on **monitoring** as a defense mechanism represents an important direction for scalable oversight, complementing other safety benchmarks like [[agentdojo]] and [[agentharm]] that focus on external attack vectors rather than intrinsic misalignment.

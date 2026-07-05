@@ -21,4 +21,4 @@ Stub page for compiler-explorer.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

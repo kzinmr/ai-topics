@@ -12,7 +12,7 @@ sources: [raw/newsletters/2026-06-18-ainews-midjourney-medical-scan-your-organs-
 
 ## Overview
 
-Midjourney is an independent AI research lab and product company, best known for its eponymous text-to-image generative AI platform. Founded by David Holz (formerly of Leap Motion), the company has become one of the leading names in [[entities/generative-ai]] image synthesis since launching its open beta in July 2022. Midjourney operates as a self-funded organization with no outside investors, sustaining its operations entirely through subscription revenue from its image-generation service.
+Midjourney is an independent AI research lab and product company, best known for its eponymous text-to-image generative AI platform. Founded by David Holz (formerly of Leap Motion), the company has become one of the leading names in [[concepts/generative-ai]] image synthesis since launching its open beta in July 2022. Midjourney operates as a self-funded organization with no outside investors, sustaining its operations entirely through subscription revenue from its image-generation service.
 
 The company gained widespread recognition for producing some of the highest-quality AI-generated artwork, with distinctive aesthetic styling that made its output immediately recognizable. Its Discord-based interface became a defining feature of the early generative AI boom.
 

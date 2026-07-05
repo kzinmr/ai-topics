@@ -21,4 +21,4 @@ Stub page for Designing ML Systems.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

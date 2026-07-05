@@ -21,4 +21,4 @@ Stub page for the-brand-age.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for DevOps.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -110,8 +110,8 @@ At 128K sequence length with D=8:
 - [[sequence-parallelism]] — Activation sharding for long contexts
 - [[distributed-training]] — Multi-GPU/multi-node training strategies
 - [[long-context]] — Extending LLM context windows beyond 128K
-- [[pytorch-fsdp]] — Fully Sharded Data Parallelism (orthogonal strategy)
-- [[zyphra]] — Company behind TSP
+- [[concepts/pytorch-fsdp]] — Fully Sharded Data Parallelism (orthogonal strategy)
+- [[entities/zyphra]] — Company behind TSP
 
 ## Sources
 

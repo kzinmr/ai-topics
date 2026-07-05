@@ -59,7 +59,7 @@ Telegram bots are increasingly used for AI-powered services:
 - [[concepts/multi-agents/agent-swarms]] — Multi-agent coordination (bot-to-bot patterns)
 - [[concepts/memory-architecture]] — Agent memory in multi-bot systems
 - [[entities/claude-code]] — Agentic coding platforms
-- [[telegram]] — Parent platform entity
+- [[entities/telegram]] — Parent platform entity
 
 ## References
 

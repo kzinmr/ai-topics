@@ -89,6 +89,6 @@ ECHO is the online, in-the-RL-loop, CLI-flavored version of the same idea: envir
 
 ## See Also
 
-- [[world-models-for-agents]] — world models in LLM agent training
+- [[concepts/world-models-for-agents]] — world models in LLM agent training
 - [[entities/dimitris-papailiopoulos]]
 - [[entities/vaishnavi-shrivastava]]

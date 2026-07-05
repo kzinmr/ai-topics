@@ -137,7 +137,7 @@ elvis combined OpenClaw's TOOLS.md with Vercel's AGENTS.md:
 
 ## Related
 
-- [[concepts/openclaw]] — OpenClaw concept hub
+- [[entities/openclaw]] — OpenClaw concept hub
 - [[concepts/openclaw/five-tier-precedence]] — 5-tier skill precedence model
 - [[concepts/openclaw/philosophy]] — Primitives First philosophy
 - [[concepts/skill-architecture-patterns]] — Comparative analysis of skill architectures

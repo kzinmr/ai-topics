@@ -21,4 +21,4 @@ Stub page for language-server-protocol.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

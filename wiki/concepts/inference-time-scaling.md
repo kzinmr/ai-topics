@@ -12,6 +12,6 @@ redirect: test-time-scaling
 
 # Inference-Time Scaling → Test-Time Scaling
 
-> This page has been merged into **[[test-time-scaling]]**, the canonical page for this concept.
+> This page has been merged into **[[concepts/test-time-scaling]]**, the canonical page for this concept.
 > 
-> "Inference-time scaling" and "test-time scaling" are synonymous terms. Please refer to [[test-time-scaling]] for the comprehensive treatment.
+> "Inference-time scaling" and "test-time scaling" are synonymous terms. Please refer to [[concepts/test-time-scaling]] for the comprehensive treatment.

@@ -84,7 +84,7 @@ Known for dense, analytical tweets combining geopolitical observation, tech indu
 - [[concepts/causal-backbone-conjecture]] — Tailcalled's theory of agency-driven vs. information-driven systems, applied by Teortaxes to Jensen Huang
 - [[entities/jensen-huang]] — Subject of Teortaxes' steelmanning analysis
 - [[entities/dwarkesh-patel]] — Compared against Jensen as contrasting epistemic archetype
-- [[tailcalled]] — Creator of the Causal Backbone Conjecture
+- [[entities/tailcalled]] — Creator of the Causal Backbone Conjecture
 -  — Teortaxes provides unique China-side analysis
 - [[concepts/ai-bubble-economics]] — Commentary on compute demand, energy, and geopolitics
 

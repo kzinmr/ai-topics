@@ -21,4 +21,4 @@ Stub page for http-conditional-requests.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

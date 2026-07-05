@@ -21,4 +21,4 @@ Stub page for Using Git with Coding Agents.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

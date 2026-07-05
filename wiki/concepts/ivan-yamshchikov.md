@@ -21,4 +21,4 @@ Stub page for Ivan Yamshchikov.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

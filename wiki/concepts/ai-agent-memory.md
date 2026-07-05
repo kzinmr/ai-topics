@@ -46,13 +46,13 @@ AI agent memory is the mechanism by which autonomous AI systems persist and reca
 
 ## Related Concepts
 
-- [[ai-agent-memory-middleware]]
-- [[ai-agent-memory-two-camps]]
+- [[concepts/ai-agent-memory-middleware]]
+- [[concepts/ai-agent-memory-two-camps]]
 - [[claude-memory]]
 - [[chatgpt-memory-bitter-lesson]]
 - [[concepts/context-engineering/context-management|Context Management]]
-- [[knowledge-graph-memory-agents]]
-- [[experiential-memory]]
+- [[concepts/knowledge-graph-memory-agents]]
+- [[concepts/experiential-memory]]
 
 ## Sources
 

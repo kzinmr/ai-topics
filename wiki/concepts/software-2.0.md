@@ -21,4 +21,4 @@ Stub page for software-2.0.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

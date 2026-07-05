@@ -17,7 +17,7 @@ sources:
 
 AI control is an approach to mitigating risk from large-scale internal agentic AI deployments by focusing on system-level ("outside the model") mitigations such as automated monitoring and response, access controls, and environment hardening. Adopting the "security mindset," AI control treats certain AI agents as untrusted and conservatively assumes they are trying to achieve adversarial objectives such as model exfiltration or rogue internal deployment. It then builds defenses robust to such adversarial assumptions.
 
-AI control is best understood as a **second layer of defense**: it defends against the *impact* of AI acting adversarially, rather than preventing the *cause*. It complements [[ai-alignment]] by preparing for the scenario where alignment fails — as models become more capable, the consequences of misalignment grow, making a second line of defense prudent.
+AI control is best understood as a **second layer of defense**: it defends against the *impact* of AI acting adversarially, rather than preventing the *cause*. It complements [[concepts/ai-alignment]] by preparing for the scenario where alignment fails — as models become more capable, the consequences of misalignment grow, making a second line of defense prudent.
 
 ## Threat Model
 
@@ -169,9 +169,9 @@ The roadmap acknowledges several important limitations:
 
 ## Related Concepts
 
-- [[deepmind]] — Google DeepMind, the organization behind this roadmap
+- [[entities/deepmind]] — Google DeepMind, the organization behind this roadmap
 - [[ai-safety]] — The broader field of AI safety engineering
-- [[ai-alignment]] — The first line of defense that AI control complements
-- [[agent-safety]] — Safety considerations specific to autonomous AI agents
+- [[concepts/ai-alignment]] — The first line of defense that AI control complements
+- [[concepts/agent-safety]] — Safety considerations specific to autonomous AI agents
 - [[concepts/prompt-injection]] — A related AI security vulnerability vector
 - [[concepts/superintelligence]] — The limit at which AI control is expected to become infeasible

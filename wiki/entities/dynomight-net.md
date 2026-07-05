@@ -171,7 +171,7 @@ The willingness to be wrong publicly is a core part of Dynomight's intellectual 
 - [[concepts/ai-alignment]] — The "wanting" problem as the central challenge
 - [[concepts/consciousness]] — The "meta problem" and the limits of empirical investigation
 - [[concepts/prediction-markets]] — Critique of futarchy and causal inference from market data
-- [[concepts/eliezer-yudkowsky]] — Referenced on coordination problems and "sponge coordination"
+- [[entities/eliezer-yudkowsky]] — Referenced on coordination problems and "sponge coordination"
 - [[concepts/nick-bostrom]] — Referenced on the Vulnerable World Hypothesis
 -  — Referenced as endorsing the "wanting is hard" view
 -  — Referenced on AI motivation and understanding without caring

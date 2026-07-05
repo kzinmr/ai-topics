@@ -157,9 +157,9 @@ All changes were isolated to a branch — zero risk to production data.
 
 ## Related Concepts & Tools
 
-- [[beads]] — Distributed graph issue tracker for AI agents, **powered by Dolt**
-- [[programmatic-tool-calling]] — Code execution as tool calling; Dolt MCP provides agents a database tool surface
-- [[dspyrlm]] — RLM (Reasoning via Language Model) pattern; Dolt enables persistent state for RLM workflows
+- [[entities/beads]] — Distributed graph issue tracker for AI agents, **powered by Dolt**
+- [[concepts/programmatic-tool-calling]] — Code execution as tool calling; Dolt MCP provides agents a database tool surface
+- [[concepts/dspyrlm]] — RLM (Reasoning via Language Model) pattern; Dolt enables persistent state for RLM workflows
 - [[concepts/version-controlled-databases]] — Broader concept of databases with Git-like versioning
 
 ## Ecosystem Comparisons

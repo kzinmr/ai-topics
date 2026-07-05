@@ -69,7 +69,7 @@ This benchmark has the potential to shift the agent evaluation paradigm from cap
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/vajra-background-agent]]
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/single-agent-ceiling]]

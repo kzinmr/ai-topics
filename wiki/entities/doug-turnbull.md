@@ -312,19 +312,19 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 - **[Three kinds of agentic search](https://softwaredoug.com/blog/2026/06/08/three-kinds-of-agentic-search)** (Jun 2026) — Proposes a practitioner taxonomy of three agentic search paradigms by degree of agent agency: (1) **Agent-Assisted** — agent improves queries, search engine unchanged (where most "AI search" is today); (2) **Agent-Driven** — agent orchestrates multi-step retrieval loops, mixing search with computation (Perplexity, AI Overviews); (3) **Agent-Native** — search infrastructure designed from scratch for agent consumption: structured results, APIs over scraping, semantic indexing at the fact level, provenance tracking, composable primitives. Key insight: organizations need all three simultaneously, and "search quality becomes agent quality" in the agent-driven paradigm.
 
 ## Related
-- [[elasticsearch]] — Primary search engine in his early work
-- [[apache-solr]] — Search platform he worked with extensively
-- [[learning-to-rank]] — ML approach to combining ranking signals
+- [[concepts/elasticsearch]] — Primary search engine in his early work
+- [[concepts/apache-solr]] — Search platform he worked with extensively
+- [[concepts/learning-to-rank]] — ML approach to combining ranking signals
 -  — Retrieval-Augmented Generation
-- [[bm25]] — Probabilistic ranking function
+- [[concepts/bm25]] — Probabilistic ranking function
 - [[concepts/evaluation/ndcg]] — Normalized Discounted Cumulative Gain
-- [[quepid]] — Open-source search relevance testing workbench
-- [[searcharray]] — Pandas-based BM25 search library
-- [[trey-grainger]] — Co-author of AI-Powered Search
-- [[john-berryman]] — Co-author of Relevant Search
-- [[max-irwin]] — Co-author of AI-Powered Search
-- [[jo-kristian-bergum]] — Hornet CEO, former Vespa Chief Scientist, fellow search infrastructure veteran
-- [[opensource-connections]] — Search relevance consultancy where he served as CTO
+- [[concepts/quepid]] — Open-source search relevance testing workbench
+- [[concepts/searcharray]] — Pandas-based BM25 search library
+- [[concepts/trey-grainger]] — Co-author of AI-Powered Search
+- [[entities/john-berryman]] — Co-author of Relevant Search
+- [[concepts/max-irwin]] — Co-author of AI-Powered Search
+- [[entities/jo-kristian-bergum]] — Hornet CEO, former Vespa Chief Scientist, fellow search infrastructure veteran
+- [[concepts/opensource-connections]] — Search relevance consultancy where he served as CTO
 -  — Platform where he achieved 2% DAU increase with LTR
 -  — Where he improved merchant search revenue 10% YoY
 -  — Where he worked as Staff Relevance Engineer

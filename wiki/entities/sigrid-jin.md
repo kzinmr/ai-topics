@@ -81,5 +81,5 @@ Her conclusion: what does not commoditize is **taste, conviction, and a specific
 
 ## Related
 - [[concepts/coding-agents/claw-code]] — Claw Code concept page
-- [[yeachan-heo]] — Bellman, collaborator and creator of oh-my-codex
-- [[ultraworkers]] — GitHub organization hosting claw-code
+- [[entities/yeachan-heo]] — Bellman, collaborator and creator of oh-my-codex
+- [[entities/ultraworkers]] — GitHub organization hosting claw-code

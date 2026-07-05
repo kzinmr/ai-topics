@@ -14,7 +14,7 @@ Desktop application for running local LLMs with an OpenAI-compatible API server.
 
 ## Overview
 
-LM Studio simplifies local model inference by bundling model management, quantization selection, and API serving into a single desktop app. Used as the inference backend by local agentic coding practitioners like [[vicki-boykis]].
+LM Studio simplifies local model inference by bundling model management, quantization selection, and API serving into a single desktop app. Used as the inference backend by local agentic coding practitioners like [[entities/vicki-boykis]].
 
 ## Key Features
 
@@ -26,7 +26,7 @@ LM Studio simplifies local model inference by bundling model management, quantiz
 
 ## Usage in Agentic Coding
 
-LM Studio is commonly paired with agent harnesses like [[pi-coding-agent]] or [[claude-code]] (via local provider) to run agentic coding workflows entirely locally. Configuration typically involves:
+LM Studio is commonly paired with agent harnesses like [[pi-coding-agent]] or [[entities/claude-code]] (via local provider) to run agentic coding workflows entirely locally. Configuration typically involves:
 
 1. Download a model (e.g., `gemma-4-26b-a4b`, `gemma-4-12b-qat`)
 2. Start the local server on port 1234
@@ -34,19 +34,19 @@ LM Studio is commonly paired with agent harnesses like [[pi-coding-agent]] or [[
 
 ## Trade-offs
 
-- Convenient GUI but adds overhead vs raw [[llama-cpp]]
+- Convenient GUI but adds overhead vs raw [[concepts/llama-cpp]]
 - Context window limited by hardware (typically 32K-128K on consumer hardware)
 - KV cache can consume significant RAM (up to 64 GB for large models on Apple Silicon)
 
 ## Alternatives
 
-- [[ollama]] — CLI-first local inference, lighter weight
-- [[llama-cpp]] — Raw C++ inference, minimal overhead
+- [[concepts/ollama]] — CLI-first local inference, lighter weight
+- [[concepts/llama-cpp]] — Raw C++ inference, minimal overhead
 - llamafiles — Single-file portable model executables
 - vLLM — High-throughput server-side inference
 
 ## See Also
 
-- [[vicki-boykis]] — Blog post documenting LM Studio in local agentic workflow
+- [[entities/vicki-boykis]] — Blog post documenting LM Studio in local agentic workflow
 - [[local-llm-inference]] — Concept page on local model inference approaches
-- [[gemma-4]] — Google model family frequently used with LM Studio
+- [[entities/gemma-4]] — Google model family frequently used with LM Studio

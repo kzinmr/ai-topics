@@ -44,7 +44,7 @@ The benchmark uses a systematic evaluation of memory approaches:
 - The benchmark tests the provocative hypothesis that a filesystem may be all that's needed for agent memory
 - Results compare filesystem-based memory against more sophisticated memory management approaches
 - Memory system design significantly impacts agent performance on tasks requiring long-term information retention
-- The benchmark provides empirical evidence to guide memory architecture decisions for [[ai-agents]] development
+- The benchmark provides empirical evidence to guide memory architecture decisions for [[concepts/ai-agents]] development
 - Findings inform the Letta team's approach to memory system design in their agent framework
 
 ## Related Benchmarks
@@ -56,4 +56,4 @@ The benchmark uses a systematic evaluation of memory approaches:
 
 ## Connections to Other Wiki Concepts
 
-The Agent Memory Benchmark directly connects to the [[letta-leaderboard]] as both come from the Letta/MemGPT team and focus on memory as a critical dimension of agent capability. Together, they explore both the model-side (how well LLMs manage memory) and system-side (what memory architecture works best) of the memory problem in [[ai-agents]]. This research contributes to [[agent-evaluation]] by establishing memory as a first-class evaluation dimension alongside task completion, reasoning, and tool use.
+The Agent Memory Benchmark directly connects to the [[letta-leaderboard]] as both come from the Letta/MemGPT team and focus on memory as a critical dimension of agent capability. Together, they explore both the model-side (how well LLMs manage memory) and system-side (what memory architecture works best) of the memory problem in [[concepts/ai-agents]]. This research contributes to [[agent-evaluation]] by establishing memory as a first-class evaluation dimension alongside task completion, reasoning, and tool use.

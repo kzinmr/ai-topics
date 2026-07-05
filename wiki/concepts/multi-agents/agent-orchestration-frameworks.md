@@ -96,7 +96,7 @@ sources:
 
 - [[concepts/agent-loop-orchestration]] — Basic patterns of agent loops
 - [[concepts/multi-agents/agent-swarms]] — Emergent multi-agent systems
-- [[concepts/telegram-managed-bots]] — Platform-based agents
+- [[entities/telegram-managed-bots]] — Platform-based agents
 - [[concepts/claude-code/claude-code-best-practices]] — Claude Code agent patterns
 
 ## Sources

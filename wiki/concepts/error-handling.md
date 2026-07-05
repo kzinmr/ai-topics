@@ -21,4 +21,4 @@ Stub page for error-handling.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

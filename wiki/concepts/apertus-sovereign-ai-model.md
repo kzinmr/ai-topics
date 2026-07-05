@@ -101,7 +101,7 @@ The Hacker News discussion (523 points, 181 comments) reflected several themes:
 ## Related Pages
 
 - [[entities/apertus]] — The organization behind the Apertus model
-- [[concepts/apertus]] — General concept overview of Apertus
+- [[entities/apertus]] — General concept overview of Apertus
 - [[concepts/sovereign-ai]] — The sovereign AI movement and its geopolitical dimensions
 - [[concepts/eu-ai-act]] — European Union AI Act regulatory framework
 - [[entities/cohere]] — Cohere's sovereign AI offerings and enterprise strategy

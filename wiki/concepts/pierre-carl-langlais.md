@@ -21,4 +21,4 @@ Stub page for Pierre-Carl Langlais.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -37,7 +37,7 @@ Returned to [[entities/lenny|Lenny's Podcast]] with 12 bold predictions about AI
 Authored the foundational framework defining [[concepts/harness-engineering/agent-native-architecture|Agent-Native Architecture]] — a design philosophy where agents are first-class citizens with UI parity, atomic tools, and composability. Co-authored with Claude. Established five core principles: Parity, Granularity, Composability, Emergent Capability, and Improvement Over Time.
 
 ### OpenClaw
-Involved with the development of [[openclaw]], an open-source agent platform compatible with the Folder-Is-The-Agent pattern and Compound Engineering philosophy.
+Involved with the development of [[entities/openclaw]], an open-source agent platform compatible with the Folder-Is-The-Agent pattern and Compound Engineering philosophy.
 
 ### Compound Engineering Advocacy
 Championed Every's [[concepts/compound-engineering-every|Compound Engineering]] philosophy and the open-source plugin (7,000+ → 14,000+ GitHub stars). Frequently appears on podcasts (Lenny's Podcast, etc.) discussing AI-native development.

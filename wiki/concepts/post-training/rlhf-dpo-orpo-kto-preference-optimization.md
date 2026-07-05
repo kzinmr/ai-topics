@@ -21,4 +21,4 @@ Stub page for RLHF, DPO, ORPO, KTO — Preference Optimization.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

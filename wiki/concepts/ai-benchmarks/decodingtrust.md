@@ -14,7 +14,7 @@ sources:
 related_concepts:
   - "[[trustworthiness]]"
   - "[[safety-evaluation]]"
-  - "[[ai-agents]]"
+  - "[[concepts/ai-agents]]"
   - "[[fairness]]"
 ---
 
@@ -61,4 +61,4 @@ The benchmark employs diverse evaluation methodologies:
 
 ## Connections to Other Wiki Concepts
 
-DecodingTrust provides a broad foundation for **safety-evaluation** that complements agent-specific benchmarks like [[agentdojo]] and [[agentharm]]. Its multi-dimensional approach to **trustworthiness** has influenced how the field thinks about holistic AI safety assessment. The benchmark connects to [[fairness]] research, privacy-preserving ML, and robustness evaluation, serving as a bridge between narrow safety benchmarks and comprehensive trustworthiness evaluation for **[[ai-agents]]** and general-purpose language models.
+DecodingTrust provides a broad foundation for **safety-evaluation** that complements agent-specific benchmarks like [[agentdojo]] and [[agentharm]]. Its multi-dimensional approach to **trustworthiness** has influenced how the field thinks about holistic AI safety assessment. The benchmark connects to [[fairness]] research, privacy-preserving ML, and robustness evaluation, serving as a bridge between narrow safety benchmarks and comprehensive trustworthiness evaluation for **[[concepts/ai-agents]]** and general-purpose language models.

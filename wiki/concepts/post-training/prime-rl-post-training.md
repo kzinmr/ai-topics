@@ -131,8 +131,8 @@ Notably, total cells read per rollout stayed roughly flat during training — th
 
 ## Related Concepts
 
-- [[sid-1]] — First model trained end-to-end with RL (GRPO) for agentic retrieval, directly comparable approach
-- [[unbundled-agents]] — Architectural pattern of specialist subagents exposed as tools within a harness
-- [[post-training-distributional-view]] — Distributional lens on SFT vs. RL vs. On-Policy Distillation
+- [[concepts/sid-1]] — First model trained end-to-end with RL (GRPO) for agentic retrieval, directly comparable approach
+- [[concepts/unbundled-agents]] — Architectural pattern of specialist subagents exposed as tools within a harness
+- [[concepts/post-training-distributional-view]] — Distributional lens on SFT vs. RL vs. On-Policy Distillation
 - [[verifiers-rl]] — TRL-based multi-turn RL framework using GRPO for environment and tool interactions
-- [[qwen]] — The Qwen model family used as the base model for Fast Ask
+- [[concepts/qwen]] — The Qwen model family used as the base model for Fast Ask

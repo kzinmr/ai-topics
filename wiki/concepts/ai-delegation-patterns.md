@@ -87,7 +87,7 @@ The ultimate goal is to move from "chatting" with AI to **orchestrating** multip
 - [[entities/claude-code]] — AI coding agent where delegation patterns apply directly
 - [[concepts/multi-agents/multi-agent-systems]] — Architectures for coordinated AI agent teams
 - [[concepts/service-as-software]] — Selling outcomes rather than tools
-- [[hermes-agent-architecture]] — Hermes Agent's subagent delegation patterns
+- [[concepts/hermes-agent-architecture]] — Hermes Agent's subagent delegation patterns
 
 ## Sources
 

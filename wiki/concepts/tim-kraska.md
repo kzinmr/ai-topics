@@ -21,4 +21,4 @@ Stub page for Tim Kraska.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

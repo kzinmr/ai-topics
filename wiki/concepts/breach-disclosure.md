@@ -21,4 +21,4 @@ Stub page for Breach Disclosure.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

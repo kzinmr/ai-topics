@@ -21,4 +21,4 @@ Stub page for PlaceIQ.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

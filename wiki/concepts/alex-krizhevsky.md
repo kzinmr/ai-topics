@@ -21,4 +21,4 @@ Stub page for Alex Krizhevsky.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

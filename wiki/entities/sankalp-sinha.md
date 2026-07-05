@@ -121,7 +121,7 @@ Sankalp's approach to AI engineering can be summarized as:
 - [[concepts/coding-agents/long-context-coding-agents]] — Focus area of his research and writing
 -  — Open-source agent operating system he contributes to- [[concepts/evaluation/llm-evaluation-harness]] — Interest in measuring and improving AI system quality
 -  — His professional focus
--  — AI coding tool he evaluates and discusses- [[cursor-3]] — IDE he compares in his writing
+-  — AI coding tool he evaluates and discusses- [[entities/cursor-3]] — IDE he compares in his writing
 - [[entities/teknium]] — Fellow open-source AI developer
 - [[entities/simon-willison]] — Django co-creator; agentic engineering guide
 

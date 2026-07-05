@@ -21,4 +21,4 @@ Stub page for Political Bias Analysis of AI Criticism.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

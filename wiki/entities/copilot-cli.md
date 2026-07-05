@@ -25,7 +25,7 @@ related:
   - "[[entities/droid]]"
   - "[[concepts/github-copilot-billing]]"
   - "[[concepts/microsoft-copilot-wave-3]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
 ---
 
 # GitHub Copilot CLI

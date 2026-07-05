@@ -21,4 +21,4 @@ Stub page for In-Process Sandbox.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

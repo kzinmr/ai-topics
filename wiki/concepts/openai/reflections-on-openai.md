@@ -18,7 +18,7 @@ aliases: ["Reflections on OpenAI", "OpenAI Culture"]
 
 # OpenAI Insider Reflections: Culture, Code, and Codex Launch
 
-Calvin French-Owen's firsthand account of OpenAI's internal culture and Codex development. French-Owen, founder of Segment, joined OpenAI in May 2024 and left in July 2025 after participating in the Codex launch. This article provides deep insights into [[openai]]'s organizational characteristics and [[openai-codex]] development practices.
+Calvin French-Owen's firsthand account of OpenAI's internal culture and Codex development. French-Owen, founder of Segment, joined OpenAI in May 2024 and left in July 2025 after participating in the Codex launch. This article provides deep insights into [[entities/openai]]'s organizational characteristics and [[entities/openai-codex]] development practices.
 
 ## Overview
 
@@ -208,11 +208,11 @@ Calvin French-Owen's firsthand account of OpenAI's internal culture and Codex de
 
 ## Related Pages
 
-- [[openai]] - OpenAI entity page
-- [[openai-codex]] - Codex details
-- [[coding-agents]] - Coding agents concept
-- [[ai-agents]] - AI agents concept
-- [[anthropic]] - Anthropic (competitive comparison)
+- [[entities/openai]] - OpenAI entity page
+- [[entities/openai-codex]] - Codex details
+- [[entities/coding-agents]] - Coding agents concept
+- [[concepts/ai-agents]] - AI agents concept
+- [[entities/anthropic]] - Anthropic (competitive comparison)
 - [[google-deepmind]] - Google DeepMind (competitive comparison)
 
 ## References

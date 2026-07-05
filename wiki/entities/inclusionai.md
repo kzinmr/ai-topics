@@ -38,7 +38,7 @@ Key design priorities:
 
 InclusionAI occupies an interesting niche — providing a frontier-scale (1T parameter) model optimized specifically for agent workflows, at zero cost. This positions them against:
 - **[[entities/deepseek]]**: Open-source MoE models with strong agent performance (e.g., DeepSeek-V4)
-- **[[entities/qwen]]**: Qwen's open-source coding models (e.g., Qwen3-Coder)
+- **[[concepts/qwen]]**: Qwen's open-source coding models (e.g., Qwen3-Coder)
 - **[[entities/anthropic]]** / **[[entities/openai]]**: Proprietary frontier models dominant in SWE-bench but at significant cost
 
 ## Open Questions

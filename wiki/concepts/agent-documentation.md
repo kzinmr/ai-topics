@@ -56,6 +56,6 @@ This pattern was pioneered by projects like DeepWiki, Karpathy's LLM Wiki concep
 
 - [[concepts/openwiki]] — Primary tool implementation
 - [[concepts/context-engineering]] — Broader discipline of context design for agents
-- [[concepts/coding-agents]] — Coding agent ecosystem
+- [[entities/coding-agents]] — Coding agent ecosystem
 - [[concepts/agentic-engineering]] — Agent engineering practices
 - [[entities/andrej-karpathy]] — LLM Wiki concept originator

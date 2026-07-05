@@ -104,7 +104,7 @@ In a May 20, 2026 post titled "[Could generative AI turn out to be the tech indu
 - **Escalation without clear objectives**: Like Vietnam, the tech industry keeps pouring billions into generative AI without a clear, achievable end goal — each new model release is justified as "one more push" that will finally deliver ROI
 - **Public backlash as a potential turning point**: Marcus suggests that growing public disillusionment with AI hype, reliability issues, and job displacement could force a reckoning similar to how anti-war sentiment changed Vietnam policy
 - **Could backlash lead AI to a better place?**: The counter-thesis — that public pressure might actually steer AI development toward more reliable, useful applications rather than the current hyperscaling approach
-- Notes the parallel to [[george-hotz]]'s recent argument that scaling is hitting S-curve limits, suggesting an emerging consensus among skeptics
+- Notes the parallel to [[entities/george-hotz]]'s recent argument that scaling is hitting S-curve limits, suggesting an emerging consensus among skeptics
 
 
 ### S&P 500 Rule Change: AI IPO Index Fund Risk (May 2026)

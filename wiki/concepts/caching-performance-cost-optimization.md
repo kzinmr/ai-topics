@@ -21,4 +21,4 @@ Stub page for caching, performance, cost-optimization.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

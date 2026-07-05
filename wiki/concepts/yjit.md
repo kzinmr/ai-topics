@@ -21,4 +21,4 @@ Stub page for YJIT.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

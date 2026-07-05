@@ -86,7 +86,7 @@ Anthropic trains models to avoid unsupported claims. Opus 4.8's system card quan
 
 ## Related Pages
 - [[Anthropic]] — Company behind Claude
-- [[prompt-caching]] — Mechanism enabled by mid-conversation system messages
+- [[concepts/prompt-caching]] — Mechanism enabled by mid-conversation system messages
 - [[llm-anthropic]] — Simon Willison's Python/CLI tool
-- [[ai-economics]] — Tokenmaxxing and AI ROI debate
+- [[concepts/ai-economics]] — Tokenmaxxing and AI ROI debate
 - [[Datasette]] — Simon Willison's SQLite tool (uses llm-anthropic)

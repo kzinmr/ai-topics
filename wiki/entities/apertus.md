@@ -44,7 +44,7 @@ The project aligns with the [[concepts/sovereign-ai|sovereign AI]] movement's go
 
 ## Related Pages
 
-- [[concepts/apertus]] — Technical and strategic analysis of the Apertus model
+- [[entities/apertus]] — Technical and strategic analysis of the Apertus model
 - [[concepts/sovereign-ai]] — The sovereign AI movement and its implications
 - [[concepts/eu-ai-act]] — EU regulation framework for AI systems
 - [[concepts/open-source-ai]] — Open-source strategy in AI development

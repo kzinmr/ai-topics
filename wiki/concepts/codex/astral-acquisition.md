@@ -95,5 +95,5 @@ As the Python toolchain becomes agent-native:
 ## See Also
 
 - [[concepts/bitter-lesson-harnessing]] — Agent toolchain integration reduces harness complexity
-- [[concepts/codex]] — OpenAI's coding agent platform
+- [[entities/codex]] — OpenAI's coding agent platform
 - [[concepts/harness-engineering]] — The broader discipline of agent orchestration

@@ -21,4 +21,4 @@ Stub page for Rodney — Browser Automation CLI for Agents.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

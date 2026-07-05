@@ -90,7 +90,7 @@ In April 2026, Anthropic excluded third-party agents from subscriptions. OpenCla
 | Entity | Description |
 |-------------|------|
 | [[entities/peter-steinberger]] | OpenClaw creator. Former PSPDFKit CEO. Developing personal agents at OpenAI |
-| [[concepts/openclaw]] | OpenClaw framework details |
+| [[entities/openclaw]] | OpenClaw framework details |
 | [[entities/nvidia-nemoclaw]] | NVIDIA's enterprise OpenClaw wrapper |
 
 ## Product Positioning Framework

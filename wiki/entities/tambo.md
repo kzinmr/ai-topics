@@ -88,5 +88,5 @@ Can be used alongside agent frameworks like LangChain or Mastra, but not require
 ## Competitors & Related
 
 - [[vercel-ai-sdk]] — General AI SDK. Also partially covers Generative UI
-- [[mcp]] — Protocol that Tambo depends on
-- [[langchain]] — Can be used alongside as an agent framework
+- [[concepts/mcp]] — Protocol that Tambo depends on
+- [[entities/langchain]] — Can be used alongside as an agent framework

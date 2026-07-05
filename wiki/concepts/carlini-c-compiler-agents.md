@@ -104,4 +104,4 @@ Claude once accidentally ran `pkill -9 bash`, killing itself (and the loop).
 - [[concepts/multi-agents/multi-agent-orchestration-architecture]] — Multi-agent orchestration patterns
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
 - [[concepts/building-effective-agents]] — Building effective agents
-- [[harness-design-long-running-apps]] — Harness design for long-running apps
+- [[concepts/harness-design-long-running-apps]] — Harness design for long-running apps

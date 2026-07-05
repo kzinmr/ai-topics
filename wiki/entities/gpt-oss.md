@@ -68,4 +68,4 @@ OpenAI itself recommends hosted API for multimodal support or managed tools, but
 - [[concepts/local-llm]] — local deployment landscape
 - [[entities/gemma-4]] — Google's competing open model family
 - [[entities/gpt-5.5]] — OpenAI's latest proprietary model
-- [[vicki-boykis]] — Identified GPT-OSS as the local model quality inflection point
+- [[entities/vicki-boykis]] — Identified GPT-OSS as the local model quality inflection point

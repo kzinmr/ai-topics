@@ -75,7 +75,7 @@ Documents and queries are encoded as **dense vectors** in a shared embedding spa
 - **Hypothetical Document Embeddings (HyDE):** transform queries into pseudo-document vectors
 - **Bag-of-documents model:** learn query vectors from result distributions (see below)
 
-See [[concepts/embeddings]], [[concepts/vector-search]], [[concepts/hnsw]].
+See [[entities/embeddings]], [[concepts/vector-search]], [[concepts/hnsw]].
 
 ### Hybrid Retrieval
 
@@ -173,7 +173,7 @@ RAG extends embedding-based retrieval with two critical steps:
 
 Key challenge: the **relevance trap** — a chunk may have high cosine similarity yet be unhelpful in the generated context.
 
-See [[concepts/rag]], [[concepts/embeddings]].
+See [[concepts/rag]], [[entities/embeddings]].
 
 ## SIRA: LLM-Guided Lexical Retrieval
 
@@ -228,7 +228,7 @@ SIRA achieves SoTA on 10 BEIR benchmarks, outperforming all baselines including 
 - [[concepts/query-understanding]] — 24-article series systematizing query understanding
 - [[concepts/lexical-search]] — Bag-of-words, TF-IDF, BM25
 - [[concepts/vector-search]] — ANN algorithms, HNSW, FAISS
-- [[concepts/embeddings]] — Dense vector representations for semantic search
+- [[entities/embeddings]] — Dense vector representations for semantic search
 - [[concepts/bm25]] — The classic lexical retrieval baseline
 - [[concepts/rag]] — Retrieval-Augmented Generation
 - [[concepts/pseudo-relevance-feedback]] — Traditional query refinement via top-K results

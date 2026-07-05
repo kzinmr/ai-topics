@@ -11,4 +11,4 @@ updated: 2026-05-08
 
 # Moonshot AI
 
-This page is a redirect. See [[kimi]] for the comprehensive Moonshot AI / Kimi entity page.
+This page is a redirect. See [[entities/kimi]] for the comprehensive Moonshot AI / Kimi entity page.

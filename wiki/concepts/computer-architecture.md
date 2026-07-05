@@ -21,4 +21,4 @@ Stub page for computer-architecture.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for serialization, llm, structured-output, ai-engineering.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

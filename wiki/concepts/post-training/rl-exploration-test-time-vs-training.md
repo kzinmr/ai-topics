@@ -42,7 +42,7 @@ At inference, exploration happens **without modifying weights**:
 - More compute → more candidate completions → higher probability of finding a correct answer.
 - The base model's capabilities set the ceiling: test-time exploration can only surface what the model can *already* produce.
 
-See [[test-time-scaling]] for the broader framework.
+See [[concepts/test-time-scaling]] for the broader framework.
 
 ## The Fundamental Difference
 

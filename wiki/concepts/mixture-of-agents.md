@@ -15,7 +15,7 @@ Mixture of Agents is an architecture pattern where multiple LLM instances collab
 
 ## Overview
 
-MoA sits at the intersection of [[multi-agent-systems]], model [[inference]] ensembles, and layered LLM architectures. The key insight is that aggregating at the reasoning-trace level rather than the answer level unlocks a form of cross-agent complementarity: different agents (or differently-perturbed runs of the same model) may each contribute partial correct insights, and a capable aggregator can assemble these fragments into a solution no single agent produced.
+MoA sits at the intersection of [[multi-agent-systems]], model [[concepts/inference]] ensembles, and layered LLM architectures. The key insight is that aggregating at the reasoning-trace level rather than the answer level unlocks a form of cross-agent complementarity: different agents (or differently-perturbed runs of the same model) may each contribute partial correct insights, and a capable aggregator can assemble these fragments into a solution no single agent produced.
 
 Two complementary formulations of MoA have emerged:
 
@@ -28,7 +28,7 @@ Two complementary formulations of MoA have emerged:
 
 The core architectural pattern is a layered network:
 
-1. **Proposer Layer**: Multiple LLM instances (often [[small-language-models]]) independently process the same query, each generating a response with its full reasoning trace. In the layered RAG variant, each proposer may have access to different retrieval sources. In the self-consistent variant, proposers receive semantically-equivalent but perturbed versions of the same input.
+1. **Proposer Layer**: Multiple LLM instances (often [[concepts/small-language-models]]) independently process the same query, each generating a response with its full reasoning trace. In the layered RAG variant, each proposer may have access to different retrieval sources. In the self-consistent variant, proposers receive semantically-equivalent but perturbed versions of the same input.
 
 2. **Aggregator Layer**: A separate LLM receives all proposer outputs (including their reasoning traces) and synthesizes a final response. The aggregator is not voting -- it reads and reasons over the full traces, selectively adopting intermediate steps that collectively produce a better answer.
 
@@ -56,7 +56,7 @@ This contrasts with [[multi-agent-consensus-patterns]] which treat agreement as 
 | **Key Advantage** | Trace-level complementarity; corrects unanimous errors | Compute-efficient scaling during training/inference | Simple; reduces variance |
 | **Key Limitation** | Aggregator must be capable enough to synthesize traces | Training instability; expert collapse | Cannot recover from unanimous errors |
 
-MoA is fundamentally different from [[mixture-of-experts]]. MoE operates inside a single model's forward pass, routing tokens to specialized sub-networks (experts) with a learned gating mechanism. MoA operates at a higher level of abstraction: full LLM instances generate independent reasoning traces, and a separate aggregator synthesizes them. MoA requires no joint training and can be assembled post-hoc from existing models.
+MoA is fundamentally different from [[concepts/mixture-of-experts]]. MoE operates inside a single model's forward pass, routing tokens to specialized sub-networks (experts) with a learned gating mechanism. MoA operates at a higher level of abstraction: full LLM instances generate independent reasoning traces, and a separate aggregator synthesizes them. MoA requires no joint training and can be assembled post-hoc from existing models.
 
 Compared to model ensembles, MoA differs in aggregation depth: ensembles typically combine at the output level (vote, average), while MoA combines at the reasoning-trace level, enabling recovery of correct reasoning from minority outputs.
 
@@ -77,11 +77,11 @@ Key implementation considerations include aggregator capability (must be strong 
 
 ## Related Topics
 
-- [[mixture-of-experts]]: Token-level expert routing within a single model during forward pass
+- [[concepts/mixture-of-experts]]: Token-level expert routing within a single model during forward pass
 - [[multi-agent-systems]]: Broader class of systems where multiple agents collaborate, of which MoA is a specific aggregation architecture
-- [[chain-of-thought]]: Individual reasoning traces are the unit of aggregation in MoA
-- [[small-language-models]]: Key enabler for cost-effective heterogeneous MoA deployments
-- [[reasoning-models]]: Self-Consistent MoA shows strong results on structured reasoning benchmarks
+- [[concepts/chain-of-thought]]: Individual reasoning traces are the unit of aggregation in MoA
+- [[concepts/small-language-models]]: Key enabler for cost-effective heterogeneous MoA deployments
+- [[concepts/reasoning-models]]: Self-Consistent MoA shows strong results on structured reasoning benchmarks
 - [[multi-agent-consensus-patterns]]: MoA deliberately moves beyond consensus to trace-level synthesis
-- [[retrieval-augmented-generation]]: The 2024 MoA paper applies the pattern within RAG workflows
-- [[ai-agents]]: MoA is an orchestration pattern for collaborative agent reasoning
+- [[concepts/retrieval-augmented-generation]]: The 2024 MoA paper applies the pattern within RAG workflows
+- [[concepts/ai-agents]]: MoA is an orchestration pattern for collaborative agent reasoning

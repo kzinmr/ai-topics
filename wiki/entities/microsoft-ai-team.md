@@ -21,7 +21,7 @@ The Microsoft AI Team (MAI) is a research and development group within Microsoft
 - **Scaling Laws**: Focus on empirically-driven** improvements to architecture and data.
 
 ## Related Concepts
-- [[concepts/mai-thinking-1]]
+- [[entities/mai-thinking-1]]
 - [[concepts/reinforcement-learning]]
 - [[concepts/mixture-of-experts]]
 

@@ -21,4 +21,4 @@ Stub page for Chip Huyen (@chipro).
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for AI in Military Wargames.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

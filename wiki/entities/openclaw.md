@@ -317,7 +317,7 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 | **Multi-Agent Chatbot** | 1 hr | Multiple agents coordination |
 
 ## Related
-- [[concepts/openclaw]]
+- [[entities/openclaw]]
 - [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex memory system comparison
 - [[entities/telegram-managed-bots]]
 

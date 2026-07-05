@@ -21,4 +21,4 @@ Stub page for kimi-k2-thinking.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

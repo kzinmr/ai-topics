@@ -21,4 +21,4 @@ Stub page for Steven Pinker.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

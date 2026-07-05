@@ -21,4 +21,4 @@ Stub page for harness-engineering/system-architecture/context-engineering.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

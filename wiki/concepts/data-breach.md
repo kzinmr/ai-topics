@@ -21,4 +21,4 @@ Stub page for Data Breach.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

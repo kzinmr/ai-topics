@@ -115,6 +115,6 @@ Modern system cards (Opus 4.6+) follow a consistent structure:
 
 - [[concepts/anthropic/transparency-hub]] — Transparency Hub covering Model Report, System Trust, Voluntary Commitments
 - [[concepts/gpt/gpt-deployment-safety-hub]] — OpenAI's parallel Deployment Safety Hub (19 system cards, Preparedness Framework)
-- [[concepts/claude-opus-4x-comparison]] — Detailed comparison of Opus 4.6 vs 4.7 vs 4.8 system cards
+- [[comparisons/claude-opus-4x-comparison]] — Detailed comparison of Opus 4.6 vs 4.7 vs 4.8 system cards
 - [[entities/anthropic]] — Parent entity page
 - [Responsible Scaling Policy](https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy)

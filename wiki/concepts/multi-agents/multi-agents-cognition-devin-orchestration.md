@@ -21,4 +21,4 @@ Stub page for multi-agents, cognition, devin, orchestration.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

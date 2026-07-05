@@ -118,7 +118,7 @@ The prompt debt framing has generated active debate. Some practitioners argue th
 
 - [[concepts/prompts-as-technical-debt]] — Earlier concept page covering the broader framing of prompts as a form of technical debt, including the "fighting the weights" dynamic Breunig identified in 2025
 - [[concepts/prompt-engineering]] — The practice of designing and optimizing prompts, including both hand-crafted and automated approaches
-- [[concepts/dspy]] — Stanford's declarative framework for programmatic prompt optimization and model-portable pipelines
+- [[entities/dspy]] — Stanford's declarative framework for programmatic prompt optimization and model-portable pipelines
 - [[concepts/gepa]] — UC Berkeley's genetic algorithm approach to multi-objective prompt evolution
 - [[concepts/agentic-engineering]] — The broader engineering discipline for building reliable AI agent systems, of which prompt management is one component
 - [[concepts/ai-economics]] — The economic forces shaping AI adoption, including vendor lock-in dynamics and model switching costs

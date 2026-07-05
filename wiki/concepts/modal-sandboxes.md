@@ -70,7 +70,7 @@ Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9
 ## Related Concepts
 
 - [[concepts/coding-agents/background-coding-agent]] — Modal is the execution layer for background agents
-- [[warm-start-optimization]] — Modal snapshots enable fast warm starts
+- [[concepts/warm-start-optimization]] — Modal snapshots enable fast warm starts
 - [[sandbox/infrastructure]] — Modal is an infrastructure-level sandboxing technology
 
 ## Sources

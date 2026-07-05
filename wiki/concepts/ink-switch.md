@@ -21,4 +21,4 @@ Stub page for Ink & Switch.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

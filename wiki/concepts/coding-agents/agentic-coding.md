@@ -79,7 +79,7 @@ This section informs graph queries: authored by [[entities/drew-breunig|Drew Bre
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — The umbrella philosophy: Agent = Model + Harness
-- [[ai-agent-engineering]] — System-side build patterns for agent construction
+- [[concepts/ai-agent-engineering]] — System-side build patterns for agent construction
 - [[concepts/speculative-decoding]] — Inference optimization that makes coding agents faster
 - [[entities/drew-breunig]] — Author of the 10 Lessons framework
 

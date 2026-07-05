@@ -70,7 +70,7 @@ Command Center sits at the intersection of several trends:
 ## Related Pages
 - [[concepts/ai-coding-tools]] — Overview of AI coding tool landscape
 - [[concepts/claude-code/claude-code]] — Anthropic's agentic coding CLI
-- [[concepts/codex]] — OpenAI's coding agent platform
+- [[entities/codex]] — OpenAI's coding agent platform
 - [[concepts/multi-agents/multi-agent]] — Multi-agent system patterns
 - [[concepts/agent-platform]] — Agent platform design patterns
 - [[concepts/code-review]] — AI-assisted code review

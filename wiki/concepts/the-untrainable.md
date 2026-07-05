@@ -141,20 +141,20 @@ Intelligence is not the bottleneck. **Permission** and **accountability** are:
 
 - [[ai-moat]] — Defensible advantages in AI
 - [[private-data]] — Organization-specific knowledge
-- [[evaluation]] — How to measure AI performance
+- [[concepts/evaluation]] — How to measure AI performance
 - [[enterprise-ai]] — AI in large organizations
 - [[absorption-frontier]] — Where labs pull scaffolding into weights
 - [[legible-work]] — Measurable, commoditizable tasks
 
 ## People
 
-- [[sarah-guo]] — Author of the concept
-- [[noam-brown]] — Cited on evaluation horizons
+- [[entities/sarah-guo]] — Author of the concept
+- [[entities/noam-brown]] — Cited on evaluation horizons
 - [[gabe-pereyra]] — Cited on automation requirements
 
 ## Companies
 
-- [[sierra]] — Example of pricing outcomes
-- [[cognition]] — Example of performance guarantees
-- [[harvey]] — Example of domain-specific benchmarks
+- [[entities/sierra]] — Example of pricing outcomes
+- [[entities/cognition]] — Example of performance guarantees
+- [[entities/harvey]] — Example of domain-specific benchmarks
 - [[open-evidence]] — Example of physician adoption

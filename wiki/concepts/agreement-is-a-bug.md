@@ -20,18 +20,18 @@ The thesis that consensus among AI agents can be a failure mode in multi-agent s
 
 ## Connection to Sycophancy
 
-Agreement as a bug connects directly to [[ai-sycophancy]] — the tendency of LLMs to produce agreeable rather than correct outputs. In multi-agent systems, this compounds: if Agent A has a sycophantic tendency, Agent B will amplify it, creating consensus on incorrect answers.
+Agreement as a bug connects directly to [[concepts/ai-sycophancy]] — the tendency of LLMs to produce agreeable rather than correct outputs. In multi-agent systems, this compounds: if Agent A has a sycophantic tendency, Agent B will amplify it, creating consensus on incorrect answers.
 
 ## Implications for Multi-Agent Systems
 
 1. **Diversity as Signal:** Disagreement is valuable information, not noise
-2. **Pareto Frontiers:** Connects to [[gepa]] which uses disagreement/pareto optimality as an optimization signal
+2. **Pareto Frontiers:** Connects to [[concepts/gepa]] which uses disagreement/pareto optimality as an optimization signal
 3. **Agent Architecture:** Requires deliberate mechanisms to prevent convergence (temperature variation, different system prompts, adversarial roles)
 
 ## Related
 
-- [[ai-sycophancy]]
-- [[gepa]]
+- [[concepts/ai-sycophancy]]
+- [[concepts/gepa]]
 - [[concepts/multi-agents/agent-swarms]]
 - [[concepts/multi-agents/agentic-conflict-resolution]]
 - [[concepts/multi-agents/multi-agent-systems]]

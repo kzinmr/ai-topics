@@ -21,4 +21,4 @@ Stub page for Subagents — Parallel AI Agent Delegation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

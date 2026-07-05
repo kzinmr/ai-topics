@@ -105,8 +105,8 @@ This paradigm mirrors what **PyTorch did for neural networks**:
 
 ## See Also
 
-- [[concepts/dspy]] — Main DSPy concept page
+- [[entities/dspy]] — Main DSPy concept page
 - [[concepts/dspy-modules]] — Module reference and pipeline patterns
 - [[concepts/dspy-optimization]] — Optimization techniques (Assertions, Fine-Tuning)
-- [[concepts/dspy]] — Main DSPy concept page
+- [[entities/dspy]] — Main DSPy concept page
 - [[entities/omar-khattab]] — Creator of DSPy

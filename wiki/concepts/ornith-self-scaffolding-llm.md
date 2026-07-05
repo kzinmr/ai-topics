@@ -117,7 +117,7 @@ Ornith inverts this relationship: it is **trained self-scaffolding** (Agentic RL
 ## Related Pages
 
 - [[entities/simon-willison]] — Simon Willison, who conducted the hands-on evaluation and reported on Ornith-1.0
-- [[concepts/coding-agents]] — The broader category of LLM-based coding agents
+- [[entities/coding-agents]] — The broader category of LLM-based coding agents
 - [[concepts/agentic-engineering]] — Engineering practices for building agentic systems
 - [[concepts/rlm-recursive-language-models]] — Recursive Language Models — context-as-variable paradigm
 - [[concepts/dynamic-workflows]] — Claude Code's model-generated orchestration scripts

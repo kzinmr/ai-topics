@@ -22,7 +22,7 @@ related:
 
 **peoplereadmes** is an open-source framework by [[muratcan-koylan|Muratcan Koylan]] for creating structured "persona context systems" — research artifacts that help humans and AI agents understand how exceptional technical builders operate. It is explicitly NOT a celebrity chatbot or impersonation project. The goal is to extract transferable knowledge from observable professional patterns.
 
-The first persona package is `personas/riley-walz/`, modeling the public professional patterns of [[riley-walz]].
+The first persona package is `personas/riley-walz/`, modeling the public professional patterns of [[entities/riley-walz]].
 
 ## Core Premise
 
@@ -137,8 +137,8 @@ As of May 2026, peoplereadmes is in early development with one complete persona 
 
 ## Related Pages
 
-- [[riley-walz]] — First peoplereadmes persona study subject
-- [[muratcan-koylan]] — Creator of the peoplereadmes framework
+- [[entities/riley-walz]] — First peoplereadmes persona study subject
+- [[entities/muratcan-koylan]] — Creator of the peoplereadmes framework
 - [[concepts/agent-skills]] — Koylan's broader Agent Skills framework (15.6k stars)
 - [[concepts/context-engineering|Context Engineering]] — The discipline that underpins both Agent Skills and peoplereadmes
 - [[concepts/evaluation/llm-as-judge-skills]] — Koylan's evaluation skills used in peoplereadmes eval rubrics

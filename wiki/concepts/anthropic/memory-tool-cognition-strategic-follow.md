@@ -21,4 +21,4 @@ Stub page for Anthropic's Memory Tool — Cognition's Strategic Follow.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

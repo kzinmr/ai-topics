@@ -13,8 +13,8 @@ sources:
   - "arXiv:2406.13352"
   - "NeurIPS 2024 Datasets and Benchmarks"
 related_concepts:
-  - "[[prompt-injection]]"
-  - "[[ai-agents]]"
+  - "[[concepts/prompt-injection]]"
+  - "[[concepts/ai-agents]]"
   - "[[adversarial-testing]]"
   - "[[agent-security-bench]]"
 ---
@@ -57,4 +57,4 @@ The benchmark comprises **97 tasks** across multiple application domains, with *
 
 ## Connections to Other Wiki Concepts
 
-AgentDojo connects to the broader landscape of **[[ai-agents]]** evaluation by addressing one of the most critical security concerns: adversarial manipulation of agent behavior. Its focus on **prompt-injection** makes it a key resource for understanding how malicious inputs can override system instructions. The benchmark's dynamic methodology influenced subsequent works on **[[adversarial-testing]]** and contributed to the development of defense frameworks studied in [[agent-security-bench]].
+AgentDojo connects to the broader landscape of **[[concepts/ai-agents]]** evaluation by addressing one of the most critical security concerns: adversarial manipulation of agent behavior. Its focus on **prompt-injection** makes it a key resource for understanding how malicious inputs can override system instructions. The benchmark's dynamic methodology influenced subsequent works on **[[adversarial-testing]]** and contributed to the development of defense frameworks studied in [[agent-security-bench]].

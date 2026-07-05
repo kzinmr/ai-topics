@@ -74,7 +74,7 @@ The foundation of LLM engineering. Without evaluation, you're "flying blind."
 
 **Related Wiki Pages:**
 - [[concepts/evaluation/evals-for-ai-agents]] — Evaluation for AI agents (needs expansion)
-- [[eugene-yan--core-ideas]] — Eugene Yan's EDD philosophy and AlignEval
+- [[entities/eugene-yan--core-ideas]] — Eugene Yan's EDD philosophy and AlignEval
 
 #### NLI-based Hallucination Detection (OOD Finetuning)
 

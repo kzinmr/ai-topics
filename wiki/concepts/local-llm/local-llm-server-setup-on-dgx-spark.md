@@ -21,4 +21,4 @@ Stub page for Local LLM Server Setup on DGX Spark.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

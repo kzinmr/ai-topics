@@ -58,7 +58,7 @@ HN discussion themes included:
 
 ## See Also
 
-- [[mcp]] — Model Context Protocol overview
+- [[concepts/mcp]] — Model Context Protocol overview
 - [[concepts/mcp-protocol]] — MCP protocol specifications
 - [[concepts/agent-security-patterns]] — security patterns for AI agents
 - [[concepts/ai-agent-security]] — AI agent security landscape

@@ -308,11 +308,11 @@ See also: [[concepts/apple-foundation-models]]
 
 ## See Also
 
-- [[florian-brand]] — Research Engineer who endorsed Gemma 4 E4B as daily local model.
+- [[entities/florian-brand]] — Research Engineer who endorsed Gemma 4 E4B as daily local model.
 - [[pi-coding-agent]] — Minimal coding agent by Mario Zechner that runs with Gemma 4 via LM Studio.
-- [[mistral-ai]] — Competing open-weight model provider with Mistral Medium 3.5.
+- [[entities/mistral-ai]] — Competing open-weight model provider with Mistral Medium 3.5.
 - [[open-models]] — Open-weight model ecosystem and licensing landscape.
 - [[concepts/coding-agents/coding-agents]] — AI agents for software engineering tasks.
 - [[concepts/local-llm/_index]] — Local LLM deployment patterns and use cases.
 - [[lmstudio]] — Local model serving tool for running Gemma 4 on consumer hardware.
-- [[vicki-boykis]] — Reported ~75% frontier quality with Gemma 4 for local agentic coding.
+- [[entities/vicki-boykis]] — Reported ~75% frontier quality with Gemma 4 for local agentic coding.

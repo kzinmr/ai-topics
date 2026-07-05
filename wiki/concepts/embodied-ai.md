@@ -21,4 +21,4 @@ Stub page for embodied-ai.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

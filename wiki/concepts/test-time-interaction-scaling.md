@@ -77,8 +77,8 @@ Optimal allocation:
 
 ## Related Concepts
 
-- [[test-time-scaling]] — The broader TTS landscape (CoT, self-consistency, beam search)
+- [[concepts/test-time-scaling]] — The broader TTS landscape (CoT, self-consistency, beam search)
 - [[training-free-rl]] — Training-free approaches to TTS
 - [[reinforcement-learning]] — RL fundamentals for agent training
-- [[chain-of-thought]] — The "thinking" axis that TTI complements
+- [[concepts/chain-of-thought]] — The "thinking" axis that TTI complements
 - [[reasoning]] — AI reasoning capabilities and benchmarks

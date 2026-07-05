@@ -44,7 +44,7 @@ The benchmark uses real-world Stripe integration scenarios:
 - The benchmark reveals significant gaps between general coding ability and the ability to build real API integrations
 - Agents that perform well on general coding benchmarks sometimes struggle with Stripe-specific integration complexity
 - Results highlight the importance of documentation understanding and API navigation skills
-- The benchmark demonstrates that domain-specific evaluation provides insights not captured by general [[coding-agents]] benchmarks
+- The benchmark demonstrates that domain-specific evaluation provides insights not captured by general [[entities/coding-agents]] benchmarks
 - Functional correctness rates show room for improvement in agent capabilities for production-grade code generation
 
 ## Related Benchmarks
@@ -56,4 +56,4 @@ The benchmark uses real-world Stripe integration scenarios:
 
 ## Connections to Other Wiki Concepts
 
-The Stripe Agent Benchmark exemplifies the trend toward evaluating [[coding-agents]] on real-world, domain-specific tasks rather than synthetic coding challenges. Like [[cursorbench]], it demonstrates that general benchmarks may not capture the practical capabilities needed for specific integration tasks. This connects to broader [[agent-evaluation]] discussions about the gap between benchmark performance and real-world utility in [[ai-agents]] systems.
+The Stripe Agent Benchmark exemplifies the trend toward evaluating [[entities/coding-agents]] on real-world, domain-specific tasks rather than synthetic coding challenges. Like [[cursorbench]], it demonstrates that general benchmarks may not capture the practical capabilities needed for specific integration tasks. This connects to broader [[agent-evaluation]] discussions about the gap between benchmark performance and real-world utility in [[concepts/ai-agents]] systems.

@@ -72,7 +72,7 @@ Claude Design's distinctive advantage is the seamless handoff to Claude Code for
 - [[entities/anthropic]] — Parent company; Big Swing strategy
 - [[concepts/claude-opus-4-7]] — Vision model powering Claude Design
 - [[concepts/claude-code/claude-code-routines]] — Design-to-code handoff integration
-- [[cat-wu]] — Head of Product at Anthropic; drove Claude Code and product velocity
+- [[entities/cat-wu]] — Head of Product at Anthropic; drove Claude Code and product velocity
 - [[concepts/claude/mythos-glasswing]] — Anthropic's broader product ecosystem vision
 
 ## Sources
@@ -83,4 +83,4 @@ Claude Design's distinctive advantage is the seamless handoff to Claude Code for
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]

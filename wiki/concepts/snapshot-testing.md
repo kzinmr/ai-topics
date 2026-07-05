@@ -21,4 +21,4 @@ Stub page for snapshot-testing.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

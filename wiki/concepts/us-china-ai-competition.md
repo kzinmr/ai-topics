@@ -63,7 +63,7 @@ Despite compute constraints, Chinese AI labs remain close on intelligence throug
 - China-based labs create thousands of fraudulent accounts to circumvent access controls on US frontier models
 - Systematically harvest model outputs to replicate frontier capabilities at a fraction of the cost
 - Described by Chinese state media as the "back door" that PRC AI labs depend on as core to their business model
-- See also: [[industrial-scale-distillation-attacks-accusation]]
+- See also: [[concepts/industrial-scale-distillation-attacks-accusation]]
 
 ## Two Scenarios for 2028
 
@@ -141,13 +141,13 @@ In "Policy on the AI Exponential," Dario Amodei proposed a comprehensive geopoli
 
 ## Related Concepts
 
-- [[model-distillation]] — Technical mechanism behind distillation attacks
-- [[industrial-scale-distillation-attacks-accusation]] — April 2026 event: Anthropic's accusations against DeepSeek, Moonshot, MiniMax
+- [[concepts/model-distillation]] — Technical mechanism behind distillation attacks
+- [[concepts/industrial-scale-distillation-attacks-accusation]] — April 2026 event: Anthropic's accusations against DeepSeek, Moonshot, MiniMax
 - [[ai-governance]] — Broader AI governance frameworks
-- [[ai-digital-nato]] — Industry coalition against distillation
+- [[concepts/ai-digital-nato]] — Industry coalition against distillation
 
 ## Related Entities
 
-- [[anthropic]] — Source of the 2028 scenarios framework
-- [[deepseek]] — Cited as primary Chinese lab with access to smuggled US chips and weak safety practices
-- [[openai]] — Member of anti-distillation alliance
+- [[entities/anthropic]] — Source of the 2028 scenarios framework
+- [[entities/deepseek]] — Cited as primary Chinese lab with access to smuggled US chips and weak safety practices
+- [[entities/openai]] — Member of anti-distillation alliance

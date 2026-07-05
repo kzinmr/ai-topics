@@ -21,4 +21,4 @@ Stub page for software-rendering.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

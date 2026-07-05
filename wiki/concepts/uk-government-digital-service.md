@@ -21,4 +21,4 @@ Stub page for UK Government Digital Service.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

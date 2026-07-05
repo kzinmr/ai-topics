@@ -21,4 +21,4 @@ Stub page for joseph-redmon.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

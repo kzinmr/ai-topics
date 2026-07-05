@@ -72,7 +72,7 @@ Source: [[entities/langchain|LangChain]] — [Auth Proxy for LangSmith Sandboxes
 
 ### 5. Package Security for AI Agents (Nesbitt.io, April 2026)
 
-[[bradford-morgan-white]] (Nesbitt.io) identified a critical gap: **AI agents install packages without understanding security implications**. Key findings:
+[[entities/bradford-morgan-white]] (Nesbitt.io) identified a critical gap: **AI agents install packages without understanding security implications**. Key findings:
 
 - Agents will blindly `pip install` or `npm install` packages that may be malicious
 - Package registries lack AI-specific security signals (agents can't evaluate "is this package safe?")
@@ -90,7 +90,7 @@ Recommended mitigations:
 
 ### 6. "Not a Security Issue" Policy Failures (Nesbitt.io, May 2026)
 
-[[bradford-morgan-white]] published a follow-up analysis identifying a critical organizational failure pattern: **"Not a Security Issue" as a threat model blind spot**.
+[[entities/bradford-morgan-white]] published a follow-up analysis identifying a critical organizational failure pattern: **"Not a Security Issue" as a threat model blind spot**.
 
 The core argument: **the most dangerous vulnerabilities are the ones your threat model tells you to ignore**. Key points:
 

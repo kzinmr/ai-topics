@@ -75,7 +75,7 @@ Released to Google Cloud in **private preview** (December 2025). Enterprises can
 
 ## Relationship to Other Agents
 
-AlphaEvolve is distinct from general-purpose coding agents like [[entities/claude-code]] or [[concepts/codex]]:
+AlphaEvolve is distinct from general-purpose coding agents like [[entities/claude-code]] or [[entities/codex]]:
 - **Not interactive**: Runs autonomously in an evolutionary loop
 - **Domain-specific evaluator**: Requires a user-defined fitness function
 - **Gemini-native**: Uses Google's Gemini models, not general LLM APIs

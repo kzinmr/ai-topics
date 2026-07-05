@@ -72,11 +72,11 @@ Qdrant published a full tutorial implementing this pattern:
 - `scroll` API with `visibility_filter` for scoped retrieval
 - Steps: add file → update file → delete file → branch off → change inherited file → merge
 
-See: [[qdrant]] tutorial at [qdrant.tech](https://qdrant.tech/documentation/tutorials-search-engineering/branch-aware-search/)
+See: [[entities/qdrant]] tutorial at [qdrant.tech](https://qdrant.tech/documentation/tutorials-search-engineering/branch-aware-search/)
 
 ## Parallel: Neon's Database Branching
 
-[[neon-database]] implements the same branching concept at the database layer:
+[[entities/neon-database]] implements the same branching concept at the database layer:
 
 | Dimension | Qdrant Branch-Aware Search | Neon Database Branching |
 |---|---|---|
@@ -91,7 +91,7 @@ See: [[qdrant]] tutorial at [qdrant.tech](https://qdrant.tech/documentation/tuto
 
 ## Parallel: turbopuffer's Namespace Branching
 
-[[turbopuffer]] implements branching at the **search infrastructure** layer — closer to Qdrant's domain but with a fundamentally different architecture:
+[[entities/turbopuffer]] implements branching at the **search infrastructure** layer — closer to Qdrant's domain but with a fundamentally different architecture:
 
 | Dimension | Qdrant Branch-Aware Search | turbopuffer Namespace Branching |
 |---|---|---|
@@ -147,8 +147,8 @@ All three systems apply **"branch your data like you branch your code"**:
 
 ## Related Concepts
 
-- [[vector-search]] — the base retrieval mechanism being scoped
-- [[rag-systems]] — primary application domain for branch-aware retrieval
-- [[agentic-retrieval]] — agents may need branch-scoped search for version-aware tasks
+- [[concepts/vector-search]] — the base retrieval mechanism being scoped
+- [[concepts/rag-systems]] — primary application domain for branch-aware retrieval
+- [[concepts/agentic-retrieval]] — agents may need branch-scoped search for version-aware tasks
 - [[multitenancy]] — branch isolation parallels tenant isolation patterns
-- [[zero-disk-architecture]] — turbopuffer's object-storage-native model enables cheap branching
+- [[concepts/zero-disk-architecture]] — turbopuffer's object-storage-native model enables cheap branching

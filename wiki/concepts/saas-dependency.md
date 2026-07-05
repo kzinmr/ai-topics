@@ -21,4 +21,4 @@ Stub page for SaaS Dependency.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

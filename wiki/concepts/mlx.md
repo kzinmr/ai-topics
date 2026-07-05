@@ -48,8 +48,8 @@ MLX (pronounced "mɛlɪks") is an open-source array processing framework for mac
 
 - [[inference/llama-cpp]]
 - [[concepts/local-llm/_index]]
-- [[fine-tuning]]
-- [[mac-studio-local-ai]]
+- [[concepts/fine-tuning]]
+- [[entities/mac-studio-local-ai]]
 - [[concepts/inference]]
 
 ## Sources

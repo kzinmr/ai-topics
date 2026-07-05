@@ -21,4 +21,4 @@ Stub page for AI Engineering.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

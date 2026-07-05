@@ -27,7 +27,7 @@ sources:
 
 # Context Engineering
 
-**Context engineering** is the art and science of curating the optimal set of tokens in an LLM's context window at each inference step. It is the natural evolution of [[prompt-engineering]], shifting focus from crafting one-shot prompts to **continuously managing the entire context state** — system instructions, tools, MCP, external data, message history — across multi-turn, long-horizon agent loops.
+**Context engineering** is the art and science of curating the optimal set of tokens in an LLM's context window at each inference step. It is the natural evolution of [[concepts/prompt-engineering]], shifting focus from crafting one-shot prompts to **continuously managing the entire context state** — system instructions, tools, MCP, external data, message history — across multi-turn, long-horizon agent loops.
 
 > "Context engineering is the delicate art and science of filling the context window with just the right information for the next step."
 > — Andrej Karpathy
@@ -118,7 +118,7 @@ Persist information so the agent can reference it later without keeping it in th
   - **Semantic** — facts about users, codebases, the world
 - Products with memory: ChatGPT, Cursor, Windsurf (auto-generate user-agent memories).
 
-**See also**: [[memory-systems]], [[agent-memory]]
+**See also**: [[memory-systems]], [[concepts/agent-memory]]
 
 #### 2. Select — Pull Context Into the Window
 
@@ -129,7 +129,7 @@ Choose what context to load at each step, avoiding overwhelming the attention bu
 - **Knowledge selection (RAG)**: Windsurf's code indexing pipeline — AST parsing → semantic chunking → grep/file search → knowledge graph retrieval → re-ranking.
 - ⚠️ **Trap**: Incorrect selection can feel intrusive (Simon Willison's example of ChatGPT adding his location to an image unprompted).
 
-**See also**: [[rag]], [[embeddings]], [[progressive-disclosure]]
+**See also**: [[rag]], [[entities/embeddings]], [[progressive-disclosure]]
 
 #### 3. Compress — Keep Only What's Needed
 
@@ -139,7 +139,7 @@ Reduce token count while preserving the information necessary for the task.
 - **Context trimming**: Heuristic pruning (remove old messages, old tool results, thinking blocks). Provence is a trained context pruner.
 - **Art of compaction**: Overly aggressive summarization can lose subtle but critical context whose importance only becomes apparent later.
 
-**See also**: [[prompt-caching]], [[token-economics]]
+**See also**: [[concepts/prompt-caching]], [[concepts/token-economics]]
 
 #### 4. Isolate — Split Context Across Agents
 
@@ -149,7 +149,7 @@ Separate concerns into independent context windows.
 - **Environment isolation (Code Agents)**: Execute code in sandboxes. Only selected return values re-enter the LLM context. HuggingFace's deep researcher uses this pattern.
 - **Filesystem isolation**: Agents communicate through the filesystem/git history rather than through shared context windows.
 
-**See also**: [[concepts/multi-agents/multi-agent]], [[subagents]], [[ralph-loop]]
+**See also**: [[concepts/multi-agents/multi-agent]], [[concepts/subagents]], [[ralph-loop]]
 
 ---
 
@@ -331,12 +331,12 @@ Building an agent? Consider each dimension:
 ## Related Pages
 
 - [[agent-architecture]] — How these patterns compose into agent systems
-- [[prompt-engineering]] — The precursor to context engineering
+- [[concepts/prompt-engineering]] — The precursor to context engineering
 - [[memory-systems]] — Memory-specific strategies
 - [[concepts/multi-agents/multi-agent]] — Sub-agent delegation patterns
-- [[managed-agents]] — Anthropic's meta-harness architecture
+- [[concepts/managed-agents]] — Anthropic's meta-harness architecture
 - [[ralph-loop]] — The delegation loop pattern
 - [[concepts/coding-agents/codeact]] — Code-as-action pattern
 - [[progressive-disclosure]] — The progressive disclosure pattern
-- [[prompt-caching]] — Token economics and caching strategies
+- [[concepts/prompt-caching]] — Token economics and caching strategies
 

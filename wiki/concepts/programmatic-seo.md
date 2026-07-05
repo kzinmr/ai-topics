@@ -21,4 +21,4 @@ Stub page for Programmatic-SEO.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for Project Zero.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

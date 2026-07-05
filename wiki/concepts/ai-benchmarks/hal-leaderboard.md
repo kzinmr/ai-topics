@@ -44,7 +44,7 @@ HAL operates as a meta-leaderboard that aggregates standardized evaluation resul
 - HAL provides the first comprehensive, cross-benchmark ranking of AI agent systems
 - Rankings reveal that top-performing agents on individual benchmarks do not necessarily dominate across all tasks
 - The aggregation methodology highlights which agent architectures generalize well versus those that overfit to specific evaluation settings
-- The leaderboard has become a key reference point for the [[ai-agents]] research community
+- The leaderboard has become a key reference point for the [[concepts/ai-agents]] research community
 
 ## Related Benchmarks
 
@@ -55,4 +55,4 @@ HAL operates as a meta-leaderboard that aggregates standardized evaluation resul
 
 ## Connections to Other Wiki Concepts
 
-HAL serves as a central aggregation point for [[agent-evaluation]] research, connecting to numerous individual benchmarks and evaluation frameworks. Its holistic approach addresses the fragmentation problem in [[ai-agents]] evaluation, where agents might be optimized for a single benchmark without demonstrating general capability. By providing a unified view, HAL helps researchers and practitioners understand which agent designs truly advance the state of the art.
+HAL serves as a central aggregation point for [[agent-evaluation]] research, connecting to numerous individual benchmarks and evaluation frameworks. Its holistic approach addresses the fragmentation problem in [[concepts/ai-agents]] evaluation, where agents might be optimized for a single benchmark without demonstrating general capability. By providing a unified view, HAL helps researchers and practitioners understand which agent designs truly advance the state of the art.

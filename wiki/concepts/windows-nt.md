@@ -21,4 +21,4 @@ Stub page for Windows NT.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

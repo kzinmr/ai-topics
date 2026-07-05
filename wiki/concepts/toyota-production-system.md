@@ -21,4 +21,4 @@ Stub page for Toyota Production System.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

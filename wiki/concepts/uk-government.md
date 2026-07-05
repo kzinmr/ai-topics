@@ -21,4 +21,4 @@ Stub page for UK Government.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

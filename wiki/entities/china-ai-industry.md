@@ -49,19 +49,19 @@ Open-source LLM provider driving cost disruption in AI.
 ### [[entities/unitree-robotics]]
 World's #1 humanoid robot seller, pricing disruption leader.
 
-### [[xpeng]]
+### [[entities/xpeng]]
 EV manufacturer with robotics and flying vehicle divisions.
 
-### [[dji]]
+### [[entities/dji]]
 Global drone market dominance.
 
-### [[ubtech-robotics]]
+### [[entities/ubtech-robotics]]
 Service robots and humanoid platforms; Apple and Disney partnerships.
 
 ### [[entities/agi-bot]]
 Second-largest Chinese humanoid robot seller (5,168 units, 2025).
 
-### [[fourier-intelligence]]
+### [[entities/fourier-intelligence]]
 Rehabilitation and humanoid robotics; GR-1 general-purpose humanoid.
 
 ## Hardware Supply Crisis: NVIDIA B300 at $1M (April 2026)

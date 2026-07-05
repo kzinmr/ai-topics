@@ -21,4 +21,4 @@ Stub page for infrastructure-noise.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

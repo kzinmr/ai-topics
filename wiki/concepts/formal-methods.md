@@ -21,6 +21,6 @@ Stub page for Formal Methods.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/formal-verification-llm-agents]]
 - [[concepts/intent-formalization]]

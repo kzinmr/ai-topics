@@ -64,8 +64,8 @@ He revealed that Anthropic's interpretability research finds "internal states th
 - Anthropic interpretability: [Transformer Circuits](https://transformer-circuits.pub/)
 
 ## See Also
-- [[anthropic]] — AI safety lab he co-founded
-- [[magnifica-humanitas]] — 2026 Papal encyclical on AI and human dignity
-- [[mechanistic-interpretability]] — his primary research field
-- [[jack-clark]] — Anthropic co-founder, policy lead
+- [[entities/anthropic]] — AI safety lab he co-founded
+- [[concepts/magnifica-humanitas]] — 2026 Papal encyclical on AI and human dignity
+- [[concepts/mechanistic-interpretability]] — his primary research field
+- [[entities/jack-clark]] — Anthropic co-founder, policy lead
 - [[concepts/security-and-governance/ai-safety]] — broader field context

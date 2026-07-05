@@ -21,4 +21,4 @@ Stub page for solo-founder-philosophy.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

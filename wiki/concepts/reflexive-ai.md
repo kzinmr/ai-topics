@@ -14,7 +14,7 @@ Reflexive AI refers to the organizational practice where AI usage is treated as 
 
 ## Origin
 
-The term gained prominence from [[tobi-lutke]]'s internal memo at [[shopify]] in April 2025: "Reflexive AI usage is now a baseline expectation at Shopify." The key principle: "Before hiring anyone new, managers must prove AI can't do the job better."
+The term gained prominence from [[entities/tobi-lutke]]'s internal memo at [[entities/shopify]] in April 2025: "Reflexive AI usage is now a baseline expectation at Shopify." The key principle: "Before hiring anyone new, managers must prove AI can't do the job better."
 
 ## Key Principles
 
@@ -47,13 +47,13 @@ The term gained prominence from [[tobi-lutke]]'s internal memo at [[shopify]] in
 
 Reflexive AI connects to:
 - [[concepts/experience-is-a-tax]] — experienced workers may resist AI adoption more
-- [[concepts/solo-founder-stack]] — reflexive AI enables one-person companies
-- [[ai-organization]] — represents a shift from hierarchical to intelligence-driven orgs
+- [[entities/solo-founder-stack]] — reflexive AI enables one-person companies
+- [[concepts/ai-organization]] — represents a shift from hierarchical to intelligence-driven orgs
 
 ## Related
 - [[entities/reflexive-ai]]
 
 - [[concepts/experience-is-a-tax]]
-- [[concepts/solo-founder-stack]]
-- [[ai-organization]]
-- [[ai-economics]]
+- [[entities/solo-founder-stack]]
+- [[concepts/ai-organization]]
+- [[concepts/ai-economics]]

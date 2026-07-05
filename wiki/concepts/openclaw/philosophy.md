@@ -108,7 +108,7 @@ OpenClaw's philosophy is deeply connected to the [[concepts/local-first-software
 
 ## Related
 
-- [[concepts/openclaw]] — OpenClaw concept aggregation
+- [[entities/openclaw]] — OpenClaw concept aggregation
 - [[concepts/openclaw/five-tier-precedence]] — Five-Tier Skill Precedence
 - [[concepts/skill-architecture-patterns]] — Comparison with Hermes
 - [[concepts/local-first-software]] — Local-first software

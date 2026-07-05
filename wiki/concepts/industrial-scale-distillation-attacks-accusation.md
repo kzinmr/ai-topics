@@ -21,4 +21,4 @@ Stub page for Industrial-Scale Distillation Attacks Accusation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

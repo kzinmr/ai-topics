@@ -110,7 +110,7 @@ Four vulnerable targets (single vulnerability each, no defenses):
 - [[concepts/security-and-governance/ai-safety]] — broader AI safety landscape
 - [[concepts/agent-safety]] — agent-specific safety considerations
 - [[concepts/autonomous-agents]] — autonomous agent capabilities
-- [[entities/qwen]] — Qwen model family
+- [[concepts/qwen]] — Qwen model family
 - [[entities/anthropic]] — Claude model family
 - [[entities/openai]] — GPT model family
 

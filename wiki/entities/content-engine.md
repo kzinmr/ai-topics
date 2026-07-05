@@ -81,7 +81,7 @@ Content Engine is a key component of the **Vibe CEO model**. By managing content
 Content Engine's demand (7,943 bookmarks) shows that solo founders and influencers recognize **content automation as a core business infrastructure**. It enables individuals to produce media-company-level content without a team.
 
 ## Related Concepts
-- [[concepts/content-engine]]
+- [[entities/content-engine]]
 
 - [Solo Founder Stack](solo-founder-stack.md) — Component of the Vibe CEO model
 - [Claude Perfect Memory](claude-perfect-memory.md) — Importance of context management

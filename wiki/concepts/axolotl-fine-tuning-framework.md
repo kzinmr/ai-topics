@@ -21,4 +21,4 @@ Stub page for Axolotl — Fine-Tuning Framework.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

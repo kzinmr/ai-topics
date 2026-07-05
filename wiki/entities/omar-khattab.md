@@ -320,10 +320,10 @@ Key contribution: **StudyBench** benchmark with DSPy as a test domain — using 
 
 ## See Also
 
-- [[rlms]] — Recursive Language Models (co-author)
-- [[alex-zhang]] — PhD student, RLM first author
+- [[concepts/rlms]] — Recursive Language Models (co-author)
+- [[entities/alex-zhang]] — PhD student, RLM first author
 -  — Late interaction retrieval (creator)
-- [[dspy]] — Declarative LM programming (creator)
-- [[gepa]] — Genetic-Pareto prompt optimization (creator)
-- [[machine-studying]] — Agents developing expertise from corpora (co-author, 2026)
+- [[entities/dspy]] — Declarative LM programming (creator)
+- [[concepts/gepa]] — Genetic-Pareto prompt optimization (creator)
+- [[concepts/machine-studying]] — Agents developing expertise from corpora (co-author, 2026)
 -  — RLM co-author, MIT CSAIL databases/ML systems

@@ -21,4 +21,4 @@ Stub page for roberta-williams.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

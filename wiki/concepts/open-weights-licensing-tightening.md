@@ -76,6 +76,6 @@ If the oligopoly forms, labs could capture the vast consumer surplus currently e
 
 ## Related Concepts
 
-- [[open-source-ai]] — the broader open source AI movement
+- [[concepts/open-source-ai]] — the broader open source AI movement
 - [[ai-market-dynamics]] — competitive forces in the AI industry
 - [[llm-inference-costs]] — cost comparison of different model types

@@ -21,4 +21,4 @@ Stub page for elixir-beam-agent-orchestration-2026.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

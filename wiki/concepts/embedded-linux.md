@@ -21,4 +21,4 @@ Stub page for embedded-linux.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

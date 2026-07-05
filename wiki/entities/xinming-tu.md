@@ -35,7 +35,7 @@ Tu's primary contribution is a **unified theoretical framework** for structured 
 2. **Scope Isolation** — decouples persistent state from ephemeral context to suppress intrinsic atomic errors
 3. **Decoupled Verification** — suppresses residual failure tails by independent error-correction
 
-See [[structured-test-time-scaling]] for the full framework.
+See [[concepts/structured-test-time-scaling]] for the full framework.
 
 ### Key Ideas
 
@@ -57,7 +57,7 @@ The framework maps 13+ inference patterns (from linear CoT to Aletheia's strict 
 
 ## Related Concepts
 
-- [[structured-test-time-scaling]] — The full theoretical framework
-- [[test-time-scaling]] — Broader test-time scaling landscape
+- [[concepts/structured-test-time-scaling]] — The full theoretical framework
+- [[concepts/test-time-scaling]] — Broader test-time scaling landscape
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-agent systems
-- [[rlm-recursive-language-models]] — Recursive Language Models
+- [[concepts/rlm-recursive-language-models]] — Recursive Language Models

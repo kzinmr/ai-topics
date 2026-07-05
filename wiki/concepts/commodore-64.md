@@ -21,4 +21,4 @@ Stub page for Commodore 64.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

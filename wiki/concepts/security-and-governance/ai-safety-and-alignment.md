@@ -21,4 +21,4 @@ Stub page for ai-safety-and-alignment.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

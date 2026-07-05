@@ -42,5 +42,5 @@ Zero represents Vercel Labs' bet on the **agent-first future of programming**, w
 
 - [[concepts/agent-first-design]] — The agent-first language design philosophy Zero exemplifies
 - [[entities/armin-ronacher]] — Theorized the design principles Zero implements
-- [[concepts/vercel]] — Parent company and platform
+- [[entities/vercel]] — Parent company and platform
 - [[concepts/harness-engineering/agent-ergonomics]] — Broader agent-tool interaction design

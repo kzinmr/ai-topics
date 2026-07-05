@@ -21,4 +21,4 @@ Stub page for How to Design Programs.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

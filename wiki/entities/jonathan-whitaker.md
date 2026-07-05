@@ -160,7 +160,7 @@ This work challenges the traditional separation between discriminative and gener
 - **** — fastai founder; Answer.AI co-founder; Jonathan's close collaborator and teaching partner.
 - **** — Co-author of the Hugging Face Diffusion Models Course; ML engineer at Hugging Face.
 - **[[entities/hamel-husain]]** — Both work at Answer.AI; both write practical guides on ML tooling and evaluation.
-- **[[daniel-van-strien]]** — Both contribute to Hugging Face educational resources and write practical ML tutorials.
+- **[[entities/daniel-van-strien]]** — Both contribute to Hugging Face educational resources and write practical ML tutorials.
 - **[[entities/simon-willison]]** — Fellow advocate for accessible, practical AI tooling and education.
 
 ## X Activity Themes

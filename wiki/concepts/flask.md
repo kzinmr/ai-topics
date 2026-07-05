@@ -21,6 +21,6 @@ Stub page for Flask.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/jinja2]]
 - [[concepts/werkzeug]]

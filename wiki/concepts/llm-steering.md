@@ -39,7 +39,7 @@ Steering occupies an awkward "middle class" position in AI research:
 
 The release of [[DeepSeek-V4-Flash]] has changed the landscape. DeepSeek-V4-Flash is strong enough to compete with the lower end of frontier model agentic coding, yet small enough to run locally. Since steering requires a local model, this makes it practical for individual engineers to experiment with steering for the first time.
 
-Notably, [[antirez-com]] has baked steering into his [[DwarfStar 4]] project — a stripped-down version of [[llama.cpp]] designed to run only DeepSeek-V4-Flash. The steering implementation is currently rudimentary (e.g., a toy "verbosity" control replicable via prompting), but the project was only released eight days ago as of May 2026, suggesting rapid development ahead.
+Notably, [[entities/antirez-com]] has baked steering into his [[DwarfStar 4]] project — a stripped-down version of [[llama.cpp]] designed to run only DeepSeek-V4-Flash. The steering implementation is currently rudimentary (e.g., a toy "verbosity" control replicable via prompting), but the project was only released eight days ago as of May 2026, suggesting rapid development ahead.
 
 ## Potential Applications
 

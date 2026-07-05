@@ -48,6 +48,6 @@ Published a list of 35 RL interview questions for LLM/Agentic RL positions in Ju
 ## Related Pages
 
 - [[training-free-rl]] — Training-free RL concept (ETS, Power Sampling)
-- [[test-time-scaling]] — Comprehensive TTS landscape
+- [[concepts/test-time-scaling]] — Comprehensive TTS landscape
 - [[rl-interview-questions-2026]] — RL interview question list (35 questions)
 - [[reinforcement-learning]] — Reinforcement learning fundamentals

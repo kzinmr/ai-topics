@@ -58,7 +58,7 @@ Thoughtful Lab argues that **research intuition is a trainable skill** — built
 
 - [[concepts/modelcrafting]] — Core paradigm explored by Thoughtful Lab
 - [[concepts/post-training]] — The research domain of their experiment
-- [[entities/qwen]] — Qwen3-8B was the base model used
+- [[concepts/qwen]] — Qwen3-8B was the base model used
 - [[entities/anthropic]] — Claude 4.6 Opus was one of the test agents
 - [[entities/openai]] — GPT-5.4 was one of the test agents
 

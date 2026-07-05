@@ -21,4 +21,4 @@ Stub page for Dependency Graphs.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

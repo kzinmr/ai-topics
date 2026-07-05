@@ -22,10 +22,10 @@ related:
   - "[[rl-algorithms-for-llm-training]]"
   - "[[grpo-rl-training]]"
   - "[[verl]]"
-  - "[[trl-transformer-reinforcement-learning]]"
+  - "[[concepts/trl-transformer-reinforcement-learning]]"
   - "[[openrlhf]]"
   - "[[slime-rl]]"
-  - "[[deepseek]]"
+  - "[[entities/deepseek]]"
 ---
 
 # RL Interview Questions 2026
@@ -116,9 +116,9 @@ Positioned as an "RL interview benchmark," the list is divided into Algorithm (1
 - [[rl-algorithms-for-llm-training]] — RL algorithms for LLM training
 - [[reinforcement-learning]] — RL basics
 - [[rlhf]] — RLHF overview
-- [[deepseek]] — DeepSeek model family
+- [[entities/deepseek]] — DeepSeek model family
 - [[openrlhf]] — OpenRLHF framework
 - [[slime-rl]] — slime RL framework
 - [[verl]] — VeRL framework
-- [[trl-transformer-reinforcement-learning]] — TRL framework
+- [[concepts/trl-transformer-reinforcement-learning]] — TRL framework
 - [[asynchronous-rl]] — Asynchronous RL concept

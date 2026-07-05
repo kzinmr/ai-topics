@@ -21,4 +21,4 @@ Stub page for fine-tuning, post-training, overview.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

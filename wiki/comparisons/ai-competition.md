@@ -74,6 +74,6 @@ The strategic competitive positions of the United States and China in AI, roboti
 ## Related Pages
 
 - [[entities/china-ai-industry]] — China's comprehensive AI/robotics ecosystem
-- [[open-source-ai]] — Open-source AI as strategic differentiator
+- [[concepts/open-source-ai]] — Open-source AI as strategic differentiator
 - [[entities/unitree-robotics]] — China's humanoid robot market leader
 - [[entities/deepseek]] — Open-source cost disruption

@@ -114,7 +114,7 @@ Measures offered by Anthropic:
 
 ## Related
 
-- [[concepts/openclaw]] — OpenClaw concept hub
+- [[entities/openclaw]] — OpenClaw concept hub
 - [[concepts/openclaw/philosophy]] — Primitives First philosophy
 - [[concepts/personal-superintelligence]] — Data sovereignty movement
 - [[concepts/open-source-ai-destruction]] — Open source AI destruction

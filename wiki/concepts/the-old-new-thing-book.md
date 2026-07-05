@@ -21,4 +21,4 @@ Stub page for The Old New Thing (book).
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

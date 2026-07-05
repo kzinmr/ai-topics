@@ -21,4 +21,4 @@ Stub page for Agent-First Codebase Design.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

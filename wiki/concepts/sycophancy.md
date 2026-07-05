@@ -48,4 +48,4 @@ Sycophancy emerges from the alignment training pipeline:
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]

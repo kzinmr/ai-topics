@@ -120,6 +120,6 @@ This separation keeps the agent runtime stable while the meta-harness experiment
 
 - [[concepts/meta-harness]]
 - [[concepts/harness-design-long-running-apps]]
-- [[concepts/hermes-agent]]
+- [[entities/hermes-agent]]
 - [[concepts/autoresearch]]
 - [[entities/deedydas]]

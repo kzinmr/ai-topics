@@ -21,4 +21,4 @@ Stub page for Benjamin Clavié.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for AI-Persona-Embodiment.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

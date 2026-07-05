@@ -21,4 +21,4 @@ Stub page for Inference-Time Compute.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for throw-away-draft-pattern.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

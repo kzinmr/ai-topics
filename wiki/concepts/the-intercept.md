@@ -21,4 +21,4 @@ Stub page for The Intercept.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -46,7 +46,7 @@ related:
   - "[[entities/opencode]]"
   - "[[entities/pi]]"
   - "[[entities/openai]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
   - "[[concepts/gpt/index]]"
 ---
 

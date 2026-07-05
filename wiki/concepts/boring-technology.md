@@ -21,4 +21,4 @@ Stub page for Boring Technology.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

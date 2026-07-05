@@ -69,7 +69,7 @@ The bottleneck in AI adoption is not the tools — it’s **the first person wil
 Company AI Pilled is a framework advocating for **AI-driven organizational culture transformation**, not just tool adoption. The emphasis on the first person with courage and over-investment during the adoption phase serves as a practical guide for real-world enterprise AI implementation.
 
 ## Related Concepts
-- [[concepts/company-ai-pilled]]
+- [[entities/company-ai-pilled]]
 
 - [Reflexive AI](reflexive-ai.md) — Shopify AI adoption case study
 - [Solo Founder Stack](solo-founder-stack.md) — Solo founder AI usage

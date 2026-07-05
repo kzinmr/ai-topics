@@ -21,4 +21,4 @@ Stub page for AT Protocol.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

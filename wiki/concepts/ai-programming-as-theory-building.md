@@ -21,4 +21,4 @@ Stub page for AI Programming as Theory Building.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

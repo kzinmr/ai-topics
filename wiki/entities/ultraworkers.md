@@ -27,5 +27,5 @@ The UltraWorkers organization serves as the official home for the Rust port of C
 ## People
 
 - [[entities/sigrid-jin]] — Creator of Claw Code
-- [[yeachan-heo]] — Lead collaborator, creator of OmX ecosystem
+- [[entities/yeachan-heo]] — Lead collaborator, creator of OmX ecosystem
 - **code-yeongyu** — Creator of oh-my-openagent

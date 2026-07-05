@@ -14,7 +14,7 @@ sources:
 
 Back to main profile: [[entities/claude-code]]
 
-Based on arXiv:2604.14228v1 (Apr 2026). The source code leak ([[claude-code--history]]) revealed the complete internal architecture.
+Based on arXiv:2604.14228v1 (Apr 2026). The source code leak ([[entities/claude-code--history]]) revealed the complete internal architecture.
 
 ## 7-Component Flow
 

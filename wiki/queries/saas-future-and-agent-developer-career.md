@@ -41,7 +41,7 @@ related:
 
 ### Trend A: Horizontal Absorption by Personal AI Agents (Harnesses)
 
-As [[comparisons/agent-harnesses]] shows, personal AI Agent harnesses like OpenClaw (145K+ stars), Hermes Agent, OpenCode (155K stars), Pi, and Codex CLI are exploding in popularity. Their essence:
+As [[concepts/agent-harnesses]] shows, personal AI Agent harnesses like OpenClaw (145K+ stars), Hermes Agent, OpenCode (155K stars), Pi, and Codex CLI are exploding in popularity. Their essence:
 
 - **"Harness matters more than model"** — The same model with different harnesses produces 5-40pt performance differences
 - **Zero-code configuration absorption** — Users absorb diverse use cases through MCP configuration, skill additions, and prompt modifications
@@ -164,7 +164,7 @@ Instead of "abandoning" SaaS, stand on the side of "redefining" it:
 - [[concepts/service-as-software]] — Sequoia Cap Julien Bek (Mar 2026)
 - [[concepts/harness-engineering]] — Hamel Husain, Viv Trivedy, Addy Osmani, LangChain
 - [[comparisons/open-harness-vs-agent-framework]] — kzinmr (May 2026)
-- [[comparisons/agent-harnesses]] — Agent Harness comparison
+- [[concepts/agent-harnesses]] — Agent Harness comparison
 - [[concepts/harness-engineering/agent-native-product-management]] — Marcus Moretti / Every Inc
 - [[entities/palantir]] — FDE model
 - [[concepts/ai-services-joint-ventures]] — OpenAI/Anthropic/AWS JV strategies

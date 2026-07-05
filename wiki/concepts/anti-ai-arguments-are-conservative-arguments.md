@@ -21,4 +21,4 @@ Stub page for Anti-AI Arguments Are Conservative Arguments.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

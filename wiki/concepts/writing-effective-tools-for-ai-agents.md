@@ -21,4 +21,4 @@ Stub page for Writing Effective Tools for AI Agents.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

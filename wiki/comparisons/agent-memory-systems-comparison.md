@@ -218,7 +218,7 @@ Constraints shared by coding agent harnesses (ChatGPT Dreaming has different tra
 - [[entities/claude-code]] — Claude Code entity page
 - [[entities/claude-code--architecture]] — Claude Code 5-layer architecture details
 - [[entities/hermes-agent]] — Hermes Agent entity page
-- [[concepts/hermes-agent]] — Hermes Agent 3-Tier Memory System details
+- [[entities/hermes-agent]] — Hermes Agent 3-Tier Memory System details
 - [[concepts/hermes-agent-architecture]] — Hermes Agent architecture (Prompt Assembly, Persistent State)
 - [[concepts/claude/perfect-memory]] — Claude Code file-based memory design philosophy
 - [[concepts/harness-engineering/agent-memory-engineering]] — Nicolas Bustamante's 3-type classification

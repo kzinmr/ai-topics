@@ -21,4 +21,4 @@ Stub page for prompt-engineering, resilience, design-patterns.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

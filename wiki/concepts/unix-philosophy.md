@@ -21,4 +21,4 @@ Stub page for Unix Philosophy.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

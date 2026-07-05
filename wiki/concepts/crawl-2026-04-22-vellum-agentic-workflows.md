@@ -21,4 +21,4 @@ Stub page for crawl-2026-04-22-vellum-agentic-workflows.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

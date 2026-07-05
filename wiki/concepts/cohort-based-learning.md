@@ -21,4 +21,4 @@ Stub page for cohort-based-learning.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

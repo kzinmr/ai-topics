@@ -19,7 +19,7 @@ sources: [https://github.com/NousResearch/hermes-agent]
 
 ## Summary
 
-**Blogwatcher** (`blogwatcher-cli`) is a CLI-based tool for monitoring blogs, RSS feeds, and newsletters. It is used within AI agent systems — particularly [[concepts/hermes-agent]] — to track technical blogs, detect new content, and trigger downstream processing workflows such as crawling, summarization, and wiki enrichment.
+**Blogwatcher** (`blogwatcher-cli`) is a CLI-based tool for monitoring blogs, RSS feeds, and newsletters. It is used within AI agent systems — particularly [[entities/hermes-agent]] — to track technical blogs, detect new content, and trigger downstream processing workflows such as crawling, summarization, and wiki enrichment.
 
 ## Key Ideas
 

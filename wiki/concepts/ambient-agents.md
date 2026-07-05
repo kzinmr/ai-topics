@@ -60,9 +60,9 @@ The term was popularized by [LangChain's introduction of Ambient Agents](https:/
 ## Relationship to Other Concepts
 
 - **[[autonomous-agents]]** — Ambient agents are a specific deployment pattern of autonomous agents, emphasizing asynchronous background operation
-- **[[human-in-the-loop]]** — Ambient agents use a "thin" HITL pattern: human approves, doesn't co-pilot
+- **[[concepts/human-in-the-loop]]** — Ambient agents use a "thin" HITL pattern: human approves, doesn't co-pilot
 - **[[agent-architecture]]** — Ambient agents require durable execution, state persistence, and multi-surface communication
-- **[[ai-agents]]** — The broader category; ambient agents represent the operational/deployment paradigm
+- **[[concepts/ai-agents]]** — The broader category; ambient agents represent the operational/deployment paradigm
 
 ## Open Questions
 

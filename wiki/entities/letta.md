@@ -57,7 +57,7 @@ All major foundation labs are moving toward agent harnesses:
 
 - [[concepts/agent-harnesses]] — Agent harness philosophy
 - [[concepts/harness-engineering]] — Harness engineering discipline
-- [[memory-systems-bitter-lesson]] — Memory systems and the Bitter Lesson
+- [[concepts/memory-systems-bitter-lesson]] — Memory systems and the Bitter Lesson
 - [[entities/anthropic-computer-use]] — Anthropic's computer use capability
 
 ## Related Articles

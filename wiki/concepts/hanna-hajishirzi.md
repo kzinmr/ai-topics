@@ -21,4 +21,4 @@ Stub page for hanna-hajishirzi.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

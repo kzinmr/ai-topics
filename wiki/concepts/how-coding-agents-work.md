@@ -21,4 +21,4 @@ Stub page for How Coding Agents Work.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -139,4 +139,4 @@ The leaderboard is available at: https://huggingface.co/spaces/mteb/leaderboard
 - [[sentence-transformers]] — Library for text embeddings that Tom Aarsen leads as maintainer.
 - [[nltk]] — Natural Language Toolkit where Aarsen is a core maintainer.
 - [[semantic-search]] — Search paradigm powered by Sentence Transformers embeddings.
-- [[embeddings]] — Dense vector representations for text, the core of Sentence Transformers.
+- [[entities/embeddings]] — Dense vector representations for text, the core of Sentence Transformers.

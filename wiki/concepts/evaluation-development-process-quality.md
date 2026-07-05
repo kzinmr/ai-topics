@@ -21,4 +21,4 @@ Stub page for evaluation, development-process, quality.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

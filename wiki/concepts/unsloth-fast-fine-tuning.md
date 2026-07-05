@@ -21,4 +21,4 @@ Stub page for Unsloth — Fast Fine-Tuning.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

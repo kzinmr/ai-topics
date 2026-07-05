@@ -21,4 +21,4 @@ Stub page for Bayesian Reasoning.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -63,9 +63,9 @@ If the simulation view is correct, then:
 
 ## Related Concepts
 
-- [[interpretability]] — Mechanistic understanding of model internals
+- [[concepts/interpretability]] — Mechanistic understanding of model internals
 - [[concepts/security-and-governance/ai-safety]] — Safety implications of treating simulators as beings
-- [[evaluation]] — How we measure model capabilities
+- [[concepts/evaluation]] — How we measure model capabilities
 - [[epistemology]] — The philosophical foundations of AI knowledge claims
 
 ## Related Entities

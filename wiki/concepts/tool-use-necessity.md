@@ -51,4 +51,4 @@ AXPO addresses the "Thinking-Acting Gap" through tool-call resampling during tra
 ## Related Pages
 - [[concepts/axpo]] — AXPO training-time tool-call resampling
 - [[concepts/tool-use]] — Tool use in agentic systems
-- [[entities/qwen]] — Qwen3-VL-Thinking models
+- [[concepts/qwen]] — Qwen3-VL-Thinking models

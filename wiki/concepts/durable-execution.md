@@ -42,10 +42,10 @@ Durable execution is a programming model that guarantees code will continue runn
 
 ## Related Concepts
 
-- [[deep-agents-runtime]]
+- [[concepts/deep-agents-runtime]]
 - [[concepts/langgraph]]
-- [[process-supervision]]
-- [[agent-loop-orchestration]]
+- [[concepts/process-supervision]]
+- [[concepts/agent-loop-orchestration]]
 
 ## Sources
 

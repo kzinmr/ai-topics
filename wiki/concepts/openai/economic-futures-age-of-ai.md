@@ -103,7 +103,7 @@ The Foundation is inviting people to share perspectives on:
 
 ## Related Concepts
 
-- [[openai-foundation]] - OpenAI Foundation overview
+- [[entities/openai-foundation]] - OpenAI Foundation overview
 - [[economics]] - AI economics and economic impact
 - [[ai-governance]] - AI governance and policy
 - [[philanthropy]] - AI philanthropy initiatives

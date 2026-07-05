@@ -80,4 +80,4 @@ This represents a new class of "design-to-code" routines where the design review
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]

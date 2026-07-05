@@ -54,11 +54,11 @@ This approach inverts the conventional "multi-agent collaboration" idea:
 - **Conventional**: Multiple agents agree to reach a conclusion
 - **NYK Framework**: Multiple agents **disagree together**, surfacing blind spots before reaching consensus
 
-This differs from the [[back-of-house-multi-agent-patterns]] "Back of House" pattern, focusing instead on **decision quality**.
+This differs from the [[concepts/back-of-house-multi-agent-patterns]] "Back of House" pattern, focusing instead on **decision quality**.
 
 ## Related Concepts
 
-- [[back-of-house-multi-agent-patterns]] — Multi-agent workflows
+- [[concepts/back-of-house-multi-agent-patterns]] — Multi-agent workflows
 - [[concepts/multi-agents/multi-agent-orchestration-patterns]] — Multi-agent orchestration
-- [[subagents]] — Subagent patterns
+- [[concepts/subagents]] — Subagent patterns
 - [[concepts/excessive-agency]] — Limits of agent autonomy

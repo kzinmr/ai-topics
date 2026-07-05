@@ -80,9 +80,9 @@ The channel covers the full spectrum of AI engineering topics:
 ## Relationship to Wiki
 
 - **Conference coverage**: Talks from AI Engineer events are ingested into the wiki as raw articles with full transcripts via the [[youtube-content]] workflow
-- **Speaker entities**: Many speakers ([[ryan-lopopolo]], [[matt-pocock]], [[barry-zhang]], [[sean-grove]]) have dedicated entity pages enriched from their AI Engineer talks
-- **Concept enrichment**: Frameworks and taxonomies from AI Engineer talks extend concept pages like [[ai-agents]], [[concepts/harness-engineering/agent-harness]], and [[ai-coding]]
-- **RSS monitoring**: The channel's RSS feed is tracked via [[blogwatcher]] for daily new video discovery
+- **Speaker entities**: Many speakers ([[entities/ryan-lopopolo]], [[matt-pocock]], [[barry-zhang]], [[sean-grove]]) have dedicated entity pages enriched from their AI Engineer talks
+- **Concept enrichment**: Frameworks and taxonomies from AI Engineer talks extend concept pages like [[concepts/ai-agents]], [[concepts/harness-engineering/agent-harness]], and [[ai-coding]]
+- **RSS monitoring**: The channel's RSS feed is tracked via [[concepts/blogwatcher]] for daily new video discovery
 
 ## Monitoring
 

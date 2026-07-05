@@ -87,7 +87,7 @@ Thoughtful Lab argues that **research intuition is trainable** — built through
 - [[concepts/post-training/post-training]] — The broader research domain
 - [[entities/thoughtful-lab]] — The organization that coined and tested the paradigm
 - [[concepts/llm-fine-tuning]] — Underlying technique used in the experiments
-- [[entities/qwen]] — Qwen3-8B was the base model
+- [[concepts/qwen]] — Qwen3-8B was the base model
 - [[concepts/agent-improvement]] — Related paradigm of agents improving their own capabilities
 
 ## Sources

@@ -24,7 +24,7 @@ related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/agent-harnesses]]"
   - "[[concepts/bitter-lesson-agent-harnesses]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
   - "[[comparisons/open-harness-vs-agent-framework]]"
   - "[[concepts/context-engineering|Context Engineering]]"
 ---

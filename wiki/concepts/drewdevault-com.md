@@ -21,4 +21,4 @@ Stub page for drewdevault-com.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

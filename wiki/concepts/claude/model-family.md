@@ -39,7 +39,7 @@ related:
   - "[[claude-managed-agents]]"
   - "[[concepts/mcp]]"
   - "[[claude-opus-4-7]]"
-  - "[[concepts/anthropic-computer-use]]"
+  - "[[entities/anthropic-computer-use]]"
   - "[[concepts/claude/memory-tool]]"
   - "[[concepts/extended-thinking]]"
   - "[[concepts/prompt-caching]]"
@@ -244,11 +244,11 @@ For model-specific details, see sub-pages: [[claude-opus-4-7]], [[claude-sonnet-
 
 - **[[entities/anthropic]]** — The company behind Claude
 - **[[entities/claude-code]]** — AI coding agent
-- **[[claude-code--capabilities]]** — Claude Code capabilities detail
+- **[[entities/claude-code--capabilities]]** — Claude Code capabilities detail
 - **[[concepts/claude/design]]** — Visual design tool
 - **[[claude-managed-agents]]** — Enterprise agent platform
 - **[[claude-opus-4-7]]** — Latest Opus model details
-- **[[concepts/anthropic-computer-use]]** — GUI operation capability
+- **[[entities/anthropic-computer-use]]** — GUI operation capability
 - **[[concepts/mcp]]** — Model Context Protocol
 - **[[concepts/security-and-governance/ai-safety-military-governance-claude]]** — Safety and governance
 - **[[concepts/coding-agents/coding-agents]]** — AI coding agent ecosystem

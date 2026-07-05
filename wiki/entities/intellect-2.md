@@ -88,7 +88,7 @@ INTELLECT-2 proves that **decentralized RL training at scale is viable**:
 
 ## Related Pages
 
-- [[prime-intellect]] — parent organization
+- [[entities/prime-intellect]] — parent organization
 - [[entities/grad|Fares Obeid (Grad)]] — co-author
 - [[entities/florian-brand|Florian Brand]] — PRIME-RL contributor
 - [[entities/will-brown|Will Brown]] — verifiers/prime-rl creator

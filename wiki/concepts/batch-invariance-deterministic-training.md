@@ -58,7 +58,7 @@ This forces deterministic kernel implementations but can significantly slow trai
 
 ## Flash Attention
 
-Modern attention implementations address this. [[flash-attention-4]] supports a deterministic execution mode that avoids non-deterministic reductions in the attention computation, which is critical since attention is one of the most numerically sensitive operations.
+Modern attention implementations address this. [[concepts/flash-attention-4]] supports a deterministic execution mode that avoids non-deterministic reductions in the attention computation, which is critical since attention is one of the most numerically sensitive operations.
 
 ## Practical Impact for RL Training
 
@@ -68,7 +68,7 @@ Batch invariance is especially important in reinforcement learning contexts like
 - The number of micro-batches per step can vary between runs
 - Reproducing exact training trajectories requires bit-deterministic gradient computation
 
-Without deterministic training infrastructure — including ordered gradient accumulation in [[deepspeed]] ZeRO stages and consistent reduction across [[pretraining-parallelisms]] data-parallel replicas — reproducing an exact RL training run is effectively impossible.
+Without deterministic training infrastructure — including ordered gradient accumulation in [[concepts/deepspeed]] ZeRO stages and consistent reduction across [[concepts/pretraining-parallelisms]] data-parallel replicas — reproducing an exact RL training run is effectively impossible.
 
 ## Summary
 

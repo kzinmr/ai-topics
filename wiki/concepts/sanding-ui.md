@@ -21,4 +21,4 @@ Stub page for sanding-ui.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

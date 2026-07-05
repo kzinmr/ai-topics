@@ -75,7 +75,7 @@ Then critique the revision.
 Give me the final version with confidence levels for each decision."
 ```
 
-This produces dramatically better results because Claude catches its own mistakes before a human has to. The pattern leverages the model's ability to self-correct through [[chain-of-thought]] reasoning and structured [[feedback-loop|feedback loops]].
+This produces dramatically better results because Claude catches its own mistakes before a human has to. The pattern leverages the model's ability to self-correct through [[concepts/chain-of-thought]] reasoning and structured [[feedback-loop|feedback loops]].
 
 **Key insight**: this is not just "ask twice." The structure — *propose → critique → revise → critique → finalize* — creates a deliberate adversarial dynamic that surfaces edge cases and assumptions that single-pass prompting misses.
 
@@ -96,7 +96,7 @@ This gives Claude Code 7 tools:
 
 Without MCP, Claude hallucinates API fields and invents component patterns. With it, Claude works with **real platform data** — grounding LLM outputs in live schemas eliminates a major class of [[ai-coding]] errors.
 
-The broader trend: MCP servers are being built by non-engineering teams (finance, sales, support) within Shopify, connecting Claude Code to Salesforce, Google Calendar, Gmail, and Slack — all without engineer help. This represents a significant [[vibe-coding]] democratization of tool-building.
+The broader trend: MCP servers are being built by non-engineering teams (finance, sales, support) within Shopify, connecting Claude Code to Salesforce, Google Calendar, Gmail, and Slack — all without engineer help. This represents a significant [[concepts/vibe-coding]] democratization of tool-building.
 
 ## Pattern 4: CLAUDE.md as Team Infrastructure
 
@@ -177,7 +177,7 @@ Shopify doesn't let agents run wild. Their permission-based guardrail system:
 
 Agents can read, write, test, and commit. They **cannot** push to remote, deploy to production, drop databases, or read secrets. A human stays in the loop for anything irreversible.
 
-This is [[agent-safety]] at the operational level: explicit allowlists and denylists create a **bounded autonomy** zone where agents can work freely without risking production systems. The `acceptEdits` default mode means agents can edit files without constant human approval, but the denylist prevents escape from the sandbox.
+This is [[concepts/agent-safety]] at the operational level: explicit allowlists and denylists create a **bounded autonomy** zone where agents can work freely without risking production systems. The `acceptEdits` default mode means agents can edit files without constant human approval, but the denylist prevents escape from the sandbox.
 
 ## Configuration and Prompt Patterns
 

@@ -21,4 +21,4 @@ Stub page for blogging-as-infrastructure.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

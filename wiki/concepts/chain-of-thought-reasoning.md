@@ -21,4 +21,4 @@ Stub page for chain-of-thought-reasoning.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

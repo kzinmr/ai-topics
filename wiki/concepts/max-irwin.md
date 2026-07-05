@@ -21,4 +21,4 @@ Stub page for Max Irwin.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

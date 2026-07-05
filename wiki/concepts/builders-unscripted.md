@@ -103,4 +103,4 @@ As the series grows, recurring themes include:
 - [[entities/peter-steinberger]] — Ep. 1 guest; creator of OpenClaw
 - [[entities/openai-codex]] — The coding agent frequently discussed in the series
 - [[concepts/agentic-engineering]] — Central paradigm explored across episodes
-- [[concepts/openclaw]] — The framework at the center of Ep. 1
+- [[entities/openclaw]] — The framework at the center of Ep. 1

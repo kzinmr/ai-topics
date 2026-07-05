@@ -40,9 +40,9 @@ The agent has been tested on large-scale models, including submitting RL runs on
 
 - [[reinforcement-learning]]: The primary domain of application
 - [[self-play]]: Core technique inspired by AlphaZero
-- [[continual-learning]]: The long-term research direction
-- [[ai-agents]]: The broader category of autonomous research agents
-- [[deepseek]]: The organization where the researcher works
+- [[concepts/continual-learning]]: The long-term research direction
+- [[concepts/ai-agents]]: The broader category of autonomous research agents
+- [[entities/deepseek]]: The organization where the researcher works
 
 ## Open Questions
 

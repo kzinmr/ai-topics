@@ -21,4 +21,4 @@ Stub page for ShortFormBlog.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

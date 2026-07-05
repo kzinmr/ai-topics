@@ -21,4 +21,4 @@ Stub page for Career Development.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

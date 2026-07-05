@@ -20,8 +20,8 @@ sources:
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/agent-loop-orchestration]]"
-  - "[[durable-execution]]"
-  - "[[human-in-the-loop]]"
+  - "[[concepts/durable-execution]]"
+  - "[[concepts/human-in-the-loop]]"
 ---
 
 # Deep Agents Runtime

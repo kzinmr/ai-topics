@@ -185,7 +185,7 @@ The setup takes ~2-3 hours and involves:
 
 - [[concepts/cli-over-mcp-pattern]] — Self-hosted models still benefit from CLI-first interaction
 - [[concepts/inference-speed-development]] — Local inference adds latency; cloud APIs may be faster
-- [[concepts/openclaw]] — Steipete's OpenClaw project aims to make agent infrastructure more accessible
+- [[entities/openclaw]] — Steipete's OpenClaw project aims to make agent infrastructure more accessible
 
 ## Sources
 

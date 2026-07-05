@@ -98,7 +98,7 @@ This is architecturally significant for AI coding agents (background agent workf
 
 Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
 
-See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[entities/vllm]]
+See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[concepts/vllm]]
 
 ## Modal Auto Endpoints (June 2026)
 

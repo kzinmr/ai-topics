@@ -21,4 +21,4 @@ Stub page for Decoder-Only GPT Architecture.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

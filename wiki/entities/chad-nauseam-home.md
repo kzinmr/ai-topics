@@ -116,7 +116,7 @@ Chad's take on the open source sustainability crisis. He argues for organized, c
 
 ## Related
 
-- [[cats-with-power-tools]] — Both write about LLM experimentation and technical deep-dives
+- [[entities/cats-with-power-tools]] — Both write about LLM experimentation and technical deep-dives
 -  — Side effects, monads, algebraic effects
 -  — Keep Rust Simple, trait system critique
 -  — Programmer's association proposal

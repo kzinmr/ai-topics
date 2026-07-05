@@ -13,8 +13,8 @@ tags:
   - coding-agents
   - automation
 related:
-  - "[[cognition-devin-philosophy]]"
-  - "[[agentic-engineering-patterns]]"
+  - "[[concepts/cognition-devin-philosophy]]"
+  - "[[concepts/agentic-engineering-patterns]]"
   - "[[concepts/evaluation/evals-for-ai-agents]]"
   - "[[ai-agent-engineering/_index]]"
 sources:
@@ -107,7 +107,7 @@ Bots that Devin can automatically handle:
 
 ## Related
 
-- [[cognition-devin-philosophy]] — Cognition's overall philosophy
-- [[agentic-engineering-patterns]] — Agentic Engineering pattern collection
+- [[concepts/cognition-devin-philosophy]] — Cognition's overall philosophy
+- [[concepts/agentic-engineering-patterns]] — Agentic Engineering pattern collection
 - [[concepts/evaluation/evals-for-ai-agents]] — Agent evaluation
 - [[ai-agent-engineering/_index]] — AI Agent Engineering system design

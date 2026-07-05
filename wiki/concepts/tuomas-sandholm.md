@@ -21,4 +21,4 @@ Stub page for tuomas-sandholm.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for agents, self-improvement, learning.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

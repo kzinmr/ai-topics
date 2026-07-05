@@ -21,4 +21,4 @@ Stub page for Stanford CS329S.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

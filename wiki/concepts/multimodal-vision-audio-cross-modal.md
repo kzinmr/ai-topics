@@ -21,4 +21,4 @@ Stub page for multimodal, vision, audio, cross-modal.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

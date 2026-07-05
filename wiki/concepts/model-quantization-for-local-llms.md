@@ -21,4 +21,4 @@ Stub page for Model Quantization for Local LLMs.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

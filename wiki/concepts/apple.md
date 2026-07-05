@@ -26,7 +26,7 @@ As analyzed by The Algorithmic Bridge, Apple's strategy reveals what many in Sil
 
 ### Pascal's Wager Framework
 
-The Algorithmic Bridge frames Apple's approach through a theological metaphor drawn from [[concepts/_index]]:
+The Algorithmic Bridge frames Apple's approach through a theological metaphor drawn from [[entities/_index]]:
 
 - **True believers** reorganize their entire existence around their faith — like priests who dedicate their lives to God.
 - **Pascal's Wager believers** cannot prove God exists, but invest "just in case" — going to church, observing rituals, hedging their bets.
@@ -117,7 +117,7 @@ The article identifies **Anthropic** as the only AI lab with conviction comparab
 
 ## Related Pages
 
-- [[concepts/_index]] — All concept pages
+- [[entities/_index]] — All concept pages
 - [[entities/tim-cook]] — Apple CEO (2011–2026)
 - [[entities/john-ternus]] — Incoming Apple CEO (2026–)
 

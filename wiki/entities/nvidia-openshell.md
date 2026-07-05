@@ -112,6 +112,6 @@ OpenShell is the runtime component of **NVIDIA NemoClaw**, the reference stack f
 
 - [[concepts/security-and-governance/agent-sandboxing]] — OpenShell implements Level 2-3 sandboxing (container/microVM)
 - [[concepts/harness-engineering]] — OpenShell is the "Open Runtime" layer
-- [[entities/deep-agents]] — LangChain's harness runs inside OpenShell's runtime
+- [[concepts/deep-agents]] — LangChain's harness runs inside OpenShell's runtime
 - [[concepts/security-and-governance/agent-governance]] — Policy engine enforces governance at infrastructure level
 - [[concepts/security-and-governance/agent-iam]] — Gateway serves as authentication/authorization boundary

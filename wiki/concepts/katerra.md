@@ -21,4 +21,4 @@ Stub page for Katerra.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

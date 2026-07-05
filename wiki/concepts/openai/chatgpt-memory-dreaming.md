@@ -159,7 +159,7 @@ OpenAI's new memory system for ChatGPT that automatically synthesizes memories f
 - [[memory-systems]] - General memory systems for AI agents
 - [[context-management]] - Managing context in AI systems
 - [[chatgpt]] - ChatGPT product overview
-- [[openai]] - OpenAI company and products
+- [[entities/openai]] - OpenAI company and products
 - [[personalization]] - AI personalization techniques
 
 ## References

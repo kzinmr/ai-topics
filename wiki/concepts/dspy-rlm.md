@@ -691,7 +691,7 @@ The RLM+DataFrame pattern is most valuable for **"inline intelligence"** — emb
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/rlm-recursive-language-models]]
 - [[concepts/memex-scratchpad]] — MemEx (Databricks): `spawn_agent()` generalizes RLM's recursive sub-LM calls as a first-class parallel primitive. Trajectory-level aggregation without lossy summarization.
-- [[concepts/dspy]]
+- [[entities/dspy]]

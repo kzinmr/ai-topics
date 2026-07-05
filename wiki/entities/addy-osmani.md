@@ -189,7 +189,7 @@ This framing positions Osmani in the "human outer loop" camp, alongside Geoffrey
 
 ## Related
 
-- [[lester-solbakken]] — Search infrastructure researcher; HORNET founder
+- [[entities/lester-solbakken]] — Search infrastructure researcher; HORNET founder
 - [[concepts/harness-engineering]]
 - [[concepts/multi-agents/multi-agent-autonomy-scale]]
 - [[concepts/context-engineering|Context Engineering]]

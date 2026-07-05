@@ -186,4 +186,4 @@ Source: [[raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance]]
 - [[concepts/ai-agent-traps]] — Safety and failure modes for AI agents
 - [[concepts/ai-autonomy-debate]] — Debate around AI autonomy levels
 - [[concepts/security-and-governance/ai-safety]] — AI safety and alignment
-- [[concepts/_index]]
+- [[entities/_index]]

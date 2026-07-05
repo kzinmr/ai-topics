@@ -56,4 +56,4 @@ The Letta Leaderboard uses memory-centric evaluation tasks:
 
 ## Connections to Other Wiki Concepts
 
-The Letta Leaderboard highlights that memory is a critical but often overlooked dimension of [[ai-agents]] capability. It connects directly to the [[agent-memory-bench]] and the Letta team's broader thesis that effective memory management is essential for capable agents. This focus on memory as a distinct evaluation axis complements [[agent-evaluation]] frameworks like [[hal-leaderboard]] that aggregate across multiple capability dimensions.
+The Letta Leaderboard highlights that memory is a critical but often overlooked dimension of [[concepts/ai-agents]] capability. It connects directly to the [[agent-memory-bench]] and the Letta team's broader thesis that effective memory management is essential for capable agents. This focus on memory as a distinct evaluation axis complements [[agent-evaluation]] frameworks like [[hal-leaderboard]] that aggregate across multiple capability dimensions.

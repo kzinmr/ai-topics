@@ -21,4 +21,4 @@ Stub page for Hoard Things You Know How to Do.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

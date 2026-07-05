@@ -21,4 +21,4 @@ Stub page for Local-First Computing.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

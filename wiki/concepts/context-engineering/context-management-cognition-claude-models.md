@@ -21,4 +21,4 @@ Stub page for context-management, cognition, claude, models.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

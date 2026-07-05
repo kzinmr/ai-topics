@@ -142,9 +142,9 @@ Hermes 4's evaluation pipeline is notable for its engineering rigor:
 
 ## Related Pages
 
-- [[nous-research]] — Developer organization
-- [[hermes-agent]] — Nous Research's agent framework
-- [[gepa]] — Genetic-Pareto Prompt Evolution (also by Nous Research)
+- [[entities/nous-research]] — Developer organization
+- [[entities/hermes-agent]] — Nous Research's agent framework
+- [[concepts/gepa]] — Genetic-Pareto Prompt Evolution (also by Nous Research)
 - [[concepts/dataforge]] — Graph-based synthetic data generation
 - [[concepts/atropos]] — RL environment manager
 - [[concepts/hybrid-reasoning]] — Models combining reasoning + instruction-following

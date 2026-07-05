@@ -21,4 +21,4 @@ Stub page for Statistical Process Control.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

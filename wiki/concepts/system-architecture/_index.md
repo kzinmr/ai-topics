@@ -20,4 +20,4 @@ Stub page for system-architecture/_index\.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

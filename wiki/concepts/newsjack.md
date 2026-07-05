@@ -115,7 +115,7 @@ Newsjack is a notable example of the **"agent as department"** pattern — using
 
 ## See Also
 
-- [[elvis-sun]] — Creator of Newsjack
+- [[entities/elvis-sun]] — Creator of Newsjack
 - [[concepts/newsjacking-framework]] — The viral content strategy behind the name
 - [[concepts/harness-engineering]] — Agent-as-harness pattern
 - [[entities/hermes-agent]] — Supported agent platform

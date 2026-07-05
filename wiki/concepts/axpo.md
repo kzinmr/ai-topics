@@ -53,5 +53,5 @@ AXPO demonstrates that targeted resampling at the point of failure is more effec
 ## Related Pages
 - [[concepts/post-training/grpo]] — Group Relative Policy Optimization, baseline RL method
 - [[concepts/tool-use-necessity]] — Tool necessity detection from hidden states
-- [[entities/qwen]] — Qwen3-VL model family used for evaluation
+- [[concepts/qwen]] — Qwen3-VL model family used for evaluation
 - [[entities/nvidia]] — NVIDIA, co-developer of AXPO

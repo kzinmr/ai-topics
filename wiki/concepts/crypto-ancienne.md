@@ -21,4 +21,4 @@ Stub page for Crypto Ancienne.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

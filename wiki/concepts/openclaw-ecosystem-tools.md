@@ -21,4 +21,4 @@ Stub page for OpenClaw Ecosystem Tools.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -361,5 +361,5 @@ Khairallah's practitioner framework translates existing technical insights (Anth
 - [[concepts/harness-engineering/system-architecture/harness-design-long-running-apps]] — GAN loop for long-running agents
 - [[concepts/token-economics]] — Token cost analysis
 - [[concepts/attention-mechanism-variants]] — KV cache and attention efficiency
-- [[concepts/dspy]] — DSPy: Declarative Self-improving Python
+- [[entities/dspy]] — DSPy: Declarative Self-improving Python
 - [[entities/khairallah-al-awady]] — Khairallah AL-Awady: Proponent of practitioner-oriented 4-file architecture

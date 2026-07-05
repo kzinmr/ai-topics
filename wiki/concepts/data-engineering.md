@@ -46,9 +46,9 @@ Data engineering is the practice of designing, building, and maintaining the inf
 ## Related Concepts
 
 - [[concepts/cloud-data-warehouses]]
-- [[event-driven-architecture]]
-- [[ai-observability]]
-- [[durable-execution]]
+- [[concepts/event-driven-architecture]]
+- [[concepts/ai-observability]]
+- [[concepts/durable-execution]]
 - [[ragas]]
 
 ## Sources

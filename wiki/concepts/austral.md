@@ -21,4 +21,4 @@ Stub page for Austral.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

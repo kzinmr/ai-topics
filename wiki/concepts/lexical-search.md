@@ -180,8 +180,8 @@ Doug Turnbull argues that with the rise of AI agents, lexical search gains new i
 
 ## Related Pages
 
-- [[bm25]] — Scoring algorithm built on lexical search
-- [[embeddings]] — Semantic alternative to lexical matching
+- [[concepts/bm25]] — Scoring algorithm built on lexical search
+- [[entities/embeddings]] — Semantic alternative to lexical matching
 - [[entities/doug-turnbull]] — Leading voice in agentic search
 - [[entities/daniel-tunkelang]] — Search relevance pioneer
 - [[concepts/rag]] — Retrieval-Augmented Generation

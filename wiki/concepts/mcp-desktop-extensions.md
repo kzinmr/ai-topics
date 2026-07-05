@@ -68,7 +68,7 @@ Desktop Extensions abstracts all of these away.
 ## See Also
 
 - [[concepts/mcp]] — Model Context Protocol overview
-- [[model-context-protocol-mcp]] — Detailed MCP specification
+- [[concepts/model-context-protocol-mcp]] — Detailed MCP specification
 - [[entities/claude-code]] — Claude Code agent harness
 
 ## MCP 2026-07-28 RC: Protocol Becomes Stateless

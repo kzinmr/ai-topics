@@ -58,7 +58,7 @@ dsprrr is the **only R-language RLM implementation**. This matters when context 
 ## Related
 
 - [[concepts/rlm-recursive-language-models]] — The RLM paradigm that dsprrr implements in R
-- [[concepts/dspy]] — The original Python framework that dsprrr ports to R
+- [[entities/dspy]] — The original Python framework that dsprrr ports to R
 - [[concepts/dspy-rlm]] — DSPy's RLM module (Python counterpart)
 - [[entities/omar-khattab]] — DSPy creator and RLM co-author
 - [[entities/alex-zhang]] — RLM primary author

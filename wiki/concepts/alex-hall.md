@@ -21,4 +21,4 @@ Stub page for alex-hall.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

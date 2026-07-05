@@ -77,11 +77,11 @@ spicyneuron's validation (April 2026):
 Mac Studio Local AI is a practical approach that balances **"escape from cloud dependency"** and **"data privacy assurance"**. The 512GB unified memory is the **only practical option** for running front-tier LLMs locally on consumer hardware, making it key infrastructure for AI-powered developers.
 
 ## Related Concepts
-- [[concepts/mac-studio-local-ai]]
+- [[entities/mac-studio-local-ai]]
 
 - [[concepts/local-llm/_index]] — Local LLM overview
-- [[llama-cpp]] — GGUF inference engine
-- [[mlx-llm]] — Apple MLX framework
+- [[concepts/llama-cpp]] — GGUF inference engine
+- [[concepts/mlx-llm]] — Apple MLX framework
 - [[dgx-spark-nim]] — Comparison with NVIDIA DGX Spark
 
 ## References

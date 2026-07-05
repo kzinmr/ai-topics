@@ -42,8 +42,8 @@ Vincent advocates for commoditizing compute and intelligence through decentraliz
 
 ## Related Pages
 
-- [[prime-intellect]] — company page
-- [[will-brown]] — Research, Prime Intellect
-- [[florian-brand]] — Research Engineer, evals
-- [[elie-bakouch]] — Training LLMs
+- [[entities/prime-intellect]] — company page
+- [[entities/will-brown]] — Research, Prime Intellect
+- [[entities/florian-brand]] — Research Engineer, evals
+- [[entities/elie-bakouch]] — Training LLMs
 - [[renderers]] — token-level templating library

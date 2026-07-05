@@ -66,7 +66,7 @@ Reflexive AI Usage represents a **new paradigm** for AI adoption in large enterp
 - AI literacy as organizational culture
 
 ## Related Concepts
-- [[concepts/reflexive-ai]]
+- [[entities/reflexive-ai]]
 
 - [Company AI Pilled](company-ai-pilled.md) — Organizational AI-driven transformation framework
 - [Solo Founder Stack](solo-founder-stack.md) — Individual vs. organizational AI usage comparison

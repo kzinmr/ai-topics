@@ -41,7 +41,7 @@ The platform currently scores **#1 on Google DeepMind's DeepSearchQA benchmark**
 
 ### Parallel Agent Swarms
 
-Unlike traditional [[agentic-search]] or [[deep-research]] systems where a single model sequentially explores and synthesizes information, Spine Swarm dispatches multiple agents to different workstreams simultaneously. Each agent handles a distinct research dimension (e.g., financial analysis, competitive landscape, regulatory review) and passes structured output between workstreams.
+Unlike traditional [[concepts/agentic-search]] or [[concepts/deep-research]] systems where a single model sequentially explores and synthesizes information, Spine Swarm dispatches multiple agents to different workstreams simultaneously. Each agent handles a distinct research dimension (e.g., financial analysis, competitive landscape, regulatory review) and passes structured output between workstreams.
 
 This design addresses a core limitation of single-agent systems: **context degradation** under long sequential chains. By distributing research across parallel agents, Spine avoids the compounding error rates that plague linear research pipelines.
 
@@ -52,7 +52,7 @@ Spine orchestrates across a vast range of AI models (300+) for:
 - **Capability diversity**: Different models excel at different subtasks (reasoning, retrieval, formatting)
 - **Cost optimization**: Route simpler subtasks to cheaper models, reserve frontier models for complex synthesis
 
-This multi-model approach aligns with the [[research-agent-fundamentals]] principle that the right model choice depends on the specific research phase and task complexity.
+This multi-model approach aligns with the [[concepts/research-agent-fundamentals]] principle that the right model choice depends on the specific research phase and task complexity.
 
 ### Structured Multi-Agent Handoffs
 
@@ -179,8 +179,8 @@ The platform's automation capabilities (scheduled workflows, MCP/API integration
 
 - [[multi-agent-systems]] — Theoretical foundation for multi-agent coordination
 - [[agent-team-swarm]] — Agent team/swarm architecture patterns
-- [[agentic-search]] — Search strategies for AI agents
-- [[deep-research]] — Deep research as a retrieval and reasoning challenge
-- [[research-agent-fundamentals]] — Core principles of research agent design
+- [[concepts/agentic-search]] — Search strategies for AI agents
+- [[concepts/deep-research]] — Deep research as a retrieval and reasoning challenge
+- [[concepts/research-agent-fundamentals]] — Core principles of research agent design
 - [[agent-orchestration]] — Patterns for orchestrating multiple agents
-- [[agent-economics]] — Cost structures for autonomous agent deployment
+- [[concepts/agent-economics]] — Cost structures for autonomous agent deployment

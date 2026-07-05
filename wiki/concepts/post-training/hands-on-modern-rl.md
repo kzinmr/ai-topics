@@ -15,7 +15,7 @@ tags:
   - multimodal-agents
   - tutorial
 related:
-  - "[[concepts/open-source-rl-libraries-comparison]]"
+  - "[[comparisons/open-source-rl-libraries-comparison]]"
   - "[[concepts/post-training/rlhf-dpo-preference]]"
   - "[[concepts/post-training/trl]]"
   - "[[concepts/agents-mcp-rl-course]]"
@@ -100,7 +100,7 @@ The curriculum spans the entire modern RL landscape:
 
 This curriculum complements other RL and LLM training resources:
 
-- **[[concepts/open-source-rl-libraries-comparison]]** — While that page compares RL *libraries* (TRL, Verl, OpenRLHF), this curriculum teaches the *concepts and algorithms* behind them
+- **[[comparisons/open-source-rl-libraries-comparison]]** — While that page compares RL *libraries* (TRL, Verl, OpenRLHF), this curriculum teaches the *concepts and algorithms* behind them
 - **[[concepts/post-training/rlhf-dpo-preference]]** — Provides theoretical background on preference learning methods
 - **[[concepts/post-training/trl]]** — Hugging Face's TRL library implementation details
 - **[[concepts/agents-mcp-rl-course]]** — Will Brown's Maven course covers similar RL territory (GRPO, evals, agent training) but through a paid cohort format; walkinglabs provides the open-source, self-paced equivalent

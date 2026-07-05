@@ -21,4 +21,4 @@ Stub page for Anastasia Stasenko.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

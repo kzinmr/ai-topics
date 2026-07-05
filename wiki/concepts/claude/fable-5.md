@@ -364,7 +364,7 @@ Note: This lift followed ~18 days of suspended access. The impact of the export 
 - [[concepts/claude/mythos]] — The underlying Mythos architecture and Mythos 5
 - [[concepts/claude/designing-loops-with-fable-5]] — Lance Martin's design patterns
 - [[concepts/claude/mythos-glasswing]] — Mythos security capabilities
-- [[concepts/project-glasswing]] — Trusted access program
+- [[entities/project-glasswing]] — Trusted access program
 - [[entities/rlancemartin]] — Author of Fable 5 design patterns
 - [[entities/elie-bakouch]] — Critic of capability limitation transparency
 - [[concepts/claude/opus-4-8]] — Fallback model for classifier-triggered queries

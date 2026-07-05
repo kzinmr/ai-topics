@@ -22,7 +22,7 @@ related:
   - "[[entities/searchcode-com]]"
   - "[[entities/ben-boyter]]"
   - "[[concepts/business-to-agent]]"
-  - "[[entities/mcp]]"
+  - "[[concepts/mcp]]"
   - "[[entities/scc]]"
   - "[[entities/cs]]"
   - "[[entities/sourcegraph]]"
@@ -85,6 +85,6 @@ For AI agent systems, code intelligence services enable:
 ## Related Concepts
 
 - [[concepts/business-to-agent]] — The broader B2A paradigm
-- [[entities/mcp]] — Model Context Protocol that enables these integrations
+- [[concepts/mcp]] — Model Context Protocol that enables these integrations
 - [[entities/searchcode-com]] — Primary implementation
 - [[concepts/zero-disk-architecture]] — Related philosophy of avoiding local data

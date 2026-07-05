@@ -21,4 +21,4 @@ Stub page for Tree of Thoughts.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

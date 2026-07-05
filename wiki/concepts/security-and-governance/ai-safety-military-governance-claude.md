@@ -21,4 +21,4 @@ Stub page for ai-safety, military, governance, claude.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

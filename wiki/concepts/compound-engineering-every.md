@@ -60,7 +60,7 @@ Skipping steps 1-3 leads to agents producing work that's hard to evaluate, dupli
 
 ## Open Source Implementation
 
-Every released an open-source plugin (7,000+ → 14,000+ GitHub stars) that implements Compound Engineering principles. The plugin is [[openclaw]]-compatible and provides:
+Every released an open-source plugin (7,000+ → 14,000+ GitHub stars) that implements Compound Engineering principles. The plugin is [[entities/openclaw]]-compatible and provides:
 - Structured context accumulation
 - Agent skill definitions
 - Workflow orchestration patterns
@@ -114,7 +114,7 @@ This pattern influenced:
 - [[entities/every-inc]] — Origin company
 - [[entities/dan-shipper]] — Every's CEO, philosophy champion
 - [[concepts/harness-engineering/agent-native-architecture]] — Design principles this embodies
-- [[openclaw]] — Compatible agent platform
+- [[entities/openclaw]] — Compatible agent platform
 - [[concepts/human-sandwich]] — Human-AI collaboration pattern
 - [[entities/matt-van-horn]] — #3 contributor, documented /ce-plan internals
 - [[concepts/agentic-engineering]] — The broader practice Compound Engineering enables

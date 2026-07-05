@@ -21,7 +21,7 @@ related:
   - "[[entities/ben-boyter]]"
   - "[[concepts/code-intelligence-for-llms]]"
   - "[[concepts/agentic-web]]"
-  - "[[entities/mcp]]"
+  - "[[concepts/mcp]]"
 ---
 # Business-to-Agent (B2A)
 

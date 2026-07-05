@@ -106,6 +106,6 @@ A hands-on educational site (github.com/jxnl/structuredoutputsbyexample) showcas
 
 - [[entities/jason-liu--key-work]] — Jason Liu's career, RAG Master Series, and consulting practice.
 - [[entities/jason-liu--context-engineering]] — Context engineering for RAG and agentic systems.
-- [[structured-outputs]] — Schema-first design for LLM integration.
-- [[pydantic]] — Data validation library used as the foundation of Instructor.
+- [[concepts/structured-outputs]] — Schema-first design for LLM integration.
+- [[concepts/pydantic]] — Data validation library used as the foundation of Instructor.
 - [[llm-engineering]] — Best practices for building production LLM applications.

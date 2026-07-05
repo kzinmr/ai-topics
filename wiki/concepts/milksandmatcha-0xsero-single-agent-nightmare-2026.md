@@ -21,4 +21,4 @@ Stub page for milksandmatcha-0xsero-single-agent-nightmare-2026.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

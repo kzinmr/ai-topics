@@ -211,7 +211,7 @@ This connects to Bergum's broader thesis that retrieval for agents isn't just ab
 ## Related Concepts
 
 - [[concepts/colbert]] — The late-interaction retrieval model Bergum championed
-- [[late-interaction]] — His primary research and engineering focus
+- [[entities/late-interaction]] — His primary research and engineering focus
 - [[concepts/vespa]] — The search engine where he spent 15 years
 - [[concepts/hornet]] — His new company, a retrieval engine for agents
 - [[concepts/agentic-retrieval]] — The paradigm shift he's building for

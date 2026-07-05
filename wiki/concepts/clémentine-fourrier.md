@@ -21,4 +21,4 @@ Stub page for Clémentine Fourrier.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

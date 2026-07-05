@@ -126,7 +126,7 @@ Each token produces a contextualized state vector. The CLS token's final state s
 3. Rank by cosine similarity
 4. Return top-k most similar chunks
 
-This is the foundation of Dense Passage Retrieval (DPR) and the classic RAG pipeline. At scale (millions/billions of chunks), efficient nearest-neighbor search is needed (see [[vector-search]]).
+This is the foundation of Dense Passage Retrieval (DPR) and the classic RAG pipeline. At scale (millions/billions of chunks), efficient nearest-neighbor search is needed (see [[concepts/vector-search]]).
 
 ## Normalization & Cosine Similarity
 
@@ -181,9 +181,9 @@ With AI agents, embeddings serve as one tool among many:
 
 ## Related Pages
 
-- [[vector-search]] — How to efficiently find nearest neighbors at scale
-- [[bm25]] — Lexical scoring as complement to embeddings
-- [[lexical-search]] — Token-based matching fundamentals
+- [[concepts/vector-search]] — How to efficiently find nearest neighbors at scale
+- [[concepts/bm25]] — Lexical scoring as complement to embeddings
+- [[concepts/lexical-search]] — Token-based matching fundamentals
 - [[concepts/rag]] — Retrieval-Augmented Generation pipeline
 - [[concepts/agentic-search]] — Agent-driven search paradigm
 - [[entities/voyage-ai]] — Embedding model provider (acquired by MongoDB)

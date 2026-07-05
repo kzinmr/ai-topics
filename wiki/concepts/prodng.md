@@ -21,4 +21,4 @@ Stub page for ProdNG.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

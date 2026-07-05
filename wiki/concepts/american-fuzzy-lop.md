@@ -21,4 +21,4 @@ Stub page for American Fuzzy Lop.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

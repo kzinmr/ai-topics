@@ -21,4 +21,4 @@ Stub page for symphony.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

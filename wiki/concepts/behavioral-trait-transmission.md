@@ -110,4 +110,4 @@ This discovery raises fundamental questions about the safety of model distillati
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]

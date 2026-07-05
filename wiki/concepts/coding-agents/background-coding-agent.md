@@ -28,7 +28,7 @@ A **Background Coding Agent** is an AI-powered coding assistant that runs in the
 
 The **Inspect** agent by Ramp demonstrates the full background agent pattern:
 - **Sandbox**: Modal-based VMs with pre-built images rebuilt every 30 minutes
-- **Agent framework**: [[opencode]] (open-source, server-first, typed SDK)
+- **Agent framework**: [[entities/opencode]] (open-source, server-first, typed SDK)
 - **State management**: Cloudflare Durable Objects (per-session SQLite)
 - **Real-time**: Cloudflare Agents SDK with WebSocket hibernation
 - **Interfaces**: Slack bot, web UI (hosted VS Code), Chrome extension (visual editing)
@@ -53,9 +53,9 @@ Background agents excel when:
 ## Related Concepts
 
 - [[concepts/modal-sandboxes]] — cloud execution environments for background agents
-- [[warm-start-optimization]] — pre-warming technique for reducing latency
-- [[s3-first-architecture]] — persistent storage pattern for agent state
-- [[opencode]] — agent framework used by Ramp Inspect
+- [[concepts/warm-start-optimization]] — pre-warming technique for reducing latency
+- [[concepts/s3-first-architecture]] — persistent storage pattern for agent state
+- [[entities/opencode]] — agent framework used by Ramp Inspect
 
 ## Sources
 

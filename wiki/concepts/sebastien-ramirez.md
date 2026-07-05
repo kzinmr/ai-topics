@@ -21,4 +21,4 @@ Stub page for sebastien-ramirez.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

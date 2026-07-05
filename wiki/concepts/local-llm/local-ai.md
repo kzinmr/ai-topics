@@ -40,7 +40,7 @@ related:
 
 **What this is**: The current state of "local AI" — individuals running LLMs on their own hardware at home or office. The collective practice of running open-weight models on self-owned GPUs or unified memory machines, without using cloud APIs (GPT/Claude). Covers hardware selection, model quality, inference speed, software stacks, and actual use cases.
 
-**What this is not**: Not a comparison table of cloud LLMs. Not about data center/enterprise inference (that's the domain of [[concepts/vllm]] and [[concepts/sglang]]). Not about model training/fine-tuning (that's the domain of [[concepts/local-llm/model-distillation]]).
+**What this is not**: Not a comparison table of cloud LLMs. Not about data center/enterprise inference (that's the domain of [[concepts/vllm]] and [[entities/sglang]]). Not about model training/fine-tuning (that's the domain of [[concepts/local-llm/model-distillation]]).
 
 ---
 
@@ -72,7 +72,7 @@ Mac Mini → NVIDIA DGX Spark → 5090 eGPU + gaming rig → Strix Halo Framewor
 
 ### Hardware Details
 - **DGX Spark**: → [[entities/nvidia-dgx-spark]], [[concepts/dgx-spark-local-llm-server]]
-- **Mac Studio**: → [[concepts/mac-studio-local-ai]]
+- **Mac Studio**: → [[entities/mac-studio-local-ai]]
 - **Inference hardware general**: → [[concepts/local-llm/local-llm-inference-hardware]]
 
 ---
@@ -145,7 +145,7 @@ LiteLLM automatically routes to the appropriate model based on query complexity.
 | **ollama** | Easy model execution | → [[concepts/ollama]] |
 | **LM Studio** | GUI model management | Beginner-friendly |
 | **LiteLLM** | Local LLM router | OpenAI API-compatible, multi-model routing |
-| **vLLM** | High-throughput inference server | → [[concepts/vllm]], [[concepts/sglang]] |
+| **vLLM** | High-throughput inference server | → [[concepts/vllm]], [[entities/sglang]] |
 | **llama.cpp** | CPU inference/GGUF quantization | → [[concepts/llama-cpp]] |
 
 ### AI Agent Frameworks
@@ -256,7 +256,7 @@ Ahmad Osman's workshop reinforces and extends the [[concepts/local-llm/local-ai]
 - [[concepts/local-llm/_index]] — Local LLM overview
 - [[concepts/local-llm/local-llm-inference-hardware]] — Inference hardware details
 - [[concepts/local-llm/local-llm-models-april-2026]] — Per-model benchmarks
-- [[concepts/mac-studio-local-ai]] — Mac Studio inference environment
+- [[entities/mac-studio-local-ai]] — Mac Studio inference environment
 - [[concepts/dgx-spark-local-llm-server]] — DGX Spark inference server setup
 - [[concepts/local-llm/local-llm-server-setup-on-dgx-spark]] — DGX Spark setup guide
 - [[concepts/ollama]] — Ollama runner

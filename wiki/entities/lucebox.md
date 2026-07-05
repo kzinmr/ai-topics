@@ -74,8 +74,8 @@ Lucebox publishes deep technical blog posts covering:
 
 ## See Also
 
-- [[sandro-puppo]] — Co-founder of Lucebox, expert in speculative decoding and CUDA optimization.
-- [[trycua-cua]] — Computer-use agent framework by the same team as Lucebox.
+- [[entities/sandro-puppo]] — Co-founder of Lucebox, expert in speculative decoding and CUDA optimization.
+- [[entities/trycua-cua]] — Computer-use agent framework by the same team as Lucebox.
 - [[davide-ciffa]] — Co-founder and CUDA/kernel engineer at Lucebox.
 - [[concepts/speculative-decoding]] — DFlash block-diffusion draft technique developed by Lucebox.
 - [[gpu-inference]] — Local LLM inference optimization on consumer hardware.

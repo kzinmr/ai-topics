@@ -44,7 +44,7 @@ Each managed bot operates as an independent bot, but token management, configura
 | **White-label bots** | Customize and distribute bots per enterprise brand |
 
 ## Related Features
-- [[concepts/telegram-managed-bots]]
+- [[entities/telegram-managed-bots]]
 
 Managed Bots are used in combination with other Telegram Bot platform features:
 

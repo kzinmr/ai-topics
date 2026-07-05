@@ -21,4 +21,4 @@ Stub page for python-packaging.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for sierra-online.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

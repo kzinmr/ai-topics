@@ -158,5 +158,5 @@ CRDTs' unresolved problem (storing every keystroke → memory degradation) is st
 
 - [[entities/daniel-van-strien]] — Co-author on local-first papers and related CRDT research
 - [[entities/_index]]
-- [[lance-martin]]
+- [[entities/lance-martin]]
 - [[entities/martin-alderson]]

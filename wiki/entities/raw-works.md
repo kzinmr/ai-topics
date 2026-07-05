@@ -63,7 +63,7 @@ Published two foundational articles on RLMs:
 ## Related Entities
 
 - [[entities/alex-zhang]] — Original RLM paper author
-- [[concepts/dspy]] — DSPy framework (RLM reference implementation)
+- [[entities/dspy]] — DSPy framework (RLM reference implementation)
 -  — RLM concept page-  — LongCoT benchmark-  — Omar Khattab's group, DSPy creators
 ## Sources
 

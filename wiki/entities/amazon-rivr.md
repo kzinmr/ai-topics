@@ -66,6 +66,6 @@ March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazo
 
 ## See Also
 
-- [[zoox-expansion]] — Amazon's autonomous robotaxi expansion across multiple cities.
-- [[agibot-10000-units]] — Humanoid robotics production milestone.
+- [[entities/zoox-expansion]] — Amazon's autonomous robotaxi expansion across multiple cities.
+- [[entities/agibot-10000-units]] — Humanoid robotics production milestone.
 - [[autonomous-vehicles]] — Self-driving vehicle technology and deployment.

@@ -92,8 +92,8 @@ One foundation model that can:
 
 ## Related Concepts
 
-- [[world-models-for-agents]] — World models for software agents (ECHO, VAGEN)
-- [[world-models-science]] — World models for scientific discovery
+- [[concepts/world-models-for-agents]] — World models for software agents (ECHO, VAGEN)
+- [[concepts/world-models-science]] — World models for scientific discovery
 - [[entities/fei-fei-li]] — Author; CEO of World Labs
 - [[world-labs]] — Company building spatial intelligence and Marble
 
@@ -101,4 +101,4 @@ One foundation model that can:
 
 - [[entities/fei-fei-li]] — Author and proposer of the taxonomy
 - [[world-labs]] — World Labs, building Marble (first renderer+simulator product)
-- [[world-models-for-agents]] — Complementary perspective: world models in software agent training
+- [[concepts/world-models-for-agents]] — Complementary perspective: world models in software agent training

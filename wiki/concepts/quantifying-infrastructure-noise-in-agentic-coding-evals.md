@@ -21,4 +21,4 @@ Stub page for Quantifying Infrastructure Noise in Agentic Coding Evals.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

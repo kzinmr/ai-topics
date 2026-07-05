@@ -21,4 +21,4 @@ Stub page for makoto-kato.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

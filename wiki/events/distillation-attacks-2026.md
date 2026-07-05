@@ -49,9 +49,9 @@ The accusations were described as:
 
 ## Related Context
 
-- [[us-china-ai-competition]] — Broader US-China AI competition framework (four fronts, compute gap, 2028 scenarios)
+- [[concepts/us-china-ai-competition]] — Broader US-China AI competition framework (four fronts, compute gap, 2028 scenarios)
 - [[concepts/kimi-k2-6]] — Moonshot's latest release (April 2026)
-- [[deepseek]] — Leading Chinese AI lab; accused of industrial-scale distillation
+- [[entities/deepseek]] — Leading Chinese AI lab; accused of industrial-scale distillation
 - [[concepts/model-distillation]] — Technical background on distillation
 - [[concepts/open-model-consortium]] — Open model governance discussions
 

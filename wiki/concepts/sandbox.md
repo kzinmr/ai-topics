@@ -47,9 +47,9 @@ Sandboxing for AI agents is the practice of executing untrusted agent code in is
 
 - [[concepts/security-and-governance/agent-sandboxing]]
 - [[concepts/security-and-governance/agentic-security]]
-- [[capability-based-security]]
+- [[concepts/capability-based-security]]
 - [[concepts/excessive-agency]]
-- [[defense-in-depth]]
+- [[concepts/defense-in-depth]]
 
 ## Sources
 

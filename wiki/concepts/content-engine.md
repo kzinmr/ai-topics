@@ -20,7 +20,7 @@ A content engine is the application of [[concepts/agentic-engineering]] principl
 ## Core Components
 
 ### 1. Research & Ingestion
-- RSS/feed monitoring (see [[blogwatcher]])
+- RSS/feed monitoring (see [[concepts/blogwatcher]])
 - Trending topic detection
 - Source aggregation and deduplication
 
@@ -41,10 +41,10 @@ A content engine is the application of [[concepts/agentic-engineering]] principl
 
 ## Connection to Other Concepts
 
-- [[content-engine]] — the broader discipline of systematic content production
+- [[entities/content-engine]] — the broader discipline of systematic content production
 - [[concepts/multi-agents/agentic-workflow-patterns]] — content engines as a specific workflow pattern
-- [[concepts/solo-founder-stack]] — solo founders use content engines as force multipliers
-- [[newsjacking-framework]] — content engines can incorporate rapid-response newsjacking
+- [[entities/solo-founder-stack]] — solo founders use content engines as force multipliers
+- [[concepts/newsjacking-framework]] — content engines can incorporate rapid-response newsjacking
 
 ## TODO: Research Items
 - [ ] Document specific content engine implementations

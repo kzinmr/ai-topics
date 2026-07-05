@@ -183,7 +183,7 @@ PTC inverts the traditional sequential LLM-agent loop: the LLM **generates execu
 
 ## Docker + Coding Agent Isolation Pattern
 
-[[tim-sh]] described a pattern of running Claude Code inside Docker for enhanced security isolation when working with untrusted repositories:
+[[entities/tim-sh]] described a pattern of running Claude Code inside Docker for enhanced security isolation when working with untrusted repositories:
 
 - **Docker container** runs Claude Code as a non-root user with no host filesystem access
 - **Volume mount** provides the target repository read-only, with a writable scratch directory

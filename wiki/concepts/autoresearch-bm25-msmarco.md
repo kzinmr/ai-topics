@@ -17,7 +17,7 @@ sources: [raw/articles/2026-05-17_softwaredoug-com_autoresearching-better-msmarc
 
 # Autoresearch for BM25 Optimization on MSMarco
 
-A concrete case study by [[softwaredoug|Doug Turnbull]] (May 2026) applying **autoresearch** — using a coding agent to iteratively optimize a BM25 ranking function — on the MSMarco passage retrieval dataset. This is a domain-specific application of the broader [[autonomous-component-optimization]] pattern, focused on **search relevance tuning**.
+A concrete case study by [[softwaredoug|Doug Turnbull]] (May 2026) applying **autoresearch** — using a coding agent to iteratively optimize a BM25 ranking function — on the MSMarco passage retrieval dataset. This is a domain-specific application of the broader [[concepts/autonomous-component-optimization]] pattern, focused on **search relevance tuning**.
 
 ## Method: Dual-Gate Agentic Optimization
 
@@ -81,9 +81,9 @@ Despite the overfitting issues, Doug argues the approach is a **useful tuning to
 
 ## See Also
 
-- [[softwaredoug]] — Doug Turnbull entity page
-- [[autonomous-component-optimization]] — The broader pattern of agent-driven metric optimization
-- [[karpathy-loop]] — Karpathy's original autoresearch concept
+- [[entities/softwaredoug]] — Doug Turnbull entity page
+- [[concepts/autonomous-component-optimization]] — The broader pattern of agent-driven metric optimization
+- [[concepts/karpathy-loop]] — Karpathy's original autoresearch concept
 - [[concepts/coding-agents/pi-autoresearch]] — Shopify's generalized autoresearch
 - [[concepts/evaluation/ndcg]] — Normalized Discounted Cumulative Gain, the metric used
 - [[concepts/harness-engineering/agentic-loop]] — The underlying agent loop pattern

@@ -21,4 +21,4 @@ Stub page for OpenClaw Philosophy — Primitives Over Defaults.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

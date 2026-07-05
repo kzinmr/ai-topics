@@ -9,7 +9,7 @@ sources: [raw/articles/2026-05-22_aleph-alpha_model-training-as-code.md]
 
 ## Discriminative Summary
 
-Model Training as Code (MTaC) is an engineering paradigm that expresses the entire model training pipeline — pre-training, supervised fine-tuning (SFT), reinforcement learning (RL), evaluation, and artifact management — in imperative code rather than as a sequence of manual hand-offs between specialized teams. Unlike [[mlops]], which focuses on the operational infrastructure around model deployment and monitoring, MTaC codifies the training recipe itself as a collaborative software artifact. Unlike experiment tracking tools (e.g., [[weights-and-biases]]), which log metrics after the fact, MTaC makes the pipeline’s logic, configuration, and provenance first-class citizens of the codebase from the start. And unlike Infrastructure as Code, which provisions cloud resources declaratively, MTaC expresses the full training workflow — data ingestion, training loops, checkpoint evaluation, and sweeps — as composable functions under version control.
+Model Training as Code (MTaC) is an engineering paradigm that expresses the entire model training pipeline — pre-training, supervised fine-tuning (SFT), reinforcement learning (RL), evaluation, and artifact management — in imperative code rather than as a sequence of manual hand-offs between specialized teams. Unlike [[concepts/mlops]], which focuses on the operational infrastructure around model deployment and monitoring, MTaC codifies the training recipe itself as a collaborative software artifact. Unlike experiment tracking tools (e.g., [[entities/weights-and-biases]]), which log metrics after the fact, MTaC makes the pipeline’s logic, configuration, and provenance first-class citizens of the codebase from the start. And unlike Infrastructure as Code, which provisions cloud resources declaratively, MTaC expresses the full training workflow — data ingestion, training loops, checkpoint evaluation, and sweeps — as composable functions under version control.
 
 MTaC was pioneered at Aleph Alpha through their internal model factory, Savanna, which implements post-training pipelines as async functions with typed inputs/outputs, enabling one-click end-to-end runs, hermetic reproducibility, and trunk-based collaboration across capability-oriented teams.
 
@@ -40,7 +40,7 @@ Composability enables:
 
 Consensus comes from version control. The main branch represents the team’s collective best understanding of how to train a model. The code contains the full training recipe — configuration, hyperparameters, data references, and environment specifications — so there is no setup to reconstruct or flag to forget when launching a run. This eliminates the “reconstruction from memory” anti-pattern that plagues manual labs.
 
-Trunk-based development (see [[main-branch-development]]) is essential: changes land on main in small increments so teams can build on each other’s work immediately. Long-lived branches recreate the same integration debt that MTaC is designed to eliminate.
+Trunk-based development (see [[concepts/main-branch-development]]) is essential: changes land on main in small increments so teams can build on each other’s work immediately. Long-lived branches recreate the same integration debt that MTaC is designed to eliminate.
 
 ### Provenance
 
@@ -50,7 +50,7 @@ Savanna extends this with artifact lineage: all non-code artifacts (datasets, mo
 
 ## Comparison to MLOps and Infrastructure as Code
 
-| Dimension | Model Training as Code | [[mlops]] | Infrastructure as Code |
+| Dimension | Model Training as Code | [[concepts/mlops]] | Infrastructure as Code |
 |---|---|---|---|
 | **Primary focus** | The training pipeline logic, configuration, and execution | Operational lifecycle of ML models (deployment, monitoring, retraining) | Provisioning and managing cloud/server infrastructure |
 | **What is codified** | Training recipe: data mix, architecture, hyperparameters, evaluation, sweeps | Model serving, CI/CD for ML, feature stores, model registry, monitoring | Compute, networking, storage resources (VMs, clusters, DBs) |
@@ -76,7 +76,7 @@ Key workflow features:
 
 ### Weights and Biases Integration
 
-[[weights-and-biases]] serves as the artifact registry and experiment tracking backbone. Model and data artifacts are stored immutably in on-prem object storage and versioned in W&B. This provides:
+[[entities/weights-and-biases]] serves as the artifact registry and experiment tracking backbone. Model and data artifacts are stored immutably in on-prem object storage and versioned in W&B. This provides:
 - **Immutable artifact references**: Training runs reference specific artifact versions, ensuring hermetic reproducibility.
 - **Artifact lineage UI**: Interactive exploration of which datasets produced which models.
 - **Automated cleanup policies**: Object storage lifecycle management via W&B artifact versioning.
@@ -84,7 +84,7 @@ Key workflow features:
 
 ### Trunk-Based Development
 
-MTaC’s full value depends on [[main-branch-development]]: changes merge to main frequently and in small increments. This enables:
+MTaC’s full value depends on [[concepts/main-branch-development]]: changes merge to main frequently and in small increments. This enables:
 - **Fast integration**: Teams build on each other’s work at the earliest opportunity.
 - **Fail-fast experimentation**: A branch that runs CI with a new dataset or hyperparameter can be evaluated and merged within hours.
 - **Reduced integration debt**: Avoids the month-long divergence that occurs with long-lived feature branches.
@@ -103,7 +103,7 @@ This shifts the organizational bottleneck from coordination to execution, increa
 
 ### LLM Agent Auto-Research
 
-With the entire pipeline in code, an LLM agent can read, modify, and run it autonomously. MTaC provides the structured interface — typed function signatures, version-controlled recipes, CI-based validation — that makes [[auto-research]] feasible. An agent can:
+With the entire pipeline in code, an LLM agent can read, modify, and run it autonomously. MTaC provides the structured interface — typed function signatures, version-controlled recipes, CI-based validation — that makes [[concepts/auto-research]] feasible. An agent can:
 
 1. Read the current training recipe from the codebase.
 2. Propose a change (new data mix, modified architecture, different hyperparameter).
@@ -111,14 +111,14 @@ With the entire pipeline in code, an LLM agent can read, modify, and run it auto
 4. Analyze the small-scale validation results.
 5. Merge if improvements are confirmed, or iterate.
 
-Aleph Alpha describes this as a key enabler for models that can self-improve via their own training factory. This connects MTaC to broader themes in [[agentic-engineering]], where the codebase becomes the interface between human researchers and autonomous experimentation agents.
+Aleph Alpha describes this as a key enabler for models that can self-improve via their own training factory. This connects MTaC to broader themes in [[concepts/agentic-engineering]], where the codebase becomes the interface between human researchers and autonomous experimentation agents.
 
 ## Related Topics
 
-- [[mlops]] — Operational lifecycle management for ML models; MTaC focuses upstream on training logic
-- [[main-branch-development]] — The version control practice essential to MTaC’s consensus principle
-- [[post-training]] — The SFT and RL stages that MTaC pipelines typically orchestrate
-- [[auto-research]] — Autonomous experimentation agents that MTaC makes feasible
-- [[agentic-engineering]] — Engineering culture and practices for agent-native codebases
-- [[weights-and-biases]] — Artifact registry and experiment tracking used in Savanna’s implementation
+- [[concepts/mlops]] — Operational lifecycle management for ML models; MTaC focuses upstream on training logic
+- [[concepts/main-branch-development]] — The version control practice essential to MTaC’s consensus principle
+- [[concepts/post-training]] — The SFT and RL stages that MTaC pipelines typically orchestrate
+- [[concepts/auto-research]] — Autonomous experimentation agents that MTaC makes feasible
+- [[concepts/agentic-engineering]] — Engineering culture and practices for agent-native codebases
+- [[entities/weights-and-biases]] — Artifact registry and experiment tracking used in Savanna’s implementation
 - flyte — Kubernetes-native workflow engine for durable training orchestration

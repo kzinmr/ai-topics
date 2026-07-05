@@ -21,4 +21,4 @@ Stub page for agents, scaffolding, composition, inference-scaling, hypothesis.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

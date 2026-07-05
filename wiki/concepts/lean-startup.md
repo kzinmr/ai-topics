@@ -21,4 +21,4 @@ Stub page for lean-startup.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

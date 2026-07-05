@@ -209,7 +209,7 @@ This aligns with the industry-wide [[concepts/inference#the-inference-inflection
 ## Related
 
 - [[concepts/tuomas-sandholm]] — PhD advisor; co-developer of Libratus and Pluribus
-- [[mark-chen]] — OpenAI colleague; o1 reasoning model
+- [[entities/mark-chen]] — OpenAI colleague; o1 reasoning model
 - [[concepts/hunter-lightman]] — OpenAI colleague; Project Strawberry
 - [[entities/ilya-sutskever]] — OpenAI co-founder; Q* project (related to reasoning)
 - [[entities/sam-altman]] — OpenAI CEO

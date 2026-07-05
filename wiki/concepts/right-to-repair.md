@@ -21,4 +21,4 @@ Stub page for right-to-repair.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

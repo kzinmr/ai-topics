@@ -132,7 +132,7 @@ A key lesson from his Impira experience was recognizing that go-to-market succes
 ## Related
 
 - [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs Monitoring debate with Ben Hylak (Raindrop)
--  — Goyal's LLM evaluation platform- [[figma]] — Acquired Impira; Goyal led AI team post-acquisition
+-  — Goyal's LLM evaluation platform- [[entities/figma]] — Acquired Impira; Goyal led AI team post-acquisition
 -  — Goyal's first startup, acquired by Figma
 - [[concepts/evaluation/llm-evaluation-harness]] — Braintrust's core product category
 -  — Key investor and advisor to Braintrust

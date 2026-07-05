@@ -101,6 +101,6 @@ Analogy to Linux/Kubernetes: the OS provides minimal primitives, and users assem
 
 - [[concepts/skill-architecture-patterns]] — Comparison of skill architectures with Hermes
 - [[comparisons/hermes-vs-openclaw-architecture]] — Detailed architecture comparison
-- [[concepts/openclaw]] — OpenClaw framework
+- [[entities/openclaw]] — OpenClaw framework
 - [[concepts/anthropic/openclaw-conflict]] — Platform risk context
 - [[entities/peter-steinberger]] — Designer

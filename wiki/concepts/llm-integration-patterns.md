@@ -21,4 +21,4 @@ Stub page for LLM Integration Patterns.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

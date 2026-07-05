@@ -187,7 +187,7 @@ Released at Google I/O 2026. A natively multimodal generative model that combine
 - YouTube Shorts & YouTube Create App — No cost
 - Developer & enterprise APIs — Coming weeks
 
-See also: [[concepts/nvidia-sana-wm]] (competing open-source world model)
+See also: [[entities/nvidia-sana-wm]] (competing open-source world model)
 
 ## Daily Brief
 
@@ -274,4 +274,4 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -18,7 +18,7 @@ sources:
 
 # LLM-Augmented Knowledge Retrieval
 
-The pattern of using an LLM with **filesystem access** (typically via [[mcp]]) to search, navigate, and synthesize information from a local **personal knowledge base** (markdown files, Obsidian vault, or similar structured document collection). The LLM acts as an intelligent retrieval layer over notes that were already organized with retrieval in mind.
+The pattern of using an LLM with **filesystem access** (typically via [[concepts/mcp]]) to search, navigate, and synthesize information from a local **personal knowledge base** (markdown files, Obsidian vault, or similar structured document collection). The LLM acts as an intelligent retrieval layer over notes that were already organized with retrieval in mind.
 
 ## Core Pattern
 
@@ -33,7 +33,7 @@ The key enabler is **Filesystem MCP** — the Model Context Protocol server that
 
 ## Relationship to the LLM Wiki Pattern
 
-This retrieval pattern is the **query side** of the broader **LLM Wiki** concept originated by Andrej [[karpathy]]: LLMs don't just answer questions over scattered documents — they continuously build and maintain a structured, interlinked wiki from raw sources.
+This retrieval pattern is the **query side** of the broader **LLM Wiki** concept originated by Andrej [[concepts/karpathy]]: LLMs don't just answer questions over scattered documents — they continuously build and maintain a structured, interlinked wiki from raw sources.
 
 | Aspect | LLM Wiki (Build) | LLM-Augmented Retrieval (Query) |
 |--------|------------------|--------------------------------|
@@ -73,11 +73,11 @@ Several projects implement variations of this pattern:
 - **llm-knowledge-bases** (rvk7895): Claude Code plugin implementing the full Karpathy workflow — ingest, compile, query, lint, evolve
 - **Claude Code Obsidian Skills** (phelps-sg): Skills for vault management (`/pkm`), auditing (`/vault-insights`), and external sync
 - **Bedrock** (iurykrieger): Claude Code plugin with 8 skills for Zettelkasten-style vault management, 7 entity types, bidirectional wikilinks
-- **Hermes AI Topics Wiki**: Our own system follows a similar architecture — raw sources → structured wiki, with [[hermes-agent]] as the maintainer
+- **Hermes AI Topics Wiki**: Our own system follows a similar architecture — raw sources → structured wiki, with [[entities/hermes-agent]] as the maintainer
 
 ## Relevance to AI Agent Engineering
 
-This pattern is significant for [[ai-agent-engineering]] because it demonstrates:
+This pattern is significant for [[concepts/ai-agent-engineering]] because it demonstrates:
 
 1. **Filesystem as universal interface** — Markdown files are the most portable, durable knowledge representation. No proprietary database, no vendor lock-in
 2. **MCP as integration standard** — Filesystem MCP enables any MCP-compatible agent to work with any markdown-based knowledge base
@@ -95,9 +95,9 @@ This pattern is significant for [[ai-agent-engineering]] because it demonstrates
 
 ## See Also
 
-- [[mcp]] — Model Context Protocol, the integration mechanism
+- [[concepts/mcp]] — Model Context Protocol, the integration mechanism
 - [[concepts/claude-code/claude-code]] — primary tool used for this pattern
-- [[karpathy]] — originator of the LLM Wiki concept
+- [[concepts/karpathy]] — originator of the LLM Wiki concept
 - [[concepts/context-engineering|Context Engineering]] — designing context windows for effective retrieval
-- [[agent-memory-systems-comparison]] — how different agent harnesses handle persistent memory
-- [[hermes-agent]] — our own implementation of LLM-maintained wiki
+- [[comparisons/agent-memory-systems-comparison]] — how different agent harnesses handle persistent memory
+- [[entities/hermes-agent]] — our own implementation of LLM-maintained wiki

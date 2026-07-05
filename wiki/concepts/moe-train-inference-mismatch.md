@@ -26,7 +26,7 @@ sources:
 
 # MoE Train-Inference Mismatch
 
-In [[mixture-of-experts]] (MoE) models, the routing mechanism behaves differently during training versus inference, leading to degraded deployment quality if not addressed.
+In [[concepts/mixture-of-experts]] (MoE) models, the routing mechanism behaves differently during training versus inference, leading to degraded deployment quality if not addressed.
 
 ## What Is the Mismatch?
 
@@ -53,8 +53,8 @@ During **training**, MoE uses token-level routing where each token independently
 
 ### Inference-Time Mitigations
 
-- **Expert Parallelism (EP)**: Distributes experts across GPUs so that each GPU handles a manageable subset. [[elastic-ep]] in [[inference/sglang]] adds fault-tolerant EP for production deployments.
-- **Fine-grained expert parallelism**: [[deepseek-v4]]'s MegaMoE uses many small experts with fine-grained EP, improving load distribution and reducing per-expert capacity pressure.
+- **Expert Parallelism (EP)**: Distributes experts across GPUs so that each GPU handles a manageable subset. [[concepts/elastic-ep]] in [[inference/sglang]] adds fault-tolerant EP for production deployments.
+- **Fine-grained expert parallelism**: [[concepts/deepseek-v4]]'s MegaMoE uses many small experts with fine-grained EP, improving load distribution and reducing per-expert capacity pressure.
 
 ### Combined Approach (DeepSeek)
 
@@ -75,11 +75,11 @@ The mismatch is fundamentally a **distribution shift** problem: routing decision
 ## See Also
 
 - [[rl-interview-questions-2026]]
-- [[mixture-of-experts]]
-- [[deepseek-v3-2]]
-- [[deepseek-v4]]
-- [[elastic-ep]]
-- [[model-quantization]]
+- [[concepts/mixture-of-experts]]
+- [[concepts/deepseek-v3-2]]
+- [[concepts/deepseek-v4]]
+- [[concepts/elastic-ep]]
+- [[concepts/model-quantization]]
 - [[inference/vllm]]
 - [[inference/sglang]]
 - [[raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report]]

@@ -210,10 +210,10 @@ By 2026, evaluation has shifted toward measuring how well models perform as auto
 
 ## Related Pages
 
-- [[llm-core]] — Large language model architecture and research
-- [[small-language-models]] — Efficient smaller models, including edge-deployed Korean models
-- [[ai-regulation-2026]] — Global AI regulatory landscape
-- [[ai-video-generation-2026]] — Video generation models including Seedance 2.0
+- [[concepts/llm-core]] — Large language model architecture and research
+- [[concepts/small-language-models]] — Efficient smaller models, including edge-deployed Korean models
+- [[concepts/ai-regulation-2026]] — Global AI regulatory landscape
+- [[concepts/ai-video-generation-2026]] — Video generation models including Seedance 2.0
 
 
 ## Sources

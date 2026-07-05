@@ -21,4 +21,4 @@ Stub page for Agent Security Patterns.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

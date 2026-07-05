@@ -21,4 +21,4 @@ Stub page for AI Coding Tools.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

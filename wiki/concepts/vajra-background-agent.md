@@ -89,7 +89,7 @@ Vajra demonstrates that **background agents are production-ready** for well-scop
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/single-agent-ceiling]]
 - [[concepts/ai-agent-memory-two-camps]]

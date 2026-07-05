@@ -23,7 +23,7 @@ related:
   - "[[concepts/security-and-governance/agent-containment]]"
   - "[[concepts/security-and-governance/agent-sandboxing-patterns]]"
   - "[[concepts/harness-engineering/agentic-loop]]"
-  - "[[concepts/hermes-agent]]"
+  - "[[entities/hermes-agent]]"
   - "[[concepts/mcp]]"
 ---
 
@@ -102,6 +102,6 @@ Multi-tenant agents require **per-installation sandbox isolation** — data from
 - [[entities/mastra]] — Mastra agent framework
 - [[concepts/security-and-governance/agent-containment]] — Blast radius reduction through environmental isolation
 - [[concepts/security-and-governance/agent-sandboxing-patterns]] — Sandbox isolation patterns for AI agents
-- [[concepts/hermes-agent]] — Single-user agent architecture (contrast point)
+- [[entities/hermes-agent]] — Single-user agent architecture (contrast point)
 - [[concepts/mcp]] — Model Context Protocol for tool integration
 - [[concepts/harness-engineering/agentic-loop]] — The canonical agent execution cycle

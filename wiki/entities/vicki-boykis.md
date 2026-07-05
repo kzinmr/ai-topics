@@ -25,7 +25,7 @@ Data scientist, ML engineer, and prolific tech blogger at [vickiboykis.com](http
 ### Local Models Assessment (Jun 2026)
 Identified GPT-OSS as the inflection point where local models became "good enough" — the first model where she stopped double-checking against API models. With Gemma 4 family, achieved local agentic coding at ~75% accuracy/speed of frontier models on M2 Mac (64 GB RAM).
 
-Preferred setup: [[lm-studio]] as inference server + [[pi-coding-agent]] as agent harness, all Docker-sandboxed.
+Preferred setup: [[entities/lm-studio]] as inference server + [[pi-coding-agent]] as agent harness, all Docker-sandboxed.
 
 ### Practical Workflow
 - Refactoring Python notebooks into modular repos
@@ -40,8 +40,8 @@ Blog at vickiboykis.com covers: LLMs, ML engineering, data science, search, embe
 
 ## See Also
 
-- [[lm-studio]] — Her inference server of choice
+- [[entities/lm-studio]] — Her inference server of choice
 - [[pi-coding-agent]] — Agent harness she uses for local agentic coding
-- [[gemma-4]] — Google's model family she recommends for local use
-- [[gpt-oss]] — OpenAI's open-weight model she identified as the local quality inflection point
-- [[ollama]] — Another inference engine she has used
+- [[entities/gemma-4]] — Google's model family she recommends for local use
+- [[entities/gpt-oss]] — OpenAI's open-weight model she identified as the local quality inflection point
+- [[concepts/ollama]] — Another inference engine she has used

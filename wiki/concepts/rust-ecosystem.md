@@ -21,4 +21,4 @@ Stub page for rust-ecosystem.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for kimi-k2-5.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

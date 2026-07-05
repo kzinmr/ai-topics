@@ -21,4 +21,4 @@ Stub page for hundred-page-nlp-book.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

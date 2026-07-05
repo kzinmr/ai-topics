@@ -21,4 +21,4 @@ Stub page for Data Engineering for ML.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

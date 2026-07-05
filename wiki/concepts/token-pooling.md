@@ -21,4 +21,4 @@ Stub page for token-pooling.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

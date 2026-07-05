@@ -21,4 +21,4 @@ Stub page for anti-patterns.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

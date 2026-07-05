@@ -21,4 +21,4 @@ Stub page for evals-skills.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

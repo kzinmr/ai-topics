@@ -55,4 +55,4 @@ Work done at **AI Frontiers**, a boutique research lab inside Microsoft Research
 - [[entities/ahmed-awadallah]] — MSR AI Frontiers research lead
 - [[echo-rl]] — the ECHO training method
 - [[entities/microsoft-ai-frontiers]] — research lab
-- [[world-models-for-agents]] — world models in agent training
+- [[concepts/world-models-for-agents]] — world models in agent training

@@ -56,6 +56,6 @@ Three stages:
 
 ## Related
 - [[concepts/colbert]] — ColBERT late interaction retrieval
-- [[concepts/embeddings]] — Dense vector embeddings
+- [[entities/embeddings]] — Dense vector embeddings
 - [[concepts/multilingual]] — Multilingual AI models
 - [[concepts/retrieval]] — Information retrieval systems

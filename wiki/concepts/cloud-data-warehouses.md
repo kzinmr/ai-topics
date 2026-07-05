@@ -44,9 +44,9 @@ Cloud data warehouses are fully managed, scalable analytics databases built for 
 
 ## Related Concepts
 
-- [[data-engineering]]
-- [[event-driven-architecture]]
-- [[ai-observability]]
+- [[concepts/data-engineering]]
+- [[concepts/event-driven-architecture]]
+- [[concepts/ai-observability]]
 - [[concepts/cloud-data-warehouses]]
 
 ## Sources

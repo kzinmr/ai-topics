@@ -83,10 +83,10 @@ Different Linux distributions have different security postures. Fedora's more pe
 ## Related Concepts
 - [[sandbox/infrastructure]] — Isolation mechanisms for agent execution
 - [[sandbox/in-process]] — In-process sandboxing patterns
-- [[agent-security-patterns]] — Security design patterns for AI agents
-- [[active-observability]] — Real-time monitoring and anomaly detection
-- [[agent-harness-primitives]] — Foundational agent architecture components
-- [[agent-loop-orchestration]] — Execution loop safety considerations
+- [[concepts/agent-security-patterns]] — Security design patterns for AI agents
+- [[concepts/active-observability]] — Real-time monitoring and anomaly detection
+- [[concepts/agent-harness-primitives]] — Foundational agent architecture components
+- [[concepts/agent-loop-orchestration]] — Execution loop safety considerations
 
 ## Ongoing Research
 

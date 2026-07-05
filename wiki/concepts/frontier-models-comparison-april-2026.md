@@ -21,4 +21,4 @@ Stub page for Frontier Models Comparison — April 2026.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

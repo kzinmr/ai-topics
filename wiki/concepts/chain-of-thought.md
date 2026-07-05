@@ -119,13 +119,13 @@ This is fundamentally different from prompting-based CoT — it's a capability *
 
 ## Relationship to Test-Time Scaling
 
-Chain-of-Thought is the **substrate** on which all [[test-time-scaling]] techniques operate. Every method — self-consistency, Best-of-N, beam search, tree search — relies on the model's ability to produce coherent reasoning chains. CoT provides the search space; test-time scaling strategies determine how to explore it.
+Chain-of-Thought is the **substrate** on which all [[concepts/test-time-scaling]] techniques operate. Every method — self-consistency, Best-of-N, beam search, tree search — relies on the model's ability to produce coherent reasoning chains. CoT provides the search space; test-time scaling strategies determine how to explore it.
 
 ## Related Pages
 
-- [[test-time-scaling]] — Allocating inference compute across CoT paths
+- [[concepts/test-time-scaling]] — Allocating inference compute across CoT paths
 - [[reasoning]] — AI reasoning capabilities
 - [[rlvr]] — RL with Verifiable Rewards for training CoT
 - [[grpo]] — GRPO algorithm used to train long-CoT models
 - [[prompting]] — Broader prompting techniques
-- [[speculative-decoding]] — Complementary technique (faster generation, not better reasoning)
+- [[concepts/speculative-decoding]] — Complementary technique (faster generation, not better reasoning)

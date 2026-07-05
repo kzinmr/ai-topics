@@ -153,7 +153,7 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [[concepts/chokepoint-capitalism]] — Intermediaries as unavoidable bottlenecks
 - [[concepts/right-to-repair]] — Anti-circumvention law's impact on device ownership
 - [[concepts/posse-pattern]] — Publish on Own Site, Syndicate Everywhere
--  — Public note-taking as knowledge creation- [[ed-zitron]] — Another critical tech-policy voice
+-  — Public note-taking as knowledge creation- [[entities/ed-zitron]] — Another critical tech-policy voice
  [[concepts/ai-pascals-wager|AI Pascal's Wager]] — Framing the AI doomer debate as Pascal's Wager
 - [[concepts/ai-bubble-economics]] — AI investment bubble and economic risks
  — Post-American internet vision

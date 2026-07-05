@@ -21,4 +21,4 @@ Stub page for applied-ml.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

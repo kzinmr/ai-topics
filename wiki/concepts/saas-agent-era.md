@@ -73,7 +73,7 @@ Instead of code branching, separate these artifacts:
 - **Prompts/system instructions**, **agent role definitions**
 - **Cost caps**, **execution log retention policies**
 
-In short, this is a shift from building customer-specific code to maintaining **per-customer "operational artifacts" for agents**. This is where patterns discovered in [[forward-deployed-engineering]] practice feed back into product design.
+In short, this is a shift from building customer-specific code to maintaining **per-customer "operational artifacts" for agents**. This is where patterns discovered in [[concepts/forward-deployed-engineering]] practice feed back into product design.
 
 ## Enterprise SaaS Becomes a Governance Layer
 
@@ -105,7 +105,7 @@ This prediction suggests that only SaaS with strong "on-the-ground implementatio
 
 ## Related Pages
 
-- [[forward-deployed-engineering]] - FDE role and methodology
-- [[enterprise-agents]] - Enterprise AI Agent adoption patterns
+- [[concepts/forward-deployed-engineering]] - FDE role and methodology
+- [[concepts/enterprise-agents]] - Enterprise AI Agent adoption patterns
 - [[concepts/multi-agents/agent-executor]] - Agent execution architecture
-- [[agent-skills]] - Agent skill design and management
+- [[concepts/agent-skills]] - Agent skill design and management

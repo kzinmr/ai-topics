@@ -21,4 +21,4 @@ Stub page for posse-pattern.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

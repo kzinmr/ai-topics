@@ -21,4 +21,4 @@ Stub page for eureka-labs.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

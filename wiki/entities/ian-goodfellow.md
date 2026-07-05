@@ -112,6 +112,6 @@ type: entity
 
 - [[entities/yann-lecun]] — CNN inventor. Deep learning and computer vision pioneer.
 - [[entities/fei-fei-li]] — ImageNet creator. Data-driven AI pioneer.
-- [[entities/yoshua-bengio]] — Goodfellow's PhD advisor. Deep learning pioneer.
+- [[concepts/yoshua-bengio]] — Goodfellow's PhD advisor. Deep learning pioneer.
 - [[concepts/generative-adversarial-networks]] — Foundational generative model technology invented by Goodfellow.
 - [[concepts/adversarial-machine-learning]] — Adversarial ML and security field pioneered by Goodfellow.

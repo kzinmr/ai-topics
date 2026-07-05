@@ -21,4 +21,4 @@ Stub page for Cohere.io.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

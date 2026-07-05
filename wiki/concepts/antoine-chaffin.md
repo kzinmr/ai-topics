@@ -21,4 +21,4 @@ Stub page for antoine-chaffin.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

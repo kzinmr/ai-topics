@@ -22,4 +22,4 @@ Stub page for Proprietary Context — Organizational Governance in the AI Era an
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

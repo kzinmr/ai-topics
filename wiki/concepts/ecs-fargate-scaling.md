@@ -68,7 +68,7 @@ Dedicated Lambda publishes detailed metrics every 15s to avoid CloudWatch/SQS de
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/scaling-without-slop]]
 - [[concepts/compute-scaling-bottlenecks]]
 - [[concepts/sqs-lambda-esm-scaling]]

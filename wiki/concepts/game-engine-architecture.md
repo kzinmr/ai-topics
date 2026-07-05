@@ -21,4 +21,4 @@ Stub page for game-engine-architecture.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

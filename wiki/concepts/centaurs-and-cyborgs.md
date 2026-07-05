@@ -21,4 +21,4 @@ Stub page for centaurs-and-cyborgs.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

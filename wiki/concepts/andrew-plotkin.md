@@ -21,4 +21,4 @@ Stub page for andrew-plotkin.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

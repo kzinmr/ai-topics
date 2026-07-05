@@ -29,7 +29,7 @@ sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-serv
 | **Storage** | S3 (primary) | Human-readable YAML/Markdown files for user data |
 | **Database** | PostgreSQL | Indexing and listing (synced from S3 via Lambda) |
 | **Compute** | AWS Lambda | Event-driven processing, sandbox execution |
-| **Orchestration** | [[durable-execution]] (Temporal) | Long-running task reliability |
+| **Orchestration** | [[concepts/durable-execution]] (Temporal) | Long-running task reliability |
 | **Access Control** | AWS ABAC | Attribute-based isolation with IAM policies |
 | **Real-time** | Redis Streams | Delta updates and streaming |
 

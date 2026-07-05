@@ -21,4 +21,4 @@ Stub page for Work-Depth Analysis.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

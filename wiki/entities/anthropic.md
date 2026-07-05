@@ -562,7 +562,7 @@ Anthropic has shared run-rate revenue in funding announcements. The specific cal
 - **Subscription-based**: monthly revenue × 12
 - Combined = total run-rate
 
-This 13× multiplier on consumption means short-term usage spikes get annualized into headline numbers — an important caveat when comparing to standard ARR. See [[ai-economics]] for the "tokenmaxxing" sustainability debate.
+This 13× multiplier on consumption means short-term usage spikes get annualized into headline numbers — an important caveat when comparing to standard ARR. See [[concepts/ai-economics]] for the "tokenmaxxing" sustainability debate.
 
 | Date | Run-Rate Revenue | Context |
 |------|-----------------|---------|
@@ -618,7 +618,7 @@ Anthropic took a formal step toward going public in June 2026:
 - Enterprise adoption of Claude models
 - "Tokenmaxxing" phenomenon: companies encouraging employees to maximize AI usage without ROI measurement
 - Anecdotal report (Axios, May 2026): one company spent $500M in a single month after failing to set usage limits on Claude licenses
-- Emerging concern: tokenmaxxing may be unsustainable; some enterprises starting to question ROI (see [[ai-economics]])
+- Emerging concern: tokenmaxxing may be unsustainable; some enterprises starting to question ROI (see [[concepts/ai-economics]])
 
 
 ## Models
@@ -673,13 +673,13 @@ Training philosophy: train models to avoid unsupported claims and flag uncertain
 ## Leadership
 - **Dario Amodei** — CEO, co-founder
 - **Daniela Amodei** — President, co-founder
-- **Jack Clark** — Co-founder, Import AI newsletter, see [[jack-clark]]
+- **Jack Clark** — Co-founder, Import AI newsletter, see [[entities/jack-clark]]
 - **Andrej Karpathy** — Joined pre-training team (May 2026); previously co-founder of OpenAI, notable for choosing Anthropic over OpenAI return
 
 
 ## Related Pages
 - [[Claude models]] — Model family details
-- [[ai-economics]] — Tokenmaxxing, AI ROI debate
+- [[concepts/ai-economics]] — Tokenmaxxing, AI ROI debate
 - [[Gary Marcus]] — AI industry skepticism
 - [[OpenAI]] — Primary competitor
 - [[Ed Zitron]] — Revenue skepticism
@@ -690,7 +690,7 @@ Training philosophy: train models to avoid unsupported claims and flag uncertain
 - [[entities/foundation-capital]] — Partner in Claude Managed Agents
 - [[entities/sap-business-ai-platform]] — SAP partnership (May 2026)
 - [[concepts/anthropic/managed-agents]] — Managed Agents platform details
-- [[concepts/project-glasswing]] — Defensive security initiative
+- [[entities/project-glasswing]] — Defensive security initiative
 
 ## References
 

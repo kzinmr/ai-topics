@@ -21,4 +21,4 @@ Stub page for superlinear-returns.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

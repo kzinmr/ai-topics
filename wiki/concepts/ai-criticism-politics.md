@@ -52,8 +52,8 @@ This adds a layer to the political dimensions of AI criticism — the framing an
 ## Sources
 
 - [Sean Goedecke: Many anti-AI arguments are conservative arguments](https://seangoedecke.com/many-anti-ai-arguments-are-conservative/) (2026-04-18)
-- [[seangoedecke-com]] — Sean Goedecke entity page
+- [[entities/seangoedecke-com]] — Sean Goedecke entity page
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]

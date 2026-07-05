@@ -52,7 +52,7 @@ Coder Agents addresses a key gap in enterprise AI adoption: **regulated industri
 
 ## Comparison to Other Coding Agents
 
-Unlike cloud-hosted coding agents like [[entities/claude-code]], [[concepts/codex]], or [[entities/cursor]], Coder Agents is designed for enterprises that require:
+Unlike cloud-hosted coding agents like [[entities/claude-code]], [[entities/codex]], or [[entities/cursor]], Coder Agents is designed for enterprises that require:
 
 - Complete data sovereignty
 - Air-gapped deployment capability
@@ -63,7 +63,7 @@ Unlike cloud-hosted coding agents like [[entities/claude-code]], [[concepts/code
 
 - [[entities/coder]] — This page
 - [[entities/claude-code]] — Anthropic's coding agent
-- [[concepts/codex]] — OpenAI's coding agent
+- [[entities/codex]] — OpenAI's coding agent
 - [[entities/cursor]] — AI code editor
 - [[concepts/coding-agents/coding-agents]] — General coding agent concept
 - [[concepts/agent-security]] — Agent security and governance

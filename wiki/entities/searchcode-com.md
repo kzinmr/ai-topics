@@ -20,7 +20,7 @@ sources:
 related:
   - "[[entities/ben-boyter]]"
   - "[[concepts/code-intelligence-for-llms]]"
-  - "[[entities/mcp]]"
+  - "[[concepts/mcp]]"
   - "[[entities/scc]]"
 ---
 # searchcode.com

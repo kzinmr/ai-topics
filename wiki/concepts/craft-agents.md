@@ -17,7 +17,7 @@ related:
   - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/mcp]]"
   - "[[concepts/claude-code/claude-code]]"
-  - "[[concepts/codex]]"
+  - "[[entities/codex]]"
 ---
 
 # Craft Agents

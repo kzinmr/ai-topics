@@ -106,7 +106,7 @@ His policy: force push freely on feature branches to clean up history before mer
 -  — Tokio, sans-IO pattern, crate coloring
 -  — Git as the canonical location for project metadata
 -  — Running services at minimal cost- [[entities/xeiaso-net]] — Shared interest in practical, small-scale infrastructure
-- [[michael-stapelberg]] — Shared interest in declarative infrastructure and Nix
+- [[entities/michael-stapelberg]] — Shared interest in declarative infrastructure and Nix
 
 ## Sources
 

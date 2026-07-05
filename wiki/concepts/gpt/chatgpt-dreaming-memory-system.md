@@ -113,4 +113,4 @@ However, Dreaming remains a **stateful, proprietary system** — it still introd
 - [[concepts/harness-engineering/agent-memory-engineering]] — Nicolas Bustamante's memory architecture classification
 - [[entities/openai]] — OpenAI entity page
 - [[entities/claude-code]] — Claude Code entity page
-- [[concepts/hermes-agent]] — Hermes Agent 3-Tier Memory System
+- [[entities/hermes-agent]] — Hermes Agent 3-Tier Memory System

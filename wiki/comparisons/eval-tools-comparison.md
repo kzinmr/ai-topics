@@ -166,7 +166,7 @@ eval(my_eval_task(), model="openai/gpt-4")
 - [[concepts/evaluation/llm-as-judge]] — Using LLMs to evaluate AI outputs
 - [[concepts/evaluation/evaluation-flywheel]] — Iterative eval improvement cycle
 - [[concepts/evaluation/critique-shadowing]] — 7-step process for building aligned LLM judges
-- [[concepts/arize]] — Arize AI entity page
+- [[entities/arize]] — Arize AI entity page
 - [[entities/anthropic]] — Anthropic (Promptfoo)
 
 ## Sources

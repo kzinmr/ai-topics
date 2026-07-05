@@ -103,10 +103,10 @@ Positioning SID-1 in this lineage and bringing it to market as a "step-change in
 
 ## Related Pages
 
-- [[max-rumpf]] — SID.ai CEO / SID-1 developer
+- [[entities/max-rumpf]] — SID.ai CEO / SID-1 developer
 - [[grpo]] — Group Relative Policy Optimization, the training algorithm
-- [[agentic-retrieval]] — Agentic information retrieval paradigm
+- [[concepts/agentic-retrieval]] — Agentic information retrieval paradigm
 - [[rag]] — Retrieval-Augmented Generation, the conventional approach SID-1 aims to replace
 - [[magistral]] — Developer of the modified GRPO
-- [[test-time-compute]] — Test-time compute optimization
+- [[concepts/test-time-compute]] — Test-time compute optimization
 - [[search-r1]] — Similar approach (RL for agentic search)

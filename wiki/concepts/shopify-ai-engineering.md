@@ -51,7 +51,7 @@ Shopify's AI tool adoption has been aggressive and early:
 |---|---|---|
 | **2021** | GitHub Copilot | First company outside GitHub to deploy Copilot — negotiated via direct email to GitHub's CEO, got 2 years free in exchange for feedback |
 | **2022** | ChatGPT release | Continued Copilot expansion |
-| **~2024** | Cursor | Deployed company-wide; notable that Cursor growth happened *outside* engineering — finance, sales, support teams using it for [[vibe-coding]] MCP servers |
+| **~2024** | Cursor | Deployed company-wide; notable that Cursor growth happened *outside* engineering — finance, sales, support teams using it for [[concepts/vibe-coding]] MCP servers |
 | **2025** | Claude Code | Primary coding agent; [[concepts/claude-code/claude-code|6 operational patterns]] emerged |
 | **2025** | Devin, Gumloop | Experimental adoption, evaluating next-generation tools |
 | **Nov 2024 – May 2025** | "Code Red" | 7-month tech debt elimination sprint (30-50% of engineering) |
@@ -190,7 +190,7 @@ Shopify's [[agent-safety|permission-based guardrail system]] creates a bounded a
 - **Deny**: git push, deploy, database drops (`db:drop`), secret access (`.env` files), destructive operations (`rm -rf`)
 - **Default mode**: acceptEdits — agents can edit without constant human approval
 
-Agents can work freely within the sandbox; humans stay in the loop for anything irreversible (push, deploy, data destruction). This pattern is a production reference for safe [[ai-agent-engineering]] at scale.
+Agents can work freely within the sandbox; humans stay in the loop for anything irreversible (push, deploy, data destruction). This pattern is a production reference for safe [[concepts/ai-agent-engineering]] at scale.
 
 ## Engineering Culture
 

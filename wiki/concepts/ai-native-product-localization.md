@@ -115,8 +115,8 @@ Key shifts:
 - Prior experience massively accelerates the process (knowing what patterns to watch for)
 
 ## Related Pages
-- [[agentic-engineering]] — Designing AI agent workflows
+- [[concepts/agentic-engineering]] — Designing AI agent workflows
 - [[feedback-loop]] — Pattern of continuous improvement
 - [[concepts/context-engineering|Context Engineering]] — Context window management
 - [[ai-coding]] — AI-assisted software development
-- [[prompt-caching]] — Cost optimization for repeated API calls
+- [[concepts/prompt-caching]] — Cost optimization for repeated API calls

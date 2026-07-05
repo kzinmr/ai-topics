@@ -21,7 +21,7 @@ related:
   - "[[entities/browser-use]]"
   - "[[entities/browserbase]]"
   - "[[entities/0xsero]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
   - "[[entities/playwright]]"
 ---
 
@@ -188,5 +188,5 @@ Unlike [[entities/browser-use]] (Python framework for AI browser automation) or 
 - [[entities/0xsero]] — Creator of Parchi, local model advocate
 - [[entities/browser-use]] — Python framework for AI browser automation (complementary)
 - [[entities/browserbase]] — Cloud browser infrastructure (different approach)
-- [[comparisons/agent-harnesses]] — Agent harness comparison
+- [[concepts/agent-harnesses]] — Agent harness comparison
 - [[entities/playwright]] — Browser automation framework (underlying technology)

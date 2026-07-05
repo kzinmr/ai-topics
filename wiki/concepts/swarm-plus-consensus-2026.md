@@ -21,4 +21,4 @@ Stub page for swarm-plus-consensus-2026.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

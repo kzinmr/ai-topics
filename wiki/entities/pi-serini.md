@@ -82,8 +82,8 @@ PI-SERINI challenges the dominant narrative that better retrieval = better deep 
 
 ## Related
 
-- [[bm25]] — The lexical retrieval algorithm powering PI-SERINI
-- [[agentic-search]] — LLM-driven iterative search paradigm
+- [[concepts/bm25]] — The lexical retrieval algorithm powering PI-SERINI
+- [[concepts/agentic-search]] — LLM-driven iterative search paradigm
 - [[browsecomp]] — The BrowseComp benchmark family
 - [[pi-harness]] — The PI agent harness PI-SERINI is built on
 

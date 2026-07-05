@@ -99,7 +99,7 @@ This creates a paradox: investing heavily in harness engineering may be wasteful
 
 ## Relationship to Other Patterns
 
-- **[[concepts/dspy]]**: DSPy's declarative approach is an attempt to build harness patterns that survive model changes
+- **[[entities/dspy]]**: DSPy's declarative approach is an attempt to build harness patterns that survive model changes
 - **[[concepts/rlms]]**: RLMs represent the "model-absorbed complexity" phase — the model manages its own context
 - **[[concepts/harness-engineering]]**: The broader discipline of agent orchestration
 - **[[concepts/reasoning-compression]]**: As reasoning compresses, harness patterns simplify
@@ -108,5 +108,5 @@ This creates a paradox: investing heavily in harness engineering may be wasteful
 
 - [The Bitter Lesson — Rich Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 - [[concepts/harness-engineering]]
-- [[concepts/dspy]]
+- [[entities/dspy]]
 - [[concepts/rlms]]

@@ -44,8 +44,8 @@ The tool integrates with:
 ## Related Patterns
 
 - [[harness-engineering/system-architecture/building-effective-agents]] — Anthropic recommends human-in-the-loop for high-stakes workflows
-- [[human-in-the-loop]] — broader pattern that includes AskUserQuestion as one implementation
-- [[agent-security-patterns]] — question-based verification as a security control
+- [[concepts/human-in-the-loop]] — broader pattern that includes AskUserQuestion as one implementation
+- [[concepts/agent-security-patterns]] — question-based verification as a security control
 
 ## Sources
 

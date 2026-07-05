@@ -21,4 +21,4 @@ Stub page for Clojure for the Brave and True.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

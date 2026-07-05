@@ -21,4 +21,4 @@ Stub page for DSPy.RLM.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

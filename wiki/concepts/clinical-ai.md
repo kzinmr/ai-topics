@@ -45,7 +45,7 @@ Clinical AI refers to the application of artificial intelligence to healthcare d
 
 ## Related Concepts
 
-- [[multimodal]]
+- [[concepts/multimodal]]
 - [[concepts/rags]]
 - [[entities/noetik]]
 - [[entities/microsoft-ai]]

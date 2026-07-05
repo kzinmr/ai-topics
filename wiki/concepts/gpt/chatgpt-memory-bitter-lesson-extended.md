@@ -21,4 +21,4 @@ Stub page for memory-systems, bitter-lesson, stateless-agents, chatgpt, context-
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

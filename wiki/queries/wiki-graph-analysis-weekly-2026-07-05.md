@@ -92,16 +92,16 @@ sources: []
 
 997 links can be auto-fixed (cross-namespace or bare → namespaced).
 
-- `entities/_index`: [[abacaj]] → [[entities/abacaj]]
-- `entities/_index`: [[adam-mastroianni]] → [[entities/adam-mastroianni]]
-- `entities/_index`: [[addy-osmani]] → [[entities/addy-osmani]]
-- `entities/_index`: [[agentcraft]] → [[entities/agentcraft]]
-- `entities/_index`: [[agibot-10000-units]] → [[entities/agibot-10000-units]]
-- `entities/_index`: [[akira-realmcore]] → [[entities/akira-realmcore]]
-- `entities/_index`: [[alec-radford]] → [[entities/alec-radford]]
-- `entities/_index`: [[alex-banks]] → [[entities/alex-banks]]
-- `entities/_index`: [[ali-farhadi]] → [[entities/ali-farhadi]]
-- `entities/_index`: [[amazon-rivr]] → [[entities/amazon-rivr]]
+- `entities/_index`: [[entities/abacaj]] → [[entities/abacaj]]
+- `entities/_index`: [[entities/adam-mastroianni]] → [[entities/adam-mastroianni]]
+- `entities/_index`: [[entities/addy-osmani]] → [[entities/addy-osmani]]
+- `entities/_index`: [[entities/agentcraft]] → [[entities/agentcraft]]
+- `entities/_index`: [[entities/agibot-10000-units]] → [[entities/agibot-10000-units]]
+- `entities/_index`: [[entities/akira-realmcore]] → [[entities/akira-realmcore]]
+- `entities/_index`: [[entities/alec-radford]] → [[entities/alec-radford]]
+- `entities/_index`: [[entities/alex-banks]] → [[entities/alex-banks]]
+- `entities/_index`: [[entities/ali-farhadi]] → [[entities/ali-farhadi]]
+- `entities/_index`: [[entities/amazon-rivr]] → [[entities/amazon-rivr]]
 - ... and 987 more
 
 ## 3. Duplicate / Similar Pages

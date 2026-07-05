@@ -24,7 +24,7 @@ sources:
 
 # Napkin Math For Finetuning
 
-A framework and methodology for estimating memory and compute requirements when fine-tuning large language models, presented by [[jonathan-whitaker]] (@johnowhitaker).
+A framework and methodology for estimating memory and compute requirements when fine-tuning large language models, presented by [[entities/jonathan-whitaker]] (@johnowhitaker).
 
 ## Overview
 
@@ -69,7 +69,7 @@ For a single training step with batch size `B`, sequence length `S`, model dimen
 
 ## References
 
-- **[[jonathan-whitaker]]** — [Original slides](https://docs.google.com/presentation/d/1Ye_6zeatCWkq-fx8A--yK34uwU8oC2YQtMSTV1DgkSI/edit)
+- **[[entities/jonathan-whitaker]]** — [Original slides](https://docs.google.com/presentation/d/1Ye_6zeatCWkq-fx8A--yK34uwU8oC2YQtMSTV1DgkSI/edit)
 - FSDP+QLoRA Benchmarks: https://github.com/AnswerDotAI/fsdp_qlora/blob/main/benchmarks_03_2024.md
 - PyTorch optimizer memory tutorial: https://pytorch.org/tutorials/intermediate/optimizer_step_in_backward_tutorial.html
 - HuggingFace transformer memory estimation: https://github.com/huggingface/transformers/issues/25572

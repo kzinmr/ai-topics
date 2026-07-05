@@ -21,4 +21,4 @@ Stub page for small-internet.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

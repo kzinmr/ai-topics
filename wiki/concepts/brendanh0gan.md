@@ -21,4 +21,4 @@ Stub page for brendanh0gan.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -202,7 +202,7 @@ As Director of Research, leads work on:
 - [[concepts/agentic-alternative-to-graphrag]] — GraphRAG alternative via metadata search
 -  — Cumulative Evidence Recall metric
 -  — Reranking in retrieval pipelines- [[entities/doug-turnbull]] — Search relevance engineering perspective
-- [[lester-solbakken]] — Search infrastructure perspective
+- [[entities/lester-solbakken]] — Search infrastructure perspective
 -  — Contextual AI company
 ## Sources
 

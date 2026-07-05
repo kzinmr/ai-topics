@@ -535,10 +535,10 @@ Future coding will resemble resource management games — setting up systems, de
 - [[concepts/micrograd]] — His educational autograd engine
 - [[concepts/nanogpt]] — Minimal GPT implementation for education
 - [[concepts/cs231n]] — His Stanford computer vision course
-- [[openai]] — Co-founded in 2015
+- [[entities/openai]] — Co-founded in 2015
 - [[concepts/tesla-autopilot]] — Led AI team from 2017-2022
 - [[concepts/deep-learning]] — Core research area
 -  — PhD research area
-- [[simon-willison]] — Fellow AI educator and blogger
+- [[entities/simon-willison]] — Fellow AI educator and blogger
 -  — Teaching LLMs from first principles
 - [[concepts/gpt/decoder-only]] — Complete GPT architecture explanation from microgpt

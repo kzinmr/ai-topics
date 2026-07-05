@@ -21,4 +21,4 @@ Stub page for sanjeev-arora.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

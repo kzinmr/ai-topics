@@ -89,7 +89,7 @@ Multiple agents collaborate in a single conversation thread:
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Orchestration framework comparison
 - [[concepts/multi-agents/agent-swarms]] — Emergent multi-agent systems
 - [[concepts/claude-code/claude-code-best-practices]] — Agent loop utilization in Claude Code
-- [[concepts/autoreason]] — Self-improving reasoning loop
+- [[entities/autoreason]] — Self-improving reasoning loop
 - [[concepts/coding-agents/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation. Minimal agent loop with 3 tools (read_file/list_files/edit_file)
 - [[concepts/loop-engineering]] — The engineering discipline of designing autonomous loop systems that prompt, verify, and iterate with coding agents. Builds on the orchestration patterns documented here with production concerns: triggers, isolation, independent verification, cost economics, and failure modes.
 

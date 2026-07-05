@@ -86,7 +86,7 @@ For [[matryoshka-representations]] (post-hoc embedding truncation):
 
 ## Relation to Other Scaling Laws
 
-This work extends the [[scaling-laws]] paradigm from LLM pretraining (Kaplan, Chinchilla, [[concepts/delphi-scaling-laws|InfoLaw]]) to the **retrieval-specific axis** of embedding dimensionality:
+This work extends the [[concepts/scaling-laws]] paradigm from LLM pretraining (Kaplan, Chinchilla, [[concepts/delphi-scaling-laws|InfoLaw]]) to the **retrieval-specific axis** of embedding dimensionality:
 
 | Law | What It Scales | Domain |
 |-----|---------------|--------|

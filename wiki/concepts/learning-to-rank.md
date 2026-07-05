@@ -21,4 +21,4 @@ Stub page for Learning to Rank.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

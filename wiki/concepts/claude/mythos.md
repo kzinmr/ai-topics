@@ -41,7 +41,7 @@ Mythos is now deployed via **Project Glasswing** for defensive security research
 
 ## Availability
 
-Not publicly released. Limited preview access granted to 12 companies under [[concepts/project-glasswing]] for defensive security research.
+Not publicly released. Limited preview access granted to 12 companies under [[entities/project-glasswing]] for defensive security research.
 
 ## Safety Decision
 
@@ -214,7 +214,7 @@ Sources: raw/articles/semafor.com--article-06-27-2026-us-releases-powerful-anthr
 - [[entities/anthropic]]
 - [[concepts/claude/fable-5]] — Mythos-class model released for general use (June 2026)
 - 
-- [[concepts/project-glasswing]]
+- [[entities/project-glasswing]]
 - [[concepts/security-and-governance/ai-safety]]
 
 ## References

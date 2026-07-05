@@ -122,7 +122,7 @@ Alzheimer's has resisted treatment because it is the quintessential complex dise
 
 ## Related Concepts
 
-- [[openai-foundation]] - OpenAI Foundation overview
+- [[entities/openai-foundation]] - OpenAI Foundation overview
 - [[philanthropy]] - AI philanthropy initiatives
 - [[biotech]] - Biotechnology applications
 - [[ai-safety]] - AI safety and alignment

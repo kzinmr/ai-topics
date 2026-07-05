@@ -44,10 +44,10 @@ Spotify Research (Penha et al., RecSys 2025) showed that multi-task bi-encoder S
 
 Semantic IDs are a core component of the **generative retrieval** paradigm, where an LLM directly generates item identifiers rather than performing traditional index-based retrieval. This connects to:
 
-- [[dense-retrieval]] — Semantic IDs encode dense embeddings into discrete tokens
-- [[information-retrieval]] — Generative retrieval is an emerging subfield of IR
-- [[tokenization]] — RQ-KMeans and similar methods are specialized tokenization for item representations
-- [[embeddings]] — The quality of the embedding space directly determines Semantic ID effectiveness
+- [[concepts/dense-retrieval]] — Semantic IDs encode dense embeddings into discrete tokens
+- [[concepts/information-retrieval]] — Generative retrieval is an emerging subfield of IR
+- [[concepts/tokenization]] — RQ-KMeans and similar methods are specialized tokenization for item representations
+- [[entities/embeddings]] — The quality of the embedding space directly determines Semantic ID effectiveness
 
 ## Open Questions
 

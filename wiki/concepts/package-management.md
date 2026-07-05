@@ -21,4 +21,4 @@ Stub page for Package Management.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

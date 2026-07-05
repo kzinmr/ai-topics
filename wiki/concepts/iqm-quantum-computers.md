@@ -21,4 +21,4 @@ Stub page for IQM Quantum Computers.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

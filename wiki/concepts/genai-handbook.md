@@ -164,7 +164,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 | Vector Databases | [[concepts/vector-search]], [[concepts/rag-systems]] | Covered |
 | RAG | [[concepts/rag-systems]], [[concepts/retrieval-augmented-generation]], [[concepts/agentic-rag]] | Covered |
 | Agents / Tool Use | Multiple pages | Most comprehensive section |
-| DSPy | [[concepts/dspy]], [[concepts/dspy-architecture]] | Covered |
+| DSPy | [[entities/dspy]], [[concepts/dspy-architecture]] | Covered |
 | Synthetic Data | [[concepts/synthetic-data]] | Covered |
 | Representation Engineering | — | Missing |
 | Mechanistic Interpretability | [[concepts/mechanistic-interpretability]] | Covered |
@@ -191,7 +191,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 | FlashAttention | [[concepts/flashattention-pytorch-educational]] | Covered |
 | KV Caching | [[concepts/kv-cache]], [[concepts/attention-mechanism-variants]] | Covered |
 | vLLM / PagedAttention | [[concepts/vllm]], [[concepts/serving-llms-vllm]] | Covered |
-| CPU Offloading / llama.cpp | [[concepts/llama-cpp]], [[entities/ollama]] | Covered |
+| CPU Offloading / llama.cpp | [[concepts/llama-cpp]], [[concepts/ollama]] | Covered |
 
 **Resource Evaluation:**
 - 🟢 **Tim Dettmers "LLM.int8()" blog** — Still the best foundational theory for quantization. The concept of emergent features is essential knowledge.

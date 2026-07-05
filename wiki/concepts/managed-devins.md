@@ -21,4 +21,4 @@ Stub page for Managed Devins.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

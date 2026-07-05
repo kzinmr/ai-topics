@@ -53,4 +53,4 @@ BenchFlow provides a Dockerized execution framework for agent evaluation:
 
 ## Connections to Other Wiki Concepts
 
-BenchFlow addresses a critical infrastructure need in [[agent-evaluation]]: the ability to run agent benchmarks reproducibly and at scale. By providing Dockerized execution, it connects to broader themes in [[ai-agents]] research about standardizing how agents are tested. The framework supports the BenchFlow family of benchmarks ([[skillsbench]], [[clawsbench]]) and contributes to the ecosystem of tools needed for rigorous agent evaluation alongside efforts like [[hal-leaderboard]].
+BenchFlow addresses a critical infrastructure need in [[agent-evaluation]]: the ability to run agent benchmarks reproducibly and at scale. By providing Dockerized execution, it connects to broader themes in [[concepts/ai-agents]] research about standardizing how agents are tested. The framework supports the BenchFlow family of benchmarks ([[skillsbench]], [[clawsbench]]) and contributes to the ecosystem of tools needed for rigorous agent evaluation alongside efforts like [[hal-leaderboard]].

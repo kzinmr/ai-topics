@@ -21,4 +21,4 @@ Stub page for Eliezer Yudkowsky.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

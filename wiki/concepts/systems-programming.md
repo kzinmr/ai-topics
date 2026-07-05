@@ -21,4 +21,4 @@ Stub page for Systems Programming.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

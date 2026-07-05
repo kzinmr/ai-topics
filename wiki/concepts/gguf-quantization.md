@@ -21,4 +21,4 @@ Stub page for gguf-quantization.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

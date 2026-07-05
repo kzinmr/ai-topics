@@ -21,4 +21,4 @@ Stub page for Ransomware.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

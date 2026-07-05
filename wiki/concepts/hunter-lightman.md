@@ -21,4 +21,4 @@ Stub page for hunter-lightman.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

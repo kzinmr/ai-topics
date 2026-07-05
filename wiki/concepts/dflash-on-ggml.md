@@ -21,4 +21,4 @@ Stub page for DFlash on ggml.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

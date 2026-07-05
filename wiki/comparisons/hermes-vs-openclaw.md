@@ -89,7 +89,7 @@ Neither approach is wrong. Hermes bets on learning. OpenClaw bets on infrastruct
 
 ## Related
 
-- [[hermes-agent]] — Hermes Agent platform deep-dive
-- [[nous-research]] — Nous Research, creators of Hermes Agent
-- [[gepa]] — GEPA: evolutionary skill optimizer behind Hermes's learning loop
-- [[hermes-vs-openclaw-architecture]] — Deeper architecture comparison (source-code level)
+- [[entities/hermes-agent]] — Hermes Agent platform deep-dive
+- [[entities/nous-research]] — Nous Research, creators of Hermes Agent
+- [[concepts/gepa]] — GEPA: evolutionary skill optimizer behind Hermes's learning loop
+- [[comparisons/hermes-vs-openclaw-architecture]] — Deeper architecture comparison (source-code level)

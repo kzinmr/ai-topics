@@ -43,7 +43,7 @@ SkillsBench uses a structured evaluation framework within the BenchFlow ecosyste
 - SkillsBench reveals significant variation in agents' ability to acquire and apply new skills
 - Current agents show stronger performance on skill application than on skill acquisition from limited examples
 - The benchmark highlights the gap between agents that memorize specific task solutions and those that genuinely learn transferable skills
-- Results inform the development of more capable and adaptable [[ai-agents]] systems
+- Results inform the development of more capable and adaptable [[concepts/ai-agents]] systems
 
 ## Related Benchmarks
 
@@ -54,4 +54,4 @@ SkillsBench uses a structured evaluation framework within the BenchFlow ecosyste
 
 ## Connections to Other Wiki Concepts
 
-SkillsBench addresses a fundamental question in [[agent-evaluation]]: can agents genuinely learn new capabilities, or do they merely apply existing knowledge? This connects to broader [[ai-agents]] research on adaptability and generalization. As part of the BenchFlow ecosystem alongside [[clawsbench]], SkillsBench contributes to a comprehensive view of agent capabilities that feeds into aggregated evaluations like [[hal-leaderboard]].
+SkillsBench addresses a fundamental question in [[agent-evaluation]]: can agents genuinely learn new capabilities, or do they merely apply existing knowledge? This connects to broader [[concepts/ai-agents]] research on adaptability and generalization. As part of the BenchFlow ecosystem alongside [[clawsbench]], SkillsBench contributes to a comprehensive view of agent capabilities that feeds into aggregated evaluations like [[hal-leaderboard]].

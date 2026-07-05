@@ -25,7 +25,7 @@ related:
   - "[[concepts/ornith-self-scaffolding-llm]]"
   - "[[concepts/harness-engineering]]"
   - "[[concepts/inference-time-scaling]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
 ---
 
 # Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith

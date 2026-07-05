@@ -21,4 +21,4 @@ Stub page for JavaScript Runtimes for AI Agents.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

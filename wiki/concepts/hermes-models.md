@@ -21,4 +21,4 @@ Stub page for hermes-models.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

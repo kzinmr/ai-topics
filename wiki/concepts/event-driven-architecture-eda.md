@@ -21,4 +21,4 @@ Stub page for Event-Driven Architecture (EDA).
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

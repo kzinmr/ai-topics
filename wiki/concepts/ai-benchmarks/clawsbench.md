@@ -40,7 +40,7 @@ ClawsBench uses structured evaluation scenarios within the BenchFlow ecosystem:
 
 ## Key Results
 
-- ClawsBench reveals that error recovery is a significant weakness in current [[ai-agents]] systems
+- ClawsBench reveals that error recovery is a significant weakness in current [[concepts/ai-agents]] systems
 - Agents that perform well on forward task completion often struggle with clawback and recovery scenarios
 - The benchmark highlights the importance of resilience as a distinct evaluation dimension in [[agent-evaluation]]
 - Results suggest that agents need better self-monitoring and self-correction capabilities

@@ -21,4 +21,4 @@ Stub page for capybara.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

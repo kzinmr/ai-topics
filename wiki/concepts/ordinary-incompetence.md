@@ -21,4 +21,4 @@ Stub page for ordinary-incompetence.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

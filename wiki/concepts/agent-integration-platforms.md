@@ -15,11 +15,11 @@ sources:
   - "[[raw/articles/merge.dev--blog-composio-vs-arcade--dabe7047]]"
   - "[[raw/articles/merge.dev--blog-composio-alternatives--baee943e]]"
 related:
-  - "[[ai-gateway]]"
-  - "[[mcp]]"
-  - "[[ai-agent-architecture]]"
-  - "[[ai-agent-security]]"
-  - "[[programmatic-tool-calling]]"
+  - "[[concepts/ai-gateway]]"
+  - "[[concepts/mcp]]"
+  - "[[concepts/ai-agent-architecture]]"
+  - "[[concepts/ai-agent-security]]"
+  - "[[concepts/programmatic-tool-calling]]"
 ---
 
 # Agent Integration Platforms
@@ -74,7 +74,7 @@ Integration platforms hold the keys to an organization's SaaS infrastructure. Ke
 
 ## Comparison with AI Gateways
 
-While [[ai-gateway]] routes and controls *LLM API calls*, agent integration platforms handle *action requests to SaaS tools*. They are complementary:
+While [[concepts/ai-gateway]] routes and controls *LLM API calls*, agent integration platforms handle *action requests to SaaS tools*. They are complementary:
 - **Gateway**: "Which model should handle this request, and how much can it cost?"
 - **Integration Platform**: "Which SaaS tool should the agent use, and what can it access?"
 

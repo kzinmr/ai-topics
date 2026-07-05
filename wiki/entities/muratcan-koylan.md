@@ -99,7 +99,7 @@ After discovering a meta-discussion jailbreak at 99Ravens AI, Koylan designed a 
 A comprehensive, open-source collection of Agent Skills for building production-grade AI agent systems. Includes foundational skills (context-fundamentals, context-degradation, context-compression, context-optimization), architectural skills (multi-agent-patterns, memory-systems, tool-design), and operational skills (evaluation, filesystem-context, hosted-agents). Cited in academic research from Peking University alongside Anthropic. Ranked #1 on Replicate Hype.
 
 ### peoplereadmes (2026)
-An open-source framework for creating structured "persona context systems" to study how exceptional technical builders operate. NOT for impersonation. Pipeline: public evidence → source map → project analysis → tacit-knowledge extraction → technical model → prompt system → eval rubric → reusable context package. First persona: [[riley-walz]]. See [[peoplereadmes]] for full concept page.
+An open-source framework for creating structured "persona context systems" to study how exceptional technical builders operate. NOT for impersonation. Pipeline: public evidence → source map → project analysis → tacit-knowledge extraction → technical model → prompt system → eval rubric → reusable context package. First persona: [[entities/riley-walz]]. See [[concepts/peoplereadmes]] for full concept page.
 
 ### Personal Brain OS
 File-based personal operating system for AI agents using progressive disclosure architecture. 80+ files across 11 modules. Uses `CLAUDE.md` → `AGENT.md` → module instructions hierarchy.
@@ -144,8 +144,8 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 
 ## Related Pages
 
-- [[riley-walz]] — First subject of the peoplereadmes framework
-- [[peoplereadmes]] — Koylan's open-source persona context systems framework
+- [[entities/riley-walz]] — First subject of the peoplereadmes framework
+- [[concepts/peoplereadmes]] — Koylan's open-source persona context systems framework
 - [[concepts/context-engineering|Context Engineering]] — His primary discipline
 - [[concepts/agent-skills]] — His open-source skill collection
 - [[concepts/evaluation/llm-as-judge-skills]] — His evaluation skills (part of Agent Skills repo)

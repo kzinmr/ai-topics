@@ -18,7 +18,7 @@ sources: [raw/articles/2026-06-18_anthropic_steering-claude-code-skills-hooks-ru
 
 # Claude Code Steering Methods
 
-Claude Code provides seven distinct methods for instructing and customizing Claude's behavior, each with different characteristics regarding when instructions load, how they persist through sessions, and what authority they carry. Understanding these methods is essential for effective [[claude-code]] customization and [[agentic-engineering]].
+Claude Code provides seven distinct methods for instructing and customizing Claude's behavior, each with different characteristics regarding when instructions load, how they persist through sessions, and what authority they carry. Understanding these methods is essential for effective [[entities/claude-code]] customization and [[concepts/agentic-engineering]].
 
 ## The Seven Methods
 
@@ -170,12 +170,12 @@ The `append-system-prompt` flag adds instructions to Claude's default role witho
 
 ## Related Concepts
 
-- [[claude-code]] — Claude Code as a coding agent
-- [[agentic-engineering]] — Patterns for building agent-based systems
-- [[coding-agents]] — AI agents for software development
-- [[mcp]] — Model Context Protocol for tool integration
+- [[entities/claude-code]] — Claude Code as a coding agent
+- [[concepts/agentic-engineering]] — Patterns for building agent-based systems
+- [[entities/coding-agents]] — AI agents for software development
+- [[concepts/mcp]] — Model Context Protocol for tool integration
 - [[agent-orchestration]] — Coordinating multiple agents
-- [[context-engineering]] — Managing context windows effectively
+- [[concepts/context-engineering]] — Managing context windows effectively
 
 ## Further Reading
 

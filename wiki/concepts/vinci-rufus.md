@@ -21,4 +21,4 @@ Stub page for vinci-rufus.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for Software Minimalism.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

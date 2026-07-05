@@ -42,7 +42,7 @@ Defense in depth is a security architecture principle where multiple layers of d
 
 - [[concepts/security-and-governance/agentic-security]]
 - [[concepts/security-and-governance/agent-sandboxing]]
-- [[capability-based-security]]
+- [[concepts/capability-based-security]]
 - [[concepts/excessive-agency]]
 
 ## Sources

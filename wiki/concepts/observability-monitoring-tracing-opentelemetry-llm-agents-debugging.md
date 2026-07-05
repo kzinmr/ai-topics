@@ -21,4 +21,4 @@ Stub page for observability, monitoring, tracing, opentelemetry, llm, agents, de
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

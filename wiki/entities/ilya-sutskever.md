@@ -169,7 +169,7 @@ This contrasts sharply with OpenAI's product-driven approach and Anthropic's dua
 
 ## Related
 
-- [[geoffrey-hinton]] — PhD advisor; "Godfather of Deep Learning"
+- [[entities/geoffrey-hinton]] — PhD advisor; "Godfather of Deep Learning"
 - [[concepts/alex-krizhevsky]] — AlexNet co-author
 - [[entities/sam-altman]] — OpenAI CEO; former colleague; board crisis adversary
 - [[entities/greg-brockman]] — OpenAI co-founder and President

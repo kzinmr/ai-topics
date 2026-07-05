@@ -21,6 +21,6 @@ Stub page for Overture Maps Foundation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/spec-driven-development]] — Drew Breunig's spec-driven development framework for AI coding agents.
-- [[concepts/dspy]] — DSPy, Drew Breunig's declarative AI programming framework.
+- [[entities/dspy]] — DSPy, Drew Breunig's declarative AI programming framework.

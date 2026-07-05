@@ -45,7 +45,7 @@ Speech AI encompasses the technologies for synthesizing human-like speech from t
 
 ## Related Concepts
 
-- [[multimodal]]
+- [[concepts/multimodal]]
 - [[concepts/gemini]]
 - [[gpt-models]]
 - [[entities/mistral-voxtral-tts]]

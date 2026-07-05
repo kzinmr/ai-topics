@@ -110,7 +110,7 @@ Unlike many AI researchers, Hotz is **skeptical of AI safety concerns**:
 ## Related
 
 - [[entities/john-carmack]] — Also skeptical of mainstream AI approaches; focused on efficiency and practical results
-- [[grant-slatton]] — AI alignment and technocapital; contrasting views on AI governance and open-source
+- [[entities/grant-slatton]] — AI alignment and technocapital; contrasting views on AI governance and open-source
 - [[entities/jayden-milne]] — AI culture and society; Hotz is more infrastructure-focused, Milne more culture-focused
 -  — Open-source ADAS company competing with Tesla's FSD
 -  — Minimalist deep learning framework-  — Rich Sutton's essay that heavily influences Hotz's philosophy

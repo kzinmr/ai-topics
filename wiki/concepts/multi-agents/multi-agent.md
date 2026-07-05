@@ -21,4 +21,4 @@ Stub page for multi-agent.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

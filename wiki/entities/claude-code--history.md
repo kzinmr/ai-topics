@@ -58,4 +58,4 @@ Security researcher Chaofan Shou discovered references to unobfuscated TypeScrip
 - Anthropic's build chain referenced unobfuscated TypeScript source
 
 ### Significance
-This leak fully exposed Claude Code's internal design, significantly impacting understanding of AI coding agent architecture. See [[claude-code--architecture]] for details.
+This leak fully exposed Claude Code's internal design, significantly impacting understanding of AI coding agent architecture. See [[entities/claude-code--architecture]] for details.

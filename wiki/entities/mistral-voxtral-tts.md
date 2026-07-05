@@ -95,7 +95,7 @@ Mistral AI's open-weights text-to-speech model, announced April 2026. Combines a
 
 ## See Also
 
-- [[mistral-ai]] — Mistral AI's language models and agent ecosystem.
+- [[entities/mistral-ai]] — Mistral AI's language models and agent ecosystem.
 - [[text-to-speech]] — Text-to-speech technology and model landscape.
 - [[flow-matching]] — Generative modeling technique used in Voxtral's audio synthesis.
 - [[open-weights]] — Mistral's open-weight model strategy and licensing.

@@ -11,7 +11,7 @@ sources: [raw/articles/2026-06-17_victor207755822_auto-research-skill-open-sourc
 
 # Deli Chen
 
-Deli Chen is a Deep Learning Researcher at [[deepseek]] and the creator of the [[auto-research]] framework. He is known for his work on autonomous AI research agents and reinforcement learning.
+Deli Chen is a Deep Learning Researcher at [[entities/deepseek]] and the creator of the [[concepts/auto-research]] framework. He is known for his work on autonomous AI research agents and reinforcement learning.
 
 ## Background
 
@@ -46,8 +46,8 @@ Chen emphasizes that this is a personal research project, unaffiliated with any 
 
 ## Related Entities
 
-- [[deepseek]]: Current employer
-- [[auto-research]]: The framework he created
+- [[entities/deepseek]]: Current employer
+- [[concepts/auto-research]]: The framework he created
 - [[reinforcement-learning]]: Primary research domain
 - [[self-play]]: Core research technique
 

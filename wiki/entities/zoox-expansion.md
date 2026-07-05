@@ -57,6 +57,6 @@ Amazon subsidiary Zoox executing largest growth phase in history with multi-city
 
 ## See Also
 
-- [[amazon-rivr]] — Amazon's acquisition of stair-climbing delivery robot startup.
-- [[agibot-10000-units]] — Humanoid robotics production milestone.
+- [[entities/amazon-rivr]] — Amazon's acquisition of stair-climbing delivery robot startup.
+- [[entities/agibot-10000-units]] — Humanoid robotics production milestone.
 - [[autonomous-vehicles]] — Self-driving vehicle technology and deployment.

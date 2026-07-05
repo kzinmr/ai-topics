@@ -191,7 +191,7 @@ eve dev                          # boots an interactive agent in your terminal
 - [[concepts/harness-engineering]] — Eve is a harness that provides the execution environment for agents; the "agent = model + harness" philosophy
 - [[entities/vercel-sandbox]] — Vercel Sandbox (microVMs), the isolation layer Eve uses in production
 - [[entities/vercel]] — Vercel Inc., the company behind Eve
-- [[comparisons/agent-harnesses]] — Broader comparison of agent harnesses and frameworks
+- [[concepts/agent-harnesses]] — Broader comparison of agent harnesses and frameworks
 
 ## References
 

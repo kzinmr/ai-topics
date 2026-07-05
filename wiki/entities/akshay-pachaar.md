@@ -43,7 +43,7 @@ description: "AI/ML educator, co-founder of DailyDoseOfDS. 270K+ followers on X.
 
 ### Hermes Agent Masterclass (May 13, 2026)
 
-A comprehensive X Article guide covering everything needed to understand and customize [[hermes-agent]]. Covers self-evolving skills, three-tier memory, [[concepts/gepa|GEPA]] optimization, and running 1 to 10 agents 24/7. Performance:
+A comprehensive X Article guide covering everything needed to understand and customize [[entities/hermes-agent]]. Covers self-evolving skills, three-tier memory, [[concepts/gepa|GEPA]] optimization, and running 1 to 10 agents 24/7. Performance:
 - **2,691 likes**, **9,572 bookmarks**, **308 retweets**
 - **1.3M impressions**, 49 replies
 - Practical walkthrough: install, Telegram integration, multi-agent profiles (programmer/designer/researcher), cron scheduling, Claude Code integration
@@ -72,8 +72,8 @@ Runs [@akshay_pachaar](https://www.youtube.com/@akshay_pachaar) with tutorials o
 
 ## Related Pages
 
-- [[hermes-agent]] — Subject of his 1.3M-impression masterclass (May 2026)
-- [[concepts/nous-research]] — Creators of Hermes Agent, which features prominently in his content
+- [[entities/hermes-agent]] — Subject of his 1.3M-impression masterclass (May 2026)
+- [[entities/nous-research]] — Creators of Hermes Agent, which features prominently in his content
 - [[concepts/gepa]] — Genetic-Pareto Prompt Evolution, covered in his Hermes masterclass as offline skill optimization
 - [[concepts/harness-engineering]] — The discipline he helped popularize through "The Anatomy of an Agent Harness"
 - [[entities/addy-osmani]] — Fellow AI/ML educator who published the definitive Agent Harness Engineering framework

@@ -32,7 +32,7 @@ sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-serv
 
 ## When to Use
 
-- AI agents need persistent, versioned state (watchlists, memories, [[markdown-based-skills]])
+- AI agents need persistent, versioned state (watchlists, memories, [[concepts/markdown-based-skills]])
 - Multi-tenant systems where data isolation is critical
 - Workflows where human readability and debugging matter
 - Situations where the cost of a database exceeds the value of the data
@@ -41,7 +41,7 @@ sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-serv
 
 - [[concepts/coding-agents/background-coding-agent]] — uses Modal snapshots for similar persistence goals
 - [[concepts/modal-sandboxes]] — cloud execution environments that pair well with S3-first storage
-- [[markdown-based-skills]] — skills stored as .md files in S3
+- [[concepts/markdown-based-skills]] — skills stored as .md files in S3
 
 ## Sources
 

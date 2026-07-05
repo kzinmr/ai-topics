@@ -21,4 +21,4 @@ Stub page for observability, monitoring, ai, opentelemetry, python, production.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

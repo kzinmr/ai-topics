@@ -21,4 +21,4 @@ Stub page for Nicholas Felton.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -44,7 +44,7 @@ Every is a media and software company founded in 2020 by [[entities/dan-shipper|
 | **Sparkle** | Automatic file organization (Mac) |
 | **Monologue** | Voice dictation (3x faster) |
 | **Proof** | Collaborative editor for humans and AI agents |
-| **Plus One** | Hosted [[openclaw]] agent in Slack (one-click setup) |
+| **Plus One** | Hosted [[entities/openclaw]] agent in Slack (one-click setup) |
 
 ### Content
 - **Newsletter**: Daily technology coverage
@@ -153,5 +153,5 @@ Dan initially believed in personal agents for every employee (the "Golden Compas
 - [[concepts/harness-engineering/agent-native-architecture]] — Design principles
 - [[concepts/after-automation]] — Automation paradox analysis
 - [[concepts/human-sandwich]] — Human-AI collaboration pattern
-- [[openclaw]] — Underlying agent platform for Plus One
+- [[entities/openclaw]] — Underlying agent platform for Plus One
 - [[concepts/ai-slop]] — "Visible sameness" concept coined here

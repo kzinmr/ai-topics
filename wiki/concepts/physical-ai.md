@@ -72,7 +72,7 @@ Physical AI extends [[concepts/agentic-engineering]] into the real world. The sa
 
 ## Related Pages
 
-- [[applied-intuition]] — Company building Physical AI infrastructure
+- [[entities/applied-intuition]] — Company building Physical AI infrastructure
 - [[concepts/agentic-engineering]] — Developer patterns for autonomous agents
 - [[concepts/harness-engineering]] — Constraining and guiding agent behavior
 - [[concepts/multi-agents/agent-team-swarm]] — Multi-agent coordination (relevant for fleet management)

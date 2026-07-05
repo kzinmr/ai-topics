@@ -27,7 +27,7 @@ related:
   - "[[concepts/context-engineering|Context Engineering]]"
   - "[[concepts/test-time-scaling]]"
   - "[[concepts/rlm]]"
-  - "[[concepts/dspy]]"
+  - "[[entities/dspy]]"
   - "[[entities/yoonho-lee]]"
 ---
 
@@ -185,6 +185,6 @@ Lee identifies five directions for rigorous text optimization research:
 - [[concepts/context-engineering|Context Engineering]] — Curating optimal context window content
 - [[concepts/test-time-scaling]] — The inference-time axis text optimization mirrors at update time
 - [[concepts/rlm]] — Recursive language models as text-space context management
-- [[concepts/dspy]] — Declarative text-layer programming and optimization
+- [[entities/dspy]] — Declarative text-layer programming and optimization
 - [[concepts/gepa]] — Generalized Experience-Prompted Adaptation
 - [[entities/yoonho-lee]] — Primary advocate and Meta-Harness first author

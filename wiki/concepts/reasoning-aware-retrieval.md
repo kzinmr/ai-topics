@@ -195,4 +195,4 @@ The architecture matters more than parameter count when the model is trained on 
 - [[concepts/q2q-reformulation]] — Predecessor technique using reasoning traces for query reformulation
 - [[concepts/hyde]] — Hypothetical document embeddings; AgentIR provides a grounded alternative
 - [[concepts/bm25]] — Baseline retriever; AgentIR shows how far learned retrievers can go with the right signal
-- [[concepts/embeddings]] — Bi-encoder embedding models; AgentIR-4B is a fine-tuned Qwen3-Embedding-4B
+- [[entities/embeddings]] — Bi-encoder embedding models; AgentIR-4B is a fine-tuned Qwen3-Embedding-4B

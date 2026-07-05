@@ -675,7 +675,7 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 
 ## Related Concepts
 
-- **[[concepts/dspy]]** — Declarative LM programming framework; ships RLM module
+- **[[entities/dspy]]** — Declarative LM programming framework; ships RLM module
 - **[[concepts/harness-engineering]]** — Evaluation and constraint systems around LLMs; RLM's recursive decomposition pattern aligns with harness engineering's "build-verify loop" philosophy
 - **[[concepts/dspy-rlm]]** — DSPy.RLM implementation with full analysis of PTC relationship, 2-axis framing (function vs data), merge/split symmetry, and Tool-Augmented RLM design
 - **[[concepts/tool-use-examples]]** — Semantic Conventions Beyond Schema. RLM's first iteration data sampling is the runtime analogue: observe examples before acting, build internal "semantic layer" from data itself.

@@ -21,4 +21,4 @@ Stub page for Web Security.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

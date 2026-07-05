@@ -21,4 +21,4 @@ Stub page for Claude 4.7 Tokenizer Change.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

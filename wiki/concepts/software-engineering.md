@@ -21,4 +21,4 @@ Stub page for Software Engineering.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

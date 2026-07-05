@@ -21,4 +21,4 @@ Stub page for crawl-2026-04-22-agentic-web-ricmac.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

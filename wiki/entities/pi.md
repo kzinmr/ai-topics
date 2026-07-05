@@ -28,7 +28,7 @@ related:
   - "[[entities/opencode]]"
   - "[[entities/mario-zechner]]"
   - "[[entities/armin-ronacher]]"
-  - "[[comparisons/agent-harnesses]]"
+  - "[[concepts/agent-harnesses]]"
   - "[[concepts/harness-engineering]]"
 ---
 

@@ -462,8 +462,8 @@ substack domain articles and content.
 
 ## See Also
 
-- [[gergely-orosz]] — The Pragmatic Engineer newsletter on Substack.
-- [[alex-volkov]] — AI commentator and newsletter author.
+- [[entities/gergely-orosz]] — The Pragmatic Engineer newsletter on Substack.
+- [[entities/alex-volkov]] — AI commentator and newsletter author.
 - [[newsletter]] — Tech newsletter ecosystem and publishing platforms.
 
 - email.mg-d1.substack.com--c-ejxskb-o3caqxj8goluaobalikif7jus-qx96aw4scs5ph3k-5or0mwzo9--fbd1914f

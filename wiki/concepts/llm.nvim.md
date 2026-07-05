@@ -21,4 +21,4 @@ Stub page for llm.nvim.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for jane-jensen.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

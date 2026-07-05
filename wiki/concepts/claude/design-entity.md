@@ -75,7 +75,7 @@ Claude Design is powered by Claude Opus 4.7's vision model, which supports image
 - [[concepts/claude-opus-4-7]] — Vision model powering Claude Design
 - [[entities/claude-code]] — Handoff integration for design-to-code
 - [[entities/anthropic]] — Parent company
-- [[anthropic-labs]] — Experimental product division
+- [[entities/anthropic-labs]] — Experimental product division
 - [[concepts/canva]] — Integration partner
 - [[concepts/vision-models]] — Vision capability overview
 

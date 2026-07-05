@@ -276,14 +276,14 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 
 ## Related People
 
-- **[[karpathy]]** — Shared interest in AI-assisted development; Ryan's work represents the enterprise-scale realization of Karpathy's vision
-- **[[simon-willison]]** — Overlapping focus on agentic engineering patterns and practical AI workflows
-- **[[jason-liu]]** — Complementary perspectives: Jason on structured outputs, Ryan on agent orchestration
-- **[[boris-cherny]]** — Both work on agent workflow optimization at scale; Ryan's enterprise focus vs. Boris's CLI focus
+- **[[concepts/karpathy]]** — Shared interest in AI-assisted development; Ryan's work represents the enterprise-scale realization of Karpathy's vision
+- **[[entities/simon-willison]]** — Overlapping focus on agentic engineering patterns and practical AI workflows
+- **[[entities/jason-liu]]** — Complementary perspectives: Jason on structured outputs, Ryan on agent orchestration
+- **[[entities/boris-cherny]]** — Both work on agent workflow optimization at scale; Ryan's enterprise focus vs. Boris's CLI focus
 
 ## Related Concepts
 
-- **[[harness-engineering]]** — The systematic practice of building execution environments for AI coding agents, as pioneered by Ryan
+- **[[concepts/harness-engineering]]** — The systematic practice of building execution environments for AI coding agents, as pioneered by Ryan
 - **[[concepts/multi-agents/agent-team-swarm]]** — Symphony implements the agent team/swarm pattern (Level 4: The Engineering Team)
 - **[[concepts/multi-agents/managed-devins]]** — Comparison between Cognition's conditional subagent spawning and Symphony's approach
 - **[[openai-symphony]]** — Details of OpenAI Symphony (Elixir implementation, SPEC.md)

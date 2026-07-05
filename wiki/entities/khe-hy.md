@@ -28,17 +28,17 @@ Khe Hy is a writer and thinker focused on organizational AI adoption strategies.
 5. Shift from "we have AI tools" to "we use AI to think"
 
 ## Tools Endorsed
-- [[openclaw]] (AI CEO/Chief of Staff)
-- [[karpathy]]'s WikiLLM
+- [[entities/openclaw]] (AI CEO/Chief of Staff)
+- [[concepts/karpathy]]'s WikiLLM
 - [[entities/claude-code]] and Claude Cowork
 
 ## Connection to Broader Trends
 
-Khe Hy's framework connects to [[concepts/reflexive-ai]] (Shopify's approach) and [[concepts/experience-is-a-tax]] — both address organizational resistance to AI adoption.
+Khe Hy's framework connects to [[entities/reflexive-ai]] (Shopify's approach) and [[concepts/experience-is-a-tax]] — both address organizational resistance to AI adoption.
 
 ## Related
 
-- [[concepts/reflexive-ai]]
+- [[entities/reflexive-ai]]
 - [[concepts/experience-is-a-tax]]
-- [[openclaw]]
+- [[entities/openclaw]]
 - [[entities/claude-code]]

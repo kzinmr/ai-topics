@@ -21,4 +21,4 @@ Stub page for Application Compatibility.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

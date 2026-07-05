@@ -21,7 +21,7 @@ Stub page for RLHF (Reinforcement Learning from Human Feedback).
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
 
 ## Vector Policy Optimization (VPO)
 

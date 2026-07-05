@@ -21,4 +21,4 @@ Stub page for Ollama — Local LLM Runner.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

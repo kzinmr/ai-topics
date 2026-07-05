@@ -21,4 +21,4 @@ Stub page for Windows 95.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for logan-kilpatrick.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

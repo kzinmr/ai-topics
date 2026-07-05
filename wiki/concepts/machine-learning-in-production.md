@@ -21,4 +21,4 @@ Stub page for machine-learning-in-production.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -84,7 +84,7 @@ The attack vector isn't limited to test engines. Any dependency-produced text th
 jqwik is the first case where protestware text is aimed at a program rather than a person.
 
 ## Related Pages
-- [[prompt-injection]] — The underlying attack technique
+- [[concepts/prompt-injection]] — The underlying attack technique
 - [[agent-security]] — Broader AI agent security concerns
 - [[supply-chain-security]] — Traditional package supply chain risks
 - [[concepts/coding-agents/coding-agents]] — AI coding assistants as targets

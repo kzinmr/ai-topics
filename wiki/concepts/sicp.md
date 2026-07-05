@@ -21,4 +21,4 @@ Stub page for SICP.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

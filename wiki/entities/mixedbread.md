@@ -44,6 +44,6 @@ Mixedbread's research centers on understanding and improving information retriev
 
 ## Related
 
-- [[concepts/late-interaction]] — Late interaction retrieval paradigm that Mixedbread's models leverage
+- [[entities/late-interaction]] — Late interaction retrieval paradigm that Mixedbread's models leverage
 - [[entities/antoine-chaffin]] — LightOn researcher who analyzes Mixedbread's work from a retrieval theory perspective
 - [[entities/ben-clavie]] — Research lead at Mixedbread

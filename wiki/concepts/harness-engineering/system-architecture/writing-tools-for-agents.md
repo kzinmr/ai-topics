@@ -22,7 +22,7 @@ related:
   - "[[concepts/building-effective-agents]]"
   - "[[concepts/harness-engineering/system-architecture/advanced-tool-use]]"
   - "[[concepts/harness-engineering/system-architecture/code-execution-with-mcp]]"
-  - "[[comparisons/evals-skills]]"
+  - "[[concepts/evals-skills]]"
 sources:
   - "https://www.anthropic.com/engineering/writing-tools-for-agents"
   - "raw/articles/2026-05-08_anthropic-engineering_writing-tools-for-agents.md"
@@ -156,4 +156,4 @@ enum ResponseFormat {
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced tool use
 - [[concepts/building-effective-agents]] — Fundamentals of agent building
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Code execution with MCP
-- [[comparisons/evals-skills]] — Evaluation skills
+- [[concepts/evals-skills]] — Evaluation skills

@@ -92,4 +92,4 @@ It differs from [[concepts/prompt-caching]] (API-provider-side caching) in that 
 - [[concepts/prompt-caching]] — API-level prompt caching
 - [[concepts/context-engineering|Context Engineering]] — Upper-level context design concept
 - [[concepts/llm-inference]] — LLM inference fundamentals
-- [[nvidia]] — Dynamo's developer
+- [[entities/nvidia]] — Dynamo's developer

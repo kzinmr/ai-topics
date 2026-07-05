@@ -21,4 +21,4 @@ Stub page for dingllm.nvim.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

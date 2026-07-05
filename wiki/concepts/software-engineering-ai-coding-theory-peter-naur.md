@@ -21,4 +21,4 @@ Stub page for software-engineering, ai-coding, theory, peter-naur.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

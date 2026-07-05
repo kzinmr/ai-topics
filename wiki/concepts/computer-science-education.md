@@ -21,4 +21,4 @@ Stub page for Computer Science Education.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

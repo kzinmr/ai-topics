@@ -61,7 +61,7 @@ Telegram's bot platform has become a significant deployment surface for AI syste
 
 ## Relationships
 
-- [[concepts/telegram-managed-bots]] — No-code bot creation system (Bot API 9.6)
+- [[entities/telegram-managed-bots]] — No-code bot creation system (Bot API 9.6)
 - [[concepts/telegram-bots]] — Programmatic interfaces within Telegram for AI-powered services
 - [[concepts/managed-agents]] — Anthropic managed agent platform
 - [[entities/claude-code]] — Agentic coding platforms

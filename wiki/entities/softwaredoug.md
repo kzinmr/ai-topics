@@ -129,5 +129,5 @@ From the transcripts, Turnbull's teaching approach is characterized by:
 ## See Also
 
 - [[concepts/evaluation/ndcg]] — Detailed concept page on NDCG and search evaluation metrics
-- [[autoresearch-bm25-msmarco]] — Case study of autoresearch applied to BM25 optimization
+- [[concepts/autoresearch-bm25-msmarco]] — Case study of autoresearch applied to BM25 optimization
 - [Doug Turnbull's Blog](http://softwaredoug.com) — Regular posts on search, BM25, RAG, and agents

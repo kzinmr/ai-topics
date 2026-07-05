@@ -22,4 +22,4 @@ Stub page for Prompt Engineering.
 ## Related Pages
 - [[concepts/prompt-design]]
 
-- [[concepts/_index]]
+- [[entities/_index]]

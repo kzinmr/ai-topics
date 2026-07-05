@@ -111,7 +111,7 @@ Rather than making TTS training-free, the complementary approach is to **train m
 | **InT** (Self-Proposed Interventions) | Step-level credit assignment from failed traces; +10pts | ICLR'26 |
 | **TTI** (Test-Time Interaction) | Interaction-scaling > thought-scaling for agents | NeurIPS'25 Best Paper |
 
-→ See [[test-time-scaling]] for full treatment of these methods.
+→ See [[concepts/test-time-scaling]] for full treatment of these methods.
 
 ## Relationship to Other Paradigms
 
@@ -147,11 +147,11 @@ Rather than making TTS training-free, the complementary approach is to **train m
 
 ## Related Pages
 
-- [[test-time-scaling]] — The broader TTS landscape (CoT, self-consistency, beam search, RL-trained reasoning)
+- [[concepts/test-time-scaling]] — The broader TTS landscape (CoT, self-consistency, beam search, RL-trained reasoning)
 - [[reinforcement-learning]] — RL fundamentals (PPO, GRPO, reward design)
 - [[grpo]] — Group Relative Policy Optimization
 - [[rlvr]] — RL with Verifiable Rewards
-- [[self-evolving-agents]] — Reflexion, self-play, self-distillation
+- [[concepts/self-evolving-agents]] — Reflexion, self-play, self-distillation
 - [[on-policy-distillation]] — SDFT, SDPO as the "other direction"
-- [[chain-of-thought]] — The substrate for all TTS methods
+- [[concepts/chain-of-thought]] — The substrate for all TTS methods
 - [[reasoning]] — AI reasoning capabilities

@@ -101,9 +101,9 @@ Collaborating with **NVIDIA, vLLM, SGLang** to make `renderers` a reference stan
 
 ## Related Pages
 
-- [[prime-intellect]] — company behind renderers
+- [[entities/prime-intellect]] — company behind renderers
 - [[verifiers-rl]] — verifiable RL training using renderers
 - [[reinforcement-learning]]
 - [[grpo]]
-- [[trl-transformer-reinforcement-learning]]
+- [[concepts/trl-transformer-reinforcement-learning]]
 - [[concepts/harness-engineering/agent-harness]] — harness boundary interaction

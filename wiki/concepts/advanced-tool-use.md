@@ -110,4 +110,4 @@ See [[concepts/tool-search-tool]] for full treatment.
 - [[concepts/code-execution-with-mcp]] — Code execution with MCP
 - [[concepts/mcp]] — Model Context Protocol
 - [[concepts/context-engineering|Context Engineering]] — Context engineering for AI agents
-- [[tool-use-tax]] — Tool calling performance overhead
+- [[concepts/tool-use-tax]] — Tool calling performance overhead

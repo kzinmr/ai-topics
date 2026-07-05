@@ -35,5 +35,5 @@ The site serves as a curated catalog of products impacted by AI advancement, pro
 ## Related Concepts
 
 - [[ai-impact]] -- Broader implications of AI on products and markets
-- [[generative-ai]] -- The technology driving the disruption
-- [[ai-economics]] -- Economic effects of AI on existing products
+- [[concepts/generative-ai]] -- The technology driving the disruption
+- [[concepts/ai-economics]] -- Economic effects of AI on existing products

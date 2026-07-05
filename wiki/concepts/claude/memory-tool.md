@@ -66,7 +66,7 @@ The fact that Cognition is copying suggests:
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/memory-systems-design-patterns]]
 - [[concepts/knowledge-graph-memory-agents]]

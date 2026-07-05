@@ -21,4 +21,4 @@ Stub page for performance-optimization.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

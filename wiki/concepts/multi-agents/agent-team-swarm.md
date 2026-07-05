@@ -59,7 +59,7 @@ sources: [
 
 - **Architecture**: Full autonomous development pipeline
 - **Philosophy**: "Dark Factory" — eliminates human review entirely
-- **Details**: See [[dark-factory-software-factory]]
+- **Details**: See [[concepts/dark-factory-software-factory]]
 
 ## Orchestration Patterns
 
@@ -99,9 +99,9 @@ The emergence of multi-agent systems creates new economic patterns:
 - [[concepts/openai/symphony]] — OpenAI's orchestration platform
 - [[concepts/anthropic/managed-agents]] — Anthropic's enterprise agent platform
 - [[concepts/harness-engineering]] — Safety and constraint patterns for agents
-- [[dark-factory-software-factory]] — Fully autonomous development
+- [[concepts/dark-factory-software-factory]] — Fully autonomous development
 - [[concepts/agentic-engineering]] — Developer patterns for working with agents
-- [[physical-ai]] — Physical AI systems also use orchestration patterns
+- [[concepts/physical-ai]] — Physical AI systems also use orchestration patterns
 
 ## Sources
 

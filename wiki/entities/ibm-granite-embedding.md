@@ -85,8 +85,8 @@ embeddings = model.encode(["query"], truncate_dim=256)
 
 ## See Also
 
-- [[embeddings]] — Embedding models and vector representations
-- [[modernbert]] — The ModernBERT architecture used by Granite Embeddings
+- [[entities/embeddings]] — Embedding models and vector representations
+- [[concepts/modernbert]] — The ModernBERT architecture used by Granite Embeddings
 - [[matryoshka-representation-learning]] — MRL for flexible embedding dimensions
 - [[ibm-granite]] — IBM's Granite LLM family
 - [[mt]] — Machine Translation and multilingual AI

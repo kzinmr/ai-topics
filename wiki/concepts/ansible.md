@@ -21,4 +21,4 @@ Stub page for Ansible.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

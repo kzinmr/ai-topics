@@ -21,4 +21,4 @@ Stub page for Tinygrad.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

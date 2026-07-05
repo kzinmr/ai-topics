@@ -86,7 +86,7 @@ Agents are defined with human-readable attributes:
 
 ### 3. Human-in-the-Loop Support
 
-CrewAI supports HITL workflows where human approval is required at key decision points. This integrates with its broader [[human-in-the-loop]] safety paradigm, allowing humans to review agent outputs, approve task continuation, or intervene when agents encounter ambiguous situations.
+CrewAI supports HITL workflows where human approval is required at key decision points. This integrates with its broader [[concepts/human-in-the-loop]] safety paradigm, allowing humans to review agent outputs, approve task continuation, or intervene when agents encounter ambiguous situations.
 
 ### 4. MCP (Model Context Protocol) Integration
 
@@ -143,13 +143,13 @@ As of 2026, AutoGen has transitioned to community maintenance (AG2 fork) with sl
 
 ## Ecosystem Position
 
-As of mid-2026, CrewAI occupies a distinct niche in the [[ai-agent-architecture]] landscape:
+As of mid-2026, CrewAI occupies a distinct niche in the [[concepts/ai-agent-architecture]] landscape:
 
 - **High GitHub stars** (~20,000+), indicating strong community adoption
 - **Rapid growth** in enterprise use cases for automated workflows
 - **Featured** in Harrison Chase's living comparison spreadsheet alongside 12+ competing frameworks
 - **Strong positioning** as the "easy button" for multi-agent team setup, contrasted with LangGraph's explicit control and AutoGen's conversational approach
-- **Complementary** to [[managed-agents]] architectures — CrewAI crews can run as managed agents on platforms like Anthropic's hosted services
+- **Complementary** to [[concepts/managed-agents]] architectures — CrewAI crews can run as managed agents on platforms like Anthropic's hosted services
 
 CrewAI's role-based paradigm makes it particularly popular for:
 - Content creation pipelines (researcher → writer → editor)
@@ -161,12 +161,12 @@ CrewAI's role-based paradigm makes it particularly popular for:
 
 ## Related Concepts
 
-- [[langgraph]] — Low-level graph-based orchestration by LangChain
+- [[concepts/langgraph]] — Low-level graph-based orchestration by LangChain
 - [[entities/langchain]] — Parent ecosystem of LangGraph
-- [[managed-agents]] — Hosted agent architecture that can run CrewAI crews
-- [[human-in-the-loop]] — Safety pattern supported by CrewAI
+- [[concepts/managed-agents]] — Hosted agent architecture that can run CrewAI crews
+- [[concepts/human-in-the-loop]] — Safety pattern supported by CrewAI
 - [[comparisons/agent-orchestration-frameworks]] — Broader framework comparison
-- [[ai-agent-architecture]] — General agent architecture concepts
+- [[concepts/ai-agent-architecture]] — General agent architecture concepts
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Multi-agent orchestration decision guide
 
 ---

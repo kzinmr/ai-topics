@@ -110,7 +110,7 @@ A 3B model achieving frontier reasoning opens the door to [[entities/deepseek|on
 
 - [[concepts/reasoning-models]] — Broader reasoning model landscape
 - [[concepts/reasoning-compression]] — Theory of reasoning process compression
-- [[concepts/mai-thinking-1]] — Microsoft's small reasoning model via hill-climbing RL
+- [[entities/mai-thinking-1]] — Microsoft's small reasoning model via hill-climbing RL
 - [[concepts/post-training/grpo]] — Group Relative Policy Optimization training algorithm
 - [[concepts/test-time-scaling]] — Inference-time compute scaling for reasoning
 - [[concepts/model-distillation]] — Knowledge distillation techniques

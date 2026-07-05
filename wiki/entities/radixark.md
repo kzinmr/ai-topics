@@ -64,7 +64,7 @@ The broader inference infrastructure space is seeing 60x improvements in model c
 
 ## Related Concepts
 
-- [[concepts/sglang]] — Open-source inference framework
+- [[entities/sglang]] — Open-source inference framework
 - [[entities/sambanova]] — Leading raw inference speed (435 tok/s)
 
 ## Sources

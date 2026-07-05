@@ -68,7 +68,7 @@ ESM may invoke beyond the configured maximum concurrency. Even if Lambda concurr
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/ecs-fargate-scaling]]
 - [[concepts/scaling-without-slop]]
 - [[concepts/lambda-monolith-lambdalith]]

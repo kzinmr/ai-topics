@@ -91,5 +91,5 @@ As of December 2025, Anthropic recommends using Extended Thinking over the think
 
 - [[entities/claude-code]] — Claude Code agent harness
 - [[concepts/agent-skills]] — Equipping agents with skills
-- [[advanced-tool-use]] — Advanced tool use patterns
+- [[concepts/advanced-tool-use]] — Advanced tool use patterns
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses

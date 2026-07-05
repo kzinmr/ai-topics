@@ -143,7 +143,7 @@ The streaming tokens and tools capabilities enable Dynamo to serve as a producti
 - [[concepts/inference]]
 - [[concepts/context-engineering|Context Engineering]]
 - [[concepts/kv-aware-routing]]
-- [[nvidia]]
+- [[entities/nvidia]]
 - [First Dynamo post: Full-Stack Optimizations for Agentic Inference](https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo/)
 - [Streaming Tokens and Tools article](https://developer.nvidia.com/blog/streaming-tokens-and-tools-multi-turn-agentic-harness-support-in-nvidia-dynamo/)
 

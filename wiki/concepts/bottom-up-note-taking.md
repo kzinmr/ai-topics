@@ -21,4 +21,4 @@ Stub page for bottom-up-note-taking.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

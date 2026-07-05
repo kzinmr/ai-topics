@@ -57,7 +57,7 @@ This complements [[concepts/nvidia-vera-rubin]] by demonstrating NVIDIA's focus 
 
 ### GPU Hardware
 - Foundation for local AI inference and training
-- Connects to [[inference-hardware]] and [[dgx-spark-local-llm-server]]
+- Connects to [[concepts/inference-hardware]] and [[concepts/dgx-spark-local-llm-server]]
 
 ## Recent Activity (April—May 2026)
 - Published Dynamo architecture documentation for agentic inference
@@ -151,5 +151,5 @@ NVIDIA and **Microsoft** announced **RTX Spark**, a Windows PC AI agent platform
 - [[concepts/nvidia-dynamo]]
 - [[concepts/kv-aware-routing]]
 - [[concepts/inference]]
-- [[inference-hardware]]
-- [[dgx-spark-local-llm-server]]
+- [[concepts/inference-hardware]]
+- [[concepts/dgx-spark-local-llm-server]]

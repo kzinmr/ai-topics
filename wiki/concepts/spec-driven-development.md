@@ -21,6 +21,6 @@ Stub page for Spec-Driven Development.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
 - [[concepts/overture-maps-foundation]] — Open-source geospatial data foundation coordinated by Drew Breunig.
-- [[concepts/dspy]] — DSPy framework used in conjunction with spec-driven development patterns.
+- [[entities/dspy]] — DSPy framework used in conjunction with spec-driven development patterns.

@@ -15,7 +15,7 @@ A technique developed by Anthropic to convert model activations into human-reada
 NLA translates internal model activations into natural-language explanations using a second model trained to reconstruct the original activation from the textual explanation. The round trip (activation → text → reconstructed activation) is scored by how closely the reconstruction matches the original.
 
 ## Significance
-This is one of the most important [[interpretability]] advances in years. Unlike previous techniques that produced abstract visualizations, NLA produces **text-based explanations that can be inspected, debated, and acted on**. It bridges the gap between [[mechanistic-interpretability]] research and practical safety engineering.
+This is one of the most important [[concepts/interpretability]] advances in years. Unlike previous techniques that produced abstract visualizations, NLA produces **text-based explanations that can be inspected, debated, and acted on**. It bridges the gap between [[concepts/mechanistic-interpretability]] research and practical safety engineering.
 
 ## Concrete Applications (from Anthropic)
 - **Safety testing**: NLA revealed Claude believed it was being tested more often than it said aloud

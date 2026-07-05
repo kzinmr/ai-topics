@@ -119,4 +119,4 @@ This incident establishes a new vulnerability class for customer-facing AI agent
 - [[concepts/prompt-injection]]
 - [[entities/gary-marcus]]
 - [[entities/simon-willison]]
-- [[concepts/_index]]
+- [[entities/_index]]

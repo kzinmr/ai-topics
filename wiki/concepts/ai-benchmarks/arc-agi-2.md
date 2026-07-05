@@ -68,4 +68,4 @@ Håvard Tveit Ihle's WeirdML benchmark received a v2 update, adding a new dimens
 
 ## See Also
 
-- [[concepts/_index]]
+- [[entities/_index]]

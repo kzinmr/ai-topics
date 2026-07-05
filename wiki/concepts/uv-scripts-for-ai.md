@@ -76,4 +76,4 @@ On Jobs, the agent runs in a sandbox: throwaway disk, access limited to the toke
 - [[concepts/huggingface-jobs]] — HF Jobs managed GPU infrastructure
 - [[concepts/polars-hf]] — Companion IO plugin for HF Buckets
 - [[entities/daniel-van-strien]] — Author and ML Librarian at Hugging Face
-- [[concepts/_index]]
+- [[entities/_index]]

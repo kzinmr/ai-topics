@@ -21,4 +21,4 @@ Stub page for ai-economics, bubble, venture-capital, subprime.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

@@ -21,4 +21,4 @@ Stub page for serialization, structured-output, schema-generation, python, pydan
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

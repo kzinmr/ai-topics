@@ -269,16 +269,16 @@ In a widely-engaged X thread following publication ([source](https://x.com/bclav
 - **[[concepts/jeremy-howard]]** — Answer.AI co-founder. Clavié joined in 2024. Heavily influenced by fast.ai philosophy
 - **[[entities/omar-khattab]]** — ColBERT/DSPy inventor (Stanford). Direct inspiration for Clavié's ColBERT research
 - **[[concepts/benjamin-warner]]** — ModernBERT co-lead, fastkmeans co-author
-- **[[concepts/antoine-chaffin]]** — ModernBERT co-lead, PyLate developer
+- **[[entities/antoine-chaffin]]** — ModernBERT co-lead, PyLate developer
 - **[[concepts/makoto-kato]]** — Clavié's PhD supervisor (NII Tokyo/Kasys lab)
 - **[[concepts/griffin-adams]]** — ColBERT token pooling co-author
 - **[[concepts/rikiya-takehi]]** — mxbai-edge-colbert-v0 first author (Waseda Univ/Mixedbread intern)
 - **[[concepts/xianming-li]]** — Mixedbread/Wholembed v3 co-author, ECIR 2026 LIR Workshop co-organizer
-- **[[tom-aarsen]]** — Hugging Face, PyLate contributor, ECIR 2026 LIR Workshop co-organizer
+- **[[entities/tom-aarsen]]** — Hugging Face, PyLate contributor, ECIR 2026 LIR Workshop co-organizer
 
 ## Related Concepts
 
-[[concepts/colbert]], [[concepts/ragatouille]], [[concepts/modernbert]], [[concepts/information-retrieval]], [[late-interaction]], [[concepts/token-pooling]], [[concepts/synthetic-data]], [[concepts/rag-not-dead-series]], [[concepts/modern-retrieval-toolkit]], [[concepts/latent-terms]],
+[[concepts/colbert]], [[concepts/ragatouille]], [[concepts/modernbert]], [[concepts/information-retrieval]], [[entities/late-interaction]], [[concepts/token-pooling]], [[concepts/synthetic-data]], [[concepts/rag-not-dead-series]], [[concepts/modern-retrieval-toolkit]], [[concepts/latent-terms]],
 
 ## Sources
 

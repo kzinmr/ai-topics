@@ -21,4 +21,4 @@ Stub page for LLM Evaluation.
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]

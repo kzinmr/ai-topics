@@ -27,4 +27,4 @@ Stub page for Agent Sandboxing (comparison perspective).
 
 - [[concepts/security-and-governance/agent-sandboxing]] — Main agent sandboxing concept page
 - [[concepts/security-and-governance/agent-sandboxing-patterns]] — Browser Use's production sandboxing patterns
-- [[concepts/_index]]
+- [[entities/_index]]

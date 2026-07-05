@@ -25,4 +25,4 @@ Houda Nait El Barj's June 2026 Noema essay "How AI Will Change Us" examines the 
 
 ## Related Pages
 
-- [[concepts/_index]]
+- [[entities/_index]]
