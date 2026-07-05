@@ -3,53 +3,71 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
 ## Entities (Updated)
-- [[entities/0xjeff]] — 0xJeff — AI researcher and writer
+
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
+- [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
+- [[entities/adam-mastroianni]] — Adam Mastroianni — Experimental psychologist and writer; author of Experimental History substack
 - [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
 - [[entities/adept]] — Adept AI — AI agent startup building general-purpose agents
 - [[entities/agno]] — Agno — Open-source agent platform SDK and runtime (AgentOS); model/framework/cloud agnostic; multi-user sessions, RBAC, tracing (June 29)
+- [[entities/alec-radford]] — Alec Radford — OpenAI researcher; co-creator of CLIP, GPT-2, and DALL·E; key figure in scaling multimodal AI
 - [[entities/alex-banks]] — Alex Banks; enriched with "You're Underestimating AI on Purpose" — AI Perception Paradox, Amara's Law, the AI Effect and systematic underestimation of AI progress (June 27)
 - [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind; relational sector scarcity, behavioral economics of AI (June 24)
+- [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
 - [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
 - [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
 - [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
 - [[entities/boaz-barak]] — Boaz Barak — Harvard CS professor; theoretical CS, cryptography, AI safety, co-author of 'Computational Complexity: A Modern Approach' (June 27)
-- [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
 - [[entities/brace-sproul]] — Brace Sproul — Head of Applied AI at LangChain; led OpenWiki release (July 2)
+- [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
 - [[entities/bryan-bischof]] — Bryan Bischof — Theory Ventures data scientist; creator of BBPlot eval-driven chart library; featured on Show Us Your Agent Skills EP 02 (June 27)
+- [[entities/chip-huyen]] — Chip Huyen — ML engineer and author; writer of "Designing ML Systems" and "Introduction to AI"
 - [[entities/chris-tate]] — Chris Tate; added emulate (local API emulation for CI/no-network sandboxes) to key projects (June 25)
 - [[entities/conviction]] — Conviction — AI-focused VC firm founded by Sarah Guo; portfolio includes Baseten, Mistral, Cognition, Harvey, HeyGen; No Priors podcast, Embed grant program (June 24)
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24)
+- [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
 - [[entities/dean-ball]] — Dean W. Ball; enriched with "What Should Be Done" — analysis of EO on Cyber and AI as de facto licensing regime, IVO proposal for frontier model governance, Obernolte-Trahan Great American AI Act endorsement (June 27)
 - [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)
+- [[entities/demis-hassabis]] — Demis Hassabis — Co-founder and CEO of Google DeepMind; Nobel Prize in Chemistry 2024 (AlphaFold)
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
 - [[entities/drew-breunig]] — Drew Breunig; enriched with "The Problem is Prompt Debt" X Article — prompt debt framework, fighting the weights, algorithmic prompt search (June 23)
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with "The next big breakthrough" article — RLVR generalization limits, OPSD/dreaming as 4th scaling axis, computer use grindability, 35M× KV cache vs weight density gap (June 27)
 - [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1)
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
+- [[entities/eliezer-yudkowsky]] — Eliezer Yudkowsky — AI alignment researcher, co-founder of MIRI
 - [[entities/eric-zhang]] — Eric Zhang — Creator of jax-js (JAX for the browser, WebGPU/Wasm, 845★) and graphon (graph DB in Zig); NY Systems Reading Group organizer (June 27)
-- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25)
+- [[entities/ethan-mollick]] — Ethan Mollick — Wharton professor; author of "Co-Intelligence"; AI in education and work research
 - [[entities/fastino-labs]] — Fastino Labs — SLM応用研究ラボ; Pioneerプラットフォーム（自動ファインチューニング＆適応的推論）、GLiNERモデルファミリー（NER、セーフティ、PII検出）; 月間300万+ダウンロード (July 2🆕)
+- [[entities/fei-fei-li]] — Fei-Fei Li — Stanford professor; co-director of HAI; pioneer of ImageNet and computer vision; World Labs founder
+- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25)
+- [[entities/garry-tan]] — Garry Tan — CEO of Y Combinator; investor in AI startups, voice on AI regulation
+- [[entities/geoffrey-hinton]] — Geoffrey Hinton — "Godfather of AI"; Nobel Prize in Physics 2024; pioneer of deep learning, backpropagation
 - [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
 - [[entities/giles-thomas]] — Giles Thomas; new entity — "Writing an LLM from scratch" series, JAX/NNX/Optax training loop, outside-in methodology (July 1)
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/grant-sanderson]] — Grant Sanderson (3Blue1Brown) — mathematics educator, Manim creator, 3Blue1Brown YouTube channel; AI as leading indicator in mathematics, conceptual breakthroughs vs pattern matching, hundred-year verification loops (July 5)
+- [[entities/gwern]] — Gwern Branwen — Independent AI researcher and writer; gwern.net essayist on scaling, diffusion models, alignment
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
-- [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
 - [[entities/hp-inc]] — HP Inc. — Hardware company; launched Frontier strategic partnership with OpenAI (June 2026) to deploy AI across customer experiences, software development, and enterprise operations (June 30)
+- [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
+- [[entities/ilya-sutskever]] — Ilya Sutskever — Co-founder and former Chief Scientist of OpenAI; key architect of GPT series; Safe Superintelligence Inc.
+- [[entities/jeff-geerling]] — Jeff Geerling — Author and Raspberry Pi expert; writes on self-hosting, edge AI, local LLMs
+- [[entities/jensen-huang]] — Jensen Huang — CEO and co-founder of NVIDIA; driving force behind GPU computing and AI hardware infrastructure
 - [[entities/jo-bergum]] — Jo Bergum — CEO/Co-founder of Hornet (vector search); ex-Vespa engineer; organizing 'Retrieval for Agents' event at AI Engineer World's Fair (June 27)
+- [[entities/john-carmack]] — John Carmack — Legendary game developer (id Software, Doom, Quake); AGI researcher at Keen Technologies
 - [[entities/k-eric-drexler]] — K. Eric Drexler — molecular nanotechnology pioneer, FHI researcher; CAIS (Comprehensive AI Services) framework reframing superintelligence; AI/ML safety and existential risk (July 5)
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
 - [[entities/liquid-ai-lfm2-5-retrievers]] — LFM2.5 Retrievers — 350M-param multilingual retrieval models (ColBERT + Embedding); bidirectional LFM architecture; 11 languages; best-in-class NanoBEIR/MKQA-11; GGUF for llama.cpp edge deployment (June 29)
+- [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Netscape, venture capitalist at a16z; influential voice on AI accelerationism
 - [[entities/mario-zechner]] — Mario Zechner; added DeepMind AI Control Roadmap recommendation + Gergely Orosz "Slow Down to Speed Up" talk recommendation (June 25)
-- [[entities/meituan-longcat]] — Meituan LongCat 2.0 / Owl Alpha — 1.6T/48B MoE model, 1M context, trained on 50k domestic Chinese accelerators; first near-frontier model on fully domestic hardware (June 30)
 - [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
 - [[entities/matei-zaharia]] — Matei Zaharia — CTO of Databricks (pre-$175B), co-creator of Apache Spark/MLflow, creator of Omnigent open-source meta-harness; new entity page (June 25)
+- [[entities/meituan-longcat]] — Meituan LongCat 2.0 / Owl Alpha — 1.6T/48B MoE model, 1M context, trained on 50k domestic Chinese accelerators; first near-frontier model on fully domestic hardware (June 30)
 - [[entities/microsoft]] — The Microsoft AI Team is the research and engineering division within Microsoft responsible for developing-frontier AI models and technologies.
 - [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
@@ -63,6 +81,8 @@
 - [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
 - [[entities/pioneer-ai]] — Pioneer AI ([[entities/fastino-labs]]) — SLMファインチューニング＆推論エージェント; Agent Mode（10分）、Research Mode（自律探索）、Adaptive Inference（本番自動改善）; AdaptFT-Bench提案; Intent 99.3%, Entity F1 0.810 (July 2🆕)
 - [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), pool and Shimmer products; open-weights as default commitment (June 29)
+- [[entities/sam-altman]] — Sam Altman — CEO of OpenAI; key figure in GPT development, AI safety debates, and industry leadership
+- [[entities/satya-nadella]] — Satya Nadella — CEO of Microsoft; leading Microsoft AI strategy including Azure AI, Copilot, and OpenAI partnership
 - [[entities/simon-willison]] — Simon Willison; enriched with hackmyclaw.com Prompt Injection Challenge (June 27); Sonnet 5 tokenizer analysis (1.42× English, 30% effective price increase, sampling params deprecated) and shot-scraper video feature — agent self-recorded demos (July 1)
 - [[entities/vercel]] — Vercel Inc.; frontend cloud platform, expanded into AI with Eve filesystem-first agent framework, deepsec security harness, AI SDK, and Vercel Sandbox microVMs (June 28)
 - [[entities/vercel-eve]] — Vercel Eve — Open-source filesystem-first framework for durable backend AI agents; agent = directory of files, built-in durable sessions, sandboxes, evals, HITL, MCP connections, channels; Vercel runs 100+ Eve agents in production including d0, Vertex, Athena (June 28)
@@ -242,3 +262,4 @@
 
 ## Queries
 - [[queries/wiki-graph-analysis-weekly-2026-07-05]] — Weekly Wiki Graph Analysis — systematic analysis of orphan pages, broken wikilinks, duplicates, index gaps, oversized pages, and tag violations across all 2,205 wiki pages
+
