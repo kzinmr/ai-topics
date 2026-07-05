@@ -37,12 +37,12 @@
 - [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
 - [[entities/giles-thomas]] — Giles Thomas; new entity — "Writing an LLM from scratch" series, JAX/NNX/Optax training loop, outside-in methodology (July 1)
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
-- [[entities/grant-sanderson]] — Grant Sanderson (3Blue1Brown); new skeleton entity — mathematics educator, AI as leading indicator in mathematics, conceptual breakthroughs vs pattern matching (July 1)
+- [[entities/grant-sanderson]] — Grant Sanderson (3Blue1Brown) — mathematics educator, Manim creator, 3Blue1Brown YouTube channel; AI as leading indicator in mathematics, conceptual breakthroughs vs pattern matching, hundred-year verification loops (July 5)
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
 - [[entities/hp-inc]] — HP Inc. — Hardware company; launched Frontier strategic partnership with OpenAI (June 2026) to deploy AI across customer experiences, software development, and enterprise operations (June 30)
 - [[entities/jo-bergum]] — Jo Bergum — CEO/Co-founder of Hornet (vector search); ex-Vespa engineer; organizing 'Retrieval for Agents' event at AI Engineer World's Fair (June 27)
-- [[entities/k-eric-drexler]] — K. Eric Drexler is a researcher and former lead at the Future of Humanity Institute (FHI), University of Oxford.
+- [[entities/k-eric-drexler]] — K. Eric Drexler — molecular nanotechnology pioneer, FHI researcher; CAIS (Comprehensive AI Services) framework reframing superintelligence; AI/ML safety and existential risk (July 5)
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
 - [[entities/liquid-ai-lfm2-5-retrievers]] — LFM2.5 Retrievers — 350M-param multilingual retrieval models (ColBERT + Embedding); bidirectional LFM architecture; 11 languages; best-in-class NanoBEIR/MKQA-11; GGUF for llama.cpp edge deployment (June 29)
 - [[entities/mario-zechner]] — Mario Zechner; added DeepMind AI Control Roadmap recommendation + Gergely Orosz "Slow Down to Speed Up" talk recommendation (June 25)
@@ -124,7 +124,7 @@
 - [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
 - [[concepts/better-models-worse-tools]] — Better Models: Worse Tools — Armin Ronacher's analysis of tool-calling regression in newer Claude models; Anthropic post-training bias toward Claude Code's flat schemas causes hallucinated fields in nested tool calls (July 5)
 - [[concepts/brain2qwerty]] — Brain2Qwerty v2 — Meta's non-invasive EEG-based brain-to-text decoder; ~61% accuracy; Auto Research coding-agent workflow improved word error rate (June 30)
-- [[concepts/cais]] — CAIS (Comprehensive AI Services) is a model proposed by K. Eric Drexler that reframes superintelligence as a class of service-providing products.
+- [[concepts/cais]] — CAIS (Comprehensive AI Services) — K. Eric Drexler's framework reframing superintelligence as distributed AI services, not monolithic agents; R&D automation as improvement engine, learning vs competence distinction (July 5)
 - [[concepts/chain-of-thought]] — Chain-of-Thought Reasoning — Step-by-step reasoning technique that improves LLM performance on complex tasks
 - [[concepts/claude-code/claude-code-artifacts]] — Claude Code Artifacts — shareable functional HTML pages for PR walkthroughs, project dashboards, and prototypes (June 24)
 - [[concepts/claude-code/claude-code-skills]] — Claude Code Skills; enriched with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt) + comparison table (June 23)

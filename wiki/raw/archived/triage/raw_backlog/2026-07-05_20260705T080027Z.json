@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-05T08:05:45.962003+00:00",
+  "triage_run_id": "20260705T080027Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlogバッチ（5記事）。全記事が既存処理済み：3件は既アーカイブ（Drexler CAIS、Dwarkesh Grant Sanderson、WebKit Safari）、1件は6回以上再出現（MAI-Thinking-1 Tech Report、conceptsページで完全カバー済み）、1件は2026-06-26のBulk Ingestionで消費済み（Awesome Agent Evals、57ベンチマーク＋2ツールページを作成）。Takes=0。",
+  "decisions": [
+    {
+      "item_id": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "source": "raw_backlog",
+      "source_name": "Microsoft MAI-Thinking-1 Tech Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 6回以上アーカイブ・再出現。concepts/mai-thinking-1-tech-report.md（227行）で109ページの技術レポートを完全カバー（MoEアーキテクチャ、GRPO、30Tトークン、ベンチマーク全結果）。concepts/microsoft-mai-models.mdにもセクションあり。",
+      "candidate_wiki_path": "concepts/mai-thinking-1-tech-report.md",
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "benchflow-awesome-evals-2025.md",
+      "source": "raw_backlog",
+      "source_name": "Awesome Agent Evals (BenchFlow)",
+      "title": "Awesome Agent Evals",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 2026-06-26にAwesome Evals Bulk Ingestionで57ベンチマーク＋2ツールのページ作成に使用済み。175KBの全内容はconcepts/ai-benchmarks/配下のページ群に取り込まれている。raw記事は本バッチでアーカイブへ保存。",
+      "candidate_wiki_path": "concepts/ai-benchmarks/index.md",
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    }
+  ]
+}

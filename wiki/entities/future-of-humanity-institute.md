@@ -69,7 +69,7 @@ Despite its closure, FHI's intellectual legacy remains foundational:
 ## Related Pages
 
 - [[entities/nick-bostrom]] — FHI founder and director
-- [[entities/eric-drexler]] — Author of *Reframing Superintelligence* at FHI
+- [[entities/k-eric-drexler|K. Eric Drexler]] — Author of *Reframing Superintelligence* at FHI
 - [[concepts/comprehensive-ai-services]] — CAIS framework, developed at FHI
 - [[concepts/security-and-governance/ai-safety]] — FHI's core research domain
 - [[concepts/existential-risk]] — FHI's primary concern area

@@ -55,7 +55,7 @@ Drexler's [[concepts/comprehensive-ai-services]] framework was developed partly 
 ## Related Pages
 
 - [[entities/future-of-humanity-institute]] — Bostrom's institute at Oxford (closed 2024)
-- [[entities/eric-drexler]] — Colleague at Oxford; CAIS recontextualizes Bostrom's framework
+- [[entities/k-eric-drexler|K. Eric Drexler]] — Colleague at Oxford; CAIS recontextualizes Bostrom's framework
 - [[concepts/comprehensive-ai-services]] — Alternative to Bostrom's agent-centric model
 - [[concepts/security-and-governance/ai-safety]] — The field Bostrom helped create
 - [[concepts/existential-risk]] — Bostrom's primary research focus
