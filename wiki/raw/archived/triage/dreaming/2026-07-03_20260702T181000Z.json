@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-07-03T18:13:38.852644+00:00",
+  "triage_run_id": "20260702T181000Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming cycle: 104 raw articles from last 3 days scanned. 52 unprocessed articles identified after cross-pipeline dedup (blog-triage, newsletter-triage, active-crawl, dreaming-triage). 1 take (Pinecone Nexus public preview), 4 references (Hebbia July update, Factory Droid Shield 2.0, ElevenLabs voice webinar, Sierra Ghostwriter hackathon, Ed Zitron BIS article). 38 skips across non-AI content, already-processed articles, and comprehensive entity coverage. Same-day pipeline saturation is high — blog/newsletter/active-crawl already consumed most AI-relevant articles.",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-already-processed",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "[Batch] Already processed by other pipelines",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 他パイプライン処理済み: Modal multi-token residual prediction (blog triage TAKE), Pioneer AI GLiNER (active-crawl), Geoffrey Litt thread (active-crawl), Brace Sproul OpenWiki (active-crawl), Wayfinder Router (processed), Dwarkesh blog prize (blog triage REF)",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（batch skip — 各記事は別パイプラインで処理済み）"
+    },
+    {
+      "item_id": "dreaming-skip-non-ai",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "[Batch] Non-AI content",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事: Pluralistic Technocarcinization (tech criticism), Daring Fireball ×3 (Apple/gaming), OldNewThing ×2 (Windows internals), dfarq Apricot (vintage), berthub.eu (Dutch policy), 404media (Apple security), Troy Hunt (security roundup), nesbitt.io (CRA policy), matduggan.com (ClickHouse observability), Tedium (web forums), The Verge Valve (gaming), Daring Fireball modem (telecom)",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（batch skip — AI関連外コンテンツ）"
+    },
+    {
+      "item_id": "dreaming-skip-already-covered",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "[Batch] Already covered by entity pages",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ エンティティページで既カバー: Giles Thomas LLM from scratch JAX (entities/gilesthomas.com.md), Harvey contract redlining (entities/harvey.md), Harvey legal matter management (同), Harvey law firm leaders (同), Together AI Series C (blog triage REF), jyn.dev stories (non-AI personal), Pinecone test data generation (entities/pinecone.md)",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（batch skip — 既存エンティティページで十分カバー済み）"
+    }
+  ]
+}

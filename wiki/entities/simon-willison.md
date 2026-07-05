@@ -3,10 +3,10 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-01
+updated: 2026-07-05
 status: L3
-sources: [raw/articles/simonwillison.net--2026-may-26-the-pressure--405fbe6.md, raw/articles/simonwillison.net--2026-may-27-product-market-fit--053a34c1.md, https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md, raw/articles/simonwillison.net--2026-jun-2-datasette-agent-micropython--dc3ce743.md, raw/articles/simonwillison.net--2026-jun-2-microsofts-new-models--80348929.md, raw/articles/simonwillison.net--2026-jun-3-uber-caps-usage--0437d797.md, raw/articles/simonwillison.net--2026-jun-6-micropython-in-a-sandbox--cfde862b.md, raw/articles/simonwillison.net--2026-jun-5-openai-help-lockdown-mode--2ec234f9.md, raw/articles/simonwillison.net--2026-jun-5-andreas-kling--7f66da2b.md, raw/articles/simonwillison.net--2026-jun-7-datasette-agent-edit--01ceb2d8.md, raw/articles/simonwillison.net--2026-jun-8-wwdc--b8b98dfb.md, raw/articles/simonwillison.net--2026-jun-10-datasette-agent--a829e35c.md, raw/articles/simonwillison.net--2026-jun-11-fable-is-relentlessly-proactive--0e9903b3.md, raw/articles/simonwillison.net--2026-jun-14-why-ai-hasnt-replaced-software-engineers--b830974d.md, raw/articles/simonwillison.net--2026-jun-22-prompt-injection-as-role-confusion--21e247aa.md, raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md, raw/articles/simonwillison.net--2026-jun-25-ai-and-liability--dc57f9f0.md, raw/articles/nesbitt.io--2026-06-25-scrutineer-html--2ad1fbbe.md, raw/articles/simonwillison.net--2026-jun-26-hack-my-ai-assistant--4d91bd14.md, raw/articles/simonwillison.net--2026-jun-28-jon-udell--47b28924.md, raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md]
- tags: [person, blogger]
+- raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md]
+  tags: [person, blogger]
 ---
 
 # Simon Willison
@@ -495,3 +495,21 @@ Source: [[raw/articles/simonwillison.net--2026-jun-8-wwdc--b8b98dfb.md]]
 **What's New in Claude Sonnet 5** (Jun 30, 2026): Simon published a detailed technical analysis of Claude Sonnet 5, focusing on practical implications. Key findings: **Sampling parameters** (temperature, top_p, top_k) are no longer supported — Simon speculates this is part of a push toward safer, less-explorable models. **Adaptive Thinking is ON by default** and cannot be disabled. **1M token context / 128K max output tokens** — double the output limit of Sonnet 4.6. The **new tokenizer** produces ~30% more tokens than Sonnet 4.6 for the same input, effectively a 30% price increase. Simon's tokenizer tests per language: English 1.42×, Spanish 1.33×, Python 1.28×, Chinese 1.01×. Performance is close to Opus 4.8 at lower prices. Simon notes the tokenizer change may significantly impact prompt-caching economics since the same cache prefix now requires more tokens. Source: [[raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md]]
 
 **shot-scraper video — Agent-Self-Recorded Demos** (Jun 30, 2026): Simon released shot-scraper 1.10 with a new `shot-scraper video` command that accepts a `storyboard.yml` file defining a web application routine and uses Playwright to record a video of that routine. This continues Simon's ongoing emphasis on having coding agents produce demos of their work — a practice he has called essential for agentic engineering. The example demonstrates a Datasette bulk-insert feature being recorded as a self-produced video demo. This marks a shift from human-produced documentation to agent-produced visual verification artifacts in the agentic engineering workflow. Source: [[raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md]]
+
+### July 2026 Updates
+
+**sqlite-utils 4.0rc2 — Mostly Written by Claude Fable ($149.25)** (July 5, 2026): Simon shipped sqlite-utils 4.0rc2 with Claude Fable 5. Over 37 prompts and 34 commits (+1,321 -190 lines), Fable discovered a critical data-loss bug: `Table.delete_where()` ran via bare `self.db.execute()` with no `atomic()` wrapper, leaving the connection `in_transaction=True` — causing all subsequent writes to silently fail.
+
+- **Fable's bug discovery**: `delete_where()` never committed and "poisoned" the connection — Simon was "very glad I didn't ship that"
+- **Cross-model review**: GPT-5.5 xhigh reviewed Fable's work, discovering two P1 issues: (1) `db.query("update ...")` auto-committed before raising `ValueError`, and (2) `INSERT ... RETURNING` only committed after full generator exhaustion
+- **Cost**: AgentsView estimated $149.25 total ($141.02 for main Fable session, $8.47 for sub-agents)
+- **Workflow**: Started from iPhone via Claude Code for web while enjoying July 4th parade; switched to laptop for final review via GitHub PR
+- **New transaction model**: Every write method now auto-commits; `db.begin()`/`db.commit()`/`db.rollback()` added for manual control
+
+This exemplifies [[concepts/agentic-engineering]] patterns: sub-agent delegation, cross-model verification, cost-conscious orchestration.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md]]
+
+**Better Models: Worse Tools — Quote Post** (July 4, 2026): Simon quoted [[entities/armin-ronacher]]'s analysis of Claude Opus 4.8/Sonnet 5 tool schema regression on Pi. Emphasizes Anthropic's RL training optimized for Claude Code's forgiving harness, raising questions about capability portability across harness architectures.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md]]

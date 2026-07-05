@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-07-03T18:15:08.774832+00:00",
+  "triage_run_id": "20260703T180039Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming cycle (2026-07-03): パイプライン飽和状態（0新規記事収集）。前回7/2トリアージの未処理take 1件（Pinecone Nexus）を保持。raw/articlesから新規enrichment候補2件を発見: Safari MCP server（Apple MCPエコシステム初参入・★★★★★）とAnthropic Fable 5再開詳細（既存ページenrichment・★★★★☆）。archive実行済み（3新規・1330 total URLs）。",
+  "decisions": [
+    {
+      "item_id": "dreaming-20260703-fable5-redeployment",
+      "source": "raw-article",
+      "source_name": "anthropic.com",
+      "title": "Redeploying Claude Fable 5",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "raw_path": "~/wiki/raw/articles/anthropic.com--news-redeploying-fable-5--24a872ed.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Fable 5/Mythos 5輸出規制解除のAnthropic公式発表。concepts/claude/fable-5.mdにJune30解除は記載済みだが、具体的な詳細（Pro/Max/Teamの7月7日まで週50%制限、usage credits移行、AWS/GCP/Foundry段階的再開、Mythos 5 Glasswing program拡大）が未記載。エンリッチ候補。",
+      "candidate_wiki_path": "concepts/claude/fable-5.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-already-processed",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "[Batch] Already processed by other pipelines",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 他パイプライン処理済み: Modal multi-token residual prediction (blog triage TAKE), Pioneer AI GLiNER (active-crawl), Geoffrey Litt thread (active-crawl), Brace Sproul OpenWiki (active-crawl), Wayfinder Router (processed), Dwarkesh blog prize (blog triage REF)",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（batch skip — 各記事は別パイプラインで処理済み）"
+    },
+    {
+      "item_id": "dreaming-skip-non-ai",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "[Batch] Non-AI content",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事: Pluralistic Technocarcinization (tech criticism), Daring Fireball ×3 (Apple/gaming), OldNewThing ×2 (Windows internals), dfarq Apricot (vintage), berthub.eu (Dutch policy), 404media (Apple security), Troy Hunt (security roundup), nesbitt.io (CRA policy), matduggan.com (ClickHouse observability), Tedium (web forums), The Verge Valve (gaming), Daring Fireball modem (telecom)",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（batch skip — AI関連外コンテンツ）"
+    },
+    {
+      "item_id": "dreaming-skip-already-covered",
+      "source": "blog",
+      "source_name": "multiple",
+      "title": "[Batch] Already covered by entity pages",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ エンティティページで既カバー: Giles Thomas LLM from scratch JAX (entities/gilesthomas.com.md), Harvey contract redlining (entities/harvey.md), Harvey legal matter management (同), Harvey law firm leaders (同), Together AI Series C (blog triage REF), jyn.dev stories (non-AI personal), Pinecone test data generation (entities/pinecone.md)",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（batch skip — 既存エンティティページで十分カバー済み）"
+    }
+  ]
+}

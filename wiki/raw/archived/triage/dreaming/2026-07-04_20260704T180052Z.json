@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-07-04T18:14:19.929914+00:00",
+  "triage_run_id": "20260704T180052Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming triage 2026-07-04: ファイルシステムスキャン（193 raw articles）から2 takes + 5 references + 6 skips を特定。Safari MCP Server（Apple初MCP実装）とCurrentAI Open Source AI Gap Map（421製品カタログ）が主要takes。Fable 5 subagent delegation、Claude Electron批判、Meta技術文化崩壊分析がreferences。前回triage（07/03）の未消費takes（Pinecone Nexus, Safari MCP）を含む統合checkpoint。",
+  "decisions": [
+    {
+      "item_id": "dreaming-fable-subagent-delegation",
+      "source": "filesystem_scan",
+      "source_name": "simonwillison.net",
+      "title": "Fable's judgement — subagent delegation for cost optimization",
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/",
+      "raw_path": "~/wiki/raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Fable 5のコスト最適化パターン。モデルルーティングとsubagent委譲の実践例。Claude Code memory fileによる自動判断委譲。entities/simon-willison.mdとconcepts/coding-agents/model-routing.mdのenrichment候補。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-claude-electron-critique",
+      "source": "filesystem_scan",
+      "source_name": "daringfireball.net",
+      "title": "Claude's Criminally Bad Electron Mac App Is an Inside Job",
+      "url": "https://daringfireball.net/2026/07/claudes_criminally_bad_mac_app_is_an_inside_job",
+      "raw_path": "~/wiki/raw/articles/daringfireball.net--2026-07-claudes-criminally-bad-mac-app-is-an-inside-job--d71ea976.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ GruberのClaudeデスクトップアプリ批判。Electronアプリであることの問題、Claude Code自身でネイティブアプリをつくるべきという主張。Drew Breunigの分析も引用。entities/daringfireball-net.mdのenrichment候補。",
+      "candidate_wiki_path": "entities/daringfireball-net.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-meta-engineering-destruction",
+      "source": "filesystem_scan",
+      "source_name": "newsletter.pragmaticengineer.com",
+      "title": "Why is Meta destroying its engineering organization?",
+      "url": "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
+      "raw_path": "~/wiki/raw/articles/newsletter.pragmaticengineer.com--p-why-is-meta-destroying-its-engineering--799eb452.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Pragmatic Engineer長文分析（262行）。MetaのAI推進による技術文化崩壊。「AI psychosis」概念、エンジニアリングを利益センターからコストセンターへ変質。AI labor displacementの具体的事例。entities/meta.mdかconcepts/ai-labor-displacement.mdのenrichment候補。",
+      "candidate_wiki_path": "entities/meta.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-simon-llm-coding-agent",
+      "source": "filesystem_scan",
+      "source_name": "simonwillison.net",
+      "title": "llm-coding-agent 0.1a0 — Fable 5 coding agent experiment",
+      "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/",
+      "raw_path": "~/wiki/raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Simon WillisonがFable 5でLLMライブラリベースのコーディングエージェントを構築。Red/Green TDD使用。entities/simon-willison.mdのenrichment候補だが、既存のコーディングエージェント実験セクションが充実しているため軽微。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-meta-ai-hack",
+      "source": "filesystem_scan",
+      "source_name": "404media.co",
+      "title": "Hackers Asked Meta AI to Give Them Access to Instagram Accounts",
+      "url": "https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/",
+      "raw_path": "~/wiki/raw/articles/404media.co--hackers-simply-asked-meta-ai-to-give-them-access-to-high-pro--fdab291b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ concepts/ai-agent-security.mdに既に詳細カバー済み。Meta AI support chatbotの権限昇格脆弱性、Instagramアカウント乗っ取り事例は同ページで網羅。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-litt-bottleneck",
+      "source": "filesystem_scan",
+      "source_name": "geoffreylitt.com",
+      "title": "Understanding is the new bottleneck",
+      "url": "https://geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
+      "raw_path": "~/wiki/raw/articles/geoffreylitt.com--2026-07-02-understanding-is-the-new-bottleneck-html--ab87caeb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 1,100バイトと非常に短い。インタラクティブUIでエージェント生成コードを理解するという短いアナクドート。entities/geoffrey-litt.mdのReferences程度。具体性不足。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-elevenmusic-tools",
+      "source": "filesystem_scan",
+      "source_name": "elevenlabs.io",
+      "title": "Introducing Tools on ElevenMusic",
+      "url": "https://elevenlabs.io/blog/introducing-tools-on-elevenmusic",
+      "raw_path": "~/wiki/raw/articles/2026-07-03_elevenlabs_introducing-tools-on-elevenmusic.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ElevenLabs Music tool拡張。AI audio関連だが具体的技術詳細が薄く、Wiki追加価値低い。entities/elevenlabs.mdの軽微enrichment候補。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-pinecone-nexus-dup",
+      "source": "filesystem_scan",
+      "source_name": "pinecone.io",
+      "title": "Pinecone Nexus Is Now in Public Preview",
+      "url": "https://www.pinecone.io/blog/pinecone-nexus-public-preview/",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 前回triage（07/03）でtake判定済み。entities/pinecone.mdにNexus Context Compilerの詳細が既にカバー済み（demo比較含む）。Public Previewの追加情報は增量的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Pinecone Nexus public preview — already covered in entities/pinecone.md with Context Compiler details and analyst demo comparison."
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "filesystem_scan",
+      "source_name": "mixed",
+      "title": "[Batch] Non-AI content from Jul 3-4",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事バッチ: Kindle DRM (pixelmelt), vintage computing magazine (dfarq), rod logic (pluralistic), BWT algorithm (purplesyringa), screwworm biology (construction-physics), Stockholm travel essay (matduggan), vintage computing (filfre), WhatsApp ban (spyglass), 5G (ookla), politics (politicalwire), Atari history (dfarq)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Non-AI articles covering DRM, vintage computing, biology, travel, politics — outside wiki scope."
+    },
+    {
+      "item_id": "dreaming-skip-already-processed",
+      "source": "filesystem_scan",
+      "source_name": "mixed",
+      "title": "[Batch] Already covered by prior dreaming triage (07/03)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 前回dreaming triage（20260703T180039Z）で処理済みのreference群: Hebbia Disclosure, Factory Droid Shield 2.0, ElevenLabs chatbot voice, Sierra Ghostwriter hackathon, WheresYouEd AI Industry, Anthropic Fable 5 redeployment。いずれも既にreference判定。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Previously triaged references from 2026-07-03 dreaming run — Hebbia, Factory, ElevenLabs, Sierra, WheresYouEd, Anthropic."
+    }
+  ]
+}

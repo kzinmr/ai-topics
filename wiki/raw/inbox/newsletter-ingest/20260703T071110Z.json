@@ -1,0 +1,150 @@
+{
+  "checkpoint_run_id": "20260703T071110Z",
+  "summary_ja": "12ニュースレター（swyx Latent Space×5、SemiAnalysis×2、beehiiv Superintel×1、Elena Verna×1、True Positive×1、The Signal×1、Ben's Bites×1）をトリアージ。AIEWF関連が多数: (1) Paul Bakaus(Impeccable)の「skill engineering」概念はコーディングエージェントのスキル設計哲学として新規概念ページ候補★★★★☆、(2) Andrew Qu(Vercel)のエージェントフレームワーク「eve」はentities/vercel.md更新候補★★★☆☆、(3) AIEWF loops debateは既存AIEWFカバレッジの追記候補★★★☆☆。SemiAnalysisのHBM4/EMIB-T記事はAIチップパッケージング技術として参考★★★☆☆。Elena VernaのAI Confidence TheaterはAI業界批判として概念ページ候補★★★☆☆。その他はスコープ外または既カバー済み。",
+  "decisions": [
+    {
+      "item_id": "<20260702143605.3.736bf86ede0ec48d@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "Skill engineering and the case against one-shot AI design",
+      "title": "Paul Bakaus / Impeccable - skill engineering as a discipline",
+      "url": "https://open.substack.com/pub/swyx/p/skill-engineering-design",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-skill-engineering-and-the-case-against-one-shot-ai-design.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★☆ 新規概念「skill engineering」: Paul Bakaus(Impeccable creator)がAIEWFで語った、AIエージェントのためのスキル設計ディシプリン。コーディングエージェント(Claude Code, Cursor, Copilot, Codex)にドメイン知識とデザイン語彙を注入する手法。loopmaxxing批判(全自動化否定)、人間-in-the-loopの80/20モデル、スキル内ルーティング(MoE的アプローチ)、cross-harness互換性の課題。既存Wikiに「skill engineering」概念ページなし。concepts/ai-agent-skill-engineering.md新規作成推奨。Impeccableはopen-source design skills system。",
+      "candidate_wiki_path": "concepts/ai-agent-skill-engineering.md",
+      "body_excerpt": "Paul Bakaus(Impeccable creator)がAIEWFで「skill engineering」を提唱。AIエージェントにドメイン固有の語彙(e.g. 'bolder'=hierarchy+scale+decisive typography)を注入するスキル設計ディシプリン。loopmaxxing(全自動化)批判、「There is no auto」。80/20モデル: AIが80%を高速生成、人間が残り20%のtaste/context/個性を担当。スキル内ルーティングでMoE的アプローチ。Claude Code/Cursor/Copilot/Codex間のcross-harness互換性が課題。"
+    },
+    {
+      "item_id": "<20260703000818.3.7de679d2a4bcb185@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "Vercel's Andrew Qu on why agents are a new kind of software",
+      "title": "Andrew Qu / Vercel - eve agent framework, agent-readable websites",
+      "url": "https://open.substack.com/pub/swyx/p/vercel-agents-new-software",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-03-vercel-s-andrew-qu-on-why-agents-are-a-new-kind-of-software.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Vercel Chief of Software Andrew QuへのAIEWFインタビュー。Vercelのエージェントフレームワーク「eve」の設計思想、skills/sandboxes/agent-readable websitesの重要性。既存entities/vercel.mdの有無要確認。VercelのAIエージェント戦略としてentityページ更新推奨。Vercel AI SDK関連の既存カバレッジとの統合検討。",
+      "candidate_wiki_path": "entities/vercel.md",
+      "body_excerpt": "Vercel Chief of Software Andrew QuがAIEWFで語ったエージェントフレームワーク「eve」の設計思想。エージェントは新しい種類のソフトウェア。skills、sandboxes、agent-readable websitesが重要。VercelのAIエージェント戦略の核心。"
+    },
+    {
+      "item_id": "<20260703051144.3.752e6646ab5087a0@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+      "title": "AIEWF Day 3 - loops debate, state of AI engineering",
+      "url": "https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-locomotives",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-03-aiewf-daily-dispatch-the-great-loops-debate-and-the-state-of-ai-engineering.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AIEWF Day 3ダイジェスト。loops debate(エージェントループ設計論争)の総括、AI engineeringの現状報告、closing keynotes。前日(Agent Recipes/agency tension)の続き。既存AIEWF関連raw記事に追記可能。loops debateはconcepts/coding-agents/配下の既存ページへの追記候補。",
+      "candidate_wiki_path": "concepts/coding-agents/agent-loops.md",
+      "body_excerpt": "AIEWF最終日のダイジェスト。loops debate(エージェントループ設計論争)の総括、AI engineeringの現状レポート、closing keynotes。Loopmaxxing vs. human-in-the-loopの議論を含む。"
+    },
+    {
+      "item_id": "<20260702212514.3.ebcf445c871d11a4@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "The website of the future may assemble itself for every visitor",
+      "title": "Adobe agentic sites - Carlos Sanchez at AIEWF",
+      "url": "https://open.substack.com/pub/swyx/p/the-website-of-the-future",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-the-website-of-the-future-may-assemble-itself-for-every-visitor.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Adobeの「agentic sites」実験: ユーザーの意図に基づいてページを動的に生成するWeb技術。Carlos SanchezへのAIEWFインタビュー。agentic web/Web生成AIのトレンドとして参考価値。既存concepts/agentic-web.md等への追記候補。ただしAdobe固有の実験であり、汎用概念としては発展途上。",
+      "candidate_wiki_path": "concepts/agentic-web.md",
+      "body_excerpt": "Adobeが「agentic sites」を実験中: 個々のユーザーの意図に応じてページを動的に生成するWeb。Carlos SanchezがAIEWFで語ったWebの未来。AI駆動のWeb体験パーソナライゼーション。"
+    },
+    {
+      "item_id": "<20260702190419.3.d6021367999d98b4@mg2.substack.com>",
+      "source": "newsletter",
+      "source_name": "Please stop the AI Confidence Theater",
+      "title": "Elena Verna - AI Confidence Theater critique",
+      "url": "https://open.substack.com/pub/elenaverna/p/please-stop-the-ai-confidence-theater",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-please-stop-the-ai-confidence-theater.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Elena VernaによるAI業界の「Confidence Theater」批判。「We don't need an extra reason to be anxious」。AI safety/reliabilityの文脈で参考価値。publication_id=1435249はcross-post元。entities/elena-verna.mdの新規作成候補だが、growth/Product-Led Growth専門家のためWikiスコープの境界。AI Confidence Theater概念はconcepts/配下に追記可能。",
+      "candidate_wiki_path": "concepts/ai-confidence-theater.md",
+      "body_excerpt": "Elena VernaがAI業界の「Confidence Theater」(見せかけの自信)を批判。AIに対する過度な楽観主義や不安をあおる行動への警鐘。AI safety/reliability/discourseの文脈で参考。"
+    },
+    {
+      "item_id": "<20260702172538.3.9d401ee7ac1e8d53@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More",
+      "title": "SemiAnalysis - ECTC 2026 roundup: EMIB-T, HBM4, photonic interconnects",
+      "url": "https://open.substack.com/pub/semianalysis/p/ectc2026",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-emib-t-roadmap-custom-hbm-hbm4-packaging-challenges-microfluidic-cooling-photoni.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ ECTC 2026カンファレンスの包括的ラウンドアップ。Intel EMIB-Tロードマップ、HBM4パッケージング課題、マイクロフリクーリング、フォトニックインターコネクト。AIチップの先端パッケージング技術。entities/semianalysis.mdは既存(要確認)。AI compute infrastructure関連の技術詳細として参考。Wikiスコープの境界(半導体技術寄り)だが、AIトレーニングインフラに直結。",
+      "candidate_wiki_path": "entities/semianalysis.md",
+      "body_excerpt": "ECTC 2026カンファレンスのSemiAnalysisラウンドアップ。Intel EMIB-T、カスタムHBM、HBM4パッケージングの課題、マイクロフリクーリング、フォトニックインターコネクト。AIチップの先端パッケージング技術動向。"
+    },
+    {
+      "item_id": "<20260702221808.3.68acdbaf10503f1b@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "Meta Compute: Everyone Wants To Be A Cloud",
+      "title": "SemiAnalysis - Meta compute strategy, neocloud trend",
+      "url": "https://open.substack.com/pub/semianalysis/p/meta-compute-everyone-wants-to-be",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-meta-compute-everyone-wants-to-be-a-cloud.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Metaのコンピュート戦略: 「Zuck Takes Plan B?」、SpaceX 2.0、Bedrock 2.0、MSL継続、RecSys 10xスケーリング。全員がネオクラウドになろうとするトレンド。AI compute infrastructure/entities/meta.mdへの追記候補。ClusterMAXランキング言及。SemiAnalysisの分析として高品質だがpaywall可能性。",
+      "candidate_wiki_path": "entities/meta.md",
+      "body_excerpt": "Metaのコンピュート戦略分析。ZuckのPlan B、SpaceX 2.0比較、Bedrock 2.0、MSL継続、RecSys 10xスケーリング。全企業がネオクラウド化するトレンド。ClusterMAXランキング。"
+    },
+    {
+      "item_id": "<20260702071014.3.2a0bb26ab7a7e4ae@mg2.substack.com>",
+      "source": "newsletter",
+      "source_name": "[AINews] not much happened today",
+      "title": "AINews - quiet day roundup",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-900",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-ainews-not-much-happened-today.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 「another quiet day」と自己評価。他のAIEWFダイジェスト記事で同日分をカバー済み。本文取得Substack paywallまたはコンテンツ薄い。重複回避のためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(quiet day - 特筆すべき新規情報なし)"
+    },
+    {
+      "item_id": "<20260702115510.3.734fdc1f10cb8e48@mg2.substack.com>",
+      "source": "newsletter",
+      "source_name": "Microsoft Copilot Skills in Excel",
+      "title": "Alex Banks - Copilot in Excel",
+      "url": "https://open.substack.com/pub/thesignal/p/microsoft-copilot-skills-in-excel",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-microsoft-copilot-skills-in-excel.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Microsoft Copilot in Excelのハウツー記事。WikiのLLM/AI Agent技術フォーカスとスコープ外。生産性ツールとしてのCopilotは既にカバー済みの範囲。entities/microsoft-copilot.md等への追記価値低。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Microsoft Copilot in Excelの機能紹介ハウツー。スコープ外。"
+    },
+    {
+      "item_id": "<20260702130404.3.518270015c41a00a@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "Fable is back",
+      "title": "Ben's Bites - Fable 5 return, new Sonnet",
+      "url": "https://open.substack.com/pub/bensbites/p/fable-is-back",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-fable-is-back.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Fable 5復活と新Sonnetモデル。前日トリアージで既に判定済み(batch-skip-fable5-sonnet5-beehiiv)。既存Wikiで詳細カバー済み: concepts/claude/fable-5.md(371行)/concepts/claude/sonnet-5.md(116行)。重複。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(Fable 5/Sonnet 5 - 既存Wikiカバー済み)"
+    },
+    {
+      "item_id": "<20260702170454.4c6c6ab3@mta47>",
+      "source": "newsletter",
+      "source_name": "🏛️ OpenAI Offers Uncle Sam a 5% Cut",
+      "title": "Superintel - OpenAI revenue share with government",
+      "url": "https://link.mail.beehiiv.com/v1/c/nuFP0izN23%2BMLD%2BRa9%2BzlJQtUJFFlLND4%2BCxgNIqZrOUsWgzzwgeTihKJKGs%0AKf9EG2OCAGjefyIb5PrqasckEI4XEpX9Hiw%2FuCylCXBMYOfyFMQsV1Zu0VvX%0ARiQcZR6vnCLE8wQFWcJC5ejYbrnHDxjE%2BWzkSY4tfLdb1oQfa8JbKSyR6adx%0AEI2cB2nQKYHwyQc8Wrd0y5e4apEPHNMz%2Bg%3D%3D%0A/de42c2716cee2b0f",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-openai-offers-uncle-sam-a-5-cut.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ beehiiv全トラッキングURLでCloudflare 403リスク。OpenAIの政府への収益分配(5%)はビジネス/政策ニュース。entities/openai.mdへの追記可能性はあるが、直接的な技術的知見ではない。beehiiv token期限切れパターンでコンテンツ取得不可の可能性高。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(beehiiv - コンテンツ取得不可の可能性。OpenAI政府収益分配ニュース。)"
+    },
+    {
+      "item_id": "<20260702183104.3.a567be723aebca25@mg-d1.substack.com>",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #168",
+      "title": "Andriy Burkov - AI/ML weekly roundup #168",
+      "url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-168",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-02-true-positive-weekly-168.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AI/ML weekly roundup。定期ニュースレターの週次ダイジェストで、他のソースでカバーされている可能性高い。本文paywall。個別記事へのリンク抽出が必要だが、UUIDリダイレクトで実URL特定困難。低効率のためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(AI/ML weekly roundup - 定期ダイジェスト、個別記事特定困難)"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+---
+title: "Vercel's Andrew Qu on why agents are a new kind of software"
+date: 2026-07-03
+processed_at: 2026-07-03T07:11:08.506156+00:00
+source_label: "uid=324"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-07-03
+
+**Subject:** Vercel's Andrew Qu on why agents are a new kind of software
+**Collected:** 2026-07-03T07:11:08.506163+00:00
+**Articles linked:** 14
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3LmxhdGVudC5zcGFjZSUyRnAlMkZ2ZXJjZWwtYWdlbnRzLW5ldy1zb2Z0d2FyZSIsInAiOjIwNDc2MjM2NCwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgzMDM3NDYwLCJleHAiOjIwOTg2MTM0NjAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9._CrRTTBfNklssiPNKYAlYjFJNRbge2_DddCm5QYABoc?
+
+## 2. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=204762364&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ3NjIzNjQsImlhdCI6MTc4MzAzNzQ2MCwiZXhwIjoxNzg1NjI5NDYwLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.fIG74ATebEePlZj35zelQ1utqjq2MRVR7QMtNa4TN_8
+
+## 3. Link
+
+- **URL:** https://substack.com/@ricmac
+
+## 4. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=204762364&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ3NjIzNjQsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgzMDM3NDYwLCJleHAiOjE3ODU2Mjk0NjAsImlzcyI6InB1Yi0xMDg0MDg5Iiwic3ViIjoicmVhY3Rpb24ifQ.wi3FXdO9WiciNVVOhRYSy64zc7NnlMxQLLMxb2Tq3Bo&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=204762364&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ3NjIzNjQsImlhdCI6MTc4MzAzNzQ2MCwiZXhwIjoxNzg1NjI5NDYwLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.fIG74ATebEePlZj35zelQ1utqjq2MRVR7QMtNa4TN_8&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=204762364&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ3NjIzNjQsImlhdCI6MTc4MzAzNzQ2MCwiZXhwIjoxNzg1NjI5NDYwLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.fIG74ATebEePlZj35zelQ1utqjq2MRVR7QMtNa4TN_8
+
+## 7. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL3ZlcmNlbC1hZ2VudHMtbmV3LXNvZnR3YXJlP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam95TURRM05qSXpOalFzSW1saGRDSTZNVGM0TXpBek56UTJNQ3dpWlhod0lqb3hOemcxTmpJNU5EWXdMQ0pwYzNNaU9pSndkV0l0TVRBNE5EQTRPU0lzSW5OMVlpSTZJbkJ2YzNRdGNtVmhZM1JwYjI0aWZRLmZJRzc0QVRlYkVlUGxaajM1emVsUTF1dHFqcTJNUlZSN1FNdE5hNFROXzgiLCJwIjoyMDQ3NjIzNjQsInMiOjEwODQwODksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MzAzNzQ2MCwiZXhwIjoyMDk4NjEzNDYwLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.zQWIfBVvvITTkMsZ7LLsSf5dvPDrwqWqkyqZWS_OsB0?&utm_source=substack&utm_medium=email
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/swyx/p/vercel-agents-new-software?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 9. Link
+
+- **URL:** https://substack.com/redirect/caf4637b-f1a9-4670-b6d2-20abe7e5a605?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/2c66edfa-79f5-4308-87ed-6aa58685de55?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/342b88ad-6696-4cb2-9edf-bbfa2c7b258b?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZ3d3cubGF0ZW50LnNwYWNlJTJGcCUyRnZlcmNlbC1hZ2VudHMtbmV3LXNvZnR3YXJlJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RNd016YzBOakFzSW1WNGNDSTZNVGM0TlRZeU9UUTJNQ3dpYVhOeklqb2ljSFZpTFRFd09EUXdPRGtpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LnA0RnFuWTJKQU8wWFdsSVdxOUYyaXlISWpqUzVVTzdaZGR1d3hPZHpHXzQiLCJwIjoyMDQ3NjIzNjQsInMiOjEwODQwODksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MzAzNzQ2MCwiZXhwIjoyMDk4NjEzNDYwLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.4bqXrGRPaLIaGrT3j3d00F_U5m0d8CUoB_LtmZIBBRk?&utm_source=substack&utm_medium=email&utm_content=postcta
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRFEzTmpJek5qUXNJbWxoZENJNk1UYzRNekF6TnpRMk1Dd2laWGh3SWpveE9ERTBOVGN6TkRZd0xDSnBjM01pT2lKd2RXSXRNVEE0TkRBNE9TSXNJbk4xWWlJNkltUnBjMkZpYkdWZlpXMWhhV3dpZlEuZFUyUm42REc1em9nOU9TbVZUUnZSZVM0NzNLOUFIMGFuSHNpbEJ1U3dUSSIsInAiOjIwNDc2MjM2NCwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgzMDM3NDYwLCJleHAiOjIwOTg2MTM0NjAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.VZtgdSmCxJSHQx2f1-_kJQP3uOdgACeZAxjeekqAB5Y?
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDQ3NjIzNjQsInMiOjEwODQwODksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MzAzNzQ2MCwiZXhwIjoyMDk4NjEzNDYwLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.gj_83GkJbLlyo0ZcvEoKT-t9In6nfCFw88-umD5NAYs?
+

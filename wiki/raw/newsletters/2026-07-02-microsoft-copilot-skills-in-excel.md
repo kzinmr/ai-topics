@@ -1,0 +1,74 @@
+---
+title: "Microsoft Copilot Skills in Excel"
+date: 2026-07-02
+processed_at: 2026-07-03T07:10:58.032307+00:00
+source_label: "uid=315"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-07-02
+
+**Subject:** Microsoft Copilot Skills in Excel
+**Collected:** 2026-07-03T07:10:58.032314+00:00
+**Articles linked:** 15
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGdGhlc2lnbmFsLnN1YnN0YWNrLmNvbSUyRnAlMkZtaWNyb3NvZnQtY29waWxvdC1za2lsbHMtaW4tZXhjZWwiLCJwIjoyMDQ0MTg5OTUsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyOTkzMzc1LCJleHAiOjIwOTg1NjkzNzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.WTxde2hqTZCcP35EzH31Xu-WPe7_yCvG0aPkIa6VFoY?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3AvbWljcm9zb2Z0LWNvcGlsb3Qtc2tpbGxzLWluLWV4Y2VsP3V0bV9jYW1wYWlnbj1lbWFpbC1oYWxmLXBvc3Qmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam95TURRME1UZzVPVFVzSW1saGRDSTZNVGM0TWprNU16TTNOU3dpWlhod0lqb3hOemcxTlRnMU16YzFMQ0pwYzNNaU9pSndkV0l0TWprek1UVTBJaXdpYzNWaUlqb2ljRzl6ZEMxeVpXRmpkR2x2YmlKOS45S0xUUzg5RWgxa2FrSmZ2OVZiWWwyZDlqVlZBcGFNcjVpQkZQekFyLTlrIiwicCI6MjA0NDE4OTk1LCJzIjoyOTMxNTQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4Mjk5MzM3NSwiZXhwIjoyMDk4NTY5Mzc1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.y5gEQ_MQsoS4XHOqx7d8rM5jhD-i08JukAnkd-K4fis?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=204418995&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ0MTg5OTUsImlhdCI6MTc4Mjk5MzM3NSwiZXhwIjoxNzg1NTg1Mzc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.9KLTS89Eh1kakJfv9VbYl2d9jVVApaMr5iBFPzAr-9k&utm_content=watch_now_gif
+
+## 4. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=204418995&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ0MTg5OTUsImlhdCI6MTc4Mjk5MzM3NSwiZXhwIjoxNzg1NTg1Mzc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.9KLTS89Eh1kakJfv9VbYl2d9jVVApaMr5iBFPzAr-9k&utm_content=watch_now_button
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=204418995&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ0MTg5OTUsImlhdCI6MTc4Mjk5MzM3NSwiZXhwIjoxNzg1NTg1Mzc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.9KLTS89Eh1kakJfv9VbYl2d9jVVApaMr5iBFPzAr-9k
+
+## 6. Link
+
+- **URL:** https://substack.com/@alexbanks
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=204418995&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ0MTg5OTUsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgyOTkzMzc1LCJleHAiOjE3ODU1ODUzNzUsImlzcyI6InB1Yi0yOTMxNTQiLCJzdWIiOiJyZWFjdGlvbiJ9.ji1Nr8bh4ZGDc6nX83_MRvKf__SX_mCbwC32gVCU3Rw&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 8. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=204418995&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ0MTg5OTUsImlhdCI6MTc4Mjk5MzM3NSwiZXhwIjoxNzg1NTg1Mzc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.9KLTS89Eh1kakJfv9VbYl2d9jVVApaMr5iBFPzAr-9k&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=204418995&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDQ0MTg5OTUsImlhdCI6MTc4Mjk5MzM3NSwiZXhwIjoxNzg1NTg1Mzc1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.9KLTS89Eh1kakJfv9VbYl2d9jVVApaMr5iBFPzAr-9k
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvdGhlc2lnbmFsL3AvbWljcm9zb2Z0LWNvcGlsb3Qtc2tpbGxzLWluLWV4Y2VsP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam95TURRME1UZzVPVFVzSW1saGRDSTZNVGM0TWprNU16TTNOU3dpWlhod0lqb3hOemcxTlRnMU16YzFMQ0pwYzNNaU9pSndkV0l0TWprek1UVTBJaXdpYzNWaUlqb2ljRzl6ZEMxeVpXRmpkR2x2YmlKOS45S0xUUzg5RWgxa2FrSmZ2OVZiWWwyZDlqVlZBcGFNcjVpQkZQekFyLTlrIiwicCI6MjA0NDE4OTk1LCJzIjoyOTMxNTQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4Mjk5MzM3NSwiZXhwIjoyMDk4NTY5Mzc1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ._mVmvZLySmgbqj4bB55YD-VrTFeDqmxptLOG7OM2B4o?&utm_source=substack&utm_medium=email
+
+## 11. Link
+
+- **URL:** https://open.substack.com/pub/thesignal/p/microsoft-copilot-skills-in-excel?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/376c4d90-8459-4c38-987c-ce7f4ab40e60?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZ0aGVzaWduYWwuc3Vic3RhY2suY29tJTJGcCUyRm1pY3Jvc29mdC1jb3BpbG90LXNraWxscy1pbi1leGNlbCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSnBZWFFpT2pFM09ESTVPVE16TnpVc0ltVjRjQ0k2TVRjNE5UVTROVE0zTlN3aWFYTnpJam9pY0hWaUxUSTVNekUxTkNJc0luTjFZaUk2SW1Ob1pXTnJiM1YwSW4wLlJ6ZUVoUTdIVmpwTGdJNERIRmlxUDZZUDlFUDdLcmlIZWR6YkFERG1obG8iLCJwIjoyMDQ0MTg5OTUsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyOTkzMzc1LCJleHAiOjIwOTg1NjkzNzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.KJxmCs4FZk79k42LGFQB7aAiDUSHHBQEju1gPwEO4E8?simple=true&utm_source=paywall&utm_medium=email&utm_content=204418995&next=https://thesignal.substack.com/p/microsoft-copilot-skills-in-excel
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRFEwTVRnNU9UVXNJbWxoZENJNk1UYzRNams1TXpNM05Td2laWGh3SWpveE9ERTBOVEk1TXpjMUxDSnBjM01pT2lKd2RXSXRNamt6TVRVMElpd2ljM1ZpSWpvaVpHbHpZV0pzWlY5bGJXRnBiQ0o5LlpzNER3TTVHWWtRaVFIejduOWpFLVZOQmVrLUlabGVNQmtxMlc2WVRhSGMiLCJwIjoyMDQ0MTg5OTUsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyOTkzMzc1LCJleHAiOjIwOTg1NjkzNzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.paHKGz5VwxNvanqSTIx3lLAalYPFane5OK3cMbkfi_Y?
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDQ0MTg5OTUsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgyOTkzMzc1LCJleHAiOjIwOTg1NjkzNzUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.gVk2gqOTbJ9Fyr_EOkFAKbtlXh0fyITsKgfWQ167774?
+

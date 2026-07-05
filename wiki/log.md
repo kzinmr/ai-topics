@@ -1,3 +1,12 @@
+## 2026-07-05
+
+- **Pages Updated**:
+  - `entities/armin-ronacher.md` — Added "Better Models: Worse Tools — Tool Schema Regression" section: Claude Opus 4.8/Sonnet 5 invented tool keys in Pi's edit tool, RL training artifact hypothesis (harness-optimized for Claude Code's forgiving tool shape), strict mode fix, Codex non-regression comparison. Updated `updated` date, sources, and URLs.
+  - `entities/simon-willison.md` — Added "July 2026 Updates" section: sqlite-utils 4.0rc2 Fable-driven release ($149.25, cross-model GPT-5.5 review, data-loss `delete_where()` bug discovery); "Better Models: Worse Tools" quote post reference. Updated `updated` date and sources.
+
+- **Pipeline**: blog-wiki-ingest (recovered from blog-triage checkpoint after JSON parse failure)
+- **Triage decisions processed**: 2 takes, 1 reference, 12 skips
+
 ## 2026-07-02
 
 - **Pages Updated**:

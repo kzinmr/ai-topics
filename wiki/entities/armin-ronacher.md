@@ -6,9 +6,9 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-06-24
+updated: 2026-07-05
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md]
 ---
 
 
@@ -221,6 +221,16 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
   - **Controlling loops:** The harness decides when work is finished. In the agent loop, the model says "done" and the human reviews. In harness loops, even the "done" signal loses meaning — it's just communicated to yet another machine that judges. The human role is reduced to that of a messenger.
   - **Pi's cautious approach as a positive example:** Pi has been cautious, and Ronacher believes that caution is good. He does not want Pi to become an uncontrolled swarm making changes he cannot follow, nor to win the race toward software that writes itself at the cost of maintainability. At the same time, Pi is a harness, and harnesses are at the center of these experiments — even those with reservations must experiment to understand how to make this future bounded and survivable.
 
+**Better Models: Worse Tools — Tool Schema Regression (July 2026):** Ronacher's July 4, 2026 essay "Better Models: Worse Tools" documents a finding: newer Claude models (Opus 4.8, Sonnet 5) sometimes call Pi's edit tool with extra invented trailing keys in the `edits[]` array. The actual `oldText`/`newText` payloads were byte-correct; the model produced the right invocation but appended nonsense at the end of the object.
+
+Key findings:
+  - **Getting worse, not better:** Opus 4.5 did NOT show this behavior. Opus 4.8 and Sonnet 5 are regressing in tool schema fidelity.
+  - **Training artifact hypothesis:** Anthropic's RL post-training optimizes for Claude Code's forgiving harness. Claude Code's client silently filters unknown keys, applies parameter aliases, repairs Unicode, and retries on malformed calls.
+  - **Off-distribution schemas:** Pi's nested `edits[]` shape is increasingly off-distribution. The "better" the model, the stronger its prior toward Claude Code's tool shapes.
+  - **Strict mode fixes it:** Anthropic's strict tool invocation eliminates the issue via server-side grammar-constrained sampling.
+  - **Codex didn't regress:** Harmony's `<|constrain|>json` markers enable JSON-constrained sampling — Codex models were unaffected.
+  - **Implication:** Tool schemas are not neutral on Anthropic models. The more post-training happens inside Claude Code, the more other harnesses must inherit its quirks.
+
 ## Influence Metrics
 
 | Project | GitHub Stars | Language | Monthly Downloads | Notes |
@@ -269,6 +279,7 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
 - https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/ — "The Center Has a Bias"
 - https://lucumr.pocoo.org/2026/6/10/gaslighting/ — "Gaslighting Openness"
 - https://lucumr.pocoo.org/2026/6/23/the-coming-loop/ — "The Coming Loop"
+- https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/ — "Better Models: Worse Tools"
 - https://lucumr.pocoo.org/2026/1/27/earendil — "Colin and Earendil"
 - https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/ — "Rye Grows With UV"
 - https://lucumr.pocoo.org/projects/ — Projects page

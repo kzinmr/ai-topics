@@ -1,0 +1,216 @@
+{
+  "run_id": "20260704T071018Z",
+  "triaged_at": "2026-07-04T07:15:00Z",
+  "source": "newsletter-ingest",
+  "newsletter": {
+    "subject": "Meta's 'Watermelon' LLM Catches GPT-5.5",
+    "date": "2026-07-03",
+    "source_label": "uid=326",
+    "newsletter_url": "https://getsuperintel.site/p/meta-s-watermelon-llm-catches-gpt-5-5",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-03-meta-s-watermelon-llm-catches-gpt-5-5.md"
+  },
+  "summary": "Get Super Intel newsletter covering Meta's Watermelon LLM (Llama 5) matching GPT-5.5 performance, Zuckerberg's internal memo about slow AI agent progress, broader AI industry developments including robot-run facilities, AI political influence spending, and Fortune 500 AI adoption surveys.",
+  "classification_counts": {
+    "critical": 2,
+    "high": 5,
+    "low": 3,
+    "skip": 6
+  },
+  "articles": [
+    {
+      "link_num": 12,
+      "importance": "critical",
+      "title": "Meta's new AI model catches up to OpenAI's GPT-5, Zuckerberg says",
+      "url": "https://www.businessinsider.com/meta-ai-model-catches-up-openai-gpt-5-says-2026-7",
+      "reason": "Core story: Meta Watermelon/Llama 5 reaching GPT-5.5 parity. Directly relevant to wiki model coverage and competitive landscape.",
+      "suggested_wiki_pages": ["Meta", "Llama", "GPT-5", "LLM competitive landscape"],
+      "action": "scrape_and_ingest"
+    },
+    {
+      "link_num": 14,
+      "importance": "critical",
+      "title": "Mark Zuckerberg tells staff that AI agents haven't progressed as quickly as he'd hoped",
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped",
+      "reason": "Major industry signal: Zuckerberg's internal assessment of AI agent progress. Directly relevant to AI agents concept page and Meta entity page.",
+      "suggested_wiki_pages": ["Meta", "AI Agents", "Mark Zuckerberg"],
+      "action": "scrape_and_ingest"
+    },
+    {
+      "link_num": 15,
+      "importance": "high",
+      "title": "Mark Zuckerberg says Meta's agentic AI efforts aren't progressing as fast as he'd hoped",
+      "url": "https://siliconangle.com/2026/07/02/mark-zuckerberg-says-metas-agentic-ai-efforts-arent-progressing-fast-hed-hoped",
+      "reason": "Same story as Link 14 but SiliconAngle perspective — useful as secondary source for the Zuckerberg AI agents memo.",
+      "suggested_wiki_pages": ["Meta", "AI Agents"],
+      "action": "scrape_as_secondary_source"
+    },
+    {
+      "link_num": 10,
+      "importance": "high",
+      "title": "Sam Altman and Dario Amodei walking back AI jobs apocalypse prophecies",
+      "url": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo",
+      "reason": "Relevant to OpenAI/Anthropic entity pages and AI safety/employment concept pages. Key figures revising their positions.",
+      "suggested_wiki_pages": ["Sam Altman", "Dario Amodei", "OpenAI", "Anthropic", "AI safety"],
+      "action": "scrape_and_ingest"
+    },
+    {
+      "link_num": 7,
+      "importance": "high",
+      "title": "World's first fully robot-run facility",
+      "url": "https://tech.yahoo.com/general/articles/world-first-fully-robot-run-184455211.html",
+      "reason": "Relevant to AI agents, robotics, and automation concept pages. Milestone in autonomous AI operations.",
+      "suggested_wiki_pages": ["AI Agents", "Robotics AI"],
+      "action": "scrape_and_ingest"
+    },
+    {
+      "link_num": 13,
+      "importance": "high",
+      "title": "Mark Zuckerberg tells staff that AI agents haven't progressed as quickly (Yahoo Finance syndication)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-zuckerberg-tells-staff-ai-233810870.html",
+      "reason": "Yahoo Finance syndication of the Zuckerberg memo. Duplicate of Link 14 topic but useful for access if TechCrunch is paywalled.",
+      "suggested_wiki_pages": ["Meta", "AI Agents"],
+      "action": "scrape_as_secondary_source"
+    },
+    {
+      "link_num": 5,
+      "importance": "high",
+      "title": "Peter Thiel at Aspen on Pope, China, AI",
+      "url": "https://edition.cnn.com/2026/07/02/us/peter-thiel-aspen-pope-china-ai-cec",
+      "reason": "Peter Thiel's views on AI geopolitics. Relevant to AI policy and industry figures.",
+      "suggested_wiki_pages": ["AI policy", "Peter Thiel"],
+      "action": "scrape_and_ingest"
+    },
+    {
+      "link_num": 20,
+      "importance": "high",
+      "title": "AI, Anthropic, Congress spending, OpenAI, midterms, elections",
+      "url": "https://www.npr.org/2026/06/22/nx-s1-5856359/ai-anthropic-congress-spending-openai-midterms-election",
+      "reason": "AI industry political spending and election influence. Relevant to AI policy and Anthropic/OpenAI entity pages.",
+      "suggested_wiki_pages": ["AI policy", "Anthropic", "OpenAI"],
+      "action": "scrape_and_ingest"
+    },
+    {
+      "link_num": 6,
+      "importance": "low",
+      "title": "Televised nervous breakdown — CEO of Palantir",
+      "url": "https://www.yahoo.com/entertainment/tv/articles/televised-nervous-breakdown-ceo-palantir-212100357.html",
+      "reason": "Palantir CEO coverage — tangentially AI-related but primarily entertainment/personality focused.",
+      "suggested_wiki_pages": [],
+      "action": "optional_scrape"
+    },
+    {
+      "link_num": 8,
+      "importance": "low",
+      "title": "YouTube video (hBtVGwuJzpk)",
+      "url": "https://www.youtube.com/watch?v=hBtVGwuJzpk&t=3s",
+      "reason": "Video content — topic unknown without transcript. May be relevant depending on content.",
+      "suggested_wiki_pages": [],
+      "action": "optional_scrape"
+    },
+    {
+      "link_num": 11,
+      "importance": "low",
+      "title": "X post by @MTSlive (status 2070141140607832353)",
+      "url": "https://x.com/MTSlive/status/2070141140607832353",
+      "reason": "X/Twitter post — content unknown. Likely secondary reference in newsletter.",
+      "suggested_wiki_pages": [],
+      "action": "optional_scrape"
+    },
+    {
+      "link_num": 1,
+      "importance": "skip",
+      "title": "Newsletter self-link (getsuperintel.site)",
+      "url": "https://getsuperintel.site/p/meta-s-watermelon-llm-catches-gpt-5-5",
+      "reason": "Newsletter article itself — already captured as raw newsletter digest.",
+      "action": "skip"
+    },
+    {
+      "link_num": 2,
+      "importance": "skip",
+      "title": "Newsletter self-link (duplicate)",
+      "url": "https://getsuperintel.site/p/meta-s-watermelon-llm-catches-gpt-5-5",
+      "reason": "Duplicate of Link 1.",
+      "action": "skip"
+    },
+    {
+      "link_num": 3,
+      "importance": "skip",
+      "title": "X/Twitter account link (kimmonismus)",
+      "url": "https://twitter.com/kimmonismus",
+      "reason": "Account link, not an article. May be relevant for X account tracking.",
+      "action": "skip"
+    },
+    {
+      "link_num": 4,
+      "importance": "skip",
+      "title": "Goldcast webinar registration (FIN + AWS)",
+      "url": "https://fin.registration.goldcast.io/webinar/3dd819e8-2996-46d1-83da-eeed3dadeeb3",
+      "reason": "Promotional webinar ad — not editorial content.",
+      "action": "skip"
+    },
+    {
+      "link_num": 9,
+      "importance": "skip",
+      "title": "YouTube video (duplicate of Link 8)",
+      "url": "https://www.youtube.com/watch?v=hBtVGwuJzpk&t=3s",
+      "reason": "Duplicate of Link 8.",
+      "action": "skip"
+    },
+    {
+      "link_num": 16,
+      "importance": "skip",
+      "title": "Goldcast webinar registration (duplicate ad)",
+      "url": "https://fin.registration.goldcast.io/webinar/3dd819e8-2996-46d1-83da-eeed3dadeeb3",
+      "reason": "Duplicate ad placement.",
+      "action": "skip"
+    },
+    {
+      "link_num": 17,
+      "importance": "skip",
+      "title": "Goldcast webinar registration (duplicate ad)",
+      "url": "https://fin.registration.goldcast.io/webinar/3dd819e8-2996-46d1-83da-eeed3dadeeb3",
+      "reason": "Duplicate ad placement.",
+      "action": "skip"
+    },
+    {
+      "link_num": 18,
+      "importance": "skip",
+      "title": "Goldcast webinar registration (duplicate ad)",
+      "url": "https://fin.registration.goldcast.io/webinar/3dd819e8-2996-46d1-83da-eeed3dadeeb3",
+      "reason": "Duplicate ad placement.",
+      "action": "skip"
+    },
+    {
+      "link_num": 19,
+      "importance": "skip",
+      "title": "Goldcast webinar registration (duplicate ad)",
+      "url": "https://fin.registration.goldcast.io/webinar/3dd819e8-2996-46d1-83da-eeed3dadeeb3",
+      "reason": "Duplicate ad placement.",
+      "action": "skip"
+    }
+  ],
+  "dedup_analysis": {
+    "total_raw_links": 20,
+    "unique_articles": 11,
+    "duplicates_skipped": 4,
+    "ads_skipped": 5,
+    "newsletter_self_links_skipped": 2
+  },
+  "recommended_actions": {
+    "immediate_ingest": [
+      "https://www.businessinsider.com/meta-ai-model-catches-up-openai-gpt-5-says-2026-7",
+      "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped"
+    ],
+    "batch_ingest": [
+      "https://siliconangle.com/2026/07/02/mark-zuckerberg-says-metas-agentic-ai-efforts-arent-progressing-fast-hed-hoped",
+      "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo",
+      "https://tech.yahoo.com/general/articles/world-first-fully-robot-run-184455211.html",
+      "https://edition.cnn.com/2026/07/02/us/peter-thiel-aspen-pope-china-ai-cec",
+      "https://www.npr.org/2026/06/22/nx-s1-5856359/ai-anthropic-congress-spending-openai-midterms-election"
+    ],
+    "optional": [
+      "https://www.yahoo.com/entertainment/tv/articles/televised-nervous-breakdown-ceo-palantir-212100357.html",
+      "https://www.youtube.com/watch?v=hBtVGwuJzpk&t=3s"
+    ]
+  }
+}
