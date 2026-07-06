@@ -1124,3 +1124,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 ## 2026-07-05
 
 - **wiki-graph-analysis** — Full weekly wiki graph analysis run: 2,205 pages scanned. Report saved to wiki/queries/wiki-graph-analysis-weekly-2026-07-05.md. Added Queries section to index.md.
+
+## 2026-07-05
+
+- **duplicate page merge** — Merged 33 entity-concept duplicate pairs (kept larger file per pair). Fixed stale ghost entry `entities/show-us-your-agent-skills` → `concepts/show-us-your-agent-skills` in index.md. 0 ghost entries after fix.
