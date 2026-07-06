@@ -1132,3 +1132,5 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **duplicate merge fix** — Recovered deleted page content from git (d4da1bff) and merged unique sections into kept pages. 28 of 33 pairs had unique content to merge (5 were fully overlapping). +1,439 lines of recovered content.
 
 - **sources field fix** — Added `sources: []` to 752 pages that were missing the field in YAML frontmatter. SCHEMA compliance: all pages now have the `sources` field.
+
+- **index.md missing entries fix** — Added 2,416 missing pages to index.md (746 entities, 1,653 concepts, 3 comparisons, 3 queries, 11 events). Index now has 2,676 entries covering all filesystem pages.
