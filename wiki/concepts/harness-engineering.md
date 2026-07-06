@@ -401,6 +401,9 @@ Each single harness failure creates a **trajectory cascade** — the failure at 
 
 ## Related Concepts
 
+- [[concepts/harness-engineering/system-architecture/claude-code-best-practices]] — Claude Code Best Practices — patterns, tips, and usage strategies for agentic coding with Claude Code
+- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Writing Effective Tools for AI Agents — tool design patterns for agent harnesses
+- [[concepts/harness-engineering/system-architecture/context-engineering]] — Context Engineering (system-architecture) — context window optimization techniques within harness engineering
 - [[concepts/agentic-engineering]] — The practice of engineering with AI coding agents, tightly coupled to harness engineering.
 - [[concepts/evaluation/ai-evals]] — The broader evaluation framework that harness engineering operationalizes.
 - [[concepts/evaluation/critique-shadowing]] — Husain's methodology for building aligned LLM judges.
