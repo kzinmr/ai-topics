@@ -1,7 +1,7 @@
 ---
 title: "Lance Martin (@rlancemartin)"
 created: 2026-05-23
-updated: 2026-06-09
+updated: 2026-07-06
 type: entity
 tags:
   - person
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-06-09_rlancemartin_designing-loops-with-fable-5.md
   - https://github.com/anthropics/skills/tree/main/skills/claude-api
   - https://github.com/anthropics/claude-cookbooks/tree/main/managed_agents/self_hosted_sandboxes
+  - https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-sonnet-5
 ---
 
 # Lance Martin (@rlancemartin)
@@ -70,7 +71,7 @@ Key findings from his experiments:
 
 ## Key Work
 
-### claude-api Skill (2026)
+### claude-api Skill (2026) & Sonnet 5 Migration
 
 Anthropic's official skill for building applications with the Claude Agents API. Maintained by Martin, it provides:
 
@@ -78,6 +79,7 @@ Anthropic's official skill for building applications with the Claude Agents API.
 - Full orchestration examples for self-hosted sandbox environments
 - Shared patterns for polling-based and webhook-based control planes
 - An `SKILL.md` guide that Claude Code itself can read to assist developers
+- **Sonnet 5 migration support**: Martin tweeted about the `/claude-api` skill in Claude Code, which includes migration guidance for moving to Claude Sonnet 5. The skill provides updated SDK patterns and API references aligned with the [Sonnet 5 prompting guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-sonnet-5).
 
 **Repository**: [github.com/anthropics/skills/tree/main/skills/claude-api](https://github.com/anthropics/skills/tree/main/skills/claude-api)
 

@@ -1431,6 +1431,7 @@
 - [[concepts/data-engineering]] — Data Engineering
 - [[concepts/data-engineering-for-ml]] — Data Engineering for ML
 - [[concepts/data-filtering-scaling-laws]] — A Bitter Lesson for Data Filtering — Stanford 2026
+- [[concepts/data-repetition-in-training]] — Internal Data Repetition Destroys Language Models — Chinchilla-era scaling law analysis showing verbatim duplicates waste up to 33% of compute; damage peaks at intermediate repeat counts following a power law in model size (Jun 26)
 - [[concepts/data-scaling-limits]] — Data Scaling Limits
 - [[concepts/datalog]] — Datalog
 - [[concepts/dataset-engineering]] — dataset-engineering

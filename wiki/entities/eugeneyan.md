@@ -3,11 +3,14 @@ title: Eugene Yan
 type: entity
 handle: "@eugeneyan"
 created: 2026-04-10
-updated: 2026-05-27
+updated: 2026-07-06
 tags:
   - person
   - infrastructure
-sources: []
+sources:
+  - https://eugeneyan.com/writing/working-with-ai/
+  - https://eugeneyan.com/writing/cybersecurity-evals/
+  - https://claude.com/blog/using-llms-to-secure-source-code
 ---
 
 
@@ -129,6 +132,8 @@ In his November 2024 post, Yan synthesized lessons from multiple ML conferences:
 - **Strategic:** Business alignment, product-market fit, competitive positioning
 
 ### Notable Blog Posts (eugeneyan.com/writing)
+| Jun 2026 | "Patterns for Building Cybersecurity Evals" | Cybersecurity evaluation benchmarks |
+| May 2026 | "How to Work and Compound with AI" | Working effectively with AI, context as infrastructure |
 
 | Date | Title | Topic |
 |---|---|---|
@@ -154,6 +159,13 @@ In his November 2024 post, Yan synthesized lessons from multiple ML conferences:
 - **Netflix PRS Workshop 2024** — "Applying LLMs to Recommendation Experiences"
 - **AI Engineer Summit 2023** — Keynote: "Building Blocks for LLM Systems"
 - Multiple other conference talks on ML engineering and LLM production
+### ai.engineer Conference (2026)
+
+Eugene Yan appeared at the ai.engineer conference (2026), sharing insights on working with AI and cybersecurity evals. He linked to three resources:
+
+- [How to Work and Compound with AI](https://eugeneyan.com/writing/working-with-ai/) — A deep dive on context as infrastructure, taste as configuration, verification for autonomy, scaling via delegation, and closing the loop. Key insight: treat AI sessions like onboarding a new teammate — maintain per-project `CLAUDE.md` files, `INDEX.md` annotated indexes, and structured memory layers. Skills encode workflows in markdown (e.g., `/polish`, `/write`, `/daily`) and are refined via session transcripts.
+- [Patterns for Building Cybersecurity Evals](https://eugeneyan.com/writing/cybersecurity-evals/) — Comprehensive survey of cybersecurity benchmarks (Cybench, CVE-Bench, CyberGym, ExploitGym, ExploitBench, MHBench, SCONE-Bench) measuring AI agent capabilities in finding/exploiting vulnerabilities. Key findings: agents hit ceilings on complex exploits, system frameworks matter more than model choice for red-teaming, and Claude Mythos led with 157/898 exploit instances on ExploitGym.
+- [Using LLMs to Secure Source Code](https://claude.com/blog/using-llms-to-secure-source-code) — Anthropic's blog post on using Claude for security-focused code review and vulnerability detection.
 
 ### Open Source Projects
 

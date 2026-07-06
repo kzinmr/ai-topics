@@ -1,3 +1,38 @@
+## [2026-07-06] x-accounts-scan | Updated Eugene Yan and Lance Martin entity pages with new sources
+
+### Changes
+- **Enriched** [[entities/eugeneyan]] — Added ai.engineer conference (2026) appearance with 3 linked resources: "How to Work and Compound with AI" (May 2026), "Patterns for Building Cybersecurity Evals" (Jun 2026), "Using LLMs to Secure Source Code" (Anthropic blog). Updated frontmatter sources and `updated` date to 2026-07-06. Added blog post summaries to Notable Blog Posts table.
+- **Enriched** [[entities/rlancemartin]] — Added Sonnet 5 migration guidance via `/claude-api` skill in Claude Code. New source: platform.claude.com prompting-claude-sonnet-5 guide. Updated `updated` date to 2026-07-06. Expanded claude-api Skill section with Sonnet 5 migration support detail.
+
+### Sources
+- https://eugeneyan.com/writing/working-with-ai/
+- https://eugeneyan.com/writing/cybersecurity-evals/
+- https://claude.com/blog/using-llms-to-secure-source-code
+- https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-sonnet-5
+
+### Stats
+- Pages enriched: 2 (eugeneyan, rlancemartin)
+
+## [2026-07-06] x-accounts-scan | HF CLI + 2 arXiv papers — 1 new concept page, 2 enrichments
+
+### Changes
+- **Skipped** [[concepts/coding-agents/hf-cli]] — HF CLI for Agents blog post already fully covered (105-line page + benchmark data + skill details)
+- **Created** [[concepts/data-repetition-in-training]] — arXiv 2606.24998: "Internal Data Repetition Destroys Language Models" by Joshua Kazdan et al. Chinchilla-era scaling law analysis of verbatim duplication damage. Key findings: non-monotonic damage peak at intermediate repeat counts, power-law scaling of peak in model size, ~33% compute waste from 10% repeated FLOPs budget. Links to data-filtering-scaling-laws, data-scaling-limits, scaling-laws.
+- **Enriched** [[concepts/multi-teacher-on-policy-distillation]] — Added arXiv 2606.30406 (MOPD paper by Wenhan Ma et al., Jun 29) to sources; bumped updated date. Paper confirms MOPD deployment in MiMo-V2-Flash and benchmarks against Mix-RL, Cascade RL, Off-Policy Finetune, Param-Merge baselines.
+- **Updated** [[index.md]] — Added data-repetition-in-training entry between data-filtering-scaling-laws and data-scaling-limits
+
+### Sources
+- https://huggingface.co/blog/hf-cli-for-agents (already covered)
+- https://arxiv.org/abs/2606.24998 (new concept page)
+- https://arxiv.org/abs/2606.30406 (source added to existing page)
+
+### Stats
+- Pages created: 1 (concepts/data-repetition-in-training)
+- Pages enriched: 1 (concepts/multi-teacher-on-policy-distillation — source + date)
+- Index entries added: 1
+
+---
+
 ## [2026-07-05] skeleton-enrich | Restored microsoft.md corruption, enriched 5+ entity pages
 
 ### Changes

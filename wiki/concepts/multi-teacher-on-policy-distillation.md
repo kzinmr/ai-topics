@@ -2,7 +2,7 @@
 title: "Multi-Teacher On-Policy Distillation (MOPD)"
 type: concept
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-07-06
 tags:
   - concept
   - training
@@ -17,6 +17,7 @@ sources:
   - https://yumoxu.notion.site/multi-teacher-on-policy-distillation
   - raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md
   - https://chinmaykarkar.com/blog/OPD_blog/
+  - https://arxiv.org/abs/2606.30406
 ---
 
 
