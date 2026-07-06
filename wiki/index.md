@@ -38,7 +38,7 @@
 - [[entities/alex-volkov]] — Alex Volkov (@altryne)
 - [[entities/alex-zhang]] — Alex L. Zhang
 - [[entities/ali-farhadi]] — Ali Farhadi
-- [[entities/aman-sanger]] — Aman Sanger
+- [[entities/aman-sanger]] — Aman Sanger — Cursor co-founder and CTO; pioneered self-driving codebases, three eras of AI coding, artifacts paradigm
 - [[entities/amazon-bedrock-agentcore]] — Amazon Bedrock AgentCore
 - [[entities/amazon-rivr]] — Amazon Acquires Rivr
 - [[entities/amp]] — Amp
@@ -188,7 +188,7 @@
 - [[entities/datasette-llm-limits]] — datasette-llm-limits
 - [[entities/david-curlewis]] — David Curlewis
 - [[entities/david-duvenaud]] — David Duvenaud — University of Toronto professor; co-creator of Talkie historical LLM, neural architecture search
-- [[entities/david-fowler]] — David Fowler
+- [[entities/david-fowler]] — David Fowler — Microsoft Distinguished Engineer; creator of SignalR, NuGet co-creator, ASP.NET Core architect, Aspire technical lead
 - [[entities/dax-raad]] — Dax Raad
 - [[entities/daytona-io]] — Daytona
 - [[entities/daytona-sandbox]] — Daytona Sandbox (Claude Managed Agents)

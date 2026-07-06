@@ -1,3 +1,9 @@
+## [2026-07-06] skeleton-enrich-daily | Enriched Aman Sanger + David Fowler from L2/stub to comprehensive
+
+- **Enriched** [[entities/aman-sanger]] — From 35-line stub (status: none) to 159-line comprehensive entity page. Added: Background (co-founding story, funding timeline, key metrics), Three Eras of AI Coding, Self-Driving Codebases, Artifacts Paradigm, Multi-Agent Architecture, Codebase Indexing, Reverse-Engineered GPT-4 Inference, Speaking & Media table (Lex Fridman, Latent Space, GTC 2026), Engineering Philosophy subsections (Speed is Not the Product, Compound Engineering, Specification-Driven Development, Don't Lose to Slop), Related People, See Also, and Sources.
+- **Enriched** [[entities/david-fowler]] — From 48-line L2 stub to 152-line comprehensive entity page. Added: Quick Facts table (146K followers, 15+ year MSFT career, Barbadian background), detailed Key Projects (SignalR creator, NuGet co-creator, ASP.NET Core architect, Aspire technical lead, Tally), AI & Aspire Philosophy (Speed is Not the Product, Intent vs Mechanics, Agent-Ready Infrastructure), Medium Blog Posts table (7 articles), Career Timeline, Philosophy & Engineering Principles table, and Sources.
+- Updated index.md entries with descriptive summaries for both entities.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
