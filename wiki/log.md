@@ -1,3 +1,13 @@
+## [2026-07-06] newsletter-wiki-ingest | Enriched Microsoft + Figure AI + AI Jailbreaking pages
+
+### Changes
+- **Enriched** [[entities/microsoft]] — Added Microsoft Frontier Company section ($2.5B, 6,000 engineers embedded in enterprises, Rodrigo Kede Lima, early partners LSEG/Unilever/Accenture, any-model IP protection). Updated `updated` date and sources.
+- **Enriched** [[entities/figure-ai]] — Added BMW Plant Spartanburg Deployment section (F.03 parts sequencing in logistics, Figure 02 30K+ BMW X3s track record, fingertip/3g sensors, palm cameras, wireless charging, Centre of Competence for Physical AI, Plant Leipzig pilot). Updated `updated` date and sources.
+- **Enriched** [[concepts/ai-jailbreaking]] — Added Industry CVSS for Jailbreaks section (Anthropic+Amazon+Microsoft+Google framework, 4 criteria, HackerOne programme). Updated `updated` date and sources.
+
+### Sources
+- raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md
+
 ## [2026-07-06] raw-backlog-ingest | Enriched MAI-Thinking-1 entity page and BenchFlow concept page
 
 ### Changes

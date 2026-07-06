@@ -2,7 +2,7 @@
 title: "Microsoft"
 type: entity
 created: 2026-04-29
-updated: 2026-07-05
+updated: 2026-07-06
 tags:
   - company
   - infrastructure
@@ -12,6 +12,7 @@ aliases: ["Microsoft Corporation", "MSFT", "Microsoft AI"]
 sources:
   - raw/newsletters/2026-04-28-openai-breaks-free-from-microsoft.md
   - raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
+  - raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md
 ---
 
 # Microsoft
@@ -63,6 +64,16 @@ Microsoft has been building its own in-house AI research division, the **Microso
 
 See [[entities/microsoft-ai-team]] for the full Microsoft AI Team profile.
 
+## Microsoft Frontier Company (July 2026)
+
+Microsoft announced the **Microsoft Frontier Company**, a new operating unit committing $2.5 billion and approximately 6,000 engineers to work inside enterprises and build AI systems those companies own themselves.
+
+- **Embedded model**: Frontier Company engineers deploy inside customer organisations to co-design, run, and continuously improve AI systems. Led by **Rodrigo Kede Lima**, most recently president of Microsoft Asia.
+- **Early partners**: London Stock Exchange Group, Unilever, and Accenture.
+- **Any model, your IP**: Customers can run OpenAI, Anthropic, Microsoft AI, open-source, or specialised industry models underneath. Microsoft commits that customer data and IP will not be used to train its models.
+- **Strategic origin**: Satya Nadella coined the "Frontier Firm" concept in the April 2025 Work Trend Index. In a June 2026 essay, he warned against 'a world where every company across every sector is ceding value to a few models that eat everything they see.'
+- **Analogy**: The forward-deployed engineer model popularised by Palantir — embedding AI expertise directly within customer operations rather than licensing software externally.
+
 ## AI Safety & Government Contracts (Apr 2026)
 
 Microsoft continues to participate in the broader AI governance conversation. Meanwhile, competitor Google signed a classified Pentagon AI deal despite internal protests from 600+ employees (reversing Google's 2018 Project Maven exit). Anthropic remains a holdout on classified military contracts, leading the Pentagon to designate them a "supply chain risk."
@@ -70,6 +81,7 @@ Microsoft continues to participate in the broader AI governance conversation. Me
 ## Related Entities
 - [[entities/openai]] — Strategic partner, now multi-cloud
 - [[entities/microsoft-ai-team]] — Internal AI research division
+- [[entities/microsoft-frontier-company]] — Embedded AI enterprise unit
 - [[entities/mai-thinking-1]] — MAI flagship reasoning model
 - [[concepts/ai-agent-engineering]] — Copilot integrates agent architectures
 - [[concepts/serving-llms-vllm]] — Azure hosts vLLM inference infrastructure

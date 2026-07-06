@@ -1,7 +1,7 @@
 ---
 title: "AI Jailbreaking"
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-07-06
 type: concept
 tags:
   - agent-safety
@@ -11,6 +11,7 @@ tags:
   - alignment
 sources:
   - raw/articles/minimaxir.com--2025-10-claude-haiku-jailbreak--f0c61834.md
+  - raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md
 ---
 
 # AI Jailbreaking
@@ -84,6 +85,17 @@ Jailbreaking is both a threat vector and a research methodology:
 - **As research**: Security researchers and AI labs use jailbreaking to **probe and measure** safety boundaries, discover failure modes before adversaries do, and harden models iteratively. This is the core function of [[concepts/evaluation/red-teaming-adversarial-eval|red-teaming]] — organised adversarial testing that treats model safety as an empirical, measurable property rather than a claim.
 
 The jailbreaking arms race mirrors classic computer security: defenders patch known exploits, attackers find new ones, and the frontier shifts. Unlike traditional software vulnerabilities, however, LLM jailbreaks are fundamentally *linguistic* — they exploit semantic ambiguity, persona confusion, and objective conflict rather than memory corruption or code injection.
+
+## Industry CVSS for Jailbreaks (July 2026)
+
+In July 2026, Anthropic — together with Amazon, Microsoft, and Google — began drafting an industry framework that scores jailbreak severity on four criteria:
+
+1. **Capability gain** — what dangerous capability does the jailbreak unlock?
+2. **Breadth** — how many models or deployments does it affect?
+3. **Ease of weaponization** — how easily can the attack be reproduced by adversaries?
+4. **Discoverability** — how likely is the jailbreak to be found and exploited?
+
+The framework mirrors the **CVSS** (Common Vulnerability Scoring System) standard that security teams have used for decades to triage software vulnerabilities. Alongside the framework, Anthropic launched a **HackerOne programme** inviting researchers to submit cyber vulnerability reports.
 
 ## Limitations and Open Problems
 

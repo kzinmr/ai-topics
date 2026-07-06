@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-07-06T07:23:42.753728+00:00",
+  "triage_run_id": "20260706T071024Z",
+  "source": "newsletter",
+  "summary_ja": "3ニュースレターをトリアージ：The Signal（Alex Banks）から2つのtake（Microsoft Frontier Company新設ユニット・Figure 03 BMW工場展開）、1つのreference（CVSS jailbreak severity枠組み）、その他skip（Fable 5再展開・Claude Scienceは既存Wikiでカバー済）。Simon Willison shot-scraper videoは既にentity pageに取り込み済でskip。beehiiv Microsoft Researchインタビューは全URL 403期限切れでアクセス不可のためskip。",
+  "decisions": [
+    {
+      "item_id": "<20260705130325.3.0d1626f886a8368b@mg-d0.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "The Signal — Anthropic's Fable Freedom, Microsoft's Inside Job, and Figure's Factory Foothold",
+      "url": "https://open.substack.com/pub/thesignal/p/anthropics-fable-freedom-microsofts",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ The Signalの編集ラウンドアップ。Fable 5再展開とJuly 7移行はconcepts/claude/fable-5.md（425行、lines 355-384）で詳細カバー済、Claude Scienceはconcepts/claude-science.mdでカバー済。Alex Banksの「metered intelligence」編集コメントは新しい事実でない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-05\n**Subject:** Anthropic's Fable Freedom, Microsoft's Inside Job, and Figure's Factory Foothold\n**Collected:** 2026-07-06T07:10:20.774505+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29"
+    },
+    {
+      "item_id": "batch-beehiiv-ahmed-awadallah",
+      "source": "newsletter",
+      "source_name": "Beehiiv newsletter (unknown publication) — Ahmed Awadallah interview",
+      "title": "All beehiiv tracking URLs expired (HTTP 403, yesterday's tokens)",
+      "url": "N/A — 20 beehiiv tracking URLs all return 403 expired token",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-05-exclusive-interview-with-ahmed-awadallah-partner-research-manager-microsoft-rese.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ beehiivトラッキングURL全20件が403期限切れ（前日配信のためトークン失効）。entities/ahmed-awadallah.md（43行）はECHO研究のみカバー。インタビュー内容にアクセス不可のため判断不能。件名からはMicrosoft Research AI FrontiersのAhmed Awadallahが対象。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-05\n**Subject:** Exclusive Interview with Ahmed Awadallah, Partner Research Manager,\tMicrosoft Research AI Frontiers\n**Collected:** 2026-07-06T07:10:22.092736+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/w9lZSkKiEPyI3g0di2x4VefEj"
+    },
+    {
+      "item_id": "<20260705211740.3.31de625adc86baba@mg-d1.substack.com>-skip1",
+      "source": "newsletter",
+      "source_name": "Simon Willison's Weblog (Substack)",
+      "title": "Have your agent record video demos of its work with shot-scraper video",
+      "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-05-have-your-agent-record-video-demos-of-its-work-with-shot-scraper-video.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ 内容は高品質だがentities/simon-willison.md（524行）に既に専用セクション「shot-scraper video — Agent-Self-Recorded Demos (Jun 30, 2026)」あり。raw/articlesの同名ファイルもsourcesに登録済（7月1日blog-ingest取得）。本文405行のフルコンテンツでstoryboard.yml詳細、Playwright録画、Datasette bulk-insertデモをカバー。SimonのSubstack版も同一内容で新情報なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-05\n**Subject:** Have your agent record video demos of its work with shot-scraper video\n**Collected:** 2026-07-06T07:10:23.303788+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zaW1vbncuc3Vic3RhY2suY29tL3N1YnNjcmliZ"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-07-06T07:38:10.174202+00:00",
+  "triage_run_id": "20260706T070054Z",
+  "source": "blog",
+  "summary_ja": "2026-07-06 blog-triage：全7記事中、1件reference（C2PA批判分析）、6件skip（非AI技術記事）。SeangoedeckeのC2PA記事はsynthid.mdのC2PA補足説明を拡充するreference。残りはSQLiteリリースノート、電子回路、PLDI参加記、フロントエンド実装記、Amazon/IP意見記事、Linuxカーネルプレパッチ。",
+  "decisions": [
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "seangoedecke.com",
+      "title": "C2PA only works if everything is signed",
+      "url": "https://seangoedecke.com/c2pa-only-works-if-everything-is-signed/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ C2PAのPKIベース署名方式とその採用障壁・安全劇場化を詳述。synthid.md(158行)のSynthID+C2PA節はC2PAを補完技術として紹介するのみで、C2PA固有の批判的分析（全画像署名のcatch-22、SNS保存時のmanifest除去問題、鍵管理問題、カメラハードウェア攻撃の現実性）が不足。synthid.mdに「C2PAの限界と批判」節追加、entities/seangoedecke-com.mdのTimelineに本記事追加が有効。前回blog-triage(7/2)でSean Goedeckeの「Text AI watermarks」記事を同様に処理済み—本記事はC2PA固有の別トピック。",
+      "candidate_wiki_path": "concepts/synthid.md",
+      "body_excerpt": "# C2PA only works if everything is signed\nSource: https://seangoedecke.com/c2pa-only-works-if-everything-is-signed/\nThe\nEuropean Union AI Act\nis Europe’s attempt to comprehensively regulate AI usage. A big part of that is the requirement that AI-generated content be identifiable: either tagged with "
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "sqlite-utils 4.0rc3",
+      "url": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-6-sqlite-utils--5a748542.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ sqlite-utils 4.0rc3リリースノート。Claude Fable 5とGPT-5.5を開発補助ツールとして言及するのみで、LLM/AI Agent技術コンテンツではない。非AI技術リリースノート。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# sqlite-utils 4.0rc3\nSource: https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything\nI hoped to release\nsqlite-utils 4.0\nstable this weekend, but as I worked through the backlog of issues and PRs with a combination of Claude Fable 5 and GPT-5.5 the changelog since rc2\nkept getting bigger"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "lcamtuf.substack.com",
+      "title": "Cursed circuits: capacitance multiplier",
+      "url": "https://lcamtuf.substack.com/p/cursed-circuits-capacitance-multiplier",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lcamtuf.substack.com--p-cursed-circuits-capacitance-multiplier--6ae4050a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 電子回路（オペアンプ容量倍増回路）の技術解説。LLM/AI Agent技術と無関係のハードウェア電子工学コンテンツ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Cursed circuits: capacitance multiplier - lcamtuf’s thing\nSource: https://lcamtuf.substack.com/p/cursed-circuits-capacitance-multiplier\nElectronic circuit theory is a\nfrequent theme\non this blog. As a part of this\nsorta-\ncurriculum, I published a number of articles about operational amplifiers. I "
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "bernsteinbear.com",
+      "title": "Travel notes: PLDI Boulder",
+      "url": "https://bernsteinbear.com/blog/travel-notes-pldi-boulder/?utm_source=rss",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/bernsteinbear.com--blog-travel-notes-pldi-boulder--4b53fbc9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ PLDI 2026 Boulder学会参加記。e-graph、Datalog、コンパイラ技術（BPE、linear scan register allocation）が話題だが、LLM/AI Agent関連ではない。プログラミング言語実装のカンファレンス旅行記。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Travel notes: PLDI Boulder\nSource: https://bernsteinbear.com/blog/travel-notes-pldi-boulder/?utm_source=rss\nI had another excellent\nPLDI\nthis\npast June. It was my fourth\n. I continued to meet new people and learn\nnew things!\nOverall: I got to meet a lot of new people, which was exciting. I had som"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Making a Shuffle Button",
+      "url": "https://blog.jim-nielsen.com/2026/notes-shuffle/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-notes-shuffle--14009941.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 個人ブログのシャッフル機能実装記。静的サイトでランダムノート表示を実現するフロントエンド技術解説。LLM/AI Agent技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Making a Shuffle Button\nSource: https://blog.jim-nielsen.com/2026/notes-shuffle/\nI made some updates to\nmy notes blog\n, including a change to how my “Shuffle” feature worked.\nFigured I’d blog about it.\nShuffle? On a Blog?\nAt the time of this writing, I have 974 “notes” that I’ve published.\nFor fun"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "Amazon Basics, but for intellectual property.",
+      "url": "https://idiallo.com/blog/amazon-basics-but-intellectual-property",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idiallo.com--blog-amazon-basics-but-intellectual-property--38439769.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ AI企業（Anthropic/OpenAI）が顧客データを利用して競合製品を開発するリスクをAmazon Basicsになぞらえた意見記事。Anthropic CPOのFigma取締役辞任とClaude Design発表の時系列に言及。トピックはAIガバナンス・利益相反に触れるが、分析深度は浅く個人的見解に留まる。entities/ibrahim-diallo.md(216行)は執筆者の他のAI関連記事をカバー済みだが、本記事追加のWiki価値は低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Amazon Basics, but for intellectual property.\nSource: https://idiallo.com/blog/amazon-basics-but-intellectual-property\nAmazon has been accused several times for ripping off merchants on its platform. And every single time they denied any wrongdoing.\nA merchant, or anyone really, can create a produ"
+    },
+    {
+      "item_id": "blog-unsaved-1",
+      "source": "blog",
+      "source_name": "LWN.net",
+      "title": "Kernel prepatch 7.2-rc2",
+      "url": "https://lwn.net/Articles/1081367/",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Linuxカーネル7.2-rc2プレパッチ案内。LLM/AI Agent技術と無関係。（unsaved_articles — 抽出不可）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    }
+  ]
+}

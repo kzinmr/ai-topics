@@ -1,7 +1,7 @@
 ---
 title: "Figure AI"
 created: 2026-05-18
-updated: 2026-06-01
+updated: 2026-07-06
 type: entity
 tags:
   - company
@@ -11,6 +11,7 @@ tags:
 sources:
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/newsletters/2026-05-31-the-signal-catalyst-brands-figure.md
+  - raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md
 aliases: ["Figure"]
 ---
 
@@ -47,6 +48,22 @@ Figure AI signed its first commercial agreement with **Catalyst Brands**, a port
 - **Shared investor**: Brookfield Asset Management is an investor in both Figure AI and Catalyst Brands, making this a natural strategic alignment
 
 This agreement marks Figure AI's transition from demonstration and pilot projects to a real commercial deployment within a major retail supply chain operation, leveraging the F.03 humanoid and Helix-02 VLA model capabilities proven in the earlier autonomous sorting demonstrations.
+
+## BMW Plant Spartanburg Deployment (July 2026)
+
+Figure's third-generation humanoid **F.03** began work at BMW's Plant Spartanburg in July 2026, graduating from the body shop to **parts sequencing in logistics**.
+
+**Proven on 30,000 cars**: Figure 02 spent ten months in Spartanburg's body shop inserting sheet-metal parts for welding, supporting production of more than 30,000 BMW X3s.
+
+**F.03 hardware improvements**:
+- **Fingertip sensors** detect forces as small as three grams
+- **Palm cameras** provide spatial awareness for component handling
+- **Soft multi-density exterior** enables safe operation near human workers
+- **Wireless charging** eliminates manual battery swaps
+
+**New task**: Sorting unsorted components into sequencing trolleys feeding the assembly line — a logistics role replacing manual parts sequencing.
+
+**Program vs pilot**: BMW established a **Centre of Competence for Physical AI in Production** and is piloting humanoids at **Plant Leipzig** (its first German deployment), with plans to scale Spartanburg's learnings across the global production network.
 
 ## Significance for AI Agents
 
