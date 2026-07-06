@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-06T18:28:56.747024+00:00",
+  "triage_run_id": "20260706T180052Z",
+  "source": "dreaming",
+  "summary_ja": "デイリーパイプライン飽和シナリオ。170件のraw記事をスキャンした結果、1件の新規gap（Claude Codeセッションキャッシュクロスアカウント漏洩、313 HN pts）を発見。残りは全パイプラインで処理済み（Godot AIコード禁止→ai-generated-code-policies.md、GPT-5.5 reasoning token clustering→reasoning-model-quality-degradation.md、C2PA→synthid.md、better-models-worse-tools、short-leash-ai-coding、senior-swe-bench、pxpipe、CurrentAI Gap Map、Safari MCP Server）または非AIコンテンツ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-non-ai-lcamtuf-circuits",
+      "source": "dreaming",
+      "source_name": "lcamtuf.substack.com",
+      "title": "[Batch] Non-AI blog articles from Jul 4-6",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: 非AI記事のバッチ。lcamtuf電子回路理論、bernsteinbear PLDIカンファレンス旅行記、Kindle DRMリバースエンジニアリング、matduggan列車旅行記、oldnewthing DLLデバッグ、construction-physics読書リスト、purplesyringa技術ブログ論、nesbittパッケージ管理ニュースレター、blog.jim-nielsen Appleデザインメモ、flexibitsカレンダーアプリ、LWN Guix脆弱性。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（非AIコンテンツ — バッチスキップ）"
+    }
+  ]
+}
