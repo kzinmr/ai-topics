@@ -1,3 +1,7 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
 ## [2026-07-06 11:16 UTC]
 
 **active-crawl**: Created 4 new concept pages from trending HN/X topics (July 3-6, 2026):
@@ -336,9 +340,8 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - **Sebastian Raschka Reasoning Book** — reference for concepts/inference-time-compute.md
 - **FDE article** (AIEWF) — incorporated into agentic-engineering.md enrichment above
 
-# Wiki Log
+---
 
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-06-30 11:15] — Active crawl — 4 new pages + 1 enriched
