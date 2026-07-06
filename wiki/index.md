@@ -1248,6 +1248,7 @@
 - [[concepts/claude-code/claude-code-leak]] — Claude Code Source Leak
 - [[concepts/claude-code/claude-code-routines]] — Claude Code Routines
 - [[concepts/claude-code/claude-code-sandboxing]] — Claude Code Sandboxing
+- [[concepts/claude-code/claude-code-session-cache-leakage]] — Claude Code Session Cache Cross-Account Leakage — Sonnet 5 cache miss after 5+ min leaked unrelated content into Enterprise ZDR sessions (Jul 4, 313 HN pts) (Jul 6)
 - [[concepts/claude-code/claude-code-skills]] — Claude Code Skills; enriched with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt) + comparison table (June 23)
 - [[concepts/claude-code/claude-code-source-patterns]] — Claude Code Source Patterns — Leaked Source Analysis
 - [[concepts/claude-code/claude-code-steering-methods]] — Claude Code Steering Methods

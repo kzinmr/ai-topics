@@ -2,6 +2,9 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-07-06 18:15 UTC] dreaming-wiki-ingest | Claude Code Session Cache Leakage — new concept page
+- **Created** [[concepts/claude-code/claude-code-session-cache-leakage]] — Claude Code Enterprise ZDR workspace session cache cross-account leakage (Jul 4, 2026). Sonnet 5 cache miss after 5+ minutes injected unrelated Minecraft temple content from another account. 313 HN pts, 132 comments. Distinct incident from [[concepts/claude-code/claude-code-leak]] (March npm supply-chain leak). Cross-platform (CLI + Mobile), confirmed not local. Updated `index.md`.
+
 ## [2026-07-06 11:16 UTC]
 
 **active-crawl**: Created 4 new concept pages from trending HN/X topics (July 3-6, 2026):
