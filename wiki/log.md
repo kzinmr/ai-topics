@@ -1,3 +1,16 @@
+## [2026-07-06] blog-wiki-ingest | Enriched SynthID C2PA section + Sean Goedecke entity page
+
+### Changes
+- **Enriched** [[concepts/synthid]] — Added "C2PAの限界と批判 — Sean Goedeckeの分析" section (6 critical lenses: all-image signing catch-22, SNS manifest stripping, 26-cert trust list, key management, safety theater, non-image applicability). Updated `updated` date and `sources` with new raw article.
+- **Enriched** [[entities/seangoedecke-com]] — Added Timeline entry for "C2PA only works if everything is signed" with wikilink to new synthid C2PA section. Updated `updated` date and `sources`.
+
+### Sources
+- raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md
+
+### Stats
+- Pages enriched: 2 (synthid, seangoedecke-com)
+- Articles skipped (archived): 6
+
 ## [2026-07-06] newsletter-wiki-ingest | Enriched Microsoft + Figure AI + AI Jailbreaking pages
 
 ### Changes

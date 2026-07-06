@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-02
+updated: 2026-07-06
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -14,6 +14,7 @@ sources:
   - raw/articles/seangoedecke.com--ai-gpus-live-longer-than-three-years--a4c8235c.md
   - raw/articles/seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md
   - raw/articles/seangoedecke.com--text-ai-watermarks--cd663c94.md
+  - raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md
 |---
 
 # Sean Goedecke
@@ -60,6 +61,7 @@ His writing philosophy is evident in his book's distribution model: **print at c
 || **2026-05-31** | Publishes "Build agents, not pipelines" — comprehensive comparison of pipeline vs agent architectures for LLM systems. Recommends "when in doubt, use agents" based on context-gathering difficulty, future-proofing, and one-directional migration pattern. References [[concepts/harness-engineering/agent-vs-pipeline-architecture]] |
 || **2026-05-17** | Publishes "The just-say-no engineer was a ZIRP phenomenon" — argues the "just-say-no" engineering archetype thrived under zero-interest-rate conditions and is now endangered by AI, but AI is not the root cause |
 ||| **2026-07-01** | Publishes "Text AI watermarks will always be trivial to remove" — detailed analysis of EU AI Act Article 50 text watermarking, SynthID's limitations at zero temperature, homoglyph-based watermarking by OpenAI/Anthropic, and the fundamental incompatibility of security-by-obscurity with AI Act interoperability requirements. → [[concepts/synthid#Text Watermark Criticism: The Removal Argument]] |
+|| **2026-07-06** | Publishes "C2PA only works if everything is signed" — companion piece to text watermark analysis. PKI-based C2PA signing examined through 6 critical lenses: all-image signing catch-22 (only 600/900K images signed/year), social media manifest stripping (tens-to-hundreds KB overhead per file), 26-certificate trust list bottleneck, local key management problem, safety theater risk for technically naive audiences, and non-image content applicability limits. Concludes C2PA is structurally sound but useless until universal camera+SNS adoption is achieved. → [[concepts/synthid#C2PAの限界と批判 — Sean Goedeckeの分析]] |
 | **2026-06-27** | Publishes "AI inference is obviously profitable" — A100 cost calculation ($1/M tokens), 70-80% gross margin analysis, rebuttal to VC-subsidy thesis. → [[concepts/ai-industry-financial-sustainability]] ||
 | **2026-06-14** | Publishes "AI GPUs live longer than three years" — thorough debunking of the "GPUs only last three years" meme. Oak Ridge Summit supercomputer 95%+ survival at 3 years; AWS has never retired an A100. Draws critical distinction between physical and economic lifespan. → [[concepts/ai-industry-financial-sustainability]] |
 |
