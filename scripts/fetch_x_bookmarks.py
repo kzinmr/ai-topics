@@ -51,8 +51,19 @@ def _sanitize_text(s):
     return s.translate(str.maketrans("", "", _INVISIBLE_CHARS))
 
 
+def _sanitize_dict(d):
+    """Recursively sanitize all string values in a dict/list structure."""
+    if isinstance(d, str):
+        return _sanitize_text(d)
+    if isinstance(d, list):
+        return [_sanitize_dict(item) for item in d]
+    if isinstance(d, dict):
+        return {k: _sanitize_dict(v) for k, v in d.items()}
+    return d
+
+
 def _sanitize_bookmark(t):
-    """Recursively sanitize text fields in a bookmark dict."""
+    """Sanitize text fields in a bookmark dict, including X Article body."""
     for key in ("text",):
         if key in t and isinstance(t[key], str):
             t[key] = _sanitize_text(t[key])
@@ -61,6 +72,9 @@ def _sanitize_bookmark(t):
         for field in ("expanded_url", "display_url", "title", "description"):
             if field in u and isinstance(u[field], str):
                 u[field] = _sanitize_text(u[field])
+    # Sanitize X Article body (plain_text, preview_text, title, etc.)
+    if isinstance(t.get("article"), dict):
+        t["article"] = _sanitize_dict(t["article"])
     return t
 
 
@@ -282,7 +296,7 @@ try:
             tweet_id = str(t.get("id"))
             article_data, err_cat, err_detail = fetch_article_body(tweet_id)
             if article_data:
-                t["article"] = article_data
+                t["article"] = _sanitize_dict(article_data)
                 article_fetches += 1
             else:
                 # Keep the partial article (title only); log the failure with category
