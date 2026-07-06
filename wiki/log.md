@@ -1,3 +1,17 @@
+## [2026-07-06 11:16 UTC]
+
+**active-crawl**: Created 4 new concept pages from trending HN/X topics (July 3-6, 2026):
+
+- [[concepts/ai-generated-code-policies]] — AI-Generated Code Policies: Godot engine ban on AI-authored code (558 HN pts), open source governance of AI contributions, policy design space
+- [[concepts/reasoning-model-quality-degradation]] — Reasoning Model Quality Degradation: GPT-5.5 Codex reasoning-token clustering at 516/1034/1552 (366 HN pts), hidden constraints, reliability cliff
+- [[concepts/enterprise-coding-agent-security]] — Enterprise Coding Agent Security: Claude Code session/cache leakage (313 HN pts) + Alibaba Claude Code workplace ban (335 HN pts), data exfiltration, sandboxing
+- [[concepts/ai-inventorship-patent-law]] — AI Inventorship & Patent Law: Japan Supreme Court rules AI cannot be inventor (398 HN pts), DABUS cases, international comparison
+
+Raw articles saved: 2026-06-30_pcgamer_godot-bans-ai-authored-code.md, 2026-06-27_github_gpt55-codex-reasoning-token-clustering.md, 2026-07-04_github_claude-code-session-cache-leakage.md, 2026-03-06_japannews_ai-cannot-be-patent-inventor.md
+
+Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions. Cross-referenced against wiki gaps — all 4 were genuine gaps with no prior concept pages.
+
+
 ## [2026-07-06] blog-wiki-ingest | Enriched SynthID C2PA section + Sean Goedecke entity page
 
 ### Changes

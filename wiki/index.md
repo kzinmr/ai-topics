@@ -1062,6 +1062,7 @@
 - [[concepts/ai-executive-orders]] — AI Executive Orders — U.S. presidential directives governing frontier AI access, including government-mediated model release gatekeeping
 - [[concepts/ai-exponential]] — AI Exponential
 - [[concepts/ai-gateway]] — AI Gateway — centralized LLM API routing with cost controls, rate-limiting, observability (LangSmith, Glean, OpenRouter)
+- [[concepts/ai-generated-code-policies]] — AI-Generated Code Policies — Governance rules for AI-authored code contributions in open source projects; Godot engine ban case study
 - [[concepts/ai-generated-issues-in-oss]] — AI-Generated Issues in Open Source
 - [[concepts/ai-governance-political-pressure]] — AI Governance Under Political Pressure — Anthropic-Trump Case
 - [[concepts/ai-image-generation]] — AI Image Generation
@@ -1070,6 +1071,7 @@
 - [[concepts/ai-industry-economics]] — AI Industry Economics — The June 2026 Financial Reckoning
 - [[concepts/ai-industry-financial-sustainability]] — AI Industry Financial Sustainability
 - [[concepts/ai-industry-news]] — AI Industry News (The Signal — Apr 26)
+- [[concepts/ai-inventorship-patent-law]] — AI Inventorship & Patent Law — Legal status of AI as inventor on patent applications; Japan Supreme Court 2026 ruling, DABUS cases, international comparison
 - [[concepts/ai-jailbreaking]] — AI Jailbreaking
 - [[concepts/ai-lab-subscription-vs-api-economics]] — AI Lab Subscription vs API Economics
 - [[concepts/ai-labor-displacement]] — AI Labor Displacement & Economic Impact
@@ -1531,6 +1533,7 @@
 - [[concepts/enterprise-ai-deployment-jv]] — Enterprise AI Deployment Joint Ventures
 - [[concepts/enterprise-ai-operating-model]] — Enterprise AI Operating Model
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns
+- [[concepts/enterprise-coding-agent-security]] — Enterprise Coding Agent Security — Security risks of coding agents in enterprise: session leakage, data exfiltration, supply chain; Claude Code and Alibaba case studies
 - [[concepts/entropix]] — entropix
 - [[concepts/epd-disaggregation]] — EPD Disaggregation
 - [[concepts/erdos-unit-distance-problem]] — Erdős Unit Distance Problem (AI Solution)
@@ -2308,6 +2311,7 @@
 - [[concepts/reasoning-aware-retrieval]] — Reasoning-Aware Retrieval
 - [[concepts/reasoning-compression]] — The principle that software complexity and reasoning requirements will be compressed over time as models improve, eli...
 - [[concepts/reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
+- [[concepts/reasoning-model-quality-degradation]] — Reasoning Model Quality Degradation — Token clustering and hidden constraints that degrade reasoning model performance; GPT-5.5 Codex case study
 - [[concepts/reasoning-models]] — Reasoning Models
 - [[concepts/reasoning-retrieval]] — Reasoning Retrieval
 - [[concepts/recommendation-systems]] — recommendation-systems
@@ -2631,7 +2635,6 @@
 - [[concepts/zig]] — zig
 - [[concepts/zjit]] — ZJIT
 - [[concepts/zombie-internet]] — Zombie Internet
-
 ## Comparisons
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
