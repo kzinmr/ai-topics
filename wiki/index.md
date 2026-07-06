@@ -460,7 +460,7 @@
 - [[entities/machina]] — Machina
 - [[entities/mahadk]] — Technical writer covering AI, web development, and practical software engineering. Writes about LLM applications, clo...
 - [[entities/mai-image-2-5]] — MAI-Image-2.5
-- [[entities/mai-thinking-1]] — MAI-Thinking-1
+- [[entities/mai-thinking-1]] — MAI-Thinking-1 — 35B active/1T MoE reasoning model by Microsoft AI; hill-climbing machine, YOLO framework
 - [[entities/malika-aubakirova]] — Malika Aubakirova
 - [[entities/manus]] — Manus
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Netscape, venture capitalist at a16z; influential voice on AI accelerationism
@@ -942,7 +942,7 @@
 - [[concepts/ai-benchmarks/appworld]] — AppWorld
 - [[concepts/ai-benchmarks/arc-agi-1]] — ARC-AGI-1
 - [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
-- [[concepts/ai-benchmarks/benchflow-tool]] — BenchFlow
+- [[concepts/ai-benchmarks/benchflow-tool]] — BenchFlow — Dockerized agent evaluation framework; maintainer of Awesome Agent Evals curated list
 - [[concepts/ai-benchmarks/benchjack]] — BenchJack
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmaxxing (Benchmark Over-optimization)
 - [[concepts/ai-benchmarks/bfcl-v3]] — BFCL V3 (Berkeley Function Calling Leaderboard V3)

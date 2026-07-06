@@ -1,3 +1,17 @@
+## [2026-07-06] raw-backlog-ingest | Enriched MAI-Thinking-1 entity page and BenchFlow concept page
+
+### Changes
+- **Enriched** [[entities/mai-thinking-1]] — Fixed formatting issues, added Training Infrastructure section (YOLO framework, 8K GB200 cluster, MAIA-200 inference silicon), Safety and Red Teaming section, and updated frontmatter `updated` date to 2026-07-06
+- **Enriched** [[concepts/ai-benchmarks/benchflow-tool]] — Added Awesome Agent Evals List section documenting the 443-link curated eval resource compiled by BenchFlow via depth-4 citation crawl. Updated frontmatter `sources` with raw article path and `updated` date
+
+### Sources
+- raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
+- raw/articles/benchflow-awesome-evals-2025.md
+
+### Stats
+- Pages enriched: 2 (mai-thinking-1, benchflow-tool)
+- Articles skipped (already archived): 3
+
 ## [2026-07-06] x-accounts-scan | Updated Eugene Yan and Lance Martin entity pages with new sources
 
 ### Changes

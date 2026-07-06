@@ -2,13 +2,14 @@
 title: BenchFlow
 type: concept
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-06
 tags:
   - benchmark
   - evaluation
   - ai-agents
 sources:
   - https://github.com/benchflow-ai/benchflow
+  - raw/articles/benchflow-awesome-evals-2025.md
 related_concepts:
   - agent-evaluation
   - ai-agents
@@ -50,6 +51,25 @@ BenchFlow provides a Dockerized execution framework for agent evaluation:
 - [[clawsbench]] — BenchFlow's benchmark for agent recovery testing
 - [[hal-leaderboard]] — Princeton's aggregated agent leaderboard
 - Other [[agent-evaluation]] frameworks and benchmarks
+
+## Awesome Agent Evals List
+
+BenchFlow maintains the **[Awesome Agent Evals](https://github.com/benchflow-ai/awesome-agent-evals)** — a curated, annotated library of 443+ resources for building and evaluating AI agents, compiled via depth-4 citation crawl (11.6K papers), practitioner-web discovery, and 47 transcribed talks. The list covers 10 major sections:
+
+| Section | Focus |
+|---------|-------|
+| 1. Why we need evals | Foundational motivation and field-level justification |
+| 2. Eval ⇄ capability ⇄ RL environment | The interlocking thesis (Jason Wei, Han-Chung Lee) |
+| 3. Model / harness / skill decomposition | Harness vs model debate, harness engineering |
+| 4. Observability & eval space | Five grading surfaces (output, trace, memory, environment, mechanistic) |
+| 5. Evaluation infrastructure | Frameworks, harnesses, scoring libraries (50+ tools) |
+| 6. Benchmark vs eval | Integrity, contamination, saturation, gaming |
+| 7. Evals & RL environments | Verifiers, reward design, difficulty calibration |
+| 8. LLM-as-judge & verifiers | Alignment, biases, verifiable vs judgeable |
+| 9. Agent-specific evaluation | Trajectories, tool use, multi-turn, world state |
+| 10. Safety / adversarial evaluation | Injection, jailbreaks, action-authorization |
+
+Includes a [PATTERNS.md](https://github.com/benchflow-ai/awesome-agent-evals/blob/main/PATTERNS.md) playbook with runnable code for LLM-as-judge, pass@k, error analysis, trajectory grading, CI gating, and verifiable rewards.
 
 ## Connections to Other Wiki Concepts
 
