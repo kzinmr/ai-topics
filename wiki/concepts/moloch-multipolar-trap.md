@@ -2,6 +2,7 @@
 title: "Moloch (Multipolar Trap)"
 aliases: [moloch, multipolar-traps, coordination-failure, race-to-the-bottom, dictatorless-dystopia]
 tags:
+sources: []
   - coordination
   - game-theory
   - agent-safety

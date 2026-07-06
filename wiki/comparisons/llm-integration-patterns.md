@@ -1,6 +1,7 @@
 ---
 title: "LLM Integration Patterns — A Comparative Taxonomy"
 tags:
+sources: []
   - training
   - ai-agents
   - model

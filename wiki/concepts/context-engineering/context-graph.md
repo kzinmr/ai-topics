@@ -1,6 +1,7 @@
 ---
 title: "Context Graph"
 tags: [context-management, methodology]
+sources: []
 created: 2026-04-20
 updated: 2026-05-14
 type: concept

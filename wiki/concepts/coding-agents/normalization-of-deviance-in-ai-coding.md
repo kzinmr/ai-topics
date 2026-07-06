@@ -3,6 +3,7 @@ title: "Normalization of Deviance in AI Coding"
 url: "https://wiki.ai-topics/concepts/normalization-of-deviance-in-ai-coding"
 date: 2026-05-07
 tags:
+sources: []
   - concept
   - agent-safety
   - coding-agents

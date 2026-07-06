@@ -1,6 +1,7 @@
 ---
 title: "Karpathy Writings & Blog Posts"
 tags: [person, writing]
+sources: []
 created: 2026-04-27
 updated: 2026-06-08
 type: entity

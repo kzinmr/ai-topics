@@ -6,6 +6,7 @@ description: "Agentic security encompasses the security patterns, protocols, and
 created: 2026-04-27
 updated: 2026-05-22
 tags:
+sources: []
   - concept
   - security
   - ai-agents

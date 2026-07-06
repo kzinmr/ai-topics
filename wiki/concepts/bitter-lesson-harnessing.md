@@ -5,6 +5,7 @@ description: "How model intelligence evolution affects the importance of harness
 category: concepts
 sub_category: AI Agent Architecture
 tags:
+sources: []
   - ai-agents
   - harness-engineering
   - methodology

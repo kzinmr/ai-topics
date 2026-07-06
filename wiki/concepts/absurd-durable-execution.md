@@ -1,6 +1,7 @@
 ---
 title: "Absurd (Postgres-Native Durable Execution)"
 tags:
+sources: []
   - concept
   - infrastructure
   - durable-execution

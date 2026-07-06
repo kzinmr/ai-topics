@@ -1,6 +1,7 @@
 ---
 title: "Cognition's Memory Tool — Copying Claude's Approach"
 tags:
+sources: []
   - cognition
   - coding-agents
   - memory-systems

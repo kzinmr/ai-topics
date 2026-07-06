@@ -1,6 +1,7 @@
 ---
 title: "Karpathy Ideas & Social Influence"
 tags:
+sources: []
   - person
   - methodology
 created: 2026-04-27

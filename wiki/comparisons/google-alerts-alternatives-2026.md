@@ -2,6 +2,7 @@
 type: comparison
 title: "Google Alerts Alternatives — 2026 Developer & Marketer Guide"
 tags:
+sources: []
   - comparison
   - search
   - google

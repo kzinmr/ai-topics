@@ -1,6 +1,7 @@
 ---
 title: "AI Memory Systems: Two Camps Taxonomy"
 tags:
+sources: []
   - concept
   - ai-agents
   - model

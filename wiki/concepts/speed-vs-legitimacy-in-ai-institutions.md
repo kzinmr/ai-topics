@@ -3,6 +3,7 @@ title: "Speed vs Legitimacy in AI Institutions"
 url: "https://wiki.ai-topics/concepts/speed-vs-legitimacy-in-ai-institutions"
 date: 2026-05-07
 tags: [concept, ai-governance, regulation]
+sources: []
 updated: 2026-05-08
 ---
 

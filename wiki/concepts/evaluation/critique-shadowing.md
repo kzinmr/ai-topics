@@ -1,6 +1,7 @@
 ---
 title: "Critique Shadowing"
 tags: [evaluation, methodology, human-in-the-loop]
+sources: []
 created: 2026-04-12
 updated: 2026-04-24
 type: concept

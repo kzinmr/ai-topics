@@ -1,6 +1,7 @@
 ---
 title: "Cognition/Devin Philosophy"
 tags:
+sources: []
   - agentic-engineering
 created: 2026-04-23
 updated: 2026-04-24

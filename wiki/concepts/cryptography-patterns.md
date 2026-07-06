@@ -2,6 +2,7 @@
 type: concept
 title: "Cryptography Patterns — Bitwarden Encryption Architecture"
 tags:
+sources: []
   - concept
   - security
 source: "Miguel Grinberg, 'How Bitwarden Encrypts and Decrypts Secrets'"

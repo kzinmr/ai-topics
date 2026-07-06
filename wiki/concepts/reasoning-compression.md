@@ -10,6 +10,7 @@ description: "The principle that software complexity and reasoning requirements 
 category: concepts
 sub_category: AI Agent Architecture
 tags: [ai-agents, reasoning]
+sources: []
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

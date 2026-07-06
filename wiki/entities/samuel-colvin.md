@@ -5,6 +5,7 @@
 - [[entities/harrison-chase]]
 title: "Samuel Colvin — Creator of Pydantic, Pioneer of Type-Safe AI Agents"
 tags: [person]
+sources: []
 created: 2026-04-15
 updated: 2026-06-11
 type: entity

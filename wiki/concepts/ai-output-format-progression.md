@@ -1,6 +1,7 @@
 ---
 title: "AI Output Format Progression"
 tags:
+sources: []
   - concept
   - agent-communication
   - developer-tooling

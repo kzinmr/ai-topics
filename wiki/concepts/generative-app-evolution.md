@@ -5,6 +5,7 @@ description: "The evolutionary staircase of generative applications: from genera
 category: concepts
 sub_category: AI Agent Architecture
 tags:
+sources: []
   - developer-tooling
   - architecture
   - ai-agents

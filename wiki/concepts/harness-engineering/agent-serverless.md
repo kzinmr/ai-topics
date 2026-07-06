@@ -12,6 +12,7 @@ description: "Serverless deployment pattern for AI agents — managed environmen
 category: concepts
 sub_category: AI Agent Architecture
 tags:
+sources: []
   - ai-agents
   - infrastructure
   - security

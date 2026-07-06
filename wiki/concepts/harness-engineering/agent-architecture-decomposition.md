@@ -2,6 +2,7 @@
 title: "Agent Architecture Decomposition: Model / Runtime / Harness"
 category: concept
 tags:
+sources: []
   - ai-agents
   - architecture
   - open-source

@@ -5,6 +5,7 @@ redirect: samuel-colvin
 aliases:
   - samuelcolvin
 updated: 2026-05-08
+sources: []
 ---
 
 # samuelcolvin

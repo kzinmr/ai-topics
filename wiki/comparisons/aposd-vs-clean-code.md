@@ -1,6 +1,7 @@
 ---
 title: "A Philosophy of Software Design vs Clean Code"
 tags:
+sources: []
   - ai-agents
   - model
   - prompting

@@ -9,6 +9,7 @@ aliases:
   - "Grant Sanderson"
 redirect: grant-sanderson
 tags:
+sources: []
   - person
   - content-creator
   - youtube

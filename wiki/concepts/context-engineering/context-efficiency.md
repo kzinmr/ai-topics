@@ -5,6 +5,7 @@ description: "Framework for evaluating AI agent efficiency based on context acqu
 category: concepts
 sub_category: AI Agent Architecture
 tags: [ai-agents, context-management, automation]
+sources: []
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

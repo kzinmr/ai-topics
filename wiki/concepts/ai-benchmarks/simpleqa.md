@@ -3,6 +3,7 @@ title: "SimpleQA"
 type: concept
 created: 2026-05-08
 tags:
+sources: []
   - benchmark
   - evaluation
   - methodology

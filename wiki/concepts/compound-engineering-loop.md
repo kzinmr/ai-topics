@@ -6,6 +6,7 @@ aliases:
 created: 2026-04-25
 updated: 2026-05-02
 tags:
+sources: []
   - concept
   - agentic-engineering
 status: redirect

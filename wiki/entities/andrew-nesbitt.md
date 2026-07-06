@@ -1,6 +1,7 @@
 ---
 title: "Andrew Nesbitt"
 tags: [person]
+sources: []
 created: 2026-04-24
 updated: 2026-06-26
 type: entity

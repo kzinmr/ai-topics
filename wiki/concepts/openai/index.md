@@ -4,6 +4,7 @@ created: 2026-06-10
 updated: 2026-06-10
 type: concept
 tags:
+sources: []
   - openai
   - platform
   - developer-tooling

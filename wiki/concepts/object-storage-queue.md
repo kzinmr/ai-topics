@@ -1,6 +1,7 @@
 ---
 title: "Object Storage Queue Pattern"
 tags:
+sources: []
   - concept
   - protocol
   - infrastructure

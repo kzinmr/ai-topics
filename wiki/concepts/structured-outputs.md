@@ -1,6 +1,7 @@
 ---
 title: "Structured Outputs — Reliable LLM Output via Schema Validation"
 tags:
+sources: []
   - model
   - developer-tooling
   - infrastructure

@@ -1,6 +1,7 @@
 ---
 title: "Pydantic Logfire — AI Observability Platform"
 tags:
+sources: []
   - infrastructure
   - developer-tooling
 created: 2026-04-16

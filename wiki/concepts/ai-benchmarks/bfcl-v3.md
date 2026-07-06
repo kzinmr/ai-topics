@@ -3,6 +3,7 @@ title: "BFCL V3 (Berkeley Function Calling Leaderboard V3)"
 type: concept
 created: 2026-05-08
 tags:
+sources: []
   - benchmark
   - tool
   - evaluation

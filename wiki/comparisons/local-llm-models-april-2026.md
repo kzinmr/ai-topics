@@ -1,6 +1,7 @@
 ---
 title: "Local LLM Models Comparison — April 2026"
 tags: [local-llm]
+sources: []
 created: 2026-04-15
 updated: 2026-04-15
 type: comparison

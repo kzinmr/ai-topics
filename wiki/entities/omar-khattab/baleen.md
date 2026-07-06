@@ -1,6 +1,7 @@
 ---
 title: "Baleen — Multi-Hop Retrieval-Augmented Reasoning"
 tags:
+sources: []
   - lab
   - rag
 created: 2026-04-24

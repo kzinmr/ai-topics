@@ -1,6 +1,7 @@
 ---
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
 tags:
+sources: []
   - ai-agents
   - inference
   - optimization

@@ -2,6 +2,7 @@
 title: "Automated Competitor Analysis with AI Agents"
 type: concept
 tags:
+sources: []
   - ai-agents
   - automation
   - search

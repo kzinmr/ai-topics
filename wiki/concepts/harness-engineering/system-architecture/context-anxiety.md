@@ -1,6 +1,7 @@
 ---
 title: "Context Anxiety"
 tags: [context-management, anthropic, model]
+sources: []
 created: 2026-04-23
 updated: 2026-04-24
 type: concept

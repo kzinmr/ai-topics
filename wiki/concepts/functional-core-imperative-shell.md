@@ -9,6 +9,7 @@ description: "Architecture pattern where deterministic, verifiable processing fo
 category: concepts
 sub_category: AI Agent Architecture
 tags: [ai-agents, human-in-the-loop]
+sources: []
 status: complete
 created: 2026-04-30
 updated: 2026-05-27

@@ -1,6 +1,7 @@
 ---
 title: "Daniel Miessler"
 tags:
+sources: []
   - security
 created: 2026-05-03
 updated: 2026-05-03

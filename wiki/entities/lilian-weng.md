@@ -6,6 +6,7 @@
 - [[entities/will-brown]]
 title: "Lilian Weng (@lilianweng)"
 tags: [entity]
+sources: []
 created: 2026-04-24
 updated: 2026-06-26
 type: entity

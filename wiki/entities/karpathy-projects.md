@@ -1,6 +1,7 @@
 ---
 title: "Karpathy Projects & Open Source"
 tags:
+sources: []
   - person
   - methodology
 created: 2026-04-27

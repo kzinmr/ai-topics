@@ -1,6 +1,7 @@
 ---
 title: "Steve Shogren (Deliberate Software)"
 tags: [person]
+sources: []
 created: 2026-04-24
 updated: 2026-04-24
 type: entity

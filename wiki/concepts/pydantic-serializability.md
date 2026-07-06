@@ -1,6 +1,7 @@
 ---
 title: "Pydantic Serializability"
 tags:
+sources: []
   - developer-tooling
   - inference
 created: 2026-04-15

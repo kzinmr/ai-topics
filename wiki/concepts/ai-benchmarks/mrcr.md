@@ -3,6 +3,7 @@ title: "MRCR (Multi-Round Coreference Resolution)"
 type: concept
 created: 2026-05-08
 tags:
+sources: []
   - benchmark
   - context-management
   - evaluation

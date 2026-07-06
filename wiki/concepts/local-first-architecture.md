@@ -7,6 +7,7 @@ aliases:
   - local-first software
   - local-first sync
 tags:
+sources: []
   - architecture
   - web-development
   - optimization

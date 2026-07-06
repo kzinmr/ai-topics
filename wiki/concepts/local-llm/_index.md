@@ -1,6 +1,7 @@
 ---
 title: "Local LLM Ecosystem — Overview"
 tags: [local-llm, inference]
+sources: []
 created: 2026-04-14
 updated: 2026-04-15
 ---

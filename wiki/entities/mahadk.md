@@ -4,6 +4,7 @@ description: Technical writer covering AI, web development, and practical softwa
 url: https://mahadk.com
 type: entity
 updated: 2026-04-30
+sources: []
 ---
 
 # mahadk

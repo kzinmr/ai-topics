@@ -6,6 +6,7 @@ created: 2026-04-25
 updated: 2026-05-14
 type: concept
 tags: [concept, test-time-scaling]
+sources: []
 status: redirect
 redirect: test-time-scaling
 ---

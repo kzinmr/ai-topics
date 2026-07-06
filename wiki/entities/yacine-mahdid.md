@@ -1,6 +1,7 @@
 ---
 title: "Yacine Mahdid"
 tags: [person]
+sources: []
 created: 2026-04-24
 updated: 2026-05-04
 type: entity

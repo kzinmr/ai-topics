@@ -1,6 +1,7 @@
 ---
 title: "Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture"
 tags: [harness-engineering, multi-agent, agentic-engineering]
+sources: []
 created: 2026-04-13
 updated: 2026-05-27
 type: concept

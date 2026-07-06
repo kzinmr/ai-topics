@@ -1,6 +1,7 @@
 ---
 title: "Eugene Yan — Key Quotes"
 tags:
+sources: []
   - person
   - methodology
 created: 2026-04-27

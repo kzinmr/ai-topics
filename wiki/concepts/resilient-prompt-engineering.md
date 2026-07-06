@@ -1,6 +1,7 @@
 ---
 title: "Resilient Prompt Engineering"
 tags:
+sources: []
   - prompting
   - infrastructure
   - methodology

@@ -4,6 +4,7 @@ type: concept
 created: 2026-06-22
 updated: 2026-06-22
 tags: [training] 
+sources: []
 ---
 # MAI Thinking
 

@@ -1,6 +1,7 @@
 ---
 title: "Serializability — Structured Output for AI Systems"
 tags: [inference, model, agentic-engineering]
+sources: []
 created: 2026-04-15
 updated: 2026-04-24
 type: concept

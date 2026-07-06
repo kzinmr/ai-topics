@@ -1,6 +1,7 @@
 ---
 title: "Karpathy Research Contributions"
 tags:
+sources: []
   - person
   - lab
 created: 2026-04-27

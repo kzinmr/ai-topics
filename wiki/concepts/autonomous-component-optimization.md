@@ -1,6 +1,7 @@
 ---
 title: "Autonomous Component Optimization"
 tags: [autoresearch, optimization]
+sources: []
 created: 2026-05-03
 updated: 2026-05-03
 type: concept

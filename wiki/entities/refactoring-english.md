@@ -4,6 +4,7 @@ description: Technical blog and forthcoming book by Michael Lynch about effectiv
 url: https://refactoringenglish.com
 type: entity
 updated: 2026-04-30
+sources: []
 ---
 
 # Refactoring English

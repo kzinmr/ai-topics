@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT Memory & The Bitter Lesson"
 tags: [memory-systems, ai-agents, context-management, methodology]
+sources: []
 created: 2026-04-13
 updated: 2026-06-04
 type: concept

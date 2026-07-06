@@ -7,6 +7,7 @@ aliases:
   - jobergum
   - Jo Bergum
 updated: 2026-05-08
+sources: []
 ---
 
 # Jo Kristian Bergum

@@ -1,6 +1,7 @@
 ---
 title: "Chief of Staff Agent Patterns"
 tags:
+sources: []
   - claude-code
   - orchestration
   - ai-agents

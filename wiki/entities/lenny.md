@@ -2,6 +2,7 @@
 title: "Lenny Rachitsky"
 aliases: ["lenny-rachitsky", "lennys-podcast"]
 tags:
+sources: []
   - person
   - writing
   - product-management

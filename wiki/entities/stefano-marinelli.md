@@ -1,6 +1,7 @@
 ---
 title: "Stefano Marinelli"
 tags: [person]
+sources: []
 aliases:
   - stefano-marlinelli
 created: 2026-04-24

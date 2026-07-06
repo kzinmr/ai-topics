@@ -1,6 +1,7 @@
 ---
 title: "Spike (Mike Doan)"
 tags:
+sources: []
   - training
   - ai-agents
   - model

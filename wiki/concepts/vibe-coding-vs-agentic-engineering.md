@@ -3,6 +3,7 @@ title: "Vibe Coding vs Agentic Engineering"
 url: "https://wiki.ai-topics/concepts/vibe-coding-vs-agentic-engineering"
 date: 2026-05-07
 tags: [concept, coding-agents]
+sources: []
 updated: 2026-05-08
 ---
 

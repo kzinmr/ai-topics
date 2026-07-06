@@ -2,6 +2,7 @@
 title: "Scott Alexander"
 aliases: ["Scott Alexander Siskind", "Scott Siskind", "SSC", "Slate Star Codex", "Astral Codex Ten"]
 tags: [blogger, rationality, safety, writing, transhumanism]
+sources: []
 created: 2026-05-08
 updated: 2026-05-08
 type: entity

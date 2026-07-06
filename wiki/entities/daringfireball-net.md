@@ -1,6 +1,7 @@
 ---
 title: "John Gruber"
 tags: [person]
+sources: []
 created: 2026-04-24
 updated: 2026-07-05
 type: entity

@@ -1,6 +1,7 @@
 ---
 title: "Giles Thomas (gpjt)"
 tags: [person]
+sources: []
 created: 2026-04-24
 updated: 2026-04-30
 type: entity

@@ -1,6 +1,7 @@
 ---
 title: "Decoder-Only GPT Architecture"
 tags:
+sources: []
   - model
 created: 2026-04-13
 updated: 2026-04-24

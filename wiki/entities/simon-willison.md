@@ -7,6 +7,7 @@ updated: 2026-07-05
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
+sources: []
 ---
 
 # Simon Willison

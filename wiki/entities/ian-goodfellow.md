@@ -1,6 +1,7 @@
 ---
 title: "Ian Goodfellow"
 tags: [person]
+sources: []
 created: 2026-04-24
 updated: 2026-05-27
 type: entity

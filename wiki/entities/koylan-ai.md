@@ -1,6 +1,7 @@
 ---
 title: "Muratcan Koylan (Koylan AI)"
 tags: [context-engineering]
+sources: []
 created: 2026-04-24
 updated: 2026-04-24
 type: entity

@@ -5,6 +5,7 @@ redirect: microsoft-ai-team
 aliases:
   - microsoft-ai
 updated: 2026-07-05
+sources: []
 ---
 
 # Microsoft AI Team (redirect)

@@ -1,6 +1,7 @@
 ---
 title: "Claude Code Source Patterns — Leaked Source Analysis"
 tags:
+sources: []
   - claude-code
   - prompting
   - context-management

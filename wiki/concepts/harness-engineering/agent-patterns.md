@@ -4,6 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-05-20
 tags:
+sources: []
   - concept
   - ai-agents
   - agentic-engineering

@@ -3,6 +3,7 @@ title: "IFEval (Instruction-Following Evaluation)"
 type: concept
 created: 2026-05-08
 tags:
+sources: []
   - benchmark
   - evaluation
 related_concepts:
