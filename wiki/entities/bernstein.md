@@ -148,3 +148,28 @@ Built by **Alex Chernysh** (@alex_chernysh on X, chernistry on GitHub), an Appli
 - [GitHub Repository](https://github.com/sipyourdrink-ltd/bernstein)
 - [PyPI](https://pypi.org/project/bernstein/)
 - [Alex Chernysh](https://alexchernysh.com/)
+
+## Key Differentiators
+- **Deterministic scheduling**: Python code for every decision, no LLM calls. Same inputs → same outputs.
+- **Zero LLM tokens on coordination**: After initial goal decomposition, scheduling costs nothing
+- **Local HTTP task server**: Agents report progress over HTTP; state lives in `.sdd/` directory
+- **Git worktree isolation**: Each agent works in a separate branch; main stays clean
+- **HMAC-signed audit trail**: Every step is logged and replayable
+- **34,000+ monthly PyPI downloads** (as of April 2026)
+
+
+## Comparison to Alternatives
+| Feature | Bernstein | Claude Squad | Composio AO |
+|---------|-----------|-------------|-------------|
+| Scheduling | Deterministic (Python) | Manual | LLM-based |
+| Coordination cost | Zero tokens | Chat tokens | LLM tokens |
+| Agent count | 40+ adapters | Claude Code only | 30+ |
+| Quality gates | Built-in Janitor | Manual review | CI auto-fix |
+| Git isolation | Worktrees | Sessions | Branches |
+
+
+## Related
+- [[concepts/harness-engineering/agent-harness]]
+- [[concepts/multi-agents/multi-agent-orchestration]]
+- [[entities/bernstein]]
+

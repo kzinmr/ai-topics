@@ -314,3 +314,81 @@ class Debate(dspy.Module):
 - [[concepts/rlms]] — Recursive language models (a different optimization approach from DSPy)
 -  — DSPy's agent patterns
 -  — Khattab's search framework preceding DSPy
+
+## Key Facts
+- **Created by:** Stanford NLP Group (Omar Khattab, Arnav Singhvi, Paridhi Maheshwari, et al.)
+- **Type:** Open-source Python framework
+- **Core idea:** Replace prompt engineering with declarative program specification
+- **Approach:** Uses bootstrap-and-finetune cycles to optimize prompt templates
+- **GitHub:** [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy)
+
+
+## Philosophy
+> *"It's actually better to think of language models as modules in programs, not end products."* — Omar Khattab, Cohere talk (2024)
+
+DSPy treats LMs as **learnable modules** in a computational graph:
+1. **Define** a program with LM modules (Chain of Thought, ReAct, program-level reasoning)
+2. **Specify** a metric for evaluation
+3. **Optimize** the prompts (or fine-tune weights) automatically using built-in optimizers
+
+DSPy unifies prompting, fine-tuning, and retrieval-augmented generation under a single programming model. Small models (T5, <1B parameters) expressed in DSPy routinely outperform large standalone LMs with hand-crafted prompts.
+
+
+## Core Components
+| Component | Description |
+|-----------|-------------|
+| **Signatures** | Declarative input/output contracts (model-independent) |
+| **Modules** | Composable inference patterns (`dspy.Predict`, `dspy.ChainOfThought`, `dspy.ReAct`, `dspy.ProgramOfThought`) |
+| **Optimizers** | Automatically tune prompt templates via Teleprompter (`BootstrapFewShot`, `MIPRO`, `MIPROv2`) |
+
+
+## Architecture
+See [[concepts/dspy-architecture]] for the full architectural deep-dive including the three core abstractions (Signatures, Modules, Teleprompters).
+
+
+## Modules and Patterns
+DSPy provides a rich set of composable modules supporting patterns like RAG, multi-hop search, and multi-agent debate — all **model-independent**.
+
+See [[concepts/dspy-modules]] for the complete module reference.
+
+
+## Optimization
+DSPy offers three complementary optimization approaches:
+1. **Teleprompters** — Data-driven prompt optimization (BootstrapFewShot, MIPROv2, COPRO, Ensemble)
+2. **Assertions** — Runtime validation with automatic self-correction loops
+3. **Fine-Tuning + Prompt Optimization synergy** — Combined approach yields +23% improvement
+
+See [[concepts/dspy-optimization]] for detailed coverage.
+
+
+## Adoption: Khattab's Law
+Skylar Payne (March 2026) introduced **"Khattab's Law"** — named after DSPy creator Omar Khattab — which holds that *any sufficiently complex AI system eventually reinvents DSPy's core abstractions on its own*: typed I/O signatures, composable modules, prompt versioning, retry logic, and model-swapping shims. Teams do this ad hoc, buggily, and after significant pain.
+
+**Production users** include JetBlue, Databricks, Replit, VMware, and Sephora. **Download gap:** DSPy ~4.7M monthly downloads vs LangChain ~222M, indicating significant adoption friction despite technical merit.
+
+
+## Getting Started / Tutorials
+For a practical, hands-on tutorial that takes ~1 hour: [[concepts/dspy-tutorial]] — Maxime Rivest's complete walkthrough covering Signature definition, synthetic gold set creation with SOTA models, MIPROv2 optimization, and evaluation (Flash-lite: 65% → 85% precision).
+
+
+## Relationship to Other Wiki Topics
+- [[entities/dspy]] — Core concept page (deep-dive)
+- [[concepts/dspy-tutorial]] — Hands-on getting started tutorial (Maxime Rivest)
+- [[concepts/dspy-architecture]] — Architecture deep-dive
+- [[concepts/dspy-optimization]] — Teleprompters, Assertions, Fine-Tuning
+- [[entities/dspy]] — Main DSPy concept page
+- [[concepts/gepa]] — Genetic prompt optimization built on DSPy
+- [[concepts/recursive-language-models]] — RLM approach can complement DSPy
+- [[concepts/rlms]] — Recursive Language Models
+- [[entities/omar-khattab]] — Creator of DSPy
+
+
+## Key Papers
+| Date | Title | Insight |
+|------|-------|---------|
+| Oct 2023 | DSPy: Compiling Declarative LM Calls (ICLR 2024) | Teleprompter paradigm |
+| Dec 2023 | DSPy Assertions | Self-correcting pipelines |
+| Jul 2024 | Fine-Tuning and Prompt Optimization | Synergistic combination (+23%) |
+| 2025 | GEPA | Genetic prompt evolution |
+| 2025 | RLMs | Recursive context processing |
+

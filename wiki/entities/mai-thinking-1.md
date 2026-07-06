@@ -30,3 +30,12 @@ sources:
 - **AIME 2026**: 94.5%
 - **LiveCodeBench v6**: 87.7%
 - Competitive with Claude Sonnet 4.6 across various benchmarks.
+
+## Key Ideas- **Hill-Climbing Machine**: Treating model development as an iterative, system-level optimization problem.
+- **Reinforcement Learning (RL)**: Using a robust RL recipe to achieve sustained log-linear performance improvements.
+- **From-Scratch Training**: Utilizing clean, enterprise-grade data without distillation from third-party models.
+- **STEM Reasoning**: High performance on benchmarks like AIME 2025 and SWE-Bench Pro.
+
+
+## Sources- [MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)
+

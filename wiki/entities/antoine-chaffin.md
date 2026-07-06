@@ -58,3 +58,11 @@ In response to [[entities/mixedbread|Mixedbread]]'s Latent Terms paper and [[ent
 - [[entities/mixedbread|Mixedbread]] — Company whose Latent Terms research Chaffin analyzed
 - [[entities/ben-clavie|Ben Clavie]] — Mixedbread researcher, co-discussant on IR direction
 - [[entities/late-interaction]] — Late interaction retrieval paradigm
+
+## Overview
+Stub page for antoine-chaffin.
+
+
+## Related Pages
+- [[entities/_index]]
+

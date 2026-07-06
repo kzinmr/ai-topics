@@ -133,3 +133,17 @@ Datasette Agent has already informed the **LLM 0.32a0 refactor**, a major rework
 - [[concepts/llm-python-library]] — Simon Willison's LLM Python library
 - [[concepts/ai-agents]] — AI agents concept
 - [[concepts/tool-use]] — Tool use in AI agents
+
+### Jump to Menu Integration (0.1a4)
+The latest release takes advantage of Datasette 1.0a30's new `makeJumpSections()` JavaScript plugin hook. Pressing `/` in Datasette now shows a "Start a new agent chat" option in the Jump to menu, providing instant access to the AI agent from anywhere in the Datasette interface.
+
+
+### GitHub AuthUsers sign into [agent.datasette.io](https://agent.datasette.io) using their GitHub account.
+
+
+## Ecosystem Context
+datasette-agent is part of the Datasette plugin ecosystem, alongside:
+- **[[entities/datasette|Datasette]]** — The open-source multi-tool for exploring and publishing data (SQLite-backed)
+- **datasette-fixtures** — Plugin for test fixture databases (0.1a0, May 2026)
+- **datasette-llm-limits** — LLM rate limiting for Datasette
+

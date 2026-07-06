@@ -62,3 +62,38 @@ Managed Bots evolved the Telegram Bot platform from a simple chatbot framework i
 - [Telegram Bot Features — Managed Bots](https://core.telegram.org/bots/features#managed-bots)
 - [Telegram Bot Platform Overview](https://core.telegram.org/bots)
 - [Telegram Bot API Reference](https://core.telegram.org/bots/api)
+
+## Definition / Core Idea
+Telegram Managed Bots allow a "manager bot" to provision, configure, and control subordinate bots through the Bot API. Users interact with the manager bot's UI to spin up specialized bots (AI agents, business bots, games, productivity tools) without writing code.
+
+
+## Key Features (Bot API 9.6)
+- **`can_manage_bots`** field added to `User` class — grants management permissions
+- **`KeyboardButtonRequestManagedBot`** and **`request_managed_bot`** — UI element for users to request bot creation
+- **`ManagedBotCreated`** and **`ManagedBotUpdated`** — event classes for lifecycle management
+- **`getManagedBotToken`** / **`replaceManagedBotToken`** — programmatic token access
+- **`savePreparedKeyboardButton`** — allows bots to request users, chats, and managed bots from Mini Apps
+- Deep links: `https://t.me/newbot/{manager_bot_username}/{suggested_bot_username}` for one-click bot creation
+
+
+## Implications
+- **Democratization**: Anyone can deploy AI agents and specialized bots without coding skills
+- **Ecosystem Growth**: Expected wave of trading alert bots, portfolio trackers, community management tools
+- **Risk**: Lower barrier to deployment also means more potential for spam and scam bots
+- **Platform Play**: Positions Telegram as a bot infrastructure provider, not just a messaging app
+
+
+## Connection to Other Concepts
+- [[concepts/managed-agents]] — Telegram's managed bots are a concrete implementation of the broader managed agent pattern
+- [[concepts/agentic-engineering]] — no-code agent creation as infrastructure
+- [[browser-agent/death-of-browser]] — bots as the new application interface layer
+
+
+## TODO: Research Items- [ ] Track adoption metrics and third-party manager bot ecosystems
+- [ ] Compare with other no-code agent platforms (Anthropic Managed Agents, etc.)
+- [ ] Document security and abuse prevention mechanisms
+
+
+## See Also
+- [[entities/telegram-managed-bots]]
+

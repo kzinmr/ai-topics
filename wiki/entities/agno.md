@@ -50,3 +50,7 @@ A unified **control plane** provides full visibility and management. Everything 
 - [[concepts/agent-framework]] — Agent development frameworks
 - [[concepts/agent-runtime]] — Agent runtime environments
 - [[concepts/agent-observability]] — Agent monitoring and tracing
+
+## Related Pages
+- [[entities/_index]]
+

@@ -78,3 +78,7 @@ However, Yudkowsky differs from naive techno-optimists in his acute awareness of
 - Yudkowsky, E. (1996, revised 1999). "Staring Into The Singularity." [Archive](https://supaiku.com/archive/staring-into-the-singularity)
 - Vinge, V. (1993). "The Coming Technological Singularity."
 - Moravec, H. (1988). *Mind Children.*
+
+## Overview
+Stub page for Eliezer Yudkowsky.
+

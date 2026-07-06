@@ -41,3 +41,33 @@ The bottleneck has shifted from vulnerability identification to remediation — 
 - [[entities/anthropic]] — Anthropic, developer of Project Glasswing
 - [[concepts/agent-safety]] — Agent safety frameworks
 - [[concepts/recursive-self-improvement]] — RSI and AI security implications
+
+## Overview
+Instead of releasing Mythos publicly, Anthropic created Project Glasswing to harness the model's vulnerability discovery capabilities for beneficial purposes.
+
+
+## Commitment
+| Resource | Amount |
+|----------|--------|
+| Model usage credits | $100M |
+| Donations to open-source security orgs | $4M |
+
+
+## Participants
+12 companies have been granted preview access to Mythos under this program.
+
+
+## Discoveries
+Mythos has already identified long-standing security bugs in critical software:
+- **OpenBSD**: 27-year-old vulnerability
+- **FFmpeg**: 16-year-old vulnerability
+- Additional critical software projects
+
+
+## Sources-  (Ben's Bites, 2026-04-09)
+
+
+## Related- [[concepts/claude/mythos]]
+- [[entities/anthropic]]
+- [[concepts/security-and-governance/ai-safety]]
+

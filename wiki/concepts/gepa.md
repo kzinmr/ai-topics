@@ -89,3 +89,12 @@ Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, Ope
 - [[concepts/agent-skills]] — The skill files GEPA optimizes: Markdown playbooks with YAML frontmatter
 - [[entities/dspy]] — DSPy framework with built-in GEPA optimizer (`dspy.GEPA`)
 - [[entities/omar-khattab]] — Lead author and principal investigator
+
+## Merged Content (from deleted duplicate)
+
+**Paper:** *GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning*
+GEPA introduces a **genetic algorithm** approach to prompt optimization that uses the LLM's own reasoning to evolve prompts:
+- Parents are selected via Pareto optimality (balancing multiple objectives)
+- Offspring are generated through LLM-based reflection and mutation
+- Outperforms reinforcement learning-based prompt optimization on several benchmarks
+This work sits at the intersection of [[entities/omar-khattab]]'s interests in **programmatic control** and **automated optimization** of LM behavior.
