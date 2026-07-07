@@ -1,3 +1,19 @@
+## [2026-07-07 11:00 UTC] active-crawl | 4 new pages from trending HN/X topics
+
+**active-crawl**: Created 4 new wiki pages from trending topics (July 3-7, 2026):
+
+- [[concepts/anthropic-global-workspace]] — Anthropic interpretability research finding transformer LMs spontaneously develop a 'global workspace' bottleneck analogous to biological consciousness (386 HN pts, 145 comments)
+- [[entities/amd-ryzen-ai-halo]] — AMD's $4,000 AI dev kit with unified memory architecture for local LLM inference (342 HN pts)
+- [[concepts/code-cleanliness-coding-agents]] — arXiv study (2605.20049) on how codebase cleanliness impacts coding agent token usage (-7-8%) and file revisitations (-34%) across 660 Claude Code trials (198 HN pts)
+- [[concepts/browser-integrated-ai]] — Trend of embedding AI models in browsers, sparked by Chrome silently installing a 4GB Gemini Nano model (78 HN pts)
+
+Raw articles saved: 2026-07-07_anthropic_global-workspace-language-models.md, 2026-07-07_lttlabs_amd-ryzen-ai-halo-dev-kit.md, 2026-05-19_arxiv_2605.20049_code-cleanliness-coding-agents.md, 2026-05-16_oztalking_chrome-hidden-4gb-ai-model.md
+
+SCHEMA.md: Added 3 new tags (consciousness, ai-hardware, chrome). Updated index.md with 4 new entries.
+
+Sources: HN Algolia API, X/Twitter xurl search, arXiv, Anthropic Research, LTT Labs, OZ Talking. Cross-referenced against wiki gaps — all 4 were genuine gaps.
+
+
 ## [2026-07-07 07:50 UTC] blog-wiki-ingest | 2 pages enriched from 1 blog take
 
 - **Enriched** [[concepts/ai-industry-economics]] — 137→186 lines. Added Open-Weight Margin Collapse section: GLM 5.2 as open-weights Opus competitor, ~90% gross inference margin analysis, drop-in replacement migration, cost comparison ($4.40 vs $25/MTok), AMD 2.75x inference efficiency, structural implications. Source: Martin Alderson margin collapse part 1.

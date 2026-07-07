@@ -41,6 +41,7 @@
 - [[entities/aman-sanger]] — Aman Sanger — Cursor co-founder and CTO; pioneered self-driving codebases, three eras of AI coding, artifacts paradigm
 - [[entities/amazon-bedrock-agentcore]] — Amazon Bedrock AgentCore
 - [[entities/amazon-rivr]] — Amazon Acquires Rivr
+- [[entities/amd-ryzen-ai-halo]] — AMD Ryzen AI Halo — $4,000 AI dev kit with unified memory architecture for local LLM inference; competitor to NVIDIA and Apple Silicon in local AI hardware (July 2026)
 - [[entities/amp]] — Amp
 - [[entities/andon-labs]] — Andon Labs
 - [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
@@ -1135,6 +1136,7 @@
 - [[concepts/anthropic/openclaw-conflict]] — Anthropic-OpenClaw Conflict
 - [[concepts/anthropic/orbit]] — Claude Orbit
 - [[concepts/anthropic/transparency-hub]] — Anthropic Transparency Hub
+- [[concepts/anthropic-global-workspace]] — Anthropic Global Workspace in Language Models — Interpretability research finding transformer LMs spontaneously develop a shared internal bottleneck analogous to biological consciousness architecture; 386 HN pts (July 2026)
 - [[concepts/anti-ai-arguments-are-conservative-arguments]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/anti-patterns]] — anti-patterns
 - [[concepts/anti-patterns-in-agentic-engineering]] — Anti-patterns in Agentic Engineering
@@ -1204,6 +1206,7 @@
 - [[concepts/branch-aware-search]] — Branch-Aware Search
 - [[concepts/breach-disclosure]] — Breach Disclosure
 - [[concepts/brendanh0gan]] — brendanh0gan
+- [[concepts/browser-integrated-ai]] — Browser-Integrated AI — Trend of embedding AI models directly in browsers; Chrome's silent 4GB Gemini Nano installation raising consent and AI distribution questions (July 2026)
 - [[concepts/browser-agent/death-of-browser]] — Death of Browser — Dehumanization of the Browser
 - [[concepts/browser-agent/deep-research]] — Deep Research — Agentic Browsing for Autonomous Research
 - [[concepts/browser-security]] — Browser Security
@@ -1298,6 +1301,7 @@
 - [[concepts/co-intelligence]] — co-intelligence
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents
 - [[concepts/coalitional-agency]] — Coalitional Agency
+- [[concepts/code-cleanliness-coding-agents]] — Code Cleanliness and Coding Agent Performance — arXiv study (2605.20049) measuring how codebase cleanliness affects coding agent token usage (7-8% less) and file revisitations (34% fewer) across 660 Claude Code trials (July 2026)
 - [[concepts/code-as-process]] — code-as-process
 - [[concepts/code-execution-with-mcp]] — Code Execution with MCP — Treating MCP Servers as Code APIs
 - [[concepts/code-intelligence-for-llms]] — The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts to...
